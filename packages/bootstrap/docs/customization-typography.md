@@ -38,7 +38,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$font-family</td>
     <td></td>
-    <td>$font-family-base</td>
+    <td>$font-family-sans-serif</td>
     <td></td>
 </tr>
 <tr>
