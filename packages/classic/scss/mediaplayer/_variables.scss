@@ -8,8 +8,8 @@ $mediaplayer-bg: $component-bg !default;
 $mediaplayer-text: $component-text !default;
 $mediaplayer-border: $component-border !default;
 
-$mediaplayer-titlebar-padding-x: $header-padding-x !default;
-$mediaplayer-titlebar-padding-y: $header-padding-y !default;
+$mediaplayer-titlebar-padding-x: map-get( $spacing, 2 ) !default;
+$mediaplayer-titlebar-padding-y: map-get( $spacing, 2 ) !default;
 $mediaplayer-titlebar-bg: null !default;
 $mediaplayer-titlebar-text: $mediaplayer-bg !default;
 $mediaplayer-titlebar-border: null !default;
