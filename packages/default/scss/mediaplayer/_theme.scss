@@ -1,8 +1,12 @@
-@include exports("mediaplayer/theme") {
+@include exports( "mediaplayer/theme" ) {
 
     // Theme
     .k-mediaplayer {
-        @include fill( $mediaplayer-text, $mediaplayer-bg, $mediaplayer-border );
+        @include fill(
+            $mediaplayer-text,
+            $mediaplayer-bg,
+            $mediaplayer-border
+        );
     }
 
 
