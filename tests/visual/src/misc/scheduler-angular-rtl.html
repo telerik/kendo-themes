@@ -18,21 +18,48 @@
 <body>
     <div id="test-area">
         <kendo-scheduler class="k-widget k-scheduler k-floatwrap k-readonly-scheduler k-rtl" dir="rtl">
-            <kendo-scheduler-toolbar class="k-scheduler-toolbar k-header k-floatwrap">
-                <ul class="k-scheduler-navigation k-reset">
-                    <li class="k-header k-nav-today"><a class="k-link">Today</a></li>
-                    <li class="k-header k-nav-prev"><a class="k-link"><span class="k-icon k-i-arrow-60-left"></span></a></li>
-                    <li class="k-header k-nav-next"><a class="k-link"><span class="k-icon k-i-arrow-60-right"></span></a></li>
-                    <li class="k-nav-current"><a class="k-link"><span class="k-icon k-i-calendar"></span><span class="k-sm-date-format">6/23/2019 - 6/29/2019</span><span class="k-lg-date-format">Sunday, June 23, 2019 - Saturday, June 29, 2019</span></a></li>
-                </ul>
-                <ul class="k-scheduler-views k-reset">
-                    <li class="k-current-view"><a class="k-link">Week</a></li>
-                    <li><a class="k-link">Day</a></li>
-                    <li class="k-state-selected"><a class="k-link">Week</a></li>
-                    <li><a class="k-link">Month</a></li>
-                    <li><a class="k-link">Timeline</a></li>
-                    <li><a class="k-link">Agenda</a></li>
-                </ul>
+            <kendo-scheduler-toolbar class="k-scheduler-toolbar k-toolbar">
+                <div class="k-toolbar-group">
+                    <div class="k-scheduler-navigation">
+                        <kendo-buttongroup class="k-button-group">
+                            <button class="k-nav-today k-button k-group-start">
+                                <span class="k-button-text">Today</span>
+                            </button>
+                            <button class="k-nav-prev k-button-icon k-button">
+                                <span class="k-icon k-i-arrow-60-left"></span>
+                            </button>
+                            <button class="k-nav-next k-button-icon k-button k-group-end">
+                                <span class="k-icon k-i-arrow-60-right"></span>
+                            </button>
+                        </kendo-buttongroup>
+                    </div>
+                    <a class="k-nav-current" href="#">
+                        <span class="k-icon k-i-calendar"></span>
+                        <span class="k-sm-date-format">6/23/2019 - 6/29/2019</span>
+                        <span class="k-lg-date-format">Sunday, June 23, 2019 - Saturday, June 29, 2019</span>
+                    </a>
+                </div>
+                <span class="k-spacer"></span>
+                <div class="k-scheduler-views-wrapper">
+                    <select class="k-views-dropdown k-dropdown"></select>
+                    <kendo-buttongroup class="k-scheduler-views k-button-group">
+                        <button class="k-button">
+                            <span class="k-button-text">Day</span>
+                        </button>
+                        <button class="k-button k-state-selected">
+                            <span class="k-button-text">Week</span>
+                        </button>
+                        <button class="k-button">
+                            <span class="k-button-text">Month</span>
+                        </button>
+                        <button class="k-button">
+                            <span class="k-button-text">Timeline</span>
+                        </button>
+                        <button class="k-button">
+                            <span class="k-button-text">Agenda</span>
+                        </button>
+                    </kendo-buttongroup>
+                </div>
             </kendo-scheduler-toolbar>
             <multi-day-view style="display: block;">
                 <div class="k-scheduler-layout k-scheduler-flex-layout k-scheduler-weekview">
@@ -376,10 +403,11 @@
                     </div>
                 </div>
             </multi-day-view>
-            <div class="k-header k-scheduler-footer">
-                <ul class="k-reset k-header">
-                    <li class="k-scheduler-fullday"><a class="k-link"><span class="k-icon k-i-clock"></span> Show business hours </a></li>
-                </ul>
+            <div class="k-scheduler-footer k-toolbar">
+                <button class="k-scheduler-fullday k-button">
+                    <span class="k-button-icon k-icon k-i-clock"></span>
+                    <span class="k-button-text">Show business hours</span>
+                </button>
             </div>
         </kendo-scheduler>
     </div>
