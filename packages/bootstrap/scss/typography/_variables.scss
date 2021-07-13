@@ -11,7 +11,7 @@ $font-size-xl: ( $font-size-md * 1.5 ) !default;
 
 /// Font family across all components.
 /// @group typography
-$font-family: $font-family-base !default;
+$font-family: $font-family-sans-serif !default;
 
 /// Font family for monospaced text. Used for styling the code.
 /// @group typography
@@ -77,7 +77,7 @@ $typography-config: map-merge((
     h4: font-map($headings-font-family, $h4-font-size, $headings-line-height, $headings-font-weight ),
     h5: font-map($headings-font-family, $h5-font-size, $headings-line-height, $headings-font-weight ),
     h6: font-map($headings-font-family, $h6-font-size, $headings-line-height, $headings-font-weight ),
-    body: font-map($font-family-base, $font-size-base, $line-height-base, $font-weight-base )
+    body: font-map($font-family-sans-serif, $font-size-base, $line-height-base, $font-weight-base )
 ), $typography-config);
 $typography-config: map-merge((
     card-title: map-get($typography-config, h5),
