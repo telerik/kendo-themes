@@ -138,7 +138,7 @@
         .k-scheduler-cell {
             display: flex;
             flex: 1 1 100%;
-            padding: $cell-padding;
+            padding: $scheduler-cell-padding-y $scheduler-cell-padding-y;
             min-height: 1.5em;
             overflow: hidden;
             white-space: nowrap;
