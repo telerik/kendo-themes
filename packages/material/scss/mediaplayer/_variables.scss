@@ -14,9 +14,3 @@ $mediaplayer-titlebar-bg: null !default;
 $mediaplayer-titlebar-text: $mediaplayer-bg !default;
 $mediaplayer-titlebar-border: null !default;
 $mediaplayer-titlebar-gradient: rgba( $mediaplayer-text, .7 ), rgba( $mediaplayer-text, 0 ) !default;
-
-$mediaplayer-toolbar-padding-x: $toolbar-padding-x !default;
-$mediaplayer-toolbar-padding-y: $toolbar-padding-y !default;
-$mediaplayer-toolbar-spacing: $padding-x !default;
-$mediaplayer-toolbar-bg: try-shade( $button-bg, .25 ) !default;
-$mediaplayer-toolbar-text: $toolbar-text !default;

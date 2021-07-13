@@ -13,9 +13,4 @@
         text-shadow: 0 0 2px rgba( $mediaplayer-text, .5 );
     }
 
-
-    .k-mediaplayer-toolbar {
-        @include fill( $mediaplayer-toolbar-text, $mediaplayer-toolbar-bg );
-    }
-
 }
