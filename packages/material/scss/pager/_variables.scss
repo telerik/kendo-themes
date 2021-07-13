@@ -1,6 +1,6 @@
 // Pager
-$pager-padding-x: 8px !default;
-$pager-padding-y: 10px !default;
+$pager-padding-x: map-get( $spacing, 2 ) !default;
+$pager-padding-y: map-get( $spacing, 2 ) !default;
 $pager-border-width: 1px !default;
 
 $pager-font-family: $font-family !default;
