@@ -137,8 +137,6 @@
             align-items: center;
             gap: $calendar-nav-gap;
         }
-
-        .k-button { @extend .k-button-flat; }
     }
     .k-calendar > .k-calendar-header {
         min-width: $calendar-header-min-width;
