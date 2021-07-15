@@ -1,4 +1,470 @@
 @include exports("pivotgrid/layout") {
+    .k-pivotgrid {
+        padding: $pivotgrid-padding-y $pivotgrid-padding-x;
+        border-width: $pivotgrid-border-width;
+        border-style: solid;
+        box-sizing: content-box;
+        font-size: $pivotgrid-font-size;
+        font-family: $pivotgrid-font-family;
+        line-height: $pivotgrid-line-height;
+        position: relative;
+        vertical-align: top;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+
+        .k-pivotgrid-table {
+            height: 100%;
+        }
+
+        // Table Layout
+        table {
+            table-layout: auto;
+            border-collapse: collapse;
+            border-spacing: 0;
+
+            th {
+                font-weight: 600;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    .k-pivotgrid-column-headers,
+    .k-pivotgrid-values {
+        table {
+            width: 100%;
+            table-layout: fixed;
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+    }
+
+
+    // Column Headers
+    .k-pivotgrid-column-headers {
+        border-left-style: solid;
+        border-left-width: 1px;
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+
+        .k-pivotgrid-cell {
+            border-left-style: solid;
+            border-left-width: 1px;
+            border-bottom-style: solid;
+            border-bottom-width: 1px;
+
+            &:first-child {
+                border-left-width: 0;
+            }
+
+            &.k-first {
+                border-left-width: 1px;
+            }
+        }
+
+        .k-pivotgrid-row:last-child .k-pivotgrid-cell {
+            border-bottom-width: 0;
+        }
+    }
+
+    .k-pivotgrid-column-total {
+        border-top-style: solid;
+        border-top-width: 1px;
+
+        &:first-child {
+            border-top-width: 0;
+        }
+
+        .k-pivotgrid-cell:not(.k-pivotgrid-expanded) {
+            border-bottom-width: 0;
+        }
+    }
+
+
+    // Row Headers
+    .k-pivotgrid-row-headers {
+        border-right-style: solid;
+        border-right-width: 1px;
+        border-top-style: solid;
+        border-top-width: 1px;
+
+        .k-pivotgrid-cell {
+            border-left-style: solid;
+            border-left-width: 1px;
+            border-bottom-style: solid;
+            border-bottom-width: 1px;
+            white-space: nowrap;
+        }
+
+        .k-pivotgrid-row:first-child .k-pivotgrid-cell:first-child {
+            border-left-width: 0;
+        }
+    }
+
+
+    // Values
+    .k-pivotgrid-values {
+        .k-pivotgrid-cell {
+            border-left-style: solid;
+            border-left-width: 1px;
+            border-bottom-style: solid;
+            border-bottom-width: 1px;
+
+            &:first-child {
+                border-left-width: 0;
+            }
+        }
+
+        table {
+            width: 100%;
+            table-layout: fixed;
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+    }
+
+    // Row
+    .k-pivotgrid-table > tbody > .k-pivotgrid-row:first-child  {
+        height: 0;
+    }
+
+    // Cell
+    .k-pivotgrid-cell {
+        padding: 8px 12px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        vertical-align: top;
+
+        .k-icon {
+            cursor: pointer;
+        }
+    }
+
+    .k-pivotgrid-table > tbody > .k-pivotgrid-row > .k-pivotgrid-cell {
+        padding: 0;
+    }
+
+    table,
+    th,
+    tr,
+    td {
+        border-color: inherit;
+    }
+
+    // Column menus
+    .k-column-menu .k-treeview {
+        padding: 0 map-get($spacing, 2);
+        overflow: auto;
+    }
+
+    // Pager
+    .k-pivotgrid-pager {
+        border-width: 1px 0 0;
+        border-color: inherit;
+        font-size: inherit;
+    }
+}
+
+
+
+@include exports("pivotgrid/layout/configurator") {
+    // Configurator
+    .k-pivotgrid-configurator {
+        display: flex;
+    }
+
+    .k-pivotgrid-configurator-panel {
+        padding: $pivotgrid-configurator-padding-y $pivotgrid-configurator-padding-x;
+        border-width: $pivotgrid-configurator-border-width;
+        border-style: solid;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        z-index: 2;
+        gap: $pivotgrid-configurator-gap;
+    }
+
+    // Configurator Button
+    .k-pivotgrid-configurator-button {
+        padding: 4px 4px; // TODO extract variable
+        border-width: $pivotgrid-configurator-border-width;
+        border-style: solid;
+        box-sizing: border-box;
+        cursor: pointer;
+
+        .k-flex-row &,
+        .k-flex-row-reverse & {
+            display: flex;
+            align-items: center;
+
+            span {
+                writing-mode: vertical-rl;
+            }
+            .k-icon {
+                vertical-align: baseline;
+            }
+        }
+        .k-flex-row-reverse & > span {
+            transform: rotate(-180deg);
+        }
+
+        .k-flex-col &,
+        .k-flex-col-reverse & {
+            text-align: center;
+        }
+    }
+
+    // Modes
+    .k-pivotgrid-configurator-push {
+        .k-flex-row &,
+        .k-flex-row-reverse & {
+            border-right-width: 0;
+            border-left-width: 0;
+        }
+
+        .k-flex-col &,
+        .k-flex-col-reverse & {
+            border-top-width: 0;
+            border-bottom-width: 0;
+        }
+
+        .k-pivotgrid-configurator-vertical {
+            min-width: $pivotgrid-configurator-vertical-width;
+        }
+    }
+
+    .k-pivotgrid-configurator-overlay {
+        position: absolute;
+        overflow: hidden;
+        z-index: 2;
+    }
+
+
+
+    // Panel Content
+    .k-pivotgrid-configurator-header {
+        font-size: $pivotgrid-configurator-header-font-size;
+        font-weight: $pivotgrid-configurator-header-font-weight;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .k-pivotgrid-configurator-header-text {
+        word-break: normal;
+        overflow-wrap: anywhere;
+    }
+
+    .k-pivotgrid-configurator-content {
+        margin: $pivotgrid-configurator-content-padding-y (-$pivotgrid-configurator-content-padding-x);
+        padding: $pivotgrid-configurator-content-padding-y $pivotgrid-configurator-content-padding-x;
+        overflow: auto;
+        flex: 1 1 auto;
+
+        .k-form {
+            .k-label {
+                align-items: flex-start;
+                font-size: 16px;
+                font-weight: 500;
+            }
+            .k-dropdown {
+                max-width: 90px;
+            }
+            .k-textbox {
+                flex-basis: 50%;
+            }
+        }
+
+        // Rows, Cols and Filters
+        .k-row-fields,
+        .k-column-fields,
+        .k-filter-fields {
+            margin-top: map-get($spacing, 2);
+            flex-wrap: wrap;
+
+            > * {
+                margin-bottom: map-get($spacing, 2);
+            }
+
+            > *:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        // Values
+        .k-value-fields {
+            margin: ($pivotgrid-spacer / 2) 0;
+            display: flex;
+            flex-direction: column;
+            gap: ($pivotgrid-spacer / 2);
+        }
+
+        .k-select-all .k-checkbox {
+            margin-inline-end: map-get($spacing, 1);
+        }
+
+        .k-fields-list-wrapper {
+            flex: 1 1 auto;
+            border-style: solid;
+            border-width: 1px;
+            max-height: 200px;
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+
+        .k-settings-description {
+            text-align: center;
+            margin-top: 1rem;
+        }
+
+        .k-chip-content {
+            padding-inline-end: map-get($spacing, 1);
+        }
+    }
+
+    .k-pivotgrid-configurator-actions {
+        margin: (-$pivotgrid-configurator-actions-padding-y) (-$pivotgrid-configurator-actions-padding-x);
+        padding: $pivotgrid-configurator-actions-padding-y $pivotgrid-configurator-actions-padding-x;
+    }
+
+
+    // Calculated field
+    .k-calculated-field {
+        padding: $pivotgrid-calculated-field-padding-y $pivotgrid-calculated-field-padding-x;
+        border-width: $pivotgrid-calculated-field-border-width;
+        border-radius: $pivotgrid-calculated-field-border-radius;
+        border-style: solid;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        gap: $pivotgrid-calculated-field-gap;
+    }
+    .k-calculated-field-header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        .k-textbox {
+            min-width: 200px;
+        }
+    }
+
+    .k-calculated-field-header-text {
+        margin-right: 5px;
+        word-break: normal;
+        overflow-wrap: anywhere;
+    }
+
+    .k-calculated-field-header-actions {
+        flex-shrink: 0;
+        align-self: flex-start;
+    }
+
+    .k-calculated-field-content {
+        .k-textbox {
+            width: 100%;
+        }
+    }
+
+    .k-calculated-field-actions {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        .k-icon {
+            margin-right: map-get( $spacing, 2 );
+        }
+        .k-dropdown {
+            max-width: 100px;
+        }
+    }
+
+    .k-filter-menu .k-calculated-item {
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+    }
+
+
+    // Vertical Layout
+    .k-pivotgrid-configurator-vertical {
+        width: $pivotgrid-configurator-vertical-width;
+    }
+
+    // Horizontal Layout
+    .k-pivotgrid-configurator-horizontal {
+        width: 100%;
+        height: $pivotgrid-configurator-horizontal-height;
+
+        .k-pivotgrid-configurator-content {
+            .k-form {
+                display: flex;
+                flex-direction: row;
+            }
+
+            .k-form-field-wrapper {
+                padding-left: map-get( $spacing, 4 );
+
+                & > *:first-child {
+                    margin-top: 0;
+                }
+                &:first-child {
+                    padding-left: 0;
+                    flex: 1 1 30%;
+                }
+                &:nth-child(2) {
+                    flex: 1 1 30%;
+                }
+
+                &:last-child {
+                    border-left-width: 1px;
+                    border-left-style: solid;
+                    flex: 1 1 40%;
+                }
+            }
+
+            .k-row-fields,
+            .k-column-fields,
+            .k-filter-fields {
+                max-height: 100px;
+                overflow-x: hidden;
+                overflow-y: auto;
+            }
+            .k-value-fields {
+                flex-direction: row;
+                flex-wrap: wrap;
+                max-height: 250px;
+                overflow-x: hidden;
+                overflow-y: auto;
+            }
+        }
+    }
+}
+
+
+
+@include exports("pivotgrid/layout/rtl") {
+    .k-pivotgrid {
+        .k-rtl &,
+        &.k-rtl,
+        [dir="rtl"] &,
+        &[dir="rtl"] {
+
+        }
+    }
+}
+
+
+
+@include exports("pivotgrid/layout/compatibility") {
+
+    .k-ie { }
+}
+
+
+
+@include exports("pivotgrid/layout/legacy") {
 
     .k-pivot {
         border-width: $pivotgrid-border-width;
@@ -138,7 +604,7 @@
 
 
 
-@include exports("pivotgrid/configurator/layout") {
+@include exports("pivotgrid/configurator/layout/legacy") {
 
 
     .k-fieldselector {
@@ -226,7 +692,7 @@
 
 
 
-@include exports("pivotgrid/layout/ie11-fixes") {
+@include exports("pivotgrid/layout/ie11-fixes/legacy") {
 
     // Pivotgrid is stretched beyond container in IE 11
     // see https://github.com/telerik/kendo-theme-default/issues/647

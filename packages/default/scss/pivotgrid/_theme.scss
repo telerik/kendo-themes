@@ -1,5 +1,112 @@
 @include exports("pivotgrid/theme") {
 
+    .k-pivotgrid {
+        @include fill (
+            $pivotgrid-text,
+            $pivotgrid-bg,
+            $pivotgrid-border
+        );
+    }
+
+    .k-pivotgrid-header,
+    .k-pivotgrid-column-headers,
+    .k-pivotgrid-row-headers {
+        @include fill (
+            $pivotgrid-headers-text,
+            $pivotgrid-headers-bg,
+            $pivotgrid-headers-border
+        );
+    }
+
+    .k-pivotgrid-header-total,
+    .k-pivotgrid-total {
+        @include fill (
+            $pivotgrid-total-text,
+            $pivotgrid-total-bg,
+            $pivotgrid-total-border
+        );
+    }
+
+}
+
+
+
+@include exports("pivotgrid/theme/configurator") {
+
+    .k-pivotgrid-configurator-button,
+    .k-pivotgrid-configurator-panel {
+        @include fill (
+            $pivotgrid-configurator-text,
+            $pivotgrid-configurator-bg,
+            $pivotgrid-configurator-border
+        );
+    }
+
+    .k-pivotgrid-configurator-header {
+        @include fill(
+            $pivotgrid-configurator-header-text,
+            $pivotgrid-configurator-header-bg,
+            $pivotgrid-configurator-header-border
+        );
+    }
+
+    .k-pivotgrid-configurator-content .k-fields-list-wrapper {
+        @include fill(
+            $border: $pivotgrid-configurator-border
+        );
+    }
+
+
+    // Calculated field
+    .k-calculated-field {
+        @include fill (
+            $pivotgrid-calculated-field-text,
+            $pivotgrid-calculated-field-bg,
+            $pivotgrid-calculated-field-border
+        );
+    }
+
+    .k-calculated-field-header {
+        @include fill(
+            $pivotgrid-calculated-field-header-text,
+            $pivotgrid-calculated-field-header-bg,
+            $pivotgrid-calculated-field-header-border
+        );
+    }
+
+    .k-filter-menu .k-calculated-item  {
+        @include fill( $border: $popup-border );
+    }
+
+    .k-pivotgrid-configurator-content .k-form-field-wrapper {
+        @include fill( $border: $component-border );
+    }
+
+
+    // Overlay mode
+    .k-pivotgrid-configurator-overlay {
+        .k-flex-row & {
+            @include box-shadow( $pivotgrid-configurator-end-shadow );
+        }
+
+        .k-flex-row-reverse & {
+            @include box-shadow( $pivotgrid-configurator-start-shadow );
+        }
+
+        .k-flex-col & {
+            @include box-shadow( $pivotgrid-configurator-top-shadow );
+        }
+
+        .k-flex-col-reverse & {
+            @include box-shadow( $pivotgrid-configurator-bottom-shadow );
+        }
+    }
+}
+
+
+
+@include exports("pivotgrid/theme/legacy") {
+
     .k-pivot {
         border-color: $pivotgrid-border;
     }

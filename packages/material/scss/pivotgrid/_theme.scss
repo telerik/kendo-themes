@@ -1,4 +1,6 @@
-@include exports("pivotgrid/theme") {
+@import "~@progress/kendo-theme-default/scss/pivotgrid/_theme.scss";
+
+@include exports("pivotgrid/theme/legacy") {
 
     .k-pivot {
         border-color: $pivotgrid-border;
