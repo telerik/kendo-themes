@@ -1,4 +1,4 @@
-// Checkboxes
+// Checkbox
 $checkbox-size: map-get( $spacing, 4 ) !default;
 $checkbox-radius: map-get( $spacing, 1 ) !default;
 $checkbox-border-width: 1px !default;
@@ -12,40 +12,52 @@ $checkbox-icon-svg: escape-svg( $custom-checkbox-indicator-icon-checked ) !defau
 $checkbox-indeterminate-width:  ( $checkbox-size / 2 ) !default;
 $checkbox-indeterminate-height: 2px !default;
 
-$checkbox-label-margin-x: map-get( $spacing, 1 ) !default;
-
 $checkbox-bg: $custom-control-indicator-bg !default;
 $checkbox-text: transparent !default;
 $checkbox-border: $custom-control-indicator-border-color !default;
+
 $checkbox-hovered-bg: $checkbox-bg !default;
 $checkbox-hovered-text: $checkbox-text !default;
 $checkbox-hovered-border: $checkbox-border !default;
+
 $checkbox-checked-bg: $custom-control-indicator-checked-bg !default;
 $checkbox-checked-text: $custom-control-indicator-checked-color !default;
 $checkbox-checked-border: $custom-control-indicator-checked-border-color !default;
+
 $checkbox-indeterminate-bg: $custom-checkbox-indicator-indeterminate-bg !default;
 $checkbox-indeterminate-text: $custom-checkbox-indicator-indeterminate-color !default;
 $checkbox-indeterminate-border: $custom-checkbox-indicator-indeterminate-border-color !default;
+
 $checkbox-focused-border: $custom-control-indicator-focus-border-color !default;
 $checkbox-focused-shadow: $custom-control-indicator-focus-box-shadow !default;
 $checkbox-focused-checked-border: $checkbox-checked-border !default;
 $checkbox-focused-checked-shadow: $custom-control-indicator-focus-box-shadow !default;
+
 $checkbox-disabled-bg: $custom-control-indicator-disabled-bg !default;
 $checkbox-disabled-text: null !default;
 $checkbox-disabled-border: null !default;
 $checkbox-disabled-checked-bg: $custom-control-indicator-checked-disabled-bg !default;
 $checkbox-disabled-checked-text: null !default;
 $checkbox-disabled-checked-border: null !default;
+
 $checkbox-invalid-bg: null !default;
 $checkbox-invalid-text: $invalid-text !default;
 $checkbox-invalid-border: $invalid-border !default;
 
+
+// Checkbox label
+$checkbox-label-margin-x: map-get( $spacing, 1 ) !default;
+
+
+// Checkbox list
 $checkbox-list-margin: 0px !default;
 $checkbox-list-padding: 0px !default;
 $checkbox-list-item-padding-x: 0px !default;
 $checkbox-list-item-padding-y: $list-item-padding-y !default;
 $checkbox-list-horizontal-item-margin-x: 32px !default;
 
+
+// Checkbox ripple
 $checkbox-ripple-size: $checkbox-size * 3 !default;
 $checkbox-ripple-margin: calc(-1 * (#{$checkbox-size} + #{$checkbox-border-width})) !default;
 $checkbox-ripple-opacity: .3 !default;

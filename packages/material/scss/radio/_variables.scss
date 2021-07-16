@@ -1,45 +1,58 @@
-// Radio Buttons
+// Radio button
 $radio-size: map-get( $spacing, 4 ) !default;
 $radio-radius: 50% !default;
 $radio-border-width: 2px !default;
 $radio-line-height: calc(#{$radio-size} + #{$radio-border-width}) !default;
-
-$radio-icon-size: ( $radio-size / 2 ) !default;
 
 $radio-label-margin-x: map-get( $spacing, 1 ) !default;
 
 $radio-bg: null !default;
 $radio-text: transparent !default;
 $radio-border: $checkbox-border !default;
+
 $radio-hovered-bg: null !default;
 $radio-hovered-text: null !default;
 $radio-hovered-border: $checkbox-hovered-border !default;
+
 $radio-checked-bg: null !default;
 $radio-checked-text: $primary !default;
 $radio-checked-border: $radio-checked-text !default;
+
 $radio-indeterminate-bg: $radio-checked-bg !default;
 $radio-indeterminate-text: $radio-checked-text !default;
 $radio-indeterminate-border: $radio-checked-border !default;
+
 $radio-focused-border: $checkbox-border !default;
 $radio-focused-shadow: $checkbox-focused-shadow !default;
 $radio-focused-checked-border: $checkbox-checked-border !default;
 $radio-focused-checked-shadow: $checkbox-focused-checked-shadow !default;
+
 $radio-disabled-bg: null !default;
 $radio-disabled-text: null !default;
 $radio-disabled-border: #b0b0b0 !default;
+
 $radio-disabled-checked-bg: null !default;
 $radio-disabled-checked-text: $radio-disabled-border !default;
 $radio-disabled-checked-border: $radio-disabled-border !default;
+
 $radio-invalid-bg: null !default;
 $radio-invalid-text: $invalid-text !default;
 $radio-invalid-border: $invalid-border !default;
 
+
+// Radio label
+$radio-icon-size: ( $radio-size / 2 ) !default;
+
+
+// Radio list
 $radio-list-margin: 0px !default;
 $radio-list-padding: 0px !default;
 $radio-list-item-padding-x: 0px !default;
 $radio-list-item-padding-y: $list-item-padding-y !default;
 $radio-list-horizontal-item-margin-x: 32px !default;
 
+
+// Radio ripple
 $radio-ripple-size: $radio-size * 3 !default;
 $radio-ripple-margin: calc(-1 * (#{$radio-size} + 2 * #{$radio-border-width})) !default;
 $radio-ripple-opacity: .3 !default;
