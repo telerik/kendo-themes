@@ -4,45 +4,55 @@ $checkbox-radius: map-get( $spacing, 1 ) !default;
 $checkbox-border-width: 1px !default;
 $checkbox-line-height: calc( #{$checkbox-size} + #{$checkbox-border-width} ) !default;
 
-$checkbox-icon-size: $checkbox-size !default;
-$checkbox-icon-type: svg !default;
-$checkbox-icon-glyph: "\e118" !default;
-$checkbox-icon-svg: escape-svg( $custom-checkbox-indicator-icon-checked ) !default;
+$checkbox-bg: $white !default;
+$checkbox-text: null !default;
+$checkbox-border: $gray-400 !default;
 
-$checkbox-indeterminate-width:  ( $checkbox-size / 2 ) !default;
-$checkbox-indeterminate-height: 2px !default;
+$checkbox-hovered-bg: null !default;
+$checkbox-hovered-text: null !default;
+$checkbox-hovered-border: null !default;
 
-$checkbox-bg: $custom-control-indicator-bg !default;
-$checkbox-text: transparent !default;
-$checkbox-border: $custom-control-indicator-border-color !default;
+$checkbox-checked-bg: $primary !default;
+$checkbox-checked-text: contrast-wcag( $checkbox-checked-bg ) !default;
+$checkbox-checked-border: $checkbox-checked-bg !default;
 
-$checkbox-hovered-bg: $checkbox-bg !default;
-$checkbox-hovered-text: $checkbox-text !default;
-$checkbox-hovered-border: $checkbox-border !default;
+$checkbox-indeterminate-bg: $checkbox-checked-bg !default;
+$checkbox-indeterminate-text: $checkbox-checked-text !default;
+$checkbox-indeterminate-border: $checkbox-checked-border !default;
 
-$checkbox-checked-bg: $custom-control-indicator-checked-bg !default;
-$checkbox-checked-text: $custom-control-indicator-checked-color !default;
-$checkbox-checked-border: $custom-control-indicator-checked-border-color !default;
-
-$checkbox-indeterminate-bg: $custom-checkbox-indicator-indeterminate-bg !default;
-$checkbox-indeterminate-text: $custom-checkbox-indicator-indeterminate-color !default;
-$checkbox-indeterminate-border: $custom-checkbox-indicator-indeterminate-border-color !default;
-
-$checkbox-focused-border: $custom-control-indicator-focus-border-color !default;
-$checkbox-focused-shadow: $custom-control-indicator-focus-box-shadow !default;
+$checkbox-focused-border: try-tint( $primary, 50% ) !default;
+$checkbox-focused-shadow: 0 0 0 .25rem rgba( $primary, .25 ) !default;
 $checkbox-focused-checked-border: $checkbox-checked-border !default;
-$checkbox-focused-checked-shadow: $custom-control-indicator-focus-box-shadow !default;
+$checkbox-focused-checked-shadow: $checkbox-focused-shadow !default;
 
-$checkbox-disabled-bg: $custom-control-indicator-disabled-bg !default;
+$checkbox-disabled-bg: null !default;
 $checkbox-disabled-text: null !default;
 $checkbox-disabled-border: null !default;
-$checkbox-disabled-checked-bg: $custom-control-indicator-checked-disabled-bg !default;
+
+$checkbox-disabled-checked-bg: null !default;
 $checkbox-disabled-checked-text: null !default;
 $checkbox-disabled-checked-border: null !default;
 
 $checkbox-invalid-bg: null !default;
 $checkbox-invalid-text: $invalid-text !default;
 $checkbox-invalid-border: $invalid-border !default;
+
+
+// Checkbox indicator
+$checkbox-icon-type: image !default;
+
+$checkbox-glyph-font-family: "WebComponentsIcons", monospace !default;
+$checkbox-glyph-size: $checkbox-size !default;
+$checkbox-checked-glyph: "\e118" !default;
+$checkbox-indeterminate-glyph: "\e121" !default;
+
+$checkbox-checked-image: escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path fill='none' stroke='#{$checkbox-checked-text}' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/></svg>") ) !default;
+$checkbox-indeterminate-image: escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path fill='none' stroke='#{$checkbox-indeterminate-text}' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10h8'/></svg>") ) !default;
+
+$checkbox-marker-checked-width: ( $checkbox-size / 2 ) !default;
+$checkbox-marker-checked-height: ( $checkbox-size / 2 ) !default;
+$checkbox-marker-indeterminate-width: ( $checkbox-size / 2 ) !default;
+$checkbox-marker-indeterminate-height: 2px !default;
 
 
 // Checkbox label
