@@ -4,14 +4,6 @@ $checkbox-radius: map-get( $spacing, thin ) !default;
 $checkbox-border-width: 1px !default;
 $checkbox-line-height: calc( #{$checkbox-size} + #{$checkbox-border-width} ) !default;
 
-$checkbox-icon-size: 12px !default;
-$checkbox-icon-type: glyph !default;
-$checkbox-icon-glyph: "\e118" !default;
-$checkbox-icon-svg: null !default;
-
-$checkbox-indeterminate-width:  ( $checkbox-size / 2 ) !default;
-$checkbox-indeterminate-height: ( $checkbox-size / 2 ) !default;
-
 $checkbox-bg: $white !default;
 $checkbox-text: transparent !default;
 $checkbox-border: $base-border !default;
@@ -44,6 +36,23 @@ $checkbox-disabled-checked-border: null !default;
 $checkbox-invalid-bg: null !default;
 $checkbox-invalid-text: $invalid-text !default;
 $checkbox-invalid-border: $invalid-border !default;
+
+
+// Checkbox indicator
+$checkbox-icon-type: glyph !default;
+
+$checkbox-glyph-font-family: "WebComponentsIcons", monospace !default;
+$checkbox-glyph-size: 12px !default;
+$checkbox-checked-glyph: "\e118" !default;
+$checkbox-indeterminate-glyph: "\e121" !default;
+
+$checkbox-checked-image: null !default;
+$checkbox-indeterminate-image: null !default;
+
+$checkbox-marker-checked-width: ( $checkbox-size / 2 ) !default;
+$checkbox-marker-checked-height: ( $checkbox-size / 2 ) !default;
+$checkbox-marker-indeterminate-width: ( $checkbox-size / 2 ) !default;
+$checkbox-marker-indeterminate-height: ( $checkbox-size / 2 ) !default;
 
 
 // Checkbox label

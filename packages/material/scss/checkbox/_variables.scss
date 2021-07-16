@@ -4,14 +4,6 @@ $checkbox-radius: map-get( $spacing, thin ) !default;
 $checkbox-border-width: 2px !default;
 $checkbox-line-height: calc( #{$checkbox-size} + #{$checkbox-border-width} ) !default;
 
-$checkbox-icon-size: 10px !default;
-$checkbox-icon-type: glyph !default;
-$checkbox-icon-glyph: "\e118" !default;
-$checkbox-icon-svg: null !default;
-
-$checkbox-indeterminate-width:  10px !default;
-$checkbox-indeterminate-height: 2px !default;
-
 $checkbox-bg: null !default;
 $checkbox-text: transparent !default;
 $checkbox-border: rgba( 0, 0, 0, .54 ) !default;
@@ -44,6 +36,23 @@ $checkbox-disabled-checked-border: $checkbox-disabled-checked-bg !default;
 $checkbox-invalid-bg: null !default;
 $checkbox-invalid-text: $invalid-text !default;
 $checkbox-invalid-border: $invalid-border !default;
+
+
+// Checkbox indicator
+$checkbox-icon-type: image !default;
+
+$checkbox-glyph-font-family: "WebComponentsIcons", monospace !default;
+$checkbox-glyph-size: 10px !default;
+$checkbox-checked-glyph: "\e118" !default;
+$checkbox-indeterminate-glyph: "\e121" !default;
+
+$checkbox-checked-image: escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='none' stroke='#{$checkbox-checked-text}' stroke-width='3' d='M4.1,12.7 9,17.6 20.3,6.3'/></svg>") ) !default;
+$checkbox-indeterminate-image: escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path fill='none' stroke='#{$checkbox-indeterminate-text}' stroke-width='3' d='M4 10h12'/></svg>") ) !default;
+
+$checkbox-marker-checked-width: 10px !default;
+$checkbox-marker-checked-height: 10px !default;
+$checkbox-marker-indeterminate-width: 10px !default;
+$checkbox-marker-indeterminate-height: 2px !default;
 
 
 // Checkbox label
