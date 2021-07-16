@@ -4,8 +4,6 @@ $radio-radius: 50% !default;
 $radio-border-width: 1px !default;
 $radio-line-height: calc(#{$radio-size} + #{$radio-border-width}) !default;
 
-$radio-icon-size: 6px !default;
-
 $radio-bg: $checkbox-bg !default;
 $radio-text: $checkbox-text !default;
 $radio-border: $checkbox-border !default;
@@ -27,17 +25,30 @@ $radio-focused-shadow: $checkbox-focused-shadow !default;
 $radio-focused-checked-border: $checkbox-checked-border !default;
 $radio-focused-checked-shadow: $checkbox-focused-checked-shadow !default;
 
-$radio-disabled-bg: $checkbox-disabled-bg !default;
+$radio-disabled-bg: null !default;
 $radio-disabled-text: null !default;
 $radio-disabled-border: null !default;
 
-$radio-disabled-checked-bg: $checkbox-disabled-checked-bg !default;
+$radio-disabled-checked-bg: null !default;
 $radio-disabled-checked-text: null !default;
 $radio-disabled-checked-border: null !default;
 
 $radio-invalid-bg: null !default;
 $radio-invalid-text: $invalid-text !default;
 $radio-invalid-border: $invalid-border !default;
+
+
+// Radio indicator
+$radio-icon-type: image !default;
+
+$radio-glyph-font-family: "WebComponentsIcons", monospace !default;
+$radio-glyph-size: 12px !default;
+$radio-checked-glyph: "\e308" !default;
+
+$radio-checked-image: escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='2' fill='#{$radio-checked-text}'/></svg>") ) !default;
+
+$radio-marker-checked-width: ( $radio-size / 2 ) !default;
+$radio-marker-checked-height: ( $radio-size / 2 ) !default;
 
 
 // Radio label
