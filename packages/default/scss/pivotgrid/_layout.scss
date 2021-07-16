@@ -15,14 +15,22 @@
     }
 
     .k-pivot-toolbar {
-        padding: $cell-padding-y;
         border-bottom-width: 1px;
         border-bottom-style: solid;
+        align-items: start;
+        flex-wrap: wrap;
+
+        > * {
+            max-width: 100%;
+        }
+
+        &::before {
+            display: none;
+        }
     }
 
     .k-pivot-toolbar .k-button,
     .k-fieldselector .k-list li.k-item {
-        @include use-background-clip();
         @include border-radius( $border-radius );
         padding: $button-padding-y $button-padding-x;
         padding-right: calc( #{$button-padding-x} + #{$icon-size * 3} );
@@ -38,13 +46,6 @@
         .k-field-actions .k-setting-delete {
             box-sizing: content-box;
         }
-    }
-
-    .k-settings-rows .k-button,
-    .k-settings-columns .k-button,
-    .k-settings-measures .k-button {
-        margin-right: $cell-padding-y;
-        margin-bottom: $button-padding-y-sm;
     }
 
     .k-field-actions {
@@ -156,7 +157,7 @@
             align-items: stretch;
 
             > div {
-                padding: $cell-padding-y;
+                padding: $table-cell-padding-y;
                 width: 50%;
                 box-sizing: border-box;
                 border-width: 0;
