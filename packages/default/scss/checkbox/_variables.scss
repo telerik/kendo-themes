@@ -1,4 +1,4 @@
-// Checkboxes
+// Checkbox
 $checkbox-size: map-get( $spacing, 4 ) !default;
 $checkbox-radius: map-get( $spacing, thin ) !default;
 $checkbox-border-width: 1px !default;
@@ -12,40 +12,53 @@ $checkbox-icon-svg: null !default;
 $checkbox-indeterminate-width:  ( $checkbox-size / 2 ) !default;
 $checkbox-indeterminate-height: ( $checkbox-size / 2 ) !default;
 
-$checkbox-label-margin-x: map-get( $spacing, 1 ) !default;
-
 $checkbox-bg: $white !default;
 $checkbox-text: transparent !default;
 $checkbox-border: $base-border !default;
+
 $checkbox-hovered-bg: null !default;
 $checkbox-hovered-text: null !default;
 $checkbox-hovered-border: $hovered-border !default;
+
 $checkbox-checked-bg: $primary !default;
 $checkbox-checked-text: contrast-wcag( $checkbox-checked-bg ) !default;
 $checkbox-checked-border: $checkbox-checked-bg !default;
+
 $checkbox-indeterminate-bg: $checkbox-bg !default;
 $checkbox-indeterminate-text: $checkbox-checked-bg !default;
 $checkbox-indeterminate-border: $checkbox-border !default;
+
 $checkbox-focused-border: $checkbox-hovered-border !default;
 $checkbox-focused-shadow: 0 0 0 2px rgba(0, 0, 0, .06) !default;
 $checkbox-focused-checked-border: $checkbox-checked-border !default;
 $checkbox-focused-checked-shadow: 0 0 0 2px rgba($primary, .3) !default;
+
 $checkbox-disabled-bg: null !default;
 $checkbox-disabled-text: null !default;
 $checkbox-disabled-border: null !default;
+
 $checkbox-disabled-checked-bg: null !default;
 $checkbox-disabled-checked-text: null !default;
 $checkbox-disabled-checked-border: null !default;
+
 $checkbox-invalid-bg: null !default;
 $checkbox-invalid-text: $invalid-text !default;
 $checkbox-invalid-border: $invalid-border !default;
 
+
+// Checkbox label
+$checkbox-label-margin-x: map-get( $spacing, 1 ) !default;
+
+
+// Checkbox list
 $checkbox-list-margin: 0px !default;
 $checkbox-list-padding: 0px !default;
 $checkbox-list-item-padding-x: 0px !default;
 $checkbox-list-item-padding-y: $list-item-padding-y !default;
 $checkbox-list-horizontal-item-margin-x: 32px !default;
 
+
+// Checkbox ripple
 $checkbox-ripple-size: $checkbox-size * 3 !default;
 $checkbox-ripple-margin: calc(-1 * (#{$checkbox-size} + 2 * #{$checkbox-border-width})) !default;
 $checkbox-ripple-opacity: .3 !default;
