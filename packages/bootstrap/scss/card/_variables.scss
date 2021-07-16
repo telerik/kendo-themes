@@ -8,7 +8,7 @@ $card-font-family: $font-family !default;
 $card-font-size: $font-size !default;
 $card-line-height: $line-height !default;
 
-$card-deck-gap: $card-deck-margin !default;
+$card-deck-gap: map-get( $spacing, 4 ) !default;
 
 $card-bg: $component-bg !default;
 $card-text: $component-text !default;
