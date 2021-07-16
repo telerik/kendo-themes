@@ -7,17 +7,17 @@
     $grid-group-dropclue-height: $button-calc-size !default;
     $grid-group-dropclue-top: 3px !default;
 
-    $grid-row-inner-height: calc( #{$line-height-em} + #{$cell-padding-y * 2} );
-    // $grid-row-half-inner-height: calc( #{$line-height-em / 2} + #{$cell-padding-y} );
+    $grid-row-inner-height: calc( #{$line-height-em} + #{$table-cell-padding-y * 2} );
+    // $grid-row-half-inner-height: calc( #{$line-height-em / 2} + #{$table-cell-padding-y} );
 
     // be cautious when changing the next line; see https://github.com/MoOx/reduce-css-calc/issues/38
-    $grid-command-cell-padding-y: calc( #{$cell-padding-y} - (#{$button-calc-size} - #{$line-height-em}) / 2 ) !default;
+    $grid-command-cell-padding-y: calc( #{$table-cell-padding-y} - (#{$button-calc-size} - #{$line-height-em}) / 2 ) !default;
 
     $grid-form-component-vertical-align: middle !default;
     $grid-hierarchy-col-width: ($icon-size * 2) !default;
 
     $grid-group-indicator-border-radius: $border-radius !default;
-    $grid-group-indicator-gap: $cell-padding-y !default;
+    $grid-group-indicator-gap: $table-cell-padding-y !default;
 
     $grid-grouping-row-border-top: 1px !default;
     $grid-group-footer-border-y: 1px !default;
@@ -156,7 +156,7 @@
         }
 
         .k-grouping-row .k-icon {
-            margin-left: calc( #{$icon-size / 2} - #{$cell-padding-x} );
+            margin-left: calc( #{$icon-size / 2} - #{$table-cell-padding-x} );
             margin-right: ($icon-size / 2);
             text-decoration: none;
         }
@@ -176,7 +176,7 @@
             overflow: visible;
 
             > .k-icon {
-                padding: $cell-padding-y 0;
+                padding: $table-cell-padding-y 0;
                 width: 100%;
                 height: 100%;
                 // That causes an issue with grid material. Commenting it for now
@@ -324,7 +324,7 @@
 
             .k-filtercell-operator {
                 margin-left: 0;
-                margin-right: $cell-padding-y / 2;
+                margin-right: $table-cell-padding-y / 2;
             }
 
             .k-dirty {
@@ -351,7 +351,7 @@
 
             .k-grouping-row .k-icon {
                 margin-left: #{$icon-size / 2};
-                margin-right: calc( #{$icon-size / 2} - #{$cell-padding-x} );
+                margin-right: calc( #{$icon-size / 2} - #{$table-cell-padding-x} );
             }
 
             .k-column-resizer {
