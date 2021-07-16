@@ -1,9 +1,1 @@
 @import "~@progress/kendo-theme-default/scss/pivotgrid/_layout.scss";
-
-@include exports ("pivotgrid/layout/bootstrap") {
-
-    .k-pivot-toolbar {
-        padding: $toolbar-padding-y;
-    }
-
-}
