@@ -4,8 +4,6 @@ $radio-radius: 50% !default;
 $radio-border-width: 1px !default;
 $radio-line-height: calc(#{$radio-size} + #{$radio-border-width}) !default;
 
-$radio-icon-size: ( $radio-size / 2 ) !default;
-
 $radio-bg: $checkbox-bg !default;
 $radio-text: $checkbox-text !default;
 $radio-border: $checkbox-border !default;
@@ -38,6 +36,19 @@ $radio-disabled-checked-border: null !default;
 $radio-invalid-bg: null !default;
 $radio-invalid-text: $invalid-text !default;
 $radio-invalid-border: $invalid-border !default;
+
+
+// Radio indicator
+$radio-icon-type: marker !default;
+
+$radio-glyph-font-family: "WebComponentsIcons", monospace !default;
+$radio-glyph-size: 12px !default;
+$radio-checked-glyph: "\e308" !default;
+
+$radio-checked-image: null !default;
+
+$radio-marker-checked-width: ( $radio-size / 2 ) !default;
+$radio-marker-checked-height: ( $radio-size / 2 ) !default;
 
 
 // Radio label

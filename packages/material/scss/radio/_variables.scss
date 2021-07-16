@@ -4,8 +4,6 @@ $radio-radius: 50% !default;
 $radio-border-width: 2px !default;
 $radio-line-height: calc(#{$radio-size} + #{$radio-border-width}) !default;
 
-$radio-label-margin-x: map-get( $spacing, 1 ) !default;
-
 $radio-bg: null !default;
 $radio-text: transparent !default;
 $radio-border: $checkbox-border !default;
@@ -40,8 +38,21 @@ $radio-invalid-text: $invalid-text !default;
 $radio-invalid-border: $invalid-border !default;
 
 
+// Radio indicator
+$radio-icon-type: marker !default;
+
+$radio-glyph-font-family: "WebComponentsIcons", monospace !default;
+$radio-glyph-size: 12px !default;
+$radio-checked-glyph: "\e308" !default;
+
+$radio-checked-image: null !default;
+
+$radio-marker-checked-width: ( $radio-size / 2 ) !default;
+$radio-marker-checked-height: ( $radio-size / 2 ) !default;
+
+
 // Radio label
-$radio-icon-size: ( $radio-size / 2 ) !default;
+$radio-label-margin-x: map-get( $spacing, 1 ) !default;
 
 
 // Radio list
@@ -54,5 +65,5 @@ $radio-list-horizontal-item-margin-x: 32px !default;
 
 // Radio ripple
 $radio-ripple-size: $radio-size * 3 !default;
-$radio-ripple-margin: calc(-1 * (#{$radio-size} + 2 * #{$radio-border-width})) !default;
+$radio-ripple-margin: calc(-1 * (#{$radio-size} + #{$radio-border-width})) !default;
 $radio-ripple-opacity: .3 !default;
