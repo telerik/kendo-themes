@@ -1,6 +1,6 @@
 @include exports( "checkbox/layout" ) {
 
-    // Container box
+    // Checkbox
     .k-checkbox {
         @include border-radius( $checkbox-radius );
         margin: 0;
@@ -15,6 +15,7 @@
         display: inline-block;
         vertical-align: middle;
         position: relative;
+        cursor: pointer;
         -webkit-appearance: none;
     }
 
@@ -42,36 +43,23 @@
         }
     }
 
-    // Hover state
-    .k-checkbox:hover,
-    .k-checkbox.k-state-hover {
-        cursor: pointer;
-    }
-
 
     // Checked state
     .k-checkbox:checked::before,
     .k-checkbox.k-checked::before {
-        @include border-radius( $checkbox-radius );
         transform: scale(1) translate(-50%, -50%);
     }
 
 
     // Indeterminate state
     .k-checkbox:indeterminate::before,
-    .k-checkbox.k-state-indeterminate::before,
-    .k-checkbox.k-indeterminate::before {
+    .k-checkbox.k-indeterminate::before,
+    .k-checkbox.k-state-indeterminate::before {
         content: "";
+        width: $checkbox-indeterminate-width;
+        height: $checkbox-indeterminate-height;
         background-color: currentColor;
         transform: scale(1) translate(-50%, -50%);
-
-        @if $checkbox-indeterminate-style == "dash" {
-            width: $checkbox-dash-width;
-            height: $checkbox-dash-height;
-        } @else {
-            width: $checkbox-square-width;
-            height: $checkbox-square-height;
-        }
     }
 
 
@@ -81,10 +69,6 @@
     .k-checkbox:disabled + .k-checkbox-label,
     .k-checkbox.k-disabled + .k-checkbox-label {
         @include disabled( $disabled-styling );
-    }
-
-    .k-checkbox + .k-checkbox-label {
-        display: inline;
     }
 
     // Checkbox label
@@ -100,16 +84,6 @@
 
         .k-label {
             cursor: pointer;
-        }
-
-        // Hide empty label
-        &:empty {
-            display: none;
-        }
-
-        // Keep it "visible" in jquery grid
-        &.k-no-text {
-            min-width: 1px;
         }
 
         .k-ripple {
@@ -135,6 +109,9 @@
             height: 200% !important;
         }
     }
+    .k-checkbox + .k-checkbox-label {
+        display: inline;
+    }
     .k-checkbox + .k-checkbox-label,
     .k-checkbox-label + .k-checkbox {
         margin-left: $checkbox-label-margin-x;
@@ -151,6 +128,18 @@
     }
     kendo-label.k-checkbox-label > .k-label {
         display: inline;
+    }
+
+
+    // Empty label
+    .k-checkbox-label:empty {
+        display: none;
+    }
+
+
+    // Label with no text
+    .k-checkbox-label.k-no-text {
+        min-width: 1px;
     }
 
 
@@ -239,17 +228,10 @@
 @include exports( "checkbox/layout/edge" ) {
 
     .k-checkbox::-ms-check {
-        border-width: 0;
+        border-width: 1px;
         border-color: inherit;
         color: inherit;
         background-color: inherit;
-    }
-
-    // IE 11 hack
-    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-        .k-checkbox::-ms-check {
-            border-width: 1px;
-        }
     }
 
 }

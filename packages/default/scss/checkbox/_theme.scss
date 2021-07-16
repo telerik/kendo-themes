@@ -93,6 +93,7 @@
         @include fill( $color: $checkbox-invalid-text );
     }
 
+
     // Ripple
     .k-ripple-container {
         .k-checkbox::after {
@@ -100,4 +101,5 @@
             opacity: $checkbox-ripple-opacity;
         }
     }
+
 }

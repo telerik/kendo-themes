@@ -9,11 +9,8 @@ $checkbox-icon-type: glyph !default;
 $checkbox-icon-glyph: "\e118" !default;
 $checkbox-icon-svg: null !default;
 
-$checkbox-indeterminate-style: dash !default;
-$checkbox-dash-width:  10px !default;
-$checkbox-dash-height: 2px !default;
-$checkbox-square-width:  ( $checkbox-size / 2 ) !default;
-$checkbox-square-height: ( $checkbox-size / 2 ) !default;
+$checkbox-indeterminate-width:  10px !default;
+$checkbox-indeterminate-height: 2px !default;
 
 $checkbox-label-margin-x: map-get( $spacing, 1 ) !default;
 
