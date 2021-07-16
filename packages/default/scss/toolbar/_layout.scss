@@ -37,26 +37,13 @@
         > * {
             flex-shrink: 0;
             display: inline-flex;
-            align-items: stretch;
             align-content: center;
             vertical-align: middle;
 
             > label {
                 margin-inline-end: $toolbar-spacing;
+                align-self: center;
             }
-        }
-
-        .k-button,
-        .k-button-group,
-        .k-separator,
-        .k-split-button,
-        .k-textbox,
-        .k-widget,
-        label {
-            align-self: center;
-        }
-        .k-split-button > .k-button {
-            align-self: stretch;
         }
 
 
@@ -104,13 +91,14 @@
             height: $line-height-em;
             border-width: 0 0 0 1px;
             border-style: solid;
+            align-self: center;
         }
 
 
         // Spacer
         .k-toolbar-spacer {
             height: $line-height-em;
-            flex: 1 1 auto;
+            flex: 1 0 0%;
         }
 
         // Template
