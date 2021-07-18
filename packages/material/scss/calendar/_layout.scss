@@ -1,6 +1,6 @@
 @import "~@progress/kendo-theme-default/scss/calendar/_layout.scss";
 
-@include exports ("calendar/layout/material") {
+@include exports ( "calendar/layout/material" ) {
 
     .k-calendar {
 
@@ -11,6 +11,7 @@
             font-weight: 500;
             text-transform: none;
         }
+        .k-calendar-caption,
         .k-calendar-view th,
         .k-calendar-view .k-calendar-th,
         .k-meta-header,

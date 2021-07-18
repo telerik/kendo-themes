@@ -4,17 +4,27 @@ $calendar-font-family: $font-family !default;
 $calendar-font-size: $font-size !default;
 $calendar-line-height: $line-height !default;
 
+$calendar-cell-size: 32px !default;
+
+$calendar-bg: $component-bg !default;
+$calendar-text: $component-text !default;
+$calendar-border: $component-border !default;
+
 $calendar-header-padding-x: map-get( $spacing, 1 ) !default;
 $calendar-header-padding-y: map-get( $spacing, 1 ) !default;
 $calendar-header-border-width: 1px !default;
+$calendar-header-min-width: ($calendar-cell-size * 8) !default;
 
-$calendar-header-min-width: 280px !default;
+$calendar-header-bg: $header-bg !default;
+$calendar-header-text: $header-text !default;
+$calendar-header-border: $header-border !default;
+$calendar-header-gradient: $header-gradient !default;
+$calendar-header-shadow: null !default;
 
-$calendar-infinite-header-padding-x: map-get( $spacing, 4 ) !default;
-$calendar-infinite-header-padding-y: map-get( $spacing, 2 ) !default;
+$calendar-nav-gap: map-get( $spacing, 1 ) !default;
 
-$calendar-infinite-content-padding-x: map-get( $spacing, 4 ) !default;
-$calendar-infinite-content-padding-y: map-get( $spacing, 2 ) !default;
+$calendar-today-nav-text: $link-text !default;
+$calendar-today-nav-hover-text: $link-hover-text !default;
 
 $calendar-footer-padding-x: map-get( $spacing, 4 ) !default;
 $calendar-footer-padding-y: map-get( $spacing, 2 ) !default;
@@ -22,70 +32,40 @@ $calendar-footer-padding-y: map-get( $spacing, 2 ) !default;
 $calendar-cell-padding-x: map-get( $spacing, 1 ) !default;
 $calendar-cell-padding-y: $calendar-cell-padding-x !default;
 $calendar-cell-line-height: $calendar-line-height !default;
-$calendar-cell-size-px: 32px !default;
-$calendar-cell-size: ($calendar-cell-size-px / $font-size) * 1em !default;
 $calendar-cell-border-radius: $border-radius !default;
 
-$calendar-header-cell-padding-x: 0px !default;
-$calendar-header-cell-padding-y: ($calendar-cell-padding-y / 2) !default;
+$calendar-header-cell-padding-x: null !default;
+$calendar-header-cell-padding-y: null !default;
+$calendar-header-cell-width: $calendar-cell-size !default;
+$calendar-header-cell-height: $calendar-cell-size !default;
 $calendar-header-cell-font-size: $font-size-sm !default;
 $calendar-header-cell-line-height: 2 !default;
 $calendar-header-cell-bg: null !default;
 $calendar-header-cell-text: $subtle-text !default;
 $calendar-header-cell-opacity: null !default;
 
-$calendar-header-height: 2em !default;
+$calendar-caption-padding-x: map-get( $spacing, 2 ) !default;
+$calendar-caption-padding-y: map-get( $spacing, 1 ) !default;
+$calendar-caption-height: $calendar-cell-size !default;
+$calendar-caption-font-size: null !default;
+$calendar-caption-line-height: null !default;
+$calendar-caption-font-weight: bold !default;
 
-$calendar-navigation-width: 5em !default;
-$calendar-navigation-item-height: 2em !default;
-
-$calendar-view-width: 7 * $calendar-cell-size !default;
-$calendar-view-height: calc( #{$calendar-cell-size * 8} + #{$calendar-header-height} ) !default;
+$calendar-view-width: ($calendar-cell-size * 7) !default;
+$calendar-view-height: ($calendar-cell-size * 7) !default;
 $calendar-view-gap: map-get( $spacing, 4 ) !default;
-
-$calendar-bg: $component-bg !default;
-$calendar-text: $component-text !default;
-$calendar-border: $component-border !default;
-
-$calendar-header-bg: $header-bg !default;
-$calendar-header-text: $header-text !default;
-$calendar-header-border: $header-border !default;
-$calendar-header-gradient: $header-gradient !default;
-$calendar-header-shadow: 0 1px 3px 1px rgba(black, .1) !default;
-
-$calendar-header-button-hovered-bg: $button-hovered-bg !default;
-$calendar-header-button-hovered-text: $button-hovered-text !default;
-$calendar-header-button-hovered-border: $button-hovered-border !default;
-$calendar-header-button-hovered-gradient: $button-hovered-gradient !default;
-
-$calendar-header-button-pressed-bg: $button-active-bg !default;
-$calendar-header-button-pressed-text: $button-active-text !default;
-$calendar-header-button-pressed-border: $button-active-border !default;
-$calendar-header-button-pressed-gradient: $button-active-gradient !default;
-$calendar-header-button-pressed-shadow: $button-active-shadow !default;
-
-$calendar-navigation-bg: $calendar-header-bg !default;
-$calendar-navigation-text: $calendar-header-text !default;
-$calendar-navigation-border: $calendar-header-border !default;
-
-$calendar-nav-gap: map-get( $spacing, 1 ) !default;
-$calendar-today-nav-text: $link-text !default;
-$calendar-today-nav-hovered-text: $link-hover-text !default;
 
 $calendar-weekend-bg: null !default;
 $calendar-weekend-text: null !default;
-$calendar-weekend-opacity: null !default;
 
 $calendar-today-style: null !default;
 $calendar-today-color: null !default;
 
 $calendar-week-number-bg: null !default;
 $calendar-week-number-text: $calendar-header-cell-text !default;
-$calendar-week-number-opacity: null !default;
 
 $calendar-other-month-bg: null !default;
 $calendar-other-month-text: $calendar-header-cell-text !default;
-$calendar-other-month-opacity: null !default;
 
 $calendar-cell-bg: null !default;
 $calendar-cell-text: null !default;
@@ -109,3 +89,24 @@ $calendar-cell-selected-hover-gradient: null !default;
 
 $calendar-cell-focused-shadow: $list-item-focused-shadow !default;
 $calendar-cell-selected-focus-shadow: $calendar-cell-focused-shadow !default;
+
+
+// Calendar navigation
+$calendar-navigation-width: 5em !default;
+$calendar-navigation-item-height: 2em !default;
+
+$calendar-navigation-bg: $calendar-header-bg !default;
+$calendar-navigation-text: $calendar-header-text !default;
+$calendar-navigation-border: $calendar-header-border !default;
+
+
+// Infinite calendar
+$infinite-calendar-header-padding-x: map-get( $spacing, 4 ) !default;
+$infinite-calendar-header-padding-y: map-get( $spacing, 2 ) !default;
+
+$infinite-calendar-view-padding-x: map-get( $spacing, 4 ) !default;
+$infinite-calendar-view-padding-y: 0px !default;
+$infinite-calendar-view-height: ( $calendar-cell-size * 9 ) !default;
+
+
+// Multiview calendar

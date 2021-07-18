@@ -60,11 +60,6 @@ $scheduler-othermonth-text: null !default;
 $scheduler-yearview-padding-x: map-get( $spacing, 5 ) !default;
 $scheduler-yearview-padding-y: $scheduler-yearview-padding-x !default;
 
-$scheduler-yearview-month-header-font-weight: bold !default;
-$scheduler-yearview-month-header-font-size: inherit !default;
-$scheduler-yearview-month-header-opacity: 1 !default;
-$scheduler-yearview-month-header-text: $base-text !default;
-
 $scheduler-yearview-calendar-gap: map-get( $spacing, 5 ) !default;
 
 $scheduler-yearview-indicator-size: 3px !default;
