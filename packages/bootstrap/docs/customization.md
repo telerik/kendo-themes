@@ -696,8 +696,8 @@ The following table lists the available variables for customizing the Bootstrap 
         <tr>
     <td>$component-bg</td>
     <td></td>
-    <td>$component-bg</td>
-    <td>$component-bg</td>
+    <td>$body-bg</td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of a component.<br />Note: do not use this variable directly. Instead derive it as `$component-name-bg` e.g. `$grid-bg: $component-bg !defualt;`.</div></div>
@@ -706,7 +706,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$component-text</td>
     <td></td>
-    <td>$component-color</td>
+    <td>$body-text</td>
     <td></td>
 </tr>
 <tr>
@@ -716,7 +716,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$component-border</td>
     <td></td>
-    <td>$component-border-color</td>
+    <td>$gray-300</td>
     <td></td>
 </tr>
 <tr>
@@ -748,7 +748,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$grid-bg</td>
     <td></td>
     <td>$component-bg</td>
-    <td>$component-bg</td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the grid component</div></div>
@@ -1150,7 +1150,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$tabstrip-item-selected-bg</td>
     <td></td>
     <td>$component-bg</td>
-    <td>$component-bg</td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of selected tabs</div></div>
@@ -1220,7 +1220,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$tabstrip-content-bg</td>
     <td></td>
     <td>$component-bg</td>
-    <td>$component-bg</td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of tabstrip content</div></div>
