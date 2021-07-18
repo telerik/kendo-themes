@@ -48,7 +48,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$tabstrip-border</td>
     <td></td>
-    <td>$nav-tabs-border-color</td>
+    <td>$component-border</td>
     <td></td>
 </tr>
 <tr>
@@ -78,8 +78,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$tabstrip-item-border-width</td>
     <td></td>
-    <td>$nav-tabs-border-width</td>
-    <td></td>
+    <td>1px</td>
+    <td>1px</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Width of border around tabs</div></div>
@@ -88,8 +88,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$tabstrip-item-border-radius</td>
     <td></td>
-    <td>$nav-tabs-border-radius</td>
-    <td></td>
+    <td>map-get( $spacing, 1 )</td>
+    <td>map-get( $spacing, 1 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border radius of tabs</div></div>
@@ -168,7 +168,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$tabstrip-item-hovered-border</td>
     <td></td>
-    <td>$nav-tabs-link-hover-border-color</td>
+    <td>$gray-200</td>
     <td></td>
 </tr>
 <tr>
@@ -188,8 +188,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$tabstrip-item-selected-bg</td>
     <td></td>
-    <td>$nav-tabs-link-active-bg</td>
-    <td></td>
+    <td>$component-bg</td>
+    <td>$component-bg</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of selected tabs</div></div>
@@ -198,7 +198,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$tabstrip-item-selected-text</td>
     <td></td>
-    <td>$nav-tabs-link-active-color</td>
+    <td>$component-text</td>
     <td></td>
 </tr>
 <tr>
@@ -208,7 +208,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$tabstrip-item-selected-border</td>
     <td></td>
-    <td>$nav-tabs-link-active-border-color</td>
+    <td>$component-border</td>
     <td></td>
 </tr>
 <tr>
@@ -248,7 +248,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$tabstrip-content-border-width</td>
     <td></td>
-    <td>$nav-tabs-border-width</td>
+    <td>$tabstrip-border-width</td>
     <td></td>
 </tr>
 <tr>
