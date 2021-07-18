@@ -28,8 +28,8 @@ The following table lists the available variables for customization.
         <tr>
     <td>$grid-bg</td>
     <td></td>
-    <td>$table-bg</td>
-    <td></td>
+    <td>$component-bg</td>
+    <td>$component-bg</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the grid component</div></div>
@@ -38,7 +38,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$grid-text</td>
     <td></td>
-    <td>$table-color</td>
+    <td>$component-text</td>
     <td></td>
 </tr>
 <tr>
@@ -48,7 +48,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$grid-border</td>
     <td></td>
-    <td>$table-border-color</td>
+    <td>$component-border</td>
     <td></td>
 </tr>
 <tr>
@@ -128,8 +128,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$grid-alt-bg</td>
     <td></td>
-    <td>$table-accent-bg</td>
-    <td></td>
+    <td>rgba( black, .04 )</td>
+    <td>rgba( black, .04 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of alternating rows in grid</div></div>
@@ -158,8 +158,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$grid-hovered-bg</td>
     <td></td>
-    <td>$table-hover-bg</td>
-    <td></td>
+    <td>rgba( black, .08)</td>
+    <td>rgba( black, .08)</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of hovered rows in grid</div></div>
@@ -168,8 +168,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$grid-hovered-text</td>
     <td></td>
-    <td>$table-hover-color</td>
-    <td></td>
+    <td>null</td>
+    <td>null</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of hovered rows in grid</div></div>
