@@ -62,14 +62,6 @@ $theme-colors: () !default;
     $input-color: contrast-yiq( $input-bg, $gray-700, $gray-300 ) !default;
     $input-border-color:  contrast-yiq( $input-bg, $gray-400, $gray-600 ) !default;
 
-    $dropdown-bg: $component-bg !default;
-    $dropdown-color: $component-color !default;
-    $dropdown-border-color: rgba( contrast-yiq( $dropdown-bg, $black, $white ), .15 ) !default;
-
-    $dropdown-link-color: contrast-yiq( $dropdown-bg, $gray-900, $gray-100 ) !default;
-    $dropdown-link-hover-color: contrast-yiq( $dropdown-bg, darken( $dropdown-link-color, 5% ), lighten( $dropdown-link-color, 5% ) ) !default;
-    $dropdown-link-hover-bg: contrast-yiq( $dropdown-bg, $gray-100, $gray-900 ) !default;
-
     $table-bg: $component-bg !default;
     $table-color: $component-color !default;
     $table-border-color: $component-border-color !default;
