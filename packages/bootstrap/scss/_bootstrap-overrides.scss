@@ -1,69 +1,32 @@
-$enable-bootstrap-overrides: true !default;
-$theme-colors: () !default;
+$enable-shadows: true !default;
 
-// sass-lint:disable indentation
-// @if $enable-bootstrap-overrides {
+$white:    #ffffff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black:    #000000 !default;
 
-    $enable-shadows: true !default;
+$body-bg: $white !default;
+$body-color: contrast-wcag( $body-bg, $gray-900, $gray-100 ) !default;
 
-    $white:    #ffffff !default;
-    $gray-100: #f8f9fa !default;
-    $gray-200: #e9ecef !default;
-    $gray-300: #dee2e6 !default;
-    $gray-400: #ced4da !default;
-    $gray-500: #adb5bd !default;
-    $gray-600: #6c757d !default;
-    $gray-700: #495057 !default;
-    $gray-800: #343a40 !default;
-    $gray-900: #212529 !default;
-    $black:    #000000 !default;
+$component-bg: $body-bg !default;
+$component-text: contrast-wcag( $component-bg, $gray-900, $gray-100 ) !default;
+$component-border: contrast-wcag( $component-bg, $gray-300, $gray-700 ) !default;
 
-    $blue:     #007bff !default;
-    $cyan:     #17a2b8 !default;
-    $green:    #28a745 !default;
-    $yellow:   #ffc107 !default;
-    $red:      #dc3545 !default;
+$breadcrumb-padding-x: 0px !default;
+$breadcrumb-padding-y: 0px !default;
+$breadcrumb-bg: $component-bg !default;
 
-    $primary: $blue !default;
-    $secondary: #e4e7eb !default;
-    $info: $cyan !default;
-    $success: $green !default;
-    $warning: $yellow !default;
-    $error: $red !default;
-    $danger: $error !default;
+$input-bg: $component-bg !default;
+$input-color: contrast-wcag( $input-bg, $gray-700, $gray-300 ) !default;
+$input-border-color:  contrast-wcag( $input-bg, $gray-400, $gray-600 ) !default;
 
-    $theme-colors: map-merge((
-        "primary": $primary,
-        "secondary": $secondary,
-        "info": $info,
-        "success": $success,
-        "warning": $warning,
-        "danger": $danger
-    ), $theme-colors);
-
-    $yiq-threshold: 150 !default;
-    $yiq-dark: $gray-900 !default;
-    $yiq-light: $white !default;
-
-    $body-bg: $white !default;
-    $body-color: contrast-wcag( $body-bg, $gray-900, $gray-100 ) !default;
-
-    $component-bg: $body-bg !default;
-    $component-text: contrast-wcag( $component-bg, $gray-900, $gray-100 ) !default;
-    $component-border: contrast-wcag( $component-bg, $gray-300, $gray-700 ) !default;
-    $component-active-bg: $primary !default;
-    $component-active-color: contrast-yiq( $component-active-bg, $black, $white ) !default;
-
-    $breadcrumb-padding-x: 0px !default;
-    $breadcrumb-padding-y: 0px !default;
-    $breadcrumb-bg: $component-bg !default;
-
-    $input-bg: $component-bg !default;
-    $input-color: contrast-wcag( $input-bg, $gray-700, $gray-300 ) !default;
-    $input-border-color: contrast-wcag( $input-bg, $gray-400, $gray-600 ) !default;
-
-    $table-bg: $component-bg !default;
-    $table-color: $component-text !default;
-    $table-border-color: $component-border !default;
-// }
-// sass-lint:enable indentation
+$table-bg: $component-bg !default;
+$table-color: $component-text !default;
+$table-border-color: $component-border !default;
