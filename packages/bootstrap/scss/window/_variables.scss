@@ -5,33 +5,33 @@ $window-font-family: $font-family !default;
 $window-font-size: $font-size !default;
 $window-line-height: $line-height !default;
 
-$window-titlebar-padding-x: $modal-header-padding-x !default;
-$window-titlebar-padding-y: $modal-header-padding-y !default;
+$window-titlebar-padding-x: map-get( $spacing, 4 ) !default;
+$window-titlebar-padding-y: map-get( $spacing, 4 ) !default;
 $window-titlebar-border-width: 0 0 1px !default;
 $window-titlebar-border-style: solid !default;
 
 $window-title-font-size: $font-size-lg !default;
-$window-title-line-height: $modal-title-line-height !default;
+$window-title-line-height: 1.5 !default;
 
 $window-actions-gap: .5rem !default;
 
 $window-action-opacity: .5 !default;
 $window-action-hover-opacity: .75 !default;
 
-$window-inner-padding-x: $modal-inner-padding !default;
-$window-inner-padding-y: $modal-inner-padding !default;
+$window-inner-padding-x: map-get( $spacing, 4 ) !default;
+$window-inner-padding-y: map-get( $spacing, 4 ) !default;
 
 $window-buttongroup-padding-x: $actions-padding-x !default;
 $window-buttongroup-padding-y: $actions-padding-y !default;
 $window-buttongroup-border-width: 1px !default;
 
-$window-bg: $modal-content-bg !default;
-$window-text: $modal-content-color !default;
-$window-border: $modal-content-border-color !default;
+$window-bg: $component-bg !default;
+$window-text: $component-text !default;
+$window-border: $component-border !default;
 
 $window-titlebar-bg: null !default;
 $window-titlebar-text: null !default;
-$window-titlebar-border: $modal-header-border-color !default;
+$window-titlebar-border: $component-border !default;
 $window-titlebar-gradient: null !default;
 
 $window-shadow: null !default;
