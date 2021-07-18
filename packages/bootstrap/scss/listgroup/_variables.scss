@@ -1,14 +1,14 @@
 // Listgroup
-$listgroup-border-width: $list-group-border-width !default;
-$listgroup-border-radius: $list-group-border-radius !default;
+$listgroup-border-width: 1px !default;
+$listgroup-border-radius: map-get( $spacing, 1 ) !default;
 
 $listgroup-font-size: $font-size !default;
 $listgroup-line-height: $line-height !default;
 
-$listgroup-bg: $list-group-bg !default;
-$listgroup-text: $list-group-color !default;
-$listgroup-border: $list-group-border-color !default;
+$listgroup-bg: $component-bg !default;
+$listgroup-text: $component-text !default;
+$listgroup-border: $component-border !default;
 
-$listgroup-item-padding-x: $list-group-item-padding-x !default;
-$listgroup-item-padding-y: $list-group-item-padding-y !default;
-$listgroup-item-border-width: $list-group-border-width !default;
+$listgroup-item-padding-x: map-get( $spacing, 4 ) !default;
+$listgroup-item-padding-y: map-get( $spacing, 2 ) !default;
+$listgroup-item-border-width: $listgroup-border-width !default;
