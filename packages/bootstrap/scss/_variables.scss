@@ -246,7 +246,7 @@ $disabled-text: if( $is-dark-theme, $gray-600, $gray-500) !default;
 
 $app-bg: try-shade( $body-bg, .25 ) !default;
 $app-text: $body-text !default;
-$app-border: contrast-yiq( $app-bg, $gray-300, $gray-700 ) !default;
+$app-border: contrast-wcag( $app-bg, $gray-300, $gray-700 ) !default;
 
 
 // Components
@@ -255,15 +255,15 @@ $app-border: contrast-yiq( $app-bg, $gray-300, $gray-700 ) !default;
 /// Background color of a component.
 /// Note: do not use this variable directly. Instead derive it as `$component-name-bg` e.g. `$grid-bg: $component-bg !defualt;`.
 /// @group component
-$component-bg: $component-bg !default;
+$component-bg: $body-bg !default;
 /// Text color of a component.
 /// Note: do not use this variable directly. Instead derive it as `$component-name-text` e.g. `$grid-text: component-text !default;`.
 /// @group component
-$component-text: $component-color !default;
+$component-text: $body-text !default;
 /// Border color of a component.
 /// Note: do not use this variable directly. Instead derive it as `$component-name-border` e.g. `$grid-border: component-border !default;`.
 /// @group component
-$component-border: $component-border-color !default;
+$component-border: $gray-300 !default;
 
 
 /// The background of the components' chrome area.
