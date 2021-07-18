@@ -40,6 +40,6 @@ $slider-transition-function: ease-out !default;
 $slider-draghandle-transition-speed: .4s !default;
 $slider-draghandle-transition-function: cubic-bezier(.25, .8, .25, 1) !default;
 
-$slider-track-bg: $progress-bg !default;
-$slider-selection-bg: $progress-bar-bg !default;
+$slider-track-bg: $gray-200 !default;
+$slider-selection-bg: $selected-bg !default;
 $slider-disabled-opacity: null !default;
