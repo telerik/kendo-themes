@@ -34,13 +34,13 @@ $grid-cell-placeholder-line-width: 80% !default;
 
 /// Background color of the grid component
 /// @group grid
-$grid-bg: $table-bg !default;
+$grid-bg: $component-bg !default;
 /// Text color of the grid component
 /// @group grid
-$grid-text: $table-color !default;
+$grid-text: $component-text !default;
 /// Border color of the grid component
 /// @group grid
-$grid-border: $table-border-color !default;
+$grid-border: $component-border !default;
 
 /// Background color of grid header
 /// @group grid
@@ -67,7 +67,7 @@ $grid-footer-border: $grid-header-border !default;
 
 /// Background color of alternating rows in grid
 /// @group grid
-$grid-alt-bg: $table-accent-bg !default;
+$grid-alt-bg: rgba( black, .04 ) !default;
 /// Text color of alternating rows in grid
 /// @group grid
 $grid-alt-text: null !default;
@@ -77,10 +77,10 @@ $grid-alt-border: null !default;
 
 /// Background color of hovered rows in grid
 /// @group grid
-$grid-hovered-bg: $table-hover-bg !default;
+$grid-hovered-bg: rgba( black, .08) !default;
 /// Text color of hovered rows in grid
 /// @group grid
-$grid-hovered-text: $table-hover-color !default;
+$grid-hovered-text: null !default;
 /// Border color of hovered rows in grid
 /// @group grid
 $grid-hovered-border: null !default;
@@ -95,7 +95,7 @@ $grid-selected-text: $grid-text !default;
 /// @group grid
 $grid-selected-border: $grid-border !default;
 
-$grid-grouping-row-bg: darken($grid-bg, 7%) !default;
+$grid-grouping-row-bg: try-shade( $grid-bg ) !default;
 $grid-grouping-row-text: $grid-text !default;
 
 $grid-sorted-bg: rgba( contrast-wcag( $grid-bg ), .02 ) !default;
@@ -119,7 +119,7 @@ $grid-sticky-bg: $grid-bg !default;
 $grid-sticky-text:  $grid-text !default;
 $grid-sticky-border: rgba($grid-text, .5) !default;
 
-$grid-sticky-alt-bg: darken($grid-bg, 5%) !default;
+$grid-sticky-alt-bg: try-shade( $grid-bg, .5 ) !default;
 
 $grid-sticky-header-bg: $grid-header-bg !default;
 $grid-sticky-header-text: $grid-header-text !default;
@@ -131,7 +131,7 @@ $grid-sticky-footer-hovered-bg: $grid-sticky-footer-bg !default;
 $grid-sticky-selected-bg: mix($selected-bg, #ffffff, 25%) !default;
 $grid-sticky-selected-alt-bg: shade($grid-sticky-selected-bg, .4) !default;
 
-$grid-sticky-hovered-bg: darken($grid-bg, 8%) !default;
+$grid-sticky-hovered-bg: try-shade( $grid-bg ) !default;
 $grid-sticky-selected-hovered-bg: shade($grid-sticky-selected-bg, .7) !default;
 
 $grid-filter-menu-width: 250px !default;
