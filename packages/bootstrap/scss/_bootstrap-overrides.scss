@@ -65,10 +65,5 @@ $theme-colors: () !default;
     $table-bg: $component-bg !default;
     $table-color: $component-color !default;
     $table-border-color: $component-border-color !default;
-
-    $progress-bg: $gray-200 !default;
-    $progress-color: contrast-yiq( $progress-bg, $gray-900 ) !default;
-    $progress-bar-bg: $primary !default;
-    $progress-bar-color: contrast-yiq( $progress-bar-bg, $gray-900 ) !default;
 // }
 // sass-lint:enable indentation
