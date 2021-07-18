@@ -46,11 +46,11 @@ $theme-colors: () !default;
     $yiq-light: $white !default;
 
     $body-bg: $white !default;
-    $body-color: contrast-yiq( $body-bg, $gray-900, $gray-100 ) !default;
+    $body-color: contrast-wcag( $body-bg, $gray-900, $gray-100 ) !default;
 
     $component-bg: $body-bg !default;
-    $component-color: contrast-yiq( $component-bg, $gray-900, $gray-100 ) !default;
-    $component-border-color: contrast-yiq( $component-bg, $gray-300, $gray-700 ) !default;
+    $component-text: contrast-wcag( $component-bg, $gray-900, $gray-100 ) !default;
+    $component-border: contrast-wcag( $component-bg, $gray-300, $gray-700 ) !default;
     $component-active-bg: $primary !default;
     $component-active-color: contrast-yiq( $component-active-bg, $black, $white ) !default;
 
@@ -63,7 +63,7 @@ $theme-colors: () !default;
     $input-border-color: contrast-wcag( $input-bg, $gray-400, $gray-600 ) !default;
 
     $table-bg: $component-bg !default;
-    $table-color: $component-color !default;
-    $table-border-color: $component-border-color !default;
+    $table-color: $component-text !default;
+    $table-border-color: $component-border !default;
 // }
 // sass-lint:enable indentation
