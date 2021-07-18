@@ -75,18 +75,6 @@ $theme-colors: () !default;
     $nav-tabs-link-active-color: $component-color !default;
     $nav-tabs-link-active-border-color: $component-border-color !default;
 
-    $pagination-bg: $component-bg !default;
-    $pagination-color: $primary !default;
-    $pagination-border-color: $component-border-color !default;
-    $pagination-hover-bg: darken( $pagination-bg, 8% ) !default;
-    $pagination-hover-border-color: $pagination-border-color !default;
-    $pagination-active-color: $component-active-color !default;
-    $pagination-active-bg: $component-active-bg !default;
-    $pagination-active-border-color: $pagination-active-bg !default;
-
-    $pagination-disabled-bg: $pagination-bg !default;
-    $pagination-disabled-color: grayscale( $pagination-color ) !default;
-
     $table-bg: $component-bg !default;
     $table-color: $component-color !default;
     $table-border-color: $component-border-color !default;
