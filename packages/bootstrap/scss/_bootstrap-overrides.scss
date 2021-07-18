@@ -89,7 +89,7 @@ $theme-colors: () !default;
 
     $table-bg: $component-bg !default;
     $table-color: $component-color !default;
-    $table-border-color: rgba( contrast-yiq( $table-bg, $gray-900 ), .125 ) !default;
+    $table-border-color: $component-border-color !default;
 
     $modal-content-bg: $component-bg !default;
     $modal-content-color: $component-color !default;
