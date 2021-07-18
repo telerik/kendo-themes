@@ -189,7 +189,7 @@ The following table lists the available variables for customization.
     <td>$tabstrip-item-selected-bg</td>
     <td></td>
     <td>$component-bg</td>
-    <td>$component-bg</td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of selected tabs</div></div>
@@ -259,7 +259,7 @@ The following table lists the available variables for customization.
     <td>$tabstrip-content-bg</td>
     <td></td>
     <td>$component-bg</td>
-    <td>$component-bg</td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of tabstrip content</div></div>
