@@ -59,8 +59,8 @@ $theme-colors: () !default;
     $breadcrumb-bg: $component-bg !default;
 
     $input-bg: $component-bg !default;
-    $input-color: contrast-yiq( $input-bg, $gray-700, $gray-300 ) !default;
-    $input-border-color:  contrast-yiq( $input-bg, $gray-400, $gray-600 ) !default;
+    $input-color: contrast-wcag( $input-bg, $gray-700, $gray-300 ) !default;
+    $input-border-color: contrast-wcag( $input-bg, $gray-400, $gray-600 ) !default;
 
     $table-bg: $component-bg !default;
     $table-color: $component-color !default;
