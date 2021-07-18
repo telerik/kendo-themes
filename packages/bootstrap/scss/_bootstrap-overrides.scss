@@ -74,11 +74,6 @@ $theme-colors: () !default;
     $table-color: $component-color !default;
     $table-border-color: $component-border-color !default;
 
-    $modal-content-bg: $component-bg !default;
-    $modal-content-color: $component-color !default;
-    $modal-content-border-color: $component-border-color !default;
-    $modal-header-border-color: $component-border-color !default;
-
     $progress-bg: $gray-200 !default;
     $progress-color: contrast-yiq( $progress-bg, $gray-900 ) !default;
     $progress-bar-bg: $primary !default;
