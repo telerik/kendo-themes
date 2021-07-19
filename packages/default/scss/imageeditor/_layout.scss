@@ -2,7 +2,6 @@
 
     // Image Editor
     .k-imageeditor {
-        @include use-background-clip();
         margin: $imageeditor-margin-y $imageeditor-margin-x;
         padding: $imageeditor-padding-y $imageeditor-padding-x;
         border-width: $imageeditor-border-width;

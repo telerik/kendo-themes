@@ -2,7 +2,6 @@
 @include exports("popup/layout") {
 
     .k-popup {
-        @include use-background-clip();
         @include border-radius( $popup-border-radius );
         margin: 0;
         padding: $popup-padding-y $popup-padding-x;

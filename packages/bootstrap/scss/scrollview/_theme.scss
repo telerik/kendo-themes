@@ -68,7 +68,6 @@
     .k-scrollview-nav > .k-link {
         background-color: $scrollview-pagebutton-bg;
         border-color: $scrollview-pagebutton-border;
-        background-clip: padding-box;
 
         &.k-primary {
             background: $scrollview-pagebutton-primary-bg;

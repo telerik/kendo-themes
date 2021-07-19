@@ -3,7 +3,6 @@
     $row-height: #{$line-height-em} + #{2 * $table-cell-padding-y} + #{$grid-cell-horizontal-border-width};
 
     .k-gantt {
-        @include use-background-clip();
         border-width: $gantt-border-width;
         border-style: solid;
         box-sizing: border-box;

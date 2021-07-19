@@ -9,7 +9,6 @@
 
     // Dropzpne inner
     .k-dropzone-inner {
-        @include use-background-clip();
         padding: $dropzone-padding-y $dropzone-padding-x;
         border-width: $dropzone-border-width;
         border-style: solid;
