@@ -19,7 +19,6 @@
         -webkit-tap-highlight-color: $rgba-transparent;
 
         .k-dateinput-wrap {
-            @include use-background-clip();
             @include border-radius( $input-border-radius );
             padding: 0;
             width: 100%;
@@ -153,7 +152,6 @@
 
         // Wrapper
         .k-picker-wrap {
-            @include use-background-clip();
             @include border-radius( $input-border-radius );
             padding: 0;
             width: 100%;
@@ -245,7 +243,6 @@
 
         // Wrappers
         .k-picker-wrap {
-            @include use-background-clip();
             @include border-radius( $input-border-radius );
             padding: 0;
             width: 100%;

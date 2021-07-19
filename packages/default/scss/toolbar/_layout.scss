@@ -2,7 +2,6 @@
 
     // Base
     .k-toolbar {
-        @include use-background-clip();
         margin: 0;
         padding: $toolbar-padding-y $toolbar-padding-x;
         border-width: $toolbar-border-width;

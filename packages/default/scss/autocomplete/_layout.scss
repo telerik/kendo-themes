@@ -3,7 +3,6 @@
     // Autocomplete
     .k-autocomplete {
         @include border-radius( $input-border-radius );
-        @include use-background-clip();
         width: $input-default-width;
         border-width: $input-border-width;
         border-style: solid;

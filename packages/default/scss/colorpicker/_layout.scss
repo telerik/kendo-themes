@@ -74,7 +74,6 @@
         }
 
         .k-picker-wrap {
-            @include use-background-clip();
             @include border-radius( $input-border-radius );
             padding: 0;
             width: 100%;

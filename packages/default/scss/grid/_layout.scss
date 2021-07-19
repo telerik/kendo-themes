@@ -31,7 +31,6 @@
     $default-scrollbar-width: 17px;
 
     .k-grid {
-        @include use-background-clip();
         border-width: $grid-border-width;
         border-style: solid;
         box-sizing: border-box;

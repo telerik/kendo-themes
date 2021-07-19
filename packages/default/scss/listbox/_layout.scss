@@ -71,7 +71,6 @@
         }
 
         .k-list-scroller {
-            @include use-background-clip();
             width: 100%;
             border-width: $listbox-border-width;
             border-style: solid;

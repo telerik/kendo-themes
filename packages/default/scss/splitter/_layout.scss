@@ -2,7 +2,6 @@
 
     // Base
     .k-splitter {
-        @include use-background-clip();
         height: 300px;
         border-width: $splitter-border-width;
         border-style: solid;

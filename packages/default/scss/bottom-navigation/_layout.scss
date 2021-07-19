@@ -2,7 +2,6 @@
 
     // Bottom Navigation
     .k-bottom-nav {
-        @include use-background-clip();
         padding: $bottom-nav-padding-y $bottom-nav-padding-x;
         width: 100%;
         border-width: 0;

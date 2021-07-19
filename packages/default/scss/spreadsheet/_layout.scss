@@ -2,7 +2,6 @@
 
     // Spreadsheet
     .k-spreadsheet {
-        @include use-background-clip();
         width: 800px;
         height: 600px;
         border-width: $spreadsheet-border-width;
@@ -449,7 +448,6 @@
         box-sizing: border-box;
         position: absolute;
         line-height: normal;
-        background-clip: padding-box;
         white-space: pre;
         overflow: hidden;
     }

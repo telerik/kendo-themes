@@ -2,7 +2,6 @@
 
     // Base
     .k-editor {
-        @include use-background-clip();
         border-width: $editor-border-width;
         border-style: solid;
         box-sizing: border-box;
