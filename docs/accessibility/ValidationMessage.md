@@ -2,7 +2,7 @@
 title: Validation Message
 category: components
 slug: validation-message
-position: 52
+position: 53
 ---
 # ValidationMessage Keyboard Support
 
