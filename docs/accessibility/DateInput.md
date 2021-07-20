@@ -2,7 +2,7 @@
 title: Date Input
 category: components
 slug: date-input
-position: 12
+position: 13
 ---
 # DateInput Keyboard Support
 

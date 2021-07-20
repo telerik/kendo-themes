@@ -2,7 +2,7 @@
 title: Chart
 category: components
 slug: chart
-position: 6
+position: 7
 ---
 # Chart Keyboard Support
 
