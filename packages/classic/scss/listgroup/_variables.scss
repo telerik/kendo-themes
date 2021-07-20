@@ -9,6 +9,6 @@ $listgroup-bg: $component-bg !default;
 $listgroup-text: $component-text !default;
 $listgroup-border: $component-border !default;
 
-$listgroup-item-padding-x: $cell-padding-x !default;
-$listgroup-item-padding-y: $cell-padding-y !default;
+$listgroup-item-padding-x: map-get( $spacing, 2 ) !default;
+$listgroup-item-padding-y: map-get( $spacing, 2 ) !default;
 $listgroup-item-border-width: 1px !default;

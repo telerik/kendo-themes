@@ -344,7 +344,7 @@ The following table lists the available variables for customizing the Default th
     <td>$button-selected-bg</td>
     <td></td>
     <td>$primary</td>
-    <td>$accent</td>
+    <td><span class="color-preview" style="background-color: #ff6358"></span>#ff6358</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of selected buttons.</div></div>
@@ -364,7 +364,7 @@ The following table lists the available variables for customizing the Default th
     <td>$button-selected-border</td>
     <td></td>
     <td>$button-selected-bg</td>
-    <td>$accent</td>
+    <td><span class="color-preview" style="background-color: #ff6358"></span>#ff6358</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of selected buttons.</div></div>
@@ -545,7 +545,7 @@ The following table lists the available variables for customizing the Default th
 <tr>
     <td>$primary</td>
     <td>Color</td>
-    <td>$accent</td>
+    <td><span class="color-preview" style="background-color: #ff6358"></span>#ff6358</td>
     <td><span class="color-preview" style="background-color: #ff6358"></span>#ff6358</td>
 </tr>
 <tr>
@@ -555,8 +555,8 @@ The following table lists the available variables for customizing the Default th
 <tr>
     <td>$primary-contrast</td>
     <td>Color</td>
-    <td>$accent-contrast</td>
-    <td>contrast-wcag( $accent )</td>
+    <td>contrast-wcag( $primary )</td>
+    <td>contrast-wcag( $primary )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color used along with the accent color denoted by $primary.<br />Used to provide contrast between the background and foreground colors.</div></div>
@@ -1280,8 +1280,8 @@ The following table lists the available variables for customizing the Default th
         <tr>
     <td>$toolbar-padding-x</td>
     <td></td>
-    <td>$padding-x</td>
-    <td></td>
+    <td>map-get( $spacing, 2 )</td>
+    <td>map-get( $spacing, 2 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the container.</div></div>
@@ -1290,8 +1290,8 @@ The following table lists the available variables for customizing the Default th
 <tr>
     <td>$toolbar-padding-y</td>
     <td></td>
-    <td>$padding-x</td>
-    <td></td>
+    <td>map-get( $spacing, 2 )</td>
+    <td>map-get( $spacing, 2 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the container.</div></div>

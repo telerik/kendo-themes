@@ -21,7 +21,6 @@
         > .k-item,
         > .k-panelbar-header {
             // TODO
-            @include use-background-clip();
             border-width: 0;
             border-style: solid;
             border-color: inherit;

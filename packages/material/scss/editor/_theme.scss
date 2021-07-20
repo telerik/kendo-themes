@@ -76,13 +76,4 @@
         }
     }
 
-    // Find and replace dialog
-    .k-editor-find-replace {
-        .k-matches-container {
-            @include fill (
-                $bg: $editor-find-line-bg
-            );
-        }
-
-    }
 }

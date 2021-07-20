@@ -8,24 +8,24 @@ $card-font-family: $font-family !default;
 $card-font-size: $font-size !default;
 $card-line-height: $line-height !default;
 
-$card-deck-gap: $card-deck-margin !default;
+$card-deck-gap: map-get( $spacing, 4 ) !default;
 
-$card-bg: $card-bg !default;
+$card-bg: $component-bg !default;
 $card-text: $component-text !default;
-$card-border: $card-border-color !default;
+$card-border: $component-border !default;
 $card-shadow: null !default;
 
 $card-focus-bg: null !default;
 $card-focus-text: null !default;
 $card-focus-border: null !default;
-$card-focus-shadow: 0 0 0 3px rgba( $secondary, .5 ) !default;
+$card-focus-shadow: 0 0 0 3px rgba( $card-border, .5 ) !default;
 
 $card-header-padding-x: $card-padding-x !default;
 $card-header-padding-y: $card-padding-y !default;
 $card-header-border-width: $card-border-width !default;
-$card-header-bg: $card-cap-bg !default;
-$card-header-text: $card-text !default;
-$card-header-border: $card-border-color !default;
+$card-header-bg: $header-bg !default;
+$card-header-text: $header-text !default;
+$card-header-border: $card-border !default;
 
 $card-body-padding-x: $card-padding-x !default;
 $card-body-padding-y: $card-padding-x !default; // In bootstrap, all card body paddings equal the card-spacer-x var
@@ -33,9 +33,9 @@ $card-body-padding-y: $card-padding-x !default; // In bootstrap, all card body p
 $card-footer-padding-x: $card-padding-x !default;
 $card-footer-padding-y: $card-padding-y !default;
 $card-footer-border-width: $card-border-width !default;
-$card-footer-bg: $card-cap-bg !default;
-$card-footer-text: $card-text !default;
-$card-footer-border: $card-border-color !default;
+$card-footer-bg: $card-header-bg !default;
+$card-footer-text: $card-header-text !default;
+$card-footer-border: $card-header-border !default;
 
 $card-title-margin-bottom: map-get( $spacing, md ) !default;
 $card-subtitle-margin-bottom: map-get( $spacing, md ) !default;
@@ -63,5 +63,5 @@ $card-callout-box-shadow-w: null !default;
 
 $card-focus-callout-box-shadow-n: $card-focus-shadow !default;
 $card-focus-callout-box-shadow-e: $card-focus-shadow !default;
-$card-focus-callout-box-shadow-s: 3px -3px 0 0 rgba($secondary, .5) !default;
+$card-focus-callout-box-shadow-s: 3px -3px 0 0 rgba( $card-border, .5 ) !default;
 $card-focus-callout-box-shadow-w: $card-focus-shadow !default;

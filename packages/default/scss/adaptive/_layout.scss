@@ -20,10 +20,6 @@
             box-sizing: border-box;
             font-family: sans-serif;
             overflow-x: hidden;
-
-            * {
-                background-clip: border-box;
-            }
         }
 
         .k-view {
@@ -124,14 +120,6 @@
             left: 50%;
             transform: translate(-50%, -50%);
             padding: .2em;
-        }
-
-        .k-edit-cell > input,
-        .k-edit-cell > select,
-        .k-grid-edit-row > td > input,
-        .k-grid-edit-row > td > select {
-            width: 100%;
-            box-sizing: border-box;
         }
 
         .k-header a {

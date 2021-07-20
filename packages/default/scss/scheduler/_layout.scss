@@ -3,7 +3,6 @@
 
     // Layout
     .k-scheduler {
-        @include use-background-clip();
         border-width: $scheduler-border-width;
         border-style: solid;
         box-sizing: border-box;
@@ -47,7 +46,7 @@
 
         td,
         th {
-            padding: $cell-padding;
+            padding: $scheduler-cell-padding-y $scheduler-cell-padding-x;
             height: $scheduler-cell-height;
             overflow: hidden;
             white-space: nowrap;
@@ -138,7 +137,7 @@
         .k-scheduler-cell {
             display: flex;
             flex: 1 1 100%;
-            padding: $cell-padding;
+            padding: $scheduler-cell-padding-y $scheduler-cell-padding-y;
             min-height: 1.5em;
             overflow: hidden;
             white-space: nowrap;
@@ -264,7 +263,6 @@
         }
     }
     kendo-scheduler .k-scheduler-toolbar {
-        @include use-background-clip();
         padding: $toolbar-padding-y $toolbar-padding-x;
         border-style: solid;
         display: flex;
@@ -283,7 +281,6 @@
         flex: 1;
 
         li {
-            @include use-background-clip();
             border-width: $button-border-width;
             border-style: solid;
             position: relative;
@@ -345,7 +342,6 @@
         margin-left: auto;
 
         li {
-            @include use-background-clip();
             border-width: $button-border-width;
             border-style: solid;
             position: relative;
@@ -435,7 +431,6 @@
         }
 
         li {
-            @include use-background-clip();
             border-width: $button-border-width;
             border-style: solid;
             position: relative;
@@ -468,7 +463,6 @@
         }
     }
     kendo-scheduler .k-scheduler-footer {
-        @include use-background-clip();
         padding: $toolbar-padding-y $toolbar-padding-x;
         border-style: solid;
         display: flex;

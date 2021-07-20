@@ -26,8 +26,8 @@
   "kendo": {
     "themebuilder": {
       "swatches": {
-        "path": "lib/themebuilder",
-        "default": "default.json"
+        "path": "lib/swatches",
+        "default": "main.json"
       }
     }
   },

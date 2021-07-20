@@ -2,7 +2,6 @@
 
     // Base
     .k-editor {
-        @include use-background-clip();
         border-width: $editor-border-width;
         border-style: solid;
         box-sizing: border-box;
@@ -259,7 +258,7 @@
             }
         }
 
-        .k-action-buttons {
+        .k-actions {
             padding: 0;
         }
 
@@ -307,6 +306,12 @@
         }
 
         .k-edit-buttons {}
+    }
+
+    //View HTML dialog using flex to fit child textarea
+    .k-editor-dialog.k-viewhtml-dialog {
+        display: flex;
+        flex-direction: column;
     }
 
     // Text area in editor dialog

@@ -1,9 +1,6 @@
-$edit-cell-input-space: 0px !default;
-$edit-cell-textbox-width: 100% !default;
-
 @import "~@progress/kendo-theme-default/scss/grid/_layout.scss";
 
-@include exports("grid/layout/bootstrap") {
+@include exports( "grid/layout/bootstrap" ) {
 
     // Grouping header
     .k-grouping-header .k-group-indicator {

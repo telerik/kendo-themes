@@ -1,46 +1,75 @@
 @include exports( "radio/layout" ) {
 
-    // Container box
+    // Radio
     .k-radio {
         @include border-radius( $radio-radius );
         margin: 0;
         padding: 0;
         width: $radio-size;
         height: $radio-size;
+        line-height: initial;
         border-width: $radio-border-width;
         border-style: solid;
         outline: 0;
         box-sizing: border-box;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
         display: inline-block;
         vertical-align: middle;
         position: relative;
+        cursor: pointer;
         -webkit-appearance: none;
     }
 
+    // Radio indicator
     .k-radio::before {
-        content: "";
-        width: $radio-icon-size;
-        height: $radio-icon-size;
-        border-radius: 50%;
-        background-color: currentColor;
-        transform: scale(0) translate(-50%, -50%);
-        overflow: hidden;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-    }
+        @if $radio-icon-type == "glyph" {
+            content: $radio-checked-glyph;
+            width: $radio-glyph-size;
+            height: $radio-glyph-size;
+            font-size: $radio-glyph-size;
+            font-family: $radio-glyph-font-family;
+            line-height: 1;
+            transform: scale(0) translate(-50%, -50%);
+            overflow: hidden;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+        }
 
-    // Hover state
-    .k-radio:hover,
-    .k-radio.k-state-hover {
-        cursor: pointer;
+        @if $radio-icon-type == "marker" {
+            content: "";
+            width: $radio-marker-checked-width;
+            height: $radio-marker-checked-width;
+            border-radius: 50%;
+            background-color: currentColor;
+            transform: scale(0) translate(-50%, -50%);
+            overflow: hidden;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+        }
     }
 
     // Checked state
-    .k-radio:checked::before,
-    .k-radio.k-checked::before {
-        @include border-radius( $radio-radius );
-        transform: scale(1) translate(-50%, -50%);
+    .k-radio:checked,
+    .k-radio.k-checked {
+        @if $radio-icon-type == "image" {
+            background-image: $radio-checked-image;
+        }
+
+        @if $radio-icon-type == "glyph" {
+            &::before {
+                transform: scale(1) translate(-50%, -50%);
+            }
+        }
+
+        @if $radio-icon-type == "marker" {
+            &::before {
+                transform: scale(1) translate(-50%, -50%);
+            }
+        }
     }
 
     // Disabled state
@@ -174,10 +203,10 @@
             position: absolute;
             left: 0;
             top: 0;
-            width: $checkbox-ripple-size;
-            height: $checkbox-ripple-size;
-            margin-left: $checkbox-ripple-margin;
-            margin-top: $checkbox-ripple-margin;
+            width: $radio-ripple-size;
+            height: $radio-ripple-size;
+            margin-left: $radio-ripple-margin;
+            margin-top: $radio-ripple-margin;
             border-radius: 100%;
             z-index: 1;
             transform: scale(0);

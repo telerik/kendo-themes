@@ -2,7 +2,6 @@
 
     // Spreadsheet
     .k-spreadsheet {
-        @include use-background-clip();
         width: 800px;
         height: 600px;
         border-width: $spreadsheet-border-width;
@@ -140,15 +139,7 @@
         align-items: center;
         flex: 1;
 
-        &::before {
-            @extend .k-i-formula-fx;
-            font-size: $icon-size;
-            font-family: "WebComponentsIcons";
-            font-style: normal;
-            font-variant: normal;
-            font-weight: normal;
-            line-height: 1;
-
+        > .k-i-formula-fx {
             padding: 0 $padding-y;
             border-width: 0 1px 0 0;
             border-style: solid;
@@ -457,7 +448,6 @@
         box-sizing: border-box;
         position: absolute;
         line-height: normal;
-        background-clip: padding-box;
         white-space: pre;
         overflow: hidden;
     }
@@ -676,24 +666,6 @@
             .k-filter-and {
                 width: 75px;
                 margin: 8px 0;
-            }
-        }
-
-        .k-actions,
-        .k-action-buttons,
-        .k-columnmenu-actions {
-            .k-button {
-                flex: 1 1 50%;
-            }
-        }
-
-        .k-actions {
-            &.k-actions-start,
-            &.k-actions-center,
-            &.k-actions-end {
-                .k-button {
-                    flex: 0 1 auto;
-                }
             }
         }
     }

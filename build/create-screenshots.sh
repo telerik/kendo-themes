@@ -8,7 +8,7 @@ THEME_DIR="$TEMP_DIR/$THEME"
 SRC_DIR="$THEME_DIR/src"
 
 if [ -z "$THEME" ]; then
-    echo "Usage: create-screenshots <default|bootstrap|material>"
+    echo "Usage: create-screenshots <default|bootstrap|material|classic>"
     exit
 else
     echo "Creating screenshots for theme '$THEME'"

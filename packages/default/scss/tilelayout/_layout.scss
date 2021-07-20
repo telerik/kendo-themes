@@ -1,7 +1,6 @@
 @include exports("tilelayout/layout") {
 
     .k-tilelayout {
-        @include use-background-clip();
         border-width: $tilelayout-border-width;
         border-style: solid;
         box-sizing: border-box;

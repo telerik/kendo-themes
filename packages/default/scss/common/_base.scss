@@ -76,7 +76,6 @@
     // Panels
     .k-block,
     .k-panel {
-        @extend .k-text-selection !optional;
         @include border-radius( $border-radius );
         @include fill(
             $panel-text,

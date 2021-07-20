@@ -10,7 +10,6 @@ $enable-transitions: true !default;
 $enable-flex-classes: true !default;
 $enable-grid-classes: true !default;
 
-$use-background-clip: true !default;
 $use-calc-badge-size: true !default;
 $use-picker-select-width: true !default;
 
@@ -90,12 +89,10 @@ $nav-item-margin: 0px !default;
 $nav-item-padding-x: $padding-x-lg !default;
 $nav-item-padding-y: $padding-y-lg !default;
 
+$table-cell-padding-x: 12px !default;
+$table-cell-padding-y: 8px !default;
 $header-cell-padding-x: 12px !default;
 $header-cell-padding-y: 8px !default;
-$cell-padding-x: 12px !default;
-$cell-padding-y: 8px !default;
-$cell-padding: 8px !default;
-// $cell-padding-sm: $table-sm-cell-padding !default;
 
 $zindex-popup: 1 !default;
 $zindex-window: 2 !default;
@@ -123,7 +120,7 @@ $accent-contrast: contrast-wcag( $accent ) !default;
 /// Used for primary buttons and for elements of primary importance across the theme.
 /// @group color-system
 /// @type Color
-$primary: $accent !default;
+$primary: #ff6358 !default;
 $primary-lighter: tint( $primary, 2 ) !default;
 $primary-darker: shade( $primary, 2 ) !default;
 
@@ -131,7 +128,7 @@ $primary-darker: shade( $primary, 2 ) !default;
 /// Used to provide contrast between the background and foreground colors.
 /// @group color-system
 /// @type Color
-$primary-contrast: $accent-contrast !default;
+$primary-contrast: contrast-wcag( $primary ) !default;
 
 /// The secondary color of the theme.
 /// @group color-system

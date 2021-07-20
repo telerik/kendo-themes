@@ -2,7 +2,6 @@
 
     // Appbar
     .k-appbar {
-        @include use-background-clip();
         margin: $appbar-margin-y $appbar-margin-x;
         padding: $appbar-padding-y $appbar-padding-x;
         border-width: $appbar-border-width;

@@ -1,9 +1,8 @@
 @include exports("gantt/layout") {
 
-    $row-height: #{$line-height-em} + #{2 * $cell-padding} + #{$grid-cell-horizontal-border-width};
+    $row-height: #{$line-height-em} + #{2 * $table-cell-padding-y} + #{$grid-cell-horizontal-border-width};
 
     .k-gantt {
-        @include use-background-clip();
         border-width: $gantt-border-width;
         border-style: solid;
         box-sizing: border-box;

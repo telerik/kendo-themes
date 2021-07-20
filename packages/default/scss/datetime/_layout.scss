@@ -19,7 +19,6 @@
         -webkit-tap-highlight-color: $rgba-transparent;
 
         .k-dateinput-wrap {
-            @include use-background-clip();
             @include border-radius( $input-border-radius );
             padding: 0;
             width: 100%;
@@ -153,7 +152,6 @@
 
         // Wrapper
         .k-picker-wrap {
-            @include use-background-clip();
             @include border-radius( $input-border-radius );
             padding: 0;
             width: 100%;
@@ -245,7 +243,6 @@
 
         // Wrappers
         .k-picker-wrap {
-            @include use-background-clip();
             @include border-radius( $input-border-radius );
             padding: 0;
             width: 100%;
@@ -363,24 +360,6 @@
             }
         }
 
-        .k-actions,
-        .k-action-buttons,
-        .k-columnmenu-actions {
-            .k-button {
-                flex: 1 1 50%;
-            }
-        }
-
-        .k-actions {
-            &.k-actions-start,
-            &.k-actions-center,
-            &.k-actions-end {
-                .k-button {
-                    flex: 0 1 auto;
-                }
-            }
-        }
-
         .k-rtl &,
         &.k-rtl,
         [dir="rtl"] &,
@@ -395,26 +374,7 @@
     }
 
     // Infinite timepicker
-    .k-timeselector {
-
-        .k-actions,
-        .k-action-buttons,
-        .k-columnmenu-actions {
-            .k-button {
-                flex: 1 1 50%;
-            }
-        }
-
-        .k-actions {
-            &.k-actions-start,
-            &.k-actions-center,
-            &.k-actions-end {
-                .k-button {
-                    flex: 0 1 auto;
-                }
-            }
-        }
-    }
+    .k-timeselector {}
 
 
     // Header

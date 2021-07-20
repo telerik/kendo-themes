@@ -3,7 +3,6 @@
     kendo-scrollview.k-scrollview-wrap,
     kendo-scrollview.k-scrollview,
     div.k-scrollview {
-        @extend .k-text-selection !optional;
         @include fill(
             $scrollview-text,
             $scrollview-bg,
@@ -72,7 +71,6 @@
     .k-scrollview-nav > .k-link {
         background: $scrollview-pagebutton-bg;
         border: $scrollview-pagebutton-border;
-        background-clip: padding-box;
 
         &.k-primary {
             background: $scrollview-pagebutton-primary-bg;

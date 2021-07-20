@@ -9,31 +9,86 @@
 
     <style>
         #test-area {
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(4, 1fr);
         }
 
         #test-area > section {
             position: relative;
             min-height: 500px;
         }
+
+        .splitbuttons > span {
+            display: block;
+            margin-bottom: 8px;
+        }
     </style>
 </head>
 <body>
 
     <div id="test-area" class="grid">
-        <section>
+        <section class="splitbuttons">
             <p>Angular</p>
-            <kendo-splitbutton class="k-widget k-split-button k-button-group k-state-focused">
-                <button class="k-button-icontext k-button">
-                    <span class="k-icon k-i-save"></span>
-                    Save
-                </button>
-                <button class="k-button-icon k-button">
-                    <span class="k-icon k-i-arrow-s"></span>
-                </button>
-            </kendo-splitbutton>
+            <span>
+                <kendo-splitbutton class="k-split-button k-button-group">
+                    <button class="k-button-icontext k-button">
+                        <span class="k-icon k-i-save"></span>
+                        Normal
+                    </button>
+                    <button class="k-button-icon k-button">
+                        <span class="k-icon k-i-arrow-s"></span>
+                    </button>
+                </kendo-splitbutton>
+            </span>
 
-            <kendo-popup class="k-animation-container k-animation-container-fixed k-animation-container-shown" style="position: absolute; left: 0; top: 85px;">
+            <span>
+                <kendo-splitbutton class="k-split-button k-button-group">
+                    <button class="k-button-icontext k-button k-state-hover">
+                        <span class="k-icon k-i-save"></span>
+                        Hover
+                    </button>
+                    <button class="k-button-icon k-button">
+                        <span class="k-icon k-i-arrow-s"></span>
+                    </button>
+                </kendo-splitbutton>
+            </span>
+
+            <span>
+                <kendo-splitbutton class="k-split-button k-button-group k-state-focused">
+                    <button class="k-button-icontext k-button k-state-active k-state-focused">
+                        <span class="k-icon k-i-save"></span>
+                        Active
+                    </button>
+                    <button class="k-button-icon k-button">
+                        <span class="k-icon k-i-arrow-s"></span>
+                    </button>
+                </kendo-splitbutton>
+            </span>
+
+            <span>
+                <kendo-splitbutton class="k-split-button k-button-group k-state-focused">
+                    <button class="k-button-icontext k-button k-state-focused">
+                        <span class="k-icon k-i-save"></span>
+                        Focus
+                    </button>
+                    <button class="k-button-icon k-button">
+                        <span class="k-icon k-i-arrow-s"></span>
+                    </button>
+                </kendo-splitbutton>
+            </span>
+
+            <span>
+                <kendo-splitbutton class="k-split-button k-button-group">
+                    <button class="k-button-icontext k-button k-state-disabled">
+                        <span class="k-icon k-i-save"></span>
+                        Disabled
+                    </button>
+                    <button class="k-button-icon k-button k-state-disabled">
+                        <span class="k-icon k-i-arrow-s"></span>
+                    </button>
+                </kendo-splitbutton>
+            </span>
+
+            <kendo-popup class="k-animation-container k-animation-container-fixed k-animation-container-shown" style="position: absolute; left: 0; top: 280px;">
                 <div class="k-popup k-list-container k-reset k-group">
                     <kendo-button-list>
                         <ul class="k-list k-reset">
@@ -51,9 +106,87 @@
             </kendo-popup>
         </section>
 
+
+
+        <section class="splitbuttons">
+            <p>Angular - Outline SplitButton</p>
+            <span>
+                <kendo-splitbutton icon="paste" look="outline" class="k-split-button k-button-group k-outline">
+                    <button class="k-button-icontext k-button k-outline"><span class="k-icon k-i-paste"></span>Normal</button>
+                    <button class="k-button-icon k-button k-outline"><span class="k-icon k-i-arrow-s"></span></button>
+                </kendo-splitbutton>
+            </span>
+
+            <span>
+                <kendo-splitbutton icon="paste" look="outline" class="k-split-button k-button-group k-outline">
+                    <button class="k-button-icontext k-button k-outline k-state-hover"><span class="k-icon k-i-paste"></span>Hover</button>
+                    <button class="k-button-icon k-button k-outline"><span class="k-icon k-i-arrow-s"></span></button>
+                </kendo-splitbutton>
+            </span>
+
+            <span>
+                <kendo-splitbutton icon="paste" look="outline" class="k-split-button k-button-group k-state-focused k-outline">
+                    <button class="k-button-icontext k-button k-outline k-state-active k-state-focused"><span class="k-icon k-i-paste"></span>Active</button>
+                    <button class="k-button-icon k-button k-outline"><span class="k-icon k-i-arrow-s"></span></button>
+                </kendo-splitbutton>
+            </span>
+
+            <span>
+                <kendo-splitbutton icon="paste" look="outline" class="k-split-button k-button-group k-state-focused k-outline">
+                    <button class="k-button-icontext k-button k-outline k-state-focused"><span class="k-icon k-i-paste"></span>Focus</button>
+                    <button class="k-button-icon k-button k-outline"><span class="k-icon k-i-arrow-s"></span></button>
+                </kendo-splitbutton>
+            </span>
+
+            <span>
+                <kendo-splitbutton icon="paste" look="outline" class="k-split-button k-button-group k-outline">
+                    <button class="k-button-icontext k-button k-outline k-state-disabled"><span class="k-icon k-i-paste"></span>Disabled</button>
+                    <button class="k-button-icon k-button k-outline k-state-disabled"><span class="k-icon k-i-arrow-s"></span></button>
+                </kendo-splitbutton>
+            </span>
+        </section>
+
+        <section class="splitbuttons">
+            <p>Angular - Flat SplitButton</p>
+            <span>
+                <kendo-splitbutton icon="paste" look="flat" class="k-split-button k-button-group k-flat">
+                    <button class="k-button-icontext k-button k-flat"><span class="k-icon k-i-paste"></span>Normal</button>
+                    <button class="k-button-icon k-button k-flat"><span class="k-icon k-i-arrow-s"></span></button>
+                </kendo-splitbutton>
+            </span>
+
+            <span>
+                <kendo-splitbutton icon="paste" look="flat" class="k-split-button k-button-group k-flat">
+                    <button class="k-button-icontext k-button k-flat k-state-hover"><span class="k-icon k-i-paste"></span>Hover</button>
+                    <button class="k-button-icon k-button k-flat"><span class="k-icon k-i-arrow-s"></span></button>
+                </kendo-splitbutton>
+            </span>
+
+            <span>
+                <kendo-splitbutton icon="paste" look="flat" class="k-split-button k-button-group k-state-focused k-flat">
+                    <button class="k-button-icontext k-button k-flat k-state-active k-state-focused"><span class="k-icon k-i-paste"></span>Active</button>
+                    <button class="k-button-icon k-button k-flat"><span class="k-icon k-i-arrow-s"></span></button>
+                </kendo-splitbutton>
+            </span>
+
+            <span>
+                <kendo-splitbutton icon="paste" look="flat" class="k-split-button k-button-group k-state-focused k-flat">
+                    <button class="k-button-icontext k-button k-flat k-state-focused"><span class="k-icon k-i-paste"></span>Focus</button>
+                    <button class="k-button-icon k-button k-flat"><span class="k-icon k-i-arrow-s"></span></button>
+                </kendo-splitbutton>
+            </span>
+
+            <span>
+                <kendo-splitbutton icon="paste" look="flat" class="k-split-button k-button-group k-flat">
+                    <button class="k-button-icontext k-button k-flat k-state-disabled"><span class="k-icon k-i-paste"></span>Disabled</button>
+                    <button class="k-button-icon k-button k-flat k-state-disabled"><span class="k-icon k-i-arrow-s"></span></button>
+                </kendo-splitbutton>
+            </span>
+        </section>
+
         <section>
             <p>Angular - RTL</p>
-            <kendo-splitbutton class="k-widget k-split-button k-button-group k-state-focused" dir="rtl">
+            <kendo-splitbutton class="k-split-button k-button-group k-state-focused" dir="rtl">
                 <button class="k-button-icontext k-button">
                     <span class="k-icon k-i-save"></span>
                     Save

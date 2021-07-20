@@ -64,17 +64,13 @@
         flex: 0 0 auto;
         display: flex;
         flex-flow: row wrap;
-        justify-content: flex-end;
         align-items: center;
         gap: $dialog-button-spacing;
         overflow: hidden;
-
-        .k-button {
-            // Kendo UI for jQuery sets inline width
-            width: auto !important; // sass-lint:disable-line no-important
-            max-width: 100%;
-        }
     }
+
+
+    // Legacy spacing
     .k-ie .k-dialog-buttongroup {
 
         .k-button ~ .k-button {

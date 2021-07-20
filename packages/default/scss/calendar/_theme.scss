@@ -50,7 +50,10 @@
 
         // Today navigation
         .k-footer .k-nav-today,
-        .k-calendar-header .k-today {
+        .k-calendar-header .k-today,
+        .k-calendar-footer .k-today,
+        .k-calendar-header .k-nav-today,
+        .k-calendar-footer .k-nav-today {
             color: $calendar-today-nav-text;
 
             &:hover,
@@ -190,6 +193,15 @@
         &.ng-invalid.ng-dirty {
             border-color: $invalid-border;
         }
+    }
+
+
+    // Scheduler integration
+    .k-scheduler .k-calendar .k-other-month {
+        @include fill(
+            $calendar-other-month-text,
+            transparent
+        );
     }
 
 }

@@ -1,0 +1,91 @@
+{
+    "$schema": "https://unpkg.com/@progress/kendo-theme-tasks@1.11.0/lib/schemas/kendo-swatch.json",
+    "name": "Burnt Teal",
+    "product": "kendo",
+    "base": "@progress/kendo-theme-material",
+    "previewColors": [
+        "#ffffff",
+        "#e0e0e0",
+        "#009688",
+        "#ff9800",
+        "#424242"
+    ],
+    "components": [],
+    "groups": [
+        {
+            "variables": {
+                "border-radius": {
+                    "name": "Border radius",
+                    "type": "number",
+                    "value": "2px"
+                }
+            }
+        },
+        {
+            "name": "Theme colors",
+            "variables": {
+                "primary-palette-name": {
+                    "name": "Primary",
+                    "type": "material-colorlist",
+                    "enum": [
+                        { "value": "red", "text": "Red", "preview": "#f44336" },
+                        { "value": "pink", "text": "Pink", "preview": "#e91e63" },
+                        { "value": "purple", "text": "Purple", "preview": "#9c27b0" },
+                        { "value": "deepPurple", "text": "Deep Purple", "preview": "#673ab7" },
+                        { "value": "indigo", "text": "Indigo", "preview": "#3f51b5" },
+                        { "value": "blue", "text": "Blue", "preview": "#2196f3" },
+                        { "value": "lightBlue", "text": "Light Blue", "preview": "#03a9f4" },
+                        { "value": "cyan", "text": "Cyan", "preview": "#00bcd4" },
+                        { "value": "teal", "text": "Teal", "preview": "#009688" },
+                        { "value": "green", "text": "Green", "preview": "#4caf50" },
+                        { "value": "lightGreen", "text": "Light Green", "preview": "#8bc34a" },
+                        { "value": "lime", "text": "Lime", "preview": "#cddc39" },
+                        { "value": "yellow", "text": "Yellow", "preview": "#ffeb3b" },
+                        { "value": "amber", "text": "Amber", "preview": "#ffc107" },
+                        { "value": "orange", "text": "Orange", "preview": "#ff9800" },
+                        { "value": "deepOrange", "text": "Deep Orange", "preview": "#ff5722" },
+                        { "value": "brown", "text": "Brown", "preview": "#795548" },
+                        { "value": "gray", "text": "Gray", "preview": "#9e9e9e" },
+                        { "value": "blueGray", "text": "Blue Gray", "preview": "#607d8b" }
+                    ],
+                    "value": "teal"
+                },
+                "secondary-palette-name": {
+                    "name": "Secondary",
+                    "type": "material-colorlist",
+                    "enum": [
+                        { "value": "red", "text": "Red", "preview": "#f44336" },
+                        { "value": "pink", "text": "Pink", "preview": "#e91e63" },
+                        { "value": "purple", "text": "Purple", "preview": "#9c27b0" },
+                        { "value": "deepPurple", "text": "Deep Purple", "preview": "#673ab7" },
+                        { "value": "indigo", "text": "Indigo", "preview": "#3f51b5" },
+                        { "value": "blue", "text": "Blue", "preview": "#2196f3" },
+                        { "value": "lightBlue", "text": "Light Blue", "preview": "#03a9f4" },
+                        { "value": "cyan", "text": "Cyan", "preview": "#00bcd4" },
+                        { "value": "teal", "text": "Teal", "preview": "#009688" },
+                        { "value": "green", "text": "Green", "preview": "#4caf50" },
+                        { "value": "lightGreen", "text": "Light Green", "preview": "#8bc34a" },
+                        { "value": "lime", "text": "Lime", "preview": "#cddc39" },
+                        { "value": "yellow", "text": "Yellow", "preview": "#ffeb3b" },
+                        { "value": "amber", "text": "Amber", "preview": "#ffc107" },
+                        { "value": "orange", "text": "Orange", "preview": "#ff9800" },
+                        { "value": "deepOrange", "text": "Deep Orange", "preview": "#ff5722" },
+                        { "value": "brown", "text": "Brown", "preview": "#795548" },
+                        { "value": "gray", "text": "Gray", "preview": "#9e9e9e" },
+                        { "value": "blueGray", "text": "Blue Gray", "preview": "#607d8b" }
+                    ],
+                    "value": "orange"
+                },
+                "theme-type": {
+                    "name": "Theme luminosity",
+                    "type": "color-mode",
+                    "enum": [
+                        { "value": "light", "text": "Light", "preview": "#ffffff" },
+                        { "value": "dark", "text": "Dark", "preview": "#000000" }
+                    ],
+                    "value": "light"
+                }
+            }
+        }
+    ]
+}

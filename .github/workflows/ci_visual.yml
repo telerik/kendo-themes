@@ -18,7 +18,7 @@ jobs:
 
     strategy:
       matrix:
-        theme: [default, bootstrap, material]
+        theme: [default, bootstrap, material, classic]
 
     steps:
       - name: Checkout branch

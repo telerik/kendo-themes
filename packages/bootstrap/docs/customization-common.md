@@ -38,8 +38,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$base-bg</td>
     <td></td>
-    <td>try-darken( $component-bg, 3% )</td>
-    <td>try-darken( $component-bg, 3% )</td>
+    <td>$gray-100</td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the components' chrome area.</div></div>
@@ -48,7 +48,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$base-text</td>
     <td></td>
-    <td>$component-color</td>
+    <td>$body-text</td>
     <td></td>
 </tr>
 <tr>
@@ -58,8 +58,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$base-border</td>
     <td></td>
-    <td>try-darken( $base-bg, 3% )</td>
-    <td>try-darken( $base-bg, 3% )</td>
+    <td>try-shade( $base-bg, 1 )</td>
+    <td>try-shade( $base-bg, 1 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the components' chrome area.</div></div>
@@ -78,8 +78,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$hovered-bg</td>
     <td></td>
-    <td>try-darken( $base-bg, 3% )</td>
-    <td>try-darken( $base-bg, 3% )</td>
+    <td>$gray-200</td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of hovered items.</div></div>
@@ -98,8 +98,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$hovered-border</td>
     <td></td>
-    <td>try-darken( $base-border, 12% )</td>
-    <td>try-darken( $base-border, 12% )</td>
+    <td>try-shade( $hovered-bg, 1 )</td>
+    <td>try-shade( $hovered-bg, 1 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of hovered items.</div></div>
@@ -119,7 +119,7 @@ The following table lists the available variables for customization.
     <td>$selected-bg</td>
     <td></td>
     <td>$primary</td>
-    <td>$accent</td>
+    <td>$primary</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of selected items.</div></div>
@@ -138,8 +138,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$selected-border</td>
     <td></td>
-    <td>try-darken( $selected-bg, 12% )</td>
-    <td>try-darken( $selected-bg, 12% )</td>
+    <td>try-shade( $selected-bg, 1 )</td>
+    <td>try-shade( $selected-bg, 1 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of selected items.</div></div>

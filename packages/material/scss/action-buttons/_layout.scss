@@ -2,9 +2,7 @@
 
 @include exports("action-buttons/layout/material") {
 
-    .k-actions,
-    .k-action-buttons,
-    .k-columnmenu-actions {
+    .k-actions {
         .k-button {
             @include box-shadow( none );
         }

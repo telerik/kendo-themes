@@ -9,18 +9,18 @@ $upload-bg: $component-bg !default;
 $upload-text: $component-text !default;
 $upload-border: $component-border !default;
 
-$upload-dropzone-padding-x: $toolbar-padding-x !default;
-$upload-dropzone-padding-y: $toolbar-padding-y !default;
-$upload-dropzone-bg: $toolbar-bg !default;
-$upload-dropzone-text: $toolbar-text !default;
-$upload-dropzone-border: inherit !default;
+$upload-dropzone-padding-x: map-get( $spacing, 2 ) !default;
+$upload-dropzone-padding-y: map-get( $spacing, 2 ) !default;
+$upload-dropzone-bg: $header-bg !default;
+$upload-dropzone-text: $header-text !default;
+$upload-dropzone-border: $upload-border !default;
 $upload-dropzone-hover-bg: $hovered-bg !default;
 
 $upload-status-text: $subtle-text !default;
 $upload-status-text-opacity: null !default;
 
-$upload-item-padding-x: $cell-padding !default;
-$upload-item-padding-y: $cell-padding !default;
+$upload-item-padding-x: map-get( $spacing, 2 ) !default;
+$upload-item-padding-y: map-get( $spacing, 2 ) !default;
 
 $upload-multiple-items-spacing: 12px !default;
 

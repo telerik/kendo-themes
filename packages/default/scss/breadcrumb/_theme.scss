@@ -2,7 +2,6 @@
 
     // Breadcrumb
     .k-breadcrumb {
-        @extend .k-text-selection !optional;
         @include fill(
             $breadcrumb-text,
             $breadcrumb-bg,

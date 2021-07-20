@@ -2,7 +2,6 @@
 
     // Searchbox
     .k-searchbox {
-        @include use-background-clip();
         @include border-radius( $searchbox-border-radius );
         border-width: 1px;
         border-style: solid;

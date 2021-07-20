@@ -28,8 +28,8 @@
   "kendo": {
     "themebuilder": {
       "swatches": {
-        "path": "lib/themebuilder",
-        "default": "nouvelle.json"
+        "path": "lib/swatches",
+        "default": "main.json"
       }
     }
   },

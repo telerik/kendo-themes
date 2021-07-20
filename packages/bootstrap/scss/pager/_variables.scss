@@ -1,6 +1,6 @@
 // Pager
-$pager-padding-x: $toolbar-padding-x !default;
-$pager-padding-y: $toolbar-padding-y !default;
+$pager-padding-x: map-get( $spacing, 2 ) !default;
+$pager-padding-y: map-get( $spacing, 2 ) !default;
 $pager-border-width: 1px !default;
 
 $pager-font-family: $font-family !default;
@@ -11,25 +11,25 @@ $pager-bg: $header-bg !default;
 $pager-text: $header-text !default;
 $pager-border: $header-border !default;
 
-$pager-section-spacing: $spacer-x !default;
+$pager-section-spacing: map-get( $spacing, 4 ) !default;
 
 $pager-item-padding-x: $button-padding-y !default;
-$pager-item-padding-y: $pager-item-padding-x !default;
+$pager-item-padding-y: $button-padding-y !default;
 $pager-item-border-width: 1px !default;
-$pager-item-border-radius: $border-radius !default;
+$pager-item-border-radius: map-get( $spacing, 1 ) !default;
 $pager-item-spacing: (-1 * $pager-item-border-width) !default;
 
-$pager-item-bg: $pagination-bg !default;
-$pager-item-text: $pagination-color !default;
-$pager-item-border: $pagination-border-color !default;
+$pager-item-bg: $component-bg !default;
+$pager-item-text: $link-text !default;
+$pager-item-border: $component-border !default;
 
-$pager-item-hover-bg: $pagination-hover-bg !default;
-$pager-item-hover-text: $pagination-color !default;
-$pager-item-hover-border: $pagination-hover-border-color !default;
+$pager-item-hover-bg: $hovered-bg !default;
+$pager-item-hover-text: $link-hover-text !default;
+$pager-item-hover-border: $hovered-border !default;
 
-$pager-item-selected-bg: $pagination-active-bg !default;
-$pager-item-selected-text: $pagination-active-color !default;
-$pager-item-selected-border: $pagination-active-border-color !default;
+$pager-item-selected-bg: $selected-bg !default;
+$pager-item-selected-text: $selected-text !default;
+$pager-item-selected-border: $pager-item-selected-bg !default;
 
 $pager-item-focus-opacity: null !default;
 $pager-item-focus-bg: $pager-item-bg !default;

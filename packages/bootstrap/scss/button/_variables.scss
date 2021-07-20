@@ -19,14 +19,14 @@ $button-line-height: $btn-line-height !default;
 
 $button-padding-x-sm: $btn-padding-x-sm !default;
 $button-padding-y-sm: $btn-padding-y-sm !default;
-$button-line-height-sm: $btn-line-height-sm !default;
+$button-line-height-sm: $btn-line-height !default;
 
 $button-calc-size: calc( #{$button-line-height * 1em} + #{$button-padding-y * 2} + #{$button-border-width * 2} ) !default;
 $button-inner-calc-size: calc( #{$button-line-height * 1em} + #{$button-padding-y * 2} ) !default;
 
 /// The background of the buttons.
 /// @group buttons
-$button-bg: $secondary !default;
+$button-bg: #e4e7eb !default;
 /// The text color of the buttons.
 /// @group buttons
 $button-text: contrast-wcag( $button-bg, $gray-900 ) !default;

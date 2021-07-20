@@ -109,6 +109,10 @@
             @include box-shadow( none );
             opacity: 1;
         }
+
+        &.k-flat {
+            @include box-shadow( none );
+        }
     }
 
 

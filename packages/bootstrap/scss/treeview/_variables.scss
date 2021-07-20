@@ -7,8 +7,8 @@ $treeview-line-height: $line-height !default;
 
 $treeview-indent: 16px !default;
 
-$treeview-item-padding-x: ( map-get( $spacing, 1 ) * 1.5 ) !default;
-$treeview-item-padding-y: $treeview-item-padding-x !default;
+$treeview-item-padding-x: map-get( $spacing, 3 ) !default;
+$treeview-item-padding-y: ( $treeview-item-padding-x / 2 ) !default;
 $treeview-item-border-width: 1px !default;
 $treeview-item-border-radius: map-get( $spacing, 1 ) !default;
 
@@ -16,9 +16,9 @@ $treeview-bg: null !default;
 $treeview-text: $component-text !default;
 $treeview-border: null !default;
 
-$treeview-item-hovered-bg: $list-group-hover-bg !default;
-$treeview-item-hovered-text: $list-group-hover-color !default;
-$treeview-item-hovered-border: $node-hovered-bg !default;
+$treeview-item-hovered-bg: $hovered-bg !default;
+$treeview-item-hovered-text: $hovered-text !default;
+$treeview-item-hovered-border: $treeview-item-hovered-bg !default;
 $treeview-item-hovered-gradient: null !default;
 
 $treeview-item-selected-bg: $selected-bg !default;
@@ -27,21 +27,21 @@ $treeview-item-selected-border: $treeview-item-selected-bg !default;
 $treeview-item-selected-gradient: null !default;
 
 $treeview-item-focused-shadow: 0 0 0 2px $component-border !default;
-$treeview-item-selected-focused-shadow: 0 0 0 2px rgba( $node-selected-border, .5 ) !default;
+$treeview-item-selected-focused-shadow: 0 0 0 2px rgba( $treeview-item-selected-border, .5 ) !default;
 
 $treeview-loadmore-checkboxes-padding-x: calc( #{$icon-spacing} + #{$checkbox-size} + #{$treeview-indent} ) !default;
 $treeview-loadmore-checkboxes-icon-indent: calc( -1 * (#{$icon-spacing} + #{$treeview-indent}) ) !default;
 $treeview-loadmore-checkboxes-icon-margin-x: $icon-spacing !default;
 
 $treeview-loadmore-bg: transparent !default;
-$treeview-loadmore-text: $primary !default;
+$treeview-loadmore-text: $link-text !default;
 $treeview-loadmore-border: null !default;
 
 $treeview-loadmore-hover-bg: transparent !default;
-$treeview-loadmore-hover-text: $primary-darker !default;
+$treeview-loadmore-hover-text: $link-hover-text !default;
 $treeview-loadmore-hover-border: null !default;
 
 $treeview-loadmore-focus-bg: transparent !default;
-$treeview-loadmore-focus-text: $primary !default;
+$treeview-loadmore-focus-text: $link-text !default;
 $treeview-loadmore-focus-border: null !default;
 $treeview-loadmore-focus-shadow: none !default;

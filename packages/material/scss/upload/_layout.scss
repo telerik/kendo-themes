@@ -1,15 +1,1 @@
 @import "~@progress/kendo-theme-default/scss/upload/_layout.scss";
-
-@include exports("upload/layout/material") {
-
-    .k-upload {
-
-        .k-action-buttons {
-            border-width: 1px 0 0;
-            border-style: solid;
-            border-color: inherit;
-        }
-
-    }
-}
-

@@ -1,9 +1,0 @@
-@mixin use-background-clip() {
-    @if $use-background-clip {
-        background-clip: padding-box;
-
-        .k-ie11 {
-            background-clip: border-box;
-        }
-    }
-}

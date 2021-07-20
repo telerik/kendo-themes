@@ -1,7 +1,6 @@
 @include exports( "dropdownlist/theme" ) {
 
     .k-dropdown {
-        @extend .k-text-selection !optional;
 
         .k-dropdown-wrap {
             @include fill(

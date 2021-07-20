@@ -7,20 +7,17 @@
     $grid-group-dropclue-height: $button-calc-size !default;
     $grid-group-dropclue-top: 3px !default;
 
-    $edit-cell-input-space: calc(-#{$cell-padding} - #{$input-border-width}) !default;
-    $edit-cell-textbox-width: calc(100% + ((#{$cell-padding} + #{$input-border-width}) * 2)) !default;
-
-    $grid-row-inner-height: calc( #{$line-height-em} + #{$cell-padding-y * 2} );
-    // $grid-row-half-inner-height: calc( #{$line-height-em / 2} + #{$cell-padding-y} );
+    $grid-row-inner-height: calc( #{$line-height-em} + #{$table-cell-padding-y * 2} );
+    // $grid-row-half-inner-height: calc( #{$line-height-em / 2} + #{$table-cell-padding-y} );
 
     // be cautious when changing the next line; see https://github.com/MoOx/reduce-css-calc/issues/38
-    $grid-command-cell-padding-y: calc( #{$cell-padding-y} - (#{$button-calc-size} - #{$line-height-em}) / 2 ) !default;
+    $grid-command-cell-padding-y: calc( #{$table-cell-padding-y} - (#{$button-calc-size} - #{$line-height-em}) / 2 ) !default;
 
     $grid-form-component-vertical-align: middle !default;
     $grid-hierarchy-col-width: ($icon-size * 2) !default;
 
     $grid-group-indicator-border-radius: $border-radius !default;
-    $grid-group-indicator-gap: $cell-padding-y !default;
+    $grid-group-indicator-gap: $table-cell-padding-y !default;
 
     $grid-grouping-row-border-top: 1px !default;
     $grid-group-footer-border-y: 1px !default;
@@ -34,7 +31,6 @@
     $default-scrollbar-width: 17px;
 
     .k-grid {
-        @include use-background-clip();
         border-width: $grid-border-width;
         border-style: solid;
         box-sizing: border-box;
@@ -159,7 +155,7 @@
         }
 
         .k-grouping-row .k-icon {
-            margin-left: calc( #{$icon-size / 2} - #{$cell-padding-x} );
+            margin-left: calc( #{$icon-size / 2} - #{$table-cell-padding-x} );
             margin-right: ($icon-size / 2);
             text-decoration: none;
         }
@@ -179,7 +175,7 @@
             overflow: visible;
 
             > .k-icon {
-                padding: $cell-padding-y 0;
+                padding: $table-cell-padding-y 0;
                 width: 100%;
                 height: 100%;
                 // That causes an issue with grid material. Commenting it for now
@@ -214,7 +210,8 @@
                 white-space: nowrap;
             }
 
-            .k-grid-header-wrap {
+            .k-grid-header-wrap,
+            .k-grid-footer-wrap {
                 border-width: 0 0 0 $grid-cell-vertical-border-width;
             }
 
@@ -292,12 +289,6 @@
                 border-right-width: 0;
             }
 
-            .k-grid-header,
-            .k-grid-footer {
-                padding-left: $default-scrollbar-width;
-                padding-right: 0;
-            }
-
             .k-grid-header {
                 .k-header {
                     z-index: 1;
@@ -332,21 +323,13 @@
 
             .k-filtercell-operator {
                 margin-left: 0;
-                margin-right: $cell-padding-y / 2;
+                margin-right: $table-cell-padding-y / 2;
             }
 
             .k-dirty {
                 border-color: currentColor currentColor transparent transparent;
                 left: auto;
                 right: 0;
-            }
-
-            .k-edit-cell,
-            .k-grid-edit-row > td {
-                >.k-textbox,
-                >.k-widget {
-                    margin-right: $edit-cell-input-space;
-                }
             }
 
             .k-grid-header-wrap.k-auto-scrollable {
@@ -367,7 +350,7 @@
 
             .k-grouping-row .k-icon {
                 margin-left: #{$icon-size / 2};
-                margin-right: calc( #{$icon-size / 2} - #{$cell-padding-x} );
+                margin-right: calc( #{$icon-size / 2} - #{$table-cell-padding-x} );
             }
 
             .k-column-resizer {
@@ -616,6 +599,8 @@
     }
 
     .k-grid-header {
+        padding-inline-start: 0;
+        padding-inline-end: var(--kendo-scrollbar-width, $default-scrollbar-width);
         border-bottom-width: 1px;
         font-size: $grid-header-font-size;
 
@@ -733,6 +718,8 @@
     }
 
     .k-grid-footer {
+        padding-inline-start: 0;
+        padding-inline-end: var(--kendo-scrollbar-width, $default-scrollbar-width);
         border-width: 1px 0 0;
 
         td {
@@ -889,61 +876,35 @@
 
 
     // Edit row
-    .k-grid-edit-row {
-
-        td {
-            text-overflow: clip;
-        }
-
-        .k-widget,
-        .k-button,
-        .k-textbox {
-            height: auto;
-            // Commented out pending a better approach
-            //     margin-top: -$input-padding-y;
-            //     margin-bottom: -$input-padding-y;
-        }
-
-        .k-edit-cell {
-            padding-top: 0;
-            padding-bottom: 0;
-        }
+    .k-grid .k-edit-cell,
+    .k-grid .k-command-cell,
+    .k-grid .k-grid-edit-row td {
+        padding: $grid-edit-cell-padding-y $grid-edit-cell-padding-x;
+        text-overflow: clip;
     }
 
-    .k-edit-cell,
-    .k-grid-edit-row > td {
+    .k-grid .k-edit-cell,
+    .k-grid .k-grid-edit-row td {
+
+        > input:not([type="checkbox"]):not([type="radio"]),
+        > select,
         > .k-textbox,
         > .k-widget:not(.k-switch) {
-            margin-left: $edit-cell-input-space;
+            width: 100%;
+            vertical-align: $grid-form-component-vertical-align;
+            box-sizing: border-box;
         }
     }
 
-    .k-grid-edit-row td,
-    .k-edit-cell {
-        > .k-textbox,
-        > .k-widget:not(.k-switch) {
-            width: $edit-cell-textbox-width;
-        }
-    }
-
-    .k-grid-edit-row td > .k-textbox,
-    .k-grid-edit-row td > .k-widget,
-    .k-command-cell > .k-button,
-    .k-edit-cell > .k-textbox,
-    .k-edit-cell > .k-widget {
+    .k-grid .k-command-cell > .k-button {
         vertical-align: $grid-form-component-vertical-align;
     }
-
-    .k-grid .k-grid-edit-row td:not(.k-hierarchy-cell),
-    .k-grid .k-command-cell,
-    .k-grid .k-edit-cell {
-        padding: $grid-command-cell-padding-y $grid-cell-padding-x;
-    }
-
-    .k-command-cell > .k-button {
+    .k-grid .k-command-cell > .k-button + .k-button {
         margin-left: $grid-command-cell-button-spacing;
-        margin-right: $grid-command-cell-button-spacing;
+        margin-inline-end: unset;
+        margin-inline-start: $grid-command-cell-button-spacing;
     }
+
 
     // Resize handle
     .k-grid > .k-resize-handle,
@@ -1466,25 +1427,9 @@
     .k-column-list-wrapper,
     .k-columnmenu-item-content {
 
-        .k-actions,
-        .k-action-buttons,
-        .k-columnmenu-actions {
+        .k-actions {
             margin-top: ($grid-filter-menu-item-spacing-y / 2);
             padding: $grid-filter-menu-item-spacing-y $grid-filter-menu-item-spacing-x;
-
-            .k-button {
-                flex: 1 1 50%;
-            }
-        }
-
-        .k-actions {
-            &.k-actions-start,
-            &.k-actions-center,
-            &.k-actions-end {
-                .k-button {
-                    flex: 0 1 auto;
-                }
-            }
         }
     }
 
@@ -1548,6 +1493,28 @@
                     padding-right: $grid-header-padding-x;
                     padding-left: 0;
                 }
+            }
+        }
+    }
+}
+
+@include exports("grid/layout/IE") {
+    // TODO: Remove once we drop IE support
+
+    $default-scrollbar-width: 17px;
+    .k-ie {
+        .k-grid-header,
+        .k-grid-footer {
+            padding-right: $default-scrollbar-width;
+            padding-left: 0;
+        }
+
+        [dir = "rtl"],
+        .k-rtl {
+            .k-grid-header,
+            .k-grid-footer {
+                padding-right: 0;
+                padding-left: $default-scrollbar-width;
             }
         }
     }

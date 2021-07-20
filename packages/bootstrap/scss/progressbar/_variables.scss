@@ -6,13 +6,13 @@ $progressbar-font-family: $font-family !default;
 $progressbar-font-size: $progress-font-size !default;
 $progressbar-line-height: 1 !default;
 
-$progressbar-bg: $progress-bg !default;
-$progressbar-text: $progress-color !default;
+$progressbar-bg: $gray-200 !default;
+$progressbar-text: contrast-wcag( $gray-200 ) !default;
 $progressbar-border: null !default;
 $progressbar-gradient: null !default;
 
-$progressbar-fill-bg:  $progress-bar-bg !default;
-$progressbar-fill-text: $progress-bar-color !default;
+$progressbar-fill-bg: $selected-bg !default;
+$progressbar-fill-text: $selected-text !default;
 $progressbar-fill-border: null !default;
 $progressbar-fill-gradient: null !default;
 

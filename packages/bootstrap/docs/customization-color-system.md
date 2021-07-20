@@ -29,7 +29,7 @@ The following table lists the available variables for customization.
     <td>$accent</td>
     <td>Color</td>
     <td>$primary</td>
-    <td>$accent</td>
+    <td>$primary</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Deprecated</b><div class="theme-variables-description">Will be removed in v5. Use `$primary` variable instead.</div></div><div><b>Description</b><div class="theme-variables-description">The color that focuses the user attention.</div></div>
@@ -48,8 +48,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$primary</td>
     <td>Color</td>
-    <td>$accent</td>
-    <td>$accent</td>
+    <td>$primary</td>
+    <td>$primary</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color that focuses the user attention.<br />Used for primary buttons and for elements of primary importance across the theme.</div></div>
@@ -58,8 +58,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$primary-contrast</td>
     <td>Color</td>
-    <td>$accent-contrast</td>
-    <td>contrast-wcag( $accent )</td>
+    <td>contrast-wcag( $primary )</td>
+    <td>contrast-wcag( $primary )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color used along with the primary color denoted by $primary.<br />Used to provide contrast between the background and foreground colors.</div></div>

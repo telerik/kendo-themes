@@ -74,7 +74,6 @@
         }
 
         .k-picker-wrap {
-            @include use-background-clip();
             @include border-radius( $input-border-radius );
             padding: 0;
             width: 100%;
@@ -392,12 +391,11 @@
             margin-top: ($colorpicker-margin * 2);
             text-align: center;
         }
-    }
 
-    .k-rtl,
-    [dir="rtl"] {
-        .k-flatcolorpicker {
 
+        .k-rtl &,
+        &[dir="rtl"],
+        [dir="rtl"] & {
             .k-sliders-wrap.k-hbox {
                 margin-left: 0;
                 margin-right: $colorpicker-margin;
@@ -418,7 +416,6 @@
                 right: auto;
                 left: 0;
             }
-
         }
     }
 }

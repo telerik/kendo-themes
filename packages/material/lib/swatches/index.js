@@ -1,0 +1,9 @@
+module.exports.main = require('./main.json');
+module.exports.mainDark = require('./main-dark.json');
+module.exports.aquaDark = require('./aqua-dark.json');
+module.exports.arctic = require('./arctic.json');
+module.exports.burntTeal = require('./burnt-teal.json');
+module.exports.eggplant = require('./eggplant.json');
+module.exports.fuscia = require('./fuscia.json');
+module.exports.lime = require('./lime.json');
+module.exports.limeDark = require('./lime-dark.json');

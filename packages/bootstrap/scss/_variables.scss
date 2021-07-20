@@ -12,7 +12,6 @@ $enable-transitions: $enable-transitions !default;
 $enable-flex-classes: true !default;
 $enable-grid-classes: true !default;
 
-$use-background-clip: false !default;
 $use-calc-badge-size: true !default;
 $use-picker-select-width: false !default;
 
@@ -92,19 +91,17 @@ $nav-item-margin: 0px !default;
 $nav-item-padding-x: $nav-link-padding-x !default;
 $nav-item-padding-y: $nav-link-padding-y !default;
 
-$header-cell-padding-x: $table-cell-padding !default;
-$header-cell-padding-y: $table-cell-padding !default;
-$cell-padding-x: $table-cell-padding !default;
-$cell-padding-y: $table-cell-padding !default;
-$cell-padding: $table-cell-padding !default;
-$cell-padding-sm: $table-cell-padding-sm !default;
+$table-cell-padding-x: $table-cell-padding-x !default;
+$table-cell-padding-y: $table-cell-padding-y !default;
+$header-cell-padding-x: $table-cell-padding-x !default;
+$header-cell-padding-y: $table-cell-padding-y !default;
 
 $zindex-popup: 1 !default;
 $zindex-window: 2 !default;
 
 
 // Color settings
-$is-dark-theme: false;
+$is-dark-theme: false !default;
 
 $white: #ffffff !default;
 $black: #000000 !default;
@@ -127,7 +124,7 @@ $accent-contrast: contrast-wcag( $accent ) !default;
 /// Used for primary buttons and for elements of primary importance across the theme.
 /// @group color-system
 /// @type Color
-$primary: $accent !default;
+$primary: $primary !default;
 $primary-lighter: tint( $primary, 2 ) !default;
 $primary-darker: shade( $primary, 2 ) !default;
 
@@ -135,7 +132,7 @@ $primary-darker: shade( $primary, 2 ) !default;
 /// Used to provide contrast between the background and foreground colors.
 /// @group color-system
 /// @type Color
-$primary-contrast: $accent-contrast !default;
+$primary-contrast: contrast-wcag( $primary ) !default;
 
 /// The secondary color of the theme.
 /// @group color-system
@@ -239,21 +236,50 @@ $gradient-white-to-transparent: white, rgba( white, 0);
 
 $gradient-rainbow: #ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff, #ff0000;
 
+// Root styles
+$body-bg: $body-bg !default;
+$body-text: $body-color !default;
+
+$subtle-text: if( $is-dark-theme, $gray-400, $text-muted ) !default;
+$disabled-text: if( $is-dark-theme, $gray-600, $gray-500) !default;
+
+$app-bg: try-shade( $body-bg, .25 ) !default;
+$app-text: $body-text !default;
+$app-border: contrast-wcag( $app-bg, $gray-300, $gray-700 ) !default;
+
+
+// Components
+
+// Component
+/// Background color of a component.
+/// Note: do not use this variable directly. Instead derive it as `$component-name-bg` e.g. `$grid-bg: $component-bg !defualt;`.
+/// @group component
+$component-bg: $body-bg !default;
+/// Text color of a component.
+/// Note: do not use this variable directly. Instead derive it as `$component-name-text` e.g. `$grid-text: component-text !default;`.
+/// @group component
+$component-text: $body-text !default;
+/// Border color of a component.
+/// Note: do not use this variable directly. Instead derive it as `$component-name-border` e.g. `$grid-border: component-border !default;`.
+/// @group component
+$component-border: $gray-300 !default;
+
+
 /// The background of the components' chrome area.
-$base-bg: try-darken( $component-bg, 3% ) !default;
+$base-bg: $gray-100 !default;
 /// The text color of the components' chrome area.
-$base-text: $component-color !default;
+$base-text: $body-text !default;
 /// The border color of the components' chrome area.
-$base-border: try-darken( $base-bg, 3% ) !default;
+$base-border: try-shade( $base-bg, 1 ) !default;
 /// The gradient background of the components' chrome area.
 $base-gradient: null !default;
 
 /// The background of hovered items.
-$hovered-bg: try-darken( $base-bg, 3% ) !default;
+$hovered-bg: $gray-200 !default;
 /// The text color of hovered items.
 $hovered-text: $base-text !default;
 /// The border color of hovered items.
-$hovered-border: try-darken( $base-border, 12% ) !default;
+$hovered-border: try-shade( $hovered-bg, 1 ) !default;
 /// The gradient background of hovered items.
 $hovered-gradient: null !default;
 
@@ -262,7 +288,7 @@ $selected-bg: $primary !default;
 /// The text color of selected items.
 $selected-text: contrast-wcag( $selected-bg ) !default;
 /// The border color of selected items.
-$selected-border: try-darken( $selected-bg, 12% ) !default;
+$selected-border: try-shade( $selected-bg, 1 ) !default;
 /// The gradient background of selected items.
 $selected-gradient: null !default;
 
@@ -288,36 +314,8 @@ $disabled-opacity: .65 !default;
 
 // TODO: refactor once we extract drag drop as separate module
 $font-size: $font-size-base !default;
-$font-family: $font-family-base !default;
+$font-family: $font-family-sans-serif !default;
 $line-height: $line-height-base !default;
-
-// Root styles
-$body-bg: $body-bg !default;
-$body-text: $body-color !default;
-
-$subtle-text: if( $is-dark-theme, $gray-400, $text-muted ) !default;
-$disabled-text: if( $is-dark-theme, $gray-600, $gray-500) !default;
-
-$app-bg: try-shade( $body-bg, .25 ) !default;
-$app-text: $body-text !default;
-$app-border: contrast-yiq( $app-bg, $gray-300, $gray-700 ) !default;
-
-
-// Components
-
-// Component
-/// Background color of a component.
-/// Note: do not use this variable directly. Instead derive it as `$component-name-bg` e.g. `$grid-bg: $component-bg !defualt;`.
-/// @group component
-$component-bg: $component-bg !default;
-/// Text color of a component.
-/// Note: do not use this variable directly. Instead derive it as `$component-name-text` e.g. `$grid-text: component-text !default;`.
-/// @group component
-$component-text: $component-color !default;
-/// Border color of a component.
-/// Note: do not use this variable directly. Instead derive it as `$component-name-border` e.g. `$grid-border: component-border !default;`.
-/// @group component
-$component-border: $component-border-color !default;
 
 
 // Drop Hint
@@ -349,41 +347,24 @@ $frozen-grouping-header-border-width: 2px !default;
 
 
 // Header
-$header-bg: contrast-wcag( $component-bg, $gray-100, $gray-900 ) !default;
+$header-bg: $base-bg !default;
 $header-text: $component-text !default;
 $header-border: $component-border !default;
 $header-gradient: null !default;
 
 
-// Node
-$node-bg: $base-bg !default;
-$node-text: $base-text !default;
-$node-border: $base-border !default;
-$node-gradient: null !default;
-
-$node-hovered-bg: $list-group-hover-bg !default;
-$node-hovered-text: $list-group-hover-color !default;
-$node-hovered-border: $node-hovered-bg !default;
-$node-hovered-gradient: null !default;
-
-$node-selected-bg: $selected-bg !default;
-$node-selected-text: $selected-text !default;
-$node-selected-border: $selected-border !default;
-$node-selected-gradient: null !default;
-
-
 // List item
-$list-item-padding-x: $dropdown-item-padding-x !default;
-$list-item-padding-y: 3px !default;
+$list-item-padding-x: map-get( $spacing, 4 ) !default;
+$list-item-padding-y: map-get( $spacing, 1 ) !default;
 
 $list-item-bg: null !default;
 $list-item-text: $component-text !default;
 
-$list-item-hovered-bg: $dropdown-link-hover-bg !default;
-$list-item-hovered-text: $dropdown-link-hover-color !default;
+$list-item-hovered-bg: $hovered-bg !default;
+$list-item-hovered-text: $hovered-text !default;
 
-$list-item-selected-bg: $dropdown-link-active-bg !default;
-$list-item-selected-text: $dropdown-link-active-color !default;
+$list-item-selected-bg: $selected-bg !default;
+$list-item-selected-text: $selected-text !default;
 
 $list-item-focused-shadow: inset 0 0 0 3px rgba( $list-item-text, .15 ) !default;
 

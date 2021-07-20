@@ -2,7 +2,6 @@
 
     // Base
     .k-menu {
-        @include use-background-clip();
         border-width: $menu-border-width;
         border-style: solid;
         box-sizing: border-box;

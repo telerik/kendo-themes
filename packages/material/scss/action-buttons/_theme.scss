@@ -2,9 +2,7 @@
 
 @include exports("action-buttons/theme/material") {
 
-    .k-actions,
-    .k-action-buttons,
-    .k-columnmenu-actions {
+    .k-actions {
         .k-button:not(.k-primary),
         .k-button-secondary {
             background-color: try-shade( $button-bg );

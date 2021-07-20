@@ -2,8 +2,6 @@
 
     // Base
     .k-expander {
-        @include use-background-clip();
-
         border-width: $expander-border-width;
         border-style: solid;
         box-sizing: border-box;

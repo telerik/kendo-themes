@@ -1,54 +1,73 @@
-// Checkboxes
+// Checkbox
 $checkbox-size: map-get( $spacing, 4 ) !default;
 $checkbox-radius: map-get( $spacing, thin ) !default;
 $checkbox-border-width: 2px !default;
 $checkbox-line-height: calc( #{$checkbox-size} + #{$checkbox-border-width} ) !default;
 
-$checkbox-icon-size: 10px !default;
-$checkbox-icon-type: glyph !default;
-$checkbox-icon-glyph: "\e118" !default;
-$checkbox-icon-svg: null !default;
-
-$checkbox-indeterminate-style: dash !default;
-$checkbox-dash-width:  10px !default;
-$checkbox-dash-height: 2px !default;
-$checkbox-square-width:  ( $checkbox-size / 2 ) !default;
-$checkbox-square-height: ( $checkbox-size / 2 ) !default;
-
-$checkbox-label-margin-x: map-get( $spacing, 1 ) !default;
-
 $checkbox-bg: null !default;
 $checkbox-text: transparent !default;
 $checkbox-border: rgba( 0, 0, 0, .54 ) !default;
+
 $checkbox-hovered-bg: null !default;
 $checkbox-hovered-text: null !default;
 $checkbox-hovered-border: rgba( 0, 0, 0, .87 ) !default;
+
 $checkbox-checked-bg: $primary !default;
 $checkbox-checked-text: contrast-wcag( $checkbox-checked-bg ) !default;
 $checkbox-checked-border: $checkbox-checked-bg !default;
+
 $checkbox-indeterminate-bg: $checkbox-checked-bg !default;
 $checkbox-indeterminate-text: $checkbox-checked-text !default;
 $checkbox-indeterminate-border: $checkbox-checked-border !default;
+
 $checkbox-focused-border: $checkbox-border !default;
 $checkbox-focused-shadow: none !default;
 $checkbox-focused-checked-border: $checkbox-checked-border !default;
 $checkbox-focused-checked-shadow: none !default;
+
 $checkbox-disabled-bg: null !default;
 $checkbox-disabled-text: null !default;
 $checkbox-disabled-border: #b0b0b0 !default;
+
 $checkbox-disabled-checked-bg: $checkbox-disabled-border !default;
 $checkbox-disabled-checked-text: #ffffff !default;
 $checkbox-disabled-checked-border: $checkbox-disabled-checked-bg !default;
+
 $checkbox-invalid-bg: null !default;
 $checkbox-invalid-text: $invalid-text !default;
 $checkbox-invalid-border: $invalid-border !default;
 
+
+// Checkbox indicator
+$checkbox-icon-type: image !default;
+
+$checkbox-glyph-font-family: "WebComponentsIcons", monospace !default;
+$checkbox-glyph-size: 10px !default;
+$checkbox-checked-glyph: "\e118" !default;
+$checkbox-indeterminate-glyph: "\e121" !default;
+
+$checkbox-checked-image: escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='none' stroke='#{$checkbox-checked-text}' stroke-width='3' d='M4.1,12.7 9,17.6 20.3,6.3'/></svg>") ) !default;
+$checkbox-indeterminate-image: escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path fill='none' stroke='#{$checkbox-indeterminate-text}' stroke-width='3' d='M4 10h12'/></svg>") ) !default;
+
+$checkbox-marker-checked-width: 10px !default;
+$checkbox-marker-checked-height: 10px !default;
+$checkbox-marker-indeterminate-width: 10px !default;
+$checkbox-marker-indeterminate-height: 2px !default;
+
+
+// Checkbox label
+$checkbox-label-margin-x: map-get( $spacing, 1 ) !default;
+
+
+// Checkbox list
 $checkbox-list-margin: 0px !default;
 $checkbox-list-padding: 0px !default;
 $checkbox-list-item-padding-x: 0px !default;
 $checkbox-list-item-padding-y: $list-item-padding-y !default;
 $checkbox-list-horizontal-item-margin-x: 32px !default;
 
+
+// Checkbox ripple
 $checkbox-ripple-size: $checkbox-size * 3 !default;
 $checkbox-ripple-margin: calc(-1 * (#{$checkbox-size} + #{$checkbox-border-width})) !default;
 $checkbox-ripple-opacity: .38 !default;

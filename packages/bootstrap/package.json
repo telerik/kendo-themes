@@ -27,8 +27,8 @@
   "kendo": {
     "themebuilder": {
       "swatches": {
-        "path": "lib/themebuilder",
-        "default": "bootstrap.json"
+        "path": "lib/swatches",
+        "default": "main.json"
       }
     }
   },
@@ -45,10 +45,10 @@
     "postpublish": "rm -rf modules && git checkout scss"
   },
   "peerDependencies": {
-    "bootstrap": "^4.5.2"
+    "bootstrap": "^5.0.2"
   },
   "devDependencies": {
     "@progress/kendo-theme-default": "^4.39.0",
-    "bootstrap": "^4.5.2"
+    "bootstrap": "^5.0.2"
   }
 }
