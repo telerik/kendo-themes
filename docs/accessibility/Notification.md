@@ -2,7 +2,7 @@
 title: Notification
 category: components
 slug: notification
-position: 29
+position: 30
 ---
 # Notification Keyboard Support
 

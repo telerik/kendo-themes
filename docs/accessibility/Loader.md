@@ -2,7 +2,7 @@
 title: Loader
 category: components
 slug: loader
-position: 24
+position: 25
 ---
 # Loader Keyboard Support
 

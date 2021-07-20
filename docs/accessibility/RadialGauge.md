@@ -2,7 +2,7 @@
 title: Radial Gauge
 category: components
 slug: radial-gauge
-position: 33
+position: 34
 ---
 # RadialGauge Keyboard Support
 

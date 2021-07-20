@@ -2,7 +2,7 @@
 title: Tab Strip
 category: components
 slug: tab-strip
-position: 41
+position: 42
 ---
 # TabStrip Keyboard Support
 

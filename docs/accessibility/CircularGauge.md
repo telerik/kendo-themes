@@ -2,7 +2,7 @@
 title: Circular Gauge
 category: components
 slug: circular-gauge
-position: 9
+position: 10
 ---
 # CircularGauge Keyboard Support
 
