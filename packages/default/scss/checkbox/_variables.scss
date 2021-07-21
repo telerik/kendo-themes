@@ -10,7 +10,7 @@ $checkbox-border: $base-border !default;
 
 $checkbox-hovered-bg: null !default;
 $checkbox-hovered-text: null !default;
-$checkbox-hovered-border: $hovered-border !default;
+$checkbox-hovered-border: null !default;
 
 $checkbox-checked-bg: $primary !default;
 $checkbox-checked-text: contrast-wcag( $checkbox-checked-bg ) !default;
@@ -20,10 +20,10 @@ $checkbox-indeterminate-bg: $checkbox-bg !default;
 $checkbox-indeterminate-text: $checkbox-checked-bg !default;
 $checkbox-indeterminate-border: $checkbox-border !default;
 
-$checkbox-focused-border: $checkbox-hovered-border !default;
+$checkbox-focused-border: null !default;
 $checkbox-focused-shadow: 0 0 0 2px rgba(0, 0, 0, .06) !default;
-$checkbox-focused-checked-border: $checkbox-checked-border !default;
-$checkbox-focused-checked-shadow: 0 0 0 2px rgba($primary, .3) !default;
+$checkbox-focused-checked-border: null !default;
+$checkbox-focused-checked-shadow: 0 0 0 2px rgba( $primary, .3 ) !default;
 
 $checkbox-disabled-bg: null !default;
 $checkbox-disabled-text: null !default;
