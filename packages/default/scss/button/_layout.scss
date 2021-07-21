@@ -120,8 +120,6 @@
         padding: 0;
         border-width: 0;
         box-sizing: border-box;
-        color: inherit;
-        background-color: transparent;
         list-style: none;
         outline: 0;
         white-space: nowrap;
@@ -169,7 +167,7 @@
 
         .k-button {
             display: inline-block;
-            flex: 1 1 auto;
+            flex: 1 0 0%;
             overflow: hidden;
             text-overflow: ellipsis;
 
