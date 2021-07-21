@@ -147,7 +147,10 @@
 
         .k-button:focus,
         .k-button.k-state-focus,
-        .k-button.k-state-focused {
+        .k-button.k-state-focused,
+        .k-button-outline:focus,
+        .k-button-outline.k-state-focus,
+        .k-button-outline.k-state-focused {
             @include box-shadow( $button-group-focus-shadow );
         }
 
