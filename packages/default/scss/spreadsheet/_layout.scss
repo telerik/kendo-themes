@@ -141,9 +141,11 @@
 
         > .k-i-formula-fx {
             padding: 0 $padding-y;
+            box-sizing: content-box;
             border-width: 0 1px 0 0;
             border-style: solid;
             border-color: inherit;
+            flex-shrink: 0;
         }
 
         .k-tooltip,
