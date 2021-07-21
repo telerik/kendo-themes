@@ -87,7 +87,7 @@ $calendar-cell-selected-hover-text: $selected-hover-text !default;
 $calendar-cell-selected-hover-border: $selected-hover-border !default;
 $calendar-cell-selected-hover-gradient: null !default;
 
-$calendar-cell-focused-shadow: $list-item-focused-shadow !default;
+$calendar-cell-focused-shadow: inset 0 0 0 2px rgba( $black, .08 ) !default;
 $calendar-cell-selected-focus-shadow: $calendar-cell-focused-shadow !default;
 
 
