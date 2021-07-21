@@ -8,12 +8,10 @@
         padding: 4px;
 
         .k-button {
-            @extend .k-button-flat;
             border-radius: 50%;
-
-            &::before {
-                display: block;
-            }
+            color: inherit;
+            background: none;
+            box-shadow: none;
         }
 
     }
@@ -30,13 +28,11 @@
         padding: 0;
 
         .k-button {
-            @extend .k-button-flat;
             margin: 4px;
             border-radius: 50%;
-
-            &::before {
-                display: block;
-            }
+            color: inherit;
+            background: none;
+            box-shadow: none;
         }
 
     }
@@ -75,14 +71,6 @@
 @include exports( "spreadsheet/popup/layout/material" ) {
 
     .k-spreadsheet-popup {
-
-        .k-button {
-            @extend .k-button-flat;
-
-            &::before {
-                display: block;
-            }
-        }
         .k-separator {
             margin: 0;
         }
