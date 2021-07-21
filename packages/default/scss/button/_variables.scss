@@ -54,7 +54,7 @@ $button-hovered-shadow: null !default;
 
 /// The background color of active buttons.
 /// @group buttons
-$button-active-bg: try-shade( $button-bg, 1 ) !default;
+$button-active-bg: try-shade( $button-bg, 1.5 ) !default;
 /// The text color of active buttons.
 /// @group buttons
 $button-active-text: null !default;
