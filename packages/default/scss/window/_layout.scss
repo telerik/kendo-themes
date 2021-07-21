@@ -84,6 +84,17 @@
         flex-shrink: 0;
         align-items: center;
         vertical-align: top;
+
+        .k-button-flat {
+            &,
+            &:hover,
+            &.k-state-hover,
+            &:focus,
+            &.k-state-focus,
+            &:active {
+                color: inherit;
+            }
+        }
     }
     .k-window-action {
         flex-shrink: 0;

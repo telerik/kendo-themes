@@ -221,22 +221,28 @@
     // Flat button and bare
     .k-button-flat {
         border-color: transparent !important; // sass-lint:disable-line no-important
-        color: inherit;
         background: none !important; // sass-lint:disable-line no-important
         box-shadow: none !important; // sass-lint:disable-line no-important
         transition: color .2s ease-in-out;
 
-        &:hover,
-        &.k-state-hover,
-        &:active,
-        &.k-state-active,
-        &:focus,
-        &.k-state-focus {
-            color: inherit;
-        }
-
+        // Overlay background
         &::before {
             display: block;
+        }
+
+        // Focus ring
+        &::after {
+            box-shadow: inset 0 0 0 2px currentColor;
+            display: block;
+        }
+
+        &:focus,
+        &.k-state-focus,
+        &.k-state-focused {
+
+            &::after {
+                opacity: .12;
+            }
         }
     }
     .k-button.k-flat,
