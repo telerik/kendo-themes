@@ -43,7 +43,7 @@ $input-shadow: null !default;
 
 $input-hovered-bg: null !default;
 $input-hovered-text: null !default;
-$input-hovered-border: rgba( $input-border, opacity( $input-border ) * 2 ) !default;
+$input-hovered-border: rgba( $input-border, .16 ) !default;
 $input-hovered-shadow: null !default;
 
 $input-focused-bg: null !default;
