@@ -242,36 +242,26 @@
     // Flat button
     .k-button-flat {
 
-        // Explicitly exclude flat button from button group styling
         &,
-        .k-button-group & {
-            color: inherit;
-            background: none;
-        }
-
-        &::after {
-            display: block;
-        }
-
+        &:hover,
+        &.k-state-hover,
+        &:active,
+        &.k-state-active,
         &:focus,
-        &.k-state-focused,
         &.k-state-focus {
-
-            &::after {
-                box-shadow: inset 0 0 0 2px currentColor;
-                opacity: .12;
-            }
+            color: $body-text;
         }
     }
     .k-button-flat.k-primary {
 
-        // Explicitly exclude flat button from button group styling
         &,
         &:hover,
         &.k-state-hover,
-        .k-button-group & {
+        &:active,
+        &.k-state-active,
+        &:focus,
+        &.k-state-focus {
             color: $primary;
-            background: none;
         }
     }
 
