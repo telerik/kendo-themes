@@ -6,8 +6,6 @@ defaults:
 
 env:
   CI: true
-  GH_TOKEN: ${{ secrets.GH_TOKEN }}
-  NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
 on: [workflow_dispatch]
 
@@ -37,20 +35,9 @@ jobs:
           git merge --ff-only --quiet origin/develop
 
       - name: Setup node
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v2
         with:
           node-version: 14.x
-
-      - name: Setup node cache
-        uses: actions/cache@v2
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
-
-      - name: Add token
-        run: printf "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
 
       - name: Install
         run: npm ci
@@ -65,7 +52,11 @@ jobs:
 
       - name: Lerna publish
         run: |
+          printf "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> .npmrc
           npx lerna publish --conventional-commits
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
 
       - name: Push to GitHub
         run: |
@@ -76,3 +67,5 @@ jobs:
         run: |
           commit=$(git rev-parse HEAD)
           ./build/mark-checks.sh $commit
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
