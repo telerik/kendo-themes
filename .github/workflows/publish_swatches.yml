@@ -17,9 +17,9 @@ on:
 
 jobs:
 
-  on-success:
+  publish:
     runs-on: 'ubuntu-latest'
-    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    if: ${{ github.event.inputs.ref || github.event.workflow_run.conclusion == 'success' }}
 
     steps:
       - name: Checkout branch
@@ -49,16 +49,23 @@ jobs:
           path: themes-cdn
           lfs: true
 
+      - name: Read version
+        run: |
+          echo "VERSION=$(jq -r '.version' lerna.json)" >> $GITHUB_ENV
+
+      - name: Install rename
+        run: |
+          curl https://raw.githubusercontent.com/ap/rename/0da9faa241093c90a40b15a9ff4b36e9858d4516/rename -o ./rename
+
       - name: Package swatches
         run: |
-          export VERSION=$(jq -r ".version" lerna.json)
-          rename -p -e "s/packages/themes-cdn\/$VERSION/" -e 's/dist\///' packages/*/dist/*.css
+          perl ./rename -p -e 's/dist\///' -e "s/packages/themes-cdn\/dist\/${{ env.VERSION }}/" packages/*/dist/*.css
 
       - name: Publish swatches
         run: |
           git config user.name "kendo-bot"
           git config user.email "kendouiteam@progress.com"
-          git add "$VERSION"
-          git commit -m "publish $VERSION"
+          git add "./dist/${{ env.VERSION }}"
+          git commit -m "publish ${{ env.VERSION }}"
           git push
         working-directory: themes-cdn
