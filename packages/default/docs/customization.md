@@ -303,8 +303,8 @@ The following table lists the available variables for customizing the Default th
 <tr>
     <td>$button-active-bg</td>
     <td></td>
-    <td>try-shade( $button-bg, 1 )</td>
-    <td>try-shade( $button-bg, 1 )</td>
+    <td>try-shade( $button-bg, 1.5 )</td>
+    <td>try-shade( $button-bg, 1.5 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of active buttons.</div></div>
