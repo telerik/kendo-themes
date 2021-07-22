@@ -1,7 +1,7 @@
-# Publishes the built themes (CSS + swatches) to the Kendo CDN at:
-# https://kendo.cdn.telerik.com/themes/<version>/
-# https://cdn.kendostatic.com/themes/<version>/
-name: Publish to CDN
+# Publishes pre-built CSS swatches to the Kendo CDN at:
+# https://kendo.cdn.telerik.com/themes/<version>/<theme name>/<swatch name>.css
+# https://cdn.kendostatic.com/themes/<version>/<theme name>/<swatch name>.css
+name: Publish Swatches to CDN
 
 on:
   workflow_dispatch:
