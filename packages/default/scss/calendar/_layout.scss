@@ -42,6 +42,8 @@
         table-layout: fixed;
         text-align: center;
         outline: 0;
+        display: inline-table;
+        vertical-align: top;
         position: relative;
         z-index: 1;
     }
