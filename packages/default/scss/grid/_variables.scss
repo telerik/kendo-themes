@@ -98,7 +98,7 @@ $grid-selected-border: null !default;
 $grid-selected-alt-bg: shade($grid-selected-bg, .4) !default;
 $grid-selected-hovered-bg: shade($grid-selected-bg, .7) !default;
 
-$grid-grouping-row-bg: darken($grid-bg, 7%) !default;
+$grid-grouping-row-bg: $base-bg !default;
 $grid-grouping-row-text: $grid-text !default;
 
 $grid-sorted-bg: rgba( contrast-wcag( $grid-bg ), .02 ) !default;
