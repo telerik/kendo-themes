@@ -1,0 +1,64 @@
+# Publishes the built themes (CSS + swatches) to the Kendo CDN at:
+# https://kendo.cdn.telerik.com/themes/<version>/
+# https://cdn.kendostatic.com/themes/<version>/
+name: Publish to CDN
+
+on:
+  workflow_dispatch:
+    inputs:
+      ref:
+        description: 'Tag or branch to publish'
+        required: true
+        default: 'master'
+
+  workflow_run:
+    workflows: [ "Release stable channel" ]
+    types: [ completed ]
+
+jobs:
+
+  on-success:
+    runs-on: 'ubuntu-latest'
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v2
+        with:
+          ref: ${{ github.event.inputs.ref }}
+
+      - name: Setup node
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14.x
+
+      - name: Install
+        run: npm ci
+
+      - name: Bootstrap
+        run: npm run bootstrap
+
+      - name: Build swatches
+        run: gulp sass:swatches
+
+      - name: Checkout artifact repository
+        uses: actions/checkout@v2
+        with:
+          repository: telerik/themes-cdn
+          token: ${{ secrets.GH_TOKEN }}
+          path: themes-cdn
+          lfs: true
+
+      - name: Package swatches
+        run: |
+          export VERSION=$(jq -r ".version" lerna.json)
+          rename -p -e "s/packages/themes-cdn\/$VERSION/" -e 's/dist\///' packages/*/dist/*.css
+
+      - name: Publish swatches
+        run: |
+          git config user.name "kendo-bot"
+          git config user.email "kendouiteam@progress.com"
+          git add "$VERSION"
+          git commit -m "publish $VERSION"
+          git push
+        working-directory: themes-cdn
