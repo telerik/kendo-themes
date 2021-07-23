@@ -1,4 +1,21 @@
-@include exports("pivotgrid/theme") {
+@import "~@progress/kendo-theme-default/scss/pivotgrid/_theme.scss";
+
+@include exports("pivotgrid/theme/material") {
+
+    // Hover and Focus state have the same bg color
+    .k-pivotgrid-cell.k-state-focus,
+    .k-pivotgrid-cell:focus,
+    .k-master-row > .k-pivotgrid-cell:focus,
+    .k-grouping-row > .k-pivotgrid-cell:focus,
+    .k-detail-row > .k-pivotgrid-cell:focus,
+    .k-group-footer > .k-pivotgrid-cell:focus {
+        @include fill ( $bg: $pivotgrid-hover-bg );
+    }
+
+}
+
+
+@include exports("pivotgrid/theme/material/legacy") {
 
     .k-pivot {
         border-color: $pivotgrid-border;

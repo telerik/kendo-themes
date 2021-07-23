@@ -1,13 +1,105 @@
 // Pivot grid
+$pivotgrid-spacer: map-get( $spacing, 4 ) !default;
+$pivotgrid-padding-x: null !default;
+$pivotgrid-padding-y: null !default;
 $pivotgrid-font-family: $font-family !default;
 $pivotgrid-font-size: $font-size !default;
 $pivotgrid-line-height: $line-height !default;
-
 $pivotgrid-border-width: 1px !default;
 
+$pivotgrid-row-header-width: 300px !default;
+$pivotgrid-column-header-height: 250px !default;
+
+$pivotgrid-cell-padding-x: $table-cell-padding-x !default;
+$pivotgrid-cell-padding-y: $table-cell-padding-y !default;
+$pivotgrid-cell-border-width: 1px !default;
+
+$pivotgrid-bg: $component-bg !default;
+$pivotgrid-text: $component-text !default;
+$pivotgrid-border: $component-border !default;
+
+$pivotgrid-alt-border: try-shade($pivotgrid-border, 2) !default;
+
+$pivotgrid-headers-bg: $header-bg !default;
+$pivotgrid-headers-text: $header-text !default;
+$pivotgrid-headers-border: $header-border !default;
+
+$pivotgrid-total-bg: try-shade( $pivotgrid-bg, 1 ) !default;
+$pivotgrid-total-text: $header-text !default;
+$pivotgrid-total-border: $header-border !default;
+
+$pivotgrid-hover-bg: darken($pivotgrid-bg, 7%) !default;
+$pivotgrid-hover-text: null !default;
+$pivotgrid-hover-border: null !default;
+
+$pivotgrid-selected-bg: rgba($selected-bg, .25) !default;
+$pivotgrid-selected-text: null !default;
+$pivotgrid-selected-border: null !default;
+
+$pivotgrid-focus-shadow: $list-item-focused-shadow !default;
+
+// Pivotgrid Configurator
+$pivotgrid-configurator-padding-x: null !default;
+$pivotgrid-configurator-padding-y: null !default;
+$pivotgrid-configurator-border-width: 1px !default;
+
+$pivotgrid-configurator-header-padding-x: $pivotgrid-spacer !default;
+$pivotgrid-configurator-header-padding-y: ( $pivotgrid-spacer * .75 ) !default;
+$pivotgrid-configurator-header-font-size: 18px !default;
+$pivotgrid-configurator-header-font-weight: 500 !default;
+
+$pivotgrid-configurator-content-padding-x: $pivotgrid-spacer !default;
+$pivotgrid-configurator-content-padding-y: 0px !default;
+
+$pivotgrid-configurator-fields-margin-x: 0px !default;
+$pivotgrid-configurator-fields-margin-y: ( $pivotgrid-spacer / 2 ) !default;
+
+$pivotgrid-configurator-actions-padding-x: ( $pivotgrid-spacer / 2 ) !default;
+$pivotgrid-configurator-actions-padding-y: ( $pivotgrid-spacer * .75 ) !default;
+
+$pivotgrid-configurator-vertical-width: 320px !default;
+$pivotgrid-configurator-horizontal-height: 420px !default;
+
+$pivotgrid-configurator-bg: $component-bg !default;
+$pivotgrid-configurator-text: $component-text !default;
+$pivotgrid-configurator-border: $component-border !default;
+
+$pivotgrid-configurator-header-bg: null !default;
+$pivotgrid-configurator-header-text: $header-text !default;
+$pivotgrid-configurator-header-border: null !default;
+
+$pivotgrid-configurator-end-shadow: -3px 0px 6px rgba(0, 0, 0, .16) !default;
+$pivotgrid-configurator-start-shadow: 3px 0px 6px rgba(0, 0, 0, .16) !default;
+$pivotgrid-configurator-top-shadow: 0px -3px 6px rgba(0, 0, 0, .16) !default;
+$pivotgrid-configurator-bottom-shadow: 0px 3px 6px rgba(0, 0, 0, .16) !default;
+
+$pivotgrid-configurator-button-padding-x: map-get($spacing, 1) !default;
+$pivotgrid-configurator-button-padding-y: map-get($spacing, 1) !default;
+$pivotgrid-configurator-button-border-width: 1px !default;
+$pivotgrid-configurator-button-size: calc( #{$pivotgrid-line-height * 1em} + #{$pivotgrid-configurator-button-padding-y * 2} + #{$pivotgrid-configurator-button-border-width * 2} ) !default;
+
+// Calculated fields
+$pivotgrid-calculated-field-padding-x: $pivotgrid-spacer !default;
+$pivotgrid-calculated-field-padding-y: $pivotgrid-spacer !default;
+$pivotgrid-calculated-field-border-width: 1px !default;
+$pivotgrid-calculated-field-border-radius: $border-radius-sm !default;
+$pivotgrid-calculated-field-gap: $pivotgrid-spacer !default;
+
+$pivotgrid-calculated-field-bg: $component-bg !default;
+$pivotgrid-calculated-field-text: $component-text !default;
+$pivotgrid-calculated-field-border: $component-border !default;
+
+$pivotgrid-calculated-field-header-bg: null !default;
+$pivotgrid-calculated-field-header-text: $header-text !default;
+$pivotgrid-calculated-field-header-border: null !default;
+
+
+$pivotgrid-treeview-padding-x: ( $pivotgrid-spacer / 2) !default;
+$pivotgrid-treeview-padding-y: 0px !default;
+
+// Legacy variables
 $pivotgrid-alt-bg: $grid-header-bg !default;
 $pivotgrid-alt-text: $grid-header-text !default;
-$pivotgrid-border: $grid-border !default;
 $pivotgrid-chrome-border: $grid-border !default;
 
 $pivotgrid-container-bg: $component-bg !default;
@@ -22,5 +114,3 @@ $pivotgrid-button-active-text: null !default;
 
 $pivotgrid-remove-bg: null !default;
 $pivotgrid-remove-text: null !default;
-
-$pivotgrid-configurator-text: $component-text !default;
