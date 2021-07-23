@@ -184,7 +184,8 @@
             flex-shrink: 0;
             position: relative;
 
-            &.k-hbox {
+            &.k-hbox,
+            &.k-hstack {
                 margin-left: $colorpicker-margin;
 
                 .k-slider + .k-slider {
@@ -192,7 +193,8 @@
                 }
             }
 
-            &.k-vbox {
+            &.k-vbox,
+            &.k-vstack {
                 margin-top: $colorpicker-margin;
 
                 .k-slider + .k-slider {
@@ -203,7 +205,8 @@
         }
         .k-sliders-wrap-clearable {
 
-            &.k-hbox {
+            &.k-hbox,
+            &.k-hstack {
 
                 .k-clear-color {
                     position: absolute;
@@ -396,7 +399,8 @@
         .k-rtl &,
         &[dir="rtl"],
         [dir="rtl"] & {
-            .k-sliders-wrap.k-hbox {
+            .k-sliders-wrap.k-hbox,
+            .k-sliders-wrap.k-hstack {
                 margin-left: 0;
                 margin-right: $colorpicker-margin;
 
