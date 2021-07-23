@@ -98,6 +98,10 @@
         .k-i-collapse {
             margin-left: -$treeview-indent;
             cursor: pointer;
+
+            + .k-checkbox-wrapper {
+                margin-left: $icon-spacing;
+            }
         }
 
         // Checkboxes
@@ -146,6 +150,10 @@
         .k-i-collapse {
             margin-left: 0;
             margin-right: -$treeview-indent;
+
+            + .k-checkbox-wrapper {
+                margin-right: $icon-spacing;
+            }
         }
 
         // Checkboxes
