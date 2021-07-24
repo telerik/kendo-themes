@@ -20,7 +20,8 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/telerik/kendo-themes.git"
+    "url": "https://github.com/telerik/kendo-themes.git",
+    "directory": "packages/material"
   },
   "publishConfig": {
     "access": "public"
@@ -29,7 +30,7 @@
     "themebuilder": {
       "swatches": {
         "path": "lib/swatches",
-        "default": "main.json"
+        "default": "material-main.json"
       }
     }
   },

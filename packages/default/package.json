@@ -18,7 +18,8 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/telerik/kendo-themes.git"
+    "url": "https://github.com/telerik/kendo-themes.git",
+    "directory": "packages/default"
   },
   "publishConfig": {
     "access": "public"
@@ -27,7 +28,7 @@
     "themebuilder": {
       "swatches": {
         "path": "lib/swatches",
-        "default": "main.json"
+        "default": "default-main.json"
       }
     }
   },
