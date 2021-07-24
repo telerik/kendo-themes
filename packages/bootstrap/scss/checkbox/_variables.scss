@@ -6,7 +6,7 @@ $checkbox-line-height: calc( #{$checkbox-size} + #{$checkbox-border-width} ) !de
 
 $checkbox-bg: $component-bg !default;
 $checkbox-text: null !default;
-$checkbox-border: $component-border !default;
+$checkbox-border: contrast-wcag( $input-bg, $gray-400, $gray-600 ) !default;
 
 $checkbox-hovered-bg: null !default;
 $checkbox-hovered-text: null !default;

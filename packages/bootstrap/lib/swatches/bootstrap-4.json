@@ -1,13 +1,13 @@
 {
     "$schema": "https://unpkg.com/@progress/kendo-theme-tasks@1.11.0/lib/schemas/kendo-swatch.json",
-    "name": "Bootstrap Main",
+    "name": "Bootstrap 4",
     "product": "kendo",
     "base": "@progress/kendo-theme-bootstrap",
     "previewColors": [
         "#ffffff",
         "#f8f9fa",
-        "#0d6efd",
-        "#0a58ca",
+        "#007bff",
+        "#0056b3",
         "#212529"
     ],
     "components": [],
@@ -32,7 +32,7 @@
                 "primary": {
                     "name": "Primary",
                     "type": "color",
-                    "value": "#0d6efd"
+                    "value": "#007bff"
                 },
                 "secondary": {
                     "name": "Secondary",
@@ -42,12 +42,12 @@
                 "info": {
                     "name": "Info",
                     "type": "color",
-                    "value": "#0dcaf0"
+                    "value": "#17a2b8"
                 },
                 "success": {
                     "name": "Success",
                     "type": "color",
-                    "value": "#198754"
+                    "value": "#28a745"
                 },
                 "warning": {
                     "name": "Warning",
@@ -132,7 +132,7 @@
                 "selected-bg": {
                     "name": "Selected background",
                     "type": "color",
-                    "value": "#0d6efd"
+                    "value": "#007bff"
                 }
             }
         },
@@ -157,12 +157,12 @@
                 "link-text": {
                     "name": "Link text color",
                     "type": "color",
-                    "value": "#0d6efd"
+                    "value": "#007bff"
                 },
                 "link-hover-text": {
                     "name": "Link hover text color",
                     "type": "color",
-                    "value": "#0a58ca"
+                    "value": "#0056b3"
                 }
             }
         },
