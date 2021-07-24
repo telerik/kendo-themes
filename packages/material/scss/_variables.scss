@@ -143,7 +143,7 @@ $zindex-window: 2;
 
 
 // Color settings
-$is-dark-theme: map-get($theme, is-dark);
+$dark-theme: map-get($theme, is-dark);
 
 $white: #ffffff !default;
 $black: #000000 !default;
@@ -230,7 +230,7 @@ $light: get-base-hue( gray, 100 ) !default;
 
 /// Inverse color of the theme. Depending on the theme luminance dark or lught, it will be light or dark
 /// @group color-system
-$inverse: if( $is-dark-theme, $light, $dark ) !default;
+$inverse: if( $dark-theme, $light, $dark ) !default;
 
 
 $theme-colors: () !default;

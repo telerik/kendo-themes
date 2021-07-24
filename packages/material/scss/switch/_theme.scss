@@ -10,7 +10,7 @@
             background-color: inherit;
         }
         &.k-switch-off .k-switch-handle::before {
-            background-color: if( $is-dark-theme == true, $white, $black );
+            background-color: if( $dark-theme == true, $white, $black );
         }
     }
 

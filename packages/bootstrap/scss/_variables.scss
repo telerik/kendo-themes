@@ -101,7 +101,7 @@ $zindex-window: 2 !default;
 
 
 // Color settings
-$is-dark-theme: false !default;
+$dark-theme: false !default;
 
 $white: #ffffff !default;
 $black: #000000 !default;
@@ -200,7 +200,7 @@ $light: $light !default;
 
 /// Inverse color of the theme. Depending on the theme luminance dark or lught, it will be light or dark
 /// @group color-system
-$inverse: if( $is-dark-theme, $light, $dark ) !default;
+$inverse: if( $dark-theme, $light, $dark ) !default;
 
 
 $theme-colors: () !default;
@@ -240,8 +240,8 @@ $gradient-rainbow: #ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff, #ff0000
 $body-bg: $body-bg !default;
 $body-text: $body-color !default;
 
-$subtle-text: if( $is-dark-theme, $gray-400, $text-muted ) !default;
-$disabled-text: if( $is-dark-theme, $gray-600, $gray-500) !default;
+$subtle-text: if( $dark-theme, $gray-400, $text-muted ) !default;
+$disabled-text: if( $dark-theme, $gray-600, $gray-500) !default;
 
 $app-bg: try-shade( $body-bg, .25 ) !default;
 $app-text: $body-text !default;
