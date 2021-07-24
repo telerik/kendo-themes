@@ -1,14 +1,14 @@
 {
     "$schema": "https://unpkg.com/@progress/kendo-theme-tasks@1.11.0/lib/schemas/kendo-swatch.json",
-    "name": "Bootstrap Main",
+    "name": "Bootstrap 4 Dark",
     "product": "kendo",
     "base": "@progress/kendo-theme-bootstrap",
     "previewColors": [
-        "#ffffff",
-        "#f8f9fa",
-        "#0d6efd",
-        "#0a58ca",
-        "#212529"
+        "#000000",
+        "#212529",
+        "#007bff",
+        "#0056b3",
+        "#ffffff"
     ],
     "components": [],
     "groups": [
@@ -27,12 +27,12 @@
                 "dark-theme": {
                     "name": "Dark theme",
                     "type": "boolean",
-                    "value": false
+                    "value": true
                 },
                 "primary": {
                     "name": "Primary",
                     "type": "color",
-                    "value": "#0d6efd"
+                    "value": "#007bff"
                 },
                 "secondary": {
                     "name": "Secondary",
@@ -42,12 +42,12 @@
                 "info": {
                     "name": "Info",
                     "type": "color",
-                    "value": "#0dcaf0"
+                    "value": "#17a2b8"
                 },
                 "success": {
                     "name": "Success",
                     "type": "color",
-                    "value": "#198754"
+                    "value": "#28a745"
                 },
                 "warning": {
                     "name": "Warning",
@@ -67,27 +67,27 @@
                 "body-text": {
                     "name": "Body text color",
                     "type": "color",
-                    "value": "#212529"
+                    "value": "#ffffff"
                 },
                 "body-bg": {
                     "name": "Body background",
                     "type": "color",
-                    "value": "#ffffff"
+                    "value": "#000000"
                 },
                 "headings-text": {
                     "name": "Headings text color",
                     "type": "color",
-                    "value": "#212529"
+                    "value": "#ffffff"
                 },
                 "subtle-text": {
                     "name": "Subtle text color",
                     "type": "color",
-                    "value": "#6c757d"
+                    "value": "#cccccc"
                 },
                 "disabled-text": {
                     "name": "Disabled text color",
                     "type": "color",
-                    "value": "#8f8f8f"
+                    "value": "#aaaaaa"
                 }
             }
         },
@@ -97,32 +97,32 @@
                 "component-text": {
                     "name": "Component text color",
                     "type": "color",
-                    "value": "#212529"
+                    "value": "#ffffff"
                 },
                 "component-bg": {
                     "name": "Component background",
                     "type": "color",
-                    "value": "#ffffff"
+                    "value": "#000000"
                 },
                 "base-text": {
                     "name": "Header text color",
                     "type": "color",
-                    "value": "#212529"
+                    "value": "#ffffff"
                 },
                 "base-bg": {
                     "name": "Header background",
                     "type": "color",
-                    "value": "#f8f9fa"
+                    "value": "#212529"
                 },
                 "hovered-text": {
                     "name": "Hover text color",
                     "type": "color",
-                    "value": "#16181b"
+                    "value": "#ffffff"
                 },
                 "hovered-bg": {
                     "name": "Hover background",
                     "type": "color",
-                    "value": "#e9ecef"
+                    "value": "#343a40"
                 },
                 "selected-text": {
                     "name": "Selected text color",
@@ -132,7 +132,7 @@
                 "selected-bg": {
                     "name": "Selected background",
                     "type": "color",
-                    "value": "#0d6efd"
+                    "value": "#007bff"
                 }
             }
         },
@@ -142,12 +142,12 @@
                 "button-text": {
                     "name": "Button text color",
                     "type": "color",
-                    "value": "#212529"
+                    "value": "#ffffff"
                 },
                 "button-bg": {
                     "name": "Button background",
                     "type": "color",
-                    "value": "#e4e7eb"
+                    "value": "#343a40"
                 }
             }
         },
@@ -157,12 +157,12 @@
                 "link-text": {
                     "name": "Link text color",
                     "type": "color",
-                    "value": "#0d6efd"
+                    "value": "#007bff"
                 },
                 "link-hover-text": {
                     "name": "Link hover text color",
                     "type": "color",
-                    "value": "#0a58ca"
+                    "value": "#0056b3"
                 }
             }
         },
