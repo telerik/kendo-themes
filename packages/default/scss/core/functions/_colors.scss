@@ -354,48 +354,42 @@ $yiq-light: if(
     @return color-level( $color, 1 * $level );
 }
 
-@function try-shade($color, $level: 1) {
-    $dark-theme: if(variable-exists(is-dark-theme), $is-dark-theme, false);
+@function try-shade( $color, $level: 1 ) {
+    $dark-theme: if(variable-exists(dark-theme), $dark-theme, false);
 
     @if $dark-theme {
-        @return tint($color, $level);
+        @return tint( $color, $level );
     }
 
-    @return shade($color, $level);
+    @return shade( $color, $level );
 }
 @function try-tint($color, $level: 1) {
-    $dark-theme: if(variable-exists(is-dark-theme), $is-dark-theme, false);
+    $dark-theme: if(variable-exists(dark-theme), $dark-theme, false);
 
     @if $dark-theme {
-        @return shade($color, $level);
+        @return shade( $color, $level );
     }
 
-    @return tint($color, $level);
+    @return tint( $color, $level );
 }
 
 
-@function try-darken( $color, $amount, $threshold: black ) {
-    $amount: if(unitless($amount), $amount, ($amount / 1%));
+@function try-darken( $color, $amount ) {
+    $dark-theme: if(variable-exists(dark-theme), $dark-theme, false);
 
-    $result: darken( $color, $amount );
-    $alt-result: darken( $color, ($amount - 1) );
-
-    @if ($result == $threshold) and ($alt-result == $threshold) {
+    @if $dark-theme {
         @return lighten( $color, $amount );
     }
-    @return $result;
+    @return darken( $color, $amount );
 }
 
-@function try-lighten( $color, $amount, $threshold: white ) {
-    $amount: if(unitless($amount), $amount, ($amount / 1%));
+@function try-lighten( $color, $amount ) {
+    $dark-theme: if(variable-exists(dark-theme), $dark-theme, false);
 
-    $result: lighten( $color, $amount );
-    $alt-result: lighten( $color, ($amount - 1) );
-
-    @if ($result == $threshold) and ($alt-result == $threshold) {
+    @if $dark-theme {
         @return darken( $color, $amount );
     }
-    @return $result;
+    @return lighten( $color, $amount );
 }
 
 
