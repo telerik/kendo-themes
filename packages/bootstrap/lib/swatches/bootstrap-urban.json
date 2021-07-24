@@ -1,0 +1,200 @@
+{
+    "$schema": "https://unpkg.com/@progress/kendo-theme-tasks@1.11.0/lib/schemas/kendo-swatch.json",
+    "name": "Bootstrap Urban",
+    "product": "kendo",
+    "base": "@progress/kendo-theme-bootstrap",
+    "previewColors": [
+        "#ffffff",
+        "#e3eef4",
+        "#447a99",
+        "#1b4b66",
+        "#ff804d"
+    ],
+    "components": [],
+    "groups": [
+        {
+            "variables": {
+                "border-radius": {
+                    "name": "Border radius",
+                    "type": "number",
+                    "value": "0.25rem"
+                }
+            }
+        },
+        {
+            "name": "Theme colors",
+            "variables": {
+                "primary": {
+                    "name": "Primary",
+                    "type": "color",
+                    "value": "#ff5c1a"
+                },
+                "secondary": {
+                    "name": "Secondary",
+                    "type": "color",
+                    "value": "#73a9c9"
+                },
+                "info": {
+                    "name": "Info",
+                    "type": "color",
+                    "value": "#5bc0de"
+                },
+                "success": {
+                    "name": "Success",
+                    "type": "color",
+                    "value": "#5cb85c"
+                },
+                "warning": {
+                    "name": "Warning",
+                    "type": "color",
+                    "value": "#ffbb5b"
+                },
+                "error": {
+                    "name": "Error",
+                    "type": "color",
+                    "value": "#e3470e"
+                }
+            }
+        },
+        {
+            "name": "Body",
+            "variables": {
+                "body-text": {
+                    "name": "Body text color",
+                    "type": "color",
+                    "value": "#000000"
+                },
+                "body-bg": {
+                    "name": "Body background",
+                    "type": "color",
+                    "value": "#ffffff"
+                },
+                "headings-text": {
+                    "name": "Headings text color",
+                    "type": "color",
+                    "value": "#141414"
+                },
+                "subtle-text": {
+                    "name": "Subtle text color",
+                    "type": "color",
+                    "value": "#6c757d"
+                },
+                "disabled-text": {
+                    "name": "Disabled text color",
+                    "type": "color",
+                    "value": "#8f8f8f"
+                }
+            }
+        },
+        {
+            "name": "Components",
+            "variables": {
+                "component-color": {
+                    "name": "Component text",
+                    "type": "color",
+                    "value": "#1c3a4c"
+                },
+                "component-bg": {
+                    "name": "Component background",
+                    "type": "color",
+                    "value": "#ffffff"
+                },
+                "base-text": {
+                    "name": "Header text color",
+                    "type": "color",
+                    "value": "#1c3a4c"
+                },
+                "base-bg": {
+                    "name": "Header background",
+                    "type": "color",
+                    "value": "#e3eef4"
+                },
+                "hovered-text": {
+                    "name": "Hover text color",
+                    "type": "color",
+                    "value": "#16181b"
+                },
+                "hovered-bg": {
+                    "name": "Hover background",
+                    "type": "color",
+                    "value": "#cfdee6"
+                },
+                "selected-text": {
+                    "name": "Selected text color",
+                    "type": "color",
+                    "value": "#ffffff"
+                },
+                "selected-bg": {
+                    "name": "Selected background",
+                    "type": "color",
+                    "value": "#ff5c1a"
+                }
+            }
+        },
+        {
+            "name": "Button",
+            "variables": {
+                "button-text": {
+                    "name": "Button text color",
+                    "type": "color",
+                    "value": "#ffffff"
+                },
+                "button-bg": {
+                    "name": "Button background",
+                    "type": "color",
+                    "value": "#5798be"
+                }
+            }
+        },
+        {
+            "name": "Link",
+            "variables": {
+                "link-text": {
+                    "name": "Link text color",
+                    "type": "color",
+                    "value": "#ff5c1a"
+                },
+                "link-hover-text": {
+                    "name": "Link hover text color",
+                    "type": "color",
+                    "value": "#e65317"
+                }
+            }
+        },
+        {
+            "name": "Dataviz",
+            "variables": {
+                "series-a": {
+                    "name": "Series A",
+                    "type": "color",
+                    "value": "#ff7943"
+                },
+                "series-b": {
+                    "name": "Series B",
+                    "type": "color",
+                    "value": "#e84d0e"
+                },
+                "series-c": {
+                    "name": "Series C",
+                    "type": "color",
+                    "value": "#40a9e3"
+                },
+                "series-d": {
+                    "name": "Series D",
+                    "type": "color",
+                    "value": "#016a98"
+                },
+                "series-e": {
+                    "name": "Series E",
+                    "type": "color",
+                    "value": "#7a8c95"
+                },
+                "series-f": {
+                    "name": "Series F",
+                    "type": "color",
+                    "value": "#355261"
+                }
+            }
+        }
+    ]
+}

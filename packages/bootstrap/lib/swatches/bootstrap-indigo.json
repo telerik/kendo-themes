@@ -1,0 +1,136 @@
+{
+    "$schema": "https://unpkg.com/@progress/kendo-theme-tasks@1.11.0/lib/schemas/kendo-swatch.json",
+    "name": "Bootstrap Indigo",
+    "product": "kendo",
+    "base": "@progress/kendo-theme-bootstrap",
+    "hidden": true,
+    "previewColors": [
+        "#ffffff",
+        "#25c55b",
+        "#465372",
+        "#5c7091",
+        "#758ab0"
+    ],
+    "components": [],
+    "groups": [
+        {
+            "variables": {
+                "border-radius": {
+                    "name": "Border radius",
+                    "type": "number",
+                    "value": "0.25rem"
+                }
+            }
+        },
+        {
+            "name": "Theme colors",
+            "variables": {
+                "primary": {
+                    "name": "Primary",
+                    "type": "color",
+                    "value": "#25c55b"
+                },
+                "secondary": {
+                    "name": "Secondary",
+                    "type": "color",
+                    "value": "#465372"
+                },
+                "info": {
+                    "name": "Info",
+                    "type": "color",
+                    "value": "#5bc0de"
+                },
+                "success": {
+                    "name": "Success",
+                    "type": "color",
+                    "value": "#5cb85c"
+                },
+                "warning": {
+                    "name": "Warning",
+                    "type": "color",
+                    "value": "#f0ad4e"
+                },
+                "error": {
+                    "name": "Error",
+                    "type": "color",
+                    "value": "#d9534f"
+                }
+            }
+        },
+        {
+            "name": "Page",
+            "variables": {
+                "body-bg": {
+                    "name": "Bg color",
+                    "type": "color",
+                    "value": "#5c7091"
+                },
+                "body-color": {
+                    "name": "Text color",
+                    "type": "color",
+                    "value": "#ffffff"
+                }
+            }
+        },
+        {
+            "name": "Component",
+            "variables": {
+                "component-bg": {
+                    "name": "Component bg",
+                    "type": "color",
+                    "value": "#536182"
+                },
+                "component-color": {
+                    "name": "Component text",
+                    "type": "color",
+                    "value": "#ffffff"
+                },
+                "card-cap-bg": {
+                    "name": "Header bg",
+                    "type": "color",
+                    "value": "#465372"
+                },
+                "card-cap-color": {
+                    "name": "Header text",
+                    "type": "color",
+                    "value": "#ffffff"
+                }
+            }
+        },
+        {
+            "name": "Chart",
+            "variables": {
+                "series-a": {
+                    "name": "Series A",
+                    "type": "color",
+                    "value": "#25c55b"
+                },
+                "series-b": {
+                    "name": "Series B",
+                    "type": "color",
+                    "value": "#5bc0de"
+                },
+                "series-c": {
+                    "name": "Series C",
+                    "type": "color",
+                    "value": "#0275d8"
+                },
+                "series-d": {
+                    "name": "Series D",
+                    "type": "color",
+                    "value": "#f0ad4e"
+                },
+                "series-e": {
+                    "name": "Series E",
+                    "type": "color",
+                    "value": "#e67d4a"
+                },
+                "series-f": {
+                    "name": "Series F",
+                    "type": "color",
+                    "value": "#d9534f"
+                }
+            }
+        }
+    ]
+}
