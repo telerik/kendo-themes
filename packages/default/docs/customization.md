@@ -665,8 +665,8 @@ The following table lists the available variables for customizing the Default th
 <tr>
     <td>$inverse</td>
     <td></td>
-    <td>if( $is-dark-theme, $light, $dark )</td>
-    <td>if( $is-dark-theme, $light, $dark )</td>
+    <td>if( $dark-theme, $light, $dark )</td>
+    <td>if( $dark-theme, $light, $dark )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Inverse color of the theme. Depending on the theme luminance dark or light, it will be light or dark</div></div>
