@@ -95,7 +95,7 @@ $zindex-window: 2 !default;
 
 
 // Color settings
-$is-dark-theme: false !default;
+$dark-theme: false !default;
 
 $white: #ffffff !default;
 $black: #000000 !default;
@@ -182,7 +182,7 @@ $light: #ebebeb !default;
 
 /// Inverse color of the theme. Depending on the theme luminance dark or light, it will be light or dark
 /// @group color-system
-$inverse: if( $is-dark-theme, $light, $dark ) !default;
+$inverse: if( $dark-theme, $light, $dark ) !default;
 
 
 $theme-colors: () !default;

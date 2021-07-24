@@ -7,7 +7,7 @@
 
         // Disabled state
         .k-checkbox:disabled + & {
-            color: if($is-dark-theme, $light-secondary-text, $dark-secondary-text);
+            color: if($dark-theme, $light-secondary-text, $dark-secondary-text);
             opacity: 1;
             filter: none;
         }
