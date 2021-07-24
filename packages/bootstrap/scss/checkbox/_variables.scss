@@ -4,9 +4,9 @@ $checkbox-radius: map-get( $spacing, 1 ) !default;
 $checkbox-border-width: 1px !default;
 $checkbox-line-height: calc( #{$checkbox-size} + #{$checkbox-border-width} ) !default;
 
-$checkbox-bg: $white !default;
+$checkbox-bg: $component-bg !default;
 $checkbox-text: null !default;
-$checkbox-border: $gray-400 !default;
+$checkbox-border: $component-border !default;
 
 $checkbox-hovered-bg: null !default;
 $checkbox-hovered-text: null !default;

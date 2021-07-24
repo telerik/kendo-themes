@@ -19,13 +19,17 @@ $component-bg: $body-bg !default;
 $component-text: contrast-wcag( $component-bg, $gray-900, $gray-100 ) !default;
 $component-border: contrast-wcag( $component-bg, $gray-300, $gray-700 ) !default;
 
-$breadcrumb-padding-x: 0px !default;
-$breadcrumb-padding-y: 0px !default;
-$breadcrumb-bg: $component-bg !default;
-
 $input-bg: $component-bg !default;
 $input-color: contrast-wcag( $input-bg, $gray-700, $gray-300 ) !default;
 $input-border-color:  contrast-wcag( $input-bg, $gray-400, $gray-600 ) !default;
+
+$card-bg: $component-bg !default;
+$card-color: $component-text !default;
+$card-border-color: $component-border !default;
+
+$breadcrumb-padding-x: 0px !default;
+$breadcrumb-padding-y: 0px !default;
+$breadcrumb-bg: $component-bg !default;
 
 $table-bg: $component-bg !default;
 $table-color: $component-text !default;
