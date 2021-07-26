@@ -3,17 +3,22 @@
   "packages": [
     "packages/*"
   ],
-  "version": "4.39.0",
+  "version": "4.40.0",
   "command": {
     "bootstrap": {
       "concurrency": 1,
-      "npmClientArgs": ["--no-package-lock"]
+      "npmClientArgs": [
+        "--no-package-lock"
+      ]
     },
     "clean": {
       "yes": true
     },
     "version": {
-      "allowBranch": ["master", "develop"]
+      "allowBranch": [
+        "master",
+        "develop"
+      ]
     },
     "publish": {
       "loglevel": "verbose",

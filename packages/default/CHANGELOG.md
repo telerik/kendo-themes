@@ -3,6 +3,87 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.40.0"></a>
+# 4.40.0 (2021-07-26)
+
+
+### Bug Fixes
+
+* update try-darken and try-lighten to work based on theme luminocity ([a87d80e](https://github.com/telerik/kendo-themes/commit/a87d80e))
+* **button:** darken active state of button ([3dfa722](https://github.com/telerik/kendo-themes/commit/3dfa722))
+* **button:** flat buttons should have their own text color ([c2bf6a9](https://github.com/telerik/kendo-themes/commit/c2bf6a9))
+* **button:** focus outline button in button group should have inner shadow ([35deb7a](https://github.com/telerik/kendo-themes/commit/35deb7a))
+* **button-group:** remove customization from button group ([27debfd](https://github.com/telerik/kendo-themes/commit/27debfd))
+* **calendar:** add calendar caption styles, reuse existing styles and remove legacy styles ([6d5f33e](https://github.com/telerik/kendo-themes/commit/6d5f33e))
+* **calendar:** animations in kendo-jquery-calendar are broken ([e836151](https://github.com/telerik/kendo-themes/commit/e836151))
+* **calendar:** do not flex stretch calendar tables ([9cea07b](https://github.com/telerik/kendo-themes/commit/9cea07b))
+* **calendar:** do not shade other month day in scheduler year view ([d2bb4b9](https://github.com/telerik/kendo-themes/commit/d2bb4b9))
+* **calendar:** remove background clip ([8e701b2](https://github.com/telerik/kendo-themes/commit/8e701b2))
+* **calendar:** remove legacy styles for kendo-react calendar ([0d6411e](https://github.com/telerik/kendo-themes/commit/0d6411e))
+* **calendar:** update calendar cell focus shadow to match design ([fa62d57](https://github.com/telerik/kendo-themes/commit/fa62d57))
+* **calendar:** use cells per row ([cac90a0](https://github.com/telerik/kendo-themes/commit/cac90a0))
+* **calendar:** use explicit flat buttons for calendar header ([482bcf9](https://github.com/telerik/kendo-themes/commit/482bcf9))
+* **checkbox:** update checkbox borders to match design more closely ([2450229](https://github.com/telerik/kendo-themes/commit/2450229))
+* **checkbox:** use single set of variables for styling indeterminate state indicator ([5380db2](https://github.com/telerik/kendo-themes/commit/5380db2))
+* **colorpicker:** add k-hstack where needed ([2ad36e7](https://github.com/telerik/kendo-themes/commit/2ad36e7))
+* **colorpicker:** wrong rtl style in color-gradient ([cb3003a](https://github.com/telerik/kendo-themes/commit/cb3003a))
+* **editor:** remove explicit shading of editor find replace dialog ([432b6a2](https://github.com/telerik/kendo-themes/commit/432b6a2))
+* **editor:** viewHTML editor-dialog styling fixed with flex ([c16b8be](https://github.com/telerik/kendo-themes/commit/c16b8be))
+* **grid:** extract grid edit cell variables ([8a33349](https://github.com/telerik/kendo-themes/commit/8a33349))
+* **grid:** update grid-grouping-bg to match design ([d8f7d0d](https://github.com/telerik/kendo-themes/commit/d8f7d0d))
+* **grid:** use more predictable spacing between buttons in command cells ([b000af4](https://github.com/telerik/kendo-themes/commit/b000af4))
+* **icon:** keep font-face styles at root so nesthet themes will work ([2ce449a](https://github.com/telerik/kendo-themes/commit/2ce449a))
+* **inputs:** update inputs border to reflect design ([33c4953](https://github.com/telerik/kendo-themes/commit/33c4953))
+* **listgroup:** unlink listgroup variables from cell variables ([7f72e0b](https://github.com/telerik/kendo-themes/commit/7f72e0b))
+* **mediaplayer:** do not apply additional styling for media player toolbar ([32aee36](https://github.com/telerik/kendo-themes/commit/32aee36))
+* **mediaplayer:** use consistent padding for media player header ([3461ecf](https://github.com/telerik/kendo-themes/commit/3461ecf))
+* **pager:** use consistent padding for pager ([e17a60f](https://github.com/telerik/kendo-themes/commit/e17a60f))
+* **pivot:** reuse toolbar styles for pivot toolbar ([5166c6f](https://github.com/telerik/kendo-themes/commit/5166c6f))
+* **rating:** use correct color for rating icons ([5be1c92](https://github.com/telerik/kendo-themes/commit/5be1c92))
+* **scheduler:** introduce variables for scheduler cell padding ([0760a37](https://github.com/telerik/kendo-themes/commit/0760a37))
+* **scheduler:** use scheduler-cell-padding variable for all cells ([12fa675](https://github.com/telerik/kendo-themes/commit/12fa675))
+* **scrollview:** change light/dark bg opacity ([d1d2250](https://github.com/telerik/kendo-themes/commit/d1d2250))
+* **scrollview:** fix dots in scrollview-nav ([0c8458e](https://github.com/telerik/kendo-themes/commit/0c8458e))
+* **spreadsheet:** use actual icon in spreadsheet formula bar ([c8a4c93](https://github.com/telerik/kendo-themes/commit/c8a4c93))
+* **switch:** center switch content vertically ([dca00f1](https://github.com/telerik/kendo-themes/commit/dca00f1))
+* **taskboard:** pane spacing is not consistent with action buttons ([9ff8244](https://github.com/telerik/kendo-themes/commit/9ff8244))
+* **toolbar:** do not explictly flex stretch toolbar items ([f8f7960](https://github.com/telerik/kendo-themes/commit/f8f7960))
+* **toolbar:** do not override focsed state of disabled flat buttons ([2011aba](https://github.com/telerik/kendo-themes/commit/2011aba))
+* **treeview:** add spacing between icon and checkbox ([e8c1a5a](https://github.com/telerik/kendo-themes/commit/e8c1a5a))
+* add missing styles for calendar today link in header ([180dbeb](https://github.com/telerik/kendo-themes/commit/180dbeb))
+* extract styles for generic separator ([279e5d0](https://github.com/telerik/kendo-themes/commit/279e5d0))
+* remove duplicate styles for action buttons ([a1ad2de](https://github.com/telerik/kendo-themes/commit/a1ad2de))
+* remove most extend clauses ([a52abab](https://github.com/telerik/kendo-themes/commit/a52abab))
+* remove unused cell-padding-sm variable ([0812298](https://github.com/telerik/kendo-themes/commit/0812298))
+* remove usages of background-clip styling ([accb3ef](https://github.com/telerik/kendo-themes/commit/accb3ef))
+* update list item focus shadow to match design ([6f7e29c](https://github.com/telerik/kendo-themes/commit/6f7e29c))
+* **spreadsheet:** formula icon should be content box so it doesn't shrink ([6fd82f7](https://github.com/telerik/kendo-themes/commit/6fd82f7))
+* rename cell-padding variables to table-cell-padding ([14205be](https://github.com/telerik/kendo-themes/commit/14205be))
+* **toolbar:** use consistent padding for toolbar ([9fbce08](https://github.com/telerik/kendo-themes/commit/9fbce08))
+* **upload:** disconnect upload variables from toolbar ([31fc9a3](https://github.com/telerik/kendo-themes/commit/31fc9a3))
+* **upload:** use spacing map to size upload items ([42bad6b](https://github.com/telerik/kendo-themes/commit/42bad6b))
+* **window:** remove background-clip styles ([00ae7fb](https://github.com/telerik/kendo-themes/commit/00ae7fb))
+* remove usages of deprecated accent variable ([07ddc38](https://github.com/telerik/kendo-themes/commit/07ddc38))
+* remove usages of extend text-selection ([33948d8](https://github.com/telerik/kendo-themes/commit/33948d8))
+* update swatches schema ([b2fa497](https://github.com/telerik/kendo-themes/commit/b2fa497))
+* **upload:** wrong button cursor on hover in firefox ([dadbbe8](https://github.com/telerik/kendo-themes/commit/dadbbe8))
+* **utils:** k-justify-content-stretch is not IE compatible ([6634eec](https://github.com/telerik/kendo-themes/commit/6634eec))
+
+
+### Features
+
+* **checkbox:** allow glyph, image and marke for checked and indeterminate state ([9db64a4](https://github.com/telerik/kendo-themes/commit/9db64a4))
+* **functions:** add escape-svg and str-replace functions ([3ff2fd1](https://github.com/telerik/kendo-themes/commit/3ff2fd1))
+* **pivotgrid:** update pivotgrid to match latest design ([4697557](https://github.com/telerik/kendo-themes/commit/4697557))
+* **radio:** allow glyph, image and marker for checked state ([f49034b](https://github.com/telerik/kendo-themes/commit/f49034b))
+* remove bootstrap form overrides ([663d374](https://github.com/telerik/kendo-themes/commit/663d374))
+* **toolbar:** add styles for toolbar group ([f68e732](https://github.com/telerik/kendo-themes/commit/f68e732))
+* allow setting browser scrollbar width via CSS variable ([4b4c560](https://github.com/telerik/kendo-themes/commit/4b4c560))
+* expose endpoint for swatches consuption via js ([0c7cb4f](https://github.com/telerik/kendo-themes/commit/0c7cb4f))
+
+
+
+
 <a name="4.39.0"></a>
 # [4.39.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-default@4.38.1...@progress/kendo-theme-default@4.39.0) (2021-06-14)
 

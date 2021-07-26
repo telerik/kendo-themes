@@ -3,6 +3,50 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.40.0"></a>
+# 4.40.0 (2021-07-26)
+
+
+### Bug Fixes
+
+* remove most extend clauses ([a52abab](https://github.com/telerik/kendo-themes/commit/a52abab))
+* **calendar:** add calendar caption styles, reuse existing styles and remove legacy styles ([6d5f33e](https://github.com/telerik/kendo-themes/commit/6d5f33e))
+* **calendar:** remove legacy styles for kendo-react calendar ([0d6411e](https://github.com/telerik/kendo-themes/commit/0d6411e))
+* **checkbox:** use single set of variables for styling indeterminate state indicator ([5380db2](https://github.com/telerik/kendo-themes/commit/5380db2))
+* **listgroup:** unlink listgroup variables from cell variables ([7f72e0b](https://github.com/telerik/kendo-themes/commit/7f72e0b))
+* **mediaplayer:** do not apply additional styling for media player toolbar ([32aee36](https://github.com/telerik/kendo-themes/commit/32aee36))
+* **mediaplayer:** use consistent padding for media player header ([3461ecf](https://github.com/telerik/kendo-themes/commit/3461ecf))
+* **spreadsheet:** do not extend flat buttons in spreadsheet ([1a3ac4e](https://github.com/telerik/kendo-themes/commit/1a3ac4e))
+* remove duplicate styles for action buttons ([a1ad2de](https://github.com/telerik/kendo-themes/commit/a1ad2de))
+* remove unused cell-padding-sm variable ([0812298](https://github.com/telerik/kendo-themes/commit/0812298))
+* remove usages of background-clip styling ([accb3ef](https://github.com/telerik/kendo-themes/commit/accb3ef))
+* remove usages of extend text-selection ([33948d8](https://github.com/telerik/kendo-themes/commit/33948d8))
+* rename cell-padding variables to table-cell-padding ([14205be](https://github.com/telerik/kendo-themes/commit/14205be))
+* update swatches schema ([b2fa497](https://github.com/telerik/kendo-themes/commit/b2fa497))
+* wrong box-shadow when look is set to flat ([270ca93](https://github.com/telerik/kendo-themes/commit/270ca93))
+* **editor:** remove explicit shading of editor find replace dialog ([432b6a2](https://github.com/telerik/kendo-themes/commit/432b6a2))
+* **grid:** extract grid edit cell variables ([8a33349](https://github.com/telerik/kendo-themes/commit/8a33349))
+* **grid:** remove form field customizatin in grid ([0253ed9](https://github.com/telerik/kendo-themes/commit/0253ed9))
+* **grid:** use more predictable spacing between buttons in command cells ([b000af4](https://github.com/telerik/kendo-themes/commit/b000af4))
+* **pager:** use consistent padding for pager ([e17a60f](https://github.com/telerik/kendo-themes/commit/e17a60f))
+* **scheduler:** introduce variables for scheduler cell padding ([0760a37](https://github.com/telerik/kendo-themes/commit/0760a37))
+* **scrollview:** change light/dark bg opacity ([d1d2250](https://github.com/telerik/kendo-themes/commit/d1d2250))
+* **taskboard:** pane spacing is not consistent with action buttons ([9ff8244](https://github.com/telerik/kendo-themes/commit/9ff8244))
+* **toolbar:** use consistent padding for toolbar ([9fbce08](https://github.com/telerik/kendo-themes/commit/9fbce08))
+* **upload:** disconnect upload variables from toolbar ([31fc9a3](https://github.com/telerik/kendo-themes/commit/31fc9a3))
+* **upload:** use spacing map to size upload items ([42bad6b](https://github.com/telerik/kendo-themes/commit/42bad6b))
+
+
+### Features
+
+* **checkbox:** allow glyph, image and marke for checked and indeterminate state ([9db64a4](https://github.com/telerik/kendo-themes/commit/9db64a4))
+* **pivotgrid:** update pivotgrid to match latest design ([4697557](https://github.com/telerik/kendo-themes/commit/4697557))
+* **radio:** allow glyph, image and marker for checked state ([f49034b](https://github.com/telerik/kendo-themes/commit/f49034b))
+* expose endpoint for swatches consuption via js ([0c7cb4f](https://github.com/telerik/kendo-themes/commit/0c7cb4f))
+
+
+
+
 <a name="3.34.0"></a>
 # [3.34.0](https://github.com/telerik/kendo-themes/compare/@progress/kendo-theme-material@3.33.1...@progress/kendo-theme-material@3.34.0) (2021-06-14)
 

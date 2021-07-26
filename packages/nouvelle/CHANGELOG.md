@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.40.0"></a>
+# 4.40.0 (2021-07-26)
+
+
+### Bug Fixes
+
+* extract styles for generic separator ([279e5d0](https://github.com/telerik/kendo-themes/commit/279e5d0))
+* remove usages of background-clip styling ([accb3ef](https://github.com/telerik/kendo-themes/commit/accb3ef))
+* update swatches schema ([b2fa497](https://github.com/telerik/kendo-themes/commit/b2fa497))
+
+
+
+
 <a name="0.3.0"></a>
 # 0.3.0 (2021-06-14)
 
