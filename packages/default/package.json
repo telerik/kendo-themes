@@ -45,6 +45,6 @@
     "prepublishOnly": "echo 'no prebublish for default theme'"
   },
   "devDependencies": {
-    "bootstrap": "^4.5.2"
+    "bootstrap": "^5.0.2"
   }
 }
