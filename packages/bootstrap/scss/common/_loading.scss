@@ -1,1 +1,22 @@
 @import "~@progress/kendo-theme-default/scss/common/_loading.scss";
+
+@include exports( "common/loading/bootstrap" ) {
+
+    .k-i-loading,
+    .k-loading-image {
+
+        &::before {
+            border-color: currentColor;
+            border-right-color: transparent !important; // sass-lint:disable-line no-important
+        }
+
+        &::after {
+            display: none !important; // sass-lint:disable-line no-important
+        }
+    }
+
+    .k-loading-image::before {
+        border-width: map-get( $spacing, 1 );
+    }
+
+}
