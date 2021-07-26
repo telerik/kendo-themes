@@ -8,6 +8,13 @@ env:
   CI: true
 
 on:
+  workflow_dispatch:
+    inputs:
+      ref:
+        description: 'Tag or branch to publish'
+        required: true
+        default: 'develop'
+
   workflow_run:
     workflows: ["CI | Dev"]
     branches: [develop]
@@ -19,6 +26,7 @@ jobs:
   release-dev:
 
     runs-on: ubuntu-latest
+    if: ${{ github.event.inputs.ref || github.event.workflow_run.conclusion == 'success' }}
 
     steps:
 
