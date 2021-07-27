@@ -285,6 +285,10 @@
             gap: 0;
             overflow: hidden;
 
+            .k-content.k-scrollable {
+                position: relative;
+            }
+
             &::after {
                 display: block;
                 position: absolute;
