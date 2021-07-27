@@ -1,5 +1,3 @@
-@import "../../core/mixins/_index.scss";
-
 @include exports("<base>") {
     @include register-data-uri("<base>", "data:<mime>;base64,<base64>")
 }
