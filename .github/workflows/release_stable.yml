@@ -53,7 +53,7 @@ jobs:
       - name: Lerna publish
         run: |
           printf "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> .npmrc
-          npx lerna publish --conventional-commits
+          npx lerna publish --conventional-commits --create-release github
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
