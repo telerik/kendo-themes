@@ -1,0 +1,19 @@
+// Captcha
+$captcha-spacer: map-get( $spacing, 2 ) !default;
+
+$captcha-width: 280px !default;
+$captcha-font-family: $font-family !default;
+$captcha-font-size: $font-size !default;
+$captcha-line-height: $line-height !default;
+$captcha-gap: $captcha-spacer !default;
+$captcha-bg: $component-bg !default;
+$captcha-text: $component-bg !default;
+$captcha-border: $component-bg  !default;
+
+$captcha-image-wrap-gap: $captcha-spacer !default;
+
+$captcha-image-controls-gap: $captcha-spacer !default;
+
+$captcha-validation-message-margin-top: $captcha-spacer / 2 !default;
+$captcha-validation-message-font-size: $font-size-sm !default;
+$captcha-validation-message-font-style: italic !default;
