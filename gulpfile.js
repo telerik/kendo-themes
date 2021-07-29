@@ -107,10 +107,10 @@ function flattenAll( cwds, options ) {
 
     cwds.forEach( cwd => {
         let file = path.resolve( cwd, options.file );
-        let outFile = path.resolve( cwd, options.output.path, 'all.scss' );
+        let output = { path: path.resolve( cwd, options.output.path ), filename: 'all.scss' };
         let nodeModules = path.resolve( cwd, 'node_modules' );
 
-        sassFlatten( file, outFile, { nodeModules } );
+        sassFlatten({ file, output, nodeModules });
     });
 }
 
