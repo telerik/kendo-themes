@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en" class="k-typography k-no-animations">
+<head>
+    <title>TabStrip Scrollable</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+    <script src="../../assets/scripts.js"></script>
+
+    <style>
+        #test-area {
+            grid-template-columns: 1fr 1fr;
+        }
+        #test-area::after { display: none; }
+
+        #test-area .separator {
+            width: 100%;
+            grid-column: span 2;
+        }
+    </style>
+</head>
+<body class="k-bg-gray-50">
+    <div id="test-area" class="grid">
+
+        <section>
+            <div class="k-tabstrip-wrapper">
+                <div class="k-widget k-tabstrip k-floatwrap k-header k-tabstrip-top k-tabstrip-scrollable">
+                    <ul class="k-reset k-tabstrip-items" style="margin-left: 39px; margin-right: 42px">
+                        <li class="k-item k-first k-state-active">
+                            <span class="k-link">First</span>
+                        </li><!--
+                        --><li class="k-item">
+                            <span class="k-link">Closable</span>
+                            <span class="k-link k-remove-tab-link"><span class="k-icon k-i-x"></span></span>
+                        </li><!--
+                        --><li class="k-item k-state-focused">
+                            <span class="k-link">Focused</span>
+                        </li>
+                    </ul>
+                    <div class="k-content k-state-active k-state-focused">
+                        <div>jQuery Top scrollable</div>
+                    </div>
+                    <span class="k-button k-button-icon k-flat k-tabstrip-prev"><span class="k-icon k-i-arrow-60-left"></span></span>
+                    <span class="k-button k-button-icon k-flat k-tabstrip-next"><span class="k-icon k-i-arrow-60-right"></span></span>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="k-tabstrip-wrapper">
+                <div class="k-widget k-tabstrip k-floatwrap k-header k-tabstrip-bottom k-tabstrip-scrollable">
+                    <div class="k-content k-state-active">
+                        <div>jQuery Bottom scrollable</div>
+                    </div>
+                    <ul class="k-reset k-tabstrip-items" style="margin-left: 39px; margin-right: 42px">
+                        <li class="k-item k-first k-state-active">
+                            <span class="k-link">First</span>
+                        </li><!--
+                        --><li class="k-item">
+                            <span class="k-link">Closable</span>
+                            <span class="k-link k-remove-tab-link"><span class="k-icon k-i-x"></span></span>
+                        </li><!--
+                        --><li class="k-item k-state-focused">
+                            <span class="k-link">Focused</span>
+                        </li>
+                    </ul>
+                    <span class="k-button k-button-icon k-flat k-tabstrip-prev"><span class="k-icon k-i-arrow-60-left"></span></span>
+                    <span class="k-button k-button-icon k-flat k-tabstrip-next"><span class="k-icon k-i-arrow-60-right"></span></span>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <kendo-tabstrip class="k-widget k-tabstrip k-floatwrap k-header k-tabstrip-top k-tabstrip-scrollable k-tabstrip-scrollable-horizontal">
+                <ul class="k-reset k-tabstrip-items">
+                    <li class="k-item k-first k-state-active">
+                        <span class="k-link">First</span>
+                    </li><!--
+                    --><li class="k-item">
+                        <span class="k-link">Closable</span>
+                        <span class="k-link k-remove-tab-link"><span class="k-icon k-i-x"></span></span>
+                    </li><!--
+                    --><li class="k-item k-state-focused">
+                        <span class="k-link">Focused</span>
+                    </li>
+                </ul>
+                <div class="k-content k-state-active k-state-focused">
+                    <div>Top scrollable</div>
+                </div>
+                <span class="k-button k-button-icon k-flat k-tabstrip-prev"><span class="k-icon k-i-arrow-60-left"></span></span>
+                <span class="k-button k-button-icon k-flat k-tabstrip-next"><span class="k-icon k-i-arrow-60-right"></span></span>
+            </kendo-tabstrip>
+        </section>
+
+        <section>
+            <kendo-tabstrip class="k-widget k-tabstrip k-floatwrap k-header k-tabstrip-bottom k-tabstrip-scrollable k-tabstrip-scrollable-horizontal">
+                <div class="k-content k-state-active">
+                    <div>Bottom scrollable</div>
+                </div>
+                <ul class="k-reset k-tabstrip-items">
+                    <li class="k-item k-first k-state-active">
+                        <span class="k-link">First</span>
+                    </li><!--
+                    --><li class="k-item">
+                        <span class="k-link">Closable</span>
+                        <span class="k-link k-remove-tab-link"><span class="k-icon k-i-x"></span></span>
+                    </li><!--
+                    --><li class="k-item k-state-focused">
+                        <span class="k-link">Focused</span>
+                    </li>
+                </ul>
+                <span class="k-button k-button-icon k-flat k-tabstrip-prev"><span class="k-icon k-i-arrow-60-left"></span></span>
+                <span class="k-button k-button-icon k-flat k-tabstrip-next"><span class="k-icon k-i-arrow-60-right"></span></span>
+            </kendo-tabstrip>
+        </section>
+
+        <section>
+            <kendo-tabstrip class="k-widget k-tabstrip k-floatwrap k-header k-tabstrip-left k-tabstrip-scrollable k-tabstrip-scrollable-vertical">
+                <ul class="k-reset k-tabstrip-items">
+                    <li class="k-item k-first k-state-active">
+                        <span class="k-link">Active</span>
+                    </li><!--
+                    --><li class="k-item">
+                        <span class="k-link">Normal</span>
+                    </li><!--
+                    --><li class="k-item k-state-hover">
+                        <span class="k-link">Hover</span>
+                    </li><!--
+                    --><li class="k-item k-state-focused">
+                        <span class="k-link">Focused</span>
+                    </li><!--
+                    --><li class="k-item">
+                        <span class="k-link">Closable</span>
+                        <span class="k-link k-remove-tab-link"><span class="k-icon k-i-x"></span></span>
+                    </li><!--
+                    --><li class="k-item k-last k-state-disabled">
+                        <span class="k-link">Disabled</span>
+                    </li>
+                </ul>
+                <div class="k-content k-state-active">
+                    <div>Scrollable Left orientation</div>
+                </div>
+                <span class="k-button k-button-icon k-flat k-tabstrip-prev"><span class="k-icon k-i-arrow-60-up"></span></span>
+                <span class="k-button k-button-icon k-flat k-tabstrip-next"><span class="k-icon k-i-arrow-60-down"></span></span>
+            </kendo-tabstrip>
+        </section>
+
+        <section>
+            <kendo-tabstrip class="k-widget k-tabstrip k-floatwrap k-header k-tabstrip-right k-tabstrip-scrollable k-tabstrip-scrollable-vertical">
+                <ul class="k-reset k-tabstrip-items">
+                    <li class="k-item k-first k-state-active">
+                        <span class="k-link">Active</span>
+                    </li><!--
+                    --><li class="k-item">
+                        <span class="k-link">Normal</span>
+                    </li><!--
+                    --><li class="k-item k-state-hover">
+                        <span class="k-link">Hover</span>
+                    </li><!--
+                    --><li class="k-item k-state-focused">
+                        <span class="k-link">Focused</span>
+                    </li><!--
+                    --><li class="k-item">
+                        <span class="k-link">Closable</span>
+                        <span class="k-link k-remove-tab-link"><span class="k-icon k-i-x"></span></span>
+                    </li><!--
+                    --><li class="k-item k-last k-state-disabled">
+                        <span class="k-link">Disabled</span>
+                    </li>
+                </ul>
+                <div class="k-content k-state-active">
+                    <div>Scrollable Right orientation</div>
+                </div>
+                <span class="k-button k-button-icon k-flat k-tabstrip-prev"><span class="k-icon k-i-arrow-60-up"></span></span>
+                <span class="k-button k-button-icon k-flat k-tabstrip-next"><span class="k-icon k-i-arrow-60-down"></span></span>
+            </kendo-tabstrip>
+        </section>
+
+    </div>
+</body>
+</html>
