@@ -11,7 +11,7 @@
 
 
     // Items
-    .k-tabstrip-items {
+    .k-tabstrip-items-wrapper {
         @include fill(
             $tabstrip-text,
             $tabstrip-bg,
@@ -49,6 +49,10 @@
             &.k-state-focused {
                 @include box-shadow( $tabstrip-item-focused-shadow );
             }
+
+            &.k-tabstrip-dragging {
+                @include box-shadow( $tabstrip-item-dragging-shadow );
+            }
         }
 
     }
@@ -72,7 +76,7 @@
     // Selected indicator
     @if ($tabstrip-indicator-size) {
 
-        .k-tabstrip-items {
+        .k-tabstrip-items-wrapper {
             .k-item.k-state-active::after {
                 border-color: $tabstrip-indicator-color;
             }

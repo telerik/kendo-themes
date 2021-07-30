@@ -28,10 +28,13 @@
         }
     }
 
-    .k-tabstrip-items {
+    .k-tabstrip-items-wrapper {
         border-width: 0;
         border-style: solid;
         border-color: inherit;
+    }
+
+    .k-tabstrip-items {
         outline: 0;
         display: flex;
         flex-direction: row;
@@ -65,12 +68,6 @@
             flex-direction: row;
             align-content: center;
             align-items: center;
-        }
-
-        .k-remove-tab-link,
-        .k-link[data-type="remove"] {
-            padding: $tabstrip-item-padding-y;
-            flex: none;
         }
     }
     .k-ie11 .k-tabstrip-items {
@@ -121,42 +118,43 @@
 
     // Scrolling
     .k-tabstrip.k-tabstrip-scrollable {
-        position: relative;
+        > .k-tabstrip-items-wrapper {
+            border-width: 0;
+
+            > .k-tabstrip-items {
+                flex: 1 1 auto;
+                white-space: nowrap;
+                overflow: hidden;
+            }
+
+            > .k-button {
+                flex-shrink: 0;
+                align-self: stretch;
+            }
+
+            &.k-hstack {
+                > .k-button {
+                    height: auto;
+                }
+            }
+
+            &.k-vstack {
+                > .k-button {
+                    width: auto;
+                }
+            }
+        }
 
         > .k-content,
         > .k-tabstrip-content {
             border-width: $tabstrip-content-border-width;
-        }
-
-        > .k-tabstrip-items {
-            border-width: 0;
-            white-space: nowrap;
-            overflow: hidden;
-        }
-
-        > .k-tabstrip-prev {
-            position: absolute;
-            left: 0;
-        }
-
-        > .k-tabstrip-next {
-            position: absolute;
-            right: 0;
-        }
-
-        // Fixes telerik/kendo-theme-default#476
-        .k-ie11 & {
-            > .k-tabstrip-prev,
-            > .k-tabstrip-next {
-                top: 0;
-            }
         }
     }
 
 
     // Tabstrip variants
     .k-tabstrip-top {
-        > .k-tabstrip-items {
+        > .k-tabstrip-items-wrapper {
             border-bottom-width: $tabstrip-border-width;
 
             .k-item {
@@ -180,7 +178,7 @@
         }
     }
     .k-tabstrip-bottom {
-        > .k-tabstrip-items {
+        > .k-tabstrip-items-wrapper {
             border-top-width: $tabstrip-border-width;
 
             .k-item {
@@ -202,25 +200,17 @@
             @include border-top-radius( $tabstrip-item-border-radius );
             border-bottom-width: 0;
         }
-
-        &.k-tabstrip-scrollable {
-            .k-tabstrip-prev,
-            .k-tabstrip-next {
-                bottom: 0;
-
-                .k-ie11 & {
-                    top: auto;
-                }
-            }
-        }
     }
     .k-tabstrip-left {
         flex-direction: row;
 
-        > .k-tabstrip-items {
+        > .k-tabstrip-items-wrapper {
             border-right-width: $tabstrip-border-width;
-            display: inline-flex;
-            flex-direction: column;
+
+            > .k-tabstrip-items {
+                display: inline-flex;
+                flex-direction: column;
+            }
 
             .k-item {
                 @include border-left-radius( $tabstrip-item-border-radius );
@@ -249,10 +239,13 @@
     .k-tabstrip-right {
         flex-direction: row-reverse;
 
-        > .k-tabstrip-items {
+        > .k-tabstrip-items-wrapper {
             border-left-width: $tabstrip-border-width;
-            display: inline-flex;
-            flex-direction: column;
+
+            > .k-tabstrip-items {
+                display: inline-flex;
+                flex-direction: column;
+            }
 
             .k-item {
                 @include border-right-radius( $tabstrip-item-border-radius );
@@ -282,7 +275,7 @@
     // Selected indicator
     @if ($tabstrip-indicator-size) {
 
-        .k-tabstrip-items {
+        .k-tabstrip-items-wrapper {
 
             .k-item::after {
                 content: "";
@@ -332,20 +325,16 @@
 
         &.k-tabstrip-left,
         &.k-tabstrip-right {
-            > .k-tabstrip-items { order: 1; }
+            > .k-tabstrip-items-wrapper {
+                order: 1;
+            }
+
             > .k-content { order: 0; }
             > .k-tabstrip-content { order: 0; }
         }
 
-        .k-tabstrip-prev {
-            left: auto;
-            right: 0;
-            transform: scaleX(-1);
-        }
-
+        .k-tabstrip-prev,
         .k-tabstrip-next {
-            left: 0;
-            right: auto;
             transform: scaleX(-1);
         }
 
