@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en" class="k-typography k-no-animations">
+<head>
+    <title>Captcha</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../../../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="../../../assets/styles.css" />
+    <script src="../../../assets/scripts.js"></script>
+</head>
+<body>
+
+    <div id="test-area" class="k-d-grid k-grid-cols-1">
+
+        <span>Captcha</span>
+        <section>
+            <div class="k-widget k-captcha">
+                <div class="k-captcha-image-wrap k-hstack">
+                    <div class="k-captcha-image">
+                        <img src="../../../assets/captcha.jpg"/>
+                    </div>
+                    <div class="k-captcha-image-controls k-vstack">
+                        <button class="k-button k-button-icon">
+                            <i class="k-icon k-i-volume-up"></i>
+                        </button>
+                        <button class="k-button k-button-icon">
+                            <i class="k-icon k-i-reload"></i>
+                        </button>
+                    </div>
+                    <div class="k-captcha-volume-control k-vstack k-pos-absolute k-hidden">
+                        <div class="k-widget k-slider k-slider-vertical"></div>
+                    </div>
+                </div>
+                <div class="k-captcha-input k-vstack">
+                    <span class="k-widget k-textbox">
+                        <input id="textbox" class="k-input" value="YR890">
+                    </span>
+                    <span class="k-captcha-validation-message k-text-success">Verification Success</span>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>

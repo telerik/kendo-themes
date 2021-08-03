@@ -1,0 +1,12 @@
+@include exports("captcha/theme") {
+
+    // Captcha
+    .k-captcha {
+        @include fill(
+            $captcha-text,
+            $captcha-bg,
+            $captcha-border
+        );
+    }
+
+}
