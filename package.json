@@ -4,7 +4,7 @@
     "@commitlint/cli": "^13.1.0",
     "@commitlint/config-conventional": "^13.1.0",
     "@commitlint/core": "^13.1.0",
-    "@joneff/baka": "^0.5.1",
+    "@joneff/baka": "^1.0.1",
     "@progress/kendo-font-icons": "0.1.2",
     "@progress/kendo-theme-tasks": "^1.12.1",
     "autoprefixer": "^10.3.1",
