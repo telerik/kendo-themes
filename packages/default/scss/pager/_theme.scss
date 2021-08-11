@@ -88,6 +88,11 @@
     }
 
 
+    // Pager Focus
+    .k-pager-focusable {
+        @include fill( $bg: $pager-focus-bg );
+        @include box-shadow( $pager-focus-shadow );
+    }
 
 
     // Responsive

@@ -11,6 +11,9 @@ $pager-bg: $component-bg !default;
 $pager-text: if($theme-type == dark, $light-secondary-text, $dark-secondary-text) !default;
 $pager-border: $component-border !default;
 
+$pager-focus-bg: try-darken( $pager-bg, 7% ) !default;
+$pager-focus-shadow: null !default;
+
 $pager-section-spacing: $pager-padding-x !default;
 
 $pager-item-padding-x: 0px !default;
