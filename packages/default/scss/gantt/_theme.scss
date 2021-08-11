@@ -21,15 +21,16 @@
                     $border: $gantt-milestone-selected-border
                 );
             }
-            .k-gantt-dependencies-svg {
-                polyline {
-                    fill: none;
-                    stroke: $gantt-line-fill;
-                }
+        }
 
-                polyline.k-state-selected {
-                    stroke: $gantt-line-selected-fill;
-                }
+        .k-gantt-dependencies-svg {
+            polyline {
+                fill: none;
+                stroke: $gantt-line-fill;
+            }
+
+            polyline.k-state-selected {
+                stroke: $gantt-line-selected-fill;
             }
         }
     }
