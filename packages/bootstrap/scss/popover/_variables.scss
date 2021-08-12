@@ -1,0 +1,35 @@
+// Popover
+$popover-border-width: $card-border-width !default;
+$popover-border-style: solid !default;
+$popover-border-radius: $card-border-radius !default;
+$popover-font-size: $card-font-size !default;
+$popover-font-family: $card-font-family !default;
+$popover-line-height: $card-line-height !default;
+$popover-bg: $card-bg !default;
+$popover-text: $card-text !default;
+$popover-border: $card-border !default;
+$popover-shadow: $card-shadow !default;
+
+$popover-header-padding-y: $card-header-padding-y !default;
+$popover-header-padding-x: $card-header-padding-x !default;
+$popover-header-border-width: $card-header-border-width !default;
+$popover-header-border-style: $popover-border-style !default;
+$popover-header-bg: $card-header-bg !default;
+$popover-header-text: $card-header-text !default;
+$popover-header-border: $card-header-border !default;
+
+$popover-body-padding-y: $card-body-padding-y !default;
+$popover-body-padding-x: $card-body-padding-x !default;
+
+$popover-actions-border-width: $popover-border-width !default;
+
+$popover-callout-width: $card-callout-width !default;
+$popover-callout-height: $card-callout-height !default;
+$popover-callout-border-width: $popover-border-width !default;
+$popover-callout-border-style: $popover-border-style !default;
+$popover-callout-bg: $popover-bg !default;
+$popover-callout-border: $popover-border !default;
+$popover-callout-shadow-n: null !default;
+$popover-callout-shadow-e: null !default;
+$popover-callout-shadow-s: null !default;
+$popover-callout-shadow-w: null !default;
