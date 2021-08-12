@@ -1,0 +1,57 @@
+// Orgchart
+$orgchart-spacer: map-get( $spacing, 6 ) !default;
+$orgchart-padding-y: $orgchart-spacer !default;
+$orgchart-padding-x: $orgchart-padding-y  !default;
+$orgchart-font-family: $font-family !default;
+$orgchart-font-size: $font-size !default;
+$orgchart-line-height: $line-height !default;
+$orgchart-bg: $component-bg !default;
+$orgchart-text: $component-text !default;
+$orgchart-border: $component-border !default;
+
+$orgchart-node-gap: $orgchart-spacer !default;
+$orgchart-group-gap: $orgchart-spacer !default;
+$orgchart-node-container-gap: $orgchart-spacer !default;
+
+$orgchart-node-group-padding-y: $orgchart-spacer !default;
+$orgchart-node-group-padding-x: $orgchart-node-group-padding-y !default;
+$orgchart-node-group-border-width: 1px !default;
+$orgchart-node-group-border-radius: $border-radius !default;
+$orgchart-node-group-bg: $base-bg !default;
+$orgchart-node-group-text: $base-text !default;
+$orgchart-node-group-border: $base-border !default;
+
+$orgchart-node-group-focus-border: $card-focus-border !default;
+$orgchart-node-group-focus-shadow: $card-focus-shadow !default;
+
+$orgchart-node-group-title-font-size: $font-size-lg !default;
+$orgchart-node-group-title-margin-bottom: $orgchart-spacer / 4 !default;
+$orgchart-node-group-title-line-height: $line-height-sm !default;
+
+$orgchart-node-group-subtitle-margin-bottom: $orgchart-spacer !default;
+$orgchart-node-group-subtitle-font-size: $font-size !default;
+$orgchart-node-group-subtitle-text: $subtle-text !default;
+
+$orgchart-card-width: 300px !default;
+$orgchart-card-padding-y: $card-padding-y !default;
+$orgchart-card-padding-x: $orgchart-card-padding-y !default;
+$orgchart-card-border-width: $card-border-width !default;
+$orgchart-card-shadow: $card-shadow !default;
+$orgchart-card-focus-shadow: $card-focus-shadow !default;
+
+$orgchart-card-title-margin-bottom: 0px !default;
+$orgchart-card-title-font-size: $font-size !default;
+
+$orgchart-card-subtitle-margin-bottom: 0px !default;
+$orgchart-card-subtitle-font-size: $font-size-md !default;
+
+$orgchart-card-body-border-width: 2px 0 0 !default;
+$orgchart-card-body-border-color: transparent !default;
+
+$orgchart-card-body-vbox-margin-right: $orgchart-spacer / 2 !default;
+$orgchart-card-body-vbox-min-height: $card-avatar-size !default;
+
+$orgchart-line-size: 1px !default;
+$orgchart-line-fill: $base-border !default;
+
+$orgchart-line-v-height: 25px !default;

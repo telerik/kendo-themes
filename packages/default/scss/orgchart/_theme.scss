@@ -1,0 +1,51 @@
+@include exports("orgchart/theme") {
+
+    // OrgChart
+    .k-orgchart {
+        @include fill (
+            $orgchart-text,
+            $orgchart-bg,
+            $orgchart-border
+        );
+    }
+
+    // Card
+    .k-orgchart-card {
+        @include box-shadow( $orgchart-card-shadow );
+
+        .k-card-body {
+            @include fill( $border: $orgchart-card-body-border-color );
+        }
+
+        &:focus,
+        &.k-state-focus {
+            @include box-shadow( $orgchart-card-focus-shadow );
+        }
+    }
+
+    // Group
+    .k-orgchart-node-group-container {
+        @include fill (
+            $orgchart-node-group-text,
+            $orgchart-node-group-bg,
+            $orgchart-node-group-border
+        );
+    }
+    .k-orgchart-node-group-container:focus,
+    .k-orgchart-node-group-container.k-state-focus,
+    .k-orgchart-node-group-container.k-state-focused {
+        @include box-shadow( $orgchart-node-group-focus-shadow );
+        @include fill ( $border: $orgchart-node-group-focus-border );
+    }
+
+    .k-orgchart-node-group-subtitle {
+        @include fill( $color: $orgchart-node-group-subtitle-text );
+    }
+
+    // Lines
+    .k-orgchart-line-h,
+    .k-orgchart-line-v {
+        @include fill( $color: $orgchart-line-fill );
+    }
+
+}
