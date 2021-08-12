@@ -600,7 +600,7 @@
 
     .k-grid-header {
         padding-inline-start: 0;
-        padding-inline-end: var(--kendo-scrollbar-width, $default-scrollbar-width);
+        padding-inline-end: calc(var(--kendo-scrollbar-width, #{$default-scrollbar-width} + 1px) - 1px );
         border-bottom-width: 1px;
         font-size: $grid-header-font-size;
 
@@ -719,7 +719,7 @@
 
     .k-grid-footer {
         padding-inline-start: 0;
-        padding-inline-end: var(--kendo-scrollbar-width, $default-scrollbar-width);
+        padding-inline-end: calc(var(--kendo-scrollbar-width, #{$default-scrollbar-width} + 1px) - 1px );
         border-width: 1px 0 0;
 
         td {
