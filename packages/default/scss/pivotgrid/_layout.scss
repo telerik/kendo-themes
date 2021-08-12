@@ -64,7 +64,7 @@
     // Column Headers
     .k-pivotgrid-column-headers {
         padding-inline-start: 0;
-        padding-inline-end: var(--kendo-scrollbar-width, $default-scrollbar-width);
+        padding-inline-end: calc(var(--kendo-scrollbar-width, #{$default-scrollbar-width} + 1px) - 1px );
         overflow: hidden;
     }
 
