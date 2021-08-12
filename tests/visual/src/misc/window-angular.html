@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en" class="k-typography k-no-animations">
+
 <head>
     <title>Window Angular</title>
     <meta charset="utf-8" />
@@ -111,7 +112,34 @@
                 </div>
             </kendo-window>
         </section>
+
+        <section>
+            <kendo-window class="k-widget k-window">
+                <kendo-window-titlebar class="k-window-titlebar k-dialog-titlebar">
+                    <div class="k-window-title">
+                        Custom Titlebar Template
+                    </div>
+                    <button class="k-button-icon k-button k-flat">
+                        <span class="k-icon k-i-window-minimize"></span>
+                    </button>
+                    <button class="k-button-icon k-button k-flat">
+                        <span class="k-icon k-i-window-maximize"></span>
+                    </button>
+                    <button class="k-button-icon k-button k-flat">
+                        <span class="k-icon k-i-window-restore"></span>
+                    </button>
+                    <button class="k-button-icon k-button k-flat">
+                        <span class="k-icon k-i-close"></span>
+                    </button>
+                </kendo-window-titlebar>
+                <div class="k-content k-window-content">
+                    Angular window content
+                </div>
+            </kendo-window>
+        </section>
+
     </div>
 
 </body>
+
 </html>
