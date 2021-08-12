@@ -373,19 +373,20 @@ gulp.task("resolve-vars", () => {
     const cwd = process.cwd();
 
     themes.forEach( theme => {
-        let variablesJson = path.resolve( cwd, `${theme}/.tmp/variables.json` );
-        let variablesScss = path.resolve( cwd, `${theme}/.tmp/variables.scss` );
+        let variablesJson = path.resolve( cwd, `${theme}/dist/variables.json` );
+        let variablesScss = path.resolve( cwd, `${theme}/dist/variables.scss` );
 
         fse.ensureFileSync( variablesJson );
         fse.ensureFileSync( variablesScss );
 
-        baka.compile(
-            path.join( cwd, `${theme}/scss/_variables.scss` ),
-            variablesScss,
-            {
-                nodeModules: `${theme}/node_modules`
-            }
-        );
+        baka.build({
+            file: path.resolve( cwd, `${theme}/scss/_variables.scss` ),
+            output: {
+                path: path.resolve( cwd, theme, 'dist' ),
+                filename: "variables.scss"
+            },
+            nodeModules: path.resolve( cwd, `${theme}/node_modules` )
+        });
 
         let content = fs.readFileSync( variablesScss, 'utf-8' );
 

@@ -1,0 +1,76 @@
+@include exports("popover/layout") {
+
+    // Popover
+    .k-popover {
+        @include border-radius( $popover-border-radius );
+        border-width: $popover-border-width;
+        border-style: $popover-border-style;
+        box-sizing: border-box;
+        outline: 0;
+        font-size: $popover-font-size;
+        font-family: $popover-font-family;
+        line-height: $popover-line-height;
+        display: flex;
+        flex-flow: column nowrap;
+        position: absolute;
+        z-index: 12000;
+        -webkit-touch-callout: none;
+        -webkit-tap-highlight-color: $rgba-transparent;
+    }
+
+    // Header
+    .k-popover-header {
+        @include border-top-radius( $popover-border-radius );
+        padding: $popover-header-padding-y $popover-header-padding-x;
+        border-width: 0 0 $popover-header-border-width;
+        border-style: $popover-header-border-style;
+    }
+
+    // Body
+    .k-popover-body {
+        padding: $popover-body-padding-y $popover-body-padding-x;
+    }
+
+    // Actions
+    .k-popover-actions {
+        border-width: $popover-actions-border-width 0 0;
+    }
+
+}
+
+@include exports( "popover/layout/callout" ) {
+
+    .k-popover-callout {
+        margin: 0;
+        width: $popover-callout-width;
+        height: $popover-callout-height;
+        border-width: $popover-callout-border-width $popover-callout-border-width 0 0;
+        border-style: $popover-callout-border-style;
+        position: absolute;
+
+        &.k-callout-n {
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-45deg);
+        }
+
+        &.k-callout-e {
+            top: 50%;
+            right: 0;
+            transform: translate(50%, -50%) rotate(135deg) scaleX(-1);
+        }
+
+        &.k-callout-s {
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%, 50%) rotate(135deg);
+        }
+
+        &.k-callout-w {
+            top: 50%;
+            left: 0;
+            transform: translate(-50%, -50%) rotate(-135deg);
+        }
+    }
+
+}

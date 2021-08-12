@@ -1,0 +1,36 @@
+@include exports("popover/theme") {
+
+    // Popover
+    .k-popover {
+        @include box-shadow( $popover-shadow );
+
+        @include fill(
+            $popover-text,
+            $popover-bg,
+            $popover-border
+        );
+    }
+
+    // Header
+    .k-popover-header {
+        @include fill(
+            $popover-header-text,
+            $popover-header-bg,
+            $popover-header-border
+        );
+    }
+
+    // Callout
+    .k-popover-callout {
+        @include fill(
+            $bg: $popover-callout-bg,
+            $border: $popover-callout-border
+        );
+
+        &.k-callout-n { @include box-shadow( $popover-callout-shadow-n ); }
+        &.k-callout-e { @include box-shadow( $popover-callout-shadow-e ); }
+        &.k-callout-s { @include box-shadow( $popover-callout-shadow-s ); }
+        &.k-callout-w { @include box-shadow( $popover-callout-shadow-w ); }
+    }
+
+}
