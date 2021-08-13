@@ -5,6 +5,8 @@ $appbar-padding-y: map-get( $spacing, 2 ) !default;
 $appbar-padding-x: map-get( $spacing, 4 ) !default;
 $appbar-border-width: 0px !default;
 
+$appbar-zindex: 1000 !default;
+
 $appbar-font-size: $font-size !default;
 $appbar-line-height: $line-height !default;
 $appbar-font-family: $font-family !default;
