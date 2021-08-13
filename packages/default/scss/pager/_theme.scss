@@ -6,6 +6,13 @@
             $pager-bg,
             $pager-border
         );
+
+        &:focus,
+        &.k-focus,
+        &.k-state-focus {
+            @include fill( $bg: $pager-focus-bg );
+            @include box-shadow( $pager-focus-shadow );
+        }
     }
 
 
@@ -86,7 +93,6 @@
     .k-pager-refresh {
         @extend %base-pager-item-theme;
     }
-
 
 
 

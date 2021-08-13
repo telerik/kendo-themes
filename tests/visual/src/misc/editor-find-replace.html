@@ -33,14 +33,16 @@
                 </div>
                 <div class="k-content k-window-content">
                     <div class="k-widget k-header k-floatwrap k-tabstrip k-tabstrip-top k-editor-find-replace">
-                        <ul class="k-tabstrip-items k-reset">
-                            <li class="k-item k-state-active k-tab-on-top">
-                                <span class="k-link">Find</span>
-                            </li>
-                            <li class="k-item">
-                                <span class="k-link">Replace</span>
-                            </li>
-                        </ul>
+                        <div class="k-tabstrip-items-wrapper k-hstack">
+                            <ul class="k-tabstrip-items k-reset">
+                                <li class="k-item k-state-active k-tab-on-top">
+                                    <span class="k-link">Find</span>
+                                </li>
+                                <li class="k-item">
+                                    <span class="k-link">Replace</span>
+                                </li>
+                            </ul>
+                        </div>
                         <div class="k-content k-state-active">
                             <div>
                                 <div class="k-edit-form-container">
@@ -97,16 +99,18 @@
                     </div>
                 </div>
                 <div class="k-content k-window-content">
-                   <div class="k-widget k-header k-floatwrap k-tabstrip k-tabstrip-top k-editor-find-replace">
-                      <ul class="k-tabstrip-items k-reset">
-                         <li class="k-item">
-                             <span class="k-link">Find</span>
-                            </li>
-                         <li class="k-item k-state-active k-tab-on-top">
-                             <span class="k-link">Replace</span>
-                        </li>
-                      </ul>
-                      <div class="k-content k-state-active">
+                    <div class="k-widget k-header k-floatwrap k-tabstrip k-tabstrip-top k-editor-find-replace">
+                        <div class="k-tabstrip-items-wrapper k-hstack">
+                            <ul class="k-tabstrip-items k-reset">
+                                <li class="k-item">
+                                    <span class="k-link">Find</span>
+                                </li>
+                                <li class="k-item k-state-active k-tab-on-top">
+                                    <span class="k-link">Replace</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="k-content k-state-active">
                             <div>
                                 <div class="k-edit-form-container">
                                     <div class="k-edit-label">
@@ -121,7 +125,7 @@
                                     <div class="k-edit-field">
                                         <input class="k-textbox" value="grid"/>
                                     </div>
-                                 </div>
+                                </div>
                                 <div class="k-action-buttons k-actions k-actions-end">
                                     <button class="k-button">Replace</button>
                                     <button class="k-button">Replace All</button>
@@ -156,10 +160,10 @@
                                     </button>
                                 </div>
                             </div>
-                      </div>
-                   </div>
+                        </div>
+                    </div>
                 </div>
-             </div>
+            </div>
         </section>
         <span>Text Highlight</span>
         <span></span>
@@ -184,15 +188,15 @@
                     </span>
                 </div>
                 <div class="k-editor-content" style="height: 320px;">
-                   <div class="ProseMirror">
+                    <div class="ProseMirror">
                         <p>The KendoReact Editor allows your users to edit <span class="k-text-selected">HTML</span> in a familiar, user-friendly way.<br>
                             The Editor provides the core <span class="k-text-highlighted">HTML</span> editing engine, which includes text formatting, hyperlinks, and lists.
                             The component <strong>outputs identical <span class="k-text-highlighted">HTML</span></strong> across all major browsers, follows accessibility standards,
                             and provides API for content manipulation.
                         </p>
-                   </div>
+                    </div>
                 </div>
-             </div>
+            </div>
         </section>
     </div>
 

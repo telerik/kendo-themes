@@ -27,20 +27,22 @@
                     <a class="k-button k-button-icon"><span class="k-icon k-i-redo"></span></a>
                 </div>
                 <div class="k-widget k-header k-tabstrip k-floatwrap k-tabstrip-top k-spreadsheet-tabstrip">
-                    <ul class="k-tabstrip-items k-reset" style="padding-left: 76px;">
-                        <li class="k-item k-first k-tab-on-top k-state-active">
-                            <span class="k-loading k-complete"></span>
-                            <span class="k-link">Home</span>
-                        </li>
-                        <li class="k-item">
-                            <span class="k-loading k-complete"></span>
-                            <span class="k-link">Insert</span>
-                        </li>
-                        <li class="k-item k-last">
-                            <span class="k-loading k-complete"></span>
-                            <span class="k-link">Data</span>
-                        </li>
-                    </ul>
+                    <div class="k-tabstrip-items-wrapper k-hstack">
+                        <ul class="k-tabstrip-items k-reset" style="padding-left: 76px;">
+                            <li class="k-item k-first k-tab-on-top k-state-active">
+                                <span class="k-loading k-complete"></span>
+                                <span class="k-link">Home</span>
+                            </li>
+                            <li class="k-item">
+                                <span class="k-loading k-complete"></span>
+                                <span class="k-link">Insert</span>
+                            </li>
+                            <li class="k-item k-last">
+                                <span class="k-loading k-complete"></span>
+                                <span class="k-link">Data</span>
+                            </li>
+                        </ul>
+                    </div>
                     <div class="k-content k-state-active" style="display: block;">
                         <div class="k-toolbar k-widget k-toolbar-resizable k-spreadsheet-toolbar">
                             <div class="k-button k-upload-button k-button-icon k-toolbar-first-visible">
@@ -601,26 +603,28 @@
                     <span class="k-icon k-icon k-i-plus"></span>
                 </a>
                 <div class="k-spreadsheet-sheets-items k-tabstrip-scrollable k-tabstrip k-floatwrap k-tabstrip-bottom">
-                    <ul class="k-reset k-tabstrip-items" style="margin-left: 36px;">
-                        <li class="k-item k-state-active k-state-tab-on-top k-spreadsheet-sheets-bar-active">
-                            <span class="k-link">Food Order</span>
-                            <span class="k-link k-spreadsheet-sheets-remove">
-                                <span class="k-icon k-icon k-i-close"></span>
-                            </span>
-                        </li>
-                        <li class="k-item k-spreadsheet-sheets-bar-inactive">
-                            <span class="k-link">Balance Sheet</span>
-                            <span class="k-link k-spreadsheet-sheets-remove">
-                                <span class="k-icon k-icon k-i-close"></span>
-                            </span>
-                        </li>
-                    </ul>
-                    <span class="k-button k-button-icon k-flat k-tabstrip-prev" style="left: 36px; display: none;">
-                        <span class="k-icon k-i-arrow-60-left"></span>
-                    </span>
-                    <span class="k-button k-button-icon k-flat k-tabstrip-next" style="display: none;">
-                        <span class="k-icon k-i-arrow-60-right"></span>
-                    </span>
+                    <div class="k-tabstrip-items-wrapper k-hstack">
+                        <span class="k-button k-button-icon k-flat k-tabstrip-prev" style="left: 36px; display: none;">
+                            <span class="k-icon k-i-arrow-60-left"></span>
+                        </span>
+                        <ul class="k-reset k-tabstrip-items" style="margin-left: 36px;">
+                            <li class="k-item k-state-active k-state-tab-on-top k-spreadsheet-sheets-bar-active">
+                                <span class="k-link">Food Order</span>
+                                <span class="k-spreadsheet-sheets-remove k-remove-tab k-button k-icon-button k-flat">
+                                    <span class="k-icon k-icon k-i-close"></span>
+                                </span>
+                            </li>
+                            <li class="k-item k-spreadsheet-sheets-bar-inactive">
+                                <span class="k-link">Balance Sheet</span>
+                                <span class="k-spreadsheet-sheets-remove k-remove-tab k-button k-icon-button k-flat">
+                                    <span class="k-icon k-icon k-i-close"></span>
+                                </span>
+                            </li>
+                        </ul>
+                        <span class="k-button k-button-icon k-flat k-tabstrip-next" style="display: none;">
+                            <span class="k-icon k-i-arrow-60-right"></span>
+                        </span>
+                    </div>
                 </div>
             </div>
         </div>
