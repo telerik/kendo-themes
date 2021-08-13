@@ -1,6 +1,6 @@
 # Kendo UI Bootstrap Theme
 
-The Kendo UI Bootstrap Theme is a theme for the Kendo UI components which is based on the Twitter Bootstrap framework, version 4. To style and size the components and make them blend in with the surrounding page, the Bootstrap theme uses the variables defined in Bootstrap.
+The Kendo UI Bootstrap Theme is a theme for the Kendo UI components which is based on the Bootstrap framework. To style and size the components and make them blend in with the surrounding page, the Bootstrap theme uses the variables defined in Bootstrap.
 
 * [License](#license)
 * [Basic Usage](#basic-usage)
@@ -44,10 +44,6 @@ If you have a customized version of Bootstrap:
 To ensure a certain level of compatibility, the Bootstrap variables are locally mapped. This also enables Kendo UI to use an ad-hoc micro framework based on primitive components. For example, [button](src/mixins/appearance/_button.scss), [input](src/mixins/appearance/_input.scss), [node](src/mixins/appearance/_node.scss), and so on.
 
 However, some variables, such as `$tooltip-arrow-width` which is used in the tooltip, are not mapped. They are referenced explicitly because they do not fit in the previously mentioned framework.
-
-## Troubleshooting
-
-Because Bootstrap v4 is still in beta, its variables may change between releases. Make sure to use the Bootstrap version which is [specified in the peer dependencies](package.json) of the package.
 
 *Copyright © 2020 Progress Software Corporation and/or one of its subsidiaries or affiliates. All rights reserved.*
 
