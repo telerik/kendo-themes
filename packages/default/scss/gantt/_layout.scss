@@ -150,23 +150,25 @@
                 display: block;
             }
 
-            // Dependency lines SVG
-            .k-gantt-dependencies-svg {
-                position: absolute;
-                overflow: visible;
-                pointer-events: none;
-                z-index: 2;
-
-                polyline {
-                    stroke-width: $gantt-line-size;
-                }
-            }
-
             // Table with columns borders
             .k-gantt-columns {
                 background: transparent;
                 pointer-events: none;
                 table-layout: fixed;
+            }
+        }
+
+        // Dependency lines SVG
+        .k-gantt-dependencies-svg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            overflow: visible;
+            pointer-events: none;
+            z-index: 2;
+
+            polyline {
+                stroke-width: $gantt-line-size;
             }
         }
     }
@@ -268,6 +270,12 @@
         }
         .k-gantt-treelist-nested-columns .k-grid-header tr {
             height: calc( #{$line-height-em} + #{$grid-header-padding-y * 2} + 1px );
+        }
+
+        &.k-gantt-treelist-scrollable {
+            .k-grid-content {
+                overflow: scroll;
+            }
         }
     }
 

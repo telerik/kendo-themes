@@ -1,5 +1,9 @@
 $enable-shadows: true !default;
 
+$spacer: 1rem !default;
+
+$font-size-base: 1rem !default;
+
 $white:    #ffffff !default;
 $gray-100: #f8f9fa !default;
 $gray-200: #e9ecef !default;
@@ -34,3 +38,11 @@ $breadcrumb-bg: $component-bg !default;
 $table-bg: $component-bg !default;
 $table-color: $component-text !default;
 $table-border-color: $component-border !default;
+
+$popover-font-size: $font-size-base !default;
+
+$popover-header-bg: $component-bg !default;
+$popover-header-text: $component-text !default;
+$popover-header-border: $component-border !default;
+$popover-header-padding-x: $spacer !default;
+$popover-header-padding-y: $spacer !default;
