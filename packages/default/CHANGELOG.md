@@ -3,6 +3,29 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.41.0](https://github.com/telerik/kendo-themes/compare/v4.40.1...v4.41.0) (2021-08-13)
+
+
+### Bug Fixes
+
+* **gantt:** add treelist scrollable class ([0916bcd](https://github.com/telerik/kendo-themes/commit/0916bcdd562f406aa8950496e6b80dcf2912464e))
+* **grid:** import skeleton dependency ([632c4b8](https://github.com/telerik/kendo-themes/commit/632c4b83c0f40d4b91eb6767c29907e89d7aced6))
+* **grid:** reduce the padding with a pixel due to the wrap element border ([296a280](https://github.com/telerik/kendo-themes/commit/296a2802f4a9350a1f24552dd6642a15135841c8))
+* **pivotgrid:** apply the scrollbar padding to the table element ([c1511f9](https://github.com/telerik/kendo-themes/commit/c1511f9e7e4925c5c5e99aee7cd8265dc3712548))
+
+
+### Features
+
+* add captcha styles ([f0eef52](https://github.com/telerik/kendo-themes/commit/f0eef525d6fbc2bcae26f6502a78eb1073b4023c))
+* add orgchart styles ([2e237ef](https://github.com/telerik/kendo-themes/commit/2e237ef8b358a94869f8dfc3068dbcdabd2aa083))
+* add popover styles ([28f352c](https://github.com/telerik/kendo-themes/commit/28f352cdd80f777a11db5054f15c1e164e1d21b5))
+* **pager:** add focusable styles to component ([9971077](https://github.com/telerik/kendo-themes/commit/9971077fbf87e55209050925405578b59b9b42ef))
+* **tabstrip:** extend scrollable and sortable tabs styles ([29ae422](https://github.com/telerik/kendo-themes/commit/29ae422b08e2a6936563eed1898af329e24bf162))
+
+
+
+
+
 ## 4.40.1 (2021-07-28)
 
 **Note:** Version bump only for package @progress/kendo-theme-default
