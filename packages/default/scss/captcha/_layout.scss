@@ -7,7 +7,7 @@
         font-size: $captcha-font-size;
         font-family: $captcha-font-family;
         line-height: $captcha-line-height;
-        display: inline-flex;
+        display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
         gap: $captcha-gap;

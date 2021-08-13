@@ -11,6 +11,9 @@ $pager-bg: $header-bg !default;
 $pager-text: $header-text !default;
 $pager-border: $header-border !default;
 
+$pager-focus-bg: null !default;
+$pager-focus-shadow: inset 0 0 0 2px rgba( 0, 0, 0, .08) !default;
+
 $pager-section-spacing: map-get( $spacing, 4 ) !default;
 
 $pager-item-padding-x: $button-padding-y !default;

@@ -11,6 +11,9 @@ $pager-bg: $header-bg !default;
 $pager-text: $header-text !default;
 $pager-border: $component-border !default;
 
+$pager-focus-bg: null !default;
+$pager-focus-shadow: $focused-shadow !default;
+
 $pager-section-spacing: $spacer-x !default;
 
 $pager-item-padding-x: $button-padding-y !default;

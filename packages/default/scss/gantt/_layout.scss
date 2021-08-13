@@ -271,6 +271,12 @@
         .k-gantt-treelist-nested-columns .k-grid-header tr {
             height: calc( #{$line-height-em} + #{$grid-header-padding-y * 2} + 1px );
         }
+
+        &.k-gantt-treelist-scrollable {
+            .k-grid-content {
+                overflow: scroll;
+            }
+        }
     }
 
 
