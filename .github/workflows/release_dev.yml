@@ -49,11 +49,13 @@ jobs:
           dev=$(npm info @progress/kendo-theme-default@dev version)
           latest=$(npm info @progress/kendo-theme-default@latest version)
           inc=$(node ./scripts/semver-dev-inc.js --dev $dev --latest $latest)
+          echo "Lerna should publish using $inc"
+          echo "VERSION=$inc" >> $GITHUB_ENV
 
       - name: Lerna publish
         run: |
           printf "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> .npmrc
-          npx lerna publish $inc --preid dev --dist-tag dev --no-git-tag-version --no-push
+          npx lerna publish "$VERSION" --preid dev --dist-tag dev --no-git-tag-version --no-push
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
