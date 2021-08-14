@@ -72,7 +72,7 @@ $chat-quick-reply-hover-bg: $primary !default;
 $chat-quick-reply-hover-text: $primary-contrast !default;
 $chat-quick-reply-hover-border: $primary !default;
 
-$chat-message-box-bg: white !default;
+$chat-message-box-bg: $component-bg !default;
 $chat-message-box-text: $input-text !default;
 $chat-message-box-border: inherit !default;
 $chat-message-box-focus-shadow: 0 0 40px rgba( $input-text, .1 ) !default;
