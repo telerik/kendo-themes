@@ -20,7 +20,7 @@
         color: $splitbar-hover-text;
         background-color: $splitbar-hover-bg;
     }
-    .k-splitbar:active,
+    .k-splitbar:focus,
     .k-splitbar.k-state-focus,
     .k-splitbar.k-state-focused {
         color: $splitbar-selected-text;
