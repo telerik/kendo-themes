@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en" class="k-typography">
+<head>
+    <title>Scheduler jQUery Monthview</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+    <script src="../../assets/scripts.js"></script>
+
+    <style>
+        #test-area {
+            max-width: 1200px;
+            grid-template-columns: 1fr;
+            align-items: top;
+        }
+
+        .k-event {
+            --col: 1;
+            --row: 1;
+            --span: 1;
+            --slot: 1;
+            width: calc( ( (100% / 7) * var(--span) ) - 2px );
+            left: calc( ( (100% / 7) * (var(--col) - 1) ) + 1px );
+            top: calc( ( (100% / 6) * (var(--row) - 1) ) );
+            transform: translateY( calc( (100% * var( --slot )) + (1px * var( --slot )) ) );
+        }
+        .k-scheduler-monthview .k-scheduler-table td {
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="test-area">
+
+        <div class="k-widget k-scheduler">
+            <div class="k-scheduler-toolbar k-toolbar">
+                <span class="k-scheduler-navigation k-button-group">
+                    <button class="k-button k-nav-today" title="Today">
+                        <span class="k-button-text">Today</span>
+                    </button>
+                    <button class="k-button k-button-icon k-icon-button k-nav-prev" title="Previous" aria-label="Previous">
+                        <span class="k-icon k-i-arrow-60-left"></span>
+                    </button>
+                    <button class="k-button k-button-icon k-icon-button k-nav-next" title="Next" aria-label="Next">
+                        <span class="k-icon k-i-arrow-60-right"></span>
+                    </button>
+                </span>
+                <a role="button" href="#" class="k-nav-current">
+                    <span class="k-icon k-i-calendar"></span>
+                    <span class="k-sm-date-format" data-bind="text: formattedShortDate">June, 2013</span>
+                    <span class="k-lg-date-format" data-bind="text: formattedDate">June, 2013</span>
+                </a>
+                <span class="k-spacer k-toolbar-spacer"></span>
+                <span class="k-scheduler-views-wrapper">
+                    <select class="k-dropdown k-views-dropdown">
+                        <option>Month</option>
+                    </select>
+                    <span class="k-scheduler-views k-button-group">
+                        <button type="button" class="k-button k-view-month k-state-selected">Month</button>
+                    </span>
+                </span>
+            </div>
+            <table class="k-scheduler-layout k-scheduler-monthview k-scrollbar-v">
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="k-scheduler-header">
+                                <div class="k-scheduler-header-wrap">
+                                    <table class="k-scheduler-table">
+                                        <tbody>
+                                            <tr>
+                                                <th>Sunday</th>
+                                                <th>Monday</th>
+                                                <th>Tuesday</th>
+                                                <th>Wednesday</th>
+                                                <th>Thursday</th>
+                                                <th>Friday</th>
+                                                <th>Saturday</th>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="k-scheduler-content" style="height: 480px;">
+                                <table class="k-scheduler-table">
+                                    <tbody>
+                                        <tr>
+                                            <td class="k-other-month">
+                                                <span class="k-link k-nav-day">26</span>
+                                            </td>
+                                            <td class="k-other-month">
+                                                <span class="k-link k-nav-day">27</span>
+                                            </td>
+                                            <td class="k-other-month">
+                                                <span class="k-link k-nav-day">28</span>
+                                            </td>
+                                            <td class="k-other-month">
+                                                <span class="k-link k-nav-day">29</span>
+                                            </td>
+                                            <td class="k-other-month">
+                                                <span class="k-link k-nav-day">30</span>
+                                            </td>
+                                            <td class="k-other-month">
+                                                <span class="k-link k-nav-day">31</span>
+                                            </td>
+                                            <td>
+                                                <span class="k-link k-nav-day">01</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span class="k-link k-nav-day">02</span>
+                                            </td>
+                                            <td>
+                                                <span class="k-link k-nav-day">03</span>
+                                            </td>
+                                            <td>
+                                                <span class="k-link k-nav-day">04</span>
+                                            </td>
+                                            <td>
+                                                <span class="k-link k-nav-day">05</span>
+                                            </td>
+                                            <td>
+                                                <span class="k-link k-nav-day">06</span>
+                                            </td>
+                                            <td>
+                                                <span class="k-link k-nav-day">07</span>
+                                            </td>
+                                            <td>
+                                                <span class="k-link k-nav-day">08</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span class="k-link k-nav-day">09</span>
+                                            </td>
+                                            <td>
+                                                <span class="k-link k-nav-day">10</span>
+                                            </td>
+                                            <td>
+                                                <span class="k-link k-nav-day">11</span>
+                                            </td>
+                                            <td>
+                                                <span class="k-link k-nav-day">12</span>
+                                            </td>
+                                            <td>
+                                                <span class="k-link k-nav-day">13</span>
+                                            </td>
+                                            <td>
+                                                <span class="k-link k-nav-day">14</span>
+                                            </td>
+                                            <td>
+                                                <span class="k-link k-nav-day">15</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span class="k-link k-nav-day">16</span>
+                                            </td>
+                                            <td>
+                                                <span class="k-link k-nav-day">17</span>
+                                            </td>
+                                            <td>
+                                                <span class="k-link k-nav-day">18</span>
+                                            </td>
+                                            <td>
+                                                <span class="k-link k-nav-day">19</span>
+                                            </td>
+                                            <td>
+                                                <span class="k-link k-nav-day">20</span>
+                                            </td>
+                                            <td>
+                                                <span class="k-link k-nav-day">21</span>
+                                            </td>
+                                            <td>
+                                                <span class="k-link k-nav-day">22</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span class="k-link k-nav-day">23</span>
+                                            </td>
+                                            <td>
+                                                <span class="k-link k-nav-day">24</span>
+                                            </td>
+                                            <td>
+                                                <span class="k-link k-nav-day">25</span>
+                                            </td>
+                                            <td>
+                                                <span class="k-link k-nav-day">26</span>
+                                            </td>
+                                            <td>
+                                                <span class="k-link k-nav-day">27</span>
+                                            </td>
+                                            <td>
+                                                <span class="k-link k-nav-day">28</span>
+                                            </td>
+                                            <td>
+                                                <span class="k-link k-nav-day">29</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span class="k-link k-nav-day">30</span>
+                                            </td>
+                                            <td class=" k-other-month">
+                                                <span class="k-link k-nav-day">01</span>
+                                            </td>
+                                            <td class=" k-other-month">
+                                                <span class="k-link k-nav-day">02</span>
+                                            </td>
+                                            <td class=" k-other-month">
+                                                <span class="k-link k-nav-day">03</span>
+                                            </td>
+                                            <td class=" k-other-month">
+                                                <span class="k-link k-nav-day">04</span>
+                                            </td>
+                                            <td class=" k-other-month">
+                                                <span class="k-link k-nav-day">05</span>
+                                            </td>
+                                            <td class=" k-other-month">
+                                                <span class="k-link k-nav-day">06</span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <div style="background-color: rgb(245, 138, 138); border-color: rgb(245, 138, 138); --span: 1; --col: 2; --row: 2; --slot: 1; height: 25px;" class="k-event">
+                                    <span class="k-event-actions"><span class="k-icon k-i-reload"></span></span>
+                                    <div><div class="k-event-template">Dance Practice</div></div>
+                                </div>
+                                <div style="background-color: rgb(110, 179, 250); border-color: rgb(110, 179, 250); --span: 1; --col: 3; --row: 2; --slot: 1; height: 25px;" class="k-event">
+                                    <span class="k-event-actions"><span class="k-icon k-i-reload"></span></span>
+                                    <div><div class="k-event-template">HR Lecture</div></div>
+                                </div>
+                                <div style="background-color: rgb(245, 138, 138); border-color: rgb(245, 138, 138); --span: 1; --col: 4; --row: 2; --slot: 1; height: 25px;" class="k-event">
+                                    <span class="k-event-actions"><span class="k-icon k-i-reload"></span></span>
+                                    <div><div class="k-event-template">Dance Practice</div></div>
+                                </div>
+                                <div style="background-color: rgb(110, 179, 250); border-color: rgb(110, 179, 250); --span: 3; --col: 5; --row: 2; --slot: 1; height: 25px;" class="k-event">
+                                    <span class="k-event-actions"></span>
+                                    <div><div class="k-event-template">Attending HR Conference</div></div>
+                                </div>
+                                <div style="background-color: rgb(110, 179, 250); border-color: rgb(110, 179, 250); --span: 1; --col: 3; --row: 2; --slot: 2; height: 25px;" class="k-event">
+                                    <span class="k-event-actions"></span>
+                                    <div><div class="k-event-template">Software updates</div></div>
+                                </div>
+                                <div style="background-color: rgb(110, 179, 250); border-color: rgb(110, 179, 250); --span: 1; --col: 4; --row: 2; --slot: 2; height: 25px;" class="k-event">
+                                    <span class="k-event-actions"><span class="k-icon k-i-reload"></span></span>
+                                    <div><div class="k-event-template">Helpdesk weekly meeting</div></div>
+                                </div>
+                                <div style="background-color: rgb(110, 179, 250); border-color: rgb(110, 179, 250); --span: 3; --col: 5; --row: 2; --slot: 2; height: 25px;" class="k-event">
+                                    <span class="k-event-actions"></span>
+                                    <div><div class="k-event-template">Grand Canyon tour</div></div>
+                                </div>
+                                <div style="background-color: rgb(110, 179, 250); border-color: rgb(110, 179, 250); --span: 2; --col: 1; --row: 3; --slot: 1; height: 25px;" class="k-event">
+                                    <span class="k-event-actions"><span class="k-icon k-i-arrow-60-left"></span></span>
+                                    <div><div class="k-event-template">Attending HR Conference</div></div>
+                                </div>
+                                <div style="background-color: rgb(110, 179, 250); border-color: rgb(110, 179, 250); --span: 1; --col: 3; --row: 3; --slot: 1; height: 25px;" class="k-event">
+                                    <span class="k-event-actions"></span>
+                                    <div><div class="k-event-template">Business Lunch with Gregory Watkins</div></div>
+                                </div>
+                                <div style="background-color: rgb(110, 179, 250); border-color: rgb(110, 179, 250); --span: 2; --col: 4; --row: 3; --slot: 1; height: 25px;" class="k-event">
+                                    <span class="k-event-actions"></span>
+                                    <div><div class="k-event-template">Server maintenance</div></div>
+                                </div>
+                                <div style="background-color: rgb(110, 179, 250); border-color: rgb(110, 179, 250); --span: 1; --col: 6; --row: 3; --slot: 1; height: 25px;" class="k-event">
+                                    <span class="k-event-actions"></span>
+                                    <div><div class="k-event-template">Dentist</div></div>
+                                </div>
+                                <div style="background-color: rgb(110, 179, 250); border-color: rgb(110, 179, 250); --span: 1; --col: 7; --row: 3; --slot: 1; height: 25px;" class="k-event">
+                                    <span class="k-event-actions"></span>
+                                    <div><div class="k-event-template">Bob's Birthday Party</div></div>
+                                </div>
+                                <div style="background-color: rgb(110, 179, 250); border-color: rgb(110, 179, 250); --span: 1; --col: 1; --row: 3; --slot: 2; height: 25px;" class="k-event">
+                                    <span class="k-event-actions"><span class="k-icon k-i-arrow-60-left"></span></span>
+                                    <div><div class="k-event-template">Grand Canyon tour</div></div>
+                                </div>
+                                <div style="background-color: rgb(245, 138, 138); border-color: rgb(245, 138, 138); --span: 1; --col: 2; --row: 3; --slot: 2; height: 25px;" class="k-event">
+                                    <span class="k-event-actions"></span>
+                                    <div><div class="k-event-template">Car Service</div></div>
+                                </div>
+                                <div style="background-color: rgb(110, 179, 250); border-color: rgb(110, 179, 250); --span: 1; --col: 3; --row: 3; --slot: 2; height: 25px;" class="k-event">
+                                    <span class="k-event-actions"><span class="k-icon k-i-reload"></span></span>
+                                    <div><div class="k-event-template">HR Lecture</div></div>
+                                </div>
+                                <div style="background-color: rgb(245, 138, 138); border-color: rgb(245, 138, 138); --span: 1; --col: 4; --row: 3; --slot: 2; height: 25px;" class="k-event">
+                                    <span class="k-event-actions"></span>
+                                    <div><div class="k-event-template">Banking</div></div>
+                                </div>
+                                <div style="background-color: rgb(110, 179, 250); border-color: rgb(110, 179, 250); --span: 1; --col: 5; --row: 3; --slot: 2; height: 25px;" class="k-event">
+                                    <span class="k-event-actions"></span>
+                                    <div><div class="k-event-template">Breakfast with CFO and COO</div></div>
+                                </div>
+                                <div style="background-color: rgb(110, 179, 250); border-color: rgb(110, 179, 250); --span: 1; --col: 6; --row: 3; --slot: 2; height: 25px;" class="k-event">
+                                    <span class="k-event-actions"></span>
+                                    <div><div class="k-event-template">Job Interview - Laura Bailey</div></div>
+                                </div>
+                                <div style="background-color: rgb(110, 179, 250); border-color: rgb(110, 179, 250); --span: 1; --col: 7; --row: 3; --slot: 2; height: 25px;" class="k-event">
+                                    <span class="k-event-actions"></span>
+                                    <div><div class="k-event-template">Bob's Birthday</div></div>
+                                </div>
+                            </div>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+</body>
+</html>
