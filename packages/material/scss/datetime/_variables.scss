@@ -22,7 +22,7 @@ $time-list-item-padding-y: $padding-y !default;
 
 $dateinput-text: $component-text !default;
 
-$datetime-width: calc( #{$calendar-cell-size * 8} ) !default;
+$datetime-width: calc( #{$calendar-cell-size * 8} + #{$infinite-calendar-view-padding-x * 2}) !default;
 
 $datetime-bg: $input-bg !default;
 $datetime-text: $input-text !default;
