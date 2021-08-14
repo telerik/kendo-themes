@@ -1,7 +1,7 @@
 // Floating Action Button
 $fab-padding-x: $padding-x !default;
 $fab-padding-y: $fab-padding-x !default;
-$fab-border-width: 0 !default;
+$fab-border-width: 0px !default;
 $fab-border-radius: $border-radius * 2 !default;
 $fab-font-family: $font-family !default;
 $fab-font-size: $font-size !default;
@@ -20,7 +20,7 @@ $fab-icon-width: 20px !default;
 $fab-icon-height: $fab-icon-width !default;
 $fab-icon-spacing: map-get( $spacing, 1 ) !default;
 
-$fab-items-padding-x: 0 !default;
+$fab-items-padding-x: 0px !default;
 $fab-items-padding-y: map-get( $spacing, 4 ) !default;
 
 $fab-item-text-padding-x: map-get( $spacing, 1 ) !default;
