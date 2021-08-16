@@ -589,6 +589,7 @@
     // Task tooltip
     .k-task-details {
         padding: $padding-y $padding-x;
+        white-space: nowrap;
 
         strong {
             font-size: $font-size-lg;
