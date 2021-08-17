@@ -68,7 +68,7 @@
 
     .k-pivotgrid-column-headers .k-pivotgrid-table {
         padding-inline-start: 0;
-        padding-inline-end: calc(var(--kendo-scrollbar-width, #{$default-scrollbar-width} + 1px) - 1px );
+        padding-inline-end: calc( var(--kendo-scrollbar-width, #{$default-scrollbar-width}) - 1px );
     }
 
     .k-pivotgrid-column-headers .k-pivotgrid-cell {
