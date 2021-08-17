@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en" class="k-typography k-no-animations">
 <head>
-    <title>ScrollView -- jQuery</title>
+    <title>ScrollView -- Angular</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
     <link rel="stylesheet" href="../../assets/styles.css" />
@@ -22,24 +22,24 @@
 
     <div id="test-area" class="k-d-grid k-grid-cols-3">
 
-        <span class="k-colspan-all">jQuery scrollview</span>
+        <span class="k-colspan-all">Angular scrollview</span>
 
         <span>Light mode</span>
         <span>Normal</span>
         <span>Dark mode</span>
 
-        <div class="k-widget k-scrollview k-scrollview-light">
-            <div class="k-scrollview-wrap" style="transform: translateX(0px);">
-                <div>
+        <kendo-scrollview class="k-widget k-scrollview k-scrollview-light">
+            <ul class="k-scrollview-wrap">
+                <li style="transform: translateX(-100%);">
                     <!-- template -->
-                </div>
-                <div>
+                </li>
+                <li style="transform: translateX(0%);">
                     <!-- template -->
-                </div>
-                <div>
+                </li>
+                <li style="transform: translateX(100%);">
                     <!-- template -->
-                </div>
-            </div>
+                </li>
+            </ul>
             <div class="k-scrollview-elements">
                 <a class="k-scrollview-prev">
                     <span class="k-icon k-i-arrowhead-w"></span>
@@ -47,7 +47,7 @@
                 <a class="k-scrollview-next">
                     <span class="k-icon k-i-arrowhead-e"></span>
                 </a>
-                <div class="k-scrollview-nav-wrap">
+                <kendo-scrollview-pager class="k-scrollview-nav-wrap">
                     <ul class="k-scrollview-nav">
                         <li class="k-link"></li>
                         <li class="k-link k-primary"></li>
@@ -55,22 +55,22 @@
                         <li class="k-link k-state-focused"></li>
                         <li class="k-link"></li>
                     </ul>
-                </div>
+                </kendo-scrollview-pager>
             </div>
-        </div>
+        </kendo-scrollview>
 
-        <div class="k-widget k-scrollview">
-            <div class="k-scrollview-wrap" style="transform: translateX(0px);">
-                <div>
+        <kendo-scrollview class="k-widget k-scrollview">
+            <ul class="k-scrollview-wrap">
+                <li style="transform: translateX(-100%);">
                     <!-- template -->
-                </div>
-                <div>
+                </li>
+                <li style="transform: translateX(0%);">
                     <!-- template -->
-                </div>
-                <div>
+                </li>
+                <li style="transform: translateX(100%);">
                     <!-- template -->
-                </div>
-            </div>
+                </li>
+            </ul>
             <div class="k-scrollview-elements">
                 <a class="k-scrollview-prev">
                     <span class="k-icon k-i-arrowhead-w"></span>
@@ -78,7 +78,7 @@
                 <a class="k-scrollview-next">
                     <span class="k-icon k-i-arrowhead-e"></span>
                 </a>
-                <div class="k-scrollview-nav-wrap">
+                <kendo-scrollview-pager class="k-scrollview-nav-wrap">
                     <ul class="k-scrollview-nav">
                         <li class="k-link" style="transform: scale(0.5)"></li>
                         <li class="k-link" style="transform: scale(0.65)"></li>
@@ -90,22 +90,22 @@
                         <li class="k-link" style="transform: scale(0.65)"></li>
                         <li class="k-link" style="transform: scale(0.5)"></li>
                     </ul>
-                </div>
+                </kendo-scrollview-pager>
             </div>
-        </div>
+        </kendo-scrollview>
 
-        <div class="k-widget k-scrollview k-scrollview-dark">
-            <div class="k-scrollview-wrap" style="transform: translateX(0px);">
-                <div>
+        <kendo-scrollview class="k-widget k-scrollview k-scrollview-dark">
+            <ul class="k-scrollview-wrap">
+                <li style="transform: translateX(-100%);">
                     <!-- template -->
-                </div>
-                <div>
+                </li>
+                <li style="transform: translateX(0%);">
                     <!-- template -->
-                </div>
-                <div>
+                </li>
+                <li style="transform: translateX(100%);">
                     <!-- template -->
-                </div>
-            </div>
+                </li>
+            </ul>
             <div class="k-scrollview-elements">
                 <a class="k-scrollview-prev">
                     <span class="k-icon k-i-arrowhead-w"></span>
@@ -113,7 +113,7 @@
                 <a class="k-scrollview-next">
                     <span class="k-icon k-i-arrowhead-e"></span>
                 </a>
-                <div class="k-scrollview-nav-wrap">
+                <kendo-scrollview-pager class="k-scrollview-nav-wrap">
                     <ul class="k-scrollview-nav">
                         <li class="k-link" style="transform: scale(0.5)"></li>
                         <li class="k-link" style="transform: scale(0.65)"></li>
@@ -123,9 +123,9 @@
                         <li class="k-link" style="transform: scale(0.65)"></li>
                         <li class="k-link" style="transform: scale(0.5)"></li>
                     </ul>
-                </div>
+                </kendo-scrollview-pager>
             </div>
-        </div>
+        </kendo-scrollview>
 
     </div>
 
