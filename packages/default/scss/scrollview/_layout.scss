@@ -47,6 +47,23 @@
         }
     }
 
+
+    // Blazor rendering
+    .k-scrollview-wrap.k-scrollview-animate {
+        display: flex;
+        flex-flow: row nowrap;
+        width: calc( var(--kendo-scrollview-views, 1) * 100% );
+        transition-duration: $scrollview-transition-duration;
+        transition-timing-function: $scrollview-transition-timing-function;
+        transform: translateX( calc( -1 * ( 100% / var(--kendo-scrollview-views, 1) * ( var(--kendo-scrollview-current, 1) - 1) ) ) );
+
+        .k-scrollview-view {
+            width: calc( 100% / var(--kendo-scrollview-views, 1) );
+            flex: 0 0 calc( 100% / var(--kendo-scrollview-views, 1) );
+        }
+    }
+
+
     kendo-scrollview.k-scrollview-wrap kendo-scrollview-pager,
     kendo-scrollview.k-scrollview kendo-scrollview-pager,
     .k-scrollview-nav-wrap {
