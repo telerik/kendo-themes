@@ -158,6 +158,17 @@
             }
         }
 
+        // Angular gantt
+        kendo-gantt-timeline {
+            height: 100%;
+            display: flex;
+
+            .k-gantt-timeline {
+                min-width: 100%;
+                overflow: hidden;
+            }
+        }
+
         // Dependency lines SVG
         .k-gantt-dependencies-svg {
             position: absolute;
