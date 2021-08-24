@@ -33,3 +33,5 @@ $multiselect-button-focused-text: $button-active-text !default;
 $multiselect-button-focused-border: $button-active-border !default;
 $multiselect-button-focused-gradient: $button-active-gradient !default;
 $multiselect-button-focused-shadow: $button-active-shadow !default;
+
+$multiselect-clear-right: calc( #{$icon-size} + #{$input-padding-y} ) !default;
