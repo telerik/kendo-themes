@@ -1,0 +1,19 @@
+@include exports("typography/theme") {
+
+    @if $enable-typography {
+        code { @extend .k-code; }
+        pre { @extend .k-code; }
+    }
+
+    // Code
+    // Uncomment tag selectors for R1 2022
+    // pre,
+    // code,
+    .k-code {
+        @include fill(
+            $code-text,
+            $code-bg,
+            $code-border
+        );
+    }
+}
