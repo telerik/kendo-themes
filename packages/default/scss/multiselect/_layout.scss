@@ -120,6 +120,25 @@
                     visibility: visible;
                 }
             }
+
+            // Select
+            > .k-select {
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: $input-icon-width;
+                height: $input-icon-height;
+                flex-shrink: 0;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                outline: 0;
+                cursor: pointer;
+            }
+        }
+
+        .k-multiselect-wrap.k-multiselect-wrap-arrow .k-clear-value {
+            right: $multiselect-clear-right;
         }
 
 
@@ -161,12 +180,23 @@
                     margin-right: $padding-y-sm;
                     margin-left: 0;
                 }
+
+                // Select
+                > .k-select {
+                    left: 0;
+                    right: auto;
+                }
             }
 
             .k-clear-value,
             .k-i-loading {
                 right: auto;
                 left: 0;
+            }
+
+            .k-multiselect-wrap.k-multiselect-wrap-arrow .k-clear-value {
+                left: $multiselect-clear-right;
+                right: auto;
             }
         }
     }
