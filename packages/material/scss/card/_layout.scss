@@ -1,8 +1,1 @@
 @import "~@progress/kendo-theme-default/scss/card/_layout.scss";
-
-@include exports( "timeline/card/material" ) {
-    .k-card-title,
-    .k-card-subtitle {
-        font-weight: 500;
-    }
-}
