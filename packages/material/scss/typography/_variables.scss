@@ -1,5 +1,9 @@
 // Typography
 
+/// Global typography styles for the Kendo Material theme.
+/// @group typography
+$enable-typography: false !default;
+
 /// Base font size across all components.
 /// @group typography
 $font-size: 14px !default;
@@ -33,20 +37,84 @@ $font-weight-normal: 400 !default;
 $font-weight-bold: 500 !default;
 
 
-// Headings
-$h1-font-size: 24px !default;
-$h2-font-size: 20px !default;
-$h3-font-size: 16px !default;
-$h4-font-size: 15px !default;
-$h5-font-size: ($font-size * .83) !default;
-$h6-font-size: ($font-size * .67) !default;
+// Letter Spacing
+$letter-spacing: null !default;
 
-$h1-margin-bottom: 12px !default;
-$h2-margin-bottom: 12px !default;
-$h3-margin-bottom: 12px !default;
-$h4-margin-bottom: 12px !default;
-$h5-margin-bottom: 12px !default;
-$h6-margin-bottom: 12px !default;
+
+// Headings
+$h1-font-size: 96px !default;
+$h2-font-size: 60px !default;
+$h3-font-size: 48px !default;
+$h4-font-size: 34px !default;
+$h5-font-size: 24px !default;
+$h6-font-size: 20px !default;
+
+$h1-font-family: $font-family !default;
+$h2-font-family: $font-family !default;
+$h3-font-family: $font-family !default;
+$h4-font-family: $font-family !default;
+$h5-font-family: $font-family !default;
+$h6-font-family: $font-family !default;
+
+$h1-line-height: 96px !default;
+$h2-line-height: 60px !default;
+$h3-line-height: 50px !default;
+$h4-line-height: 40px !default;
+$h5-line-height: 32px !default;
+$h6-line-height: 32px !default;
+
+$h1-font-weight: $font-weight-light !default;
+$h2-font-weight: $font-weight-light !default;
+$h3-font-weight: $font-weight-normal !default;
+$h4-font-weight: $font-weight-normal !default;
+$h5-font-weight: $font-weight-normal !default;
+$h6-font-weight: $font-weight-bold !default;
+
+$h1-letter-spacing: -1.5px !default;
+$h2-letter-spacing: -.5px !default;
+$h3-letter-spacing: 0px !default;
+$h4-letter-spacing: .25px !default;
+$h5-letter-spacing: 0px !default;
+$h6-letter-spacing: .15px !default;
+
+$h1-margin: 0 0 12px !default;
+$h2-margin: 0 0 12px !default;
+$h3-margin: 0 0 12px !default;
+$h4-margin: 0 0 12px !default;
+$h5-margin: 0 0 12px !default;
+$h6-margin: 0 0 12px !default;
+
+
+// Paragraph
+$paragraph-margin: 0 0 12px !default;
+$paragraph-font-size: 1rem !default;
+$paragraph-font-family: $font-family !default;
+$paragraph-line-height: $line-height-lg !default;
+$paragraph-font-weight: $font-weight-normal !default;
+$paragraph-letter-spacing: .03125em !default;
+
+
+// Code
+$code-font-size: $font-size !default;
+$code-font-family: $font-family-monospace !default;
+$code-line-height: $line-height !default;
+$code-font-weight: $font-weight-normal !default;
+$code-letter-spacing: null !default;
+
+$code-padding-x: null !default;
+$code-padding-y: 4px !default;
+$pre-padding-x: 24px !default;
+$pre-padding-y: 16px !default;
+$code-border-width: 1px !default;
+
+$code-bg: $base-bg !default;
+$code-text: $component-text !default;
+$code-border: $component-border !default;
+
+
+// Link
+$link-text: $secondary !default;
+$link-hover-text: $secondary-darker !default;
 
 
 // Display
@@ -55,34 +123,22 @@ $display2-font-size: 56px !default;
 $display3-font-size: 45px !default;
 $display4-font-size: 34px !default;
 
+$display1-font-family: $font-family !default;
+$display2-font-family: $font-family !default;
+$display3-font-family: $font-family !default;
+$display4-font-family: $font-family !default;
 
-// Paragraph
-$paragraph-margin-bottom: 12px !default;
+$display1-line-height: 1.2 !default;
+$display2-line-height: 1.2 !default;
+$display3-line-height: 1.2 !default;
+$display4-line-height: 1.2 !default;
 
+$display1-font-weight: $font-weight-light !default;
+$display2-font-weight: $font-weight-normal !default;
+$display3-font-weight: $font-weight-normal !default;
+$display4-font-weight: $font-weight-normal !default;
 
-// Link
-$link-text: $secondary !default;
-$link-hover-text: $secondary-darker !default;
-
-
-// Config maps
-$typography-config: () !default;
-// sass-lint:disable indentation
-$typography-config: map-merge((
-    display-1: font-map( $font-family, $display1-font-size, 112px, $font-weight-light, -.05em ),
-    display-2: font-map( $font-family, $display2-font-size, 56px, $font-weight-normal, -.02em ),
-    display-3: font-map( $font-family, $display3-font-size, 48px, $font-weight-normal, -.005em ),
-    display-4: font-map( $font-family, $display4-font-size, 40px, $font-weight-normal ),
-    h1: font-map( $font-family, $h1-font-size, 1.25, $font-weight-normal ),
-    h2: font-map( $font-family, $h2-font-size, 1.5, $font-weight-bold ),
-    h3: font-map( $font-family, $h3-font-size, 1.5, $font-weight-normal ),
-    h4: font-map( $font-family, $h4-font-size, 24px, $font-weight-normal ),
-    h5: font-map( $font-family, $h5-font-size, $line-height, $font-weight-normal ),
-    h6: font-map( $font-family, $h6-font-size, $line-height, $font-weight-normal ),
-    body: font-map( $font-family, $font-size, $line-height, $font-weight-normal )
-), $typography-config);
-$typography-config: map-merge((
-    card-title: map-get($typography-config, h1),
-    card-subtitle: font-map( $font-family, $font-size, (20 / 14), $font-weight-normal )
-), $typography-config);
-// sass-lint:enable indentation
+$display1-letter-spacing: null !default;
+$display2-letter-spacing: null !default;
+$display3-letter-spacing: null !default;
+$display4-letter-spacing: null !default;

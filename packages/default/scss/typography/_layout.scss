@@ -1,61 +1,174 @@
 @include exports( "typography/layout" ) {
 
+    @if $enable-typography {
+        body { @extend .k-body; }
+        h1 { @extend .k-h1; }
+        h2 { @extend .k-h2; }
+        h3 { @extend .k-h3; }
+        h4 { @extend .k-h4; }
+        h5 { @extend .k-h5; }
+        h6 { @extend .k-h6; }
+        p { @extend .k-paragraph; }
+        pre,
+        code {
+            @extend .k-code;
+        }
+    }
+
+    // TODO delete k-typography class for R1 2022
     .k-body,
     .k-typography {
+        @include typography(
+            $font-size,
+            $font-family,
+            $line-height,
+            $font-weight-normal,
+            $letter-spacing
+        );
         margin: 0;
 
-        @include typography(
-            // handle html.k-typography with styles already present
-            if( get-font-family( $typography-config, body ) == inherit, null, get-font-family( $typography-config, body ) ),
-            get-font-size( $typography-config, body ),
-            get-line-height( $typography-config, body ),
-            get-font-weight( $typography-config, body ),
-            get-letter-spacing( $typography-config, body )
-        );
-
         p {
-            margin: 0 0 $paragraph-margin-bottom;
+            margin: $paragraph-margin;
         }
     }
 
     // Headings
     .k-h1 {
-        @include typography( map-get($typography-config, h1) );
-        margin: 0 0 $h1-margin-bottom;
+        @include typography(
+            $h1-font-size,
+            $h1-font-family,
+            $h1-line-height,
+            $h1-font-weight,
+            $h1-letter-spacing
+        );
+        margin: $h1-margin;
     }
     .k-h2 {
-        @include typography( map-get($typography-config, h2) );
-        margin: 0 0 $h2-margin-bottom;
+        @include typography(
+            $h2-font-size,
+            $h2-font-family,
+            $h2-line-height,
+            $h2-font-weight,
+            $h2-letter-spacing
+        );
+        margin: $h2-margin;
     }
     .k-h3 {
-        @include typography( map-get($typography-config, h3) );
-        margin: 0 0 $h3-margin-bottom;
+        @include typography(
+            $h3-font-size,
+            $h3-font-family,
+            $h3-line-height,
+            $h3-font-weight,
+            $h3-letter-spacing
+        );
+        margin: $h3-margin;
     }
     .k-h4 {
-        @include typography( map-get($typography-config, h4) );
-        margin: 0 0 $h4-margin-bottom;
+        @include typography(
+            $h4-font-size,
+            $h4-font-family,
+            $h4-line-height,
+            $h4-font-weight,
+            $h4-letter-spacing
+        );
+        margin: $h4-margin;
     }
     .k-h5 {
-        @include typography( map-get($typography-config, h5) );
-        margin: 0 0 $h5-margin-bottom;
+        @include typography(
+            $h5-font-size,
+            $h5-font-family,
+            $h5-line-height,
+            $h5-font-weight,
+            $h5-letter-spacing
+        );
+        margin: $h5-margin;
     }
     .k-h6 {
-        @include typography( map-get($typography-config, h6) );
-        margin: 0 0 $h6-margin-bottom;
+        @include typography(
+            $h6-font-size,
+            $h6-font-family,
+            $h6-line-height,
+            $h6-font-weight,
+            $h6-letter-spacing
+        );
+        margin: $h6-margin;
+    }
+
+    // Paragraph
+    .k-paragraph {
+        @include typography(
+            $paragraph-font-size,
+            $paragraph-font-family,
+            $paragraph-line-height,
+            $paragraph-font-weight,
+            $paragraph-letter-spacing
+        );
+        margin: $paragraph-margin;
+    }
+
+    // Code
+    .k-code {
+        @include typography(
+            $code-font-size,
+            $code-font-family,
+            $code-line-height,
+            $code-font-weight,
+            $code-letter-spacing
+        );
+        border-style: solid;
+        border-width: $code-border-width;
+    }
+
+    code.k-code {
+        padding: $code-padding-y $code-padding-x;
+    }
+
+    pre.k-code {
+        padding: $pre-padding-y $pre-padding-x;
+        overflow: auto;
+    }
+
+    // (R1 2022) pre > code,
+    .k-code > code {
+        border-width: 0;
+        font-family: inherit;
     }
 
     // Display
     .k-display-1 {
-        @include typography( map-get($typography-config, display-1) );
+        @include typography(
+            $display1-font-size,
+            $display1-font-family,
+            $display1-line-height,
+            $display1-font-weight,
+            $display1-letter-spacing
+        );
     }
     .k-display-2 {
-        @include typography( map-get($typography-config, display-2) );
+        @include typography(
+            $display2-font-size,
+            $display2-font-family,
+            $display2-line-height,
+            $display2-font-weight,
+            $display2-letter-spacing
+        );
     }
     .k-display-3 {
-        @include typography( map-get($typography-config, display-3) );
+        @include typography(
+            $display3-font-size,
+            $display3-font-family,
+            $display3-line-height,
+            $display3-font-weight,
+            $display3-letter-spacing
+        );
     }
     .k-display-4 {
-        @include typography( map-get($typography-config, display-4) );
+        @include typography(
+            $display4-font-size,
+            $display4-font-family,
+            $display4-line-height,
+            $display4-font-weight,
+            $display4-letter-spacing
+        );
     }
-
 }

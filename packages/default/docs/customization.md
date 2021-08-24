@@ -1319,6 +1319,16 @@ The following table lists the available variables for customizing the Default th
 </thead>
 <tbody>
         <tr>
+    <td>$enable-typography</td>
+    <td></td>
+    <td>false</td>
+    <td>false</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Global typography styles for the Kendo Default theme.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$font-size</td>
     <td></td>
     <td>14px</td>
