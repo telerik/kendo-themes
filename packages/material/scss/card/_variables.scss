@@ -37,8 +37,19 @@ $card-footer-bg: null !default;
 $card-footer-text: null !default;
 $card-footer-border: $card-border !default;
 
-$card-title-margin-bottom: $h1-margin-bottom !default;
-$card-subtitle-margin-bottom: $paragraph-margin-bottom !default;
+$card-title-margin-bottom: 12px !default;
+$card-title-font-size: $h5-font-size !default;
+$card-title-font-family: $font-family !default;
+$card-title-line-height: 1.25 !default;
+$card-title-font-weight: 500 !default;
+$card-title-letter-spacing: null !default;
+
+$card-subtitle-margin-bottom: 12px !default;
+$card-subtitle-font-size: $font-size !default;
+$card-subtitle-font-family: $font-family !default;
+$card-subtitle-line-height: (20 / 14) !default;
+$card-subtitle-font-weight: 500 !default;
+$card-subtitle-letter-spacing: null !default;
 $card-subtitle-text: $subtle-text !default;
 
 $card-img-max-width: 100px !default;

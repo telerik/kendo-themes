@@ -80,7 +80,7 @@
         flex: 1 1 auto;
 
         p {
-            margin: 0 0 $paragraph-margin-bottom;
+            margin: $paragraph-margin;
         }
 
         > .k-last,
@@ -126,15 +126,27 @@
 
     // Card title
     .k-card-title {
-        @include typography( map-get( $typography-config, card-title ) );
         margin: 0 0 $card-title-margin-bottom;
+        @include typography(
+            $card-title-font-size,
+            $card-title-font-family,
+            $card-title-line-height,
+            $card-title-font-weight,
+            $card-title-letter-spacing
+        );
     }
 
 
     // Card subtitle
     .k-card-subtitle {
-        @include typography( map-get( $typography-config, card-subtitle ) );
         margin: 0 0 $card-subtitle-margin-bottom;
+        @include typography(
+            $card-subtitle-font-size,
+            $card-subtitle-font-family,
+            $card-subtitle-line-height,
+            $card-subtitle-font-weight,
+            $card-subtitle-letter-spacing
+        );
     }
 
 

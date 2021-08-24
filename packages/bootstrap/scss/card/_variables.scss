@@ -38,7 +38,18 @@ $card-footer-text: $card-header-text !default;
 $card-footer-border: $card-header-border !default;
 
 $card-title-margin-bottom: map-get( $spacing, md ) !default;
+$card-title-font-size: $h5-font-size !default;
+$card-title-font-family: $headings-font-family !default;
+$card-title-line-height: $headings-line-height !default;
+$card-title-font-weight:  $headings-font-weight !default;
+$card-title-letter-spacing: null !default;
+
 $card-subtitle-margin-bottom: map-get( $spacing, md ) !default;
+$card-subtitle-font-size: $h6-font-size !default;
+$card-subtitle-font-family: $headings-font-family !default;
+$card-subtitle-line-height: $headings-line-height !default;
+$card-subtitle-font-weight: $headings-font-weight !default;
+$card-subtitle-letter-spacing: null !default;
 $card-subtitle-text: $subtle-text !default;
 
 $card-img-max-width: 100px !default;
