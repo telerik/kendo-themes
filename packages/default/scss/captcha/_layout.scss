@@ -26,6 +26,7 @@
 
     .k-captcha-image {
         width: 100%;
+        height: 100%;
         overflow: hidden;
     }
 
@@ -34,6 +35,11 @@
         height: 100%;
         display: block;
         object-fit: cover;
+    }
+
+    // Loading
+    .k-captcha-loading .k-captcha-image {
+        height: auto;
     }
 
     // Volume Control
