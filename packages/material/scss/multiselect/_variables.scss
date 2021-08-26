@@ -41,3 +41,5 @@ $multiselect-token-selected-border: null !default;
 
 $multiselect-remove-token-text: $subtle-text !default;
 $multiselect-remove-token-hover-text: $body-text !default;
+
+$multiselect-clear-right: calc( #{$icon-size} + #{$input-padding-y} ) !default;
