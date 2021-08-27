@@ -1,6 +1,9 @@
 @include exports( "typography/layout" ) {
 
+    .k-body,
     .k-typography {
+        margin: 0;
+
         @include typography(
             // handle html.k-typography with styles already present
             if( get-font-family( $typography-config, body ) == inherit, null, get-font-family( $typography-config, body ) ),
