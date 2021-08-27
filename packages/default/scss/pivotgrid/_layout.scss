@@ -285,7 +285,7 @@
         }
 
         .k-settings-description {
-            margin-top: 1rem;
+            margin-top: map-get( $spacing, 4 );
             text-align: center;
         }
 
