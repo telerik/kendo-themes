@@ -7,10 +7,10 @@ $form-line-height-em: $form-line-height * 1em !default;
 $form-line-height-sm: $line-height-sm !default;
 $form-line-height-lg: $line-height-lg !default;
 
-$form-fieldset-margin: 2rem 0 0 !default;
+$form-fieldset-margin: 2em 0 0 !default;
 $form-fieldset-padding: 0px !default;
 
-$form-legend-margin: 0 0 1rem !default;
+$form-legend-margin: 0 0 1em !default;
 $form-legend-padding: 0px !default;
 $form-legend-border-width: 0 0 2px !default;
 $form-legend-border-style: solid !default;
@@ -27,7 +27,7 @@ $form-hint-font-size: 12px !default;
 $form-hint-font-style: normal !default;
 $form-hint-margin-top: 4px !default;
 
-$form-field-margin-top: 1rem !default;
+$form-field-margin-top: 1em !default;
 
 $form-separator-margin: $form-field-margin-top 0 0 !default;
 $form-separator-border-color: $form-legend-border-color !default;
