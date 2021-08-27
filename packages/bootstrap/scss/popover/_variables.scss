@@ -6,7 +6,7 @@ $popover-font-size: $card-font-size !default;
 $popover-font-family: $card-font-family !default;
 $popover-line-height: $card-line-height !default;
 $popover-bg: $card-bg !default;
-$popover-text: $card-text !default;
+$popover-text: if( $dark-theme, contrast-wcag( $popover-bg ), $card-text ) !default;
 $popover-border: $card-border !default;
 $popover-shadow: $card-shadow !default;
 

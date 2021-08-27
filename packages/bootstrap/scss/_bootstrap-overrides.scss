@@ -41,8 +41,8 @@ $table-border-color: $component-border !default;
 
 $popover-font-size: $font-size-base !default;
 
-$popover-header-bg: $component-bg !default;
-$popover-header-text: $component-text !default;
-$popover-header-border: $component-border !default;
+$popover-header-bg: $white !default;
+$popover-header-text: contrast-wcag( $popover-header-bg, $gray-900, $gray-100 ) !default;
+$popover-header-border: contrast-wcag( $popover-header-bg, $gray-300, $gray-700 ) !default;
 $popover-header-padding-x: $spacer !default;
 $popover-header-padding-y: $spacer !default;
