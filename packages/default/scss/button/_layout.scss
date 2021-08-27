@@ -221,6 +221,7 @@
     // Flat button and bare
     .k-button-flat {
         border-color: transparent !important; // sass-lint:disable-line no-important
+        color: inherit;
         background: none !important; // sass-lint:disable-line no-important
         box-shadow: none !important; // sass-lint:disable-line no-important
         transition: color .2s ease-in-out;

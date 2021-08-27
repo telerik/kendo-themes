@@ -252,7 +252,7 @@
         &.k-state-active,
         &:focus,
         &.k-state-focus {
-            color: $body-text;
+            color: inherit;
         }
     }
     .k-button-flat.k-primary {
