@@ -689,7 +689,7 @@ $palettes: (
 
 $material-dark-complimentary: (
     is-dark: true,
-    body-bg: #303030,
+    body-bg: #121212,
     body-text: $light-primary-text,
     subtle-text: $light-secondary-text,
     disabled-text: $light-disabled-text,
@@ -705,7 +705,7 @@ $material-dark-complimentary: (
 
 $material-light-complimentary: (
     is-dark: false,
-    body-bg: get-base-hue( gray, 50 ),
+    body-bg: $white,
     body-text: get-base-contrast( gray, 50 ),
     subtle-text: $dark-secondary-text,
     disabled-text: $dark-disabled-text,
