@@ -1,8 +1,10 @@
 @include exports("typography/theme") {
 
-    @if $enable-typography {
-        code { @extend .k-code; }
-        pre { @extend .k-code; }
+    .k-body {
+        @include fill(
+            $body-text,
+            $body-bg
+        );
     }
 
     // Code
