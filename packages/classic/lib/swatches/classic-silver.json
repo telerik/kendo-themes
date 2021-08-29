@@ -3,7 +3,6 @@
     "name": "Classic Silver",
     "product": "kendo",
     "base": "@progress/kendo-theme-classic",
-    "hidden": false,
     "previewColors": [
         "#ffffff",
         "#f3f3f4",
@@ -14,7 +13,6 @@
     "components": [],
     "groups": [
         {
-            "name": "",
             "variables": {
                 "border-radius": {
                     "name": "Border radius",

@@ -3,10 +3,9 @@
     "name": "Classic Main",
     "product": "kendo",
     "base": "@progress/kendo-theme-classic",
-    "hidden": false,
     "previewColors": [
         "#ffffff",
-        "#e9e9e9",
+        "#f0f0f0",
         "#f35800",
         "#cc4a00",
         "#272727"
@@ -14,7 +13,6 @@
     "components": [],
     "groups": [
         {
-            "name": "",
             "variables": {
                 "border-radius": {
                     "name": "Border radius",
@@ -109,7 +107,7 @@
                 "base-bg": {
                     "name": "Header background",
                     "type": "color",
-                    "value": "#e9e9e9"
+                    "value": "#f0f0f0"
                 },
                 "hovered-text": {
                     "name": "Hover text color",
@@ -119,7 +117,7 @@
                 "hovered-bg": {
                     "name": "Hover background",
                     "type": "color",
-                    "value": "#d6d6d6"
+                    "value": "#bababa"
                 },
                 "selected-text": {
                     "name": "Selected text color",
@@ -144,7 +142,7 @@
                 "button-bg": {
                     "name": "Button background",
                     "type": "color",
-                    "value": "#e9e9e9"
+                    "value": "#f0f0f0"
                 }
             }
         },
