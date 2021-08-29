@@ -86,9 +86,9 @@ $nav-item-padding-x: map-get( $spacing, 2 ) !default;
 $nav-item-padding-y: map-get( $spacing, 1 ) !default;
 
 $table-cell-padding-x: map-get( $spacing, 2 ) !default;
-$table-cell-padding-y: map-get( $spacing, 1 ) !default;
-$header-cell-padding-x: map-get( $spacing, 2 ) !default;
-$header-cell-padding-y: map-get( $spacing, 1 ) !default;
+$table-cell-padding-y: map-get( $spacing, 2 ) !default;
+$header-cell-padding-x: map-get( $spacing, 3 ) !default;
+$header-cell-padding-y: map-get( $spacing, 2 ) !default;
 
 $zindex-popup: 1 !default;
 $zindex-window: 2 !default;
@@ -232,13 +232,13 @@ $app-border: try-shade( $app-bg, 2 ) !default;
 
 
 /// The background of the components' chrome area.
-$base-bg: $secondary !default;
+$base-bg: #f0f0f0 !default;
 /// The text color of the components' chrome area.
 $base-text: $body-text !default;
 /// The border color of the components' chrome area.
 $base-border: try-shade( $base-bg, 2 ) !default;
 /// The gradient background of the components' chrome area.
-$base-gradient: rgba( white, .2 ), rgba( white, 0 ) !default;
+$base-gradient: rgba( white, .1 ), rgba( white, 0 ) !default;
 
 /// The background of hovered items.
 $hovered-bg: try-shade( $base-bg, 1 ) !default;
