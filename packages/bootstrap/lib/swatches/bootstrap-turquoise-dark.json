@@ -1,14 +1,14 @@
 {
     "$schema": "https://unpkg.com/@progress/kendo-theme-tasks@1.11.0/lib/schemas/kendo-swatch.json",
-    "name": "Classic Silver Dark",
+    "name": "Bootstrap Turquoise Dark",
     "product": "kendo",
-    "base": "@progress/kendo-theme-classic",
+    "base": "@progress/kendo-theme-bootstrap",
     "previewColors": [
-        "#ffffff",
-        "#f5f5f5",
-        "#ff6358",
-        "#d6534a",
-        "#424242"
+        "#000000",
+        "#292b2c",
+        "#10c4b2",
+        "#0c9587",
+        "#ffffff"
     ],
     "components": [],
     "groups": [
@@ -23,12 +23,11 @@
             }
         },
         {
-            "name": "",
             "variables": {
                 "border-radius": {
                     "name": "Border radius",
                     "type": "number",
-                    "value": "2px"
+                    "value": "0.25rem"
                 }
             }
         },
@@ -38,62 +37,62 @@
                 "primary": {
                     "name": "Primary",
                     "type": "color",
-                    "value": "#ff6358"
+                    "value": "#10c4b2"
                 },
                 "secondary": {
                     "name": "Secondary",
                     "type": "color",
-                    "value": "#f6f6f6"
+                    "value": "#6c757d"
                 },
                 "info": {
                     "name": "Info",
                     "type": "color",
-                    "value": "#3e80ed"
+                    "value": "#3dbfe6"
                 },
                 "success": {
                     "name": "Success",
                     "type": "color",
-                    "value": "#5ec232"
+                    "value": "#7fbf4b"
                 },
                 "warning": {
                     "name": "Warning",
                     "type": "color",
-                    "value": "#fdce3e"
+                    "value": "#ffb752"
                 },
                 "error": {
                     "name": "Error",
                     "type": "color",
-                    "value": "#d51923"
+                    "value": "#e35d59"
                 }
             }
         },
         {
             "name": "Body",
             "variables": {
-                "body-text": {
+                "body-color": {
                     "name": "Body text color",
                     "type": "color",
-                    "value": "#424242"
+                    "value": "#ffffff"
                 },
                 "body-bg": {
                     "name": "Body background",
                     "type": "color",
-                    "value": "#ffffff"
+                    "value": "#000000"
                 },
                 "headings-text": {
                     "name": "Headings text color",
                     "type": "color",
-                    "value": "#272727"
+                    "value": "#ffffff"
                 },
                 "subtle-text": {
                     "name": "Subtle text color",
                     "type": "color",
-                    "value": "#666666"
+                    "value": "#cccccc"
                 },
                 "disabled-text": {
                     "name": "Disabled text color",
                     "type": "color",
-                    "value": "#8f8f8f"
+                    "value": "#aaaaaa"
                 }
             }
         },
@@ -103,32 +102,32 @@
                 "component-text": {
                     "name": "Component text color",
                     "type": "color",
-                    "value": "#424242"
+                    "value": "#ffffff"
                 },
                 "component-bg": {
                     "name": "Component background",
                     "type": "color",
-                    "value": "#ffffff"
+                    "value": "#111111"
                 },
                 "base-text": {
                     "name": "Header text color",
                     "type": "color",
-                    "value": "#424242"
+                    "value": "#ffffff"
                 },
                 "base-bg": {
                     "name": "Header background",
                     "type": "color",
-                    "value": "#fafafa"
+                    "value": "#292b2c"
                 },
                 "hovered-text": {
                     "name": "Hover text color",
                     "type": "color",
-                    "value": "#424242"
+                    "value": "#1eb97b"
                 },
                 "hovered-bg": {
                     "name": "Hover background",
                     "type": "color",
-                    "value": "#ececec"
+                    "value": "#eeeff0"
                 },
                 "selected-text": {
                     "name": "Selected text color",
@@ -138,7 +137,7 @@
                 "selected-bg": {
                     "name": "Selected background",
                     "type": "color",
-                    "value": "#ff6358"
+                    "value": "#34d293"
                 }
             }
         },
@@ -148,12 +147,12 @@
                 "button-text": {
                     "name": "Button text color",
                     "type": "color",
-                    "value": "#424242"
+                    "value": "#ffffff"
                 },
                 "button-bg": {
                     "name": "Button background",
                     "type": "color",
-                    "value": "#f5f5f5"
+                    "value": "#363940"
                 }
             }
         },
@@ -163,12 +162,12 @@
                 "link-text": {
                     "name": "Link text color",
                     "type": "color",
-                    "value": "#ff6358"
+                    "value": "#10c4b2"
                 },
                 "link-hover-text": {
                     "name": "Link hover text color",
                     "type": "color",
-                    "value": "#d6534a"
+                    "value": "#0c9587"
                 }
             }
         },
@@ -178,7 +177,7 @@
                 "series-a": {
                     "name": "Series A",
                     "type": "color",
-                    "value": "#ff6358"
+                    "value": "#34d293"
                 },
                 "series-b": {
                     "name": "Series B",
