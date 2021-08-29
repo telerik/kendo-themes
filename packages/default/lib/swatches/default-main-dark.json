@@ -23,7 +23,6 @@
             }
         },
         {
-            "name": "",
             "variables": {
                 "border-radius": {
                     "name": "Border radius",
