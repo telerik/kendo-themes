@@ -9,6 +9,11 @@ let swatch = params.get("swatch") || DEFAULT_SWATCH;
 let animations = params.get("animations");
 let kendoThemeLink = document.querySelector('link[data-role="kendo-theme"]');
 
+// Alias swatch names
+if (swatch !== 'all' && swatch.indexOf(theme) !== 0) {
+    swatch = `${theme}-${swatch}`;
+}
+
 // Change theme
 kendoThemeLink.href = kendoThemeLink.href.replace(/default/i, theme).replace(/all.css/, `${swatch}.css`);
 
