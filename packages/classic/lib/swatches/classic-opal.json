@@ -3,7 +3,6 @@
     "name": "Classic Opal",
     "product": "kendo",
     "base": "@progress/kendo-theme-classic",
-    "hidden": false,
     "previewColors": [
         "#ffffff",
         "#def4fd",
@@ -14,7 +13,6 @@
     "components": [],
     "groups": [
         {
-            "name": "",
             "variables": {
                 "border-radius": {
                     "name": "Border radius",

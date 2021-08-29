@@ -2,13 +2,13 @@
     "$schema": "https://unpkg.com/@progress/kendo-theme-tasks@1.11.0/lib/schemas/kendo-swatch.json",
     "name": "Classic Green Dark",
     "product": "kendo",
-    "base": "@progress/kendo-theme-classic",
+    "base": "@progress/kendo-theme-default",
     "previewColors": [
-        "#ffffff",
-        "#f5f5f5",
-        "#ff6358",
-        "#d6534a",
-        "#424242"
+        "#000000",
+        "#131413",
+        "#3ea44e",
+        "#348a42",
+        "#ffffff"
     ],
     "components": [],
     "groups": [
@@ -23,12 +23,11 @@
             }
         },
         {
-            "name": "",
             "variables": {
                 "border-radius": {
                     "name": "Border radius",
                     "type": "number",
-                    "value": "2px"
+                    "value": "4px"
                 }
             }
         },
@@ -38,32 +37,32 @@
                 "primary": {
                     "name": "Primary",
                     "type": "color",
-                    "value": "#ff6358"
+                    "value": "#3ea44e"
                 },
                 "secondary": {
                     "name": "Secondary",
                     "type": "color",
-                    "value": "#f6f6f6"
+                    "value": "#f3f4f3"
                 },
                 "info": {
                     "name": "Info",
                     "type": "color",
-                    "value": "#3e80ed"
+                    "value": "#007bc3"
                 },
                 "success": {
                     "name": "Success",
                     "type": "color",
-                    "value": "#5ec232"
+                    "value": "#3ea44e"
                 },
                 "warning": {
                     "name": "Warning",
                     "type": "color",
-                    "value": "#fdce3e"
+                    "value": "#ff9800"
                 },
                 "error": {
                     "name": "Error",
                     "type": "color",
-                    "value": "#d51923"
+                    "value": "#d92800"
                 }
             }
         },
@@ -73,27 +72,27 @@
                 "body-text": {
                     "name": "Body text color",
                     "type": "color",
-                    "value": "#424242"
+                    "value": "#ffffff"
                 },
                 "body-bg": {
                     "name": "Body background",
                     "type": "color",
-                    "value": "#ffffff"
+                    "value": "#000000"
                 },
                 "headings-text": {
                     "name": "Headings text color",
                     "type": "color",
-                    "value": "#272727"
+                    "value": "#ffffff"
                 },
                 "subtle-text": {
                     "name": "Subtle text color",
                     "type": "color",
-                    "value": "#666666"
+                    "value": "#e0e0e0"
                 },
                 "disabled-text": {
                     "name": "Disabled text color",
                     "type": "color",
-                    "value": "#8f8f8f"
+                    "value": "#d0d0d0"
                 }
             }
         },
@@ -103,32 +102,32 @@
                 "component-text": {
                     "name": "Component text color",
                     "type": "color",
-                    "value": "#424242"
+                    "value": "#ffffff"
                 },
                 "component-bg": {
                     "name": "Component background",
                     "type": "color",
-                    "value": "#ffffff"
+                    "value": "#202020"
                 },
                 "base-text": {
                     "name": "Header text color",
                     "type": "color",
-                    "value": "#424242"
+                    "value": "#ffffff"
                 },
                 "base-bg": {
                     "name": "Header background",
                     "type": "color",
-                    "value": "#fafafa"
+                    "value": "#131413"
                 },
                 "hovered-text": {
                     "name": "Hover text color",
                     "type": "color",
-                    "value": "#424242"
+                    "value": "#ffffff"
                 },
                 "hovered-bg": {
                     "name": "Hover background",
                     "type": "color",
-                    "value": "#ececec"
+                    "value": "#262726"
                 },
                 "selected-text": {
                     "name": "Selected text color",
@@ -138,7 +137,7 @@
                 "selected-bg": {
                     "name": "Selected background",
                     "type": "color",
-                    "value": "#ff6358"
+                    "value": "#3ea44e"
                 }
             }
         },
@@ -148,12 +147,12 @@
                 "button-text": {
                     "name": "Button text color",
                     "type": "color",
-                    "value": "#424242"
+                    "value": "#ffffff"
                 },
                 "button-bg": {
                     "name": "Button background",
                     "type": "color",
-                    "value": "#f5f5f5"
+                    "value": "#131413"
                 }
             }
         },
@@ -163,12 +162,12 @@
                 "link-text": {
                     "name": "Link text color",
                     "type": "color",
-                    "value": "#ff6358"
+                    "value": "#3ea44e"
                 },
                 "link-hover-text": {
                     "name": "Link hover text color",
                     "type": "color",
-                    "value": "#d6534a"
+                    "value": "#348a42"
                 }
             }
         },
@@ -178,32 +177,32 @@
                 "series-a": {
                     "name": "Series A",
                     "type": "color",
-                    "value": "#ff6358"
+                    "value": "#007bc3"
                 },
                 "series-b": {
                     "name": "Series B",
                     "type": "color",
-                    "value": "#ffd246"
+                    "value": "#3ea44e"
                 },
                 "series-c": {
                     "name": "Series C",
                     "type": "color",
-                    "value": "#78d237"
+                    "value": "#ffae00"
                 },
                 "series-d": {
                     "name": "Series D",
                     "type": "color",
-                    "value": "#28b4c8"
+                    "value": "#ef4c00"
                 },
                 "series-e": {
                     "name": "Series E",
                     "type": "color",
-                    "value": "#2d73f5"
+                    "value": "#a419b7"
                 },
                 "series-f": {
                     "name": "Series F",
                     "type": "color",
-                    "value": "#aa46be"
+                    "value": "#430b62"
                 }
             }
         }
