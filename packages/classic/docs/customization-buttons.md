@@ -69,7 +69,7 @@ The following table lists the available variables for customization.
     <td>$button-bg</td>
     <td></td>
     <td>$base-bg</td>
-    <td>$secondary</td>
+    <td><span class="color-preview" style="background-color: #f0f0f0"></span>#f0f0f0</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the buttons.</div></div>
@@ -99,7 +99,7 @@ The following table lists the available variables for customization.
     <td>$button-gradient</td>
     <td></td>
     <td>$base-gradient</td>
-    <td>rgba( white, .2 ), rgba( white, 0 )</td>
+    <td>rgba( white, .1 ), rgba( white, 0 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of the buttons.</div></div>
