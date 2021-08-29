@@ -15,6 +15,16 @@
         {
             "hidden": true,
             "variables": {
+                "dark-theme": {
+                    "name": "Dark theme",
+                    "type": "boolean",
+                    "value": true
+                }
+            }
+        },
+        {
+            "hidden": true,
+            "variables": {
                 "gray-100": {
                     "name": "Gray 100",
                     "type": "color",

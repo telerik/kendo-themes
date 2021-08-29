@@ -13,6 +13,16 @@
     "components": [],
     "groups": [
         {
+            "hidden": true,
+            "variables": {
+                "dark-theme": {
+                    "name": "Dark theme",
+                    "type": "boolean",
+                    "value": true
+                }
+            }
+        },
+        {
             "variables": {
                 "border-radius": {
                     "name": "Border radius",
