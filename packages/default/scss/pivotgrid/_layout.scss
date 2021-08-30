@@ -46,6 +46,11 @@
         table-layout: fixed;
 
         th {
+            font-weight: 400;
+            text-transform: initial;
+        }
+
+        .k-pivotgrid-header-root {
             font-weight: 600;
             text-transform: uppercase;
         }
