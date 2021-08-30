@@ -1,71 +1,67 @@
 # Kendo UI Themes Monorepo
 
-This is a monorepo that holds the SCSS-based themes for the Kendo UI components.
+`kendo-themes` is a [lerna](https://github.com/lerna/lerna/) managed monorepo project for all Kendo UI themes that are used across the Kendo UI suites and Telerik UI for Blazor. The themes are built with sass using scss syntax. The syntax is compatible with both `node-sass` and `dart-sass`, as we currently does not use sass module system. Browser-specific properties are generated at build-time through [PostCSS autoprefixer](https://github.com/postcss/autoprefixer).
 
-* [License](#license)
-* [Basic Usage](#basic-usage)
-* [Development](#development)
-    * [Working with This Monorepo](#working-with-this-monorepo)
-    * [Visual tests](#visual-tests)
-    * [Embedding Resources](#embedding-resources)
-    * [Documenting Variables](#documenting-variables)
+## Setup
 
-## License
+To setup to monorepo run in the root directory:
 
-This package is part of the following suites:
+```sh
+# install dependncies
+npm install
 
-* [Kendo UI for Angular](https://www.telerik.com/kendo-angular-ui/)
-* [KendoReact](https://www.telerik.com/kendo-react-ui/)
-* [Kendo UI for Vue](https://www.telerik.com/kendo-vue-ui/)
-* [Kendo UI for jQuery](https://www.telerik.com/kendo-ui)
-* [UI for ASP.NET MVC](https://www.telerik.com/aspnet-mvc)
-* [UI for ASP.NET Core](https://www.telerik.com/aspnet-core-ui)
-* [UI for Blazor](https://www.telerik.com/blazor-ui)
+# bootstrap lerna monorepo
+npm run bootstrap
 
-All available Telerik and Kendo UI commercial licenses may be obtained at https://www.telerik.com/purchase.aspx.
+# on windows you need to link themes
+cd packages/default
+npm run link
 
-If you do not own a commercial license, the usage of this software shall be governed by the [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0).
+# and so on for each theme
+```
 
-## Basic Usage
+The following npm commands are available:
 
-For more information on how to add one of the themes in your project, refer to the following articles:
+* To build all themes with node-sass, run `npm run sass`.
+* To build all swatches with node-sass, run `npm run sass:swatches`.
+* To build all themes with dart-sass, run `npm run dart`.
+* To build all swatches with dart-sass, run `npm run dart:swatches`.
+* To lint all themes, run `npm run sasslint`.
 
-* [Using the Kendo UI themes in Angular Projects](https://www.telerik.com/kendo-angular-ui/components/styling/)
-* [Using the Kendo UI themes in React Projects](https://www.telerik.com/kendo-react-ui/components/styling/)
-* [Using the Kendo UI themes in Vue Projects](https://www.telerik.com/kendo-vue-ui/components/styling/)
-* [Using the Kendo UI themes in jQuery Projects](https://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes)
-* [Using the Kendo UI themes in Blazor](https://docs.telerik.com/blazor-ui/themes/overview)
+There are additional commands, which can be found in [`package.json`](package.json) and [`gulpfile.js`](gulpfile.js).
+
+## Directory structure
+
+* [build](build) -- various bash scripts
+* [docs](docs) -- seed for documentation site
+* [lib](lib) -- files which we didn't put elsewhere
+* [packages](packages)
+  * theme-name
+    * build -- theme specific files needed for building
+    * docs -- per theme documentation
+    * lib -- files that are not strictly scss, like swatches in json format
+    * scripts -- theme specific javascript files
+    * scss -- source of the themes
+* [scripts](scripts) -- various javascript files
+* [tests](tests) -- unit and visual tests
 
 ## Development
 
-The styles are split into components and the dependencies are managed by the [`import-once`](scss/mixins/core/_import-once.scss) mixin. When you configure the styles, define them within an `import-once` block. In this way, when required from multiple files, they are bundled once.
+Inside each theme source directory, there is a per-component directory containing the respective styles.
 
-During development, the SCSS files are linted on every `commit` and built on every `push` command. To test the theme package against a component, link the theme in the components package.
+Note: we mostly have aptly named direcotries, so they match component names. In few cases, however, we chose different names. For example, `multicolumncombobox` is a mouthful, so its directory is `dropdowngrid`.
 
-Browser-specific properties are generated at build-time through the [PostCSS autoprefixer](https://github.com/postcss/autoprefixer).
+Each component consists of `index` file that is the entry points for component styles. Inside, we import `core` files, all dependencies (for example, datepicker needs calendar) and the components `layout` (metrics) and `theme` (appearance) files.
 
-### Working with This Monorepo
+> Note: We list all dependencies is because we want components to be compiled standalone without the developer needing to know which component depends on which other component. However, recursive importing creates exponentially large dist files, unles handled.
+>
+> To workaround this limitation, we use a mixin -- `import-once` -- which takes care to output only once!
 
-The repository uses [lerna](https://github.com/lerna/lerna/) to ship the multiple theme packages from a single Git repository. For details why this is a good idea for the themes, see [this issue](https://github.com/telerik/kendo-theme-default/issues/720).
+During development, the scss files are linted on every `commit` and built on every `push` command.
 
-To set up the monorepo:
+Changes in `develop` branch release a new package version every monday in the `dev` channel and in  `(version)-dev.(integer)` format. To install the latest development version of a given theme, run `npm install (themename)@dev` --  for example, `npm install @progress/kendo-theme-default@dev`.
 
-Just run `npm install` in the root directory. Using node hooks, the command will clean the repo, install it and link the files.
-
-Then run `npm run bootstrap`.
-
-The following commands have to be run in the root of the repository and help you check if various tasks are accomplished successfully:
-
-* To lint over all the themes, run `npm run lint`.
-* To build all the themes with node-sass, run `npm run sass`.
-* To build all the themes with dart-sass, run `npm run dart`.
-* To run the lint, JS, and build tests, run `npm test`.
-* To run builds on every file change of a specific theme:
-
-  * Change the working directory in the terminal to the specific theme. For example, `cd packages/bootstrap` will change to the bootstrap theme.
-  * Run `npm run watch`. This will start a process that will listen for changes and build the theme, whenever a file is changed.
-
-Changes in the `develop` branch release a new package version on the `dev` channel and in the `(version)-dev.(hash)` format. To install the latest development version of a given theme, run `npm install (themename)@dev`&mdash;for example, `npm install @progress/kendo-theme-default@dev`.
+Stable channel is released manually trough a github action.
 
 ### Visual tests
 
@@ -88,34 +84,54 @@ To embed the latest resources:
 1. Run the `npm run embed-assets` task. The task generates a file with the same name which registers a Base64-encoded version in the `$data-uris` SCSS map. For example, the `foo.woff` font file will be encoded in a `foo.scss` file which can later be imported through `@import './font/foo';`.
 1. Inline the encoded file inside the CSS through `map-get( $data-uris, 'foo.woff' )`. For example:
 
-    ```scss
-    @font-face {
-        font-family: 'WebComponentsIcons';
-        src: url(map-get( $data-uris, 'WebComponentsIcons.woff' )) format( "woff" );
-    }
-    ```
+```scss
+$web-font-uri: map-get( $data-uris, 'WebComponentsIcons.woff' );
+
+@font-face {
+    font-family: 'WebComponentsIcons';
+    src: url( $web-font-uri ) format( "woff" );
+}
+```
 
 ### Documenting Variables
 
-The available variables for customizing each theme are listed in the article on customization for each theme (`docs/customization.md`) The file is generated from the SCSS source files by running the `npm run api` command.
+The available variables for customizing each theme are listed in the article on customization for each theme (`docs/customization.md`) The file is generated from the SCSS source files by running the `npm run docs` command.
 
 To document a variable, use triple-slash comments (`///`) before its definition.
 
-    /// Variable description
-    $foo: 42 !default;
+```scss
+/// Variable description
+$foo: 42 !default;
+```
 
 To group variables, use the `@group` directive.
 
-    /// Variable description
-    /// @group random
-    $foo: 42 !default;
+```scss
+/// Variable description
+/// @group random
+$foo: 42 !default;
 
-    /// Another variable description
-    /// @group random
-    $bar: 1024 !default;
+/// Another variable description
+/// @group random
+$bar: 1024 !default;
+```
 
-To change the layout or the front meter of the generated help topic, change the `build/customization.md.hbs` source file.
+To change the layout or the front meter of the generated help topic, change the `docs/_templates/customization.md.njk` source file.
 
-*Copyright © 2020 Progress Software Corporation and/or one of its subsidiaries or affiliates. All rights reserved.*
+## License
+
+This package is part of the following suites:
+
+* [Kendo UI for Angular](http://www.telerik.com/kendo-angular-ui/)
+* [KendoReact](http://www.telerik.com/kendo-react-ui/)
+* [Kendo UI for jQuery](http://www.telerik.com/kendo-ui)
+* [UI for ASP.NET MVC](http://www.telerik.com/aspnet-mvc)
+* [UI for ASP.NET Core](http://www.telerik.com/aspnet-core-ui)
+
+All available Kendo UI commercial licenses may be obtained at http://www.telerik.com/purchase/kendo-ui.
+
+If you do not own a commercial license, the usage of this software shall be governed by the [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0).
+
+*Copyright © 2021 Progress Software Corporation and/or one of its subsidiaries or affiliates. All rights reserved.*
 
 *Progress, Telerik, and certain product names used herein are trademarks or registered trademarks of Progress Software Corporation and/or one of its subsidiaries or affiliates in the U.S. and/or other countries.*

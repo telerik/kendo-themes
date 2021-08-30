@@ -18,10 +18,14 @@
     "modules/",
     "lib/"
   ],
+  "homepage": "https://github.com/telerik/kendo-themes/tree/master/packages/material",
   "repository": {
     "type": "git",
     "url": "https://github.com/telerik/kendo-themes.git",
     "directory": "packages/material"
+  },
+  "bugs": {
+    "url": "https://github.com/telerik/kendo-themes/issues/new?labels=bug,T:Material&template=bug_report.md"
   },
   "publishConfig": {
     "access": "public"
@@ -45,6 +49,9 @@
     "dart:flat": "gulp dart:flat",
     "prepublishOnly": "./build/embed-dependencies '@progress/kendo-theme-default'",
     "postpublish": "rm -rf modules && git checkout scss"
+  },
+  "peerDependencies": {
+    "@progress/kendo-theme-default": "^4.41.0"
   },
   "devDependencies": {
     "@progress/kendo-theme-default": "^4.41.0"

@@ -18,10 +18,14 @@
     "modules/",
     "lib/"
   ],
+  "homepage": "https://github.com/telerik/kendo-themes/tree/master/packages/nouvelle",
   "repository": {
     "type": "git",
     "url": "https://github.com/telerik/kendo-themes.git",
     "directory": "packages/nouvelle"
+  },
+  "bugs": {
+    "url": "https://github.com/telerik/kendo-themes/issues/new?labels=bug,T:Nouvelle&template=bug_report.md"
   },
   "publishConfig": {
     "access": "public"
