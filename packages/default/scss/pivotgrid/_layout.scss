@@ -109,7 +109,8 @@
     // Values
     .k-pivotgrid-values {
         border-color: inherit;
-        overflow: auto;
+        overflow-x: auto;
+        overflow-y: scroll;
     }
 
     .k-pivotgrid-values .k-pivotgrid-cell {
