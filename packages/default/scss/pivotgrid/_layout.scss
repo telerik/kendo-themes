@@ -46,6 +46,11 @@
         table-layout: fixed;
 
         th {
+            font-weight: 400;
+            text-transform: initial;
+        }
+
+        .k-pivotgrid-header-root {
             font-weight: 600;
             text-transform: uppercase;
         }
@@ -104,7 +109,8 @@
     // Values
     .k-pivotgrid-values {
         border-color: inherit;
-        overflow: auto;
+        overflow-x: auto;
+        overflow-y: scroll;
     }
 
     .k-pivotgrid-values .k-pivotgrid-cell {
