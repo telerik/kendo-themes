@@ -132,6 +132,10 @@
         font-size: inherit;
     }
 
+    .k-code {
+        padding: $code-padding-y $code-padding-x;
+    }
+
     // Display
     .k-display-1 {
         @include typography(
