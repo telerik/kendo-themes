@@ -124,6 +124,7 @@
     .k-pivotgrid-cell {
         padding: $pivotgrid-cell-padding-y $pivotgrid-cell-padding-x;
         text-overflow: ellipsis;
+        white-space: nowrap;
         vertical-align: top;
         overflow: hidden;
     }
