@@ -51,10 +51,10 @@
   },
   "peerDependencies": {
     "@progress/kendo-theme-default": "^4.41.0",
-    "bootstrap": "^5.0.2"
+    "bootstrap": "^5.1.0"
   },
   "devDependencies": {
     "@progress/kendo-theme-default": "^4.41.0",
-    "bootstrap": "^5.0.2"
+    "bootstrap": "^5.1.0"
   }
 }
