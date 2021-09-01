@@ -254,7 +254,8 @@
             height: 100%;
             border-width: 0;
         }
-        .k-grid-header {
+        .k-grid-header,
+        .k-grid-footer {
             padding: 0 !important; // sass-lint:disable-line no-important
         }
         .k-grid-header tr {

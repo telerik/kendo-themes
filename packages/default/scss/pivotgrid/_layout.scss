@@ -1,8 +1,5 @@
 @include exports("pivotgrid/layout") {
 
-    // helper variable
-    $default-scrollbar-width: 17px;
-
     // Pivotgrid
     .k-pivotgrid {
         padding: $pivotgrid-padding-y $pivotgrid-padding-x;
@@ -73,7 +70,7 @@
 
     .k-pivotgrid-column-headers .k-pivotgrid-table {
         padding-inline-start: 0;
-        padding-inline-end: calc( var(--kendo-scrollbar-width, #{$default-scrollbar-width}) - 1px );
+        padding-inline-end: var(--kendo-scrollbar-width, #{$default-scrollbar-width});
     }
 
     .k-pivotgrid-column-headers .k-pivotgrid-cell {
@@ -683,8 +680,6 @@
 
 
 @include exports("pivotgrid/layout/ie11-fixes/legacy") {
-
-    $default-scrollbar-width: 17px;
 
     // Pivotgrid is stretched beyond container in IE 11
     // see https://github.com/telerik/kendo-theme-default/issues/647
