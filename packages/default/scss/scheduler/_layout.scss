@@ -515,6 +515,12 @@
         }
     }
 
+
+    // Scheduler view header
+    .k-scheduler-header,
+    .k-scheduler-view-header {
+        padding-inline-end: var(--kendo-scrollbar-width, #{$default-scrollbar-width});
+    }
     .k-scheduler-header th {
         text-align: center;
     }
