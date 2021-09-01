@@ -16,54 +16,54 @@
             <kendo-grid-group-panel class="k-grouping-header k-grouping-header-flex">
                 <div class="k-indicator-container"> Drag a column header and drop it here to group by that column </div>
             </kendo-grid-group-panel>
-            <div class="k-grid-aria-root" role="grid" aria-rowcount="3" aria-colcount="4">
-                <div class="k-grid-header" role="presentation" style="padding: 0px 14px 0px 0px;">
-                    <div class="k-grid-header-wrap" role="presentation">
-                        <table role="presentation">
-                            <colgroup role="presentation">
+            <div class="k-grid-aria-root" role="grid">
+                <div class="k-grid-header">
+                    <div class="k-grid-header-wrap">
+                        <table>
+                            <colgroup>
                                 <col style="width: 50px;">
                                 <col>
                                 <col>
                                 <col>
                             </colgroup>
-                            <thead role="presentation">
-                                <tr role="row" aria-rowindex="1">
-                                    <th aria-selected="false" class="k-header" role="columnheader" rowspan="1" colspan="1" aria-colindex="1"><input class="k-checkbox" id="k-grid0-select-all" aria-label="Select All Rows" type="checkbox"></th>
-                                    <th aria-selected="false" class="k-header k-touch-action-none k-grid-draggable-header" role="columnheader" rowspan="1" colspan="1" aria-colindex="2">ID</th>
-                                    <th aria-selected="false" class="k-header k-touch-action-none k-grid-draggable-header" role="columnheader" rowspan="1" colspan="1" aria-colindex="3">Name</th>
-                                    <th aria-selected="false" class="k-header" role="columnheader" rowspan="1" colspan="1" aria-colindex="4">Command</th>
+                            <thead>
+                                <tr role="row">
+                                    <th class="k-header" rowspan="1" colspan="1"><input class="k-checkbox" id="k-grid0-select-all" type="checkbox"></th>
+                                    <th class="k-header k-touch-action-none k-grid-draggable-header" rowspan="1" colspan="1">ID</th>
+                                    <th class="k-header k-touch-action-none k-grid-draggable-header" rowspan="1" colspan="1">Name</th>
+                                    <th class="k-header" rowspan="1" colspan="1">Command</th>
                                 </tr>
                             </thead>
                         </table>
                     </div>
                 </div>
-                <kendo-grid-list class="k-grid-container" role="presentation">
-                    <div class="k-grid-content k-virtual-content" role="presentation" tabindex="-1">
-                        <div class="k-grid-table-wrap" role="presentation">
-                            <table class="k-grid-table" role="presentation">
-                                <colgroup role="presentation">
+                <kendo-grid-list class="k-grid-container">
+                    <div class="k-grid-content k-virtual-content">
+                        <div class="k-grid-table-wrap">
+                            <table class="k-grid-table">
+                                <colgroup>
                                     <col style="width: 50px;">
                                     <col>
                                     <col>
                                     <col>
                                 </colgroup>
-                                <tbody role="presentation">
-                                    <tr role="row" aria-rowindex="2">
-                                        <td role="gridcell" aria-selected="false" class="k-touch-action-auto" colspan="1" aria-colindex="1"><input class="k-checkbox" id="k-grid0-checkbox0" aria-label="Select Row" type="checkbox"></td>
-                                        <td role="gridcell" aria-selected="false" class="k-touch-action-auto" colspan="1" aria-colindex="2">1</td>
-                                        <td role="gridcell" aria-selected="false" class="k-touch-action-auto" colspan="1" aria-colindex="3">Product1</td>
-                                        <td role="gridcell" aria-selected="false" class="k-touch-action-auto k-command-cell" colspan="1" aria-colindex="4"><button icon="delete" class="k-button-icontext k-button k-grid-remove-command" role="button" aria-disabled="false" dir="ltr"><span class="k-icon k-i-delete" role="presentation"></span>Delete</button></td>
+                                <tbody>
+                                    <tr role="row">
+                                        <td class="k-touch-action-auto" colspan="1"><input class="k-checkbox" id="k-grid0-checkbox0" type="checkbox"></td>
+                                        <td class="k-touch-action-auto" colspan="1">1</td>
+                                        <td class="k-touch-action-auto" colspan="1">Product1</td>
+                                        <td class="k-touch-action-auto k-command-cell" colspan="1"><button icon="delete" class="k-button-icontext k-button k-grid-remove-command" role="button" dir="ltr"><span class="k-icon k-i-delete"></span>Delete</button></td>
                                     </tr>
-                                    <tr class="k-alt" role="row" aria-rowindex="3">
-                                        <td role="gridcell" aria-selected="false" class="k-touch-action-auto" colspan="1" aria-colindex="1"><input class="k-checkbox" id="k-grid0-checkbox1" aria-label="Select Row" type="checkbox"></td>
-                                        <td role="gridcell" aria-selected="false" class="k-touch-action-auto" colspan="1" aria-colindex="2">2</td>
-                                        <td role="gridcell" aria-selected="false" class="k-touch-action-auto" colspan="1" aria-colindex="3">Product2</td>
-                                        <td role="gridcell" aria-selected="false" class="k-touch-action-auto k-command-cell" colspan="1" aria-colindex="4"><button icon="delete" class="k-button-icontext k-button k-grid-remove-command" role="button" aria-disabled="false" dir="ltr"><span class="k-icon k-i-delete" role="presentation"></span>Delete</button></td>
+                                    <tr class="k-alt" role="row">
+                                        <td class="k-touch-action-auto" colspan="1"><input class="k-checkbox" id="k-grid0-checkbox1" type="checkbox"></td>
+                                        <td class="k-touch-action-auto" colspan="1">2</td>
+                                        <td class="k-touch-action-auto" colspan="1">Product2</td>
+                                        <td class="k-touch-action-auto k-command-cell" colspan="1"><button icon="delete" class="k-button-icontext k-button k-grid-remove-command" role="button" dir="ltr"><span class="k-icon k-i-delete"></span>Delete</button></td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
-                        <div class="k-height-container" role="presentation">
+                        <div class="k-height-container">
                             <div></div>
                         </div>
                     </div>
@@ -74,73 +74,73 @@
         <kendo-grid dir="ltr" class="k-widget k-grid">
             <kendo-grid-group-panel class="k-grouping-header k-grouping-header-flex">
                 <div class="k-indicator-container">
-                    <div class="k-touch-action-none k-grid-draggable-header k-group-indicator"><a class="k-link" href="#" tabindex="-1"><span class="k-icon k-i-sort-asc-sm"></span> ID</a><a class="k-button k-button-icon k-bare" tabindex="-1"><span class="k-icon k-i-group-delete"></span></a></div>
+                    <div class="k-touch-action-none k-grid-draggable-header k-group-indicator"><a class="k-link" href="#"><span class="k-icon k-i-sort-asc-sm"></span> ID</a><a class="k-button k-button-icon k-bare"><span class="k-icon k-i-group-delete"></span></a></div>
                 </div>
                 <div class="k-indicator-container">&nbsp;</div>
             </kendo-grid-group-panel>
-            <div class="k-grid-aria-root" role="grid" aria-rowcount="3" aria-colcount="4">
-                <div class="k-grid-header" role="presentation" style="padding: 0px 14px 0px 0px;">
-                    <div class="k-grid-header-wrap" role="presentation">
-                        <table role="presentation">
-                            <colgroup role="presentation">
+            <div class="k-grid-aria-root" role="grid">
+                <div class="k-grid-header">
+                    <div class="k-grid-header-wrap">
+                        <table>
+                            <colgroup>
                                 <col class="k-group-col">
                                 <col style="width: 50px;">
                                 <col>
                                 <col>
                                 <col>
                             </colgroup>
-                            <thead role="presentation">
-                                <tr role="row" aria-rowindex="1">
-                                    <th class="k-group-cell k-header" role="presentation"></th>
-                                    <th aria-selected="false" class="k-header" role="columnheader" rowspan="1" colspan="1" aria-colindex="1"><input class="k-checkbox" id="k-grid1-select-all" aria-label="Select All Rows" type="checkbox"></th>
-                                    <th aria-selected="false" class="k-header k-touch-action-none k-grid-draggable-header" role="columnheader" rowspan="1" colspan="1" aria-colindex="2">ID</th>
-                                    <th aria-selected="false" class="k-header k-touch-action-none k-grid-draggable-header" role="columnheader" rowspan="1" colspan="1" aria-colindex="3">Name</th>
-                                    <th aria-selected="false" class="k-header" role="columnheader" rowspan="1" colspan="1" aria-colindex="4">Command</th>
+                            <thead>
+                                <tr role="row">
+                                    <th class="k-group-cell k-header"></th>
+                                    <th class="k-header" rowspan="1" colspan="1"><input class="k-checkbox" id="k-grid1-select-all" type="checkbox"></th>
+                                    <th class="k-header k-touch-action-none k-grid-draggable-header" rowspan="1" colspan="1">ID</th>
+                                    <th class="k-header k-touch-action-none k-grid-draggable-header" rowspan="1" colspan="1">Name</th>
+                                    <th class="k-header" rowspan="1" colspan="1">Command</th>
                                 </tr>
                             </thead>
                         </table>
                     </div>
                 </div>
-                <kendo-grid-list class="k-grid-container" role="presentation">
-                    <div class="k-grid-content k-virtual-content" role="presentation" tabindex="-1">
-                        <div class="k-grid-table-wrap" role="presentation">
-                            <table class="k-grid-table" role="presentation">
-                                <colgroup role="presentation">
+                <kendo-grid-list class="k-grid-container">
+                    <div class="k-grid-content k-virtual-content">
+                        <div class="k-grid-table-wrap">
+                            <table class="k-grid-table">
+                                <colgroup>
                                     <col class="k-group-col">
                                     <col style="width: 50px;">
                                     <col>
                                     <col>
                                     <col>
                                 </colgroup>
-                                <tbody role="presentation">
-                                    <tr role="row" aria-rowindex="2" class="k-grouping-row">
-                                        <td aria-selected="false" colspan="5" role="gridcell" aria-expanded="true" aria-colindex="1">
-                                            <p class="k-reset"><a class="k-icon k-i-collapse" href="#" role="presentation" tabindex="-1"></a> ID: 1 </p>
+                                <tbody>
+                                    <tr role="row" class="k-grouping-row">
+                                        <td colspan="5">
+                                            <p class="k-reset"><a class="k-icon k-i-collapse" href="#"></a> ID: 1 </p>
                                         </td>
                                     </tr>
-                                    <tr role="row" aria-rowindex="3">
-                                        <td class="k-group-cell" role="presentation"></td>
-                                        <td role="gridcell" aria-selected="false" class="k-touch-action-auto" colspan="1" aria-colindex="1"><input class="k-checkbox" id="k-grid1-checkbox0" aria-label="Select Row" type="checkbox"></td>
-                                        <td role="gridcell" aria-selected="false" class="k-touch-action-auto" colspan="1" aria-colindex="2">1</td>
-                                        <td role="gridcell" aria-selected="false" class="k-touch-action-auto" colspan="1" aria-colindex="3">Product1</td>
-                                        <td role="gridcell" aria-selected="false" class="k-touch-action-auto k-command-cell" colspan="1" aria-colindex="4"><button icon="delete" class="k-button-icontext k-button k-grid-remove-command" role="button" aria-disabled="false" dir="ltr"><span class="k-icon k-i-delete" role="presentation"></span>Delete</button></td>
+                                    <tr role="row">
+                                        <td class="k-group-cell"></td>
+                                        <td class="k-touch-action-auto" colspan="1"><input class="k-checkbox" id="k-grid1-checkbox0" type="checkbox"></td>
+                                        <td class="k-touch-action-auto" colspan="1">1</td>
+                                        <td class="k-touch-action-auto" colspan="1">Product1</td>
+                                        <td class="k-touch-action-auto k-command-cell" colspan="1"><button icon="delete" class="k-button-icontext k-button k-grid-remove-command" role="button" dir="ltr"><span class="k-icon k-i-delete"></span>Delete</button></td>
                                     </tr>
-                                    <tr role="row" aria-rowindex="4" class="k-grouping-row">
-                                        <td aria-selected="false" colspan="5" role="gridcell" aria-expanded="true" aria-colindex="1">
-                                            <p class="k-reset"><a class="k-icon k-i-collapse" href="#" role="presentation" tabindex="-1"></a> ID: 2 </p>
+                                    <tr role="row" class="k-grouping-row">
+                                        <td colspan="5">
+                                            <p class="k-reset"><a class="k-icon k-i-collapse" href="#"></a> ID: 2 </p>
                                         </td>
                                     </tr>
-                                    <tr class="k-alt" role="row" aria-rowindex="5">
-                                        <td class="k-group-cell" role="presentation"></td>
-                                        <td role="gridcell" aria-selected="false" class="k-touch-action-auto" colspan="1" aria-colindex="1"><input class="k-checkbox" id="k-grid1-checkbox1" aria-label="Select Row" type="checkbox"></td>
-                                        <td role="gridcell" aria-selected="false" class="k-touch-action-auto" colspan="1" aria-colindex="2">2</td>
-                                        <td role="gridcell" aria-selected="false" class="k-touch-action-auto" colspan="1" aria-colindex="3">Product2</td>
-                                        <td role="gridcell" aria-selected="false" class="k-touch-action-auto k-command-cell" colspan="1" aria-colindex="4"><button icon="delete" class="k-button-icontext k-button k-grid-remove-command" role="button" aria-disabled="false" dir="ltr"><span class="k-icon k-i-delete" role="presentation"></span>Delete</button></td>
+                                    <tr class="k-alt" role="row">
+                                        <td class="k-group-cell"></td>
+                                        <td class="k-touch-action-auto" colspan="1"><input class="k-checkbox" id="k-grid1-checkbox1" type="checkbox"></td>
+                                        <td class="k-touch-action-auto" colspan="1">2</td>
+                                        <td class="k-touch-action-auto" colspan="1">Product2</td>
+                                        <td class="k-touch-action-auto k-command-cell" colspan="1"><button icon="delete" class="k-button-icontext k-button k-grid-remove-command" role="button" dir="ltr"><span class="k-icon k-i-delete"></span>Delete</button></td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
-                        <div class="k-height-container" role="presentation">
+                        <div class="k-height-container">
                             <div></div>
                         </div>
                     </div>
@@ -151,18 +151,18 @@
         <kendo-grid dir="ltr" class="k-widget k-grid">
             <kendo-grid-group-panel class="k-grouping-header k-grouping-header-flex">
                 <div class="k-indicator-container">
-                    <div class="k-touch-action-none k-grid-draggable-header k-group-indicator"><a class="k-link" href="#" tabindex="-1"><span class="k-icon k-i-sort-asc-sm"></span> ID</a><a class="k-button k-button-icon k-bare" tabindex="-1"><span class="k-icon k-i-group-delete"></span></a></div>
+                    <div class="k-touch-action-none k-grid-draggable-header k-group-indicator"><a class="k-link" href="#"><span class="k-icon k-i-sort-asc-sm"></span> ID</a><a class="k-button k-button-icon k-bare"><span class="k-icon k-i-group-delete"></span></a></div>
                 </div>
                 <div class="k-indicator-container">
-                    <div class="k-touch-action-none k-grid-draggable-header k-group-indicator"><a class="k-link" href="#" tabindex="-1"><span class="k-icon k-i-sort-asc-sm"></span> Name</a><a class="k-button k-button-icon k-bare" tabindex="-1"><span class="k-icon k-i-group-delete"></span></a></div>
+                    <div class="k-touch-action-none k-grid-draggable-header k-group-indicator"><a class="k-link" href="#"><span class="k-icon k-i-sort-asc-sm"></span> Name</a><a class="k-button k-button-icon k-bare"><span class="k-icon k-i-group-delete"></span></a></div>
                 </div>
                 <div class="k-indicator-container">&nbsp;</div>
             </kendo-grid-group-panel>
-            <div class="k-grid-aria-root" role="grid" aria-rowcount="3" aria-colcount="4">
-                <div class="k-grid-header" role="presentation" style="padding: 0px 14px 0px 0px;">
-                    <div class="k-grid-header-wrap" role="presentation">
-                        <table role="presentation">
-                            <colgroup role="presentation">
+            <div class="k-grid-aria-root" role="grid">
+                <div class="k-grid-header">
+                    <div class="k-grid-header-wrap">
+                        <table>
+                            <colgroup>
                                 <col class="k-group-col">
                                 <col class="k-group-col">
                                 <col style="width: 50px;">
@@ -170,24 +170,24 @@
                                 <col>
                                 <col>
                             </colgroup>
-                            <thead role="presentation">
-                                <tr role="row" aria-rowindex="1">
-                                    <th class="k-group-cell k-header" role="presentation"></th>
-                                    <th class="k-group-cell k-header" role="presentation"></th>
-                                    <th aria-selected="false" class="k-header" role="columnheader" rowspan="1" colspan="1" aria-colindex="1"><input class="k-checkbox" id="k-grid2-select-all" aria-label="Select All Rows" type="checkbox"></th>
-                                    <th aria-selected="false" class="k-header k-touch-action-none k-grid-draggable-header" role="columnheader" rowspan="1" colspan="1" aria-colindex="2">ID</th>
-                                    <th aria-selected="false" class="k-header k-touch-action-none k-grid-draggable-header" role="columnheader" rowspan="1" colspan="1" aria-colindex="3">Name</th>
-                                    <th aria-selected="false" class="k-header" role="columnheader" rowspan="1" colspan="1" aria-colindex="4">Command</th>
+                            <thead>
+                                <tr role="row">
+                                    <th class="k-group-cell k-header"></th>
+                                    <th class="k-group-cell k-header"></th>
+                                    <th class="k-header" rowspan="1" colspan="1"><input class="k-checkbox" id="k-grid2-select-all" type="checkbox"></th>
+                                    <th class="k-header k-touch-action-none k-grid-draggable-header" rowspan="1" colspan="1">ID</th>
+                                    <th class="k-header k-touch-action-none k-grid-draggable-header" rowspan="1" colspan="1">Name</th>
+                                    <th class="k-header" rowspan="1" colspan="1">Command</th>
                                 </tr>
                             </thead>
                         </table>
                     </div>
                 </div>
-                <kendo-grid-list class="k-grid-container" role="presentation">
-                    <div class="k-grid-content k-virtual-content" role="presentation" tabindex="-1">
-                        <div class="k-grid-table-wrap" role="presentation">
-                            <table class="k-grid-table" role="presentation">
-                                <colgroup role="presentation">
+                <kendo-grid-list class="k-grid-container">
+                    <div class="k-grid-content k-virtual-content">
+                        <div class="k-grid-table-wrap">
+                            <table class="k-grid-table">
+                                <colgroup>
                                     <col class="k-group-col">
                                     <col class="k-group-col">
                                     <col style="width: 50px;">
@@ -195,49 +195,49 @@
                                     <col>
                                     <col>
                                 </colgroup>
-                                <tbody role="presentation">
-                                    <tr role="row" aria-rowindex="2" class="k-grouping-row">
-                                        <td aria-selected="false" colspan="6" role="gridcell" aria-expanded="true" aria-colindex="1">
-                                            <p class="k-reset"><a class="k-icon k-i-collapse" href="#" role="presentation" tabindex="-1"></a> ID: 1 </p>
+                                <tbody>
+                                    <tr role="row" class="k-grouping-row">
+                                        <td colspan="6">
+                                            <p class="k-reset"><a class="k-icon k-i-collapse" href="#"></a> ID: 1 </p>
                                         </td>
                                     </tr>
-                                    <tr role="row" aria-rowindex="3" class="k-grouping-row">
-                                        <td class="k-group-cell" role="presentation"></td>
-                                        <td aria-selected="false" colspan="5" role="gridcell" aria-expanded="true" aria-colindex="1">
-                                            <p class="k-reset"><a class="k-icon k-i-collapse" href="#" role="presentation" tabindex="-1"></a> Name: Product1 </p>
+                                    <tr role="row" class="k-grouping-row">
+                                        <td class="k-group-cell"></td>
+                                        <td colspan="5">
+                                            <p class="k-reset"><a class="k-icon k-i-collapse" href="#"></a> Name: Product1 </p>
                                         </td>
                                     </tr>
-                                    <tr role="row" aria-rowindex="4">
-                                        <td class="k-group-cell" role="presentation"></td>
-                                        <td class="k-group-cell" role="presentation"></td>
-                                        <td role="gridcell" aria-selected="false" class="k-touch-action-auto" colspan="1" aria-colindex="1"><input class="k-checkbox" id="k-grid2-checkbox0" aria-label="Select Row" type="checkbox"></td>
-                                        <td role="gridcell" aria-selected="false" class="k-touch-action-auto" colspan="1" aria-colindex="2">1</td>
-                                        <td role="gridcell" aria-selected="false" class="k-touch-action-auto" colspan="1" aria-colindex="3">Product1</td>
-                                        <td role="gridcell" aria-selected="false" class="k-touch-action-auto k-command-cell" colspan="1" aria-colindex="4"><button icon="delete" class="k-button-icontext k-button k-grid-remove-command" role="button" aria-disabled="false" dir="ltr"><span class="k-icon k-i-delete" role="presentation"></span>Delete</button></td>
+                                    <tr role="row">
+                                        <td class="k-group-cell"></td>
+                                        <td class="k-group-cell"></td>
+                                        <td class="k-touch-action-auto" colspan="1"><input class="k-checkbox" id="k-grid2-checkbox0" type="checkbox"></td>
+                                        <td class="k-touch-action-auto" colspan="1">1</td>
+                                        <td class="k-touch-action-auto" colspan="1">Product1</td>
+                                        <td class="k-touch-action-auto k-command-cell" colspan="1"><button icon="delete" class="k-button-icontext k-button k-grid-remove-command" role="button" dir="ltr"><span class="k-icon k-i-delete"></span>Delete</button></td>
                                     </tr>
-                                    <tr role="row" aria-rowindex="5" class="k-grouping-row">
-                                        <td aria-selected="false" colspan="6" role="gridcell" aria-expanded="true" aria-colindex="1">
-                                            <p class="k-reset"><a class="k-icon k-i-collapse" href="#" role="presentation" tabindex="-1"></a> ID: 2 </p>
+                                    <tr role="row" class="k-grouping-row">
+                                        <td colspan="6">
+                                            <p class="k-reset"><a class="k-icon k-i-collapse" href="#"></a> ID: 2 </p>
                                         </td>
                                     </tr>
-                                    <tr role="row" aria-rowindex="6" class="k-grouping-row">
-                                        <td class="k-group-cell" role="presentation"></td>
-                                        <td aria-selected="false" colspan="5" role="gridcell" aria-expanded="true" aria-colindex="1">
-                                            <p class="k-reset"><a class="k-icon k-i-collapse" href="#" role="presentation" tabindex="-1"></a> Name: Product2 </p>
+                                    <tr role="row" class="k-grouping-row">
+                                        <td class="k-group-cell"></td>
+                                        <td colspan="5">
+                                            <p class="k-reset"><a class="k-icon k-i-collapse" href="#"></a> Name: Product2 </p>
                                         </td>
                                     </tr>
-                                    <tr class="k-alt" role="row" aria-rowindex="7">
-                                        <td class="k-group-cell" role="presentation"></td>
-                                        <td class="k-group-cell" role="presentation"></td>
-                                        <td role="gridcell" aria-selected="false" class="k-touch-action-auto" colspan="1" aria-colindex="1"><input class="k-checkbox" id="k-grid2-checkbox1" aria-label="Select Row" type="checkbox"></td>
-                                        <td role="gridcell" aria-selected="false" class="k-touch-action-auto" colspan="1" aria-colindex="2">2</td>
-                                        <td role="gridcell" aria-selected="false" class="k-touch-action-auto" colspan="1" aria-colindex="3">Product2</td>
-                                        <td role="gridcell" aria-selected="false" class="k-touch-action-auto k-command-cell" colspan="1" aria-colindex="4"><button icon="delete" class="k-button-icontext k-button k-grid-remove-command" role="button" aria-disabled="false" dir="ltr"><span class="k-icon k-i-delete" role="presentation"></span>Delete</button></td>
+                                    <tr class="k-alt" role="row">
+                                        <td class="k-group-cell"></td>
+                                        <td class="k-group-cell"></td>
+                                        <td class="k-touch-action-auto" colspan="1"><input class="k-checkbox" id="k-grid2-checkbox1" type="checkbox"></td>
+                                        <td class="k-touch-action-auto" colspan="1">2</td>
+                                        <td class="k-touch-action-auto" colspan="1">Product2</td>
+                                        <td class="k-touch-action-auto k-command-cell" colspan="1"><button icon="delete" class="k-button-icontext k-button k-grid-remove-command" role="button" dir="ltr"><span class="k-icon k-i-delete"></span>Delete</button></td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
-                        <div class="k-height-container" role="presentation">
+                        <div class="k-height-container">
                             <div></div>
                         </div>
                     </div>
