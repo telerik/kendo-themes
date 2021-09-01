@@ -94,6 +94,10 @@
         overflow: hidden;
     }
 
+    .k-pivotgrid-row-headers .k-pivotgrid-table {
+        padding-bottom: var(--kendo-scrollbar-width, #{$default-scrollbar-width});
+    }
+
     .k-pivotgrid-row-headers .k-pivotgrid-cell {
         border-right-style: solid;
         border-right-width: $pivotgrid-cell-border-width;
@@ -106,8 +110,7 @@
     // Values
     .k-pivotgrid-values {
         border-color: inherit;
-        overflow-x: auto;
-        overflow-y: scroll;
+        overflow: scroll;
     }
 
     .k-pivotgrid-values .k-pivotgrid-cell {
