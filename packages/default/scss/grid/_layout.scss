@@ -28,7 +28,6 @@
 
     // helper variables
     $grid-filterable-icon-spacing: calc( #{$button-calc-size} + #{$grid-header-menu-icon-spacing} );
-    $default-scrollbar-width: 17px;
 
     .k-grid {
         border-width: $grid-border-width;
@@ -332,7 +331,8 @@
                 right: 0;
             }
 
-            .k-grid-header-wrap.k-auto-scrollable {
+            .k-grid-header-wrap,
+            .k-grid-footer-wrap {
                 margin-left: -1px;
                 margin-right: 0;
             }
@@ -553,17 +553,13 @@
     // Grid header / footer
     .k-grid-header-wrap,
     .k-grid-footer-wrap {
+        margin-right: -1px;
         width: 100%;
         border-width: 0 1px 0 0;
         border-style: solid;
         border-color: inherit;
         position: relative;
         overflow: hidden;
-    }
-
-    .k-grid-header-wrap.k-auto-scrollable,
-    .k-grid-footer-wrap {
-        margin-right: -1px;
     }
 
     .k-grid-header-locked + .k-grid-header-wrap.k-auto-scrollable {
@@ -576,11 +572,12 @@
 
     .k-grid-header,
     .k-grid-footer {
-        flex: 0 0 auto;
-        padding-right: $default-scrollbar-width;
+        padding-inline-start: 0;
+        padding-inline-end: var(--kendo-scrollbar-width, #{$default-scrollbar-width});
         border-width: 0;
         border-style: solid;
         border-color: inherit;
+        flex: 0 0 auto;
 
         table {
             table-layout: fixed;
@@ -594,13 +591,7 @@
         align-items: stretch;
     }
 
-    .k-ie div.k-grid-header {
-        display: block;
-    }
-
     .k-grid-header {
-        padding-inline-start: 0;
-        padding-inline-end: calc( var(--kendo-scrollbar-width, #{$default-scrollbar-width}) - 1px );
         border-bottom-width: 1px;
         font-size: $grid-header-font-size;
 
@@ -636,8 +627,7 @@
             text-overflow: ellipsis;
             outline: 0;
 
-            .k-ie &,
-            .k-edge & {
+            .k-ie & {
                 margin: 0;
                 padding: 0;
             }
@@ -648,8 +638,7 @@
         .k-filterable {
             padding-right: $grid-filterable-icon-spacing;
 
-            .k-ie &,
-            .k-edge & {
+            .k-ie & {
                 padding-right: calc( #{ $button-calc-size } + #{ $grid-header-menu-icon-spacing });
             }
         }
@@ -675,8 +664,7 @@
             bottom: calc( #{ $grid-header-padding-y } + #{ $line-height-em / 2 } - #{ $button-inner-calc-size / 2 } );
             z-index: 1;
 
-            .k-ie &,
-            .k-edge & {
+            .k-ie & {
                 position: static;
                 float: right;
                 margin-top: calc( (#{ $button-calc-size } - #{ $form-line-height * 1em}) / -2);
@@ -718,9 +706,7 @@
     }
 
     .k-grid-footer {
-        padding-inline-start: 0;
-        padding-inline-end: calc( var(--kendo-scrollbar-width, #{$default-scrollbar-width}) - 1px );
-        border-width: 1px 0 0;
+        border-top-width: 1px;
 
         td {
             height: $line-height-em;
@@ -1099,12 +1085,16 @@
     }
 
     .k-grid.k-grid-no-scrollbar {
-        .k-grid-header {
-            padding: 0;
+
+        .k-grid-header-wrap,
+        .k-grid-footer-wrap {
+            margin: 0;
+            border-width: 0;
         }
 
-        .k-grid-header-wrap {
-            border-width: 0;
+        .k-grid-header,
+        .k-grid-footer {
+            padding: 0;
         }
 
         .k-grid-content {
@@ -1501,12 +1491,12 @@
 @include exports("grid/layout/IE") {
     // TODO: Remove once we drop IE support
 
-    $default-scrollbar-width: 17px;
     .k-ie {
         .k-grid-header,
         .k-grid-footer {
             padding-right: $default-scrollbar-width;
             padding-left: 0;
+            display: block;
         }
 
         [dir = "rtl"],
