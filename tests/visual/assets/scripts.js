@@ -24,9 +24,31 @@ if (animations === true) {
     document.documentElement.classList.add("k-no-animations");
 }
 
-// Apply chart colors to SVG elements
-window.addEventListener('load', () => [ ...kendoThemeLink.sheet.cssRules ]
-    .filter(rule => rule.selectorText && rule.selectorText.startsWith('.k-var'))
-    .filter(rule => Boolean(rule.style.backgroundColor))
-    .forEach(rule => { rule.style.fill = rule.style.backgroundColor; })
-);
+// Calculate scrollbar width
+function scrollbarWidth() {
+    let div = document.createElement('div');
+    let result;
+
+    div.style.cssText = "overflow:scroll;overflow-x:hidden;zoom:1;clear:both;display:block";
+    div.innerHTML = "&nbsp;";
+    document.body.appendChild(div);
+
+    result = div.offsetWidth - div.scrollWidth;
+
+    document.body.removeChild(div);
+
+    return `${result}px`;
+}
+
+// Hooks
+window.addEventListener('load', () => {
+
+    // Set scrollbar width
+    document.documentElement.style.setProperty( '--kendo-scrollbar-width', scrollbarWidth() );
+
+    // Apply chart colors to SVG elements
+    [ ...kendoThemeLink.sheet.cssRules ]
+        .filter(rule => rule.selectorText && rule.selectorText.startsWith('.k-var'))
+        .filter(rule => Boolean(rule.style.backgroundColor))
+        .forEach(rule => { rule.style.fill = rule.style.backgroundColor; });
+});
