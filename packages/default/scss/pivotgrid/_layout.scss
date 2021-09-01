@@ -171,6 +171,7 @@
         border-style: solid;
         box-sizing: border-box;
         cursor: pointer;
+        user-select: none;
 
         .k-flex-row &,
         .k-flex-row-reverse & {
