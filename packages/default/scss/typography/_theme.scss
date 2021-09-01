@@ -7,10 +7,8 @@
         );
     }
 
-    // Code
-    // Uncomment tag selectors for R1 2022
-    // pre,
-    // code,
+    // Code snippet
+    .k-pre,
     .k-code {
         @include fill(
             $code-text,
