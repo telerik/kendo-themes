@@ -7,7 +7,7 @@
     $text-align: ( left, right, center, justify ) !default;
     $text-transform: ( lowercase, uppercase, capitalize ) !default;
 
-    $font-sizes: (
+    $kendo-font-sizes: (
         xs: $font-size-xs,
         sm: $font-size-sm,
         md: $font-size-md,
@@ -69,7 +69,7 @@
     }
 
     // Font Size
-    @each $name, $size in $font-sizes {
+    @each $name, $size in $kendo-font-sizes {
         .k-fs-#{$name}       { font-size: $size !important; } // sass-lint:disable-line no-important
     }
 
