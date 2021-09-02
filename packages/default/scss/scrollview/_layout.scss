@@ -55,7 +55,7 @@
         width: calc( var(--kendo-scrollview-views, 1) * 100% );
         transition-duration: $scrollview-transition-duration;
         transition-timing-function: $scrollview-transition-timing-function;
-        transform: translateX( calc( -1 * ( 100% / var(--kendo-scrollview-views, 1) * ( var(--kendo-scrollview-current, 1) - 1) ) ) );
+        transform: translateX( calc( -100% / var(--kendo-scrollview-views, 1) * ( var(--kendo-scrollview-current, 1) - 1) ) );
 
         .k-scrollview-view {
             width: calc( 100% / var(--kendo-scrollview-views, 1) );

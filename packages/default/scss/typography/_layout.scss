@@ -9,10 +9,8 @@
         h5 { @extend .k-h5; }
         h6 { @extend .k-h6; }
         p { @extend .k-paragraph; }
-        pre,
-        code {
-            @extend .k-code;
-        }
+        pre { @extend .k-pre; }
+        code { @extend .k-code; }
     }
 
     // TODO delete k-typography class for R1 2022
@@ -106,7 +104,8 @@
         margin: $paragraph-margin;
     }
 
-    // Code
+    // Code snippet
+    .k-pre,
     .k-code {
         @include typography(
             $code-font-size,
@@ -119,19 +118,22 @@
         border-width: $code-border-width;
     }
 
-    code.k-code {
-        padding: $code-padding-y $code-padding-x;
-    }
-
-    pre.k-code {
+    .k-pre {
         padding: $pre-padding-y $pre-padding-x;
         overflow: auto;
     }
 
-    // (R1 2022) pre > code,
-    .k-code > code {
+    .k-pre > .k-code {
+        padding: 0;
         border-width: 0;
+        border-color: transparent;
+        background-color: transparent;
         font-family: inherit;
+        font-size: inherit;
+    }
+
+    .k-code {
+        padding: $code-padding-y $code-padding-x;
     }
 
     // Display
