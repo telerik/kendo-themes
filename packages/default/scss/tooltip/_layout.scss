@@ -13,7 +13,7 @@
         font-family: $tooltip-font-family;
         font-size: $tooltip-font-size;
         line-height: $tooltip-line-height;
-        display: inline-flex;
+        display: flex;
         flex-flow: row nowrap;
         align-items: flex-start;
         position: absolute;
