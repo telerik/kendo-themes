@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 4.41.1 (2021-09-06)
+
+
+### Bug Fixes
+
+* **sheduler:** scheduler resource cells should not flex ([8e848d3](https://github.com/telerik/kendo-themes/commit/8e848d351452aa6eedf7c5336138991ebad4b4b1))
+
+
+
+
+
 ## 4.40.1 (2021-07-28)
 
 **Note:** Version bump only for package @progress/kendo-theme-nouvelle
