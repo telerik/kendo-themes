@@ -1,4 +1,4 @@
-name: Release dev channel
+name: Release vNext channel
 
 defaults:
   run:
@@ -10,8 +10,8 @@ env:
 on:
   workflow_dispatch:
   workflow_run:
-    workflows: ["CI | Dev"]
-    branches: [develop]
+    workflows: ["CI | Next"]
+    branches: [v5-dev]
     types:
       - completed
 
@@ -26,7 +26,7 @@ jobs:
       - name: Checkout branch
         uses: actions/checkout@v2
         with:
-          ref: develop
+          ref: v5-dev
 
       - name: Setup node
         uses: actions/setup-node@v2
@@ -47,11 +47,11 @@ jobs:
       - name: Lerna publish
         run: |
           printf "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> .npmrc
-          npx lerna publish --conventional-commits --conventional-prerelease --preid dev --dist-tag dev --create-release github
+          npx lerna publish --conventional-commits --conventional-prerelease --preid next --dist-tag next --create-release github
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
 
       - name: Push to GitHub
         run: |
-          git push origin develop --tags --quiet > /dev/null 2>&1
+          git push origin v5-dev --tags --quiet > /dev/null 2>&1

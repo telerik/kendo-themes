@@ -17,7 +17,8 @@
     "version": {
       "allowBranch": [
         "master",
-        "develop"
+        "develop",
+        "v5-dev"
       ]
     },
     "publish": {
