@@ -47,6 +47,7 @@
         &.k-state-hover,
         &:active,
         &.k-state-active,
+        &.k-state-selected,
         &:focus,
         &.k-state-focus {
             color: $primary-button-bg;
