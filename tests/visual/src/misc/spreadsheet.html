@@ -8,6 +8,14 @@
     <link rel="stylesheet" href="../../assets/styles.css" />
     <script src="../../assets/scripts.js"></script>
     <style>
+        .k-spreadsheet-view {
+            overflow: hidden;
+        }
+        .k-spreadsheet-fixed-container {
+            width: calc( 100% - var(--kendo-scrollbar-width, 0) );
+            height: calc( 100% - var(--kendo-scrollbar-width, 0) );
+            overflow: hidden;
+        }
         .k-spreadsheet-cell {
             white-space: normal;
         }
@@ -159,9 +167,9 @@
                     <div class="k-list-scroller"></div>
                 </div>
             </div>
-            <div class="k-spreadsheet-view" style="height: 447px;">
-                <div class="k-spreadsheet-fixed-container" style="width: 965px; height: 429px;">
-                    <div class="k-spreadsheet-pane k-top k-left" style="top: 0px; left: 0px; height: 429px; width: 965px;">
+            <div class="k-spreadsheet-view">
+                <div class="k-spreadsheet-fixed-container">
+                    <div class="k-spreadsheet-pane k-top k-left" style="top: 0px; left: 0px; height: 100%; width: 100%;">
                         <div class="k-spreadsheet-data" style="position: relative; left: 32px; top: 20px;">
                             <div class="k-spreadsheet-vaxis" style="left: 0px; height: 410px;"></div>
                             <div class="k-spreadsheet-vaxis" style="left: 100px; height: 410px;"></div>
@@ -572,7 +580,7 @@
                     <div class="k-spreadsheet-top-corner" style="width: 32px; height: 20px;"></div>
                 </div>
                 <div class="k-spreadsheet-scroller">
-                    <div class="k-spreadsheet-view-size" style="height: 4110px; width: 3663px;"></div>
+                    <div class="k-spreadsheet-view-size" style="height: 200%; width: 200%;"></div>
                 </div>
                 <div class="k-spreadsheet-clipboard">
                     <table class="kendo-clipboard-9e2af5b1-fb37-4868-83b5-033657aa47e5" style="left: 0px; top: 0px; height: 70px; width: 879px;">
@@ -604,10 +612,10 @@
                 </a>
                 <div class="k-spreadsheet-sheets-items k-tabstrip-scrollable k-tabstrip k-floatwrap k-tabstrip-bottom">
                     <div class="k-tabstrip-items-wrapper k-hstack">
-                        <span class="k-button k-button-icon k-flat k-tabstrip-prev" style="left: 36px; display: none;">
+                        <span class="k-button k-button-icon k-flat k-tabstrip-prev">
                             <span class="k-icon k-i-arrow-60-left"></span>
                         </span>
-                        <ul class="k-reset k-tabstrip-items" style="margin-left: 36px;">
+                        <ul class="k-reset k-tabstrip-items">
                             <li class="k-item k-state-active k-state-tab-on-top k-spreadsheet-sheets-bar-active">
                                 <span class="k-link">Food Order</span>
                                 <span class="k-spreadsheet-sheets-remove k-remove-tab k-button k-icon-button k-flat">
@@ -621,7 +629,7 @@
                                 </span>
                             </li>
                         </ul>
-                        <span class="k-button k-button-icon k-flat k-tabstrip-next" style="display: none;">
+                        <span class="k-button k-button-icon k-flat k-tabstrip-next">
                             <span class="k-icon k-i-arrow-60-right"></span>
                         </span>
                     </div>
