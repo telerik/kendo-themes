@@ -48,8 +48,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$component-border</td>
     <td></td>
-    <td>$gray-300</td>
-    <td></td>
+    <td>contrast-wcag( $component-bg, $gray-300, $gray-700 )</td>
+    <td>contrast-wcag( $component-bg, $gray-300, $gray-700 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of a component.<br />Note: do not use this variable directly. Instead derive it as `$component-name-border` e.g. `$grid-border: component-border !default;`.</div></div>

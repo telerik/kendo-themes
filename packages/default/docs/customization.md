@@ -716,8 +716,8 @@ The following table lists the available variables for customizing the Default th
 <tr>
     <td>$component-border</td>
     <td></td>
-    <td>rgba( black, .08 )</td>
-    <td>rgba( black, .08 )</td>
+    <td>rgba( if( $dark-theme, $white, $black ), .08 )</td>
+    <td>rgba( if( $dark-theme, $white, $black ), .08 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of a component.<br />Note: do not use this variable directly. Instead derive it as `$component-name-border` e.g. `$grid-border: component-border !default;`.</div></div>
@@ -768,7 +768,7 @@ The following table lists the available variables for customizing the Default th
     <td>$grid-border</td>
     <td></td>
     <td>$component-border</td>
-    <td>rgba( black, .08 )</td>
+    <td>rgba( if( $dark-theme, $white, $black ), .08 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the grid component</div></div>
@@ -798,7 +798,7 @@ The following table lists the available variables for customizing the Default th
     <td>$grid-header-border</td>
     <td></td>
     <td>$grid-border</td>
-    <td>rgba( black, .08 )</td>
+    <td>rgba( if( $dark-theme, $white, $black ), .08 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of grid header</div></div>
@@ -838,7 +838,7 @@ The following table lists the available variables for customizing the Default th
     <td>$grid-footer-border</td>
     <td></td>
     <td>$grid-header-border</td>
-    <td>rgba( black, .08 )</td>
+    <td>rgba( if( $dark-theme, $white, $black ), .08 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of grid footer</div></div>
@@ -1010,7 +1010,7 @@ The following table lists the available variables for customizing the Default th
     <td>$tabstrip-border</td>
     <td></td>
     <td>$component-border</td>
-    <td>rgba( black, .08 )</td>
+    <td>rgba( if( $dark-theme, $white, $black ), .08 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of tabstrip component</div></div>
@@ -1170,7 +1170,7 @@ The following table lists the available variables for customizing the Default th
     <td>$tabstrip-item-selected-border</td>
     <td></td>
     <td>$component-border</td>
-    <td>rgba( black, .08 )</td>
+    <td>rgba( if( $dark-theme, $white, $black ), .08 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of selected tabs</div></div>
@@ -1240,7 +1240,7 @@ The following table lists the available variables for customizing the Default th
     <td>$tabstrip-content-border</td>
     <td></td>
     <td>$component-border</td>
-    <td>rgba( black, .08 )</td>
+    <td>rgba( if( $dark-theme, $white, $black ), .08 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of tabstrip content</div></div>

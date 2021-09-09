@@ -716,8 +716,8 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$component-border</td>
     <td></td>
-    <td>$gray-300</td>
-    <td></td>
+    <td>contrast-wcag( $component-bg, $gray-300, $gray-700 )</td>
+    <td>contrast-wcag( $component-bg, $gray-300, $gray-700 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of a component.<br />Note: do not use this variable directly. Instead derive it as `$component-name-border` e.g. `$grid-border: component-border !default;`.</div></div>
@@ -768,7 +768,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$grid-border</td>
     <td></td>
     <td>$component-border</td>
-    <td></td>
+    <td>contrast-wcag( $component-bg, $gray-300, $gray-700 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the grid component</div></div>
@@ -928,7 +928,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$grid-selected-border</td>
     <td></td>
     <td>$grid-border</td>
-    <td></td>
+    <td>contrast-wcag( $component-bg, $gray-300, $gray-700 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of selected rows in grid</div></div>
@@ -1010,7 +1010,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$tabstrip-border</td>
     <td></td>
     <td>$component-border</td>
-    <td></td>
+    <td>contrast-wcag( $component-bg, $gray-300, $gray-700 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of tabstrip component</div></div>
@@ -1170,7 +1170,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$tabstrip-item-selected-border</td>
     <td></td>
     <td>$component-border</td>
-    <td></td>
+    <td>contrast-wcag( $component-bg, $gray-300, $gray-700 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of selected tabs</div></div>
@@ -1240,7 +1240,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$tabstrip-content-border</td>
     <td></td>
     <td>$component-border</td>
-    <td></td>
+    <td>contrast-wcag( $component-bg, $gray-300, $gray-700 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of tabstrip content</div></div>

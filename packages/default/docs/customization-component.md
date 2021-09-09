@@ -48,8 +48,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$component-border</td>
     <td></td>
-    <td>rgba( black, .08 )</td>
-    <td>rgba( black, .08 )</td>
+    <td>rgba( if( $dark-theme, $white, $black ), .08 )</td>
+    <td>rgba( if( $dark-theme, $white, $black ), .08 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of a component.<br />Note: do not use this variable directly. Instead derive it as `$component-name-border` e.g. `$grid-border: component-border !default;`.</div></div>
