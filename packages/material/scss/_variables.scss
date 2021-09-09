@@ -258,15 +258,33 @@ $cursors: ( auto, default, none, context-menu, help, pointer, progress, wait, ce
     row-resize, all-scroll, zoom-in, zoom-out, grab, grabbing ) !default;
 
 
-// Color constants
-$rgba-transparent: rgba( $black, 0 );
+// Root styles
+$body-bg: map-get($theme, body-bg) !default;
+$body-text: map-get($theme, body-text) !default;
 
-$gradient-transparent-to-black: rgba( black, 0), black;
-$gradient-transparent-to-white: rgba( white, 0), white;
-$gradient-black-to-transparent: black, rgba( black, 0);
-$gradient-white-to-transparent: white, rgba( white, 0);
+$subtle-text: map-get($theme, subtle-text) !default;
+$disabled-text: map-get($theme, disabled-text) !default;
 
-$gradient-rainbow: #ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff, #ff0000;
+$app-bg: $body-bg !default;
+$app-text: $body-text !default;
+$app-border: map-get($theme, component-border) !default;
+
+
+// Components
+
+// Component
+/// Background color of a component.
+/// Note: do not use this variable directly. Instead derive it as `$component-name-bg` e.g. `$grid-bg: $component-bg !defualt;`.
+/// @group component
+$component-bg: map-get($theme, component-bg) !default;
+/// Text color of a component.
+/// Note: do not use this variable directly. Instead derive it as `$component-name-text` e.g. `$grid-text: component-text !default;`.
+/// @group component
+$component-text: map-get($theme, component-text) !default;
+/// Border color of a component.
+/// Note: do not use this variable directly. Instead derive it as `$component-name-border` e.g. `$grid-border: component-border !default;`.
+/// @group component
+$component-border: map-get($theme, component-border) !default;
 
 
 /// The background of the components' chrome area.
@@ -315,34 +333,6 @@ $disabled-opacity: .6 !default;
 $font-size: 14px !default;
 $font-family: Roboto, "Helvetica Neue", sans-serif !default;
 $line-height: 2 !default;
-
-// Root styles
-$body-bg: map-get($theme, body-bg) !default;
-$body-text: map-get($theme, body-text) !default;
-
-$subtle-text: map-get($theme, subtle-text) !default;
-$disabled-text: map-get($theme, disabled-text) !default;
-
-$app-bg: $body-bg !default;
-$app-text: $body-text !default;
-$app-border: map-get($theme, component-border) !default;
-
-
-// Components
-
-// Component
-/// Background color of a component.
-/// Note: do not use this variable directly. Instead derive it as `$component-name-bg` e.g. `$grid-bg: $component-bg !defualt;`.
-/// @group component
-$component-bg: map-get($theme, component-bg) !default;
-/// Text color of a component.
-/// Note: do not use this variable directly. Instead derive it as `$component-name-text` e.g. `$grid-text: component-text !default;`.
-/// @group component
-$component-text: map-get($theme, component-text) !default;
-/// Border color of a component.
-/// Note: do not use this variable directly. Instead derive it as `$component-name-border` e.g. `$grid-border: component-border !default;`.
-/// @group component
-$component-border: map-get($theme, component-border) !default;
 
 
 // Drop Hint

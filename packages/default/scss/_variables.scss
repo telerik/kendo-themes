@@ -251,7 +251,7 @@ $component-text: $body-text !default;
 /// Border color of a component.
 /// Note: do not use this variable directly. Instead derive it as `$component-name-border` e.g. `$grid-border: component-border !default;`.
 /// @group component
-$component-border: rgba( black, .08 ) !default;
+$component-border: rgba( if( $dark-theme, $white, $black ), .08 ) !default;
 
 
 /// The background of the components' chrome area.

@@ -47,7 +47,7 @@
         display: inline-flex;
         flex-direction: row;
         position: absolute;
-        z-index: 1;
+        z-index: 2;
         top: 0;
         left: 0;
 
@@ -64,6 +64,11 @@
     // Tabstrip
     .k-spreadsheet-tabstrip {
         padding-top: $toolbar-padding-y;
+        position: relative;
+        z-index: 1;
+    }
+    .k-spreadsheet-tabstrip .k-tabstrip-items-wrapper {
+        margin: 0;
     }
     .k-spreadsheet-tabstrip .k-loading {
         display: none;
@@ -217,17 +222,17 @@
 
     // Sheets bar
     .k-spreadsheet-sheets-bar {
-        padding: 0 $padding-y $padding-y;
+        padding: 0 0 map-get( $spacing, 1 ) map-get( $spacing, 1 );
         border-width: 1px 0 0;
         border-style: solid;
         border-color: inherit;
         display: flex;
         flex-direction: row;
-        align-items: center;
+        align-items: start;
         position: relative;
     }
     .k-spreadsheet-sheets-bar-add {
-        margin-right: $padding-y;
+        align-self: center;
 
         &:not(:hover) {
             border-color: transparent;
@@ -236,22 +241,13 @@
         }
     }
     .k-spreadsheet-sheets-items {
-        margin-top: -1px;
         flex: 1;
         overflow: hidden;
 
-        // sass-lint:disable no-important
-        .k-tabstrip-items {
-            margin: 0 $button-calc-size !important;
+        .k-tabstrip-items-wrapper {
+            margin: 0;
             border-width: 0;
         }
-        .k-tabstrip-prev {
-            left: 0 !important;
-        }
-        .k-tabstrip-next {
-            right: 0 !important;
-        }
-        // sass-lint:enable no-important
 
         .k-item  {
             .k-link {
@@ -266,6 +262,7 @@
                 display: inline-flex;
                 flex-direction: row;
                 vertical-align: middle;
+                align-self: center;
             }
         }
     }

@@ -17,7 +17,10 @@
             color: $primary-contrast;
             background-color: $primary;
         }
-        .k-tabstrip-items .k-item.k-state-active {
+        .k-tabstrip-items .k-item {
+            color: inherit;
+        }
+        .k-tabstrip-items .k-item.k-state-active::after {
             border-color: $primary-contrast;
         }
     }
