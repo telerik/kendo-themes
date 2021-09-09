@@ -49,7 +49,7 @@ The following table lists the available variables for customization.
     <td>$grid-border</td>
     <td></td>
     <td>$component-border</td>
-    <td>rgba( black, .08 )</td>
+    <td>rgba( if( $dark-theme, $white, $black ), .08 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the grid component</div></div>
@@ -79,7 +79,7 @@ The following table lists the available variables for customization.
     <td>$grid-header-border</td>
     <td></td>
     <td>$grid-border</td>
-    <td>rgba( black, .08 )</td>
+    <td>rgba( if( $dark-theme, $white, $black ), .08 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of grid header</div></div>
@@ -119,7 +119,7 @@ The following table lists the available variables for customization.
     <td>$grid-footer-border</td>
     <td></td>
     <td>$grid-header-border</td>
-    <td>rgba( black, .08 )</td>
+    <td>rgba( if( $dark-theme, $white, $black ), .08 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of grid footer</div></div>

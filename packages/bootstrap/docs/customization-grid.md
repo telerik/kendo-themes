@@ -49,7 +49,7 @@ The following table lists the available variables for customization.
     <td>$grid-border</td>
     <td></td>
     <td>$component-border</td>
-    <td></td>
+    <td>contrast-wcag( $component-bg, $gray-300, $gray-700 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the grid component</div></div>
@@ -209,7 +209,7 @@ The following table lists the available variables for customization.
     <td>$grid-selected-border</td>
     <td></td>
     <td>$grid-border</td>
-    <td></td>
+    <td>contrast-wcag( $component-bg, $gray-300, $gray-700 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of selected rows in grid</div></div>

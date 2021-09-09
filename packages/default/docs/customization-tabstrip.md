@@ -49,7 +49,7 @@ The following table lists the available variables for customization.
     <td>$tabstrip-border</td>
     <td></td>
     <td>$component-border</td>
-    <td>rgba( black, .08 )</td>
+    <td>rgba( if( $dark-theme, $white, $black ), .08 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of tabstrip component</div></div>
@@ -209,7 +209,7 @@ The following table lists the available variables for customization.
     <td>$tabstrip-item-selected-border</td>
     <td></td>
     <td>$component-border</td>
-    <td>rgba( black, .08 )</td>
+    <td>rgba( if( $dark-theme, $white, $black ), .08 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of selected tabs</div></div>
@@ -279,7 +279,7 @@ The following table lists the available variables for customization.
     <td>$tabstrip-content-border</td>
     <td></td>
     <td>$component-border</td>
-    <td>rgba( black, .08 )</td>
+    <td>rgba( if( $dark-theme, $white, $black ), .08 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of tabstrip content</div></div>
