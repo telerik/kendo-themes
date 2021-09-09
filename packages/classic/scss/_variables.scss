@@ -233,6 +233,8 @@ $app-text: $body-text !default;
 $app-border: try-shade( $app-bg, 2 ) !default;
 
 
+// Components
+
 /// The background of the components' chrome area.
 $base-bg: #f0f0f0 !default;
 /// The text color of the components' chrome area.
@@ -241,6 +243,19 @@ $base-text: $body-text !default;
 $base-border: try-shade( $base-bg, 2 ) !default;
 /// The gradient background of the components' chrome area.
 $base-gradient: rgba( white, .1 ), rgba( white, 0 ) !default;
+
+/// Background color of a component.
+/// Note: do not use this variable directly. Instead derive it as `$component-name-bg` e.g. `$grid-bg: $component-bg !defualt;`.
+/// @group component
+$component-bg: $body-bg !default;
+/// Text color of a component.
+/// Note: do not use this variable directly. Instead derive it as `$component-name-text` e.g. `$grid-text: component-text !default;`.
+/// @group component
+$component-text: $body-text !default;
+/// Border color of a component.
+/// Note: do not use this variable directly. Instead derive it as `$component-name-border` e.g. `$grid-border: component-border !default;`.
+/// @group component
+$component-border: $base-border !default;
 
 /// The background of hovered items.
 $hovered-bg: try-shade( $base-bg, 1 ) !default;
@@ -282,23 +297,6 @@ $disabled-opacity: .6 !default;
 $font-size: 14px !default;
 $font-family: inherit !default;
 $line-height: ( 20 / 14 ) !default;
-
-
-// Components
-
-// Component
-/// Background color of a component.
-/// Note: do not use this variable directly. Instead derive it as `$component-name-bg` e.g. `$grid-bg: $component-bg !defualt;`.
-/// @group component
-$component-bg: $body-bg !default;
-/// Text color of a component.
-/// Note: do not use this variable directly. Instead derive it as `$component-name-text` e.g. `$grid-text: component-text !default;`.
-/// @group component
-$component-text: $body-text !default;
-/// Border color of a component.
-/// Note: do not use this variable directly. Instead derive it as `$component-name-border` e.g. `$grid-border: component-border !default;`.
-/// @group component
-$component-border: $base-border !default;
 
 
 // Drop Hint

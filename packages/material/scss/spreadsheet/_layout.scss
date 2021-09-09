@@ -5,7 +5,7 @@
 
     // Quick access toolbar
     .k-spreadsheet-quick-access-toolbar {
-        padding: 4px;
+        padding: map-get( $spacing, 1 );
 
         .k-button {
             border-radius: 50%;
@@ -27,8 +27,8 @@
     .k-spreadsheet-sheets-bar {
         padding: 0;
 
-        .k-button {
-            margin: 4px;
+        .k-spreadsheet-sheets-bar-add {
+            margin: map-get( $spacing, 1 );
             border-radius: 50%;
             color: inherit;
             background: none;

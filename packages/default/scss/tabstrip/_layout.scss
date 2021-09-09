@@ -32,6 +32,8 @@
         border-width: 0;
         border-style: solid;
         border-color: inherit;
+        position: relative;
+        z-index: 2;
     }
 
     .k-tabstrip-items {
@@ -39,7 +41,6 @@
         display: flex;
         flex-direction: row;
         flex: 0 0 auto;
-        position: relative;
 
         .k-item {
             margin: 0;
@@ -83,6 +84,8 @@
         display: none;
         overflow: auto;
         flex: 1 1 auto;
+        position: relative;
+        z-index: 1;
 
         &.k-state-active {
             display: block;
@@ -117,9 +120,8 @@
 
 
     // Scrolling
-    .k-tabstrip.k-tabstrip-scrollable {
+    .k-tabstrip-scrollable {
         > .k-tabstrip-items-wrapper {
-            border-width: 0;
 
             > .k-tabstrip-items {
                 flex: 1 1 auto;
@@ -144,11 +146,6 @@
                 }
             }
         }
-
-        > .k-content,
-        > .k-tabstrip-content {
-            border-width: $tabstrip-content-border-width;
-        }
     }
 
 
@@ -156,6 +153,7 @@
     .k-tabstrip-top {
         > .k-tabstrip-items-wrapper {
             border-bottom-width: $tabstrip-border-width;
+            margin-bottom: -$tabstrip-content-border-width;
 
             .k-item {
                 @include border-top-radius( $tabstrip-item-border-radius );
@@ -174,12 +172,13 @@
         > .k-content,
         > .k-tabstrip-content {
             @include border-bottom-radius( $tabstrip-item-border-radius );
-            border-top-width: 0;
+            border-top-color: transparent !important; // sass-lint:disable-line no-important
         }
     }
     .k-tabstrip-bottom {
         > .k-tabstrip-items-wrapper {
             border-top-width: $tabstrip-border-width;
+            margin-top: -$tabstrip-content-border-width;
 
             .k-item {
                 @include border-bottom-radius( $tabstrip-item-border-radius );
@@ -198,7 +197,7 @@
         > .k-content,
         > .k-tabstrip-content {
             @include border-top-radius( $tabstrip-item-border-radius );
-            border-bottom-width: 0;
+            border-bottom-color: transparent !important; // sass-lint:disable-line no-important
         }
     }
     .k-tabstrip-left {
@@ -206,6 +205,7 @@
 
         > .k-tabstrip-items-wrapper {
             border-right-width: $tabstrip-border-width;
+            margin-right: -$tabstrip-content-border-width;
 
             > .k-tabstrip-items {
                 display: inline-flex;
@@ -229,10 +229,8 @@
         > .k-content,
         > .k-tabstrip-content {
             @include border-right-radius( $tabstrip-item-border-radius );
-            // sass-lint:disable no-important
-            margin: 0 !important;
-            // sass-lint:enable no-important
-            border-left-width: 0;
+            margin: 0 !important; // sass-lint:disable-line no-important
+            border-left-color: transparent !important; // sass-lint:disable-line no-important
         }
 
     }
@@ -241,6 +239,7 @@
 
         > .k-tabstrip-items-wrapper {
             border-left-width: $tabstrip-border-width;
+            margin-left: -$tabstrip-content-border-width;
 
             > .k-tabstrip-items {
                 display: inline-flex;
@@ -264,10 +263,8 @@
         > .k-content,
         > .k-tabstrip-content {
             @include border-left-radius( $tabstrip-item-border-radius );
-            // sass-lint:disable no-important
-            margin: 0 !important;
-            // sass-lint:enable no-important
-            border-right-width: 0;
+            margin: 0 !important; // sass-lint:disable-line no-important
+            border-right-color: transparent !important; // sass-lint:disable-line no-important
         }
     }
 
