@@ -28,8 +28,8 @@ The following table lists the available variables for customization.
         <tr>
     <td>$series-a</td>
     <td></td>
-    <td><span class="color-preview" style="background-color: #0275d8"></span>#0275d8</td>
-    <td><span class="color-preview" style="background-color: #0275d8"></span>#0275d8</td>
+    <td>$teal</td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The first base series color and its light and dark shades.</div></div>
@@ -38,8 +38,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$series-b</td>
     <td></td>
-    <td><span class="color-preview" style="background-color: #5bc0de"></span>#5bc0de</td>
-    <td><span class="color-preview" style="background-color: #5bc0de"></span>#5bc0de</td>
+    <td>$blue</td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The second base series color and its light and dark shades.</div></div>
@@ -48,8 +48,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$series-c</td>
     <td></td>
-    <td><span class="color-preview" style="background-color: #5cb85c"></span>#5cb85c</td>
-    <td><span class="color-preview" style="background-color: #5cb85c"></span>#5cb85c</td>
+    <td>$purple</td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The third base series color and its light and dark shades.</div></div>
@@ -58,8 +58,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$series-d</td>
     <td></td>
-    <td><span class="color-preview" style="background-color: #f0ad4e"></span>#f0ad4e</td>
-    <td><span class="color-preview" style="background-color: #f0ad4e"></span>#f0ad4e</td>
+    <td>$red</td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The fourth base series color and its light and dark shades.</div></div>
@@ -68,8 +68,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$series-e</td>
     <td></td>
-    <td><span class="color-preview" style="background-color: #e67d4a"></span>#e67d4a</td>
-    <td><span class="color-preview" style="background-color: #e67d4a"></span>#e67d4a</td>
+    <td>$yellow</td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The fifth base series color and its light and dark shades.</div></div>
@@ -78,8 +78,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$series-f</td>
     <td></td>
-    <td><span class="color-preview" style="background-color: #d9534f"></span>#d9534f</td>
-    <td><span class="color-preview" style="background-color: #d9534f"></span>#d9534f</td>
+    <td>$green</td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sixth base series color and its light and dark shades.</div></div>
@@ -89,7 +89,7 @@ The following table lists the available variables for customization.
     <td>$series-1</td>
     <td></td>
     <td>$series-a</td>
-    <td><span class="color-preview" style="background-color: #0275d8"></span>#0275d8</td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The series colors in order:<br />base, light, dark, lighter, darker</div></div>
