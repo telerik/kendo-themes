@@ -8,10 +8,10 @@ $pager-font-size: $font-size !default;
 $pager-line-height: $line-height !default;
 
 $pager-bg: $component-bg !default;
-$pager-text: if($theme-type == dark, $light-secondary-text, $dark-secondary-text) !default;
+$pager-text: if($dark-theme, $light-secondary-text, $dark-secondary-text) !default;
 $pager-border: $component-border !default;
 
-$pager-focus-bg: try-darken( $pager-bg, 7% ) !default;
+$pager-focus-bg: try-shade( $pager-bg, .5 ) !default;
 $pager-focus-shadow: null !default;
 
 $pager-section-spacing: $pager-padding-x !default;
@@ -45,21 +45,21 @@ $pager-item-focus-bg: rgba($list-item-hovered-bg, $pager-item-focus-opacity) !de
 $pager-item-focus-shadow: null !default;
 
 $pager-number-bg: null !default;
-$pager-number-text: $primary !default;
+$pager-number-text: $body-text !default;
 $pager-number-border: null !default;
 
-$pager-number-hover-opacity: .08 !default;
-$pager-number-hover-bg: rgba($pager-item-selected-bg, $pager-number-hover-opacity) !default;
+$pager-number-hover-opacity: .04 !default;
+$pager-number-hover-bg: rgba($pager-number-text, $pager-number-hover-opacity) !default;
 $pager-number-hover-text: $pager-number-text !default;
 $pager-number-hover-border: null !default;
 
 $pager-number-selected-opacity: .22 !default;
-$pager-number-selected-bg: rgba($pager-item-selected-bg, $pager-number-selected-opacity) !default;
-$pager-number-selected-text: $pager-number-text !default;
-$pager-number-selected-border: $pager-item-selected-border !default;
+$pager-number-selected-bg: rgba($primary, $pager-number-selected-opacity) !default;
+$pager-number-selected-text: $primary !default;
+$pager-number-selected-border: null !default;
 
 $pager-number-focus-opacity: .12 !default;
-$pager-number-focus-bg: rgba($pager-item-selected-bg, $pager-number-focus-opacity) !default;
+$pager-number-focus-bg: rgba($pager-number-text, $pager-number-focus-opacity) !default;
 $pager-number-focus-shadow: null !default;
 
 $pager-input-width: 3em !default;
