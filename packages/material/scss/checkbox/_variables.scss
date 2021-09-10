@@ -6,11 +6,11 @@ $checkbox-line-height: calc( #{$checkbox-size} + #{$checkbox-border-width} ) !de
 
 $checkbox-bg: null !default;
 $checkbox-text: transparent !default;
-$checkbox-border: rgba( 0, 0, 0, .54 ) !default;
+$checkbox-border: rgba( if( $dark-theme, $white, $black ), .54 ) !default;
 
 $checkbox-hovered-bg: null !default;
 $checkbox-hovered-text: null !default;
-$checkbox-hovered-border: rgba( 0, 0, 0, .87 ) !default;
+$checkbox-hovered-border: rgba( if( $dark-theme, $white, $black ), .87 ) !default;
 
 $checkbox-checked-bg: $primary !default;
 $checkbox-checked-text: contrast-wcag( $checkbox-checked-bg ) !default;
@@ -27,10 +27,10 @@ $checkbox-focused-checked-shadow: none !default;
 
 $checkbox-disabled-bg: null !default;
 $checkbox-disabled-text: null !default;
-$checkbox-disabled-border: #b0b0b0 !default;
+$checkbox-disabled-border: try-shade( $component-bg, 4 ) !default;
 
 $checkbox-disabled-checked-bg: $checkbox-disabled-border !default;
-$checkbox-disabled-checked-text: #ffffff !default;
+$checkbox-disabled-checked-text: contrast-wcag( $checkbox-disabled-checked-bg ) !default;
 $checkbox-disabled-checked-border: $checkbox-disabled-checked-bg !default;
 
 $checkbox-invalid-bg: null !default;
