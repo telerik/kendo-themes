@@ -128,8 +128,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$grid-alt-bg</td>
     <td></td>
-    <td>rgba( black, .04 )</td>
-    <td>rgba( black, .04 )</td>
+    <td>rgba( contrast-wcag( $grid-bg ), .04 )</td>
+    <td>rgba( contrast-wcag( $grid-bg ), .04 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of alternating rows in grid</div></div>
@@ -158,8 +158,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$grid-hovered-bg</td>
     <td></td>
-    <td>rgba( black, .08)</td>
-    <td>rgba( black, .08)</td>
+    <td>rgba( contrast-wcag( $grid-bg ), .08 )</td>
+    <td>rgba( contrast-wcag( $grid-bg ), .08 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of hovered rows in grid</div></div>
@@ -188,8 +188,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$grid-selected-bg</td>
     <td></td>
-    <td>rgba($selected-bg, .25)</td>
-    <td>rgba($selected-bg, .25)</td>
+    <td>rgba( $selected-bg, .25 )</td>
+    <td>rgba( $selected-bg, .25 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of selected rows in grid</div></div>
