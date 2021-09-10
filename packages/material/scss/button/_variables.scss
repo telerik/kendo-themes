@@ -86,8 +86,8 @@ $button-focused-shadow: null !default;
 
 
 // Disabled button
-$button-disabled-bg: mix( black, white, 12 ) !default;
-$button-disabled-text: rgba(0, 0, 0, .38) !default;
+$button-disabled-bg: try-shade( $body-bg, 12% ) !default;
+$button-disabled-text: $disabled-text !default;
 $button-disabled-border: null !default;
 $button-disabled-gradient: null !default;
 $button-disabled-shadow: none !default;
@@ -95,7 +95,7 @@ $button-disabled-shadow: none !default;
 
 // Primary button
 $primary-button-bg: $primary !default;
-$primary-button-text: contrast-wcag( $primary-button-bg ) !default;
+$primary-button-text: $primary-contrast !default;
 $primary-button-border: $primary-button-bg !default;
 $primary-button-gradient: null !default;
 $primary-button-shadow: null !default;
