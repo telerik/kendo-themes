@@ -4,11 +4,11 @@
     "product": "kendo",
     "base": "@progress/kendo-theme-bootstrap",
     "previewColors": [
-        "#744662",
         "#ffffff",
         "#f2efe8",
-        "#e7e1d3",
-        "#90b8c1"
+        "#744662",
+        "#44293a",
+        "#494138"
     ],
     "components": [],
     "groups": [
