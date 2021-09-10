@@ -30,13 +30,13 @@ $textarea-calc-height-lg: $input-calc-height-lg !default;
 
 $textarea-floating-label-padding: 3px !default;
 
-$textarea-bg: #f5f5f5 !default;
+$textarea-bg: try-shade( $body-bg, .5 ) !default;
 $textarea-text: $input-text !default;
 $textarea-border: $input-border !default;
 $textarea-shadow: $input-shadow !default;
 
 $textarea-hover-text: $input-hovered-text !default;
-$textarea-hover-bg: #ebebeb !default;
+$textarea-hover-bg: try-shade( $body-bg, 1 ) !default;
 $textarea-hover-border: $input-border !default;
 $textarea-hover-shadow: $input-hovered-shadow !default;
 
@@ -48,7 +48,7 @@ $textarea-focus-shadow: 0 0 0 1px $primary !default;
 $textarea-placeholder-text: $input-placeholder-text !default;
 $textarea-placeholder-opacity: $input-placeholder-opacity !default;
 
-$textarea-selected-text: $textarea-text !default;
-$textarea-selected-bg: #cecece !default;
+$textarea-selected-bg: $input-selected-bg !default;
+$textarea-selected-text: $input-selected-text !default;
 
 $textarea-invalid-focus-shadow: 0 0 0 1px $error !default;
