@@ -5,10 +5,10 @@
     "base": "@progress/kendo-theme-bootstrap",
     "previewColors": [
         "#ffffff",
-        "#50686e",
-        "#01a8c1",
-        "#006989",
-        "#e7607b"
+        "#f8f9fa",
+        "#e7607b",
+        "#da2146",
+        "#50686e"
     ],
     "components": [],
     "groups": [
