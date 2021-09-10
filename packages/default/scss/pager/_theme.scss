@@ -9,7 +9,8 @@
 
         &:focus,
         &.k-focus,
-        &.k-state-focus {
+        &.k-state-focus,
+        &.k-state-focused {
             @include fill( $bg: $pager-focus-bg );
             @include box-shadow( $pager-focus-shadow );
         }
