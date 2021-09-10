@@ -5,7 +5,7 @@
     "base": "@progress/kendo-theme-default",
     "previewColors": [
         "#000000",
-        "#303030",
+        "#151515",
         "#ff6358",
         "#eb5b51",
         "#ffffff"
@@ -107,7 +107,7 @@
                 "component-bg": {
                     "name": "Component background",
                     "type": "color",
-                    "value": "#202020"
+                    "value": "#101010"
                 },
                 "base-text": {
                     "name": "Header text color",
@@ -117,7 +117,7 @@
                 "base-bg": {
                     "name": "Header background",
                     "type": "color",
-                    "value": "#303030"
+                    "value": "#151515"
                 },
                 "hovered-text": {
                     "name": "Hover text color",
@@ -127,7 +127,7 @@
                 "hovered-bg": {
                     "name": "Hover background",
                     "type": "color",
-                    "value": "#303030"
+                    "value": "#202020"
                 },
                 "selected-text": {
                     "name": "Selected text color",
