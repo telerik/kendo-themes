@@ -54,8 +54,8 @@ $input-focused-shadow: 0 2px 4px 0 rgba(0, 0, 0, .03), 0 4px 5px 0 rgba(0, 0, 0,
 $input-placeholder-text: $subtle-text !default;
 $input-placeholder-opacity: 1 !default;
 
-$input-selected-text: $primary-contrast !default;
 $input-selected-bg: $primary !default;
+$input-selected-text: $primary-contrast !default;
 
 $input-clear-button-focused-background: $base-text !default;
 $input-clear-button-focused-opacity: .2 !default;
