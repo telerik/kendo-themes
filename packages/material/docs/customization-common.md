@@ -119,7 +119,7 @@ The following table lists the available variables for customization.
     <td>$selected-bg</td>
     <td></td>
     <td>$secondary</td>
-    <td>material-color( $secondary-palette, default )</td>
+    <td>material-color( $secondary-palette, main )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of selected items.</div></div>
@@ -129,7 +129,7 @@ The following table lists the available variables for customization.
     <td>$selected-text</td>
     <td></td>
     <td>$secondary-contrast</td>
-    <td>material-color( $secondary-palette, default-contrast )</td>
+    <td>material-color( $secondary-palette, main-contrast )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of selected items.</div></div>
