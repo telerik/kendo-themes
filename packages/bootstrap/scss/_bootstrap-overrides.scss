@@ -26,6 +26,7 @@ $component-border: contrast-wcag( $component-bg, $gray-300, $gray-700 ) !default
 $input-bg: $component-bg !default;
 $input-color: contrast-wcag( $input-bg, $gray-700, $gray-300 ) !default;
 $input-border-color:  contrast-wcag( $input-bg, $gray-400, $gray-600 ) !default;
+$input-placeholder-color: contrast-wcag( $input-bg, $gray-600, $gray-400 ) !default;
 
 $card-bg: $component-bg !default;
 $card-color: $component-text !default;
