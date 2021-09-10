@@ -81,7 +81,7 @@ $grid-alt-border: null !default;
 $grid-hovered-bg: rgba( contrast-wcag( $grid-bg ), .07 ) !default;
 /// Text color of hovered rows in grid
 /// @group grid
-$grid-hovered-text: $grid-text !default;
+$grid-hovered-text: null !default;
 /// Border color of hovered rows in grid
 /// @group grid
 $grid-hovered-border: $grid-border !default;
@@ -91,7 +91,7 @@ $grid-hovered-border: $grid-border !default;
 $grid-selected-bg: rgba( contrast-wcag( $grid-bg ), .04 ) !default;
 /// Text color of selected rows in grid
 /// @group grid
-$grid-selected-text: #000000 !default;
+$grid-selected-text: null !default;
 /// Border color of selected rows in grid
 /// @group grid
 $grid-selected-border: $grid-border !default;
@@ -118,7 +118,7 @@ $grid-search-width: $input-default-width !default;
 
 $grid-sticky-bg: $grid-bg !default;
 $grid-sticky-text: $grid-text !default;
-$grid-sticky-border: rgba( black, .5 ) !default;
+$grid-sticky-border: rgba( contrast-wcag( $grid-bg ), .5 ) !default;
 
 $grid-sticky-alt-bg: $grid-sticky-bg !default;
 
@@ -129,11 +129,11 @@ $grid-sticky-header-border: $grid-sticky-border !default;
 $grid-sticky-footer-bg: $grid-sticky-header-bg !default;
 $grid-sticky-footer-hovered-bg: $grid-sticky-footer-bg !default;
 
-$grid-sticky-selected-bg: shade($grid-bg, 4%) !default;
+$grid-sticky-selected-bg: try-shade($grid-bg, 4%) !default;
 $grid-sticky-selected-alt-bg: $grid-sticky-selected-bg !default;
 
-$grid-sticky-hovered-bg: darken($grid-bg, 7%) !default;
-$grid-sticky-selected-hovered-bg: shade($grid-sticky-selected-bg, .87) !default;
+$grid-sticky-hovered-bg: try-shade($grid-bg, 7%) !default;
+$grid-sticky-selected-hovered-bg: try-shade($grid-sticky-selected-bg, .87) !default;
 
 $grid-filter-menu-width: 250px !default;
 

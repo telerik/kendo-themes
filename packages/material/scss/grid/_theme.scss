@@ -2,26 +2,17 @@
 
 @include exports ("grid/theme/material") {
     $grid-filter-button-focus: rgba(0, 0, 0, .12) !default;
-    $grid-edit-cell-border: rgba(0, 0, 0, .12) !default;
-    $grid-edit-cell-bg: #f5f5f5 !default;
-    $grid-edit-cell-shadow: 0 0 5px 3px rgba(0, 0, 0, .12) !default;
-
-    $text-field-bg: rgba(0, 0, 0, .07) !default;
 
     .k-grid {
-
-        .k-edit-cell {
-            border-bottom: $grid-edit-cell-border;
-            background-color: $grid-edit-cell-bg;
-            box-shadow: $grid-edit-cell-shadow;
-        }
 
         // Selected state
         td.k-state-selected,
         tr.k-state-selected {
+            color: $grid-selected-text;
             background-color: $grid-selected-bg;
         }
         tr.k-state-selected > td {
+            color: inherit;
             background-color: transparent;
         }
 
@@ -36,6 +27,7 @@
             .k-grouping-row > td:focus,
             .k-detail-row > td:focus,
             .k-group-footer > td:focus  {
+                color: inherit;
                 background-color: $grid-hovered-bg;
             }
 
@@ -43,6 +35,7 @@
             tr.k-state-hover {
                 .k-grid-header-sticky,
                 .k-grid-footer-sticky {
+                    color: inherit;
                     background-color: $grid-sticky-hovered-bg;
                 }
             }
@@ -57,14 +50,15 @@
                 &.k-grid-header-sticky,
                 &.k-grid-content-sticky,
                 &.k-grid-footer-sticky {
+                    color: inherit;
                     background-color: $grid-sticky-hovered-bg;
                 }
             }
 
         }
-        .k-grid-pager.k-state-focused,
-        .k-grid-pager:focus {
-            background-color: $grid-sticky-hovered-bg;
+        .k-grid-pager:focus,
+        .k-grid-pager.k-state-focused {
+            color: inherit;
         }
 
         th,
@@ -117,6 +111,7 @@
             .k-group-footer {
                 &:hover td,
                 &.k-state-hover td {
+                    color: inherit;
                     @include fill( $bg: $grid-sticky-footer-hovered-bg );
                 }
             }
