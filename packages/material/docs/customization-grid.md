@@ -168,8 +168,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$grid-hovered-text</td>
     <td></td>
-    <td>$grid-text</td>
-    <td>map-get($theme, component-text)</td>
+    <td>null</td>
+    <td>null</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of hovered rows in grid</div></div>
@@ -198,8 +198,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$grid-selected-text</td>
     <td></td>
-    <td><span class="color-preview" style="background-color: #000000"></span>#000000</td>
-    <td><span class="color-preview" style="background-color: #000000"></span>#000000</td>
+    <td>null</td>
+    <td>null</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of selected rows in grid</div></div>

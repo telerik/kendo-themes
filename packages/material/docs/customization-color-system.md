@@ -28,8 +28,8 @@ The following table lists the available variables for customization.
         <tr>
     <td>$primary</td>
     <td>Color</td>
-    <td>material-color( $primary-palette, default )</td>
-    <td>material-color( $primary-palette, default )</td>
+    <td>material-color( $primary-palette, main )</td>
+    <td>material-color( $primary-palette, main )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color that focuses the user attention.<br />Used for primary buttons and for elements of primary importance across the theme.</div></div>
@@ -38,8 +38,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$primary-contrast</td>
     <td>Color</td>
-    <td>material-color( $primary-palette, default-contrast )</td>
-    <td>material-color( $primary-palette, default-contrast )</td>
+    <td>material-color( $primary-palette, main-contrast )</td>
+    <td>material-color( $primary-palette, main-contrast )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color used along with the primary color denoted by $primary.<br />Used to provide contrast between the background and foreground colors.</div></div>
@@ -48,8 +48,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$secondary</td>
     <td>Color</td>
-    <td>material-color( $secondary-palette, default )</td>
-    <td>material-color( $secondary-palette, default )</td>
+    <td>material-color( $secondary-palette, main )</td>
+    <td>material-color( $secondary-palette, main )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The secondary color of the theme.</div></div>
@@ -58,8 +58,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$secondary-contrast</td>
     <td>Color</td>
-    <td>material-color( $secondary-palette, default-contrast )</td>
-    <td>material-color( $secondary-palette, default-contrast )</td>
+    <td>material-color( $secondary-palette, main-contrast )</td>
+    <td>material-color( $secondary-palette, main-contrast )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color used along with the secondary color denoted by $secondary.<br />Used to provide contrast between the background and foreground colors.</div></div>
@@ -68,8 +68,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$tertiary</td>
     <td>Color</td>
-    <td>material-color($tertiary-palette, default)</td>
-    <td>material-color($tertiary-palette, default)</td>
+    <td>material-color($tertiary-palette, main)</td>
+    <td>material-color($tertiary-palette, main)</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The tertiary color of the theme.</div></div>
@@ -78,8 +78,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$tertiary-contrast</td>
     <td>Color</td>
-    <td>material-color($tertiary-palette, default-contrast)</td>
-    <td>material-color($tertiary-palette, default-contrast)</td>
+    <td>material-color($tertiary-palette, main-contrast)</td>
+    <td>material-color($tertiary-palette, main-contrast)</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color used along with the tertiary color denoted by $tertiary.<br />Used to provide contrast between the background and foreground colors.</div></div>
