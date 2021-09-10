@@ -448,8 +448,8 @@ $drag-clue-font-size: $font-size !default;
 $drag-clue-font-family: $font-family !default;
 $drag-clue-line-height: ( 20 / 14 ) !default;
 
-$drag-clue-bg: mix( $black, $white, 8%) !default;
-$drag-clue-text: map-get( $theme, body-text ) !default;
+$drag-clue-bg: try-shade( $body-bg ) !default;
+$drag-clue-text: $body-text !default;
 $drag-clue-border: null !default;
 $drag-clue-gradient: null !default;
 $drag-clue-shadow: $box-shadow-depth-3 !default;
