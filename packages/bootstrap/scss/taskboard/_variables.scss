@@ -27,7 +27,7 @@ $taskboard-columns-container-gap: $taskboard-spacer !default;
 $taskboard-column-width: 320px !default;
 $taskboard-column-border-width: 1px !default;
 $taskboard-column-border-radius: $border-radius-sm !default;
-$taskboard-column-bg: $gray-100 !default;
+$taskboard-column-bg: if( $dark-theme, $gray-900, $gray-100 ) !default;
 $taskboard-column-text: null !default;
 $taskboard-column-border: transparent !default;
 
@@ -92,5 +92,5 @@ $taskboard-card-header-hover-text: $primary-lighter !default;
 
 $taskboard-drag-placeholder-border-width: 1px !default;
 $taskboard-drag-placeholder-border-radius: $taskboard-card-border-radius !default;
-$taskboard-drag-placeholder-bg: rgba(255, 255, 255, .2) !default;
+$taskboard-drag-placeholder-bg: rgba( if( $dark-theme, $white, $black ), .1) !default;
 $taskboard-drag-placeholder-border: $component-border !default;
