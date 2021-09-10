@@ -51,10 +51,20 @@
 
     // Theme
     .k-progressbar {
-        @include fill( $progressbar-text, $progressbar-bg, $progressbar-border, $progressbar-gradient );
+        @include fill(
+            $progressbar-text,
+            $progressbar-bg,
+            $progressbar-border,
+            $progressbar-gradient
+        );
 
         .k-state-selected {
-            @include fill( $progressbar-fill-text, $progressbar-fill-bg, $progressbar-fill-border, $progressbar-fill-gradient );
+            @include fill(
+                $progressbar-fill-text,
+                $progressbar-fill-bg,
+                $progressbar-fill-border,
+                $progressbar-fill-gradient
+            );
         }
 
         .k-item {
