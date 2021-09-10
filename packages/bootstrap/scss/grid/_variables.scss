@@ -67,7 +67,7 @@ $grid-footer-border: $grid-header-border !default;
 
 /// Background color of alternating rows in grid
 /// @group grid
-$grid-alt-bg: rgba( black, .04 ) !default;
+$grid-alt-bg: rgba( contrast-wcag( $grid-bg ), .04 ) !default;
 /// Text color of alternating rows in grid
 /// @group grid
 $grid-alt-text: null !default;
@@ -77,7 +77,7 @@ $grid-alt-border: null !default;
 
 /// Background color of hovered rows in grid
 /// @group grid
-$grid-hovered-bg: rgba( black, .08) !default;
+$grid-hovered-bg: rgba( contrast-wcag( $grid-bg ), .08 ) !default;
 /// Text color of hovered rows in grid
 /// @group grid
 $grid-hovered-text: null !default;
@@ -87,7 +87,7 @@ $grid-hovered-border: null !default;
 
 /// Background color of selected rows in grid
 /// @group grid
-$grid-selected-bg: rgba($selected-bg, .25) !default;
+$grid-selected-bg: rgba( $selected-bg, .25 ) !default;
 /// Text color of selected rows in grid
 /// @group grid
 $grid-selected-text: $grid-text !default;
@@ -128,7 +128,7 @@ $grid-sticky-header-border: $grid-sticky-border !default;
 $grid-sticky-footer-bg: $grid-header-bg !default;
 $grid-sticky-footer-hovered-bg: $grid-sticky-footer-bg !default;
 
-$grid-sticky-selected-bg: mix($selected-bg, #ffffff, 25%) !default;
+$grid-sticky-selected-bg: mix($selected-bg, $grid-bg, 25%) !default;
 $grid-sticky-selected-alt-bg: shade($grid-sticky-selected-bg, .4) !default;
 
 $grid-sticky-hovered-bg: try-shade( $grid-bg ) !default;
