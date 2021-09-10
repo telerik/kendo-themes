@@ -4,8 +4,8 @@
     "product": "kendo",
     "base": "@progress/kendo-theme-material",
     "previewColors": [
-        "#303030",
-        "#424242",
+        "#121212",
+        "#212121",
         "#3f51b5",
         "#e91e63",
         "#ffffff"

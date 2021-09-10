@@ -4,9 +4,9 @@
     "product": "kendo",
     "base": "@progress/kendo-theme-material",
     "previewColors": [
-        "#303030",
-        "#424242",
-        "#3f51b5",
+        "#121212",
+        "#212121",
+        "#009688",
         "#2196f3",
         "#ffffff"
     ],
@@ -48,7 +48,7 @@
                         { "value": "gray", "text": "Gray", "preview": "#9e9e9e" },
                         { "value": "blueGray", "text": "Blue Gray", "preview": "#607d8b" }
                     ],
-                    "value": "indigo"
+                    "value": "teal"
                 },
                 "secondary-palette-name": {
                     "name": "Secondary",

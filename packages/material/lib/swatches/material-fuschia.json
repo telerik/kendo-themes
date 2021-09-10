@@ -1,14 +1,14 @@
 {
     "$schema": "https://unpkg.com/@progress/kendo-theme-tasks@1.11.0/lib/schemas/kendo-swatch.json",
-    "name": "Material Fuscia",
+    "name": "Material Fuschia",
     "product": "kendo",
     "base": "@progress/kendo-theme-material",
     "previewColors": [
         "#ffffff",
-        "#cfd8dc",
+        "#e0e0e0",
         "#e91e63",
-        "#00bcd4",
-        "#455a64"
+        "#03a9f4",
+        "#252525"
     ],
     "components": [],
     "groups": [
@@ -74,7 +74,7 @@
                         { "value": "gray", "text": "Gray", "preview": "#9e9e9e" },
                         { "value": "blueGray", "text": "Blue Gray", "preview": "#607d8b" }
                     ],
-                    "value": "cyan"
+                    "value": "lightBlue"
                 },
                 "theme-type": {
                     "name": "Theme luminosity",

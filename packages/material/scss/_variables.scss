@@ -64,7 +64,7 @@ $tertiary-palette-name: teal !default;
 $theme-type: light !default; // light or dark
 
 $primary-palette: material-palette($primary-palette-name) !default;
-$secondary-palette: material-palette($secondary-palette-name, A200, A100, A400) !default;
+$secondary-palette: material-palette($secondary-palette-name) !default;
 $tertiary-palette: material-palette($tertiary-palette-name) !default;
 
 $theme: material-theme(
@@ -156,7 +156,7 @@ $black: #000000 !default;
 /// Used for primary buttons and for elements of primary importance across the theme.
 /// @group color-system
 /// @type Color
-$primary: material-color( $primary-palette, default ) !default;
+$primary: material-color( $primary-palette, main ) !default;
 $primary-lighter: material-color( $primary-palette, lighter ) !default;
 $primary-darker: material-color( $primary-palette, darker ) !default;
 
@@ -164,12 +164,12 @@ $primary-darker: material-color( $primary-palette, darker ) !default;
 /// Used to provide contrast between the background and foreground colors.
 /// @group color-system
 /// @type Color
-$primary-contrast: material-color( $primary-palette, default-contrast ) !default;
+$primary-contrast: material-color( $primary-palette, main-contrast ) !default;
 
 /// The secondary color of the theme.
 /// @group color-system
 /// @type Color
-$secondary: material-color( $secondary-palette, default ) !default;
+$secondary: material-color( $secondary-palette, main ) !default;
 $secondary-lighter: material-color( $secondary-palette, lighter ) !default;
 $secondary-darker: material-color( $secondary-palette, darker ) !default;
 
@@ -177,12 +177,12 @@ $secondary-darker: material-color( $secondary-palette, darker ) !default;
 /// Used to provide contrast between the background and foreground colors.
 /// @group color-system
 /// @type Color
-$secondary-contrast: material-color( $secondary-palette, default-contrast ) !default;
+$secondary-contrast: material-color( $secondary-palette, main-contrast ) !default;
 
 /// The tertiary color of the theme.
 /// @group color-system
 /// @type Color
-$tertiary: material-color($tertiary-palette, default) !default;
+$tertiary: material-color($tertiary-palette, main) !default;
 $tertiary-lighter: material-color($tertiary-palette, lighter) !default;
 $tertiary-darker: material-color($tertiary-palette, darker) !default;
 
@@ -190,7 +190,7 @@ $tertiary-darker: material-color($tertiary-palette, darker) !default;
 /// Used to provide contrast between the background and foreground colors.
 /// @group color-system
 /// @type Color
-$tertiary-contrast: material-color($tertiary-palette, default-contrast) !default;
+$tertiary-contrast: material-color($tertiary-palette, main-contrast) !default;
 
 /// The color for informational messages and states.
 /// @group color-system
