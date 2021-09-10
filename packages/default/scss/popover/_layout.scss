@@ -3,6 +3,7 @@
     // Popover
     .k-popover {
         @include border-radius( $popover-border-radius );
+        padding: 0;
         border-width: $popover-border-width;
         border-style: $popover-border-style;
         box-sizing: border-box;
