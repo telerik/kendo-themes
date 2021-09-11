@@ -9,8 +9,8 @@ env:
 
 on:
   schedule:
-    # Run at 00:20 every Monday
-    - cron: '20 0 * * Mon'
+    # Run at 00:30 every Monday
+    - cron: '30 0 * * Mon'
   workflow_dispatch:
 
 jobs:
