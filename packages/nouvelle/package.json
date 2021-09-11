@@ -15,7 +15,6 @@
   "files": [
     "dist/",
     "scss/",
-    "modules/",
     "lib/"
   ],
   "homepage": "https://github.com/telerik/kendo-themes/tree/master/packages/nouvelle",
@@ -46,7 +45,9 @@
     "dart": "gulp dart",
     "dart:watch": "gulp dart:watch",
     "dart:swatches": "gulp dart:swatches",
-    "dart:flat": "gulp dart:flat"
+    "dart:flat": "gulp dart:flat",
+    "prepublishOnly": "echo 'no prebublish for nouvelle theme'",
+    "postpublish": "echo 'no postpublish for nouvelle theme'"
   },
   "dependencies": {
     "@progress/kendo-theme-default": "^4.43.1-dev.7"
