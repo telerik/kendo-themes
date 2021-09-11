@@ -15,7 +15,6 @@
   "files": [
     "dist/",
     "scss/",
-    "modules/",
     "lib/"
   ],
   "homepage": "https://github.com/telerik/kendo-themes/tree/master/packages/material",
@@ -47,8 +46,8 @@
     "dart:watch": "gulp dart:watch",
     "dart:swatches": "gulp dart:swatches",
     "dart:flat": "gulp dart:flat",
-    "prepublishOnly": "./build/embed-dependencies '@progress/kendo-theme-default'",
-    "postpublish": "rm -rf modules && git checkout scss"
+    "prepublishOnly": "echo 'no prebublish for material theme'",
+    "postpublish": "echo 'no postpublish for material theme'"
   },
   "dependencies": {
     "@progress/kendo-theme-default": "^4.43.1-dev.5"
