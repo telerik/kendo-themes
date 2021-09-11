@@ -14,7 +14,6 @@
   "files": [
     "dist/",
     "scss/",
-    "modules/",
     "lib/"
   ],
   "homepage": "https://github.com/telerik/kendo-themes/tree/master/packages/classic",
@@ -46,8 +45,8 @@
     "dart:watch": "gulp dart:watch",
     "dart:swatches": "gulp dart:swatches",
     "dart:flat": "gulp dart:flat",
-    "prepublishOnly": "./build/embed-dependencies '@progress/kendo-theme-default'",
-    "postpublish": "rm -rf modules && git checkout scss"
+    "prepublishOnly": "echo 'no prebublish for classic theme'",
+    "postpublish": "echo 'no postpublish for classic theme'"
   },
   "dependencies": {
     "@progress/kendo-theme-default": "^4.41.3-dev.2"
