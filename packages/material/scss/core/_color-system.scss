@@ -726,7 +726,7 @@ $material-light-complimentary: (
 
 // Creates a map of hues to colors for a theme. This is used to define a theme palette in terms
 // of the Material Design hues.
-@function material-palette($base-palette, $main: 500, $lighter: 300, $darker: 700) {
+@function material-palette($base-palette, $main: 500, $lighter: 300, $darker: 700, $adjust-contrast: true) {
 
     @if not (type-of($base-palette) == map) {
         $base-palette: get-base-palette($base-palette);
@@ -734,16 +734,18 @@ $material-light-complimentary: (
 
     $main-contrast: material-contrast($base-palette, $main);
 
-    @if ($theme-type == dark) and ($main-contrast == $light-primary-text) {
-        $main: 200;
-        $lighter: 100;
-        $darker: 300;
-    }
+    @if ( $adjust-contrast == true ) {
+        @if ($theme-type == dark) and ($main-contrast == $light-primary-text) {
+            $main: 200;
+            $lighter: 100;
+            $darker: 300;
+        }
 
-    @if ($theme-type == light) and ($main-contrast == $dark-primary-text) {
-        $main: 800;
-        $lighter: 700;
-        $darker: 900;
+        @if ($theme-type == light) and ($main-contrast == $dark-primary-text) {
+            $main: 800;
+            $lighter: 700;
+            $darker: 900;
+        }
     }
 
     $result: map-merge($base-palette, (
