@@ -757,8 +757,8 @@ The following table lists the available variables for customizing the Material t
 <tr>
     <td>$grid-header-bg</td>
     <td></td>
-    <td>transparent</td>
-    <td>transparent</td>
+    <td>$grid-bg</td>
+    <td>map-get($theme, component-bg)</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of grid header</div></div>
@@ -798,7 +798,7 @@ The following table lists the available variables for customizing the Material t
     <td>$grid-footer-bg</td>
     <td></td>
     <td>$grid-header-bg</td>
-    <td>transparent</td>
+    <td>map-get($theme, component-bg)</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of grid footer</div></div>
