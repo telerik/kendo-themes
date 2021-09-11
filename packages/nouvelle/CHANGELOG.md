@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 4.41.2-dev.1 (2021-09-11)
+
+**Note:** Version bump only for package @progress/kendo-theme-nouvelle
+
+
+
+
+
 ## 4.41.2-dev.0 (2021-09-08)
 
 **Note:** Version bump only for package @progress/kendo-theme-nouvelle
