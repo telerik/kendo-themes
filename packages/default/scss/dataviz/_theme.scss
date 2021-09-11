@@ -63,10 +63,10 @@
     // Tooltip
     // TODO
     .k-chart-tooltip {
-        color: $component-bg;
+        color: $white;
     }
     .k-chart-tooltip-inverse {
-        color: invert($component-bg);
+        color: $black;
     }
 
     .k-chart-crosshair-tooltip,
