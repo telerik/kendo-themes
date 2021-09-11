@@ -45,10 +45,8 @@
     "dart:watch": "gulp dart:watch",
     "dart:swatches": "gulp dart:swatches",
     "dart:flat": "gulp dart:flat",
-    "twbs-compat": "gulp sass --file ./build/twbs-compat.scss",
     "prepublishOnly": "echo 'no prebublish for default theme'"
   },
-  "devDependencies": {
-    "bootstrap": "^5.0.2"
-  }
+  "dependencies": {},
+  "devDependencies": {}
 }

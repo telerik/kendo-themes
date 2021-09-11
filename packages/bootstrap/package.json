@@ -49,12 +49,9 @@
     "prepublishOnly": "./build/embed-dependencies 'bootstrap' '@progress/kendo-theme-default'",
     "postpublish": "rm -rf modules && git checkout scss"
   },
-  "peerDependencies": {
-    "@progress/kendo-theme-default": "^4.41.0",
-    "bootstrap": "^5.1.0"
-  },
-  "devDependencies": {
+  "dependencies": {
     "@progress/kendo-theme-default": "^4.41.2-dev.0",
     "bootstrap": "^5.1.0"
-  }
+  },
+  "devDependencies": {}
 }
