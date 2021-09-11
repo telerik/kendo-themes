@@ -1,6 +1,6 @@
 // Comboboxes
-$combobox-select-padding-x: 0px !default;
-$combobox-select-padding-y: 0px !default;
+$combobox-select-padding-x: $button-padding-y !default;
+$combobox-select-padding-y: $button-padding-y !default;
 $combobox-select-width: $button-inner-calc-size !default;
 $combobox-select-border-width: 1px !default;
 
