@@ -79,16 +79,11 @@
 
         // Validation icon
         .k-i-warning {
-            display: none;
             position: absolute;
             right: $padding-x;
             top: 50%;
             transform: translateY(-50%);
             overflow: visible;
-        }
-        &.k-invalid .k-i-warning,
-        &.k-state-invalid .k-i-warning {
-            display: inline-block;
         }
 
 
@@ -191,17 +186,11 @@
 
         // Validation icon
         .k-i-warning {
-            display: none;
             position: absolute;
             top: 50%;
             right: calc( #{ $button-inner-calc-size } + #{ $input-padding-x-sm });
             transform: translateY(-50%);
             overflow: visible;
-        }
-        .k-state-invalid {
-            .k-i-warning {
-                display: inline-block;
-            }
         }
 
 
@@ -292,17 +281,11 @@
 
         // Validation icon
         .k-i-warning {
-            display: none;
             position: absolute;
             top: 50%;
             right: calc( #{ $button-inner-calc-size } * 2 + #{ $input-padding-x-sm });
             transform: translateY(-50%);
             overflow: visible;
-        }
-        .k-state-invalid {
-            .k-i-warning {
-                display: inline-block;
-            }
         }
 
 
