@@ -13,7 +13,6 @@
   "files": [
     "dist/",
     "scss/",
-    "modules/",
     "lib/"
   ],
   "homepage": "https://github.com/telerik/kendo-themes/tree/master/packages/default",
@@ -45,6 +44,9 @@
     "dart:watch": "gulp dart:watch",
     "dart:swatches": "gulp dart:swatches",
     "dart:flat": "gulp dart:flat",
-    "prepublishOnly": "echo 'no prebublish for default theme'"
-  }
+    "prepublishOnly": "echo 'no prebublish for default theme'",
+    "postpublish": "echo 'no postpublish for default theme'"
+  },
+  "dependencies": {},
+  "devDependencies": {}
 }
