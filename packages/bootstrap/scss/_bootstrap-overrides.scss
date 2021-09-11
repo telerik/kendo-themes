@@ -16,6 +16,8 @@ $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
 $black:    #000000 !default;
 
+$dark-theme: false !default;
+
 $body-bg: $white !default;
 $body-color: contrast-wcag( $body-bg, $gray-900, $gray-100 ) !default;
 
@@ -39,6 +41,9 @@ $breadcrumb-bg: $component-bg !default;
 $table-bg: $component-bg !default;
 $table-color: $component-text !default;
 $table-border-color: $component-border !default;
+
+$tooltip-bg: if( $dark-theme, $white, $black ) !default;
+$tooltip-color: contrast-wcag( $tooltip-bg ) !default;
 
 $popover-font-size: $font-size-base !default;
 
