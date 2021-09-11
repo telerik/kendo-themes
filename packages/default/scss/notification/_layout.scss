@@ -44,13 +44,13 @@
         > .k-icon {
             margin-top: $notification-icon-offset;
             margin-right: $notification-icon-spacing;
-            flex: 0 0 auto;
+            flex: none;
         }
 
         > .k-i-close {
             margin-right: 0;
             margin-left: $notification-icon-spacing;
-            flex: 0 0 auto;
+            flex: none;
             cursor: pointer;
         }
 
