@@ -44,7 +44,7 @@ $grid-border: $component-border !default;
 
 /// Background color of grid header
 /// @group grid
-$grid-header-bg: transparent !default;
+$grid-header-bg: $grid-bg !default;
 /// Background color of grid header
 /// @group grid
 $grid-header-text: if($theme-type == dark, $light-secondary-text, $dark-secondary-text) !default;
