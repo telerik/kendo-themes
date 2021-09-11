@@ -47,5 +47,9 @@
     "dart:watch": "gulp dart:watch",
     "dart:swatches": "gulp dart:swatches",
     "dart:flat": "gulp dart:flat"
-  }
+  },
+  "dependencies": {
+    "@progress/kendo-theme-default": "^4.41.2-dev.0"
+  },
+  "devDependencies": {}
 }
