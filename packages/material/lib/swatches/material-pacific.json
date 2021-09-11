@@ -84,6 +84,11 @@
                         { "value": "dark", "text": "Dark", "preview": "#000000" }
                     ],
                     "value": "light"
+                },
+                "adjust-contrast": {
+                    "name": "Adjust contrast",
+                    "type": "boolean",
+                    "value": true
                 }
             }
         }
