@@ -484,8 +484,8 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$chart-major-lines</td>
     <td></td>
-    <td>rgba(0, 0, 0, .08)</td>
-    <td>rgba(0, 0, 0, .08)</td>
+    <td>rgba( if( $dark-theme, $white, $black ), .08 )</td>
+    <td>rgba( if( $dark-theme, $white, $black ), .08 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the Chart grid lines (major).</div></div>
@@ -494,8 +494,8 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$chart-minor-lines</td>
     <td></td>
-    <td>rgba(0, 0, 0, .04)</td>
-    <td>rgba(0, 0, 0, .04)</td>
+    <td>rgba( if( $dark-theme, $white, $black ), .04 )</td>
+    <td>rgba( if( $dark-theme, $white, $black ), .04 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color of the Chart grid lines (minor).</div></div>
