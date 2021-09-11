@@ -31,6 +31,9 @@
             @include box-shadow( $chat-bubble-shadow );
             transition: $transition;
             order: -1;
+
+            a { color: $link-text; }
+            a:hover { color: $link-hover-text; }
         }
         .k-bubble:hover {
             @include box-shadow( $chat-bubble-hover-shadow );
