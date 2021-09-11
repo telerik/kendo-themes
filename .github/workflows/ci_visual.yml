@@ -9,6 +9,7 @@ on:
       # - 'main'
       - 'master'
       - 'develop'
+      - 'v5-dev'
 
 jobs:
   run-tests:
