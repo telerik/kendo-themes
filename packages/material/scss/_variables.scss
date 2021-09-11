@@ -61,11 +61,12 @@ $default-scrollbar-width: 17px !default;
 $primary-palette-name: indigo !default;
 $secondary-palette-name: pink !default;
 $tertiary-palette-name: teal !default;
+$adjust-contrast: true !default;
 $theme-type: light !default; // light or dark
 
-$primary-palette: material-palette($primary-palette-name) !default;
-$secondary-palette: material-palette($secondary-palette-name) !default;
-$tertiary-palette: material-palette($tertiary-palette-name) !default;
+$primary-palette: material-palette( $primary-palette-name, 500, 300, 700, $adjust-contrast ) !default;
+$secondary-palette: material-palette( $secondary-palette-name, 500, 300, 700, $adjust-contrast ) !default;
+$tertiary-palette: material-palette( $tertiary-palette-name, 500, 300, 700, $adjust-contrast ) !default;
 
 $theme: material-theme(
     $primary-palette,
