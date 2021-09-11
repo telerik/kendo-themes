@@ -306,11 +306,11 @@
 
             // k-button
             > .k-button:first-child {
-                @include border-left-radius( $button-border-radius );
+                @include border-right-radius( $button-border-radius );
             }
             > .k-split-button-arrow,
             > .k-button:last-child {
-                @include border-right-radius( $button-border-radius );
+                @include border-left-radius( $button-border-radius );
             }
         }
     }
