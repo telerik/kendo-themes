@@ -3,6 +3,10 @@
     // Numeric
     .k-numerictextbox {
 
+        .k-i-warning {
+            color: $error;
+        }
+
         // Normal state
         .k-numeric-wrap {
             @include fill(

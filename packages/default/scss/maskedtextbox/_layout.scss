@@ -23,15 +23,10 @@
 
             &.k-state-invalid {
                 transition: none;
-
-                + .k-i-warning {
-                    display: inline-block;
-                }
             }
         }
 
         .k-i-warning {
-            display: none;
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
