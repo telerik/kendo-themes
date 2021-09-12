@@ -4,10 +4,6 @@ defaults:
   run:
     shell: bash
 
-env:
-  CI: true
-  NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-
 on: [workflow_dispatch]
 
 jobs:
@@ -25,6 +21,8 @@ jobs:
 
       - name: Add token
         run: printf "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Tag stable version
         run: ./build/tag-stable.sh
