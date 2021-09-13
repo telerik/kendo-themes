@@ -3,9 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-## 4.41.2 (2021-09-13)
+## [4.41.2](https://github.com/telerik/kendo-themes/compare/v4.41.1...v4.41.2) (2021-09-13)
 
-**Note:** Version bump only for package @progress/kendo-theme-bootstrap
+
+### Bug Fixes
+
+* **button:** clear button should inherit color ([289985f](https://github.com/telerik/kendo-themes/commit/289985f29ae50acf6bb14f9df41213fca47e80db))
+* **dark-swatches:** use conditional border color based on theme luminosity ([14c2d01](https://github.com/telerik/kendo-themes/commit/14c2d019a1f85d3c5db096d3138c0e0a0cd03d8a))
+* **dataviz:** dont override selection colors with series colors ([0a53881](https://github.com/telerik/kendo-themes/commit/0a538811a2317f7d4ab8fc0b24d3c82cae96c3ec))
+* **dataviz:** use conditional black or white colors for chart lines ([e205eda](https://github.com/telerik/kendo-themes/commit/e205edad342d8040ae5d0d7bf03351e4cd294ab9))
+* **grid:** use correct colors for hover and alternatig grid rows in bootstrap dark swatches ([3472950](https://github.com/telerik/kendo-themes/commit/347295048c4fa2200fd434c2ae56c26b6dd3d6c2))
+* **inputs:** use correct shadow spread for invalid shadow ([046d443](https://github.com/telerik/kendo-themes/commit/046d443120e99e26dec5f1094b74f03bbd6aea44))
+* **input:** use correct placeholder color in dark themes ([4bb2337](https://github.com/telerik/kendo-themes/commit/4bb233729f62d871cc6018c2f838ecee25d89e1f))
+* **popover:** use correct colors in popover for dark swatches ([f5c8176](https://github.com/telerik/kendo-themes/commit/f5c81769bbb7cf7ffc100da3bbc5100620c5146c))
+* **skeleton:** use correct colors in dark swatches ([fbdde90](https://github.com/telerik/kendo-themes/commit/fbdde90251d5ca35924ef983ba5fd4cf156adab4))
+* **task-board:** use correct colors for bootstrap dark swatches ([f302c39](https://github.com/telerik/kendo-themes/commit/f302c39e48291b53f8e823cb5a298a0d42c2313c))
+* **textarea:** textarea uses incorrect colors in material dark swatches ([98558db](https://github.com/telerik/kendo-themes/commit/98558db977ed4cf12ab8fa88abe7f3fe5d981131))
+* **tooltip:** use conditional colors for tooltip in bootstrap dark swatches ([83a8709](https://github.com/telerik/kendo-themes/commit/83a8709d8b2b0694269f3d55422ebe3e9b7a9e89))
 
 
 

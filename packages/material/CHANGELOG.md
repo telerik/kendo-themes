@@ -3,9 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-## 4.41.2 (2021-09-13)
+## [4.41.2](https://github.com/telerik/kendo-themes/compare/v4.41.1...v4.41.2) (2021-09-13)
 
-**Note:** Version bump only for package @progress/kendo-theme-material
+
+### Bug Fixes
+
+* **button:** button uses incorrect colors in material dark swatches ([c958e5a](https://github.com/telerik/kendo-themes/commit/c958e5ae6f9d95c297567a86b64507207f8e2502))
+* **button:** clear button should inherit color ([289985f](https://github.com/telerik/kendo-themes/commit/289985f29ae50acf6bb14f9df41213fca47e80db))
+* **buttons:** apply correct color of the Material primary outline button in selected state ([6224d28](https://github.com/telerik/kendo-themes/commit/6224d28ac633a148213da323e72ab94c11d5c603))
+* **checkbox:** checkbox uses incorrect colors in material dark swatches ([ced2117](https://github.com/telerik/kendo-themes/commit/ced21172abbbf5ebafa5c51f14c892806f8ecb25))
+* **chip:** chip uses incorrect colors in material dark swatches ([52cf719](https://github.com/telerik/kendo-themes/commit/52cf71921f85808db3389d44559ac76675878847))
+* **dark-swatches:** use conditional border color based on theme luminosity ([14c2d01](https://github.com/telerik/kendo-themes/commit/14c2d019a1f85d3c5db096d3138c0e0a0cd03d8a))
+* **dataviz:** dont override selection colors with series colors ([0a53881](https://github.com/telerik/kendo-themes/commit/0a538811a2317f7d4ab8fc0b24d3c82cae96c3ec))
+* **dataviz:** use conditional black or white colors for chart lines ([e205eda](https://github.com/telerik/kendo-themes/commit/e205edad342d8040ae5d0d7bf03351e4cd294ab9))
+* **drag-drop:** drag hint uses incorrect colors in material dark swatches ([9350a10](https://github.com/telerik/kendo-themes/commit/9350a10a4ee8540e6e9f9b456a409dd5fd4a430d))
+* **grid:** don't use transparent background for headers ([0388b59](https://github.com/telerik/kendo-themes/commit/0388b5949a8cca6516388a23230b7b0ab1052181))
+* **grid:** grid uses incorrect colors in material dark swatches ([f69bbf7](https://github.com/telerik/kendo-themes/commit/f69bbf71f01e7fc2e6274dcbd051e338cb581e4d))
+* **material:** add the option to auto ajust contrast for material swatches ([058c115](https://github.com/telerik/kendo-themes/commit/058c1158e3408d1f000dd0210b93f794282ab777))
+* **material:** tweak the value of pink 500 to have better contrast against white ([0fc9eff](https://github.com/telerik/kendo-themes/commit/0fc9eff9bb8b4f1e69a2ca9f66dcb87d16a879ab))
+* **notification:** notification icons are misaligned with text in material theme ([c3b55a4](https://github.com/telerik/kendo-themes/commit/c3b55a4af656729d2fe49f7bafb2b48ec7d0c5dc))
+* **pager:** pager uses incorrect colors in material dark swatches ([013090b](https://github.com/telerik/kendo-themes/commit/013090b1b231091ce16b01064f7eea5d44acd1a4))
+* **progressbar:** progressbar uses incorrect colors in material dark swatches ([c232291](https://github.com/telerik/kendo-themes/commit/c2322917d4d82d76e347d1d5120659c51ff0f088))
+* **radio:** radio button uses incorrect colors in material dark swatches ([0091c3d](https://github.com/telerik/kendo-themes/commit/0091c3dd7c66bbc3801e2ebe7412b3890ab8de87))
+* rename Fuschia swatch to Nova ([8773e40](https://github.com/telerik/kendo-themes/commit/8773e401818514edc6cdb5dd2344840cdc26e02e))
+* **skeleton:** use correct colors in dark swatches ([fbdde90](https://github.com/telerik/kendo-themes/commit/fbdde90251d5ca35924ef983ba5fd4cf156adab4))
+* **slider:** slider  uses incorrect colors in material dark swatches ([96ea086](https://github.com/telerik/kendo-themes/commit/96ea086a2debff09222355979b3bedcaaa3fa0cb))
+* **textarea:** textarea uses incorrect colors in material dark swatches ([98558db](https://github.com/telerik/kendo-themes/commit/98558db977ed4cf12ab8fa88abe7f3fe5d981131))
+* tweak material swatches to ensure better contrast ratio ([4b4aaea](https://github.com/telerik/kendo-themes/commit/4b4aaea0b623093ea05548254d267b2ea46ff7bd))
 
 
 

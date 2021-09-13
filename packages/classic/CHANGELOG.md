@@ -3,9 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-## 4.41.2 (2021-09-13)
+## [4.41.2](https://github.com/telerik/kendo-themes/compare/v4.41.1...v4.41.2) (2021-09-13)
 
-**Note:** Version bump only for package @progress/kendo-theme-classic
+
+### Bug Fixes
+
+* **button:** clear button should inherit color ([289985f](https://github.com/telerik/kendo-themes/commit/289985f29ae50acf6bb14f9df41213fca47e80db))
+* **combobox:** select arrow doesnt have padding in classic theme ([6959648](https://github.com/telerik/kendo-themes/commit/6959648a1dc6599d1b2862c920e396bdf255f4bc))
+* **dark-swatches:** use conditional border color based on theme luminosity ([14c2d01](https://github.com/telerik/kendo-themes/commit/14c2d019a1f85d3c5db096d3138c0e0a0cd03d8a))
+* **dataviz:** dont override selection colors with series colors ([0a53881](https://github.com/telerik/kendo-themes/commit/0a538811a2317f7d4ab8fc0b24d3c82cae96c3ec))
+* **dataviz:** use conditional black or white colors for chart lines ([e205eda](https://github.com/telerik/kendo-themes/commit/e205edad342d8040ae5d0d7bf03351e4cd294ab9))
+* **skeleton:** use correct colors in dark swatches ([fbdde90](https://github.com/telerik/kendo-themes/commit/fbdde90251d5ca35924ef983ba5fd4cf156adab4))
+* **textarea:** textarea uses incorrect colors in material dark swatches ([98558db](https://github.com/telerik/kendo-themes/commit/98558db977ed4cf12ab8fa88abe7f3fe5d981131))
 
 
 

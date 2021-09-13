@@ -3,9 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-## 4.41.2 (2021-09-13)
+## [4.41.2](https://github.com/telerik/kendo-themes/compare/v4.41.1...v4.41.2) (2021-09-13)
 
-**Note:** Version bump only for package @progress/kendo-theme-default
+
+### Bug Fixes
+
+* **button:** clear button should inherit color ([289985f](https://github.com/telerik/kendo-themes/commit/289985f29ae50acf6bb14f9df41213fca47e80db))
+* **chat:** add styles for links in bubbles ([31e22b3](https://github.com/telerik/kendo-themes/commit/31e22b3d48beec8233516fdd9c808d8e165bb643))
+* **dark-swatches:** use conditional border color based on theme luminosity ([14c2d01](https://github.com/telerik/kendo-themes/commit/14c2d019a1f85d3c5db096d3138c0e0a0cd03d8a))
+* **dataviz:** always use white or white text color for chart tooltip ([2ee6aa7](https://github.com/telerik/kendo-themes/commit/2ee6aa765e83b1de99335f001d573a06047ebf57))
+* **dataviz:** dont override selection colors with series colors ([0a53881](https://github.com/telerik/kendo-themes/commit/0a538811a2317f7d4ab8fc0b24d3c82cae96c3ec))
+* **dataviz:** use conditional black or white colors for chart lines ([e205eda](https://github.com/telerik/kendo-themes/commit/e205edad342d8040ae5d0d7bf03351e4cd294ab9))
+* **inputs:** use k-hidden instead of display none to show hide warning icon ([7e387d7](https://github.com/telerik/kendo-themes/commit/7e387d76d1d89c08b62083a5fe114a5371eedc45))
+* **notification:** notification icons are misaligned with text in material theme ([c3b55a4](https://github.com/telerik/kendo-themes/commit/c3b55a4af656729d2fe49f7bafb2b48ec7d0c5dc))
+* **pager:** add missing k-state-focused selector ([8d8de00](https://github.com/telerik/kendo-themes/commit/8d8de000387eb9eb09e3f6773c37cd38884546ba))
+* **pivotgrid:** remove double border in pivotgrid headers ([924b52c](https://github.com/telerik/kendo-themes/commit/924b52c0067a630bbb733253f6bd75011e5b78b2))
+* **popover:** remove padding from popover ([9bcd287](https://github.com/telerik/kendo-themes/commit/9bcd287507dfccd7c44a9eecab81e59ee673aef4))
+* **skeleton:** use correct colors in dark swatches ([fbdde90](https://github.com/telerik/kendo-themes/commit/fbdde90251d5ca35924ef983ba5fd4cf156adab4))
+* **split-button:** apply correct border-radius in rtl ([a2f9f0f](https://github.com/telerik/kendo-themes/commit/a2f9f0f6d6a5a14e59e04c396462819a7f59a6a4))
+* **textarea:** textarea uses incorrect colors in material dark swatches ([98558db](https://github.com/telerik/kendo-themes/commit/98558db977ed4cf12ab8fa88abe7f3fe5d981131))
+* use correct colors for component, slider and toolbar in default dark swatch ([32c2356](https://github.com/telerik/kendo-themes/commit/32c23567bc42db7f2acdc7c09bcb1ca028a35471))
 
 
 
