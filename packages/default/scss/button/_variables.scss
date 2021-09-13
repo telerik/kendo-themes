@@ -127,6 +127,6 @@ $flat-button-focus-opacity: null !default;
 $flat-button-active-opacity: .16 !default;
 $flat-button-selected-opacity: .2 !default;
 
-$clear-button-text: $button-text !default;
-$clear-button-hover-text: try-shade( $clear-button-text ) !default;
+$clear-button-text: inherit !default;
+$clear-button-hover-text: inherit !default;
 $clear-button-focused-opacity: .1 !default;

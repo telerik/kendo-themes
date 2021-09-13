@@ -127,6 +127,6 @@ $flat-button-focus-opacity: .12 !default;
 $flat-button-active-opacity: .16 !default;
 $flat-button-selected-opacity: .22 !default;
 
-$clear-button-text: rgba(0, 0, 0, .67) !default;
-$clear-button-hover-text: rgba(0, 0, 0, .87) !default;
+$clear-button-text: inherit !default;
+$clear-button-hover-text: inherit !default;
 $clear-button-focused-opacity: .155 !default; // equal to 10% of black
