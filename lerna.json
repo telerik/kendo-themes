@@ -19,11 +19,13 @@
         "master",
         "develop",
         "v5-dev"
-      ]
+      ],
+      "conventionalCommits": true
     },
     "publish": {
       "loglevel": "verbose",
       "message": "chore(release): %s",
+      "verifyAccess": false,
       "yes": true
     }
   }
