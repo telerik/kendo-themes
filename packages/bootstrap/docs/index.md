@@ -14,6 +14,14 @@ The Kendo UI for Angular Bootstrap theme is part of the Kendo UI for Angular lib
 The KendoReact Bootstrap theme is part of the KendoReact library of React UI components. It is distributed through NPM under the [kendo-theme-bootstrap package](https://www.npmjs.com/package/@progress/kendo-theme-bootstrap).
 {% endplatform_content %}
 
+## Compatibility with Bootstrap Framework
+
+Starting with v4.40.0, the Kendo UI Bootstrap theme is based on Bootstrap v5.
+
+There are many changes and tweaks between Bootstrap v4 and Bootstrap v5, with the most noticeable being in the colors. To revert, somewhat, to previous look and feel, we provide color swatches for Bootstrap v4 and even Bootstrap v3. They are included in [kendo-themes GitHub repository](https://github.com/telerik/kendo-themes/tree/master/packages/bootstrap/lib/swatches).
+
+Note: Bootstrap uses semantic versioning, which means that Kendo UI Bootstrap theme is no longer compatible with Bootstrap 4 and will throw errors when compiled against Bootstrap 4. More information about the migration process and changes could be found in [kendo-themes GitHub repository](https://github.com/telerik/kendo-themes/issues/2154).
+
 ## Installation
 
 1. Download and install the Kendo UI Bootstrap theme package.
