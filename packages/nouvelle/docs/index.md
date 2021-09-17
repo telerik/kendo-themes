@@ -7,6 +7,8 @@ position: 1
 
 # Nouvelle Theme Overview
 
+> Kendo UI Nouvelle Theme is currently in development stage and it is, currently, covering the base components. Please vote for it if you want a full coverage: https://feedback.telerik.com/themes/1432136-add-theme-based-on-css-variables.
+
 {% platform_content angular %}
 The Kendo UI for Angular Nouvelle theme is part of the Kendo UI for Angular library of UI components. It is distributed through NPM under the [kendo-theme-nouvelle package](https://www.npmjs.com/package/@progress/kendo-theme-nouvelle).
 {% endplatform_content %}
