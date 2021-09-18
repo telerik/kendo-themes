@@ -4,9 +4,6 @@ defaults:
   run:
     shell: bash
 
-env:
-  CI: true
-
 on:
   workflow_dispatch:
   workflow_run:
@@ -38,6 +35,9 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: 14.x
+          registry-url: 'https://registry.npmjs.org'
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Install
         run: npm ci
@@ -50,19 +50,24 @@ jobs:
           npm run sass:flat
           npm run dist:swatches
 
+      - name: Determine correct version to publish
+        run: |
+          NEXT_VERSION=$(npm info @progress/kendo-theme-default@next version)
+          LATEST_VERSION=$(npm info @progress/kendo-theme-default@latest version)
+          VERSION=$(node ./scripts/semver-next-inc.js --next $NEXT_VERSION --latest $LATEST_VERSION)
+          echo "Lerna should publish using $VERSION"
+          echo "VERSION=$VERSION" >> $GITHUB_ENV
+
+      - name: Prepare release
+        run: |
+          npx lerna version $VERSION --no-changelog --no-git-tag-version --no-push
+          git add .
+          git commit -m "chore(release): v$VERSION"
+
       - name: Lerna publish
         run: |
-          printf "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
-          npx lerna version --conventional-commits --conventional-prerelease --no-git-tag-version --no-push
-          VERSION=$(node -e 'console.log(require("./lerna.json").version)')
-          git add .
-          git commit -m "chore(release): $VERSION"
-          git tag $VERSION
-          npx lerna publish from-package --preid dev --dist-tag dev --create-release github
-        env:
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          npx lerna publish from-package --dist-tag next
 
       - name: Push to GitHub
         run: |
-          git push origin v5-dev --tags --quiet > /dev/null 2>&1
+          git push origin v5-dev --quiet > /dev/null 2>&1

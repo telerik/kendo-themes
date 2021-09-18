@@ -15,4 +15,4 @@ function inc( dev, latest ) {
     return semver.inc( latest, 'prerelease', 'dev' );
 }
 
-process.stdout.write( inc( devVersion, latestVersion) );
+process.stdout.write( inc( devVersion, latestVersion ) );

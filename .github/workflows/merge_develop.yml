@@ -4,9 +4,6 @@ defaults:
   run:
     shell: bash
 
-env:
-  CI: true
-
 on: [workflow_dispatch]
 
 jobs:
