@@ -4,9 +4,6 @@ defaults:
   run:
     shell: bash
 
-env:
-  CI: true
-
 on:
   schedule:
     # Run at 00:20 every Monday

@@ -23,7 +23,8 @@
       "conventionalCommits": true
     },
     "publish": {
-      "loglevel": "verbose",
+      "concurrency": 1,
+      "loglevel": "silly",
       "message": "chore(release): %s",
       "verifyAccess": false,
       "yes": true

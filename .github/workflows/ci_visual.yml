@@ -1,8 +1,5 @@
 name: CI | Visual
 
-env:
-  CI: true
-
 on:
   push:
     branches-ignore:

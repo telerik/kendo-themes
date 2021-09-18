@@ -5,7 +5,6 @@ defaults:
     shell: bash
 
 env:
-  CI: true
   TESTS_DIR: ./tests
 
 on:
