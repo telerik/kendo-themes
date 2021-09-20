@@ -6,7 +6,7 @@
     "@commitlint/core": "^13.1.0",
     "@joneff/baka": "^1.0.1",
     "@progress/kendo-font-icons": "0.1.2",
-    "@progress/kendo-theme-tasks": "^1.12.1",
+    "@progress/kendo-theme-tasks": "^1.13.0",
     "autoprefixer": "^10.3.1",
     "dss": "^1.0.4",
     "eslint": "^7.7.0",
