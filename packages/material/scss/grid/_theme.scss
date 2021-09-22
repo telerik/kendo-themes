@@ -26,7 +26,7 @@
             .k-master-row > td:focus,
             .k-grouping-row > td:focus,
             .k-detail-row > td:focus,
-            .k-group-footer > td:focus  {
+            .k-group-footer > td:focus {
                 color: inherit;
                 background-color: $grid-hovered-bg;
             }
@@ -46,7 +46,7 @@
             .k-master-row > td:focus,
             .k-grouping-row > td:focus,
             .k-detail-row > td:focus,
-            .k-group-footer > td:focus  {
+            .k-group-footer > td:focus {
                 &.k-grid-header-sticky,
                 &.k-grid-content-sticky,
                 &.k-grid-footer-sticky {
@@ -183,7 +183,7 @@
 
     }
 
-    thead.k-grid-header> tr:not(:only-child)>th {
+    thead.k-grid-header > tr:not(:only-child) > th {
         border-left-color: $grid-border;
     }
 

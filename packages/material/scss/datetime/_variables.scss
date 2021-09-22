@@ -1,5 +1,5 @@
 // DateTime
-$time-highlight-size: 1px;
+$time-highlight-size: 1px !default;
 
 $time-list-title-text: $subtle-text !default;
 $time-list-title-focus-text: $component-text !default;
@@ -10,7 +10,7 @@ $time-list-highlight-border: null !default;
 $time-list-focused-bg: null !default;
 
 $time-header-padding: null !default;
-$timepicker-header-height: 2em;
+$timepicker-header-height: 2em !default;
 
 $time-list-padding: $padding-y * 5 !default;
 $time-list-focus-size: 2px !default;

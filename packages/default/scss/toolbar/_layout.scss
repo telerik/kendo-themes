@@ -112,8 +112,7 @@
     // Toolbar group
     .k-toolbar-group {
         display: flex;
-        flex-direction: inherit;
-        flex-wrap: nowrap;
+        flex-flow: inherit nowrap;
         gap: inherit;
     }
 

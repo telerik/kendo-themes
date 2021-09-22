@@ -20,9 +20,9 @@ $scrollview-pager-item-spacing: 20px !default;
 $scrollview-pager-item-border-width: 0px !default;
 $scrollview-pager-height: calc( #{$scrollview-pagebutton-size} + #{$scrollview-pager-item-border-width * 2} + #{$scrollview-pager-item-spacing * 2} ) !default;
 
-$scrollview-pager-multidot-threshold: 10;
-$scrollview-pager-multidot-intermediate: 3;
-$scrollview-pager-multidot-step: 1px;
+$scrollview-pager-multidot-threshold: 10 !default;
+$scrollview-pager-multidot-intermediate: 3 !default;
+$scrollview-pager-multidot-step: 1px !default;
 
 $scrollview-arrow-icon-size: 4.5em !default;
 $scrollview-arrow-tap-highlight-color: $rgba-transparent !default;

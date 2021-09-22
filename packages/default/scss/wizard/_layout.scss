@@ -96,9 +96,7 @@
         }
 
         .k-wizard-content {
-            flex-grow: 1;
-            flex-shrink: 1;
-            flex-basis: auto;
+            flex: 1 1 0%;
         }
 
         .k-wizard-steps {

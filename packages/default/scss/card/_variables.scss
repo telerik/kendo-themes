@@ -54,7 +54,7 @@ $card-subtitle-text: $subtle-text !default;
 
 $card-img-max-width: 100px !default;
 $card-avatar-size: 45px !default;
-$card-avatar-spacing:  $card-header-padding-x !default;
+$card-avatar-spacing: $card-header-padding-x !default;
 
 $card-actions-padding-x: map-get( $spacing, 2 ) !default;
 $card-actions-padding-y: map-get( $spacing, 2 ) !default;

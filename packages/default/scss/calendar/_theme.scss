@@ -113,7 +113,7 @@
             );
         }
         .k-calendar-td.k-state-focused .k-link,
-        .k-calendar-td.k-state-focus .k-link  {
+        .k-calendar-td.k-state-focus .k-link {
             box-shadow: $calendar-cell-focused-shadow;
         }
         .k-calendar-td.k-state-selected.k-state-focused .k-link,
@@ -187,12 +187,13 @@
         .k-range-end,
         .k-range-mid {
             // sass-lint:disable-block indentation
-            background-image: linear-gradient(
-                transparent $calendar-range-gap,
-                $calendar-range-bg $calendar-range-gap,
-                $calendar-range-bg calc(100% - #{$calendar-range-gap}),
-                transparent calc(100% - #{$calendar-range-gap})
-            );
+            background-image:
+                linear-gradient(
+                    transparent $calendar-range-gap,
+                    $calendar-range-bg $calendar-range-gap,
+                    $calendar-range-bg calc(100% - #{$calendar-range-gap}),
+                    transparent calc(100% - #{$calendar-range-gap})
+                );
 
             .k-ie &,
             .k-edge & {
@@ -254,7 +255,7 @@
 
 @include exports( "daterangepicker/theme" ) {
 
-    //jQuery DateRangePicker
+    // jQuery DateRangePicker
     .k-daterangepicker {
         // Invalid
         &.k-state-invalid {

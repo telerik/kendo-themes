@@ -41,7 +41,7 @@ $card-title-margin-bottom: map-get( $spacing, md ) !default;
 $card-title-font-size: $h5-font-size !default;
 $card-title-font-family: $headings-font-family !default;
 $card-title-line-height: $headings-line-height !default;
-$card-title-font-weight:  $headings-font-weight !default;
+$card-title-font-weight: $headings-font-weight !default;
 $card-title-letter-spacing: null !default;
 
 $card-subtitle-margin-bottom: map-get( $spacing, md ) !default;
@@ -54,7 +54,7 @@ $card-subtitle-text: $subtle-text !default;
 
 $card-img-max-width: 100px !default;
 $card-avatar-size: 45px !default;
-$card-avatar-spacing:  $card-header-padding-x !default;
+$card-avatar-spacing: $card-header-padding-x !default;
 
 $card-actions-padding-x: map-get( $spacing, 2 ) !default;
 $card-actions-padding-y: map-get( $spacing, 2 ) !default;

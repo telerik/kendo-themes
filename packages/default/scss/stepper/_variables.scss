@@ -84,4 +84,4 @@ $stepper-progressbar-fill-text: null !default;
 
 $stepper-content-transition-property: height !default;
 $stepper-content-transition-duration: 300ms !default;
-$stepper-content-transition-timing-function: cubic-bezier(.4, 0, .2, 1) 0ms;
+$stepper-content-transition-timing-function: cubic-bezier(.4, 0, .2, 1) 0ms !default;

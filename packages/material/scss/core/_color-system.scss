@@ -2,28 +2,28 @@
 // Adapted from https://github.com/angular/components/blob/master/src/material/core/theming/_theming.scss
 
 // Color constants
-$black: black;
-$white: white;
+$black: black; // stylelint-disable-line scss/dollar-variable-default
+$white: white; // stylelint-disable-line scss/dollar-variable-default
 
-$rgba-transparent: rgba( 0, 0, 0, 0 );
+$rgba-transparent: rgba( 0, 0, 0, 0 ); // stylelint-disable-line scss/dollar-variable-default
 
-$gradient-transparent-to-black: rgba( black, 0), black;
-$gradient-transparent-to-white: rgba( white, 0), white;
-$gradient-black-to-transparent: black, rgba( black, 0);
-$gradient-white-to-transparent: white, rgba( white, 0);
+$gradient-transparent-to-black: rgba( black, 0), black; // stylelint-disable-line scss/dollar-variable-default
+$gradient-transparent-to-white: rgba( white, 0), white; // stylelint-disable-line scss/dollar-variable-default
+$gradient-black-to-transparent: black, rgba( black, 0); // stylelint-disable-line scss/dollar-variable-default
+$gradient-white-to-transparent: white, rgba( white, 0); // stylelint-disable-line scss/dollar-variable-default
 
-$gradient-rainbow: #ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff, #ff0000;
+$gradient-rainbow: #ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff, #ff0000; // stylelint-disable-line scss/dollar-variable-default
 
-$dark-primary-text: rgba($black, .87);
-$dark-secondary-text: rgba($black, .54);
-$dark-disabled-text: rgba($black, .38);
-$dark-dividers: rgba($black, .12);
-$dark-focused: rgba($black, .12);
-$light-primary-text: $white;
-$light-secondary-text: rgba($white, .7);
-$light-disabled-text: rgba($white, .5);
-$light-dividers: rgba($white, .12);
-$light-focused: rgba($white, .12);
+$dark-primary-text: rgba($black, .87) !default;
+$dark-secondary-text: rgba($black, .54) !default;
+$dark-disabled-text: rgba($black, .38) !default;
+$dark-dividers: rgba($black, .12) !default;
+$dark-focused: rgba($black, .12) !default;
+$light-primary-text: $white !default;
+$light-secondary-text: rgba($white, .7) !default;
+$light-disabled-text: rgba($white, .5) !default;
+$light-dividers: rgba($white, .12) !default;
+$light-focused: rgba($white, .12) !default;
 
 $palettes: (
 
@@ -194,7 +194,7 @@ $palettes: (
             A200: $dark-primary-text,
             A400: $light-primary-text,
             A700: $light-primary-text
-            )
+        )
     ),
 
     // Blue
@@ -673,7 +673,7 @@ $palettes: (
         )
     )
 
-);
+) !default;
 
 @function get-base-palette($name) {
     @return map-get( $palettes, $name );
@@ -700,7 +700,7 @@ $material-dark-complimentary: (
     hover-bg: rgba( $white, .08 ),
     focus-bg: rgba( $white, .24 ),
     elevation: $black
-);
+) !default;
 
 
 $material-light-complimentary: (
@@ -716,7 +716,7 @@ $material-light-complimentary: (
     hover-bg: rgba( $black, .04 ),
     focus-bg: rgba( $black, .12 ),
     elevation: $black
-);
+) !default;
 
 
 // For a given hue in a palette, return the contrast color from the map of contrast palettes.
@@ -748,6 +748,7 @@ $material-light-complimentary: (
         }
     }
 
+    // stylelint-disable-next-line function-comma-newline-after
     $result: map-merge($base-palette, (
         // sass-lint:disable-block indentation
         main: map-get($base-palette, $main),
@@ -760,6 +761,7 @@ $material-light-complimentary: (
 
     // For each hue in the palette, add a "-contrast" color to the map.
     @each $hue, $color in $base-palette {
+        // stylelint-disable-next-line function-comma-newline-after
         $result: map-merge($result, (
             // sass-lint:disable-block indentation
             "#{$hue}-contrast": material-contrast($base-palette, $hue)

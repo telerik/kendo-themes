@@ -35,21 +35,17 @@ $fab-item-icon-padding-y: $fab-item-icon-padding-x !default;
 $fab-item-icon-border-width: 0 !default;
 $fab-item-icon-border-radius: 50% !default;
 
-$fab-sizes: () !default;
-// sass-lint:disable indentation
-$fab-sizes: map-merge((
+$fab-sizes: (
     sm: map-get( $spacing, 4 ),
     md: map-get( $spacing, 8 ),
     lg: map-get( $spacing, 16 )
-), $fab-sizes);
-// sass-lint:enable indentation
+) !default;
 
-$fab-theme-colors: () !default;
-$fab-theme-colors: map-merge( $fab-theme-colors, $theme-colors );
+$fab-theme-colors: $theme-colors !default;
 
 $fab-shadow: 0 4px 5px rgba(0, 0, 0, .14), 0 1px 10px rgba(0, 0, 0, .12), 0 2px 4px rgba(0, 0, 0, .2) !default;
 $fab-focus-shadow: 0 1px 10px rgba(#000000, .22), 0 4px 5px rgba(#000000, .24), 0 2px 4px rgba(#000000, .2) !default;
-$fab-disabled-shadow:  0 4px 5px rgba(0, 0, 0, .06), 0 1px 10px rgba(0, 0, 0, .06), 0 2px 4px rgba(0, 0, 0, .08) !default;
+$fab-disabled-shadow: 0 4px 5px rgba(0, 0, 0, .06), 0 1px 10px rgba(0, 0, 0, .06), 0 2px 4px rgba(0, 0, 0, .08) !default;
 
 $fab-item-text: $component-text !default;
 $fab-item-bg: $component-bg !default;

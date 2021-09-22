@@ -76,7 +76,7 @@
     .k-menu-horizontal {
         flex-direction: row;
 
-        > .k-menu-item  + .k-menu-item {
+        > .k-menu-item + .k-menu-item {
             margin-left: $menu-item-spacing;
         }
 
@@ -272,7 +272,7 @@
         // Orientation -- horizontal
         .k-menu-horizontal {
 
-            > .k-menu-item  + .k-menu-item {
+            > .k-menu-item + .k-menu-item {
                 margin-right: $menu-item-spacing;
                 margin-left: 0;
             }

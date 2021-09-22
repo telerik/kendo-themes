@@ -201,9 +201,7 @@ $light: #ebebeb !default;
 $inverse: if( $dark-theme, $light, $dark ) !default;
 
 
-$theme-colors: () !default;
-// sass-lint:disable indentation
-$theme-colors: map-merge((
+$theme-colors: (
     "primary": $primary,
     "secondary": $secondary,
     "tertiary": $tertiary,
@@ -214,8 +212,7 @@ $theme-colors: map-merge((
     "dark": $dark,
     "light": $light,
     "inverse": $inverse
-), $theme-colors);
-// sass-lint:enable indentation
+) !default;
 
 // Cursor utility classes
 $cursors: ( auto, default, none, context-menu, help, pointer, progress, wait, cell, crosshair, text,
@@ -404,10 +401,7 @@ $grid-gap: 10px !default;
 
 
 // Disabled Styling maps
-$disabled-styling: () !default;
-// sass-lint:disable indentation
-$disabled-styling: map-merge((
+$disabled-styling: (
     opacity: $disabled-opacity,
     filter: $disabled-filter
-), $disabled-styling);
-// sass-lint:enable indentation
+) !default;

@@ -113,7 +113,7 @@
     }
 
     .k-timeline-vertical,
-    .k-timeline-horizontal .k-timeline-track-wrap  {
+    .k-timeline-horizontal .k-timeline-track-wrap {
         &::after {
             content: "";
             position: absolute;
@@ -130,7 +130,7 @@
             padding-left: $timeline-vertical-padding-calc;
         }
 
-        &::after  {
+        &::after {
             height: 100%;
             width: $timeline-track-size;
             transform: translateX(-50%);
@@ -218,7 +218,7 @@
         &.k-timeline-alternating {
             padding-left: $timeline-spacing-x;
 
-            &::after  {
+            &::after {
                 left: 50%;
             }
 
@@ -348,7 +348,7 @@
                 }
             }
 
-            .k-timeline-flag  {
+            .k-timeline-flag {
                 margin-bottom: $timeline-flag-margin-bottom-calc;
                 position: relative;
                 min-width: $timeline-horizontal-flag-min-width;

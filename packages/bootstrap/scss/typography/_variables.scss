@@ -28,7 +28,7 @@ $line-height-xs: 1 !default;
 $line-height-sm: $line-height-sm !default;
 $line-height-md: $line-height !default;
 $line-height-lg: $line-height-lg !default;
-$line-height-em: ($line-height * 1em);
+$line-height-em: ($line-height * 1em) !default;
 
 
 // Font weight

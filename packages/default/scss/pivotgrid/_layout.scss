@@ -422,8 +422,7 @@
             }
             .k-value-fields {
                 max-height: 250px;
-                flex-direction: row;
-                flex-wrap: wrap;
+                flex-flow: row wrap;
                 overflow-x: hidden;
                 overflow-y: auto;
             }

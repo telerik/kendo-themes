@@ -13,8 +13,7 @@
         font-family: $bottom-nav-font-family;
         letter-spacing: $bottom-nav-letter-spacing;
         display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
+        flex-flow: row nowrap;
         white-space: nowrap;
         gap: $bottom-nav-gap;
         overflow: hidden;
@@ -68,8 +67,7 @@
             width: 100%;
             color: inherit;
             display: flex;
-            flex-direction: row;
-            flex-wrap: nowrap;
+            flex-flow: row nowrap;
             flex: 1 0 auto;
             align-items: center;
             justify-content: center;
@@ -92,8 +90,7 @@
 
     // Horizontal Item Layout
     .k-bottom-nav-item-flow-horizontal .k-bottom-nav-item {
-        flex-direction: row;
-        flex-wrap: nowrap;
+        flex-flow: row nowrap;
     }
 
     // Vertical Item Layout

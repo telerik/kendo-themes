@@ -52,7 +52,7 @@ $chip-filled-info-border: transparent !default;
 
 $chip-outline-bg: transparent !default;
 $chip-outline-text: $body-text !default;
-$chip-outline-border: rgba( $body-text , .2) !default;
+$chip-outline-border: rgba( $body-text, .2) !default;
 
 $chip-outline-hovered-bg: try-shade( $body-bg, .5 ) !default;
 $chip-outline-hovered-text: $chip-outline-text !default;

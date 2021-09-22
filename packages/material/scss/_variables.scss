@@ -141,12 +141,12 @@ $table-cell-padding-y: 10px !default;
 $header-cell-padding-x: 24px !default;
 $header-cell-padding-y: 10px !default;
 
-$zindex-popup: 1;
-$zindex-window: 2;
+$zindex-popup: 1 !default;
+$zindex-window: 2 !default;
 
 
 // Color settings
-$dark-theme: map-get($theme, is-dark);
+$dark-theme: map-get($theme, is-dark) !default;
 
 
 // Theme colors
@@ -233,9 +233,7 @@ $light: get-base-hue( gray, 100 ) !default;
 $inverse: if( $dark-theme, $light, $dark ) !default;
 
 
-$theme-colors: () !default;
-// sass-lint:disable indentation
-$theme-colors: map-merge((
+$theme-colors: (
     "primary": $primary,
     "secondary": $secondary,
     "tertiary": $tertiary,
@@ -246,8 +244,7 @@ $theme-colors: map-merge((
     "dark": $dark,
     "light": $light,
     "inverse": $inverse
-), $theme-colors);
-// sass-lint:enable indentation
+) !default;
 
 // Cursor utility classes
 $cursors: ( auto, default, none, context-menu, help, pointer, progress, wait, cell, crosshair, text,
@@ -462,10 +459,7 @@ $grid-gap: 10px !default;
 
 
 // Disabled Styling maps
-$disabled-styling: () !default;
-// sass-lint:disable indentation
-$disabled-styling: map-merge((
+$disabled-styling: (
     opacity: $disabled-opacity,
     filter: $disabled-filter
-), $disabled-styling);
-// sass-lint:enable indentation
+) !default;

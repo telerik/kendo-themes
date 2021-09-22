@@ -1,7 +1,7 @@
 @mixin linear-gradient( $gradient: null ) {
     @if $gradient and $enable-gradients {
         @if $gradient == none {
-            background-image: none
+            background-image: none;
         }
         @else {
             background-image: linear-gradient( $gradient );
@@ -13,11 +13,12 @@
     background-image: linear-gradient($angle, $color 25%, transparent 25%, transparent 50%, $color 50%, $color 75%, transparent 75%, transparent);
 }
 
-@mixin checkerboard-gradient ( $primary-color: white, $secondary-color: rgba(0, 0, 0, 0.09), $size: 10px ) {
+@mixin checkerboard-gradient( $primary-color: white, $secondary-color: rgba(0, 0, 0, .09), $size: 10px ) {
     $position: calc(#{$size} / 2);
-    background: linear-gradient(45deg, $secondary-color 25%, transparent 25%, transparent 75%, $secondary-color 75%, $secondary-color 0),
-                linear-gradient(45deg, $secondary-color 25%, transparent 25%, transparent 75%, $secondary-color 75%, $secondary-color 0),
-                $primary-color;
+    background:
+        linear-gradient(45deg, $secondary-color 25%, transparent 25%, transparent 75%, $secondary-color 75%, $secondary-color 0),
+        linear-gradient(45deg, $secondary-color 25%, transparent 25%, transparent 75%, $secondary-color 75%, $secondary-color 0),
+        $primary-color;
     background-repeat: repeat, repeat;
     background-position: 0px 0px, $position $position;
     transform-origin: 0 0 0;

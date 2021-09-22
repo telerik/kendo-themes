@@ -1,6 +1,7 @@
 @include exports( "common/decoration/color" ) {
 
     // sass-lint:disable-block no-important
+    // stylelint-disable block-opening-brace-space-before
 
     .k-text-primary     { color: $primary !important; }
     .k-text-info        { color: $info !important; }

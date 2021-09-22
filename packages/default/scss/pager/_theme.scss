@@ -135,14 +135,14 @@
                         @include fill(
                             $list-item-hovered-text,
                             $list-item-hovered-bg
-                        )
+                        );
                     }
 
                     &.k-state-selected {
                         @include fill(
                             $list-item-selected-text,
                             $list-item-selected-bg
-                        )
+                        );
                     }
 
                 }
