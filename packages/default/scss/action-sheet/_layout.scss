@@ -117,7 +117,7 @@
         border-left-width: if( $actionsheet-border-width, 0, null );
         left: 0;
         top: 50%;
-        transform: translatey( -50% );
+        transform: translateY( -50% );
     }
     .k-actionsheet-right {
         @include border-left-radius( $actionsheet-border-radius );
@@ -125,7 +125,7 @@
         border-right-width: if( $actionsheet-border-width, 0, null );
         right: 0;
         top: 50%;
-        transform: translatey( -50% );
+        transform: translateY( -50% );
     }
 
 

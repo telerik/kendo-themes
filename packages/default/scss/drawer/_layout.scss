@@ -2,8 +2,7 @@
 
     .k-drawer-container {
         display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
+        flex-flow: row nowrap;
         align-items: flex-start;
     }
     kendo-drawer.k-drawer,
@@ -130,8 +129,7 @@
         font-size: $drawer-item-font-size;
         line-height: $drawer-item-line-height;
         display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
+        flex-flow: row nowrap;
         cursor: pointer;
 
         > .k-drawer-link {
@@ -139,8 +137,7 @@
             padding: $drawer-item-padding-y $drawer-item-padding-x;
             color: inherit;
             display: flex;
-            flex-direction: row;
-            flex-wrap: nowrap;
+            flex-flow: row nowrap;
             flex: 1 0 auto;
         }
 

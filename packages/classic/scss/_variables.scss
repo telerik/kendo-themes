@@ -187,9 +187,7 @@ $light: #ebebeb !default;
 $inverse: if( $dark-theme, $light, $dark ) !default;
 
 
-$theme-colors: () !default;
-// sass-lint:disable indentation
-$theme-colors: map-merge((
+$theme-colors: (
     "primary": $primary,
     "secondary": $secondary,
     "tertiary": $tertiary,
@@ -200,8 +198,7 @@ $theme-colors: map-merge((
     "dark": $dark,
     "light": $light,
     "inverse": $inverse
-), $theme-colors);
-// sass-lint:enable indentation
+) !default;
 
 // Cursor utility classes
 $cursors: ( auto, default, none, context-menu, help, pointer, progress, wait, cell, crosshair, text,
@@ -211,14 +208,14 @@ $cursors: ( auto, default, none, context-menu, help, pointer, progress, wait, ce
 
 
 // Color constants
-$rgba-transparent: rgba( 0, 0, 0, 0 );
+$rgba-transparent: rgba( 0, 0, 0, 0 ); // stylelint-disable-line
 
-$gradient-transparent-to-black: rgba( black, 0), black;
-$gradient-transparent-to-white: rgba( white, 0), white;
-$gradient-black-to-transparent: black, rgba( black, 0);
-$gradient-white-to-transparent: white, rgba( white, 0);
+$gradient-transparent-to-black: rgba( black, 0), black; // stylelint-disable-line
+$gradient-transparent-to-white: rgba( white, 0), white; // stylelint-disable-line
+$gradient-black-to-transparent: black, rgba( black, 0); // stylelint-disable-line
+$gradient-white-to-transparent: white, rgba( white, 0); // stylelint-disable-line
 
-$gradient-rainbow: #ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff, #ff0000;
+$gradient-rainbow: #ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff, #ff0000; // stylelint-disable-line
 
 // Root styles
 $body-bg: $white !default;
@@ -417,10 +414,7 @@ $grid-gap: 10px !default;
 
 
 // Disabled Styling maps
-$disabled-styling: () !default;
-// sass-lint:disable indentation
-$disabled-styling: map-merge((
+$disabled-styling: (
     opacity: $disabled-opacity,
     filter: $disabled-filter
-), $disabled-styling);
-// sass-lint:enable indentation
+) !default;

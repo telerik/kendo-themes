@@ -25,7 +25,7 @@ $svg-escaped-characters: (
             @if str-index($string, "url(") == 1 {
                 $string: url("#{str-replace(str-slice($string, 6, -3), $char, $encoded)}");
             } @else {
-                    $string: str-replace($string, $char, $encoded);
+                $string: str-replace($string, $char, $encoded);
             }
         }
     }

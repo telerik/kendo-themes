@@ -7,15 +7,11 @@ $avatar-font-size: $font-size !default;
 $avatar-line-height: $line-height !default;
 
 
-$avatar-sizes: () !default;
-// sass-lint:disable indentation
-$avatar-sizes: map-merge((
+$avatar-sizes: (
     sm: map-get( $spacing, 4 ),
     md: map-get( $spacing, 8 ),
     lg: map-get( $spacing, 16 )
-), $avatar-sizes);
-// sass-lint:enable indentation
+) !default;
 
 
-$avatar-theme-colors: () !default;
-$avatar-theme-colors: map-merge( $avatar-theme-colors, $theme-colors );
+$avatar-theme-colors: $theme-colors !default;

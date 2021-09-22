@@ -51,7 +51,7 @@
     // Row / column headers
     .k-spreadsheet-top-corner,
     .k-spreadsheet-row-header,
-    .k-spreadsheet-column-header  {
+    .k-spreadsheet-column-header {
         border-color: $component-border;
         background-color: try-shade( $component-bg, 1 );
     }

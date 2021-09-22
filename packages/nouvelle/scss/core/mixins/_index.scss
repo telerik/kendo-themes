@@ -16,7 +16,7 @@
 @mixin linear-gradient( $gradient: null ) {
     @if $gradient and $enable-gradients {
         @if $gradient == none {
-            background-image: none
+            background-image: none;
         }
         @else {
             background-image: linear-gradient( $gradient );

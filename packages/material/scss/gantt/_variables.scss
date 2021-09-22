@@ -44,7 +44,7 @@ $gantt-task-bg: mix( $primary, $gantt-bg ) !default;
 $gantt-task-text: $primary-contrast !default;
 $gantt-task-border: null !default;
 $gantt-task-progress-bg: $primary !default;
-$gantt-task-selected-bg:  mix( $secondary, $gantt-bg ) !default;
+$gantt-task-selected-bg: mix( $secondary, $gantt-bg ) !default;
 $gantt-task-selected-text: $secondary-contrast !default;
 $gantt-task-selected-border: null !default;
 $gantt-task-progress-selected-bg: $secondary !default;
@@ -70,7 +70,7 @@ $gantt-planned-milestone-drag-hint-top: 1.15em !default;
 
 $gantt-rtl-milestone-wrap-margin-x: -2.4em !default;
 $gantt-rtl-milestone-planned-moment-margin-x: .2em !default;
-$gantt-rtl-milestone-dot-start-margin-x: -.1em default;
+$gantt-rtl-milestone-dot-start-margin-x: -.1em !default;
 
 $gantt-planned-offset-resize-handler-margin-x: 1.4em !default;
 

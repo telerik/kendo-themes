@@ -265,7 +265,7 @@
         .k-search-options {
             display: flex;
             flex-direction: column;
-            padding: 10px 0 40px 0;
+            padding: 10px 0 40px;
 
             > span {
                 padding-bottom: $padding-y;
@@ -308,7 +308,7 @@
         .k-edit-buttons {}
     }
 
-    //View HTML dialog using flex to fit child textarea
+    // View HTML dialog using flex to fit child textarea
     .k-editor-dialog.k-viewhtml-dialog {
         display: flex;
         flex-direction: column;
@@ -402,8 +402,7 @@
         // Tiles
         .k-tiles {
             display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
+            flex-flow: row wrap;
             height: 390px;
             max-height: 50vh;
             margin: 0 0 $spacer-y 0;

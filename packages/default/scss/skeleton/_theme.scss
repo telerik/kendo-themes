@@ -13,14 +13,12 @@
 
         .k-skeleton::after,
         &.k-skeleton::after {
-
             background-image: linear-gradient(
                 to right,
                 transparent,
                 $skeleton-wave-bg,
                 transparent
             );
-
         }
 
     }

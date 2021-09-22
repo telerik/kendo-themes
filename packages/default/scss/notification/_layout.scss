@@ -2,11 +2,10 @@
 
     // Base
     .k-notification-group {
-        position: fixed;
-        display: inline-flex;
-        flex-wrap: wrap;
         max-height: 100%;
-        flex-direction: column-reverse;
+        display: inline-flex;
+        flex-flow: column-reverse wrap;
+        position: fixed;
     }
 
     .k-notification-container {
@@ -38,8 +37,7 @@
 
     .k-notification-wrap {
         display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
+        flex-flow: row nowrap;
 
         > .k-icon {
             margin-top: $notification-icon-offset;

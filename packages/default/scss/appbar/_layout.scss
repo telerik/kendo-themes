@@ -14,8 +14,7 @@
         list-style: none;
         display: flex;
         gap: $appbar-gap;
-        flex-direction: row;
-        flex-wrap: wrap;
+        flex-flow: row wrap;
         align-items: center;
         overflow: hidden;
         -webkit-touch-callout: none;

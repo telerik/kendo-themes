@@ -267,8 +267,7 @@
         padding: $toolbar-padding-y $toolbar-padding-x;
         border-style: solid;
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+        flex-flow: row wrap;
         align-items: center;
         justify-content: space-between;
     }
@@ -467,8 +466,7 @@
         padding: $toolbar-padding-y $toolbar-padding-x;
         border-style: solid;
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+        flex-flow: row wrap;
         align-items: center;
         justify-content: space-between;
     }
@@ -533,7 +531,7 @@
         overflow: hidden;
     }
     .k-scheduler-header-wrap {
-        border-width:  0;
+        border-width: 0;
         border-style: solid;
         position: relative;
     }
@@ -1214,7 +1212,7 @@
             }
         }
 
-        .k-scheduler-navigation  {
+        .k-scheduler-navigation {
 
             .k-nav-today {
                 @include border-right-radius-only( $border-radius );

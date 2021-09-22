@@ -1005,8 +1005,8 @@
         }
     }
 
-    .k-grid-header-locked>table,
-    .k-grid-header-wrap>table {
+    .k-grid-header-locked > table,
+    .k-grid-header-wrap > table {
         margin-bottom: -1px;
     }
 
@@ -1459,7 +1459,7 @@
 
     [dir="rtl"],
     .k-rtl {
-        .k-columnmenu-item  > .k-icon {
+        .k-columnmenu-item > .k-icon {
             margin-left: $icon-spacing;
             margin-right: 0;
         }

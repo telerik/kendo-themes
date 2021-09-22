@@ -25,7 +25,7 @@ $notification-themes: () !default;
         border: $color,
         color: contrast-wcag( $color ),
         bg: $color
-    );;
+    );
     // sass-lint:enable indentation
 }
 

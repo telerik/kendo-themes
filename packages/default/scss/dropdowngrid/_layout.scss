@@ -26,7 +26,7 @@
 
     // Header
     .k-dropdowngrid-popup .k-grid-header {
-        border-width: 0 0 1px 0;
+        border-width: 0 0 1px;
         border-style: solid;
         border-color: inherit;
         font-size: $grid-header-font-size;
@@ -157,7 +157,7 @@
     // Footer
     .k-dropdowngrid-popup .k-footer {
         padding: $grid-footer-padding-y $grid-footer-padding-x;
-        border-width: 1px 0 0 0;
+        border-width: 1px 0 0;
         border-style: solid;
         text-align: left;
         white-space: nowrap;

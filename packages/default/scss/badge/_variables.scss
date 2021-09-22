@@ -22,15 +22,15 @@ $badge-line-height-lg: 1 !default;
 
 $badge-fixed-size: 20px !default;
 $badge-calc-size: calc( #{$badge-line-height * 1em} + #{$badge-padding-y * 2} + #{$badge-border-width * 2} ) !default;
-$badge-size: if( $use-calc-badge-size, $badge-calc-size, $badge-fixed-size );
-$badge-dot-size: 10px;
+$badge-size: if( $use-calc-badge-size, $badge-calc-size, $badge-fixed-size ) !default;
+$badge-dot-size: 10px !default;
 
 $badge-fixed-size-sm: 16px !default;
 $badge-calc-size-sm: calc( #{$badge-line-height-sm * 1em} + #{$badge-padding-y-sm * 2} + #{$badge-border-width-sm * 2} ) !default;
-$badge-size-sm: if( $use-calc-badge-size, $badge-calc-size-sm, $badge-fixed-size-sm );
-$badge-dot-size-sm: 6px;
+$badge-size-sm: if( $use-calc-badge-size, $badge-calc-size-sm, $badge-fixed-size-sm ) !default;
+$badge-dot-size-sm: 6px !default;
 
 $badge-fixed-size-lg: 26px !default;
 $badge-calc-size-lg: calc( #{$badge-line-height-lg * 1em} + #{$badge-padding-y-lg * 2} + #{$badge-border-width-lg * 2} ) !default;
-$badge-size-lg: if( $use-calc-badge-size, $badge-calc-size-lg, $badge-fixed-size-lg );
-$badge-dot-size-lg: 12px;
+$badge-size-lg: if( $use-calc-badge-size, $badge-calc-size-lg, $badge-fixed-size-lg ) !default;
+$badge-dot-size-lg: 12px !default;

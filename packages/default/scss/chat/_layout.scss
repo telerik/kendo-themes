@@ -246,8 +246,7 @@
         padding-left: $chat-message-list-padding-y;
         padding-right: $chat-message-list-padding-y;
         display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
+        flex-flow: row nowrap;
         flex: 0 0 auto;
         overflow-x: auto;
         overflow-y: hidden;
@@ -347,8 +346,7 @@
     // Deck
     .k-chat .k-card-deck .k-card-wrap {
         display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
+        flex-flow: row nowrap;
         align-items: stretch;
         flex: 0 0 auto;
         padding-bottom: 5px; // accommodate for focused box shadow on OSX
@@ -377,8 +375,7 @@
         padding: 0;
         border-radius: 50px;
         display: inline-flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
+        flex-flow: row nowrap;
 
         span {
             width: $chat-typing-indicator-dot-size;
@@ -425,8 +422,7 @@
             // margin-bottom: -20px;
             // padding-bottom: 20px;
             display: flex;
-            flex-direction: row;
-            flex-wrap: nowrap;
+            flex-flow: row nowrap;
             overflow: hidden;
             // overflow-x: auto;
             scroll-behavior: smooth;

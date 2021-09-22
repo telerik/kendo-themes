@@ -201,8 +201,7 @@
             margin: $filemanager-preview-spacing 0 0;
             width: 100%;
             flex: 1 1 100%;
-            flex-direction: row;
-            flex-wrap: nowrap;
+            flex-flow: row nowrap;
         }
     }
 

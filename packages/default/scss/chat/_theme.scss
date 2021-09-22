@@ -14,7 +14,7 @@
             @include fill(
                 $chat-timestamp-text,
                 $chat-timestamp-bg
-            )
+            );
         }
         .k-author {
             font-weight: bold;

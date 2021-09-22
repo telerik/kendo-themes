@@ -37,8 +37,8 @@
 
 
     // Card orientation
-    .k-card-horizontal  { flex-flow: row nowrap; }
-    .k-card-vertical    { flex-flow: column nowrap; }
+    .k-card-horizontal  { flex-flow: row nowrap; } // stylelint-disable-line block-opening-brace-space-before
+    .k-card-vertical    { flex-flow: column nowrap; } // stylelint-disable-line block-opening-brace-space-before
 
 
     // Header
@@ -198,14 +198,14 @@
 
 
     // Actions align
-    .k-card-actions-start       { justify-content: flex-start; }
-    .k-card-actions-end         { justify-content: flex-end; }
-    .k-card-actions-center      { justify-content: center; }
+    .k-card-actions-start       { justify-content: flex-start; } // stylelint-disable-line block-opening-brace-space-before
+    .k-card-actions-end         { justify-content: flex-end; } // stylelint-disable-line block-opening-brace-space-before
+    .k-card-actions-center      { justify-content: center; } // stylelint-disable-line block-opening-brace-space-before
 
 
     // Actions orientation
-    .k-card-actions-horizontal  { flex-flow: row nowrap; }
-    .k-card-actions-vertical    { flex-flow: column nowrap; }
+    .k-card-actions-horizontal  { flex-flow: row nowrap; } // stylelint-disable-line block-opening-brace-space-before
+    .k-card-actions-vertical    { flex-flow: column nowrap; } // stylelint-disable-line block-opening-brace-space-before
 
 
     // Streched actions
@@ -324,8 +324,7 @@
     // Group
     .k-card-group {
         display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
+        flex-flow: row nowrap;
         align-items: stretch;
         flex: 0 0 auto;
 

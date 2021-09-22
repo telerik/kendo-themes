@@ -40,7 +40,7 @@
                 border-style: solid;
             }
 
-            .k-filter-operator .k-dropdown  {
+            .k-filter-operator .k-dropdown {
                 width: $filter-operator-dropdown-width;
             }
         }
@@ -69,7 +69,7 @@
 
         .k-filter-group-main::before,
         .k-filter-group-main > .k-filter-toolbar::before,
-        .k-filter-group-main  > .k-filter-toolbar::after,
+        .k-filter-group-main > .k-filter-toolbar::after,
         .k-filter-lines .k-filter-item:last-child::before {
             display: none;
         }

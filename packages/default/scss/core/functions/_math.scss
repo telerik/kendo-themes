@@ -9,11 +9,11 @@
 
     @if $n >= 0 {
         @for $i from 1 through $n {
-        $ret: $ret * $x;
+            $ret: $ret * $x;
         }
     } @else {
         @for $i from $n to 0 {
-        $ret: $ret / $x;
+            $ret: $ret / $x;
         }
     }
 

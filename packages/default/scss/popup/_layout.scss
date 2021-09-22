@@ -1,4 +1,3 @@
-
 @include exports("popup/layout") {
 
     .k-popup {
@@ -115,7 +114,7 @@
             left: auto;
         }
     }
-    .k-group-header+div>.k-list>.k-item.k-first::before {
+    .k-group-header + div > .k-list > .k-item.k-first::before {
         content: " ";
         display: block;
         border-top-width: 1px;
@@ -245,8 +244,8 @@
         }
     }
 
-    //SplitButton
-    //TODO: Wait for final design + revise
+    // SplitButton
+    // TODO: Wait for final design + revise
     .k-split-button,
     .k-dropdown-button {
         .k-list .k-item:focus {

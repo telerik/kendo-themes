@@ -116,7 +116,7 @@ $grid-command-cell-button-spacing: map-get( $spacing, 2 ) !default;
 $grid-search-width: $input-default-width !default;
 
 $grid-sticky-bg: $grid-bg !default;
-$grid-sticky-text:  $grid-text !default;
+$grid-sticky-text: $grid-text !default;
 $grid-sticky-border: rgba($grid-text, .5) !default;
 
 $grid-sticky-alt-bg: try-shade( $grid-bg, .5 ) !default;
