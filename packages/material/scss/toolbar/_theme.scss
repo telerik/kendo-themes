@@ -12,6 +12,11 @@
         .k-button-primary,
         .k-button.k-primary {
             background-color: $primary-button-bg;
+
+            &:disabled,
+            &.k-state-disabled {
+                background-color: $button-disabled-bg;
+            }
         }
 
     }
