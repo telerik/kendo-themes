@@ -1,66 +1,49 @@
 @mixin kendo-combobox--core-layout() {
 
-    .k-combobox {
-        border-width: 0;
-        box-sizing: border-box;
+    :where(.k-combobox) {
+        padding: 0;
+        width: 100%;
+        border-width: 1px;
+        border-width: var( --kendo-combobox-border-width, 1px );
+        border-style: solid;
+        border-style: var( --kendo-combobox-border-style, solid );
+        border-radius: 0;
+        border-radius: var( --kendo-combobox-border-radius, 0 );
         outline: 0;
+        color: inherit;
         background: none;
-        font-size: var(--kendo-combobox-font-size, inherit);
-        font-family: var(--kendo-combobox-font-family, inherit);
-        line-height: var(--kendo-combobox-line-height, calc(20 / 14));
-        text-align: left;
-        white-space: nowrap;
-        display: inline-flex;
+        font: inherit;
+        font-size: var( --kendo-combobox-font-size, inherit );
+        font-family: var( --kendo-combobox-font-family, inherit );
+        line-height: var( --kendo-combobox-line-height, inherit );
+        display: flex;
         flex-flow: row nowrap;
-        vertical-align: middle;
-        position: relative;
+    }
 
-
-        // Dropdown wrap
-        .k-dropdown-wrap {
-            padding: 0;
-            width: 100%;
-            border-width: var(--kendo-combobox-border-width);
-            border-style: var(--kendo-combobox-border-style);
-            border-radius: var(--kendo-combobox-border-radius);
-            box-sizing: border-box;
-            position: relative;
-            overflow: hidden;
-            display: flex;
-            flex-flow: row nowrap;
-            transition: all .1s ease; // sass-lint:disable-block no-transition-all
-            outline: 0;
-            cursor: initial;
-        }
-
-
-        // Searchbar
-        .k-searchbar {
-            flex: 1 1 auto;
-            display: flex;
-            flex-direction: row;
-        }
-
+    // Combobox
+    .k-combobox {
 
         // Input
-        .k-input {
-            padding: var(--kendo-combobox-padding-y) var(--kendo-combobox-padding-x);
+        .k-input,
+        > .k-input {
+            --kendo-input-padding-x: var( --kendo-combobox-padding-x );
+            --kendo-input-padding-y: var( --kendo-combobox-padding-y );
         }
 
 
         // Select
         .k-select {
-            padding: $combobox-select-padding-y $combobox-select-padding-x;
-            min-width: 1em;
+            padding: 0;
+            padding-inline: var( --kendo-combobox-select-padding-x );
+            padding-block: var( --kendo-combobox-select-padding-y );
             border-width: 0;
-            border-inline-start-width: var(--kendo-combobox-select-border-width);
-            border-style: var(--kendo-combobox-select-border-style);
-            box-sizing: border-box;
+            border-inline-start-width: var( --kendo-combobox-select-border-width, 1px );
+            border-style: var( --kendo-combobox-select-border-style, solid );
             display: flex;
+            flex-flow: row nowrap;
             align-items: center;
             justify-content: center;
             flex: none;
-            text-align: center;
             cursor: pointer;
 
             // TMP
@@ -77,44 +60,6 @@
             }
         }
 
-
-        // Clear
-        .k-clear-value {
-            width: ($combobox-line-height * $combobox-font-size);
-            height: ($combobox-line-height * $combobox-font-size);
-            box-sizing: border-box;
-            outline: 0;
-            font-family: monospace;
-            line-height: ($combobox-line-height * $combobox-font-size);
-            cursor: pointer;
-            display: none;
-            flex: none;
-            flex-direction: row;
-            align-self: center;
-            align-items: center;
-            justify-content: center;
-            opacity: .5;
-
-            &::before {
-                content: "\2715";
-                display: inline-block;
-                width: 1em;
-                font: inherit;
-            }
-
-            &:hover {
-                opacity: 1;
-            }
-        }
-        &:hover,
-        &:focus,
-        &:focus-within,
-        &.k-state-hover,
-        &.k-state-focus {
-            .k-clear-value {
-                display: inline-flex;
-            }
-        }
     }
 
 }
