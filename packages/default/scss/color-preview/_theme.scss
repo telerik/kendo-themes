@@ -1,0 +1,31 @@
+@include exports("color-preview/theme") {
+
+    // Color Preview
+    .k-color-preview {
+        @include fill(
+            $color-preview-text,
+            $color-preview-bg,
+            $color-preview-border
+        );
+
+        &::before {
+            background: url(map-get($data-uris, "alpha-slider-bgr.png"));
+            background-size: contain;
+            background-position: 0;
+        }
+
+        &:hover,
+        &.k-state-hover,
+        &.k-hover {
+            @include fill( $border: $color-preview-hover-border );
+        }
+    }
+
+    // No Color
+    .k-no-color::after {
+        background-color: $color-preview-no-color-bg;
+        background-image: $color-preview-no-color-image;
+        background-size: 100% 100%;
+    }
+
+}

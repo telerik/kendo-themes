@@ -5,15 +5,13 @@
 @import "../common/_index.scss";
 @import "../utils/_flex.scss";
 @import "../button/_index.scss";
-@import "../numerictextbox/_index.scss";
-@import "../slider/_index.scss";
+@import "../colorpalette/_index.scss";
+@import "../colorgradient/_index.scss";
 @import "../popup/_index.scss";
 @import "../icons/_index.scss";
 
 
 // Component
 @import "_variables.scss";
-@import "images/alpha-slider-bgr.scss";
-@import "images/alpha-slider-bgr-reversed.scss";
 @import "_layout.scss";
 @import "_theme.scss";

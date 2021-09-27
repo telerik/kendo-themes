@@ -1,0 +1,65 @@
+@include exports("coloreditor/layout") {
+
+    // ColorEditor/FlatColorPicker
+    .k-coloreditor {
+        @include border-radius( $coloreditor-border-radius );
+        min-width: $coloreditor-min-width;
+        border-width: $coloreditor-border-width;
+        border-style: solid;
+        box-sizing: border-box;
+        outline: 0;
+        font-size: $coloreditor-font-size;
+        font-family: $coloreditor-font-family;
+        line-height: $coloreditor-line-height;
+        display: inline-flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    // Header
+    .k-coloreditor-header {
+        padding: $coloreditor-header-padding-y $coloreditor-header-padding-x 0;
+    }
+
+    .k-coloreditor-header-actions {
+        gap: $coloreditor-header-actions-gap;
+    }
+
+    .k-coloreditor-preview {
+        position: relative;
+        gap: $coloreditor-preview-gap;
+        z-index: 1;
+    }
+    .k-coloreditor-preview .k-color-preview {
+        width: $coloreditor-color-preview-width;
+        height: $coloreditor-color-preview-height;
+    }
+
+    // Views
+    .k-coloreditor-views {
+        min-width: calc( var(--kendo-color-preview-width, #{$colorpalette-tile-width}) * var(--kendo-color-preview-columns, 10) );
+        padding: $coloreditor-views-padding-y $coloreditor-views-padding-x;
+        gap: $coloreditor-views-gap;
+
+        .k-colorgradient {
+            padding: 0;
+            width: auto;
+            border-width: 0;
+        }
+
+        .k-colorpalette {
+            align-self: center;
+        }
+
+        .k-colorpalette-tile {
+            width: var(--kendo-color-preview-width, $colorpalette-tile-width);
+            height: var(--kendo-color-preview-height, $colorpalette-tile-height);
+        }
+    }
+
+    // Footer
+    .k-coloreditor-footer.k-actions {
+        margin: 0;
+    }
+
+}

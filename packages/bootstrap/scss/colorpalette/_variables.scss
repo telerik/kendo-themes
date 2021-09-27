@@ -1,0 +1,10 @@
+// Colorpalette
+$colorpalette-font-family: $font-family !default;
+$colorpalette-font-size: $font-size !default;
+$colorpalette-line-height: 0 !default;
+
+$colorpalette-tile-width: map-get( $spacing, 6 ) !default;
+$colorpalette-tile-height: $colorpalette-tile-width !default;
+$colorpalette-tile-focus-shadow: 0 0 3px 1px rgba( black, .3 ), inset 0 0 0 1px rgba( white, .5 ) !default;
+$colorpalette-tile-hover-shadow: 0 0 3px 1px rgba( black, .3 ), inset 0 0 0 1px rgba( white, .8 ) !default;
+$colorpalette-tile-selected-shadow: 0 1px 3px 1px rgba( black, .3 ), inset 0 0 0 1px rgba( white, 1 ) !default;

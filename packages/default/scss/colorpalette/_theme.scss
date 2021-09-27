@@ -1,0 +1,25 @@
+@include exports("colorpalette/theme") {
+
+    // Tile
+    .k-colorpalette-tile {
+
+        &:focus,
+        &.k-state-focus,
+        &.k-focus {
+            @include box-shadow( $colorpalette-tile-focus-shadow );
+        }
+
+        &:hover,
+        &.k-state-hover,
+        &.k-hover {
+            @include box-shadow( $colorpalette-tile-hover-shadow );
+        }
+
+        &.k-state-selected,
+        &.k-state-selected:hover {
+            @include box-shadow( $colorpalette-tile-selected-shadow );
+        }
+
+    }
+
+}

@@ -1,0 +1,51 @@
+// ColorGradient
+$colorgradient-spacer: map-get( $spacing, 3 ) !default;
+
+$colorgradient-width: 272px !default;
+$colorgradient-border-width: 1px !default;
+$colorgradient-border-radius: $border-radius !default;
+$colorgradient-padding-y: $colorgradient-spacer !default;
+$colorgradient-padding-x: $colorgradient-padding-y !default;
+$colorgradient-gap: $colorgradient-spacer !default;
+$colorgradient-font-family: $font-family !default;
+$colorgradient-font-size: $font-size !default;
+$colorgradient-line-height: $line-height !default;
+$colorgradient-bg: $component-bg !default;
+$colorgradient-text: $component-text !default;
+$colorgradient-border: $component-border !default;
+
+$colorgradient-focus-border: null !default;
+$colorgradient-focus-shadow: 1px 1px 7px 1px rgba(0, 0, 0, .3) !default;
+
+$colorgradient-canvas-border-radius: $border-radius !default;
+$colorgradient-canvas-gap: $colorgradient-spacer !default;
+$colorgradient-canvas-rectangle-height: 180px !default;
+
+$colorgradient-slider-track-size: 10px !default;
+$colorgradient-slider-border-radius: 10px !default;
+$colorgradient-slider-draghandle-border-width: 3px !default;
+
+$colorgradient-slider-vertical-size: 180px !default;
+$colorgradient-slider-horizontal-size: 100% !default;
+
+$colorgradient-draghandle-width: 14px !default;
+$colorgradient-draghandle-height: 14px !default;
+$colorgradient-draghandle-border-width: 1px !default;
+$colorgradient-draghandle-border-radius: 50% !default;
+$colorgradient-draghandle-bg: transparent !default;
+$colorgradient-draghandle-text: null !default;
+$colorgradient-draghandle-border: rgba( $white, .8) !default;
+$colorgradient-draghandle-shadow: 0 1px 4px rgba(0, 0, 0, .5) !default;
+$colorgradient-draghandle-focus-shadow: 0 1px 4px black !default;
+$colorgradient-draghandle-hover-shadow: $colorgradient-draghandle-focus-shadow !default;
+
+$colorgradient-canvas-draghandle-margin-y: -( $colorgradient-draghandle-height / 2 ) !default;
+$colorgradient-canvas-draghandle-margin-x: -( $colorgradient-draghandle-width / 2 ) !default;
+
+$colorgradient-input-width: 46px !default;
+$colorgradient-input-gap: ( $colorgradient-spacer / 1.5 ) !default;
+$colorgradient-input-label-gap: ( $colorgradient-spacer / 3 ) !default;
+$colorgradient-input-label-text: $disabled-text !default;
+
+$colorgradient-contrast-ratio-font-weight: $font-weight-bold !default;
+$colorgradient-contrast-spacer: ( $colorgradient-spacer / 1.5 ) !default;

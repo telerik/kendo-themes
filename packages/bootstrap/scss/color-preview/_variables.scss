@@ -1,0 +1,13 @@
+// Color Preview
+$color-preview-border-radius: $border-radius !default;
+$color-preview-border-width: 1px !default;
+$color-preview-bg: null !default;
+$color-preview-text: null !default;
+$color-preview-border: $component-border !default;
+$color-preview-hover-border: $hovered-border !default;
+
+$color-preview-no-color-bg: $white !default;
+$color-preview-no-color-text: $error !default;
+$color-preview-no-color-border: null !default;
+
+$color-preview-no-color-image: escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' version='1.1'><line x1='0' x2='20' y1='0' y2='20' stroke='#{$color-preview-no-color-text}' stroke-width='1'/></svg>") ) !default;
