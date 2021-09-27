@@ -1,43 +1,35 @@
 @mixin kendo-dropdownlist--core-theme() {
 
+    &:where(.k-dropdown) {
+        color: var( --kendo-dropdownlist-text, inherit );
+        background-color: var( --kendo-dropdownlist-bg, transparent );
+        border-color: var( --kendo-dropdownlist-border, transparent );
+        box-shadow: var( --kendo-dropdownlist-shadow, none );
+    }
+
     .k-dropdown {
-
-        // Normal state
-        .k-dropdown-wrap {
-            @include fill(
-                var(--kendo-dropdownlist-text),
-                var(--kendo-dropdownlist-bg),
-                var(--kendo-dropdownlist-border)
-            );
-        }
-
 
         // Hover
         &:hover,
-        &.k-state-hover {
-            .k-dropdown-wrap {
-                @include fill(
-                    var(--kendo-dropdownlist-hover-text),
-                    var(--kendo-dropdownlist-hover-bg),
-                    var(--kendo-dropdownlist-hover-border)
-                );
-            }
+        &.k-hover {
+            --kendo-dropdownlist-text: var( --kendo-dropdownlist-hover-text );
+            --kendo-dropdownlist-bg: var( --kendo-dropdownlist-hover-bg );
+            --kendo-dropdownlist-border: var( --kendo-dropdownlist-hover-border );
         }
 
 
         // Focus
         &:focus,
-        &:focus-within,
-        &.k-state-focus {
-            .k-dropdown-wrap {
-                @include fill(
-                    var(--kendo-dropdownlist-focus-text),
-                    var(--kendo-dropdownlist-focus-bg),
-                    var(--kendo-dropdownlist-focus-border)
-                );
-            }
+        &.k-focus,
+        &:focus-within {
+            --kendo-dropdownlist-text: var( --kendo-dropdownlist-focus-text );
+            --kendo-dropdownlist-bg: var( --kendo-dropdownlist-focus-bg );
+            --kendo-dropdownlist-border: var( --kendo-dropdownlist-focus-border );
+            --kendo-dropdownlist-shadow: var( --kendo-dropdownlist-focus-shaddow );
         }
+
     }
+
 }
 
 
