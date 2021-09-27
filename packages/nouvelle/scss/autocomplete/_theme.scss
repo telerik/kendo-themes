@@ -1,6 +1,6 @@
 @mixin kendo-autocomplete--core-theme() {
 
-    &:where(.k-autocomplete) {
+    :where(.k-autocomplete) {
         color: var( --kendo-autocomplete-text, inherit );
         background-color: var( --kendo-autocomplete-bg, transparent );
         border-color: var( --kendo-autocomplete-border, transparent );

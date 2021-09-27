@@ -1,6 +1,6 @@
 @mixin kendo-dropdownlist--core-theme() {
 
-    &:where(.k-dropdown) {
+    :where(.k-dropdown) {
         color: var( --kendo-dropdownlist-text, inherit );
         background-color: var( --kendo-dropdownlist-bg, transparent );
         border-color: var( --kendo-dropdownlist-border, transparent );
