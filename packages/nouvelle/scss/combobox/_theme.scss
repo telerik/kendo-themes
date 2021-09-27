@@ -1,12 +1,12 @@
 @mixin kendo-combobox--core-theme() {
 
-    &:where(.k-combobox) {
+    :where(.k-combobox) {
         color: var( --kendo-combobox-text, inherit );
         background-color: var( --kendo-combobox-bg, transparent );
         border-color: var( --kendo-combobox-border, transparent );
         box-shadow: var( --kendo-combobox-shadow, none );
     }
-    &:where(.k-combobox .k-select) {
+    :where(.k-combobox .k-select) {
         color: var( --kendo-combobox-select-text, inherit );
         background-color: var( --kendo-combobox-select-bg, transparent );
         border-color: var( --kendo-combobox-select-border, transparent );

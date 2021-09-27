@@ -1,6 +1,6 @@
 @mixin kendo-textbox--core-theme() {
 
-    &:where(.k-textbox) {
+    :where(.k-textbox) {
         color: var( --kendo-textbox-text, inherit );
         background-color: var( --kendo-textbox-bg, transparent );
         border-color: var( --kendo-textbox-border, transparent );
