@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en" class="k-no-animations">
+<head>
+    <title>ColorGradient DragHandle</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../../../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="../../../assets/styles.css" />
+    <script src="../../../assets/scripts.js"></script>
+    <script src="../../../../../packages/html/dist/index.js"></script>
+
+    <style>
+    </style>
+</head>
+<body class="k-body">
+
+    <div id="test-area" class="k-d-grid k-grid-cols-3">
+
+        <span>DragHandle Normal</span>
+        <span>DragHandle Focus</span>
+        <span>DragHandle Hover</span>
+
+        <section>
+            <div class="k-colorgradient">
+
+                <!-- Canvas  -->
+                <div class="k-colorgradient-canvas k-hstack">
+
+                    <!-- Gradient -->
+                    <div class="k-hsv-rectangle" style="background: rgb(255, 0, 0);">
+                        <div class="k-hsv-gradient">
+                            <div class="k-hsv-draghandle k-draghandle" style="top: 50px; left: 73px;"></div>
+                        </div>
+                    </div>
+
+                    <!-- Controls -->
+                    <div class="k-hsv-controls k-hstack">
+
+                        <div class="k-slider k-slider-vertical k-hue-slider k-colorgradient-slider">
+                            <div class="k-slider-wrap">
+                                <div class="k-slider-track">
+                                    <div class="k-slider-selection"></div>
+                                    <a class="k-draghandle" style="bottom: -8px;"></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="k-slider k-slider-vertical k-alpha-slider k-colorgradient-slider">
+                            <div class="k-slider-wrap">
+                                <div class="k-slider-track" style="background: linear-gradient(to top, transparent, rgb(255, 0, 0));">
+                                    <div class="k-slider-selection"></div>
+                                    <a class="k-draghandle" style="bottom: 172px;"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Inputs -->
+                <div class="k-colorgradient-inputs k-hstack">
+                    <div class="k-vstack">
+                        <button is="Button" fillMode="flat" icon="arrows-kpi" class="k-colorgradient-toggle-mode"></button>
+                    </div>
+
+                    <div class="k-vstack">
+                        <input is="NumericTextbox" showSpinButtons="false" value="132" />
+                        <label class="k-colorgradient-input-label">R</label>
+                    </div>
+
+                    <div class="k-vstack">
+                        <input is="NumericTextbox" showSpinButtons="false" value="132" />
+                        <label class="k-colorgradient-input-label">G</label>
+                    </div>
+
+                    <div class="k-vstack">
+                        <input is="NumericTextbox" showSpinButtons="false" value="132" />
+                        <label class="k-colorgradient-input-label">B</label>
+                    </div>
+
+                    <div class="k-vstack">
+                        <input is="NumericTextbox" showSpinButtons="false" value="1.00" />
+                        <label class="k-colorgradient-input-label">A</label>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="k-colorgradient">
+
+                <!-- Canvas  -->
+                <div class="k-colorgradient-canvas k-hstack">
+
+                    <!-- Gradient -->
+                    <div class="k-hsv-rectangle" style="background: rgb(255, 0, 0);">
+                        <div class="k-hsv-gradient">
+                            <div class="k-hsv-draghandle k-draghandle k-state-focus" style="top: 50px; left: 73px;"></div>
+                        </div>
+                    </div>
+
+                    <!-- Controls -->
+                    <div class="k-hsv-controls k-hstack">
+
+                        <div class="k-slider k-slider-vertical k-hue-slider k-colorgradient-slider k-state-focus">
+                            <div class="k-slider-wrap">
+                                <div class="k-slider-track">
+                                    <div class="k-slider-selection"></div>
+                                    <a class="k-draghandle k-state-focus" style="bottom: -8px;"></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="k-slider k-slider-vertical k-alpha-slider k-colorgradient-slider k-state-focus">
+                            <div class="k-slider-wrap">
+                                <div class="k-slider-track" style="background: linear-gradient(to top, transparent, rgb(255, 0, 0));">
+                                    <div class="k-slider-selection"></div>
+                                    <a class="k-draghandle k-state-focus" style="bottom: 172px;"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Inputs -->
+                <div class="k-colorgradient-inputs k-hstack">
+                    <div class="k-vstack">
+                        <button is="Button" fillMode="flat" icon="arrows-kpi" class="k-colorgradient-toggle-mode"></button>
+                    </div>
+
+                    <div class="k-vstack">
+                        <input is="NumericTextbox" showSpinButtons="false" value="132" />
+                        <label class="k-colorgradient-input-label">R</label>
+                    </div>
+
+                    <div class="k-vstack">
+                        <input is="NumericTextbox" showSpinButtons="false" value="132" />
+                        <label class="k-colorgradient-input-label">G</label>
+                    </div>
+
+                    <div class="k-vstack">
+                        <input is="NumericTextbox" showSpinButtons="false" value="132" />
+                        <label class="k-colorgradient-input-label">B</label>
+                    </div>
+
+                    <div class="k-vstack">
+                        <input is="NumericTextbox" showSpinButtons="false" value="1.00" />
+                        <label class="k-colorgradient-input-label">A</label>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <div class="k-colorgradient">
+
+                <!-- Canvas  -->
+                <div class="k-colorgradient-canvas k-hstack">
+
+                    <!-- Gradient -->
+                    <div class="k-hsv-rectangle" style="background: rgb(255, 0, 0);">
+                        <div class="k-hsv-gradient">
+                            <div class="k-hsv-draghandle k-draghandle k-state-hover" style="top: 50px; left: 73px;"></div>
+                        </div>
+                    </div>
+
+                    <!-- Controls -->
+                    <div class="k-hsv-controls k-hstack">
+
+                        <div class="k-slider k-slider-vertical k-hue-slider k-colorgradient-slider k-state-hover">
+                            <div class="k-slider-wrap">
+                                <div class="k-slider-track">
+                                    <div class="k-slider-selection"></div>
+                                    <a class="k-draghandle k-state-hover" style="bottom: -8px;"></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="k-slider k-slider-vertical k-alpha-slider k-colorgradient-slider k-state-hover">
+                            <div class="k-slider-wrap">
+                                <div class="k-slider-track" style="background: linear-gradient(to top, transparent, rgb(255, 0, 0));">
+                                    <div class="k-slider-selection"></div>
+                                    <a class="k-draghandle k-state-hover" style="bottom: 172px;"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Inputs -->
+                <div class="k-colorgradient-inputs k-hstack">
+                    <div class="k-vstack">
+                        <button is="Button" fillMode="flat" icon="arrows-kpi" class="k-colorgradient-toggle-mode"></button>
+                    </div>
+
+                    <div class="k-vstack">
+                        <input is="NumericTextbox" showSpinButtons="false" value="132" />
+                        <label class="k-colorgradient-input-label">R</label>
+                    </div>
+
+                    <div class="k-vstack">
+                        <input is="NumericTextbox" showSpinButtons="false" value="132" />
+                        <label class="k-colorgradient-input-label">G</label>
+                    </div>
+
+                    <div class="k-vstack">
+                        <input is="NumericTextbox" showSpinButtons="false" value="132" />
+                        <label class="k-colorgradient-input-label">B</label>
+                    </div>
+
+                    <div class="k-vstack">
+                        <input is="NumericTextbox" showSpinButtons="false" value="1.00" />
+                        <label class="k-colorgradient-input-label">A</label>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>
