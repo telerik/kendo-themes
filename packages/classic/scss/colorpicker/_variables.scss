@@ -1,19 +1,7 @@
 // Colorpicker
-$colorpicker-rect-padding: $padding-x !default;
-$colorpicker-margin: 8px !default;
-$colorpicker-width: 310px !default;
-$colorpicker-border-width: 1px !default;
 $colorpicker-font-family: $font-family !default;
 $colorpicker-font-size: $font-size !default;
 $colorpicker-line-height: $line-height !default;
-$colorpicker-draghandle-width: 14px !default;
-$colorpicker-draghandle-height: 14px !default;
-$colorpicker-slider-track-size: 10px !default;
-$colorpicker-slider-border-radius: 10px !default;
-$colorpicker-hex-input-width: 65px !default;
-$colorpicker-input-width: 48px !default;
-$colorpicker-input-padding-x: $input-padding-y !default;
-$colorpicker-input-padding-y: $input-padding-y !default;
 
 $colorpicker-select-border-width: 1px !default;
 
@@ -32,9 +20,3 @@ $colorpicker-focused-text: null !default;
 $colorpicker-focused-border: null !default;
 $colorpicker-focused-gradient: null !default;
 $colorpicker-focused-shadow: $button-focused-shadow !default;
-
-$colorpicker-draghandle-shadow: 0 1px 4px rgba(0, 0, 0, .5) !default;
-$colorpicker-draghandle-focused-shadow: 0 1px 4px black !default;
-
-$colorpalette-hovered-shadow: 0 0 3px 1px rgba( black, .3 ), inset 0 0 0 1px rgba( white, .8 ) !default;
-$colorpalette-focused-shadow: 0 1px 3px 1px rgba( black, .3 ), inset 0 0 0 1px rgba( white, 1 ) !default;

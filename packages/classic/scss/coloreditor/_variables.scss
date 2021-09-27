@@ -1,0 +1,27 @@
+// Coloreditor/FlatColorPicker
+$coloreditor-spacer: map-get( $spacing, 3 ) !default;
+
+$coloreditor-min-width: 272px !default;
+$coloreditor-border-width: 1px !default;
+$coloreditor-border-radius: $border-radius !default;
+$coloreditor-font-family: $font-family !default;
+$coloreditor-font-size: $font-size !default;
+$coloreditor-line-height: $line-height !default;
+$coloreditor-bg: $component-bg !default;
+$coloreditor-text: $component-text !default;
+$coloreditor-border: $component-border !default;
+
+$coloreditor-focus-border: null !default;
+$coloreditor-focus-shadow: 1px 1px 7px 1px rgba(0, 0, 0, .3) !default;
+
+$coloreditor-header-padding-y: $coloreditor-spacer !default;
+$coloreditor-header-padding-x: $coloreditor-header-padding-y !default;
+$coloreditor-header-actions-gap: ( $coloreditor-spacer / 1.5 ) !default;
+
+$coloreditor-preview-gap: ( $coloreditor-spacer / 4 ) !default;
+$coloreditor-color-preview-width: 34px !default;
+$coloreditor-color-preview-height: 14px !default;
+
+$coloreditor-views-padding-y: $coloreditor-spacer !default;
+$coloreditor-views-padding-x: $coloreditor-views-padding-y !default;
+$coloreditor-views-gap: $coloreditor-spacer !default;

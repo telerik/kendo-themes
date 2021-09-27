@@ -1,0 +1,34 @@
+@include exports("color-preview/layout") {
+
+    // Color Preview
+    .k-color-preview {
+        border-width: $color-preview-border-width;
+        border-radius: $color-preview-border-radius;
+        border-style: solid;
+        display: inline-flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+    }
+    .k-color-preview::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: relative;
+        z-index: -1;
+    }
+
+    // No Color
+    .k-no-color::after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+}

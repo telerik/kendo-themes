@@ -1,0 +1,82 @@
+@include exports("colorgradient/theme") {
+
+    // ColorGradient
+    .k-colorgradient {
+        @include fill(
+            $colorgradient-text,
+            $colorgradient-bg,
+            $colorgradient-border
+        );
+    }
+
+    .k-colorgradient:focus,
+    .k-colorgradient.k-state-focus,
+    .k-colorgradient.k-focus {
+        @include fill( $border: $colorgradient-focus-border );
+        @include box-shadow( $colorgradient-focus-shadow );
+    }
+
+    // Canvas
+    .k-colorgradient-canvas .k-hsv-gradient {
+        background: linear-gradient( to bottom, $gradient-transparent-to-black ), linear-gradient( to right, $gradient-white-to-transparent );
+    }
+
+    // DragHandle
+    .k-colorgradient .k-draghandle {
+        @include fill(
+            $colorgradient-draghandle-text,
+            $colorgradient-draghandle-bg,
+            $colorgradient-draghandle-border
+        );
+        @include box-shadow( $colorgradient-draghandle-shadow );
+
+        &:focus,
+        &.k-state-focus,
+        &.k-focus {
+            @include fill( $bg: transparent, $border: $white );
+            @include box-shadow( $colorgradient-draghandle-focus-shadow );
+        }
+
+        &:active,
+        &:hover,
+        &.k-state-hover,
+        &.k-hover {
+            @include fill( $bg: transparent, $border: $white );
+            @include box-shadow( $colorgradient-draghandle-hover-shadow );
+        }
+    }
+
+    // Slider
+    .k-colorgradient-slider.k-hue-slider {
+        &.k-slider-horizontal .k-slider-track {
+            background: linear-gradient( to right, $gradient-rainbow );
+        }
+
+        &.k-slider-vertical .k-slider-track {
+            background: linear-gradient( to top, $gradient-rainbow );
+        }
+    }
+
+    .k-colorgradient-slider.k-alpha-slider .k-slider-track::before {
+        background: url(map-get($data-uris, "alpha-slider-bgr.png")) center repeat;
+    }
+
+    // Inputs
+    .k-colorgradient-input-label {
+        @include fill( $color: $colorgradient-input-label-text );
+    }
+
+}
+
+@include exports("colorgradient/theme/rtl") {
+    .k-rtl,
+    [dir="rtl"] {
+        .k-colorgradient {
+
+            .k-hue-slider.k-slider-horizontal .k-slider-track {
+                background: linear-gradient( to left, $gradient-rainbow );
+            }
+
+        }
+    }
+}

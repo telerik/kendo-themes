@@ -26,7 +26,7 @@
 
         // Hover state
         > :hover,
-        .k-state-hover {
+        > .k-state-hover {
             @include fill(
                 $colorpicker-hovered-text,
                 $colorpicker-hovered-bg,
@@ -38,7 +38,9 @@
         &.k-state-active {}
 
         // Focus state
-        .k-state-focused {
+        .k-state-focused,
+        .k-state-focus,
+        .k-focus {
             @include fill(
                 $colorpicker-focused-text,
                 $colorpicker-focused-bg,
@@ -61,131 +63,6 @@
             }
         }
 
-    }
-
-}
-
-
-
-
-@include exports( "flatcolorpicker/theme" ) {
-
-    .k-flatcolorpicker {
-        @include fill(
-            $component-text,
-            $component-bg,
-            $component-border
-        );
-
-        .k-color-value {
-            @include fill(
-                $input-text,
-                $input-bg,
-                $input-border
-            );
-        }
-
-        .k-hsv-gradient {
-            background: linear-gradient( to bottom, $gradient-transparent-to-black ), linear-gradient( to right, $gradient-white-to-transparent );
-        }
-
-
-        // Sliders
-        .k-slider {
-
-            // Draghandle
-            .k-draghandle {
-                box-shadow: $colorpicker-draghandle-shadow;
-                // sass-lint:enable no-color-literals no-color-keywords
-                background-color: transparent;
-            }
-            .k-draghandle:hover,
-            .k-draghandle:focus {
-                // sass-lint:disable no-color-literals no-color-keywords
-                border-color: white;
-                box-shadow: $colorpicker-draghandle-focused-shadow;
-                // sass-lint:enable no-color-literals no-color-keywords
-                background-color: transparent;
-            }
-
-            &.k-state-focused {
-                .k-draghandle {
-                    box-shadow: $colorpicker-draghandle-focused-shadow;
-                }
-            }
-        }
-
-
-        // Slider type
-        .k-hue-slider {
-            &.k-slider-horizontal {
-                .k-slider-track {
-                    background: linear-gradient( to right, $gradient-rainbow );
-                }
-            }
-            &.k-slider-vertical {
-                .k-slider-track {
-                    background: linear-gradient( to top, $gradient-rainbow );
-                }
-            }
-        }
-        .k-alpha-slider {
-            .k-slider-track {
-                background: url(map-get($data-uris, "alpha-slider-bgr.png")) center;
-            }
-        }
-
-
-        .k-draghandle {
-            border-color: rgba(255, 255, 255, .8);
-            box-shadow: $colorpicker-draghandle-shadow;
-
-            &.k-state-focus {
-                box-shadow: $colorpicker-draghandle-focused-shadow;
-            }
-        }
-
-        // Color contrast
-        .k-color-contrast .k-separator {
-            border-color: $colorpicker-border;
-        }
-
-    }
-
-
-    .k-rtl,
-    [dir="rtl"] {
-        .k-flatcolorpicker {
-
-            .k-hue-slider.k-slider-horizontal .k-slider-track {
-                background: linear-gradient( to left, $gradient-rainbow );
-            }
-
-            .k-alpha-slider .k-slider-track {
-                background: url(map-get($data-uris, "alpha-slider-bgr-reversed.png")) center;
-            }
-
-        }
-    }
-
-}
-
-
-
-
-@include exports( "colorpalette/theme" ) {
-
-    .k-colorpalette {
-        .k-item:hover,
-        .k-item.k-state-hover {
-            box-shadow: $colorpalette-hovered-shadow;
-        }
-        .k-item.k-state-selected,
-        .k-item.k-state-selected:hover,
-        .k-item.k-state-focused,
-        .k-item:focus {
-            box-shadow: $colorpalette-focused-shadow;
-        }
     }
 
 }
