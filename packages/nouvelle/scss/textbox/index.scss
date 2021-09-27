@@ -1,6 +1,6 @@
 // Module meta
 $_kendo-module-meta: (
-    name: "button",
+    name: "textbox",
     dependencies: ()
 );
 
@@ -13,8 +13,9 @@ $_kendo-module-meta: (
 
 // Register
 @include register-module( $_kendo-module-meta... ) {
-    @include kendo-button--core-layout();
-    @include kendo-button--extended-layout();
-    @include kendo-button--core-theme();
-    @include kendo-button--extended-theme();
+    @include kendo-textbox--core-layout();
+    @include kendo-textbox--extended-layout();
+    @include kendo-textbox--core-theme();
+    @include kendo-textbox--extended-theme();
 }
+

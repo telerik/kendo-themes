@@ -1,0 +1,76 @@
+$kendo-textbox-padding-x: $input-padding-x !default;
+$kendo-textbox-padding-y: $input-padding-y !default;
+
+$kendo-textbox-border-width: $input-border-width !default;
+$kendo-textbox-border-style: $input-border-style !default;
+$kendo-textbox-border-radius: $input-border-radius !default;
+
+$kendo-textbox-font-family: $input-font-family !default;
+$kendo-textbox-font-size: $input-font-size !default;
+$kendo-textbox-line-height: $input-line-height !default;
+
+
+/// The background of the textbox.
+/// @group textbox
+$kendo-textbox-bg: $input-bg !default;
+/// The text color of the textbox.
+/// @group textbox
+$kendo-textbox-text: $input-text !default;
+/// The border color of the textbox.
+/// @group textbox
+$kendo-textbox-border: $input-border !default;
+$kendo-textbox-shadow: $input-shadow !default;
+
+/// The background of hovered textbox.
+/// @group textbox
+$kendo-textbox-hover-bg: $input-hover-bg !default;
+/// The text color of hovered textbox.
+/// @group textbox
+$kendo-textbox-hover-text: $input-hover-text !default;
+/// The border color of hovered textbox.
+/// @group textbox
+$kendo-textbox-hover-border: $input-hover-border !default;
+$kendo-textbox-hover-shadow: $input-hover-shadow !default;
+
+/// The text color of focus textbox.
+/// @group textbox
+$kendo-textbox-focus-text: $input-focus-text !default;
+/// The background color of focus textbox.
+/// @group textbox
+$kendo-textbox-focus-bg: $input-focus-bg !default;
+/// The border color of focus textbox.
+/// @group textbox
+$kendo-textbox-focus-border: $input-focus-border !default;
+$kendo-textbox-focus-shadow: $input-focus-shadow !default;
+
+
+
+
+// Expose
+:root {
+    --kendo-textbox-padding-x: #{$kendo-textbox-padding-x};
+    --kendo-textbox-padding-y: #{$kendo-textbox-padding-y};
+    --kendo-textbox-border-width: #{$kendo-textbox-border-width};
+    --kendo-textbox-border-style: #{$kendo-textbox-border-style};
+
+    --kendo-textbox-border-radius: #{$kendo-textbox-border-radius};
+
+    --kendo-textbox-font-family: #{$kendo-textbox-font-family};
+    --kendo-textbox-font-size: #{$kendo-textbox-font-size};
+    --kendo-textbox-line-height: #{$kendo-textbox-line-height};
+
+    --kendo-textbox-bg: #{$kendo-textbox-bg};
+    --kendo-textbox-text: #{$kendo-textbox-text};
+    --kendo-textbox-border: #{$kendo-textbox-border};
+    --kendo-textbox-shadow: #{$kendo-textbox-shadow};
+
+    --kendo-textbox-hover-bg: #{$kendo-textbox-hover-bg};
+    --kendo-textbox-hover-text: #{$kendo-textbox-hover-text};
+    --kendo-textbox-hover-border: #{$kendo-textbox-hover-border};
+    --kendo-textbox-hover-shadow: #{$kendo-textbox-hover-shadow};
+
+    --kendo-textbox-focus-bg: #{$kendo-textbox-focus-bg};
+    --kendo-textbox-focus-text: #{$kendo-textbox-focus-text};
+    --kendo-textbox-focus-border: #{$kendo-textbox-focus-border};
+    --kendo-textbox-focus-shadow: #{$kendo-textbox-focus-shadow};
+}

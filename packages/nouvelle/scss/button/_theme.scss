@@ -1,71 +1,50 @@
-@mixin kendo-button--theme() {
+@mixin kendo-button--core-theme() {
+
+    :where(.k-button) {
+        color: var( --kendo-button-text, inherit );
+        background-color: var( --kendo-button-bg, transparent );
+        border-color: var( --kendo-button-border, transparent );
+        background-image: linear-gradient( var( --kendo-button-gradient ) );
+        box-shadow: var( --kendo-button-shadow, none );
+    }
 
     // Solid buttons
-    .k-button,
-    .k-button-solid.k-button-secondary {
-        @include fill(
-            var(--kendo-button-text),
-            var(--kendo-button-bg),
-            var(--kendo-button-border),
-            var(--kendo-button-gradient)
-        );
-
+    .k-button {
 
         // Hover
         &:hover,
-        &.k-state-hover {
-            @include fill(
-                var(--kendo-button-hover-text),
-                var(--kendo-button-hover-bg),
-                var(--kendo-button-hover-border),
-                var(--kendo-button-hover-gradient)
-            );
-        }
-
-        // Pressed
-        &:active,
-        &.k-state-active {
-            @include fill(
-                var(--kendo-button-active-text),
-                var(--kendo-button-active-bg),
-                var(--kendo-button-active-border),
-                var(--kendo-button-active-gradient)
-            );
+        &.k-hover {
+            --kendo-button-text: var( --kendo-button-hover-text );
+            --kendo-button-bg: var( --kendo-button-hover-bg );
+            --kendo-button-border: var( --kendo-button-hover-border );
+            --kendo-button-gradient: var( --kendo-button-hover-gradient );
         }
 
         // Focus
         &:focus,
-        &.k-state-focus {
-            @include fill(
-                var(--kendo-button-focus-text, var(--kendo-button-hover-text)),
-                var(--kendo-button-focus-bg, var(--kendo-button-hover-bg)),
-                var(--kendo-button-focus-border, var(--kendo-button-hover-border)),
-                var(--kendo-button-focus-gradient, var(--kendo-button-hover-gradient))
-            );
+        &.k-focus {
+            --kendo-button-text: var( --kendo-button-focus-text );
+            --kendo-button-bg: var( --kendo-button-focus-bg );
+            --kendo-button-border: var( --kendo-button-focus-border );
+            --kendo-button-gradient: var( --kendo-button-focus-gradient );
+            --kendo-button-shadow: var( --kendo-button-focus-shadow );
         }
+
+        // Pressed
+        &:active,
+        &.k-active,
+        &.k-selected {
+            --kendo-button-text: var( --kendo-button-active-text );
+            --kendo-button-bg: var( --kendo-button-active-bg );
+            --kendo-button-border: var( --kendo-button-active-border );
+            --kendo-button-gradient: var( --kendo-button-active-gradient );
+        }
+
     }
 
-    .k-button.k-primary,
-    .k-button-solid.k-button-primary {} // sass-lint:disable-line brace-style
-
-    .k-button-solid.k-button-tertiary {}
-
-
-    // Flat buttons
-    .k-button-flat.k-button-secondary {}
-    .k-button-flat.k-button-primary {}
-    .k-button-flat.k-button-tertiary {}
-
-
-    // Outline buttons
-    .k-button-outline.k-button-secondary {}
-    .k-button-outline.k-button-primary {}
-    .k-button-outline.k-button-tertiary {}
-
-
-    // Clear buttons
-    .k-button-clear.k-button-secondary {}
-    .k-button-clear.k-button-primary {}
-    .k-button-clear.k-button-tertiary {}
-
 }
+
+
+
+
+@mixin kendo-button--extended-theme() {}

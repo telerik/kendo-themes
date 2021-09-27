@@ -1,0 +1,43 @@
+$_imported-modules: ();
+
+// Load all modules by default
+$_required-modules: (
+    // Typography and utils
+    "typography",
+    "utils",
+
+    // Primitive components
+    "input",
+    "list",
+    "popup",
+    "badge",
+    "ripple",
+
+    // Native forms
+    "button",
+    "textbox",
+    "textarea",
+    "checkbox",
+    "radio",
+
+    // Form helpers
+    "forms",
+    "validator",
+
+    // Augmented inputs
+    "autocomplete",
+    "combobox",
+    "dropdownlist"
+) !default;
+
+@mixin register-module( $name: null, $dependencies: null ) {
+    @if ( index( $_required-modules, $name ) != null ) and ( index( $_imported-modules, $name ) == null)  {
+        $_imported-modules: append( $_imported-modules, $name ) !global;
+        @content;
+    }
+}
+@mixin load-modules( $names... ) {
+    @each $name in $names {
+        $_required-modules: append( $_required-modules, $name ) !global;
+    }
+}

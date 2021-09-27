@@ -1,8 +1,20 @@
-// Dependencies
-@import "../input/_variables.scss";
+// Module meta
+$_kendo-module-meta: (
+    name: "autocomplete",
+    dependencies: ()
+);
 
 
 // Component
 @import "_variables.scss";
 @import "_layout.scss";
 @import "_theme.scss";
+
+
+// Register
+@include register-module( $_kendo-module-meta... ) {
+    @include kendo-autocomplete--core-layout();
+    @include kendo-autocomplete--extended-layout();
+    @include kendo-autocomplete--core-theme();
+    @include kendo-autocomplete--extended-theme();
+}

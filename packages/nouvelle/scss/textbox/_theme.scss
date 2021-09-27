@@ -1,0 +1,35 @@
+@mixin kendo-textbox--core-theme() {
+
+    :where(.k-textbox) {
+        color: var( --kendo-textbox-text, inherit );
+        background-color: var( --kendo-textbox-bg, transparent );
+        border-color: var( --kendo-textbox-border, transparent );
+        box-shadow: var( --kendo-textbox-shadow, none );
+    }
+
+    // Textbox
+    .k-textbox {
+
+        // Hover
+        &:hover,
+        &.k-hover {
+            --kendo-textbox-text: var(--kendo-textbox-hover-text);
+            --kendo-textbox-bg: var(--kendo-textbox-hover-bg);
+            --kendo-textbox-border: var(--kendo-textbox-hover-border);
+        }
+
+        // Focus
+        &:focus,
+        &.k-focus,
+        &:focus-within {
+            --kendo-textbox-text: var(--kendo-textbox-focus-text);
+            --kendo-textbox-bg: var(--kendo-textbox-focus-bg);
+            --kendo-textbox-border: var(--kendo-textbox-focus-border);
+        }
+
+    }
+
+}
+
+
+@mixin kendo-textbox--extended-theme() {}

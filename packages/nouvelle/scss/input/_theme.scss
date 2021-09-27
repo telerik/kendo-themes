@@ -1,36 +1,4 @@
-@mixin kendo-input--theme() {
-
-    // Textbox
-    .k-textbox {
-        @include fill(
-            var(--kendo-input-text),
-            var(--kendo-input-bg),
-            var(--kendo-input-border)
-        );
+@mixin kendo-input--core-theme() {}
 
 
-        // Hover
-        &:hover,
-        &.k-state-hover {
-            @include fill(
-                var(--kendo-input-hover-text),
-                var(--kendo-input-hover-bg),
-                var(--kendo-input-hover-border)
-            );
-        }
-
-
-        // Focus
-        &:focus,
-        &:focus-within,
-        &.k-state-focus {
-            @include fill(
-                var(--kendo-input-focus-text, var(--kendo-input-hover-text)),
-                var(--kendo-input-focus-bg, var(--kendo-input-hover-bg)),
-                var(--kendo-input-focus-border, var(--kendo-input-hover-border))
-            );
-            box-shadow: var(--kendo-input-focus-shadow);
-        }
-    }
-
-}
+@mixin kendo-input--extended-theme() {}

@@ -27,45 +27,45 @@ $button-shadow: null !default;
 
 /// The background of hovered buttons.
 /// @group buttons
-$button-hover-bg: $hover-bg !default;
+$button-hover-bg: try-shade( $button-bg, .5 ) !default;
 /// The text color of hovered buttons.
 /// @group buttons
-$button-hover-text: $hover-text !default;
+$button-hover-text: $button-text !default;
 /// The border color of hovered buttons.
 /// @group buttons
-$button-hover-border: $hover-border !default;
+$button-hover-border: $button-border !default;
 /// The background gradient of hovered buttons.
 /// @group buttons
-$button-hover-gradient: $hover-gradient !default;
+$button-hover-gradient: $button-gradient !default;
 $button-hover-shadow: null !default;
 
+/// The background color of focus buttons.
+/// @group buttons
+$button-focus-bg: $button-hover-bg !default;
+/// The text color of focus buttons.
+/// @group buttons
+$button-focus-text: $button-hover-text !default;
+/// The border color of focus buttons.
+/// @group buttons
+$button-focus-border: $button-hover-border !default;
+/// The background gradient of focus buttons.
+/// @group buttons
+$button-focus-gradient: $button-hover-gradient !default;
+$button-focus-shadow: 0 0 0 2px rgba( if( $dark-theme, $white, $black ), .08 ) !default;
+
+/// The background color of pressed buttons.
+/// @group buttons
+$button-active-bg: try-shade( $button-bg, 1 ) !default;
 /// The text color of pressed buttons.
 /// @group buttons
 $button-active-text: $button-text !default;
-/// The background color of pressed buttons.
-/// @group buttons
-$button-active-bg: $button-bg !default;
 /// The border color of pressed buttons.
 /// @group buttons
 $button-active-border: $button-border !default;
 /// The background gradient of pressed buttons.
 /// @group buttons
-$button-active-gradient: none !default;
-$button-active-shadow: 0 2px 2px 0 rgba(0, 0, 0, .06) !default;
-
-/// The text color of focus buttons.
-/// @group buttons
-$button-focus-text: null !default;
-/// The background color of focus buttons.
-/// @group buttons
-$button-focus-bg: null !default;
-/// The border color of focus buttons.
-/// @group buttons
-$button-focus-border: null !default;
-/// The background gradient of focus buttons.
-/// @group buttons
-$button-focus-gradient: null !default;
-$button-focus-shadow: 0 3px 4px 0 rgba(0, 0, 0, .06) !default;
+$button-active-gradient: $button-gradient !default;
+$button-active-shadow: null !default;
 
 
 
@@ -87,19 +87,23 @@ $button-focus-shadow: 0 3px 4px 0 rgba(0, 0, 0, .06) !default;
     --kendo-button-text: #{$button-text};
     --kendo-button-border: #{$button-border};
     --kendo-button-gradient: #{$button-gradient};
+    --kendo-button-shadow: #{$button-shadow};
 
     --kendo-button-hover-bg: #{$button-hover-bg};
     --kendo-button-hover-text: #{$button-hover-text};
     --kendo-button-hover-border: #{$button-hover-border};
     --kendo-button-hover-gradient: #{$button-hover-gradient};
+    --kendo-button-hover-shadow: #{$button-hover-shadow};
+
+    --kendo-button-focus-bg: #{$button-focus-bg};
+    --kendo-button-focus-text: #{$button-focus-text};
+    --kendo-button-focus-border: #{$button-focus-border};
+    --kendo-button-focus-gradient: #{$button-focus-gradient};
+    --kendo-button-focus-shadow: #{$button-focus-shadow};
 
     --kendo-button-active-bg: #{$button-active-bg};
     --kendo-button-active-text: #{$button-active-text};
     --kendo-button-active-border: #{$button-active-border};
     --kendo-button-active-gradient: #{$button-active-gradient};
-
-    // --kendo-button-focus-bg: #{$button-focus-bg};
-    // --kendo-button-focus-text: #{$button-focus-text};
-    // --kendo-button-focus-border: #{$button-focus-border};
-    // --kendo-button-focus-gradient: #{$button-focus-gradient};
+    --kendo-button-active-shadow: #{$button-active-shadow};
 }
