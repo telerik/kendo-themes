@@ -1,15 +1,64 @@
-@import "core/functions/_index.scss";
-@import "core/mixins/_index.scss";
-@import "_variables.scss";
-
 @import "core/index.scss";
 
-@import "popup/index.scss";
 
-@import "button/index.scss";
+// Typography and utils
+// @import "typography/index.scss";
+// @import "utils/index.scss";
+
+
+// Primitive components
 @import "input/index.scss";
 @import "list/index.scss";
+@import "popup/index.scss";
+// @import "badge/index.scss";
+// @import "ripple/index.scss";
 
+
+// Generic content
+
+
+// Native forms
+@import "button/index.scss";
+@import "textbox/index.scss";
+// @import "textarea/index.scss";
+// @import "checkbox/index.scss";
+// @import "radio/index.scss";
+
+
+// Form helpers
+// @import "forms/index.scss";
+// @import "validator/index.scss";
+
+
+
+// Augmented forms
 @import "autocomplete/index.scss";
 @import "combobox/index.scss";
 @import "dropdownlist/index.scss";
+
+
+// Command interfaces
+
+
+// Popups and modals
+
+
+// Navigation
+
+
+// Layout & containers
+
+
+// Data management
+
+
+// Editors
+
+
+// Scheduling
+
+
+// Misc
+
+
+// Dataviz

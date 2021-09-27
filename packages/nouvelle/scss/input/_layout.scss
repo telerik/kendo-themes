@@ -2,48 +2,90 @@
 
     // Input
     .k-input {
-        padding: var(--kendo-input-padding-y) var(--kendo-input-padding-x);
+        padding-inline: var( --kendo-input-padding-x, 0 );
+        padding-block: var( --kendo-input-padding-y, 0 );
         width: 100%;
-        box-sizing: border-box;
         border: 0;
         outline: 0;
         color: inherit;
         background: none;
         font: inherit;
-        flex: 0 1 auto;
-        display: flex;
-        align-items: center;
+        flex-shrink: 1;
         overflow: hidden;
         text-overflow: ellipsis;
+    }
 
-        // Clear value
-        &::-ms-clear {
-            display: none;
+
+    // Input group
+    .k-input-group {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: stretch;
+
+        > * {
+            flex-shrink: 0;
+        }
+
+        // Border radis
+        > :first-child:not(:only-child) {
+            border-start-end-radius: 0;
+            border-end-end-radius: 0;
+        }
+        > :last-child:not(:only-child) {
+            border-start-start-radius: 0;
+            border-end-start-radius: 0;
+        }
+        > :not(:first-child):not(:last-child) {
+            border-radius: 0;
         }
     }
 
-    .k-textbox {
-        padding: var(--kendo-input-padding-y) var(--kendo-input-padding-x);
-        border-width: var(--kendo-input-border-width);
-        border-style: var(--kendo-input-border-style);
-        border-radius: var(--kendo-input-border-radius);
-        outline: 0;
-        font-size: var(--kendo-input-font-size, inherit);
-        font-family: var(--kendo-input-font-family, inherit);
-        line-height: var(--kendo-input-line-height, calc(20 / 14));
+
+    // Input prefix and suffix
+    .k-input-prefix,
+    .k-input-suffix {
         display: flex;
         flex-flow: row nowrap;
+        align-items: center;
+        flex-shrink: 0;
 
-        > .k-input {
-            margin: 0;
-            padding: 0;
-            border: 0;
-            outline: 0;
-            color: inherit;
-            background: none;
-            font: inherit;
-            flex: 1 1 auto;
+        > * {
+            flex-shrink: 0;
         }
+    }
+
+
+    // Clear value
+    .k-clear-value {
+        width: $input-icon-width;
+        height: $input-icon-height;
+        flex-shrink: 0;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        outline: 0;
+        cursor: pointer;
+        opacity: .5;
+    }
+    .k-clear-value:hover,
+    .k-clear-value.k-hover {
+        opacity: 1;
+    }
+
+
+    // Searchbar
+    .k-searchbar {
+        flex: 1 1 auto;
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+
+    // Legacy wrappers
+    .k-dropdown-wrap {
+        display: flex;
+        flex-flow: row nowrap;
+        flex: 1 1 auto;
     }
 
 }

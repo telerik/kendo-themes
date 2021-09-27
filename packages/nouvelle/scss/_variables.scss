@@ -52,6 +52,11 @@ $spacing: (
 ) !default;
 
 
+// Icons
+$icon-size: 16px !default;
+$icon-spacing: map-get( $spacing, 1 ) !default;
+
+
 // Color settings
 $dark-theme: false !default;
 
