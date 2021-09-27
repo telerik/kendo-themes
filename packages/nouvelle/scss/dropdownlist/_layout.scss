@@ -1,64 +1,47 @@
 @mixin kendo-dropdownlist--core-layout() {
 
-    .k-dropdown {
-        border-width: 0;
-        box-sizing: border-box;
+    :where(.k-dropdown) {
+        padding: 0;
+        width: 100%;
+        border-width: 1px;
+        border-width: var( --kendo-dropdownlist-border-width, 1px );
+        border-style: solid;
+        border-style: var( --kendo-dropdownlist-border-style, solid );
+        border-radius: 0;
+        border-radius: var( --kendo-dropdownlist-border-radius, 0 );
         outline: 0;
+        color: inherit;
         background: none;
-        font-size: var(--kendo-dropdownlist-font-size, inherit);
-        font-family: var(--kendo-dropdownlist-font-family, inherit);
-        line-height: var(--kendo-combobox-line-height, calc(20 / 14));
-        text-align: left;
-        white-space: nowrap;
-        display: inline-flex;
+        font: inherit;
+        font-size: var( --kendo-dropdownlist-font-size, inherit );
+        font-family: var( --kendo-dropdownlist-font-family, inherit );
+        line-height: var( --kendo-dropdownlist-line-height, inherit );
+        display: flex;
         flex-flow: row nowrap;
-        vertical-align: middle;
-        position: relative;
+    }
 
-
-        // Dropdown wrap
-        .k-dropdown-wrap {
-            padding: 0;
-            width: 100%;
-            border-width: var(--kendo-dropdownlist-border-width);
-            border-style: var(--kendo-dropdownlist-border-style);
-            border-radius: var(--kendo-dropdownlist-border-radius);
-            box-sizing: border-box;
-            position: relative;
-            overflow: hidden;
-            display: flex;
-            flex-flow: row nowrap;
-            transition: all .1s ease; // sass-lint:disable-block no-transition-all
-            outline: 0;
-            cursor: initial;
-        }
-
-
-        // Searchbar
-        .k-searchbar {
-            flex: 1 1 auto;
-            display: flex;
-            flex-direction: row;
-        }
-
+    // Dropdown
+    .k-dropdown {
 
         // Input
-        .k-input {
-            padding: var(--kendo-dropdownlist-padding-y) var(--kendo-dropdownlist-padding-x);
+        .k-input,
+        > .k-input {
+            --kendo-input-padding-x: var( --kendo-dropdownlist-padding-x );
+            --kendo-input-padding-y: var( --kendo-dropdownlist-padding-y );
         }
 
 
         // Select
         .k-select {
-            padding: $dropdownlist-select-padding-y $dropdownlist-select-padding-x;
-            min-width: 1em;
+            padding: 0;
+            padding-inline: var( --kendo-dropdownlist-select-padding-x );
+            padding-block: var( --kendo-dropdownlist-select-padding-y );
             border-width: 0;
-            box-sizing: border-box;
             display: flex;
+            flex-flow: row nowrap;
             align-items: center;
             justify-content: center;
             flex: none;
-            text-align: center;
             cursor: pointer;
 
             // TMP
@@ -74,6 +57,7 @@
                 }
             }
         }
+
     }
 
 }
