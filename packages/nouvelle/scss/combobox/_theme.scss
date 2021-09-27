@@ -1,4 +1,4 @@
-@mixin kendo-combobox--theme() {
+@mixin kendo-combobox--core-theme() {
 
     .k-combobox {
 
@@ -63,3 +63,8 @@
         }
     }
 }
+
+
+
+
+@mixin kendo-combobox--extended-theme() {}

@@ -1,4 +1,4 @@
-@mixin kendo-dropdownlist--layout() {
+@mixin kendo-dropdownlist--core-layout() {
 
     .k-dropdown {
         border-width: 0;
@@ -77,3 +77,8 @@
     }
 
 }
+
+
+
+
+@mixin kendo-dropdownlist--extended-layout() {}

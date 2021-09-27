@@ -1,7 +1,20 @@
-// Dependencies
+// Module meta
+$_kendo-module-meta: (
+    name: "list",
+    dependencies: ()
+);
 
 
 // Component
 @import "_variables.scss";
 @import "_layout.scss";
 @import "_theme.scss";
+
+
+// Register
+@include register-module( $_kendo-module-meta... ) {
+    @include kendo-list--core-layout();
+    @include kendo-list--extended-layout();
+    @include kendo-list--core-theme();
+    @include kendo-list--extended-theme();
+}

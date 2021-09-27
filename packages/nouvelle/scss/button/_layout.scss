@@ -1,4 +1,4 @@
-@mixin kendo-button--layout() {
+@mixin kendo-button--core-layout() {
 
     .k-button {
         padding: var(--kendo-button-padding-y) var(--kendo-button-padding-x);
@@ -14,3 +14,8 @@
     }
 
 }
+
+
+
+
+@mixin kendo-button--extended-layout() {}

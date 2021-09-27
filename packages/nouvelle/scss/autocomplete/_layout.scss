@@ -1,4 +1,4 @@
-@mixin kendo-autocomplete--layout() {
+@mixin kendo-autocomplete--core-layout() {
 
     .k-autocomplete {
         padding: var(--kendo-autocomplete-padding-y) var(--kendo-autocomplete-padding-x);
@@ -25,3 +25,7 @@
     }
 
 }
+
+
+
+@mixin kendo-autocomplete--extended-layout() {}
