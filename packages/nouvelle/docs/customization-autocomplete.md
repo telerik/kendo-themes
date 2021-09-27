@@ -49,7 +49,7 @@ The following table lists the available variables for customization.
     <td>$autocomplete-border</td>
     <td></td>
     <td>$input-border</td>
-    <td>$interactive-border</td>
+    <td>$component-border</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the autocomplete.</div></div>
@@ -79,7 +79,7 @@ The following table lists the available variables for customization.
     <td>$autocomplete-hover-border</td>
     <td></td>
     <td>$input-hover-border</td>
-    <td>$hover-border</td>
+    <td>try-shade( $input-border, 1 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of hovered autocomplete.</div></div>
@@ -89,7 +89,7 @@ The following table lists the available variables for customization.
     <td>$autocomplete-focus-text</td>
     <td></td>
     <td>$input-focus-text</td>
-    <td>$input-text</td>
+    <td>$input-hover-text</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of focus autocomplete.</div></div>
@@ -99,7 +99,7 @@ The following table lists the available variables for customization.
     <td>$autocomplete-focus-bg</td>
     <td></td>
     <td>$input-focus-bg</td>
-    <td>$input-bg</td>
+    <td>$input-hover-bg</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of focus autocomplete.</div></div>
