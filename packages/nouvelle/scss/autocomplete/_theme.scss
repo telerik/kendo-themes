@@ -1,38 +1,33 @@
 @mixin kendo-autocomplete--core-theme() {
 
+    &:where(.k-autocomplete) {
+        color: var( --kendo-autocomplete-text, inherit );
+        background-color: var( --kendo-autocomplete-bg, transparent );
+        border-color: var( --kendo-autocomplete-border, transparent );
+        box-shadow: var( --kendo-autocomplete-shadow, none );
+    }
+
     // Autocomplete
     .k-autocomplete {
-        @include fill(
-            var(--kendo-autocomplete-text),
-            var(--kendo-autocomplete-bg),
-            var(--kendo-autocomplete-border)
-        );
-
 
         // Hover
         &:hover,
-        &.k-state-hover {
-            @include fill(
-                var(--kendo-autocomplete-hover-text),
-                var(--kendo-autocomplete-hover-bg),
-                var(--kendo-autocomplete-hover-border)
-            );
+        &.k-hover {
+            --kendo-autocomplete-text: var( --kendo-autocomplete-hover-text );
+            --kendo-autocomplete-bg: var( --kendo-autocomplete-hover-bg );
+            --kendo-autocomplete-border: var( --kendo-autocomplete-hover-border );
         }
-
 
         // Focus
         &:focus,
-        &:focus-within,
-        &.k-state-focus,
-        // Legacy
-        &.k-state-focused {
-            @include fill(
-                var(--kendo-autocomplete-focus-text, var(--kendo-autocomplete-hover-text)),
-                var(--kendo-autocomplete-focus-bg, var(--kendo-autocomplete-hover-bg)),
-                var(--kendo-autocomplete-focus-border, var(--kendo-autocomplete-hover-border))
-            );
-            box-shadow: var(--kendo-autocomplete-focus-shadow);
+        &.k-focus,
+        &:focus-within {
+            --kendo-autocomplete-text: var( --kendo-autocomplete-focus-text );
+            --kendo-autocomplete-bg: var( --kendo-autocomplete-focus-bg );
+            --kendo-autocomplete-border: var( --kendo-autocomplete-focus-border );
+            --kendo-autocomplete-shadow: var( --kendo-autocomplete-focus-shaddow );
         }
+
     }
 
 }
