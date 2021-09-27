@@ -1,16 +1,25 @@
 @mixin kendo-button--core-layout() {
 
-    .k-button {
-        padding: var(--kendo-button-padding-y) var(--kendo-button-padding-x);
-        border-width: var(--kendo-button-border-width);
-        border-style: var(--kendo-button-border-style);
-        border-radius: var(--kendo-button-border-radius);
+    :where(.k-button) {
+        padding: 0;
+        padding-inline: var( --kendo-button-padding-x, 0 );
+        padding-block: var( --kendo-button-padding-y, 0 );
+        border-width: $button-border-width;
+        border-width: var( --kendo-button-border-width, 1px );
+        border-style: $button-border-style;
+        border-style: var( --kendo-button-border-style, solid );
+        border-radius: 0;
+        border-radius: var( --kendo-button-border-radius, 0 );
         outline: 0;
-        font-size: var(--kendo-button-font-size, inherit);
-        font-family: var(--kendo-button-font-family, inherit);
-        line-height: var(--kendo-button-line-height, calc(20 / 14));
+        color: inherit;
+        background: none;
+        font: inherit;
+        font-size: var( --kendo-button-font-size, inherit );
+        font-family: var( --kendo-button-font-family, inherit );
+        line-height: var( --kendo-button-line-height, inherit );
         display: inline-flex;
         flex-flow: row nowrap;
+        position: relative;
     }
 
 }
