@@ -1,4 +1,4 @@
-@mixin kendo-button--theme() {
+@mixin kendo-button--core-theme() {
 
     // Solid buttons
     .k-button,
@@ -69,3 +69,8 @@
     .k-button-clear.k-button-tertiary {}
 
 }
+
+
+
+
+@mixin kendo-button--extended-theme() {}

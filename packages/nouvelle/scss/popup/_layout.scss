@@ -1,4 +1,4 @@
-@mixin kendo-popup--layout() {
+@mixin kendo-popup--core-layout() {
 
     // Popup
     .k-popup {
@@ -43,3 +43,8 @@
         justify-content: center;
     }
 }
+
+
+
+
+@mixin kendo-popup--extended-layout() {}

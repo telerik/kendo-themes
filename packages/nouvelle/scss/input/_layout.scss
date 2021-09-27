@@ -1,4 +1,4 @@
-@mixin kendo-input--layout() {
+@mixin kendo-input--core-layout() {
 
     // Input
     .k-input {
@@ -47,3 +47,8 @@
     }
 
 }
+
+
+
+
+@mixin kendo-input--extended-layout() {}

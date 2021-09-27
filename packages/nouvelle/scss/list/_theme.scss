@@ -1,4 +1,4 @@
-@mixin kendo-list--theme() {
+@mixin kendo-list--core-theme() {
 
     // List
     .k-list {
@@ -42,3 +42,8 @@
     }
 
 }
+
+
+
+
+@mixin kendo-list--extended-theme() {}

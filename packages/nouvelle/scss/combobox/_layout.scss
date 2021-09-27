@@ -1,4 +1,4 @@
-@mixin kendo-combobox--layout() {
+@mixin kendo-combobox--core-layout() {
 
     .k-combobox {
         border-width: 0;
@@ -118,3 +118,8 @@
     }
 
 }
+
+
+
+
+@mixin kendo-combobox--extended-layout() {}

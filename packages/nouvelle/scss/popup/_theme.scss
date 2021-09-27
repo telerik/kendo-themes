@@ -1,4 +1,4 @@
-@mixin kendo-popup--theme() {
+@mixin kendo-popup--core-theme() {
 
     .k-popup {
         @include fill(
@@ -15,3 +15,8 @@
     }
 
 }
+
+
+
+
+@mixin kendo-popup--extended-theme() {}
