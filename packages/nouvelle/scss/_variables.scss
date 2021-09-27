@@ -249,3 +249,9 @@ $selected-text: contrast-wcag( $selected-bg ) !default;
 $selected-border: rgba( black, .1 ) !default;
 /// The gradient background of selected items.
 $selected-gradient: none !default;
+
+
+// Layout
+$grid-cols: 12 !default;
+$grid-rows: 10 !default;
+$grid-gap: 10px !default;
