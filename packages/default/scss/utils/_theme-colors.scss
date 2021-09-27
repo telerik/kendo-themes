@@ -3,15 +3,12 @@
     // sass-lint:disable-block no-important
     // stylelint-disable block-opening-brace-space-before
 
-    .k-text-primary     { color: $primary !important; }
-    .k-text-info        { color: $info !important; }
-    .k-text-success     { color: $success !important; }
-    .k-text-warning     { color: $warning !important; }
-    .k-text-error       { color: $error !important; }
+    .k-text-base,
+    .k-color-base {
+        color: $base-text;
+    }
 
-    .k-text-base        { color: $base-text; }
-
-    .k-color-inherit    { color: inherit; }
+    .k-color-inherit { color: inherit; }
 
     @each $name, $color in $theme-colors {
         .k-text-#{$name},
@@ -27,11 +24,11 @@
 
     // sass-lint:disable-block no-important
 
-    .k-bg-primary       { background-color: $primary !important; }
-    .k-bg-info          { background-color: $info !important; }
-    .k-bg-success       { background-color: $success !important; }
-    .k-bg-warning       { background-color: $warning !important; }
-    .k-bg-error         { background-color: $error !important; }
+    @each $name, $bg-color in $theme-colors {
+        .k-bg-#{$name} {
+            background-color: $bg-color !important;
+        }
+    }
 
 }
 
@@ -44,12 +41,11 @@
 
 @include exports( "common/decoration/variant" ) {
 
-    .k-state-primary    { @include variant( $primary ); }
-    .k-state-info       { @include variant( $info ); }
-    .k-state-success    { @include variant( $success ); }
-    .k-state-warning    { @include variant( $warning ); }
-    .k-state-error      { @include variant( $error ); }
-
+    @each $name, $variant in $theme-colors {
+        .k-state-#{$name} {
+            @include variant( $variant );
+        }
+    }
 }
 
 
