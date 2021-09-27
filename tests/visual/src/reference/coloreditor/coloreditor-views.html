@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en" class="k-no-animations">
+<head>
+    <title>FlatColorPicker Views</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../../../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="../../../assets/styles.css" />
+    <script src="../../../assets/scripts.js"></script>
+    <script src="../../../../../packages/html/dist/index.js"></script>
+
+    <style>
+    </style>
+</head>
+<body class="k-body">
+
+    <div id="test-area" class="k-d-grid k-grid-cols-2">
+
+        <span>ColorGradient View</span>
+        <span>ColorPalette View</span>
+
+        <section>
+            <div class="k-flatcolorpicker k-coloreditor">
+                <!-- Header -->
+                <div class="k-coloreditor-header k-hstack">
+                    <div class="k-coloreditor-header-actions k-hstack">
+                        <div class="k-button-group">
+                            <button is="Button" fillMode="flat" icon="color-canvas" selected></button>
+                            <button is="Button" fillMode="flat" icon="palette"></button>
+                        </div>
+                    </div>
+                    <div class="k-spacer"></div>
+                    <div class="k-coloreditor-header-actions k-hstack">
+                        <button is="Button" fillMode="flat" icon="reset-color"></button>
+                        <div class="k-coloreditor-preview k-vstack">
+                            <span class="k-coloreditor-preview-color k-color-preview" style="background-color: rgba(0,0,0, 0.5)"></span>
+                            <span class="k-coloreditor-current-color k-color-preview" style="background-color: #FF6358;"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Views  -->
+                <div class="k-coloreditor-views k-vstack">
+                    <div class="k-colorgradient">
+                        <div class="k-colorgradient-canvas k-hstack">
+                            <div class="k-hsv-rectangle" style="background: rgb(255, 0, 0);">
+                                <div class="k-hsv-gradient">
+                                    <div class="k-hsv-draghandle k-draghandle" style="top: 50px; left: 73px;"></div>
+                                </div>
+                            </div>
+                            <div class="k-hsv-controls k-hstack">
+                                <div class="k-slider k-slider-vertical k-hue-slider k-colorgradient-slider">
+                                    <div class="k-slider-wrap">
+                                        <div class="k-slider-track">
+                                            <div class="k-slider-selection"></div>
+                                            <a class="k-draghandle" style="bottom: -8px;"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="k-slider k-slider-vertical k-alpha-slider k-colorgradient-slider">
+                                    <div class="k-slider-wrap">
+                                        <div class="k-slider-track" style="background: linear-gradient(to top, transparent, rgb(255, 0, 0));">
+                                            <div class="k-slider-selection"></div>
+                                            <a class="k-draghandle" style="bottom: 172px;"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="k-colorgradient-inputs k-hstack">
+                            <div class="k-vstack">
+                                <button is="Button" fillMode="flat" icon="arrows-kpi" class="k-colorgradient-toggle-mode"></button>
+                            </div>
+                            <div class="k-vstack">
+                                <input is="NumericTextbox" showSpinButtons="false" value="132" />
+                                <div class="k-colorgradient-input-label">R</div>
+                            </div>
+                            <div class="k-vstack">
+                                <input is="NumericTextbox" showSpinButtons="false" value="132" />
+                                <div class="k-colorgradient-input-label">G</div>
+                            </div>
+                            <div class="k-vstack">
+                                <input is="NumericTextbox" showSpinButtons="false" value="132" />
+                                <div class="k-colorgradient-input-label">B</div>
+                            </div>
+                            <div class="k-vstack">
+                                <input is="NumericTextbox" showSpinButtons="false" value="1.00" />
+                                <div class="k-colorgradient-input-label">A</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Footer Actions  -->
+                <div class="k-coloreditor-footer k-actions k-actions-end">
+                    <button is="Button" class="k-coloreditor-cancel">Cancel</button>
+                    <button is="Button" themeColor="primary" class="k-coloreditor-apply">Apply</button>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="k-flatcolorpicker k-coloreditor">
+                <!-- Header -->
+                <div class="k-coloreditor-header k-hstack">
+                    <div class="k-coloreditor-header-actions k-hstack">
+                        <div class="k-button-group">
+                            <button is="Button" fillMode="flat" icon="color-canvas"></button>
+                            <button is="Button" fillMode="flat" icon="palette" selected></button>
+                        </div>
+                    </div>
+                    <div class="k-spacer"></div>
+                    <div class="k-coloreditor-header-actions k-hstack">
+                        <button is="Button" fillMode="flat" icon="reset-color"></button>
+                        <div class="k-coloreditor-preview k-vstack">
+                            <span class="k-coloreditor-preview-color k-color-preview" style="background-color: rgba(0,0,0, 0.5)"></span>
+                            <span class="k-coloreditor-current-color k-color-preview" style="background-color: #FF6358;"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Views  -->
+                <div class="k-coloreditor-views k-vstack">
+                    <div class="k-colorpalette">
+                        <div class="k-colorpalette-table-wrap">
+                            <table class="k-colorpalette-table k-palette">
+                                <tbody>
+                                    <tr>
+                                        <td class="k-colorpalette-tile" style="background-color: rgb(255, 255, 255);"></td>
+                                        <td class="k-colorpalette-tile" style="background-color: rgb(0, 0, 0);"></td>
+                                        <td class="k-colorpalette-tile" style="background-color: rgb(230, 230, 230);"></td>
+                                        <td class="k-colorpalette-tile" style="background-color: rgb(67, 85, 105);"></td>
+                                        <td class="k-colorpalette-tile" style="background-color: rgb(67, 113, 196);"></td>
+                                        <td class="k-colorpalette-tile" style="background-color: rgb(237, 126, 50);"></td>
+                                        <td class="k-colorpalette-tile" style="background-color: rgb(165, 164, 165);"></td>
+                                        <td class="k-colorpalette-tile" style="background-color: rgb(254, 191, 4);"></td>
+                                        <td class="k-colorpalette-tile" style="background-color: rgb(90, 155, 213);"></td>
+                                        <td class="k-colorpalette-tile" style="background-color: rgb(113, 174, 72);"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="k-colorpalette-tile" style="background-color: rgb(242, 242, 243);"></td>
+                                        <td class="k-colorpalette-tile" style="background-color: rgb(127, 127, 127);"></td>
+                                        <td class="k-colorpalette-tile" style="background-color: rgb(209, 206, 206);"></td>
+                                        <td class="k-colorpalette-tile" style="background-color: rgb(213, 221, 227);"></td>
+                                        <td class="k-colorpalette-tile" style="background-color: rgb(218, 225, 244);"></td>
+                                        <td class="k-colorpalette-tile" style="background-color: rgb(252, 229, 212);"></td>
+                                        <td class="k-colorpalette-tile" style="background-color: rgb(222, 237, 237);"></td>
+                                        <td class="k-colorpalette-tile" style="background-color: rgb(255, 242, 204);"></td>
+                                        <td class="k-colorpalette-tile" style="background-color: rgb(222, 234, 246);"></td>
+                                        <td class="k-colorpalette-tile" style="background-color: rgb(225, 239, 217);"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="k-colorpalette-tile" style="background-color: rgb(215, 216, 216);"></td>
+                                        <td class="k-colorpalette-tile" style="background-color: rgb(88, 89, 89);"></td>
+                                        <td class="k-colorpalette-tile" style="background-color: rgb(174, 171, 171);"></td>
+                                        <td class="k-colorpalette-tile" style="background-color: rgb(173, 186, 202);"></td>
+                                        <td class="k-colorpalette-tile" style="background-color: rgb(180, 197, 231);"></td>
+                                        <td class="k-colorpalette-tile" style="background-color: rgb(246, 202, 172);"></td>
+                                        <td class="k-colorpalette-tile" style="background-color: rgb(219, 219, 219);"></td>
+                                        <td class="k-colorpalette-tile" style="background-color: rgb(255, 228, 152);"></td>
+                                        <td class="k-colorpalette-tile" style="background-color: rgb(188, 214, 238);"></td>
+                                        <td class="k-colorpalette-tile" style="background-color: rgb(197, 224, 178);"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="k-colorpalette-tile" style="background-color: rgb(191, 191, 192);"></td>
+                                        <td class="k-colorpalette-tile" style="background-color: rgb(63, 63, 63);"></td>
+                                        <td class="k-colorpalette-tile" style="background-color: rgb(118, 112, 112);"></td>
+                                        <td class="k-colorpalette-tile" style="background-color: rgb(133, 149, 177);"></td>
+                                        <td class="k-colorpalette-tile" style="background-color: rgb(143, 171, 219);"></td>
+                                        <td class="k-colorpalette-tile" style="background-color: rgb(245, 177, 131);"></td>
+                                        <td class="k-colorpalette-tile" style="background-color: rgb(201, 200, 201);"></td>
+                                        <td class="k-colorpalette-tile" style="background-color: rgb(254, 217, 101);"></td>
+                                        <td class="k-colorpalette-tile" style="background-color: rgb(155, 196, 229);"></td>
+                                        <td class="k-colorpalette-tile" style="background-color: rgb(168, 208, 141);"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="k-colorpalette-tile" style="background-color: rgb(165, 165, 166);"></td>
+                                        <td class="k-colorpalette-tile" style="background-color: rgb(38, 38, 37);"></td>
+                                        <td class="k-colorpalette-tile" style="background-color: rgb(57, 57, 57);"></td>
+                                        <td class="k-colorpalette-tile" style="background-color: rgb(51, 64, 80);"></td>
+                                        <td class="k-colorpalette-tile" style="background-color: rgb(46, 84, 150);"></td>
+                                        <td class="k-colorpalette-tile" style="background-color: rgb(196, 90, 17);"></td>
+                                        <td class="k-colorpalette-tile" style="background-color: rgb(123, 123, 122);"></td>
+                                        <td class="k-colorpalette-tile" style="background-color: rgb(191, 144, 0);"></td>
+                                        <td class="k-colorpalette-tile" style="background-color: rgb(47, 117, 181);"></td>
+                                        <td class="k-colorpalette-tile" style="background-color: rgb(84, 130, 53);"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="k-colorpalette-tile" style="background-color: rgb(127, 127, 127);"></td>
+                                        <td class="k-colorpalette-tile" style="background-color: rgb(11, 12, 12);"></td>
+                                        <td class="k-colorpalette-tile" style="background-color: rgb(22, 22, 22);"></td>
+                                        <td class="k-colorpalette-tile" style="background-color: rgb(34, 42, 52);"></td>
+                                        <td class="k-colorpalette-tile" style="background-color: rgb(32, 55, 100);"></td>
+                                        <td class="k-colorpalette-tile" style="background-color: rgb(132, 61, 11);"></td>
+                                        <td class="k-colorpalette-tile" style="background-color: rgb(82, 82, 82);"></td>
+                                        <td class="k-colorpalette-tile" style="background-color: rgb(127, 96, 0);"></td>
+                                        <td class="k-colorpalette-tile" style="background-color: rgb(29, 77, 121);"></td>
+                                        <td class="k-colorpalette-tile" style="background-color: rgb(55, 86, 35);"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                       </div>
+                    </div>
+                </div>
+
+                <!-- Footer Actions  -->
+                <div class="k-coloreditor-footer k-actions k-actions-end">
+                    <button is="Button" class="k-coloreditor-cancel">Cancel</button>
+                    <button is="Button" themeColor="primary" class="k-coloreditor-apply">Apply</button>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>
