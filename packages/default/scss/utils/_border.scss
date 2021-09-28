@@ -33,12 +33,21 @@
         top: ( border-top-left-radius, border-top-right-radius ),
         right: ( border-top-right-radius, border-bottom-right-radius ),
         bottom: ( border-bottom-left-radius, border-bottom-right-radius ),
-        left: ( border-bottom-left-radius, border-top-left-radius )
+        left: ( border-bottom-left-radius, border-top-left-radius ),
+        top-left: border-top-left-radius,
+        top-right: border-top-right-radius,
+        bottom-left: border-bottom-left-radius,
+        bottom-right: border-bottom-right-radius
     ) !default;
 
     $utils-border-radius: (
         default: map-get( $spacing, 1 ),
-        0: 0
+        0: 0,
+        sm: map-get( $spacing, 1 ) / 2,
+        md: map-get( $spacing, 1 ),
+        lg: map-get( $spacing, 2 ),
+        circle: 50%,
+        pill: 9999px
     ) !default;
 
 
