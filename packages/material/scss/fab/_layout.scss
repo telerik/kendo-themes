@@ -1,1 +1,9 @@
 @import "~@progress/kendo-theme-default/scss/fab/_layout.scss";
+
+@include exports("fab/layout/material") {
+
+    .k-fab-text {
+        text-transform: uppercase;
+    }
+
+}

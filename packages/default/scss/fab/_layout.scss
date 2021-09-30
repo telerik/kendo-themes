@@ -149,6 +149,8 @@
     }
 
     .k-fab-item-icon {
+        width: $fab-item-icon-width;
+        height: $fab-item-icon-height;
         padding: $fab-item-icon-padding-y $fab-item-icon-padding-x;
         border-width: $fab-item-icon-border-width;
         border-radius: $fab-item-icon-border-radius;

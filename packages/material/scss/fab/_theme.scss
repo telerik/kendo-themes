@@ -1,12 +1,9 @@
 @include exports( "fab/theme/material" ) {
-    // FAB
-    .k-fab {
-        @include box-shadow($fab-shadow);
-    }
 
     // Normal state
     @each $name, $color in $fab-theme-colors {
         .k-fab-#{$name} {
+            @include box-shadow($fab-shadow);
             border-color: $color;
             color: contrast-wcag( $color );
             background-color: $color;
@@ -18,16 +15,19 @@
         .k-state-hover.k-fab-#{$name},
         .k-state-hovered.k-fab-#{$name},
         .k-fab-#{$name}:hover {
-            border-color: true-mix( #000000, $color, 30%);
-            background-color: true-mix( #000000, $color, 30%);
+            border-color: true-mix( #ffffff, $color, 8%);
+            background-color: true-mix( #ffffff, $color, 8%);
         }
     }
 
     // Focus state
-    .k-fab.k-state-focus,
-    .k-fab.k-state-focused,
-    .k-fab:focus {
-        @include box-shadow($fab-focus-shadow);
+    @each $name, $color in $fab-theme-colors {
+        .k-state-focus.k-fab-#{$name},
+        .k-state-focused.k-fab-#{$name},
+        .k-fab-#{$name}:focus {
+            border-color: true-mix( #ffffff, $color, 12%);
+            background-color: true-mix( #ffffff, $color, 12%);
+        }
     }
 
     // Active state
@@ -35,35 +35,21 @@
         .k-state-active.k-fab-#{$name},
         .k-state-selected.k-fab-#{$name},
         .k-fab-#{$name}:active {
-            border-color: true-mix( #ffffff, $color, 12%);
-            background-color: true-mix( #ffffff, $color, 12%);
+            border-color: true-mix( #ffffff, $color, 16%);
+            background-color: true-mix( #ffffff, $color, 16%);
+            box-shadow: $fab-active-shadow;
         }
     }
 
     // Disabled state
-    .k-fab.k-state-disabled,
-    .k-fab:disabled {
-        @include box-shadow($fab-disabled-shadow);
-        opacity: 1;
-    }
-
     @each $name, $color in $fab-theme-colors {
         .k-state-disabled.k-fab-#{$name},
         .k-fab-#{$name}:disabled {
-            background-color: tint( $color, 5 );
-        }
-    }
-
-    // Disabled + Focus state
-    .k-fab-item:focus,
-    .k-fab-item.k-state-focus,
-    .k-fab-item.k-state-focused {
-        &:disabled,
-        &.k-state-disabled {
-            .k-fab-item-text,
-            .k-fab-item-icon {
-                @include box-shadow($fab-item-disabled-focus-shadow);
-            }
+            @include box-shadow($fab-disabled-shadow);
+            border-color: try-tint( try-shade( $body-bg, 12% ), 5);
+            background-color: try-tint( try-shade( $body-bg, 12% ), 5);
+            color: tint( $disabled-text, 4);
+            opacity: 1;
         }
     }
 
@@ -89,23 +75,24 @@
     .k-fab-item.k-state-hover .k-fab-item-icon,
     .k-fab-item.k-state-hovered .k-fab-item-icon,
     .k-fab-item:hover .k-fab-item-icon {
-        border-color: true-mix( #000000, $fab-item-icon-border, 30%);
-        background-color: true-mix( #000000, $fab-item-icon-bg, 30%);
+        border-color: true-mix( #000000, $fab-item-icon-border, 8%);
+        background-color: true-mix( #000000, $fab-item-icon-bg, 8%);
+        color: true-mix( #000000, $fab-item-icon-text, 8%);
     }
 
     // Focus state
-    .k-fab-item:focus .k-fab-item-text,
     .k-fab-item:focus .k-fab-item-icon,
-    .k-fab-item.k-state-focus .k-fab-item-text,
     .k-fab-item.k-state-focus .k-fab-item-icon,
-    .k-fab-item.k-state-focused .k-fab-item-text,
     .k-fab-item.k-state-focused .k-fab-item-icon {
-        @include box-shadow($fab-item-focus-shadow);
+        border-color: true-mix( #000000, $fab-item-icon-border, 12%);
+        background-color: true-mix( #000000, $fab-item-icon-bg, 12%);
+        color: true-mix( #000000, $fab-item-icon-text, 12%);
     }
 
     // Active state
     .k-fab-item.k-state-active .k-fab-item-icon,
     .k-fab-item:active .k-fab-item-icon {
+        @include box-shadow($fab-item-active-shadow);
         border-color: true-mix( #ffffff, $fab-item-icon-border, 12%);
         background-color: true-mix( #ffffff, $fab-item-icon-bg, 12%);
     }
@@ -117,8 +104,9 @@
 
         .k-fab-item-text,
         .k-fab-item-icon {
-            color: tint( $fab-item-text, 8 );
             @include box-shadow($fab-item-disabled-shadow);
+            background-color: try-tint( $fab-item-bg, 8 );
+            color: try-tint( $fab-item-text, 8 );
         }
     }
 
