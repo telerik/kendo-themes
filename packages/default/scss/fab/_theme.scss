@@ -1,12 +1,11 @@
 @include exports( "fab/theme" ) {
-    // FAB
-    .k-fab {
-        @include box-shadow($fab-shadow);
-    }
 
     // Normal state
     @each $name, $color in $fab-theme-colors {
         .k-fab-#{$name} {
+            @include box-shadow($fab-shadow);
+            outline: $fab-border-width solid $color;
+            outline-offset: -$fab-border-width;
             border-color: $color;
             color: contrast-wcag( $color );
             background-color: $color;
@@ -24,10 +23,14 @@
     }
 
     // Focus state
-    .k-fab.k-state-focus,
-    .k-fab.k-state-focused,
-    .k-fab:focus {
-        @include box-shadow($fab-focus-shadow);
+    @each $name, $color in $fab-theme-colors {
+        .k-fab-#{$name}.k-state-focus,
+        .k-fab-#{$name}.k-state-focused,
+        .k-fab-#{$name}:focus {
+            outline-style: solid;
+            outline-width: 2px;
+            outline-color: rgba( $color, .3 );
+        }
     }
 
     // Active state
@@ -35,23 +38,20 @@
         .k-state-active.k-fab-#{$name},
         .k-state-selected.k-fab-#{$name},
         .k-fab-#{$name}:active {
-            border-color: try-shade( $color, 1);
-            background-color: try-shade( $color, 1);
-            box-shadow: $fab-shadow, 0px 3px 4px rgba($color, .4);
+            @include box-shadow($fab-active-shadow);
+            border-color: try-shade( $color, 1.5);
+            background-color: try-shade( $color, 1.5);
         }
     }
 
     // Disabled state
-    .k-fab.k-state-disabled,
-    .k-fab:disabled {
-        @include box-shadow($fab-disabled-shadow);
-        opacity: 1;
-    }
-
     @each $name, $color in $fab-theme-colors {
         .k-state-disabled.k-fab-#{$name},
         .k-fab-#{$name}:disabled {
-            background-color: tint( $color, 5 );
+            @include box-shadow($fab-disabled-shadow);
+            background-color: try-tint( $color, 5 );
+            color: try-tint( contrast-wcag( $color ), 5 );
+            opacity: 1;
         }
     }
 
@@ -63,6 +63,7 @@
             $fab-item-border
         );
         @include box-shadow($fab-item-shadow);
+
     }
     .k-fab-item-icon {
         @include fill(
@@ -71,6 +72,8 @@
             $fab-item-icon-border
         );
         @include box-shadow($fab-item-shadow);
+        outline: $fab-border-width solid rgba(0, 0, 0, .08);
+        outline-offset: -$fab-border-width;
     }
 
     // Hover state
@@ -88,15 +91,17 @@
     .k-fab-item.k-state-focus .k-fab-item-icon,
     .k-fab-item.k-state-focused .k-fab-item-text,
     .k-fab-item.k-state-focused .k-fab-item-icon {
-        @include box-shadow($fab-item-focus-shadow);
+        outline-style: solid;
+        outline-width: 2px;
+        outline-color: rgba(0, 0, 0, .08);
     }
 
     // Active state
     .k-fab-item.k-state-active .k-fab-item-icon,
     .k-fab-item:active .k-fab-item-icon {
+        @include box-shadow($fab-item-active-shadow);
         border-color: try-shade( $fab-item-icon-border, 1);
         background-color: try-shade( $fab-item-icon-bg, 1);
-        box-shadow: $fab-shadow, 0px 3px 4px rgba($fab-item-icon-bg, .4);
     }
 
     // Disabled state
@@ -106,21 +111,9 @@
 
         .k-fab-item-text,
         .k-fab-item-icon {
-            color: tint( $fab-item-text, 6 );
             @include box-shadow($fab-item-disabled-shadow);
-        }
-    }
-
-    // Disabled + Focus state
-    .k-fab-item:focus,
-    .k-fab-item.k-state-focus,
-    .k-fab-item.k-state-focused {
-        &:disabled,
-        &.k-state-disabled {
-            .k-fab-item-text,
-            .k-fab-item-icon {
-                @include box-shadow($fab-item-disabled-focus-shadow);
-            }
+            background-color: try-tint( $fab-item-bg, 5 );
+            color: try-tint( $fab-item-text, 5 );
         }
     }
 

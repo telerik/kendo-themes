@@ -2,7 +2,7 @@
 $fab-padding-x: $padding-x !default;
 $fab-padding-y: $fab-padding-x !default;
 $fab-border-width: 0px !default;
-$fab-border-radius: $border-radius * 2 !default;
+$fab-border-radius: $border-radius !default;
 $fab-font-family: $font-family !default;
 $fab-font-size: $font-size !default;
 $fab-line-height: (20 / 14) !default;
@@ -18,7 +18,7 @@ $fab-padding-y-lg: ( $fab-padding-y * 1.5 ) !default;
 
 $fab-icon-width: 20px !default;
 $fab-icon-height: $fab-icon-width !default;
-$fab-icon-spacing: map-get( $spacing, 1 ) !default;
+$fab-icon-spacing: map-get( $spacing, 1 ) * 1.5 !default;
 
 $fab-items-padding-x: 0px !default;
 $fab-items-padding-y: map-get( $spacing, 4 ) !default;
@@ -28,12 +28,14 @@ $fab-item-text-padding-y: $fab-item-text-padding-x !default;
 $fab-item-text-border-width: 1px !default;
 $fab-item-text-border-radius: 2px !default;
 $fab-item-text-font-size: $font-size-xs !default;
-$fab-item-text-line-height: 1 !default;
+$fab-item-text-line-height: 1.2 !default;
 
 $fab-item-icon-padding-x: map-get( $spacing, 2 ) !default;
 $fab-item-icon-padding-y: $fab-item-icon-padding-x !default;
 $fab-item-icon-border-width: 0 !default;
 $fab-item-icon-border-radius: 50% !default;
+$fab-item-icon-width: 20px !default;
+$fab-item-icon-height: $fab-item-icon-width !default;
 
 $fab-sizes: (
     sm: map-get( $spacing, 4 ),
@@ -43,21 +45,21 @@ $fab-sizes: (
 
 $fab-theme-colors: $theme-colors !default;
 
-$fab-shadow: 0 4px 5px rgba(0, 0, 0, .14), 0 1px 10px rgba(0, 0, 0, .12), 0 2px 4px rgba(0, 0, 0, .2) !default;
-$fab-focus-shadow: 0 1px 10px rgba(#000000, .22), 0 4px 5px rgba(#000000, .24), 0 2px 4px rgba(#000000, .2) !default;
-$fab-disabled-shadow: 0 4px 5px rgba(0, 0, 0, .06), 0 1px 10px rgba(0, 0, 0, .06), 0 2px 4px rgba(0, 0, 0, .08) !default;
+$fab-shadow: 0px 3px 5px -1px rgba(0, 0, 0, .2), 0px 6px 10px rgba(0, 0, 0, .14), 0px 1px 18px rgba(0, 0, 0, .12) !default;
+$fab-disabled-shadow: 0px 3px 5px -1px try-tint(rgba(0, 0, 0, .2), .5), 0px 6px 10px try-tint(rgba(0, 0, 0, .14), .5), 0px 1px 18px try-tint(rgba(0, 0, 0, .12), .5) !default;
+$fab-active-shadow: 0px 5px 5px -3px rgba(0, 0, 0, .2), 0px 8px 10px 1px rgba(0, 0, 0, .14), 0px 3px 14px 2px rgba(0, 0, 0, .12) !default;
 
 $fab-item-text: $component-text !default;
 $fab-item-bg: $component-bg !default;
 $fab-item-border: $component-border !default;
 
-$fab-item-icon-text: contrast-wcag( $light ) !default;
-$fab-item-icon-bg: $light !default;
-$fab-item-icon-border: $light !default;
+$fab-item-icon-text: $button-text !default;
+$fab-item-icon-bg: $button-bg !default;
+$fab-item-icon-border: $button-border !default;
 
 $fab-item-shadow: $fab-shadow !default;
-$fab-item-focus-shadow: $fab-focus-shadow !default;
 $fab-item-disabled-shadow: $fab-disabled-shadow !default;
+$fab-item-active-shadow: $fab-active-shadow !default;
 $fab-item-disabled-focus-shadow: 0 1px 10px rgba(#000000, .12), 0 4px 5px rgba(#000000, .12), 0 2px 4px rgba(#000000, .08) !default;
 
 $fab-border-width-sm: $fab-border-width !default;
