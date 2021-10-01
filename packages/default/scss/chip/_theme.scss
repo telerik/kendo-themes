@@ -1,90 +1,191 @@
 @include exports("chip/theme") {
 
-    .k-selection-single {
-        .k-chip-selected {
-            &.k-chip-filled {
-                @include fill(
-                    $chip-filled-single-selected-text,
-                    $chip-filled-single-selected-bg,
-                    $chip-filled-single-selected-border
-                );
-            }
-
-            &.k-chip-outline {
-                @include fill(
-                    $chip-outline-single-selected-text,
-                    $chip-outline-single-selected-bg,
-                    $chip-outline-single-selected-border
-                );
-            }
-        }
-    }
-
-    .k-selection-multiple {
-        > .k-chip-has-icon {
-            &.k-chip-selected {
-                .k-selected-icon-wrapper {
-                    color: $chip-multiple-selected-icon-text;
-                    background-color: $chip-multiple-selected-icon-bg;
-                }
-            }
-        }
-    }
-
-    .k-chip-filled {
+    .k-selection-multiple .k-chip-has-icon.k-selected .k-selected-icon-wrapper {
         @include fill(
-            $chip-filled-text,
-            $chip-filled-bg,
-            $chip-filled-border
+            $color: $chip-multiple-selected-icon-text,
+            $bg: $chip-multiple-selected-icon-bg
+        );
+    }
+
+    // Solid
+    .k-chip-solid {
+        @include fill(
+            $chip-solid-text,
+            $chip-solid-bg,
+            $chip-solid-border
         );
 
         &:hover,
-        &.k-chip-hover {
-            background-color: $chip-filled-hovered-bg;
-            border-color: $chip-filled-hovered-border;
+        &.k-state-hover,
+        &.k-hover {
+            @include fill(
+                $bg: $chip-solid-hover-bg,
+                $border: $chip-solid-hover-border
+            );
         }
 
         &:focus,
-        &.k-chip-focused {
-            background-color: $chip-filled-focused-bg;
-            box-shadow: $chip-filled-focused-shadow;
+        &.k-state-focus,
+        &.k-focus {
+            @include box-shadow( $chip-solid-focus-shadow );
+            @include fill( $bg: $chip-solid-focus-bg );
         }
 
-        &.k-chip-selected {
-            background-color: $chip-filled-selected-bg;
-            border-color: $chip-filled-selected-border;
+        &.k-state-selected,
+        &.k-selected {
+            @include fill(
+                $bg: $chip-solid-selected-bg,
+                $border: $chip-solid-selected-border
+            );
         }
 
         &.k-chip-success {
             @include fill(
-                $chip-filled-success-text,
-                $chip-filled-success-bg,
-                $chip-filled-success-border
+                $chip-solid-success-text,
+                $chip-solid-success-bg,
+                $chip-solid-success-border
             );
+
+            &:hover,
+            &.k-state-hover,
+            &.k-hover {
+                @include fill(
+                    $chip-solid-success-hover-text,
+                    $chip-solid-success-hover-bg,
+                    $chip-solid-success-hover-border
+                );
+            }
+
+            &:focus,
+            &.k-state-focus,
+            &.k-focus {
+                @include fill(
+                    $chip-solid-success-focus-text,
+                    $chip-solid-success-focus-bg,
+                    $chip-solid-success-focus-border
+                );
+            }
+
+            &.k-state-selected,
+            &.k-selected {
+                @include fill(
+                    $chip-solid-success-selected-text,
+                    $chip-solid-success-selected-bg,
+                    $chip-solid-success-selected-border
+                );
+            }
         }
+
 
         &.k-chip-warning {
             @include fill(
-                $chip-filled-warning-text,
-                $chip-filled-warning-bg,
-                $chip-filled-warning-border
+                $chip-solid-warning-text,
+                $chip-solid-warning-bg,
+                $chip-solid-warning-border
             );
+
+            &:hover,
+            &.k-state-hover,
+            &.k-hover {
+                @include fill(
+                    $chip-solid-warning-hover-text,
+                    $chip-solid-warning-hover-bg,
+                    $chip-solid-warning-hover-border
+                );
+            }
+
+            &:focus,
+            &.k-state-focus,
+            &.k-focus {
+                @include fill(
+                    $chip-solid-warning-focus-text,
+                    $chip-solid-warning-focus-bg,
+                    $chip-solid-warning-focus-border
+                );
+            }
+
+            &.k-state-selected,
+            &.k-selected {
+                @include fill(
+                    $chip-solid-warning-selected-text,
+                    $chip-solid-warning-selected-bg,
+                    $chip-solid-warning-selected-border
+                );
+            }
         }
 
         &.k-chip-error {
             @include fill(
-                $chip-filled-error-text,
-                $chip-filled-error-bg,
-                $chip-filled-error-border
+                $chip-solid-error-text,
+                $chip-solid-error-bg,
+                $chip-solid-error-border
             );
+
+            &:hover,
+            &.k-state-hover,
+            &.k-hover {
+                @include fill(
+                    $chip-solid-error-hover-text,
+                    $chip-solid-error-hover-bg,
+                    $chip-solid-error-hover-border
+                );
+            }
+
+            &:focus,
+            &.k-state-focus,
+            &.k-focus {
+                @include fill(
+                    $chip-solid-error-focus-text,
+                    $chip-solid-error-focus-bg,
+                    $chip-solid-error-focus-border
+                );
+            }
+
+            &.k-state-selected,
+            &.k-selected {
+                @include fill(
+                    $chip-solid-error-selected-text,
+                    $chip-solid-error-selected-bg,
+                    $chip-solid-error-selected-border
+                );
+            }
         }
 
         &.k-chip-info {
             @include fill(
-                $chip-filled-info-text,
-                $chip-filled-info-bg,
-                $chip-filled-info-border
+                $chip-solid-info-text,
+                $chip-solid-info-bg,
+                $chip-solid-info-border
             );
+
+            &:hover,
+            &.k-state-hover,
+            &.k-hover {
+                @include fill(
+                    $chip-solid-info-hover-text,
+                    $chip-solid-info-hover-bg,
+                    $chip-solid-info-hover-border
+                );
+            }
+
+            &:focus,
+            &.k-state-focus,
+            &.k-focus {
+                @include fill(
+                    $chip-solid-info-focus-text,
+                    $chip-solid-info-focus-bg,
+                    $chip-solid-info-focus-border
+                );
+            }
+
+            &.k-state-selected,
+            &.k-selected {
+                @include fill(
+                    $chip-solid-info-selected-text,
+                    $chip-solid-info-selected-bg,
+                    $chip-solid-info-selected-border
+                );
+            }
         }
     }
 
@@ -96,27 +197,32 @@
         );
 
         &:hover,
-        &.k-chip-hover {
+        &.k-state-hover,
+        &.k-hover {
             @include fill(
-                $chip-outline-hovered-text,
-                $chip-outline-hovered-bg,
-                $chip-outline-hovered-border
+                $chip-outline-hover-text,
+                $chip-outline-hover-bg,
+                $chip-outline-hover-border
             );
         }
 
         &:focus,
-        &.k-chip-focused {
+        &.k-state-focus,
+        &.k-focus {
+            @include box-shadow( $chip-outline-focus-shadow );
             @include fill(
-                $chip-outline-focused-text,
-                $chip-outline-focused-bg,
-                $chip-outline-focused-border
+                $chip-outline-focus-text,
+                $chip-outline-focus-bg,
+                $chip-outline-focus-border
             );
-            box-shadow: $chip-outline-focused-shadow;
         }
 
-        &.k-chip-selected {
-            color: $chip-outline-selected-text;
-            background-color: $chip-outline-selected-bg;
+        &.k-state-selected,
+        &.k-selected {
+            @include fill(
+                $color: $chip-outline-selected-text,
+                $bg: $chip-outline-selected-bg
+            );
         }
 
         &.k-chip-success {
@@ -125,6 +231,35 @@
                 $chip-outline-success-bg,
                 $chip-outline-success-border
             );
+
+            &:hover,
+            &.k-state-hover,
+            &.k-hover {
+                @include fill(
+                    $chip-outline-success-hover-text,
+                    $chip-outline-success-hover-bg,
+                    $chip-outline-success-hover-border
+                );
+            }
+
+            &:focus,
+            &.k-state-focus,
+            &.k-focus {
+                @include fill(
+                    $chip-outline-success-focus-text,
+                    $chip-outline-success-focus-bg,
+                    $chip-outline-success-focus-border
+                );
+            }
+
+            &.k-state-selected,
+            &.k-selected {
+                @include fill(
+                    $chip-outline-success-selected-text,
+                    $chip-outline-success-selected-bg,
+                    $chip-outline-success-selected-border
+                );
+            }
         }
 
         &.k-chip-warning {
@@ -133,7 +268,37 @@
                 $chip-outline-warning-bg,
                 $chip-outline-warning-border
             );
+
+            &:hover,
+            &.k-state-hover,
+            &.k-hover {
+                @include fill(
+                    $chip-outline-warning-hover-text,
+                    $chip-outline-warning-hover-bg,
+                    $chip-outline-warning-hover-border
+                );
+            }
+
+            &:focus,
+            &.k-state-focus,
+            &.k-focus {
+                @include fill(
+                    $chip-outline-warning-focus-text,
+                    $chip-outline-warning-focus-bg,
+                    $chip-outline-warning-focus-border
+                );
+            }
+
+            &.k-state-selected,
+            &.k-selected {
+                @include fill(
+                    $chip-outline-warning-selected-text,
+                    $chip-outline-warning-selected-bg,
+                    $chip-outline-warning-selected-border
+                );
+            }
         }
+
 
         &.k-chip-error {
             @include fill(
@@ -141,7 +306,37 @@
                 $chip-outline-error-bg,
                 $chip-outline-error-border
             );
+
+            &:hover,
+            &.k-state-hover,
+            &.k-hover {
+                @include fill(
+                    $chip-outline-error-hover-text,
+                    $chip-outline-error-hover-bg,
+                    $chip-outline-error-hover-border
+                );
+            }
+
+            &:focus,
+            &.k-state-focus,
+            &.k-focus {
+                @include fill(
+                    $chip-outline-error-focus-text,
+                    $chip-outline-error-focus-bg,
+                    $chip-outline-error-focus-border
+                );
+            }
+
+            &.k-state-selected,
+            &.k-selected {
+                @include fill(
+                    $chip-outline-error-selected-text,
+                    $chip-outline-error-selected-bg,
+                    $chip-outline-error-selected-border
+                );
+            }
         }
+
 
         &.k-chip-info {
             @include fill(
@@ -149,44 +344,66 @@
                 $chip-outline-info-bg,
                 $chip-outline-info-border
             );
+
+            &:hover,
+            &.k-state-hover,
+            &.k-hover {
+                @include fill(
+                    $chip-outline-info-hover-text,
+                    $chip-outline-info-hover-bg,
+                    $chip-outline-info-hover-border
+                );
+            }
+
+            &:focus,
+            &.k-state-focus,
+            &.k-focus {
+                @include fill(
+                    $chip-outline-info-focus-text,
+                    $chip-outline-info-focus-bg,
+                    $chip-outline-info-focus-border
+                );
+            }
+
+            &.k-state-selected,
+            &.k-selected {
+                @include fill(
+                    $chip-outline-info-selected-text,
+                    $chip-outline-info-selected-bg,
+                    $chip-outline-info-selected-border
+                );
+            }
         }
     }
 
 
     // Chip colors
-    .k-chip-primary {
-
-        &:focus,
-        &.k-chip-focus {
-            box-shadow: $chip-primary-focus-shadow;
-        }
-    }
     .k-chip-info {
-
         &:focus,
-        &.k-chip-focus {
-            box-shadow: $chip-info-focus-shadow;
+        &.k-state-focus,
+        &.k-focus {
+            @include box-shadow( $chip-info-focus-shadow );
         }
     }
     .k-chip-success {
-
         &:focus,
-        &.k-chip-focus {
-            box-shadow: $chip-success-focus-shadow;
+        &.k-state-focus,
+        &.k-focus {
+            @include box-shadow( $chip-success-focus-shadow );
         }
     }
     .k-chip-warning {
-
         &:focus,
-        &.k-chip-focus {
-            box-shadow: $chip-warning-focus-shadow;
+        &.k-state-focus,
+        &.k-focus {
+            @include box-shadow( $chip-warning-focus-shadow );
         }
     }
     .k-chip-error {
-
         &:focus,
-        &.k-chip-focus {
-            box-shadow: $chip-error-focus-shadow;
+        &.k-state-focus,
+        &.k-focus {
+            @include box-shadow( $chip-error-focus-shadow );
         }
     }
 
