@@ -1,0 +1,46 @@
+{
+  "name": "@progress/kendo-themes-html",
+  "description": "A collection of HTML helpers used for developing Kendo UI themes",
+  "version": "0.0.0-semantically-released",
+  "author": "Progress",
+  "license": "Apache-2.0",
+  "keywords": [
+    "Kendo UI",
+    "Theme",
+    "HTML",
+    "Helpers"
+  ],
+  "main": "index.js",
+  "files": [
+    "dist/",
+    "src/",
+    "lib/",
+    "utils/"
+  ],
+  "homepage": "https://github.com/telerik/kendo-themes/tree/master/packages/html",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/telerik/kendo-themes.git",
+    "directory": "packages/html"
+  },
+  "bugs": {
+    "url": "https://github.com/telerik/kendo-themes/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -cw"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.15.5",
+    "@babel/preset-env": "^7.15.6",
+    "@babel/preset-react": "^7.14.5",
+    "@rollup/plugin-babel": "^5.3.0",
+    "@rollup/plugin-commonjs": "^20.0.0",
+    "@rollup/plugin-node-resolve": "^13.0.5",
+    "rollup": "^2.57.0"
+  }
+}
