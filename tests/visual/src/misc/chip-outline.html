@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="en" class="k-typography k-no-animations">
+<head>
+    <title>Chip Outline</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+    <script src="../../assets/scripts.js"></script>
+    <style>
+        #test-area {
+            grid-template-columns: 1fr;
+        }
+
+        #test-area > section {
+            gap: 10px;
+        }
+
+        .k-chip-avatar {
+            background-color: grey;
+        }
+    </style>
+</head>
+<body class="k-body">
+
+    <div id="test-area" class="k-d-grid">
+        <h2>Chip Outline</h2>
+
+        <section class="k-d-grid k-grid-cols-4">
+            <span></span>
+            <span>Text</span>
+            <span>Icon Text</span>
+            <span>Avatar Text</span>
+        </section>
+
+        <section class="k-d-grid k-grid-cols-4">
+            <span>Normal</span>
+            <span>
+                <div class="k-chip k-chip-outline">
+                    <span class="k-chip-content">
+                        <span class="k-chip-label">Chip Text</span>
+                    </span>
+                </div>
+            </span>
+            <span>
+                <div class="k-chip k-chip-outline k-chip-has-icon">
+                    <span class="k-chip-icon k-icon k-i-marker-pin-target"></span>
+                    <span class="k-chip-content">
+                        <span class="k-chip-label">Chip Icon Text</span>
+                    </span>
+                    <span class="k-remove-icon k-icon k-i-close-circle"></span>
+                </div>
+            </span>
+            <span>
+                <div class="k-chip k-chip-outline k-chip-has-icon">
+                    <span class="k-chip-icon k-chip-avatar peter"></span>
+                    <span class="k-chip-content">
+                        <span class="k-chip-label">Chip Avatar Text</span>
+                    </span>
+                </div>
+            </span>
+
+            <span>Focus</span>
+            <span>
+                <div class="k-chip k-chip-outline k-focus">
+                    <span class="k-chip-content">
+                        <span class="k-chip-label">Chip Text</span>
+                    </span>
+                </div>
+            </span>
+            <span>
+                <div class="k-chip k-chip-outline k-chip-has-icon k-focus">
+                    <span class="k-chip-icon k-icon k-i-marker-pin-target"></span>
+                    <span class="k-chip-content">
+                        <span class="k-chip-label">Chip Icon Text</span>
+                    </span>
+                    <span class="k-remove-icon k-icon k-i-close-circle"></span>
+                </div>
+            </span>
+            <span>
+                <div class="k-chip k-chip-outline k-chip-has-icon k-focus">
+                    <span class="k-chip-icon k-chip-avatar peter"></span>
+                    <span class="k-chip-content">
+                        <span class="k-chip-label">Chip Avatar Text</span>
+                    </span>
+                </div>
+            </span>
+
+            <span>Hover</span>
+            <span>
+                <div class="k-chip k-chip-outline k-hover">
+                    <span class="k-chip-content">
+                        <span class="k-chip-label">Chip Text</span>
+                    </span>
+                </div>
+            </span>
+            <span>
+                <div class="k-chip k-chip-outline k-chip-has-icon k-hover">
+                    <span class="k-chip-icon k-icon k-i-marker-pin-target"></span>
+                    <span class="k-chip-content">
+                        <span class="k-chip-label">Chip Icon Text</span>
+                    </span>
+                    <span class="k-remove-icon k-icon k-i-close-circle"></span>
+                </div>
+            </span>
+            <span>
+                <div class="k-chip k-chip-outline k-chip-has-icon k-hover">
+                    <span class="k-chip-icon k-chip-avatar peter"></span>
+                    <span class="k-chip-content">
+                        <span class="k-chip-label">Chip Avatar Text</span>
+                    </span>
+                </div>
+            </span>
+
+            <span>Selected</span>
+            <span>
+                <div class="k-chip k-chip-outline k-selected">
+                    <span class="k-chip-content">
+                        <span class="k-chip-label">Chip Text</span>
+                    </span>
+                </div>
+            </span>
+            <span>
+                <div class="k-chip k-chip-outline k-chip-has-icon k-selected">
+                    <span class="k-chip-icon k-icon k-i-marker-pin-target"></span>
+                    <span class="k-chip-content">
+                        <span class="k-chip-label">Chip Icon Text</span>
+                    </span>
+                    <span class="k-remove-icon k-icon k-i-close-circle"></span>
+                </div>
+            </span>
+            <span>
+                <div class="k-chip k-chip-outline k-chip-has-icon k-selected">
+                    <span class="k-chip-icon k-chip-avatar peter"></span>
+                    <span class="k-chip-content">
+                        <span class="k-chip-label">Chip Avatar Text</span>
+                    </span>
+                </div>
+            </span>
+
+            <span>Disabled</span>
+            <span>
+                <div class="k-chip k-chip-outline k-disabled">
+                    <span class="k-chip-content">
+                        <span class="k-chip-label">Chip Text</span>
+                    </span>
+                </div>
+            </span>
+            <span>
+                <div class="k-chip k-chip-outline k-chip-has-icon k-disabled">
+                    <span class="k-chip-icon k-icon k-i-marker-pin-target"></span>
+                    <span class="k-chip-content">
+                        <span class="k-chip-label">Chip Icon Text</span>
+                    </span>
+                    <span class="k-remove-icon k-icon k-i-close-circle"></span>
+                </div>
+            </span>
+            <span>
+                <div class="k-chip k-chip-outline k-chip-has-icon k-disabled">
+                    <span class="k-chip-icon k-chip-avatar peter"></span>
+                    <span class="k-chip-content">
+                        <span class="k-chip-label">Chip Avatar Text</span>
+                    </span>
+                </div>
+            </span>
+        </section>
+
+
+        <h2>Chip Outline Types</h2>
+
+        <section class="k-d-grid k-grid-cols-6">
+            <span></span>
+            <span>None</span>
+            <span>Error</span>
+            <span>Warning</span>
+            <span>Info</span>
+            <span>Success</span>
+        </section>
+
+        <section class="k-d-grid k-grid-cols-6">
+            <span>Normal</span>
+            <span>
+                <div class="k-chip k-chip-outline">
+                    <span class="k-chip-content">
+                        <span class="k-chip-label">None</span>
+                    </span>
+                    <span class="k-remove-icon k-icon k-i-close-circle"></span>
+                </div>
+            </span>
+            <span>
+                <div class="k-chip k-chip-outline k-chip-error">
+                    <span class="k-chip-content">
+                        <span class="k-chip-label">Error</span>
+                    </span>
+                    <span class="k-remove-icon k-icon k-i-close-circle"></span>
+                </div>
+            </span>
+            <span>
+                <div class="k-chip k-chip-outline k-chip-warning">
+                    <span class="k-chip-content">
+                        <span class="k-chip-label">Warning</span>
+                    </span>
+                    <span class="k-remove-icon k-icon k-i-close-circle"></span>
+                </div>
+            </span>
+            <span>
+                <div class="k-chip k-chip-outline k-chip-info">
+                    <span class="k-chip-content">
+                        <span class="k-chip-label">Info</span>
+                    </span>
+                    <span class="k-remove-icon k-icon k-i-close-circle"></span>
+                </div>
+            </span>
+            <span>
+                <div class="k-chip k-chip-outline k-chip-success">
+                    <span class="k-chip-content">
+                        <span class="k-chip-label">Success</span>
+                    </span>
+                    <span class="k-remove-icon k-icon k-i-close-circle"></span>
+                </div>
+            </span>
+
+            <span>Focus</span>
+            <span>
+                <div class="k-chip k-chip-outline k-focus">
+                    <span class="k-chip-content">
+                        <span class="k-chip-label">None</span>
+                    </span>
+                    <span class="k-remove-icon k-icon k-i-close-circle"></span>
+                </div>
+            </span>
+            <span>
+                <div class="k-chip k-chip-outline k-chip-error k-focus">
+                    <span class="k-chip-content">
+                        <span class="k-chip-label">Error</span>
+                    </span>
+                    <span class="k-remove-icon k-icon k-i-close-circle"></span>
+                </div>
+            </span>
+            <span>
+                <div class="k-chip k-chip-outline k-chip-warning k-focus">
+                    <span class="k-chip-content">
+                        <span class="k-chip-label">Warning</span>
+                    </span>
+                    <span class="k-remove-icon k-icon k-i-close-circle"></span>
+                </div>
+            </span>
+            <span>
+                <div class="k-chip k-chip-outline k-chip-info k-focus">
+                    <span class="k-chip-content">
+                        <span class="k-chip-label">Info</span>
+                    </span>
+                    <span class="k-remove-icon k-icon k-i-close-circle"></span>
+                </div>
+            </span>
+            <span>
+                <div class="k-chip k-chip-outline k-chip-success k-focus">
+                    <span class="k-chip-content">
+                        <span class="k-chip-label">Success</span>
+                    </span>
+                    <span class="k-remove-icon k-icon k-i-close-circle"></span>
+                </div>
+            </span>
+
+            <span>Hover</span>
+            <span>
+                <div class="k-chip k-chip-outline k-hover">
+                    <span class="k-chip-content">
+                        <span class="k-chip-label">None</span>
+                    </span>
+                    <span class="k-remove-icon k-icon k-i-close-circle"></span>
+                </div>
+            </span>
+            <span>
+                <div class="k-chip k-chip-outline k-chip-error k-hover">
+                    <span class="k-chip-content">
+                        <span class="k-chip-label">Error</span>
+                    </span>
+                    <span class="k-remove-icon k-icon k-i-close-circle"></span>
+                </div>
+            </span>
+            <span>
+                <div class="k-chip k-chip-outline k-chip-warning k-hover">
+                    <span class="k-chip-content">
+                        <span class="k-chip-label">Warning</span>
+                    </span>
+                    <span class="k-remove-icon k-icon k-i-close-circle"></span>
+                </div>
+            </span>
+            <span>
+                <div class="k-chip k-chip-outline k-chip-info k-hover">
+                    <span class="k-chip-content">
+                        <span class="k-chip-label">Info</span>
+                    </span>
+                    <span class="k-remove-icon k-icon k-i-close-circle"></span>
+                </div>
+            </span>
+            <span>
+                <div class="k-chip k-chip-outline k-chip-success k-hover">
+                    <span class="k-chip-content">
+                        <span class="k-chip-label">Success</span>
+                    </span>
+                    <span class="k-remove-icon k-icon k-i-close-circle"></span>
+                </div>
+            </span>
+
+            <span>Selected</span>
+            <span>
+                <div class="k-chip k-chip-outline k-selected">
+                    <span class="k-chip-content">
+                        <span class="k-chip-label">None</span>
+                    </span>
+                    <span class="k-remove-icon k-icon k-i-close-circle"></span>
+                </div>
+            </span>
+            <span>
+                <div class="k-chip k-chip-outline k-chip-error k-selected">
+                    <span class="k-chip-content">
+                        <span class="k-chip-label">Error</span>
+                    </span>
+                    <span class="k-remove-icon k-icon k-i-close-circle"></span>
+                </div>
+            </span>
+            <span>
+                <div class="k-chip k-chip-outline k-chip-warning k-selected">
+                    <span class="k-chip-content">
+                        <span class="k-chip-label">Warning</span>
+                    </span>
+                    <span class="k-remove-icon k-icon k-i-close-circle"></span>
+                </div>
+            </span>
+            <span>
+                <div class="k-chip k-chip-outline k-chip-info k-selected">
+                    <span class="k-chip-content">
+                        <span class="k-chip-label">Info</span>
+                    </span>
+                    <span class="k-remove-icon k-icon k-i-close-circle"></span>
+                </div>
+            </span>
+            <span>
+                <div class="k-chip k-chip-outline k-chip-success k-selected">
+                    <span class="k-chip-content">
+                        <span class="k-chip-label">Success</span>
+                    </span>
+                    <span class="k-remove-icon k-icon k-i-close-circle"></span>
+                </div>
+            </span>
+
+            <span>Disabled</span>
+            <span>
+                <div class="k-chip k-chip-outline k-disabled">
+                    <span class="k-chip-content">
+                        <span class="k-chip-label">None</span>
+                    </span>
+                    <span class="k-remove-icon k-icon k-i-close-circle"></span>
+                </div>
+            </span>
+            <span>
+                <div class="k-chip k-chip-outline k-chip-error k-disabled">
+                    <span class="k-chip-content">
+                        <span class="k-chip-label">Error</span>
+                    </span>
+                    <span class="k-remove-icon k-icon k-i-close-circle"></span>
+                </div>
+            </span>
+            <span>
+                <div class="k-chip k-chip-outline k-chip-warning k-disabled">
+                    <span class="k-chip-content">
+                        <span class="k-chip-label">Warning</span>
+                    </span>
+                    <span class="k-remove-icon k-icon k-i-close-circle"></span>
+                </div>
+            </span>
+            <span>
+                <div class="k-chip k-chip-outline k-chip-info k-disabled">
+                    <span class="k-chip-content">
+                        <span class="k-chip-label">Info</span>
+                    </span>
+                    <span class="k-remove-icon k-icon k-i-close-circle"></span>
+                </div>
+            </span>
+            <span>
+                <div class="k-chip k-chip-outline k-chip-success k-disabled">
+                    <span class="k-chip-content">
+                        <span class="k-chip-label">Success</span>
+                    </span>
+                    <span class="k-remove-icon k-icon k-i-close-circle"></span>
+                </div>
+            </span>
+        </section>
+
+    </div>
+</body>
+</html>
