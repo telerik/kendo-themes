@@ -126,6 +126,9 @@
             }
         }
 
+        &.k-scheduler-timeline-view .k-scheduler-body .k-scheduler-cell {
+            flex-basis: auto;
+        }
 
 
         .k-more-events {

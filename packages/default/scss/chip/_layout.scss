@@ -35,11 +35,9 @@
             font-size: $chip-selected-icon-font-size;
         }
 
-        .k-chip-selected {
-            .k-selected-icon-wrapper {
-                width: $chip-selected-icon-size;
-                visibility: visible;
-            }
+        .k-chip.k-selected .k-selected-icon-wrapper {
+            width: $chip-selected-icon-size;
+            visibility: visible;
         }
 
         > .k-chip-has-icon {
@@ -56,10 +54,8 @@
                 transition: width .2s, opacity .2s;
             }
 
-            &.k-chip-selected {
-                .k-selected-icon-wrapper {
-                    opacity: 1;
-                }
+            &.k-selected .k-selected-icon-wrapper {
+                opacity: 1;
             }
         }
     }
@@ -83,10 +79,6 @@
         &:focus,
         &.k-chip-focus {
             outline: 0;
-        }
-
-        &.k-chip-disabled {
-            @include disabled( $disabled-styling );
         }
     }
 
@@ -133,7 +125,8 @@
 
     .k-chip-list {
         &[dir="rtl"],
-        .k-rtl & {
+        .k-rtl &,
+        &.k-rtl {
             > * {
                 margin-right: 0;
                 margin-left: $chips-margin;
@@ -147,7 +140,8 @@
 
     .k-chip {
         &[dir="rtl"],
-        .k-rtl & {
+        .k-rtl &,
+        &.k-rtl {
             .k-chip-icon {
                 margin-left: 0;
                 margin-right: $chip-icon-margin;
