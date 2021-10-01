@@ -62,7 +62,9 @@ function buildAll( cwds, options ) {
         let file = path.resolve( cwd, opts.file );
         let output = merge( {}, opts.output, { path: path.resolve( cwd, opts.output.path ) } );
 
-        sassBuild({ ...opts, file, output });
+        if (fs.existsSync( file )) {
+            sassBuild({ ...opts, file, output });
+        }
     });
 }
 
@@ -110,7 +112,9 @@ function flattenAll( cwds, options ) {
         let output = { path: path.resolve( cwd, options.output.path ), filename: 'all.scss' };
         let nodeModules = path.resolve( cwd, 'node_modules' );
 
-        sassFlatten({ file, output, nodeModules });
+        if (fs.existsSync( file )) {
+            sassFlatten({ file, output, nodeModules });
+        }
     });
 }
 
