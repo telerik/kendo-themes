@@ -10,6 +10,7 @@
     "autoprefixer": "^10.3.1",
     "dss": "^1.0.4",
     "eslint": "^7.7.0",
+    "eslint-plugin-react": "^7.26.1",
     "fs-extra": "^8.1.0",
     "glob": "^7.1.6",
     "gulp": "^4.0.2",
