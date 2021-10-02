@@ -3,7 +3,7 @@ set -e
 shopt -s extglob
 
 THEME="${1:-default}"
-TEMP_DIR="./tests/.tmp/visual"
+TEMP_DIR=".tmp/tests/visual"
 THEME_DIR="$TEMP_DIR/$THEME"
 SRC_DIR="$THEME_DIR/src"
 
@@ -15,11 +15,18 @@ else
 fi
 
 mkdir -p "$THEME_DIR"
-cp -r ./tests/visual/!(output) "$THEME_DIR"
+cp -r tests/visual/!(output) "$THEME_DIR"
 
-# replace theme reference
+mkdir -p $THEME_DIR/themes/$THEME
+mkdir -p $THEME_DIR/scripts
+
+cp packages/$THEME/dist/all.css $THEME_DIR/themes/$THEME/all.css
+cp packages/html/dist/index.js $THEME_DIR/scripts/kendo-html.js
+
+# replace references
 find "$SRC_DIR" -name '*.html' -print0 | xargs -0 sed -i -E \
-    -e "s#/packages/default/dist/#/../../../packages/$THEME/dist/#"
+    -e "s#../../../../packages/default/dist/#../../themes/$THEME/#" \
+    -e "s#../../../../packages/html/dist/index.js#../../scripts/kendo-html.js#"
 
 # capture screenshots. see .pastshotsrc for config options
 npm install --no-save pastshots@1.6 optipng

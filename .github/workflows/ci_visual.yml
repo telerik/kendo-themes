@@ -36,7 +36,9 @@ jobs:
           npm run bootstrap
 
       - name: Build test assets
-        run: npm run sass:flat
+        run: |
+          npm run build:scripts
+          npm run sass:flat -- --theme packages/${{ matrix.theme }}
 
       - name: Visual tests
         run: ./build/create-screenshots.sh ${{ matrix.theme }}
