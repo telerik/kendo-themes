@@ -6,6 +6,7 @@
     <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
     <link rel="stylesheet" href="../../assets/styles.css" />
     <script src="../../assets/scripts.js"></script>
+    <script src="../../../../packages/html/dist/index.js"></script>
 
     <style>
         #test-area {
@@ -34,53 +35,53 @@
 
         <!-- text buttons -->
         <section class="buttons">
-            <span><button class="k-button">Normal</button></span>
-            <span><button class="k-button k-primary">Normal</button></span>
-            <span><button class="k-button k-flat">Normal</button></span>
-            <span><button class="k-button k-flat k-primary">Normal</button></span>
-            <span><button class="k-button k-outline">Normal</button></span>
-            <span><button class="k-button k-outline k-primary">Normal</button></span>
+            <span><button is="Button">Normal</button></span>
+            <span><button is="Button" themeColor="primary">Normal</button></span>
+            <span><button is="Button" fillMode="flat">Normal</button></span>
+            <span><button is="Button" fillMode="flat" themeColor="primary">Normal</button></span>
+            <span><button is="Button" fillMode="outline">Normal</button></span>
+            <span><button is="Button" fillMode="outline" themeColor="primary">Normal</button></span>
             <span><button class="k-button k-button-clear">Normal</button></span>
 
-            <span><button class="k-button k-hover k-state-hover">Hover</button></span>
-            <span><button class="k-button k-primary k-hover k-state-hover">Hover</button></span>
-            <span><button class="k-button k-flat k-hover k-state-hover">Hover</button></span>
-            <span><button class="k-button k-flat k-primary k-hover k-state-hover">Hover</button></span>
-            <span><button class="k-button k-outline k-hover k-state-hover">Hover</button></span>
-            <span><button class="k-button k-outline k-primary k-hover k-state-hover">Hover</button></span>
-            <span><button class="k-button k-button-clear k-hover k-state-hover">Hover</button></span>
+            <span><button is="Button" class="k-state-hover">Hover</button></span>
+            <span><button is="Button" themeColor="primary" class="k-state-hover">Hover</button></span>
+            <span><button is="Button" fillMode="flat" class="k-state-hover">Hover</button></span>
+            <span><button is="Button" fillMode="flat" themeColor="primary" class="k-state-hover">Hover</button></span>
+            <span><button is="Button" fillMode="outline" class="k-state-hover">Hover</button></span>
+            <span><button is="Button" fillMode="outline" themeColor="primary" class="k-state-hover">Hover</button></span>
+            <span><button class="k-button k-button-clear k-state-hover">Hover</button></span>
 
-            <span><button class="k-button k-active k-state-active">Active</button></span>
-            <span><button class="k-button k-primary k-active k-state-active">Active</button></span>
-            <span><button class="k-button k-flat k-active k-state-active">Active</button></span>
-            <span><button class="k-button k-flat k-primary k-active k-state-active">Active</button></span>
-            <span><button class="k-button k-outline k-active k-state-active">Active</button></span>
-            <span><button class="k-button k-outline k-primary k-active k-state-active">Active</button></span>
-            <span><button class="k-button k-button-clear k-active k-state-active">Active</button></span>
+            <span><button is="Button" class="k-state-active">Active</button></span>
+            <span><button is="Button" themeColor="primary" class="k-state-active">Active</button></span>
+            <span><button is="Button" fillMode="flat" class="k-state-active">Active</button></span>
+            <span><button is="Button" fillMode="flat" themeColor="primary" class="k-state-active">Active</button></span>
+            <span><button is="Button" fillMode="outline" class="k-state-active">Active</button></span>
+            <span><button is="Button" fillMode="outline" themeColor="primary" class="k-state-active">Active</button></span>
+            <span><button class="k-button k-button-clear k-state-active">Active</button></span>
 
-            <span><button class="k-button k-selected k-state-selected">Selected</button></span>
-            <span><button class="k-button k-primary k-selected k-state-selected">Selected</button></span>
-            <span><button class="k-button k-flat k-selected k-state-selected">Selected</button></span>
-            <span><button class="k-button k-flat k-primary k-selected k-state-selected">Selected</button></span>
-            <span><button class="k-button k-outline k-selected k-state-selected">Selected</button></span>
-            <span><button class="k-button k-outline k-primary k-selected k-state-selected">Selected</button></span>
-            <span><button class="k-button k-button-clear k-selected k-state-selected">Selected</button></span>
+            <span><button is="Button" class="k-state-selected">Selected</button></span>
+            <span><button is="Button" themeColor="primary" class="k-state-selected">Selected</button></span>
+            <span><button is="Button" fillMode="flat" class="k-state-selected">Selected</button></span>
+            <span><button is="Button" fillMode="flat" themeColor="primary" class="k-state-selected">Selected</button></span>
+            <span><button is="Button" fillMode="outline" class="k-state-selected">Selected</button></span>
+            <span><button is="Button" fillMode="outline" themeColor="primary" class="k-state-selected">Selected</button></span>
+            <span><button class="k-button k-button-clear k-state-selected">Selected</button></span>
 
-            <span><button class="k-button k-focus k-state-focus">Focus</button></span>
-            <span><button class="k-button k-primary k-focus k-state-focus">Focus</button></span>
-            <span><button class="k-button k-flat k-focus k-state-focus">Focus</button></span>
-            <span><button class="k-button k-flat k-primary k-focus k-state-focus">Focus</button></span>
-            <span><button class="k-button k-outline k-focus k-state-focus">Focus</button></span>
-            <span><button class="k-button k-outline k-primary k-focus k-state-focus">Focus</button></span>
-            <span><button class="k-button k-button-clear k-focus k-state-focus">Focus</button></span>
+            <span><button is="Button" class="k-state-focus">Focus</button></span>
+            <span><button is="Button" themeColor="primary" class="k-state-focus">Focus</button></span>
+            <span><button is="Button" fillMode="flat" class="k-state-focus">Focus</button></span>
+            <span><button is="Button" fillMode="flat" themeColor="primary" class="k-state-focus">Focus</button></span>
+            <span><button is="Button" fillMode="outline" class="k-state-focus">Focus</button></span>
+            <span><button is="Button" fillMode="outline" themeColor="primary" class="k-state-focus">Focus</button></span>
+            <span><button class="k-button k-button-clear k-state-focus">Focus</button></span>
 
-            <span><button class="k-button k-disabled k-state-disabled">Disabled</button></span>
-            <span><button class="k-button k-primary k-disabled k-state-disabled">Disabled</button></span>
-            <span><button class="k-button k-flat k-disabled k-state-disabled">Disabled</button></span>
-            <span><button class="k-button k-flat k-primary k-disabled k-state-disabled">Disabled</button></span>
-            <span><button class="k-button k-outline k-disabled k-state-disabled">Disabled</button></span>
-            <span><button class="k-button k-outline k-primary k-disabled k-state-disabled">Disabled</button></span>
-            <span><button class="k-button k-button-clear k-disabled k-state-disabled">Disabled</button></span>
+            <span><button is="Button" class="k-state-disabled">Disabled</button></span>
+            <span><button is="Button" themeColor="primary" class="k-state-disabled">Disabled</button></span>
+            <span><button is="Button" fillMode="flat" class="k-state-disabled">Disabled</button></span>
+            <span><button is="Button" fillMode="flat" themeColor="primary" class="k-state-disabled">Disabled</button></span>
+            <span><button is="Button" fillMode="outline" class="k-state-disabled">Disabled</button></span>
+            <span><button is="Button" fillMode="outline" themeColor="primary" class="k-state-disabled">Disabled</button></span>
+            <span><button class="k-button k-button-clear k-state-disabled">Disabled</button></span>
         </section>
     </div>
 
