@@ -69,18 +69,17 @@ function classNames( ...args ) {
     /* eslint-disable arrow-body-style, no-nested-ternary */
     let result = new Set();
     let temp = args.flat().filter( arg => arg !== true && Boolean( arg ) );
-    temp = [ ...(new Set( temp )) ];
 
     temp.forEach( className => {
         if ( isString( className ) ) {
-            result.add( className );
+            className.split( SPACE ).forEach( part => result.add( part ) );
             return;
         }
 
         if ( isObject( className ) ) {
             for (let [ key, val ] of Object.entries( className )) {
                 if (val === true) {
-                    result.add( key );
+                    key.split( SPACE ).forEach( part => result.add( part ) );
                 }
             }
         }
