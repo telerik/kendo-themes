@@ -43,9 +43,12 @@ function ButtonStatic(props) {
     ];
 
     let legacyClasses = [
+        ownClassName,
         'k-button',
         {
-            'k-primary': themeColor === 'primary'
+            'k-primary': themeColor === 'primary',
+            'k-flat': fillMode === 'flat',
+            'k-outline': fillMode === 'outline'
         }
     ];
 
@@ -103,7 +106,9 @@ ButtonStatic.propTypes = {
     themeColor: typeof [ 'none', 'surface', 'base', 'primary' ],
 
     aria: typeof false,
-    legacy: typeof false
+    legacy: typeof false,
+
+    htmlAttributes: typeof []
 };
 
 export { Button, ButtonStatic };

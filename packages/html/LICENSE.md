@@ -1,4 +1,4 @@
-# Kendo UI Nouvelle Theme
+# Kendo UI Themes HTML Helpers
 
 This package is part of the following suites:
 
