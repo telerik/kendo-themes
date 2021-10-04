@@ -2,7 +2,7 @@ import { isFunction } from '../utils/object';
 import { renderDOM, attrToProps } from '../lib/jsx-runtime';
 
 const globalDefaultProps = {
-    legacy: true,
+    legacy: false,
 
     className: '',
 
