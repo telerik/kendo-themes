@@ -1,7 +1,7 @@
 {
   "name": "@progress/kendo-themes-html",
   "description": "A collection of HTML helpers used for developing Kendo UI themes",
-  "version": "0.0.0-semantically-released",
+  "version": "4.41.3-dev.2",
   "author": "Progress",
   "license": "Apache-2.0",
   "keywords": [
@@ -33,7 +33,6 @@
     "build": "rollup -c",
     "dev": "rollup -cw"
   },
-  "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.15.5",
     "@babel/preset-env": "^7.15.6",
