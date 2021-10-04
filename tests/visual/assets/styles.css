@@ -20,6 +20,28 @@ body {
     margin: 10px;
 }
 
+.split-label {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+}
+.split-label > * {
+    width: 100%;
+    height: 100%;
+    grid-row: 1;
+    grid-column: 1;
+    display: flex;
+    overflow: hidden;
+}
+.split-label > :first-child {
+    clip-path: polygon( 0% 0%, 100% 100%, 0% 100% );
+    justify-content: flex-start;
+}
+.split-label > :last-child {
+    clip-path: polygon( 0% 0%, 100% 0, 100% 100% );
+    justify-content: flex-end;
+}
+
 /* Prevent animations */
 .k-no-animations,
 .k-no-animations *,
