@@ -1,6 +1,6 @@
-import * as styles from '../utils/styles';
-import { Component, globalDefaultProps } from './component';
-import { IconStatic } from './icon.jsx';
+import * as styles from '../../utils/styles';
+import { Component, globalDefaultProps } from '../component';
+import { IconStatic } from '../icon/index';
 
 class Button extends Component {
 
