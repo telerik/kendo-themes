@@ -10,18 +10,39 @@ const attrMap = {
     fillmode: 'fillMode'
 };
 
+const booleanAttr = new Set([
+    'hidden',
+
+    'hover',
+    'focus',
+    'active',
+    'disabled',
+
+    'selected',
+
+    'checked',
+    'indeterminate',
+
+    'aria'
+]);
+
 function attrToProps( element ) {
     let attributes = element.attributes;
     let props = {};
 
     Array.from(attributes).forEach((attrObj) => {
         let attrName = attrObj.name;
+        let attrValue = attrObj.value;
 
         if (attrMap[attrName]) {
             attrName = attrMap[attrName];
         }
 
-        props[ attrName ] = attrObj.value;
+        if (booleanAttr.has(attrName) && attrValue === '') {
+            props[ attrName ] = true;
+        } else {
+            props[ attrName ] = attrValue;
+        }
     });
 
     return props;
