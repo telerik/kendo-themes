@@ -35,6 +35,7 @@
   "scripts": {
     "clean": "find . -name \"node_modules\" -type d -prune | grep -e \".git\" -v | xargs rm -rf",
     "clean:dist": "find ./packages -name \"dist\" -type d -prune | grep -e \"node_modules\" -v | xargs rm -rf",
+    "clean:tests": "node ./scripts/cleanup-test-results.js",
     "bootstrap": "lerna clean && lerna bootstrap",
     "dist:flat": "gulp dist:flat",
     "dist:swatches": "gulp dist:swatches",
@@ -58,7 +59,6 @@
     "create-screenshots": "./build/create-screenshots.sh",
     "serve-tests": "http-server ./",
     "embed-assets": "gulp assets",
-    "cleanup-test-results": "cd tests && npm run cleanup-test-results",
     "create-component": "gulp create-component"
   },
   "husky": {
