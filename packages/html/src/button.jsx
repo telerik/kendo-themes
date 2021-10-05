@@ -1,5 +1,5 @@
 import * as styles from '../utils/styles';
-import { Component } from './component';
+import { Component, globalDefaultProps } from './component';
 import { IconStatic } from './icon.jsx';
 
 class Button extends Component {
@@ -29,7 +29,9 @@ function ButtonStatic(props) {
         icon,
 
         aria,
-        legacy
+        legacy,
+
+        ...htmlAttributes
     } = props;
 
     let buttonClasses = [
@@ -58,7 +60,7 @@ function ButtonStatic(props) {
 
     if (legacy) {
         return (
-            <button type={type} className={legacyClasses} {...ariaAttr}>
+            <button type={type} className={legacyClasses} {...ariaAttr} {...htmlAttributes}>
                 <IconStatic name={icon} />
                 { text }
             </button>
@@ -66,7 +68,7 @@ function ButtonStatic(props) {
     }
 
     return (
-        <button type={type} className={buttonClasses} {...ariaAttr}>
+        <button type={type} className={buttonClasses} {...ariaAttr} {...htmlAttributes}>
             <IconStatic className="k-button-icon" name={icon} />
             <span className="k-button-text">{ text }</span>
         </button>
@@ -74,6 +76,8 @@ function ButtonStatic(props) {
 }
 
 ButtonStatic.defaultProps = {
+    ...globalDefaultProps,
+
     text: '',
     icon: '',
 
@@ -85,10 +89,7 @@ ButtonStatic.defaultProps = {
     shape: 'rectangle',
 
     fillMode: 'solid',
-    themeColor: 'base',
-
-    aria: false,
-    legacy: false
+    themeColor: 'base'
 };
 
 ButtonStatic.propTypes = {
