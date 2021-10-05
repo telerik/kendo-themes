@@ -62,6 +62,11 @@
         padding: 0;
     }
 
+    // Resizable editor
+    .k-editor-resizable {
+        resize: both;
+        overflow: auto;
+    }
 
     // Toolbar
     .k-editor > .k-toolbar {
