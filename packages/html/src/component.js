@@ -21,7 +21,7 @@ class Component {
     constructor( element ) {
 
         this._element = element;
-        this._props = { ...globalDefaultProps, ...attrToProps( element ) };
+        this._props = attrToProps( element );
 
         delete this._props.is;
 
@@ -40,4 +40,4 @@ class Component {
 
 }
 
-export { Component };
+export { Component, globalDefaultProps };
