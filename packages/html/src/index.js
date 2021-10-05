@@ -1,12 +1,6 @@
 /* eslint-disable no-new */
 /* global kendo */
 import { isFunction } from '../utils/object';
-import { Button } from './button.jsx';
-
-
-export {
-    Button
-};
 
 window.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('[is]').forEach( element => {
@@ -18,3 +12,7 @@ window.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+export * from './component';
+export * from './icon/index';
+export * from './button/index';
