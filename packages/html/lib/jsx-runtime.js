@@ -26,6 +26,22 @@ const booleanAttr = new Set([
     'aria'
 ]);
 
+const skipAttr = new Set([
+    'aria',
+    'legacy'
+]);
+
+const setAttr = new Set([
+    // Global
+    'id',
+
+    // Related to forms
+    'type',
+    'value',
+    'placeholder',
+    'autocomplete'
+]);
+
 function attrToProps( element ) {
     let attributes = element.attributes;
     let props = {};
@@ -110,7 +126,15 @@ function renderDOM( jsxNode, container = null ) {
     props.className = classNames( props.className );
 
     for (let [ attr, val ] of Object.entries(props)) {
-        element[attr] = val;
+        if (skipAttr.has(attr)) {
+            continue;
+        }
+
+        if (setAttr.has(attr) && val !== '') {
+            element.setAttribute( attr, val );
+        } else {
+            element[attr] = val;
+        }
     }
 
     children.forEach( child => {
