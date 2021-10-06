@@ -4,17 +4,8 @@
 
     .k-toolbar {
 
-        .k-button {
-            background-color: try-shade( $button-bg );
-        }
-
-        .k-button-primary {
-            background-color: $primary-button-bg;
-
-            &:disabled,
-            &.k-state-disabled {
-                background-color: $button-disabled-bg;
-            }
+        .k-button-solid-base {
+            background-color: try-shade( $kendo-button-bg );
         }
 
     }
