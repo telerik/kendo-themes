@@ -193,19 +193,19 @@
     .k-pivot-toolbar .k-button,
     .k-fieldselector .k-list li.k-item {
         @include fill(
-            $button-text,
-            $button-bg,
-            $button-border,
-            $button-gradient
+            $kendo-button-text,
+            $kendo-button-bg,
+            $kendo-button-border,
+            $kendo-button-gradient
         );
 
         &:hover,
         &.k-state-hover {
             @include fill(
-                $button-hovered-text,
-                $button-hovered-bg,
-                $button-hovered-border,
-                $button-hovered-gradient
+                $kendo-button-hover-text,
+                $kendo-button-hover-bg,
+                $kendo-button-hover-border,
+                $kendo-button-hover-gradient
             );
         }
 
@@ -213,10 +213,10 @@
         &:active,
         &.k-state-active {
             @include fill(
-                $button-active-text,
-                $button-active-bg,
-                $button-active-border,
-                $button-active-gradient
+                $kendo-button-active-text,
+                $kendo-button-active-bg,
+                $kendo-button-active-border,
+                $kendo-button-active-gradient
             );
         }
 
@@ -224,7 +224,7 @@
         &:focus,
         &.k-state-focus,
         &.k-state-focused {
-            box-shadow: $button-focused-shadow;
+            box-shadow: $kendo-button-focus-shadow;
         }
 
         &.k-empty {
