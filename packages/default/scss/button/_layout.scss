@@ -2,14 +2,10 @@
 
     // Button
     .k-button {
-        @include border-radius( $button-border-radius );
-        padding: $button-padding-y $button-padding-x;
         box-sizing: border-box;
-        border-width: $button-border-width;
+        border-width: $kendo-button-border-width;
         border-style: solid;
-        font-size: $button-font-size;
-        line-height: $button-line-height;
-        font-family: $button-font-family;
+        font-family: $kendo-button-font-family;
         text-align: center;
         text-decoration: none;
         white-space: nowrap;
@@ -25,7 +21,7 @@
         position: relative;
 
         &:disabled,
-        &.k-state-disabled {
+        &.k-disabled {
             @include disabled( $disabled-styling );
         }
 
@@ -40,68 +36,77 @@
             text-decoration: none;
             outline: 0;
         }
-
-        .k-icon,
-        .k-image,
-        .k-sprite {
-            color: inherit;
-            align-self: center;
-            position: relative;
-        }
-
     }
 
 
-    // Button icon
-    .k-button .k-button-icon {
+    // Icon Button
+    .k-icon-button {
+        aspect-ratio: 1;
+        gap: 0;
+    }
+
+
+    // Content
+    .k-button-icon {
         color: inherit;
         align-self: center;
         position: relative;
     }
 
+    .k-button-text {}
 
-    // Button text
-    .k-button .k-button-text {}
+    .k-button-icontext {}
 
 
-    // Text button
-    .k-text-button {
+    // Sizes
+    .k-button-sm {
+        padding: $kendo-button-padding-y-sm $kendo-button-padding-x-sm;
+        font-size: $kendo-button-font-size-sm;
+        line-height: $kendo-button-line-height-sm;
+    }
+    .k-button-md {
+        padding: $kendo-button-padding-y-md $kendo-button-padding-x-md;
+        font-size: $kendo-button-font-size-md;
+        line-height: $kendo-button-line-height-md;
+    }
+    .k-button-lg {
+        padding: $kendo-button-padding-y-lg $kendo-button-padding-x-lg;
+        font-size: $kendo-button-font-size-lg;
+        line-height: $kendo-button-line-height-lg;
+    }
 
-        > .k-icon,
+    .k-icon-button.k-button-sm {
+        padding: $kendo-button-padding-y-sm;
+
         > .k-button-icon {
-            display: none;
+            min-width: calc( #{$kendo-button-font-size-sm} * #{$kendo-button-line-height-sm} );
+            min-height: calc( #{$kendo-button-font-size-sm} * #{$kendo-button-line-height-sm} );
+        }
+    }
+    .k-icon-button.k-button-md {
+        padding: $kendo-button-padding-y-md;
+
+        > .k-button-icon {
+            min-width: calc( #{$kendo-button-font-size-md} * #{$kendo-button-line-height-md} );
+            min-height: calc( #{$kendo-button-font-size-md} * #{$kendo-button-line-height-md} );
+        }
+    }
+    .k-icon-button.k-button-lg {
+        padding: $kendo-button-padding-y-lg;
+
+        > .k-button-icon {
+            min-width: calc( #{$kendo-button-font-size-lg} * #{$kendo-button-line-height-lg} );
+            min-height: calc( #{$kendo-button-font-size-lg} * #{$kendo-button-line-height-lg} );
         }
     }
 
 
-    // Icon button
-    .k-icon-button,
-    .k-button.k-button-icon {
-        padding: $button-padding-y;
-        gap: 0;
+    // Shapes
+    .k-button-rectangle { }
 
-        > .k-text,
-        > .k-button-text {
-            display: none;
-        }
-
-        .k-button-icon {
-            margin: 0;
-            min-width: calc( #{$button-font-size} * #{$button-line-height} );
-            min-height: calc( #{$button-font-size} * #{$button-line-height} );
-        }
+    .k-button-square {
+        aspect-ratio: 1;
     }
-    // TODO: REMOVE
-    .k-button.k-button-icon {
-        padding: $button-padding-y;
-        width: $button-calc-size;
-        height: $button-calc-size;
-    }
-
-
-    // Input button
-    .k-input-button {}
-    .k-input-button.k-icon-button {}
 
 
     // Menu Button
@@ -122,44 +127,39 @@
         box-sizing: border-box;
         list-style: none;
         outline: 0;
-        white-space: nowrap;
         display: inline-flex;
-        flex-direction: row;
+        flex-flow: row nowrap;
         vertical-align: middle;
         position: relative;
         -webkit-touch-callout: none;
         -webkit-tap-highlight-color: $rgba-transparent;
 
-        .k-button {
+        .k-button:not(:first-child):not(:last-child) {
             @include border-radius( 0 );
         }
+
         .k-button ~ .k-button {
-            margin-inline-start: if( $button-border-width == 0, null, -$button-border-width );
+            margin-inline-start: if( $kendo-button-border-width == 0, null, -$kendo-button-border-width );
         }
 
         .k-button:hover,
-        .k-button.k-state-hover,
+        .k-button.k-hover,
         .k-button:active,
-        .k-button.k-state-active,
-        .k-button.k-state-selected,
+        .k-button.k-active,
+        .k-button.k-selected,
         .k-button:focus,
-        .k-button.k-state-focus {
+        .k-button.k-focus {
             z-index: 2;
         }
 
-        .k-group-start,
-        .k-button:first-child {
-            @include border-left-radius( $button-border-radius );
+        .k-group-start:not(:only-child),
+        .k-button:first-child:not(:only-child) {
+            @include border-right-radius( 0 );
         }
-        .k-group-end,
-        .k-button:last-child {
-            @include border-right-radius( $button-border-radius );
+        .k-group-end:not(:only-child),
+        .k-button:last-child:not(:only-child) {
+            @include border-left-radius( 0 );
         }
-        .k-group-start.k-group-end,
-        .k-button:first-child:last-child {
-            @include border-radius( $button-border-radius );
-        }
-
     }
 
     .k-button-group-stretched {
@@ -180,100 +180,63 @@
 
     // Split button
     .k-split-button {
-        border-width: 0;
-        border-radius: 0;
-        outline: 0;
-        display: inline-flex;
-        flex-flow: row nowrap;
-        vertical-align: middle;
+        @include border-radius( 0 );
 
-        .k-button {
-            @include border-radius( 0 );
-        }
-
-        // .k-button
         > .k-button:first-child {
-            @include border-left-radius( $button-border-radius );
-        }
-        > .k-split-button-arrow,
-        > .k-button:last-child {
-            @include border-right-radius( $button-border-radius );
-            margin-inline-start: if( $button-border-width == 0, null, -$button-border-width );
-            padding: $button-padding-y;
-            width: auto;
-            flex: none;
+            @include border-right-radius( 0 );
         }
 
-        &[dir="rtl"] {
-            // k-button
-            > .k-button:first-child {
-                @include border-left-radius( 0 );
-                @include border-right-radius( $button-border-radius );
-            }
-            > .k-button:last-child {
-                @include border-right-radius( 0 );
-                @include border-left-radius( $button-border-radius );
-            }
+        > .k-button:last-child {
+            @include border-left-radius( 0 );
         }
     }
 
 
-    // Flat button and bare
+    // Flat Buttons
     .k-button-flat {
-        border-color: transparent !important; // sass-lint:disable-line no-important
-        color: inherit;
-        background: none !important; // sass-lint:disable-line no-important
-        box-shadow: none !important; // sass-lint:disable-line no-important
-        transition: color .2s ease-in-out;
+        transition: $kendo-button-color-transition;
 
         // Overlay background
         &::before {
-            display: block;
+            display: block !important; // sass-lint:disable-line no-important
         }
 
         // Focus ring
         &::after {
-            box-shadow: inset 0 0 0 2px currentColor;
-            display: block;
+            display: block !important; // sass-lint:disable-line no-important
         }
 
+        &:focus::after ,
+        &.k-focus::after {
+            opacity: .12;
+        }
+    }
+
+
+    // Link Buttons
+    .k-button-link {
+        &,
+        &:hover,
+        &.k-hover,
         &:focus,
-        &.k-state-focus,
-        &.k-state-focused {
+        &.k-focus {
+            text-decoration: underline;
+        }
 
-            &::after {
-                opacity: .12;
-            }
+        // Focus ring
+        &::after {
+            display: block !important; // sass-lint:disable-line no-important
+        }
+
+        &:focus::after ,
+        &.k-focus::after {
+            opacity: .12;
         }
     }
-    .k-button.k-flat,
-    .k-button.k-bare {
-        @extend .k-button-flat;
-    }
-
-
-    // Outline button
-    .k-button-outline {
-        @include box-shadow( none );
-        color: inherit;
-        background: none;
-    }
-    .k-button.k-outline {
-        @extend .k-button-outline;
-    }
-
-
-    // Clear button
-    .k-button-clear {
-        border-color: transparent !important; // sass-lint:disable-line no-important
-        color: inherit;
-        background: none !important; // sass-lint:disable-line no-important
-        box-shadow: none !important; // sass-lint:disable-line no-important
-    }
-
 
     // RTL
-    .k-rtl {
+    .k-rtl,
+    [dir="rtl"] {
 
         // Button group
         .k-button-group {
@@ -284,15 +247,17 @@
 
             .k-group-start,
             .k-button:first-child {
-                @include border-right-radius( $button-border-radius );
+                @include border-right-radius( $kendo-button-border-radius );
             }
+
             .k-group-end,
             .k-button:last-child {
-                @include border-left-radius( $button-border-radius );
+                @include border-left-radius( $kendo-button-border-radius );
             }
+
             .k-group-start.k-group-end,
             .k-button:first-child:last-child {
-                @include border-radius( $button-border-radius );
+                @include border-radius( $kendo-button-border-radius );
             }
 
         }
@@ -306,11 +271,12 @@
 
             // k-button
             > .k-button:first-child {
-                @include border-right-radius( $button-border-radius );
+                @include border-right-radius( $kendo-button-border-radius );
             }
+
             > .k-split-button-arrow,
             > .k-button:last-child {
-                @include border-left-radius( $button-border-radius );
+                @include border-left-radius( $kendo-button-border-radius );
             }
         }
     }
@@ -331,10 +297,10 @@
         display: none;
         pointer-events: none;
         position: absolute;
-        left: -$button-border-width;
-        right: -$button-border-width;
-        top: -$button-border-width;
-        bottom: -$button-border-width;
+        left: -$kendo-button-border-width;
+        right: -$kendo-button-border-width;
+        top: -$kendo-button-border-width;
+        bottom: -$kendo-button-border-width;
         z-index: 0;
         transition: opacity .2s ease-in-out;
     }
@@ -348,22 +314,21 @@
 
         // Hovered state
         &:hover,
-        &.k-state-hover {
+        &.k-hover {
             &::before {
-                opacity: $flat-button-hover-opacity;
+                opacity: $kendo-flat-button-hover-opacity;
             }
         }
 
         // Focused state
         &:focus,
-        &.k-state-focus,
-        &.k-state-focused {
+        &.k-focus {
             &::before {
-                opacity: $flat-button-focus-opacity;
+                opacity: $kendo-flat-button-focus-opacity;
             }
         }
         &.k-no-focus:not(:hover),
-        &.k-no-focus:not(.k-state-hover) {
+        &.k-no-focus:not(.k-hover) {
             &::before {
                 opacity: 0;
             }
@@ -371,16 +336,16 @@
 
         // Active state
         &:active,
-        &.k-state-active {
+        &.k-active {
             &::before {
-                opacity: $flat-button-active-opacity;
+                opacity: $kendo-flat-button-active-opacity;
             }
         }
 
         // Selected state
-        &.k-state-selected {
+        &.k-selected {
             &::before {
-                opacity: $flat-button-selected-opacity;
+                opacity: $kendo-flat-button-selected-opacity;
             }
         }
 
@@ -402,43 +367,12 @@
             display: none;
             pointer-events: none;
             position: absolute;
-            left: -$button-border-width;
-            right: -$button-border-width;
-            top: -$button-border-width;
-            bottom: -$button-border-width;
+            left: -$kendo-button-border-width;
+            right: -$kendo-button-border-width;
+            top: -$kendo-button-border-width;
+            bottom: -$kendo-button-border-width;
             z-index: 0;
             transition: opacity .2s ease-in-out;
         }
     }
-}
-
-
-
-
-@include exports( "button/ie-compat" ) {
-
-    .k-ie {
-
-        .k-button-icontext {
-
-            .k-icon,
-            .k-image,
-            .k-sprite {
-                margin: 0 $icon-spacing 0 0;
-            }
-
-            &.k-rtl,
-            .k-rtl &,
-            &[dir="rtl"],
-            [dir="rtl"] & {
-                .k-icon,
-                .k-image,
-                .k-sprite {
-                    margin: 0 0 0 $icon-spacing;
-                }
-            }
-        }
-
-    }
-
 }
