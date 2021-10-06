@@ -41,6 +41,8 @@ function ButtonStatic(props) {
         ...htmlAttributes
     } = props;
 
+    const isIconButton = Boolean( icon ) === true && Boolean( text ) === false;
+
     let buttonClasses = [
         ownClassName,
         'k-button',
@@ -55,7 +57,7 @@ function ButtonStatic(props) {
             'k-active': active === true,
             'k-selected': selected === true,
             'k-disabled': disabled === true,
-            'k-icon-button': Boolean( icon ) === true && Boolean( text ) === false
+            'k-icon-button': isIconButton
         }
     ];
 
