@@ -489,11 +489,11 @@
     .k-pivot-toolbar .k-button,
     .k-fieldselector .k-list li.k-item {
         @include border-radius( $border-radius );
-        padding: $button-padding-y $button-padding-x;
-        padding-right: calc( #{$button-padding-x} + #{$icon-size * 3} );
+        padding: $kendo-button-padding-y $kendo-button-padding-x;
+        padding-right: calc( #{$kendo-button-padding-x} + #{$icon-size * 3} );
         min-height: auto;
         font-size: $font-size;
-        line-height: $button-line-height;
+        line-height: $kendo-button-line-height;
         text-align: left;
         white-space: normal;
         word-break: break-word;
@@ -507,8 +507,8 @@
 
     .k-field-actions {
         position: absolute;
-        right: $button-padding-y;
-        top: $button-padding-y;
+        right: $kendo-button-padding-y;
+        top: $kendo-button-padding-y;
         line-height: 1;
         cursor: pointer;
     }

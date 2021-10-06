@@ -188,7 +188,7 @@
         .k-i-warning {
             position: absolute;
             top: 50%;
-            right: calc( #{ $button-inner-calc-size } + #{ $input-padding-x-sm });
+            right: calc( #{ $kendo-button-inner-calc-size } + #{ $input-padding-x-sm });
             transform: translateY(-50%);
             overflow: visible;
         }
@@ -206,7 +206,7 @@
 
             .k-i-warning {
                 right: auto;
-                left: calc( #{ $button-inner-calc-size } + #{ $input-padding-x-sm });
+                left: calc( #{ $kendo-button-inner-calc-size } + #{ $input-padding-x-sm });
             }
         }
     }
@@ -267,7 +267,7 @@
         }
         .k-link {
             padding: $picker-select-padding-y $picker-select-padding-x;
-            width: if( $use-picker-select-width, $button-inner-calc-size, null );
+            width: if( $use-picker-select-width, $kendo-button-inner-calc-size, null );
             height: 100%;
             border-width: 0;
             border-style: solid;
@@ -283,7 +283,7 @@
         .k-i-warning {
             position: absolute;
             top: 50%;
-            right: calc( #{ $button-inner-calc-size } * 2 + #{ $input-padding-x-sm });
+            right: calc( #{ $kendo-button-inner-calc-size } * 2 + #{ $input-padding-x-sm });
             transform: translateY(-50%);
             overflow: visible;
         }
@@ -301,7 +301,7 @@
 
             .k-i-warning {
                 right: auto;
-                left: calc( #{ $button-inner-calc-size } * 2 + #{ $input-padding-x-sm });
+                left: calc( #{ $kendo-button-inner-calc-size } * 2 + #{ $input-padding-x-sm });
             }
         }
     }
@@ -314,7 +314,7 @@
         }
 
         .k-datetime-buttongroup {
-            padding: $button-padding-x;
+            padding: $kendo-button-padding-x;
         }
 
         .k-datetime-selector {
@@ -503,7 +503,7 @@
         right: 0;
         transform: translateY(-50%);
         width: 100%;
-        height: $button-inner-calc-size;
+        height: $kendo-button-inner-calc-size;
         z-index: 1;
         border-width: $time-highlight-size 0;
         border-style: solid;

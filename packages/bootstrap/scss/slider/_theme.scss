@@ -1,14 +1,1 @@
 @import "~@progress/kendo-theme-default/scss/slider/_theme.scss";
-
-@include exports("slider/theme/bootstrap") {
-
-    .k-slider {
-
-        .k-button {
-            &:active,
-            &.k-state-active {
-                @include box-shadow( $slider-button-focused-shadow );
-            }
-        }
-    }
-}
