@@ -9,12 +9,4 @@
         padding-bottom: #{$window-inner-padding-y / 2};
     }
 
-    .k-dialog-buttongroup {
-
-        .k-button {
-            @include box-shadow( none );
-            min-width: 64px;
-        }
-    }
-
 }
