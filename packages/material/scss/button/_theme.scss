@@ -60,17 +60,6 @@
     }
 
 
-    // Clear button
-    .k-button-clear,
-    .k-button.k-clear {
-
-        &:disabled,
-        &.k-state-disabled {
-            color: $button-disabled-text;
-        }
-    }
-
-
     // Button group
     .k-button-group {
         @include box-shadow( $button-shadow );
@@ -124,48 +113,4 @@
         @include box-shadow( none );
     }
 
-}
-
-
-
-
-@include exports( "clear-button/theme" ) {
-    .k-button.k-button-clear {
-        border-color: transparent !important; // sass-lint:disable-line no-important
-        color: $clear-button-text;
-        background: none !important; // sass-lint:disable-line no-important
-        box-shadow: none !important; // sass-lint:disable-line no-important
-
-        &::after {
-            display: block;
-        }
-
-        &:hover,
-        &.k-state-hover,
-        &:active,
-        &.k-state-active,
-        &:focus,
-        &.k-state-focused {
-            color: $clear-button-hover-text;
-        }
-
-        &:active,
-        &.k-state-active {
-            &::after {
-                background: transparent;
-            }
-        }
-
-        &.k-state-focused,
-        &.k-state-focused:active {
-            &::after {
-                background-color: currentColor;
-                opacity: $clear-button-focused-opacity;
-            }
-        }
-
-        &.k-state-disabled {
-            color: $button-disabled-text;
-        }
-    }
 }
