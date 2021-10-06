@@ -37,17 +37,17 @@ $datetime-focused-text: $input-focused-text !default;
 $datetime-focused-border: $input-focused-border !default;
 $datetime-focused-shadow: $input-focused-shadow !default;
 
-$datetime-select-bg: $button-bg !default;
-$datetime-select-text: $button-text !default;
-$datetime-select-border: $button-border !default;
-$datetime-select-gradient: $button-gradient !default;
+$datetime-select-bg: $kendo-button-bg !default;
+$datetime-select-text: $kendo-button-text !default;
+$datetime-select-border: $kendo-button-border !default;
+$datetime-select-gradient: $kendo-button-gradient !default;
 
-$datetime-select-hovered-bg: $button-hovered-bg !default;
-$datetime-select-hovered-text: $button-hovered-text !default;
-$datetime-select-hovered-border: $button-hovered-border !default;
-$datetime-select-hovered-gradient: $button-hovered-gradient !default;
+$datetime-select-hovered-bg: $kendo-button-hover-bg !default;
+$datetime-select-hovered-text: $kendo-button-hover-text !default;
+$datetime-select-hovered-border: $kendo-button-hover-border !default;
+$datetime-select-hovered-gradient: $kendo-button-hover-gradient !default;
 
-$datetime-select-pressed-bg: $button-active-bg !default;
-$datetime-select-pressed-text: $button-active-text !default;
-$datetime-select-pressed-border: $button-active-border !default;
-$datetime-select-pressed-gradient: $button-active-gradient !default;
+$datetime-select-pressed-bg: $kendo-button-active-bg !default;
+$datetime-select-pressed-text: $kendo-button-active-text !default;
+$datetime-select-pressed-border: $kendo-button-active-border !default;
+$datetime-select-pressed-gradient: $kendo-button-active-gradient !default;
