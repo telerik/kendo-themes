@@ -7,11 +7,11 @@ $grid-group-footer-second-cell-border: 0px !default;
 $grid-header-first-border: 1px !default;
 $grid-sorted-icon-spacing: 4px !default;
 $grid-header-menu-icon-spacing: 14px !default;
-$grid-group-indicator-border-radius: calc( #{$font-size} + #{$button-padding-y} ) !default;
+$grid-group-indicator-border-radius: calc( #{$font-size} + #{$kendo-button-padding-y} ) !default;
 $grid-group-indicator-gap: 8px !default;
 
 $grid-group-dropclue-height: calc( #{$font-size * 2} + #{$padding-y * 2} ) !default;
-$grid-group-dropclue-top: calc( ( #{$button-calc-size} + #{$grid-grouping-header-padding-y * 2} - #{$grid-group-dropclue-height} ) / 2) !default;
+$grid-group-dropclue-top: calc( ( #{$kendo-button-calc-size} + #{$grid-grouping-header-padding-y * 2} - #{$grid-group-dropclue-height} ) / 2) !default;
 
 @import "~@progress/kendo-theme-default/scss/grid/_layout.scss";
 
@@ -21,11 +21,6 @@ $grid-group-dropclue-top: calc( ( #{$button-calc-size} + #{$grid-grouping-header
         .k-checkbox-label,
         .k-radio-label {
             line-height: normal;
-        }
-
-        .k-button,
-        .k-button:active {
-            box-shadow: none;
         }
 
         .k-group-footer td {
@@ -63,10 +58,6 @@ $grid-group-dropclue-top: calc( ( #{$button-calc-size} + #{$grid-grouping-header
             .k-dropdown-operator .k-dropdown-wrap {
                 border-width: 0;
             }
-
-            .k-button.k-button-icon {
-                box-shadow: none;
-            }
         }
 
         .k-header-column-menu {
@@ -97,7 +88,7 @@ $grid-group-dropclue-top: calc( ( #{$button-calc-size} + #{$grid-grouping-header
 
         .k-group-indicator {
             border-width: 0;
-            line-height: $button-line-height;
+            line-height: $kendo-button-line-height;
         }
     }
 

@@ -11,10 +11,10 @@
 
     .k-timeline-track-item:hover .k-timeline-circle::before,
     .k-timeline-track-item.k-state-hover .k-timeline-circle::before {
-        opacity: $flat-button-hover-opacity;
+        opacity: $kendo-flat-button-hover-opacity;
     }
 
     .k-timeline-track-item.k-state-focus .k-timeline-circle::before {
-        opacity: $flat-button-focus-opacity;
+        opacity: $kendo-flat-button-focus-opacity;
     }
 }
