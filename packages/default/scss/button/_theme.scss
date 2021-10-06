@@ -1,132 +1,248 @@
 @include exports( "button/theme" ) {
 
     // Solid button
-    .k-button {
+    .k-button-solid-base {
         @include fill(
-            $button-text,
-            $button-bg,
-            $button-border,
-            $button-gradient
+            $kendo-button-text,
+            $kendo-button-bg,
+            $kendo-button-border,
+            $kendo-button-gradient
         );
-        @include box-shadow( $button-shadow );
+        @include box-shadow( $kendo-button-shadow );
 
         // Hover state
         &:hover,
-        &.k-state-hover {
+        &.k-hover {
             @include fill(
-                $button-hovered-text,
-                $button-hovered-bg,
-                $button-hovered-border,
-                $button-hovered-gradient
+                $kendo-button-hover-text,
+                $kendo-button-hover-bg,
+                $kendo-button-hover-border,
+                $kendo-button-hover-gradient
             );
-            @include box-shadow( $button-hovered-shadow );
+            @include box-shadow( $kendo-button-hover-shadow );
         }
 
-        // Focused state
+        // Focus state
         &:focus,
-        &.k-state-focus,
-        &.k-state-focused {
-            @include box-shadow( $button-focused-shadow );
+        &.k-focus {
+            @include box-shadow( $kendo-button-focus-shadow );
         }
 
         // Active state
         &:active,
-        &.k-state-active {
+        &.k-active {
             @include fill(
-                $button-active-text,
-                $button-active-bg,
-                $button-active-border,
-                $button-active-gradient
+                $kendo-button-active-text,
+                $kendo-button-active-bg,
+                $kendo-button-active-border,
+                $kendo-button-active-gradient
             );
-            @include box-shadow( $button-active-shadow );
+            @include box-shadow( $kendo-button-active-shadow );
         }
 
         // Selected state
-        &.k-state-selected {
+        &.k-selected {
             @include fill(
-                $button-selected-text,
-                $button-selected-bg,
-                $button-selected-border,
-                $button-selected-gradient
+                $kendo-button-selected-text,
+                $kendo-button-selected-bg,
+                $kendo-button-selected-border,
+                $kendo-button-selected-gradient
             );
-            @include box-shadow( $button-selected-shadow );
+            @include box-shadow( $kendo-button-selected-shadow );
         }
 
         // Disabled state
         &:disabled,
-        &.k-state-disabled {
+        &.k-disabled {
             @include fill(
-                $button-disabled-text,
-                $button-disabled-bg,
-                $button-disabled-border,
-                $button-disabled-gradient
+                $kendo-button-disabled-text,
+                $kendo-button-disabled-bg,
+                $kendo-button-disabled-border,
+                $kendo-button-disabled-gradient
             );
-            @include box-shadow( $button-disabled-shadow );
+            @include box-shadow( $kendo-button-disabled-shadow );
         }
-
-    }
-    .k-button.k-primary {
-        @extend .k-button-solid-primary !optional;
     }
 
-    $_shade-fn: get-function( $solid-button-shade-function );
+    $_shade-fn: get-function( $kendo-solid-button-shade-function );
 
-    @each $name, $color in $button-theme-colors {
-        $_button-text: contrast-wcag( $color );
-        $_button-bg: if( $solid-button-shade-bg-amount, call( $_shade-fn, $color, $solid-button-shade-bg-amount ), null );
-        $_button-border: if( $solid-button-shade-border-amount, call( $_shade-fn, $color, $solid-button-shade-border-amount ), null );
+    @each $name, $color in $kendo-button-theme-colors {
+        @if (name != "base") {
+            $_button-text: contrast-wcag( $color );
+            $_button-bg: if( $kendo-solid-button-shade-bg-amount, call( $_shade-fn, $color, $kendo-solid-button-shade-bg-amount ), null );
+            $_button-border: if( $kendo-solid-button-shade-border-amount, call( $_shade-fn, $color, $kendo-solid-button-shade-border-amount ), null );
 
-        $_button-hover-text: null;
-        $_button-hover-bg: if( $solid-button-hover-shade-bg-amount, call( $_shade-fn, $color, $solid-button-hover-shade-bg-amount ), null );
-        $_button-hover-border: if( $solid-button-hover-shade-border-amount, call( $_shade-fn, $color, $solid-button-hover-shade-border-amount ), null );
+            $_button-hover-text: null;
+            $_button-hover-bg: if( $kendo-solid-button-hover-shade-bg-amount, call( $_shade-fn, $color, $kendo-solid-button-hover-shade-bg-amount ), null );
+            $_button-hover-border: if( $kendo-solid-button-hover-shade-border-amount, call( $_shade-fn, $color, $kendo-solid-button-hover-shade-border-amount ), null );
 
-        $_button-active-text: null;
-        $_button-active-bg: if( $solid-button-active-shade-bg-amount, call( $_shade-fn, $color, $solid-button-active-shade-bg-amount ), null );
-        $_button-active-border: if( $solid-button-active-shade-border-amount, call( $_shade-fn, $color, $solid-button-active-shade-border-amount ), null );
+            $_button-active-text: null;
+            $_button-active-bg: if( $kendo-solid-button-active-shade-bg-amount, call( $_shade-fn, $color, $kendo-solid-button-active-shade-bg-amount ), null );
+            $_button-active-border: if( $kendo-solid-button-active-shade-border-amount, call( $_shade-fn, $color, $kendo-solid-button-active-shade-border-amount ), null );
 
-        .k-button-solid.k-button-solid-#{$name} {
-            @include fill(
-                $_button-text,
-                $_button-bg,
-                $_button-border,
-                $solid-button-gradient
-            );
+            .k-button-solid.k-button-solid-#{$name} {
+                @include fill(
+                    $_button-text,
+                    $_button-bg,
+                    $_button-border,
+                    $kendo-solid-button-gradient
+                );
+
+                // Hover state
+                &:hover,
+                &.k-hover {
+                    @include fill(
+                        $_button-hover-text,
+                        $_button-hover-bg,
+                        $_button-hover-border
+                    );
+                }
+
+                // Focus state
+                &:focus,
+                &.k-focus {
+                    @if ( $kendo-solid-button-shadow ) {
+                        box-shadow: 0 0 $kendo-solid-button-shadow-blur $kendo-solid-button-shadow-spread rgba( $_button-border, $kendo-solid-button-shadow-opacity );
+                    }
+                }
+
+                // Active state
+                &:active,
+                &.k-active {
+                    @include fill(
+                        $_button-active-text,
+                        $_button-active-bg,
+                        $_button-active-border
+                    );
+                }
+
+                // Selected
+                &.k-state-selected {
+                    @include fill(
+                        $_button-active-text,
+                        $_button-active-bg,
+                        $_button-active-border
+                    );
+                }
+
+                // Disabled state
+                &:disabled,
+                &.k-disabled {
+                    @include fill(
+                        $kendo-button-disabled-text,
+                        $kendo-button-disabled-bg,
+                        $kendo-button-disabled-border,
+                        $kendo-button-disabled-gradient
+                    );
+                    @include box-shadow( $kendo-button-disabled-shadow );
+                }
+            }
+        }
+    }
+
+
+    // Outline button
+    @each $name, $color in $kendo-button-theme-colors {
+        .k-button-outline.k-button-outline-#{$name} {
+            @include box-shadow( none );
+            border-color: currentColor;
+            color: $color;
+            background-color: transparent;
 
             // Hover state
             &:hover,
-            &.k-state-hover {
+            &.k-hover {
                 @include fill(
-                    $_button-hover-text,
-                    $_button-hover-bg,
-                    $_button-hover-border
+                    contrast-wcag( $color ),
+                    $color,
+                    $color
                 );
             }
 
             // Focus state
             &:focus,
-            &.k-state-focus {
-                @if ( $solid-button-shadow ) {
-                    box-shadow: 0 0 $solid-button-shadow-blur $solid-button-shadow-spread rgba( $_button-border, $solid-button-shadow-opacity );
+            &.k-focus {
+                @if $kendo-outline-button-shadow {
+                    box-shadow: 0 0 $kendo-outline-button-shadow-blur $kendo-outline-button-shadow-spread rgba( $color, $kendo-outline-button-shadow-opacity );
                 }
             }
 
             // Active state
             &:active,
-            &.k-state-active {
+            &.k-active {
                 @include fill(
-                    $_button-active-text,
-                    $_button-active-bg,
-                    $_button-active-border
+                    contrast-wcag( $color ),
+                    $color,
+                    $color
                 );
             }
 
             // Selected
-            &.k-state-selected {
+            &.k-selected {
                 @include fill(
-                    $_button-active-text,
-                    $_button-active-bg,
-                    $_button-active-border
+                    contrast-wcag( $color ),
+                    $color,
+                    $color
                 );
+            }
+
+            // Disabled state
+            &:disabled,
+            &.k-disabled {
+                color: $kendo-button-disabled-text;
+            }
+        }
+    }
+
+
+    // Flat button
+    @each $name, $color in map-merge( $kendo-button-theme-colors, ( "base": inherit ) ) {
+        .k-button-flat-#{$name} {
+            color: $color;
+
+            // Disabled state
+            &:disabled,
+            &.k-disabled {
+                color: $kendo-button-disabled-text;
+            }
+        }
+    }
+
+
+    // Link button
+    @each $name, $color in map-merge( $kendo-button-theme-colors, ( "base": $kendo-button-text ) ) {
+        .k-button-link-#{$name} {
+            color: $color;
+
+            // Hover
+            &:hover,
+            &.k-hover {
+                color: try-shade( $color, 2 );
+            }
+
+            // Focus
+            &:focus,
+            &.k-focus {
+                @if ( $kendo-link-button-shadow ) {
+                    box-shadow: 0 0 $kendo-link-button-shadow-blur $kendo-link-button-shadow-spread rgba( $color, $kendo-link-button-shadow-opacity );
+                }
+            }
+
+            // Active
+            &:active,
+            &.k-active {
+                color: try-shade( $color, 2 );
+            }
+
+            // Selected
+            &.k-selected {
+                color: try-shade( $color, 2 );
+            }
+
+            // Disabled state
+            &:disabled,
+            &.k-disabled {
+                color: $kendo-button-disabled-text;
             }
         }
     }
@@ -142,229 +258,8 @@
 
     // Split button
     .k-split-button:focus,
-    .k-split-button.k-state-focus,
-    .k-split-button.k-state-focused {
-        @include box-shadow( $button-focused-shadow );
-    }
-
-}
-
-
-
-
-@include exports( "outline-button/theme" ) {
-
-    // Outline button
-    .k-button-outline {
-        @include box-shadow( none );
-        border-color: currentColor;
-        color: $button-text;
-        background-color: transparent;
-
-        // Hover state
-        &:hover,
-        &.k-state-hover {
-            @include fill(
-                contrast-wcag( $button-text ),
-                $button-text,
-                $button-text
-            );
-        }
-
-        // Focused state
-        &:focus,
-        &.k-state-focus,
-        &.k-state-focused {
-            @if ($outline-button-shadow) {
-                box-shadow: 0 0 $outline-button-shadow-blur $outline-button-shadow-spread rgba( $button-text, $outline-button-shadow-opacity );
-            }
-        }
-
-        // Active state
-        &:active,
-        &.k-state-active {
-            @include fill(
-                contrast-wcag( $button-text ),
-                $button-text,
-                $button-text
-            );
-        }
-
-        // Selected state
-        &.k-state-selected {
-            @include fill(
-                contrast-wcag( $button-text ),
-                $button-text,
-                $button-text
-            );
-        }
-    }
-    .k-button-outline.k-primary {
-        @extend .k-button-outline-primary !optional;
-    }
-
-    @each $name, $color in $button-theme-colors {
-        .k-button-outline.k-button-outline-#{$name} {
-            @include box-shadow( none );
-            border-color: currentColor;
-            color: $color;
-            background-color: transparent;
-
-            // Hover state
-            &:hover,
-            &.k-state-hover {
-                @include fill(
-                    contrast-wcag( $color ),
-                    $color,
-                    $color
-                );
-            }
-
-            // Focused state
-            &:focus,
-            &.k-state-focus,
-            &.k-state-focused {
-                @if ($outline-button-shadow) {
-                    box-shadow: 0 0 $outline-button-shadow-blur $outline-button-shadow-spread rgba( $color, $outline-button-shadow-opacity );
-                }
-            }
-
-            // Active state
-            &:active,
-            &.k-state-active {
-                @include fill(
-                    contrast-wcag( $color ),
-                    $color,
-                    $color
-                );
-                box-shadow: none;
-            }
-
-            // Selected state
-            &.k-state-selected {
-                @include fill(
-                    contrast-wcag( $color ),
-                    $color,
-                    $color
-                );
-                box-shadow: none;
-            }
-        }
-    }
-
-}
-
-
-
-
-@include exports( "flat-button/theme" ) {
-
-    // Flat button
-    .k-button-flat {
-
-        &,
-        &:hover,
-        &.k-state-hover,
-        &:active,
-        &.k-state-active,
-        &:focus,
-        &.k-state-focus {
-            color: inherit;
-        }
-
-        // Disabled state
-        &:disabled,
-        &.k-state-disabled {
-            color: $button-disabled-text;
-        }
-    }
-    .k-button-flat.k-primary {
-        @extend .k-button-flat-primary !optional;
-    }
-
-    @each $name, $color in $button-theme-colors {
-        .k-button-flat.k-button-flat-#{$name} {
-
-            &,
-            &:hover,
-            &.k-state-hover,
-            &:active,
-            &.k-state-active,
-            &:focus,
-            &.k-state-focus {
-                color: $color;
-            }
-
-            // Disabled state
-            &:disabled,
-            &.k-state-disabled {
-                color: $button-disabled-text;
-            }
-        }
-    }
-
-}
-
-
-
-
-@include exports( "link-button/theme" ) {
-
-    @each $name, $color in map-merge( $button-theme-colors, ( "base": $base-text ) ) {
-        .k-button-link.k-button-link-#{$name} {
-            @include box-shadow( none );
-            color: $color;
-
-            &:hover,
-            &.k-state-hover {
-                color: try-shade( $color, 2 );
-            }
-            &:focus,
-            &.k-state-focus {
-                @if ($link-button-shadow) {
-                    box-shadow: 0 0 $link-button-shadow-blur $link-button-shadow-spread rgba( $color, $link-button-shadow-opacity );
-                }
-            }
-            &:active,
-            &.k-state-active,
-            &.k-state-selected {
-                color: try-shade( $color, 2 );
-            }
-        }
-    }
-
-}
-
-
-
-
-@include exports( "clear-button/theme" ) {
-
-    .k-button-clear {
-        color: $clear-button-text;
-
-        &:hover,
-        &.k-state-hover,
-        &:active,
-        &.k-state-active,
-        &.k-state-selected,
-        &:focus,
-        &.k-state-focus,
-        &.k-state-focused {
-            color: $clear-button-hover-text;
-        }
-
-        &:focus,
-        &.k-state-focus,
-        &.k-state-focused,
-        &.k-state-focused:active {
-            &::after {
-                background-color: currentColor;
-                opacity: $clear-button-focused-opacity;
-                display: block;
-            }
-        }
-
+    .k-split-button.k-focus {
+        @include box-shadow( $kendo-button-focus-shadow );
     }
 
 }

@@ -6,11 +6,10 @@
     .k-button {
         text-transform: uppercase;
         font-weight: 500;
-        transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1);
 
         &::before {
             display: block;
-            transition: opacity .4s cubic-bezier(.25, .8, .25, 1);
+            transition: opacity .4s cubic-bezier( .25, .8, .25, 1 );
         }
         &::after {
             display: none !important; // sass-lint:disable-line no-important
@@ -25,15 +24,6 @@
         }
     }
 
-
-    // Button group
-    .k-button-group {}
-
-
-    // Split button
-    .k-split-button {}
-
-
     // Outline button
     .k-button-outline {
         background-color: transparent !important; // sass-lint:disable-line no-important
@@ -42,43 +32,32 @@
 
 
     // Link button
-    .k-button.k-button-link {
-
+    .k-button-link {
         &:hover,
-        &.k-state-hover,
+        &.k-hover,
         &:active,
-        &.k-state-active,
-        &.k-state-selected {
+        &.k-active,
+        &.k-selected {
             &::before {
                 opacity: 0;
             }
         }
 
         &:focus,
-        &.k-state-focus {
+        &.k-focus {
             &::before {
-                opacity: $flat-button-focus-opacity;
+                opacity: $kendo-flat-button-focus-opacity;
             }
         }
     }
 
 
-    // Clear button
-    .k-button-clear,
-    .k-button.k-clear {
-        &::before {
-            display: none;
-        }
+    // Button group
+    .k-button-group {}
 
 
-        &:focus,
-        &.k-state-focus,
-        &.k-state-focused {
-            &::before {
-                display: block;
-            }
-        }
-    }
+    // Split button
+    .k-split-button {}
 
 
     // Popup button group
