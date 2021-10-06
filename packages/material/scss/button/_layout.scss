@@ -6,7 +6,7 @@
     .k-button {
         text-transform: uppercase;
         font-weight: 500;
-        transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1);
+        transition: $kendo-button-color-transition;
 
         &::before {
             display: block;
@@ -17,16 +17,7 @@
         }
     }
 
-
-    // Button group
-    .k-button-group {}
-
-
-    // Split button
-    .k-split-button {}
-
-
-    // Outline button
+    // Outline Buttons
     .k-button-outline {
         background-color: transparent !important; // sass-lint:disable-line no-important
 
@@ -38,22 +29,23 @@
     }
 
 
-    // Clear button
-    .k-button-clear,
-    .k-button.k-clear {
+    // Link Buttons
+    .k-button-link {
         &::before {
-            display: none;
+            display: none !important; // sass-lint:disable-line no-important
         }
-
-
-        &:focus,
-        &.k-state-focus,
-        &.k-state-focused {
-            &::before {
-                display: block;
-            }
+        &::after {
+            display: block !important; // sass-lint:disable-line no-important
         }
     }
+
+
+    // Button group
+    .k-button-group {}
+
+
+    // Split button
+    .k-split-button {}
 
 
     // Popup button group
