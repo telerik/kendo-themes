@@ -5,18 +5,18 @@ $colorpicker-line-height: $line-height !default;
 
 $colorpicker-select-border-width: 1px !default;
 
-$colorpicker-bg: $button-bg !default;
-$colorpicker-text: $button-text !default;
-$colorpicker-border: $button-border !default;
-$colorpicker-gradient: $button-gradient !default;
+$colorpicker-bg: $kendo-button-bg !default;
+$colorpicker-text: $kendo-button-text !default;
+$colorpicker-border: $kendo-button-border !default;
+$colorpicker-gradient: $kendo-button-gradient !default;
 
-$colorpicker-hovered-bg: $button-hovered-bg !default;
-$colorpicker-hovered-text: $button-hovered-text !default;
-$colorpicker-hovered-border: $button-hovered-border !default;
-$colorpicker-hovered-gradient: $button-hovered-gradient !default;
+$colorpicker-hovered-bg: $kendo-button-hover-bg !default;
+$colorpicker-hovered-text: $kendo-button-hover-text !default;
+$colorpicker-hovered-border: $kendo-button-hover-border !default;
+$colorpicker-hovered-gradient: $kendo-button-hover-gradient !default;
 
 $colorpicker-focused-bg: null !default;
 $colorpicker-focused-text: null !default;
 $colorpicker-focused-border: null !default;
 $colorpicker-focused-gradient: null !default;
-$colorpicker-focused-shadow: $button-focused-shadow !default;
+$colorpicker-focused-shadow: $kendo-button-focus-shadow !default;

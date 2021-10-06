@@ -66,6 +66,16 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$button-theme-colors</td>
+    <td></td>
+    <td>map-merge((base: #f5f5f5), $theme-colors )</td>
+    <td>map-merge((base: #f5f5f5), $theme-colors )</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Theme colors map for the buttons.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$button-bg</td>
     <td></td>
     <td><span class="color-preview" style="background-color: #f5f5f5"></span>#f5f5f5</td>

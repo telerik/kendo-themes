@@ -221,6 +221,16 @@ The following table lists the available variables for customizing the Material t
     </td>
 </tr>
 <tr>
+    <td>$button-theme-colors</td>
+    <td></td>
+    <td>map-merge((base: $base-bg), $theme-colors )</td>
+    <td>map-merge((base: $base-bg), $theme-colors )</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Theme colors map for the buttons.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$button-bg</td>
     <td></td>
     <td>$base-bg</td>
