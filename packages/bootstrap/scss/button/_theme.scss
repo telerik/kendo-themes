@@ -1,1 +1,82 @@
 @import "~@progress/kendo-theme-default/scss/button/_theme.scss";
+
+@include exports( "button/theme/bootstrap" ) {
+
+    // Solid Buttons
+    @each $name, $color in $kendo-button-theme-colors {
+        .k-button-solid-#{$name} {
+            @if ($name != "base")  {
+                background-image: none;
+
+                // Hover state
+                &:hover,
+                &.k-hover {
+                    color: contrast-wcag( try-darken( $color, 7.5% ) );
+                    background-color: try-darken( $color, 7.5% );
+                    border-color: try-darken( $color, 10% );
+                }
+
+                // Focus state
+                &:focus,
+                &.k-focus {
+                    box-shadow: 0 0 0 3px rgba( $color, .5 );
+                }
+
+                // Active state
+                &:active,
+                &.k-active {
+                    color: contrast-wcag( try-darken( $color, 10% ) );
+                    background-color: try-darken( $color, 10% );
+                    border-color: try-darken( $color, 12.5% );
+                }
+
+                // Selected
+                &.k-selected {
+                    color: contrast-wcag( try-darken( $color, 10% ) );
+                    background-color: try-darken( $color, 10% );
+                    border-color: try-darken( $color, 12.5% );
+                }
+            }
+        }
+    }
+
+
+    // Outline Buttons
+    @each $name, $color in $kendo-button-theme-colors {
+        .k-button-outline-#{$name} {
+            @if ($name != "base") {
+
+                // Focus state
+                &:focus,
+                &.k-focus {
+                    box-shadow: 0 0 0 3px rgba( $color, .5 );
+                }
+            }
+        }
+    }
+
+
+    // Menu button
+    .k-menu-button {}
+
+
+    // Button group
+    .k-button-group {
+
+        .k-button:focus,
+        .k-button.k-focus,
+        .k-button-outline:focus,
+        .k-button-outline.k-focus {
+            @include box-shadow( $kendo-button-group-focus-shadow );
+        }
+
+    }
+
+
+    // Split button
+    .k-split-button:focus,
+    .k-split-button.k-focus {
+        @include box-shadow( $kendo-button-focus-shadow );
+    }
+
+}

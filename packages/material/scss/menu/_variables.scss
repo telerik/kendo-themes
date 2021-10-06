@@ -21,12 +21,12 @@ $menu-item-text: null !default;
 $menu-item-border: null !default;
 $menu-item-gradient: null !default;
 
-$menu-item-hover-bg: rgba( $menu-text, $flat-button-hover-opacity * alpha( $menu-text ) ) !default;
+$menu-item-hover-bg: rgba( $menu-text, $kendo-flat-button-hover-opacity * alpha( $menu-text ) ) !default;
 $menu-item-hover-text: null !default;
 $menu-item-hover-border: null !default;
 $menu-item-hover-gradient: null !default;
 
-$menu-item-expanded-bg: rgba( $menu-text, $flat-button-active-opacity * alpha( $menu-text ) ) !default;
+$menu-item-expanded-bg: rgba( $menu-text, $kendo-flat-button-active-opacity * alpha( $menu-text ) ) !default;
 $menu-item-expanded-text: null !default;
 $menu-item-expanded-border: null !default;
 $menu-item-expanded-gradient: null !default;
