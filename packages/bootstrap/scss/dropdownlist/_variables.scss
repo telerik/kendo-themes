@@ -1,16 +1,16 @@
 // Dropdownlist
-$dropdownlist-bg: $button-bg !default;
-$dropdownlist-text: $button-text !default;
-$dropdownlist-border: $button-border !default;
-$dropdownlist-gradient: $button-gradient !default;
+$dropdownlist-bg: $kendo-button-bg !default;
+$dropdownlist-text: $kendo-button-text !default;
+$dropdownlist-border: $kendo-button-border !default;
+$dropdownlist-gradient: $kendo-button-gradient !default;
 
-$dropdownlist-hovered-bg: $button-hovered-bg !default;
-$dropdownlist-hovered-text: $button-hovered-text !default;
-$dropdownlist-hovered-border: $button-hovered-border !default;
-$dropdownlist-hovered-gradient: $button-hovered-gradient !default;
+$dropdownlist-hovered-bg: $kendo-button-hover-bg !default;
+$dropdownlist-hovered-text: $kendo-button-hover-text !default;
+$dropdownlist-hovered-border: $kendo-button-hover-border !default;
+$dropdownlist-hovered-gradient: $kendo-button-hover-gradient !default;
 
-$dropdownlist-focused-bg: $button-active-bg !default;
-$dropdownlist-focused-text: $button-active-text !default;
-$dropdownlist-focused-border: $button-active-border !default;
-$dropdownlist-focused-gradient: $button-active-gradient !default;
-$dropdownlist-focused-shadow: $button-focused-shadow !default;
+$dropdownlist-focused-bg: $kendo-button-active-bg !default;
+$dropdownlist-focused-text: $kendo-button-active-text !default;
+$dropdownlist-focused-border: $kendo-button-active-border !default;
+$dropdownlist-focused-gradient: $kendo-button-active-gradient !default;
+$dropdownlist-focused-shadow: $kendo-button-focus-shadow !default;

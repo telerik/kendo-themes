@@ -74,8 +74,8 @@
 
     // Base pager item
     %base-pager-item {
-        min-width: $button-calc-size;
-        height: $button-calc-size;
+        min-width: $kendo-button-calc-size;
+        height: $kendo-button-calc-size;
         color: inherit;
         text-align: center;
         display: inline-flex;
@@ -234,7 +234,7 @@
                 margin-right: $pager-section-spacing;
             }
 
-            height: $button-calc-size;
+            height: $kendo-button-calc-size;
             border-color: inherit;
         }
 

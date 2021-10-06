@@ -8,12 +8,12 @@ $scheduler-bg: $component-bg !default;
 $scheduler-text: $component-text !default;
 $scheduler-border: $component-border !default;
 
-$scheduler-toolbar-bg: try-shade( $button-bg, .5 ) !default;
+$scheduler-toolbar-bg: try-shade( $kendo-button-bg, .5 ) !default;
 $scheduler-toolbar-text: null !default;
 $scheduler-toolbar-border: null !default;
 $scheduler-toolbar-gradient: null !default;
 
-$scheduler-footer-bg: try-shade( $button-bg, .5 ) !default;
+$scheduler-footer-bg: try-shade( $kendo-button-bg, .5 ) !default;
 $scheduler-footer-text: null !default;
 $scheduler-footer-border: null !default;
 $scheduler-footer-gradient: null !default;

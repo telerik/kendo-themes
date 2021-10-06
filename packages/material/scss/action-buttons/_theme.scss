@@ -3,9 +3,12 @@
 @include exports("action-buttons/theme/material") {
 
     .k-actions {
-        .k-button:not(.k-primary) {
-            background-color: try-shade( $button-bg );
+
+        .k-button-solid-base {
+            background-color: try-shade( $kendo-button-bg );
+            border-color: try-shade( $kendo-button-bg );
         }
+
     }
 
 }
