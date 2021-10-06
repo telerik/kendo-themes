@@ -119,8 +119,7 @@
         @include disabled( $disabled-styling );
 
 
-        .k-link,
-        .k-button {
+        .k-link {
             cursor: default;
             outline: 0;
         }

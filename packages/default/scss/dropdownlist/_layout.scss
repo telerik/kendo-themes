@@ -41,7 +41,7 @@
             // Select
             .k-select {
                 padding: $picker-select-padding-y $picker-select-padding-x;
-                width: if( $use-picker-select-width, $button-inner-calc-size, null );
+                width: if( $use-picker-select-width, $kendo-button-inner-calc-size, null );
                 border-width: 0;
                 border-inline-start-width: $picker-select-border-width;
                 border-color: transparent;
@@ -79,8 +79,8 @@
                 display: none;
             }
             .k-select {
-                width: $button-inner-calc-size;
-                height: $button-inner-calc-size;
+                width: $kendo-button-inner-calc-size;
+                height: $kendo-button-inner-calc-size;
             }
         }
 

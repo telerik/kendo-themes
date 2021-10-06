@@ -6,12 +6,12 @@
 
         // Selected color
         .k-selected-color {
-            margin: $button-padding-y;
+            margin: $kendo-button-padding-y;
             padding: 0;
             border-width: 1px;
             border-style: solid;
-            width: ($button-line-height * 1em);
-            height: ($button-line-height * 1em);
+            width: ($kendo-button-line-height * 1em);
+            height: ($kendo-button-line-height * 1em);
             overflow: visible;
 
             .k-i-line {
