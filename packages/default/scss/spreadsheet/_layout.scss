@@ -50,14 +50,6 @@
         z-index: 2;
         top: 0;
         left: 0;
-
-        .k-button {}
-        .k-button:not(:hover) {
-            border-color: transparent;
-            color: inherit;
-            background-color: transparent;
-            background-image: none;
-        }
     }
 
 
@@ -688,15 +680,8 @@
     .k-spreadsheet-popup {
         padding: 0;
 
-        .k-button {
-            @include border-radius( 0 );
-            border-width: 0;
-            color: inherit;
-            background: none;
-        }
-        .k-button-icontext {
-            display: flex;
-            justify-content: flex-start;
+        .k-separator {
+            display: block;
         }
 
         .k-reset-color,

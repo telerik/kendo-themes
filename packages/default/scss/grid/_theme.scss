@@ -182,8 +182,8 @@
         .k-header-column-menu,
         .k-hierarchy-cell .k-icon {
             &:hover {
-                color: $button-hovered-text;
-                background-color: $button-hovered-bg;
+                color: $kendo-button-hover-text;
+                background-color: $kendo-button-hover-bg;
             }
             &:focus,
             &.k-state-focus,

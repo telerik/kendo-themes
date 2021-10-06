@@ -38,12 +38,12 @@ $input-adornment-width: $input-adornment-height !default;
 
 $input-bg: $component-bg !default;
 $input-text: $component-text !default;
-$input-border: $button-border !default;
+$input-border: $kendo-button-border !default;
 $input-shadow: null !default;
 
 $input-hovered-bg: null !default;
 $input-hovered-text: null !default;
-$input-hovered-border: $button-hovered-border !default;
+$input-hovered-border: $kendo-button-hover-border !default;
 $input-hovered-shadow: null !default;
 
 $input-focused-bg: null !default;
@@ -77,24 +77,24 @@ $picker-select-calc-size: $input-inner-calc-height !default;
 $picker-select-calc-size-sm: $input-inner-calc-height-sm !default;
 $picker-select-calc-size-lg: $input-inner-calc-height-lg !default;
 
-$picker-select-bg: $button-bg !default;
-$picker-select-text: $button-text !default;
-$picker-select-border: $button-border !default;
-$picker-select-gradient: $button-gradient !default;
+$picker-select-bg: $kendo-button-bg !default;
+$picker-select-text: $kendo-button-text !default;
+$picker-select-border: $kendo-button-border !default;
+$picker-select-gradient: $kendo-button-gradient !default;
 
-$picker-select-hovered-bg: $button-hovered-bg !default;
-$picker-select-hovered-text: $button-hovered-text !default;
-$picker-select-hovered-border: $button-hovered-border !default;
-$picker-select-hovered-gradient: $button-hovered-gradient !default;
+$picker-select-hovered-bg: $kendo-button-hover-bg !default;
+$picker-select-hovered-text: $kendo-button-hover-text !default;
+$picker-select-hovered-border: $kendo-button-hover-border !default;
+$picker-select-hovered-gradient: $kendo-button-hover-gradient !default;
 
-$picker-select-pressed-bg: $button-active-bg !default;
-$picker-select-pressed-text: $button-active-text !default;
-$picker-select-pressed-border: $button-active-border !default;
-$picker-select-pressed-gradient: $button-active-gradient !default;
+$picker-select-pressed-bg: $kendo-button-active-bg !default;
+$picker-select-pressed-text: $kendo-button-active-text !default;
+$picker-select-pressed-border: $kendo-button-active-border !default;
+$picker-select-pressed-gradient: $kendo-button-active-gradient !default;
 
 
 // Spinner
-$spinner-width: $button-inner-calc-size !default;
+$spinner-width: $kendo-button-inner-calc-size !default;
 $spinner-min-width: calc( #{$icon-size} + #{$picker-select-padding-x * 2} ) !default;
 $spinner-icon-offset: 2px !default;
 
