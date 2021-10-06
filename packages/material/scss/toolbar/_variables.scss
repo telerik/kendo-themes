@@ -14,7 +14,7 @@ $toolbar-font-family: $font-family !default;
 $toolbar-font-size: $font-size !default;
 $toolbar-line-height: (20 / 14) !default;
 
-$toolbar-inner-calc-size: calc( #{$button-calc-size} + #{$toolbar-padding-y * 2} ) !default;
+$toolbar-inner-calc-size: calc( #{$kendo-button-calc-size} + #{$toolbar-padding-y * 2} ) !default;
 
 $toolbar-bg: $component-bg !default;
 $toolbar-text: $component-text !default;

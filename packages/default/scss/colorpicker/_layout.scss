@@ -23,9 +23,9 @@
         -webkit-tap-highlight-color: $rgba-transparent;
 
         .k-selected-color {
-            margin: $button-padding-y;
-            width: calc( #{$button-inner-calc-size} - #{$button-padding-y * 2} );
-            height: calc( #{$button-inner-calc-size} - #{$button-padding-y * 2} );
+            margin: $kendo-button-padding-y;
+            width: calc( #{$kendo-button-inner-calc-size} - #{$kendo-button-padding-y * 2} );
+            height: calc( #{$kendo-button-inner-calc-size} - #{$kendo-button-padding-y * 2} );
             border-width: 1px;
             border-style: solid;
             box-sizing: border-box;
@@ -42,9 +42,9 @@
         }
 
         .k-tool-icon {
-            padding: $button-padding-y;
-            width: $button-inner-calc-size;
-            height: $button-inner-calc-size;
+            padding: $kendo-button-padding-y;
+            width: $kendo-button-inner-calc-size;
+            height: $kendo-button-inner-calc-size;
             border-width: 0;
             border-style: solid;
             border-color: inherit;
@@ -78,8 +78,8 @@
         // Select
         .k-select {
             padding: $picker-select-padding-y $picker-select-padding-x;
-            width: if( $use-picker-select-width, $button-inner-calc-size, null );
-            height: $button-inner-calc-size;
+            width: if( $use-picker-select-width, $kendo-button-inner-calc-size, null );
+            height: $kendo-button-inner-calc-size;
             border-width: 0;
             border-inline-start-width: $picker-select-border-width;
             border-style: solid;
