@@ -120,12 +120,6 @@
         display: flex;
 
         .k-pdf-export & { display: none; }
-
-
-        // Buttons
-        .k-button {
-            padding: $button-padding-y;
-        }
     }
 
 }
