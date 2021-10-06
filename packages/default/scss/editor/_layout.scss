@@ -172,9 +172,9 @@
 
         // Tool
         .k-tool {
-            padding: $button-padding-y;
-            width: $button-calc-size;
-            height: $button-calc-size;
+            padding: $kendo-button-padding-y;
+            width: $kendo-button-calc-size;
+            height: $kendo-button-calc-size;
         }
         .k-tool-text {
             display: none;
@@ -633,8 +633,8 @@
             flex-flow: row wrap;
         }
         .k-list .k-item {
-            padding: $button-padding-y;
-            height: $button-calc-size;
+            padding: $kendo-button-padding-y;
+            height: $kendo-button-calc-size;
             box-sizing: border-box;
             justify-content: center;
             flex: 1 0 33%;
