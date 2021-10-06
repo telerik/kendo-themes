@@ -15,8 +15,9 @@ class Button extends Component {
 
 function ButtonStatic(props) {
     const {
-        text,
         className: ownClassName,
+
+        text,
         type,
 
         size,
@@ -58,8 +59,6 @@ function ButtonStatic(props) {
         }
     ];
 
-    htmlAttributes.disabled = disabled;
-
     let legacyClasses = [
         ownClassName,
         'k-button',
@@ -75,6 +74,9 @@ function ButtonStatic(props) {
             'k-icon-button': Boolean( icon) === true && Boolean(text) === false
         }
     ];
+
+    // Augment attributes
+    htmlAttributes.disabled = disabled;
 
     let ariaAttr = aria
         ? {}
@@ -118,7 +120,6 @@ ButtonStatic.propTypes = {
     text: typeof '',
     icon: typeof '',
 
-    className: typeof '',
     type: typeof [ 'button', 'submit', 'reset' ],
 
     size: typeof [ 'none', 'small', 'medium', 'large' ],
@@ -137,6 +138,7 @@ ButtonStatic.propTypes = {
     aria: typeof false,
     legacy: typeof false,
 
+    className: typeof '',
     htmlAttributes: typeof []
 };
 
