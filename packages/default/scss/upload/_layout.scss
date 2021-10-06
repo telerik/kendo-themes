@@ -461,7 +461,7 @@
             .k-file-single > .k-file-name-size-wrapper,
             .k-file > .k-file-name-size-wrapper {
                 margin-left: calc( #{$upload-group-icon-size} + #{$padding-x} );
-                margin-right: calc( (#{$button-calc-size} + #{$button-padding-x} * 2) + 2em );
+                margin-right: calc( (#{$kendo-button-calc-size} + #{$kendo-button-padding-x} * 2) + 2em );
             }
         }
 
@@ -495,7 +495,7 @@
             .k-multiple-files-wrapper,
             .k-file-single > .k-file-name-size-wrapper,
             .k-file > .k-file-name-size-wrapper {
-                margin-left: calc( (#{$button-calc-size} + #{$button-padding-x} * 2) + 2em );
+                margin-left: calc( (#{$kendo-button-calc-size} + #{$kendo-button-padding-x} * 2) + 2em );
                 margin-right: calc( #{$upload-group-icon-size} + #{$padding-x} );
 
             }
