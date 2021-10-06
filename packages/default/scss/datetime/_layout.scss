@@ -222,7 +222,7 @@
         }
         .k-link {
             padding: $picker-select-padding-y $picker-select-padding-x;
-            width: if( $use-picker-select-width, $button-inner-calc-size, null );
+            width: if( $use-picker-select-width, $kendo-button-inner-calc-size, null );
             height: 100%;
             border-width: 0;
             border-style: solid;
@@ -249,7 +249,7 @@
         }
 
         .k-datetime-buttongroup {
-            padding: $button-padding-x;
+            padding: $kendo-button-padding-x;
         }
 
         .k-datetime-selector {
@@ -438,7 +438,7 @@
         right: 0;
         transform: translateY(-50%);
         width: 100%;
-        height: $button-inner-calc-size;
+        height: $kendo-button-inner-calc-size;
         z-index: 1;
         border-width: $time-highlight-size 0;
         border-style: solid;
