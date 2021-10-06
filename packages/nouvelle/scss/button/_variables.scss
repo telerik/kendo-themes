@@ -1,109 +1,109 @@
-$button-padding-x: map-get( $spacing, 2 ) !default;
-$button-padding-y: map-get( $spacing, 1 ) !default;
+$kendo-button-padding-x: map-get( $spacing, 2 ) !default;
+$kendo-button-padding-y: map-get( $spacing, 1 ) !default;
 
-$button-border-width: 1px !default;
-$button-border-style: solid !default;
+$kendo-button-border-width: 1px !default;
+$kendo-button-border-style: solid !default;
 
-$button-border-radius: map-get( $spacing, 1 ) !default;
+$kendo-button-border-radius: map-get( $spacing, 1 ) !default;
 
-$button-font-family: $font-family !default;
-$button-font-size: $font-size !default;
-$button-line-height: $line-height !default;
+$kendo-button-font-family: $font-family !default;
+$kendo-button-font-size: $font-size !default;
+$kendo-button-line-height: $line-height !default;
 
 
-/// The background of the buttons.
+/// The background of the button.
 /// @group button
-$button-bg: $interactive-bg !default;
-/// The text color of the buttons.
+$kendo-button-bg: $interactive-bg !default;
+/// The text color of the button.
 /// @group button
-$button-text: $interactive-text !default;
-/// The border color of the buttons.
+$kendo-button-text: $interactive-text !default;
+/// The border color of the button.
 /// @group button
-$button-border: $interactive-border !default;
-/// The background gradient of the buttons.
+$kendo-button-border: $interactive-border !default;
+/// The background gradient of the button.
 /// @group button
-$button-gradient: $interactive-gradient !default;
-$button-shadow: null !default;
+$kendo-button-gradient: $interactive-gradient !default;
+$kendo-button-shadow: null !default;
 
 /// The background of hovered buttons.
 /// @group button
-$button-hover-bg: try-shade( $button-bg, .5 ) !default;
+$kendo-button-hover-bg: try-shade( $kendo-button-bg, .5 ) !default;
 /// The text color of hovered buttons.
 /// @group button
-$button-hover-text: $button-text !default;
+$kendo-button-hover-text: $kendo-button-text !default;
 /// The border color of hovered buttons.
 /// @group button
-$button-hover-border: $button-border !default;
+$kendo-button-hover-border: $kendo-button-border !default;
 /// The background gradient of hovered buttons.
 /// @group button
-$button-hover-gradient: $button-gradient !default;
-$button-hover-shadow: null !default;
+$kendo-button-hover-gradient: $kendo-button-gradient !default;
+$kendo-button-hover-shadow: null !default;
 
 /// The background color of focus buttons.
 /// @group button
-$button-focus-bg: $button-hover-bg !default;
+$kendo-button-focus-bg: $kendo-button-hover-bg !default;
 /// The text color of focus buttons.
 /// @group button
-$button-focus-text: $button-hover-text !default;
+$kendo-button-focus-text: $kendo-button-hover-text !default;
 /// The border color of focus buttons.
 /// @group button
-$button-focus-border: $button-hover-border !default;
+$kendo-button-focus-border: $kendo-button-hover-border !default;
 /// The background gradient of focus buttons.
 /// @group button
-$button-focus-gradient: $button-hover-gradient !default;
-$button-focus-shadow: 0 0 0 2px rgba( if( $dark-theme, $white, $black ), .08 ) !default;
+$kendo-button-focus-gradient: $kendo-button-hover-gradient !default;
+$kendo-button-focus-shadow: 0 0 0 2px rgba( if( $dark-theme, $white, $black ), .08 ) !default;
 
 /// The background color of pressed buttons.
 /// @group button
-$button-active-bg: try-shade( $button-bg, 1 ) !default;
+$kendo-button-active-bg: try-shade( $kendo-button-bg, 1 ) !default;
 /// The text color of pressed buttons.
 /// @group button
-$button-active-text: $button-text !default;
+$kendo-button-active-text: $kendo-button-text !default;
 /// The border color of pressed buttons.
 /// @group button
-$button-active-border: $button-border !default;
+$kendo-button-active-border: $kendo-button-border !default;
 /// The background gradient of pressed buttons.
 /// @group button
-$button-active-gradient: $button-gradient !default;
-$button-active-shadow: null !default;
+$kendo-button-active-gradient: $kendo-button-gradient !default;
+$kendo-button-active-shadow: null !default;
 
 
 
 
 // Expose
 :root {
-    --kendo-button-padding-x: #{$button-padding-x};
-    --kendo-button-padding-y: #{$button-padding-y};
-    --kendo-button-border-width: #{$button-border-width};
-    --kendo-button-border-style: #{$button-border-style};
+    --kendo-button-padding-x: #{$kendo-button-padding-x};
+    --kendo-button-padding-y: #{$kendo-button-padding-y};
+    --kendo-button-border-width: #{$kendo-button-border-width};
+    --kendo-button-border-style: #{$kendo-button-border-style};
 
-    --kendo-button-border-radius: #{$button-border-radius};
+    --kendo-button-border-radius: #{$kendo-button-border-radius};
 
-    --kendo-button-font-family: #{$button-font-family};
-    --kendo-button-font-size: #{$button-font-size};
-    --kendo-button-line-height: #{$button-line-height};
+    --kendo-button-font-family: #{$kendo-button-font-family};
+    --kendo-button-font-size: #{$kendo-button-font-size};
+    --kendo-button-line-height: #{$kendo-button-line-height};
 
-    --kendo-button-bg: #{$button-bg};
-    --kendo-button-text: #{$button-text};
-    --kendo-button-border: #{$button-border};
-    --kendo-button-gradient: #{$button-gradient};
-    --kendo-button-shadow: #{$button-shadow};
+    --kendo-button-bg: #{$kendo-button-bg};
+    --kendo-button-text: #{$kendo-button-text};
+    --kendo-button-border: #{$kendo-button-border};
+    --kendo-button-gradient: #{$kendo-button-gradient};
+    --kendo-button-shadow: #{$kendo-button-shadow};
 
-    --kendo-button-hover-bg: #{$button-hover-bg};
-    --kendo-button-hover-text: #{$button-hover-text};
-    --kendo-button-hover-border: #{$button-hover-border};
-    --kendo-button-hover-gradient: #{$button-hover-gradient};
-    --kendo-button-hover-shadow: #{$button-hover-shadow};
+    --kendo-button-hover-bg: #{$kendo-button-hover-bg};
+    --kendo-button-hover-text: #{$kendo-button-hover-text};
+    --kendo-button-hover-border: #{$kendo-button-hover-border};
+    --kendo-button-hover-gradient: #{$kendo-button-hover-gradient};
+    --kendo-button-hover-shadow: #{$kendo-button-hover-shadow};
 
-    --kendo-button-focus-bg: #{$button-focus-bg};
-    --kendo-button-focus-text: #{$button-focus-text};
-    --kendo-button-focus-border: #{$button-focus-border};
-    --kendo-button-focus-gradient: #{$button-focus-gradient};
-    --kendo-button-focus-shadow: #{$button-focus-shadow};
+    --kendo-button-focus-bg: #{$kendo-button-focus-bg};
+    --kendo-button-focus-text: #{$kendo-button-focus-text};
+    --kendo-button-focus-border: #{$kendo-button-focus-border};
+    --kendo-button-focus-gradient: #{$kendo-button-focus-gradient};
+    --kendo-button-focus-shadow: #{$kendo-button-focus-shadow};
 
-    --kendo-button-active-bg: #{$button-active-bg};
-    --kendo-button-active-text: #{$button-active-text};
-    --kendo-button-active-border: #{$button-active-border};
-    --kendo-button-active-gradient: #{$button-active-gradient};
-    --kendo-button-active-shadow: #{$button-active-shadow};
+    --kendo-button-active-bg: #{$kendo-button-active-bg};
+    --kendo-button-active-text: #{$kendo-button-active-text};
+    --kendo-button-active-border: #{$kendo-button-active-border};
+    --kendo-button-active-gradient: #{$kendo-button-active-gradient};
+    --kendo-button-active-shadow: #{$kendo-button-active-shadow};
 }
