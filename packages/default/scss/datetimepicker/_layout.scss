@@ -43,7 +43,7 @@
         }
         .k-link {
             padding: $picker-select-padding-y $picker-select-padding-x;
-            width: if( $use-picker-select-width, $button-inner-calc-size, null );
+            width: if( $use-picker-select-width, $kendo-button-inner-calc-size, null );
             height: 100%;
             border-width: 0;
             border-style: solid;

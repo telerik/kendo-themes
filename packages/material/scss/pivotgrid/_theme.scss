@@ -114,7 +114,7 @@
         // Focused state
         &:focus,
         &.k-state-focused {
-            box-shadow: $button-focused-shadow;
+            box-shadow: $kendo-button-focus-shadow;
         }
 
         &.k-empty {
