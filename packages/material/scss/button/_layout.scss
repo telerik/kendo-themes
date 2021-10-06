@@ -38,24 +38,6 @@
     }
 
 
-    // Clear button
-    .k-button-clear,
-    .k-button.k-clear {
-        &::before {
-            display: none;
-        }
-
-
-        &:focus,
-        &.k-state-focus,
-        &.k-state-focused {
-            &::before {
-                display: block;
-            }
-        }
-    }
-
-
     // Popup button group
     .k-overflow-button,
     .k-overflow-group {

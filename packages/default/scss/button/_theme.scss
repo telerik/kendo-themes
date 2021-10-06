@@ -269,37 +269,3 @@
     }
 
 }
-
-
-
-
-@include exports( "clear-button/theme" ) {
-
-    .k-button-clear {
-        color: $clear-button-text;
-
-        &:hover,
-        &.k-state-hover,
-        &:active,
-        &.k-state-active,
-        &.k-state-selected,
-        &:focus,
-        &.k-state-focus,
-        &.k-state-focused {
-            color: $clear-button-hover-text;
-        }
-
-        &:focus,
-        &.k-state-focus,
-        &.k-state-focused,
-        &.k-state-focused:active {
-            &::after {
-                background-color: currentColor;
-                opacity: $clear-button-focused-opacity;
-                display: block;
-            }
-        }
-
-    }
-
-}
