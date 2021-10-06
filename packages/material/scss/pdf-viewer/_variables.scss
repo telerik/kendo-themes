@@ -8,7 +8,7 @@ $pdf-viewer-bg: $component-bg !default;
 $pdf-viewer-text: $component-text !default;
 $pdf-viewer-border: $component-border !default;
 
-$pdf-viewer-toolbar-bg: try-shade( $button-bg, .25 ) !default;
+$pdf-viewer-toolbar-bg: try-shade( $kendo-button-bg, .25 ) !default;
 $pdf-viewer-toolbar-text: null !default;
 $pdf-viewer-toolbar-border: null !default;
 $pdf-viewer-toolbar-gradient: null !default;
