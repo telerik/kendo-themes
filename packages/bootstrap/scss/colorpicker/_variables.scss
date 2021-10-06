@@ -17,21 +17,21 @@ $colorpicker-input-padding-y: $input-padding-y !default;
 
 $colorpicker-select-border-width: 1px !default;
 
-$colorpicker-bg: $button-bg !default;
-$colorpicker-text: $button-text !default;
-$colorpicker-border: $button-border !default;
-$colorpicker-gradient: $button-gradient !default;
+$colorpicker-bg: $kendo-button-bg !default;
+$colorpicker-text: $kendo-button-text !default;
+$colorpicker-border: $kendo-button-border !default;
+$colorpicker-gradient: $kendo-button-gradient !default;
 
-$colorpicker-hovered-bg: $button-hovered-bg !default;
-$colorpicker-hovered-text: $button-hovered-text !default;
-$colorpicker-hovered-border: $button-hovered-border !default;
-$colorpicker-hovered-gradient: $button-hovered-gradient !default;
+$colorpicker-hovered-bg: $kendo-button-hover-bg !default;
+$colorpicker-hovered-text: $kendo-button-hover-text !default;
+$colorpicker-hovered-border: $kendo-button-hover-border !default;
+$colorpicker-hovered-gradient: $kendo-button-hover-gradient !default;
 
-$colorpicker-focused-bg: $button-active-bg !default;
-$colorpicker-focused-text: $button-active-text !default;
-$colorpicker-focused-border: $button-active-border !default;
-$colorpicker-focused-gradient: $button-active-gradient !default;
-$colorpicker-focused-shadow: $button-focused-shadow !default;
+$colorpicker-focused-bg: $kendo-button-active-bg !default;
+$colorpicker-focused-text: $kendo-button-active-text !default;
+$colorpicker-focused-border: $kendo-button-active-border !default;
+$colorpicker-focused-gradient: $kendo-button-active-gradient !default;
+$colorpicker-focused-shadow: $kendo-button-focus-shadow !default;
 
 $colorpicker-draghandle-shadow: 0 1px 4px rgba(0, 0, 0, .5) !default;
 $colorpicker-draghandle-focused-shadow: 0 1px 4px black !default;

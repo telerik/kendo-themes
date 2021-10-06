@@ -104,12 +104,12 @@ $pivotgrid-chrome-border: $grid-border !default;
 $pivotgrid-container-bg: $grid-header-bg !default;
 $pivotgrid-row-headers-bg: null !default;
 
-$pivotgrid-button-bg: try-shade($button-bg, 1) !default;
-$pivotgrid-button-text: $button-text !default;
-$pivotgrid-button-hover-bg: try-shade($button-bg, 2) !default;
-$pivotgrid-button-hover-text: $button-text !default;
-$pivotgrid-button-active-bg: try-shade($button-bg, 2) !default;
-$pivotgrid-button-active-text: $button-text !default;
+$pivotgrid-button-bg: try-shade($kendo-button-bg, 1) !default;
+$pivotgrid-button-text: $kendo-button-text !default;
+$pivotgrid-button-hover-bg: try-shade($kendo-button-bg, 2) !default;
+$pivotgrid-button-hover-text: $kendo-button-text !default;
+$pivotgrid-button-active-bg: try-shade($kendo-button-bg, 2) !default;
+$pivotgrid-button-active-text: $kendo-button-text !default;
 
 $pivotgrid-remove-bg: $pivotgrid-button-text !default;
 $pivotgrid-remove-text: $pivotgrid-button-bg !default;
