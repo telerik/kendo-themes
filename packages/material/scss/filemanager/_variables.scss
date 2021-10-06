@@ -9,7 +9,7 @@ $filemanager-text: $component-text !default;
 $filemanager-border: $component-border !default;
 
 $filemanager-toolbar-border-width: $filemanager-border-width !default;
-$filemanager-toolbar-bg: try-shade( $button-bg, .5 ) !default;
+$filemanager-toolbar-bg: try-shade( $kendo-button-bg, .5 ) !default;
 $filemanager-toolbar-text: null !default;
 $filemanager-toolbar-border: null !default;
 $filemanager-toolbar-gradient: null !default;

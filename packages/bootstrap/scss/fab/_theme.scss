@@ -73,7 +73,7 @@
             $fab-item-icon-border
         );
         @include box-shadow($fab-item-shadow);
-        outline: $fab-border-width solid $button-bg;
+        outline: $fab-border-width solid $kendo-button-bg;
         outline-offset: -$fab-border-width;
     }
 

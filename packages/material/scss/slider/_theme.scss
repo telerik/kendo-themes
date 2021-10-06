@@ -14,15 +14,6 @@
             @include fill( $bg: $body-text );
         }
 
-        .k-button {
-            &:hover,
-            &.k-state-hover {
-                &::before {
-                    opacity: 0;
-                }
-            }
-        }
-
         .k-draghandle {
             box-sizing: border-box;
 

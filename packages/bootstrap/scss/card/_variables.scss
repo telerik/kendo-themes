@@ -62,7 +62,7 @@ $card-actions-border-width: 1px !default;
 $card-actions-gap: map-get( $spacing, 2 ) !default;
 
 $card-deck-scroll-button-radius: 0px !default;
-$card-deck-scroll-button-offset: -$button-border-width !default;
+$card-deck-scroll-button-offset: -$kendo-button-border-width !default;
 
 $card-callout-width: 1.3em !default;
 $card-callout-height: 1.3em !default;

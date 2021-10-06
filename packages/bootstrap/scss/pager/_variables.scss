@@ -16,8 +16,8 @@ $pager-focus-shadow: inset 0 0 0 2px rgba( 0, 0, 0, .08) !default;
 
 $pager-section-spacing: map-get( $spacing, 4 ) !default;
 
-$pager-item-padding-x: $button-padding-y !default;
-$pager-item-padding-y: $button-padding-y !default;
+$pager-item-padding-x: $kendo-button-padding-y !default;
+$pager-item-padding-y: $kendo-button-padding-y !default;
 $pager-item-border-width: 1px !default;
 $pager-item-border-radius: map-get( $spacing, 1 ) !default;
 $pager-item-spacing: (-1 * $pager-item-border-width) !default;
