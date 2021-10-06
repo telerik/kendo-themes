@@ -9,12 +9,12 @@
 
         .k-navigator {
             @include fill(
-                $button-text,
-                $button-bg,
-                $button-border,
-                $button-gradient
+                $kendo-button-text,
+                $kendo-button-bg,
+                $kendo-button-border,
+                $kendo-button-gradient
             );
-            @include box-shadow( $button-shadow );
+            @include box-shadow( $kendo-button-shadow );
         }
 
         .k-marker {

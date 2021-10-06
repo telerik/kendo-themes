@@ -38,7 +38,7 @@ $chat-message-box-padding-y: $input-padding-y !default;
 $chat-toolbar-padding-x: $toolbar-padding-x !default;
 $chat-toolbar-padding-y: $toolbar-padding-y !default;
 $chat-toolbar-spacing: $toolbar-spacing !default;
-$chat-toolbar-bg: try-shade( $button-bg, .5 ) !default;
+$chat-toolbar-bg: try-shade( $kendo-button-bg, .5 ) !default;
 $chat-toolbar-text: $toolbar-text !default;
 $chat-toolbar-border: inherit !default;
 
