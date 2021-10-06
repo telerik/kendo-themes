@@ -79,7 +79,7 @@ $picker-select-calc-size-lg: $input-inner-calc-height-lg !default;
 
 
 // Spinner
-$spinner-width: $button-inner-calc-size !default;
+$spinner-width: $kendo-button-inner-calc-size !default;
 $spinner-min-width: calc( #{$icon-size} + #{$picker-select-padding-x * 2} ) !default;
 $spinner-icon-offset: 2px !default;
 
