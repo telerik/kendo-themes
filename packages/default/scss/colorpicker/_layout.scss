@@ -19,9 +19,9 @@
         -webkit-tap-highlight-color: $rgba-transparent;
 
         .k-selected-color {
-            padding: $button-padding-y;
-            width: $button-inner-calc-size;
-            height: $button-inner-calc-size;
+            padding: $kendo-button-padding-y;
+            width: $kendo-button-inner-calc-size;
+            height: $kendo-button-inner-calc-size;
             border-width: 0;
             border-style: solid;
             border-color: inherit;
@@ -46,9 +46,9 @@
         }
 
         .k-tool-icon {
-            padding: $button-padding-y;
-            width: $button-inner-calc-size;
-            height: $button-inner-calc-size;
+            padding: $kendo-button-padding-y;
+            width: $kendo-button-inner-calc-size;
+            height: $kendo-button-inner-calc-size;
             border-width: 0;
             border-style: solid;
             border-color: inherit;
@@ -98,7 +98,7 @@
         // Select
         .k-select {
             padding: $picker-select-padding-y $picker-select-padding-x;
-            width: if( $use-picker-select-width, $button-inner-calc-size, null );
+            width: if( $use-picker-select-width, $kendo-button-inner-calc-size, null );
             border-width: 0 0 0 $colorpicker-select-border-width;
             border-style: solid;
             border-color: inherit;
