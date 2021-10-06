@@ -3,7 +3,21 @@
 @include exports("action-buttons/layout/material") {
 
     .k-actions {
+
+        // Button
         .k-button {
+            @include box-shadow( none );
+        }
+
+
+        // Button group
+        .k-button-group {
+            @include box-shadow( none );
+        }
+
+
+        // Split button
+        .k-split-button {
             @include box-shadow( none );
         }
     }

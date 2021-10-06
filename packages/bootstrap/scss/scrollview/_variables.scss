@@ -9,10 +9,10 @@ $scrollview-text: $component-text !default;
 $scrollview-border: $component-border !default;
 
 $scrollview-pagebutton-size: 10px !default;
-$scrollview-pagebutton-bg: $button-bg !default;
-$scrollview-pagebutton-border: $button-border !default;
-$scrollview-pagebutton-primary-bg: $primary-button-bg !default;
-$scrollview-pagebutton-primary-border: $primary-button-border !default;
+$scrollview-pagebutton-bg: $kendo-button-bg !default;
+$scrollview-pagebutton-border: $kendo-button-border !default;
+$scrollview-pagebutton-primary-bg: $primary !default;
+$scrollview-pagebutton-primary-border: $primary !default;
 $scrollview-pagebutton-shadow: 0 0 0 2px rgba(0, 0, 0, .13) !default;
 
 $scrollview-pager-offset: 0 !default;

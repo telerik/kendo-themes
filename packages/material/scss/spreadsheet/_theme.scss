@@ -156,29 +156,29 @@
     }
     .k-spreadsheet-filter {
         @include fill(
-            $button-text,
-            $button-bg,
-            $button-border,
-            $button-gradient
+            $kendo-button-text,
+            $kendo-button-bg,
+            $kendo-button-border,
+            $kendo-button-gradient
         );
-        box-shadow: inset 0 0 0 1px $button-border;
+        box-shadow: inset 0 0 0 1px $kendo-button-border;
 
         &.k-state-active {
             @include fill(
-                $button-active-text,
-                $button-active-bg,
-                $button-active-border,
-                $button-active-gradient
+                $kendo-button-active-text,
+                $kendo-button-active-bg,
+                $kendo-button-active-border,
+                $kendo-button-active-gradient
             );
-            @include box-shadow( $button-active-shadow );
+            @include box-shadow( $kendo-button-active-shadow );
         }
 
         &:hover {
             @include fill(
-                $button-hovered-text,
-                $button-hovered-bg,
-                $button-hovered-border,
-                $button-hovered-gradient
+                $kendo-button-hover-text,
+                $kendo-button-hover-bg,
+                $kendo-button-hover-border,
+                $kendo-button-hover-gradient
             );
         }
     }
