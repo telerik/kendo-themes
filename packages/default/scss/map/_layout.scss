@@ -72,21 +72,6 @@
 
 
         // Buttons
-        .k-button {
-            margin: 0;
-            padding: 0;
-            width: auto;
-            height: auto;
-            border-radius: 100%;
-            line-height: 1;
-            box-shadow: none;
-            position: absolute;
-
-            &:not(:hover) {
-                border-color: transparent;
-                background: none;
-            }
-        }
         .k-navigator-up {
             transform: translateX(-50%);
             top: $map-navigator-padding;
@@ -118,12 +103,6 @@
         display: flex;
 
         .k-pdf-export & { display: none; }
-
-
-        // Buttons
-        .k-button {
-            padding: $button-padding-y;
-        }
     }
 
 }
