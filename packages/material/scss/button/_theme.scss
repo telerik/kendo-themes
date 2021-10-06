@@ -2,85 +2,137 @@
 
 @include exports( "button/theme/material" ) {
 
-    // Flat button
-    .k-button-flat {
+    // Solid Buttons
+    @each $name, $color in $kendo-button-theme-colors {
+        .k-button-solid-#{$name} {
+            @if ($name != "base") {
+                background-image: none;
+                @include box-shadow( $kendo-button-shadow );
 
-        &:disabled,
-        &.k-state-disabled {
-            color: $button-disabled-text;
-        }
-    }
-    .k-button-flat.k-primary {
-        color: $primary-button-bg;
+                // Hover state
+                &:hover,
+                &.k-hover {
+                    background-color: $color;
+                    border-color: $color;
+                }
 
-        &:disabled,
-        &.k-state-disabled {
-            color: $button-disabled-text;
-        }
-    }
+                // Focus state
+                &:focus,
+                &.k-focus {
+                    @include box-shadow( $kendo-button-shadow );
+                }
 
+                // Active state
+                &:active,
+                &.k-active {
+                    @include box-shadow( $kendo-button-active-shadow );
+                    background-color: $color;
+                    border-color: $color;
+                }
 
-    // Outline button
-    .k-button-outline {
-        @include box-shadow( none );
-        color: $button-text;
-
-        &:hover,
-        &.k-state-hover,
-        &:active,
-        &.k-state-active,
-        &.k-state-selected,
-        &:focus,
-        &.k-state-focus {
-            color: $button-text;
-        }
-
-        &:disabled,
-        &.k-state-disabled {
-            color: $button-disabled-text;
-        }
-    }
-    .k-button-outline.k-primary {
-        color: $primary-button-bg;
-
-        &:hover,
-        &.k-state-hover,
-        &:active,
-        &.k-state-active,
-        &.k-state-selected,
-        &:focus,
-        &.k-state-focus {
-            color: $primary-button-bg;
-        }
-
-        &:disabled,
-        &.k-state-disabled {
-            color: $button-disabled-text;
+                // Selected
+                &.k-selected {
+                    background-color: $color;
+                    border-color: $color;
+                }
+            }
         }
     }
 
 
-    // Clear button
-    .k-button-clear,
-    .k-button.k-clear {
+    // Outline Buttons
+    @each $name, $color in $kendo-button-theme-colors {
+        .k-button-outline-#{$name} {
+            @if ($name == "base") {
 
-        &:disabled,
-        &.k-state-disabled {
-            color: $button-disabled-text;
+                // Hover state
+                &:hover,
+                &.k-hover {
+                    color: $kendo-button-text;
+                }
+
+                // Active state
+                &:active,
+                &.k-active {
+                    color: $kendo-button-text;
+                }
+
+                // Selected state
+                &.k-selected {
+                    color: $kendo-button-text;
+                }
+            } @else {
+                // Hover state
+                &:hover,
+                &.k-hover {
+                    color: $color;
+                }
+
+                // Active state
+                &:active,
+                &.k-active {
+                    color: $color;
+                }
+
+                // Selected state
+                &.k-selected {
+                    color: $color;
+                }
+            }
         }
     }
+
+
+    // Link Buttons
+    @each $name, $color in $kendo-button-theme-colors {
+        .k-button-link-#{$name} {
+
+            // Disabled state
+            &:disabled,
+            &.k-disabled {
+                background: none;
+            }
+        }
+    }
+
+
+    // Menu button
+    .k-menu-button {}
 
 
     // Button group
     .k-button-group {
-        @include box-shadow( $button-shadow );
+
+        .k-button:focus,
+        .k-button.k-focus,
+        .k-button-outline:focus,
+        .k-button-outline.k-focus {
+            @include box-shadow( $kendo-button-group-focus-shadow );
+        }
+
+    }
+
+
+    // Split button
+    .k-split-button:focus,
+    .k-split-button.k-focus {
+        @include box-shadow( $kendo-button-focus-shadow );
+    }
+
+}
+
+
+@include exports( "button/theme/material/legacy" ) {
+    // Button group
+    .k-button-group {
+        @include box-shadow( $kendo-button-shadow );
 
         .k-button {
             @include box-shadow( none );
         }
 
         &:disabled,
-        &.k-state-disabled {
+        &.k-disabled {
             @include box-shadow( none );
             opacity: 1;
         }
@@ -89,7 +141,7 @@
 
     // Split button
     .k-split-button {
-        @include box-shadow( $button-shadow );
+        @include box-shadow( $kendo-button-shadow );
 
         .k-button {
             @include box-shadow( none );
@@ -102,11 +154,11 @@
 
         > .k-button:last-child:hover,
         > .k-split-button-arrow:hover {
-            color: $button-text;
+            color: $kendo-button-text;
         }
 
         &:disabled,
-        &.k-state-disabled {
+        &.k-disabled {
             @include box-shadow( none );
             opacity: 1;
         }
@@ -119,53 +171,8 @@
 
     // Variant button group
     .k-button-group-flat,
-    .k-button-group-bare,
     .k-button-group-outline {
         @include box-shadow( none );
     }
 
-}
-
-
-
-
-@include exports( "clear-button/theme" ) {
-    .k-button.k-button-clear {
-        border-color: transparent !important; // sass-lint:disable-line no-important
-        color: $clear-button-text;
-        background: none !important; // sass-lint:disable-line no-important
-        box-shadow: none !important; // sass-lint:disable-line no-important
-
-        &::after {
-            display: block;
-        }
-
-        &:hover,
-        &.k-state-hover,
-        &:active,
-        &.k-state-active,
-        &:focus,
-        &.k-state-focused {
-            color: $clear-button-hover-text;
-        }
-
-        &:active,
-        &.k-state-active {
-            &::after {
-                background: transparent;
-            }
-        }
-
-        &.k-state-focused,
-        &.k-state-focused:active {
-            &::after {
-                background-color: currentColor;
-                opacity: $clear-button-focused-opacity;
-            }
-        }
-
-        &.k-state-disabled {
-            color: $button-disabled-text;
-        }
-    }
 }
