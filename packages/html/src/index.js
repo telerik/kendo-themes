@@ -13,6 +13,12 @@ window.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+// Dependencies
 export * from './component';
+
+// Generic content
 export * from './icon/index';
+
+// Basic forms
 export * from './button/index';
+export * from './textbox/index';
