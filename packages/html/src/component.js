@@ -34,9 +34,8 @@ class Component {
         if (isFunction( this.render )) {
             let htmlObj = this.render();
             let htmlFragment = renderDOM(htmlObj);
-            let html = htmlFragment.outerHTML;
 
-            this.element.outerHTML = html;
+            this.element.replaceWith( htmlFragment );
         }
     }
 
