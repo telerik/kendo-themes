@@ -102,12 +102,28 @@ function jsxs( type, config ) {
 
 function renderDOM( jsxNode, container = null ) {
 
-    const nodeType = jsxNode.type;
+    // Handle native nodes
+    switch (jsxNode.nodeType) {
+        case Node.TEXT_NODE:
+        case Node.ELEMENT_NODE:
+        case Node.DOCUMENT_FRAGMENT_NODE: {
+
+            if ( container !== null ) {
+                container.appendChild( jsxNode );
+            }
+
+            return jsxNode;
+        }
+        default:
+            break;
+    }
+
+    const jsxNodeType = jsxNode.type;
     const { children = [], ...props } = jsxNode.props;
     let element;
     let textNode;
 
-    if ( nodeType === JSX_TEXT ) {
+    if ( jsxNodeType === JSX_TEXT ) {
         textNode = document.createTextNode( props.text || '' );
 
         if ( container !== null ) {
@@ -117,10 +133,10 @@ function renderDOM( jsxNode, container = null ) {
         return textNode;
     }
 
-    if ( nodeType === JSX_FRAGMENT ) {
+    if ( jsxNodeType === JSX_FRAGMENT ) {
         element = document.createDocumentFragment();
     } else {
-        element = document.createElement(nodeType);
+        element = document.createElement(jsxNodeType);
     }
 
     props.className = classNames( props.className );
@@ -137,9 +153,13 @@ function renderDOM( jsxNode, container = null ) {
         }
     }
 
-    children.forEach( child => {
-        renderDOM( child, element );
-    });
+    if (children.nodeType === Node.DOCUMENT_FRAGMENT_NODE) {
+        element.append( children );
+    } else {
+        children.forEach( child => {
+            renderDOM( child, element );
+        });
+    }
 
     if ( container !== null ) {
         container.appendChild( element );
