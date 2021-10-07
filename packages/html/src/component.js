@@ -4,6 +4,8 @@ import { renderDOM, attrToProps } from '../lib/jsx-runtime';
 const globalDefaultProps = {
     legacy: true,
 
+    className: '',
+
     aria: false,
     disabled: false,
 };
