@@ -4,27 +4,27 @@
     .k-switch {
 
         &:hover,
-        &.k-state-hover {
+        &.k-hover {
 
-            .k-switch-container {
-                @include box-shadow( $switch-container-hovered-shadow );
+            .k-switch-track {
+                @include box-shadow( $kendo-switch-track-hover-shadow );
             }
         }
 
         &:focus,
-        &.k-state-focused {
+        &.k-focus {
 
-            .k-switch-container {
+            .k-switch-track {
                 outline: none;
-                @include box-shadow( $switch-container-focused-shadow );
+                @include box-shadow( $kendo-switch-track-focus-shadow );
             }
         }
     }
 
 
     // Switch track
-    .k-switch-container {
-        @include box-shadow( $switch-container-shadow );
+    .k-switch-track {
+        @include box-shadow( $kendo-switch-track-shadow );
     }
 
 
@@ -32,57 +32,57 @@
     .k-switch-on {
 
         // Normal state
-        .k-switch-container {
+        .k-switch-track {
             @include fill(
-                $switch-on-text,
-                $switch-on-bg,
-                $switch-on-border,
-                $switch-on-gradient
+                $kendo-switch-on-text,
+                $kendo-switch-on-bg,
+                $kendo-switch-on-border,
+                $kendo-switch-on-gradient
             );
         }
-        .k-switch-handle {
+        .k-switch-thumb {
             @include fill(
-                $switch-on-handle-text,
-                $switch-on-handle-bg,
-                $switch-on-handle-border,
-                $switch-on-handle-gradient
+                $kendo-switch-on-thumb-text,
+                $kendo-switch-on-thumb-bg,
+                $kendo-switch-on-thumb-border,
+                $kendo-switch-on-thumb-gradient
             );
-            @include box-shadow( $switch-on-handle-shadow );
+            @include box-shadow( $kendo-switch-on-thumb-shadow );
         }
 
-        // Hover state
+        // Hover
         &:hover,
-        &.k-state-hover {
-            .k-switch-container {
+        &.k-hover {
+            .k-switch-track {
                 @include fill(
-                    $switch-on-hovered-text,
-                    $switch-on-hovered-bg,
-                    $switch-on-hovered-border,
-                    $switch-on-hovered-gradient
+                    $kendo-switch-on-hover-text,
+                    $kendo-switch-on-hover-bg,
+                    $kendo-switch-on-hover-border,
+                    $kendo-switch-on-hover-gradient
                 );
             }
 
-            .k-switch-handle {
+            .k-switch-thumb {
                 @include fill(
-                    $switch-on-handle-hovered-text,
-                    $switch-on-handle-hovered-bg,
-                    $switch-on-handle-hovered-border,
-                    $switch-on-handle-hovered-gradient
+                    $kendo-switch-on-thumb-hover-text,
+                    $kendo-switch-on-thumb-hover-bg,
+                    $kendo-switch-on-thumb-hover-border,
+                    $kendo-switch-on-thumb-hover-gradient
                 );
             }
         }
 
-        // Focus state
+        // Focus
         &:focus,
-        &.k-state-focused {
-            @include box-shadow( $switch-on-focused-shadow );
+        &.k-focus {
+            @include box-shadow( $kendo-switch-on-focus-shadow );
 
-            .k-switch-container {
+            .k-switch-track {
                 @include fill(
-                    $switch-on-focused-text,
-                    $switch-on-focused-bg,
-                    $switch-on-focused-border,
-                    $switch-on-focused-gradient
+                    $kendo-switch-on-focus-text,
+                    $kendo-switch-on-focus-bg,
+                    $kendo-switch-on-focus-border,
+                    $kendo-switch-on-focus-gradient
                 );
             }
         }
@@ -97,57 +97,57 @@
     .k-switch-off {
 
         // Normal state
-        .k-switch-container {
+        .k-switch-track {
             @include fill(
-                $switch-off-text,
-                $switch-off-bg,
-                $switch-off-border,
-                $switch-off-gradient
+                $kendo-switch-off-text,
+                $kendo-switch-off-bg,
+                $kendo-switch-off-border,
+                $kendo-switch-off-gradient
             );
         }
-        .k-switch-handle {
+        .k-switch-thumb {
             @include fill(
-                $switch-off-handle-text,
-                $switch-off-handle-bg,
-                $switch-off-handle-border,
-                $switch-off-handle-gradient
+                $kendo-switch-off-thumb-text,
+                $kendo-switch-off-thumb-bg,
+                $kendo-switch-off-thumb-border,
+                $kendo-switch-off-thumb-gradient
             );
-            @include box-shadow( $switch-off-handle-shadow );
+            @include box-shadow( $kendo-switch-off-thumb-shadow );
         }
 
-        // Hover state
+        // Hover
         &:hover,
-        &.k-state-hover {
-            .k-switch-container {
+        &.k-hover {
+            .k-switch-track {
                 @include fill(
-                    $switch-off-hovered-text,
-                    $switch-off-hovered-bg,
-                    $switch-off-hovered-border,
-                    $switch-off-hovered-gradient
+                    $kendo-switch-off-hover-text,
+                    $kendo-switch-off-hover-bg,
+                    $kendo-switch-off-hover-border,
+                    $kendo-switch-off-hover-gradient
                 );
             }
 
-            .k-switch-handle {
+            .k-switch-thumb {
                 @include fill(
-                    $switch-off-handle-hovered-text,
-                    $switch-off-handle-hovered-bg,
-                    $switch-off-handle-hovered-border,
-                    $switch-off-handle-hovered-gradient
+                    $kendo-switch-off-thumb-hover-text,
+                    $kendo-switch-off-thumb-hover-bg,
+                    $kendo-switch-off-thumb-hover-border,
+                    $kendo-switch-off-thumb-hover-gradient
                 );
             }
         }
 
-        // Focus state
+        // Focus
         &:focus,
-        &.k-state-focused {
-            @include box-shadow( $switch-off-focused-shadow );
+        &.k-focus {
+            @include box-shadow( $kendo-switch-off-focus-shadow );
 
-            .k-switch-container {
+            .k-switch-track {
                 @include fill(
-                    $switch-off-focused-text,
-                    $switch-off-focused-bg,
-                    $switch-off-focused-border,
-                    $switch-off-focused-gradient
+                    $kendo-switch-off-focus-text,
+                    $kendo-switch-off-focus-bg,
+                    $kendo-switch-off-focus-border,
+                    $kendo-switch-off-focus-gradient
                 );
             }
         }

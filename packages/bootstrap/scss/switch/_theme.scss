@@ -3,33 +3,33 @@
 @include exports( "switch/theme/bootstrap" ) {
 
     // Switch
-    .k-switch.k-state-disabled {
+    .k-switch.k-disabled {
         opacity: 1;
         filter: none;
     }
 
-    .k-switch-on.k-state-disabled {
+    .k-switch-on.k-disabled {
 
         // Switch track
-        .k-switch-container {
-            background-color: rgba( $switch-on-bg, .5 );
+        .k-switch-track {
+            background-color: rgba( $kendo-switch-on-bg, .5 );
         }
 
         // Switch thumb
-        .k-switch-handle {
-            background-color: contrast-wcag( $switch-on-bg );
+        .k-switch-thumb {
+            background-color: contrast-wcag( $kendo-switch-on-bg );
         }
     }
-    .k-switch-off.k-state-disabled {
+    .k-switch-off.k-disabled {
 
         // Switch track
-        .k-switch-container {
+        .k-switch-track {
             background-color: $input-disabled-bg;
         }
 
         // Switch thumb
-        .k-switch-handle {
-            background-color: $switch-off-handle-bg;
+        .k-switch-thumb {
+            background-color: $kendo-switch-off-thumb-bg;
         }
     }
 
