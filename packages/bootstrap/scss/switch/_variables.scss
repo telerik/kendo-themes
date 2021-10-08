@@ -1,179 +1,194 @@
 // Switch
-$switch-size: 56px !default;
-$switch-border-radius: 9999px !default;
 
 /// Font family of the switch.
 /// @group switch
-$switch-font-family: $font-family !default;
-$switch-font-size: $font-size-xs !default;
-$switch-line-height: $line-height !default;
+$kendo-switch-font-family: null !default;
+/// Line height of the switch.
+/// @group switch
+$kendo-switch-line-height: null !default;
 
-$switch-track-size: null !default;
 /// Border width of the switch track.
 /// @group switch
-$switch-container-border-width: 1px !default;
-$switch-container-padding-x: 2px !default;
-$switch-container-padding-y: $switch-container-padding-x !default;
+$kendo-switch-track-border-width: 1px !default;
 
-$switch-handle-size: 24px !default;
-$switch-handle-border-radius: 9999px !default;
 /// Border width of the switch thumb.
 /// @group switch
-$switch-handle-border-width: null !default;
-$switch-thumb-start-x: 0px !default;
-// TODO: Remove width property from jQuery and Blazor, and do not use 100% for thumb X calc
-$switch-thumb-end-x: calc( 100% - #{$switch-handle-size} ) !default;
+$kendo-switch-thumb-border-width: null !default;
 
-$switch-label-offset: null !default;
-$switch-label-width: null !default;
 /// Text transform of the switch label.
 /// @group switch
-$switch-label-text-transform: null !default;
+$kendo-switch-label-text-transform: null !default;
 /// Display of the switch label.
 /// @group switch
-$switch-label-display: none !default;
+$kendo-switch-label-display: none !default;
 
-$switch-container-shadow: null !default;
-$switch-container-hovered-shadow: null !default;
-$switch-container-focused-shadow: null !default;
+/// Map with the different switch sizes.
+/// @group switch
+$kendo-switch-sizes: (
+    sm: ( font-size: null, track-width: 48px, track-height: 26px, thumb-width: 20px, thumb-height: 20px, thumb-offset: 3px, label-offset: null ),
+    md: ( font-size: null, track-width: 56px, track-height: 30px, thumb-width: 24px, thumb-height: 24px, thumb-offset: 3px, label-offset: null ),
+    lg: ( font-size: null, track-width: 64px, track-height: 34px, thumb-width: 28px, thumb-height: 28px, thumb-offset: 3px, label-offset: null )
+) !default;
 
 /// The background of the track when the switch is not checked.
 /// @group switch
-$switch-off-bg: $input-bg !default;
+$kendo-switch-off-track-bg: $component-bg !default;
 /// The text color of the track when the switch is not checked.
 /// @group switch
-$switch-off-text: null !default;
+$kendo-switch-off-track-text: null !default;
 /// The border color of the track when the switch is not checked.
 /// @group switch
-$switch-off-border: $gray-500 !default;
+$kendo-switch-off-track-border: $gray-500 !default;
 /// The background gradient of the track when the switch is not checked.
 /// @group switch
-$switch-off-gradient: null !default;
-$switch-off-shadow: null !default;
+$kendo-switch-off-track-gradient: null !default;
 
 /// The background of the track when the hovered switch is not checked.
 /// @group switch
-$switch-off-hovered-bg: null !default;
+$kendo-switch-off-track-hover-bg: null !default;
 /// The text color of the track when the hovered switch is not checked.
 /// @group switch
-$switch-off-hovered-text: null !default;
+$kendo-switch-off-track-hover-text: null !default;
 /// The border color of the track when the hovered switch is not checked.
 /// @group switch
-$switch-off-hovered-border: null !default;
+$kendo-switch-off-track-hover-border: null !default;
 /// The background gradient of the track when the hovered switch is not checked.
 /// @group switch
-$switch-off-hovered-gradient: null !default;
+$kendo-switch-off-track-hover-gradient: null !default;
 
 /// The background of the track when the focused switch is not checked.
 /// @group switch
-$switch-off-focused-bg: null !default;
+$kendo-switch-off-track-focus-bg: null !default;
 /// The text color of the track when the focused switch is not checked.
 /// @group switch
-$switch-off-focused-text: null !default;
+$kendo-switch-off-track-focus-text: null !default;
 /// The border color of the track when the focused switch is not checked.
 /// @group switch
-$switch-off-focused-border: $input-focused-border !default;
+$kendo-switch-off-track-focus-border: mix( $kendo-switch-off-track-bg, $primary ) !default;
 /// The background gradient of the track when the focused switch is not checked.
 /// @group switch
-$switch-off-focused-gradient: null !default;
+$kendo-switch-off-track-focus-gradient: null !default;
 /// The ring around the track when the focused switch is not checked.
 /// @group switch
-$switch-off-focused-shadow: $input-focused-shadow !default;
+$kendo-switch-off-track-focus-ring: .25rem solid rgba( $primary, .25 ) !default;
+
+/// The background of the track when the disabled switch is not checked.
+/// @group switch
+$kendo-switch-off-track-disabled-bg: if( $dark-theme, $gray-800, $gray-200 ) !default;
+/// The text color of the track when the disabled switch is not checked.
+/// @group switch
+$kendo-switch-off-track-disabled-text: null !default;
+/// The border color of the track when the disabled switch is not checked.
+/// @group switch
+$kendo-switch-off-track-disabled-border: null !default;
+/// The background gradient of the track when the disabled switch is not checked.
+/// @group switch
+$kendo-switch-off-track-disabled-gradient: null !default;
 
 /// The background of the thumb when the switch is not checked.
 /// @group switch
-$switch-off-handle-bg: $gray-500 !default;
+$kendo-switch-off-thumb-bg: $gray-500 !default;
 /// The text color of the thumb when the switch is not checked.
 /// @group switch
-$switch-off-handle-text: null !default;
+$kendo-switch-off-thumb-text: null !default;
 /// The border color of the thumb when the switch is not checked.
 /// @group switch
-$switch-off-handle-border: null !default;
+$kendo-switch-off-thumb-border: null !default;
 /// The background gradient of the thumb when the switch is not checked.
 /// @group switch
-$switch-off-handle-gradient: null !default;
-$switch-off-handle-shadow: null !default;
+$kendo-switch-off-thumb-gradient: null !default;
 
 /// The background of the thumb when the hovered switch is not checked.
 /// @group switch
-$switch-off-handle-hovered-bg: null !default;
+$kendo-switch-off-thumb-hover-bg: null !default;
 /// The text color of the thumb when the hovered switch is not checked.
 /// @group switch
-$switch-off-handle-hovered-text: null !default;
+$kendo-switch-off-thumb-hover-text: null !default;
 /// The border color of the thumb when the hovered switch is not checked.
 /// @group switch
-$switch-off-handle-hovered-border: null !default;
+$kendo-switch-off-thumb-hover-border: null !default;
 /// The background gradient of the thumb when the hovered switch is not checked.
 /// @group switch
-$switch-off-handle-hovered-gradient: null !default;
+$kendo-switch-off-thumb-hover-gradient: null !default;
 
 
 /// The background of the track when the switch is checked.
 /// @group switch
-$switch-on-bg: $primary !default;
+$kendo-switch-on-track-bg: $primary !default;
 /// The text color of the track when the switch is checked.
 /// @group switch
-$switch-on-text: null !default;
+$kendo-switch-on-track-text: null !default;
 /// The border color of the track when the switch is checked.
 /// @group switch
-$switch-on-border: $primary !default;
+$kendo-switch-on-track-border: $kendo-switch-on-track-bg !default;
 /// The background gradient of the track when the switch is checked.
 /// @group switch
-$switch-on-gradient: null !default;
-$switch-on-shadow: null !default;
+$kendo-switch-on-track-gradient: null !default;
 
-/// The background of the track wen the hovered switch is checked.
+/// The background of the track when the hovered switch is checked.
 /// @group switch
-$switch-on-hovered-bg: null !default;
-/// The text color of the track wen the hovered switch is checked.
+$kendo-switch-on-track-hover-bg: null !default;
+/// The text color of the track when the hovered switch is checked.
 /// @group switch
-$switch-on-hovered-text: null !default;
-/// The border color of the track wen the hovered switch is checked.
+$kendo-switch-on-track-hover-text: null !default;
+/// The border color of the track when the hovered switch is checked.
 /// @group switch
-$switch-on-hovered-border: null !default;
-/// The background gradient of the track wen the hovered switch is checked.
+$kendo-switch-on-track-hover-border: null !default;
+/// The background gradient of the track when the hovered switch is checked.
 /// @group switch
-$switch-on-hovered-gradient: null !default;
+$kendo-switch-on-track-hover-gradient: null !default;
 
-/// The background of the track wen the focused switch is checked.
+/// The background of the track when the focused switch is checked.
 /// @group switch
-$switch-on-focused-bg: null !default;
-/// The text color of the track wen the focused switch is checked.
+$kendo-switch-on-track-focus-bg: null !default;
+/// The text color of the track when the focused switch is checked.
 /// @group switch
-$switch-on-focused-text: null !default;
-/// The border color of the track wen the focused switch is checked.
+$kendo-switch-on-track-focus-text: null !default;
+/// The border color of the track when the focused switch is checked.
 /// @group switch
-$switch-on-focused-border: null !default;
-/// The background gradient of the track wen the focused switch is checked.
+$kendo-switch-on-track-focus-border: null !default;
+/// The background gradient of the track when the focused switch is checked.
 /// @group switch
-$switch-on-focused-gradient: null !default;
-/// The ring around the track wen the focused switch is checked.
+$kendo-switch-on-track-focus-gradient: null !default;
+/// The ring around the track when the focused switch is checked.
 /// @group switch
-$switch-on-focused-shadow: $input-focused-shadow !default;
+$kendo-switch-on-track-focus-ring: .25rem solid rgba( $kendo-switch-on-track-border, .25 ) !default;
+
+/// The background of the track when the disabled switch is checked.
+/// @group switch
+$kendo-switch-on-track-disabled-bg: try-tint( $kendo-switch-on-track-bg, 50% ) !default;
+/// The text color of the track when the disabled switch is checked.
+/// @group switch
+$kendo-switch-on-track-disabled-text: null !default;
+/// The border color of the track when the disabled switch is checked.
+/// @group switch
+$kendo-switch-on-track-disabled-border: null !default;
+/// The background gradient of the track when the disabled switch is checked.
+/// @group switch
+$kendo-switch-on-track-disabled-gradient: null !default;
 
 /// The background of the thumb when the switch is checked.
 /// @group switch
-$switch-on-handle-bg: white !default;
+$kendo-switch-on-thumb-bg: contrast-wcag( $kendo-switch-on-track-bg ) !default;
 /// The text color of the thumb when the switch is checked.
 /// @group switch
-$switch-on-handle-text: null !default;
+$kendo-switch-on-thumb-text: null !default;
 /// The border color of the thumb when the switch is checked.
 /// @group switch
-$switch-on-handle-border: null !default;
+$kendo-switch-on-thumb-border: null !default;
 /// The background gradient of the thumb when the switch is checked.
 /// @group switch
-$switch-on-handle-gradient: null !default;
-$switch-on-handle-shadow: null !default;
+$kendo-switch-on-thumb-gradient: null !default;
 
 /// The background of the thumb when the hovered switch is checked.
 /// @group switch
-$switch-on-handle-hovered-bg: null !default;
+$kendo-switch-on-thumb-hover-bg: null !default;
 /// The text color of the thumb when the hovered switch is checked.
 /// @group switch
-$switch-on-handle-hovered-text: null !default;
+$kendo-switch-on-thumb-hover-text: null !default;
 /// The border color of the thumb when the hovered switch is checked.
 /// @group switch
-$switch-on-handle-hovered-border: null !default;
+$kendo-switch-on-thumb-hover-border: null !default;
 /// The background gradient of the thumb when the hovered switch is checked.
 /// @group switch
-$switch-on-handle-hovered-gradient: null !default;
+$kendo-switch-on-thumb-hover-gradient: null !default;
