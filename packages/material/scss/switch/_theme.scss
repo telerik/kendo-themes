@@ -5,11 +5,15 @@
     // Switch
     .k-switch {
 
+        .k-switch-thumb {
+            box-shadow: $box-shadow-depth-2;
+        }
+
         // Thumb ripple
-        &.k-switch-on .k-switch-handle::before {
+        &.k-switch-on .k-switch-thumb::before {
             background-color: inherit;
         }
-        &.k-switch-off .k-switch-handle::before {
+        &.k-switch-off .k-switch-thumb::before {
             background-color: if( $dark-theme == true, $white, $black );
         }
     }
