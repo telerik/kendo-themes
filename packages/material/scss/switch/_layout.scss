@@ -6,7 +6,7 @@
     .k-switch {
 
         // Thumb ripple
-        .k-switch-handle::before {
+        .k-switch-thumb::before {
             content: "";
             width: 200%;
             height: 200%;
@@ -21,19 +21,19 @@
             pointer-events: none;
         }
 
-        // Hover state
+        // Hover
         &:hover,
-        &.k-state-hover {
-            .k-switch-handle::before {
+        &.k-hover {
+            .k-switch-thumb::before {
                 display: block;
                 opacity: .04;
             }
         }
 
-        // Focus state
+        // Focus
         &:focus,
-        &.k-state-focused {
-            .k-switch-handle::before {
+        &.k-focus {
+            .k-switch-thumb::before {
                 display: block;
                 opacity: .12;
             }
