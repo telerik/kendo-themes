@@ -14,6 +14,10 @@
             grid-template-columns: repeat(2, 1fr);
         }
 
+        .k-numerictextbox {
+            max-width: 70px;
+        }
+
         #test-area > section {
             padding: 20px;
             display: grid;
@@ -138,19 +142,8 @@
                                                 <label>Repeat every</label>
                                             </div>
                                             <div class="k-edit-field">
-                                                <kendo-numerictextbox class="k-widget k-numerictextbox" style="width: 70px;">
-                                                    <span class="k-numeric-wrap">
-                                                        <input class="k-input k-formatted-value" />
-                                                        <span class="k-select">
-                                                            <span class="k-link k-link-increase">
-                                                                <span class="k-icon k-i-arrow-n"></span>
-                                                            </span>
-                                                            <span class="k-link k-link-decrease">
-                                                                <span class="k-icon k-i-arrow-s"></span>
-                                                            </span>
-                                                        </span>
-                                                    </span>
-                                                </kendo-numerictextbox><span>day(s)</span>
+                                                <input is="NumericTextbox" type="number" />
+                                                <span>day(s)</span>
                                             </div>
                                         </kendo-recurrence-interval-editor>
                                         <kendo-recurrence-end-rule-editor>
@@ -166,19 +159,8 @@
                                                     <li>
                                                         <input id="k-endrule-count" type="radio" name="end" class="k-radio">
                                                         <label class="k-radio-label" for="k-endrule-count">After</label>
-                                                        <kendo-numerictextbox class="k-widget k-numerictextbox" style="width: 70px;">
-                                                            <span class="k-numeric-wrap">
-                                                                <input class="k-input k-formatted-value" />
-                                                                <span class="k-select">
-                                                                    <span class="k-link k-link-increase">
-                                                                        <span class="k-icon k-i-arrow-n"></span>
-                                                                    </span>
-                                                                    <span class="k-link k-link-decrease">
-                                                                        <span class="k-icon k-i-arrow-s"></span>
-                                                                    </span>
-                                                                </span>
-                                                            </span>
-                                                        </kendo-numerictextbox><span>occurrence(s)</span>
+                                                        <input is="NumericTextbox" type="number" />
+                                                        <span>occurrence(s)</span>
                                                     </li>
                                                     <li>
                                                         <input id="k-endrule-until" type="radio" name="end" class="k-radio">

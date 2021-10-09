@@ -49,7 +49,9 @@
                                 <tbody>
                                     <tr class="k-grid-add-row k-grid-edit-row">
                                         <td><input class="k-textbox" type="text" value="Towel" /></td>
-                                        <td><kendo-numerictextbox class="k-widget k-numerictextbox"><span class="k-numeric-wrap"><input class="k-input k-formatted-value" value="42" /><span class="k-select"><span class="k-link k-link-increase"><span class="k-icon k-i-arrow-n"></span></span><span class="k-link k-link-decrease"><span class="k-icon k-i-arrow-s"></span></span></span></span></kendo-numerictextbox></td>
+                                        <td>
+                                            <input is="NumericTextbox" type="number" value="42" />
+                                        </td>
                                         <td><input type="checkbox" /></td>
                                         <td class="k-command-cell">
                                             <button class="k-button k-grid-save-command">Add</button><!--
@@ -110,7 +112,7 @@
                         <tr class="k-grid-edit-row">
                             <td><input class="k-textbox" name="ProductName" required="required" type="text" value="Towel" /></td>
                             <td>
-                                <span class="k-widget k-numerictextbox"><span class="k-numeric-wrap k-invalid"><input class="k-formatted-value k-input" type="text" value="" /><span class="k-select"><span class="k-link k-link-increase"><span class="k-icon k-i-arrow-60-up"></span></span><span class="k-link k-link-decrease"><span class="k-icon k-i-arrow-60-down"></span></span></span></span></span>
+                                <input is="NumericTextbox" type="number" invalid />
                                 <div class="k-tooltip k-validator-tooltip k-tooltip-error k-invalid-msg"><span class="k-tooltip-icon k-icon k-i-warning"></span><span class="k-tooltip-content">Price</span><div class="k-callout k-callout-n"></div></div>
                             </td>
                             <td><input type="checkbox" class="k-checkbox" id="e77452cd-b3b5-4dc9-8210-17007584b695" name="Discontinued" /><label class="k-checkbox-label" for="e77452cd-b3b5-4dc9-8210-17007584b695">​</label></td>
