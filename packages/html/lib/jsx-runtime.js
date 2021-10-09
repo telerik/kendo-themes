@@ -7,7 +7,8 @@ const JSX_TEXT = '#text';
 const attrMap = {
     'class': 'className',
     themecolor: 'themeColor',
-    fillmode: 'fillMode'
+    fillmode: 'fillMode',
+    showspinbuttons: 'showSpinButtons'
 };
 
 const booleanAttr = new Set([
@@ -22,6 +23,9 @@ const booleanAttr = new Set([
 
     'checked',
     'indeterminate',
+
+    'valid',
+    'invalid',
 
     'aria'
 ]);
