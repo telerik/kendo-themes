@@ -3,11 +3,8 @@
     :where(.k-autocomplete) {
         padding: 0;
         width: 100%;
-        border-width: 1px;
         border-width: var( --kendo-autocomplete-border-width, 1px );
-        border-style: solid;
         border-style: var( --kendo-autocomplete-border-style, solid );
-        border-radius: 0;
         border-radius: var( --kendo-autocomplete-border-radius, 0 );
         outline: 0;
         color: inherit;

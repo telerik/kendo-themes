@@ -3,11 +3,8 @@
     :where(.k-textbox) {
         padding: 0;
         width: 100%;
-        border-width: 1px;
         border-width: var( --kendo-textbox-border-width, 1px );
-        border-style: solid;
         border-style: var( --kendo-textbox-border-style, solid );
-        border-radius: 0;
         border-radius: var( --kendo-textbox-border-radius, 0 );
         outline: 0;
         color: inherit;

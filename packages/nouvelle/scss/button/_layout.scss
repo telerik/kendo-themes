@@ -4,11 +4,8 @@
         padding: 0;
         padding-inline: var( --kendo-button-padding-x, 0 );
         padding-block: var( --kendo-button-padding-y, 0 );
-        border-width: $button-border-width;
         border-width: var( --kendo-button-border-width, 1px );
-        border-style: $button-border-style;
         border-style: var( --kendo-button-border-style, solid );
-        border-radius: 0;
         border-radius: var( --kendo-button-border-radius, 0 );
         outline: 0;
         color: inherit;
