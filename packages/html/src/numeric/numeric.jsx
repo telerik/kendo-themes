@@ -1,46 +1,24 @@
 import * as styles from '../../utils/styles';
 import { Component, globalDefaultProps } from '../component';
-import { InputStatic, InputPrefixStatic } from '../input/index';
+import { InputStatic } from '../input/index';
+import { SpinButtonStatic } from '../spinbutton/index';
 
-class Textbox extends Component {
-
-    init() {
-        let children = Array.from(this.element.children);
-        let prefix = document.createDocumentFragment();
-        let suffix = document.createDocumentFragment();
-
-        children.forEach( child => {
-            const isName = child.getAttribute('is');
-
-            if (isName === 'InputPrefix') {
-                prefix.append( ...child.childNodes );
-            }
-
-            if (isName === 'InputSuffix') {
-                suffix.append( ...child.childNodes );
-            }
-        });
-
-        this._props.prefix = prefix;
-        this._props.suffix = suffix;
-    }
+class NumericTextbox extends Component {
 
     render() {
-        return <TextboxStatic {...this.props} />;
+        return <NumericTextboxStatic {...this.props} />;
     }
 }
 
-function TextboxStatic(props) {
+function NumericTextboxStatic(props) {
 
     const {
         className: ownClassName,
 
-        type,
         value,
         placeholder,
 
-        prefix,
-        suffix,
+        showSpinButtons,
 
         size,
         rounded,
@@ -57,12 +35,15 @@ function TextboxStatic(props) {
         legacy,
 
         ...htmlAttributes
+
     } = props;
 
     const inputAttributes = {
-        type,
+        type: 'text',
         value,
         placeholder,
+
+        className: "k-formatted-value",
 
         disabled
     };
@@ -71,12 +52,12 @@ function TextboxStatic(props) {
         ? {}
         : {};
 
-    let textboxClasses = [
+    let numericClasses = [
         ownClassName,
-        'k-textbox',
-        styles.sizeClass( size, 'k-textbox' ),
+        'k-numerictextbox',
+        styles.sizeClass( size, 'k-numerictextbox' ),
         styles.roundedClass( rounded ),
-        styles.fillModeClass( fillMode, 'k-textbox' ),
+        styles.fillModeClass( fillMode, 'k-numerictextbox' ),
         {
             'k-hover': hover === true,
             'k-focus': focus === true,
@@ -88,44 +69,49 @@ function TextboxStatic(props) {
 
     let legacyClasses = [
         ownClassName,
-        'k-textbox',
+        'k-widget',
+        'k-numerictextbox',
         {
-            'k-state-hover': hover === true,
-            'k-state-focus': focus === true,
-            'k-state-invalid': invalid === true,
-            'k-state-required': required === true,
             'k-state-disabled': disabled === true
         }
     ];
 
-    // Augment attributes
-    inputAttributes.type = type !== 'password' ? 'text' : type;
+    let legacyWrapClasses = [
+        ownClassName,
+        'k-numeric-wrap',
+        {
+            'k-state-hover': hover === true,
+            'k-state-focused': focus === true,
+            'k-state-invalid': invalid === true
+        }
+    ];
 
     if (legacy) {
         return (
             <span className={legacyClasses} {...ariaAttr} {...htmlAttributes}>
-                <InputPrefixStatic>{prefix}</InputPrefixStatic>
-                <InputStatic {...inputAttributes} />
-                <InputPrefixStatic>{suffix}</InputPrefixStatic>
+                <span className={legacyWrapClasses}>
+                    <InputStatic {...inputAttributes} />
+                    {showSpinButtons === true && <SpinButtonStatic />}
+                </span>
             </span>
         );
     }
 
     return (
-        <span className={textboxClasses} {...ariaAttr} {...htmlAttributes}>
-            {prefix}
+        <span className={numericClasses} {...ariaAttr} {...htmlAttributes}>
             <InputStatic {...inputAttributes} />
-            {suffix}
+            {showSpinButtons === true && <SpinButtonStatic className="k-input-spinner k-numeric-spinner" />}
         </span>
     );
 }
 
-TextboxStatic.defaultProps = {
+NumericTextboxStatic.defaultProps = {
     ...globalDefaultProps,
 
-    type: 'text',
     value: '',
     placeholder: '',
+
+    showSpinButtons: true,
 
     size: 'medium',
     rounded: 'medium',
@@ -133,13 +119,12 @@ TextboxStatic.defaultProps = {
     fillMode: 'solid'
 };
 
-TextboxStatic.propTypes = {
-    type: typeof [ 'text', 'password' ],
+NumericTextboxStatic.propTypes = {
+    type: typeof [ 'text' ],
     value: typeof '',
     placeholder: typeof '',
 
-    prefix: typeof document.createDocumentFragment(),
-    suffix: typeof document.createDocumentFragment(),
+    showSpinButtons: typeof true,
 
     size: typeof [ 'none', 'small', 'medium', 'large' ],
     rounded: typeof [ 'none', 'small', 'medium', 'large', 'pill' ],
@@ -160,4 +145,5 @@ TextboxStatic.propTypes = {
     htmlAttributes: typeof []
 };
 
-export { Textbox, TextboxStatic };
+export { NumericTextbox, NumericTextboxStatic };
+
