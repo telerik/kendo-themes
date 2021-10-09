@@ -16,6 +16,10 @@
             padding: 0;
         }
 
+        .k-numerictextbox {
+            max-width: 70px;
+        }
+
         /* test page overrides */
         .k-dialog-wrapper {
             position: relative;
@@ -141,19 +145,7 @@
                                                     <label>Repeat every</label>
                                                 </div>
                                                 <div class="k-edit-field">
-                                                    <kendo-numerictextbox class="k-widget k-numerictextbox" style="width: 70px;">
-                                                        <span class="k-numeric-wrap">
-                                                            <input autocomplete="off" autocorrect="off" class="k-input k-formatted-value" id="k-7d6ba977-90e9-4ae1-aa47-6162fc02963c">
-                                                            <span class="k-select">
-                                                                <span class="k-link k-link-increase">
-                                                                    <span class="k-icon k-i-arrow-n"></span>
-                                                                </span>
-                                                                <span class="k-link k-link-decrease">
-                                                                    <span class="k-icon k-i-arrow-s"></span>
-                                                                </span>
-                                                            </span>
-                                                        </span>
-                                                    </kendo-numerictextbox>
+                                                    <input is="NumericTextbox" type="number" />
                                                     <span>week(s)</span>
                                                 </div>
                                             </kendo-recurrence-interval-editor>
@@ -186,19 +178,7 @@
                                                         <li>
                                                             <input id="k-endrule-count" type="radio" name="end" class="k-radio">
                                                             <label class="k-radio-label" for="k-endrule-count">After</label>
-                                                            <kendo-numerictextbox class="k-widget k-numerictextbox" style="width: 70px;">
-                                                                <span class="k-numeric-wrap k-state-disabled">
-                                                                    <input autocomplete="off" autocorrect="off" class="k-input k-formatted-value" id="k-be122636-7527-492b-9591-7eb689c1da33" disabled="">
-                                                                    <span class="k-select">
-                                                                        <span class="k-link k-link-increase">
-                                                                            <span class="k-icon k-i-arrow-n"></span>
-                                                                        </span>
-                                                                        <span class="k-link k-link-decrease">
-                                                                            <span class="k-icon k-i-arrow-s"></span>
-                                                                        </span>
-                                                                    </span>
-                                                                </span>
-                                                            </kendo-numerictextbox>
+                                                            <input is="NumericTextbox" type="number" disabled />
                                                             <span>occurrence(s)</span>
                                                         </li>
                                                         <li>
