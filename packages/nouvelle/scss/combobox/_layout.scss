@@ -3,11 +3,8 @@
     :where(.k-combobox) {
         padding: 0;
         width: 100%;
-        border-width: 1px;
         border-width: var( --kendo-combobox-border-width, 1px );
-        border-style: solid;
         border-style: var( --kendo-combobox-border-style, solid );
-        border-radius: 0;
         border-radius: var( --kendo-combobox-border-radius, 0 );
         outline: 0;
         color: inherit;
