@@ -23,3 +23,4 @@ export * from './icon/index';
 export * from './button/index';
 export * from './textbox/index';
 export * from './numeric/index';
+export * from './masked/index';
