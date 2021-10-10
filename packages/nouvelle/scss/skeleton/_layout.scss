@@ -1,0 +1,13 @@
+@mixin kendo-skeleton--core-layout() {
+
+    // sass-lint:disable-block no-important no-ids
+    #test-area .k-skeleton {
+        display: none !important;
+    }
+
+}
+
+
+
+
+@mixin kendo-skeleton--extended-layout() {}

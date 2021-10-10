@@ -1,0 +1,13 @@
+@mixin kendo-overlay--core-layout() {
+
+    // sass-lint:disable-block no-important no-ids
+    #test-area .k-overlay {
+        display: none !important;
+    }
+
+}
+
+
+
+
+@mixin kendo-overlay--extended-layout() {}

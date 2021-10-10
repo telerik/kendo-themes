@@ -1,0 +1,13 @@
+@mixin kendo-filter--core-layout() {
+
+    // sass-lint:disable-block no-important no-ids
+    #test-area .k-filter {
+        display: none !important;
+    }
+
+}
+
+
+
+
+@mixin kendo-filter--extended-layout() {}

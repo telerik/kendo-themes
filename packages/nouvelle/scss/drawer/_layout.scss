@@ -1,0 +1,13 @@
+@mixin kendo-drawer--core-layout() {
+
+    // sass-lint:disable-block no-important no-ids
+    #test-area .k-drawer {
+        display: none !important;
+    }
+
+}
+
+
+
+
+@mixin kendo-drawer--extended-layout() {}

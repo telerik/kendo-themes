@@ -1,0 +1,13 @@
+@mixin kendo-avatar--core-layout() {
+
+    // sass-lint:disable-block no-important no-ids
+    #test-area .k-avatar {
+        display: none !important;
+    }
+
+}
+
+
+
+
+@mixin kendo-avatar--extended-layout() {}

@@ -1,7 +1,7 @@
 @mixin kendo-input--core-layout() {
 
     // Input
-    .k-input {
+    :where(.k-input) {
         padding-inline: var( --kendo-input-padding-x, 0 );
         padding-block: var( --kendo-input-padding-y, 0 );
         width: 100%;
@@ -10,7 +10,7 @@
         color: inherit;
         background: none;
         font: inherit;
-        flex-shrink: 1;
+        flex: 1;
         overflow: hidden;
         text-overflow: ellipsis;
     }
@@ -75,7 +75,7 @@
 
     // Searchbar
     .k-searchbar {
-        flex: 1 1 auto;
+        flex: 1;
         display: flex;
         flex-flow: row nowrap;
     }
@@ -83,9 +83,9 @@
 
     // Legacy wrappers
     .k-dropdown-wrap {
+        flex: 1;
         display: flex;
         flex-flow: row nowrap;
-        flex: 1 1 auto;
     }
 
 }

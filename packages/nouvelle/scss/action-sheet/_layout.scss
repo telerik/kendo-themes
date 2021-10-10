@@ -1,0 +1,14 @@
+@mixin kendo-action-sheet--core-layout() {
+
+    // sass-lint:disable-block no-important no-ids
+    #test-area .k-actionsheet,
+    #test-area .k-action-sheet {
+        display: none !important;
+    }
+
+}
+
+
+
+
+@mixin kendo-action-sheet--extended-layout() {}

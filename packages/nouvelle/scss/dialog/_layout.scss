@@ -1,0 +1,13 @@
+@mixin kendo-dialog--core-layout() {
+
+    // sass-lint:disable-block no-important no-ids
+    #test-area .k-dialog {
+        display: none !important;
+    }
+
+}
+
+
+
+
+@mixin kendo-dialog--extended-layout() {}

@@ -1,0 +1,13 @@
+@mixin kendo-panelbar--core-layout() {
+
+    // sass-lint:disable-block no-important no-ids
+    #test-area .k-panelbar {
+        display: none !important;
+    }
+
+}
+
+
+
+
+@mixin kendo-panelbar--extended-layout() {}

@@ -1,0 +1,20 @@
+// Module meta
+$_kendo-module-meta: (
+    name: "searchbox",
+    dependencies: ()
+);
+
+
+// Component
+@import "_variables.scss";
+@import "_layout.scss";
+@import "_theme.scss";
+
+
+// Register
+@include register-module( $_kendo-module-meta... ) {
+    @include kendo-searchbox--core-layout();
+    @include kendo-searchbox--extended-layout();
+    @include kendo-searchbox--core-theme();
+    @include kendo-searchbox--extended-theme();
+}

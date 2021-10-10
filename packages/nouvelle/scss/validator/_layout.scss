@@ -1,0 +1,13 @@
+@mixin kendo-validator--core-layout() {
+
+    // sass-lint:disable-block no-important no-ids
+    #test-area .k-validator {
+        display: none !important;
+    }
+
+}
+
+
+
+
+@mixin kendo-validator--extended-layout() {}

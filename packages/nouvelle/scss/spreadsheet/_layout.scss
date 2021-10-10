@@ -1,0 +1,13 @@
+@mixin kendo-spreadsheet--core-layout() {
+
+    // sass-lint:disable-block no-important no-ids
+    #test-area .k-spreadsheet {
+        display: none !important;
+    }
+
+}
+
+
+
+
+@mixin kendo-spreadsheet--extended-layout() {}

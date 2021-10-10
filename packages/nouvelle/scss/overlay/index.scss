@@ -1,0 +1,20 @@
+// Module meta
+$_kendo-module-meta: (
+    name: "overlay",
+    dependencies: ()
+);
+
+
+// Component
+@import "_variables.scss";
+@import "_layout.scss";
+@import "_theme.scss";
+
+
+// Register
+@include register-module( $_kendo-module-meta... ) {
+    @include kendo-overlay--core-layout();
+    @include kendo-overlay--extended-layout();
+    @include kendo-overlay--core-theme();
+    @include kendo-overlay--extended-theme();
+}

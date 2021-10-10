@@ -1,0 +1,13 @@
+@mixin kendo-notification--core-layout() {
+
+    // sass-lint:disable-block no-important no-ids
+    #test-area .k-notification {
+        display: none !important;
+    }
+
+}
+
+
+
+
+@mixin kendo-notification--extended-layout() {}

@@ -1,0 +1,20 @@
+// Module meta
+$_kendo-module-meta: (
+    name: "numerictextbox",
+    dependencies: ()
+);
+
+
+// Component
+@import "_variables.scss";
+@import "_layout.scss";
+@import "_theme.scss";
+
+
+// Register
+@include register-module( $_kendo-module-meta... ) {
+    @include kendo-numerictextbox--core-layout();
+    @include kendo-numerictextbox--extended-layout();
+    @include kendo-numerictextbox--core-theme();
+    @include kendo-numerictextbox--extended-theme();
+}

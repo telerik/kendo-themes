@@ -1,0 +1,13 @@
+@mixin kendo-fab--core-layout() {
+
+    // sass-lint:disable-block no-important no-ids
+    #test-area .k-fab {
+        display: none !important;
+    }
+
+}
+
+
+
+
+@mixin kendo-fab--extended-layout() {}

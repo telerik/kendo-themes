@@ -1,0 +1,20 @@
+// Module meta
+$_kendo-module-meta: (
+    name: "tabstrip",
+    dependencies: ()
+);
+
+
+// Component
+@import "_variables.scss";
+@import "_layout.scss";
+@import "_theme.scss";
+
+
+// Register
+@include register-module( $_kendo-module-meta... ) {
+    @include kendo-tabstrip--core-layout();
+    @include kendo-tabstrip--extended-layout();
+    @include kendo-tabstrip--core-theme();
+    @include kendo-tabstrip--extended-theme();
+}

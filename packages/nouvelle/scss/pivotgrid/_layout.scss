@@ -1,0 +1,17 @@
+@mixin kendo-pivotgrid--core-layout() {
+
+    // sass-lint:disable-block no-important no-ids
+    #test-area .k-pivot,
+    #test-area .k-pivotgrid,
+    #test-area .k-fieldselector,
+    #test-area .k-pivotgrid-configurator,
+    #test-area .k-calculated-field {
+        display: none !important;
+    }
+
+}
+
+
+
+
+@mixin kendo-pivotgrid--extended-layout() {}

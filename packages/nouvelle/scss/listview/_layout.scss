@@ -1,0 +1,13 @@
+@mixin kendo-listview--core-layout() {
+
+    // sass-lint:disable-block no-important no-ids
+    #test-area .k-listview {
+        display: none !important;
+    }
+
+}
+
+
+
+
+@mixin kendo-listview--extended-layout() {}

@@ -1,0 +1,13 @@
+@mixin kendo-dropdowngrid--core-layout() {
+
+    // sass-lint:disable-block no-important no-ids
+    #test-area .k-dropdowngrid {
+        display: none !important;
+    }
+
+}
+
+
+
+
+@mixin kendo-dropdowngrid--extended-layout() {}

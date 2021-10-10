@@ -1,0 +1,15 @@
+@mixin kendo-colorpicker--core-layout() {
+
+    // sass-lint:disable-block no-important no-ids
+    #test-area .k-colorpicker,
+    #test-area .k-flatcolorpicker,
+    #test-area .k-colorpalette {
+        display: none !important;
+    }
+
+}
+
+
+
+
+@mixin kendo-colorpicker--extended-layout() {}

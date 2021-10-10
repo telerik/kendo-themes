@@ -1,0 +1,13 @@
+@mixin kendo-treeview--core-layout() {
+
+    // sass-lint:disable-block no-important no-ids
+    #test-area .k-treeview {
+        display: none !important;
+    }
+
+}
+
+
+
+
+@mixin kendo-treeview--extended-layout() {}

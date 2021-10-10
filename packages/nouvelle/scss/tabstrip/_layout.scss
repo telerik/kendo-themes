@@ -1,0 +1,13 @@
+@mixin kendo-tabstrip--core-layout() {
+
+    // sass-lint:disable-block no-important no-ids
+    #test-area .k-tabstrip {
+        display: none !important;
+    }
+
+}
+
+
+
+
+@mixin kendo-tabstrip--extended-layout() {}

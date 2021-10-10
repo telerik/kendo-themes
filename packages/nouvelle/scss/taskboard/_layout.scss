@@ -1,0 +1,13 @@
+@mixin kendo-taskboard--core-layout() {
+
+    // sass-lint:disable-block no-important no-ids
+    #test-area .k-taskboard {
+        display: none !important;
+    }
+
+}
+
+
+
+
+@mixin kendo-taskboard--extended-layout() {}

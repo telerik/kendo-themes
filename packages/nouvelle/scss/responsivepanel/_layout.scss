@@ -1,0 +1,13 @@
+@mixin kendo-responsive-panel--core-layout() {
+
+    // sass-lint:disable-block no-important no-ids
+    #test-area .k-responsive-panel {
+        display: none !important;
+    }
+
+}
+
+
+
+
+@mixin kendo-responsive-panel--extended-layout() {}

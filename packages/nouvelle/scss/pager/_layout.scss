@@ -1,0 +1,14 @@
+@mixin kendo-pager--core-layout() {
+
+    // sass-lint:disable-block no-important no-ids
+    #test-area .k-pager,
+    #test-area .k-pager-wrap {
+        display: none !important;
+    }
+
+}
+
+
+
+
+@mixin kendo-pager--extended-layout() {}

@@ -1,0 +1,13 @@
+@mixin kendo-tooltip--core-layout() {
+
+    // sass-lint:disable-block no-important no-ids
+    #test-area .k-tooltip {
+        display: none !important;
+    }
+
+}
+
+
+
+
+@mixin kendo-tooltip--extended-layout() {}

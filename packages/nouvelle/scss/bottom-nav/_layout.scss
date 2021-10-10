@@ -1,0 +1,13 @@
+@mixin kendo-bottom-nav--core-layout() {
+
+    // sass-lint:disable-block no-important no-ids
+    #test-area .k-bottom-nav {
+        display: none !important;
+    }
+
+}
+
+
+
+
+@mixin kendo-bottom-nav--extended-layout() {}

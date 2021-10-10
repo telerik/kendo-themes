@@ -1,0 +1,13 @@
+@mixin kendo-listbox--core-layout() {
+
+    // sass-lint:disable-block no-important no-ids
+    #test-area .k-listbox {
+        display: none !important;
+    }
+
+}
+
+
+
+
+@mixin kendo-listbox--extended-layout() {}

@@ -1,0 +1,13 @@
+@mixin kendo-captcha--core-layout() {
+
+    // sass-lint:disable-block no-important no-ids
+    #test-area .k-captcha {
+        display: none !important;
+    }
+
+}
+
+
+
+
+@mixin kendo-captcha--extended-layout() {}

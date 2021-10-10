@@ -1,0 +1,13 @@
+@mixin kendo-messagebox--core-layout() {
+
+    // sass-lint:disable-block no-important no-ids
+    #test-area .k-messagebox {
+        display: none !important;
+    }
+
+}
+
+
+
+
+@mixin kendo-messagebox--extended-layout() {}
