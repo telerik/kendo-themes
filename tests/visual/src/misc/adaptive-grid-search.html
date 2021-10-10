@@ -25,11 +25,10 @@
                                     <span class="k-icon k-i-file-pdf"></span>
                                     Export to PDF
                                 </a>
-                                <span class="k-textbox k-grid-search">
-                                    <input class="k-input" type="text" placeholder="Search" />
-                                    <span class="k-input-icon">
-                                        <span class="k-icon k-i-search"></span>
-                                    </span>
+                                <span is="Textbox" class="k-grid-search" placeholder="Search ...">
+                                    <slot is="InputSuffix">
+                                        <span is="Icon" name="search"></span>
+                                    </slot>
                                 </span>
                             </div>
                         </div>
@@ -49,11 +48,10 @@
                                     <span class="k-icon k-i-file-pdf"></span>
                                     Export to PDF
                                 </a>
-                                <span class="k-textbox k-grid-search">
-                                    <input type="text" class="k-input" placeholder="Search" />
-                                    <span class="k-input-icon">
-                                        <span class="k-icon k-i-search"></span>
-                                    </span>
+                                <span is="Textbox" class="k-grid-search" placeholder="Search ...">
+                                    <slot is="InputSuffix">
+                                        <span is="Icon" name="search"></span>
+                                    </slot>
                                 </span>
                             </div>
                         </div>

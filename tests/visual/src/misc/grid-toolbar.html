@@ -88,9 +88,10 @@
                 <div class="k-toolbar k-grid-toolbar">
                     <a class="k-button k-grid-pdf"><span class="k-icon k-i-file-pdf"></span>Export to PDF</a>
                     <span class="k-toolbar-spacer"></span>
-                    <span class="k-textbox k-grid-search">
-                        <input type="text" class="k-input" placeholder="Search" />
-                        <span class="k-input-icon"><span class="k-icon k-i-search"></span></span>
+                    <span is="Textbox" class="k-grid-search" placeholder="Search...">
+                        <slot is="InputSuffix">
+                            <span is="Icon" name="search"></span>
+                        </slot>
                     </span>
                 </div>
             </div>
@@ -114,9 +115,10 @@
                 <div class="k-toolbar k-grid-toolbar">
                     <a class="k-button k-grid-pdf"><span class="k-icon k-i-file-pdf"></span>Export to PDF</a>
                     <span class="k-toolbar-spacer"></span>
-                    <span class="k-textbox k-grid-search">
-                        <input type="text" class="k-input" placeholder="Search" />
-                        <span class="k-input-icon"><span class="k-icon k-i-search"></span></span>
+                    <span is="Textbox" class="k-grid-search" placeholder="Search...">
+                        <slot is="InputSuffix">
+                            <span is="Icon" name="search"></span>
+                        </slot>
                     </span>
                 </div>
             </div>
@@ -138,9 +140,10 @@
                 <div class="k-toolbar k-grid-toolbar">
                     <a class="k-button k-grid-pdf"><span class="k-icon k-i-file-pdf"></span>Export to PDF</a>
                     <span class="k-toolbar-spacer"></span>
-                    <span class="k-textbox k-grid-search">
-                        <input type="text" class="k-input" placeholder="Search" />
-                        <span class="k-input-icon"><span class="k-icon k-i-search"></span></span>
+                    <span is="Textbox" class="k-grid-search" placeholder="Search...">
+                        <slot is="InputSuffix">
+                            <span is="Icon" name="search"></span>
+                        </slot>
                     </span>
                     <a role="button" class="k-button k-button-icontext k-grid-add" href="#"><span class="k-icon k-i-plus"></span>Add new record</a>
                     <a role="button" class="k-button k-button-icontext k-grid-save-changes" href="#"><span class="k-icon k-i-check"></span>Save changes</a>
@@ -157,9 +160,10 @@
 
                     <a class="k-button k-grid-pdf"><span class="k-icon k-i-file-pdf"></span>Export to PDF</a>
                     <span class="k-toolbar-spacer"></span>
-                    <span class="k-textbox k-grid-search">
-                        <input type="text" class="k-input" placeholder="Search" />
-                        <span class="k-input-icon"><span class="k-icon k-i-search"></span></span>
+                    <span is="Textbox" class="k-grid-search" placeholder="Search...">
+                        <slot is="InputSuffix">
+                            <span is="Icon" name="search"></span>
+                        </slot>
                     </span>
                     <a role="button" class="k-button k-button-icontext k-grid-add" href="#"><span class="k-icon k-i-plus"></span>Add new record</a>
                     <a role="button" class="k-button k-button-icontext k-grid-save-changes" href="#"><span class="k-icon k-i-check"></span>Save changes</a>

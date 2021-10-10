@@ -13,59 +13,36 @@
 
     <div id="test-area" class="grid">
         <p>LTR</p>
-        <span class="k-textbox" style="width: 100%">
-            <span class="k-input-prefix">
-                <span class="k-icon k-i-image"></span>
-                <span class="k-textbox-separator"></span>
-                <span class="k-icon k-i-brush"></span>
-            </span>
+        <span is="Textbox" placeholder="Placeholder text..." style="width: 100%">
+            <slot is="InputPrefix">
+                <span is="Icon" name="image"></span>
+                <span class="k-input-separator"></span>
+                <span is="Icon" name="brush"></span>
+            </slot>
 
-            <input class="k-input" placeholder="Some text" />
-
-            <span class="k-input-suffix">
-                <span class="k-clear-value"><span class="k-icon k-i-x-circle"></span></span>
-                <span class="k-clear-value k-state-focused"><span class="k-icon k-i-x-circle"></span></span>
-                <span class="k-textbox-separator"></span>
-                <span class="k-icon k-i-warning"></span>
-                <span class="k-textbox-separator"></span>
-                <button class="k-button k-button-icon k-button-clear"><span class="k-icon k-i-email-box"></span></button>
-                <span class="k-textbox-separator"></span>
-                <span class="k-icon k-i-email-box"></span>
-                <span class="k-textbox-separator"></span>
-                <button class="k-button k-button-icon k-button-clear  k-state-focused"><span class="k-icon k-i-email-box"></span></button>
-                <span class="k-textbox-separator"></span>
-                <span class="k-icon k-i-pinterest"></span>
-                <span class="k-textbox-separator"></span>
-                <span class="k-icon k-i-palette"></span>
-            </span>
+            <slot is="InputSuffix">
+                <span is="Icon" name="warning"></span>
+                <span class="k-input-separator"></span>
+                <span class="k-clear-value"><span is="Icon" name="x-circle"></span></span>
+                <span class="k-clear-value k-state-focused"><span is="Icon" name="x-circle"></span></span>
+            </slot>
         </span>
 
         <p>RTL</p>
-        <span class="k-textbox" style="width: 100%" dir="rtl">
-            <span class="k-input-prefix">
-                <span class="k-icon k-i-image"></span>
-                <span class="k-textbox-separator"></span>
-                <span class="k-icon k-i-brush"></span>
-            </span>
+        <span is="Textbox" placeholder="Placeholder text..." style="width: 100%" dir="rtl">
+            <slot is="InputPrefix">
+                <span is="Icon" name="image"></span>
+                <span class="k-input-separator"></span>
+                <span is="Icon" name="brush"></span>
+            </slot>
 
-            <input class="k-input" placeholder="Some text" />
-
-            <span class="k-input-suffix">
-                <span class="k-clear-value"><span class="k-icon k-i-x-circle"></span></span>
-                <span class="k-clear-value k-state-focused"><span class="k-icon k-i-x-circle"></span></span>
-                <span class="k-textbox-separator"></span>
-                <span class="k-icon k-i-warning"></span>
-                <span class="k-textbox-separator"></span>
-                <button class="k-button k-button-icon k-button-clear"><span class="k-icon k-i-email-box"></span></button>
-                <span class="k-textbox-separator"></span>
-                <span class="k-icon k-i-email-box"></span>
-                <span class="k-textbox-separator"></span>
-                <button class="k-button k-button-icon k-button-clear  k-state-focused"><span class="k-icon k-i-email-box"></span></button>
-                <span class="k-textbox-separator"></span>
-                <span class="k-icon k-i-pinterest"></span>
-                <span class="k-textbox-separator"></span>
-                <span class="k-icon k-i-palette"></span>
-            </span>
+            <slot is="InputSuffix">
+                <span is="Icon" name="warning"></span>
+                <span class="k-input-separator"></span>
+                <span class="k-clear-value"><span is="Icon" name="x-circle"></span></span>
+                <span class="k-clear-value k-state-focused"><span is="Icon" name="x-circle"></span></span>
+            </slot>
+        </span>
         </span>
 
     </div>
