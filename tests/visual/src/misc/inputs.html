@@ -25,37 +25,37 @@
         <span>Textarea</span>
 
         <input type="text" placeholder="Textbox..." class="k-textbox" />
-        <span class="k-widget k-maskedtextbox"><input placeholder="(___) ___-__-__-__" class="k-textbox"><span class="k-icon k-i-warning k-hidden"></span></span>
+        <input is="MaskedTextbox" placeholder="(___) ___-__-__-__" />
         <input is="NumericTextbox" type="number" placeholder="Numeric..." />
         <textarea placeholder="Textarea..." class="k-textarea"></textarea>
 
         <input type="text" value="Normal" class="k-textbox" />
-        <span class="k-widget k-maskedtextbox"><input value="Normal" class="k-textbox"><span class="k-icon k-i-warning k-hidden"></span></span>
+        <input is="MaskedTextbox" value="Normal" />
         <input is="NumericTextbox" type="number" value="Normal" />
         <textarea class="k-textarea">Normal</textarea>
 
         <input type="text" value="Hover" class="k-textbox k-state-hover" />
-        <span class="k-widget k-maskedtextbox"><input value="Hover" class="k-textbox k-state-hover"><span class="k-icon k-i-warning k-hidden"></span></span>
+        <input is="MaskedTextbox" value="Hover" hover />
         <input is="NumericTextbox" type="number" value="Hover" hover />
         <textarea class="k-textarea k-state-hover">Hover</textarea>
 
         <input type="text" value="Focus" class="k-textbox k-state-focus" />
-        <span class="k-widget k-maskedtextbox"><input value="Focus" class="k-textbox k-state-focus"><span class="k-icon k-i-warning k-hidden"></span></span>
+        <input is="MaskedTextbox" value="Focus" focus />
         <input is="NumericTextbox" type="number" value="Focus" focus />
         <textarea class="k-textarea k-state-focus">Focus</textarea>
 
         <input type="text" value="Disabled" class="k-textbox" disabled="disabled" />
-        <span class="k-widget k-maskedtextbox k-state-disabled"><input value="Disabled" class="k-textbox" disabled="disabled"><span class="k-icon k-i-warning k-hidden"></span></span>
+        <input is="MaskedTextbox" value="Disabled" disabled />
         <input is="NumericTextbox" type="number" value="Disabled" disabled />
         <textarea class="k-textarea k-state-disabled" disabled>Disabled</textarea>
 
         <input type="text" value="Invalid" class="k-textbox k-state-invalid" />
-        <span class="k-widget k-maskedtextbox"><input value="Invalid" class="k-textbox k-state-invalid"><span class="k-icon k-i-warning"></span></span>
+        <input is="MaskedTextbox" value="Invalid" invalid />
         <input is="NumericTextbox" type="number" value="Invalid" invalid />
         <textarea class="k-textarea k-state-invalid">Invalid</textarea>
 
         <input type="text" value="Invalid focus" class="k-textbox k-state-invalid k-state-focus" />
-        <span class="k-widget k-maskedtextbox"><input value="Invalid focus" class="k-textbox k-state-invalid k-state-focus"><span class="k-icon k-i-warning"></span></span>
+        <input is="MaskedTextbox" value="Focus invalid" invalid focus />
         <input is="NumericTextbox" type="number" value="Invalid focus" invalid focus />
         <textarea class="k-textarea k-state-invalid k-state-focus">Invalid focus</textarea>
     </div>
