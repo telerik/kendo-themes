@@ -37,9 +37,7 @@ function InputPrefixStatic(props) {
 InputPrefixStatic.defaultProps = {
     ...globalDefaultProps,
 
-    children: [],
-
-    className: ''
+    children: []
 };
 
 InputPrefixStatic.propTypes = {

@@ -2,7 +2,7 @@ import { Component, globalDefaultProps } from '../component';
 
 class InputSuffix extends Component {
     render() {
-        return <InputSuffix {...this.props} />;
+        return <InputSuffixStatic {...this.props} />;
     }
 }
 
@@ -37,9 +37,7 @@ function InputSuffixStatic(props) {
 InputSuffixStatic.defaultProps = {
     ...globalDefaultProps,
 
-    children: [],
-
-    className: ''
+    children: []
 };
 
 InputSuffixStatic.propTypes = {
