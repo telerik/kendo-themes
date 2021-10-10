@@ -10,8 +10,14 @@ function InputStatic(props) {
 
     const {
         className: ownClassName,
-        aria,
 
+        value,
+        placeholder,
+        autocomplete,
+
+        renderAs,
+
+        aria,
         ...htmlAttributes
     } = props;
 
@@ -25,6 +31,29 @@ function InputStatic(props) {
         : {};
 
     // console.log( value );
+
+    if (renderAs === 'span') {
+        return (
+            <span className={inputClasses} {...ariaAttr} {...htmlAttributes}>
+                {value !== '' && placeholder}
+                {value}
+            </span>
+        );
+    }
+
+    if (renderAs === 'textarea') {
+        htmlAttributes.placeholder = placeholder;
+
+        return (
+            <textarea className={inputClasses} {...ariaAttr} {...htmlAttributes}>
+                {value}
+            </textarea>
+        );
+    }
+
+    htmlAttributes.value = value;
+    htmlAttributes.placeholder = placeholder;
+    htmlAttributes.autocomplete = autocomplete;
 
     return (
         <input type="text"
@@ -41,7 +70,7 @@ InputStatic.defaultProps = {
     placeholder: '',
     autocomplete: 'off',
 
-    className: ''
+    renderAs: 'input'
 };
 
 InputStatic.propTypes = {
@@ -49,10 +78,11 @@ InputStatic.propTypes = {
     placeholder: typeof '',
     autocomplete: typeof [ 'on', 'off' ],
 
+    renderAs: typeof [ 'input', 'span', 'textarea' ],
+
     className: typeof '',
 
     aria: typeof false,
-
     htmlAttributes: typeof []
 };
 

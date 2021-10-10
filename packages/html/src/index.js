@@ -22,5 +22,6 @@ export * from './icon/index';
 // Basic forms
 export * from './button/index';
 export * from './textbox/index';
-export * from './numeric/index';
+export * from './textarea/index';
 export * from './masked/index';
+export * from './numeric/index';
