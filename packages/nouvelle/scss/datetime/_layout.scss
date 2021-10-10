@@ -1,0 +1,16 @@
+@mixin kendo-datetime--core-layout() {
+
+    // sass-lint:disable-block no-important no-ids
+    #test-area .k-dateinput,
+    #test-area .k-datepicker,
+    #test-area .k-timepicker,
+    #test-area .k-datetimepicker {
+        display: none !important;
+    }
+
+}
+
+
+
+
+@mixin kendo-datetime--extended-layout() {}

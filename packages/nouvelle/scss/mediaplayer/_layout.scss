@@ -1,0 +1,13 @@
+@mixin kendo-mediaplayer--core-layout() {
+
+    // sass-lint:disable-block no-important no-ids
+    #test-area .k-mediaplayer {
+        display: none !important;
+    }
+
+}
+
+
+
+
+@mixin kendo-mediaplayer--extended-layout() {}

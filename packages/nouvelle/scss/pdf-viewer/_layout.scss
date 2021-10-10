@@ -1,0 +1,13 @@
+@mixin kendo-pdf-viewer--core-layout() {
+
+    // sass-lint:disable-block no-important no-ids
+    #test-area .k-pdf-viewer {
+        display: none !important;
+    }
+
+}
+
+
+
+
+@mixin kendo-pdf-viewer--extended-layout() {}

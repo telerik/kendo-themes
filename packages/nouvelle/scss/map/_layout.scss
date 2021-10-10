@@ -1,0 +1,13 @@
+@mixin kendo-map--core-layout() {
+
+    // sass-lint:disable-block no-important no-ids
+    #test-area .k-map {
+        display: none !important;
+    }
+
+}
+
+
+
+
+@mixin kendo-map--extended-layout() {}

@@ -1,0 +1,13 @@
+@mixin kendo-dropzone--core-layout() {
+
+    // sass-lint:disable-block no-important no-ids
+    #test-area .k-dropzone {
+        display: none !important;
+    }
+
+}
+
+
+
+
+@mixin kendo-dropzone--extended-layout() {}

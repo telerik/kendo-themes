@@ -1,0 +1,14 @@
+@mixin kendo-grid--core-layout() {
+
+    // sass-lint:disable-block no-important no-ids
+    #test-area .k-grid,
+    #test-area .k-column-menu {
+        display: none !important;
+    }
+
+}
+
+
+
+
+@mixin kendo-grid--extended-layout() {}

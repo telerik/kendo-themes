@@ -1,0 +1,13 @@
+@mixin kendo-form--core-layout() {
+
+    // sass-lint:disable-block no-important no-ids
+    #test-area .k-form {
+        display: none !important;
+    }
+
+}
+
+
+
+
+@mixin kendo-form--extended-layout() {}

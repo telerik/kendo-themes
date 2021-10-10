@@ -1,0 +1,13 @@
+@mixin kendo-ripple--core-layout() {
+
+    // sass-lint:disable-block no-important no-ids
+    #test-area .k-ripple {
+        display: none !important;
+    }
+
+}
+
+
+
+
+@mixin kendo-ripple--extended-layout() {}

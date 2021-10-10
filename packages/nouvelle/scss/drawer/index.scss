@@ -1,0 +1,20 @@
+// Module meta
+$_kendo-module-meta: (
+    name: "drawer",
+    dependencies: ()
+);
+
+
+// Component
+@import "_variables.scss";
+@import "_layout.scss";
+@import "_theme.scss";
+
+
+// Register
+@include register-module( $_kendo-module-meta... ) {
+    @include kendo-drawer--core-layout();
+    @include kendo-drawer--extended-layout();
+    @include kendo-drawer--core-theme();
+    @include kendo-drawer--extended-theme();
+}

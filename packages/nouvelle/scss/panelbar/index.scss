@@ -1,0 +1,20 @@
+// Module meta
+$_kendo-module-meta: (
+    name: "panelbar",
+    dependencies: ()
+);
+
+
+// Component
+@import "_variables.scss";
+@import "_layout.scss";
+@import "_theme.scss";
+
+
+// Register
+@include register-module( $_kendo-module-meta... ) {
+    @include kendo-panelbar--core-layout();
+    @include kendo-panelbar--extended-layout();
+    @include kendo-panelbar--core-theme();
+    @include kendo-panelbar--extended-theme();
+}

@@ -1,0 +1,13 @@
+@mixin kendo-switch--core-layout() {
+
+    // sass-lint:disable-block no-important no-ids
+    #test-area .k-switch {
+        display: none !important;
+    }
+
+}
+
+
+
+
+@mixin kendo-switch--extended-layout() {}

@@ -1,0 +1,20 @@
+// Module meta
+$_kendo-module-meta: (
+    name: "map",
+    dependencies: ()
+);
+
+
+// Component
+@import "_variables.scss";
+@import "_layout.scss";
+@import "_theme.scss";
+
+
+// Register
+@include register-module( $_kendo-module-meta... ) {
+    @include kendo-map--core-layout();
+    @include kendo-map--extended-layout();
+    @include kendo-map--core-theme();
+    @include kendo-map--extended-theme();
+}

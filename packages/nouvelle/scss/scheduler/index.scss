@@ -1,0 +1,20 @@
+// Module meta
+$_kendo-module-meta: (
+    name: "scheduler",
+    dependencies: ()
+);
+
+
+// Component
+@import "_variables.scss";
+@import "_layout.scss";
+@import "_theme.scss";
+
+
+// Register
+@include register-module( $_kendo-module-meta... ) {
+    @include kendo-scheduler--core-layout();
+    @include kendo-scheduler--extended-layout();
+    @include kendo-scheduler--core-theme();
+    @include kendo-scheduler--extended-theme();
+}

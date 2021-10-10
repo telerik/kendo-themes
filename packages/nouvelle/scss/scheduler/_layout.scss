@@ -1,0 +1,13 @@
+@mixin kendo-scheduler--core-layout() {
+
+    // sass-lint:disable-block no-important no-ids
+    #test-area .k-scheduler {
+        display: none !important;
+    }
+
+}
+
+
+
+
+@mixin kendo-scheduler--extended-layout() {}

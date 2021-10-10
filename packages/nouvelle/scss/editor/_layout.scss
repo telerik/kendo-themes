@@ -1,0 +1,13 @@
+@mixin kendo-editor--core-layout() {
+
+    // sass-lint:disable-block no-important no-ids
+    #test-area .k-editor {
+        display: none !important;
+    }
+
+}
+
+
+
+
+@mixin kendo-editor--extended-layout() {}

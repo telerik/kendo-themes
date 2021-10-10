@@ -1,0 +1,13 @@
+@mixin kendo-orgchart--core-layout() {
+
+    // sass-lint:disable-block no-important no-ids
+    #test-area .k-orgchart {
+        display: none !important;
+    }
+
+}
+
+
+
+
+@mixin kendo-orgchart--extended-layout() {}

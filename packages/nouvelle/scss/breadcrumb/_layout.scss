@@ -1,0 +1,13 @@
+@mixin kendo-breadcrumb--core-layout() {
+
+    // sass-lint:disable-block no-important no-ids
+    #test-area .k-breadcrumb {
+        display: none !important;
+    }
+
+}
+
+
+
+
+@mixin kendo-breadcrumb--extended-layout() {}

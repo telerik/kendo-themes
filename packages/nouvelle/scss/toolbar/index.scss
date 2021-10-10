@@ -1,0 +1,20 @@
+// Module meta
+$_kendo-module-meta: (
+    name: "toolbar",
+    dependencies: ()
+);
+
+
+// Component
+@import "_variables.scss";
+@import "_layout.scss";
+@import "_theme.scss";
+
+
+// Register
+@include register-module( $_kendo-module-meta... ) {
+    @include kendo-toolbar--core-layout();
+    @include kendo-toolbar--extended-layout();
+    @include kendo-toolbar--core-theme();
+    @include kendo-toolbar--extended-theme();
+}

@@ -1,0 +1,20 @@
+// Module meta
+$_kendo-module-meta: (
+    name: "responsive-panel",
+    dependencies: ()
+);
+
+
+// Component
+@import "_variables.scss";
+@import "_layout.scss";
+@import "_theme.scss";
+
+
+// Register
+@include register-module( $_kendo-module-meta... ) {
+    @include kendo-responsive-panel--core-layout();
+    @include kendo-responsive-panel--extended-layout();
+    @include kendo-responsive-panel--core-theme();
+    @include kendo-responsive-panel--extended-theme();
+}

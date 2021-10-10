@@ -1,0 +1,13 @@
+@mixin kendo-expander--core-layout() {
+
+    // sass-lint:disable-block no-important no-ids
+    #test-area .k-expander {
+        display: none !important;
+    }
+
+}
+
+
+
+
+@mixin kendo-expander--extended-layout() {}

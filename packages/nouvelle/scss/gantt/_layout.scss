@@ -1,0 +1,13 @@
+@mixin kendo-gantt--core-layout() {
+
+    // sass-lint:disable-block no-important no-ids
+    #test-area .k-gantt {
+        display: none !important;
+    }
+
+}
+
+
+
+
+@mixin kendo-gantt--extended-layout() {}

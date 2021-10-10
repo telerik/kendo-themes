@@ -1,0 +1,13 @@
+@mixin kendo-slider--core-layout() {
+
+    // sass-lint:disable-block no-important no-ids
+    #test-area .k-slider {
+        display: none !important;
+    }
+
+}
+
+
+
+
+@mixin kendo-slider--extended-layout() {}

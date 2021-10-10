@@ -1,0 +1,14 @@
+@mixin kendo-menu--core-layout() {
+
+    // sass-lint:disable-block no-important no-ids
+    #test-area .k-menu,
+    #test-area .k-menu-popup {
+        display: none !important;
+    }
+
+}
+
+
+
+
+@mixin kendo-menu--extended-layout() {}

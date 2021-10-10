@@ -1,0 +1,14 @@
+@mixin kendo-card--core-layout() {
+
+    // sass-lint:disable-block no-important no-ids
+    #test-area .k-card,
+    #test-area .k-card-deck {
+        display: none !important;
+    }
+
+}
+
+
+
+
+@mixin kendo-card--extended-layout() {}
