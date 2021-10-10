@@ -1,6 +1,6 @@
 import * as styles from '../../utils/styles';
 import { Component, globalDefaultProps } from '../component';
-import { InputStatic, InputPrefixStatic } from '../input/index';
+import { InputStatic, InputPrefixStatic, InputSuffixStatic } from '../input/index';
 
 class Textbox extends Component {
 
@@ -106,7 +106,7 @@ function TextboxStatic(props) {
             <span className={legacyClasses} {...ariaAttr} {...htmlAttributes}>
                 <InputPrefixStatic>{prefix}</InputPrefixStatic>
                 <InputStatic {...inputAttributes} />
-                <InputPrefixStatic>{suffix}</InputPrefixStatic>
+                <InputSuffixStatic>{suffix}</InputSuffixStatic>
             </span>
         );
     }
