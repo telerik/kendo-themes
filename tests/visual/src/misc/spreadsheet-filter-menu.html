@@ -46,12 +46,11 @@
                     </div>
                     <div class="k-animation-container">
                         <div class="k-details-content">
-                            <div class="k-textbox k-space-right">
-                                <input class="k-input" placeholder="Search" type="text" />
-                                <span class="k-input-icon">
-                                    <span class="k-icon k-i-zoom"></span>
-                                </span>
-                            </div>
+                            <span is="Textbox" placeholder="Search...">
+                                <slot is="InputSuffix">
+                                    <span is="Icon" name="search"></span>
+                                </slot>
+                            </span>
                             <div class="k-spreadsheet-value-treeview-wrapper">
                                 <div class="k-widget k-treeview">
                                     <ul class="k-group k-treeview-lines">

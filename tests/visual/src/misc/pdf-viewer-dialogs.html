@@ -27,11 +27,10 @@
                             <span></span>
                         </span>
                     </button>
-                    <span class="k-textbox">
-                        <input class="k-input k-search-dialog-input">
-                        <button class="k-button k-button-icon k-flat k-match-case-button">
-                            <span class="k-icon k-i-convert-lowercase"></span>
-                        </button>
+                    <span is="Textbox">
+                        <slot is="InputSuffix">
+                            <button is="Button" fillMode="flat" class="k-match-case-button" icon="convert-lowercase"></button>
+                        </slot>
                     </span>
                     <span class="k-search-matches">
                         <span>0</span> of <span>1</span>

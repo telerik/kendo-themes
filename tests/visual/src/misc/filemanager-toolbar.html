@@ -55,12 +55,11 @@
                             </span>
                         </span>
                     </div>
-                    <div class="k-filemanager-search-tool k-textbox k-toolbar-last-visible" >
-                        <input class="k-input" placeholder="Search">
-                        <span class="k-input-icon">
-                            <span class="k-icon k-i-search"></span>
-                        </span>
-                    </div>
+                    <span is="Textbox" class="k-filemanager-search-tool">
+                        <slot is="InputSuffix" placeholder="Search...">
+                            <span is="Icon" name="search"></span>
+                        </slot>
+                    </span>
                 </div>
             </div>
         </div>

@@ -397,9 +397,10 @@
         <section>
             <div class="k-animation-container">
                 <div class="k-list-container k-popup k-group k-reset k-popup-dropdowntree">
-                    <span class="k-list-filter">
-                        <input class="k-textbox" value="Filter text" />
-                        <span class="k-icon k-i-zoom"></span>
+                    <span is="Textbox" class="k-list-filter" placeholder="Filter...">
+                        <slot is="InputSuffix">
+                            <span is="Icon" name="Search"></span>
+                        </slot>
                     </span>
                     <div class="k-widget k-treeview">
                         <ul class="k-group k-treeview-lines">
@@ -452,9 +453,10 @@
         <section>
             <div class="k-animation-container">
                 <div class="k-list-container k-popup k-group k-reset k-popup-dropdowntree">
-                    <span class="k-list-filter">
-                        <input class="k-textbox" value="Filter text" />
-                        <span class="k-icon k-i-zoom"></span>
+                    <span is="Textbox" class="k-list-filter" placeholder="Filter...">
+                        <slot is="InputSuffix">
+                            <span is="Icon" name="Search"></span>
+                        </slot>
                     </span>
                     <div class="k-check-all">
                         <input type="checkbox" class="k-checkbox" />
@@ -518,9 +520,10 @@
         <section class="k-rtl">
             <div class="k-animation-container">
                 <div class="k-list-container k-popup k-group k-reset k-popup-dropdowntree">
-                    <span class="k-list-filter">
-                        <input class="k-textbox" value="Filter text" />
-                        <span class="k-icon k-i-zoom"></span>
+                    <span is="Textbox" class="k-list-filter" placeholder="Filter...">
+                        <slot is="InputSuffix">
+                            <span is="Icon" name="Search"></span>
+                        </slot>
                     </span>
                     <div class="k-widget k-treeview">
                         <ul class="k-group k-treeview-lines">
@@ -573,9 +576,10 @@
         <section class="k-rtl">
             <div class="k-animation-container">
                 <div class="k-list-container k-popup k-group k-reset k-popup-dropdowntree">
-                    <span class="k-list-filter">
-                        <input class="k-textbox" value="Filter text" />
-                        <span class="k-icon k-i-zoom"></span>
+                    <span is="Textbox" class="k-list-filter" placeholder="Filter...">
+                        <slot is="InputSuffix">
+                            <span is="Icon" name="Search"></span>
+                        </slot>
                     </span>
                     <div class="k-check-all">
                         <input type="checkbox" class="k-checkbox" />
