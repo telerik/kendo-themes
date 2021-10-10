@@ -414,8 +414,8 @@ The following table lists the available variables for customizing the Default th
         <tr>
     <td>$series-a</td>
     <td></td>
-    <td><span class="color-preview" style="background-color: #ff6358"></span>#ff6358</td>
-    <td><span class="color-preview" style="background-color: #ff6358"></span>#ff6358</td>
+    <td><span class="color-preview" style="background-color: #4b5ffa"></span>#4b5ffa</td>
+    <td><span class="color-preview" style="background-color: #4b5ffa"></span>#4b5ffa</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The first base series color and its light and dark shades.</div></div>
@@ -424,8 +424,8 @@ The following table lists the available variables for customizing the Default th
 <tr>
     <td>$series-b</td>
     <td></td>
-    <td><span class="color-preview" style="background-color: #ffd246"></span>#ffd246</td>
-    <td><span class="color-preview" style="background-color: #ffd246"></span>#ffd246</td>
+    <td><span class="color-preview" style="background-color: #ac58ff"></span>#ac58ff</td>
+    <td><span class="color-preview" style="background-color: #ac58ff"></span>#ac58ff</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The second base series color and its light and dark shades.</div></div>
@@ -434,8 +434,8 @@ The following table lists the available variables for customizing the Default th
 <tr>
     <td>$series-c</td>
     <td></td>
-    <td><span class="color-preview" style="background-color: #78d237"></span>#78d237</td>
-    <td><span class="color-preview" style="background-color: #78d237"></span>#78d237</td>
+    <td><span class="color-preview" style="background-color: #ff5892"></span>#ff5892</td>
+    <td><span class="color-preview" style="background-color: #ff5892"></span>#ff5892</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The third base series color and its light and dark shades.</div></div>
@@ -444,8 +444,8 @@ The following table lists the available variables for customizing the Default th
 <tr>
     <td>$series-d</td>
     <td></td>
-    <td><span class="color-preview" style="background-color: #28b4c8"></span>#28b4c8</td>
-    <td><span class="color-preview" style="background-color: #28b4c8"></span>#28b4c8</td>
+    <td><span class="color-preview" style="background-color: #ff6358"></span>#ff6358</td>
+    <td><span class="color-preview" style="background-color: #ff6358"></span>#ff6358</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The fourth base series color and its light and dark shades.</div></div>
@@ -454,8 +454,8 @@ The following table lists the available variables for customizing the Default th
 <tr>
     <td>$series-e</td>
     <td></td>
-    <td><span class="color-preview" style="background-color: #2d73f5"></span>#2d73f5</td>
-    <td><span class="color-preview" style="background-color: #2d73f5"></span>#2d73f5</td>
+    <td><span class="color-preview" style="background-color: #ffe162"></span>#ffe162</td>
+    <td><span class="color-preview" style="background-color: #ffe162"></span>#ffe162</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The fifth base series color and its light and dark shades.</div></div>
@@ -464,8 +464,8 @@ The following table lists the available variables for customizing the Default th
 <tr>
     <td>$series-f</td>
     <td></td>
-    <td><span class="color-preview" style="background-color: #aa46be"></span>#aa46be</td>
-    <td><span class="color-preview" style="background-color: #aa46be"></span>#aa46be</td>
+    <td><span class="color-preview" style="background-color: #4cd180"></span>#4cd180</td>
+    <td><span class="color-preview" style="background-color: #4cd180"></span>#4cd180</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sixth base series color and its light and dark shades.</div></div>
@@ -475,7 +475,7 @@ The following table lists the available variables for customizing the Default th
     <td>$series-1</td>
     <td></td>
     <td>$series-a</td>
-    <td><span class="color-preview" style="background-color: #ff6358"></span>#ff6358</td>
+    <td><span class="color-preview" style="background-color: #4b5ffa"></span>#4b5ffa</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The series colors in order:<br />base, light, dark, lighter, darker</div></div>
