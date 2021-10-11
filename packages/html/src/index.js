@@ -25,3 +25,4 @@ export * from './textbox/index';
 export * from './textarea/index';
 export * from './masked/index';
 export * from './numeric/index';
+export * from './checkbox/index';
