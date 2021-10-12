@@ -26,3 +26,4 @@ export * from './textarea/index';
 export * from './masked/index';
 export * from './numeric/index';
 export * from './checkbox/index';
+export * from './radio/index';
