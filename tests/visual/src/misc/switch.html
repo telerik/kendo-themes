@@ -21,130 +21,67 @@
 </head>
 <body class="k-body">
     <div id="test-area" class="grid">
+
         <span></span>
         <span>On</span>
         <span>Off</span>
 
         <span>Normal</span>
         <section>
-            <kendo-switch class="k-widget k-switch k-switch-on">
-                <span class="k-switch-container">
-                    <span class="k-switch-label-on">On</span>
-                    <span class="k-switch-label-off">Off</span>
-                    <span class="k-switch-handle"></span>
-                </span>
-            </kendo-switch>
+            <input is="Switch" checked />
         </section>
         <section>
-            <kendo-switch class="k-widget k-switch k-switch-off">
-                <span class="k-switch-container">
-                    <span class="k-switch-label-on">On</span>
-                    <span class="k-switch-label-off">Off</span>
-                    <span class="k-switch-handle"></span>
-                </span>
-            </kendo-switch>
+            <input is="Switch" />
         </section>
 
         <span>Hover</span>
         <section>
-            <kendo-switch class="k-widget k-switch k-state-hover k-switch-on">
-                <span class="k-switch-container">
-                    <span class="k-switch-label-on">On</span>
-                    <span class="k-switch-label-off">Off</span>
-                    <span class="k-switch-handle"></span>
-                </span>
-            </kendo-switch>
+            <input is="Switch" checked hover />
         </section>
         <section>
-            <kendo-switch class="k-widget k-switch k-state-hover k-switch-off">
-                <span class="k-switch-container">
-                    <span class="k-switch-label-on">On</span>
-                    <span class="k-switch-label-off">Off</span>
-                    <span class="k-switch-handle"></span>
-                </span>
-            </kendo-switch>
+            <input is="Switch" hover />
         </section>
 
         <span>Focus</span>
         <section>
-            <kendo-switch class="k-widget k-switch k-state-focused k-switch-on">
-                <span class="k-switch-container">
-                    <span class="k-switch-label-on">On</span>
-                    <span class="k-switch-label-off">Off</span>
-                    <span class="k-switch-handle"></span>
-                </span>
-            </kendo-switch>
+            <input is="Switch" checked focus />
         </section>
         <section>
-            <kendo-switch class="k-widget k-switch k-state-focused k-switch-off">
-                    <span class="k-switch-container">
-                        <span class="k-switch-label-on">On</span>
-                        <span class="k-switch-label-off">Off</span>
-                        <span class="k-switch-handle"></span>
-                    </span>
-              </kendo-switch>
+            <input is="Switch" focus />
         </section>
-
 
         <span>Disabled</span>
         <section>
-            <kendo-switch class="k-widget k-switch k-state-disabled k-switch-on">
-                <span class="k-switch-container">
-                    <span class="k-switch-label-on">ON</span>
-                    <span class="k-switch-label-off">OFF</span>
-                    <span class="k-switch-handle"></span>
-                </span>
-            </kendo-switch>
+            <input is="Switch" checked disabled />
         </section>
         <section>
-            <kendo-switch class="k-widget k-switch k-switch-off k-state-disabled">
-                <span class="k-switch-container">
-                    <span class="k-switch-label-on">On</span>
-                    <span class="k-switch-label-off">Off</span>
-                    <span class="k-switch-handle"></span>
-                </span>
-            </kendo-switch>
+            <input is="Switch" disabled />
         </section>
 
         <span>Localized</span>
         <section>
-            <kendo-switch class="k-widget k-switch k-switch-on">
-                <span class="k-switch-container">
-                    <span class="k-switch-label-on">Immer</span>
-                    <span class="k-switch-label-off">Nimmer</span>
-                    <span class="k-switch-handle"></span>
-                </span>
-            </kendo-switch>
+            <input is="Switch" onLabel="On" offLabel="Off" checked />
         </section>
         <section>
-            <kendo-switch class="k-widget k-switch k-switch-off">
-                <span class="k-switch-container">
-                    <span class="k-switch-label-on">Immer</span>
-                    <span class="k-switch-label-off">Nimmer</span>
-                    <span class="k-switch-handle"></span>
-                </span>
-              </kendo-switch>
+            <input is="Switch" onLabel="On" offLabel="Off" />
         </section>
 
         <span>RTL</span>
         <section>
-            <kendo-switch dir="rtl" class="k-widget k-switch k-switch-on">
-                <span class="k-switch-container">
-                    <span class="k-switch-label-on">On</span>
-                    <span class="k-switch-label-off">Off</span>
-                    <span class="k-switch-handle"></span>
-                </span>
-            </kendo-switch>
+            <input is="Switch" dir="rtl" checked />
         </section>
         <section>
-            <kendo-switch dir="rtl" class="k-widget k-switch k-switch-off">
-                <span class="k-switch-container">
-                    <span class="k-switch-label-on">On</span>
-                    <span class="k-switch-label-off">Off</span>
-                    <span class="k-switch-handle"></span>
-                </span>
-              </kendo-switch>
+            <input is="Switch" dir="rtl" />
         </section>
+
+        <span></span>
+        <section>
+            <input is="Switch" dir="rtl" onLabel="On" offLabel="Off" checked />
+        </section>
+        <section>
+            <input is="Switch" dir="rtl" onLabel="On" offLabel="Off" />
+        </section>
+
     </div>
 </body>
 </html>
