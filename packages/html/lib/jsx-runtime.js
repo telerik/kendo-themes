@@ -8,7 +8,11 @@ const attrMap = {
     'class': 'className',
     themecolor: 'themeColor',
     fillmode: 'fillMode',
-    showspinbuttons: 'showSpinButtons'
+    showspinbuttons: 'showSpinButtons',
+    onlabel: 'onLabel',
+    offlabel: 'offLabel',
+    trackrounded: 'trackRounded',
+    thumbrounded: 'thumbRounded'
 };
 
 const booleanAttr = new Set([
