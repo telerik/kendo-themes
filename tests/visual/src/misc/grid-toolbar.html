@@ -32,11 +32,11 @@
         <section>
             <div class="k-widget k-grid">
                 <div class="k-toolbar k-grid-toolbar">
-                    <button class="k-button">Button</button>
+                    <button is="Button">Button</button>
                     <span class="k-button-group">
-                        <button class="k-button-icon k-button k-group-start"><span class="k-icon k-i-bold"></span></button>
-                        <button class="k-button-icon k-button"><span class="k-icon k-i-italic"></span></button>
-                        <button class="k-button-icon k-button k-group-end"><span class="k-icon k-i-underline"></span></button>
+                        <button is="Button" icon="bold"></button>
+                        <button is="Button" icon="italic"></button>
+                        <button is="Button" icon="underline"></button>
                     </span>
                 </div>
             </div>
@@ -44,11 +44,11 @@
         <section>
             <kendo-grid class="k-widget k-grid">
                 <kendo-grid-toolbar class="k-toolbar k-grid-toolbar">
-                    <button class="k-button">Button</button>
+                    <button is="Button">Button</button>
                     <kendo-buttongroup class="k-button-group">
-                        <button class="k-button-icon k-button k-group-start"><span class="k-icon k-i-bold"></span></button>
-                        <button class="k-button-icon k-button"><span class="k-icon k-i-italic"></span></button>
-                        <button class="k-button-icon k-button k-group-end"><span class="k-icon k-i-underline"></span></button>
+                        <button is="Button" icon="bold"></button>
+                        <button is="Button" icon="italic"></button>
+                        <button is="Button" icon="underline"></button>
                     </kendo-buttongroup>
                 </kendo-grid-toolbar>
             </kendo-grid>
@@ -59,11 +59,11 @@
         <section>
             <div class="k-widget k-grid k-rtl">
                 <div class="k-toolbar k-grid-toolbar">
-                    <button class="k-button">Button</button>
+                    <button is="Button">Button</button>
                     <span class="k-button-group">
-                        <button class="k-button-icon k-button k-group-end"><span class="k-icon k-i-bold"></span></button>
-                        <button class="k-button-icon k-button"><span class="k-icon k-i-italic"></span></button>
-                        <button class="k-button-icon k-button k-group-start"><span class="k-icon k-i-underline"></span></button>
+                        <button is="Button" icon="bold"></button>
+                        <button is="Button" icon="italic"></button>
+                        <button is="Button" icon="underline"></button>
                     </span>
                 </div>
             </div>
@@ -71,11 +71,11 @@
         <section>
             <kendo-grid class="k-widget k-grid" dir="rtl">
                 <kendo-grid-toolbar class="k-toolbar k-grid-toolbar">
-                    <button class="k-button">Button</button>
+                    <button is="Button">Button</button>
                     <kendo-buttongroup class="k-button-group">
-                        <button class="k-button-icon k-button k-group-end"><span class="k-icon k-i-bold"></span></button>
-                        <button class="k-button-icon k-button"><span class="k-icon k-i-italic"></span></button>
-                        <button class="k-button-icon k-button k-group-start"><span class="k-icon k-i-underline"></span></button>
+                        <button is="Button" icon="bold"></button>
+                        <button is="Button" icon="italic"></button>
+                        <button is="Button" icon="underline"></button>
                     </kendo-buttongroup>
                 </kendo-grid-toolbar>
             </kendo-grid>
@@ -86,7 +86,7 @@
         <section>
             <div class="k-widget k-grid">
                 <div class="k-toolbar k-grid-toolbar">
-                    <a class="k-button k-grid-pdf"><span class="k-icon k-i-file-pdf"></span>Export to PDF</a>
+                    <button is="Button" icon="file-pdf">Export to PDF</button>
                     <span class="k-toolbar-spacer"></span>
                     <span is="Textbox" class="k-grid-search" placeholder="Search...">
                         <slot is="InputSuffix">
@@ -100,9 +100,9 @@
             <!-- Spacer -->
             <kendo-grid class="k-widget k-grid">
                 <kendo-grid-toolbar class="k-toolbar k-grid-toolbar">
-                    <button class="k-button">Spacer</button>
+                    <button is="Button">Spacer</button>
                     <kendo-grid-spacer class="k-spacer"></kendo-grid-spacer>
-                    <button class="k-button">Spacer</button>
+                    <button is="Button">Spacer</button>
                 </kendo-grid-toolbar>
 
             </kendo-grid>
@@ -113,7 +113,7 @@
         <section>
             <div class="k-widget k-grid k-rtl">
                 <div class="k-toolbar k-grid-toolbar">
-                    <a class="k-button k-grid-pdf"><span class="k-icon k-i-file-pdf"></span>Export to PDF</a>
+                    <button is="Button" icon="file-pdf">Export to PDF</button>
                     <span class="k-toolbar-spacer"></span>
                     <span is="Textbox" class="k-grid-search" placeholder="Search...">
                         <slot is="InputSuffix">
@@ -127,9 +127,9 @@
             <!-- Spacer with fixed width -->
             <kendo-grid class="k-widget k-grid">
                 <kendo-grid-toolbar class="k-toolbar k-grid-toolbar">
-                    <button class="k-button">Spacer fixed width</button>
+                    <button is="Button">Spacer fixed width</button>
                     <kendo-grid-spacer width="10px" class="k-spacer k-spacer-sized" style="flex-basis: 10px;"></kendo-grid-spacer>
-                    <button class="k-button">Spacer fixed width</button>
+                    <button is="Button">Spacer fixed width</button>
                 </kendo-grid-toolbar>
             </kendo-grid>
         </section>
@@ -138,16 +138,16 @@
         <section>
             <div class="k-widget k-grid">
                 <div class="k-toolbar k-grid-toolbar">
-                    <a class="k-button k-grid-pdf"><span class="k-icon k-i-file-pdf"></span>Export to PDF</a>
+                    <button is="Button" icon="file-pdf">Export to PDF</button>
                     <span class="k-toolbar-spacer"></span>
                     <span is="Textbox" class="k-grid-search" placeholder="Search...">
                         <slot is="InputSuffix">
                             <span is="Icon" name="search"></span>
                         </slot>
                     </span>
-                    <a role="button" class="k-button k-button-icontext k-grid-add" href="#"><span class="k-icon k-i-plus"></span>Add new record</a>
-                    <a role="button" class="k-button k-button-icontext k-grid-save-changes" href="#"><span class="k-icon k-i-check"></span>Save changes</a>
-                    <a role="button" class="k-button k-button-icontext k-grid-cancel-changes" href="#"><span class="k-icon k-i-cancel"></span>Cancel changes</a>
+                    <button is="Button" icon="add">Add new record</button>
+                    <button is="Button" icon="check">Save changes</button>
+                    <button is="Button" icon="cancel">Cancel changes</button>
                 </div>
             </div>
         </section>
@@ -157,17 +157,16 @@
         <section>
             <div class="k-widget k-grid k-rtl">
                 <div class="k-toolbar k-grid-toolbar">
-
-                    <a class="k-button k-grid-pdf"><span class="k-icon k-i-file-pdf"></span>Export to PDF</a>
+                    <button is="Button" icon="file-pdf">Export to PDF</button>
                     <span class="k-toolbar-spacer"></span>
                     <span is="Textbox" class="k-grid-search" placeholder="Search...">
                         <slot is="InputSuffix">
                             <span is="Icon" name="search"></span>
                         </slot>
                     </span>
-                    <a role="button" class="k-button k-button-icontext k-grid-add" href="#"><span class="k-icon k-i-plus"></span>Add new record</a>
-                    <a role="button" class="k-button k-button-icontext k-grid-save-changes" href="#"><span class="k-icon k-i-check"></span>Save changes</a>
-                    <a role="button" class="k-button k-button-icontext k-grid-cancel-changes" href="#"><span class="k-icon k-i-cancel"></span>Cancel changes</a>
+                    <button is="Button" icon="add">Add new record</button>
+                    <button is="Button" icon="check">Save changes</button>
+                    <button is="Button" icon="cancel">Cancel changes</button>
                 </div>
             </div>
         </section>

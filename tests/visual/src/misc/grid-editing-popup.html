@@ -21,7 +21,7 @@
         <div class="k-widget k-window">
             <div class="k-window-titlebar k-header"><span class="k-window-title">Edit</span>
                 <div class="k-window-actions">
-                    <a href="#" class="k-button k-flat k-button-icon k-window-action"><span class="k-icon k-i-close"></span></a>
+                    <button is="Button" fillMode="flat" icon="close"></button>
                 </div>
             </div>
             <div class="k-popup-edit-form k-window-content k-content">
@@ -62,10 +62,7 @@
                     <div class="k-edit-field">
                         <div class="k-widget k-upload k-header k-upload-sync">
                             <div class="k-dropzone">
-                                <div class="k-button k-upload-button">
-                                    <input name="files" id="files" type="file" />
-                                    <span>Select files...</span>
-                                </div>
+                                <button is="Button" class="k-upload-button">Select files...</button>
                             </div>
                             <ul class="k-upload-files k-reset">
                                 <li class="k-file">
@@ -81,17 +78,15 @@
                                     <span class="k-file-size">24.34 KB</span>
                                   </span>
                                   <strong class="k-upload-status">
-                                    <button class="k-button k-button-icon k-flat k-upload-action">
-                                      <span class="k-icon k-i-close k-i-x"></span>
-                                    </button>
+                                    <button is="Button" fillMode="flat" icon="close" class="k-upload-action"></button>
                                   </strong>
                                 </li>
                             </ul>
                         </div>
                     </div>
                     <div class="k-edit-buttons">
-                        <a class="k-button k-button-icontext k-grid-cancel" href="#">Cancel</a>
-                        <a class="k-button k-button-icontext k-primary k-grid-update" href="#">Update</a>
+                        <button is="Button">Cancel</button>
+                        <button is="Button" themeColor="primary">Update</button>
                     </div>
                 </div>
             </div>

@@ -17,9 +17,9 @@
 
         <kendo-grid class="k-widget k-grid k-grid-no-scrollbar">
             <kendo-grid-toolbar class="k-toolbar k-grid-toolbar">
-                <button class="k-button k-grid-add-command">Add new</button>
-                <button class="k-button">Save Changes</button>
-                <button class="k-button">Cancel Changes</button>
+                <button is="Button">Add new</button>
+                <button is="Button">Save Changes</button>
+                <button is="Button">Cancel Changes</button>
             </kendo-grid-toolbar>
             <div class="k-grid-aria-root">
                 <div class="k-grid-header">
@@ -56,8 +56,8 @@
                                         </td>
                                         <td><input is="Checkbox" /></td>
                                         <td class="k-command-cell">
-                                            <button class="k-button k-grid-save-command">Add</button><!--
-                                            --><button class="k-button k-grid-cancel-command">Cancel</button>
+                                            <button is="Button">Add</button><!--
+                                            --><button is="Button">Cancel</button>
                                         </td>
                                     </tr>
                                     <tr>
@@ -65,7 +65,7 @@
                                         <td>18</td>
                                         <td>false</td>
                                         <td class="k-command-cell">
-                                            <button class="k-button k-grid-remove-command">Remove</button>
+                                            <button is="Button">Remove</button>
                                         </td>
                                     </tr>
                                     <tr class="k-alt">
@@ -73,7 +73,7 @@
                                         <td>19</td>
                                         <td>false</td>
                                         <td class="k-command-cell">
-                                            <button class="k-button k-grid-remove-command">Remove</button>
+                                            <button is="Button">Remove</button>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -86,7 +86,7 @@
 
         <div class="k-widget k-grid k-grid-no-scrollbar">
             <div class="k-toolbar k-grid-toolbar">
-                <a class="k-button k-button-icontext k-grid-add"><span class="k-icon k-i-plus"></span>Add new record</a>
+                <button is="Button" icon="add">Add new record</button>
             </div>
             <div class="k-grid-header">
                 <div class="k-grid-header-wrap">
@@ -121,8 +121,8 @@
                             </td>
                             <td><input is="Checkbox" id="e77452cd-b3b5-4dc9-8210-17007584b695" name="Discontinued" /><label class="k-checkbox-label" for="e77452cd-b3b5-4dc9-8210-17007584b695">​</label></td>
                             <td class="k-command-cell">
-                                <a class="k-button k-button-icontext k-primary k-grid-update"><span class="k-icon k-i-check"></span>Update</a><!--
-                                --><a class="k-button k-button-icontext k-grid-cancel"><span class="k-icon k-i-cancel"></span>Cancel</a>
+                                <button is="Button" icon="check" themeColor="primary">Update</button><!--
+                                --><button is="Button" icon="cancel">Cancel</button>
                             </td>
                         </tr>
                         <tr class="k-alt k-grid-edit-row">
@@ -132,9 +132,9 @@
                             </td>
                             <td>18</td>
                             <td>false</td>
-                            <td class="k-command-cell k-command-cell">
-                                <a class="k-button k-button-icontext k-grid-edit"><span class="k-icon k-i-edit"></span>Edit</a><!--
-                                --><a class="k-button k-button-icontext k-grid-delete"><span class="k-icon k-i-close"></span>Delete</a>
+                            <td class="k-command-cell">
+                                <button is="Button" icon="edit">Edit</button><!--
+                                --><button is="Button" icon="close">Delete</button>
                             </td>
                         </tr>
                         <tr>
@@ -142,8 +142,8 @@
                             <td>19</td>
                             <td>false</td>
                             <td class="k-command-cell">
-                                <a class="k-button k-button-icontext k-grid-edit"><span class="k-icon k-i-edit"></span>Edit</a><!--
-                                --><a class="k-button k-button-icontext k-grid-delete"><span class="k-icon k-i-close"></span>Delete</a>
+                                <button is="Button" icon="edit">Edit</button><!--
+                                --><button is="Button" icon="close">Delete</button>
                             </td>
                         </tr>
                     </tbody>

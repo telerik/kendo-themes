@@ -37,15 +37,9 @@
         <div class="k-widget k-scheduler">
             <div class="k-scheduler-toolbar k-toolbar">
                 <span class="k-scheduler-navigation k-button-group">
-                    <button class="k-button k-nav-today">
-                        <span class="k-button-text">Today</span>
-                    </button>
-                    <button class="k-button k-button-icon k-icon-button k-nav-prev">
-                        <span class="k-icon k-i-arrow-60-left"></span>
-                    </button>
-                    <button class="k-button k-button-icon k-icon-button k-nav-next">
-                        <span class="k-icon k-i-arrow-60-right"></span>
-                    </button>
+                    <button is="Button">Today</button>
+                    <button is="Button" icon="arrow-60-left"></button>
+                    <button is="Button" icon="arrow-60-right"></button>
                 </span>
                 <a role="button" href="#" class="k-nav-current">
                     <span class="k-icon k-i-calendar"></span>
@@ -58,11 +52,11 @@
                         <option>Month</option>
                     </select>
                     <span class="k-scheduler-views k-button-group">
-                        <button type="button" class="k-button">Day</button>
-                        <button type="button" class="k-button">Week</button>
-                        <button type="button" class="k-button k-state-selected">Month</button>
-                        <button type="button" class="k-button">Timeline</button>
-                        <button type="button" class="k-button">Agenda</button>
+                        <button is="Button">Day</button>
+                        <button is="Button">Week</button>
+                        <button is="Button" selected>Month</button>
+                        <button is="Button">Timeline</button>
+                        <button is="Button">Agenda</button>
                     </span>
                 </span>
             </div>

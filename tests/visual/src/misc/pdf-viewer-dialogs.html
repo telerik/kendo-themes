@@ -22,11 +22,7 @@
         <div class="k-widget k-window k-window-titleless" style="position: relative; display: flex; align-self: flex-start; width: 430px;">
             <div class="k-pdf-viewer-search-dialog k-window-content k-content" >
                 <div class="k-search-container">
-                    <button class="k-button k-button-icon k-flat k-search-dialog-draghandle">
-                        <span class="k-icon k-i-handler-drag">
-                            <span></span>
-                        </span>
-                    </button>
+                    <button is="Button" fillMode="flat" icon="handler-drag" class="k-search-dialog-draghandle"></button>
                     <span is="Textbox">
                         <slot is="InputSuffix">
                             <button is="Button" fillMode="flat" class="k-match-case-button" icon="convert-lowercase"></button>
@@ -35,15 +31,9 @@
                     <span class="k-search-matches">
                         <span>0</span> of <span>1</span>
                     </span>
-                    <button class="k-button k-button-icon k-flat">
-                        <span class="k-icon k-i-arrow-up"></span>
-                    </button>
-                    <button class="k-button k-button-icon k-flat">
-                        <span class="k-icon k-i-arrow-down"></span>
-                    </button>
-                    <button class="k-button k-button-icon k-flat">
-                        <span class="k-icon k-i-close"></span>
-                    </button>
+                    <button is="Button" fillMode="flat" icon="arrow-up"></button>
+                    <button is="Button" fillMode="flat" icon="arrow-down"></button>
+                    <button is="Button" fillMode="flat" icon="close"></button>
                 </div>
             </div>
         </div>

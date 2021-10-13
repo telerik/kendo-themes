@@ -16,15 +16,9 @@
         <div id="scheduler" class="k-widget k-scheduler k-floatwrap" height="600px;">
             <div class="k-scheduler-toolbar k-toolbar">
                 <span class="k-button-group k-scheduler-navigation">
-                    <button type="button" class="k-button">
-                        <span class="k-button-text">Today</span>
-                    </button>
-                    <button type="button" class="k-button k-button-icon k-icon-button">
-                        <span class="k-icon k-i-arrow-60-left"></span>
-                    </button>
-                    <button type="button" class="k-button k-button-icon k-icon-button">
-                        <span class="k-icon k-i-arrow-60-right"></span>
-                    </button>
+                    <button is="Button">Today</button>
+                    <button is="Button" icon="arrow-60-left"></button>
+                    <button is="Button" icon="arrow-60-right"></button>
                 </span>
                 <a href="#" class="k-nav-current">
                     <span class="k-icon k-i-calendar"></span>
@@ -37,18 +31,10 @@
                         <option>Year</option>
                     </select>
                     <span class="k-button-group k-scheduler-views">
-                        <button type="button" class="k-button">
-                            <span class="k-button-text">Day</span>
-                        </button>
-                        <button type="button" class="k-button">
-                            <span class="k-button-text">Week</span>
-                        </button>
-                        <button type="button" class="k-button">
-                            <span class="k-button-text">Month</span>
-                        </button>
-                        <button type="button" class="k-button k-state-selected">
-                            <span class="k-button-text">Year</span>
-                        </button>
+                        <button is="Button">Day</button>
+                        <button is="Button">Week</button>
+                        <button is="Button">Month</button>
+                        <button is="Button" selected>Year</button>
                     </span>
                 </span>
             </div>
@@ -57,15 +43,11 @@
                 <div class="k-scheduler-body">
                     <div class="k-widget k-calendar k-calendar-range">
                         <div class="k-calendar-header k-hstack k-hidden">
-                            <a href="#" class="k-calendar-title k-button k-flat k-title">January 2020 - December 2020</a>
+                            <button is="Button" fillMode="flat" class="k-calendar-title k-title">January 2020 - December 2020</button>
                             <span class="k-spacer"></span>
                             <span class="k-calendar-nav k-hstack">
-                                <a href="#" class="k-prev-view k-button k-flat k-icon-button">
-                                    <span class="k-button-icon k-icon k-i-arrow-60-left"></span>
-                                </a>
-                                <a href="#" class="k-next-view k-button k-flat k-icon-button">
-                                    <span class="k-button-icon k-icon k-i-arrow-60-right"></span>
-                                </a>
+                                <button is="Button" fillMode="flat" class="k-prev-view" icon="arrow-60-left"></button>
+                                <button is="Button" fillMode="flat" class="k-next-view" icon="arrow-60-right"></button>
                             </span>
                         </div>
                         <div class="k-calendar-view k-calendar-monthview k-hstack k-align-items-start k-justify-content-center">

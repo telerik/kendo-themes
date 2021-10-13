@@ -13,6 +13,10 @@
             grid-template-columns: repeat(2, 1fr);
         }
 
+        .kendo-toolbar-renderer {
+            display: inline-block;
+        }
+
         .k-editor .k-dialog-wrapper {
             position: static;
         }
@@ -26,16 +30,13 @@
         <section>
             <kendo-editor style="height: 200px;" class="k-widget k-editor">
                 <kendo-toolbar class="k-widget k-toolbar k-toolbar-resizable">
-                    <kendo-toolbar-renderer style="visibility: visible; display: inline-block;">
+                    <kendo-toolbar-renderer>
                         <kendo-buttongroup class="k-button-group">
-                            <span class="k-button k-group-start k-button-icon"><span class="k-icon k-i-undo"></span></span>
-                            <span class="k-button k-group-end k-button-icon"><span class="k-icon k-i-redo"></span></span>
+                            <button is="Button" icon="undo"></button>
+                            <button is="Button" icon="redo"></button>
                         </kendo-buttongroup>
                     </kendo-toolbar-renderer>
-                    <button class="k-overflow-anchor k-button">
-                        <span class="k-icon k-i-more-vertical"></span>
-                    </button>
-                    <kendo-resize-sensor></kendo-resize-sensor>
+                    <button is="Button" icon="more-vertical" class="k-overflow-anchor"></button>
                 </kendo-toolbar>
                 <div class="k-editor-content">
                     <iframe class="k-iframe" frameborder="0" src="editor-iFrameContent.html"></iframe>
@@ -45,16 +46,13 @@
         <section>
             <kendo-editor style="height: 200px;" class="k-widget k-editor">
                <kendo-toolbar class="k-widget k-toolbar k-toolbar-resizable">
-                   <kendo-toolbar-renderer style="visibility: visible; display: inline-block;">
+                   <kendo-toolbar-renderer>
                        <kendo-buttongroup class="k-button-group">
-                           <span class="k-button k-group-start k-button-icon"><span class="k-icon k-i-undo"></span></span>
-                           <span class="k-button k-group-end k-button-icon"><span class="k-icon k-i-redo"></span></span>
+                        <button is="Button" icon="undo"></button>
+                        <button is="Button" icon="redo"></button>
                        </kendo-buttongroup>
                    </kendo-toolbar-renderer>
-                   <button class="k-overflow-anchor k-button">
-                       <span class="k-icon k-i-more-vertical"></span>
-                   </button>
-                   <kendo-resize-sensor></kendo-resize-sensor>
+                   <button is="Button" icon="more-vertical" class="k-overflow-anchor"></button>
                </kendo-toolbar>
                <div class="k-editor-content"><div class="ProseMirror"><p>The Kendo UI Angular Editor allows your users to edit HTML in a familiar, user-friendly way.</p><p>In this version, the Editor provides the core HTML editing engine which includes basic text formatting, hyperlinks, and lists. The widget <strong>outputs identical HTML</strong> across all major browsers, follows accessibility standards, and provides API for content manipulation.</p><p>Features include:</p><ul><li>Text formatting</li><li>Bulleted and numbered lists</li><li>Hyperlinks</li><li>Cross-browser support</li><li>Identical HTML output across browsers</li></ul></div></div>
             </kendo-editor>
@@ -67,9 +65,9 @@
                 <kendo-toolbar class="k-widget k-toolbar">
                     <kendo-toolbar-renderer>
                         <kendo-buttongroup class="k-button-group">
-                            <button type="button" class="k-button-icon k-button k-group-start"><span class="k-icon k-i-bold"></span></button>
-                            <button type="button" class="k-button-icon k-button"><span class="k-icon k-i-italic"></span></button>
-                            <button type="button" class="k-button-icon k-button k-group-end"><span class="k-icon k-i-underline"></span></button>
+                            <button is="Button" icon="bold"></button>
+                            <button is="Button" icon="italic"></button>
+                            <button is="Button" icon="underline"></button>
                         </kendo-buttongroup>
                     </kendo-toolbar-renderer>
                     <kendo-toolbar-renderer>
@@ -79,32 +77,32 @@
                     </kendo-toolbar-renderer>
                     <kendo-toolbar-renderer>
                         <kendo-buttongroup class="k-button-group">
-                            <button type="button" class="k-button-icon k-button k-group-start"><span class="k-icon k-i-align-left"></span></button>
-                            <button type="button" class="k-button-icon k-button"><span class="k-icon k-i-align-center"></span></button>
-                            <button type="button" class="k-button-icon k-button"><span class="k-icon k-i-align-right"></span></button>
-                            <button type="button" class="k-button-icon k-button k-group-end"><span class="k-icon k-i-align-justify"></span></button>
+                            <button is="Button" icon="align-left"></button>
+                            <button is="Button" icon="align-center"></button>
+                            <button is="Button" icon="align-right"></button>
+                            <button is="Button" icon="align-justify"></button>
                         </kendo-buttongroup>
                     </kendo-toolbar-renderer>
                     <kendo-toolbar-renderer>
                         <kendo-buttongroup class="k-button-group">
-                            <button type="button" class="k-button-icon k-button k-group-start"><span class="k-icon k-i-list-unordered"></span></button>
-                            <button type="button" class="k-button-icon k-button"><span class="k-icon k-i-list-ordered"></span></button>
-                            <button type="button" class="k-button-icon k-button"><span class="k-icon k-i-indent-increase"></span></button>
-                            <button type="button" class="k-button-icon k-button k-group-end"><span class="k-icon k-i-indent-decrease"></span></button>
+                            <button is="Button" icon="list-unordered"></button>
+                            <button is="Button" icon="list-ordered"></button>
+                            <button is="Button" icon="indent-increase"></button>
+                            <button is="Button" icon="indent-decrease"></button>
                         </kendo-buttongroup>
                     </kendo-toolbar-renderer>
                     <kendo-toolbar-renderer>
                         <kendo-buttongroup class="k-button-group">
-                            <button type="button" class="k-button-icon k-button k-group-start"><span class="k-icon k-i-link-horizontal"></span></button>
-                            <button type="button" class="k-button-icon k-button k-group-end"><span class="k-icon k-i-unlink-horizontal"></span></button>
+                            <button is="Button" icon="link-horizontal"></button>
+                            <button is="Button" icon="unlink-horizontal"></button>
                         </kendo-buttongroup>
                     </kendo-toolbar-renderer>
                     <kendo-toolbar-renderer>
-                        <button type="button" class="k-button-icon k-button"><span class="k-icon k-i-image"></span></button>
+                        <button is="Button" icon="image"></button>
                     </kendo-toolbar-renderer>
                 </kendo-toolbar>
                 <div class="k-editor-content">
-                    <iframe _ngcontent-bcp-c1="" class="k-iframe" frameborder="0" src="editor-iFrameContent.html"></iframe>
+                    <iframe class="k-iframe" frameborder="0" src="editor-iFrameContent.html"></iframe>
                 </div>
             </kendo-editor>
         </section>
@@ -113,9 +111,9 @@
                 <kendo-toolbar class="k-widget k-toolbar">
                     <kendo-toolbar-renderer>
                         <kendo-buttongroup class="k-button-group">
-                            <button type="button" class="k-button-icon k-button k-group-start"><span class="k-icon k-i-bold"></span></button>
-                            <button type="button" class="k-button-icon k-button"><span class="k-icon k-i-italic"></span></button>
-                            <button type="button" class="k-button-icon k-button k-group-end"><span class="k-icon k-i-underline"></span></button>
+                            <button is="Button" icon="bold"></button>
+                            <button is="Button" icon="italic"></button>
+                            <button is="Button" icon="underline"></button>
                         </kendo-buttongroup>
                     </kendo-toolbar-renderer>
                     <kendo-toolbar-renderer>
@@ -125,28 +123,28 @@
                     </kendo-toolbar-renderer>
                     <kendo-toolbar-renderer>
                         <kendo-buttongroup class="k-button-group">
-                            <button type="button" class="k-button-icon k-button k-group-start"><span class="k-icon k-i-align-left"></span></button>
-                            <button type="button" class="k-button-icon k-button"><span class="k-icon k-i-align-center"></span></button>
-                            <button type="button" class="k-button-icon k-button"><span class="k-icon k-i-align-right"></span></button>
-                            <button type="button" class="k-button-icon k-button k-group-end"><span class="k-icon k-i-align-justify"></span></button>
+                            <button is="Button" icon="align-left"></button>
+                            <button is="Button" icon="align-center"></button>
+                            <button is="Button" icon="align-right"></button>
+                            <button is="Button" icon="align-justify"></button>
                         </kendo-buttongroup>
                     </kendo-toolbar-renderer>
                     <kendo-toolbar-renderer>
                         <kendo-buttongroup class="k-button-group">
-                            <button type="button" class="k-button-icon k-button k-group-start"><span class="k-icon k-i-list-unordered"></span></button>
-                            <button type="button" class="k-button-icon k-button"><span class="k-icon k-i-list-ordered"></span></button>
-                            <button type="button" class="k-button-icon k-button"><span class="k-icon k-i-indent-increase"></span></button>
-                            <button type="button" class="k-button-icon k-button k-group-end"><span class="k-icon k-i-indent-decrease"></span></button>
+                            <button is="Button" icon="list-unordered"></button>
+                            <button is="Button" icon="list-ordered"></button>
+                            <button is="Button" icon="indent-increase"></button>
+                            <button is="Button" icon="indent-decrease"></button>
                         </kendo-buttongroup>
                     </kendo-toolbar-renderer>
                     <kendo-toolbar-renderer>
                         <kendo-buttongroup class="k-button-group">
-                            <button type="button" class="k-button-icon k-button k-group-start"><span class="k-icon k-i-link-horizontal"></span></button>
-                            <button type="button" class="k-button-icon k-button k-group-end"><span class="k-icon k-i-unlink-horizontal"></span></button>
+                            <button is="Button" icon="link-horizontal"></button>
+                            <button is="Button" icon="unlink-horizontal"></button>
                         </kendo-buttongroup>
                     </kendo-toolbar-renderer>
                     <kendo-toolbar-renderer>
-                        <button type="button" class="k-button-icon k-button"><span class="k-icon k-i-image"></span></button>
+                        <button is="Button" icon="image"></button>
                     </kendo-toolbar-renderer>
                 </kendo-toolbar>
                 <div class="k-editor-content"><div class="ProseMirror"><p>The Kendo UI Angular Editor allows your users to edit HTML in a familiar, user-friendly way.</p><p>In this version, the Editor provides the core HTML editing engine which includes basic text formatting, hyperlinks, and lists. The widget <strong>outputs identical HTML</strong> across all major browsers, follows accessibility standards, and provides API for content manipulation.</p><p>Features include:</p><ul><li>Text formatting</li><li>Bulleted and numbered lists</li><li>Hyperlinks</li><li>Cross-browser support</li><li>Identical HTML output across browsers</li></ul></div></div>
@@ -162,7 +160,7 @@
                         <kendo-dialog-titlebar class="k-window-titlebar k-dialog-titlebar k-header">
                             <div class="k-window-title k-dialog-title">Dialog in angular editor</div>
                             <div class="k-window-actions k-dialog-actions">
-                                <a class="k-button k-flat k-button-icon k-window-action k-dialog-action k-dialog-close" href="#"><span class="k-icon k-i-x"></span></a>
+                                <button is="Button" fillMode="flat" icon="close"></button>
                             </div>
                         </kendo-dialog-titlebar>
                         <div class="k-content k-window-content k-dialog-content">
@@ -186,8 +184,8 @@
                             </div>
                         </div>
                         <kendo-dialog-actions class="k-dialog-buttongroup k-actions k-actions-end">
-                            <button class="k-button">Action</button>
-                            <button class="k-button k-primary">Primary</button>
+                            <button is="Button">Action</button>
+                            <button is="Button" themeColor="primary">Primary</button>
                         </kendo-dialog-actions>
                     </div>
                 </kendo-dialog>
@@ -195,17 +193,13 @@
         </section>
         <section>
             <kendo-editor style="height: 200px;" class="k-widget k-editor k-readonly">
-                <kendo-toolbar class="k-widget k-toolbar k-toolbar-resizable">
-                    <kendo-toolbar-renderer style="visibility: visible; display: inline-block;">
+                <kendo-toolbar class="k-widget k-toolbar">
+                    <kendo-toolbar-renderer>
                         <kendo-buttongroup class="k-button-group">
-                            <span class="k-button k-group-start k-button-icon"><span class="k-icon k-i-undo"></span></span>
-                            <span class="k-button k-group-end k-button-icon"><span class="k-icon k-i-redo"></span></span>
+                            <button is="Button" icon="undo"></button>
+                            <button is="Button" icon="redo"></button>
                         </kendo-buttongroup>
                     </kendo-toolbar-renderer>
-                    <button class="k-overflow-anchor k-button">
-                        <span class="k-icon k-i-more-vertical"></span>
-                    </button>
-                    <kendo-resize-sensor></kendo-resize-sensor>
                 </kendo-toolbar>
                 <div class="k-editor-content k-state-focused"><div class="ProseMirror"><p>The Kendo UI Angular Editor allows your users to edit HTML in a familiar, user-friendly way.</p><p>In this version, the Editor provides the core HTML editing engine which includes basic text formatting, hyperlinks, and lists. The widget <strong>outputs identical HTML</strong> across all major browsers, follows accessibility standards, and provides API for content manipulation.</p><p>Features include:</p><ul><li>Text formatting</li><li>Bulleted and numbered lists</li><li>Hyperlinks</li><li>Cross-browser support</li><li>Identical HTML output across browsers</li></ul></div></div>
             </kendo-editor>

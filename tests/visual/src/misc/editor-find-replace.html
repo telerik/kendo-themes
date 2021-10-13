@@ -9,9 +9,6 @@
     <script src="../../../../packages/html/dist/index.js"></script>
 
     <style>
-        #test-area {
-            grid-template-columns: repeat(2, 1fr);
-        }
         .k-window {
             position: relative;
         }
@@ -19,17 +16,17 @@
 </head>
 <body class="k-body">
 
-    <div id="test-area" class="grid">
+    <div id="test-area" class="k-d-grid k-grid-cols-2">
+
         <span>Find Dialog</span>
         <span>Replace Dialog</span>
+
         <section>
             <div class="k-widget k-window">
                 <div class="k-window-titlebar k-dialog-titlebar">
                     <div class="k-window-title">Find and Replace</div>
                     <div class="k-window-actions">
-                        <button class="k-button-icon k-button k-flat">
-                            <span class="k-icon k-i-close"></span>
-                        </button>
+                        <button is="Button" fillMode="flat" icon="close"></button>
                     </div>
                 </div>
                 <div class="k-content k-window-content">
@@ -73,15 +70,9 @@
                                     </span>
                                 </div>
                                 <div class="k-matches-container">
-                                    <button class="k-button k-flat k-primary">
-                                        <span class="k-icon k-i-arrow-chevron-left"></span>
-                                        Prev
-                                    </button>
+                                    <button is="Button" themeColor="primary" fillMode="flat" icon="arrow-chevron-left">Prev</button>
                                     <span>1 of 3 matches</span>
-                                    <button class="k-button k-flat k-primary">
-                                        Next
-                                        <span class="k-icon k-i-arrow-chevron-right"></span>
-                                    </button>
+                                    <button is="Button" themeColor="primary" fillMode="flat" icon="arrow-chevron-right">Next</button>
                                 </div>
                             </div>
                         </div>
@@ -89,14 +80,13 @@
                 </div>
              </div>
         </section>
+
         <section>
             <div class="k-widget k-window">
                 <div class="k-window-titlebar k-dialog-titlebar">
                     <div class="k-window-title">Find and Replace</div>
                     <div class="k-window-actions">
-                        <button class="k-button-icon k-button k-flat">
-                            <span class="k-icon k-i-close"></span>
-                        </button>
+                        <button is="Button" fillMode="flat" icon="close"></button>
                     </div>
                 </div>
                 <div class="k-content k-window-content">
@@ -128,8 +118,8 @@
                                     </div>
                                 </div>
                                 <div class="k-action-buttons k-actions k-actions-end">
-                                    <button class="k-button">Replace</button>
-                                    <button class="k-button">Replace All</button>
+                                    <button is="Button">Replace</button>
+                                    <button is="Button">Replace All</button>
                                 </div>
                                 <div class="k-search-options">
                                     <span>
@@ -150,15 +140,9 @@
                                     </span>
                                 </div>
                                 <div class="k-matches-container">
-                                    <button class="k-button k-flat k-primary">
-                                        <span class="k-icon k-i-arrow-chevron-left"></span>
-                                        Prev
-                                    </button>
+                                    <button is="Button" themeColor="primary" fillMode="flat" icon="arrow-chevron-left">Prev</button>
                                     <span>1 of 3 matches</span>
-                                    <button class="k-button k-flat k-primary">
-                                        Next
-                                        <span class="k-icon k-i-arrow-chevron-right"></span>
-                                    </button>
+                                    <button is="Button" themeColor="primary" fillMode="flat" icon="arrow-chevron-right">Next</button>
                                 </div>
                             </div>
                         </div>
@@ -166,25 +150,20 @@
                 </div>
             </div>
         </section>
+
+
         <span>Text Highlight</span>
         <span></span>
+
         <section>
             <div class="k-widget k-editor" style="height: 150px;">
                 <div class="k-widget k-toolbar">
                     <span class="k-tool-group">
                         <div class="k-button-group">
-                            <button class="k-button k-button-icon">
-                                <span class="k-icon k-i-bold"></span>
-                            </button>
-                            <button class="k-button k-button-icon">
-                                <span class="k-icon k-i-italic"></span>
-                            </button>
-                            <button class="k-button k-button-icon">
-                                <span class="k-icon k-i-underline"></span>
-                            </button>
-                            <button class="k-button k-button-icon k-state-selected">
-                                <span class="k-icon k-i-find"></span>
-                            </button>
+                            <button is="Button" icon="bold"></button>
+                            <button is="Button" icon="italic"></button>
+                            <button is="Button" icon="underline"></button>
+                            <button is="Button" icon="find" selected></button>
                         </div>
                     </span>
                 </div>

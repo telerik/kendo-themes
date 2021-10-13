@@ -33,8 +33,8 @@
         <div style="width: 100%;" class="k-widget k-spreadsheet">
             <div class="k-tabstrip-wrapper">
                 <div class="k-spreadsheet-quick-access-toolbar">
-                    <a class="k-button k-button-icon"><span class="k-icon k-i-undo"></span></a>
-                    <a class="k-button k-button-icon"><span class="k-icon k-i-redo"></span></a>
+                    <button is="Button" icon="undo"></button>
+                    <button is="Button" icon="redo"></button>
                 </div>
                 <div class="k-widget k-header k-tabstrip k-floatwrap k-tabstrip-top k-spreadsheet-tabstrip">
                     <div class="k-tabstrip-items-wrapper k-hstack">
@@ -55,29 +55,24 @@
                     </div>
                     <div class="k-content k-state-active" style="display: block;">
                         <div class="k-toolbar k-widget k-toolbar-resizable k-spreadsheet-toolbar">
-                            <div class="k-button k-upload-button k-button-icon k-toolbar-first-visible">
-                                <span class="k-icon k-i-folder-open"></span>
-                                <input type="file">
-                            </div>
-                            <button type="button" class="k-button k-button-icon">
-                                <span class="k-icon k-i-download"></span>
-                            </button>
+                            <button is="Button" icon="folder-open" class="k-upload-button"></button>
+                            <button is="Button" icon="download"></button>
                             <span class="k-separator"></span>
                             <div class="k-button-group">
-                                <a class="k-button k-button-icon k-group-start"><span class="k-icon k-i-cut"></span></a>
-                                <a class="k-button k-button-icon"><span class="k-icon k-i-copy"></span></a>
-                                <a class="k-button k-button-icon k-group-end"><span class="k-icon k-i-paste"></span></a>
+                                <button is="Button" icon="cut"></button>
+                                <button is="Button" icon="copy"></button>
+                                <button is="Button" icon="paste"></button>
                             </div>
                             <span class="k-separator"></span>
                             <div class="k-button-group">
-                                <a class="k-toggle-button k-button k-button-icon k-group-start"><span class="k-icon k-i-bold"></span></a>
-                                <a class="k-toggle-button k-button k-button-icon"><span class="k-icon k-i-italic"></span></a>
-                                <a class="k-toggle-button k-button k-button-icon k-group-end"><span class="k-icon k-i-underline"></span></a>
+                                <button is="Button" icon="bold"></button>
+                                <button is="Button" icon="italic"></button>
+                                <button is="Button" icon="underline"></button>
                             </div>
                             <span class="k-separator"></span>
-                            <a class="k-button k-button-icon"><span class="k-icon k-i-link-horizontal"></span></a>
+                            <button is="Button" icon="link-horizontal"></button>
                             <span class="k-separator"></span>
-                            <a class="k-toggle-button k-button k-button-icon"><span class="k-icon k-i-comment"></span></a>
+                            <button is="Button" icon="comment"></button>
                             <span class="k-separator"></span>
                             <a class="k-button k-button-icon">
                                 <span class="k-icon k-i-paint"></span>
@@ -115,11 +110,11 @@
                                 <span class="k-icon k-i-arrow-60-down"></span>
                             </a>
                             <span class="k-separator"></span>
-                            <a class="k-toggle-button k-button k-button-icon"><span class="k-icon k-i-text-wrap"></span></a>
+                            <button is="Button" icon="text-wrap"></button>
                             <span class="k-separator"></span>
                             <div class="k-button-group">
-                                <a class="k-button k-button-icon k-group-start"><span class="k-icon k-i-decimal-decrease"></span></a>
-                                <a class="k-button k-button-icon k-group-end"><span class="k-icon k-i-decimal-increase"></span></a>
+                                <button is="Button" icon="decimal-decrease"></button>
+                                <button is="Button" icon="decimal-increase"></button>
                             </div>
                             <span class="k-separator"></span>
                             <span class="k-widget k-dropdown" style="width: auto;">
@@ -142,9 +137,9 @@
                                 <span class="k-icon k-i-arrow-60-down"></span>
                             </a>
                             <span class="k-separator"></span>
-                            <a class="k-button k-button-icon k-state-active"><span class="k-icon k-i-filter"></span></a>
+                            <button is="Button" icon="filter"></button>
                             <span class="k-separator"></span>
-                            <a class="k-toggle-button k-button k-button-icon k-state-active"><span class="k-icon k-i-border-no"></span></a>
+                            <button is="Button" icon="border-no"></button>
                         </div>
                     </div>
                 </div>
@@ -609,31 +604,21 @@
                 <div class="k-list-scroller"></div>
             </div>
             <div class="k-spreadsheet-sheets-bar k-widget k-header">
-                <a class="k-spreadsheet-sheets-bar-add k-button k-button-icon">
-                    <span class="k-icon k-icon k-i-plus"></span>
-                </a>
+                <button is="Button" icon="add" class="k-spreadsheet-sheets-bar-add"></button>
                 <div class="k-spreadsheet-sheets-items k-tabstrip-scrollable k-tabstrip k-floatwrap k-tabstrip-bottom">
                     <div class="k-tabstrip-items-wrapper k-hstack">
-                        <span class="k-button k-button-icon k-flat k-tabstrip-prev">
-                            <span class="k-icon k-i-arrow-60-left"></span>
-                        </span>
+                        <button is="Button" fillMode="flat" icon="arrow-60-left" class="k-tabstrip-prev"></button>
                         <ul class="k-reset k-tabstrip-items">
                             <li class="k-item k-state-active k-state-tab-on-top k-spreadsheet-sheets-bar-active">
                                 <span class="k-link">Food Order</span>
-                                <span class="k-spreadsheet-sheets-remove k-remove-tab k-button k-icon-button k-flat">
-                                    <span class="k-icon k-icon k-i-close"></span>
-                                </span>
+                                <button is="Button" fillMode="flat" icon="close" class="k-spreadsheet-sheets-remove k-remove-tab"></button>
                             </li>
                             <li class="k-item k-spreadsheet-sheets-bar-inactive">
                                 <span class="k-link">Balance Sheet</span>
-                                <span class="k-spreadsheet-sheets-remove k-remove-tab k-button k-icon-button k-flat">
-                                    <span class="k-icon k-icon k-i-close"></span>
-                                </span>
+                                <button is="Button" fillMode="flat" icon="close" class="k-spreadsheet-sheets-remove k-remove-tab"></button>
                             </li>
                         </ul>
-                        <span class="k-button k-button-icon k-flat k-tabstrip-next">
-                            <span class="k-icon k-i-arrow-60-right"></span>
-                        </span>
+                        <button is="Button" fillMode="flat" icon="arrow-60-right" class="k-tabstrip-next"></button>
                     </div>
                 </div>
             </div>

@@ -133,12 +133,8 @@
                     <div>
                         <kendo-slider class="k-slider-horizontal k-slider k-widget k-slider-transitions" style="width: 276px;">
                             <div class="k-slider-wrap k-slider-buttons">
-                                <a class="k-button k-button-decrease">
-                                    <span class="k-icon k-i-arrow-w"></span>
-                                </a>
-                                <a class="k-button k-button-increase">
-                                    <span class="k-icon k-i-arrow-e"></span>
-                                </a>
+                                <button is="Button" class="k-button-decrease" icon="arrow-w" rounded="circle"></button>
+                                <button is="Button" class="k-button-increase" icon="arrow-e" rounded="circle"></button>
                                 <ul class="k-reset k-slider-items">
                                     <li class="k-tick k-first"style="width: 5px;"></li>
                                     <li class="k-tick" style="width: 10px;"></li>
@@ -197,10 +193,7 @@
                     <div>
                         <kendo-upload class="k-widget k-upload">
                             <div class="k-dropzone">
-                                <div class="k-button k-upload-button">
-                                    <input />
-                                    <span>Select files...</span>
-                                </div>
+                                <button is="Button" class="k-upload-button">Select files...</button>
                                 <kendo-upload-status-total class="k-upload-status k-upload-status-total">
                                     <span class="k-icon k-i-checkmark"></span>
                                     Done
@@ -222,9 +215,7 @@
                                         </span>
                                         <kendo-upload-file-list-item-action-button>
                                             <strong class="k-upload-status">
-                                                <button class="k-button k-button-icon k-flat k-upload-action">
-                                                    <span class="k-icon k-delete k-i-x"></span>
-                                                </button>
+                                                <button is="Button" fillMode="flat" icon="close" class="k-upload-action"></button>
                                             </strong>
                                         </kendo-upload-file-list-item-action-button>
                                     </kendo-upload-file-list-single-item>
@@ -347,12 +338,8 @@
                     <div class="k-form-field-wrap">
                         <kendo-slider class="k-slider-horizontal k-slider k-widget k-slider-transitions" style="width: 276px;">
                             <div class="k-slider-wrap k-slider-buttons">
-                                <a class="k-button k-button-decrease">
-                                    <span class="k-icon k-i-arrow-w"></span>
-                                </a>
-                                <a class="k-button k-button-increase">
-                                    <span class="k-icon k-i-arrow-e"></span>
-                                </a>
+                                <button is="Button" class="k-button-decrease" icon="arrow-w" rounded="circle"></button>
+                                <button is="Button" class="k-button-increase" icon="arrow-e" rounded="circle"></button>
                                 <ul class="k-reset k-slider-items">
                                     <li class="k-tick k-first"style="width: 5px;"></li>
                                     <li class="k-tick" style="width: 10px;"></li>
@@ -414,10 +401,7 @@
                         <div>
                             <kendo-upload class="k-widget k-upload">
                                 <div class="k-dropzone">
-                                    <div class="k-button k-upload-button">
-                                        <input />
-                                        <span>Select files...</span>
-                                    </div>
+                                    <button is="Button" class="k-upload-button">Select files...</button>
                                     <kendo-upload-status-total class="k-upload-status k-upload-status-total">
                                         <span class="k-icon k-i-checkmark"></span>
                                         Done
@@ -439,9 +423,7 @@
                                             </span>
                                             <kendo-upload-file-list-item-action-button>
                                                 <strong class="k-upload-status">
-                                                    <button class="k-button k-button-icon k-flat k-upload-action">
-                                                        <span class="k-icon k-delete k-i-x"></span>
-                                                    </button>
+                                                    <button is="Button" fillMode="flat" icon="close" class="k-upload-action"></button>
                                                 </strong>
                                             </kendo-upload-file-list-item-action-button>
                                         </kendo-upload-file-list-single-item>
