@@ -26,7 +26,9 @@
         <div class="k-widget k-window" style="display: flex; padding-top: 45px;">
             <div class="k-window-titlebar k-header" style="margin-top: -45px;">
                 <span class="k-window-title">Table Wizard</span>
-                <div class="k-window-actions"><a href="#" class="k-button k-flat k-button-icon k-window-action"><span class="k-icon k-i-close"></span></a></div>
+                <div class="k-window-actions">
+                    <button is="Button" fillMode="flat" icon="close"></button>
+                </div>
             </div>
             <div class="k-editor-dialog k-editor-table-wizard-dialog k-action-window k-popup-edit-form k-window-content k-content">
                 <div class="k-edit-form-container">
@@ -80,8 +82,8 @@
                         </div>
                     </div>
                     <div class="k-edit-buttons">
-                        <button class="k-button k-dialog-close">Cancel</button>
-                        <button class="k-button k-primary k-dialog-ok">Update</button>
+                        <button is="Button">Cancel</button>
+                        <button is="Button" themeColor="primary">Update</button>
                     </div>
                 </div>
             </div>

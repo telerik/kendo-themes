@@ -17,48 +17,31 @@
             max-width: 70px;
         }
 
-        .sub-grid-2 {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-        }
-        .sub-grid-4 {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            gap: 20px;
-        }
-
-        .k-overflow-wrapper {
+        kendo-toolbar-renderer {
             display: inline-block;
-            position: relative;
-            overflow: visible;
         }
     </style>
 </head>
 <body class="k-body">
 
-    <div id="test-area" class="grid">
+    <div id="test-area" class="k-d-grid k-grid-cols-2">
 
-        <span>Angular specific rendering and spacing</span>
-        <section>
+        <span class="k-colspan-all">Angular specific rendering and spacing</span>
+        <section class="k-colspan-all">
             <kendo-toolbar class="k-widget k-toolbar" dir="rtl">
-                <kendo-toolbar-renderer style="display: inline-block;">
-                    <button class="k-button">
-                        Angular Button
-                    </button>
+                <kendo-toolbar-renderer>
+                    <button is="Button">Angular Button</button>
                 </kendo-toolbar-renderer>
-                <kendo-toolbar-renderer style="display: inline-block;">
+                <kendo-toolbar-renderer>
                     <div class="k-separator"></div>
                 </kendo-toolbar-renderer>
-                <kendo-toolbar-renderer style="display: inline-block;">
-                    <button class="k-button k-state-selected">
-                        Toggle
-                    </button>
+                <kendo-toolbar-renderer>
+                    <button is="Button" selected>Toggle</button>
                 </kendo-toolbar-renderer>
-                <kendo-toolbar-renderer style="display: inline-block;">
+                <kendo-toolbar-renderer>
                     <div class="k-separator"></div>
                 </kendo-toolbar-renderer>
-                <kendo-toolbar-renderer style="display: inline-block;">
+                <kendo-toolbar-renderer>
                     <div class="k-widget k-split-button k-button-group">
                         <button class="k-button">
                             Split Button
@@ -68,90 +51,56 @@
                         </button>
                     </div>
                 </kendo-toolbar-renderer>
-                <kendo-toolbar-renderer style="display: inline-block;">
+                <kendo-toolbar-renderer>
                     <div class="k-separator"></div>
                 </kendo-toolbar-renderer>
-                <kendo-toolbar-renderer style="display: inline-block;">
+                <kendo-toolbar-renderer>
                     <div class="k-widget k-dropdown-button">
-                        <button class="k-button">
-                            DropDownButton
-                        </button>
+                        <button is="Button">DropDownButton</button>
                     </div>
                 </kendo-toolbar-renderer>
-                <kendo-toolbar-renderer style="display: inline-block;">
+                <kendo-toolbar-renderer>
                     <div class="k-separator"></div>
                 </kendo-toolbar-renderer>
-                <kendo-toolbar-renderer style="display: inline-block;">
+                <kendo-toolbar-renderer>
                     <div class="k-button-group">
-                        <button class="k-button-icon k-button k-group-start">
-                            <span class="k-icon k-i-align-left"></span>
-                        </button>
-                        <button class="k-button-icon k-button">
-                            <span class="k-icon k-i-align-center"></span>
-                        </button>
-                        <button class="k-button-icon k-button">
-                            <span class="k-icon k-i-align-right"></span>
-                        </button>
-                        <button class="k-button-icon k-button k-group-end k-state-selected">
-                            <span class="k-icon k-i-align-justify"></span>
-                        </button>
+                        <button is="Button" icon="align-left"></button>
+                        <button is="Button" icon="align-center"></button>
+                        <button is="Button" icon="align-right"></button>
+                        <button is="Button" icon="align-justify" selected></button>
                     </div>
                 </kendo-toolbar-renderer>
             </kendo-toolbar>
         </section>
 
-        <div class="sub-grid-2">
 
-            <span class="col-2">wrapped kendo-angular</span>
-
-            <section>
-                <kendo-toolbar class="k-widget k-toolbar" dir="rtl">
-                    <kendo-toolbar-renderer style="display: inline-block;">
-                        <button class="k-button">
-                            Button
-                        </button>
-                    </kendo-toolbar-renderer>
-                    <kendo-toolbar-renderer style="display: inline-block;">
-                        <button class="k-button">
-                            Toggle
-                        </button>
-                    </kendo-toolbar-renderer>
-                    <kendo-toolbar-renderer style="display: inline-block;">
-                        <button class="k-button k-primary">
-                            Primary
-                        </button>
-                    </kendo-toolbar-renderer>
-                    <kendo-toolbar-renderer style="display: inline-block;">
-                        <div class="k-widget k-dropdown-button">
-                            <button class="k-button">
-                                DropDownButton
-                            </button>
-                        </div>
-                    </kendo-toolbar-renderer>
-                    <kendo-toolbar-renderer style="display: inline-block;">
-                        <div class="k-button-group">
-                            <button class="k-button k-group-start">
-                                <span class="k-icon k-i-align-left"></span>
-                                Left
-                            </button>
-                            <button class="k-button">
-                                <span class="k-icon k-i-align-center"></span>
-                                Center
-                            </button>
-                            <button class="k-button">
-                                <span class="k-icon k-i-align-right"></span>
-                                Right
-                            </button>
-                            <button class="k-button k-group-end">
-                                <span class="k-icon k-i-align-justify"></span>
-                                Justify
-                            </button>
-                        </div>
-                    </kendo-toolbar-renderer>
-                </kendo-toolbar>
-            </section>
-
-        </div>
+        <span class="k-colspan-all">wrapped kendo-angular</span>
+        <section>
+            <kendo-toolbar class="k-widget k-toolbar" dir="rtl">
+                <kendo-toolbar-renderer>
+                    <button is="Button">Button</button>
+                </kendo-toolbar-renderer>
+                <kendo-toolbar-renderer>
+                    <button is="Button">Toggle</button>
+                </kendo-toolbar-renderer>
+                <kendo-toolbar-renderer>
+                    <button is="Button" themeColor="primary">Primary</button>
+                </kendo-toolbar-renderer>
+                <kendo-toolbar-renderer>
+                    <div class="k-widget k-dropdown-button">
+                        <button is="Button">DropDownButton</button>
+                    </div>
+                </kendo-toolbar-renderer>
+                <kendo-toolbar-renderer>
+                    <div class="k-button-group">
+                        <button is="Button" icon="align-left">Left</button>
+                        <button is="Button" icon="align-center">Center</button>
+                        <button is="Button" icon="align-right">Right</button>
+                        <button is="Button" icon="align-justify">Justify</button>
+                    </div>
+                </kendo-toolbar-renderer>
+            </kendo-toolbar>
+        </section>
 
     </div>
 

@@ -29,14 +29,20 @@
 
         <div id="gantt" class="k-widget k-gantt" style="height: 700px;">
             <div class="k-gantt-header k-toolbar k-gantt-toolbar">
-                <button class="k-button k-button-icon k-gantt-toggle" type="button"><span class="k-icon k-i-layout-1-by-4"></span></button><button class="k-button k-button-icontext k-gantt-create" type="button" data-action="add"><span class="k-icon k-i-plus"></span><span class="k-button-text">Add Task</span></button><span class="k-spacer k-toolbar-spacer"></span>
+                <button is="Button" class="k-gantt-toggle" icon="layout-1-by-4"></button>
+                <button is="Button" class="k-gantt-create" icon="add">Add Task</button>
+                <span class="k-spacer k-toolbar-spacer"></span>
                 <div class="k-gantt-views-wrapper">
                     <select class="k-dropdown k-views-dropdown">
                         <option value="day">Day</option>
                         <option value="week">Week</option>
                         <option value="month">Month</option>
                     </select>
-                    <span class="k-button-group k-gantt-views"><button type="button" class="k-button k-button-icontext k-view-day"><span class="k-button-text">Day</span></button><button type="button" class="k-button k-button-icontext k-view-week k-state-selected"><span class="k-button-text">Week</span></button><button type="button" class="k-button k-button-icontext k-view-month"><span class="k-button-text">Month</span></button></span>
+                    <span class="k-button-group k-gantt-views">
+                        <button is="Button" class="k-view-day">Day</button>
+                        <button is="Button" class="k-view-week" selected>Week</button>
+                        <button is="Button" class="k-view-month">Month</button>
+                    </span>
                 </div>
             </div>
             <div class="k-gantt-content">
@@ -727,7 +733,9 @@
                     </div>
                 </div>
             </div>
-            <div class="k-gantt-footer k-toolbar k-gantt-toolbar"><button class="k-button k-button-icontext k-gantt-create" type="button" data-action="add"><span class="k-icon k-i-plus"></span><span class="k-button-text">Add Task</span></button></div>
+            <div class="k-gantt-footer k-toolbar k-gantt-toolbar">
+                <button is="Button" class="k-gantt-create" icon="add">Add Task</button>
+            </div>
         </div>
 
     </div>

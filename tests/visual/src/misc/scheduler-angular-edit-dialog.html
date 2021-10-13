@@ -39,9 +39,7 @@
                     <kendo-dialog-titlebar class="k-window-titlebar k-dialog-titlebar k-header" id="kendo-dialog-title-797726">
                         <div class="k-window-title k-dialog-title">Event</div>
                         <div class="k-window-actions k-dialog-actions">
-                            <a class="k-button k-flat k-button-icon k-window-action k-dialog-action k-dialog-close" href="#">
-                                <span class="k-icon k-i-x"></span>
-                            </a>
+                            <button is="Button" fillMode="flat" icon="close"></button>
                         </div>
                     </kendo-dialog-titlebar>
                     <div class="k-content k-window-content k-dialog-content">
@@ -131,11 +129,11 @@
                                             </div>
                                             <div class="k-edit-field">
                                                 <kendo-buttongroup class="k-button-group">
-                                                    <button class="k-button k-group-start" style="width: 100px;">Never</button>
-                                                    <button class="k-button" style="width: 100px;">Daily</button>
-                                                    <button class="k-button k-state-selected" style="width: 100px;">Weekly</button>
-                                                    <button class="k-button" style="width: 100px;">Monthly</button>
-                                                    <button class="k-button k-group-end" style="width: 100px;">Yearly</button>
+                                                    <button is="Button" style="width: 100px;">Never</button>
+                                                    <button is="Button" style="width: 100px;">Daily</button>
+                                                    <button is="Button" style="width: 100px;" selected>Weekly</button>
+                                                    <button is="Button" style="width: 100px;">Monthly</button>
+                                                    <button is="Button" style="width: 100px;">Yearly</button>
                                                 </kendo-buttongroup>
                                             </div>
                                         </kendo-recurrence-frequency-editor>
@@ -155,13 +153,13 @@
                                                 </div>
                                                 <div class="k-edit-field">
                                                     <kendo-buttongroup class="k-button-group">
-                                                        <button class="k-button k-group-start" style="width: 75px;">Sun</button>
-                                                        <button class="k-button k-state-selected" style="width: 75px;">Mon</button>
-                                                        <button class="k-button" style="width: 75px;">Tue</button>
-                                                        <button class="k-button" style="width: 75px;">Wed</button>
-                                                        <button class="k-button" style="width: 75px;">Thu</button>
-                                                        <button class="k-button" style="width: 75px;">Fri</button>
-                                                        <button class="k-button k-group-end" style="width: 75px;">Sat</button>
+                                                        <button is="Button" style="width: 75px;">Sun</button>
+                                                        <button is="Button" style="width: 75px;" selected>Mon</button>
+                                                        <button is="Button" style="width: 75px;">Tue</button>
+                                                        <button is="Button" style="width: 75px;">Wed</button>
+                                                        <button is="Button" style="width: 75px;">Thu</button>
+                                                        <button is="Button" style="width: 75px;">Fri</button>
+                                                        <button is="Button" style="width: 75px;">Sat</button>
                                                     </kendo-buttongroup>
                                                 </div>
                                             </kendo-recurrence-weekday-rule-editor>
@@ -213,8 +211,8 @@
                         </div>
                     </div>
                     <kendo-dialog-actions class="k-dialog-buttongroup k-actions k-actions-end">
-                        <button class="k-button">Cancel</button>
-                        <button class="k-button k-primary">Save</button>
+                        <button is="Button">Cancel</button>
+                        <button is="Button" themeColor="primary">Save</button>
                     </kendo-dialog-actions>
                 </div>
             </kendo-dialog>

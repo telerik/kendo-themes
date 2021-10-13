@@ -27,25 +27,20 @@
                 <div class="k-window-titlebar k-dialog-titlebar k-header" >
                     <span class="k-window-title k-dialog-title">Upload Files</span>
                     <div class="k-window-actions k-dialog-actions">
-                        <a class="k-button k-flat k-button-icon k-window-action k-dialog-action k-dialog-close">
-                            <span class="k-icon k-i-close"></span>
-                        </a>
+                        <button is="Button" fillMode="flat" icon="close"></button>
                     </div>
                 </div>
                 <div class="k-content k-window-content k-dialog-content">
                     <div class="k-widget k-upload k-upload-async k-upload-empty">
                         <div class="k-dropzone">
-                            <div class="k-button k-upload-button">
-                                <input type="file" name="file" class="k-filemanager-upload">
-                                <span>Select files...</span>
-                            </div>
+                            <button is="Button" class="k-upload-button">Select files...</button>
                             <em class="k-dropzone-hint">Drop files here to upload</em>
                         </div>
                     </div>
                 </div>
                 <div class="k-dialog-buttongroup k-actions k-actions-end">
-                    <button type="button" class="k-button">Clear List</button>
-                    <button type="button" class="k-button k-primary">Done</button>
+                    <button is="Button">Clear List</button>
+                    <button is="Button" themeColor="primary">Done</button>
                 </div>
             </div>
         </section>
@@ -57,17 +52,15 @@
                 <div class="k-window-titlebar k-dialog-titlebar k-header">
                     <span class="k-window-title k-dialog-title">Confirm</span>
                     <div class="k-window-actions k-dialog-actions">
-                        <a class="k-button k-flat k-button-icon k-window-action k-dialog-action k-dialog-close">
-                            <span class="k-icon k-i-close"></span>
-                        </a>
+                        <button is="Button" fillMode="flat" icon="close"></button>
                     </div>
                 </div>
                 <div class="k-content k-window-content k-dialog-content k-text-center">
                     <p>Do you want to move or copy?</p>
                 </div>
                 <div class="k-dialog-buttongroup k-actions k-actions-end">
-                    <button type="button" class="k-button">Move</button>
-                    <button type="button" class="k-button k-primary">Copy</button>
+                    <button is="Button">Move</button>
+                    <button is="Button" themeColor="primary">Copy</button>
                 </div>
             </div>
         </section>
@@ -78,9 +71,7 @@
                 <div class="k-window-titlebar k-dialog-titlebar k-header">
                     <span class="k-window-title k-dialog-title">Confirm</span>
                     <div class="k-window-actions k-dialog-actions">
-                        <a class="k-button k-flat k-button-icon k-window-action k-dialog-action k-dialog-close">
-                            <span class="k-icon k-i-close"></span>
-                        </a>
+                        <button is="Button" fillMode="flat" icon="close"></button>
                     </div>
                 </div>
                 <div class="k-content k-window-content k-dialog-content k-text-center">
@@ -88,8 +79,8 @@
                     <p>You can't undo this action.</p>
                 </div>
                 <div class="k-dialog-buttongroup k-actions k-actions-end">
-                    <button type="button" class="k-button">Cancel</button>
-                    <button type="button" class="k-button k-primary">Delete</button>
+                    <button is="Button">Cancel</button>
+                    <button is="Button" themeColor="primary">Delete</button>
                 </div>
             </div>
         </section>

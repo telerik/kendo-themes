@@ -21,10 +21,7 @@
             <!-- File restrictions set with group icons-->
             <div class="k-widget k-upload k-upload-async">
                 <div class="k-dropzone">
-                    <div class="k-button k-upload-button">
-                        <input style="display: none;" /><input />
-                        <span>Select files...</span>
-                    </div>
+                    <button is="Button" class="k-upload-button">Select files...</button>
                     <em class="k-dropzone-hint k-hidden">Drop files here to upload</em><strong class="k-upload-status k-upload-status-total"><span class="k-icon k-i-upload"></span>Uploading...</strong>
                 </div>
 
@@ -37,7 +34,7 @@
                             <span class="k-file-validation-message k-text-error">File type not allowed.</span>
                         </span>
                         <strong class="k-upload-status">
-                            <button type="button" class="k-button k-button-icon k-flat k-upload-action"><span class="k-icon k-i-close k-i-x"></span></button>
+                            <button is="Button" icon="close" fillMode="flat" class="k-upload-action"></button>
                         </strong>
                     </li>
                     <li class="k-file k-file-progress">
@@ -48,7 +45,7 @@
                             <span class="k-file-size">225.68 KB</span>
                         </span>
                         <strong class="k-upload-status">
-                            <button type="button" class="k-button k-button-icon k-flat k-upload-action"><span class="k-icon k-i-close k-i-x"></span></button>
+                            <button is="Button" icon="close" fillMode="flat" class="k-upload-action"></button>
                         </strong>
                     </li>
                 </ul>
@@ -59,7 +56,7 @@
             <!-- Successfully uploaded files with group type icon; upload button hovered -->
             <div class="k-widget k-upload k-upload-async">
                 <div class="k-dropzone">
-                    <div class="k-button k-upload-button"><input /><span>Select files...</span></div>
+                    <button is="Button" class="k-upload-button">Select files...</button>
                     <em class="k-dropzone-hint k-hidden">Drop files here to upload</em><strong class="k-upload-status k-upload-status-total"><span class="k-icon k-i-check"></span>Done</strong>
                 </div>
                 <ul class="k-upload-files k-reset">
@@ -71,7 +68,7 @@
                             <span class="k-file-validation-message k-text-success">File(s) uploaded successfully.</span>
                         </span>
                         <strong class="k-upload-status">
-                            <button type="button" class="k-button k-button-icon k-flat k-upload-action"><span class="k-icon k-i-close k-i-x"></span></button>
+                            <button is="Button" icon="close" fillMode="flat" class="k-upload-action"></button>
                         </strong>
                     </li>
                     <li class="k-file k-file-success">
@@ -82,7 +79,7 @@
                             <span class="k-file-validation-message k-text-success">File(s) uploaded successfully.</span>
                         </span>
                         <strong class="k-upload-status">
-                            <button type="button" class="k-button k-button-icon k-flat k-upload-action"><span class="k-icon k-i-close k-i-x"></span></button>
+                            <button is="Button" icon="close" fillMode="flat" class="k-upload-action"></button>
                         </strong>
                     </li>
                 </ul>
@@ -93,7 +90,7 @@
             <!-- Batch upload ->  successfully uploaded files -->
             <div class="k-widget k-upload k-upload-async">
                 <div class="k-dropzone">
-                    <div class="k-button k-upload-button"><input /><span>Select files...</span></div>
+                    <button is="Button" class="k-upload-button">Select files...</button>
                     <em class="k-dropzone-hint k-hidden">Drop files here to upload</em><strong class="k-upload-status k-upload-status-total"><span class="k-icon k-i-check"></span>Done</strong>
                 </div>
                 <ul class="k-upload-files k-reset">
@@ -108,7 +105,7 @@
                             <span class="k-file-information k-hidden">Total: 4 files, 170.22 KB</span><span class="k-file-validation-message k-text-success">4 File(s) uploaded successfully.</span>
                         </span>
                         <strong class="k-upload-status">
-                            <button type="button" class="k-button k-button-icon k-flat k-upload-action"><span class="k-icon k-i-close k-i-x"></span></button>
+                            <button is="Button" icon="close" fillMode="flat" class="k-upload-action"></button>
                         </strong>
                     </li>
                 </ul>
@@ -119,7 +116,7 @@
             <!-- Batch upload; files in progress -->
             <div class="k-widget k-upload k-upload-async">
                 <div class="k-dropzone">
-                    <div class="k-button k-upload-button"><input /><span>Select files...</span></div>
+                    <button is="Button" class="k-upload-button">Select files...</button>
                     <em class="k-dropzone-hint k-hidden">Drop files here to upload</em><strong class="k-upload-status k-upload-status-total"><span class="k-icon k-i-check"></span>Done</strong>
                 </div>
                 <ul class="k-upload-files k-reset">
@@ -134,7 +131,7 @@
                             <span class="k-file-information">Total: 4 files, 170.22 KB</span>
                         </span>
                         <strong class="k-upload-status">
-                            <button type="button" class="k-button k-button-icon k-flat k-upload-action"><span class="k-icon k-i-close k-i-x"></span></button>
+                            <button is="Button" icon="close" fillMode="flat" class="k-upload-action"></button>
                         </strong>
                     </li>
                 </ul>
@@ -145,10 +142,7 @@
             <!-- Batch upload -> validation failed -->
             <div class="k-widget k-upload k-upload-async">
                 <div class="k-dropzone">
-                    <div class="k-button k-upload-button">
-                        <input style="display: none;" />
-                        <input /><span>Select files...</span>
-                    </div>
+                    <button is="Button" class="k-upload-button">Select files...</button>
                     <em class="k-dropzone-hint k-hidden">Drop files here to upload</em><strong class="k-upload-status k-upload-status-total"><span class="k-icon k-i-warning"></span>Done</strong>
                 </div>
                 <ul class="k-upload-files k-reset">
@@ -163,7 +157,7 @@
                             <span class="k-file-validation-message k-text-error">Invalid file(s). Please check file upload requirements.</span>
                         </span>
                         <strong class="k-upload-status">
-                            <button type="button" class="k-button k-button-icon k-flat k-upload-action"><span class="k-icon k-i-close k-i-x"></span></button>
+                            <button is="Button" icon="close" fillMode="flat" class="k-upload-action"></button>
                         </strong>
                     </li>
                 </ul>
@@ -174,10 +168,7 @@
             <!-- Auto Upload - false -->
             <div class="k-widget k-upload k-upload-async">
                 <div class="k-dropzone">
-                    <div class="k-button k-upload-button">
-                        <input style="display: none;" />
-                        <input /><span>Select files...</span>
-                    </div>
+                    <button is="Button" class="k-upload-button">Select files...</button>
                     <em class="k-dropzone-hint">Drop files here to upload</em>
                 </div>
                 <ul class="k-upload-files k-reset">
@@ -186,7 +177,7 @@
                         <span class="k-file-group-wrapper"><span class="k-file-group k-icon k-i-file-image"></span><span class="k-file-state"></span></span>
                         <span class="k-file-name-size-wrapper"> <span class="k-file-name">Image_With_Very_Very_Very_Very_Very_Long_Name1.png</span><span class="k-file-size">51.23 KB</span> </span>
                         <strong class="k-upload-status">
-                            <button type="button" class="k-button k-button-icon k-flat k-upload-action"><span class="k-icon k-i-close k-i-x"></span></button>
+                            <button is="Button" icon="close" fillMode="flat" class="k-upload-action"></button>
                         </strong>
                     </li>
                     <li class="k-file k-toupload">
@@ -194,13 +185,13 @@
                         <span class="k-file-group-wrapper"><span class="k-file-group k-icon k-i-file-image"></span><span class="k-file-state"></span></span>
                         <span class="k-file-name-size-wrapper"> <span class="k-file-name">Image2.jpg</span><span class="k-file-size">106.43 KB</span> </span>
                         <strong class="k-upload-status">
-                            <button type="button" class="k-button k-button-icon k-flat k-upload-action"><span class="k-icon k-i-close k-i-x"></span></button>
+                            <button is="Button" icon="close" fillMode="flat" class="k-upload-action"></button>
                         </strong>
                     </li>
                 </ul>
                 <div class="k-action-buttons k-actions-end">
-                    <button type="button" class="k-button k-clear-selected">Clear</button>
-                    <button class="k-button k-upload-selected k-primary">Upload</button>
+                    <button is="Button" class="k-clear-selected">Clear</button>
+                    <button is="Button" themeColor="primary" class="k-upload-selected">Upload</button>
                 </div>
             </div>
         </section>
@@ -209,10 +200,7 @@
             <!-- Chunk upload -->
             <div class="k-widget k-upload k-upload-async">
                 <div class="k-dropzone">
-                    <div class="k-button k-upload-button">
-                        <input style="display: none;" />
-                        <input /><span>Select files...</span>
-                    </div>
+                    <button is="Button" class="k-upload-button">Select files...</button>
                     <em class="k-dropzone-hint k-hidden">Drop files here to upload</em><strong class="k-upload-status k-upload-status-total"><span class="k-icon k-i-upload"></span>Uploading...</strong>
                 </div>
                 <ul class="k-upload-files k-reset">
@@ -221,8 +209,9 @@
                         <span class="k-file-group-wrapper"><span class="k-file-group k-icon k-i-file-video"></span><span class="k-file-state">uploading</span></span>
                         <span class="k-file-name-size-wrapper"><span class="k-file-name">Video1.mkv</span><span class="k-file-size">158.97 MB</span></span>
                         <strong class="k-upload-status">
-                            <span class="k-upload-pct">30%</span><button class="k-button k-button-icon k-flat k-upload-action"><span class="k-icon k-i-pause-sm"></span></button>
-                            <button class="k-button k-button-icon k-flat k-upload-action"><span class="k-icon k-i-cancel k-i-cancel"></span></button>
+                            <span class="k-upload-pct">30%</span>
+                            <button is="Button" fillMode="flat" class="k-upload-action" icon="pause-sm"></button>
+                            <button is="Button" fillMode="flat" class="k-upload-action" icon="cancel"></button>
                         </strong>
                     </li>
                 </ul>
@@ -233,7 +222,7 @@
                 <!-- Drag and drop file text in the dropzone -->
                 <div class="k-widget k-upload k-upload-async k-upload-empty">
                 <div class="k-dropzone">
-                    <div class="k-button k-upload-button"><input /><span>Select files...</span></div>
+                    <button is="Button" class="k-upload-button">Select files...</button>
                     <em class="k-dropzone-hint">Drop files here to upload</em>
                 </div>
             </div>
@@ -243,7 +232,7 @@
                 <!-- Drag and drop file + Hover the dropzone -->
             <div class="k-widget k-upload k-upload-async k-upload-empty">
                 <div class="k-dropzone k-dropzone-active k-dropzone-hovered">
-                    <div class="k-button k-upload-button"><input /><span>Select files...</span></div>
+                    <button is="Button" class="k-upload-button">Select files...</button>
                     <em class="k-dropzone-hint">Drop files here to upload</em>
                 </div>
             </div>
@@ -253,7 +242,7 @@
                 <!-- Disabled Upload -->
             <div class="k-widget k-upload k-upload-sync k-upload-empty k-state-disabled">
                 <div class="k-dropzone">
-                    <div class="k-button k-upload-button"><input disabled /><span>Select files...</span></div>
+                    <button is="Button" class="k-upload-button" disabled>Select files...</button>
                 </div>
             </div>
 

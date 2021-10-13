@@ -15,7 +15,9 @@
     <div class="grid" id="test-area">
         <h3>Edit Row</h3>
         <kendo-grid dir="ltr" class="k-widget k-grid">
-            <kendo-grid-toolbar class="k-toolbar k-grid-toolbar" position="top"><button icon="add" class="k-button-icontext k-button k-grid-add-command" role="button" dir="ltr"><span class="k-icon k-i-add"></span>Add</button></kendo-grid-toolbar>
+            <kendo-grid-toolbar class="k-toolbar k-grid-toolbar" position="top">
+                <button is="Button" icon="add">Add</button>
+            </kendo-grid-toolbar>
             <div class="k-grid-aria-root" role="grid">
                 <div class="k-grid-header">
                     <div class="k-grid-header-wrap">
@@ -50,12 +52,18 @@
                                         <td class="k-touch-action-auto" colspan="1">
                                             <input is="Textbox" />
                                         </td>
-                                        <td class="k-touch-action-auto k-command-cell" colspan="1"><button class="k-button k-grid-edit-command" role="button" dir="ltr" style="display: none;">Edit</button><button role="button" class="k-button k-grid-remove-command" dir="ltr" style="display: none;">Remove</button><button role="button" class="k-button k-grid-save-command" dir="ltr">Update</button><button role="button" class="k-button k-grid-cancel-command" dir="ltr">Cancel</button></td>
+                                        <td class="k-touch-action-auto k-command-cell" colspan="1">
+                                            <button is="Button">Update</button><!--
+                                            --><button is="Button">Cancel</button>
+                                        </td>
                                     </tr>
                                     <tr class="k-alt" role="row">
                                         <td class="k-touch-action-auto" colspan="1"><input is="Checkbox" /></td>
                                         <td class="k-touch-action-auto" colspan="1">Product2</td>
-                                        <td class="k-touch-action-auto k-command-cell" colspan="1"><button class="k-button k-grid-edit-command" role="button" dir="ltr">Edit</button><button role="button" class="k-button k-grid-remove-command" dir="ltr">Remove</button><button role="button" class="k-button k-grid-save-command" dir="ltr" style="display: none;">Update</button><button role="button" class="k-button k-grid-cancel-command" dir="ltr" style="display: none;">Cancel</button></td>
+                                        <td class="k-touch-action-auto k-command-cell" colspan="1">
+                                            <button is="Button">Edit</button><!--
+                                            --><button is="Button">Remove</button>
+                                        </td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -69,7 +77,9 @@
         </kendo-grid>
         <h3>New Row</h3>
         <kendo-grid dir="ltr" class="k-widget k-grid">
-            <kendo-grid-toolbar class="k-toolbar k-grid-toolbar" position="top"><button icon="add" class="k-button-icontext k-button k-grid-add-command" role="button" dir="ltr"><span class="k-icon k-i-add"></span>Add</button></kendo-grid-toolbar>
+            <kendo-grid-toolbar class="k-toolbar k-grid-toolbar" position="top">
+                <button is="Button" icon="add">Add</button>
+            </kendo-grid-toolbar>
             <div class="k-grid-aria-root" role="grid">
                 <div class="k-grid-header">
                     <div class="k-grid-header-wrap">
@@ -104,17 +114,26 @@
                                         <td colspan="1">
                                             <input is="Textbox" />
                                         </td>
-                                        <td colspan="1" class="k-command-cell"><button class="k-button k-grid-edit-command" role="button" dir="ltr" style="display: none;">Edit</button><button role="button" class="k-button k-grid-remove-command" dir="ltr" style="display: none;">Remove</button><button role="button" class="k-button k-grid-save-command" dir="ltr">Add</button><button role="button" class="k-button k-grid-cancel-command" dir="ltr">Discard changes</button></td>
+                                        <td colspan="1" class="k-command-cell">
+                                            <button is="Button">Add</button><!--
+                                            --><button is="Button">Discard changes</button>
+                                        </td>
                                     </tr>
                                     <tr role="row">
                                         <td class="k-touch-action-auto" colspan="1"><input is="Checkbox" /></td>
                                         <td class="k-touch-action-auto" colspan="1">Product1</td>
-                                        <td class="k-touch-action-auto k-command-cell" colspan="1"><button class="k-button k-grid-edit-command" role="button" dir="ltr">Edit</button><button role="button" class="k-button k-grid-remove-command" dir="ltr">Remove</button><button role="button" class="k-button k-grid-save-command" dir="ltr" style="display: none;">Update</button><button role="button" class="k-button k-grid-cancel-command" dir="ltr" style="display: none;">Cancel</button></td>
+                                        <td class="k-touch-action-auto k-command-cell" colspan="1">
+                                            <button is="Button">Edit</button><!--
+                                            --><button is="Button">Remove</button>
+                                        </td>
                                     </tr>
                                     <tr class="k-alt" role="row">
                                         <td class="k-touch-action-auto" colspan="1"><input is="Checkbox" /></td>
                                         <td class="k-touch-action-auto" colspan="1">Product2</td>
-                                        <td class="k-touch-action-auto k-command-cell" colspan="1"><button class="k-button k-grid-edit-command" role="button" dir="ltr">Edit</button><button role="button" class="k-button k-grid-remove-command" dir="ltr">Remove</button><button role="button" class="k-button k-grid-save-command" dir="ltr" style="display: none;">Update</button><button role="button" class="k-button k-grid-cancel-command" dir="ltr" style="display: none;">Cancel</button></td>
+                                        <td class="k-touch-action-auto k-command-cell" colspan="1">
+                                            <button is="Button">Edit</button><!--
+                                            --><button is="Button">Remove</button>
+                                        </td>
                                     </tr>
                                 </tbody>
                             </table>

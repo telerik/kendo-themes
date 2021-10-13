@@ -39,9 +39,7 @@
                     <kendo-dialog-titlebar class="k-window-titlebar k-dialog-titlebar k-header">
                         <div class="k-window-title k-dialog-title">Event</div>
                         <div class="k-window-actions k-dialog-actions">
-                            <a class="k-button k-flat k-button-icon k-window-action k-dialog-action k-dialog-close" href="#">
-                                <span class="k-icon k-i-x"></span>
-                            </a>
+                            <button is="Button" fillMode="flat" icon="close"></button>
                         </div>
                     </kendo-dialog-titlebar>
                     <div class="k-content k-window-content k-dialog-content">
@@ -113,8 +111,8 @@
                         </form>
                     </div>
                     <kendo-dialog-actions class="k-dialog-buttongroup k-actions k-actions-end">
-                        <button class="k-button">Cancel</button>
-                        <button class="k-button k-primary">Save</button>
+                        <button is="Button">Cancel</button>
+                        <button is="Button" themeColor="primary">Save</button>
                     </kendo-dialog-actions>
                 </div>
             </kendo-dialog>

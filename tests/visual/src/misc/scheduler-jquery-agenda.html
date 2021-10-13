@@ -28,9 +28,9 @@
         <div class="k-widget k-scheduler">
             <div class="k-scheduler-toolbar k-toolbar">
                 <span class="k-button-group k-scheduler-navigation">
-                    <button type="button" class="k-button"><span class="k-button-text">Today</span></button>
-                    <button type="button" class="k-button k-button-icon k-icon-button"><span class="k-icon k-i-arrow-60-left"></span></button>
-                    <button type="button" class="k-button k-button-icon k-icon-button"><span class="k-icon k-i-arrow-60-right"></span></button>
+                    <button is="Button">Today</button>
+                    <button is="Button" icon="arrow-60-left"></button>
+                    <button is="Button" icon="arrow-60-right"></button>
                 </span>
                 <a href="#" class="k-nav-current">
                     <span class="k-icon k-i-calendar"></span>
@@ -43,11 +43,11 @@
                         <option>Agenda</option>
                     </select>
                     <span class="k-button-group k-scheduler-views">
-                        <button type="button" class="k-button">Day</button>
-                        <button type="button" class="k-button">Week</button>
-                        <button type="button" class="k-button">Month</button>
-                        <button type="button" class="k-button">Timeline</button>
-                        <button type="button" class="k-button k-state-selected">Agenda</button>
+                        <button is="Button" >Day</button>
+                        <button is="Button" >Week</button>
+                        <button is="Button" >Month</button>
+                        <button is="Button" >Timeline</button>
+                        <button is="Button" selected>Agenda</button>
                     </span>
                 </span>
             </div>
@@ -127,7 +127,7 @@
                 </tbody>
             </table>
             <div class="k-scheduler-footer k-toolbar">
-                <button type="button" class="k-button k-scheduler-fullday"><span class="k-icon k-i-clock"></span><span class="k-button-text">Show business hours</span></button>
+                <button is="Button" icon="clock">Show business hours</button>
             </div>
         </div>
 

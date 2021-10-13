@@ -22,20 +22,18 @@
 
         <div class="k-widget k-pdf-viewer">
             <div class="k-toolbar k-widget k-toolbar-resizable">
-                <div class="k-overflow-anchor k-button k-hidden">
-                    <span class="k-icon k-i-more-vertical"></span>
-                </div>
+                <button is="Button" icon="more-vertical" class="k-overflow-anchor" hidden></button>
                 <div class="k-pager-wrap">
-                    <a class="k-button k-button-icon k-flat k-pager-nav k-pager-first"><span class="k-icon k-i-arrow-end-left"></span></a>
-                    <a class="k-button k-button-icon k-flat k-pager-nav"><span class="k-icon k-i-arrow-60-left"></span></a>
+                    <button is="Button" fillMode="flat" icon="arrow-end-left" class="k-pager-nav k-pager-first"></button>
+                    <button is="Button" fillMode="flat" icon="arrow-60-left" class="k-pager-nav"></button>
                     <span class="k-pager-input k-label"><input is="Textbox" />of 4 pages</span>
-                    <a class="k-button k-button-icon k-flat k-pager-nav"><span class="k-icon k-i-arrow-60-right"></span></a>
-                    <a class="k-button k-button-icon k-flat k-pager-nav k-pager-last"><span class="k-icon k-i-arrow-end-right"></span></a>
+                    <button is="Button" fillMode="flat" icon="arrow-60-right" class="k-pager-nav"></button>
+                    <button is="Button" fillMode="flat" icon="arrow-end-right" class="k-pager-nav k-pager-last"></button>
                 </div>
                 <span class="k-spacer"></span>
-                <a class="k-button k-button-icon k-flat"><span class="k-icon k-i-file-pdf"></span></a>
-                <a class="k-button k-button-icon k-flat"><span class="k-icon k-i-print"></span></a>
-                <a class="k-button k-button-icon k-flat"><span class="k-icon k-i-fullscreen"></span></a>
+                <button is="Button" fillMode="flat" icon="file-pdf"></button>
+                <button is="Button" fillMode="flat" icon="print"></button>
+                <button is="Button" fillMode="flat" icon="fullscreen"></button>
             </div>
             <div class="k-canvas k-list-scroller">
                 <div class="k-page" style="width: 720px; height: 360px;"></div>

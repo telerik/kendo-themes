@@ -27,32 +27,16 @@
             <!-- Header -->
             <div class="k-imageeditor-header">
                 <div class="k-imageeditor-toolbar k-toolbar k-widget">
-                    <a class="k-button k-button-icon">
-                        <span class="k-icon k-i-upload"></span>
-                    </a>
-                    <a class="k-button k-button-icon">
-                        <span class="k-icon k-i-download"></span>
-                    </a>
-                    <div class="k-separator">&nbsp;</div>
-                    <a class="k-button k-button-icon">
-                        <span class="k-icon k-i-undo"></span>
-                    </a>
-                    <a class="k-button k-button-icon">
-                        <span class="k-icon k-i-redo"></span>
-                    </a>
-                    <div class="k-separator">&nbsp;</div>
-                    <a class="k-button k-button-icon">
-                        <span class="k-icon k-i-crop"></span>
-                    </a>
-                    <a class="k-button k-button-icon">
-                        <span class="k-icon k-i-image-resize"></span>
-                    </a>
-                    <a class="k-button k-button-icon">
-                        <span class="k-icon k-i-zoom-in"></span>
-                    </a>
-                    <a class="k-button k-button-icon">
-                        <span class="k-icon k-i-zoom-out"></span>
-                    </a>
+                    <button is="Button" icon="upload"></button>
+                    <button is="Button" icon="download"></button>
+                    <div class="k-separator"></div>
+                    <button is="Button" icon="undo"></button>
+                    <button is="Button" icon="redo"></button>
+                    <div class="k-separator"></div>
+                    <button is="Button" icon="crop"></button>
+                    <button is="Button" icon="image-resize"></button>
+                    <button is="Button" icon="zoom-in"></button>
+                    <button is="Button" icon="zoom-out"></button>
                     <div>
                         <span class="k-widget k-dropdown">
                             <span class="k-dropdown-wrap">
@@ -113,8 +97,8 @@
                                     <label class="k-label k-form-label">Orientation:</label>
                                     <div class="k-form-field-wrap">
                                         <div class="k-widget k-button-group">
-                                            <span class="k-button k-state-selected">Portrait</span>
-                                            <span class="k-button">Landscape</span>
+                                            <button is="Button" selected>Portrait</button>
+                                            <button is="Button">Landscape</button>
                                         </div>
                                     </div>
                                 </div>
@@ -139,8 +123,8 @@
                             </div>
                         </fieldset>
                         <div class="k-form-buttons">
-                            <button class="k-imageeditor-pane-button k-button">Cancel</button>
-                            <button class="k-imageeditor-pane-button k-imageeditor-pane-confirm-button k-button k-primary">Confirm</button>
+                            <button is="Button">Cancel</button>
+                            <button is="Button" themeColor="primary">Confirm</button>
                         </div>
                     </div>
                 </div>
