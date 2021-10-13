@@ -12,15 +12,9 @@ body {
     box-sizing: border-box;
     gap: 20px;
 }
-#test-area::after {
-    content: "";
-    clear: both;
-    display: block;
-}
 #test-area.grid {
     display: grid;
 }
-#test-area.grid::after { display: none; }
 
 .section {
     margin: 10px;
