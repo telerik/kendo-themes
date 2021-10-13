@@ -43,7 +43,7 @@
         }
     }
 
-    // Legacy align
+    // Actions align
     .k-actions-start {
         justify-content: flex-start;
     }
@@ -55,6 +55,14 @@
     }
     .k-actions-stretched > * {
         flex: 1 0 0%;
+    }
+
+    // Actions orientation
+    .k-actions-horizontal {
+        flex-flow: row nowrap;
+    }
+    .k-actions-vertical {
+        flex-flow: column nowrap;
     }
 
 }
