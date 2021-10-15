@@ -4,6 +4,7 @@ suite('Masked textbox', () => {
 
     before( () => {
         loadFixture('/html/maskedtextbox.html');
+        window.kendo.Html.init();
     });
     after( () => {
         clearFixture();

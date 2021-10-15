@@ -4,6 +4,7 @@ suite('Multiselect', () => {
 
     before( () => {
         loadFixture('/html/multiselect.html');
+        window.kendo.Html.init();
     });
     after( () => {
         clearFixture();

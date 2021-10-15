@@ -4,6 +4,7 @@ suite('Autocomplete', () => {
 
     before( () => {
         loadFixture('/html/autocomplete.html');
+        window.kendo.Html.init();
     });
     after( () => {
         clearFixture();

@@ -4,6 +4,7 @@ suite('Colorpicker', () => {
 
     before( () => {
         loadFixture('/html/colorpicker.html');
+        window.kendo.Html.init();
     });
     after( () => {
         clearFixture();

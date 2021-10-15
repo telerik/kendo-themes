@@ -4,6 +4,7 @@ suite('Combobox', () => {
 
     before( () => {
         loadFixture('/html/combobox.html');
+        window.kendo.Html.init();
     });
     after( () => {
         clearFixture();

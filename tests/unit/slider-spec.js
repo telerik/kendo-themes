@@ -4,6 +4,7 @@ suite('Slider', () => {
 
     before( ()=> {
         loadFixture('/html/slider.html');
+        window.kendo.Html.init();
     });
     after( ()=> {
         clearFixture();
