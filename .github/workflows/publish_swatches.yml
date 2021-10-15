@@ -30,13 +30,13 @@ jobs:
       - name: Setup node
         uses: actions/setup-node@v2
         with:
+          cache: 'npm'
           node-version: 14.x
 
       - name: Install
-        run: npm ci
-
-      - name: Bootstrap
-        run: npm run bootstrap
+        run: |
+          npm ci
+          npm run bootstrap
 
       - name: Build swatches
         run: gulp sass:swatches
