@@ -2,7 +2,7 @@
 /* global kendo */
 import { isFunction } from '../utils/object';
 
-window.addEventListener('DOMContentLoaded', () => {
+export function init() {
     document.querySelectorAll('[is]').forEach( element => {
         const componentName = element.getAttribute('is');
         const component = kendo.Html[componentName];
@@ -11,7 +11,9 @@ window.addEventListener('DOMContentLoaded', () => {
             new component( element );
         }
     });
-});
+}
+
+window.addEventListener('DOMContentLoaded', init);
 
 // Dependencies
 export * from './component';
