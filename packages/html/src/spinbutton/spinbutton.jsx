@@ -43,8 +43,8 @@ function SpinButtonStatic(props) {
 
     return (
         <span className={spinButtonClasses} {...ariaAttr} {...htmlAttributes}>
-            <ButtonStatic className="k-spinner-increase k-numeric-increase" icon="arrow-n" />
-            <ButtonStatic className="k-spinner-decrease k-numeric-decrease" icon="arrow-s" />
+            <ButtonStatic size="none" rounded="none" className="k-spinner-increase" icon="arrow-n" />
+            <ButtonStatic size="none" rounded="none" className="k-spinner-decrease" icon="arrow-s" />
         </span>
     );
 }

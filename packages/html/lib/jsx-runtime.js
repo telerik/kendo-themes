@@ -1,5 +1,7 @@
+/* eslint-disable no-new */
+/* global kendo */
 import { isFunction, isArray, isObject } from '../utils/object';
-import { classNames } from '../utils/styles';
+import { classNames, cssStyle } from '../utils/styles';
 
 const JSX_FRAGMENT = '#fragment';
 const JSX_TEXT = '#text';
@@ -8,7 +10,28 @@ const attrMap = {
     'class': 'className',
     themecolor: 'themeColor',
     fillmode: 'fillMode',
-    showspinbuttons: 'showSpinButtons',
+
+    // Inputs
+    showtext: 'showText',
+    showvalue: 'showValue',
+    valueicon: 'valueIcon',
+    valueiconname: 'valueIconName',
+    showicon: 'showIcon',
+    iconposition: 'iconPosition',
+    iconname: 'iconName',
+    showarrow: 'showArrow',
+    arrowicon: 'arrowIcon',
+    arrowiconname: 'arrowIconName',
+    showarrowbutton: 'showArrowButton',
+    arrowbutton: 'arrowButton',
+    showdropdownbutton: 'showDropdownButton',
+    dropdownbutton: 'dropdownButton',
+    showspinbutton: 'showSpinButton',
+    spinbutton: 'spinButton',
+    showclearbutton: 'showClearButton',
+    clearbutton: 'clearButton',
+
+    // Switch
     onlabel: 'onLabel',
     offlabel: 'offLabel',
     trackrounded: 'trackRounded',
@@ -23,18 +46,27 @@ const booleanAttr = new Set([
     'active',
     'disabled',
 
-    'selected',
-
     'checked',
     'indeterminate',
 
     'valid',
     'invalid',
+    'required',
+
+    'selected',
+    'loading',
+
+    'showText',
+    'showValue',
+    'showIcon',
+    'showClearButton',
+    'showSpinButton',
 
     'aria'
 ]);
 
 const skipAttr = new Set([
+    'is',
     'aria',
     'legacy'
 ]);
@@ -42,6 +74,7 @@ const skipAttr = new Set([
 const setAttr = new Set([
     // Global
     'id',
+    'style',
 
     // Related to forms
     'type',
@@ -50,8 +83,56 @@ const setAttr = new Set([
     'autocomplete'
 ]);
 
-function attrToProps( element ) {
-    let attributes = element.attributes;
+function htmlToProps( element ) {
+    let props = attrToProps( element.attributes );
+    let children = Array.from( element.childNodes );
+
+    props.children = [];
+
+    children.forEach( child => {
+        let childProps;
+        let nodeType = child.nodeType;
+
+        if ( nodeType === Node.TEXT_NODE ) {
+            let textContent = child.textContent.trim();
+
+            if ( textContent !== '' ) {
+                childProps = {
+                    type: JSX_TEXT,
+                    props: {
+                        text: textContent
+                    }
+                };
+
+                props.children.push( childProps );
+            }
+        }
+
+        if ( nodeType === Node.ELEMENT_NODE ) {
+            let componentName = child.getAttribute('is');
+            let component = kendo.Html[componentName];
+
+            if (isFunction( component )) {
+                component = new component( child );
+                childProps = component.render();
+                childProps._component = componentName;
+            } else {
+                childProps = {
+                    type: child.nodeName,
+                    props: htmlToProps( child )
+                };
+
+            }
+
+            props.children.push( childProps );
+        }
+
+    });
+
+    return props;
+}
+
+function attrToProps( attributes ) {
     let props = {};
 
     Array.from(attributes).forEach((attrObj) => {
@@ -62,8 +143,16 @@ function attrToProps( element ) {
             attrName = attrMap[attrName];
         }
 
-        if (booleanAttr.has(attrName) && attrValue === '') {
-            props[ attrName ] = true;
+        if (booleanAttr.has(attrName) && typeof attrValue === 'string') {
+            switch (attrValue) {
+                case '':
+                case 'true':
+                    props[ attrName ] = true;
+                    break;
+                default:
+                    props[ attrName ] = false;
+                    break;
+            }
         } else {
             props[ attrName ] = attrValue;
         }
@@ -148,14 +237,17 @@ function renderDOM( jsxNode, container = null ) {
     }
 
     props.className = classNames( props.className );
+    props.style = cssStyle( props.style );
 
     for (let [ attr, val ] of Object.entries(props)) {
         if (skipAttr.has(attr)) {
             continue;
         }
 
-        if (setAttr.has(attr) && val !== '') {
-            element.setAttribute( attr, val );
+        if (setAttr.has(attr)) {
+            if (val !== '') {
+                element.setAttribute( attr, val );
+            }
         } else {
             element[attr] = val;
         }
@@ -181,5 +273,6 @@ export {
     jsxs,
     JSX_FRAGMENT as Fragment,
     renderDOM,
-    attrToProps
+    attrToProps,
+    htmlToProps
 };

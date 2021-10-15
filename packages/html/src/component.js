@@ -1,5 +1,5 @@
 import { isFunction } from '../utils/object';
-import { renderDOM, attrToProps } from '../lib/jsx-runtime';
+import { renderDOM, htmlToProps } from '../lib/jsx-runtime';
 
 const globalDefaultProps = {
     legacy: true,
@@ -23,7 +23,7 @@ class Component {
     constructor( element ) {
 
         this._element = element;
-        this._props = attrToProps( element );
+        this._props = htmlToProps( element );
 
         delete this._props.is;
 
