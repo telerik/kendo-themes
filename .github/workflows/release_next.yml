@@ -34,16 +34,16 @@ jobs:
       - name: Setup node
         uses: actions/setup-node@v2
         with:
+          cache: 'npm'
           node-version: 14.x
           registry-url: 'https://registry.npmjs.org'
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Install
-        run: npm ci
-
-      - name: Bootstrap
-        run: npm run bootstrap
+        run: |
+          npm ci
+          npm run bootstrap
 
       - name: Build themes for dist
         run: |
