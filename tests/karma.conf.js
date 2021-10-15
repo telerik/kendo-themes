@@ -15,7 +15,8 @@ module.exports = function(config) {
             'node_modules/chai/chai.js',
             'node_modules/jquery/dist/jquery.js',
             'unit/lib/helpers.js',
-            `${config.ghActions === true ? '.tmp/dist/themes' : '../packages'}/${config.theme || 'default'}/dist/all.css`,
+            `${config.ghActions === true ? 'tmp/themes' : '../packages'}/${config.theme || 'default'}/dist/all.css`,
+            `${config.ghActions === true ? 'tmp/html-helpers' : '../packages/html'}/dist/index.js`,
             'unit/html/**/*.html',
             'unit/data/metrics.js',
             'unit/**/*-spec.js'
@@ -75,8 +76,7 @@ module.exports = function(config) {
         // Proxies
         proxies: {
             // '/tests/': '/base/tests/',
-            '/html/': '/base/unit/html/',
-            '/theme/': `/base/packages/${config.theme || 'default'}/dist/`
+            '/html/': '/base/unit/html/'
         },
 
 

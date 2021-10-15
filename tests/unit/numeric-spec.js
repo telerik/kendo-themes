@@ -4,6 +4,7 @@ suite('Numeric', () => {
 
     before( () => {
         loadFixture('/html/numeric.html');
+        window.kendo.Html.init();
     });
     after( () => {
         clearFixture();

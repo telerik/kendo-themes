@@ -4,6 +4,7 @@ suite('Dialog', () => {
 
     before( () => {
         loadFixture('/html/dialog.html');
+        window.kendo.Html.init();
     });
     after( () => {
         clearFixture();

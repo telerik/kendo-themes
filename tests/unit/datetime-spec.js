@@ -4,6 +4,7 @@ suite('Dateinput', () => {
 
     before( () => {
         loadFixture('/html/datetime.html');
+        window.kendo.Html.init();
     });
     after(() => {
         clearFixture();

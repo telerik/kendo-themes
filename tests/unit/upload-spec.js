@@ -4,6 +4,7 @@ suite('Upload', () => {
 
     before( ()=> {
         loadFixture('/html/upload.html');
+        window.kendo.Html.init();
     });
     after( () => {
         clearFixture();

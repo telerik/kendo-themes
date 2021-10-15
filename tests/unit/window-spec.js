@@ -4,6 +4,7 @@ suite('Window', () =>{
 
     before( () => {
         loadFixture('/html/window.html');
+        window.kendo.Html.init();
     });
     after( () => {
         clearFixture();

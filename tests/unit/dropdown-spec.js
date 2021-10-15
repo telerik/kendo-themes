@@ -4,6 +4,7 @@ suite('Dropdown', () => {
 
     before( () => {
         loadFixture('/html/dropdown.html');
+        window.kendo.Html.init();
     });
     after( () => {
         clearFixture();

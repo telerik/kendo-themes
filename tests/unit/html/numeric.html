@@ -4,22 +4,11 @@
     <title>Numeric</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/theme/all.css" />
 </head>
 <body>
 
     <div class="test-area">
-        <span id="numeric" class="k-widget k-numerictextbox">
-            <span class="k-numeric-wrap">
-                <input type="text" class="k-formatted-value k-input" style="display: block;" />
-                <input type="text" value="30" min="0" max="100" style="display: none;" class="k-input" />
-                <span class="k-icon k-i-warning" style="display: none;"></span>
-                <span class="k-select">
-                    <span class="k-link k-link-increase"><span class="k-icon k-i-arrow-60-up"></span></span>
-                    <span class="k-link k-link-decrease"><span class="k-icon k-i-arrow-60-down"></span></span>
-                </span>
-            </span>
-        </span>
+        <input is="NumericTextbox" id="numeric" value="30" />
     </div>
 
 </body>
