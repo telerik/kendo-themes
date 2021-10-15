@@ -111,4 +111,28 @@
         }
     }
 
+    // @name k-gap-VALUE
+    // @description This is equivalent to `gap: VALUE;`. Gap area between both rows and columns in grid and flexbox layouts.
+    // @group spacing
+
+    // @name k-gap-x-VALUE
+    // @description This is equivalent to `column-gap: VALUE;`. Gap area between columns in grid and flexbox layouts.
+    // @group spacing
+
+    // @name k-gap-y-VALUE
+    // @description This is equivalent to `row-gap: VALUE;`. Gap area between rows in grid and flexbox layouts.
+    // @group spacing
+
+    // Gap
+    .k-no-gap { gap: 0 !important; }
+
+    @each $size, $val in $spacing {
+        .k-gap-#{$size}     { gap: $val; }
+        .k-gap-x-#{$size}   { column-gap: $val; }
+        .k-gap-y-#{$size}   { row-gap: $val; }
+
+        .\!k-gap-#{$size}   { gap: $val !important; }
+        .\!k-gap-x-#{$size} { column-gap: $val !important; }
+        .\!k-gap-y-#{$size} { row-gap: $val !important; }
+    }
 }
