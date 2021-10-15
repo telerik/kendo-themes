@@ -14,8 +14,8 @@ on:
 
 jobs:
 
-  build-themes:
-    name: Build themes
+  run-tests:
+    name: Run tests
 
     runs-on: ubuntu-latest
 
@@ -41,44 +41,15 @@ jobs:
       - name: Build themes
         run: npm run sass:flat
 
-      - name: Upload artifacts
-        uses: actions/upload-artifact@v2
-        with:
-          name: themes
-          path: packages/*/dist/all.css
-          if-no-files-found: error
+      - name: Build scripts
+        run: npm run build:scripts
 
-  run-tests:
-    name: Run tests
-    needs: build-themes
-
-    runs-on: ubuntu-latest
-
-    steps:
-
-      - name: Checkout branch
-        uses: actions/checkout@v2
-
-      # - name: Setup Chrome
-      #   run: |
-      #     export CHROME_SOURCE_URL=https://dl.google.com/dl/linux/direct/google-chrome-stable_current_amd64.deb
-      #     wget --no-verbose -O /tmp/$(basename $CHROME_SOURCE_URL) $CHROME_SOURCE_URL
-      #     sudo apt install /tmp/$(basename $CHROME_SOURCE_URL)
-      #     google-chrome --version
-
-      - name: Setup node
-        uses: actions/setup-node@v2
-        with:
-          node-version: 14.x
-
-      - name: Download artifacts
-        uses: actions/download-artifact@v2
-        with:
-          name: themes
-          path: tests/.tmp/dist/themes
-
-      # - name: List artifacts
-      #   run: ls -R tests/.tmp/dist/themes
+      - name: Copy assets
+        run: |
+          mkdir -p tests/tmp/themes/default/dist
+          mkdir -p tests/tmp/html-helpers/dist
+          cp packages/default/dist/all.css tests/tmp/themes/default/dist
+          cp packages/html/dist/index.js tests/tmp/html-helpers/dist
 
       - name: Install
         run: npm ci
