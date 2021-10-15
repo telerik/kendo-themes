@@ -21,9 +21,7 @@ function InputPrefixStatic(props) {
         'k-input-prefix'
     ];
 
-    let childCount = children.childNodes.length;
-
-    if (childCount === 0) {
+    if (children.length === 0) {
         return <></>;
     }
 
@@ -42,7 +40,6 @@ InputPrefixStatic.defaultProps = {
 
 InputPrefixStatic.propTypes = {
     children: typeof [],
-
     className: typeof '',
 
     htmlAttributes: typeof []

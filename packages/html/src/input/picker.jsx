@@ -1,7 +1,7 @@
 import * as styles from '../../utils/styles';
 import { Component, globalDefaultProps } from '../component';
 
-class Input extends Component {
+class Picker extends Component {
 
     init() {
         let prefix = <></>;
@@ -32,12 +32,12 @@ class Input extends Component {
 
     render() {
         return (
-            <InputStatic {...this.props} />
+            <PickerStatic {...this.props} />
         );
     }
 }
 
-function InputStatic(props) {
+function PickerStatic(props) {
 
     const {
         className: ownClassName,
@@ -59,9 +59,9 @@ function InputStatic(props) {
         ...htmlAttributes
     } = props;
 
-    let inputClasses = [
+    let pickerClasses = [
         ownClassName,
-        'k-input',
+        'k-picker',
         styles.sizeClass( size, 'k-input' ),
         styles.roundedClass( rounded ),
         styles.fillModeClass( fillMode, 'k-input' ),
@@ -92,13 +92,13 @@ function InputStatic(props) {
     }
 
     return (
-        <span className={inputClasses} {...ariaAttr} {...htmlAttributes}>
+        <span className={pickerClasses} {...ariaAttr} {...htmlAttributes}>
             {props.children}
         </span>
     );
 }
 
-InputStatic.defaultProps = {
+PickerStatic.defaultProps = {
     ...globalDefaultProps,
 
     type: 'text',
@@ -112,7 +112,7 @@ InputStatic.defaultProps = {
     fillMode: 'solid'
 };
 
-InputStatic.propTypes = {
+PickerStatic.propTypes = {
     children: typeof [],
     className: typeof '',
 
@@ -142,4 +142,4 @@ InputStatic.propTypes = {
     htmlAttributes: typeof []
 };
 
-export { Input, InputStatic };
+export { Picker, PickerStatic };

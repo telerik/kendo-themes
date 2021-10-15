@@ -21,9 +21,7 @@ function InputSuffixStatic(props) {
         'k-input-suffix'
     ];
 
-    let childCount = children.childNodes.length;
-
-    if (childCount === 0) {
+    if (children.length === 0) {
         return <></>;
     }
 
@@ -42,7 +40,6 @@ InputSuffixStatic.defaultProps = {
 
 InputSuffixStatic.propTypes = {
     children: typeof [],
-
     className: typeof '',
 
     htmlAttributes: typeof []

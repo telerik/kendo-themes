@@ -1,10 +1,8 @@
-import * as styles from '../../utils/styles';
 import { Component, globalDefaultProps } from '../component';
 import { IconStatic } from '../icon/index';
-import { InputStatic } from '../input/index';
+import { InputStatic, InputInnerInputStatic } from '../input/index';
 
 class MaskedTextbox extends Component {
-
     render() {
         return <MaskedTextboxStatic {...this.props} />;
     }
@@ -15,6 +13,7 @@ function MaskedTextboxStatic(props) {
     const {
         className: ownClassName,
 
+        type,
         value,
         placeholder,
 
@@ -25,6 +24,7 @@ function MaskedTextboxStatic(props) {
 
         hover,
         focus,
+        valid,
         invalid,
         required,
         disabled,
@@ -36,72 +36,74 @@ function MaskedTextboxStatic(props) {
 
     } = props;
 
+    htmlAttributes.size = size;
+    htmlAttributes.rounded = rounded;
+    htmlAttributes.fillMode = fillMode;
+    htmlAttributes.hover = hover;
+    htmlAttributes.focus = focus;
+    htmlAttributes.valid = invalid;
+    htmlAttributes.invalid = invalid;
+    htmlAttributes.required = required;
+    htmlAttributes.disabled = disabled;
+
     const inputAttributes = {
-        type: 'text',
+        type,
         value,
         placeholder,
 
         disabled
     };
 
+    let maskedClasses = [
+        ownClassName,
+        'k-maskedtextbox'
+    ];
+
     let ariaAttr = aria
         ? {}
         : {};
 
-    let maskedClasses = [
-        ownClassName,
-        'k-maskedtextbox',
-        styles.sizeClass( size, 'k-maskedtextbox' ),
-        styles.roundedClass( rounded ),
-        styles.fillModeClass( fillMode, 'k-maskedtextbox' ),
-        {
-            'k-hover': hover === true,
-            'k-focus': focus === true,
-            'k-invalid': invalid === true,
-            'k-required': required === true,
-            'k-disabled': disabled === true
-        }
-    ];
-
-    let legacyClasses = [
-        ownClassName,
-        'k-widget',
-        'k-maskedtextbox',
-        {
-            'k-state-disabled': disabled === true
-        }
-    ];
-
-    let legacyWrapClasses = [
-        ownClassName,
-        'k-textbox',
-        {
-            'k-state-hover': hover === true,
-            'k-state-focused': focus === true,
-            'k-state-invalid': invalid === true
-        }
-    ];
-
     if (legacy) {
+
+        let legacyClasses = [
+            ownClassName,
+            'k-widget',
+            'k-maskedtextbox',
+            {
+                'k-state-disabled': disabled === true
+            }
+        ];
+
+        let legacyInputClasses = [
+            'k-textbox',
+            {
+                'k-state-hover': hover === true,
+                'k-state-focused': focus === true,
+                'k-state-invalid': invalid === true
+            }
+        ];
+
         return (
-            <span className={legacyClasses} {...ariaAttr} {...htmlAttributes}>
-                <input className={legacyWrapClasses} {...inputAttributes} />
+            <InputStatic className={legacyClasses} {...htmlAttributes}>
+                <input type={type} className={legacyInputClasses} {...inputAttributes} />
                 {invalid && <IconStatic name="warning" />}
-            </span>
+            </InputStatic>
         );
     }
 
     return (
-        <span className={maskedClasses} {...ariaAttr} {...htmlAttributes}>
-            <InputStatic {...inputAttributes} />
+        <InputStatic className={maskedClasses} {...ariaAttr} {...htmlAttributes}>
+            <InputInnerInputStatic {...inputAttributes} />
+            {valid && <IconStatic className="k-input-icon" name="check" />}
             {invalid && <IconStatic className="k-input-icon" name="warning" />}
-        </span>
+        </InputStatic>
     );
 }
 
 MaskedTextboxStatic.defaultProps = {
     ...globalDefaultProps,
 
+    type: 'text',
     value: '',
     placeholder: '',
 
@@ -112,6 +114,8 @@ MaskedTextboxStatic.defaultProps = {
 };
 
 MaskedTextboxStatic.propTypes = {
+    className: typeof '',
+
     type: typeof [ 'text' ],
     value: typeof '',
     placeholder: typeof '',
@@ -131,7 +135,6 @@ MaskedTextboxStatic.propTypes = {
     aria: typeof false,
     legacy: typeof false,
 
-    className: typeof '',
     htmlAttributes: typeof []
 };
 

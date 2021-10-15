@@ -1,30 +1,7 @@
-import * as styles from '../../utils/styles';
-import { Component, globalDefaultProps } from '../component';
-import { InputStatic, InputPrefixStatic, InputSuffixStatic } from '../input/index';
+import { globalDefaultProps } from '../component';
+import { Input, InputStatic, InputInnerTextareaStatic } from '../input/index';
 
-class Textarea extends Component {
-
-    init() {
-        let children = Array.from(this.element.children);
-        let prefix = document.createDocumentFragment();
-        let suffix = document.createDocumentFragment();
-
-        children.forEach( child => {
-            const isName = child.getAttribute('is');
-
-            if (isName === 'InputPrefix') {
-                prefix.append( ...child.childNodes );
-            }
-
-            if (isName === 'InputSuffix') {
-                suffix.append( ...child.childNodes );
-            }
-        });
-
-        this._props.prefix = prefix;
-        this._props.suffix = suffix;
-    }
-
+class Textarea extends Input {
     render() {
         return <TextareaStatic {...this.props} />;
     }
@@ -48,6 +25,7 @@ function TextareaStatic(props) {
 
         hover,
         focus,
+        valid,
         invalid,
         required,
         disabled,
@@ -58,6 +36,16 @@ function TextareaStatic(props) {
         ...htmlAttributes
     } = props;
 
+    htmlAttributes.size = size;
+    htmlAttributes.rounded = rounded;
+    htmlAttributes.fillMode = fillMode;
+    htmlAttributes.hover = hover;
+    htmlAttributes.focus = focus;
+    htmlAttributes.valid = valid;
+    htmlAttributes.invalid = invalid;
+    htmlAttributes.required = required;
+    htmlAttributes.disabled = disabled;
+
     const inputAttributes = {
         value,
         placeholder,
@@ -65,55 +53,44 @@ function TextareaStatic(props) {
         disabled
     };
 
+    let textareaClasses = [
+        ownClassName,
+        'k-textarea'
+    ];
+
     let ariaAttr = aria
         ? {}
         : {};
 
-    let textareaClasses = [
-        ownClassName,
-        'k-textarea',
-        styles.sizeClass( size, 'k-textarea' ),
-        styles.roundedClass( rounded ),
-        styles.fillModeClass( fillMode, 'k-textarea' ),
-        {
-            'k-hover': hover === true,
-            'k-focus': focus === true,
-            'k-invalid': invalid === true,
-            'k-required': required === true,
-            'k-disabled': disabled === true
-        }
-    ];
-
-    let legacyClasses = [
-        ownClassName,
-        'k-textarea',
-        {
-            'k-state-hover': hover === true,
-            'k-state-focus': focus === true,
-            'k-state-invalid': invalid === true,
-            'k-state-required': required === true,
-            'k-state-disabled': disabled === true
-        }
-    ];
-
-    // Augment attributes
-
     if (legacy) {
+
+        let legacyClasses = [
+            ownClassName,
+            'k-textarea',
+            {
+                'k-state-hover': hover === true,
+                'k-state-focus': focus === true,
+                'k-state-invalid': invalid === true,
+                'k-state-required': required === true,
+                'k-state-disabled': disabled === true
+            }
+        ];
+
         return (
-            <span className={legacyClasses} {...ariaAttr} {...htmlAttributes}>
-                <InputPrefixStatic>{prefix}</InputPrefixStatic>
-                <InputStatic renderAs="textarea" {...inputAttributes} />
-                <InputSuffixStatic>{suffix}</InputSuffixStatic>
-            </span>
+            <InputStatic className={legacyClasses} {...htmlAttributes}>
+                {prefix}
+                <textarea className="k-input" {...inputAttributes}>{value}</textarea>
+                {suffix}
+            </InputStatic>
         );
     }
 
     return (
-        <span className={textareaClasses} {...ariaAttr} {...htmlAttributes}>
+        <InputStatic className={textareaClasses} {...ariaAttr} {...htmlAttributes}>
             {prefix}
-            <InputStatic renderAs="textarea" {...inputAttributes} />
+            <InputInnerTextareaStatic {...inputAttributes} />
             {suffix}
-        </span>
+        </InputStatic>
     );
 }
 
@@ -130,11 +107,14 @@ TextareaStatic.defaultProps = {
 };
 
 TextareaStatic.propTypes = {
+    children: typeof [],
+    className: typeof '',
+
     value: typeof '',
     placeholder: typeof '',
 
-    prefix: typeof document.createDocumentFragment(),
-    suffix: typeof document.createDocumentFragment(),
+    prefix: typeof '#fragment',
+    suffix: typeof '#fragment',
 
     size: typeof [ 'none', 'small', 'medium', 'large' ],
     rounded: typeof [ 'none', 'small', 'medium', 'large', 'pill' ],
@@ -151,7 +131,6 @@ TextareaStatic.propTypes = {
     aria: typeof false,
     legacy: typeof false,
 
-    className: typeof '',
     htmlAttributes: typeof []
 };
 

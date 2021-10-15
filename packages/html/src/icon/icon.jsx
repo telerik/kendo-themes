@@ -1,4 +1,4 @@
-import { Component } from '../component';
+import { Component, globalDefaultProps } from '../component';
 
 class Icon extends Component {
     render() {
@@ -8,30 +8,52 @@ class Icon extends Component {
 
 function IconStatic(props) {
     const {
+        className: ownClassName,
+
         name,
-        className: ownClassName
+
+        aria,
+
+        ...htmlAttributes
+
     } = props;
 
-    let iconClassName = [
+    let iconClasses = [
         ownClassName,
         'k-icon',
         `k-i-${name}`
     ];
 
+    let ariaAttr = aria
+        ? {}
+        : {};
+
     return (
         <>
-            { name && <span className={iconClassName}></span> }
+            { name &&
+                <span className={iconClasses} {...ariaAttr} {...htmlAttributes}>
+                    {props.children}
+                </span>
+            }
         </>
     );
 }
 
 IconStatic.defaultProps = {
-    name: '',
-    className: ''
+    ...globalDefaultProps,
+
+    name: ''
 };
 IconStatic.propTypes = {
+    className: typeof '',
+
     name: typeof '',
-    className: typeof ''
+
+    children: typeof [],
+
+    aria: typeof false,
+
+    htmlAttributes: typeof [],
 };
 
 export { Icon, IconStatic };

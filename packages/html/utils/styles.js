@@ -1,4 +1,4 @@
-import { isString, isObject } from './object';
+import { isString, isArray, isObject } from './object';
 
 const SPACE = ' ';
 
@@ -71,6 +71,12 @@ function classNames( ...args ) {
     let temp = args.flat().filter( arg => arg !== true && Boolean( arg ) );
 
     temp.forEach( className => {
+
+        if ( isArray( className ) ) {
+            classNames( className ).split( SPACE ).forEach( part => result.add( part ) );
+            return;
+        }
+
         if ( isString( className ) ) {
             className.split( SPACE ).forEach( part => result.add( part ) );
             return;
@@ -89,6 +95,26 @@ function classNames( ...args ) {
     /* eslint-enable */
 }
 
+function cssStyle( styleObj ) {
+    let result = new Set();
+
+    if ( styleObj === null || styleObj === undefined ) {
+        return '';
+    }
+
+    if ( typeof styleObj === 'string' ) {
+        return styleObj;
+    }
+
+    for (const [ key, value ] of Object.entries(styleObj)) {
+        if ( typeof value === 'string' && value !== '' ) {
+            result.add( `${key}: ${value};` );
+        }
+    }
+
+    return [ ...result ].join( SPACE );
+}
+
 
 export {
     sizeClass,
@@ -97,5 +123,6 @@ export {
     fillModeClass,
     themeColorClass,
 
-    classNames
+    classNames,
+    cssStyle,
 };
