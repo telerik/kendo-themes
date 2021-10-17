@@ -6,13 +6,13 @@ $radio-line-height: calc(#{$radio-size} + #{$radio-border-width}) !default;
 
 /// Background color of radio button.
 /// @group radio
-$radio-bg: $checkbox-bg !default;
+$radio-bg: $kendo-checkbox-bg !default;
 /// Color of radio button.
 /// @group radio
-$radio-text: $checkbox-text !default;
+$radio-text: $kendo-checkbox-text !default;
 /// Border color of radio button.
 /// @group radio
-$radio-border: $checkbox-border !default;
+$radio-border: $kendo-checkbox-border !default;
 
 /// Background color of hovered radio button.
 /// @group radio
@@ -36,16 +36,16 @@ $radio-checked-border: $radio-checked-text !default;
 
 /// Border color of focused radio button.
 /// @group radio
-$radio-focused-border: $checkbox-hovered-border !default;
+$radio-focused-border: $kendo-checkbox-focus-border !default;
 /// Box shadow of focused radio button.
 /// @group radio
-$radio-focused-shadow: $checkbox-focused-shadow !default;
+$radio-focused-shadow: $kendo-checkbox-focus-shadow !default;
 /// Border color of focused and checked radio button.
 /// @group radio
-$radio-focused-checked-border: $checkbox-checked-border !default;
+$radio-focused-checked-border: $kendo-checkbox-focus-checked-border !default;
 /// Box shadow of focused and checked radio button.
 /// @group radio
-$radio-focused-checked-shadow: $checkbox-focused-checked-shadow !default;
+$radio-focused-checked-shadow: $kendo-checkbox-focus-checked-shadow !default;
 
 /// Background color of disabled radio button.
 /// @group radio
@@ -55,7 +55,7 @@ $radio-disabled-bg: null !default;
 $radio-disabled-text: null !default;
 /// Border color of disabled radio button.
 /// @group radio
-$radio-disabled-border: $checkbox-disabled-border !default;
+$radio-disabled-border: $kendo-checkbox-disabled-border !default;
 
 /// Background color of disabled and checked radio button.
 /// @group radio
@@ -69,13 +69,13 @@ $radio-disabled-checked-border: $radio-disabled-border !default;
 
 /// Background color of invalid radio button.
 /// @group radio
-$radio-invalid-bg: $checkbox-invalid-bg !default;
+$radio-invalid-bg: $kendo-checkbox-invalid-bg !default;
 /// Color of invalid radio button.
 /// @group radio
-$radio-invalid-text: $checkbox-invalid-text !default;
+$radio-invalid-text: $kendo-checkbox-invalid-text !default;
 /// Border color of invalid radio button.
 /// @group radio
-$radio-invalid-border: $checkbox-invalid-border !default;
+$radio-invalid-border: $kendo-checkbox-invalid-border !default;
 
 
 // Radio indicator
