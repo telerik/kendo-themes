@@ -2,13 +2,11 @@
 
     // Radio
     .k-radio {
-        @include border-radius( $radio-radius );
+        @include border-radius( $kendo-radio-radius );
         margin: 0;
         padding: 0;
-        width: $radio-size;
-        height: $radio-size;
         line-height: initial;
-        border-width: $radio-border-width;
+        border-width: $kendo-radio-border-width;
         border-style: solid;
         outline: 0;
         box-sizing: border-box;
@@ -23,50 +21,69 @@
         -webkit-appearance: none;
     }
 
-    // Radio indicator
-    .k-radio::before {
-        @if $radio-icon-type == "glyph" {
-            content: $radio-checked-glyph;
-            width: $radio-glyph-size;
-            height: $radio-glyph-size;
-            font-size: $radio-glyph-size;
-            font-family: $radio-glyph-font-family;
-            line-height: 1;
-            transform: scale(0) translate(-50%, -50%);
-            overflow: hidden;
-            position: absolute;
-            top: 50%;
-            left: 50%;
+    // Radio size
+
+    @each $name, $size in $kendo-radio-sizes {
+        .k-radio-#{$name} {
+            width: $size;
+            height: $size;
+
+            + .k-radio-label {
+
+                .k-ripple {
+                    top: ($size / 2);
+                    left: ($size / 2);
+                    width: ($size * 5 / 2);
+                    height: ($size * 5 / 2);
+                }
+            }
         }
 
-        @if $radio-icon-type == "marker" {
-            content: "";
-            width: $radio-marker-checked-width;
-            height: $radio-marker-checked-width;
-            border-radius: 50%;
-            background-color: currentColor;
-            transform: scale(0) translate(-50%, -50%);
-            overflow: hidden;
-            position: absolute;
-            top: 50%;
-            left: 50%;
+        // Radio indicator
+        .k-radio-#{$name}::before {
+            @if $kendo-radio-icon-type == "glyph" {
+                content: $kendo-radio-checked-glyph;
+                width: $kendo-radio-glyph-size;
+                height: $kendo-radio-glyph-size;
+                font-size: $kendo-radio-glyph-size;
+                font-family: $kendo-radio-glyph-font-family;
+                line-height: 1;
+                transform: scale(0) translate(-50%, -50%);
+                overflow: hidden;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+            }
+
+            @if $kendo-radio-icon-type == "marker" {
+                content: "";
+                width: ($size / 2);
+                height: ($size / 2);
+                border-radius: 50%;
+                background-color: currentColor;
+                transform: scale(0) translate(-50%, -50%);
+                overflow: hidden;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+            }
         }
     }
 
     // Checked state
     .k-radio:checked,
     .k-radio.k-checked {
-        @if $radio-icon-type == "image" {
-            background-image: $radio-checked-image;
+        @if $kendo-radio-icon-type == "image" {
+            background-image: $kendo-radio-checked-image;
         }
 
-        @if $radio-icon-type == "glyph" {
+        @if $kendo-radio-icon-type == "glyph" {
             &::before {
                 transform: scale(1) translate(-50%, -50%);
             }
         }
 
-        @if $radio-icon-type == "marker" {
+        @if $kendo-radio-icon-type == "marker" {
             &::before {
                 transform: scale(1) translate(-50%, -50%);
             }
@@ -108,7 +125,7 @@
     .k-radio-label {
         margin: 0;
         padding: 0;
-        line-height: $radio-line-height;
+        line-height: $kendo-radio-line-height;
         display: inline-flex;
         align-items: flex-start;
         vertical-align: middle;
@@ -125,12 +142,8 @@
         }
 
         .k-ripple {
-            top: $radio-size / 2;
-            left: $radio-size / 2;
             right: auto;
             bottom: auto;
-            width: $radio-size * 5 / 2;
-            height: $radio-size * 5 / 2;
             transform: translate(-50%, -50%);
             border-radius: 50%;
 
@@ -151,10 +164,10 @@
     .k-radio + .k-radio-label,
     .k-radio-label + .k-radio,
     .k-label + .k-radio {
-        margin-left: $radio-label-margin-x;
+        margin-left: $kendo-radio-label-margin-x;
     }
     .k-radio-label > .k-radio {
-        margin-right: $radio-label-margin-x;
+        margin-right: $kendo-radio-label-margin-x;
         flex-shrink: 0;
     }
     kendo-label.k-radio-label > .k-label {
@@ -172,7 +185,7 @@
     }
     .k-radio-item,
     .k-radio-list-item {
-        padding: $radio-list-item-padding-y $radio-list-item-padding-x;
+        padding: $kendo-radio-list-item-padding-y $kendo-radio-list-item-padding-x;
         display: flex;
         flex-flow: row nowrap;
         align-items: center;
@@ -187,7 +200,7 @@
     .k-radio-list.k-list-horizontal {
         display: flex;
         flex-flow: row wrap;
-        gap: $radio-list-spacing;
+        gap: $kendo-radio-list-spacing;
     }
 
     // RTL
@@ -197,35 +210,37 @@
         .k-radio-label + .k-radio,
         .k-label + .k-radio {
             margin-left: 0;
-            margin-right: $radio-label-margin-x;
+            margin-right: $kendo-radio-label-margin-x;
         }
         .k-radio-label > .k-radio {
             margin-right: 0;
-            margin-left: $radio-label-margin-x;
+            margin-left: $kendo-radio-label-margin-x;
         }
         kendo-label.k-radio-label > .k-radio:last-child {
             margin-left: 0;
         }
         kendo-label.k-radio-label > .k-label:first-child {
             margin-right: 0;
-            margin-left: $radio-label-margin-x;
+            margin-left: $kendo-radio-label-margin-x;
         }
     }
 
     .k-ripple-container {
-        .k-radio::after {
-            content: "";
-            display: block;
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: $radio-ripple-size;
-            height: $radio-ripple-size;
-            margin-left: $radio-ripple-margin;
-            margin-top: $radio-ripple-margin;
-            border-radius: 100%;
-            z-index: 1;
-            transform: scale(0);
+        @each $name, $size in $kendo-radio-sizes {
+            .k-radio-#{$name}::after {
+                content: "";
+                display: block;
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: map-get($kendo-radio-ripple-size, $name);
+                height: map-get($kendo-radio-ripple-size, $name);
+                margin-left: map-get($kendo-radio-ripple-margin, $name);
+                margin-top: map-get($kendo-radio-ripple-margin, $name);
+                border-radius: 100%;
+                z-index: 1;
+                transform: scale(0);
+            }
         }
 
         .k-radio:disabled::after,
