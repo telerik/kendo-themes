@@ -82,8 +82,8 @@
     // Ripple
     .k-ripple-container {
         .k-radio::after {
-            background: $checkbox-checked-bg;
-            opacity: $checkbox-ripple-opacity;
+            background: $kendo-checkbox-checked-bg;
+            opacity: $kendo-checkbox-ripple-opacity;
         }
     }
 
