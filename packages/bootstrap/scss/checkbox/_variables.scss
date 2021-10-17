@@ -1,73 +1,170 @@
 // Checkbox
-$checkbox-size: map-get( $spacing, 4 ) !default;
-$checkbox-radius: map-get( $spacing, 1 ) !default;
-$checkbox-border-width: 1px !default;
-$checkbox-line-height: calc( #{$checkbox-size} + #{$checkbox-border-width} ) !default;
 
-$checkbox-bg: $component-bg !default;
-$checkbox-text: null !default;
-$checkbox-border: contrast-wcag( $input-bg, $gray-400, $gray-600 ) !default;
+/// The sizes of checkbox.
+/// @group checkbox
+$kendo-checkbox-sizes: (
+    sm: map-get( $spacing, 3 ),
+    md: map-get( $spacing, 4 ),
+    lg: map-get( $spacing, 6 )
+) !default;
 
-$checkbox-hovered-bg: null !default;
-$checkbox-hovered-text: null !default;
-$checkbox-hovered-border: null !default;
+/// The  border width of checkbox.
+/// @group checkbox
+$kendo-checkbox-border-width: 1px !default;
+/// The line height of checkbox.
+/// @group checkbox
+$kendo-checkbox-line-height: calc( #{map-get( $kendo-checkbox-sizes, "md" )} + #{$kendo-checkbox-border-width} ) !default;
 
-$checkbox-checked-bg: $primary !default;
-$checkbox-checked-text: contrast-wcag( $checkbox-checked-bg ) !default;
-$checkbox-checked-border: $checkbox-checked-bg !default;
+/// The background of checkbox.
+/// @group checkbox
+$kendo-checkbox-bg: $component-bg !default;
+/// The background of checkbox.
+/// @group checkbox
+$kendo-checkbox-text: null !default;
+/// The border of checkbox.
+/// @group checkbox
+$kendo-checkbox-border: contrast-wcag( $input-bg, $gray-400, $gray-600 ) !default;
 
-$checkbox-indeterminate-bg: $checkbox-checked-bg !default;
-$checkbox-indeterminate-text: $checkbox-checked-text !default;
-$checkbox-indeterminate-border: $checkbox-checked-border !default;
+/// The background of hovered checkbox.
+/// @group checkbox
+$kendo-checkbox-hover-bg: null !default;
+/// The text of hovered checkbox.
+/// @group checkbox
+$kendo-checkbox-hover-text: null !default;
+/// The border of hovered checkbox.
+/// @group checkbox
+$kendo-checkbox-hover-border: null !default;
 
-$checkbox-focused-border: try-tint( $primary, 50% ) !default;
-$checkbox-focused-shadow: 0 0 0 .25rem rgba( $primary, .25 ) !default;
-$checkbox-focused-checked-border: $checkbox-checked-border !default;
-$checkbox-focused-checked-shadow: $checkbox-focused-shadow !default;
+/// The background of checked checkbox.
+/// @group checkbox
+$kendo-checkbox-checked-bg: $primary !default;
+/// The text of checked checkbox.
+/// @group checkbox
+$kendo-checkbox-checked-text: contrast-wcag( $kendo-checkbox-checked-bg ) !default;
+/// The border of checked checkbox.
+/// @group checkbox
+$kendo-checkbox-checked-border: $kendo-checkbox-checked-bg !default;
 
-$checkbox-disabled-bg: null !default;
-$checkbox-disabled-text: null !default;
-$checkbox-disabled-border: null !default;
+/// The background of indeterminate checkbox.
+/// @group checkbox
+$kendo-checkbox-indeterminate-bg: $kendo-checkbox-checked-bg !default;
+/// The text of indeterminate checkbox.
+/// @group checkbox
+$kendo-checkbox-indeterminate-text: $kendo-checkbox-checked-text !default;
+/// The border of indeterminate checkbox.
+/// @group checkbox
+$kendo-checkbox-indeterminate-border: $kendo-checkbox-checked-border !default;
 
-$checkbox-disabled-checked-bg: null !default;
-$checkbox-disabled-checked-text: null !default;
-$checkbox-disabled-checked-border: null !default;
+/// The border of focused checkbox.
+/// @group checkbox
+$kendo-checkbox-focus-border: try-tint( $primary, 50% ) !default;
+/// The shadow of focused checkbox.
+/// @group checkbox
+$kendo-checkbox-focus-shadow: 0 0 0 .25rem rgba( $primary, .25 ) !default;
+/// The border of focused and checked checkbox.
+/// @group checkbox
+$kendo-checkbox-focus-checked-border: $kendo-checkbox-checked-border !default;
+/// The shadow of focused and checked checkbox.
+/// @group checkbox
+$kendo-checkbox-focus-checked-shadow: $kendo-checkbox-focus-shadow !default;
 
-$checkbox-invalid-bg: null !default;
-$checkbox-invalid-text: $invalid-text !default;
-$checkbox-invalid-border: $invalid-border !default;
+/// The background of disabled checkbox.
+/// @group checkbox
+$kendo-checkbox-disabled-bg: null !default;
+/// The text of disabled checkbox.
+/// @group checkbox
+$kendo-checkbox-disabled-text: null !default;
+/// The border of disabled checkbox.
+/// @group checkbox
+$kendo-checkbox-disabled-border: null !default;
+
+/// The background of disabled and checked checkbox.
+/// @group checkbox
+$kendo-checkbox-disabled-checked-bg: null !default;
+/// The text of disabled and checked checkbox.
+/// @group checkbox
+$kendo-checkbox-disabled-checked-text: null !default;
+/// The border of disabled and checked checkbox.
+/// @group checkbox
+$kendo-checkbox-disabled-checked-border: null !default;
+
+/// The background of invalid checkbox.
+/// @group checkbox
+$kendo-checkbox-invalid-bg: null !default;
+/// The text of invalid checkbox.
+/// @group checkbox
+$kendo-checkbox-invalid-text: $invalid-text !default;
+/// The border of invalid checkbox.
+/// @group checkbox
+$kendo-checkbox-invalid-border: $invalid-border !default;
 
 
 // Checkbox indicator
-$checkbox-icon-type: image !default;
 
-$checkbox-glyph-font-family: "WebComponentsIcons", monospace !default;
-$checkbox-glyph-size: $checkbox-size !default;
-$checkbox-checked-glyph: "\e118" !default;
-$checkbox-indeterminate-glyph: "\e121" !default;
+/// The icon type of checked checkbox.
+/// @group checkbox
+$kendo-checkbox-icon-type: image !default;
 
-$checkbox-checked-image: escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path fill='none' stroke='#{$checkbox-checked-text}' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/></svg>") ) !default;
-$checkbox-indeterminate-image: escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path fill='none' stroke='#{$checkbox-indeterminate-text}' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10h8'/></svg>") ) !default;
+/// The glyph font family of checkbox.
+/// @group checkbox
+$kendo-checkbox-glyph-font-family: "WebComponentsIcons", monospace !default;
+/// The glyph of checked checkbox.
+/// @group checkbox
+$kendo-checkbox-checked-glyph: "\e118" !default;
+/// The glyph of indeterminate checkbox.
+/// @group checkbox
+$kendo-checkbox-indeterminate-glyph: "\e121" !default;
 
-$checkbox-marker-checked-width: ( $checkbox-size / 2 ) !default;
-$checkbox-marker-checked-height: ( $checkbox-size / 2 ) !default;
-$checkbox-marker-indeterminate-width: ( $checkbox-size / 2 ) !default;
-$checkbox-marker-indeterminate-height: 2px !default;
+/// The image of checked checkbox.
+/// @group checkbox
+$kendo-checkbox-checked-image: escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path fill='none' stroke='#{$kendo-checkbox-checked-text}' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/></svg>") ) !default;
+/// The image of indeterminate checkbox.
+/// @group checkbox
+$kendo-checkbox-indeterminate-image: escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path fill='none' stroke='#{$kendo-checkbox-indeterminate-text}' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10h8'/></svg>") ) !default;
 
 
 // Checkbox label
-$checkbox-label-margin-x: map-get( $spacing, 1 ) !default;
+
+/// The horizontal margin of the checkbox inside a label.
+/// @group checkbox
+$kendo-checkbox-label-margin-x: map-get( $spacing, 1 ) !default;
 
 
 // Checkbox list
-$checkbox-list-margin: 0px !default;
-$checkbox-list-padding: 0px !default;
-$checkbox-list-item-padding-x: 0px !default;
-$checkbox-list-item-padding-y: $list-item-padding-y !default;
-$checkbox-list-horizontal-item-margin-x: 32px !default;
+
+/// The list margin checkbox.
+/// @group checkbox
+$kendo-checkbox-list-margin: 0px !default;
+/// The list padding checkbox.
+/// @group checkbox
+$kendo-checkbox-list-padding: 0px !default;
+/// The horizontal list item padding of checkbox.
+/// @group checkbox
+$kendo-checkbox-list-item-padding-x: 0px !default;
+/// The vertical list item padding of checkbox.
+/// @group checkbox
+$kendo-checkbox-list-item-padding-y: $list-item-padding-y !default;
+/// The horizontal margin of list item of checkbox.
+/// @group checkbox
+$kendo-checkbox-list-horizontal-item-margin-x: 32px !default;
 
 
 // Checkbox ripple
-$checkbox-ripple-size: $checkbox-size * 3 !default;
-$checkbox-ripple-margin: calc(-1 * (#{$checkbox-size} + #{$checkbox-border-width})) !default;
-$checkbox-ripple-opacity: .3 !default;
+
+/// The ripple size of checkbox.
+/// @group checkbox
+$kendo-checkbox-ripple-size: (
+    sm: (map-get( $kendo-checkbox-sizes, "sm" ) * 3),
+    md: (map-get( $kendo-checkbox-sizes, "md" ) * 3),
+    lg: (map-get( $kendo-checkbox-sizes, "lg" ) * 3)
+) !default;
+/// The ripple margin of checkbox.
+/// @group checkbox
+$kendo-checkbox-ripple-margin: (
+    sm: calc(-1 * (#{map-get( $kendo-checkbox-sizes, "sm" )} + #{$kendo-checkbox-border-width})),
+    md: calc(-1 * (#{map-get( $kendo-checkbox-sizes, "md" )} + #{$kendo-checkbox-border-width})),
+    lg: calc(-1 * (#{map-get( $kendo-checkbox-sizes, "lg" )} + #{$kendo-checkbox-border-width}))
+) !default;
+/// The ripple opacity of checkbox.
+/// @group checkbox
+$kendo-checkbox-ripple-opacity: .3 !default;
