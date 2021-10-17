@@ -2,13 +2,11 @@
 
     // Radio
     .k-radio {
-        @include border-radius( $radio-radius );
+        @include border-radius( $kendo-radio-radius );
         margin: 0;
         padding: 0;
-        width: $radio-size;
-        height: $radio-size;
         line-height: initial;
-        border-width: $radio-border-width;
+        border-width: $kendo-radio-border-width;
         border-style: solid;
         outline: 0;
         box-sizing: border-box;
@@ -23,14 +21,14 @@
         -webkit-appearance: none;
     }
 
+
     // Radio indicator
     .k-radio::before {
-        @if $radio-indicator-type == "glyph" {
-            content: $radio-checked-glyph;
-            width: $radio-glyph-size;
-            height: $radio-glyph-size;
-            font-size: $radio-glyph-size;
-            font-family: $radio-glyph-font-family;
+        @if $kendo-radio-indicator-type == "glyph" {
+            content: $kendo-radio-checked-glyph;
+            width: 1em;
+            height: 1em;
+            font-family: $kendo-radio-glyph-font-family;
             line-height: 1;
             transform: scale(0) translate(-50%, -50%);
             overflow: hidden;
@@ -43,24 +41,17 @@
     // Checked state
     .k-radio:checked,
     .k-radio.k-checked {
-        @if $radio-indicator-type == "image" {
-            background-image: $radio-checked-image;
+        @if $kendo-radio-indicator-type == "image" {
+            background-image: $kendo-radio-checked-image;
         }
 
-        @if $radio-indicator-type == "glyph" {
+        @if $kendo-radio-indicator-type == "glyph" {
             &::before {
                 transform: scale(1) translate(-50%, -50%);
             }
         }
     }
 
-    // Checked state
-    .k-radio:disabled:checked,
-    .k-radio.k-disabled.k-checked {
-        @if $radio-indicator-type == "image" {
-            background-image: $radio-disabled-checked-image;
-        }
-    }
 
     // Disabled state
     .k-radio:disabled,
@@ -97,7 +88,7 @@
     .k-radio-label {
         margin: 0;
         padding: 0;
-        line-height: $radio-line-height;
+        line-height: $kendo-radio-line-height;
         display: inline-flex;
         align-items: flex-start;
         vertical-align: middle;
@@ -114,12 +105,8 @@
         }
 
         .k-ripple {
-            top: $radio-size / 2;
-            left: $radio-size / 2;
             right: auto;
             bottom: auto;
-            width: $radio-size * 5 / 2;
-            height: $radio-size * 5 / 2;
             transform: translate(-50%, -50%);
             border-radius: 50%;
 
@@ -140,10 +127,10 @@
     .k-radio + .k-radio-label,
     .k-radio-label + .k-radio,
     .k-label + .k-radio {
-        margin-left: $radio-label-margin-x;
+        margin-left: $kendo-radio-label-margin-x;
     }
     .k-radio-label > .k-radio {
-        margin-right: $radio-label-margin-x;
+        margin-right: $kendo-radio-label-margin-x;
         flex-shrink: 0;
     }
     kendo-label.k-radio-label > .k-label {
@@ -161,7 +148,7 @@
     }
     .k-radio-item,
     .k-radio-list-item {
-        padding: $radio-list-item-padding-y $radio-list-item-padding-x;
+        padding: $kendo-radio-list-item-padding-y $kendo-radio-list-item-padding-x;
         display: flex;
         flex-flow: row nowrap;
         align-items: center;
@@ -176,7 +163,7 @@
     .k-radio-list.k-list-horizontal {
         display: flex;
         flex-flow: row wrap;
-        gap: $radio-list-spacing;
+        gap: $kendo-radio-list-spacing;
     }
 
     // RTL
@@ -186,18 +173,18 @@
         .k-radio-label + .k-radio,
         .k-label + .k-radio {
             margin-left: 0;
-            margin-right: $radio-label-margin-x;
+            margin-right: $kendo-radio-label-margin-x;
         }
         .k-radio-label > .k-radio {
             margin-right: 0;
-            margin-left: $radio-label-margin-x;
+            margin-left: $kendo-radio-label-margin-x;
         }
         kendo-label.k-radio-label > .k-radio:last-child {
             margin-left: 0;
         }
         kendo-label.k-radio-label > .k-label:first-child {
             margin-right: 0;
-            margin-left: $radio-label-margin-x;
+            margin-left: $kendo-radio-label-margin-x;
         }
     }
 
@@ -208,10 +195,6 @@
             position: absolute;
             left: 0;
             top: 0;
-            width: $radio-ripple-size;
-            height: $radio-ripple-size;
-            margin-left: $radio-ripple-margin;
-            margin-top: $radio-ripple-margin;
             border-radius: 100%;
             z-index: 1;
             transform: scale(0);
@@ -221,25 +204,45 @@
         .k-radio.k-disabled::after {
             display: none;
         }
-    }
-}
 
-
-
-
-@include exports( "radio/layout/edge" ) {
-
-    .k-radio::-ms-check {
-        border-width: 0;
-        border-color: inherit;
-        color: inherit;
-        background-color: inherit;
+        .k-radio:disabled::after,
+        .k-radio.k-disabled::after {
+            display: none;
+        }
     }
 
-    // IE 11 hack
-    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-        .k-radio::-ms-check {
-            border-width: 1px;
+
+    // Radio size
+    @each $size, $size-props in $kendo-radio-sizes {
+        $_size: map-get( $size-props, size );
+        $_glyph-size: map-get( $size-props, glyph-size );
+        $_ripple-size: map-get( $size-props, ripple-size );
+
+        .k-radio-#{$size} {
+            width: $_size;
+            height: $_size;
+
+            &::before {
+                font-size: $_glyph-size;
+            }
+
+            + .k-radio-label {
+
+                .k-ripple {
+                    top: ($_size / 2);
+                    left: ($_size / 2);
+                    width: $_ripple-size;
+                    height: $_ripple-size;
+                }
+            }
+        }
+        .k-ripple-container {
+            .k-radio-#{$size}::after {
+                width: $_ripple-size;
+                height: $_ripple-size;
+                margin-left: calc( -#{$_ripple-size} / 2 );
+                margin-top: calc( -#{$_ripple-size} / 2 );
+            }
         }
     }
 
