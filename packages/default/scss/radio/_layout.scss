@@ -2,13 +2,11 @@
 
     // Radio
     .k-radio {
-        @include border-radius( $radio-radius );
+        @include border-radius( $kendo-radio-radius );
         margin: 0;
         padding: 0;
-        width: $radio-size;
-        height: $radio-size;
         line-height: initial;
-        border-width: $radio-border-width;
+        border-width: $kendo-radio-border-width;
         border-style: solid;
         outline: 0;
         box-sizing: border-box;
@@ -26,12 +24,11 @@
 
     // Radio indicator
     .k-radio::before {
-        @if $radio-indicator-type == "glyph" {
-            content: $radio-checked-glyph;
-            width: $radio-glyph-size;
-            height: $radio-glyph-size;
-            font-size: $radio-glyph-size;
-            font-family: $radio-glyph-font-family;
+        @if $kendo-radio-indicator-type == "glyph" {
+            content: $kendo-radio-checked-glyph;
+            width: 1em;
+            height: 1em;
+            font-family: $kendo-radio-glyph-font-family;
             line-height: 1;
             transform: scale(0) translate(-50%, -50%);
             overflow: hidden;
@@ -45,11 +42,11 @@
     // Checked state
     .k-radio:checked,
     .k-radio.k-checked {
-        @if $radio-indicator-type == "image" {
-            background-image: $radio-checked-image;
+        @if $kendo-radio-indicator-type == "image" {
+            background-image: $kendo-radio-checked-image;
         }
 
-        @if $radio-indicator-type == "glyph" {
+        @if $kendo-radio-indicator-type == "glyph" {
             &::before {
                 transform: scale(1) translate(-50%, -50%);
             }
@@ -64,8 +61,8 @@
     }
     .k-radio:disabled:checked,
     .k-radio.k-disabled.k-checked {
-        @if $radio-indicator-type == "image" {
-            background-image: $radio-disabled-checked-image;
+        @if $kendo-radio-indicator-type == "image" {
+            background-image: $kendo-radio-disabled-checked-image;
         }
     }
 
@@ -98,7 +95,7 @@
         padding: 0;
         display: inline-flex;
         align-items: flex-start;
-        gap: $radio-label-margin-x;
+        gap: $kendo-radio-label-margin-x;
         vertical-align: middle;
         position: relative;
         cursor: pointer;
@@ -113,7 +110,7 @@
     .k-radio + .k-radio-label,
     .k-radio-wrap + .k-radio-label {
         display: inline;
-        margin-inline-start: $radio-label-margin-x;
+        margin-inline-start: $kendo-radio-label-margin-x;
     }
 
 
@@ -137,7 +134,7 @@
     }
     .k-radio-item,
     .k-radio-list-item {
-        padding: $radio-list-item-padding-y $radio-list-item-padding-x;
+        padding: $kendo-radio-list-item-padding-y $kendo-radio-list-item-padding-x;
         display: flex;
         flex-flow: row nowrap;
         align-items: center;
@@ -152,15 +149,11 @@
     .k-radio-list.k-list-horizontal {
         display: flex;
         flex-flow: row wrap;
-        gap: $radio-list-spacing;
+        gap: $kendo-radio-list-spacing;
     }
 
 
     // Ripple
-    .k-radio-wrap .k-ripple-blob {
-        width: $radio-ripple-size;
-        height: $radio-ripple-size;
-    }
     .k-ripple-container {
         .k-radio::after {
             content: "";
@@ -168,8 +161,6 @@
             position: absolute;
             left: 50%;
             top: 50%;
-            width: $radio-ripple-size;
-            height: $radio-ripple-size;
             border-radius: 100%;
             z-index: -1;
             transition: opacity 100ms linear, transform 150ms cubic-bezier(.4, 0, .2, 1);
@@ -189,6 +180,34 @@
         .k-radio:disabled::after,
         .k-radio.k-disabled::after {
             display: none;
+        }
+
+        .k-radio:disabled::after,
+        .k-radio.k-disabled::after {
+            display: none;
+        }
+    }
+
+
+    // Radio size
+    @each $size, $size-props in $kendo-radio-sizes {
+        $_size: map-get( $size-props, size );
+        $_glyph-size: map-get( $size-props, glyph-size );
+        $_ripple-size: map-get( $size-props, ripple-size );
+
+        .k-radio-#{$size} {
+            width: $_size;
+            height: $_size;
+
+            &::before {
+                font-size: $_glyph-size;
+            }
+        }
+        .k-ripple-container {
+            .k-radio-#{$size}::after {
+                width: $_ripple-size;
+                height: $_ripple-size;
+            }
         }
     }
 
