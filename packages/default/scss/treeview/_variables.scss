@@ -29,7 +29,7 @@ $treeview-item-selected-gradient: null !default;
 $treeview-item-focused-shadow: $focused-shadow !default;
 $treeview-item-selected-focused-shadow: null !default;
 
-$treeview-loadmore-checkboxes-padding-x: calc( #{$icon-spacing} + #{$checkbox-size} + #{$treeview-indent} ) !default;
+$treeview-loadmore-checkboxes-padding-x: calc( #{$icon-spacing} + #{map-get( $kendo-checkbox-sizes, "md" )} + #{$treeview-indent} ) !default;
 $treeview-loadmore-checkboxes-icon-indent: calc( -1 * (#{$icon-spacing} + #{$treeview-indent}) ) !default;
 $treeview-loadmore-checkboxes-icon-margin-x: $icon-spacing !default;
 
