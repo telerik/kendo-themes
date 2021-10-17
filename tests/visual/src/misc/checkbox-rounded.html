@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en" class="k-no-animations">
+<head>
+    <title>Checkbox</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+    <script src="../../assets/scripts.js"></script>
+    <script src="../../../../packages/html/dist/index.js"></script>
+
+    <style>
+        #test-area {
+            grid-template-columns: 120px 200px 280px 320px;
+            /* justify-items: start; */
+        }
+    </style>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var elements = document.getElementsByClassName("k-indeterminate");
+        for (var i = 0; i < elements.length; i++) {
+            elements[i].indeterminate = true;
+        }
+    });
+</script>
+</head>
+<body class="k-body">
+
+    <div id="test-area" class="k-d-grid">
+        <span></span>
+        <span>Size - Small</span>
+        <span>Size - Medium</span>
+        <span>Size - Large</span>
+
+        <span>Rounded - small</span>
+        <span>
+                <input is="Checkbox" size="small" rounded="small" id="ch1" checked /><!--
+                --><label class="k-checkbox-label" for="ch1">Checked</label>
+        </span>
+        <span>
+                <input is="Checkbox" size="medium" rounded="small" id="ch1" checked /><!--
+                --><label class="k-checkbox-label" for="ch1">Checked</label>
+        </span>
+        <span>
+                <input is="Checkbox" size="large" rounded="small" id="ch1" checked /><!--
+                --><label class="k-checkbox-label" for="ch1">Checked</label>
+        </span>
+        
+        <span>Rounded - medium</span>
+        <span>
+                <input is="Checkbox" size="small" rounded="medium" id="ch1" checked /><!--
+                --><label class="k-checkbox-label" for="ch1">Checked</label>
+        </span>
+        <span>
+                <input is="Checkbox" size="medium" rounded="medium" id="ch1" checked /><!--
+                --><label class="k-checkbox-label" for="ch1">Checked</label>
+        </span>
+        <span>
+                <input is="Checkbox" size="large" rounded="medium" id="ch1" checked /><!--
+                --><label class="k-checkbox-label" for="ch1">Checked</label>
+        </span>
+        
+        <span>Rounded - large</span>
+        <span>
+                <input is="Checkbox" size="small" rounded="large" id="ch1" checked /><!--
+                --><label class="k-checkbox-label" for="ch1">Checked</label>
+        </span>
+        <span>
+                <input is="Checkbox" size="medium" rounded="large" id="ch1" checked /><!--
+                --><label class="k-checkbox-label" for="ch1">Checked</label>
+        </span>
+        <span>
+                <input is="Checkbox" size="large" rounded="large" id="ch1" checked /><!--
+                --><label class="k-checkbox-label" for="ch1">Checked</label>
+        </span>
+    </div>
+</body>
+</html>
