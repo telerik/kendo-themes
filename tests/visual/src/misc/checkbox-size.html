@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en" class="k-no-animations">
+<head>
+    <title>Checkbox</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+    <script src="../../assets/scripts.js"></script>
+    <script src="../../../../packages/html/dist/index.js"></script>
+
+    <style>
+        #test-area {
+            grid-template-columns: 120px repeat(3, 1fr);
+        }
+    </style>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var elements = document.getElementsByClassName("k-indeterminate");
+        for (var i = 0; i < elements.length; i++) {
+            elements[i].indeterminate = true;
+        }
+    });
+</script>
+</head>
+<body class="k-body">
+
+    <div id="test-area" class="k-d-grid k-grid-cols-3">
+
+        <span></span>
+        <span>Small</span>
+        <span>Medium</span>
+        <span>Large</span>
+
+        <!-- Checked -->
+        <span></span>
+        <div>
+            <input is="Checkbox" size="small" id="ch1" checked /><!--
+            --><label class="k-checkbox-label" for="ch1">Checked</label>
+        </div>
+        <div>
+            <input is="Checkbox" size="medium" id="ch1" checked /><!--
+            --><label class="k-checkbox-label" for="ch1">Checked</label>
+        </div>
+        <div>
+            <input is="Checkbox" size="large" id="ch1" checked /><!--
+            --><label class="k-checkbox-label" for="ch1">Checked</label>
+        </div>
+
+        <!-- Disabled Checked -->
+        <span></span>
+        <div>
+            <input is="Checkbox" size="small" id="ch2" disabled checked /><!--
+            --><label class="k-checkbox-label" for="ch2">Checked</label>
+        </div>
+        <div>
+            <input is="Checkbox" size="medium" id="ch2" disabled checked /><!--
+            --><label class="k-checkbox-label" for="ch2">Checked</label>
+        </div>
+        <div>
+            <input is="Checkbox" size="large" id="ch2" disabled checked /><!--
+            --><label class="k-checkbox-label" for="ch2">Checked</label>
+        </div>
+
+        <!-- Unchecked -->
+        <span></span>
+        <div>
+            <input is="Checkbox" size="small" id="ch3" /><!--
+            --><label class="k-checkbox-label" for="ch3">Unchecked</label>
+        </div>
+        <div>
+            <input is="Checkbox" size="medium" id="ch3" /><!--
+            --><label class="k-checkbox-label" for="ch3">Unchecked</label>
+        </div>
+        <div>
+            <input is="Checkbox" size="large" id="ch3" /><!--
+            --><label class="k-checkbox-label" for="ch3">Unchecked</label>
+        </div>
+
+        <!-- Disabled Unchecked -->
+        <span></span>
+        <div>
+            <input is="Checkbox" size="small" id="ch4" disabled /><!--
+            --><label class="k-checkbox-label" for="ch4">Unchecked</label>
+        </div>
+        <div>
+            <input is="Checkbox" size="medium" id="ch4" disabled /><!--
+            --><label class="k-checkbox-label" for="ch4">Unchecked</label>
+        </div>
+        <div>
+            <input is="Checkbox" size="large" id="ch4" disabled /><!--
+            --><label class="k-checkbox-label" for="ch4">Unchecked</label>
+        </div>
+
+        <!-- Indeterminate -->
+        <span></span>
+        <div>
+            <input is="Checkbox" size="small" id="chInd" indeterminate /><!--
+            --><label class="k-checkbox-label" for="chInd">Indeterminate</label>
+        </div>
+        <div>
+            <input is="Checkbox" size="medium" id="chInd" indeterminate /><!--
+            --><label class="k-checkbox-label" for="chInd">Indeterminate</label>
+        </div>
+        <div>
+            <input is="Checkbox" size="large" id="chInd" indeterminate /><!--
+            --><label class="k-checkbox-label" for="chInd">Indeterminate</label>
+        </div>
+
+        <!-- Disabled indeterminate -->
+        <span></span>
+        <div>
+            <input is="Checkbox" size="small" id="chIndDis" indeterminate disabled /><!--
+            --><label class="k-checkbox-label" for="chIndDis">Indeterminate</label>
+        </div>
+        <div>
+            <input is="Checkbox" size="medium" id="chIndDis" indeterminate disabled /><!--
+            --><label class="k-checkbox-label" for="chIndDis">Indeterminate</label>
+        </div>
+        <div>
+            <input is="Checkbox" size="large" id="chIndDis" indeterminate disabled /><!--
+            --><label class="k-checkbox-label" for="chIndDis">Indeterminate</label>
+        </div>
+
+        <!-- Error -->
+        <span></span>
+        <div>
+            <input is="Checkbox" size="small" id="chError" invalid required/><!--
+            --><label class="k-checkbox-label" for="chError">Invalid</label>
+        </div>
+        <div>
+            <input is="Checkbox" size="medium" id="chError" invalid required/><!--
+            --><label class="k-checkbox-label" for="chError">Invalid</label>
+        </div>
+        <div>
+            <input is="Checkbox" size="large" id="chError" invalid required/><!--
+            --><label class="k-checkbox-label" for="chError">Invalid</label>
+        </div>
+
+    </div>
+</body>
+</html>
