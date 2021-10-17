@@ -41,7 +41,7 @@ export * from './radio/index';
 export * from './autocomplete/index';
 // export * from './captcha/index';
 // export * from './colorpicker/index';
-// export * from './combobox/index';
+export * from './combobox/index';
 // export * from './datetime/index';
 // export * from './dropdowngrid/index';
 // export * from './dropdownlist/index';
