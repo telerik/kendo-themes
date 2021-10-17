@@ -38,7 +38,7 @@ export * from './radio/index';
 // export * from './slider/index';
 
 // Augmented inputs
-// export * from './autocomplete/index';
+export * from './autocomplete/index';
 // export * from './captcha/index';
 // export * from './colorpicker/index';
 // export * from './combobox/index';
