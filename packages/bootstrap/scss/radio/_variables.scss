@@ -4,26 +4,26 @@ $radio-radius: 50% !default;
 $radio-border-width: 1px !default;
 $radio-line-height: calc(#{$radio-size} + #{$radio-border-width}) !default;
 
-$radio-bg: $checkbox-bg !default;
-$radio-text: $checkbox-text !default;
-$radio-border: $checkbox-border !default;
+$radio-bg: $kendo-checkbox-bg !default;
+$radio-text: $kendo-checkbox-text !default;
+$radio-border: $kendo-checkbox-border !default;
 
-$radio-hovered-bg: $checkbox-hovered-bg !default;
-$radio-hovered-text: $checkbox-hovered-text !default;
-$radio-hovered-border: $checkbox-hovered-border !default;
+$radio-hovered-bg: $kendo-checkbox-hover-bg !default;
+$radio-hovered-text: $kendo-checkbox-hover-text !default;
+$radio-hovered-border: $kendo-checkbox-hover-border !default;
 
-$radio-checked-bg: $checkbox-checked-bg !default;
-$radio-checked-text: $checkbox-checked-text !default;
-$radio-checked-border: $checkbox-checked-border !default;
+$radio-checked-bg: $kendo-checkbox-checked-bg !default;
+$radio-checked-text: $kendo-checkbox-checked-text !default;
+$radio-checked-border: $kendo-checkbox-checked-border !default;
 
 $radio-indeterminate-bg: $radio-checked-bg !default;
 $radio-indeterminate-text: $radio-checked-text !default;
 $radio-indeterminate-border: $radio-checked-border !default;
 
-$radio-focused-border: $checkbox-focused-border !default;
-$radio-focused-shadow: $checkbox-focused-shadow !default;
-$radio-focused-checked-border: $checkbox-checked-border !default;
-$radio-focused-checked-shadow: $checkbox-focused-checked-shadow !default;
+$radio-focused-border: $kendo-checkbox-focus-border !default;
+$radio-focused-shadow: $kendo-checkbox-focus-shadow !default;
+$radio-focused-checked-border: $kendo-checkbox-checked-border !default;
+$radio-focused-checked-shadow: $kendo-checkbox-focus-checked-shadow !default;
 
 $radio-disabled-bg: null !default;
 $radio-disabled-text: null !default;
