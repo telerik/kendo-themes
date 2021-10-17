@@ -15,7 +15,9 @@
     </style>
 </head>
 <body class="k-body">
+
     <div id="test-area" class="k-d-grid k-grid-cols-4">
+
         <section>
             <span>Start View</span>
             <div class="k-animation-container k-animation-container-shown">
@@ -393,52 +395,31 @@
                                 </div>
                                 <div class="k-columnmenu-item-content">
                                     <div class="k-animation-container k-animation-container-relative" style="position: relative; display: block;">
-                                       <div class="k-child-animation-container">
-                                          <div class="kendo-grid-filter-menu-container">
-                                             <form class="k-filter-menu k-group k-reset k-state-border-up">
-                                                <div class="k-filter-menu-container">
-                                                   <div>
-                                                      <div>
-                                                         <span class="k-widget k-dropdown">
-                                                            <span class="k-dropdown-wrap">
-                                                               <span class="k-input">Contains</span>
-                                                               <span class="k-select">
-                                                                   <span class="k-icon k-i-arrow-s"></span>
-                                                                </span>
-                                                            </span>
-                                                         </span>
-                                                         <input is="Textbox" />
-                                                      </div>
-                                                      <div>
-                                                         <span class="k-widget k-dropdown k-filter-and">
-                                                            <span class="k-dropdown-wrap">
-                                                               <span class="k-input">And</span>
-                                                               <span class="k-select">
-                                                                   <span class="k-icon k-i-arrow-s"></span>
-                                                                </span>
-                                                            </span>
-                                                         </span>
-                                                         <div>
-                                                            <span class="k-widget k-dropdown">
-                                                               <span class="k-dropdown-wrap">
-                                                                  <span class="k-input">Contains</span>
-                                                                  <span class="k-select">
-                                                                      <span class="k-icon k-i-arrow-s"></span>
-                                                                  </span>
-                                                               </span>
-                                                            </span>
-                                                            <input is="Textbox" />
-                                                         </div>
-                                                      </div>
-                                                   </div>
-                                                   <div class="k-actions k-actions-stretched">
-                                                        <button is="Button">Clear</button>
-                                                        <button is="Button" themeColor="primary">Filter</button>
+                                        <div class="k-child-animation-container">
+                                            <div class="kendo-grid-filter-menu-container">
+                                                <form class="k-filter-menu k-group k-reset k-state-border-up">
+                                                    <div class="k-filter-menu-container">
+                                                        <div>
+                                                            <div>
+                                                                <input is="DropdownList" value="Contains" />
+                                                                <input is="Textbox" />
+                                                            </div>
+                                                            <div>
+                                                                <input is="DropdownList" value="And" class="k-filter-and" />
+                                                                <div>
+                                                                    <input is="DropdownList" value="Contains" />
+                                                                    <input is="Textbox" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="k-actions k-actions-stretched">
+                                                            <button is="Button">Clear</button>
+                                                            <button is="Button" themeColor="primary">Filter</button>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                             </form>
-                                          </div>
-                                       </div>
+                                                </form>
+                                            </div>
+                                        </div>
                                     </div>
                                  </div>
                             </div>
@@ -447,6 +428,8 @@
                 </div>
             </div>
         </section>
+
     </div>
+
 </body>
 </html>

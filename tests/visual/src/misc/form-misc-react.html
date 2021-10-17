@@ -34,21 +34,21 @@
 
                 <div class="k-form-field">
                     <label class="k-label">Normal:<span class="k-label-optional">(Optional)</span></label>
-                    <input is="Textbox" />
+                    <input is="Textbox" placeholder="Textbox..." />
                     <div class="k-form-hint k-text-start">Hint: hint message</div>
                     <div class="k-form-error k-text-start">Error: error message</div>
                 </div>
 
                 <div class="k-form-field">
                     <label class="k-label k-text-error">Error:<span class="k-field-info">(field info)</span></label>
-                    <input is="Textbox" invalid />
+                    <input is="Textbox" placeholder="Textbox..." invalid />
                     <div class="k-form-hint k-text-end">Hint: hint message</div>
                     <div class="k-form-error k-text-end">Error: error message</div>
                 </div>
 
                 <div class="k-form-field">
                     <label class="k-label k-text-disabled">Disabled:</label>
-                    <input is="Textbox" disabled />
+                    <input is="Textbox" value="Disabled" disabled />
                     <div class="k-form-hint k-text-start">Hint: hint message</div>
                     <div class="k-form-error k-text-start">Error: error message</div>
                 </div>
@@ -92,11 +92,7 @@
                 <div class="k-form-field">
                     <label class="k-label">Normal:<span class="k-label-optional">(Optional)</span></label>
                     <div class="k-form-field-wrap">
-                        <span class="k-widget k-autocomplete">
-                            <span class="k-searchbar">
-                                <input class="k-input" />
-                            </span>
-                        </span>
+                        <input is="Textbox" placeholder="Textbox..." />
                         <div class="k-form-hint k-text-start">Hint: hint message</div>
                         <div class="k-form-error k-text-start">Error: error message</div>
                     </div>
@@ -105,11 +101,7 @@
                 <div class="k-form-field">
                     <label class="k-label k-text-error">Error:<span class="k-field-info">(field info)</span></label>
                     <div class="k-form-field-wrap">
-                        <span class="k-widget k-autocomplete k-state-invalid">
-                            <span class="k-searchbar">
-                                <input class="k-input" />
-                            </span>
-                        </span>
+                        <input is="Textbox" placeholder="Textbox..." invalid />
                         <div class="k-form-hint k-text-end">Hint: hint message</div>
                         <div class="k-form-error k-text-end">Error: error message</div>
                     </div>
@@ -118,7 +110,7 @@
                 <div class="k-form-field">
                     <label class="k-label k-text-disabled">Disabled:</label>
                     <div class="k-form-field-wrap">
-                        <input is="Textbox" disabled />
+                        <input is="Textbox" value="Disabled" disabled />
                         <div class="k-form-hint k-text-start">Hint: hint message</div>
                         <div class="k-form-error k-text-start">Error: error message</div>
                     </div>

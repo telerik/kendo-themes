@@ -19,11 +19,7 @@
 
     <div id="test-area" class="grid">
         <!-- Placeholder  -->
-        <span class="k-autocomplete">
-            <span class="k-searchbar">
-                <input placeholder="AutoComplete" class="k-input"/>
-            </span>
-        </span>
+        <input is="Autocomplete" placeholder="Autocomplete..." />
         <span class="k-multiselect">
             <div class="k-multiselect-wrap k-floatwrap">
                 <span class="k-searchbar">
@@ -31,22 +27,10 @@
                 </span>
             </div>
         </span>
-        <span class="k-combobox k-combobox-clearable">
-            <span class="k-dropdown-wrap">
-                <span class="k-searchbar">
-                    <input class="k-input" placeholder="Combobox" />
-                </span>
-                <span class="k-select"><span class="k-icon k-i-arrow-s"></span></span>
-            </span>
-        </span>
+        <input is="Combobox" placeholder="Combobox..." />
 
         <!-- Normal  -->
-        <span class="k-autocomplete">
-            <span class="k-searchbar">
-                <input class="k-input" value="Normal" />
-            </span>
-            <span class="k-icon k-clear-value k-i-close"></span>
-        </span>
+        <input is="Autocomplete" value="Normal" />
         <span class="k-multiselect">
             <div class="k-multiselect-wrap k-floatwrap">
                 <ul class="k-reset">
@@ -60,22 +44,10 @@
                 <span class="k-icon k-clear-value k-i-close"></span>
             </div>
         </span>
-        <span class="k-combobox k-combobox-clearable">
-            <span class="k-dropdown-wrap">
-                <span class="k-searchbar">
-                    <input class="k-input" />
-                </span>
-                <span class="k-icon k-clear-value k-i-close"></span><span class="k-select"><span class="k-icon k-i-arrow-s"></span></span>
-            </span>
-        </span>
+        <input is="Combobox" value="Normal" />
 
         <!-- Hover  -->
-        <span class="k-autocomplete k-state-hover">
-            <span class="k-searchbar">
-                <input class="k-input" value="Hover" />
-            </span>
-            <span class="k-icon k-clear-value k-i-close"></span>
-        </span>
+        <input is="Autocomplete" value="Hover" hover />
         <span class="k-multiselect k-state-hover">
             <div class="k-multiselect-wrap k-floatwrap">
                 <ul class="k-reset">
@@ -90,22 +62,10 @@
                 <span class="k-icon k-clear-value k-i-close"></span>
             </div>
         </span>
-        <span class="k-combobox k-combobox-clearable k-state-hover">
-            <span class="k-dropdown-wrap">
-                <span class="k-searchbar">
-                    <input class="k-input" value="Hover"/>
-                </span>
-                <span class="k-icon k-clear-value k-i-close"></span><span class="k-select"><span class="k-icon k-i-arrow-s"></span></span>
-            </span>
-        </span>
+        <input is="Combobox" value="Hover" hover />
 
         <!-- Focus  -->
-        <span class="k-autocomplete k-state-focus">
-            <span class="k-searchbar">
-                <input class="k-input" value="Focus" />
-            </span>
-            <span class="k-icon k-clear-value k-i-close"></span>
-        </span>
+        <input is="Autocomplete" value="Focus" focus />
         <span class="k-multiselect k-state-focus">
             <div class="k-multiselect-wrap k-floatwrap">
                 <ul class="k-reset">
@@ -120,22 +80,10 @@
                 <span class="k-icon k-clear-value k-i-close"></span>
             </div>
         </span>
-        <span class="k-combobox k-combobox-clearable k-state-focus">
-            <span class="k-dropdown-wrap">
-                <span class="k-searchbar">
-                    <input class="k-input" value="Focus" />
-                </span>
-                <span class="k-icon k-clear-value k-i-close"></span><span class="k-select"><span class="k-icon k-i-arrow-s"></span></span>
-            </span>
-        </span>
+        <input is="Combobox" value="Focus" focus />
 
         <!-- Disabled  -->
-        <span class="k-autocomplete k-disabled">
-            <span class="k-searchbar">
-                <input class="k-input" value="Disabled" />
-            </span>
-            <span class="k-icon k-clear-value k-i-close"></span>
-        </span>
+        <input is="Autocomplete" value="Disabled" disabled />
         <span class="k-multiselect k-disabled">
             <div class="k-multiselect-wrap k-floatwrap">
                 <ul class="k-reset">
@@ -150,22 +98,10 @@
                 <span class="k-icon k-clear-value k-i-close"></span>
             </div>
         </span>
-        <span class="k-combobox k-combobox-clearable k-disabled">
-            <span class="k-dropdown-wrap">
-                <span class="k-searchbar">
-                    <input class="k-input" value="Disabled" />
-                </span>
-                <span class="k-icon k-clear-value k-i-close"></span><span class="k-select"><span class="k-icon k-i-arrow-s"></span></span>
-            </span>
-        </span>
+        <input is="Combobox" value="Disabled" disabled />
 
         <!-- Invalid  -->
-        <span class="k-autocomplete k-invalid">
-            <span class="k-searchbar">
-                <input class="k-input" value="Invalid" />
-            </span>
-            <span class="k-icon k-clear-value k-i-close"></span>
-        </span>
+        <input is="Autocomplete" value="Invalid" invalid />
         <span class="k-multiselect k-invalid">
             <div class="k-multiselect-wrap k-floatwrap">
                 <ul class="k-reset">
@@ -180,22 +116,10 @@
                 <span class="k-icon k-clear-value k-i-close"></span>
             </div>
         </span>
-        <span class="k-combobox k-combobox-clearable k-invalid">
-            <span class="k-dropdown-wrap">
-                <span class="k-searchbar">
-                    <input class="k-input" value="Invalid" />
-                </span>
-                <span class="k-icon k-clear-value k-i-close"></span><span class="k-select"><span class="k-icon k-i-arrow-s"></span></span>
-            </span>
-        </span>
+        <input is="Combobox" value="Invalid" invalid />
 
         <!-- Invalid + focus -->
-        <span class="k-autocomplete k-state-focus k-invalid">
-            <span class="k-searchbar">
-                <input class="k-input" value="Invalid + focus" />
-            </span>
-            <span class="k-icon k-clear-value k-i-close"></span>
-        </span>
+        <input is="Autocomplete" value="Invalid focus" invalid focus />
         <span class="k-multiselect k-state-focus k-invalid">
             <div class="k-multiselect-wrap k-floatwrap">
                 <ul class="k-reset">
@@ -210,14 +134,7 @@
                 <span class="k-icon k-clear-value k-i-close"></span>
             </div>
         </span>
-        <span class="k-combobox k-combobox-clearable k-state-focus k-invalid">
-            <span class="k-dropdown-wrap">
-                <span class="k-searchbar">
-                    <input class="k-input" value="Invalid + focus" />
-                </span>
-                <span class="k-icon k-clear-value k-i-close"></span><span class="k-select"><span class="k-icon k-i-arrow-s"></span></span>
-            </span>
-        </span>
+        <input is="Combobox" value="Invalid focus" invalid focus />
 
     </div>
 </body>
