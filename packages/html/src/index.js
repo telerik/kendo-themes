@@ -40,7 +40,7 @@ export * from './radio/index';
 // Augmented inputs
 export * from './autocomplete/index';
 // export * from './captcha/index';
-// export * from './colorpicker/index';
+export * from './colorpicker/index';
 export * from './combobox/index';
 // export * from './datetime/index';
 // export * from './dropdowngrid/index';
