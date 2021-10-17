@@ -89,21 +89,9 @@
                                 <span class="k-icon k-i-arrow-60-down"></span>
                             </a>
                             <span class="k-separator"></span>
-                            <span class="k-widget k-combobox">
-                                <span class="k-dropdown-wrap">
-                                    <input class="k-input" type="text" />
-                                    <span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span>
-                                </span>
-                                <input style="display: none;" />
-                            </span>
+                            <input is="Combobox" placeholder="Combobox..." />
                             <span class="k-separator"></span>
-                            <span class="k-widget k-dropdown">
-                                <span class="k-dropdown-wrap">
-                                    <span class="k-input">Arial</span>
-                                    <span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span>
-                                </span>
-                                <select style="display: none;"></select>
-                            </span>
+                            <input is="DropdownList" value="Arial" />
                             <span class="k-separator"></span>
                             <a class="k-button k-button-icon">
                                 <span class="k-icon k-i-align-left"></span>
@@ -117,15 +105,7 @@
                                 <button is="Button" icon="decimal-increase"></button>
                             </div>
                             <span class="k-separator"></span>
-                            <span class="k-widget k-dropdown" style="width: auto;">
-                                <span class="k-dropdown-wrap">
-                                    <span class="k-input">
-                                        <span class="k-icon k-i-custom-format" style="line-height: 1em; width: 1.35em;"></span>
-                                    </span>
-                                    <span class="k-select"><span class="k-icon k-i-arrow-60-down"></span></span>
-                                </span>
-                                <select style="display: none;"></select>
-                            </span>
+                            <input is="DropdownList" value="Custom format" showValue="false" valueIconName="custom-format" />
                             <span class="k-separator"></span>
                             <a class="k-button k-button-icon">
                                 <span class="k-icon k-i-cells-merge"></span>
@@ -146,19 +126,11 @@
             </div>
             <div class="k-spreadsheet-action-bar">
                 <div class="k-spreadsheet-name-editor">
-                    <span class="k-widget k-combobox">
-                        <span class="k-dropdown-wrap">
-                            <input class="k-input" type="text" />
-                            <span class="k-select">
-                                <span class="k-icon k-i-arrow-60-down"></span>
-                            </span>
-                        </span>
-                        <input style="display: none;">
-                    </span>
+                    <input is="Combobox" placeholder="Combobox..." />
                 </div>
                 <div class="k-spreadsheet-formula-bar">
                     <span class="k-icon k-i-formula-fx"></span>
-                    <div class="k-spreadsheet-formula-input k-spreadsheet-array-formula"  style="white-space: pre;"><span class="k-syntax-startexp k-syntax-at-point">=</span><span class="k-syntax-func">Product</span><span class="k-syntax-punc">(</span><span class="k-syntax-ref k-series-a">C3:C11</span><span class="k-syntax-punc">)</span></div>
+                    <div class="k-spreadsheet-formula-input k-spreadsheet-array-formula" style="white-space: pre;"><span class="k-syntax-startexp k-syntax-at-point">=</span><span class="k-syntax-func">Product</span><span class="k-syntax-punc">(</span><span class="k-syntax-ref k-series-a">C3:C11</span><span class="k-syntax-punc">)</span></div>
                     <div class="k-widget k-tooltip" style="position:absolute; display:none">A1</div>
                     <div class="k-group-header" style="display:none"></div>
                     <div class="k-list-scroller"></div>

@@ -32,37 +32,25 @@
 
         <!-- empty -->
         <section>
-            <span class="k-searchbox">
-                <span class="k-input-prefix">
-                    <span class="k-icon k-i-search"></span>
-                </span>
-                <input class="k-input" type="text" placeholder="Search..." />
-            </span>
+            <input is='Searchbox' placeholder="Search..." />
         </section>
         <section>
-            <span class="k-searchbox">
-                <input class="k-input" type="text" placeholder="Search..." />
-                <span class="k-input-suffix">
-                    <span class="k-icon k-i-search"></span>
+            <input is='Searchbox' placeholder="Search..." iconPosition="trailing" />
+        </section>
+        <section>
+            <span is="Searchbox" placeholder="Search..." showIcon="false">
+                <span is="InputSuffix">
+                    <button is="Button" fillMode="flat" icon="search"></button>
                 </span>
             </span>
         </section>
         <section>
-            <span class="k-searchbox">
-                <input class="k-input" type="text" placeholder="Search..." />
-                <span class="k-input-suffix">
-                    <button type="button" class="k-button k-icon-button k-button-clear"><span class="k-icon k-i-search"></span></button>
-                </span>
-            </span>
-        </section>
-        <section>
-            <span class="k-searchbox">
-                <span class="k-input-prefix">
+            <span is="Searchbox" placeholder="Search..." showIcon="false">
+                <span is="InputPrefix">
                     <select class="k-dropdown"><option>1</option></select>
                 </span>
-                <input class="k-input" type="text" placeholder="Search..." />
-                <span class="k-input-suffix">
-                    <button type="button" class="k-button k-icon-button"><span class="k-icon k-i-search"></span></button>
+                <span is="InputSuffix">
+                    <button is="Button" fillMode="flat" icon="search"></button>
                 </span>
             </span>
         </section>
@@ -70,37 +58,25 @@
 
         <!-- normal -->
         <section>
-            <span class="k-searchbox">
-                <span class="k-input-prefix">
-                    <span class="k-icon k-i-search"></span>
-                </span>
-                <input class="k-input" type="text" value="Normal" />
-            </span>
+            <input is='Searchbox' value="Normal" />
         </section>
         <section>
-            <span class="k-searchbox">
-                <input class="k-input" type="text" value="Normal" />
-                <span class="k-input-suffix">
-                    <span class="k-icon k-i-search"></span>
+            <input is='Searchbox' value="Normal" iconPosition="trailing" />
+        </section>
+        <section>
+            <span is="Searchbox" value="Normal" showIcon="false">
+                <span is="InputSuffix">
+                    <button is="Button" fillMode="flat" icon="search"></button>
                 </span>
             </span>
         </section>
         <section>
-            <span class="k-searchbox">
-                <input class="k-input" type="text" value="Normal" />
-                <span class="k-input-suffix">
-                    <button type="button" class="k-button k-icon-button k-button-clear"><span class="k-icon k-i-search"></span></button>
-                </span>
-            </span>
-        </section>
-        <section>
-            <span class="k-searchbox">
-                <span class="k-input-prefix">
+            <span is="Searchbox" value="Normal" showIcon="false">
+                <span is="InputPrefix">
                     <select class="k-dropdown"><option>1</option></select>
                 </span>
-                <input class="k-input" type="text" value="Normal" />
-                <span class="k-input-suffix">
-                    <button type="button" class="k-button k-icon-button"><span class="k-icon k-i-search"></span></button>
+                <span is="InputSuffix">
+                    <button is="Button" fillMode="flat" icon="search"></button>
                 </span>
             </span>
         </section>
@@ -108,43 +84,25 @@
 
         <!-- hover -->
         <section>
-            <span class="k-searchbox k-state-hover">
-                <span class="k-input-prefix">
-                    <span class="k-icon k-i-search"></span>
-                </span>
-                <input class="k-input" type="text" value="Hover" />
-                <span class="k-input-suffix">
-                    <button type="button" class="k-button k-icon-button k-button-clear"><span class="k-icon k-i-close"></span></button>
+            <input is='Searchbox' value="Hover" hover />
+        </section>
+        <section>
+            <input is='Searchbox' value="Hover" hover iconPosition="trailing" />
+        </section>
+        <section>
+            <span is="Searchbox" value="Hover" hover showIcon="false">
+                <span is="InputSuffix">
+                    <button is="Button" fillMode="flat" icon="search"></button>
                 </span>
             </span>
         </section>
         <section>
-            <span class="k-searchbox k-state-hover">
-                <input class="k-input" type="text" value="Hover" />
-                <span class="k-input-suffix">
-                    <button type="button" class="k-button k-icon-button k-button-clear"><span class="k-icon k-i-close"></span></button>
-                    <span class="k-icon k-i-search"></span>
-                </span>
-            </span>
-        </section>
-        <section>
-            <span class="k-searchbox k-state-hover">
-                <input class="k-input" type="text" value="Hover" />
-                <span class="k-input-suffix">
-                    <button type="button" class="k-button k-icon-button k-button-clear"><span class="k-icon k-i-close"></span></button>
-                    <button type="button" class="k-button k-icon-button k-button-clear"><span class="k-icon k-i-search"></span></button>
-                </span>
-            </span>
-        </section>
-        <section>
-            <span class="k-searchbox k-state-hover">
-                <span class="k-input-prefix">
+            <span is="Searchbox" value="Hover" hover showIcon="false">
+                <span is="InputPrefix">
                     <select class="k-dropdown"><option>1</option></select>
                 </span>
-                <input class="k-input" type="text" value="Hover" />
-                <span class="k-input-suffix">
-                    <button type="button" class="k-button k-icon-button k-button-clear"><span class="k-icon k-i-close"></span></button>
-                    <button type="button" class="k-button k-icon-button"><span class="k-icon k-i-search"></span></button>
+                <span is="InputSuffix">
+                    <button is="Button" fillMode="flat" icon="search"></button>
                 </span>
             </span>
         </section>
@@ -152,43 +110,25 @@
 
         <!-- focus -->
         <section>
-            <span class="k-searchbox k-state-focus">
-                <span class="k-input-prefix">
-                    <span class="k-icon k-i-search"></span>
-                </span>
-                <input class="k-input" type="text" value="Focus" />
-                <span class="k-input-suffix">
-                    <button type="button" class="k-button k-icon-button k-button-clear"><span class="k-icon k-i-close"></span></button>
+            <input is='Searchbox' value="Focus" focus />
+        </section>
+        <section>
+            <input is='Searchbox' value="Focus" focus iconPosition="trailing" />
+        </section>
+        <section>
+            <span is="Searchbox" value="Focus" focus showIcon="false">
+                <span is="InputSuffix">
+                    <button is="Button" fillMode="flat" icon="search"></button>
                 </span>
             </span>
         </section>
         <section>
-            <span class="k-searchbox k-state-focus">
-                <input class="k-input" type="text" value="Focus" />
-                <span class="k-input-suffix">
-                    <button type="button" class="k-button k-icon-button k-button-clear"><span class="k-icon k-i-close"></span></button>
-                    <span class="k-icon k-i-search"></span>
-                </span>
-            </span>
-        </section>
-        <section>
-            <span class="k-searchbox k-state-focus">
-                <input class="k-input" type="text" value="Focus" />
-                <span class="k-input-suffix">
-                    <button type="button" class="k-button k-icon-button k-button-clear"><span class="k-icon k-i-close"></span></button>
-                    <button type="button" class="k-button k-icon-button k-button-clear"><span class="k-icon k-i-search"></span></button>
-                </span>
-            </span>
-        </section>
-        <section>
-            <span class="k-searchbox k-state-focus">
-                <span class="k-input-prefix">
+            <span is="Searchbox" value="Focus" focus showIcon="false">
+                <span is="InputPrefix">
                     <select class="k-dropdown"><option>1</option></select>
                 </span>
-                <input class="k-input" type="text" value="Focus" />
-                <span class="k-input-suffix">
-                    <button type="button" class="k-button k-icon-button k-button-clear"><span class="k-icon k-i-close"></span></button>
-                    <button type="button" class="k-button k-icon-button"><span class="k-icon k-i-search"></span></button>
+                <span is="InputSuffix">
+                    <button is="Button" fillMode="flat" icon="search"></button>
                 </span>
             </span>
         </section>
@@ -196,37 +136,25 @@
 
         <!-- disabled -->
         <section>
-            <span class="k-searchbox k-state-disabled">
-                <span class="k-input-prefix">
-                    <span class="k-icon k-i-search"></span>
-                </span>
-                <input class="k-input" type="text" value="Disabled" />
-            </span>
+            <input is='Searchbox' value="Disabled" disabled />
         </section>
         <section>
-            <span class="k-searchbox k-state-disabled">
-                <input class="k-input" type="text" value="Disabled" />
-                <span class="k-input-suffix">
-                    <span class="k-icon k-i-search"></span>
+            <input is='Searchbox' value="Disabled" disabled iconPosition="trailing" />
+        </section>
+        <section>
+            <span is="Searchbox" value="Disabled" disabled showIcon="false">
+                <span is="InputSuffix">
+                    <button is="Button" fillMode="flat" icon="search"></button>
                 </span>
             </span>
         </section>
         <section>
-            <span class="k-searchbox k-state-disabled">
-                <input class="k-input" type="text" value="Disabled" />
-                <span class="k-input-suffix">
-                    <button type="button" class="k-button k-icon-button k-button-clear"><span class="k-icon k-i-search"></span></button>
-                </span>
-            </span>
-        </section>
-        <section>
-            <span class="k-searchbox k-state-disabled">
-                <span class="k-input-prefix">
+            <span is="Searchbox" value="Disabled" disabled showIcon="false">
+                <span is="InputPrefix">
                     <select class="k-dropdown"><option>1</option></select>
                 </span>
-                <input class="k-input" type="text" value="Disabled" />
-                <span class="k-input-suffix">
-                    <button type="button" class="k-button k-icon-button"><span class="k-icon k-i-search"></span></button>
+                <span is="InputSuffix">
+                    <button is="Button" fillMode="flat" icon="search"></button>
                 </span>
             </span>
         </section>
