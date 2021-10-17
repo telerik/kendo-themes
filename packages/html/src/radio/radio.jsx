@@ -48,19 +48,20 @@ function RadioStatic(props) {
         }
     ];
 
-    let legacyClasses = [
-        ownClassName,
-        'k-radio',
-        {
-            'k-state-hover': hover === true,
-            'k-state-focus': focus === true,
-            'k-state-invalid': invalid === true,
-            'k-state-disabled': disabled === true,
-            'k-state-checked': checked === true,
-        }
-    ];
-
     if (legacy) {
+
+        let legacyClasses = [
+            ownClassName,
+            'k-radio',
+            {
+                'k-state-hover': hover === true,
+                'k-state-focus': focus === true,
+                'k-state-invalid': invalid === true,
+                'k-state-disabled': disabled === true,
+                'k-state-checked': checked === true,
+            }
+        ];
+
         return <input type="radio" className={legacyClasses} {...ariaAttr} {...htmlAttributes}/>;
     }
 
@@ -71,10 +72,14 @@ RadioStatic.defaultProps = {
     ...globalDefaultProps,
 
     id: '',
-    name: ''
+    name: '',
+
+    size: 'medium'
 };
 
 RadioStatic.propTypes = {
+    className: typeof '',
+
     id: typeof '',
     name: typeof '',
     value: typeof '',
@@ -92,7 +97,6 @@ RadioStatic.propTypes = {
     aria: typeof false,
     legacy: typeof false,
 
-    className: typeof '',
     htmlAttributes: typeof []
 };
 
