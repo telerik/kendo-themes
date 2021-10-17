@@ -10,76 +10,76 @@ $radio-border-width: 1px !default;
 
 /// Background color of radio button.
 /// @group radio
-$radio-bg: $checkbox-bg !default;
+$radio-bg: $kendo-checkbox-bg !default;
 /// Color of radio button.
 /// @group radio
-$radio-text: $checkbox-text !default;
+$radio-text: $kendo-checkbox-text !default;
 /// Border color of radio button.
 /// @group radio
-$radio-border: $checkbox-border !default;
+$radio-border: $kendo-checkbox-border !default;
 
 /// Background color of hovered radio button.
 /// @group radio
-$radio-hovered-bg: $checkbox-hovered-bg !default;
+$radio-hovered-bg: $kendo-checkbox-hover-bg !default;
 /// Color of hovered radio button.
 /// @group radio
-$radio-hovered-text: $checkbox-hovered-text !default;
+$radio-hovered-text: $kendo-checkbox-hover-text !default;
 /// Border color of hovered radio button.
 /// @group radio
-$radio-hovered-border: $checkbox-hovered-border !default;
+$radio-hovered-border: $kendo-checkbox-hover-border !default;
 
 /// Background color of checked radio button.
 /// @group radio
-$radio-checked-bg: $checkbox-checked-bg !default;
+$radio-checked-bg: $kendo-checkbox-checked-bg !default;
 /// Color of checked radio button.
 /// @group radio
-$radio-checked-text: $checkbox-checked-text !default;
+$radio-checked-text: $kendo-checkbox-checked-text !default;
 /// Border color of checked radio button.
 /// @group radio
-$radio-checked-border: $checkbox-checked-border !default;
+$radio-checked-border: $kendo-checkbox-checked-border !default;
 
 /// Border color of focused radio button.
 /// @group radio
-$radio-focused-border: $checkbox-hovered-border !default;
+$radio-focused-border: $kendo-checkbox-focus-border !default;
 /// Box shadow of focused radio button.
 /// @group radio
-$radio-focused-shadow: $checkbox-focused-shadow !default;
+$radio-focused-shadow: $kendo-checkbox-focus-shadow !default;
 /// Border color of focused and checked radio button.
 /// @group radio
-$radio-focused-checked-border: $checkbox-checked-border !default;
+$radio-focused-checked-border: $kendo-checkbox-focus-checked-border !default;
 /// Box shadow of focused and checked radio button.
 /// @group radio
-$radio-focused-checked-shadow: $checkbox-focused-checked-shadow !default;
+$radio-focused-checked-shadow: $kendo-checkbox-focus-checked-shadow !default;
 
 /// Background color of disabled radio button.
 /// @group radio
-$radio-disabled-bg: $checkbox-disabled-bg !default;
+$radio-disabled-bg: $kendo-checkbox-disabled-bg !default;
 /// Color of disabled radio button.
 /// @group radio
-$radio-disabled-text: $checkbox-disabled-text !default;
+$radio-disabled-text: $kendo-checkbox-disabled-text !default;
 /// Border color of disabled radio button.
 /// @group radio
-$radio-disabled-border: $checkbox-disabled-border !default;
+$radio-disabled-border: $kendo-checkbox-disabled-border !default;
 
 /// Background color of disabled and checked radio button.
 /// @group radio
-$radio-disabled-checked-bg: $checkbox-disabled-checked-bg !default;
+$radio-disabled-checked-bg: $kendo-checkbox-disabled-checked-bg !default;
 /// Color of disabled and checked radio button.
 /// @group radio
-$radio-disabled-checked-text: $checkbox-disabled-checked-text !default;
+$radio-disabled-checked-text: $kendo-checkbox-disabled-checked-text !default;
 /// Border color of disabled and checked radio button.
 /// @group radio
-$radio-disabled-checked-border: $checkbox-disabled-checked-border !default;
+$radio-disabled-checked-border: $kendo-checkbox-disabled-checked-border !default;
 
 /// Background color of invalid radio button.
 /// @group radio
-$radio-invalid-bg: $checkbox-invalid-bg !default;
+$radio-invalid-bg: $kendo-checkbox-invalid-bg !default;
 /// Color of invalid radio button.
 /// @group radio
-$radio-invalid-text: $checkbox-invalid-text !default;
+$radio-invalid-text: $kendo-checkbox-invalid-text !default;
 /// Border color of invalid radio button.
 /// @group radio
-$radio-invalid-border: $checkbox-invalid-border !default;
+$radio-invalid-border: $kendo-checkbox-invalid-border !default;
 
 // Radio indicator
 
