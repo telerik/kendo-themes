@@ -50,7 +50,7 @@ export * from './maskedtextbox/index';
 // export * from './multiselect/index';
 export * from './numerictextbox/index';
 // export * from './rating/index';
-// export * from './searchbox/index';
+export * from './searchbox/index';
 export * from './switch/index';
 // export * from './upload/index';
 // export * from './dropzone/index';
