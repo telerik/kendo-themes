@@ -44,7 +44,7 @@ export * from './colorpicker/index';
 export * from './combobox/index';
 // export * from './datetime/index';
 // export * from './dropdowngrid/index';
-// export * from './dropdownlist/index';
+export * from './dropdownlist/index';
 // export * from './dropdowntree/index';
 export * from './maskedtextbox/index';
 // export * from './multiselect/index';
