@@ -58,20 +58,21 @@ function CheckboxStatic(props) {
         }
     ];
 
-    let legacyClasses = [
-        ownClassName,
-        'k-checkbox',
-        {
-            'k-state-hover': hover === true,
-            'k-state-focus': focus === true,
-            'k-state-invalid': invalid === true,
-            'k-state-disabled': disabled === true,
-            'k-checked': checked === true,
-            'k-state-indeterminate': isIndeterminate,
-        }
-    ];
-
     if (legacy) {
+
+        let legacyClasses = [
+            ownClassName,
+            'k-checkbox',
+            {
+                'k-state-hover': hover === true,
+                'k-state-focus': focus === true,
+                'k-state-invalid': invalid === true,
+                'k-state-disabled': disabled === true,
+                'k-checked': checked === true,
+                'k-state-indeterminate': isIndeterminate,
+            }
+        ];
+
         return (
             <input type="checkbox" className={legacyClasses} {...ariaAttr} {...htmlAttributes} />
         );
@@ -86,10 +87,15 @@ CheckboxStatic.defaultProps = {
     ...globalDefaultProps,
 
     id: '',
-    name: ''
+    name: '',
+
+    size: 'medium',
+    rounded: 'medium'
 };
 
 CheckboxStatic.propTypes = {
+    className: typeof '',
+
     id: typeof '',
     name: typeof '',
     value: typeof '',
@@ -110,7 +116,6 @@ CheckboxStatic.propTypes = {
     aria: typeof false,
     legacy: typeof false,
 
-    className: typeof '',
     htmlAttributes: typeof []
 };
 
