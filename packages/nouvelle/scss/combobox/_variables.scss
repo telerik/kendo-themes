@@ -1,54 +1,54 @@
-$combobox-padding-x: $input-padding-x !default;
-$combobox-padding-y: $input-padding-y !default;
+$combobox-padding-x: $kendo-input-padding-x !default;
+$combobox-padding-y: $kendo-input-padding-y !default;
 
-$combobox-border-width: $input-border-width !default;
-$combobox-border-style: $input-border-style !default;
+$combobox-border-width: $kendo-input-border-width !default;
+$combobox-border-style: $kendo-input-border-style !default;
 
-$combobox-border-radius: $input-border-radius !default;
+$combobox-border-radius: $kendo-input-border-radius !default;
 
-$combobox-font-family: $input-font-family !default;
-$combobox-font-size: $input-font-size !default;
-$combobox-line-height: $input-line-height !default;
+$combobox-font-family: $kendo-input-font-family !default;
+$combobox-font-size: $kendo-input-font-size !default;
+$combobox-line-height: $kendo-input-line-height !default;
 
 
 /// The background of the combobox.
 /// @group combobox
-$combobox-bg: $input-bg !default;
+$combobox-bg: $kendo-input-bg !default;
 /// The text color of the combobox.
 /// @group combobox
-$combobox-text: $input-text !default;
+$combobox-text: $kendo-input-text !default;
 /// The border color of the combobox.
 /// @group combobox
-$combobox-border: $input-border !default;
-$combobox-shadow: $input-shadow !default;
+$combobox-border: $kendo-input-border !default;
+$combobox-shadow: $kendo-input-shadow !default;
 
 /// The background of hovered combobox.
 /// @group combobox
-$combobox-hover-bg: $input-hover-bg !default;
+$combobox-hover-bg: $kendo-input-hover-bg !default;
 /// The text color of hovered combobox.
 /// @group combobox
-$combobox-hover-text: $input-hover-text !default;
+$combobox-hover-text: $kendo-input-hover-text !default;
 /// The border color of hovered combobox.
 /// @group combobox
-$combobox-hover-border: $input-hover-border !default;
-$combobox-hover-shadow: $input-hover-shadow !default;
+$combobox-hover-border: $kendo-input-hover-border !default;
+$combobox-hover-shadow: $kendo-input-hover-shadow !default;
 
 /// The text color of focus combobox.
 /// @group combobox
-$combobox-focus-text: $input-focus-text !default;
+$combobox-focus-text: $kendo-input-focus-text !default;
 /// The background color of focus combobox.
 /// @group combobox
-$combobox-focus-bg: $input-focus-bg !default;
+$combobox-focus-bg: $kendo-input-focus-bg !default;
 /// The border color of focus combobox.
 /// @group combobox
-$combobox-focus-border: $input-focus-border !default;
-$combobox-focus-shadow: $input-focus-shadow !default;
+$combobox-focus-border: $kendo-input-focus-border !default;
+$combobox-focus-shadow: $kendo-input-focus-shadow !default;
 
 $combobox-select-padding-x: $kendo-button-padding-y !default;
 $combobox-select-padding-y: $kendo-button-padding-y !default;
 
-$combobox-select-border-width: $input-border-width !default;
-$combobox-select-border-style: $input-border-style !default;
+$combobox-select-border-width: $kendo-input-border-width !default;
+$combobox-select-border-style: $kendo-input-border-style !default;
 
 $combobox-select-bg: $kendo-button-bg !default;
 $combobox-select-text: $kendo-button-text !default;
