@@ -94,6 +94,11 @@
 
                 .k-#{$_selector-base}#{$_selector-suffix} {
                     @each $prop in $props {
+                        #{$prop}: $value;
+                    }
+                }
+                .\!k-#{$_selector-base}#{$_selector-suffix} {
+                    @each $prop in $props {
                         #{$prop}: $value !important;
                     }
                 }

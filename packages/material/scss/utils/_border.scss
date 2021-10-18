@@ -1,1 +1,11 @@
+$utils-border-radius: (
+    default: map-get( $spacing, 1 ),
+    0: 0,
+    sm: .125rem,
+    md: .25rem,
+    lg: .375rem,
+    circle: 50%,
+    pill: 9999px
+) !default;
+
 @import "~@progress/kendo-theme-default/scss/utils/_border.scss";
