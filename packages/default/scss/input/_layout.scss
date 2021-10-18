@@ -2,23 +2,45 @@
 
     // Generic input
     .k-input {
+        @include border-radius( $kendo-input-border-radius );
         margin: 0;
-        padding: $input-padding-y $input-padding-x;
+        padding: 0;
         width: 100%;
         min-width: 0;
-        height: $input-inner-calc-height;
+        border-width: $kendo-input-border-width;
+        border-style: solid;
+        outline: 0;
+        font-family: $kendo-input-font-family;
+        font-size: $kendo-input-font-size;
+        line-height: $kendo-input-line-height;
+        box-shadow: none;
+        display: inline-flex;
+        flex-flow: row nowrap;
+        align-items: stretch;
+        position: relative;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-appearance: none;
+    }
+    input.k-input {
+        padding: $kendo-input-padding-y $kendo-input-padding-x;
+    }
+    select.k-picker {
+        padding: $kendo-input-padding-y $kendo-input-padding-x;
+        appearance: auto;
+    }
+
+
+    // Input inner
+    .k-input-inner {
+        padding: $kendo-input-padding-y $kendo-input-padding-x;
+        width: 100%;
         border: 0;
         outline: 0;
-        box-sizing: border-box;
-        // Targets https://github.com/telerik/kendo-react/issues/638.
-        box-shadow: none;
         color: inherit;
         background: none;
         font: inherit;
-        display: flex;
-        flex-flow: row nowrap;
-        align-items: center;
-        flex: 0 1 auto;
+        flex: 1;
         overflow: hidden;
         text-overflow: ellipsis;
         -webkit-appearance: none;
@@ -28,12 +50,12 @@
 
         // Placeholder text
         &::placeholder {
-            color: $input-placeholder-text;
-            opacity: $input-placeholder-opacity;
+            color: $kendo-input-placeholder-text;
+            opacity: $kendo-input-placeholder-opacity;
             user-select: none;
         }
         &:-ms-input-placeholder {
-            color: $input-placeholder-text;
+            color: $kendo-input-placeholder-text;
         }
 
         // Invalid
@@ -41,24 +63,18 @@
             box-shadow: none;
         }
     }
+    span.k-input-inner {
+        display: flex;
+        flex-flow: row nowrap;
 
-
-    // TODO: Deprecate
-    // Input spacing
-    .k-space-left,
-    .k-space-right {
-        > input {
-            flex-grow: 1;
+        .k-value-icon {
+            flex: none;
         }
-
-        > .k-icon {
-            left: 3px;
-            margin: 3px 6px;
+        .k-value-text {
+            flex: 1;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
-    }
-
-    .k-textbox.k-space-left {
-        flex-direction: row-reverse;
     }
 
 
@@ -66,84 +82,92 @@
     .k-input-prefix,
     .k-input-suffix {
         display: flex;
+        flex-flow: row nowrap;
         align-items: center;
-        flex-shrink: 0;
-        height: $kendo-button-inner-calc-size;
+        flex: none;
 
         > * {
             flex-shrink: 0;
         }
-
-        > .k-icon {
-            width: $input-adornment-width;
-            height: $input-adornment-height;
-            display: inline-flex;
-            flex-flow: row nowrap;
-            align-items: center;
-            justify-content: center;
-            flex-shrink: 0;
-        }
-        > .k-clear-value {
-            width: $input-adornment-width;
-            height: $input-adornment-height;
-            position: relative;
-
-            &::after {
-                content: "";
-                opacity: 0;
-                display: none;
-                pointer-events: none;
-                position: absolute;
-                left: -1px;
-                right: -1px;
-                top: -1px;
-                bottom: -1px;
-            }
-
-            &.k-state-focused::after,
-            &:focus::after {
-                display: block;
-            }
-        }
     }
 
-    .k-input-separator {
-        margin: 0;
-        width: 0;
-        height: $icon-size;
-        border-width: 0 0 0 1px;
-        border-style: solid;
-    }
 
     // Input with icon styles
     .k-input-icon,
     .k-input-validation-icon,
     .k-input-loading-icon {
-        width: $input-icon-width;
-        height: $input-icon-height;
+        width: $kendo-input-icon-width;
+        height: $kendo-input-icon-height;
+        flex: none;
         display: inline-flex;
         flex-flow: row nowrap;
         align-items: center;
         justify-content: center;
-        flex-shrink: 0;
     }
 
 
     // Clear value
     .k-clear-value {
-        width: $input-icon-width;
-        height: $input-icon-height;
-        flex-shrink: 0;
+        width: $kendo-input-icon-width;
+        height: $kendo-input-icon-height;
+        outline: 0;
+        color: $kendo-input-clear-value-text;
+        flex: none;
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        outline: 0;
         cursor: pointer;
-        opacity: .5;
+        opacity: $kendo-input-clear-value-opacity;
     }
     .k-clear-value:hover,
-    .k-clear-value.k-state-hover {
-        opacity: 1;
+    .k-clear-value.k-hover {
+        color: $kendo-input-clear-value-hover-text;
+        opacity: $kendo-input-clear-value-hover-opacity;
+    }
+
+
+    // Input button
+    .k-input-button {
+        width: if( $use-input-button-width, $kendo-input-button-width, auto );
+        border-width: 0;
+        flex: none;
+        aspect-ratio: auto;
+        color: inherit;
+        background: none;
+        box-shadow: none;
+
+        > .k-button-icon {
+            min-width: auto !important; // sass-lint:disable-line no-important
+            min-height: auto !important; // sass-lint:disable-line no-important
+        }
+    }
+
+
+    // Input spinner
+    .k-input-spinner {
+        width: if( $use-input-spinner-width, $kendo-input-spinner-width, auto );
+        flex: none;
+        display: flex;
+        flex-flow: column nowrap;
+
+        .k-spinner-increase,
+        .k-spinner-decrease {
+            border-width: 0;
+            flex: 1 1 50%;
+            box-shadow: none;
+            position: relative;
+
+            > .k-button-icon {
+                margin: -1em 0;
+                aspect-ratio: auto;
+            }
+        }
+        .k-spinner-increase .k-icon {
+            bottom: -$kendo-input-spinner-icon-offset;
+        }
+        .k-spinner-decrease .k-icon {
+            top: -$kendo-input-spinner-icon-offset;
+        }
     }
 
 
@@ -153,17 +177,6 @@
         display: flex;
         flex-flow: row nowrap;
     }
-
-    .k-text-disabled {
-        @include disabled( $disabled-styling );
-    }
-
-}
-
-
-
-
-@include exports("input/layout/jQuery-label") {
 
 }
 
@@ -191,10 +204,10 @@
     }
 
 
-    .k-textbox:-webkit-autofill {
+    .k-input:-webkit-autofill {
         animation-name: autoFillStart;
     }
-    .k-textbox:not(:-webkit-autofill) {
+    .k-input:not(:-webkit-autofill) {
         animation-name: autoFillEnd;
     }
 

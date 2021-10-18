@@ -9,7 +9,7 @@
 
         // Wrapper
         .k-picker-wrap {
-            border-width: $input-border-width 0;
+            border-width: $kendo-input-border-width 0;
             border-top-color: transparent !important; // sass-lint:disable-line no-important
 
             // Disabled state
@@ -26,7 +26,7 @@
 
         // Wrapper
         .k-dateinput-wrap {
-            border-width: $input-border-width 0;
+            border-width: $kendo-input-border-width 0;
             border-top-color: transparent !important; // sass-lint:disable-line no-important
 
 
