@@ -1,5 +1,5 @@
 @mixin input-ripple() {
-    $height: 2 * $input-border-width;
+    $height: 2 * $kendo-input-border-width;
 
     &::after {
         display: block;
