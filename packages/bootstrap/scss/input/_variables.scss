@@ -1,96 +1,82 @@
 // Input
+$kendo-input-border-width: $input-border-width !default;
+$kendo-input-border-height: ( $kendo-input-border-width * 2 ) !default;
+$kendo-input-border-radius: $input-border-radius !default;
+$kendo-input-border-radius-sm: $input-border-radius-sm !default;
+$kendo-input-border-radius-lg: $input-border-radius-lg !default;
 
-$input-default-width: 12.4em !default;
+$kendo-input-padding-x: $input-padding-x !default;
+$kendo-input-padding-y: $input-padding-y !default;
+$kendo-input-font-family: $font-family !default;
+$kendo-input-font-size: $font-size !default;
+$kendo-input-line-height: $input-line-height !default;
+$kendo-input-line-height-em: $input-line-height * 1em !default;
 
-$input-border-width: $input-border-width !default;
-$input-border-height: ( $input-border-width * 2 ) !default;
-$input-border-radius: $input-border-radius !default;
-$input-border-radius-sm: $input-border-radius-sm !default;
-$input-border-radius-lg: $input-border-radius-lg !default;
+$kendo-input-padding-x-sm: $input-padding-x-sm !default;
+$kendo-input-padding-y-sm: $input-padding-y-sm !default;
+$kendo-input-font-size-sm: $input-font-size-sm !default;
+$kendo-input-line-height-sm: $kendo-input-line-height !default;
 
-$input-padding-x: $input-padding-x !default;
-$input-padding-y: $input-padding-y !default;
-$input-font-family: $font-family !default;
-$input-font-size: $font-size !default;
-$input-line-height: $input-line-height !default;
-$input-line-height-em: $input-line-height * 1em !default;
+$kendo-input-padding-x-lg: $input-padding-x-lg !default;
+$kendo-input-padding-y-lg: $input-padding-y-lg !default;
+$kendo-input-font-size-lg: $input-font-size-lg !default;
+$kendo-input-line-height-lg: $kendo-input-line-height !default;
 
-$input-padding-x-sm: $input-padding-x-sm !default;
-$input-padding-y-sm: $input-padding-y-sm !default;
-$input-font-size-sm: $input-font-size-sm !default;
-$input-line-height-sm: $input-line-height !default;
+$kendo-input-calc-height: calc( #{$kendo-input-line-height * 1em} + #{$kendo-input-padding-y * 2} + #{$kendo-input-border-height} ) !default;
+$kendo-input-calc-height-sm: calc( #{$kendo-input-line-height-sm * 1em} + #{$kendo-input-padding-y-sm * 2} + #{$kendo-input-border-height} ) !default;
+$kendo-input-calc-height-lg: calc( #{$kendo-input-line-height-lg * 1em} + #{$kendo-input-padding-y-lg * 2} + #{$kendo-input-border-height} ) !default;
 
-$input-padding-x-lg: $input-padding-x-lg !default;
-$input-padding-y-lg: $input-padding-y-lg !default;
-$input-font-size-lg: $input-font-size-lg !default;
-$input-line-height-lg: $input-line-height !default;
+$kendo-input-inner-calc-height: calc( #{$kendo-input-line-height * 1em} + #{$kendo-input-padding-y * 2} ) !default;
+$kendo-input-inner-calc-height-sm: calc( #{$kendo-input-line-height-sm * 1em} + #{$kendo-input-padding-y-sm * 2} ) !default;
+$kendo-input-inner-calc-height-lg: calc( #{$kendo-input-line-height-lg * 1em} + #{$kendo-input-padding-y-lg * 2} ) !default;
 
-$input-calc-height: calc( #{$input-line-height * 1em} + #{$input-padding-y * 2} + #{$input-border-height} ) !default;
-$input-calc-height-sm: calc( #{$input-line-height-sm * 1em} + #{$input-padding-y-sm * 2} + #{$input-border-height} ) !default;
-$input-calc-height-lg: calc( #{$input-line-height-lg * 1em} + #{$input-padding-y-lg * 2} + #{$input-border-height} ) !default;
+$kendo-input-adornment-height: calc( #{$kendo-input-line-height * $kendo-input-font-size} + #{$kendo-input-padding-y * 2} ) !default;
+$kendo-input-adornment-width: $kendo-input-adornment-height !default;
 
-$input-inner-calc-height: calc( #{$input-line-height * 1em} + #{$input-padding-y * 2} ) !default;
-$input-inner-calc-height-sm: calc( #{$input-line-height-sm * 1em} + #{$input-padding-y-sm * 2} ) !default;
-$input-inner-calc-height-lg: calc( #{$input-line-height-lg * 1em} + #{$input-padding-y-lg * 2} ) !default;
+$kendo-input-bg: $input-bg !default;
+$kendo-input-text: $input-color !default;
+$kendo-input-border: $input-border-color !default;
+$kendo-input-shadow: none !default;
 
-$input-adornment-height: calc( #{$input-line-height * $input-font-size} + #{$input-padding-y * 2} ) !default;
-$input-adornment-width: $input-adornment-height !default;
+$kendo-input-hover-bg: null !default;
+$kendo-input-hover-text: null !default;
+$kendo-input-hover-border: null !default;
+$kendo-input-hover-shadow: null !default;
 
-$input-bg: $input-bg !default;
-$input-text: $input-color !default;
-$input-border: $input-border-color !default;
-$input-shadow: none !default;
+$kendo-input-focus-bg: $input-focus-bg !default;
+$kendo-input-focus-text: $input-focus-color !default;
+$kendo-input-focus-border: $input-focus-border-color !default;
+$kendo-input-focus-shadow: $input-focus-box-shadow !default;
 
-$input-hovered-bg: null !default;
-$input-hovered-text: null !default;
-$input-hovered-border: null !default;
-$input-hovered-shadow: null !default;
+$kendo-input-placeholder-text: $input-placeholder-color !default;
+$kendo-input-placeholder-opacity: 1 !default;
 
-$input-focused-bg: $input-focus-bg !default;
-$input-focused-text: $input-focus-color !default;
-$input-focused-border: $input-focus-border-color !default;
-$input-focused-shadow: $input-focus-box-shadow !default;
+$kendo-input-selected-bg: null !default;
+$kendo-input-selected-text: null !default;
 
-$input-placeholder-text: $input-placeholder-color !default;
-$input-placeholder-opacity: 1 !default;
-
-$input-selected-bg: null !default;
-$input-selected-text: null !default;
-
-$input-clear-button-focused-background: #6c757d !default;
-$input-clear-button-focused-opacity: .2 !default;
-
-// Picker
-$picker-select-border-width: 1px !default;
-
-$picker-select-padding-x: $input-padding-y !default;
-$picker-select-padding-y: $input-padding-y !default;
-
-$picker-select-padding-x-sm: $input-padding-y-sm !default;
-$picker-select-padding-y-sm: $input-padding-y-sm !default;
-
-$picker-select-padding-x-lg: $input-padding-y-sm !default;
-$picker-select-padding-y-lg: $input-padding-y-sm !default;
-
-$picker-select-calc-size: calc( #{$picker-select-padding-x * 2} + #{$icon-size} ) !default;
-$picker-select-calc-size-sm: calc( #{$picker-select-padding-x-sm * 2} + #{$icon-size} ) !default;
-$picker-select-calc-size-lg: calc( #{$picker-select-padding-x-sm * 2} + #{$icon-size} ) !default;
+$kendo-input-clear-value-text: null !default;
+$kendo-input-clear-value-opacity: .5 !default;
+$kendo-input-clear-value-hover-text: null !default;
+$kendo-input-clear-value-hover-opacity: 1 !default;
 
 
-// Spinner
-$spinner-width: $kendo-button-inner-calc-size !default;
-$spinner-min-width: calc( #{$icon-size} + #{$picker-select-padding-x * 2} ) !default;
-$spinner-icon-offset: 1px !default;
+// Input actions
+$kendo-input-button-width: null !default;
+$kendo-input-button-border-width: 1px !default;
+$kendo-input-spinner-width: null !default;
+$kendo-input-spinner-icon-offset: 2px !default;
 
 
 // Input icon
-$input-icon-width: calc( #{$icon-size} + #{$input-padding-y * 2} ) !default;
-$input-icon-height: calc( #{$input-line-height * $input-font-size} + #{$input-padding-y * 2} ) !default;
-
-$input-icon-text: $subtle-text !default;
-$input-icon-opacity: null !default;
+$kendo-input-icon-width: calc( #{$icon-size} + #{$kendo-input-padding-y * 2} ) !default;
+$kendo-input-icon-height: calc( #{$kendo-input-line-height * $kendo-input-font-size} + #{$kendo-input-padding-y * 2} ) !default;
 
 
 // Input separator
-$input-separator-color: $input-text !default;
-$input-separator-opacity: .5 !default;
+$kendo-input-separator-color: $kendo-input-text !default;
+$kendo-input-separator-opacity: .5 !default;
+
+
+// Invalid
+$kendo-input-invalid-border: $invalid-border !default;
+$kendo-input-invalid-shadow: $invalid-shadow !default;

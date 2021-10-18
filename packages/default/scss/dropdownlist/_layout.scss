@@ -2,14 +2,13 @@
 
     // Dropdown list
     .k-dropdown {
-        width: $input-default-width;
         border-width: 0;
         outline: 0;
         background: none;
         box-sizing: border-box;
-        font-family: $input-font-family;
-        font-size: $input-font-size;
-        line-height: $input-line-height;
+        font-family: $kendo-input-font-family;
+        font-size: $kendo-input-font-size;
+        line-height: $kendo-input-line-height;
         text-align: left;
         white-space: nowrap;
         display: inline-flex;
@@ -19,7 +18,7 @@
         -webkit-tap-highlight-color: $rgba-transparent;
 
         .k-dropdown-wrap {
-            @include border-radius( $input-border-radius );
+            @include border-radius( $kendo-input-border-radius );
             padding: 0;
             width: 100%;
             display: flex;
@@ -40,8 +39,8 @@
 
             // Select
             .k-select {
-                padding: $picker-select-padding-y $picker-select-padding-x;
-                width: if( $use-picker-select-width, $kendo-button-inner-calc-size, null );
+                padding: 0;
+                width: if( $use-picker-select-width, $kendo-input-button-width, null );
                 border-width: 0;
                 box-sizing: border-box;
                 border-style: solid;
@@ -87,8 +86,8 @@
 
     // Native select
     select.k-dropdown {
-        @include border-radius( $input-border-radius );
-        padding: $input-padding-y $input-padding-x;
+        @include border-radius( $kendo-input-border-radius );
+        padding: $kendo-input-padding-y $kendo-input-padding-x;
         border-width: 1px;
         border-style: solid;
         box-sizing: border-box;

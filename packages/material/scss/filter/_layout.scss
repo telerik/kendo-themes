@@ -11,8 +11,8 @@
                 border-width: 0 0 1px;
 
                 .k-input {
-                    padding: $input-padding-y $input-padding-x;
-                    height: calc( #{$input-padding-y * 2} + #{$input-line-height * 1em} );
+                    padding: $kendo-input-padding-y $kendo-input-padding-x;
+                    height: calc( #{$kendo-input-padding-y * 2} + #{$kendo-input-line-height * 1em} );
                 }
 
                 .k-select {
