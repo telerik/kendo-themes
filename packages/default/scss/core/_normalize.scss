@@ -1,5 +1,16 @@
 @include exports( "core/normalize" ) {
 
+    // Box sizing
+    *,
+    ::before,
+    ::after {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+    }
+
     // Hidden attribute
     [hidden] {
         display: none !important; // sass-lint:disable-line no-important
