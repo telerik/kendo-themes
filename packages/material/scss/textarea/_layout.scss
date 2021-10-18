@@ -5,7 +5,7 @@
     // Textarea
     .k-textarea {
         @include border-bottom-radius( 0 !important ); // sass-lint:disable-line no-important
-        border-width: $input-border-width 0;
+        border-width: $kendo-input-border-width 0;
         border-top-color: transparent !important; // sass-lint:disable-line no-important
     }
 
@@ -13,11 +13,6 @@
     .k-floating-label-container.k-textarea-container,
     .k-textbox-container.k-textarea-container {
         padding-top: 0;
-
-        textarea.k-textarea,
-        .k-textarea .k-input {
-            padding-top: calc( #{$textarea-padding-y} + #{$textarea-line-height-em} );
-        }
 
         .k-label {
             font-size: $textarea-font-size;

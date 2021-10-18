@@ -1,10 +1,10 @@
 // Floating label
 $floating-label-scale: 1 !default;
-$floating-label-font-size: $input-font-size !default;
-$floating-label-line-height: $input-line-height !default;
+$floating-label-font-size: $kendo-input-font-size !default;
+$floating-label-line-height: $kendo-input-line-height !default;
 $floating-label-height: calc( #{$floating-label-line-height} * #{$floating-label-font-size} ) !default;
 $floating-label-offset-x: null !default;
-$floating-label-offset-y: calc( #{$floating-label-height} + #{$input-border-width} + #{$input-padding-y} ) !default;
+$floating-label-offset-y: calc( #{$floating-label-height} + #{$kendo-input-border-width} + #{$kendo-input-padding-y} ) !default;
 
 $floating-label-focus-scale: .75 !default;
 $floating-label-focus-offset-x: null !default;
