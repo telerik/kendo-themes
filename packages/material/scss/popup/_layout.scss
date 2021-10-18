@@ -30,16 +30,6 @@
 
     .k-list-filter {
         height: auto;
-
-        & > .k-textbox {
-            border-width: 0 0 2px;
-            @include border-radius( $border-radius-lg );
-        }
-
-        & > .k-icon {
-            margin-top: -.5em;
-            transform: none;
-        }
     }
 
     // Tooltip popup container padding
