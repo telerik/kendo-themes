@@ -43,15 +43,6 @@
         }
     }
 
-    .k-list-filter {
+    .k-list-filter {}
 
-        & > .k-textbox {
-            @include fill(
-                $node-hovered-text,
-                $node-hovered-bg,
-                $node-hovered-border,
-                $node-hovered-gradient
-            );
-        }
-    }
 }

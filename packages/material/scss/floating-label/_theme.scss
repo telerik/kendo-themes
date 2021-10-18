@@ -4,7 +4,6 @@
 @include exports( "floating-label/theme/material" ) {
 
     // Floating label
-    .k-textbox-container,
     .k-floating-label-container {
 
         &.k-state-invalid + .k-label,
