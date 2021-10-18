@@ -75,7 +75,7 @@
         }
 
         .k-picker-wrap {
-            @include border-radius( $input-border-radius );
+            @include border-radius( $kendo-input-border-radius );
             padding: 0;
             width: 100%;
             border-width: 1px;
@@ -97,7 +97,7 @@
 
         // Select
         .k-select {
-            padding: $picker-select-padding-y $picker-select-padding-x;
+            padding: 0;
             width: if( $use-picker-select-width, $kendo-button-inner-calc-size, null );
             border-width: 0 0 0 $colorpicker-select-border-width;
             border-style: solid;
