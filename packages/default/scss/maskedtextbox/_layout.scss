@@ -1,10 +1,9 @@
 @include exports("maskedtextbox/layout") {
 
     .k-maskedtextbox {
-        width: $input-default-width;
-        font-family: $input-font-family;
-        font-size: $input-font-size;
-        line-height: $input-line-height;
+        font-family: $kendo-input-font-family;
+        font-size: $kendo-input-font-size;
+        line-height: $kendo-input-line-height;
         border-width: 0;
         box-sizing: border-box;
         outline: 0;

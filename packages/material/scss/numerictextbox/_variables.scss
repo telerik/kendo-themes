@@ -1,16 +1,16 @@
 // Numeric textbox
-$numeric-bg: $input-bg !default;
-$numeric-text: $input-text !default;
-$numeric-border: $input-border !default;
+$numeric-bg: $kendo-input-bg !default;
+$numeric-text: $kendo-input-text !default;
+$numeric-border: $kendo-input-border !default;
 
-$numeric-hovered-bg: $input-hovered-bg !default;
-$numeric-hovered-text: $input-hovered-text !default;
-$numeric-hovered-border: $input-hovered-border !default;
+$numeric-hovered-bg: $kendo-input-hover-bg !default;
+$numeric-hovered-text: $kendo-input-hover-text !default;
+$numeric-hovered-border: $kendo-input-hover-border !default;
 
-$numeric-focused-bg: $input-focused-bg !default;
-$numeric-focused-text: $input-focused-text !default;
-$numeric-focused-border: $input-focused-border !default;
-$numeric-focused-shadow: $input-focused-shadow !default;
+$numeric-focused-bg: $kendo-input-focus-bg !default;
+$numeric-focused-text: $kendo-input-focus-text !default;
+$numeric-focused-border: $kendo-input-focus-border !default;
+$numeric-focused-shadow: $kendo-input-focus-shadow !default;
 
 $numeric-invalid-bg: null !default;
 $numeric-invalid-text: $error !default;
@@ -22,7 +22,7 @@ $numeric-button-border: null !default;
 $numeric-button-gradient: null !default;
 
 $numeric-button-hovered-bg: null !default;
-$numeric-button-hovered-text: $input-text !default;
+$numeric-button-hovered-text: $kendo-input-text !default;
 $numeric-button-hovered-border: null !default;
 $numeric-button-hovered-gradient: null !default;
 
