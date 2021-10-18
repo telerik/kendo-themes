@@ -563,20 +563,6 @@
             }
         }
 
-        // Generic widgets
-        .k-numerictextbox {
-            width: 10em;
-
-            & + .k-dropdown {
-                width: 4em;
-            }
-
-            & + .k-colorpicker,
-            & + .k-dropdown {
-                margin-left: $padding-x-sm;
-            }
-        }
-
         .k-colorpicker {
             vertical-align: middle;
         }
@@ -588,11 +574,6 @@
         // Align
         .k-dropdown.k-align {
             width: auto;
-        }
-
-        // Summary textarea
-        .k-textbox.k-editor-accessibility-summary {
-            height: auto;
         }
     }
 
