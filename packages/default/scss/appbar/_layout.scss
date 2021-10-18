@@ -22,7 +22,6 @@
 
         > * {
             flex-shrink: 0;
-
         }
 
         // Appbar section
@@ -32,14 +31,15 @@
             align-items: center;
         }
 
+
         // Appbar Spacer
         .k-appbar-spacer {
             flex: 1 0 auto;
         }
-
         .k-appbar-spacer-sized {
             flex-grow: 0;
         }
+
 
         // Separator
         .k-appbar-separator {
@@ -52,23 +52,25 @@
         }
 
 
-        // Appbar child components
-        .k-textbox,
-        .k-combobox,
-        .k-dropdown,
-        .k-searchbox,
-        .k-numerictextbox,
-        .k-datepicker,
-        .k-timepicker,
-        .k-datetimepicker {
+        // Input
+        .k-input,
+        .k-picker {
             width: 10em;
         }
+        .k-colorpicker {
+            width: min-content;
+        }
+
     }
 
+
+    // Static appbar
     .k-appbar-static {
         position: static;
     }
 
+
+    // Sticky appbar
     .k-appbar-sticky {
         width: 100%;
         position: sticky;
@@ -76,17 +78,20 @@
         z-index: $appbar-zindex;
     }
 
+
+    // Fixed appbar
     .k-appbar-fixed {
         width: 100%;
         position: fixed;
         z-index: 1;
     }
 
+
+    // Appbar position
     .k-appbar-top {
         top: 0;
         bottom: auto;
     }
-
     .k-appbar-bottom {
         top: auto;
         bottom: 0;
@@ -95,4 +100,5 @@
             bottom: 0;
         }
     }
+
 }
