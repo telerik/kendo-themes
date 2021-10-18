@@ -1,24 +1,59 @@
 @include exports( "input/layout" ) {
 
     // Generic input
-    .k-input {
+    .k-input,
+    .k-picker {
+        @include border-radius( $kendo-input-border-radius );
         margin: 0;
-        padding: $input-padding-y $input-padding-x;
-        width: 100%;
+        padding: 0;
+        width: $kendo-input-default-width;
         min-width: 0;
-        height: $input-inner-calc-height;
+        border-width: $kendo-input-border-width;
+        border-style: solid;
+        outline: 0;
+        font-family: $kendo-input-font-family;
+        font-size: $kendo-input-font-size;
+        line-height: $kendo-input-line-height;
+        box-shadow: none;
+        display: inline-flex;
+        flex-flow: row nowrap;
+        align-items: stretch;
+        position: relative;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-appearance: none;
+
+        .k-input,
+        .k-picker {
+            border-width: 0 !important; // sass-lint:disable-line no-important
+            color: inherit;
+            background: none;
+            font: inherit;
+            outline: 0;
+            box-shadow: none;
+        }
+    }
+    input.k-input {
+        padding: $kendo-input-padding-y $kendo-input-padding-x;
+    }
+    select.k-picker {
+        padding: $kendo-input-padding-y $kendo-input-padding-x;
+        appearance: auto;
+    }
+
+
+    // Input inner
+    .k-input-inner {
+        padding: $kendo-input-padding-y $kendo-input-padding-x;
+        width: 100%;
         border: 0;
         outline: 0;
-        box-sizing: border-box;
-        // Targets https://github.com/telerik/kendo-react/issues/638.
-        box-shadow: none;
         color: inherit;
         background: none;
         font: inherit;
-        display: flex;
-        flex-flow: row nowrap;
-        align-items: center;
-        flex: 0 1 auto;
+        flex: 1;
+        position: relative;
+        z-index: 1;
         overflow: hidden;
         text-overflow: ellipsis;
         -webkit-appearance: none;
@@ -28,12 +63,12 @@
 
         // Placeholder text
         &::placeholder {
-            color: $input-placeholder-text;
-            opacity: $input-placeholder-opacity;
+            color: $kendo-input-placeholder-text;
+            opacity: $kendo-input-placeholder-opacity;
             user-select: none;
         }
         &:-ms-input-placeholder {
-            color: $input-placeholder-text;
+            color: $kendo-input-placeholder-text;
         }
 
         // Invalid
@@ -41,50 +76,61 @@
             box-shadow: none;
         }
     }
+    span.k-input-inner {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+    }
+    textarea.k-input-inner {
+        margin: 0;
+    }
+
+
+    // Input value
+    .k-input-value-icon {
+        flex: none;
+    }
+    .k-input-value-text {
+        flex: 1;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+
+    // Input multiple values
+    .k-input-values {
+        width: 100%;
+        padding: $kendo-input-values-margin-y $kendo-input-values-margin-x;
+        cursor: text;
+    }
+    .k-input-values > .k-input-inner {
+        margin: (-$kendo-input-values-margin-y) (-$kendo-input-values-margin-x);
+    }
+
+
+    // Icon picker
+    .k-icon-picker {
+        .k-input-inner {
+            padding: $kendo-input-padding-y;
+            // TODO we need better way
+            // width: $kendo-input-inner-calc-height;
+            // height: $kendo-input-inner-calc-height;
+            justify-content: center;
+        }
+    }
 
 
     // Input prefix and suffix
     .k-input-prefix,
     .k-input-suffix {
+        border-color: inherit;
         display: flex;
+        flex-flow: row nowrap;
         align-items: center;
-        flex-shrink: 0;
-        height: $kendo-button-inner-calc-size;
+        flex: none;
 
         > * {
             flex-shrink: 0;
-        }
-
-        > .k-icon {
-            width: $input-adornment-width;
-            height: $input-adornment-height;
-            display: inline-flex;
-            flex-flow: row nowrap;
-            align-items: center;
-            justify-content: center;
-            flex-shrink: 0;
-        }
-        > .k-clear-value {
-            width: $input-adornment-width;
-            height: $input-adornment-height;
-            position: relative;
-
-            &::after {
-                content: "";
-                opacity: 0;
-                display: none;
-                pointer-events: none;
-                position: absolute;
-                left: -1px;
-                right: -1px;
-                top: -1px;
-                bottom: -1px;
-            }
-
-            &.k-state-focused::after,
-            &:focus::after {
-                display: block;
-            }
         }
     }
 
@@ -96,6 +142,8 @@
         height: $icon-size;
         border-width: 0 0 0 1px;
         border-style: solid;
+        border-color: inherit;
+        align-self: center;
     }
 
 
@@ -103,31 +151,87 @@
     .k-input-icon,
     .k-input-validation-icon,
     .k-input-loading-icon {
-        width: $input-icon-width;
-        height: $input-icon-height;
+        flex: none;
+        align-self: center;
         display: inline-flex;
         flex-flow: row nowrap;
         align-items: center;
         justify-content: center;
-        flex-shrink: 0;
     }
 
 
     // Clear value
     .k-clear-value {
-        width: $input-icon-width;
-        height: $input-icon-height;
-        flex-shrink: 0;
+        outline: 0;
+        color: $kendo-input-clear-value-text;
+        flex: none;
+        align-self: center;
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        outline: 0;
         cursor: pointer;
-        opacity: .5;
+        opacity: $kendo-input-clear-value-opacity;
     }
     .k-clear-value:hover,
-    .k-clear-value.k-state-hover {
-        opacity: 1;
+    .k-clear-value.k-hover {
+        color: $kendo-input-clear-value-hover-text;
+        opacity: $kendo-input-clear-value-hover-opacity;
+    }
+
+
+    // Input button
+    .k-input-button {
+        width: if( $use-input-button-width, $kendo-input-button-width, auto );
+        border-width: 0;
+        border-inline-start-width: $kendo-input-button-border-width;
+        flex: none;
+        aspect-ratio: auto;
+        box-shadow: none;
+
+        > .k-button-icon {
+            min-width: auto !important; // sass-lint:disable-line no-important
+            min-height: auto !important; // sass-lint:disable-line no-important
+        }
+
+        &:focus {
+            box-shadow: none;
+        }
+    }
+    .k-picker .k-input-button {
+        color: inherit;
+        background: none;
+        border-color: transparent;
+    }
+
+
+    // Input spinner
+    .k-input-spinner {
+        width: if( $use-input-spinner-width, $kendo-input-spinner-width, auto );
+        flex: none;
+        display: flex;
+        flex-flow: column nowrap;
+
+        .k-spinner-increase,
+        .k-spinner-decrease {
+            border-width: 0;
+            border-inline-start-width: $kendo-input-button-border-width;
+            flex: 1 1 50%;
+            box-shadow: none;
+            position: relative;
+            aspect-ratio: auto;
+
+            > .k-button-icon {
+                margin: -1em 0;
+                min-width: auto !important; // sass-lint:disable-line no-important
+                min-height: auto !important; // sass-lint:disable-line no-important
+            }
+        }
+        .k-spinner-increase .k-icon {
+            bottom: -$kendo-input-spinner-icon-offset;
+        }
+        .k-spinner-decrease .k-icon {
+            top: -$kendo-input-spinner-icon-offset;
+        }
     }
 
 
@@ -155,13 +259,60 @@
         overflow: hidden;
         position: relative;
     }
-    .k-multiselect-wrap {
-        display: block;
+
+
+    // Fill mode
+    .k-input-flat,
+    .k-picker-flat {
+        @include border-radius( 0 !important ); // sass-lint:disable-line no-important
+        border-width: $kendo-input-border-width 0;
+        border-top-color: transparent !important; // sass-lint:disable-line no-important
+        background: none !important; // sass-lint:disable-line no-important
+
+        .k-input-inner {
+            padding-left: 0 !important; // sass-lint:disable-line no-important
+            padding-right: 0 !important; // sass-lint:disable-line no-important
+        }
+    }
+
+    .k-input-outline,
+    .k-picker-outline {
+        background: none !important; // sass-lint:disable-line no-important
     }
 
 
-    .k-text-disabled {
-        @include disabled( $disabled-styling );
+    // Sizing
+    @each $size, $size-props in $kendo-input-sizes {
+        $_padding-x: map-get( $size-props, padding-x );
+        $_padding-y: map-get( $size-props, padding-y );
+        $_font-size: map-get( $size-props, font-size );
+        $_line-height: map-get( $size-props, line-height );
+        $_icon-size: map-get( $size-props, icon-size );
+
+        .k-input-#{$size},
+        .k-picker-#{$size} {
+            font-size: $_font-size;
+            line-height: $_line-height;
+
+            .k-input-inner {
+                padding: $_padding-y $_padding-x;
+            }
+
+            .k-input-icon,
+            .k-input-validation-icon,
+            .k-input-loading-icon,
+            .k-clear-value {
+                width: $_icon-size;
+                height: $_icon-size;
+            }
+
+            &.k-icon-picker .k-input-inner {
+                width: calc( #{$_line-height * 1em} );
+                height: calc( #{$_line-height * 1em} );
+                padding: $_padding-y;
+                box-sizing: content-box;
+            }
+        }
     }
 
 }
@@ -190,10 +341,10 @@
     }
 
 
-    .k-textbox:-webkit-autofill {
+    .k-input:-webkit-autofill {
         animation-name: autoFillStart;
     }
-    .k-textbox:not(:-webkit-autofill) {
+    .k-input:not(:-webkit-autofill) {
         animation-name: autoFillEnd;
     }
 

@@ -34,7 +34,7 @@
 
         .k-form-field {
             > span:not(.k-widget) {
-                padding: calc( #{$padding-y} - #{$input-border-width} ) 0;
+                padding: calc( #{$padding-y} - #{$kendo-input-border-width} ) 0;
                 padding-right: $padding-x;
             }
         }
@@ -45,7 +45,7 @@
 @include exports("edit-form/layout/bootstrap") {
 
     .k-edit-label {
-        padding: calc( #{$padding-y} - #{$input-border-width} ) 0;
+        padding: calc( #{$padding-y} - #{$kendo-input-border-width} ) 0;
     }
 
 }
