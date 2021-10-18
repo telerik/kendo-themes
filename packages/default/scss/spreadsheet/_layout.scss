@@ -641,14 +641,9 @@
         .k-details-content {
             padding: $padding-y $padding-x $padding-y $filter-menu-padding-left;
 
-            > .k-textbox,
             > .k-widget {
                 width: 100%;
                 margin-bottom: 3px;
-            }
-
-            .k-space-right {
-                background-image: none;
             }
 
             .k-filter-and {
