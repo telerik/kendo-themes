@@ -86,7 +86,8 @@
 
     // Edit/New Columns
     .k-taskboard-column-new {
-        max-height: $taskboard-column-new-calc-height;
+        // TODO: we need better way
+        // max-height: $taskboard-column-new-calc-height;
     }
 
     .k-taskboard-column-new,

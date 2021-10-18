@@ -15,7 +15,6 @@
         }
 
         &:hover,
-        &.k-state-hover,
         &.k-hover {
             @include fill( $border: $color-preview-hover-border );
         }
