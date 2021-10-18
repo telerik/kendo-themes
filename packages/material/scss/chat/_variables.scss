@@ -75,9 +75,9 @@ $chat-quick-reply-hover-text: $primary-contrast !default;
 $chat-quick-reply-hover-border: $primary !default;
 
 $chat-message-box-bg: $component-bg !default;
-$chat-message-box-text: $input-text !default;
+$chat-message-box-text: $kendo-input-text !default;
 $chat-message-box-border: inherit !default;
-$chat-message-box-focus-shadow: 0 0 40px rgba( $input-text, .1 ) !default;
+$chat-message-box-focus-shadow: 0 0 40px rgba( $kendo-input-text, .1 ) !default;
 
 $chat-message-box-button-hover-text: $primary !default;
 

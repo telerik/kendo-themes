@@ -165,7 +165,7 @@
 
     // Editable area
     .k-editable-area {
-        padding: $input-padding-y;
+        padding: $kendo-input-padding-y;
         width: 100%;
         height: 100%;
         border-width: 0;
@@ -182,7 +182,7 @@
         }
 
         .k-resizable & {
-            padding: $input-padding-y $input-padding-y 16px;
+            padding: $kendo-input-padding-y $kendo-input-padding-y 16px;
         }
     }
 
@@ -303,7 +303,7 @@
 
         .k-edit-label {
             width: 30%;
-            padding: calc( #{$padding-y} + #{$input-border-width} ) 0;
+            padding: calc( #{$padding-y} + #{$kendo-input-border-width} ) 0;
         }
 
         .k-edit-field {
@@ -468,8 +468,8 @@
 
         .k-breadcrumbs-wrap {
             position: absolute;
-            left: $input-padding-x;
-            top: $input-padding-y;
+            left: $kendo-input-padding-x;
+            top: $kendo-input-padding-y;
 
             .k-icon {
                 position: static;

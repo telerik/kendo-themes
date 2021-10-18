@@ -1,18 +1,18 @@
 // Autocomplete
-$autocomplete-bg: $input-bg !default;
-$autocomplete-text: $input-text !default;
-$autocomplete-border: $input-border !default;
-$autocomplete-shadow: $input-shadow !default;
+$autocomplete-bg: $kendo-input-bg !default;
+$autocomplete-text: $kendo-input-text !default;
+$autocomplete-border: $kendo-input-border !default;
+$autocomplete-shadow: $kendo-input-shadow !default;
 
-$autocomplete-hovered-bg: $input-hovered-bg !default;
-$autocomplete-hovered-text: $input-hovered-text !default;
-$autocomplete-hovered-border: $input-hovered-border !default;
-$autocomplete-hovered-shadow: $input-hovered-shadow !default;
+$autocomplete-hovered-bg: $kendo-input-hover-bg !default;
+$autocomplete-hovered-text: $kendo-input-hover-text !default;
+$autocomplete-hovered-border: $kendo-input-hover-border !default;
+$autocomplete-hovered-shadow: $kendo-input-hover-shadow !default;
 
-$autocomplete-focused-bg: $input-focused-bg !default;
-$autocomplete-focused-text: $input-focused-text !default;
-$autocomplete-focused-border: $input-focused-border !default;
-$autocomplete-focused-shadow: $input-focused-shadow !default;
+$autocomplete-focused-bg: $kendo-input-focus-bg !default;
+$autocomplete-focused-text: $kendo-input-focus-text !default;
+$autocomplete-focused-border: $kendo-input-focus-border !default;
+$autocomplete-focused-shadow: $kendo-input-focus-shadow !default;
 
 $autocomplete-disabled-bg: null !default;
 $autocomplete-disabled-text: null !default;
