@@ -1,58 +1,6 @@
 @include exports( "maskedtextbox/theme" ) {
 
     // Masked textbox
-    .k-maskedtextbox {
-        @include fill(
-            $kendo-input-text,
-            $kendo-input-bg,
-            $kendo-input-border
-        );
-
-        // Hover state
-        &:hover,
-        &.k-state-hover {
-            @include fill(
-                $kendo-input-hover-text,
-                $kendo-input-hover-bg,
-                $kendo-input-hover-border
-            );
-        }
-
-        // Focus state
-        &:focus,
-        &.k-state-focus {
-            @include fill(
-                $kendo-input-focus-text,
-                $kendo-input-focus-bg,
-                $kendo-input-focus-border
-            );
-            @include box-shadow( $kendo-input-focus-shadow );
-        }
-        &:focus-within {
-            @include fill(
-                $kendo-input-focus-text,
-                $kendo-input-focus-bg,
-                $kendo-input-focus-border
-            );
-            @include box-shadow( $kendo-input-focus-shadow );
-        }
-
-
-        // Invalid state
-        &.k-invalid,
-        &.ng-invalid,
-        &.k-state-invalid {
-            border-color: $invalid-border;
-
-            .k-input-validation-icon {
-                color: $invalid-text;
-            }
-
-            &:focus-within,
-            &.k-state-focus {
-                @include box-shadow($invalid-shadow);
-            }
-        }
-    }
+    .k-maskedtextbox {}
 
 }
