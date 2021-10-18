@@ -15,18 +15,18 @@ $multiselect-remove-hover-bg: rgba( $base-text, .54 ) !default;
 $multiselect-remove-focused-text: rgba( $base-text, .54 ) !default;
 $multiselect-remove-focused-bg: rgba($base-bg, .93) !default;
 
-$multiselect-bg: $input-bg !default;
-$multiselect-text: $input-text !default;
-$multiselect-border: $input-border !default;
+$multiselect-bg: $kendo-input-bg !default;
+$multiselect-text: $kendo-input-text !default;
+$multiselect-border: $kendo-input-border !default;
 
-$multiselect-hovered-bg: $input-hovered-bg !default;
-$multiselect-hovered-text: $input-hovered-text !default;
-$multiselect-hovered-border: $input-hovered-border !default;
+$multiselect-hovered-bg: $kendo-input-hover-bg !default;
+$multiselect-hovered-text: $kendo-input-hover-text !default;
+$multiselect-hovered-border: $kendo-input-hover-border !default;
 
-$multiselect-focused-bg: $input-focused-bg !default;
-$multiselect-focused-text: $input-focused-text !default;
-$multiselect-focused-border: $input-focused-border !default;
-$multiselect-focused-shadow: $input-focused-shadow !default;
+$multiselect-focused-bg: $kendo-input-focus-bg !default;
+$multiselect-focused-text: $kendo-input-focus-text !default;
+$multiselect-focused-border: $kendo-input-focus-border !default;
+$multiselect-focused-shadow: $kendo-input-focus-shadow !default;
 
 $multiselect-button-focused-bg: $kendo-button-active-bg !default;
 $multiselect-button-focused-text: $kendo-button-active-text !default;
@@ -34,4 +34,4 @@ $multiselect-button-focused-border: $kendo-button-active-border !default;
 $multiselect-button-focused-gradient: $kendo-button-active-gradient !default;
 $multiselect-button-focused-shadow: $kendo-button-active-shadow !default;
 
-$multiselect-clear-right: calc( #{$icon-size} + #{$input-padding-y} ) !default;
+$multiselect-clear-right: calc( #{$icon-size} + #{$kendo-input-padding-y} ) !default;
