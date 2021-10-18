@@ -3,7 +3,6 @@
     .k-dropdowntree {
         @extend .k-multiselect;
         @extend .k-dropdown;
-        width: $input-default-width;
     }
 
     // Dropdowntree popup
