@@ -145,7 +145,7 @@
             margin: 0 $padding-x;
         }
 
-        .k-textbox,
+
         .k-textarea,
         .k-autocomplete,
         .k-combobox,
@@ -156,9 +156,6 @@
         .k-datetimepicker,
         .k-daterangepicker-wrap,
         .k-timepicker,
-        .k-numerictextbox,
-        .k-maskedtextbox,
-        .k-textbox-container,
         .k-floating-label-container {
             display: inline-flex;
             width: 100%;
@@ -370,7 +367,6 @@
     .k-edit-field {
 
         > .k-widget,
-        > .k-textbox,
         > .k-textarea {
             width: 100%;
             box-sizing: border-box;
