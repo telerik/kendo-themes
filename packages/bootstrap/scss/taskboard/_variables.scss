@@ -46,7 +46,7 @@ $taskboard-column-cards-padding-y: $taskboard-spacer * .25 !default;
 $taskboard-column-cards-padding-x: 0px !default;
 $taskboard-column-cards-gap: $taskboard-spacer * .75 !default;
 
-$taskboard-column-new-calc-height: calc( #{$input-calc-height} + #{$taskboard-column-header-padding-y * 2} ) !default;
+$taskboard-column-new-calc-height: calc( #{$kendo-input-calc-height} + #{$taskboard-column-header-padding-y * 2} ) !default;
 
 $taskboard-pane-width: $taskboard-column-width !default;
 $taskboard-pane-padding-y: null !default;
