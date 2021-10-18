@@ -2,6 +2,17 @@
 
 @include exports("input/layout/material") {
 
+    .k-input,
+    .k-picker {
+        border-width: $kendo-input-border-width 0;
+        border-top-color: transparent !important; // sass-lint:disable-line no-important
+
+        &:disabled,
+        &.k-disabled  {
+            border-bottom-style: dashed;
+        }
+    }
+
     // Input ripple
     .k-textbox-container,
     .k-floating-label-container {

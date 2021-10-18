@@ -32,8 +32,8 @@ $chat-bubble-border-radius-sm: 2px !default;
 $chat-avatar-size: 32px !default;
 $chat-avatar-spacing: $chat-item-spacing-x !default;
 
-$chat-message-box-padding-x: $input-padding-x !default;
-$chat-message-box-padding-y: $input-padding-y !default;
+$chat-message-box-padding-x: $kendo-input-padding-x !default;
+$chat-message-box-padding-y: $kendo-input-padding-y !default;
 
 $chat-toolbar-padding-x: $toolbar-padding-x !default;
 $chat-toolbar-padding-y: $toolbar-padding-y !default;
@@ -74,10 +74,10 @@ $chat-quick-reply-hover-bg: $primary !default;
 $chat-quick-reply-hover-text: $primary-contrast !default;
 $chat-quick-reply-hover-border: $primary !default;
 
-$chat-message-box-bg: $input-bg !default;
-$chat-message-box-text: $input-text !default;
+$chat-message-box-bg: $kendo-input-bg !default;
+$chat-message-box-text: $kendo-input-text !default;
 $chat-message-box-border: inherit !default;
-$chat-message-box-focus-shadow: 0 0 40px rgba( $input-text, .1 ) !default;
+$chat-message-box-focus-shadow: 0 0 40px rgba( $kendo-input-text, .1 ) !default;
 
 $chat-message-box-button-hover-text: $primary !default;
 

@@ -24,18 +24,18 @@ $dateinput-text: $component-text !default;
 
 $datetime-width: calc( #{$calendar-cell-size * 8} + #{$infinite-calendar-view-padding-x * 2}) !default;
 
-$datetime-bg: $input-bg !default;
-$datetime-text: $input-text !default;
-$datetime-border: $input-border !default;
+$datetime-bg: $kendo-input-bg !default;
+$datetime-text: $kendo-input-text !default;
+$datetime-border: $kendo-input-border !default;
 
-$datetime-hovered-bg: $input-hovered-bg !default;
-$datetime-hovered-text: $input-hovered-text !default;
-$datetime-hovered-border: $input-hovered-border !default;
+$datetime-hovered-bg: $kendo-input-hover-bg !default;
+$datetime-hovered-text: $kendo-input-hover-text !default;
+$datetime-hovered-border: $kendo-input-hover-border !default;
 
-$datetime-focused-bg: $input-focused-bg !default;
-$datetime-focused-text: $input-focused-text !default;
-$datetime-focused-border: $input-focused-border !default;
-$datetime-focused-shadow: $input-focused-shadow !default;
+$datetime-focused-bg: $kendo-input-focus-bg !default;
+$datetime-focused-text: $kendo-input-focus-text !default;
+$datetime-focused-border: $kendo-input-focus-border !default;
+$datetime-focused-shadow: $kendo-input-focus-shadow !default;
 
 $datetime-select-bg: null !default;
 $datetime-select-text: $subtle-text !default;
@@ -43,7 +43,7 @@ $datetime-select-border: null !default;
 $datetime-select-gradient: null !default;
 
 $datetime-select-hovered-bg: null !default;
-$datetime-select-hovered-text: $input-text !default;
+$datetime-select-hovered-text: $kendo-input-text !default;
 $datetime-select-hovered-border: null !default;
 $datetime-select-hovered-gradient: null !default;
 

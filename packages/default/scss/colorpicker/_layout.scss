@@ -74,7 +74,7 @@
         }
 
         .k-picker-wrap {
-            @include border-radius( $input-border-radius );
+            @include border-radius( $kendo-input-border-radius );
             padding: 0;
             width: 100%;
             border-width: 1px;
@@ -96,7 +96,7 @@
 
         // Select
         .k-select {
-            @include border-right-radius-only( $input-border-radius );
+            @include border-right-radius-only( $kendo-input-border-radius );
             padding: $picker-select-padding-y $picker-select-padding-x;
             width: if( $use-picker-select-width, $kendo-button-inner-calc-size, null );
             border-width: 0 0 0 $colorpicker-select-border-width;
@@ -117,7 +117,7 @@
         &[dir="rtl"] {
             .k-picker-wrap {
                 .k-select {
-                    @include border-left-radius-only( $input-border-radius );
+                    @include border-left-radius-only( $kendo-input-border-radius );
                     border-width: 0 $colorpicker-select-border-width 0 0;
                 }
             }

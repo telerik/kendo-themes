@@ -4,18 +4,18 @@ $combobox-select-padding-y: $kendo-button-padding-y !default;
 $combobox-select-width: $kendo-button-inner-calc-size !default;
 $combobox-select-border-width: 1px !default;
 
-$combobox-bg: $input-bg !default;
-$combobox-text: $input-text !default;
-$combobox-border: $input-border !default;
+$combobox-bg: $kendo-input-bg !default;
+$combobox-text: $kendo-input-text !default;
+$combobox-border: $kendo-input-border !default;
 
-$combobox-hovered-bg: $input-hovered-bg !default;
-$combobox-hovered-text: $input-hovered-text !default;
-$combobox-hovered-border: $input-hovered-border !default;
+$combobox-hovered-bg: $kendo-input-hover-bg !default;
+$combobox-hovered-text: $kendo-input-hover-text !default;
+$combobox-hovered-border: $kendo-input-hover-border !default;
 
-$combobox-focused-bg: $input-focused-bg !default;
-$combobox-focused-text: $input-focused-text !default;
-$combobox-focused-border: $input-focused-border !default;
-$combobox-focused-shadow: $input-focused-shadow !default;
+$combobox-focused-bg: $kendo-input-focus-bg !default;
+$combobox-focused-text: $kendo-input-focus-text !default;
+$combobox-focused-border: $kendo-input-focus-border !default;
+$combobox-focused-shadow: $kendo-input-focus-shadow !default;
 
 $combobox-select-bg: $kendo-button-bg !default;
 $combobox-select-text: $kendo-button-text !default;
