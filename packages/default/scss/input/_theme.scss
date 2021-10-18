@@ -1,28 +1,43 @@
-@include exports("input/theme") {
+@include exports( "input/theme" ) {
 
-    .k-input-prefix,
-    .k-input-suffix {
+    .k-input {
+        @include fill(
+            $input-text,
+            $input-bg,
+            $input-border
+        );
 
-        > .k-icon {
-            color: $input-icon-text;
-            opacity: $input-icon-opacity;
+        // Hover
+        &:hover,
+        &.k-hover {
+            @include fill(
+                $input-hovered-text,
+                $input-hovered-bg,
+                $input-hovered-border
+            );
         }
 
-        .k-clear-value {
-            color: inherit;
+        // Focus
+        &:focus,
+        &.k-focus {
+            @include fill (
+                $input-focused-text,
+                $input-focused-bg,
+                $input-focused-border
+            );
+            @include box-shadow( $input-focused-shadow );
         }
 
-        > .k-clear-value {
-            &.k-state-focused::after,
-            &:focus::after {
-                background-color: $input-clear-button-focused-background;
-                opacity: $input-clear-button-focused-opacity;
+        // Invalid
+        &:invalid,
+        &.k-invalid {
+            @include fill( $border: $invalid-border );
+
+            &:focus,
+            &.k-focus {
+                @include box-shadow($invalid-shadow);
             }
         }
-    }
 
-    .k-input-separator {
-        border-color: $input-separator-color;
-        opacity: $input-separator-opacity;
     }
 }
