@@ -2,17 +2,15 @@
 
     // Textbox
     .k-textbox {
-        @include border-radius( $input-border-radius );
+        @include border-radius( $kendo-input-border-radius );
         margin: 0;
         padding: 0;
-        width: $input-default-width;
-        height: $input-calc-height;
-        border-width: $input-border-width;
+        border-width: $kendo-input-border-width;
         border-style: solid;
         outline: 0;
-        font-family: $input-font-family;
-        font-size: $input-font-size;
-        line-height: $input-line-height;
+        font-family: $kendo-input-font-family;
+        font-size: $kendo-input-font-size;
+        line-height: $kendo-input-line-height;
         box-sizing: border-box;
         // Targets https://github.com/telerik/kendo-react/issues/638.
         box-shadow: none;
@@ -29,12 +27,12 @@
 
         // Placeholder text
         &::placeholder {
-            color: $input-placeholder-text;
-            opacity: $input-placeholder-opacity;
+            color: $kendo-input-placeholder-text;
+            opacity: $kendo-input-placeholder-opacity;
             user-select: none;
         }
         &:-ms-input-placeholder {
-            color: $input-placeholder-text;
+            color: $kendo-input-placeholder-text;
         }
 
         .k-input {}
@@ -56,7 +54,7 @@
             // Disabled selection
             &::selection {
                 @include fill (
-                    $color: $input-text,
+                    $color: $kendo-input-text,
                     $bg: transparent
                 );
             }
@@ -66,7 +64,7 @@
 
     // Textbox
     input.k-textbox {
-        padding: $input-padding-y $input-padding-x;
+        padding: $kendo-input-padding-y $kendo-input-padding-x;
     }
 
 }
