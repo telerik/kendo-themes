@@ -2,24 +2,6 @@
 
 @include exports("numerictextbox/layout/material") {
 
-    .k-numerictextbox {
-        .k-numeric-wrap {
-            border-width: $input-border-width 0;
-            border-top-color: transparent !important; // sass-lint:disable-line no-important
-
-
-            // Disabled state
-            &.k-state-disabled {
-                border-bottom-style: dashed;
-            }
-        }
-
-        // Disabled state for k-state-disabled added to the k-numerictextbox
-        &.k-state-disabled {
-            .k-numeric-wrap {
-                border-bottom-style: dashed;
-            }
-        }
-    }
+    .k-numerictextbox {}
 
 }
