@@ -1,6 +1,8 @@
 @include exports("grid/layout") {
 
-    $filter-rows-span-size: calc( #{$line-height-em} + #{$input-padding-y * 2} + #{$input-border-width * 2}) !default;
+    // TODO: see why we need this variable
+    // $filter-rows-span-size: calc( #{$line-height-em} + #{$kendo-input-padding-y-md * 2} + #{$kendo-input-border-width * 2}) !default;
+    $filter-rows-span-size: null !default;
 
     $grid-group-dropclue-size: 6px;
     $grid-group-dropclue-line-size: $grid-group-dropclue-size / 3;
@@ -1224,11 +1226,6 @@
         align-items: stretch;
         gap: map-get( $spacing, 2 );
 
-        > * {
-            width: 100%;
-        }
-
-        .k-switch,
         .k-filter-and {
             width: min-content;
             align-self: start;
@@ -1248,10 +1245,6 @@
             flex-flow: column nowrap;
             align-items: stretch;
             gap: map-get( $spacing, 2 );
-
-            > * {
-                width: 100%;
-            }
         }
     }
     .k-ie .k-filter-menu-container {
@@ -1314,12 +1307,6 @@
 
         .k-detail-row {
             display: none !important;
-        }
-
-        input.k-input,
-        span.k-input,
-        input.k-textbox {
-            width: 0 !important;
         }
     }
 
