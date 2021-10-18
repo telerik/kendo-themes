@@ -1,48 +1,84 @@
 <!doctype html>
 <html lang="en" class="k-no-animations">
 <head>
-    <title>jQuery TextBox</title>
+    <title>Textbox</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
     <link rel="stylesheet" href="../../assets/styles.css" />
     <script src="../../assets/scripts.js"></script>
     <script src="../../../../packages/html/dist/index.js"></script>
 
+    <style>
+        #test-area {
+            max-width: 660px;
+        }
+        .k-textbox {
+            width: 100%;
+        }
+    </style>
 </head>
 <body class="k-body">
 
-    <div id="test-area" class="grid">
-        <p>LTR</p>
-        <span is="Textbox" placeholder="Placeholder text..." style="width: 100%">
-            <slot is="InputPrefix">
-                <span is="Icon" name="image"></span>
-                <span class="k-input-separator"></span>
-                <span is="Icon" name="brush"></span>
-            </slot>
+    <div id="test-area" class="k-d-grid k-grid-cols-2">
 
-            <slot is="InputSuffix">
-                <span is="Icon" name="warning"></span>
-                <span class="k-input-separator"></span>
-                <span class="k-clear-value"><span is="Icon" name="x-circle"></span></span>
-                <span class="k-clear-value k-state-focused"><span is="Icon" name="x-circle"></span></span>
-            </slot>
-        </span>
+        <span>Textbox</span>
+        <span>Textbox RTL</span>
 
-        <p>RTL</p>
-        <span is="Textbox" placeholder="Placeholder text..." style="width: 100%" dir="rtl">
-            <slot is="InputPrefix">
-                <span is="Icon" name="image"></span>
-                <span class="k-input-separator"></span>
-                <span is="Icon" name="brush"></span>
-            </slot>
+        <!-- empty -->
+        <div>
+            <input is="Textbox" placeholder="Textbox..." />
+        </div>
+        <div dir="rtl">
+            <input is="Textbox" placeholder="Textbox..." />
+        </div>
 
-            <slot is="InputSuffix">
-                <span is="Icon" name="warning"></span>
-                <span class="k-input-separator"></span>
-                <span class="k-clear-value"><span is="Icon" name="x-circle"></span></span>
-                <span class="k-clear-value k-state-focused"><span is="Icon" name="x-circle"></span></span>
-            </slot>
-        </span>
+        <!-- normal -->
+        <div>
+            <input is="Textbox" value="Normal" />
+        </div>
+        <div dir="rtl">
+            <input is="Textbox" value="Normal" />
+        </div>
+
+        <!-- hover -->
+        <div>
+            <input is="Textbox" value="Hover" hover />
+        </div>
+        <div dir="rtl">
+            <input is="Textbox" value="Hover" hover />
+        </div>
+
+        <!-- focus -->
+        <div>
+            <input is="Textbox" value="Focus" focus />
+        </div>
+        <div dir="rtl">
+            <input is="Textbox" value="Focus" focus />
+        </div>
+
+        <!-- disabled -->
+        <div>
+            <input is="Textbox" value="Disabled" disabled />
+        </div>
+        <div dir="rtl">
+            <input is="Textbox" value="Disabled" disabled />
+        </div>
+
+        <!-- invalid -->
+        <div>
+            <input is="Textbox" value="Invalid" invalid />
+        </div>
+        <div dir="rtl">
+            <input is="Textbox" value="Invalid" invalid />
+        </div>
+
+        <!-- invalid focus -->
+        <div>
+            <input is="Textbox" value="Invalid focus" invalid focus />
+        </div>
+        <div dir="rtl">
+            <input is="Textbox" value="Invalid focus" invalid focus />
+        </div>
 
     </div>
 

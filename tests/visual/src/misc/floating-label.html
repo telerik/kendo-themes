@@ -10,210 +10,99 @@
 
     <style>
         #test-area {
-            align-items: start;
-            justify-items: start;
+            width: 660px;
         }
-
-        .test-font-size .k-floating-label-container {
-            font-size: 50px;
-            max-width: calc( 14px * 12.4 );
+        .k-textbox,
+        .k-combobox,
+        .k-floating-label-container {
+            width: 100%;
         }
     </style>
 </head>
 <body class="k-body">
 
-    <div id="test-area" class="k-d-grid k-grid-cols-4">
+    <div id="test-area" class="k-d-grid k-grid-cols-2">
 
-        <span>Input</span>
-        <span>Textarea</span>
-        <span>Input RTL</span>
-        <span>Textarea RTL</span>
+        <span>Floating label</span>
+        <span>Floating label RTL</span>
 
-        <!-- Empty -->
+        <!-- empty -->
         <div>
             <span class="k-floating-label-container k-state-empty">
                 <input is="Textbox" />
-                <label class="k-label">Empty</label>
+                <label class="k-label">Textbox label</label>
             </span>
         </div>
-        <div>
-            <span class="k-floating-label-container k-textarea-container k-state-empty">
-                <textarea is="Textarea"></textarea>
-                <label class="k-label">Empty</label>
-            </span>
-        </div>
-        <div class="k-rtl">
+        <div dir="rtl">
             <span class="k-floating-label-container k-state-empty">
                 <input is="Textbox" />
-                <label class="k-label">Empty</label>
-            </span>
-        </div>
-        <div class="k-rtl">
-            <span class="k-floating-label-container k-textarea-container k-state-empty">
-                <textarea is="Textarea"></textarea>
-                <label class="k-label">Empty</label>
-            </span>
-        </div>
-
-        <!-- Hover -->
-        <div>
-            <span class="k-floating-label-container k-state-empty k-state-hover">
-                <input is="Textbox" />
-                <label class="k-label">Hover</label>
+                <label class="k-label">Textbox label</label>
             </span>
         </div>
         <div>
-            <span class="k-floating-label-container k-textarea-container k-state-empty k-state-hover">
-                <textarea is="Textarea"></textarea>
-                <label class="k-label">Hover</label>
+            <span class="k-floating-label-container k-state-empty">
+                <input is="Combobox" />
+                <label class="k-label">Combobox label</label>
             </span>
         </div>
-        <div class="k-rtl">
-            <span class="k-floating-label-container k-state-empty k-state-hover">
-                <input is="Textbox" />
-                <label class="k-label">Hover</label>
-            </span>
-        </div>
-        <div class="k-rtl">
-            <span class="k-floating-label-container k-textarea-container k-state-empty k-state-hover">
-                <textarea is="Textarea"></textarea>
-                <label class="k-label">Hover</label>
+        <div dir="rtl">
+            <span class="k-floating-label-container k-state-empty">
+                <input is="Combobox" />
+                <label class="k-label">Combobox label</label>
             </span>
         </div>
 
-        <!-- Focus -->
+        <!-- focus -->
         <div>
             <span class="k-floating-label-container k-state-focused">
-                <input is="Textbox" value="Focus" focus />
-                <label class="k-label">Focus</label>
+                <input is="Textbox" focus />
+                <label class="k-label">Textbox label</label>
             </span>
         </div>
-        <div>
-            <span class="k-floating-label-container k-textarea-container k-state-focused">
-                <textarea is="Textarea" value="Focus" focus></textarea>
-                <label class="k-label">Focus</label>
-            </span>
-        </div>
-        <div class="k-rtl">
+        <div dir="rtl">
             <span class="k-floating-label-container k-state-focused">
-                <input is="Textbox" value="Focus" focus />
-                <label class="k-label">Focus</label>
-            </span>
-        </div>
-        <div class="k-rtl">
-            <span class="k-floating-label-container k-textarea-container k-state-focused">
-                <textarea is="Textarea" value="Focus" focus></textarea>
-                <label class="k-label">Focus</label>
-            </span>
-        </div>
-
-        <!-- Disabled -->
-            <div>
-                <span class="k-floating-label-container k-state-disabled">
-                    <input is="Textbox" value="Disabled" disabled />
-                    <label class="k-label">Disabled</label>
-                </span>
-            </div>
-        <div>
-            <span class="k-floating-label-container k-textarea-container k-state-disabled">
-                <textarea is="Textarea" value="Disabled" disabled></textarea>
-                <label class="k-label">Disabled</label>
-            </span>
-        </div>
-        <div class="k-rtl">
-            <span class="k-floating-label-container k-state-disabled">
-                <input is="Textbox" value="Disabled" disabled />
-                <label class="k-label">Disabled</label>
-            </span>
-        </div>
-        <div class="k-rtl">
-            <span class="k-floating-label-container k-textarea-container k-state-disabled">
-                <textarea is="Textarea" value="Disabled" disabled></textarea>
-                <label class="k-label">Disabled</label>
-            </span>
-        </div>
-
-        <!-- Invalid -->
-        <div>
-            <span class="k-floating-label-container k-state-invalid">
-                <input is="Textbox" value="Invalid" invalid />
-                <label class="k-label">Invalid</label>
+                <input is="Textbox" focus />
+                <label class="k-label">Textbox label</label>
             </span>
         </div>
         <div>
-            <span class="k-floating-label-container k-textarea-container k-state-invalid">
-                <textarea is="Textarea" value="Invalid" invalid></textarea>
-                <label class="k-label">Invalid</label>
+            <span class="k-floating-label-container k-state-focus">
+                <input is="Combobox" />
+                <label class="k-label">Combobox label</label>
             </span>
         </div>
-        <div class="k-rtl">
-            <span class="k-floating-label-container k-state-invalid">
-                <input is="Textbox" value="Invalid" invalid />
-                <label class="k-label">Invalid</label>
-            </span>
-        </div>
-        <div class="k-rtl">
-            <span class="k-floating-label-container k-textarea-container k-state-invalid">
-                <textarea is="Textarea" value="Invalid" invalid></textarea>
-                <label class="k-label">Invalid</label>
+        <div dir="rtl">
+            <span class="k-floating-label-container k-state-focus">
+                <input is="Combobox" />
+                <label class="k-label">Combobox label</label>
             </span>
         </div>
 
-        <!-- NG Invalid -->
+        <!-- value -->
         <div>
-            <span class="k-floating-label-container ng-invalid ng-touched">
-                <input is="Textbox" value="Invalid" invalid />
-                <label class="k-label">NG Invalid</label>
+            <span class="k-floating-label-container">
+                <input is="Textbox" value="Textbox value" />
+                <label class="k-label">Textbox label</label>
+            </span>
+        </div>
+        <div dir="rtl">
+            <span class="k-floating-label-container">
+                <input is="Textbox" value="Textbox value" />
+                <label class="k-label">Textbox label</label>
             </span>
         </div>
         <div>
-            <span class="k-floating-label-container k-textarea-container ng-invalid ng-touched">
-                <textarea is="Textarea" value="Invalid" invalid></textarea>
-                <label class="k-label">NG Invalid</label>
+            <span class="k-floating-label-container">
+                <input is="Combobox" value="Combobox value" />
+                <label class="k-label">Combobox label</label>
             </span>
         </div>
-        <div class="k-rtl">
-            <span class="k-floating-label-container ng-invalid ng-touched">
-                <input is="Textbox" value="Invalid" invalid />
-                <label class="k-label">NG Invalid</label>
+        <div dir="rtl">
+            <span class="k-floating-label-container">
+                <input is="Combobox" value="Combobox value" />
+                <label class="k-label">Combobox label</label>
             </span>
         </div>
-        <div class="k-rtl">
-            <span class="k-floating-label-container k-textarea-container ng-invalid ng-touched">
-                <textarea is="Textarea" value="Invalid" invalid></textarea>
-                <label class="k-label">NG Invalid</label>
-            </span>
-        </div>
-
-
-        <!-- Parent font-size: 50px -->
-        <div class="test-font-size">
-            <span class="k-floating-label-container k-state-empty">
-                <input is="Textbox" />
-                <label class="k-label">Parent font-size: 50px</label>
-            </span>
-        </div>
-        <div class="test-font-size">
-            <span class="k-floating-label-container k-textarea-container k-state-empty">
-                <textarea is="Textarea"></textarea>
-                <label class="k-label">Parent font-size: 50px</label>
-            </span>
-        </div>
-        <div class="test-font-size k-rtl">
-            <span class="k-floating-label-container k-state-empty">
-                <input is="Textbox" />
-                <label class="k-label">Parent font-size: 50px</label>
-            </span>
-        </div>
-        <div class="test-font-size k-rtl">
-            <span class="k-floating-label-container k-textarea-container k-state-empty">
-                <textarea is="Textarea"></textarea>
-                <label class="k-label">Parent font-size: 50px</label>
-            </span>
-        </div>
-
-
-
 
     </div>
 

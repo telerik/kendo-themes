@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en" class="k-no-animations">
 <head>
-    <title>Textarea</title>
+    <title>Masked textbox</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
     <link rel="stylesheet" href="../../assets/styles.css" />
@@ -12,7 +12,7 @@
         #test-area {
             max-width: 660px;
         }
-        .k-textarea {
+        .k-maskedtextbox {
             width: 100%;
         }
     </style>
@@ -21,63 +21,63 @@
 
     <div id="test-area" class="k-d-grid k-grid-cols-2">
 
-        <span>Textarea</span>
-        <span>Textarea RTL</span>
+        <span>Masked textbox</span>
+        <span>Masked textbox RTL</span>
 
         <!-- empty -->
         <div>
-            <textarea is="Textarea" placeholder="Textarea..."></textarea>
+            <input is="MaskedTextbox" placeholder="(___) ___-__-__-__" />
         </div>
         <div dir="rtl">
-            <textarea is="Textarea" placeholder="Textarea..."></textarea>
+            <input is="MaskedTextbox" placeholder="(___) ___-__-__-__" />
         </div>
 
         <!-- normal -->
         <div>
-            <textarea is="Textarea" value="Normal"></textarea>
+            <input is="MaskedTextbox" value="Normal" />
         </div>
         <div dir="rtl">
-            <textarea is="Textarea" value="Normal"></textarea>
+            <input is="MaskedTextbox" value="Normal" />
         </div>
 
         <!-- hover -->
         <div>
-            <textarea is="Textarea" value="Hover" hover></textarea>
+            <input is="MaskedTextbox" value="Hover" hover />
         </div>
         <div dir="rtl">
-            <textarea is="Textarea" value="Hover" hover></textarea>
+            <input is="MaskedTextbox" value="Hover" hover />
         </div>
 
         <!-- focus -->
         <div>
-            <textarea is="Textarea" value="Focus" focus></textarea>
+            <input is="MaskedTextbox" value="Focus" focus />
         </div>
         <div dir="rtl">
-            <textarea is="Textarea" value="Focus" focus></textarea>
+            <input is="MaskedTextbox" value="Focus" focus />
         </div>
 
         <!-- disabled -->
         <div>
-            <textarea is="Textarea" value="Disabled" disabled></textarea>
+            <input is="MaskedTextbox" value="Disabled" disabled />
         </div>
         <div dir="rtl">
-            <textarea is="Textarea" value="Disabled" disabled></textarea>
+            <input is="MaskedTextbox" value="Disabled" disabled />
         </div>
 
         <!-- invalid -->
         <div>
-            <textarea is="Textarea" value="Invalid" invalid></textarea>
+            <input is="MaskedTextbox" value="Invalid" invalid />
         </div>
         <div dir="rtl">
-            <textarea is="Textarea" value="Invalid" invalid></textarea>
+            <input is="MaskedTextbox" value="Invalid" invalid />
         </div>
 
         <!-- invalid focus -->
         <div>
-            <textarea is="Textarea" value="Invalid focus" invalid focus></textarea>
+            <input is="MaskedTextbox" value="Invalid focus" invalid focus />
         </div>
         <div dir="rtl">
-            <textarea is="Textarea" value="Invalid focus" invalid focus></textarea>
+            <input is="MaskedTextbox" value="Invalid focus" invalid focus />
         </div>
 
     </div>
