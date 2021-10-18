@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.42.0](https://github.com/telerik/kendo-themes/compare/v4.41.2...v4.42.0) (2021-10-18)
+
+
+### Bug Fixes
+
+* **button:** update button dependencies to include typography ([5bff00a](https://github.com/telerik/kendo-themes/commit/5bff00ab89eb309a128f82ad74bf67256b4582b7))
+* **captcha:** import missing dependencies ([0c79daa](https://github.com/telerik/kendo-themes/commit/0c79daa03ef7bc68c320962e19be604384723e9a))
+* **orgchart:** import missing dependencies ([bc8d649](https://github.com/telerik/kendo-themes/commit/bc8d649a36a42b55413ba5de9ec2a8c1c5011068))
+* **swatches:** classic green swatch does not have correct base theme ([1197d6f](https://github.com/telerik/kendo-themes/commit/1197d6fef9f55d1c47d5279919152b5a3d235dfd))
+
+
+### Features
+
+* **chip:** update component to match latest design ([5b63b95](https://github.com/telerik/kendo-themes/commit/5b63b95ce548cfd1e803220896444cb6261a9c79))
+* **colorpicker:** update component rendering and styles to match latest design ([a0bb137](https://github.com/telerik/kendo-themes/commit/a0bb13754a341bcbdae1604d3c07ee9575dac9d8))
+* **fab:** update styles to match the latest design ([31c1615](https://github.com/telerik/kendo-themes/commit/31c16158c6341bf748eb93e87f13d142acb3ec26))
+* **utils:** extract theme color utility classes into utils module ([e1b51df](https://github.com/telerik/kendo-themes/commit/e1b51df9857221e0bf40a23d13be7416b4e3a425))
+
+
+
+
+
 # [4.42.0-dev.0](https://github.com/telerik/kendo-themes/compare/v4.41.2...v4.42.0-dev.0) (2021-10-18)
 
 

@@ -3,6 +3,36 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.42.0](https://github.com/telerik/kendo-themes/compare/v4.41.2...v4.42.0) (2021-10-18)
+
+
+### Bug Fixes
+
+* **actions:** add styles for vertical orientation of actions ([9747e10](https://github.com/telerik/kendo-themes/commit/9747e100360d009ba10775f265a5c2546ce6db78))
+* **button:** update button dependencies to include typography ([5bff00a](https://github.com/telerik/kendo-themes/commit/5bff00ab89eb309a128f82ad74bf67256b4582b7))
+* **captcha:** import missing dependencies ([0c79daa](https://github.com/telerik/kendo-themes/commit/0c79daa03ef7bc68c320962e19be604384723e9a))
+* **grid:** replace hardcoded vertical border width ([e4a3c13](https://github.com/telerik/kendo-themes/commit/e4a3c13c4ac2f62ebd9026b35bbfba57f2fdb1a0))
+* **map:** override icon button styles in navigator ([9e88414](https://github.com/telerik/kendo-themes/commit/9e8841417602912e21c58e3ee6274adc010a8e2a))
+* **orgchart:** import missing dependencies ([bc8d649](https://github.com/telerik/kendo-themes/commit/bc8d649a36a42b55413ba5de9ec2a8c1c5011068))
+* **pivotgrid:** use standard flex syntax ([62e9656](https://github.com/telerik/kendo-themes/commit/62e9656b7cfba0ee3630093a48696b18282b1b91))
+* **scheduler:** react scheduler timeline view cells doesn't render correctly ([aebb314](https://github.com/telerik/kendo-themes/commit/aebb314baa918d4a1ff8dbb4c8ae1c98accff81c))
+* **spreadsheet:** use standard flex syntax ([23b16e7](https://github.com/telerik/kendo-themes/commit/23b16e71ef3856f46e91f70bc7165a381f850480))
+
+
+### Features
+
+* **chip:** update component to match latest design ([5b63b95](https://github.com/telerik/kendo-themes/commit/5b63b95ce548cfd1e803220896444cb6261a9c79))
+* **colorpicker:** update component rendering and styles to match latest design ([a0bb137](https://github.com/telerik/kendo-themes/commit/a0bb13754a341bcbdae1604d3c07ee9575dac9d8))
+* **editor:** implement resizable class ([cf1ac55](https://github.com/telerik/kendo-themes/commit/cf1ac55a8416727bbe9ebac86f680c46df7fc063))
+* **fab:** update styles to match the latest design ([31c1615](https://github.com/telerik/kendo-themes/commit/31c16158c6341bf748eb93e87f13d142acb3ec26))
+* **utils:** add gap utility classes ([8a1f8e0](https://github.com/telerik/kendo-themes/commit/8a1f8e0d659f500584903a5c4793330ae282c181))
+* **utils:** add more border-radius utility classes ([701056f](https://github.com/telerik/kendo-themes/commit/701056f5481690c9c9e978b1d6a92b6f75a20ed9))
+* **utils:** extract theme color utility classes into utils module ([e1b51df](https://github.com/telerik/kendo-themes/commit/e1b51df9857221e0bf40a23d13be7416b4e3a425))
+
+
+
+
+
 # [4.42.0-dev.0](https://github.com/telerik/kendo-themes/compare/v4.41.2...v4.42.0-dev.0) (2021-10-18)
 
 

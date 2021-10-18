@@ -3,6 +3,69 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.42.0](https://github.com/telerik/kendo-themes/compare/v4.41.2...v4.42.0) (2021-10-18)
+
+
+### Bug Fixes
+
+* **actions:** add styles for vertical orientation of actions ([9747e10](https://github.com/telerik/kendo-themes/commit/9747e100360d009ba10775f265a5c2546ce6db78))
+* **button:** update button dependencies to include typography ([5bff00a](https://github.com/telerik/kendo-themes/commit/5bff00ab89eb309a128f82ad74bf67256b4582b7))
+* **captcha:** import missing dependencies ([0c79daa](https://github.com/telerik/kendo-themes/commit/0c79daa03ef7bc68c320962e19be604384723e9a))
+* **grid:** replace hardcoded vertical border width ([e4a3c13](https://github.com/telerik/kendo-themes/commit/e4a3c13c4ac2f62ebd9026b35bbfba57f2fdb1a0))
+* **html:** add global default props for all components ([2202b43](https://github.com/telerik/kendo-themes/commit/2202b4388f9281bddec40294e300d929e9182706))
+* **html:** expose init function for manually triggering init ([5974061](https://github.com/telerik/kendo-themes/commit/5974061f8b512d59daf0f9b7a45ea39b968cf14b))
+* **html:** handle global boolean attributes without value ([28bf2d2](https://github.com/telerik/kendo-themes/commit/28bf2d2a512a9190bd978711500f43489f756c9f))
+* **html:** handle html attributes in button html helper ([c3f4a7b](https://github.com/telerik/kendo-themes/commit/c3f4a7b5d18511f199ca59acfad154289191b4ee))
+* **html:** handle native elements in renderDOM more gracefully ([93f1ed4](https://github.com/telerik/kendo-themes/commit/93f1ed4256bd189170dd2c1edcb381389ec9f713))
+* **html:** make className global default property ([a69f83a](https://github.com/telerik/kendo-themes/commit/a69f83a4d455db7f7ba5fbedc84b31aaf16c026b))
+* **html:** set certain attributes in a different way ([0636c8e](https://github.com/telerik/kendo-themes/commit/0636c8ee0b9621183ce87c4b8a86d0fe038134d9))
+* **html:** use element.replaceWith instead of element.outerHTML ([e3864e4](https://github.com/telerik/kendo-themes/commit/e3864e4a5d92453f89ed99857d2277b34e56c4d9))
+* **html:** use InputSuffixStatic for input suffixes ([d416083](https://github.com/telerik/kendo-themes/commit/d416083c35170464d04a0f66deb44a0271fca867))
+* **map:** override icon button styles in navigator ([9e88414](https://github.com/telerik/kendo-themes/commit/9e8841417602912e21c58e3ee6274adc010a8e2a))
+* **orgchart:** import missing dependencies ([bc8d649](https://github.com/telerik/kendo-themes/commit/bc8d649a36a42b55413ba5de9ec2a8c1c5011068))
+* **pivotgrid:** use standard flex syntax ([62e9656](https://github.com/telerik/kendo-themes/commit/62e9656b7cfba0ee3630093a48696b18282b1b91))
+* **scheduler:** react scheduler timeline view cells doesn't render correctly ([aebb314](https://github.com/telerik/kendo-themes/commit/aebb314baa918d4a1ff8dbb4c8ae1c98accff81c))
+* **spreadsheet:** use standard flex syntax ([23b16e7](https://github.com/telerik/kendo-themes/commit/23b16e71ef3856f46e91f70bc7165a381f850480))
+* **swatches:** classic green swatch does not have correct base theme ([1197d6f](https://github.com/telerik/kendo-themes/commit/1197d6fef9f55d1c47d5279919152b5a3d235dfd))
+* **toolbar:** apply correct color to disabled primary button ([9551ebf](https://github.com/telerik/kendo-themes/commit/9551ebfd9847473fb23d660be751c38da5330a73))
+
+
+### Features
+
+* add utils modules to nouvelle (only grid and flex) ([6d90e6f](https://github.com/telerik/kendo-themes/commit/6d90e6f55e3916b7c682a680cb72080a89f557af))
+* **autocomplete:** use :where styles for autocomplete ([780f841](https://github.com/telerik/kendo-themes/commit/780f8413c0632698bb94486cccd5ec00e6e417cc))
+* **button:** use :where styles for button ([176f2b2](https://github.com/telerik/kendo-themes/commit/176f2b27e62fa06f898aab6565c77b3e6c26ae79))
+* **chip:** update component to match latest design ([5b63b95](https://github.com/telerik/kendo-themes/commit/5b63b95ce548cfd1e803220896444cb6261a9c79))
+* **colorpicker:** update component rendering and styles to match latest design ([a0bb137](https://github.com/telerik/kendo-themes/commit/a0bb13754a341bcbdae1604d3c07ee9575dac9d8))
+* **combobox:** use :where styles for combobox ([84a18e8](https://github.com/telerik/kendo-themes/commit/84a18e857d143b07492201359d5e8e1e8c9d1153))
+* convert nouvelle to new module system ([c7d8b02](https://github.com/telerik/kendo-themes/commit/c7d8b02bb4e950e2d82588bbe0e62fe2101f305d))
+* **dropdownlist:** use :where styles for dropdownlist ([dace4cc](https://github.com/telerik/kendo-themes/commit/dace4cc2230e95b304bfc6f0eae9076e5b5e59c2))
+* **editor:** implement resizable class ([cf1ac55](https://github.com/telerik/kendo-themes/commit/cf1ac55a8416727bbe9ebac86f680c46df7fc063))
+* **fab:** update styles to match the latest design ([31c1615](https://github.com/telerik/kendo-themes/commit/31c16158c6341bf748eb93e87f13d142acb3ec26))
+* **html:** add html helper for autocomplete ([6aff19e](https://github.com/telerik/kendo-themes/commit/6aff19e5f14ea821dadb175ed76c5bd8de567c00))
+* **html:** add html helper for checkbox ([1afeeb3](https://github.com/telerik/kendo-themes/commit/1afeeb3e333d6211c819cc2b75b83eb5ee72d03b))
+* **html:** add html helper for colorpicker ([678746d](https://github.com/telerik/kendo-themes/commit/678746d257a8a92dc707773d76251ee4c0302f1e))
+* **html:** add html helper for combobox ([3fa76fd](https://github.com/telerik/kendo-themes/commit/3fa76fd7704205ca063919b8cc1a5293a4c5f198))
+* **html:** add html helper for dropdownlist ([6ad5907](https://github.com/telerik/kendo-themes/commit/6ad5907d413c8be684b1eba35820831388703f01))
+* **html:** add html helper for radiobutton ([5610ac1](https://github.com/telerik/kendo-themes/commit/5610ac1b87c3d912a4adb0c91dfaed197eb9f748))
+* **html:** add html helper for searchbox ([3c22499](https://github.com/telerik/kendo-themes/commit/3c22499194aa32809079a42549d18ee5a8884d84))
+* **html:** add html helper for switch ([2a061f9](https://github.com/telerik/kendo-themes/commit/2a061f95becd70e490f5a62e036f7688c54e4172))
+* **html:** add html helpers for button ([7d8b8e8](https://github.com/telerik/kendo-themes/commit/7d8b8e84243559219fecb21921a925f87efdb5bf))
+* **html:** add html helpers for masked textbox ([c8d5021](https://github.com/telerik/kendo-themes/commit/c8d50212ce46963b335b9dc40ee231ddcbe930a0))
+* **html:** add html helpers for numeric ([dc54a15](https://github.com/telerik/kendo-themes/commit/dc54a15afbc247dcad2f8b298d491e7cd54e4056))
+* **html:** add html helpers for textarea ([d7f5e5d](https://github.com/telerik/kendo-themes/commit/d7f5e5d9f268bd8c9bee81afb728bf9d47a75d94))
+* **html:** add html helpers for Textbox ([3ae05f4](https://github.com/telerik/kendo-themes/commit/3ae05f4546c98e4d41ba4a06a79ef343745109fd))
+* introduce new module system for nouvelle theme ([914f3b4](https://github.com/telerik/kendo-themes/commit/914f3b4cccb08968fe816002d6ce5b2ca6d79ee5))
+* **textbox:** extract textbox as a separate module ([6c98361](https://github.com/telerik/kendo-themes/commit/6c983611935750e4356a03b1f521a4d03807f637))
+* use box-sizing border-box for all elements ([0b14ce9](https://github.com/telerik/kendo-themes/commit/0b14ce9206b0c8c46dd87431d493a1111c400b1b))
+* **utils:** add gap utility classes ([8a1f8e0](https://github.com/telerik/kendo-themes/commit/8a1f8e0d659f500584903a5c4793330ae282c181))
+* **utils:** add more border-radius utility classes ([701056f](https://github.com/telerik/kendo-themes/commit/701056f5481690c9c9e978b1d6a92b6f75a20ed9))
+* **utils:** extract theme color utility classes into utils module ([e1b51df](https://github.com/telerik/kendo-themes/commit/e1b51df9857221e0bf40a23d13be7416b4e3a425))
+
+
+
+
+
 # [4.42.0-dev.0](https://github.com/telerik/kendo-themes/compare/v4.41.2...v4.42.0-dev.0) (2021-10-18)
 
 
