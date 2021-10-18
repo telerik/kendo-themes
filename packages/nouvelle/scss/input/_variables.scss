@@ -1,48 +1,48 @@
-$input-padding-x: map-get( $spacing, 2 ) !default;
-$input-padding-y: map-get( $spacing, 1 ) !default;
+$kendo-input-padding-x: map-get( $spacing, 2 ) !default;
+$kendo-input-padding-y: map-get( $spacing, 1 ) !default;
 
-$input-border-width: 1px !default;
-$input-border-style: solid !default;
+$kendo-input-border-width: 1px !default;
+$kendo-input-border-style: solid !default;
 
-$input-border-radius: map-get( $spacing, 1 ) !default;
+$kendo-input-border-radius: map-get( $spacing, 1 ) !default;
 
-$input-font-family: $font-family !default;
-$input-font-size: $font-size !default;
-$input-line-height: $line-height !default;
+$kendo-input-font-family: $font-family !default;
+$kendo-input-font-size: $font-size !default;
+$kendo-input-line-height: $line-height !default;
 
 
 /// The background of the input.
 /// @group input
-$input-bg: $component-bg !default;
+$kendo-input-bg: $component-bg !default;
 /// The text color of the input.
 /// @group input
-$input-text: $component-text !default;
+$kendo-input-text: $component-text !default;
 /// The border color of the input.
 /// @group input
-$input-border: $component-border !default;
-$input-shadow: null !default;
+$kendo-input-border: $component-border !default;
+$kendo-input-shadow: null !default;
 
 /// The background of hovered input.
 /// @group input
-$input-hover-bg: $input-bg !default;
+$kendo-input-hover-bg: $kendo-input-bg !default;
 /// The text color of hovered input.
 /// @group input
-$input-hover-text: $input-text !default;
+$kendo-input-hover-text: $kendo-input-text !default;
 /// The border color of hovered input.
 /// @group input
-$input-hover-border: try-shade( $input-border, 1 ) !default;
-$input-hover-shadow: null !default;
+$kendo-input-hover-border: try-shade( $kendo-input-border, 1 ) !default;
+$kendo-input-hover-shadow: null !default;
 
 /// The background color of focus input.
 /// @group input
-$input-focus-bg: $input-hover-bg !default;
+$kendo-input-focus-bg: $kendo-input-hover-bg !default;
 /// The text color of focus input.
 /// @group input
-$input-focus-text: $input-hover-text !default;
+$kendo-input-focus-text: $kendo-input-hover-text !default;
 /// The border color of focus input.
 /// @group input
-$input-focus-border: $input-hover-border !default;
-$input-focus-shadow: 0 0 0 2px rgba( if( $dark-theme, $white, $black), .08 ) !default;
+$kendo-input-focus-border: $kendo-input-hover-border !default;
+$kendo-input-focus-shadow: 0 0 0 2px rgba( if( $dark-theme, $white, $black), .08 ) !default;
 
 
 // Picker
@@ -50,51 +50,48 @@ $picker-select-width: null !default;
 $picker-select-border-width: 0px !default;
 
 
-// Spinner
-$spinner-width: null !default;
-$spinner-icon-offset: 2px !default;
+// Input actions
+$kendo-input-button-width: null !default;
+$kendo-input-spinner-width: null !default;
 
 
 // Input icon
-$input-icon-width: $icon-size !default;
-$input-icon-height: $icon-size !default;
-
-$input-icon-text: null !default;
-$input-icon-opacity: null !default;
+$kendo-input-icon-width: $icon-size !default;
+$kendo-input-icon-height: $icon-size !default;
 
 
 // Input separator
-$input-separator-color: $input-text !default;
-$input-separator-opacity: .5 !default;
+$kendo-input-separator-color: $kendo-input-text !default;
+$kendo-input-separator-opacity: .5 !default;
 
 
 
 
 // Expose
 :root {
-    --kendo-input-padding-x: #{$input-padding-x};
-    --kendo-input-padding-y: #{$input-padding-y};
-    --kendo-input-border-width: #{$input-border-width};
-    --kendo-input-border-style: #{$input-border-style};
+    --kendo-input-padding-x: #{$kendo-input-padding-x};
+    --kendo-input-padding-y: #{$kendo-input-padding-y};
+    --kendo-input-border-width: #{$kendo-input-border-width};
+    --kendo-input-border-style: #{$kendo-input-border-style};
 
-    --kendo-input-border-radius: #{$input-border-radius};
+    --kendo-input-border-radius: #{$kendo-input-border-radius};
 
-    --kendo-input-font-family: #{$input-font-family};
-    --kendo-input-font-size: #{$input-font-size};
-    --kendo-input-line-height: #{$input-line-height};
+    --kendo-input-font-family: #{$kendo-input-font-family};
+    --kendo-input-font-size: #{$kendo-input-font-size};
+    --kendo-input-line-height: #{$kendo-input-line-height};
 
-    --kendo-input-bg: #{$input-bg};
-    --kendo-input-text: #{$input-text};
-    --kendo-input-border: #{$input-border};
-    --kendo-input-shadow: #{$input-shadow};
+    --kendo-input-bg: #{$kendo-input-bg};
+    --kendo-input-text: #{$kendo-input-text};
+    --kendo-input-border: #{$kendo-input-border};
+    --kendo-input-shadow: #{$kendo-input-shadow};
 
-    --kendo-input-hover-bg: #{$input-hover-bg};
-    --kendo-input-hover-text: #{$input-hover-text};
-    --kendo-input-hover-border: #{$input-hover-border};
-    --kendo-input-hover-shadow: #{$input-hover-shadow};
+    --kendo-input-hover-bg: #{$kendo-input-hover-bg};
+    --kendo-input-hover-text: #{$kendo-input-hover-text};
+    --kendo-input-hover-border: #{$kendo-input-hover-border};
+    --kendo-input-hover-shadow: #{$kendo-input-hover-shadow};
 
-    --kendo-input-focus-bg: #{$input-focus-bg};
-    --kendo-input-focus-text: #{$input-focus-text};
-    --kendo-input-focus-border: #{$input-focus-border};
-    --kendo-input-focus-shadow: #{$input-focus-shadow};
+    --kendo-input-focus-bg: #{$kendo-input-focus-bg};
+    --kendo-input-focus-text: #{$kendo-input-focus-text};
+    --kendo-input-focus-border: #{$kendo-input-focus-border};
+    --kendo-input-focus-shadow: #{$kendo-input-focus-shadow};
 }

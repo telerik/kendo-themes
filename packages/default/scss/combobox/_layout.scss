@@ -1,14 +1,13 @@
 @include exports("combobox/layout") {
 
     .k-combobox {
-        width: $input-default-width;
         border-width: 0;
         box-sizing: border-box;
         outline: 0;
         background: none;
-        font-family: $input-font-family;
-        font-size: $input-font-size;
-        line-height: $input-line-height;
+        font-family: $kendo-input-font-family;
+        font-size: $kendo-input-font-size;
+        line-height: $kendo-input-line-height;
         text-align: left;
         white-space: nowrap;
         display: inline-flex;
@@ -18,7 +17,7 @@
         -webkit-tap-highlight-color: $rgba-transparent;
 
         .k-dropdown-wrap {
-            @include border-radius( $input-border-radius );
+            @include border-radius( $kendo-input-border-radius );
             padding: 0;
             width: 100%;
             border-width: 1px;
@@ -38,7 +37,7 @@
 
         // Select
         .k-select {
-            @include border-right-radius-only( $input-border-radius );
+            @include border-right-radius-only( $kendo-input-border-radius );
             padding: $combobox-select-padding-y $combobox-select-padding-x;
             width: if( $use-picker-select-width, $combobox-select-width, null );
             border-width: 0 0 0 $combobox-select-border-width;
@@ -57,7 +56,7 @@
             text-align: right;
 
             .k-select {
-                @include border-left-radius-only( $input-border-radius );
+                @include border-left-radius-only( $kendo-input-border-radius );
                 border-width: 0 $combobox-select-border-width 0 0;
             }
         }
