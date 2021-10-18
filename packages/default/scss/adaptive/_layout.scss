@@ -423,14 +423,6 @@
 
         // Filter menu
         .k-filter-menu {
-
-            .k-space-right {
-                margin: .5em 10px;
-                width: auto;
-                display: flex;
-                align-items: center;
-            }
-
             .k-filter-tools {
                 margin: 1em;
                 display: flex;
@@ -500,14 +492,6 @@
 
                 > .k-header {
                     flex-direction: row-reverse;
-                }
-            }
-
-            .k-filter-menu {
-
-                .k-space-right > .k-i-zoom {
-                    left: 15px;
-                    right: auto;
                 }
             }
 
