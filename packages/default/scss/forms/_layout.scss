@@ -161,10 +161,6 @@
             display: inline-flex;
             width: 100%;
         }
-
-        .k-editor .k-dropdown {
-            width: $input-default-width;
-        }
     }
 
     // Form Buttons Container
@@ -297,7 +293,7 @@
                 width: $inline-form-element-width;
                 text-align: right;
                 line-height: $line-height;
-                padding: calc( #{$padding-y} + #{$input-border-width} ) 0;
+                padding: calc( #{$padding-y} + #{$kendo-input-border-width} ) 0;
                 padding-right: $padding-x-lg;
                 align-self: center;
             }
@@ -350,7 +346,7 @@
 
     .k-edit-label {
         margin: 0 0 $spacer-y 0;
-        padding: calc( #{$input-padding-y} + #{$input-border-width} ) 0;
+        padding: calc( #{$kendo-input-padding-y} + #{$kendo-input-border-width} ) 0;
         width: 30%;
         line-height: $form-line-height;
         text-align: right;
@@ -365,7 +361,7 @@
         position: relative;
 
         &.k-no-editor {
-            padding: calc( #{$input-padding-y} + #{$input-border-width} ) 0;
+            padding: calc( #{$kendo-input-padding-y} + #{$kendo-input-border-width} ) 0;
         }
     }
 
