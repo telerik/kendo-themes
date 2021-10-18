@@ -2,15 +2,15 @@
 
     // Masked textbox
     .k-maskedtextbox {
-        @include border-radius( $input-border-radius );
-        width: $input-default-width;
-        border-width: $input-border-width;
+        @include border-radius( $kendo-input-border-radius );
+        width: $kendo-input-default-width;
+        border-width: $kendo-input-border-width;
         border-style: solid;
         box-sizing: border-box;
         outline: 0;
-        font-family: $input-font-family;
-        font-size: $input-font-size;
-        line-height: $input-line-height;
+        font-family: $kendo-input-font-family;
+        font-size: $kendo-input-font-size;
+        line-height: $kendo-input-line-height;
         text-align: start;
         white-space: nowrap;
         display: inline-flex;
@@ -29,8 +29,8 @@
 
         // Loading icon
         .k-i-loading {
-            width: $input-icon-width;
-            height: $input-icon-height;
+            // width: $kendo-input-icon-width;
+            // height: $kendo-input-icon-height;
         }
     }
 

@@ -149,8 +149,8 @@
         }
 
         .k-spreadsheet-formula-input {
-            padding: $input-padding-y $input-padding-x;
-            line-height: $input-line-height;
+            padding: $kendo-input-padding-y $kendo-input-padding-x;
+            line-height: $kendo-input-line-height;
 
             &.k-spreadsheet-array-formula {
                 &::before {
