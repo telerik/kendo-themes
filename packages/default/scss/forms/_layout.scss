@@ -146,7 +146,6 @@
         }
 
 
-        .k-textarea,
         .k-autocomplete,
         .k-combobox,
         .k-dropdown,
@@ -366,8 +365,7 @@
 
     .k-edit-field {
 
-        > .k-widget,
-        > .k-textarea {
+        > .k-widget {
             width: 100%;
             box-sizing: border-box;
         }
