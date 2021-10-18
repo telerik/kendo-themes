@@ -1,28 +1,43 @@
-@include exports("input/theme") {
+@include exports( "input/theme" ) {
 
-    .k-input-prefix,
-    .k-input-suffix {
+    .k-input {
+        @include fill(
+            $kendo-input-text,
+            $kendo-input-bg,
+            $kendo-input-border
+        );
 
-        > .k-icon {
-            color: $input-icon-text;
-            opacity: $input-icon-opacity;
+        // Hover
+        &:hover,
+        &.k-hover {
+            @include fill(
+                $kendo-input-hover-text,
+                $kendo-input-hover-bg,
+                $kendo-input-hover-border
+            );
         }
 
-        .k-clear-value {
-            color: inherit;
+        // Focus
+        &:focus,
+        &.k-focus {
+            @include fill (
+                $kendo-input-focus-text,
+                $kendo-input-focus-bg,
+                $kendo-input-focus-border
+            );
+            @include box-shadow( $kendo-input-focus-shadow );
         }
 
-        > .k-clear-value {
-            &.k-state-focused::after,
-            &:focus::after {
-                background-color: $input-clear-button-focused-background;
-                opacity: $input-clear-button-focused-opacity;
+        // Invalid
+        &:invalid,
+        &.k-invalid {
+            @include fill( $border: $invalid-border );
+
+            &:focus,
+            &.k-focus {
+                @include box-shadow($invalid-shadow);
             }
         }
-    }
 
-    .k-input-separator {
-        border-color: $input-separator-color;
-        opacity: $input-separator-opacity;
     }
 }
