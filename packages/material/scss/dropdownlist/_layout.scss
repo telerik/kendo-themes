@@ -4,7 +4,7 @@
 
     .k-dropdown {
         .k-dropdown-wrap {
-            border-width: $input-border-width 0;
+            border-width: $kendo-input-border-width 0;
             border-top-color: transparent !important; // sass-lint:disable-line no-important
 
             // Disabled
@@ -18,7 +18,7 @@
 
     // Native select
     select.k-dropdown {
-        border-width: $input-border-width 0;
+        border-width: $kendo-input-border-width 0;
         border-top-color: transparent !important; // sass-lint:disable-line no-important
     }
 
