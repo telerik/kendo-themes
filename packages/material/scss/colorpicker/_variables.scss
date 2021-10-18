@@ -3,22 +3,22 @@ $colorpicker-font-family: $font-family !default;
 $colorpicker-font-size: $font-size !default;
 $colorpicker-line-height: $line-height !default;
 
-$colorpicker-bg: $input-bg !default;
-$colorpicker-text: $input-text !default;
-$colorpicker-border: $input-border !default;
+$colorpicker-bg: $kendo-input-bg !default;
+$colorpicker-text: $kendo-input-text !default;
+$colorpicker-border: $kendo-input-border !default;
 $colorpicker-gradient: null !default;
 
-$colorpicker-hovered-bg: $input-hovered-bg !default;
-$colorpicker-hovered-text: $input-hovered-text !default;
-$colorpicker-hovered-border: $input-hovered-border !default;
+$colorpicker-hovered-bg: $kendo-input-hover-bg !default;
+$colorpicker-hovered-text: $kendo-input-hover-text !default;
+$colorpicker-hovered-border: $kendo-input-hover-border !default;
 $colorpicker-hovered-gradient: null !default;
 
-$colorpicker-focused-bg: $input-focused-bg !default;
-$colorpicker-focused-text: $input-focused-text !default;
-$colorpicker-focused-border: $input-focused-border !default;
+$colorpicker-focused-bg: $kendo-input-focus-bg !default;
+$colorpicker-focused-text: $kendo-input-focus-text !default;
+$colorpicker-focused-border: $kendo-input-focus-border !default;
 $colorpicker-focused-gradient: null !default;
-$colorpicker-focused-shadow: $input-focused-shadow !default;
+$colorpicker-focused-shadow: $kendo-input-focus-shadow !default;
 
 $colorpicker-select-text: $subtle-text !default;
-$colorpicker-select-hovered-text: $input-text !default;
-$colorpicker-select-focused-text: $input-text !default;
+$colorpicker-select-hovered-text: $kendo-input-text !default;
+$colorpicker-select-focused-text: $kendo-input-text !default;

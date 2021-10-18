@@ -1,48 +1,48 @@
-$autocomplete-padding-x: $input-padding-x !default;
-$autocomplete-padding-y: $input-padding-y !default;
+$autocomplete-padding-x: $kendo-input-padding-x !default;
+$autocomplete-padding-y: $kendo-input-padding-y !default;
 
-$autocomplete-border-width: $input-border-width !default;
-$autocomplete-border-style: $input-border-style !default;
+$autocomplete-border-width: $kendo-input-border-width !default;
+$autocomplete-border-style: $kendo-input-border-style !default;
 
-$autocomplete-border-radius: $input-border-radius !default;
+$autocomplete-border-radius: $kendo-input-border-radius !default;
 
-$autocomplete-font-family: $input-font-family !default;
-$autocomplete-font-size: $input-font-size !default;
-$autocomplete-line-height: $input-line-height !default;
+$autocomplete-font-family: $kendo-input-font-family !default;
+$autocomplete-font-size: $kendo-input-font-size !default;
+$autocomplete-line-height: $kendo-input-line-height !default;
 
 
 /// The background of the autocomplete.
 /// @group autocomplete
-$autocomplete-bg: $input-bg !default;
+$autocomplete-bg: $kendo-input-bg !default;
 /// The text color of the autocomplete.
 /// @group autocomplete
-$autocomplete-text: $input-text !default;
+$autocomplete-text: $kendo-input-text !default;
 /// The border color of the autocomplete.
 /// @group autocomplete
-$autocomplete-border: $input-border !default;
-$autocomplete-shadow: $input-shadow !default;
+$autocomplete-border: $kendo-input-border !default;
+$autocomplete-shadow: $kendo-input-shadow !default;
 
 /// The background of hovered autocomplete.
 /// @group autocomplete
-$autocomplete-hover-bg: $input-hover-bg !default;
+$autocomplete-hover-bg: $kendo-input-hover-bg !default;
 /// The text color of hovered autocomplete.
 /// @group autocomplete
-$autocomplete-hover-text: $input-hover-text !default;
+$autocomplete-hover-text: $kendo-input-hover-text !default;
 /// The border color of hovered autocomplete.
 /// @group autocomplete
-$autocomplete-hover-border: $input-hover-border !default;
-$autocomplete-hover-shadow: $input-hover-shadow !default;
+$autocomplete-hover-border: $kendo-input-hover-border !default;
+$autocomplete-hover-shadow: $kendo-input-hover-shadow !default;
 
 /// The text color of focus autocomplete.
 /// @group autocomplete
-$autocomplete-focus-text: $input-focus-text !default;
+$autocomplete-focus-text: $kendo-input-focus-text !default;
 /// The background color of focus autocomplete.
 /// @group autocomplete
-$autocomplete-focus-bg: $input-focus-bg !default;
+$autocomplete-focus-bg: $kendo-input-focus-bg !default;
 /// The border color of focus autocomplete.
 /// @group autocomplete
-$autocomplete-focus-border: $input-focus-border !default;
-$autocomplete-focus-shadow: $input-focus-shadow !default;
+$autocomplete-focus-border: $kendo-input-focus-border !default;
+$autocomplete-focus-shadow: $kendo-input-focus-shadow !default;
 
 
 

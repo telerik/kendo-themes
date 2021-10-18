@@ -34,7 +34,7 @@
         }
 
         .k-edit-label {
-            padding: calc( #{$padding-y} - #{$input-border-width} ) 0;
+            padding: calc( #{$padding-y} - #{$kendo-input-border-width} ) 0;
             margin: 0 0 -.5em;
             width: auto;
             font-size: $font-size-sm;

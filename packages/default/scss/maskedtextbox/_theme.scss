@@ -3,18 +3,18 @@
     // Masked textbox
     .k-maskedtextbox {
         @include fill(
-            $input-text,
-            $input-bg,
-            $input-border
+            $kendo-input-text,
+            $kendo-input-bg,
+            $kendo-input-border
         );
 
         // Hover state
         &:hover,
         &.k-state-hover {
             @include fill(
-                $input-hovered-text,
-                $input-hovered-bg,
-                $input-hovered-border
+                $kendo-input-hover-text,
+                $kendo-input-hover-bg,
+                $kendo-input-hover-border
             );
         }
 
@@ -22,19 +22,19 @@
         &:focus,
         &.k-state-focus {
             @include fill(
-                $input-focused-text,
-                $input-focused-bg,
-                $input-focused-border
+                $kendo-input-focus-text,
+                $kendo-input-focus-bg,
+                $kendo-input-focus-border
             );
-            @include box-shadow( $input-focused-shadow );
+            @include box-shadow( $kendo-input-focus-shadow );
         }
         &:focus-within {
             @include fill(
-                $input-focused-text,
-                $input-focused-bg,
-                $input-focused-border
+                $kendo-input-focus-text,
+                $kendo-input-focus-bg,
+                $kendo-input-focus-border
             );
-            @include box-shadow( $input-focused-shadow );
+            @include box-shadow( $kendo-input-focus-shadow );
         }
 
 

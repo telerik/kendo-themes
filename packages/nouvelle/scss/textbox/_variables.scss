@@ -1,47 +1,47 @@
-$kendo-textbox-padding-x: $input-padding-x !default;
-$kendo-textbox-padding-y: $input-padding-y !default;
+$kendo-textbox-padding-x: $kendo-input-padding-x !default;
+$kendo-textbox-padding-y: $kendo-input-padding-y !default;
 
-$kendo-textbox-border-width: $input-border-width !default;
-$kendo-textbox-border-style: $input-border-style !default;
-$kendo-textbox-border-radius: $input-border-radius !default;
+$kendo-textbox-border-width: $kendo-input-border-width !default;
+$kendo-textbox-border-style: $kendo-input-border-style !default;
+$kendo-textbox-border-radius: $kendo-input-border-radius !default;
 
-$kendo-textbox-font-family: $input-font-family !default;
-$kendo-textbox-font-size: $input-font-size !default;
-$kendo-textbox-line-height: $input-line-height !default;
+$kendo-textbox-font-family: $kendo-input-font-family !default;
+$kendo-textbox-font-size: $kendo-input-font-size !default;
+$kendo-textbox-line-height: $kendo-input-line-height !default;
 
 
 /// The background of the textbox.
 /// @group textbox
-$kendo-textbox-bg: $input-bg !default;
+$kendo-textbox-bg: $kendo-input-bg !default;
 /// The text color of the textbox.
 /// @group textbox
-$kendo-textbox-text: $input-text !default;
+$kendo-textbox-text: $kendo-input-text !default;
 /// The border color of the textbox.
 /// @group textbox
-$kendo-textbox-border: $input-border !default;
-$kendo-textbox-shadow: $input-shadow !default;
+$kendo-textbox-border: $kendo-input-border !default;
+$kendo-textbox-shadow: $kendo-input-shadow !default;
 
 /// The background of hovered textbox.
 /// @group textbox
-$kendo-textbox-hover-bg: $input-hover-bg !default;
+$kendo-textbox-hover-bg: $kendo-input-hover-bg !default;
 /// The text color of hovered textbox.
 /// @group textbox
-$kendo-textbox-hover-text: $input-hover-text !default;
+$kendo-textbox-hover-text: $kendo-input-hover-text !default;
 /// The border color of hovered textbox.
 /// @group textbox
-$kendo-textbox-hover-border: $input-hover-border !default;
-$kendo-textbox-hover-shadow: $input-hover-shadow !default;
+$kendo-textbox-hover-border: $kendo-input-hover-border !default;
+$kendo-textbox-hover-shadow: $kendo-input-hover-shadow !default;
 
 /// The text color of focus textbox.
 /// @group textbox
-$kendo-textbox-focus-text: $input-focus-text !default;
+$kendo-textbox-focus-text: $kendo-input-focus-text !default;
 /// The background color of focus textbox.
 /// @group textbox
-$kendo-textbox-focus-bg: $input-focus-bg !default;
+$kendo-textbox-focus-bg: $kendo-input-focus-bg !default;
 /// The border color of focus textbox.
 /// @group textbox
-$kendo-textbox-focus-border: $input-focus-border !default;
-$kendo-textbox-focus-shadow: $input-focus-shadow !default;
+$kendo-textbox-focus-border: $kendo-input-focus-border !default;
+$kendo-textbox-focus-shadow: $kendo-input-focus-shadow !default;
 
 
 
