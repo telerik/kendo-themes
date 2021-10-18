@@ -2,15 +2,15 @@
 
     // Multiselect
     .k-multiselect {
-        @include border-radius( $input-border-radius );
+        @include border-radius( $kendo-input-border-radius );
         width: $multiselect-width;
         border-width: 0;
         box-sizing: border-box;
         outline: 0;
         background: none;
-        font-family: $input-font-family;
-        font-size: $input-font-size;
-        line-height: $input-line-height;
+        font-family: $kendo-input-font-family;
+        font-size: $kendo-input-font-size;
+        line-height: $kendo-input-line-height;
         text-align: left;
         white-space: nowrap;
         display: inline-flex;
@@ -24,8 +24,8 @@
         }
 
         .k-multiselect-wrap {
-            @include border-radius( $input-border-radius );
-            padding: 0 $input-icon-width 0 0;
+            @include border-radius( $kendo-input-border-radius );
+            // padding: 0 $kendo-input-icon-width 0 0;
             width: 100%;
             border-width: 1px;
             border-style: solid;
@@ -44,7 +44,7 @@
             &::before {
                 content: "";
                 width: 0;
-                height: $input-inner-calc-height;
+                // height: $kendo-input-inner-calc-height;
                 float: left;
             }
 
@@ -98,8 +98,8 @@
             }
 
             .k-i-loading {
-                width: $input-icon-width;
-                height: $input-icon-height;
+                // width: $kendo-input-icon-width;
+                // height: $kendo-input-icon-height;
                 position: absolute;
                 top: 0;
                 right: 0;
@@ -117,8 +117,8 @@
                 position: absolute;
                 top: 0;
                 right: 0;
-                width: $input-icon-width;
-                height: $input-icon-height;
+                // width: $kendo-input-icon-width;
+                // height: $kendo-input-icon-height;
                 flex-shrink: 0;
                 display: inline-flex;
                 align-items: center;
@@ -137,7 +137,7 @@
             text-align: right;
 
             .k-multiselect-wrap {
-                padding-left: $input-icon-width;
+                // padding-left: $kendo-input-icon-width;
                 padding-right: 0;
 
                 &::before,
@@ -151,7 +151,7 @@
 
                     .k-input {
                         padding-left: 0;
-                        padding-right: $input-padding-x;
+                        padding-right: $kendo-input-padding-x;
                     }
                 }
 

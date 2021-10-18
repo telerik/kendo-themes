@@ -2,7 +2,7 @@
 
     // Color picker
     .k-colorpicker {
-        @include border-radius( $input-border-radius );
+        @include border-radius( $kendo-input-border-radius );
         width: auto;
         border-width: 1px;
         border-style: solid;
@@ -77,11 +77,11 @@
 
         // Select
         .k-select {
-            padding: $picker-select-padding-y $picker-select-padding-x;
+            padding: 0;
             width: if( $use-picker-select-width, $kendo-button-inner-calc-size, null );
             height: $kendo-button-inner-calc-size;
             border-width: 0;
-            border-inline-start-width: $picker-select-border-width;
+            border-inline-start-width: $kendo-input-button-border-width;
             border-style: solid;
             border-color: transparent;
             box-sizing: border-box;
