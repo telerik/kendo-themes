@@ -3,7 +3,7 @@
 @include exports( "searchbox/layout/material" ) {
 
     .k-searchbox {
-        border-width: $input-border-width 0;
+        border-width: $kendo-input-border-width 0;
         border-top-color: transparent !important; // sass-lint:disable-line no-important
     }
 

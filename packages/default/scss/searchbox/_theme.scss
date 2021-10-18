@@ -29,7 +29,7 @@
                 $searchbox-focus-bg,
                 $searchbox-focus-border
             );
-            @include box-shadow( $input-focused-shadow );
+            @include box-shadow( $kendo-input-focus-shadow );
         }
         &:focus-within {
             @include fill(
@@ -37,7 +37,7 @@
                 $searchbox-focus-bg,
                 $searchbox-focus-border
             );
-            @include box-shadow( $input-focused-shadow );
+            @include box-shadow( $kendo-input-focus-shadow );
         }
 
 
