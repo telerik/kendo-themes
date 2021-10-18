@@ -2,7 +2,6 @@
 
 
     // Floating label
-    .k-textbox-container,
     .k-floating-label-container {
         padding-top: $floating-label-height;
         display: inline-flex;
@@ -27,7 +26,6 @@
             pointer-events: none;
         }
 
-        > .k-textbox,
         > .k-widget {
             flex: 1 1 auto;
             width: auto;
