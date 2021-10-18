@@ -76,12 +76,6 @@
         transition-timing-function: ease;
         outline: none;
 
-        .k-checkbox {
-            margin-top: calc( ( #{$list-line-height-em} - #{$checkbox-size} ) / 2 );
-            font-size: inherit;
-            align-self: flex-start;
-        }
-
         &.k-first::before {
             content: "";
             display: block;
