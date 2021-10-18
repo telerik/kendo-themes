@@ -90,9 +90,12 @@
             min-width: $form-line-height * 1em;
         }
 
-        .k-combobox,
-        .k-dropdown {
+        .k-input,
+        .k-picker {
             width: 5em;
+        }
+        .k-color-picker {
+            width: min-content;
         }
     }
 
@@ -149,8 +152,8 @@
         }
 
         .k-spreadsheet-formula-input {
-            padding: $input-padding-y $input-padding-x;
-            line-height: $input-line-height;
+            padding: $kendo-input-padding-y $kendo-input-padding-x;
+            line-height: $kendo-input-line-height;
 
             &.k-spreadsheet-array-formula {
                 &::before {
