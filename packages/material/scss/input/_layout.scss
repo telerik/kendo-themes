@@ -14,7 +14,6 @@
     }
 
     // Input ripple
-    .k-textbox-container,
     .k-floating-label-container {
         @include input-ripple();
     }

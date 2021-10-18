@@ -811,15 +811,9 @@
             margin-left: $grid-cell-padding-y / 2;
         }
 
-        .k-widget:not(.k-dropdown-operator),
-        .k-filtercell-wrapper > .k-textbox {
+        .k-widget:not(.k-dropdown-operator) {
             display: flex;
             flex: 1 1 auto;
-        }
-
-        .k-filtercell-wrapper > .k-textbox {
-            width: 100%;
-            min-width: 0;
         }
 
     }
@@ -868,7 +862,6 @@
 
         > input:not([type="checkbox"]):not([type="radio"]),
         > select,
-        > .k-textbox,
         > .k-widget:not(.k-switch) {
             width: 100%;
             vertical-align: $grid-form-component-vertical-align;
@@ -1301,9 +1294,7 @@
         }
 
         .k-widget,
-        .k-radio-list,
-        .k-textbox,
-        .k-searchbox {
+        .k-radio-list {
             margin: $grid-filter-menu-item-spacing-y $grid-filter-menu-item-spacing-x 0;
             width: calc( 100% - ( 2 * #{$grid-filter-menu-item-spacing-x} ) );
             box-sizing: border-box;
