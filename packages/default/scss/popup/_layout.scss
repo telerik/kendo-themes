@@ -212,7 +212,7 @@
 
         > .k-icon {
             position: absolute;
-            right: calc( #{$input-padding-x} + #{$padding-x} );
+            right: calc( #{$kendo-input-padding-x} + #{$padding-x} );
             top: 50%;
             transform: translateY(-50%);
         }
@@ -226,7 +226,7 @@
                 padding-left: calc( #{$icon-size} + #{$padding-x} );
             }
             > .k-icon {
-                left: calc( #{$input-padding-x} + #{$padding-x} );
+                left: calc( #{$kendo-input-padding-x} + #{$padding-x} );
                 right: auto;
             }
 
