@@ -1,11 +1,1 @@
 @import "~@progress/kendo-theme-default/scss/numerictextbox/_layout.scss";
-
-@include exports( "numerictextbox/layout/bootstrap" ) {
-
-    // Numeric textbox
-    .k-numerictextbox {
-        transition: $transition;
-    }
-
-}
-
