@@ -4,21 +4,21 @@ $colorpicker-font-size: $font-size !default;
 $colorpicker-line-height: $line-height !default;
 
 $colorpicker-bg: null !default;
-$colorpicker-text: $input-text !default;
-$colorpicker-border: $input-border !default;
+$colorpicker-text: $kendo-input-text !default;
+$colorpicker-border: $kendo-input-border !default;
 $colorpicker-gradient: null !default;
 
 $colorpicker-hovered-bg: null !default;
 $colorpicker-hovered-text: null !default;
-$colorpicker-hovered-border: $input-hovered-border !default;
+$colorpicker-hovered-border: $kendo-input-hover-border !default;
 $colorpicker-hovered-gradient: null !default;
 
 $colorpicker-focused-bg: null !default;
 $colorpicker-focused-text: null !default;
-$colorpicker-focused-border: $input-focused-border !default;
+$colorpicker-focused-border: $kendo-input-focus-border !default;
 $colorpicker-focused-gradient: null !default;
 $colorpicker-focused-shadow: null !default;
 
 $colorpicker-select-text: $subtle-text !default;
-$colorpicker-select-hovered-text: $input-text !default;
-$colorpicker-select-focused-text: $input-text !default;
+$colorpicker-select-hovered-text: $kendo-input-text !default;
+$colorpicker-select-focused-text: $kendo-input-text !default;
