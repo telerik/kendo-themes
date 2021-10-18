@@ -2,15 +2,15 @@
 
     // Date input
     .k-dateinput {
-        @include border-radius( $input-border-radius );
-        width: $input-default-width;
-        border-width: $input-border-width;
+        @include border-radius( $kendo-input-border-radius );
+        width: $kendo-input-default-width;
+        border-width: $kendo-input-border-width;
         border-style: solid;
         box-sizing: border-box;
         outline: 0;
-        font-family: $input-font-family;
-        font-size: $input-font-size;
-        line-height: $input-line-height;
+        font-family: $kendo-input-font-family;
+        font-size: $kendo-input-font-size;
+        line-height: $kendo-input-line-height;
         text-align: start;
         white-space: nowrap;
         display: inline-flex;
@@ -30,9 +30,9 @@
         // Select
         .k-select {
             padding: 0;
-            width: if( $use-picker-select-width, $spinner-width, null );
+            width: if( $use-picker-select-width, $kendo-input-spinner-width, null );
             border-width: 0;
-            border-inline-start-width: $picker-select-border-width;
+            border-inline-start-width: $kendo-input-button-border-width;
             border-style: solid;
             box-sizing: border-box;
             outline: 0;
@@ -45,7 +45,7 @@
             cursor: pointer;
         }
         .k-link {
-            padding: 0 $picker-select-padding-x;
+            padding: 0;
             min-width: $icon-size;
             flex: 1 1 auto;
             display: block;
@@ -59,10 +59,10 @@
             }
         }
         .k-link-increase .k-icon {
-            bottom: -$spinner-icon-offset;
+            bottom: -$kendo-input-spinner-icon-offset;
         }
         .k-link-decrease .k-icon {
-            top: -$spinner-icon-offset;
+            top: -$kendo-input-spinner-icon-offset;
         }
 
 
