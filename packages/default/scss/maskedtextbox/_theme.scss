@@ -1,24 +1,6 @@
 @include exports("maskedtextbox/theme") {
 
-    .k-maskedtextbox {
+    // Masked textbox
+    .k-maskedtextbox {}
 
-        .k-i-warning {
-            color: $error;
-        }
-
-        &.k-state-invalid,
-        &.ng-invalid.ng-touched,
-        &.ng-invalid.ng-dirty {
-            .k-textbox {
-                border-color: $invalid-border;
-            }
-
-            &:focus,
-            &.k-state-focused {
-                .k-textbox {
-                    @include box-shadow($invalid-shadow);
-                }
-            }
-        }
-    }
 }
