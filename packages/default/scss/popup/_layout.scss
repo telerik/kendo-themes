@@ -201,36 +201,6 @@
         padding: $padding-x;
         box-sizing: border-box;
         flex: 0 0 auto;
-
-        > .k-textbox {
-            // remove the !important declaration when https://github.com/telerik/kendo-ui-core/issues/2617 is fixed
-            width: 100% !important; // sass-lint:disable-block no-important
-            box-sizing: border-box;
-            padding-left: $popup-filter-padding-x;
-            padding-right: calc( #{$icon-size} + #{$padding-x} );
-        }
-
-        > .k-icon {
-            position: absolute;
-            right: calc( #{$input-padding-x} + #{$padding-x} );
-            top: 50%;
-            transform: translateY(-50%);
-        }
-
-
-        .k-rtl &,
-        [dir="rtl"] & {
-
-            > .k-textbox {
-                padding-right: $popup-filter-padding-x;
-                padding-left: calc( #{$icon-size} + #{$padding-x} );
-            }
-            > .k-icon {
-                left: calc( #{$input-padding-x} + #{$padding-x} );
-                right: auto;
-            }
-
-        }
     }
 
     .k-dropdown-button .k-popup {
