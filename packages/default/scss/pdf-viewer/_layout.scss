@@ -94,22 +94,6 @@
             justify-content: flex-start;
             align-items: center;
 
-            .k-textbox {
-                display: inline-flex;
-                padding-right: $pdf-viewer-search-dialog-textbox-padding-x;
-                margin: 0 $pdf-viewer-search-dialog-spacing;
-                align-items: center;
-                background: none;
-            }
-            .k-textbox .k-icon {
-                position: absolute;
-                font-size: inherit;
-
-                .k-ie & {
-                    position: relative;
-                }
-            }
-
             .k-match-case-button {
                 display: inline-flex;
                 height: $pdf-viewer-search-dialog-input-button-height;
