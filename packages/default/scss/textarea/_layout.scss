@@ -5,8 +5,6 @@
         @include border-radius( $textarea-border-radius );
         margin: 0;
         padding: 0;
-        width: $textarea-default-width;
-        border-width: $textarea-border-width;
         border-style: solid;
         outline: 0;
         font-family: $textarea-font-family;
@@ -27,15 +25,14 @@
 
         // Placeholder text
         &::placeholder {
-            color: $input-placeholder-text;
-            opacity: $input-placeholder-opacity;
+            color: $kendo-input-placeholder-text;
+            opacity: $kendo-input-placeholder-opacity;
             user-select: none;
         }
 
         > .k-input {
             padding: $textarea-padding-y $textarea-padding-x;
             height: auto;
-            min-height: $textarea-calc-height;
             overflow-y: auto;
             resize: vertical;
         }
@@ -49,9 +46,9 @@
             // Disabled selection
             &::selection {
                 @include fill (
-                    $color: $input-text,
+                    $color: $kendo-input-text,
                     $bg: transparent
-                    // $bg: rgba( contrast-wcag( $input-bg ), .1 )
+                    // $bg: rgba( contrast-wcag( $kendo-input-bg ), .1 )
                 );
             }
         }
@@ -64,7 +61,6 @@
     // Textarea old rendering
     textarea.k-textarea {
         padding: $textarea-padding-y $textarea-padding-x;
-        min-height: $textarea-calc-height;
         display: inline-block;
         resize: both;
     }
@@ -89,7 +85,7 @@
         .k-textarea {
             :-ms-input-placeholder,
             &:-ms-input-placeholder {
-                color: $input-placeholder-text;
+                color: $kendo-input-placeholder-text;
             }
         }
     }

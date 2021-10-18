@@ -23,7 +23,7 @@ $kendo-checkbox-bg: $component-bg !default;
 $kendo-checkbox-text: null !default;
 /// The border of checkbox.
 /// @group checkbox
-$kendo-checkbox-border: contrast-wcag( $input-bg, $gray-400, $gray-600 ) !default;
+$kendo-checkbox-border: contrast-wcag( $kendo-checkbox-bg, $gray-400, $gray-600 ) !default;
 
 /// The background of hovered checkbox.
 /// @group checkbox

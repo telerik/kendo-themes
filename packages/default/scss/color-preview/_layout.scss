@@ -57,6 +57,27 @@
     }
 
 
+
+    // Icon color preview
+    .k-icon-color-preview {
+        border-width: 0;
+        border-radius: 0;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        gap: 2px;
+
+        .k-color-preview-mask {
+            width: calc( #{$icon-size} - 2px );
+            height: 2px;
+        }
+
+        &::before {
+            display: none;
+        }
+    }
+
+
     // No Color
     .k-no-color .k-color-preview-mask::before {
         content: "";
