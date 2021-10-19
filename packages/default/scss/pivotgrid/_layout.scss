@@ -455,6 +455,27 @@
 }
 
 
+@include exports( "pivotgrid/layout/export" ) {
+
+    .k-pdf-export-shadow {
+
+        .k-pivotgrid {
+            height: auto !important; // sass-lint:disable-line no-important
+        }
+
+        .k-pivotgrid-values  {
+            height: auto;
+            overflow: visible;
+        }
+
+        .k-pivotgrid-column-headers .k-pivotgrid-table {
+            padding-inline-end: 0;
+        }
+
+    }
+}
+
+
 @include exports("pivotgrid/layout/legacy") {
 
     .k-pivot {
