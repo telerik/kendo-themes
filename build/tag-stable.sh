@@ -4,9 +4,10 @@ set -e
 
 source $(pwd)/build/constants.sh
 
-for theme in $themes
+for package in $packages
 do
-    pkg=@progress/kendo-theme-$theme
+    pkg=$(cat $(pwd)/packages/$package/package.json | jq '.name')
+    pkg=$(echo $pkg | xargs )
     version=$(npm view $pkg version)
 
     npm dist-tag add $pkg@$version stable
