@@ -3,6 +3,44 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.42.0](https://github.com/telerik/kendo-themes/compare/v4.41.2...v4.42.0) (2021-10-18)
+
+
+### Features
+
+* add utils modules to nouvelle (only grid and flex) ([6d90e6f](https://github.com/telerik/kendo-themes/commit/6d90e6f55e3916b7c682a680cb72080a89f557af))
+* **autocomplete:** use :where styles for autocomplete ([780f841](https://github.com/telerik/kendo-themes/commit/780f8413c0632698bb94486cccd5ec00e6e417cc))
+* **button:** use :where styles for button ([176f2b2](https://github.com/telerik/kendo-themes/commit/176f2b27e62fa06f898aab6565c77b3e6c26ae79))
+* **combobox:** use :where styles for combobox ([84a18e8](https://github.com/telerik/kendo-themes/commit/84a18e857d143b07492201359d5e8e1e8c9d1153))
+* convert nouvelle to new module system ([c7d8b02](https://github.com/telerik/kendo-themes/commit/c7d8b02bb4e950e2d82588bbe0e62fe2101f305d))
+* **dropdownlist:** use :where styles for dropdownlist ([dace4cc](https://github.com/telerik/kendo-themes/commit/dace4cc2230e95b304bfc6f0eae9076e5b5e59c2))
+* introduce new module system for nouvelle theme ([914f3b4](https://github.com/telerik/kendo-themes/commit/914f3b4cccb08968fe816002d6ce5b2ca6d79ee5))
+* **textbox:** extract textbox as a separate module ([6c98361](https://github.com/telerik/kendo-themes/commit/6c983611935750e4356a03b1f521a4d03807f637))
+* use box-sizing border-box for all elements ([0b14ce9](https://github.com/telerik/kendo-themes/commit/0b14ce9206b0c8c46dd87431d493a1111c400b1b))
+
+
+
+
+
+# [4.42.0-dev.0](https://github.com/telerik/kendo-themes/compare/v4.41.2...v4.42.0-dev.0) (2021-10-18)
+
+
+### Features
+
+* add utils modules to nouvelle (only grid and flex) ([6d90e6f](https://github.com/telerik/kendo-themes/commit/6d90e6f55e3916b7c682a680cb72080a89f557af))
+* **autocomplete:** use :where styles for autocomplete ([780f841](https://github.com/telerik/kendo-themes/commit/780f8413c0632698bb94486cccd5ec00e6e417cc))
+* **button:** use :where styles for button ([176f2b2](https://github.com/telerik/kendo-themes/commit/176f2b27e62fa06f898aab6565c77b3e6c26ae79))
+* **combobox:** use :where styles for combobox ([84a18e8](https://github.com/telerik/kendo-themes/commit/84a18e857d143b07492201359d5e8e1e8c9d1153))
+* convert nouvelle to new module system ([c7d8b02](https://github.com/telerik/kendo-themes/commit/c7d8b02bb4e950e2d82588bbe0e62fe2101f305d))
+* **dropdownlist:** use :where styles for dropdownlist ([dace4cc](https://github.com/telerik/kendo-themes/commit/dace4cc2230e95b304bfc6f0eae9076e5b5e59c2))
+* introduce new module system for nouvelle theme ([914f3b4](https://github.com/telerik/kendo-themes/commit/914f3b4cccb08968fe816002d6ce5b2ca6d79ee5))
+* **textbox:** extract textbox as a separate module ([6c98361](https://github.com/telerik/kendo-themes/commit/6c983611935750e4356a03b1f521a4d03807f637))
+* use box-sizing border-box for all elements ([0b14ce9](https://github.com/telerik/kendo-themes/commit/0b14ce9206b0c8c46dd87431d493a1111c400b1b))
+
+
+
+
+
 ## [4.41.2](https://github.com/telerik/kendo-themes/compare/v4.41.1...v4.41.2) (2021-09-13)
 
 **Note:** Version bump only for package @progress/kendo-theme-nouvelle

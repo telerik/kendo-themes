@@ -1,6 +1,6 @@
 /// <reference path='lib/types.d.ts' />
 
-suite('Multiselect', () => {
+suite.skip('Multiselect', () => {
 
     before( () => {
         loadFixture('/html/multiselect.html');

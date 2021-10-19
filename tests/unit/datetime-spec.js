@@ -1,6 +1,6 @@
 /// <reference path='lib/types.d.ts' />
 
-suite('Dateinput', () => {
+suite.skip('Dateinput', () => {
 
     before( () => {
         loadFixture('/html/datetime.html');
@@ -27,7 +27,7 @@ suite('Dateinput', () => {
 });
 
 
-suite('Datepicker', () => {
+suite.skip('Datepicker', () => {
 
     before( () => {
         loadFixture('/html/datetime.html');
@@ -53,7 +53,7 @@ suite('Datepicker', () => {
 });
 
 
-suite('Timepicker', () => {
+suite.skip('Timepicker', () => {
 
     before( () => {
         loadFixture('/html/datetime.html');
@@ -79,7 +79,7 @@ suite('Timepicker', () => {
 });
 
 
-suite('DateTimepicker', () => {
+suite.skip('DateTimepicker', () => {
 
     before( () => {
         loadFixture('/html/datetime.html');

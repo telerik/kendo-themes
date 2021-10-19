@@ -9,10 +9,10 @@ const latestVersion = getArg('--latest');
 function inc( next, latest ) {
 
     if (semver.gt( next, latest )) {
-        return semver.inc( next, 'prerelease', 'next' );
+        return semver.inc( next, 'prerelease', 'alpha' );
     }
 
-    return semver.inc( latest, 'premajor', 'next' );
+    return semver.inc( latest, 'premajor', 'alpha' );
 }
 
 process.stdout.write( inc( next, latestVersion ) );
