@@ -1,5 +1,8 @@
 @include exports("dropdowngrid/theme") {
 
+    // Dropdown grid
+    .k-dropdown-grid {}
+
     // Dropdowngrid
     .k-dropdowngrid-popup {
         border-color: $grid-border;
