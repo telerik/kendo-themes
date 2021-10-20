@@ -1,5 +1,6 @@
 @include exports("dropdowntree/theme") {
 
-    // Dropdown tree doesn't need any theme, because it extends dropdown list and multiselects
+    // Dropdown tree
+    .k-dropdown-tree {}
 
 }
