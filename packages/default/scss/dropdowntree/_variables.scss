@@ -1,5 +1,3 @@
 // Dropdowntree
-$dropdowntree-popup-spacer-x: $padding-y-lg !default;
-$dropdowntree-popup-spacer-y: $dropdowntree-popup-spacer-x !default;
-$dropdowntree-filter-shadow: $popup-shadow !default;
-$dropdowntree-filter-spacer: $dropdowntree-popup-spacer-y !default;
+$dropdowntree-popup-padding-x: map-get( $spacing, 2 ) !default;
+$dropdowntree-popup-padding-y: map-get( $spacing, 2 ) !default;
