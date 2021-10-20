@@ -4,27 +4,7 @@
 
 
     // Pager
-    .k-pager-wrap {
-
-        select.k-dropdown,
-        .k-dropdown .k-dropdown-wrap {
-            @include fill(
-                $pager-text,
-                $pager-item-bg,
-                $pager-item-border
-            );
-
-            &:hover,
-            &.k-state-hover {
-                @include fill(
-                    $pager-text,
-                    $pager-item-hover-bg,
-                    $pager-item-hover-border
-                );
-            }
-        }
-
-    }
+    .k-pager-wrap {}
 
 
     // Responsive
