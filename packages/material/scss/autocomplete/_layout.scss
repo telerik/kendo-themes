@@ -1,17 +1,1 @@
 @import "~@progress/kendo-theme-default/scss/autocomplete/_layout.scss";
-
-@include exports( "autocomplete/layout/material" ) {
-
-    .k-autocomplete {
-        border-width: $kendo-input-border-width 0;
-        border-top-color: transparent !important; // sass-lint:disable-line no-important
-
-        // Disabled
-        &[disabled],
-        &.k-state-disabled {
-            border-bottom-style: dashed;
-        }
-
-    }
-
-}
