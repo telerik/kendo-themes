@@ -1,4 +1,5 @@
 @include exports("filter/layout") {
+
     .k-filter {
         border-width: 0;
         display: inline-block;
@@ -39,10 +40,9 @@
             .k-toolbar {
                 border-style: solid;
             }
-
-            .k-filter-operator .k-dropdown {
-                width: $filter-operator-dropdown-width;
-            }
+        }
+        .k-filter-operator .k-dropdown-list {
+            width: $filter-operator-dropdown-width;
         }
 
         .k-filter-item {
