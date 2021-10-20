@@ -1,1 +1,11 @@
 @import "~@progress/kendo-theme-default/scss/switch/_layout.scss";
+
+@include exports( "switch/layout/bootstrap" ) {
+
+    // Switch
+    .k-switch.k-disabled {
+        opacity: 1;
+        filter: none;
+    }
+
+}
