@@ -64,15 +64,3 @@
     }
 
 }
-
-
-
-
-@include exports( "spreadsheet/popup/layout/material" ) {
-
-    .k-spreadsheet-popup {
-        .k-separator {
-            margin: 0;
-        }
-    }
-}
