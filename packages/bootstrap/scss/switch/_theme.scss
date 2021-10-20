@@ -2,17 +2,11 @@
 
 @include exports( "switch/theme/bootstrap" ) {
 
-    // Switch
-    .k-switch.k-state-disabled {
-        opacity: 1;
-        filter: none;
-    }
-
     .k-switch-on.k-state-disabled {
 
         // Switch track
         .k-switch-container {
-            background-color: rgba( $switch-on-bg, .5 );
+            background-color: try-tint( $switch-on-bg, 50% );
         }
 
         // Switch thumb
