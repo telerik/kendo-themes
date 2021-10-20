@@ -241,14 +241,6 @@
 
     .k-editor-widget .k-colorpicker {}
 
-    .k-rtl .k-editor .k-editor-widget .k-dropdown-wrap {
-        padding-left: 0;
-
-        .k-select {
-            border-width: 0;
-        }
-    }
-
     // Find and replace dialog
     .k-editor-find-replace {
         .k-content {
@@ -513,11 +505,6 @@
 
         .k-edit-field > .k-checkbox {
             position: relative; // fix scrolling
-        }
-
-        // Align
-        .k-dropdown.k-align {
-            width: auto;
         }
     }
 
