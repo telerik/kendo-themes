@@ -2,6 +2,11 @@
 
 @include exports( "pager/theme/bootstrap" ) {
 
+
+    // Pager
+    .k-pager-wrap {}
+
+
     // Responsive
     .k-pager-md,
     .k-pager-sm {

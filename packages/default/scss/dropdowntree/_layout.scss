@@ -2,7 +2,7 @@
 
     .k-dropdowntree {
         @extend .k-multiselect;
-        @extend .k-dropdown;
+        @extend .k-dropdown-list;
     }
 
     // Dropdowntree popup

@@ -1,10 +1,1 @@
 @import "~@progress/kendo-theme-default/scss/dropdownlist/_layout.scss";
-
-@include exports( "dropdownlist/layout/bootstrap" ) {
-
-    // Dropdown list
-    .k-dropdown {
-        transition: $transition;
-    }
-
-}
