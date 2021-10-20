@@ -1,5 +1,8 @@
 @include exports("dropdowngrid/layout") {
 
+    // Dropdown grid
+    .k-dropdown-grid {}
+
     .k-dropdowngrid-popup {
         overflow: hidden;
     }
