@@ -1,20 +1,6 @@
 @include exports("dropdowntree/layout") {
 
-    .k-dropdowntree {
-        @extend .k-multiselect;
-        @extend .k-dropdown-list;
-    }
+    // Dropdown tree
+    .k-dropdown-tree {}
 
-    // Dropdowntree popup
-    .k-popup-dropdowntree {
-        padding: 0;
-
-        .k-check-all {
-            padding: $dropdowntree-popup-spacer-y $dropdowntree-popup-spacer-x;
-        }
-
-        .k-treeview {
-            padding: $dropdowntree-popup-spacer-y $dropdowntree-popup-spacer-x;
-        }
-    }
 }
