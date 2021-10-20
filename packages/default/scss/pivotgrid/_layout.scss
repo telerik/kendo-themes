@@ -247,7 +247,7 @@
                 font-weight: 500;
                 align-items: flex-start;
             }
-            .k-dropdown {
+            .k-dropdown-list {
                 max-width: 90px;
             }
             .k-textbox {
@@ -340,7 +340,7 @@
         .k-icon {
             margin-right: map-get( $spacing, 2 );
         }
-        .k-dropdown {
+        .k-dropdown-list {
             max-width: 100px;
         }
     }
