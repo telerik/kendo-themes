@@ -1,28 +1,6 @@
 @include exports("dropdowntree/layout") {
 
-    .k-dropdowntree {
-        @extend .k-multiselect;
-        @extend .k-dropdown;
-    }
+    // Dropdown tree
+    .k-dropdown-tree {}
 
-    // Dropdowntree popup
-    .k-popup-dropdowntree {
-        padding: 0;
-
-        .k-list-filter {
-            box-shadow: $dropdowntree-filter-shadow;
-            margin: 0 0 $dropdowntree-filter-spacer;
-        }
-
-        .k-check-all {
-            padding: $dropdowntree-popup-spacer-y $dropdowntree-popup-spacer-x 0;
-        }
-        .k-list-filter .k-check-all {
-            padding-top: 0;
-        }
-
-        .k-treeview {
-            padding: $dropdowntree-popup-spacer-y $dropdowntree-popup-spacer-x;
-        }
-    }
 }
