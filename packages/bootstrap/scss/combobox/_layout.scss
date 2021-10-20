@@ -1,15 +1,1 @@
 @import "~@progress/kendo-theme-default/scss/combobox/_layout.scss";
-
-@include exports("combobox/layout/bootstrap") {
-
-    .k-combobox {
-        .k-dropdown-wrap {
-            transition: $transition;
-
-            .k-select {
-                transition: $transition;
-            }
-        }
-    }
-
-}
