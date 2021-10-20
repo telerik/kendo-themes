@@ -31,11 +31,6 @@
             }
         }
 
-        .k-widget,
-        select.k-dropdown {
-            font-size: inherit;
-        }
-
         .k-rtl &,
         &[dir="rtl"],
         [dir="rtl"] & {
@@ -103,7 +98,7 @@
         flex-direction: row;
         position: relative;
 
-        select.k-dropdown {
+        select.k-dropdown-list {
             cursor: pointer;
             display: none;
         }
@@ -171,7 +166,7 @@
     .k-pager-sizes {
         @extend %base-pager-section;
 
-        .k-dropdown,
+        .k-dropdown-list,
         > select {
             margin-right: 1ex;
             width: $pager-dropdown-width;
@@ -179,7 +174,7 @@
 
         .k-rtl &,
         [dir="rtl"] & {
-            .k-dropdown,
+            .k-dropdown-list,
             > select {
                 margin-left: 1ex;
                 margin-right: 0;
@@ -217,7 +212,7 @@
 
         // Show native select
         .k-pager-numbers-wrap {
-            select.k-dropdown {
+            select.k-dropdown-list {
                 width: $pager-dropdown-width;
                 display: flex;
             }
