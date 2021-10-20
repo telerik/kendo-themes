@@ -187,13 +187,6 @@
         flex-shrink: 0;
         flex-basis: auto;
         gap: $card-actions-gap;
-
-        > .k-button {
-            padding-left: calc( #{$card-body-padding-x} - ( #{$card-actions-padding-x} + #{$button-border-width} ) );
-            padding-right: calc( #{$card-body-padding-x} - ( #{$card-actions-padding-x} + #{$button-border-width} ) );
-            max-width: 100%;
-            white-space: normal;
-        }
     }
 
 
@@ -208,40 +201,9 @@
     .k-card-actions-vertical    { flex-flow: column nowrap; } // stylelint-disable-line block-opening-brace-space-before
 
 
-    // Streched actions
-    .k-card-actions-stretched {
-        padding: 0;
-        gap: 0;
-
-        > .k-button,
-        > .k-card-action {
-            flex: 1 1 auto;
-        }
-
-        // TODO: refactor once we have button size
-        .k-button {
-            @include border-radius( 0 );
-            padding-top: calc( #{$card-actions-padding-y} + #{$button-padding-y} );
-            padding-bottom: calc( #{$card-actions-padding-y} + #{$button-padding-y} );
-        }
-
-        .k-card & {
-            border-top-width: $card-actions-border-width;
-        }
-        .k-card-horizontal > & {
-            border-top-width: 0;
-            border-inline-start-width: $card-actions-border-width;
-        }
-        .k-card-vertical > & {
-            border-top-width: $card-actions-border-width;
-        }
-
-        &.k-card-actions-horizontal > .k-card-action + .k-card-action {
-            border-inline-start-width: $card-actions-border-width;
-        }
-        &.k-card-actions-vertical > .k-card-action + .k-card-action {
-            border-top-width: $card-actions-border-width;
-        }
+    // Stretched actions
+    .k-card-actions-stretched > * {
+        flex: 1 1 auto;
     }
 
 
@@ -408,33 +370,6 @@
     // Flat card
     .k-card-flat {
         @include box-shadow( none );
-    }
-
-}
-
-
-
-
-@include exports("card/layout/rtl") {
-
-    .k-rtl,
-    [dir="rtl"] {
-
-        .k-card-actions-stretched {
-            .k-card-action + .k-card-action {
-                border-right-width: $card-actions-border-width;
-                border-left-width: 0;
-            }
-        }
-
-        .k-card-horizontal {
-            > .k-card-actions-stretched,
-            .k-card-actions-vertical {
-                border-right-width: $card-actions-border-width;
-                border-left-width: 0;
-            }
-        }
-
     }
 
 }
