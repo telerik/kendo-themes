@@ -1,63 +1,9 @@
 @include exports( "dropdownlist/theme" ) {
 
     // Dropdown list
-    .k-dropdown {
-        @include fill(
-            $dropdownlist-text,
-            $dropdownlist-bg,
-            $dropdownlist-border,
-            $dropdownlist-gradient
-        );
+    .k-dropdown-list {}
 
-        // Hover state
-        &:hover,
-        &.k-state-hover {
-            @include fill(
-                $dropdownlist-hovered-text,
-                $dropdownlist-hovered-bg,
-                $dropdownlist-hovered-border,
-                $dropdownlist-hovered-gradient
-            );
-        }
-
-        // Focus state
-        &:focus,
-        &.k-state-focus {
-            @include fill(
-                $dropdownlist-focused-text,
-                $dropdownlist-focused-bg,
-                $dropdownlist-focused-border,
-                $dropdownlist-focused-gradient
-            );
-            @include box-shadow($dropdownlist-focused-shadow);
-        }
-        &:focus-within {
-            @include fill(
-                $dropdownlist-focused-text,
-                $dropdownlist-focused-bg,
-                $dropdownlist-focused-border,
-                $dropdownlist-focused-gradient
-            );
-            @include box-shadow($dropdownlist-focused-shadow);
-        }
-
-
-        // Invalid state
-        &.k-invalid,
-        &.ng-invalid,
-        &.k-state-invalid {
-            border-color: $invalid-border;
-
-            .k-input-validation-icon {
-                color: $invalid-text;
-            }
-
-            &:focus-within,
-            &.k-state-focus {
-                @include box-shadow($invalid-shadow);
-            }
-        }
-
-    }
+    // Native select
+    select.k-dropdown-list {}
 
 }
