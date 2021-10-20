@@ -775,26 +775,6 @@
             width: 100%;
         }
 
-        > span {
-            .k-button {
-                visibility: visible;
-                pointer-events: all;
-            }
-
-            .k-button,
-            .k-dropdown-operator {
-                margin-left: $grid-cell-padding-y / 2;
-
-                .k-ie & {
-                    min-width: $kendo-button-inner-calc-size;
-                }
-            }
-
-            .k-widget {
-                width: auto;
-            }
-        }
-
         .k-filtercell-operator {
             > .k-button.k-clear-button-visible {
                 visibility: visible;
@@ -809,11 +789,6 @@
 
         .k-filtercell-operator {
             margin-left: $grid-cell-padding-y / 2;
-        }
-
-        .k-widget:not(.k-dropdown-operator) {
-            display: flex;
-            flex: 1 1 auto;
         }
 
     }
