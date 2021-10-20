@@ -679,10 +679,6 @@
     .k-spreadsheet-popup {
         padding: 0;
 
-        .k-separator {
-            display: block;
-        }
-
         .k-button {
             @include border-radius( 0 );
             border-width: 0;
