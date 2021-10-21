@@ -45,16 +45,34 @@
         </section>
         <section>
             <kendo-editor style="height: 200px;" class="k-widget k-editor">
-               <kendo-toolbar class="k-widget k-toolbar k-toolbar-resizable">
-                   <kendo-toolbar-renderer>
-                       <kendo-buttongroup class="k-button-group">
-                        <button is="Button" icon="undo"></button>
-                        <button is="Button" icon="redo"></button>
-                       </kendo-buttongroup>
-                   </kendo-toolbar-renderer>
-                   <button is="Button" icon="more-vertical" class="k-overflow-anchor"></button>
-               </kendo-toolbar>
-               <div class="k-editor-content"><div class="ProseMirror"><p>The Kendo UI Angular Editor allows your users to edit HTML in a familiar, user-friendly way.</p><p>In this version, the Editor provides the core HTML editing engine which includes basic text formatting, hyperlinks, and lists. The widget <strong>outputs identical HTML</strong> across all major browsers, follows accessibility standards, and provides API for content manipulation.</p><p>Features include:</p><ul><li>Text formatting</li><li>Bulleted and numbered lists</li><li>Hyperlinks</li><li>Cross-browser support</li><li>Identical HTML output across browsers</li></ul></div></div>
+                <kendo-toolbar class="k-widget k-toolbar k-toolbar-resizable">
+                    <kendo-toolbar-renderer>
+                        <kendo-buttongroup class="k-button-group">
+                            <button is="Button" icon="undo"></button>
+                            <button is="Button" icon="redo"></button>
+                        </kendo-buttongroup>
+                    </kendo-toolbar-renderer>
+                    <button is="Button" icon="more-vertical" class="k-overflow-anchor"></button>
+                </kendo-toolbar>
+                <div class="k-editor-content">
+                    <div class="ProseMirror"><!-- The following wrapper is with demonstrational purpose only
+                        --><div style="position: relative;"><!--
+                            --><img class="ProseMirror-selectednode" src="../../assets/avatar.jpg" /><!--
+                            --><div class="k-editor-resize-handles-wrapper ProseMirror-widget" style="width: 100px; height: 110px; top: 0; left: 0;">
+                                <div class="k-editor-resize-handle southeast"></div>
+                                <div class="k-editor-resize-handle east"></div>
+                                <div class="k-editor-resize-handle south"></div>
+                                <div class="k-editor-resize-handle north"></div>
+                                <div class="k-editor-resize-handle west"></div>
+                                <div class="k-editor-resize-handle southwest"></div>
+                                <div class="k-editor-resize-handle northwest"></div>
+                                <div class="k-editor-resize-handle northeast"></div>
+                            </div>
+                        </div><!--
+                        --><p>The Kendo UI Angular Editor allows your users to edit HTML in a familiar, user-friendly way.</p><!--
+                        --><p>In this version, the Editor provides the core HTML editing engine which includes basic text formatting, hyperlinks, and lists. The widget <strong>outputs identical HTML</strong> across all major browsers, follows accessibility standards, and provides API for content manipulation.</p><p>Features include:</p><ul><li>Text formatting</li><li>Bulleted and numbered lists</li><li>Hyperlinks</li><li>Cross-browser support</li><li>Identical HTML output across browsers</li></ul>
+                    </div>
+                </div>
             </kendo-editor>
         </section>
 
