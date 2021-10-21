@@ -52,6 +52,15 @@
         }
     }
 
+    // Resizable images
+    .k-editor-resize-handle {
+        background-color: $editor-resize-handle-bg;
+        border-color: $editor-resize-handle-border;
+    }
+    .ProseMirror-selectednode { // sass-lint:disable-line class-name-format
+        outline-color: $editor-selectednode-outline-color;
+    }
+
 
     // Insert table
     .k-ct-popup {

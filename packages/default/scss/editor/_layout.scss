@@ -68,6 +68,89 @@
         overflow: auto;
     }
 
+    // Resizable images
+    .k-editor-resize-handles-wrapper {
+        position: absolute;
+        visibility: hidden;
+    }
+    .k-editor-resize-handle {
+        width: $editor-resize-handle-size;
+        height: $editor-resize-handle-size;
+        border-width: $editor-resize-handle-border-width;
+        border-style: solid;
+        position: absolute;
+        visibility: visible;
+        z-index: 100;
+
+        &.northwest {
+            top: 0;
+            left: 0;
+            transform: translate(-50%, -50%);
+            cursor: nw-resize;
+        }
+
+        &.north {
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            cursor: n-resize;
+        }
+
+        &.northeast {
+            top: 0;
+            right: 0;
+            transform: translate(50%, -50%);
+            cursor: ne-resize;
+        }
+
+        &.southwest {
+            left: 0;
+            bottom: 0;
+            transform: translate(-50%, 50%);
+            cursor: sw-resize;
+        }
+
+        &.south {
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%, 50%);
+            cursor: s-resize;
+        }
+
+        &.southeast {
+            right: 0;
+            bottom: 0;
+            transform: translate(50%, 50%);
+            cursor: se-resize;
+        }
+
+        &.west {
+            top: 50%;
+            left: 0;
+            transform: translate(-50%, -50%);
+            cursor: w-resize;
+        }
+
+        &.east {
+            top: 50%;
+            right: 0;
+            transform: translate(50%, -50%);
+            cursor: e-resize;
+        }
+    }
+    .ProseMirror-selectednode { // sass-lint:disable-line class-name-format
+        outline-width: $editor-selectednode-outline-width;
+        outline-style: solid;
+    }
+    .ProseMirror-hideselection { // sass-lint:disable-line class-name-format
+        caret-color: transparent;
+
+        *::selection,
+        *::-moz-selection {
+            background: transparent;
+        }
+    }
+
     // Toolbar
     .k-editor > .k-toolbar {
         border-width: 0 0 $toolbar-border-width 0;
@@ -141,6 +224,7 @@
             padding: $padding-x;
             width: 100%;
             height: 100%;
+            position: relative;
             box-sizing: border-box;
             outline: none;
             white-space: pre-wrap;
