@@ -563,12 +563,12 @@
         .k-numerictextbox {
             width: 10em;
 
-            & + .k-dropdown {
+            & + .k-dropdown-list {
                 width: 5em;
             }
 
             & + .k-colorpicker,
-            & + .k-dropdown {
+            & + .k-dropdown-list {
                 margin-left: map-get( $spacing, 2 );
             }
         }
