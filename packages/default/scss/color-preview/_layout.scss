@@ -2,6 +2,8 @@
 
     // Color Preview
     .k-color-preview {
+        width: 100%;
+        height: 100%;
         border-width: $color-preview-border-width;
         border-radius: $color-preview-border-radius;
         box-sizing: border-box;
@@ -57,27 +59,6 @@
     }
 
 
-
-    // Icon color preview
-    .k-icon-color-preview {
-        border-width: 0;
-        border-radius: 0;
-        display: flex;
-        flex-flow: column nowrap;
-        align-items: center;
-        gap: 2px;
-
-        .k-color-preview-mask {
-            width: calc( #{$icon-size} - 2px );
-            height: 2px;
-        }
-
-        &::before {
-            display: none;
-        }
-    }
-
-
     // No Color
     .k-no-color .k-color-preview-mask::before {
         content: "";
@@ -85,17 +66,6 @@
         background-image: $color-preview-no-color-image;
         background-size: 100% 100%;
         background-position: 0 0;
-    }
-
-
-    // No Color (legacy)
-    .k-no-color::before {
-        content: "";
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
     }
 
 }
