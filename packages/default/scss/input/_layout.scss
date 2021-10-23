@@ -1,7 +1,8 @@
 @include exports( "input/layout" ) {
 
     // Generic input
-    .k-input {
+    .k-input,
+    .k-picker {
         @include border-radius( $kendo-input-border-radius );
         margin: 0;
         padding: 0;
@@ -16,11 +17,15 @@
         box-shadow: none;
         display: inline-flex;
         flex-flow: row nowrap;
+        position: relative;
         overflow: hidden;
         text-overflow: ellipsis;
         -webkit-appearance: none;
     }
     input.k-input {
+        padding: $kendo-input-padding-y $kendo-input-padding-x;
+    }
+    select.k-picker {
         padding: $kendo-input-padding-y $kendo-input-padding-x;
     }
 
@@ -35,6 +40,8 @@
         background: none;
         font: inherit;
         flex: 1;
+        position: relative;
+        z-index: 1;
         overflow: hidden;
         text-overflow: ellipsis;
         -webkit-appearance: none;
@@ -60,6 +67,7 @@
     span.k-input-inner {
         display: flex;
         flex-flow: row nowrap;
+        align-items: center;
 
         .k-value-icon {
             flex: none;
@@ -112,7 +120,7 @@
         opacity: .5;
     }
     .k-clear-value:hover,
-    .k-clear-value.k-state-hover {
+    .k-clear-value.k-hover {
         opacity: 1;
     }
 
@@ -123,6 +131,10 @@
         border-width: 0;
         flex: none;
         box-shadow: none;
+    }
+    .k-picker .k-input-button {
+        color: inherit;
+        background: none;
     }
 
 
