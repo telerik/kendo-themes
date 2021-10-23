@@ -1,6 +1,6 @@
 import { Component, globalDefaultProps } from '../component';
-import { IconStatic } from '../icon/index';
 import { InputStatic, InputInnerInputStatic } from '../input/index';
+import { InputValidationIconStatic, InputLoadingIconStatic, InputClearValueStatic } from '../input/index';
 import { SpinButtonStatic } from '../spinbutton/index';
 
 class NumericTextbox extends Component {
@@ -45,7 +45,7 @@ function NumericTextboxStatic(props) {
     htmlAttributes.fillMode = fillMode;
     htmlAttributes.hover = hover;
     htmlAttributes.focus = focus;
-    htmlAttributes.valid = invalid;
+    htmlAttributes.valid = valid;
     htmlAttributes.invalid = invalid;
     htmlAttributes.required = required;
     htmlAttributes.disabled = disabled;
@@ -97,7 +97,9 @@ function NumericTextboxStatic(props) {
             <InputStatic className={legacyClasses} {...htmlAttributes}>
                 <span className={legacyWrapClasses}>
                     <input type={type} className={legacyInputClasses} {...inputAttributes} />
-                    {invalid && <IconStatic name="warning" />}
+                    <InputValidationIconStatic {...props} />
+                    <InputLoadingIconStatic {...props} />
+                    <InputClearValueStatic {...props} />
                     {showSpinButton === true && <SpinButtonStatic />}
                 </span>
             </InputStatic>
@@ -107,8 +109,9 @@ function NumericTextboxStatic(props) {
     return (
         <InputStatic className={numericClasses} {...ariaAttr} {...htmlAttributes}>
             <InputInnerInputStatic {...inputAttributes} />
-            {valid && <IconStatic className="k-input-icon" name="check" />}
-            {invalid && <IconStatic className="k-input-icon" name="warning" />}
+            <InputValidationIconStatic {...props} />
+            <InputLoadingIconStatic {...props} />
+            <InputClearValueStatic {...props} />
             {showSpinButton === true && <SpinButtonStatic className="k-input-spinner" />}
         </InputStatic>
     );
@@ -123,6 +126,10 @@ NumericTextboxStatic.defaultProps = {
 
     showSpinButton: true,
 
+    showValidationIcon: true,
+    showLoadingIcon: true,
+    showClearButton: true,
+
     size: 'medium',
     rounded: 'medium',
 
@@ -136,6 +143,10 @@ NumericTextboxStatic.propTypes = {
     autocomplete: typeof [ 'on', 'off' ],
 
     showSpinButton: typeof true,
+
+    showValidationIcon: typeof true,
+    showLoadingIcon: typeof true,
+    showClearButton: typeof true,
 
     size: typeof [ 'none', 'small', 'medium', 'large' ],
     rounded: typeof [ 'none', 'small', 'medium', 'large', 'pill' ],

@@ -82,9 +82,7 @@ function ColorpickerStatic(props) {
         return (
             <PickerStatic className={legacyClasses} {...htmlAttributes}>
                 <span className={legacyWrapClasses}>
-                    {prefix}
                     <ColorPreviewStatic color={value} iconName={iconName} />
-                    {suffix}
                     <span className="k-select"><IconStatic name="arrow-s" /></span>
                 </span>
             </PickerStatic>
@@ -94,8 +92,7 @@ function ColorpickerStatic(props) {
     return (
         <PickerStatic className={colorpickerClasses} {...ariaAttr} {...htmlAttributes}>
             {prefix}
-            <ColorPreviewStatic color={value} iconName={iconName} />
-            {false && <InputInnerSpanStatic value={value} />}
+            <InputInnerSpanStatic showValue={false} valueIcon={<ColorPreviewStatic className="k-icon k-value-icon" color={value} iconName={iconName} />} />
             {suffix}
             <ButtonStatic className="k-input-button" icon="arrow-s" rounded="none" size={size} fillMode={fillMode}></ButtonStatic>
         </PickerStatic>
@@ -111,6 +108,8 @@ ColorpickerStatic.defaultProps = {
     autocomplete: 'off',
 
     iconName: '',
+
+    valueIcon: null,
 
     size: 'medium',
     rounded: 'medium',
