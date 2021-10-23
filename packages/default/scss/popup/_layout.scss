@@ -14,10 +14,6 @@
         flex-direction: column;
         align-items: stretch;
 
-        > .k-widget {
-            border-width: 0;
-        }
-
         .k-item {
             outline: none;
         }
@@ -45,6 +41,12 @@
     // Flush popup
     .k-popup.k-popup-flush {
         padding: 0;
+    }
+
+    // Child components
+    .k-popup > .k-widget,
+    .k-popup > .k-coloreditor {
+        border-width: 0;
     }
 }
 
