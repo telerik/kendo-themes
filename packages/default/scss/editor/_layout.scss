@@ -324,8 +324,6 @@
         }
     }
 
-    .k-editor-widget .k-colorpicker {}
-
     // Find and replace dialog
     .k-editor-find-replace {
         .k-content {
@@ -582,10 +580,6 @@
                 flex: 1 1 auto;
                 margin-bottom: 0;
             }
-        }
-
-        .k-colorpicker {
-            vertical-align: middle;
         }
 
         .k-edit-field > .k-checkbox {

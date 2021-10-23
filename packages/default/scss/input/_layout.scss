@@ -1,7 +1,8 @@
 @include exports( "input/layout" ) {
 
     // Generic input
-    .k-input {
+    .k-input,
+    .k-picker {
         @include border-radius( $kendo-input-border-radius );
         margin: 0;
         padding: 0;
@@ -41,6 +42,8 @@
         background: none;
         font: inherit;
         flex: 1;
+        position: relative;
+        z-index: 1;
         overflow: hidden;
         text-overflow: ellipsis;
         -webkit-appearance: none;
@@ -66,6 +69,7 @@
     span.k-input-inner {
         display: flex;
         flex-flow: row nowrap;
+        align-items: center;
 
         .k-value-icon {
             flex: none;
@@ -140,6 +144,10 @@
             min-width: auto !important; // sass-lint:disable-line no-important
             min-height: auto !important; // sass-lint:disable-line no-important
         }
+    }
+    .k-picker .k-input-button {
+        color: inherit;
+        background: none;
     }
 
 
