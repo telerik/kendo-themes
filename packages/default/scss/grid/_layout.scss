@@ -743,17 +743,6 @@
             gap: ( $grid-cell-padding-y / 2 );
             flex: 1 1 auto;
 
-            > .k-widget,
-            > .k-textbox {
-                width: 100%;
-            }
-
-            .k-colorpicker,
-            .k-dropdown-operator {
-                width: min-content;
-                flex: none;
-            }
-
             > .k-button {
                 flex: none;
             }
