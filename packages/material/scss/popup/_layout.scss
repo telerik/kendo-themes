@@ -1,18 +1,1 @@
 @import "~@progress/kendo-theme-default/scss/popup/_layout.scss";
-
-@include exports( "popup/layout/material" ) {
-
-    .k-popup {
-
-        &.k-colorpicker-popup {
-            padding: 0;
-        }
-    }
-
-    // Tooltip popup container padding
-    .k-animation-container-shown.k-tooltip-wrapper {
-        .k-popup-transparent {
-            padding: 0;
-        }
-    }
-}
