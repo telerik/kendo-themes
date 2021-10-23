@@ -257,6 +257,10 @@ function renderDOM( jsxNode, container = null ) {
         element.append( children );
     } else {
         children.forEach( child => {
+            if (child === null) {
+                return;
+            }
+
             renderDOM( child, element );
         });
     }
