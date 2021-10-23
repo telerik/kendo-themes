@@ -559,17 +559,17 @@
         .k-numerictextbox {
             width: 10em;
 
-            & + .k-dropdown {
+            & + .k-dropdown-list {
                 width: 5em;
             }
 
-            & + .k-colorpicker,
-            & + .k-dropdown {
+            & + .k-color-picker,
+            & + .k-dropdown-list {
                 margin-left: map-get( $spacing, 2 );
             }
         }
 
-        .k-colorpicker {
+        .k-color-picker {
             vertical-align: middle;
         }
 
