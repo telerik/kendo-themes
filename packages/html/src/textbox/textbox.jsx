@@ -1,5 +1,6 @@
 import { globalDefaultProps } from '../component';
 import { Input, InputStatic, InputInnerInputStatic } from '../input/index';
+import { InputValidationIconStatic, InputLoadingIconStatic, InputClearValueStatic } from '../input/index';
 
 class Textbox extends Input {
     render() {
@@ -85,6 +86,9 @@ function TextboxStatic(props) {
                 {prefix}
                 <input type={type} className="k-input" {...inputAttributes} />
                 {suffix}
+                <InputValidationIconStatic {...props} />
+                <InputLoadingIconStatic {...props} />
+                <InputClearValueStatic {...props} />
             </InputStatic>
         );
     }
@@ -94,6 +98,9 @@ function TextboxStatic(props) {
             {prefix}
             <InputInnerInputStatic {...inputAttributes} />
             {suffix}
+            <InputValidationIconStatic {...props} />
+            <InputLoadingIconStatic {...props} />
+            <InputClearValueStatic {...props} />
         </InputStatic>
     );
 }
@@ -105,6 +112,10 @@ TextboxStatic.defaultProps = {
     value: '',
     placeholder: '',
     autocomplete: 'off',
+
+    showValidationIcon: true,
+    showLoadingIcon: true,
+    showClearButton: true,
 
     size: 'medium',
     rounded: 'medium',
@@ -121,6 +132,10 @@ TextboxStatic.propTypes = {
     placeholder: typeof '',
     autocomplete: typeof [ 'on', 'off' ],
 
+    showValidationIcon: typeof true,
+    showLoadingIcon: typeof true,
+    showClearButton: typeof true,
+
     prefix: typeof '#fragment',
     suffix: typeof '#fragment',
 
@@ -133,6 +148,7 @@ TextboxStatic.propTypes = {
     focus: typeof false,
     valid: typeof false,
     invalid: typeof false,
+    loading: typeof false,
     required: typeof false,
     disabled: typeof false,
 

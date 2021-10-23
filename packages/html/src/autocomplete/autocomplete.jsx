@@ -1,6 +1,6 @@
 import { globalDefaultProps } from '../component';
 import { Input, InputStatic, InputInnerInputStatic } from '../input/index';
-import { IconStatic } from '../icon/index';
+import { InputValidationIconStatic, InputLoadingIconStatic, InputClearValueStatic } from '../input/index';
 
 class Autocomplete extends Input {
     render() {
@@ -17,8 +17,6 @@ function AutocompleteStatic(props) {
         value,
         placeholder,
         autocomplete,
-
-        showClearButton,
 
         prefix,
         suffix,
@@ -86,10 +84,10 @@ function AutocompleteStatic(props) {
 
         return (
             <InputStatic className={legacyClasses} {...htmlAttributes}>
-                {prefix}
                 <input type={type} className="k-input" {...inputAttributes} />
-                {!disabled && showClearButton && value !== '' && <span className="k-clear-value"><IconStatic name="x" /></span>}
-                {suffix}
+                <InputValidationIconStatic {...props} />
+                <InputLoadingIconStatic {...props} />
+                <InputClearValueStatic {...props} />
             </InputStatic>
         );
     }
@@ -98,8 +96,10 @@ function AutocompleteStatic(props) {
         <InputStatic className={autocompleteClasses} {...ariaAttr} {...htmlAttributes}>
             {prefix}
             <InputInnerInputStatic {...inputAttributes} />
-            {!disabled && showClearButton && value !== '' && <span className="k-clear-value"><IconStatic name="x" /></span>}
             {suffix}
+            <InputValidationIconStatic {...props} />
+            <InputLoadingIconStatic {...props} />
+            <InputClearValueStatic {...props} />
         </InputStatic>
     );
 }
@@ -112,6 +112,8 @@ AutocompleteStatic.defaultProps = {
     placeholder: '',
     autocomplete: 'off',
 
+    showValidationIcon: true,
+    showLoadingIcon: true,
     showClearButton: true,
 
     size: 'medium',
@@ -129,6 +131,8 @@ AutocompleteStatic.propTypes = {
     placeholder: typeof '',
     autocomplete: typeof [ 'on', 'off' ],
 
+    showValidationIcon: typeof true,
+    showLoadingIcon: typeof true,
     showClearButton: typeof true,
 
     prefix: typeof '#fragment',
@@ -143,6 +147,7 @@ AutocompleteStatic.propTypes = {
     focus: typeof false,
     valid: typeof false,
     invalid: typeof false,
+    loading: typeof false,
     required: typeof false,
     disabled: typeof false,
 

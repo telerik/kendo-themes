@@ -49,6 +49,7 @@ function InputStatic(props) {
 
         hover,
         focus,
+        valid,
         invalid,
         required,
         disabled,
@@ -68,6 +69,7 @@ function InputStatic(props) {
         {
             'k-hover': hover === true,
             'k-focus': focus === true,
+            'k-valid': valid === true,
             'k-invalid': invalid === true,
             'k-required': required === true,
             'k-disabled': disabled === true

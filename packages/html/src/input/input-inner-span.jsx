@@ -43,19 +43,19 @@ function InputInnerSpanStatic(props) {
 
         return (
             <span className={legacyClasses} {...htmlAttributes}>
-                {false && valueIcon}
-                <IconStatic className="k-value-icon" name={valueIconName} />
-                {value === '' && placeholder}
-                {showValue && value && <span className="k-value-text">{value}</span>}
+                {valueIcon}
+                {valueIcon === null && <IconStatic className="k-icon k-input-value-icon" name={valueIconName} />}
+                {showValue && value === '' && placeholder}
+                {showValue && value && <span className="k-input-value-text">{value}</span>}
             </span>
         );
     }
 
     return (
         <span className={inputClasses} {...ariaAttr} {...htmlAttributes}>
-            {false && valueIcon}
-            <IconStatic className="k-value-icon" name={valueIconName} />
-            {value === '' && placeholder}
+            {valueIcon}
+            {valueIcon === null && <IconStatic className="k-icon k-input-value-icon" name={valueIconName} />}
+            {showValue && value === '' && placeholder}
             {showValue && value && <span className="k-value-text">{value}</span>}
         </span>
     );
@@ -68,7 +68,8 @@ InputInnerSpanStatic.defaultProps = {
     placeholder: '',
 
     showValue: true,
-    valueIconName: null,
+    valueIcon: null,
+    valueIconName: '',
 };
 
 InputInnerSpanStatic.propTypes = {

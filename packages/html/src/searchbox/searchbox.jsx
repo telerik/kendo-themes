@@ -1,5 +1,6 @@
 import { globalDefaultProps } from '../component';
 import { Input, InputStatic, InputInnerInputStatic } from '../input/index';
+import { InputValidationIconStatic, InputLoadingIconStatic, InputClearValueStatic } from '../input/index';
 import { IconStatic } from '../icon/index';
 
 class Searchbox extends Input {
@@ -19,7 +20,6 @@ function SearchboxInner(props) {
         autocomplete,
 
         showIcon,
-        iconPosition,
         iconName,
 
         prefix,
@@ -87,22 +87,24 @@ function SearchboxInner(props) {
 
         return (
             <InputStatic className={legacyClasses} {...htmlAttributes}>
-                {prefix}
-                {showIcon && iconPosition === 'leading' && <IconStatic name={iconName} className="k-input-icon" />}
+                {showIcon && <IconStatic name={iconName} className="k-input-icon" />}
                 <input type={type} className="k-input" {...inputAttributes} />
-                {showIcon && iconPosition === 'trailing' && <IconStatic name={iconName} className="k-input-icon" />}
-                {suffix}
+                <InputValidationIconStatic {...props} />
+                <InputLoadingIconStatic {...props} />
+                <InputClearValueStatic {...props} />
             </InputStatic>
         );
     }
 
     return (
         <InputStatic className={searchBoxClasses} {...ariaAttr} {...htmlAttributes}>
+            {showIcon && <IconStatic name={iconName} className="k-input-icon" />}
             {prefix}
-            {showIcon && iconPosition === 'leading' && <IconStatic name={iconName} className="k-input-icon" />}
             <InputInnerInputStatic {...inputAttributes} />
-            {showIcon && iconPosition === 'trailing' && <IconStatic name={iconName} className="k-input-icon" />}
             {suffix}
+            <InputValidationIconStatic {...props} />
+            <InputLoadingIconStatic {...props} />
+            <InputClearValueStatic {...props} />
         </InputStatic>
     );
 }
@@ -112,12 +114,15 @@ SearchboxInner.defaultProps = {
 
     type: 'text',
     value: '',
-    placeholder: 'Search...',
+    placeholder: '',
     autocomplete: 'off',
 
     showIcon: true,
-    iconPosition: 'leading',
     iconName: 'search',
+
+    showValidationIcon: true,
+    showLoadingIcon: true,
+    showClearButton: true,
 
     size: 'medium',
     rounded: 'medium',
@@ -135,8 +140,11 @@ SearchboxInner.propTypes = {
     autocomplete: typeof [ 'on', 'off' ],
 
     showIcon: typeof true,
-    iconPosition: typeof [ 'leading', 'trailing' ],
     iconName: typeof '',
+
+    showValidationIcon: typeof true,
+    showLoadingIcon: typeof true,
+    showClearButton: typeof true,
 
     prefix: typeof '#fragment',
     suffix: typeof '#fragment',
@@ -150,6 +158,7 @@ SearchboxInner.propTypes = {
     focus: typeof false,
     valid: typeof false,
     invalid: typeof false,
+    loading: typeof false,
     required: typeof false,
     disabled: typeof false,
 

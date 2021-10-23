@@ -1,5 +1,6 @@
 import { globalDefaultProps } from '../component';
 import { Input, InputStatic, InputInnerInputStatic } from '../input/index';
+import { InputValidationIconStatic, InputLoadingIconStatic, InputClearValueStatic } from '../input/index';
 import { ButtonStatic } from '../button/index';
 import { IconStatic } from '../icon/index';
 
@@ -18,8 +19,6 @@ function ComboboxStatic(props) {
         value,
         placeholder,
         autocomplete,
-
-        showClearButton,
 
         prefix,
         suffix,
@@ -93,10 +92,10 @@ function ComboboxStatic(props) {
         return (
             <InputStatic className={legacyClasses} {...htmlAttributes}>
                 <span className={legacyWrapClasses}>
-                    {prefix}
                     <input type={type} className="k-input" {...inputAttributes} />
-                    {!disabled && showClearButton && value !== '' && <span className="k-clear-value"><IconStatic name="x" /></span>}
-                    {suffix}
+                    <InputValidationIconStatic {...props} />
+                    <InputLoadingIconStatic {...props} />
+                    <InputClearValueStatic {...props} />
                     <span className="k-select"><IconStatic name="arrow-s" /></span>
                 </span>
             </InputStatic>
@@ -107,8 +106,10 @@ function ComboboxStatic(props) {
         <InputStatic className={comboboxClasses} {...ariaAttr} {...htmlAttributes}>
             {prefix}
             <InputInnerInputStatic {...inputAttributes} />
-            {!disabled && showClearButton && value !== '' && <span className="k-clear-value"><IconStatic name="x" /></span>}
             {suffix}
+            <InputValidationIconStatic {...props} />
+            <InputLoadingIconStatic {...props} />
+            <InputClearValueStatic {...props} />
             <ButtonStatic className="k-input-button" icon="arrow-s" rounded="none" size={size} fillMode={fillMode}></ButtonStatic>
         </InputStatic>
     );
@@ -122,6 +123,8 @@ ComboboxStatic.defaultProps = {
     placeholder: '',
     autocomplete: 'off',
 
+    showValidationIcon: true,
+    showLoadingIcon: true,
     showClearButton: true,
 
     size: 'medium',
@@ -139,6 +142,8 @@ ComboboxStatic.propTypes = {
     placeholder: typeof '',
     autocomplete: typeof [ 'on', 'off' ],
 
+    showValidationIcon: typeof true,
+    showLoadingIcon: typeof true,
     showClearButton: typeof true,
 
     prefix: typeof '#fragment',
