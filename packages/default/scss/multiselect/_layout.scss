@@ -107,17 +107,9 @@
 
             // Clear value
             .k-clear-value {
-                visibility: hidden;
                 position: absolute;
                 top: 0;
                 right: 0;
-            }
-            &:hover,
-            &.k-state-hover,
-            &.k-state-focused {
-                .k-clear-value {
-                    visibility: visible;
-                }
             }
 
             // Select
@@ -138,17 +130,6 @@
 
         .k-multiselect-wrap.k-multiselect-wrap-arrow .k-clear-value {
             right: $multiselect-clear-right;
-        }
-
-
-        &.k-state-hover,
-        &.k-state-focused,
-        &.k-state-focus {
-            > .k-multiselect-wrap {
-                .k-clear-value {
-                    visibility: visible;
-                }
-            }
         }
 
         &[dir="rtl"],
