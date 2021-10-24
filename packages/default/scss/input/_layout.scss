@@ -116,7 +116,9 @@
     }
 
     // Input with icon styles
-    .k-input-icon {
+    .k-input-icon,
+    .k-input-validation-icon,
+    .k-input-loading-icon {
         width: $input-icon-width;
         height: $input-icon-height;
         display: inline-flex;
@@ -124,21 +126,6 @@
         align-items: center;
         justify-content: center;
         flex-shrink: 0;
-
-        .k-ie9 & {
-            position: absolute;
-            height: 100%;
-            right: 0;
-            top: 0;
-        }
-
-        .k-rtl &,
-        [dir="rtl"] & {
-            .k-ie9 & {
-                left: 0;
-                right: auto;
-            }
-        }
     }
 
 

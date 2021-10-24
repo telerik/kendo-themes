@@ -51,18 +51,6 @@
                 text-align: center;
                 cursor: pointer;
             }
-
-            // Clear value
-            .k-clear-value {
-                visibility: hidden;
-            }
-            &.k-state-focused,
-            &.k-state-hover,
-            &:hover {
-                .k-clear-value {
-                    visibility: visible;
-                }
-            }
         }
 
     }
