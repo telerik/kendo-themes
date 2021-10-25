@@ -174,11 +174,7 @@
             <div class="telerik-blazor k-animation-container" style="height: 200px; z-index: 10002; width: 200px;">
                 <div style="height: 200px; transition-delay: 0ms; transition-duration: 300ms;" class="k-list-container k-popup k-reset">
                     <div class="k-list-filter">
-                        <span is="Textbox" placeholder="Filter...">
-                            <slot is="InputSuffix">
-                                <span is="Icon" name="search"></span>
-                            </slot>
-                        </span>
+                        <input is="Searchbox" placeholder="Filter..." />
                     </div>
                     <div class="k-nodata">
                         <div>No data</div>
