@@ -266,13 +266,23 @@
 
     // Message box
     .k-message-box {
+        width: 100%;
+        height: auto;
         padding: $chat-message-box-padding-y $chat-message-box-padding-x;
+        box-sizing: border-box;
         border-width: 1px 0 0;
         border-style: solid;
-        flex: 0 0 auto;
+        flex: none;
         display: flex;
         flex-flow: row nowrap;
         align-items: center;
+
+        &:focus,
+        &.k-state-focus,
+        &:focus-within {
+            outline: 0;
+            box-shadow: none;
+        }
 
         // Input
         .k-input {
@@ -411,11 +421,17 @@
 
     .k-chat-toolbar,
     .k-chat .k-toolbar-box {
+        padding: $chat-toolbar-padding-y $chat-toolbar-padding-x;
         width: 100%;
+        border-width: 1px 0 0;
         box-sizing: border-box;
+        flex: none;
         overflow: hidden;
         position: relative;
-        flex: 0 0 auto;
+
+        &::before {
+            display: none;
+        }
 
         .k-button-list {
             // Needed for native scrolling. Will uncoment when it's implemented.
@@ -426,18 +442,13 @@
             overflow: hidden;
             // overflow-x: auto;
             scroll-behavior: smooth;
-            padding: $chat-toolbar-padding-y $chat-toolbar-padding-x;
+        }
 
-            // fix for flex container disregarding the right padding
-            &::after {
-                content: "";
-                padding-right: $chat-toolbar-padding-x;
-            }
-
-            .k-button + .k-button {
-                margin-left: $chat-toolbar-spacing;
-                flex-shrink: 0;
-            }
+        .k-button {
+            border-color: transparent;
+            color: inherit;
+            background: none;
+            flex: none;
         }
 
 
@@ -452,13 +463,6 @@
         }
         .k-scroll-button-right {
             right: 0;
-        }
-
-        .k-button {
-            border-width: 0;
-            color: inherit;
-            background: none;
-            flex-shrink: 0;
         }
 
 
