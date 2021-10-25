@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en" class="k-no-animations">
+<head>
+    <title>TimePicker</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+    <script src="../../assets/scripts.js"></script>
+    <script src="../../../../packages/html/dist/index.js"></script>
+
+    <style>
+        #test-area {
+            max-width: 660px;
+        }
+        .k-timepicker {
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="k-body">
+
+    <div id="test-area" class="k-d-grid k-grid-cols-2">
+
+        <span>TimePicker</span>
+        <span>TimePicker RTL</span>
+
+        <!-- empty -->
+        <div>
+            <input is="TimePicker" placeholder="TimePicker..." />
+        </div>
+        <div dir="rtl">
+            <input is="TimePicker" placeholder="TimePicker..." />
+        </div>
+
+        <!-- normal -->
+        <div>
+            <input is="TimePicker" value="Normal" />
+        </div>
+        <div dir="rtl">
+            <input is="TimePicker" value="Normal" />
+        </div>
+
+        <!-- hover -->
+        <div>
+            <input is="TimePicker" value="Hover" hover />
+        </div>
+        <div dir="rtl">
+            <input is="TimePicker" value="Hover" hover />
+        </div>
+
+        <!-- focus -->
+        <div>
+            <input is="TimePicker" value="Focus" focus />
+        </div>
+        <div dir="rtl">
+            <input is="TimePicker" value="Focus" focus />
+        </div>
+
+        <!-- disabled -->
+        <div>
+            <input is="TimePicker" value="Disabled" disabled />
+        </div>
+        <div dir="rtl">
+            <input is="TimePicker" value="Disabled" disabled />
+        </div>
+
+        <!-- invalid -->
+        <div>
+            <input is="TimePicker" value="Invalid" invalid />
+        </div>
+        <div dir="rtl">
+            <input is="TimePicker" value="Invalid" invalid />
+        </div>
+
+        <!-- invalid + focus -->
+        <div>
+            <input is="TimePicker" value="Invalid focus" invalid focus />
+        </div>
+        <div dir="rtl">
+            <input is="TimePicker" value="Invalid focus" invalid focus />
+        </div>
+
+        <!-- loading -->
+        <div>
+            <input is="TimePicker" value="Loading..." loading />
+        </div>
+        <div dir="rtl">
+            <input is="TimePicker" value="Loading..." loading />
+        </div>
+
+    </div>
+
+</body>
+</html>
