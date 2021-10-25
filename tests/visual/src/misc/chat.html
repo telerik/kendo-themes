@@ -88,55 +88,26 @@
                         </div>
                     </div>
                 </div>
-                <div class="k-message-box">
-                    <input class="k-input" type="text" placeholder="Type a message...">
-                    <button class="k-button k-flat k-button-icon k-button-toggle" type="button">
-                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-                            <g>
-                                <path d="M128,240c0-26.4-21.6-48-48-48s-48,21.6-48,48s21.6,48,48,48S128,266.4,128,240z"></path>
-                                <path d="M192,240c0,26.4,21.6,48,48,48c26.4,0,48-21.6,48-48s-21.6-48-48-48C213.6,192,192,213.6,192,240z"></path>
-                                <path d="M352,240c0,26.4,21.6,48,48,48c26.4,0,48-21.6,48-48s-21.6-48-48-48C373.6,192,352,213.6,352,240z"></path>
-                            </g>
-                        </svg>
-                    </button>
-                    <button class="k-button k-button-icon k-flat k-button-send">
-                        <svg version="1.1" viewBox="0 0 16 16" x="0px" xmlns="http://www.w3.org/2000/svg" y="0px">
-                            <path d="M0,14.3c-0.1,0.6,0.3,0.8,0.8,0.6l14.8-6.5c0.5-0.2,0.5-0.6,0-0.8L0.8,1.1C0.3,0.9-0.1,1.1,0,1.7l0.7,4.2C0.8,6.5,1.4,7,1.9,7.1l8.8,0.8c0.6,0.1,0.6,0.1,0,0.2L1.9,8.9C1.4,9,0.8,9.5,0.7,10.1L0,14.3z"></path>
-                        </svg>
-                    </button>
+                <div is="Textbox" class="k-message-box" placeholder="Type a message...">
+                    <slot is="InputSuffix">
+                        <button is="Button" fillMode="flat" icon="more-horizontal"></button>
+                        <button is="Button" fillMode="flat" icon="pencil" class="k-chat-send"></button>
+                    </slot>
                 </div>
-                <div class="k-toolbar-box" style="display: block; height: auto; overflow: hidden;">
+                <div class="k-chat-toolbar k-toolbar" style="display: block; height: auto; overflow: hidden;">
                     <button class="k-scroll-button k-scroll-button-left chatToolbarScrollLeft k-button k-button-icon" type="button" hidden>
                         <i is="Icon" name="arrow-chevron-left"></i>
                     </button>
-                    <div class="k-button-list">
-                        <button type="button" class="restart k-button k-button-icon">
-                            <i is="Icon" name="reload"></i>
-                        </button>
-                        <button type="button" class="setting k-button k-button-icon k-state-focused">
-                            <i is="Icon" name="cog"></i>
-                        </button>
-                        <button type="button" class="options k-button k-button-icon">
-                            <i is="Icon" name="wrench"></i>
-                        </button>
-                        <button type="button" class="add k-button k-button-icon">
-                            <i is="Icon" name="plus"></i>
-                        </button>
-                        <button type="button" class="zoom k-button k-button-icon">
-                            <i is="Icon" name="zoom"></i>
-                        </button>
-                        <button type="button" class="favorite k-button k-button-icon">
-                            <i is="Icon" name="star"></i>
-                        </button>
-                        <button type="button" class="notify k-button k-button-icon">
-                            <i is="Icon" name="bell"></i>
-                        </button>
-                        <button type="button" class="info k-button k-button-icon">
-                            <i is="Icon" name="help"></i>
-                        </button>
-                        <button type="button" class="delete k-button k-button-icon">
-                            <i is="Icon" name="trash"></i>
-                        </button>
+                    <div class="k-toolbar-group k-button-list">
+                        <button is="Button" fillMode="flat" icon="reload"></button>
+                        <button is="Button" fillMode="flat" icon="cog"></button>
+                        <button is="Button" fillMode="flat" icon="wrench"></button>
+                        <button is="Button" fillMode="flat" icon="plus"></button>
+                        <button is="Button" fillMode="flat" icon="zoom"></button>
+                        <button is="Button" fillMode="flat" icon="star"></button>
+                        <button is="Button" fillMode="flat" icon="bell"></button>
+                        <button is="Button" fillMode="flat" icon="help"></button>
+                        <button is="Button" fillMode="flat" icon="trash"></button>
                     </div>
                     <button class="k-scroll-button k-scroll-button-right chatToolbarScrollRight k-button k-button-icon" type="button" style="display: flex;">
                         <i is="Icon" name="arrow-chevron-right"></i>
@@ -193,13 +164,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="k-message-box">
-                    <input class="k-input" type="text" placeholder="Type a message...">
-                    <button class="k-button k-button-icon k-flat k-button-send">
-                        <svg version="1.1" viewBox="0 0 16 16" x="0px" xmlns="http://www.w3.org/2000/svg" y="0px">
-                            <path d="M0,14.3c-0.1,0.6,0.3,0.8,0.8,0.6l14.8-6.5c0.5-0.2,0.5-0.6,0-0.8L0.8,1.1C0.3,0.9-0.1,1.1,0,1.7l0.7,4.2C0.8,6.5,1.4,7,1.9,7.1l8.8,0.8c0.6,0.1,0.6,0.1,0,0.2L1.9,8.9C1.4,9,0.8,9.5,0.7,10.1L0,14.3z"></path>
-                        </svg>
-                    </button>
+                <div is="Textbox" class="k-message-box" placeholder="Type a message...">
+                    <slot is="InputSuffix">
+                        <button is="Button" fillMode="flat" icon="more-horizontal"></button>
+                        <button is="Button" fillMode="flat" icon="pencil" class="k-chat-send"></button>
+                    </slot>
                 </div>
             </div>
         </section>
