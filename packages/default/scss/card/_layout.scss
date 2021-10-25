@@ -329,6 +329,7 @@
         height: $card-callout-height;
         border-width: $card-border-width $card-border-width 0 0;
         border-style: solid;
+        box-sizing: border-box;
         position: absolute;
     }
 
