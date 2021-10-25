@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en" class="k-no-animations">
+<head>
+    <title>DateTimePicker</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+    <script src="../../assets/scripts.js"></script>
+    <script src="../../../../packages/html/dist/index.js"></script>
+
+    <style>
+        #test-area {
+            max-width: 660px;
+        }
+        .k-datetimepicker {
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="k-body">
+
+    <div id="test-area" class="k-d-grid k-grid-cols-2">
+
+        <span>DateTimePicker</span>
+        <span>DateTimePicker RTL</span>
+
+        <!-- empty -->
+        <div>
+            <input is="DateTimePicker" placeholder="DateTimePicker..." />
+        </div>
+        <div dir="rtl">
+            <input is="DateTimePicker" placeholder="DateTimePicker..." />
+        </div>
+
+        <!-- normal -->
+        <div>
+            <input is="DateTimePicker" value="Normal" />
+        </div>
+        <div dir="rtl">
+            <input is="DateTimePicker" value="Normal" />
+        </div>
+
+        <!-- hover -->
+        <div>
+            <input is="DateTimePicker" value="Hover" hover />
+        </div>
+        <div dir="rtl">
+            <input is="DateTimePicker" value="Hover" hover />
+        </div>
+
+        <!-- focus -->
+        <div>
+            <input is="DateTimePicker" value="Focus" focus />
+        </div>
+        <div dir="rtl">
+            <input is="DateTimePicker" value="Focus" focus />
+        </div>
+
+        <!-- disabled -->
+        <div>
+            <input is="DateTimePicker" value="Disabled" disabled />
+        </div>
+        <div dir="rtl">
+            <input is="DateTimePicker" value="Disabled" disabled />
+        </div>
+
+        <!-- invalid -->
+        <div>
+            <input is="DateTimePicker" value="Invalid" invalid />
+        </div>
+        <div dir="rtl">
+            <input is="DateTimePicker" value="Invalid" invalid />
+        </div>
+
+        <!-- invalid + focus -->
+        <div>
+            <input is="DateTimePicker" value="Invalid focus" invalid focus />
+        </div>
+        <div dir="rtl">
+            <input is="DateTimePicker" value="Invalid focus" invalid focus />
+        </div>
+
+        <!-- loading -->
+        <div>
+            <input is="DateTimePicker" value="Loading..." loading />
+        </div>
+        <div dir="rtl">
+            <input is="DateTimePicker" value="Loading..." loading />
+        </div>
+
+    </div>
+
+</body>
+</html>
