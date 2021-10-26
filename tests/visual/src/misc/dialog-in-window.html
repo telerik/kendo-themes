@@ -9,9 +9,13 @@
     <script src="../../../../packages/html/dist/index.js"></script>
 
     <style>
+        #test-area {
+            width: 500px;
+            transform: translate( 0, 0 );
+        }
         .k-window {
-            width: 800px;
-            height: 500px;
+            width: 100%;
+            height: 400px;
             position: relative;
         }
         .k-dialog {
@@ -22,7 +26,7 @@
 </head>
 <body class="k-body">
 
-    <div id="test-area" class="k-d-grid">
+    <div id="test-area" class="k-d-grid k-grid-cols-1">
 
         <section>
             <kendo-window class="k-widget k-window k-window-wrapper">

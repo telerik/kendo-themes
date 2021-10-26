@@ -9,20 +9,20 @@
     <script src="../../../../packages/html/dist/index.js"></script>
 
     <style>
-        /* ensure test area size, due to fixed element */
         #test-area {
-            width: 1024px;
-            height: 768px;
-            align-items: stretch;
+            width: 500px;
+            height: 400px;
+            transform: translate( 0, 0 );
         }
-        .k-dialog-wrapper {
-            position: relative;
+        .k-dialog {
+            width: 300px;
+            height: 200px;
         }
     </style>
 </head>
 <body class="k-body">
 
-    <div id="test-area" class="grid">
+    <div id="test-area" class="k-grid-cols-1">
 
         <kendo-dialog class="k-dialog-wrapper">
             <div class="k-overlay"></div>

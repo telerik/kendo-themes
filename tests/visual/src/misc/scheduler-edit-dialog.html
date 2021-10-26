@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en" class="k-no-animations">
+
+<head>
+    <title>Scheduler edit dialog</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+    <script src="../../assets/scripts.js"></script>
+    <script src="../../../../packages/html/dist/index.js"></script>
+
+    <style>
+        #test-area {
+            width: 700px;
+        }
+        .k-window {
+            width: 100%;
+            position: relative;
+        }
+
+        .k-scheduler-datetime-picker {
+            gap: 8px;
+        }
+
+        .k-numerictextbox {
+            max-width: 70px;
+        }
+
+        .k-recurrence-editor,
+        .k-recur-view,
+        .k-scheduler-recurrence-repeat,
+        .k-scheduler-recurrence-interval-editor,
+        .k-scheduler-recurrence-end-rule-editor {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body class="k-body">
+
+    <div id="test-area" class="grid">
+
+        <section>
+
+            <div class="k-window">
+                <div class="k-window-titlebar">
+                    <div class="k-window-title">Event</div>
+                    <div class="k-window-actions"><button is="Button" fillMode="flat" icon="close"></button></div>
+                </div>
+                <div class="k-window-content">
+                    <div class="k-scheduler-edit-form k-form k-form-horizontal">
+                        <div class="k-form-field">
+                            <div class="k-form-label">
+                                <label for="k-event-title">Title</label>
+                            </div>
+                            <div class="k-form-field-wrap">
+                                <input is="Textbox" placeholder="Title..." />
+                            </div>
+                        </div>
+                        <div class="k-form-field">
+                            <div class="k-form-label">
+                                <label>Start</label>
+                            </div>
+                            <div class="k-form-field-wrap">
+                                <div class="k-scheduler-datetime-picker k-hstack">
+                                    <input is="DatePicker" />
+                                    <input is="TimePicker" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="k-form-field">
+                            <div class="k-form-label">
+                                <label>End</label>
+                            </div>
+                            <div class="k-form-field-wrap">
+                                <div class="k-scheduler-datetime-picker k-hstack">
+                                    <input is="DatePicker" />
+                                    <input is="TimePicker" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="k-form-field">
+                            <div class="k-form-label k-empty"></div>
+                            <div class="k-form-field-wrap">
+                                <input is="Checkbox" id="k-is-allday-chkbox" />
+                                <label class="k-checkbox-label" for="k-is-allday-chkbox">All Day Event</label>
+                            </div>
+                        </div>
+                        <div class="k-form-field">
+                            <div class="k-form-label k-empty"></div>
+                            <div class="k-form-field-wrap">
+                                <input is="Checkbox" id="k-set-timezone" />
+                                <label class="k-checkbox-label" for="k-set-timezone">Specify Time Zone</label>
+                            </div>
+                        </div>
+                        <div class="k-recurrence-editor">
+                            <div class="k-form-field">
+                                <div class="k-form-label">
+                                    <label>Repeat</label>
+                                </div>
+                                <div class="k-form-field-wrap">
+                                    <div class="k-scheduler-recurrence-repeat k-button-group k-button-group-stretched">
+                                        <button is="Button">Never</button>
+                                        <button is="Button" selected>Daily</button>
+                                        <button is="Button">Weekly</button>
+                                        <button is="Button">Monthly</button>
+                                        <button is="Button">Yearly</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="k-recur-view">
+                                <div class="k-scheduler-recurrence-interval-editor">
+                                    <div class="k-form-field">
+                                        <div class="k-form-label">
+                                            <label>Repeat every</label>
+                                        </div>
+                                        <div class="k-form-field-wrap">
+                                            <input is="NumericTextbox" />
+                                            <span>day(s)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="k-scheduler-recurrence-end-rule-editor">
+                                    <div class="k-form-field">
+                                        <div class="k-form-label">
+                                            <label>End</label>
+                                        </div>
+                                        <div class="k-form-field-wrap">
+                                            <ul class="k-radio-list">
+                                                <li class="k-radio-item">
+                                                    <input is="Radio" id="k-endrule-never" name="end" />
+                                                    <label class="k-radio-label" for="k-endrule-never">Never</label>
+                                                </li>
+                                                <li class="k-radio-item">
+                                                    <input is="Radio" id="k-endrule-count" name="end" />
+                                                    <label class="k-radio-label" for="k-endrule-count">After</label>
+                                                    <input is="NumericTextbox" />
+                                                    <span>occurrence(s)</span>
+                                                </li>
+                                                <li class="k-radio-item">
+                                                    <input is="Radio" id="k-endrule-until" name="end" />
+                                                    <label class="k-radio-label" for="k-endrule-until">On</label>
+                                                    <input is="DatePicker" disabled style="width: 150px;" />
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="k-form-field">
+                            <div class="k-form-label">
+                                <label for="k-event-description">Description</label>
+                            </div>
+                            <div class="k-form-field-wrap">
+                                <textarea is="Textarea"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="k-window-buttons k-actions k-actions-end">
+                    <button is="Button">Cancel</button>
+                    <button is="Button" themeColor="primary">Save</button>
+                </div>
+            </div>
+
+        </section>
+
+    </div>
+
+</body>
+
+</html>

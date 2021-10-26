@@ -11,11 +11,15 @@
 
     <style>
         #test-area {
-            grid-template-columns: repeat(2, 1fr);
-            min-height: 600px;
+            width: 600px;
         }
         .k-window {
+            width: 100%;
             position: relative;
+        }
+        .k-numerictextbox,
+        .k-numeric-textbox {
+            max-width: 100px;
         }
     </style>
 </head>
@@ -23,71 +27,84 @@
 <body class="k-body">
 
     <div id="test-area" class="grid">
-        <div class="k-widget k-window" style="display: flex; padding-top: 45px;">
-            <div class="k-window-titlebar k-header" style="margin-top: -45px;">
-                <span class="k-window-title">Table Wizard</span>
-                <div class="k-window-actions">
-                    <button is="Button" fillMode="flat" icon="close"></button>
+
+        <section>
+            <div class="k-window">
+                <div class="k-window-titlebar">
+                    <span class="k-window-title">Table Wizard</span>
+                    <div class="k-window-actions">
+                        <button is="Button" fillMode="flat" icon="close"></button>
+                    </div>
                 </div>
-            </div>
-            <div class="k-editor-dialog k-editor-table-wizard-dialog k-action-window k-popup-edit-form k-window-content k-content">
-                <div class="k-edit-form-container">
-                    <div class="k-tabstrip-wrapper">
-                        <div class="k-root-tabs k-widget k-header k-tabstrip k-floatwrap k-tabstrip-top">
-                            <div class="k-tabstrip-items-wrapper k-hstack">
-                                <ul class="k-tabstrip-items k-reset">
-                                    <li class="k-item k-first"><span class="k-loading k-complete"></span><span class="k-link">Table</span></li>
-                                    <li class="k-item"><span class="k-loading k-complete"></span><span class="k-link">Cell</span></li>
-                                    <li class="k-item k-last k-tab-on-top k-state-active"><span class="k-loading k-complete"></span><span class="k-link">Accessibility</span></li>
-                                </ul>
-                            </div>
-                            <div class="k-content k-state-active">
-                                <div class="k-edit-label">
-                                    <label>Header Rows</label>
+                <div class="k-window-content k-content">
+                    <div class="k-tabstrip k-tabstrip-top">
+                        <div class="k-tabstrip-items-wrapper k-hstack">
+                            <ul class="k-tabstrip-items k-reset">
+                                <li class="k-item k-first"><span class="k-loading k-complete"></span><span class="k-link">Table</span></li>
+                                <li class="k-item"><span class="k-loading k-complete"></span><span class="k-link">Cell</span></li>
+                                <li class="k-item k-last k-tab-on-top k-state-active"><span class="k-loading k-complete"></span><span class="k-link">Accessibility</span></li>
+                            </ul>
+                        </div>
+                        <div class="k-tabstrip-content k-content k-state-active">
+                            <div class="k-form k-form-horizontal">
+                                <div class="k-form-field">
+                                    <div class="k-form-label">
+                                        <label>Header Rows</label>
+                                    </div>
+                                    <div class="k-form-field-wrap">
+                                        <input is="NumericTextbox" />
+                                    </div>
                                 </div>
-                                <div class="k-edit-field">
-                                    <input is="NumericTextbox" />
+                                <div class="k-form-field">
+                                    <div class="k-form-label">
+                                        <label>Header Cols</label>
+                                    </div>
+                                    <div class="k-form-field-wrap">
+                                        <input is="NumericTextbox" />
+                                    </div>
                                 </div>
-                                <div class="k-edit-label">
-                                    <label>Header Cols</label>
+                                <div class="k-form-field">
+                                    <div class="k-form-label">
+                                        <label>Caption</label>
+                                    </div>
+                                    <div class="k-form-field-wrap">
+                                        <input is="Textbox" />
+                                    </div>
                                 </div>
-                                <div class="k-edit-field">
-                                    <input is="NumericTextbox" />
+                                <div class="k-form-field">
+                                    <div class="k-form-label">
+                                        <label>Alignment</label>
+                                    </div>
+                                    <div class="k-form-field-wrap">
+                                        <input is="DropdownList" class="k-align" showValue="false" value="Remove align" valueIconName="align-remove" style="width: min-content" />
+                                    </div>
                                 </div>
-                                <div class="k-edit-label">
-                                    <label>Caption</label>
+                                <div class="k-form-field">
+                                    <div class="k-form-label">
+                                        <label>Summary</label>
+                                    </div>
+                                    <div class="k-form-field-wrap">
+                                        <textarea is="Textarea" class="k-editor-accessibility-summary" placeholder="Summary attribute is not HTML5 compatible."></textarea>
+                                    </div>
                                 </div>
-                                <div class="k-edit-field">
-                                    <input is="Textbox" />
-                                </div>
-                                <div class="k-edit-label">
-                                    <label>Alignment</label>
-                                </div>
-                                <div class="k-edit-field">
-                                    <input is="DropdownList" class="k-align" showValue="false" value="Remove align" valueIconName="align-remove" />
-                                </div>
-                                <div class="k-edit-label">
-                                    <label>Summary</label>
-                                </div>
-                                <div class="k-edit-field">
-                                    <textarea is="Textarea" class="k-editor-accessibility-summary" placeholder="Summary attribute is not HTML5 compatible."></textarea>
-                                </div>
-                                <div class="k-edit-label">
-                                    <label>Associate headers</label>
-                                </div>
-                                <div class="k-edit-field">
-                                    <input is="DropdownList" value="None" />
+                                <div class="k-form-field">
+                                    <div class="k-form-label">
+                                        <label>Associate headers</label>
+                                    </div>
+                                    <div class="k-form-field-wrap">
+                                        <input is="DropdownList" value="None" />
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="k-edit-buttons">
-                        <button is="Button">Cancel</button>
-                        <button is="Button" themeColor="primary">Update</button>
-                    </div>
+                </div>
+                <div class="k-window-buttons k-actions k-actions-end">
+                    <button is="Button">Cancel</button>
+                    <button is="Button" themeColor="primary">Update</button>
                 </div>
             </div>
-        </div>
+        </section>
     </div>
 
 </body>

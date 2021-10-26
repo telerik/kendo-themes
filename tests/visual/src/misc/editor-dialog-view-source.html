@@ -9,13 +9,14 @@
     <script src="../../../../packages/html/dist/index.js"></script>
 
     <style>
-        .k-dialog-wrapper {
-            position: relative;
+        #test-area {
             width: 500px;
         }
-        .k-dialog {
-            width: 500px;
+
+        .k-window {
+            width: 100%;
             height: 400px;
+            position: relative;
         }
     </style>
 </head>
@@ -23,24 +24,23 @@
 
     <div id="test-area" class="k-d-grid k-grid-cols-1">
 
-        <div class="k-dialog-wrapper">
-            <div class="k-overlay"></div>
-            <div class="k-widget k-window k-dialog">
-                <div class="k-window-titlebar k-dialog-titlebar k-header">
-                    <div class="k-window-title k-dialog-title">View HTML</div>
-                    <div class="k-window-actions k-dialog-actions">
+        <section>
+            <div class="k-window">
+                <div class="k-window-titlebar">
+                    <span class="k-window-title">View HTML</span>
+                    <div class="k-window-actions">
                         <button is="Button" fillMode="flat" icon="close"></button>
                     </div>
                 </div>
-                <div class="k-content k-window-content k-dialog-content">
+                <div class="k-window-content">
                     <textarea is="Textarea" class="k-editor-textarea"></textarea>
                 </div>
-                <div class="k-dialog-buttongroup k-actions k-actions-end">
+                <div class="k-window-buttons k-actions k-actions-end">
                     <button is="Button">Cancel</button>
                     <button is="Button" themeColor="primary">Update</button>
                 </div>
             </div>
-        </div>
+        </section>
 
     </div>
 
