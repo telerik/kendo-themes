@@ -129,6 +129,7 @@
     }
 
     // Buttons Layout
+    .k-window-buttons,
     .k-window-buttongroup {
         @include border-bottom-radius( $window-border-radius );
         padding: $window-buttongroup-padding-y $window-buttongroup-padding-x;
