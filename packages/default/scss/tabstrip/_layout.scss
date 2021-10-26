@@ -33,7 +33,6 @@
         border-style: solid;
         border-color: inherit;
         position: relative;
-        z-index: 2;
     }
 
     .k-tabstrip-items {
@@ -172,6 +171,7 @@
         > .k-content,
         > .k-tabstrip-content {
             @include border-bottom-radius( $tabstrip-item-border-radius );
+            margin-top: $tabstrip-border-width;
             border-top-color: transparent !important; // sass-lint:disable-line no-important
         }
     }
@@ -197,6 +197,7 @@
         > .k-content,
         > .k-tabstrip-content {
             @include border-top-radius( $tabstrip-item-border-radius );
+            margin-bottom: $tabstrip-border-width;
             border-bottom-color: transparent !important; // sass-lint:disable-line no-important
         }
     }
@@ -229,7 +230,7 @@
         > .k-content,
         > .k-tabstrip-content {
             @include border-right-radius( $tabstrip-item-border-radius );
-            margin: 0 !important; // sass-lint:disable-line no-important
+            margin: 0 0 0 $tabstrip-border-width !important; // sass-lint:disable-line no-important
             border-left-color: transparent !important; // sass-lint:disable-line no-important
         }
 
@@ -263,7 +264,7 @@
         > .k-content,
         > .k-tabstrip-content {
             @include border-left-radius( $tabstrip-item-border-radius );
-            margin: 0 !important; // sass-lint:disable-line no-important
+            margin: 0 $tabstrip-border-width 0 0 !important; // sass-lint:disable-line no-important
             border-right-color: transparent !important; // sass-lint:disable-line no-important
         }
     }
