@@ -159,7 +159,7 @@
         .k-maskedtextbox,
         .k-textbox-container,
         .k-floating-label-container {
-            display: flex;
+            display: inline-flex;
             width: 100%;
         }
 
@@ -220,6 +220,7 @@
                 margin-right: $horizontal-form-label-margin-x;
                 padding-top: $horizontal-form-label-padding-top;
                 width: $horizontal-form-label-width;
+                text-align: end;
                 flex-direction: column;
                 align-items: $horizontal-form-label-align;
                 justify-content: flex-start;
