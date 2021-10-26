@@ -44,6 +44,7 @@ const booleanAttr = new Set([
     'hover',
     'focus',
     'active',
+    'readonly',
     'disabled',
 
     'checked',
