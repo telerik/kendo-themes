@@ -1,6 +1,6 @@
 import { Component, globalDefaultProps } from '../component';
-import { IconStatic } from '../icon/index';
 import { InputStatic, InputInnerInputStatic } from '../input/index';
+import { InputValidationIconStatic, InputLoadingIconStatic, InputClearValueStatic } from '../input/index';
 
 class MaskedTextbox extends Component {
     render() {
@@ -16,6 +16,7 @@ function MaskedTextboxStatic(props) {
         type,
         value,
         placeholder,
+        autocomplete,
 
         size,
         rounded,
@@ -41,7 +42,7 @@ function MaskedTextboxStatic(props) {
     htmlAttributes.fillMode = fillMode;
     htmlAttributes.hover = hover;
     htmlAttributes.focus = focus;
-    htmlAttributes.valid = invalid;
+    htmlAttributes.valid = valid;
     htmlAttributes.invalid = invalid;
     htmlAttributes.required = required;
     htmlAttributes.disabled = disabled;
@@ -50,6 +51,7 @@ function MaskedTextboxStatic(props) {
         type,
         value,
         placeholder,
+        autocomplete,
 
         disabled
     };
@@ -86,7 +88,6 @@ function MaskedTextboxStatic(props) {
         return (
             <InputStatic className={legacyClasses} {...htmlAttributes}>
                 <input type={type} className={legacyInputClasses} {...inputAttributes} />
-                {invalid && <IconStatic name="warning" />}
             </InputStatic>
         );
     }
@@ -94,8 +95,9 @@ function MaskedTextboxStatic(props) {
     return (
         <InputStatic className={maskedClasses} {...ariaAttr} {...htmlAttributes}>
             <InputInnerInputStatic {...inputAttributes} />
-            {valid && <IconStatic className="k-input-icon" name="check" />}
-            {invalid && <IconStatic className="k-input-icon" name="warning" />}
+            <InputValidationIconStatic {...props} />
+            <InputLoadingIconStatic {...props} />
+            <InputClearValueStatic {...props} />
         </InputStatic>
     );
 }
@@ -106,6 +108,11 @@ MaskedTextboxStatic.defaultProps = {
     type: 'text',
     value: '',
     placeholder: '',
+    autocomplete: 'off',
+
+    showValidationIcon: true,
+    showLoadingIcon: true,
+    showClearButton: true,
 
     size: 'medium',
     rounded: 'medium',
@@ -119,6 +126,11 @@ MaskedTextboxStatic.propTypes = {
     type: typeof [ 'text' ],
     value: typeof '',
     placeholder: typeof '',
+    autocomplete: typeof [ 'on', 'off' ],
+
+    showValidationIcon: typeof true,
+    showLoadingIcon: typeof true,
+    showClearButton: typeof true,
 
     size: typeof [ 'none', 'small', 'medium', 'large' ],
     rounded: typeof [ 'none', 'small', 'medium', 'large', 'pill' ],
@@ -129,6 +141,7 @@ MaskedTextboxStatic.propTypes = {
     focus: typeof false,
     valid: typeof false,
     invalid: typeof false,
+    loading: typeof false,
     required: typeof false,
     disabled: typeof false,
 

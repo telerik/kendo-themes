@@ -10,154 +10,90 @@
 
     <style>
         #test-area {
-            grid-template-columns: repeat(4, 1fr);
+            max-width: 660px;
         }
         .k-searchbox {
             width: 100%;
-        }
-        .k-dropdown {
-            width: 50px;
         }
     </style>
 </head>
 <body class="k-body">
 
-    <div id="test-area" class="grid">
+    <div id="test-area" class="k-d-grid k-grid-cols-2">
 
-        <span>Leading icon</span>
-        <span>Trailing icon</span>
-        <span>Icon and button icon</span>
-        <span>Elaborate</span>
-
+        <span>Searchbox</span>
+        <span>Searchbox RTL</span>
 
         <!-- empty -->
-        <section>
-            <input is='Searchbox' placeholder="Search..." />
-        </section>
-        <section>
-            <input is='Searchbox' placeholder="Search..." iconPosition="trailing" />
-        </section>
-        <section>
-            <span is="Searchbox" placeholder="Search..." showIcon="false">
-                <span is="InputSuffix">
-                    <button is="Button" fillMode="flat" icon="search"></button>
-                </span>
-            </span>
-        </section>
-        <section>
-            <span is="Searchbox" placeholder="Search..." showIcon="false">
-                <span is="InputPrefix">
-                    <select class="k-dropdown"><option>1</option></select>
-                </span>
-                <span is="InputSuffix">
-                    <button is="Button" fillMode="flat" icon="search"></button>
-                </span>
-            </span>
-        </section>
+        <div>
+            <input is="Searchbox" placeholder="Searchbox..." />
+        </div>
+        <div dir="rtl">
+            <input is="Searchbox" placeholder="Searchbox..." />
+        </div>
 
 
         <!-- normal -->
-        <section>
-            <input is='Searchbox' value="Normal" />
-        </section>
-        <section>
-            <input is='Searchbox' value="Normal" iconPosition="trailing" />
-        </section>
-        <section>
-            <span is="Searchbox" value="Normal" showIcon="false">
-                <span is="InputSuffix">
-                    <button is="Button" fillMode="flat" icon="search"></button>
-                </span>
-            </span>
-        </section>
-        <section>
-            <span is="Searchbox" value="Normal" showIcon="false">
-                <span is="InputPrefix">
-                    <select class="k-dropdown"><option>1</option></select>
-                </span>
-                <span is="InputSuffix">
-                    <button is="Button" fillMode="flat" icon="search"></button>
-                </span>
-            </span>
-        </section>
+        <div>
+            <input is="Searchbox" value="Normal" />
+        </div>
+        <div dir="rtl">
+            <input is="Searchbox" value="Normal" />
+        </div>
 
 
         <!-- hover -->
-        <section>
-            <input is='Searchbox' value="Hover" hover />
-        </section>
-        <section>
-            <input is='Searchbox' value="Hover" hover iconPosition="trailing" />
-        </section>
-        <section>
-            <span is="Searchbox" value="Hover" hover showIcon="false">
-                <span is="InputSuffix">
-                    <button is="Button" fillMode="flat" icon="search"></button>
-                </span>
-            </span>
-        </section>
-        <section>
-            <span is="Searchbox" value="Hover" hover showIcon="false">
-                <span is="InputPrefix">
-                    <select class="k-dropdown"><option>1</option></select>
-                </span>
-                <span is="InputSuffix">
-                    <button is="Button" fillMode="flat" icon="search"></button>
-                </span>
-            </span>
-        </section>
+        <div>
+            <input is="Searchbox" value="Hover" hover />
+        </div>
+        <div dir="rtl">
+            <input is="Searchbox" value="Hover" hover />
+        </div>
 
 
         <!-- focus -->
-        <section>
-            <input is='Searchbox' value="Focus" focus />
-        </section>
-        <section>
-            <input is='Searchbox' value="Focus" focus iconPosition="trailing" />
-        </section>
-        <section>
-            <span is="Searchbox" value="Focus" focus showIcon="false">
-                <span is="InputSuffix">
-                    <button is="Button" fillMode="flat" icon="search"></button>
-                </span>
-            </span>
-        </section>
-        <section>
-            <span is="Searchbox" value="Focus" focus showIcon="false">
-                <span is="InputPrefix">
-                    <select class="k-dropdown"><option>1</option></select>
-                </span>
-                <span is="InputSuffix">
-                    <button is="Button" fillMode="flat" icon="search"></button>
-                </span>
-            </span>
-        </section>
+        <div>
+            <input is="Searchbox" value="Focus" focus />
+        </div>
+        <div dir="rtl">
+            <input is="Searchbox" value="Focus" focus />
+        </div>
 
 
         <!-- disabled -->
-        <section>
-            <input is='Searchbox' value="Disabled" disabled />
-        </section>
-        <section>
-            <input is='Searchbox' value="Disabled" disabled iconPosition="trailing" />
-        </section>
-        <section>
-            <span is="Searchbox" value="Disabled" disabled showIcon="false">
-                <span is="InputSuffix">
-                    <button is="Button" fillMode="flat" icon="search"></button>
-                </span>
-            </span>
-        </section>
-        <section>
-            <span is="Searchbox" value="Disabled" disabled showIcon="false">
-                <span is="InputPrefix">
-                    <select class="k-dropdown"><option>1</option></select>
-                </span>
-                <span is="InputSuffix">
-                    <button is="Button" fillMode="flat" icon="search"></button>
-                </span>
-            </span>
-        </section>
+        <div>
+            <input is="Searchbox" value="Disabled" disabled />
+        </div>
+        <div dir="rtl">
+            <input is="Searchbox" value="Disabled" disabled />
+        </div>
+
+
+        <!-- invalid -->
+        <div>
+            <input is="Searchbox" value="Invalid" invalid />
+        </div>
+        <div dir="rtl">
+            <input is="Searchbox" value="Invalid" invalid />
+        </div>
+
+
+        <!-- invalid + focus -->
+        <div>
+            <input is="Searchbox" value="Invalid focus" invalid focus />
+        </div>
+        <div dir="rtl">
+            <input is="Searchbox" value="Invalid focus" invalid focus />
+        </div>
+
+
+        <!-- loading -->
+        <div>
+            <input is="Searchbox" value="Loading" loading />
+        </div>
+        <div dir="rtl">
+            <input is="Searchbox" value="Loading" loading />
+        </div>
 
     </div>
 

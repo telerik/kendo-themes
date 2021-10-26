@@ -77,25 +77,10 @@
         }
 
 
-        // Validation icon
-        .k-i-warning {
-            position: absolute;
-            right: $padding-x;
-            top: 50%;
-            transform: translateY(-50%);
-            overflow: visible;
-        }
-
-
         // RTL
         .k-rtl &,
         &[dir="rtl"] {
             text-align: right;
-
-            .k-dateinput-wrap .k-i-warning {
-                left: $padding-x;
-                right: auto;
-            }
 
             .k-select {
                 @include border-left-radius-only( $input-border-radius );
@@ -184,16 +169,6 @@
         }
 
 
-        // Validation icon
-        .k-i-warning {
-            position: absolute;
-            top: 50%;
-            right: calc( #{ $button-inner-calc-size } + #{ $input-padding-x-sm });
-            transform: translateY(-50%);
-            overflow: visible;
-        }
-
-
         // RTL
         .k-rtl &,
         &[dir="rtl"] {
@@ -202,11 +177,6 @@
             .k-select {
                 @include border-left-radius-only( $input-border-radius );
                 border-width: 0 $picker-select-border-width 0 0;
-            }
-
-            .k-i-warning {
-                right: auto;
-                left: calc( #{ $button-inner-calc-size } + #{ $input-padding-x-sm });
             }
         }
     }
@@ -279,16 +249,6 @@
         }
 
 
-        // Validation icon
-        .k-i-warning {
-            position: absolute;
-            top: 50%;
-            right: calc( #{ $button-inner-calc-size } * 2 + #{ $input-padding-x-sm });
-            transform: translateY(-50%);
-            overflow: visible;
-        }
-
-
         // RTL
         .k-rtl &,
         &[dir="rtl"] {
@@ -297,11 +257,6 @@
             .k-select {
                 @include border-left-radius-only( $input-border-radius );
                 border-width: 0 $picker-select-border-width 0 0;
-            }
-
-            .k-i-warning {
-                right: auto;
-                left: calc( #{ $button-inner-calc-size } * 2 + #{ $input-padding-x-sm });
             }
         }
     }

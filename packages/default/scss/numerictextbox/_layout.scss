@@ -81,22 +81,11 @@
             top: -$spinner-icon-offset;
         }
 
-        .k-i-warning {
-            align-self: center;
-            margin-right: $spacer-x / 2;
-        }
-
 
         // RTL
         .k-rtl &,
         &[dir="rtl"] {
             text-align: right;
-
-            .k-numeric-wrap .k-i-warning {
-                align-self: center;
-                margin-right: 0;
-                margin-left: $spacer-x / 2;
-            }
 
             .k-select {
                 @include border-left-radius-only( $input-border-radius );

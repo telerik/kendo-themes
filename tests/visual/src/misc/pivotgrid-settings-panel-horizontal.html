@@ -35,11 +35,7 @@
                                 <div class="k-form-field">
                                     <label class="k-label">Fields</label>
                                     <span class="k-spacer"></span>
-                                    <span is="Textbox" placeholder="Search...">
-                                        <slot is="InputSuffix">
-                                            <span is="Icon" name="search"></span>
-                                        </slot>
-                                    </span>
+                                    <input is="Searchbox" placeholder="Search..." />
                                 </div>
                                 <div class="k-form-field">
                                     <div class="k-select-all">
@@ -184,11 +180,7 @@
                                 <div class="k-form-field">
                                     <label class="k-label">Fields</label>
                                     <span class="k-spacer"></span>
-                                    <span is="Textbox" placeholder="Search...">
-                                        <slot is="InputSuffix">
-                                            <span is="Icon" name="search"></span>
-                                        </slot>
-                                    </span>
+                                    <input is="Searchbox" placeholder="Search..." />
                                 </div>
                                 <div class="k-form-field">
                                     <div class="k-select-all">
@@ -394,7 +386,7 @@
                                             </div>
                                         </div>
                                         <div class="k-calculated-field-content">
-                                            <input is="Textbox" placeholder="Custom function" />
+                                            <input is="Textbox" showClearButton="false" placeholder="Custom function" />
                                         </div>
                                         <div class="k-calculated-field-actions">
                                             <i is="Icon" name="formula-fx"></i>
@@ -406,7 +398,7 @@
                                     </div>
                                     <div class="k-calculated-field">
                                         <div class="k-calculated-field-header">
-                                            <span is="Textbox" value="Renamed Field">
+                                            <span is="Textbox" showClearButton="false" value="Renamed Field">
                                                 <slot is="InputSuffix">
                                                     <button is="Button" fillMode="flat" icon="check"></button>
                                                 </slot>
@@ -417,7 +409,7 @@
                                             </div>
                                         </div>
                                         <div class="k-calculated-field-content">
-                                            <span is="Textbox" value="=IF(Amount>100, 3%*Amount)">
+                                            <span is="Textbox" showClearButton="false" value="=IF(Amount>100, 3%*Amount)">
                                                 <slot is="InputPrefix">
                                                     <span is="Icon" name="formula-fx"></span>
                                                 </slot>

@@ -56,30 +56,8 @@
                                 </div>
                                 <div class="k-edit-field">
                                     <kendo-scheduler-datetime-picker>
-                                        <kendo-datepicker class="k-widget k-datepicker k-header">
-                                            <span class="k-picker-wrap">
-                                                <kendo-dateinput class="k-widget k-dateinput">
-                                                    <span class="k-dateinput-wrap">
-                                                        <input class="k-input" />
-                                                    </span>
-                                                </kendo-dateinput>
-                                                <span class="k-select">
-                                                    <i is="Icon" name="calendar"></i>
-                                                </span>
-                                            </span>
-                                        </kendo-datepicker>
-                                        <kendo-timepicker class="k-widget k-timepicker k-header">
-                                            <span class="k-picker-wrap">
-                                                <kendo-dateinput class="k-widget k-dateinput">
-                                                    <span class="k-dateinput-wrap">
-                                                        <input class="k-input" />
-                                                    </span>
-                                                </kendo-dateinput>
-                                                <span class="k-select">
-                                                    <i is="Icon" name="clock"></i>
-                                                </span>
-                                            </span>
-                                        </kendo-timepicker>
+                                        <input is="DatePicker" />
+                                        <input is="TimePicker" />
                                     </kendo-scheduler-datetime-picker>
                                 </div>
                                 <div class="k-edit-label">
@@ -87,30 +65,8 @@
                                 </div>
                                 <div class="k-edit-field">
                                     <kendo-scheduler-datetime-picker>
-                                        <kendo-datepicker class="k-widget k-datepicker k-header">
-                                            <span class="k-picker-wrap">
-                                                <kendo-dateinput class="k-widget k-dateinput">
-                                                    <span class="k-dateinput-wrap">
-                                                        <input class="k-input" />
-                                                    </span>
-                                                </kendo-dateinput>
-                                                <span class="k-select">
-                                                    <i is="Icon" name="calendar"></i>
-                                                </span>
-                                            </span>
-                                        </kendo-datepicker>
-                                        <kendo-timepicker class="k-widget k-timepicker k-header">
-                                        <span class="k-picker-wrap">
-                                            <kendo-dateinput class="k-widget k-dateinput">
-                                                <span class="k-dateinput-wrap">
-                                                    <input class="k-input" />
-                                                </span>
-                                            </kendo-dateinput>
-                                            <span class="k-select">
-                                                <i is="Icon" name="clock"></i>
-                                            </span>
-                                        </span>
-                                        </kendo-timepicker>
+                                        <input is="DatePicker" />
+                                        <input is="TimePicker" />
                                     </kendo-scheduler-datetime-picker>
                                 </div>
                                 <div class="k-edit-field">
@@ -142,7 +98,7 @@
                                                 <label>Repeat every</label>
                                             </div>
                                             <div class="k-edit-field">
-                                                <input is="NumericTextbox" type="number" />
+                                                <input is="NumericTextbox" />
                                                 <span>day(s)</span>
                                             </div>
                                         </kendo-recurrence-interval-editor>
@@ -159,24 +115,13 @@
                                                     <li>
                                                         <input is="Radio" id="k-endrule-count" name="end" />
                                                         <label class="k-radio-label" for="k-endrule-count">After</label>
-                                                        <input is="NumericTextbox" type="number" />
+                                                        <input is="NumericTextbox" />
                                                         <span>occurrence(s)</span>
                                                     </li>
                                                     <li>
                                                         <input is="Radio" id="k-endrule-until" name="end" />
                                                         <label class="k-radio-label" for="k-endrule-until">On</label>
-                                                        <kendo-datepicker class="k-widget k-datepicker k-header k-state-disabled" style="width: 150px;">
-                                                            <span class="k-picker-wrap k-state-disabled">
-                                                                <kendo-dateinput class="k-widget k-dateinput k-state-disabled">
-                                                                    <span class="k-dateinput-wrap">
-                                                                        <input class="k-input" />
-                                                                    </span>
-                                                                </kendo-dateinput>
-                                                                <span class="k-select">
-                                                                    <i is="Icon" name="calendar"></i>
-                                                                </span>
-                                                            </span>
-                                                        </kendo-datepicker>
+                                                        <input is="DatePicker" disabled style="width: 150px;" />
                                                     </li>
                                                 </ul>
                                             </div>

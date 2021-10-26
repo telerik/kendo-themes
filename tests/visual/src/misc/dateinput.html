@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en" class="k-no-animations">
+<head>
+    <title>DateInput</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+    <script src="../../assets/scripts.js"></script>
+    <script src="../../../../packages/html/dist/index.js"></script>
+
+    <style>
+        #test-area {
+            max-width: 660px;
+        }
+        .k-dateinput {
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="k-body">
+
+    <div id="test-area" class="k-d-grid k-grid-cols-2">
+
+        <span>DateInput</span>
+        <span>DateInput RTL</span>
+
+        <!-- empty -->
+        <div>
+            <input is="DateInput" placeholder="DateInput..." />
+        </div>
+        <div dir="rtl">
+            <input is="DateInput" placeholder="DateInput..." />
+        </div>
+
+        <!-- normal -->
+        <div>
+            <input is="DateInput" value="Normal" />
+        </div>
+        <div dir="rtl">
+            <input is="DateInput" value="Normal" />
+        </div>
+
+        <!-- hover -->
+        <div>
+            <input is="DateInput" value="Hover" hover />
+        </div>
+        <div dir="rtl">
+            <input is="DateInput" value="Hover" hover />
+        </div>
+
+        <!-- focus -->
+        <div>
+            <input is="DateInput" value="Focus" focus />
+        </div>
+        <div dir="rtl">
+            <input is="DateInput" value="Focus" focus />
+        </div>
+
+        <!-- disabled -->
+        <div>
+            <input is="DateInput" value="Disabled" disabled />
+        </div>
+        <div dir="rtl">
+            <input is="DateInput" value="Disabled" disabled />
+        </div>
+
+        <!-- invalid -->
+        <div>
+            <input is="DateInput" value="Invalid" invalid />
+        </div>
+        <div dir="rtl">
+            <input is="DateInput" value="Invalid" invalid />
+        </div>
+
+        <!-- invalid + focus -->
+        <div>
+            <input is="DateInput" value="Invalid focus" invalid focus />
+        </div>
+        <div dir="rtl">
+            <input is="DateInput" value="Invalid focus" invalid focus />
+        </div>
+
+        <!-- loading -->
+        <div>
+            <input is="DateInput" value="Loading..." loading />
+        </div>
+        <div dir="rtl">
+            <input is="DateInput" value="Loading..." loading />
+        </div>
+
+    </div>
+
+</body>
+</html>

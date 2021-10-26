@@ -1,5 +1,6 @@
 import { globalDefaultProps } from '../component';
 import { Picker, PickerStatic, InputInnerSpanStatic } from '../input/index';
+import { InputValidationIconStatic, InputLoadingIconStatic, InputClearValueStatic } from '../input/index';
 import { ButtonStatic } from '../button/index';
 import { IconStatic } from '../icon/index';
 
@@ -23,8 +24,6 @@ function DropdownListStatic(props) {
         valueIcon,
         valueIconName,
         arrowIconName,
-
-        showClearButton,
 
         prefix,
         suffix,
@@ -102,10 +101,10 @@ function DropdownListStatic(props) {
         return (
             <PickerStatic className={legacyClasses} {...htmlAttributes}>
                 <span className={legacyWrapClasses}>
-                    {prefix}
                     <InputInnerSpanStatic {...inputAttributes} />
-                    {!disabled && showClearButton && value !== '' && <span className="k-clear-value"><IconStatic name="x" /></span>}
-                    {suffix}
+                    <InputValidationIconStatic {...props} />
+                    <InputLoadingIconStatic {...props} />
+                    <InputClearValueStatic {...props} />
                     <span className="k-select"><IconStatic name={arrowIconName} /></span>
                 </span>
             </PickerStatic>
@@ -116,8 +115,10 @@ function DropdownListStatic(props) {
         <PickerStatic className={dropdownListClasses} {...ariaAttr} {...htmlAttributes}>
             {prefix}
             <InputInnerSpanStatic {...inputAttributes} />
-            {!disabled && showClearButton && value !== '' && <span className="k-clear-value"><IconStatic name="x" /></span>}
             {suffix}
+            <InputValidationIconStatic {...props} />
+            <InputLoadingIconStatic {...props} />
+            <InputClearValueStatic {...props} />
             <ButtonStatic className="k-input-button" icon={arrowIconName} rounded="none" size={size} fillMode={fillMode}></ButtonStatic>
         </PickerStatic>
     );
@@ -132,9 +133,12 @@ DropdownListStatic.defaultProps = {
     autocomplete: 'off',
 
     showValue: true,
+    valueIcon: null,
     valueIconName: '',
     arrowIconName: 'arrow-s',
 
+    showValidationIcon: true,
+    showLoadingIcon: true,
     showClearButton: false,
 
     size: 'medium',
@@ -157,6 +161,8 @@ DropdownListStatic.propTypes = {
     valueIconName: typeof '',
     arrowIconName: typeof '',
 
+    showValidationIcon: typeof true,
+    showLoadingIcon: typeof true,
     showClearButton: typeof true,
 
     prefix: typeof '#fragment',
@@ -171,6 +177,7 @@ DropdownListStatic.propTypes = {
     focus: typeof false,
     valid: typeof false,
     invalid: typeof false,
+    loading: typeof false,
     required: typeof false,
     disabled: typeof false,
 
