@@ -10,87 +10,105 @@
 
     <style>
         #test-area {
-            height: 600px;
+            width: 500px;
+        }
+        .k-window {
+            width: 100%;
+            position: relative;
         }
     </style>
 </head>
 <body class="k-body">
 
-    <div id="test-area" class="grid">
-        <div class="k-overlay"></div>
-        <div class="k-widget k-window">
-            <div class="k-window-titlebar k-header"><span class="k-window-title">Edit</span>
-                <div class="k-window-actions">
-                    <button is="Button" fillMode="flat" icon="close"></button>
+    <div id="test-area" class="k-d-grid k-grid-cols-1">
+
+        <section>
+            <div class="k-window">
+                <div class="k-window-titlebar">
+                    <span class="k-window-title">Edit</span>
+                    <div class="k-window-actions">
+                        <button is="Button" fillMode="flat" icon="close"></button>
+                    </div>
                 </div>
-            </div>
-            <div class="k-popup-edit-form k-window-content k-content">
-                <div class="k-edit-form-container">
-                    <div class="k-edit-label">
-                        <label for="ProductName">Product Name</label>
-                    </div>
-                    <div class="k-edit-field k-no-editor">
-                        Chai
-                    </div>
-                    <div class="k-edit-label">
-                        <label for="UnitPrice">Unit Price</label>
-                    </div>
-                    <div class="k-edit-field">
-                        <input is="NumericTextbox" />
-                        <div class="k-tooltip k-tooltip-error k-validator-tooltip k-invalid-msg">
-                            <i is="Icon" class="k-tooltip-icon" name="warning"></i>
-                            <span class="k-tooltip-content">Unit Price is required</span>
-                            <span class="k-callout k-callout-n"></span>
-                        </div>
-                    </div>
-                    <div class="k-edit-label">
-                        <label for="UnitsInStock">Units In Stock</label>
-                    </div>
-                    <div class="k-edit-field">
-                        <input is="NumericTextbox" />
-                    </div>
-                    <div class="k-edit-label">
-                        <label for="Discontinued">Discontinued</label>
-                    </div>
-                    <div class="k-edit-field">
-                        <input is="Checkbox" id="Discontinued" />
-                        <label class="k-checkbox-label">&#8203;</label>
-                    </div>
-                    <div class="k-edit-label">
-                        <label for="files">Files</label>
-                    </div>
-                    <div class="k-edit-field">
-                        <div class="k-widget k-upload k-header k-upload-sync">
-                            <div class="k-dropzone">
-                                <button is="Button" class="k-upload-button">Select files...</button>
+                <div class="k-window-content k-content">
+                    <div class="k-form k-form-horizontal">
+                        <div class="k-form-field">
+                            <div class="k-form-label">
+                                <label for="ProductName">Product Name</label>
                             </div>
-                            <ul class="k-upload-files k-reset">
-                                <li class="k-file">
-                                    <div class="k-progressbar k-hidden">
-                                      <span class="k-progress" style="width: 100%;"></span>
-                                  </div>
-                                  <span class="k-file-group-wrapper">
-                                    <i is="Icon" class="k-file-group" name="file-image"></i>
-                                    <span class="k-file-state"></span>
-                                  </span>
-                                  <span class="k-file-name-size-wrapper">
-                                    <span class="k-file-name">67409197_2322469807839836_4126207508270284800_n.png</span>
-                                    <span class="k-file-size">24.34 KB</span>
-                                  </span>
-                                  <strong class="k-upload-status">
-                                    <button is="Button" fillMode="flat" icon="close" class="k-upload-action"></button>
-                                  </strong>
-                                </li>
-                            </ul>
+                            <div class="k-form-field-wrap">
+                                <input is="Textbox" value="Chai" readonly />
+                            </div>
+                        </div>
+                        <div class="k-form-field">
+                            <div class="k-form-label">
+                                <label for="UnitPrice">Unit Price</label>
+                            </div>
+                            <div class="k-form-field-wrap">
+                                <input is="NumericTextbox" />
+                                <div class="k-tooltip k-tooltip-error k-validator-tooltip k-invalid-msg">
+                                    <i is="Icon" class="k-tooltip-icon" name="warning"></i>
+                                    <span class="k-tooltip-content">Unit Price is required</span>
+                                    <span class="k-callout k-callout-n"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="k-form-field">
+                            <div class="k-form-label">
+                                <label for="UnitsInStock">Units In Stock</label>
+                            </div>
+                            <div class="k-form-field-wrap">
+                                <input is="NumericTextbox" />
+                            </div>
+                        </div>
+                        <div class="k-form-field">
+                            <div class="k-form-label">
+                                <label for="Discontinued">Discontinued</label>
+                            </div>
+                            <div class="k-form-field-wrap">
+                                <input is="Checkbox" id="Discontinued" />
+                                <label class="k-checkbox-label">&#8203;</label>
+                            </div>
+                        </div>
+                        <div class="k-form-field">
+                            <div class="k-form-label">
+                                <label for="files">Files</label>
+                            </div>
+                            <div class="k-form-field-wrap">
+                                <div class="k-widget k-upload k-header k-upload-sync">
+                                    <div class="k-dropzone">
+                                        <button is="Button" class="k-upload-button">Select files...</button>
+                                    </div>
+                                    <ul class="k-upload-files k-reset">
+                                        <li class="k-file">
+                                            <div class="k-progressbar k-hidden">
+                                            <span class="k-progress" style="width: 100%;"></span>
+                                        </div>
+                                        <span class="k-file-group-wrapper">
+                                            <i is="Icon" class="k-file-group" name="file-image"></i>
+                                            <span class="k-file-state"></span>
+                                        </span>
+                                        <span class="k-file-name-size-wrapper">
+                                            <span class="k-file-name">67409197_2322469807839836_4126207508270284800_n.png</span>
+                                            <span class="k-file-size">24.34 KB</span>
+                                        </span>
+                                        <strong class="k-upload-status">
+                                            <button is="Button" fillMode="flat" icon="close" class="k-upload-action"></button>
+                                        </strong>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="k-edit-buttons">
-                        <button is="Button">Cancel</button>
-                        <button is="Button" themeColor="primary">Update</button>
-                    </div>
+                </div>
+                <div class="k-window-buttons k-actions k-actions-end">
+                    <button is="Button">Cancel</button>
+                    <button is="Button" themeColor="primary">Update</button>
                 </div>
             </div>
-        </div>
+        </section>
+
     </div>
 </body>
 </html>

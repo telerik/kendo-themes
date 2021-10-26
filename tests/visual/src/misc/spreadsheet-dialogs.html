@@ -10,54 +10,66 @@
 
     <style>
         #test-area {
-            min-height: 600px;
+            width: 500px;
+        }
+        .k-window {
+            width: 100%;
+            position: relative;
         }
     </style>
 </head>
 <body class="k-body">
-    <div id="test-area" class="grid">
+    <div id="test-area" class="k-d-grid k-grid-cols-1">
 
-        <div class="k-widget k-window" style="position: relative; display: flex; align-self: flex-start; width: 450px;">
-            <div class="k-window-titlebar k-header">
-                <span class="k-window-title">Insert comment</span>
-                <div class="k-window-actions">
-                    <button is="Button" fillMode="flat" icon="close"></button>
+        <section>
+            <div class="k-window">
+                <div class="k-window-titlebar">
+                    <span class="k-window-title">Insert comment</span>
+                    <div class="k-window-actions">
+                        <button is="Button" fillMode="flat" icon="close"></button>
+                    </div>
                 </div>
-            </div>
-            <div class="k-spreadsheet-window k-action-window k-popup-edit-form k-spreadsheet-insert-comment k-window-content k-content">
-                <div class="k-edit-label">
-                    <label>Comment:</label>
+                <div class="k-window-content">
+                    <div class="k-form k-form-horizontal">
+                        <div class="k-form-field">
+                            <div class="k-form-label">
+                                <label>Comment:</label>
+                            </div>
+                            <div class="k-form-field-wrap">
+                                <textarea is="Textarea"></textarea>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="k-edit-field">
-                    <textarea is="Textarea"></textarea>
-                </div>
-                <div class="k-action-buttons k-actions-end">
+                <div class="k-window-buttons k-actions k-actions-end">
                     <button is="Button">Cancel</button>
                     <button is="Button" themeColor="primary">Insert</button>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="k-widget k-window" style="position: relative; display: flex; align-self: flex-start; width: 450px;">
-            <div class="k-window-titlebar k-header">
-                <span class="k-window-title">Insert image</span>
-                <div class="k-window-actions">
-                    <button is="Button" fillMode="flat" icon="close"></button>
+        <section>
+            <div class="k-window">
+                <div class="k-window-titlebar">
+                    <span class="k-window-title">Insert image</span>
+                    <div class="k-window-actions">
+                        <button is="Button" fillMode="flat" icon="close"></button>
+                    </div>
                 </div>
-            </div>
-            <div class="k-spreadsheet-window k-action-window k-popup-edit-form k-window-content k-content">
-                <div class="k-spreadsheet-insert-image-dialog">
-                    <label>
-                        <div>Drag an image here, or click to select</div>
-                        <input type="file">
-                    </label>
+                <div class="k-window-content">
+                    <div class="k-spreadsheet-insert-image-dialog">
+                        <label>
+                            <div>Drag an image here, or click to select</div>
+                            <input type="file">
+                        </label>
+                    </div>
                 </div>
-                <div class="k-actions k-actions-end">
+                <div class="k-window-buttons k-actions k-actions-end">
                     <button is="Button">Cancel</button>
                     <button is="Button" themeColor="primary">Insert</button>
                 </div>
             </div>
-        </div>
+        </section>
 
     </div>
 </body>

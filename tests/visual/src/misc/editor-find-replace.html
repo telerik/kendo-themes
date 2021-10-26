@@ -10,7 +10,11 @@
 
     <style>
         .k-window {
+            width: 100%;
             position: relative;
+        }
+        .k-form-label {
+            align-items: flex-start !important;
         }
     </style>
 </head>
@@ -22,15 +26,15 @@
         <span>Replace Dialog</span>
 
         <section>
-            <div class="k-widget k-window">
-                <div class="k-window-titlebar k-dialog-titlebar">
+            <div class="k-window">
+                <div class="k-window-titlebar">
                     <div class="k-window-title">Find and Replace</div>
                     <div class="k-window-actions">
                         <button is="Button" fillMode="flat" icon="close"></button>
                     </div>
                 </div>
-                <div class="k-content k-window-content">
-                    <div class="k-widget k-header k-floatwrap k-tabstrip k-tabstrip-top k-editor-find-replace">
+                <div class="k-window-content">
+                    <div class="k-tabstrip k-tabstrip-top k-editor-find-replace">
                         <div class="k-tabstrip-items-wrapper k-hstack">
                             <ul class="k-tabstrip-items k-reset">
                                 <li class="k-item k-state-active k-tab-on-top">
@@ -41,33 +45,37 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="k-content k-state-active">
-                            <div>
-                                <div class="k-edit-form-container">
-                                    <div class="k-edit-label">
+                        <div class="k-tabstrip-content k-content k-state-active">
+                            <div class="k-form k-form-horizontal">
+                                <div class="k-form-field">
+                                    <div class="k-form-label">
                                         <label>Find What:</label>
                                     </div>
-                                    <div class="k-edit-field">
+                                    <div class="k-form-field-wrap">
                                         <input is="Textbox" showClearButton="false" value="editor" />
                                     </div>
-                                 </div>
-                                <div class="k-search-options">
-                                    <span>
-                                        <input is="Checkbox" />
-                                        <label class="k-checkbox-label">Match case</label>
-                                    </span>
-                                    <span>
-                                        <input is="Checkbox" />
-                                        <label class="k-checkbox-label">Match whole word only</label>
-                                    </span>
-                                    <span>
-                                        <input is="Checkbox" />
-                                        <label class="k-checkbox-label">Match cyclic (Wrap around)</label>
-                                    </span>
-                                    <span>
-                                        <input is="Checkbox" />
-                                        <label class="k-checkbox-label">Regular Expression</label>
-                                    </span>
+                                </div>
+                                <div class="k-form-field">
+                                    <div class="k-form-field-wrap">
+                                        <div class="k-search-options k-checkbox-list">
+                                            <span class="k-checkbox-item">
+                                                <input is="Checkbox" />
+                                                <label class="k-checkbox-label">Match case</label>
+                                            </span>
+                                            <span class="k-checkbox-item">
+                                                <input is="Checkbox" />
+                                                <label class="k-checkbox-label">Match whole word only</label>
+                                            </span>
+                                            <span class="k-checkbox-item">
+                                                <input is="Checkbox" />
+                                                <label class="k-checkbox-label">Match cyclic (Wrap around)</label>
+                                            </span>
+                                            <span class="k-checkbox-item">
+                                                <input is="Checkbox" />
+                                                <label class="k-checkbox-label">Regular Expression</label>
+                                            </span>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="k-matches-container">
                                     <button is="Button" themeColor="primary" fillMode="flat" icon="arrow-chevron-left">Prev</button>
@@ -82,15 +90,15 @@
         </section>
 
         <section>
-            <div class="k-widget k-window">
-                <div class="k-window-titlebar k-dialog-titlebar">
+            <div class="k-window">
+                <div class="k-window-titlebar">
                     <div class="k-window-title">Find and Replace</div>
                     <div class="k-window-actions">
                         <button is="Button" fillMode="flat" icon="close"></button>
                     </div>
                 </div>
-                <div class="k-content k-window-content">
-                    <div class="k-widget k-header k-floatwrap k-tabstrip k-tabstrip-top k-editor-find-replace">
+                <div class="k-window-content">
+                    <div class="k-tabstrip k-tabstrip-top k-editor-find-replace">
                         <div class="k-tabstrip-items-wrapper k-hstack">
                             <ul class="k-tabstrip-items k-reset">
                                 <li class="k-item">
@@ -101,43 +109,51 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="k-content k-state-active">
-                            <div>
-                                <div class="k-edit-form-container">
-                                    <div class="k-edit-label">
+                        <div class="k-tabstrip-content k-content k-state-active">
+                            <div class="k-form k-form-horizontal">
+                                <div class="k-form-field">
+                                    <div class="k-form-label">
                                         <label>Find What:</label>
                                     </div>
-                                    <div class="k-edit-field">
+                                    <div class="k-form-field-wrap">
                                         <input is="Textbox" showClearButton="false" value="editor" />
                                     </div>
-                                    <div class="k-edit-label">
+                                </div>
+                                <div class="k-form-field">
+                                    <div class="k-form-label">
                                         <label>Replace With:</label>
                                     </div>
-                                    <div class="k-edit-field">
+                                    <div class="k-form-field-wrap">
                                         <input is="Textbox" showClearButton="false" value="grid" />
                                     </div>
                                 </div>
-                                <div class="k-action-buttons k-actions k-actions-end">
-                                    <button is="Button">Replace</button>
-                                    <button is="Button">Replace All</button>
+                                <div class="k-form-field">
+                                    <div class="k-actions k-actions-horizontal k-actions-end">
+                                        <button is="Button">Replace</button>
+                                        <button is="Button">Replace All</button>
+                                    </div>
                                 </div>
-                                <div class="k-search-options">
-                                    <span>
-                                        <input is="Checkbox" />
-                                        <label class="k-checkbox-label">Match case</label>
-                                    </span>
-                                    <span>
-                                        <input is="Checkbox" />
-                                        <label class="k-checkbox-label">Match whole word only</label>
-                                    </span>
-                                    <span>
-                                        <input is="Checkbox" />
-                                        <label class="k-checkbox-label">Match cyclic (Wrap around)</label>
-                                    </span>
-                                    <span>
-                                        <input is="Checkbox" />
-                                        <label class="k-checkbox-label">Regular Expression</label>
-                                    </span>
+                                <div class="k-form-field">
+                                    <div class="k-form-field-wrap">
+                                        <div class="k-search-options k-checkbox-list">
+                                            <span class="k-checkbox-item">
+                                                <input is="Checkbox" />
+                                                <label class="k-checkbox-label">Match case</label>
+                                            </span>
+                                            <span class="k-checkbox-item">
+                                                <input is="Checkbox" />
+                                                <label class="k-checkbox-label">Match whole word only</label>
+                                            </span>
+                                            <span class="k-checkbox-item">
+                                                <input is="Checkbox" />
+                                                <label class="k-checkbox-label">Match cyclic (Wrap around)</label>
+                                            </span>
+                                            <span class="k-checkbox-item">
+                                                <input is="Checkbox" />
+                                                <label class="k-checkbox-label">Regular Expression</label>
+                                            </span>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="k-matches-container">
                                     <button is="Button" themeColor="primary" fillMode="flat" icon="arrow-chevron-left">Prev</button>
