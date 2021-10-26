@@ -150,6 +150,7 @@ TextboxStatic.propTypes = {
     invalid: typeof false,
     loading: typeof false,
     required: typeof false,
+    readonly: typeof false,
     disabled: typeof false,
 
     aria: typeof false,

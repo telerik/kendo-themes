@@ -7,13 +7,14 @@ function InputClearValueStatic(inputProps) {
 
         showClearButton,
 
+        readonly,
         loading,
         disabled,
 
         aria
     } = inputProps;
 
-    if (disabled || loading || !showClearButton || value === '' ) {
+    if (disabled || readonly || loading || !showClearButton || value === '' ) {
         return <></>;
     }
 
