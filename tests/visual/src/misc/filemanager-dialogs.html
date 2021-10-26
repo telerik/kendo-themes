@@ -9,13 +9,10 @@
     <script src="../../../../packages/html/dist/index.js"></script>
 
     <style>
-       .k-dialog {
-           display: flex;
-           position: relative;
-       }
-       .k-dialog-content {
-           min-height: 5em;
-       }
+        .k-dialog {
+            width: 100%;
+            position: relative;
+        }
     </style>
 </head>
 <body class="k-body">
@@ -23,15 +20,15 @@
 
         <!-- Upload Dialog -->
         <section>
-            <div class="k-widget k-window k-dialog k-filemanager-upload-dialog">
-                <div class="k-window-titlebar k-dialog-titlebar k-header" >
+            <div class="k-window k-dialog k-filemanager-upload-dialog">
+                <div class="k-window-titlebar k-dialog-titlebar">
                     <span class="k-window-title k-dialog-title">Upload Files</span>
                     <div class="k-window-actions k-dialog-actions">
                         <button is="Button" fillMode="flat" icon="close"></button>
                     </div>
                 </div>
                 <div class="k-content k-window-content k-dialog-content">
-                    <div class="k-widget k-upload k-upload-async k-upload-empty">
+                    <div class="k-upload k-upload-async k-upload-empty">
                         <div class="k-dropzone">
                             <button is="Button" class="k-upload-button">Select files...</button>
                             <em class="k-dropzone-hint">Drop files here to upload</em>
@@ -48,8 +45,8 @@
 
         <!-- Move/Copy Dialog -->
         <section>
-            <div class="k-widget k-window k-dialog">
-                <div class="k-window-titlebar k-dialog-titlebar k-header">
+            <div class="k-window k-dialog">
+                <div class="k-window-titlebar k-dialog-titlebar">
                     <span class="k-window-title k-dialog-title">Confirm</span>
                     <div class="k-window-actions k-dialog-actions">
                         <button is="Button" fillMode="flat" icon="close"></button>
@@ -67,8 +64,8 @@
 
         <!-- Delete Dialog -->
         <section>
-            <div class="k-widget k-window k-dialog">
-                <div class="k-window-titlebar k-dialog-titlebar k-header">
+            <div class="k-window k-dialog">
+                <div class="k-window-titlebar k-dialog-titlebar">
                     <span class="k-window-title k-dialog-title">Confirm</span>
                     <div class="k-window-actions k-dialog-actions">
                         <button is="Button" fillMode="flat" icon="close"></button>
