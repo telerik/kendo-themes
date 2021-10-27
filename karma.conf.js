@@ -14,12 +14,12 @@ module.exports = function(config) {
         files: [
             'node_modules/chai/chai.js',
             'node_modules/jquery/dist/jquery.js',
-            'unit/lib/helpers.js',
-            `${config.ghActions === true ? 'tmp/themes' : '../packages'}/${config.theme || 'default'}/dist/all.css`,
-            `${config.ghActions === true ? 'tmp/html-helpers' : '../packages/html'}/dist/index.js`,
-            'unit/html/**/*.html',
-            'unit/data/metrics.js',
-            'unit/**/*-spec.js'
+            'tests/unit/lib/helpers.js',
+            `packages/${config.theme || 'default'}/dist/all.css`,
+            `packages/html/dist/index.js`,
+            'tests/unit/html/**/*.html',
+            'tests/unit/data/metrics.js',
+            'tests/unit/**/*-spec.js'
         ],
 
 
@@ -31,7 +31,7 @@ module.exports = function(config) {
         // preprocess matching files before serving them to the browser
         // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
         preprocessors: {
-            'unit/html/**/*.html': []
+            'tests/unit/html/**/*.html': []
             // 'tests/**/.html': ['html2js']
         },
 
@@ -76,7 +76,7 @@ module.exports = function(config) {
         // Proxies
         proxies: {
             // '/tests/': '/base/tests/',
-            '/html/': '/base/unit/html/'
+            '/html/': '/base/tests/unit/html/'
         },
 
 

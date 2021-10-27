@@ -4,9 +4,6 @@ defaults:
   run:
     shell: bash
 
-env:
-  TESTS_DIR: ./tests
-
 on:
   push:
     branches:
@@ -44,20 +41,8 @@ jobs:
       - name: Build scripts
         run: npm run build:scripts
 
-      - name: Copy assets
-        run: |
-          mkdir -p tests/tmp/themes/default/dist
-          mkdir -p tests/tmp/html-helpers/dist
-          cp packages/default/dist/all.css tests/tmp/themes/default/dist
-          cp packages/html/dist/index.js tests/tmp/html-helpers/dist
-
-      - name: Install
-        run: npm ci
-        working-directory: ${{ env.TESTS_DIR }}
-
       - name: Karma
         run: npm run karma-github
-        working-directory: ${{ env.TESTS_DIR }}
 
   ci-unit:
     name: CI | Unit

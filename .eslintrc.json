@@ -71,5 +71,25 @@
         "no-this-before-super": "error",
         "no-var": "error",
         "yoda": ["error", "never", { "exceptRange": true }]
-    }
+    },
+    "overrides": [
+        {
+            "files": ["tests/**/*.js"],
+            "globals": {
+                "$": "readonly",
+                "$$": "readonly",
+                "jQuery": "readonly",
+                "Mocha": "readonly",
+                "chai": "readonly",
+                "suite": "readonly",
+                "test": "readonly",
+                "before": "readonly",
+                "after": "readonly",
+                "assert": "writable",
+                "metrics": "readonly",
+                "loadFixture": "readonly",
+                "clearFixture": "readonly"
+            }
+        }
+    ]
 }
