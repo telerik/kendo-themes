@@ -11,7 +11,7 @@
 
 
     // Hover state
-    .k-checkbox:hover
+    .k-checkbox:hover,
     .k-checkbox.k-state-hover {
         @include fill(
             $checkbox-hovered-text,
