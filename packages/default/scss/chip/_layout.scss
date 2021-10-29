@@ -35,6 +35,7 @@
             font-size: $chip-selected-icon-font-size;
         }
 
+        .k-chip.k-state-selected .k-selected-icon-wrapper,
         .k-chip.k-selected .k-selected-icon-wrapper {
             width: $chip-selected-icon-size;
             visibility: visible;
@@ -54,6 +55,7 @@
                 transition: width .2s, opacity .2s;
             }
 
+            &.k-state-selected .k-selected-icon-wrapper,
             &.k-selected .k-selected-icon-wrapper {
                 opacity: 1;
             }

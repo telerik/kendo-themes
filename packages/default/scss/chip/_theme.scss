@@ -1,5 +1,6 @@
 @include exports("chip/theme") {
 
+    .k-selection-multiple .k-chip-has-icon.k-state-selected .k-selected-icon-wrapper,
     .k-selection-multiple .k-chip-has-icon.k-selected .k-selected-icon-wrapper {
         @include fill(
             $color: $chip-multiple-selected-icon-text,
