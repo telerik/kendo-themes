@@ -1,7 +1,7 @@
 ---
 title: Customizing Button
-description: "Refer to the list of the Kendo UI Classic theme variables available for customization."
-slug: variables_kendothemeclassic_button
+description: "Refer to the list of the Kendo UI Default theme variables available for customization."
+slug: variables_kendothemedefault_button
 position: 9
 ---
 
@@ -118,8 +118,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-button-theme-colors</td>
     <td></td>
-    <td>map-merge((base: $base-bg), $theme-colors )</td>
-    <td>map-merge((base: $base-bg), $theme-colors )</td>
+    <td>map-merge((base: #f5f5f5), $theme-colors )</td>
+    <td>map-merge((base: #f5f5f5), $theme-colors )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Theme colors map for the button.</div></div>
@@ -128,8 +128,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-button-bg</td>
     <td></td>
-    <td>$base-bg</td>
-    <td><span class="color-preview" style="background-color: #f0f0f0"></span>#f0f0f0</td>
+    <td><span class="color-preview" style="background-color: #f5f5f5"></span>#f5f5f5</td>
+    <td><span class="color-preview" style="background-color: #f5f5f5"></span>#f5f5f5</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background of the button.</div></div>
@@ -138,8 +138,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-button-text</td>
     <td></td>
-    <td>$base-text</td>
-    <td>$body-text</td>
+    <td><span class="color-preview" style="background-color: #424242"></span>#424242</td>
+    <td><span class="color-preview" style="background-color: #424242"></span>#424242</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base text color of the button.</div></div>
@@ -148,8 +148,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-button-border</td>
     <td></td>
-    <td>try-shade( $kendo-button-bg, 2 )</td>
-    <td>try-shade( $kendo-button-bg, 2 )</td>
+    <td>rgba( black, .08 )</td>
+    <td>rgba( black, .08 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base border color of the button.</div></div>
@@ -158,8 +158,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-button-gradient</td>
     <td></td>
-    <td>$base-gradient</td>
-    <td>rgba( white, .1 ), rgba( white, 0 )</td>
+    <td>rgba( black, 0 ), rgba( black, .02 )</td>
+    <td>rgba( black, 0 ), rgba( black, .02 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background gradient of the button.</div></div>
@@ -178,8 +178,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-button-hover-bg</td>
     <td></td>
-    <td>try-shade( $kendo-button-bg, 1 )</td>
-    <td>try-shade( $kendo-button-bg, 1 )</td>
+    <td>try-shade( $kendo-button-bg, .5 )</td>
+    <td>try-shade( $kendo-button-bg, .5 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background of hovered button.</div></div>
@@ -198,8 +198,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-button-hover-border</td>
     <td></td>
-    <td>try-shade( $kendo-button-hover-bg, 2 )</td>
-    <td>try-shade( $kendo-button-hover-bg, 2 )</td>
+    <td>null</td>
+    <td>null</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base border color of hovered button.</div></div>
@@ -228,8 +228,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-button-active-bg</td>
     <td></td>
-    <td>try-shade( $kendo-button-bg, 2 )</td>
-    <td>try-shade( $kendo-button-bg, 2 )</td>
+    <td>try-shade( $kendo-button-bg, 1.5 )</td>
+    <td>try-shade( $kendo-button-bg, 1.5 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background color of active button.</div></div>
@@ -248,8 +248,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-button-active-border</td>
     <td></td>
-    <td>try-shade( $kendo-button-active-bg, 2 )</td>
-    <td>try-shade( $kendo-button-active-bg, 2 )</td>
+    <td>null</td>
+    <td>null</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base border color of active button.</div></div>
@@ -278,8 +278,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-button-selected-bg</td>
     <td></td>
-    <td>$kendo-button-active-bg</td>
-    <td>try-shade( $kendo-button-bg, 2 )</td>
+    <td>$primary</td>
+    <td><span class="color-preview" style="background-color: #ff6358"></span>#ff6358</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background color of selected button.</div></div>
@@ -288,8 +288,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-button-selected-text</td>
     <td></td>
-    <td>$kendo-button-active-text</td>
-    <td>null</td>
+    <td>contrast-wcag( $kendo-button-selected-bg )</td>
+    <td>contrast-wcag( $kendo-button-selected-bg )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base text color of selected button.</div></div>
@@ -298,8 +298,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-button-selected-border</td>
     <td></td>
-    <td>$kendo-button-active-border</td>
-    <td>try-shade( $kendo-button-active-bg, 2 )</td>
+    <td>$kendo-button-selected-bg</td>
+    <td><span class="color-preview" style="background-color: #ff6358"></span>#ff6358</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base border color of selected button.</div></div>
@@ -368,8 +368,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-button-focus-shadow</td>
     <td></td>
-    <td>0 0 4px 0 rgba( $kendo-button-border, .75 )</td>
-    <td>0 0 4px 0 rgba( $kendo-button-border, .75 )</td>
+    <td>0 0 0 2px rgba( $kendo-button-border, .08 )</td>
+    <td>0 0 0 2px rgba( $kendo-button-border, .08 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of focused button.</div></div>
@@ -428,8 +428,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-flat-button-hover-opacity</td>
     <td></td>
-    <td>.08</td>
-    <td>.08</td>
+    <td>.04</td>
+    <td>.04</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The overlay opacity of hovered flat button. Used to create background for the flat button.</div></div>
@@ -438,8 +438,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-flat-button-focus-opacity</td>
     <td></td>
-    <td>.12</td>
-    <td>.12</td>
+    <td>null</td>
+    <td>null</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The overlay opacity of focused flat button. Used to create background for the flat button.</div></div>
