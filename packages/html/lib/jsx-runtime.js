@@ -64,6 +64,7 @@ const booleanAttr = new Set([
     'showIcon',
     'showClearButton',
     'showSpinButton',
+    'showArrow',
 
     'showCheckbox',
 
