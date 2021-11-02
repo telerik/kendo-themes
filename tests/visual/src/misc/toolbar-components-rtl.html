@@ -18,22 +18,10 @@
         <span>Menu button</span>
         <section>
             <div class="k-widget k-toolbar k-rtl">
-                <div class="k-menu-button">
-                    <a class="k-button-text">Normal</a>
-                    <a class="k-button-arrow"><i is="Icon" name="arrow-s"></i></a>
-                </div>
-                <div class="k-menu-button k-state-hover">
-                    <a class="k-button-text k-state-hover">Hovered</a>
-                    <a class="k-button-arrow"><i is="Icon" name="arrow-s"></i></a>
-                </div>
-                <div class="k-menu-button k-state-focused">
-                    <a class="k-button-text">Focused</a>
-                    <a class="k-button-arrow"><i is="Icon" name="arrow-s"></i></a>
-                </div>
-                <div class="k-menu-button k-state-disabled">
-                    <a class="k-button-text">Disabled</a>
-                    <a class="k-button-arrow"><i is="Icon" name="arrow-s"></i></a>
-                </div>
+                <div is="MenuButton">Normal</div>
+                <div is="MenuButton" hover>Hover</div>
+                <div is="MenuButton" focus>Focus</div>
+                <div is="MenuButton" disabled>Disabled</div>
             </div>
         </section>
 

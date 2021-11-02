@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en" class="k-no-animations">
+<head>
+    <title>Menu button</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+    <script src="../../assets/scripts.js"></script>
+    <script src="../../../../packages/html/dist/index.js"></script>
+
+    <style>
+        #test-area {
+            grid-template-columns: 120px repeat(5, 1fr);
+        }
+    </style>
+</head>
+<body class="k-body">
+
+    <div id="test-area" class="k-d-grid">
+        <span></span>
+        <span>Normal</span>
+        <span>Hover</span>
+        <span>Focus</span>
+        <span>Active</span>
+        <span>Disabled</span>
+
+        <span>text</span>
+        <section><button is="MenuButton">Normal</button></section>
+        <section><button is="MenuButton" hover>Hover</button></section>
+        <section><button is="MenuButton" focus>Focus</button></section>
+        <section><button is="MenuButton" active>Active</button></section>
+        <section><button is="MenuButton" disabled>Disabled</button></section>
+
+        <span>text + icon</span>
+        <section><button is="MenuButton" icon="folder">Normal</button></section>
+        <section><button is="MenuButton" icon="folder" hover>Hover</button></section>
+        <section><button is="MenuButton" icon="folder" focus>Focus</button></section>
+        <section><button is="MenuButton" icon="folder" active>Active</button></section>
+        <section><button is="MenuButton" icon="folder" disabled>Disabled</button></section>
+
+        <span>icon</span>
+        <section><button is="MenuButton" icon="folder"></button></section>
+        <section><button is="MenuButton" icon="folder" hover></button></section>
+        <section><button is="MenuButton" icon="folder" focus></button></section>
+        <section><button is="MenuButton" icon="folder" active></button></section>
+        <section><button is="MenuButton" icon="folder" disabled></button></section>
+
+        <span class="k-colspan-all"></span>
+
+        <span></span>
+        <section dir="rtl"><button is="MenuButton">Normal</button></section>
+        <section dir="rtl"><button is="MenuButton" hover>Hover</button></section>
+        <section dir="rtl"><button is="MenuButton" focus>Focus</button></section>
+        <section dir="rtl"><button is="MenuButton" active>Active</button></section>
+        <section dir="rtl"><button is="MenuButton" disabled>Disabled</button></section>
+
+        <span></span>
+        <section dir="rtl"><button is="MenuButton" icon="folder">Normal</button></section>
+        <section dir="rtl"><button is="MenuButton" icon="folder" hover>Hover</button></section>
+        <section dir="rtl"><button is="MenuButton" icon="folder" focus>Focus</button></section>
+        <section dir="rtl"><button is="MenuButton" icon="folder" active>Active</button></section>
+        <section dir="rtl"><button is="MenuButton" icon="folder" disabled>Disabled</button></section>
+
+        <span></span>
+        <section dir="rtl"><button is="MenuButton" icon="folder"></button></section>
+        <section dir="rtl"><button is="MenuButton" icon="folder" hover></button></section>
+        <section dir="rtl"><button is="MenuButton" icon="folder" focus></button></section>
+        <section dir="rtl"><button is="MenuButton" icon="folder" active></button></section>
+        <section dir="rtl"><button is="MenuButton" icon="folder" disabled></button></section>
+
+    </div>
+
+</body>
+</html>
