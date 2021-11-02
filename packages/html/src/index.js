@@ -38,6 +38,7 @@ export * from './chip/index';
 
 // Native forms
 export * from './button/index';
+export * from './menubutton/index';
 export * from './textbox/index';
 export * from './textarea/index';
 export * from './checkbox/index';
