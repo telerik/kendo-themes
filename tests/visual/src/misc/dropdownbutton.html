@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en" class="k-no-animations">
 <head>
-    <title>Buttons</title>
+    <title>DropDownButtons</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
     <link rel="stylesheet" href="../../assets/styles.css" />
@@ -10,73 +10,219 @@
 
     <style>
         #test-area {
-            grid-template-columns: repeat(2, 1fr);
-        }
-
-        #test-area > section {
-            position: relative;
-            min-height: 500px;
+            grid-template-columns: 120px repeat(6, 1fr);
         }
     </style>
 </head>
 <body class="k-body">
 
-    <div id="test-area" class="grid">
-        <section>
-            <p>Angular</p>
-            <kendo-dropdownbutton class="k-widget k-dropdown-button">
-                <button is="Button" icon="cog">User Settings</button>
-            </kendo-dropdownbutton>
+    <div id="test-area" class="k-d-grid">
+        <span></span>
+        <span>Normal</span>
+        <span>Hover</span>
+        <span>Focus</span>
+        <span>Active</span>
+        <span>Selected</span>
+        <span>Disabled</span>
 
-            <kendo-popup class="k-animation-container k-animation-container-fixed k-animation-container-shown" style="position: absolute; left: 0; top: 85px;">
-                <div class="k-popup k-list-container k-reset k-group">
-                    <kendo-button-list>
-                        <ul class="k-list k-reset">
-                            <li class="k-item k-state-focused">
-                                <i is="Icon" name="file-pdf"></i>
-                                <span>My Profile</span>
-                            </li>
-                            <li class="k-item">
-                                <i is="Icon" name="file-xls"></i>
-                                <span>Friend Requests</span>
-                            </li>
-                            <li class="k-item">
-                                <i is="Icon" name="calendar"></i>
-                                <span>Account Settings</span>
-                            </li>
-                        </ul>
-                    </kendo-button-list>
+        <span>base</span>
+
+        <span><div is="DropDownButton">Normal</div></span>
+        <span><div is="DropDownButton" hover>Hover</div></span>
+        <span><div is="DropDownButton" focus>Focus</div></span>
+        <span><div is="DropDownButton" active>Active</div></span>
+        <span><div is="DropDownButton" selected>Selected</div></span>
+        <span><div is="DropDownButton" disabled>Disabled</div></span>
+
+        <span>^ text + icon</span>
+        <span><div is="DropDownButton" icon="folder">Normal</div></span>
+        <span><div is="DropDownButton" icon="folder" hover>Hover</div></span>
+        <span><div is="DropDownButton" icon="folder" focus>Focus</div></span>
+        <span><div is="DropDownButton" icon="folder" active>Active</div></span>
+        <span><div is="DropDownButton" icon="folder" selected>Selected</div></span>
+        <span><div is="DropDownButton" icon="folder" disabled>Disabled</div></span>
+
+        <span>^ icon</span>
+        <span><div is="DropDownButton" icon="folder"></div></span>
+        <span><div is="DropDownButton" icon="folder" hover></div></span>
+        <span><div is="DropDownButton" icon="folder" focus></div></span>
+        <span><div is="DropDownButton" icon="folder" active></div></span>
+        <span><div is="DropDownButton" icon="folder" selected></div></span>
+        <span><div is="DropDownButton" icon="folder" disabled></div></span>
+
+        <span>^ text + arrow</span>
+        <span><div is="DropDownButton" showArrow>Normal</div></span>
+        <span><div is="DropDownButton" showArrow hover>Hover</div></span>
+        <span><div is="DropDownButton" showArrow focus>Focus</div></span>
+        <span><div is="DropDownButton" showArrow active>Active</div></span>
+        <span><div is="DropDownButton" showArrow selected>Selected</div></span>
+        <span><div is="DropDownButton" showArrow disabled>Disabled</div></span>
+
+        <span>primary</span>
+        <span><div is="DropDownButton" themeColor="primary">Normal</div></span>
+        <span><div is="DropDownButton" themeColor="primary" hover>Hover</div></span>
+        <span><div is="DropDownButton" themeColor="primary" focus>Focus</div></span>
+        <span><div is="DropDownButton" themeColor="primary" active>Active</div></span>
+        <span><div is="DropDownButton" themeColor="primary" selected>Selected</div></span>
+        <span><div is="DropDownButton" themeColor="primary" disabled>Disabled</div></span>
+
+        <span>^ text + icon</span>
+        <span><div is="DropDownButton" themeColor="primary" icon="folder">Normal</div></span>
+        <span><div is="DropDownButton" themeColor="primary" icon="folder" hover>Hover</div></span>
+        <span><div is="DropDownButton" themeColor="primary" icon="folder" focus>Focus</div></span>
+        <span><div is="DropDownButton" themeColor="primary" icon="folder" active>Active</div></span>
+        <span><div is="DropDownButton" themeColor="primary" icon="folder" selected>Selected</div></span>
+        <span><div is="DropDownButton" themeColor="primary" icon="folder" disabled>Disabled</div></span>
+
+        <span>^ icon</span>
+        <span><div is="DropDownButton" themeColor="primary" icon="folder"></div></span>
+        <span><div is="DropDownButton" themeColor="primary" icon="folder" hover></div></span>
+        <span><div is="DropDownButton" themeColor="primary" icon="folder" focus></div></span>
+        <span><div is="DropDownButton" themeColor="primary" icon="folder" active></div></span>
+        <span><div is="DropDownButton" themeColor="primary" icon="folder" selected></div></span>
+        <span><div is="DropDownButton" themeColor="primary" icon="folder" disabled></div></span>
+
+        <span>^ text + arrow</span>
+        <span><div is="DropDownButton" themeColor="primary" showArrow>Normal</div></span>
+        <span><div is="DropDownButton" themeColor="primary" showArrow hover>Hover</div></span>
+        <span><div is="DropDownButton" themeColor="primary" showArrow focus>Focus</div></span>
+        <span><div is="DropDownButton" themeColor="primary" showArrow active>Active</div></span>
+        <span><div is="DropDownButton" themeColor="primary" showArrow selected>Selected</div></span>
+        <span><div is="DropDownButton" themeColor="primary" showArrow disabled>Disabled</div></span>
+
+        <span>Menu list</span>
+        <span>
+            <div class="k-animation-container k-animation-container-fixed k-animation-container-shown">
+                <div class="k-popup k-menu-popup">
+                    <div is="MenuList">
+                        <div is="MenuItem" text="Normal"></div>
+                        <div is="MenuItem" text="Normal" icon="folder"></div>
+                        <div is="MenuItem" text="Normal" showArrow>
+                            <div is="MenuItem" text="Child"></div>
+                        </div>
+                        <div is="MenuItem" text="Normal" icon="folder" showArrow>
+                            <div is="MenuItem" text="Child"></div>
+                        </div>
+                        <div is="MenuItem" text="Normal" showArrow arrowIconName='chevron-right'>
+                            <div is="MenuItem" text="Child"></div>
+                        </div>
+                        <div is="MenuItem" text="Normal" icon="folder" showArrow arrowIconName='chevron-right'>
+                            <div is="MenuItem" text="Child"></div>
+                        </div>
+                    </div>
                 </div>
-            </kendo-popup>
-        </section>
-
-        <section>
-            <p>Angular - RTL</p>
-            <kendo-dropdownbutton class="k-widget k-dropdown-button" dir="rtl">
-                <button is="Button" icon="cog">User Settings</button>
-            </kendo-dropdownbutton>
-
-            <kendo-popup class="k-animation-container k-animation-container-fixed k-animation-container-shown" style="position: absolute; left: 0; top: 85px;">
-                <div class="k-popup k-list-container k-reset k-group">
-                    <kendo-button-list dir="rtl">
-                        <ul class="k-list k-reset">
-                            <li class="k-item k-state-focused">
-                                <i is="Icon" name="file-pdf"></i>
-                                <span>RTL mode with icons</span>
-                            </li>
-                            <li class="k-item">
-                                <i is="Icon" name="file-xls"></i>
-                                <span>Friend Requests</span>
-                            </li>
-                            <li class="k-item">
-                                <i is="Icon" name="calendar"></i>
-                                <span>Account Settings</span>
-                            </li>
-                        </ul>
-                    </kendo-button-list>
+            </div>
+        </span>
+        <span>
+            <div class="k-animation-container k-animation-container-fixed k-animation-container-shown">
+                <div class="k-popup k-menu-popup">
+                    <div is="MenuList">
+                        <div is="MenuItem" text="Hover" hover></div>
+                        <div is="MenuItem" text="Hover" hover icon="folder"></div>
+                        <div is="MenuItem" text="Hover" hover showArrow>
+                            <div is="MenuItem" text="Child"></div>
+                        </div>
+                        <div is="MenuItem" text="Hover" hover icon="folder" showArrow>
+                            <div is="MenuItem" text="Child"></div>
+                        </div>
+                        <div is="MenuItem" text="Hover" hover showArrow arrowIconName='chevron-right'>
+                            <div is="MenuItem" text="Child"></div>
+                        </div>
+                        <div is="MenuItem" text="Hover" hover icon="folder" showArrow arrowIconName='chevron-right'>
+                            <div is="MenuItem" text="Child"></div>
+                        </div>
+                    </div>
                 </div>
-            </kendo-popup>
-        </section>
+            </div>
+        </span>
+        <span>
+            <div class="k-animation-container k-animation-container-fixed k-animation-container-shown">
+                <div class="k-popup k-menu-popup">
+                    <div is="MenuList">
+                        <div is="MenuItem" text="Focus" focus></div>
+                        <div is="MenuItem" text="Focus" focus icon="folder"></div>
+                        <div is="MenuItem" text="Focus" focus showArrow>
+                            <div is="MenuItem" text="Child"></div>
+                        </div>
+                        <div is="MenuItem" text="Focus" focus icon="folder" showArrow>
+                            <div is="MenuItem" text="Child"></div>
+                        </div>
+                        <div is="MenuItem" text="Focus" focus showArrow arrowIconName='chevron-right'>
+                            <div is="MenuItem" text="Child"></div>
+                        </div>
+                        <div is="MenuItem" text="Focus" focus icon="folder" showArrow arrowIconName='chevron-right'>
+                            <div is="MenuItem" text="Child"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </span>
+        <span>
+            <div class="k-animation-container k-animation-container-fixed k-animation-container-shown">
+                <div class="k-popup k-menu-popup">
+                    <div is="MenuList">
+                        <div is="MenuItem" text="Active" active></div>
+                        <div is="MenuItem" text="Active" active icon="folder"></div>
+                        <div is="MenuItem" text="Active" active showArrow>
+                            <div is="MenuItem" text="Child"></div>
+                        </div>
+                        <div is="MenuItem" text="Active" active icon="folder" showArrow>
+                            <div is="MenuItem" text="Child"></div>
+                        </div>
+                        <div is="MenuItem" text="Active" active showArrow arrowIconName='chevron-right'>
+                            <div is="MenuItem" text="Child"></div>
+                        </div>
+                        <div is="MenuItem" text="Active" active icon="folder" showArrow arrowIconName='chevron-right'>
+                            <div is="MenuItem" text="Child"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </span>
+        <span>
+            <div class="k-animation-container k-animation-container-fixed k-animation-container-shown">
+                <div class="k-popup k-menu-popup">
+                    <div is="MenuList">
+                        <div is="MenuItem" text="Normal" selected></div>
+                        <div is="MenuItem" text="Normal" icon="folder" selected></div>
+                        <div is="MenuItem" text="Normal" showArrow selected>
+                            <div is="MenuItem" text="Child"></div>
+                        </div>
+                        <div is="MenuItem" text="Normal" icon="folder" showArrow selected>
+                            <div is="MenuItem" text="Child"></div>
+                        </div>
+                        <div is="MenuItem" text="Normal" showArrow arrowIconName='chevron-right' selected>
+                            <div is="MenuItem" text="Child"></div>
+                        </div>
+                        <div is="MenuItem" text="Normal" icon="folder" showArrow arrowIconName='chevron-right' selected>
+                            <div is="MenuItem" text="Child"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </span>
+        <span>
+            <div class="k-animation-container k-animation-container-fixed k-animation-container-shown">
+                <div class="k-popup k-menu-popup">
+                    <div is="MenuList">
+                        <div is="MenuItem" text="Disabled" disabled></div>
+                        <div is="MenuItem" text="Disabled" disabled icon="folder"></div>
+                        <div is="MenuItem" text="Disabled" disabled showArrow>
+                            <div is="MenuItem" text="Child"></div>
+                        </div>
+                        <div is="MenuItem" text="Disabled" disabled icon="folder" showArrow>
+                            <div is="MenuItem" text="Child"></div>
+                        </div>
+                        <div is="MenuItem" text="Disabled" disabled showArrow arrowIconName='chevron-right'>
+                            <div is="MenuItem" text="Child"></div>
+                        </div>
+                        <div is="MenuItem" text="Disabled" disabled icon="folder" showArrow arrowIconName='chevron-right'>
+                            <div is="MenuItem" text="Child"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </span>
     </div>
 
 </body>
