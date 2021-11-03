@@ -2,9 +2,6 @@
 
 @include exports( "datetime/theme/material" ) {
 
-    // Timepicker
-    .k-timepicker {}
-
     .k-timeselector,
     .k-datetime-wrap {
         border-color: inherit;
