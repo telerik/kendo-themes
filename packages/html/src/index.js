@@ -39,6 +39,7 @@ export * from './avatar/index';
 // Native forms
 export * from './button/index';
 export * from './dropdownbutton/index';
+export * from './splitbutton/index';
 export * from './textbox/index';
 export * from './textarea/index';
 export * from './checkbox/index';
