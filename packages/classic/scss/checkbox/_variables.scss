@@ -140,7 +140,7 @@ $kendo-checkbox-list-spacing: map-get( $spacing, 4 ) !default;
 $kendo-checkbox-list-item-padding-x: 0px !default;
 /// The vertical list item padding of checkbox.
 /// @group checkbox
-$kendo-checkbox-list-item-padding-y: $list-item-padding-y !default;
+$kendo-checkbox-list-item-padding-y: $kendo-list-item-padding-y-md !default;
 
 
 // Checkbox ripple

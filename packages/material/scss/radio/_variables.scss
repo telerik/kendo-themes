@@ -140,7 +140,7 @@ $kendo-radio-list-spacing: map-get( $spacing, 4 ) !default;
 $kendo-radio-list-item-padding-x: 0px !default;
 /// The vertical list item padding of radio button.
 /// @group radio
-$kendo-radio-list-item-padding-y: $list-item-padding-y !default;
+$kendo-radio-list-item-padding-y: $kendo-list-item-padding-y-md !default;
 
 
 // Radio ripple
