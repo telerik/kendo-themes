@@ -144,10 +144,10 @@ $kendo-menu-popup-item-gradient: null !default;
 
 /// The background of hovered menu item in popup.
 /// @group menu-popup-item
-$kendo-menu-popup-item-hover-bg: $list-item-hovered-bg !default;
+$kendo-menu-popup-item-hover-bg: $kendo-list-item-hover-bg !default;
 /// The text color of hovered menu item in popup.
 /// @group menu-popup-item
-$kendo-menu-popup-item-hover-text: $list-item-hovered-text !default;
+$kendo-menu-popup-item-hover-text: $kendo-list-item-hover-text !default;
 /// The border color of hovered menu item in popup.
 /// @group menu-popup-item
 $kendo-menu-popup-item-hover-border: null !default;
@@ -157,10 +157,10 @@ $kendo-menu-popup-item-hover-gradient: null !default;
 
 /// The background of expanded menu item in popup.
 /// @group menu-popup-item
-$kendo-menu-popup-item-expanded-bg: $list-item-selected-bg !default;
+$kendo-menu-popup-item-expanded-bg: $kendo-list-item-selected-bg !default;
 /// The text color of expanded menu item in popup.
 /// @group menu-popup-item
-$kendo-menu-popup-item-expanded-text: $list-item-selected-text !default;
+$kendo-menu-popup-item-expanded-text: $kendo-list-item-selected-text !default;
 /// The border color of expanded menu item in popup.
 /// @group menu-popup-item
 $kendo-menu-popup-item-expanded-border: null !default;
