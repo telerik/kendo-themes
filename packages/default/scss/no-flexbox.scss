@@ -18,7 +18,6 @@
         }
     }
 
-    .k-dateinput-wrap,
     .k-picker-wrap {
         $k-select-width: 2em;
         display: block;
@@ -37,10 +36,6 @@
     .k-timepicker,
     .k-datepicker {
         display: inline-block;
-
-        .k-dateinput-wrap {
-            display: inline-block;
-        }
 
         .k-select {
             position: absolute;
