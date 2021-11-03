@@ -26,7 +26,7 @@ $pager-item-bg: null !default;
 $pager-item-text: null !default;
 $pager-item-border: null !default;
 
-$pager-item-hover-bg: $list-item-hovered-bg !default;
+$pager-item-hover-bg: $kendo-list-item-hover-bg !default;
 $pager-item-hover-text: $pager-text !default;
 $pager-item-hover-border: null !default;
 
@@ -41,7 +41,7 @@ $pager-number-border-radius: $pager-item-border-radius !default;
 $pager-number-spacing: $pager-item-spacing !default;
 
 $pager-item-focus-opacity: .12 !default;
-$pager-item-focus-bg: rgba($list-item-hovered-bg, $pager-item-focus-opacity) !default;
+$pager-item-focus-bg: rgba($kendo-list-item-hover-bg, $pager-item-focus-opacity) !default;
 $pager-item-focus-shadow: null !default;
 
 $pager-number-bg: null !default;

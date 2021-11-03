@@ -10,8 +10,8 @@
     .k-time-list {
         .k-item:hover {
             @include fill(
-                $list-item-hovered-text,
-                $list-item-hovered-bg
+                $kendo-list-item-hover-text,
+                $kendo-list-item-hover-bg
             );
         }
     }
