@@ -395,15 +395,9 @@
         }
 
         .k-list-title,
-        .k-filter-help-text,
-        .k-list-group-header {
+        .k-filter-help-text {
             padding: $listgroup-item-padding-y $listgroup-item-padding-x;
             display: block;
-        }
-
-        .k-list-group-header {
-            font-weight: bold;
-            text-transform: uppercase;
         }
 
         .k-listgroup {
