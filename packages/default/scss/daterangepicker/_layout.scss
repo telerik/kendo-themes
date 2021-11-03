@@ -1,0 +1,18 @@
+@include exports( "daterangepicker/layout" ) {
+
+    // Daterange picker
+    .k-daterange-picker {
+        width: $kendo-input-default-width;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: flex-start;
+        gap: map-get( $spacing, 2 );
+    }
+
+
+    // Alias
+    .k-daterangepicker {
+        @extend .k-daterange-picker;
+    }
+
+}
