@@ -1,7 +1,6 @@
 @include exports("datetime/theme") {
 
     // Common
-    .k-datepicker,
     .k-timepicker,
     .k-datetimepicker {
 
@@ -20,7 +19,6 @@
     }
 
 
-    .k-datepicker .k-picker-wrap,
     .k-timepicker .k-picker-wrap,
     .k-datetimepicker .k-picker-wrap {
         @include fill(
@@ -51,7 +49,6 @@
         }
     }
 
-    .k-datepicker,
     .k-timepicker {
 
         .k-select:hover,
@@ -162,7 +159,6 @@
         }
     }
 
-    .k-datepicker,
     .k-datetimepicker,
     .k-timepicker {
         .k-picker-wrap {
@@ -188,42 +184,6 @@
                 &.k-state-focused {
                     @include box-shadow($invalid-shadow);
                 }
-            }
-        }
-    }
-
-    // Universal rendering
-    .k-datepicker {
-        &.k-state-hover {
-            .k-picker-wrap {
-                @include fill(
-                    $datetime-hovered-text,
-                    $datetime-hovered-bg,
-                    $datetime-hovered-border
-                );
-            }
-        }
-
-        &.k-state-focus {
-            .k-picker-wrap {
-                @include fill(
-                    $datetime-focused-text,
-                    $datetime-focused-bg,
-                    $datetime-focused-border
-                );
-                @include box-shadow($datetime-focused-shadow);
-            }
-        }
-
-        &.k-invalid {
-            .k-picker-wrap {
-                border-color: $invalid-border;
-            }
-        }
-
-        &.k-invalid.k-state-focus {
-            .k-picker-wrap {
-                @include box-shadow($invalid-shadow);
             }
         }
     }
