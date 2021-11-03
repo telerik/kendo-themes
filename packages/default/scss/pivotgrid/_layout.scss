@@ -507,8 +507,7 @@
         }
     }
 
-    .k-pivot-toolbar .k-button,
-    .k-fieldselector .k-list li.k-item {
+    .k-pivot-toolbar .k-button {
         @include border-radius( $border-radius );
         padding: $kendo-button-padding-y $kendo-button-padding-x;
         padding-right: calc( #{$kendo-button-padding-x} + #{$icon-size * 3} );
@@ -669,25 +668,6 @@
         }
         .k-edit-field {
             width: 77%;
-        }
-
-
-        // List container
-        .k-list-container {
-            margin-bottom: $spacer;
-            padding: $padding-y-sm;
-            border-width: 1px;
-            border-style: solid;
-        }
-        .k-list {
-            padding-bottom: $spacer;
-        }
-        .k-list .k-item {
-            border-width: 1px;
-            border-style: solid;
-        }
-        .k-list .k-item + .k-item {
-            margin-top: ($spacer / 2);
         }
 
     }
