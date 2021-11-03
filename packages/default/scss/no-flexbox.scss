@@ -18,21 +18,6 @@
         }
     }
 
-    .k-picker-wrap {
-        $k-select-width: 2em;
-        display: block;
-
-        .k-input {
-            width: calc(100% - #{$k-select-width});
-            display: inline-block;
-            vertical-align: middle;
-        }
-        .k-select {
-            display: inline-block;
-            vertical-align: middle;
-        }
-    }
-
     .k-time-list-wrapper,
     .k-time-separator {
         display: inline-block;
