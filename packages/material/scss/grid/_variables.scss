@@ -107,7 +107,7 @@ $grid-sorting-index-spacing-y: $icon-spacing / 2 !default;
 $grid-sorting-index-spacing-x: -$grid-sorting-index-spacing-y !default;
 
 
-$grid-focused-shadow: $list-item-focused-shadow !default;
+$grid-focused-shadow: $kendo-list-item-focus-shadow !default;
 
 $grid-edit-cell-padding-x: $grid-cell-padding-x !default;
 $grid-edit-cell-padding-y: 6px !default;
@@ -146,8 +146,8 @@ $grid-column-menu-popup-padding-y: null !default;
 $grid-column-menu-item-padding-x: $kendo-menu-popup-item-padding-x-md !default;
 $grid-column-menu-item-padding-y: $kendo-menu-popup-item-padding-y-md !default;
 
-$grid-column-menu-list-item-padding-x: $list-item-padding-x !default;
-$grid-column-menu-list-item-padding-y: $list-item-padding-y !default;
+$grid-column-menu-list-item-padding-x: $kendo-list-item-padding-x-md !default;
+$grid-column-menu-list-item-padding-y: $kendo-list-item-padding-y-md !default;
 
 $grid-column-menu-items-wrap-padding-x: 0 !default;
 $grid-column-menu-items-wrap-padding-y: map-get( $spacing, 2 ) !default;
