@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en" class="k-no-animations">
 <head>
-    <title>Buttons</title>
+    <title>SplitButtons</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
     <link rel="stylesheet" href="../../assets/styles.css" />
@@ -10,210 +10,219 @@
 
     <style>
         #test-area {
-            grid-template-columns: repeat(4, 1fr);
-        }
-
-        #test-area > section {
-            position: relative;
-            min-height: 500px;
-        }
-
-        .splitbuttons > span {
-            display: block;
-            margin-bottom: 8px;
+            grid-template-columns: 120px repeat(6, 1fr);
         }
     </style>
 </head>
 <body class="k-body">
 
-    <div id="test-area" class="grid">
-        <section class="splitbuttons">
-            <p>Angular</p>
-            <span>
-                <kendo-splitbutton class="k-split-button k-button-group">
-                    <button class="k-button-icontext k-button">
-                        <i is="Icon" name="save"></i>
-                        Normal
-                    </button>
-                    <button class="k-button-icon k-button">
-                        <i is="Icon" name="arrow-s"></i>
-                    </button>
-                </kendo-splitbutton>
-            </span>
+    <div id="test-area" class="k-d-grid">
+        <span></span>
+        <span>Normal</span>
+        <span>Hover</span>
+        <span>Focus</span>
+        <span>Active</span>
+        <span>Selected</span>
+        <span>Disabled</span>
 
-            <span>
-                <kendo-splitbutton class="k-split-button k-button-group">
-                    <button class="k-button-icontext k-button k-state-hover">
-                        <i is="Icon" name="save"></i>
-                        Hover
-                    </button>
-                    <button class="k-button-icon k-button">
-                        <i is="Icon" name="arrow-s"></i>
-                    </button>
-                </kendo-splitbutton>
-            </span>
+        <span>base</span>
 
-            <span>
-                <kendo-splitbutton class="k-split-button k-button-group k-state-focused">
-                    <button class="k-button-icontext k-button k-state-active k-state-focused">
-                        <i is="Icon" name="save"></i>
-                        Active
-                    </button>
-                    <button class="k-button-icon k-button">
-                        <i is="Icon" name="arrow-s"></i>
-                    </button>
-                </kendo-splitbutton>
-            </span>
+        <span><div is="SplitButton">Normal</div></span>
+        <span><div is="SplitButton" hover>Hover</div></span>
+        <span><div is="SplitButton" focus>Focus</div></span>
+        <span><div is="SplitButton" active>Active</div></span>
+        <span><div is="SplitButton" selected>Selected</div></span>
+        <span><div is="SplitButton" disabled>Disabled</div></span>
 
-            <span>
-                <kendo-splitbutton class="k-split-button k-button-group k-state-focused">
-                    <button class="k-button-icontext k-button k-state-focused">
-                        <i is="Icon" name="save"></i>
-                        Focus
-                    </button>
-                    <button class="k-button-icon k-button">
-                        <i is="Icon" name="arrow-s"></i>
-                    </button>
-                </kendo-splitbutton>
-            </span>
+        <span>^ text + icon</span>
+        <span><div is="SplitButton" icon="folder">Normal</div></span>
+        <span><div is="SplitButton" icon="folder" hover>Hover</div></span>
+        <span><div is="SplitButton" icon="folder" focus>Focus</div></span>
+        <span><div is="SplitButton" icon="folder" active>Active</div></span>
+        <span><div is="SplitButton" icon="folder" selected>Selected</div></span>
+        <span><div is="SplitButton" icon="folder" disabled>Disabled</div></span>
 
-            <span>
-                <kendo-splitbutton class="k-split-button k-button-group">
-                    <button class="k-button-icontext k-button k-state-disabled">
-                        <i is="Icon" name="save"></i>
-                        Disabled
-                    </button>
-                    <button class="k-button-icon k-button k-state-disabled">
-                        <i is="Icon" name="arrow-s"></i>
-                    </button>
-                </kendo-splitbutton>
-            </span>
+        <span>^ icon</span>
+        <span><div is="SplitButton" icon="folder"></div></span>
+        <span><div is="SplitButton" icon="folder" hover></div></span>
+        <span><div is="SplitButton" icon="folder" focus></div></span>
+        <span><div is="SplitButton" icon="folder" active></div></span>
+        <span><div is="SplitButton" icon="folder" selected></div></span>
+        <span><div is="SplitButton" icon="folder" disabled></div></span>
 
-            <kendo-popup class="k-animation-container k-animation-container-fixed k-animation-container-shown" style="position: absolute; left: 0; top: 280px;">
-                <div class="k-popup k-list-container k-reset k-group">
-                    <kendo-button-list>
-                        <ul class="k-list k-reset">
-                            <li class="k-item k-state-focused">
-                                <i is="Icon" name="upload"></i>
-                                Save as
-                            </li>
-                            <li class="k-item">
-                                <i is="Icon" name="upload"></i>
-                                Upload to drive
-                            </li>
-                        </ul>
-                    </kendo-button-list>
+        <span>^ text + arrow</span>
+        <span><div is="SplitButton" showArrow>Normal</div></span>
+        <span><div is="SplitButton" showArrow hover>Hover</div></span>
+        <span><div is="SplitButton" showArrow focus>Focus</div></span>
+        <span><div is="SplitButton" showArrow active>Active</div></span>
+        <span><div is="SplitButton" showArrow selected>Selected</div></span>
+        <span><div is="SplitButton" showArrow disabled>Disabled</div></span>
+
+        <span>primary</span>
+        <span><div is="SplitButton" themeColor="primary">Normal</div></span>
+        <span><div is="SplitButton" themeColor="primary" hover>Hover</div></span>
+        <span><div is="SplitButton" themeColor="primary" focus>Focus</div></span>
+        <span><div is="SplitButton" themeColor="primary" active>Active</div></span>
+        <span><div is="SplitButton" themeColor="primary" selected>Selected</div></span>
+        <span><div is="SplitButton" themeColor="primary" disabled>Disabled</div></span>
+
+        <span>^ text + icon</span>
+        <span><div is="SplitButton" themeColor="primary" icon="folder">Normal</div></span>
+        <span><div is="SplitButton" themeColor="primary" icon="folder" hover>Hover</div></span>
+        <span><div is="SplitButton" themeColor="primary" icon="folder" focus>Focus</div></span>
+        <span><div is="SplitButton" themeColor="primary" icon="folder" active>Active</div></span>
+        <span><div is="SplitButton" themeColor="primary" icon="folder" selected>Selected</div></span>
+        <span><div is="SplitButton" themeColor="primary" icon="folder" disabled>Disabled</div></span>
+
+        <span>^ icon</span>
+        <span><div is="SplitButton" themeColor="primary" icon="folder"></div></span>
+        <span><div is="SplitButton" themeColor="primary" icon="folder" hover></div></span>
+        <span><div is="SplitButton" themeColor="primary" icon="folder" focus></div></span>
+        <span><div is="SplitButton" themeColor="primary" icon="folder" active></div></span>
+        <span><div is="SplitButton" themeColor="primary" icon="folder" selected></div></span>
+        <span><div is="SplitButton" themeColor="primary" icon="folder" disabled></div></span>
+
+        <span>^ text + arrow</span>
+        <span><div is="SplitButton" themeColor="primary" showArrow>Normal</div></span>
+        <span><div is="SplitButton" themeColor="primary" showArrow hover>Hover</div></span>
+        <span><div is="SplitButton" themeColor="primary" showArrow focus>Focus</div></span>
+        <span><div is="SplitButton" themeColor="primary" showArrow active>Active</div></span>
+        <span><div is="SplitButton" themeColor="primary" showArrow selected>Selected</div></span>
+        <span><div is="SplitButton" themeColor="primary" showArrow disabled>Disabled</div></span>
+
+        <span>Menu list</span>
+        <span>
+            <div class="k-animation-container k-animation-container-fixed k-animation-container-shown">
+                <div class="k-popup k-menu-popup">
+                    <div is="MenuList">
+                        <div is="MenuItem" text="Normal"></div>
+                        <div is="MenuItem" text="Normal" icon="folder"></div>
+                        <div is="MenuItem" text="Normal" showArrow>
+                            <div is="MenuItem" text="Child"></div>
+                        </div>
+                        <div is="MenuItem" text="Normal" icon="folder" showArrow>
+                            <div is="MenuItem" text="Child"></div>
+                        </div>
+                        <div is="MenuItem" text="Normal" showArrow arrowIconName='chevron-right'>
+                            <div is="MenuItem" text="Child"></div>
+                        </div>
+                        <div is="MenuItem" text="Normal" icon="folder" showArrow arrowIconName='chevron-right'>
+                            <div is="MenuItem" text="Child"></div>
+                        </div>
+                    </div>
                 </div>
-            </kendo-popup>
-        </section>
-
-
-
-        <section class="splitbuttons">
-            <p>Angular - Outline SplitButton</p>
-            <span>
-                <kendo-splitbutton icon="paste" look="outline" class="k-split-button k-button-group k-outline">
-                    <button class="k-button-icontext k-button k-outline"><i is="Icon" name="paste"></i>Normal</button>
-                    <button class="k-button-icon k-button k-outline"><i is="Icon" name="arrow-s"></i></button>
-                </kendo-splitbutton>
-            </span>
-
-            <span>
-                <kendo-splitbutton icon="paste" look="outline" class="k-split-button k-button-group k-outline">
-                    <button class="k-button-icontext k-button k-outline k-state-hover"><i is="Icon" name="paste"></i>Hover</button>
-                    <button class="k-button-icon k-button k-outline"><i is="Icon" name="arrow-s"></i></button>
-                </kendo-splitbutton>
-            </span>
-
-            <span>
-                <kendo-splitbutton icon="paste" look="outline" class="k-split-button k-button-group k-state-focused k-outline">
-                    <button class="k-button-icontext k-button k-outline k-state-active k-state-focused"><i is="Icon" name="paste"></i>Active</button>
-                    <button class="k-button-icon k-button k-outline"><i is="Icon" name="arrow-s"></i></button>
-                </kendo-splitbutton>
-            </span>
-
-            <span>
-                <kendo-splitbutton icon="paste" look="outline" class="k-split-button k-button-group k-state-focused k-outline">
-                    <button class="k-button-icontext k-button k-outline k-state-focused"><i is="Icon" name="paste"></i>Focus</button>
-                    <button class="k-button-icon k-button k-outline"><i is="Icon" name="arrow-s"></i></button>
-                </kendo-splitbutton>
-            </span>
-
-            <span>
-                <kendo-splitbutton icon="paste" look="outline" class="k-split-button k-button-group k-outline">
-                    <button class="k-button-icontext k-button k-outline k-state-disabled"><i is="Icon" name="paste"></i>Disabled</button>
-                    <button class="k-button-icon k-button k-outline k-state-disabled"><i is="Icon" name="arrow-s"></i></button>
-                </kendo-splitbutton>
-            </span>
-        </section>
-
-        <section class="splitbuttons">
-            <p>Angular - Flat SplitButton</p>
-            <span>
-                <kendo-splitbutton icon="paste" look="flat" class="k-split-button k-button-group k-flat">
-                    <button class="k-button-icontext k-button k-flat"><i is="Icon" name="paste"></i>Normal</button>
-                    <button class="k-button-icon k-button k-flat"><i is="Icon" name="arrow-s"></i></button>
-                </kendo-splitbutton>
-            </span>
-
-            <span>
-                <kendo-splitbutton icon="paste" look="flat" class="k-split-button k-button-group k-flat">
-                    <button class="k-button-icontext k-button k-flat k-state-hover"><i is="Icon" name="paste"></i>Hover</button>
-                    <button class="k-button-icon k-button k-flat"><i is="Icon" name="arrow-s"></i></button>
-                </kendo-splitbutton>
-            </span>
-
-            <span>
-                <kendo-splitbutton icon="paste" look="flat" class="k-split-button k-button-group k-state-focused k-flat">
-                    <button class="k-button-icontext k-button k-flat k-state-active k-state-focused"><i is="Icon" name="paste"></i>Active</button>
-                    <button class="k-button-icon k-button k-flat"><i is="Icon" name="arrow-s"></i></button>
-                </kendo-splitbutton>
-            </span>
-
-            <span>
-                <kendo-splitbutton icon="paste" look="flat" class="k-split-button k-button-group k-state-focused k-flat">
-                    <button class="k-button-icontext k-button k-flat k-state-focused"><i is="Icon" name="paste"></i>Focus</button>
-                    <button class="k-button-icon k-button k-flat"><i is="Icon" name="arrow-s"></i></button>
-                </kendo-splitbutton>
-            </span>
-
-            <span>
-                <kendo-splitbutton icon="paste" look="flat" class="k-split-button k-button-group k-flat">
-                    <button class="k-button-icontext k-button k-flat k-state-disabled"><i is="Icon" name="paste"></i>Disabled</button>
-                    <button class="k-button-icon k-button k-flat k-state-disabled"><i is="Icon" name="arrow-s"></i></button>
-                </kendo-splitbutton>
-            </span>
-        </section>
-
-        <section>
-            <p>Angular - RTL</p>
-            <kendo-splitbutton class="k-split-button k-button-group k-state-focused" dir="rtl">
-                <button class="k-button-icontext k-button">
-                    <i is="Icon" name="save"></i>
-                    Save
-                </button>
-                <button class="k-button-icon k-button">
-                    <i is="Icon" name="arrow-s"></i>
-                </button>
-            </kendo-splitbutton>
-
-            <kendo-popup class="k-animation-container k-animation-container-fixed k-animation-container-shown" style="position: absolute; left: 0; top: 85px;">
-                <div class="k-popup k-list-container k-reset k-group">
-                    <kendo-button-list  dir="rtl">
-                        <ul class="k-list k-reset">
-                            <li class="k-item k-state-focused">
-                                <i is="Icon" name="upload"></i>
-                                Save as
-                            </li>
-                            <li class="k-item">
-                                <i is="Icon" name="upload"></i>
-                                Upload to drive
-                            </li>
-                        </ul>
-                    </kendo-button-list>
+            </div>
+        </span>
+        <span>
+            <div class="k-animation-container k-animation-container-fixed k-animation-container-shown">
+                <div class="k-popup k-menu-popup">
+                    <div is="MenuList">
+                        <div is="MenuItem" text="Hover" hover></div>
+                        <div is="MenuItem" text="Hover" hover icon="folder"></div>
+                        <div is="MenuItem" text="Hover" hover showArrow>
+                            <div is="MenuItem" text="Child"></div>
+                        </div>
+                        <div is="MenuItem" text="Hover" hover icon="folder" showArrow>
+                            <div is="MenuItem" text="Child"></div>
+                        </div>
+                        <div is="MenuItem" text="Hover" hover showArrow arrowIconName='chevron-right'>
+                            <div is="MenuItem" text="Child"></div>
+                        </div>
+                        <div is="MenuItem" text="Hover" hover icon="folder" showArrow arrowIconName='chevron-right'>
+                            <div is="MenuItem" text="Child"></div>
+                        </div>
+                    </div>
                 </div>
-            </kendo-popup>
-        </section>
+            </div>
+        </span>
+        <span>
+            <div class="k-animation-container k-animation-container-fixed k-animation-container-shown">
+                <div class="k-popup k-menu-popup">
+                    <div is="MenuList">
+                        <div is="MenuItem" text="Focus" focus></div>
+                        <div is="MenuItem" text="Focus" focus icon="folder"></div>
+                        <div is="MenuItem" text="Focus" focus showArrow>
+                            <div is="MenuItem" text="Child"></div>
+                        </div>
+                        <div is="MenuItem" text="Focus" focus icon="folder" showArrow>
+                            <div is="MenuItem" text="Child"></div>
+                        </div>
+                        <div is="MenuItem" text="Focus" focus showArrow arrowIconName='chevron-right'>
+                            <div is="MenuItem" text="Child"></div>
+                        </div>
+                        <div is="MenuItem" text="Focus" focus icon="folder" showArrow arrowIconName='chevron-right'>
+                            <div is="MenuItem" text="Child"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </span>
+        <span>
+            <div class="k-animation-container k-animation-container-fixed k-animation-container-shown">
+                <div class="k-popup k-menu-popup">
+                    <div is="MenuList">
+                        <div is="MenuItem" text="Active" active></div>
+                        <div is="MenuItem" text="Active" active icon="folder"></div>
+                        <div is="MenuItem" text="Active" active showArrow>
+                            <div is="MenuItem" text="Child"></div>
+                        </div>
+                        <div is="MenuItem" text="Active" active icon="folder" showArrow>
+                            <div is="MenuItem" text="Child"></div>
+                        </div>
+                        <div is="MenuItem" text="Active" active showArrow arrowIconName='chevron-right'>
+                            <div is="MenuItem" text="Child"></div>
+                        </div>
+                        <div is="MenuItem" text="Active" active icon="folder" showArrow arrowIconName='chevron-right'>
+                            <div is="MenuItem" text="Child"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </span>
+        <span>
+            <div class="k-animation-container k-animation-container-fixed k-animation-container-shown">
+                <div class="k-popup k-menu-popup">
+                    <div is="MenuList">
+                        <div is="MenuItem" text="Normal" selected></div>
+                        <div is="MenuItem" text="Normal" icon="folder" selected></div>
+                        <div is="MenuItem" text="Normal" showArrow selected>
+                            <div is="MenuItem" text="Child"></div>
+                        </div>
+                        <div is="MenuItem" text="Normal" icon="folder" showArrow selected>
+                            <div is="MenuItem" text="Child"></div>
+                        </div>
+                        <div is="MenuItem" text="Normal" showArrow arrowIconName='chevron-right' selected>
+                            <div is="MenuItem" text="Child"></div>
+                        </div>
+                        <div is="MenuItem" text="Normal" icon="folder" showArrow arrowIconName='chevron-right' selected>
+                            <div is="MenuItem" text="Child"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </span>
+        <span>
+            <div class="k-animation-container k-animation-container-fixed k-animation-container-shown">
+                <div class="k-popup k-menu-popup">
+                    <div is="MenuList">
+                        <div is="MenuItem" text="Disabled" disabled></div>
+                        <div is="MenuItem" text="Disabled" disabled icon="folder"></div>
+                        <div is="MenuItem" text="Disabled" disabled showArrow>
+                            <div is="MenuItem" text="Child"></div>
+                        </div>
+                        <div is="MenuItem" text="Disabled" disabled icon="folder" showArrow>
+                            <div is="MenuItem" text="Child"></div>
+                        </div>
+                        <div is="MenuItem" text="Disabled" disabled showArrow arrowIconName='chevron-right'>
+                            <div is="MenuItem" text="Child"></div>
+                        </div>
+                        <div is="MenuItem" text="Disabled" disabled icon="folder" showArrow arrowIconName='chevron-right'>
+                            <div is="MenuItem" text="Child"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </span>
     </div>
 
 </body>
