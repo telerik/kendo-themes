@@ -1,10 +1,1 @@
 @import "~@progress/kendo-theme-default/scss/datepicker/_layout.scss";
-
-@include exports( "datepicker/layout/bootstrap" ) {
-
-    // Date picker
-    .k-datepicker {
-        transition: $transition;
-    }
-
-}
