@@ -2,103 +2,53 @@
 
     .k-list {}
 
-    .k-list__group-header { // sass-lint:disable-line class-name-format
-        color: $component-text;
-        border-color: $component-border;
-        box-shadow: $list-container-shadow;
-    }
-
-    .k-list__item__group { // sass-lint:disable-line class-name-format
-        color: $grouping-header-text;
-        background: $grouping-header-bg;
-    }
-
-    .k-list__item:hover, // sass-lint:disable-line class-name-format
-    .k-list__item.k-state-hover { // sass-lint:disable-line class-name-format
+    .k-list-item:hover,
+    .k-list-item.k-hover,
+    .k-list-optionlabel:hover,
+    .k-list-optionlabel.k-hover {
         @include fill(
-            $list-item-hovered-text,
-            $list-item-hovered-bg
+            $kendo-list-item-hover-text,
+            $kendo-list-item-hover-bg
         );
 
-        &.k-state-selected {
-            color: $list-item-selected-text;
-            background-color: shade( $list-item-selected-bg );
+        &.k-selected {
+            color: $kendo-list-item-selected-text;
+            background-color: shade( $kendo-list-item-selected-bg );
         }
     }
 
-    .k-list__item:focus, // sass-lint:disable-line class-name-format
-    .k-list__item.k-state-focused { // sass-lint:disable-line class-name-format
-        @include box-shadow( $list-item-focused-shadow );
+    .k-list-item:focus,
+    .k-list-item.k-focus,
+    .k-list-optionlabel:focus,
+    .k-list-optionlabel.k-focus {
+        @include box-shadow( $kendo-list-item-focus-shadow );
     }
 
-    .k-list__item.k-state-selected { // sass-lint:disable-line class-name-format
+    .k-list-item.k-selected,
+    .k-list-optionlabel.k-selected {
         @include fill(
-            $list-item-selected-text,
-            $list-item-selected-bg
+            $kendo-list-item-selected-text,
+            $kendo-list-item-selected-bg
         );
     }
-}
 
 
+    // Group Header
+    .k-list-group-header {
+        color: $kendo-list-group-header-text;
 
-
-@include exports( "listcontainer/theme" ) {
-
-    .k-list-container {
-
-        // Button normal state
-        .k-button {
-            @include box-shadow( none );
+        &.k-stuck {
+            border-bottom-color: $component-border;
+            box-shadow: $kendo-list-group-header-shadow;
         }
+    }
+    .k-list-ul > .k-list-group-header {
+        border-top-color: $kendo-list-group-header-border;
+    }
 
 
-        // Button hover state
-        .k-button:hover,
-        .k-button.k-state-hover {
-            @include fill(
-                $list-item-hovered-text,
-                $list-item-hovered-bg
-            );
-        }
-
-
-        // Button active state
-        .k-button:active,
-        .k-button.k-state-active {
-            @include fill(
-                inherit,
-                inherit
-            );
-        }
-
-
-        // Button selected state
-        .k-button.k-state-selected {
-            @include fill(
-                $list-item-selected-text,
-                $list-item-selected-bg
-            );
-        }
-
-
-        // Button focus state
-        .k-button:focus,
-        .k-button.k-state-focus,
-        .k-button.k-state-focused {
-            box-shadow: $list-item-focused-shadow;
-        }
-
-
-        // Button disabled state
-        .k-button.k-state-disabled {
-            background: transparent;
-        }
-
-
-        .k-nodata {
-            color: $list-container-no-data-text;
-        }
-
+    .k-nodata {
+        color: $kendo-list-container-no-data-text;
     }
 
 }
