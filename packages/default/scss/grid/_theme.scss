@@ -366,20 +366,20 @@
     .k-column-list-item:hover,
     .k-columnmenu-item:hover {
         @include fill(
-            $list-item-hovered-text,
-            $list-item-hovered-bg
+            $kendo-list-item-hover-text,
+            $kendo-list-item-hover-bg
         );
     }
     .k-columnmenu-item:focus,
     .k-columnmenu-item.k-state-focus {
-        @include box-shadow( $list-item-focused-shadow );
+        @include box-shadow( $kendo-list-item-focus-shadow );
     }
 
     .k-columnmenu-item {
         &.k-state-selected {
             @include fill(
-                $list-item-selected-text,
-                $list-item-selected-bg
+                $kendo-list-item-selected-text,
+                $kendo-list-item-selected-bg
             );
         }
     }
@@ -396,28 +396,28 @@
 
             .k-item {
                 @include fill(
-                    $list-item-text,
-                    $list-item-bg
+                    $kendo-list-item-text,
+                    $kendo-list-item-bg
                 );
 
                 &:hover,
                 &.k-state-hover {
                     @include fill(
-                        $list-item-hovered-text,
-                        $list-item-hovered-bg
+                        $kendo-list-item-hover-text,
+                        $kendo-list-item-hover-bg
                     );
                 }
 
                 &.k-state-selected {
                     @include fill(
-                        $list-item-selected-text,
-                        $list-item-selected-bg
+                        $kendo-list-item-selected-text,
+                        $kendo-list-item-selected-bg
                     );
                 }
 
                 &:focus,
                 &.k-state-focused {
-                    @include box-shadow( $list-item-focused-shadow );
+                    @include box-shadow( $kendo-list-item-focus-shadow );
                 }
             }
         }
