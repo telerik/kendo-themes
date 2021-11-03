@@ -430,18 +430,6 @@
 
 
 
-
-@include exports("daterangepicker/layout") {
-
-    // jQuery DateRangePicker
-    .k-widget.k-daterangepicker {
-        border: 0;
-    }
-
-}
-
-
-
 @include exports("calendar/layout/rtl") {
 
     .k-rtl .k-calendar,
