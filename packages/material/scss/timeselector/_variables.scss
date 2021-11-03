@@ -21,8 +21,8 @@ $time-list-title-height: ( $time-list-title-font-size * $time-list-title-line-he
 $time-list-title-text: $subtle-text !default;
 $time-list-title-focus-text: $component-text !default;
 
-$time-list-item-padding-x: $list-item-padding-x !default;
-$time-list-item-padding-y: $list-item-padding-y !default;
+$time-list-item-padding-x: $kendo-list-item-padding-x-md !default;
+$time-list-item-padding-y: $kendo-list-item-padding-y-md !default;
 
 $time-list-highlight-border-width: 1px 0px !default;
 $time-list-highlight-height: calc( #{$time-selector-font-size * $time-selector-line-height} + #{ $time-list-item-padding-y * 2} ) !default;

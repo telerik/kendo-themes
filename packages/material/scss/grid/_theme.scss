@@ -240,14 +240,14 @@
     .k-columnmenu-item {
         &.k-state-selected {
             @include fill(
-                $list-item-selected-text,
-                $list-item-selected-bg
+                $kendo-list-item-selected-text,
+                $kendo-list-item-selected-bg
             );
         }
     }
     .k-columnmenu-item:focus,
     .k-columnmenu-item.k-state-focus {
-        background: $list-item-hovered-bg;
+        background: $kendo-list-item-hover-bg;
     }
 
     .k-column-menu .k-menu:not(.k-context-menu) {
@@ -255,7 +255,7 @@
         .k-item {
             // Selected state
             &.k-state-selected {
-                background: $list-item-hovered-bg;
+                background: $kendo-list-item-hover-bg;
             }
         }
     }
