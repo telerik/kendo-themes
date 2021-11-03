@@ -2,16 +2,6 @@
 
 @include exports("datetime/layout/bootstrap") {
 
-    .k-datetimepicker {
-        .k-picker-wrap,
-        .k-select {
-            transition: $transition;
-        }
-    }
-
-    // Datetimepicker
-    .k-datetimepicker {}
-
     // Timepicker header
     .k-time-header {
         padding: $time-header-padding;
