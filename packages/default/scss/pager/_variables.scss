@@ -26,17 +26,17 @@ $pager-item-bg: null !default;
 $pager-item-text: null !default;
 $pager-item-border: null !default;
 
-$pager-item-hover-bg: $list-item-hovered-bg !default;
-$pager-item-hover-text: $list-item-hovered-text !default;
+$pager-item-hover-bg: $kendo-list-item-hover-bg !default;
+$pager-item-hover-text: $kendo-list-item-hover-text !default;
 $pager-item-hover-border: null !default;
 
-$pager-item-selected-bg: $list-item-selected-bg !default;
-$pager-item-selected-text: $list-item-selected-text !default;
+$pager-item-selected-bg: $kendo-list-item-selected-bg !default;
+$pager-item-selected-text: $kendo-list-item-selected-text !default;
 $pager-item-selected-border: null !default;
 
 $pager-item-focus-opacity: null !default;
 $pager-item-focus-bg: transparent !default;
-$pager-item-focus-shadow: $list-item-focused-shadow !default;
+$pager-item-focus-shadow: $kendo-list-item-focus-shadow !default;
 
 $pager-number-padding-x: $pager-item-padding-x !default;
 $pager-number-padding-y: $pager-item-padding-y !default;

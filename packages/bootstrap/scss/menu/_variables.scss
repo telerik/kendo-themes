@@ -110,13 +110,13 @@ $kendo-menu-popup-item-padding-end-md: calc( #{$kendo-menu-popup-item-padding-x-
 $kendo-menu-popup-item-padding-end-lg: calc( #{$kendo-menu-popup-item-padding-x-lg * 2} + #{$icon-size} ) !default;
 
 /// The start margin of the menu item expand icon.
-/// @group menu-popup-item
+/// @group menu
 $kendo-menu-popup-item-icon-margin-start-sm: $kendo-menu-popup-item-padding-x-sm !default;
 $kendo-menu-popup-item-icon-margin-start: $kendo-menu-popup-item-padding-x-md !default;
 $kendo-menu-popup-item-icon-margin-start-lg: $kendo-menu-popup-item-padding-x-lg !default;
 
 /// The end margin of the menu item expand icon.
-/// @group menu-popup-item
+/// @group menu
 $kendo-menu-popup-item-icon-margin-end-sm: calc( -1 * (#{$kendo-menu-popup-item-padding-end-sm} - #{$kendo-menu-popup-item-padding-x-sm / 2}) ) !default;
 $kendo-menu-popup-item-icon-margin-end: calc( -1 * (#{$kendo-menu-popup-item-padding-end-md} - #{$kendo-menu-popup-item-padding-x-md / 2}) ) !default;
 $kendo-menu-popup-item-icon-margin-end-lg: calc( -1 * (#{$kendo-menu-popup-item-padding-end-lg} - #{$kendo-menu-popup-item-padding-x-lg / 2}) ) !default;
@@ -140,10 +140,10 @@ $kendo-menu-popup-item-gradient: null !default;
 
 /// The background of hovered menu item in popup.
 /// @group menu
-$kendo-menu-popup-item-hover-bg: $list-item-hovered-bg !default;
+$kendo-menu-popup-item-hover-bg: $kendo-list-item-hover-bg !default;
 /// The text color of hovered menu item in popup.
 /// @group menu
-$kendo-menu-popup-item-hover-text: $list-item-hovered-text !default;
+$kendo-menu-popup-item-hover-text: $kendo-list-item-hover-text !default;
 /// The border color of hovered menu item in popup.
 /// @group menu
 $kendo-menu-popup-item-hover-border: null !default;
@@ -153,10 +153,10 @@ $kendo-menu-popup-item-hover-gradient: null !default;
 
 /// The background of expanded menu item in popup.
 /// @group menu
-$kendo-menu-popup-item-expanded-bg: $list-item-selected-bg !default;
+$kendo-menu-popup-item-expanded-bg: $kendo-list-item-selected-bg !default;
 /// The text color of expanded menu item in popup.
 /// @group menu
-$kendo-menu-popup-item-expanded-text: $list-item-selected-text !default;
+$kendo-menu-popup-item-expanded-text: $kendo-list-item-selected-text !default;
 /// The border color of expanded menu item in popup.
 /// @group menu
 $kendo-menu-popup-item-expanded-border: null !default;

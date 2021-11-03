@@ -31,21 +31,21 @@
             // Hover state
             &:hover,
             &.k-state-hover {
-                color: $list-item-hovered-text;
-                background: $list-item-hovered-bg;
+                color: $kendo-list-item-hover-text;
+                background: $kendo-list-item-hover-bg;
             }
 
             // Active state
             &:active,
             &.k-state-active {
-                color: $list-item-selected-text;
-                background: $list-item-selected-bg;
+                color: $kendo-list-item-selected-text;
+                background: $kendo-list-item-selected-bg;
             }
 
             // Button focus state
             .k-button:focus,
             .k-button.k-state-focused {
-                box-shadow: $list-item-focused-shadow;
+                box-shadow: $kendo-list-item-focus-shadow;
             }
 
             // Disabled state
