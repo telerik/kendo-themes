@@ -1,155 +1,224 @@
 @include exports( "list/layout" ) {
 
-    .k-list,
-    .k-list-container {
-        font-size: $list-font-size;
-        line-height: $list-line-height;
-    }
-
-    // Layout
-    .k-list-scroller {
-        position: relative;
-        overflow: auto;
-    }
+    // List
     .k-list {
         margin: 0;
         padding: 0;
+        font-size: $kendo-list-font-size;
+        line-height: $kendo-list-line-height;
+        display: flex;
+        flex-flow: column nowrap;
+        outline: none;
+        position: relative;
+        overflow: hidden;
+    }
+
+
+    // List in popup
+    .k-popup > .k-list {
+        height: 100%;
+        border-width: 0;
+    }
+
+
+    // List header
+    // .k-list-header,
+    .k-list-group-sticky-header {
+        padding: $kendo-list-header-padding-y $kendo-list-header-padding-x;
+        border-width: 0;
+        border-width: $kendo-list-header-border-width; // sass-lint:disable-line no-duplicate-properties
+        border-style: solid;
+        font-size: $kendo-list-header-font-size;
+        line-height: $kendo-list-header-line-height;
+        font-weight: $kendo-list-header-font-weight;
+        white-space: nowrap;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        flex: none;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        cursor: pointer;
+    }
+    .k-list-optionlabel {
+        @extend .k-list-group-sticky-header;
+    }
+
+
+    // List content
+    .k-list-content {
+        border-color: inherit;
+        flex: 1 1 auto;
+        overflow: hidden;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+        position: relative;
+    }
+
+
+    // List UL
+    .k-list-ul {
+        margin: 0;
+        padding: 0;
+        border-width: 0;
+        border-color: inherit;
         height: auto;
         list-style: none;
     }
 
-    .k-list__group-header { // sass-lint:disable-line class-name-format
-        padding: $list-item-padding-y $list-item-padding-x;
-        border-bottom-width: 1px;
-        border-bottom-style: solid;
-        font-size: $list-font-size;
-        white-space: normal;
-        position: relative;
-        transition: $transition;
-    }
 
-    .k-outer-group-header,
-    .k-list > .k-group-header,
-    .k-list-container > .k-group-header,
-    kendo-list > .k-group-header,
-    .k-virtual-wrap > .k-group-header {
-        @extend .k-list__group-header;
-    }
-
-    .k-list > .k-group-header,
-    .k-list > .k-outer-group-header {
-        border-width: 0;
-        box-shadow: none !important; // sass-lint:disable-line no-important
-
-        &.k-virtual-item {
-            white-space: nowrap;
-            text-overflow: ellipsis;
-        }
-
-        &::before {
-            content: "";
-            display: block;
-            border-top-width: 1px;
-            border-top-style: solid;
-            border-color: inherit;
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-        }
-    }
-
-    .k-list__item { // sass-lint:disable-line class-name-format
-        padding: $list-item-padding-y $list-item-padding-x;
-        line-height: $list-line-height;
-        white-space: normal;
+    // List item
+    .k-list-item {
+        padding: $kendo-list-item-padding-y $kendo-list-item-padding-x;
+        border: 0;
+        font-size: $kendo-list-item-font-size;
+        line-height: $kendo-list-item-line-height;
+        outline: none;
+        cursor: pointer;
         display: flex;
+        flex-flow: row nowrap;
         align-items: center;
         align-content: center;
-        gap: map-get( $spacing, 1 );
-        cursor: default;
+        gap: $icon-spacing;
         position: relative;
         transition-property: color, background-color, outline-color, box-shadow;
         transition-duration: 200ms;
         transition-timing-function: ease;
-        outline: none;
 
         &.k-first::before {
             content: "";
-            display: block;
-            border-top-width: 1px;
-            border-top-style: solid;
+            border-width: 1px 0 0;
+            border-style: solid;
             position: absolute;
             top: 0;
             left: 0;
             right: 0;
         }
     }
-    .k-list .k-item,
-    .k-list-optionlabel {
-        @extend .k-list__item;
+
+
+    // List group item
+    .k-list-group-item {
+        padding: $kendo-list-group-item-padding-y $kendo-list-group-item-padding-x;
+        border-width: 0;
+        border-width: $kendo-list-group-item-border-width; // sass-lint:disable-line no-duplicate-properties
+        border-style: solid;
+        font-size: $kendo-list-group-item-font-size;
+        line-height: $kendo-list-group-item-line-height;
+        font-weight: $kendo-list-group-item-font-weight;
+        cursor: default;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        align-content: center;
+        gap: $icon-spacing;
+        position: relative;
     }
 
-    .k-list__item__group { // sass-lint:disable-line class-name-format
+
+    // List item group label
+    .k-list-item-group-label {
         padding: 0 .5em;
         font-size: .75em;
         position: absolute;
         top: 0;
-        right: 0;
+        inset-inline-end: 0;
+
+        .k-ie & {
+            right: 0;
+        }
+        .k-ie .k-rtl &,
+        .k-ie [dir="rtl"] & {
+            right: auto;
+            left: 0;
+        }
     }
-    .k-rtl .k-list__item__group, // sass-lint:disable-line class-name-format
-    [dir="rtl"] .k-list__item__group { // sass-lint:disable-line class-name-format
-        right: auto;
-        left: 0;
+
+
+    // Virtualization
+    .k-virtual-list {}
+    .k-virtual-content {
+        overflow-y: scroll;
     }
-    .k-list .k-item > .k-group {
-        @extend .k-list__item__group;
+    .k-virtual-list .k-list-item,
+    .k-virtual-list .k-list-group-item,
+    .k-virtual-content .k-list-item,
+    .k-virtual-content .k-list-group-item {
+        position: absolute;
+        width: 100%;
+    }
+    .k-virtual-list .k-list-item-text,
+    .k-virtual-list .k-list-header-text {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
 
     // Filter
     .k-list-filter {
-        padding: $padding-x;
-        box-sizing: border-box;
         display: block;
         position: relative;
-        flex: none;
-    }
-
-    .k-virtual-content {
-        overflow-y: scroll;
-        -webkit-overflow-scrolling: touch;
-        position: relative;
-    }
-    .k-virtual-list > .k-item {
-        position: absolute;
-        width: 100%;
+        padding: $padding-x;
         box-sizing: border-box;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
+        flex: 0 0 auto;
+    }
 
-        > .k-list-item-text {
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
+
+    // Switch sizes
+    @each $size, $size-props in $kendo-list-sizes {
+        $_font-size: map-get( $size-props, font-size );
+        $_line-height: map-get( $size-props, line-height );
+        $_font-size: map-get( $size-props, font-size );
+        $_line-height: map-get( $size-props, line-height );
+        $_header-padding-x: map-get( $size-props, header-padding-x );
+        $_header-padding-y: map-get( $size-props, header-padding-y );
+        $_header-font-size: map-get( $size-props, header-font-size );
+        $_header-line-height: map-get( $size-props, header-line-height );
+        $_item-padding-x: map-get( $size-props, item-padding-x );
+        $_item-padding-y: map-get( $size-props, item-padding-y );
+        $_item-font-size: map-get( $size-props, item-font-size );
+        $_item-line-height: map-get( $size-props, item-line-height );
+        $_group-item-padding-x: map-get( $size-props, group-item-padding-x );
+        $_group-item-padding-y: map-get( $size-props, group-item-padding-y );
+        $_group-item-font-size: map-get( $size-props, group-item-font-size );
+        $_group-item-line-height: map-get( $size-props, group-item-line-height );
+
+        .k-list-#{$size} {
+            font-size: $_font-size;
+            line-height: $_line-height;
+
+            // .k-list-header,
+            .k-list-group-sticky-header {
+                padding: $_header-padding-y $_header-padding-x;
+                font-size: $_header-font-size;
+                line-height: $_header-line-height;
+            }
+
+            .k-list-item {
+                padding: $_item-padding-y $_item-padding-x;
+                font-size: $_item-font-size;
+                line-height: $_item-line-height;
+            }
+
+            .k-list-group-item {
+                padding: $_group-item-padding-y $_group-item-padding-x;
+                font-size: $_group-item-font-size;
+                line-height: $_group-item-line-height;
+            }
         }
     }
 
 
     // No data
-    .k-list-container {
-        .k-no-data {
-            min-height: 138px;
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-transform: uppercase;
-            font-weight: lighter;
-            text-align: center;
-            white-space: normal;
-        }
+    .k-no-data {
+        min-height: 138px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: lighter;
+        text-align: center;
+        white-space: normal;
     }
 
 

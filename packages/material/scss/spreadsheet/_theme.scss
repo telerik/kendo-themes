@@ -249,16 +249,16 @@
         .k-button:hover,
         .k-button.k-state-hover {
             @include fill(
-                $list-item-hovered-text,
-                $list-item-hovered-bg
+                $kendo-list-item-hover-text,
+                $kendo-list-item-hover-bg
             );
         }
         .k-button:active,
         .k-button.k-state-active,
         .k-button.k-state-selected {
             @include fill(
-                $list-item-selected-text,
-                $list-item-selected-bg
+                $kendo-list-item-selected-text,
+                $kendo-list-item-selected-bg
             );
         }
 
