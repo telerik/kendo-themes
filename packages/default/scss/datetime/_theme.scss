@@ -1,7 +1,6 @@
 @include exports("datetime/theme") {
 
     // Common
-    .k-timepicker,
     .k-datetimepicker {
 
         .k-select {
@@ -18,8 +17,6 @@
         }
     }
 
-
-    .k-timepicker .k-picker-wrap,
     .k-datetimepicker .k-picker-wrap {
         @include fill(
             $datetime-text,
@@ -49,19 +46,6 @@
         }
     }
 
-    .k-timepicker {
-
-        .k-select:hover,
-        .k-select.k-state-hover {
-            @include fill(
-                $datetime-select-hovered-text,
-                $datetime-select-hovered-bg,
-                $datetime-select-hovered-border,
-                $datetime-select-hovered-gradient
-            );
-        }
-    }
-
 
     .k-datetimepicker {
 
@@ -86,10 +70,6 @@
             );
         }
     }
-
-
-    // Timepicker
-    .k-timepicker {}
 
 
     // Timepicker header
@@ -159,8 +139,7 @@
         }
     }
 
-    .k-datetimepicker,
-    .k-timepicker {
+    .k-datetimepicker {
         .k-picker-wrap {
             // Invalid
             &.k-invalid,
