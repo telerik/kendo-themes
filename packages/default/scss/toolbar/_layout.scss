@@ -152,7 +152,7 @@
         // Button
         .k-overflow-button {
             @include border-radius( 0 );
-            padding: $list-item-padding-y $list-item-padding-x;
+            padding: $kendo-list-item-padding-y-md $kendo-list-item-padding-x-md;
             width: 100%;
             border-width: 0;
             color: inherit;
