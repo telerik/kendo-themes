@@ -1,0 +1,16 @@
+@import "~@progress/kendo-theme-default/scss/list/_theme.scss";
+
+@include exports("list/theme/material") {
+
+    .k-list .k-list-item,
+    .k-list-optionlabel {
+
+        // Focused state
+        &:focus,
+        &.k-focus {
+            background: $kendo-list-item-hover-bg;
+        }
+
+    }
+
+}

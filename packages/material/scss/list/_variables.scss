@@ -1,0 +1,81 @@
+// List
+
+/// Horizontal padding of the list item.
+/// @group list
+$kendo-list-item-padding-x: null !default;
+$kendo-list-item-padding-x-base: map-get( $spacing, 6 ) !default;
+$kendo-list-item-padding-x-sm: $kendo-list-item-padding-x-base * .75 !default;
+$kendo-list-item-padding-x-md: $kendo-list-item-padding-x-base * 1 !default;
+$kendo-list-item-padding-x-lg: $kendo-list-item-padding-x-base * 1.25 !default;
+
+/// Vertical padding of the list item.
+/// @group list
+$kendo-list-item-padding-y: null !default;
+$kendo-list-item-padding-y-base: map-get( $spacing, thin ) !default;
+$kendo-list-item-padding-y-sm: $kendo-list-item-padding-y-base * .75 !default;
+$kendo-list-item-padding-y-md: $kendo-list-item-padding-y-base * 1 !default;
+$kendo-list-item-padding-y-lg: $kendo-list-item-padding-y-base * 1.25 !default;
+
+/// Font sizes of the list item.
+/// @group list
+$kendo-list-item-font-size: null !default;
+$kendo-list-item-font-size-sm: $font-size-sm !default;
+$kendo-list-item-font-size-md: $font-size-md !default;
+$kendo-list-item-font-size-lg: $font-size-lg !default;
+
+/// The background of the list item.
+/// @group list
+$kendo-list-item-bg: null !default;
+/// The text color of the list item.
+/// @group list
+$kendo-list-item-text: $component-text !default;
+
+/// The background of hovered list item.
+/// @group list
+$kendo-list-item-hover-bg: $hovered-bg !default;
+/// The text color of hovered list item.
+/// @group list
+$kendo-list-item-hover-text: $hovered-text !default;
+
+/// The background of selected list item.
+/// @group list
+$kendo-list-item-selected-bg: $component-bg !default;
+/// The text color of selected list item.
+/// @group list
+$kendo-list-item-selected-text: $secondary !default;
+
+/// The base shadow of focused list item.
+/// @group list
+$kendo-list-item-focus-shadow: null !default;
+
+/// The text color of the 'No Data' text.
+/// @group list
+$kendo-list-container-no-data-text: rgba( $body-text, .5 ) !default;
+
+/// Padding of the list group header.
+/// @group list
+$kendo-list-group-header-padding: null !default;
+$kendo-list-group-header-padding-sm: ( map-get( $spacing, 1 ) * 1 ) $kendo-list-item-padding-x-sm !default;
+$kendo-list-group-header-padding-md: ( map-get( $spacing, 1 ) * 1.5 ) $kendo-list-item-padding-x-md !default;
+$kendo-list-group-header-padding-lg: ( map-get( $spacing, 1 ) * 2 ) $kendo-list-item-padding-x-lg !default;
+
+/// Font sizes of the list group header.
+/// @group list
+$kendo-list-group-header-font-size: null !default;
+$kendo-list-group-header-font-size-sm: $font-size-xs !default;
+$kendo-list-group-header-font-size-md: $font-size-sm !default;
+$kendo-list-group-header-font-size-lg: $font-size-md !default;
+
+/// The text color of the list group header.
+/// @group list
+$kendo-list-group-header-text: $subtle-text !default;
+/// The border color of the list group header.
+/// @group list
+$kendo-list-group-header-border: $grouping-header-border !default;
+/// The base shadow of the list group header.
+/// @group list
+$kendo-list-group-header-shadow: 0 5px 10px 0 rgba(0, 0, 0, .06) !default;
+
+/// Border width of the stuck list group header.
+/// @group list
+$kendo-list-stuck-group-header-border-width: 1px !default;

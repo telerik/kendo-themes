@@ -1,0 +1,193 @@
+@include exports( "list/layout" ) {
+
+    // Layout
+    .k-list-scroller {
+        position: relative;
+        overflow: auto;
+    }
+
+    .k-list {
+
+        .k-list-ul {
+            margin: 0;
+            padding: 0;
+            height: auto;
+            list-style: none;
+
+            > .k-list-group-header {
+                border-top-width: 1px;
+                border-top-style: solid;
+            }
+        }
+
+        .k-list-item {
+            display: flex;
+            align-items: center;
+            align-content: center;
+            cursor: pointer;
+
+            > .k-icon,
+            > .k-checkbox {
+                align-self: center;
+                margin-right: $padding-x;
+            }
+        }
+
+        .k-list-item-text,
+        .k-list-group-header {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .k-custom-item {
+            font-style: italic;
+
+            > .k-i-plus {
+                margin-left: auto;
+                margin-right: 0;
+            }
+        }
+
+        .k-rtl &,
+        [dir="rtl"] &,
+        &[dir="rtl"] {
+            .k-list-item {
+                > .k-icon,
+                > .k-checkbox {
+                    margin-right: 0;
+                    margin-left: $padding-x;
+                }
+            }
+        }
+    }
+
+    .k-list .k-list-item,
+    .k-list-optionlabel {
+        padding: $kendo-list-item-padding-y $kendo-list-item-padding-x;
+        font-size: $kendo-list-item-font-size;
+        min-height: $line-height-em;
+        line-height: $line-height-em;
+        white-space: normal;
+        transition-property: color, background-color, outline-color, box-shadow;
+        transition-duration: 200ms;
+        transition-timing-function: ease;
+    }
+    .k-list-optionlabel {
+        cursor: pointer;
+        outline: none;
+    }
+
+
+    // Group Header
+    .k-list-group-header {
+        padding: $kendo-list-group-header-padding;
+        min-height: $line-height-em;
+        font-size: $kendo-list-group-header-font-size;
+        white-space: normal;
+
+        &.k-stuck {
+            border-bottom-width: $kendo-list-stuck-group-header-border-width;
+            border-bottom-style: solid;
+        }
+    }
+
+
+    // List sizes
+    .k-list-sm {
+        .k-list-item,
+        .k-list-optionlabel {
+            padding: $kendo-list-item-padding-y-sm $kendo-list-item-padding-x-sm;
+            font-size: $kendo-list-item-font-size-sm;
+        }
+
+        .k-list-group-header {
+            padding: $kendo-list-group-header-padding-sm;
+            font-size: $kendo-list-group-header-font-size-sm;
+        }
+    }
+    .k-list-md {
+        .k-list-item,
+        .k-list-optionlabel {
+            padding: $kendo-list-item-padding-y-md $kendo-list-item-padding-x-md;
+            font-size: $kendo-list-item-font-size-md;
+        }
+
+        .k-list-group-header {
+            padding: $kendo-list-group-header-padding-md;
+            font-size: $kendo-list-group-header-font-size-md;
+        }
+    }
+    .k-list-lg {
+        .k-list-item,
+        .k-list-optionlabel {
+            padding: $kendo-list-item-padding-y-lg $kendo-list-item-padding-x-lg;
+            font-size: $kendo-list-item-font-size-lg;
+        }
+
+        .k-list-group-header {
+            padding: $kendo-list-group-header-padding-lg;
+            font-size: $kendo-list-group-header-font-size-lg;
+        }
+    }
+
+
+    // Virtual List
+    .k-virtual-list {
+
+        .k-virtual-content {
+            overflow-y: scroll;
+            -webkit-overflow-scrolling: touch;
+            position: relative;
+
+            .k-list-item {
+                position: absolute;
+                width: 100%;
+            }
+        }
+
+    }
+
+
+    // Filter
+    .k-list-filter {
+        display: block;
+        position: relative;
+        padding: $padding-x;
+        box-sizing: border-box;
+        flex: 0 0 auto;
+    }
+
+    .k-dropdown-button .k-popup {
+        .k-list-item {
+            cursor: pointer;
+        }
+    }
+
+    // SplitButton
+    // TODO: Wait for final design + revise
+    .k-split-button,
+    .k-dropdown-button {
+        .k-list .k-list-item:focus {
+            outline: none;
+        }
+    }
+
+    .k-nodata {
+        min-height: 138px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-transform: uppercase;
+        font-weight: lighter;
+        text-align: center;
+        white-space: normal;
+
+        .k-button {
+            display: inline-flex;
+            border-width: 1px;
+        }
+    }
+
+}
