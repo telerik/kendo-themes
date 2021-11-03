@@ -1,77 +1,5 @@
 @include exports("datetime/theme") {
 
-    // Common
-    .k-datetimepicker {
-
-        .k-select {
-            @include fill(
-                $datetime-select-text,
-                $datetime-select-bg,
-                $datetime-select-border,
-                $datetime-select-gradient
-            );
-        }
-
-        .k-i-warning {
-            color: $error;
-        }
-    }
-
-    .k-datetimepicker .k-picker-wrap {
-        @include fill(
-            $datetime-text,
-            $datetime-bg,
-            $datetime-border
-        );
-
-        // Hovered state
-        &:hover,
-        &.k-state-hover {
-            @include fill(
-                $datetime-hovered-text,
-                $datetime-hovered-bg,
-                $datetime-hovered-border
-            );
-        }
-
-        // Selected state
-        &.k-state-focused,
-        &.k-state-active {
-            @include fill(
-                $datetime-focused-text,
-                $datetime-focused-bg,
-                $datetime-focused-border
-            );
-            @include box-shadow($datetime-focused-shadow);
-        }
-    }
-
-
-    .k-datetimepicker {
-
-        .k-link:hover,
-        .k-link.k-state-hover {
-            @include fill(
-                $datetime-select-hovered-text,
-                $datetime-select-hovered-bg,
-                $datetime-select-hovered-border,
-                $datetime-select-hovered-gradient
-            );
-        }
-
-        .k-link:active,
-        .k-link.k-state-active,
-        .k-link.k-state-selected {
-            @include fill(
-                $datetime-select-pressed-text,
-                $datetime-select-pressed-bg,
-                $datetime-select-pressed-border,
-                $datetime-select-pressed-gradient
-            );
-        }
-    }
-
-
     // Timepicker header
     .k-time-header {
 
@@ -135,42 +63,6 @@
             .k-datetime-buttongroup,
             .k-datetime-selector {
                 background-color: $component-bg;
-            }
-        }
-    }
-
-    .k-datetimepicker {
-        .k-picker-wrap {
-            // Invalid
-            &.k-invalid,
-            &.k-state-invalid {
-                border-color: $invalid-border;
-
-                .k-input-validation-icon {
-                    color: $invalid-text;
-                }
-
-                &:focus,
-                &.k-state-focused {
-                    @include box-shadow($invalid-shadow);
-                }
-            }
-        }
-        // Invalid
-        &.k-state-invalid,
-        &.ng-invalid.ng-touched,
-        &.ng-invalid.ng-dirty {
-            .k-picker-wrap {
-                border-color: $invalid-border;
-
-                .k-input-validation-icon {
-                    color: $invalid-text;
-                }
-
-                &:focus,
-                &.k-state-focused {
-                    @include box-shadow($invalid-shadow);
-                }
             }
         }
     }
