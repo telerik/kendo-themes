@@ -1,104 +1,91 @@
 @include exports( "list/theme" ) {
 
-    .k-list {}
-
-    .k-list__group-header { // sass-lint:disable-line class-name-format
-        color: $component-text;
-        border-color: $component-border;
-        box-shadow: $list-container-shadow;
-    }
-
-    .k-list__item__group { // sass-lint:disable-line class-name-format
-        color: $component-bg;
-        background: $component-text;
-    }
-
-    .k-list__item:hover, // sass-lint:disable-line class-name-format
-    .k-list__item.k-state-hover { // sass-lint:disable-line class-name-format
+    // List
+    .k-list {
         @include fill(
-            $list-item-hovered-text,
-            $list-item-hovered-bg
-        );
-
-        &.k-state-selected {
-            color: $list-item-selected-text;
-            background-color: shade( $list-item-selected-bg );
-        }
-    }
-
-    .k-list__item:focus, // sass-lint:disable-line class-name-format
-    .k-list__item.k-state-focused { // sass-lint:disable-line class-name-format
-        @include box-shadow( $list-item-focused-shadow );
-    }
-
-    .k-list__item.k-state-selected { // sass-lint:disable-line class-name-format
-        @include fill(
-            $list-item-selected-text,
-            $list-item-selected-bg
+            $kendo-list-text,
+            $kendo-list-bg,
+            $kendo-list-border
         );
     }
-}
 
 
+    // List header
+    // .k-list-header,
+    .k-list-group-sticky-header {
+        @include fill(
+            $kendo-list-header-text,
+            $kendo-list-header-bg,
+            $kendo-list-header-border,
+        );
+        @include box-shadow( $kendo-list-header-shadow );
+    }
 
 
-@include exports( "listcontainer/theme" ) {
+    // List item
+    .k-list-item {
+        @include fill(
+            $kendo-list-item-text,
+            $kendo-list-item-bg
+        );
 
-    .k-list-container {
-
-        // Button normal state
-        .k-button {
-            @include box-shadow( none );
-        }
-
-
-        // Button hover state
-        .k-button:hover,
-        .k-button.k-state-hover {
+        // Hover
+        &:hover,
+        &.k-hover {
             @include fill(
-                $list-item-hovered-text,
-                $list-item-hovered-bg
+                $kendo-list-item-hover-text,
+                $kendo-list-item-hover-bg
             );
         }
 
-
-        // Button active state
-        .k-button:active,
-        .k-button.k-state-active {
+        // Focus
+        &:focus,
+        &.k-focus {
             @include fill(
-                inherit,
-                inherit
+                $kendo-list-item-focus-text,
+                $kendo-list-item-focus-bg
+            );
+            @include box-shadow( $kendo-list-item-focus-shadow );
+        }
+
+        // Selected
+        &.k-selected {
+            @include fill(
+                $kendo-list-item-selected-text,
+                $kendo-list-item-selected-bg
             );
         }
-
-
-        // Button selected state
-        .k-button.k-state-selected {
-            @include fill(
-                $list-item-selected-text,
-                $list-item-selected-bg
-            );
+        &.k-selected:hover,
+        &.k-selected.k-hover {
+            color: $kendo-list-item-selected-text;
+            background-color: shade( $kendo-list-item-selected-bg );
         }
+    }
 
 
-        // Button focus state
-        .k-button:focus,
-        .k-button.k-state-focus,
-        .k-button.k-state-focused {
-            box-shadow: $list-item-focused-shadow;
-        }
+    // List group item
+    .k-list-group-item {
+        @include fill(
+            $kendo-list-group-item-text,
+            $kendo-list-group-item-bg,
+            $kendo-list-group-item-border,
+        );
+        @include box-shadow( $kendo-list-group-item-shadow );
+    }
 
 
-        // Button disabled state
-        .k-button.k-state-disabled {
-            background: transparent;
-        }
+    // List item group label
+    .k-list-item-group-label {
+        @include fill(
+            $kendo-list-bg,
+            $kendo-list-text
+        );
+    }
 
 
-        .k-nodata {
-            color: $list-container-no-data-text;
-        }
-
+    // No data
+    .k-no-data {
+        color: $kendo-list-no-data-text;
     }
 
 }

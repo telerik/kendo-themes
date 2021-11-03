@@ -568,30 +568,6 @@
         }
     }
 
-
-    .k-popup.k-align {
-
-        .k-list {
-            display: flex;
-            flex-flow: row wrap;
-        }
-        .k-list .k-item {
-            padding: $kendo-button-padding-y;
-            height: $kendo-button-calc-size;
-            box-sizing: border-box;
-            justify-content: center;
-            flex: 1 0 33%;
-
-            .k-icon {
-                margin: 0;
-            }
-        }
-        .k-list .k-item:last-child {
-            flex: 1 0 100%;
-        }
-
-    }
-
     .k-editor-inline {
 
         .k-table {

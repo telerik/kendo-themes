@@ -2,8 +2,7 @@
 
 @include exports ("pivotgrid/layout/material/legacy") {
 
-    .k-pivot-toolbar .k-button,
-    .k-fieldselector .k-list li.k-item {
+    .k-pivot-toolbar .k-button {
         @include border-radius( 16px );
 
         .k-field-actions {
@@ -26,10 +25,6 @@
 
     .k-pivot-rowheaders .k-grid tr .k-grid-footer {
         border-bottom-width: 0;
-    }
-
-    .k-fieldselector .k-list .k-item {
-        border-width: 0;
     }
 
     .k-fieldselector p,
