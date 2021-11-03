@@ -14,7 +14,7 @@ $expander-bg: $component-bg !default;
 $expander-text: $component-text !default;
 $expander-border: $component-border !default;
 
-$expander-focus-shadow: $list-item-focused-shadow !default;
+$expander-focus-shadow: $kendo-list-item-focus-shadow !default;
 
 $expander-header-bg: transparent !default;
 $expander-header-text: $expander-text !default;
@@ -23,7 +23,7 @@ $expander-header-border: null !default;
 $expander-header-hover-bg: shade($expander-bg) !default;
 
 $expander-header-focused-bg: null !default;
-$expander-header-focused-shadow: $list-item-focused-shadow !default;
+$expander-header-focused-shadow: $kendo-list-item-focus-shadow !default;
 
 $expander-title-text: $primary !default;
 
