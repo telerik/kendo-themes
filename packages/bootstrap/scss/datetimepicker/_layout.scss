@@ -1,10 +1,1 @@
 @import "~@progress/kendo-theme-default/scss/datetimepicker/_layout.scss";
-
-@include exports( "datetimepicker/layout/bootstrap" ) {
-
-    // Datetime picker
-    .k-datetimepicker {
-        transition: $transition;
-    }
-
-}
