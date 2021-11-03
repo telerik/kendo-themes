@@ -175,6 +175,17 @@ As the toolbar inside the grid is currently just an HTML container and users dec
 
 Note: after toggling the checkbox, focus must be returned to the cell in order to navigate to adjacent cells or rows.
 
+**Columns and Rows Reordering**
+
+`Reorderable` is set to `true`. (Property and options might be different in suites)
+
+| Shortcut | Behavior |
+|----------|----------|
+| `Ctrl + Arrow Right` | Moves the currently selected column right |
+| `Ctrl + Arrow Left` | Moves the currently selected column left |
+| `Ctrl + Arrow Up` | Moves the currently selected row up |
+| `Ctrl + Arrow Down` | Moves the currently selected row down |
+
 
 ## Resources
 
