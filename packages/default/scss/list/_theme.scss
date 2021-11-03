@@ -1,0 +1,54 @@
+@include exports( "list/theme" ) {
+
+    .k-list {}
+
+    .k-list .k-list-item:hover,
+    .k-list .k-list-item.k-hover,
+    .k-list-optionlabel:hover,
+    .k-list-optionlabel.k-hover {
+        @include fill(
+            $kendo-list-item-hover-text,
+            $kendo-list-item-hover-bg
+        );
+
+        &.k-selected {
+            color: $kendo-list-item-selected-text;
+            background-color: shade( $kendo-list-item-selected-bg );
+        }
+    }
+
+    .k-list .k-list-item:focus,
+    .k-list .k-list-item.k-focus,
+    .k-list-optionlabel:focus,
+    .k-list-optionlabel.k-focus {
+        @include box-shadow( $kendo-list-item-focus-shadow );
+    }
+
+    .k-list .k-list-item.k-selected,
+    .k-list-optionlabel.k-selected {
+        @include fill(
+            $kendo-list-item-selected-text,
+            $kendo-list-item-selected-bg
+        );
+    }
+
+
+    // Group Header
+    .k-list-group-header {
+        color: $kendo-list-group-header-text;
+
+        &.k-stuck {
+            border-bottom-color: $component-border;
+            box-shadow: $kendo-list-group-header-shadow;
+        }
+    }
+    .k-list-ul > .k-list-group-header {
+        border-top-color: $kendo-list-group-header-border;
+    }
+
+
+    .k-nodata {
+        color: $kendo-list-container-no-data-text;
+    }
+
+}

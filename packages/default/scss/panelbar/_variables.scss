@@ -32,7 +32,7 @@ $panelbar-header-focused-bg: null !default;
 $panelbar-header-focused-text: null !default;
 $panelbar-header-focused-border: null !default;
 $panelbar-header-focused-gradient: null !default;
-$panelbar-header-focused-shadow: $list-item-focused-shadow !default;
+$panelbar-header-focused-shadow: $kendo-list-item-focus-shadow !default;
 
 $panelbar-header-hovered-focused-bg: null !default;
 $panelbar-header-hovered-focused-text: null !default;
@@ -68,7 +68,7 @@ $panelbar-item-focused-bg: null !default;
 $panelbar-item-focused-text: null !default;
 $panelbar-item-focused-border: null !default;
 $panelbar-item-focused-gradient: null !default;
-$panelbar-item-focused-shadow: $list-item-focused-shadow !default;
+$panelbar-item-focused-shadow: $kendo-list-item-focus-shadow !default;
 
 $panelbar-item-hovered-focused-bg: null !default;
 $panelbar-item-hovered-focused-text: null !default;
