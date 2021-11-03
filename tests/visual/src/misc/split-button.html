@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en" class="k-no-animations">
+<head>
+    <title>Split button</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+    <script src="../../assets/scripts.js"></script>
+    <script src="../../../../packages/html/dist/index.js"></script>
+
+    <style>
+        #test-area {
+            grid-template-columns: 120px repeat(3, 1fr);
+        }
+    </style>
+</head>
+<body class="k-body">
+
+    <div id="test-area" class="k-d-grid k-grid-cols-4">
+
+        <span><small>state / fillmode</small></span>
+        <span>solid</span>
+        <span>outline</span>
+        <span>flat</span>
+
+        <span>normal</span>
+        <span>
+            <button is="SplitButton" icon="save">Button</button>
+        </span>
+        <span>
+            <button is="SplitButton" fillMode="outline" icon="save">Button</button>
+        </span>
+        <span>
+            <button is="SplitButton" fillMode="flat" icon="save">Button</button>
+        </span>
+
+        <span>hover</span>
+        <span>
+            <button is="SplitButton" icon="save" hover>Button</button>
+        </span>
+        <span>
+            <button is="SplitButton" fillMode="outline" icon="save" hover>Button</button>
+        </span>
+        <span>
+            <button is="SplitButton" fillMode="flat" icon="save" hover>Button</button>
+        </span>
+
+        <span>focus</span>
+        <span>
+            <button is="SplitButton" icon="save" focus>Button</button>
+        </span>
+        <span>
+            <button is="SplitButton" fillMode="outline" icon="save" focus>Button</button>
+        </span>
+        <span>
+            <button is="SplitButton" fillMode="flat" icon="save" focus>Button</button>
+        </span>
+
+        <span>active</span>
+        <span>
+            <button is="SplitButton" icon="save" active>Button</button>
+        </span>
+        <span>
+            <button is="SplitButton" fillMode="outline" icon="save" active>Button</button>
+        </span>
+        <span>
+            <button is="SplitButton" fillMode="flat" icon="save" active>Button</button>
+        </span>
+
+        <span>disabled</span>
+        <span>
+            <button is="SplitButton" icon="save" disabled>Button</button>
+        </span>
+        <span>
+            <button is="SplitButton" fillMode="outline" icon="save" disabled>Button</button>
+        </span>
+        <span>
+            <button is="SplitButton" fillMode="flat" icon="save" disabled>Button</button>
+        </span>
+
+        <span>rtl</span>
+        <span>
+            <button is="SplitButton" icon="save" dir="rtl">Button</button>
+        </span>
+        <span>
+            <button is="SplitButton" fillMode="outline" icon="save" dir="rtl">Button</button>
+        </span>
+        <span>
+            <button is="SplitButton" fillMode="flat" icon="save" dir="rtl">Button</button>
+        </span>
+
+    </div>
+
+</body>
+</html>
