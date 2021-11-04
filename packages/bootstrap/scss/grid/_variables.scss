@@ -154,8 +154,8 @@ $grid-column-menu-items-wrap-padding-y: map-get( $spacing, 2 ) !default;
 $grid-column-menu-filter-container-padding-x: $padding-x-lg !default;
 $grid-column-menu-filter-container-padding-y: $padding-y-sm !default;
 
-$grid-column-menu-group-header-padding-x: $menu-popup-item-padding-x !default;
-$grid-column-menu-group-header-padding-y: $menu-popup-item-padding-y !default;
+$grid-column-menu-group-header-padding-x: $kendo-menu-popup-item-padding-x !default;
+$grid-column-menu-group-header-padding-y: $kendo-menu-popup-item-padding-y !default;
 
 $grid-column-menu-group-header-font-size: $font-size-sm !default;
 $grid-column-menu-group-header-line-height: $line-height !default;
