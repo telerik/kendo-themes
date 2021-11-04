@@ -196,7 +196,6 @@
             @include border-radius( 0 );
         }
 
-        // .k-button
         > .k-button:first-child {
             @include border-left-radius( $kendo-button-border-radius );
         }
@@ -209,17 +208,7 @@
             flex: none;
         }
 
-        &[dir="rtl"] {
-            // k-button
-            > .k-button:first-child {
-                @include border-left-radius( 0 );
-                @include border-right-radius( $kendo-button-border-radius );
-            }
-            > .k-button:last-child {
-                @include border-right-radius( 0 );
-                @include border-left-radius( $kendo-button-border-radius );
-            }
-        }
+
     }
 
 
@@ -266,7 +255,8 @@
     }
 
     // RTL
-    .k-rtl {
+    .k-rtl,
+    [dir="rtl"] {
 
         // Button group
         .k-button-group {
@@ -279,10 +269,12 @@
             .k-button:first-child {
                 @include border-right-radius( $kendo-button-border-radius );
             }
+
             .k-group-end,
             .k-button:last-child {
                 @include border-left-radius( $kendo-button-border-radius );
             }
+
             .k-group-start.k-group-end,
             .k-button:first-child:last-child {
                 @include border-radius( $kendo-button-border-radius );
@@ -301,6 +293,7 @@
             > .k-button:first-child {
                 @include border-right-radius( $kendo-button-border-radius );
             }
+
             > .k-split-button-arrow,
             > .k-button:last-child {
                 @include border-left-radius( $kendo-button-border-radius );
