@@ -113,16 +113,8 @@
         }
 
         > .k-menu-item > .k-menu-link {
-            padding: $menu-popup-item-padding-y $menu-popup-item-padding-x;
-            padding-right: $menu-popup-item-padding-end;
-
-            .k-menu-expand-arrow {
-                margin: 0;
-                position: absolute;
-                top: 50%;
-                transform: translateY(-50%);
-                right: $icon-spacing;
-            }
+            padding: $kendo-menu-popup-item-padding-y $kendo-menu-popup-item-padding-x;
+            padding-right: $kendo-menu-popup-item-padding-end;
         }
 
         > .k-separator {
@@ -138,7 +130,7 @@
 
     // Menu popup
     .k-menu-popup {
-        border-width: $menu-popup-border-width;
+        border-width: $kendo-menu-popup-border-width;
         border-style: solid;
         overflow: auto;
         max-height: 80vh;
@@ -148,10 +140,7 @@
     // Sub menu
     .k-menu-group {
         margin: 0;
-        padding: 0;
-        // padding: $menu-popup-padding-y $menu-popup-padding-x;
-        font-size: $menu-popup-font-size;
-        line-height: $menu-popup-line-height;
+        padding: $kendo-menu-popup-padding-y $kendo-menu-popup-padding-x;
         list-style: none;
         display: none;
         position: absolute;
@@ -162,27 +151,8 @@
             flex-direction: column;
         }
 
-        // jquery popup overrides those
-        .k-menu-item {
-            font-size: $menu-popup-font-size;
-            line-height: $menu-popup-line-height;
-        }
-
         .k-menu-item + .k-menu-item {
-            margin-top: $menu-popup-item-spacing;
-        }
-
-        .k-menu-link {
-            padding: $menu-popup-item-padding-y $menu-popup-item-padding-x;
-            padding-right: $menu-popup-item-padding-end;
-
-            .k-menu-expand-arrow {
-                margin: 0;
-                position: absolute;
-                top: 50%;
-                transform: translateY(-50%);
-                right: $icon-spacing;
-            }
+            margin-top: $kendo-menu-popup-item-spacing;
         }
 
         .k-separator {
@@ -192,6 +162,53 @@
             border-style: solid;
             border-color: $component-border;
             display: block;
+        }
+    }
+
+    // Sizes
+    .k-menu-group-sm {
+        font-size: $kendo-menu-popup-font-size-sm;
+        line-height: $kendo-menu-popup-line-height-sm;
+
+        // jquery popup overrides those
+        .k-menu-item {
+            font-size: $kendo-menu-popup-font-size-sm;
+            line-height: $kendo-menu-popup-line-height-sm;
+        }
+
+        .k-menu-link {
+            padding: $kendo-menu-popup-item-padding-y-sm $kendo-menu-popup-item-padding-x-sm;
+            padding-right: $kendo-menu-popup-item-padding-end-sm;
+        }
+    }
+    .k-menu-group-md {
+        font-size: $kendo-menu-popup-font-size-md;
+        line-height: $kendo-menu-popup-line-height-md;
+
+        // jquery popup overrides those
+        .k-menu-item {
+            font-size: $kendo-menu-popup-font-size-md;
+            line-height: $kendo-menu-popup-line-height-md;
+        }
+
+        .k-menu-link {
+            padding: $kendo-menu-popup-item-padding-y-md $kendo-menu-popup-item-padding-x-md;
+            padding-right: $kendo-menu-popup-item-padding-end-md;
+        }
+    }
+    .k-menu-group-lg {
+        font-size: $kendo-menu-popup-font-size-lg;
+        line-height: $kendo-menu-popup-line-height-lg;
+
+        // jquery popup overrides those
+        .k-menu-item {
+            font-size: $kendo-menu-popup-font-size-lg;
+            line-height: $kendo-menu-popup-line-height-lg;
+        }
+
+        .k-menu-link {
+            padding: $kendo-menu-popup-item-padding-y-md $kendo-menu-popup-item-padding-x-lg;
+            padding-right: $kendo-menu-popup-item-padding-end-lg;
         }
     }
 
@@ -205,10 +222,13 @@
     }
     .k-context-menu {
         margin: 0;
-        padding: 0;
-        // padding: $menu-popup-padding-y $menu-popup-padding-x;
-        border-width: $menu-popup-border-width;
+        padding: $kendo-menu-popup-padding-y $kendo-menu-popup-padding-x;
+        border-width: $kendo-menu-popup-border-width;
         border-style: solid;
+
+        &.k-menu-horizontal {
+            padding: $kendo-menu-popup-padding-x $kendo-menu-popup-padding-y;
+        }
     }
     .k-animation-container .k-context-menu.k-menu-horizontal {
         // kendo-jquery adds `display: block` via js and we need to override it.
@@ -310,13 +330,8 @@
         .k-menu-vertical {
 
             > .k-menu-item > .k-menu-link {
-                padding-right: $menu-popup-item-padding-x;
-                padding-left: $menu-popup-item-padding-end;
-
-                .k-menu-expand-arrow {
-                    right: auto;
-                    left: $icon-spacing;
-                }
+                padding-right: $kendo-menu-popup-item-padding-x;
+                padding-left: $kendo-menu-popup-item-padding-end;
             }
         }
 
@@ -325,13 +340,8 @@
         .k-menu-group {
 
             .k-menu-link {
-                padding-right: $menu-popup-item-padding-x;
-                padding-left: $menu-popup-item-padding-end;
-
-                .k-menu-expand-arrow {
-                    right: auto;
-                    left: $icon-spacing;
-                }
+                padding-right: $kendo-menu-popup-item-padding-x;
+                padding-left: $kendo-menu-popup-item-padding-end;
             }
 
         }
