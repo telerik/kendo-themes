@@ -47,36 +47,113 @@ $menu-scroll-button-hover-gradient: null !default;
 
 
 // Menu popup
-$menu-popup-padding-x: null !default;
-$menu-popup-padding-y: null !default;
-$menu-popup-border-width: $popup-border-width !default;
-$menu-popup-font-size: $font-size !default;
-$menu-popup-line-height: $line-height !default;
 
-$menu-popup-bg: $popup-bg !default;
-$menu-popup-text: $popup-text !default;
-$menu-popup-border: $popup-border !default;
-$menu-popup-gradient: null !default;
+/// Horizontal padding of the menu popup.
+/// @group menu
+$kendo-menu-popup-padding-x: null !default;
 
-$menu-popup-item-padding-x: $list-item-padding-x !default;
-$menu-popup-item-padding-y: $list-item-padding-y !default;
-$menu-popup-item-padding-end: calc( #{$list-item-padding-x * 2} + #{$icon-size} ) !default;
-$menu-popup-item-spacing: 0px !default;
-$menu-popup-item-icon-spacing: $icon-spacing !default;
+/// Vertical padding of the menu popup.
+/// @group menu
+$kendo-menu-popup-padding-y: null !default;
 
-$menu-popup-item-bg: null !default;
-$menu-popup-item-text: null !default;
-$menu-popup-item-border: null !default;
-$menu-popup-item-gradient: null !default;
+/// Width of the border around the menu popup.
+/// @group menu
+$kendo-menu-popup-border-width: $popup-border-width !default;
 
-$menu-popup-item-hover-bg: $list-item-hovered-bg !default;
-$menu-popup-item-hover-text: $list-item-hovered-text !default;
-$menu-popup-item-hover-border: null !default;
-$menu-popup-item-hover-gradient: null !default;
+/// Font sizes of the menu popup.
+/// @group menu
+$kendo-menu-popup-font-size: $font-size-md !default;
+$kendo-menu-popup-font-size-sm: $font-size-md !default;
+$kendo-menu-popup-font-size-md: $font-size-md !default;
+$kendo-menu-popup-font-size-lg: $font-size-md !default;
 
-$menu-popup-item-expanded-bg: $list-item-selected-bg !default;
-$menu-popup-item-expanded-text: $list-item-selected-text !default;
-$menu-popup-item-expanded-border: null !default;
-$menu-popup-item-expanded-gradient: null !default;
+/// Line heights used along with $font-size.
+/// @group menu
+$kendo-menu-popup-line-height: $line-height-md !default;
+$kendo-menu-popup-line-height-sm: $line-height-md !default;
+$kendo-menu-popup-line-height-md: $line-height-md !default;
+$kendo-menu-popup-line-height-lg: $line-height-md !default;
 
-$menu-popup-item-focus-shadow: $menu-item-focus-shadow !default;
+/// The background of the menu popup.
+/// @group menu
+$kendo-menu-popup-bg: $popup-bg !default;
+/// The text color of the menu popup.
+/// @group menu
+$kendo-menu-popup-text: $popup-text !default;
+/// The border color of the menu popup.
+/// @group menu
+$kendo-menu-popup-border: $popup-border !default;
+/// The background gradient of the menu popup.
+/// @group menu
+$kendo-menu-popup-gradient: null !default;
+
+
+// Menu popup item
+
+/// Horizontal padding of the menu item in popup.
+/// @group menu
+$kendo-menu-popup-item-padding-x: map-get( $spacing, 2 ) !default;
+$kendo-menu-popup-item-padding-x-sm: map-get( $spacing, 2 ) !default;
+$kendo-menu-popup-item-padding-x-md: map-get( $spacing, 2 ) !default;
+$kendo-menu-popup-item-padding-x-lg: map-get( $spacing, 2 ) !default;
+
+/// Vertical padding of the menu item in popup.
+/// @group menu
+$kendo-menu-popup-item-padding-y: map-get( $spacing, 1 ) !default;
+$kendo-menu-popup-item-padding-y-sm: map-get( $spacing, 1 ) - map-get( $spacing, thin ) !default;
+$kendo-menu-popup-item-padding-y-md: map-get( $spacing, 1 ) !default;
+$kendo-menu-popup-item-padding-y-lg: map-get( $spacing, 1 ) + map-get( $spacing, thin ) !default;
+
+/// The end padding of the menu item in popup.
+/// @group menu
+$kendo-menu-popup-item-padding-end: calc( #{$kendo-menu-popup-item-padding-x * 2} + #{$icon-size} ) !default;
+$kendo-menu-popup-item-padding-end-sm: calc( #{$kendo-menu-popup-item-padding-x-sm * 2} + #{$icon-size} ) !default;
+$kendo-menu-popup-item-padding-end-md: calc( #{$kendo-menu-popup-item-padding-x-md * 2} + #{$icon-size} ) !default;
+$kendo-menu-popup-item-padding-end-lg: calc( #{$kendo-menu-popup-item-padding-x-lg * 2} + #{$icon-size} ) !default;
+
+/// The spacing between the menu items in popup.
+/// @group menu
+$kendo-menu-popup-item-spacing: 0px !default;
+
+/// The background of the menu item in popup.
+/// @group menu
+$kendo-menu-popup-item-bg: null !default;
+/// The text color of the menu item in popup.
+/// @group menu
+$kendo-menu-popup-item-text: null !default;
+/// The border color of the menu item in popup.
+/// @group menu
+$kendo-menu-popup-item-border: null !default;
+/// The background gradient of the menu item in popup.
+/// @group menu
+$kendo-menu-popup-item-gradient: null !default;
+
+/// The background of hovered menu item in popup.
+/// @group menu
+$kendo-menu-popup-item-hover-bg: $list-item-hovered-bg !default;
+/// The text color of hovered menu item in popup.
+/// @group menu
+$kendo-menu-popup-item-hover-text: $list-item-hovered-text !default;
+/// The border color of hovered menu item in popup.
+/// @group menu
+$kendo-menu-popup-item-hover-border: null !default;
+/// The background gradient of hovered menu item in popup.
+/// @group menu
+$kendo-menu-popup-item-hover-gradient: null !default;
+
+/// The background of expanded menu item in popup.
+/// @group menu
+$kendo-menu-popup-item-expanded-bg: $list-item-selected-bg !default;
+/// The text color of expanded menu item in popup.
+/// @group menu
+$kendo-menu-popup-item-expanded-text: $list-item-selected-text !default;
+/// The border color of expanded menu item in popup.
+/// @group menu
+$kendo-menu-popup-item-expanded-border: null !default;
+/// The background gradient of expanded menu item in popup.
+/// @group menu
+$kendo-menu-popup-item-expanded-gradient: null !default;
+
+/// The base shadow of focused menu item in popup.
+/// @group menu
+$kendo-menu-popup-item-focus-shadow: $menu-item-focus-shadow !default;
