@@ -1,0 +1,23 @@
+@import "~@progress/kendo-theme-default/scss/table/_layout.scss";
+
+@include exports("table/layout/material") {
+    .k-table .k-table-body .k-table-group-body,
+    .k-table .k-table-list .k-table-group-body {
+        border-width: 0 0 1px;
+    }
+
+    .k-table .k-table-body .k-table-row:last-child .k-table-cell,
+    .k-table .k-table-list .k-table-row:last-child .k-table-cell {
+        border-width: 0 0 0 1px;
+    }
+
+    .k-rtl,
+    [dir="rtl"] {
+        &.k-table .k-table-body .k-table-row:last-child .k-table-cell,
+        &.k-table .k-table-list .k-table-row:last-child .k-table-cell,
+        .k-table .k-table-body .k-table-row:last-child .k-table-cell,
+        .k-table .k-table-list .k-table-row:last-child .k-table-cell {
+            border-width: 0 1px 0 0;
+        }
+    }
+}
