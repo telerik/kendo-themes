@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Table</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
+        <link rel="stylesheet" href="../../assets/styles.css" />
+        <script src="../../assets/scripts.js"></script>
+        <script src="../../../../packages/html/dist/index.js"></script>
+    
+        <style>
+            #test-area {
+                grid-template: repeat(1, 1fr);
+            }
+    
+            #test-area>section {
+                position: relative;
+                min-height: 450px;
+                max-width:450px;
+            }
+    
+            .k-table-scroller {
+                position: relative;
+                overflow: auto;
+            }
+
+            .k-animation-container {
+                position: relative;
+            }
+        </style>
+    </head>
+<body>
+    <div id="test-area" class="grid">
+        <span>Native Table - Medium Size</span>
+
+        <section class="section-2">
+            <div class="k-animation-container" style="overflow: visible;">
+                <div class="k-list-container k-popup k-group  k-dropdowngrid-popup k-popup-flush k-state-border-up">
+                    <div class="k-table k-table-md">
+                        <table>
+                            <thead class="k-table-header">
+                                <tr class="k-table-header-wrap">
+                                    <th style="width: 50px;" class="k-table-header-item">ID</th>
+                                    <th style="width: 200px;" class="k-table-header-item">Name</th>
+                                    <th style="width: 200px;" class="k-table-header-item">Job Title</th>
+                                </tr>
+                                <tr class="k-table-group-header ">
+                                    <td colspan="3">
+                                        Software Developer
+                                    </td>
+                                </tr>
+                            </thead>
+                        </table>
+                        <div class="k-table-scroller" style="max-height: 260px">
+                            <ul class="k-table-list">
+                                <li class="k-table-row ">
+                                    <span style="width: 50px" class="k-table-cell">1</span>
+                                    <span style="width: 200px" class="k-table-cell">Normal State </span>
+                                    <span style="width: 200px" class="k-table-cell">Software Developer</span>
+                                </li>
+                                <li class="k-table-row k-row-even">
+                                    <span style="width: 50px" class="k-table-cell">2</span>
+                                    <span style="width: 200px" class="k-table-cell">Normal State (even)</span>
+                                    <span style="width: 200px" class="k-table-cell">Software Developer</span>
+                                </li>
+                                <li class="k-table-row k-state-hover ">
+                                    <span style="width: 50px" class="k-table-cell">3</span>
+                                    <span style="width: 200px" class="k-table-cell">Hover State (odd)</span>
+                                    <span style="width: 200px" class="k-table-cell">Software Developer</span>
+                                </li>
+                                <li class="k-table-group-body">
+                                    <span class="k-table-cell">Frontend Developer</span>
+                                </li>
+                                <li class="k-table-row k-state-hover ">
+                                    <span style="width: 50px" class="k-table-cell">4</span>
+                                    <span style="width: 200px" class="k-table-cell">Hover State (even)</span>
+                                    <span style="width: 200px" class="k-table-cell">Frontend Developer</span>
+                                </li>
+                                <li class="k-table-row k-state-focus k-row-even">
+                                    <span style="width: 50px" class="k-table-cell">5</span>
+                                    <span style="width: 200px" class="k-table-cell">Focused State (odd)</span>
+                                    <span style="width: 200px" class="k-table-cell">Frontend Developer</span>
+                                </li>
+                                <li class="k-table-row k-state-focus">
+                                    <span style="width: 50px" class="k-table-cell">6</span>
+                                    <span style="width: 200px" class="k-table-cell">Focused State (even)</span>
+                                    <span style="width: 200px" class="k-table-cell">Frontend Developer</span>
+                                </li>
+                                <li class="k-table-row k-state-selected k-row-even">
+                                    <span style="width: 50px" class="k-table-cell">7</span>
+                                    <span style="width: 200px" class="k-table-cell">Selected State</span>
+                                    <span style="width: 200px" class="k-table-cell">Frontend Developer</span>
+                                </li>
+                                <li class="k-table-row k-state-focus k-state-selected">
+                                    <span style="width: 50px" class="k-table-cell">8</span>
+                                    <span style="width: 200px" class="k-table-cell">Focused & Selected State</span>
+                                    <span style="width: 200px" class="k-table-cell">Frontend Developer</span>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="k-table-footer">
+                            <div class="k-table-footer-wrap">
+                                <span class="k-table-footer-item">30 records in total</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

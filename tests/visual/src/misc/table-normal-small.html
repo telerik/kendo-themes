@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Table</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
+        <link rel="stylesheet" href="../../assets/styles.css" />
+        <script src="../../assets/scripts.js"></script>
+        <script src="../../../../packages/html/dist/index.js"></script>
+    
+        <style>
+            #test-area {
+                grid-template: repeat(1, 1fr);
+            }
+    
+            #test-area>section {
+                position: relative;
+                min-height: 450px;
+                max-width:450px;
+            }
+
+            .k-animation-container {
+                position: relative;
+            }
+        </style>
+    </head>
+<body>
+    <div id="test-area" class="grid">
+        <span>Normal Table - Small Size</span>
+
+        <section class="section-1">
+            <div class="k-animation-container" style="overflow: visible;">
+                <div class="k-list-container k-popup k-group  k-dropdowngrid-popup k-popup-flush k-state-border-up">
+                    <table class="k-table k-table-sm">
+                        <thead class="k-table-header">
+                            <tr class="k-table-header-wrap">
+                                <th style="width: 50px" class="k-table-header-item">ID</th>
+                                <th style="width: 200px" class="k-table-header-item">Name</th>
+                                <th style="width: 200px" class="k-table-header-item">Job Title</th>
+                            </tr>
+                            <tr class="k-table-group-header ">
+                                <td colspan="3">
+                                    Software Developer
+                                </td>
+                            </tr>
+                        </thead>
+                        <tbody class="k-table-body">
+                            <tr class="k-table-row">
+                                <td style="width: 50px" class="k-table-cell">1</td>
+                                <td style="width: 200px" class="k-table-cell">Normal State </td>
+                                <td style="width: 200px" class="k-table-cell">Software Developer</td>
+                            </tr>
+                            <tr class="k-table-row k-row-even">
+                                <td style="width: 50px" class="k-table-cell">2</td>
+                                <td style="width: 200px" class="k-table-cell">Normal State (even)</td>
+                                <td style="width: 200px" class="k-table-cell">Software Developer</td>
+                            </tr>
+                            <tr class="k-table-row k-state-hover ">
+                                <td style="width: 50px" class="k-table-cell">3</td>
+                                <td style="width: 200px" class="k-table-cell">Hover State (odd)</td>
+                                <td style="width: 200px" class="k-table-cell">Software Developer</td>
+                            </tr>
+                            <tr class="k-table-group-body ">
+                                <td colspan="3">
+                                    Frontend Developer
+                                </td>
+                            </tr>
+                            <tr class="k-table-row k-state-hover">
+                                <td style="width: 50px" class="k-table-cell">4</td>
+                                <td style="width: 200px" class="k-table-cell">Hover State (even)</td>
+                                <td style="width: 200px" class="k-table-cell">Frontend Developer</td>
+                            </tr>
+                            <tr class="k-table-row k-state-focus  k-row-even">
+                                <td style="width: 50px" class="k-table-cell">5</td>
+                                <td style="width: 200px" class="k-table-cell">Focused State (odd)</td>
+                                <td style="width: 200px" class="k-table-cell">Frontend Developer</td>
+                            </tr>
+                            <tr class="k-table-row k-state-focus">
+                                <td style="width: 50px" class="k-table-cell">6</td>
+                                <td style="width: 200px" class="k-table-cell">Focused State (even)</td>
+                                <td style="width: 200px" class="k-table-cell">Frontend Developer</td>
+                            </tr>
+                            <tr class="k-table-row k-state-selected  k-row-even">
+                                <td style="width: 50px" class="k-table-cell">7</td>
+                                <td style="width: 200px" class="k-table-cell">Selected State</td>
+                                <td style="width: 200px" class="k-table-cell">Frontend Developer</td>
+                            </tr>
+                            <tr class="k-table-row k-state-focus k-state-selected">
+                                <td style="width: 50px" class="k-table-cell">8</td>
+                                <td style="width: 200px" class="k-table-cell">Focused & Selected State</td>
+                                <td style="width: 200px" class="k-table-cell">Frontend Developer</td>
+                            </tr>
+                        </tbody>
+                        <tfoot class="k-table-footer">
+                            <tr class="k-table-footer-wrap">
+                                <td class="k-table-footer-item">30 records in total</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
