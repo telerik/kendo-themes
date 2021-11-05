@@ -4,21 +4,21 @@
     .k-table {
         width: 100%;
         max-width: none;
-        border-width: $table-border-width;
+        border-width: $kendo-table-border-width;
         border-style: solid;
+        font-size: $kendo-table-font-size;
+        line-height: $kendo-table-line-height;
+        text-align: left;
         border-collapse: collapse;
         border-spacing: 0;
         empty-cells: show;
         outline: none;
-        font-size: $table-font-size;
-        line-height: $line-height;
-        text-align: left;
     }
 
 
     // Data table
     .k-data-table {
-        border-width: $table-border-width;
+        border-width: $kendo-table-border-width;
         border-style: solid;
     }
 
@@ -35,8 +35,8 @@
     }
     .k-table-th,
     .k-table-td {
-        padding: $table-cell-padding-y $table-cell-padding-x;
-        border-width: 0 0 $grid-cell-horizontal-border-width $table-cell-vertical-border-width;
+        padding: $kendo-table-cell-padding-y $kendo-table-cell-padding-x;
+        border-width: 0 0 $grid-cell-horizontal-border-width $kendo-table-cell-vertical-border-width;
         border-style: solid;
         border-color: inherit;
         font-weight: normal;
@@ -66,7 +66,7 @@
     .k-table-header-wrap {
         margin-right: -1px;
         width: 100%;
-        border-width: 0 $table-cell-vertical-border-width 0 0;
+        border-width: 0 $kendo-table-cell-vertical-border-width 0 0;
         border-style: solid;
         overflow: hidden;
     }
@@ -126,9 +126,28 @@
     .k-table-footer-wrap {
         margin-right: -1px;
         width: 100%;
-        border-width: 0 $table-cell-vertical-border-width 0 0;
+        border-width: 0 $kendo-table-cell-vertical-border-width 0 0;
         border-style: solid;
         overflow: hidden;
+    }
+
+
+    // Sizes
+    @each $size, $size-props in $kendo-table-sizes {
+        $_font-size: map-get( $size-props, font-size);
+        $_line-height: map-get( $size-props, line-height);
+        $_cell-padding-x: map-get( $size-props, cell-padding-x);
+        $_cell-padding-y: map-get( $size-props, cell-padding-y);
+
+        .k-table-#{$size} {
+            font-size: $_font-size;
+            line-height: $_line-height;
+        }
+
+        .k-table-#{$size} .k-table-th,
+        .k-table-#{$size} .k-table-td {
+            padding: $_cell-padding-y $_cell-padding-x;
+        }
     }
 
 
@@ -142,7 +161,7 @@
             .k-table-th,
             .k-table-td {
                 border-left-width: 0;
-                border-right-width: $table-cell-vertical-border-width;
+                border-right-width: $kendo-table-cell-vertical-border-width;
 
                 &:first-child {
                     border-right-width: 0;
@@ -153,7 +172,7 @@
             .k-table-footer-wrap {
                 margin-right: 0;
                 margin-left: -1px;
-                border-left-width: $table-cell-vertical-border-width;
+                border-left-width: $kendo-table-cell-vertical-border-width;
                 border-right-width: 0;
             }
         }
