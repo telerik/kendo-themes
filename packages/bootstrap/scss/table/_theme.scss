@@ -1,0 +1,9 @@
+@import "~@progress/kendo-theme-default/scss/table/_theme.scss";
+
+@include exports("table/theme/bootstrap") {
+
+    .k-table-body .k-table-group-body,
+    .k-table-list .k-table-group-body {
+        color: $kendo-table-body-grouping-text-color;
+    }
+}

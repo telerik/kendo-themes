@@ -1,0 +1,74 @@
+// Table
+
+/// The sizes of the table.
+/// @group table
+/// The font size of the table if no size is specified.
+/// @group table
+$kendo-table-font-size: null !default;
+/// The horizontal padding of the cells in the table if no size is specified.
+/// @group table
+$kendo-table-padding-x: null !default;
+/// The vertical padding of the cells in the table if no size is specified.
+/// @group table
+$kendo-table-padding-y: null !default;
+/// The sizes of the table.
+/// @group table
+$kendo-table-sizes: (
+    sm: (
+        font-size: map-get( $spacing, sm) + 2,
+        padding-y: map-get( $spacing, sm),
+        padding-x: map-get( $spacing, md)
+    ),
+    md: (
+        font-size: map-get( $spacing, md) + 2,
+        padding-y: map-get( $spacing, md),
+        padding-x: map-get( $spacing, lg)
+    ),
+    lg: (
+        font-size: map-get( $spacing, lg),
+        padding-y: map-get( $spacing, lg),
+        padding-x: map-get( $spacing, lg) + 4
+    )
+) !default;
+
+
+/// The border color of the table.
+/// @group table
+$kendo-table-border-color: $grid-header-border !default;
+/// The vertical width of the table border.
+/// @group table
+$kendo-table-cell-vertical-border-width: $grid-cell-vertical-border-width !default;
+/// The horizontal width of the table border.
+/// @group table
+$kendo-table-cell-horizontal-border-width: $grid-cell-horizontal-border-width !default;
+
+
+/// The inline end padding of the table.
+/// @group table
+$kendo-table-padding-inline-end: var(--kendo-scrollbar-width) !default;
+/// The text color of the body grouping in the table.
+/// @group table
+$kendo-table-body-grouping-text-color: rgba(0, 0, 0, .54) !default;
+
+/// The text color of the table.
+/// @group table
+$kendo-table-text-color: $grid-header-text !default;
+
+
+/// The background color of the table.
+/// @group table
+$kendo-table-bg-color: $grid-header-bg !default;
+/// The background color of the even rows in the table.
+/// @group table
+$kendo-table-alt-row-bg: $grid-alt-bg !default;
+
+
+/// The focus state of the table.
+/// @group table
+$kendo-table-state-focus: $grid-focused-shadow !default;
+/// The hover state of the table.
+/// @group table
+$kendo-table-state-hover: $grid-hovered-bg !default;
+/// The selected state of the table.
+/// @group table
+$kendo-table-state-selected: $grid-selected-bg !default;
