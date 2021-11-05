@@ -1,0 +1,64 @@
+@include exports("table/theme") {
+    // Table Header
+    .k-table-header {
+        border-color: $kendo-table-border-color;
+        color: $kendo-table-text-color;
+        background-color: $kendo-table-bg-color;
+    }
+
+    .k-table-header .k-table-header-wrap {
+        border-color: $kendo-table-border-color;
+    }
+
+    .k-table-header .k-table-header-wrap .k-table-header-item {
+        border-color: $kendo-table-border-color;
+    }
+
+
+    // Table Rows
+    .k-table-body .k-table-row.k-row-even,
+    .k-table-list .k-table-row.k-row-even {
+        background-color: $kendo-table-alt-row-bg;
+    }
+
+
+    // Table Cells
+    .k-table-body .k-table-row .k-table-cell,
+    .k-table-list .k-table-row .k-table-cell {
+        border-color: $kendo-table-border-color;
+    }
+
+    // Footer 
+    .k-table-footer {
+        border-color: $kendo-table-border-color;
+        color: $kendo-table-text-color;
+        background-color: $kendo-table-bg-color;
+    }
+
+
+    // Grouping 
+    .k-table-header .k-table-group-header,
+    .k-table-body .k-table-group-body,
+    .k-table-list .k-table-group-body {
+        border-color: $kendo-table-border-color;
+    }
+
+
+    // States
+    .k-table-body .k-table-row:hover,
+    .k-table-list .k-table-row:hover,
+    .k-table-body .k-table-row.k-state-hover,
+    .k-table-list .k-table-row.k-state-hover {
+        background-color: $kendo-table-state-hover;
+    }
+
+    .k-table-body .k-table-row.k-state-focus,
+    .k-table-list .k-table-row.k-state-focus {
+        box-shadow: $kendo-table-state-focus;
+    }
+
+    .k-table-body .k-table-row.k-state-selected,
+    .k-table-list .k-table-row.k-state-selected {
+        background-color: $kendo-table-state-selected;
+    }
+}
