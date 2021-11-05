@@ -1,0 +1,114 @@
+// Table
+
+/// The width of the table border.
+/// @group table
+$table-border-width: 1px !default;
+/// The width of vertical border of table cells.
+/// @group table
+$table-cell-vertical-border-width: $grid-cell-vertical-border-width !default;
+/// The width of horizontal border of table cells.
+/// @group table
+$table-cell-horizontal-border-width: $grid-cell-horizontal-border-width !default;
+
+/// The font size of the table if no size is specified.
+/// @group table
+$table-font-size: $font-size !default;
+
+/// The horizontal padding of the cells in the table if no size is specified.
+/// @group table
+$table-cell-padding-x: map-get( $spacing, 2 ) !default;
+
+/// The vertical padding of the cells in the table if no size is specified.
+/// @group table
+$table-cell-padding-y: map-get( $spacing, 2 ) !default;
+
+
+/// Background color of tables.
+/// @group table
+$table-bg: $grid-bg !default;
+/// Text color of tables.
+/// @group table
+$table-text: $grid-text !default;
+/// Border color of tables.
+/// @group table
+$table-border: $grid-border !default;
+
+
+/// Background color of table headers.
+/// @group table
+$table-header-bg: $grid-header-bg !default;
+/// Text color of table headers.
+/// @group table
+$table-header-text: $grid-header-text !default;
+/// Border color of table headers.
+/// @group table
+$table-header-border: $grid-header-border !default;
+
+
+/// Background color of table footers.
+/// @group table
+$table-footer-bg: $grid-footer-bg !default;
+/// Text color of table footers.
+/// @group table
+$table-footer-text: $grid-footer-text !default;
+/// Border color of table footers.
+/// @group table
+$table-footer-border: $grid-footer-border !default;
+
+
+/// Background color of group rows in table.
+/// @group table
+$table-group-row-bg: $grid-grouping-row-bg !default;
+/// Text color of group rows in table.
+/// @group table
+$table-group-row-text: $grid-grouping-row-text !default;
+/// Border color of group rows in table.
+/// @group table
+$table-group-row-border: null !default;
+
+
+/// Background color of alternating rows in table.
+/// @group table
+$table-alt-row-bg: $grid-alt-bg !default;
+/// Text color of alternating rows in table.
+/// @group table
+$table-alt-row-text: $grid-alt-text !default;
+/// Border color of alternating rows in table.
+/// @group table
+$table-alt-row-border: $grid-alt-border !default;
+
+
+/// Background color of hovered rows in table.
+/// @group table
+$table-hover-bg: $grid-hovered-bg !default;
+/// Text color of hovered rows in table.
+/// @group table
+$table-hover-text: $grid-hovered-text !default;
+/// Border color of hovered rows in table.
+/// @group table
+$table-hover-border: $grid-hovered-border !default;
+
+
+/// Background color of focused rows in table.
+/// @group table
+$table-focus-bg: null !default;
+/// Text color of focused rows in table.
+/// @group table
+$table-focus-text: null !default;
+/// Border color of focused rows in table.
+/// @group table
+$table-focus-border: null !default;
+/// Box shadow of focused rows in table.
+/// @group table
+$table-focus-shadow: $grid-focused-shadow !default;
+
+
+/// Background color of selected rows in table.
+/// @group table
+$table-selected-bg: $grid-selected-bg !default;
+/// Text color of selected rows in table.
+/// @group table
+$table-selected-text: $grid-selected-text !default;
+/// Border color of selected rows in table.
+/// @group table
+$table-selected-border: $grid-selected-border !default;
