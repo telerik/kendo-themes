@@ -1,0 +1,162 @@
+@include exports("table/layout") {
+
+    // Table
+    .k-table {
+        width: 100%;
+        max-width: none;
+        border-width: $table-border-width;
+        border-style: solid;
+        border-collapse: collapse;
+        border-spacing: 0;
+        empty-cells: show;
+        outline: none;
+        font-size: $table-font-size;
+        line-height: $line-height;
+        text-align: left;
+    }
+
+
+    // Data table
+    .k-data-table {
+        border-width: $table-border-width;
+        border-style: solid;
+    }
+
+
+    // Table native parts
+    .k-table-thead,
+    .k-table-tbody,
+    .k-table-tfoot {
+        text-align: inherit;
+    }
+    .k-table-row,
+    .k-table-alt-row {
+        border-color: inherit;
+    }
+    .k-table-th,
+    .k-table-td {
+        padding: $table-cell-padding-y $table-cell-padding-x;
+        border-width: 0 0 $grid-cell-horizontal-border-width $table-cell-vertical-border-width;
+        border-style: solid;
+        border-color: inherit;
+        font-weight: normal;
+        text-align: inherit;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        display: table-cell;
+        overflow: hidden;
+
+        &:first-child {
+            border-left-width: 0;
+        }
+    }
+
+
+    // Table header
+    .k-table-header {
+        padding-inline-end: var(--kendo-scrollbar-width);
+        border-width: 0 0 1px 0;
+        border-style: solid;
+        box-sizing: border-box;
+
+        .k-table {
+            border-width: 0;
+        }
+    }
+    .k-table-header-wrap {
+        margin-right: -1px;
+        width: 100%;
+        border-width: 0 $table-cell-vertical-border-width 0 0;
+        border-style: solid;
+        overflow: hidden;
+    }
+
+
+    // Table list
+    .k-table-list {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        max-width: none;
+        border-width: 0;
+        display: table-row-group;
+        border-collapse: collapse;
+        border-spacing: 0;
+        table-layout: fixed;
+        empty-cells: show;
+        list-style: none;
+        outline: none;
+
+        .k-table-row {
+            width: 100%;
+            box-sizing: border-box;
+            display: flex;
+            position: relative;
+        }
+
+        .k-table-th,
+        .k-table-td {
+            vertical-align: middle;
+        }
+    }
+
+
+    // Table scroller
+    .k-table-scroller {
+        position: relative;
+        overflow: auto;
+
+        > .k-table {
+            border-width: 0;
+        }
+    }
+
+
+    // Table footer
+    .k-table-footer {
+        padding-inline-end: var(--kendo-scrollbar-width);
+        border-width: 1px 0 0 0;
+        border-style: solid;
+        box-sizing: border-box;
+
+        .k-table {
+            border-width: 0;
+        }
+    }
+    .k-table-footer-wrap {
+        margin-right: -1px;
+        width: 100%;
+        border-width: 0 $table-cell-vertical-border-width 0 0;
+        border-style: solid;
+        overflow: hidden;
+    }
+
+
+    // RTL
+    .k-rtl,
+    [dir="rtl"] {
+        &.k-table,
+        .k-table {
+            text-align: right;
+
+            .k-table-th,
+            .k-table-td {
+                border-left-width: 0;
+                border-right-width: $table-cell-vertical-border-width;
+
+                &:first-child {
+                    border-right-width: 0;
+                }
+            }
+
+            .k-table-header-wrap,
+            .k-table-footer-wrap {
+                margin-right: 0;
+                margin-left: -1px;
+                border-left-width: $table-cell-vertical-border-width;
+                border-right-width: 0;
+            }
+        }
+    }
+
+}

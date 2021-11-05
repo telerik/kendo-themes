@@ -1,0 +1,77 @@
+@include exports("table/theme") {
+
+    // Table
+    .k-table,
+    .k-data-table {
+        border-color: $table-border;
+        color: $table-text;
+        background-color: $table-bg;
+    }
+
+
+    // Table header
+    .k-table-thead,
+    .k-table-header {
+        border-color: $table-header-border;
+        color: $table-header-text;
+        background-color: $table-header-bg;
+    }
+
+
+    // Table footer
+    .k-table-tfoot,
+    .k-table-footer {
+        border-color: $table-footer-border;
+        color: $table-footer-text;
+        background-color: $table-footer-bg;
+    }
+
+
+    // Group row
+    .k-table-group-row {
+        border-color: $table-group-row-border;
+        color: $table-group-row-text;
+        background-color: $table-group-row-bg;
+    }
+
+
+    // Alternating row
+    .k-table-alt-row {
+        border-color: $table-alt-row-border;
+        color: $table-alt-row-text;
+        background-color: $table-alt-row-bg;
+    }
+
+
+    // Hover state
+    .k-table-tbody .k-table-row:hover,
+    .k-table-list .k-table-row:hover,
+    .k-table-tbody .k-table-row.k-hover,
+    .k-table-list .k-table-row.k-hover {
+        border-color: $table-hover-border;
+        color: $table-hover-text;
+        background-color: $table-hover-bg;
+    }
+
+
+    // Focus state
+    .k-table-tbody .k-table-row.k-focus,
+    .k-table-list .k-table-row.k-focus,
+    .k-table-tbody .k-table-td.k-focus,
+    .k-table-list .k-table-td.k-focus {
+        border-color: $table-focus-border;
+        color: $table-focus-text;
+        background-color: $table-focus-bg;
+        box-shadow: $table-focus-shadow;
+    }
+
+
+    // Selected state
+    .k-table-tbody .k-table-row.k-selected,
+    .k-table-list .k-table-row.k-selected {
+        border-color: $table-selected-border;
+        color: $table-selected-text;
+        background-color: $table-selected-bg;
+    }
+
+}
