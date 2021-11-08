@@ -40,7 +40,10 @@ const attrMap = {
     thumbrounded: 'thumbRounded',
 
     // Chip
-    showavatar: 'showAvatar'
+    showavatar: 'showAvatar',
+
+    // Menu list
+    contentTemplate: 'contentTemplate'
 };
 
 const booleanAttr = new Set([
