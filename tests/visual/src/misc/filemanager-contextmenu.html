@@ -78,21 +78,13 @@
             </div>
         </div>
 
-        <div class="k-animation-container" id="filemanager-context-menu">
-            <ul class="k-widget k-reset k-header k-menu k-menu-vertical k-context-menu k-popup k-group k-state-border-up">
-                <li class="k-item k-menu-item k-first">
-                    <span class="k-link k-menu-link">
-                        <i is="Icon" name="pencil"></i>
-                        Rename
-                    </span>
-                </li>
-                <li class="k-item k-menu-item k-last">
-                    <span class="k-link k-menu-link">
-                        <i is="Icon" name="trash"></i>
-                        Delete
-                    </span>
-                </li>
-            </ul>
+        <div class="k-animation-container k-context-menu-popup" id="filemanager-context-menu">
+            <div class="k-popup k-menu-popup">
+                <menu is="MenuList">
+                    <li is="MenuItem" text="Rename" icon="pencil"></li>
+                    <li is="MenuItem" text="Delete" icon="trash"></li>
+                </menu>
+            </div>
         </div>
 
     </div>

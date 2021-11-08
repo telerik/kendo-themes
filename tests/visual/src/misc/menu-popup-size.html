@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en" class="k-no-animations">
+<head>
+    <title>MenuList size</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+    <script src="../../assets/scripts.js"></script>
+    <script src="../../../../packages/html/dist/index.js"></script>
+
+    <style>
+        #test-area {
+            grid-template-columns: 120px 1fr 1fr 1fr;
+        }
+        .k-animation-container {
+            width: min-content;
+            position: relative;
+            overflow: visible;
+        }
+    </style>
+</head>
+<body class="k-body">
+
+    <div id="test-area" class="k-d-grid k-grid-cols-3">
+
+        <span></span>
+        <span>small</span>
+        <span>medium</span>
+        <span>large</span>
+
+        <span>no arrow</span>
+        <section>
+            <div class="k-animation-container">
+                <div class="k-popup k-menu-popup">
+                    <menu is="MenuList" size="small">
+                        <div is="MenuItem" text="Normal"></div>
+                        <div is="MenuItem" text="Hover" hover></div>
+                        <div is="MenuItem" text="Focus" focus></div>
+                        <div is="MenuItem" text="Active" active></div>
+                        <div is="MenuItem" text="Disabled" disabled></div>
+                    </menu>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="k-animation-container">
+                <div class="k-popup k-menu-popup">
+                    <menu is="MenuList">
+                        <div is="MenuItem" text="Normal"></div>
+                        <div is="MenuItem" text="Hover" hover></div>
+                        <div is="MenuItem" text="Focus" focus></div>
+                        <div is="MenuItem" text="Active" active></div>
+                        <div is="MenuItem" text="Disabled" disabled></div>
+                    </menu>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="k-animation-container">
+                <div class="k-popup k-menu-popup">
+                    <menu is="MenuList" size="large">
+                        <div is="MenuItem" text="Normal"></div>
+                        <div is="MenuItem" text="Hover" hover></div>
+                        <div is="MenuItem" text="Focus" focus></div>
+                        <div is="MenuItem" text="Active" active></div>
+                        <div is="MenuItem" text="Disabled" disabled></div>
+                    </menu>
+                </div>
+            </div>
+        </section>
+
+        <span>default arrow</span>
+        <section>
+            <div class="k-animation-container">
+                <div class="k-popup k-menu-popup">
+                    <menu is="MenuList" size="small">
+                        <div is="MenuItem" text="Normal" showArrow></div>
+                        <div is="MenuItem" text="No arrow"></div>
+                        <div is="MenuItem" text="With icon" icon="folder" showArrow></div>
+                    </menu>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="k-animation-container">
+                <div class="k-popup k-menu-popup">
+                    <menu is="MenuList">
+                        <div is="MenuItem" text="Normal" showArrow></div>
+                        <div is="MenuItem" text="No arrow"></div>
+                        <div is="MenuItem" text="With icon" icon="folder" showArrow></div>
+                    </menu>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="k-animation-container">
+                <div class="k-popup k-menu-popup">
+                    <menu is="MenuList" size="large">
+                        <div is="MenuItem" text="Normal" showArrow></div>
+                        <div is="MenuItem" text="No arrow"></div>
+                        <div is="MenuItem" text="With icon" icon="folder" showArrow></div>
+                    </menu>
+                </div>
+            </div>
+        </section>
+
+        <span>custom arrow</span>
+        <section>
+            <div class="k-animation-container">
+                <div class="k-popup k-menu-popup">
+                    <menu is="MenuList" size="small">
+                        <div is="MenuItem" text="Normal" showArrow arrowIconName='chevron-right'></div>
+                        <div is="MenuItem" text="No arrow"></div>
+                        <div is="MenuItem" text="With icon" icon="folder" showArrow arrowIconName='chevron-right'></div>
+                    </menu>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="k-animation-container">
+                <div class="k-popup k-menu-popup">
+                    <menu is="MenuList">
+                        <div is="MenuItem" text="Normal" showArrow arrowIconName='chevron-right'></div>
+                        <div is="MenuItem" text="No arrow"></div>
+                        <div is="MenuItem" text="With icon" icon="folder" showArrow arrowIconName='chevron-right'></div>
+                    </menu>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="k-animation-container">
+                <div class="k-popup k-menu-popup">
+                    <menu is="MenuList" size="large">
+                        <div is="MenuItem" text="Normal" showArrow arrowIconName='chevron-right'></div>
+                        <div is="MenuItem" text="No arrow"></div>
+                        <div is="MenuItem" text="With icon" icon="folder" showArrow arrowIconName='chevron-right'></div>
+                    </menu>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>
