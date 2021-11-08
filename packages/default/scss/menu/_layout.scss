@@ -1,7 +1,7 @@
 @include exports("menu/layout") {
 
-    // Base
-    .k-menu {
+    // Menu bar
+    .k-menu-bar {
         border-width: $menu-border-width;
         border-style: solid;
         box-sizing: border-box;
@@ -10,18 +10,24 @@
         font-size: $menu-font-size;
         line-height: $menu-line-height;
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         align-items: stretch;
         position: relative;
         cursor: default;
         -webkit-touch-callout: none;
         -webkit-tap-highlight-color: $rgba-transparent;
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
     }
+    .k-menu { @extend .k-menu-bar !optional; }
 
 
     // Menu item
     .k-menu-item {
-        box-sizing: border-box;
         border-width: 0;
         outline: 0;
         display: flex;
@@ -29,6 +35,15 @@
         flex: none;
         position: relative;
         user-select: none;
+    }
+    .k-menu-item-content {
+        display: block;
+        height: auto;
+        overflow: visible;
+
+        .k-actions {
+            margin-top: 0;
+        }
     }
 
 
@@ -40,21 +55,18 @@
         display: flex;
         flex-flow: row nowrap;
         flex: 1 1 auto;
+        gap: $menu-item-icon-spacing;
         align-items: center;
         position: relative;
         white-space: nowrap;
         cursor: pointer;
-
-        > .k-icon:not(.k-menu-expand-arrow),
-        > .k-image,
-        > .k-sprite {
-            margin-right: $menu-item-icon-spacing;
-        }
     }
 
 
     // Menu item text
     .k-menu-link-text {
+        display: flex;
+        flex-flow: row nowrap;
         flex: 1 1 auto;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -63,26 +75,12 @@
 
     // Expand arrow
     .k-menu-expand-arrow {
-        margin-left: $icon-spacing;
-        margin-right: -$icon-spacing;
+        margin-inline-end: -$icon-spacing;
         display: inline-flex;
         flex-flow: row wrap;
         align-items: center;
         flex: none;
         position: relative;
-    }
-    .k-menu-expand-arrow.k-i-arrow-60-left,
-    .k-menu-expand-arrow.k-i-arrow-60-right {
-        margin: 0;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-    }
-    .k-menu-expand-arrow.k-i-arrow-60-right {
-        right: $icon-spacing;
-    }
-    .k-menu-expand-arrow.k-i-arrow-60-left {
-        left: $icon-spacing;
     }
 
 
@@ -130,26 +128,29 @@
 
     // Menu popup
     .k-menu-popup {
+        padding: $kendo-menu-popup-padding-y $kendo-menu-popup-padding-x;
+        box-sizing: border-box;
         border-width: $kendo-menu-popup-border-width;
         border-style: solid;
         overflow: auto;
         max-height: 80vh;
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
     }
 
 
     // Sub menu
     .k-menu-group {
         margin: 0;
-        padding: $kendo-menu-popup-padding-y $kendo-menu-popup-padding-x;
+        padding: 0;
         list-style: none;
-        display: none;
+        display: flex;
+        flex-flow: column nowrap;
         position: absolute;
-
-        .k-menu-popup & {
-            position: relative;
-            display: flex;
-            flex-direction: column;
-        }
 
         .k-menu-item + .k-menu-item {
             margin-top: $kendo-menu-popup-item-spacing;
@@ -164,6 +165,10 @@
             display: block;
         }
     }
+    .k-menu-popup .k-menu-group {
+        position: relative;
+    }
+
 
     // Sizes
     .k-menu-group-sm {
@@ -178,7 +183,12 @@
 
         .k-menu-link {
             padding: $kendo-menu-popup-item-padding-y-sm $kendo-menu-popup-item-padding-x-sm;
-            padding-right: $kendo-menu-popup-item-padding-end-sm;
+            padding-inline-end: $kendo-menu-popup-item-padding-end-sm;
+        }
+
+        .k-menu-expand-arrow {
+            margin-inline-start: $kendo-menu-popup-item-icon-margin-start-sm;
+            margin-inline-end: $kendo-menu-popup-item-icon-margin-end-sm;
         }
     }
     .k-menu-group-md {
@@ -193,7 +203,12 @@
 
         .k-menu-link {
             padding: $kendo-menu-popup-item-padding-y-md $kendo-menu-popup-item-padding-x-md;
-            padding-right: $kendo-menu-popup-item-padding-end-md;
+            padding-inline-end: $kendo-menu-popup-item-padding-end-md;
+        }
+
+        .k-menu-expand-arrow {
+            margin-inline-start: $kendo-menu-popup-item-icon-margin-start;
+            margin-inline-end: $kendo-menu-popup-item-icon-margin-end;
         }
     }
     .k-menu-group-lg {
@@ -207,8 +222,13 @@
         }
 
         .k-menu-link {
-            padding: $kendo-menu-popup-item-padding-y-md $kendo-menu-popup-item-padding-x-lg;
-            padding-right: $kendo-menu-popup-item-padding-end-lg;
+            padding: $kendo-menu-popup-item-padding-y-lg $kendo-menu-popup-item-padding-x-lg;
+            padding-inline-end: $kendo-menu-popup-item-padding-end-lg;
+        }
+
+        .k-menu-expand-arrow {
+            margin-inline-start: $kendo-menu-popup-item-icon-margin-start-lg;
+            margin-inline-end: $kendo-menu-popup-item-icon-margin-end-lg;
         }
     }
 
@@ -303,21 +323,6 @@
     // RTL
     .k-rtl,
     [dir="rtl"] {
-
-        .k-menu-link {
-            > .k-icon:not(.k-menu-expand-arrow),
-            > .k-image,
-            > .k-sprite {
-                margin-left: $menu-item-icon-spacing;
-                margin-right: 0;
-            }
-        }
-
-        .k-menu-expand-arrow.k-i-arrow-60-down {
-            margin-left: -$icon-spacing;
-            margin-right: $icon-spacing;
-        }
-
 
         // Orientation -- horizontal
         .k-menu-horizontal {
