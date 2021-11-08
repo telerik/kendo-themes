@@ -30,6 +30,16 @@
             @include box-shadow( none );
             font-weight: normal;
             text-transform: unset;
+
+            &::before {
+                display: none;
+            }
+
+            &:disabled,
+            &.k-disabled {
+                opacity: .6;
+                filter: grayscale(.1);
+            }
         }
 
     }
