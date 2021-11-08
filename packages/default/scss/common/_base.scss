@@ -127,6 +127,7 @@
 
         // Nested disabled
         [disabled],
+        .k-disabled,
         .k-state-disabled {
             opacity: 1;
             filter: grayscale(0);
