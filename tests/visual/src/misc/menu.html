@@ -19,8 +19,7 @@
         }
 
         .k-animation-container {
-            position: relative;
-            display: inline-block;
+            overflow: visible;
         }
     </style>
 </head>
@@ -28,8 +27,8 @@
 
     <div id="test-area" class="grid">
 
-        <span>Horizonatal Menu</span>
-        <span>Horizonatal Scrolling Menu</span>
+        <span>Horizontal Menu</span>
+        <span>Horizontal Scrolling Menu</span>
 
         <!-- horizontal menu -->
         <section>
@@ -51,30 +50,16 @@
                         Active
                         <i is="Icon" class="k-menu-expand-arrow" name="arrow-s"></i>
                     </span>
-                    <div class="k-animation-container" style="overflow: visible; display: block; position: absolute; z-index: 10002; top: 100%; left: 0px;">
-                        <ul class="k-group k-menu-group k-popup k-reset k-state-border-up" style="display: block; ">
-                            <li class="k-item k-menu-item k-state-disabled k-first">
-                                <span class="k-link k-menu-link">Disabled</span>
-                            </li>
-                            <li class="k-item k-menu-item">
-                                <span class="k-link k-menu-link">Normal</span>
-                            </li>
-                            <li class="k-item k-menu-item k-state-hover">
-                                <span class="k-link k-menu-link">
-                                    Hover
-                                    <i is="Icon" class="k-menu-expand-arrow" name="arrow-60-right"></i>
-                                </span>
-                            </li>
-                            <li class="k-item k-menu-item k-state-border-right" style="z-index: 101;">
-                                <span class="k-link k-menu-link k-state-active k-state-border-right">
-                                    Active
-                                    <i is="Icon" class="k-menu-expand-arrow" name="arrow-60-right"></i>
-                                </span>
-                            </li>
-                            <li class="k-item k-menu-item k-state-focused k-last">
-                                <span class="k-link k-menu-link">Focus</span>
-                            </li>
-                        </ul>
+                    <div class="k-animation-container" style="position: absolute; top: 100%">
+                        <div class="k-popup k-menu-popup">
+                            <menu is="MenuList">
+                                <div is="MenuItem" text="Disabled" disabled></div>
+                                <div is="MenuItem" text="Normal"></div>
+                                <div is="MenuItem" text="Hover" hover showArrow></div>
+                                <div is="MenuItem" text="Active" active showArrow></div>
+                                <div is="MenuItem" text="Focus" focus></div>
+                            </menu>
+                        </div>
                     </div>
                 </li>
                 <li class="k-item k-menu-item k-state-focused">

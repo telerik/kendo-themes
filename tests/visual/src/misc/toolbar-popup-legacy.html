@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en" class="k-no-animations">
+<head>
+    <title>Toolbar Overflow Popup -- Legacy</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+    <script src="../../assets/scripts.js"></script>
+    <script src="../../../../packages/html/dist/index.js"></script>
+
+    <style>
+        .k-animation-container {
+            width: min-content;
+            position: relative;
+            overflow: visible;
+        }
+    </style>
+</head>
+
+<body class="k-body">
+    <div id="test-area" class="k-d-grid k-grid-cols-4">
+
+        <span>Button</span>
+        <span>Menu button</span>
+        <span>Split button</span>
+        <span>Button group</span>
+
+        <section>
+            <div class="k-animation-container k-overflow-wrapper">
+                <ul class="k-reset k-popup k-group k-list-container k-overflow-container">
+                    <li class="k-item">
+                        <button is="Button" class="k-overflow-button">Normal</button>
+                    </li>
+                    <li class="k-item">
+                        <button is="Button" class="k-overflow-button" hover>Hover</button>
+                    </li>
+                    <li class="k-item">
+                        <button is="Button" class="k-overflow-button" focus>Focus</button>
+                    </li>
+                    <li class="k-item">
+                        <button is="Button" class="k-overflow-button" active>Active</button>
+                    </li>
+                    <li class="k-item">
+                        <button is="Button" class="k-overflow-button" disabled>Disabled</button>
+                    </li>
+                    <li class="k-item">
+                        <button is="Button" class="k-overflow-button" disabled focus>Disabled focus</button>
+                    </li>
+                    <li class="k-item">
+                        <div class="k-separator k-separator-horizontal"></div>
+                    </li>
+                    <li class="k-item">
+                        <button is="Button" class="k-overflow-button">Item after separator</button>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <div class="k-animation-container">
+                <ul class="k-reset k-popup k-group k-list-container k-overflow-container">
+                    <li class="k-item">
+                        <button is="Button" class="k-overflow-button" disabled>MenuButton</button>
+                        <button is="Button" class="k-overflow-button" icon="plus">Normal</button>
+                        <button is="Button" class="k-overflow-button" icon="plus" hover>Hover</button>
+                        <button is="Button" class="k-overflow-button" icon="plus" focus>Focus</button>
+                        <button is="Button" class="k-overflow-button" icon="plus" active>Active</button>
+                        <button is="Button" class="k-overflow-button" icon="plus" disabled>Disabled</button>
+                        <button is="Button" class="k-overflow-button" icon="plus" disabled focus>Disabled focus</button>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <div class="k-animation-container">
+                <ul class="k-reset k-popup k-group k-list-container k-overflow-container">
+                    <li class="k-item">
+                        <button is="Button" class="k-overflow-button">SplitButton</button>
+                        <button is="Button" class="k-overflow-button" icon="plus">Normal</button>
+                        <button is="Button" class="k-overflow-button" icon="plus" hover>Hover</button>
+                        <button is="Button" class="k-overflow-button" icon="plus" focus>Focus</button>
+                        <button is="Button" class="k-overflow-button" icon="plus" active>Active</button>
+                        <button is="Button" class="k-overflow-button" icon="plus" disabled>Disabled</button>
+                        <button is="Button" class="k-overflow-button" icon="plus" disabled focus>Disabled focus</button>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <div class="k-animation-container k-overflow-wrapper">
+                <ul class="k-reset k-popup k-group k-list-container k-overflow-container">
+                    <li class="k-button-group k-overflow-group k-item">
+                        <button is="Button" class="k-overflow-button">Normal</button>
+                        <button is="Button" class="k-overflow-button" hover>Hover</button>
+                        <button is="Button" class="k-overflow-button" focus>Focus</button>
+                        <button is="Button" class="k-overflow-button" active>Active</button>
+                        <button is="Button" class="k-overflow-button" disabled>Disabled</button>
+                        <button is="Button" class="k-overflow-button" disabled focus>Disabled focus</button>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <span class="k-colspan-all">rtl</span>
+        <section class="k-rtl" dir="rtl">
+            <div class="k-animation-container k-overflow-wrapper">
+                <ul class="k-reset k-popup k-group k-list-container k-overflow-container">
+                    <li class="k-item">
+                        <button is="Button" class="k-overflow-button">Normal</button>
+                    </li>
+                    <li class="k-item">
+                        <button is="Button" class="k-overflow-button" hover>Hover</button>
+                    </li>
+                    <li class="k-item">
+                        <button is="Button" class="k-overflow-button" focus>Focus</button>
+                    </li>
+                    <li class="k-item">
+                        <button is="Button" class="k-overflow-button" active>Active</button>
+                    </li>
+                    <li class="k-item">
+                        <button is="Button" class="k-overflow-button" disabled>Disabled</button>
+                    </li>
+                    <li class="k-item">
+                        <button is="Button" class="k-overflow-button" disabled focus>Disabled focus</button>
+                    </li>
+                    <li class="k-item">
+                        <div class="k-separator k-separator-horizontal"></div>
+                    </li>
+                    <li class="k-item">
+                        <button is="Button" class="k-overflow-button">Item after separator</button>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="k-rtl" dir="rtl">
+            <div class="k-animation-container">
+                <ul class="k-reset k-popup k-group k-list-container k-overflow-container">
+                    <li class="k-item">
+                        <button is="Button" class="k-overflow-button" disabled>MenuButton</button>
+                        <button is="Button" class="k-overflow-button" icon="plus">Normal</button>
+                        <button is="Button" class="k-overflow-button" icon="plus" hover>Hover</button>
+                        <button is="Button" class="k-overflow-button" icon="plus" focus>Focus</button>
+                        <button is="Button" class="k-overflow-button" icon="plus" active>Active</button>
+                        <button is="Button" class="k-overflow-button" icon="plus" disabled>Disabled</button>
+                        <button is="Button" class="k-overflow-button" icon="plus" disabled focus>Disabled focus</button>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="k-rtl" dir="rtl">
+            <div class="k-animation-container">
+                <ul class="k-reset k-popup k-group k-list-container k-overflow-container">
+                    <li class="k-item">
+                        <button is="Button" class="k-overflow-button">SplitButton</button>
+                        <button is="Button" class="k-overflow-button" icon="plus">Normal</button>
+                        <button is="Button" class="k-overflow-button" icon="plus" hover>Hover</button>
+                        <button is="Button" class="k-overflow-button" icon="plus" focus>Focus</button>
+                        <button is="Button" class="k-overflow-button" icon="plus" active>Active</button>
+                        <button is="Button" class="k-overflow-button" icon="plus" disabled>Disabled</button>
+                        <button is="Button" class="k-overflow-button" icon="plus" disabled focus>Disabled focus</button>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="k-rtl" dir="rtl">
+            <div class="k-animation-container k-overflow-wrapper">
+                <ul class="k-reset k-popup k-group k-list-container k-overflow-container">
+                    <li class="k-button-group k-overflow-group k-item">
+                        <button is="Button" class="k-overflow-button">Normal</button>
+                        <button is="Button" class="k-overflow-button" hover>Hover</button>
+                        <button is="Button" class="k-overflow-button" focus>Focus</button>
+                        <button is="Button" class="k-overflow-button" active>Active</button>
+                        <button is="Button" class="k-overflow-button" disabled>Disabled</button>
+                        <button is="Button" class="k-overflow-button" disabled focus>Disabled focus</button>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+    </div>
+</body>
+</html>
