@@ -1248,9 +1248,20 @@
         }
 
         .k-widget,
-        .k-radio-list {
+        .k-textbox,
+        .k-dropdown,
+        .k-numerictextbox,
+        .k-radio-list,
+        .k-datepicker,
+        .k-input {
             margin: $grid-filter-menu-item-spacing-y $grid-filter-menu-item-spacing-x 0;
             width: calc( 100% - ( 2 * #{$grid-filter-menu-item-spacing-x} ) );
+            box-sizing: border-box;
+            display: flex;
+        }
+
+        .k-switch {
+            margin: $grid-filter-menu-item-spacing-y $grid-filter-menu-item-spacing-x 0;
             box-sizing: border-box;
             display: flex;
         }
