@@ -23,10 +23,18 @@
     .k-menu-item {
         border-width: 0;
         outline: 0;
-        display: flex;
-        flex: 0 0 auto;
         position: relative;
         user-select: none;
+    }
+
+    .k-menu-item-content {
+        display: block;
+        height: auto;
+        overflow: visible;
+
+        .k-actions {
+            margin-top: 0;
+        }
     }
 
 
@@ -53,22 +61,11 @@
 
     // Expand arrow
     .k-menu-expand-arrow {
-        margin-left: $icon-spacing;
-        margin-right: -$icon-spacing;
-        position: relative;
-    }
-    .k-menu-expand-arrow.k-i-arrow-60-left,
-    .k-menu-expand-arrow.k-i-arrow-60-right {
         margin: 0;
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-    }
-    .k-menu-expand-arrow.k-i-arrow-60-right {
         right: $icon-spacing;
-    }
-    .k-menu-expand-arrow.k-i-arrow-60-left {
-        left: $icon-spacing;
     }
 
 
@@ -164,7 +161,7 @@
 
         .k-menu-link {
             padding: $kendo-menu-popup-item-padding-y-sm $kendo-menu-popup-item-padding-x-sm;
-            padding-right: $kendo-menu-popup-item-padding-end-sm;
+            padding-inline-end: $kendo-menu-popup-item-padding-end-sm;
         }
     }
     .k-menu-group-md {
@@ -179,7 +176,7 @@
 
         .k-menu-link {
             padding: $kendo-menu-popup-item-padding-y-md $kendo-menu-popup-item-padding-x-md;
-            padding-right: $kendo-menu-popup-item-padding-end-md;
+            padding-inline-end: $kendo-menu-popup-item-padding-end-md;
         }
     }
     .k-menu-group-lg {
@@ -193,8 +190,8 @@
         }
 
         .k-menu-link {
-            padding: $kendo-menu-popup-item-padding-y-md $kendo-menu-popup-item-padding-x-lg;
-            padding-right: $kendo-menu-popup-item-padding-end-lg;
+            padding: $kendo-menu-popup-item-padding-y-lg $kendo-menu-popup-item-padding-x-lg;
+            padding-inline-end: $kendo-menu-popup-item-padding-end-lg;
         }
     }
 
@@ -296,9 +293,9 @@
             }
         }
 
-        .k-menu-expand-arrow.k-i-arrow-60-down {
-            margin-left: -$icon-spacing;
-            margin-right: $icon-spacing;
+        .k-menu-expand-arrow {
+            right: unset;
+            left: $icon-spacing;
         }
 
 
