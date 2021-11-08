@@ -90,53 +90,138 @@
         <span><div is="SplitButton" themeColor="primary" arrowIconName="chevron-down" disabled>Disabled</div></span>
         <span><div is="SplitButton" themeColor="primary" arrowIconName="chevron-down" dir="rtl">Normal</div></span>
 
-        <span></span>
         <span>Menu list</span>
-        <span></span>
-        <span>RTL</span>
-        <span></span>
-        <span></span>
-        <span></span>
-
-        <span></span>
-
         <span>
-            <kendo-popup class="k-animation-container k-animation-container-fixed k-animation-container-shown">
-                <div class="k-popup k-list-container k-reset k-group">
-                    <kendo-button-list>
-                        <ul class="k-list k-reset">
-                            <li class="k-item k-state-focused">
-                                <i is="Icon" name="upload"></i>
-                                Save as
-                            </li>
-                            <li class="k-item">
-                                <i is="Icon" name="upload"></i>
-                                Upload to drive
-                            </li>
-                        </ul>
-                    </kendo-button-list>
+            <div class="k-animation-container k-animation-container-fixed k-animation-container-shown">
+                <div class="k-popup k-menu-popup">
+                    <div is="MenuList">
+                        <div is="MenuItem" text="Normal"></div>
+                        <div is="MenuItem" text="Normal" icon="folder"></div>
+                        <div is="MenuItem" text="Normal" showArrow>
+                            <div is="MenuItem" text="Child"></div>
+                        </div>
+                        <div is="MenuItem" text="Normal" icon="folder" showArrow>
+                            <div is="MenuItem" text="Child"></div>
+                        </div>
+                        <div is="MenuItem" text="Normal" showArrow arrowIconName='chevron-right'>
+                            <div is="MenuItem" text="Child"></div>
+                        </div>
+                        <div is="MenuItem" text="Normal" icon="folder" showArrow arrowIconName='chevron-right'>
+                            <div is="MenuItem" text="Child"></div>
+                        </div>
+                    </div>
                 </div>
-            </kendo-popup>
-
+            </div>
         </span>
-        <span></span>
         <span>
-            <kendo-popup class="k-animation-container k-animation-container-fixed k-animation-container-shown">
-                <div class="k-popup k-list-container k-reset k-group">
-                    <kendo-button-list  dir="rtl">
-                        <ul class="k-list k-reset">
-                            <li class="k-item k-state-focused">
-                                <i is="Icon" name="upload"></i>
-                                Save as
-                            </li>
-                            <li class="k-item">
-                                <i is="Icon" name="upload"></i>
-                                Upload to drive
-                            </li>
-                        </ul>
-                    </kendo-button-list>
+            <div class="k-animation-container k-animation-container-fixed k-animation-container-shown">
+                <div class="k-popup k-menu-popup">
+                    <div is="MenuList">
+                        <div is="MenuItem" text="Hover" hover></div>
+                        <div is="MenuItem" text="Hover" hover icon="folder"></div>
+                        <div is="MenuItem" text="Hover" hover showArrow>
+                            <div is="MenuItem" text="Child"></div>
+                        </div>
+                        <div is="MenuItem" text="Hover" hover icon="folder" showArrow>
+                            <div is="MenuItem" text="Child"></div>
+                        </div>
+                        <div is="MenuItem" text="Hover" hover showArrow arrowIconName='chevron-right'>
+                            <div is="MenuItem" text="Child"></div>
+                        </div>
+                        <div is="MenuItem" text="Hover" hover icon="folder" showArrow arrowIconName='chevron-right'>
+                            <div is="MenuItem" text="Child"></div>
+                        </div>
+                    </div>
                 </div>
-            </kendo-popup>
+            </div>
+        </span>
+        <span>
+            <div class="k-animation-container k-animation-container-fixed k-animation-container-shown">
+                <div class="k-popup k-menu-popup">
+                    <div is="MenuList">
+                        <div is="MenuItem" text="Focus" focus></div>
+                        <div is="MenuItem" text="Focus" focus icon="folder"></div>
+                        <div is="MenuItem" text="Focus" focus showArrow>
+                            <div is="MenuItem" text="Child"></div>
+                        </div>
+                        <div is="MenuItem" text="Focus" focus icon="folder" showArrow>
+                            <div is="MenuItem" text="Child"></div>
+                        </div>
+                        <div is="MenuItem" text="Focus" focus showArrow arrowIconName='chevron-right'>
+                            <div is="MenuItem" text="Child"></div>
+                        </div>
+                        <div is="MenuItem" text="Focus" focus icon="folder" showArrow arrowIconName='chevron-right'>
+                            <div is="MenuItem" text="Child"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </span>
+        <span>
+            <div class="k-animation-container k-animation-container-fixed k-animation-container-shown">
+                <div class="k-popup k-menu-popup">
+                    <div is="MenuList">
+                        <div is="MenuItem" text="Active" active></div>
+                        <div is="MenuItem" text="Active" active icon="folder"></div>
+                        <div is="MenuItem" text="Active" active showArrow>
+                            <div is="MenuItem" text="Child"></div>
+                        </div>
+                        <div is="MenuItem" text="Active" active icon="folder" showArrow>
+                            <div is="MenuItem" text="Child"></div>
+                        </div>
+                        <div is="MenuItem" text="Active" active showArrow arrowIconName='chevron-right'>
+                            <div is="MenuItem" text="Child"></div>
+                        </div>
+                        <div is="MenuItem" text="Active" active icon="folder" showArrow arrowIconName='chevron-right'>
+                            <div is="MenuItem" text="Child"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </span>
+        <span>
+            <div class="k-animation-container k-animation-container-fixed k-animation-container-shown">
+                <div class="k-popup k-menu-popup">
+                    <div is="MenuList">
+                        <div is="MenuItem" text="Disabled" disabled></div>
+                        <div is="MenuItem" text="Disabled" disabled icon="folder"></div>
+                        <div is="MenuItem" text="Disabled" disabled showArrow>
+                            <div is="MenuItem" text="Child"></div>
+                        </div>
+                        <div is="MenuItem" text="Disabled" disabled icon="folder" showArrow>
+                            <div is="MenuItem" text="Child"></div>
+                        </div>
+                        <div is="MenuItem" text="Disabled" disabled showArrow arrowIconName='chevron-right'>
+                            <div is="MenuItem" text="Child"></div>
+                        </div>
+                        <div is="MenuItem" text="Disabled" disabled icon="folder" showArrow arrowIconName='chevron-right'>
+                            <div is="MenuItem" text="Child"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </span>
+        <span>
+            <div class="k-animation-container k-animation-container-fixed k-animation-container-shown" dir="rtl">
+                <div class="k-popup k-menu-popup">
+                    <div is="MenuList">
+                        <div is="MenuItem" text="Normal" dir="rtl"></div>
+                        <div is="MenuItem" text="Normal" icon="folder" dir="rtl"></div>
+                        <div is="MenuItem" text="Normal" showArrow dir="rtl">
+                            <div is="MenuItem" text="Child"></div>
+                        </div>
+                        <div is="MenuItem" text="Normal" icon="folder" showArrow dir="rtl">
+                            <div is="MenuItem" text="Child"></div>
+                        </div>
+                        <div is="MenuItem" text="Normal" showArrow arrowIconName='chevron-left' dir="rtl">
+                            <div is="MenuItem" text="Child"></div>
+                        </div>
+                        <div is="MenuItem" text="Normal" icon="folder" showArrow arrowIconName='chevron-left' dir="rtl">
+                            <div is="MenuItem" text="Child"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </span>
     </div>
 
