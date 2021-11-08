@@ -70,9 +70,9 @@ $kendo-menu-popup-font-size-lg: $font-size-lg !default;
 /// Line heights used along with $font-size.
 /// @group menu-popup
 $kendo-menu-popup-line-height: $line-height !default;
-$kendo-menu-popup-line-height-sm: $line-height-lg !default;
+$kendo-menu-popup-line-height-sm: $line-height !default;
 $kendo-menu-popup-line-height-md: $line-height !default;
-$kendo-menu-popup-line-height-lg: $line-height-lg !default;
+$kendo-menu-popup-line-height-lg: $line-height !default;
 
 /// The background of the menu popup.
 /// @group menu-popup
@@ -92,24 +92,39 @@ $kendo-menu-popup-gradient: null !default;
 
 /// Horizontal padding of the menu item in popup.
 /// @group menu-popup-item
-$kendo-menu-popup-item-padding-x: ( map-get( $spacing, 4 ) * 1.5 ) !default;
-$kendo-menu-popup-item-padding-x-sm: ( map-get( $spacing, 2 ) * 1.5 ) !default;
-$kendo-menu-popup-item-padding-x-md: ( map-get( $spacing, 4 ) * 1.5 ) !default;
-$kendo-menu-popup-item-padding-x-lg: ( map-get( $spacing, 6 ) * 1.5 ) !default;
+$kendo-menu-popup-item-padding-x: null !default;
+$kendo-menu-popup-item-padding-x-base: map-get( $spacing, 4 ) !default;
+$kendo-menu-popup-item-padding-x-sm: ( $kendo-menu-popup-item-padding-x-base * .75 ) !default;
+$kendo-menu-popup-item-padding-x-md: $kendo-menu-popup-item-padding-x-base !default;
+$kendo-menu-popup-item-padding-x-lg: ( $kendo-menu-popup-item-padding-x-base * 1.25 ) !default;
+
 
 /// Vertical padding of the menu item in popup.
 /// @group menu-popup-item
-$kendo-menu-popup-item-padding-y: ( map-get( $spacing, 2 ) / 2 ) !default;
-$kendo-menu-popup-item-padding-y-sm: ( map-get( $spacing, 1 ) / 2 ) !default;
-$kendo-menu-popup-item-padding-y-md: ( map-get( $spacing, 2 ) / 2 ) !default;
-$kendo-menu-popup-item-padding-y-lg: ( map-get( $spacing, 3 ) / 2 ) !default;
+$kendo-menu-popup-item-padding-y: null !default;
+$kendo-menu-popup-item-padding-y-base: map-get( $spacing, 1 ) !default;
+$kendo-menu-popup-item-padding-y-sm: ( $kendo-menu-popup-item-padding-y-base * .75 ) !default;
+$kendo-menu-popup-item-padding-y-md: $kendo-menu-popup-item-padding-y-base !default;
+$kendo-menu-popup-item-padding-y-lg: ( $kendo-menu-popup-item-padding-y-base * 1.25 ) !default;
 
 /// The end padding of the menu item in popup.
 /// @group menu-popup-item
-$kendo-menu-popup-item-padding-end: calc( #{$kendo-menu-popup-item-padding-x * 2} + #{$icon-size} ) !default;
+$kendo-menu-popup-item-padding-end: null !default;
 $kendo-menu-popup-item-padding-end-sm: calc( #{$kendo-menu-popup-item-padding-x-sm * 2} + #{$icon-size} ) !default;
 $kendo-menu-popup-item-padding-end-md: calc( #{$kendo-menu-popup-item-padding-x-md * 2} + #{$icon-size} ) !default;
 $kendo-menu-popup-item-padding-end-lg: calc( #{$kendo-menu-popup-item-padding-x-lg * 2} + #{$icon-size} ) !default;
+
+/// The start margin of the menu item expand icon.
+/// @group menu-popup-item
+$kendo-menu-popup-item-icon-margin-start-sm: $kendo-menu-popup-item-padding-x-sm !default;
+$kendo-menu-popup-item-icon-margin-start: $kendo-menu-popup-item-padding-x-md !default;
+$kendo-menu-popup-item-icon-margin-start-lg: $kendo-menu-popup-item-padding-x-lg !default;
+
+/// The end margin of the menu item expand icon.
+/// @group menu-popup-item
+$kendo-menu-popup-item-icon-margin-end-sm: calc( -1 * (#{$kendo-menu-popup-item-padding-end-sm} - #{$kendo-menu-popup-item-padding-x-sm / 2}) ) !default;
+$kendo-menu-popup-item-icon-margin-end: calc( -1 * (#{$kendo-menu-popup-item-padding-end-md} - #{$kendo-menu-popup-item-padding-x-md / 2}) ) !default;
+$kendo-menu-popup-item-icon-margin-end-lg: calc( -1 * (#{$kendo-menu-popup-item-padding-end-lg} - #{$kendo-menu-popup-item-padding-x-lg / 2}) ) !default;
 
 /// The spacing between the menu items in popup.
 /// @group menu-popup-item
