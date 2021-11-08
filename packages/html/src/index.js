@@ -28,6 +28,7 @@ export * from './input/index';
 // export * from './list/index';
 export * from './avatar/index';
 export * from './menulist/index';
+export * from './menuitem/index';
 
 // Native forms
 export * from './button/index';
