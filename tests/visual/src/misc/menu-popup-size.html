@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en" class="k-no-animations">
+<head>
+    <title>MenuList size</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+    <script src="../../assets/scripts.js"></script>
+    <script src="../../../../packages/html/dist/index.js"></script>
+
+    <style>
+        #test-area {
+            grid-template-columns: 90px 1fr 1fr 1fr;
+        }
+    </style>
+</head>
+<body class="k-body">
+
+    <div id="test-area" class="k-d-grid">
+
+        <span></span>
+        <span>small</span>
+        <span>medium</span>
+        <span>large</span>
+
+        <span>Menu list</span>
+        <span>
+            <div class="k-animation-container k-animation-container-fixed k-animation-container-shown">
+                <div class="k-popup k-menu-popup">
+                    <div is="MenuList" size="small">
+                        <div is="MenuItem" text="Normal"></div>
+                        <div is="MenuItem" text="Hover" hover></div>
+                        <div is="MenuItem" text="Focus" focus></div>
+                        <div is="MenuItem" text="Active" active></div>
+                        <div is="MenuItem" text="Disabled" disabled></div>
+
+                        <div is="MenuItem" text="Normal" icon="folder" showArrow></div>
+                        <div is="MenuItem" text="Hover" icon="folder" hover showArrow></div>
+                        <div is="MenuItem" text="Focus" icon="folder" focus showArrow></div>
+                        <div is="MenuItem" text="Active" icon="folder" active showArrow></div>
+                        <div is="MenuItem" text="Disabled" icon="folder" disabled showArrow></div>
+
+                        <div is="MenuItem" text="Normal" icon="folder" showArrow arrowIconName='chevron-right'></div>
+                        <div is="MenuItem" text="Hover" icon="folder" hover showArrow arrowIconName='chevron-right'></div>
+                        <div is="MenuItem" text="Focus" icon="folder" focus showArrow arrowIconName='chevron-right'></div>
+                        <div is="MenuItem" text="Active" icon="folder" active showArrow arrowIconName='chevron-right'></div>
+                        <div is="MenuItem" text="Disabled" icon="folder" disabled showArrow arrowIconName='chevron-right'></div>
+                    </div>
+                </div>
+            </div>
+        </span>
+        <span>
+            <div class="k-animation-container k-animation-container-fixed k-animation-container-shown">
+                <div class="k-popup k-menu-popup">
+                    <div is="MenuList">
+                        <div is="MenuItem" text="Normal"></div>
+                        <div is="MenuItem" text="Hover" hover></div>
+                        <div is="MenuItem" text="Focus" focus></div>
+                        <div is="MenuItem" text="Active" active></div>
+                        <div is="MenuItem" text="Disabled" disabled></div>
+
+                        <div is="MenuItem" text="Normal" icon="folder" showArrow></div>
+                        <div is="MenuItem" text="Hover" icon="folder" hover showArrow></div>
+                        <div is="MenuItem" text="Focus" icon="folder" focus showArrow></div>
+                        <div is="MenuItem" text="Active" icon="folder" active showArrow></div>
+                        <div is="MenuItem" text="Disabled" icon="folder" disabled showArrow></div>
+
+                        <div is="MenuItem" text="Normal" icon="folder" showArrow arrowIconName='chevron-right'></div>
+                        <div is="MenuItem" text="Hover" icon="folder" hover showArrow arrowIconName='chevron-right'></div>
+                        <div is="MenuItem" text="Focus" icon="folder" focus showArrow arrowIconName='chevron-right'></div>
+                        <div is="MenuItem" text="Active" icon="folder" active showArrow arrowIconName='chevron-right'></div>
+                        <div is="MenuItem" text="Disabled" icon="folder" disabled showArrow arrowIconName='chevron-right'></div>
+                    </div>
+                </div>
+            </div>
+        </span>
+        <span>
+            <div class="k-animation-container k-animation-container-fixed k-animation-container-shown">
+                <div class="k-popup k-menu-popup">
+                    <div is="MenuList" size="large">
+                        <div is="MenuItem" text="Normal"></div>
+                        <div is="MenuItem" text="Hover" hover></div>
+                        <div is="MenuItem" text="Focus" focus></div>
+                        <div is="MenuItem" text="Active" active></div>
+                        <div is="MenuItem" text="Disabled" disabled></div>
+
+                        <div is="MenuItem" text="Normal" icon="folder" showArrow></div>
+                        <div is="MenuItem" text="Hover" icon="folder" hover showArrow></div>
+                        <div is="MenuItem" text="Focus" icon="folder" focus showArrow></div>
+                        <div is="MenuItem" text="Active" icon="folder" active showArrow></div>
+                        <div is="MenuItem" text="Disabled" icon="folder" disabled showArrow></div>
+
+                        <div is="MenuItem" text="Normal" icon="folder" showArrow arrowIconName='chevron-right'></div>
+                        <div is="MenuItem" text="Hover" icon="folder" hover showArrow arrowIconName='chevron-right'></div>
+                        <div is="MenuItem" text="Focus" icon="folder" focus showArrow arrowIconName='chevron-right'></div>
+                        <div is="MenuItem" text="Active" icon="folder" active showArrow arrowIconName='chevron-right'></div>
+                        <div is="MenuItem" text="Disabled" icon="folder" disabled showArrow arrowIconName='chevron-right'></div>
+                    </div>
+                </div>
+            </div>
+        </span>
+    </div>
+
+</body>
+</html>
