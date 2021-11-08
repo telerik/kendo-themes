@@ -73,6 +73,8 @@ const booleanAttr = new Set([
     'virtualization',
     'root',
 
+    'showArrow',
+
     'showAvatar',
 
     'aria'
