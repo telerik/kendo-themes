@@ -17,7 +17,7 @@
             );
 
             &:hover,
-            &.k-state-hover {
+            &.k-hover {
                 @include fill(
                     $menu-item-hover-text,
                     $menu-item-hover-bg,
@@ -26,7 +26,8 @@
                 );
             }
 
-            > .k-state-active {
+            &:active,
+            &.k-active {
                 @include fill(
                     $menu-item-expanded-text,
                     $menu-item-expanded-bg,
@@ -36,7 +37,7 @@
             }
 
             &:focus,
-            &.k-state-focused {
+            &.k-focus {
                 @include box-shadow( $menu-item-focus-shadow );
             }
         }
@@ -51,7 +52,7 @@
             $kendo-menu-popup-gradient
         );
 
-        .k-item {
+        .k-item > .k-link {
             @include fill(
                 $kendo-menu-popup-item-text,
                 $kendo-menu-popup-item-bg,
@@ -60,7 +61,7 @@
             );
 
             &:hover,
-            &.k-state-hover {
+            &.k-hover {
                 @include fill(
                     $kendo-menu-popup-item-hover-text,
                     $kendo-menu-popup-item-hover-bg,
@@ -69,7 +70,9 @@
                 );
             }
 
-            > .k-state-active {
+            &:active,
+            &.k-active,
+            &.k-selected {
                 @include fill(
                     $kendo-menu-popup-item-expanded-text,
                     $kendo-menu-popup-item-expanded-bg,
