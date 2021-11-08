@@ -73,6 +73,7 @@ export * from './switch/index';
 // export * from './action-buttons/index';
 export * from './fab/index';
 // export * from './menu/index';
+export * from './menulist/index';
 // export * from './toolbar/index';
 
 // Popups and modals
