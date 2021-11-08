@@ -37,7 +37,10 @@ const attrMap = {
     onlabel: 'onLabel',
     offlabel: 'offLabel',
     trackrounded: 'trackRounded',
-    thumbrounded: 'thumbRounded'
+    thumbrounded: 'thumbRounded',
+
+    // Menu list
+    contentTemplate: 'contentTemplate'
 };
 
 const booleanAttr = new Set([
