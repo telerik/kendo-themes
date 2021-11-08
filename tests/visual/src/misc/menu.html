@@ -51,30 +51,16 @@
                         Active
                         <i is="Icon" class="k-menu-expand-arrow" name="arrow-s"></i>
                     </span>
-                    <div class="k-animation-container" style="overflow: visible; display: block; position: absolute; z-index: 10002; top: 100%; left: 0px;">
-                        <ul class="k-group k-menu-group k-popup k-reset k-state-border-up" style="display: block; ">
-                            <li class="k-item k-menu-item k-state-disabled k-first">
-                                <span class="k-link k-menu-link">Disabled</span>
-                            </li>
-                            <li class="k-item k-menu-item">
-                                <span class="k-link k-menu-link">Normal</span>
-                            </li>
-                            <li class="k-item k-menu-item k-state-hover">
-                                <span class="k-link k-menu-link">
-                                    Hover
-                                    <i is="Icon" class="k-menu-expand-arrow" name="arrow-60-right"></i>
-                                </span>
-                            </li>
-                            <li class="k-item k-menu-item k-state-border-right" style="z-index: 101;">
-                                <span class="k-link k-menu-link k-state-active k-state-border-right">
-                                    Active
-                                    <i is="Icon" class="k-menu-expand-arrow" name="arrow-60-right"></i>
-                                </span>
-                            </li>
-                            <li class="k-item k-menu-item k-state-focused k-last">
-                                <span class="k-link k-menu-link">Focus</span>
-                            </li>
-                        </ul>
+                    <div class="k-animation-container k-animation-container-fixed k-animation-container-shown">
+                        <div class="k-popup k-menu-popup">
+                            <div is="MenuList">
+                                <div is="MenuItem" text="Disabled" disabled></div>
+                                <div is="MenuItem" text="Normal"></div>
+                                <div is="MenuItem" text="Hover" hover showArrow></div>
+                                <div is="MenuItem" text="Active" active showArrow></div>
+                                <div is="MenuItem" text="Focus" focus></div>
+                            </div>
+                        </div>
                     </div>
                 </li>
                 <li class="k-item k-menu-item k-state-focused">
