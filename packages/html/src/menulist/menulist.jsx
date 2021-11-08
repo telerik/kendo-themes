@@ -1,5 +1,5 @@
 import * as styles from '../../utils/styles';
-import { Component, globalDefaultProps } from '../component';
+import { Component, globalDefaultProps } from '../component/index';
 
 class MenuList extends Component {
     render() {
@@ -37,12 +37,16 @@ function MenuListStatic(props) {
 
     if (legacy) {
         return (
-            <ul className={legacyMenuListClasses} {...ariaAttr} {...htmlAttributes} />
+            <ul className={legacyMenuListClasses} {...ariaAttr} {...htmlAttributes}>
+                {props.children}
+            </ul>
         );
     }
 
     return (
-        <ul className={menuListClasses} {...ariaAttr} {...htmlAttributes} />
+        <ul className={menuListClasses} {...ariaAttr} {...htmlAttributes}>
+            {props.children}
+        </ul>
     );
 }
 
@@ -56,6 +60,8 @@ MenuListStatic.defaultProps = {
 
 MenuListStatic.propTypes = {
     size: typeof [ 'none', 'small', 'medium', 'large' ],
+
+    children: typeof [],
 
     aria: typeof false,
     legacy: typeof false,
