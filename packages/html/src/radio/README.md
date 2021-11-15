@@ -6,15 +6,15 @@
 <input type="radio"
     class="
         k-radio
-        k-radio-${size}
-        k-rounded-${rounded}
+        k-radio-{size}
+        k-rounded-{rounded}
 
-        ${checked && 'k-checked'}
+        {checked && 'k-checked'}
 
-        ${valid && 'k-valid'}
-        ${invalid && 'k-invalid'}
-        ${required && 'k-required'}
-        ${disabled && 'k-disabled'}
+        {valid && 'k-valid'}
+        {invalid && 'k-invalid'}
+        {required && 'k-required'}
+        {disabled && 'k-disabled'}
     "
     disabled={disabled}
 />
