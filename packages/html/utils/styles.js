@@ -64,6 +64,14 @@ function themeColorClass( fill, color, prefix ) {
     return `${prefix}-${fill}-${color}`;
 }
 
+function borderedClass( bordered, prefix ) {
+    if ( !bordered ) {
+        return '';
+    }
+
+    return `${prefix}-bordered`;
+}
+
 function classNames( ...args ) {
 
     /* eslint-disable arrow-body-style, no-nested-ternary */
@@ -122,6 +130,7 @@ export {
     shapeClass,
     fillModeClass,
     themeColorClass,
+    borderedClass,
 
     classNames,
     cssStyle,
