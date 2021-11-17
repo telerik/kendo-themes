@@ -155,6 +155,10 @@
             border-bottom-width: $tabstrip-border-width;
             margin-bottom: -$tabstrip-content-border-width;
 
+            > .k-tabstrip-items {
+                width: 100%;
+            }
+
             .k-item {
                 @include border-top-radius( $tabstrip-item-border-radius );
                 margin-bottom: -$tabstrip-border-width;
@@ -179,6 +183,10 @@
         > .k-tabstrip-items-wrapper {
             border-top-width: $tabstrip-border-width;
             margin-top: -$tabstrip-content-border-width;
+
+            > .k-tabstrip-items {
+                width: 100%;
+            }
 
             .k-item {
                 @include border-bottom-radius( $tabstrip-item-border-radius );
@@ -208,6 +216,7 @@
             margin-right: -$tabstrip-content-border-width;
 
             > .k-tabstrip-items {
+                height: 100%;
                 display: inline-flex;
                 flex-direction: column;
             }
@@ -242,6 +251,7 @@
             margin-left: -$tabstrip-content-border-width;
 
             > .k-tabstrip-items {
+                height: 100%;
                 display: inline-flex;
                 flex-direction: column;
             }
