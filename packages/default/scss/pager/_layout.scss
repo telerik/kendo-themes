@@ -90,7 +90,6 @@
     // Pager items
     .k-pager-nav {
         @extend %base-pager-item;
-        @include border-radius( $pager-item-border-radius );
         padding: $pager-item-padding-y $pager-item-padding-x;
         border-width: $pager-item-border-width;
         border-style: solid;
