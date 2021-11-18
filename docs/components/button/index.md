@@ -105,62 +105,57 @@ Buttons include several predefined theme colors, each serving its own semantic p
 <div class="k-d-flex k-gap-2">
     <button
         type="button"
-        class="k-button k-button-link k-button-md k-button-rectangle k-rounded-md k-button-link-base">
+        class="k-button k-button-solid k-button-md k-button-rectangle k-rounded-md k-button-solid-base">
         <span class="k-button-text">Button</span></button>
     </button>
     <button
         type="button"
-        class="k-button k-button-link k-button-md k-button-rectangle k-rounded-md k-button-link-primary">
+        class="k-button k-button-solid k-button-md k-button-rectangle k-rounded-md k-button-solid-primary">
         <span class="k-button-text">Button</span></button>
     </button>
     <button
         type="button"
-        class="k-button k-button-link k-button-md k-button-rectangle k-rounded-md k-button-link-secondary">
+        class="k-button k-button-solid k-button-md k-button-rectangle k-rounded-md k-button-solid-secondary">
         <span class="k-button-text">Button</span></button>
     </button>
     <button
         type="button"
-        class="k-button k-button-link k-button-md k-button-rectangle k-rounded-md k-button-link-tertiary">
+        class="k-button k-button-solid k-button-md k-button-rectangle k-rounded-md k-button-solid-tertiary">
         <span class="k-button-text">Button</span></button>
     </button>
     <button
         type="button"
-        class="k-button k-button-link k-button-md k-button-rectangle k-rounded-md k-button-link-info">
+        class="k-button k-button-solid k-button-md k-button-rectangle k-rounded-md k-button-solid-info">
         <span class="k-button-text">Button</span></button>
     </button>
     <button
         type="button"
-        class="k-button k-button-link k-button-md k-button-rectangle k-rounded-md k-button-link-success">
+        class="k-button k-button-solid k-button-md k-button-rectangle k-rounded-md k-button-solid-success">
         <span class="k-button-text">Button</span></button>
     </button>
 <button
         type="button"
-        class="k-button k-button-link k-button-md k-button-rectangle k-rounded-md k-button-link-warning">
+        class="k-button k-button-solid k-button-md k-button-rectangle k-rounded-md k-button-solid-warning">
         <span class="k-button-text">Button</span></button>
     </button>
     <button
         type="button"
-        class="k-button k-button-link k-button-md k-button-rectangle k-rounded-md k-button-link-error">
+        class="k-button k-button-solid k-button-md k-button-rectangle k-rounded-md k-button-solid-error">
         <span class="k-button-text">Button</span></button>
     </button>
     <button
         type="button"
-        class="k-button k-button-link k-button-md k-button-rectangle k-rounded-md k-button-link-dark">
-        <span class="k-button-text">Button</span></button>
-    </button>
-<button
-        type="button"
-        class="k-button k-button-link k-button-md k-button-rectangle k-rounded-md k-button-link-base">
+        class="k-button k-button-solid k-button-md k-button-rectangle k-rounded-md k-button-solid-dark">
         <span class="k-button-text">Button</span></button>
     </button>
     <button
         type="button"
-        class="k-button k-button-link k-button-md k-button-rectangle k-rounded-md k-button-link-light">
+        class="k-button k-button-solid k-button-md k-button-rectangle k-rounded-md k-button-solid-light">
         <span class="k-button-text">Button</span></button>
     </button>
     <button
         type="button"
-        class="k-button k-button-link k-button-md k-button-rectangle k-rounded-md k-button-link-inverse">
+        class="k-button k-button-solid k-button-md k-button-rectangle k-rounded-md k-button-solid-inverse">
         <span class="k-button-text">Button</span></button>
     </button>
 </div>
@@ -173,17 +168,17 @@ Buttons can have various sizes. Use the smaller ones to create a compact theme o
 <div class="k-d-flex k-gap-2">
     <button
         type="button"
-        class="k-button k-button-link k-button-sm k-button-rectangle k-rounded-md k-button-link-base">
+        class="k-button k-button-solid k-button-sm k-button-rectangle k-rounded-md k-button-solid-base">
         <span class="k-button-text">Button</span></button>
     </button>
     <button
         type="button"
-        class="k-button k-button-link k-button-md k-button-rectangle k-rounded-md k-button-link-base">
+        class="k-button k-button-solid k-button-md k-button-rectangle k-rounded-md k-button-solid-base">
         <span class="k-button-text">Button</span></button>
     </button>
     <button
         type="button"
-        class="k-button k-button-link k-button-lg k-button-rectangle k-rounded-md k-button-link-base">
+        class="k-button k-button-solid k-button-lg k-button-rectangle k-rounded-md k-button-solid-base">
         <span class="k-button-text">Button</span></button>
     </button>
 </div>
@@ -197,52 +192,52 @@ To create different shapes, button utilizes two classes, one for the base struct
 <div class="k-d-flex k-gap-2">
     <button
         type="button"
-        class="k-button k-button-link k-button-md k-button-rectangle k-button-link-base">
+        class="k-button k-button-solid k-button-md k-button-rectangle k-button-solid-base">
         <span class="k-button-text">Rectangle</span></button>
     </button>
     <button
         type="button"
-        class="k-button k-button-link k-button-md k-button-rectangle k-rounded-sm k-button-link-base">
+        class="k-button k-button-solid k-button-md k-button-rectangle k-rounded-sm k-button-solid-base">
         <span class="k-button-text">Rectangle Rounded Sm</span></button>
     </button>
     <button
         type="button"
-        class="k-button k-button-link k-button-md k-button-rectangle k-rounded-md k-button-link-base">
+        class="k-button k-button-solid k-button-md k-button-rectangle k-rounded-md k-button-solid-base">
         <span class="k-button-text">Rectangle Rounded Md</span></button>
     </button>
     <button
         type="button"
-        class="k-button k-button-link k-button-md k-button-rectangle k-rounded-lg k-button-link-base">
+        class="k-button k-button-solid k-button-md k-button-rectangle k-rounded-lg k-button-solid-base">
         <span class="k-button-text">Rectangle Rounded Lg</span></button>
     </button>
     <button
         type="button"
-        class="k-button k-button-link k-button-md k-button-rectangle k-rounded-pill k-button-link-base">
+        class="k-button k-button-solid k-button-md k-button-rectangle k-rounded-pill k-button-solid-base">
         <span class="k-button-text">Pill</span></button>
     </button>
 <button
         type="button"
-        class="k-button k-button-link k-button-md k-button-square k-button-link-base">
+        class="k-button k-button-solid k-button-md k-button-square k-button-solid-base">
         <span class="k-button-text">Square</span></button>
     </button>
     <button
         type="button"
-        class="k-button k-button-link k-button-md k-button-square k-rounded-sm k-button-link-base">
+        class="k-button k-button-solid k-button-md k-button-square k-rounded-sm k-button-solid-base">
         <span class="k-button-text">Square Rounded Sm</span></button>
     </button>
     <button
         type="button"
-        class="k-button k-button-link k-button-md k-button-square k-rounded-md k-button-link-base">
+        class="k-button k-button-solid k-button-md k-button-square k-rounded-md k-button-solid-base">
         <span class="k-button-text">Square Rounded Md</span></button>
     </button>
     <button
         type="button"
-        class="k-button k-button-link k-button-md k-button-square k-rounded-lg k-button-link-base">
+        class="k-button k-button-solid k-button-md k-button-square k-rounded-lg k-button-solid-base">
         <span class="k-button-text">Square Rounded Lg</span></button>
     </button>
     <button
         type="button"
-        class="k-button k-button-link k-button-md k-button-square k-rounded-circle k-button-link-base">
+        class="k-button k-button-solid k-button-md k-button-square k-rounded-circle k-button-solid-base">
         <span class="k-button-text">Circle</span></button>
     </button>
 </div>
@@ -257,32 +252,32 @@ Buttons have several states by default and one special selected state if the but
 <div class="k-d-flex k-gap-2">
     <button
         type="button"
-        class="k-button k-button-link k-button-md k-button-rectangle k-rounded-md k-button-link-base">
+        class="k-button k-button-solid k-button-md k-button-rectangle k-rounded-md k-button-solid-base">
         <span class="k-button-text">Normal</span></button>
     </button>
     <button
         type="button"
-        class="k-button k-button-link k-button-md k-button-rectangle k-rounded-md k-button-link-base k-hover">
+        class="k-button k-button-solid k-button-md k-button-rectangle k-rounded-md k-button-solid-base k-hover">
         <span class="k-button-text">Hover</span></button>
     </button>
     <button
         type="button"
-        class="k-button k-button-link k-button-md k-button-rectangle k-rounded-md k-button-link-base k-focus">
+        class="k-button k-button-solid k-button-md k-button-rectangle k-rounded-md k-button-solid-base k-focus">
         <span class="k-button-text">Focus</span></button>
     </button>
     <button
         type="button"
-        class="k-button k-button-link k-button-md k-button-rectangle k-rounded-md k-button-link-base k-active">
+        class="k-button k-button-solid k-button-md k-button-rectangle k-rounded-md k-button-solid-base k-active">
         <span class="k-button-text">Active</span></button>
     </button>
     <button
         type="button"
-        class="k-button k-button-link k-button-md k-button-rectangle k-rounded-md k-button-link-base k-selected">
+        class="k-button k-button-solid k-button-md k-button-rectangle k-rounded-md k-button-solid-base k-selected">
         <span class="k-button-text">Selected</span></button>
     </button>
     <button
         type="button"
-        class="k-button k-button-link k-button-md k-button-rectangle k-rounded-md k-button-link-base k-disabled">
+        class="k-button k-button-solid k-button-md k-button-rectangle k-rounded-md k-button-solid-base k-disabled">
         <span class="k-button-text">Disabled</span></button>
     </button>
 </div>
