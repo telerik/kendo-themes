@@ -2,22 +2,21 @@
 
 /// Border width of the avatar.
 /// @group avatar
-$avatar-border-width: 1px !default;
-$avatar-border-radius: map-get( $spacing, 1 ) !default;
+$kendo-avatar-border-width: 1px !default;
 
 /// Font family of the avatar.
 /// @group avatar
-$avatar-font-family: $font-family !default;
+$kendo-avatar-font-family: $font-family !default;
 /// Font size of the avatar.
 /// @group avatar
-$avatar-font-size: $font-size !default;
+$kendo-avatar-font-size: $font-size !default;
 /// Line height of the avatar.
 /// @group avatar
-$avatar-line-height: $line-height !default;
+$kendo-avatar-line-height: $line-height !default;
 
 /// The sizes of the avatar.
 /// @group avatar
-$avatar-sizes: (
+$kendo-avatar-sizes: (
     sm: map-get( $spacing, 4 ),
     md: map-get( $spacing, 8 ),
     lg: map-get( $spacing, 16 )
@@ -25,4 +24,4 @@ $avatar-sizes: (
 
 /// Theme colors map of the avatar.
 /// @group avatar
-$avatar-theme-colors: $theme-colors !default;
+$kendo-avatar-theme-colors: $theme-colors !default;
