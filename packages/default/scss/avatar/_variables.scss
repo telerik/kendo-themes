@@ -1,17 +1,27 @@
 // Avatar
-$avatar-border-width: 1px !default;
-$avatar-border-radius: 2px !default;
 
-$avatar-font-family: $font-family !default;
-$avatar-font-size: $font-size !default;
-$avatar-line-height: $line-height !default;
+/// Border width of the avatar.
+/// @group avatar
+$kendo-avatar-border-width: 1px !default;
 
+/// Font family of the avatar.
+/// @group avatar
+$kendo-avatar-font-family: $font-family !default;
+/// Font size of the avatar.
+/// @group avatar
+$kendo-avatar-font-size: $font-size !default;
+/// Line height of the avatar.
+/// @group avatar
+$kendo-avatar-line-height: $line-height !default;
 
-$avatar-sizes: (
+/// The sizes of the avatar.
+/// @group avatar
+$kendo-avatar-sizes: (
     sm: map-get( $spacing, 4 ),
     md: map-get( $spacing, 8 ),
     lg: map-get( $spacing, 16 )
 ) !default;
 
-
-$avatar-theme-colors: $theme-colors !default;
+/// Theme colors map of the avatar.
+/// @group avatar
+$kendo-avatar-theme-colors: $theme-colors !default;
