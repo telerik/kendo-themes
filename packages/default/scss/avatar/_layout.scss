@@ -5,12 +5,12 @@
         border-width: 0;
         border-style: solid;
         box-sizing: border-box;
-        flex-shrink: 0;
+        vertical-align: middle;
         display: inline-flex;
         flex-flow: row nowrap;
-        align-items: center;
         justify-content: center;
-        vertical-align: middle;
+        align-items: center;
+        flex-shrink: 0;
         overflow: hidden;
     }
 
@@ -18,15 +18,16 @@
     // Avatar text
     .k-avatar-text,
     .k-avatar-initials {
-        font-family: $avatar-font-family;
-        font-size: $avatar-font-size;
-        line-height: $avatar-line-height;
+        font-size: $kendo-avatar-font-size;
+        font-family: $kendo-avatar-font-family;
+        line-height: $kendo-avatar-line-height;
     }
 
 
     // Avatar icon
     .k-avatar-icon {
         display: flex;
+        flex-flow: row nowrap;
         align-items: center;
     }
 
@@ -48,7 +49,7 @@
 
 
     // Sizes
-    @each $name, $size in $avatar-sizes {
+    @each $name, $size in $kendo-avatar-sizes {
         .k-avatar-#{$name} {
             width: $size;
             height: $size;
@@ -56,20 +57,12 @@
         }
     }
 
-
     // Shapes
     .k-avatar-square {}
-    .k-avatar-rounded {
-        @include border-radius( $avatar-border-radius );
-    }
-    .k-avatar-circle {
-        border-radius: 50%;
-    }
-
 
     // Bordered
     .k-avatar-bordered {
-        border-width: $avatar-border-width;
+        border-width: $kendo-avatar-border-width;
     }
 
 
