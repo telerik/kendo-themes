@@ -7,16 +7,16 @@
 <!-- canonical rendering -->
 <button class="
     k-button
-    ${text === '' && icon !== '' && 'k-icon-button'}
-    k-button-${size}
-    k-button-${shape}
-    k-rounded-${rounded}
-    k-button-${fillMode}
-    k-button-${fillMode}-${themeColor}
+    {text === '' && iconName !== '' && 'k-icon-button'}
+    k-button-{size}
+    k-button-{shape}
+    k-rounded-{rounded}
+    k-button-{fillMode}
+    k-button-{fillMode}-{themeColor}
 
-    ${disabled && 'k-disabled'}
+    {disabled && 'k-disabled'}
 " type={type} disabled={disabled}>
-    {icon !== '' && <span class="k-button-icon k-icon k-i-${icon}"></span>}
+    {iconName !== '' && <span class="k-button-icon k-icon k-i-{iconName}"></span>}
     {text !== '' && <span class="k-button-text">Button</span>}
 </button>
 ```
