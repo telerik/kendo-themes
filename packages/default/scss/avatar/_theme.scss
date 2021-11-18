@@ -1,8 +1,8 @@
 @include exports( "avatar/theme" ) {
 
     // Solid Avatars
-    @each $name, $color in $avatar-theme-colors {
-        .k-avatar-solid.k-avatar-#{$name} {
+    @each $name, $color in $kendo-avatar-theme-colors {
+        .k-avatar-solid-#{$name} {
             border-color: $color;
             color: contrast-wcag( $color );
             background-color: $color;
@@ -14,8 +14,8 @@
         border-color: currentColor;
     }
 
-    @each $name, $color in $avatar-theme-colors {
-        .k-avatar-outline.k-avatar-#{$name} {
+    @each $name, $color in $kendo-avatar-theme-colors {
+        .k-avatar-outline-#{$name} {
             color: $color;
         }
     }
