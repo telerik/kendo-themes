@@ -12,7 +12,7 @@
         #test-area {
             grid-template-columns: 200px repeat(8, 1fr);
         }
-        .bg-img {
+        .avatar-bg-image > .k-avatar-image {
             background-image: url("../../assets/avatar.jpg");
         }
     </style>
@@ -29,273 +29,222 @@
 
 
         <span>primary</span>
-        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-primary k-avatar-solid">
-            <div class="k-avatar-image"><img src="../../assets/avatar.jpg" /></div>
-        </kendo-avatar>
-        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-primary k-avatar-outline">
-            <div class="k-avatar-image"><img src="../../assets/avatar.jpg" /></div>
-        </kendo-avatar>
-        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-primary k-avatar-solid">
-            <div class="k-avatar-image bg-img"></div>
-        </kendo-avatar>
-        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-primary k-avatar-outline">
-            <div class="k-avatar-image bg-img"></div>
-        </kendo-avatar>
-        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-primary k-avatar-solid">
-            <i is="Icon" class="k-avatar-icon" name="x"></i>
-        </kendo-avatar>
-        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-primary k-avatar-outline k-avatar-bordered">
-            <i is="Icon" class="k-avatar-icon" name="x"></i>
-        </kendo-avatar>
-        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-primary k-avatar-solid">
-            <span class="k-avatar-initials">JO</span>
-        </kendo-avatar>
-        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-primary k-avatar-outline k-avatar-bordered">
-            <span class="k-avatar-initials">JO</span>
-        </kendo-avatar>
+        <div is="Avatar" type="image" themeColor="primary">
+            <img src="../../assets/avatar.jpg" />
+        </div>
+        <div is="Avatar" type="image" fillMode="outline" themeColor="primary">
+            <img src="../../assets/avatar.jpg" />
+        </div>
 
+        <div is="Avatar" type="image" themeColor="primary" class="avatar-bg-image"></div>
+        <div is="Avatar" type="image" fillMode="outline" themeColor="primary" class="avatar-bg-image"></div>
+
+        <div is="Avatar" type="icon" themeColor="primary">
+            <i is="Icon" name="x"></i>
+        </div>
+        <div is="Avatar" type="icon" fillMode="outline" themeColor="primary" bordered="true">
+            <i is="Icon" name="x"></i>
+        </div>
+
+        <div is="Avatar" type="text" themeColor="primary">JO</div>
+        <div is="Avatar" type="text" fillMode="outline" themeColor="primary" bordered="true">JO</div>
 
         <span>secondary</span>
-        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-secondary k-avatar-solid">
-            <div class="k-avatar-image"><img src="../../assets/avatar.jpg" /></div>
-        </kendo-avatar>
-        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-secondary k-avatar-outline">
-            <div class="k-avatar-image"><img src="../../assets/avatar.jpg" /></div>
-        </kendo-avatar>
-        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-secondary k-avatar-solid">
-            <div class="k-avatar-image bg-img"></div>
-        </kendo-avatar>
-        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-secondary k-avatar-outline">
-            <div class="k-avatar-image bg-img"></div>
-        </kendo-avatar>
-        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-secondary k-avatar-solid">
-            <i is="Icon" class="k-avatar-icon" name="x"></i>
-        </kendo-avatar>
-        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-secondary k-avatar-outline k-avatar-bordered">
-            <i is="Icon" class="k-avatar-icon" name="x"></i>
-        </kendo-avatar>
-        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-secondary k-avatar-solid">
-            <span class="k-avatar-initials">JO</span>
-        </kendo-avatar>
-        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-secondary k-avatar-outline k-avatar-bordered">
-            <span class="k-avatar-initials">JO</span>
-        </kendo-avatar>
+        <div is="Avatar" type="image" themeColor="secondary">
+            <img src="../../assets/avatar.jpg" />
+        </div>
+        <div is="Avatar" type="image" fillMode="outline" themeColor="secondary">
+            <img src="../../assets/avatar.jpg" />
+        </div>
+
+        <div is="Avatar" type="image" themeColor="secondary" class="avatar-bg-image"></div>
+        <div is="Avatar" type="image" fillMode="outline" themeColor="secondary" class="avatar-bg-image"></div>
+
+        <div is="Avatar" type="icon" themeColor="secondary">
+            <i is="Icon" name="x"></i>
+        </div>
+        <div is="Avatar" type="icon" fillMode="outline" themeColor="secondary" bordered="true">
+            <i is="Icon" name="x"></i>
+        </div>
+
+        <div is="Avatar" type="text" themeColor="secondary">JO</div>
+        <div is="Avatar" type="text" fillMode="outline" themeColor="secondary" bordered="true">JO</div>
 
 
         <span>tertiary</span>
-        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-tertiary k-avatar-solid">
-            <div class="k-avatar-image"><img src="../../assets/avatar.jpg" /></div>
-        </kendo-avatar>
-        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-tertiary k-avatar-outline">
-            <div class="k-avatar-image"><img src="../../assets/avatar.jpg" /></div>
-        </kendo-avatar>
-        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-tertiary k-avatar-solid">
-            <div class="k-avatar-image bg-img"></div>
-        </kendo-avatar>
-        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-tertiary k-avatar-outline">
-            <div class="k-avatar-image bg-img"></div>
-        </kendo-avatar>
-        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-tertiary k-avatar-solid">
-            <i is="Icon" class="k-avatar-icon" name="x"></i>
-        </kendo-avatar>
-        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-tertiary k-avatar-outline k-avatar-bordered">
-            <i is="Icon" class="k-avatar-icon" name="x"></i>
-        </kendo-avatar>
-        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-tertiary k-avatar-solid">
-            <span class="k-avatar-initials">JO</span>
-        </kendo-avatar>
-        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-tertiary k-avatar-outline k-avatar-bordered">
-            <span class="k-avatar-initials">JO</span>
-        </kendo-avatar>
+        <div is="Avatar" type="image" themeColor="tertiary">
+            <img src="../../assets/avatar.jpg" />
+        </div>
+        <div is="Avatar" type="image" fillMode="outline" themeColor="tertiary">
+            <img src="../../assets/avatar.jpg" />
+        </div>
+
+        <div is="Avatar" type="image" themeColor="tertiary" class="avatar-bg-image"></div>
+        <div is="Avatar" type="image" fillMode="outline" themeColor="tertiary" class="avatar-bg-image"></div>
+
+        <div is="Avatar" type="icon" themeColor="tertiary">
+            <i is="Icon" name="x"></i>
+        </div>
+        <div is="Avatar" type="icon" fillMode="outline" themeColor="tertiary" bordered="true">
+            <i is="Icon" name="x"></i>
+        </div>
+
+        <div is="Avatar" type="text" themeColor="tertiary">JO</div>
+        <div is="Avatar" type="text" fillMode="outline" themeColor="tertiary" bordered="true">JO</div>
 
 
         <span>info</span>
-        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-info k-avatar-solid">
-            <div class="k-avatar-image"><img src="../../assets/avatar.jpg" /></div>
-        </kendo-avatar>
-        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-info k-avatar-outline">
-            <div class="k-avatar-image"><img src="../../assets/avatar.jpg" /></div>
-        </kendo-avatar>
-        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-info k-avatar-solid">
-            <div class="k-avatar-image bg-img"></div>
-        </kendo-avatar>
-        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-info k-avatar-outline">
-            <div class="k-avatar-image bg-img"></div>
-        </kendo-avatar>
-        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-info k-avatar-solid">
-            <i is="Icon" class="k-avatar-icon" name="x"></i>
-        </kendo-avatar>
-        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-info k-avatar-outline k-avatar-bordered">
-            <i is="Icon" class="k-avatar-icon" name="x"></i>
-        </kendo-avatar>
-        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-info k-avatar-solid">
-            <span class="k-avatar-initials">JO</span>
-        </kendo-avatar>
-        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-info k-avatar-outline k-avatar-bordered">
-            <span class="k-avatar-initials">JO</span>
-        </kendo-avatar>
+        <div is="Avatar" type="image" themeColor="info">
+            <img src="../../assets/avatar.jpg" />
+        </div>
+        <div is="Avatar" type="image" fillMode="outline" themeColor="info">
+            <img src="../../assets/avatar.jpg" />
+        </div>
+
+        <div is="Avatar" type="image" themeColor="info" class="avatar-bg-image"></div>
+        <div is="Avatar" type="image" fillMode="outline" themeColor="info" class="avatar-bg-image"></div>
+
+        <div is="Avatar" type="icon" themeColor="info">
+            <i is="Icon" name="x"></i>
+        </div>
+        <div is="Avatar" type="icon" fillMode="outline" themeColor="info" bordered="true">
+            <i is="Icon" name="x"></i>
+        </div>
+
+        <div is="Avatar" type="text" themeColor="info">JO</div>
+        <div is="Avatar" type="text" fillMode="outline" themeColor="info" bordered="true">JO</div>
 
 
         <span>success</span>
-        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-success k-avatar-solid">
-            <div class="k-avatar-image"><img src="../../assets/avatar.jpg" /></div>
-        </kendo-avatar>
-        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-success k-avatar-outline">
-            <div class="k-avatar-image"><img src="../../assets/avatar.jpg" /></div>
-        </kendo-avatar>
-        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-success k-avatar-solid">
-            <div class="k-avatar-image bg-img"></div>
-        </kendo-avatar>
-        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-success k-avatar-outline">
-            <div class="k-avatar-image bg-img"></div>
-        </kendo-avatar>
-        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-success k-avatar-solid">
-            <i is="Icon" class="k-avatar-icon" name="x"></i>
-        </kendo-avatar>
-        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-success k-avatar-outline k-avatar-bordered">
-            <i is="Icon" class="k-avatar-icon" name="x"></i>
-        </kendo-avatar>
-        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-success k-avatar-solid">
-            <span class="k-avatar-initials">JO</span>
-        </kendo-avatar>
-        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-success k-avatar-outline k-avatar-bordered">
-            <span class="k-avatar-initials">JO</span>
-        </kendo-avatar>
+        <div is="Avatar" type="image" themeColor="success">
+            <img src="../../assets/avatar.jpg" />
+        </div>
+        <div is="Avatar" type="image" fillMode="outline" themeColor="success">
+            <img src="../../assets/avatar.jpg" />
+        </div>
+
+        <div is="Avatar" type="image" themeColor="success" class="avatar-bg-image"></div>
+        <div is="Avatar" type="image" fillMode="outline" themeColor="success" class="avatar-bg-image"></div>
+
+        <div is="Avatar" type="icon" themeColor="success">
+            <i is="Icon" name="x"></i>
+        </div>
+        <div is="Avatar" type="icon" fillMode="outline" themeColor="success" bordered="true">
+            <i is="Icon" name="x"></i>
+        </div>
+
+        <div is="Avatar" type="text" themeColor="success">JO</div>
+        <div is="Avatar" type="text" fillMode="outline" themeColor="success" bordered="true">JO</div>
 
 
         <span>warning</span>
-        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-warning k-avatar-solid">
-            <div class="k-avatar-image"><img src="../../assets/avatar.jpg" /></div>
-        </kendo-avatar>
-        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-warning k-avatar-outline">
-            <div class="k-avatar-image"><img src="../../assets/avatar.jpg" /></div>
-        </kendo-avatar>
-        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-warning k-avatar-solid">
-            <div class="k-avatar-image bg-img"></div>
-        </kendo-avatar>
-        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-warning k-avatar-outline">
-            <div class="k-avatar-image bg-img"></div>
-        </kendo-avatar>
-        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-warning k-avatar-solid">
-            <i is="Icon" class="k-avatar-icon" name="x"></i>
-        </kendo-avatar>
-        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-warning k-avatar-outline k-avatar-bordered">
-            <i is="Icon" class="k-avatar-icon" name="x"></i>
-        </kendo-avatar>
-        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-warning k-avatar-solid">
-            <span class="k-avatar-initials">JO</span>
-        </kendo-avatar>
-        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-warning k-avatar-outline k-avatar-bordered">
-            <span class="k-avatar-initials">JO</span>
-        </kendo-avatar>
+        <div is="Avatar" type="image" themeColor="warning">
+            <img src="../../assets/avatar.jpg" />
+        </div>
+        <div is="Avatar" type="image" fillMode="outline" themeColor="warning">
+            <img src="../../assets/avatar.jpg" />
+        </div>
+
+        <div is="Avatar" type="image" themeColor="warning" class="avatar-bg-image"></div>
+        <div is="Avatar" type="image" fillMode="outline" themeColor="warning" class="avatar-bg-image"></div>
+
+        <div is="Avatar" type="icon" themeColor="warning">
+            <i is="Icon" name="x"></i>
+        </div>
+        <div is="Avatar" type="icon" fillMode="outline" themeColor="warning" bordered="true">
+            <i is="Icon" name="x"></i>
+        </div>
+
+        <div is="Avatar" type="text" themeColor="warning">JO</div>
+        <div is="Avatar" type="text" fillMode="outline" themeColor="warning" bordered="true">JO</div>
 
 
         <span>error</span>
-        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-error k-avatar-solid">
-            <div class="k-avatar-image"><img src="../../assets/avatar.jpg" /></div>
-        </kendo-avatar>
-        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-error k-avatar-outline">
-            <div class="k-avatar-image"><img src="../../assets/avatar.jpg" /></div>
-        </kendo-avatar>
-        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-error k-avatar-solid">
-            <div class="k-avatar-image bg-img"></div>
-        </kendo-avatar>
-        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-error k-avatar-outline">
-            <div class="k-avatar-image bg-img"></div>
-        </kendo-avatar>
-        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-error k-avatar-solid">
-            <i is="Icon" class="k-avatar-icon" name="x"></i>
-        </kendo-avatar>
-        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-error k-avatar-outline k-avatar-bordered">
-            <i is="Icon" class="k-avatar-icon" name="x"></i>
-        </kendo-avatar>
-        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-error k-avatar-solid">
-            <span class="k-avatar-initials">JO</span>
-        </kendo-avatar>
-        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-error k-avatar-outline k-avatar-bordered">
-            <span class="k-avatar-initials">JO</span>
-        </kendo-avatar>
+        <div is="Avatar" type="image" themeColor="error">
+            <img src="../../assets/avatar.jpg" />
+        </div>
+        <div is="Avatar" type="image" fillMode="outline" themeColor="error">
+            <img src="../../assets/avatar.jpg" />
+        </div>
+
+        <div is="Avatar" type="image" themeColor="error" class="avatar-bg-image"></div>
+        <div is="Avatar" type="image" fillMode="outline" themeColor="error" class="avatar-bg-image"></div>
+
+        <div is="Avatar" type="icon" themeColor="error">
+            <i is="Icon" name="x"></i>
+        </div>
+        <div is="Avatar" type="icon" fillMode="outline" themeColor="error" bordered="true">
+            <i is="Icon" name="x"></i>
+        </div>
+
+        <div is="Avatar" type="text" themeColor="error">JO</div>
+        <div is="Avatar" type="text" fillMode="outline" themeColor="error" bordered="true">JO</div>
 
 
         <span>dark</span>
-        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-dark k-avatar-solid">
-            <div class="k-avatar-image"><img src="../../assets/avatar.jpg" /></div>
-        </kendo-avatar>
-        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-dark k-avatar-outline">
-            <div class="k-avatar-image"><img src="../../assets/avatar.jpg" /></div>
-        </kendo-avatar>
-        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-dark k-avatar-solid">
-            <div class="k-avatar-image bg-img"></div>
-        </kendo-avatar>
-        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-dark k-avatar-outline">
-            <div class="k-avatar-image bg-img"></div>
-        </kendo-avatar>
-        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-dark k-avatar-solid">
-            <i is="Icon" class="k-avatar-icon" name="x"></i>
-        </kendo-avatar>
-        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-dark k-avatar-outline k-avatar-bordered">
-            <i is="Icon" class="k-avatar-icon" name="x"></i>
-        </kendo-avatar>
-        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-dark k-avatar-solid">
-            <span class="k-avatar-initials">JO</span>
-        </kendo-avatar>
-        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-dark k-avatar-outline k-avatar-bordered">
-            <span class="k-avatar-initials">JO</span>
-        </kendo-avatar>
+        <div is="Avatar" type="image" themeColor="dark">
+            <img src="../../assets/avatar.jpg" />
+        </div>
+        <div is="Avatar" type="image" fillMode="outline" themeColor="dark">
+            <img src="../../assets/avatar.jpg" />
+        </div>
+
+        <div is="Avatar" type="image" themeColor="dark" class="avatar-bg-image"></div>
+        <div is="Avatar" type="image" fillMode="outline" themeColor="dark" class="avatar-bg-image"></div>
+
+        <div is="Avatar" type="icon" themeColor="dark">
+            <i is="Icon" name="x"></i>
+        </div>
+        <div is="Avatar" type="icon" fillMode="outline" themeColor="dark" bordered="true">
+            <i is="Icon" name="x"></i>
+        </div>
+
+        <div is="Avatar" type="text" themeColor="dark">JO</div>
+        <div is="Avatar" type="text" fillMode="outline" themeColor="dark" bordered="true">JO</div>
 
 
         <span>light</span>
-        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-light k-avatar-solid">
-            <div class="k-avatar-image"><img src="../../assets/avatar.jpg" /></div>
-        </kendo-avatar>
-        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-light k-avatar-outline">
-            <div class="k-avatar-image"><img src="../../assets/avatar.jpg" /></div>
-        </kendo-avatar>
-        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-light k-avatar-solid">
-            <div class="k-avatar-image bg-img"></div>
-        </kendo-avatar>
-        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-light k-avatar-outline">
-            <div class="k-avatar-image bg-img"></div>
-        </kendo-avatar>
-        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-light k-avatar-solid">
-            <i is="Icon" class="k-avatar-icon" name="x"></i>
-        </kendo-avatar>
-        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-light k-avatar-outline k-avatar-bordered">
-            <i is="Icon" class="k-avatar-icon" name="x"></i>
-        </kendo-avatar>
-        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-light k-avatar-solid">
-            <span class="k-avatar-initials">JO</span>
-        </kendo-avatar>
-        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-light k-avatar-outline k-avatar-bordered">
-            <span class="k-avatar-initials">JO</span>
-        </kendo-avatar>
+        <div is="Avatar" type="image" themeColor="light">
+            <img src="../../assets/avatar.jpg" />
+        </div>
+        <div is="Avatar" type="image" fillMode="outline" themeColor="light">
+            <img src="../../assets/avatar.jpg" />
+        </div>
+
+        <div is="Avatar" type="image" themeColor="light" class="avatar-bg-image"></div>
+        <div is="Avatar" type="image" fillMode="outline" themeColor="light" class="avatar-bg-image"></div>
+
+        <div is="Avatar" type="icon" themeColor="light">
+            <i is="Icon" name="x"></i>
+        </div>
+        <div is="Avatar" type="icon" fillMode="outline" themeColor="light" bordered="true">
+            <i is="Icon" name="x"></i>
+        </div>
+
+        <div is="Avatar" type="text" themeColor="light">JO</div>
+        <div is="Avatar" type="text" fillMode="outline" themeColor="light" bordered="true">JO</div>
 
 
         <span>inverse</span>
-        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-inverse k-avatar-solid">
-            <div class="k-avatar-image"><img src="../../assets/avatar.jpg" /></div>
-        </kendo-avatar>
-        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-inverse k-avatar-outline">
-            <div class="k-avatar-image"><img src="../../assets/avatar.jpg" /></div>
-        </kendo-avatar>
-        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-inverse k-avatar-solid">
-            <div class="k-avatar-image bg-img"></div>
-        </kendo-avatar>
-        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-inverse k-avatar-outline">
-            <div class="k-avatar-image bg-img"></div>
-        </kendo-avatar>
-        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-inverse k-avatar-solid">
-            <i is="Icon" class="k-avatar-icon" name="x"></i>
-        </kendo-avatar>
-        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-inverse k-avatar-outline k-avatar-bordered">
-            <i is="Icon" class="k-avatar-icon" name="x"></i>
-        </kendo-avatar>
-        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-inverse k-avatar-solid">
-            <span class="k-avatar-initials">JO</span>
-        </kendo-avatar>
-        <kendo-avatar class="k-avatar k-avatar-md k-avatar-circle k-avatar-inverse k-avatar-outline k-avatar-bordered">
-            <span class="k-avatar-initials">JO</span>
-        </kendo-avatar>
+        <div is="Avatar" type="image" themeColor="inverse">
+            <img src="../../assets/avatar.jpg" />
+        </div>
+        <div is="Avatar" type="image" fillMode="outline" themeColor="inverse">
+            <img src="../../assets/avatar.jpg" />
+        </div>
+
+        <div is="Avatar" type="image" themeColor="inverse" class="avatar-bg-image"></div>
+        <div is="Avatar" type="image" fillMode="outline" themeColor="inverse" class="avatar-bg-image"></div>
+
+        <div is="Avatar" type="icon" themeColor="inverse">
+            <i is="Icon" name="x"></i>
+        </div>
+        <div is="Avatar" type="icon" fillMode="outline" themeColor="inverse" bordered="true">
+            <i is="Icon" name="x"></i>
+        </div>
+
+        <div is="Avatar" type="text" themeColor="inverse">JO</div>
+        <div is="Avatar" type="text" fillMode="outline" themeColor="inverse" bordered="true">JO</div>
     </div>
 
 </body>

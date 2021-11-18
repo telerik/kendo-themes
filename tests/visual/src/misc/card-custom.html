@@ -12,7 +12,7 @@
         #test-area {
             grid-template-columns: repeat(3, 1fr);
         }
-        .k-avatar-image {
+        .bg-img > .k-avatar-image {
             background-image: url("../../assets/avatar.jpg");
         }
     </style>
@@ -144,9 +144,7 @@
 
         <div class="k-card k-card-vertical">
             <div class="k-card-header k-display-flex">
-                <div class="k-avatar k-avatar-md k-avatar-rounded k-avatar-primary k-avatar-solid">
-                    <div class="k-avatar-image"></div>
-                </div>
+                <div is="Avatar" type="image" themeColor="primary" class="bg-img"></div>
                 <div>
                     <h5 class="k-card-title">Thumbnail and Footer</h5>
                     <h6 class="k-card-subtitle">Capital of Italy</h6>
