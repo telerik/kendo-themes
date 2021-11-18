@@ -171,4 +171,6 @@ $kendo-flat-button-selected-opacity: .22 !default;
 /// @group button
 $kendo-button-color-transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1) !default;
 
+/// The base shadow of focused button group.
+/// @group button
 $kendo-button-group-focus-shadow: null !default;
