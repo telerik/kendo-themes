@@ -9,31 +9,37 @@
 
 // Generic content
 // @import "styling/index.scss";
-// @import "table/index.scss";
 // @import "icon/index.scss";
-@import "chip/index.scss";
 @import "messagebox/index.scss";
 
 
 // Primitive components
-@import "input/index.scss";
 @import "list/index.scss";
 @import "listgroup/index.scss";
 @import "overlay/index.scss";
 @import "popup/index.scss";
 @import "ripple/index.scss";
+// @import "table/index.scss";
 
 
 // Indicators
 @import "avatar/index.scss";
 @import "badge/index.scss";
+@import "chip/index.scss";
 @import "loader/index.scss";
 // @import "loading/index.scss";
 @import "skeleton/index.scss";
 
 
+// Form helpers
+@import "form/index.scss";
+@import "validator/index.scss";
+@import "floating-label/index.scss";
+
+
 // Native forms
 @import "button/index.scss";
+@import "input/index.scss";
 @import "textbox/index.scss";
 @import "textarea/index.scss";
 @import "checkbox/index.scss";
@@ -41,12 +47,6 @@
 @import "progressbar/index.scss";
 @import "radio/index.scss";
 @import "slider/index.scss";
-
-
-// Form helpers
-@import "form/index.scss";
-@import "validator/index.scss";
-@import "floating-label/index.scss";
 
 
 // Form requirements

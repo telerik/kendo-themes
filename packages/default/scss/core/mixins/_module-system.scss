@@ -1,0 +1,149 @@
+// Load all modules by default
+$kendo-components: (
+    // Typography and utils
+    "typography",
+    "utils",
+    "cursor",
+
+    // Generic content
+    "styling",
+    "icon",
+    "messagebox",
+
+    // Primitive components
+    "list",
+    "listgroup",
+    "overlay",
+    "popup",
+    "ripple",
+    "table",
+
+    // Indicators
+    "avatar",
+    "badge",
+    "chip",
+    "color-preview",
+    "loader",
+    "loading",
+    "skeleton",
+
+    // Form helpers
+    "form",
+    "validator",
+    "floating-label",
+
+    // Native forms
+    "button",
+    "input",
+    "textbox",
+    "textarea",
+    "checkbox",
+    "listbox",
+    "progressbar",
+    "radio",
+    "slider",
+
+    // Form requirements
+    "calendar",
+
+    // Augmented inputs
+    "autocomplete",
+    "captcha",
+    "color-palette",
+    "color-gradient",
+    "color-editor",
+    "color-picker",
+    "combobox",
+    "datetime",
+    "dropdowngrid",
+    "dropdownlist",
+    "dropdowntree",
+    "maskedtextbox",
+    "multiselect",
+    "numerictextbox",
+    "rating",
+    "searchbox",
+    "switch",
+    "upload",
+    "dropzone",
+
+    // Command interfaces
+    "actions",
+    "appbar",
+    "fab",
+    "menu",
+    "toolbar",
+
+    // Popups and modals
+    "action-sheet",
+    "dialog",
+    "drawer",
+    "notification",
+    "popover",
+    "responsivepanel",
+    "tooltip",
+    "window",
+
+    // Navigation
+    "bottom-nav",
+    "breadcrumb",
+    "pager",
+    "stepper",
+    "tabstrip",
+    "treeview",
+    "wizard",
+
+    // Layout & containers
+    "card",
+    "expander",
+    "panelbar",
+    "splitter",
+    "tilelayout",
+
+    // Data management
+    "grid",
+    "listview",
+    "spreadsheet",
+    "pivotgrid",
+    "treelist",
+    "filter",
+    "filemanager",
+    "taskboard",
+
+    // Editors
+    "editor",
+    "imageeditor",
+
+    // Scheduling
+    "gantt",
+    "scheduler",
+
+    // Misc
+    "adaptive",
+    "chat",
+    "mediaplayer",
+    "timeline",
+    "pdf-viewer",
+    "scroller",
+    "scrollview",
+
+    // Dataviz
+    "dataviz",
+    "map",
+    "orgchart"
+
+) !default;
+
+$_kendo-imported-modules: ();
+
+@mixin register-module( $name: null, $dependencies: null ) {
+    @if ( index( $kendo-components, $name ) != null ) and ( index( $_kendo-imported-modules, $name ) == null)  {
+        $_kendo-imported-modules: append( $_kendo-imported-modules, $name ) !global;
+        @content;
+    }
+}
+@mixin load-modules( $names... ) {
+    @each $name in $names {
+        $kendo-components: append( $kendo-components, $name ) !global;
+    }
+}
