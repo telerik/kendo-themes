@@ -195,8 +195,7 @@
                     transparent calc(100% - #{$calendar-range-gap})
                 );
 
-            .k-ie &,
-            .k-edge & {
+            .k-ie & {
                 background-image: none;
                 background-color: $calendar-range-bg;
             }

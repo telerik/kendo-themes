@@ -112,19 +112,6 @@
         }
     }
 
-
-    // Legacy
-    .k-ie9 {
-        .k-breadcrumb,
-        .k-breadcrumb-container {
-            display: block;
-        }
-
-        .k-breadcrumb-item {
-            display: inline-block;
-        }
-    }
-
     @include exports("breadcrumb/layout/rtl") {
 
         .k-breadcrumb {

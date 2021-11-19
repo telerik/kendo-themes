@@ -506,21 +506,3 @@
         }
     }
 }
-
-
-
-
-@include exports( "slider/layout/legacy" ) {
-
-    .k-no-flexbox .k-slider {
-
-        &-horizontal {
-            display: inline-block;
-        }
-        &-vertical {
-            display: inline-block;
-        }
-
-    }
-
-}
