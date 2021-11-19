@@ -110,29 +110,3 @@
     }
 
 }
-
-
-
-
-@include exports( "switch/layout/legacy" ) {
-
-    .k-ie9 {
-
-        // Switch
-        .k-switch {
-            display: inline-block;
-        }
-
-        // Switch track
-        .k-switch-container {
-            display: block;
-        }
-
-        // Switch thumb
-        .k-switch-handle {
-            display: block;
-        }
-
-    }
-
-}

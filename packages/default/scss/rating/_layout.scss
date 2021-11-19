@@ -71,14 +71,6 @@
         margin: $rating-label-margin-y $rating-label-margin-x;
     }
 
-    .k-ie9 {
-        .k-rating-label,
-        .k-rating-container,
-        .k-rating-item {
-            display: inline-block;
-        }
-    }
-
     .k-rtl,
     [dir="rtl"] {
         .k-rating-precision-part {

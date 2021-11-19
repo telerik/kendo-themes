@@ -134,59 +134,6 @@
 
 
 
-@include exports( "panelbar/layout/legacy" ) {
-
-    .k-no-flexbox .k-panelbar {
-
-        // Item
-        > .k-item > .k-link,
-        .k-group > .k-link {
-            display: block;
-        }
-
-        // Icons
-        .k-link > .k-image,
-        .k-link > .k-sprite,
-        .k-link > .k-icon {
-            margin-right: $icon-spacing;
-        }
-
-        // Expand collapse
-        .k-panelbar-expand,
-        .k-panelbar-collapse {
-            margin: 0 !important; // sass-lint:disable-line no-important
-            transform: translateY( -50% );
-            position: absolute;
-            top: 50%;
-            right: $panelbar-header-padding-x;
-        }
-
-    }
-
-
-    .k-no-flexbox .k-panelbar[dir="rtl"],
-    .k-no-flexbox .k-rtl .k-panelbar {
-
-        .k-link > .k-image,
-        .k-link > .k-sprite,
-        .k-link > .k-icon {
-            margin-left: $icon-spacing;
-            margin-right: 0;
-        }
-
-        .k-panelbar-expand,
-        .k-panelbar-collapse {
-            right: auto;
-            left: $panelbar-header-padding-x;
-        }
-
-    }
-
-}
-
-
-
-
 @include exports( "panelbar/layout/compatibility" ) {
 
     .k-ie {

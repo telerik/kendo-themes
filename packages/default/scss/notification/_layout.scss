@@ -76,25 +76,3 @@
     }
 
 }
-
-
-
-
-@include exports("notification/layout/ie9") {
-
-
-    .k-ie9 .k-notification-wrap {
-        white-space: nowrap;
-
-        > .k-icon {
-            vertical-align: top;
-        }
-
-        > .k-notification-content {
-            display: inline-block;
-            vertical-align: middle;
-            white-space: normal;
-        }
-    }
-
-}

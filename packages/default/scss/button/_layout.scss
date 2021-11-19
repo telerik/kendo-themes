@@ -417,18 +417,6 @@
 
 @include exports( "button/ie-compat" ) {
 
-    .k-ie9,
-    .k-ie10 {
-
-        .k-button[disabled]:hover,
-        .k-button[disabled]:focus,
-        .k-button.k-state-disabled:hover,
-        .k-button.k-state-disabled:focus {
-            @include disabled-legacy-ie( $disabled-styling );
-        }
-
-    }
-
     .k-ie {
 
         .k-button,
