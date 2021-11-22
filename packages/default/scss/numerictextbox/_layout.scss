@@ -1,6 +1,6 @@
 @include exports("numerictextbox/layout") {
 
-    // Base
+    // Numeric textbox
     .k-numerictextbox {
         width: $input-default-width;
         border-width: 0;
@@ -31,6 +31,7 @@
             outline: 0;
             display: flex;
             flex-flow: row nowrap;
+            overflow: hidden;
         }
 
 
@@ -42,7 +43,6 @@
 
         // Select
         .k-select {
-            @include border-right-radius-only( $input-border-radius );
             padding: 0;
             width: if( $use-picker-select-width, $spinner-width, null );
             border-width: 0 0 0 $picker-select-border-width;
@@ -88,7 +88,6 @@
             text-align: right;
 
             .k-select {
-                @include border-left-radius-only( $input-border-radius );
                 border-width: 0 $picker-select-border-width 0 0;
             }
         }

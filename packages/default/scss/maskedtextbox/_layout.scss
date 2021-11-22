@@ -1,5 +1,6 @@
 @include exports("maskedtextbox/layout") {
 
+    // Masked textbox
     .k-maskedtextbox {
         width: $input-default-width;
         font-family: $input-font-family;

@@ -1,5 +1,6 @@
 @include exports("dropdownlist/layout") {
 
+    // Dropdown list
     .k-dropdown {
         width: $input-default-width;
         border-width: 0;
@@ -30,6 +31,7 @@
             transition: all .1s ease; // sass-lint:disable-line no-transition-all
             cursor: pointer;
             outline: 0;
+            overflow: hidden;
 
 
             // Input
@@ -38,7 +40,6 @@
 
             // Select
             .k-select {
-                @include border-right-radius-only( $input-border-radius );
                 padding: $picker-select-padding-y $picker-select-padding-x;
                 width: if( $use-picker-select-width, $button-inner-calc-size, null );
                 border-width: 0;
@@ -63,10 +64,6 @@
     .k-rtl .k-dropdown,
     [dir="rtl"] .k-dropdown {
         text-align: right;
-
-        .k-select {
-            @include border-left-radius-only( $input-border-radius );
-        }
     }
 
 

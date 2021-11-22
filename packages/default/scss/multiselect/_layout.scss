@@ -1,6 +1,6 @@
 @include exports("multiselect/layout") {
 
-    // Base
+    // Multiselect
     .k-multiselect {
         @include border-radius( $input-border-radius );
         width: $multiselect-width;
