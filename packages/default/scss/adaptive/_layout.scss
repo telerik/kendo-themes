@@ -458,14 +458,6 @@
             overflow-y: auto;
         }
 
-        .k-state-disabled {
-            opacity: 1;
-
-            > * {
-                opacity: .7;
-            }
-        }
-
         // Pager
 
         .k-pager-wrap.k-pager-sm {
