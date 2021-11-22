@@ -1,6 +1,6 @@
 ---
 title: Captcha
-category: components
+category: accessibility
 slug: captcha
 position: 6
 ---

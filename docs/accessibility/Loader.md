@@ -1,6 +1,6 @@
 ---
 title: Loader
-category: components
+category: accessibility
 slug: loader
 position: 25
 ---

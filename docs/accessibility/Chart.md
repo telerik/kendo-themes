@@ -1,6 +1,6 @@
 ---
 title: Chart
-category: components
+category: accessibility
 slug: chart
 position: 7
 ---

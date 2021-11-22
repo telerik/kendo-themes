@@ -1,6 +1,6 @@
 ---
 title: Slider
-category: components
+category: accessibility
 slug: slider
 position: 38
 ---

@@ -1,6 +1,6 @@
 ---
 title: Date Picker
-category: components
+category: accessibility
 slug: date-picker
 position: 14
 ---

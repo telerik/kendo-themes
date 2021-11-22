@@ -1,6 +1,6 @@
 ---
 title: Drawer
-category: components
+category: accessibility
 slug: drawer
 position: 17
 ---

@@ -1,6 +1,6 @@
 ---
 title: Date Range Picker
-category: components
+category: accessibility
 slug: date-range-picker
 position: 15
 ---

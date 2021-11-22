@@ -1,6 +1,6 @@
 ---
 title: Validation Message
-category: components
+category: accessibility
 slug: validation-message
 position: 53
 ---

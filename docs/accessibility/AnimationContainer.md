@@ -1,6 +1,6 @@
 ---
 title: Animation Container
-category: components
+category: accessibility
 slug: animation-container
 position: 0
 ---
