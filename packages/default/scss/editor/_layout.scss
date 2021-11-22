@@ -78,6 +78,7 @@
         height: $editor-resize-handle-size;
         border-width: $editor-resize-handle-border-width;
         border-style: solid;
+        box-sizing: border-box;
         position: absolute;
         visibility: visible;
         z-index: 100;
