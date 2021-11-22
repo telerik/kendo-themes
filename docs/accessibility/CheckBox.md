@@ -1,6 +1,6 @@
 ---
 title: Check Box
-category: accessibilitty
+category: accessibility
 slug: check-box
 position: 8
 ---

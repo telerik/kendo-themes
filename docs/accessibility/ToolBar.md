@@ -1,6 +1,6 @@
 ---
 title: Tool Bar
-category: accessibilitty
+category: accessibility
 slug: tool-bar
 position: 48
 ---

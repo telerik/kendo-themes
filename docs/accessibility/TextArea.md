@@ -1,6 +1,6 @@
 ---
 title: Text Area
-category: accessibilitty
+category: accessibility
 slug: text-area
 position: 43
 ---

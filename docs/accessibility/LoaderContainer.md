@@ -1,6 +1,6 @@
 ---
 title: Loader Container
-category: accessibilitty
+category: accessibility
 slug: loader-container
 position: 26
 ---

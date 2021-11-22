@@ -1,6 +1,6 @@
 ---
 title: Multi Select
-category: accessibilitty
+category: accessibility
 slug: multi-select
 position: 29
 ---

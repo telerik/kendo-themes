@@ -1,6 +1,6 @@
 ---
 title: Calendar
-category: accessibilitty
+category: accessibility
 slug: calendar
 position: 5
 ---

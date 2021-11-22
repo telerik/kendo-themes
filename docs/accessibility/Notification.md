@@ -1,6 +1,6 @@
 ---
 title: Notification
-category: accessibilitty
+category: accessibility
 slug: notification
 position: 30
 ---

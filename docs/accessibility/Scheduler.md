@@ -1,6 +1,6 @@
 ---
 title: Scheduler
-category: accessibilitty
+category: accessibility
 slug: scheduler
 position: 37
 ---

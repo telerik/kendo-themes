@@ -1,6 +1,6 @@
 ---
 title: Combo Box
-category: accessibilitty
+category: accessibility
 slug: combo-box
 position: 11
 ---

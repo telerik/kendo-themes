@@ -1,6 +1,6 @@
 ---
 title: Grid
-category: accessibilitty
+category: accessibility
 slug: grid
 position: 22
 ---

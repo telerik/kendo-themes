@@ -1,6 +1,6 @@
 ---
 title: Date Time Picker
-category: accessibilitty
+category: accessibility
 slug: date-time-picker
 position: 16
 ---

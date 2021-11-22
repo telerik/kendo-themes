@@ -1,6 +1,6 @@
 ---
 title: Tree View
-category: accessibilitty
+category: accessibility
 slug: tree-view
 position: 51
 ---

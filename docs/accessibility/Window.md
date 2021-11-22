@@ -1,6 +1,6 @@
 ---
 title: Window
-category: accessibilitty
+category: accessibility
 slug: window
 position: 56
 ---

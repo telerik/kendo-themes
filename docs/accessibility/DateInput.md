@@ -1,6 +1,6 @@
 ---
 title: Date Input
-category: accessibilitty
+category: accessibility
 slug: date-input
 position: 13
 ---

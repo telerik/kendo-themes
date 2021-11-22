@@ -1,6 +1,6 @@
 ---
 title: Pager
-category: accessibilitty
+category: accessibility
 slug: pager
 position: 32
 ---

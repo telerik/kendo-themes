@@ -1,6 +1,6 @@
 ---
 title: List View
-category: accessibilitty
+category: accessibility
 slug: list-view
 position: 24
 ---

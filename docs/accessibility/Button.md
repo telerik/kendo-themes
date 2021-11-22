@@ -1,6 +1,6 @@
 ---
 title: Button
-category: accessibilitty
+category: accessibility
 slug: button
 position: 3
 ---

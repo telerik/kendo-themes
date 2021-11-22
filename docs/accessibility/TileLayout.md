@@ -1,6 +1,6 @@
 ---
 title: Tile Layout
-category: accessibilitty
+category: accessibility
 slug: tile-layout
 position: 45
 ---

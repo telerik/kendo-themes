@@ -1,6 +1,6 @@
 ---
 title: Splitter
-category: accessibilitty
+category: accessibility
 slug: splitter
 position: 39
 ---

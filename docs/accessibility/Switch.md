@@ -1,6 +1,6 @@
 ---
 title: Switch
-category: accessibilitty
+category: accessibility
 slug: switch
 position: 41
 ---

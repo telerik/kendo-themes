@@ -1,6 +1,6 @@
 ---
 title: Masked Text Box
-category: accessibilitty
+category: accessibility
 slug: masked-text-box
 position: 27
 ---
