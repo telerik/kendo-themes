@@ -31,6 +31,7 @@
             outline: 0;
             display: flex;
             flex-flow: row nowrap;
+            overflow: hidden;
         }
 
 
@@ -40,7 +41,6 @@
 
         // Select
         .k-select {
-            @include border-right-radius-only( $input-border-radius );
             padding: 0;
             width: if( $use-picker-select-width, $spinner-width, null );
             border-width: 0 0 0 $picker-select-border-width;
@@ -83,7 +83,6 @@
             text-align: right;
 
             .k-select {
-                @include border-left-radius-only( $input-border-radius );
                 border-width: 0 $picker-select-border-width 0 0;
             }
         }
@@ -96,18 +95,10 @@
             flex: 1 1 auto;
 
             .k-dateinput-wrap {
-                @include border-left-radius-only( $input-border-radius );
-                border-width: 0;
+                border-radius: 0 !important; // sass-lint:disable-line no-important
+                border-width: 0; // sass-lint:disable-line no-important
                 box-shadow: none !important; // sass-lint:disable-line no-important
             }
-
-            [dir="rtl"] &,
-            .k-rtl & {
-                .k-dateinput-wrap {
-                    @include border-right-radius-only( $input-border-radius );
-                }
-            }
-
         }
     }
 
@@ -144,6 +135,7 @@
             transition: all .1s ease; // sass-lint:disable-block no-transition-all
             cursor: default;
             outline: 0;
+            overflow: hidden;
         }
 
 
@@ -153,7 +145,6 @@
 
         // Select
         .k-select {
-            @include border-right-radius-only( $input-border-radius );
             padding: $picker-select-padding-y $picker-select-padding-x;
             width: if( $use-picker-select-width, $picker-select-calc-size, null );
             border-width: 0 0 0 $picker-select-border-width;
@@ -175,7 +166,6 @@
             text-align: right;
 
             .k-select {
-                @include border-left-radius-only( $input-border-radius );
                 border-width: 0 $picker-select-border-width 0 0;
             }
         }
@@ -214,6 +204,7 @@
             transition: all .1s ease; // sass-lint:disable-block no-transition-all
             cursor: default;
             outline: 0;
+            overflow: hidden;
         }
 
 
@@ -223,7 +214,6 @@
 
         // Select
         .k-select {
-            @include border-right-radius-only( $input-border-radius );
             border-width: 0 0 0 $picker-select-border-width;
             border-style: solid;
             box-sizing: border-box;
@@ -255,7 +245,6 @@
             text-align: right;
 
             .k-select {
-                @include border-left-radius-only( $input-border-radius );
                 border-width: 0 $picker-select-border-width 0 0;
             }
         }
@@ -462,7 +451,6 @@
         z-index: 1;
         border-width: $time-highlight-size 0;
         border-style: solid;
-        border-radius: .1px; // workaround for https://bugs.webkit.org/show_bug.cgi?id=175117
     }
 
     .k-time-container .k-scrollable-placeholder {

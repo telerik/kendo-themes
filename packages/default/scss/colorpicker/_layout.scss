@@ -1,5 +1,6 @@
 @include exports("colorpicker/layout") {
 
+    // Colorpicker
     .k-colorpicker {
         width: auto;
         border-width: 0;
@@ -96,7 +97,6 @@
 
         // Select
         .k-select {
-            @include border-right-radius-only( $input-border-radius );
             padding: $picker-select-padding-y $picker-select-padding-x;
             width: if( $use-picker-select-width, $button-inner-calc-size, null );
             border-width: 0 0 0 $colorpicker-select-border-width;
@@ -117,7 +117,6 @@
         &[dir="rtl"] {
             .k-picker-wrap {
                 .k-select {
-                    @include border-left-radius-only( $input-border-radius );
                     border-width: 0 $colorpicker-select-border-width 0 0;
                 }
             }

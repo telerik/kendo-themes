@@ -1,5 +1,6 @@
 @include exports("combobox/layout") {
 
+    // Combobox
     .k-combobox {
         width: $input-default-width;
         border-width: 0;
@@ -30,6 +31,7 @@
             transition: all .1s ease; // sass-lint:disable-line no-transition-all
             outline: 0;
             cursor: initial;
+            overflow: hidden;
         }
 
 
@@ -38,7 +40,6 @@
 
         // Select
         .k-select {
-            @include border-right-radius-only( $input-border-radius );
             padding: $combobox-select-padding-y $combobox-select-padding-x;
             width: if( $use-picker-select-width, $combobox-select-width, null );
             border-width: 0 0 0 $combobox-select-border-width;
@@ -57,7 +58,6 @@
             text-align: right;
 
             .k-select {
-                @include border-left-radius-only( $input-border-radius );
                 border-width: 0 $combobox-select-border-width 0 0;
             }
         }
