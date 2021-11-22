@@ -1,6 +1,6 @@
 ---
 title: Text Box
-category: components
+category: accessibility
 slug: text-box
 position: 44
 ---

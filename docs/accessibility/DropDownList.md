@@ -1,6 +1,6 @@
 ---
 title: Drop Down List
-category: components
+category: accessibility
 slug: drop-down-list
 position: 18
 ---

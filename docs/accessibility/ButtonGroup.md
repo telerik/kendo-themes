@@ -1,6 +1,6 @@
 ---
 title: Button Group
-category: components
+category: accessibility
 slug: button-group
 position: 4
 ---

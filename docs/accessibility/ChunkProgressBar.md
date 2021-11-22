@@ -1,6 +1,6 @@
 ---
 title: Chunk Progress Bar
-category: components
+category: accessibility
 slug: chunk-progress-bar
 position: 9
 ---

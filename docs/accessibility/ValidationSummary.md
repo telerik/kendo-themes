@@ -1,6 +1,6 @@
 ---
 title: Validation Summary
-category: components
+category: accessibility
 slug: validation-summary
 position: 54
 ---

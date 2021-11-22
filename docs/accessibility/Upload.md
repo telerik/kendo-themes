@@ -1,6 +1,6 @@
 ---
 title: Upload
-category: components
+category: accessibility
 slug: upload
 position: 52
 ---

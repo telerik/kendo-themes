@@ -1,6 +1,6 @@
 ---
 title: Form
-category: components
+category: accessibility
 slug: form
 position: 21
 ---

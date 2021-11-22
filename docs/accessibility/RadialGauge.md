@@ -1,6 +1,6 @@
 ---
 title: Radial Gauge
-category: components
+category: accessibility
 slug: radial-gauge
 position: 34
 ---

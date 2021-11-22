@@ -1,6 +1,6 @@
 ---
 title: Toggle Button
-category: components
+category: accessibility
 slug: toggle-button
 position: 47
 ---

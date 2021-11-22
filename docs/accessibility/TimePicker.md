@@ -1,6 +1,6 @@
 ---
 title: Time Picker
-category: components
+category: accessibility
 slug: time-picker
 position: 46
 ---

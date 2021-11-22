@@ -1,6 +1,6 @@
 ---
 title: Date Time Picker
-category: components
+category: accessibility
 slug: date-time-picker
 position: 16
 ---
