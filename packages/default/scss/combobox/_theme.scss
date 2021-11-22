@@ -16,6 +16,10 @@
             &.k-state-invalid {
                 border-color: $invalid-border;
 
+                .k-input-validation-icon {
+                    color: $invalid-text;
+                }
+
                 &:focus,
                 &.k-state-focused {
                     @include box-shadow($invalid-shadow);
@@ -80,6 +84,10 @@
             .k-dropdown-wrap {
                 border-color: $invalid-border;
 
+                .k-input-validation-icon {
+                    color: $invalid-text;
+                }
+
                 &:focus,
                 &.k-state-focused {
                     @include box-shadow($invalid-shadow);
@@ -114,6 +122,10 @@
         &.k-invalid {
             .k-dropdown-wrap {
                 border-color: $invalid-border;
+
+                .k-input-validation-icon {
+                    color: $invalid-text;
+                }
             }
         }
 
