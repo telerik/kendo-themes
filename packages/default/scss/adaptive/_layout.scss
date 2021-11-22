@@ -213,6 +213,12 @@
                     font-size: 12px;
                 }
             }
+
+            .k-scheduler-views-wrapper {
+                .k-views-dropdown {
+                    display: inline-block;
+                }
+            }
         }
 
         .k-scheduler-footer {
