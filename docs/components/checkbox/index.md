@@ -16,18 +16,18 @@ Checkboxes can have various sizes. Use the smaller ones to create a compact them
 
 ```html
 <div class="k-d-flex k-gap-2">
-    <input 
+    <input
         type="checkbox"
         class="k-checkbox k-checkbox-sm k-roundend-md"
-    >
-     <input 
+    />
+    <input
         type="checkbox"
         class="k-checkbox k-checkbox-md k-roundend-md"
-    >
-     <input 
+    />
+    <input
         type="checkbox"
         class="k-checkbox k-checkbox-lg k-roundend-md"
-    >
+    />
 </div>
 ```
 
@@ -39,18 +39,18 @@ Checkboxes can have various rounded states depending on the border radius custom
 
 ```html
 <div class="k-d-flex k-gap-2">
-    <input 
+    <input
         type="checkbox"
         class="k-checkbox k-checkbox-md k-roundend-sm"
-    >
-     <input 
+    />
+     <input
         type="checkbox"
         class="k-checkbox k-checkbox-md k-roundend-md"
-    >
-     <input 
+    />
+     <input
         type="checkbox"
         class="k-checkbox k-checkbox-md k-roundend-lg"
-    >
+    />
 </div>
 ```
 
