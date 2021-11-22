@@ -55,6 +55,10 @@
         &.ng-invalid.ng-dirty {
             border-color: $invalid-border;
 
+            .k-input-validation-icon {
+                color: $invalid-text;
+            }
+
             &:focus,
             // &:focus-within,
             &.k-state-focus,

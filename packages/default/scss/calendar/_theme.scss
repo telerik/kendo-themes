@@ -260,6 +260,10 @@
         &.k-state-invalid {
             .k-dateinput-wrap {
                 border-color: $invalid-border;
+
+                .k-input-validation-icon {
+                    color: $invalid-text;
+                }
             }
         }
     }

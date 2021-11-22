@@ -40,6 +40,10 @@
             &.k-state-invalid {
                 border-color: $invalid-border;
 
+                .k-input-validation-icon {
+                    color: $invalid-text;
+                }
+
                 &:focus,
                 &.k-state-focused {
                     @include box-shadow($invalid-shadow);
@@ -53,6 +57,10 @@
         &.ng-invalid.ng-dirty {
             > .k-dropdown-wrap {
                 border-color: $invalid-border;
+
+                .k-input-validation-icon {
+                    color: $invalid-text;
+                }
 
                 &:focus,
                 &.k-state-focused {

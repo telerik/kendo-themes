@@ -90,6 +90,10 @@
             &.k-invalid:hover,
             &.k-state-invalid {
                 border-color: $invalid-border;
+
+                .k-input-validation-icon {
+                    color: $invalid-text;
+                }
             }
         }
 
@@ -99,6 +103,10 @@
         &.ng-invalid.ng-dirty {
             .k-multiselect-wrap {
                 border-color: $invalid-border;
+
+                .k-input-validation-icon {
+                    color: $invalid-text;
+                }
             }
         }
     }
@@ -129,6 +137,10 @@
         &.k-invalid {
             .k-multiselect-wrap {
                 border-color: $invalid-border;
+
+                .k-input-validation-icon {
+                    color: $invalid-text;
+                }
             }
         }
 
