@@ -1,7 +1,7 @@
 ---
 title: Radio Button
 category: components
-slug: button
+slug: radio-button
 position: 3
 ---
 
