@@ -1,6 +1,6 @@
 ---
 title: Circular Gauge
-category: components
+category: accessibilitty
 slug: circular-gauge
 position: 10
 ---

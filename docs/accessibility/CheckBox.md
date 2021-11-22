@@ -1,6 +1,6 @@
 ---
 title: Check Box
-category: components
+category: accessibilitty
 slug: check-box
 position: 8
 ---

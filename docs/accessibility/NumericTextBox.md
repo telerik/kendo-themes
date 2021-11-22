@@ -1,6 +1,6 @@
 ---
 title: Numeric Text Box
-category: components
+category: accessibilitty
 slug: numeric-text-box
 position: 31
 ---

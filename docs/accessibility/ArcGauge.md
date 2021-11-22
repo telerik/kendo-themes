@@ -1,6 +1,6 @@
 ---
 title: Arc Gauge
-category: components
+category: accessibilitty
 slug: arc-gauge
 position: 1
 ---

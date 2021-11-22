@@ -1,6 +1,6 @@
 ---
 title: Tab Strip
-category: components
+category: accessibilitty
 slug: tab-strip
 position: 42
 ---

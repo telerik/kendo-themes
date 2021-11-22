@@ -1,6 +1,6 @@
 ---
 title: Validation Tooltip
-category: components
+category: accessibilitty
 slug: validation-tooltip
 position: 55
 ---

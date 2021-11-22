@@ -1,6 +1,6 @@
 ---
 title: Radio Group
-category: components
+category: accessibilitty
 slug: radio-group
 position: 35
 ---

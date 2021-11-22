@@ -1,6 +1,6 @@
 ---
 title: Linear Gauge
-category: components
+category: accessibilitty
 slug: linear-gauge
 position: 23
 ---

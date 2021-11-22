@@ -1,6 +1,6 @@
 ---
 title: Range Slider
-category: components
+category: accessibilitty
 slug: range-slider
 position: 36
 ---

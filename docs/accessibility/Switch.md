@@ -1,6 +1,6 @@
 ---
 title: Switch
-category: components
+category: accessibilitty
 slug: switch
 position: 41
 ---

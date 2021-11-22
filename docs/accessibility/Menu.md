@@ -1,6 +1,6 @@
 ---
 title: Menu
-category: components
+category: accessibilitty
 slug: menu
 position: 28
 ---
