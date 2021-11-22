@@ -1,6 +1,6 @@
 ---
 title: Splitter
-category: components
+category: accessibilitty
 slug: splitter
 position: 39
 ---

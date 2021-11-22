@@ -1,6 +1,6 @@
 ---
 title: Calendar
-category: components
+category: accessibilitty
 slug: calendar
 position: 5
 ---

@@ -1,6 +1,6 @@
 ---
 title: Tree List
-category: components
+category: accessibilitty
 slug: tree-list
 position: 50
 ---

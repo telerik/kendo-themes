@@ -1,6 +1,6 @@
 ---
 title: Auto Complete
-category: components
+category: accessibilitty
 slug: auto-complete
 position: 2
 ---

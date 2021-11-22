@@ -1,6 +1,6 @@
 ---
 title: Tooltip
-category: components
+category: accessibilitty
 slug: tooltip
 position: 49
 ---

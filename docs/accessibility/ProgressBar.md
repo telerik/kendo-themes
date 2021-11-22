@@ -1,6 +1,6 @@
 ---
 title: Progress Bar
-category: components
+category: accessibilitty
 slug: progress-bar
 position: 33
 ---

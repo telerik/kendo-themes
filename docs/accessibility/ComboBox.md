@@ -1,6 +1,6 @@
 ---
 title: Combo Box
-category: components
+category: accessibilitty
 slug: combo-box
 position: 11
 ---

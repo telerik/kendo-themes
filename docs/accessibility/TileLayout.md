@@ -1,6 +1,6 @@
 ---
 title: Tile Layout
-category: components
+category: accessibilitty
 slug: tile-layout
 position: 45
 ---

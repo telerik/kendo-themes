@@ -1,6 +1,6 @@
 ---
 title: Context Menu
-category: components
+category: accessibilitty
 slug: context-menu
 position: 12
 ---

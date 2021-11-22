@@ -1,6 +1,6 @@
 ---
 title: Stock Chart
-category: components
+category: accessibilitty
 slug: stock-chart
 position: 40
 ---

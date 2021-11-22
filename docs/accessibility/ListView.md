@@ -1,6 +1,6 @@
 ---
 title: List View
-category: components
+category: accessibilitty
 slug: list-view
 position: 24
 ---

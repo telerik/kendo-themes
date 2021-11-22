@@ -1,6 +1,6 @@
 ---
 title: Text Area
-category: components
+category: accessibilitty
 slug: text-area
 position: 43
 ---

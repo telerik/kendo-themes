@@ -1,6 +1,6 @@
 ---
 title: Editor
-category: components
+category: accessibilitty
 slug: editor
 position: 19
 ---

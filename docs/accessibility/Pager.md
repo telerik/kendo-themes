@@ -1,6 +1,6 @@
 ---
 title: Pager
-category: components
+category: accessibilitty
 slug: pager
 position: 32
 ---
