@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en" class="k-no-animations">
+<head>
+    <title>List</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+    <script src="../../assets/scripts.js"></script>
+    <script src="../../../../packages/html/dist/index.js"></script>
+
+    <style>
+        #test-area {
+            grid-template-columns: repeat(4, 1fr);
+            align-items: start;
+        }
+
+        .grid-single {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            row-gap: 15px;
+        }
+
+        .k-animation-container {
+            position: relative;
+            max-width: 231px;
+        }
+
+        .k-virtual-list .k-virtual-content .k-list-item {
+            position: relative;
+        }
+    </style>
+</head>
+<body class="k-body">
+
+    <div id="test-area" class="grid">
+
+        <section class="grid-single">
+            <span>Default</span>
+
+            <div class="k-animation-container k-animation-container-shown">
+                <div class="k-popup k-list-container">
+                    <div is="List" size="medium">
+                        <div is="ListGroupHeader" stuck>
+                            <strong>Sticky Group Name</strong>
+                        </div>
+                        <div is="ListContent">
+                            <div is="ListItem">
+                                <input is="Checkbox" />
+                                <span is="ListItemText">Baseball</span>
+                            </div>
+                            <div is="ListItem">
+                                <i is="Icon" name="file-pdf"></i>
+                                <span is="ListItemText">Basketball</span>
+                            </div>
+                            <div is="ListItem">
+                                <input is="Checkbox" />
+                                <i is="Icon" name="file-pdf"></i>
+                                <span is="ListItemText">Cricket</span>
+                            </div>
+                            <div is="ListGroupHeader">
+                                <strong>Normal Group Header</strong>
+                            </div>
+                            <div is="ListItem">
+                                <span is="ListItemText">Some very long name of the item goes here</span>
+                            </div>
+                            <div is="ListItem" hover>
+                                <span is="ListItemText">Hover</span>
+                            </div>
+                            <div is="ListItem" focus>
+                                <span is="ListItemText">Focus</span>
+                            </div>
+                            <div is="ListItem" selected>
+                                <span is="ListItemText">Selected</span>
+                            </div>
+                            <div is="ListItem" hover selected>
+                                <span is="ListItemText">Hover selected</span>
+                            </div>
+                            <div is="ListItem" disabled>
+                                <span is="ListItemText">Disabled</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="grid-single">
+            <span>Virtualization</span>
+
+            <div class="k-animation-container k-animation-container-shown">
+                <div class="k-popup k-list-container">
+                    <div is="List" size="medium" virtualization>
+                        <div is="ListGroupHeader" stuck>
+                            <strong>Sticky Group Name</strong>
+                        </div>
+                        <div is="ListContent" virtualization>
+                            <div is="ListItem" virtualization>
+                                <input is="Checkbox" />
+                                <span is="ListItemText">Baseball</span>
+                            </div>
+                            <div is="ListItem" virtualization>
+                                <i is="Icon" name="file-pdf"></i>
+                                <span is="ListItemText">Basketball</span>
+                            </div>
+                            <div is="ListItem" virtualization>
+                                <input is="Checkbox" />
+                                <i is="Icon" name="file-pdf"></i>
+                                <span is="ListItemText">Cricket</span>
+                            </div>
+                            <div is="ListGroupHeader" virtualization>
+                                <strong>Normal Group Header</strong>
+                            </div>
+                            <div is="ListItem" virtualization>
+                                <span is="ListItemText">Some very long name of the item goes here</span>
+                            </div>
+                            <div is="ListItem" virtualization hover>
+                                <span is="ListItemText">Hover</span>
+                            </div>
+                            <div is="ListItem" virtualization focus>
+                                <span is="ListItemText">Focus</span>
+                            </div>
+                            <div is="ListItem" virtualization selected>
+                                <span is="ListItemText">Selected</span>
+                            </div>
+                            <div is="ListItem" virtualization hover selected>
+                                <span is="ListItemText">Hover selected</span>
+                            </div>
+                            <div is="ListItem" virtualization disabled>
+                                <span is="ListItemText">Disabled</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="grid-single">
+            <span>Header and Footer</span>
+
+            <div class="k-animation-container k-animation-container-shown">
+                <div class="k-popup k-list-container">
+                    <div is="List" size="medium">
+                        <div is="ListHeader">Header goes here</div>
+                        <div is="ListGroupHeader" stuck>
+                            <strong>Sticky Group Name</strong>
+                        </div>
+                        <div is="ListContent">
+                            <div is="ListItem">
+                                <input is="Checkbox" />
+                                <span is="ListItemText">Baseball</span>
+                            </div>
+                            <div is="ListItem">
+                                <i is="Icon" name="file-pdf"></i>
+                                <span is="ListItemText">Basketball</span>
+                            </div>
+                            <div is="ListItem">
+                                <input is="Checkbox" />
+                                <i is="Icon" name="file-pdf"></i>
+                                <span is="ListItemText">Cricket</span>
+                            </div>
+                            <div is="ListGroupHeader">
+                                <strong>Normal Group Header</strong>
+                            </div>
+                            <div is="ListItem">
+                                <span is="ListItemText">Some very long name of the item goes here</span>
+                            </div>
+                            <div is="ListItem" hover>
+                                <span is="ListItemText">Hover</span>
+                            </div>
+                            <div is="ListItem" focus>
+                                <span is="ListItemText">Focus</span>
+                            </div>
+                            <div is="ListItem" selected>
+                                <span is="ListItemText">Selected</span>
+                            </div>
+                            <div is="ListItem" hover selected>
+                                <span is="ListItemText">Hover selected</span>
+                            </div>
+                            <div is="ListItem" disabled>
+                                <span is="ListItemText">Disabled</span>
+                            </div>
+                        </div>
+                        <div is="ListFooter">Footer goes here</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="grid-single k-rtl">
+            <span>RTL</span>
+
+            <div class="k-animation-container k-animation-container-shown">
+                <div class="k-popup k-list-container">
+                    <div is="List" size="medium">
+                        <div is="ListGroupHeader" stuck>
+                            <strong>Sticky Group Name</strong>
+                        </div>
+                        <div is="ListContent">
+                            <div is="ListItem">
+                                <input is="Checkbox" />
+                                <span is="ListItemText">Baseball</span>
+                            </div>
+                            <div is="ListItem">
+                                <i is="Icon" name="file-pdf"></i>
+                                <span is="ListItemText">Basketball</span>
+                            </div>
+                            <div is="ListItem">
+                                <input is="Checkbox" />
+                                <i is="Icon" name="file-pdf"></i>
+                                <span is="ListItemText">Cricket</span>
+                            </div>
+                            <div is="ListGroupHeader">
+                                <strong>Normal Group Header</strong>
+                            </div>
+                            <div is="ListItem">
+                                <span is="ListItemText">Some very long name of the item goes here</span>
+                            </div>
+                            <div is="ListItem" hover>
+                                <span is="ListItemText">Hover</span>
+                            </div>
+                            <div is="ListItem" focus>
+                                <span is="ListItemText">Focus</span>
+                            </div>
+                            <div is="ListItem" selected>
+                                <span is="ListItemText">Selected</span>
+                            </div>
+                            <div is="ListItem" hover selected>
+                                <span is="ListItemText">Hover selected</span>
+                            </div>
+                            <div is="ListItem" disabled>
+                                <span is="ListItemText">Disabled</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="grid-single">
+            <span>Filter and NoData</span>
+
+            <div class="k-animation-container k-animation-container-shown">
+                <div class="k-popup k-list-container">
+                    <div class="k-list-filter">
+                        <input is="Searchbox" placeholder="Filter..." size="medium" />
+                    </div>
+                    <div is="List" size="medium">
+                        <div is="ListContent"></div>
+                    </div>
+                    <div class="k-nodata">
+                        <div>NO DATA FOUND</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>

@@ -32,63 +32,77 @@
 
         <section class="k-rtl">
             <div class="k-rtl k-popup k-list-container k-reset">
-                <div class="k-list">
-                    <div class="k-item k-custom-item">
-                        Custom item
-                        <i is="Icon" name="plus"></i>
+                <div is="List" size="medium">
+                    <div is="ListContent">
+                        <div is="ListItem" custom>
+                            <span is="ListItemText">Custom item</span>
+                            <i is="Icon" name="plus"></i>
+                        </div>
                     </div>
                 </div>
 
-                <div class="k-list-scroller" style="max-height: 200px;">
-                    <ul class="k-list k-reset">
-                        <li class="k-item">
-                            Item
-                        </li><li class="k-item k-state-focused">
-                            Focused Item
-                        </li><li class="k-item k-state-hover">
-                            Hovered Item
-                        </li><li class="k-item k-state-selected">
-                            Selected Item
-                        </li><li class="k-item k-state-hover k-state-selected">
-                            Hovered Selected Item
-                        </li><li class="k-item k-state-selected k-state-focused">
-                            Focused Selected Item
-                        </li>
-                    </ul>
+                <div is="List" size="medium">
+                    <div is="ListContent">
+                        <div is="ListItem">
+                            <span is="ListItemText">Item</span>
+                        </div>
+                        <div is="ListItem" focus>
+                            <span is="ListItemText">Focused Item</span>
+                        </div>
+                        <div is="ListItem" hover>
+                            <span is="ListItemText">Hovered Item</span>
+                        </div>
+                        <div is="ListItem" selected>
+                            <span is="ListItemText">Selected Item</span>
+                        </div>
+                        <div is="ListItem" hover selected>
+                            <span is="ListItemText">Hovered Selected Item</span>
+                        </div>
+                        <div is="ListItem" focus selected>
+                            <span is="ListItemText">Focused Selected Item</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
         <section class="k-rtl">
             <div class="k-rtl k-popup k-list-container k-reset">
-                <div class="k-group-header">Group</div>
-
-                <div class="k-list-scroller" style="max-height: 200px;">
-                    <ul class="k-list k-reset">
-                        <li class="k-item">
-                            Item
-                        </li><li class="k-item k-state-focused">
-                            Focused Item
-                        </li><li class="k-item k-state-hover">
-                            Hovered Item
-                        </li><li class="k-item k-state-selected k-first">
-                            Selected Item<div class="k-group">Second group</div>
-                        </li><li class="k-item k-state-hover k-state-selected">
-                            Hovered Selected Item
-                        </li><li class="k-item k-state-selected k-state-focused">
-                            Focused Selected Item
-                        </li>
-                    </ul>
+                <div is="List" size="medium">
+                    <div is="ListGroupHeader" stuck>Group</div>
+                    <div is="ListContent">
+                        <div is="ListItem">
+                            <span is="ListItemText">Item</span>
+                        </div>
+                        <div is="ListItem" focus>
+                            <span is="ListItemText">Focused Item</span>
+                        </div>
+                        <div is="ListItem" hover>
+                            <span is="ListItemText">Hovered Item</span>
+                        </div>
+                        <div is="ListGroupHeader">Second group</div>
+                        <div is="ListItem" selected>
+                            <span is="ListItemText">Selected Item</span>
+                        </div>
+                        <div is="ListItem" hover selected>
+                            <span is="ListItemText">Hovered Selected Item</span>
+                        </div>
+                        <div is="ListItem" focus selected>
+                            <span is="ListItemText">Focused Selected Item</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
         <section class="k-rtl">
             <div class="k-rtl k-popup k-list-container k-reset">
-                <div class="k-list-optionlabel">Optionlabel</div>
-                <div class="k-list-optionlabel k-state-focused">Focused Optionlabel</div>
-                <div class="k-list-optionlabel k-state-hover">Hovered Optionlabel</div>
-                <div class="k-list-optionlabel k-state-selected">Selected Optionlabel</div>
-                <div class="k-list-optionlabel k-state-hover k-state-selected">Hovered Selected Optionlabel</div>
-                <div class="k-list-optionlabel k-state-selected k-state-focused">Focused Selected Optionlabel</div>
+                <div is="List" size="medium">
+                    <div class="k-list-optionlabel">Optionlabel</div>
+                    <div class="k-list-optionlabel k-focus">Focused Optionlabel</div>
+                    <div class="k-list-optionlabel k-hover">Hovered Optionlabel</div>
+                    <div class="k-list-optionlabel k-selected">Selected Optionlabel</div>
+                    <div class="k-list-optionlabel k-hover k-selected">Hovered Selected Optionlabel</div>
+                    <div class="k-list-optionlabel k-selected k-focus">Focused Selected Optionlabel</div>
+                </div>
             </div>
         </section>
 
