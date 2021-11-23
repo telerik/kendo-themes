@@ -29,6 +29,10 @@ function ColorPreviewStatic(props) {
         }
     ];
 
+    let styles = {
+        'background-color': color
+    };
+
     let ariaAttr = aria
         ? {}
         : {};
@@ -64,7 +68,7 @@ function ColorPreviewStatic(props) {
     return (
         <span className={colorPreviewClasses} {...ariaAttr} {...htmlAttributes}>
             {iconName && <IconStatic name={iconName} className="k-color-preview-icon" />}
-            <span className="k-color-preview-mask"></span>
+            <span className="k-color-preview-mask" style={styles}></span>
         </span>
     );
 }
