@@ -14,7 +14,8 @@
             overflow: visible;
         }
 
-        .k-virtual-list > .k-item {
+        .k-virtual-list > .k-item,
+        .k-virtual-list .k-virtual-content .k-list-item {
             position: relative;
         }
     </style>
@@ -26,23 +27,21 @@
         <span>Universal</span>
         <span>Universal virtual</span>
         <span>Universal (rtl)</span>
-        <span>Universal virtual(rtl)</span>
+        <span>Universal virtual (rtl)</span>
 
         <section>
             <div class="k-animation-container">
                 <div class="k-popup k-list-container">
-                    <div class="k-list-scroller">
-                        <ul class="k-list">
-                            <li class="k-item">Baseball</li>
-                            <li class="k-item">Basketball</li>
-                            <li class="k-item">Cricket</li>
-                            <li class="k-item">Field Hockey</li>
-                            <li class="k-item">Football</li>
-                            <li class="k-item">Table Tennis</li>
-                            <li class="k-item">Tennis</li>
-                            <li class="k-item">Volleyball</li>
-                        </ul>
-                    </div>
+                    <select is="List">
+                        <option>Baseball</option>
+                        <option>Basketball</option>
+                        <option>Cricket</option>
+                        <option>Field Hockey</option>
+                        <option>Football</option>
+                        <option>Table Tennis</option>
+                        <option>Tennis</option>
+                        <option>Volleyball</option>
+                    </select>
                 </div>
             </div>
         </section>
@@ -50,20 +49,16 @@
         <section>
             <div class="k-animation-container">
                 <div class="k-popup k-list-container">
-                    <div class="k-virtual-wrap">
-                        <div class="k-virtual-content">
-                            <ul class="k-list k-virtual-list">
-                                <li class="k-item k-virtual-item">Baseball</li>
-                                <li class="k-item k-virtual-item">Basketball</li>
-                                <li class="k-item k-virtual-item">Cricket</li>
-                                <li class="k-item k-virtual-item">Field Hockey</li>
-                                <li class="k-item k-virtual-item">Football</li>
-                                <li class="k-item k-virtual-item">Table Tennis</li>
-                                <li class="k-item k-virtual-item">Tennis</li>
-                                <li class="k-item k-virtual-item">Volleyball</li>
-                            </ul>
-                        </div>
-                    </div>
+                    <select is="List" virtualization>
+                        <option>Baseball</option>
+                        <option>Basketball</option>
+                        <option>Cricket</option>
+                        <option>Field Hockey</option>
+                        <option>Football</option>
+                        <option>Table Tennis</option>
+                        <option>Tennis</option>
+                        <option>Volleyball</option>
+                    </select>
                 </div>
             </div>
         </section>
@@ -71,18 +66,16 @@
         <section dir="rtl">
             <div class="k-animation-container">
                 <div class="k-popup k-list-container">
-                    <div class="k-list-scroller">
-                        <ul class="k-list">
-                            <li class="k-item">Baseball</li>
-                            <li class="k-item">Basketball</li>
-                            <li class="k-item">Cricket</li>
-                            <li class="k-item">Field Hockey</li>
-                            <li class="k-item">Football</li>
-                            <li class="k-item">Table Tennis</li>
-                            <li class="k-item">Tennis</li>
-                            <li class="k-item">Volleyball</li>
-                        </ul>
-                    </div>
+                    <select is="List">
+                        <option>Baseball</option>
+                        <option>Basketball</option>
+                        <option>Cricket</option>
+                        <option>Field Hockey</option>
+                        <option>Football</option>
+                        <option>Table Tennis</option>
+                        <option>Tennis</option>
+                        <option>Volleyball</option>
+                    </select>
                 </div>
             </div>
         </section>
@@ -90,47 +83,38 @@
         <section dir="rtl">
             <div class="k-animation-container">
                 <div class="k-popup k-list-container">
-                    <div class="k-virtual-wrap">
-                        <div class="k-virtual-content">
-                            <ul class="k-list k-virtual-list">
-                                <li class="k-item k-virtual-item">Baseball</li>
-                                <li class="k-item k-virtual-item">Basketball</li>
-                                <li class="k-item k-virtual-item">Cricket</li>
-                                <li class="k-item k-virtual-item">Field Hockey</li>
-                                <li class="k-item k-virtual-item">Football</li>
-                                <li class="k-item k-virtual-item">Table Tennis</li>
-                                <li class="k-item k-virtual-item">Tennis</li>
-                                <li class="k-item k-virtual-item">Volleyball</li>
-                            </ul>
-                        </div>
-                    </div>
+                    <select is="List" virtualization>
+                        <option>Baseball</option>
+                        <option>Basketball</option>
+                        <option>Cricket</option>
+                        <option>Field Hockey</option>
+                        <option>Football</option>
+                        <option>Table Tennis</option>
+                        <option>Tennis</option>
+                        <option>Volleyball</option>
+                    </select>
                 </div>
             </div>
         </section>
 
-        <span>Angular</span>
-        <span>Angular virtual</span>
-        <span>Angular (rtl)</span>
-        <span>Angular virtual(rtl)</span>
+        <span>Universal</span>
+        <span>Universal virtual</span>
+        <span>Universal (rtl)</span>
+        <span>Universal virtual (rtl)</span>
 
         <section>
             <kendo-popup class="k-animation-container k-animation-container-shown">
                 <div class="k-popup k-list-container">
-                    <kendo-list>
-                        <div class="k-list-scroller">
-                            <ul class="k-list">
-                                <li class="k-item">Baseball</li>
-                                <li class="k-item">Basketball</li>
-                                <li class="k-item">Cricket</li>
-                                <li class="k-item">Field Hockey</li>
-                                <li class="k-item">Football</li>
-                                <li class="k-item">Table Tennis</li>
-                                <li class="k-item">Tennis</li>
-                                <li class="k-item">Volleyball</li>
-                            </ul>
-                        </div>
-                    </kendo-list>
-                    <kendo-resize-sensor></kendo-resize-sensor>
+                    <select is="List" framework="angular">
+                        <option>Baseball</option>
+                        <option>Basketball</option>
+                        <option>Cricket</option>
+                        <option>Field Hockey</option>
+                        <option>Football</option>
+                        <option>Table Tennis</option>
+                        <option>Tennis</option>
+                        <option>Volleyball</option>
+                    </select>
                 </div>
             </kendo-popup>
         </section>
@@ -138,42 +122,16 @@
         <section>
             <kendo-popup class="k-animation-container k-animation-container-shown">
                 <div class="k-popup k-list-container">
-                    <kendo-list>
-                        <div class="k-virtual-content">
-                            <ul class="k-list k-virtual-list">
-                                <li class="k-item k-virtual-item">Baseball</li>
-                                <li class="k-item k-virtual-item">Basketball</li>
-                                <li class="k-item k-virtual-item">Cricket</li>
-                                <li class="k-item k-virtual-item">Field Hockey</li>
-                                <li class="k-item k-virtual-item">Football</li>
-                                <li class="k-item k-virtual-item">Table Tennis</li>
-                                <li class="k-item k-virtual-item">Tennis</li>
-                                <li class="k-item k-virtual-item">Volleyball</li>
-                            </ul>
-                        </div>
-                    </kendo-list>
-                </div>
-             </kendo-popup>
-        </section>
-
-        <section dir="rtl">
-            <kendo-popup class="k-animation-container k-animation-container-shown">
-                <div class="k-popup k-list-container">
-                    <kendo-list>
-                        <div class="k-list-scroller">
-                            <ul class="k-list">
-                                <li class="k-item">Baseball</li>
-                                <li class="k-item">Basketball</li>
-                                <li class="k-item">Cricket</li>
-                                <li class="k-item">Field Hockey</li>
-                                <li class="k-item">Football</li>
-                                <li class="k-item">Table Tennis</li>
-                                <li class="k-item">Tennis</li>
-                                <li class="k-item">Volleyball</li>
-                            </ul>
-                        </div>
-                    </kendo-list>
-                    <kendo-resize-sensor></kendo-resize-sensor>
+                    <select is="List" framework="angular" virtualization>
+                        <option>Baseball</option>
+                        <option>Basketball</option>
+                        <option>Cricket</option>
+                        <option>Field Hockey</option>
+                        <option>Football</option>
+                        <option>Table Tennis</option>
+                        <option>Tennis</option>
+                        <option>Volleyball</option>
+                    </select>
                 </div>
             </kendo-popup>
         </section>
@@ -181,22 +139,35 @@
         <section dir="rtl">
             <kendo-popup class="k-animation-container k-animation-container-shown">
                 <div class="k-popup k-list-container">
-                    <kendo-list>
-                        <div class="k-virtual-content">
-                            <ul class="k-list k-virtual-list">
-                                <li class="k-item k-virtual-item">Baseball</li>
-                                <li class="k-item k-virtual-item">Basketball</li>
-                                <li class="k-item k-virtual-item">Cricket</li>
-                                <li class="k-item k-virtual-item">Field Hockey</li>
-                                <li class="k-item k-virtual-item">Football</li>
-                                <li class="k-item k-virtual-item">Table Tennis</li>
-                                <li class="k-item k-virtual-item">Tennis</li>
-                                <li class="k-item k-virtual-item">Volleyball</li>
-                            </ul>
-                        </div>
-                    </kendo-list>
+                    <select is="List" framework="angular">
+                        <option>Baseball</option>
+                        <option>Basketball</option>
+                        <option>Cricket</option>
+                        <option>Field Hockey</option>
+                        <option>Football</option>
+                        <option>Table Tennis</option>
+                        <option>Tennis</option>
+                        <option>Volleyball</option>
+                    </select>
                 </div>
-             </kendo-popup>
+            </kendo-popup>
+        </section>
+
+        <section dir="rtl">
+            <kendo-popup class="k-animation-container k-animation-container-shown">
+                <div class="k-popup k-list-container">
+                    <select is="List" framework="angular" virtualization>
+                        <option>Baseball</option>
+                        <option>Basketball</option>
+                        <option>Cricket</option>
+                        <option>Field Hockey</option>
+                        <option>Football</option>
+                        <option>Table Tennis</option>
+                        <option>Tennis</option>
+                        <option>Volleyball</option>
+                    </select>
+                </div>
+            </kendo-popup>
         </section>
 
     </div>
