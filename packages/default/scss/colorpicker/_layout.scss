@@ -99,7 +99,8 @@
         .k-select {
             padding: $picker-select-padding-y $picker-select-padding-x;
             width: if( $use-picker-select-width, $button-inner-calc-size, null );
-            border-width: 0 0 0 $colorpicker-select-border-width;
+            border-width: 0;
+            border-inline-start-width: $picker-select-border-width;
             border-style: solid;
             border-color: inherit;
             box-sizing: border-box;
@@ -111,15 +112,6 @@
             cursor: pointer;
 
             .k-icon {}
-        }
-
-        .k-rtl &,
-        &[dir="rtl"] {
-            .k-picker-wrap {
-                .k-select {
-                    border-width: 0 $colorpicker-select-border-width 0 0;
-                }
-            }
         }
 
     }

@@ -42,7 +42,8 @@
         .k-select {
             padding: $combobox-select-padding-y $combobox-select-padding-x;
             width: if( $use-picker-select-width, $combobox-select-width, null );
-            border-width: 0 0 0 $combobox-select-border-width;
+            border-width: 0;
+            border-inline-start-width: $picker-select-border-width;
             box-sizing: border-box;
             border-style: solid;
             display: flex;
@@ -56,10 +57,6 @@
         &[dir="rtl"],
         .k-rtl & {
             text-align: right;
-
-            .k-select {
-                border-width: 0 $combobox-select-border-width 0 0;
-            }
         }
     }
 }
