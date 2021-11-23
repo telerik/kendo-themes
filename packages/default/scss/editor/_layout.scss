@@ -163,13 +163,6 @@
     .k-editor-toolbar {
         border-width: 0 0 $toolbar-border-width 0;
 
-        // Group
-        .k-tool-group {
-            .k-widget ~ .k-widget {
-                margin-inline-start: $toolbar-spacing;
-            }
-        }
-
         // Tool
         .k-tool {
             padding: $button-padding-y;
