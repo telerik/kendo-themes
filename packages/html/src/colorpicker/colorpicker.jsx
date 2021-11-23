@@ -52,7 +52,8 @@ function ColorpickerStatic(props) {
 
     let colorpickerClasses = [
         ownClassName,
-        'k-colorpicker'
+        'k-colorpicker',
+        'k-icon-picker'
     ];
 
     let ariaAttr = aria
@@ -92,7 +93,7 @@ function ColorpickerStatic(props) {
     return (
         <PickerStatic className={colorpickerClasses} {...ariaAttr} {...htmlAttributes}>
             {prefix}
-            <InputInnerSpanStatic showValue={false} valueIcon={<ColorPreviewStatic className="k-icon k-value-icon" color={value} iconName={iconName} />} />
+            <InputInnerSpanStatic showValue={false} valueIcon={<ColorPreviewStatic className="k-value-icon" color={value} iconName={iconName} />} />
             {suffix}
             <ButtonStatic className="k-input-button" icon="arrow-s" rounded="none" size={size} fillMode={fillMode}></ButtonStatic>
         </PickerStatic>
