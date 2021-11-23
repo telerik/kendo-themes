@@ -32,9 +32,6 @@ $chat-bubble-border-radius-sm: 2px !default;
 $chat-avatar-size: 32px !default;
 $chat-avatar-spacing: $chat-item-spacing-x !default;
 
-$chat-message-box-padding-x: $input-padding-x !default;
-$chat-message-box-padding-y: $input-padding-y !default;
-
 $chat-toolbar-padding-x: $toolbar-padding-x !default;
 $chat-toolbar-padding-y: $toolbar-padding-y !default;
 $chat-toolbar-spacing: $toolbar-spacing !default;
@@ -78,10 +75,5 @@ $chat-message-box-bg: $component-bg !default;
 $chat-message-box-text: $input-text !default;
 $chat-message-box-border: inherit !default;
 $chat-message-box-focus-shadow: 0 0 40px rgba( $input-text, .1 ) !default;
-
-$chat-message-box-button-hover-text: $primary !default;
-
-$chat-toolbar-box-button-hover-text: $primary !default;
-$chat-toolbar-box-button-hover-bg: transparent !default;
 
 $chat-toolbar-box-scroll-button-shadow: 0 0 20px 5px $chat-bg !default;

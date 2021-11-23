@@ -86,9 +86,6 @@
         .k-message-box.k-state-focused {
             @include box-shadow( $chat-message-box-focus-shadow );
         }
-        .k-message-box .k-button:hover {
-            @include fill( $chat-message-box-button-hover-text );
-        }
 
     }
 
@@ -101,13 +98,6 @@
             $chat-toolbar-bg,
             $chat-toolbar-border
         );
-
-        .k-button:hover {
-            @include fill(
-                $chat-toolbar-box-button-hover-text,
-                $chat-toolbar-box-button-hover-bg
-            );
-        }
 
         .k-scroll-button {
             @include fill( $bg: $chat-bg );

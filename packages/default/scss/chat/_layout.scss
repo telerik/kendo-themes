@@ -268,10 +268,10 @@
     .k-message-box {
         width: 100%;
         height: auto;
-        padding: $chat-message-box-padding-y $chat-message-box-padding-x;
         box-sizing: border-box;
         border-width: 1px 0 0;
         border-style: solid;
+        border-radius: 0;
         flex: none;
         display: flex;
         flex-flow: row nowrap;
@@ -285,9 +285,7 @@
         }
 
         // Input
-        .k-input {
-            padding: 0;
-        }
+        .k-input {}
 
         .k-button {
             padding: 0;
