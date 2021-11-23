@@ -14,7 +14,8 @@
             overflow: visible;
         }
 
-        .k-virtual-list > .k-item {
+        .k-virtual-list > .k-item,
+        .k-virtual-list .k-virtual-content .k-list-item {
             position: relative;
         }
     </style>
@@ -26,22 +27,23 @@
         <span>Universal</span>
         <span>Universal virtual</span>
         <span>Universal (rtl)</span>
-        <span>Universal virtual(rtl)</span>
+        <span>Universal virtual (rtl)</span>
 
         <section>
             <div class="k-animation-container">
                 <div class="k-popup k-list-container">
-                    <div class="k-group-header">Group 1</div>
-                    <div class="k-list-scroller">
-                        <ul class="k-list">
-                            <li class="k-item">List item 1.1</li>
-                            <li class="k-item">List item 1.2</li>
-                            <li class="k-item">List item 1.3</li>
-                            <li class="k-item k-first">List item 2.1<div class="k-group">Group 2</div></li>
-                            <li class="k-item">List item 2.1</li>
-                            <li class="k-item">List item 2.1</li>
-                        </ul>
-                    </div>
+                    <select is="List">
+                        <optgroup label="Group 1" root>
+                            <option>List item 1.1</option>
+                            <option>List item 1.2</option>
+                            <option>List item 1.3</option>
+                        </optgroup>
+                        <optgroup label="Group 2">
+                            <option>List item 2.1</option>
+                            <option>List item 2.2</option>
+                            <option>List item 2.3</option>
+                        </optgroup>
+                    </select>
                 </div>
             </div>
         </section>
@@ -49,17 +51,18 @@
         <section>
             <div class="k-animation-container">
                 <div class="k-popup k-list-container">
-                    <div class="k-group-header">Group 1</div>
-                    <div class="k-list-scroller k-virtual-content">
-                        <ul class="k-list k-virtual-list">
-                            <li class="k-item k-virtual-item">List item 1.1</li>
-                            <li class="k-item k-virtual-item">List item 1.2</li>
-                            <li class="k-item k-virtual-item">List item 1.3</li>
-                            <li class="k-item k-virtual-item k-first">List item 2.1<div class="k-group">Group 2</div></li>
-                            <li class="k-item k-virtual-item">List item 2.1</li>
-                            <li class="k-item k-virtual-item">List item 2.1</li>
-                        </ul>
-                    </div>
+                    <select is="List" virtualization>
+                        <optgroup label="Group 1" root>
+                            <option>List item 1.1</option>
+                            <option>List item 1.2</option>
+                            <option>List item 1.3</option>
+                        </optgroup>
+                        <optgroup label="Group 2">
+                            <option>List item 2.1</option>
+                            <option>List item 2.2</option>
+                            <option>List item 2.3</option>
+                        </optgroup>
+                    </select>
                 </div>
             </div>
         </section>
@@ -67,17 +70,18 @@
         <section dir="rtl">
             <div class="k-animation-container">
                 <div class="k-popup k-list-container">
-                    <div class="k-group-header">Group 1</div>
-                    <div class="k-list-scroller">
-                        <ul class="k-list">
-                            <li class="k-item">List item 1.1</li>
-                            <li class="k-item">List item 1.2</li>
-                            <li class="k-item">List item 1.3</li>
-                            <li class="k-item k-first">List item 2.1<div class="k-group">Group 2</div></li>
-                            <li class="k-item">List item 2.1</li>
-                            <li class="k-item">List item 2.1</li>
-                        </ul>
-                    </div>
+                    <select is="List">
+                        <optgroup label="Group 1" root>
+                            <option>List item 1.1</option>
+                            <option>List item 1.2</option>
+                            <option>List item 1.3</option>
+                        </optgroup>
+                        <optgroup label="Group 2">
+                            <option>List item 2.1</option>
+                            <option>List item 2.2</option>
+                            <option>List item 2.3</option>
+                        </optgroup>
+                    </select>
                 </div>
             </div>
         </section>
@@ -85,17 +89,18 @@
         <section dir="rtl">
             <div class="k-animation-container">
                 <div class="k-popup k-list-container">
-                    <div class="k-group-header">Group 1</div>
-                    <div class="k-list-scroller k-virtual-content">
-                        <ul class="k-list k-virtual-list">
-                            <li class="k-item k-virtual-item">List item 1.1</li>
-                            <li class="k-item k-virtual-item">List item 1.2</li>
-                            <li class="k-item k-virtual-item">List item 1.3</li>
-                            <li class="k-item k-virtual-item k-first">List item 2.1<div class="k-group">Group 2</div></li>
-                            <li class="k-item k-virtual-item">List item 2.1</li>
-                            <li class="k-item k-virtual-item">List item 2.1</li>
-                        </ul>
-                    </div>
+                    <select is="List" virtualization>
+                        <optgroup label="Group 1" root>
+                            <option>List item 1.1</option>
+                            <option>List item 1.2</option>
+                            <option>List item 1.3</option>
+                        </optgroup>
+                        <optgroup label="Group 2">
+                            <option>List item 2.1</option>
+                            <option>List item 2.2</option>
+                            <option>List item 2.3</option>
+                        </optgroup>
+                    </select>
                 </div>
             </div>
         </section>
@@ -103,25 +108,23 @@
         <span>Angular</span>
         <span>Angular virtual</span>
         <span>Angular (rtl)</span>
-        <span>Angular virtual(rtl)</span>
+        <span>Angular virtual (rtl)</span>
 
         <section>
             <div class="k-animation-container">
                 <div class="k-popup k-list-container">
-                    <kendo-list>
-                        <div class="k-outer-group-header">Group 1</div>
-                        <div class="k-list-scroller">
-                            <ul class="k-list">
-                                <li class="k-item">List item 1.1</li>
-                                <li class="k-item">List item 1.2</li>
-                                <li class="k-item">List item 1.3</li>
-                                <li class="k-outer-group-header">Group 2</li>
-                                <li class="k-item">List item 2.1</li>
-                                <li class="k-item">List item 2.1</li>
-                                <li class="k-item">List item 2.1</li>
-                            </ul>
-                        </div>
-                    </kendo-list>
+                    <select is="List" framework="angular">
+                        <optgroup label="Group 1" root>
+                            <option>List item 1.1</option>
+                            <option>List item 1.2</option>
+                            <option>List item 1.3</option>
+                        </optgroup>
+                        <optgroup label="Group 2">
+                            <option>List item 2.1</option>
+                            <option>List item 2.2</option>
+                            <option>List item 2.3</option>
+                        </optgroup>
+                    </select>
                 </div>
             </div>
         </section>
@@ -129,20 +132,18 @@
         <section>
             <div class="k-animation-container">
                 <div class="k-popup k-list-container">
-                    <kendo-list>
-                        <div class="k-outer-group-header">Group 1</div>
-                        <div class="k-list-scroller k-virtual-content">
-                            <ul class="k-list k-virtual-list">
-                                <li class="k-item k-virtual-item">List item 1.1</li>
-                                <li class="k-item k-virtual-item">List item 1.2</li>
-                                <li class="k-item k-virtual-item">List item 1.3</li>
-                                <li class="k-outer-group-header">Group 2</li>
-                                <li class="k-item k-virtual-item">List item 2.1</li>
-                                <li class="k-item k-virtual-item">List item 2.1</li>
-                                <li class="k-item k-virtual-item">List item 2.1</li>
-                            </ul>
-                        </div>
-                    </kendo-list>
+                    <select is="List" framework="angular" virtualization>
+                        <optgroup label="Group 1" root>
+                            <option>List item 1.1</option>
+                            <option>List item 1.2</option>
+                            <option>List item 1.3</option>
+                        </optgroup>
+                        <optgroup label="Group 2">
+                            <option>List item 2.1</option>
+                            <option>List item 2.2</option>
+                            <option>List item 2.3</option>
+                        </optgroup>
+                    </select>
                 </div>
             </div>
         </section>
@@ -150,20 +151,18 @@
         <section dir="rtl">
             <div class="k-animation-container">
                 <div class="k-popup k-list-container">
-                    <kendo-list>
-                        <div class="k-outer-group-header">Group 1</div>
-                        <div class="k-list-scroller">
-                            <ul class="k-list">
-                                <li class="k-item">List item 1.1</li>
-                                <li class="k-item">List item 1.2</li>
-                                <li class="k-item">List item 1.3</li>
-                                <li class="k-outer-group-header">Group 2</li>
-                                <li class="k-item">List item 2.1</li>
-                                <li class="k-item">List item 2.1</li>
-                                <li class="k-item">List item 2.1</li>
-                            </ul>
-                        </div>
-                    </kendo-list>
+                    <select is="List" framework="angular">
+                        <optgroup label="Group 1" root>
+                            <option>List item 1.1</option>
+                            <option>List item 1.2</option>
+                            <option>List item 1.3</option>
+                        </optgroup>
+                        <optgroup label="Group 2">
+                            <option>List item 2.1</option>
+                            <option>List item 2.2</option>
+                            <option>List item 2.3</option>
+                        </optgroup>
+                    </select>
                 </div>
             </div>
         </section>
@@ -171,20 +170,18 @@
         <section dir="rtl">
             <div class="k-animation-container">
                 <div class="k-popup k-list-container">
-                    <kendo-list>
-                        <div class="k-outer-group-header">Group 1</div>
-                        <div class="k-list-scroller k-virtual-content">
-                            <ul class="k-list k-virtual-list">
-                                <li class="k-item k-virtual-item">List item 1.1</li>
-                                <li class="k-item k-virtual-item">List item 1.2</li>
-                                <li class="k-item k-virtual-item">List item 1.3</li>
-                                <li class="k-outer-group-header">Group 2</li>
-                                <li class="k-item k-virtual-item">List item 2.1</li>
-                                <li class="k-item k-virtual-item">List item 2.1</li>
-                                <li class="k-item k-virtual-item">List item 2.1</li>
-                            </ul>
-                        </div>
-                    </kendo-list>
+                    <select is="List" framework="angular" virtualization>
+                        <optgroup label="Group 1" root>
+                            <option>List item 1.1</option>
+                            <option>List item 1.2</option>
+                            <option>List item 1.3</option>
+                        </optgroup>
+                        <optgroup label="Group 2">
+                            <option>List item 2.1</option>
+                            <option>List item 2.2</option>
+                            <option>List item 2.3</option>
+                        </optgroup>
+                    </select>
                 </div>
             </div>
         </section>
