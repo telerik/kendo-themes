@@ -25,7 +25,10 @@
 
 
     // Avatar icon
-    .k-avatar-icon {}
+    .k-avatar-icon {
+        display: flex;
+        align-items: center;
+    }
 
 
     // Avatar image
