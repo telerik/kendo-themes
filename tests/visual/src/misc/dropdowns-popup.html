@@ -24,12 +24,8 @@
             position: relative;
         }
 
-        .k-virtual-content > .k-virtual-list > .k-virtual-item,
-        .k-first.k-virtual-item {
+        .k-virtual-list .k-virtual-content .k-list-item {
             position: relative;
-            overflow: hidden;
-            box-sizing: border-box;
-            height: 28px;
         }
     </style>
 </head>
@@ -42,20 +38,34 @@
 
             <kendo-popup class="k-animation-container k-animation-container-shown">
                 <div class="k-popup k-list-container k-reset">
-                    <kendo-list>
-                        <div class="k-list-scroller">
-                            <ul class="k-list k-reset">
-                                <li class="k-item">Baseball</li>
-                                <li class="k-item">Basketball</li>
-                                <li class="k-item">Cricket</li>
-                                <li class="k-item">Field Hockey</li>
-                                <li class="k-item">Football</li>
-                                <li class="k-item">Table Tennis</li>
-                                <li class="k-item">Tennis</li>
-                                <li class="k-item">Volleyball</li>
-                            </ul>
+                    <div is="List" size="medium">
+                        <div is="ListContent">
+                            <div is="ListItem">
+                                <span is="ListItemText">Baseball</span>
+                            </div>
+                            <div is="ListItem">
+                                <span is="ListItemText">Basketball</span>
+                            </div>
+                            <div is="ListItem">
+                                <span is="ListItemText">Cricket</span>
+                            </div>
+                            <div is="ListItem">
+                                <span is="ListItemText">Field Hockey</span>
+                            </div>
+                            <div is="ListItem">
+                                <span is="ListItemText">Football</span>
+                            </div>
+                            <div is="ListItem">
+                                <span is="ListItemText">Table Tennis</span>
+                            </div>
+                            <div is="ListItem">
+                                <span is="ListItemText">Tennis</span>
+                            </div>
+                            <div is="ListItem">
+                                <span is="ListItemText">Volleyball</span>
+                            </div>
                         </div>
-                    </kendo-list>
+                    </div>
                     <kendo-resize-sensor></kendo-resize-sensor>
                 </div>
             </kendo-popup>
@@ -66,23 +76,34 @@
 
             <kendo-popup class="k-animation-container k-animation-container-shown">
                 <div class="k-popup k-list-container k-reset">
-                    <kendo-list>
-                        <div class="k-virtual-content">
-                            <ul class="k-list k-reset k-virtual-list">
-                                <li class="k-item k-virtual-item">Baseball</li>
-                                <li class="k-item k-virtual-item">Basketball</li>
-                                <li class="k-item k-virtual-item">Cricket</li>
-                                <li class="k-item k-virtual-item">Field Hockey</li>
-                                <li class="k-item k-virtual-item">Football</li>
-                                <li class="k-item k-virtual-item">Table Tennis</li>
-                                <li class="k-item k-virtual-item">Tennis</li>
-                                <li class="k-item k-virtual-item">Volleyball</li>
-                            </ul>
-                            <div class="k-height-container">
-                                <div></div>
+                    <div is="List" size="medium" virtualization>
+                        <div is="ListContent" virtualization>
+                            <div is="ListItem" virtualization>
+                                <span is="ListItemText">Baseball</span>
+                            </div>
+                            <div is="ListItem" virtualization>
+                                <span is="ListItemText">Basketball</span>
+                            </div>
+                            <div is="ListItem" virtualization>
+                                <span is="ListItemText">Cricket</span>
+                            </div>
+                            <div is="ListItem" virtualization>
+                                <span is="ListItemText">Field Hockey</span>
+                            </div>
+                            <div is="ListItem" virtualization>
+                                <span is="ListItemText">Football</span>
+                            </div>
+                            <div is="ListItem" virtualization>
+                                <span is="ListItemText">Table Tennis</span>
+                            </div>
+                            <div is="ListItem" virtualization>
+                                <span is="ListItemText">Tennis</span>
+                            </div>
+                            <div is="ListItem" virtualization>
+                                <span is="ListItemText">Volleyball</span>
                             </div>
                         </div>
-                    </kendo-list>
+                    </div>
                     <kendo-resize-sensor></kendo-resize-sensor>
                 </div>
              </kendo-popup>
@@ -93,17 +114,33 @@
 
             <div class="k-animation-container" style="overflow: visible;">
                 <div class="k-list-container k-popup k-group k-reset k-state-border-up">
-                    <div class="k-list-scroller">
-                        <ul class="k-list k-reset">
-                            <li class="k-item">Baseball</li>
-                            <li class="k-item">Basketball</li>
-                            <li class="k-item">Cricket</li>
-                            <li class="k-item">Field Hockey</li>
-                            <li class="k-item">Football</li>
-                            <li class="k-item">Table Tennis</li>
-                            <li class="k-item">Tennis</li>
-                            <li class="k-item">Volleyball</li>
-                        </ul>
+                    <div is="List" size="medium">
+                        <div is="ListContent">
+                            <div is="ListItem">
+                                <span is="ListItemText">Baseball</span>
+                            </div>
+                            <div is="ListItem">
+                                <span is="ListItemText">Basketball</span>
+                            </div>
+                            <div is="ListItem">
+                                <span is="ListItemText">Cricket</span>
+                            </div>
+                            <div is="ListItem">
+                                <span is="ListItemText">Field Hockey</span>
+                            </div>
+                            <div is="ListItem">
+                                <span is="ListItemText">Football</span>
+                            </div>
+                            <div is="ListItem">
+                                <span is="ListItemText">Table Tennis</span>
+                            </div>
+                            <div is="ListItem">
+                                <span is="ListItemText">Tennis</span>
+                            </div>
+                            <div is="ListItem">
+                                <span is="ListItemText">Volleyball</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -114,20 +151,31 @@
 
             <div class="k-animation-container" style="overflow: visible;">
                 <div class="k-list-container k-popup k-group k-reset k-state-border-up">
-                    <div class="k-virtual-wrap">
-                        <div class="k-virtual-content">
-                            <ul class="k-list k-reset k-virtual-list">
-                                <li class="k-item k-virtual-item">Baseball</li>
-                                <li class="k-item k-virtual-item">Basketball</li>
-                                <li class="k-item k-virtual-item">Cricket</li>
-                                <li class="k-item k-virtual-item">Field Hockey</li>
-                                <li class="k-item k-virtual-item">Football</li>
-                                <li class="k-item k-virtual-item">Table Tennis</li>
-                                <li class="k-item k-virtual-item">Tennis</li>
-                                <li class="k-item k-virtual-item">Volleyball</li>
-                            </ul>
-                            <div class="k-height-container">
-                                <div></div>
+                    <div is="List" size="medium" virtualization>
+                        <div is="ListContent" virtualization>
+                            <div is="ListItem" virtualization>
+                                <span is="ListItemText">Baseball</span>
+                            </div>
+                            <div is="ListItem" virtualization>
+                                <span is="ListItemText">Basketball</span>
+                            </div>
+                            <div is="ListItem" virtualization>
+                                <span is="ListItemText">Cricket</span>
+                            </div>
+                            <div is="ListItem" virtualization>
+                                <span is="ListItemText">Field Hockey</span>
+                            </div>
+                            <div is="ListItem" virtualization>
+                                <span is="ListItemText">Football</span>
+                            </div>
+                            <div is="ListItem" virtualization>
+                                <span is="ListItemText">Table Tennis</span>
+                            </div>
+                            <div is="ListItem" virtualization>
+                                <span is="ListItemText">Tennis</span>
+                            </div>
+                            <div is="ListItem" virtualization>
+                                <span is="ListItemText">Volleyball</span>
                             </div>
                         </div>
                     </div>
@@ -140,11 +188,9 @@
 
             <kendo-popup class="k-animation-container k-animation-container-shown">
                 <div class="k-popup k-list-container k-reset">
-                    <kendo-list>
-                        <div class="k-list-scroller">
-                            <ul class="k-list k-reset"></ul>
-                        </div>
-                    </kendo-list>
+                    <div is="List" size="medium">
+                        <div is="ListContent"></div>
+                    </div>
                     <div class="k-nodata">
                         <div>NO DATA FOUND</div>
                     </div>
@@ -158,8 +204,8 @@
 
             <div class="k-animation-container" style="overflow: visible;">
                 <div class="k-list-container k-popup k-group k-reset k-state-border-up">
-                    <div class="k-list-scroller">
-                        <ul class="k-list k-reset"></ul>
+                    <div is="List" size="medium">
+                        <div is="ListContent"></div>
                     </div>
                     <div class="k-nodata">
                         <div>No data found.</div>

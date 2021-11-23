@@ -21,12 +21,8 @@
         .upper {
             text-transform: uppercase;
         }
-        .k-virtual-content > .k-virtual-list > .k-virtual-item,
-        .k-first.k-virtual-item {
+        .k-virtual-list .k-virtual-content .k-list-item {
             position: relative;
-            overflow: hidden;
-            box-sizing: border-box;
-            height: 28px;
         }
     </style>
 </head>
@@ -37,51 +33,49 @@
 
         <kendo-popup class="k-animation-container k-animation-container-shown" style="width: 174px;">
             <div class="k-popup k-list-container k-reset">
-                <kendo-list>
-                    <div class="k-outer-group-header k-first k-virtual-item">
+                <div is="List" size="medium" virtualization>
+                    <div is="ListGroupHeader" stuck>
                         <strong class="upper">technical support</strong>
                     </div>
-                    <div class="k-virtual-content" style="height: 350px;">
-                        <ul class="k-list k-reset k-virtual-list">
-                            <li class="k-item k-virtual-item">
-                                Andrew Callahan Callahan Callahan
-                            </li>
-                            <li class="k-item k-virtual-item">
-                                Andrew Davolio
-                            </li>
-                            <li class="k-item k-virtual-item">
-                                Nige Peacock
-                            </li>
-                            <li class="k-item k-virtual-item">
-                                Michael Dodsworth Dodsworth
-                            </li>
-                            <li class="k-item k-virtual-item">
-                                Margaret Suyama
-                            </li>
-                            <li class="k-outer-group-header k-virtual-item">
-                                <strong class="upper">software developer</strong>
-                            </li>
-                            <li class="k-item k-virtual-item">
-                                Anne Callahan
-                            </li>
-                            <li class="k-item k-virtual-item">
-                                Andrew Dodsworth
-                            </li>
-                            <li class="k-item k-virtual-item">
-                                Andrew Davolio
-                            </li>
-                            <li class="k-outer-group-header k-virtual-item">
-                                <strong class="upper">vice president, sales</strong>
-                            </li>
-                            <li class="k-item k-virtual-item">
-                                Margaret King
-                            </li>
-                            <li class="k-item k-virtual-item">
-                                Steven Suyama
-                            </li>
-                        </ul>
+                    <div is="ListContent" virtualization>
+                        <div is="ListItem" virtualization>
+                            <span is="ListItemText">Andrew Callahan Callahan Callahan</span>
+                        </div>
+                        <div is="ListItem" virtualization>
+                            <span is="ListItemText">Andrew Davolio</span>
+                        </div>
+                        <div is="ListItem" virtualization>
+                            <span is="ListItemText">Nige Peacock</span>
+                        </div>
+                        <div is="ListItem" virtualization>
+                            <span is="ListItemText">Michael Dodsworth Dodsworth</span>
+                        </div>
+                        <div is="ListItem" virtualization>
+                            <span is="ListItemText">Margaret Suyama</span>
+                        </div>
+                        <div is="ListGroupHeader" virtualization>
+                            <strong class="upper">software developer</strong>
+                        </div>
+                        <div is="ListItem" virtualization>
+                            <span is="ListItemText">Anne Callahan</span>
+                        </div>
+                        <div is="ListItem" virtualization>
+                            <span is="ListItemText">Andrew Dodsworth</span>
+                        </div>
+                        <div is="ListItem" virtualization>
+                            <span is="ListItemText">Andrew Davolio</span>
+                        </div>
+                        <div is="ListGroupHeader" virtualization>
+                            <strong class="upper">vice president, sales</strong>
+                        </div>
+                        <div is="ListItem" virtualization>
+                            <span is="ListItemText">Margaret King</span>
+                        </div>
+                        <div is="ListItem" virtualization>
+                            <span is="ListItemText">Steven Suyama</span>
+                        </div>
                     </div>
-                </kendo-list>
+                </div>
             </div>
         </kendo-popup>
 
