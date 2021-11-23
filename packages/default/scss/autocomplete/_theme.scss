@@ -58,19 +58,19 @@
         &.k-state-invalid,
         &.ng-invalid.ng-touched,
         &.ng-invalid.ng-dirty {
-            @include fill(
-                $autocomplete-invalid-text,
-                $autocomplete-invalid-bg,
-                $autocomplete-invalid-border
-            );
+            border-color: $invalid-border;
+
+            .k-input-validation-icon {
+                color: $invalid-text;
+            }
 
             // &:focus-within,
             &.k-state-focused,
             &.k-state-focus {
-                @include box-shadow( $autocomplete-invalid-shadow );
+                @include box-shadow($invalid-shadow);
             }
             &:focus-within {
-                @include box-shadow( $autocomplete-invalid-shadow );
+                @include box-shadow($invalid-shadow);
             }
         }
     }
