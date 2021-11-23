@@ -25,7 +25,7 @@ export * from './icon/index';
 export * from './input/index';
 // export * from './picker/index';
 // export * from './popup/index';
-// export * from './list/index';
+export * from './list/index';
 export * from './avatar/index';
 export * from './menulist/index';
 export * from './menuitem/index';
