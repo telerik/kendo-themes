@@ -35,6 +35,7 @@ function AvatarStatic(props) {
         styles.sizeClass( size, 'k-avatar' ),
         styles.roundedClass( rounded ),
         styles.fillModeClass( fillMode, 'k-avatar' ),
+        styles.shapeClass( shape, 'k-avatar' ),
         styles.themeColorClass( fillMode, themeColor, 'k-avatar' ),
         styles.borderedClass( bordered, 'k-avatar' ),
     ];
@@ -43,8 +44,11 @@ function AvatarStatic(props) {
         ownClassName,
         'k-avatar',
         `k-avatar-${themeColor}`,
+        {
+            'k-avatar-circle': rounded === 'circle',
+            'k-avatar-rounded': rounded !== 'circle' && rounded !== 'none'
+        },
         styles.sizeClass( size, 'k-avatar' ),
-        styles.shapeClass( shape, 'k-avatar' ),
         styles.fillModeClass( fillMode, 'k-avatar' ),
         styles.borderedClass( bordered, 'k-avatar' ),
     ];
@@ -55,20 +59,20 @@ function AvatarStatic(props) {
 
     if (legacy) {
         return (
-            <avatar className={legacyClasses} {...ariaAttr} {...htmlAttributes}>
+            <span className={legacyClasses} {...ariaAttr} {...htmlAttributes}>
                 <span className={`k-avatar-${type}`}>
                     {children}
                 </span>
-            </avatar>
+            </span>
         );
     }
 
     return (
-        <avatar className={avatarClasses} {...ariaAttr} {...htmlAttributes}>
+        <span className={avatarClasses} {...ariaAttr} {...htmlAttributes}>
             <span className={`k-avatar-${type}`}>
                 {children}
             </span>
-        </avatar>
+        </span>
     );
 }
 
