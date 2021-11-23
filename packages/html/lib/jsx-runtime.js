@@ -31,6 +31,8 @@ const attrMap = {
     showclearbutton: 'showClearButton',
     clearbutton: 'clearButton',
 
+    showcheckbox: 'showCheckbox',
+
     // Switch
     onlabel: 'onLabel',
     offlabel: 'offLabel',
@@ -62,6 +64,11 @@ const booleanAttr = new Set([
     'showIcon',
     'showClearButton',
     'showSpinButton',
+
+    'showCheckbox',
+
+    'virtualization',
+    'root',
 
     'aria'
 ]);
