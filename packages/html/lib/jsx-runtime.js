@@ -67,6 +67,10 @@ const booleanAttr = new Set([
     'showSpinButton',
     'showArrow',
 
+    'virtualization',
+    'stuck',
+    'custom',
+
     'aria'
 ]);
 
