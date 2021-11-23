@@ -71,7 +71,10 @@ function DropdownListStatic(props) {
 
     let dropdownListClasses = [
         ownClassName,
-        'k-dropdown'
+        'k-dropdown',
+        {
+            'k-icon-picker': showValue !== true && (valueIcon !== null || valueIconName !== '')
+        }
     ];
 
     let ariaAttr = aria
