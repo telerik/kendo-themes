@@ -47,5 +47,21 @@
             @include disabled( $disabled-styling );
         }
 
+
+        // Invalid
+        &.k-invalid,
+        &.k-state-invalid {
+            border-color: $invalid-border;
+
+            .k-input-validation-icon {
+                color: $invalid-text;
+            }
+
+            &:focus,
+            &.k-state-focus {
+                @include box-shadow($invalid-shadow);
+            }
+        }
+
     }
 }
