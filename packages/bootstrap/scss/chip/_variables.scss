@@ -11,7 +11,7 @@ $kendo-chip-spacing: map-get( $spacing, 2 );
 /// @group chip
 $kendo-chip-padding-x: $padding-x-sm !default;
 $kendo-chip-padding-x-sm: $kendo-chip-padding-x / 2 !default;
-$kendo-chip-padding-x-md: ($kendo-chip-padding-x - map-get( $spacing, 'hair' ))!default;
+$kendo-chip-padding-x-md: ($kendo-chip-padding-x - map-get( $spacing, "hair" )) !default;
 $kendo-chip-padding-x-lg: $kendo-chip-padding-x * 1.25 !default;
 
 /// Vertical padding of the chip.
@@ -45,14 +45,12 @@ $kendo-chip-sizes: (
 
 /// Theme colors map for the chip.
 /// @group chip
-$kendo-chip-theme-colors: map-merge(
-    ( "base": $base-text ),
-    (
-        "error": map-get( $theme-colors, "error" ),
-        "info": map-get( $theme-colors, "info" ),
-        "warning": map-get( $theme-colors, "warning" ),
-        "success": map-get( $theme-colors, "success" )
-    )
+$kendo-chip-theme-colors: (
+    "base": $base-text,
+    "error": map-get( $theme-colors, "error" ),
+    "info": map-get( $theme-colors, "info" ),
+    "warning": map-get( $theme-colors, "warning" ),
+    "success": map-get( $theme-colors, "success" )
 ) !default;
 
 /// The base background color of the chip.

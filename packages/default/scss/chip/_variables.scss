@@ -45,14 +45,12 @@ $kendo-chip-sizes: (
 
 /// Theme colors map for the chip.
 /// @group chip
-$kendo-chip-theme-colors: map-merge(
-    ( "base": get-base-hue( gray, 800 ) ),
-    (
-        "error": map-get($theme-colors, "error"),
-        "info": map-get($theme-colors, "info"),
-        "warning": map-get($theme-colors, "warning"),
-        "success": map-get($theme-colors, "success")
-    )
+$kendo-chip-theme-colors: (
+    "base": get-base-hue( gray, 800 ),
+    "error": map-get($theme-colors, "error"),
+    "info": map-get($theme-colors, "info"),
+    "warning": map-get($theme-colors, "warning"),
+    "success": map-get($theme-colors, "success")
 ) !default;
 
 /// The base background of the chip.
