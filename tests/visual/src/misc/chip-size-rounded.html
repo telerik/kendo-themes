@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en" class="k-no-animations">
+<head>
+    <title>Chip Size Rounded</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+    <script src="../../assets/scripts.js"></script>
+    <script src="../../../../packages/html/dist/index.js"></script>
+
+    <style>
+        #test-area {
+            grid-template-columns: 120px repeat(3, 1fr);
+        }
+
+        #test-area {
+            gap: 10px;
+        }
+    </style>
+</head>
+<body class="k-body">
+
+    <div id="test-area" class="k-d-grid k-grid-cols-3">
+
+        <span><small>rounded / size</small></span>
+        <span>small</span>
+        <span>medium</span>
+        <span>large</span>
+
+        <span>none</span>
+        <span>
+            <div is="Chip" text="Text" size="small" rounded="null"></div>
+        </span>
+        <span>
+            <div is="Chip" text="Text" size="medium" rounded="null"></div>
+        </span>
+        <span>
+            <div is="Chip" text="Text" size="large" rounded="null"></div>
+        </span>
+        <span>^ icon</span>
+        <span>
+            <div is="Chip" text="Text" size="small" icon="map-marker-target" rounded="null"></div>
+        </span>
+        <span>
+            <div is="Chip" text="Text" size="medium" icon="map-marker-target" rounded="null"></div>
+        </span>
+        <span>
+            <div is="Chip" text="Text" size="large" icon="map-marker-target" rounded="null"></div>
+        </span>
+        <span>^ avatar</span>
+        <span>
+            <div is="Chip" text="Text" size="small" showAvatar="true" rounded="null"></div>
+        </span>
+        <span>
+            <div is="Chip" text="Text" size="medium" showAvatar="true" rounded="null"></div>
+        </span>
+        <span>
+            <div is="Chip" text="Text" size="large" showAvatar="true" rounded="null"></div>
+        </span>
+
+        <span>small</span>
+        <span>
+            <div is="Chip" text="Text" size="small" rounded="small"></div>
+        </span>
+        <span>
+            <div is="Chip" text="Text" size="medium" rounded="small"></div>
+        </span>
+        <span>
+            <div is="Chip" text="Text" size="large" rounded="small"></div>
+        </span>
+        <span>^ icon</span>
+        <span>
+            <div is="Chip" text="Text" size="small" icon="map-marker-target" rounded="small"></div>
+        </span>
+        <span>
+            <div is="Chip" text="Text" size="medium" icon="map-marker-target" rounded="small"></div>
+        </span>
+        <span>
+            <div is="Chip" text="Text" size="large" icon="map-marker-target" rounded="small"></div>
+        </span>
+        <span>^ avatar</span>
+        <span>
+            <div is="Chip" text="Text" size="small" showAvatar="true" rounded="small"></div>
+        </span>
+        <span>
+            <div is="Chip" text="Text" size="medium" showAvatar="true" rounded="small"></div>
+        </span>
+        <span>
+            <div is="Chip" text="Text" size="large" showAvatar="true" rounded="small"></div>
+        </span>
+
+        <span>medium</span>
+        <span>
+            <div is="Chip" text="Text" size="small" rounded="medium"></div>
+        </span>
+        <span>
+            <div is="Chip" text="Text" size="medium" rounded="medium"></div>
+        </span>
+        <span>
+            <div is="Chip" text="Text" size="large" rounded="medium"></div>
+        </span>
+        <span>^ icon</span>
+        <span>
+            <div is="Chip" text="Text" size="small" icon="map-marker-target" rounded="medium"></div>
+        </span>
+        <span>
+            <div is="Chip" text="Text" size="medium" icon="map-marker-target" rounded="medium"></div>
+        </span>
+        <span>
+            <div is="Chip" text="Text" size="large" icon="map-marker-target" rounded="medium"></div>
+        </span>
+        <span>^ avatar</span>
+        <span>
+            <div is="Chip" text="Text" size="small" showAvatar="true" rounded="medium"></div>
+        </span>
+        <span>
+            <div is="Chip" text="Text" size="medium" showAvatar="true" rounded="medium"></div>
+        </span>
+        <span>
+            <div is="Chip" text="Text" size="large" showAvatar="true" rounded="medium"></div>
+        </span>
+
+        <span>large</span>
+        <span>
+            <div is="Chip" text="Text" size="small" rounded="large"></div>
+        </span>
+        <span>
+            <div is="Chip" text="Text" size="medium" rounded="large"></div>
+        </span>
+        <span>
+            <div is="Chip" text="Text" size="large" rounded="large"></div>
+        </span>
+        <span>^ icon</span>
+        <span>
+            <div is="Chip" text="Text" size="small" icon="map-marker-target" rounded="large"></div>
+        </span>
+        <span>
+            <div is="Chip" text="Text" size="medium" icon="map-marker-target" rounded="large"></div>
+        </span>
+        <span>
+            <div is="Chip" text="Text" size="large" icon="map-marker-target" rounded="large"></div>
+        </span>
+        <span>^ avatar</span>
+        <span>
+            <div is="Chip" text="Text" size="small" showAvatar="true" rounded="large"></div>
+        </span>
+        <span>
+            <div is="Chip" text="Text" size="medium" showAvatar="true" rounded="large"></div>
+        </span>
+        <span>
+            <div is="Chip" text="Text" size="large" showAvatar="true" rounded="large"></div>
+        </span>
+
+        <span>full</span>
+        <span>
+            <div is="Chip" text="Text" size="small" rounded="full"></div>
+        </span>
+        <span>
+            <div is="Chip" text="Text" size="medium" rounded="full"></div>
+        </span>
+        <span>
+            <div is="Chip" text="Text" size="large" rounded="full"></div>
+        </span>
+        <span>^ icon</span>
+        <span>
+            <div is="Chip" text="Text" size="small" icon="map-marker-target" rounded="full"></div>
+        </span>
+        <span>
+            <div is="Chip" text="Text" size="medium" icon="map-marker-target" rounded="full"></div>
+        </span>
+        <span>
+            <div is="Chip" text="Text" size="large" icon="map-marker-target" rounded="full"></div>
+        </span>
+        <span>^ avatar</span>
+        <span>
+            <div is="Chip" text="Text" size="small" showAvatar="true" rounded="full"></div>
+        </span>
+        <span>
+            <div is="Chip" text="Text" size="medium" showAvatar="true" rounded="full"></div>
+        </span>
+        <span>
+            <div is="Chip" text="Text" size="large" showAvatar="true" rounded="full"></div>
+        </span>
+    </div>
+</body>
+</html>
