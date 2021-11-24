@@ -1,1 +1,42 @@
 @import "~@progress/kendo-theme-default/scss/chip/_theme.scss";
+
+@include exports( "chip/theme/material" ) {
+
+    // Solid
+    @each $name, $color in $kendo-chip-theme-colors {
+        .k-chip-solid-#{$name} {
+            &:focus,
+            &.k-focus {
+                @include box-shadow( none );
+                @include fill( $bg: rgba( $color, .24 ) );
+            }
+        }
+    }
+
+    // Outline
+    @each $name, $color in $kendo-chip-theme-colors {
+        .k-chip-outline-#{$name} {
+            &:focus,
+            &.k-focus {
+                @include box-shadow( none );
+                @include fill( $bg: rgba( $color, .24 ) );
+            }
+
+            &:hover,
+            &.k-hover {
+                @include fill(
+                    $bg: rgba($color, .08 ),
+                    $color: $color
+                );
+            }
+
+            &.k-selected {
+                @include fill(
+                    $bg: rgba( $color, .24 ),
+                    $color: $color
+                );
+            }
+        }
+    }
+
+}

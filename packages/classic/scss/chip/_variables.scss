@@ -1,193 +1,130 @@
 // Chip
-$chips-margin: 8px !default;
 
-$chip-padding-x: 0px !default;
-$chip-padding-y: 4px !default;
-$chip-height: 24px !default;
-$chip-border-radius: $chip-height / 2 !default;
-$chip-font-size: 14px !default;
+/// Width of the border around the button.
+/// @group chip
+$kendo-chip-border-width: 1px !default;
+/// The spacing between the text and the icons of the chip.
+/// @group chip
+$kendo-chip-spacing: map-get( $spacing, 2 );
 
-$chip-selected-icon-size: 16px !default;
-$chip-selected-icon-offset: 4px !default;
-$chip-selected-icon-no-icon-offset: $chip-selected-icon-offset !default;
-$chip-selected-icon-font-size: $chip-font-size !default;
+/// Horizontal padding of the chip.
+/// @group chip
+$kendo-chip-padding-x: map-get( $spacing, 1 ) !default;
+$kendo-chip-padding-x-sm: $kendo-chip-padding-x * .75 !default;
+$kendo-chip-padding-x-md: $kendo-chip-padding-x !default;
+$kendo-chip-padding-x-lg: $kendo-chip-padding-x * 1.25 !default;
 
-$chip-content-padding-x: 8px !default;
+/// Vertical padding of the chip.
+/// @group chip
+$kendo-chip-padding-y: $kendo-chip-padding-x !default;
+$kendo-chip-padding-y-sm: $kendo-chip-padding-x-sm !default;
+$kendo-chip-padding-y-md: $kendo-chip-padding-x-md !default;
+$kendo-chip-padding-y-lg: $kendo-chip-padding-x-lg !default;
 
-$chip-icons-size: 16px !default;
-$chip-icon-margin: 4px !default;
-$chip-remove-icon-margin: 8px !default;
-$chip-remove-icon-font-size: 14px !default;
+/// Font sizes of the chip.
+/// @group chip
+$kendo-chip-font-size: $font-size !default;
+$kendo-chip-font-size-sm: $font-size-sm !default;
+$kendo-chip-font-size-md: $font-size !default;
+$kendo-chip-font-size-lg: $font-size-md !default;
 
-$chip-avatar-size: 16px !default;
+/// Line heights of the chip that are connected to the $font-size.
+/// @group chip
+$kendo-chip-line-height: normal !default;
+$kendo-chip-line-height-sm: $kendo-chip-line-height !default;
+$kendo-chip-line-height-md: $kendo-chip-line-height !default;
+$kendo-chip-line-height-lg: $kendo-chip-line-height !default;
 
-$chip-base-bg: $body-text !default;
+/// Sizes map for the chip.
+/// @group chip
+$kendo-chip-sizes: (
+    sm: ( font-size: $kendo-chip-font-size-sm, line-height: $kendo-chip-line-height-sm, padding: $kendo-chip-padding-x-sm ),
+    md: ( font-size: $kendo-chip-font-size-md, line-height: $kendo-chip-line-height-md, padding: $kendo-chip-padding-x-md ),
+    lg: ( font-size: $kendo-chip-font-size-lg, line-height: $kendo-chip-line-height-lg, padding: $kendo-chip-padding-x-lg )
+) !default;
 
-$chip-solid-bg: rgba( $chip-base-bg, .08 ) !default;
-$chip-solid-text: $chip-base-bg !default;
-$chip-solid-border: rgba( $chip-base-bg, .15 ) !default;
+/// Theme colors map for the chip.
+/// @group chip
+$kendo-chip-theme-colors: (
+    "base": $component-text,
+    "error": map-get( $theme-colors, "error" ),
+    "info": map-get( $theme-colors, "info" ),
+    "warning": map-get( $theme-colors, "warning" ),
+    "success": map-get( $theme-colors, "success" )
+) !default;
 
-$chip-solid-hover-bg: rgba( $chip-base-bg, .16 ) !default;
-$chip-solid-hover-text: null !default;
-$chip-solid-hover-border: null !default;
+/// The base background of the chip.
+/// @group chip
+$kendo-chip-base-bg: $component-text !default;
 
-$chip-solid-focus-bg: $chip-solid-bg !default;
-$chip-solid-focus-shadow: 0 0 0 2px rgba( $chip-solid-bg, .08 ) !default;
+/// The base background color of solid chip.
+/// @group chip
+$kendo-chip-solid-bg: rgba( $kendo-chip-base-bg, .08 ) !default;
+/// The base text color of solid chip.
+/// @group chip
+$kendo-chip-solid-text: $kendo-chip-base-bg !default;
+/// The base border color of solid chip.
+/// @group chip
+$kendo-chip-solid-border: rgba( $kendo-chip-solid-bg, .3 ) !default;
+/// The base shadow of solid chip.
+/// @group chip
+$kendo-chip-solid-shadow: 0 0 0 2px rgba( $kendo-chip-solid-bg, .16 ) !default;
 
-$chip-solid-selected-bg: rgba( $chip-base-bg, .24 ) !default;
-$chip-solid-selected-border: null !default;
+/// The base background color of focused solid chip.
+/// @group chip
+$kendo-chip-solid-focus-bg: rgba( $kendo-chip-solid-bg, .08 ) !default;
+/// The base text color of focused solid chip.
+/// @group chip
+$kendo-chip-solid-focus-text: null !default;
 
-$chip-solid-success-bg: rgba($success, .08) !default;
-$chip-solid-success-text: $success !default;
-$chip-solid-success-border: rgba( $success, .3 ) !default;
+/// The base background color of hovered solid chip.
+/// @group chip
+$kendo-chip-solid-hover-bg: rgba( $kendo-chip-solid-bg, .16 ) !default;
+/// The base text color of hovered solid chip.
+/// @group chip
+$kendo-chip-solid-hover-text: null !default;
 
-$chip-solid-success-hover-bg: rgba( $success, .16 ) !default;
-$chip-solid-success-hover-text: null !default;
-$chip-solid-success-hover-border: null !default;
+/// The base background color of selected solid chip.
+/// @group chip
+$kendo-chip-solid-selected-bg: rgba( $kendo-chip-solid-bg, .24 ) !default;
+/// The base text color of selected solid chip.
+/// @group chip
+$kendo-chip-solid-selected-text: null !default;
 
-$chip-solid-success-focus-bg: null !default;
-$chip-solid-success-focus-text: null !default;
-$chip-solid-success-focus-border: null !default;
+/// The base background color of outline chip.
+/// @group chip
+$kendo-chip-outline-bg: $component-bg !default;
+/// The base text color of outline chip.
+/// @group chip
+$kendo-chip-outline-text: $kendo-chip-base-bg !default;
+/// The base border color of outline chip.
+/// @group chip
+$kendo-chip-outline-border: $kendo-chip-base-bg !default;
+/// The base shadow of outline chip.
+/// @group chip
+$kendo-chip-outline-shadow: 0 0 0 2px rgba( $kendo-chip-base-bg, .16 ) !default;
 
-$chip-solid-success-selected-bg: rgba( $success, .24 ) !default;
-$chip-solid-success-selected-text: null !default;
-$chip-solid-success-selected-border: null !default;
+/// The base background color of hovered outline chip.
+/// @group chip
+$kendo-chip-outline-hover-bg: $kendo-chip-base-bg !default;
+/// The base text color of hovered outline chip.
+/// @group chip
+$kendo-chip-outline-hover-text: contrast-wcag( $kendo-chip-base-bg ) !default;
 
-$chip-solid-warning-bg: rgba( $warning, .08 ) !default;
-$chip-solid-warning-text: $warning !default;
-$chip-solid-warning-border: rgba( $warning, .3 ) !default;
+/// The base background color of selected outline chip.
+/// @group chip
+$kendo-chip-outline-selected-bg: $kendo-chip-outline-hover-bg !default;
+/// The base text color of selected outline chip.
+/// @group chip
+$kendo-chip-outline-selected-text: $kendo-chip-outline-hover-text !default;
 
-$chip-solid-warning-hover-bg: rgba( $warning, .16 ) !default;
-$chip-solid-warning-hover-text: null !default;
-$chip-solid-warning-hover-border: null !default;
+// Chip List
+$kendo-chips-margin: 8px !default;
 
-$chip-solid-warning-focus-bg: null !default;
-$chip-solid-warning-focus-text: null !default;
-$chip-solid-warning-focus-border: null !default;
+$kendo-chip-selected-icon-size: 16px !default;
+$kendo-chip-selected-icon-offset: 4px !default;
+$kendo-chip-selected-icon-no-icon-offset: $kendo-chip-selected-icon-offset !default;
+$kendo-chip-selected-icon-font-size: $font-size !default;
 
-$chip-solid-warning-selected-bg: rgba( $warning, .24 ) !default;
-$chip-solid-warning-selected-text: null !default;
-$chip-solid-warning-selected-border: null !default;
-
-$chip-solid-error-bg: rgba( $error, .08 ) !default;
-$chip-solid-error-text: $error !default;
-$chip-solid-error-border: rgba( $error, .3 ) !default;
-
-$chip-solid-error-hover-bg: rgba( $error, .16 ) !default;
-$chip-solid-error-hover-text: null !default;
-$chip-solid-error-hover-border: null !default;
-
-$chip-solid-error-focus-bg: null !default;
-$chip-solid-error-focus-text: null !default;
-$chip-solid-error-focus-border: null !default;
-
-$chip-solid-error-selected-bg: rgba( $error, .24 ) !default;
-$chip-solid-error-selected-text: null !default;
-$chip-solid-error-selected-border: null !default;
-
-$chip-solid-info-bg: rgba( $info, .08 ) !default;
-$chip-solid-info-text: $info !default;
-$chip-solid-info-border: rgba( $info, .3 ) !default;
-
-$chip-solid-info-hover-bg: rgba( $info, .16 ) !default;
-$chip-solid-info-hover-text: null !default;
-$chip-solid-info-hover-border: null !default;
-
-$chip-solid-info-focus-bg: null !default;
-$chip-solid-info-focus-text: null !default;
-$chip-solid-info-focus-border: null !default;
-
-$chip-solid-info-selected-bg: rgba( $info, .24 ) !default;
-$chip-solid-info-selected-text: null !default;
-$chip-solid-info-selected-border: null !default;
-
-$chip-outline-bg: $body-bg !default;
-$chip-outline-text: $chip-base-bg !default;
-$chip-outline-border: $chip-base-bg !default;
-
-$chip-outline-hover-bg: $chip-base-bg !default;
-$chip-outline-hover-text: contrast-wcag( $chip-outline-hover-bg ) !default;
-$chip-outline-hover-border: null !default;
-
-$chip-outline-focus-bg: null !default;
-$chip-outline-focus-text: null !default;
-$chip-outline-focus-border: null !default;
-$chip-outline-focus-shadow: 0 0 0 2px rgba(0, 0, 0, .08) !default;
-
-$chip-outline-selected-bg: $chip-outline-hover-bg !default;
-$chip-outline-selected-text: $chip-outline-hover-text !default;
-
-$chip-outline-success-bg: null !default;
-$chip-outline-success-text: $success !default;
-$chip-outline-success-border: $success !default;
-
-$chip-outline-success-hover-bg: $success !default;
-$chip-outline-success-hover-text: contrast-wcag( $chip-outline-success-hover-bg ) !default;
-$chip-outline-success-hover-border: null !default;
-
-$chip-outline-success-focus-bg: null !default;
-$chip-outline-success-focus-text: null !default;
-$chip-outline-success-focus-border: null !default;
-
-$chip-outline-success-selected-bg: $chip-outline-success-hover-bg !default;
-$chip-outline-success-selected-text: $chip-outline-success-hover-text !default;
-$chip-outline-success-selected-border: null !default;
-
-$chip-outline-warning-bg: null !default;
-$chip-outline-warning-text: $warning !default;
-$chip-outline-warning-border: $warning !default;
-
-$chip-outline-warning-hover-bg: $warning !default;
-$chip-outline-warning-hover-text: contrast-wcag( $chip-outline-warning-hover-bg ) !default;
-$chip-outline-warning-hover-border: null !default;
-
-$chip-outline-warning-focus-bg: null !default;
-$chip-outline-warning-focus-text: null !default;
-$chip-outline-warning-focus-border: null !default;
-
-$chip-outline-warning-selected-bg: $chip-outline-warning-hover-bg !default;
-$chip-outline-warning-selected-text: $chip-outline-warning-hover-text !default;
-$chip-outline-warning-selected-border: null !default;
-
-$chip-outline-error-bg: null !default;
-$chip-outline-error-text: $error !default;
-$chip-outline-error-border: $error !default;
-
-$chip-outline-error-hover-bg: $error !default;
-$chip-outline-error-hover-text: contrast-wcag( $chip-outline-error-hover-bg ) !default;
-$chip-outline-error-hover-border: null !default;
-
-$chip-outline-error-focus-bg: null !default;
-$chip-outline-error-focus-text: null !default;
-$chip-outline-error-focus-border: null !default;
-
-$chip-outline-error-selected-bg: $chip-outline-error-hover-bg !default;
-$chip-outline-error-selected-text: $chip-outline-error-hover-text !default;
-$chip-outline-error-selected-border: null !default;
-
-$chip-outline-info-bg: null !default;
-$chip-outline-info-text: $info !default;
-$chip-outline-info-border: $info !default;
-
-$chip-outline-info-hover-bg: $info !default;
-$chip-outline-info-hover-text: contrast-wcag( $chip-outline-info-hover-bg ) !default;
-$chip-outline-info-hover-border: null !default;
-
-$chip-outline-info-focus-bg: null !default;
-$chip-outline-info-focus-text: null !default;
-$chip-outline-info-focus-border: null !default;
-
-$chip-outline-info-selected-bg: $chip-outline-info-hover-bg !default;
-$chip-outline-info-selected-text: $chip-outline-info-hover-text !default;
-$chip-outline-info-selected-border: null !default;
-
-$chip-multiple-selected-icon-bg: rgba(0, 0, 0, .36) !default;
-$chip-multiple-selected-icon-text: #ffffff !default;
-
-
-$chip-primary-focus-shadow: 0 0 0 2px rgba( $primary, .16 ) !default;
-$chip-secondary-focus-shadow: 0 0 0 2px rgba( $secondary, .16 ) !default;
-$chip-info-focus-shadow: 0 0 0 2px rgba( $info, .16 ) !default;
-$chip-success-focus-shadow: 0 0 0 2px rgba( $success, .16 ) !default;
-$chip-warning-focus-shadow: 0 0 0 2px rgba( $warning, .16 ) !default;
-$chip-error-focus-shadow: 0 0 0 2px rgba( $error, .16 ) !default;
+$kendo-chip-multiple-selected-icon-bg: rgba(0, 0, 0, .36) !default;
+$kendo-chip-multiple-selected-icon-text: #ffffff !default;
