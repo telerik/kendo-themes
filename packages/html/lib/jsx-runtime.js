@@ -40,7 +40,12 @@ const attrMap = {
     thumbrounded: 'thumbRounded',
 
     // Menu list
-    contentTemplate: 'contentTemplate'
+    contenttemplate: 'contentTemplate',
+
+    // Chip
+    showremoveicon: 'showRemoveIcon',
+    showselectedicon: 'showSelectedIcon',
+    showavatar: 'showAvatar'
 };
 
 const booleanAttr = new Set([
@@ -73,6 +78,10 @@ const booleanAttr = new Set([
 
     'virtualization',
     'root',
+
+    'showRemoveIcon',
+    'showSelectedIcon',
+    'showAvatar',
 
     'aria'
 ]);
