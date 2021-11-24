@@ -1,10 +1,76 @@
 @include exports("chip/layout") {
 
+    // Chip
+    .k-chip {
+        padding: $kendo-chip-padding-y $kendo-chip-padding-x;
+        border-width: $kendo-chip-border-width;
+        border-style: solid;
+        box-sizing: border-box;
+        font-family: $font-family;
+        font-size: $kendo-chip-font-size;
+        line-height: $kendo-chip-line-height;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        gap: $kendo-chip-spacing;
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        user-select: none;
+
+        &:focus,
+        &.k-chip-focus {
+            outline: 0;
+        }
+    }
+
+    // Text
+    .k-chip-text {
+        min-width: 0;
+        flex: 1 1 auto;
+        white-space: nowrap;
+    }
+
+    // Icon
+    .k-chip-icon,
+    .k-chip-remove-icon {
+        font-size: inherit;
+    }
+
+    // Sizes
+    @each $size, $size-props in $kendo-chip-sizes {
+
+        $_font-size: map-get( $size-props, font-size );
+        $_line-height: map-get( $size-props, line-height );
+        $_padding: map-get( $size-props, padding );
+        $_size: calc( #{$line-height-xs * 1em} + #{$_padding * 2} + #{$kendo-chip-border-width * 2} );
+        $_avatar-size: 1em;
+
+        .k-chip-#{$size} {
+            height: $_size;
+            padding: $_padding;
+            font-size: $_font-size;
+            line-height: $_line-height;
+        }
+
+        .k-chip-avatar {
+            width: $_avatar-size;
+            height: $_avatar-size;
+            flex-basis: $_avatar-size;
+        }
+
+    }
+
+}
+
+@include exports("chip/layout/list") {
+
+    // Chip List
     .k-chip-list {
         display: inline-flex;
 
         > * {
-            margin-right: $chips-margin;
+            margin-right: $kendo-chips-margin;
 
             &:last-child {
                 margin-right: 0;
@@ -21,23 +87,23 @@
     .k-selection-multiple {
         .k-selected-icon-wrapper {
             width: 0;
-            height: $chip-selected-icon-size;
-            position: relative;
-            left: $chip-selected-icon-offset;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            height: $kendo-chip-selected-icon-size;
             visibility: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            left: $kendo-chip-selected-icon-offset;
             z-index: 1;
         }
 
         .k-selected-icon {
-            font-size: $chip-selected-icon-font-size;
+            font-size: $kendo-chip-selected-icon-font-size;
         }
 
         .k-chip.k-state-selected .k-selected-icon-wrapper,
         .k-chip.k-selected .k-selected-icon-wrapper {
-            width: $chip-selected-icon-size;
+            width: $kendo-chip-selected-icon-size;
             visibility: visible;
         }
 
@@ -50,9 +116,9 @@
 
         :not(.k-chip-has-icon) {
             .k-selected-icon-wrapper {
-                left: $chip-selected-icon-no-icon-offset;
-                opacity: 0;
+                left: $kendo-chip-selected-icon-no-icon-offset;
                 transition: width .2s, opacity .2s;
+                opacity: 0;
             }
 
             &.k-state-selected .k-selected-icon-wrapper,
@@ -62,66 +128,7 @@
         }
     }
 
-    .k-chip {
-        overflow: hidden;
-        padding: $chip-padding-y $chip-padding-x;
-        height: $chip-height;
-        border-radius: $chip-border-radius;
-        position: relative;
-        box-sizing: border-box;
-        border-width: 1px;
-        border-style: solid;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        font-size: $chip-font-size;
-        cursor: pointer;
-        user-select: none;
-
-        &:focus,
-        &.k-chip-focus {
-            outline: 0;
-        }
-    }
-
-    .k-chip-content {
-        min-width: 0;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        padding: 0 $chip-content-padding-x;
-        flex: 1 1 auto;
-    }
-
-    .k-chip-icon,
-    .k-remove-icon {
-        width: $chip-icons-size;
-        height: $chip-icons-size;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex: 1 0 auto;
-    }
-
-    .k-chip-icon {
-        margin-left: $chip-icon-margin;
-    }
-
-    .k-remove-icon {
-        margin-right: $chip-remove-icon-margin;
-        font-size: $chip-remove-icon-font-size;
-    }
-
-    .k-chip-avatar {
-        width: $chip-avatar-size;
-        height: $chip-avatar-size;
-        border-radius: 50%;
-        background-size: cover;
-        background-position: center;
-    }
-
 }
-
 
 @include exports("chip/layout/rtl") {
 
@@ -131,7 +138,7 @@
         &.k-rtl {
             > * {
                 margin-right: 0;
-                margin-left: $chips-margin;
+                margin-left: $kendo-chips-margin;
 
                 &:last-child {
                     margin-left: 0;
@@ -144,26 +151,16 @@
         &[dir="rtl"],
         .k-rtl &,
         &.k-rtl {
-            .k-chip-icon {
-                margin-left: 0;
-                margin-right: $chip-icon-margin;
-            }
-
-            .k-remove-icon {
-                margin-right: 0;
-                margin-left: $chip-remove-icon-margin;
-            }
-
             .k-selection-multiple & {
                 .k-selected-icon-wrapper {
+                    right: $kendo-chip-selected-icon-offset;
                     left: 0;
-                    right: $chip-selected-icon-offset;
                 }
 
                 &:not(.k-chip-has-icon) {
                     .k-selected-icon-wrapper {
+                        right: $kendo-chip-selected-icon-no-icon-offset;
                         left: 0;
-                        right: $chip-selected-icon-no-icon-offset;
                     }
                 }
             }
