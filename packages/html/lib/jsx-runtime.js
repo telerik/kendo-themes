@@ -37,7 +37,10 @@ const attrMap = {
     onlabel: 'onLabel',
     offlabel: 'offLabel',
     trackrounded: 'trackRounded',
-    thumbrounded: 'thumbRounded'
+    thumbrounded: 'thumbRounded',
+
+    // Chip
+    showavatar: 'showAvatar'
 };
 
 const booleanAttr = new Set([
@@ -69,6 +72,8 @@ const booleanAttr = new Set([
 
     'virtualization',
     'root',
+
+    'showAvatar',
 
     'aria'
 ]);
