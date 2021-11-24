@@ -28,10 +28,4 @@ $multiselect-focused-text: $kendo-input-focus-text !default;
 $multiselect-focused-border: $kendo-input-focus-border !default;
 $multiselect-focused-shadow: $kendo-input-focus-shadow !default;
 
-$multiselect-button-focused-bg: $kendo-button-active-bg !default;
-$multiselect-button-focused-text: $kendo-button-active-text !default;
-$multiselect-button-focused-border: $kendo-button-active-border !default;
-$multiselect-button-focused-gradient: $kendo-button-active-gradient !default;
-$multiselect-button-focused-shadow: $kendo-button-active-shadow !default;
-
 $multiselect-clear-right: calc( #{$icon-size} + #{$kendo-input-padding-y} ) !default;
