@@ -48,6 +48,7 @@ function ChipStatic(props) {
         styles.fillModeClass( fillMode, 'k-chip' ),
         styles.themeColorClass( fillMode, themeColor, 'k-chip' ),
         {
+            'k-chip-has-icon': icon !== '' || showAvatar,
             'k-hover': hover === true,
             'k-focus': focus === true,
             'k-active': active === true,
