@@ -26,3 +26,22 @@
         {removable && <span class="k-chip-icon k-icon k-i-${removeIcon}"></span>}
 </div>
 ```
+
+## ChipList
+
+```html
+<!-- default rendering -->
+<div class="k-chip-list k-chip-list-md">
+    <div class="k-chip k-chip-md k-rounded-pill k-chip-solid k-chip-solid-base">...</div>
+    <div class="k-chip k-chip-md k-rounded-pill k-chip-solid k-chip-solid-base">...</div>
+    <div class="k-chip k-chip-md k-rounded-pill k-chip-solid k-chip-solid-base">...</div>
+</div>
+
+<!-- canonical rendering -->
+<div class="
+    k-chip-list
+    k-chip-${size}">
+        <div class="k-chip" {...props}>...</div>
+        <div class="k-chip" {...props}>...</div>
+</div>
+```
