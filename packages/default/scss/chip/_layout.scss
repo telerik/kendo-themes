@@ -1,19 +1,19 @@
 @include exports("chip/layout") {
 
+    // Chip
     .k-chip {
-        height: $chip-height;
-        padding: $chip-padding-y $chip-padding-x;
-        border-radius: $chip-border-radius;
-        box-sizing: border-box;
-        border-width: 1px;
+        padding: $kendo-chip-padding-y $kendo-chip-padding-x;
+        border-width: $kendo-chip-border-width;
         border-style: solid;
         outline: 0;
-        font-size: $chip-font-size;
+        font-family: $font-family;
+        font-size: $kendo-chip-font-size;
+        line-height: $kendo-chip-line-height;
         display: inline-flex;
         flex-flow: row nowrap;
         align-items: center;
         justify-content: center;
-        gap: $chip-gap;
+        gap: $kendo-chip-spacing;
         position: relative;
         overflow: hidden;
         cursor: pointer;
@@ -35,10 +35,10 @@
         flex: 1 1 auto;
     }
     .k-chip-content:first-child {
-        margin-inline-start: $chip-gap;
+        margin-inline-start: $kendo-chip-spacing;
     }
     .k-chip-content:last-child {
-        margin-inline-end: $chip-gap;
+        margin-inline-end: $kendo-chip-spacing;
     }
 
 
@@ -54,8 +54,6 @@
 
     // Chip avatar
     .k-chip-avatar {
-        width: $chip-avatar-size;
-        height: $chip-avatar-size;
         border-radius: 50%;
         background-size: cover;
         background-position: center;
@@ -65,15 +63,14 @@
 
     // Chip icon
     .k-chip-icon {
-        width: $chip-icons-size;
-        height: $chip-icons-size;
+        font-size: inherit;
         display: flex;
         align-items: center;
         justify-content: center;
         flex: none;
     }
     .k-ie .k-chip-icon {
-        margin-right: $chip-gap;
+        margin-right: $kendo-chip-spacing;
     }
 
 
@@ -96,9 +93,7 @@
 
     // Legacy chip icons
     .k-remove-icon {
-        width: $chip-icons-size;
-        height: $chip-icons-size;
-        font-size: $chip-remove-icon-font-size;
+        font-size: inherit;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -106,20 +101,17 @@
     }
     .k-ie .k-remove-icon {
         margin-right: 0;
-        margin-left: $chip-gap;
+        margin-left: $kendo-chip-spacing;
     }
 
 
     // Chip list
     .k-chip-list {
+        min-width: 0px;
         display: inline-flex;
-        gap: $chip-list-gap;
-    }
-    .k-ie .k-chip-list > * {
-        margin-right: $chip-list-gap;
-    }
-    .k-ie .k-chip-list > :last-child {
-        margin-right: 0;
+        flex-wrap: wrap;
+        align-items: center;
+        position: relative;
     }
 
 
@@ -129,24 +121,45 @@
     .k-ie .k-chip[dir="rtl"] {
         .k-chip-icon {
             margin-right: 0;
-            margin-left: $chip-gap;
+            margin-left: $kendo-chip-spacing;
         }
 
         .k-remove-icon {
             margin-left: 0;
-            margin-right: $chip-gap;
+            margin-right: $kendo-chip-spacing;
         }
     }
-    .k-ie .k-chip-list.k-rtl,
-    .k-ie .k-rtl .k-chip-list,
-    .k-ie .k-chip-list[dir="rtl"] {
-        > * {
-            margin-right: 0;
-            margin-left: $chip-list-gap;
 
-            &:last-child {
-                margin-left: 0;
-            }
+
+
+    // Sizes
+    @each $size, $size-props in $kendo-chip-sizes {
+
+        $_font-size: map-get( $size-props, font-size );
+        $_line-height: map-get( $size-props, line-height );
+        $_padding: map-get( $size-props, padding );
+        $_size: calc( #{$line-height-xs * 1em} + #{$_padding * 2} + #{$kendo-chip-border-width * 2} );
+        $_avatar-size: 1em;
+
+        .k-chip-#{$size} {
+            height: $_size;
+            padding: $_padding;
+            font-size: $_font-size;
+            line-height: $_line-height;
+        }
+
+        .k-chip-avatar {
+            width: $_avatar-size;
+            height: $_avatar-size;
+            flex-basis: $_avatar-size;
+        }
+
+    }
+
+    // Sizes
+    @each $name, $size in $kendo-chip-list-sizes {
+        .k-chip-list-#{$name} {
+            gap: $size;
         }
     }
 
