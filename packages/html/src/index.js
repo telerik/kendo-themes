@@ -47,6 +47,7 @@ export * from './radio/index';
 // export * from './listbox/index';
 // export * from './progressbar/index';
 // export * from './slider/index';
+export * from './chip/index';
 
 // Augmented inputs
 export * from './autocomplete/index';
