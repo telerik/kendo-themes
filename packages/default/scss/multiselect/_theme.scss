@@ -26,7 +26,6 @@
                     @include box-shadow($invalid-shadow);
                 }
             }
-
         }
 
         .k-multiselect-wrap {
@@ -38,37 +37,6 @@
 
             > .k-readonly {
                 opacity: .6;
-            }
-
-
-            .k-button {
-                .k-icon {
-                    opacity: .6;
-                }
-
-                .k-icon:hover,
-                .k-icon.k-state-hover {
-                    opacity: 1;
-                }
-
-                &:active,
-                &.k-state-active {
-                    @include fill(
-                        $multiselect-button-focused-text,
-                        $multiselect-button-focused-bg,
-                        $multiselect-button-focused-border,
-                        $multiselect-button-focused-gradient
-                    );
-                    @include box-shadow( $multiselect-button-focused-shadow );
-                }
-
-                // Focused state
-                &:focus,
-                &.k-state-focused {
-                    .k-icon {
-                        opacity: 1;
-                    }
-                }
             }
 
             .k-i-loading {
