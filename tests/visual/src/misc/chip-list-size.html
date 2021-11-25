@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en" class="k-typography k-no-animations">
+<head>
+    <title>Chip List Size</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+    <script src="../../assets/scripts.js"></script>
+    <script src="../../../../packages/html/dist/index.js"></script>
+</head>
+<body class="k-body">
+
+    <div id="test-area" class="k-d-grid k-grid-cols-1">
+
+        <span>Small</span>
+        <section>
+            <div is="ChipList" selection="single" size="small">
+                <div is="Chip" text="Chip Text" size="small"></div>
+                <div is="Chip" text="Chip Text" size="small"></div>
+                <div is="Chip" text="Chip Text" size="small"></div>
+            </div>
+        </section>
+
+        <span>Medium</span>
+        <section>
+            <div is="ChipList" selection="multiple" size="medium">
+                <div is="Chip" text="Chip Text" size="medium" showSelectIcon="true" selected></div>
+                <div is="Chip" text="Chip Text" size="medium"></div>
+                <div is="Chip" text="Chip Text" size="medium" showSelectIcon="true" selected></div>
+            </div>
+        </section>
+
+        <span>Large</span>
+        <section>
+            <div is="ChipList" selection="multiple" size="large">
+                <div is="Chip" size="large" icon="map-marker-target" text="Chip Text" showRemoveIcon="true" showSelectIcon="true" selected></div>
+                <div is="Chip" size="large" icon="map-marker-target" text="Chip Text" showRemoveIcon="true" showSelectIcon="true" selected></div>
+                <div is="Chip" size="large" icon="map-marker-target" text="Chip Text" showRemoveIcon="true"></div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
