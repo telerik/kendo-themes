@@ -12,197 +12,55 @@
         #test-area {
             grid-template-columns: 1fr;
         }
-
-        #test-area > section {
-            gap: 10px;
-        }
     </style>
 </head>
 <body class="k-body">
 
     <div id="test-area" class="k-d-grid">
-        <h2>Chip List</h2>
 
+        <span>Chip List</span>
         <section>
-            <div class="k-chip-list k-selection-single">
-                <div class="k-chip k-chip-solid">
-                    <span class="k-chip-content">
-                        <span class="k-chip-label">Chip Text</span>
-                    </span>
-                </div>
-
-                <div class="k-chip k-chip-solid k-selected">
-                    <span class="k-chip-content">
-                        <span class="k-chip-label">Chip Text</span>
-                    </span>
-                </div>
-
-                <div class="k-chip k-chip-solid">
-                    <span class="k-chip-content">
-                        <span class="k-chip-label">Chip Text</span>
-                    </span>
-                </div>
+            <div is="ChipList" selection="single">
+                <div is="Chip" text="Chip Text"></div>
+                <div is="Chip" text="Chip Text"></div>
+                <div is="Chip" text="Chip Text"></div>
             </div>
         </section>
 
         <section>
-            <div class="k-chip-list k-selection-single">
-                <div class="k-chip k-chip-outline">
-                    <span class="k-chip-content">
-                        <span class="k-chip-label">Chip Text</span>
-                    </span>
-                </div>
-
-                <div class="k-chip k-chip-outline k-selected">
-                    <span class="k-chip-content">
-                        <span class="k-chip-label">Chip Text</span>
-                    </span>
-                </div>
-
-                <div class="k-chip k-chip-outline">
-                    <span class="k-chip-content">
-                        <span class="k-chip-label">Chip Text</span>
-                    </span>
-                </div>
+            <div is="ChipList" selection="single">
+                <div is="Chip" text="Chip Text" fillMode="outline"></div>
+                <div is="Chip" text="Chip Text" fillMode="outline" showSelectedIcon="true" selected></div>
+                <div is="Chip" text="Chip Text" fillMode="outline"></div>
             </div>
         </section>
 
-        <h2>Chip List Multiple Selection</h2>
+        <span>Chip List Multiple Selection</span>
         <section>
-            <div class="k-chip-list k-selection-multiple">
-                <div class="k-chip k-chip-solid k-selected">
-                    <span class="k-selected-icon-wrapper">
-                        <i is="Icon" class="k-selected-icon" name="check"></i>
-                    </span>
-                    <span class="k-chip-content">
-                        <span class="k-chip-label">Chip Text</span>
-                    </span>
-                </div>
-
-                <div class="k-chip k-chip-solid">
-                    <span class="k-selected-icon-wrapper">
-                        <i is="Icon" class="k-selected-icon" name="check"></i>
-                    </span>
-                    <span class="k-chip-content">
-                        <span class="k-chip-label">Chip Text</span>
-                    </span>
-                </div>
-
-                <div class="k-chip k-chip-solid k-selected">
-                    <span class="k-selected-icon-wrapper">
-                        <i is="Icon" class="k-selected-icon" name="check"></i>
-                    </span>
-                    <span class="k-chip-content">
-                        <span class="k-chip-label">Chip Text</span>
-                    </span>
-                </div>
+            <div is="ChipList" selection="multiple">
+                <div is="Chip" text="Chip Text" selected></div>
+                <div is="Chip" text="Chip Text"></div>
+                <div is="Chip" text="Chip Text" selected></div>
             </div>
         </section>
 
         <section>
-            <div class="k-chip-list k-selection-multiple">
-                <div class="k-chip k-chip-outline k-selected">
-                    <span class="k-selected-icon-wrapper">
-                        <i is="Icon" class="k-selected-icon" name="check"></i>
-                    </span>
-                    <span class="k-chip-content">
-                        <span class="k-chip-label">Chip Text</span>
-                    </span>
-                </div>
-
-                <div class="k-chip k-chip-outline">
-                    <span class="k-selected-icon-wrapper">
-                        <i is="Icon" class="k-selected-icon" name="check"></i>
-                    </span>
-                    <span class="k-chip-content">
-                        <span class="k-chip-label">Chip Text</span>
-                    </span>
-                </div>
-
-                <div class="k-chip k-chip-outline k-selected">
-                    <span class="k-selected-icon-wrapper">
-                        <i is="Icon" class="k-selected-icon" name="check"></i>
-                    </span>
-                    <span class="k-chip-content">
-                        <span class="k-chip-label">Chip Text</span>
-                    </span>
-                </div>
+            <div is="ChipList" selection="multiple">
+                <div is="Chip" text="Chip Text" fillMode="outline" showSelectedIcon="true" selected></div>
+                <div is="Chip" text="Chip Text" fillMode="outline"></div>
+                <div is="Chip" text="Chip Text" fillMode="outline" showSelectedIcon="true" selected></div>
             </div>
         </section>
 
-        <h2>Chip List Multiple Selection Status Icon</h2>
+        <span>Chip List RTL</span>
         <section>
-            <div class="k-chip-list k-selection-multiple">
-                <div class="k-chip k-chip-solid k-chip-has-icon k-selected">
-                    <span class="k-selected-icon-wrapper">
-                        <i is="Icon" class="k-selected-icon" name="check"></i>
-                    </span>
-                    <i is="Icon" class="k-chip-icon" name="map-marker-target"></i>
-                    <span class="k-chip-content">
-                        <span class="k-chip-label">Selected</span>
-                    </span>
-                    <i is="Icon" class="k-remove-icon" name="x-circle"></i>
+            <span class="k-rtl">
+                <div is="ChipList" selection="multiple">
+                    <div is="Chip" text="Chip" showRemoveIcon="true" showSelectedIcon="true" selected></div>
+                    <div is="Chip" text="Chip" icon="map-marker-target" showRemoveIcon="true"></div>
+                    <div is="Chip" text="Chip" icon="map-marker-target" showRemoveIcon="true"></div>
                 </div>
-
-                <div class="k-chip k-chip-solid k-chip-has-icon k-selected">
-                    <span class="k-selected-icon-wrapper">
-                        <i is="Icon" class="k-selected-icon" name="check"></i>
-                    </span>
-                    <i is="Icon" class="k-chip-icon" name="map-marker-target"></i>
-                    <span class="k-chip-content">
-                        <span class="k-chip-label">Selected</span>
-                    </span>
-                    <i is="Icon" class="k-remove-icon" name="x-circle"></i>
-                </div>
-
-                <div class="k-chip k-chip-solid k-chip-has-icon">
-                    <span class="k-selected-icon-wrapper">
-                        <i is="Icon" class="k-selected-icon" name="check"></i>
-                    </span>
-                    <i is="Icon" class="k-chip-icon" name="map-marker-target"></i>
-                    <span class="k-chip-content">
-                        <span class="k-chip-label">Selected</span>
-                    </span>
-                    <i is="Icon" class="k-remove-icon" name="x-circle"></i>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <div class="k-chip-list k-selection-multiple">
-                <div class="k-chip k-chip-outline k-chip-has-icon k-selected">
-                    <span class="k-selected-icon-wrapper">
-                        <i is="Icon" class="k-selected-icon" name="check"></i>
-                    </span>
-                    <i is="Icon" class="k-chip-icon" name="map-marker-target"></i>
-                    <span class="k-chip-content">
-                        <span class="k-chip-label">Selected</span>
-                    </span>
-                    <i is="Icon" class="k-remove-icon" name="x-circle"></i>
-                </div>
-
-                <div class="k-chip k-chip-outline k-chip-has-icon k-selected">
-                    <span class="k-selected-icon-wrapper">
-                        <i is="Icon" class="k-selected-icon" name="check"></i>
-                    </span>
-                    <i is="Icon" class="k-chip-icon" name="map-marker-target"></i>
-                    <span class="k-chip-content">
-                        <span class="k-chip-label">Selected</span>
-                    </span>
-                    <i is="Icon" class="k-remove-icon" name="x-circle"></i>
-                </div>
-
-                <div class="k-chip k-chip-outline k-chip-has-icon">
-                    <span class="k-selected-icon-wrapper">
-                        <i is="Icon" class="k-selected-icon" name="check"></i>
-                    </span>
-                    <i is="Icon" class="k-chip-icon" name="map-marker-target"></i>
-                    <span class="k-chip-content">
-                        <span class="k-chip-label">Selected</span>
-                    </span>
-                    <i is="Icon" class="k-remove-icon" name="x-circle"></i>
-                </div>
-            </div>
+            </span>
         </section>
     </div>
 </body>
