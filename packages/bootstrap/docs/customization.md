@@ -1633,6 +1633,65 @@ The following table lists the available variables for customizing the Bootstrap 
 </tbody>
 </table>
 
+### Chip-list
+
+<table class="theme-variables">
+    <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
+    </tr>
+</thead>
+<tbody>
+        <tr>
+    <td>$kendo-chip-list-sizes</td>
+    <td></td>
+    <td>(
+    sm: map-get( $spacing, 1 ),
+    md: map-get( $spacing, 2 ),
+    lg: map-get( $spacing, 3 )
+)</td>
+    <td>(
+    sm: map-get( $spacing, 1 ),
+    md: map-get( $spacing, 2 ),
+    lg: map-get( $spacing, 3 )
+)</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes of the chip list.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chip-multiple-selected-icon-bg</td>
+    <td></td>
+    <td>rgba($black, .36)</td>
+    <td>rgba($black, .36)</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the select icon overlay.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chip-multiple-selected-icon-text</td>
+    <td></td>
+    <td>$white</td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the select icon overlay.</div></div>
+    </td>
+</tr>
+</tbody>
+</table>
+
 ### Color System
 
 <table class="theme-variables">
