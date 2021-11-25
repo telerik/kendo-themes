@@ -255,22 +255,6 @@
             }
         }
 
-        // Rows, Cols and Filters
-        .k-row-fields,
-        .k-column-fields,
-        .k-filter-fields {
-            margin-top: $pivotgrid-configurator-fields-margin-y;
-            flex-wrap: wrap;
-
-            > * {
-                margin-bottom: $pivotgrid-configurator-fields-margin-y;
-            }
-
-            > *:last-child {
-                margin-bottom: 0;
-            }
-        }
-
         // Values
         .k-value-fields {
             margin: $pivotgrid-configurator-fields-margin-y $pivotgrid-configurator-fields-margin-x;
