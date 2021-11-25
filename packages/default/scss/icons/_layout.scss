@@ -281,6 +281,8 @@
     .k-i-display-inline-flex::before { content: "\e059"; }
     .k-i-gap-column::before { content: "\e05a"; }
     .k-i-gap-row::before { content: "\e05b"; }
+    .k-i-handle-resize-alt::before { content: "\e05c"; }
+    .k-i-handle-resize::before { content: "\e05d"; }
     .k-i-undo::before { content: "\e100"; }
     .k-i-undo-large::before { content: "\e100"; }
     .k-i-redo::before { content: "\e101"; }
@@ -1067,6 +1069,10 @@
     .k-i-replace-all::before { content: "\e6ad"; }
     .k-i-letter-space::before { content: "\e6ae"; }
     .k-i-line-height::before { content: "\e6af"; }
+    .k-i-blockquote::before { content: "\e6b0"; }
+    .k-i-list-latin-big::before { content: "\e6b1"; }
+    .k-i-list-latin-small::before { content: "\e6b2"; }
+    .k-i-list-unordered-square::before { content: "\e6b3"; }
     .k-i-graph::before { content: "\ea00"; }
     .k-i-chart-column-clustered::before { content: "\ea01"; }
     .k-i-chart-column-stacked::before { content: "\ea02"; }
