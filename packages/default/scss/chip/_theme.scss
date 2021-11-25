@@ -1,13 +1,5 @@
 @include exports("chip/theme") {
 
-    .k-selection-multiple .k-chip-has-icon.k-state-selected .k-selected-icon-wrapper,
-    .k-selection-multiple .k-chip-has-icon.k-selected .k-selected-icon-wrapper {
-        @include fill(
-            $color: $kendo-chip-multiple-selected-icon-text,
-            $bg: $kendo-chip-multiple-selected-icon-bg
-        );
-    }
-
     // Solid
     @each $name, $color in $kendo-chip-theme-colors {
         .k-chip-solid-#{$name} {

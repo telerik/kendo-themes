@@ -119,12 +119,11 @@ $kendo-chip-outline-selected-bg: $kendo-chip-outline-hover-bg !default;
 $kendo-chip-outline-selected-text: $kendo-chip-outline-hover-text !default;
 
 // Chip List
-$kendo-chips-margin: 8px !default;
 
-$kendo-chip-selected-icon-size: 16px !default;
-$kendo-chip-selected-icon-offset: 4px !default;
-$kendo-chip-selected-icon-no-icon-offset: $kendo-chip-selected-icon-offset !default;
-$kendo-chip-selected-icon-font-size: $font-size !default;
-
-$kendo-chip-multiple-selected-icon-bg: rgba(0, 0, 0, .36) !default;
-$kendo-chip-multiple-selected-icon-text: #ffffff !default;
+/// The sizes of the chip list.
+/// @group chip-list
+$kendo-chip-list-sizes: (
+    sm: map-get( $spacing, 1 ),
+    md: map-get( $spacing, 2 ),
+    lg: map-get( $spacing, 3 )
+) !default;
