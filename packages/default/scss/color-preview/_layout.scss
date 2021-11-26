@@ -10,7 +10,6 @@
         flex-wrap: nowrap;
         position: relative;
         overflow: hidden;
-        cursor: pointer;
     }
     .k-color-preview::before {
         content: "";
@@ -19,6 +18,11 @@
         display: block;
         position: relative;
         z-index: -1;
+    }
+
+    // Current Color
+    .k-coloreditor-current-color {
+        cursor: pointer;
     }
 
     // No Color
