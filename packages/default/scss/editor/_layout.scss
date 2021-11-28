@@ -239,25 +239,12 @@
             }
         }
     }
-
-
-    // Editable area
-    .k-editable-area {
+    td.k-editor-content {
         padding: $input-padding-y;
         width: 100%;
         height: 100%;
         border-width: 0;
         outline: 0;
-
-        iframe.k-content {
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            height: 100%;
-            border-width: 0;
-            background: none;
-            display: block;
-        }
 
         .k-resizable & {
             padding: $input-padding-y $input-padding-y 16px;
