@@ -1,9 +1,1 @@
 @import "~@progress/kendo-theme-default/scss/window/_theme.scss";
-
-@include exports("popup-edit-form/layout") {
-
-    .k-popup-edit-form .k-edit-buttons {
-        border-color: $window-titlebar-border;
-    }
-
-}
