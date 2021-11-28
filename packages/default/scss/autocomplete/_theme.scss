@@ -23,7 +23,6 @@
 
         // Focus state
         // &:focus-within,
-        &.k-state-open,
         &.k-state-focused,
         &.k-state-focus {
             @include fill(
