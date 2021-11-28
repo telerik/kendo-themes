@@ -314,6 +314,9 @@ $yiq-light: if(
     white
 ) !default;
 
+$wcag-dark: black !default;
+$wcag-light: white !default;
+
 // Calculate the luminance for a color.
 // See https://www.w3.org/TR/WCAG20-TECHS/G17.html#G17-tests
 @function luminance($color) {
@@ -409,7 +412,7 @@ $yiq-light: if(
     // @debug yiq;
     @return $out;
 }
-@function contrast-wcag($color, $dark: #000000, $light: #ffffff) {
+@function contrast-wcag($color, $dark: $wcag-dark, $light: $wcag-light) {
     $luma: luminance($color);
     $out: if($luma < .5, $light, $dark);
     // @debug $luma;
