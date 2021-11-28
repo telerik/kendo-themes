@@ -2,17 +2,6 @@
 
 @include exports("edit-form/layout/material") {
 
-
-    // Edit buttons
-    .k-edit-buttons {
-        padding: 8px;
-    }
-    .k-edit-form-container .k-edit-buttons {
-        border-top-width: 0;
-        padding: 8px;
-    }
-
-
     // Fields
     .k-edit-label {
         padding: 0;

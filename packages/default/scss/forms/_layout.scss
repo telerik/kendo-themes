@@ -364,24 +364,6 @@
     }
 
 
-    // Edit buttons
-    .k-edit-buttons {
-        padding: $toolbar-padding-y $toolbar-padding-x;
-        border-width: 1px 0 0;
-        border-style: solid;
-        border-color: inherit;
-        text-align: right;
-        clear: both;
-    }
-    .k-edit-buttons .k-button + .k-button {
-        margin-left: ( $spacer-x / 2 );
-    }
-    .k-edit-form-container .k-edit-buttons {
-        margin: $window-inner-padding-y (-$window-inner-padding-x) (-$window-inner-padding-y);
-        padding: $window-inner-padding-y $window-inner-padding-x;
-    }
-
-
     // Action buttons
     .k-popup-edit-form > .k-actions,
     .k-edit-form-container .k-actions {
@@ -438,22 +420,6 @@
 
         .k-reset .k-widget {
             margin: 0 .4ex 0 1ex;
-        }
-    }
-
-}
-
-@include exports("edit-form/rtl") {
-
-    .k-rtl {
-
-        .k-edit-buttons {
-            text-align: left;
-
-            .k-button + .k-button {
-                margin-left: 0;
-                margin-right: .5em;
-            }
         }
     }
 
