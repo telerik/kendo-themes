@@ -59,6 +59,7 @@
 
 
     // Content
+    .k-tabstrip-content,
     .k-tabstrip > .k-content {
         @include fill(
             $tabstrip-content-text,
