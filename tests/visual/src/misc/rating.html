@@ -11,14 +11,11 @@
     <script src="../../../../packages/html/dist/index.js"></script>
 
     <style>
-        #test-area {
-            grid-template-columns: repeat(2, 1fr);
-        }
     </style>
 </head>
 <body class="k-body">
 
-    <div id="test-area" class="grid">
+    <div id="test-area" class="k-d-grid k-grid-cols-2">
 
         <span>Continuous</span>
         <span>Single</span>
@@ -46,7 +43,33 @@
                     <span>3 / 5</span>
                 </span>
             </span>
+        </section>
+        <section>
+            <span class="k-rating k-widget">
+                <span class="k-rating-container">
+                    <span class="k-rating-item">
+                        <i is="Icon" name="star-outline"></i>
+                    </span>
+                    <span class="k-rating-item">
+                        <i is="Icon" name="star-outline"></i>
+                    </span>
+                    <span class="k-rating-item k-state-selected">
+                        <i is="Icon" name="star"></i>
+                    </span>
+                    <span class="k-rating-item">
+                        <i is="Icon" name="star-outline"></i>
+                    </span>
+                    <span class="k-rating-item">
+                        <i is="Icon" name="star-outline"></i>
+                    </span>
+                </span>
+                <span class="k-rating-label">
+                    <span>3 / 5</span>
+                </span>
+            </span>
+        </section>
 
+        <section>
             <span class="k-rating k-widget">
                 <span class="k-rating-container">
                     <span class="k-rating-item k-state-selected">
@@ -73,31 +96,7 @@
                 </span>
             </span>
         </section>
-
         <section>
-            <span class="k-rating k-widget">
-                <span class="k-rating-container">
-                    <span class="k-rating-item">
-                        <i is="Icon" name="star-outline"></i>
-                    </span>
-                    <span class="k-rating-item">
-                        <i is="Icon" name="star-outline"></i>
-                    </span>
-                    <span class="k-rating-item k-state-selected">
-                        <i is="Icon" name="star"></i>
-                    </span>
-                    <span class="k-rating-item">
-                        <i is="Icon" name="star-outline"></i>
-                    </span>
-                    <span class="k-rating-item">
-                        <i is="Icon" name="star-outline"></i>
-                    </span>
-                </span>
-                <span class="k-rating-label">
-                    <span>3 / 5</span>
-                </span>
-            </span>
-
             <span class="k-rating k-widget">
                 <span class="k-rating-container">
                     <span class="k-rating-item">
@@ -126,7 +125,7 @@
         </section>
 
         <span>Normal</span>
-        <span>Focused</span>
+        <span>Focus</span>
 
         <section>
             <span class="k-rating k-widget">
@@ -179,7 +178,7 @@
         <span>SVG</span>
 
         <section>
-            <div style="background-color: #656565; width: 300px; padding:5px;">
+            <div style="background-color: #656565;">
                 <span class="k-rating k-widget k-state-focused">
                     <span class="k-rating-container">
                         <span class="k-rating-item k-state-selected">
@@ -205,7 +204,7 @@
             </div>
         </section>
         <section>
-            <span class="k-rating k-widget k-state-focused">
+            <span class="k-rating k-widget">
                 <span class="k-rating-container">
                     <span class="k-rating-item k-state-selected">
                         <svg width="50" height="30" version="1.1" xmlns="http://www.w3.org/2000/svg">
@@ -213,7 +212,7 @@
                         </svg>
                     </span>
                     <span class="k-rating-item k-state-selected">
-                        <span class="k-rating-precision-complement" style="width: 25px; left: 50%;">
+                        <span class="k-rating-precision-complement" style="width: 50px;">
                             <svg width="50" height="30" version="1.1" xmlns="http://www.w3.org/2000/svg">
                                 <rect x="0" y="0" rx="5" ry="5" width="50" height="30" fill-opacity="0" stroke="#e9e9e9" stroke-width="2"></rect>
                             </svg>
