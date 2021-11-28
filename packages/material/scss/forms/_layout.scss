@@ -2,22 +2,6 @@
 
 @include exports("edit-form/layout/material") {
 
-    // Tabstrip
-    .k-edit-form-container .k-tabstrip-wrapper {
-        margin-top: 0;
-        margin-bottom: 0;
-    }
-    .k-edit-form-container .k-tabstrip.k-root-tabs {
-        margin-bottom: $window-inner-padding-y;
-    }
-    .k-edit-form-container .k-tabstrip .k-tabstrip-items {
-        padding: 0;
-    }
-    .k-edit-form-container .k-tabstrip .k-content {
-        padding: $window-inner-padding-y $window-inner-padding-x;
-        border-width: 0;
-    }
-
 
     // Edit buttons
     .k-edit-buttons {
