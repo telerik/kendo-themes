@@ -44,15 +44,14 @@
                 $combobox-hovered-bg,
                 $combobox-hovered-border
             );
-
-            .k-select {
-                @include fill(
-                    $combobox-select-hovered-text,
-                    $combobox-select-hovered-bg,
-                    $combobox-select-hovered-border,
-                    $combobox-select-hovered-gradient
-                );
-            }
+        }
+        .k-select:hover {
+            @include fill(
+                $combobox-select-hovered-text,
+                $combobox-select-hovered-bg,
+                $combobox-select-hovered-border,
+                $combobox-select-hovered-gradient
+            );
         }
 
         // Focus state
