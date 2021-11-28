@@ -64,18 +64,6 @@
             @include box-shadow($combobox-focused-shadow);
         }
 
-        // Active state
-        .k-state-active {
-            .k-select {
-                @include fill(
-                    $combobox-select-pressed-text,
-                    $combobox-select-pressed-bg,
-                    $combobox-select-pressed-border,
-                    $combobox-select-pressed-gradient
-                );
-            }
-        }
-
         // Invalid
         &.k-state-invalid,
         &.ng-invalid.ng-touched,
