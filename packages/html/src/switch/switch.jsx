@@ -114,9 +114,9 @@ SwitchStatic.propTypes = {
     onLabel: typeof '',
     offLabel: typeof '',
 
-    size: typeof [ 'none', 'small', 'medium', 'large' ],
-    trackRounded: typeof [ 'none', '0', 'small', 'medium', 'large', 'pill', 'circle' ],
-    thumbRounded: typeof [ 'none', '0', 'small', 'medium', 'large', 'pill', 'circle' ],
+    size: typeof [ null, 'small', 'medium', 'large' ],
+    trackRounded: typeof [ null, '0', 'small', 'medium', 'large', 'pill', 'circle' ],
+    thumbRounded: typeof [ null, '0', 'small', 'medium', 'large', 'pill', 'circle' ],
 
     hover: typeof false,
     focus: typeof false,

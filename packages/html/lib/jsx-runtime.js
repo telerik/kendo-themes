@@ -66,6 +66,16 @@ const booleanAttr = new Set([
     'aria'
 ]);
 
+const nullAttr = new Set([
+    'size',
+    'rounded',
+    'fillMode',
+    'themeColor',
+
+    'trackRounded',
+    'thumbRounded'
+]);
+
 const skipAttr = new Set([
     'is',
     'aria',
@@ -144,6 +154,10 @@ function attrToProps( attributes ) {
             attrName = attrMap[attrName];
         }
 
+        // Set props as is
+        props[ attrName ] = attrValue;
+
+        // Ensure boolean value
         if (booleanAttr.has(attrName) && typeof attrValue === 'string') {
             switch (attrValue) {
                 case '':
@@ -154,8 +168,11 @@ function attrToProps( attributes ) {
                     props[ attrName ] = false;
                     break;
             }
-        } else {
-            props[ attrName ] = attrValue;
+        }
+
+        // Ensure null value
+        if (nullAttr.has(attrName) && attrValue === 'null') {
+            props[ attrName ] = null;
         }
     });
 

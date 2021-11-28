@@ -46,7 +46,7 @@ function AvatarStatic(props) {
         `k-avatar-${themeColor}`,
         {
             'k-avatar-circle': rounded === 'circle',
-            'k-avatar-rounded': rounded !== 'circle' && rounded !== 'none'
+            'k-avatar-rounded': rounded !== 'circle' && rounded !== null
         },
         styles.sizeClass( size, 'k-avatar' ),
         styles.fillModeClass( fillMode, 'k-avatar' ),
@@ -99,13 +99,13 @@ AvatarStatic.propTypes = {
 
     type: typeof '',
 
-    size: typeof [ 'none', 'small', 'medium', 'large', 'circle' ],
-    shape: typeof [ 'none', 'square', 'circle', 'rounded' ],
-    rounded: typeof [ 'none', '0', 'small', 'medium', 'large' ],
+    size: typeof [ null, 'small', 'medium', 'large', 'circle' ],
+    shape: typeof [ null, 'square', 'circle', 'rounded' ],
+    rounded: typeof [ null, '0', 'small', 'medium', 'large' ],
     bordered: typeof false,
 
-    fillMode: typeof [ 'none', 'solid', 'outline' ],
-    themeColor: typeof [ 'none', 'primary' ],
+    fillMode: typeof [ null, 'solid', 'outline' ],
+    themeColor: typeof [ null, 'primary' ],
 
     aria: typeof false,
     legacy: typeof false,
