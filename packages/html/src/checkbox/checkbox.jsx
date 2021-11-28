@@ -103,8 +103,8 @@ CheckboxStatic.propTypes = {
     checked: typeof false,
     indeterminate: typeof false,
 
-    size: typeof [ 'none', 'small', 'medium', 'large' ],
-    rounded: typeof [ 'none', 'small', 'medium', 'large' ],
+    size: typeof [ null, 'small', 'medium', 'large' ],
+    rounded: typeof [ null, 'small', 'medium', 'large' ],
 
     hover: typeof false,
     focus: typeof false,

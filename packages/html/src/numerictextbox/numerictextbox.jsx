@@ -112,7 +112,7 @@ function NumericTextboxStatic(props) {
             <InputValidationIconStatic {...props} />
             <InputLoadingIconStatic {...props} />
             <InputClearValueStatic {...props} />
-            {showSpinButton === true && <SpinButtonStatic className="k-input-spinner" />}
+            {showSpinButton === true && <SpinButtonStatic className="k-input-spinner" size={size} fillMode={fillMode} />}
         </InputStatic>
     );
 }
@@ -148,10 +148,10 @@ NumericTextboxStatic.propTypes = {
     showLoadingIcon: typeof true,
     showClearButton: typeof true,
 
-    size: typeof [ 'none', 'small', 'medium', 'large' ],
-    rounded: typeof [ 'none', 'small', 'medium', 'large', 'pill' ],
+    size: typeof [ null, 'small', 'medium', 'large' ],
+    rounded: typeof [ null, 'small', 'medium', 'large', 'pill' ],
 
-    fillMode: typeof [ 'none', 'solid', 'flat', 'outline' ],
+    fillMode: typeof [ null, 'solid', 'flat', 'outline' ],
 
     hover: typeof false,
     focus: typeof false,

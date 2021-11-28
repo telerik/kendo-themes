@@ -13,6 +13,9 @@ function SpinButtonStatic(props) {
     const {
         className: ownClassName,
 
+        size,
+        fillMode,
+
         aria,
         legacy,
 
@@ -43,8 +46,8 @@ function SpinButtonStatic(props) {
 
     return (
         <span className={spinButtonClasses} {...ariaAttr} {...htmlAttributes}>
-            <ButtonStatic size="none" rounded="none" className="k-spinner-increase" icon="arrow-n" />
-            <ButtonStatic size="none" rounded="none" className="k-spinner-decrease" icon="arrow-s" />
+            <ButtonStatic className="k-spinner-increase" icon="arrow-n" shape={null} rounded={null} size={size} fillMode={fillMode} />
+            <ButtonStatic className="k-spinner-decrease" icon="arrow-s" shape={null} rounded={null} size={size} fillMode={fillMode} />
         </span>
     );
 }
@@ -55,6 +58,9 @@ SpinButtonStatic.defaultProps = {
 
 SpinButtonStatic.propTypes = {
     className: typeof '',
+
+    size: typeof '',
+    fillMode: typeof '',
 
     aria: typeof false,
     legacy: typeof false,

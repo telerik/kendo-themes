@@ -25,7 +25,7 @@ function lookup( map, key ) {
 }
 
 function sizeClass( size, prefix ) {
-    if ( size === 'none' ) {
+    if ( size === null ) {
         return '';
     }
 
@@ -33,7 +33,7 @@ function sizeClass( size, prefix ) {
 }
 
 function roundedClass( rounded ) {
-    if ( rounded === 'none' ) {
+    if ( rounded === null ) {
         return '';
     }
 
@@ -41,7 +41,7 @@ function roundedClass( rounded ) {
 }
 
 function shapeClass( shape, prefix ) {
-    if ( shape === 'none' ) {
+    if ( shape === null ) {
         return '';
     }
 
@@ -49,7 +49,7 @@ function shapeClass( shape, prefix ) {
 }
 
 function fillModeClass( fill, prefix ) {
-    if ( fill === 'none' ) {
+    if ( fill === null) {
         return '';
     }
 
@@ -57,7 +57,7 @@ function fillModeClass( fill, prefix ) {
 }
 
 function themeColorClass( fill, color, prefix ) {
-    if ( fill === 'none' || color === 'none' ) {
+    if ( fill === null || color === null) {
         return '';
     }
 
