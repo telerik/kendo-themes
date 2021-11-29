@@ -49,24 +49,11 @@
                 <kendo-form-field class="k-form-field">
                     <label class="k-label">MultiSelect:</label>
                     <div>
-                        <kendo-multiselect class="k-widget k-multiselect">
-                            <div class="k-multiselect-wrap k-floatwrap">
-                                <kendo-taglist>
-                                    <ul class="k-reset">
-                                        <li class="k-button">
-                                            <span>Female</span>
-                                            <span class="k-select">
-                                                <i is="Icon" name="x"></i>
-                                            </span>
-                                        </li>
-                                    </ul>
-                                </kendo-taglist>
-                                <kendo-searchbar class="k-searchbar">
-                                    <input class="k-input">
-                                </kendo-searchbar>
-                                <span class="k-clear-value"><i is="Icon" name="x"></i></span>
-                            </div>
-                        </kendo-multiselect>
+                        <span is="MultiSelect">
+                            <slot is="MultiSelectChipList">
+                                <div is="Chip" text="Female" showRemoveIcon="true"></div>
+                            </slot>
+                        </span>
                     </div>
                 </kendo-form-field>
 
@@ -101,24 +88,11 @@
                 <kendo-form-field class="k-form-field">
                     <label class="k-label">MultiSelect:</label>
                     <div class="k-form-field-wrap">
-                        <kendo-multiselect class="k-widget k-multiselect">
-                            <div class="k-multiselect-wrap k-floatwrap">
-                                <kendo-taglist>
-                                    <ul class="k-reset">
-                                        <li class="k-button">
-                                            <span>Female</span>
-                                            <span class="k-select">
-                                                <i is="Icon" name="x"></i>
-                                            </span>
-                                        </li>
-                                    </ul>
-                                </kendo-taglist>
-                                <kendo-searchbar class="k-searchbar">
-                                    <input class="k-input">
-                                </kendo-searchbar>
-                                <span class="k-clear-value"><i is="Icon" name="x"></i></span>
-                            </div>
-                        </kendo-multiselect>
+                        <span is="MultiSelect">
+                            <slot is="MultiSelectChipList">
+                                <div is="Chip" text="Female" showRemoveIcon="true"></div>
+                            </slot>
+                        </span>
                     </div>
                 </kendo-form-field>
 
