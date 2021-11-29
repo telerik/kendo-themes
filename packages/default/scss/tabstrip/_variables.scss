@@ -86,10 +86,10 @@ $tabstrip-indicator-color: null !default;
 
 /// Horizontal padding of tabstrip content
 /// @group tabstrip
-$tabstrip-content-padding-x: $tabstrip-item-padding-x !default;
+$tabstrip-content-padding-x: map-get( $spacing, 4 ) !default;
 /// Vertical padding of tabstrip content
 /// @group tabstrip
-$tabstrip-content-padding-y: $tabstrip-item-padding-y !default;
+$tabstrip-content-padding-y: map-get( $spacing, 4 ) !default;
 /// Width of border around tabstrip content
 /// @group tabstrip
 $tabstrip-content-border-width: 1px !default;
