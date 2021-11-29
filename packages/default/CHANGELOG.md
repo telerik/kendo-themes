@@ -3,6 +3,63 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.43.0](https://github.com/telerik/kendo-themes/compare/v4.42.0...v4.43.0) (2021-11-29)
+
+
+### Bug Fixes
+
+* **actions:** horizontal action must have explicit width ([ef73924](https://github.com/telerik/kendo-themes/commit/ef73924c8b1d02cc74c179c466a68041c21babea))
+* **adaptive:** remove overriding styles for disabled state ([f7c4482](https://github.com/telerik/kendo-themes/commit/f7c448245e380a800bd88b8fb357015b6c522208))
+* add global variables wcag-light and wcag-dark to work with contrast-wcag function ([c618118](https://github.com/telerik/kendo-themes/commit/c618118e099575fdf027ad06009f6f3c01d5c672))
+* **autocomplete:** use correct colors for invalid state ([f2f0144](https://github.com/telerik/kendo-themes/commit/f2f0144ffe1e1a3811805ff37314d054f6153f88))
+* **avatar:** use 2px border radius for avatar to match v5 ([7cd5d1d](https://github.com/telerik/kendo-themes/commit/7cd5d1d307b69d2f56551209c67abd55fafb0337))
+* **avatar:** vertically align icons inside avatar ([932d8bc](https://github.com/telerik/kendo-themes/commit/932d8bc58cf0497288267ae8feef553f1256d981))
+* **card:** remove redundant styles for buttons ([7bed7ff](https://github.com/telerik/kendo-themes/commit/7bed7ff6156ce35155cf4b6df306c7c81716de6a))
+* **chat:** do not remove padding from buttons ([f553f0a](https://github.com/telerik/kendo-themes/commit/f553f0a233a4d2fb04b83f305edd60bb0adba990))
+* **chat:** remove redundant styles for textbox ([37587e2](https://github.com/telerik/kendo-themes/commit/37587e26c337fad2dccfaf4d37cd0163a0877010))
+* **chat:** reuse button input and toolbar variables ([371e9c4](https://github.com/telerik/kendo-themes/commit/371e9c4bfbd100e7755f44bb76a636968ff8f7f8))
+* **chat:** stretch scroll buttons ([60c1034](https://github.com/telerik/kendo-themes/commit/60c1034fd63c406258422cad4decbee2ea2c9e61))
+* **checkbox:** hover state comma is missing ([71d4960](https://github.com/telerik/kendo-themes/commit/71d4960b024c1a91a48daefc55b45e4b25764d8a))
+* **chip:** add k-state-selected class where missed ([d568daf](https://github.com/telerik/kendo-themes/commit/d568daf8cbebfb0288637aac28114fb6a60e6358))
+* **color-picker:** use slightly tinner indicator for selected color ([c51173a](https://github.com/telerik/kendo-themes/commit/c51173a929943a397893ff9862588b40ce16f79a))
+* **color-preview:** remove cursor pointer from preview-color element ([3aa35fc](https://github.com/telerik/kendo-themes/commit/3aa35fc2b50b78df0560e33aa8f7916cb8810f1f))
+* **combobox:** make hover state of combobox select consistent with other inputs ([d5c2791](https://github.com/telerik/kendo-themes/commit/d5c2791c1e44180f06b2ce73d39f9403b183947d))
+* **dropdown-list:** select border should be rendered even if transparent ([8594965](https://github.com/telerik/kendo-themes/commit/859496593358c2609363290164c79858b73844b9))
+* **editor:** combine editor content and editable area styles ([b4a1679](https://github.com/telerik/kendo-themes/commit/b4a16791ea295df0db22067d79bec7fe2dc56cc7))
+* **editor:** simplify editor toolbar by removing redundant styles ([b81faef](https://github.com/telerik/kendo-themes/commit/b81faefc49e23c5612d75c7b7c794fd534df928e))
+* **editor:** use explicit box-sizing for image resizing ([98f459e](https://github.com/telerik/kendo-themes/commit/98f459e872f2b5b81625fc0b9324fc7c4057c138))
+* ensure correct validation icon color in invalid state ([627abb2](https://github.com/telerik/kendo-themes/commit/627abb2cf251642abda449a15595981907699389))
+* **form:** make form fields inline-flex instead of flex ([1baa806](https://github.com/telerik/kendo-themes/commit/1baa806ef9c4429b41f2ea2c4553cbff8de21fa6))
+* **gantt:** use box-sizing border box for task and milestones ([874d0af](https://github.com/telerik/kendo-themes/commit/874d0af0c6533fe8d0acc7daf6d75ab564c21b49))
+* **grid:** decrease column menu icon z-index ([84e00f3](https://github.com/telerik/kendo-themes/commit/84e00f3fde8a149734786203bd3ff0d9a892a119))
+* **input:** add styles for validation and loading icons ([a2253ec](https://github.com/telerik/kendo-themes/commit/a2253ec400be50991a48f4d99e94cf3299dd743d))
+* make edit-buttons container alias of actions container ([04cdf04](https://github.com/telerik/kendo-themes/commit/04cdf041c5d67395733a99175ddfd63a7dfada8c))
+* **pivotgrid:** off-screen content is not visible during export ([d27c177](https://github.com/telerik/kendo-themes/commit/d27c177b47eb4cccf53baee67c7b8bab09d5f6d2))
+* resolve w3c validator errors ([c65cb67](https://github.com/telerik/kendo-themes/commit/c65cb677d1496dcfcfd61c1c022d2ca9188c5e36))
+* **scheduler:** remove further customization from mobile scheduler views dropdown ([db3733a](https://github.com/telerik/kendo-themes/commit/db3733a644abfefbb22b47e4ca2ea1a0cef72514))
+* **searchbox:** add box-sizing to searchbox ([97acba6](https://github.com/telerik/kendo-themes/commit/97acba674ece5ab39c32380b0bea61a971649012))
+* **searchbox:** use correct colors for invalid state ([6c947d0](https://github.com/telerik/kendo-themes/commit/6c947d08b61b31b6c10aa80db2b1251522b10c80))
+* **separator:** streamline separator styles ([3a4cc7a](https://github.com/telerik/kendo-themes/commit/3a4cc7a307fe62a4b5196143df5031da9bec84e0))
+* **tabstrip:** ensure k-tabstrip-content and k-tabstrip k-content styles are identical ([374ee33](https://github.com/telerik/kendo-themes/commit/374ee331ebee02eda382eddaeeb18f8fbca47f3b))
+* **tabstrip:** tab alignment not working ([d60b4f6](https://github.com/telerik/kendo-themes/commit/d60b4f67c11f1142e1cd4303706d21c258e984fa))
+* **tabstrip:** unify tabstrip appearance inside window ([e3c3336](https://github.com/telerik/kendo-themes/commit/e3c3336d424d90154d7491f115a1424e20974cc7))
+* use consistent border width for select button in inputs and pickers ([d517f2a](https://github.com/telerik/kendo-themes/commit/d517f2a9eae362972d7430a59e0a2feff5999d2f))
+* use correct border radius for select button in rtl inputs ([9236b39](https://github.com/telerik/kendo-themes/commit/9236b392eca050aef086d354ab288f5be1558bd7))
+* **utils:** use different border-radius for different themes ([c3991c7](https://github.com/telerik/kendo-themes/commit/c3991c775cce8c11faf88650f80d9a582ceef887))
+* **window:** add styles for window buttons container ([a73fba6](https://github.com/telerik/kendo-themes/commit/a73fba63b2d226503d37c588fa5dc8ae3a22dd81))
+
+
+### Features
+
+* add new icons to font ([eb4b933](https://github.com/telerik/kendo-themes/commit/eb4b933f9dfedc67591592789ba4bdea18b444fc))
+* **colorgradient:** add color contrast svg styles ([9a9a336](https://github.com/telerik/kendo-themes/commit/9a9a3361145b3b8324cd76c603d52a2f28114239))
+* **editor:** add styles for resizable images ([b621712](https://github.com/telerik/kendo-themes/commit/b621712a51a363973654faa018653e48d94e88a4))
+* remove leftover support for IE 9 ([cb82f9b](https://github.com/telerik/kendo-themes/commit/cb82f9bfd1af3326eaa79d80ac8ce62ed260e260))
+
+
+
+
+
 # [4.42.0](https://github.com/telerik/kendo-themes/compare/v4.41.2...v4.42.0) (2021-10-18)
 
 

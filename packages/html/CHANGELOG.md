@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.43.0](https://github.com/telerik/kendo-themes/compare/v4.42.0...v4.43.0) (2021-11-29)
+
+
+### Bug Fixes
+
+* handle null children better ([3db5771](https://github.com/telerik/kendo-themes/commit/3db5771ee96456b12259aa48058673f7dd10a904))
+* **html:** add icon-picker classname to pickers with icon only ([9a0b3cb](https://github.com/telerik/kendo-themes/commit/9a0b3cba596741ed103433a6273f4fddb95a582f))
+* **html:** add support for readonly attribute ([91f74d3](https://github.com/telerik/kendo-themes/commit/91f74d3c55990469f410feae3f77e7330ffff9c6))
+* **html:** colorpicker should pass selected color to color-preview ([f6bce2e](https://github.com/telerik/kendo-themes/commit/f6bce2e2f6550b2c29d07b009220691dedb44b9b))
+* **html:** use null value instead of none value ([59d4912](https://github.com/telerik/kendo-themes/commit/59d4912fb649c1803c45f2bc88248f5c60c8d012))
+
+
+### Features
+
+* add html helpers for datetime inputs ([022c954](https://github.com/telerik/kendo-themes/commit/022c954aea0f8746400a7b66c35651a56f35ef4f))
+* **html:** add html helper for avatar ([11ffc18](https://github.com/telerik/kendo-themes/commit/11ffc1827639b85fb928125fc05e64b1ea192307))
+
+
+
+
+
 # [4.42.0](https://github.com/telerik/kendo-themes/compare/v4.41.2...v4.42.0) (2021-10-18)
 
 

@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.43.0](https://github.com/telerik/kendo-themes/compare/v4.42.0...v4.43.0) (2021-11-29)
+
+
+### Bug Fixes
+
+* **autocomplete:** use correct colors for invalid state ([f2f0144](https://github.com/telerik/kendo-themes/commit/f2f0144ffe1e1a3811805ff37314d054f6153f88))
+* **chat:** remove redundant styles for textbox ([37587e2](https://github.com/telerik/kendo-themes/commit/37587e26c337fad2dccfaf4d37cd0163a0877010))
+* **chat:** reuse button input and toolbar variables ([371e9c4](https://github.com/telerik/kendo-themes/commit/371e9c4bfbd100e7755f44bb76a636968ff8f7f8))
+* **editor:** use explicit box-sizing for image resizing ([98f459e](https://github.com/telerik/kendo-themes/commit/98f459e872f2b5b81625fc0b9324fc7c4057c138))
+* make edit-buttons container alias of actions container ([04cdf04](https://github.com/telerik/kendo-themes/commit/04cdf041c5d67395733a99175ddfd63a7dfada8c))
+* resolve w3c validator errors ([c65cb67](https://github.com/telerik/kendo-themes/commit/c65cb677d1496dcfcfd61c1c022d2ca9188c5e36))
+* **scheduler:** remove further customization from mobile scheduler views dropdown ([db3733a](https://github.com/telerik/kendo-themes/commit/db3733a644abfefbb22b47e4ca2ea1a0cef72514))
+* **separator:** streamline separator styles ([3a4cc7a](https://github.com/telerik/kendo-themes/commit/3a4cc7a307fe62a4b5196143df5031da9bec84e0))
+* **tabstrip:** unify tabstrip appearance inside window ([e3c3336](https://github.com/telerik/kendo-themes/commit/e3c3336d424d90154d7491f115a1424e20974cc7))
+* use consistent border width for select button in inputs and pickers ([d517f2a](https://github.com/telerik/kendo-themes/commit/d517f2a9eae362972d7430a59e0a2feff5999d2f))
+* **utils:** use different border-radius for different themes ([c3991c7](https://github.com/telerik/kendo-themes/commit/c3991c775cce8c11faf88650f80d9a582ceef887))
+
+
+### Features
+
+* **editor:** add styles for resizable images ([b621712](https://github.com/telerik/kendo-themes/commit/b621712a51a363973654faa018653e48d94e88a4))
+* remove leftover support for IE 9 ([cb82f9b](https://github.com/telerik/kendo-themes/commit/cb82f9bfd1af3326eaa79d80ac8ce62ed260e260))
+
+
+
+
+
 # [4.42.0](https://github.com/telerik/kendo-themes/compare/v4.41.2...v4.42.0) (2021-10-18)
 
 

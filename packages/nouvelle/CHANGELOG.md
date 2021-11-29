@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.43.0](https://github.com/telerik/kendo-themes/compare/v4.42.0...v4.43.0) (2021-11-29)
+
+
+### Bug Fixes
+
+* add global variables wcag-light and wcag-dark to work with contrast-wcag function ([c618118](https://github.com/telerik/kendo-themes/commit/c618118e099575fdf027ad06009f6f3c01d5c672))
+
+
+
+
+
 # [4.42.0](https://github.com/telerik/kendo-themes/compare/v4.41.2...v4.42.0) (2021-10-18)
 
 
