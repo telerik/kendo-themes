@@ -56,6 +56,7 @@
     "dart:flat": "gulp dart:flat",
     "dart:watch": "gulp dart:watch",
     "dart:swatches": "gulp dart:swatches",
+    "build": "npm run sass && npm run build:scripts",
     "build:scripts": "lerna run build --scope @progress/kendo-themes-html",
     "serve": "npm run sass && npm run build:scripts && npm run serve-tests",
     "eslint": "eslint \"**/*.js\"",
