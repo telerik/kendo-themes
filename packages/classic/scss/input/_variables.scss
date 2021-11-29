@@ -82,6 +82,8 @@ $kendo-input-clear-value-opacity: .5 !default;
 $kendo-input-clear-value-hover-text: null !default;
 $kendo-input-clear-value-hover-opacity: 1 !default;
 
+$kendo-input-values-margin-y: map-get( $spacing, thin ) !default;
+$kendo-input-values-margin-x: $kendo-input-values-margin-y !default;
 
 // Input actions
 $kendo-input-button-width: null !default;
