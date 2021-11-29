@@ -263,7 +263,7 @@ The following table lists the available variables for customizing the Nouvelle t
 </tbody>
 </table>
 
-### Buttons
+### Button
 
 <table class="theme-variables">
     <colgroup>

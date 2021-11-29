@@ -162,7 +162,7 @@ The following table lists the available variables for customizing the Bootstrap 
 </tbody>
 </table>
 
-### Buttons
+### Button
 
 <table class="theme-variables">
     <colgroup>
@@ -1189,8 +1189,8 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$tabstrip-content-padding-x</td>
     <td></td>
-    <td>$tabstrip-item-padding-x</td>
-    <td></td>
+    <td>map-get( $spacing, 4 )</td>
+    <td>map-get( $spacing, 4 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of tabstrip content</div></div>
@@ -1199,8 +1199,8 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$tabstrip-content-padding-y</td>
     <td></td>
-    <td>$tabstrip-item-padding-y</td>
-    <td></td>
+    <td>map-get( $spacing, 4 )</td>
+    <td>map-get( $spacing, 4 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of tabstrip content</div></div>
