@@ -10,122 +10,260 @@
     <script src="../../../../packages/html/dist/index.js"></script>
 
     <style>
-        .section {
-            max-width: 200px;
-        }
-
-        #test-area {
-            grid-template-columns: 1fr;
-        }
     </style>
 </head>
 
 <body class="k-body">
 
-    <div id="test-area" class="grid">
+    <div id="test-area" class="k-d-grid k-grid-cols-3">
 
-
-            <div class="section">
-
-                <div id="grid" class="k-grid k-widget k-grid-display-block k-grid-no-scrollbar" style="height: 120px;">
-                    <div class="k-grid-header">
-                        <div class="k-grid-header-wrap k-auto-scrollable">
-                            <table>
-                                <colgroup>
-                                    <col>
-                                </colgroup>
-                                <thead>
-                                    <tr>
-                                        <th scope="col" class="k-header k-with-icon">
-                                            Autocomplete
-                                        </th>
-                                    </tr>
-                                    <tr class="k-filter-row">
-                                        <th>
-                                            <span class="k-filtercell">
-                                                <span>
-                                                    <input is="Autocomplete" placeholder="Autocomplete..." />
-                                                    <input is="DropdownList" class="k-dropdown-operator" arrowIconName="filter" />
-                                                    <button is="Button" icon="filter-clear"></button>
-                                                </span>
+        <div class="section">
+            <div id="grid" class="k-grid k-widget k-grid-display-block k-grid-no-scrollbar">
+                <div class="k-grid-header">
+                    <div class="k-grid-header-wrap k-auto-scrollable">
+                        <table>
+                            <colgroup>
+                                <col>
+                            </colgroup>
+                            <thead>
+                                <tr class="k-filter-row">
+                                    <th>
+                                        <span class="k-filtercell">
+                                            <span>
+                                                <input is="Colorpicker" />
+                                                <input is="DropdownList" class="k-dropdown-operator" arrowIconName="filter" />
+                                                <button is="Button" icon="filter-clear" disabled></button>
                                             </span>
-                                        </th>
-                                    </tr>
-                                </thead>
-                            </table>
-                        </div>
+                                        </span>
+                                    </th>
+                                </tr>
+                            </thead>
+                        </table>
                     </div>
                 </div>
-
             </div>
+        </div>
+        <div></div>
+        <div></div>
 
-            <div class="section">
-
-                <div id="grid" class="k-grid k-widget k-grid-display-block k-grid-no-scrollbar" style="height: 120px;">
-                    <div class="k-grid-header">
-                        <div class="k-grid-header-wrap k-auto-scrollable">
-                            <table>
-                                <colgroup>
-                                    <col>
-                                </colgroup>
-                                <thead>
-                                    <tr>
-                                        <th scope="col" class="k-header k-with-icon">
-                                            NumericTextBox
-                                        </th>
-                                    </tr>
-                                    <tr class="k-filter-row">
-                                        <th>
-                                            <span class="k-filtercell">
-                                                <span>
-                                                    <input is="NumericTextbox" />
-                                                    <input is="DropdownList" class="k-dropdown-operator" arrowIconName="filter" />
-                                                    <button is="Button" icon="filter-clear"></button>
-                                                </span>
+        <div class="section">
+            <div id="grid" class="k-grid k-widget k-grid-display-block k-grid-no-scrollbar">
+                <div class="k-grid-header">
+                    <div class="k-grid-header-wrap k-auto-scrollable">
+                        <table>
+                            <colgroup>
+                                <col>
+                            </colgroup>
+                            <thead>
+                                <tr class="k-filter-row">
+                                    <th>
+                                        <span class="k-filtercell">
+                                            <span>
+                                                <input is="Autocomplete" placeholder="Autocomplete..." />
+                                                <input is="DropdownList" class="k-dropdown-operator" arrowIconName="filter" />
+                                                <button is="Button" icon="filter-clear" disabled></button>
                                             </span>
-                                        </th>
-                                    </tr>
-                                </thead>
-                            </table>
-                        </div>
+                                        </span>
+                                    </th>
+                                </tr>
+                            </thead>
+                        </table>
                     </div>
                 </div>
-
             </div>
+        </div>
 
-            <div class="section">
-
-                <div id="grid" class="k-grid k-widget k-grid-display-block k-grid-no-scrollbar" style="height: 120px;">
-                    <div class="k-grid-header">
-                        <div class="k-grid-header-wrap k-auto-scrollable">
-                            <table>
-                                <colgroup>
-                                    <col>
-                                </colgroup>
-                                <thead>
-                                    <tr>
-                                        <th scope="col" class="k-header k-with-icon">
-                                            DatePicker
-                                        </th>
-                                    </tr>
-                                    <tr class="k-filter-row">
-                                        <th>
-                                            <span class="k-filtercell">
-                                                <span>
-                                                    <input is="DatePicker" />
-                                                    <input is="DropdownList" class="k-dropdown-operator" arrowIconName="filter" />
-                                                    <button is="Button" icon="filter-clear"></button>
-                                                </span>
+        <div class="section">
+            <div id="grid" class="k-grid k-widget k-grid-display-block k-grid-no-scrollbar">
+                <div class="k-grid-header">
+                    <div class="k-grid-header-wrap k-auto-scrollable">
+                        <table>
+                            <colgroup>
+                                <col>
+                            </colgroup>
+                            <thead>
+                                <tr class="k-filter-row">
+                                    <th>
+                                        <span class="k-filtercell">
+                                            <span>
+                                                <input is="Combobox" placeholder="Combobox..." />
+                                                <input is="DropdownList" class="k-dropdown-operator" arrowIconName="filter" />
+                                                <button is="Button" icon="filter-clear" disabled></button>
                                             </span>
-                                        </th>
-                                    </tr>
-                                </thead>
-                            </table>
-                        </div>
+                                        </span>
+                                    </th>
+                                </tr>
+                            </thead>
+                        </table>
                     </div>
                 </div>
-
             </div>
+        </div>
+
+        <div class="section">
+            <div id="grid" class="k-grid k-widget k-grid-display-block k-grid-no-scrollbar">
+                <div class="k-grid-header">
+                    <div class="k-grid-header-wrap k-auto-scrollable">
+                        <table>
+                            <colgroup>
+                                <col>
+                            </colgroup>
+                            <thead>
+                                <tr class="k-filter-row">
+                                    <th>
+                                        <span class="k-filtercell">
+                                            <span>
+                                                <input is="DropdownList" placeholder="DropdownList..." />
+                                                <input is="DropdownList" class="k-dropdown-operator" arrowIconName="filter" />
+                                                <button is="Button" icon="filter-clear" disabled></button>
+                                            </span>
+                                        </span>
+                                    </th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div id="grid" class="k-grid k-widget k-grid-display-block k-grid-no-scrollbar">
+                <div class="k-grid-header">
+                    <div class="k-grid-header-wrap k-auto-scrollable">
+                        <table>
+                            <colgroup>
+                                <col>
+                            </colgroup>
+                            <thead>
+                                <tr class="k-filter-row">
+                                    <th>
+                                        <span class="k-filtercell">
+                                            <span>
+                                                <input is="NumericTextbox" placeholder="Numeric..." />
+                                                <input is="DropdownList" class="k-dropdown-operator" arrowIconName="filter" />
+                                                <button is="Button" icon="filter-clear" disabled></button>
+                                            </span>
+                                        </span>
+                                    </th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div id="grid" class="k-grid k-widget k-grid-display-block k-grid-no-scrollbar">
+                <div class="k-grid-header">
+                    <div class="k-grid-header-wrap k-auto-scrollable">
+                        <table>
+                            <colgroup>
+                                <col>
+                            </colgroup>
+                            <thead>
+                                <tr class="k-filter-row">
+                                    <th>
+                                        <span class="k-filtercell">
+                                            <span>
+                                                <input is="Textbox" placeholder="Textbox..." />
+                                                <input is="DropdownList" class="k-dropdown-operator" arrowIconName="filter" />
+                                                <button is="Button" icon="filter-clear" disabled></button>
+                                            </span>
+                                        </span>
+                                    </th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div></div>
+
+        <div class="section">
+            <div id="grid" class="k-grid k-widget k-grid-display-block k-grid-no-scrollbar">
+                <div class="k-grid-header">
+                    <div class="k-grid-header-wrap k-auto-scrollable">
+                        <table>
+                            <colgroup>
+                                <col>
+                            </colgroup>
+                            <thead>
+                                <tr class="k-filter-row">
+                                    <th>
+                                        <span class="k-filtercell">
+                                            <span>
+                                                <input is="DatePicker" placeholder="Datepicker..." />
+                                                <input is="DropdownList" class="k-dropdown-operator" arrowIconName="filter" />
+                                                <button is="Button" icon="filter-clear" disabled></button>
+                                            </span>
+                                        </span>
+                                    </th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div id="grid" class="k-grid k-widget k-grid-display-block k-grid-no-scrollbar">
+                <div class="k-grid-header">
+                    <div class="k-grid-header-wrap k-auto-scrollable">
+                        <table>
+                            <colgroup>
+                                <col>
+                            </colgroup>
+                            <thead>
+                                <tr class="k-filter-row">
+                                    <th>
+                                        <span class="k-filtercell">
+                                            <span>
+                                                <input is="TimePicker" placeholder="TimePicker..." />
+                                                <input is="DropdownList" class="k-dropdown-operator" arrowIconName="filter" />
+                                                <button is="Button" icon="filter-clear" disabled></button>
+                                            </span>
+                                        </span>
+                                    </th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div id="grid" class="k-grid k-widget k-grid-display-block k-grid-no-scrollbar">
+                <div class="k-grid-header">
+                    <div class="k-grid-header-wrap k-auto-scrollable">
+                        <table>
+                            <colgroup>
+                                <col>
+                            </colgroup>
+                            <thead>
+                                <tr class="k-filter-row">
+                                    <th>
+                                        <span class="k-filtercell">
+                                            <span>
+                                                <input is="DateTimePicker" placeholder="DateTimePicker..." />
+                                                <input is="DropdownList" class="k-dropdown-operator" arrowIconName="filter" />
+                                                <button is="Button" icon="filter-clear" disabled></button>
+                                            </span>
+                                        </span>
+                                    </th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 
 </body>
