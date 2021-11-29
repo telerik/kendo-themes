@@ -228,8 +228,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$tabstrip-content-padding-x</td>
     <td></td>
-    <td>$tabstrip-item-padding-x</td>
-    <td>24px</td>
+    <td>map-get( $spacing, 4 )</td>
+    <td>map-get( $spacing, 4 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of tabstrip content</div></div>
@@ -238,8 +238,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$tabstrip-content-padding-y</td>
     <td></td>
-    <td>$tabstrip-item-padding-y</td>
-    <td>14px</td>
+    <td>map-get( $spacing, 4 )</td>
+    <td>map-get( $spacing, 4 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of tabstrip content</div></div>

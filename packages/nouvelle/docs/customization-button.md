@@ -1,11 +1,11 @@
 ---
-title: Customizing Buttons
+title: Customizing Button
 description: "Refer to the list of the Kendo UI Nouvelle theme variables available for customization."
-slug: variables_kendothemenouvelle_buttons
+slug: variables_kendothemenouvelle_button
 position: 9
 ---
 
-# Customizing Buttons
+# Customizing Button
 
 The following table lists the available variables for customization.
 
