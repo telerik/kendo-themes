@@ -62,7 +62,7 @@ export * from './datetimepicker/index';
 export * from './dropdownlist/index';
 // export * from './dropdowntree/index';
 export * from './maskedtextbox/index';
-// export * from './multiselect/index';
+export * from './multiselect/index';
 export * from './numerictextbox/index';
 // export * from './rating/index';
 export * from './searchbox/index';
