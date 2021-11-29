@@ -12,58 +12,58 @@ $button-line-height: $line-height !default;
 
 
 /// The background of the buttons.
-/// @group buttons
+/// @group button
 $button-bg: $interactive-bg !default;
 /// The text color of the buttons.
-/// @group buttons
+/// @group button
 $button-text: $interactive-text !default;
 /// The border color of the buttons.
-/// @group buttons
+/// @group button
 $button-border: $interactive-border !default;
 /// The background gradient of the buttons.
-/// @group buttons
+/// @group button
 $button-gradient: $interactive-gradient !default;
 $button-shadow: null !default;
 
 /// The background of hovered buttons.
-/// @group buttons
+/// @group button
 $button-hover-bg: try-shade( $button-bg, .5 ) !default;
 /// The text color of hovered buttons.
-/// @group buttons
+/// @group button
 $button-hover-text: $button-text !default;
 /// The border color of hovered buttons.
-/// @group buttons
+/// @group button
 $button-hover-border: $button-border !default;
 /// The background gradient of hovered buttons.
-/// @group buttons
+/// @group button
 $button-hover-gradient: $button-gradient !default;
 $button-hover-shadow: null !default;
 
 /// The background color of focus buttons.
-/// @group buttons
+/// @group button
 $button-focus-bg: $button-hover-bg !default;
 /// The text color of focus buttons.
-/// @group buttons
+/// @group button
 $button-focus-text: $button-hover-text !default;
 /// The border color of focus buttons.
-/// @group buttons
+/// @group button
 $button-focus-border: $button-hover-border !default;
 /// The background gradient of focus buttons.
-/// @group buttons
+/// @group button
 $button-focus-gradient: $button-hover-gradient !default;
 $button-focus-shadow: 0 0 0 2px rgba( if( $dark-theme, $white, $black ), .08 ) !default;
 
 /// The background color of pressed buttons.
-/// @group buttons
+/// @group button
 $button-active-bg: try-shade( $button-bg, 1 ) !default;
 /// The text color of pressed buttons.
-/// @group buttons
+/// @group button
 $button-active-text: $button-text !default;
 /// The border color of pressed buttons.
-/// @group buttons
+/// @group button
 $button-active-border: $button-border !default;
 /// The background gradient of pressed buttons.
-/// @group buttons
+/// @group button
 $button-active-gradient: $button-gradient !default;
 $button-active-shadow: null !default;
 
