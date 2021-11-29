@@ -97,6 +97,17 @@
     }
 
 
+    // Input multiple values
+    .k-input-values {
+        width: 100%;
+        padding: $kendo-input-values-margin-y $kendo-input-values-margin-x;
+        cursor: text;
+    }
+    .k-input-values > .k-input-inner {
+        margin: -$kendo-input-values-margin-y -$kendo-input-values-margin-x;
+    }
+
+
     // Icon picker
     .k-icon-picker {
         .k-input-inner {
