@@ -42,20 +42,10 @@
 
                 <div class="k-form-field">
                     <label class="k-label">MultiSelect:</label>
-                    <span class="k-widget k-multiselect">
-                        <div class="k-multiselect-wrap k-floatwrap">
-                            <ul class="k-reset">
-                                <li class="k-button">
-                                    <span>Female</span>
-                                    <span class="k-select">
-                                        <i is="Icon" name="x"></i>
-                                    </span>
-                                </li>
-                            </ul>
-                            <span class="k-searchbar">
-                                <input class="k-input" />
-                            </span>
-                        </div>
+                    <span is="MultiSelect">
+                        <slot is="MultiSelectChipList">
+                            <div is="Chip" text="Female" showRemoveIcon="true"></div>
+                        </slot>
                     </span>
                 </div>
 
@@ -90,20 +80,10 @@
                 <div class="k-form-field">
                     <label class="k-label">MultiSelect:</label>
                     <div class="k-form-field-wrap">
-                        <span class="k-widget k-multiselect">
-                            <div class="k-multiselect-wrap k-floatwrap">
-                                <ul class="k-reset">
-                                    <li class="k-button">
-                                        <span>Female</span>
-                                        <span class="k-select">
-                                            <i is="Icon" name="x"></i>
-                                        </span>
-                                    </li>
-                                </ul>
-                                <span class="k-searchbar">
-                                    <input class="k-input" />
-                                </span>
-                            </div>
+                        <span is="MultiSelect">
+                            <slot is="MultiSelectChipList">
+                                <div is="Chip" text="Female" showRemoveIcon="true"></div>
+                            </slot>
                         </span>
                     </div>
                 </div>

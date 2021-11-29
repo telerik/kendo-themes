@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en" class="k-no-animations">
+<head>
+    <title>Multiselect Size</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+    <script src="../../assets/scripts.js"></script>
+    <script src="../../../../packages/html/dist/index.js"></script>
+
+    <style>
+        #test-area {
+            max-width: 600px;
+            grid-template-columns: 120px repeat(1, 1fr);
+        }
+    </style>
+</head>
+<body class="k-body">
+
+    <div id="test-area" class="k-d-grid k-grid-cols-2">
+
+        <span>small</span>
+        <span is="MultiSelect" size="small">
+            <slot is="MultiSelectChipList" size="small">
+                <div is="Chip" text="Chip Text" size="small" showRemoveIcon="true"></div>
+                <div is="Chip" text="Chip Text" size="small" showRemoveIcon="true"></div>
+            </slot>
+        </span>
+
+        <span>medium</span>
+        <span is="MultiSelect" size="medium">
+            <slot is="MultiSelectChipList">
+                <div is="Chip" text="Chip Text" size="medium" showRemoveIcon="true"></div>
+                <div is="Chip" text="Chip Text" size="medium" showRemoveIcon="true"></div>
+            </slot>
+        </span>
+
+        <span>large</span>
+        <span is="MultiSelect" size="large">
+            <slot is="MultiSelectChipList" size="large">
+                <div is="Chip" text="Chip Text" size="large" showRemoveIcon="true"></div>
+                <div is="Chip" text="Chip Text" size="large" showRemoveIcon="true"></div>
+            </slot>
+        </span>
+
+    </div>
+
+</body>
+</html>
