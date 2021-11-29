@@ -106,7 +106,6 @@
         }
 
         .k-form-field,
-        .k-form-buttons,
         .k-daterangepicker .k-textbox-container {
             margin-top: $form-field-margin-top;
         }
@@ -170,15 +169,9 @@
 
     // Form Buttons Container
     .k-form-buttons {
-        display: flex;
-
-        > * {
-            margin-right: $form-button-margin-x;
-
-            &:last-child {
-                margin-right: 0;
-            }
-        }
+        @extend .k-actions;
+        margin-top: 2 * $form-field-margin-top;
+        padding: 0;
     }
 
     // Form Hint/Error Messages
@@ -235,28 +228,12 @@
             max-width: $horizontal-form-field-wrap-max-width;
             flex: 1 1 auto;
         }
-
-        .k-form-buttons {
-            margin-top: 2 * $form-field-margin-top;
-        }
     }
 
     // RTL Adjustments
     .k-form {
         [dir="rtl"],
         .k-rtl & {
-            .k-form-buttons,
-            &.k-form-buttons {
-                > * {
-                    margin-right: 0;
-                    margin-left: $form-button-margin-x;
-
-                    &:last-child {
-                        margin-left: 0;
-                    }
-                }
-            }
-
             .k-label-optional {
                 margin-left: 0;
                 margin-right: $label-optional-margin-x;
