@@ -8,16 +8,11 @@
 <body>
 
     <div class="test-area">
-        <div is="Multiselect" id="multiselect" class="k-widget k-multiselect k-header">
-            <div class="k-multiselect-wrap k-floatwrap">
-                <ul role="listbox" class="k-reset" id="required_taglist">
-                    <li class="k-button"><span>Anne King</span><span class="k-select"><i is="Icon" name="x"></i></span></li>
-                </ul>
-                <input class="k-input" style="width: 41px;" autocomplete="off" role="listbox" />
-                <span class="k-clear-value k-hidden"><i is="Icon" name="x"></i></span>
-                <i is="Icon" name="loading" hidden></i>
-            </div>
-        </div>
+        <span is="MultiSelect">
+            <slot is="MultiSelectChipList">
+                <div is="Chip" text="Normal" showRemoveIcon="true"></div>
+            </slot>
+        </span>
     </div>
 
 </body>
