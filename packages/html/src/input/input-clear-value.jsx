@@ -14,7 +14,7 @@ function InputClearValueStatic(inputProps) {
         aria
     } = inputProps;
 
-    if (disabled || readonly || loading || !showClearButton || value === '' ) {
+    if (disabled || readonly || loading || !showClearButton || value === '' || (value.type === "#fragment" && !value.props.children.length) ) {
         return <></>;
     }
 
