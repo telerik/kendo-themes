@@ -2,13 +2,35 @@
 
     .k-chip-list {
         display: inline-flex;
+        align-items: center;
 
-        > * {
-            margin-right: $chips-margin;
+        .k-chip-list-inner {
+            display: flex;
 
-            &:last-child {
-                margin-right: 0;
+            > * {
+                margin-right: $chips-margin;
+
+                &:last-child {
+                    margin-right: 0;
+                }
             }
+        }
+    }
+
+    .k-chip-list-scrollable {
+        > .k-chip-list-inner {
+            flex: 1 1 auto;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        > .k-button {
+            flex-shrink: 0;
+            align-self: stretch;
+        }
+
+        .k-chip {
+            overflow: visible;
         }
     }
 
@@ -41,23 +63,25 @@
             visibility: visible;
         }
 
-        > .k-chip-has-icon {
+        .k-chip-has-icon {
             .k-selected-icon-wrapper {
                 border-radius: 50%;
                 position: absolute;
             }
         }
 
-        :not(.k-chip-has-icon) {
-            .k-selected-icon-wrapper {
-                left: $chip-selected-icon-no-icon-offset;
-                opacity: 0;
-                transition: width .2s, opacity .2s;
-            }
+        .k-chip-list-inner {
+            :not(.k-chip-has-icon) {
+                .k-selected-icon-wrapper {
+                    left: $chip-selected-icon-no-icon-offset;
+                    opacity: 0;
+                    transition: width .2s, opacity .2s;
+                }
 
-            &.k-state-selected .k-selected-icon-wrapper,
-            &.k-selected .k-selected-icon-wrapper {
-                opacity: 1;
+                &.k-state-selected .k-selected-icon-wrapper,
+                &.k-selected .k-selected-icon-wrapper {
+                    opacity: 1;
+                }
             }
         }
     }
@@ -129,13 +153,20 @@
         &[dir="rtl"],
         .k-rtl &,
         &.k-rtl {
-            > * {
-                margin-right: 0;
-                margin-left: $chips-margin;
+            .k-chip-list-inner {
+                > * {
+                    margin-right: 0;
+                    margin-left: $chips-margin;
 
-                &:last-child {
-                    margin-left: 0;
+                    &:last-child {
+                        margin-left: 0;
+                    }
                 }
+            }
+
+            .k-chip-list-prev,
+            .k-chip-list-next {
+                transform: scaleX(-1);
             }
         }
     }

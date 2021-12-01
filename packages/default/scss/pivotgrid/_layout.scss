@@ -259,15 +259,17 @@
         .k-row-fields,
         .k-column-fields,
         .k-filter-fields {
-            margin-top: $pivotgrid-configurator-fields-margin-y;
-            flex-wrap: wrap;
+            .k-chip-list-inner {
+                margin-top: $pivotgrid-configurator-fields-margin-y;
+                flex-wrap: wrap;
 
-            > * {
-                margin-bottom: $pivotgrid-configurator-fields-margin-y;
-            }
+                > * {
+                    margin-bottom: $pivotgrid-configurator-fields-margin-y;
+                }
 
-            > *:last-child {
-                margin-bottom: 0;
+                > *:last-child {
+                    margin-bottom: 0;
+                }
             }
         }
 
@@ -416,9 +418,11 @@
             .k-row-fields,
             .k-column-fields,
             .k-filter-fields {
-                max-height: 100px;
-                overflow-x: hidden;
-                overflow-y: auto;
+                .k-chip-list-inner {
+                    max-height: 100px;
+                    overflow-x: hidden;
+                    overflow-y: auto;
+                }
             }
             .k-value-fields {
                 max-height: 250px;
