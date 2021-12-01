@@ -3,7 +3,7 @@
   "devDependencies": {
     "@commitlint/cli": "^14.1.0",
     "@commitlint/config-conventional": "^14.1.0",
-    "@commitlint/core": "^14.1.0",
+    "@commitlint/core": "^15.0.0",
     "@joneff/baka": "^1.1.0",
     "@progress/kendo-font-icons": "0.1.2",
     "@progress/kendo-theme-tasks": "^1.13.0",
