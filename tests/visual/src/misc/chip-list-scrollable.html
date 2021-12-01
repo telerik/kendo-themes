@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en" class="k-typography k-no-animations">
+<head>
+    <title>Chip List Scrollable</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+    <script src="../../assets/scripts.js"></script>
+    <script src="../../../../packages/html/dist/index.js"></script>
+
+    <style>
+        #test-area {
+            grid-template-columns: 1fr;
+        }
+
+        #test-area > section {
+            gap: 10px;
+        }
+
+        .k-chip-list {
+            width: 300px;
+        }
+
+
+        /*
+            This simulates the element "scroll" (scrollLeft, scrollTop, scrollBy) property
+        */
+        section:not(.k-rtl) .k-chip-list-scrollable .k-chip-list-inner .k-chip:first-child {
+            margin-left: -30px;
+        }
+        .k-rtl .k-chip-list-scrollable .k-chip-list-inner .k-chip:first-child {
+            margin-right: -30px;
+        }
+    </style>
+</head>
+<body class="k-body">
+
+    <div id="test-area" class="k-d-grid">
+        <h2>Chip List Scrollable</h2>
+
+        <section>
+            <div class="k-chip-list k-chip-list-scrollable k-selection-single">
+                <button is="Button" fillMode="flat" icon="arrow-60-left" class="k-chip-list-prev"></button>
+                <div class="k-chip-list-inner">
+                    <div class="k-chip k-chip-solid">
+                        <span class="k-chip-content">
+                            <span class="k-chip-label">Chip Text</span>
+                        </span>
+                    </div>
+
+                    <div class="k-chip k-chip-solid">
+                        <span class="k-chip-content">
+                            <span class="k-chip-label">Chip Text</span>
+                        </span>
+                    </div>
+
+                    <div class="k-chip k-chip-solid">
+                        <span class="k-chip-content">
+                            <span class="k-chip-label">Chip Text</span>
+                        </span>
+                    </div>
+
+                    <div class="k-chip k-chip-solid">
+                        <span class="k-chip-content">
+                            <span class="k-chip-label">Chip Text</span>
+                        </span>
+                    </div>
+
+                    <div class="k-chip k-chip-solid">
+                        <span class="k-chip-content">
+                            <span class="k-chip-label">Chip Text</span>
+                        </span>
+                    </div>
+
+                    <div class="k-chip k-chip-solid">
+                        <span class="k-chip-content">
+                            <span class="k-chip-label">Chip Text</span>
+                        </span>
+                    </div>
+                </div>
+                <button is="Button" fillMode="flat" icon="arrow-60-right" class="k-chip-list-next"></button>
+            </div>
+        </section>
+
+        <h2 class="k-rtl">Chip List Scrollable - RTL</h2>
+
+        <section class="k-rtl">
+            <div class="k-chip-list k-chip-list-scrollable k-selection-single">
+                <button is="Button" fillMode="flat" icon="arrow-60-left" class="k-chip-list-prev"></button>
+                <div class="k-chip-list-inner">
+                    <div class="k-chip k-chip-solid">
+                        <span class="k-chip-content">
+                            <span class="k-chip-label">Chip Text</span>
+                        </span>
+                    </div>
+
+                    <div class="k-chip k-chip-solid">
+                        <span class="k-chip-content">
+                            <span class="k-chip-label">Chip Text</span>
+                        </span>
+                    </div>
+
+                    <div class="k-chip k-chip-solid">
+                        <span class="k-chip-content">
+                            <span class="k-chip-label">Chip Text</span>
+                        </span>
+                    </div>
+
+                    <div class="k-chip k-chip-solid">
+                        <span class="k-chip-content">
+                            <span class="k-chip-label">Chip Text</span>
+                        </span>
+                    </div>
+
+                    <div class="k-chip k-chip-solid">
+                        <span class="k-chip-content">
+                            <span class="k-chip-label">Chip Text</span>
+                        </span>
+                    </div>
+
+                    <div class="k-chip k-chip-solid">
+                        <span class="k-chip-content">
+                            <span class="k-chip-label">Chip Text</span>
+                        </span>
+                    </div>
+                </div>
+                <button is="Button" fillMode="flat" icon="arrow-60-right" class="k-chip-list-next"></button>
+            </div>
+        </section>
+
+    </div>
+</body>
+</html>
