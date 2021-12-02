@@ -114,10 +114,10 @@ $kendo-button-selected-text: $kendo-button-active-text !default;
 $kendo-button-selected-border: $kendo-button-active-border !default;
 /// The base background gradient of selected button.
 /// @group button
-$kendo-button-selected-gradient: null !default;
+$kendo-button-selected-gradient: $kendo-button-active-gradient !default;
 /// The base shadow of selected button.
 /// @group button
-$kendo-button-selected-shadow: null !default;
+$kendo-button-selected-shadow: $kendo-button-active-shadow !default;
 
 /// The base background of focused button.
 /// @group button

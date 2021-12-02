@@ -105,19 +105,19 @@ $kendo-button-active-shadow: null !default;
 
 /// The base background color of selected button.
 /// @group button
-$kendo-button-selected-bg: $primary !default;
+$kendo-button-selected-bg: $kendo-button-active-bg !default;
 /// The base text color of selected button.
 /// @group button
-$kendo-button-selected-text: contrast-wcag( $kendo-button-selected-bg ) !default;
+$kendo-button-selected-text: $kendo-button-active-text !default;
 /// The base border color of selected button.
 /// @group button
-$kendo-button-selected-border: $kendo-button-selected-bg !default;
+$kendo-button-selected-border: $kendo-button-active-border !default;
 /// The base background gradient of selected button.
 /// @group button
-$kendo-button-selected-gradient: null !default;
+$kendo-button-selected-gradient: $kendo-button-active-gradient !default;
 /// The base shadow of selected button.
 /// @group button
-$kendo-button-selected-shadow: null !default;
+$kendo-button-selected-shadow: $kendo-button-active-shadow !default;
 
 /// The base background of focused button.
 /// @group button
