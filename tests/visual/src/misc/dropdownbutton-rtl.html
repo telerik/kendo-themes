@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en" class="k-no-animations">
+<head>
+    <title>DropDownButtons RTL</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+    <script src="../../assets/scripts.js"></script>
+    <script src="../../../../packages/html/dist/index.js"></script>
+
+    <style>
+        #test-area {
+            grid-template-columns: 120px repeat(1, 1fr);
+        }
+    </style>
+</head>
+<body class="k-body">
+
+    <div id="test-area" class="k-d-grid">
+        <span>base</span>
+        <span><div is="DropDownButton" dir="rtl">Normal</div></span>
+
+        <span>^ text + icon</span>
+        <span><div is="DropDownButton" icon="folder" dir="rtl">Normal</div></span>
+
+        <span>^ icon</span>
+        <span><div is="DropDownButton" icon="folder" dir="rtl"></div></span>
+
+        <span>^ text + arrow</span>
+        <span><div is="DropDownButton" showArrow dir="rtl">Normal</div></span>
+
+        <span>primary</span>
+        <span><div is="DropDownButton" themeColor="primary" dir="rtl">Normal</div></span>
+
+        <span>^ text + icon</span>
+        <span><div is="DropDownButton" themeColor="primary" icon="folder" dir="rtl">Normal</div></span>
+
+        <span>^ icon</span>
+        <span><div is="DropDownButton" themeColor="primary" icon="folder" dir="rtl"></div></span>
+
+        <span>^ text + arrow</span>
+        <span><div is="DropDownButton" themeColor="primary" showArrow dir="rtl">Normal</div></span>
+
+        <span>Menu list</span>
+        <span>
+            <div class="k-animation-container k-animation-container-fixed k-animation-container-shown" dir="rtl">
+                <div class="k-popup k-menu-popup">
+                    <div is="MenuList">
+                        <div is="MenuItem" text="Normal" dir="rtl"></div>
+                        <div is="MenuItem" text="Normal" icon="folder" dir="rtl"></div>
+                        <div is="MenuItem" text="Normal" showArrow dir="rtl">
+                            <div is="MenuItem" text="Child"></div>
+                        </div>
+                        <div is="MenuItem" text="Normal" icon="folder" showArrow dir="rtl">
+                            <div is="MenuItem" text="Child"></div>
+                        </div>
+                        <div is="MenuItem" text="Normal" showArrow arrowIconName='chevron-left' dir="rtl">
+                            <div is="MenuItem" text="Child"></div>
+                        </div>
+                        <div is="MenuItem" text="Normal" icon="folder" showArrow arrowIconName='chevron-left' dir="rtl">
+                            <div is="MenuItem" text="Child"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </span>
+    </div>
+
+</body>
+</html>
