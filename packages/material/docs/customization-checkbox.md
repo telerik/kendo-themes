@@ -406,7 +406,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-checkbox-list-item-padding-y</td>
     <td></td>
-    <td>$list-item-padding-y</td>
+    <td>$kendo-list-item-padding-y-md</td>
     <td></td>
 </tr>
 <tr>
