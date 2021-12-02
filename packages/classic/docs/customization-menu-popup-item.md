@@ -108,8 +108,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-menu-popup-item-hover-bg</td>
     <td></td>
-    <td>$list-item-hovered-bg</td>
-    <td></td>
+    <td>$kendo-list-item-hover-bg</td>
+    <td>try-shade( $base-bg, 1 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of hovered menu item in popup.</div></div>
@@ -118,8 +118,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-menu-popup-item-hover-text</td>
     <td></td>
-    <td>$list-item-hovered-text</td>
-    <td></td>
+    <td>$kendo-list-item-hover-text</td>
+    <td>$base-text</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of hovered menu item in popup.</div></div>
@@ -148,8 +148,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-menu-popup-item-expanded-bg</td>
     <td></td>
-    <td>$list-item-selected-bg</td>
-    <td></td>
+    <td>$kendo-list-item-selected-bg</td>
+    <td>$primary</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of expanded menu item in popup.</div></div>
@@ -158,8 +158,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-menu-popup-item-expanded-text</td>
     <td></td>
-    <td>$list-item-selected-text</td>
-    <td></td>
+    <td>$kendo-list-item-selected-text</td>
+    <td>contrast-wcag( $selected-bg )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of expanded menu item in popup.</div></div>
