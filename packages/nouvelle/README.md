@@ -38,7 +38,6 @@ For more information on how to implement the Nouvelle theme in your project, ref
 
 * [Using the Nouvelle Theme in Angular Projects](https://www.telerik.com/kendo-angular-ui/components/styling/theme-nouvelle/)
 * [Using the Nouvelle Theme in React Projects](https://www.telerik.com/kendo-react-ui/components/styling/theme-nouvelle/)
-* [Using the Nouvelle Theme in jQuery Projects](http://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes)
 
 ## Customizing
 
@@ -121,11 +120,9 @@ To ensure version predictability, we use [Semantic Versioning](https://semver.or
 
 This package is part of the following suites:
 
-* [Kendo UI for Angular](http://www.telerik.com/kendo-angular-ui/)
-* [KendoReact](http://www.telerik.com/kendo-react-ui/)
-* [Kendo UI for jQuery](http://www.telerik.com/kendo-ui)
-* [UI for ASP.NET MVC](http://www.telerik.com/aspnet-mvc)
-* [UI for ASP.NET Core](http://www.telerik.com/aspnet-core-ui)
+* [Kendo UI for Angular](https://www.telerik.com/kendo-angular-ui/)
+* [KendoReact](https://www.telerik.com/kendo-react-ui/)
+* [Kendo UI for Vue](https://www.telerik.com/kendo-vue-ui)
 
 All available Kendo UI commercial licenses may be obtained at http://www.telerik.com/purchase/kendo-ui.
 
