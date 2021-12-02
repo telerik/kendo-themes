@@ -73,7 +73,8 @@
     "create-screenshots": "./build/create-screenshots.sh",
     "serve-tests": "http-server ./",
     "embed-assets": "gulp assets",
-    "create-component": "gulp create-component"
+    "create-component": "gulp create-component",
+    "update": "npx npm-check-updates --upgrade"
   },
   "husky": {
     "hooks": {
