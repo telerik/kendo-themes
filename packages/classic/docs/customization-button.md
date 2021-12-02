@@ -475,6 +475,16 @@ The following table lists the available variables for customization.
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color transition of the flat button.</div></div>
     </td>
 </tr>
+<tr>
+    <td>$kendo-button-group-focus-shadow</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of focused button group.</div></div>
+    </td>
+</tr>
 </tbody>
 </table>
 
