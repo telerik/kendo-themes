@@ -32,6 +32,7 @@ function SplitButtonStatic(props) {
         hover,
         focus,
         active,
+        selected,
         disabled,
 
         aria,
@@ -81,6 +82,7 @@ function SplitButtonStatic(props) {
                 disabled={disabled}
                 hover={hover}
                 active={active}
+                selected={selected}
                 focus={focus}
                 size={size}
                 rounded={rounded}
@@ -92,6 +94,7 @@ function SplitButtonStatic(props) {
                 disabled={disabled}
                 hover={hover}
                 active={active}
+                selected={selected}
                 focus={focus}
                 size={size}
                 rounded={rounded}
