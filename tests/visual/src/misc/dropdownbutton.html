@@ -22,8 +22,8 @@
         <span>Hover</span>
         <span>Focus</span>
         <span>Active</span>
+        <span>Selected</span>
         <span>Disabled</span>
-        <span>RTL</span>
 
         <span>base</span>
 
@@ -31,64 +31,64 @@
         <span><div is="DropDownButton" hover>Hover</div></span>
         <span><div is="DropDownButton" focus>Focus</div></span>
         <span><div is="DropDownButton" active>Active</div></span>
+        <span><div is="DropDownButton" selected>Selected</div></span>
         <span><div is="DropDownButton" disabled>Disabled</div></span>
-        <span><div is="DropDownButton" dir="rtl">Normal</div></span>
 
         <span>^ text + icon</span>
         <span><div is="DropDownButton" icon="folder">Normal</div></span>
         <span><div is="DropDownButton" icon="folder" hover>Hover</div></span>
         <span><div is="DropDownButton" icon="folder" focus>Focus</div></span>
         <span><div is="DropDownButton" icon="folder" active>Active</div></span>
+        <span><div is="DropDownButton" icon="folder" selected>Selected</div></span>
         <span><div is="DropDownButton" icon="folder" disabled>Disabled</div></span>
-        <span><div is="DropDownButton" icon="folder" dir="rtl">Normal</div></span>
 
         <span>^ icon</span>
         <span><div is="DropDownButton" icon="folder"></div></span>
         <span><div is="DropDownButton" icon="folder" hover></div></span>
         <span><div is="DropDownButton" icon="folder" focus></div></span>
         <span><div is="DropDownButton" icon="folder" active></div></span>
+        <span><div is="DropDownButton" icon="folder" selected></div></span>
         <span><div is="DropDownButton" icon="folder" disabled></div></span>
-        <span><div is="DropDownButton" icon="folder" dir="rtl">Normal</div></span>
 
         <span>^ text + arrow</span>
         <span><div is="DropDownButton" showArrow>Normal</div></span>
         <span><div is="DropDownButton" showArrow hover>Hover</div></span>
         <span><div is="DropDownButton" showArrow focus>Focus</div></span>
         <span><div is="DropDownButton" showArrow active>Active</div></span>
+        <span><div is="DropDownButton" showArrow selected>Selected</div></span>
         <span><div is="DropDownButton" showArrow disabled>Disabled</div></span>
-        <span><div is="DropDownButton" showArrow dir="rtl">Normal</div></span>
 
         <span>primary</span>
         <span><div is="DropDownButton" themeColor="primary">Normal</div></span>
         <span><div is="DropDownButton" themeColor="primary" hover>Hover</div></span>
         <span><div is="DropDownButton" themeColor="primary" focus>Focus</div></span>
         <span><div is="DropDownButton" themeColor="primary" active>Active</div></span>
+        <span><div is="DropDownButton" themeColor="primary" selected>Selected</div></span>
         <span><div is="DropDownButton" themeColor="primary" disabled>Disabled</div></span>
-        <span><div is="DropDownButton" themeColor="primary" dir="rtl">Normal</div></span>
 
         <span>^ text + icon</span>
         <span><div is="DropDownButton" themeColor="primary" icon="folder">Normal</div></span>
         <span><div is="DropDownButton" themeColor="primary" icon="folder" hover>Hover</div></span>
         <span><div is="DropDownButton" themeColor="primary" icon="folder" focus>Focus</div></span>
         <span><div is="DropDownButton" themeColor="primary" icon="folder" active>Active</div></span>
+        <span><div is="DropDownButton" themeColor="primary" icon="folder" selected>Selected</div></span>
         <span><div is="DropDownButton" themeColor="primary" icon="folder" disabled>Disabled</div></span>
-        <span><div is="DropDownButton" themeColor="primary" icon="folder" dir="rtl">Normal</div></span>
 
         <span>^ icon</span>
         <span><div is="DropDownButton" themeColor="primary" icon="folder"></div></span>
         <span><div is="DropDownButton" themeColor="primary" icon="folder" hover></div></span>
         <span><div is="DropDownButton" themeColor="primary" icon="folder" focus></div></span>
         <span><div is="DropDownButton" themeColor="primary" icon="folder" active></div></span>
+        <span><div is="DropDownButton" themeColor="primary" icon="folder" selected></div></span>
         <span><div is="DropDownButton" themeColor="primary" icon="folder" disabled></div></span>
-        <span><div is="DropDownButton" themeColor="primary" icon="folder" dir="rtl">Normal</div></span>
 
         <span>^ text + arrow</span>
         <span><div is="DropDownButton" themeColor="primary" showArrow>Normal</div></span>
         <span><div is="DropDownButton" themeColor="primary" showArrow hover>Hover</div></span>
         <span><div is="DropDownButton" themeColor="primary" showArrow focus>Focus</div></span>
         <span><div is="DropDownButton" themeColor="primary" showArrow active>Active</div></span>
+        <span><div is="DropDownButton" themeColor="primary" showArrow selected>Selected</div></span>
         <span><div is="DropDownButton" themeColor="primary" showArrow disabled>Disabled</div></span>
-        <span><div is="DropDownButton" themeColor="primary" showArrow dir="rtl">Normal</div></span>
 
         <span>Menu list</span>
         <span>
@@ -183,6 +183,28 @@
             <div class="k-animation-container k-animation-container-fixed k-animation-container-shown">
                 <div class="k-popup k-menu-popup">
                     <div is="MenuList">
+                        <div is="MenuItem" text="Normal" selected></div>
+                        <div is="MenuItem" text="Normal" icon="folder" selected></div>
+                        <div is="MenuItem" text="Normal" showArrow selected>
+                            <div is="MenuItem" text="Child"></div>
+                        </div>
+                        <div is="MenuItem" text="Normal" icon="folder" showArrow selected>
+                            <div is="MenuItem" text="Child"></div>
+                        </div>
+                        <div is="MenuItem" text="Normal" showArrow arrowIconName='chevron-right' selected>
+                            <div is="MenuItem" text="Child"></div>
+                        </div>
+                        <div is="MenuItem" text="Normal" icon="folder" showArrow arrowIconName='chevron-right' selected>
+                            <div is="MenuItem" text="Child"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </span>
+        <span>
+            <div class="k-animation-container k-animation-container-fixed k-animation-container-shown">
+                <div class="k-popup k-menu-popup">
+                    <div is="MenuList">
                         <div is="MenuItem" text="Disabled" disabled></div>
                         <div is="MenuItem" text="Disabled" disabled icon="folder"></div>
                         <div is="MenuItem" text="Disabled" disabled showArrow>
@@ -195,28 +217,6 @@
                             <div is="MenuItem" text="Child"></div>
                         </div>
                         <div is="MenuItem" text="Disabled" disabled icon="folder" showArrow arrowIconName='chevron-right'>
-                            <div is="MenuItem" text="Child"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </span>
-        <span>
-            <div class="k-animation-container k-animation-container-fixed k-animation-container-shown" dir="rtl">
-                <div class="k-popup k-menu-popup">
-                    <div is="MenuList">
-                        <div is="MenuItem" text="Normal" dir="rtl"></div>
-                        <div is="MenuItem" text="Normal" icon="folder" dir="rtl"></div>
-                        <div is="MenuItem" text="Normal" showArrow dir="rtl">
-                            <div is="MenuItem" text="Child"></div>
-                        </div>
-                        <div is="MenuItem" text="Normal" icon="folder" showArrow dir="rtl">
-                            <div is="MenuItem" text="Child"></div>
-                        </div>
-                        <div is="MenuItem" text="Normal" showArrow arrowIconName='chevron-left' dir="rtl">
-                            <div is="MenuItem" text="Child"></div>
-                        </div>
-                        <div is="MenuItem" text="Normal" icon="folder" showArrow arrowIconName='chevron-left' dir="rtl">
                             <div is="MenuItem" text="Child"></div>
                         </div>
                     </div>
