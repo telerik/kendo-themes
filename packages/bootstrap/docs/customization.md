@@ -522,8 +522,8 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-button-selected-bg</td>
     <td></td>
-    <td>try-darken( $primary, 10% )</td>
-    <td>try-darken( $primary, 10% )</td>
+    <td>$kendo-button-active-bg</td>
+    <td>try-darken( $kendo-button-bg, 10% )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background color of selected button.</div></div>
@@ -532,8 +532,8 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-button-selected-text</td>
     <td></td>
-    <td>contrast-wcag( $kendo-button-selected-bg )</td>
-    <td>contrast-wcag( $kendo-button-selected-bg )</td>
+    <td>$kendo-button-active-text</td>
+    <td>null</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base text color of selected button.</div></div>
@@ -542,17 +542,17 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-button-selected-border</td>
     <td></td>
-    <td>try-darken( $primary, 12.5% )</td>
-    <td>try-darken( $primary, 12.5% )</td>
+    <td>$kendo-button-active-border</td>
+    <td>try-darken( $kendo-button-border, 12.5% )</td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base border color of selected buttons</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base border color of selected button.</div></div>
     </td>
 </tr>
 <tr>
     <td>$kendo-button-selected-gradient</td>
     <td></td>
-    <td>null</td>
+    <td>$kendo-button-active-gradient</td>
     <td>null</td>
 </tr>
 <tr>
@@ -562,7 +562,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$kendo-button-selected-shadow</td>
     <td></td>
-    <td>null</td>
+    <td>$kendo-button-active-shadow</td>
     <td>null</td>
 </tr>
 <tr>
