@@ -43,26 +43,6 @@ The following table lists the available variables for customization.
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes of the chip list.</div></div>
     </td>
 </tr>
-<tr>
-    <td>$kendo-chip-multiple-selected-icon-bg</td>
-    <td></td>
-    <td>rgba($black, .44)</td>
-    <td>rgba($black, .44)</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the select icon overlay.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-chip-multiple-selected-icon-text</td>
-    <td></td>
-    <td>$white</td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the select icon overlay.</div></div>
-    </td>
-</tr>
 </tbody>
 </table>
 

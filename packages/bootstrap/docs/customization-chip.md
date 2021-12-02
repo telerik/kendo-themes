@@ -48,8 +48,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chip-padding-x</td>
     <td></td>
-    <td>map-get( $spacing, 2 )</td>
-    <td>map-get( $spacing, 2 )</td>
+    <td>$padding-x-sm</td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the chip.</div></div>
@@ -59,7 +59,7 @@ The following table lists the available variables for customization.
     <td>$kendo-chip-padding-y</td>
     <td></td>
     <td>$kendo-chip-padding-x</td>
-    <td>map-get( $spacing, 2 )</td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the chip.</div></div>
@@ -78,8 +78,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chip-line-height</td>
     <td></td>
-    <td>$line-height-xs</td>
-    <td></td>
+    <td>normal</td>
+    <td>normal</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line heights of the chip that are connected to the $font-size.</div></div>
@@ -106,23 +106,19 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-chip-theme-colors</td>
     <td></td>
-    <td>map-merge(
-    ( "base": $base-text ),
-    (
-        "error": map-get( $theme-colors, "error" ),
-        "info": map-get( $theme-colors, "info" ),
-        "warning": map-get( $theme-colors, "warning" ),
-        "success": map-get( $theme-colors, "success" )
-    )
+    <td>(
+    "base": $base-text,
+    "error": map-get( $theme-colors, "error" ),
+    "info": map-get( $theme-colors, "info" ),
+    "warning": map-get( $theme-colors, "warning" ),
+    "success": map-get( $theme-colors, "success" )
 )</td>
-    <td>map-merge(
-    ( "base": $base-text ),
-    (
-        "error": map-get( $theme-colors, "error" ),
-        "info": map-get( $theme-colors, "info" ),
-        "warning": map-get( $theme-colors, "warning" ),
-        "success": map-get( $theme-colors, "success" )
-    )
+    <td>(
+    "base": $base-text,
+    "error": map-get( $theme-colors, "error" ),
+    "info": map-get( $theme-colors, "info" ),
+    "warning": map-get( $theme-colors, "warning" ),
+    "success": map-get( $theme-colors, "success" )
 )</td>
 </tr>
 <tr>

@@ -1389,8 +1389,8 @@ The following table lists the available variables for customizing the Default th
 <tr>
     <td>$kendo-chip-line-height</td>
     <td></td>
-    <td>$line-height-xs</td>
-    <td></td>
+    <td>normal</td>
+    <td>normal</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line heights of the chip that are connected to the $font-size.</div></div>
@@ -1417,23 +1417,19 @@ The following table lists the available variables for customizing the Default th
 <tr>
     <td>$kendo-chip-theme-colors</td>
     <td></td>
-    <td>map-merge(
-    ( "base": get-base-hue( gray, 800 ) ),
-    (
-        "error": map-get($theme-colors, "error"),
-        "info": map-get($theme-colors, "info"),
-        "warning": map-get($theme-colors, "warning"),
-        "success": map-get($theme-colors, "success")
-    )
+    <td>(
+    "base": get-base-hue( gray, 800 ),
+    "error": map-get($theme-colors, "error"),
+    "info": map-get($theme-colors, "info"),
+    "warning": map-get($theme-colors, "warning"),
+    "success": map-get($theme-colors, "success")
 )</td>
-    <td>map-merge(
-    ( "base": get-base-hue( gray, 800 ) ),
-    (
-        "error": map-get($theme-colors, "error"),
-        "info": map-get($theme-colors, "info"),
-        "warning": map-get($theme-colors, "warning"),
-        "success": map-get($theme-colors, "success")
-    )
+    <td>(
+    "base": get-base-hue( gray, 800 ),
+    "error": map-get($theme-colors, "error"),
+    "info": map-get($theme-colors, "info"),
+    "warning": map-get($theme-colors, "warning"),
+    "success": map-get($theme-colors, "success")
 )</td>
 </tr>
 <tr>
@@ -1667,26 +1663,6 @@ The following table lists the available variables for customizing the Default th
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes of the chip list.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-chip-multiple-selected-icon-bg</td>
-    <td></td>
-    <td>rgba($black, .44)</td>
-    <td>rgba($black, .44)</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the select icon overlay.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-chip-multiple-selected-icon-text</td>
-    <td></td>
-    <td>$white</td>
-    <td></td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the select icon overlay.</div></div>
     </td>
 </tr>
 </tbody>
