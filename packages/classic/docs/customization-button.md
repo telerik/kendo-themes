@@ -308,7 +308,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-button-selected-gradient</td>
     <td></td>
-    <td>null</td>
+    <td>$kendo-button-active-gradient</td>
     <td>null</td>
 </tr>
 <tr>
@@ -318,7 +318,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-button-selected-shadow</td>
     <td></td>
-    <td>null</td>
+    <td>$kendo-button-active-shadow</td>
     <td>null</td>
 </tr>
 <tr>
