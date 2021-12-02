@@ -33,6 +33,7 @@ function DropDownButtonStatic(props) {
         hover,
         focus,
         active,
+        selected,
         disabled,
 
         aria,
@@ -90,6 +91,7 @@ function DropDownButtonStatic(props) {
                 disabled={disabled}
                 hover={hover}
                 active={active}
+                selected={selected}
                 focus={focus}
                 size={size}
                 rounded={rounded}
