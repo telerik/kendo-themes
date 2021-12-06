@@ -173,7 +173,7 @@ The following table lists the available variables for customizing the Nouvelle t
         <tr>
     <td>$autocomplete-bg</td>
     <td></td>
-    <td>$input-bg</td>
+    <td>$kendo-input-bg</td>
     <td>$component-bg</td>
 </tr>
 <tr>
@@ -183,7 +183,7 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$autocomplete-text</td>
     <td></td>
-    <td>$input-text</td>
+    <td>$kendo-input-text</td>
     <td>$component-text</td>
 </tr>
 <tr>
@@ -193,7 +193,7 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$autocomplete-border</td>
     <td></td>
-    <td>$input-border</td>
+    <td>$kendo-input-border</td>
     <td>$component-border</td>
 </tr>
 <tr>
@@ -203,8 +203,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$autocomplete-hover-bg</td>
     <td></td>
-    <td>$input-hover-bg</td>
-    <td>$input-bg</td>
+    <td>$kendo-input-hover-bg</td>
+    <td>$kendo-input-bg</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of hovered autocomplete.</div></div>
@@ -213,8 +213,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$autocomplete-hover-text</td>
     <td></td>
-    <td>$input-hover-text</td>
-    <td>$input-text</td>
+    <td>$kendo-input-hover-text</td>
+    <td>$kendo-input-text</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of hovered autocomplete.</div></div>
@@ -223,8 +223,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$autocomplete-hover-border</td>
     <td></td>
-    <td>$input-hover-border</td>
-    <td>try-shade( $input-border, 1 )</td>
+    <td>$kendo-input-hover-border</td>
+    <td>try-shade( $kendo-input-border, 1 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of hovered autocomplete.</div></div>
@@ -233,8 +233,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$autocomplete-focus-text</td>
     <td></td>
-    <td>$input-focus-text</td>
-    <td>$input-hover-text</td>
+    <td>$kendo-input-focus-text</td>
+    <td>$kendo-input-hover-text</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of focus autocomplete.</div></div>
@@ -243,8 +243,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$autocomplete-focus-bg</td>
     <td></td>
-    <td>$input-focus-bg</td>
-    <td>$input-hover-bg</td>
+    <td>$kendo-input-focus-bg</td>
+    <td>$kendo-input-hover-bg</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of focus autocomplete.</div></div>
@@ -253,8 +253,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$autocomplete-focus-border</td>
     <td></td>
-    <td>$input-focus-border</td>
-    <td>$input-hover-border</td>
+    <td>$kendo-input-focus-border</td>
+    <td>$kendo-input-hover-border</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of focus autocomplete.</div></div>
@@ -282,59 +282,59 @@ The following table lists the available variables for customizing the Nouvelle t
 </thead>
 <tbody>
         <tr>
-    <td>$button-bg</td>
+    <td>$kendo-button-bg</td>
     <td></td>
     <td>$interactive-bg</td>
     <td><span class="color-preview" style="background-color: #f6f6f6"></span>#f6f6f6</td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the buttons.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the button.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$button-text</td>
+    <td>$kendo-button-text</td>
     <td></td>
     <td>$interactive-text</td>
     <td><span class="color-preview" style="background-color: #656565"></span>#656565</td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the buttons.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the button.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$button-border</td>
+    <td>$kendo-button-border</td>
     <td></td>
     <td>$interactive-border</td>
     <td>rgba( black, .08 )</td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the buttons.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the button.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$button-gradient</td>
+    <td>$kendo-button-gradient</td>
     <td></td>
     <td>$interactive-gradient</td>
     <td>rgba( black, 0 ), rgba( black, .02 )</td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of the buttons.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of the button.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$button-hover-bg</td>
+    <td>$kendo-button-hover-bg</td>
     <td></td>
-    <td>try-shade( $button-bg, .5 )</td>
-    <td>try-shade( $button-bg, .5 )</td>
+    <td>try-shade( $kendo-button-bg, .5 )</td>
+    <td>try-shade( $kendo-button-bg, .5 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of hovered buttons.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$button-hover-text</td>
+    <td>$kendo-button-hover-text</td>
     <td></td>
-    <td>$button-text</td>
+    <td>$kendo-button-text</td>
     <td><span class="color-preview" style="background-color: #656565"></span>#656565</td>
 </tr>
 <tr>
@@ -342,9 +342,9 @@ The following table lists the available variables for customizing the Nouvelle t
     </td>
 </tr>
 <tr>
-    <td>$button-hover-border</td>
+    <td>$kendo-button-hover-border</td>
     <td></td>
-    <td>$button-border</td>
+    <td>$kendo-button-border</td>
     <td>rgba( black, .08 )</td>
 </tr>
 <tr>
@@ -352,9 +352,9 @@ The following table lists the available variables for customizing the Nouvelle t
     </td>
 </tr>
 <tr>
-    <td>$button-hover-gradient</td>
+    <td>$kendo-button-hover-gradient</td>
     <td></td>
-    <td>$button-gradient</td>
+    <td>$kendo-button-gradient</td>
     <td>rgba( black, 0 ), rgba( black, .02 )</td>
 </tr>
 <tr>
@@ -362,19 +362,19 @@ The following table lists the available variables for customizing the Nouvelle t
     </td>
 </tr>
 <tr>
-    <td>$button-focus-bg</td>
+    <td>$kendo-button-focus-bg</td>
     <td></td>
-    <td>$button-hover-bg</td>
-    <td>try-shade( $button-bg, .5 )</td>
+    <td>$kendo-button-hover-bg</td>
+    <td>try-shade( $kendo-button-bg, .5 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of focus buttons.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$button-focus-text</td>
+    <td>$kendo-button-focus-text</td>
     <td></td>
-    <td>$button-hover-text</td>
+    <td>$kendo-button-hover-text</td>
     <td><span class="color-preview" style="background-color: #656565"></span>#656565</td>
 </tr>
 <tr>
@@ -382,9 +382,9 @@ The following table lists the available variables for customizing the Nouvelle t
     </td>
 </tr>
 <tr>
-    <td>$button-focus-border</td>
+    <td>$kendo-button-focus-border</td>
     <td></td>
-    <td>$button-hover-border</td>
+    <td>$kendo-button-hover-border</td>
     <td>rgba( black, .08 )</td>
 </tr>
 <tr>
@@ -392,9 +392,9 @@ The following table lists the available variables for customizing the Nouvelle t
     </td>
 </tr>
 <tr>
-    <td>$button-focus-gradient</td>
+    <td>$kendo-button-focus-gradient</td>
     <td></td>
-    <td>$button-hover-gradient</td>
+    <td>$kendo-button-hover-gradient</td>
     <td>rgba( black, 0 ), rgba( black, .02 )</td>
 </tr>
 <tr>
@@ -402,19 +402,19 @@ The following table lists the available variables for customizing the Nouvelle t
     </td>
 </tr>
 <tr>
-    <td>$button-active-bg</td>
+    <td>$kendo-button-active-bg</td>
     <td></td>
-    <td>try-shade( $button-bg, 1 )</td>
-    <td>try-shade( $button-bg, 1 )</td>
+    <td>try-shade( $kendo-button-bg, 1 )</td>
+    <td>try-shade( $kendo-button-bg, 1 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of pressed buttons.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$button-active-text</td>
+    <td>$kendo-button-active-text</td>
     <td></td>
-    <td>$button-text</td>
+    <td>$kendo-button-text</td>
     <td><span class="color-preview" style="background-color: #656565"></span>#656565</td>
 </tr>
 <tr>
@@ -422,9 +422,9 @@ The following table lists the available variables for customizing the Nouvelle t
     </td>
 </tr>
 <tr>
-    <td>$button-active-border</td>
+    <td>$kendo-button-active-border</td>
     <td></td>
-    <td>$button-border</td>
+    <td>$kendo-button-border</td>
     <td>rgba( black, .08 )</td>
 </tr>
 <tr>
@@ -432,9 +432,9 @@ The following table lists the available variables for customizing the Nouvelle t
     </td>
 </tr>
 <tr>
-    <td>$button-active-gradient</td>
+    <td>$kendo-button-active-gradient</td>
     <td></td>
-    <td>$button-gradient</td>
+    <td>$kendo-button-gradient</td>
     <td>rgba( black, 0 ), rgba( black, .02 )</td>
 </tr>
 <tr>
@@ -616,7 +616,7 @@ The following table lists the available variables for customizing the Nouvelle t
         <tr>
     <td>$combobox-bg</td>
     <td></td>
-    <td>$input-bg</td>
+    <td>$kendo-input-bg</td>
     <td>$component-bg</td>
 </tr>
 <tr>
@@ -626,7 +626,7 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$combobox-text</td>
     <td></td>
-    <td>$input-text</td>
+    <td>$kendo-input-text</td>
     <td>$component-text</td>
 </tr>
 <tr>
@@ -636,7 +636,7 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$combobox-border</td>
     <td></td>
-    <td>$input-border</td>
+    <td>$kendo-input-border</td>
     <td>$component-border</td>
 </tr>
 <tr>
@@ -646,8 +646,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$combobox-hover-bg</td>
     <td></td>
-    <td>$input-hover-bg</td>
-    <td>$input-bg</td>
+    <td>$kendo-input-hover-bg</td>
+    <td>$kendo-input-bg</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of hovered combobox.</div></div>
@@ -656,8 +656,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$combobox-hover-text</td>
     <td></td>
-    <td>$input-hover-text</td>
-    <td>$input-text</td>
+    <td>$kendo-input-hover-text</td>
+    <td>$kendo-input-text</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of hovered combobox.</div></div>
@@ -666,8 +666,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$combobox-hover-border</td>
     <td></td>
-    <td>$input-hover-border</td>
-    <td>try-shade( $input-border, 1 )</td>
+    <td>$kendo-input-hover-border</td>
+    <td>try-shade( $kendo-input-border, 1 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of hovered combobox.</div></div>
@@ -676,8 +676,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$combobox-focus-text</td>
     <td></td>
-    <td>$input-focus-text</td>
-    <td>$input-hover-text</td>
+    <td>$kendo-input-focus-text</td>
+    <td>$kendo-input-hover-text</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of focus combobox.</div></div>
@@ -686,8 +686,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$combobox-focus-bg</td>
     <td></td>
-    <td>$input-focus-bg</td>
-    <td>$input-hover-bg</td>
+    <td>$kendo-input-focus-bg</td>
+    <td>$kendo-input-hover-bg</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of focus combobox.</div></div>
@@ -696,8 +696,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$combobox-focus-border</td>
     <td></td>
-    <td>$input-focus-border</td>
-    <td>$input-hover-border</td>
+    <td>$kendo-input-focus-border</td>
+    <td>$kendo-input-hover-border</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of focus combobox.</div></div>
@@ -778,7 +778,7 @@ The following table lists the available variables for customizing the Nouvelle t
         <tr>
     <td>$dropdownlist-bg</td>
     <td></td>
-    <td>$button-bg</td>
+    <td>$kendo-button-bg</td>
     <td><span class="color-preview" style="background-color: #f6f6f6"></span>#f6f6f6</td>
 </tr>
 <tr>
@@ -788,7 +788,7 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$dropdownlist-text</td>
     <td></td>
-    <td>$button-text</td>
+    <td>$kendo-button-text</td>
     <td><span class="color-preview" style="background-color: #656565"></span>#656565</td>
 </tr>
 <tr>
@@ -798,7 +798,7 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$dropdownlist-border</td>
     <td></td>
-    <td>$button-border</td>
+    <td>$kendo-button-border</td>
     <td>rgba( black, .08 )</td>
 </tr>
 <tr>
@@ -808,8 +808,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$dropdownlist-hover-bg</td>
     <td></td>
-    <td>$button-hover-bg</td>
-    <td>try-shade( $button-bg, .5 )</td>
+    <td>$kendo-button-hover-bg</td>
+    <td>try-shade( $kendo-button-bg, .5 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of hovered dropdownlist.</div></div>
@@ -818,7 +818,7 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$dropdownlist-hover-text</td>
     <td></td>
-    <td>$button-hover-text</td>
+    <td>$kendo-button-hover-text</td>
     <td><span class="color-preview" style="background-color: #656565"></span>#656565</td>
 </tr>
 <tr>
@@ -828,7 +828,7 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$dropdownlist-hover-border</td>
     <td></td>
-    <td>$button-hover-border</td>
+    <td>$kendo-button-hover-border</td>
     <td>rgba( black, .08 )</td>
 </tr>
 <tr>
@@ -838,7 +838,7 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$dropdownlist-focus-text</td>
     <td></td>
-    <td>$button-active-text</td>
+    <td>$kendo-button-active-text</td>
     <td><span class="color-preview" style="background-color: #656565"></span>#656565</td>
 </tr>
 <tr>
@@ -848,8 +848,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$dropdownlist-focus-bg</td>
     <td></td>
-    <td>$button-active-bg</td>
-    <td>try-shade( $button-bg, 1 )</td>
+    <td>$kendo-button-active-bg</td>
+    <td>try-shade( $kendo-button-bg, 1 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of focus dropdownlist.</div></div>
@@ -858,7 +858,7 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$dropdownlist-focus-border</td>
     <td></td>
-    <td>$button-active-border</td>
+    <td>$kendo-button-active-border</td>
     <td>rgba( black, .08 )</td>
 </tr>
 <tr>
@@ -887,7 +887,7 @@ The following table lists the available variables for customizing the Nouvelle t
 </thead>
 <tbody>
         <tr>
-    <td>$input-bg</td>
+    <td>$kendo-input-bg</td>
     <td></td>
     <td>$component-bg</td>
     <td></td>
@@ -897,7 +897,7 @@ The following table lists the available variables for customizing the Nouvelle t
     </td>
 </tr>
 <tr>
-    <td>$input-text</td>
+    <td>$kendo-input-text</td>
     <td></td>
     <td>$component-text</td>
     <td></td>
@@ -907,7 +907,7 @@ The following table lists the available variables for customizing the Nouvelle t
     </td>
 </tr>
 <tr>
-    <td>$input-border</td>
+    <td>$kendo-input-border</td>
     <td></td>
     <td>$component-border</td>
     <td>rgba( black, .08 )</td>
@@ -917,9 +917,9 @@ The following table lists the available variables for customizing the Nouvelle t
     </td>
 </tr>
 <tr>
-    <td>$input-hover-bg</td>
+    <td>$kendo-input-hover-bg</td>
     <td></td>
-    <td>$input-bg</td>
+    <td>$kendo-input-bg</td>
     <td></td>
 </tr>
 <tr>
@@ -927,9 +927,9 @@ The following table lists the available variables for customizing the Nouvelle t
     </td>
 </tr>
 <tr>
-    <td>$input-hover-text</td>
+    <td>$kendo-input-hover-text</td>
     <td></td>
-    <td>$input-text</td>
+    <td>$kendo-input-text</td>
     <td></td>
 </tr>
 <tr>
@@ -937,19 +937,19 @@ The following table lists the available variables for customizing the Nouvelle t
     </td>
 </tr>
 <tr>
-    <td>$input-hover-border</td>
+    <td>$kendo-input-hover-border</td>
     <td></td>
-    <td>try-shade( $input-border, 1 )</td>
-    <td>try-shade( $input-border, 1 )</td>
+    <td>try-shade( $kendo-input-border, 1 )</td>
+    <td>try-shade( $kendo-input-border, 1 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of hovered input.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$input-focus-bg</td>
+    <td>$kendo-input-focus-bg</td>
     <td></td>
-    <td>$input-hover-bg</td>
+    <td>$kendo-input-hover-bg</td>
     <td></td>
 </tr>
 <tr>
@@ -957,9 +957,9 @@ The following table lists the available variables for customizing the Nouvelle t
     </td>
 </tr>
 <tr>
-    <td>$input-focus-text</td>
+    <td>$kendo-input-focus-text</td>
     <td></td>
-    <td>$input-hover-text</td>
+    <td>$kendo-input-hover-text</td>
     <td></td>
 </tr>
 <tr>
@@ -967,10 +967,10 @@ The following table lists the available variables for customizing the Nouvelle t
     </td>
 </tr>
 <tr>
-    <td>$input-focus-border</td>
+    <td>$kendo-input-focus-border</td>
     <td></td>
-    <td>$input-hover-border</td>
-    <td>try-shade( $input-border, 1 )</td>
+    <td>$kendo-input-hover-border</td>
+    <td>try-shade( $kendo-input-border, 1 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of focus input.</div></div>
@@ -1102,7 +1102,7 @@ The following table lists the available variables for customizing the Nouvelle t
         <tr>
     <td>$kendo-textbox-bg</td>
     <td></td>
-    <td>$input-bg</td>
+    <td>$kendo-input-bg</td>
     <td></td>
 </tr>
 <tr>
@@ -1112,7 +1112,7 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-textbox-text</td>
     <td></td>
-    <td>$input-text</td>
+    <td>$kendo-input-text</td>
     <td></td>
 </tr>
 <tr>
@@ -1122,7 +1122,7 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-textbox-border</td>
     <td></td>
-    <td>$input-border</td>
+    <td>$kendo-input-border</td>
     <td>rgba( black, .08 )</td>
 </tr>
 <tr>
@@ -1132,7 +1132,7 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-textbox-hover-bg</td>
     <td></td>
-    <td>$input-hover-bg</td>
+    <td>$kendo-input-hover-bg</td>
     <td></td>
 </tr>
 <tr>
@@ -1142,7 +1142,7 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-textbox-hover-text</td>
     <td></td>
-    <td>$input-hover-text</td>
+    <td>$kendo-input-hover-text</td>
     <td></td>
 </tr>
 <tr>
@@ -1152,8 +1152,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-textbox-hover-border</td>
     <td></td>
-    <td>$input-hover-border</td>
-    <td>try-shade( $input-border, 1 )</td>
+    <td>$kendo-input-hover-border</td>
+    <td>try-shade( $kendo-input-border, 1 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of hovered textbox.</div></div>
@@ -1162,7 +1162,7 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-textbox-focus-text</td>
     <td></td>
-    <td>$input-focus-text</td>
+    <td>$kendo-input-focus-text</td>
     <td></td>
 </tr>
 <tr>
@@ -1172,7 +1172,7 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-textbox-focus-bg</td>
     <td></td>
-    <td>$input-focus-bg</td>
+    <td>$kendo-input-focus-bg</td>
     <td></td>
 </tr>
 <tr>
@@ -1182,8 +1182,8 @@ The following table lists the available variables for customizing the Nouvelle t
 <tr>
     <td>$kendo-textbox-focus-border</td>
     <td></td>
-    <td>$input-focus-border</td>
-    <td>try-shade( $input-border, 1 )</td>
+    <td>$kendo-input-focus-border</td>
+    <td>try-shade( $kendo-input-border, 1 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of focus textbox.</div></div>
