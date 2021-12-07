@@ -39,12 +39,14 @@
         border-width: 0 0 $grid-cell-horizontal-border-width $table-cell-vertical-border-width;
         border-style: solid;
         border-color: inherit;
+        box-sizing: border-box;
         font-weight: normal;
         text-align: inherit;
         white-space: nowrap;
         text-overflow: ellipsis;
         display: table-cell;
         overflow: hidden;
+        position: relative;
 
         &:first-child {
             border-left-width: 0;
@@ -93,10 +95,35 @@
             display: flex;
             position: relative;
         }
+        .k-table-row.k-first {
+            border-top: 1px solid currentColor;
+        }
 
         .k-table-th,
         .k-table-td {
             vertical-align: middle;
+        }
+
+        .k-table-spacer-td {
+            padding: 0 !important; // sass-lint:disable-line no-important
+            width: 0 !important; // sass-lint:disable-line no-important
+            border-left-width: 0 !important; // sass-lint:disable-line no-important
+            border-right-width: 0 !important; // sass-lint:disable-line no-important
+        }
+        .k-table-group-td {
+            padding: 0 !important; // sass-lint:disable-line no-important
+            width: 0 !important; // sass-lint:disable-line no-important
+            border-left-width: 0 !important; // sass-lint:disable-line no-important
+            border-right-width: 0 !important; // sass-lint:disable-line no-important
+            overflow: visible; // sass-lint:disable-line no-important
+
+            > span {
+                padding: 0 ( $table-cell-padding-x / 2 );
+                font-size: .875em;
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
         }
     }
 
@@ -155,6 +182,13 @@
                 margin-left: -1px;
                 border-left-width: $table-cell-vertical-border-width;
                 border-right-width: 0;
+            }
+        }
+
+        .k-table-list {
+            .k-table-group-td > span {
+                left: 0;
+                right: auto;
             }
         }
     }

@@ -33,6 +33,10 @@
         color: $table-group-row-text;
         background-color: $table-group-row-bg;
     }
+    .k-table-group-td > span {
+        color: $table-bg;
+        background-color: $table-text;
+    }
 
 
     // Alternating row

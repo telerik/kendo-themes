@@ -16,7 +16,7 @@ $table-font-size: $font-size !default;
 
 /// The horizontal padding of the cells in the table if no size is specified.
 /// @group table
-$table-cell-padding-x: map-get( $spacing, 3 ) !default;
+$table-cell-padding-x: map-get( $spacing, 2 ) !default;
 
 /// The vertical padding of the cells in the table if no size is specified.
 /// @group table
