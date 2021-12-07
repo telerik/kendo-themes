@@ -12,6 +12,8 @@
 
     // Grid list
     .k-grid-list {
+        margin: 0;
+        padding: 0;
         width: 100%;
         max-width: none;
         border-width: 0;
@@ -21,6 +23,7 @@
         empty-cells: show;
         outline: none;
         display: table;
+        list-style: none;
     }
 
 
@@ -115,11 +118,9 @@
         margin: 0;
         padding: $grid-header-padding-y $grid-header-padding-x;
         min-height: auto;
+        font-size: inherit;
         text-align: left;
         font-weight: bold;
-    }
-    .k-dropdowngrid-popup .k-outer-group-header.k-first {
-        border-bottom-width: 1px;
     }
     .k-grid-list > .k-item.k-first {
         border-top: 1px solid currentColor;

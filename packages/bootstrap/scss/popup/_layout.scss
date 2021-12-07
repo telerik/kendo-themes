@@ -1,26 +1,10 @@
 @import "~@progress/kendo-theme-default/scss/popup/_layout.scss";
 
-@include exports("popup/layout/bootstrap") {
+@include exports( "popup/layout/bootstrap" ) {
 
-    .k-popup {
-        .k-outer-group-header {
-            font-size: $font-size-sm;
-
-            &.k-first {
-                border-bottom-width: $frozen-grouping-header-border-width;
-                border-bottom-style: solid;
-            }
-        }
-
-        .k-header,
-        .k-group-header {
-            font-weight: 600;
-            font-size: $font-size-sm;
-        }
-
-        &.k-column-menu {
-            padding-top: 0;
-            padding-bottom: 0;
-        }
+    .k-popup.k-column-menu {
+        padding-top: 0;
+        padding-bottom: 0;
     }
+
 }
