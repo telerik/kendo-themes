@@ -1029,8 +1029,8 @@ The following table lists the available variables for customizing the Default th
 <tr>
     <td>$table-cell-padding-x</td>
     <td></td>
-    <td>map-get( $spacing, 3 )</td>
-    <td>map-get( $spacing, 3 )</td>
+    <td>map-get( $spacing, 2 )</td>
+    <td>map-get( $spacing, 2 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the cells in the table if no size is specified.</div></div>
