@@ -118,10 +118,10 @@ To ensure version predictability, we use [Semantic Versioning](https://semver.or
 This package is part of the following suites:
 
 * [Kendo UI for jQuery](https://www.telerik.com/kendo-ui)
-* [UI for ASP.NET MVC](https://www.telerik.com/aspnet-mvc)
-* [UI for ASP.NET Core](https://www.telerik.com/aspnet-core-ui)
+* [Telerik UI for ASP.NET MVC](https://www.telerik.com/aspnet-mvc)
+* [Telerik UI for ASP.NET Core](https://www.telerik.com/aspnet-core-ui)
 
-All available Kendo UI commercial licenses may be obtained at http://www.telerik.com/purchase/kendo-ui.
+Visit the [Kendo UI Pricing page](https://www.telerik.com/purchase/kendo-ui) to review Kendo UI commercial licensing and pricing.
 
 If you do not own a commercial license, the usage of this software shall be governed by the [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0).
 
