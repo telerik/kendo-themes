@@ -659,14 +659,6 @@
             bottom: calc( #{ $grid-header-padding-y } + #{ $line-height-em / 2 } - #{ $button-inner-calc-size / 2 } );
             z-index: 1;
 
-            .k-ie & {
-                position: static;
-                float: right;
-                margin-top: calc( (#{ $button-calc-size } - #{ $form-line-height * 1em}) / -2);
-                margin-bottom: calc( (#{ $button-calc-size } - #{ $form-line-height * 1em}) / -2);
-                margin-right: calc( -1 * #{ $button-calc-size });
-            }
-
             &:hover {
                 cursor: pointer;
             }
