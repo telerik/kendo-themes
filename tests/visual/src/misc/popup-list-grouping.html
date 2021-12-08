@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en" class="k-no-animations">
 <head>
-    <title>Grouping</title>
+    <title>Popup -- list grouping</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
     <link rel="stylesheet" href="../../assets/styles.css" />
@@ -9,88 +9,186 @@
     <script src="../../../../packages/html/dist/index.js"></script>
 
     <style>
-        #test-area {
-            grid-template-columns: repeat(3, 1fr);
-            align-items: start;
+        .k-animation-container {
+            position: relative;
+            overflow: visible;
         }
 
-        .title {
-            display: inline-block;
-            margin: 20px 0;
+        .k-virtual-list > .k-item {
+            position: relative;
         }
     </style>
 </head>
 <body class="k-body">
 
-    <div id="test-area" class="grid">
+    <div id="test-area" class="k-d-grid k-grid-cols-4">
 
-        <span class="col-3">LTR</span>
-
-        <span class="title">Popup list</span>
-        <span class="title">Popup list with grouping</span>
-        <span class="title">Option label states</span>
+        <span>Universal</span>
+        <span>Universal virtual</span>
+        <span>Universal (rtl)</span>
+        <span>Universal virtual(rtl)</span>
 
         <section>
-            <div class="k-popup k-list-container k-reset">
-                <div class="k-list">
-                    <div class="k-item k-custom-item">
-                        Custom item
-                        <i is="Icon" name="plus"></i>
+            <div class="k-animation-container">
+                <div class="k-popup k-list-container">
+                    <div class="k-group-header">Group 1</div>
+                    <div class="k-list-scroller">
+                        <ul class="k-list">
+                            <li class="k-item">List item 1.1</li>
+                            <li class="k-item">List item 1.2</li>
+                            <li class="k-item">List item 1.3</li>
+                            <li class="k-item k-first">List item 2.1<div class="k-group">Group 2</div></li>
+                            <li class="k-item">List item 2.1</li>
+                            <li class="k-item">List item 2.1</li>
+                        </ul>
                     </div>
                 </div>
+            </div>
+        </section>
 
-                <div class="k-list-scroller" style="max-height: 200px;">
-                    <ul class="k-list k-reset">
-                        <li class="k-item">
-                            Item
-                        </li><li class="k-item k-state-focused">
-                            Focused Item
-                        </li><li class="k-item k-state-hover">
-                            Hovered Item
-                        </li><li class="k-item k-state-selected">
-                            Selected Item
-                        </li><li class="k-item k-state-hover k-state-selected">
-                            Hovered Selected Item
-                        </li><li class="k-item k-state-selected k-state-focused">
-                            Focused Selected Item
-                        </li>
-                    </ul>
+        <section>
+            <div class="k-animation-container">
+                <div class="k-popup k-list-container">
+                    <div class="k-group-header">Group 1</div>
+                    <div class="k-list-scroller k-virtual-content">
+                        <ul class="k-list k-virtual-list">
+                            <li class="k-item k-virtual-item">List item 1.1</li>
+                            <li class="k-item k-virtual-item">List item 1.2</li>
+                            <li class="k-item k-virtual-item">List item 1.3</li>
+                            <li class="k-item k-virtual-item k-first">List item 2.1<div class="k-group">Group 2</div></li>
+                            <li class="k-item k-virtual-item">List item 2.1</li>
+                            <li class="k-item k-virtual-item">List item 2.1</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
-        <section>
-            <div class="k-popup k-list-container k-reset">
-                <div class="k-group-header">Group</div>
 
-                <div class="k-list-scroller" style="max-height: 200px;">
-                    <ul class="k-list k-reset">
-                        <li class="k-item">
-                            Item
-                        </li><li class="k-item k-state-focused">
-                            Focused Item
-                        </li><li class="k-item k-state-hover">
-                            Hovered Item
-                        </li><li class="k-item k-state-selected k-first">
-                            Selected Item<div class="k-group">Second group</div>
-                        </li><li class="k-item k-state-hover k-state-selected">
-                            Hovered Selected Item
-                        </li><li class="k-item k-state-selected k-state-focused">
-                            Focused Selected Item
-                        </li>
-                    </ul>
+        <section dir="rtl">
+            <div class="k-animation-container">
+                <div class="k-popup k-list-container">
+                    <div class="k-group-header">Group 1</div>
+                    <div class="k-list-scroller">
+                        <ul class="k-list">
+                            <li class="k-item">List item 1.1</li>
+                            <li class="k-item">List item 1.2</li>
+                            <li class="k-item">List item 1.3</li>
+                            <li class="k-item k-first">List item 2.1<div class="k-group">Group 2</div></li>
+                            <li class="k-item">List item 2.1</li>
+                            <li class="k-item">List item 2.1</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
-        <section>
-            <div class="k-popup k-list-container k-reset">
-                <div class="k-list-optionlabel">Optionlabel</div>
-                <div class="k-list-optionlabel k-state-focused">Focused Optionlabel</div>
-                <div class="k-list-optionlabel k-state-hover">Hovered Optionlabel</div>
-                <div class="k-list-optionlabel k-state-selected">Selected Optionlabel</div>
-                <div class="k-list-optionlabel k-state-hover k-state-selected">Hovered Selected Optionlabel</div>
-                <div class="k-list-optionlabel k-state-selected k-state-focused">Focused Selected Optionlabel</div>
+
+        <section dir="rtl">
+            <div class="k-animation-container">
+                <div class="k-popup k-list-container">
+                    <div class="k-group-header">Group 1</div>
+                    <div class="k-list-scroller k-virtual-content">
+                        <ul class="k-list k-virtual-list">
+                            <li class="k-item k-virtual-item">List item 1.1</li>
+                            <li class="k-item k-virtual-item">List item 1.2</li>
+                            <li class="k-item k-virtual-item">List item 1.3</li>
+                            <li class="k-item k-virtual-item k-first">List item 2.1<div class="k-group">Group 2</div></li>
+                            <li class="k-item k-virtual-item">List item 2.1</li>
+                            <li class="k-item k-virtual-item">List item 2.1</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </section>
+
+        <span>Angular</span>
+        <span>Angular virtual</span>
+        <span>Angular (rtl)</span>
+        <span>Angular virtual(rtl)</span>
+
+        <section>
+            <div class="k-animation-container">
+                <div class="k-popup k-list-container">
+                    <kendo-list>
+                        <div class="k-outer-group-header">Group 1</div>
+                        <div class="k-list-scroller">
+                            <ul class="k-list">
+                                <li class="k-item">List item 1.1</li>
+                                <li class="k-item">List item 1.2</li>
+                                <li class="k-item">List item 1.3</li>
+                                <li class="k-outer-group-header">Group 2</li>
+                                <li class="k-item">List item 2.1</li>
+                                <li class="k-item">List item 2.1</li>
+                                <li class="k-item">List item 2.1</li>
+                            </ul>
+                        </div>
+                    </kendo-list>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="k-animation-container">
+                <div class="k-popup k-list-container">
+                    <kendo-list>
+                        <div class="k-outer-group-header">Group 1</div>
+                        <div class="k-list-scroller k-virtual-content">
+                            <ul class="k-list k-virtual-list">
+                                <li class="k-item k-virtual-item">List item 1.1</li>
+                                <li class="k-item k-virtual-item">List item 1.2</li>
+                                <li class="k-item k-virtual-item">List item 1.3</li>
+                                <li class="k-outer-group-header">Group 2</li>
+                                <li class="k-item k-virtual-item">List item 2.1</li>
+                                <li class="k-item k-virtual-item">List item 2.1</li>
+                                <li class="k-item k-virtual-item">List item 2.1</li>
+                            </ul>
+                        </div>
+                    </kendo-list>
+                </div>
+            </div>
+        </section>
+
+        <section dir="rtl">
+            <div class="k-animation-container">
+                <div class="k-popup k-list-container">
+                    <kendo-list>
+                        <div class="k-outer-group-header">Group 1</div>
+                        <div class="k-list-scroller">
+                            <ul class="k-list">
+                                <li class="k-item">List item 1.1</li>
+                                <li class="k-item">List item 1.2</li>
+                                <li class="k-item">List item 1.3</li>
+                                <li class="k-outer-group-header">Group 2</li>
+                                <li class="k-item">List item 2.1</li>
+                                <li class="k-item">List item 2.1</li>
+                                <li class="k-item">List item 2.1</li>
+                            </ul>
+                        </div>
+                    </kendo-list>
+                </div>
+            </div>
+        </section>
+
+        <section dir="rtl">
+            <div class="k-animation-container">
+                <div class="k-popup k-list-container">
+                    <kendo-list>
+                        <div class="k-outer-group-header">Group 1</div>
+                        <div class="k-list-scroller k-virtual-content">
+                            <ul class="k-list k-virtual-list">
+                                <li class="k-item k-virtual-item">List item 1.1</li>
+                                <li class="k-item k-virtual-item">List item 1.2</li>
+                                <li class="k-item k-virtual-item">List item 1.3</li>
+                                <li class="k-outer-group-header">Group 2</li>
+                                <li class="k-item k-virtual-item">List item 2.1</li>
+                                <li class="k-item k-virtual-item">List item 2.1</li>
+                                <li class="k-item k-virtual-item">List item 2.1</li>
+                            </ul>
+                        </div>
+                    </kendo-list>
+                </div>
+            </div>
+        </section>
+
     </div>
 
 </body>
