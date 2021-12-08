@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en" class="k-no-animations">
+<head>
+    <title>List Sizes</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+    <script src="../../assets/scripts.js"></script>
+    <script src="../../../../packages/html/dist/index.js"></script>
+
+    <style>
+        .k-animation-container {
+            position: relative;
+            overflow: visible;
+        }
+
+        .k-virtual-list > .k-item,
+        .k-virtual-list .k-list-item {
+            position: relative;
+        }
+    </style>
+</head>
+<body class="k-body">
+
+    <div id="test-area" class="k-d-grid k-grid-cols-3">
+
+        <span>small</span>
+        <span>medium</span>
+        <span>large</span>
+
+        <section>
+            <select is="List" size="small">
+                <option>Baseball</option>
+                <option>Basketball</option>
+                <option>Cricket</option>
+            </select>
+        </section>
+
+        <section>
+            <select is="List" size="medium">
+                <option>Baseball</option>
+                <option>Basketball</option>
+                <option>Cricket</option>
+            </select>
+        </section>
+
+        <section>
+            <select is="List" size="large">
+                <option>Baseball</option>
+                <option>Basketball</option>
+                <option>Cricket</option>
+            </select>
+        </section>
+
+        <span class="k-colspan-all">universal grouping</span>
+
+        <section>
+            <select is="List">
+                <optgroup label="Group 1" root>
+                    <option>List item 1.1</option>
+                    <option>List item 1.2</option>
+                </optgroup>
+                <optgroup label="Group 2">
+                    <option>List item 2.1</option>
+                    <option>List item 2.2</option>
+                </optgroup>
+            </select>
+        </section>
+
+        <section>
+            <select is="List">
+                <optgroup label="Group 1" root>
+                    <option>List item 1.1</option>
+                    <option>List item 1.2</option>
+                </optgroup>
+                <optgroup label="Group 2">
+                    <option>List item 2.1</option>
+                    <option>List item 2.2</option>
+                </optgroup>
+            </select>
+        </section>
+
+        <section>
+            <select is="List">
+                <optgroup label="Group 1" root>
+                    <option>List item 1.1</option>
+                    <option>List item 1.2</option>
+                </optgroup>
+                <optgroup label="Group 2">
+                    <option>List item 2.1</option>
+                    <option>List item 2.2</option>
+                </optgroup>
+            </select>
+        </section>
+
+        <span class="k-colspan-all">angular grouping</span>
+
+        <section>
+            <select is="List" framework="angular">
+                <optgroup label="Group 1" root>
+                    <option>List item 1.1</option>
+                    <option>List item 1.2</option>
+                </optgroup>
+                <optgroup label="Group 2">
+                    <option>List item 2.1</option>
+                    <option>List item 2.2</option>
+                </optgroup>
+            </select>
+        </section>
+
+        <section>
+            <select is="List" framework="angular">
+                <optgroup label="Group 1" root>
+                    <option>List item 1.1</option>
+                    <option>List item 1.2</option>
+                </optgroup>
+                <optgroup label="Group 2">
+                    <option>List item 2.1</option>
+                    <option>List item 2.2</option>
+                </optgroup>
+            </select>
+        </section>
+
+        <section>
+            <select is="List" framework="angular">
+                <optgroup label="Group 1" root>
+                    <option>List item 1.1</option>
+                    <option>List item 1.2</option>
+                </optgroup>
+                <optgroup label="Group 2">
+                    <option>List item 2.1</option>
+                    <option>List item 2.2</option>
+                </optgroup>
+            </select>
+        </section>
+
+    </div>
+
+</body>
+</html>

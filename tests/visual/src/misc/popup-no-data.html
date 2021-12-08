@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en" class="k-no-animations">
+<head>
+    <title>Popup -- no data</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+    <script src="../../assets/scripts.js"></script>
+    <script src="../../../../packages/html/dist/index.js"></script>
+
+    <style>
+        .k-animation-container {
+            position: relative;
+            overflow: visible;
+        }
+    </style>
+</head>
+<body class="k-body">
+
+    <div id="test-area" class="k-d-grid k-grid-cols-4">
+
+        <span>no data</span>
+        <span>no data (rtl)</span>
+        <span>w/ filtering</span>
+        <span>w/ filtering (rtl)</span>
+
+        <section>
+            <div class="k-animation-container">
+                <div class="k-popup k-list-container">
+                    <select is="List">
+                    </select>
+                </div>
+            </div>
+        </section>
+
+        <section dir="rtl">
+            <div class="k-animation-container">
+                <div class="k-popup k-list-container">
+                    <select is="List">
+                    </select>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="k-animation-container">
+                <div class="k-popup k-list-container">
+                    <div class="k-list-filter">
+                        <input is="Searchbox" placeholder="Filter..." />
+                    </div>
+                    <select is="List">
+                    </select>
+                </div>
+            </div>
+        </section>
+
+        <section dir="rtl">
+            <div class="k-animation-container">
+                <div class="k-popup k-list-container">
+                    <div class="k-list-filter">
+                        <input is="Searchbox" placeholder="Filter..." />
+                    </div>
+                    <select is="List">
+                    </select>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>

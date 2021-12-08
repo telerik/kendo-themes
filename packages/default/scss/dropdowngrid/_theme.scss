@@ -27,10 +27,15 @@
 
     // Group header
     .k-dropdowngrid-popup .k-group-header,
-    .k-dropdowngrid-popup .k-outer-group-header.k-first {
+    .k-dropdowngrid-popup .k-outer-group-header {
         border-color: $grid-header-border;
         color: $grid-header-text;
         background-color: $grid-header-bg;
+    }
+    .k-grid-list > .k-group-header,
+    .k-grid-list > .k-outer-group-header {
+        background: none;
+        box-shadow: none;
     }
 
 
@@ -39,7 +44,6 @@
         background-color: $grid-alt-bg;
     }
     .k-grid-list > .k-outer-group-header:nth-child(2n) {
-        background: none;
 
         > strong {
             background-color: $grid-alt-bg;

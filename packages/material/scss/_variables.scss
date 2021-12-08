@@ -382,25 +382,6 @@ $node-selected-border: $selected-border !default;
 $node-selected-gradient: null !default;
 
 
-// List
-$list-item-padding-x: $padding-x * 1.5 !default;
-$list-item-padding-y: $padding-y / 2 !default;
-
-$list-item-bg: null !default;
-$list-item-text: $component-text !default;
-
-$list-item-hovered-bg: $hovered-bg !default;
-$list-item-hovered-text: $hovered-text !default;
-
-$list-item-selected-bg: $component-bg !default;
-$list-item-selected-text: $secondary !default;
-
-$list-item-focused-shadow: null !default;
-
-$list-container-shadow: 0 5px 10px 0 rgba(0, 0, 0, .06) !default;
-$list-container-no-data-text: rgba( $body-text, .5 ) !default;
-
-
 // Placeholder
 $placeholder-line-width: 100% !default;
 $placeholder-line-height: 10px !default;

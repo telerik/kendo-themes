@@ -1,0 +1,104 @@
+@include exports( "list/theme" ) {
+
+    .k-list {}
+
+    .k-list__group-header { // sass-lint:disable-line class-name-format
+        color: $component-text;
+        border-color: $component-border;
+        box-shadow: $list-container-shadow;
+    }
+
+    .k-list__item__group { // sass-lint:disable-line class-name-format
+        color: $grouping-header-text;
+        background: $grouping-header-bg;
+    }
+
+    .k-list__item:hover, // sass-lint:disable-line class-name-format
+    .k-list__item.k-state-hover { // sass-lint:disable-line class-name-format
+        @include fill(
+            $list-item-hovered-text,
+            $list-item-hovered-bg
+        );
+
+        &.k-state-selected {
+            color: $list-item-selected-text;
+            background-color: shade( $list-item-selected-bg );
+        }
+    }
+
+    .k-list__item:focus, // sass-lint:disable-line class-name-format
+    .k-list__item.k-state-focused { // sass-lint:disable-line class-name-format
+        @include box-shadow( $list-item-focused-shadow );
+    }
+
+    .k-list__item.k-state-selected { // sass-lint:disable-line class-name-format
+        @include fill(
+            $list-item-selected-text,
+            $list-item-selected-bg
+        );
+    }
+}
+
+
+
+
+@include exports( "listcontainer/theme" ) {
+
+    .k-list-container {
+
+        // Button normal state
+        .k-button {
+            @include box-shadow( none );
+        }
+
+
+        // Button hover state
+        .k-button:hover,
+        .k-button.k-state-hover {
+            @include fill(
+                $list-item-hovered-text,
+                $list-item-hovered-bg
+            );
+        }
+
+
+        // Button active state
+        .k-button:active,
+        .k-button.k-state-active {
+            @include fill(
+                inherit,
+                inherit
+            );
+        }
+
+
+        // Button selected state
+        .k-button.k-state-selected {
+            @include fill(
+                $list-item-selected-text,
+                $list-item-selected-bg
+            );
+        }
+
+
+        // Button focus state
+        .k-button:focus,
+        .k-button.k-state-focus,
+        .k-button.k-state-focused {
+            box-shadow: $list-item-focused-shadow;
+        }
+
+
+        // Button disabled state
+        .k-button.k-state-disabled {
+            background: transparent;
+        }
+
+
+        .k-nodata {
+            color: $list-container-no-data-text;
+        }
+
+    }
+
+}

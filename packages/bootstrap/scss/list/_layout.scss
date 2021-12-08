@@ -1,0 +1,11 @@
+@import "~@progress/kendo-theme-default/scss/list/_layout.scss";
+
+@include exports( "list/layout/bootstrap" ) {
+
+    .k-list__group-header { // sass-lint:disable-line class-name-format
+        font-weight: 600;
+        font-size: $font-size-sm;
+        box-shadow: none;
+    }
+
+}

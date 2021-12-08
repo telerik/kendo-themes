@@ -10,27 +10,23 @@
     <script src="../../../../packages/html/dist/index.js"></script>
 
     <style>
-        #test-area {
-            grid-template-columns: repeat(2, 1fr);
-        }
-
-        #test-area>section {
+        .k-animation-container {
             position: relative;
-            min-height: 330px;
+            overflow: visible;
         }
     </style>
 </head>
 
 <body class="k-body">
 
-    <div id="test-area" class="grid">
+    <div id="test-area" class="k-d-grid k-grid-cols-2">
 
         <span>jQuery</span>
         <span>Angular</span>
 
         <section>
-            <div class="k-animation-container" style="overflow: visible;">
-                <div class="k-list-container k-popup k-group k-reset k-dropdowngrid-popup k-popup-flush k-state-border-up">
+            <div class="k-animation-container">
+                <div class="k-popup k-list-container k-dropdowngrid-popup k-popup-flush">
                     <div class="k-grid-header">
                         <div class="k-grid-header-wrap">
                             <table>
@@ -126,7 +122,7 @@
 
         <section>
             <kendo-popup class="k-animation-container k-animation-container-shown">
-                <div class="k-popup k-list-container k-reset k-group k-dropdowngrid-popup k-popup-flush k-state-border-up">
+                <div class="k-popup k-list-container k-dropdowngrid-popup k-popup-flush">
                     <div class="k-grid-header">
                         <div class="k-grid-header-wrap">
                             <table>
@@ -224,5 +220,4 @@
     </div>
 
 </body>
-
 </html>

@@ -10,16 +10,8 @@
     .k-popup-dropdowntree {
         padding: 0;
 
-        .k-list-filter {
-            box-shadow: $dropdowntree-filter-shadow;
-            margin: 0 0 $dropdowntree-filter-spacer;
-        }
-
         .k-check-all {
-            padding: $dropdowntree-popup-spacer-y $dropdowntree-popup-spacer-x 0;
-        }
-        .k-list-filter .k-check-all {
-            padding-top: 0;
+            padding: $dropdowntree-popup-spacer-y $dropdowntree-popup-spacer-x;
         }
 
         .k-treeview {
