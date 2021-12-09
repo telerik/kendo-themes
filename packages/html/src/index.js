@@ -24,7 +24,7 @@ export * from './icon/index';
 // Primitive components
 export * from './input/index';
 // export * from './picker/index';
-// export * from './popup/index';
+export * from './popup/index';
 export * from './list/index';
 export * from './nodata/index';
 export * from './avatar/index';
