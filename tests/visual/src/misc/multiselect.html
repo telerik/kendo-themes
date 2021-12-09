@@ -31,6 +31,15 @@
             <input is="MultiSelect" placeholder="MultiSelect..." />
         </div>
 
+        <!-- arrow button -->
+        <div>Arrow button</div>
+        <div>
+            <input is="MultiSelect" showArrowButton="true" placeholder="MultiSelect with arrow button" />
+        </div>
+        <div dir="rtl">
+            <input is="MultiSelect" showArrowButton="true" placeholder="MultiSelect with arrow button" />
+        </div>
+
         <!-- normal -->
         <div>Normal</div>
         <div>
@@ -60,7 +69,7 @@
         <div dir="rtl">
             <span is="MultiSelect" hover>
                 <slot is="MultiSelectChipList">
-                    <div is="Chip" text="Hoper" showRemoveIcon="true"></div>
+                    <div is="Chip" text="Hover" showRemoveIcon="true"></div>
                 </slot>
             </span>
         </div>
