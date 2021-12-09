@@ -1,4 +1,4 @@
-import { globalDefaultProps } from '../component';
+import { globalDefaultProps } from '../component/index';
 import { Input, InputStatic, InputInnerInputStatic } from '../input/index';
 import { InputValidationIconStatic, InputLoadingIconStatic, InputClearValueStatic } from '../input/index';
 

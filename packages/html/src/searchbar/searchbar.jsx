@@ -1,4 +1,4 @@
-import { Component, globalDefaultProps } from '../component';
+import { Component, globalDefaultProps } from '../component/index';
 import { InputStatic } from '../input/index';
 
 class Searchbar extends Component {

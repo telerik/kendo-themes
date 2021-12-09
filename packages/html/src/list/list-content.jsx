@@ -1,4 +1,4 @@
-import { Component, globalDefaultProps } from '../component';
+import { Component, globalDefaultProps } from '../component/index';
 
 class ListContent extends Component {
     render() {

@@ -16,7 +16,7 @@ export function init() {
 window.addEventListener('DOMContentLoaded', init);
 
 // Dependencies
-export * from './component';
+export * from './component/index';
 
 // Generic content
 export * from './icon/index';

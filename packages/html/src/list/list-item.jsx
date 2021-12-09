@@ -1,4 +1,4 @@
-import { Component, globalDefaultProps } from '../component';
+import { Component, globalDefaultProps } from '../component/index';
 import { CheckboxStatic } from '../checkbox/index';
 import { IconStatic } from '../icon/index';
 

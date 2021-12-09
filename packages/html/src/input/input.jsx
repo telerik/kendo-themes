@@ -1,5 +1,5 @@
 import * as styles from '../../utils/styles';
-import { Component, globalDefaultProps } from '../component';
+import { Component, globalDefaultProps } from '../component/index';
 
 class Input extends Component {
 
