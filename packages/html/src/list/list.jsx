@@ -1,5 +1,5 @@
 import * as styles from '../../utils/styles';
-import { Component, globalDefaultProps } from '../component';
+import { Component, globalDefaultProps } from '../component/index';
 import { ListHeaderStatic } from './list-header.jsx';
 import { ListContentStatic } from './list-content.jsx';
 import { ListGroupItemStatic } from './list-group-item.jsx';

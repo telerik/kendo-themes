@@ -1,5 +1,5 @@
-import { isFunction } from '../utils/object';
-import { renderDOM, htmlToProps } from '../lib/jsx-runtime';
+import { isFunction } from '../../utils/object';
+import { renderDOM, htmlToProps } from '../../lib/jsx-runtime';
 
 const globalDefaultProps = {
     legacy: true,
