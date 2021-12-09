@@ -4,6 +4,7 @@ import { ListHeaderStatic } from './list-header.jsx';
 import { ListContentStatic } from './list-content.jsx';
 import { ListGroupItemStatic } from './list-group-item.jsx';
 import { ListItemStatic } from './list-item.jsx';
+import { NoDataStatic } from '../nodata/index';
 
 class List extends Component {
 
@@ -87,7 +88,7 @@ class List extends Component {
         let framework = this._props.framework;
 
         if ( this._props.children.length === 0 ) {
-            this._props.children.push( <div className="k-nodata">No data found.</div> );
+            this._props.children.push( <NoDataStatic /> );
             return;
         }
 
