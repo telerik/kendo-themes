@@ -13,7 +13,7 @@ function ListItemStatic(props) {
         className: ownClassName,
         children,
 
-        groupName,
+        groupLabel,
 
         showIcon,
         iconName,
@@ -64,7 +64,7 @@ function ListItemStatic(props) {
                 {showCheckbox && <CheckboxStatic checked={checked} />}
                 {showIcon && <IconStatic name={iconName} />}
                 <span className="k-list-item-text">{children}</span>
-                {groupName !== '' && <div className="k-group">{groupName}</div>}
+                {groupLabel !== '' && <div className="k-group">{groupLabel}</div>}
             </li>
         );
     }
@@ -74,6 +74,7 @@ function ListItemStatic(props) {
             {showCheckbox && <CheckboxStatic checked={checked} />}
             {showIcon && <IconStatic name={iconName} />}
             <span className="k-list-item-text">{children}</span>
+            {groupLabel !== '' && <div className="k-list-item-group-label">{groupLabel}</div>}
         </li>
     );
 }
@@ -83,7 +84,7 @@ ListItemStatic.defaultProps = {
 
     children: [],
 
-    groupName: '',
+    groupLabel: '',
 
     showIcon: false,
     iconName: '',
@@ -95,7 +96,7 @@ ListItemStatic.propTypes = {
     children: typeof [],
     className: typeof '',
 
-    groupName: typeof '',
+    groupLabel: typeof '',
 
     showIcon: typeof false,
     iconName: typeof '',

@@ -1,7 +1,8 @@
 import * as styles from '../../utils/styles';
 import { Component, globalDefaultProps } from '../component';
-import { ListGroupHeaderStatic } from './list-group-header.jsx';
+import { ListHeaderStatic } from './list-header.jsx';
 import { ListContentStatic } from './list-content.jsx';
+import { ListGroupItemStatic } from './list-group-item.jsx';
 import { ListItemStatic } from './list-item.jsx';
 
 class List extends Component {
@@ -9,7 +10,7 @@ class List extends Component {
     _transformChildrenUniversal() {
         let virtualization = this._props.virtualization;
         let children = this._props.children;
-        let outerHeader;
+        let listHeader;
         let listContent;
         let listChildren = [];
         let newChildren = [];
@@ -17,21 +18,20 @@ class List extends Component {
         children.forEach( child => {
             if ( child.type === 'OPTGROUP') {
                 if (child.props.root === true) {
-                    outerHeader = <ListGroupHeaderStatic {...child.props}>{child.props.label}</ListGroupHeaderStatic>;
+                    listHeader = <ListHeaderStatic {...child.props}>{child.props.label}</ListHeaderStatic>;
 
                     child.props.children.forEach( optChild => {
                         listChildren.push( <ListItemStatic {...optChild.props} /> );
                     });
                 } else {
                     child.props.children.forEach( ( optChild, index ) => {
-                        let groupName = '';
+                        let groupLabel = '';
 
                         if ( index === 0 ) {
-                            groupName = child.props.label;
+                            groupLabel = child.props.label;
                             optChild.props.className = [ optChild.props.className, 'k-first' ];
                         }
-
-                        listChildren.push( <ListItemStatic {...optChild.props} groupName={groupName} /> );
+                        listChildren.push( <ListItemStatic {...optChild.props} groupLabel={groupLabel} /> );
                     });
                 }
             } else if ( child.type === 'OPTION' ) {
@@ -41,7 +41,7 @@ class List extends Component {
 
         listContent = <ListContentStatic virtualization={virtualization}>{listChildren}</ListContentStatic>;
 
-        newChildren.push( outerHeader );
+        newChildren.push( listHeader );
         newChildren.push( listContent );
 
         this._props.children = newChildren;
@@ -50,7 +50,7 @@ class List extends Component {
     _transformChildrenAngular() {
         let virtualization = this._props.virtualization;
         let children = this._props.children;
-        let outerHeader;
+        let listHeader;
         let listContent;
         let listChildren = [];
         let newChildren = [];
@@ -58,13 +58,13 @@ class List extends Component {
         children.forEach( child => {
             if ( child.type === 'OPTGROUP') {
                 if (child.props.root === true) {
-                    outerHeader = <ListGroupHeaderStatic {...child.props}>{child.props.label}</ListGroupHeaderStatic>;
+                    listHeader = <ListHeaderStatic {...child.props}>{child.props.label}</ListHeaderStatic>;
 
                     child.props.children.forEach( optChild => {
                         listChildren.push( <ListItemStatic {...optChild.props} /> );
                     });
                 } else {
-                    listChildren.push( <ListGroupHeaderStatic {...child.props}>{child.props.label}</ListGroupHeaderStatic> );
+                    listChildren.push( <ListGroupItemStatic {...child.props}>{child.props.label}</ListGroupItemStatic> );
 
                     child.props.children.forEach( optChild => {
                         listChildren.push( <ListItemStatic {...optChild.props} /> );
@@ -77,7 +77,7 @@ class List extends Component {
 
         listContent = <ListContentStatic virtualization={virtualization}>{listChildren}</ListContentStatic>;
 
-        newChildren.push( outerHeader );
+        newChildren.push( listHeader );
         newChildren.push( listContent );
 
         this._props.children = newChildren;

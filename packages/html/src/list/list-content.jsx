@@ -22,11 +22,7 @@ function ListContentStatic(props) {
 
     let listContentClasses = [
         ownClassName,
-        'k-list-content',
-        {
-            'k-list-scroller': virtualization === false,
-            'k-virtual-content': virtualization === true
-        }
+        'k-list-content'
     ];
 
     let legacyListContentClasses = [
@@ -55,37 +51,12 @@ function ListContentStatic(props) {
         : {};
 
     if (legacy) {
-        if (virtualization) {
-            return (
-                <div className={legacyListContentClasses} {...ariaAttr} {...htmlAttributes}>
-                    <ul className={legacyListULClasses}>
-                        {children}
-                    </ul>
-                    <div className="k-height-container">
-                        <div></div>
-                    </div>
-                </div>
-            );
-        }
-
         return (
             <div className={legacyListContentClasses} {...ariaAttr} {...htmlAttributes}>
                 <ul className={legacyListULClasses}>
                     {children}
                 </ul>
-            </div>
-        );
-    }
-
-    if (virtualization) {
-        return (
-            <div className={listContentClasses} {...ariaAttr} {...htmlAttributes}>
-                <ul className={listULClasses}>
-                    {children}
-                </ul>
-                <div className="k-height-container">
-                    <div></div>
-                </div>
+                { virtualization && <div className="k-height-container"><div></div></div> }
             </div>
         );
     }
@@ -95,6 +66,7 @@ function ListContentStatic(props) {
             <ul className={listULClasses}>
                 {children}
             </ul>
+            { virtualization && <div className="k-height-container"><div></div></div> }
         </div>
     );
 }
