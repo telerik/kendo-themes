@@ -104,7 +104,7 @@
         cursor: text;
     }
     .k-input-values > .k-input-inner {
-        margin: -$kendo-input-values-margin-y -$kendo-input-values-margin-x;
+        margin: (-$kendo-input-values-margin-y) (-$kendo-input-values-margin-x);
     }
 
 
