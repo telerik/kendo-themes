@@ -1,6 +1,7 @@
 import { globalDefaultProps } from '../component/index';
 import { Input, InputStatic, InputInnerInputStatic } from '../input/index';
 import { InputValidationIconStatic, InputLoadingIconStatic, InputClearValueStatic } from '../input/index';
+import { ButtonStatic } from '../button/index';
 import { MultiSelectChipListStatic } from './index';
 
 class MultiSelect extends Input {
@@ -47,6 +48,8 @@ function MultiSelectStatic(props) {
         rounded,
 
         fillMode,
+
+        showArrowButton,
 
         hover,
         focus,
@@ -124,6 +127,7 @@ function MultiSelectStatic(props) {
             <InputValidationIconStatic {...props} />
             <InputLoadingIconStatic {...props} />
             <InputClearValueStatic {...props} />
+            {showArrowButton && <ButtonStatic className="k-input-button" icon="arrow-s" shape={null} rounded={null} size={size} fillMode={fillMode}></ButtonStatic>}
         </InputStatic>
     );
 }
@@ -138,6 +142,7 @@ MultiSelectStatic.defaultProps = {
     showValidationIcon: true,
     showLoadingIcon: true,
     showClearButton: true,
+    showArrowButton: false,
 
     size: 'medium',
     rounded: 'medium',
@@ -156,6 +161,7 @@ MultiSelectStatic.propTypes = {
     showValidationIcon: typeof true,
     showLoadingIcon: typeof true,
     showClearButton: typeof true,
+    showArrowButton: typeof true,
 
     prefix: typeof '#fragment',
     suffix: typeof '#fragment',
