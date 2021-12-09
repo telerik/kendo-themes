@@ -3,6 +3,7 @@
 @include exports( "list/layout/material" ) {
 
     .k-list-container {
+        line-height: 1.5;
 
         .k-button {
             box-shadow: none;
@@ -12,6 +13,16 @@
             }
         }
 
+    }
+
+    .k-list {
+        line-height: 1.5;
+    }
+
+    .k-list__item, // sass-lint:disable-line class-name-format
+    .k-list__group-header { // sass-lint:disable-line class-name-format
+        min-height: auto;
+        line-height: inherit;
     }
 
 }

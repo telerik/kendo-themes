@@ -9,8 +9,8 @@
     }
 
     .k-list__item__group { // sass-lint:disable-line class-name-format
-        color: $grouping-header-text;
-        background: $grouping-header-bg;
+        color: $component-bg;
+        background: $component-text;
     }
 
     .k-list__item:hover, // sass-lint:disable-line class-name-format
