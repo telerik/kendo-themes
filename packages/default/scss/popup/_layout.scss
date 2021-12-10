@@ -3,7 +3,8 @@
     .k-popup {
         @include border-radius( $popup-border-radius );
         margin: 0;
-        padding: $popup-padding-y $popup-padding-x;
+        padding: 0;
+        // padding: $popup-padding-y $popup-padding-x;
         border-width: $popup-border-width;
         border-style: solid;
         box-sizing: border-box;

@@ -126,7 +126,8 @@
     // Sub menu
     .k-menu-group {
         margin: 0;
-        padding: $menu-popup-padding-y $menu-popup-padding-x;
+        padding: 0;
+        // padding: $menu-popup-padding-y $menu-popup-padding-x;
         font-size: $menu-popup-font-size;
         line-height: $menu-popup-line-height;
         list-style: none;
@@ -174,13 +175,10 @@
     }
     .k-context-menu {
         margin: 0;
-        padding: $menu-popup-padding-y $menu-popup-padding-x;
+        padding: 0;
+        // padding: $menu-popup-padding-y $menu-popup-padding-x;
         border-width: $menu-popup-border-width;
         border-style: solid;
-
-        &.k-menu-horizontal {
-            padding: $menu-popup-padding-x $menu-popup-padding-y;
-        }
     }
     .k-animation-container .k-context-menu.k-menu-horizontal {
         // kendo-jquery adds `display: block` via js and we need to override it.

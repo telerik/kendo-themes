@@ -1,5 +1,5 @@
 import { IconStatic } from '../icon/index';
-import { Component, globalDefaultProps } from '../component';
+import { Component, globalDefaultProps } from '../component/index';
 
 class InputInnerSpan extends Component {
     render() {

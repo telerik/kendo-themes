@@ -14,4 +14,4 @@ $list-item-selected-text: $selected-text !default;
 $list-item-focused-shadow: inset 0 0 0 2px rgba(0, 0, 0, .12) !default;
 
 $list-container-shadow: 0 5px 10px 0 rgba(0, 0, 0, .06) !default;
-$list-container-no-data-text: rgba( $component-text, .5 ) !default;
+$list-container-no-data-text: $subtle-text !default;

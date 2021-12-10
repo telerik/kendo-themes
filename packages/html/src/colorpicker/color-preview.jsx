@@ -1,4 +1,4 @@
-import { Component, globalDefaultProps } from '../component';
+import { Component, globalDefaultProps } from '../component/index';
 import { IconStatic } from '../icon/index';
 
 class ColorPreview extends Component {

@@ -1,4 +1,4 @@
-import { globalDefaultProps } from '../component';
+import { globalDefaultProps } from '../component/index';
 import { Picker, PickerStatic, InputInnerSpanStatic } from '../input/index';
 import { InputValidationIconStatic, InputLoadingIconStatic, InputClearValueStatic } from '../input/index';
 import { ButtonStatic } from '../button/index';

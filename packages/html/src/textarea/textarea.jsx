@@ -1,4 +1,4 @@
-import { globalDefaultProps } from '../component';
+import { globalDefaultProps } from '../component/index';
 import { Input, InputStatic, InputInnerTextareaStatic } from '../input/index';
 
 class Textarea extends Input {
