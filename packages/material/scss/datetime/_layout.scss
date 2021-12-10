@@ -9,14 +9,9 @@
 
         // Wrapper
         .k-picker-wrap {
+            @include border-bottom-radius( 0 !important ); // sass-lint:disable-line no-important
             border-width: $input-border-width 0;
             border-top-color: transparent !important; // sass-lint:disable-line no-important
-
-            // Disabled state
-            .k-state-disabled > &,
-            &.k-state-disabled {
-                border-bottom-style: dashed;
-            }
         }
     }
 
@@ -26,15 +21,9 @@
 
         // Wrapper
         .k-dateinput-wrap {
+            @include border-bottom-radius( 0 !important ); // sass-lint:disable-line no-important
             border-width: $input-border-width 0;
             border-top-color: transparent !important; // sass-lint:disable-line no-important
-
-
-            // Disabled state
-            .k-state-disabled > &,
-            &.k-state-disabled {
-                border-bottom-style: dashed;
-            }
         }
     }
 
