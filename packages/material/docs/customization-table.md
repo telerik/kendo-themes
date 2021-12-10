@@ -26,7 +26,7 @@ The following table lists the available variables for customization.
 </thead>
 <tbody>
         <tr>
-    <td>$table-border-width</td>
+    <td>$kendo-table-border-width</td>
     <td></td>
     <td>1px</td>
     <td>1px</td>
@@ -36,7 +36,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$table-cell-vertical-border-width</td>
+    <td>$kendo-table-cell-vertical-border-width</td>
     <td></td>
     <td>$grid-cell-vertical-border-width</td>
     <td></td>
@@ -46,7 +46,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$table-cell-horizontal-border-width</td>
+    <td>$kendo-table-cell-horizontal-border-width</td>
     <td></td>
     <td>$grid-cell-horizontal-border-width</td>
     <td></td>
@@ -56,37 +56,95 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$table-font-size</td>
+    <td>$kendo-table-font-size</td>
     <td></td>
-    <td>$font-size</td>
-    <td>14px</td>
+    <td>null</td>
+    <td>null</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the table if no size is specified.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$table-cell-padding-x</td>
+    <td>$kendo-table-line-height</td>
     <td></td>
-    <td>24px</td>
-    <td>24px</td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line-height of the table if no size is specified.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-table-cell-padding-x</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the cells in the table if no size is specified.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$table-cell-padding-y</td>
+    <td>$kendo-table-cell-padding-y</td>
     <td></td>
-    <td>10px</td>
-    <td>10px</td>
+    <td>null</td>
+    <td>null</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the cells in the table if no size is specified.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$table-bg</td>
+    <td>$kendo-table-sizes</td>
+    <td></td>
+    <td>(
+    sm: (
+        font-size: $font-size,
+        line-height: ( 20 / 14 ),
+        cell-padding-x: map-get( $spacing, 2 ),
+        cell-padding-y: map-get( $spacing, 1 )
+    ),
+    md: (
+        font-size: $font-size,
+        line-height: ( 20 / 14 ),
+        cell-padding-x: map-get( $spacing, 4 ),
+        cell-padding-y: map-get( $spacing, 2 )
+    ),
+    lg: (
+        font-size: $font-size,
+        line-height: ( 20 / 14 ),
+        cell-padding-x: map-get( $spacing, 4 ),
+        cell-padding-y: map-get( $spacing, 4 )
+    )
+)</td>
+    <td>(
+    sm: (
+        font-size: $font-size,
+        line-height: ( 20 / 14 ),
+        cell-padding-x: map-get( $spacing, 2 ),
+        cell-padding-y: map-get( $spacing, 1 )
+    ),
+    md: (
+        font-size: $font-size,
+        line-height: ( 20 / 14 ),
+        cell-padding-x: map-get( $spacing, 4 ),
+        cell-padding-y: map-get( $spacing, 2 )
+    ),
+    lg: (
+        font-size: $font-size,
+        line-height: ( 20 / 14 ),
+        cell-padding-x: map-get( $spacing, 4 ),
+        cell-padding-y: map-get( $spacing, 4 )
+    )
+)</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes of the table.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-table-bg</td>
     <td></td>
     <td>$grid-bg</td>
     <td>map-get($theme, component-bg)</td>
@@ -96,7 +154,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$table-text</td>
+    <td>$kendo-table-text</td>
     <td></td>
     <td>$grid-text</td>
     <td>map-get($theme, component-text)</td>
@@ -106,7 +164,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$table-border</td>
+    <td>$kendo-table-border</td>
     <td></td>
     <td>$grid-border</td>
     <td>map-get($theme, component-border)</td>
@@ -116,7 +174,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$table-header-bg</td>
+    <td>$kendo-table-header-bg</td>
     <td></td>
     <td>$grid-header-bg</td>
     <td>map-get($theme, component-bg)</td>
@@ -126,7 +184,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$table-header-text</td>
+    <td>$kendo-table-header-text</td>
     <td></td>
     <td>$grid-header-text</td>
     <td>if($theme-type == dark, $light-secondary-text, $dark-secondary-text)</td>
@@ -136,7 +194,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$table-header-border</td>
+    <td>$kendo-table-header-border</td>
     <td></td>
     <td>$grid-header-border</td>
     <td>map-get($theme, component-border)</td>
@@ -146,7 +204,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$table-footer-bg</td>
+    <td>$kendo-table-footer-bg</td>
     <td></td>
     <td>$grid-footer-bg</td>
     <td>map-get($theme, component-bg)</td>
@@ -156,7 +214,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$table-footer-text</td>
+    <td>$kendo-table-footer-text</td>
     <td></td>
     <td>$grid-footer-text</td>
     <td>if($theme-type == dark, $light-secondary-text, $dark-secondary-text)</td>
@@ -166,7 +224,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$table-footer-border</td>
+    <td>$kendo-table-footer-border</td>
     <td></td>
     <td>$grid-footer-border</td>
     <td>map-get($theme, component-border)</td>
@@ -176,7 +234,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$table-group-row-bg</td>
+    <td>$kendo-table-group-row-bg</td>
     <td></td>
     <td>$grid-grouping-row-bg</td>
     <td></td>
@@ -186,7 +244,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$table-group-row-text</td>
+    <td>$kendo-table-group-row-text</td>
     <td></td>
     <td>$grid-grouping-row-text</td>
     <td></td>
@@ -196,7 +254,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$table-group-row-border</td>
+    <td>$kendo-table-group-row-border</td>
     <td></td>
     <td>null</td>
     <td>null</td>
@@ -206,7 +264,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$table-alt-row-bg</td>
+    <td>$kendo-table-alt-row-bg</td>
     <td></td>
     <td>$grid-alt-bg</td>
     <td>transparent</td>
@@ -216,7 +274,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$table-alt-row-text</td>
+    <td>$kendo-table-alt-row-text</td>
     <td></td>
     <td>$grid-alt-text</td>
     <td>null</td>
@@ -226,7 +284,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$table-alt-row-border</td>
+    <td>$kendo-table-alt-row-border</td>
     <td></td>
     <td>$grid-alt-border</td>
     <td>null</td>
@@ -236,7 +294,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$table-hover-bg</td>
+    <td>$kendo-table-hover-bg</td>
     <td></td>
     <td>$grid-hovered-bg</td>
     <td>rgba( contrast-wcag( $grid-bg ), .07 )</td>
@@ -246,7 +304,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$table-hover-text</td>
+    <td>$kendo-table-hover-text</td>
     <td></td>
     <td>$grid-hovered-text</td>
     <td>null</td>
@@ -256,7 +314,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$table-hover-border</td>
+    <td>$kendo-table-hover-border</td>
     <td></td>
     <td>$grid-hovered-border</td>
     <td>map-get($theme, component-border)</td>
@@ -266,7 +324,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$table-focus-bg</td>
+    <td>$kendo-table-focus-bg</td>
     <td></td>
     <td>null</td>
     <td>null</td>
@@ -276,7 +334,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$table-focus-text</td>
+    <td>$kendo-table-focus-text</td>
     <td></td>
     <td>null</td>
     <td>null</td>
@@ -286,7 +344,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$table-focus-border</td>
+    <td>$kendo-table-focus-border</td>
     <td></td>
     <td>null</td>
     <td>null</td>
@@ -296,7 +354,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$table-focus-shadow</td>
+    <td>$kendo-table-focus-shadow</td>
     <td></td>
     <td>$grid-focused-shadow</td>
     <td></td>
@@ -306,7 +364,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$table-selected-bg</td>
+    <td>$kendo-table-selected-bg</td>
     <td></td>
     <td>$grid-selected-bg</td>
     <td>rgba( contrast-wcag( $grid-bg ), .04 )</td>
@@ -316,7 +374,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$table-selected-text</td>
+    <td>$kendo-table-selected-text</td>
     <td></td>
     <td>$grid-selected-text</td>
     <td>null</td>
@@ -326,7 +384,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$table-selected-border</td>
+    <td>$kendo-table-selected-border</td>
     <td></td>
     <td>$grid-selected-border</td>
     <td>map-get($theme, component-border)</td>
