@@ -42,7 +42,7 @@ function ListHeaderStatic(props) {
 
     return (
         <div className={listHeaderClasses} {...ariaAttr} {...htmlAttributes}>
-            {children}
+            <div className="k-list-header-text">{children}</div>
         </div>
     );
 }
