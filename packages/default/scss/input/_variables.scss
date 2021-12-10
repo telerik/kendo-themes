@@ -77,6 +77,21 @@ $picker-select-calc-size: $input-inner-calc-height !default;
 $picker-select-calc-size-sm: $input-inner-calc-height-sm !default;
 $picker-select-calc-size-lg: $input-inner-calc-height-lg !default;
 
+$picker-select-bg: $button-bg !default;
+$picker-select-text: $button-text !default;
+$picker-select-border: $button-border !default;
+$picker-select-gradient: $button-gradient !default;
+
+$picker-select-hovered-bg: $button-hovered-bg !default;
+$picker-select-hovered-text: $button-hovered-text !default;
+$picker-select-hovered-border: $button-hovered-border !default;
+$picker-select-hovered-gradient: $button-hovered-gradient !default;
+
+$picker-select-pressed-bg: $button-active-bg !default;
+$picker-select-pressed-text: $button-active-text !default;
+$picker-select-pressed-border: $button-active-border !default;
+$picker-select-pressed-gradient: $button-active-gradient !default;
+
 
 // Spinner
 $spinner-width: $button-inner-calc-size !default;

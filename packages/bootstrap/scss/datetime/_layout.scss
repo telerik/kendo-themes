@@ -14,14 +14,6 @@
     // Datetimepicker
     .k-datetimepicker {}
 
-    // Dateinput
-    .k-dateinput {
-        .k-dateinput-wrap,
-        .k-select {
-            transition: $transition;
-        }
-    }
-
     // Timepicker header
     .k-time-header {
         padding: $time-header-padding;

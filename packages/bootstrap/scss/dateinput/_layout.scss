@@ -1,0 +1,10 @@
+@import "~@progress/kendo-theme-default/scss/dateinput/_layout.scss";
+
+@include exports( "dateinput/layout/bootstrap" ) {
+
+    // Date input
+    .k-dateinput {
+        transition: $transition;
+    }
+
+}
