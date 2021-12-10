@@ -5,11 +5,11 @@ $kendo-input-border-radius: null !default;
 $kendo-input-border-radius-sm: 0px !default;
 $kendo-input-border-radius-lg: 0px !default;
 
-$kendo-input-padding-x: 0px !default;
-$kendo-input-padding-y: 8px !default;
+$kendo-input-padding-x: map-get( $spacing, 4 ) !default;
+$kendo-input-padding-y: map-get( $spacing, 2 ) !default;
 $kendo-input-font-family: $font-family !default;
-$kendo-input-font-size: $font-size-lg !default;
-$kendo-input-line-height: 1.125 !default;
+$kendo-input-font-size: $font-size !default;
+$kendo-input-line-height: (20 / 14) !default;
 $kendo-input-line-height-em: $kendo-input-line-height * 1em !default;
 
 $kendo-input-padding-x-sm: ($kendo-input-padding-x / 2) !default;
@@ -56,7 +56,7 @@ $kendo-input-sizes: (
     )
 ) !default;
 
-$kendo-input-bg: null !default;
+$kendo-input-bg: try-shade( $component-bg, .5 ) !default;
 $kendo-input-text: $component-text !default;
 $kendo-input-border: $subtle-text !default;
 $kendo-input-shadow: null !default;
