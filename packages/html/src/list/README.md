@@ -1,7 +1,7 @@
 ```html
 <!-- jquery / react / vue rendering -->
 <div class="k-list k-list-md">
-    <div class="k-list-header">Group 1</div>
+    <div class="k-list-header"><span class="k-list-header-text">Group 1</span></div>
     <div class="k-list-content">
         <ul class="k-list-ul">
             <li class="k-list-item">
@@ -23,7 +23,7 @@
 
 <!-- jquery / react / vue rendering w/ virtualization -->
 <div class="k-list k-virtual-list k-list-md">
-    <div class="k-list-header">Group 1</div>
+    <div class="k-list-header"><span class="k-list-header-text">Group 1</span></div>
     <div class="k-list-content">
         <ul class="k-list-ul">
             <li class="k-list-item">
@@ -45,7 +45,7 @@
 
 <!-- angular / blazor rendering -->
 <div class="k-list k-list-md">
-    <div class="k-list-header">Group 1</div>
+    <div class="k-list-header"><span class="k-list-header-text">Group 1</span></div>
     <div class="k-list-content">
         <ul class="k-list-ul">
             <li class="k-list-item">
@@ -69,7 +69,7 @@
 
 <!-- angular / blazor rendering w/ virtualization -->
 <div class="k-list k-virtual-list k-list-md">
-    <div class="k-list-header">Group 1</div>
+    <div class="k-list-header"><span class="k-list-header-text">Group 1</span></div>
     <div class="k-list-content">
         <ul class="k-list-ul">
             <li class="k-list-item">
