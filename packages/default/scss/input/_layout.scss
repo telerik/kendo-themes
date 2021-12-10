@@ -25,7 +25,7 @@
 
         .k-input,
         .k-picker {
-            border-width: 0;
+            border-width: 0 !important; // sass-lint:disable-line no-important
             color: inherit;
             background: none;
             font: inherit;
@@ -224,6 +224,26 @@
         flex: 1 1 auto;
         display: flex;
         flex-flow: row nowrap;
+    }
+
+
+    // Fill mode
+    .k-input-flat,
+    .k-picker-flat {
+        @include border-radius( 0 !important ); // sass-lint:disable-line no-important
+        border-width: $kendo-input-border-width 0;
+        border-top-color: transparent !important; // sass-lint:disable-line no-important
+        background: none !important; // sass-lint:disable-line no-important
+
+        .k-input-inner {
+            padding-left: 0 !important; // sass-lint:disable-line no-important
+            padding-right: 0 !important; // sass-lint:disable-line no-important
+        }
+    }
+
+    .k-input-outline,
+    .k-picker-outline {
+        background: none !important; // sass-lint:disable-line no-important
     }
 
 
