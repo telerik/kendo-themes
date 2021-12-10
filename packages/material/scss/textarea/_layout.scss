@@ -4,23 +4,9 @@
 
     // Textarea
     .k-textarea {
-        @include border-radius( $border-radius );
-        border-width: 0 0 1px;
-        border-bottom-left-radius: 0;
-        border-bottom-right-radius: 0;
-
-        // Focus state
-        &:focus,
-        // &:focus-within,
-        &.k-state-focus,
-        &.k-state-focused {
-            border-bottom-left-radius: $textarea-border-radius;
-            border-bottom-right-radius: $textarea-border-radius;
-        }
-        &:focus-within {
-            border-bottom-left-radius: $textarea-border-radius;
-            border-bottom-right-radius: $textarea-border-radius;
-        }
+        @include border-bottom-radius( 0 !important ); // sass-lint:disable-line no-important
+        border-width: $input-border-width 0;
+        border-top-color: transparent !important; // sass-lint:disable-line no-important
     }
 
     // Textarea Floating label

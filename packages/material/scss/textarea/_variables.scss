@@ -7,11 +7,11 @@ $textarea-border-radius: $input-border-radius !default;
 $textarea-border-radius-sm: $input-border-radius-sm !default;
 $textarea-border-radius-lg: $input-border-radius-lg !default;
 
-$textarea-padding-x: 16px !default;
-$textarea-padding-y: 6px !default;
+$textarea-padding-x: $input-padding-x !default;
+$textarea-padding-y: $input-padding-y !default;
 $textarea-font-family: $input-font-family !default;
 $textarea-font-size: $input-font-size !default;
-$textarea-line-height: 24px !default;
+$textarea-line-height: $input-line-height !default;
 $textarea-line-height-em: $input-line-height-em !default;
 
 $textarea-padding-x-sm: $input-padding-x-sm !default;
@@ -30,20 +30,20 @@ $textarea-calc-height-lg: $input-calc-height-lg !default;
 
 $textarea-floating-label-padding: 3px !default;
 
-$textarea-bg: try-shade( $body-bg, .5 ) !default;
+$textarea-bg: $input-bg !default;
 $textarea-text: $input-text !default;
 $textarea-border: $input-border !default;
 $textarea-shadow: $input-shadow !default;
 
 $textarea-hover-text: $input-hovered-text !default;
-$textarea-hover-bg: try-shade( $body-bg, 1 ) !default;
-$textarea-hover-border: $input-border !default;
+$textarea-hover-bg: $input-hovered-bg !default;
+$textarea-hover-border: $input-hovered-border !default;
 $textarea-hover-shadow: $input-hovered-shadow !default;
 
 $textarea-focus-text: $input-focused-text !default;
 $textarea-focus-bg: $input-focused-bg !default;
 $textarea-focus-border: $input-focused-border !default;
-$textarea-focus-shadow: 0 0 0 1px $primary !default;
+$textarea-focus-shadow: $input-focused-shadow !default;
 
 $textarea-placeholder-text: $input-placeholder-text !default;
 $textarea-placeholder-opacity: $input-placeholder-opacity !default;
@@ -51,4 +51,4 @@ $textarea-placeholder-opacity: $input-placeholder-opacity !default;
 $textarea-selected-bg: $input-selected-bg !default;
 $textarea-selected-text: $input-selected-text !default;
 
-$textarea-invalid-focus-shadow: 0 0 0 1px $error !default;
+$textarea-invalid-focus-shadow: null !default;

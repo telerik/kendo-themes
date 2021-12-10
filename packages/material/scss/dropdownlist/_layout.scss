@@ -4,20 +4,16 @@
 
     .k-dropdown {
         .k-dropdown-wrap {
+            @include border-bottom-radius( 0 !important ); // sass-lint:disable-line no-important
             border-width: $input-border-width 0;
             border-top-color: transparent !important; // sass-lint:disable-line no-important
-
-            // Disabled
-            .k-state-disabled > &,
-            &.k-state-disabled {
-                border-bottom-style: dashed;
-            }
         }
     }
 
 
     // Native select
     select.k-dropdown {
+        @include border-bottom-radius( 0 !important ); // sass-lint:disable-line no-important
         border-width: $input-border-width 0;
         border-top-color: transparent !important; // sass-lint:disable-line no-important
     }
