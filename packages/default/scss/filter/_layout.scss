@@ -58,7 +58,9 @@
             }
         }
 
-        .k-filter-lines .k-filter-item:last-child > .k-filter-toolbar::after {
+        // The second selector targets the Angular rendering
+        .k-filter-lines .k-filter-item:last-child > .k-filter-toolbar::after,
+        .k-filter-lines .k-filter-item:last-child > * > .k-filter-toolbar::after {
             content: "";
             position: absolute;
             width: $filter-line-size;
@@ -67,9 +69,12 @@
             left: -$filter-padding-x;
         }
 
+        // The forth and fifth selectors targets the Angular rendering
         .k-filter-group-main::before,
         .k-filter-group-main > .k-filter-toolbar::before,
         .k-filter-group-main > .k-filter-toolbar::after,
+        .k-filter-group-main > * > .k-filter-toolbar::before,
+        .k-filter-group-main > * > .k-filter-toolbar::after,
         .k-filter-lines .k-filter-item:last-child::before {
             display: none;
         }
@@ -99,7 +104,9 @@
                 }
             }
 
-            .k-filter-lines .k-filter-item:last-child > .k-filter-toolbar::after {
+            // The second selector targets the Angular rendering
+            .k-filter-lines .k-filter-item:last-child > .k-filter-toolbar::after,
+            .k-filter-lines .k-filter-item:last-child > * > .k-filter-toolbar::after {
                 left: auto;
                 right: -$filter-padding-x;
             }
