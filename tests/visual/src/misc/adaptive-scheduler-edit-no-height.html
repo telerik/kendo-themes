@@ -9,119 +9,108 @@
     <script src="../../../../packages/html/dist/index.js"></script>
 
     <style>
-        #test-area {
-            grid-template-columns: 1fr;
-            align-items: top;
-        }
-
-        .k-textbox,
-        .k-textarea {
-            width: 100%;
-        }
-
-        th {
-            text-align: left;
-        }
     </style>
 </head>
 <body class="k-body">
 
-    <div id="test-area" class="grid">
+    <div id="test-area" class="k-d-grid">
 
-        <div class="k-pane-wrapper k-widget">
-            <div class="k-pane">
-                <div class="k-popup-edit-form k-scheduler-edit-form k-mobile-list k-view k-widget">
-                    <div class="k-header">
-                        <a class="k-header-cancel k-link"><i is="Icon" name="arrow-chevron-left"></i></a>
-                        Event
-                        <a class="k-header-done k-link"><i is="Icon" name="check"></i></a>
-                    </div>
-                    <div class="k-stretched-view k-content">
-                        <ul class="k-listgroup k-listgroup-flush">
-                            <li class="k-item k-listgroup-item">
-                                <label class="k-label k-listgroup-form-row">
-                                    <span class="k-item-title k-listgroup-form-field-label">Title</span>
-                                    <div class="k-listgroup-form-field-wrapper">
-                                        <input type="text" />
-                                    </div>
-                                </label>
-                            </li>
-                            <li class="k-item k-listgroup-item">
-                                <label class="k-label k-listgroup-form-row">
-                                    <span class="k-item-title k-listgroup-form-field-label">Start</span>
-                                    <div class="k-listgroup-form-field-wrapper">
-                                        <input type="datetime-local" />
-                                    </div>
-                                </label>
-                            </li>
-                            <li class="k-item k-listgroup-item">
-                                <label class="k-label k-listgroup-form-row">
-                                    <span class="k-item-title k-listgroup-form-field-label">End</span>
-                                    <div class="k-listgroup-form-field-wrapper">
-                                        <input type="datetime-local" />
-                                    </div>
-                                </label>
-                            </li>
-                            <li class="k-item k-listgroup-item">
-                                <label class="k-label k-listgroup-form-row">
-                                    <span class="k-item-title k-listgroup-form-field-label">All day event</span>
-                                    <div class="k-listgroup-form-field-wrapper">
-                                        <input type="checkbox" />
-                                    </div>
-                                </label>
-                            </li>
-                        </ul>
-                        <ul class="k-listgroup k-listgroup-flush">
-                            <li class="k-item k-listgroup-item">
-                                <label class="k-label k-listgroup-form-row">
-                                    <span class="k-item-title k-listgroup-form-field-label">Timezone</span>
-                                    <div class="k-listgroup-form-field-wrapper">
-                                        <span class="k-timezone-label">No timezone</span>
-                                        <i is="Icon" name="arrow-chevron-right"></i>
-                                    </div>
-                                </label>
-                            </li>
-                        </ul>
-                        <ul class="k-listgroup k-listgroup-flush">
-                            <li class="k-item k-listgroup-item">
-                                <label class="k-label k-listgroup-form-row">
-                                    <span class="k-item-title k-listgroup-form-field-label">Repeat</span>
-                                    <div class="k-listgroup-form-field-wrapper">
-                                        <span>Never</span>
-                                        <i is="Icon" name="arrow-chevron-right"></i>
-                                    </div>
-                                </label>
-                            </li>
-                        </ul>
-                        <ul class="k-listgroup k-listgroup-flush">
-                            <li class="k-item k-listgroup-item">
-                                <label class="k-label k-listgroup-form-row">
-                                    <span class="k-item-title k-listgroup-form-field-label">Description</span>
-                                    <div class="k-listgroup-form-field-wrapper">
-                                        <textarea is="Textarea"></textarea>
-                                    </div>
-                                </label>
-                            </li>
-                            <li class="k-item k-listgroup-item">
-                                <label class="k-label k-listgroup-form-row">
-                                    <span class="k-item-title k-listgroup-form-field-label">Owner</span>
-                                    <div class="k-listgroup-form-field-wrapper">
-                                        <select>
-                                            <option>Alex</option>
-                                        </select>
-                                    </div>
-                                </label>
-                            </li>
-                        </ul>
-                        <ul class="k-edit-buttons k-listgroup k-listgroup-flush">
-                            <li class="k-item k-listgroup-item">
-                                <span class="k-scheduler-delete k-link k-label">Delete</span>
-                            </li>
-                        </ul>
+        <section>
+            <div class="k-pane-wrapper k-widget">
+                <div class="k-pane">
+                    <div class="k-popup-edit-form k-scheduler-edit-form k-mobile-list k-view k-widget">
+                        <div class="k-header">
+                            <a class="k-header-cancel k-link"><i is="Icon" name="arrow-chevron-left"></i></a>
+                            Event
+                            <a class="k-header-done k-link"><i is="Icon" name="check"></i></a>
+                        </div>
+                        <div class="k-stretched-view k-content">
+                            <ul class="k-listgroup k-listgroup-flush">
+                                <li class="k-item k-listgroup-item">
+                                    <label class="k-label k-listgroup-form-row">
+                                        <span class="k-item-title k-listgroup-form-field-label">Title</span>
+                                        <div class="k-listgroup-form-field-wrapper">
+                                            <input type="text" />
+                                        </div>
+                                    </label>
+                                </li>
+                                <li class="k-item k-listgroup-item">
+                                    <label class="k-label k-listgroup-form-row">
+                                        <span class="k-item-title k-listgroup-form-field-label">Start</span>
+                                        <div class="k-listgroup-form-field-wrapper">
+                                            <input type="datetime-local" />
+                                        </div>
+                                    </label>
+                                </li>
+                                <li class="k-item k-listgroup-item">
+                                    <label class="k-label k-listgroup-form-row">
+                                        <span class="k-item-title k-listgroup-form-field-label">End</span>
+                                        <div class="k-listgroup-form-field-wrapper">
+                                            <input type="datetime-local" />
+                                        </div>
+                                    </label>
+                                </li>
+                                <li class="k-item k-listgroup-item">
+                                    <label class="k-label k-listgroup-form-row">
+                                        <span class="k-item-title k-listgroup-form-field-label">All day event</span>
+                                        <div class="k-listgroup-form-field-wrapper">
+                                            <input type="checkbox" />
+                                        </div>
+                                    </label>
+                                </li>
+                            </ul>
+                            <ul class="k-listgroup k-listgroup-flush">
+                                <li class="k-item k-listgroup-item">
+                                    <label class="k-label k-listgroup-form-row">
+                                        <span class="k-item-title k-listgroup-form-field-label">Timezone</span>
+                                        <div class="k-listgroup-form-field-wrapper">
+                                            <span class="k-timezone-label">No timezone</span>
+                                            <i is="Icon" name="arrow-chevron-right"></i>
+                                        </div>
+                                    </label>
+                                </li>
+                            </ul>
+                            <ul class="k-listgroup k-listgroup-flush">
+                                <li class="k-item k-listgroup-item">
+                                    <label class="k-label k-listgroup-form-row">
+                                        <span class="k-item-title k-listgroup-form-field-label">Repeat</span>
+                                        <div class="k-listgroup-form-field-wrapper">
+                                            <span>Never</span>
+                                            <i is="Icon" name="arrow-chevron-right"></i>
+                                        </div>
+                                    </label>
+                                </li>
+                            </ul>
+                            <ul class="k-listgroup k-listgroup-flush">
+                                <li class="k-item k-listgroup-item">
+                                    <label class="k-label k-listgroup-form-row">
+                                        <span class="k-item-title k-listgroup-form-field-label">Description</span>
+                                        <div class="k-listgroup-form-field-wrapper">
+                                            <textarea></textarea>
+                                        </div>
+                                    </label>
+                                </li>
+                                <li class="k-item k-listgroup-item">
+                                    <label class="k-label k-listgroup-form-row">
+                                        <span class="k-item-title k-listgroup-form-field-label">Owner</span>
+                                        <div class="k-listgroup-form-field-wrapper">
+                                            <select>
+                                                <option>Alex</option>
+                                            </select>
+                                        </div>
+                                    </label>
+                                </li>
+                            </ul>
+                            <ul class="k-edit-buttons k-listgroup k-listgroup-flush">
+                                <li class="k-item k-listgroup-item">
+                                    <span class="k-scheduler-delete k-link k-label">Delete</span>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
     </div>
 
