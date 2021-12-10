@@ -43,25 +43,6 @@
     }
 
 
-    // TODO: Deprecate
-    // Input spacing
-    .k-space-left,
-    .k-space-right {
-        > input {
-            flex-grow: 1;
-        }
-
-        > .k-icon {
-            left: 3px;
-            margin: 3px 6px;
-        }
-    }
-
-    .k-textbox.k-space-left {
-        flex-direction: row-reverse;
-    }
-
-
     // Input prefix and suffix
     .k-input-prefix,
     .k-input-suffix {
@@ -107,6 +88,8 @@
         }
     }
 
+
+    // Input separator
     .k-input-separator {
         margin: 0;
         width: 0;
@@ -114,6 +97,7 @@
         border-width: 0 0 0 1px;
         border-style: solid;
     }
+
 
     // Input with icon styles
     .k-input-icon,
@@ -154,16 +138,29 @@
         flex-flow: row nowrap;
     }
 
+
+    // Legacy wrappers
+    .k-picker-wrap,
+    .k-dropdown-wrap,
+    .k-dateinput-wrap,
+    .k-multiselect-wrap,
+    .k-numeric-wrap {
+        width: 100%;
+        box-sizing: border-box;
+        flex: 1 1 auto;
+        display: flex;
+        flex-flow: row nowrap;
+        overflow: hidden;
+        position: relative;
+    }
+    .k-multiselect-wrap {
+        display: block;
+    }
+
+
     .k-text-disabled {
         @include disabled( $disabled-styling );
     }
-
-}
-
-
-
-
-@include exports("input/layout/jQuery-label") {
 
 }
 
