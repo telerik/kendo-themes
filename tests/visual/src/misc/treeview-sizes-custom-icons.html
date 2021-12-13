@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en" class="k-no-animations">
+<head>
+    <title>Treeview</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+    <script src="../../assets/scripts.js"></script>
+    <script src="../../../../packages/html/dist/index.js"></script>
+
+    <style>
+        #test-area {
+            grid-template-columns: repeat(3, 1fr);
+        }
+       
+    </style>
+</head>
+<body class="k-body">
+
+    <div id="test-area" class="grid">
+
+        <span>Small</span>
+        <span>Medium</span>
+        <span>Large</span>
+        <section>
+            <kendo-treeview class="k-widget k-treeview k-treeview-sm">
+                <ul class="k-treeview-lines k-treeview-group">
+                    <li class="k-treeview-item">
+                        <div class="k-treeview-mid">
+                            <span class="k-treeview-leaf ">
+                                <i is="Icon" name="file"></i>
+                                <span class="k-treeview-leaf-text">Alisson Becker</span>
+                            </span>
+                        </div>
+                    </li>
+                    <li class="k-treeview-item">
+                        <div class="k-treeview-mid">
+                            <span class="k-treeview-leaf khover">
+                                <i is="Icon" name="file"></i>
+                                <span class="k-treeview-leaf-text">Adrian</span>
+                            </span>
+                        </div>
+                    </li>
+                    <li class="k-treeview-item">
+                        <div class="k-treeview-mid">
+                            <span class="k-treeview-leaf k-focus">
+                                <i is="Icon" name="file"></i>
+                                <span class="k-treeview-leaf-text">Keomin Kelleher</span>
+                            </span>
+                        </div>
+                    </li>
+                    <li class="k-treeview-item">
+                        <div class="k-treeview-mid">
+                            <span class="k-treeview-leaf k-selected">
+                                <i is="Icon" name="file"></i>
+                                <span class="k-treeview-leaf-text">Smith. Mr Smith.</span>
+                            </span>
+                        </div>
+                    </li>
+                    <li class="k-treeview-item">
+                        <div class="k-treeview-mid">
+                            <span class="k-treeview-leaf k-focus k-selected">
+                                <i is="Icon" name="file"></i>
+                                <span class="k-treeview-leaf-text">Snow. John Snow.</span>
+                            </span>
+                        </div>
+                    </li>
+                    <li class="k-treeview-item">
+                        <div class="k-treeview-mid">
+                            <span class="k-treeview-leaf k-treeview-load-more-button ">
+                                <i is="Icon" name="folder-more"></i>
+                                <span class="k-treeview-leaf-text">Load more...</span>
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+            </kendo-treeview>
+        </section>
+        <section>
+            <kendo-treeview class="k-widget k-treeview k-treeview-md">
+                <ul class="k-treeview-lines k-treeview-group">
+                    <li class="k-treeview-item">
+                        <div class="k-treeview-mid">
+                            <span class="k-treeview-leaf ">
+                                <i is="Icon" name="file"></i>
+                                <span class="k-treeview-leaf-text">Alisson Becker</span>
+                            </span>
+                        </div>
+                    </li>
+                    <li class="k-treeview-item">
+                        <div class="k-treeview-mid">
+                            <span class="k-treeview-leaf k-hover">
+                                <i is="Icon" name="file"></i>
+                                <span class="k-treeview-leaf-text">Adrian</span>
+                            </span>
+                        </div>
+                    </li>
+                    <li class="k-treeview-item">
+                        <div class="k-treeview-mid">
+                            <span class="k-treeview-leaf k-focus">
+                                <i is="Icon" name="file"></i>
+                                <span class="k-treeview-leaf-text">Keomin Kelleher</span>
+                            </span>
+                        </div>
+                    </li>
+                    <li class="k-treeview-item">
+                        <div class="k-treeview-mid">
+                            <span class="k-treeview-leaf k-selected">
+                                <i is="Icon" name="file"></i>
+                                <span class="k-treeview-leaf-text">Smith. Mr Smith.</span>
+                            </span>
+                        </div>
+                    </li>
+                    <li class="k-treeview-item">
+                        <div class="k-treeview-mid">
+                            <span class="k-treeview-leaf k-focus k-selected">
+                                <i is="Icon" name="file"></i>
+                                <span class="k-treeview-leaf-text">Snow. John Snow.</span>
+                            </span>
+                        </div>
+                    </li>
+                    <li class="k-treeview-item">
+                        <div class="k-treeview-mid">
+                            <span class="k-treeview-leaf k-treeview-load-more-button ">
+                                <i is="Icon" name="folder-more"></i>
+                                <span class="k-treeview-leaf-text">Load more...</span>
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+            </kendo-treeview>
+        </section>
+        <section>
+            <kendo-treeview class="k-widget k-treeview k-treeview-lg">
+                <ul class="k-treeview-lines k-treeview-group">
+                    <li class="k-treeview-item">
+                        <div class="k-treeview-mid">
+                            <span class="k-treeview-leaf ">
+                                <i is="Icon" name="file"></i>
+                                <span class="k-treeview-leaf-text">Alisson Becker</span>
+                            </span>
+                        </div>
+                    </li>
+                    <li class="k-treeview-item">
+                        <div class="k-treeview-mid">
+                            <span class="k-treeview-leaf k-hover">
+                                <i is="Icon" name="file"></i>
+                                <span class="k-treeview-leaf-text">Adrian</span>
+                            </span>
+                        </div>
+                    </li>
+                    <li class="k-treeview-item">
+                        <div class="k-treeview-mid">
+                            <span class="k-treeview-leaf k-focus">
+                                <i is="Icon" name="file"></i>
+                                <span class="k-treeview-leaf-text">Keomin Kelleher</span>
+                            </span>
+                        </div>
+                    </li>
+                    <li class="k-treeview-item">
+                        <div class="k-treeview-mid">
+                            <span class="k-treeview-leaf k-selected">
+                                <i is="Icon" name="file"></i>
+                                <span class="k-treeview-leaf-text">Smith. Mr Smith.</span>
+                            </span>
+                        </div>
+                    </li>
+                    <li class="k-treeview-item">
+                        <div class="k-treeview-mid">
+                            <span class="k-treeview-leaf k-focus k-selected">
+                                <i is="Icon" name="file"></i>
+                                <span class="k-treeview-leaf-text">Snow. John Snow.</span>
+                            </span>
+                        </div>
+                    </li>
+                    <li class="k-treeview-item">
+                        <div class="k-treeview-mid">
+                            <span class="k-treeview-leaf k-treeview-load-more-button ">
+                                <i is="Icon" name="folder-more"></i>
+                                <span class="k-treeview-leaf-text">Load more...</span>
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+            </kendo-treeview>
+        </section>
+       
+
+    </div>
+
+</body>
+</html>
