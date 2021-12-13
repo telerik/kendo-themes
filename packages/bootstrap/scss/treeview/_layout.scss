@@ -6,9 +6,8 @@
     .k-treeview {}
 
 
-    // Treeview item
-    .k-treeview-item,
-    .k-treeview .k-item {
+    // Treeview leaf
+    .k-treeview-leaf {
         transition: $transition;
     }
 
