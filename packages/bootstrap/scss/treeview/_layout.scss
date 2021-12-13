@@ -6,19 +6,17 @@
     // Base
     .k-treeview {
 
-        .k-top,
-        .k-mid,
-        .k-bot {
+        .k-treeview-top,
+        .k-treeview-mid,
+        .k-treeview-bot {
             padding-top: 2px;
             padding-bottom: 2px;
         }
 
 
         // Item
-        .k-in {
+        .k-treeview-leaf {
             transition: $transition;
         }
-
     }
-
 }

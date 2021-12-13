@@ -3,68 +3,67 @@
     // Appearance
     .k-treeview {
         @include fill(
-            $treeview-text,
-            $treeview-bg,
-            $treeview-border
+            $kendo-treeview-text,
+            $kendo-treeview-bg,
+            $kendo-treeview-border
         );
 
 
         // Item
-        .k-in {}
+        .k-treeview-leaf {}
 
 
         // Interactive states
-        .k-in:hover,
-        .k-in.k-state-hover {
+        .k-treeview-leaf:hover,
+        .k-treeview-leaf.k-hover {
             @include fill(
-                $treeview-item-hovered-text,
-                $treeview-item-hovered-bg,
-                $treeview-item-hovered-border,
-                $treeview-item-hovered-gradient
+                $kendo-treeview-item-hovered-text,
+                $kendo-treeview-item-hovered-bg,
+                $kendo-treeview-item-hovered-border,
+                $kendo-treeview-item-hovered-gradient
             );
         }
-        .k-in.k-state-selected {
+        .k-treeview-leaf.k-selected {
             @include fill(
-                $treeview-item-selected-text,
-                $treeview-item-selected-bg,
-                $treeview-item-selected-border,
-                $treeview-item-selected-gradient
+                $kendo-treeview-item-selected-text,
+                $kendo-treeview-item-selected-bg,
+                $kendo-treeview-item-selected-border,
+                $kendo-treeview-item-selected-gradient
             );
         }
-        .k-in.k-state-focused {
-            @include box-shadow( $treeview-item-focused-shadow );
+        .k-treeview-leaf.k-focus {
+            @include box-shadow( $kendo-treeview-item-focused-shadow );
         }
-        .k-in.k-state-selected.k-state-focused {
-            @include box-shadow( $treeview-item-selected-focused-shadow );
+        .k-treeview-leaf.k-selected.k-focus {
+            @include box-shadow( $kendo-treeview-item-selected-focused-shadow );
         }
 
         // LoadMore button
         .k-treeview-load-more-button {
             @include fill(
-                $treeview-loadmore-text,
-                $treeview-loadmore-bg,
-                $treeview-loadmore-border
+                $kendo-treeview-loadmore-text,
+                $kendo-treeview-loadmore-bg,
+                $kendo-treeview-loadmore-border
             );
         }
 
         .k-treeview-load-more-button:hover,
-        .k-treeview-load-more-button.k-state-hover {
+        .k-treeview-load-more-button.k-hover {
             @include fill(
-                $treeview-loadmore-hover-text,
-                $treeview-loadmore-hover-bg,
-                $treeview-loadmore-hover-border
+                $kendo-treeview-loadmore-hover-text,
+                $kendo-treeview-loadmore-hover-bg,
+                $kendo-treeview-loadmore-hover-border
             );
         }
 
         .k-treeview-load-more-button:focus,
-        .k-treeview-load-more-button.k-state-focused {
+        .k-treeview-load-more-button.k-focus {
             @include fill(
-                $treeview-loadmore-focus-text,
-                $treeview-loadmore-focus-bg,
-                $treeview-loadmore-focus-border
+                $kendo-treeview-loadmore-focus-text,
+                $kendo-treeview-loadmore-focus-bg,
+                $kendo-treeview-loadmore-focus-border
             );
-            @include box-shadow( $treeview-loadmore-focus-shadow );
+            @include box-shadow( $kendo-treeview-loadmore-focus-shadow );
         }
     }
-
 }
