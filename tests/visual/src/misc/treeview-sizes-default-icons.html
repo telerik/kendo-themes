@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en" class="k-no-animations">
+<head>
+    <title>Treeview</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+    <script src="../../assets/scripts.js"></script>
+    <script src="../../../../packages/html/dist/index.js"></script>
+
+    <style>
+        #test-area {
+            grid-template-columns: repeat(3, 1fr);
+        }
+       
+    </style>
+</head>
+<body class="k-body">
+
+    <div id="test-area" class="grid">
+
+        <span>Small</span>
+        <span>Medium</span>
+        <span>Large</span>
+        <section>
+            <kendo-treeview class="k-widget k-treeview k-treeview-sm">
+                <ul class="k-treeview-lines k-treeview-group">
+                    <li class="k-treeview-item">
+                        <div class="k-treeview-top">
+                            <span class="k-treeview-toggle">
+                                <i is="Icon" name="expand"></i>
+                            </span>
+                            <span class="k-treeview-leaf">
+                                <span class="k-treeview-leaf-text">Normal</span>
+                            </span>
+                        </div>
+                    </li>
+                    <li class="k-treeview-item">
+                        <div class="k-treeview-mid">
+                            <span class="k-treeview-toggle">
+                                <i is="Icon" name="expand"></i>
+                            </span>
+                            <span class="k-treeview-leaf k-hover">
+                                <span class="k-treeview-leaf-text">Hover</span>
+                            </span>
+                        </div>
+                    </li>
+                    <li class="k-treeview-item">
+                        <div class="k-treeview-mid">
+                            <span class="k-treeview-toggle">
+                                <i is="Icon" name="expand"></i>
+                            </span>
+                            <span class="k-treeview-leaf k-focus">
+                                <span class="k-treeview-leaf-text">Focus</span>
+                            </span>
+                        </div>
+                    </li>
+                    <li class="k-treeview-item">
+                        <div class="k-treeview-mid">
+                            <span class="k-treeview-toggle">
+                                <i is="Icon" name="expand"></i>
+                            </span>
+                            <span class="k-treeview-leaf k-selected">
+                                <span class="k-treeview-leaf-text">Selected</span>
+                            </span>
+                        </div>
+                    </li>
+                    <li class="k-treeview-item">
+                        <div class="k-treeview-mid">
+                            <span class="k-treeview-toggle">
+                                <i is="Icon" name="expand"></i>
+                            </span>
+                            <span class="k-treeview-leaf k-selected k-focus">
+                                <span class="k-treeview-leaf-text">
+                                Selected &amp; Focused
+                             </span>
+                            </span>
+                        </div>
+                    </li>
+                    <li class="k-treeview-item k-disabled">
+                        <div class="k-treeview-mid">
+                            <span class="k-treeview-toggle">
+                                <i is="Icon" name="expand"></i>
+                            </span>
+                            <span class="k-treeview-leaf">
+                                <span class="k-treeview-leaf-text">Disabled</span>
+                            </span>
+                        </div>
+                    </li>
+                    <li class="k-treeview-item">
+                        <div class="k-treeview-mid">
+                            <span class="k-treeview-leaf k-treeview-load-more-button">
+                                <span class="k-treeview-leaf-text">Load more</span>
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+            </kendo-treeview>
+        </section>
+        <section>
+            <kendo-treeview class="k-widget k-treeview k-treeview-md">
+                <ul class="k-treeview-lines k-treeview-group">
+                    <li class="k-treeview-item">
+                        <div class="k-treeview-top">
+                            <span class="k-treeview-toggle">
+                                <i is="Icon" name="expand"></i>
+                            </span>
+                            <span class="k-treeview-leaf">
+                                <span class="k-treeview-leaf-text">Normal</span>
+                            </span>
+                        </div>
+                    </li>
+                    <li class="k-treeview-item">
+                        <div class="k-treeview-mid">
+                            <span class="k-treeview-toggle">
+                                <i is="Icon" name="expand"></i>
+                            </span>
+                            <span class="k-treeview-leaf k-hover">Hover</span>
+                        </div>
+                    </li>
+                    <li class="k-treeview-item">
+                        <div class="k-treeview-mid">
+                            <span class="k-treeview-toggle">
+                                <i is="Icon" name="expand"></i>
+                            </span>
+                            <span class="k-treeview-leaf k-focus">Focus</span>
+                        </div>
+                    </li>
+                    <li class="k-treeview-item">
+                        <div class="k-treeview-mid">
+                            <span class="k-treeview-toggle">
+                                <i is="Icon" name="expand"></i>
+                            </span>
+                            <span class="k-treeview-leaf k-selected">Selected</span>
+                        </div>
+                    </li>
+                    <li class="k-treeview-item">
+                        <div class="k-treeview-mid">
+                            <span class="k-treeview-toggle">
+                                <i is="Icon" name="expand"></i>
+                            </span>
+                            <span class="k-treeview-leaf k-selected k-focus">Selected &amp; Focused</span>
+                        </div>
+                    </li>
+                    <li class="k-treeview-item k-disabled">
+                        <div class="k-treeview-mid">
+                            <span class="k-treeview-toggle">
+                                <i is="Icon" name="expand"></i>
+                            </span>
+                            <span class="k-treeview-leaf">Disabled</span>
+                        </div>
+                    </li>
+                    <li class="k-treeview-item">
+                        <div class="k-treeview-mid">
+                            <span class="k-treeview-leaf k-treeview-load-more-button">Load more</span>
+                        </div>
+                    </li>
+                </ul>
+            </kendo-treeview>
+        </section>
+        <section>
+            <kendo-treeview class="k-widget k-treeview k-treeview-lg">
+                <ul class="k-treeview-lines k-treeview-group">
+                    <li class="k-treeview-item">
+                        <div class="k-treeview-top">
+                            <span class="k-treeview-toggle">
+                                <i is="Icon" name="expand"></i>
+                            </span>
+                            <span class="k-treeview-leaf">Normal</span>
+                        </div>
+                    </li>
+                    <li class="k-treeview-item">
+                        <div class="k-treeview-mid">
+                            <span class="k-treeview-toggle">
+                                <i is="Icon" name="expand"></i>
+                            </span>
+                            <span class="k-treeview-leaf k-hover">
+                                <span class="k-treeview-leaf-text">Hover</span>
+                            </span>
+                        </div>
+                    </li>
+                    <li class="k-treeview-item">
+                        <div class="k-treeview-mid">
+                            <span class="k-treeview-toggle">
+                                <i is="Icon" name="expand"></i>
+                            </span>
+                            <span class="k-treeview-leaf k-focus">
+                                <span class="k-treeview-leaf-text">Focus</span>
+                            </span>
+                        </div>
+                    </li>
+                    <li class="k-treeview-item">
+                        <div class="k-treeview-mid">
+                            <span class="k-treeview-toggle">
+                                <i is="Icon" name="expand"></i>
+                            </span>
+                            <span class="k-treeview-leaf k-selected">
+                                <span class="k-treeview-leaf-text">Selected</span>
+                            </span>
+                        </div>
+                    </li>
+                    <li class="k-treeview-item">
+                        <div class="k-treeview-mid">
+                            <span class="k-treeview-toggle">
+                                <i is="Icon" name="expand"></i>
+                            </span>
+                            <span class="k-treeview-leaf k-selected k-focus">
+                                <span class="k-treeview-leaf-text">
+                                    Selected &amp; Focused
+                                </span>
+                            </span>
+                        </div>
+                    </li>
+                    <li class="k-treeview-item k-disabled">
+                        <div class="k-treeview-mid">
+                            <span class="k-treeview-toggle">
+                                <i is="Icon" name="expand"></i>
+                            </span>
+                            <span class="k-treeview-leaf">
+                                <span class="k-treeview-leaf-text">Disabled</span>
+                            </span>
+                        </div>
+                    </li>
+                    <li class="k-treeview-item">
+                        <div class="k-treeview-mid">
+                            <span class="k-treeview-leaf k-treeview-load-more-button">
+                                <span class="k-treeview-leaf-text">Load more</span>
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+            </kendo-treeview>
+        </section>
+       
+
+    </div>
+
+</body>
+</html>
