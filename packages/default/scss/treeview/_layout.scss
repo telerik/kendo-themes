@@ -7,9 +7,9 @@
         background: none;
         box-sizing: border-box;
         outline: 0;
-        font-family: $treeview-font-family;
-        font-size: $treeview-font-size;
-        line-height: $treeview-line-height;
+        font-family: $kendo-treeview-font-family;
+        font-size: $kendo-treeview-font-size;
+        line-height: $kendo-treeview-line-height;
         display: block;
         cursor: default;
         overflow: auto;
@@ -30,11 +30,9 @@
 
 
     // Treeview group
-    .k-treeview-group,
-    .k-treeview .k-group {
+    .k-treeview-group {
         margin: 0;
         padding: 0;
-        background: none;
         list-style: none;
         position: relative;
         outline: 0;
@@ -49,11 +47,8 @@
 
     // Treeview wrappers
     .k-treeview-top,
-    .k-treeview .k-top,
     .k-treeview-mid,
-    .k-treeview .k-mid,
-    .k-treeview-bot,
-    .k-treeview .k-bot {
+    .k-treeview-bot {
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -62,11 +57,10 @@
 
 
     // Treeview item
-    .k-treeview-item,
-    .k-treeview .k-item {
+    .k-treeview-item {
         outline-style: none;
         margin: 0;
-        padding: 0 0 0 $treeview-indent;
+        padding: 0 0 0 $kendo-treeview-indent;
         border-width: 0;
         display: block;
     }
@@ -78,16 +72,6 @@
         display: inline-flex;
         flex-flow: row nowrap;
         align-items: center;
-
-        .k-i-expand,
-        .k-i-collapse {
-            margin: 0 !important; // sass-lint:disable-line no-important
-        }
-    }
-    .k-treeview-toggle,
-    .k-treeview .k-i-expand,
-    .k-treeview .k-i-collapse {
-        margin-left: -$treeview-indent;
         cursor: pointer;
     }
 
@@ -108,12 +92,10 @@
 
 
     // Treeview leaf
-    .k-treeview-leaf,
-    .k-treeview .k-in {
-        @include border-radius( $treeview-item-border-radius );
-        margin: 0;
-        padding: $treeview-item-padding-y $treeview-item-padding-x;
-        border: $treeview-item-border-width solid transparent;
+    .k-treeview-leaf {
+        @include border-radius( $kendo-treeview-item-border-radius );
+        padding: $kendo-treeview-item-padding-y $kendo-treeview-item-padding-x;
+        border: $kendo-treeview-item-border-width solid transparent;
         text-decoration: none;
         display: inline-flex;
         align-items: center;
@@ -127,8 +109,7 @@
             margin-right: $icon-spacing;
         }
 
-        &.k-state-focus,
-        &.k-state-focused {
+        &.k-focus {
             z-index: 1;
         }
     }
@@ -139,10 +120,9 @@
         cursor: pointer;
 
         &:hover,
-        &.k-state-hover,
+        &.k-hover,
         &:focus,
-        &.k-state-focus,
-        &.k-state-focused {
+        &.k-focus {
             text-decoration: underline;
         }
     }
@@ -153,18 +133,15 @@
     .k-treeview[dir="rtl"] {
 
         // Treeview item
-        .k-item,
         .k-treeview-item {
             padding-left: 0;
-            padding-right: $treeview-indent;
+            padding-right: $kendo-treeview-indent;
         }
 
         // Treeview toggle
-        .k-i-expand,
-        .k-i-collapse,
         .k-treeview-toggle {
             margin-left: 0;
-            margin-right: -$treeview-indent;
+            margin-right: -$kendo-treeview-indent;
         }
 
         // Loading
@@ -181,6 +158,22 @@
             .k-sprite {
                 margin-right: 0;
                 margin-left: $icon-spacing;
+            }
+        }
+    }
+
+    @each $size, $size-props in $kendo-treeview-sizes {
+        $_font-size: map-get( $size-props, font-size);
+        $_line-height: map-get( $size-props, line-height);
+        $_item-padding-x: map-get( $size-props, item-padding-x);
+        $_item-padding-y: map-get( $size-props, item-padding-y);
+
+        .k-treeview-#{$size} {
+            font-size: $_font-size;
+            line-height: $_line-height;
+
+            .k-treeview-leaf {
+                padding: $_item-padding-y $_item-padding-x;
             }
         }
     }
