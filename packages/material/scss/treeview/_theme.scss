@@ -11,39 +11,37 @@
 
 
     // Treeview leaf
-    .k-treeview-leaf,
-    .k-treeview .k-in {
+    .k-treeview-leaf {
 
         // Hover state
         &:hover,
-        &.k-state-hover {
+        &.k-hover {
             @include fill(
-                $treeview-item-hovered-text,
-                $treeview-item-hovered-bg,
-                $treeview-item-hovered-border,
-                $treeview-item-hovered-gradient
+                $kendo-treeview-item-hover-text,
+                $kendo-treeview-item-hover-bg,
+                $kendo-treeview-item-hover-border,
+                $kendo-treeview-item-hover-gradient
             );
         }
 
         // Focus state
         &:focus,
-        &.k-state-focus,
-        &.k-state-focused {
+        &.k-focus {
             @include fill(
-                $treeview-item-hovered-text,
-                $treeview-item-hovered-bg,
-                $treeview-item-hovered-border,
-                $treeview-item-hovered-gradient
+                $kendo-treeview-item-hover-text,
+                $kendo-treeview-item-hover-bg,
+                $kendo-treeview-item-hover-border,
+                $kendo-treeview-item-hover-gradient
             );
         }
 
         // Selected state
-        &.k-state-selected {
+        &.k-selected {
             @include fill(
-                $treeview-item-selected-text,
-                $treeview-item-selected-bg,
-                $treeview-item-selected-border,
-                $treeview-item-selected-gradient
+                $kendo-treeview-item-selected-text,
+                $kendo-treeview-item-selected-bg,
+                $kendo-treeview-item-selected-border,
+                $kendo-treeview-item-selected-gradient
             );
         }
     }
