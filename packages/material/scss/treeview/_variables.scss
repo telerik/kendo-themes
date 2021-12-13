@@ -1,101 +1,126 @@
-// TreeviewTreeview
+// Treeview
 
 /// Font family of the treeview component.
 /// @group treeview
-$treeview-font-family: $font-family !default;
+$kendo-treeview-font-family: $font-family !default;
 /// Font size of the treeview component.
 /// @group treeview
-$treeview-font-size: 16px !default;
+$kendo-treeview-font-size: $font-size-lg !default;
 /// Line height of the treeview component.
 /// @group treeview
-$treeview-line-height: 1.25 !default;
+$kendo-treeview-line-height: 1.25 !default;
 
 /// Indentation of child groups in treeview component.
 /// @group treeview
-$treeview-indent: 16px !default;
+$kendo-treeview-indent: 16px !default;
 
 /// Horizontal padding of treeview items.
 /// @group treeview
-$treeview-item-padding-x: map-get( $spacing, 4 ) !default;
+$kendo-treeview-item-padding-x: map-get( $spacing, 4 ) !default;
 /// Vertical padding of treeview items.
 /// @group treeview
-$treeview-item-padding-y: map-get( $spacing, 2 ) !default;
+$kendo-treeview-item-padding-y: map-get( $spacing, 2 ) !default;
 /// Border width of treeview items.
 /// @group treeview
-$treeview-item-border-width: 0px !default;
+$kendo-treeview-item-border-width: 0px !default;
 /// Border radius of treeview items.
 /// @group treeview
-$treeview-item-border-radius: null !default;
+$kendo-treeview-item-border-radius: null !default;
+
+
+/// The sizes of the treeview.
+/// @group treeview
+$kendo-treeview-sizes: (
+    sm: (
+        font-size: $font-size-lg,
+        line-height: 1.25,
+        item-padding-x: map-get( $spacing, 4 ),
+        item-padding-y: map-get( $spacing, 2 ) - map-get( $spacing, thin )
+    ),
+    md: (
+        font-size: $font-size-lg,
+        line-height: 1.25,
+        item-padding-x: map-get( $spacing, 4 ),
+        item-padding-y: map-get( $spacing, 2 )
+    ),
+    lg: (
+        font-size: $font-size-lg,
+        line-height: 1.25,
+        item-padding-x: map-get( $spacing, 4 ),
+        item-padding-y: map-get( $spacing, 2 ) + map-get( $spacing, thin )
+    )
+) !default;
+
 
 /// Background color of the treeview component.
 /// @group treeview
-$treeview-bg: null !default;
+$kendo-treeview-bg: null !default;
 /// Text color of the treeview component.
 /// @group treeview
-$treeview-text: $component-text !default;
+$kendo-treeview-text: $component-text !default;
 /// Border color of the treeview component.
 /// @group treeview
-$treeview-border: null !default;
+$kendo-treeview-border: null !default;
 
 /// Background color of hovered treeview items.
 /// @group treeview
-$treeview-item-hovered-bg: rgba( $treeview-text, .07 ) !default;
+$kendo-treeview-item-hover-bg: rgba( $kendo-treeview-text, .07 ) !default;
 /// Text color of hovered treeview items.
 /// @group treeview
-$treeview-item-hovered-text: null !default;
+$kendo-treeview-item-hover-text: null !default;
 /// Border color of hovered treeview items.
 /// @group treeview
-$treeview-item-hovered-border: null !default;
+$kendo-treeview-item-hover-border: null !default;
 /// Background gradient of hovered treeview items.
 /// @group treeview
-$treeview-item-hovered-gradient: null !default;
+$kendo-treeview-item-hover-gradient: null !default;
 
 /// Background color of selected treeview items.
 /// @group treeview
-$treeview-item-selected-bg: null !default;
+$kendo-treeview-item-selected-bg: null !default;
 /// Text color of selected treeview items.
 /// @group treeview
-$treeview-item-selected-text: $selected-bg !default;
+$kendo-treeview-item-selected-text: $selected-bg !default;
 /// Border color of selected treeview items.
 /// @group treeview
-$treeview-item-selected-border: null !default;
+$kendo-treeview-item-selected-border: null !default;
 /// Background gradient of selected treeview items.
 /// @group treeview
-$treeview-item-selected-gradient: null !default;
+$kendo-treeview-item-selected-gradient: null !default;
 
 /// Box shadow of focused treeview items.
 /// @group treeview
-$treeview-item-focused-shadow: null !default;
+$kendo-treeview-item-focus-shadow: null !default;
 
 /// Background color of load more.
 /// @group treeview
-$treeview-loadmore-bg: transparent !default;
+$kendo-treeview-loadmore-bg: transparent !default;
 /// Text color of load more.
 /// @group treeview
-$treeview-loadmore-text: inherit !default;
+$kendo-treeview-loadmore-text: inherit !default;
 /// Border color of load more.
 /// @group treeview
-$treeview-loadmore-border: null !default;
+$kendo-treeview-loadmore-border: null !default;
 
 /// Background color of a hovered load more.
 /// @group treeview
-$treeview-loadmore-hover-bg: transparent !default;
+$kendo-treeview-loadmore-hover-bg: transparent !default;
 /// Text color of a hovered load more.
 /// @group treeview
-$treeview-loadmore-hover-text: inherit !default;
+$kendo-treeview-loadmore-hover-text: inherit !default;
 /// Border color of a hovered load more.
 /// @group treeview
-$treeview-loadmore-hover-border: null !default;
+$kendo-treeview-loadmore-hover-border: null !default;
 
 /// Background color of a focused load more.
 /// @group treeview
-$treeview-loadmore-focus-bg: transparent !default;
+$kendo-treeview-loadmore-focus-bg: transparent !default;
 /// Text color of a focused load more.
 /// @group treeview
-$treeview-loadmore-focus-text: inherit !default;
+$kendo-treeview-loadmore-focus-text: inherit !default;
 /// Border color of a focused load more.
 /// @group treeview
-$treeview-loadmore-focus-border: null !default;
+$kendo-treeview-loadmore-focus-border: null !default;
 /// Box shadow of a focused load more.
 /// @group treeview
-$treeview-loadmore-focus-shadow: $treeview-item-focused-shadow !default;
+$kendo-treeview-loadmore-focus-shadow: $kendo-treeview-item-focus-shadow !default;
