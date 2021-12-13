@@ -3,40 +3,40 @@
     // Appearance
     .k-treeview {
         @include fill(
-            $treeview-text,
-            $treeview-bg,
-            $treeview-border
+            $kendo-treeview-text,
+            $kendo-treeview-bg,
+            $kendo-treeview-border
         );
 
 
         // Item
-        .k-in {}
+        .k-treeview-leaf {}
 
 
         // Interactive states
-        .k-in:hover,
-        .k-in.k-state-hover {
+        .k-treeview-leaf:hover,
+        .k-treeview-leaf.k-hover {
             @include fill(
-                $treeview-item-hovered-text,
-                $treeview-item-hovered-bg,
-                $treeview-item-hovered-border,
-                $treeview-item-hovered-gradient
+                $kendo-treeview-item-hovered-text,
+                $kendo-treeview-item-hovered-bg,
+                $kendo-treeview-item-hovered-border,
+                $kendo-treeview-item-hovered-gradient
             );
         }
-        .k-in.k-state-selected {
+        .k-treeview-leaf.k-selected {
             @include fill(
-                $treeview-item-selected-text,
-                $treeview-item-selected-bg,
-                $treeview-item-selected-border,
-                $treeview-item-selected-gradient
+                $kendo-treeview-item-selected-text,
+                $kendo-treeview-item-selected-bg,
+                $kendo-treeview-item-selected-border,
+                $kendo-treeview-item-selected-gradient
             );
         }
-        .k-in.k-state-focused {
+        .k-treeview-leaf.k-focus {
             @include fill(
-                $treeview-item-hovered-text,
-                $treeview-item-hovered-bg,
-                $treeview-item-hovered-border,
-                $treeview-item-hovered-gradient
+                $kendo-treeview-item-hovered-text,
+                $kendo-treeview-item-hovered-bg,
+                $kendo-treeview-item-hovered-border,
+                $kendo-treeview-item-hovered-gradient
             );
         }
     }
