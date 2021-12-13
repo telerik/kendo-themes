@@ -28,23 +28,23 @@
             } @else {
                 @include fill(
                     $color,
-                    rgba( $color, .08 ),
-                    rgba( $color, .3 )
+                    try-tint( $color, 92% ),
+                    try-tint( $color, 70% )
                 );
 
                 &:focus,
                 &.k-focus {
                     @include box-shadow( 0 0 0 2px rgba( $color, .16 ) );
-                    @include fill( $bg: rgba( $color, .08 ) );
+                    @include fill( $bg: try-tint( $color, 92% ) );
                 }
 
                 &:hover,
                 &.k-hover {
-                    @include fill( $bg: rgba($color, .16 ) );
+                    @include fill( $bg: try-tint($color, 84% ) );
                 }
 
                 &.k-selected {
-                    @include fill( $bg: rgba( $color, .24 ) );
+                    @include fill( $bg: try-tint( $color, 76% ) );
                 }
             }
         }
