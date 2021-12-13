@@ -43,50 +43,50 @@ $kendo-chip-sizes: (
     lg: ( font-size: $kendo-chip-font-size-lg, line-height: $kendo-chip-line-height-lg, padding: $kendo-chip-padding-x-lg )
 ) !default;
 
+/// The base background of the chip.
+/// @group chip
+$kendo-chip-base-bg: if( $dark-theme, $white, $kendo-button-text ) !default;
+
 /// Theme colors map for the chip.
 /// @group chip
 $kendo-chip-theme-colors: (
-    "base": $black,
+    "base": $kendo-chip-base-bg,
     "error": map-get( $theme-colors, "error" ),
     "info": map-get( $theme-colors, "info" ),
     "warning": map-get( $theme-colors, "warning" ),
     "success": map-get( $theme-colors, "success" )
 ) !default;
 
-/// The base background of the chip.
-/// @group chip
-$kendo-chip-base-bg: $black !default;
-
 /// The base background color of solid chip.
 /// @group chip
-$kendo-chip-solid-bg: rgba( $kendo-chip-base-bg, .08 ) !default;
+$kendo-chip-solid-bg: try-tint( $kendo-chip-base-bg, 92% ) !default;
 /// The base text color of solid chip.
 /// @group chip
 $kendo-chip-solid-text: $kendo-chip-base-bg !default;
 /// The base border color of solid chip.
 /// @group chip
-$kendo-chip-solid-border: rgba( $kendo-chip-solid-bg, .3 ) !default;
+$kendo-chip-solid-border: try-tint( $kendo-chip-base-bg, 70% ) !default;
 /// The base shadow of solid chip.
 /// @group chip
 $kendo-chip-solid-shadow: null !default;
 
 /// The base background color of focused solid chip.
 /// @group chip
-$kendo-chip-solid-focus-bg: rgba( $kendo-chip-solid-bg, .08 ) !default;
+$kendo-chip-solid-focus-bg: try-tint( $kendo-chip-base-bg, 92% ) !default;
 /// The base text color of focused solid chip.
 /// @group chip
 $kendo-chip-solid-focus-text: null !default;
 
 /// The base background color of hovered solid chip.
 /// @group chip
-$kendo-chip-solid-hover-bg: rgba( $kendo-chip-solid-bg, .16 ) !default;
+$kendo-chip-solid-hover-bg: try-tint( $kendo-chip-base-bg, 84% ) !default;
 /// The base text color of hovered solid chip.
 /// @group chip
 $kendo-chip-solid-hover-text: null !default;
 
 /// The base background color of selected solid chip.
 /// @group chip
-$kendo-chip-solid-selected-bg: rgba( $kendo-chip-solid-bg, .24 ) !default;
+$kendo-chip-solid-selected-bg: try-tint( $kendo-chip-base-bg, 76% ) !default;
 /// The base text color of selected solid chip.
 /// @group chip
 $kendo-chip-solid-selected-text: null !default;
