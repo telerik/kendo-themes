@@ -10,6 +10,19 @@
     }
 
 
+    // Time selector header
+    .k-time-header,
+    .k-time-selector-header {
+
+        .k-time-now {
+            color: $link-text;
+        }
+        .k-time-now:hover {
+            color: $link-hover-text;
+        }
+    }
+
+
     // Time list wrapper
     .k-time-list-wrapper {
 

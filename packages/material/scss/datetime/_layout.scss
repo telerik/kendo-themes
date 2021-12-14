@@ -3,8 +3,7 @@
 @include exports("datetime/layout/material") {
 
     // Common
-    .k-datetimepicker,
-    .k-timepicker {
+    .k-datetimepicker {
 
         // Wrapper
         .k-picker-wrap {
@@ -12,38 +11,6 @@
             border-width: $input-border-width 0;
             border-top-color: transparent !important; // sass-lint:disable-line no-important
         }
-    }
-
-    .k-datetime-wrap {
-        .k-time-header {
-            padding: $padding-x-sm calc( #{$padding-x} + 2px );
-
-            .k-title {
-                font-weight: bold;
-            }
-
-            .k-time-now {
-                cursor: pointer;
-                text-transform: uppercase;
-                font-weight: bold;
-                padding: 0;
-                min-width: auto;
-            }
-        }
-
-        .k-time-list-wrapper {
-            .k-title {
-                text-transform: uppercase;
-                z-index: 99;
-            }
-        }
-
-        .k-time-list-container {
-            .k-time-separator {
-                display: none;
-            }
-        }
-
     }
 
 }
