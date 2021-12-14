@@ -2,8 +2,7 @@
 
 @include exports("datetime/layout/bootstrap") {
 
-    .k-datetimepicker,
-    .k-timepicker {
+    .k-datetimepicker {
         .k-picker-wrap,
         .k-select {
             transition: $transition;

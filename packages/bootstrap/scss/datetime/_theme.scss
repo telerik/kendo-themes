@@ -1,14 +1,1 @@
 @import "~@progress/kendo-theme-default/scss/datetime/_theme.scss";
-
-@include exports("datetime/theme/bootstrap") {
-
-    // Timepicker content
-    .k-time-list {
-        &::before,
-        &::after {
-            $shadow-size: 3em;
-            box-shadow: 0 0 $shadow-size ($shadow-size) $popup-bg;
-        }
-    }
-
-}

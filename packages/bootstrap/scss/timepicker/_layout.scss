@@ -1,0 +1,10 @@
+@import "~@progress/kendo-theme-default/scss/timepicker/_layout.scss";
+
+@include exports( "timepicker/bootstrap/layout" ) {
+
+    // Time picker
+    .k-timepicker {
+        transition: $transition;
+    }
+
+}
