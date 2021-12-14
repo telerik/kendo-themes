@@ -1,0 +1,87 @@
+@include exports( "datepicker/theme" ) {
+
+    // Date picker
+    .k-datepicker {
+        @include fill(
+            $input-text,
+            $input-bg,
+            $input-border
+        );
+
+        // Hover state
+        &:hover,
+        &.k-state-hover {
+            @include fill(
+                $input-hovered-text,
+                $input-hovered-bg,
+                $input-hovered-border
+            );
+        }
+
+        // Focus state
+        &:focus,
+        &.k-state-focus {
+            @include fill(
+                $input-focused-text,
+                $input-focused-bg,
+                $input-focused-border
+            );
+            @include box-shadow( $input-focused-shadow );
+        }
+        &:focus-within {
+            @include fill(
+                $input-focused-text,
+                $input-focused-bg,
+                $input-focused-border
+            );
+            @include box-shadow( $input-focused-shadow );
+        }
+
+
+        // Invalid state
+        &.k-invalid,
+        &.ng-invalid,
+        &.k-state-invalid {
+            border-color: $invalid-border;
+
+            .k-input-validation-icon {
+                color: $invalid-text;
+            }
+
+            &:focus-within,
+            &.k-state-focus {
+                @include box-shadow($invalid-shadow);
+            }
+        }
+
+
+        // Spinner
+        .k-select {
+            @include fill(
+                $picker-select-text,
+                $picker-select-bg,
+                $picker-select-border,
+                $picker-select-gradient
+            );
+        }
+        .k-select:hover,
+        .k-select.k-state-hover {
+            @include fill(
+                $picker-select-hovered-text,
+                $picker-select-hovered-bg,
+                $picker-select-hovered-border,
+                $picker-select-hovered-gradient
+            );
+        }
+        .k-select:active,
+        .k-select.k-state-active {
+            @include fill(
+                $picker-select-pressed-text,
+                $picker-select-pressed-bg,
+                $picker-select-pressed-border,
+                $picker-select-pressed-gradient
+            );
+        }
+    }
+
+}

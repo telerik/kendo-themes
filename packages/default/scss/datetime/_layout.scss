@@ -1,11 +1,9 @@
 @include exports("datetime/layout") {
 
 
-    // Datepicker / timepicker
-    .k-datepicker,
+    // Timepicker
     .k-timepicker {
         width: $input-default-width;
-        border-width: 0;
         box-sizing: border-box;
         outline: 0;
         font-family: $input-font-family;
