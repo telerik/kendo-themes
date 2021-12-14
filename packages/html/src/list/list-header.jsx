@@ -20,7 +20,8 @@ function ListHeaderStatic(props) {
 
     let listHeaderClasses = [
         ownClassName,
-        'k-list-header'
+        // 'k-list-header',
+        'k-list-group-sticky-header'
     ];
 
     let legacyListHeaderClasses = [
