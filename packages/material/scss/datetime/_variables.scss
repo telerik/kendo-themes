@@ -1,27 +1,4 @@
 // DateTime
-$time-highlight-size: 1px !default;
-
-$time-list-title-text: $subtle-text !default;
-$time-list-title-focus-text: $component-text !default;
-
-$time-list-highlight-bg: null !default;
-$time-list-highlight-border: null !default;
-
-$time-list-focused-bg: null !default;
-
-$time-header-padding: null !default;
-$timepicker-header-height: 2em !default;
-
-$time-list-padding: $padding-y * 5 !default;
-$time-list-focus-size: 2px !default;
-$time-list-width: 4em !default;
-$time-list-height: 200px !default;
-
-$time-list-item-padding-x: $padding-x !default;
-$time-list-item-padding-y: $padding-y !default;
-
-$dateinput-text: $component-text !default;
-
 $datetime-width: calc( #{$calendar-cell-size * 8} + #{$infinite-calendar-view-padding-x * 2}) !default;
 
 $datetime-bg: $input-bg !default;

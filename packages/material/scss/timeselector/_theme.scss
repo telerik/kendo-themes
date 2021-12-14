@@ -1,0 +1,19 @@
+@import "~@progress/kendo-theme-default/scss/timeselector/_theme.scss";
+
+@include exports( "timeselector/theme/material" ) {
+
+    // Time selector
+    .k-timepicker {}
+
+
+    // Time list
+    .k-time-list {
+        .k-item:hover {
+            @include fill(
+                $list-item-hovered-text,
+                $list-item-hovered-bg
+            );
+        }
+    }
+
+}

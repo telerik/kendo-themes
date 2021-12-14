@@ -13,24 +13,4 @@
     // Datetimepicker
     .k-datetimepicker {}
 
-    // Timepicker header
-    .k-time-header {
-        padding: $time-header-padding;
-
-        .k-title {
-            font-weight: bold;
-        }
-
-        .k-time-now {
-            cursor: pointer;
-        }
-    }
-
-    // Timepicker content
-    .k-time-list-wrapper {
-        .k-title {
-            z-index: 12;
-            font-size: $font-size-xs;
-        }
-    }
 }

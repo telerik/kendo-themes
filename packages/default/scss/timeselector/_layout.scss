@@ -1,0 +1,207 @@
+@include exports( "timeselector/layout" ) {
+
+    // Time selector
+    .k-timeselector {
+        border-width: $time-selector-border-width;
+        border-style: solid;
+        box-sizing: border-box;
+        outline: 0;
+        font-family: $time-selector-font-family;
+        font-size: $time-selector-font-size;
+        line-height: $time-selector-line-height;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        flex-flow: column nowrap;
+        user-select: none;
+        -webkit-touch-callout: none;
+        -webkit-tap-highlight-color: $rgba-transparent;
+
+        .k-popup > & {
+            border-width: 0;
+        }
+    }
+
+
+    // Time selector header
+    .k-time-header,
+    .k-time-selector-header {
+        padding: $time-selector-header-padding-y $time-selector-header-padding-x;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex: 0 0 auto;
+
+        .k-title,
+        .k-time-selector-header-title {
+            padding: $button-padding-y $button-padding-x;
+            font-weight: bold;
+            display: inline-block;
+        }
+
+        .k-time-now {
+            border-width: 0;
+            line-height: inherit;
+            cursor: pointer;
+        }
+    }
+
+
+    // Time selector footer
+    // .k-time-footer {}
+    // .k-time-selector-footer {}
+
+
+    // Time list container
+    .k-time-list-container {
+        display: flex;
+        position: relative;
+        flex: 1 1 auto;
+    }
+
+
+    // Time list highlight
+    .k-time-highlight,
+    .k-time-list-highlight {
+        width: 100%;
+        height: $time-list-highlight-height;
+        border-width: $time-list-highlight-border-width;
+        border-style: solid;
+        box-sizing: border-box;
+        position: absolute;
+        top: calc( 50% + #{$time-list-title-height / 2});
+        left: 0;
+        right: 0;
+        transform: translateY(-50%);
+        z-index: 1;
+    }
+
+
+    // Time list wrapper
+    .k-time-list-wrapper {
+        min-width: $time-list-width;
+        height: $time-list-height;
+        box-sizing: content-box;
+        display: inline-flex;
+        flex-flow: column nowrap;
+        align-items: stretch;
+        overflow: hidden;
+        position: relative;
+        text-align: center;
+        flex: 1 1 auto;
+
+        .k-title {
+            font-size: $time-list-title-font-size;
+            line-height: $time-list-title-line-height;
+            font-weight: bold;
+            text-align: center;
+            text-transform: capitalize;
+            display: block;
+        }
+
+        &.k-state-focused {
+            &::before,
+            &::after {
+                display: block;
+                content: " ";
+                position: absolute;
+                width: 100%;
+                left: 0;
+                pointer-events: none;
+                height: calc( 50% - #{$time-list-highlight-height / 2} );
+                box-sizing: border-box;
+                border-width: 0;
+                border-style: solid;
+            }
+
+            &::before {
+                top: $time-list-title-height;
+            }
+
+            &::after {
+                bottom: 0;
+            }
+        }
+    }
+
+
+    // Time list
+    .k-time-list {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: stretch;
+        flex: 1;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+
+        &::before,
+        &::after {
+            display: block;
+            position: absolute;
+            content: " ";
+            height: 0;
+            line-height: 0;
+            z-index: 1;
+            width: 200%;
+            left: -50%;
+        }
+
+        &::before { top: 0; }
+        &::after { bottom: 0; }
+    }
+
+
+    // Time list content
+    .k-time-container,
+    .k-time-list-content {
+        position: relative;
+        flex: 1 1 auto;
+        display: block;
+        overflow-x: hidden;
+        overflow-y: scroll;
+
+        @include hide-scrollbar("right");
+
+        > ul {
+            height: auto;
+            width: $time-list-width;
+            margin: auto;
+        }
+
+        .k-rtl &
+        [dir="rtl"] & {
+            @include hide-scrollbar("left");
+        }
+
+        .k-scrollable-placeholder {
+            position: absolute;
+            width: 1px;
+            top: 0;
+            right: 0;
+        }
+    }
+
+
+    // Time list item
+    .k-time-list-item,
+    .k-time-list .k-item {
+        padding: $time-list-item-padding-y $time-list-item-padding-x;
+    }
+
+
+    // Time separator
+    .k-time-separator {
+        width: 0;
+        height: $time-list-highlight-height;
+        align-self: center;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        z-index: 11;
+        top: calc( #{$time-list-title-height / 2} );
+    }
+
+}
