@@ -1,0 +1,32 @@
+// Time selector
+$time-selector-border-width: 1px !default;
+$time-selector-font-family: $font-family !default;
+$time-selector-font-size: $font-size !default;
+$time-selector-line-height: $line-height !default;
+
+$time-selector-bg: $component-bg !default;
+$time-selector-text: $component-text !default;
+$time-selector-border: $component-border !default;
+
+$time-selector-header-padding-x: map-get( $spacing, 1 ) !default;
+$time-selector-header-padding-y: map-get( $spacing, 1 ) !default;
+$time-selector-header-border-width: 0px !default;
+
+$time-list-width: 4em !default;
+$time-list-height: 240px !default;
+
+$time-list-title-font-size: $font-size-sm !default;
+$time-list-title-line-height: 1.5 !default;
+$time-list-title-height: ( $time-list-title-font-size * $time-list-title-line-height) !default;
+$time-list-title-text: $subtle-text !default;
+$time-list-title-focus-text: $component-text !default;
+
+$time-list-item-padding-x: $list-item-padding-x !default;
+$time-list-item-padding-y: $list-item-padding-y !default;
+
+$time-list-highlight-border-width: 1px 0px !default;
+$time-list-highlight-height: calc( #{$time-selector-font-size * $time-selector-line-height} + #{ $time-list-item-padding-y * 2} ) !default;
+$time-list-highlight-bg: $component-bg !default;
+$time-list-highlight-border: $component-border !default;
+
+$time-list-focused-bg: rgba(0, 0, 0, .04) !default;

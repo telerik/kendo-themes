@@ -2,15 +2,10 @@
 
 @include exports( "datetime/theme/material" ) {
 
-    // Timepicker
-    .k-timepicker {}
-
-    .k-timeselector,
     .k-datetime-wrap {
         border-color: inherit;
     }
 
-    .k-timeselector,
     .k-datetime-wrap {
         .k-time-header {
 
@@ -40,15 +35,6 @@
                 }
             }
         }
-    }
-
-    .k-time-container {
-        background: transparent;
-    }
-
-    .k-time-highlight {
-        background-color: $component-bg;
-        border-color: $component-border;
     }
 
     .k-datetime-container {
