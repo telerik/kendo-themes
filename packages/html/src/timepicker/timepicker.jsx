@@ -76,17 +76,15 @@ function TimePickerStatic(props) {
             'k-widget',
             'k-timepicker',
             {
+                'k-state-hover': hover === true,
+                'k-state-focus': focus === true,
+                'k-state-invalid': invalid === true,
                 'k-state-disabled': disabled === true
             }
         ];
 
         let legacyWrapClasses = [
-            'k-picker-wrap',
-            {
-                'k-state-hover': hover === true,
-                'k-state-focused': focus === true,
-                'k-state-invalid': invalid === true
-            }
+            'k-picker-wrap'
         ];
 
         return (
