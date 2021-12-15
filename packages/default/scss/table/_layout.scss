@@ -20,6 +20,10 @@
     .k-data-table {
         border-width: $table-border-width;
         border-style: solid;
+
+        .k-table {
+            table-layout: fixed;
+        }
     }
 
 
@@ -81,7 +85,7 @@
         width: 100%;
         max-width: none;
         border-width: 0;
-        display: table-row-group;
+        display: table;
         border-collapse: collapse;
         border-spacing: 0;
         table-layout: fixed;
@@ -89,10 +93,11 @@
         list-style: none;
         outline: none;
 
-        .k-table-row {
+        .k-table-row,
+        .k-table-group-row {
             width: 100%;
             box-sizing: border-box;
-            display: flex;
+            display: table-row;
             position: relative;
         }
         .k-table-row.k-first {
@@ -102,6 +107,26 @@
         .k-table-th,
         .k-table-td {
             vertical-align: middle;
+        }
+
+        .k-table-group-row {
+
+            &::before {
+                content: ".";
+                padding: $table-cell-padding-y 0;
+                width: 0;
+                display: block;
+                overflow: hidden;
+            }
+
+            .k-table-th {
+                width: 100%;
+                border-color: inherit;
+                color: inherit;
+                background-color: inherit;
+                position: absolute;
+                top: 0;
+            }
         }
 
         .k-table-spacer-td {
@@ -125,6 +150,13 @@
                 right: 0;
             }
         }
+    }
+
+
+    // Virtualization
+    .k-virtual-table .k-table-row {
+        position: absolute;
+        width: 100%;
     }
 
 
