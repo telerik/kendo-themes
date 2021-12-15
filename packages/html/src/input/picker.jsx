@@ -62,9 +62,9 @@ function PickerStatic(props) {
     let pickerClasses = [
         ownClassName,
         'k-picker',
-        styles.sizeClass( size, 'k-input' ),
+        styles.sizeClass( size, 'k-picker' ),
         styles.roundedClass( rounded ),
-        styles.fillModeClass( fillMode, 'k-input' ),
+        styles.fillModeClass( fillMode, 'k-picker' ),
         {
             'k-hover': hover === true,
             'k-focus': focus === true,
