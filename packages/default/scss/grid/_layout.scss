@@ -505,10 +505,6 @@
         }
     }
 
-    .k-group-indicator {
-        margin-right: ( $grid-group-indicator-gap / 2 );
-    }
-
     .k-group-indicator + .k-group-indicator {
         margin-left: ( $grid-group-indicator-gap / 2 );
     }
