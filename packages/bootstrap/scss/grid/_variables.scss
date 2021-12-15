@@ -14,7 +14,7 @@ $grid-header-font-size: null !default;
 $grid-footer-padding-x: $grid-header-padding-x !default;
 $grid-footer-padding-y: $grid-header-padding-y !default;
 
-$grid-grouping-header-padding-x: ($grid-padding-y / 2) !default;
+$grid-grouping-header-padding-x: $grid-padding-y !default;
 $grid-grouping-header-padding-y: $grid-grouping-header-padding-x !default;
 
 $grid-filter-cell-padding-x: $grid-padding-y !default;
