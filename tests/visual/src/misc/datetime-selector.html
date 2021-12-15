@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Datetime selector</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+    <script src="../../assets/scripts.js"></script>
+    <script src="../../../../packages/html/dist/index.js"></script>
+
+    <style>
+        .k-animation-container {
+            width: min-content;
+            max-width: 100%;
+            position: relative;
+            overflow: visible;
+        }
+        kendo-popup {
+            display: block;
+        }
+    </style>
+</head>
+<body class="k-body">
+
+    <div id="test-area" class="k-d-grid k-grid-cols-2">
+
+        <span>Date tab</span>
+        <span>Time tab</span>
+
+        <section>
+            <div class="k-animation-container">
+                <div class="k-popup k-reset k-datetime-container">
+                    <div class="k-datetime-wrap k-date-tab">
+                        <div class="k-datetime-buttongroup">
+                            <div class="k-button-group k-button-group-stretched">
+                                <button is="Button" class="k-group-start" selected>Date</button>
+                                <button is="Button" class="k-group-end">Time</button>
+                            </div>
+                        </div>
+                        <div class="k-datetime-selector">
+                            <div class="k-datetime-calendar-wrap">
+                                <div class="k-widget k-calendar">
+                                    <div class="k-calendar-header k-hstack">
+                                        <button is="Button" fillMode="flat" class="k-calendar-title k-title">March 2018</button>
+                                        <span class="k-spacer"></span>
+                                        <span class="k-calendar-nav k-hstack">
+                                            <button is="Button" fillMode="flat" class="k-prev-view" icon="arrow-60-left"></button>
+                                            <span class="k-nav-today">Today</span>
+                                            <button is="Button" fillMode="flat" class="k-next-view" icon="arrow-60-right"></button>
+                                        </span>
+                                    </div>
+                                    <div class="k-calendar-view k-calendar-monthview k-hstack k-align-items-start k-justify-content-center">
+                                        <table class="k-calendar-table k-month">
+                                            <thead class="k-calendar-thead">
+                                                <tr class="k-calendar-tr">
+                                                    <th class="k-calendar-th">Su</th>
+                                                    <th class="k-calendar-th">Mo</th>
+                                                    <th class="k-calendar-th">Tu</th>
+                                                    <th class="k-calendar-th">We</th>
+                                                    <th class="k-calendar-th">Th</th>
+                                                    <th class="k-calendar-th">Fr</th>
+                                                    <th class="k-calendar-th">Sa</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody class="k-calendar-tbody">
+                                                <tr class="k-calendar-tr">
+                                                    <td class="k-calendar-td k-other-month k-weekend">
+                                                        <a class="k-link">25</a>
+                                                    </td>
+                                                    <td class="k-calendar-td k-other-month">
+                                                        <a class="k-link">26</a>
+                                                    </td>
+                                                    <td class="k-calendar-td k-other-month">
+                                                        <a class="k-link">27</a>
+                                                    </td>
+                                                    <td class="k-calendar-td k-other-month">
+                                                        <a class="k-link">28</a>
+                                                    </td>
+                                                    <td class="k-calendar-td">
+                                                        <a class="k-link">1</a>
+                                                    </td>
+                                                    <td class="k-calendar-td">
+                                                        <a class="k-link">2</a>
+                                                    </td>
+                                                    <td class="k-calendar-td k-weekend">
+                                                        <a class="k-link">3</a>
+                                                    </td>
+                                                </tr>
+                                                <tr class="k-calendar-tr">
+                                                    <td class="k-calendar-td k-weekend">
+                                                        <a class="k-link">4</a>
+                                                    </td>
+                                                    <td class="k-calendar-td k-state-hover">
+                                                        <a class="k-link">5</a>
+                                                    </td>
+                                                    <td class="k-calendar-td k-state-focused">
+                                                        <a class="k-link">6</a>
+                                                    </td>
+                                                    <td class="k-calendar-td k-state-selected">
+                                                        <a class="k-link">7</a>
+                                                    </td>
+                                                    <td class="k-calendar-td">
+                                                        <a class="k-link">8</a>
+                                                    </td>
+                                                    <td class="k-calendar-td">
+                                                        <a class="k-link">9</a>
+                                                    </td>
+                                                    <td class="k-calendar-td k-weekend">
+                                                        <a class="k-link">10</a>
+                                                    </td>
+                                                </tr>
+                                                <tr class="k-calendar-tr">
+                                                    <td class="k-calendar-td k-weekend">
+                                                        <a class="k-link">11</a>
+                                                    </td>
+                                                    <td class="k-calendar-td k-state-hover k-state-focused">
+                                                        <a class="k-link">12</a>
+                                                    </td>
+                                                    <td class="k-calendar-td k-state-selected k-state-focused">
+                                                        <a class="k-link">13</a>
+                                                    </td>
+                                                    <td class="k-calendar-td k-state-selected k-state-hover">
+                                                        <a class="k-link">14</a>
+                                                    </td>
+                                                    <td class="k-calendar-td">
+                                                        <a class="k-link">15</a>
+                                                    </td>
+                                                    <td class="k-calendar-td">
+                                                        <a class="k-link">16</a>
+                                                    </td>
+                                                    <td class="k-calendar-td k-weekend">
+                                                        <a class="k-link">17</a>
+                                                    </td>
+                                                </tr>
+                                                <tr class="k-calendar-tr">
+                                                    <td class="k-calendar-td k-weekend">
+                                                        <a class="k-link">18</a>
+                                                    </td>
+                                                    <td class="k-calendar-td">
+                                                        <a class="k-link">19</a>
+                                                    </td>
+                                                    <td class="k-calendar-td">
+                                                        <a class="k-link">20</a>
+                                                    </td>
+                                                    <td class="k-calendar-td">
+                                                        <a class="k-link">21</a>
+                                                    </td>
+                                                    <td class="k-calendar-td">
+                                                        <a class="k-link">22</a>
+                                                    </td>
+                                                    <td class="k-calendar-td">
+                                                        <a class="k-link">23</a>
+                                                    </td>
+                                                    <td class="k-calendar-td k-weekend">
+                                                        <a class="k-link">24</a>
+                                                    </td>
+                                                </tr>
+                                                <tr class="k-calendar-tr">
+                                                    <td class="k-calendar-td k-weekend">
+                                                        <a class="k-link">25</a>
+                                                    </td>
+                                                    <td class="k-calendar-td">
+                                                        <a class="k-link">26</a>
+                                                    </td>
+                                                    <td class="k-calendar-td">
+                                                        <a class="k-link">27</a>
+                                                    </td>
+                                                    <td class="k-calendar-td">
+                                                        <a class="k-link">28</a>
+                                                    </td>
+                                                    <td class="k-calendar-td k-today">
+                                                        <a class="k-link">29</a>
+                                                    </td>
+                                                    <td class="k-calendar-td">
+                                                        <a class="k-link">30</a>
+                                                    </td>
+                                                    <td class="k-calendar-td k-weekend">
+                                                        <a class="k-link">31</a>
+                                                    </td>
+                                                </tr>
+                                                <tr class="k-calendar-tr">
+                                                    <td class="k-calendar-td k-other-month k-weekend">
+                                                        <a class="k-link">1</a>
+                                                    </td>
+                                                    <td class="k-calendar-td k-other-month">
+                                                        <a class="k-link">2</a>
+                                                    </td>
+                                                    <td class="k-calendar-td k-other-month">
+                                                        <a class="k-link">3</a>
+                                                    </td>
+                                                    <td class="k-calendar-td k-other-month">
+                                                        <a class="k-link">4</a>
+                                                    </td>
+                                                    <td class="k-calendar-td k-other-month">
+                                                        <a class="k-link">5</a>
+                                                    </td>
+                                                    <td class="k-calendar-td k-other-month">
+                                                        <a class="k-link">6</a>
+                                                    </td>
+                                                    <td class="k-calendar-td k-other-month k-weekend">
+                                                        <a class="k-link">7</a>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="k-datetime-time-wrap">
+                                <!-- omit -->
+                            </div>
+                        </div>
+                        <div class="k-datetime-footer k-actions k-actions-stretched">
+                            <button is="Button" class="k-time-cancel">Cancel</button>
+                            <button is="Button" themeColor="primary" class="k-time-accept">Set</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="k-animation-container">
+                <div class="k-popup k-reset k-datetime-container">
+                    <div class="k-datetime-wrap k-time-tab">
+                        <div class="k-datetime-buttongroup">
+                            <div class="k-button-group k-button-group-stretched">
+                                <button is="Button" class="k-group-start">Date</button>
+                                <button is="Button" class="k-group-end" selected>Time</button>
+                            </div>
+                        </div>
+                        <div class="k-datetime-selector">
+                            <div class="k-datetime-calendar-wrap">
+                                <!-- omit -->
+                            </div>
+                            <div class="k-datetime-time-wrap">
+                                <div class="k-timeselector k-reset">
+                                    <div class="k-time-part">
+                                        <div class="k-time-header">
+                                            <span class="k-title">10:00:00 AM</span>
+                                            <button is="Button" fillMode="flat" class="k-time-now">Now</button>
+                                        </div>
+                                        <div class="k-time-list-container">
+                                            <span class="k-time-highlight"></span>
+                                            <div class="k-time-list-wrapper">
+                                            <span class="k-title">Hour</span>
+                                                <div class="k-time-list">
+                                                    <div class="k-content k-scrollable k-time-container">
+                                                        <ul class="k-reset" style="transform: translateY(97px);">
+                                                            <li class="k-item">
+                                                                <span>0</span>
+                                                            </li>
+                                                            <li class="k-item">
+                                                                <span>1</span>
+                                                            </li>
+                                                            <li class="k-item">
+                                                                <span>2</span>
+                                                            </li>
+                                                            <li class="k-item">
+                                                                <span>3</span>
+                                                            </li>
+                                                            <li class="k-item">
+                                                                <span>4</span>
+                                                            </li>
+                                                            <li class="k-item">
+                                                                <span>5</span>
+                                                            </li>
+                                                            <li class="k-item">
+                                                                <span>6</span>
+                                                            </li>
+                                                            <li class="k-item">
+                                                                <span>7</span>
+                                                            </li>
+                                                            <li class="k-item">
+                                                                <span>8</span>
+                                                            </li>
+                                                            <li class="k-item">
+                                                                <span>9</span>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="k-scrollable-placeholder"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="k-time-separator">:</div>
+                                            <div class="k-time-list-wrapper k-state-focused">
+                                                <span class="k-title">Minute</span>
+                                                <div class="k-time-list">
+                                                    <div class="k-content k-scrollable k-time-container">
+                                                        <ul class="k-reset" style="transform: translateY(97px);">
+                                                            <li class="k-item">
+                                                                <span>0</span>
+                                                            </li>
+                                                            <li class="k-item">
+                                                                <span>1</span>
+                                                            </li>
+                                                            <li class="k-item">
+                                                                <span>2</span>
+                                                            </li>
+                                                            <li class="k-item">
+                                                                <span>3</span>
+                                                            </li>
+                                                            <li class="k-item">
+                                                                <span>4</span>
+                                                            </li>
+                                                            <li class="k-item">
+                                                                <span>5</span>
+                                                            </li>
+                                                            <li class="k-item">
+                                                                <span>6</span>
+                                                            </li>
+                                                            <li class="k-item">
+                                                                <span>7</span>
+                                                            </li>
+                                                            <li class="k-item">
+                                                                <span>8</span>
+                                                            </li>
+                                                            <li class="k-item">
+                                                                <span>9</span>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="k-scrollable-placeholder"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="k-time-separator">:</div>
+                                            <div class="k-time-list-wrapper">
+                                                <span class="k-title">Second</span>
+                                                <div class="k-time-list">
+                                                    <div class="k-content k-scrollable k-time-container">
+                                                        <ul class="k-reset" style="transform: translateY(97px);">
+                                                            <li class="k-item">
+                                                                <span>0</span>
+                                                            </li>
+                                                            <li class="k-item">
+                                                                <span>1</span>
+                                                            </li>
+                                                            <li class="k-item">
+                                                                <span>2</span>
+                                                            </li>
+                                                            <li class="k-item">
+                                                                <span>3</span>
+                                                            </li>
+                                                            <li class="k-item">
+                                                                <span>4</span>
+                                                            </li>
+                                                            <li class="k-item">
+                                                                <span>5</span>
+                                                            </li>
+                                                            <li class="k-item">
+                                                                <span>6</span>
+                                                            </li>
+                                                            <li class="k-item">
+                                                                <span>7</span>
+                                                            </li>
+                                                            <li class="k-item">
+                                                                <span>8</span>
+                                                            </li>
+                                                            <li class="k-item">
+                                                                <span>9</span>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="k-scrollable-placeholder"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="k-time-separator">:</div>
+                                            <div class="k-time-list-wrapper">
+                                                <span class="k-title">AM/PM</span>
+                                                <div class="k-time-list">
+                                                    <div class="k-content k-scrollable k-time-container">
+                                                        <ul class="k-reset" style="transform: translateY(97px);">
+                                                            <li class="k-item">
+                                                                <span>AM</span>
+                                                            </li>
+                                                            <li class="k-item">
+                                                                <span>PM</span>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="k-scrollable-placeholder"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="k-datetime-footer k-actions k-actions-stretched">
+                            <button is="Button" class="k-time-cancel">Cancel</button>
+                            <button is="Button" themeColor="primary" class="k-time-accept">Set</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>
