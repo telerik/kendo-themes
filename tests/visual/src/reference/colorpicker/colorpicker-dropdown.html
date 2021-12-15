@@ -13,21 +13,57 @@
 </head>
 <body class="k-body">
 
-    <div id="test-area" class="k-d-grid k-grid-cols-6">
+    <div id="test-area" class="k-d-grid k-grid-cols-8">
 
+        <span></span>
         <span>No Color</span>
         <span>Selected Color</span>
+        <span>Opacity</span>
         <span>Icon</span>
         <span>Hover</span>
         <span>Focus</span>
         <span>Disabled</span>
 
+        <span>Small</span>
+        <section>
+            <input is="Colorpicker" size="small" />
+        </section>
+
+        <section>
+            <input is="Colorpicker" value="fuchsia" size="small" />
+        </section>
+
+        <section>
+            <input is="Colorpicker" value="rgba(255, 0, 255, 0.5)" size="small" />
+        </section>
+
+        <section>
+            <input is="Colorpicker" value="fuchsia" iconName="edit-tools" size="small" />
+        </section>
+
+        <section>
+            <input is="Colorpicker" value="fuchsia" iconName="edit-tools" size="small" hover />
+        </section>
+
+        <section>
+            <input is="Colorpicker" value="fuchsia" iconName="edit-tools" size="small" focus />
+        </section>
+
+        <section>
+            <input is="Colorpicker" value="fuchsia" iconName="edit-tools" size="small" disabled />
+        </section>
+
+        <span>Medium</span>
         <section>
             <input is="Colorpicker" />
         </section>
 
         <section>
             <input is="Colorpicker" value="fuchsia" />
+        </section>
+
+        <section>
+            <input is="Colorpicker" value="rgba(255, 0, 255, 0.5)" />
         </section>
 
         <section>
@@ -44,6 +80,35 @@
 
         <section>
             <input is="Colorpicker" value="fuchsia" iconName="edit-tools" disabled />
+        </section>
+
+        <span>Large</span>
+        <section>
+            <input is="Colorpicker" size="large" />
+        </section>
+
+        <section>
+            <input is="Colorpicker" value="fuchsia" size="large" />
+        </section>
+
+        <section>
+            <input is="Colorpicker" value="rgba(255, 0, 255, 0.5)" size="large" />
+        </section>
+
+        <section>
+            <input is="Colorpicker" value="fuchsia" iconName="edit-tools" size="large" />
+        </section>
+
+        <section>
+            <input is="Colorpicker" value="fuchsia" iconName="edit-tools" size="large" hover />
+        </section>
+
+        <section>
+            <input is="Colorpicker" value="fuchsia" iconName="edit-tools" size="large" focus />
+        </section>
+
+        <section>
+            <input is="Colorpicker" value="fuchsia" iconName="edit-tools" size="large" disabled />
         </section>
     </div>
 
