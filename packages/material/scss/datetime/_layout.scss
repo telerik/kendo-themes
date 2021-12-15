@@ -1,16 +1,12 @@
 @import "~@progress/kendo-theme-default/scss/datetime/_layout.scss";
 
-@include exports("datetime/layout/material") {
+@include exports( "datetimepicker/layout/material" ) {
 
-    // Common
+    // Datetime picker
     .k-datetimepicker {
-
-        // Wrapper
-        .k-picker-wrap {
-            @include border-bottom-radius( 0 !important ); // sass-lint:disable-line no-important
-            border-width: $input-border-width 0;
-            border-top-color: transparent !important; // sass-lint:disable-line no-important
-        }
+        @include border-bottom-radius( 0 !important ); // sass-lint:disable-line no-important
+        border-width: $input-border-width 0;
+        border-top-color: transparent !important; // sass-lint:disable-line no-important
     }
 
 }
