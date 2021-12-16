@@ -152,12 +152,12 @@
             z-index: 2;
         }
 
-        .k-group-start,
-        .k-button:first-child {
+        .k-group-start:not(:only-child),
+        .k-button:first-child:not(:only-child) {
             @include border-right-radius( 0 );
         }
-        .k-group-end,
-        .k-button:last-child {
+        .k-group-end:not(:only-child),
+        .k-button:last-child:not(:only-child) {
             @include border-left-radius( 0 );
         }
     }
