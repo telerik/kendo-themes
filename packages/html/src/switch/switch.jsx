@@ -105,8 +105,8 @@ SwitchStatic.defaultProps = {
     offLabel: '',
 
     size: 'medium',
-    trackRounded: 'pill',
-    thumbRounded: 'pill'
+    trackRounded: 'full',
+    thumbRounded: 'full'
 };
 SwitchStatic.propTypes = {
     checked: typeof false,
@@ -115,8 +115,8 @@ SwitchStatic.propTypes = {
     offLabel: typeof '',
 
     size: typeof [ null, 'small', 'medium', 'large' ],
-    trackRounded: typeof [ null, '0', 'small', 'medium', 'large', 'pill', 'circle' ],
-    thumbRounded: typeof [ null, '0', 'small', 'medium', 'large', 'pill', 'circle' ],
+    trackRounded: typeof [ null, 'small', 'medium', 'large', 'full' ],
+    thumbRounded: typeof [ null, 'small', 'medium', 'large', 'full' ],
 
     hover: typeof false,
     focus: typeof false,

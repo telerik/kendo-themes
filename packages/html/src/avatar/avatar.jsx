@@ -86,7 +86,7 @@ AvatarStatic.defaultProps = {
 
     size: 'medium',
     shape: 'square',
-    rounded: 'circle',
+    rounded: 'full',
     bordered: false,
 
     fillMode: 'solid',
@@ -99,9 +99,9 @@ AvatarStatic.propTypes = {
 
     type: typeof '',
 
-    size: typeof [ null, 'small', 'medium', 'large', 'circle' ],
+    size: typeof [ null, 'small', 'medium', 'large' ],
     shape: typeof [ null, 'square', 'circle', 'rounded' ],
-    rounded: typeof [ null, '0', 'small', 'medium', 'large' ],
+    rounded: typeof [ null, 'small', 'medium', 'large', 'full' ],
     bordered: typeof false,
 
     fillMode: typeof [ null, 'solid', 'outline' ],
