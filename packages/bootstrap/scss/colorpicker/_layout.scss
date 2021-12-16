@@ -1,15 +1,9 @@
 @import "~@progress/kendo-theme-default/scss/colorpicker/_layout.scss";
 
-@include exports("colorpicker/layout/bootstrap") {
+@include exports( "colorpicker/layout/bootstrap" ) {
 
     .k-colorpicker {
-        .k-picker-wrap {
-            transition: $transition;
-
-            .k-select {
-                transition: $transition;
-            }
-        }
+        transition: $transition;
     }
 
 }

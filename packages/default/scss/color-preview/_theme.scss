@@ -1,4 +1,4 @@
-@include exports("color-preview/theme") {
+@include exports( "color-preview/theme" ) {
 
     // Color Preview
     .k-color-preview {
@@ -25,7 +25,8 @@
     .k-no-color::after {
         background-color: $color-preview-no-color-bg;
         background-image: $color-preview-no-color-image;
-        background-size: 100% 100%;
+        background-size: contain;
+        background-position: 0 0;
     }
 
 }
