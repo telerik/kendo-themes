@@ -150,7 +150,7 @@ ComboboxStatic.propTypes = {
     suffix: typeof '#fragment',
 
     size: typeof [ null, 'small', 'medium', 'large' ],
-    rounded: typeof [ null, 'small', 'medium', 'large', 'pill' ],
+    rounded: typeof [ null, 'small', 'medium', 'large', 'full' ],
 
     fillMode: typeof [ null, 'solid', 'flat', 'outline' ],
 

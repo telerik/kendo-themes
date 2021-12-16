@@ -125,7 +125,7 @@ ButtonStatic.propTypes = {
     type: typeof [ 'button', 'submit', 'reset' ],
 
     size: typeof [ null, 'small', 'medium', 'large' ],
-    rounded: typeof [ null, '0', 'small', 'medium', 'large', 'pill', 'circle' ],
+    rounded: typeof [ null, 'small', 'medium', 'large', 'full' ],
     shape: typeof [ null, 'rectangle', 'square' ],
 
     fillMode: typeof [ null, 'solid', 'flat', 'outline', 'link' ],
