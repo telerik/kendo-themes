@@ -129,12 +129,12 @@ SplitButtonStatic.propTypes = {
 
     arrowIconName: typeof '',
 
-    size: typeof [ 'none', 'small', 'medium', 'large' ],
-    rounded: typeof [ 'none', '0', 'small', 'medium', 'large', 'pill', 'circle' ],
-    shape: typeof [ 'none', 'rectangle', 'square' ],
+    size: typeof [ null, 'small', 'medium', 'large' ],
+    rounded: typeof [ null, 'small', 'medium', 'large', 'full' ],
+    shape: typeof [ null, 'rectangle', 'square' ],
 
-    fillMode: typeof [ 'none', 'solid', 'flat', 'outline', 'link' ],
-    themeColor: typeof [ 'none', 'surface', 'base', 'primary' ],
+    fillMode: typeof [ null, 'solid', 'flat', 'outline', 'link' ],
+    themeColor: typeof [ null, 'surface', 'base', 'primary' ],
 
     hover: typeof false,
     focus: typeof false,
