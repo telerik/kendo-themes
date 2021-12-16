@@ -59,7 +59,7 @@ MenuListStatic.defaultProps = {
 };
 
 MenuListStatic.propTypes = {
-    size: typeof [ 'none', 'small', 'medium', 'large' ],
+    size: typeof [ null, 'small', 'medium', 'large' ],
 
     children: typeof [],
 
