@@ -74,15 +74,11 @@ function DropDownButtonStatic(props) {
             </div>
         );
     }
-    // eslint-disable-next-line no-nested-ternary
-    let renderText = text !== '' && showArrow ?
-        <>{text}<span className={`k-icon k-i-${arrowIconName || 'arrow-s'}`}></span></> :
-        // eslint-disable-next-line no-nested-ternary
-        text !== '' && !showArrow ?
-            text :
-            text === '' && showArrow ?
-                <span className={`k-icon k-i-${arrowIconName || 'arrow-s'}`}></span> :
-                undefined;
+
+    let renderText = text === '' && !showArrow ? undefined : (<>
+        {text}
+        {showArrow && <span className={`k-icon k-i-${arrowIconName || 'arrow-s'}`}></span>}
+    </>);
 
     return (
         <div className={dropDownButtonClasses} {...ariaAttr} {...htmlAttributes}>
