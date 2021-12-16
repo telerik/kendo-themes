@@ -2,7 +2,7 @@
 
 ```html
 <!-- default rendering -->
-<div class="k-chip k-chip-md k-rounded-pill k-chip-solid k-chip-solid-base">
+<div class="k-chip k-chip-md k-rounded-full k-chip-solid k-chip-solid-base">
     <span class="k-chip-text">Chip Text</span>
 </div>
 
@@ -32,9 +32,9 @@
 ```html
 <!-- default rendering -->
 <div class="k-chip-list k-chip-list-md">
-    <div class="k-chip k-chip-md k-rounded-pill k-chip-solid k-chip-solid-base">...</div>
-    <div class="k-chip k-chip-md k-rounded-pill k-chip-solid k-chip-solid-base">...</div>
-    <div class="k-chip k-chip-md k-rounded-pill k-chip-solid k-chip-solid-base">...</div>
+    <div class="k-chip k-chip-md k-rounded-full k-chip-solid k-chip-solid-base">...</div>
+    <div class="k-chip k-chip-md k-rounded-full k-chip-solid k-chip-solid-base">...</div>
+    <div class="k-chip k-chip-md k-rounded-full k-chip-solid k-chip-solid-base">...</div>
 </div>
 
 <!-- canonical rendering -->
