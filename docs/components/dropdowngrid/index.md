@@ -6,7 +6,7 @@ position: 3
 ---
 
 # DropdownGrid
-DropdownGrid is a form component that lets you choose from a table-structured list of options. It is a richer version of the <select> element and supports data binding, filtering, templates, and the entering of custom values.
+DropdownGrid is a form component that lets you choose from a table-structured list of options. It is a richer version of the `<select>` element and supports data binding, filtering, templates, and the entering of custom values.
 
 
 ## Rendering
