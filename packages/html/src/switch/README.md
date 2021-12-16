@@ -1,12 +1,12 @@
 ```html
 <!-- default rendering -->
-<span class="k-switch k-switch-on k-switch-md k-rounded-pill">
-    <span class="k-switch-track k-rounded-pill">
+<span class="k-switch k-switch-on k-switch-md k-rounded-full">
+    <span class="k-switch-track k-rounded-full">
         <span class="k-switch-label-on">On</span>
         <span class="k-switch-label-off">Off</span>
     </span>
     <span class="k-switch-thumb-wrap">
-        <span class="k-switch-thumb k-rounded-pill"></span>
+        <span class="k-switch-thumb k-rounded-full"></span>
     </span>
 </span>
 
