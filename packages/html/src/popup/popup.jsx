@@ -69,7 +69,7 @@ PopupStatic.propTypes = {
     className: typeof '',
 
     size: typeof [ null, 'small', 'medium', 'large' ],
-    rounded: typeof [ null, 'small', 'medium', 'large', 'pill' ],
+    rounded: typeof [ null, 'small', 'medium', 'large' ],
 
     aria: typeof false,
     legacy: typeof false,

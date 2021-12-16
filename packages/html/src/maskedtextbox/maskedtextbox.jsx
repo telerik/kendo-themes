@@ -133,7 +133,7 @@ MaskedTextboxStatic.propTypes = {
     showClearButton: typeof true,
 
     size: typeof [ null, 'small', 'medium', 'large' ],
-    rounded: typeof [ null, 'small', 'medium', 'large', 'pill' ],
+    rounded: typeof [ null, 'small', 'medium', 'large', 'full' ],
 
     fillMode: typeof [ null, 'solid', 'flat', 'outline' ],
 

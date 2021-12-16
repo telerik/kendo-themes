@@ -16,7 +16,6 @@ function AvatarStatic(props) {
         type,
 
         size,
-        shape,
         rounded,
         bordered,
 
@@ -35,21 +34,7 @@ function AvatarStatic(props) {
         styles.sizeClass( size, 'k-avatar' ),
         styles.roundedClass( rounded ),
         styles.fillModeClass( fillMode, 'k-avatar' ),
-        styles.shapeClass( shape, 'k-avatar' ),
         styles.themeColorClass( fillMode, themeColor, 'k-avatar' ),
-        styles.borderedClass( bordered, 'k-avatar' ),
-    ];
-
-    let legacyClasses = [
-        ownClassName,
-        'k-avatar',
-        `k-avatar-${themeColor}`,
-        {
-            'k-avatar-circle': rounded === 'circle',
-            'k-avatar-rounded': rounded !== 'circle' && rounded !== null
-        },
-        styles.sizeClass( size, 'k-avatar' ),
-        styles.fillModeClass( fillMode, 'k-avatar' ),
         styles.borderedClass( bordered, 'k-avatar' ),
     ];
 
@@ -58,6 +43,20 @@ function AvatarStatic(props) {
         : {};
 
     if (legacy) {
+
+        let legacyClasses = [
+            ownClassName,
+            'k-avatar',
+            `k-avatar-${themeColor}`,
+            {
+                'k-avatar-circle': rounded === 'full',
+                'k-avatar-rounded': rounded !== 'full' && rounded !== null
+            },
+            styles.sizeClass( size, 'k-avatar' ),
+            styles.fillModeClass( fillMode, 'k-avatar' ),
+            styles.borderedClass( bordered, 'k-avatar' ),
+        ];
+
         return (
             <span className={legacyClasses} {...ariaAttr} {...htmlAttributes}>
                 <span className={`k-avatar-${type}`}>
@@ -85,8 +84,7 @@ AvatarStatic.defaultProps = {
     type: '',
 
     size: 'medium',
-    shape: 'square',
-    rounded: 'circle',
+    rounded: 'full',
     bordered: false,
 
     fillMode: 'solid',
@@ -99,9 +97,8 @@ AvatarStatic.propTypes = {
 
     type: typeof '',
 
-    size: typeof [ null, 'small', 'medium', 'large', 'circle' ],
-    shape: typeof [ null, 'square', 'circle', 'rounded' ],
-    rounded: typeof [ null, '0', 'small', 'medium', 'large' ],
+    size: typeof [ null, 'small', 'medium', 'large' ],
+    rounded: typeof [ null, 'small', 'medium', 'large', 'full' ],
     bordered: typeof false,
 
     fillMode: typeof [ null, 'solid', 'outline' ],
