@@ -46,8 +46,7 @@
         sm: ( map-get( $spacing, 1 ) / 4 ),
         md: ( map-get( $spacing, 1 ) / 2 ),
         lg: map-get( $spacing, 1 ),
-        circle: 50%,
-        pill: 9999px
+        full: 9999px
     ) !default;
 
 

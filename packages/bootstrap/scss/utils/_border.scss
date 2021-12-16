@@ -4,8 +4,7 @@ $utils-border-radius: (
     sm: .2rem,
     md: .25rem,
     lg: .3rem,
-    circle: 50%,
-    pill: 9999px
+    full: 9999px
 ) !default;
 
 @import "~@progress/kendo-theme-default/scss/utils/_border.scss";
