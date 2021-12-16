@@ -12,6 +12,15 @@
         > .k-item,
         > .k-panelbar-header {
 
+            &.k-state-expanded.k-level-0 > .k-link {
+                @include fill(
+                    $panelbar-header-expanded-text,
+                    $panelbar-header-expanded-bg,
+                    $panelbar-header-expanded-border,
+                    $panelbar-header-expanded-gradient
+                );
+            }
+
             // Normal
             > .k-link {
                 @include fill(
@@ -48,7 +57,6 @@
                     $panelbar-header-focused-border,
                     $panelbar-header-focused-gradient
                 );
-
                 box-shadow: $panelbar-header-focused-shadow;
             }
 
@@ -145,7 +153,6 @@
                     $panelbar-item-focused-border,
                     $panelbar-item-focused-gradient
                 );
-
                 box-shadow: $panelbar-item-focused-shadow;
             }
 
