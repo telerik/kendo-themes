@@ -1,171 +1,151 @@
 @include exports("chip/layout") {
 
-    .k-chip-list {
-        display: inline-flex;
-
-        > * {
-            margin-right: $chips-margin;
-
-            &:last-child {
-                margin-right: 0;
-            }
-        }
-    }
-
-    .k-selection-single {
-        .k-selected-icon-wrapper {
-            display: none;
-        }
-    }
-
-    .k-selection-multiple {
-        .k-selected-icon-wrapper {
-            width: 0;
-            height: $chip-selected-icon-size;
-            position: relative;
-            left: $chip-selected-icon-offset;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            visibility: hidden;
-            z-index: 1;
-        }
-
-        .k-selected-icon {
-            font-size: $chip-selected-icon-font-size;
-        }
-
-        .k-chip.k-state-selected .k-selected-icon-wrapper,
-        .k-chip.k-selected .k-selected-icon-wrapper {
-            width: $chip-selected-icon-size;
-            visibility: visible;
-        }
-
-        > .k-chip-has-icon {
-            .k-selected-icon-wrapper {
-                border-radius: 50%;
-                position: absolute;
-            }
-        }
-
-        :not(.k-chip-has-icon) {
-            .k-selected-icon-wrapper {
-                left: $chip-selected-icon-no-icon-offset;
-                opacity: 0;
-                transition: width .2s, opacity .2s;
-            }
-
-            &.k-state-selected .k-selected-icon-wrapper,
-            &.k-selected .k-selected-icon-wrapper {
-                opacity: 1;
-            }
-        }
-    }
-
     .k-chip {
-        overflow: hidden;
-        padding: $chip-padding-y $chip-padding-x;
         height: $chip-height;
+        padding: $chip-padding-y $chip-padding-x;
         border-radius: $chip-border-radius;
-        position: relative;
         box-sizing: border-box;
         border-width: 1px;
         border-style: solid;
+        outline: 0;
+        font-size: $chip-font-size;
         display: inline-flex;
+        flex-flow: row nowrap;
         align-items: center;
         justify-content: center;
-        font-size: $chip-font-size;
+        gap: $chip-gap;
+        position: relative;
+        overflow: hidden;
         cursor: pointer;
         user-select: none;
 
-        &:focus,
-        &.k-chip-focus {
-            outline: 0;
+        .k-selected-icon-wrapper {
+            display: none !important; // sass-lint:disable-line no-important
         }
     }
 
+
+    // Chip content
     .k-chip-content {
         min-width: 0;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
         overflow: hidden;
-        text-overflow: ellipsis;
+        flex: 1 1 auto;
+    }
+    .k-chip-content:first-child {
+        margin-inline-start: $chip-gap;
+    }
+    .k-chip-content:last-child {
+        margin-inline-end: $chip-gap;
+    }
+
+
+    // Chip text
+    .k-chip-text,
+    .k-chip-label {
         white-space: nowrap;
-        padding: 0 $chip-content-padding-x;
+        text-overflow: ellipsis;
+        overflow: hidden;
         flex: 1 1 auto;
     }
 
-    .k-chip-icon,
-    .k-remove-icon {
-        width: $chip-icons-size;
-        height: $chip-icons-size;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex: 1 0 auto;
-    }
 
-    .k-chip-icon {
-        margin-left: $chip-icon-margin;
-    }
-
-    .k-remove-icon {
-        margin-right: $chip-remove-icon-margin;
-        font-size: $chip-remove-icon-font-size;
-    }
-
+    // Chip avatar
     .k-chip-avatar {
         width: $chip-avatar-size;
         height: $chip-avatar-size;
         border-radius: 50%;
         background-size: cover;
         background-position: center;
+        flex: none;
     }
 
-}
+
+    // Chip icon
+    .k-chip-icon {
+        width: $chip-icons-size;
+        height: $chip-icons-size;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: none;
+    }
+    .k-ie .k-chip-icon {
+        margin-right: $chip-gap;
+    }
 
 
-@include exports("chip/layout/rtl") {
+    // Actions
+    .k-chip-actions {
+        flex: none;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        align-self: center;
+    }
+    .k-chip-action {
+        flex: none;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        align-self: center;
+    }
 
+
+    // Legacy chip icons
+    .k-remove-icon {
+        width: $chip-icons-size;
+        height: $chip-icons-size;
+        font-size: $chip-remove-icon-font-size;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: none;
+    }
+    .k-ie .k-remove-icon {
+        margin-right: 0;
+        margin-left: $chip-gap;
+    }
+
+
+    // Chip list
     .k-chip-list {
-        &[dir="rtl"],
-        .k-rtl &,
-        &.k-rtl {
-            > * {
-                margin-right: 0;
-                margin-left: $chips-margin;
+        display: inline-flex;
+        gap: $chip-list-gap;
+    }
+    .k-ie .k-chip-list > * {
+        margin-right: $chip-list-gap;
+    }
+    .k-ie .k-chip-list > :last-child {
+        margin-right: 0;
+    }
 
-                &:last-child {
-                    margin-left: 0;
-                }
-            }
+
+    // RTL
+    .k-ie .k-chip.k-rtl,
+    .k-ie .k-rtl .k-chip,
+    .k-ie .k-chip[dir="rtl"] {
+        .k-chip-icon {
+            margin-right: 0;
+            margin-left: $chip-gap;
+        }
+
+        .k-remove-icon {
+            margin-left: 0;
+            margin-right: $chip-gap;
         }
     }
+    .k-ie .k-chip-list.k-rtl,
+    .k-ie .k-rtl .k-chip-list,
+    .k-ie .k-chip-list[dir="rtl"] {
+        > * {
+            margin-right: 0;
+            margin-left: $chip-list-gap;
 
-    .k-chip {
-        &[dir="rtl"],
-        .k-rtl &,
-        &.k-rtl {
-            .k-chip-icon {
+            &:last-child {
                 margin-left: 0;
-                margin-right: $chip-icon-margin;
-            }
-
-            .k-remove-icon {
-                margin-right: 0;
-                margin-left: $chip-remove-icon-margin;
-            }
-
-            .k-selection-multiple & {
-                .k-selected-icon-wrapper {
-                    left: 0;
-                    right: $chip-selected-icon-offset;
-                }
-
-                &:not(.k-chip-has-icon) {
-                    .k-selected-icon-wrapper {
-                        left: 0;
-                        right: $chip-selected-icon-no-icon-offset;
-                    }
-                }
             }
         }
     }

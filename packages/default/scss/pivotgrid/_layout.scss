@@ -261,14 +261,6 @@
         .k-filter-fields {
             margin-top: $pivotgrid-configurator-fields-margin-y;
             flex-wrap: wrap;
-
-            > * {
-                margin-bottom: $pivotgrid-configurator-fields-margin-y;
-            }
-
-            > *:last-child {
-                margin-bottom: 0;
-            }
         }
 
         // Values
@@ -295,10 +287,6 @@
         .k-settings-description {
             margin-top: map-get( $spacing, 4 );
             text-align: center;
-        }
-
-        .k-chip-content {
-            padding-inline-end: map-get($spacing, 1);
         }
 
         .k-treeview {

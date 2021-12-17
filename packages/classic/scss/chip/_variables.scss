@@ -1,9 +1,10 @@
 // Chip
-$chips-margin: 8px !default;
+$chip-list-gap: 8px !default;
 
-$chip-padding-x: 0px !default;
+$chip-padding-x: 4px !default;
 $chip-padding-y: 4px !default;
 $chip-height: 24px !default;
+$chip-gap: $icon-spacing !default;
 $chip-border-radius: $chip-height / 2 !default;
 $chip-font-size: 14px !default;
 
@@ -12,10 +13,7 @@ $chip-selected-icon-offset: 4px !default;
 $chip-selected-icon-no-icon-offset: $chip-selected-icon-offset !default;
 $chip-selected-icon-font-size: $chip-font-size !default;
 
-$chip-content-padding-x: 8px !default;
-
 $chip-icons-size: 16px !default;
-$chip-icon-margin: 4px !default;
 $chip-remove-icon-margin: 8px !default;
 $chip-remove-icon-font-size: 14px !default;
 
@@ -31,10 +29,13 @@ $chip-solid-hover-bg: rgba( $chip-base-bg, .16 ) !default;
 $chip-solid-hover-text: null !default;
 $chip-solid-hover-border: null !default;
 
-$chip-solid-focus-bg: $chip-solid-bg !default;
+$chip-solid-focus-bg: null !default;
+$chip-solid-focus-text: null !default;
+$chip-solid-focus-border: null !default;
 $chip-solid-focus-shadow: 0 0 0 2px rgba( $chip-solid-bg, .08 ) !default;
 
 $chip-solid-selected-bg: rgba( $chip-base-bg, .24 ) !default;
+$chip-solid-selected-text: null !default;
 $chip-solid-selected-border: null !default;
 
 $chip-solid-success-bg: rgba($success, .08) !default;
@@ -116,6 +117,7 @@ $chip-outline-focus-shadow: 0 0 0 2px rgba(0, 0, 0, .08) !default;
 
 $chip-outline-selected-bg: $chip-outline-hover-bg !default;
 $chip-outline-selected-text: $chip-outline-hover-text !default;
+$chip-outline-selected-border: null !default;
 
 $chip-outline-success-bg: null !default;
 $chip-outline-success-text: $success !default;
@@ -180,9 +182,6 @@ $chip-outline-info-focus-border: null !default;
 $chip-outline-info-selected-bg: $chip-outline-info-hover-bg !default;
 $chip-outline-info-selected-text: $chip-outline-info-hover-text !default;
 $chip-outline-info-selected-border: null !default;
-
-$chip-multiple-selected-icon-bg: rgba(0, 0, 0, .36) !default;
-$chip-multiple-selected-icon-text: #ffffff !default;
 
 
 $chip-primary-focus-shadow: 0 0 0 2px rgba( $primary, .16 ) !default;
