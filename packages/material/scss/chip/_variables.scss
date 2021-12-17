@@ -1,9 +1,10 @@
 // Chip
-$chips-margin: 8px !default;
+$chip-list-gap: 8px !default;
 
 $chip-padding-x: 4px !default;
 $chip-padding-y: 4px !default;
 $chip-height: 32px !default;
+$chip-gap: $icon-spacing !default;
 $chip-border-radius: $chip-height / 2 !default;
 $chip-font-size: 14px !default;
 
@@ -12,10 +13,7 @@ $chip-selected-icon-offset: 4px !default;
 $chip-selected-icon-no-icon-offset: 0px !default;
 $chip-selected-icon-font-size: $chip-font-size !default;
 
-$chip-content-padding-x: 8px !default;
-
 $chip-icons-size: 24px !default;
-$chip-icon-margin: 0px !default;
 $chip-remove-icon-margin: 0px !default;
 $chip-remove-icon-font-size: 14px !default;
 
@@ -32,9 +30,12 @@ $chip-solid-hover-text: null !default;
 $chip-solid-hover-border: null !default;
 
 $chip-solid-focus-bg: rgba( $chip-base-bg, .24 ) !default;
-$chip-solid-focus-shadow: none !default;
+$chip-solid-focus-text: null !default;
+$chip-solid-focus-border: null !default;
+$chip-solid-focus-shadow: null !default;
 
 $chip-solid-selected-bg: $chip-solid-focus-bg !default;
+$chip-solid-selected-text: null !default;
 $chip-solid-selected-border: null !default;
 
 $chip-solid-success-bg: rgba( $success, .08 ) !default;
@@ -112,10 +113,11 @@ $chip-outline-hover-border: null !default;
 $chip-outline-focus-bg: rgba( $chip-base-bg, .24 ) !default;
 $chip-outline-focus-text: null !default;
 $chip-outline-focus-border: null !default;
-$chip-outline-focus-shadow: none !default;
+$chip-outline-focus-shadow: null !default;
 
 $chip-outline-selected-bg: $chip-outline-focus-bg !default;
 $chip-outline-selected-text: $chip-outline-focus-text !default;
+$chip-outline-selected-border: null !default;
 
 $chip-outline-success-bg: null !default;
 $chip-outline-success-text: $success !default;
@@ -125,11 +127,11 @@ $chip-outline-success-hover-bg: rgba( $success, .08 ) !default;
 $chip-outline-success-hover-text: null !default;
 $chip-outline-success-hover-border: null !default;
 
-$chip-outline-success-focus-bg: rgba( $success, .16 ) !default;
+$chip-outline-success-focus-bg: rgba( $success, .24 ) !default;
 $chip-outline-success-focus-text: null !default;
 $chip-outline-success-focus-border: null !default;
 
-$chip-outline-success-selected-bg: rgba( $success, .24 ) !default;
+$chip-outline-success-selected-bg: $chip-outline-success-focus-bg !default;
 $chip-outline-success-selected-text: null !default;
 $chip-outline-success-selected-border: null !default;
 
@@ -141,11 +143,11 @@ $chip-outline-warning-hover-bg: rgba( $warning, .08 ) !default;
 $chip-outline-warning-hover-text: null;
 $chip-outline-warning-hover-border: null !default;
 
-$chip-outline-warning-focus-bg: rgba( $warning, .16 ) !default;
+$chip-outline-warning-focus-bg: rgba( $warning, .24 ) !default;
 $chip-outline-warning-focus-text: null !default;
 $chip-outline-warning-focus-border: null !default;
 
-$chip-outline-warning-selected-bg: rgba( $warning, .24 ) !default;
+$chip-outline-warning-selected-bg: $chip-outline-warning-focus-bg !default;
 $chip-outline-warning-selected-text: null !default;
 $chip-outline-warning-selected-border: null !default;
 
@@ -157,11 +159,11 @@ $chip-outline-error-hover-bg: rgba( $error, .08 ) !default;
 $chip-outline-error-hover-text: null !default;
 $chip-outline-error-hover-border: null !default;
 
-$chip-outline-error-focus-bg: rgba( $error, .16 ) !default;
+$chip-outline-error-focus-bg: rgba( $error, .24 ) !default;
 $chip-outline-error-focus-text: null !default;
 $chip-outline-error-focus-border: null !default;
 
-$chip-outline-error-selected-bg: rgba( $error, .24 ) !default;
+$chip-outline-error-selected-bg: $chip-outline-error-focus-bg !default;
 $chip-outline-error-selected-text: null !default;
 $chip-outline-error-selected-border: null !default;
 
@@ -173,16 +175,13 @@ $chip-outline-info-hover-bg: rgba( $info, .08 ) !default;
 $chip-outline-info-hover-text: null !default;
 $chip-outline-info-hover-border: null !default;
 
-$chip-outline-info-focus-bg: rgba( $info, .16 ) !default;
+$chip-outline-info-focus-bg: rgba( $info, .24 ) !default;
 $chip-outline-info-focus-text: null !default;
 $chip-outline-info-focus-border: null !default;
 
-$chip-outline-info-selected-bg: rgba( $info, .24 ) !default;
+$chip-outline-info-selected-bg: $chip-outline-info-focus-bg !default;
 $chip-outline-info-selected-text: null !default;
 $chip-outline-info-selected-border: null !default;
-
-$chip-multiple-selected-icon-bg: rgba(0, 0, 0, .36) !default;
-$chip-multiple-selected-icon-text: #ffffff !default;
 
 $chip-primary-focus-shadow: null !default;
 $chip-secondary-focus-shadow: null !default;

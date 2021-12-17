@@ -1,21 +1,19 @@
 // Chip
-$chips-margin: 8px !default;
+$chip-list-gap: map-get( $spacing, 1 ) !default;
 
-$chip-padding-x: 6px !default;
-$chip-padding-y: 4px !default;
+$chip-padding-x: map-get( $spacing, 1 ) !default;
+$chip-padding-y: map-get( $spacing, 1 ) !default;
 $chip-height: 32px !default;
+$chip-gap: $icon-spacing !default;
 $chip-border-radius: $chip-height / 2 !default;
-$chip-font-size: 16px !default;
+$chip-font-size: $font-size !default;
 
 $chip-selected-icon-size: 24px !default;
 $chip-selected-icon-offset: 6px !default;
 $chip-selected-icon-no-icon-offset: 0px !default;
 $chip-selected-icon-font-size: $chip-font-size !default;
 
-$chip-content-padding-x: 6px !default;
-
 $chip-icons-size: 24px !default;
-$chip-icon-margin: 0px !default;
 $chip-remove-icon-margin: 0px !default;
 $chip-remove-icon-font-size: 14px !default;
 
@@ -31,10 +29,13 @@ $chip-solid-hover-bg: rgba( $chip-base-bg, .16 ) !default;
 $chip-solid-hover-text: null !default;
 $chip-solid-hover-border: null !default;
 
-$chip-solid-focus-bg: $chip-solid-bg !default;
+$chip-solid-focus-bg: null !default;
+$chip-solid-focus-text: null !default;
+$chip-solid-focus-border: null !default;
 $chip-solid-focus-shadow: 0 0 0 3px rgba( $chip-base-bg, .16 ) !default;
 
 $chip-solid-selected-bg: rgba( $chip-base-bg, .24 ) !default;
+$chip-solid-selected-text: null !default;
 $chip-solid-selected-border: null !default;
 
 $chip-solid-success-bg: rgba( $success, .08 ) !default;
@@ -116,6 +117,7 @@ $chip-outline-focus-shadow: $chip-solid-focus-shadow !default;
 
 $chip-outline-selected-bg: $chip-outline-hover-bg !default;
 $chip-outline-selected-text: $chip-outline-hover-text !default;
+$chip-outline-selected-border: null !default;
 
 $chip-outline-success-bg: null !default;
 $chip-outline-success-text: $success !default;
@@ -181,12 +183,8 @@ $chip-outline-info-selected-bg: $chip-outline-info-hover-bg !default;
 $chip-outline-info-selected-text: $chip-outline-info-hover-text !default;
 $chip-outline-info-selected-border: null !default;
 
-$chip-multiple-selected-icon-bg: rgba(0, 0, 0, .36) !default;
-$chip-multiple-selected-icon-text: #ffffff !default;
-
-
-$chip-primary-focus-shadow: null !default;
-$chip-secondary-focus-shadow: null !default;
+$chip-primary-focus-shadow: 0 0 0 3px rgba( $primary, .16 ) !default;
+$chip-secondary-focus-shadow: 0 0 0 3px rgba( $secondary, .16 ) !default;
 $chip-info-focus-shadow: 0 0 0 3px rgba( $info, .16 ) !default;
 $chip-success-focus-shadow: 0 0 0 3px rgba( $success, .16 ) !default;
 $chip-warning-focus-shadow: 0 0 0 3px rgba( $warning, .16 ) !default;
