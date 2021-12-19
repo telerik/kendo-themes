@@ -14,7 +14,10 @@ The Chip allows users to enter information, make selections, filter content, or 
 ```html
 <div class="k-chip k-chip-md k-rounded-full k-chip-solid k-chip-solid-base">
     <span class="k-chip-content">
-        <span class="k-chip-label">Chip Text</span>
+        <span class="k-chip-text">Chip Text</span>
+    </span>
+    <span class="k-chip-actions">
+        <span class="k-chip-action k-chip-remove-action"><span class="k-icon k-i-x-circle"></span></span>
     </span>
 </div>
 ```
@@ -26,17 +29,17 @@ The Chip has predefined sizes - small, medium or large.
 <div class="k-d-flex k-gap-2">
     <div class="k-chip k-chip-sm k-rounded-full k-chip-solid k-chip-solid-base">
         <span class="k-chip-content">
-            <span class="k-chip-label">Chip Text</span>
+            <span class="k-chip-text">Chip Text</span>
         </span>
     </div>
     <div class="k-chip k-chip-md k-rounded-full k-chip-solid k-chip-solid-base">
         <span class="k-chip-content">
-            <span class="k-chip-label">Chip Text</span>
+            <span class="k-chip-text">Chip Text</span>
         </span>
     </div>
     <div class="k-chip k-chip-lg k-rounded-full k-chip-solid k-chip-solid-base">
         <span class="k-chip-content">
-            <span class="k-chip-label">Chip Text</span>
+            <span class="k-chip-text">Chip Text</span>
         </span>
     </div>
 </div>
@@ -51,9 +54,9 @@ The Chip supports two appearance fill styles - `solid` and `outline`.
 <div class="k-chip k-chip-md k-rounded-full k-chip-solid k-chip-solid-base">
     <span class="k-chip-icon k-icon k-i-map-marker-target"></span>
     <span class="k-chip-content">
-        <span class="k-chip-label">Chip Icon Text</span>
+        <span class="k-chip-text">Chip Icon Text</span>
     </span>
-    <span class="k-chip-remove-icon k-chip-icon k-icon k-i-x-circle"></span>
+
 </div>
 ```
 
@@ -63,9 +66,8 @@ The Chip supports two appearance fill styles - `solid` and `outline`.
 <div class="k-chip k-chip-md k-rounded-full k-chip-outline k-chip-outline-base">
     <span class="k-chip-icon k-icon k-i-map-marker-target"></span>
     <span class="k-chip-content">
-        <span class="k-chip-label">Chip Icon Text</span>
+        <span class="k-chip-text">Chip Icon Text</span>
     </span>
-    <span class="k-chip-remove-icon k-chip-icon k-icon k-i-x-circle"></span>
 </div>
 ```
 
@@ -76,33 +78,29 @@ The Chip includes several predefined theme colors, each serving its own semantic
 <div class="k-d-flex k-gap-2">
     <div class="k-chip k-chip-md k-rounded-full k-chip-solid k-chip-solid-base">
         <span class="k-chip-content">
-            <span class="k-chip-label">None</span>
+            <span class="k-chip-text">None</span>
         </span>
         <span class="k-chip-remove-icon k-chip-icon k-icon k-i-x-circle"></span>
     </div>
     <div class="k-chip k-chip-md k-rounded-full k-chip-solid k-chip-solid-error">
         <span class="k-chip-content">
-            <span class="k-chip-label">None</span>
+            <span class="k-chip-text">None</span>
         </span>
-        <span class="k-chip-remove-icon k-chip-icon k-icon k-i-x-circle"></span>
     </div>
     <div class="k-chip k-chip-md k-rounded-full k-chip-solid k-chip-solid-warning">
         <span class="k-chip-content">
-            <span class="k-chip-label">None</span>
+            <span class="k-chip-text">None</span>
         </span>
-        <span class="k-chip-remove-icon k-chip-icon k-icon k-i-x-circle"></span>
     </div>
     <div class="k-chip k-chip-md k-rounded-full k-chip-solid k-chip-solid-info">
         <span class="k-chip-content">
-            <span class="k-chip-label">None</span>
+            <span class="k-chip-text">None</span>
         </span>
-        <span class="k-chip-remove-icon k-chip-icon k-icon k-i-x-circle"></span>
     </div>
     <div class="k-chip k-chip-md k-rounded-full k-chip-solid k-chip-solid-success">
         <span class="k-chip-content">
-            <span class="k-chip-label">None</span>
+            <span class="k-chip-text">None</span>
         </span>
-        <span class="k-chip-remove-icon k-chip-icon k-icon k-i-x-circle"></span>
     </div>
 </div>
 ```
@@ -115,27 +113,23 @@ The Chip can have various rounded states depending on the border radius customiz
 <div class="k-d-flex k-gap-2">
     <div class="k-chip k-chip-md k-rounded-full k-chip-solid k-chip-solid-base">
         <span class="k-chip-content">
-            <span class="k-chip-label">None</span>
+            <span class="k-chip-text">None</span>
         </span>
-        <span class="k-chip-remove-icon k-chip-icon k-icon k-i-x-circle"></span>
     </div>
     <div class="k-chip k-chip-md k-rounded-lg k-chip-solid k-chip-solid-base">
         <span class="k-chip-content">
-            <span class="k-chip-label">None</span>
+            <span class="k-chip-text">None</span>
         </span>
-        <span class="k-chip-remove-icon k-chip-icon k-icon k-i-x-circle"></span>
     </div>
     <div class="k-chip k-chip-md k-rounded-md k-chip-solid k-chip-solid-base">
         <span class="k-chip-content">
-            <span class="k-chip-label">None</span>
+            <span class="k-chip-text">None</span>
         </span>
-        <span class="k-chip-remove-icon k-chip-icon k-icon k-i-x-circle"></span>
     </div>
     <div class="k-chip k-chip-md k-rounded-sm k-chip-solid k-chip-solid-base">
         <span class="k-chip-content">
-            <span class="k-chip-label">None</span>
+            <span class="k-chip-text">None</span>
         </span>
-        <span class="k-chip-remove-icon k-chip-icon k-icon k-i-x-circle"></span>
     </div>
 </div>
 ```

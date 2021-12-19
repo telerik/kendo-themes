@@ -15,17 +15,17 @@ The ChipList is a container of two or more individual Chip components and allows
 <div class="k-chip-list k-chip-list-md">
     <div class="k-chip k-chip-md k-rounded-full k-chip-solid k-chip-solid-base">
         <span class="k-chip-content">
-            <span class="k-chip-label">Chip Text</span>
+            <span class="k-chip-text">Chip Text</span>
         </span>
     </div>
     <div class="k-chip k-chip-md k-rounded-full k-chip-solid k-chip-solid-base">
         <span class="k-chip-content">
-            <span class="k-chip-label">Chip Text</span>
+            <span class="k-chip-text">Chip Text</span>
         </span>
     </div>
     <div class="k-chip k-chip-md k-rounded-full k-chip-solid k-chip-solid-base">
         <span class="k-chip-content">
-            <span class="k-chip-label">Chip Text</span>
+            <span class="k-chip-text">Chip Text</span>
         </span>
     </div>
 </div>
@@ -44,17 +44,17 @@ The ChipList provides options for setting its selection mode
 <div class="k-chip-list k-chip-list-md">
     <div class="k-chip k-chip-md k-rounded-full k-chip-solid k-chip-solid-base">
         <span class="k-chip-content">
-            <span class="k-chip-label">Chip Text</span>
+            <span class="k-chip-text">Chip Text</span>
         </span>
     </div>
     <div class="k-chip k-chip-md k-rounded-full k-chip-solid k-chip-solid-base">
         <span class="k-chip-content">
-            <span class="k-chip-label">Chip Text</span>
+            <span class="k-chip-text">Chip Text</span>
         </span>
     </div>
     <div class="k-chip k-chip-md k-rounded-full k-chip-solid k-chip-solid-base">
         <span class="k-chip-content">
-            <span class="k-chip-label">Chip Text</span>
+            <span class="k-chip-text">Chip Text</span>
         </span>
     </div>
 </div>
@@ -66,17 +66,17 @@ The ChipList provides options for setting its selection mode
 <div class="k-chip-list k-chip-list-md k-selection-single">
     <div class="k-chip k-chip-md k-rounded-full k-chip-solid k-chip-solid-base k-selected">
         <span class="k-chip-content">
-            <span class="k-chip-label">Chip Text</span>
+            <span class="k-chip-text">Chip Text</span>
         </span>
     </div>
     <div class="k-chip k-chip-md k-rounded-full k-chip-solid k-chip-solid-base">
         <span class="k-chip-content">
-            <span class="k-chip-label">Chip Text</span>
+            <span class="k-chip-text">Chip Text</span>
         </span>
     </div>
     <div class="k-chip k-chip-md k-rounded-full k-chip-solid k-chip-solid-base">
         <span class="k-chip-content">
-            <span class="k-chip-label">Chip Text</span>
+            <span class="k-chip-text">Chip Text</span>
         </span>
     </div>
 </div>
@@ -89,18 +89,18 @@ The ChipList provides options for setting its selection mode
     <div class="k-chip k-chip-md k-rounded-full k-chip-solid k-chip-solid-base k-selected">
         <span class="k-selected-icon k-icon k-i-check"></span>
         <span class="k-chip-content">
-            <span class="k-chip-label">Chip Text</span>
+            <span class="k-chip-text">Chip Text</span>
         </span>
     </div>
     <div class="k-chip k-chip-md k-rounded-full k-chip-solid k-chip-solid-base k-selected">
         <span class="k-selected-icon k-icon k-i-check"></span>
         <span class="k-chip-content">
-            <span class="k-chip-label">Chip Text</span>
+            <span class="k-chip-text">Chip Text</span>
         </span>
     </div>
     <div class="k-chip k-chip-md k-rounded-full k-chip-solid k-chip-solid-base">
         <span class="k-chip-content">
-            <span class="k-chip-label">Chip Text</span>
+            <span class="k-chip-text">Chip Text</span>
         </span>
     </div>
 </div>
@@ -115,17 +115,17 @@ The ChipList has predefined sizes - small, medium or large. Those sizes control 
 <div class="k-chip-list k-chip-list-sm k-selection-single">
     <div class="k-chip k-chip-sm k-rounded-full k-chip-solid k-chip-solid-base k-selected">
         <span class="k-chip-content">
-            <span class="k-chip-label">Chip Text</span>
+            <span class="k-chip-text">Chip Text</span>
         </span>
     </div>
     <div class="k-chip k-chip-sm k-rounded-full k-chip-solid k-chip-solid-base">
         <span class="k-chip-content">
-            <span class="k-chip-label">Chip Text</span>
+            <span class="k-chip-text">Chip Text</span>
         </span>
     </div>
     <div class="k-chip k-chip-sm k-rounded-full k-chip-solid k-chip-solid-base">
         <span class="k-chip-content">
-            <span class="k-chip-label">Chip Text</span>
+            <span class="k-chip-text">Chip Text</span>
         </span>
     </div>
 </div>
