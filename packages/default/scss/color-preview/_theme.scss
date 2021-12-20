@@ -9,7 +9,7 @@
         );
 
         &::before {
-            background: url(map-get($data-uris, "alpha-slider-bgr.png"));
+            background: $color-preview-transparent-color-image;
             background-size: contain;
             background-position: 0;
         }
@@ -22,10 +22,10 @@
     }
 
     // No Color
-    .k-no-color::after {
+    .k-no-color::before {
         background-color: $color-preview-no-color-bg;
         background-image: $color-preview-no-color-image;
-        background-size: contain;
+        background-size: 100% 100%;
         background-position: 0 0;
     }
 
