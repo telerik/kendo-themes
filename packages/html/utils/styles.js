@@ -72,6 +72,14 @@ function borderedClass( bordered, prefix ) {
     return `${prefix}-bordered`;
 }
 
+function positionClass( position, prefix ) {
+    if ( position === null ) {
+        return '';
+    }
+
+    return `k-pos-absolute ${prefix}-${position}`;
+}
+
 function classNames( ...args ) {
 
     /* eslint-disable arrow-body-style, no-nested-ternary */
@@ -131,6 +139,7 @@ export {
     fillModeClass,
     themeColorClass,
     borderedClass,
+    positionClass,
 
     classNames,
     cssStyle,
