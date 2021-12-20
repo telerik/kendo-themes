@@ -69,7 +69,7 @@ export * from './switch/index';
 
 // Command interfaces
 // export * from './action-buttons/index';
-// export * from './fab/index';
+export * from './fab/index';
 // export * from './menu/index';
 // export * from './toolbar/index';
 
