@@ -25,25 +25,8 @@ function ListContentStatic(props) {
         'k-list-content'
     ];
 
-    let legacyListContentClasses = [
-        ownClassName,
-        'k-list-content',
-        {
-            'k-list-scroller': virtualization === false,
-            'k-virtual-content': virtualization === true
-        }
-    ];
-
     let listULClasses = [
         'k-list-ul'
-    ];
-
-    let legacyListULClasses = [
-        'k-list',
-        'k-reset',
-        {
-            'k-virtual-list': virtualization === true
-        }
     ];
 
     let ariaAttr = aria
@@ -51,6 +34,24 @@ function ListContentStatic(props) {
         : {};
 
     if (legacy) {
+
+        let legacyListContentClasses = [
+            ownClassName,
+            'k-list-content',
+            {
+                'k-list-scroller': virtualization === false || virtualization === undefined,
+                'k-virtual-content': virtualization === true
+            }
+        ];
+
+        let legacyListULClasses = [
+            'k-list',
+            'k-reset',
+            {
+                'k-virtual-list': virtualization === true
+            }
+        ];
+
         return (
             <div className={legacyListContentClasses} {...ariaAttr} {...htmlAttributes}>
                 <ul className={legacyListULClasses}>
