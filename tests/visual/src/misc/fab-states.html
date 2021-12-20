@@ -1,298 +1,192 @@
 <!doctype html>
 <html lang="en" class="k-no-animations">
 <head>
-    <title>FAB States</title>
+    <title>FAB states</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
     <link rel="stylesheet" href="../../assets/styles.css" />
     <script src="../../assets/scripts.js"></script>
     <script src="../../../../packages/html/dist/index.js"></script>
-
-    <style>
-        #test-area {
-            grid-template-columns: 120px repeat(5, 1fr);
-        }
-    </style>
 </head>
 <body class="k-body">
 
-    <div id="test-area" class="k-d-grid">
+    <div id="test-area" class="k-d-grid k-grid-cols-6">
 
         <span></span>
         <span>Normal</span>
         <span>Hover</span>
         <span>Focus</span>
-        <span>Active/Pressed</span>
+        <span>Active</span>
         <span>Disabled</span>
 
         <span>primary</span>
         <span>
-            <button class="k-fab k-fab-md k-fab-primary k-fab-pill">
-                <i is="Icon" class="k-fab-icon" name="plus"></i>
-            </button>
+            <button is="Fab" icon="plus"></button>
         </span>
         <span>
-            <button class="k-fab k-fab-md k-fab-primary k-fab-pill k-state-hover">
-                <i is="Icon" class="k-fab-icon" name="plus"></i>
-            </button>
+            <button is="Fab" icon="plus" hover></button>
         </span>
         <span>
-            <button class="k-fab k-fab-md k-fab-primary k-fab-pill k-state-focus">
-                <i is="Icon" class="k-fab-icon" name="plus"></i>
-            </button>
+            <button is="Fab" icon="plus" focus></button>
         </span>
         <span>
-            <button class="k-fab k-fab-md k-fab-primary k-fab-pill k-state-active">
-                <i is="Icon" class="k-fab-icon" name="plus"></i>
-            </button>
+            <button is="Fab" icon="plus" active></button>
         </span>
         <span>
-            <button class="k-fab k-fab-md k-fab-primary k-fab-pill k-state-disabled">
-                <i is="Icon" class="k-fab-icon" name="plus"></i>
-            </button>
+            <button is="Fab" icon="plus" disabled></button>
         </span>
 
         <span>secondary</span>
         <span>
-            <button class="k-fab k-fab-md k-fab-secondary k-fab-pill">
-                <i is="Icon" class="k-fab-icon" name="plus"></i>
-            </button>
+            <button is="Fab" icon="plus" themeColor="secondary"></button>
         </span>
         <span>
-            <button class="k-fab k-fab-md k-fab-secondary k-fab-pill k-state-hover">
-                <i is="Icon" class="k-fab-icon" name="plus"></i>
-            </button>
+            <button is="Fab" icon="plus" themeColor="secondary" hover></button>
         </span>
         <span>
-            <button class="k-fab k-fab-md k-fab-secondary k-fab-pill k-state-focus">
-                <i is="Icon" class="k-fab-icon" name="plus"></i>
-            </button>
+            <button is="Fab" icon="plus" themeColor="secondary" focus></button>
         </span>
         <span>
-            <button class="k-fab k-fab-md k-fab-secondary k-fab-pill k-state-active">
-                <i is="Icon" class="k-fab-icon" name="plus"></i>
-            </button>
+            <button is="Fab" icon="plus" themeColor="secondary" active></button>
         </span>
         <span>
-            <button class="k-fab k-fab-md k-fab-secondary k-fab-pill k-state-disabled">
-                <i is="Icon" class="k-fab-icon" name="plus"></i>
-            </button>
+            <button is="Fab" icon="plus" themeColor="secondary" disabled></button>
         </span>
 
         <span>tertiary</span>
         <span>
-            <button class="k-fab k-fab-md k-fab-tertiary k-fab-pill">
-                <i is="Icon" class="k-fab-icon" name="plus"></i>
-            </button>
+            <button is="Fab" icon="plus" themeColor="tertiary"></button>
         </span>
         <span>
-            <button class="k-fab k-fab-md k-fab-tertiary k-fab-pill k-state-hover">
-                <i is="Icon" class="k-fab-icon" name="plus"></i>
-            </button>
+            <button is="Fab" icon="plus" themeColor="tertiary" hover></button>
         </span>
         <span>
-            <button class="k-fab k-fab-md k-fab-tertiary k-fab-pill k-state-focus">
-                <i is="Icon" class="k-fab-icon" name="plus"></i>
-            </button>
+            <button is="Fab" icon="plus" themeColor="tertiary" focus></button>
         </span>
         <span>
-            <button class="k-fab k-fab-md k-fab-tertiary k-fab-pill k-state-active">
-                <i is="Icon" class="k-fab-icon" name="plus"></i>
-            </button>
+            <button is="Fab" icon="plus" themeColor="tertiary" active></button>
         </span>
         <span>
-            <button class="k-fab k-fab-md k-fab-tertiary k-fab-pill k-state-disabled">
-                <i is="Icon" class="k-fab-icon" name="plus"></i>
-            </button>
+            <button is="Fab" icon="plus" themeColor="tertiary" disabled></button>
         </span>
 
         <span>info</span>
         <span>
-            <button class="k-fab k-fab-md k-fab-info k-fab-pill">
-                <i is="Icon" class="k-fab-icon" name="plus"></i>
-            </button>
+            <button is="Fab" icon="plus" themeColor="info"></button>
         </span>
         <span>
-            <button class="k-fab k-fab-md k-fab-info k-fab-pill k-state-hover">
-                <i is="Icon" class="k-fab-icon" name="plus"></i>
-            </button>
+            <button is="Fab" icon="plus" themeColor="info" hover></button>
         </span>
         <span>
-            <button class="k-fab k-fab-md k-fab-info k-fab-pill k-state-focus">
-                <i is="Icon" class="k-fab-icon" name="plus"></i>
-            </button>
+            <button is="Fab" icon="plus" themeColor="info" focus></button>
         </span>
         <span>
-            <button class="k-fab k-fab-md k-fab-info k-fab-pill k-state-active">
-                <i is="Icon" class="k-fab-icon" name="plus"></i>
-            </button>
+            <button is="Fab" icon="plus" themeColor="info" active></button>
         </span>
         <span>
-            <button class="k-fab k-fab-md k-fab-info k-fab-pill k-state-disabled">
-                <i is="Icon" class="k-fab-icon" name="plus"></i>
-            </button>
+            <button is="Fab" icon="plus" themeColor="info" disabled></button>
         </span>
 
         <span>success</span>
         <span>
-            <button class="k-fab k-fab-md k-fab-success k-fab-pill">
-                <i is="Icon" class="k-fab-icon" name="plus"></i>
-            </button>
+            <button is="Fab" icon="plus" themeColor="success"></button>
         </span>
         <span>
-            <button class="k-fab k-fab-md k-fab-success k-fab-pill k-state-hover">
-                <i is="Icon" class="k-fab-icon" name="plus"></i>
-            </button>
+            <button is="Fab" icon="plus" themeColor="success" hover></button>
         </span>
         <span>
-            <button class="k-fab k-fab-md k-fab-success k-fab-pill k-state-focus">
-                <i is="Icon" class="k-fab-icon" name="plus"></i>
-            </button>
+            <button is="Fab" icon="plus" themeColor="success" focus></button>
         </span>
         <span>
-            <button class="k-fab k-fab-md k-fab-success k-fab-pill k-state-active">
-                <i is="Icon" class="k-fab-icon" name="plus"></i>
-            </button>
+            <button is="Fab" icon="plus" themeColor="success" active></button>
         </span>
         <span>
-            <button class="k-fab k-fab-md k-fab-success k-fab-pill k-state-disabled">
-                <i is="Icon" class="k-fab-icon" name="plus"></i>
-            </button>
+            <button is="Fab" icon="plus" themeColor="success" disabled></button>
         </span>
 
         <span>warning</span>
         <span>
-            <button class="k-fab k-fab-md k-fab-warning k-fab-pill">
-                <i is="Icon" class="k-fab-icon" name="plus"></i>
-            </button>
+            <button is="Fab" icon="plus" themeColor="warning"></button>
         </span>
         <span>
-            <button class="k-fab k-fab-md k-fab-warning k-fab-pill k-state-hover">
-                <i is="Icon" class="k-fab-icon" name="plus"></i>
-            </button>
+            <button is="Fab" icon="plus" themeColor="warning" hover></button>
         </span>
         <span>
-            <button class="k-fab k-fab-md k-fab-warning k-fab-pill k-state-focus">
-                <i is="Icon" class="k-fab-icon" name="plus"></i>
-            </button>
+            <button is="Fab" icon="plus" themeColor="warning" focus></button>
         </span>
         <span>
-            <button class="k-fab k-fab-md k-fab-warning k-fab-pill k-state-active">
-                <i is="Icon" class="k-fab-icon" name="plus"></i>
-            </button>
+            <button is="Fab" icon="plus" themeColor="warning" active></button>
         </span>
         <span>
-            <button class="k-fab k-fab-md k-fab-warning k-fab-pill k-state-disabled">
-                <i is="Icon" class="k-fab-icon" name="plus"></i>
-            </button>
+            <button is="Fab" icon="plus" themeColor="warning" disabled></button>
         </span>
 
         <span>error</span>
         <span>
-            <button class="k-fab k-fab-md k-fab-error k-fab-pill">
-                <i is="Icon" class="k-fab-icon" name="plus"></i>
-            </button>
+            <button is="Fab" icon="plus" themeColor="error"></button>
         </span>
         <span>
-            <button class="k-fab k-fab-md k-fab-error k-fab-pill k-state-hover">
-                <i is="Icon" class="k-fab-icon" name="plus"></i>
-            </button>
+            <button is="Fab" icon="plus" themeColor="error" hover></button>
         </span>
         <span>
-            <button class="k-fab k-fab-md k-fab-error k-fab-pill k-state-focus">
-                <i is="Icon" class="k-fab-icon" name="plus"></i>
-            </button>
+            <button is="Fab" icon="plus" themeColor="error" focus></button>
         </span>
         <span>
-            <button class="k-fab k-fab-md k-fab-error k-fab-pill k-state-active">
-                <i is="Icon" class="k-fab-icon" name="plus"></i>
-            </button>
+            <button is="Fab" icon="plus" themeColor="error" active></button>
         </span>
         <span>
-            <button class="k-fab k-fab-md k-fab-error k-fab-pill k-state-disabled">
-                <i is="Icon" class="k-fab-icon" name="plus"></i>
-            </button>
+            <button is="Fab" icon="plus" themeColor="error" disabled></button>
         </span>
 
         <span>dark</span>
         <span>
-            <button class="k-fab k-fab-md k-fab-dark k-fab-pill">
-                <i is="Icon" class="k-fab-icon" name="plus"></i>
-            </button>
+            <button is="Fab" icon="plus" themeColor="dark"></button>
         </span>
         <span>
-            <button class="k-fab k-fab-md k-fab-dark k-fab-pill k-state-hover">
-                <i is="Icon" class="k-fab-icon" name="plus"></i>
-            </button>
+            <button is="Fab" icon="plus" themeColor="dark" hover></button>
         </span>
         <span>
-            <button class="k-fab k-fab-md k-fab-dark k-fab-pill k-state-focus">
-                <i is="Icon" class="k-fab-icon" name="plus"></i>
-            </button>
+            <button is="Fab" icon="plus" themeColor="dark" focus></button>
         </span>
         <span>
-            <button class="k-fab k-fab-md k-fab-dark k-fab-pill k-state-active">
-                <i is="Icon" class="k-fab-icon" name="plus"></i>
-            </button>
+            <button is="Fab" icon="plus" themeColor="dark" active></button>
         </span>
         <span>
-            <button class="k-fab k-fab-md k-fab-dark k-fab-pill k-state-disabled">
-                <i is="Icon" class="k-fab-icon" name="plus"></i>
-            </button>
+            <button is="Fab" icon="plus" themeColor="dark" disabled></button>
         </span>
 
         <span>light</span>
         <span>
-            <button class="k-fab k-fab-md k-fab-light k-fab-pill">
-                <i is="Icon" class="k-fab-icon" name="plus"></i>
-            </button>
+            <button is="Fab" icon="plus" themeColor="light"></button>
         </span>
         <span>
-            <button class="k-fab k-fab-md k-fab-light k-fab-pill k-state-hover">
-                <i is="Icon" class="k-fab-icon" name="plus"></i>
-            </button>
+            <button is="Fab" icon="plus" themeColor="light" hover></button>
         </span>
         <span>
-            <button class="k-fab k-fab-md k-fab-light k-fab-pill k-state-focus">
-                <i is="Icon" class="k-fab-icon" name="plus"></i>
-            </button>
+            <button is="Fab" icon="plus" themeColor="light" focus></button>
         </span>
         <span>
-            <button class="k-fab k-fab-md k-fab-light k-fab-pill k-state-active">
-                <i is="Icon" class="k-fab-icon" name="plus"></i>
-            </button>
+            <button is="Fab" icon="plus" themeColor="light" active></button>
         </span>
         <span>
-            <button class="k-fab k-fab-md k-fab-light k-fab-pill k-state-disabled">
-                <i is="Icon" class="k-fab-icon" name="plus"></i>
-            </button>
+            <button is="Fab" icon="plus" themeColor="light" disabled></button>
         </span>
 
         <span>inverse</span>
         <span>
-            <button class="k-fab k-fab-md k-fab-inverse k-fab-pill">
-                <i is="Icon" class="k-fab-icon" name="plus"></i>
-            </button>
+            <button is="Fab" icon="plus" themeColor="inverse"></button>
         </span>
         <span>
-            <button class="k-fab k-fab-md k-fab-inverse k-fab-pill k-state-hover">
-                <i is="Icon" class="k-fab-icon" name="plus"></i>
-            </button>
+            <button is="Fab" icon="plus" themeColor="inverse" hover></button>
         </span>
         <span>
-            <button class="k-fab k-fab-md k-fab-inverse k-fab-pill k-state-focus">
-                <i is="Icon" class="k-fab-icon" name="plus"></i>
-            </button>
+            <button is="Fab" icon="plus" themeColor="inverse" focus></button>
         </span>
         <span>
-            <button class="k-fab k-fab-md k-fab-inverse k-fab-pill k-state-active">
-                <i is="Icon" class="k-fab-icon" name="plus"></i>
-            </button>
+            <button is="Fab" icon="plus" themeColor="inverse" active></button>
         </span>
         <span>
-            <button class="k-fab k-fab-md k-fab-inverse k-fab-pill k-state-disabled">
-                <i is="Icon" class="k-fab-icon" name="plus"></i>
-            </button>
+            <button is="Fab" icon="plus" themeColor="inverse" disabled></button>
         </span>
     </div>
 
