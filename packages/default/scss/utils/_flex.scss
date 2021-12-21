@@ -8,34 +8,42 @@
     /// @description This is equivalent to `display: flex`. It defines a flex container and enables a flex context for all its direct children. Think of flex items as primarily laying out either in horizontal rows or vertical columns.
     /// @group flex-layout
     .k-d-flex                        { display: flex; }
+    .\!k-d-flex                      { display: flex !important; } // sass-lint:disable-line no-important class-name-format
     /// @name k-d-inline-flex
     /// @description This is equivalent to `display: inline-flex`. It defines a flex container and enables a flex context for all its direct children. Think of flex items as primarily laying out either in horizontal rows or vertical columns.
     /// @group flex-layout
     .k-d-inline-flex                 { display: inline-flex; }
+    .\!k-d-inline-flex               { display: inline-flex !important; } // sass-lint:disable-line no-important class-name-format
     /// @name k-d-flex-row
     /// @description This is equivalent to `display: inline-flex` and `flex-direction: row`.
     /// @group flex-layout
-    .k-d-flex-row                    { display: flex; flex-direction: row; } // sass-lint:disable-line one-declaration-per-line
+    .k-d-flex-row                    { @extend .k-d-flex, .k-flex-row; }
+    .\!k-d-flex-row                  { @extend .\!k-d-flex, .\!k-flex-row; } // sass-lint:disable-line class-name-format
     /// @name k-d-flex-col
     /// @description This is equivalent to `display: inline-flex` and `flex-direction: column`.
     /// @group flex-layout
-    .k-d-flex-col                    { display: flex; flex-direction: column; } // sass-lint:disable-line one-declaration-per-line
+    .k-d-flex-col                    { @extend .k-d-flex, .k-flex-col; }
+    .\!k-d-flex-col                  { @extend .\!k-d-flex, .\!k-flex-row; } // sass-lint:disable-line class-name-format
     /// @name k-flex-row
     /// @description This is equivalent to `flex-direction: row`. This establishes the main-axis to be horizontal, thus defining the direction flex items are placed in the flex container: left to right in `ltr`; right to left in `rtl`.
     /// @group flex-layout
     .k-flex-row                      { flex-direction: row; }
+    .\!k-flex-row                    { flex-direction: row !important; } // sass-lint:disable-line no-important class-name-format
     /// @name k-flex-row-reverse
     /// @description This is equivalent to `flex-direction: row-reverse`. This establishes the main-axis to be horizontal, thus defining the direction flex items are placed in the flex container: right to left in `ltr`; left to right in `rtl`.
     /// @group flex-layout
     .k-flex-row-reverse              { flex-direction: row-reverse; }
+    .\!k-flex-row-reverse            { flex-direction: row-reverse !important; } // sass-lint:disable-line no-important class-name-format
     /// @name k-flex-col
     /// @description This is equivalent to `flex-direction: column`. This establishes the main-axis to be vertical, thus defining the direction flex items are placed in the flex container: top to bottom.
     /// @group flex-layout
     .k-flex-col                      { flex-direction: column; }
+    .\!k-flex-col                    { flex-direction: column !important; } // sass-lint:disable-line no-important class-name-format
     /// @name k-flex-col-reverse
     /// @description This is equivalent to `flex-direction: column-reverse`. This establishes the main-axis to be vertical, thus defining the direction flex items are placed in the flex container: bottom to top.
     /// @group flex-layout
     .k-flex-col-reverse              { flex-direction: column-reverse; }
+    .\!k-flex-col-reverse            { flex-direction: column-reverse; } // sass-lint:disable-line no-important class-name-format
 
 
     // Aliases
@@ -90,7 +98,7 @@
     /// @group flex-layout
     .k-flex-shrink                   { flex-shrink: 1; }
     /// @name k-flex-shrink-0
-    /// @description This is equivalent to `flex-shrink: 0`. The item will not srhink.
+    /// @description This is equivalent to `flex-shrink: 0`. The item will not shrink.
     /// @group flex-layout
     .k-flex-shrink-0                 { flex-shrink: 0; }
     /// @name k-flex-basis-auto
