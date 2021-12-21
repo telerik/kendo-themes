@@ -71,7 +71,7 @@
     "karma-single": "karma start --single-run --browsers ChromeHeadless",
     "karma-github": "karma start --single-run --browsers ChromeHeadless --reporters dots --gh-actions",
     "create-screenshots": "./build/create-screenshots.sh",
-    "serve-tests": "http-server ./",
+    "serve-tests": "http-server ./ -c-1",
     "embed-assets": "gulp assets",
     "create-component": "gulp create-component",
     "update": "npx npm-check-updates --upgrade"
