@@ -1,74 +1,130 @@
 // Floating Action Button
-$fab-padding-x: $padding-x !default;
-$fab-padding-y: $fab-padding-x !default;
-$fab-border-width: 1px !default;
-$fab-border-radius: $border-radius / 2 !default;
-$fab-font-family: $font-family !default;
-$fab-font-size: $font-size !default;
-$fab-line-height: $line-height !default;
 
-$fab-padding-x-sm: ( $fab-padding-x / 2 ) !default;
-$fab-padding-y-sm: ( $fab-padding-y / 2 ) !default;
+/// Width of the border around the FAB.
+/// @group floating-action-button
+$kendo-fab-border-width: 1px !default;
+/// Border radius of the FAB.
+/// @group floating-action-button
+$kendo-fab-border-radius: $border-radius / 2 !default;
+/// Font family of the FAB.
+/// @group floating-action-button
+$kendo-fab-font-family: $font-family !default;
+/// Font size of the FAB.
+/// @group floating-action-button
+$kendo-fab-font-size: $font-size !default;
+/// Line height of the FAB.
+/// @group floating-action-button
+$kendo-fab-line-height: $line-height !default;
 
-$fab-padding-x-md: $fab-padding-x !default;
-$fab-padding-y-md: $fab-padding-y !default;
+/// Horizontal padding of the FAB.
+/// @group floating-action-button
+$kendo-fab-padding-x: $padding-x !default;
+$kendo-fab-padding-x-sm: ( $kendo-fab-padding-x / 2 ) !default;
+$kendo-fab-padding-x-md: $kendo-fab-padding-x !default;
+$kendo-fab-padding-x-lg: ( $kendo-fab-padding-x * 1.5 ) !default;
 
-$fab-padding-x-lg: ( $fab-padding-x * 1.5 ) !default;
-$fab-padding-y-lg: ( $fab-padding-y * 1.5 ) !default;
+/// Vertical padding of the FAB.
+/// @group floating-action-button
+$kendo-fab-padding-y: $kendo-fab-padding-x !default;
+$kendo-fab-padding-y-sm: ( $kendo-fab-padding-y / 2 ) !default;
+$kendo-fab-padding-y-md: $kendo-fab-padding-y !default;
+$kendo-fab-padding-y-lg: ( $kendo-fab-padding-y * 1.5 ) !default;
 
-$fab-icon-width: 24px !default;
-$fab-icon-height: $fab-icon-width !default;
-$fab-icon-spacing: map-get( $spacing, 1 ) / 2 !default;
+/// FAB icon width.
+/// @group floating-action-button
+$kendo-fab-icon-width: 24px !default;
+/// FAB icon height.
+/// @group floating-action-button
+$kendo-fab-icon-height: $kendo-fab-icon-width !default;
+/// FAB icon spacing.
+/// @group floating-action-button
+$kendo-fab-icon-spacing: map-get( $spacing, 1 ) / 2 !default;
 
-$fab-items-padding-x: 0px !default;
-$fab-items-padding-y: map-get( $spacing, 4 ) !default;
+/// FAB items horizontal padding.
+/// @group floating-action-button
+$kendo-fab-items-padding-x: 0px !default;
+/// FAB items vertical padding.
+/// @group floating-action-button
+$kendo-fab-items-padding-y: map-get( $spacing, 4 ) !default;
 
-$fab-item-text-padding-x: map-get( $spacing, 1 ) !default;
-$fab-item-text-padding-y: $fab-item-text-padding-x !default;
-$fab-item-text-border-width: 1px !default;
-$fab-item-text-border-radius: 4px !default;
-$fab-item-text-font-size: $font-size-xs !default;
-$fab-item-text-line-height: 14px !default;
+/// FAB item text horizontal padding.
+/// @group floating-action-button
+$kendo-fab-item-text-padding-x: map-get( $spacing, 1 ) !default;
+/// FAB item text vertical padding.
+/// @group floating-action-button
+$kendo-fab-item-text-padding-y: $kendo-fab-item-text-padding-x !default;
+/// Width of the FAB item text border.
+/// @group floating-action-button
+$kendo-fab-item-text-border-width: 1px !default;
+/// Border radius of the FAB item text.
+/// @group floating-action-button
+$kendo-fab-item-text-border-radius: 4px !default;
+/// Font size of the FAB item text.
+/// @group floating-action-button
+$kendo-fab-item-text-font-size: $font-size-xs !default;
+/// Line height of the FAB item text.
+/// @group floating-action-button
+$kendo-fab-item-text-line-height: 14px !default;
 
-$fab-item-icon-padding-x: map-get( $spacing, 2 ) !default;
-$fab-item-icon-padding-y: $fab-item-icon-padding-x !default;
-$fab-item-icon-border-width: 0 !default;
-$fab-item-icon-border-radius: 50% !default;
-$fab-item-icon-width: 24px !default;
-$fab-item-icon-height: $fab-item-icon-width !default;
+/// FAB item icon horizontal padding.
+/// @group floating-action-button
+$kendo-fab-item-icon-padding-x: map-get( $spacing, 2 ) !default;
+/// FAB item icon vertical padding.
+/// @group floating-action-button
+$kendo-fab-item-icon-padding-y: $kendo-fab-item-icon-padding-x !default;
+/// Width of the FAB item icon border.
+/// @group floating-action-button
+$kendo-fab-item-icon-border-width: 0 !default;
+/// Border radius of the FAB item icon.
+/// @group floating-action-button
+$kendo-fab-item-icon-border-radius: 50% !default;
+/// Width of the FAB item icon.
+/// @group floating-action-button
+$kendo-fab-item-icon-width: 24px !default;
+/// height of the FAB item icon.
+/// @group floating-action-button
+$kendo-fab-item-icon-height: $kendo-fab-item-icon-width !default;
 
-$fab-sizes: (
-    sm: map-get( $spacing, 4 ),
-    md: map-get( $spacing, 8 ),
-    lg: map-get( $spacing, 16 )
-) !default;
+/// Theme colors map for the FAB.
+/// @group floating-action-button
+$kendo-fab-theme-colors: $theme-colors !default;
 
-$fab-theme-colors: $theme-colors !default;
+/// The base shadow of the FAB.
+/// @group floating-action-button
+$kendo-fab-shadow: 0px 6px 10px rgba(0, 0, 0, .14), 0px 1px 18px rgba(0, 0, 0, .12), 0px 3px 5px rgba(0, 0, 0, .2) !default;
+/// The disabled shadow of the FAB.
+/// @group floating-action-button
+$kendo-fab-disabled-shadow: 0px 6px 10px try-tint( rgba(0, 0, 0, .14), .5 ), 0px 1px 18px try-tint( rgba(0, 0, 0, .12), .5 ), 0px 3px 5px try-tint( rgba(0, 0, 0, .2), .5 ) !default;
+/// The active shadow of the FAB.
+/// @group floating-action-button
+$kendo-fab-active-shadow: null !default;
 
-$fab-shadow: 0px 6px 10px rgba(0, 0, 0, .14), 0px 1px 18px rgba(0, 0, 0, .12), 0px 3px 5px rgba(0, 0, 0, .2) !default;
-$fab-disabled-shadow: 0px 6px 10px try-tint( rgba(0, 0, 0, .14), .5 ), 0px 1px 18px try-tint( rgba(0, 0, 0, .12), .5 ), 0px 3px 5px try-tint( rgba(0, 0, 0, .2), .5 ) !default;
-$fab-active-shadow: null !default;
+/// The base text color of the FAB item.
+/// @group floating-action-button
+$kendo-fab-item-text: $component-text !default;
+/// The base background color of the FAB item.
+/// @group floating-action-button
+$kendo-fab-item-bg: $component-bg !default;
+/// The base border color of the FAB item.
+/// @group floating-action-button
+$kendo-fab-item-border: $component-border !default;
 
-$fab-item-text: $component-text !default;
-$fab-item-bg: $component-bg !default;
-$fab-item-border: $component-border !default;
+/// The base text color of the FAB item icon.
+/// @group floating-action-button
+$kendo-fab-item-icon-text: $kendo-button-text !default;
+/// The base background color of the FAB item icon.
+/// @group floating-action-button
+$kendo-fab-item-icon-bg: $kendo-button-bg !default;
+/// The base border color of the FAB item icon.
+/// @group floating-action-button
+$kendo-fab-item-icon-border: $kendo-button-border !default;
 
-$fab-item-icon-text: $kendo-button-text !default;
-$fab-item-icon-bg: $kendo-button-bg !default;
-$fab-item-icon-border: $kendo-button-border !default;
-
-$fab-item-shadow: $fab-shadow !default;
-$fab-item-disabled-shadow: $fab-disabled-shadow !default;
-$fab-item-active-shadow: $fab-active-shadow !default;
-
-$fab-border-width-sm: $fab-border-width !default;
-$fab-line-height-sm: $fab-line-height !default;
-$fab-size-sm: calc( #{$fab-line-height-sm * 1em} + #{$fab-padding-y-sm * 2} + #{$fab-border-width-sm * 2} ) !default;
-
-$fab-border-width-md: $fab-border-width !default;
-$fab-line-height-md: $fab-line-height !default;
-$fab-size-md: calc( #{$fab-line-height-md * 1em} + #{$fab-padding-y-md * 2} + #{$fab-border-width-md * 2} ) !default;
-
-$fab-border-width-lg: $fab-border-width !default;
-$fab-line-height-lg: $fab-line-height !default;
-$fab-size-lg: calc( #{$fab-line-height-lg * 1em} + #{$fab-padding-y-lg * 2} + #{$fab-border-width-lg * 2} ) !default;
+/// The base shadow of the FAB item.
+/// @group floating-action-button
+$kendo-fab-item-shadow: $kendo-fab-shadow !default;
+/// The disabled shadow of the FAB item.
+/// @group floating-action-button
+$kendo-fab-item-disabled-shadow: $kendo-fab-disabled-shadow !default;
+/// The active shadow of the FAB item.
+/// @group floating-action-button
+$kendo-fab-item-active-shadow: $kendo-fab-active-shadow !default;
