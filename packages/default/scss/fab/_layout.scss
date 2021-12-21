@@ -9,9 +9,9 @@
         box-sizing: border-box;
         color: inherit;
         background-color: transparent;
-        font-size: $fab-font-size;
-        line-height: $fab-line-height;
-        font-family: $fab-font-family;
+        font-size: $kendo-fab-font-size;
+        line-height: $kendo-fab-line-height;
+        font-family: $kendo-fab-font-family;
         text-align: center;
         white-space: nowrap;
         display: inline-flex;
@@ -30,73 +30,39 @@
 
     // FAB Icon
     .k-fab-icon {
-        width: $fab-icon-width;
-        height: $fab-icon-height;
+        width: $kendo-fab-icon-width;
+        height: $kendo-fab-icon-height;
 
         &:not(:only-child) {
-            margin-right: $fab-icon-spacing;
-            margin-left: -$fab-icon-spacing;
+            margin-right: $kendo-fab-icon-spacing;
+            margin-left: -$kendo-fab-icon-spacing;
         }
     }
 
 
     // Sizes
     .k-fab-sm {
-        padding: $fab-padding-y-sm $fab-padding-x-sm;
+        padding: $kendo-fab-padding-y-sm $kendo-fab-padding-x-sm;
     }
     .k-fab-md {
-        padding: $fab-padding-y $fab-padding-x;
+        padding: $kendo-fab-padding-y $kendo-fab-padding-x;
     }
     .k-fab-lg {
-        padding: $fab-padding-y-lg $fab-padding-x-lg;
+        padding: $kendo-fab-padding-y-lg $kendo-fab-padding-x-lg;
     }
-
 
     // Shapes
+    .k-fab-rectangle { }
+
     .k-fab-square {
-        border-radius: 0;
-
-        &.k-fab-sm {
-            width: $fab-size-sm;
-            height: $fab-size-sm;
-        }
-        &.k-fab-md {
-            width: $fab-size-md;
-            height: $fab-size-md;
-        }
-        &.k-fab-lg {
-            width: $fab-size-lg;
-            height: $fab-size-lg;
-        }
-    }
-    .k-fab-circle {
-        border-radius: 50%;
-
-        &.k-fab-sm {
-            width: $fab-size-sm;
-            height: $fab-size-sm;
-        }
-        &.k-fab-md {
-            width: $fab-size-md;
-            height: $fab-size-md;
-        }
-        &.k-fab-lg {
-            width: $fab-size-lg;
-            height: $fab-size-lg;
-        }
-    }
-    .k-fab-pill {
-        border-radius: 5rem;
-    }
-    .k-fab-rounded {
-        @include border-radius( $fab-border-radius );
+        aspect-ratio: 1;
     }
 
 
     // Items
     .k-fab-items {
         margin: 0;
-        padding: $fab-items-padding-y $fab-items-padding-x;
+        padding: $kendo-fab-items-padding-y $kendo-fab-items-padding-x;
         display: flex;
     }
 
@@ -141,19 +107,19 @@
     }
 
     .k-fab-item-text {
-        padding: $fab-item-text-padding-y $fab-item-text-padding-x;
-        border-width: $fab-item-text-border-width;
-        border-radius: $fab-item-text-border-radius;
-        font-size: $fab-item-text-font-size;
-        line-height: $fab-item-text-line-height;
+        padding: $kendo-fab-item-text-padding-y $kendo-fab-item-text-padding-x;
+        border-width: $kendo-fab-item-text-border-width;
+        border-radius: $kendo-fab-item-text-border-radius;
+        font-size: $kendo-fab-item-text-font-size;
+        line-height: $kendo-fab-item-text-line-height;
     }
 
     .k-fab-item-icon {
-        width: $fab-item-icon-width;
-        height: $fab-item-icon-height;
-        padding: $fab-item-icon-padding-y $fab-item-icon-padding-x;
-        border-width: $fab-item-icon-border-width;
-        border-radius: $fab-item-icon-border-radius;
+        width: $kendo-fab-item-icon-width;
+        height: $kendo-fab-item-icon-height;
+        padding: $kendo-fab-item-icon-padding-y $kendo-fab-item-icon-padding-x;
+        border-width: $kendo-fab-item-icon-border-width;
+        border-radius: $kendo-fab-item-icon-border-radius;
         box-sizing: content-box;
         outline: none;
     }
