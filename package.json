@@ -41,6 +41,7 @@
     "stylelint-scss": "^4.0.0"
   },
   "scripts": {
+    "init": "npm install && ls -d $PWD/packages/* | xargs -L 1 bash -c 'cd \"$0\" && npm link' && npm run bootstrap",
     "clean": "find . -name \"node_modules\" -type d -prune | grep -e \".git\" -v | xargs rm -rf",
     "clean:dist": "find ./packages -name \"dist\" -type d -prune | grep -e \"node_modules\" -v | xargs rm -rf",
     "clean:tests": "node ./scripts/cleanup-test-results.js",
