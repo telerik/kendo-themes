@@ -83,7 +83,8 @@
             border: 0;
 
             > * {
-                &:first-child {
+                &:not(.k-hidden):first-child,
+                &.k-hidden + :not(.k-hidden) {
                     margin-top: 0;
                 }
             }
@@ -112,7 +113,8 @@
 
         > *,
         .k-daterangepicker .k-textbox-container {
-            &:first-child {
+            &:not(.k-hidden):first-child,
+            &.k-hidden + :not(.k-hidden) {
                 margin-top: 0;
             }
         }
