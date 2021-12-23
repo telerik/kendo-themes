@@ -73,35 +73,32 @@
 
         // Buttons
         .k-button {
-            margin: 0;
             padding: 0;
             width: auto;
             height: auto;
-            border-radius: 100%;
             line-height: 1;
             box-shadow: none;
             position: absolute;
-
-            &:not(:hover) {
-                border-color: transparent;
-                background: none;
-            }
         }
+        .k-navigator-n,
         .k-navigator-up {
             transform: translateX(-50%);
             top: $map-navigator-padding;
             left: 50%;
         }
+        .k-navigator-e,
         .k-navigator-right {
             transform: translateY(-50%);
             right: $map-navigator-padding;
             top: 50%;
         }
+        .k-navigator-s,
         .k-navigator-down {
             transform: translateX(-50%);
             bottom: $map-navigator-padding;
             left: 50%;
         }
+        .k-navigator-w,
         .k-navigator-left {
             transform: translateY(-50%);
             left: $map-navigator-padding;
