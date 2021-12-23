@@ -361,7 +361,7 @@
     .k-button {
 
         &::after {
-            @include border-radius( $kendo-button-border-radius );
+            @include border-radius( inherit );
             content: "";
             opacity: 0;
             display: none;
