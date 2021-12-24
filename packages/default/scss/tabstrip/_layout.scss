@@ -39,7 +39,7 @@
     .k-tabstrip-items {
         outline: 0;
         display: flex;
-        flex-direction: row;
+        flex-flow: row wrap;
         flex: 0 0 auto;
 
         .k-item {
