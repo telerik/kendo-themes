@@ -90,8 +90,8 @@
             min-width: $form-line-height * 1em;
         }
 
-        .k-combobox,
-        .k-dropdown {
+        .k-input,
+        .k-picker:not(.k-colorpicker) {
             width: 5em;
         }
     }

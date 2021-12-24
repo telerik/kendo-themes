@@ -62,6 +62,12 @@
         .k-split-button {}
 
 
+        // Input
+        .k-input,
+        .k-picker:not(.k-colorpicker) {
+            width: $toolbar-input-width;
+        }
+
         // Overflow anchor
         .k-overflow-anchor {
             @include border-radius( 0 );
@@ -106,19 +112,6 @@
         .k-toolbar-template {
             align-self: center;
             align-items: center;
-        }
-
-
-        // Child components
-        .k-textbox,
-        .k-combobox,
-        .k-dropdown,
-        .k-searchbox,
-        .k-numerictextbox,
-        .k-datepicker,
-        .k-timepicker,
-        .k-datetimepicker {
-            width: 10em;
         }
 
     }

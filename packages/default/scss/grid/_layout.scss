@@ -1197,11 +1197,6 @@
         align-items: stretch;
         gap: map-get( $spacing, 2 );
 
-        > * {
-            width: 100%;
-        }
-
-        .k-switch,
         .k-filter-and {
             width: min-content;
             align-self: start;
@@ -1221,10 +1216,6 @@
             flex-flow: column nowrap;
             align-items: stretch;
             gap: map-get( $spacing, 2 );
-
-            > * {
-                width: 100%;
-            }
         }
     }
     .k-ie .k-filter-menu-container {
@@ -1290,12 +1281,6 @@
 
         .k-detail-row {
             display: none !important;
-        }
-
-        input.k-input,
-        span.k-input,
-        input.k-textbox {
-            width: 0 !important;
         }
     }
 
