@@ -10,6 +10,7 @@
 
     <style>
         #test-area {
+            max-width: 1150px;
             grid-template-columns: 1fr 1fr;
             align-items: start;
         }
@@ -19,8 +20,8 @@
         }
 
         .k-animation-container {
-            position: relative;
-            display: inline-block;
+            position: absolute;
+            top: 32px;
         }
     </style>
 </head>
@@ -34,22 +35,26 @@
         <!-- horizontal menu -->
         <section>
             <ul id="menu" class="k-widget k-reset k-header k-menu k-menu-horizontal">
-                <li class="k-item k-menu-item k-state-disabled k-first">
+                <li class="k-item k-menu-item k-disabled k-first">
                     <span class="k-link k-menu-link"> Disabled</span>
                 </li>
                 <li class="k-item k-menu-item">
                     <span class="k-link k-menu-link">Normal</span>
                 </li>
-                <li class="k-item k-menu-item k-state-hover">
+                <li class="k-item k-menu-item k-hover">
                     <span class="k-link k-menu-link">
-                        Hover
-                        <i is="Icon" class="k-menu-expand-arrow" name="arrow-s"></i>
+                        <span class="k-menu-link-text">Hover</span>
+                        <span class="k-menu-expand-arrow">
+                            <i is="Icon" name="arrow-s"></i>
+                        </span>
                     </span>
                 </li>
                 <li class="k-item k-menu-item">
-                    <span class="k-link k-menu-link k-state-active">
-                        Active
-                        <i is="Icon" class="k-menu-expand-arrow" name="arrow-s"></i>
+                    <span class="k-link k-menu-link k-active">
+                        <span class="k-menu-link-text">Active</span>
+                        <span class="k-menu-expand-arrow">
+                            <i is="Icon" name="arrow-s"></i>
+                        </span>
                     </span>
                     <div class="k-animation-container k-animation-container-fixed k-animation-container-shown">
                         <div class="k-popup k-menu-popup">
@@ -63,13 +68,15 @@
                         </div>
                     </div>
                 </li>
-                <li class="k-item k-menu-item k-state-focused">
-                    <span class="k-link k-menu-link">Focus</span>
+                <li class="k-item k-menu-item k-focus">
+                    <span class="k-link k-menu-link">
+                        <span class="k-menu-link-text">Focus</span>
+                    </span>
                 </li>
                 <li class="k-item k-menu-item k-last">
                     <span class="k-link k-menu-link">
                         <i is="Icon" name="folder"></i>
-                        Normal
+                        <span class="k-menu-link-text">Normal</span>
                     </span>
                 </li>
             </ul>
