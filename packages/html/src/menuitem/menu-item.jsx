@@ -120,7 +120,7 @@ function MenuItemStatic(props) {
             <span className={menuItemLinkClasses}>
                 {icon && <IconStatic name={icon} />}
                 <span className="k-menu-link-text">{text}</span>
-                {<IconStatic className="k-menu-expand-arrow" name={dir === 'ltr' ? renderLTRArrowIconName : renderRTLArrowIconName} />}
+                {showArrow && <span className="k-menu-expand-arrow"><IconStatic name={dir === 'ltr' ? renderLTRArrowIconName : renderRTLArrowIconName} /></span>}
             </span>
             {contentTemplate}
         </li>
