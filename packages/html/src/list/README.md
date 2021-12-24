@@ -90,4 +90,18 @@
         </ul>
     </div>
 </div>
+
+<!-- filter -->
+<div class="k-list-filter">
+    <span class="k-searchbox k-input k-input-md k-rounded-md k-input-solid" type="text" autocomplete="off">
+        <span class="k-input-icon k-icon k-i-search"></span>
+        <input type="text" class="k-input-inner" placeholder="Filter..." autocomplete="off">
+    </span>
+</div>
+
+<!-- no data template -->
+<div class="k-list k-list-md">
+    <div class="k-no-data">No data found.</div>
+</div>
 ```
+
