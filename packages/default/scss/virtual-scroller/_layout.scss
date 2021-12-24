@@ -1,0 +1,35 @@
+@include exports( "virtual-scroller/layout" ) {
+
+    // Virtual scroller
+    .k-virtual-scroller {
+        width: 100%;
+        height: 100%;
+        flex: 1 1 auto;
+        overflow: auto;
+        position: relative;
+    }
+
+
+    // Virtual scroller wrap
+    .k-virtual-scroller-wrap {
+        position: relative;
+        z-index: 1;
+    }
+
+
+    // Virtual scroller content
+    .k-virtual-scroller-content {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        inset-inline-start: 0;
+    }
+
+
+    // Virtual scroller size
+    .k-virtual-scroller-size {
+        position: relative;
+        z-index: 0;
+    }
+
+}

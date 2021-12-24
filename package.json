@@ -41,6 +41,7 @@
     "stylelint-scss": "^4.0.0"
   },
   "scripts": {
+    "init": "npm install && ls -d $PWD/packages/* | xargs -L 1 bash -c 'cd \"$0\" && npm link' && npm run bootstrap",
     "clean": "find . -name \"node_modules\" -type d -prune | grep -e \".git\" -v | xargs rm -rf",
     "clean:dist": "find ./packages -name \"dist\" -type d -prune | grep -e \"node_modules\" -v | xargs rm -rf",
     "clean:tests": "node ./scripts/cleanup-test-results.js",
@@ -71,7 +72,7 @@
     "karma-single": "karma start --single-run --browsers ChromeHeadless",
     "karma-github": "karma start --single-run --browsers ChromeHeadless --reporters dots --gh-actions",
     "create-screenshots": "./build/create-screenshots.sh",
-    "serve-tests": "http-server ./",
+    "serve-tests": "http-server ./ -c-1",
     "embed-assets": "gulp assets",
     "create-component": "gulp create-component",
     "update": "npx npm-check-updates --upgrade"
