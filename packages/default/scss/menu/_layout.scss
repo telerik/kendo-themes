@@ -46,26 +46,26 @@
         display: flex;
         flex-direction: row;
         flex: 1 1 auto;
+        gap: $menu-item-icon-spacing;
         align-items: center;
         position: relative;
         white-space: nowrap;
         cursor: pointer;
+    }
 
-        > .k-icon:not(.k-menu-expand-arrow),
-        > .k-image,
-        > .k-sprite {
-            margin-right: $menu-item-icon-spacing;
-        }
+    // Menu link text
+    .k-menu-link-text {
+        display: flex;
+        flex-flow: row nowrap;
+        flex: 1;
     }
 
 
     // Expand arrow
     .k-menu-expand-arrow {
-        margin: 0;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        right: $icon-spacing;
+        display: inline-flex;
+        flex-flow: row nowrap;
+        margin-inline-end: -$icon-spacing;
     }
 
 
@@ -163,6 +163,11 @@
             padding: $kendo-menu-popup-item-padding-y-sm $kendo-menu-popup-item-padding-x-sm;
             padding-inline-end: $kendo-menu-popup-item-padding-end-sm;
         }
+
+        .k-menu-expand-arrow {
+            margin-inline-start: $kendo-menu-popup-item-icon-margin-start-sm;
+            margin-inline-end: $kendo-menu-popup-item-icon-margin-end-sm;
+        }
     }
     .k-menu-group-md {
         font-size: $kendo-menu-popup-font-size-md;
@@ -178,6 +183,11 @@
             padding: $kendo-menu-popup-item-padding-y-md $kendo-menu-popup-item-padding-x-md;
             padding-inline-end: $kendo-menu-popup-item-padding-end-md;
         }
+
+        .k-menu-expand-arrow {
+            margin-inline-start: $kendo-menu-popup-item-icon-margin-start;
+            margin-inline-end: $kendo-menu-popup-item-icon-margin-end;
+        }
     }
     .k-menu-group-lg {
         font-size: $kendo-menu-popup-font-size-lg;
@@ -192,6 +202,11 @@
         .k-menu-link {
             padding: $kendo-menu-popup-item-padding-y-lg $kendo-menu-popup-item-padding-x-lg;
             padding-inline-end: $kendo-menu-popup-item-padding-end-lg;
+        }
+
+        .k-menu-expand-arrow {
+            margin-inline-start: $kendo-menu-popup-item-icon-margin-start-lg;
+            margin-inline-end: $kendo-menu-popup-item-icon-margin-end-lg;
         }
     }
 
@@ -283,21 +298,6 @@
     // RTL
     .k-rtl,
     [dir="rtl"] {
-
-        .k-menu-link {
-            > .k-icon:not(.k-menu-expand-arrow),
-            > .k-image,
-            > .k-sprite {
-                margin-left: $menu-item-icon-spacing;
-                margin-right: 0;
-            }
-        }
-
-        .k-menu-expand-arrow {
-            right: unset;
-            left: $icon-spacing;
-        }
-
 
         // Orientation -- horizontal
         .k-menu-horizontal {
