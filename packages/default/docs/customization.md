@@ -2703,6 +2703,26 @@ The following table lists the available variables for customizing the Default th
     </td>
 </tr>
 <tr>
+    <td>$kendo-menu-popup-item-icon-margin-start-sm</td>
+    <td></td>
+    <td>$kendo-menu-popup-item-padding-x-sm</td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The start margin of the menu item expand icon.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-menu-popup-item-icon-margin-end-sm</td>
+    <td></td>
+    <td>calc( -1 * (#{$kendo-menu-popup-item-padding-end-sm} - #{$kendo-menu-popup-item-padding-x-sm / 2}) )</td>
+    <td>calc( -1 * (#{$kendo-menu-popup-item-padding-end-sm} - #{$kendo-menu-popup-item-padding-x-sm / 2}) )</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The end margin of the menu item expand icon.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-menu-popup-item-spacing</td>
     <td></td>
     <td>0px</td>
