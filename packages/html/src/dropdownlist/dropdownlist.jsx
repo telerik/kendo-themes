@@ -88,17 +88,15 @@ function DropdownListStatic(props) {
             'k-widget',
             'k-dropdown',
             {
+                'k-state-hover': hover === true,
+                'k-state-focus': focus === true,
+                'k-state-invalid': invalid === true,
                 'k-state-disabled': disabled === true
             }
         ];
 
         let legacyWrapClasses = [
-            'k-dropdown-wrap',
-            {
-                'k-state-hover': hover === true,
-                'k-state-focused': focus === true,
-                'k-state-invalid': invalid === true
-            }
+            'k-dropdown-wrap'
         ];
 
         return (
