@@ -1,28 +1,58 @@
-@include exports("maskedtextbox/theme") {
+@include exports( "maskedtextbox/theme" ) {
 
+    // Masked textbox
     .k-maskedtextbox {
+        @include fill(
+            $input-text,
+            $input-bg,
+            $input-border
+        );
 
-        .k-i-warning {
-            color: $error;
+        // Hover state
+        &:hover,
+        &.k-state-hover {
+            @include fill(
+                $input-hovered-text,
+                $input-hovered-bg,
+                $input-hovered-border
+            );
         }
 
-        &.k-state-invalid,
-        &.ng-invalid.ng-touched,
-        &.ng-invalid.ng-dirty {
-            .k-textbox {
-                border-color: $invalid-border;
-            }
+        // Focus state
+        &:focus,
+        &.k-state-focus {
+            @include fill(
+                $input-focused-text,
+                $input-focused-bg,
+                $input-focused-border
+            );
+            @include box-shadow( $input-focused-shadow );
+        }
+        &:focus-within {
+            @include fill(
+                $input-focused-text,
+                $input-focused-bg,
+                $input-focused-border
+            );
+            @include box-shadow( $input-focused-shadow );
+        }
+
+
+        // Invalid state
+        &.k-invalid,
+        &.ng-invalid,
+        &.k-state-invalid {
+            border-color: $invalid-border;
 
             .k-input-validation-icon {
                 color: $invalid-text;
             }
 
-            &:focus,
-            &.k-state-focused {
-                .k-textbox {
-                    @include box-shadow($invalid-shadow);
-                }
+            &:focus-within,
+            &.k-state-focus {
+                @include box-shadow($invalid-shadow);
             }
         }
     }
+
 }
