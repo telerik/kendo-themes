@@ -78,12 +78,12 @@ $picker-select-calc-size-sm: calc( #{$picker-select-padding-x-sm * 2} + #{$icon-
 $picker-select-calc-size-lg: calc( #{$picker-select-padding-x-sm * 2} + #{$icon-size} ) !default;
 
 $picker-select-bg: null !default;
-$picker-select-text: $subtle-text !default;
+$picker-select-text: null !default;
 $picker-select-border: null !default;
 $picker-select-gradient: null !default;
 
 $picker-select-hovered-bg: null !default;
-$picker-select-hovered-text: $input-text !default;
+$picker-select-hovered-text: null !default;
 $picker-select-hovered-border: null !default;
 $picker-select-hovered-gradient: null !default;
 

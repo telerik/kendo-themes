@@ -1,78 +1,7 @@
 @include exports( "dropdownlist/theme" ) {
 
+    // Dropdown list
     .k-dropdown {
-
-        .k-dropdown-wrap {
-            @include fill(
-                $dropdownlist-text,
-                $dropdownlist-bg,
-                $dropdownlist-border,
-                $dropdownlist-gradient
-            );
-
-            // Hover state
-            &:hover,
-            &.k-state-hover {
-                @include fill(
-                    $dropdownlist-hovered-text,
-                    $dropdownlist-hovered-bg,
-                    $dropdownlist-hovered-border,
-                    $dropdownlist-hovered-gradient
-                );
-            }
-
-            &.k-state-active {}
-
-            // Focused state
-            &.k-state-focused {
-                @include fill(
-                    $dropdownlist-focused-text,
-                    $dropdownlist-focused-bg,
-                    $dropdownlist-focused-border,
-                    $dropdownlist-focused-gradient
-                );
-                @include box-shadow($dropdownlist-focused-shadow);
-            }
-
-            // Invalid state
-            &.k-invalid,
-            &.k-invalid:hover,
-            &.k-state-invalid {
-                border-color: $invalid-border;
-
-                .k-input-validation-icon {
-                    color: $invalid-text;
-                }
-
-                &:focus,
-                &.k-state-focused {
-                    @include box-shadow($invalid-shadow);
-                }
-            }
-        }
-
-        // Invalid
-        &.k-state-invalid,
-        &.ng-invalid.ng-touched,
-        &.ng-invalid.ng-dirty {
-            > .k-dropdown-wrap {
-                border-color: $invalid-border;
-
-                .k-input-validation-icon {
-                    color: $invalid-text;
-                }
-
-                &:focus,
-                &.k-state-focused {
-                    @include box-shadow($invalid-shadow);
-                }
-            }
-        }
-
-    }
-
-    // Native select
-    select.k-dropdown {
         @include fill(
             $dropdownlist-text,
             $dropdownlist-bg,
@@ -81,7 +10,8 @@
         );
 
         // Hover state
-        &:hover {
+        &:hover,
+        &.k-state-hover {
             @include fill(
                 $dropdownlist-hovered-text,
                 $dropdownlist-hovered-bg,
@@ -90,8 +20,9 @@
             );
         }
 
-        // Focused state
-        &:focus {
+        // Focus state
+        &:focus,
+        &.k-state-focus {
             @include fill(
                 $dropdownlist-focused-text,
                 $dropdownlist-focused-bg,
@@ -100,6 +31,33 @@
             );
             @include box-shadow($dropdownlist-focused-shadow);
         }
+        &:focus-within {
+            @include fill(
+                $dropdownlist-focused-text,
+                $dropdownlist-focused-bg,
+                $dropdownlist-focused-border,
+                $dropdownlist-focused-gradient
+            );
+            @include box-shadow($dropdownlist-focused-shadow);
+        }
+
+
+        // Invalid state
+        &.k-invalid,
+        &.ng-invalid,
+        &.k-state-invalid {
+            border-color: $invalid-border;
+
+            .k-input-validation-icon {
+                color: $invalid-text;
+            }
+
+            &:focus-within,
+            &.k-state-focus {
+                @include box-shadow($invalid-shadow);
+            }
+        }
+
     }
 
 }
