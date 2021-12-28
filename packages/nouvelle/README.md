@@ -45,7 +45,7 @@ You can customize Kendo UI Nouvelle Theme both in terms of what gets compiled an
 
 ### Importing
 
-In your custom csss file, you can import the entirety of the theme, by importing `dist/all.scss` or pick just the styles for the components you need. The files for individual components are in `scss/` folder:
+In your custom scss file, you can import the entirety of the theme, by importing `dist/all.scss` or pick just the styles for the components you need. The files for individual components are in `scss/` folder:
 
 ```scss
 // Import only PanelBar and Grid styles
@@ -55,9 +55,9 @@ In your custom csss file, you can import the entirety of the theme, by importing
 
 ### SCSS Variables
 
-Kendo UI Nouvelle Theme provides many variables for customization. There are variables that control globally used theme colors like `$primary`, `$secondary`, `$success`, `$error` etc.; variables for all components such as `$component-text`, `$component-bg`; as well as variables for individual components such as `$grid-bg`, `$combobox-text`, `$tabstrip-font-size` and so on.
+Kendo UI Nouvelle Theme provides many variables for customization. There are variables that control globally used theme colors like `$primary`, `$secondary`, `$success`, `$error` etc.; variables for all components such as `$component-text`, `$component-bg`; as well as variables for individual components such as `$grid-bg`, `$tabstrip-font-size` and so on.
 
-Most component variables link to higher abstracted generic variables. For instance, the background of the grid component can be customized both from `$component-bg` and `$grid-bg`, with the latter ferrencing the former.
+Most component variables link to higher abstracted generic variables. For instance, the background of the grid component can be customized both from `$component-bg` and `$grid-bg`, with the latter referencing the former.
 
 We have more than 2000 variables, so it's hard to list them all. We've tried to make variable names as coherent as possible. For instance, all variables ending in `-bg` control background color; all variables ending in `-text` control text color.
 
@@ -66,9 +66,6 @@ Here is a quick example on how to customize:
 ```scss
 // Make all inputs components with a different background color
 $input-bg: #f0f0f0;
-
-// Change just the autocomplete to have white background
-$autocomplete-bg: #ffffff;
 
 // Make the border of the grid black and slightly ticker
 $grid-border-width: 2px;
@@ -90,7 +87,7 @@ CSS can be complicated due to cascades (that's what C stands for). If there are 
 
 To avoid that, we've prefixed all our class names with `k-` e.g. `k-grid`, `k-hidden` etc., with the exception of handling for `hidden` attribute, which will hide the element that has it.
 
-Some frameworks, like Nouvelle and Tailwind, touch global styles to establish a sort of baseline -- we call that normalizing. One such styles is the following bit, which makes dimenssions (width and height) behave in a specific way:
+Some frameworks, like Nouvelle and Tailwind, touch global styles to establish a sort of baseline -- we call that normalizing. One such styles is the following bit, which makes dimensions (width and height) behave in a specific way:
 
 ```css
 *, ::after, ::before {
@@ -114,7 +111,7 @@ Have a bug or a feature request? Please first search for existing and closed iss
 
 ## Versioning
 
-To ensure version predictability, we use [Semantic Versioning](https://semver.org/): we try to add only feaures for minor versions and bugfixes (or smaller features) for patch version.
+To ensure version predictability, we use [Semantic Versioning](https://semver.org/): we try to add only features for minor versions and bugfixes (or smaller features) for patch version.
 
 ## License
 
