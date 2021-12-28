@@ -396,7 +396,7 @@
     .k-button {
 
         &::after {
-            @include border-radius( $button-border-radius );
+            @include border-radius( inherit );
             content: "";
             opacity: 0;
             display: none;
