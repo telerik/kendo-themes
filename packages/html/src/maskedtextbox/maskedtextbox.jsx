@@ -72,22 +72,19 @@ function MaskedTextboxStatic(props) {
             'k-widget',
             'k-maskedtextbox',
             {
-                'k-state-disabled': disabled === true
-            }
-        ];
-
-        let legacyInputClasses = [
-            'k-textbox',
-            {
                 'k-state-hover': hover === true,
-                'k-state-focused': focus === true,
-                'k-state-invalid': invalid === true
+                'k-state-focus': focus === true,
+                'k-state-invalid': invalid === true,
+                'k-state-disabled': disabled === true
             }
         ];
 
         return (
             <InputStatic className={legacyClasses} {...htmlAttributes}>
-                <input type={type} className={legacyInputClasses} {...inputAttributes} />
+                <input type={type} className="k-input" {...inputAttributes} />
+                <InputValidationIconStatic {...props} />
+                <InputLoadingIconStatic {...props} />
+                <InputClearValueStatic {...props} />
             </InputStatic>
         );
     }
