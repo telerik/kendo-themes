@@ -181,13 +181,14 @@
             top: 0;
             right: 0;
             visibility: hidden;
-        }
-        .k-overflow-anchor {
-            border-width: 0;
-            padding: $toolbar-padding-y;
-            width: $toolbar-inner-calc-size;
-            height: $toolbar-inner-calc-size;
-            position: relative;
+
+            .k-overflow-anchor {
+                border-width: 0;
+                padding: $toolbar-padding-y;
+                width: $toolbar-inner-calc-size;
+                height: $toolbar-inner-calc-size;
+                position: relative;
+            }
         }
 
         .k-editor-export {
