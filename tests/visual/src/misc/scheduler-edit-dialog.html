@@ -22,10 +22,6 @@
             gap: 8px;
         }
 
-        .k-numerictextbox {
-            max-width: 70px;
-        }
-
         .k-recurrence-editor,
         .k-recur-view,
         .k-scheduler-recurrence-repeat,
@@ -115,7 +111,7 @@
                                             <label>Repeat every</label>
                                         </div>
                                         <div class="k-form-field-wrap">
-                                            <input is="NumericTextbox" />
+                                            <input is="NumericTextbox" class="k-recur-interval" />
                                             <span>day(s)</span>
                                         </div>
                                     </div>
@@ -134,13 +130,13 @@
                                                 <li class="k-radio-item">
                                                     <input is="Radio" id="k-endrule-count" name="end" />
                                                     <label class="k-radio-label" for="k-endrule-count">After</label>
-                                                    <input is="NumericTextbox" />
+                                                    <input is="NumericTextbox" class="k-recur-count" />
                                                     <span>occurrence(s)</span>
                                                 </li>
                                                 <li class="k-radio-item">
                                                     <input is="Radio" id="k-endrule-until" name="end" />
                                                     <label class="k-radio-label" for="k-endrule-until">On</label>
-                                                    <input is="DatePicker" disabled style="width: 150px;" />
+                                                    <input is="DatePicker" class="k-recur-until" disabled />
                                                 </li>
                                             </ul>
                                         </div>
