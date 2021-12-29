@@ -39,28 +39,35 @@ function ColorPreviewStatic(props) {
 
     if (legacy) {
 
-        let legacyClasses = [
-            ownClassName,
-            'k-selected-color',
-            {
-                'k-no-color': color === ''
-            }
-        ];
+        // let legacyClasses = [
+        //     ownClassName,
+        //     'k-selected-color',
+        //     {
+        //         'k-no-color': color === ''
+        //     }
+        // ];
 
-        let legacyStyles = {
-            'background-color': color
-        };
+        // let legacyStyles = {
+        //     'background-color': color
+        // };
 
-        if (iconName === '') {
-            return (
-                <span className={legacyClasses} style={legacyStyles}></span>
-            );
-        }
+        // if (iconName === '') {
+        //     return (
+        //         <span className={legacyClasses} style={legacyStyles}></span>
+        //     );
+        // }
+
+        // return (
+        //     <IconStatic className="k-tool-icon" name={iconName}>
+        //         <span className={legacyClasses} style={legacyStyles}></span>
+        //     </IconStatic>
+        // );
 
         return (
-            <IconStatic className="k-tool-icon" name={iconName}>
-                <span className={legacyClasses} style={legacyStyles}></span>
-            </IconStatic>
+            <span className={colorPreviewClasses} {...ariaAttr} {...htmlAttributes}>
+                {iconName && <IconStatic name={iconName} className="k-color-preview-icon" />}
+                <span className="k-color-preview-mask" style={styles}></span>
+            </span>
         );
 
     }
