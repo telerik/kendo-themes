@@ -18,9 +18,9 @@ $coloreditor-header-padding-y: $coloreditor-spacer !default;
 $coloreditor-header-padding-x: $coloreditor-header-padding-y !default;
 $coloreditor-header-actions-gap: map-get( $spacing, 2 ) !default;
 
-$coloreditor-preview-gap: 2px !default;
-$coloreditor-color-preview-width: 34px !default;
-$coloreditor-color-preview-height: 14px !default;
+$coloreditor-preview-gap: map-get( $spacing, 1 ) !default;
+$coloreditor-color-preview-width: 32px !default;
+$coloreditor-color-preview-height: 12px !default;
 
 $coloreditor-views-padding-y: $coloreditor-spacer !default;
 $coloreditor-views-padding-x: $coloreditor-views-padding-y !default;

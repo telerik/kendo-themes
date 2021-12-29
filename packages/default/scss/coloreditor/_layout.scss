@@ -26,8 +26,12 @@
     }
 
     .k-coloreditor-preview {
-        position: relative;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: stretch;
+        justify-content: center;
         gap: $coloreditor-preview-gap;
+        position: relative;
         z-index: 1;
     }
     .k-coloreditor-preview .k-color-preview {
