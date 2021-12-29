@@ -50,6 +50,19 @@
             border-width: 0 0 0 1px;
             display: inline-block;
         }
+
+
+        // Appbar child components
+        .k-textbox,
+        .k-combobox,
+        .k-dropdown,
+        .k-searchbox,
+        .k-numerictextbox,
+        .k-datepicker,
+        .k-timepicker,
+        .k-datetimepicker {
+            width: 10em;
+        }
     }
 
     .k-appbar-static {

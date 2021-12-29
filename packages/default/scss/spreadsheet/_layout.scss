@@ -97,14 +97,10 @@
             width: auto;
             min-width: $form-line-height * 1em;
         }
-        [data-tool="fontSize"] {
-            width: 5 * $spacer;
-        }
-        [data-tool="fontFamily"] {
-            width: 6 * $spacer;
-        }
-        [data-tool="format"] {
-            width: 4 * $spacer;
+
+        .k-combobox,
+        .k-dropdown {
+            width: 5em;
         }
     }
 

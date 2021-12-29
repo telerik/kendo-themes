@@ -100,10 +100,24 @@
             flex: 1 0 0%;
         }
 
+
         // Template
         .k-toolbar-template {
             align-self: center;
             align-items: center;
+        }
+
+
+        // Child components
+        .k-textbox,
+        .k-combobox,
+        .k-dropdown,
+        .k-searchbox,
+        .k-numerictextbox,
+        .k-datepicker,
+        .k-timepicker,
+        .k-datetimepicker {
+            width: 10em;
         }
 
     }
@@ -120,6 +134,7 @@
 
     // Angular specific
     kendo-toolbar-renderer {
+        display: inline-block;
         border-color: inherit;
     }
 
