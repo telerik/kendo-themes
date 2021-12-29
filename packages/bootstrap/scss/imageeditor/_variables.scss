@@ -13,6 +13,7 @@ $imageeditor-content-border-width: 1px !default;
 
 $imageeditor-action-pane-padding-y: map-get( $spacing, 8 ) !default;
 $imageeditor-action-pane-padding-x: map-get( $spacing, 4 ) !default;
+$imageeditor-action-pane-width: if( $imageeditor-content-border-width == null, 240px, calc(240px + #{$imageeditor-content-border-width}) );
 
 $imageeditor-crop-border-width: 1px !default;
 $imageeditor-crop-border-style: dashed !default;
