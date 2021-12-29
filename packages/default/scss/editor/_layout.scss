@@ -153,6 +153,7 @@
     }
 
     // Toolbar
+    .k-editor-toolbar,
     .k-editor > .k-toolbar {
         border-width: 0 0 $toolbar-border-width 0;
         flex-shrink: 0;
@@ -304,15 +305,6 @@
         }
     }
 
-    .k-editor-widget .k-colorpicker {}
-
-    .k-rtl .k-editor .k-editor-widget .k-dropdown-wrap {
-        padding-left: 0;
-
-        .k-select {
-            border-width: 0;
-        }
-    }
 
     // Find and replace dialog
     .k-editor-find-replace {
