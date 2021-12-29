@@ -13,14 +13,6 @@
             grid-template-columns: repeat(2, 1fr);
         }
 
-        .kendo-toolbar-renderer {
-            display: inline-block;
-        }
-
-        .k-editor .k-dropdown {
-            width: auto;
-        }
-
         .k-editor .k-dialog-wrapper {
             position: static;
         }
@@ -33,7 +25,7 @@
         <span>Angular Editor without iFrame; responsive toolbar</span>
         <section>
             <kendo-editor style="height: 200px;" class="k-widget k-editor">
-                <kendo-toolbar class="k-widget k-toolbar k-toolbar-resizable">
+                <kendo-toolbar class="k-editor-toolbar k-toolbar k-toolbar-resizable">
                     <kendo-toolbar-renderer>
                         <kendo-buttongroup class="k-button-group">
                             <button is="Button" icon="undo"></button>
@@ -49,7 +41,7 @@
         </section>
         <section>
             <kendo-editor style="height: 200px;" class="k-widget k-editor">
-                <kendo-toolbar class="k-widget k-toolbar k-toolbar-resizable">
+                <kendo-toolbar class="k-editor-toolbar  k-toolbar k-toolbar-resizable">
                     <kendo-toolbar-renderer>
                         <kendo-buttongroup class="k-button-group">
                             <button is="Button" icon="undo"></button>
@@ -84,7 +76,7 @@
         <span>Angular Editor without iFrame; NO-responsive toolbar</span>
         <section>
             <kendo-editor class="k-widget k-editor" style="height: 200px;">
-                <kendo-toolbar class="k-widget k-toolbar">
+                <kendo-toolbar class="k-editor-toolbar k-toolbar">
                     <kendo-toolbar-renderer>
                         <kendo-buttongroup class="k-button-group">
                             <button is="Button" icon="bold"></button>
@@ -129,7 +121,7 @@
 
         <section>
             <kendo-editor class="k-widget k-editor k-readonly" style="height: 200px;">
-                <kendo-toolbar class="k-widget k-toolbar">
+                <kendo-toolbar class="k-editor-toolbar k-toolbar">
                     <kendo-toolbar-renderer>
                         <kendo-buttongroup class="k-button-group">
                             <button is="Button" icon="bold"></button>
