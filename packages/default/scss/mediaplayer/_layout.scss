@@ -48,6 +48,11 @@
         width: 100% !important;
         // sass-lint:enable no-important
         box-shadow: none;
+
+
+        .k-dropdown {
+            width: auto;
+        }
     }
     .k-mediaplayer-time-wrap {
         flex: 1;
