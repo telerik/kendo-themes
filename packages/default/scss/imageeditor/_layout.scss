@@ -50,15 +50,15 @@
 
     // Action Pane
     .k-imageeditor-action-pane {
+        padding: $imageeditor-action-pane-padding-y $imageeditor-action-pane-padding-x;
+        width: $imageeditor-action-pane-width;
         border-width: 0;
         border-left-width: $imageeditor-content-border-width;
         border-style: solid;
         border-color: inherit;
-        flex-shrink: 0;
+        box-sizing: border-box;
+        flex: none;
         overflow-y: auto;
-    }
-    .k-imageeditor-action-pane > .k-form {
-        padding: $imageeditor-action-pane-padding-y $imageeditor-action-pane-padding-x;
     }
 
 
@@ -148,10 +148,6 @@
         .k-imageeditor-canvas {
             flex-direction: row;
             align-self: flex-start;
-        }
-
-        .k-imageeditor-action-pane {
-            flex: 0 0 auto;
         }
     }
 
