@@ -34,6 +34,12 @@
             position: relative;
             overflow: hidden;
         }
+        .k-color-preview {
+            margin: $button-padding-y;
+            width: calc( #{$button-inner-calc-size} - #{$button-padding-y * 2} );
+            height: calc( #{$button-inner-calc-size} - #{$button-padding-y * 2} );
+            z-index: 1;
+        }
 
         .k-tool-icon {
             padding: $button-padding-y;
