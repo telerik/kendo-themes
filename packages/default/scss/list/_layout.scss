@@ -1,5 +1,11 @@
 @include exports( "list/layout" ) {
 
+    .k-list,
+    .k-list-container {
+        font-size: $list-font-size;
+        line-height: $list-line-height;
+    }
+
     // Layout
     .k-list-scroller {
         position: relative;
@@ -14,7 +20,7 @@
 
     .k-list__group-header { // sass-lint:disable-line class-name-format
         padding: $list-item-padding-y $list-item-padding-x;
-        min-height: $line-height-em;
+        min-height: $list-line-height-em;
         border-bottom-width: 1px;
         border-bottom-style: solid;
         font-size: $font-size;
@@ -56,8 +62,8 @@
 
     .k-list__item { // sass-lint:disable-line class-name-format
         padding: $list-item-padding-y $list-item-padding-x;
-        min-height: $line-height-em;
-        line-height: $line-height-em;
+        min-height: $list-line-height-em;
+        line-height: $list-line-height;
         white-space: normal;
         display: flex;
         align-items: center;
@@ -69,6 +75,12 @@
         transition-duration: 200ms;
         transition-timing-function: ease;
         outline: none;
+
+        .k-checkbox {
+            margin-top: calc( ( #{$list-line-height-em} - #{$checkbox-size} ) / 2 );
+            font-size: inherit;
+            align-self: flex-start;
+        }
 
         &.k-first::before {
             content: "";
