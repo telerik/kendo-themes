@@ -169,7 +169,7 @@
 
     // Empty label
     .k-checkbox-label:empty {
-        display: none;
+        display: none !important; // sass-lint:disable-line no-important
     }
 
 
