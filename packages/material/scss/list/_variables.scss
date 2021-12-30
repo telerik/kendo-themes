@@ -1,4 +1,8 @@
 // List
+$list-font-size: $font-size !default;
+$list-line-height: 1.5 !default;
+$list-line-height-em: 1.5em !default;
+
 $list-item-padding-x: map-get( $spacing, 4 ) !default;
 $list-item-padding-y: map-get( $spacing, 1 ) !default;
 
