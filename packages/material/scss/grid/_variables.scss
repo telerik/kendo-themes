@@ -142,14 +142,14 @@ $grid-filter-menu-check-all-border-bottom-width: 0 !default;
 $grid-filter-menu-item-spacing-x: map-get( $spacing, 4 ) !default;
 $grid-filter-menu-item-spacing-y: map-get( $spacing, 2 ) !default;
 
-$grid-column-menu-popup-padding-x: 0 !default;
-$grid-column-menu-popup-padding-y: $padding-y-lg !default;
+$grid-column-menu-popup-padding-x: null !default;
+$grid-column-menu-popup-padding-y: null !default;
 
-$grid-column-menu-item-padding-x: $padding-x !default;
-$grid-column-menu-item-padding-y: $padding-y-lg !default;
+$grid-column-menu-item-padding-x: $menu-popup-item-padding-x !default;
+$grid-column-menu-item-padding-y: $menu-popup-item-padding-y !default;
 
-$grid-column-menu-list-item-padding-x: $padding-x !default;
-$grid-column-menu-list-item-padding-y: $padding-y-sm !default;
+$grid-column-menu-list-item-padding-x: $list-item-padding-x !default;
+$grid-column-menu-list-item-padding-y: $list-item-padding-y !default;
 
 $grid-column-menu-items-wrap-padding-x: 0 !default;
 $grid-column-menu-items-wrap-padding-y: map-get( $spacing, 2 ) !default;
