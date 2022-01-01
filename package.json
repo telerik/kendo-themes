@@ -1,7 +1,7 @@
 {
   "version": "0.0.0",
   "devDependencies": {
-    "@commitlint/cli": "^15.0.0",
+    "@commitlint/cli": "^16.0.1",
     "@commitlint/config-conventional": "^15.0.0",
     "@commitlint/core": "^15.0.0",
     "@joneff/baka": "^1.1.0",
