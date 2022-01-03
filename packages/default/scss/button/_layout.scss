@@ -78,8 +78,6 @@
     .k-icon-button,
     .k-button.k-button-icon {
         padding: $button-padding-y;
-        width: $button-calc-size;
-        height: $button-calc-size;
         gap: 0;
 
         > .k-text,
@@ -89,6 +87,8 @@
 
         .k-button-icon {
             margin: 0;
+            min-width: calc( #{$button-font-size} * #{$button-line-height} );
+            min-height: calc( #{$button-font-size} * #{$button-line-height} );
         }
     }
     // TODO: REMOVE
