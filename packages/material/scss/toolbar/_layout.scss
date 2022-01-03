@@ -27,10 +27,16 @@
         }
     }
 
+
+    // Overflow container
     .k-overflow-container {
 
-        .k-button-group {
+        .k-button {
             @include box-shadow( none );
+            font-weight: normal;
+            text-transform: unset;
         }
+
     }
+
 }

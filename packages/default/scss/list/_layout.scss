@@ -165,32 +165,6 @@
 
 
     .k-list-container {
-
-        .k-button {
-            @include border-radius( 0 );
-            padding: $list-item-padding-y $list-item-padding-x;
-            border-width: 0;
-            color: inherit;
-            background-color: transparent;
-            background-image: none;
-            line-height: inherit;
-            display: flex;
-            justify-content: flex-start;
-
-            .k-ie11 & {
-                display: flex;
-
-                .k-icon {
-                    margin: 0 $icon-spacing 0 0;
-                }
-            }
-        }
-
-        // Button disabled state
-        .k-button.k-state-disabled {
-            pointer-events: none;
-        }
-
         .k-nodata {
             min-height: 138px;
             width: 100%;
@@ -201,11 +175,6 @@
             font-weight: lighter;
             text-align: center;
             white-space: normal;
-
-            .k-button {
-                display: inline-flex;
-                border-width: 1px;
-            }
         }
     }
 
