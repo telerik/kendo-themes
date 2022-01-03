@@ -67,8 +67,9 @@
             @include border-radius( 0 );
             margin: 0;
             padding: $toolbar-padding-y;
-            width: $toolbar-inner-calc-size;
+            width: auto;
             height: 100%;
+            aspect-ratio: 1;
             border-width: 0;
             border-color: inherit;
             box-sizing: border-box;
@@ -142,6 +143,14 @@
     // Overflow container
     .k-overflow-container {
 
+        > .k-item {
+            border-color: inherit;
+        }
+
+        .k-separator {
+            margin: map-get( $spacing, 1 ) 0;
+        }
+
         // Group
         .k-overflow-tool-group {
             display: block;
@@ -149,13 +158,23 @@
 
         // Button
         .k-overflow-button {
+            @include border-radius( 0 );
+            padding: $list-item-padding-y $list-item-padding-x;
             width: 100%;
+            border-width: 0;
+            color: inherit;
+            background-color: transparent;
+            background-image: none;
+            line-height: inherit;
+            display: flex;
+            justify-content: flex-start;
         }
 
         // Button group
         .k-button-group {
+            @include box-shadow( none );
             display: flex;
-            flex-direction: column;
+            flex-flow: column nowrap;
 
             .k-button {
                 margin: if( $button-border-width == 0, null, 0);

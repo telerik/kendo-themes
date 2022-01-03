@@ -33,7 +33,7 @@ $menu-item-expanded-gradient: null !default;
 
 $menu-item-focus-shadow: $list-item-focused-shadow !default;
 
-$menu-separator-spacing: 2px !default;
+$menu-separator-spacing: map-get( $spacing, 1 ) !default;
 
 $menu-scroll-button-bg: $component-bg !default;
 $menu-scroll-button-text: $link-text !default;
