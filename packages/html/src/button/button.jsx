@@ -87,7 +87,7 @@ function ButtonStatic(props) {
     if (legacy) {
         return (
             <button type={type} className={legacyClasses} {...ariaAttr} {...htmlAttributes}>
-                <IconStatic name={icon} />
+                <IconStatic className="k-button-icon" name={icon} />
                 { text }
             </button>
         );
