@@ -86,51 +86,42 @@
 
     // Search
     .k-pdf-viewer-search-dialog {
-        padding: $pdf-viewer-search-dialog-spacing;
+        padding: $pdf-viewer-search-dialog-padding;
 
         .k-search-container {
             display: flex;
+            gap: $pdf-viewer-search-dialog-spacing;
+            flex-flow: row nowrap;
             flex: 0 0 auto;
             justify-content: flex-start;
             align-items: center;
-
-            .k-textbox {
-                display: inline-flex;
-                padding-right: $pdf-viewer-search-dialog-textbox-padding-x;
-                margin: 0 $pdf-viewer-search-dialog-spacing;
-                align-items: center;
-                background: none;
-            }
-            .k-textbox .k-icon {
-                position: absolute;
-                font-size: inherit;
-
-                .k-ie & {
-                    position: relative;
-                }
-            }
-
-            .k-match-case-button {
-                display: inline-flex;
-                height: $pdf-viewer-search-dialog-input-button-height;
-                justify-content: center;
-            }
-
-            .k-search-matches {
-                display: inline-block;
-                min-width: $pdf-viewer-search-dialog-matches-width;
-                margin: 0 $pdf-viewer-search-dialog-spacing 0 $pdf-viewer-search-dialog-button-spacing;
-                vertical-align: middle;
-            }
-
-            > .k-button {
-                margin-left: $pdf-viewer-search-dialog-button-spacing;
-            }
 
             .k-search-dialog-draghandle {
                 cursor: move;
                 margin-left: 0;
             }
+
+            .k-textbox {
+                width: 10em;
+                flex: none;
+
+                .k-button {
+                    border-width: 0;
+                }
+            }
+
+            .k-search-matches {
+                flex: 1 1 auto;
+            }
+        }
+    }
+
+
+    // IE
+    .k-ie .k-pdf-viewer-search-dialog {
+
+        .k-search-container > * + * {
+            margin-left: $pdf-viewer-search-dialog-spacing;
         }
     }
 
