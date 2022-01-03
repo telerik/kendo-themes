@@ -343,8 +343,8 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$button-selected-bg</td>
     <td></td>
-    <td>try-darken( $primary, 10% )</td>
-    <td>try-darken( $primary, 10% )</td>
+    <td>$button-active-bg</td>
+    <td>try-darken( $button-bg, 10% )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of selected buttons.</div></div>
@@ -353,8 +353,8 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$button-selected-text</td>
     <td></td>
-    <td>contrast-wcag( $button-selected-bg )</td>
-    <td>contrast-wcag( $button-selected-bg )</td>
+    <td>$button-active-text</td>
+    <td>null</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of selected buttons.</div></div>
@@ -363,8 +363,8 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$button-selected-border</td>
     <td></td>
-    <td>try-darken( $primary, 12.5% )</td>
-    <td>try-darken( $primary, 12.5% )</td>
+    <td>$button-active-border</td>
+    <td>try-darken( $button-border, 12.5% )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of selected buttons.</div></div>

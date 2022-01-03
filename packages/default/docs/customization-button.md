@@ -188,8 +188,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$button-selected-bg</td>
     <td></td>
-    <td>$primary</td>
-    <td><span class="color-preview" style="background-color: #ff6358"></span>#ff6358</td>
+    <td>$button-active-bg</td>
+    <td>try-shade( $button-bg, 1.5 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of selected buttons.</div></div>
@@ -198,8 +198,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$button-selected-text</td>
     <td></td>
-    <td>contrast-wcag( $button-selected-bg )</td>
-    <td>contrast-wcag( $button-selected-bg )</td>
+    <td>$button-active-text</td>
+    <td>null</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of selected buttons.</div></div>
@@ -208,8 +208,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$button-selected-border</td>
     <td></td>
-    <td>$button-selected-bg</td>
-    <td><span class="color-preview" style="background-color: #ff6358"></span>#ff6358</td>
+    <td>$button-active-border</td>
+    <td>null</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of selected buttons.</div></div>
