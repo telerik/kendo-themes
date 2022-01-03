@@ -98,14 +98,6 @@
             $chat-toolbar-bg,
             $chat-toolbar-border
         );
-
-        .k-scroll-button {
-            @include fill( $bg: $chat-bg );
-            @include box-shadow( $chat-toolbar-box-scroll-button-shadow );
-        }
-        .k-scroll-button:hover {
-            @include fill( $bg: $chat-bg );
-        }
     }
 
 }

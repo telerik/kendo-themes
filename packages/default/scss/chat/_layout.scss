@@ -288,6 +288,7 @@
         .k-input {}
 
         .k-button {
+            border-width: 0;
             flex-shrink: 0;
 
             svg {
@@ -442,9 +443,6 @@
         }
 
         .k-button {
-            border-color: transparent;
-            color: inherit;
-            background: none;
             flex: none;
         }
 
