@@ -68,13 +68,13 @@ $button-active-shadow: null !default;
 
 /// The background color of selected buttons.
 /// @group button
-$button-selected-bg: try-darken( $primary, 10% ) !default;
+$button-selected-bg: $button-active-bg !default;
 /// The text color of selected buttons.
 /// @group button
-$button-selected-text: contrast-wcag( $button-selected-bg ) !default;
+$button-selected-text: $button-active-text !default;
 /// The border color of selected buttons.
 /// @group button
-$button-selected-border: try-darken( $primary, 12.5% ) !default;
+$button-selected-border: $button-active-border !default;
 /// The background gradient of selected buttons.
 /// @group button
 $button-selected-gradient: null !default;
