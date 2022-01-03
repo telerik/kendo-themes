@@ -28,7 +28,7 @@ The following table lists the available variables for customization.
         <tr>
     <td>$kendo-textbox-bg</td>
     <td></td>
-    <td>$input-bg</td>
+    <td>$kendo-input-bg</td>
     <td></td>
 </tr>
 <tr>
@@ -38,7 +38,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-textbox-text</td>
     <td></td>
-    <td>$input-text</td>
+    <td>$kendo-input-text</td>
     <td></td>
 </tr>
 <tr>
@@ -48,7 +48,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-textbox-border</td>
     <td></td>
-    <td>$input-border</td>
+    <td>$kendo-input-border</td>
     <td>rgba( black, .08 )</td>
 </tr>
 <tr>
@@ -58,7 +58,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-textbox-hover-bg</td>
     <td></td>
-    <td>$input-hover-bg</td>
+    <td>$kendo-input-hover-bg</td>
     <td></td>
 </tr>
 <tr>
@@ -68,7 +68,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-textbox-hover-text</td>
     <td></td>
-    <td>$input-hover-text</td>
+    <td>$kendo-input-hover-text</td>
     <td></td>
 </tr>
 <tr>
@@ -78,8 +78,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-textbox-hover-border</td>
     <td></td>
-    <td>$input-hover-border</td>
-    <td>try-shade( $input-border, 1 )</td>
+    <td>$kendo-input-hover-border</td>
+    <td>try-shade( $kendo-input-border, 1 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of hovered textbox.</div></div>
@@ -88,7 +88,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-textbox-focus-text</td>
     <td></td>
-    <td>$input-focus-text</td>
+    <td>$kendo-input-focus-text</td>
     <td></td>
 </tr>
 <tr>
@@ -98,7 +98,7 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-textbox-focus-bg</td>
     <td></td>
-    <td>$input-focus-bg</td>
+    <td>$kendo-input-focus-bg</td>
     <td></td>
 </tr>
 <tr>
@@ -108,8 +108,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$kendo-textbox-focus-border</td>
     <td></td>
-    <td>$input-focus-border</td>
-    <td>try-shade( $input-border, 1 )</td>
+    <td>$kendo-input-focus-border</td>
+    <td>try-shade( $kendo-input-border, 1 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of focus textbox.</div></div>

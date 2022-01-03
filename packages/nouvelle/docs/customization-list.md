@@ -26,7 +26,7 @@ The following table lists the available variables for customization.
 </thead>
 <tbody>
         <tr>
-    <td>$list-bg</td>
+    <td>$kendo-list-bg</td>
     <td></td>
     <td>$component-bg</td>
     <td></td>
@@ -36,7 +36,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$list-text</td>
+    <td>$kendo-list-text</td>
     <td></td>
     <td>$component-text</td>
     <td></td>
@@ -46,7 +46,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$list-border</td>
+    <td>$kendo-list-border</td>
     <td></td>
     <td>$component-border</td>
     <td>rgba( black, .08 )</td>
