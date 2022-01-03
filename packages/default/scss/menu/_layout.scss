@@ -21,10 +21,12 @@
 
     // Menu item
     .k-menu-item {
+        box-sizing: border-box;
         border-width: 0;
         outline: 0;
         display: flex;
-        flex: 0 0 auto;
+        flex-flow: column nowrap;
+        flex: none;
         position: relative;
         user-select: none;
     }
@@ -36,7 +38,7 @@
         outline: 0;
         color: inherit;
         display: flex;
-        flex-direction: row;
+        flex-flow: row nowrap;
         flex: 1 1 auto;
         align-items: center;
         position: relative;
@@ -48,6 +50,14 @@
         > .k-sprite {
             margin-right: $menu-item-icon-spacing;
         }
+    }
+
+
+    // Menu item text
+    .k-menu-link-text {
+        flex: 1 1 auto;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
 
@@ -101,6 +111,14 @@
         > .k-menu-item > .k-menu-link {
             padding: $menu-popup-item-padding-y $menu-popup-item-padding-x;
             padding-right: $menu-popup-item-padding-end;
+
+            .k-menu-expand-arrow {
+                margin: 0;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                right: $icon-spacing;
+            }
         }
 
         > .k-separator {
@@ -153,6 +171,14 @@
         .k-menu-link {
             padding: $menu-popup-item-padding-y $menu-popup-item-padding-x;
             padding-right: $menu-popup-item-padding-end;
+
+            .k-menu-expand-arrow {
+                margin: 0;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                right: $icon-spacing;
+            }
         }
 
         .k-separator {
@@ -282,6 +308,11 @@
             > .k-menu-item > .k-menu-link {
                 padding-right: $menu-popup-item-padding-x;
                 padding-left: $menu-popup-item-padding-end;
+
+                .k-menu-expand-arrow {
+                    right: auto;
+                    left: $icon-spacing;
+                }
             }
         }
 
@@ -292,6 +323,11 @@
             .k-menu-link {
                 padding-right: $menu-popup-item-padding-x;
                 padding-left: $menu-popup-item-padding-end;
+
+                .k-menu-expand-arrow {
+                    right: auto;
+                    left: $icon-spacing;
+                }
             }
 
         }
