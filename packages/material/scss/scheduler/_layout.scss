@@ -199,8 +199,6 @@
 
     .k-scheduler-edit-form {
 
-        .k-edit-form-container { width: 390px; }
-
         .k-edit-label {
             width: auto;
             margin-bottom: .5em;
@@ -243,20 +241,6 @@
     }
     .k-scheduler-timezones .k-edit-field .k-widget {
         width: 45%;
-    }
-
-
-    // Recurrence editor
-    .k-edit-field .k-recur-interval,
-    .k-edit-field .k-recur-count,
-    .k-edit-field .k-recur-month,
-    .k-edit-field .k-recur-monthday,
-    .k-edit-field .k-recur-weekday-offset,
-    .k-edit-field .k-recur-weekday {
-        width: 28%;
-    }
-    .k-edit-field .k-recur-until {
-        width: 66%;
     }
 
 }
