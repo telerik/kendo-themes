@@ -61,7 +61,7 @@ function ListItemStatic(props) {
     if (legacy) {
         return (
             <li className={legacyListItemClasses} {...ariaAttr} {...htmlAttributes}>
-                {showCheckbox && <CheckboxStatic checked={checked} />}
+                {showCheckbox && <span className="k-checkbox-wrap"><CheckboxStatic checked={checked} /></span>}
                 {showIcon && <IconStatic name={iconName} />}
                 <span className="k-list-item-text">{children}</span>
                 {groupLabel !== '' && <div className="k-group">{groupLabel}</div>}
@@ -71,7 +71,7 @@ function ListItemStatic(props) {
 
     return (
         <li className={listItemClasses} {...ariaAttr} {...htmlAttributes}>
-            {showCheckbox && <CheckboxStatic checked={checked} />}
+            {showCheckbox && <span className="k-checkbox-wrap"><CheckboxStatic checked={checked} /></span>}
             {showIcon && <IconStatic name={iconName} />}
             <span className="k-list-item-text">{children}</span>
             {groupLabel !== '' && <div className="k-list-item-group-label">{groupLabel}</div>}
