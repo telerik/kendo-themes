@@ -9,6 +9,7 @@
 
             // Focused state
             &:focus,
+            &.k-state-focus,
             &.k-state-focused {
                 @include fill(
                     $menu-item-hover-text,
@@ -28,6 +29,7 @@
 
             // Focused
             &:focus,
+            &.k-state-focus,
             &.k-state-focused {
                 @include fill(
                     $menu-popup-item-hover-text,

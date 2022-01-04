@@ -26,7 +26,8 @@
                 );
             }
 
-            > .k-state-active {
+            > .k-state-active,
+            &.k-state-selected {
                 @include fill(
                     $menu-item-expanded-text,
                     $menu-item-expanded-bg,
@@ -36,6 +37,7 @@
             }
 
             &:focus,
+            &.k-state-focus,
             &.k-state-focused {
                 @include box-shadow( $menu-item-focus-shadow );
             }
@@ -69,7 +71,8 @@
                 );
             }
 
-            > .k-state-active {
+            > .k-state-active,
+            &.k-state-selected {
                 @include fill(
                     $menu-popup-item-expanded-text,
                     $menu-popup-item-expanded-bg,
@@ -79,6 +82,7 @@
             }
 
             &:focus,
+            &.k-state-focus,
             &.k-state-focused {
                 @include box-shadow( $menu-popup-item-focus-shadow );
             }
