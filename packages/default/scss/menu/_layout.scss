@@ -65,6 +65,10 @@
     .k-menu-expand-arrow {
         margin-left: $icon-spacing;
         margin-right: -$icon-spacing;
+        display: inline-flex;
+        flex-flow: row wrap;
+        align-items: center;
+        flex: none;
         position: relative;
     }
     .k-menu-expand-arrow.k-i-arrow-60-left,
