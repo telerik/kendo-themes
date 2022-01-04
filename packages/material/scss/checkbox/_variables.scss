@@ -60,11 +60,9 @@ $checkbox-label-margin-x: map-get( $spacing, 1 ) !default;
 
 
 // Checkbox list
-$checkbox-list-margin: 0px !default;
-$checkbox-list-padding: 0px !default;
+$checkbox-list-spacing: map-get( $spacing, 4 ) !default;
 $checkbox-list-item-padding-x: 0px !default;
 $checkbox-list-item-padding-y: $list-item-padding-y !default;
-$checkbox-list-horizontal-item-margin-x: 32px !default;
 
 
 // Checkbox ripple

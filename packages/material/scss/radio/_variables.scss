@@ -56,11 +56,9 @@ $radio-label-margin-x: map-get( $spacing, 1 ) !default;
 
 
 // Radio list
-$radio-list-margin: 0px !default;
-$radio-list-padding: 0px !default;
+$radio-list-spacing: map-get( $spacing, 4 ) !default;
 $radio-list-item-padding-x: 0px !default;
 $radio-list-item-padding-y: $list-item-padding-y !default;
-$radio-list-horizontal-item-margin-x: 32px !default;
 
 
 // Radio ripple
