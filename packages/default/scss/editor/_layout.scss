@@ -564,12 +564,12 @@
             width: 10em;
 
             & + .k-dropdown {
-                width: 4em;
+                width: 5em;
             }
 
             & + .k-colorpicker,
             & + .k-dropdown {
-                margin-left: $padding-x-sm;
+                margin-left: map-get( $spacing, 2 );
             }
         }
 
