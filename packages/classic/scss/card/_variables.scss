@@ -38,15 +38,15 @@ $card-footer-text: $header-text !default;
 $card-footer-border: $header-border !default;
 
 $card-title-margin-bottom: map-get( $spacing, sm ) !default;
-$card-title-font-size: $font-size-md !default;
-$card-title-font-family: inherit !default;
-$card-title-line-height: normal !default;
+$card-title-font-size: $h5-font-size !default;
+$card-title-font-family: null !default;
+$card-title-line-height: 1.25 !default;
 $card-title-font-weight: $font-weight-normal !default;
 $card-title-letter-spacing: null !default;
 
 $card-subtitle-margin-bottom: map-get( $spacing, sm ) !default;
 $card-subtitle-font-size: $font-size-sm !default;
-$card-subtitle-font-family: inherit !default;
+$card-subtitle-font-family: null !default;
 $card-subtitle-line-height: normal !default;
 $card-subtitle-font-weight: $font-weight-normal !default;
 $card-subtitle-letter-spacing: null !default;
