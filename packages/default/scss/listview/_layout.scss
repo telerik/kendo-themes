@@ -3,8 +3,6 @@
     .k-listview {
         margin: 0;
         padding: 0;
-        border-width: $listview-border-width;
-        border-style: solid;
         box-sizing: border-box;
         outline: 0;
         font-family: $listview-font-family;
@@ -17,6 +15,7 @@
     }
     .k-listview-bordered {
         border-width: $listview-border-width;
+        border-style: solid;
     }
 
 
