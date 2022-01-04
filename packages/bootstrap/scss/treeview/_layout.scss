@@ -1,24 +1,15 @@
 @import "~@progress/kendo-theme-default/scss/treeview/_layout.scss";
 
-
 @include exports( "treeview/layout/bootstrap" ) {
 
-    // Base
-    .k-treeview {
-
-        .k-top,
-        .k-mid,
-        .k-bot {
-            padding-top: 2px;
-            padding-bottom: 2px;
-        }
+    // Treeview
+    .k-treeview {}
 
 
-        // Item
-        .k-in {
-            transition: $transition;
-        }
-
+    // Treeview item
+    .k-treeview-item,
+    .k-treeview .k-item {
+        transition: $transition;
     }
 
 }
