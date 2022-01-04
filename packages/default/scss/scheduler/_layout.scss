@@ -858,7 +858,7 @@
     // TODO: add this class to jQuery rendering
     // after refactoring jQuery scheduler layout to be flex
     .k-recurrence-editor {
-        display: inline-flex;
+        display: flex;
         flex-direction: column;
     }
     kendo-scheduler .k-recurrence-editor {
@@ -1110,25 +1110,32 @@
 
     .k-scheduler-edit-form {
 
-        .k-edit-form-container { width: 620px; }
+        .k-edit-form-container { width: 100%; }
         .k-edit-label { width: 17%; }
         .k-edit-field { width: 77%; }
 
-        .k-scheduler-delete {
-            float: left;
+        .k-edit-field > ul > li {
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
         }
 
-
-        .k-widget.k-recur-interval,
-        .k-widget.k-recur-count,
-        .k-widget.k-recur-monthday {
+        .k-recur-interval,
+        .k-recur-count,
+        .k-recur-monthday {
             width: 5em;
         }
-        .k-widget.k-recur-until,
-        .k-widget.k-recur-month,
-        .k-widget.k-recur-weekday,
-        .k-widget.k-recur-weekday-offset {
+        .k-recur-until,
+        .k-recur-month,
+        .k-recur-weekday,
+        .k-recur-weekday-offset {
             width: 10em;
+        }
+
+        .k-scheduler-datetime-picker {
+            display: flex;
+            flex-flow: row nowrap;
+            gap: map-get( $spacing, 2 );
         }
 
     }
