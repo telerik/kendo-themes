@@ -1,21 +1,22 @@
-@include exports("treeview/theme") {
+@import "~@progress/kendo-theme-default/scss/treeview/_theme.scss";
 
-    // Appearance
-    .k-treeview {
-        @include fill(
-            $treeview-text,
-            $treeview-bg,
-            $treeview-border
-        );
+@include exports( "treeview/theme/material" ) {
+
+    // Treeview
+    .k-treeview {}
 
 
-        // Item
-        .k-in {}
+    // Treeview item
+    .k-treeview-item {}
 
 
-        // Interactive states
-        .k-in:hover,
-        .k-in.k-state-hover {
+    // Treeview leaf
+    .k-treeview-leaf,
+    .k-treeview .k-in {
+
+        // Hover state
+        &:hover,
+        &.k-state-hover {
             @include fill(
                 $treeview-item-hovered-text,
                 $treeview-item-hovered-bg,
@@ -23,20 +24,26 @@
                 $treeview-item-hovered-gradient
             );
         }
-        .k-in.k-state-selected {
+
+        // Focus state
+        &:focus,
+        &.k-state-focus,
+        &.k-state-focused {
+            @include fill(
+                $treeview-item-hovered-text,
+                $treeview-item-hovered-bg,
+                $treeview-item-hovered-border,
+                $treeview-item-hovered-gradient
+            );
+        }
+
+        // Selected state
+        &.k-state-selected {
             @include fill(
                 $treeview-item-selected-text,
                 $treeview-item-selected-bg,
                 $treeview-item-selected-border,
                 $treeview-item-selected-gradient
-            );
-        }
-        .k-in.k-state-focused {
-            @include fill(
-                $treeview-item-hovered-text,
-                $treeview-item-hovered-bg,
-                $treeview-item-hovered-border,
-                $treeview-item-hovered-gradient
             );
         }
     }

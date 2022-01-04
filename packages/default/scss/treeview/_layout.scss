@@ -1,8 +1,8 @@
 @include exports("treeview/layout") {
 
-    // Base
+    // Treeview
     .k-treeview {
-        padding: $treeview-padding-y $treeview-padding-x;
+        padding: 0;
         border-width: 0;
         background: none;
         box-sizing: border-box;
@@ -16,133 +16,126 @@
         white-space: nowrap;
         -webkit-touch-callout: none;
         -webkit-tap-highlight-color: $rgba-transparent;
+    }
 
-        > .k-group {
-            outline: 0;
-            -webkit-touch-callout: none;
-            -webkit-tap-highlight-color: $rgba-transparent;
-        }
 
-        .k-content,
-        > .k-group,
-        .k-item > .k-group {
-            margin: 0;
-            padding: 0;
-            background: none;
-            list-style: none;
-            position: relative;
+    // Treeview group
+    .k-treeview-group,
+    .k-treeview .k-group {
+        margin: 0;
+        padding: 0;
+        background: none;
+        list-style: none;
+        position: relative;
+        outline: 0;
+        -webkit-touch-callout: none;
+        -webkit-tap-highlight-color: $rgba-transparent;
 
-            &.ng-animating {
-                overflow: hidden;
-            }
-        }
-
-        // Wrappers
-        .k-top,
-        .k-mid,
-        .k-bot {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            align-content: center;
-        }
-
-        // Items
-        .k-item {
-            outline-style: none;
-            margin: 0;
-            padding: 0 0 0 $treeview-indent;
-            border-width: 0;
-            display: block;
-        }
-
-        // Link
-        .k-in {
-            @include border-radius( $treeview-item-border-radius );
-            margin: 0;
-            padding: $treeview-item-padding-y $treeview-item-padding-x;
-            border: $treeview-item-border-width solid transparent;
-            text-decoration: none;
-            display: inline-flex;
-            align-items: center;
-            align-content: center;
-            vertical-align: middle;
-            position: relative;
-        }
-        .k-in.k-state-focused {
-            z-index: 1;
-        }
-
-        // LoadMore button
-        .k-treeview-load-more-button {
-            cursor: pointer;
-
-            &:hover,
-            &.k-state-hover,
-            &:focus,
-            &.k-state-focused {
-                text-decoration: underline;
-            }
-        }
-        .k-treeview-load-more-checkboxes-container {
-            padding-left: $treeview-loadmore-checkboxes-padding-x;
-
-            .k-i-loading {
-                margin-left: $treeview-loadmore-checkboxes-icon-indent;
-                margin-right: $treeview-loadmore-checkboxes-icon-margin-x;
-            }
-        }
-
-        // Expand / collapse
-        .k-i-expand,
-        .k-i-collapse {
-            margin-left: -$treeview-indent;
-            cursor: pointer;
-
-            + .k-checkbox-wrapper {
-                margin-left: $icon-spacing;
-            }
-        }
-
-        // Checkboxes
-        .k-checkbox-wrapper {
-            margin-right: $icon-spacing;
-        }
-
-        // TODO: Delete the following block when https://github.com/telerik/kendo-angular-treeview/issues/138 is done
-        // Drag and Drop icon
-        .k-i-drag-and-drop {
-            position: absolute;
-            transform: translate(-50%, -50%);
-            z-index: 1000;
-        }
-
-        // Other content
-        .k-in .k-icon,
-        .k-in .k-image,
-        .k-in .k-sprite {
-            margin-right: $icon-spacing;
+        &.ng-animating {
+            overflow: hidden;
         }
     }
+
+
+    // Treeview wrappers
+    .k-treeview-top,
+    .k-treeview .k-top,
+    .k-treeview-mid,
+    .k-treeview .k-mid,
+    .k-treeview-bot,
+    .k-treeview .k-bot {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        align-content: center;
+    }
+
+
+    // Treeview item
+    .k-treeview-item,
+    .k-treeview .k-item {
+        outline-style: none;
+        margin: 0;
+        padding: 0 0 0 $treeview-indent;
+        border-width: 0;
+        display: block;
+    }
+
+
+    // Expand / collapse
+    .k-treeview .k-i-expand,
+    .k-treeview .k-i-collapse {
+        margin-left: -$treeview-indent;
+        cursor: pointer;
+
+        + .k-checkbox-wrapper {
+            margin-left: $icon-spacing;
+        }
+    }
+
+
+    // Loading icon
+    .k-treeview-loading {
+        margin-right: $icon-spacing;
+    }
+
+
+    // Checkboxes
+    .k-treeview .k-checkbox-wrapper {
+        margin-right: $icon-spacing;
+    }
+
+
+    // Treeview leaf
+    .k-treeview-leaf,
+    .k-treeview .k-in {
+        @include border-radius( $treeview-item-border-radius );
+        margin: 0;
+        padding: $treeview-item-padding-y $treeview-item-padding-x;
+        border: $treeview-item-border-width solid transparent;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        align-content: center;
+        vertical-align: middle;
+        position: relative;
+
+        .k-icon,
+        .k-image,
+        .k-sprite {
+            margin-right: $icon-spacing;
+        }
+
+        &.k-state-focus,
+        &.k-state-focused {
+            z-index: 1;
+        }
+    }
+
+
+    // Treeview load more button
+    .k-treeview .k-treeview-load-more-button {
+        cursor: pointer;
+
+        &:hover,
+        &.k-state-hover,
+        &:focus,
+        &.k-state-focus,
+        &.k-state-focused {
+            text-decoration: underline;
+        }
+    }
+
 
     // RTL
     .k-rtl .k-treeview,
     .k-treeview[dir="rtl"] {
 
-        // Items
-        .k-item {
+        // Treeview item
+        .k-item,
+        .k-treeview-item {
             padding-left: 0;
             padding-right: $treeview-indent;
-        }
-
-        .k-treeview-load-more-checkboxes-container {
-            padding-left: 0;
-            padding-right: $treeview-loadmore-checkboxes-padding-x;
-
-            .k-i-loading {
-                margin-left: $treeview-loadmore-checkboxes-icon-margin-x;
-                margin-right: $treeview-loadmore-checkboxes-icon-indent;
-            }
         }
 
         // Expand / collapse
@@ -154,6 +147,12 @@
             + .k-checkbox-wrapper {
                 margin-right: $icon-spacing;
             }
+        }
+
+        // Loading
+        .k-treeview-loading {
+            margin-right: 0;
+            margin-left: $icon-spacing;
         }
 
         // Checkboxes
