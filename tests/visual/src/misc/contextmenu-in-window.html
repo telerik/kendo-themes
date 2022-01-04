@@ -9,16 +9,21 @@
     <script src="../../../../packages/html/dist/index.js"></script>
 
     <style>
+        #test-area {
+            height: 300px;
+        }
+
+        .k-animation-container {
+            overflow: visible;
+            z-index: 12000;
+        }
+
         .k-window {
             position: relative;
         }
         kendo-popup {
             top: 50px;
             left: 100px;
-        }
-
-        #test-area {
-            height: 300px;
         }
     </style>
 </head>
@@ -39,7 +44,7 @@
                 <div class="k-window-content">Target</div>
             </kendo-window>
 
-            <kendo-popup class="k-animation-container k-context-menu-popup k-animation-container-shown">
+            <kendo-popup class="k-animation-container">
                 <div class="k-popup k-menu-popup">
                     <menu is="MenuList" class="k-context-menu">
                         <li is="MenuItem" text="Item 1" showArrow></li>

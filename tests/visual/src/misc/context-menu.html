@@ -9,23 +9,26 @@
     <script src="../../../../packages/html/dist/index.js"></script>
 
     <style>
-        #test-area {
-            grid-template-columns: 1fr 1fr 1fr;
-            align-items: start;
+        .wrap,
+        .k-animation-container {
+            width: min-content;
+            position: relative;
+            overflow: visible;
         }
 
-        .k-animation-container {
-            position: relative;
-            display: inline-block;
+        .child-menu {
+            position: absolute;
+            left: 100%;
+            top: 0;
         }
     </style>
 </head>
 <body class="k-body">
 
-    <div id="test-area" class="grid">
+    <div id="test-area" class="k-d-grid">
 
-        <section>
-            <div class="k-animation-container k-animation-container-fixed k-context-menu-popup k-animation-container-shown">
+        <section class="wrap">
+            <div class="k-animation-container">
                 <div class="k-popup k-menu-popup">
                     <menu is="MenuList" class="k-context-menu">
                         <li is="MenuItem" text="Item 1" selected showArrow></li>
@@ -35,7 +38,7 @@
                 </div>
             </div>
 
-            <div class="k-animation-container k-animation-container-shown" style="left: -6px; top: 0; z-index: 12001;">
+            <div class="k-animation-container child-menu">
                 <div class="k-popup k-menu-popup">
                     <menu is="MenuList">
                         <li is="MenuItem" text="Item 1.1"></li>
