@@ -23,6 +23,7 @@
         -webkit-appearance: none;
     }
 
+
     // Checkbox indicator
     .k-checkbox::before {
         @if $checkbox-icon-type == "glyph" {
@@ -107,6 +108,26 @@
         @include disabled( $disabled-styling );
     }
 
+
+    // Checkbox wrap
+    .k-checkbox-wrap {
+        flex: none;
+        display: inline-flex;
+        flex-flow: row nowrap;
+        gap: 0;
+        align-items: center;
+
+        &::before {
+            content: "\200b";
+            width: 0px;
+            overflow: hidden;
+            flex: none;
+            display: inline-block;
+            vertical-align: top;
+        }
+    }
+
+
     // Checkbox label
     .k-checkbox-label {
         margin: 0;
@@ -181,24 +202,31 @@
 
     // Checkbox list
     .k-checkbox-list {
-        margin: $checkbox-list-margin;
-        padding: $checkbox-list-padding;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 0;
         list-style: none;
+    }
+    .k-checkbox-item,
+    .k-checkbox-list-item {
+        padding: $checkbox-list-item-padding-y $checkbox-list-item-padding-x;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        align-content: center;
+        gap: map-get( $spacing, 1 );
 
-        .k-checkbox-item {
-            padding: $checkbox-list-item-padding-y $checkbox-list-item-padding-x;
+        .k-radio-label {
+            line-height: inherit;
         }
     }
-
-    .k-list-horizontal {
-        .k-checkbox-item {
-            display: inline-block;
-            margin: 0 $checkbox-list-horizontal-item-margin-x 0 0;
-
-            &:last-child {
-                margin-right: 0;
-            }
-        }
+    .k-checkbox-list-horizontal,
+    .k-checkbox-list.k-list-horizontal {
+        display: flex;
+        flex-flow: row wrap;
+        gap: $checkbox-list-spacing;
     }
 
 
@@ -220,17 +248,6 @@
         kendo-label.k-checkbox-label > .k-label:first-child {
             margin-right: 0;
             margin-left: $checkbox-label-margin-x;
-        }
-
-        .k-list-horizontal {
-            .k-checkbox-item {
-                margin-right: 0;
-                margin-left: $checkbox-list-horizontal-item-margin-x;
-
-                &:last-child {
-                    margin-left: 0;
-                }
-            }
         }
     }
 
