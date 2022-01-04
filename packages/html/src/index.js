@@ -89,6 +89,7 @@ export * from './menu/index';
 // export * from './pager/index';
 // export * from './stepper/index';
 // export * from './tabstrip/index';
+export * from './treeview/index';
 // export * from './wizard/index';
 
 // Layout & containers
