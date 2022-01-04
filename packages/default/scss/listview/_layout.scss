@@ -3,7 +3,7 @@
     .k-listview {
         margin: 0;
         padding: 0;
-        border-width: $listview-border-width;
+        border-width: 0;
         border-style: solid;
         box-sizing: border-box;
         outline: 0;
@@ -23,7 +23,6 @@
     // Header
     .k-listview-header {
         border-width: 0;
-        border-bottom-width: $listview-border-width;
         border-style: solid;
         border-color: inherit;
     }
@@ -32,7 +31,7 @@
     }
 
 
-    // Listview contnet
+    // Listview content
     .k-listview-content {
         margin: 0;
         padding: 0;
@@ -87,7 +86,6 @@
     // Listview footer
     .k-listview-footer {
         border-width: 0;
-        border-top-width: $listview-border-width;
         border-style: solid;
         border-color: inherit;
     }
@@ -99,13 +97,8 @@
     // Listview pager
     .k-listview-pager {
         border-width: 0;
-        border-top-width: $listview-border-width;
         border-color: inherit;
         font: inherit;
-    }
-    .k-listview-pager-top {
-        border-top-width: 0;
-        border-bottom-width: $listview-border-width;
     }
     .k-listview-bordered > .k-listview-pager-top {
         border-bottom-width: $listview-border-width;
