@@ -274,6 +274,7 @@
         font-family: Arial, Verdana, Sans-serif;
         flex: 1;
         position: relative;
+        overflow: hidden;
 
         // disabled cells in the Spreadsheet should allow navigation if link is used
         .k-state-disabled {
