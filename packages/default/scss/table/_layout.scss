@@ -56,6 +56,9 @@
             border-left-width: 0;
         }
     }
+    .k-table-th {
+        border-bottom-width: 1px;
+    }
 
 
     // Table header
@@ -76,6 +79,12 @@
         border-style: solid;
         border-color: inherit;
         overflow: hidden;
+    }
+    .k-table-header,
+    .k-table-header-wrap {
+        > .k-table {
+            margin-bottom: -1px;
+        }
     }
 
 
