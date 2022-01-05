@@ -164,7 +164,8 @@
 
 
     // Virtualization
-    .k-virtual-table .k-table-row {
+    .k-virtual-table .k-table-row,
+    .k-virtual-table .k-table-group-row {
         position: absolute;
         width: 100%;
     }
