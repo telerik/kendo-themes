@@ -271,7 +271,8 @@
         box-sizing: border-box;
         border-width: 1px 0 0;
         border-style: solid;
-        border-radius: 0;
+        border-color: inherit !important; // sass-lint:disable-line no-important
+        border-radius: 0 !important; // sass-lint:disable-line no-important
         flex: none;
         display: flex;
         flex-flow: row nowrap;
@@ -296,11 +297,6 @@
                 height: 20px;
                 fill: currentColor;
                 display: inline-block;
-            }
-
-            &::before,
-            &::after {
-                display: none;
             }
 
             .k-rtl &,
