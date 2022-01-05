@@ -74,19 +74,6 @@
             );
         }
 
-
-        // Message box
-        .k-message-box {
-            @include fill(
-                $chat-message-box-text,
-                $chat-message-box-bg,
-                $chat-message-box-border
-            );
-        }
-        .k-message-box.k-state-focused {
-            @include box-shadow( $chat-message-box-focus-shadow );
-        }
-
     }
 
 
