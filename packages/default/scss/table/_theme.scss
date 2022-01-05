@@ -1,4 +1,4 @@
-@include exports("table/theme") {
+@include exports( "table/theme" ) {
 
     // Table
     .k-table,
@@ -11,7 +11,8 @@
 
     // Table header
     .k-table-thead,
-    .k-table-header {
+    .k-table-header,
+    .k-table-group-sticky-header {
         border-color: $table-header-border;
         color: $table-header-text;
         background-color: $table-header-bg;
