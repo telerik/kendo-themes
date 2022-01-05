@@ -1,4 +1,4 @@
-@include exports("table/layout") {
+@include exports( "table/layout" ) {
 
     // Table
     .k-table {
@@ -30,12 +30,11 @@
     // Table native parts
     .k-table-thead,
     .k-table-tbody,
-    .k-table-tfoot {
-        text-align: inherit;
-    }
+    .k-table-tfoot,
     .k-table-row,
     .k-table-alt-row {
         border-color: inherit;
+        text-align: inherit;
     }
     .k-table-th,
     .k-table-td {
@@ -84,6 +83,18 @@
     .k-table-header-wrap {
         > .k-table {
             margin-bottom: -1px;
+        }
+    }
+    .k-table-group-sticky-header {
+        font-size: $table-font-size;
+        line-height: $line-height;
+        flex: none;
+
+        .k-table-th {
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            align-content: center;
         }
     }
 

@@ -58,13 +58,13 @@ $table-footer-border: $grid-footer-border !default;
 
 /// Background color of group rows in table.
 /// @group table
-$table-group-row-bg: $grid-grouping-row-bg !default;
+$table-group-row-bg: $table-header-bg !default;
 /// Text color of group rows in table.
 /// @group table
-$table-group-row-text: $grid-grouping-row-text !default;
+$table-group-row-text: $table-header-text !default;
 /// Border color of group rows in table.
 /// @group table
-$table-group-row-border: null !default;
+$table-group-row-border: $table-header-border !default;
 
 
 /// Background color of alternating rows in table.
