@@ -9,365 +9,192 @@
     <script src="../../../../packages/html/dist/index.js"></script>
 
     <style>
-        #test-area {
-            grid-template-columns: repeat(2, 1fr);
-        }
-        #test-area > span {
-            justify-self: center;
-        }
     </style>
 </head>
 <body class="k-body">
 
-    <div id="test-area" class="grid">
+    <div id="test-area" class="k-d-grid k-grid-cols-4">
 
-        <span>LTR</span>
-        <span>RTL</span>
-
-        <section>
-            <kendo-treeview class="k-widget k-treeview">
-                <ul class="k-treeview-lines k-group">
-                    <li class="k-item">
-                        <div class="k-top">
-                            <i is="Icon" name="expand"></i>
-                            <span class="k-in">Normal</span>
-                        </div>
-                    </li>
-                    <li class="k-item">
-                        <div class="k-mid">
-                            <i is="Icon" name="expand"></i>
-                            <span class="k-in k-state-hover">Hover</span>
-                        </div>
-                    </li>
-                    <li class="k-item">
-                        <div class="k-mid">
-                            <i is="Icon" name="expand"></i>
-                            <span class="k-in k-state-focused">Focus</span>
-                        </div>
-                    </li>
-                    <li class="k-item">
-                        <div class="k-mid">
-                            <i is="Icon" name="expand"></i>
-                            <span class="k-in k-state-selected">Selected</span>
-                        </div>
-                    </li>
-                    <li class="k-item">
-                        <div class="k-mid">
-                            <i is="Icon" name="expand"></i>
-                            <span class="k-in k-state-selected k-state-focused">Selected &amp; Focused</span>
-                        </div>
-                    </li>
-                    <li class="k-item k-state-disabled">
-                        <div class="k-mid">
-                            <i is="Icon" name="expand"></i>
-                            <span class="k-in">Disabled</span>
-                        </div>
-                    </li>
-                    <li class="k-item k-treeview-item">
-                        <div class="k-mid">
-                            <span class="k-in k-treeview-load-more-button">Load more</span>
-                        </div>
-                    </li>
-                </ul>
-            </kendo-treeview>
-        </section>
-        <section>
-            <kendo-treeview class="k-widget k-treeview" dir="rtl">
-                <ul class="k-treeview-lines k-group">
-                    <li class="k-item">
-                        <div class="k-top">
-                            <i is="Icon" name="expand"></i>
-                            <span class="k-in">Normal</span>
-                        </div>
-                    </li>
-                    <li class="k-item">
-                        <div class="k-mid">
-                            <i is="Icon" name="expand"></i>
-                            <span class="k-in k-state-hover">Hover</span>
-                        </div>
-                    </li>
-                    <li class="k-item">
-                        <div class="k-mid">
-                            <i is="Icon" name="expand"></i>
-                            <span class="k-in k-state-focused">Focus</span>
-                        </div>
-                    </li>
-                    <li class="k-item">
-                        <div class="k-mid">
-                            <i is="Icon" name="expand"></i>
-                            <span class="k-in k-state-selected">Selected</span>
-                        </div>
-                    </li>
-                    <li class="k-item">
-                        <div class="k-mid">
-                            <i is="Icon" name="expand"></i>
-                            <span class="k-in k-state-selected k-state-focused">Selected &amp; Focused</span>
-                        </div>
-                    </li>
-                    <li class="k-item k-state-disabled">
-                        <div class="k-mid">
-                            <i is="Icon" name="expand"></i>
-                            <span class="k-in">Disabled</span>
-                        </div>
-                    </li>
-                    <li class="k-item k-treeview-item">
-                        <div class="k-mid">
-                            <span class="k-in k-treeview-load-more-button">Load more</span>
-                        </div>
-                    </li>
-                </ul>
-            </kendo-treeview>
-        </section>
+        <span>states</span>
+        <span>states (rtl)</span>
+        <span>hierarchy</span>
+        <span>hierarchy (rtl)</span>
 
         <section>
-            <kendo-treeview class="k-widget k-treeview">
-                <ul class="k-treeview-lines k-group">
-                    <li class="k-item">
-                        <div class="k-top">
-                            <i is="Icon" name="expand"></i>
-                            <span class="k-in">Collapsed</span>
-                        </div>
-                    </li>
-                    <li class="k-item">
-                        <div class="k-bot">
-                            <i is="Icon" name="collapse"></i>
-                            <span class="k-in">Expanded</span>
-                        </div>
-                        <ul class="k-group">
-                            <li class="k-item">
-                                <div class="k-top">
-                                    <i is="Icon" name="expand"></i>
-                                    <span class="k-in">Child (collapsed)</span>
-                                </div>
-                            </li>
-                            <li class="k-item">
-                                <div class="k-mid">
-                                    <span class="k-in">Child</span>
-                                </div>
-                            </li>
-                            <li class="k-item k-treeview-item">
-                                <div class="k-mid">
-                                    <span class="k-in k-treeview-load-more-button k-state-focused">Load more</span>
-                                </div>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </kendo-treeview>
+            <ul is="Treeview">
+                <li>Normal</li>
+                <li hover>Hover</li>
+                <li focus>Focus</li>
+                <li selected>Selected</li>
+                <li selected focus>Selected focus</li>
+                <li disabled>Disabled</li>
+                <li disabled focus>Disabled focus</li>
+                <li leafClassName="k-treeview-load-more-button">Load more...</li>
+            </ul>
         </section>
         <section>
-            <kendo-treeview class="k-widget k-treeview" dir="rtl">
-                <ul class="k-treeview-lines k-group">
-                    <li class="k-item">
-                        <div class="k-top">
-                            <i is="Icon" name="expand"></i>
-                            <span class="k-in">Collapsed</span>
-                        </div>
-                    </li>
-                    <li class="k-item">
-                        <div class="k-bot">
-                            <i is="Icon" name="collapse"></i>
-                            <span class="k-in">Expanded</span>
-                        </div>
-                        <ul class="k-group">
-                            <li class="k-item">
-                                <div class="k-top">
-                                    <i is="Icon" name="expand"></i>
-                                    <span class="k-in">Child (collapsed)</span>
-                                </div>
-                            </li>
-                            <li class="k-item">
-                                <div class="k-bot">
-                                    <span class="k-in">Child</span>
-                                </div>
-                            </li>
-                            <li class="k-item k-treeview-item">
-                                <div class="k-mid">
-                                    <span class="k-in k-treeview-load-more-button k-state-focused">Load more</span>
-                                </div>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </kendo-treeview>
+            <ul is="Treeview" dir="rtl">
+                <li>Normal</li>
+                <li hover>Hover</li>
+                <li focus>Focus</li>
+                <li selected>Selected</li>
+                <li selected focus>Selected focus</li>
+                <li disabled>Disabled</li>
+                <li disabled focus>Disabled focus</li>
+                <li hover leafClassName="k-treeview-load-more-button">Load more...</li>
+            </ul>
+        </section>
+        <section>
+            <ul is="Treeview">
+                <li>Root 1</li>
+                <li expanded>Root 2
+                    <ul>
+                        <li>Child 2.1</li>
+                        <li>Child 2.2
+                            <ul>
+                                <li>Child 2.2.1</li>
+                            </ul>
+                        </li>
+                        <li>Child 2.3</li>
+                        <li leafClassName="k-treeview-load-more-button">Load more...</li>
+                    </ul>
+                </li>
+                <li>Root 3
+                    <ul>
+                        <li>Child 3.1</li>
+                        <li>Child 3.2</li>
+                        <li>Child 3.3</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <ul is="Treeview" dir="rtl">
+                <li>Root 1</li>
+                <li expanded>Root 2
+                    <ul>
+                        <li>Child 2.1</li>
+                        <li>Child 2.2
+                            <ul>
+                                <li>Child 2.2.1</li>
+                            </ul>
+                        </li>
+                        <li>Child 2.3</li>
+                        <li focus leafClassName="k-treeview-load-more-button">Load more...</li>
+                    </ul>
+                </li>
+                <li>Root 3
+                    <ul>
+                        <li>Child 3.1</li>
+                        <li>Child 3.2</li>
+                        <li>Child 3.3</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+
+        <span>icons</span>
+        <span>icons (rtl)</span>
+        <span>checkboxes</span>
+        <span>checkboxes (rtl)</span>
+
+        <section>
+            <ul is="Treeview">
+                <li>Root 1</li>
+                <li showIcon iconName="folder" expanded>Root 2
+                    <ul>
+                        <li showIcon iconName="folder">Child 2.1</li>
+                        <li showIcon iconName="folder">Child 2.2
+                            <ul>
+                                <li showIcon iconName="folder">Child 2.2.1</li>
+                            </ul>
+                        </li>
+                        <li showIcon iconName="folder">Child 2.3</li>
+                        <li leafClassName="k-treeview-load-more-button">Load more...</li>
+                    </ul>
+                </li>
+                <li showIcon iconName="folder">Root 3
+                    <ul>
+                        <li showIcon iconName="folder">Child 3.1</li>
+                        <li showIcon iconName="folder">Child 3.2</li>
+                        <li showIcon iconName="folder">Child 3.3</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <ul is="Treeview" dir="rtl">
+                <li>Root 1</li>
+                <li showIcon iconName="folder" expanded>Root 2
+                    <ul>
+                        <li showIcon iconName="folder">Child 2.1</li>
+                        <li showIcon iconName="folder">Child 2.2
+                            <ul>
+                                <li showIcon iconName="folder">Child 2.2.1</li>
+                            </ul>
+                        </li>
+                        <li showIcon iconName="folder">Child 2.3</li>
+                        <li leafClassName="k-treeview-load-more-button">Load more...</li>
+                    </ul>
+                </li>
+                <li showIcon iconName="folder">Root 3
+                    <ul>
+                        <li showIcon iconName="folder">Child 3.1</li>
+                        <li showIcon iconName="folder">Child 3.2</li>
+                        <li showIcon iconName="folder">Child 3.3</li>
+                    </ul>
+                </li>
+            </ul>
         </section>
 
         <section>
-            <kendo-treeview class="k-widget k-treeview">
-                <ul class="k-treeview-lines k-group">
-                    <li class="k-item k-treeview-item">
-                        <div class="k-mid">
-                            <span class="k-in">
-                                <i is="Icon" name="file"></i>
-                                <span>Alisson Becker</span>
-                            </span>
-                        </div>
-                    </li>
-                    <li class="k-item k-treeview-item">
-                        <div class="k-mid">
-                            <span class="k-in">
-                                <i is="Icon" name="file"></i>
-                                <span>Adrian</span>
-                            </span>
-                        </div>
-                    </li>
-                    <li class="k-item k-treeview-item">
-                        <div class="k-mid">
-                            <span class="k-in">
-                                <i is="Icon" name="file"></i>
-                                <span>Keomin Kelleher</span>
-                            </span>
-                        </div>
-                    </li>
-                    <li class="k-item k-treeview-item">
-                        <div class="k-mid">
-                            <span class="k-in k-treeview-load-more-button">
-                                <i is="Icon" name="folder-more"></i>
-                                <span>Load more...</span>
-                            </span>
-                        </div>
-                    </li>
-                </ul>
-            </kendo-treeview>
+            <ul is="Treeview">
+                <li>Root 1</li>
+                <li showCheckbox expanded checked>Root 2
+                    <ul>
+                        <li showCheckbox checked>Child 2.1</li>
+                        <li showCheckbox>Child 2.2
+                            <ul>
+                                <li showCheckbox>Child 2.2.1</li>
+                            </ul>
+                        </li>
+                        <li showCheckbox>Child 2.3</li>
+                        <li leafClassName="k-treeview-load-more-button">Load more...</li>
+                    </ul>
+                </li>
+                <li showCheckbox>Root 3
+                    <ul>
+                        <li showCheckbox>Child 3.1</li>
+                        <li showCheckbox>Child 3.2</li>
+                        <li showCheckbox>Child 3.3</li>
+                    </ul>
+                </li>
+            </ul>
         </section>
         <section>
-            <kendo-treeview class="k-widget k-treeview" dir="rtl">
-                <ul class="k-treeview-lines k-group">
-                    <li class="k-item k-treeview-item">
-                        <div class="k-mid">
-                            <span class="k-in">
-                                <i is="Icon" name="file"></i>
-                                <span>Alisson Becker</span>
-                            </span>
-                        </div>
-                    </li>
-                    <li class="k-item k-treeview-item">
-                        <div class="k-mid">
-                            <span class="k-in">
-                                <i is="Icon" name="file"></i>
-                                <span>Adrian</span>
-                            </span>
-                        </div>
-                    </li>
-                    <li class="k-item k-treeview-item">
-                        <div class="k-mid">
-                            <span class="k-in">
-                                <i is="Icon" name="file"></i>
-                                <span>Keomin Kelleher</span>
-                            </span>
-                        </div>
-                    </li>
-                    <li class="k-item k-treeview-item">
-                        <div class="k-mid">
-                            <span class="k-in k-treeview-load-more-button">
-                                <i is="Icon" name="folder-more"></i>
-                                <span>Load more...</span>
-                            </span>
-                        </div>
-                    </li>
-                </ul>
-            </kendo-treeview>
-        </section>
-
-        <section>
-            <kendo-treeview class="k-widget k-treeview">
-                <ul class="k-treeview-lines k-group">
-                    <li class="k-item">
-                        <div class="k-mid">
-                            <kendo-checkbox class="k-checkbox-wrapper">
-                                <input is="Checkbox" id="_1d54c47f-dd40-4e68-ac87-8384d41d459b" checked />
-                                <label class="k-checkbox-label" for="_1d54c47f-dd40-4e68-ac87-8384d41d459b"></label>
-                            </kendo-checkbox>
-                            <span class="k-in">Checked</span>
-                        </div>
-                        <ul class="k-group">
-                            <li class="k-item">
-                                <div class="k-top">
-                                <kendo-checkbox class="k-checkbox-wrapper">
-                                    <input is="Checkbox" id="_45f9e40b-6fc4-415c-a06a-7fb8dba3ef46" />
-                                    <label class="k-checkbox-label" for="_45f9e40b-6fc4-415c-a06a-7fb8dba3ef46"></label>
-                                </kendo-checkbox>
-                                    <span class="k-in">Normal</span>
-                                </div>
-                            </li>
-                            <li class="k-item">
-                                <div class="k-mid">
-                                <kendo-checkbox class="k-checkbox-wrapper">
-                                    <input is="Checkbox" id="_45f9e40b-6fc4-415c-a06a-7fb8dba3ef47" />
-                                    <label class="k-checkbox-label" for="_45f9e40b-6fc4-415c-a06a-7fb8dba3ef47"></label>
-                                </kendo-checkbox>
-                                    <span class="k-in k-state-hover">Hover</span>
-                                </div>
-                            </li>
-                            <li class="k-item">
-                                <div class="k-mid">
-                                <kendo-checkbox class="k-checkbox-wrapper">
-                                    <input is="Checkbox" id="_45f9e40b-6fc4-415c-a06a-7fb8dba3ef49" />
-                                    <label class="k-checkbox-label" for="_45f9e40b-6fc4-415c-a06a-7fb8dba3ef49"></label>
-                                </kendo-checkbox>
-                                    <span class="k-in k-state-selected">Selected</span>
-                                </div>
-                            </li>
-                            <li class="k-item k-treeview-item k-treeview-load-more-checkboxes-container">
-                                <div class="k-mid">
-                                    <i is="Icon" name="loading"></i>
-                                    <span class="k-in k-treeview-load-more-button">Load more</span>
-                                </div>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </kendo-treeview>
-        </section>
-        <section>
-            <kendo-treeview class="k-widget k-treeview" dir="rtl">
-                <ul class="k-treeview-lines k-group">
-                    <li class="k-item">
-                        <div class="k-mid">
-                            <kendo-checkbox class="k-checkbox-wrapper">
-                                <input is="Checkbox" id="_1d54c47f-dd40-4e68-ac87-8384d41d459b" checked />
-                                <label class="k-checkbox-label" for="_1d54c47f-dd40-4e68-ac87-8384d41d459b"></label>
-                            </kendo-checkbox>
-                            <span class="k-in">Checked</span>
-                        </div>
-                        <ul class="k-group">
-                            <li class="k-item">
-                                <div class="k-top">
-                                <kendo-checkbox class="k-checkbox-wrapper">
-                                    <input is="Checkbox" id="_45f9e40b-6fc4-415c-a06a-7fb8dba3ef46" />
-                                    <label class="k-checkbox-label" for="_45f9e40b-6fc4-415c-a06a-7fb8dba3ef46"></label>
-                                </kendo-checkbox>
-                                    <span class="k-in">Normal</span>
-                                </div>
-                            </li>
-                            <li class="k-item">
-                                <div class="k-mid">
-                                <kendo-checkbox class="k-checkbox-wrapper">
-                                    <input is="Checkbox" id="_45f9e40b-6fc4-415c-a06a-7fb8dba3ef47" />
-                                    <label class="k-checkbox-label" for="_45f9e40b-6fc4-415c-a06a-7fb8dba3ef47"></label>
-                                </kendo-checkbox>
-                                    <span class="k-in k-state-hover">Hover</span>
-                                </div>
-                            </li>
-                            <li class="k-item">
-                                <div class="k-mid">
-                                <kendo-checkbox class="k-checkbox-wrapper">
-                                    <input is="Checkbox" id="_45f9e40b-6fc4-415c-a06a-7fb8dba3ef49" />
-                                    <label class="k-checkbox-label" for="_45f9e40b-6fc4-415c-a06a-7fb8dba3ef49"></label>
-                                </kendo-checkbox>
-                                    <span class="k-in k-state-selected">Selected</span>
-                                </div>
-                            </li>
-                            <li class="k-item k-treeview-item k-treeview-load-more-checkboxes-container">
-                                <div class="k-mid">
-                                    <i is="Icon" name="loading"></i>
-                                    <span class="k-in k-treeview-load-more-button">Load more</span>
-                                </div>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </kendo-treeview>
+            <ul is="Treeview" dir="rtl">
+                <li>Root 1</li>
+                <li showCheckbox expanded checked>Root 2
+                    <ul>
+                        <li showCheckbox checked>Child 2.1</li>
+                        <li showCheckbox>Child 2.2
+                            <ul>
+                                <li showCheckbox>Child 2.2.1</li>
+                            </ul>
+                        </li>
+                        <li showCheckbox>Child 2.3</li>
+                        <li leafClassName="k-treeview-load-more-button">Load more...</li>
+                    </ul>
+                </li>
+                <li showCheckbox>Root 3
+                    <ul>
+                        <li showCheckbox>Child 3.1</li>
+                        <li showCheckbox>Child 3.2</li>
+                        <li showCheckbox>Child 3.3</li>
+                    </ul>
+                </li>
+            </ul>
         </section>
 
     </div>

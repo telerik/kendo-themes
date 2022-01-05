@@ -81,6 +81,25 @@
         @include disabled( $disabled-styling );
     }
 
+
+    // Radio wrap
+    .k-radio-wrap {
+        flex: none;
+        display: inline-flex;
+        flex-flow: row nowrap;
+        gap: 0;
+        align-items: center;
+
+        &::before {
+            content: "\200b";
+            width: 0px;
+            overflow: hidden;
+            flex: none;
+            display: inline-block;
+            vertical-align: top;
+        }
+    }
+
     .k-radio + .k-radio-label {
         display: inline;
     }
@@ -144,24 +163,31 @@
 
     // Radio list
     .k-radio-list {
-        margin: $radio-list-margin;
-        padding: $radio-list-padding;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 0;
         list-style: none;
+    }
+    .k-radio-item,
+    .k-radio-list-item {
+        padding: $radio-list-item-padding-y $radio-list-item-padding-x;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        align-content: center;
+        gap: map-get( $spacing, 1 );
 
-        .k-radio-item {
-            padding: $radio-list-item-padding-y $radio-list-item-padding-x;
+        .k-radio-label {
+            line-height: inherit;
         }
     }
-
-    .k-list-horizontal {
-        .k-radio-item {
-            display: inline-block;
-            margin: 0 $radio-list-horizontal-item-margin-x 0 0;
-
-            &:last-child {
-                margin-right: 0;
-            }
-        }
+    .k-radio-list-horizontal,
+    .k-radio-list.k-list-horizontal {
+        display: flex;
+        flex-flow: row wrap;
+        gap: $radio-list-spacing;
     }
 
     // RTL
@@ -183,17 +209,6 @@
         kendo-label.k-radio-label > .k-label:first-child {
             margin-right: 0;
             margin-left: $radio-label-margin-x;
-        }
-
-        .k-list-horizontal {
-            .k-radio-item {
-                margin-right: 0;
-                margin-left: $radio-list-horizontal-item-margin-x;
-
-                &:last-child {
-                    margin-left: 0;
-                }
-            }
         }
     }
 

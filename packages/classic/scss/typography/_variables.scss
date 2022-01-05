@@ -9,8 +9,8 @@ $enable-typography: false !default;
 $font-size: 14px !default;
 $font-size-xs: 10px !default;
 $font-size-sm: 12px !default;
-$font-size-md: 16px !default;
-$font-size-lg: 18px !default;
+$font-size-md: $font-size !default;
+$font-size-lg: 16px !default;
 $font-size-xl: 20px !default;
 
 /// Font family across all components.
@@ -25,7 +25,7 @@ $font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Roboto Mono", 
 /// @group typography
 $line-height: (20 / 14) !default;
 $line-height-xs: 1 !default;
-$line-height-sm: 1.2 !default;
+$line-height-sm: 1.25 !default;
 $line-height-md: $line-height !default;
 $line-height-lg: 1.5 !default;
 $line-height-em: $line-height * 1em !default;

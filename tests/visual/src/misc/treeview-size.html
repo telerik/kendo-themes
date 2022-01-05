@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en" class="k-no-animations">
+<head>
+    <title>Treeview -- size</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+    <script src="../../assets/scripts.js"></script>
+    <script src="../../../../packages/html/dist/index.js"></script>
+
+    <style>
+    </style>
+</head>
+<body class="k-body">
+
+    <div id="test-area" class="k-d-grid k-grid-cols-3">
+
+        <span>small</span>
+        <span>medium</span>
+        <span>large</span>
+
+        <section>
+            <ul is="Treeview" size="small">
+                <li>Normal</li>
+                <li hasChildren hover>Hover</li>
+                <li hasChildren focus>Focus</li>
+                <li hasChildren selected>Selected</li>
+                <li hasChildren selected focus>Selected focus</li>
+                <li hasChildren disabled>Disabled</li>
+                <li hasChildren disabled focus>Disabled focus</li>
+                <li showIcon iconName="folder">Icon</li>
+                <li leafClassName="k-treeview-load-more-button">Load more...</li>
+            </ul>
+        </section>
+        <section>
+            <ul is="Treeview" size="medium">
+                <li>Normal</li>
+                <li hasChildren hover>Hover</li>
+                <li hasChildren focus>Focus</li>
+                <li hasChildren selected>Selected</li>
+                <li hasChildren selected focus>Selected focus</li>
+                <li hasChildren disabled>Disabled</li>
+                <li hasChildren disabled focus>Disabled focus</li>
+                <li showIcon iconName="folder">Icon</li>
+                <li leafClassName="k-treeview-load-more-button">Load more...</li>
+            </ul>
+        </section>
+        <section>
+            <ul is="Treeview" size="large">
+                <li>Normal</li>
+                <li hasChildren hover>Hover</li>
+                <li hasChildren focus>Focus</li>
+                <li hasChildren selected>Selected</li>
+                <li hasChildren selected focus>Selected focus</li>
+                <li hasChildren disabled>Disabled</li>
+                <li hasChildren disabled focus>Disabled focus</li>
+                <li showIcon iconName="folder">Icon</li>
+                <li leafClassName="k-treeview-load-more-button">Load more...</li>
+            </ul>
+        </section>
+
+
+    </div>
+
+</body>
+</html>

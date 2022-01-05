@@ -218,10 +218,13 @@
     .k-context-menu-popup {
         z-index: 12000;
 
-        > .k-popup:not(.k-menu-popup),
         .k-context-menu {
-            border: 0;
+            border-width: 0;
         }
+    }
+    .k-popup .k-context-menu,
+    .k-context-menu-popup .k-context-menu {
+        border-width: 0;
     }
 
 

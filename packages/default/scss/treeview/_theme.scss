@@ -1,21 +1,26 @@
 @include exports("treeview/theme") {
 
-    // Appearance
+    // Treeview
     .k-treeview {
         @include fill(
             $treeview-text,
             $treeview-bg,
             $treeview-border
         );
+    }
 
 
-        // Item
-        .k-in {}
+    // Treeview item
+    .k-treeview-item {}
 
 
-        // Interactive states
-        .k-in:hover,
-        .k-in.k-state-hover {
+    // Treeview leaf
+    .k-treeview-leaf,
+    .k-treeview .k-in {
+
+        // Hover state
+        &:hover,
+        &.k-state-hover {
             @include fill(
                 $treeview-item-hovered-text,
                 $treeview-item-hovered-bg,
@@ -23,7 +28,15 @@
                 $treeview-item-hovered-gradient
             );
         }
-        .k-in.k-state-selected {
+
+        // Focus state
+        &.k-state-focus,
+        &.k-state-focused {
+            @include box-shadow( $treeview-item-focused-shadow );
+        }
+
+        // Selected state
+        &.k-state-selected {
             @include fill(
                 $treeview-item-selected-text,
                 $treeview-item-selected-bg,
@@ -31,24 +44,20 @@
                 $treeview-item-selected-gradient
             );
         }
-        .k-in.k-state-focused {
-            @include box-shadow( $treeview-item-focused-shadow );
-        }
-        .k-in.k-state-selected.k-state-focused {
-            @include box-shadow( $treeview-item-selected-focused-shadow );
-        }
+    }
 
-        // LoadMore button
-        .k-treeview-load-more-button {
-            @include fill(
-                $treeview-loadmore-text,
-                $treeview-loadmore-bg,
-                $treeview-loadmore-border
-            );
-        }
 
-        .k-treeview-load-more-button:hover,
-        .k-treeview-load-more-button.k-state-hover {
+    // Treeview load more button
+    .k-treeview .k-treeview-load-more-button {
+        @include fill(
+            $treeview-loadmore-text,
+            $treeview-loadmore-bg,
+            $treeview-loadmore-border
+        );
+
+        // Hover state
+        &:hover,
+        &.k-state-hover {
             @include fill(
                 $treeview-loadmore-hover-text,
                 $treeview-loadmore-hover-bg,
@@ -56,8 +65,10 @@
             );
         }
 
-        .k-treeview-load-more-button:focus,
-        .k-treeview-load-more-button.k-state-focused {
+        // Focus state
+        &:focus,
+        &.k-state-focus,
+        &.k-state-focused {
             @include fill(
                 $treeview-loadmore-focus-text,
                 $treeview-loadmore-focus-bg,

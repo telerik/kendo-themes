@@ -76,9 +76,7 @@
         transition-timing-function: ease;
         outline: none;
 
-        .k-checkbox {
-            margin-top: calc( ( #{$list-line-height-em} - #{$checkbox-size} ) / 2 );
-            font-size: inherit;
+        .k-checkbox-wrap {
             align-self: flex-start;
         }
 

@@ -40,7 +40,16 @@ const attrMap = {
     thumbrounded: 'thumbRounded',
 
     // Chip
-    showavatar: 'showAvatar'
+    showavatar: 'showAvatar',
+
+    // Hierarchy
+    haschildren: 'hasChildren',
+
+    // Treeview
+    leafclassname: 'leafClassName',
+
+    // Template
+    contenttemplate: 'contentTemplate'
 };
 
 const booleanAttr = new Set([
@@ -72,6 +81,10 @@ const booleanAttr = new Set([
 
     'virtualization',
     'root',
+
+    'open',
+    'expanded',
+    'hasChildren',
 
     'showArrow',
 
