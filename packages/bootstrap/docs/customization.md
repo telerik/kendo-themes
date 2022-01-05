@@ -1139,7 +1139,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$table-group-row-bg</td>
     <td></td>
-    <td>$grid-grouping-row-bg</td>
+    <td>$table-header-bg</td>
     <td></td>
 </tr>
 <tr>
@@ -1149,7 +1149,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$table-group-row-text</td>
     <td></td>
-    <td>$grid-grouping-row-text</td>
+    <td>$table-header-text</td>
     <td></td>
 </tr>
 <tr>
@@ -1159,8 +1159,8 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$table-group-row-border</td>
     <td></td>
-    <td>null</td>
-    <td>null</td>
+    <td>$table-header-border</td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of group rows in table.</div></div>
