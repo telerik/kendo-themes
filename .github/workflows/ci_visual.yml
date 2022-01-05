@@ -3,7 +3,6 @@ name: CI | Visual
 on:
   push:
     branches-ignore:
-      # - 'main'
       - 'master'
       - 'develop'
       - 'v4-dev'
@@ -11,7 +10,6 @@ on:
 jobs:
   run-tests:
     name: Run tests
-
     runs-on: ubuntu-latest
 
     strategy:
@@ -41,7 +39,25 @@ jobs:
           npm run build:scripts
           npm run sass:flat -- --theme packages/${{ matrix.theme }}
 
-      - name: Visual tests
+      - name: Update markup snapshots
+        env:
+          HEADLESS: 'true'
+        run: |
+          npm install --no-save @progress/kendo-e2e@0.9
+          ./build/create-snapshots.mjs
+
+      - name: Pack snapshots
+        if: ${{ matrix.theme == 'default' }}
+        run: tar -cf snapshots.tar tests/visual/src
+
+      - name: Upload snapshots
+        uses: actions/upload-artifact@v2
+        if: ${{ matrix.theme == 'default' }}
+        with:
+          name: snapshots
+          path: snapshots.tar
+
+      - name: Create screenshots
         run: ./build/create-screenshots.sh ${{ matrix.theme }}
 
       - name: Pack screenshots
@@ -64,20 +80,20 @@ jobs:
       - name: Checkout branch
         uses: actions/checkout@v2
 
-      - name: Download screenshots
+      - name: Download artifacts
         uses: actions/download-artifact@v2
         with:
           path: .tmp
 
-      - name: Unpack screenshots
-        run: find .tmp -name "screenshots-*.tar" -type f -exec tar -xf {} \;
+      - name: Unpack artifacts
+        run: find .tmp -name "*.tar" -type f -exec tar -xf {} \;
 
       - name: Compare artifacts
         run: |
           HAS_CHANGES=0
           HAS_NEW=0
-          git diff --exit-code --quiet -- tests/visual/output/ || HAS_CHANGES=1
-          [[ $(git ls-files --others --exclude-standard tests/visual/output) ]] && HAS_NEW=1
+          git diff --exit-code --quiet -- tests/visual/ || HAS_CHANGES=1
+          [[ $(git ls-files --others --exclude-standard tests/visual) ]] && HAS_NEW=1
           echo "HAS_CHANGES=$HAS_CHANGES" >> $GITHUB_ENV
           echo "HAS_NEW=$HAS_NEW" >> $GITHUB_ENV
 
@@ -91,9 +107,9 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
-          echo "Visual tests have detected changes. Updating screenshots."
+          echo "Visual tests have detected changes. Updating markup and screenshots."
 
-          git add tests/visual/output
+          git add tests/visual
           git commit -m "chore: update visual previews"
 
           git push
