@@ -80,9 +80,6 @@ Still, if you wanted to, you can customize the theme like the rest:
 // Make all inputs components with a different background color
 $input-bg: #f0f0f0;
 
-// Change just the autocomplete to have white background
-$autocomplete-bg: #ffffff;
-
 // Make the border of the grid black and slightly ticker
 $grid-border-width: 2px;
 $grid-border: #000000;
