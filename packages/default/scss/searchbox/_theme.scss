@@ -3,53 +3,44 @@
     // Searchbox
     .k-searchbox {
         @include fill(
-            $searchbox-text,
-            $searchbox-bg,
-            $searchbox-border
+            $input-text,
+            $input-bg,
+            $input-border
         );
-
 
         // Hover state
         &:hover,
         &.k-state-hover {
             @include fill(
-                $searchbox-hover-text,
-                $searchbox-hover-bg,
-                $searchbox-hover-border
+                $input-hovered-text,
+                $input-hovered-bg,
+                $input-hovered-border
             );
         }
 
-
         // Focus state
         &:focus,
-        // &:focus-within,
         &.k-state-focus {
             @include fill(
-                $searchbox-focus-text,
-                $searchbox-focus-bg,
-                $searchbox-focus-border
+                $input-focused-text,
+                $input-focused-bg,
+                $input-focused-border
             );
             @include box-shadow( $input-focused-shadow );
         }
         &:focus-within {
             @include fill(
-                $searchbox-focus-text,
-                $searchbox-focus-bg,
-                $searchbox-focus-border
+                $input-focused-text,
+                $input-focused-bg,
+                $input-focused-border
             );
             @include box-shadow( $input-focused-shadow );
         }
 
 
-        // Disabled
-        &:disabled,
-        &.k-state-disabled {
-            @include disabled( $disabled-styling );
-        }
-
-
-        // Invalid
+        // Invalid state
         &.k-invalid,
+        &.ng-invalid,
         &.k-state-invalid {
             border-color: $invalid-border;
 
@@ -57,11 +48,11 @@
                 color: $invalid-text;
             }
 
-            &:focus,
+            &:focus-within,
             &.k-state-focus {
                 @include box-shadow($invalid-shadow);
             }
         }
-
     }
+
 }
