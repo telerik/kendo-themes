@@ -75,7 +75,7 @@ function AutocompleteStatic(props) {
             'k-autocomplete',
             {
                 'k-state-hover': hover === true,
-                'k-state-focused': focus === true,
+                'k-state-focus': focus === true,
                 'k-state-invalid': invalid === true,
                 'k-state-required': required === true,
                 'k-state-disabled': disabled === true
