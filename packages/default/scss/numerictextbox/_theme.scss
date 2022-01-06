@@ -1,107 +1,87 @@
 @include exports( "numerictextbox/theme" ) {
 
-    // Numeric
+    // Numeric textbox
     .k-numerictextbox {
+        @include fill(
+            $input-text,
+            $input-bg,
+            $input-border
+        );
 
-        .k-i-warning {
-            color: $error;
+        // Hover state
+        &:hover,
+        &.k-state-hover {
+            @include fill(
+                $input-hovered-text,
+                $input-hovered-bg,
+                $input-hovered-border
+            );
         }
 
-        // Normal state
-        .k-numeric-wrap {
+        // Focus state
+        &:focus,
+        &.k-state-focus {
             @include fill(
-                $numeric-text,
-                $numeric-bg,
-                $numeric-border
+                $input-focused-text,
+                $input-focused-bg,
+                $input-focused-border
             );
-
-
-            // Hover state
-            &:hover,
-            &.k-state-hover {
-                @include fill(
-                    $numeric-hovered-text,
-                    $numeric-hovered-bg,
-                    $numeric-hovered-border
-                );
-            }
-
-
-            // Focus state
-            &.k-state-focused {
-                @include fill(
-                    $numeric-focused-text,
-                    $numeric-focused-bg,
-                    $numeric-focused-border
-                );
-                @include box-shadow($numeric-focused-shadow);
-            }
-
-            // Invalid state
-            &.k-invalid,
-            &.k-invalid:hover,
-            &.k-state-invalid {
-                border-color: $invalid-border;
-
-                .k-input-validation-icon {
-                    color: $invalid-text;
-                }
-
-                &:focus,
-                &.k-state-focused {
-                    @include box-shadow($invalid-shadow);
-                }
-            }
+            @include box-shadow( $input-focused-shadow );
         }
-
-
-        // Select buttons
-        .k-select {
+        &:focus-within {
             @include fill(
-                $numeric-button-text,
-                $numeric-button-bg,
-                $numeric-button-border,
-                $numeric-button-gradient
+                $input-focused-text,
+                $input-focused-bg,
+                $input-focused-border
             );
-
-            .k-link:hover,
-            .k-link.k-state-hover {
-                @include fill(
-                    $numeric-button-hovered-text,
-                    $numeric-button-hovered-bg,
-                    $numeric-button-hovered-border,
-                    $numeric-button-hovered-gradient
-                );
-            }
-
-            .k-link:active,
-            .k-link.k-state-active,
-            .k-link.k-state-selected {
-                @include fill(
-                    $numeric-button-pressed-text,
-                    $numeric-button-pressed-bg,
-                    $numeric-button-pressed-border,
-                    $numeric-button-pressed-gradient
-                );
-            }
+            @include box-shadow( $input-focused-shadow );
         }
 
 
         // Invalid state
-        &.k-state-invalid,
-        &.ng-invalid.ng-touched,
-        &.ng-invalid.ng-dirty {
-            .k-numeric-wrap {
-                border-color: $invalid-border;
+        &.k-invalid,
+        &.ng-invalid,
+        &.k-state-invalid {
+            border-color: $invalid-border;
 
-                .k-input-validation-icon {
-                    color: $invalid-text;
-                }
+            .k-input-validation-icon {
+                color: $invalid-text;
+            }
 
-                &.k-state-focused {
-                    @include box-shadow($invalid-shadow);
-                }
+            &:focus-within,
+            &.k-state-focus {
+                @include box-shadow($invalid-shadow);
             }
         }
+
+
+        // Spinner
+        .k-select {
+            @include fill(
+                $picker-select-text,
+                $picker-select-bg,
+                $picker-select-border,
+                $picker-select-gradient
+            );
+        }
+        .k-link:hover,
+        .k-link.k-state-hover {
+            @include fill(
+                $picker-select-hovered-text,
+                $picker-select-hovered-bg,
+                $picker-select-hovered-border,
+                $picker-select-hovered-gradient
+            );
+        }
+        .k-link:active,
+        .k-link.k-state-active {
+            @include fill(
+                $picker-select-pressed-text,
+                $picker-select-pressed-bg,
+                $picker-select-pressed-border,
+                $picker-select-pressed-gradient
+            );
+        }
     }
+
 }

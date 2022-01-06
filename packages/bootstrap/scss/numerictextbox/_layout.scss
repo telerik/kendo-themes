@@ -2,14 +2,9 @@
 
 @include exports( "numerictextbox/layout/bootstrap" ) {
 
-    // Numeric
+    // Numeric textbox
     .k-numerictextbox {
-
-        .k-select,
-        .k-numeric-wrap {
-            transition: $transition;
-        }
-
+        transition: $transition;
     }
 
 }
