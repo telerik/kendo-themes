@@ -4,7 +4,7 @@ function ChipAvatarStatic() {
 
     return (
         <AvatarStatic className="k-chip-avatar" type="image">
-            <img src="../../assets/avatar.jpg"/>
+            <img src="../../assets/avatar.jpg" />
         </AvatarStatic>
     );
 
