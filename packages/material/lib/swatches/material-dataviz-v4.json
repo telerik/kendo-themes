@@ -1,0 +1,51 @@
+{
+    "$schema": "https://unpkg.com/@progress/kendo-theme-tasks@1.11.0/lib/schemas/kendo-swatch.json",
+    "name": "Material Dataviz v4",
+    "product": "kendo",
+    "base": "@progress/kendo-theme-material",
+    "previewColors": [
+        "#3f51b5",
+        "#2196f3",
+        "#43a047",
+        "#ffc107",
+        "#ff5722"
+    ],
+    "components": [],
+    "groups": [
+        {
+            "name": "Dataviz",
+            "variables": {
+                "series-a": {
+                    "name": "Series A",
+                    "type": "color",
+                    "value": "#3f51b5"
+                },
+                "series-b": {
+                    "name": "Series B",
+                    "type": "color",
+                    "value": "#2196f3"
+                },
+                "series-c": {
+                    "name": "Series C",
+                    "type": "color",
+                    "value": "#43a047"
+                },
+                "series-d": {
+                    "name": "Series D",
+                    "type": "color",
+                    "value": "#ffc107"
+                },
+                "series-e": {
+                    "name": "Series E",
+                    "type": "color",
+                    "value": "#ff5722"
+                },
+                "series-f": {
+                    "name": "Series F",
+                    "type": "color",
+                    "value": "#e91e63"
+                }
+            }
+        }
+    ]
+}
