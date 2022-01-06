@@ -75,17 +75,15 @@ function NumericTextboxStatic(props) {
             'k-widget',
             'k-numerictextbox',
             {
+                'k-state-hover': hover === true,
+                'k-state-focus': focus === true,
+                'k-state-invalid': invalid === true,
                 'k-state-disabled': disabled === true
             }
         ];
 
         let legacyWrapClasses = [
-            'k-numeric-wrap',
-            {
-                'k-state-hover': hover === true,
-                'k-state-focused': focus === true,
-                'k-state-invalid': invalid === true
-            }
+            'k-numeric-wrap'
         ];
 
         let legacyInputClasses = [
