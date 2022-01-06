@@ -83,14 +83,6 @@
             }
         }
 
-        .k-grid-filter-menu {
-
-            .k-filter-selected-items {
-                margin: 1em;
-                font-weight: normal;
-            }
-        }
-
         .k-grid-edit-form {
 
             .k-popup-edit-form,
@@ -98,10 +90,6 @@
                 width: auto;
                 min-width: auto;
             }
-        }
-
-        .k-grid .k-grid-search {
-            width: 100%;
         }
     }
 
@@ -426,18 +414,30 @@
 
         // Filter menu
         .k-filter-menu {
+            padding: map-get( $spacing, 2 );
+            display: flex;
+            flex-flow: column nowrap;
+            gap: map-get( $spacing, 2 );
 
-            .k-space-right {
-                margin: .5em 10px;
-                width: auto;
+            .k-list-title {
+                padding: 0;
+            }
+
+            .k-list-filter {
+                padding: 0;
                 display: flex;
-                align-items: center;
+                flex-flow: column nowrap;
+                gap: inherit;
             }
 
             .k-filter-tools {
-                margin: 1em;
                 display: flex;
-                justify-content: space-between;
+                flex-flow: row nowrap;
+                gap: inherit;
+            }
+
+            .k-listgroup {
+                margin-inline: -#{map-get( $spacing, 2 )};
             }
         }
 
@@ -503,14 +503,6 @@
 
                 > .k-header {
                     flex-direction: row-reverse;
-                }
-            }
-
-            .k-filter-menu {
-
-                .k-space-right > .k-i-zoom {
-                    left: 15px;
-                    right: auto;
                 }
             }
 
