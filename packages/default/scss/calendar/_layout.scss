@@ -293,7 +293,7 @@
                 display: block;
                 position: absolute;
                 bottom: 0;
-                content: " ";
+                content: "\200b";
                 height: 0;
                 line-height: 0;
                 z-index: 1;
@@ -331,7 +331,7 @@
         &::after {
             display: block;
             position: absolute;
-            content: " ";
+            content: "\200b";
             height: 0;
             line-height: 0;
             z-index: 1;

@@ -9,7 +9,7 @@
         transform: $skeleton-text-transform;
 
         &:empty::before {
-            content: "\00a0";
+            content: "\200b";
         }
     }
 
