@@ -2,12 +2,11 @@
 
 @include exports("numerictextbox/layout/material") {
 
+    // Numeric textbox
     .k-numerictextbox {
-        .k-numeric-wrap {
-            @include border-bottom-radius( 0 !important ); // sass-lint:disable-line no-important
-            border-width: $input-border-width 0;
-            border-top-color: transparent !important; // sass-lint:disable-line no-important
-        }
+        @include border-bottom-radius( 0 !important ); // sass-lint:disable-line no-important
+        border-width: $input-border-width 0;
+        border-top-color: transparent !important; // sass-lint:disable-line no-important
     }
 
 }
