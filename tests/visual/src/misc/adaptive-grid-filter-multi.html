@@ -37,35 +37,31 @@
                     </div>
                     <div class="k-stretched-view k-content">
                         <form class="k-filter-menu">
-                            <ul class="k-reset">
-                                <li>
-                                    <input is="Searchbox" placeholder="Search..." />
+                            <div class="k-list-filter">
+                                <input is="Searchbox" placeholder="Search..." />
+                            </div>
+                            <div class="k-filter-tools">
+                                <div class="k-filter-selected-items">0 items selected</div>
+                                <span class="k-spacer"></span>
+                                <span class="k-label k-select-all">Select All</span>
+                                <span class="k-label k-clear-all">Clear All</span>
+                            </div>
+                            <ul class="k-multicheck-wrap k-listgroup k-listgroup-flush">
+                                <li class="k-item k-listgroup-item">
+                                    <label class="k-label k-listgroup-form-row">
+                                        <span class="k-item-title k-listgroup-form-field-label">Chai</span>
+                                        <span class="k-listgroup-form-field-wrapper">
+                                            <input is="Checkbox" checked />
+                                        </span>
+                                    </label>
                                 </li>
-                                <li class="k-filter-tools"><span class="k-label k-select-all">Select All</span>
-                                    <span class="k-label k-clear-all">Clear All</span>
-                                </li>
-                                <li>
-                                    <div class="k-filter-selected-items">0 items selected</div>
-                                </li>
-                                <li>
-                                    <ul class="k-multicheck-wrap k-listgroup k-listgroup-flush">
-                                        <li class="k-item k-listgroup-item">
-                                            <label class="k-label k-listgroup-form-row">
-                                                <span class="k-item-title k-listgroup-form-field-label">Chai</span>
-                                                <span class="k-listgroup-form-field-wrapper">
-                                                    <input is="Checkbox" checked />
-                                                </span>
-                                            </label>
-                                        </li>
-                                        <li class="k-item k-listgroup-item">
-                                            <label class="k-label k-listgroup-form-row">
-                                                <span class="k-item-title k-listgroup-form-field-label">Chang</span>
-                                                <span class="k-listgroup-form-field-wrapper">
-                                                    <input is="Checkbox" />
-                                                </span>
-                                            </label>
-                                        </li>
-                                    </ul>
+                                <li class="k-item k-listgroup-item">
+                                    <label class="k-label k-listgroup-form-row">
+                                        <span class="k-item-title k-listgroup-form-field-label">Chang</span>
+                                        <span class="k-listgroup-form-field-wrapper">
+                                            <input is="Checkbox" />
+                                        </span>
+                                    </label>
                                 </li>
                             </ul>
                         </form>
