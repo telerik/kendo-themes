@@ -104,7 +104,7 @@
             &::before,
             &::after {
                 display: block;
-                content: " ";
+                content: "\200b";
                 position: absolute;
                 width: 100%;
                 left: 0;
@@ -140,7 +140,7 @@
         &::after {
             display: block;
             position: absolute;
-            content: " ";
+            content: "\200b";
             height: 0;
             line-height: 0;
             z-index: 1;

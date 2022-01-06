@@ -378,7 +378,7 @@
             position: relative;
             vertical-align: middle;
         }
-        td::after { content: "\a0"; }
+        td::after { content: "\200b"; }
     }
     .k-task-wrap {
         margin: 0 -21px;

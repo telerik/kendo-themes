@@ -133,7 +133,7 @@
         .k-table-group-row {
 
             &::before {
-                content: ".";
+                content: "\200b";
                 padding: $table-cell-padding-y 0;
                 width: 0;
                 display: block;
