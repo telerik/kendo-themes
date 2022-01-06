@@ -16,7 +16,7 @@ The Avatar enables the user to display images, icons or initials representing pe
 ```html
 <div class="k-avatar k-avatar-md k-rounded-circle k-avatar-solid k-avatar-solid-primary">
     <span class="k-avatar-image">
-        <img src="avatar.jpg">
+        <img src="avatar.jpg" />
     </span>
 </div>
 ```
@@ -46,17 +46,17 @@ The Avatar has predefined sizes - small, medium or large.
 <div class="k-d-flex k-gap-2">
     <div class="k-avatar k-avatar-sm k-rounded-circle k-avatar-solid k-avatar-solid-primary">
         <span class="k-avatar-image">
-            <img src="avatar.jpg">
+            <img src="avatar.jpg" />
         </span>
     </div>
     <div class="k-avatar k-avatar-md k-rounded-circle k-avatar-solid k-avatar-solid-primary">
         <span class="k-avatar-image">
-            <img src="avatar.jpg">
+            <img src="avatar.jpg" />
         </span>
     </div>
     <div class="k-avatar k-avatar-lg k-rounded-circle k-avatar-solid k-avatar-solid-primary">
         <span class="k-avatar-image">
-            <img src="avatar.jpg">
+            <img src="avatar.jpg" />
         </span>
     </div>
 </div>

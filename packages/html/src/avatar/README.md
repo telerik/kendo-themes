@@ -2,7 +2,7 @@
 <!-- default rendering -->
 <div class="k-avatar k-avatar-md k-rounded-circle k-avatar-solid k-avatar-solid-primary">
     <span class="k-avatar-image">
-        <img src="../../assets/avatar.jpg" class="">
+        <img src="../../assets/avatar.jpg" />
     </span>
 </div>
 
