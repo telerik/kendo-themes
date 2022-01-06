@@ -172,32 +172,32 @@
                 "series-a": {
                     "name": "Series A",
                     "type": "color",
-                    "value": "#0275d8"
+                    "value": "#20c997"
                 },
                 "series-b": {
                     "name": "Series B",
                     "type": "color",
-                    "value": "#5bc0de"
+                    "value": "#0d6efd"
                 },
                 "series-c": {
                     "name": "Series C",
                     "type": "color",
-                    "value": "#5cb85c"
+                    "value": "#6f42c1"
                 },
                 "series-d": {
                     "name": "Series D",
                     "type": "color",
-                    "value": "#f0ad4e"
+                    "value": "#dc3545"
                 },
                 "series-e": {
                     "name": "Series E",
                     "type": "color",
-                    "value": "#e67d4a"
+                    "value": "#ffc107"
                 },
                 "series-f": {
                     "name": "Series F",
                     "type": "color",
-                    "value": "#d9534f"
+                    "value": "#198754"
                 }
             }
         }
