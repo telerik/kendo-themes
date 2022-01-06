@@ -106,13 +106,11 @@
             padding: 0;
         }
 
-        .k-form-field,
-        .k-daterangepicker .k-textbox-container {
+        .k-form-field {
             margin-top: $form-field-margin-top;
         }
 
-        > *,
-        .k-daterangepicker .k-textbox-container {
+        > * {
             &:not(.k-hidden):first-child,
             &.k-hidden + :not(.k-hidden) {
                 margin-top: 0;
@@ -154,7 +152,6 @@
         .k-dateinput,
         .k-datepicker,
         .k-datetimepicker,
-        .k-daterangepicker-wrap,
         .k-timepicker,
         .k-numerictextbox,
         .k-maskedtextbox,
@@ -162,6 +159,11 @@
         .k-floating-label-container {
             display: inline-flex;
             width: 100%;
+        }
+        .k-daterangepicker {
+            width: 100%;
+            flex-flow: column nowrap;
+            gap: 0;
         }
     }
 

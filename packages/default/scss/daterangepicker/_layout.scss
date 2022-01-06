@@ -1,0 +1,27 @@
+@include exports( "daterangepicker/layout" ) {
+
+    // Daterange picker
+    .k-daterangepicker {
+        border: 0;
+        display: inline-flex;
+        flex-flow: row nowrap;
+        align-items: flex-start;
+        gap: map-get( $spacing, 2 );
+    }
+
+
+    // Angular specific
+    kendo-daterange {
+        // @extend .k-daterangepicker;
+    }
+
+
+    // React specific
+    .k-daterangepicker-wrap {
+        display: inherit;
+        flex-flow: inherit;
+        align-items: inherit;
+        gap: inherit;
+    }
+
+}
