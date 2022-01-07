@@ -1,6 +1,6 @@
 ```html
 <!-- default rendering -->
-<div class="k-split-button k-button-group">
+<div class="k-split-button k-button-group k-rounded-md">
   <button
     class="k-button k-button-md k-rounded-md k-button-solid k-button-solid-base"
     type="button"
@@ -13,7 +13,7 @@
 </div>
 
 <!-- canonical rendering -->
-<div class="k-split-button k-button-group">
+<div class="k-split-button k-button-group k-rounded-${rounded}">
     <button class="
         k-button
         ${text === '' && icon !== '' && 'k-icon-button'}

@@ -1,3 +1,4 @@
+import * as styles from '../../utils/styles';
 import { Component, globalDefaultProps } from '../component/index';
 import { ButtonStatic } from '../button/index';
 
@@ -45,6 +46,7 @@ function SplitButtonStatic(props) {
         ownClassName,
         'k-split-button',
         'k-button-group',
+        styles.roundedClass( rounded ),
         {
             'k-focus': focus === true
         }
