@@ -1,14 +1,14 @@
 {
     "$schema": "https://unpkg.com/@progress/kendo-theme-tasks@1.11.0/lib/schemas/kendo-swatch.json",
-    "name": "Bootstrap Dataviz Legacy Colors",
+    "name": "Material Dataviz v4",
     "product": "kendo",
-    "base": "@progress/kendo-theme-bootstrap",
+    "base": "@progress/kendo-theme-material",
     "previewColors": [
-        "#0275d8",
-        "#5bc0de",
-        "#5cb85c",
-        "#f0ad4e",
-        "#e67d4a"
+        "#3f51b5",
+        "#2196f3",
+        "#43a047",
+        "#ffc107",
+        "#ff5722"
     ],
     "components": [],
     "groups": [
@@ -18,32 +18,32 @@
                 "series-a": {
                     "name": "Series A",
                     "type": "color",
-                    "value": "#0275d8"
+                    "value": "#3f51b5"
                 },
                 "series-b": {
                     "name": "Series B",
                     "type": "color",
-                    "value": "#5bc0de"
+                    "value": "#2196f3"
                 },
                 "series-c": {
                     "name": "Series C",
                     "type": "color",
-                    "value": "#5cb85c"
+                    "value": "#43a047"
                 },
                 "series-d": {
                     "name": "Series D",
                     "type": "color",
-                    "value": "#f0ad4e"
+                    "value": "#ffc107"
                 },
                 "series-e": {
                     "name": "Series E",
                     "type": "color",
-                    "value": "#e67d4a"
+                    "value": "#ff5722"
                 },
                 "series-f": {
                     "name": "Series F",
                     "type": "color",
-                    "value": "#d9534f"
+                    "value": "#e91e63"
                 }
             }
         }
