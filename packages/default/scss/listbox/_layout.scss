@@ -72,9 +72,18 @@
 
         .k-list-scroller {
             width: 100%;
+            height: inherit;
             border-width: $listbox-border-width;
             border-style: solid;
             box-sizing: border-box;
+
+            .k-list-scroller {
+                border-width: 0;
+            }
+
+            .k-list {
+                height: inherit;
+            }
         }
 
         .k-drop-hint {
