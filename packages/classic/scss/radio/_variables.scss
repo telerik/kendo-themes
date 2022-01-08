@@ -4,64 +4,119 @@ $radio-radius: 50% !default;
 $radio-border-width: 1px !default;
 $radio-line-height: calc(#{$radio-size} + #{$radio-border-width}) !default;
 
+/// Background color of radio button.
+/// @group radio
 $radio-bg: $checkbox-bg !default;
+/// Color of radio button.
+/// @group radio
 $radio-text: $checkbox-text !default;
+/// Border color of radio button.
+/// @group radio
 $radio-border: $checkbox-border !default;
 
+/// Background color of hovered radio button.
+/// @group radio
 $radio-hovered-bg: $checkbox-hovered-bg !default;
+/// Color of hovered radio button.
+/// @group radio
 $radio-hovered-text: $checkbox-hovered-text !default;
+/// Border color of hovered radio button.
+/// @group radio
 $radio-hovered-border: $checkbox-hovered-border !default;
 
+/// Background color of checked radio button.
+/// @group radio
 $radio-checked-bg: $checkbox-checked-bg !default;
+/// Color of checked radio button.
+/// @group radio
 $radio-checked-text: $checkbox-checked-text !default;
+/// Border color of checked radio button.
+/// @group radio
 $radio-checked-border: $checkbox-checked-border !default;
 
-$radio-indeterminate-bg: $radio-checked-bg !default;
-$radio-indeterminate-text: $radio-checked-text !default;
-$radio-indeterminate-border: $radio-checked-border !default;
-
+/// Border color of focused radio button.
+/// @group radio
 $radio-focused-border: $checkbox-hovered-border !default;
+/// Box shadow of focused radio button.
+/// @group radio
 $radio-focused-shadow: $checkbox-focused-shadow !default;
+/// Border color of focused and checked radio button.
+/// @group radio
 $radio-focused-checked-border: $checkbox-checked-border !default;
+/// Box shadow of focused and checked radio button.
+/// @group radio
 $radio-focused-checked-shadow: $checkbox-focused-checked-shadow !default;
 
-$radio-disabled-bg: null !default;
-$radio-disabled-text: null !default;
-$radio-disabled-border: null !default;
+/// Background color of disabled radio button.
+/// @group radio
+$radio-disabled-bg: $checkbox-disabled-bg !default;
+/// Color of disabled radio button.
+/// @group radio
+$radio-disabled-text: $checkbox-disabled-text !default;
+/// Border color of disabled radio button.
+/// @group radio
+$radio-disabled-border: $checkbox-disabled-border !default;
 
-$radio-disabled-checked-bg: null !default;
-$radio-disabled-checked-text: null !default;
-$radio-disabled-checked-border: null !default;
+/// Background color of disabled and checked radio button.
+/// @group radio
+$radio-disabled-checked-bg: $checkbox-disabled-checked-bg !default;
+/// Color of disabled and checked radio button.
+/// @group radio
+$radio-disabled-checked-text: $checkbox-disabled-checked-text !default;
+/// Border color of disabled and checked radio button.
+/// @group radio
+$radio-disabled-checked-border: $checkbox-disabled-checked-border !default;
 
-$radio-invalid-bg: null !default;
-$radio-invalid-text: $invalid-text !default;
-$radio-invalid-border: $invalid-border !default;
+/// Background color of invalid radio button.
+/// @group radio
+$radio-invalid-bg: $checkbox-invalid-bg !default;
+/// Color of invalid radio button.
+/// @group radio
+$radio-invalid-text: $checkbox-invalid-text !default;
+/// Border color of invalid radio button.
+/// @group radio
+$radio-invalid-border: $checkbox-invalid-border !default;
 
 
 // Radio indicator
-$radio-icon-type: marker !default;
+
+/// Type of radio button indicator.
+/// @group radio
+$radio-indicator-type: image !default;
 
 $radio-glyph-font-family: "WebComponentsIcons", monospace !default;
 $radio-glyph-size: 12px !default;
+/// Glyph of radio button indicator.
+/// @group radio
 $radio-checked-glyph: "\e308" !default;
 
-$radio-checked-image: null !default;
-
-$radio-marker-checked-width: ( $radio-size / 2 ) !default;
-$radio-marker-checked-height: ( $radio-size / 2 ) !default;
-
+/// Image of checked radio button indicator.
+/// @group radio
+$radio-checked-image: escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 14'><circle cx='50%' cy='50%' r='4' fill='#{$radio-checked-text}'/></svg>") ) !default;
+/// Image of disabled and checked radio button indicator.
+/// @group radio
+$radio-disabled-checked-image: null !default;
 
 // Radio label
 $radio-label-margin-x: map-get( $spacing, 1 ) !default;
 
 
 // Radio list
+
+/// Spacing between items of horizontal radio button list.
+/// @group radio
 $radio-list-spacing: map-get( $spacing, 4 ) !default;
+/// Horizontal padding of radio button list items.
+/// @group radio
 $radio-list-item-padding-x: 0px !default;
+/// Vertical padding of radio button list items.
+/// @group radio
 $radio-list-item-padding-y: $list-item-padding-y !default;
 
 
 // Radio ripple
 $radio-ripple-size: $radio-size * 3 !default;
 $radio-ripple-margin: calc(-1 * (#{$radio-size} + 2 * #{$radio-border-width})) !default;
+/// Opacity of radio button ripple.
+/// @group radio
 $radio-ripple-opacity: .3 !default;
