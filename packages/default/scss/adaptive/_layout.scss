@@ -357,39 +357,18 @@
 
     .k-pane-wrapper {
 
-        .k-grid-edit-form,
-        .k-grid-column-menu,
-        .k-grid-filter-menu,
-        .k-scheduler-edit-form {
-
-            > .k-header {
-                display: flex;
-                justify-content: space-between;
-                padding: .3em .6em;
-                width: auto;
-                line-height: 2em;
-
-                .k-header-done,
-                .k-header-cancel {
-                    display: flex;
-                    flex-direction: row;
-                    align-items: center;
-
-                    .k-icon {
-                        font-size: 1.5em;
-                    }
-                }
-            }
+        .k-appbar {
+            padding: map-get( $spacing, 1 );
         }
 
         .k-list-title,
-        .k-filter-help-text,
-        .k-list-group-header {
+        .k-filter-help-text {
             padding: $listgroup-item-padding-y $listgroup-item-padding-x;
             display: block;
         }
 
-        .k-list-group-header {
+        .k-listgroup-title {
+            padding: $listgroup-item-padding-y $listgroup-item-padding-x;
             font-weight: bold;
             text-transform: uppercase;
         }
@@ -401,14 +380,27 @@
             }
         }
         .k-listgroup + .k-listgroup {
-            margin-top: 2em;
+            margin-top: map-get( $spacing, 4 );
         }
 
         // Column menu
         .k-column-menu {
+            padding: map-get( $spacing, 2 );
+            display: flex;
+            flex-flow: column nowrap;
+            gap: map-get( $spacing, 2 );
 
             .k-filter-item .k-filterable * {
                 pointer-events: none;
+            }
+
+            .k-list-title,
+            .k-listgroup-title {
+                padding: 0;
+            }
+
+            .k-listgroup {
+                margin-inline: -#{map-get( $spacing, 2 )};
             }
         }
 
@@ -461,7 +453,6 @@
         }
 
         // Pager
-
         .k-pager-wrap.k-pager-sm {
             justify-content: center;
 
@@ -471,39 +462,14 @@
 
         }
 
-        // IE
-
-        .k-ie & {
-
-            .k-scheduler {
-                .k-scheduler-toolbar,
-                .k-scheduler-footer {
-                    line-height: 2em;
-                }
-            }
-
-            .k-grid {
-
-                .k-icon {
-                    text-indent: 0;
-                }
-            }
-        }
-
         // RTL
-
         .k-rtl &,
         &[dir="rtl"],
         [dir="rtl"] & {
 
-            .k-grid-edit-form,
-            .k-grid-column-menu,
-            .k-grid-filter-menu,
-            .k-scheduler-edit-form {
-
-                > .k-header {
-                    flex-direction: row-reverse;
-                }
+            .k-header-cancel .k-i-arrow-chevron-left,
+            .k-listgroup-item .k-select .k-i-arrow-chevron-right {
+                transform: scaleX( -1 );
             }
 
             .k-scheduler-mobile {
@@ -524,10 +490,6 @@
                     margin-left: .5em;
                     margin-right: 0;
                 }
-            }
-
-            .k-scheduler-edit-form .k-item .k-i-arrow-chevron-right {
-                transform: scaleX(-1);
             }
         }
     }
