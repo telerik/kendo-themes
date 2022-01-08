@@ -25,7 +25,7 @@
 
     // Radio indicator
     .k-radio::before {
-        @if $radio-icon-type == "glyph" {
+        @if $radio-indicator-type == "glyph" {
             content: $radio-checked-glyph;
             width: $radio-glyph-size;
             height: $radio-glyph-size;
@@ -38,38 +38,27 @@
             top: 50%;
             left: 50%;
         }
-
-        @if $radio-icon-type == "marker" {
-            content: "";
-            width: $radio-marker-checked-width;
-            height: $radio-marker-checked-width;
-            border-radius: 50%;
-            background-color: currentColor;
-            transform: scale(0) translate(-50%, -50%);
-            overflow: hidden;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-        }
     }
 
     // Checked state
     .k-radio:checked,
     .k-radio.k-checked {
-        @if $radio-icon-type == "image" {
+        @if $radio-indicator-type == "image" {
             background-image: $radio-checked-image;
         }
 
-        @if $radio-icon-type == "glyph" {
+        @if $radio-indicator-type == "glyph" {
             &::before {
                 transform: scale(1) translate(-50%, -50%);
             }
         }
+    }
 
-        @if $radio-icon-type == "marker" {
-            &::before {
-                transform: scale(1) translate(-50%, -50%);
-            }
+    // Checked state
+    .k-radio:disabled:checked,
+    .k-radio.k-disabled.k-checked {
+        @if $radio-indicator-type == "image" {
+            background-image: $radio-disabled-checked-image;
         }
     }
 
