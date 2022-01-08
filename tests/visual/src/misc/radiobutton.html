@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en" class="k-no-animations">
 <head>
-    <title>RadioButton</title>
+    <title>Radio button</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
     <link rel="stylesheet" href="../../assets/styles.css" />
@@ -11,112 +11,150 @@
     <style>
         #test-area {
             align-items: start;
-        }
-
-        .bold-text {
-            font-weight: bold;
+            /* justify-items: start; */
         }
     </style>
 </head>
 <body class="k-body">
 
     <div id="test-area" class="k-d-grid k-grid-cols-4">
-        <section>
-            <p>Radio</p>
-            <input is="Radio" name="group1" id="rad1" checked /><!--
-            --><label class="k-radio-label" for="rad1">Checked</label>
-            <br /><br />
-            <input is="Radio" name="group2" id="rad3" checked disabled /><!--
-            --><label class="k-radio-label" for="rad3">Checked</label>
-            <br /><br />
-            <input is="Radio" name="group1" id="rad2" /><!--
-            --><label class="k-radio-label" for="rad2">Unchecked</label>
-            <br /><br />
-            <input is="Radio" name="group2" id="rad4" disabled /><!--
-            --><label class="k-radio-label" for="rad4">Unchecked</label>
-            <br /><br />
-            <input is="Radio" name="group1" id="radRequired" invalid required/><!--
-            --><label class="k-radio-label" for="radRequired">Invalid</label>
-            <br /><br />
-            <input is="Radio" name="groupLong1" id="radLong" checked /><!--
-            --><label class="k-radio-label" for="radLong">Long label Vivamus a arcu lacus. Integer augue leo.</label>
-        </section>
 
-        <section>
-            <p>In label</p>
+        <span>Radio button</span>
+        <span>In label</span>
+        <span dir="rtl">Radio button RTL</span>
+        <span dir="rtl">In label RTL</span>
+
+        <!-- checked -->
+        <div>
+            <input is="Radio" id="rad1" checked /><!--
+            --><label class="k-radio-label" for="rad1">Checked</label>
+        </div>
+        <div>
             <label class="k-radio-label">
-                <input is="Radio" name="group5" checked />
+                <input is="Radio" checked />
                 Checked
             </label>
-            <br /><br />
+        </div>
+        <div dir="rtl">
+            <input is="Radio" id="rad1-rtl" checked /><!--
+            --><label class="k-radio-label" for="rad1-rtl">Checked</label>
+        </div>
+        <div dir="rtl">
             <label class="k-radio-label">
-                <input is="Radio" name="group6" disabled checked />
+                <input is="Radio" checked />
                 Checked
             </label>
-            <br /><br />
+        </div>
+
+        <!-- disabled checked -->
+        <div>
+            <input is="Radio" id="rad2" disabled checked /><!--
+            --><label class="k-radio-label" for="rad2">Checked</label>
+        </div>
+        <div>
             <label class="k-radio-label">
-                <input is="Radio" name="group5" />
+                <input is="Radio" disabled checked />
+                Checked
+            </label>
+        </div>
+        <div dir="rtl">
+            <input is="Radio" id="rad2-rtl" disabled checked /><!--
+            --><label class="k-radio-label" for="rad2-rtl">Checked</label>
+        </div>
+        <div dir="rtl">
+            <label class="k-radio-label">
+                <input is="Radio" disabled checked />
+                Checked
+            </label>
+        </div>
+
+        <!-- unchecked -->
+        <div>
+            <input is="Radio" id="rad3" /><!--
+            --><label class="k-radio-label" for="rad3">Unchecked</label>
+        </div>
+        <div>
+            <label class="k-radio-label">
+                <input is="Radio" />
                 Unchecked
             </label>
-            <br /><br />
+        </div>
+        <div dir="rtl">
+            <input is="Radio" id="rad3-rtl" /><!--
+            --><label class="k-radio-label" for="rad3-rtl">Unchecked</label>
+        </div>
+        <div dir="rtl">
             <label class="k-radio-label">
-                <input is="Radio" name="group6" disabled />
+                <input is="Radio" />
                 Unchecked
             </label>
-            <br /><br />
+        </div>
+
+        <!-- disabled unchecked -->
+        <div>
+            <input is="Radio" id="rad4" disabled /><!--
+            --><label class="k-radio-label" for="rad4">Unchecked</label>
+        </div>
+        <div>
             <label class="k-radio-label">
-                <input is="Radio" name="group5" invalid required/>
+                <input is="Radio" disabled />
+                Unchecked
+            </label>
+        </div>
+        <div dir="rtl">
+            <input is="Radio" id="rad4-rtl" disabled /><!--
+            --><label class="k-radio-label" for="rad4-rtl">Unchecked</label>
+        </div>
+        <div dir="rtl">
+            <label class="k-radio-label">
+                <input is="Radio" disabled />
+                Unchecked
+            </label>
+        </div>
+
+        <!-- error -->
+        <div>
+            <input is="Radio" id="radError" invalid required/><!--
+            --><label class="k-radio-label" for="radError">Invalid</label>
+        </div>
+        <div>
+            <label class="k-radio-label">
+                <input is="Radio" invalid required/>
                 Invalid
             </label>
-            <br /><br />
+        </div>
+        <div dir="rtl">
+            <input is="Radio" id="radError-rtl" invalid required/><!--
+            --><label class="k-radio-label" for="radError-rtl">Invalid</label>
+        </div>
+        <div dir="rtl">
             <label class="k-radio-label">
-                <input is="Radio" name="groupLong3" checked />
+                <input is="Radio" invalid required/>
+                Invalid
+            </label>
+        </div>
+
+        <!-- long label -->
+        <div>
+            <input is="Radio" id="radLong" checked /><!--
+            --><label class="k-radio-label" for="radLong">Long label Vivamus a arcu lacus. Integer augue leo.</label>
+        </div>
+        <div>
+            <label class="k-radio-label">
+                <input is="Radio" checked />
                 Long label Vivamus a arcu lacus. Integer augue leo.
             </label>
-        </section>
-
-        <section>
-            <p><span class="bold-text">k-radio-label</span> before radio</p>
-            <label class="k-radio-label" for="rad11">Checked</label><!--
-            --><input is="Radio" name="group11" id="rad11" checked />
-            <br /><br />
-            <label class="k-radio-label" for="rad31">Checked</label><!--
-            --><input is="Radio" name="group21" id="rad31" disabled checked />
-            <br /><br />
-            <label class="k-radio-label" for="rad21">Unchecked</label><!--
-            --><input is="Radio" name="group11" id="rad21" />
-            <br /><br />
-            <label class="k-radio-label" for="rad41">Unchecked</label><!--
-            --><input is="Radio" name="group21" id="rad41" disabled />
-            <br /><br />
-            <label class="k-radio-label" for="radRequired1">Invalid</label><!--
-            --><input is="Radio" name="group11" id="radRequired1" invalid required />
-            <br /><br />
-            <label class="k-radio-label" for="radLong1">Long label Vivamus a arcu lacus. Integer augue leo.</label><!--
-            --><input is="Radio" name="groupLong11" id="radLong1" checked />
-        </section>
-
-        <section>
-            <p><span class="bold-text">k-label</span> before radio</p>
-            <label class="k-label" for="rad12">Checked</label><!--
-            --><input is="Radio" name="group12" id="rad12" checked />
-            <br /><br />
-            <label class="k-label" for="rad32">Checked</label><!--
-            --><input is="Radio" name="group22" id="rad32" disabled checked />
-            <br /><br />
-            <label class="k-label" for="rad22">Unchecked</label><!--
-            --><input is="Radio" name="group12" id="rad22" />
-            <br /><br />
-            <label class="k-label" for="rad42">Unchecked</label><!--
-            --><input is="Radio" name="group22" id="rad42" disabled />
-            <br /><br />
-            <label class="k-label" for="radRequired2">Invalid</label><!--
-            --><input is="Radio" name="group12" id="radRequired2" invalid required />
-            <br /><br />
-            <label class="k-label" for="radLong2">Long label Vivamus a arcu lacus. Integer augue leo.</label><!--
-            --><input is="Radio" name="groupLong12" id="radLong2" checked />
-        </section>
-
+        </div>
+        <div dir="rtl">
+            <input is="Radio" id="radLong-rtl" checked /><!--
+            --><label class="k-radio-label" for="radLong-rtl">Long label Vivamus a arcu lacus. Integer augue leo.</label>
+        </div>
+        <div dir="rtl">
+            <label class="k-radio-label">
+                <input is="Radio" checked />
+                Long label Vivamus a arcu lacus. Integer augue leo.
+            </label>
+        </div>
 
     </div>
 
