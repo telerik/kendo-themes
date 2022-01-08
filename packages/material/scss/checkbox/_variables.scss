@@ -1,58 +1,120 @@
 // Checkbox
 $checkbox-size: map-get( $spacing, 4 ) !default;
 $checkbox-radius: map-get( $spacing, thin ) !default;
+
+/// Border width of checkbox.
+/// @group checkbox
 $checkbox-border-width: 2px !default;
 $checkbox-line-height: calc( #{$checkbox-size} + #{$checkbox-border-width} ) !default;
 
+/// Background color of checkbox.
+/// @group checkbox
 $checkbox-bg: null !default;
-$checkbox-text: transparent !default;
+/// Color of checkbox.
+/// @group checkbox
+$checkbox-text: null !default;
+/// Border color of checkbox.
+/// @group checkbox
 $checkbox-border: rgba( if( $dark-theme, $white, $black ), .54 ) !default;
 
+/// Background color of hovered checkbox.
+/// @group checkbox
 $checkbox-hovered-bg: null !default;
+/// Color of hovered checkbox.
+/// @group checkbox
 $checkbox-hovered-text: null !default;
-$checkbox-hovered-border: rgba( if( $dark-theme, $white, $black ), .87 ) !default;
+/// Border color of hovered checkbox.
+/// @group checkbox
+$checkbox-hovered-border: null !default;
 
+/// Background color of checked checkbox.
+/// @group checkbox
 $checkbox-checked-bg: $primary !default;
+/// Color of checked checkbox.
+/// @group checkbox
 $checkbox-checked-text: contrast-wcag( $checkbox-checked-bg ) !default;
+/// Border color of checked checkbox.
+/// @group checkbox
 $checkbox-checked-border: $checkbox-checked-bg !default;
 
+/// Background color of indeterminate checkbox.
+/// @group checkbox
 $checkbox-indeterminate-bg: $checkbox-checked-bg !default;
+/// Color of indeterminate checkbox.
+/// @group checkbox
 $checkbox-indeterminate-text: $checkbox-checked-text !default;
+/// Border color of indeterminate checkbox.
+/// @group checkbox
 $checkbox-indeterminate-border: $checkbox-checked-border !default;
 
-$checkbox-focused-border: $checkbox-border !default;
-$checkbox-focused-shadow: none !default;
-$checkbox-focused-checked-border: $checkbox-checked-border !default;
-$checkbox-focused-checked-shadow: none !default;
+/// Border color of focused checkbox.
+/// @group checkbox
+$checkbox-focused-border: null !default;
+/// Box shadow of focused checkbox.
+/// @group checkbox
+$checkbox-focused-shadow: null !default;
+/// Border color of focused and checked checkbox.
+/// @group checkbox
+$checkbox-focused-checked-border: null !default;
+/// Box shadow of focused and checked checkbox.
+/// @group checkbox
+$checkbox-focused-checked-shadow: null !default;
 
+/// Background color of disabled checkbox.
+/// @group checkbox
 $checkbox-disabled-bg: null !default;
+/// Color of disabled checkbox.
+/// @group checkbox
 $checkbox-disabled-text: null !default;
+/// Border color of disabled checkbox.
+/// @group checkbox
 $checkbox-disabled-border: try-shade( $component-bg, 4 ) !default;
 
+
+/// Background color of disabled and checked checkbox.
+/// @group checkbox
 $checkbox-disabled-checked-bg: $checkbox-disabled-border !default;
+/// Color of disabled and checked checkbox.
+/// @group checkbox
 $checkbox-disabled-checked-text: contrast-wcag( $checkbox-disabled-checked-bg ) !default;
+/// Border color of disabled and checked checkbox.
+/// @group checkbox
 $checkbox-disabled-checked-border: $checkbox-disabled-checked-bg !default;
 
+/// Background color of invalid checkbox.
+/// @group checkbox
 $checkbox-invalid-bg: null !default;
+/// Color of invalid checkbox.
+/// @group checkbox
 $checkbox-invalid-text: $invalid-text !default;
+/// Border color of invalid checkbox.
+/// @group checkbox
 $checkbox-invalid-border: $invalid-border !default;
 
 
 // Checkbox indicator
-$checkbox-icon-type: image !default;
 
+/// Type of checkbox indicator.
+/// @group checkbox
+$checkbox-indicator-type: image !default;
+
+/// Glyph font family of checkbox indicator.
+/// @group checkbox
 $checkbox-glyph-font-family: "WebComponentsIcons", monospace !default;
 $checkbox-glyph-size: 10px !default;
+/// Glyph of checkbox indicator.
+/// @group checkbox
 $checkbox-checked-glyph: "\e118" !default;
+/// Glyph of indeterminate checkbox indicator.
+/// @group checkbox
 $checkbox-indeterminate-glyph: "\e121" !default;
 
+/// Image of checked checkbox indicator.
+/// @group checkbox
 $checkbox-checked-image: escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='none' stroke='#{$checkbox-checked-text}' stroke-width='3' d='M4.1,12.7 9,17.6 20.3,6.3'/></svg>") ) !default;
+/// Image of checked checkbox indicator.
+/// @group checkbox
 $checkbox-indeterminate-image: escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path fill='none' stroke='#{$checkbox-indeterminate-text}' stroke-width='3' d='M4 10h12'/></svg>") ) !default;
-
-$checkbox-marker-checked-width: 10px !default;
-$checkbox-marker-checked-height: 10px !default;
-$checkbox-marker-indeterminate-width: 10px !default;
-$checkbox-marker-indeterminate-height: 2px !default;
 
 
 // Checkbox label
@@ -60,12 +122,21 @@ $checkbox-label-margin-x: map-get( $spacing, 1 ) !default;
 
 
 // Checkbox list
+
+/// Spacing between items of horizontal checkbox list.
+/// @group checkbox
 $checkbox-list-spacing: map-get( $spacing, 4 ) !default;
+/// Horizontal padding of checkbox list items.
+/// @group checkbox
 $checkbox-list-item-padding-x: 0px !default;
+/// Vertical padding of checkbox list items.
+/// @group checkbox
 $checkbox-list-item-padding-y: $list-item-padding-y !default;
 
 
 // Checkbox ripple
 $checkbox-ripple-size: $checkbox-size * 3 !default;
 $checkbox-ripple-margin: calc(-1 * (#{$checkbox-size} + #{$checkbox-border-width})) !default;
+/// Opacity of checkbox ripple.
+/// @group checkbox
 $checkbox-ripple-opacity: .38 !default;

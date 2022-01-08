@@ -26,7 +26,7 @@
 
     // Checkbox indicator
     .k-checkbox::before {
-        @if $checkbox-icon-type == "glyph" {
+        @if $checkbox-indicator-type == "glyph" {
             content: $checkbox-checked-glyph;
             width: $checkbox-glyph-size;
             height: $checkbox-glyph-size;
@@ -45,11 +45,11 @@
     // Checked state
     .k-checkbox:checked,
     .k-checkbox.k-checked {
-        @if $checkbox-icon-type == "image" {
+        @if $checkbox-indicator-type == "image" {
             background-image: $checkbox-checked-image;
         }
 
-        @if $checkbox-icon-type == "glyph" {
+        @if $checkbox-indicator-type == "glyph" {
             &::before {
                 transform: scale(1) translate(-50%, -50%);
             }
@@ -61,11 +61,11 @@
     .k-checkbox:indeterminate,
     .k-checkbox.k-indeterminate,
     .k-checkbox.k-state-indeterminate {
-        @if $checkbox-icon-type == "image" {
+        @if $checkbox-indicator-type == "image" {
             background-image: $checkbox-indeterminate-image;
         }
 
-        @if $checkbox-icon-type == "glyph" {
+        @if $checkbox-indicator-type == "glyph" {
             &::before {
                 content: $checkbox-indeterminate-glyph;
                 transform: scale(1) translate(-50%, -50%);
