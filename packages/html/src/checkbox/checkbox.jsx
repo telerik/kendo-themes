@@ -74,12 +74,12 @@ function CheckboxStatic(props) {
         ];
 
         return (
-            <input type="checkbox" className={legacyClasses} {...ariaAttr} {...htmlAttributes} />
+            <span className="k-checkbox-wrap"><input type="checkbox" className={legacyClasses} {...ariaAttr} {...htmlAttributes} /></span>
         );
     }
 
     return (
-        <input type="checkbox" className={checkboxClasses} {...ariaAttr} {...htmlAttributes} />
+        <span className="k-checkbox-wrap"><input type="checkbox" className={checkboxClasses} {...ariaAttr} {...htmlAttributes} /></span>
     );
 }
 
