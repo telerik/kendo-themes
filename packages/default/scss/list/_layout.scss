@@ -20,10 +20,9 @@
 
     .k-list__group-header { // sass-lint:disable-line class-name-format
         padding: $list-item-padding-y $list-item-padding-x;
-        min-height: $list-line-height-em;
         border-bottom-width: 1px;
         border-bottom-style: solid;
-        font-size: $font-size;
+        font-size: $list-font-size;
         white-space: normal;
         position: relative;
         transition: $transition;
@@ -62,7 +61,6 @@
 
     .k-list__item { // sass-lint:disable-line class-name-format
         padding: $list-item-padding-y $list-item-padding-x;
-        min-height: $list-line-height-em;
         line-height: $list-line-height;
         white-space: normal;
         display: flex;
@@ -158,6 +156,7 @@
     }
 
 
+    // No data
     .k-list-container {
         .k-no-data {
             min-height: 138px;

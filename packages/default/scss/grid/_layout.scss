@@ -1289,6 +1289,8 @@
         .k-item,
         .k-check-all-wrap {
             padding: $grid-column-menu-list-item-padding-y $grid-column-menu-list-item-padding-x;
+            display: flex;
+            flex-flow: row nowrap;
         }
     }
 

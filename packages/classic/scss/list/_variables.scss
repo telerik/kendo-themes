@@ -2,20 +2,20 @@
 
 /// Font size of the list component.
 /// @group list
-$list-font-size: $font-size !default;
+$list-font-size: $font-size-md !default;
 
 /// Line height of the list component.
 /// @group list
-$list-line-height: $line-height !default;
+$list-line-height: $line-height-md !default;
 $list-line-height-em: $line-height-em !default;
 
 /// Horizontal padding of list items.
 /// @group list
-$list-item-padding-x: $padding-x !default;
+$list-item-padding-x: map-get( $spacing, 2 ) !default;
 
 /// Vertical padding of list items.
 /// @group list
-$list-item-padding-y: $padding-y !default;
+$list-item-padding-y: map-get( $spacing, 1 ) !default;
 
 
 /// Background color of the list component.

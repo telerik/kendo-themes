@@ -2,11 +2,11 @@
 
 /// Font size of the list component.
 /// @group list
-$list-font-size: $font-size !default;
+$list-font-size: $font-size-md !default;
 
 /// Line height of the list component.
 /// @group list
-$list-line-height: $line-height !default;
+$list-line-height: $line-height-md !default;
 $list-line-height-em: $line-height-em !default;
 
 /// Horizontal padding of list items.

@@ -6,15 +6,15 @@ $listbox-default-height: 200px !default;
 
 $listbox-border-width: 1px !default;
 $listbox-font-family: $font-family !default;
-$listbox-font-size: $font-size !default;
-$listbox-line-height: $line-height !default;
+$listbox-font-size: $list-font-size !default;
+$listbox-line-height: $list-line-height !default;
 
 $listbox-bg: $component-bg !default;
 $listbox-text: $component-text !default;
 $listbox-border: $component-border !default;
 
-$listbox-item-padding-x: 24px !default;
-$listbox-item-padding-y: 2px !default;
+$listbox-item-padding-x: $list-item-padding-x !default;
+$listbox-item-padding-y: $list-item-padding-y !default;
 
 $listbox-drop-hint-border-width: 2px !default;
 $listbox-drop-hint-width: 2px !default;
