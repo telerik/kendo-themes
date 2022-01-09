@@ -75,7 +75,7 @@ function TreeviewItemStatic(props) {
             <li className={legacyTreeviewItemClasses} {...ariaAttr} {...htmlAttributes}>
                 <span className="k-mid">
                     {hasChildren && <span className="k-treeview-toggle"><IconStatic name={expanded ? 'collapse' : 'expand'} /></span>}
-                    {showCheckbox && <span className="k-checkbox-wrap"><CheckboxStatic checked={checked} /></span>}
+                    {showCheckbox && <CheckboxStatic checked={checked} />}
                     <TreeviewLeafStatic {...leafProps} />
                 </span>
                 {expanded && hasChildren && <TreeviewGroupStatic items={items} />}
@@ -87,7 +87,7 @@ function TreeviewItemStatic(props) {
         <li className={treeviewItemClasses} {...ariaAttr} {...htmlAttributes}>
             <span className="k-treeview-mid">
                 {hasChildren && <span className="k-treeview-toggle"><IconStatic name={expanded ? 'collapse' : 'expand'} /></span>}
-                {showCheckbox && <span className="k-checkbox-wrap"><CheckboxStatic checked={checked} /></span>}
+                {showCheckbox && <CheckboxStatic checked={checked} />}
                 <TreeviewLeafStatic {...leafProps} />
             </span>
             {expanded && hasChildren && <TreeviewGroupStatic items={items} />}
