@@ -1,4 +1,4 @@
-@include exports("checkbox/theme") {
+@include exports( "checkbox/theme" ) {
 
     // Checkbox
     .k-checkbox {
@@ -95,9 +95,13 @@
 
 
     // Ripple
+    .k-checkbox-wrap .k-ripple-blob {
+        color: $checkbox-ripple-bg;
+        opacity: $checkbox-ripple-opacity;
+    }
     .k-ripple-container {
         .k-checkbox::after {
-            background: $checkbox-checked-bg;
+            background: $checkbox-ripple-bg;
             opacity: $checkbox-ripple-opacity;
         }
     }

@@ -68,10 +68,6 @@
             display: flex;
             flex-flow: row nowrap;
         }
-        .k-checkbox-label,
-        .k-radio-label {
-            display: inline-flex;
-        }
 
         .k-label + .k-radio {
             margin-left: 0;

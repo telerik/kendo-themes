@@ -33,7 +33,7 @@
             font-size: $checkbox-glyph-size;
             font-family: $checkbox-glyph-font-family;
             line-height: 1;
-            transform: scale(0) translate(-50%, -50%);
+            transform: translate(-50%, -50%) scale(0);
             overflow: hidden;
             position: absolute;
             top: 50%;
@@ -51,7 +51,7 @@
 
         @if $checkbox-indicator-type == "glyph" {
             &::before {
-                transform: scale(1) translate(-50%, -50%);
+                transform: translate(-50%, -50%) scale(1);
             }
         }
     }
@@ -68,7 +68,7 @@
         @if $checkbox-indicator-type == "glyph" {
             &::before {
                 content: $checkbox-indeterminate-glyph;
-                transform: scale(1) translate(-50%, -50%);
+                transform: translate(-50%, -50%) scale(1);
             }
         }
     }
@@ -76,9 +76,7 @@
 
     // Disabled state
     .k-checkbox:disabled,
-    .k-checkbox.k-disabled,
-    .k-checkbox:disabled + .k-checkbox-label,
-    .k-checkbox.k-disabled + .k-checkbox-label {
+    .k-checkbox.k-disabled {
         @include disabled( $disabled-styling );
     }
 
@@ -90,6 +88,9 @@
         flex-flow: row nowrap;
         gap: 0;
         align-items: center;
+        align-self: flex-start;
+        vertical-align: middle;
+        position: relative;
 
         &::before {
             content: "\200b";
@@ -106,59 +107,24 @@
     .k-checkbox-label {
         margin: 0;
         padding: 0;
-        line-height: $checkbox-line-height;
         display: inline-flex;
         align-items: flex-start;
+        gap: $checkbox-label-margin-x;
         vertical-align: middle;
         position: relative;
         cursor: pointer;
 
-        .k-label {
-            cursor: pointer;
-        }
-
         .k-ripple {
-            top: $checkbox-size / 2;
-            left: $checkbox-size / 2;
-            right: auto;
-            bottom: auto;
-            width: $checkbox-size * 5 / 2;
-            height: $checkbox-size * 5 / 2;
-            transform: translate(-50%, -50%);
-            border-radius: 50%;
-
             // Hide ripple temporarily
             visibility: hidden !important; // sass-lint:disable-line no-important
         }
-
-        .k-ripple-blob {
-            // sass-lint:disable-block no-important
-            // use !important until ripple can apply these styles from the script
-            top: 50% !important;
-            left: 50% !important;
-            width: 200% !important;
-            height: 200% !important;
-        }
     }
-    .k-checkbox + .k-checkbox-label {
-        display: inline;
-    }
+    .k-checkbox + .k-label,
+    .k-checkbox-wrap + .k-label,
     .k-checkbox + .k-checkbox-label,
-    .k-checkbox-label + .k-checkbox {
-        margin-left: $checkbox-label-margin-x;
-    }
-    .k-checkbox-label > .k-checkbox {
-        margin-right: $checkbox-label-margin-x;
-        flex-shrink: 0;
-    }
-    kendo-label.k-checkbox-label > .k-checkbox:last-child {
-        margin-right: 0;
-    }
-    kendo-label.k-checkbox-label > .k-label:first-child {
-        margin-right: $checkbox-label-margin-x;
-    }
-    kendo-label.k-checkbox-label > .k-label {
+    .k-checkbox-wrap + .k-checkbox-label {
         display: inline;
+        margin-inline-start: $checkbox-label-margin-x;
     }
 
 
@@ -166,9 +132,6 @@
     .k-checkbox-label:empty {
         display: none !important; // sass-lint:disable-line no-important
     }
-
-
-    // Label with no text
     .k-checkbox-label.k-no-text {
         min-width: 1px;
     }
@@ -192,8 +155,8 @@
         align-content: center;
         gap: map-get( $spacing, 1 );
 
-        .k-radio-label {
-            line-height: inherit;
+        .k-checkbox-label {
+            margin: 0;
         }
     }
     .k-checkbox-list-horizontal,
@@ -204,61 +167,40 @@
     }
 
 
-    // RTL
-    .k-rtl,
-    [dir="rtl"] {
-        .k-checkbox + .k-checkbox-label,
-        .k-checkbox-label + .k-checkbox {
-            margin-left: 0;
-            margin-right: $checkbox-label-margin-x;
-        }
-        .k-checkbox-label > .k-checkbox {
-            margin-right: 0;
-            margin-left: $checkbox-label-margin-x;
-        }
-        kendo-label.k-checkbox-label > .k-checkbox:last-child {
-            margin-left: 0;
-        }
-        kendo-label.k-checkbox-label > .k-label:first-child {
-            margin-right: 0;
-            margin-left: $checkbox-label-margin-x;
-        }
+    // Ripple
+    .k-checkbox-wrap .k-ripple-blob {
+        width: $checkbox-ripple-size;
+        height: $checkbox-ripple-size;
     }
-
     .k-ripple-container {
         .k-checkbox::after {
             content: "";
             display: block;
             position: absolute;
-            left: 0;
-            top: 0;
+            left: 50%;
+            top: 50%;
             width: $checkbox-ripple-size;
             height: $checkbox-ripple-size;
-            margin-left: $checkbox-ripple-margin;
-            margin-top: $checkbox-ripple-margin;
             border-radius: 100%;
-            z-index: 1;
-            transform: scale(0);
+            z-index: -1;
+            transition: opacity 100ms linear, transform 150ms cubic-bezier(.4, 0, .2, 1);
+            transform: translate(-50%, -50%) scale(0);
+            transform-origin: center center;
+        }
+
+        .k-checkbox:focus,
+        .k-checkbox.k-state-focus {
+            box-shadow: none !important; // sass-lint:disable-line no-important
+
+            &::after {
+                transform: translate(-50%, -50%) scale(1);
+            }
         }
 
         .k-checkbox:disabled::after,
         .k-checkbox.k-disabled::after {
             display: none;
         }
-    }
-
-}
-
-
-
-
-@include exports( "checkbox/layout/edge" ) {
-
-    .k-checkbox::-ms-check {
-        border-width: 1px;
-        border-color: inherit;
-        color: inherit;
-        background-color: inherit;
     }
 
 }

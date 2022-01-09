@@ -5,7 +5,6 @@ $checkbox-radius: map-get( $spacing, thin ) !default;
 /// Border width of checkbox.
 /// @group checkbox
 $checkbox-border-width: 1px !default;
-$checkbox-line-height: calc( #{$checkbox-size} + #{$checkbox-border-width} ) !default;
 
 /// Background color of checkbox.
 /// @group checkbox
@@ -95,7 +94,7 @@ $checkbox-invalid-border: $invalid-border !default;
 
 /// Type of checkbox indicator.
 /// @group checkbox
-$checkbox-indicator-type: glyph !default;
+$checkbox-indicator-type: image !default;
 
 /// Glyph font family of checkbox indicator.
 /// @group checkbox
@@ -110,10 +109,10 @@ $checkbox-indeterminate-glyph: "\e121" !default;
 
 /// Image of checked checkbox indicator.
 /// @group checkbox
-$checkbox-checked-image: null !default;
-/// Image of checked checkbox indicator.
+$checkbox-checked-image: escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='none' stroke='#{$checkbox-checked-text}' stroke-linecap='square' stroke-linejoin='square' stroke-width='2' d='M3,8 l3,3 l7-7'/></svg>") ) !default;
+/// Image image of checked checkbox indicator.
 /// @group checkbox
-$checkbox-indeterminate-image: null !default;
+$checkbox-indeterminate-image: escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='none' stroke='#{$checkbox-indeterminate-text}' stroke-linecap='square' stroke-linejoin='square' stroke-width='2' d='M4,8 h8'/></svg>") ) !default;
 
 
 // Checkbox label
@@ -135,7 +134,9 @@ $checkbox-list-item-padding-y: $list-item-padding-y !default;
 
 // Checkbox ripple
 $checkbox-ripple-size: $checkbox-size * 3 !default;
-$checkbox-ripple-margin: calc(-1 * (#{$checkbox-size} + 2 * #{$checkbox-border-width})) !default;
+/// Background color of checkbox ripple.
+/// @group checkbox
+$checkbox-ripple-bg: $checkbox-checked-bg !default;
 /// Opacity of checkbox ripple.
 /// @group checkbox
-$checkbox-ripple-opacity: .3 !default;
+$checkbox-ripple-opacity: .25 !default;

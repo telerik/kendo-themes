@@ -5,7 +5,6 @@ $checkbox-radius: map-get( $spacing, thin ) !default;
 /// Border width of checkbox.
 /// @group checkbox
 $checkbox-border-width: 2px !default;
-$checkbox-line-height: calc( #{$checkbox-size} + #{$checkbox-border-width} ) !default;
 
 /// Background color of checkbox.
 /// @group checkbox
@@ -136,7 +135,9 @@ $checkbox-list-item-padding-y: $list-item-padding-y !default;
 
 // Checkbox ripple
 $checkbox-ripple-size: $checkbox-size * 3 !default;
-$checkbox-ripple-margin: calc(-1 * (#{$checkbox-size} + #{$checkbox-border-width})) !default;
+/// Background color of checkbox ripple.
+/// @group checkbox
+$checkbox-ripple-bg: $primary !default;
 /// Opacity of checkbox ripple.
 /// @group checkbox
-$checkbox-ripple-opacity: .38 !default;
+$checkbox-ripple-opacity: .2 !default;

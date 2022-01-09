@@ -1119,6 +1119,12 @@
             flex-flow: row nowrap;
             align-items: center;
         }
+        .k-recurrence-editor {
+            .k-radio-list .k-radio-wrap,
+            .k-checkbox-list .k-checkbox-wrap {
+                align-self: center;
+            }
+        }
 
         .k-recur-interval,
         .k-recur-count,

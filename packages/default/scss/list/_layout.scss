@@ -76,10 +76,6 @@
         transition-timing-function: ease;
         outline: none;
 
-        .k-checkbox-wrap {
-            align-self: flex-start;
-        }
-
         &.k-first::before {
             content: "";
             display: block;
