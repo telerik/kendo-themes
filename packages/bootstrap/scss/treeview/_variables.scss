@@ -5,10 +5,10 @@
 $treeview-font-family: $font-family !default;
 /// Font size of the treeview component.
 /// @group treeview
-$treeview-font-size: $font-size !default;
+$treeview-font-size: $font-size-md !default;
 /// Line height of the treeview component.
 /// @group treeview
-$treeview-line-height: $line-height !default;
+$treeview-line-height: $line-height-md !default;
 
 /// Indentation of child groups in treeview component.
 /// @group treeview
@@ -19,10 +19,10 @@ $treeview-indent: 16px !default;
 $treeview-item-padding-x: map-get( $spacing, 3 ) !default;
 /// Vertical padding of treeview items.
 /// @group treeview
-$treeview-item-padding-y: ( $treeview-item-padding-x / 2 ) !default;
+$treeview-item-padding-y: map-get( $spacing, 1 ) !default;
 /// Border width of treeview items.
 /// @group treeview
-$treeview-item-border-width: 1px !default;
+$treeview-item-border-width: 0px !default;
 /// Border radius of treeview items.
 /// @group treeview
 $treeview-item-border-radius: map-get( $spacing, 1 ) !default;
