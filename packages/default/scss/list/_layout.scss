@@ -159,7 +159,7 @@
 
 
     .k-list-container {
-        .k-nodata {
+        .k-no-data {
             min-height: 138px;
             width: 100%;
             display: flex;
@@ -170,6 +170,12 @@
             text-align: center;
             white-space: normal;
         }
+    }
+
+
+    // Alias
+    .k-nodata {
+        @extend .k-no-data !optional;
     }
 
 }

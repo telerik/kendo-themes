@@ -5,7 +5,7 @@
     .k-list__group-header { // sass-lint:disable-line class-name-format
         color: $component-text;
         border-color: $component-border;
-        box-shadow: $list-container-shadow;
+        box-shadow: $list-header-shadow;
     }
 
     .k-list__item__group { // sass-lint:disable-line class-name-format
@@ -95,8 +95,8 @@
         }
 
 
-        .k-nodata {
-            color: $list-container-no-data-text;
+        .k-no-data {
+            color: $list-no-data-text;
         }
 
     }
