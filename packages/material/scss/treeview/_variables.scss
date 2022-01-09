@@ -1,40 +1,101 @@
-// Treeview
+// TreeviewTreeview
+
+/// Font family of the treeview component.
+/// @group treeview
 $treeview-font-family: $font-family !default;
+/// Font size of the treeview component.
+/// @group treeview
 $treeview-font-size: $font-size !default;
+/// Line height of the treeview component.
+/// @group treeview
 $treeview-line-height: (20 / 14) !default;
 
+/// Indentation of child groups in treeview component.
+/// @group treeview
 $treeview-indent: 16px !default;
 
+/// Horizontal padding of treeview items.
+/// @group treeview
 $treeview-item-padding-x: 8px !default;
+/// Vertical padding of treeview items.
+/// @group treeview
 $treeview-item-padding-y: 6px !default;
+/// Border width of treeview items.
+/// @group treeview
 $treeview-item-border-width: 0px !default;
+/// Border radius of treeview items.
+/// @group treeview
 $treeview-item-border-radius: null !default;
 
+/// Background color of the treeview component.
+/// @group treeview
 $treeview-bg: null !default;
+/// Text color of the treeview component.
+/// @group treeview
 $treeview-text: $component-text !default;
+/// Border color of the treeview component.
+/// @group treeview
 $treeview-border: null !default;
 
+/// Background color of hovered treeview items.
+/// @group treeview
 $treeview-item-hovered-bg: rgba( $treeview-text, .07 ) !default;
+/// Text color of hovered treeview items.
+/// @group treeview
 $treeview-item-hovered-text: null !default;
+/// Border color of hovered treeview items.
+/// @group treeview
 $treeview-item-hovered-border: null !default;
+/// Background gradient of hovered treeview items.
+/// @group treeview
 $treeview-item-hovered-gradient: null !default;
 
+/// Background color of selected treeview items.
+/// @group treeview
 $treeview-item-selected-bg: null !default;
+/// Text color of selected treeview items.
+/// @group treeview
 $treeview-item-selected-text: $selected-bg !default;
+/// Border color of selected treeview items.
+/// @group treeview
 $treeview-item-selected-border: null !default;
+/// Background gradient of selected treeview items.
+/// @group treeview
 $treeview-item-selected-gradient: null !default;
 
+/// Box shadow of focused treeview items.
+/// @group treeview
 $treeview-item-focused-shadow: null !default;
 
+/// Background color of load more.
+/// @group treeview
 $treeview-loadmore-bg: transparent !default;
+/// Text color of load more.
+/// @group treeview
 $treeview-loadmore-text: inherit !default;
+/// Border color of load more.
+/// @group treeview
 $treeview-loadmore-border: null !default;
 
+/// Background color of a hovered load more.
+/// @group treeview
 $treeview-loadmore-hover-bg: transparent !default;
+/// Text color of a hovered load more.
+/// @group treeview
 $treeview-loadmore-hover-text: inherit !default;
+/// Border color of a hovered load more.
+/// @group treeview
 $treeview-loadmore-hover-border: null !default;
 
+/// Background color of a focused load more.
+/// @group treeview
 $treeview-loadmore-focus-bg: transparent !default;
+/// Text color of a focused load more.
+/// @group treeview
 $treeview-loadmore-focus-text: inherit !default;
+/// Border color of a focused load more.
+/// @group treeview
 $treeview-loadmore-focus-border: null !default;
+/// Box shadow of a focused load more.
+/// @group treeview
 $treeview-loadmore-focus-shadow: $treeview-item-focused-shadow !default;
