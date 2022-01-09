@@ -922,16 +922,6 @@ The following table lists the available variables for customizing the Material t
     </td>
 </tr>
 <tr>
-    <td>$radio-ripple-bg</td>
-    <td></td>
-    <td>$primary</td>
-    <td>material-color( $primary-palette, main )</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of radio button ripple.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$checkbox-list-spacing</td>
     <td></td>
     <td>map-get( $spacing, 4 )</td>
@@ -955,7 +945,7 @@ The following table lists the available variables for customizing the Material t
     <td>$checkbox-list-item-padding-y</td>
     <td></td>
     <td>$list-item-padding-y</td>
-    <td></td>
+    <td>map-get( $spacing, 1 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of checkbox list items.</div></div>
@@ -1428,6 +1418,237 @@ The following table lists the available variables for customizing the Material t
 </tbody>
 </table>
 
+### List
+
+<table class="theme-variables">
+    <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
+    </tr>
+</thead>
+<tbody>
+        <tr>
+    <td>$list-font-size</td>
+    <td></td>
+    <td>$font-size</td>
+    <td>14px</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the list component.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$list-line-height</td>
+    <td></td>
+    <td>1.5</td>
+    <td>1.5</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of the list component.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$list-item-padding-x</td>
+    <td></td>
+    <td>map-get( $spacing, 4 )</td>
+    <td>map-get( $spacing, 4 )</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of list items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$list-item-padding-y</td>
+    <td></td>
+    <td>map-get( $spacing, 1 )</td>
+    <td>map-get( $spacing, 1 )</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of list items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$list-bg</td>
+    <td></td>
+    <td>$component-bg</td>
+    <td>map-get($theme, component-bg)</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the list component.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$list-text</td>
+    <td></td>
+    <td>$component-text</td>
+    <td>map-get($theme, component-text)</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the list component.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$list-border</td>
+    <td></td>
+    <td>$component-border</td>
+    <td>map-get($theme, component-border)</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the list component.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$list-header-bg</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of list header.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$list-header-text</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of list header.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$list-header-border</td>
+    <td></td>
+    <td>inherit</td>
+    <td>inherit</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of list header.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$list-header-shadow</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Box shadow of list header.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$list-item-bg</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of list items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$list-item-text</td>
+    <td></td>
+    <td>$component-text</td>
+    <td>map-get($theme, component-text)</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of list items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$list-item-hovered-bg</td>
+    <td></td>
+    <td>$hovered-bg</td>
+    <td>map-get( $theme, hover-bg )</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of hovered list items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$list-item-hovered-text</td>
+    <td></td>
+    <td>$hovered-text</td>
+    <td>$base-text</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of hovered list items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$list-item-focused-bg</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of focused list items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$list-item-focused-text</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of focused list items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$list-item-focused-shadow</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Box shadow of focused list items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$list-item-selected-bg</td>
+    <td></td>
+    <td>$component-bg</td>
+    <td>map-get($theme, component-bg)</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of selected list items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$list-item-selected-text</td>
+    <td></td>
+    <td>$secondary</td>
+    <td>material-color( $secondary-palette, main )</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of selected list items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$list-no-data-text</td>
+    <td></td>
+    <td>$subtle-text</td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the 'No Data' text.</div></div>
+    </td>
+</tr>
+</tbody>
+</table>
+
 ### Radio
 
 <table class="theme-variables">
@@ -1447,6 +1668,16 @@ The following table lists the available variables for customizing the Material t
 </thead>
 <tbody>
         <tr>
+    <td>$radio-radius</td>
+    <td></td>
+    <td>50%</td>
+    <td>50%</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border radius of radio button.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$radio-border-width</td>
     <td></td>
     <td>2px</td>
@@ -1740,10 +1971,20 @@ The following table lists the available variables for customizing the Material t
     <td>$radio-list-item-padding-y</td>
     <td></td>
     <td>$list-item-padding-y</td>
-    <td></td>
+    <td>map-get( $spacing, 1 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of radio button list items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$radio-ripple-bg</td>
+    <td></td>
+    <td>$primary</td>
+    <td>material-color( $primary-palette, main )</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of radio button ripple.</div></div>
     </td>
 </tr>
 <tr>
@@ -2498,6 +2739,327 @@ The following table lists the available variables for customizing the Material t
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the container.</div></div>
+    </td>
+</tr>
+</tbody>
+</table>
+
+### Treeview
+
+<table class="theme-variables">
+    <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
+    </tr>
+</thead>
+<tbody>
+        <tr>
+    <td>$treeview-font-family</td>
+    <td></td>
+    <td>$font-family</td>
+    <td>Roboto, "Helvetica Neue", sans-serif</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font family of the treeview component.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$treeview-font-size</td>
+    <td></td>
+    <td>$font-size</td>
+    <td>14px</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the treeview component.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$treeview-line-height</td>
+    <td></td>
+    <td>(20 / 14)</td>
+    <td>(20 / 14)</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of the treeview component.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$treeview-indent</td>
+    <td></td>
+    <td>16px</td>
+    <td>16px</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Indentation of child groups in treeview component.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$treeview-item-padding-x</td>
+    <td></td>
+    <td>8px</td>
+    <td>8px</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of treeview items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$treeview-item-padding-y</td>
+    <td></td>
+    <td>6px</td>
+    <td>6px</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of treeview items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$treeview-item-border-width</td>
+    <td></td>
+    <td>0px</td>
+    <td>0px</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border width of treeview items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$treeview-item-border-radius</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border radius of treeview items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$treeview-bg</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the treeview component.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$treeview-text</td>
+    <td></td>
+    <td>$component-text</td>
+    <td>map-get($theme, component-text)</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the treeview component.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$treeview-border</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the treeview component.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$treeview-item-hovered-bg</td>
+    <td></td>
+    <td>rgba( $treeview-text, .07 )</td>
+    <td>rgba( $treeview-text, .07 )</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of hovered treeview items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$treeview-item-hovered-text</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of hovered treeview items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$treeview-item-hovered-border</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of hovered treeview items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$treeview-item-hovered-gradient</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background gradient of hovered treeview items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$treeview-item-selected-bg</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of selected treeview items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$treeview-item-selected-text</td>
+    <td></td>
+    <td>$selected-bg</td>
+    <td>$secondary</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of selected treeview items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$treeview-item-selected-border</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of selected treeview items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$treeview-item-selected-gradient</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background gradient of selected treeview items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$treeview-item-focused-shadow</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Box shadow of focused treeview items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$treeview-loadmore-bg</td>
+    <td></td>
+    <td>transparent</td>
+    <td>transparent</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of load more.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$treeview-loadmore-text</td>
+    <td></td>
+    <td>inherit</td>
+    <td>inherit</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of load more.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$treeview-loadmore-border</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of load more.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$treeview-loadmore-hover-bg</td>
+    <td></td>
+    <td>transparent</td>
+    <td>transparent</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of a hovered load more.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$treeview-loadmore-hover-text</td>
+    <td></td>
+    <td>inherit</td>
+    <td>inherit</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of a hovered load more.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$treeview-loadmore-hover-border</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of a hovered load more.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$treeview-loadmore-focus-bg</td>
+    <td></td>
+    <td>transparent</td>
+    <td>transparent</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of a focused load more.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$treeview-loadmore-focus-text</td>
+    <td></td>
+    <td>inherit</td>
+    <td>inherit</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of a focused load more.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$treeview-loadmore-focus-border</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of a focused load more.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$treeview-loadmore-focus-shadow</td>
+    <td></td>
+    <td>$treeview-item-focused-shadow</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Box shadow of a focused load more.</div></div>
     </td>
 </tr>
 </tbody>
