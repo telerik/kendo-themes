@@ -1,7 +1,9 @@
 // Radio button
-$radio-size: map-get( $spacing, 4 ) !default;
-$radio-radius: 50% !default;
 
+$radio-size: map-get( $spacing, 4 ) !default;
+/// Border radius of radio button.
+/// @group radio
+$radio-radius: 50% !default;
 /// Border width of radio button.
 /// @group radio
 $radio-border-width: 1px !default;
@@ -122,7 +124,7 @@ $radio-list-item-padding-y: $list-item-padding-y !default;
 // Radio ripple
 $radio-ripple-size: $radio-size * 3 !default;
 /// Background color of radio button ripple.
-/// @group checkbox
+/// @group radio
 $radio-ripple-bg: $radio-checked-bg !default;
 /// Opacity of radio button ripple.
 /// @group radio

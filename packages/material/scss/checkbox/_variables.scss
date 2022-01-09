@@ -1,7 +1,7 @@
 // Checkbox
+
 $checkbox-size: map-get( $spacing, 4 ) !default;
 $checkbox-radius: map-get( $spacing, thin ) !default;
-
 /// Border width of checkbox.
 /// @group checkbox
 $checkbox-border-width: 2px !default;
