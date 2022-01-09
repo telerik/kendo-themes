@@ -1,6 +1,6 @@
 @import "~@progress/kendo-theme-default/scss/radio/_theme.scss";
 
-@include exports("radio/theme/material") {
+@include exports( "radio/theme/material" ) {
 
     // Radio
     .k-radio-label {
@@ -11,13 +11,6 @@
             opacity: 1;
             filter: none;
         }
-
-
-        // Ripple
-        .k-ripple-blob {
-            opacity: .2;
-            background-color: $radio-checked-bg;
-        }
-
     }
+
 }

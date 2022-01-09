@@ -1,4 +1,4 @@
-@include exports("radio/theme") {
+@include exports( "radio/theme" ) {
 
     // Radio
     .k-radio {
@@ -53,7 +53,6 @@
             $radio-checked-border
         );
     }
-
     .k-radio:checked:focus,
     .k-radio.k-checked.k-state-focus {
         @include fill( $border: $radio-focused-checked-border );
@@ -78,6 +77,7 @@
             $radio-disabled-checked-border
         );
     }
+
 
     // Ripple
     .k-ripple-container {
