@@ -338,8 +338,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$radio-ripple-opacity</td>
     <td></td>
-    <td>.3</td>
-    <td>.3</td>
+    <td>.25</td>
+    <td>.25</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Opacity of radio button ripple.</div></div>

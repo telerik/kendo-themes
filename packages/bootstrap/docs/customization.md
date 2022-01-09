@@ -922,6 +922,16 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
+    <td>$radio-ripple-bg</td>
+    <td></td>
+    <td>$radio-checked-bg</td>
+    <td>$checkbox-checked-bg</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of radio button ripple.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$checkbox-list-spacing</td>
     <td></td>
     <td>map-get( $spacing, 4 )</td>
@@ -952,10 +962,20 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
+    <td>$checkbox-ripple-bg</td>
+    <td></td>
+    <td>$checkbox-checked-bg</td>
+    <td>$primary</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of checkbox ripple.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$checkbox-ripple-opacity</td>
     <td></td>
-    <td>.3</td>
-    <td>.3</td>
+    <td>.25</td>
+    <td>.25</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Opacity of checkbox ripple.</div></div>
@@ -1447,6 +1467,16 @@ The following table lists the available variables for customizing the Bootstrap 
 </thead>
 <tbody>
         <tr>
+    <td>$radio-border-width</td>
+    <td></td>
+    <td>1px</td>
+    <td>1px</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border width of radio button.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$radio-bg</td>
     <td></td>
     <td>$checkbox-bg</td>
@@ -1739,8 +1769,8 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$radio-ripple-opacity</td>
     <td></td>
-    <td>.3</td>
-    <td>.3</td>
+    <td>.25</td>
+    <td>.25</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Opacity of radio button ripple.</div></div>

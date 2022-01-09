@@ -26,6 +26,16 @@ The following table lists the available variables for customization.
 </thead>
 <tbody>
         <tr>
+    <td>$radio-border-width</td>
+    <td></td>
+    <td>1px</td>
+    <td>1px</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border width of radio button.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$radio-bg</td>
     <td></td>
     <td>$checkbox-bg</td>
@@ -318,8 +328,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$radio-ripple-opacity</td>
     <td></td>
-    <td>.3</td>
-    <td>.3</td>
+    <td>.25</td>
+    <td>.25</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Opacity of radio button ripple.</div></div>
