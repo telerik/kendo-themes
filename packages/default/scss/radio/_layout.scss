@@ -23,6 +23,7 @@
         -webkit-appearance: none;
     }
 
+
     // Radio indicator
     .k-radio::before {
         @if $radio-indicator-type == "glyph" {
@@ -40,6 +41,7 @@
         }
     }
 
+
     // Checked state
     .k-radio:checked,
     .k-radio.k-checked {
@@ -54,20 +56,17 @@
         }
     }
 
-    // Checked state
+
+    // Disabled state
+    .k-radio:disabled,
+    .k-radio.k-disabled {
+        @include disabled( $disabled-styling );
+    }
     .k-radio:disabled:checked,
     .k-radio.k-disabled.k-checked {
         @if $radio-indicator-type == "image" {
             background-image: $radio-disabled-checked-image;
         }
-    }
-
-    // Disabled state
-    .k-radio:disabled,
-    .k-radio.k-disabled,
-    .k-radio:disabled + .k-radio-label,
-    .k-radio.k-disabled + .k-radio-label {
-        @include disabled( $disabled-styling );
     }
 
 
@@ -78,6 +77,9 @@
         flex-flow: row nowrap;
         gap: 0;
         align-items: center;
+        align-self: start;
+        vertical-align: middle;
+        position: relative;
 
         &::before {
             content: "\200b";
@@ -89,66 +91,40 @@
         }
     }
 
-    .k-radio + .k-radio-label {
-        display: inline;
-    }
 
     // Radio label
     .k-radio-label {
         margin: 0;
         padding: 0;
-        line-height: $radio-line-height;
         display: inline-flex;
         align-items: flex-start;
+        gap: $radio-label-margin-x;
         vertical-align: middle;
         position: relative;
         cursor: pointer;
 
-        .k-label {
-            cursor: pointer;
-        }
-
-        // Hide empty label
-        &:empty {
-            display: none !important; // sass-lint:disable-line no-important
-        }
-
         .k-ripple {
-            top: $radio-size / 2;
-            left: $radio-size / 2;
-            right: auto;
-            bottom: auto;
-            width: $radio-size * 5 / 2;
-            height: $radio-size * 5 / 2;
-            transform: translate(-50%, -50%);
-            border-radius: 50%;
-
             // Hide ripple temporarily
             visibility: hidden !important; // sass-lint:disable-line no-important
         }
-
-        .k-ripple-blob {
-            // sass-lint:disable-block no-important
-            // use !important until ripple can apply these styles from the script
-            top: 50% !important;
-            left: 50% !important;
-            width: 200% !important;
-            height: 200% !important;
-        }
     }
-
+    .k-radio + .k-label,
+    .k-radio-wrap + .k-label,
     .k-radio + .k-radio-label,
-    .k-radio-label + .k-radio,
-    .k-label + .k-radio {
-        margin-left: $radio-label-margin-x;
-    }
-    .k-radio-label > .k-radio {
-        margin-right: $radio-label-margin-x;
-        flex-shrink: 0;
-    }
-    kendo-label.k-radio-label > .k-label {
+    .k-radio-wrap + .k-radio-label {
         display: inline;
+        margin-inline-start: $radio-label-margin-x;
     }
+
+
+    // Empty label
+    .k-radio-label:empty {
+        display: none !important; // sass-lint:disable-line no-important
+    }
+    .k-radio-label.k-no-text {
+        min-width: 1px;
+    }
+
 
     // Radio list
     .k-radio-list {
@@ -169,7 +145,7 @@
         gap: map-get( $spacing, 1 );
 
         .k-radio-label {
-            line-height: inherit;
+            margin: 0;
         }
     }
     .k-radio-list-horizontal,
@@ -179,67 +155,40 @@
         gap: $radio-list-spacing;
     }
 
-    // RTL
-    .k-rtl,
-    [dir="rtl"] {
-        .k-radio + .k-radio-label,
-        .k-radio-label + .k-radio,
-        .k-label + .k-radio {
-            margin-left: 0;
-            margin-right: $radio-label-margin-x;
-        }
-        .k-radio-label > .k-radio {
-            margin-right: 0;
-            margin-left: $radio-label-margin-x;
-        }
-        kendo-label.k-radio-label > .k-radio:last-child {
-            margin-left: 0;
-        }
-        kendo-label.k-radio-label > .k-label:first-child {
-            margin-right: 0;
-            margin-left: $radio-label-margin-x;
-        }
-    }
 
+    // Ripple
+    .k-radio-wrap .k-ripple-blob {
+        width: $radio-ripple-size;
+        height: $radio-ripple-size;
+    }
     .k-ripple-container {
         .k-radio::after {
             content: "";
             display: block;
             position: absolute;
-            left: 0;
-            top: 0;
+            left: 50%;
+            top: 50%;
             width: $radio-ripple-size;
             height: $radio-ripple-size;
-            margin-left: $radio-ripple-margin;
-            margin-top: $radio-ripple-margin;
             border-radius: 100%;
-            z-index: 1;
-            transform: scale(0);
+            z-index: -1;
+            transition: opacity 100ms linear, transform 150ms cubic-bezier(.4, 0, .2, 1);
+            transform: translate(-50%, -50%) scale(0);
+            transform-origin: center center;
+        }
+
+        .k-radio:focus,
+        .k-radio.k-state-focus {
+            box-shadow: none !important; // sass-lint:disable-line no-important
+
+            &::after {
+                transform: translate(-50%, -50%) scale(1);
+            }
         }
 
         .k-radio:disabled::after,
         .k-radio.k-disabled::after {
             display: none;
-        }
-    }
-}
-
-
-
-
-@include exports( "radio/layout/edge" ) {
-
-    .k-radio::-ms-check {
-        border-width: 0;
-        border-color: inherit;
-        color: inherit;
-        background-color: inherit;
-    }
-
-    // IE 11 hack
-    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-        .k-radio::-ms-check {
-            border-width: 1px;
         }
     }
 
