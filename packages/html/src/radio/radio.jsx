@@ -62,10 +62,14 @@ function RadioStatic(props) {
             }
         ];
 
-        return <input type="radio" className={legacyClasses} {...ariaAttr} {...htmlAttributes}/>;
+        return (
+            <span className="k-radio-wrap"><input type="radio" className={legacyClasses} {...ariaAttr} {...htmlAttributes}/></span>
+        );
     }
 
-    return <input type="radio" className={radioClasses} {...ariaAttr} {...htmlAttributes}/>;
+    return (
+        <span className="k-radio-wrap"><input type="radio" className={radioClasses} {...ariaAttr} {...htmlAttributes}/></span>
+    );
 }
 
 RadioStatic.defaultProps = {
