@@ -874,8 +874,8 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$checkbox-indicator-type</td>
     <td></td>
-    <td>glyph</td>
-    <td>glyph</td>
+    <td>image</td>
+    <td>image</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Type of checkbox indicator.</div></div>
@@ -914,8 +914,8 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$checkbox-checked-image</td>
     <td></td>
-    <td>null</td>
-    <td>null</td>
+    <td>escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='none' stroke='#{$checkbox-checked-text}' stroke-linecap='square' stroke-linejoin='square' stroke-width='2' d='M3,8 l3,3 l7-7'/></svg>") )</td>
+    <td>escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='none' stroke='#{$checkbox-checked-text}' stroke-linecap='square' stroke-linejoin='square' stroke-width='2' d='M3,8 l3,3 l7-7'/></svg>") )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Image of checked checkbox indicator.</div></div>
@@ -924,11 +924,21 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$checkbox-indeterminate-image</td>
     <td></td>
-    <td>null</td>
-    <td>null</td>
+    <td>escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='none' stroke='#{$checkbox-indeterminate-text}' stroke-linecap='square' stroke-linejoin='square' stroke-width='2' d='M4,8 h8'/></svg>") )</td>
+    <td>escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='none' stroke='#{$checkbox-indeterminate-text}' stroke-linecap='square' stroke-linejoin='square' stroke-width='2' d='M4,8 h8'/></svg>") )</td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Image of checked checkbox indicator.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Image image of checked checkbox indicator.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$radio-ripple-bg</td>
+    <td></td>
+    <td>$radio-checked-bg</td>
+    <td>$checkbox-checked-bg</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of radio button ripple.</div></div>
     </td>
 </tr>
 <tr>
@@ -962,10 +972,20 @@ The following table lists the available variables for customizing the Classic th
     </td>
 </tr>
 <tr>
+    <td>$checkbox-ripple-bg</td>
+    <td></td>
+    <td>$checkbox-checked-bg</td>
+    <td><span class="color-preview" style="background-color: #f35800"></span>#f35800</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of checkbox ripple.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$checkbox-ripple-opacity</td>
     <td></td>
-    <td>.3</td>
-    <td>.3</td>
+    <td>.25</td>
+    <td>.25</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Opacity of checkbox ripple.</div></div>
@@ -1437,6 +1457,16 @@ The following table lists the available variables for customizing the Classic th
 </thead>
 <tbody>
         <tr>
+    <td>$radio-border-width</td>
+    <td></td>
+    <td>1px</td>
+    <td>1px</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border width of radio button.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$radio-bg</td>
     <td></td>
     <td>$checkbox-bg</td>
@@ -1729,8 +1759,8 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$radio-ripple-opacity</td>
     <td></td>
-    <td>.3</td>
-    <td>.3</td>
+    <td>.25</td>
+    <td>.25</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Opacity of radio button ripple.</div></div>
