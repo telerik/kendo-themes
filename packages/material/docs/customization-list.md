@@ -28,8 +28,8 @@ The following table lists the available variables for customization.
         <tr>
     <td>$list-font-size</td>
     <td></td>
-    <td>$font-size</td>
-    <td>14px</td>
+    <td>$font-size-lg</td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the list component.</div></div>
@@ -38,8 +38,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$list-line-height</td>
     <td></td>
-    <td>1.5</td>
-    <td>1.5</td>
+    <td>1.25</td>
+    <td>1.25</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of the list component.</div></div>
@@ -58,8 +58,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$list-item-padding-y</td>
     <td></td>
-    <td>map-get( $spacing, 1 )</td>
-    <td>map-get( $spacing, 1 )</td>
+    <td>map-get( $spacing, 2 )</td>
+    <td>map-get( $spacing, 2 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of list items.</div></div>

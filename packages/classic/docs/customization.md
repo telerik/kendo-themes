@@ -955,7 +955,7 @@ The following table lists the available variables for customizing the Classic th
     <td>$checkbox-list-item-padding-y</td>
     <td></td>
     <td>$list-item-padding-y</td>
-    <td>$padding-y</td>
+    <td>map-get( $spacing, 1 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of checkbox list items.</div></div>
@@ -1449,8 +1449,8 @@ The following table lists the available variables for customizing the Classic th
         <tr>
     <td>$list-font-size</td>
     <td></td>
-    <td>$font-size</td>
-    <td>14px</td>
+    <td>$font-size-md</td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the list component.</div></div>
@@ -1459,8 +1459,8 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$list-line-height</td>
     <td></td>
-    <td>$line-height</td>
-    <td>(20 / 14)</td>
+    <td>$line-height-md</td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of the list component.</div></div>
@@ -1469,8 +1469,8 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$list-item-padding-x</td>
     <td></td>
-    <td>$padding-x</td>
-    <td></td>
+    <td>map-get( $spacing, 2 )</td>
+    <td>map-get( $spacing, 2 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of list items.</div></div>
@@ -1479,8 +1479,8 @@ The following table lists the available variables for customizing the Classic th
 <tr>
     <td>$list-item-padding-y</td>
     <td></td>
-    <td>$padding-y</td>
-    <td></td>
+    <td>map-get( $spacing, 1 )</td>
+    <td>map-get( $spacing, 1 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of list items.</div></div>
@@ -1981,7 +1981,7 @@ The following table lists the available variables for customizing the Classic th
     <td>$radio-list-item-padding-y</td>
     <td></td>
     <td>$list-item-padding-y</td>
-    <td></td>
+    <td>map-get( $spacing, 1 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of radio button list items.</div></div>

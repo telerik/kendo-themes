@@ -329,7 +329,7 @@ The following table lists the available variables for customization.
     <td>$radio-list-item-padding-y</td>
     <td></td>
     <td>$list-item-padding-y</td>
-    <td>map-get( $spacing, 1 )</td>
+    <td>map-get( $spacing, 2 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of radio button list items.</div></div>
