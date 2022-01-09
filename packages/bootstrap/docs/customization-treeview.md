@@ -38,8 +38,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$treeview-font-size</td>
     <td></td>
-    <td>$font-size</td>
-    <td>$font-size-base</td>
+    <td>$font-size-md</td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the treeview component.</div></div>
@@ -48,8 +48,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$treeview-line-height</td>
     <td></td>
-    <td>$line-height</td>
-    <td>$line-height-base</td>
+    <td>$line-height-md</td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of the treeview component.</div></div>
@@ -78,8 +78,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$treeview-item-padding-y</td>
     <td></td>
-    <td>( $treeview-item-padding-x / 2 )</td>
-    <td>( $treeview-item-padding-x / 2 )</td>
+    <td>map-get( $spacing, 1 )</td>
+    <td>map-get( $spacing, 1 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of treeview items.</div></div>
@@ -88,8 +88,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$treeview-item-border-width</td>
     <td></td>
-    <td>1px</td>
-    <td>1px</td>
+    <td>0px</td>
+    <td>0px</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border width of treeview items.</div></div>
