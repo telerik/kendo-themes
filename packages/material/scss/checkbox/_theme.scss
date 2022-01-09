@@ -1,6 +1,6 @@
 @import "~@progress/kendo-theme-default/scss/checkbox/_theme.scss";
 
-@include exports("checkbox/theme/material") {
+@include exports( "checkbox/theme/material" ) {
 
     // Checkbox
     .k-checkbox-label {
@@ -11,13 +11,6 @@
             opacity: 1;
             filter: none;
         }
-
-
-        // Ripple
-        .k-ripple-blob {
-            opacity: .2;
-            background-color: $checkbox-checked-bg;
-        }
-
     }
+
 }

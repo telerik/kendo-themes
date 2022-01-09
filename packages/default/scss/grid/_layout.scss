@@ -13,7 +13,6 @@
     // be cautious when changing the next line; see https://github.com/MoOx/reduce-css-calc/issues/38
     $grid-command-cell-padding-y: calc( #{$table-cell-padding-y} - (#{$button-calc-size} - #{$line-height-em}) / 2 ) !default;
 
-    $grid-form-component-vertical-align: middle !default;
     $grid-hierarchy-col-width: ($icon-size * 2) !default;
 
     $grid-group-indicator-border-radius: $border-radius !default;
@@ -791,6 +790,18 @@
     }
 
 
+    // Checkboxes
+    .k-grid th,
+    .k-grid td {
+        > .k-radio,
+        > .k-radio-wrap,
+        > .k-checkbox,
+        > .k-checkbox-wrap {
+            vertical-align: top;
+        }
+    }
+
+
     // Edit row
     .k-grid .k-edit-cell,
     .k-grid .k-command-cell,
@@ -807,13 +818,19 @@
         > .k-textbox,
         > .k-widget:not(.k-switch) {
             width: 100%;
-            vertical-align: $grid-form-component-vertical-align;
+            vertical-align: middle;
             box-sizing: border-box;
+        }
+        > .k-radio,
+        > .k-checkbox,
+        > .k-radio-wrap,
+        > .k-checkbox-wrap {
+            vertical-align: middle;
         }
     }
 
     .k-grid .k-command-cell > .k-button {
-        vertical-align: $grid-form-component-vertical-align;
+        vertical-align: middle;
     }
     .k-grid .k-command-cell > .k-button + .k-button {
         margin-left: $grid-command-cell-button-spacing;
@@ -1272,11 +1289,6 @@
         .k-item,
         .k-check-all-wrap {
             padding: $grid-column-menu-list-item-padding-y $grid-column-menu-list-item-padding-x;
-
-            > .k-checkbox-label {
-                line-height: inherit;
-                display: block;
-            }
         }
     }
 
@@ -1364,10 +1376,17 @@
     }
 
     .k-column-list-item {
-        position: relative;
-        display: block;
         margin: 0;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        gap: 4px;
         cursor: pointer;
+        position: relative;
+
+        .k-checkbox-label {
+            margin: 0;
+        }
     }
 
     .k-columns-items-wrap {

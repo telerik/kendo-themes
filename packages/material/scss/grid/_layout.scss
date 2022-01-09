@@ -1,5 +1,4 @@
 $grid-hierarchy-col-width: 32px !default;
-$grid-form-component-vertical-align: middle !default;
 // TODO: perhaps these should be the values for cell-padding-x/-y
 $grid-grouping-row-border-top: 0px !default;
 $grid-group-footer-border-y: 1px !default;
@@ -18,10 +17,6 @@ $grid-group-dropclue-top: calc( ( #{$button-calc-size} + #{$grid-grouping-header
 @include exports ("grid/layout/material") {
 
     .k-grid {
-        .k-checkbox-label,
-        .k-radio-label {
-            line-height: normal;
-        }
 
         .k-button,
         .k-button:active {
