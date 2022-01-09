@@ -346,16 +346,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$radio-ripple-bg</td>
-    <td></td>
-    <td>$radio-checked-bg</td>
-    <td>$checkbox-checked-bg</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of radio button ripple.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$checkbox-list-spacing</td>
     <td></td>
     <td>map-get( $spacing, 4 )</td>
@@ -379,7 +369,7 @@ The following table lists the available variables for customization.
     <td>$checkbox-list-item-padding-y</td>
     <td></td>
     <td>$list-item-padding-y</td>
-    <td></td>
+    <td>$padding-y</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of checkbox list items.</div></div>

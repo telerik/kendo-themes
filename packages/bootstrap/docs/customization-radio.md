@@ -26,6 +26,16 @@ The following table lists the available variables for customization.
 </thead>
 <tbody>
         <tr>
+    <td>$radio-radius</td>
+    <td></td>
+    <td>50%</td>
+    <td>50%</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border radius of radio button.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$radio-border-width</td>
     <td></td>
     <td>1px</td>
@@ -319,10 +329,20 @@ The following table lists the available variables for customization.
     <td>$radio-list-item-padding-y</td>
     <td></td>
     <td>$list-item-padding-y</td>
-    <td></td>
+    <td>map-get( $spacing, 1 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of radio button list items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$radio-ripple-bg</td>
+    <td></td>
+    <td>$radio-checked-bg</td>
+    <td>$primary</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of radio button ripple.</div></div>
     </td>
 </tr>
 <tr>
