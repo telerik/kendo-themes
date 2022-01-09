@@ -1459,8 +1459,8 @@ The following table lists the available variables for customizing the Bootstrap 
         <tr>
     <td>$list-font-size</td>
     <td></td>
-    <td>$font-size</td>
-    <td>$font-size-base</td>
+    <td>$font-size-md</td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the list component.</div></div>
@@ -1469,8 +1469,8 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$list-line-height</td>
     <td></td>
-    <td>$line-height</td>
-    <td>$line-height-base</td>
+    <td>$line-height-md</td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of the list component.</div></div>
