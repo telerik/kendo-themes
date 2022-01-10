@@ -181,7 +181,7 @@ The following table lists the available variables for customizing the Bootstrap 
 </thead>
 <tbody>
         <tr>
-    <td>$avatar-border-width</td>
+    <td>$kendo-avatar-border-width</td>
     <td></td>
     <td>1px</td>
     <td>1px</td>
@@ -191,7 +191,7 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$avatar-font-family</td>
+    <td>$kendo-avatar-font-family</td>
     <td></td>
     <td>$font-family</td>
     <td>$font-family-sans-serif</td>
@@ -201,7 +201,7 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$avatar-font-size</td>
+    <td>$kendo-avatar-font-size</td>
     <td></td>
     <td>$font-size</td>
     <td>$font-size-base</td>
@@ -211,7 +211,7 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$avatar-line-height</td>
+    <td>$kendo-avatar-line-height</td>
     <td></td>
     <td>$line-height</td>
     <td>$line-height-base</td>
@@ -221,7 +221,7 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$avatar-sizes</td>
+    <td>$kendo-avatar-sizes</td>
     <td></td>
     <td>(
     sm: map-get( $spacing, 4 ),
@@ -236,6 +236,16 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes of the avatar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-avatar-theme-colors</td>
+    <td></td>
+    <td>$theme-colors</td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Theme colors map of the avatar.</div></div>
     </td>
 </tr>
 </tbody>
@@ -260,213 +270,463 @@ The following table lists the available variables for customizing the Bootstrap 
 </thead>
 <tbody>
         <tr>
-    <td>$button-border-width</td>
+    <td>$kendo-button-border-width</td>
     <td></td>
     <td>$btn-border-width</td>
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Width of border around buttons</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Width of the border around the button.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$button-border-radius</td>
+    <td>$kendo-button-border-radius</td>
     <td></td>
-    <td>$border-radius</td>
-    <td>$border-radius</td>
+    <td>null</td>
+    <td>null</td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border radius of buttons</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border radius of the button.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$button-padding-x</td>
+    <td>$kendo-button-padding-x</td>
     <td></td>
     <td>$btn-padding-x</td>
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of buttons</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the button.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$button-padding-y</td>
+    <td>$kendo-button-padding-y</td>
     <td></td>
     <td>$btn-padding-y</td>
     <td></td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of buttons</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the button.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$button-bg</td>
+    <td>$kendo-button-font-family</td>
+    <td></td>
+    <td>$btn-font-family</td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font family of the button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-button-font-size</td>
+    <td></td>
+    <td>$btn-font-size</td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font sizes of the button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-button-line-height</td>
+    <td></td>
+    <td>$btn-line-height</td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line heights used along with $font-size.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-button-calc-size</td>
+    <td></td>
+    <td>calc( #{$kendo-button-line-height * 1em} + #{$kendo-button-padding-y * 2} + #{$kendo-button-border-width * 2} )</td>
+    <td>calc( #{$kendo-button-line-height * 1em} + #{$kendo-button-padding-y * 2} + #{$kendo-button-border-width * 2} )</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Calculated height of the button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-button-inner-calc-size</td>
+    <td></td>
+    <td>calc( #{$kendo-button-line-height * 1em} + #{$kendo-button-padding-y * 2} )</td>
+    <td>calc( #{$kendo-button-line-height * 1em} + #{$kendo-button-padding-y * 2} )</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Calculated inner height of the button. Without the border width.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-button-theme-colors</td>
+    <td></td>
+    <td>map-merge((base: #e4e7eb), $theme-colors )</td>
+    <td>map-merge((base: #e4e7eb), $theme-colors )</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Theme colors map for the button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-button-bg</td>
     <td></td>
     <td><span class="color-preview" style="background-color: #e4e7eb"></span>#e4e7eb</td>
     <td><span class="color-preview" style="background-color: #e4e7eb"></span>#e4e7eb</td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the buttons.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background of the button.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$button-text</td>
+    <td>$kendo-button-text</td>
     <td></td>
-    <td>contrast-wcag( $button-bg, $gray-900 )</td>
-    <td>contrast-wcag( $button-bg, $gray-900 )</td>
+    <td>contrast-wcag( $kendo-button-bg, $gray-900 )</td>
+    <td>contrast-wcag( $kendo-button-bg, $gray-900 )</td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the buttons.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base text color of the button.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$button-border</td>
+    <td>$kendo-button-border</td>
     <td></td>
-    <td>$button-bg</td>
+    <td>$kendo-button-bg</td>
     <td><span class="color-preview" style="background-color: #e4e7eb"></span>#e4e7eb</td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the buttons.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base border color of the button.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$button-gradient</td>
+    <td>$kendo-button-gradient</td>
     <td></td>
     <td>null</td>
     <td>null</td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of the buttons.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background gradient of the button.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$button-hovered-bg</td>
-    <td></td>
-    <td>try-darken( $button-bg, 7.5% )</td>
-    <td>try-darken( $button-bg, 7.5% )</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of hovered buttons.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$button-hovered-text</td>
+    <td>$kendo-button-shadow</td>
     <td></td>
     <td>null</td>
     <td>null</td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of hovered buttons.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of the button.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$button-hovered-border</td>
+    <td>$kendo-button-hover-bg</td>
     <td></td>
-    <td>try-darken( $button-border, 10% )</td>
-    <td>try-darken( $button-border, 10% )</td>
+    <td>try-darken( $kendo-button-bg, 7.5% )</td>
+    <td>try-darken( $kendo-button-bg, 7.5% )</td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of hovered buttons.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background of hovered button.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$button-hovered-gradient</td>
-    <td></td>
-    <td>null</td>
-    <td>null</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of hovered buttons.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$button-active-bg</td>
-    <td></td>
-    <td>try-darken( $button-bg, 10% )</td>
-    <td>try-darken( $button-bg, 10% )</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of active buttons.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$button-active-text</td>
+    <td>$kendo-button-hover-text</td>
     <td></td>
     <td>null</td>
     <td>null</td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of active buttons.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base text color of hovered button.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$button-active-border</td>
+    <td>$kendo-button-hover-border</td>
     <td></td>
-    <td>try-darken( $button-border, 12.5% )</td>
-    <td>try-darken( $button-border, 12.5% )</td>
+    <td>try-darken( $kendo-button-border, 10% )</td>
+    <td>try-darken( $kendo-button-border, 10% )</td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of active buttons.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base border color of hovered button.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$button-active-gradient</td>
-    <td></td>
-    <td>null</td>
-    <td>null</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of active buttons.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$button-selected-bg</td>
-    <td></td>
-    <td>$button-active-bg</td>
-    <td>try-darken( $button-bg, 10% )</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of selected buttons.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$button-selected-text</td>
-    <td></td>
-    <td>$button-active-text</td>
-    <td>null</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of selected buttons.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$button-selected-border</td>
-    <td></td>
-    <td>$button-active-border</td>
-    <td>try-darken( $button-border, 12.5% )</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of selected buttons.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$button-selected-gradient</td>
+    <td>$kendo-button-hover-gradient</td>
     <td></td>
     <td>null</td>
     <td>null</td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of selected buttons.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background gradient of hovered button.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$button-focused-shadow</td>
+    <td>$kendo-button-hover-shadow</td>
     <td></td>
-    <td>0 0 0 3px rgba( $button-border, .5 )</td>
-    <td>0 0 0 3px rgba( $button-border, .5 )</td>
+    <td>null</td>
+    <td>null</td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of focused buttons.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of hovered button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-button-active-bg</td>
+    <td></td>
+    <td>try-darken( $kendo-button-bg, 10% )</td>
+    <td>try-darken( $kendo-button-bg, 10% )</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background color of active button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-button-active-text</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base text color of active button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-button-active-border</td>
+    <td></td>
+    <td>try-darken( $kendo-button-border, 12.5% )</td>
+    <td>try-darken( $kendo-button-border, 12.5% )</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base border color of active button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-button-active-gradient</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background gradient of active button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-button-active-shadow</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of active button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-button-selected-bg</td>
+    <td></td>
+    <td>$kendo-button-active-bg</td>
+    <td>try-darken( $kendo-button-bg, 10% )</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background color of selected button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-button-selected-text</td>
+    <td></td>
+    <td>$kendo-button-active-text</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base text color of selected button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-button-selected-border</td>
+    <td></td>
+    <td>$kendo-button-active-border</td>
+    <td>try-darken( $kendo-button-border, 12.5% )</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base border color of selected button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-button-selected-gradient</td>
+    <td></td>
+    <td>$kendo-button-active-gradient</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background gradient of selected button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-button-selected-shadow</td>
+    <td></td>
+    <td>$kendo-button-active-shadow</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of selected button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-button-focus-bg</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background of focused button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-button-focus-text</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base text color of focused button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-button-focus-border</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base border color of focused button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-button-focus-gradient</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background gradient of focused button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-button-focus-shadow</td>
+    <td></td>
+    <td>0 0 0 3px rgba( $kendo-button-border, .5 )</td>
+    <td>0 0 0 3px rgba( $kendo-button-border, .5 )</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of focused button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-button-disabled-bg</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background of disabled button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-button-disabled-text</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base text color of disabled button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-button-disabled-border</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base border color of disabled buttons.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-button-disabled-gradient</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background gradient of disabled button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-button-disabled-shadow</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of disabled button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-flat-button-hover-opacity</td>
+    <td></td>
+    <td>.08</td>
+    <td>.08</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The overlay opacity of hovered flat button. Used to create background for the flat button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-flat-button-focus-opacity</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The overlay opacity of focused flat button. Used to create background for the flat button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-flat-button-active-opacity</td>
+    <td></td>
+    <td>.16</td>
+    <td>.16</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The overlay opacity of active flat button. Used to create background for the flat button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-flat-button-selected-opacity</td>
+    <td></td>
+    <td>.2</td>
+    <td>.2</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The overlay opacity of selected flat button. Used to create background for the flat button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-button-color-transition</td>
+    <td></td>
+    <td>$transition</td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The color transition of the button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-button-group-focus-shadow</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of focused button group.</div></div>
     </td>
 </tr>
 </tbody>
@@ -493,8 +753,8 @@ The following table lists the available variables for customizing the Bootstrap 
         <tr>
     <td>$series-a</td>
     <td></td>
-    <td><span class="color-preview" style="background-color: #0275d8"></span>#0275d8</td>
-    <td><span class="color-preview" style="background-color: #0275d8"></span>#0275d8</td>
+    <td>$teal</td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The first base series color and its light and dark shades.</div></div>
@@ -503,8 +763,8 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$series-b</td>
     <td></td>
-    <td><span class="color-preview" style="background-color: #5bc0de"></span>#5bc0de</td>
-    <td><span class="color-preview" style="background-color: #5bc0de"></span>#5bc0de</td>
+    <td>$blue</td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The second base series color and its light and dark shades.</div></div>
@@ -513,8 +773,8 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$series-c</td>
     <td></td>
-    <td><span class="color-preview" style="background-color: #5cb85c"></span>#5cb85c</td>
-    <td><span class="color-preview" style="background-color: #5cb85c"></span>#5cb85c</td>
+    <td>$purple</td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The third base series color and its light and dark shades.</div></div>
@@ -523,8 +783,8 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$series-d</td>
     <td></td>
-    <td><span class="color-preview" style="background-color: #f0ad4e"></span>#f0ad4e</td>
-    <td><span class="color-preview" style="background-color: #f0ad4e"></span>#f0ad4e</td>
+    <td>$red</td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The fourth base series color and its light and dark shades.</div></div>
@@ -533,8 +793,8 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$series-e</td>
     <td></td>
-    <td><span class="color-preview" style="background-color: #e67d4a"></span>#e67d4a</td>
-    <td><span class="color-preview" style="background-color: #e67d4a"></span>#e67d4a</td>
+    <td>$yellow</td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The fifth base series color and its light and dark shades.</div></div>
@@ -543,8 +803,8 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$series-f</td>
     <td></td>
-    <td><span class="color-preview" style="background-color: #d9534f"></span>#d9534f</td>
-    <td><span class="color-preview" style="background-color: #d9534f"></span>#d9534f</td>
+    <td>$green</td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sixth base series color and its light and dark shades.</div></div>
@@ -554,7 +814,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>$series-1</td>
     <td></td>
     <td>$series-a</td>
-    <td><span class="color-preview" style="background-color: #0275d8"></span>#0275d8</td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The series colors in order:<br />base, light, dark, lighter, darker</div></div>
@@ -602,7 +862,7 @@ The following table lists the available variables for customizing the Bootstrap 
 </thead>
 <tbody>
         <tr>
-    <td>$checkbox-border-width</td>
+    <td>$kendo-checkbox-border-width</td>
     <td></td>
     <td>1px</td>
     <td>1px</td>
@@ -612,7 +872,7 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$checkbox-bg</td>
+    <td>$kendo-checkbox-bg</td>
     <td></td>
     <td>$component-bg</td>
     <td>$body-bg</td>
@@ -622,7 +882,7 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$checkbox-text</td>
+    <td>$kendo-checkbox-text</td>
     <td></td>
     <td>null</td>
     <td>null</td>
@@ -632,17 +892,17 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$checkbox-border</td>
+    <td>$kendo-checkbox-border</td>
     <td></td>
-    <td>contrast-wcag( $input-bg, $gray-400, $gray-600 )</td>
-    <td>contrast-wcag( $input-bg, $gray-400, $gray-600 )</td>
+    <td>contrast-wcag( $kendo-checkbox-bg, $gray-400, $gray-600 )</td>
+    <td>contrast-wcag( $kendo-checkbox-bg, $gray-400, $gray-600 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of checkbox.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$checkbox-hovered-bg</td>
+    <td>$kendo-checkbox-hover-bg</td>
     <td></td>
     <td>null</td>
     <td>null</td>
@@ -652,7 +912,7 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$checkbox-hovered-text</td>
+    <td>$kendo-checkbox-hover-text</td>
     <td></td>
     <td>null</td>
     <td>null</td>
@@ -662,7 +922,7 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$checkbox-hovered-border</td>
+    <td>$kendo-checkbox-hover-border</td>
     <td></td>
     <td>null</td>
     <td>null</td>
@@ -672,7 +932,7 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$checkbox-checked-bg</td>
+    <td>$kendo-checkbox-checked-bg</td>
     <td></td>
     <td>$primary</td>
     <td>$primary</td>
@@ -682,19 +942,19 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$checkbox-checked-text</td>
+    <td>$kendo-checkbox-checked-text</td>
     <td></td>
-    <td>contrast-wcag( $checkbox-checked-bg )</td>
-    <td>contrast-wcag( $checkbox-checked-bg )</td>
+    <td>contrast-wcag( $kendo-checkbox-checked-bg )</td>
+    <td>contrast-wcag( $kendo-checkbox-checked-bg )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Color of checked checkbox.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$checkbox-checked-border</td>
+    <td>$kendo-checkbox-checked-border</td>
     <td></td>
-    <td>$checkbox-checked-bg</td>
+    <td>$kendo-checkbox-checked-bg</td>
     <td>$primary</td>
 </tr>
 <tr>
@@ -702,9 +962,9 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$checkbox-indeterminate-bg</td>
+    <td>$kendo-checkbox-indeterminate-bg</td>
     <td></td>
-    <td>$checkbox-checked-bg</td>
+    <td>$kendo-checkbox-checked-bg</td>
     <td>$primary</td>
 </tr>
 <tr>
@@ -712,19 +972,19 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$checkbox-indeterminate-text</td>
+    <td>$kendo-checkbox-indeterminate-text</td>
     <td></td>
-    <td>$checkbox-checked-text</td>
-    <td>contrast-wcag( $checkbox-checked-bg )</td>
+    <td>$kendo-checkbox-checked-text</td>
+    <td>contrast-wcag( $kendo-checkbox-checked-bg )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Color of indeterminate checkbox.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$checkbox-indeterminate-border</td>
+    <td>$kendo-checkbox-indeterminate-border</td>
     <td></td>
-    <td>$checkbox-checked-border</td>
+    <td>$kendo-checkbox-checked-border</td>
     <td>$primary</td>
 </tr>
 <tr>
@@ -732,7 +992,7 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$checkbox-focused-border</td>
+    <td>$kendo-checkbox-focus-border</td>
     <td></td>
     <td>try-tint( $primary, 50% )</td>
     <td>try-tint( $primary, 50% )</td>
@@ -742,7 +1002,7 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$checkbox-focused-shadow</td>
+    <td>$kendo-checkbox-focus-shadow</td>
     <td></td>
     <td>0 0 0 .25rem rgba( $primary, .25 )</td>
     <td>0 0 0 .25rem rgba( $primary, .25 )</td>
@@ -752,9 +1012,9 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$checkbox-focused-checked-border</td>
+    <td>$kendo-checkbox-focus-checked-border</td>
     <td></td>
-    <td>$checkbox-checked-border</td>
+    <td>$kendo-checkbox-checked-border</td>
     <td>$primary</td>
 </tr>
 <tr>
@@ -762,9 +1022,9 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$checkbox-focused-checked-shadow</td>
+    <td>$kendo-checkbox-focus-checked-shadow</td>
     <td></td>
-    <td>$checkbox-focused-shadow</td>
+    <td>$kendo-checkbox-focus-shadow</td>
     <td>0 0 0 .25rem rgba( $primary, .25 )</td>
 </tr>
 <tr>
@@ -772,7 +1032,7 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$checkbox-disabled-bg</td>
+    <td>$kendo-checkbox-disabled-bg</td>
     <td></td>
     <td>null</td>
     <td>null</td>
@@ -782,7 +1042,7 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$checkbox-disabled-text</td>
+    <td>$kendo-checkbox-disabled-text</td>
     <td></td>
     <td>null</td>
     <td>null</td>
@@ -792,7 +1052,7 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$checkbox-disabled-border</td>
+    <td>$kendo-checkbox-disabled-border</td>
     <td></td>
     <td>null</td>
     <td>null</td>
@@ -802,7 +1062,7 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$checkbox-disabled-checked-bg</td>
+    <td>$kendo-checkbox-disabled-checked-bg</td>
     <td></td>
     <td>null</td>
     <td>null</td>
@@ -812,7 +1072,7 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$checkbox-disabled-checked-text</td>
+    <td>$kendo-checkbox-disabled-checked-text</td>
     <td></td>
     <td>null</td>
     <td>null</td>
@@ -822,17 +1082,17 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$checkbox-disabled-checked-border</td>
+    <td>$kendo-checkbox-disabled-checked-border</td>
     <td></td>
     <td>null</td>
     <td>null</td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of disabled and checked checkbox.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Color of disabled and checked checkbox.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$checkbox-invalid-bg</td>
+    <td>$kendo-checkbox-invalid-bg</td>
     <td></td>
     <td>null</td>
     <td>null</td>
@@ -842,7 +1102,7 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$checkbox-invalid-text</td>
+    <td>$kendo-checkbox-invalid-text</td>
     <td></td>
     <td>$invalid-text</td>
     <td></td>
@@ -852,7 +1112,7 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$checkbox-invalid-border</td>
+    <td>$kendo-checkbox-invalid-border</td>
     <td></td>
     <td>$invalid-border</td>
     <td></td>
@@ -862,7 +1122,7 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$checkbox-indicator-type</td>
+    <td>$kendo-checkbox-indicator-type</td>
     <td></td>
     <td>image</td>
     <td>image</td>
@@ -872,7 +1132,7 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$checkbox-glyph-font-family</td>
+    <td>$kendo-checkbox-glyph-font-family</td>
     <td></td>
     <td>"WebComponentsIcons", monospace</td>
     <td>"WebComponentsIcons", monospace</td>
@@ -882,7 +1142,7 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$checkbox-checked-glyph</td>
+    <td>$kendo-checkbox-checked-glyph</td>
     <td></td>
     <td>"\e118"</td>
     <td>"\e118"</td>
@@ -892,7 +1152,7 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$checkbox-indeterminate-glyph</td>
+    <td>$kendo-checkbox-indeterminate-glyph</td>
     <td></td>
     <td>"\e121"</td>
     <td>"\e121"</td>
@@ -902,27 +1162,37 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$checkbox-checked-image</td>
+    <td>$kendo-checkbox-checked-image</td>
     <td></td>
-    <td>escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path fill='none' stroke='#{$checkbox-checked-text}' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/></svg>") )</td>
-    <td>escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path fill='none' stroke='#{$checkbox-checked-text}' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/></svg>") )</td>
+    <td>escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path fill='none' stroke='#{$kendo-checkbox-checked-text}' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/></svg>") )</td>
+    <td>escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path fill='none' stroke='#{$kendo-checkbox-checked-text}' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/></svg>") )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Image of checked checkbox indicator.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$checkbox-indeterminate-image</td>
+    <td>$kendo-checkbox-indeterminate-image</td>
     <td></td>
-    <td>escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path fill='none' stroke='#{$checkbox-indeterminate-text}' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10h8'/></svg>") )</td>
-    <td>escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path fill='none' stroke='#{$checkbox-indeterminate-text}' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10h8'/></svg>") )</td>
+    <td>escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path fill='none' stroke='#{$kendo-checkbox-indeterminate-text}' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10h8'/></svg>") )</td>
+    <td>escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path fill='none' stroke='#{$kendo-checkbox-indeterminate-text}' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10h8'/></svg>") )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Image of checked checkbox indicator.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$checkbox-list-spacing</td>
+    <td>$kendo-checkbox-label-margin-x</td>
+    <td></td>
+    <td>map-get( $spacing, 1 )</td>
+    <td>map-get( $spacing, 1 )</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal margin of the checkbox inside a label.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-checkbox-list-spacing</td>
     <td></td>
     <td>map-get( $spacing, 4 )</td>
     <td>map-get( $spacing, 4 )</td>
@@ -932,7 +1202,7 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$checkbox-list-item-padding-x</td>
+    <td>$kendo-checkbox-list-item-padding-x</td>
     <td></td>
     <td>0px</td>
     <td>0px</td>
@@ -942,19 +1212,19 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$checkbox-list-item-padding-y</td>
+    <td>$kendo-checkbox-list-item-padding-y</td>
     <td></td>
-    <td>$list-item-padding-y</td>
-    <td>map-get( $spacing, 1 )</td>
+    <td>$kendo-list-item-padding-y-md</td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of checkbox list items.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$checkbox-ripple-bg</td>
+    <td>$kendo-checkbox-ripple-bg</td>
     <td></td>
-    <td>$checkbox-checked-bg</td>
+    <td>$kendo-checkbox-checked-bg</td>
     <td>$primary</td>
 </tr>
 <tr>
@@ -962,13 +1232,342 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$checkbox-ripple-opacity</td>
+    <td>$kendo-checkbox-ripple-opacity</td>
     <td></td>
     <td>.25</td>
     <td>.25</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Opacity of checkbox ripple.</div></div>
+    </td>
+</tr>
+</tbody>
+</table>
+
+### Chip
+
+<table class="theme-variables">
+    <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
+    </tr>
+</thead>
+<tbody>
+        <tr>
+    <td>$kendo-chip-border-width</td>
+    <td></td>
+    <td>1px</td>
+    <td>1px</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Width of the border around the button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chip-spacing</td>
+    <td></td>
+    <td>map-get( $spacing, 2 )</td>
+    <td>map-get( $spacing, 2 )</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the text and the icons of the chip.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chip-padding-x</td>
+    <td></td>
+    <td>$padding-x-sm</td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the chip.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chip-padding-y</td>
+    <td></td>
+    <td>$kendo-chip-padding-x</td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the chip.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chip-font-size</td>
+    <td></td>
+    <td>$font-size</td>
+    <td>$font-size-base</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font sizes of the chip.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chip-line-height</td>
+    <td></td>
+    <td>normal</td>
+    <td>normal</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line heights of the chip that are connected to the $font-size.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chip-sizes</td>
+    <td></td>
+    <td>(
+    sm: ( font-size: $kendo-chip-font-size-sm, line-height: $kendo-chip-line-height-sm, padding: $kendo-chip-padding-x-sm ),
+    md: ( font-size: $kendo-chip-font-size-md, line-height: $kendo-chip-line-height-md, padding: $kendo-chip-padding-x-md ),
+    lg: ( font-size: $kendo-chip-font-size-lg, line-height: $kendo-chip-line-height-lg, padding: $kendo-chip-padding-x-lg )
+)</td>
+    <td>(
+    sm: ( font-size: $kendo-chip-font-size-sm, line-height: $kendo-chip-line-height-sm, padding: $kendo-chip-padding-x-sm ),
+    md: ( font-size: $kendo-chip-font-size-md, line-height: $kendo-chip-line-height-md, padding: $kendo-chip-padding-x-md ),
+    lg: ( font-size: $kendo-chip-font-size-lg, line-height: $kendo-chip-line-height-lg, padding: $kendo-chip-padding-x-lg )
+)</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Sizes map for the chip.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chip-base-bg</td>
+    <td></td>
+    <td>if( $dark-theme, contrast-wcag($kendo-button-text), $kendo-button-text )</td>
+    <td>if( $dark-theme, contrast-wcag($kendo-button-text), $kendo-button-text )</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background color of the chip.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chip-theme-colors</td>
+    <td></td>
+    <td>(
+    "base": $kendo-chip-base-bg,
+    "error": map-get( $theme-colors, "error" ),
+    "info": map-get( $theme-colors, "info" ),
+    "warning": map-get( $theme-colors, "warning" ),
+    "success": map-get( $theme-colors, "success" )
+)</td>
+    <td>(
+    "base": $kendo-chip-base-bg,
+    "error": map-get( $theme-colors, "error" ),
+    "info": map-get( $theme-colors, "info" ),
+    "warning": map-get( $theme-colors, "warning" ),
+    "success": map-get( $theme-colors, "success" )
+)</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Theme colors map for the chip.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chip-solid-bg</td>
+    <td></td>
+    <td>try-tint( $kendo-chip-base-bg, 92% )</td>
+    <td>try-tint( $kendo-chip-base-bg, 92% )</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background color of solid chip.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chip-solid-text</td>
+    <td></td>
+    <td>$kendo-chip-base-bg</td>
+    <td>if( $dark-theme, contrast-wcag($kendo-button-text), $kendo-button-text )</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base text color of solid chip.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chip-solid-border</td>
+    <td></td>
+    <td>try-tint( $kendo-chip-base-bg, 70% )</td>
+    <td>try-tint( $kendo-chip-base-bg, 70% )</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base border color of solid chip.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chip-solid-shadow</td>
+    <td></td>
+    <td>0 0 0 2px rgba( $kendo-chip-base-bg, .16 )</td>
+    <td>0 0 0 2px rgba( $kendo-chip-base-bg, .16 )</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of solid chip.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chip-solid-focus-bg</td>
+    <td></td>
+    <td>try-tint( $kendo-chip-base-bg, 92% )</td>
+    <td>try-tint( $kendo-chip-base-bg, 92% )</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background color of focused solid chip.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chip-solid-focus-text</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base text color of focused solid chip.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chip-solid-hover-bg</td>
+    <td></td>
+    <td>try-tint( $kendo-chip-base-bg, 84% )</td>
+    <td>try-tint( $kendo-chip-base-bg, 84% )</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background color of hovered solid chip.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chip-solid-hover-text</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base text color of hovered solid chip.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chip-solid-selected-bg</td>
+    <td></td>
+    <td>try-tint( $kendo-chip-base-bg, 76% )</td>
+    <td>try-tint( $kendo-chip-base-bg, 76% )</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background color of selected solid chip.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chip-solid-selected-text</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base text color of selected solid chip.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chip-outline-bg</td>
+    <td></td>
+    <td>$component-bg</td>
+    <td>$body-bg</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background color of outline chip.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chip-outline-text</td>
+    <td></td>
+    <td>$kendo-chip-base-bg</td>
+    <td>if( $dark-theme, contrast-wcag($kendo-button-text), $kendo-button-text )</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base text color of outline chip.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chip-outline-border</td>
+    <td></td>
+    <td>$kendo-chip-base-bg</td>
+    <td>if( $dark-theme, contrast-wcag($kendo-button-text), $kendo-button-text )</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base border color of outline chip.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chip-outline-shadow</td>
+    <td></td>
+    <td>0 0 0 2px rgba( $kendo-chip-base-bg, .16 )</td>
+    <td>0 0 0 2px rgba( $kendo-chip-base-bg, .16 )</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of outline chip.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chip-outline-hover-bg</td>
+    <td></td>
+    <td>$kendo-chip-base-bg</td>
+    <td>if( $dark-theme, contrast-wcag($kendo-button-text), $kendo-button-text )</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background color of hovered outline chip.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chip-outline-hover-text</td>
+    <td></td>
+    <td>contrast-wcag( $kendo-chip-base-bg )</td>
+    <td>contrast-wcag( $kendo-chip-base-bg )</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base text color of hovered outline chip.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chip-outline-selected-bg</td>
+    <td></td>
+    <td>$kendo-chip-outline-hover-bg</td>
+    <td>if( $dark-theme, contrast-wcag($kendo-button-text), $kendo-button-text )</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background color of selected outline chip.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chip-outline-selected-text</td>
+    <td></td>
+    <td>$kendo-chip-outline-hover-text</td>
+    <td>contrast-wcag( $kendo-chip-base-bg )</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base text color of selected outline chip.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chip-list-sizes</td>
+    <td></td>
+    <td>(
+    sm: map-get( $spacing, 1 ),
+    md: map-get( $spacing, 2 ),
+    lg: map-get( $spacing, 3 )
+)</td>
+    <td>(
+    sm: map-get( $spacing, 1 ),
+    md: map-get( $spacing, 2 ),
+    lg: map-get( $spacing, 3 )
+)</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes of the chip list.</div></div>
     </td>
 </tr>
 </tbody>
@@ -1191,6 +1790,397 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of a component.<br />Note: do not use this variable directly. Instead derive it as `$component-name-border` e.g. `$grid-border: component-border !default;`.</div></div>
+    </td>
+</tr>
+</tbody>
+</table>
+
+### Floating-action-button
+
+<table class="theme-variables">
+    <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
+    </tr>
+</thead>
+<tbody>
+        <tr>
+    <td>$kendo-fab-border-width</td>
+    <td></td>
+    <td>1px</td>
+    <td>1px</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Width of the border around the FAB.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-border-radius</td>
+    <td></td>
+    <td>$border-radius / 2</td>
+    <td>$border-radius / 2</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border radius of the FAB.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-font-family</td>
+    <td></td>
+    <td>$font-family</td>
+    <td>$font-family-sans-serif</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font family of the FAB.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-font-size</td>
+    <td></td>
+    <td>$font-size</td>
+    <td>$font-size-base</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the FAB.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-line-height</td>
+    <td></td>
+    <td>$line-height</td>
+    <td>$line-height-base</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of the FAB.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-padding-x</td>
+    <td></td>
+    <td>$padding-x</td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the FAB.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-padding-y</td>
+    <td></td>
+    <td>$kendo-fab-padding-x</td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the FAB.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-icon-width</td>
+    <td></td>
+    <td>24px</td>
+    <td>24px</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">FAB icon width.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-icon-height</td>
+    <td></td>
+    <td>$kendo-fab-icon-width</td>
+    <td>24px</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">FAB icon height.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-icon-spacing</td>
+    <td></td>
+    <td>map-get( $spacing, 1 ) / 2</td>
+    <td>map-get( $spacing, 1 ) / 2</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">FAB icon spacing.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-items-padding-x</td>
+    <td></td>
+    <td>0px</td>
+    <td>0px</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">FAB items horizontal padding.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-items-padding-y</td>
+    <td></td>
+    <td>map-get( $spacing, 4 )</td>
+    <td>map-get( $spacing, 4 )</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">FAB items vertical padding.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-item-text-padding-x</td>
+    <td></td>
+    <td>map-get( $spacing, 1 )</td>
+    <td>map-get( $spacing, 1 )</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">FAB item text horizontal padding.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-item-text-padding-y</td>
+    <td></td>
+    <td>$kendo-fab-item-text-padding-x</td>
+    <td>map-get( $spacing, 1 )</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">FAB item text vertical padding.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-item-text-border-width</td>
+    <td></td>
+    <td>1px</td>
+    <td>1px</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Width of the FAB item text border.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-item-text-border-radius</td>
+    <td></td>
+    <td>4px</td>
+    <td>4px</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border radius of the FAB item text.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-item-text-font-size</td>
+    <td></td>
+    <td>$font-size-xs</td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the FAB item text.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-item-text-line-height</td>
+    <td></td>
+    <td>14px</td>
+    <td>14px</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of the FAB item text.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-item-icon-padding-x</td>
+    <td></td>
+    <td>map-get( $spacing, 2 )</td>
+    <td>map-get( $spacing, 2 )</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">FAB item icon horizontal padding.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-item-icon-padding-y</td>
+    <td></td>
+    <td>$kendo-fab-item-icon-padding-x</td>
+    <td>map-get( $spacing, 2 )</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">FAB item icon vertical padding.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-item-icon-border-width</td>
+    <td></td>
+    <td>0</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Width of the FAB item icon border.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-item-icon-border-radius</td>
+    <td></td>
+    <td>50%</td>
+    <td>50%</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border radius of the FAB item icon.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-item-icon-width</td>
+    <td></td>
+    <td>24px</td>
+    <td>24px</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Width of the FAB item icon.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-item-icon-height</td>
+    <td></td>
+    <td>$kendo-fab-item-icon-width</td>
+    <td>24px</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">height of the FAB item icon.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-theme-colors</td>
+    <td></td>
+    <td>$theme-colors</td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Theme colors map for the FAB.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-shadow</td>
+    <td></td>
+    <td>0px 6px 10px rgba(0, 0, 0, .14), 0px 1px 18px rgba(0, 0, 0, .12), 0px 3px 5px rgba(0, 0, 0, .2)</td>
+    <td>0px 6px 10px rgba(0, 0, 0, .14), 0px 1px 18px rgba(0, 0, 0, .12), 0px 3px 5px rgba(0, 0, 0, .2)</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of the FAB.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-disabled-shadow</td>
+    <td></td>
+    <td>0px 6px 10px try-tint( rgba(0, 0, 0, .14), .5 ), 0px 1px 18px try-tint( rgba(0, 0, 0, .12), .5 ), 0px 3px 5px try-tint( rgba(0, 0, 0, .2), .5 )</td>
+    <td>0px 6px 10px try-tint( rgba(0, 0, 0, .14), .5 ), 0px 1px 18px try-tint( rgba(0, 0, 0, .12), .5 ), 0px 3px 5px try-tint( rgba(0, 0, 0, .2), .5 )</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The disabled shadow of the FAB.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-active-shadow</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The active shadow of the FAB.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-item-text</td>
+    <td></td>
+    <td>$component-text</td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base text color of the FAB item.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-item-bg</td>
+    <td></td>
+    <td>$component-bg</td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background color of the FAB item.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-item-border</td>
+    <td></td>
+    <td>$component-border</td>
+    <td>contrast-wcag( $component-bg, $gray-300, $gray-700 )</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base border color of the FAB item.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-item-icon-text</td>
+    <td></td>
+    <td>$kendo-button-text</td>
+    <td>contrast-wcag( $kendo-button-bg, $gray-900 )</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base text color of the FAB item icon.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-item-icon-bg</td>
+    <td></td>
+    <td>$kendo-button-bg</td>
+    <td><span class="color-preview" style="background-color: #e4e7eb"></span>#e4e7eb</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base background color of the FAB item icon.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-item-icon-border</td>
+    <td></td>
+    <td>$kendo-button-border</td>
+    <td><span class="color-preview" style="background-color: #e4e7eb"></span>#e4e7eb</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base border color of the FAB item icon.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-item-shadow</td>
+    <td></td>
+    <td>$kendo-fab-shadow</td>
+    <td>0px 6px 10px rgba(0, 0, 0, .14), 0px 1px 18px rgba(0, 0, 0, .12), 0px 3px 5px rgba(0, 0, 0, .2)</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of the FAB item.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-item-disabled-shadow</td>
+    <td></td>
+    <td>$kendo-fab-disabled-shadow</td>
+    <td>0px 6px 10px try-tint( rgba(0, 0, 0, .14), .5 ), 0px 1px 18px try-tint( rgba(0, 0, 0, .12), .5 ), 0px 3px 5px try-tint( rgba(0, 0, 0, .2), .5 )</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The disabled shadow of the FAB item.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-fab-item-active-shadow</td>
+    <td></td>
+    <td>$kendo-fab-active-shadow</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The active shadow of the FAB item.</div></div>
     </td>
 </tr>
 </tbody>
@@ -1457,47 +2447,187 @@ The following table lists the available variables for customizing the Bootstrap 
 </thead>
 <tbody>
         <tr>
-    <td>$list-font-size</td>
+    <td>$kendo-list-font-size</td>
     <td></td>
-    <td>$font-size-md</td>
-    <td></td>
+    <td>null</td>
+    <td>null</td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the list component.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the list component, if no size is set.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$list-line-height</td>
+    <td>$kendo-list-line-height</td>
     <td></td>
-    <td>$line-height-md</td>
-    <td></td>
+    <td>null</td>
+    <td>null</td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of the list component.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of the list component, if no size is set.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$list-item-padding-x</td>
+    <td>$kendo-list-header-padding-x</td>
     <td></td>
-    <td>map-get( $spacing, 4 )</td>
-    <td>map-get( $spacing, 4 )</td>
+    <td>null</td>
+    <td>null</td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of list items.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of list header, if no size is set.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$list-item-padding-y</td>
+    <td>$kendo-list-header-padding-y</td>
     <td></td>
-    <td>map-get( $spacing, 1 )</td>
-    <td>map-get( $spacing, 1 )</td>
+    <td>null</td>
+    <td>null</td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of list items.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of list header, if no size is set.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$list-bg</td>
+    <td>$kendo-list-header-border-width</td>
+    <td></td>
+    <td>0 0 1px</td>
+    <td>0 0 1px</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border width of list header.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-list-header-font-size</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of list header, if no size is set.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-list-header-line-height</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of list header, if no size is set.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-list-header-font-weight</td>
+    <td></td>
+    <td>bold</td>
+    <td>bold</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font weight of list header.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-list-item-padding-x</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of list items, when no size is set.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-list-item-padding-y</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of list items, when no size is set.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-list-item-font-size</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of list items, if no size is set.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-list-item-line-height</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of list items, if no size is set.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-list-group-item-padding-x</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of list group items, when no size is set.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-list-group-item-padding-y</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of list group items, when no size is set.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-list-group-item-border-width</td>
+    <td></td>
+    <td>1px 0 0</td>
+    <td>1px 0 0</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border width of list group items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-list-group-item-font-size</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of list group items, if no size is set.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-list-group-item-line-height</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of list group items, if no size is set.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-list-group-item-font-weight</td>
+    <td></td>
+    <td>bold</td>
+    <td>bold</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font weight of list group item.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-list-bg</td>
     <td></td>
     <td>$component-bg</td>
     <td></td>
@@ -1507,7 +2637,7 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$list-text</td>
+    <td>$kendo-list-text</td>
     <td></td>
     <td>$component-text</td>
     <td></td>
@@ -1517,7 +2647,7 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$list-border</td>
+    <td>$kendo-list-border</td>
     <td></td>
     <td>$component-border</td>
     <td>contrast-wcag( $component-bg, $gray-300, $gray-700 )</td>
@@ -1527,7 +2657,7 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$list-header-bg</td>
+    <td>$kendo-list-header-bg</td>
     <td></td>
     <td>null</td>
     <td>null</td>
@@ -1537,7 +2667,7 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$list-header-text</td>
+    <td>$kendo-list-header-text</td>
     <td></td>
     <td>null</td>
     <td>null</td>
@@ -1547,7 +2677,7 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$list-header-border</td>
+    <td>$kendo-list-header-border</td>
     <td></td>
     <td>inherit</td>
     <td>inherit</td>
@@ -1557,7 +2687,7 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$list-header-shadow</td>
+    <td>$kendo-list-header-shadow</td>
     <td></td>
     <td>null</td>
     <td>null</td>
@@ -1567,7 +2697,7 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$list-item-bg</td>
+    <td>$kendo-list-item-bg</td>
     <td></td>
     <td>null</td>
     <td>null</td>
@@ -1577,17 +2707,17 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$list-item-text</td>
+    <td>$kendo-list-item-text</td>
     <td></td>
-    <td>$component-text</td>
-    <td></td>
+    <td>null</td>
+    <td>null</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of list items.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$list-item-hovered-bg</td>
+    <td>$kendo-list-item-hover-bg</td>
     <td></td>
     <td>$hovered-bg</td>
     <td>$gray-200</td>
@@ -1597,7 +2727,7 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$list-item-hovered-text</td>
+    <td>$kendo-list-item-hover-text</td>
     <td></td>
     <td>$hovered-text</td>
     <td>$base-text</td>
@@ -1607,7 +2737,7 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$list-item-focused-bg</td>
+    <td>$kendo-list-item-focus-bg</td>
     <td></td>
     <td>null</td>
     <td>null</td>
@@ -1617,7 +2747,7 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$list-item-focused-text</td>
+    <td>$kendo-list-item-focus-text</td>
     <td></td>
     <td>null</td>
     <td>null</td>
@@ -1627,17 +2757,17 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$list-item-focused-shadow</td>
+    <td>$kendo-list-item-focus-shadow</td>
     <td></td>
-    <td>inset 0 0 0 3px rgba( $list-item-text, .15 )</td>
-    <td>inset 0 0 0 3px rgba( $list-item-text, .15 )</td>
+    <td>inset 0 0 0 3px rgba( $kendo-list-text, .15 )</td>
+    <td>inset 0 0 0 3px rgba( $kendo-list-text, .15 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Box shadow of focused list items.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$list-item-selected-bg</td>
+    <td>$kendo-list-item-selected-bg</td>
     <td></td>
     <td>$selected-bg</td>
     <td>$primary</td>
@@ -1647,7 +2777,7 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$list-item-selected-text</td>
+    <td>$kendo-list-item-selected-text</td>
     <td></td>
     <td>$selected-text</td>
     <td>contrast-wcag( $selected-bg )</td>
@@ -1657,13 +2787,354 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$list-no-data-text</td>
+    <td>$kendo-list-group-item-bg</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of list group items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-list-group-item-text</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of list group items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-list-group-item-border</td>
+    <td></td>
+    <td>inherit</td>
+    <td>inherit</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of list group items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-list-group-item-shadow</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of list group items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-list-no-data-text</td>
     <td></td>
     <td>$subtle-text</td>
     <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the 'No Data' text.</div></div>
+    </td>
+</tr>
+</tbody>
+</table>
+
+### Menu
+
+<table class="theme-variables">
+    <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
+    </tr>
+</thead>
+<tbody>
+        <tr>
+    <td>$kendo-menu-popup-padding-x</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the menu popup.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-menu-popup-padding-y</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the menu popup.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-menu-popup-border-width</td>
+    <td></td>
+    <td>$popup-border-width</td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Width of the border around the menu popup.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-menu-popup-font-size</td>
+    <td></td>
+    <td>$font-size-md</td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font sizes of the menu popup.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-menu-popup-line-height</td>
+    <td></td>
+    <td>$line-height-md</td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line heights used along with $font-size.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-menu-popup-bg</td>
+    <td></td>
+    <td>$popup-bg</td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the menu popup.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-menu-popup-text</td>
+    <td></td>
+    <td>$popup-text</td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the menu popup.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-menu-popup-border</td>
+    <td></td>
+    <td>$popup-border</td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the menu popup.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-menu-popup-gradient</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of the menu popup.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-menu-popup-item-padding-x</td>
+    <td></td>
+    <td>map-get( $spacing, 4 )</td>
+    <td>map-get( $spacing, 4 )</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the menu item in popup.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-menu-popup-item-padding-y</td>
+    <td></td>
+    <td>map-get( $spacing, 1 )</td>
+    <td>map-get( $spacing, 1 )</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the menu item in popup.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-menu-popup-item-padding-end</td>
+    <td></td>
+    <td>calc( #{$kendo-menu-popup-item-padding-x * 2} + #{$icon-size} )</td>
+    <td>calc( #{$kendo-menu-popup-item-padding-x * 2} + #{$icon-size} )</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The end padding of the menu item in popup.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-menu-popup-item-icon-margin-start-sm</td>
+    <td></td>
+    <td>$kendo-menu-popup-item-padding-x-sm</td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The start margin of the menu item expand icon.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-menu-popup-item-icon-margin-end-sm</td>
+    <td></td>
+    <td>calc( -1 * (#{$kendo-menu-popup-item-padding-end-sm} - #{$kendo-menu-popup-item-padding-x-sm / 2}) )</td>
+    <td>calc( -1 * (#{$kendo-menu-popup-item-padding-end-sm} - #{$kendo-menu-popup-item-padding-x-sm / 2}) )</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The end margin of the menu item expand icon.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-menu-popup-item-spacing</td>
+    <td></td>
+    <td>0px</td>
+    <td>0px</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the menu items in popup.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-menu-popup-item-bg</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the menu item in popup.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-menu-popup-item-text</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the menu item in popup.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-menu-popup-item-border</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the menu item in popup.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-menu-popup-item-gradient</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of the menu item in popup.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-menu-popup-item-hover-bg</td>
+    <td></td>
+    <td>$kendo-list-item-hover-bg</td>
+    <td>$gray-200</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of hovered menu item in popup.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-menu-popup-item-hover-text</td>
+    <td></td>
+    <td>$kendo-list-item-hover-text</td>
+    <td>$base-text</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of hovered menu item in popup.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-menu-popup-item-hover-border</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of hovered menu item in popup.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-menu-popup-item-hover-gradient</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of hovered menu item in popup.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-menu-popup-item-expanded-bg</td>
+    <td></td>
+    <td>$kendo-list-item-selected-bg</td>
+    <td>$primary</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of expanded menu item in popup.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-menu-popup-item-expanded-text</td>
+    <td></td>
+    <td>$kendo-list-item-selected-text</td>
+    <td>contrast-wcag( $selected-bg )</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of expanded menu item in popup.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-menu-popup-item-expanded-border</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of expanded menu item in popup.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-menu-popup-item-expanded-gradient</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of expanded menu item in popup.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-menu-popup-item-focus-shadow</td>
+    <td></td>
+    <td>$menu-item-focus-shadow</td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of focused menu item in popup.</div></div>
     </td>
 </tr>
 </tbody>
@@ -1688,7 +3159,7 @@ The following table lists the available variables for customizing the Bootstrap 
 </thead>
 <tbody>
         <tr>
-    <td>$radio-radius</td>
+    <td>$kendo-radio-radius</td>
     <td></td>
     <td>50%</td>
     <td>50%</td>
@@ -1698,7 +3169,7 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$radio-border-width</td>
+    <td>$kendo-radio-border-width</td>
     <td></td>
     <td>1px</td>
     <td>1px</td>
@@ -1708,9 +3179,9 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$radio-bg</td>
+    <td>$kendo-radio-bg</td>
     <td></td>
-    <td>$checkbox-bg</td>
+    <td>$kendo-checkbox-bg</td>
     <td>$body-bg</td>
 </tr>
 <tr>
@@ -1718,9 +3189,9 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$radio-text</td>
+    <td>$kendo-radio-text</td>
     <td></td>
-    <td>$checkbox-text</td>
+    <td>$kendo-checkbox-text</td>
     <td>null</td>
 </tr>
 <tr>
@@ -1728,19 +3199,19 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$radio-border</td>
+    <td>$kendo-radio-border</td>
     <td></td>
-    <td>$checkbox-border</td>
-    <td>contrast-wcag( $input-bg, $gray-400, $gray-600 )</td>
+    <td>$kendo-checkbox-border</td>
+    <td>contrast-wcag( $kendo-checkbox-bg, $gray-400, $gray-600 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of radio button.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$radio-hovered-bg</td>
+    <td>$kendo-radio-hover-bg</td>
     <td></td>
-    <td>$checkbox-hovered-bg</td>
+    <td>$kendo-checkbox-hover-bg</td>
     <td>null</td>
 </tr>
 <tr>
@@ -1748,9 +3219,9 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$radio-hovered-text</td>
+    <td>$kendo-radio-hover-text</td>
     <td></td>
-    <td>$checkbox-hovered-text</td>
+    <td>$kendo-checkbox-hover-text</td>
     <td>null</td>
 </tr>
 <tr>
@@ -1758,9 +3229,9 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$radio-hovered-border</td>
+    <td>$kendo-radio-hover-border</td>
     <td></td>
-    <td>$checkbox-hovered-border</td>
+    <td>$kendo-checkbox-hover-border</td>
     <td>null</td>
 </tr>
 <tr>
@@ -1768,9 +3239,9 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$radio-checked-bg</td>
+    <td>$kendo-radio-checked-bg</td>
     <td></td>
-    <td>$checkbox-checked-bg</td>
+    <td>$kendo-checkbox-checked-bg</td>
     <td>$primary</td>
 </tr>
 <tr>
@@ -1778,19 +3249,19 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$radio-checked-text</td>
+    <td>$kendo-radio-checked-text</td>
     <td></td>
-    <td>$checkbox-checked-text</td>
-    <td>contrast-wcag( $checkbox-checked-bg )</td>
+    <td>$kendo-checkbox-checked-text</td>
+    <td>contrast-wcag( $kendo-checkbox-checked-bg )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Color of checked radio button.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$radio-checked-border</td>
+    <td>$kendo-radio-checked-border</td>
     <td></td>
-    <td>$checkbox-checked-border</td>
+    <td>$kendo-checkbox-checked-border</td>
     <td>$primary</td>
 </tr>
 <tr>
@@ -1798,19 +3269,19 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$radio-focused-border</td>
+    <td>$kendo-radio-focus-border</td>
     <td></td>
-    <td>$checkbox-hovered-border</td>
-    <td>null</td>
+    <td>$kendo-checkbox-focus-border</td>
+    <td>try-tint( $primary, 50% )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of focused radio button.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$radio-focused-shadow</td>
+    <td>$kendo-radio-focus-shadow</td>
     <td></td>
-    <td>$checkbox-focused-shadow</td>
+    <td>$kendo-checkbox-focus-shadow</td>
     <td>0 0 0 .25rem rgba( $primary, .25 )</td>
 </tr>
 <tr>
@@ -1818,9 +3289,9 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$radio-focused-checked-border</td>
+    <td>$kendo-radio-focus-checked-border</td>
     <td></td>
-    <td>$checkbox-checked-border</td>
+    <td>$kendo-checkbox-focus-checked-border</td>
     <td>$primary</td>
 </tr>
 <tr>
@@ -1828,9 +3299,9 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$radio-focused-checked-shadow</td>
+    <td>$kendo-radio-focus-checked-shadow</td>
     <td></td>
-    <td>$checkbox-focused-checked-shadow</td>
+    <td>$kendo-checkbox-focus-checked-shadow</td>
     <td>0 0 0 .25rem rgba( $primary, .25 )</td>
 </tr>
 <tr>
@@ -1838,9 +3309,9 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$radio-disabled-bg</td>
+    <td>$kendo-radio-disabled-bg</td>
     <td></td>
-    <td>$checkbox-disabled-bg</td>
+    <td>$kendo-checkbox-disabled-bg</td>
     <td>null</td>
 </tr>
 <tr>
@@ -1848,9 +3319,9 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$radio-disabled-text</td>
+    <td>$kendo-radio-disabled-text</td>
     <td></td>
-    <td>$checkbox-disabled-text</td>
+    <td>$kendo-checkbox-disabled-text</td>
     <td>null</td>
 </tr>
 <tr>
@@ -1858,9 +3329,9 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$radio-disabled-border</td>
+    <td>$kendo-radio-disabled-border</td>
     <td></td>
-    <td>$checkbox-disabled-border</td>
+    <td>$kendo-checkbox-disabled-border</td>
     <td>null</td>
 </tr>
 <tr>
@@ -1868,9 +3339,9 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$radio-disabled-checked-bg</td>
+    <td>$kendo-radio-disabled-checked-bg</td>
     <td></td>
-    <td>$checkbox-disabled-checked-bg</td>
+    <td>$kendo-checkbox-disabled-checked-bg</td>
     <td>null</td>
 </tr>
 <tr>
@@ -1878,9 +3349,9 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$radio-disabled-checked-text</td>
+    <td>$kendo-radio-disabled-checked-text</td>
     <td></td>
-    <td>$checkbox-disabled-checked-text</td>
+    <td>$kendo-checkbox-disabled-checked-text</td>
     <td>null</td>
 </tr>
 <tr>
@@ -1888,9 +3359,9 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$radio-disabled-checked-border</td>
+    <td>$kendo-radio-disabled-checked-border</td>
     <td></td>
-    <td>$checkbox-disabled-checked-border</td>
+    <td>$kendo-checkbox-disabled-checked-border</td>
     <td>null</td>
 </tr>
 <tr>
@@ -1898,9 +3369,9 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$radio-invalid-bg</td>
+    <td>$kendo-radio-invalid-bg</td>
     <td></td>
-    <td>$checkbox-invalid-bg</td>
+    <td>$kendo-checkbox-invalid-bg</td>
     <td>null</td>
 </tr>
 <tr>
@@ -1908,9 +3379,9 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$radio-invalid-text</td>
+    <td>$kendo-radio-invalid-text</td>
     <td></td>
-    <td>$checkbox-invalid-text</td>
+    <td>$kendo-checkbox-invalid-text</td>
     <td></td>
 </tr>
 <tr>
@@ -1918,9 +3389,9 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$radio-invalid-border</td>
+    <td>$kendo-radio-invalid-border</td>
     <td></td>
-    <td>$checkbox-invalid-border</td>
+    <td>$kendo-checkbox-invalid-border</td>
     <td></td>
 </tr>
 <tr>
@@ -1928,7 +3399,7 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$radio-indicator-type</td>
+    <td>$kendo-radio-indicator-type</td>
     <td></td>
     <td>image</td>
     <td>image</td>
@@ -1938,7 +3409,17 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$radio-checked-glyph</td>
+    <td>$kendo-radio-glyph-font-family</td>
+    <td></td>
+    <td>"WebComponentsIcons", monospace</td>
+    <td>"WebComponentsIcons", monospace</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Glyph font family of radio button indicator.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-radio-checked-glyph</td>
     <td></td>
     <td>"\e308"</td>
     <td>"\e308"</td>
@@ -1948,17 +3429,17 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$radio-checked-image</td>
+    <td>$kendo-radio-checked-image</td>
     <td></td>
-    <td>escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='2' fill='#{$radio-checked-text}'/></svg>") )</td>
-    <td>escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='2' fill='#{$radio-checked-text}'/></svg>") )</td>
+    <td>escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='2' fill='#{$kendo-radio-checked-text}'/></svg>") )</td>
+    <td>escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='2' fill='#{$kendo-radio-checked-text}'/></svg>") )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Image of checked radio button indicator.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$radio-disabled-checked-image</td>
+    <td>$kendo-radio-disabled-checked-image</td>
     <td></td>
     <td>null</td>
     <td>null</td>
@@ -1968,7 +3449,17 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$radio-list-spacing</td>
+    <td>$kendo-radio-label-margin-x</td>
+    <td></td>
+    <td>map-get( $spacing, 1 )</td>
+    <td>map-get( $spacing, 1 )</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal margin of the radio button inside of a label.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-radio-list-spacing</td>
     <td></td>
     <td>map-get( $spacing, 4 )</td>
     <td>map-get( $spacing, 4 )</td>
@@ -1978,7 +3469,7 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$radio-list-item-padding-x</td>
+    <td>$kendo-radio-list-item-padding-x</td>
     <td></td>
     <td>0px</td>
     <td>0px</td>
@@ -1988,19 +3479,19 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$radio-list-item-padding-y</td>
+    <td>$kendo-radio-list-item-padding-y</td>
     <td></td>
-    <td>$list-item-padding-y</td>
-    <td>map-get( $spacing, 1 )</td>
+    <td>$kendo-list-item-padding-y-md</td>
+    <td></td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of radio button list items.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$radio-ripple-bg</td>
+    <td>$kendo-radio-ripple-bg</td>
     <td></td>
-    <td>$radio-checked-bg</td>
+    <td>$kendo-radio-checked-bg</td>
     <td>$primary</td>
 </tr>
 <tr>
@@ -2008,13 +3499,612 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$radio-ripple-opacity</td>
+    <td>$kendo-radio-ripple-opacity</td>
     <td></td>
     <td>.25</td>
     <td>.25</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Opacity of radio button ripple.</div></div>
+    </td>
+</tr>
+</tbody>
+</table>
+
+### Switch
+
+<table class="theme-variables">
+    <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
+    </tr>
+</thead>
+<tbody>
+        <tr>
+    <td>$kendo-switch-font-family</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font family of the switch.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-switch-line-height</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of the switch.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-switch-track-border-width</td>
+    <td></td>
+    <td>1px</td>
+    <td>1px</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border width of the switch track.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-switch-thumb-border-width</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border width of the switch thumb.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-switch-label-text-transform</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text transform of the switch label.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-switch-label-display</td>
+    <td></td>
+    <td>none</td>
+    <td>none</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Display of the switch label.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-switch-sizes</td>
+    <td></td>
+    <td>(
+    sm: ( font-size: null, track-width: 36px, track-height: 22px, thumb-width: 16px, thumb-height: 16px, thumb-offset: 3px, label-offset: 0px ),
+    md: ( font-size: null, track-width: 56px, track-height: 30px, thumb-width: 24px, thumb-height: 24px, thumb-offset: 3px, label-offset: 0px ),
+    lg: ( font-size: null, track-width: 76px, track-height: 38px, thumb-width: 32px, thumb-height: 32px, thumb-offset: 3px, label-offset: 0px )
+)</td>
+    <td>(
+    sm: ( font-size: null, track-width: 36px, track-height: 22px, thumb-width: 16px, thumb-height: 16px, thumb-offset: 3px, label-offset: 0px ),
+    md: ( font-size: null, track-width: 56px, track-height: 30px, thumb-width: 24px, thumb-height: 24px, thumb-offset: 3px, label-offset: 0px ),
+    lg: ( font-size: null, track-width: 76px, track-height: 38px, thumb-width: 32px, thumb-height: 32px, thumb-offset: 3px, label-offset: 0px )
+)</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Map with the different switch sizes.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-switch-off-track-bg</td>
+    <td></td>
+    <td>$component-bg</td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the track when the switch is not checked.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-switch-off-track-text</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the track when the switch is not checked.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-switch-off-track-border</td>
+    <td></td>
+    <td>$gray-500</td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the track when the switch is not checked.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-switch-off-track-gradient</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of the track when the switch is not checked.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-switch-off-track-hover-bg</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the track when the hovered switch is not checked.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-switch-off-track-hover-text</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the track when the hovered switch is not checked.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-switch-off-track-hover-border</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the track when the hovered switch is not checked.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-switch-off-track-hover-gradient</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of the track when the hovered switch is not checked.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-switch-off-track-focus-bg</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the track when the focused switch is not checked.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-switch-off-track-focus-text</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the track when the focused switch is not checked.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-switch-off-track-focus-border</td>
+    <td></td>
+    <td>mix( $kendo-switch-off-track-bg, $primary )</td>
+    <td>mix( $kendo-switch-off-track-bg, $primary )</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the track when the focused switch is not checked.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-switch-off-track-focus-gradient</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of the track when the focused switch is not checked.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-switch-off-track-focus-ring</td>
+    <td></td>
+    <td>.25rem solid rgba( $primary, .25 )</td>
+    <td>.25rem solid rgba( $primary, .25 )</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The ring around the track when the focused switch is not checked.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-switch-off-track-disabled-bg</td>
+    <td></td>
+    <td>if( $dark-theme, $gray-800, $gray-200 )</td>
+    <td>if( $dark-theme, $gray-800, $gray-200 )</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the track when the disabled switch is not checked.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-switch-off-track-disabled-text</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the track when the disabled switch is not checked.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-switch-off-track-disabled-border</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the track when the disabled switch is not checked.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-switch-off-track-disabled-gradient</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of the track when the disabled switch is not checked.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-switch-off-thumb-bg</td>
+    <td></td>
+    <td>$gray-500</td>
+    <td></td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the thumb when the switch is not checked.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-switch-off-thumb-text</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the thumb when the switch is not checked.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-switch-off-thumb-border</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the thumb when the switch is not checked.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-switch-off-thumb-gradient</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of the thumb when the switch is not checked.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-switch-off-thumb-hover-bg</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the thumb when the hovered switch is not checked.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-switch-off-thumb-hover-text</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the thumb when the hovered switch is not checked.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-switch-off-thumb-hover-border</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the thumb when the hovered switch is not checked.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-switch-off-thumb-hover-gradient</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of the thumb when the hovered switch is not checked.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-switch-on-track-bg</td>
+    <td></td>
+    <td>$primary</td>
+    <td>$primary</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the track when the switch is checked.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-switch-on-track-text</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the track when the switch is checked.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-switch-on-track-border</td>
+    <td></td>
+    <td>$kendo-switch-on-track-bg</td>
+    <td>$primary</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the track when the switch is checked.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-switch-on-track-gradient</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of the track when the switch is checked.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-switch-on-track-hover-bg</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the track when the hovered switch is checked.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-switch-on-track-hover-text</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the track when the hovered switch is checked.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-switch-on-track-hover-border</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the track when the hovered switch is checked.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-switch-on-track-hover-gradient</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of the track when the hovered switch is checked.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-switch-on-track-focus-bg</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the track when the focused switch is checked.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-switch-on-track-focus-text</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the track when the focused switch is checked.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-switch-on-track-focus-border</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the track when the focused switch is checked.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-switch-on-track-focus-gradient</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of the track when the focused switch is checked.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-switch-on-track-focus-ring</td>
+    <td></td>
+    <td>.25rem solid rgba( $kendo-switch-on-track-border, .25 )</td>
+    <td>.25rem solid rgba( $kendo-switch-on-track-border, .25 )</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The ring around the track when the focused switch is checked.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-switch-on-track-disabled-bg</td>
+    <td></td>
+    <td>try-tint( $kendo-switch-on-track-bg, 50% )</td>
+    <td>try-tint( $kendo-switch-on-track-bg, 50% )</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the track when the disabled switch is checked.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-switch-on-track-disabled-text</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the track when the disabled switch is checked.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-switch-on-track-disabled-border</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the track when the disabled switch is checked.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-switch-on-track-disabled-gradient</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of the track when the disabled switch is checked.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-switch-on-thumb-bg</td>
+    <td></td>
+    <td>contrast-wcag( $kendo-switch-on-track-bg )</td>
+    <td>contrast-wcag( $kendo-switch-on-track-bg )</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the thumb when the switch is checked.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-switch-on-thumb-text</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the thumb when the switch is checked.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-switch-on-thumb-border</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the thumb when the switch is checked.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-switch-on-thumb-gradient</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of the thumb when the switch is checked.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-switch-on-thumb-hover-bg</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the thumb when the hovered switch is checked.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-switch-on-thumb-hover-text</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the thumb when the hovered switch is checked.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-switch-on-thumb-hover-border</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the thumb when the hovered switch is checked.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-switch-on-thumb-hover-gradient</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background gradient of the thumb when the hovered switch is checked.</div></div>
     </td>
 </tr>
 </tbody>
@@ -2039,7 +4129,7 @@ The following table lists the available variables for customizing the Bootstrap 
 </thead>
 <tbody>
         <tr>
-    <td>$table-border-width</td>
+    <td>$kendo-table-border-width</td>
     <td></td>
     <td>1px</td>
     <td>1px</td>
@@ -2049,7 +4139,7 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$table-cell-vertical-border-width</td>
+    <td>$kendo-table-cell-vertical-border-width</td>
     <td></td>
     <td>$grid-cell-vertical-border-width</td>
     <td></td>
@@ -2059,7 +4149,7 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$table-cell-horizontal-border-width</td>
+    <td>$kendo-table-cell-horizontal-border-width</td>
     <td></td>
     <td>$grid-cell-horizontal-border-width</td>
     <td></td>
@@ -2069,37 +4159,95 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$table-font-size</td>
+    <td>$kendo-table-font-size</td>
     <td></td>
-    <td>$font-size</td>
-    <td>$font-size-base</td>
+    <td>null</td>
+    <td>null</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The font size of the table if no size is specified.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$table-cell-padding-x</td>
+    <td>$kendo-table-line-height</td>
     <td></td>
-    <td>map-get( $spacing, 2 )</td>
-    <td>map-get( $spacing, 2 )</td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line-height of the table if no size is specified.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-table-cell-padding-x</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the cells in the table if no size is specified.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$table-cell-padding-y</td>
+    <td>$kendo-table-cell-padding-y</td>
     <td></td>
-    <td>map-get( $spacing, 2 )</td>
-    <td>map-get( $spacing, 2 )</td>
+    <td>null</td>
+    <td>null</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the cells in the table if no size is specified.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$table-bg</td>
+    <td>$kendo-table-sizes</td>
+    <td></td>
+    <td>(
+    sm: (
+        font-size: $font-size-md,
+        line-height: $line-height-md,
+        cell-padding-x: map-get( $spacing, 2 ),
+        cell-padding-y: map-get( $spacing, 2 ) - map-get( $spacing, thin )
+    ),
+    md: (
+        font-size: $font-size-md,
+        line-height: $line-height-md,
+        cell-padding-x: map-get( $spacing, 2 ),
+        cell-padding-y: map-get( $spacing, 2 )
+    ),
+    lg: (
+        font-size: $font-size-md,
+        line-height: $line-height-md,
+        cell-padding-x: map-get( $spacing, 2 ),
+        cell-padding-y: map-get( $spacing, 2 ) + map-get( $spacing, thin )
+    )
+)</td>
+    <td>(
+    sm: (
+        font-size: $font-size-md,
+        line-height: $line-height-md,
+        cell-padding-x: map-get( $spacing, 2 ),
+        cell-padding-y: map-get( $spacing, 2 ) - map-get( $spacing, thin )
+    ),
+    md: (
+        font-size: $font-size-md,
+        line-height: $line-height-md,
+        cell-padding-x: map-get( $spacing, 2 ),
+        cell-padding-y: map-get( $spacing, 2 )
+    ),
+    lg: (
+        font-size: $font-size-md,
+        line-height: $line-height-md,
+        cell-padding-x: map-get( $spacing, 2 ),
+        cell-padding-y: map-get( $spacing, 2 ) + map-get( $spacing, thin )
+    )
+)</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes of the table.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-table-bg</td>
     <td></td>
     <td>$grid-bg</td>
     <td></td>
@@ -2109,7 +4257,7 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$table-text</td>
+    <td>$kendo-table-text</td>
     <td></td>
     <td>$grid-text</td>
     <td></td>
@@ -2119,7 +4267,7 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$table-border</td>
+    <td>$kendo-table-border</td>
     <td></td>
     <td>$grid-border</td>
     <td>contrast-wcag( $component-bg, $gray-300, $gray-700 )</td>
@@ -2129,7 +4277,7 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$table-header-bg</td>
+    <td>$kendo-table-header-bg</td>
     <td></td>
     <td>$grid-header-bg</td>
     <td></td>
@@ -2139,7 +4287,7 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$table-header-text</td>
+    <td>$kendo-table-header-text</td>
     <td></td>
     <td>$grid-header-text</td>
     <td></td>
@@ -2149,7 +4297,7 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$table-header-border</td>
+    <td>$kendo-table-header-border</td>
     <td></td>
     <td>$grid-header-border</td>
     <td></td>
@@ -2159,7 +4307,7 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$table-footer-bg</td>
+    <td>$kendo-table-footer-bg</td>
     <td></td>
     <td>$grid-footer-bg</td>
     <td></td>
@@ -2169,7 +4317,7 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$table-footer-text</td>
+    <td>$kendo-table-footer-text</td>
     <td></td>
     <td>$grid-footer-text</td>
     <td></td>
@@ -2179,7 +4327,7 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$table-footer-border</td>
+    <td>$kendo-table-footer-border</td>
     <td></td>
     <td>$grid-footer-border</td>
     <td></td>
@@ -2189,9 +4337,9 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$table-group-row-bg</td>
+    <td>$kendo-table-group-row-bg</td>
     <td></td>
-    <td>$table-header-bg</td>
+    <td>$kendo-table-header-bg</td>
     <td></td>
 </tr>
 <tr>
@@ -2199,9 +4347,9 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$table-group-row-text</td>
+    <td>$kendo-table-group-row-text</td>
     <td></td>
-    <td>$table-header-text</td>
+    <td>$kendo-table-header-text</td>
     <td></td>
 </tr>
 <tr>
@@ -2209,9 +4357,9 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$table-group-row-border</td>
+    <td>$kendo-table-group-row-border</td>
     <td></td>
-    <td>$table-header-border</td>
+    <td>$kendo-table-header-border</td>
     <td></td>
 </tr>
 <tr>
@@ -2219,7 +4367,7 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$table-alt-row-bg</td>
+    <td>$kendo-table-alt-row-bg</td>
     <td></td>
     <td>$grid-alt-bg</td>
     <td>rgba( contrast-wcag( $grid-bg ), .04 )</td>
@@ -2229,7 +4377,7 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$table-alt-row-text</td>
+    <td>$kendo-table-alt-row-text</td>
     <td></td>
     <td>$grid-alt-text</td>
     <td>null</td>
@@ -2239,7 +4387,7 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$table-alt-row-border</td>
+    <td>$kendo-table-alt-row-border</td>
     <td></td>
     <td>$grid-alt-border</td>
     <td>null</td>
@@ -2249,7 +4397,7 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$table-hover-bg</td>
+    <td>$kendo-table-hover-bg</td>
     <td></td>
     <td>$grid-hovered-bg</td>
     <td>rgba( contrast-wcag( $grid-bg ), .08 )</td>
@@ -2259,7 +4407,7 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$table-hover-text</td>
+    <td>$kendo-table-hover-text</td>
     <td></td>
     <td>$grid-hovered-text</td>
     <td>null</td>
@@ -2269,7 +4417,7 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$table-hover-border</td>
+    <td>$kendo-table-hover-border</td>
     <td></td>
     <td>$grid-hovered-border</td>
     <td>null</td>
@@ -2279,7 +4427,7 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$table-focus-bg</td>
+    <td>$kendo-table-focus-bg</td>
     <td></td>
     <td>null</td>
     <td>null</td>
@@ -2289,7 +4437,7 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$table-focus-text</td>
+    <td>$kendo-table-focus-text</td>
     <td></td>
     <td>null</td>
     <td>null</td>
@@ -2299,7 +4447,7 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$table-focus-border</td>
+    <td>$kendo-table-focus-border</td>
     <td></td>
     <td>null</td>
     <td>null</td>
@@ -2309,7 +4457,7 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$table-focus-shadow</td>
+    <td>$kendo-table-focus-shadow</td>
     <td></td>
     <td>$grid-focused-shadow</td>
     <td></td>
@@ -2319,7 +4467,7 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$table-selected-bg</td>
+    <td>$kendo-table-selected-bg</td>
     <td></td>
     <td>$grid-selected-bg</td>
     <td>rgba( $selected-bg, .25 )</td>
@@ -2329,7 +4477,7 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$table-selected-text</td>
+    <td>$kendo-table-selected-text</td>
     <td></td>
     <td>$grid-selected-text</td>
     <td></td>
@@ -2339,7 +4487,7 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$table-selected-border</td>
+    <td>$kendo-table-selected-border</td>
     <td></td>
     <td>$grid-selected-border</td>
     <td>contrast-wcag( $component-bg, $gray-300, $gray-700 )</td>
@@ -2702,7 +4850,7 @@ The following table lists the available variables for customizing the Bootstrap 
 </thead>
 <tbody>
         <tr>
-    <td>$treeview-font-family</td>
+    <td>$kendo-treeview-font-family</td>
     <td></td>
     <td>$font-family</td>
     <td>$font-family-sans-serif</td>
@@ -2712,7 +4860,7 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$treeview-font-size</td>
+    <td>$kendo-treeview-font-size</td>
     <td></td>
     <td>$font-size-md</td>
     <td></td>
@@ -2722,17 +4870,17 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$treeview-line-height</td>
+    <td>$kendo-treeview-line-height</td>
     <td></td>
-    <td>$line-height-md</td>
-    <td></td>
+    <td>$line-height</td>
+    <td>$line-height-base</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of the treeview component.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$treeview-indent</td>
+    <td>$kendo-treeview-indent</td>
     <td></td>
     <td>16px</td>
     <td>16px</td>
@@ -2742,7 +4890,7 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$treeview-item-padding-x</td>
+    <td>$kendo-treeview-item-padding-x</td>
     <td></td>
     <td>map-get( $spacing, 3 )</td>
     <td>map-get( $spacing, 3 )</td>
@@ -2752,7 +4900,7 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$treeview-item-padding-y</td>
+    <td>$kendo-treeview-item-padding-y</td>
     <td></td>
     <td>map-get( $spacing, 1 )</td>
     <td>map-get( $spacing, 1 )</td>
@@ -2762,7 +4910,7 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$treeview-item-border-width</td>
+    <td>$kendo-treeview-item-border-width</td>
     <td></td>
     <td>0px</td>
     <td>0px</td>
@@ -2772,7 +4920,7 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$treeview-item-border-radius</td>
+    <td>$kendo-treeview-item-border-radius</td>
     <td></td>
     <td>map-get( $spacing, 1 )</td>
     <td>map-get( $spacing, 1 )</td>
@@ -2782,7 +4930,55 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$treeview-bg</td>
+    <td>$kendo-treeview-sizes</td>
+    <td></td>
+    <td>(
+    sm: (
+        font-size: $font-size-md,
+        line-height: $line-height-md,
+        item-padding-x: map-get( $spacing, 3 ),
+        item-padding-y: map-get( $spacing, 1 ) - map-get( $spacing, thin )
+    ),
+    md: (
+        font-size: $font-size-md,
+        line-height: $line-height-md,
+        item-padding-x: map-get( $spacing, 3 ),
+        item-padding-y: map-get( $spacing, 1 )
+    ),
+    lg: (
+        font-size: $font-size-md,
+        line-height: $line-height-md,
+        item-padding-x: map-get( $spacing, 3 ),
+        item-padding-y: map-get( $spacing, 1 ) + map-get( $spacing, thin )
+    )
+)</td>
+    <td>(
+    sm: (
+        font-size: $font-size-md,
+        line-height: $line-height-md,
+        item-padding-x: map-get( $spacing, 3 ),
+        item-padding-y: map-get( $spacing, 1 ) - map-get( $spacing, thin )
+    ),
+    md: (
+        font-size: $font-size-md,
+        line-height: $line-height-md,
+        item-padding-x: map-get( $spacing, 3 ),
+        item-padding-y: map-get( $spacing, 1 )
+    ),
+    lg: (
+        font-size: $font-size-md,
+        line-height: $line-height-md,
+        item-padding-x: map-get( $spacing, 3 ),
+        item-padding-y: map-get( $spacing, 1 ) + map-get( $spacing, thin )
+    )
+)</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes of the treeview.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-treeview-bg</td>
     <td></td>
     <td>null</td>
     <td>null</td>
@@ -2792,7 +4988,7 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$treeview-text</td>
+    <td>$kendo-treeview-text</td>
     <td></td>
     <td>$component-text</td>
     <td></td>
@@ -2802,7 +4998,7 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$treeview-border</td>
+    <td>$kendo-treeview-border</td>
     <td></td>
     <td>null</td>
     <td>null</td>
@@ -2812,7 +5008,7 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$treeview-item-hovered-bg</td>
+    <td>$kendo-treeview-item-hover-bg</td>
     <td></td>
     <td>$hovered-bg</td>
     <td>$gray-200</td>
@@ -2822,7 +5018,7 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$treeview-item-hovered-text</td>
+    <td>$kendo-treeview-item-hover-text</td>
     <td></td>
     <td>$hovered-text</td>
     <td>$base-text</td>
@@ -2832,9 +5028,9 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$treeview-item-hovered-border</td>
+    <td>$kendo-treeview-item-hover-border</td>
     <td></td>
-    <td>$treeview-item-hovered-bg</td>
+    <td>$kendo-treeview-item-hover-bg</td>
     <td>$gray-200</td>
 </tr>
 <tr>
@@ -2842,7 +5038,7 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$treeview-item-hovered-gradient</td>
+    <td>$kendo-treeview-item-hover-gradient</td>
     <td></td>
     <td>null</td>
     <td>null</td>
@@ -2852,7 +5048,7 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$treeview-item-selected-bg</td>
+    <td>$kendo-treeview-item-selected-bg</td>
     <td></td>
     <td>$selected-bg</td>
     <td>$primary</td>
@@ -2862,7 +5058,7 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$treeview-item-selected-text</td>
+    <td>$kendo-treeview-item-selected-text</td>
     <td></td>
     <td>$selected-text</td>
     <td>contrast-wcag( $selected-bg )</td>
@@ -2872,9 +5068,9 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$treeview-item-selected-border</td>
+    <td>$kendo-treeview-item-selected-border</td>
     <td></td>
-    <td>$treeview-item-selected-bg</td>
+    <td>$kendo-treeview-item-selected-bg</td>
     <td>$primary</td>
 </tr>
 <tr>
@@ -2882,7 +5078,7 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$treeview-item-selected-gradient</td>
+    <td>$kendo-treeview-item-selected-gradient</td>
     <td></td>
     <td>null</td>
     <td>null</td>
@@ -2892,17 +5088,17 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$treeview-item-focused-shadow</td>
+    <td>$kendo-treeview-item-focus-shadow</td>
     <td></td>
-    <td>inset 0 0 0 2px rgba( $treeview-text, .15 )</td>
-    <td>inset 0 0 0 2px rgba( $treeview-text, .15 )</td>
+    <td>inset 0 0 0 2px rgba( $kendo-treeview-text, .15 )</td>
+    <td>inset 0 0 0 2px rgba( $kendo-treeview-text, .15 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Box shadow of focused treeview items.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$treeview-loadmore-bg</td>
+    <td>$kendo-treeview-loadmore-bg</td>
     <td></td>
     <td>transparent</td>
     <td>transparent</td>
@@ -2912,7 +5108,7 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$treeview-loadmore-text</td>
+    <td>$kendo-treeview-loadmore-text</td>
     <td></td>
     <td>$link-text</td>
     <td></td>
@@ -2922,7 +5118,7 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$treeview-loadmore-border</td>
+    <td>$kendo-treeview-loadmore-border</td>
     <td></td>
     <td>null</td>
     <td>null</td>
@@ -2932,7 +5128,7 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$treeview-loadmore-hover-bg</td>
+    <td>$kendo-treeview-loadmore-hover-bg</td>
     <td></td>
     <td>transparent</td>
     <td>transparent</td>
@@ -2942,7 +5138,7 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$treeview-loadmore-hover-text</td>
+    <td>$kendo-treeview-loadmore-hover-text</td>
     <td></td>
     <td>$link-hover-text</td>
     <td></td>
@@ -2952,7 +5148,7 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$treeview-loadmore-hover-border</td>
+    <td>$kendo-treeview-loadmore-hover-border</td>
     <td></td>
     <td>null</td>
     <td>null</td>
@@ -2962,7 +5158,7 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$treeview-loadmore-focus-bg</td>
+    <td>$kendo-treeview-loadmore-focus-bg</td>
     <td></td>
     <td>transparent</td>
     <td>transparent</td>
@@ -2972,7 +5168,7 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$treeview-loadmore-focus-text</td>
+    <td>$kendo-treeview-loadmore-focus-text</td>
     <td></td>
     <td>$link-hover-text</td>
     <td></td>
@@ -2982,7 +5178,7 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$treeview-loadmore-focus-border</td>
+    <td>$kendo-treeview-loadmore-focus-border</td>
     <td></td>
     <td>null</td>
     <td>null</td>
@@ -2992,10 +5188,10 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$treeview-loadmore-focus-shadow</td>
+    <td>$kendo-treeview-loadmore-focus-shadow</td>
     <td></td>
-    <td>$treeview-item-focused-shadow</td>
-    <td>inset 0 0 0 2px rgba( $treeview-text, .15 )</td>
+    <td>$kendo-treeview-item-focus-shadow</td>
+    <td>inset 0 0 0 2px rgba( $kendo-treeview-text, .15 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Box shadow of a focused load more.</div></div>
