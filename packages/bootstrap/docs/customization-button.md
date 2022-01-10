@@ -128,8 +128,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$button-hovered-border</td>
     <td></td>
-    <td>try-darken( $button-border, 10% )</td>
-    <td>try-darken( $button-border, 10% )</td>
+    <td>try-darken( $button-bg, 10% )</td>
+    <td>try-darken( $button-bg, 10% )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of hovered buttons.</div></div>
@@ -168,8 +168,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$button-active-border</td>
     <td></td>
-    <td>try-darken( $button-border, 12.5% )</td>
-    <td>try-darken( $button-border, 12.5% )</td>
+    <td>try-darken( $button-bg, 12.5% )</td>
+    <td>try-darken( $button-bg, 12.5% )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of active buttons.</div></div>
@@ -209,7 +209,7 @@ The following table lists the available variables for customization.
     <td>$button-selected-border</td>
     <td></td>
     <td>$button-active-border</td>
-    <td>try-darken( $button-border, 12.5% )</td>
+    <td>try-darken( $button-bg, 12.5% )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of selected buttons.</div></div>
