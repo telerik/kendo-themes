@@ -134,6 +134,21 @@ $primary-button-focused-shadow: 0 0 4px 0 rgba( $primary-button-border, .75 ) !d
 
 $button-group-focus-shadow: null !default;
 
+$solid-button-gradient: $base-gradient !default;
+$solid-button-shade-text-amount: 0 !default;
+$solid-button-shade-bg-amount: 0 !default;
+$solid-button-shade-border-amount: 2 !default;
+$solid-button-hover-shade-text-amount: 0 !default;
+$solid-button-hover-shade-bg-amount: 1 !default;
+$solid-button-hover-shade-border-amount: 3 !default;
+$solid-button-active-shade-text-amount: 0 !default;
+$solid-button-active-shade-bg-amount: 2 !default;
+$solid-button-active-shade-border-amount: 4 !default;
+$solid-button-shadow: true !default;
+$solid-button-shadow-blur: 4px !default;
+$solid-button-shadow-spread: 0px !default;
+$solid-button-shadow-opacity: .75 !default;
+
 $outline-button-shadow-blur: 4px !default;
 $outline-button-shadow-spread: 0px !default;
 $outline-button-shadow-opacity: .75 !default;

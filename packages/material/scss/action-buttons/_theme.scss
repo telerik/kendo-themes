@@ -3,8 +3,7 @@
 @include exports("action-buttons/theme/material") {
 
     .k-actions {
-        .k-button:not(.k-primary),
-        .k-button-secondary {
+        .k-button:not(.k-primary) {
             background-color: try-shade( $button-bg );
         }
     }
