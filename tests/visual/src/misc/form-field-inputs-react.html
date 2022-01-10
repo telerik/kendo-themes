@@ -13,10 +13,10 @@
             padding: 20px;
             border: 1px dashed gray;
         }
-
-        .k-button-increase,
-        .k-button-decrease {
-            position: relative !important;
+        .k-slider-horizontal {
+            width: 100%;
+            --kendo-slider-start: 0;
+            --kendo-slider-end: 50;
         }
     </style>
 </head>
@@ -99,17 +99,34 @@
 
                 <div class="k-form-field">
                     <label class="k-label">Slider:</label>
-                    <div class="k-slider k-widget k-slider-horizontal">
-                        <div class="k-slider-wrap k-slider-buttons" style="display: flex; position: relative; flex-direction: row;">
-                            <button is="Button" class="k-button-decrease" icon="arrow-w" rounded="full"></button>
-                            <div class="k-slider-track-wrap" style="flex-grow: 1; position: relative; touch-action: none; margin-left: 0.5rem; margin-right: 0.5rem;">
-                                <div class="k-slider-track" style="left: 0px; width: 100%;">
-                                    <div class="k-slider-selection" style="width: 53.8574%;"></div>
-                                    <a class="k-draghandle" style="left: calc(53.8574% - 8px); z-index: 1;"></a>
-                                </div>
+                    <div class="k-slider k-slider-horizontal">
+                        <button is="Button" icon="arrow-w" rounded="full" class="k-button-decrease"></button>
+                        <div class="k-slider-track-wrap">
+                            <ul class="k-reset k-slider-items">
+                                <li class="k-tick k-tick-large">
+                                    <span class="k-label">0</span>
+                                </li>
+                                <li class="k-tick"></li>
+                                <li class="k-tick"></li>
+                                <li class="k-tick"></li>
+                                <li class="k-tick"></li>
+                                <li class="k-tick k-tick-large">
+                                    <span class="k-label">5</span>
+                                </li>
+                                <li class="k-tick"></li>
+                                <li class="k-tick"></li>
+                                <li class="k-tick"></li>
+                                <li class="k-tick"></li>
+                                <li class="k-tick k-tick-large">
+                                    <span class="k-label">10</span>
+                                </li>
+                            </ul>
+                            <div class="k-slider-track">
+                                <div class="k-slider-selection"></div>
+                                <a href="#" class="k-draghandle k-draghandle-end"></a>
                             </div>
-                            <button is="Button" class="k-button-increase" icon="arrow-e" rounded="full"></button>
                         </div>
+                        <button is="Button" icon="arrow-e" rounded="full" class="k-button-increase"></button>
                     </div>
                 </div>
 
@@ -256,17 +273,34 @@
                 <div class="k-form-field">
                     <label class="k-label">Slider:</label>
                     <div class="k-form-field-wrap">
-                        <div class="k-slider k-widget k-slider-horizontal">
-                            <div class="k-slider-wrap k-slider-buttons" style="display: flex; position: relative; flex-direction: row;">
-                                <button is="Button" class="k-button-decrease" icon="arrow-w" rounded="full"></button>
-                                <div class="k-slider-track-wrap" style="flex-grow: 1; position: relative; touch-action: none; margin-left: 0.5rem; margin-right: 0.5rem;">
-                                    <div class="k-slider-track" style="left: 0px; width: 100%;">
-                                        <div class="k-slider-selection" style="width: 53.8574%;"></div>
-                                        <a class="k-draghandle" style="left: calc(53.8574% - 8px); z-index: 1;"></a>
-                                    </div>
+                        <div class="k-slider k-slider-horizontal">
+                            <button is="Button" icon="arrow-w" rounded="full" class="k-button-decrease"></button>
+                            <div class="k-slider-track-wrap">
+                                <ul class="k-reset k-slider-items">
+                                    <li class="k-tick k-tick-large">
+                                        <span class="k-label">0</span>
+                                    </li>
+                                    <li class="k-tick"></li>
+                                    <li class="k-tick"></li>
+                                    <li class="k-tick"></li>
+                                    <li class="k-tick"></li>
+                                    <li class="k-tick k-tick-large">
+                                        <span class="k-label">5</span>
+                                    </li>
+                                    <li class="k-tick"></li>
+                                    <li class="k-tick"></li>
+                                    <li class="k-tick"></li>
+                                    <li class="k-tick"></li>
+                                    <li class="k-tick k-tick-large">
+                                        <span class="k-label">10</span>
+                                    </li>
+                                </ul>
+                                <div class="k-slider-track">
+                                    <div class="k-slider-selection"></div>
+                                    <a href="#" class="k-draghandle k-draghandle-end"></a>
                                 </div>
-                                <button is="Button" class="k-button-increase" icon="arrow-e" rounded="full"></button>
                             </div>
+                            <button is="Button" icon="arrow-e" rounded="full" class="k-button-increase"></button>
                         </div>
                     </div>
                 </div>
