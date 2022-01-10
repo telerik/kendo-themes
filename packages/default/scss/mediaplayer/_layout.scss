@@ -62,6 +62,9 @@
         padding: 0 (14px / 2);
         align-items: center;
     }
+    .k-mediaplayer-volume {
+        width: 100px;
+    }
 
 
     // Seekbar
@@ -69,13 +72,17 @@
         width: 100%;
         position: absolute;
         z-index: 3;
-        top: -17px;
+        top: 0;
         left: 0;
+        transform: translateY( -50% );
     }
     .k-mediaplayer-seekbar .k-slider-track {
         // sass-lint:disable no-important
         width: 100% !important;
         // sass-lint:enable no-important
+        border-radius: 0;
+    }
+    .k-mediaplayer-seekbar .k-slider-selection {
         border-radius: 0;
     }
 

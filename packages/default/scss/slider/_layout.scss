@@ -10,41 +10,10 @@
         line-height: $slider-line-height;
         background: none;
         display: inline-flex;
-        align-items: stretch;
+        align-items: center;
         position: relative;
         -webkit-touch-callout: none;
         -webkit-tap-highlight-color: $rgba-transparent;
-
-        .k-button {
-            height: $slider-button-size;
-            line-height: $slider-button-size;
-            margin: 0;
-            min-width: 0;
-            outline: 0;
-            padding: 0;
-            position: absolute;
-            width: $slider-button-size;
-            box-sizing: content-box;
-
-            .k-icon,
-            .k-button-icon {
-                vertical-align: baseline;
-                line-height: $slider-button-size;
-                height: 100%;
-            }
-        }
-
-        .k-button-increase {
-            position: absolute;
-            right: 0;
-            top: 0;
-        }
-
-        .k-button-decrease {
-            position: absolute;
-            left: 0;
-            top: 0;
-        }
 
         .k-label {
             width: auto;
@@ -85,28 +54,18 @@
                 left: auto;
                 right: 0;
             }
-
-            .k-button-increase {
-                left: 0;
-                right: auto;
-            }
-
-            .k-button-decrease {
-                right: 0;
-                left: auto;
-            }
         }
     }
 
 
     // New rendering
     .k-slider {
+        width: min-content;
+        height: min-content;
         gap: calc( #{$slider-draghandle-size} / 2 );
 
         > .k-button {
-            position: relative;
-            flex-shrink: 0;
-            align-self: center;
+            flex: none;
         }
         > .k-slider-track-wrap {
             flex: 1 1 auto;
@@ -123,8 +82,7 @@
                 display: flex;
                 flex-flow: inherit;
                 justify-content: space-between;
-
-                &::after { display: none; }
+                user-select: none;
             }
             .k-tick {
                 flex: 0 0 1px;
@@ -137,6 +95,7 @@
 
         &-horizontal {
             > .k-slider-track-wrap {
+                height: 26px;
 
                 .k-slider-track {
                     width: 100%;
@@ -189,6 +148,7 @@
 
         &-vertical {
             > .k-slider-track-wrap {
+                width: 26px;
 
                 .k-slider-track {
                     height: 100%;
@@ -221,13 +181,7 @@
     // Slider vertical
     .k-slider-vertical {
         height: $slider-size;
-        width: $slider-alt-size;
         flex-flow: column-reverse nowrap;
-
-        .k-button-decrease {
-            bottom: 0;
-            top: auto;
-        }
 
         .k-tick {
             text-align: right;
@@ -240,32 +194,32 @@
 
         // ticks
 
-        .k-tick { background-position: -92px center; }
-        .k-slider-topleft .k-tick { background-position: -122px center; }
-        .k-slider-bottomright .k-tick { background-position: -152px center; }
+        .k-tick { background-position: -94px center; }
+        .k-slider-topleft .k-tick { background-position: -124px center; }
+        .k-slider-bottomright .k-tick { background-position: -154px center; }
 
         .k-tick-large {
             display: flex;
             align-items: center;
-            background-position: -2px center;
+            background-position: -4px center;
         }
 
-        .k-slider-topleft .k-tick-large { background-position: -32px center; }
-        .k-slider-bottomright .k-tick-large { background-position: -62px center; }
+        .k-slider-topleft .k-tick-large { background-position: -34px center; }
+        .k-slider-bottomright .k-tick-large { background-position: -64px center; }
 
-        .k-first { background-position: -92px 100%; }
-        .k-tick-large.k-first { background-position: -2px 100%; }
-        .k-slider-topleft .k-first { background-position: -122px 100%; }
-        .k-slider-topleft .k-tick-large.k-first { background-position: -32px 100%; }
-        .k-slider-bottomright .k-first { background-position: -152px 100%; }
-        .k-slider-bottomright .k-tick-large.k-first { background-position: -62px 100%; }
+        .k-first { background-position: -94px 100%; }
+        .k-tick-large.k-first { background-position: -4px 100%; }
+        .k-slider-topleft .k-first { background-position: -124px 100%; }
+        .k-slider-topleft .k-tick-large.k-first { background-position: -34px 100%; }
+        .k-slider-bottomright .k-first { background-position: -154px 100%; }
+        .k-slider-bottomright .k-tick-large.k-first { background-position: -64px 100%; }
 
-        .k-last { background-position: -92px 0; }
-        .k-tick-large.k-last { background-position: -2px 0; }
-        .k-slider-topleft .k-last { background-position: -122px 0; }
-        .k-slider-topleft .k-tick-large.k-last { background-position: -32px 0; }
-        .k-slider-bottomright .k-last { background-position: -152px 0; }
-        .k-slider-bottomright .k-tick-large.k-last { background-position: -62px 0; }
+        .k-last { background-position: -94px 0; }
+        .k-tick-large.k-last { background-position: -4px 0; }
+        .k-slider-topleft .k-last { background-position: -124px 0; }
+        .k-slider-topleft .k-tick-large.k-last { background-position: -34px 0; }
+        .k-slider-bottomright .k-last { background-position: -154px 0; }
+        .k-slider-bottomright .k-tick-large.k-last { background-position: -64px 0; }
 
         // labels
 
@@ -303,16 +257,8 @@
 
     // Slider horizontal
     .k-slider-horizontal {
-        height: $slider-alt-size;
         width: $slider-size;
         flex-flow: row nowrap;
-
-        // ticks
-        .k-tick {
-            float: left;
-            height: 100%;
-            text-align: center;
-        }
 
         .k-tick { background-position: center -92px; }
         .k-slider-topleft .k-tick { background-position: center -122px; }
@@ -359,20 +305,12 @@
                 right: 0;
                 left: auto;
             }
-            .k-slider-buttons .k-slider-track {
-                right: $slider-button-spacing;
-            }
 
             .k-button .k-i-arrow-e,
             .k-button .k-i-arrow-w {
                 transform: scaleX(-1);
             }
         }
-    }
-
-    .k-slider-wrap {
-        height: 100%;
-        width: 100%;
     }
 
     .k-slider-track,
@@ -396,16 +334,6 @@
         }
     }
 
-    .k-slider-buttons .k-slider-track {
-        .k-slider-horizontal & {
-            left: $slider-button-spacing;
-        }
-
-        .k-slider-vertical & {
-            bottom: $slider-button-spacing;
-        }
-    }
-
 
     .k-draghandle {
         background-color: transparent;
@@ -416,29 +344,9 @@
         position: absolute;
         text-align: center;
         text-decoration: none;
-        box-sizing: content-box;
+        box-sizing: border-box;
         width: $slider-draghandle-size;
         height: $slider-draghandle-size;
-
-        .k-slider-horizontal & {
-            top: 50%;
-            transform: translateY(-50%);
-
-            &:active,
-            &.k-pressed {
-                transform: translateY(-50%) scale($slider-draghandle-active-scale);
-            }
-        }
-
-        .k-slider-vertical & {
-            left: 50%;
-            transform: translateX(-50%);
-
-            &:active,
-            &.k-pressed {
-                transform: translateX(-50%) scale($slider-draghandle-active-scale);
-            }
-        }
 
         .k-slider-transitions.k-slider-horizontal & {
             transition: left $slider-transition-speed $slider-transition-function, background-color $slider-transition-speed $slider-transition-function, transform $slider-draghandle-transition-speed $slider-draghandle-transition-function;
@@ -468,34 +376,18 @@
     }
 
 
-    .k-slider-items {
-        user-select: none;
-
-        .k-slider-buttons & {
-            margin-left: $slider-button-spacing;
-        }
-
-        .k-slider-horizontal & {
-            height: 100%;
-            padding: 2px 0;
-            box-sizing: border-box;
-        }
-
-        .k-slider-vertical & {
-            padding-top: 1px;
-        }
-
-        .k-slider-vertical .k-slider-buttons & {
-            margin: 0;
-            padding-top: $slider-button-spacing;
+    // Slider readonly
+    .k-slider.k-readonly {
+        .k-button,
+        .k-slider-track,
+        .k-tick,
+        .k-draghandle {
+            pointer-events: none;
         }
     }
-    .k-slider-items::after {
-        content: "";
-        display: block;
-        clear: both;
-    }
 
+
+    // Slider tooltip
     .k-slider-tooltip {
         .k-callout-n,
         .k-callout-s {
