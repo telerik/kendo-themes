@@ -24,6 +24,18 @@ $button-line-height-sm: $line-height-sm !default;
 $button-calc-size: calc( #{$button-line-height * 1em} + #{$button-padding-y * 2} + #{$button-border-width * 2} ) !default;
 $button-inner-calc-size: calc( #{$button-line-height * 1em} + #{$button-padding-y * 2} ) !default;
 
+$button-theme-colors: (
+    "secondary": map-get( $theme-colors, secondary ),
+    "tertiary": map-get( $theme-colors, tertiary ),
+    "info": map-get( $theme-colors, info ),
+    "success": map-get( $theme-colors, success ),
+    "warning": map-get( $theme-colors, warning ),
+    "error": map-get( $theme-colors, error ),
+    "dark": map-get( $theme-colors, dark ),
+    "light": map-get( $theme-colors, light ),
+    "inverse": map-get( $theme-colors, inverse )
+) !default;
+
 /// The background of the buttons.
 /// @group button
 $button-bg: $base-bg !default;
