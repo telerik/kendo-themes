@@ -14,7 +14,7 @@ $checkbox-bg: $component-bg !default;
 $checkbox-text: null !default;
 /// Border color of checkbox.
 /// @group checkbox
-$checkbox-border: contrast-wcag( $input-bg, $gray-400, $gray-600 ) !default;
+$checkbox-border: contrast-wcag( $checkbox-bg, $gray-400, $gray-600 ) !default;
 
 /// Background color of hovered checkbox.
 /// @group checkbox
