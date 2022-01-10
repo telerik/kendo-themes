@@ -140,8 +140,8 @@
         .k-button-solid.k-button-solid-#{$name} {
             @include fill(
                 contrast-wcag( $color ),
-                try-shade( $color, $solid-button-shade-bg-amount ),
-                try-shade( $color, $solid-button-shade-border-amount )
+                if( $solid-button-shade-bg-amount, try-shade( $color, $solid-button-shade-bg-amount ), null ),
+                if( $solid-button-shade-border-amount, try-shade( $color, $solid-button-shade-border-amount ), null ),
                 $solid-button-gradient
             );
 
@@ -150,8 +150,8 @@
             &.k-state-hover {
                 @include fill(
                     null,
-                    try-shade( $color, $solid-button-hover-shade-bg-amount ),
-                    try-shade( $color, $solid-button-hover-shade-border-amount )
+                    if( $solid-button-hover-shade-bg-amount, try-shade( $color, $solid-button-hover-shade-bg-amount ), null ),
+                    if( $solid-button-hover-shade-border-amount, try-shade( $color, $solid-button-hover-shade-border-amount ), null )
                 );
             }
 
@@ -168,8 +168,8 @@
             &.k-state-active {
                 @include fill(
                     null,
-                    try-shade( $color, $solid-button-active-shade-bg-amount ),
-                    try-shade( $color, $solid-button-active-shade-border-amount )
+                    if( $solid-button-active-shade-bg-amount, try-shade( $color, $solid-button-active-shade-bg-amount ), null ),
+                    if( $solid-button-active-shade-border-amount, try-shade( $color, $solid-button-active-shade-border-amount ), null )
                 );
             }
 
@@ -177,8 +177,8 @@
             &.k-state-selected {
                 @include fill(
                     null,
-                    try-shade( $color, $solid-button-active-shade-bg-amount ),
-                    try-shade( $color, $solid-button-active-shade-border-amount )
+                    if( $solid-button-active-shade-bg-amount, try-shade( $color, $solid-button-active-shade-bg-amount ), null ),
+                    if( $solid-button-active-shade-border-amount, try-shade( $color, $solid-button-active-shade-border-amount ), null )
                 );
             }
         }
@@ -239,7 +239,9 @@
         &:focus,
         &.k-state-focus,
         &.k-state-focused {
-            box-shadow: 0 0 $outline-button-shadow-blur $outline-button-shadow-spread rgba( $button-text, $outline-button-shadow-opacity );
+            @if ($outline-button-shadow) {
+                box-shadow: 0 0 $outline-button-shadow-blur $outline-button-shadow-spread rgba( $button-text, $outline-button-shadow-opacity );
+            }
         }
 
         // Active state
@@ -281,7 +283,9 @@
         &:focus,
         &.k-state-focus,
         &.k-state-focused {
-            box-shadow: 0 0 $outline-button-shadow-blur $outline-button-shadow-spread rgba( $primary, $outline-button-shadow-opacity );
+            @if ($outline-button-shadow) {
+                box-shadow: 0 0 $outline-button-shadow-blur $outline-button-shadow-spread rgba( $primary, $outline-button-shadow-opacity );
+            }
         }
 
         // Active state
@@ -327,7 +331,9 @@
             &:focus,
             &.k-state-focus,
             &.k-state-focused {
-                box-shadow: 0 0 $outline-button-shadow-blur $outline-button-shadow-spread rgba( $color, $outline-button-shadow-opacity );
+                @if ($outline-button-shadow) {
+                    box-shadow: 0 0 $outline-button-shadow-blur $outline-button-shadow-spread rgba( $color, $outline-button-shadow-opacity );
+                }
             }
 
             // Active state
@@ -420,44 +426,7 @@
 
 @include exports( "link-button/theme" ) {
 
-    .k-button-link.k-button-link-base {
-        @include box-shadow( none );
-        color: $base-text;
-
-        &:hover,
-        &.k-state-hover {
-            color: try-shade( $base-text, 2 );
-        }
-        &:focus,
-        &.k-state-focus {
-            box-shadow: 0 0 $link-button-shadow-blur $link-button-shadow-spread rgba( $base-text, $link-button-shadow-opacity );
-        }
-        &:active,
-        &.k-state-active,
-        &.k-state-selected {
-            color: try-shade( $base-text, 2 );
-        }
-    }
-    .k-button-link.k-button-link-primary {
-        @include box-shadow( none );
-        color: $primary;
-
-        &:hover,
-        &.k-state-hover {
-            color: try-shade( $primary, 2 );
-        }
-        &:focus,
-        &.k-state-focus {
-            box-shadow: 0 0 $link-button-shadow-blur $link-button-shadow-spread rgba( $primary, $link-button-shadow-opacity );
-        }
-        &:active,
-        &.k-state-active,
-        &.k-state-selected {
-            color: try-shade( $primary, 2 );
-        }
-    }
-
-    @each $name, $color in $button-theme-colors {
+    @each $name, $color in map-merge( $button-theme-colors, ( "base": $base-text, "primary": $primary ) ) {
         .k-button-link.k-button-link-#{$name} {
             @include box-shadow( none );
             color: $color;
@@ -468,7 +437,9 @@
             }
             &:focus,
             &.k-state-focus {
-                box-shadow: 0 0 $link-button-shadow-blur $link-button-shadow-spread rgba( $color, $link-button-shadow-opacity );
+                @if ($link-button-shadow) {
+                    box-shadow: 0 0 $link-button-shadow-blur $link-button-shadow-spread rgba( $color, $link-button-shadow-opacity );
+                }
             }
             &:active,
             &.k-state-active,
