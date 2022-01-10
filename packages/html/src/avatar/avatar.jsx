@@ -48,10 +48,11 @@ function AvatarStatic(props) {
             ownClassName,
             'k-avatar',
             `k-avatar-${themeColor}`,
-            {
-                'k-avatar-circle': rounded === 'full',
-                'k-avatar-rounded': rounded !== 'full' && rounded !== null
-            },
+            styles.roundedClass( rounded ),
+            // {
+            //     'k-avatar-circle': rounded === 'full',
+            //     'k-avatar-rounded': rounded !== 'full' && rounded !== null
+            // },
             styles.sizeClass( size, 'k-avatar' ),
             styles.fillModeClass( fillMode, 'k-avatar' ),
             styles.borderedClass( bordered, 'k-avatar' ),
