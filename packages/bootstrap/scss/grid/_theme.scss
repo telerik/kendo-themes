@@ -82,12 +82,6 @@
                 @include fill( $bg: $grid-sticky-selected-alt-bg );
             }
 
-            // Hovered state
-            .k-state-hover td,
-            tr:hover td {
-                @include fill( $bg: $grid-sticky-hovered-bg );
-            }
-
             // Selected hover
             .k-state-selected:hover td,
             .k-state-selected.k-state-hover td {
