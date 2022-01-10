@@ -737,6 +737,7 @@
 
         > span,
         .k-filtercell-wrapper {
+            width: 100%;
             display: flex;
             flex-flow: row nowrap;
             align-items: center;
@@ -748,6 +749,16 @@
             }
         }
 
+        .k-input,
+        .k-picker {
+            width: auto;
+            flex: 1 1 auto;
+        }
+        .k-color-picker,
+        .k-dropdown-operator {
+            width: min-content;
+            flex: none;
+        }
     }
 
     // Grid content
