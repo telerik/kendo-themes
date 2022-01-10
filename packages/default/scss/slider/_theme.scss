@@ -65,12 +65,6 @@
         &.k-state-disabled {
             opacity: $slider-disabled-opacity;
         }
-
-        .k-slider-wrap {
-            &:focus {
-                outline: none;
-            }
-        }
     }
 
     .k-slider-horizontal .k-tick {
