@@ -163,17 +163,11 @@
     }
 
     .k-button-group-stretched {
-        display: flex;
+        width: 100%;
 
-        .k-button {
-            display: inline-block;
+        > * {
             flex: 1 0 0%;
             overflow: hidden;
-            text-overflow: ellipsis;
-
-            > .k-icon {
-                vertical-align: text-bottom;
-            }
         }
     }
 
