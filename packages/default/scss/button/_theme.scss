@@ -176,62 +176,133 @@
         @include box-shadow( none );
         border-color: currentColor;
         color: $button-text;
-        background: none;
+        background-color: transparent;
 
         // Hover state
         &:hover,
         &.k-state-hover {
-            @include fill( contrast-wcag( $button-text ), $button-text, $button-text, none );
+            @include fill(
+                contrast-wcag( $button-text ),
+                $button-text,
+                $button-text
+            );
         }
 
         // Focused state
         &:focus,
         &.k-state-focus,
         &.k-state-focused {
-            box-shadow: $button-focused-shadow;
+            box-shadow: 0 0 $outline-button-shadow-blur $outline-button-shadow-spread rgba( $button-text, $outline-button-shadow-opacity );
         }
 
         // Active state
         &:active,
         &.k-state-active {
-            @include fill( contrast-wcag( $button-text ), $button-text, $button-text, none );
+            @include fill(
+                contrast-wcag( $button-text ),
+                $button-text,
+                $button-text
+            );
         }
 
         // Selected state
         &.k-state-selected {
-            @include fill( contrast-wcag( $button-text ), $button-text, $button-text, none );
+            @include fill(
+                contrast-wcag( $button-text ),
+                $button-text,
+                $button-text
+            );
         }
     }
     .k-button-outline.k-primary {
         border-color: currentColor;
-        color: $primary-button-bg;
+        color: $primary;
         background: none;
         box-shadow: none;
 
         // Hover state
         &:hover,
         &.k-state-hover {
-            @include fill( contrast-wcag( $primary-button-bg ), $primary-button-bg, $primary-button-bg, none );
+            @include fill(
+                contrast-wcag( $primary ),
+                $primary,
+                $primary
+            );
         }
 
         // Focused state
         &:focus,
         &.k-state-focus,
         &.k-state-focused {
-            box-shadow: $primary-button-focused-shadow;
+            box-shadow: 0 0 $outline-button-shadow-blur $outline-button-shadow-spread rgba( $primary, $outline-button-shadow-opacity );
         }
 
-        // Actove state
+        // Active state
         &:active,
         &.k-state-active {
-            @include fill( contrast-wcag( $primary-button-bg ), $primary-button-bg, $primary-button-bg, none );
+            @include fill(
+                contrast-wcag( $primary ),
+                $primary,
+                $primary
+            );
             box-shadow: none;
         }
 
         // Selected state
         &.k-state-selected {
-            @include fill( contrast-wcag( $primary-button-bg ), $primary-button-bg, $primary-button-bg, none );
+            @include fill(
+                contrast-wcag( $primary ),
+                $primary,
+                $primary
+            );
             box-shadow: none;
+        }
+    }
+
+    @each $name, $color in $button-theme-colors {
+        .k-button-outline.k-button-outline-#{$name} {
+            @include box-shadow( none );
+            border-color: currentColor;
+            color: $color;
+            background-color: transparent;
+
+            // Hover state
+            &:hover,
+            &.k-state-hover {
+                @include fill(
+                    contrast-wcag( $color ),
+                    $color,
+                    $color
+                );
+            }
+
+            // Focused state
+            &:focus,
+            &.k-state-focus,
+            &.k-state-focused {
+                box-shadow: 0 0 $outline-button-shadow-blur $outline-button-shadow-spread rgba( $color, $outline-button-shadow-opacity );
+            }
+
+            // Active state
+            &:active,
+            &.k-state-active {
+                @include fill(
+                    contrast-wcag( $color ),
+                    $color,
+                    $color
+                );
+                box-shadow: none;
+            }
+
+            // Selected state
+            &.k-state-selected {
+                @include fill(
+                    contrast-wcag( $color ),
+                    $color,
+                    $color
+                );
+                box-shadow: none;
+            }
         }
     }
 

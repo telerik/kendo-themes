@@ -59,6 +59,28 @@
         }
     }
 
+    @each $name, $color in $button-theme-colors {
+        .k-button-outline.k-button-outline-#{$name} {
+            @include box-shadow( none );
+            color: $color;
+
+            &:hover,
+            &.k-state-hover,
+            &:active,
+            &.k-state-active,
+            &.k-state-selected,
+            &:focus,
+            &.k-state-focus {
+                color: $color;
+            }
+
+            &:disabled,
+            &.k-state-disabled {
+                color: $button-disabled-text;
+            }
+        }
+    }
+
 
     // Clear button
     .k-button-clear,

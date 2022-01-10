@@ -256,7 +256,8 @@
     .k-button-outline {
         @include box-shadow( none );
         color: inherit;
-        background: none;
+        background-color: transparent;
+        background-image: none !important; // sass-lint:disable-line no-important
     }
     .k-button.k-outline {
         @extend .k-button-outline;

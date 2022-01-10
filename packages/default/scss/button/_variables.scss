@@ -134,6 +134,10 @@ $primary-button-focused-shadow: 0 0 0 2px rgba( $primary-button-border, .3 ) !de
 
 $button-group-focus-shadow: inset 0 0 0 2px rgba( $button-border, opacity( $button-border ) * 2 ) !default;
 
+$outline-button-shadow-blur: 0px !default;
+$outline-button-shadow-spread: 2px !default;
+$outline-button-shadow-opacity: .3 !default;
+
 $flat-button-hover-opacity: .04 !default;
 $flat-button-focus-opacity: null !default;
 $flat-button-active-opacity: .16 !default;
