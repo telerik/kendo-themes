@@ -82,6 +82,16 @@
     }
 
 
+    // Link button
+    .k-button.k-button-link {
+
+        &:disabled,
+        &.k-state-disabled {
+            color: $button-disabled-text;
+        }
+    }
+
+
     // Clear button
     .k-button-clear,
     .k-button.k-clear {
