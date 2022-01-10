@@ -134,6 +134,10 @@ $primary-button-focused-shadow: null !default;
 
 $button-group-focus-shadow: null !default;
 
+$outline-button-shadow-blur: 0px !default;
+$outline-button-shadow-spread: 0px !default;
+$outline-button-shadow-opacity: 0 !default;
+
 $flat-button-hover-opacity: .08 !default;
 $flat-button-focus-opacity: .12 !default;
 $flat-button-active-opacity: .16 !default;
