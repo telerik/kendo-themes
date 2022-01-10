@@ -69,8 +69,8 @@ const metrics = { // eslint-disable-line no-unused-vars
             "height": 30
         },
         "handle": {
-            "width": 16,
-            "height": 16
+            "width": 14,
+            "height": 14
         },
         "track": {
             "height": 4
