@@ -38,6 +38,10 @@
         flex: none;
         overflow: hidden;
         text-overflow: ellipsis;
+        cursor: pointer;
+    }
+    .k-list-optionlabel {
+        @extend .k-list-group-sticky-header;
     }
 
 
@@ -90,9 +94,6 @@
             left: 0;
             right: 0;
         }
-    }
-    .k-list-optionlabel {
-        @extend .k-list-item;
     }
 
 
