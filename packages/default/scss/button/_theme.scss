@@ -1,6 +1,6 @@
 @include exports( "button/theme" ) {
 
-    // Default button
+    // Solid button
     .k-button {
         @include fill(
             $button-text,
@@ -136,12 +136,14 @@
         @extend .k-button-primary;
     }
 
+    $_shade-fn: get-function( $solid-button-shade-function );
+
     @each $name, $color in $button-theme-colors {
         .k-button-solid.k-button-solid-#{$name} {
             @include fill(
                 contrast-wcag( $color ),
-                if( $solid-button-shade-bg-amount, try-shade( $color, $solid-button-shade-bg-amount ), null ),
-                if( $solid-button-shade-border-amount, try-shade( $color, $solid-button-shade-border-amount ), null ),
+                if( $solid-button-shade-bg-amount, call( $_shade-fn, $color, $solid-button-shade-bg-amount ), null ),
+                if( $solid-button-shade-border-amount, call( $_shade-fn, $color, $solid-button-shade-border-amount ), null ),
                 $solid-button-gradient
             );
 
@@ -150,8 +152,8 @@
             &.k-state-hover {
                 @include fill(
                     null,
-                    if( $solid-button-hover-shade-bg-amount, try-shade( $color, $solid-button-hover-shade-bg-amount ), null ),
-                    if( $solid-button-hover-shade-border-amount, try-shade( $color, $solid-button-hover-shade-border-amount ), null )
+                    if( $solid-button-hover-shade-bg-amount, call( $_shade-fn, $color, $solid-button-hover-shade-bg-amount ), null ),
+                    if( $solid-button-hover-shade-border-amount, call( $_shade-fn, $color, $solid-button-hover-shade-border-amount ), null )
                 );
             }
 
@@ -168,8 +170,8 @@
             &.k-state-active {
                 @include fill(
                     null,
-                    if( $solid-button-active-shade-bg-amount, try-shade( $color, $solid-button-active-shade-bg-amount ), null ),
-                    if( $solid-button-active-shade-border-amount, try-shade( $color, $solid-button-active-shade-border-amount ), null )
+                    if( $solid-button-active-shade-bg-amount, call( $_shade-fn, $color, $solid-button-active-shade-bg-amount ), null ),
+                    if( $solid-button-active-shade-border-amount, call( $_shade-fn, $color, $solid-button-active-shade-border-amount ), null )
                 );
             }
 
@@ -177,8 +179,8 @@
             &.k-state-selected {
                 @include fill(
                     null,
-                    if( $solid-button-active-shade-bg-amount, try-shade( $color, $solid-button-active-shade-bg-amount ), null ),
-                    if( $solid-button-active-shade-border-amount, try-shade( $color, $solid-button-active-shade-border-amount ), null )
+                    if( $solid-button-active-shade-bg-amount, call( $_shade-fn, $color, $solid-button-active-shade-bg-amount ), null ),
+                    if( $solid-button-active-shade-border-amount, call( $_shade-fn, $color, $solid-button-active-shade-border-amount ), null )
                 );
             }
         }

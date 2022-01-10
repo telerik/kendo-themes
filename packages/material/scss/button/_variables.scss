@@ -135,6 +135,7 @@ $primary-button-focused-shadow: null !default;
 $button-group-focus-shadow: null !default;
 
 $solid-button-gradient: null !default;
+$solid-button-shade-function: "try-shade";
 $solid-button-shade-text-amount: null !default;
 $solid-button-shade-bg-amount: 0 !default;
 $solid-button-shade-border-amount: 0 !default;
