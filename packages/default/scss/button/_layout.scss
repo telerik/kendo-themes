@@ -264,6 +264,21 @@
     }
 
 
+    // Link button
+    .k-button-link {
+        @include box-shadow( none );
+        border-color: transparent !important; // sass-lint:disable-line no-important
+        color: inherit;
+        background-color: transparent !important; // sass-lint:disable-line no-important
+        background-image: none !important; // sass-lint:disable-line no-important
+        text-decoration: none;
+    }
+    .k-button-link:hover,
+    .k-button-link.k-state-hover {
+        text-decoration: underline;
+    }
+
+
     // Clear button
     .k-button-clear {
         border-color: transparent !important; // sass-lint:disable-line no-important

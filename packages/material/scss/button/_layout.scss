@@ -38,6 +38,28 @@
     }
 
 
+    // Link button
+    .k-button.k-button-link {
+
+        &:hover,
+        &.k-state-hover,
+        &:active,
+        &.k-state-active,
+        &.k-state-selected {
+            &::before {
+                opacity: 0;
+            }
+        }
+
+        &:focus,
+        &.k-state-focus {
+            &::before {
+                opacity: $flat-button-focus-opacity;
+            }
+        }
+    }
+
+
     // Clear button
     .k-button-clear,
     .k-button.k-clear {
