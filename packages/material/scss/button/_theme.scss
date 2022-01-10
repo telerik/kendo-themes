@@ -2,6 +2,21 @@
 
 @include exports( "button/theme/material" ) {
 
+    // Solid button
+    @each $name, $color in $button-theme-colors {
+        .k-button-solid.k-button-solid-#{$name} {
+
+            &:disabled,
+            &.k-state-disabled {
+                @include fill(
+                    $button-disabled-text,
+                    $button-disabled-bg,
+                    $button-disabled-border
+                );
+            }
+        }
+    }
+
     // Flat button
     .k-button-flat {
 

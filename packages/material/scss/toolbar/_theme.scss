@@ -4,13 +4,11 @@
 
     .k-toolbar {
 
-        .k-button,
-        .k-button-secondary {
+        .k-button {
             background-color: try-shade( $button-bg );
         }
 
-        .k-button-primary,
-        .k-button.k-primary {
+        .k-button-primary {
             background-color: $primary-button-bg;
 
             &:disabled,

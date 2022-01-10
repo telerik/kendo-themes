@@ -1,8 +1,7 @@
 @include exports( "button/theme" ) {
 
     // Default button
-    .k-button,
-    .k-button-secondary {
+    .k-button {
         @include fill(
             $button-text,
             $button-bg,
@@ -78,7 +77,7 @@
         );
         @include box-shadow( $primary-button-shadow );
 
-        // Hovoer state
+        // Hover state
         &:hover,
         &.k-state-hover {
             @include fill(
@@ -135,6 +134,54 @@
     }
     .k-button.k-primary {
         @extend .k-button-primary;
+    }
+
+    @each $name, $color in $button-theme-colors {
+        .k-button-solid.k-button-solid-#{$name} {
+            @include fill(
+                contrast-wcag( $color ),
+                try-shade( $color, $solid-button-shade-bg-amount ),
+                try-shade( $color, $solid-button-shade-border-amount )
+                $solid-button-gradient
+            );
+
+            // Hover state
+            &:hover,
+            &.k-state-hover {
+                @include fill(
+                    null,
+                    try-shade( $color, $solid-button-hover-shade-bg-amount ),
+                    try-shade( $color, $solid-button-hover-shade-border-amount )
+                );
+            }
+
+            // Focus state
+            &:focus,
+            &.k-state-focus {
+                @if ( $solid-button-shadow ) {
+                    box-shadow: 0 0 $solid-button-shadow-blur $solid-button-shadow-spread rgba( $color, $solid-button-shadow-opacity );
+                }
+            }
+
+            // Active state
+            &:active,
+            &.k-state-active {
+                @include fill(
+                    null,
+                    try-shade( $color, $solid-button-active-shade-bg-amount ),
+                    try-shade( $color, $solid-button-active-shade-border-amount )
+                );
+            }
+
+            // Selected
+            &.k-state-selected {
+                @include fill(
+                    null,
+                    try-shade( $color, $solid-button-active-shade-bg-amount ),
+                    try-shade( $color, $solid-button-active-shade-border-amount )
+                );
+            }
+        }
     }
 
 
