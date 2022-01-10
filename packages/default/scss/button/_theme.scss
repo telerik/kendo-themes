@@ -268,6 +268,33 @@
         }
     }
 
+    @each $name, $color in $button-theme-colors {
+        .k-button-flat.k-button-flat-#{$name} {
+
+            &,
+            &:hover,
+            &.k-state-hover,
+            &:active,
+            &.k-state-active,
+            &:focus,
+            &.k-state-focus {
+                color: $color;
+            }
+
+            // Disabled state
+            &:disabled,
+            &.k-state-disabled {
+                @include fill(
+                    $button-disabled-text,
+                    $button-disabled-bg,
+                    $button-disabled-border,
+                    $button-disabled-gradient
+                );
+                @include box-shadow( $button-disabled-shadow );
+            }
+        }
+    }
+
 }
 
 
