@@ -28,8 +28,17 @@ The following table lists the available variables for customization.
         <tr>
     <td>$input-bg</td>
     <td></td>
-    <td>$component-bg</td>
-    <td></td>
+<td>
+
+
+`$component-bg`
+
+</td>
+<td>
+
+
+
+</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the input.</div></div>
@@ -38,8 +47,17 @@ The following table lists the available variables for customization.
 <tr>
     <td>$input-text</td>
     <td></td>
-    <td>$component-text</td>
-    <td></td>
+<td>
+
+
+`$component-text`
+
+</td>
+<td>
+
+
+
+</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the input.</div></div>
@@ -48,8 +66,17 @@ The following table lists the available variables for customization.
 <tr>
     <td>$input-border</td>
     <td></td>
-    <td>$component-border</td>
-    <td>rgba( black, .08 )</td>
+<td>
+
+
+`$component-border`
+
+</td>
+<td>
+
+`rgba( black, .08 )`
+
+</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the input.</div></div>
@@ -58,8 +85,17 @@ The following table lists the available variables for customization.
 <tr>
     <td>$input-hover-bg</td>
     <td></td>
-    <td>$input-bg</td>
-    <td></td>
+<td>
+
+
+`$input-bg`
+
+</td>
+<td>
+
+
+
+</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of hovered input.</div></div>
@@ -68,8 +104,17 @@ The following table lists the available variables for customization.
 <tr>
     <td>$input-hover-text</td>
     <td></td>
-    <td>$input-text</td>
-    <td></td>
+<td>
+
+
+`$input-text`
+
+</td>
+<td>
+
+
+
+</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of hovered input.</div></div>
@@ -78,8 +123,17 @@ The following table lists the available variables for customization.
 <tr>
     <td>$input-hover-border</td>
     <td></td>
-    <td>try-shade( $input-border, 1 )</td>
-    <td>try-shade( $input-border, 1 )</td>
+<td>
+
+
+`try-shade( $input-border, 1 )`
+
+</td>
+<td>
+
+`try-shade( $input-border, 1 )`
+
+</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of hovered input.</div></div>
@@ -88,8 +142,17 @@ The following table lists the available variables for customization.
 <tr>
     <td>$input-focus-bg</td>
     <td></td>
-    <td>$input-hover-bg</td>
-    <td></td>
+<td>
+
+
+`$input-hover-bg`
+
+</td>
+<td>
+
+
+
+</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of focus input.</div></div>
@@ -98,8 +161,17 @@ The following table lists the available variables for customization.
 <tr>
     <td>$input-focus-text</td>
     <td></td>
-    <td>$input-hover-text</td>
-    <td></td>
+<td>
+
+
+`$input-hover-text`
+
+</td>
+<td>
+
+
+
+</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of focus input.</div></div>
@@ -108,8 +180,17 @@ The following table lists the available variables for customization.
 <tr>
     <td>$input-focus-border</td>
     <td></td>
-    <td>$input-hover-border</td>
-    <td>try-shade( $input-border, 1 )</td>
+<td>
+
+
+`$input-hover-border`
+
+</td>
+<td>
+
+`try-shade( $input-border, 1 )`
+
+</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of focus input.</div></div>

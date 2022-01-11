@@ -28,8 +28,17 @@ The following table lists the available variables for customization.
         <tr>
     <td>$border-radius</td>
     <td></td>
-    <td>$border-radius</td>
-    <td>$border-radius</td>
+<td>
+
+
+`$border-radius`
+
+</td>
+<td>
+
+`$border-radius`
+
+</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border radius for all components.</div></div>
@@ -38,8 +47,17 @@ The following table lists the available variables for customization.
 <tr>
     <td>$base-bg</td>
     <td></td>
-    <td>$gray-100</td>
-    <td></td>
+<td>
+
+
+`$gray-100`
+
+</td>
+<td>
+
+
+
+</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the components' chrome area.</div></div>
@@ -48,8 +66,17 @@ The following table lists the available variables for customization.
 <tr>
     <td>$base-text</td>
     <td></td>
-    <td>$body-text</td>
-    <td></td>
+<td>
+
+
+`$body-text`
+
+</td>
+<td>
+
+
+
+</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the components' chrome area.</div></div>
@@ -58,8 +85,17 @@ The following table lists the available variables for customization.
 <tr>
     <td>$base-border</td>
     <td></td>
-    <td>try-shade( $base-bg, 1 )</td>
-    <td>try-shade( $base-bg, 1 )</td>
+<td>
+
+
+`try-shade( $base-bg, 1 )`
+
+</td>
+<td>
+
+`try-shade( $base-bg, 1 )`
+
+</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the components' chrome area.</div></div>
@@ -68,8 +104,17 @@ The following table lists the available variables for customization.
 <tr>
     <td>$base-gradient</td>
     <td></td>
-    <td>null</td>
-    <td>null</td>
+<td>
+
+
+`null`
+
+</td>
+<td>
+
+`null`
+
+</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient background of the components' chrome area.</div></div>
@@ -78,8 +123,17 @@ The following table lists the available variables for customization.
 <tr>
     <td>$hovered-bg</td>
     <td></td>
-    <td>$gray-200</td>
-    <td></td>
+<td>
+
+
+`$gray-200`
+
+</td>
+<td>
+
+
+
+</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of hovered items.</div></div>
@@ -88,8 +142,17 @@ The following table lists the available variables for customization.
 <tr>
     <td>$hovered-text</td>
     <td></td>
-    <td>$base-text</td>
-    <td></td>
+<td>
+
+
+`$base-text`
+
+</td>
+<td>
+
+
+
+</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of hovered items.</div></div>
@@ -98,8 +161,17 @@ The following table lists the available variables for customization.
 <tr>
     <td>$hovered-border</td>
     <td></td>
-    <td>try-shade( $hovered-bg, 1 )</td>
-    <td>try-shade( $hovered-bg, 1 )</td>
+<td>
+
+
+`try-shade( $hovered-bg, 1 )`
+
+</td>
+<td>
+
+`try-shade( $hovered-bg, 1 )`
+
+</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of hovered items.</div></div>
@@ -108,8 +180,17 @@ The following table lists the available variables for customization.
 <tr>
     <td>$hovered-gradient</td>
     <td></td>
-    <td>null</td>
-    <td>null</td>
+<td>
+
+
+`null`
+
+</td>
+<td>
+
+`null`
+
+</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient background of hovered items.</div></div>
@@ -118,8 +199,17 @@ The following table lists the available variables for customization.
 <tr>
     <td>$selected-bg</td>
     <td></td>
-    <td>$primary</td>
-    <td>$primary</td>
+<td>
+
+
+`$primary`
+
+</td>
+<td>
+
+`$primary`
+
+</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of selected items.</div></div>
@@ -128,8 +218,17 @@ The following table lists the available variables for customization.
 <tr>
     <td>$selected-text</td>
     <td></td>
-    <td>contrast-wcag( $selected-bg )</td>
-    <td>contrast-wcag( $selected-bg )</td>
+<td>
+
+
+`contrast-wcag( $selected-bg )`
+
+</td>
+<td>
+
+`contrast-wcag( $selected-bg )`
+
+</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of selected items.</div></div>
@@ -138,8 +237,17 @@ The following table lists the available variables for customization.
 <tr>
     <td>$selected-border</td>
     <td></td>
-    <td>try-shade( $selected-bg, 1 )</td>
-    <td>try-shade( $selected-bg, 1 )</td>
+<td>
+
+
+`try-shade( $selected-bg, 1 )`
+
+</td>
+<td>
+
+`try-shade( $selected-bg, 1 )`
+
+</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of selected items.</div></div>
@@ -148,8 +256,17 @@ The following table lists the available variables for customization.
 <tr>
     <td>$selected-gradient</td>
     <td></td>
-    <td>null</td>
-    <td>null</td>
+<td>
+
+
+`null`
+
+</td>
+<td>
+
+`null`
+
+</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient background of selected items.</div></div>

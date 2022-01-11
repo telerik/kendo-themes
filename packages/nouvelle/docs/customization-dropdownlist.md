@@ -28,8 +28,17 @@ The following table lists the available variables for customization.
         <tr>
     <td>$dropdownlist-bg</td>
     <td></td>
-    <td>$button-bg</td>
-    <td><span class="color-preview" style="background-color: #f6f6f6"></span>#f6f6f6</td>
+<td>
+
+
+`$button-bg`
+
+</td>
+<td><span class="color-preview" style="background-color: #f6f6f6"></span>
+
+`#f6f6f6`
+
+</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the dropdownlist.</div></div>
@@ -38,8 +47,17 @@ The following table lists the available variables for customization.
 <tr>
     <td>$dropdownlist-text</td>
     <td></td>
-    <td>$button-text</td>
-    <td><span class="color-preview" style="background-color: #656565"></span>#656565</td>
+<td>
+
+
+`$button-text`
+
+</td>
+<td><span class="color-preview" style="background-color: #656565"></span>
+
+`#656565`
+
+</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the dropdownlist.</div></div>
@@ -48,8 +66,17 @@ The following table lists the available variables for customization.
 <tr>
     <td>$dropdownlist-border</td>
     <td></td>
-    <td>$button-border</td>
-    <td>rgba( black, .08 )</td>
+<td>
+
+
+`$button-border`
+
+</td>
+<td>
+
+`rgba( black, .08 )`
+
+</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the dropdownlist.</div></div>
@@ -58,8 +85,17 @@ The following table lists the available variables for customization.
 <tr>
     <td>$dropdownlist-hover-bg</td>
     <td></td>
-    <td>$button-hover-bg</td>
-    <td>try-shade( $button-bg, .5 )</td>
+<td>
+
+
+`$button-hover-bg`
+
+</td>
+<td>
+
+`try-shade( $button-bg, .5 )`
+
+</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of hovered dropdownlist.</div></div>
@@ -68,8 +104,17 @@ The following table lists the available variables for customization.
 <tr>
     <td>$dropdownlist-hover-text</td>
     <td></td>
-    <td>$button-hover-text</td>
-    <td><span class="color-preview" style="background-color: #656565"></span>#656565</td>
+<td>
+
+
+`$button-hover-text`
+
+</td>
+<td><span class="color-preview" style="background-color: #656565"></span>
+
+`#656565`
+
+</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of hovered dropdownlist.</div></div>
@@ -78,8 +123,17 @@ The following table lists the available variables for customization.
 <tr>
     <td>$dropdownlist-hover-border</td>
     <td></td>
-    <td>$button-hover-border</td>
-    <td>rgba( black, .08 )</td>
+<td>
+
+
+`$button-hover-border`
+
+</td>
+<td>
+
+`rgba( black, .08 )`
+
+</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of hovered dropdownlist.</div></div>
@@ -88,8 +142,17 @@ The following table lists the available variables for customization.
 <tr>
     <td>$dropdownlist-focus-text</td>
     <td></td>
-    <td>$button-active-text</td>
-    <td><span class="color-preview" style="background-color: #656565"></span>#656565</td>
+<td>
+
+
+`$button-active-text`
+
+</td>
+<td><span class="color-preview" style="background-color: #656565"></span>
+
+`#656565`
+
+</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of focus dropdownlist.</div></div>
@@ -98,8 +161,17 @@ The following table lists the available variables for customization.
 <tr>
     <td>$dropdownlist-focus-bg</td>
     <td></td>
-    <td>$button-active-bg</td>
-    <td>try-shade( $button-bg, 1 )</td>
+<td>
+
+
+`$button-active-bg`
+
+</td>
+<td>
+
+`try-shade( $button-bg, 1 )`
+
+</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of focus dropdownlist.</div></div>
@@ -108,8 +180,17 @@ The following table lists the available variables for customization.
 <tr>
     <td>$dropdownlist-focus-border</td>
     <td></td>
-    <td>$button-active-border</td>
-    <td>rgba( black, .08 )</td>
+<td>
+
+
+`$button-active-border`
+
+</td>
+<td>
+
+`rgba( black, .08 )`
+
+</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of focus dropdownlist.</div></div>
