@@ -159,6 +159,14 @@
             border-end-start-radius: 0;
         }
 
+        &:disabled,
+        &[disabled],
+        &.k-disabled,
+        &.k-state-disabled {
+            opacity: 1;
+            filter: none;
+        }
+
     }
 
     .k-button-group-stretched {
