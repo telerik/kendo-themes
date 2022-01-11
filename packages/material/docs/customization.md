@@ -266,7 +266,7 @@ The following table lists the available variables for customizing the Material t
     <td>0px</td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Width of border around buttons</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Width of the border around the button.</div></div>
     </td>
 </tr>
 <tr>
@@ -276,27 +276,109 @@ The following table lists the available variables for customizing the Material t
     <td>2px</td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border radius of buttons</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border radius of the button.</div></div>
     </td>
 </tr>
 <tr>
     <td>$button-padding-x</td>
     <td></td>
-    <td>$padding-x</td>
-    <td></td>
+    <td>map-get( $spacing, 4 )</td>
+    <td>map-get( $spacing, 4 )</td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of buttons</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the button.</div></div>
     </td>
 </tr>
 <tr>
     <td>$button-padding-y</td>
     <td></td>
-    <td>8px</td>
-    <td>8px</td>
+    <td>map-get( $spacing, 2 )</td>
+    <td>map-get( $spacing, 2 )</td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of buttons</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$button-font-family</td>
+    <td></td>
+    <td>$font-family</td>
+    <td>Roboto, "Helvetica Neue", sans-serif</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font family of the button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$button-font-size</td>
+    <td></td>
+    <td>$font-size</td>
+    <td>14px</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$button-line-height</td>
+    <td></td>
+    <td>(20 / 14)</td>
+    <td>(20 / 14)</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height used along with $font-size.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$button-calc-size</td>
+    <td></td>
+    <td>calc( #{$button-line-height * 1em} + #{$button-padding-y * 2} + #{$button-border-width * 2} )</td>
+    <td>calc( #{$button-line-height * 1em} + #{$button-padding-y * 2} + #{$button-border-width * 2} )</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Calculated height of the button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$button-inner-calc-size</td>
+    <td></td>
+    <td>calc( #{$button-line-height * 1em} + #{$button-padding-y * 2} )</td>
+    <td>calc( #{$button-line-height * 1em} + #{$button-padding-y * 2} )</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Calculated inner height of the button. Without the border width.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$button-theme-colors</td>
+    <td></td>
+    <td>(
+    "primary": map-get( $theme-colors, primary ),
+    "secondary": map-get( $theme-colors, secondary ),
+    "tertiary": map-get( $theme-colors, tertiary ),
+    "info": map-get( $theme-colors, info ),
+    "success": map-get( $theme-colors, success ),
+    "warning": map-get( $theme-colors, warning ),
+    "error": map-get( $theme-colors, error ),
+    "dark": map-get( $theme-colors, dark ),
+    "light": map-get( $theme-colors, light ),
+    "inverse": map-get( $theme-colors, inverse )
+)</td>
+    <td>(
+    "primary": map-get( $theme-colors, primary ),
+    "secondary": map-get( $theme-colors, secondary ),
+    "tertiary": map-get( $theme-colors, tertiary ),
+    "info": map-get( $theme-colors, info ),
+    "success": map-get( $theme-colors, success ),
+    "warning": map-get( $theme-colors, warning ),
+    "error": map-get( $theme-colors, error ),
+    "dark": map-get( $theme-colors, dark ),
+    "light": map-get( $theme-colors, light ),
+    "inverse": map-get( $theme-colors, inverse )
+)</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Theme colors map for the button.</div></div>
     </td>
 </tr>
 <tr>
