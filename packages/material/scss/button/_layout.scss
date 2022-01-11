@@ -15,6 +15,14 @@
         &::after {
             display: none !important; // sass-lint:disable-line no-important
         }
+
+        &:disabled,
+        &[disabled],
+        &.k-disabled,
+        &.k-state-disabled {
+            opacity: 1;
+            filter: none;
+        }
     }
 
 
