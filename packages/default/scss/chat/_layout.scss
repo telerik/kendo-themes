@@ -445,10 +445,16 @@
 
         .k-scroll-button {
             height: 100%;
+            aspect-ratio: auto;
             position: absolute;
             z-index: 2;
             top: 50%;
             transform: translateY(-50%);
+
+            .k-button-icon {
+                min-width: auto;
+                min-height: auto;
+            }
         }
         .k-scroll-button-left {
             left: 0;
