@@ -91,7 +91,7 @@ $button-selected-shadow: null !default;
 
 /// The shadow of focused buttons.
 /// @group button
-$button-focused-shadow: 0 0 0 3px rgba( $button-border, .5 ) !default;
+$button-focused-shadow: 0 0 0 .25rem rgba( $button-border, .5 ) !default;
 
 
 // Disabled button
@@ -127,7 +127,7 @@ $primary-button-selected-border: $primary-button-active-border !default;
 $primary-button-selected-gradient: null !default;
 $primary-button-selected-shadow: null !default;
 
-$primary-button-focused-shadow: 0 0 0 3px rgba( $primary-button-border, .5 ) !default;
+$primary-button-focused-shadow: 0 0 0 .25rem rgba( $primary-button-border, .5 ) !default;
 
 $solid-button-gradient: null !default;
 $solid-button-shade-function: "try-darken";
@@ -142,17 +142,17 @@ $solid-button-active-shade-bg-amount: 10% !default;
 $solid-button-active-shade-border-amount: 12.5% !default;
 $solid-button-shadow: true !default;
 $solid-button-shadow-blur: 0px !default;
-$solid-button-shadow-spread: 3px !default;
+$solid-button-shadow-spread: .25rem !default;
 $solid-button-shadow-opacity: .5 !default;
 
 $outline-button-shadow: true !default;
 $outline-button-shadow-blur: 0px !default;
-$outline-button-shadow-spread: 3px !default;
+$outline-button-shadow-spread: .25rem !default;
 $outline-button-shadow-opacity: .5 !default;
 
 $link-button-shadow: true !default;
 $link-button-shadow-blur: 0px !default;
-$link-button-shadow-spread: 3px !default;
+$link-button-shadow-spread: .25rem !default;
 $link-button-shadow-opacity: .5 !default;
 
 $flat-button-hover-opacity: .08 !default;
