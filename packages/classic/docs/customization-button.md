@@ -128,8 +128,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$button-hovered-border</td>
     <td></td>
-    <td>try-shade( $button-hovered-bg, 2 )</td>
-    <td>try-shade( $button-hovered-bg, 2 )</td>
+    <td>try-shade( $button-bg, 3 )</td>
+    <td>try-shade( $button-bg, 3 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of hovered buttons.</div></div>
@@ -168,8 +168,8 @@ The following table lists the available variables for customization.
 <tr>
     <td>$button-active-border</td>
     <td></td>
-    <td>try-shade( $button-active-bg, 2 )</td>
-    <td>try-shade( $button-active-bg, 2 )</td>
+    <td>try-shade( $button-bg, 4 )</td>
+    <td>try-shade( $button-bg, 4 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of active buttons.</div></div>
@@ -209,7 +209,7 @@ The following table lists the available variables for customization.
     <td>$button-selected-border</td>
     <td></td>
     <td>$button-active-border</td>
-    <td>try-shade( $button-active-bg, 2 )</td>
+    <td>try-shade( $button-bg, 4 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of selected buttons.</div></div>
