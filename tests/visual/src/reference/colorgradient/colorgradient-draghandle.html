@@ -9,6 +9,14 @@
     <script src="../../../../../packages/html/dist/index.js"></script>
 
     <style>
+        .k-hue-slider {
+            --kendo-slider-start: 0;
+            --kendo-slider-end: 0;
+        }
+        .k-alpha-slider {
+            --kendo-slider-start: 0;
+            --kendo-slider-end: 100;
+        }
     </style>
 </head>
 <body class="k-body">
@@ -36,19 +44,19 @@
                     <div class="k-hsv-controls k-hstack">
 
                         <div class="k-slider k-slider-vertical k-hue-slider k-colorgradient-slider">
-                            <div class="k-slider-wrap">
+                            <div class="k-slider-track-wrap">
                                 <div class="k-slider-track">
                                     <div class="k-slider-selection"></div>
-                                    <a class="k-draghandle" style="bottom: -8px;"></a>
+                                    <a class="k-draghandle k-draghandle-end"></a>
                                 </div>
                             </div>
                         </div>
 
                         <div class="k-slider k-slider-vertical k-alpha-slider k-colorgradient-slider">
-                            <div class="k-slider-wrap">
+                            <div class="k-slider-track-wrap">
                                 <div class="k-slider-track" style="background: linear-gradient(to top, transparent, rgb(255, 0, 0));">
                                     <div class="k-slider-selection"></div>
-                                    <a class="k-draghandle" style="bottom: 172px;"></a>
+                                    <a class="k-draghandle k-draghandle-end"></a>
                                 </div>
                             </div>
                         </div>
@@ -102,19 +110,19 @@
                     <div class="k-hsv-controls k-hstack">
 
                         <div class="k-slider k-slider-vertical k-hue-slider k-colorgradient-slider k-state-focus">
-                            <div class="k-slider-wrap">
+                            <div class="k-slider-track-wrap">
                                 <div class="k-slider-track">
                                     <div class="k-slider-selection"></div>
-                                    <a class="k-draghandle k-state-focus" style="bottom: -8px;"></a>
+                                    <a class="k-draghandle k-draghandle-end k-state-focus"></a>
                                 </div>
                             </div>
                         </div>
 
                         <div class="k-slider k-slider-vertical k-alpha-slider k-colorgradient-slider k-state-focus">
-                            <div class="k-slider-wrap">
+                            <div class="k-slider-track-wrap">
                                 <div class="k-slider-track" style="background: linear-gradient(to top, transparent, rgb(255, 0, 0));">
                                     <div class="k-slider-selection"></div>
-                                    <a class="k-draghandle k-state-focus" style="bottom: 172px;"></a>
+                                    <a class="k-draghandle k-draghandle-end k-state-focus"></a>
                                 </div>
                             </div>
                         </div>
@@ -169,19 +177,19 @@
                     <div class="k-hsv-controls k-hstack">
 
                         <div class="k-slider k-slider-vertical k-hue-slider k-colorgradient-slider k-state-hover">
-                            <div class="k-slider-wrap">
+                            <div class="k-slider-track-wrap">
                                 <div class="k-slider-track">
                                     <div class="k-slider-selection"></div>
-                                    <a class="k-draghandle k-state-hover" style="bottom: -8px;"></a>
+                                    <a class="k-draghandle k-draghandle-end k-state-hover"></a>
                                 </div>
                             </div>
                         </div>
 
                         <div class="k-slider k-slider-vertical k-alpha-slider k-colorgradient-slider k-state-hover">
-                            <div class="k-slider-wrap">
+                            <div class="k-slider-track-wrap">
                                 <div class="k-slider-track" style="background: linear-gradient(to top, transparent, rgb(255, 0, 0));">
                                     <div class="k-slider-selection"></div>
-                                    <a class="k-draghandle k-state-hover" style="bottom: 172px;"></a>
+                                    <a class="k-draghandle k-draghandle-end k-state-hover"></a>
                                 </div>
                             </div>
                         </div>

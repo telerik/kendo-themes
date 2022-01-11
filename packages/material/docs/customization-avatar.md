@@ -28,8 +28,17 @@ The following table lists the available variables for customization.
         <tr>
     <td>$avatar-border-width</td>
     <td></td>
-    <td>1px</td>
-    <td>1px</td>
+<td>
+
+
+`1px`
+
+</td>
+<td>
+
+`1px`
+
+</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border width of the avatar.</div></div>
@@ -38,8 +47,17 @@ The following table lists the available variables for customization.
 <tr>
     <td>$avatar-font-family</td>
     <td></td>
-    <td>$font-family</td>
-    <td>Roboto, "Helvetica Neue", sans-serif</td>
+<td>
+
+
+`$font-family`
+
+</td>
+<td>
+
+`Roboto, "Helvetica Neue", sans-serif`
+
+</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font family of the avatar.</div></div>
@@ -48,8 +66,17 @@ The following table lists the available variables for customization.
 <tr>
     <td>$avatar-font-size</td>
     <td></td>
-    <td>$font-size</td>
-    <td>14px</td>
+<td>
+
+
+`$font-size`
+
+</td>
+<td>
+
+`14px`
+
+</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the avatar.</div></div>
@@ -58,8 +85,17 @@ The following table lists the available variables for customization.
 <tr>
     <td>$avatar-line-height</td>
     <td></td>
-    <td>$line-height</td>
-    <td>(28 / 14)</td>
+<td>
+
+
+`$line-height`
+
+</td>
+<td>
+
+`(28 / 14)`
+
+</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of the avatar.</div></div>
@@ -68,16 +104,25 @@ The following table lists the available variables for customization.
 <tr>
     <td>$avatar-sizes</td>
     <td></td>
-    <td>(
+<td>
+
+
+`(
     sm: map-get( $spacing, 4 ),
     md: map-get( $spacing, 8 ),
     lg: map-get( $spacing, 16 )
-)</td>
-    <td>(
+)`
+
+</td>
+<td>
+
+`(
     sm: map-get( $spacing, 4 ),
     md: map-get( $spacing, 8 ),
     lg: map-get( $spacing, 16 )
-)</td>
+)`
+
+</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes of the avatar.</div></div>

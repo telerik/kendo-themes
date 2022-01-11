@@ -28,8 +28,17 @@ The following table lists the available variables for customization.
         <tr>
     <td>$icon-font-url</td>
     <td></td>
-    <td>null</td>
-    <td>null</td>
+<td>
+
+
+`null`
+
+</td>
+<td>
+
+`null`
+
+</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The URL to the icon font that will be used by the theme<br />The default value of `null` embeds the package font with a `data:` URL</div></div>

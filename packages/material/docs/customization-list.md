@@ -28,8 +28,17 @@ The following table lists the available variables for customization.
         <tr>
     <td>$list-font-size</td>
     <td></td>
-    <td>$font-size-lg</td>
-    <td></td>
+<td>
+
+
+`$font-size-lg`
+
+</td>
+<td>
+
+
+
+</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the list component.</div></div>
@@ -38,8 +47,17 @@ The following table lists the available variables for customization.
 <tr>
     <td>$list-line-height</td>
     <td></td>
-    <td>1.25</td>
-    <td>1.25</td>
+<td>
+
+
+`1.25`
+
+</td>
+<td>
+
+`1.25`
+
+</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of the list component.</div></div>
@@ -48,8 +66,17 @@ The following table lists the available variables for customization.
 <tr>
     <td>$list-item-padding-x</td>
     <td></td>
-    <td>map-get( $spacing, 4 )</td>
-    <td>map-get( $spacing, 4 )</td>
+<td>
+
+
+`map-get( $spacing, 4 )`
+
+</td>
+<td>
+
+`map-get( $spacing, 4 )`
+
+</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of list items.</div></div>
@@ -58,8 +85,17 @@ The following table lists the available variables for customization.
 <tr>
     <td>$list-item-padding-y</td>
     <td></td>
-    <td>map-get( $spacing, 2 )</td>
-    <td>map-get( $spacing, 2 )</td>
+<td>
+
+
+`map-get( $spacing, 2 )`
+
+</td>
+<td>
+
+`map-get( $spacing, 2 )`
+
+</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of list items.</div></div>
@@ -68,8 +104,17 @@ The following table lists the available variables for customization.
 <tr>
     <td>$list-bg</td>
     <td></td>
-    <td>$component-bg</td>
-    <td>map-get($theme, component-bg)</td>
+<td>
+
+
+`$component-bg`
+
+</td>
+<td>
+
+`map-get($theme, component-bg)`
+
+</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the list component.</div></div>
@@ -78,8 +123,17 @@ The following table lists the available variables for customization.
 <tr>
     <td>$list-text</td>
     <td></td>
-    <td>$component-text</td>
-    <td>map-get($theme, component-text)</td>
+<td>
+
+
+`$component-text`
+
+</td>
+<td>
+
+`map-get($theme, component-text)`
+
+</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the list component.</div></div>
@@ -88,8 +142,17 @@ The following table lists the available variables for customization.
 <tr>
     <td>$list-border</td>
     <td></td>
-    <td>$component-border</td>
-    <td>map-get($theme, component-border)</td>
+<td>
+
+
+`$component-border`
+
+</td>
+<td>
+
+`map-get($theme, component-border)`
+
+</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the list component.</div></div>
@@ -98,8 +161,17 @@ The following table lists the available variables for customization.
 <tr>
     <td>$list-header-bg</td>
     <td></td>
-    <td>null</td>
-    <td>null</td>
+<td>
+
+
+`null`
+
+</td>
+<td>
+
+`null`
+
+</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of list header.</div></div>
@@ -108,8 +180,17 @@ The following table lists the available variables for customization.
 <tr>
     <td>$list-header-text</td>
     <td></td>
-    <td>null</td>
-    <td>null</td>
+<td>
+
+
+`null`
+
+</td>
+<td>
+
+`null`
+
+</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of list header.</div></div>
@@ -118,8 +199,17 @@ The following table lists the available variables for customization.
 <tr>
     <td>$list-header-border</td>
     <td></td>
-    <td>inherit</td>
-    <td>inherit</td>
+<td>
+
+
+`inherit`
+
+</td>
+<td>
+
+`inherit`
+
+</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of list header.</div></div>
@@ -128,8 +218,17 @@ The following table lists the available variables for customization.
 <tr>
     <td>$list-header-shadow</td>
     <td></td>
-    <td>null</td>
-    <td>null</td>
+<td>
+
+
+`null`
+
+</td>
+<td>
+
+`null`
+
+</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Box shadow of list header.</div></div>
@@ -138,8 +237,17 @@ The following table lists the available variables for customization.
 <tr>
     <td>$list-item-bg</td>
     <td></td>
-    <td>null</td>
-    <td>null</td>
+<td>
+
+
+`null`
+
+</td>
+<td>
+
+`null`
+
+</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of list items.</div></div>
@@ -148,8 +256,17 @@ The following table lists the available variables for customization.
 <tr>
     <td>$list-item-text</td>
     <td></td>
-    <td>$component-text</td>
-    <td>map-get($theme, component-text)</td>
+<td>
+
+
+`$component-text`
+
+</td>
+<td>
+
+`map-get($theme, component-text)`
+
+</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of list items.</div></div>
@@ -158,8 +275,17 @@ The following table lists the available variables for customization.
 <tr>
     <td>$list-item-hovered-bg</td>
     <td></td>
-    <td>$hovered-bg</td>
-    <td>map-get( $theme, hover-bg )</td>
+<td>
+
+
+`$hovered-bg`
+
+</td>
+<td>
+
+`map-get( $theme, hover-bg )`
+
+</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of hovered list items.</div></div>
@@ -168,8 +294,17 @@ The following table lists the available variables for customization.
 <tr>
     <td>$list-item-hovered-text</td>
     <td></td>
-    <td>$hovered-text</td>
-    <td>$base-text</td>
+<td>
+
+
+`$hovered-text`
+
+</td>
+<td>
+
+`$base-text`
+
+</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of hovered list items.</div></div>
@@ -178,8 +313,17 @@ The following table lists the available variables for customization.
 <tr>
     <td>$list-item-focused-bg</td>
     <td></td>
-    <td>null</td>
-    <td>null</td>
+<td>
+
+
+`null`
+
+</td>
+<td>
+
+`null`
+
+</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of focused list items.</div></div>
@@ -188,8 +332,17 @@ The following table lists the available variables for customization.
 <tr>
     <td>$list-item-focused-text</td>
     <td></td>
-    <td>null</td>
-    <td>null</td>
+<td>
+
+
+`null`
+
+</td>
+<td>
+
+`null`
+
+</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of focused list items.</div></div>
@@ -198,8 +351,17 @@ The following table lists the available variables for customization.
 <tr>
     <td>$list-item-focused-shadow</td>
     <td></td>
-    <td>null</td>
-    <td>null</td>
+<td>
+
+
+`null`
+
+</td>
+<td>
+
+`null`
+
+</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Box shadow of focused list items.</div></div>
@@ -208,8 +370,17 @@ The following table lists the available variables for customization.
 <tr>
     <td>$list-item-selected-bg</td>
     <td></td>
-    <td>$component-bg</td>
-    <td>map-get($theme, component-bg)</td>
+<td>
+
+
+`$component-bg`
+
+</td>
+<td>
+
+`map-get($theme, component-bg)`
+
+</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of selected list items.</div></div>
@@ -218,8 +389,17 @@ The following table lists the available variables for customization.
 <tr>
     <td>$list-item-selected-text</td>
     <td></td>
-    <td>$secondary</td>
-    <td>material-color( $secondary-palette, main )</td>
+<td>
+
+
+`$secondary`
+
+</td>
+<td>
+
+`material-color( $secondary-palette, main )`
+
+</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of selected list items.</div></div>
@@ -228,8 +408,17 @@ The following table lists the available variables for customization.
 <tr>
     <td>$list-no-data-text</td>
     <td></td>
-    <td>$subtle-text</td>
-    <td></td>
+<td>
+
+
+`$subtle-text`
+
+</td>
+<td>
+
+
+
+</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the 'No Data' text.</div></div>

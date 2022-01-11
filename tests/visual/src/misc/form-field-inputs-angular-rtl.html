@@ -13,6 +13,11 @@
             padding: 20px;
             border: 1px dashed gray;
         }
+        .k-slider-horizontal {
+            width: 100%;
+            --kendo-slider-start: 0;
+            --kendo-slider-end: 50;
+        }
     </style>
 </head>
 <body class="k-body">
@@ -113,40 +118,35 @@
                 <kendo-form-field class="k-form-field" dir="rtl">
                     <label class="k-label">Slider:</label>
                     <div>
-                        <kendo-slider class="k-slider-horizontal k-slider k-widget k-slider-transitions" style="width: 276px;" dir="rtl">
-                            <div class="k-slider-wrap k-slider-buttons">
-                                <button is="Button" class="k-button-decrease" icon="arrow-w" rounded="full"></button>
-                                <button is="Button" class="k-button-increase" icon="arrow-e" rounded="full"></button>
+                        <div class="k-slider k-slider-horizontal" dir="rtl">
+                            <button is="Button" icon="arrow-w" rounded="full" class="k-button-decrease"></button>
+                            <div class="k-slider-track-wrap">
                                 <ul class="k-reset k-slider-items">
-                                    <li class="k-tick k-first"style="width: 5px;"></li>
-                                    <li class="k-tick" style="width: 10px;"></li>
-                                    <li class="k-tick" style="width: 10px;"></li>
-                                    <li class="k-tick" style="width: 10px;"></li>
-                                    <li class="k-tick" style="width: 10px;"></li>
-                                    <li class="k-tick" style="width: 10px;"></li>
-                                    <li class="k-tick" style="width: 10px;"></li>
-                                    <li class="k-tick" style="width: 10px;"></li>
-                                    <li class="k-tick" style="width: 10px;"></li>
-                                    <li class="k-tick" style="width: 10px;"></li>
-                                    <li class="k-tick" style="width: 10px;"></li>
-                                    <li class="k-tick" style="width: 10px;"></li>
-                                    <li class="k-tick" style="width: 10px;"></li>
-                                    <li class="k-tick" style="width: 10px;"></li>
-                                    <li class="k-tick" style="width: 10px;"></li>
-                                    <li class="k-tick" style="width: 10px;"></li>
-                                    <li class="k-tick" style="width: 10px;"></li>
-                                    <li class="k-tick" style="width: 10px;"></li>
-                                    <li class="k-tick" style="width: 10px;"></li>
-                                    <li class="k-tick" style="width: 10px;"></li>
-                                    <li class="k-tick k-last" style="width: 5px;"></li>
+                                    <li class="k-tick k-tick-large">
+                                        <span class="k-label">0</span>
+                                    </li>
+                                    <li class="k-tick"></li>
+                                    <li class="k-tick"></li>
+                                    <li class="k-tick"></li>
+                                    <li class="k-tick"></li>
+                                    <li class="k-tick k-tick-large">
+                                        <span class="k-label">5</span>
+                                    </li>
+                                    <li class="k-tick"></li>
+                                    <li class="k-tick"></li>
+                                    <li class="k-tick"></li>
+                                    <li class="k-tick"></li>
+                                    <li class="k-tick k-tick-large">
+                                        <span class="k-label">10</span>
+                                    </li>
                                 </ul>
-                                <div class="k-slider-track" style="width: 200px;">
-                                    <div class="k-slider-selection" style="width: 110px;"></div>
-                                    <a class="k-draghandle" style="left: 102px; touch-action: none;"></a>
+                                <div class="k-slider-track">
+                                    <div class="k-slider-selection"></div>
+                                    <a href="#" class="k-draghandle k-draghandle-end"></a>
                                 </div>
-                                <kendo-resize-sensor></kendo-resize-sensor>
                             </div>
-                        </kendo-slider>
+                            <button is="Button" icon="arrow-e" rounded="full" class="k-button-increase"></button>
+                        </div>
                     </div>
                 </kendo-form-field>
 
@@ -301,40 +301,35 @@
                 <kendo-form-field class="k-form-field" dir="rtl">
                     <label class="k-label">Slider:</label>
                     <div class="k-form-field-wrap">
-                        <kendo-slider class="k-slider-horizontal k-slider k-widget k-slider-transitions" style="width: 276px;" dir="rtl">
-                            <div class="k-slider-wrap k-slider-buttons">
-                                <button is="Button" class="k-button-decrease" icon="arrow-w" rounded="full"></button>
-                                <button is="Button" class="k-button-increase" icon="arrow-e" rounded="full"></button>
+                        <div class="k-slider k-slider-horizontal">
+                            <button is="Button" icon="arrow-w" rounded="full" class="k-button-decrease"></button>
+                            <div class="k-slider-track-wrap">
                                 <ul class="k-reset k-slider-items">
-                                    <li class="k-tick k-first"style="width: 5px;"></li>
-                                    <li class="k-tick" style="width: 10px;"></li>
-                                    <li class="k-tick" style="width: 10px;"></li>
-                                    <li class="k-tick" style="width: 10px;"></li>
-                                    <li class="k-tick" style="width: 10px;"></li>
-                                    <li class="k-tick" style="width: 10px;"></li>
-                                    <li class="k-tick" style="width: 10px;"></li>
-                                    <li class="k-tick" style="width: 10px;"></li>
-                                    <li class="k-tick" style="width: 10px;"></li>
-                                    <li class="k-tick" style="width: 10px;"></li>
-                                    <li class="k-tick" style="width: 10px;"></li>
-                                    <li class="k-tick" style="width: 10px;"></li>
-                                    <li class="k-tick" style="width: 10px;"></li>
-                                    <li class="k-tick" style="width: 10px;"></li>
-                                    <li class="k-tick" style="width: 10px;"></li>
-                                    <li class="k-tick" style="width: 10px;"></li>
-                                    <li class="k-tick" style="width: 10px;"></li>
-                                    <li class="k-tick" style="width: 10px;"></li>
-                                    <li class="k-tick" style="width: 10px;"></li>
-                                    <li class="k-tick" style="width: 10px;"></li>
-                                    <li class="k-tick k-last" style="width: 5px;"></li>
+                                    <li class="k-tick k-tick-large">
+                                        <span class="k-label">0</span>
+                                    </li>
+                                    <li class="k-tick"></li>
+                                    <li class="k-tick"></li>
+                                    <li class="k-tick"></li>
+                                    <li class="k-tick"></li>
+                                    <li class="k-tick k-tick-large">
+                                        <span class="k-label">5</span>
+                                    </li>
+                                    <li class="k-tick"></li>
+                                    <li class="k-tick"></li>
+                                    <li class="k-tick"></li>
+                                    <li class="k-tick"></li>
+                                    <li class="k-tick k-tick-large">
+                                        <span class="k-label">10</span>
+                                    </li>
                                 </ul>
-                                <div class="k-slider-track" style="width: 200px;">
-                                    <div class="k-slider-selection" style="width: 110px;"></div>
-                                    <a class="k-draghandle" style="left: 102px; touch-action: none;"></a>
+                                <div class="k-slider-track">
+                                    <div class="k-slider-selection"></div>
+                                    <a href="#" class="k-draghandle k-draghandle-end"></a>
                                 </div>
-                                <kendo-resize-sensor></kendo-resize-sensor>
                             </div>
-                        </kendo-slider>
+                            <button is="Button" icon="arrow-e" rounded="full" class="k-button-increase"></button>
+                        </div>
                     </div>
                 </kendo-form-field>
 
