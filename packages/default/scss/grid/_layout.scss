@@ -1337,7 +1337,7 @@
             padding: $grid-column-menu-popup-padding-y $grid-column-menu-popup-padding-x;
         }
         .k-popup > & {
-            width: 100%;
+            max-width: 100%;
         }
 
         .k-actions {
