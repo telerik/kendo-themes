@@ -462,8 +462,8 @@ The following table lists the available variables for customizing the Bootstrap 
 <tr>
     <td>$button-focused-shadow</td>
     <td></td>
-    <td>0 0 0 3px rgba( $button-border, .5 )</td>
-    <td>0 0 0 3px rgba( $button-border, .5 )</td>
+    <td>0 0 0 .25rem rgba( $button-border, .5 )</td>
+    <td>0 0 0 .25rem rgba( $button-border, .5 )</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The shadow of focused buttons.</div></div>
