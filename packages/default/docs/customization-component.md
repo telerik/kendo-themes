@@ -28,8 +28,17 @@ The following table lists the available variables for customization.
         <tr>
     <td>$component-bg</td>
     <td></td>
-    <td>$body-bg</td>
-    <td></td>
+<td>
+
+
+`$body-bg`
+
+</td>
+<td>
+
+
+
+</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of a component.<br />Note: do not use this variable directly. Instead derive it as `$component-name-bg` e.g. `$grid-bg: $component-bg !defualt;`.</div></div>
@@ -38,8 +47,17 @@ The following table lists the available variables for customization.
 <tr>
     <td>$component-text</td>
     <td></td>
-    <td>$body-text</td>
-    <td></td>
+<td>
+
+
+`$body-text`
+
+</td>
+<td>
+
+
+
+</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of a component.<br />Note: do not use this variable directly. Instead derive it as `$component-name-text` e.g. `$grid-text: component-text !default;`.</div></div>
@@ -48,8 +66,17 @@ The following table lists the available variables for customization.
 <tr>
     <td>$component-border</td>
     <td></td>
-    <td>rgba( if( $dark-theme, $white, $black ), .08 )</td>
-    <td>rgba( if( $dark-theme, $white, $black ), .08 )</td>
+<td>
+
+
+`rgba( if( $dark-theme, $white, $black ), .08 )`
+
+</td>
+<td>
+
+`rgba( if( $dark-theme, $white, $black ), .08 )`
+
+</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of a component.<br />Note: do not use this variable directly. Instead derive it as `$component-name-border` e.g. `$grid-border: component-border !default;`.</div></div>

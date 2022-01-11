@@ -28,8 +28,17 @@ The following table lists the available variables for customization.
         <tr>
     <td>$grid-bg</td>
     <td></td>
-    <td>$component-bg</td>
-    <td>map-get($theme, component-bg)</td>
+<td>
+
+
+`$component-bg`
+
+</td>
+<td>
+
+`map-get($theme, component-bg)`
+
+</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the grid component</div></div>
@@ -38,8 +47,17 @@ The following table lists the available variables for customization.
 <tr>
     <td>$grid-text</td>
     <td></td>
-    <td>$component-text</td>
-    <td>map-get($theme, component-text)</td>
+<td>
+
+
+`$component-text`
+
+</td>
+<td>
+
+`map-get($theme, component-text)`
+
+</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the grid component</div></div>
@@ -48,8 +66,17 @@ The following table lists the available variables for customization.
 <tr>
     <td>$grid-border</td>
     <td></td>
-    <td>$component-border</td>
-    <td>map-get($theme, component-border)</td>
+<td>
+
+
+`$component-border`
+
+</td>
+<td>
+
+`map-get($theme, component-border)`
+
+</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the grid component</div></div>
@@ -58,8 +85,17 @@ The following table lists the available variables for customization.
 <tr>
     <td>$grid-header-bg</td>
     <td></td>
-    <td>$grid-bg</td>
-    <td>map-get($theme, component-bg)</td>
+<td>
+
+
+`$grid-bg`
+
+</td>
+<td>
+
+`map-get($theme, component-bg)`
+
+</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of grid header</div></div>
@@ -68,8 +104,17 @@ The following table lists the available variables for customization.
 <tr>
     <td>$grid-header-text</td>
     <td></td>
-    <td>if($theme-type == dark, $light-secondary-text, $dark-secondary-text)</td>
-    <td>if($theme-type == dark, $light-secondary-text, $dark-secondary-text)</td>
+<td>
+
+
+`if($theme-type == dark, $light-secondary-text, $dark-secondary-text)`
+
+</td>
+<td>
+
+`if($theme-type == dark, $light-secondary-text, $dark-secondary-text)`
+
+</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of grid header</div></div>
@@ -78,8 +123,17 @@ The following table lists the available variables for customization.
 <tr>
     <td>$grid-header-border</td>
     <td></td>
-    <td>$grid-border</td>
-    <td>map-get($theme, component-border)</td>
+<td>
+
+
+`$grid-border`
+
+</td>
+<td>
+
+`map-get($theme, component-border)`
+
+</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of grid header</div></div>
@@ -88,8 +142,17 @@ The following table lists the available variables for customization.
 <tr>
     <td>$grid-header-gradient</td>
     <td></td>
-    <td>null</td>
-    <td>null</td>
+<td>
+
+
+`null`
+
+</td>
+<td>
+
+`null`
+
+</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background gradient of grid header</div></div>
@@ -98,8 +161,17 @@ The following table lists the available variables for customization.
 <tr>
     <td>$grid-footer-bg</td>
     <td></td>
-    <td>$grid-header-bg</td>
-    <td>map-get($theme, component-bg)</td>
+<td>
+
+
+`$grid-header-bg`
+
+</td>
+<td>
+
+`map-get($theme, component-bg)`
+
+</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of grid footer</div></div>
@@ -108,8 +180,17 @@ The following table lists the available variables for customization.
 <tr>
     <td>$grid-footer-text</td>
     <td></td>
-    <td>$grid-header-text</td>
-    <td>if($theme-type == dark, $light-secondary-text, $dark-secondary-text)</td>
+<td>
+
+
+`$grid-header-text`
+
+</td>
+<td>
+
+`if($theme-type == dark, $light-secondary-text, $dark-secondary-text)`
+
+</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of grid footer</div></div>
@@ -118,8 +199,17 @@ The following table lists the available variables for customization.
 <tr>
     <td>$grid-footer-border</td>
     <td></td>
-    <td>$grid-header-border</td>
-    <td>map-get($theme, component-border)</td>
+<td>
+
+
+`$grid-header-border`
+
+</td>
+<td>
+
+`map-get($theme, component-border)`
+
+</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of grid footer</div></div>
@@ -128,8 +218,17 @@ The following table lists the available variables for customization.
 <tr>
     <td>$grid-alt-bg</td>
     <td></td>
-    <td>transparent</td>
-    <td>transparent</td>
+<td>
+
+
+`transparent`
+
+</td>
+<td>
+
+`transparent`
+
+</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of alternating rows in grid</div></div>
@@ -138,8 +237,17 @@ The following table lists the available variables for customization.
 <tr>
     <td>$grid-alt-text</td>
     <td></td>
-    <td>null</td>
-    <td>null</td>
+<td>
+
+
+`null`
+
+</td>
+<td>
+
+`null`
+
+</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of alternating rows in grid</div></div>
@@ -148,8 +256,17 @@ The following table lists the available variables for customization.
 <tr>
     <td>$grid-alt-border</td>
     <td></td>
-    <td>null</td>
-    <td>null</td>
+<td>
+
+
+`null`
+
+</td>
+<td>
+
+`null`
+
+</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of alternating rows in grid</div></div>
@@ -158,8 +275,17 @@ The following table lists the available variables for customization.
 <tr>
     <td>$grid-hovered-bg</td>
     <td></td>
-    <td>rgba( contrast-wcag( $grid-bg ), .07 )</td>
-    <td>rgba( contrast-wcag( $grid-bg ), .07 )</td>
+<td>
+
+
+`rgba( contrast-wcag( $grid-bg ), .07 )`
+
+</td>
+<td>
+
+`rgba( contrast-wcag( $grid-bg ), .07 )`
+
+</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of hovered rows in grid</div></div>
@@ -168,8 +294,17 @@ The following table lists the available variables for customization.
 <tr>
     <td>$grid-hovered-text</td>
     <td></td>
-    <td>null</td>
-    <td>null</td>
+<td>
+
+
+`null`
+
+</td>
+<td>
+
+`null`
+
+</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of hovered rows in grid</div></div>
@@ -178,8 +313,17 @@ The following table lists the available variables for customization.
 <tr>
     <td>$grid-hovered-border</td>
     <td></td>
-    <td>$grid-border</td>
-    <td>map-get($theme, component-border)</td>
+<td>
+
+
+`$grid-border`
+
+</td>
+<td>
+
+`map-get($theme, component-border)`
+
+</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of hovered rows in grid</div></div>
@@ -188,8 +332,17 @@ The following table lists the available variables for customization.
 <tr>
     <td>$grid-selected-bg</td>
     <td></td>
-    <td>rgba( contrast-wcag( $grid-bg ), .04 )</td>
-    <td>rgba( contrast-wcag( $grid-bg ), .04 )</td>
+<td>
+
+
+`rgba( contrast-wcag( $grid-bg ), .04 )`
+
+</td>
+<td>
+
+`rgba( contrast-wcag( $grid-bg ), .04 )`
+
+</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of selected rows in grid</div></div>
@@ -198,8 +351,17 @@ The following table lists the available variables for customization.
 <tr>
     <td>$grid-selected-text</td>
     <td></td>
-    <td>null</td>
-    <td>null</td>
+<td>
+
+
+`null`
+
+</td>
+<td>
+
+`null`
+
+</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of selected rows in grid</div></div>
@@ -208,8 +370,17 @@ The following table lists the available variables for customization.
 <tr>
     <td>$grid-selected-border</td>
     <td></td>
-    <td>$grid-border</td>
-    <td>map-get($theme, component-border)</td>
+<td>
+
+
+`$grid-border`
+
+</td>
+<td>
+
+`map-get($theme, component-border)`
+
+</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of selected rows in grid</div></div>

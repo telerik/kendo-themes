@@ -28,8 +28,17 @@ The following table lists the available variables for customization.
         <tr>
     <td>$autocomplete-bg</td>
     <td></td>
-    <td>$input-bg</td>
-    <td>$component-bg</td>
+<td>
+
+
+`$input-bg`
+
+</td>
+<td>
+
+`$component-bg`
+
+</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of the autocomplete.</div></div>
@@ -38,8 +47,17 @@ The following table lists the available variables for customization.
 <tr>
     <td>$autocomplete-text</td>
     <td></td>
-    <td>$input-text</td>
-    <td>$component-text</td>
+<td>
+
+
+`$input-text`
+
+</td>
+<td>
+
+`$component-text`
+
+</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of the autocomplete.</div></div>
@@ -48,8 +66,17 @@ The following table lists the available variables for customization.
 <tr>
     <td>$autocomplete-border</td>
     <td></td>
-    <td>$input-border</td>
-    <td>$component-border</td>
+<td>
+
+
+`$input-border`
+
+</td>
+<td>
+
+`$component-border`
+
+</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of the autocomplete.</div></div>
@@ -58,8 +85,17 @@ The following table lists the available variables for customization.
 <tr>
     <td>$autocomplete-hover-bg</td>
     <td></td>
-    <td>$input-hover-bg</td>
-    <td>$input-bg</td>
+<td>
+
+
+`$input-hover-bg`
+
+</td>
+<td>
+
+`$input-bg`
+
+</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background of hovered autocomplete.</div></div>
@@ -68,8 +104,17 @@ The following table lists the available variables for customization.
 <tr>
     <td>$autocomplete-hover-text</td>
     <td></td>
-    <td>$input-hover-text</td>
-    <td>$input-text</td>
+<td>
+
+
+`$input-hover-text`
+
+</td>
+<td>
+
+`$input-text`
+
+</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of hovered autocomplete.</div></div>
@@ -78,8 +123,17 @@ The following table lists the available variables for customization.
 <tr>
     <td>$autocomplete-hover-border</td>
     <td></td>
-    <td>$input-hover-border</td>
-    <td>try-shade( $input-border, 1 )</td>
+<td>
+
+
+`$input-hover-border`
+
+</td>
+<td>
+
+`try-shade( $input-border, 1 )`
+
+</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of hovered autocomplete.</div></div>
@@ -88,8 +142,17 @@ The following table lists the available variables for customization.
 <tr>
     <td>$autocomplete-focus-text</td>
     <td></td>
-    <td>$input-focus-text</td>
-    <td>$input-hover-text</td>
+<td>
+
+
+`$input-focus-text`
+
+</td>
+<td>
+
+`$input-hover-text`
+
+</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The text color of focus autocomplete.</div></div>
@@ -98,8 +161,17 @@ The following table lists the available variables for customization.
 <tr>
     <td>$autocomplete-focus-bg</td>
     <td></td>
-    <td>$input-focus-bg</td>
-    <td>$input-hover-bg</td>
+<td>
+
+
+`$input-focus-bg`
+
+</td>
+<td>
+
+`$input-hover-bg`
+
+</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The background color of focus autocomplete.</div></div>
@@ -108,8 +180,17 @@ The following table lists the available variables for customization.
 <tr>
     <td>$autocomplete-focus-border</td>
     <td></td>
-    <td>$input-focus-border</td>
-    <td>$input-hover-border</td>
+<td>
+
+
+`$input-focus-border`
+
+</td>
+<td>
+
+`$input-hover-border`
+
+</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of focus autocomplete.</div></div>

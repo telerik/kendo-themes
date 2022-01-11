@@ -28,8 +28,17 @@ The following table lists the available variables for customization.
         <tr>
     <td>$enable-typography</td>
     <td></td>
-    <td>false</td>
-    <td>false</td>
+<td>
+
+
+`false`
+
+</td>
+<td>
+
+`false`
+
+</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Global typography styles for the Kendo Bootstrap theme.</div></div>
@@ -38,8 +47,17 @@ The following table lists the available variables for customization.
 <tr>
     <td>$font-size</td>
     <td></td>
-    <td>$font-size-base</td>
-    <td></td>
+<td>
+
+
+`$font-size-base`
+
+</td>
+<td>
+
+
+
+</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Base font size across all components.</div></div>
@@ -48,8 +66,17 @@ The following table lists the available variables for customization.
 <tr>
     <td>$font-family</td>
     <td></td>
-    <td>$font-family-sans-serif</td>
-    <td></td>
+<td>
+
+
+`$font-family-sans-serif`
+
+</td>
+<td>
+
+
+
+</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font family across all components.</div></div>
@@ -58,8 +85,17 @@ The following table lists the available variables for customization.
 <tr>
     <td>$font-family-monospace</td>
     <td></td>
-    <td>$font-family-monospace</td>
-    <td>$font-family-monospace</td>
+<td>
+
+
+`$font-family-monospace`
+
+</td>
+<td>
+
+`$font-family-monospace`
+
+</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font family for monospaced text. Used for styling the code.</div></div>
@@ -68,8 +104,17 @@ The following table lists the available variables for customization.
 <tr>
     <td>$line-height</td>
     <td></td>
-    <td>$line-height-base</td>
-    <td></td>
+<td>
+
+
+`$line-height-base`
+
+</td>
+<td>
+
+
+
+</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height used along with $font-size.</div></div>
