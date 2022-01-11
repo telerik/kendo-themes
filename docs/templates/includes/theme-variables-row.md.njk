@@ -1,8 +1,17 @@
 <tr>
     <td>${{ variable.context.name }}</td>
     <td>{{ variable.type }}</td>
-    <td>{% if variable.context.value | is_color === true %}<span class="color-preview" style="background-color: {{variable.context.value}}"></span>{% endif %}{{ variable.context.value }}</td>
-    <td>{% if variable.resolvedValue | is_color === true %}<span class="color-preview" style="background-color: {{variable.resolvedValue}}"></span>{% endif %}{{ variable.resolvedValue }}</td>
+<td>
+{% if variable.context.value | is_color === true %}<span class="color-preview" style="background-color: {{variable.context.value}}"></span>{% endif %}
+
+{% if variable.context.value %}`{{ variable.context.value }}`{% endif %}
+
+</td>
+<td>{% if variable.resolvedValue | is_color === true %}<span class="color-preview" style="background-color: {{variable.resolvedValue}}"></span>{% endif %}
+
+{% if variable.resolvedValue %}`{{ variable.resolvedValue }}`{% endif %}
+
+</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container">
