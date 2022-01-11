@@ -31,7 +31,7 @@ The following table lists the available variables for customization.
 <td>
 
 
-`$button-bg`
+`$kendo-button-bg`
 
 </td>
 <td><span class="color-preview" style="background-color: #f6f6f6"></span>
@@ -50,7 +50,7 @@ The following table lists the available variables for customization.
 <td>
 
 
-`$button-text`
+`$kendo-button-text`
 
 </td>
 <td><span class="color-preview" style="background-color: #656565"></span>
@@ -69,7 +69,7 @@ The following table lists the available variables for customization.
 <td>
 
 
-`$button-border`
+`$kendo-button-border`
 
 </td>
 <td>
@@ -88,12 +88,12 @@ The following table lists the available variables for customization.
 <td>
 
 
-`$button-hover-bg`
+`$kendo-button-hover-bg`
 
 </td>
 <td>
 
-`try-shade( $button-bg, .5 )`
+`try-shade( $kendo-button-bg, .5 )`
 
 </td>
 </tr>
@@ -107,7 +107,7 @@ The following table lists the available variables for customization.
 <td>
 
 
-`$button-hover-text`
+`$kendo-button-hover-text`
 
 </td>
 <td><span class="color-preview" style="background-color: #656565"></span>
@@ -126,7 +126,7 @@ The following table lists the available variables for customization.
 <td>
 
 
-`$button-hover-border`
+`$kendo-button-hover-border`
 
 </td>
 <td>
@@ -145,7 +145,7 @@ The following table lists the available variables for customization.
 <td>
 
 
-`$button-active-text`
+`$kendo-button-active-text`
 
 </td>
 <td><span class="color-preview" style="background-color: #656565"></span>
@@ -164,12 +164,12 @@ The following table lists the available variables for customization.
 <td>
 
 
-`$button-active-bg`
+`$kendo-button-active-bg`
 
 </td>
 <td>
 
-`try-shade( $button-bg, 1 )`
+`try-shade( $kendo-button-bg, 1 )`
 
 </td>
 </tr>
@@ -183,7 +183,7 @@ The following table lists the available variables for customization.
 <td>
 
 
-`$button-active-border`
+`$kendo-button-active-border`
 
 </td>
 <td>

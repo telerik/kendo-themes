@@ -29,14 +29,14 @@ The following table lists the available variables for customization.
     <td>$series-a</td>
     <td></td>
 <td>
-<span class="color-preview" style="background-color: #3f51b5"></span>
 
-`#3f51b5`
+
+`get-base-hue( teal, 500 )`
 
 </td>
-<td><span class="color-preview" style="background-color: #3f51b5"></span>
+<td>
 
-`#3f51b5`
+`get-base-hue( teal, 500 )`
 
 </td>
 </tr>
@@ -48,14 +48,14 @@ The following table lists the available variables for customization.
     <td>$series-b</td>
     <td></td>
 <td>
-<span class="color-preview" style="background-color: #2196f3"></span>
 
-`#2196f3`
+
+`get-base-hue( blue, 500 )`
 
 </td>
-<td><span class="color-preview" style="background-color: #2196f3"></span>
+<td>
 
-`#2196f3`
+`get-base-hue( blue, 500 )`
 
 </td>
 </tr>
@@ -67,14 +67,14 @@ The following table lists the available variables for customization.
     <td>$series-c</td>
     <td></td>
 <td>
-<span class="color-preview" style="background-color: #43a047"></span>
 
-`#43a047`
+
+`get-base-hue( purple, 500 )`
 
 </td>
-<td><span class="color-preview" style="background-color: #43a047"></span>
+<td>
 
-`#43a047`
+`get-base-hue( purple, 500 )`
 
 </td>
 </tr>
@@ -86,14 +86,14 @@ The following table lists the available variables for customization.
     <td>$series-d</td>
     <td></td>
 <td>
-<span class="color-preview" style="background-color: #ffc107"></span>
 
-`#ffc107`
+
+`get-base-hue( red, 500 )`
 
 </td>
-<td><span class="color-preview" style="background-color: #ffc107"></span>
+<td>
 
-`#ffc107`
+`get-base-hue( red, 500 )`
 
 </td>
 </tr>
@@ -105,14 +105,14 @@ The following table lists the available variables for customization.
     <td>$series-e</td>
     <td></td>
 <td>
-<span class="color-preview" style="background-color: #ff5722"></span>
 
-`#ff5722`
+
+`get-base-hue( yellow, 500 )`
 
 </td>
-<td><span class="color-preview" style="background-color: #ff5722"></span>
+<td>
 
-`#ff5722`
+`get-base-hue( yellow, 500 )`
 
 </td>
 </tr>
@@ -124,14 +124,14 @@ The following table lists the available variables for customization.
     <td>$series-f</td>
     <td></td>
 <td>
-<span class="color-preview" style="background-color: #e91e63"></span>
 
-`#e91e63`
+
+`get-base-hue( green, 500 )`
 
 </td>
-<td><span class="color-preview" style="background-color: #e91e63"></span>
+<td>
 
-`#e91e63`
+`get-base-hue( green, 500 )`
 
 </td>
 </tr>
@@ -148,9 +148,9 @@ The following table lists the available variables for customization.
 `$series-a`
 
 </td>
-<td><span class="color-preview" style="background-color: #3f51b5"></span>
+<td>
 
-`#3f51b5`
+`get-base-hue( teal, 500 )`
 
 </td>
 </tr>
