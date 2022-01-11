@@ -37,12 +37,7 @@
     // Outline button
     .k-button-outline {
         background-color: transparent !important; // sass-lint:disable-line no-important
-
-        &::after {
-            display: block !important; // sass-lint:disable-line no-important
-            box-shadow: inset 0 0 0 1px currentColor;
-            opacity: 1;
-        }
+        box-shadow: none !important; // sass-lint:disable-line no-important
     }
 
 
