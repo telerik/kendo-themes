@@ -58,7 +58,7 @@ $button-hovered-bg: try-shade( $button-bg, 1 ) !default;
 $button-hovered-text: null !default;
 /// The border color of hovered buttons.
 /// @group button
-$button-hovered-border: try-shade( $button-hovered-bg, 2 ) !default;
+$button-hovered-border: try-shade( $button-bg, 3 ) !default;
 /// The background gradient of hovered buttons.
 /// @group button
 $button-hovered-gradient: null !default;
@@ -72,7 +72,7 @@ $button-active-bg: try-shade( $button-bg, 2 ) !default;
 $button-active-text: null !default;
 /// The border color of active buttons.
 /// @group button
-$button-active-border: try-shade( $button-active-bg, 2 ) !default;
+$button-active-border: try-shade( $button-bg, 4 ) !default;
 /// The background gradient of active buttons.
 /// @group button
 $button-active-gradient: null !default;
@@ -114,13 +114,13 @@ $primary-button-shadow: null !default;
 
 $primary-button-hovered-bg: try-shade( $primary-button-bg, 1 ) !default;
 $primary-button-hovered-text: null !default;
-$primary-button-hovered-border: try-shade( $primary-button-hovered-bg, 2 ) !default;
+$primary-button-hovered-border: try-shade( $primary-button-bg, 3 ) !default;
 $primary-button-hovered-gradient: null !default;
 $primary-button-hovered-shadow: null !default;
 
 $primary-button-active-bg: try-shade( $primary-button-bg, 2 ) !default;
 $primary-button-active-text: null !default;
-$primary-button-active-border: try-shade( $primary-button-active-bg, 2 ) !default;
+$primary-button-active-border: try-shade( $primary-button-bg, 4 ) !default;
 $primary-button-active-gradient: null !default;
 $primary-button-active-shadow: null !default;
 
