@@ -56,7 +56,7 @@ function InputInnerSpanStatic(props) {
             {valueIcon}
             {valueIcon === null && <IconStatic className="k-icon k-input-value-icon" name={valueIconName} />}
             {showValue && value === '' && placeholder}
-            {showValue && value && <span className="k-value-text">{value}</span>}
+            {showValue && value && <span className="k-input-value-text">{value}</span>}
         </span>
     );
 }
