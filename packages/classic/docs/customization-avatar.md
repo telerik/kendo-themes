@@ -26,7 +26,7 @@ The following table lists the available variables for customization.
 </thead>
 <tbody>
         <tr>
-    <td>$avatar-border-width</td>
+    <td>$kendo-avatar-border-width</td>
     <td></td>
     <td>1px</td>
     <td>1px</td>
@@ -36,7 +36,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$avatar-font-family</td>
+    <td>$kendo-avatar-font-family</td>
     <td></td>
     <td>$font-family</td>
     <td>inherit</td>
@@ -46,7 +46,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$avatar-font-size</td>
+    <td>$kendo-avatar-font-size</td>
     <td></td>
     <td>$font-size</td>
     <td>14px</td>
@@ -56,7 +56,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$avatar-line-height</td>
+    <td>$kendo-avatar-line-height</td>
     <td></td>
     <td>$line-height</td>
     <td>(20 / 14)</td>
@@ -66,7 +66,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$avatar-sizes</td>
+    <td>$kendo-avatar-sizes</td>
     <td></td>
     <td>(
     sm: map-get( $spacing, 4 ),
@@ -84,7 +84,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$avatar-theme-colors</td>
+    <td>$kendo-avatar-theme-colors</td>
     <td></td>
     <td>$theme-colors</td>
     <td></td>

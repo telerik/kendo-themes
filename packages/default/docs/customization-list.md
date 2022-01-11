@@ -26,47 +26,187 @@ The following table lists the available variables for customization.
 </thead>
 <tbody>
         <tr>
-    <td>$list-font-size</td>
+    <td>$kendo-list-font-size</td>
     <td></td>
-    <td>$font-size-md</td>
-    <td></td>
+    <td>null</td>
+    <td>null</td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the list component.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the list component, if no size is set.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$list-line-height</td>
+    <td>$kendo-list-line-height</td>
     <td></td>
-    <td>$line-height-md</td>
-    <td></td>
+    <td>null</td>
+    <td>null</td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of the list component.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of the list component, if no size is set.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$list-item-padding-x</td>
+    <td>$kendo-list-header-padding-x</td>
     <td></td>
-    <td>map-get( $spacing, 2 )</td>
-    <td>map-get( $spacing, 2 )</td>
+    <td>null</td>
+    <td>null</td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of list items.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of list header, if no size is set.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$list-item-padding-y</td>
+    <td>$kendo-list-header-padding-y</td>
     <td></td>
-    <td>map-get( $spacing, 1 )</td>
-    <td>map-get( $spacing, 1 )</td>
+    <td>null</td>
+    <td>null</td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of list items.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of list header, if no size is set.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$list-bg</td>
+    <td>$kendo-list-header-border-width</td>
+    <td></td>
+    <td>0 0 1px</td>
+    <td>0 0 1px</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border width of list header.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-list-header-font-size</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of list header, if no size is set.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-list-header-line-height</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of list header, if no size is set.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-list-header-font-weight</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font weight of list header.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-list-item-padding-x</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of list items, when no size is set.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-list-item-padding-y</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of list items, when no size is set.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-list-item-font-size</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of list items, if no size is set.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-list-item-line-height</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of list items, if no size is set.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-list-group-item-padding-x</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of list group items, when no size is set.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-list-group-item-padding-y</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of list group items, when no size is set.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-list-group-item-border-width</td>
+    <td></td>
+    <td>1px 0 0</td>
+    <td>1px 0 0</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border width of list group items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-list-group-item-font-size</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of list group items, if no size is set.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-list-group-item-line-height</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of list group items, if no size is set.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-list-group-item-font-weight</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font weight of list group item.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-list-bg</td>
     <td></td>
     <td>$component-bg</td>
     <td></td>
@@ -76,7 +216,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$list-text</td>
+    <td>$kendo-list-text</td>
     <td></td>
     <td>$component-text</td>
     <td></td>
@@ -86,7 +226,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$list-border</td>
+    <td>$kendo-list-border</td>
     <td></td>
     <td>$component-border</td>
     <td>rgba( if( $dark-theme, $white, $black ), .08 )</td>
@@ -96,7 +236,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$list-header-bg</td>
+    <td>$kendo-list-header-bg</td>
     <td></td>
     <td>null</td>
     <td>null</td>
@@ -106,7 +246,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$list-header-text</td>
+    <td>$kendo-list-header-text</td>
     <td></td>
     <td>null</td>
     <td>null</td>
@@ -116,7 +256,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$list-header-border</td>
+    <td>$kendo-list-header-border</td>
     <td></td>
     <td>inherit</td>
     <td>inherit</td>
@@ -126,7 +266,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$list-header-shadow</td>
+    <td>$kendo-list-header-shadow</td>
     <td></td>
     <td>0 5px 10px 0 rgba(0, 0, 0, .06)</td>
     <td>0 5px 10px 0 rgba(0, 0, 0, .06)</td>
@@ -136,7 +276,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$list-item-bg</td>
+    <td>$kendo-list-item-bg</td>
     <td></td>
     <td>null</td>
     <td>null</td>
@@ -146,17 +286,17 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$list-item-text</td>
+    <td>$kendo-list-item-text</td>
     <td></td>
-    <td>$component-text</td>
-    <td></td>
+    <td>null</td>
+    <td>null</td>
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of list items.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$list-item-hovered-bg</td>
+    <td>$kendo-list-item-hover-bg</td>
     <td></td>
     <td>$hovered-bg</td>
     <td>try-shade( $base-bg, .5 )</td>
@@ -166,7 +306,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$list-item-hovered-text</td>
+    <td>$kendo-list-item-hover-text</td>
     <td></td>
     <td>$hovered-text</td>
     <td>$base-text</td>
@@ -176,7 +316,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$list-item-focused-bg</td>
+    <td>$kendo-list-item-focus-bg</td>
     <td></td>
     <td>null</td>
     <td>null</td>
@@ -186,7 +326,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$list-item-focused-text</td>
+    <td>$kendo-list-item-focus-text</td>
     <td></td>
     <td>null</td>
     <td>null</td>
@@ -196,7 +336,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$list-item-focused-shadow</td>
+    <td>$kendo-list-item-focus-shadow</td>
     <td></td>
     <td>inset 0 0 0 2px rgba(0, 0, 0, .12)</td>
     <td>inset 0 0 0 2px rgba(0, 0, 0, .12)</td>
@@ -206,7 +346,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$list-item-selected-bg</td>
+    <td>$kendo-list-item-selected-bg</td>
     <td></td>
     <td>$selected-bg</td>
     <td>$primary</td>
@@ -216,7 +356,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$list-item-selected-text</td>
+    <td>$kendo-list-item-selected-text</td>
     <td></td>
     <td>$selected-text</td>
     <td>contrast-wcag( $selected-bg )</td>
@@ -226,7 +366,47 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$list-no-data-text</td>
+    <td>$kendo-list-group-item-bg</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of list group items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-list-group-item-text</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of list group items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-list-group-item-border</td>
+    <td></td>
+    <td>inherit</td>
+    <td>inherit</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The border color of list group items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-list-group-item-shadow</td>
+    <td></td>
+    <td>null</td>
+    <td>null</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of list group items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-list-no-data-text</td>
     <td></td>
     <td>$subtle-text</td>
     <td></td>
