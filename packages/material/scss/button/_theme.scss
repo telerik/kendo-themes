@@ -18,35 +18,20 @@
     }
 
     // Flat button
-    .k-button-flat {
-
-        &:disabled,
-        &.k-state-disabled {
-            color: $button-disabled-text;
-        }
-    }
-    .k-button-flat.k-primary {
-        color: $primary-button-bg;
-
-        &:disabled,
-        &.k-state-disabled {
-            color: $button-disabled-text;
-        }
-    }
+    .k-button-flat {}
 
 
     // Outline button
     .k-button-outline {
-        @include box-shadow( none );
         color: $button-text;
 
         &:hover,
         &.k-state-hover,
+        &:focus,
+        &.k-state-focus,
         &:active,
         &.k-state-active,
-        &.k-state-selected,
-        &:focus,
-        &.k-state-focus {
+        &.k-state-selected {
             color: $button-text;
         }
 
@@ -55,37 +40,17 @@
             color: $button-disabled-text;
         }
     }
-    .k-button-outline.k-primary {
-        color: $primary-button-bg;
-
-        &:hover,
-        &.k-state-hover,
-        &:active,
-        &.k-state-active,
-        &.k-state-selected,
-        &:focus,
-        &.k-state-focus {
-            color: $primary-button-bg;
-        }
-
-        &:disabled,
-        &.k-state-disabled {
-            color: $button-disabled-text;
-        }
-    }
-
     @each $name, $color in $button-theme-colors {
         .k-button-outline.k-button-outline-#{$name} {
-            @include box-shadow( none );
             color: $color;
 
             &:hover,
             &.k-state-hover,
+            &:focus,
+            &.k-state-focus,
             &:active,
             &.k-state-active,
-            &.k-state-selected,
-            &:focus,
-            &.k-state-focus {
+            &.k-state-selected {
                 color: $color;
             }
 
@@ -127,6 +92,8 @@
         }
 
         &:disabled,
+        &[disabled],
+        &.k-disabled,
         &.k-state-disabled {
             @include box-shadow( none );
         }

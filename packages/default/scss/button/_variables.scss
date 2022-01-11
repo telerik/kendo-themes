@@ -21,6 +21,7 @@ $button-calc-size: calc( #{$button-line-height * 1em} + #{$button-padding-y * 2}
 $button-inner-calc-size: calc( #{$button-line-height * 1em} + #{$button-padding-y * 2} ) !default;
 
 $button-theme-colors: (
+    "primary": map-get( $theme-colors, primary ),
     "secondary": map-get( $theme-colors, secondary ),
     "tertiary": map-get( $theme-colors, tertiary ),
     "info": map-get( $theme-colors, info ),
