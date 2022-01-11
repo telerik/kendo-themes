@@ -38,9 +38,9 @@
         }
 
         // Invalid
-        &:invalid,
         &.k-invalid,
-        &.ng-invalid {
+        &.ng-invalid.ng-touched,
+        &.ng-invalid.ng-dirty {
             @include fill( $border: $invalid-border );
 
             .k-input-validation-icon {
@@ -101,9 +101,9 @@
         }
 
         // Invalid
-        &:invalid,
         &.k-invalid,
-        &.ng-invalid {
+        &.ng-invalid.ng-touched,
+        &.ng-invalid.ng-dirty {
             @include fill( $border: $kendo-input-invalid-border );
 
             .k-input-validation-icon {

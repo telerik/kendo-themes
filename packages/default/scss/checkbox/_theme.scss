@@ -78,11 +78,9 @@
 
 
     // Invalid
-    .k-checkbox:invalid,
     .k-checkbox.k-invalid {
         @include fill( $border: $kendo-checkbox-invalid-border );
     }
-    .k-checkbox:invalid + .k-checkbox-label,
     .k-checkbox.k-invalid + .k-checkbox-label {
         @include fill( $color: $kendo-checkbox-invalid-text );
     }
