@@ -129,44 +129,17 @@
         &:disabled,
         &.k-state-disabled {
             @include box-shadow( none );
-            opacity: 1;
         }
     }
 
 
     // Split button
-    .k-split-button {
-        @include box-shadow( $button-shadow );
-
-        .k-button {
-            @include box-shadow( none );
-        }
-
-        > .k-button:last-child,
-        > .k-split-button-arrow {
-            color: $subtle-text;
-        }
-
-        > .k-button:last-child:hover,
-        > .k-split-button-arrow:hover {
-            color: $button-text;
-        }
-
-        &:disabled,
-        &.k-state-disabled {
-            @include box-shadow( none );
-            opacity: 1;
-        }
-
-        &.k-flat {
-            @include box-shadow( none );
-        }
-    }
+    .k-split-button {}
 
 
     // Variant button group
     .k-button-group-flat,
-    .k-button-group-bare,
+    .k-button-group-link,
     .k-button-group-outline {
         @include box-shadow( none );
     }
