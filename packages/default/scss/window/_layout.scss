@@ -110,10 +110,10 @@
         margin-top: -($window-inner-padding-y / 2);
     }
     .k-window-content:first-child {
-        padding-top: #{"max( #{$window-inner-padding-y}, #{$window-titlebar-padding-y} )"};
+        padding-top: clamp( #{$window-inner-padding-y}, #{$window-titlebar-padding-y}, #{$window-titlebar-padding-y} );
     }
     .k-window-content:last-child {
-        padding-bottom: #{"max( #{$window-inner-padding-y}, #{$window-titlebar-padding-y} )"};
+        padding-bottom: clamp( #{$window-inner-padding-y}, #{$window-titlebar-padding-y}, #{$window-titlebar-padding-y} );
     }
 
     .k-window-iframecontent {
