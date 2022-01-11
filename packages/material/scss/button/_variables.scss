@@ -21,6 +21,7 @@ $button-calc-size: calc( #{$button-line-height * 1em} + #{$button-padding-y * 2}
 $button-inner-calc-size: calc( #{$button-line-height * 1em} + #{$button-padding-y * 2} ) !default;
 
 $button-theme-colors: (
+    "primary": map-get( $theme-colors, primary ),
     "secondary": map-get( $theme-colors, secondary ),
     "tertiary": map-get( $theme-colors, tertiary ),
     "info": map-get( $theme-colors, info ),
@@ -96,7 +97,7 @@ $button-focused-shadow: null !default;
 // Disabled button
 $button-disabled-bg: try-shade( $body-bg, 12% ) !default;
 $button-disabled-text: $disabled-text !default;
-$button-disabled-border: null !default;
+$button-disabled-border: $button-disabled-bg !default;
 $button-disabled-gradient: null !default;
 $button-disabled-shadow: none !default;
 

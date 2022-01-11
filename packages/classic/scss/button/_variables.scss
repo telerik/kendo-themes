@@ -21,6 +21,7 @@ $button-calc-size: calc( #{$button-line-height * 1em} + #{$button-padding-y * 2}
 $button-inner-calc-size: calc( #{$button-line-height * 1em} + #{$button-padding-y * 2} ) !default;
 
 $button-theme-colors: (
+    "primary": map-get( $theme-colors, primary ),
     "secondary": map-get( $theme-colors, secondary ),
     "tertiary": map-get( $theme-colors, tertiary ),
     "info": map-get( $theme-colors, info ),
@@ -133,10 +134,10 @@ $solid-button-shade-function: "try-shade";
 $solid-button-shade-text-amount: 0 !default;
 $solid-button-shade-bg-amount: 0 !default;
 $solid-button-shade-border-amount: 2 !default;
-$solid-button-hover-shade-text-amount: 0 !default;
+$solid-button-hover-shade-text-amount: null !default;
 $solid-button-hover-shade-bg-amount: 1 !default;
 $solid-button-hover-shade-border-amount: 3 !default;
-$solid-button-active-shade-text-amount: 0 !default;
+$solid-button-active-shade-text-amount: null !default;
 $solid-button-active-shade-bg-amount: 2 !default;
 $solid-button-active-shade-border-amount: 4 !default;
 $solid-button-shadow: true !default;

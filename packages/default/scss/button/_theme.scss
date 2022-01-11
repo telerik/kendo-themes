@@ -65,85 +65,30 @@
         }
 
     }
-
-
-    // Primary button
-    .k-button-primary {
-        @include fill(
-            $primary-button-text,
-            $primary-button-bg,
-            $primary-button-border,
-            $primary-button-gradient
-        );
-        @include box-shadow( $primary-button-shadow );
-
-        // Hover state
-        &:hover,
-        &.k-state-hover {
-            @include fill(
-                $primary-button-hovered-text,
-                $primary-button-hovered-bg,
-                $primary-button-hovered-border,
-                $primary-button-hovered-gradient
-            );
-            @include box-shadow( $primary-button-hovered-shadow );
-        }
-
-        // Focused state
-        &:focus,
-        &.k-state-focus,
-        &.k-state-focused {
-            @include box-shadow( $primary-button-focused-shadow );
-        }
-
-        // Active state
-        &:active,
-        &.k-state-active {
-            @include fill(
-                $primary-button-active-text,
-                $primary-button-active-bg,
-                $primary-button-active-border,
-                $primary-button-active-gradient
-            );
-            @include box-shadow( $primary-button-active-shadow );
-        }
-
-        // Selected state
-        &.k-state-selected {
-            @include fill(
-                $primary-button-selected-text,
-                $primary-button-selected-bg,
-                $primary-button-selected-border,
-                $primary-button-selected-gradient
-            );
-            @include box-shadow( $primary-button-selected-shadow );
-        }
-
-        // Disabled state
-        &:disabled,
-        &.k-state-disabled {
-            @include fill(
-                $button-disabled-text,
-                $button-disabled-bg,
-                $button-disabled-border,
-                $button-disabled-gradient
-            );
-            @include box-shadow( $button-disabled-shadow );
-        }
-
-    }
     .k-button.k-primary {
-        @extend .k-button-primary;
+        @extend .k-button-solid-primary !optional;
     }
 
     $_shade-fn: get-function( $solid-button-shade-function );
 
     @each $name, $color in $button-theme-colors {
+        $_button-text: contrast-wcag( $color );
+        $_button-bg: if( $solid-button-shade-bg-amount, call( $_shade-fn, $color, $solid-button-shade-bg-amount ), null );
+        $_button-border: if( $solid-button-shade-border-amount, call( $_shade-fn, $color, $solid-button-shade-border-amount ), null );
+
+        $_button-hover-text: null;
+        $_button-hover-bg: if( $solid-button-hover-shade-bg-amount, call( $_shade-fn, $color, $solid-button-hover-shade-bg-amount ), null );
+        $_button-hover-border: if( $solid-button-hover-shade-border-amount, call( $_shade-fn, $color, $solid-button-hover-shade-border-amount ), null );
+
+        $_button-active-text: null;
+        $_button-active-bg: if( $solid-button-active-shade-bg-amount, call( $_shade-fn, $color, $solid-button-active-shade-bg-amount ), null );
+        $_button-active-border: if( $solid-button-active-shade-border-amount, call( $_shade-fn, $color, $solid-button-active-shade-border-amount ), null );
+
         .k-button-solid.k-button-solid-#{$name} {
             @include fill(
-                contrast-wcag( $color ),
-                if( $solid-button-shade-bg-amount, call( $_shade-fn, $color, $solid-button-shade-bg-amount ), null ),
-                if( $solid-button-shade-border-amount, call( $_shade-fn, $color, $solid-button-shade-border-amount ), null ),
+                $_button-text,
+                $_button-bg,
+                $_button-border,
                 $solid-button-gradient
             );
 
@@ -151,9 +96,9 @@
             &:hover,
             &.k-state-hover {
                 @include fill(
-                    null,
-                    if( $solid-button-hover-shade-bg-amount, call( $_shade-fn, $color, $solid-button-hover-shade-bg-amount ), null ),
-                    if( $solid-button-hover-shade-border-amount, call( $_shade-fn, $color, $solid-button-hover-shade-border-amount ), null )
+                    $_button-hover-text,
+                    $_button-hover-bg,
+                    $_button-hover-border
                 );
             }
 
@@ -161,7 +106,7 @@
             &:focus,
             &.k-state-focus {
                 @if ( $solid-button-shadow ) {
-                    box-shadow: 0 0 $solid-button-shadow-blur $solid-button-shadow-spread rgba( $color, $solid-button-shadow-opacity );
+                    box-shadow: 0 0 $solid-button-shadow-blur $solid-button-shadow-spread rgba( $_button-border, $solid-button-shadow-opacity );
                 }
             }
 
@@ -169,18 +114,18 @@
             &:active,
             &.k-state-active {
                 @include fill(
-                    null,
-                    if( $solid-button-active-shade-bg-amount, call( $_shade-fn, $color, $solid-button-active-shade-bg-amount ), null ),
-                    if( $solid-button-active-shade-border-amount, call( $_shade-fn, $color, $solid-button-active-shade-border-amount ), null )
+                    $_button-active-text,
+                    $_button-active-bg,
+                    $_button-active-border
                 );
             }
 
             // Selected
             &.k-state-selected {
                 @include fill(
-                    null,
-                    if( $solid-button-active-shade-bg-amount, call( $_shade-fn, $color, $solid-button-active-shade-bg-amount ), null ),
-                    if( $solid-button-active-shade-border-amount, call( $_shade-fn, $color, $solid-button-active-shade-border-amount ), null )
+                    $_button-active-text,
+                    $_button-active-bg,
+                    $_button-active-border
                 );
             }
         }
@@ -255,50 +200,7 @@
         }
     }
     .k-button-outline.k-primary {
-        border-color: currentColor;
-        color: $primary;
-        background: none;
-        box-shadow: none;
-
-        // Hover state
-        &:hover,
-        &.k-state-hover {
-            @include fill(
-                contrast-wcag( $primary ),
-                $primary,
-                $primary
-            );
-        }
-
-        // Focused state
-        &:focus,
-        &.k-state-focus,
-        &.k-state-focused {
-            @if ($outline-button-shadow) {
-                box-shadow: 0 0 $outline-button-shadow-blur $outline-button-shadow-spread rgba( $primary, $outline-button-shadow-opacity );
-            }
-        }
-
-        // Active state
-        &:active,
-        &.k-state-active {
-            @include fill(
-                contrast-wcag( $primary ),
-                $primary,
-                $primary
-            );
-            box-shadow: none;
-        }
-
-        // Selected state
-        &.k-state-selected {
-            @include fill(
-                contrast-wcag( $primary ),
-                $primary,
-                $primary
-            );
-            box-shadow: none;
-        }
+        @extend .k-button-outline-primary !optional;
     }
 
     @each $name, $color in $button-theme-colors {
@@ -369,18 +271,15 @@
         &.k-state-focus {
             color: inherit;
         }
+
+        // Disabled state
+        &:disabled,
+        &.k-state-disabled {
+            color: $button-disabled-text;
+        }
     }
     .k-button-flat.k-primary {
-
-        &,
-        &:hover,
-        &.k-state-hover,
-        &:active,
-        &.k-state-active,
-        &:focus,
-        &.k-state-focus {
-            color: $primary;
-        }
+        @extend .k-button-flat-primary !optional;
     }
 
     @each $name, $color in $button-theme-colors {
@@ -399,13 +298,7 @@
             // Disabled state
             &:disabled,
             &.k-state-disabled {
-                @include fill(
-                    $button-disabled-text,
-                    $button-disabled-bg,
-                    $button-disabled-border,
-                    $button-disabled-gradient
-                );
-                @include box-shadow( $button-disabled-shadow );
+                color: $button-disabled-text;
             }
         }
     }
@@ -417,7 +310,7 @@
 
 @include exports( "link-button/theme" ) {
 
-    @each $name, $color in map-merge( $button-theme-colors, ( "base": $base-text, "primary": $primary ) ) {
+    @each $name, $color in map-merge( $button-theme-colors, ( "base": $base-text ) ) {
         .k-button-link.k-button-link-#{$name} {
             @include box-shadow( none );
             color: $color;
