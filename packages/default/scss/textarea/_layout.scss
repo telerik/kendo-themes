@@ -1,6 +1,8 @@
 @include exports( "textarea/layout" ) {
 
     // Textarea
-    .k-textarea {}
+    .k-textarea {
+        display: flex;
+    }
 
 }
