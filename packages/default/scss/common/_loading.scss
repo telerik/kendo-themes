@@ -1,17 +1,5 @@
 @include exports( "common/loading" ) {
 
-    // Loading indicator
-    .k-loading {
-        width: 64px;
-        height: 64px;
-        display: block;
-
-        .animate {
-            animation: loading 2s infinite linear;
-        }
-    }
-
-
     // Loading mask
     .k-loading-mask,
     .k-loading-image,

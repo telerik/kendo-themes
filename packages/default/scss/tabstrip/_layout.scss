@@ -112,6 +112,9 @@
         left: 0;
         transition: width .2s linear;
 
+        // TODO: a better name
+        display: none;
+
         &.k-complete {
             width: 100%;
             border-top-width: 0;
