@@ -10,9 +10,13 @@
             padding: .4em .6em;
             line-height: 1.6em;
 
+            // TODO: see what this does and use a better name
             .k-loading {
                 vertical-align: baseline;
                 margin-right: 5px;
+
+                // TODO
+                display: none;
             }
         }
 
