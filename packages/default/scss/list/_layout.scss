@@ -120,21 +120,6 @@
         }
     }
 
-    .k-dropdown-button .k-popup {
-        .k-item {
-            cursor: pointer;
-        }
-    }
-
-    // SplitButton
-    // TODO: Wait for final design + revise
-    .k-split-button,
-    .k-dropdown-button {
-        .k-list .k-item:focus {
-            outline: none;
-        }
-    }
-
     .k-virtual-content {
         overflow-y: scroll;
         -webkit-overflow-scrolling: touch;
