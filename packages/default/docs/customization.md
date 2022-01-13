@@ -867,12 +867,12 @@ The following table lists the available variables for customizing the Default th
 <td>
 
 
-`$button-active-bg`
+`$primary`
 
 </td>
-<td>
+<td><span class="color-preview" style="background-color: #ff6358"></span>
 
-`try-shade( $button-bg, 1.5 )`
+`#ff6358`
 
 </td>
 </tr>
@@ -886,12 +886,12 @@ The following table lists the available variables for customizing the Default th
 <td>
 
 
-`$button-active-text`
+`contrast-wcag( $button-selected-bg )`
 
 </td>
 <td>
 
-`null`
+`contrast-wcag( $button-selected-bg )`
 
 </td>
 </tr>
@@ -905,12 +905,12 @@ The following table lists the available variables for customizing the Default th
 <td>
 
 
-`$button-active-border`
+`$button-selected-bg`
 
 </td>
-<td>
+<td><span class="color-preview" style="background-color: #ff6358"></span>
 
-`null`
+`#ff6358`
 
 </td>
 </tr>
