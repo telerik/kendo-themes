@@ -19,6 +19,16 @@
     }
 
 
+    // Treeview filter
+    .k-treeview-filter {
+        padding: map-get( $spacing, 1 );
+        box-sizing: border-box;
+        display: block;
+        position: relative;
+        flex: none;
+    }
+
+
     // Treeview group
     .k-treeview-group,
     .k-treeview .k-group {
@@ -189,6 +199,6 @@
                 margin-left: $icon-spacing;
             }
         }
-
     }
+
 }
