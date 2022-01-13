@@ -471,12 +471,12 @@ The following table lists the available variables for customization.
 <td>
 
 
-`$button-active-bg`
+`$primary`
 
 </td>
-<td>
+<td><span class="color-preview" style="background-color: #f35800"></span>
 
-`try-shade( $button-bg, 2 )`
+`#f35800`
 
 </td>
 </tr>
@@ -490,12 +490,12 @@ The following table lists the available variables for customization.
 <td>
 
 
-`$button-active-text`
+`contrast-wcag( $button-selected-bg )`
 
 </td>
 <td>
 
-`null`
+`contrast-wcag( $button-selected-bg )`
 
 </td>
 </tr>
@@ -509,12 +509,12 @@ The following table lists the available variables for customization.
 <td>
 
 
-`$button-active-border`
+`$button-selected-bg`
 
 </td>
-<td>
+<td><span class="color-preview" style="background-color: #f35800"></span>
 
-`try-shade( $button-bg, 4 )`
+`#f35800`
 
 </td>
 </tr>
