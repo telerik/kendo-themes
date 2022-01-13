@@ -107,13 +107,13 @@ $button-active-shadow: null !default;
 
 /// The background color of selected buttons.
 /// @group button
-$button-selected-bg: $button-active-bg !default;
+$button-selected-bg: $primary !default;
 /// The text color of selected buttons.
 /// @group button
-$button-selected-text: $button-active-text !default;
+$button-selected-text: contrast-wcag( $button-selected-bg ) !default;
 /// The border color of selected buttons.
 /// @group button
-$button-selected-border: $button-active-border !default;
+$button-selected-border: $button-selected-bg !default;
 /// The background gradient of selected buttons.
 /// @group button
 $button-selected-gradient: null !default;
