@@ -867,12 +867,12 @@ The following table lists the available variables for customizing the Bootstrap 
 <td>
 
 
-`$button-active-bg`
+`try-darken( $primary, 10% )`
 
 </td>
 <td>
 
-`try-darken( $button-bg, 10% )`
+`try-darken( $primary, 10% )`
 
 </td>
 </tr>
@@ -886,12 +886,12 @@ The following table lists the available variables for customizing the Bootstrap 
 <td>
 
 
-`$button-active-text`
+`contrast-wcag( $button-selected-bg )`
 
 </td>
 <td>
 
-`null`
+`contrast-wcag( $button-selected-bg )`
 
 </td>
 </tr>
@@ -905,12 +905,12 @@ The following table lists the available variables for customizing the Bootstrap 
 <td>
 
 
-`$button-active-border`
+`try-darken( $primary, 12.5% )`
 
 </td>
 <td>
 
-`try-darken( $button-bg, 12.5% )`
+`try-darken( $primary, 12.5% )`
 
 </td>
 </tr>
