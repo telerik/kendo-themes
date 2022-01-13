@@ -26,7 +26,7 @@ The following table lists the available variables for customization.
 </thead>
 <tbody>
         <tr>
-    <td>$input-bg</td>
+    <td>$kendo-input-bg</td>
     <td></td>
 <td>
 
@@ -45,7 +45,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$input-text</td>
+    <td>$kendo-input-text</td>
     <td></td>
 <td>
 
@@ -64,7 +64,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$input-border</td>
+    <td>$kendo-input-border</td>
     <td></td>
 <td>
 
@@ -83,12 +83,12 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$input-hover-bg</td>
+    <td>$kendo-input-hover-bg</td>
     <td></td>
 <td>
 
 
-`$input-bg`
+`$kendo-input-bg`
 
 </td>
 <td>
@@ -102,12 +102,12 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$input-hover-text</td>
+    <td>$kendo-input-hover-text</td>
     <td></td>
 <td>
 
 
-`$input-text`
+`$kendo-input-text`
 
 </td>
 <td>
@@ -121,17 +121,17 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$input-hover-border</td>
+    <td>$kendo-input-hover-border</td>
     <td></td>
 <td>
 
 
-`try-shade( $input-border, 1 )`
+`try-shade( $kendo-input-border, 1 )`
 
 </td>
 <td>
 
-`try-shade( $input-border, 1 )`
+`try-shade( $kendo-input-border, 1 )`
 
 </td>
 </tr>
@@ -140,12 +140,12 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$input-focus-bg</td>
+    <td>$kendo-input-focus-bg</td>
     <td></td>
 <td>
 
 
-`$input-hover-bg`
+`$kendo-input-hover-bg`
 
 </td>
 <td>
@@ -159,12 +159,12 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$input-focus-text</td>
+    <td>$kendo-input-focus-text</td>
     <td></td>
 <td>
 
 
-`$input-hover-text`
+`$kendo-input-hover-text`
 
 </td>
 <td>
@@ -178,17 +178,17 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$input-focus-border</td>
+    <td>$kendo-input-focus-border</td>
     <td></td>
 <td>
 
 
-`$input-hover-border`
+`$kendo-input-hover-border`
 
 </td>
 <td>
 
-`try-shade( $input-border, 1 )`
+`try-shade( $kendo-input-border, 1 )`
 
 </td>
 </tr>

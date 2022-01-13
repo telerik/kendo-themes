@@ -29,14 +29,14 @@ The following table lists the available variables for customization.
     <td>$series-a</td>
     <td></td>
 <td>
-<span class="color-preview" style="background-color: #0275d8"></span>
 
-`#0275d8`
+
+`$teal`
 
 </td>
-<td><span class="color-preview" style="background-color: #0275d8"></span>
+<td>
 
-`#0275d8`
+
 
 </td>
 </tr>
@@ -48,14 +48,14 @@ The following table lists the available variables for customization.
     <td>$series-b</td>
     <td></td>
 <td>
-<span class="color-preview" style="background-color: #5bc0de"></span>
 
-`#5bc0de`
+
+`$blue`
 
 </td>
-<td><span class="color-preview" style="background-color: #5bc0de"></span>
+<td>
 
-`#5bc0de`
+
 
 </td>
 </tr>
@@ -67,14 +67,14 @@ The following table lists the available variables for customization.
     <td>$series-c</td>
     <td></td>
 <td>
-<span class="color-preview" style="background-color: #5cb85c"></span>
 
-`#5cb85c`
+
+`$purple`
 
 </td>
-<td><span class="color-preview" style="background-color: #5cb85c"></span>
+<td>
 
-`#5cb85c`
+
 
 </td>
 </tr>
@@ -86,14 +86,14 @@ The following table lists the available variables for customization.
     <td>$series-d</td>
     <td></td>
 <td>
-<span class="color-preview" style="background-color: #f0ad4e"></span>
 
-`#f0ad4e`
+
+`$red`
 
 </td>
-<td><span class="color-preview" style="background-color: #f0ad4e"></span>
+<td>
 
-`#f0ad4e`
+
 
 </td>
 </tr>
@@ -105,14 +105,14 @@ The following table lists the available variables for customization.
     <td>$series-e</td>
     <td></td>
 <td>
-<span class="color-preview" style="background-color: #e67d4a"></span>
 
-`#e67d4a`
+
+`$yellow`
 
 </td>
-<td><span class="color-preview" style="background-color: #e67d4a"></span>
+<td>
 
-`#e67d4a`
+
 
 </td>
 </tr>
@@ -124,14 +124,14 @@ The following table lists the available variables for customization.
     <td>$series-f</td>
     <td></td>
 <td>
-<span class="color-preview" style="background-color: #d9534f"></span>
 
-`#d9534f`
+
+`$green`
 
 </td>
-<td><span class="color-preview" style="background-color: #d9534f"></span>
+<td>
 
-`#d9534f`
+
 
 </td>
 </tr>
@@ -148,9 +148,9 @@ The following table lists the available variables for customization.
 `$series-a`
 
 </td>
-<td><span class="color-preview" style="background-color: #0275d8"></span>
+<td>
 
-`#0275d8`
+
 
 </td>
 </tr>
