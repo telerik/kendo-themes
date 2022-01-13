@@ -64,6 +64,21 @@
     .k-button .k-button-text {}
 
 
+    // Button arrow
+    .k-button-arrow {
+        padding-left: $button-padding-y;
+        padding-right: $button-padding-y;
+        flex: none;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .k-button > .k-button-arrow {
+        margin-inline-start: -$button-padding-y;
+        margin-inline-end: -$button-padding-x;
+    }
+
+
     // Text button
     .k-text-button {
 
@@ -90,6 +105,10 @@
             min-width: calc( #{$button-font-size} * #{$button-line-height} );
             min-height: calc( #{$button-font-size} * #{$button-line-height} );
         }
+    }
+    .k-icon-button > .k-button-arrow {
+        margin-inline-start: 0;
+        margin-inline-end: -$button-padding-y;
     }
     // TODO: REMOVE
     .k-button.k-button-icon {
