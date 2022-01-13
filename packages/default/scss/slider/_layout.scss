@@ -58,16 +58,29 @@
     }
 
 
+    // Slider wrap
+    .k-slider-wrap {
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        display: flex;
+        flex-flow: inherit;
+        align-items: inherit;
+        gap: inherit;
+        position: relative;
+    }
+
+
     // New rendering
     .k-slider {
         width: min-content;
         height: min-content;
         gap: calc( #{$slider-draghandle-size} / 2 );
 
-        > .k-button {
+        .k-button {
             flex: none;
         }
-        > .k-slider-track-wrap {
+        .k-slider-track-wrap {
             flex: 1 1 auto;
             display: flex;
             flex-flow: inherit;
@@ -75,6 +88,9 @@
             touch-action: none;
 
             .k-slider-items {
+                margin: 0;
+                padding: 0;
+                list-style: none;
                 // For some reason, Safari does not understand `flex-basis: 100%`
                 // See telerik/kendo-themes#2197
                 // flex-basis: 100%;
@@ -94,7 +110,7 @@
         }
 
         &-horizontal {
-            > .k-slider-track-wrap {
+            .k-slider-track-wrap {
                 height: 26px;
 
                 .k-slider-track {
@@ -147,7 +163,7 @@
         }
 
         &-vertical {
-            > .k-slider-track-wrap {
+            .k-slider-track-wrap {
                 width: 26px;
 
                 .k-slider-track {
@@ -399,4 +415,19 @@
             margin-top: -$tooltip-callout-size / 2;
         }
     }
+
+
+    // Angular specific
+    .k-slider kendo-resize-sensor {
+        position: absolute;
+    }
+    .k-slider-horizontal .k-slider-wrap:not(.k-slider-buttons) {
+        padding-left: calc( #{$slider-draghandle-size} / 2 );
+        padding-right: calc( #{$slider-draghandle-size} / 2 );
+    }
+    .k-slider-vertical .k-slider-wrap:not(.k-slider-buttons) {
+        padding-top: calc( #{$slider-draghandle-size} / 2 );
+        padding-bottom: calc( #{$slider-draghandle-size} / 2 );
+    }
+
 }
