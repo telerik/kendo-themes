@@ -6,6 +6,7 @@ class Button extends Component {
 
     init() {
         this._props.text = this.element.innerHTML;
+        this._props.children = [];
     }
 
     render() {
@@ -16,6 +17,7 @@ class Button extends Component {
 function ButtonStatic(props) {
     const {
         className: ownClassName,
+        children,
 
         text,
         type,
@@ -90,22 +92,34 @@ function ButtonStatic(props) {
 
         return (
             <button type={type} className={legacyClasses} {...ariaAttr} {...htmlAttributes}>
-                <IconStatic className="k-button-icon" name={icon} />
-                { text }
+                { children.length === 0
+                    ? <>
+                        <IconStatic className="k-button-icon" name={icon} />
+                        {text && <span className="k-button-text">{text}</span>}
+                    </>
+                    : children
+                }
             </button>
         );
     }
 
     return (
         <button type={type} className={buttonClasses} {...ariaAttr} {...htmlAttributes}>
-            <IconStatic className="k-button-icon" name={icon} />
-            {text && <span className="k-button-text">{text}</span>}
+            { children.length === 0
+                ? <>
+                    <IconStatic className="k-button-icon" name={icon} />
+                    {text && <span className="k-button-text">{text}</span>}
+                </>
+                : children
+            }
         </button>
     );
 }
 
 ButtonStatic.defaultProps = {
     ...globalDefaultProps,
+
+    children: [],
 
     text: '',
     icon: '',
@@ -122,6 +136,7 @@ ButtonStatic.defaultProps = {
 };
 
 ButtonStatic.propTypes = {
+    children: typeof [],
     text: typeof '',
     icon: typeof '',
 
