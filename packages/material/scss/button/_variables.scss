@@ -48,6 +48,9 @@ $button-calc-size: calc( #{$button-line-height * 1em} + #{$button-padding-y * 2}
 /// @group button
 $button-inner-calc-size: calc( #{$button-line-height * 1em} + #{$button-padding-y * 2} ) !default;
 
+$button-arrow-padding-x: map-get( $spacing, 1 ) !default;
+$button-arrow-padding-y: $button-padding-y !default;
+
 /// Theme colors map for the button.
 /// @group button
 $button-theme-colors: (
