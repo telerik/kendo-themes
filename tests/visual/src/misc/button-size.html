@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en" class="k-no-animations">
 <head>
-    <title>Button square -- rounded and size</title>
+    <title>Button -- size and rounded</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
     <link rel="stylesheet" href="../../assets/styles.css" />
@@ -10,7 +10,12 @@
 
     <style>
         #test-area {
-            grid-template-columns: 120px repeat(3, 1fr);
+            max-width: 1240px;
+            grid-template-columns: 80px 320px 320px 1fr;
+        }
+        small,
+        section {
+            white-space: nowrap;
         }
     </style>
 </head>
@@ -24,89 +29,89 @@
         <span>large</span>
 
         <span>null</span>
-        <span>
-            <button is="Button" size="small" rounded="null">Button</button>
-            <button is="Button" size="small" rounded="null" icon="folder">Button</button>
-            <button is="Button" size="small" rounded="null" icon="folder"></button>
-        </span>
-        <span>
-            <button is="Button" size="medium" rounded="null">Button</button>
-            <button is="Button" size="medium" rounded="null" icon="folder">Button</button>
-            <button is="Button" size="medium" rounded="null" icon="folder"></button>
-        </span>
-        <span>
-            <button is="Button" size="large" rounded="null">Button</button>
-            <button is="Button" size="large" rounded="null" icon="folder">Button</button>
-            <button is="Button" size="large" rounded="null" icon="folder"></button>
-        </span>
+        <section>
+            <button is="Button" size="small" rounded="none">Button</button>
+            <button is="Button" size="small" rounded="none" icon="folder">Button</button>
+            <button is="Button" size="small" rounded="none" icon="folder"></button>
+        </section>
+        <section>
+            <button is="Button" size="medium" rounded="none">Button</button>
+            <button is="Button" size="medium" rounded="none" icon="folder">Button</button>
+            <button is="Button" size="medium" rounded="none" icon="folder"></button>
+        </section>
+        <section>
+            <button is="Button" size="large" rounded="none">Button</button>
+            <button is="Button" size="large" rounded="none" icon="folder">Button</button>
+            <button is="Button" size="large" rounded="none" icon="folder"></button>
+        </section>
 
         <span>small</span>
-        <span>
+        <section>
             <button is="Button" size="small" rounded="small">Button</button>
             <button is="Button" size="small" rounded="small" icon="folder">Button</button>
             <button is="Button" size="small" rounded="small" icon="folder"></button>
-        </span>
-        <span>
+        </section>
+        <section>
             <button is="Button" size="medium" rounded="small">Button</button>
             <button is="Button" size="medium" rounded="small" icon="folder">Button</button>
             <button is="Button" size="medium" rounded="small" icon="folder"></button>
-        </span>
-        <span>
+        </section>
+        <section>
             <button is="Button" size="large" rounded="small">Button</button>
             <button is="Button" size="large" rounded="small" icon="folder">Button</button>
             <button is="Button" size="large" rounded="small" icon="folder"></button>
-        </span>
+        </section>
 
         <span>medium</span>
-        <span>
+        <section>
             <button is="Button" size="small">Button</button>
             <button is="Button" size="small" icon="folder">Button</button>
             <button is="Button" size="small" icon="folder"></button>
-        </span>
-        <span>
+        </section>
+        <section>
             <button is="Button" size="medium">Button</button>
             <button is="Button" size="medium" icon="folder">Button</button>
             <button is="Button" size="medium" icon="folder"></button>
-        </span>
-        <span>
+        </section>
+        <section>
             <button is="Button" size="large">Button</button>
             <button is="Button" size="large" icon="folder">Button</button>
             <button is="Button" size="large" icon="folder"></button>
-        </span>
+        </section>
 
         <span>large</span>
-        <span>
+        <section>
             <button is="Button" size="small" rounded="large">Button</button>
             <button is="Button" size="small" rounded="large" icon="folder">Button</button>
             <button is="Button" size="small" rounded="large" icon="folder"></button>
-        </span>
-        <span>
+        </section>
+        <section>
             <button is="Button" size="medium" rounded="large">Button</button>
             <button is="Button" size="medium" rounded="large" icon="folder">Button</button>
             <button is="Button" size="medium" rounded="large" icon="folder"></button>
-        </span>
-        <span>
+        </section>
+        <section>
             <button is="Button" size="large" rounded="large">Button</button>
             <button is="Button" size="large" rounded="large" icon="folder">Button</button>
             <button is="Button" size="large" rounded="large" icon="folder"></button>
-        </span>
+        </section>
 
         <span>full</span>
-        <span>
+        <section>
             <button is="Button" size="small" rounded="full">Button</button>
             <button is="Button" size="small" rounded="full" icon="folder">Button</button>
             <button is="Button" size="small" rounded="full" icon="folder"></button>
-        </span>
-        <span>
+        </section>
+        <section>
             <button is="Button" size="medium" rounded="full">Button</button>
             <button is="Button" size="medium" rounded="full" icon="folder">Button</button>
             <button is="Button" size="medium" rounded="full" icon="folder"></button>
-        </span>
-        <span>
+        </section>
+        <section>
             <button is="Button" size="large" rounded="full">Button</button>
             <button is="Button" size="large" rounded="full" icon="folder">Button</button>
             <button is="Button" size="large" rounded="full" icon="folder"></button>
-        </span>
+        </section>
 
     </div>
 

@@ -44,6 +44,30 @@
             </div>
         </section>
 
+        <span class="k-colspan-all">RTL</span>
+        <section class="k-colspan-all" dir="rtl">
+            <div class="k-widget k-toolbar k-toolbar-resizable">
+                <button is="Button" icon="more-vertical" class="k-overflow-anchor" fillMode="flat" rounded="null"></button>
+                <button is="Button" icon="bold"></button>
+                <button is="Button">Button</button>
+                <button is="Button" class="k-toggle-button">Toggle</button>
+                <div class="k-separator"></div>
+                <div class="k-button-group">
+                    <button is="Button" icon="align-left">Left</button>
+                    <button is="Button" icon="align-center">Center</button>
+                    <button is="Button" icon="align-right">Right</button>
+                </div>
+                <div class="k-separator"></div>
+                <button is="Button" themeColor="primary">Primary</button>
+                <div class="k-separator"></div>
+                <div class="k-toolbar-template">
+                    <label>Label:</label>
+                    <input is="Colorpicker" />
+                </div>
+                <input is="Switch" checked />
+            </div>
+        </section>
+
 
         <span class="k-colspan-all">Button states</span>
         <section class="k-colspan-all">
@@ -96,8 +120,8 @@
             <div class="k-widget k-toolbar k-toolbar-resizable">
                 <button is="Button" icon="more-vertical" class="k-overflow-anchor" fillMode="flat" rounded="null" disabled focus></button>
                 <button is="Button" disabled focus>Button</button>
-                <button is="Button" class="k-toggle-button" disabled focus>Toggle Button</button>
-                <button is="SplitButton" disabled>SplitButton</button>
+                <button is="MenuButton" disabled focus>Menu button</button>
+                <button is="SplitButton" disabled focus>Split button</button>
                 <div class="k-button-group">
                     <button is="Button" icon="align-left" disabled focus>Button 1</button>
                     <button is="Button" icon="align-center" disabled>Button 2</button>
@@ -105,13 +129,27 @@
             </div>
         </section>
 
-        <span class="k-colspan-all">wrapped kendo-jquery</span>
+        <span>wrapped</span>
+        <span>wrapped rtl</span>
         <section>
             <div class="k-widget k-toolbar">
                 <button is="Button">Button</button>
-                <button is="Button" class="k-toggle-button">Toggle</button>
-                <button is="Button" themeColor="primary">Primary</button>
-                <button is="Button">DropDownButton</button>
+                <button is="MenuButton">Menu button</button>
+                <button is="SplitButton">Split button</button>
+                <div class="k-button-group">
+                    <button is="Button" icon="align-left">Left</button>
+                    <button is="Button" icon="align-center">Center</button>
+                    <button is="Button" icon="align-right">Right</button>
+                    <button is="Button" icon="align-justify">Justify</button>
+                </div>
+            </div>
+        </section>
+
+        <section dir="rtl">
+            <div class="k-widget k-toolbar">
+                <button is="Button">Button</button>
+                <button is="SplitButton">Split button</button>
+                <button is="MenuButton">Menu button</button>
                 <div class="k-button-group">
                     <button is="Button" icon="align-left">Left</button>
                     <button is="Button" icon="align-center">Center</button>

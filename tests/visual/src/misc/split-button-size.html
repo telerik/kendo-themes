@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en" class="k-no-animations">
 <head>
-    <title>SplitButton rectangle -- rounded and size</title>
+    <title>Split button -- size and rounded</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
     <link rel="stylesheet" href="../../assets/styles.css" />
@@ -10,8 +10,12 @@
 
     <style>
         #test-area {
-            max-width: 1200px;
-            grid-template-columns: 90px 300px 300px 1fr;
+            max-width: 1240px;
+            grid-template-columns: 80px 320px 320px 1fr;
+        }
+        small,
+        section {
+            white-space: nowrap;
         }
     </style>
 </head>
@@ -24,90 +28,91 @@
         <span>medium</span>
         <span>large</span>
 
-        <span>none</span>
-        <span>
+        <span>null</span>
+        <section>
             <button is="SplitButton" size="small" rounded="none">Button</button>
             <button is="SplitButton" size="small" rounded="none" icon="folder">Button</button>
             <button is="SplitButton" size="small" rounded="none" icon="folder"></button>
-        </span>
-        <span>
+        </section>
+        <section>
             <button is="SplitButton" size="medium" rounded="none">Button</button>
             <button is="SplitButton" size="medium" rounded="none" icon="folder">Button</button>
             <button is="SplitButton" size="medium" rounded="none" icon="folder"></button>
-        </span>
-        <span>
+        </section>
+        <section>
             <button is="SplitButton" size="large" rounded="none">Button</button>
             <button is="SplitButton" size="large" rounded="none" icon="folder">Button</button>
             <button is="SplitButton" size="large" rounded="none" icon="folder"></button>
-        </span>
+        </section>
 
         <span>small</span>
-        <span>
+        <section>
             <button is="SplitButton" size="small" rounded="small">Button</button>
             <button is="SplitButton" size="small" rounded="small" icon="folder">Button</button>
             <button is="SplitButton" size="small" rounded="small" icon="folder"></button>
-        </span>
-        <span>
+        </section>
+        <section>
             <button is="SplitButton" size="medium" rounded="small">Button</button>
             <button is="SplitButton" size="medium" rounded="small" icon="folder">Button</button>
             <button is="SplitButton" size="medium" rounded="small" icon="folder"></button>
-        </span>
-        <span>
+        </section>
+        <section>
             <button is="SplitButton" size="large" rounded="small">Button</button>
             <button is="SplitButton" size="large" rounded="small" icon="folder">Button</button>
             <button is="SplitButton" size="large" rounded="small" icon="folder"></button>
-        </span>
+        </section>
 
         <span>medium</span>
-        <span>
+        <section>
             <button is="SplitButton" size="small">Button</button>
             <button is="SplitButton" size="small" icon="folder">Button</button>
             <button is="SplitButton" size="small" icon="folder"></button>
-        </span>
-        <span>
+        </section>
+        <section>
             <button is="SplitButton" size="medium">Button</button>
             <button is="SplitButton" size="medium" icon="folder">Button</button>
             <button is="SplitButton" size="medium" icon="folder"></button>
-        </span>
-        <span>
+        </section>
+        <section>
             <button is="SplitButton" size="large">Button</button>
             <button is="SplitButton" size="large" icon="folder">Button</button>
             <button is="SplitButton" size="large" icon="folder"></button>
-        </span>
+        </section>
 
         <span>large</span>
-        <span>
+        <section>
             <button is="SplitButton" size="small" rounded="large">Button</button>
             <button is="SplitButton" size="small" rounded="large" icon="folder">Button</button>
             <button is="SplitButton" size="small" rounded="large" icon="folder"></button>
-        </span>
-        <span>
+        </section>
+        <section>
             <button is="SplitButton" size="medium" rounded="large">Button</button>
             <button is="SplitButton" size="medium" rounded="large" icon="folder">Button</button>
             <button is="SplitButton" size="medium" rounded="large" icon="folder"></button>
-        </span>
-        <span>
+        </section>
+        <section>
             <button is="SplitButton" size="large" rounded="large">Button</button>
             <button is="SplitButton" size="large" rounded="large" icon="folder">Button</button>
             <button is="SplitButton" size="large" rounded="large" icon="folder"></button>
-        </span>
+        </section>
 
         <span>full</span>
-        <span>
+        <section>
             <button is="SplitButton" size="small" rounded="full">Button</button>
             <button is="SplitButton" size="small" rounded="full" icon="folder">Button</button>
             <button is="SplitButton" size="small" rounded="full" icon="folder"></button>
-        </span>
-        <span>
+        </section>
+        <section>
             <button is="SplitButton" size="medium" rounded="full">Button</button>
             <button is="SplitButton" size="medium" rounded="full" icon="folder">Button</button>
             <button is="SplitButton" size="medium" rounded="full" icon="folder"></button>
-        </span>
-        <span>
+        </section>
+        <section>
             <button is="SplitButton" size="large" rounded="full">Button</button>
             <button is="SplitButton" size="large" rounded="full" icon="folder">Button</button>
             <button is="SplitButton" size="large" rounded="full" icon="folder"></button>
-        </span>
+        </section>
+
     </div>
 
 </body>
