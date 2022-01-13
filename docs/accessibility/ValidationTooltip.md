@@ -2,7 +2,7 @@
 title: Validation Tooltip
 category: accessibility
 slug: validation-tooltip
-position: 55
+position: 56
 ---
 # ValidationTooltip Keyboard Support
 

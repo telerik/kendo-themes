@@ -2,7 +2,7 @@
 title: Text Area
 category: accessibility
 slug: text-area
-position: 43
+position: 44
 ---
 # Splitter Keyboard Support
 

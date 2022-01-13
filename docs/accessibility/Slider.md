@@ -2,7 +2,7 @@
 title: Slider
 category: accessibility
 slug: slider
-position: 38
+position: 39
 ---
 # Slider Keyboard Support
 

@@ -2,7 +2,7 @@
 title: Progress Bar
 category: accessibility
 slug: progress-bar
-position: 33
+position: 34
 ---
 # ChunkProgressBar Keyboard Support
 

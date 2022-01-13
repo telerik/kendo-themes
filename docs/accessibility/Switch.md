@@ -2,7 +2,7 @@
 title: Switch
 category: accessibility
 slug: switch
-position: 41
+position: 42
 ---
 # Switch Keyboard Support
 

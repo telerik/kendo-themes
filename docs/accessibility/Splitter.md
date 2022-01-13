@@ -2,7 +2,7 @@
 title: Splitter
 category: accessibility
 slug: splitter
-position: 39
+position: 40
 ---
 # Splitter Keyboard Support
 

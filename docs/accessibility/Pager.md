@@ -2,7 +2,7 @@
 title: Pager
 category: accessibility
 slug: pager
-position: 32
+position: 33
 ---
 # Pager Keyboard Support
 

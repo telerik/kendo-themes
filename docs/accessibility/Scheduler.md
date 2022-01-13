@@ -2,7 +2,7 @@
 title: Scheduler
 category: accessibility
 slug: scheduler
-position: 37
+position: 38
 ---
 # Scheduler Keyboard Support
 

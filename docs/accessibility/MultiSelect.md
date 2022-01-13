@@ -2,7 +2,7 @@
 title: Multi Select
 category: accessibility
 slug: multi-select
-position: 29
+position: 30
 ---
 # MultiSelect Keyboard Support
 
