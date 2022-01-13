@@ -10,63 +10,84 @@
 
     <style>
         #test-area {
-            grid-template-columns: 120px repeat(5, 1fr);
+            grid-template-columns: 120px repeat(3, 1fr);
         }
     </style>
 </head>
 <body class="k-body">
 
-    <div id="test-area" class="k-d-grid">
-        <span></span>
-        <span>Normal</span>
-        <span>Hover</span>
-        <span>Focus</span>
-        <span>Active</span>
-        <span>Disabled</span>
+    <div id="test-area" class="k-d-grid k-grid-cols-4">
 
-        <span>text</span>
-        <section><button is="MenuButton">Normal</button></section>
-        <section><button is="MenuButton" hover>Hover</button></section>
-        <section><button is="MenuButton" focus>Focus</button></section>
-        <section><button is="MenuButton" active>Active</button></section>
-        <section><button is="MenuButton" disabled>Disabled</button></section>
+        <span><small>state / fillmode</small></span>
+        <span>solid</span>
+        <span>outline</span>
+        <span>flat</span>
 
-        <span>text + icon</span>
-        <section><button is="MenuButton" icon="folder">Normal</button></section>
-        <section><button is="MenuButton" icon="folder" hover>Hover</button></section>
-        <section><button is="MenuButton" icon="folder" focus>Focus</button></section>
-        <section><button is="MenuButton" icon="folder" active>Active</button></section>
-        <section><button is="MenuButton" icon="folder" disabled>Disabled</button></section>
+        <span>normal</span>
+        <span>
+            <button is="MenuButton" icon="save">Button</button>
+        </span>
+        <span>
+            <button is="MenuButton" fillMode="outline" icon="save">Button</button>
+        </span>
+        <span>
+            <button is="MenuButton" fillMode="flat" icon="save">Button</button>
+        </span>
 
-        <span>icon</span>
-        <section><button is="MenuButton" icon="folder"></button></section>
-        <section><button is="MenuButton" icon="folder" hover></button></section>
-        <section><button is="MenuButton" icon="folder" focus></button></section>
-        <section><button is="MenuButton" icon="folder" active></button></section>
-        <section><button is="MenuButton" icon="folder" disabled></button></section>
+        <span>hover</span>
+        <span>
+            <button is="MenuButton" icon="save" hover>Button</button>
+        </span>
+        <span>
+            <button is="MenuButton" fillMode="outline" icon="save" hover>Button</button>
+        </span>
+        <span>
+            <button is="MenuButton" fillMode="flat" icon="save" hover>Button</button>
+        </span>
 
-        <span class="k-colspan-all"></span>
+        <span>focus</span>
+        <span>
+            <button is="MenuButton" icon="save" focus>Button</button>
+        </span>
+        <span>
+            <button is="MenuButton" fillMode="outline" icon="save" focus>Button</button>
+        </span>
+        <span>
+            <button is="MenuButton" fillMode="flat" icon="save" focus>Button</button>
+        </span>
 
-        <span></span>
-        <section dir="rtl"><button is="MenuButton">Normal</button></section>
-        <section dir="rtl"><button is="MenuButton" hover>Hover</button></section>
-        <section dir="rtl"><button is="MenuButton" focus>Focus</button></section>
-        <section dir="rtl"><button is="MenuButton" active>Active</button></section>
-        <section dir="rtl"><button is="MenuButton" disabled>Disabled</button></section>
+        <span>active</span>
+        <span>
+            <button is="MenuButton" icon="save" active>Button</button>
+        </span>
+        <span>
+            <button is="MenuButton" fillMode="outline" icon="save" active>Button</button>
+        </span>
+        <span>
+            <button is="MenuButton" fillMode="flat" icon="save" active>Button</button>
+        </span>
 
-        <span></span>
-        <section dir="rtl"><button is="MenuButton" icon="folder">Normal</button></section>
-        <section dir="rtl"><button is="MenuButton" icon="folder" hover>Hover</button></section>
-        <section dir="rtl"><button is="MenuButton" icon="folder" focus>Focus</button></section>
-        <section dir="rtl"><button is="MenuButton" icon="folder" active>Active</button></section>
-        <section dir="rtl"><button is="MenuButton" icon="folder" disabled>Disabled</button></section>
+        <span>disabled</span>
+        <span>
+            <button is="MenuButton" icon="save" disabled>Button</button>
+        </span>
+        <span>
+            <button is="MenuButton" fillMode="outline" icon="save" disabled>Button</button>
+        </span>
+        <span>
+            <button is="MenuButton" fillMode="flat" icon="save" disabled>Button</button>
+        </span>
 
-        <span></span>
-        <section dir="rtl"><button is="MenuButton" icon="folder"></button></section>
-        <section dir="rtl"><button is="MenuButton" icon="folder" hover></button></section>
-        <section dir="rtl"><button is="MenuButton" icon="folder" focus></button></section>
-        <section dir="rtl"><button is="MenuButton" icon="folder" active></button></section>
-        <section dir="rtl"><button is="MenuButton" icon="folder" disabled></button></section>
+        <span>rtl</span>
+        <span>
+            <button is="MenuButton" icon="save" dir="rtl">Button</button>
+        </span>
+        <span>
+            <button is="MenuButton" fillMode="outline" icon="save" dir="rtl">Button</button>
+        </span>
+        <span>
+            <button is="MenuButton" fillMode="flat" icon="save" dir="rtl">Button</button>
+        </span>
 
     </div>
 

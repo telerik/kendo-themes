@@ -19,27 +19,19 @@
         <section class="k-colspan-all">
             <kendo-toolbar class="k-widget k-toolbar">
                 <kendo-toolbar-renderer>
-                    <button is="Button">Angular Button</button>
+                    <button is="Button">Button</button>
                 </kendo-toolbar-renderer>
                 <kendo-toolbar-renderer>
                     <div class="k-separator"></div>
                 </kendo-toolbar-renderer>
                 <kendo-toolbar-renderer>
-                    <button is="Button" selected>Toggle</button>
+                    <button is="SplitButton">Split button</button>
                 </kendo-toolbar-renderer>
                 <kendo-toolbar-renderer>
                     <div class="k-separator"></div>
                 </kendo-toolbar-renderer>
                 <kendo-toolbar-renderer>
-                    <button is="SplitButton">SplitButton</button>
-                </kendo-toolbar-renderer>
-                <kendo-toolbar-renderer>
-                    <div class="k-separator"></div>
-                </kendo-toolbar-renderer>
-                <kendo-toolbar-renderer>
-                    <div class="k-widget k-dropdown-button">
-                        <button is="Button">DropDownButton</button>
-                    </div>
+                    <button is="MenuButton">Menu button</button>
                 </kendo-toolbar-renderer>
                 <kendo-toolbar-renderer>
                     <div class="k-separator"></div>
@@ -49,29 +41,47 @@
                         <button is="Button" icon="align-left"></button>
                         <button is="Button" icon="align-center"></button>
                         <button is="Button" icon="align-right"></button>
-                        <button is="Button" icon="align-justify" selected></button>
+                        <button is="Button" icon="align-justify"></button>
                     </div>
                 </kendo-toolbar-renderer>
             </kendo-toolbar>
         </section>
 
 
-        <span class="k-colspan-all">wrapped kendo-angular</span>
+        <span>wrapped</span>
+        <span>rtl</span>
+
         <section>
             <kendo-toolbar class="k-widget k-toolbar">
                 <kendo-toolbar-renderer>
                     <button is="Button">Button</button>
                 </kendo-toolbar-renderer>
                 <kendo-toolbar-renderer>
-                    <button is="Button">Toggle</button>
+                    <button is="SplitButton">Split button</button>
                 </kendo-toolbar-renderer>
                 <kendo-toolbar-renderer>
-                    <button is="Button" themeColor="primary">Primary</button>
+                    <button is="MenuButton">Menu button</button>
                 </kendo-toolbar-renderer>
                 <kendo-toolbar-renderer>
-                    <div class="k-widget k-dropdown-button">
-                        <button is="Button">DropDownButton</button>
+                    <div class="k-button-group">
+                        <button is="Button" icon="align-left">Left</button>
+                        <button is="Button" icon="align-center">Center</button>
+                        <button is="Button" icon="align-right">Right</button>
+                        <button is="Button" icon="align-justify">Justify</button>
                     </div>
+                </kendo-toolbar-renderer>
+            </kendo-toolbar>
+        </section>
+        <section dir="rtl">
+            <kendo-toolbar class="k-widget k-toolbar">
+                <kendo-toolbar-renderer>
+                    <button is="Button">Button</button>
+                </kendo-toolbar-renderer>
+                <kendo-toolbar-renderer>
+                    <button is="SplitButton">Split button</button>
+                </kendo-toolbar-renderer>
+                <kendo-toolbar-renderer>
+                    <button is="MenuButton">Menu button</button>
                 </kendo-toolbar-renderer>
                 <kendo-toolbar-renderer>
                     <div class="k-button-group">
