@@ -89,11 +89,6 @@
     .k-treeview .k-i-collapse {
         margin-left: -$treeview-indent;
         cursor: pointer;
-
-        + .k-checkbox-wrap,
-        + .k-checkbox-wrapper {
-            margin-left: $icon-spacing;
-        }
     }
 
 
@@ -106,6 +101,7 @@
     // Checkbox
     .k-treeview .k-checkbox-wrap,
     .k-treeview .k-checkbox-wrapper {
+        margin-left: $icon-spacing;
         margin-right: $icon-spacing;
         align-self: center;
     }
@@ -169,22 +165,10 @@
         .k-treeview-toggle {
             margin-left: 0;
             margin-right: -$treeview-indent;
-
-            + .k-checkbox-wrap,
-            + .k-checkbox-wrapper {
-                margin-right: $icon-spacing;
-            }
         }
 
         // Loading
         .k-treeview-loading {
-            margin-right: 0;
-            margin-left: $icon-spacing;
-        }
-
-        // Checkbox
-        .k-checkbox-wrap,
-        .k-checkbox-wrapper {
             margin-right: 0;
             margin-left: $icon-spacing;
         }
