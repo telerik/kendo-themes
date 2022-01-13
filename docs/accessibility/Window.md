@@ -2,7 +2,7 @@
 title: Window
 category: accessibility
 slug: window
-position: 56
+position: 57
 ---
 # Window Keyboard Support
 

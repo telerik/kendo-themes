@@ -2,7 +2,7 @@
 title: Numeric Text Box
 category: accessibility
 slug: numeric-text-box
-position: 31
+position: 32
 ---
 # NumericTextBox Keyboard Support
 

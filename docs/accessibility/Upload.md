@@ -2,7 +2,7 @@
 title: Upload
 category: accessibility
 slug: upload
-position: 52
+position: 53
 ---
 # Upload Keyboard Support
 

@@ -2,7 +2,7 @@
 title: Map
 category: accessibility
 slug: map
-position: 39
+position: 27
 ---
 # Map Keyboard Support
 

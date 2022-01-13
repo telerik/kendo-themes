@@ -2,7 +2,7 @@
 title: Stock Chart
 category: accessibility
 slug: stock-chart
-position: 40
+position: 41
 ---
 # StockChart Keyboard Support
 

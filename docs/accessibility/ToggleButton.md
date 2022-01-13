@@ -2,7 +2,7 @@
 title: Toggle Button
 category: accessibility
 slug: toggle-button
-position: 47
+position: 48
 ---
 # ToggleButton Keyboard Support
 

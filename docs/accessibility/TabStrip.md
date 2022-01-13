@@ -2,7 +2,7 @@
 title: Tab Strip
 category: accessibility
 slug: tab-strip
-position: 42
+position: 43
 ---
 # TabStrip Keyboard Support
 

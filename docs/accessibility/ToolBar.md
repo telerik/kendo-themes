@@ -2,7 +2,7 @@
 title: Tool Bar
 category: accessibility
 slug: tool-bar
-position: 48
+position: 49
 ---
 # ToolBar Keyboard Support
 

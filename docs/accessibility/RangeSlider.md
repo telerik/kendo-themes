@@ -2,7 +2,7 @@
 title: Range Slider
 category: accessibility
 slug: range-slider
-position: 36
+position: 37
 ---
 # RangeSlider Keyboard Support
 
