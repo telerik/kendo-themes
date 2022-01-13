@@ -66,8 +66,8 @@
 
     // Button arrow
     .k-button-arrow {
-        padding-left: $button-padding-y;
-        padding-right: $button-padding-y;
+        padding-left: $button-arrow-padding-y;
+        padding-right: $button-arrow-padding-y;
         flex: none;
         display: inline-flex;
         align-items: center;
@@ -208,7 +208,7 @@
         vertical-align: middle;
 
         .k-split-button-arrow {
-            padding: $button-padding-y;
+            padding: $button-arrow-padding-y $button-arrow-padding-x;
             width: auto;
             flex: none;
 
