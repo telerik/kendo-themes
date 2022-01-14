@@ -117,7 +117,7 @@
                 }
 
                 // Selected
-                &.k-state-selected {
+                &.k-selected {
                     @include fill(
                         $_button-active-text,
                         $_button-active-bg,
