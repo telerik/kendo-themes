@@ -2,62 +2,8 @@
 
 @include exports ("pivotgrid/layout/material/legacy") {
 
-    .k-pivot-toolbar .k-button,
-    .k-fieldselector .k-list li.k-item {
-        @include border-radius( 16px );
-
-        .k-field-actions {
-            top: initial;
-
-            .k-setting-delete {
-                border-radius: 50%;
-                padding: 2px;
-            }
-        }
-
-        &::before {
-            display: none;
-        }
-
-        &.k-empty {
-            border: 0;
-        }
-    }
-
     .k-pivot-rowheaders .k-grid tr .k-grid-footer {
         border-bottom-width: 0;
-    }
-
-    .k-fieldselector .k-list .k-item {
-        border-width: 0;
-    }
-
-    .k-fieldselector p,
-    .k-pivot-layout .k-button {
-        text-transform: none;
-    }
-
-    .k-fieldselector,
-    .k-pivot {
-        .k-i-arrow-60-right,
-        .k-i-arrow-e,
-        .k-i-sarrow-e,
-        .k-i-expand,
-        .k-i-expand-e {
-            &::before {
-                content: "\E014";
-            }
-        }
-
-        .k-i-arrow-60-down,
-        .k-i-arrow-s,
-        .k-i-sarrow-s,
-        .k-i-collapse,
-        .k-i-expand-s {
-            &::before {
-                content: "\E015";
-            }
-        }
     }
 
 }

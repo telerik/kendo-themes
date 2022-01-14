@@ -481,6 +481,7 @@
         border-style: solid;
         align-items: flex-start;
         flex-wrap: wrap;
+        box-shadow: none;
 
         > * {
             max-width: 100%;
@@ -489,33 +490,6 @@
         &::before {
             display: none;
         }
-    }
-
-    .k-pivot-toolbar .k-button,
-    .k-fieldselector .k-list li.k-item {
-        @include border-radius( $border-radius );
-        padding: $button-padding-y $button-padding-x;
-        padding-right: calc( #{$button-padding-x} + #{$icon-size * 3} );
-        min-height: auto;
-        font-size: $font-size;
-        line-height: $button-line-height;
-        text-align: left;
-        white-space: normal;
-        word-break: break-word;
-        position: relative;
-        cursor: move;
-
-        .k-field-actions .k-setting-delete {
-            box-sizing: content-box;
-        }
-    }
-
-    .k-field-actions {
-        position: absolute;
-        right: $button-padding-y;
-        top: $button-padding-y;
-        line-height: 1;
-        cursor: pointer;
     }
 
     .k-pivot-layout {
@@ -540,6 +514,8 @@
     .k-pivot-rowheaders > .k-grid,
     .k-pivot-table > .k-grid {
         border-width: 0;
+        color: inherit;
+        background: none;
     }
 
     .k-pivot-rowheaders > .k-grid td:first-child,
@@ -603,77 +579,73 @@
 @include exports("pivotgrid/configurator/layout/legacy") {
 
 
-    .k-fieldselector {
-        border-width: 1px;
-        border-style: solid;
+    // jquery specific -- old pivot
+    .k-pivotgrid-wrapper {
         box-sizing: border-box;
-        outline: 0;
-        font-family: $pivotgrid-font-family;
-        font-size: $pivotgrid-font-size;
-        line-height: $pivotgrid-line-height;
-        -webkit-touch-callout: none;
-        -webkit-tap-highlight-color: $rgba-transparent;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: flex-start;
+        gap: map-get( $spacing, 2 );
 
-        .k-columns {
+        > .k-pivotgrid-configurator-panel {
+            max-width: 320px;
+            flex: none;
+        }
+        > .k-pivot {
+            flex: 1;
+        }
+    }
+    .k-pivotgrid-configurator-panel.kendo-jquery {
+        box-sizing: border-box;
+        display: inline-flex;
+
+        .k-pivotgrid-configurator {
+            height: 100%;
+        }
+
+        .k-pivotgrid-configurator-content {
+            padding: map-get( $spacing, 4 );
+            max-height: 100%;
             display: flex;
-            align-items: stretch;
-
-            > div {
-                padding: $table-cell-padding-y;
-                width: 50%;
-                box-sizing: border-box;
-                border-width: 0;
-                border-style: solid;
-                float: left;
-                overflow: auto;
-            }
-            > div + div {
-                border-left-width: 1px;
-            }
+            flex-flow: column nowrap;
+            gap: map-get( $spacing, 4 );
+            overflow-x: hidden;
+            overflow-y: auto;
         }
 
-
-        p {
-            margin: 0 0 $padding-y-sm;
-            text-transform: uppercase;
-        }
-        p .k-icon {
-            margin: 0 $icon-spacing 0 0;
+        .k-pivotgrid-targets {
+            display: flex;
+            flex-flow: column nowrap;
+            gap: map-get( $spacing, 4 );
         }
 
-
-        // Treeview
-        .k-treeview {
-            border-width: 0;
-            overflow: visible;
+        .k-pivotgrid-configurator-section {
+            display: flex;
+            flex-flow: column nowrap;
+            gap: map-get( $spacing, 2 );
         }
 
-        .k-edit-label {
-            width: 16%;
-        }
-        .k-edit-field {
-            width: 77%;
-        }
-
-
-        // List container
-        .k-list-container {
-            margin-bottom: $spacer;
-            padding: $padding-y-sm;
+        .k-column-fields {
+            margin: 0;
+            padding: map-get( $spacing, 1 );
+            max-height: 200px;
             border-width: 1px;
             border-style: solid;
-        }
-        .k-list {
-            padding-bottom: $spacer;
-        }
-        .k-list .k-item {
-            border-width: 1px;
-            border-style: solid;
-        }
-        .k-list .k-item + .k-item {
-            margin-top: ($spacer / 2);
-        }
+            display: flex;
+            flex-flow: row wrap;
+            gap: map-get( $spacing, 1 );
+            overflow-x: hidden;
+            overflow-y: auto;
 
+            > * {
+                margin: 0;
+            }
+        }
+        .k-ie & .k-column-fields {
+            > * {
+                margin: 2px;
+            }
+        }
     }
 
 }
