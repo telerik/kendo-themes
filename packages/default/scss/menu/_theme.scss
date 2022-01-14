@@ -81,8 +81,13 @@
                 );
             }
 
-            &:focus,
             &.k-focus {
+                @include box-shadow( $kendo-menu-popup-item-focus-shadow );
+            }
+        }
+
+        .k-item {
+            &:focus {
                 @include box-shadow( $kendo-menu-popup-item-focus-shadow );
             }
         }
