@@ -17,10 +17,10 @@ $kendo-switch-thumb-border-width: 1px !default;
 
 /// Text transform of the switch label.
 /// @group switch
-$kendo-switch-label-text-transform: null !default;
+$kendo-switch-label-text-transform: uppercase !default;
 /// Display of the switch label.
 /// @group switch
-$kendo-switch-label-display: none !default;
+$kendo-switch-label-display: inline !default;
 
 /// Map with the different switch sizes.
 /// @group switch
