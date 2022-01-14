@@ -1,7 +1,7 @@
 {
   "name": "@progress/kendo-theme-default",
   "description": "SASS resources for the default Kendo UI theme",
-  "version": "4.43.1-dev.6",
+  "version": "5.0.0-beta.4",
   "author": "Progress",
   "license": "Apache-2.0",
   "keywords": [
@@ -46,7 +46,5 @@
     "dart:flat": "gulp dart:flat",
     "prepublishOnly": "echo 'no prebublish for default theme'",
     "postpublish": "echo 'no postpublish for default theme'"
-  },
-  "dependencies": {},
-  "devDependencies": {}
+  }
 }
