@@ -1328,7 +1328,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <td>
 
 
-`$teal`
+`$blue`
 
 </td>
 <td>
@@ -1347,7 +1347,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <td>
 
 
-`$blue`
+`$purple`
 
 </td>
 <td>
@@ -1366,7 +1366,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <td>
 
 
-`$purple`
+`$teal`
 
 </td>
 <td>
@@ -1385,7 +1385,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <td>
 
 
-`$red`
+`$green`
 
 </td>
 <td>
@@ -1423,7 +1423,7 @@ The following table lists the available variables for customizing the Bootstrap 
 <td>
 
 
-`$green`
+`$red`
 
 </td>
 <td>

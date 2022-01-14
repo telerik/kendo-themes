@@ -31,7 +31,7 @@ The following table lists the available variables for customization.
 <td>
 
 
-`$teal`
+`$blue`
 
 </td>
 <td>
@@ -50,7 +50,7 @@ The following table lists the available variables for customization.
 <td>
 
 
-`$blue`
+`$purple`
 
 </td>
 <td>
@@ -69,7 +69,7 @@ The following table lists the available variables for customization.
 <td>
 
 
-`$purple`
+`$teal`
 
 </td>
 <td>
@@ -88,7 +88,7 @@ The following table lists the available variables for customization.
 <td>
 
 
-`$red`
+`$green`
 
 </td>
 <td>
@@ -126,7 +126,7 @@ The following table lists the available variables for customization.
 <td>
 
 
-`$green`
+`$red`
 
 </td>
 <td>

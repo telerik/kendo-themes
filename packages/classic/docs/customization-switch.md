@@ -107,12 +107,12 @@ The following table lists the available variables for customization.
 <td>
 
 
-`null`
+`uppercase`
 
 </td>
 <td>
 
-`null`
+`uppercase`
 
 </td>
 </tr>
@@ -126,12 +126,12 @@ The following table lists the available variables for customization.
 <td>
 
 
-`none`
+`inline`
 
 </td>
 <td>
 
-`none`
+`inline`
 
 </td>
 </tr>

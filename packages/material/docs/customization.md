@@ -1328,12 +1328,12 @@ The following table lists the available variables for customizing the Material t
 <td>
 
 
-`get-base-hue( teal, 500 )`
+`get-base-hue( purple, 500 )`
 
 </td>
 <td>
 
-`get-base-hue( teal, 500 )`
+`get-base-hue( purple, 500 )`
 
 </td>
 </tr>
@@ -1366,12 +1366,12 @@ The following table lists the available variables for customizing the Material t
 <td>
 
 
-`get-base-hue( purple, 500 )`
+`get-base-hue( teal, 500 )`
 
 </td>
 <td>
 
-`get-base-hue( purple, 500 )`
+`get-base-hue( teal, 500 )`
 
 </td>
 </tr>
@@ -1385,12 +1385,12 @@ The following table lists the available variables for customizing the Material t
 <td>
 
 
-`get-base-hue( red, 500 )`
+`get-base-hue( yellow, 500 )`
 
 </td>
 <td>
 
-`get-base-hue( red, 500 )`
+`get-base-hue( yellow, 500 )`
 
 </td>
 </tr>
@@ -1404,12 +1404,12 @@ The following table lists the available variables for customizing the Material t
 <td>
 
 
-`get-base-hue( yellow, 500 )`
+`get-base-hue( red, 500 )`
 
 </td>
 <td>
 
-`get-base-hue( yellow, 500 )`
+`get-base-hue( red, 500 )`
 
 </td>
 </tr>
@@ -1447,7 +1447,7 @@ The following table lists the available variables for customizing the Material t
 </td>
 <td>
 
-`get-base-hue( teal, 500 )`
+`get-base-hue( purple, 500 )`
 
 </td>
 </tr>

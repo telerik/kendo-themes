@@ -6413,12 +6413,12 @@ The following table lists the available variables for customizing the Classic th
 <td>
 
 
-`null`
+`uppercase`
 
 </td>
 <td>
 
-`null`
+`uppercase`
 
 </td>
 </tr>
@@ -6432,12 +6432,12 @@ The following table lists the available variables for customizing the Classic th
 <td>
 
 
-`none`
+`inline`
 
 </td>
 <td>
 
-`none`
+`inline`
 
 </td>
 </tr>
