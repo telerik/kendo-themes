@@ -10,133 +10,122 @@
 
     <style>
         #test-area {
+            max-width: 660px;
             grid-template-columns: repeat(2, 1fr);
-        }
-
-        .k-fieldselector {
-            width: auto;
         }
     </style>
 </head>
 <body class="k-body">
 
-    <div id="test-area" class="grid">
+    <div id="test-area" class="k-d-grid k-grid-cols-2">
 
         <section>
-            <div class="k-widget k-fieldselector k-alt k-edit-form-container" style="height: 600px;">
-                <div class="k-columns k-floatwrap">
-                    <div>
-                        <p class="k-reset"><i is="Icon" name="group"></i>Fields</p>
-                        <ul is="Treeview">
-                            <li hasChildren showIcon iconName="arrows-dimensions">Axis</li>
-                            <li hasChildren showIcon iconName="sum">Sum</li>
-                            <li hasChildren showIcon iconName="arrows-kpi">KPI</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <p class="k-reset"><i is="Icon" name="columns"></i>Columns</p>
-                        <div class="k-list-container k-reset">
-                            <ul class="k-pivot-configurator-settings k-list k-reset k-pivot-setting">
-                                <li class="k-item k-header">
-                                    Column 1 Long text test
-                                    <span class="k-field-actions">
-                                        <i is="Icon" name="sort-asc-sm"></i>
-                                        <i is="Icon" class="k-setting-fieldmenu" name="more-vertical"></i>
-                                        <i is="Icon" class="k-setting-delete" name="x"></i>
-                                    </span>
-                                </li>
-                                <li class="k-item k-header">
-                                    Column2Longtexttest
-                                    <span class="k-field-actions">
-                                        <i is="Icon" name="sort-asc-sm"></i>
-                                        <i is="Icon" class="k-setting-fieldmenu" name="more-vertical"></i>
-                                        <i is="Icon" class="k-setting-delete" name="x"></i>
-                                    </span>
-                                </li>
-                            </ul>
+            <div class="k-pivotgrid-configurator-panel kendo-jquery">
+                <div class="k-pivotgrid-configurator">
+                    <div class="k-pivotgrid-configurator-content">
+
+                        <div class="k-pivotgrid-fields k-pivotgrid-configurator-section">
+                            <strong>Fields</strong>
+                            <div class="k-fields-list-wrapper">
+                                <ul is="Treeview">
+                                    <li hasChildren showIcon iconName="arrows-dimensions">Axis</li>
+                                    <li hasChildren showIcon iconName="sum">Sum</li>
+                                    <li hasChildren showIcon iconName="arrows-kpi">KPI</li>
+                                </ul>
+                            </div>
                         </div>
-                        <p class="k-reset"><i is="Icon" name="rows"></i>Rows</p>
-                        <div class="k-list-container k-reset">
-                            <ul class="k-pivot-configurator-settings k-list k-reset k-pivot-setting">
-                                <li class="k-item k-header">
-                                    Row 1
-                                    <span class="k-field-actions">
-                                        <i is="Icon" class="k-setting-fieldmenu" name="more-vertical"></i>
-                                        <i is="Icon" class="k-setting-delete" name="x"></i>
-                                    </span>
-                                </li>
-                            </ul>
+
+                        <div class="k-pivotgrid-targets">
+                            <div class="k-pivotgrid-target k-pivotgrid-configurator-section">
+                                <strong>Columns</strong>
+                                <div class="k-pivotgrid-target-wrap">
+                                    <div class="k-column-fields k-chip-list">
+                                        <div is="Chip" text="Column 1" actions="more, remove"></div>
+                                        <div is="Chip" text="Column 2" actions="more, remove"></div>
+                                        <div is="Chip" text="Column 3" actions="more, remove"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="k-pivotgrid-target k-pivotgrid-configurator-section">
+                                <strong>Rows</strong>
+                                <div class="k-pivotgrid-target-wrap">
+                                    <div class="k-column-fields k-chip-list">
+                                        <div is="Chip" text="Row 1" actions="more, remove"></div>
+                                        <div is="Chip" text="Row 2" actions="more, remove"></div>
+                                        <div is="Chip" text="Row 3" actions="more, remove"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="k-pivotgrid-target k-pivotgrid-configurator-section">
+                                <strong>Measures</strong>
+                                <div class="k-pivotgrid-target-wrap">
+                                    <div class="k-column-fields k-chip-list">
+                                        <div is="Chip" text="Measure 1" actions="more, remove"></div>
+                                        <div is="Chip" text="Measure 2" actions="more, remove"></div>
+                                        <div is="Chip" text="Measure 3" actions="more, remove"></div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <p class="k-reset"><i is="Icon" name="sum"></i>Measures</p>
-                        <div class="k-list-container k-reset">
-                            <ul class="k-pivot-configurator-settings k-list k-reset k-pivot-setting">
-                                <li class="k-item k-header">
-                                    Measure 1
-                                    <span class="k-field-actions">
-                                        <i is="Icon" class="k-setting-delete" name="x"></i>
-                                    </span>
-                                </li>
-                            </ul>
-                        </div>
+
                     </div>
                 </div>
             </div>
         </section>
 
         <section class="k-rtl">
-            <div class="k-widget k-fieldselector k-alt k-edit-form-container" style="height: 600px;">
-                <div class="k-columns k-floatwrap">
-                    <div>
-                        <p class="k-reset"><i is="Icon" name="group"></i>Fields</p>
-                        <ul is="Treeview">
-                            <li hasChildren showIcon iconName="arrows-dimensions">Axis</li>
-                            <li hasChildren showIcon iconName="sum">Sum</li>
-                            <li hasChildren showIcon iconName="arrows-kpi">KPI</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <p class="k-reset"><i is="Icon" name="columns"></i>Columns</p>
-                        <div class="k-list-container k-reset">
-                            <ul class="k-pivot-configurator-settings k-list k-reset k-pivot-setting">
-                                <li class="k-item k-header">
-                                    Column 1
-                                    <span class="k-field-actions">
-                                        <i is="Icon" class="k-setting-fieldmenu" name="more-vertical"></i>
-                                        <i is="Icon" class="k-setting-delete" name="x"></i>
-                                    </span>
-                                </li>
-                                <li class="k-item k-header">
-                                    Column 2
-                                    <span class="k-field-actions">
-                                        <i is="Icon" class="k-setting-fieldmenu" name="more-vertical"></i>
-                                        <i is="Icon" class="k-setting-delete" name="x"></i>
-                                    </span>
-                                </li>
-                            </ul>
+            <div class="k-pivotgrid-configurator-panel kendo-jquery">
+                <div class="k-pivotgrid-configurator">
+                    <div class="k-pivotgrid-configurator-content">
+
+                        <div class="k-pivotgrid-fields k-pivotgrid-configurator-section">
+                            <strong>Fields</strong>
+                            <div class="k-fields-list-wrapper">
+                                <ul is="Treeview">
+                                    <li hasChildren showIcon iconName="arrows-dimensions">Axis</li>
+                                    <li hasChildren showIcon iconName="sum">Sum</li>
+                                    <li hasChildren showIcon iconName="arrows-kpi">KPI</li>
+                                </ul>
+                            </div>
                         </div>
-                        <p class="k-reset"><i is="Icon" name="rows"></i>Rows</p>
-                        <div class="k-list-container k-reset">
-                            <ul class="k-pivot-configurator-settings k-list k-reset k-pivot-setting">
-                                <li class="k-item k-header">
-                                    Row 1
-                                    <span class="k-field-actions">
-                                        <i is="Icon" class="k-setting-fieldmenu" name="more-vertical"></i>
-                                        <i is="Icon" class="k-setting-delete" name="x"></i>
-                                    </span>
-                                </li>
-                            </ul>
+
+                        <div class="k-pivotgrid-targets">
+                            <div class="k-pivotgrid-target k-pivotgrid-configurator-section">
+                                <strong>Columns</strong>
+                                <div class="k-pivotgrid-target-wrap">
+                                    <div class="k-column-fields k-chip-list">
+                                        <div is="Chip" text="Column 1" actions="more, remove"></div>
+                                        <div is="Chip" text="Column 2" actions="more, remove"></div>
+                                        <div is="Chip" text="Column 3" actions="more, remove"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="k-pivotgrid-target k-pivotgrid-configurator-section">
+                                <strong>Rows</strong>
+                                <div class="k-pivotgrid-target-wrap">
+                                    <div class="k-column-fields k-chip-list">
+                                        <div is="Chip" text="Row 1" actions="more, remove"></div>
+                                        <div is="Chip" text="Row 2" actions="more, remove"></div>
+                                        <div is="Chip" text="Row 3" actions="more, remove"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="k-pivotgrid-target k-pivotgrid-configurator-section">
+                                <strong>Measures</strong>
+                                <div class="k-pivotgrid-target-wrap">
+                                    <div class="k-column-fields k-chip-list">
+                                        <div is="Chip" text="Measure 1" actions="more, remove"></div>
+                                        <div is="Chip" text="Measure 2" actions="more, remove"></div>
+                                        <div is="Chip" text="Measure 3" actions="more, remove"></div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <p class="k-reset"><i is="Icon" name="sum"></i>Measures</p>
-                        <div class="k-list-container k-reset">
-                            <ul class="k-pivot-configurator-settings k-list k-reset k-pivot-setting">
-                                <li class="k-item k-header">
-                                    Measure 1
-                                    <span class="k-field-actions">
-                                        <i is="Icon" class="k-setting-delete" name="x"></i>
-                                    </span>
-                                </li>
-                            </ul>
-                        </div>
+
                     </div>
                 </div>
             </div>
