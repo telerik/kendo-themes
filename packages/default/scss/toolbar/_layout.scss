@@ -138,6 +138,8 @@
 
     // Overflow container
     .k-overflow-container {
+        font-size: $kendo-menu-popup-font-size-md;
+        line-height: $kendo-input-line-height-md;
 
         > .k-item {
             border-color: inherit;
@@ -154,16 +156,24 @@
 
         // Button
         .k-overflow-button {
-            @include border-radius( 0 );
-            padding: $kendo-list-item-padding-y-md $kendo-list-item-padding-x-md;
+            padding: $kendo-menu-popup-item-padding-y-md $kendo-menu-popup-item-padding-x-md;
             width: 100%;
+            height: auto;
             border-width: 0;
+            border-radius: 0;
+            aspect-ratio: auto;
             color: inherit;
             background-color: transparent;
             background-image: none;
-            line-height: inherit;
+            font: inherit;
+            cursor: pointer;
             display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            align-content: center;
+            gap: $icon-spacing;
             justify-content: flex-start;
+            position: relative;
         }
 
         // Button group
