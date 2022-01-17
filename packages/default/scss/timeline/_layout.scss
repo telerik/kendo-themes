@@ -11,6 +11,12 @@
         -webkit-touch-callout: none;
         -webkit-tap-highlight-color: $rgba-transparent;
 
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
         ul {
             margin: 0;
             padding: 0;
@@ -28,7 +34,6 @@
             line-height: $timeline-flag-line-height;
             min-width: $timeline-flag-min-width;
             max-width: $timeline-flag-max-width;
-            box-sizing: border-box;
             position: relative;
             z-index: 1;
         }
@@ -108,7 +113,6 @@
         margin: $timeline-spacing-y 0;
         width: 100%;
         position: relative;
-        box-sizing: border-box;
         border: 0;
     }
 
@@ -298,12 +302,10 @@
 
         .k-timeline-card {
             height: 100%;
-            box-sizing: border-box;
         }
 
         .k-card {
             max-height: 100%;
-            box-sizing: border-box;
         }
 
         .k-timeline-events-list {

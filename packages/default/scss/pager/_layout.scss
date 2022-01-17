@@ -18,6 +18,12 @@
         -webkit-touch-callout: none;
         -webkit-tap-highlight-color: $rgba-transparent;
 
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
         .k-link {
             text-decoration: none;
             outline: 0;
@@ -70,7 +76,6 @@
     %base-pager-item {
         min-width: $button-calc-size;
         height: $button-calc-size;
-        box-sizing: border-box;
         color: inherit;
         text-align: center;
         display: inline-flex;
@@ -230,7 +235,6 @@
             }
 
             height: $button-calc-size;
-            box-sizing: border-box;
             border-color: inherit;
         }
 

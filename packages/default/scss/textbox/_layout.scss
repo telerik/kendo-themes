@@ -24,6 +24,12 @@
         position: relative;
         -webkit-appearance: none;
 
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
         // Hide clear icon
         &::-ms-clear { display: none; }
 

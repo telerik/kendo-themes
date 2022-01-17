@@ -7,6 +7,12 @@
         flex-flow: row nowrap;
         align-items: flex-start;
         gap: map-get( $spacing, 2 );
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
     }
 
 

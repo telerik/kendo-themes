@@ -3,11 +3,18 @@
     // Layout
     .k-map {
         height: 600px;
+        box-sizing: border-box;
         border-width: $map-border-width;
         border-style: solid;
         font-size: $map-font-size;
         line-height: $map-line-height;
         font-family: $map-font-family;
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
 
 
         // Scroll

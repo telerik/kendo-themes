@@ -1,8 +1,16 @@
 @include exports("filter/layout") {
+
     .k-filter {
+        box-sizing: border-box;
         border-width: 0;
         display: inline-block;
         background-color: transparent;
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
 
         ul {
             padding: 0;

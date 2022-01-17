@@ -24,6 +24,12 @@
         -webkit-appearance: none;
         position: relative;
 
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
         &:disabled,
         &.k-state-disabled {
             @include disabled( $disabled-styling );

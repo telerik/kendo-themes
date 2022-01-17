@@ -6,11 +6,18 @@
     .k-floating-label-container {
         padding-top: $floating-label-height;
         width: $input-default-width;
+        box-sizing: border-box;
         display: inline-flex;
         vertical-align: middle;
         position: relative;
         flex-direction: column;
         justify-content: stretch;
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
 
         > .k-label {
             max-width: 90%;

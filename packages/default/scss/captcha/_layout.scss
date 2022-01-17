@@ -10,6 +10,12 @@
         display: flex;
         flex-flow: column nowrap;
         gap: $captcha-gap;
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
     }
 
     // Image

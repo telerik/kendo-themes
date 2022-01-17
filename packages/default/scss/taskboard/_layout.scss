@@ -10,6 +10,12 @@
         display: flex;
         flex-direction: column;
         position: relative;
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
     }
 
     // Toolbar
@@ -78,7 +84,6 @@
     .k-taskboard-column-cards {
         padding: $taskboard-column-cards-padding-y $taskboard-column-cards-padding-x;
         min-height: 100%;
-        box-sizing: border-box;
         display: flex;
         flex-direction: column;
         gap: $taskboard-column-cards-gap 0;
@@ -110,7 +115,6 @@
         width: $taskboard-pane-width;
         border-width: $taskboard-pane-border-width;
         border-style: solid;
-        box-sizing: border-box;
         display: flex;
         flex-direction: column;
         position: absolute;

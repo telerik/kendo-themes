@@ -19,6 +19,12 @@
         cursor: pointer;
         user-select: none;
 
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
         .k-selected-icon-wrapper {
             display: none !important; // sass-lint:disable-line no-important
         }

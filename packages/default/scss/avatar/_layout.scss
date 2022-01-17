@@ -12,6 +12,12 @@
         justify-content: center;
         vertical-align: middle;
         overflow: hidden;
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
     }
 
 

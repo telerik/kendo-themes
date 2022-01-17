@@ -27,6 +27,12 @@
         overflow-y: auto;
         position: fixed;
         z-index: 10002;
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
     }
 
 
