@@ -112,7 +112,7 @@ The following table lists the available variables for customization.
 </td>
 <td>
 
-`contrast-wcag( $input-bg, $gray-400, $gray-600 )`
+`contrast-wcag( $checkbox-bg, $gray-400, $gray-600 )`
 
 </td>
 </tr>
