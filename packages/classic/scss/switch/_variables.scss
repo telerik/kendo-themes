@@ -2,17 +2,23 @@
 $switch-size: 60px !default;
 $switch-border-radius: 9999px !default;
 
+/// Font family of the switch.
+/// @group switch
 $switch-font-family: $font-family !default;
 $switch-font-size: $font-size-sm !default;
 $switch-line-height: $line-height !default;
 
 $switch-track-size: null !default;
+/// Border width of the switch track.
+/// @group switch
 $switch-container-border-width: 1px !default;
 $switch-container-padding-x: 2px !default;
 $switch-container-padding-y: $switch-container-padding-x !default;
 
 $switch-handle-size: 24px !default;
 $switch-handle-border-radius: 9999px !default;
+/// Border width of the switch thumb.
+/// @group switch
 $switch-handle-border-width: 1px !default;
 $switch-thumb-start-x: 0px !default;
 // TODO: Remove width property from jQuery and Blazor, and do not use 100% for thumb X calc
@@ -20,65 +26,154 @@ $switch-thumb-end-x: calc( 100% - #{$switch-handle-size}) !default;
 
 $switch-label-offset: 8px !default;
 $switch-label-width: calc( 100% - (#{$switch-handle-size} + #{$switch-label-offset} + #{$switch-container-padding-x} ) ) !default;
+/// Text transform of the switch label.
+/// @group switch
 $switch-label-text-transform: null !default;
+/// Display of the switch label.
+/// @group switch
 $switch-label-display: inline !default;
 
 $switch-container-shadow: null !default;
 $switch-container-hovered-shadow: null !default;
 $switch-container-focused-shadow: 0 0 3px 1px rgba( if($dark-theme, $white, $black), .25 ) !default;
 
-$switch-on-bg: $component-bg !default;
-$switch-on-text: $primary !default;
-$switch-on-border: $component-border !default;
-$switch-on-gradient: null !default;
-$switch-on-shadow: null !default;
-
-$switch-on-hovered-bg: null !default;
-$switch-on-hovered-text: null !default;
-$switch-on-hovered-border: null !default;
-$switch-on-hovered-gradient: null !default;
-
-$switch-on-focused-bg: null !default;
-$switch-on-focused-text: null !default;
-$switch-on-focused-border: null !default;
-$switch-on-focused-gradient: null !default;
-$switch-on-focused-shadow: null !default;
-
-$switch-on-handle-bg: $primary !default;
-$switch-on-handle-text: null !default;
-$switch-on-handle-border: try-shade( $switch-on-handle-bg ) !default;
-$switch-on-handle-gradient: $base-gradient !default;
-$switch-on-handle-shadow: null !default;
-
-$switch-on-handle-hovered-bg: try-shade( $switch-on-handle-bg ) !default;
-$switch-on-handle-hovered-text: null !default;
-$switch-on-handle-hovered-border: try-shade( $switch-on-handle-hovered-bg ) !default;
-$switch-on-handle-hovered-gradient: null !default;
-
+/// The background of the track when the switch is not checked.
+/// @group switch
 $switch-off-bg: $component-bg !default;
+/// The text color of the track when the switch is not checked.
+/// @group switch
 $switch-off-text: $component-text !default;
+/// The border color of the track when the switch is not checked.
+/// @group switch
 $switch-off-border: $component-border !default;
+/// The background gradient of the track when the switch is not checked.
+/// @group switch
 $switch-off-gradient: null !default;
 $switch-off-shadow: null !default;
 
+/// The background of the track when the hovered switch is not checked.
+/// @group switch
 $switch-off-hovered-bg: null !default;
+/// The text color of the track when the hovered switch is not checked.
+/// @group switch
 $switch-off-hovered-text: null !default;
+/// The border color of the track when the hovered switch is not checked.
+/// @group switch
 $switch-off-hovered-border: null !default;
+/// The background gradient of the track when the hovered switch is not checked.
+/// @group switch
 $switch-off-hovered-gradient: null !default;
 
+/// The background of the track when the focused switch is not checked.
+/// @group switch
 $switch-off-focused-bg: null !default;
+/// The text color of the track when the focused switch is not checked.
+/// @group switch
 $switch-off-focused-text: null !default;
+/// The border color of the track when the focused switch is not checked.
+/// @group switch
 $switch-off-focused-border: null !default;
+/// The background gradient of the track when the focused switch is not checked.
+/// @group switch
 $switch-off-focused-gradient: null !default;
+/// The ring around the track when the focused switch is not checked.
+/// @group switch
 $switch-off-focused-shadow: null !default;
 
+/// The background of the thumb when the switch is not checked.
+/// @group switch
 $switch-off-handle-bg: try-shade( $switch-off-bg ) !default;
+/// The text color of the thumb when the switch is not checked.
+/// @group switch
 $switch-off-handle-text: null !default;
+/// The border color of the thumb when the switch is not checked.
+/// @group switch
 $switch-off-handle-border: $switch-off-border !default;
+/// The background gradient of the thumb when the switch is not checked.
+/// @group switch
 $switch-off-handle-gradient: $base-gradient !default;
 $switch-off-handle-shadow: null !default;
 
+/// The background of the thumb when the hovered switch is not checked.
+/// @group switch
 $switch-off-handle-hovered-bg: try-shade( $switch-off-handle-bg ) !default;
+/// The text color of the thumb when the hovered switch is not checked.
+/// @group switch
 $switch-off-handle-hovered-text: null !default;
+/// The border color of the thumb when the hovered switch is not checked.
+/// @group switch
 $switch-off-handle-hovered-border: $switch-off-border !default;
+/// The background gradient of the thumb when the hovered switch is not checked.
+/// @group switch
 $switch-off-handle-hovered-gradient: null !default;
+
+
+/// The background of the track when the switch is checked.
+/// @group switch
+$switch-on-bg: $component-bg !default;
+/// The text color of the track when the switch is checked.
+/// @group switch
+$switch-on-text: $primary !default;
+/// The border color of the track when the switch is checked.
+/// @group switch
+$switch-on-border: $component-border !default;
+/// The background gradient of the track when the switch is checked.
+/// @group switch
+$switch-on-gradient: null !default;
+$switch-on-shadow: null !default;
+
+/// The background of the track wen the hovered switch is checked.
+/// @group switch
+$switch-on-hovered-bg: null !default;
+/// The text color of the track wen the hovered switch is checked.
+/// @group switch
+$switch-on-hovered-text: null !default;
+/// The border color of the track wen the hovered switch is checked.
+/// @group switch
+$switch-on-hovered-border: null !default;
+/// The background gradient of the track wen the hovered switch is checked.
+/// @group switch
+$switch-on-hovered-gradient: null !default;
+
+/// The background of the track wen the focused switch is checked.
+/// @group switch
+$switch-on-focused-bg: null !default;
+/// The text color of the track wen the focused switch is checked.
+/// @group switch
+$switch-on-focused-text: null !default;
+/// The border color of the track wen the focused switch is checked.
+/// @group switch
+$switch-on-focused-border: null !default;
+/// The background gradient of the track wen the focused switch is checked.
+/// @group switch
+$switch-on-focused-gradient: null !default;
+/// The ring around the track wen the focused switch is checked.
+/// @group switch
+$switch-on-focused-shadow: null !default;
+
+/// The background of the thumb when the switch is checked.
+/// @group switch
+$switch-on-handle-bg: $primary !default;
+/// The text color of the thumb when the switch is checked.
+/// @group switch
+$switch-on-handle-text: null !default;
+/// The border color of the thumb when the switch is checked.
+/// @group switch
+$switch-on-handle-border: try-shade( $switch-on-handle-bg ) !default;
+/// The background gradient of the thumb when the switch is checked.
+/// @group switch
+$switch-on-handle-gradient: $base-gradient !default;
+$switch-on-handle-shadow: null !default;
+
+/// The background of the thumb when the hovered switch is checked.
+/// @group switch
+$switch-on-handle-hovered-bg: try-shade( $switch-on-handle-bg ) !default;
+/// The text color of the thumb when the hovered switch is checked.
+/// @group switch
+$switch-on-handle-hovered-text: null !default;
+/// The border color of the thumb when the hovered switch is checked.
+/// @group switch
+$switch-on-handle-hovered-border: try-shade( $switch-on-handle-hovered-bg ) !default;
+/// The background gradient of the thumb when the hovered switch is checked.
+/// @group switch
+$switch-on-handle-hovered-gradient: null !default;
