@@ -73,11 +73,7 @@ function FabStatic(props) {
             ownClassName,
             'k-fab',
             `k-fab-${themeColor}`,
-            {
-                'k-fab-rectangle': rounded === null,
-                'k-fab-rounded': rounded !== 'full' && rounded !== null,
-                'k-fab-pill': rounded === 'full'
-            },
+            styles.roundedClass( rounded ),
             {
                 'k-state-hover': hover === true,
                 'k-state-focus': focus === true,
