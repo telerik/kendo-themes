@@ -134,19 +134,27 @@
             }
 
             > .k-button {
-                flex-shrink: 0;
+                width: auto;
+                height: auto;
+                flex: none;
                 align-self: stretch;
+                aspect-ratio: auto;
+
+                .k-button-icon {
+                    min-width: auto;
+                    min-height: auto;
+                }
             }
 
             &.k-hstack {
                 > .k-button {
-                    height: auto;
+                    padding: 0 map-get( $spacing, 1 );
                 }
             }
 
             &.k-vstack {
                 > .k-button {
-                    width: auto;
+                    padding: map-get( $spacing, 1 ) 0;
                 }
             }
         }
