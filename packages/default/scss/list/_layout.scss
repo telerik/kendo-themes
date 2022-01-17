@@ -66,7 +66,7 @@
         display: flex;
         align-items: center;
         align-content: center;
-        gap: map-get( $spacing, 1 );
+        gap: $icon-spacing;
         cursor: default;
         position: relative;
         transition-property: color, background-color, outline-color, box-shadow;
@@ -144,12 +144,11 @@
     // No data
     .k-list-container {
         .k-no-data {
-            min-height: 138px;
-            width: 100%;
+            min-height: 140px;
+            box-sizing: border-box;
             display: flex;
             align-items: center;
             justify-content: center;
-            text-transform: uppercase;
             font-weight: lighter;
             text-align: center;
             white-space: normal;
