@@ -72,15 +72,15 @@
 
     // Button arrow
     .k-button-arrow {
-        padding-left: $button-arrow-padding-y;
-        padding-right: $button-arrow-padding-y;
+        padding-left: $button-arrow-padding-x;
+        padding-right: $button-arrow-padding-x;
         flex: none;
         display: inline-flex;
         align-items: center;
         justify-content: center;
     }
     .k-button > .k-button-arrow {
-        margin-inline-start: -$button-padding-y;
+        margin-inline-start: -$button-arrow-padding-x;
         margin-inline-end: -$button-padding-x;
     }
 
