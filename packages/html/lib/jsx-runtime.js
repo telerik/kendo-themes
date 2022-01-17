@@ -96,6 +96,7 @@ const booleanAttr = new Set([
 
 const nullAttr = new Set([
     'size',
+    'shape',
     'rounded',
     'fillMode',
     'themeColor',
