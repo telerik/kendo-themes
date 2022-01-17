@@ -11,7 +11,10 @@
     <style>
         #test-area { justify-items: start; }
 
-        .k-animation-container { position: relative; }
+        .k-animation-container {
+            position: relative;
+            overflow: visible;
+        }
     </style>
 </head>
 <body class="k-body">
@@ -25,7 +28,7 @@
             <div style="position: relative;">
                 <input is="Colorpicker" />
 
-                <div class="k-animation-container k-animation-container-shown">
+                <div class="k-animation-container">
                     <div class="k-popup k-colorpicker-popup">
                         <div class="k-flatcolorpicker k-coloreditor">
                             <!-- Header -->
@@ -114,7 +117,7 @@
             <div style="position: relative;">
                 <input is="Colorpicker" value="fuchsia" />
 
-                <div class="k-animation-container k-animation-container-shown">
+                <div class="k-animation-container">
                     <div class="k-popup k-colorpicker-popup">
                         <div class="k-flatcolorpicker k-coloreditor">
                             <!-- Header -->

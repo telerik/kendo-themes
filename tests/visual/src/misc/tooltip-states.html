@@ -9,39 +9,24 @@
     <script src="../../../../packages/html/dist/index.js"></script>
 
     <style>
-        #test-area {
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-        }
-        .dark { background-color: #333; }
-        .light { background-color: #eee; }
-
-        /* rest position and visiblity */
-        .k-animation-container,
-        .k-popup,
-        .k-tooltip {
+        .k-animation-container {
+            display: inline-block;
             position: relative;
             overflow: visible;
         }
 
-        /* reset display and align */
-        .k-animation-container {
-            display: inline-flex;
-            vertical-align: top;
-        }
-
-        /* reset padding */
-        .k-popup:not(.k-tooltip) {
-            padding: 0;
+        .k-tooltip {
+            position: relative;
         }
     </style>
 </head>
 <body class="k-body">
 
-    <div id="test-area" class="grid">
+    <div id="test-area" class="k-d-grid k-grid-cols-4">
 
-        <span class="col-4">Tooltip states</span>
+        <span class="k-colspan-all">Tooltip states</span>
         <section>
-            <div class="k-animation-container k-animation-container-fixed k-animation-container-shown">
+            <div class="k-animation-container">
                 <div class="k-tooltip k-tooltip-primary">
                     <div class="k-tooltip-content">primary top</div>
                     <div class="k-callout k-callout-n"></div>
@@ -49,7 +34,7 @@
             </div>
         </section>
         <section>
-            <div class="k-animation-container k-animation-container-fixed k-animation-container-shown">
+            <div class="k-animation-container">
                 <div class="k-tooltip k-tooltip-primary">
                     <div class="k-tooltip-content">primary right</div>
                     <div class="k-callout k-callout-e"></div>
@@ -57,7 +42,7 @@
             </div>
         </section>
         <section>
-            <div class="k-animation-container k-animation-container-fixed k-animation-container-shown">
+            <div class="k-animation-container">
                 <div class="k-tooltip k-tooltip-primary">
                     <div class="k-tooltip-content">primary bottom</div>
                     <div class="k-callout k-callout-s"></div>
@@ -65,7 +50,7 @@
             </div>
         </section>
         <section>
-            <div class="k-animation-container k-animation-container-fixed k-animation-container-shown">
+            <div class="k-animation-container">
                 <div class="k-tooltip k-tooltip-primary">
                     <div class="k-tooltip-content">primary left</div>
                     <div class="k-callout k-callout-w"></div>
@@ -73,7 +58,7 @@
             </div>
         </section>
         <section>
-            <div class="k-animation-container k-animation-container-fixed k-animation-container-shown">
+            <div class="k-animation-container">
                 <div class="k-tooltip k-tooltip-info">
                     <div class="k-tooltip-content">info tooltip</div>
                     <div class="k-callout k-callout-w"></div>
@@ -81,7 +66,7 @@
             </div>
         </section>
         <section>
-            <div class="k-animation-container k-animation-container-fixed k-animation-container-shown">
+            <div class="k-animation-container">
                 <div class="k-tooltip k-tooltip-success">
                     <div class="k-tooltip-content">success tooltip</div>
                     <div class="k-callout k-callout-w"></div>
@@ -89,7 +74,7 @@
             </div>
         </section>
         <section>
-            <div class="k-animation-container k-animation-container-fixed k-animation-container-shown">
+            <div class="k-animation-container">
                 <div class="k-tooltip k-tooltip-warning">
                     <div class="k-tooltip-content">warning tooltip</div>
                     <div class="k-callout k-callout-w"></div>
@@ -97,7 +82,7 @@
             </div>
         </section>
         <section>
-            <div class="k-animation-container k-animation-container-fixed k-animation-container-shown">
+            <div class="k-animation-container">
                 <div class="k-tooltip k-tooltip-error">
                     <div class="k-tooltip-content">error tooltip</div>
                     <div class="k-callout k-callout-w"></div>
