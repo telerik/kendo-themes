@@ -9,39 +9,24 @@
     <script src="../../../../packages/html/dist/index.js"></script>
 
     <style>
-        #test-area {
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-        }
-        .dark { background-color: #333; }
-        .light { background-color: #eee; }
-
-        /* rest position and visiblity */
-        .k-animation-container,
-        .k-popup,
-        .k-tooltip {
+        .k-animation-container {
+            display: inline-block;
             position: relative;
             overflow: visible;
         }
 
-        /* reset display and align */
-        .k-animation-container {
-            display: inline-flex;
-            vertical-align: top;
-        }
-
-        /* reset padding */
-        .k-popup:not(.k-tooltip) {
-            padding: 0;
+        .k-tooltip {
+            position: relative;
         }
     </style>
 </head>
 <body class="k-body">
 
-    <div id="test-area" class="grid">
+    <div id="test-area" class="k-d-grid k-grid-cols-4">
 
         <span class="col-4">RTL</span>
         <section>
-            <div class="k-animation-container k-animation-container-fixed k-animation-container-shown">
+            <div class="k-animation-container">
                 <div class="k-tooltip" dir="rtl">
                     <div class="k-tooltip-content">tooltip content</div>
                     <div class="k-callout k-callout-w"></div>
@@ -49,7 +34,7 @@
             </div>
         </section>
         <section>
-            <div class="k-animation-container k-animation-container-fixed k-animation-container-shown">
+            <div class="k-animation-container">
                 <div class="k-tooltip k-tooltip-closable" dir="rtl">
                     <div class="k-tooltip-content">tooltip content</div>
                     <div class="k-tooltip-button"><i is="Icon" name="x"></i></div>
@@ -58,7 +43,7 @@
             </div>
         </section>
         <section>
-            <div class="k-animation-container k-animation-container-fixed k-animation-container-shown">
+            <div class="k-animation-container">
                 <div class="k-tooltip" dir="rtl">
                     <div class="k-tooltip-content">long tooltip content. Enough so it goes on another line</div>
                     <div class="k-callout k-callout-w"></div>
@@ -66,7 +51,7 @@
             </div>
         </section>
         <section>
-            <div class="k-animation-container k-animation-container-fixed k-animation-container-shown">
+            <div class="k-animation-container">
                 <div class="k-tooltip k-tooltip-closable" dir="rtl">
                     <div class="k-tooltip-content">long tooltip content. Enough so it goes on another line</div>
                     <div class="k-tooltip-button"><i is="Icon" name="x"></i></div>
@@ -75,7 +60,7 @@
             </div>
         </section>
         <section>
-            <div class="k-animation-container k-animation-container-fixed k-animation-container-shown">
+            <div class="k-animation-container">
                 <div class="k-tooltip" dir="rtl">
                     <div class="k-tooltip-content">
                         <div class="k-tooltip-title">Tooltip title</div>
@@ -86,7 +71,7 @@
             </div>
         </section>
         <section>
-            <div class="k-animation-container k-animation-container-fixed k-animation-container-shown">
+            <div class="k-animation-container">
                 <div class="k-tooltip k-tooltip-closable" dir="rtl">
                     <div class="k-tooltip-content">
                         <div class="k-tooltip-title">Tooltip title</div>
@@ -98,7 +83,7 @@
             </div>
         </section>
         <section>
-            <div class="k-animation-container k-animation-container-fixed k-animation-container-shown">
+            <div class="k-animation-container">
                 <div class="k-tooltip" dir="rtl">
                     <div class="k-tooltip-content">
                         <div class="k-tooltip-title">
@@ -112,7 +97,7 @@
             </div>
         </section>
         <section>
-            <div class="k-animation-container k-animation-container-fixed k-animation-container-shown">
+            <div class="k-animation-container">
                 <div class="k-tooltip k-tooltip-closable" dir="rtl">
                     <div class="k-tooltip-content">
                         <div class="k-tooltip-title">

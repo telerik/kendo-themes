@@ -16,6 +16,7 @@
         .k-animation-container,
         .k-popup {
             position: relative;
+            overflow: visible;
         }
 
         .k-animation-container {
@@ -49,7 +50,7 @@
 
         <!-- Angular rendering -->
         <section>
-            <kendo-popup class="k-animation-container k-animation-container-shown" style="z-index: 2;">
+            <kendo-popup class="k-animation-container" style="z-index: 2;">
                 <div class="k-popup k-grid-filter-popup">
                     <kendo-grid-filter-menu-container >
                         <form class="k-filter-menu k-group k-reset k-state-border-up">
@@ -82,7 +83,7 @@
 
         <!-- Angular rendering - Grid Filter Menu template with Switch component -->
         <section>
-            <kendo-popup class="k-animation-container k-animation-container-shown">
+            <kendo-popup class="k-animation-container">
                 <div class="k-popup k-grid-filter-popup">
                     <kendo-grid-filter-menu-container>
                         <form class="k-filter-menu k-group k-reset k-state-border-up">
