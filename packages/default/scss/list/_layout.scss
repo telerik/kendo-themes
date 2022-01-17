@@ -142,17 +142,15 @@
 
 
     // No data
-    .k-list-container {
-        .k-no-data {
-            min-height: 140px;
-            box-sizing: border-box;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: lighter;
-            text-align: center;
-            white-space: normal;
-        }
+    .k-no-data {
+        min-height: 140px;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: lighter;
+        text-align: center;
+        white-space: normal;
     }
 
 

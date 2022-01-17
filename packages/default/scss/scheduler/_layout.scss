@@ -1095,6 +1095,12 @@
             flex-shrink: 0;
             font-size: inherit;
         }
+
+        .k-no-data {
+            height: auto;
+            min-height: auto;
+            color: inherit;
+        }
     }
 
 }
