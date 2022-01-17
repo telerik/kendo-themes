@@ -2,6 +2,7 @@
 
     .k-actions {
         padding: $actions-padding-y $actions-padding-x;
+        box-sizing: border-box;
         border-width: $actions-border-width 0 0 0;
         border-style: solid;
         border-color: inherit;
@@ -13,6 +14,12 @@
         overflow: hidden;
         // TODO: remove
         clear: both;
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
     }
 
 

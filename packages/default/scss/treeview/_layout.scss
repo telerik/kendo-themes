@@ -16,13 +16,18 @@
         white-space: nowrap;
         -webkit-touch-callout: none;
         -webkit-tap-highlight-color: $rgba-transparent;
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
     }
 
 
     // Treeview filter
     .k-treeview-filter {
-        padding: map-get( $spacing, 1 );
-        box-sizing: border-box;
+        padding: map-get( $spacing, 2 );
         display: block;
         position: relative;
         flex: none;

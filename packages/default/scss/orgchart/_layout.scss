@@ -9,6 +9,12 @@
         font-family: $orgchart-font-family;
         line-height: $orgchart-line-height;
         overflow: auto;
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
     }
 
     .k-orgchart-container {

@@ -14,6 +14,12 @@
         display: inline-flex;
         flex-direction: column;
         align-items: stretch;
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
     }
 
     // Header

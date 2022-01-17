@@ -19,6 +19,12 @@
         color: inherit;
         background: none;
 
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
 
         // Step list
         .k-step-list {
@@ -68,7 +74,6 @@
             transition-property: color, background-color, border-color;
             transition-duration: .4s;
             transition-timing-function: ease-in-out;
-            box-sizing: content-box;
 
             &::after {
                 @include border-radius( 100% );
