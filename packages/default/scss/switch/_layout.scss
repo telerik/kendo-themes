@@ -94,7 +94,8 @@
 
     // RTL
     .k-rtl .k-switch,
-    .k-switch[dir = "rtl"] {
+    [dir="rtl"] .k-switch,
+    .k-switch[dir="rtl"] {
         &.k-switch-on .k-switch-handle {
             left: $switch-thumb-start-x;
         }
