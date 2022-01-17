@@ -444,12 +444,13 @@
 
 
         .k-scroll-button {
+            // IMPORTANT: if we don't set padding, the browser will set for us
+            padding: 0 map-get( $spacing, 1 );
             height: 100%;
             aspect-ratio: auto;
             position: absolute;
             z-index: 2;
-            top: 50%;
-            transform: translateY(-50%);
+            top: 0;
 
             .k-button-icon {
                 min-width: auto;
