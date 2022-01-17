@@ -18,8 +18,8 @@
 
         // Hover, Focused state
         table {
-            tr:hover,
-            tr.k-state-hover,
+            tr:not(.k-detail-row):hover,
+            tr:not(.k-detail-row).k-state-hover,
             td.k-state-focused,
             th.k-state-focused,
             th:focus,

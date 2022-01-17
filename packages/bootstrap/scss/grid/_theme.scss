@@ -18,8 +18,8 @@
         }
 
         // Hover state
-        tbody tr:hover,
-        tbody tr.k-state-hover {
+        tbody tr:not(.k-detail-row):hover,
+        tbody tr:not(.k-detail-row).k-state-hover {
             color: $grid-hovered-text;
             background-color: $grid-hovered-bg;
         }
