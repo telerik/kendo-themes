@@ -52,6 +52,24 @@
     }
 
 
+    // Clear button
+    .k-button-clear,
+    .k-button.k-clear {
+        &::before {
+            display: none;
+        }
+
+
+        &:focus,
+        &.k-focus,
+        &:active {
+            &::before {
+                display: block;
+            }
+        }
+    }
+
+
     // Button group
     .k-button-group {}
 

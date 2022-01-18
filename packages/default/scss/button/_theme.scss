@@ -253,6 +253,16 @@
         .k-button-clear-#{$name} {
             color: $color;
 
+            &:focus,
+            &.k-focus,
+            &:active {
+                &::after {
+                    background-color: currentColor;
+                    opacity: $kendo-clear-button-focus-opacity;
+                    display: block;
+                }
+            }
+
             // Disabled state
             &:disabled,
             &.k-disabled {
