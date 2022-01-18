@@ -5,6 +5,8 @@
         box-sizing: border-box;
         border-width: $kendo-button-border-width;
         border-style: solid;
+        color: inherit;
+        background: none;
         font-family: $kendo-button-font-family;
         text-align: center;
         text-decoration: none;
@@ -269,18 +271,12 @@
 
     // Clear button
     .k-button-clear {
-        &::before {
-            display: none;
-        }
-
-
-        &:focus,
-        &.k-focus {
-            &::before {
-                display: block;
-            }
-        }
+        border-color: transparent !important; // sass-lint:disable-line no-important
+        color: inherit;
+        background: none !important; // sass-lint:disable-line no-important
+        box-shadow: none !important; // sass-lint:disable-line no-important
     }
+
 
 
     // IE

@@ -183,6 +183,9 @@ $kendo-link-button-shadow-blur: 4px !default;
 $kendo-link-button-shadow-spread: 0px !default;
 $kendo-link-button-shadow-opacity: .75 !default;
 
+// Clear button
+$kendo-clear-button-focus-opacity: .1 !default;
+
 /// The overlay opacity of hovered flat button. Used to create background for the flat button.
 /// @group button
 $kendo-flat-button-hover-opacity: .08 !default;
