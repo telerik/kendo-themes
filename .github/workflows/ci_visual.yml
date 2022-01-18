@@ -7,6 +7,7 @@ on:
       - 'master'
       - 'develop'
       - 'v5-dev'
+      - 'v4-dev'
 
 jobs:
   run-tests:
