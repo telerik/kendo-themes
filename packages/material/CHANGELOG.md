@@ -3,6 +3,289 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.0.0](https://github.com/telerik/kendo-themes/compare/v4.44.0...v5.0.0) (2022-01-18)
+
+
+### Bug Fixes
+
+* **charts:** update chart series colors ([8866736](https://github.com/telerik/kendo-themes/commit/8866736ab495dd6b8eca238f55a9c01d84f53845))
+
+
+### chore
+
+* **scheduler:** remove legacy styles for kendo-angular-scheduler toolbar ([94e093b](https://github.com/telerik/kendo-themes/commit/94e093b33161bd2940aabed616d547a98c9576d0))
+
+
+### Features
+
+* **autocomplete:** add size, rounded and fill customization to autocomplete ([de93be6](https://github.com/telerik/kendo-themes/commit/de93be662c97db2ea6da3042b5e0f36602b80c5d))
+* **avatar:** add rounded customization to avatar ([9d663e4](https://github.com/telerik/kendo-themes/commit/9d663e4e5c1f9d00517760033413106039f8d028))
+* **button:** add size, shape and color customization to button ([db31d3f](https://github.com/telerik/kendo-themes/commit/db31d3f2c5da75d8a02e16f4824835574af45e14))
+* **checkbox:** add sizing property to checkbox ([b60493d](https://github.com/telerik/kendo-themes/commit/b60493ddf78fd435c62a52718acbc292f7cd76f6))
+* **chip:** add size rounded customization to chip ([1c2c8c0](https://github.com/telerik/kendo-themes/commit/1c2c8c06405f52dfeccf74e7331c5167eb375539))
+* **color-picker:** add size, shape and color customization to color picker ([ea83616](https://github.com/telerik/kendo-themes/commit/ea83616e29f6585548fa128ac38817c1904034ea))
+* **combobox:** add size, shape and color customization to combobox ([3454223](https://github.com/telerik/kendo-themes/commit/3454223bfe3b22c673532e24bec58dc0ed354f7d))
+* **date-input:** add size, rounded and full customization to date input ([c19da4f](https://github.com/telerik/kendo-themes/commit/c19da4f1a5506e9a537ba0ebc2a3c03001dbf172))
+* **date-picker:** add size, rounded and full customization to date picker ([b137bca](https://github.com/telerik/kendo-themes/commit/b137bcaa3ef1f1d3bcfdaa16ee1bf51e15b91499))
+* **daterange-picker:** add size, rounded and full customization to date range picker ([5f48054](https://github.com/telerik/kendo-themes/commit/5f480546f3ed150bf25712a55d85c808cd6a8ecf))
+* **datetime-picker:** add size, rounded and full customization to date-time picker ([9d98b62](https://github.com/telerik/kendo-themes/commit/9d98b62cd6b8ce69c0e00fd17381da8851ef450f))
+* **dropdown-list:** add size, shape and color customization to dropdown list ([1a529a8](https://github.com/telerik/kendo-themes/commit/1a529a818b984feda4872dac65cd62577a202c4d))
+* **dropdown-tree:** add size, shape and color customization to dropdown tree ([7907d94](https://github.com/telerik/kendo-themes/commit/7907d94a8af62115cb5fdae0df630b7c0ec24c83))
+* **fab:** standartize appearance options ([6a9dfdb](https://github.com/telerik/kendo-themes/commit/6a9dfdb6012e97b9be1b249d2a2265ce00ab7f23))
+* **input:** add new high-level input component ([6f45cf0](https://github.com/telerik/kendo-themes/commit/6f45cf0e1c4aeeca31cf8607e7f5b16f51dec598))
+* **list:** add size customization to list ([1509542](https://github.com/telerik/kendo-themes/commit/15095429fba919f86a59e2f862b7b5415122f2b4))
+* **masked-textbox:** add size, rounded and fill customization to masked textbox ([995dc3f](https://github.com/telerik/kendo-themes/commit/995dc3f9694f2bab387096e8ec4192515f4566ad))
+* **menu-button:** add size customization to menu button ([45a0864](https://github.com/telerik/kendo-themes/commit/45a0864e88e903dbd7e551694a57e5e7a6c6c9b8))
+* **menu:** add size customization to menu list and menu items ([7e0b9d1](https://github.com/telerik/kendo-themes/commit/7e0b9d19ae57558cd7af98c70312ebd023931496))
+* **multiselect:** add size, rounded and fill customization to multiselect ([11a2cab](https://github.com/telerik/kendo-themes/commit/11a2cab78f73b4b29914d3c314de9106c35dd77f))
+* **numeric:** add size, rounded and fill customization to numeric ([8e16cd2](https://github.com/telerik/kendo-themes/commit/8e16cd281240d8221c1701d277df78597d7707ef))
+* **radio:** add sizing property to radio ([afb6cc3](https://github.com/telerik/kendo-themes/commit/afb6cc3e03b2150f89049027075d099e05d79f2c))
+* **searchbox:** add size, rounded and fill customization to searchbox ([0e75886](https://github.com/telerik/kendo-themes/commit/0e75886cba13f41db65c05b5de0a2f7f54f9efa6))
+* **switch:** add size and rounded customization to switch ([10a7a02](https://github.com/telerik/kendo-themes/commit/10a7a02274d986ebe22d15b19d9665a6c14136e9))
+* **table:** add sizing to table component ([ae7b643](https://github.com/telerik/kendo-themes/commit/ae7b64322559cddf808db0f29c66b0d4db5d0b80))
+* **textarea:** add size, rounded and fill customization to textarea ([cc6c6fb](https://github.com/telerik/kendo-themes/commit/cc6c6fb5dc91c946a9dedbb5dffe8308e888b5f5))
+* **textbox:** add size, rounded and fill customization to textbox ([797937e](https://github.com/telerik/kendo-themes/commit/797937ed0cb604e5695eb98a568424bd03a0c357))
+* **time-picker:** add size, rounded and full customization to time picker ([c8db5cb](https://github.com/telerik/kendo-themes/commit/c8db5cbc45b31ca072a50873d806ff243efc4846))
+* **treeview:** add sizing property to treeview ([0b92f78](https://github.com/telerik/kendo-themes/commit/0b92f781ea4e242833a1bcdda5006f188ccf38a0))
+
+
+### infra
+
+* **publishing:** do not include flattened dependencies in distributions ([6dd9537](https://github.com/telerik/kendo-themes/commit/6dd95376dd86cd2182987195ee8b79938e19c285))
+
+
+### BREAKING CHANGES
+
+* **fab:** Convert monolithic FAB styles to multiple class names.
+
+Styles are split in multiple class names with each being scoped to a
+single FAB appearance property:
+
+* `shape` - controls if the FAB is square or not;
+* `size` - controls the overall physical size of a FAB;
+* `themeColor` - controls which color is used to style a FAB;
+* `fillMode` - controls how the color is applied;
+* `rounded` - controls what border radius is applied to a FAB.
+* **fab:** the shape option now supports `rectangle` and `square`.
+* **fab:** themeColor class is now composite - `k-fab-{fillMode}-{themeColor}`.
+* **fab:** Add kendo prefix to all FAB variables
+* **treeview:** Add sizing property to TreeView
+* **multiselect:** Use high-level input for multiselect base
+
+Multiselect reuses the input base component size, rounded and fill
+component options.
+* **multiselect:** Use chip list for item selection
+* **chip:** Add kendo prefix to all avatar variables
+
+Change variable names from `$chip-*` to `$kendo-chip-*`.
+* **table:** Add kendo prefix to all table variables
+
+Change variable names from `$table-*` to `$kendo-table-*`.
+* **list:** List size is now applied by a dedicated class.
+* **list:** Rename list state variables.
+* **list:** Add kendo prefix to all list variables
+
+Change variable name from `$list-*` to `$kendo-list-*`.
+* **menu:** Convert monolithic menu styles to multiple class names
+* **menu-button:** Convert monolithic menu button styles to multiple class names
+* **avatar:** Removed shape option from avatar.
+
+The avatar has fixed width and height, thus no dedicated shape option
+is needed. Instead, the avatar has rounded appearance property set
+to circle by default.
+
+The styles of the avatar are split into multiple class names with each
+being scoped to a single appearance property:
+
+* `size` controls the overall physical size of an avatar;
+* `themeColor` controls which color is used to style an avatar;
+* `fillMode` controls how the color is applied;
+* `rounded` controls what border radius is applied to an avatar.
+
+Each property generates component specific class name `k-avatar-{size}`,
+ `k-avatar-{fillMode}`, `k-avatar-{fillMode}-{themeColor}`.
+
+Note: without `fillMode`, there is no way to apply themeColor, that's why
+the `themeColor` class is composite.
+
+The only notable exception is rounded, which sets the same class name
+for all components -- `k-rounded-{rounded}`.
+
+You can find more information about the values of each property in the
+documentation of the button component -- /docs/components/avatar.
+* **avatar:** Add kendo prefix to all avatar variables
+
+Change variable names from `$avatar-*` to `$kendo-avatar-*`.
+* **daterange-picker:** Use high-level input for date range picker base
+
+Date range picker reuses the input base component size, rounded and fill
+component options.
+* **datetime-picker:** Use high-level input for date-item picker base
+
+Date-time picker reuses the input base component size, rounded and fill
+component options.
+* **time-picker:** Use high-level input for time picker base
+
+Time picker reuses the input base component size, rounded and fill
+component options.
+* **date-picker:** Use high-level input for date picker base
+
+Date picker reuses the input base component size, rounded and fill
+component options.
+* **date-input:** Use high-level input for date input base
+
+Date input reuses the input base component size, rounded and fill
+component options.
+* **color-picker:** Use high-level picker for color picker base
+
+Color picker reuses the picker base component size, rounded and fill
+component options.
+* **dropdown-tree:** Use high-level picker for dropdown tree base
+
+Dropdown tree reuses the picker base component size, rounded and fill
+component options.
+* **dropdown-list:** Use high-level picker for dropdown list base
+
+Dropdown list reuses the picker base component size, rounded and fill
+component options.
+* **combobox:** Use high-level input for combobox base
+
+Combobox reuses the input base component size, rounded and fill
+component options.
+* **autocomplete:** Use high-level input for autocomplete base
+
+Autocomplete reuses the input base component size, rounded and fill
+component options.
+* **searchbox:** Use high-level input for searchbox base
+
+Searchbox reuses the input base component size, rounded and fill
+component options.
+* **masked-textbox:** Use high-level input for masked textbox base
+
+Masked textbox reuses the input base component size, rounded and fill
+component options.
+* **numeric:** Use high-level input for numeric textbox base
+
+Numeric textbox reuses the input base component size, rounded and fill
+component options.
+* **textarea:** Use high-level input for textarea base
+
+Textarea reuses the input base component size, rounded and fill
+component options.
+* **textbox:** Use high-level input for textbox base base
+
+Textbox reuses the input base component size, rounded and fill
+component options.
+* **input:** Add new high-level input and picker component
+
+Previously, the various form components did not share or reuse code.
+Now, we have have to base components: input and picker, that
+hold the bulk of styling needed. In addition, styles are split in multiple class names
+with each being scoped to a single component appearance property:
+
+* `size` controls the overall physical size of a component;
+* `themeColor` controls which color is used to style a component;
+* `fillMode` controls how the color is applied;
+* `rounded` controls what border radius is applied to a component.
+
+Each property generates component specific class name `k-input-{size}`,
+`k-input-{fillMode}`, `k-input-{fillMode}-{themeColor}`.
+
+Note: without `fillMode`, there is no way to apply themeColor, that's why
+the `themeColor` class is composite.
+
+The only notable exception is rounded, which sets the same class name
+for all components -- `k-rounded-{rounded}`.
+
+You can find more information about the values of each property in the
+documentation of each respective component -- /docs/components/....
+* **input:** Remove residual styles
+
+No further customization is applied to input and picker components when
+hosted inside other components, except in very few specific cases.
+* **input:** Add kendo prefix to all variables
+
+Change variable names from `$input-*` to `$kendo-input-*`.
+* **radio:** Add sizing property to radio
+
+There is a new aptly named property, `size`, for radio button which
+controls the overall physical size of a radio button.
+* **radio:** Add kendo prefix to all radio variables
+
+Change variable names from `$radio-*` to `$kendo-radio-*`.
+* **checkbox:** Convert monolithic checkbox styles to multiple class names
+
+Previously, `k-checkbox` held all the styling information related to
+the checkbox component. Now, styles are split in multiple class names
+with each being scoped to a single checkbox appearance property:
+
+* `size` controls the overall physical size of a checkbox;
+* `rounded` controls what border radius is applied to a checkbox.
+* **checkbox:** Add kendo prefix to all checkbox variables
+
+Change variable names from `$checkbox-*` to `$kendo-checkbox-*`.
+* **switch:** Convert monolithic switch styles to multiple class names
+
+Previously, switch class names held too much styling information that
+made customizing the switch hard. Now, styles are split in multiple
+class names with each being scoped to a single switch appearance property:
+
+* `size` controls the overall physical size of a switch;
+* `trackRounded` controls what border radius is applied to the switch track;
+* `thumbRounded` controls what border radius is applied to the switch thumb.
+
+You can find more information about the values of each property in the
+documentation of the button component -- /docs/components/switch.
+* **switch:** Remove residual switch styles
+
+No further customization is applied to buttons when hosted inside other
+components, except in very few specific cases.
+* **switch:** Add kendo prefix to all switch variables
+
+Change variable name from `$switch-*` to `$kendo-switch-*`.
+* **button:** Convert monolithic button styles to multiple class names
+
+Previously, `k-button` held all the styling information related to
+the button component. Now, styles are split in multiple class names
+with each being scoped to a single button appearance property:
+
+* `shape` controls if the button is square or not;
+* `size` controls the overall physical size of a button;
+* `themeColor` controls which color is used to style a button;
+* `fillMode` controls how the color is applied;
+* `rounded` controls what border radius is applied to a button.
+
+Each property generates component specific class name `k-button-square`,
+`k-button-{size}`, `k-button-{fillMode}`, `k-button-{fillMode}-{themeColor}`.
+
+Note: without `fillMode`, there is no way to apply themeColor, that's why
+the `themeColor` class is composite.
+
+The only notable exception is rounded, which sets the same class name
+for all components -- `k-rounded-{rounded}`.
+
+You can find more information about the values of each property in the
+documentation of the button component -- /docs/components/button.
+* **button:** Remove residual button styles
+
+No further customization is applied to buttons when hosted inside other
+components, except in very few specific cases.
+
+For instance, in Material theme we would slightly dim the normal buttons
+and remove the shadow, which may or may not be desired.
+* **button:** Add kendo prefix to all button variables
+
+Change variable names from `$button-*` to `$kendo-button-*`.
+* **scheduler:** Remove legacy styles for kendo-angular-scheduler
+* **charts:** Updates the chart series colors to match the update designs
+
+* add compatibility swatches called ending with v4
+* **publishing:** Do not include flattened dependencies in distributions
+
+
+
+
+
 # [4.44.0](https://github.com/telerik/kendo-themes/compare/v4.43.0...v4.44.0) (2022-01-18)
 
 
