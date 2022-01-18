@@ -26,7 +26,7 @@ The following table lists the available variables for customization.
 </thead>
 <tbody>
         <tr>
-    <td>$table-border-width</td>
+    <td>$kendo-table-border-width</td>
     <td></td>
 <td>
 
@@ -45,7 +45,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$table-cell-vertical-border-width</td>
+    <td>$kendo-table-cell-vertical-border-width</td>
     <td></td>
 <td>
 
@@ -64,7 +64,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$table-cell-horizontal-border-width</td>
+    <td>$kendo-table-cell-horizontal-border-width</td>
     <td></td>
 <td>
 
@@ -83,17 +83,17 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$table-font-size</td>
+    <td>$kendo-table-font-size</td>
     <td></td>
 <td>
 
 
-`$font-size`
+`null`
 
 </td>
 <td>
 
-`14px`
+`null`
 
 </td>
 </tr>
@@ -102,17 +102,36 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$table-cell-padding-x</td>
+    <td>$kendo-table-line-height</td>
     <td></td>
 <td>
 
 
-`map-get( $spacing, 2 )`
+`null`
 
 </td>
 <td>
 
-`map-get( $spacing, 2 )`
+`null`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The line-height of the table if no size is specified.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-table-cell-padding-x</td>
+    <td></td>
+<td>
+
+
+`null`
+
+</td>
+<td>
+
+`null`
 
 </td>
 </tr>
@@ -121,17 +140,17 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$table-cell-padding-y</td>
+    <td>$kendo-table-cell-padding-y</td>
     <td></td>
 <td>
 
 
-`map-get( $spacing, 2 )`
+`null`
 
 </td>
 <td>
 
-`map-get( $spacing, 2 )`
+`null`
 
 </td>
 </tr>
@@ -140,7 +159,64 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$table-bg</td>
+    <td>$kendo-table-sizes</td>
+    <td></td>
+<td>
+
+
+`(
+    sm: (
+        font-size: $font-size-md,
+        line-height: $line-height-md,
+        cell-padding-x: map-get( $spacing, 2 ),
+        cell-padding-y: map-get( $spacing, 2 ) + map-get( $spacing, thin )
+    ),
+    md: (
+        font-size: $font-size-md,
+        line-height: $line-height-md,
+        cell-padding-x: map-get( $spacing, 2 ),
+        cell-padding-y: map-get( $spacing, 2 ) + map-get( $spacing, thin )
+    ),
+    lg: (
+        font-size: $font-size-md,
+        line-height: $line-height-md,
+        cell-padding-x: map-get( $spacing, 2 ),
+        cell-padding-y: map-get( $spacing, 2 ) + map-get( $spacing, thin )
+    )
+)`
+
+</td>
+<td>
+
+`(
+    sm: (
+        font-size: $font-size-md,
+        line-height: $line-height-md,
+        cell-padding-x: map-get( $spacing, 2 ),
+        cell-padding-y: map-get( $spacing, 2 ) + map-get( $spacing, thin )
+    ),
+    md: (
+        font-size: $font-size-md,
+        line-height: $line-height-md,
+        cell-padding-x: map-get( $spacing, 2 ),
+        cell-padding-y: map-get( $spacing, 2 ) + map-get( $spacing, thin )
+    ),
+    lg: (
+        font-size: $font-size-md,
+        line-height: $line-height-md,
+        cell-padding-x: map-get( $spacing, 2 ),
+        cell-padding-y: map-get( $spacing, 2 ) + map-get( $spacing, thin )
+    )
+)`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes of the table.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-table-bg</td>
     <td></td>
 <td>
 
@@ -159,7 +235,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$table-text</td>
+    <td>$kendo-table-text</td>
     <td></td>
 <td>
 
@@ -178,7 +254,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$table-border</td>
+    <td>$kendo-table-border</td>
     <td></td>
 <td>
 
@@ -197,7 +273,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$table-header-bg</td>
+    <td>$kendo-table-header-bg</td>
     <td></td>
 <td>
 
@@ -216,7 +292,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$table-header-text</td>
+    <td>$kendo-table-header-text</td>
     <td></td>
 <td>
 
@@ -235,7 +311,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$table-header-border</td>
+    <td>$kendo-table-header-border</td>
     <td></td>
 <td>
 
@@ -254,7 +330,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$table-footer-bg</td>
+    <td>$kendo-table-footer-bg</td>
     <td></td>
 <td>
 
@@ -273,7 +349,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$table-footer-text</td>
+    <td>$kendo-table-footer-text</td>
     <td></td>
 <td>
 
@@ -292,7 +368,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$table-footer-border</td>
+    <td>$kendo-table-footer-border</td>
     <td></td>
 <td>
 
@@ -311,12 +387,12 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$table-group-row-bg</td>
+    <td>$kendo-table-group-row-bg</td>
     <td></td>
 <td>
 
 
-`$table-header-bg`
+`$kendo-table-header-bg`
 
 </td>
 <td>
@@ -330,12 +406,12 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$table-group-row-text</td>
+    <td>$kendo-table-group-row-text</td>
     <td></td>
 <td>
 
 
-`$table-header-text`
+`$kendo-table-header-text`
 
 </td>
 <td>
@@ -349,12 +425,12 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$table-group-row-border</td>
+    <td>$kendo-table-group-row-border</td>
     <td></td>
 <td>
 
 
-`$table-header-border`
+`$kendo-table-header-border`
 
 </td>
 <td>
@@ -368,7 +444,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$table-alt-row-bg</td>
+    <td>$kendo-table-alt-row-bg</td>
     <td></td>
 <td>
 
@@ -387,7 +463,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$table-alt-row-text</td>
+    <td>$kendo-table-alt-row-text</td>
     <td></td>
 <td>
 
@@ -406,7 +482,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$table-alt-row-border</td>
+    <td>$kendo-table-alt-row-border</td>
     <td></td>
 <td>
 
@@ -425,7 +501,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$table-hover-bg</td>
+    <td>$kendo-table-hover-bg</td>
     <td></td>
 <td>
 
@@ -444,7 +520,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$table-hover-text</td>
+    <td>$kendo-table-hover-text</td>
     <td></td>
 <td>
 
@@ -463,7 +539,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$table-hover-border</td>
+    <td>$kendo-table-hover-border</td>
     <td></td>
 <td>
 
@@ -482,7 +558,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$table-focus-bg</td>
+    <td>$kendo-table-focus-bg</td>
     <td></td>
 <td>
 
@@ -501,7 +577,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$table-focus-text</td>
+    <td>$kendo-table-focus-text</td>
     <td></td>
 <td>
 
@@ -520,7 +596,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$table-focus-border</td>
+    <td>$kendo-table-focus-border</td>
     <td></td>
 <td>
 
@@ -539,7 +615,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$table-focus-shadow</td>
+    <td>$kendo-table-focus-shadow</td>
     <td></td>
 <td>
 
@@ -558,7 +634,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$table-selected-bg</td>
+    <td>$kendo-table-selected-bg</td>
     <td></td>
 <td>
 
@@ -577,7 +653,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$table-selected-text</td>
+    <td>$kendo-table-selected-text</td>
     <td></td>
 <td>
 
@@ -596,7 +672,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$table-selected-border</td>
+    <td>$kendo-table-selected-border</td>
     <td></td>
 <td>
 
