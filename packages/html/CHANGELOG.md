@@ -3,6 +3,50 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.44.0](https://github.com/telerik/kendo-themes/compare/v4.43.0...v4.44.0) (2022-01-18)
+
+
+### Bug Fixes
+
+* **avatar:** avatar can use forward compatible border radius ([0aa2ed1](https://github.com/telerik/kendo-themes/commit/0aa2ed1a1c4516b7fa04e231f5cce09f4236615a))
+* **html:** add class name to button icon ([f19fe44](https://github.com/telerik/kendo-themes/commit/f19fe442646607e7dfd43814893cdbca6e7e6365))
+* **html:** add wrapper around checkbxes when in list ([d2ae815](https://github.com/telerik/kendo-themes/commit/d2ae8157037e891da045dc9366ccfd8c61a8b51f))
+* **html:** allow children when using ButtonStatic ([d664ae9](https://github.com/telerik/kendo-themes/commit/d664ae958df3349c3e588b20518821ceb10f4871))
+* **html:** always render checkbox-wrap around checkbox ([e623625](https://github.com/telerik/kendo-themes/commit/e62362510ace575e806b49a97437dba662083aa0))
+* **html:** always render radio-wrap around radio ([999faf0](https://github.com/telerik/kendo-themes/commit/999faf0baeb8fd05215f641bd504e4ad4413727f))
+* **html:** avatar can use forward compatible border radius ([22498e1](https://github.com/telerik/kendo-themes/commit/22498e1ba7a7fcfc888ce99ab20b1ebaaaca450f))
+* **html:** button helper should apply forward compatible class names ([9b002e9](https://github.com/telerik/kendo-themes/commit/9b002e985c6c74e4efdf95c9df8bf9b507015d8b))
+* **html:** move component to its own folder ([999b970](https://github.com/telerik/kendo-themes/commit/999b970577c420388168fd354b075bc274a9f7a1))
+* **html:** setting shape null should not render class name ([c312bc4](https://github.com/telerik/kendo-themes/commit/c312bc41d948db18275d5a64b8ddf462539da3a0))
+* **html:** update autocomplete classes to match v4 univesal rendering ([150a3a3](https://github.com/telerik/kendo-themes/commit/150a3a383d8c26f4cc0642c25db6dd5a47847bb5))
+* **html:** update color picker html helper to reflect v4 universal rendering ([7aa0c36](https://github.com/telerik/kendo-themes/commit/7aa0c3662ceefc5cf44162d2f8250cd94bdd89de))
+* **html:** update combobox classes to match universal v4 rendering ([2f77c30](https://github.com/telerik/kendo-themes/commit/2f77c30b3791f0d5f59ee6ff83abff5e3e52fd95))
+* **html:** update dateinput html helper to reflect v4 universal rendering ([2aaad75](https://github.com/telerik/kendo-themes/commit/2aaad75f59f6de5fca3063c002ab2153e24383c0))
+* **html:** update datepicker html helper to reflect v4 universal rendering ([9ec0821](https://github.com/telerik/kendo-themes/commit/9ec082122a57b91a750defcdcd553fad6f55c8c7))
+* **html:** update datetime picker html helper to reflect v4 universal rendering ([0a8a9cc](https://github.com/telerik/kendo-themes/commit/0a8a9cced674f44e0ea03ee0070998fe20799afe))
+* **html:** update dropdown list classes to match universal v4 rendering ([4925ef4](https://github.com/telerik/kendo-themes/commit/4925ef4fee6526d78bfc62d59784f143f6061609))
+* **html:** update masked textbox rendering to match universal v4 rendering ([ec64529](https://github.com/telerik/kendo-themes/commit/ec6452951aadf37c09e224c1a2b9307093ecf8ab))
+* **html:** update numeric classes to match v4 universal rendering ([f39ac52](https://github.com/telerik/kendo-themes/commit/f39ac5284dc712a7d30adb2867d0f4d73cde09ec))
+* **html:** update time picker html helper to reflect v4 universal rendering ([2a19188](https://github.com/telerik/kendo-themes/commit/2a19188fa64243913623aeb2494f0aa2859c56a1))
+* **list:** k-list-scoller shouldbe rendered in legacy rendering ([ae339f9](https://github.com/telerik/kendo-themes/commit/ae339f913bcf65497632f0761bbb8d1ba8c939d3))
+
+
+### Features
+
+* **html:** add floatingactionbutton html helper ([ecf47ea](https://github.com/telerik/kendo-themes/commit/ecf47ea84b8f36649388a22e55c0d49df8922327))
+* **html:** add helper for no-data component ([457c7db](https://github.com/telerik/kendo-themes/commit/457c7db2c2da878a818f1c9a9af8b435f5aa4821))
+* **html:** add html helper for chip and chip-list ([5bb16aa](https://github.com/telerik/kendo-themes/commit/5bb16aaf55b769bcfde72906cf10c71351cb3642))
+* **html:** add html helper for list ([5360947](https://github.com/telerik/kendo-themes/commit/5360947c446f63969ea3cbf42a6442b4176be5dd))
+* **html:** add html helper for menu button ([334e7aa](https://github.com/telerik/kendo-themes/commit/334e7aab1f31a40eb453d8d46e3bad11bdd3c6be))
+* **html:** add html helper for menu list and menu item ([a79f4c1](https://github.com/telerik/kendo-themes/commit/a79f4c19a196aa5842f975c1cbdafe3f357a9658))
+* **html:** add html helper for popup component ([bcbabce](https://github.com/telerik/kendo-themes/commit/bcbabce95668a5b74e9913c9a133521bfd0bc9f4))
+* **html:** add html helper for split button ([82ca86e](https://github.com/telerik/kendo-themes/commit/82ca86edfc9c7c13af76665518dcab50dfad1730))
+* **html:** add html helper for treeview ([857453a](https://github.com/telerik/kendo-themes/commit/857453a915485d1f43a362e9f68d504a2573f0bd))
+
+
+
+
+
 # [4.43.0](https://github.com/telerik/kendo-themes/compare/v4.42.0...v4.43.0) (2021-11-29)
 
 

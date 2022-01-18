@@ -3,6 +3,83 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.44.0](https://github.com/telerik/kendo-themes/compare/v4.43.0...v4.44.0) (2022-01-18)
+
+
+### Bug Fixes
+
+* add styles for virtual scroller component ([0e1c521](https://github.com/telerik/kendo-themes/commit/0e1c5210675533794e37a29e33a10f8347ccb29b))
+* **appbar:** make horizontal and vertical padding symetrical ([6504cad](https://github.com/telerik/kendo-themes/commit/6504cad125689e70462d2701a6143db0131d6122))
+* **autocomplete:** convert styles to universal v4 rendering ([dbf7bcf](https://github.com/telerik/kendo-themes/commit/dbf7bcf055e2b2a3213c71568ab65c011226b0df))
+* **button:** add extra styles for link button ([f90e61d](https://github.com/telerik/kendo-themes/commit/f90e61dfe510332b0f5494cedb45e97518e60246))
+* **button:** add extra styles for outline button ([8100b97](https://github.com/telerik/kendo-themes/commit/8100b971f661d2b06b49f0667bcba212b1710e9b))
+* **button:** add extra styles for solid button ([3aabce4](https://github.com/telerik/kendo-themes/commit/3aabce47cd23e9dc09ab02cb778d48b7c18f1a36))
+* **button:** do not override button focus shadow in button group ([b806e0e](https://github.com/telerik/kendo-themes/commit/b806e0e4a1892ce05113ec8bc6ee73ba03c9c886))
+* **button:** update button box shadow spread to match Bootstrap ([17bcd28](https://github.com/telerik/kendo-themes/commit/17bcd2885e38b61f3d5c088ba6efba4aae0bc135))
+* **button:** use the same appearance for active and selected button ([d9ca91e](https://github.com/telerik/kendo-themes/commit/d9ca91e24c5ab5dee9736bdc8888bcb37147f3c7))
+* **chat:** remove border from message box buttons ([38ba0dc](https://github.com/telerik/kendo-themes/commit/38ba0dc4b17f0841cfbb181dd1e5e906ec7c4d70))
+* **chat:** remove redundant textbox styles ([339c301](https://github.com/telerik/kendo-themes/commit/339c3018ae465b3e28ad3f5b022aad88eea69ff1))
+* **checkbox-radio:** add styles for checkbox radio wrap for better alignment ([3f2e22f](https://github.com/telerik/kendo-themes/commit/3f2e22f921b9f3e529847de2129a86f639cc00be))
+* **checkbox:** contrast base for border  should be own background ([6529fcb](https://github.com/telerik/kendo-themes/commit/6529fcb1ed41c94c01737abdc3b186012ac9433f))
+* **checkbox:** improve ripple styles ([122a208](https://github.com/telerik/kendo-themes/commit/122a20889233daff2f1a841f80b711a5c3dd8cad))
+* **color-editor:** make gap between current and preview color consistent ([6e2a06f](https://github.com/telerik/kendo-themes/commit/6e2a06f09a69d9b15d277693fdd2e7e1e29e746d))
+* **color-picker:** convert styles to match universal rendering ([9d46df1](https://github.com/telerik/kendo-themes/commit/9d46df1bd909e47f5b856b36376f8d96cb032a6a))
+* **column-menu:** ensure all child content is 100% wide ([fd954fe](https://github.com/telerik/kendo-themes/commit/fd954fefeb601aa1f7cd7f2b27183302f29ac09c))
+* **column-menu:** use corretly derived padding variables ([6da6b59](https://github.com/telerik/kendo-themes/commit/6da6b598e9f854dace47071f73c542799948b012))
+* **combobox:** update styles to match universal v4 rendering ([8408f7c](https://github.com/telerik/kendo-themes/commit/8408f7cd906ae4342992fefcf434e817d1f6ffb6))
+* **daterange-picker:** extract daterange picker styles as a separate module ([02b3560](https://github.com/telerik/kendo-themes/commit/02b35602f512836a8b81a79f8e64d1aa5d0dabc0))
+* **dropdown-list:** update styles to match universal v4 rendering ([eb21b75](https://github.com/telerik/kendo-themes/commit/eb21b75e4bf965f248d739428f5ee321535514e4))
+* ensure correct font sizes for xs sm md lg and xl ([1615afa](https://github.com/telerik/kendo-themes/commit/1615afa6446fa827249776f70e6301f677fd251d))
+* **form:** make form-buttons alias of action buttons ([0510a42](https://github.com/telerik/kendo-themes/commit/0510a42a0bfda2638a76f6b3be8067f5832c63c7))
+* **grid:** fix background color on selected cell when hovered ([75597d4](https://github.com/telerik/kendo-themes/commit/75597d47cc3e1d09d234fe769b5a23c70e12ab7b))
+* **grid:** fix buttons misalignment in grid toolbar and group indicator ([aeee0ab](https://github.com/telerik/kendo-themes/commit/aeee0abe87bfa9323d81d4c89deb7759b3f8e674))
+* **grid:** remove separate hover styling on detail row container ([1be1790](https://github.com/telerik/kendo-themes/commit/1be1790c341b22cad665707c33ac207a1e957906))
+* **image-editor:** introduce variable to set action pane width ([fff9c07](https://github.com/telerik/kendo-themes/commit/fff9c070fdb2033c4529359d77eee5e8178e7858))
+* **input:** use 200px default width instead of guessing ([85fce4a](https://github.com/telerik/kendo-themes/commit/85fce4a32d62756d0a0c2f07888d4d0a1fb1a920))
+* **list:** better alignment for checkboxes in multiline scenario ([d87921a](https://github.com/telerik/kendo-themes/commit/d87921a6b3cfdc0ba946d5a8ba6b219a47fd7210))
+* **listbox:** ser default width to 10 em (20 characters) ([6be4719](https://github.com/telerik/kendo-themes/commit/6be47190f8e555fa4af35ac81f1718558ed2656a))
+* **list:** improve list item spacing, group heading font weight and no-data container height ([a1b5786](https://github.com/telerik/kendo-themes/commit/a1b57866ad2c6eae1207da1a982df6b842b9739f))
+* **list:** use correct colors for various list parts ([efac2c6](https://github.com/telerik/kendo-themes/commit/efac2c63acbe0adc30c7e23c95b141a63e08c773))
+* **list:** use correct variable values for list and items ([15bfcb3](https://github.com/telerik/kendo-themes/commit/15bfcb3e45ad979c77bbcc53c34e4a4ec360fe2e))
+* **numeric:** convert styles to v4 universal rendering ([f12f787](https://github.com/telerik/kendo-themes/commit/f12f787c61171768046adfd49df3f60ed41e399a))
+* **pdf-viewer:** reuse toolbar variables for pdf-viewer search ([5c0f71c](https://github.com/telerik/kendo-themes/commit/5c0f71ce76eb50b00cff3ec811c05b65cdd2031c))
+* **pivot:** add styling to configurator chips ([2a11514](https://github.com/telerik/kendo-themes/commit/2a11514df875c1731ed202d15d3e096b98e88fc0))
+* **popup:** box shadow should follow the same logic from default theme ([1982304](https://github.com/telerik/kendo-themes/commit/1982304b60d26ada994d154329ba40c00283fc2a))
+* **popup:** make padding of popups 0 ([d567a72](https://github.com/telerik/kendo-themes/commit/d567a72fec402302c950542c7dcb8b78261d3285))
+* **radio:** improve ripple styles ([9c2cc66](https://github.com/telerik/kendo-themes/commit/9c2cc66b554771c7972dc2f0ab383501c3a14b21))
+* **searchbox:** convert styles to v4 universal rendering ([d38a6d4](https://github.com/telerik/kendo-themes/commit/d38a6d4ace56126477268019014507e22973ed39))
+* set default input width to 10 em (20 characters) ([17fbebc](https://github.com/telerik/kendo-themes/commit/17fbebc6cec70e0f6f1ce268cfeb428fec96760b))
+* **slider:** classic slider should be 56 pixels wide ([de0fec4](https://github.com/telerik/kendo-themes/commit/de0fec46d0aae23281ab879f8b5b63873f4282af))
+* **table:** add styles for sticky table group header ([da9199f](https://github.com/telerik/kendo-themes/commit/da9199f4de94ad95b297beb5b65e1f0df6252390))
+* **tabstrip:** unify tabstrip content padding ([d35feb9](https://github.com/telerik/kendo-themes/commit/d35feb9f605622c3470a6de9bfcccce5f823ba03))
+* **toolbar:** add menu component as dependency to toolbar component ([90eeb13](https://github.com/telerik/kendo-themes/commit/90eeb136f5907b860d46fdc3c1f9f8307620e6a6))
+* **toolbar:** move styles for toolbar overflow container in toolbar files ([148a0ab](https://github.com/telerik/kendo-themes/commit/148a0ab0543b81f6fa8d98a37efb100c308e043e))
+* **treeview:** streamline treeview styles to match design better ([23a80f3](https://github.com/telerik/kendo-themes/commit/23a80f38e3ab7e679c17a04c75c0a6bf8b0641b8))
+* **treeview:** use correct variable values for treeview and items ([37f271a](https://github.com/telerik/kendo-themes/commit/37f271a22eb9fae1e22db1461e5d53d4d73dcee5))
+* use correct font-size for inputs ([f59582f](https://github.com/telerik/kendo-themes/commit/f59582f1275f3dac2644adb88ea8096bb1d9e3df))
+* **utils:** replace circle and pill with full border-radius option ([4bf37c6](https://github.com/telerik/kendo-themes/commit/4bf37c6b16b29ccad4581e43c52f205309cc160f))
+
+
+### Features
+
+* **date-input:** extract date input styles into a separate folder ([061868a](https://github.com/telerik/kendo-themes/commit/061868a44f4c6970f3d2d2a34a673583f0de5710))
+* **date-picker:** extract date picker styles into a separate folder ([c3633bd](https://github.com/telerik/kendo-themes/commit/c3633bdc34bf2c4b469b894553cfde4253b147bc))
+* **datetime-picker:** extract datetime picker styles into a separate folder ([e269119](https://github.com/telerik/kendo-themes/commit/e269119f023f258a956c3d6c759243dd58359ced))
+* **list:** extract styles for list component ([bff7748](https://github.com/telerik/kendo-themes/commit/bff7748940888055efd36b1a76af7b4698ed6fc8))
+* **panelbar:** adds variables to allow customization when expanding panelbar ([37215ea](https://github.com/telerik/kendo-themes/commit/37215ea1ac7ab95d13c35fc20c7c7154fcb1735b))
+* **table:** add styles for table component ([639ea3f](https://github.com/telerik/kendo-themes/commit/639ea3fd84a07968f366da8950b630bd911d6ea0))
+* **time-picker:** extract time picker styles into a separate folder ([d5e5888](https://github.com/telerik/kendo-themes/commit/d5e58886b895798bfac52e041da140dcfa09c428))
+* **time-selector:** extract time selector styles into a separate folder ([d16b90c](https://github.com/telerik/kendo-themes/commit/d16b90c90d26ad600e452f9bd7b6ff21c89a10d4))
+
+
+### Reverts
+
+* revert d9ca91e24c5ab5dee9736bdc8888bcb37147f3c7 ([acfc62b](https://github.com/telerik/kendo-themes/commit/acfc62bb4ebc5e69aeb3d3491c66596b201eef31))
+
+
+
+
+
 # [4.43.0](https://github.com/telerik/kendo-themes/compare/v4.42.0...v4.43.0) (2021-11-29)
 
 

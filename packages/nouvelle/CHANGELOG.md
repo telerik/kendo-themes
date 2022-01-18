@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.44.0](https://github.com/telerik/kendo-themes/compare/v4.43.0...v4.44.0) (2022-01-18)
+
+
+### Bug Fixes
+
+* ensure correct font sizes for xs sm md lg and xl ([1615afa](https://github.com/telerik/kendo-themes/commit/1615afa6446fa827249776f70e6301f677fd251d))
+
+
+
+
+
 # [4.43.0](https://github.com/telerik/kendo-themes/compare/v4.42.0...v4.43.0) (2021-11-29)
 
 
