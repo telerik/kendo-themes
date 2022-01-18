@@ -153,6 +153,9 @@
         overflow: hidden;
         text-overflow: ellipsis;
     }
+    .k-virtual-list .k-list-optionlabel {
+        position: relative;
+    }
 
 
     // Filter
