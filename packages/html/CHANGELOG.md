@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.0.0](https://github.com/telerik/kendo-themes/compare/v4.44.0...v5.0.0) (2022-01-18)
+
+
+### Bug Fixes
+
+* **html:** set global legacy property to false ([6d187e6](https://github.com/telerik/kendo-themes/commit/6d187e6f1e3b3ada28e883df6e9d871159c99475))
+
+
+### Features
+
+* **html:** add html helper for multiselect ([55cf915](https://github.com/telerik/kendo-themes/commit/55cf915c9d4ae5cc1ae5383d1c4bd22e07bf4ccf))
+
+
+### BREAKING CHANGES
+
+* **html:** Set global legacy property to false
+
+
+
+
+
 # [4.44.0](https://github.com/telerik/kendo-themes/compare/v4.43.0...v4.44.0) (2022-01-18)
 
 

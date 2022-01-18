@@ -3,6 +3,102 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.0.0](https://github.com/telerik/kendo-themes/compare/v4.44.0...v5.0.0) (2022-01-18)
+
+
+### Features
+
+* **button:** add size, shape and color customization to button ([db31d3f](https://github.com/telerik/kendo-themes/commit/db31d3f2c5da75d8a02e16f4824835574af45e14))
+* **input:** add new high-level input component ([6f45cf0](https://github.com/telerik/kendo-themes/commit/6f45cf0e1c4aeeca31cf8607e7f5b16f51dec598))
+* **list:** add size customization to list ([1509542](https://github.com/telerik/kendo-themes/commit/15095429fba919f86a59e2f862b7b5415122f2b4))
+* **masked-textbox:** add size, rounded and fill customization to masked textbox ([995dc3f](https://github.com/telerik/kendo-themes/commit/995dc3f9694f2bab387096e8ec4192515f4566ad))
+
+
+### infra
+
+* **publishing:** do not include flattened dependencies in distributions ([6dd9537](https://github.com/telerik/kendo-themes/commit/6dd95376dd86cd2182987195ee8b79938e19c285))
+
+
+### BREAKING CHANGES
+
+* **list:** List size is now applied by a dedicated class.
+* **list:** Rename list state variables.
+* **list:** Add kendo prefix to all list variables
+
+Change variable name from `$list-*` to `$kendo-list-*`.
+* **masked-textbox:** Use high-level input for masked textbox base
+
+Masked textbox reuses the input base component size, rounded and fill
+component options.
+* **input:** Add new high-level input and picker component
+
+Previously, the various form components did not share or reuse code.
+Now, we have have to base components: input and picker, that
+hold the bulk of styling needed. In addition, styles are split in multiple class names
+with each being scoped to a single component appearance property:
+
+* `size` controls the overall physical size of a component;
+* `themeColor` controls which color is used to style a component;
+* `fillMode` controls how the color is applied;
+* `rounded` controls what border radius is applied to a component.
+
+Each property generates component specific class name `k-input-{size}`,
+`k-input-{fillMode}`, `k-input-{fillMode}-{themeColor}`.
+
+Note: without `fillMode`, there is no way to apply themeColor, that's why
+the `themeColor` class is composite.
+
+The only notable exception is rounded, which sets the same class name
+for all components -- `k-rounded-{rounded}`.
+
+You can find more information about the values of each property in the
+documentation of each respective component -- /docs/components/....
+* **input:** Remove residual styles
+
+No further customization is applied to input and picker components when
+hosted inside other components, except in very few specific cases.
+* **input:** Add kendo prefix to all variables
+
+Change variable names from `$input-*` to `$kendo-input-*`.
+* **button:** Convert monolithic button styles to multiple class names
+
+Previously, `k-button` held all the styling information related to
+the button component. Now, styles are split in multiple class names
+with each being scoped to a single button appearance property:
+
+* `shape` controls if the button is square or not;
+* `size` controls the overall physical size of a button;
+* `themeColor` controls which color is used to style a button;
+* `fillMode` controls how the color is applied;
+* `rounded` controls what border radius is applied to a button.
+
+Each property generates component specific class name `k-button-square`,
+`k-button-{size}`, `k-button-{fillMode}`, `k-button-{fillMode}-{themeColor}`.
+
+Note: without `fillMode`, there is no way to apply themeColor, that's why
+the `themeColor` class is composite.
+
+The only notable exception is rounded, which sets the same class name
+for all components -- `k-rounded-{rounded}`.
+
+You can find more information about the values of each property in the
+documentation of the button component -- /docs/components/button.
+* **button:** Remove residual button styles
+
+No further customization is applied to buttons when hosted inside other
+components, except in very few specific cases.
+
+For instance, in Material theme we would slightly dim the normal buttons
+and remove the shadow, which may or may not be desired.
+* **button:** Add kendo prefix to all button variables
+
+Change variable names from `$button-*` to `$kendo-button-*`.
+* **publishing:** Do not include flattened dependencies in distributions
+
+
+
+
+
 # [4.44.0](https://github.com/telerik/kendo-themes/compare/v4.43.0...v4.44.0) (2022-01-18)
 
 
