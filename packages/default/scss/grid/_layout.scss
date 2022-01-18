@@ -1061,11 +1061,12 @@
     }
 
     .k-grid-norecords-template {
+        box-sizing: border-box;
+        margin: 0 auto;
         width: 20em;
         height: 4em;
-        line-height: 4em;
-        margin: 0 auto;
         border: 1px solid;
+        line-height: 4em;
     }
 
     .k-header > .k-cell-inner {

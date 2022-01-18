@@ -16,11 +16,13 @@
         overflow: hidden;
 
         .k-wizard-steps {
+            box-sizing: border-box;
             display: flex;
             overflow: hidden;
         }
 
         .k-wizard-step {
+            box-sizing: border-box;
             padding: calc(#{$wizard-content-padding-x / 4} + 2px);
             width: 100%;
             display: flex;
@@ -37,11 +39,13 @@
         }
 
         .k-wizard-content {
+            box-sizing: border-box;
             overflow-y: auto;
         }
 
         .k-wizard-buttons {
             margin-top: $wizard-content-padding-y;
+            box-sizing: border-box;
             display: flex;
             flex-wrap: nowrap;
             align-items: center;
