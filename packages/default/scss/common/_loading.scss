@@ -6,9 +6,18 @@
     .k-loading-color {
         width: 100%;
         height: 100%;
+        box-sizing: border-box;
         position: absolute;
         top: 0;
         left: 0;
+
+        *,
+        *::before,
+        *::after,
+        &::before,
+        &::after {
+            box-sizing: border-box;
+        }
     }
 
     .k-loading-mask {
@@ -39,6 +48,11 @@
         background-color: transparent;
         box-sizing: border-box;
         color: currentColor;
+
+        &::before,
+        &::after {
+            box-sizing: border-box;
+        }
     }
 
     .k-i-loading::before,

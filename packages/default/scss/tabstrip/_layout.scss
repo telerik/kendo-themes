@@ -2,6 +2,7 @@
 
     .k-tabstrip-wrapper {
         padding: $tabstrip-wrapper-padding-y $tabstrip-wrapper-padding-x;
+        box-sizing: border-box;
         border-width: $tabstrip-wrapper-border-width;
         border-style: solid;
         display: flex;
@@ -29,6 +30,7 @@
     }
 
     .k-tabstrip-items-wrapper {
+        box-sizing: border-box;
         border-width: 0;
         border-style: solid;
         border-color: inherit;
@@ -37,10 +39,17 @@
     }
 
     .k-tabstrip-items {
+        box-sizing: border-box;
         outline: 0;
         display: flex;
         flex-flow: row wrap;
         flex: 0 0 auto;
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
 
         .k-item {
             margin: 0;
@@ -78,6 +87,7 @@
     .k-tabstrip-content,
     .k-tabstrip > .k-content {
         padding: $tabstrip-content-padding-y $tabstrip-content-padding-x;
+        box-sizing: border-box;
         border-width: $tabstrip-content-border-width;
         border-style: solid;
         border-color: inherit;
