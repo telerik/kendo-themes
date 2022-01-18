@@ -6,7 +6,6 @@ on:
       # - 'main'
       - 'master'
       - 'develop'
-      - 'v5-dev'
       - 'v4-dev'
 
 jobs:
