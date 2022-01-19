@@ -13,6 +13,10 @@
         *::after {
             box-sizing: border-box;
         }
+
+        .k-dateinput {
+            width: $kendo-daterange-picker-input-width;
+        }
     }
 
 

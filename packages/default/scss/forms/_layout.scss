@@ -141,7 +141,8 @@
 
 
         .k-multiselect,
-        .k-floating-label-container {
+        .k-floating-label-container,
+        .k-daterangepicker .k-dateinput {
             display: inline-flex;
             width: 100%;
         }
