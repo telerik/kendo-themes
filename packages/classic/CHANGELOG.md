@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.1](https://github.com/telerik/kendo-themes/compare/v5.0.0...v5.0.1) (2022-01-19)
+
+
+### Bug Fixes
+
+* **button:** apply correct styling to clear button ([351a902](https://github.com/telerik/kendo-themes/commit/351a902d69cb487b871cafb038836542019af824))
+* **daterangepicker:** set default width for dateinputs ([de493c9](https://github.com/telerik/kendo-themes/commit/de493c9bec4c56568c79551da2d476f4a1e6afca))
+
+
+
+
+
 # [5.0.0](https://github.com/telerik/kendo-themes/compare/v4.44.0...v5.0.0) (2022-01-18)
 
 
