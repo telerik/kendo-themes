@@ -36,6 +36,7 @@
                 );
             }
 
+            &:active,
             &.k-state-active,
             &.k-state-selected {
                 @include fill(
@@ -46,6 +47,7 @@
                 );
             }
 
+            &:focus,
             &.k-state-focused {
                 @include box-shadow( $tabstrip-item-focused-shadow );
             }
