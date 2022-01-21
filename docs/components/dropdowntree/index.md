@@ -7,7 +7,7 @@ position: 3
 
 # DropDownTree
 
-DropDownTree is a form component that renders data in a tree-like structure and lets you choose a single predefined value. It is a richer version of the <select> element and supports data binding, filtering and templates.
+DropDownTree is a form component that renders data in a tree-like structure and lets you choose a single predefined value. It is a richer version of the `<select>` element and supports data binding, filtering and templates.
 
 ## Rendering
 
