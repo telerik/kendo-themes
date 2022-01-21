@@ -187,15 +187,19 @@
     .k-i-arrows-no-change::before { content: "\e011"; }
     .k-i-arrow-overflow-down::before { content: "\e012"; }
     .k-i-chevron-up::before { content: "\e013"; }
+    .k-i-chevron-double-up::before { content: "\e94a"; }
     .k-i-arrow-chevron-up::before { content: "\e013"; }
     .k-i-arrowhead-n::before { content: "\e013"; }
     .k-i-chevron-right::before { content: "\e014"; }
+    .k-i-chevron-double-right::before { content: "\e94b"; }
     .k-i-arrow-chevron-right::before { content: "\e014"; }
     .k-i-arrowhead-e::before { content: "\e014"; }
     .k-i-chevron-down::before { content: "\e015"; }
+    .k-i-chevron-double-down::before { content: "\e94c"; }
     .k-i-arrow-chevron-down::before { content: "\e015"; }
     .k-i-arrowhead-s::before { content: "\e015"; }
     .k-i-chevron-left::before { content: "\e016"; }
+    .k-i-chevron-double-left::before { content: "\e94d"; }
     .k-i-arrow-chevron-left::before { content: "\e016"; }
     .k-i-arrowhead-w::before { content: "\e016"; }
     .k-i-arrow-up::before { content: "\e017"; }
@@ -1054,6 +1058,8 @@
     .k-i-files-validation::before { content: "\e945"; }
     .k-i-data-rest::before { content: "\e946"; }
     .k-i-file-typescript::before { content: "\e947"; }
+    .k-i-data-ods::before { content: "\e948"; }
+    .k-i-file-report::before { content: "\e949"; }
     .k-i-table-position-start::before { content: "\e6a2"; }
     .k-i-table-position-left::before { content: "\e6a2"; }
     .k-i-table-position-center::before { content: "\e6a3"; }
@@ -1073,6 +1079,7 @@
     .k-i-list-latin-big::before { content: "\e6b1"; }
     .k-i-list-latin-small::before { content: "\e6b2"; }
     .k-i-list-unordered-square::before { content: "\e6b3"; }
+    .k-i-list-unordered-outline::before { content: "\e6b4"; }
     .k-i-graph::before { content: "\ea00"; }
     .k-i-chart-column-clustered::before { content: "\ea01"; }
     .k-i-chart-column-stacked::before { content: "\ea02"; }
