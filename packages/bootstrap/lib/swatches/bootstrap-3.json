@@ -189,17 +189,17 @@
         {
             "name": "Button",
             "variables": {
-                "button-text": {
+                "kendo-button-text": {
                     "name": "Button text color",
                     "type": "color",
                     "value": "#333333"
                 },
-                "button-bg": {
+                "kendo-button-bg": {
                     "name": "Button background",
                     "type": "color",
                     "value": "#ffffff"
                 },
-                "button-border": {
+                "kendo-button-border": {
                     "name": "Button background",
                     "type": "color",
                     "value": "#dddddd"
