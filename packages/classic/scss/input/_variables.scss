@@ -71,6 +71,12 @@ $kendo-input-focus-text: null !default;
 $kendo-input-focus-border: rgba(0, 0, 0, .1) !default;
 $kendo-input-focus-shadow: 0 2px 4px 0 rgba(0, 0, 0, .03), 0 4px 5px 0 rgba(0, 0, 0, .04) !default;
 
+$kendo-input-disabled-bg: null !default;
+$kendo-input-disabled-text: null !default;
+$kendo-input-disabled-border: null !default;
+$kendo-input-disabled-gradient: null !default;
+$kendo-input-disabled-shadow: null !default;
+
 $kendo-picker-bg: $kendo-button-bg !default;
 $kendo-picker-text: $kendo-button-text !default;
 $kendo-picker-border: $kendo-button-border !default;
@@ -88,6 +94,12 @@ $kendo-picker-focus-text: $kendo-button-focus-text !default;
 $kendo-picker-focus-border: $kendo-button-focus-border !default;
 $kendo-picker-focus-gradient: $kendo-button-focus-gradient !default;
 $kendo-picker-focus-shadow: $kendo-button-focus-shadow !default;
+
+$kendo-picker-disabled-bg: null !default;
+$kendo-picker-disabled-text: null !default;
+$kendo-picker-disabled-border: null !default;
+$kendo-picker-disabled-gradient: null !default;
+$kendo-picker-disabled-shadow: null !default;
 
 $kendo-input-placeholder-text: $subtle-text !default;
 $kendo-input-placeholder-opacity: 1 !default;
