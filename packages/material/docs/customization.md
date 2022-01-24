@@ -406,7 +406,7 @@ The following table lists the available variables for customizing the Material t
 <td>
 
 
-`$theme-colors`
+`$kendo-theme-colors`
 
 </td>
 <td>
@@ -618,7 +618,7 @@ The following table lists the available variables for customizing the Material t
 
 
 `map-merge(
-    $theme-colors,
+    $kendo-theme-colors,
     ( "base": $base-bg )
 )`
 
@@ -626,7 +626,7 @@ The following table lists the available variables for customizing the Material t
 <td>
 
 `map-merge(
-    $theme-colors,
+    $kendo-theme-colors,
     ( "base": $base-bg )
 )`
 
@@ -2455,10 +2455,10 @@ The following table lists the available variables for customizing the Material t
 
 `(
     "base": $kendo-chip-base-bg,
-    "error": map-get( $theme-colors, "error" ),
-    "info": map-get( $theme-colors, "info" ),
-    "warning": map-get( $theme-colors, "warning" ),
-    "success": map-get( $theme-colors, "success" )
+    "error": map-get( $kendo-theme-colors, "error" ),
+    "info": map-get( $kendo-theme-colors, "info" ),
+    "warning": map-get( $kendo-theme-colors, "warning" ),
+    "success": map-get( $kendo-theme-colors, "success" )
 )`
 
 </td>
@@ -2466,10 +2466,10 @@ The following table lists the available variables for customizing the Material t
 
 `(
     "base": $kendo-chip-base-bg,
-    "error": map-get( $theme-colors, "error" ),
-    "info": map-get( $theme-colors, "info" ),
-    "warning": map-get( $theme-colors, "warning" ),
-    "success": map-get( $theme-colors, "success" )
+    "error": map-get( $kendo-theme-colors, "error" ),
+    "info": map-get( $kendo-theme-colors, "info" ),
+    "warning": map-get( $kendo-theme-colors, "warning" ),
+    "success": map-get( $kendo-theme-colors, "success" )
 )`
 
 </td>
@@ -3112,7 +3112,7 @@ The following table lists the available variables for customizing the Material t
 </td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Inverse color of the theme. Depending on the theme luminance dark or lught, it will be light or dark</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Inverse color of the theme. Depending on the theme luminance dark or light, it will be light or dark</div></div>
     </td>
 </tr>
 </tbody>
@@ -3152,7 +3152,7 @@ The following table lists the available variables for customizing the Material t
 </td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of a component.<br />Note: do not use this variable directly. Instead derive it as `$component-name-bg` e.g. `$grid-bg: $component-bg !defualt;`.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of a component.<br />Note: do not use this variable directly. Instead derive it as `$component-name-bg` e.g. `$grid-bg: $component-bg !default;`.</div></div>
     </td>
 </tr>
 <tr>
@@ -3676,7 +3676,7 @@ The following table lists the available variables for customizing the Material t
 <td>
 
 
-`$theme-colors`
+`$kendo-theme-colors`
 
 </td>
 <td>
