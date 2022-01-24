@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.1.1](https://github.com/telerik/kendo-themes/compare/v5.1.0...v5.1.1) (2022-01-24)
+
+
+### Bug Fixes
+
+* scope theme colors variables to avoid conflicts with bootstrap ([3713876](https://github.com/telerik/kendo-themes/commit/37138761677d9ee14dc48a7a8b80209839e33be2))
+
+
+
+
+
 # [5.1.0](https://github.com/telerik/kendo-themes/compare/v5.0.1...v5.1.0) (2022-01-24)
 
 
