@@ -203,7 +203,7 @@ The following table lists the available variables for customization.
 
 
 `map-merge(
-    $theme-colors,
+    $kendo-theme-colors,
     ( "base": #f5f5f5 )
 )`
 
@@ -211,7 +211,7 @@ The following table lists the available variables for customization.
 <td>
 
 `map-merge(
-    $theme-colors,
+    $kendo-theme-colors,
     ( "base": #f5f5f5 )
 )`
 

@@ -134,7 +134,7 @@ The following table lists the available variables for customization.
 <td>
 
 
-`$theme-colors`
+`$kendo-theme-colors`
 
 </td>
 <td>

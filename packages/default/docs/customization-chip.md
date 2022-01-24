@@ -223,10 +223,10 @@ The following table lists the available variables for customization.
 
 `(
     "base": $kendo-chip-base-bg,
-    "error": map-get($theme-colors, "error"),
-    "info": map-get($theme-colors, "info"),
-    "warning": map-get($theme-colors, "warning"),
-    "success": map-get($theme-colors, "success")
+    "error": map-get($kendo-theme-colors, "error"),
+    "info": map-get($kendo-theme-colors, "info"),
+    "warning": map-get($kendo-theme-colors, "warning"),
+    "success": map-get($kendo-theme-colors, "success")
 )`
 
 </td>
@@ -234,10 +234,10 @@ The following table lists the available variables for customization.
 
 `(
     "base": $kendo-chip-base-bg,
-    "error": map-get($theme-colors, "error"),
-    "info": map-get($theme-colors, "info"),
-    "warning": map-get($theme-colors, "warning"),
-    "success": map-get($theme-colors, "success")
+    "error": map-get($kendo-theme-colors, "error"),
+    "info": map-get($kendo-theme-colors, "info"),
+    "warning": map-get($kendo-theme-colors, "warning"),
+    "success": map-get($kendo-theme-colors, "success")
 )`
 
 </td>
