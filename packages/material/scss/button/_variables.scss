@@ -54,7 +54,7 @@ $kendo-button-arrow-padding-y: $kendo-button-padding-y !default;
 /// Theme colors map for the button.
 /// @group button
 $kendo-button-theme-colors: map-merge(
-    $theme-colors,
+    $kendo-theme-colors,
     ( "base": $base-bg )
 ) !default;
 

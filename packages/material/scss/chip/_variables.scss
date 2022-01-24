@@ -66,10 +66,10 @@ $kendo-chip-base-bg: if( $dark-theme, $white, $kendo-button-text ) !default;
 /// @group chip
 $kendo-chip-theme-colors: (
     "base": $kendo-chip-base-bg,
-    "error": map-get( $theme-colors, "error" ),
-    "info": map-get( $theme-colors, "info" ),
-    "warning": map-get( $theme-colors, "warning" ),
-    "success": map-get( $theme-colors, "success" )
+    "error": map-get( $kendo-theme-colors, "error" ),
+    "info": map-get( $kendo-theme-colors, "info" ),
+    "warning": map-get( $kendo-theme-colors, "warning" ),
+    "success": map-get( $kendo-theme-colors, "success" )
 ) !default;
 
 /// The base background color of solid chip.

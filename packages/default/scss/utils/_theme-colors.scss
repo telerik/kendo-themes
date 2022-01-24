@@ -10,7 +10,7 @@
 
     .k-color-inherit { color: inherit; }
 
-    @each $name, $color in $theme-colors {
+    @each $name, $color in $kendo-theme-colors {
         .k-text-#{$name},
         .k-color-#{$name} {
             color: $color !important;
@@ -24,7 +24,7 @@
 
     // sass-lint:disable-block no-important
 
-    @each $name, $bg-color in $theme-colors {
+    @each $name, $bg-color in $kendo-theme-colors {
         .k-bg-#{$name} {
             background-color: $bg-color !important;
         }
@@ -41,7 +41,7 @@
 
 @include exports( "common/decoration/variant" ) {
 
-    @each $name, $variant in $theme-colors {
+    @each $name, $variant in $kendo-theme-colors {
         .k-state-#{$name} {
             @include variant( $variant );
         }

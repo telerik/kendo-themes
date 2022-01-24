@@ -142,12 +142,12 @@ $dark: #404040 !default;
 /// @type Color
 $light: #ebebeb !default;
 
-/// Inverse color of the theme. Depending on the theme luminance dark or lught, it will be light or dark
+/// Inverse color of the theme. Depending on the theme luminance dark or light, it will be light or dark
 /// @group color-system
 $inverse: if( $dark-theme, $light, $dark ) !default;
 
 
-$theme-colors: (
+$kendo-theme-colors: (
     "primary": $primary,
     "secondary": $secondary,
     "tertiary": $tertiary,
@@ -213,7 +213,7 @@ $link-hover-text: $primary-darker !default;
 
 // Component
 /// Background color of a component.
-/// Note: do not use this variable directly. Instead derive it as `$component-name-bg` e.g. `$grid-bg: $component-bg !defualt;`.
+/// Note: do not use this variable directly. Instead derive it as `$component-name-bg` e.g. `$grid-bg: $component-bg !default;`.
 /// @group component
 $component-bg: $body-bg !default;
 /// Text color of a component.

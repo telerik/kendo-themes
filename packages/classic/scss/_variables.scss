@@ -189,7 +189,7 @@ $light: #ebebeb !default;
 $inverse: if( $dark-theme, $light, $dark ) !default;
 
 
-$theme-colors: (
+$kendo-theme-colors: (
     "primary": $primary,
     "secondary": $secondary,
     "tertiary": $tertiary,
@@ -244,7 +244,7 @@ $base-border: try-shade( $base-bg, 2 ) !default;
 $base-gradient: rgba( white, .1 ), rgba( white, 0 ) !default;
 
 /// Background color of a component.
-/// Note: do not use this variable directly. Instead derive it as `$component-name-bg` e.g. `$grid-bg: $component-bg !defualt;`.
+/// Note: do not use this variable directly. Instead derive it as `$component-name-bg` e.g. `$grid-bg: $component-bg !default;`.
 /// @group component
 $component-bg: $body-bg !default;
 /// Text color of a component.
