@@ -134,6 +134,10 @@
         .k-numerictextbox {
             width: $colorgradient-input-width;
         }
+
+        .k-input-inner {
+            text-overflow: clip;
+        }
     }
 
     // Contrast

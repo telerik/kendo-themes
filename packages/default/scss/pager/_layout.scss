@@ -177,6 +177,11 @@
             width: $pager-dropdown-width;
         }
 
+        .k-input-inner,
+        .k-input-value-text {
+            text-overflow: clip;
+        }
+
         .k-rtl &,
         [dir="rtl"] & {
             .k-dropdown-list,
