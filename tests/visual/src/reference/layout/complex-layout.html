@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width:15px;">
+
+<head>
+    <title>Complex layout</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" data-role="kendo-theme" href="../../../../../packages/default/dist/all.css">
+    <link rel="stylesheet" href="../../../assets/styles.css">
+    <script src="../../../assets/scripts.js"></script>
+    <script src="../../../../../packages/html/dist/index.js"></script>
+
+    <style>
+        .box {
+            box-sizing: border-box;
+            padding: 4px;
+            border: 1px solid #cccccc;
+            background: #fafafa;
+        }
+    </style>
+</head>
+
+<body class="k-body">
+
+    <div id="test-area" class="k-d-grid k-grid-cols-2">
+
+        <section>
+
+            <div class="k-vstack" style="height: 300px">
+                <div class="box">Header</div>
+                <div class="k-hstack k-flex">
+                    <div class="box">Sidebar</div>
+                    <div class="box k-flex">Main</div>
+                    <div class="box">Sidebar</div>
+                </div>
+                <div class="box">Footer</div>
+            </div>
+
+        </section>
+
+    </div>
+
+
+
+</body>
+
+</html>
