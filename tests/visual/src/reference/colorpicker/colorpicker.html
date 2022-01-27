@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width:15px;">
+
+<head>
+    <title>ColorPicker DropDown</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" data-role="kendo-theme" href="../../../../../packages/default/dist/all.css">
+    <link rel="stylesheet" href="../../../assets/styles.css">
+    <script src="../../../assets/scripts.js"></script>
+    <script src="../../../../../packages/html/dist/index.js"></script>
+
+    <style>
+    </style>
+</head>
+
+<body class="k-body">
+
+    <div id="test-area" class="k-d-grid k-grid-cols-9">
+
+        <span></span>
+        <span>No Color</span>
+        <span>Opacity</span>
+        <span>Selected Color</span>
+        <span>Icon</span>
+        <span>Icon Opacity</span>
+        <span>Hover</span>
+        <span>Focus</span>
+        <span>Disabled</span>
+
+        <span>Small</span>
+        <section>
+            <span class="k-colorpicker k-icon-picker k-picker k-picker-sm k-rounded-md k-picker-solid" type="text" autocomplete="off"><span class="k-input-inner"><span class="k-value-icon k-color-preview k-no-color"><span class="k-color-preview-mask"></span></span></span><button type="button" class="k-input-button k-button k-button-sm k-button-solid k-button-solid-base k-icon-button"><span class="k-button-icon k-icon k-i-arrow-s"></span></button></span>
+        </section>
+
+        <section>
+            <span class="k-colorpicker k-icon-picker k-picker k-picker-sm k-rounded-md k-picker-solid" type="text" autocomplete="off"><span class="k-input-inner"><span class="k-value-icon k-color-preview"><span class="k-color-preview-mask" style="background-color: rgba(255, 0, 255, 0.5);"></span></span></span><button type="button" class="k-input-button k-button k-button-sm k-button-solid k-button-solid-base k-icon-button"><span class="k-button-icon k-icon k-i-arrow-s"></span></button></span>
+        </section>
+
+        <section>
+            <span class="k-colorpicker k-icon-picker k-picker k-picker-sm k-rounded-md k-picker-solid" type="text" autocomplete="off"><span class="k-input-inner"><span class="k-value-icon k-color-preview"><span class="k-color-preview-mask" style="background-color: fuchsia;"></span></span></span><button type="button" class="k-input-button k-button k-button-sm k-button-solid k-button-solid-base k-icon-button"><span class="k-button-icon k-icon k-i-arrow-s"></span></button></span>
+        </section>
+
+        <section>
+            <span class="k-colorpicker k-icon-picker k-picker k-picker-sm k-rounded-md k-picker-solid" type="text" autocomplete="off"><span class="k-input-inner"><span class="k-value-icon k-color-preview k-icon-color-preview"><span class="k-color-preview-icon k-icon k-i-edit-tools"></span><span class="k-color-preview-mask" style="background-color: fuchsia;"></span></span></span><button type="button" class="k-input-button k-button k-button-sm k-button-solid k-button-solid-base k-icon-button"><span class="k-button-icon k-icon k-i-arrow-s"></span></button></span>
+        </section>
+
+        <section>
+            <span class="k-colorpicker k-icon-picker k-picker k-picker-sm k-rounded-md k-picker-solid" type="text" autocomplete="off"><span class="k-input-inner"><span class="k-value-icon k-color-preview k-icon-color-preview"><span class="k-color-preview-icon k-icon k-i-edit-tools"></span><span class="k-color-preview-mask" style="background-color: rgba(255, 0, 255, 0.5);"></span></span></span><button type="button" class="k-input-button k-button k-button-sm k-button-solid k-button-solid-base k-icon-button"><span class="k-button-icon k-icon k-i-arrow-s"></span></button></span>
+        </section>
+
+        <section>
+            <span class="k-colorpicker k-icon-picker k-picker k-picker-sm k-rounded-md k-picker-solid k-hover" type="text" autocomplete="off"><span class="k-input-inner"><span class="k-value-icon k-color-preview"><span class="k-color-preview-mask" style="background-color: fuchsia;"></span></span></span><button type="button" class="k-input-button k-button k-button-sm k-button-solid k-button-solid-base k-icon-button"><span class="k-button-icon k-icon k-i-arrow-s"></span></button></span>
+        </section>
+
+        <section>
+            <span class="k-colorpicker k-icon-picker k-picker k-picker-sm k-rounded-md k-picker-solid k-focus" type="text" autocomplete="off"><span class="k-input-inner"><span class="k-value-icon k-color-preview"><span class="k-color-preview-mask" style="background-color: fuchsia;"></span></span></span><button type="button" class="k-input-button k-button k-button-sm k-button-solid k-button-solid-base k-icon-button"><span class="k-button-icon k-icon k-i-arrow-s"></span></button></span>
+        </section>
+
+        <section>
+            <span class="k-colorpicker k-icon-picker k-picker k-picker-sm k-rounded-md k-picker-solid k-disabled" type="text" autocomplete="off"><span class="k-input-inner"><span class="k-value-icon k-color-preview"><span class="k-color-preview-mask" style="background-color: fuchsia;"></span></span></span><button type="button" class="k-input-button k-button k-button-sm k-button-solid k-button-solid-base k-icon-button"><span class="k-button-icon k-icon k-i-arrow-s"></span></button></span>
+        </section>
+
+        <span>Medium</span>
+        <section>
+            <span class="k-colorpicker k-icon-picker k-picker k-picker-md k-rounded-md k-picker-solid" type="text" autocomplete="off"><span class="k-input-inner"><span class="k-value-icon k-color-preview k-no-color"><span class="k-color-preview-mask"></span></span></span><button type="button" class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button"><span class="k-button-icon k-icon k-i-arrow-s"></span></button></span>
+        </section>
+
+        <section>
+            <span class="k-colorpicker k-icon-picker k-picker k-picker-md k-rounded-md k-picker-solid" type="text" autocomplete="off"><span class="k-input-inner"><span class="k-value-icon k-color-preview"><span class="k-color-preview-mask" style="background-color: rgba(255, 0, 255, 0.5);"></span></span></span><button type="button" class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button"><span class="k-button-icon k-icon k-i-arrow-s"></span></button></span>
+        </section>
+
+        <section>
+            <span class="k-colorpicker k-icon-picker k-picker k-picker-md k-rounded-md k-picker-solid" type="text" autocomplete="off"><span class="k-input-inner"><span class="k-value-icon k-color-preview"><span class="k-color-preview-mask" style="background-color: fuchsia;"></span></span></span><button type="button" class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button"><span class="k-button-icon k-icon k-i-arrow-s"></span></button></span>
+        </section>
+
+        <section>
+            <span class="k-colorpicker k-icon-picker k-picker k-picker-md k-rounded-md k-picker-solid" type="text" autocomplete="off"><span class="k-input-inner"><span class="k-value-icon k-color-preview k-icon-color-preview"><span class="k-color-preview-icon k-icon k-i-edit-tools"></span><span class="k-color-preview-mask" style="background-color: fuchsia;"></span></span></span><button type="button" class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button"><span class="k-button-icon k-icon k-i-arrow-s"></span></button></span>
+        </section>
+
+        <section>
+            <span class="k-colorpicker k-icon-picker k-picker k-picker-md k-rounded-md k-picker-solid" type="text" autocomplete="off"><span class="k-input-inner"><span class="k-value-icon k-color-preview k-icon-color-preview"><span class="k-color-preview-icon k-icon k-i-edit-tools"></span><span class="k-color-preview-mask" style="background-color: rgba(255, 0, 255, 0.5);"></span></span></span><button type="button" class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button"><span class="k-button-icon k-icon k-i-arrow-s"></span></button></span>
+        </section>
+
+        <section>
+            <span class="k-colorpicker k-icon-picker k-picker k-picker-md k-rounded-md k-picker-solid k-hover" type="text" autocomplete="off"><span class="k-input-inner"><span class="k-value-icon k-color-preview"><span class="k-color-preview-mask" style="background-color: fuchsia;"></span></span></span><button type="button" class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button"><span class="k-button-icon k-icon k-i-arrow-s"></span></button></span>
+        </section>
+
+        <section>
+            <span class="k-colorpicker k-icon-picker k-picker k-picker-md k-rounded-md k-picker-solid k-focus" type="text" autocomplete="off"><span class="k-input-inner"><span class="k-value-icon k-color-preview"><span class="k-color-preview-mask" style="background-color: fuchsia;"></span></span></span><button type="button" class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button"><span class="k-button-icon k-icon k-i-arrow-s"></span></button></span>
+        </section>
+
+        <section>
+            <span class="k-colorpicker k-icon-picker k-picker k-picker-md k-rounded-md k-picker-solid k-disabled" type="text" autocomplete="off"><span class="k-input-inner"><span class="k-value-icon k-color-preview"><span class="k-color-preview-mask" style="background-color: fuchsia;"></span></span></span><button type="button" class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button"><span class="k-button-icon k-icon k-i-arrow-s"></span></button></span>
+        </section>
+
+        <span>Large</span>
+        <section>
+            <span class="k-colorpicker k-icon-picker k-picker k-picker-lg k-rounded-md k-picker-solid" type="text" autocomplete="off"><span class="k-input-inner"><span class="k-value-icon k-color-preview k-no-color"><span class="k-color-preview-mask"></span></span></span><button type="button" class="k-input-button k-button k-button-lg k-button-solid k-button-solid-base k-icon-button"><span class="k-button-icon k-icon k-i-arrow-s"></span></button></span>
+        </section>
+
+        <section>
+            <span class="k-colorpicker k-icon-picker k-picker k-picker-lg k-rounded-md k-picker-solid" type="text" autocomplete="off"><span class="k-input-inner"><span class="k-value-icon k-color-preview"><span class="k-color-preview-mask" style="background-color: rgba(255, 0, 255, 0.5);"></span></span></span><button type="button" class="k-input-button k-button k-button-lg k-button-solid k-button-solid-base k-icon-button"><span class="k-button-icon k-icon k-i-arrow-s"></span></button></span>
+        </section>
+
+        <section>
+            <span class="k-colorpicker k-icon-picker k-picker k-picker-lg k-rounded-md k-picker-solid" type="text" autocomplete="off"><span class="k-input-inner"><span class="k-value-icon k-color-preview"><span class="k-color-preview-mask" style="background-color: fuchsia;"></span></span></span><button type="button" class="k-input-button k-button k-button-lg k-button-solid k-button-solid-base k-icon-button"><span class="k-button-icon k-icon k-i-arrow-s"></span></button></span>
+        </section>
+
+        <section>
+            <span class="k-colorpicker k-icon-picker k-picker k-picker-lg k-rounded-md k-picker-solid" type="text" autocomplete="off"><span class="k-input-inner"><span class="k-value-icon k-color-preview k-icon-color-preview"><span class="k-color-preview-icon k-icon k-i-edit-tools"></span><span class="k-color-preview-mask" style="background-color: fuchsia;"></span></span></span><button type="button" class="k-input-button k-button k-button-lg k-button-solid k-button-solid-base k-icon-button"><span class="k-button-icon k-icon k-i-arrow-s"></span></button></span>
+        </section>
+
+        <section>
+            <span class="k-colorpicker k-icon-picker k-picker k-picker-lg k-rounded-md k-picker-solid" type="text" autocomplete="off"><span class="k-input-inner"><span class="k-value-icon k-color-preview k-icon-color-preview"><span class="k-color-preview-icon k-icon k-i-edit-tools"></span><span class="k-color-preview-mask" style="background-color: rgba(255, 0, 255, 0.5);"></span></span></span><button type="button" class="k-input-button k-button k-button-lg k-button-solid k-button-solid-base k-icon-button"><span class="k-button-icon k-icon k-i-arrow-s"></span></button></span>
+        </section>
+
+        <section>
+            <span class="k-colorpicker k-icon-picker k-picker k-picker-lg k-rounded-md k-picker-solid k-hover" type="text" autocomplete="off"><span class="k-input-inner"><span class="k-value-icon k-color-preview"><span class="k-color-preview-mask" style="background-color: fuchsia;"></span></span></span><button type="button" class="k-input-button k-button k-button-lg k-button-solid k-button-solid-base k-icon-button"><span class="k-button-icon k-icon k-i-arrow-s"></span></button></span>
+        </section>
+
+        <section>
+            <span class="k-colorpicker k-icon-picker k-picker k-picker-lg k-rounded-md k-picker-solid k-focus" type="text" autocomplete="off"><span class="k-input-inner"><span class="k-value-icon k-color-preview"><span class="k-color-preview-mask" style="background-color: fuchsia;"></span></span></span><button type="button" class="k-input-button k-button k-button-lg k-button-solid k-button-solid-base k-icon-button"><span class="k-button-icon k-icon k-i-arrow-s"></span></button></span>
+        </section>
+
+        <section>
+            <span class="k-colorpicker k-icon-picker k-picker k-picker-lg k-rounded-md k-picker-solid k-disabled" type="text" autocomplete="off"><span class="k-input-inner"><span class="k-value-icon k-color-preview"><span class="k-color-preview-mask" style="background-color: fuchsia;"></span></span></span><button type="button" class="k-input-button k-button k-button-lg k-button-solid k-button-solid-base k-icon-button"><span class="k-button-icon k-icon k-i-arrow-s"></span></button></span>
+        </section>
+
+    </div>
+
+
+
+</body>
+
+</html>
