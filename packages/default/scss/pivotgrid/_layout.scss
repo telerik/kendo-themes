@@ -134,6 +134,7 @@
 
     .k-pivotgrid-cell .k-icon {
         cursor: pointer;
+        padding-inline-end: $pivotgrid-icon-spacing;
     }
 
     .k-pivotgrid-total {
