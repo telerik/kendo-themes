@@ -27,7 +27,7 @@
         text-transform: none;
         text-decoration: none;
         flex-shrink: 0;
-        display: inline-flex;
+        display: inline-flex !important; // sass-lint:disable-line no-important
         flex-flow: row nowrap;
         align-items: center;
         justify-content: center;
