@@ -27,14 +27,17 @@ The following table lists the available variables for customization.
 <tbody>
         <tr>
     <td>$series-a</td>
-    <td></td>
+    <td>Color</td>
 <td>
+
 <span class="color-preview" style="background-color: #ff6358"></span>
 
 `#ff6358`
 
 </td>
-<td><span class="color-preview" style="background-color: #ff6358"></span>
+<td>
+
+<span class="color-preview" style="background-color: #ff6358"></span>
 
 `#ff6358`
 
@@ -46,14 +49,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$series-b</td>
-    <td></td>
+    <td>Color</td>
 <td>
+
 <span class="color-preview" style="background-color: #ffd246"></span>
 
 `#ffd246`
 
 </td>
-<td><span class="color-preview" style="background-color: #ffd246"></span>
+<td>
+
+<span class="color-preview" style="background-color: #ffd246"></span>
 
 `#ffd246`
 
@@ -65,14 +71,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$series-c</td>
-    <td></td>
+    <td>Color</td>
 <td>
+
 <span class="color-preview" style="background-color: #78d237"></span>
 
 `#78d237`
 
 </td>
-<td><span class="color-preview" style="background-color: #78d237"></span>
+<td>
+
+<span class="color-preview" style="background-color: #78d237"></span>
 
 `#78d237`
 
@@ -84,14 +93,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$series-d</td>
-    <td></td>
+    <td>Color</td>
 <td>
+
 <span class="color-preview" style="background-color: #28b4c8"></span>
 
 `#28b4c8`
 
 </td>
-<td><span class="color-preview" style="background-color: #28b4c8"></span>
+<td>
+
+<span class="color-preview" style="background-color: #28b4c8"></span>
 
 `#28b4c8`
 
@@ -103,14 +115,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$series-e</td>
-    <td></td>
+    <td>Color</td>
 <td>
+
 <span class="color-preview" style="background-color: #2d73f5"></span>
 
 `#2d73f5`
 
 </td>
-<td><span class="color-preview" style="background-color: #2d73f5"></span>
+<td>
+
+<span class="color-preview" style="background-color: #2d73f5"></span>
 
 `#2d73f5`
 
@@ -122,14 +137,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$series-f</td>
-    <td></td>
+    <td>Color</td>
 <td>
+
 <span class="color-preview" style="background-color: #aa46be"></span>
 
 `#aa46be`
 
 </td>
-<td><span class="color-preview" style="background-color: #aa46be"></span>
+<td>
+
+<span class="color-preview" style="background-color: #aa46be"></span>
 
 `#aa46be`
 
@@ -141,14 +159,15 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$series-1</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$series-a`
 
 </td>
-<td><span class="color-preview" style="background-color: #ff6358"></span>
+<td>
+
+<span class="color-preview" style="background-color: #ff6358"></span>
 
 `#ff6358`
 
@@ -160,16 +179,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$chart-major-lines</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `rgba( if( $dark-theme, $white, $black ), .08 )`
 
 </td>
 <td>
 
-`rgba( if( $dark-theme, $white, $black ), .08 )`
+<span class="color-preview" style="background-color: rgba(0, 0, 0, 0.08)"></span>
+
+`rgba(0, 0, 0, 0.08)`
 
 </td>
 </tr>
@@ -179,16 +199,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$chart-minor-lines</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `rgba( if( $dark-theme, $white, $black ), .04 )`
 
 </td>
 <td>
 
-`rgba( if( $dark-theme, $white, $black ), .04 )`
+<span class="color-preview" style="background-color: rgba(0, 0, 0, 0.04)"></span>
+
+`rgba(0, 0, 0, 0.04)`
 
 </td>
 </tr>

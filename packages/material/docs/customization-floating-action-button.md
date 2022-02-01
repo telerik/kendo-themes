@@ -27,9 +27,8 @@ The following table lists the available variables for customization.
 <tbody>
         <tr>
     <td>$kendo-fab-border-width</td>
-    <td></td>
+    <td>Number</td>
 <td>
-
 
 `0px`
 
@@ -46,9 +45,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-fab-border-radius</td>
-    <td></td>
+    <td>Number</td>
 <td>
-
 
 `$border-radius`
 
@@ -65,9 +63,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-fab-font-family</td>
-    <td></td>
+    <td>List</td>
 <td>
-
 
 `$font-family`
 
@@ -84,9 +81,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-fab-font-size</td>
-    <td></td>
+    <td>Number</td>
 <td>
-
 
 `$font-size`
 
@@ -103,16 +99,15 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-fab-line-height</td>
-    <td></td>
+    <td>Number</td>
 <td>
-
 
 `(20 / 14)`
 
 </td>
 <td>
 
-`(20 / 14)`
+`1.4285714286`
 
 </td>
 </tr>
@@ -122,16 +117,15 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-fab-padding-x</td>
-    <td></td>
+    <td>Number</td>
 <td>
-
 
 `$padding-x`
 
 </td>
 <td>
 
-
+`16px`
 
 </td>
 </tr>
@@ -141,16 +135,15 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-fab-padding-y</td>
-    <td></td>
+    <td>Number</td>
 <td>
-
 
 `$kendo-fab-padding-x`
 
 </td>
 <td>
 
-
+`16px`
 
 </td>
 </tr>
@@ -160,9 +153,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-fab-icon-width</td>
-    <td></td>
+    <td>Number</td>
 <td>
-
 
 `20px`
 
@@ -179,9 +171,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-fab-icon-height</td>
-    <td></td>
+    <td>Number</td>
 <td>
-
 
 `$kendo-fab-icon-width`
 
@@ -198,16 +189,15 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-fab-icon-spacing</td>
-    <td></td>
+    <td>Number</td>
 <td>
-
 
 `map-get( $spacing, 1 ) * 1.5`
 
 </td>
 <td>
 
-`map-get( $spacing, 1 ) * 1.5`
+`6px`
 
 </td>
 </tr>
@@ -217,9 +207,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-fab-items-padding-x</td>
-    <td></td>
+    <td>Number</td>
 <td>
-
 
 `0px`
 
@@ -236,16 +225,15 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-fab-items-padding-y</td>
-    <td></td>
+    <td>Number</td>
 <td>
-
 
 `map-get( $spacing, 4 )`
 
 </td>
 <td>
 
-`map-get( $spacing, 4 )`
+`16px`
 
 </td>
 </tr>
@@ -255,16 +243,15 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-fab-item-text-padding-x</td>
-    <td></td>
+    <td>Number</td>
 <td>
-
 
 `map-get( $spacing, 1 )`
 
 </td>
 <td>
 
-`map-get( $spacing, 1 )`
+`4px`
 
 </td>
 </tr>
@@ -274,16 +261,15 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-fab-item-text-padding-y</td>
-    <td></td>
+    <td>Number</td>
 <td>
-
 
 `$kendo-fab-item-text-padding-x`
 
 </td>
 <td>
 
-`map-get( $spacing, 1 )`
+`4px`
 
 </td>
 </tr>
@@ -293,9 +279,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-fab-item-text-border-width</td>
-    <td></td>
+    <td>Number</td>
 <td>
-
 
 `1px`
 
@@ -312,9 +297,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-fab-item-text-border-radius</td>
-    <td></td>
+    <td>Number</td>
 <td>
-
 
 `2px`
 
@@ -331,16 +315,15 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-fab-item-text-font-size</td>
-    <td></td>
+    <td>Number</td>
 <td>
-
 
 `$font-size-xs`
 
 </td>
 <td>
 
-
+`10px`
 
 </td>
 </tr>
@@ -350,9 +333,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-fab-item-text-line-height</td>
-    <td></td>
+    <td>Number</td>
 <td>
-
 
 `1.2`
 
@@ -369,16 +351,15 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-fab-item-icon-padding-x</td>
-    <td></td>
+    <td>Number</td>
 <td>
-
 
 `map-get( $spacing, 2 )`
 
 </td>
 <td>
 
-`map-get( $spacing, 2 )`
+`8px`
 
 </td>
 </tr>
@@ -388,16 +369,15 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-fab-item-icon-padding-y</td>
-    <td></td>
+    <td>Number</td>
 <td>
-
 
 `$kendo-fab-item-icon-padding-x`
 
 </td>
 <td>
 
-`map-get( $spacing, 2 )`
+`8px`
 
 </td>
 </tr>
@@ -407,9 +387,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-fab-item-icon-border-width</td>
-    <td></td>
+    <td>Number</td>
 <td>
-
 
 `0`
 
@@ -426,9 +405,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-fab-item-icon-border-radius</td>
-    <td></td>
+    <td>Number</td>
 <td>
-
 
 `50%`
 
@@ -445,9 +423,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-fab-item-icon-width</td>
-    <td></td>
+    <td>Number</td>
 <td>
-
 
 `20px`
 
@@ -464,9 +441,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-fab-item-icon-height</td>
-    <td></td>
+    <td>Number</td>
 <td>
-
 
 `$kendo-fab-item-icon-width`
 
@@ -483,16 +459,15 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-fab-theme-colors</td>
-    <td></td>
+    <td>Map</td>
 <td>
-
 
 `$kendo-theme-colors`
 
 </td>
 <td>
 
-
+`("primary": #3f51b5, "secondary": #e51a5f, "tertiary": #00695c, "info": #0058e9, "success": #37b400, "warning": #ffc000, "error": #f31700, "dark": #424242, "light": #f5f5f5, "inverse": #424242)`
 
 </td>
 </tr>
@@ -502,16 +477,15 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-fab-shadow</td>
-    <td></td>
+    <td>List</td>
 <td>
-
 
 `0px 3px 5px -1px rgba(0, 0, 0, .2), 0px 6px 10px rgba(0, 0, 0, .14), 0px 1px 18px rgba(0, 0, 0, .12)`
 
 </td>
 <td>
 
-`0px 3px 5px -1px rgba(0, 0, 0, .2), 0px 6px 10px rgba(0, 0, 0, .14), 0px 1px 18px rgba(0, 0, 0, .12)`
+`0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px rgba(0, 0, 0, 0.14), 0px 1px 18px rgba(0, 0, 0, 0.12)`
 
 </td>
 </tr>
@@ -521,16 +495,15 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-fab-disabled-shadow</td>
-    <td></td>
+    <td>List</td>
 <td>
-
 
 `0px 3px 5px -1px try-tint(rgba(0, 0, 0, .2), .5), 0px 6px 10px try-tint(rgba(0, 0, 0, .14), .5), 0px 1px 18px try-tint(rgba(0, 0, 0, .12), .5)`
 
 </td>
 <td>
 
-`0px 3px 5px -1px try-tint(rgba(0, 0, 0, .2), .5), 0px 6px 10px try-tint(rgba(0, 0, 0, .14), .5), 0px 1px 18px try-tint(rgba(0, 0, 0, .12), .5)`
+`0px 3px 5px -1px rgba(70, 70, 70, 0.232), 0px 6px 10px rgba(91, 91, 91, 0.1744), 0px 1px 18px rgba(101, 101, 101, 0.1552)`
 
 </td>
 </tr>
@@ -540,16 +513,15 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-fab-active-shadow</td>
-    <td></td>
+    <td>List</td>
 <td>
-
 
 `0px 5px 5px -3px rgba(0, 0, 0, .2), 0px 8px 10px 1px rgba(0, 0, 0, .14), 0px 3px 14px 2px rgba(0, 0, 0, .12)`
 
 </td>
 <td>
 
-`0px 5px 5px -3px rgba(0, 0, 0, .2), 0px 8px 10px 1px rgba(0, 0, 0, .14), 0px 3px 14px 2px rgba(0, 0, 0, .12)`
+`0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12)`
 
 </td>
 </tr>
@@ -559,16 +531,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-fab-item-text</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$component-text`
 
 </td>
 <td>
 
-`map-get($theme, component-text)`
+<span class="color-preview" style="background-color: rgba(0, 0, 0, 0.87)"></span>
+
+`rgba(0, 0, 0, 0.87)`
 
 </td>
 </tr>
@@ -578,16 +551,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-fab-item-bg</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$component-bg`
 
 </td>
 <td>
 
-`map-get($theme, component-bg)`
+<span class="color-preview" style="background-color: white"></span>
+
+`white`
 
 </td>
 </tr>
@@ -597,16 +571,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-fab-item-border</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$component-border`
 
 </td>
 <td>
 
-`map-get($theme, component-border)`
+<span class="color-preview" style="background-color: rgba(0, 0, 0, 0.12)"></span>
+
+`rgba(0, 0, 0, 0.12)`
 
 </td>
 </tr>
@@ -616,16 +591,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-fab-item-icon-text</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$kendo-button-text`
 
 </td>
 <td>
 
-`map-get($theme, component-text)`
+<span class="color-preview" style="background-color: rgba(0, 0, 0, 0.87)"></span>
+
+`rgba(0, 0, 0, 0.87)`
 
 </td>
 </tr>
@@ -635,16 +611,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-fab-item-icon-bg</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$kendo-button-bg`
 
 </td>
 <td>
 
-`map-get( $theme, base-bg )`
+<span class="color-preview" style="background-color: white"></span>
+
+`white`
 
 </td>
 </tr>
@@ -654,16 +631,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-fab-item-icon-border</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$kendo-button-border`
 
 </td>
 <td>
 
-`map-get( $theme, base-bg )`
+<span class="color-preview" style="background-color: white"></span>
+
+`white`
 
 </td>
 </tr>
@@ -673,16 +651,15 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-fab-item-shadow</td>
-    <td></td>
+    <td>List</td>
 <td>
-
 
 `$kendo-fab-shadow`
 
 </td>
 <td>
 
-`0px 3px 5px -1px rgba(0, 0, 0, .2), 0px 6px 10px rgba(0, 0, 0, .14), 0px 1px 18px rgba(0, 0, 0, .12)`
+`0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px rgba(0, 0, 0, 0.14), 0px 1px 18px rgba(0, 0, 0, 0.12)`
 
 </td>
 </tr>
@@ -692,16 +669,15 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-fab-item-disabled-shadow</td>
-    <td></td>
+    <td>List</td>
 <td>
-
 
 `$kendo-fab-disabled-shadow`
 
 </td>
 <td>
 
-`0px 3px 5px -1px try-tint(rgba(0, 0, 0, .2), .5), 0px 6px 10px try-tint(rgba(0, 0, 0, .14), .5), 0px 1px 18px try-tint(rgba(0, 0, 0, .12), .5)`
+`0px 3px 5px -1px rgba(70, 70, 70, 0.232), 0px 6px 10px rgba(91, 91, 91, 0.1744), 0px 1px 18px rgba(101, 101, 101, 0.1552)`
 
 </td>
 </tr>
@@ -711,16 +687,15 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-fab-item-active-shadow</td>
-    <td></td>
+    <td>List</td>
 <td>
-
 
 `$kendo-fab-active-shadow`
 
 </td>
 <td>
 
-`0px 5px 5px -3px rgba(0, 0, 0, .2), 0px 8px 10px 1px rgba(0, 0, 0, .14), 0px 3px 14px 2px rgba(0, 0, 0, .12)`
+`0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12)`
 
 </td>
 </tr>

@@ -27,9 +27,8 @@ The following table lists the available variables for customization.
 <tbody>
         <tr>
     <td>$kendo-checkbox-border-width</td>
-    <td></td>
+    <td>Number</td>
 <td>
-
 
 `1px`
 
@@ -46,16 +45,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-checkbox-bg</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$component-bg`
 
 </td>
 <td>
 
-`$body-bg`
+<span class="color-preview" style="background-color: #ffffff"></span>
+
+`#ffffff`
 
 </td>
 </tr>
@@ -65,9 +65,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-checkbox-text</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -84,16 +83,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-checkbox-border</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `contrast-wcag( $kendo-checkbox-bg, $gray-400, $gray-600 )`
 
 </td>
 <td>
 
-`contrast-wcag( $kendo-checkbox-bg, $gray-400, $gray-600 )`
+<span class="color-preview" style="background-color: #ced4da"></span>
+
+`#ced4da`
 
 </td>
 </tr>
@@ -103,9 +103,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-checkbox-hover-bg</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -122,9 +121,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-checkbox-hover-text</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -141,9 +139,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-checkbox-hover-border</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -160,16 +157,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-checkbox-checked-bg</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$primary`
 
 </td>
 <td>
 
-`$primary`
+<span class="color-preview" style="background-color: #0d6efd"></span>
+
+`#0d6efd`
 
 </td>
 </tr>
@@ -179,16 +177,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-checkbox-checked-text</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `contrast-wcag( $kendo-checkbox-checked-bg )`
 
 </td>
 <td>
 
-`contrast-wcag( $kendo-checkbox-checked-bg )`
+<span class="color-preview" style="background-color: white"></span>
+
+`white`
 
 </td>
 </tr>
@@ -198,16 +197,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-checkbox-checked-border</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$kendo-checkbox-checked-bg`
 
 </td>
 <td>
 
-`$primary`
+<span class="color-preview" style="background-color: #0d6efd"></span>
+
+`#0d6efd`
 
 </td>
 </tr>
@@ -217,16 +217,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-checkbox-indeterminate-bg</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$kendo-checkbox-checked-bg`
 
 </td>
 <td>
 
-`$primary`
+<span class="color-preview" style="background-color: #0d6efd"></span>
+
+`#0d6efd`
 
 </td>
 </tr>
@@ -236,16 +237,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-checkbox-indeterminate-text</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$kendo-checkbox-checked-text`
 
 </td>
 <td>
 
-`contrast-wcag( $kendo-checkbox-checked-bg )`
+<span class="color-preview" style="background-color: white"></span>
+
+`white`
 
 </td>
 </tr>
@@ -255,16 +257,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-checkbox-indeterminate-border</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$kendo-checkbox-checked-border`
 
 </td>
 <td>
 
-`$primary`
+<span class="color-preview" style="background-color: #0d6efd"></span>
+
+`#0d6efd`
 
 </td>
 </tr>
@@ -274,16 +277,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-checkbox-focus-border</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `try-tint( $primary, 50% )`
 
 </td>
 <td>
 
-`try-tint( $primary, 50% )`
+<span class="color-preview" style="background-color: #86b7fe"></span>
+
+`#86b7fe`
 
 </td>
 </tr>
@@ -293,16 +297,15 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-checkbox-focus-shadow</td>
-    <td></td>
+    <td>List</td>
 <td>
-
 
 `0 0 0 .25rem rgba( $primary, .25 )`
 
 </td>
 <td>
 
-`0 0 0 .25rem rgba( $primary, .25 )`
+`0 0 0 0.25rem rgba(13, 110, 253, 0.25)`
 
 </td>
 </tr>
@@ -312,16 +315,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-checkbox-focus-checked-border</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$kendo-checkbox-checked-border`
 
 </td>
 <td>
 
-`$primary`
+<span class="color-preview" style="background-color: #0d6efd"></span>
+
+`#0d6efd`
 
 </td>
 </tr>
@@ -331,16 +335,15 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-checkbox-focus-checked-shadow</td>
-    <td></td>
+    <td>List</td>
 <td>
-
 
 `$kendo-checkbox-focus-shadow`
 
 </td>
 <td>
 
-`0 0 0 .25rem rgba( $primary, .25 )`
+`0 0 0 0.25rem rgba(13, 110, 253, 0.25)`
 
 </td>
 </tr>
@@ -350,9 +353,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-checkbox-disabled-bg</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -369,9 +371,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-checkbox-disabled-text</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -388,9 +389,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-checkbox-disabled-border</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -407,9 +407,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-checkbox-disabled-checked-bg</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -426,9 +425,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-checkbox-disabled-checked-text</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -445,9 +443,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-checkbox-disabled-checked-border</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -464,9 +461,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-checkbox-invalid-bg</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -483,16 +479,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-checkbox-invalid-text</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$invalid-text`
 
 </td>
 <td>
 
+<span class="color-preview" style="background-color: #dc3545"></span>
 
+`#dc3545`
 
 </td>
 </tr>
@@ -502,16 +499,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-checkbox-invalid-border</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$invalid-border`
 
 </td>
 <td>
 
+<span class="color-preview" style="background-color: #dc3545"></span>
 
+`#dc3545`
 
 </td>
 </tr>
@@ -521,9 +519,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-checkbox-indicator-type</td>
-    <td></td>
+    <td>String</td>
 <td>
-
 
 `image`
 
@@ -540,9 +537,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-checkbox-glyph-font-family</td>
-    <td></td>
+    <td>List</td>
 <td>
-
 
 `"WebComponentsIcons", monospace`
 
@@ -559,9 +555,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-checkbox-checked-glyph</td>
-    <td></td>
+    <td>String</td>
 <td>
-
 
 `"\e118"`
 
@@ -578,9 +573,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-checkbox-indeterminate-glyph</td>
-    <td></td>
+    <td>String</td>
 <td>
-
 
 `"\e121"`
 
@@ -597,16 +591,15 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-checkbox-checked-image</td>
-    <td></td>
+    <td>String</td>
 <td>
-
 
 `escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path fill='none' stroke='#{$kendo-checkbox-checked-text}' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/></svg>") )`
 
 </td>
 <td>
 
-`escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path fill='none' stroke='#{$kendo-checkbox-checked-text}' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/></svg>") )`
+`url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='white' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/svg%3e")`
 
 </td>
 </tr>
@@ -616,16 +609,15 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-checkbox-indeterminate-image</td>
-    <td></td>
+    <td>String</td>
 <td>
-
 
 `escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path fill='none' stroke='#{$kendo-checkbox-indeterminate-text}' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10h8'/></svg>") )`
 
 </td>
 <td>
 
-`escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path fill='none' stroke='#{$kendo-checkbox-indeterminate-text}' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10h8'/></svg>") )`
+`url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='white' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10h8'/%3e%3c/svg%3e")`
 
 </td>
 </tr>
@@ -635,16 +627,15 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-checkbox-label-margin-x</td>
-    <td></td>
+    <td>Number</td>
 <td>
-
 
 `map-get( $spacing, 1 )`
 
 </td>
 <td>
 
-`map-get( $spacing, 1 )`
+`0.25rem`
 
 </td>
 </tr>
@@ -654,16 +645,15 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-checkbox-list-spacing</td>
-    <td></td>
+    <td>Number</td>
 <td>
-
 
 `map-get( $spacing, 4 )`
 
 </td>
 <td>
 
-`map-get( $spacing, 4 )`
+`1rem`
 
 </td>
 </tr>
@@ -673,9 +663,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-checkbox-list-item-padding-x</td>
-    <td></td>
+    <td>Number</td>
 <td>
-
 
 `0px`
 
@@ -692,16 +681,15 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-checkbox-list-item-padding-y</td>
-    <td></td>
+    <td>Number</td>
 <td>
-
 
 `$kendo-list-item-padding-y-md`
 
 </td>
 <td>
 
-
+`0.25rem`
 
 </td>
 </tr>
@@ -711,16 +699,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-checkbox-ripple-bg</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$kendo-checkbox-checked-bg`
 
 </td>
 <td>
 
-`$primary`
+<span class="color-preview" style="background-color: #0d6efd"></span>
+
+`#0d6efd`
 
 </td>
 </tr>
@@ -730,16 +719,15 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-checkbox-ripple-opacity</td>
-    <td></td>
+    <td>Number</td>
 <td>
-
 
 `.25`
 
 </td>
 <td>
 
-`.25`
+`0.25`
 
 </td>
 </tr>
