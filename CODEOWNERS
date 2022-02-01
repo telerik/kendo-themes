@@ -5,8 +5,8 @@
 * @telerik/kendo-front-end
 
 # Assign production themes to the reviewers team
-/packages/default @telerik/kendo-front-end
-/packages/bootstrap @telerik/kendo-front-end
-/packages/material @telerik/kendo-front-end
-/packages/classic @telerik/kendo-front-end
-/packages/nouvelle @telerik/kendo-front-end
+/packages/default @telerik/kendo-front-end @telerik/kendo-theme-reviewers
+/packages/bootstrap @telerik/kendo-front-end @telerik/kendo-theme-reviewers
+/packages/material @telerik/kendo-front-end @telerik/kendo-theme-reviewers
+/packages/classic @telerik/kendo-front-end @telerik/kendo-theme-reviewers
+/packages/nouvelle @telerik/kendo-front-end @telerik/kendo-theme-reviewers
