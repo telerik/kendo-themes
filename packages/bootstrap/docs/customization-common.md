@@ -27,16 +27,15 @@ The following table lists the available variables for customization.
 <tbody>
         <tr>
     <td>$border-radius</td>
-    <td></td>
+    <td>Number</td>
 <td>
-
 
 `$border-radius`
 
 </td>
 <td>
 
-`$border-radius`
+`0.25rem`
 
 </td>
 </tr>
@@ -46,16 +45,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$base-bg</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$gray-100`
 
 </td>
 <td>
 
+<span class="color-preview" style="background-color: #f8f9fa"></span>
 
+`#f8f9fa`
 
 </td>
 </tr>
@@ -65,16 +65,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$base-text</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$body-text`
 
 </td>
 <td>
 
+<span class="color-preview" style="background-color: #212529"></span>
 
+`#212529`
 
 </td>
 </tr>
@@ -84,16 +85,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$base-border</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `try-shade( $base-bg, 1 )`
 
 </td>
 <td>
 
-`try-shade( $base-bg, 1 )`
+<span class="color-preview" style="background-color: #e4e5e6"></span>
+
+`#e4e5e6`
 
 </td>
 </tr>
@@ -103,9 +105,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$base-gradient</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -122,16 +123,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$hovered-bg</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$gray-200`
 
 </td>
 <td>
 
+<span class="color-preview" style="background-color: #e9ecef"></span>
 
+`#e9ecef`
 
 </td>
 </tr>
@@ -141,16 +143,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$hovered-text</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$base-text`
 
 </td>
 <td>
 
+<span class="color-preview" style="background-color: #212529"></span>
 
+`#212529`
 
 </td>
 </tr>
@@ -160,16 +163,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$hovered-border</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `try-shade( $hovered-bg, 1 )`
 
 </td>
 <td>
 
-`try-shade( $hovered-bg, 1 )`
+<span class="color-preview" style="background-color: #d6d9dc"></span>
+
+`#d6d9dc`
 
 </td>
 </tr>
@@ -179,9 +183,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$hovered-gradient</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -198,16 +201,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$selected-bg</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$primary`
 
 </td>
 <td>
 
-`$primary`
+<span class="color-preview" style="background-color: #0d6efd"></span>
+
+`#0d6efd`
 
 </td>
 </tr>
@@ -217,16 +221,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$selected-text</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `contrast-wcag( $selected-bg )`
 
 </td>
 <td>
 
-`contrast-wcag( $selected-bg )`
+<span class="color-preview" style="background-color: white"></span>
+
+`white`
 
 </td>
 </tr>
@@ -236,16 +241,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$selected-border</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `try-shade( $selected-bg, 1 )`
 
 </td>
 <td>
 
-`try-shade( $selected-bg, 1 )`
+<span class="color-preview" style="background-color: #0c65e9"></span>
+
+`#0c65e9`
 
 </td>
 </tr>
@@ -255,9 +261,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$selected-gradient</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 

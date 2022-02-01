@@ -27,9 +27,8 @@ The following table lists the available variables for customization.
 <tbody>
         <tr>
     <td>$tabstrip-bg</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -46,16 +45,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$tabstrip-text</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$component-text`
 
 </td>
 <td>
 
+<span class="color-preview" style="background-color: #212529"></span>
 
+`#212529`
 
 </td>
 </tr>
@@ -65,16 +65,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$tabstrip-border</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$component-border`
 
 </td>
 <td>
 
-`contrast-wcag( $component-bg, $gray-300, $gray-700 )`
+<span class="color-preview" style="background-color: #dee2e6"></span>
+
+`#dee2e6`
 
 </td>
 </tr>
@@ -84,16 +85,15 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$tabstrip-item-padding-x</td>
-    <td></td>
+    <td>Number</td>
 <td>
-
 
 `$nav-item-padding-x`
 
 </td>
 <td>
 
-
+`1rem`
 
 </td>
 </tr>
@@ -103,16 +103,15 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$tabstrip-item-padding-y</td>
-    <td></td>
+    <td>Number</td>
 <td>
-
 
 `$nav-item-padding-y`
 
 </td>
 <td>
 
-
+`0.5rem`
 
 </td>
 </tr>
@@ -122,9 +121,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$tabstrip-item-border-width</td>
-    <td></td>
+    <td>Number</td>
 <td>
-
 
 `1px`
 
@@ -141,16 +139,15 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$tabstrip-item-border-radius</td>
-    <td></td>
+    <td>Number</td>
 <td>
-
 
 `map-get( $spacing, 1 )`
 
 </td>
 <td>
 
-`map-get( $spacing, 1 )`
+`0.25rem`
 
 </td>
 </tr>
@@ -160,16 +157,15 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$tabstrip-item-gap</td>
-    <td></td>
+    <td>Number</td>
 <td>
-
 
 `$nav-item-margin`
 
 </td>
 <td>
 
-
+`0px`
 
 </td>
 </tr>
@@ -179,9 +175,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$tabstrip-item-bg</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -198,16 +193,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$tabstrip-item-text</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$link-text`
 
 </td>
 <td>
 
+<span class="color-preview" style="background-color: #0d6efd"></span>
 
+`#0d6efd`
 
 </td>
 </tr>
@@ -217,9 +213,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$tabstrip-item-border</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -236,9 +231,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$tabstrip-item-gradient</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -255,9 +249,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$tabstrip-item-hovered-bg</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -274,16 +267,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$tabstrip-item-hovered-text</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$link-hover-text`
 
 </td>
 <td>
 
+<span class="color-preview" style="background-color: #0a58ca"></span>
 
+`#0a58ca`
 
 </td>
 </tr>
@@ -293,16 +287,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$tabstrip-item-hovered-border</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$gray-200`
 
 </td>
 <td>
 
+<span class="color-preview" style="background-color: #e9ecef"></span>
 
+`#e9ecef`
 
 </td>
 </tr>
@@ -312,9 +307,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$tabstrip-item-hovered-gradient</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -331,16 +325,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$tabstrip-item-selected-bg</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$component-bg`
 
 </td>
 <td>
 
+<span class="color-preview" style="background-color: #ffffff"></span>
 
+`#ffffff`
 
 </td>
 </tr>
@@ -350,16 +345,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$tabstrip-item-selected-text</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$component-text`
 
 </td>
 <td>
 
+<span class="color-preview" style="background-color: #212529"></span>
 
+`#212529`
 
 </td>
 </tr>
@@ -369,16 +365,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$tabstrip-item-selected-border</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$component-border`
 
 </td>
 <td>
 
-`contrast-wcag( $component-bg, $gray-300, $gray-700 )`
+<span class="color-preview" style="background-color: #dee2e6"></span>
+
+`#dee2e6`
 
 </td>
 </tr>
@@ -388,9 +385,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$tabstrip-item-selected-gradient</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -407,16 +403,15 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$tabstrip-content-padding-x</td>
-    <td></td>
+    <td>Number</td>
 <td>
-
 
 `map-get( $spacing, 4 )`
 
 </td>
 <td>
 
-`map-get( $spacing, 4 )`
+`1rem`
 
 </td>
 </tr>
@@ -426,16 +421,15 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$tabstrip-content-padding-y</td>
-    <td></td>
+    <td>Number</td>
 <td>
-
 
 `map-get( $spacing, 4 )`
 
 </td>
 <td>
 
-`map-get( $spacing, 4 )`
+`1rem`
 
 </td>
 </tr>
@@ -445,16 +439,15 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$tabstrip-content-border-width</td>
-    <td></td>
+    <td>Number</td>
 <td>
-
 
 `$tabstrip-border-width`
 
 </td>
 <td>
 
-
+`1px`
 
 </td>
 </tr>
@@ -464,16 +457,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$tabstrip-content-bg</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$component-bg`
 
 </td>
 <td>
 
+<span class="color-preview" style="background-color: #ffffff"></span>
 
+`#ffffff`
 
 </td>
 </tr>
@@ -483,16 +477,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$tabstrip-content-text</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$component-text`
 
 </td>
 <td>
 
+<span class="color-preview" style="background-color: #212529"></span>
 
+`#212529`
 
 </td>
 </tr>
@@ -502,16 +497,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$tabstrip-content-border</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$component-border`
 
 </td>
 <td>
 
-`contrast-wcag( $component-bg, $gray-300, $gray-700 )`
+<span class="color-preview" style="background-color: #dee2e6"></span>
+
+`#dee2e6`
 
 </td>
 </tr>
@@ -521,16 +517,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$tabstrip-content-border-focused</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$component-text`
 
 </td>
 <td>
 
+<span class="color-preview" style="background-color: #212529"></span>
 
+`#212529`
 
 </td>
 </tr>

@@ -27,9 +27,8 @@ The following table lists the available variables for customization.
 <tbody>
         <tr>
     <td>$icon-font-url</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
