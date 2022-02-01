@@ -68,6 +68,18 @@ jobs:
         run: |
           npx lerna publish from-package --dist-tag dev
 
-      - name: Push to GitHub
+      - name: Push release commit
         run: |
-          git push origin develop --quiet > /dev/null 2>&1
+          git push origin develop:tmp-release-dev
+
+      - name: Mark checks as successful
+        run: |
+          commit=$(git rev-parse HEAD)
+          ./build/mark-checks.sh $commit
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+
+      - name: Push release commit to develop
+        run: |
+          git push origin develop
+          git push --delete origin tmp-release-dev
