@@ -27,9 +27,8 @@ The following table lists the available variables for customization.
 <tbody>
         <tr>
     <td>$kendo-menu-popup-padding-x</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -46,9 +45,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-menu-popup-padding-y</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -65,16 +63,15 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-menu-popup-border-width</td>
-    <td></td>
+    <td>Number</td>
 <td>
-
 
 `$popup-border-width`
 
 </td>
 <td>
 
-
+`1px`
 
 </td>
 </tr>
@@ -84,16 +81,15 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-menu-popup-font-size</td>
-    <td></td>
+    <td>Number</td>
 <td>
-
 
 `$font-size-md`
 
 </td>
 <td>
 
-
+`14px`
 
 </td>
 </tr>
@@ -103,16 +99,15 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-menu-popup-line-height</td>
-    <td></td>
+    <td>Number</td>
 <td>
-
 
 `$line-height-md`
 
 </td>
 <td>
 
-
+`1.4285714286`
 
 </td>
 </tr>
@@ -122,16 +117,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-menu-popup-bg</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$popup-bg`
 
 </td>
 <td>
 
+<span class="color-preview" style="background-color: #ffffff"></span>
 
+`#ffffff`
 
 </td>
 </tr>
@@ -141,16 +137,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-menu-popup-text</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$popup-text`
 
 </td>
 <td>
 
+<span class="color-preview" style="background-color: #272727"></span>
 
+`#272727`
 
 </td>
 </tr>
@@ -160,16 +157,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-menu-popup-border</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$popup-border`
 
 </td>
 <td>
 
+<span class="color-preview" style="background-color: #cacaca"></span>
 
+`#cacaca`
 
 </td>
 </tr>
@@ -179,9 +177,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-menu-popup-gradient</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -198,16 +195,15 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-menu-popup-item-padding-x</td>
-    <td></td>
+    <td>Number</td>
 <td>
-
 
 `map-get( $spacing, 2 )`
 
 </td>
 <td>
 
-`map-get( $spacing, 2 )`
+`8px`
 
 </td>
 </tr>
@@ -217,16 +213,15 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-menu-popup-item-padding-y</td>
-    <td></td>
+    <td>Number</td>
 <td>
-
 
 `map-get( $spacing, 1 )`
 
 </td>
 <td>
 
-`map-get( $spacing, 1 )`
+`4px`
 
 </td>
 </tr>
@@ -236,16 +231,15 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-menu-popup-item-padding-end</td>
-    <td></td>
+    <td>Calculation</td>
 <td>
-
 
 `calc( #{$kendo-menu-popup-item-padding-x * 2} + #{$icon-size} )`
 
 </td>
 <td>
 
-`calc( #{$kendo-menu-popup-item-padding-x * 2} + #{$icon-size} )`
+`calc( 16px + 16px )`
 
 </td>
 </tr>
@@ -255,16 +249,15 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-menu-popup-item-icon-margin-start-sm</td>
-    <td></td>
+    <td>Number</td>
 <td>
-
 
 `$kendo-menu-popup-item-padding-x-sm`
 
 </td>
 <td>
 
-
+`8px`
 
 </td>
 </tr>
@@ -274,16 +267,15 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-menu-popup-item-icon-margin-end-sm</td>
-    <td></td>
+    <td>Calculation</td>
 <td>
-
 
 `calc( -1 * (#{$kendo-menu-popup-item-padding-end-sm} - #{$kendo-menu-popup-item-padding-x-sm / 2}) )`
 
 </td>
 <td>
 
-`calc( -1 * (#{$kendo-menu-popup-item-padding-end-sm} - #{$kendo-menu-popup-item-padding-x-sm / 2}) )`
+`calc(-1 * (calc( 16px + 16px ) - 4px))`
 
 </td>
 </tr>
@@ -293,9 +285,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-menu-popup-item-spacing</td>
-    <td></td>
+    <td>Number</td>
 <td>
-
 
 `0px`
 
@@ -312,9 +303,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-menu-popup-item-bg</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -331,9 +321,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-menu-popup-item-text</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -350,9 +339,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-menu-popup-item-border</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -369,9 +357,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-menu-popup-item-gradient</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -388,16 +375,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-menu-popup-item-hover-bg</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$kendo-list-item-hover-bg`
 
 </td>
 <td>
 
-`try-shade( $base-bg, 1 )`
+<span class="color-preview" style="background-color: #dddddd"></span>
+
+`#dddddd`
 
 </td>
 </tr>
@@ -407,16 +395,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-menu-popup-item-hover-text</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$kendo-list-item-hover-text`
 
 </td>
 <td>
 
-`$base-text`
+<span class="color-preview" style="background-color: #272727"></span>
+
+`#272727`
 
 </td>
 </tr>
@@ -426,9 +415,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-menu-popup-item-hover-border</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -445,9 +433,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-menu-popup-item-hover-gradient</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -464,16 +451,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-menu-popup-item-expanded-bg</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$kendo-list-item-selected-bg`
 
 </td>
 <td>
 
-`$primary`
+<span class="color-preview" style="background-color: #f35800"></span>
+
+`#f35800`
 
 </td>
 </tr>
@@ -483,16 +471,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-menu-popup-item-expanded-text</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$kendo-list-item-selected-text`
 
 </td>
 <td>
 
-`contrast-wcag( $selected-bg )`
+<span class="color-preview" style="background-color: white"></span>
+
+`white`
 
 </td>
 </tr>
@@ -502,9 +491,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-menu-popup-item-expanded-border</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -521,9 +509,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-menu-popup-item-expanded-gradient</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -540,16 +527,15 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-menu-popup-item-focus-shadow</td>
-    <td></td>
+    <td>List</td>
 <td>
-
 
 `$menu-item-focus-shadow`
 
 </td>
 <td>
 
-
+`inset 0 0 3px 1px rgba(39, 39, 39, 0.25)`
 
 </td>
 </tr>

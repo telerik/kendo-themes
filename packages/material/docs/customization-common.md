@@ -27,9 +27,8 @@ The following table lists the available variables for customization.
 <tbody>
         <tr>
     <td>$border-radius</td>
-    <td></td>
+    <td>Number</td>
 <td>
-
 
 `2px`
 
@@ -46,16 +45,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$base-bg</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `map-get( $theme, base-bg )`
 
 </td>
 <td>
 
-`map-get( $theme, base-bg )`
+<span class="color-preview" style="background-color: white"></span>
+
+`white`
 
 </td>
 </tr>
@@ -65,16 +65,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$base-text</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `map-get($theme, component-text)`
 
 </td>
 <td>
 
-`map-get($theme, component-text)`
+<span class="color-preview" style="background-color: rgba(0, 0, 0, 0.87)"></span>
+
+`rgba(0, 0, 0, 0.87)`
 
 </td>
 </tr>
@@ -84,16 +85,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$base-border</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `rgba( if($theme-type == dark, white, black), .08 )`
 
 </td>
 <td>
 
-`rgba( if($theme-type == dark, white, black), .08 )`
+<span class="color-preview" style="background-color: rgba(0, 0, 0, 0.08)"></span>
+
+`rgba(0, 0, 0, 0.08)`
 
 </td>
 </tr>
@@ -103,9 +105,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$base-gradient</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -122,16 +123,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$hovered-bg</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `map-get( $theme, hover-bg )`
 
 </td>
 <td>
 
-`map-get( $theme, hover-bg )`
+<span class="color-preview" style="background-color: rgba(0, 0, 0, 0.04)"></span>
+
+`rgba(0, 0, 0, 0.04)`
 
 </td>
 </tr>
@@ -141,16 +143,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$hovered-text</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$base-text`
 
 </td>
 <td>
 
-`map-get($theme, component-text)`
+<span class="color-preview" style="background-color: rgba(0, 0, 0, 0.87)"></span>
+
+`rgba(0, 0, 0, 0.87)`
 
 </td>
 </tr>
@@ -160,16 +163,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$hovered-border</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `rgba( if($theme-type == dark, white, black), .15 )`
 
 </td>
 <td>
 
-`rgba( if($theme-type == dark, white, black), .15 )`
+<span class="color-preview" style="background-color: rgba(0, 0, 0, 0.15)"></span>
+
+`rgba(0, 0, 0, 0.15)`
 
 </td>
 </tr>
@@ -179,9 +183,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$hovered-gradient</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -198,16 +201,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$selected-bg</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$secondary`
 
 </td>
 <td>
 
-`material-color( $secondary-palette, main )`
+<span class="color-preview" style="background-color: #e51a5f"></span>
+
+`#e51a5f`
 
 </td>
 </tr>
@@ -217,16 +221,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$selected-text</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$secondary-contrast`
 
 </td>
 <td>
 
-`material-color( $secondary-palette, main-contrast )`
+<span class="color-preview" style="background-color: white"></span>
+
+`white`
 
 </td>
 </tr>
@@ -236,16 +241,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$selected-border</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `rgba( if($theme-type == dark, white, black), .1 )`
 
 </td>
 <td>
 
-`rgba( if($theme-type == dark, white, black), .1 )`
+<span class="color-preview" style="background-color: rgba(0, 0, 0, 0.1)"></span>
+
+`rgba(0, 0, 0, 0.1)`
 
 </td>
 </tr>
@@ -255,9 +261,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$selected-gradient</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 

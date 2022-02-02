@@ -64,7 +64,8 @@ function MenuItemStatic(props) {
         ownClassName,
         'k-item k-menu-item',
         {
-            'k-disabled': disabled === true
+            'k-disabled': disabled === true,
+            'k-focus': focus === true
         }
     ];
 
@@ -72,7 +73,6 @@ function MenuItemStatic(props) {
         'k-link k-menu-link',
         {
             'k-hover': hover === true,
-            'k-focus': focus === true,
             'k-active': active === true,
             'k-selected': selected === true,
             'k-disabled': disabled === true
