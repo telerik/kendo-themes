@@ -15,7 +15,7 @@ if (swatch !== 'all' && swatch.indexOf(theme) !== 0) {
 }
 
 // Change theme
-kendoThemeLink.href = kendoThemeLink.href.replace(/default/i, theme).replace(/all.css/, `${swatch}.css`);
+kendoThemeLink.href = kendoThemeLink.getAttribute('href').replace(/default/i, theme).replace(/all.css/, `${swatch}.css`);
 
 // Stop animations
 if (animations === true) {

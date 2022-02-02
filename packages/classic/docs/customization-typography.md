@@ -27,9 +27,8 @@ The following table lists the available variables for customization.
 <tbody>
         <tr>
     <td>$enable-typography</td>
-    <td></td>
+    <td>Bool</td>
 <td>
-
 
 `false`
 
@@ -46,9 +45,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$font-size</td>
-    <td></td>
+    <td>Number</td>
 <td>
-
 
 `14px`
 
@@ -65,9 +63,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$font-family</td>
-    <td></td>
+    <td>String</td>
 <td>
-
 
 `inherit`
 
@@ -84,9 +81,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$font-family-monospace</td>
-    <td></td>
+    <td>List</td>
 <td>
-
 
 `SFMono-Regular, Menlo, Monaco, Consolas, "Roboto Mono", "Ubuntu Mono", "Lucida Console", "Courier New", monospace`
 
@@ -103,16 +99,15 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$line-height</td>
-    <td></td>
+    <td>Number</td>
 <td>
-
 
 `(20 / 14)`
 
 </td>
 <td>
 
-`(20 / 14)`
+`1.4285714286`
 
 </td>
 </tr>

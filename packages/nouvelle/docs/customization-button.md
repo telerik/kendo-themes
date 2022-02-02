@@ -27,14 +27,15 @@ The following table lists the available variables for customization.
 <tbody>
         <tr>
     <td>$kendo-button-bg</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$interactive-bg`
 
 </td>
-<td><span class="color-preview" style="background-color: #f6f6f6"></span>
+<td>
+
+<span class="color-preview" style="background-color: #f6f6f6"></span>
 
 `#f6f6f6`
 
@@ -46,14 +47,15 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-button-text</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$interactive-text`
 
 </td>
-<td><span class="color-preview" style="background-color: #656565"></span>
+<td>
+
+<span class="color-preview" style="background-color: #656565"></span>
 
 `#656565`
 
@@ -65,16 +67,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-button-border</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$interactive-border`
 
 </td>
 <td>
 
-`rgba( black, .08 )`
+<span class="color-preview" style="background-color: rgba(0, 0, 0, 0.08)"></span>
+
+`rgba(0, 0, 0, 0.08)`
 
 </td>
 </tr>
@@ -84,16 +87,15 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-button-gradient</td>
-    <td></td>
+    <td>List</td>
 <td>
-
 
 `$interactive-gradient`
 
 </td>
 <td>
 
-`rgba( black, 0 ), rgba( black, .02 )`
+`rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.02)`
 
 </td>
 </tr>
@@ -103,16 +105,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-button-hover-bg</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `try-shade( $kendo-button-bg, .5 )`
 
 </td>
 <td>
 
-`try-shade( $kendo-button-bg, .5 )`
+<span class="color-preview" style="background-color: #ececec"></span>
+
+`#ececec`
 
 </td>
 </tr>
@@ -122,14 +125,15 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-button-hover-text</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$kendo-button-text`
 
 </td>
-<td><span class="color-preview" style="background-color: #656565"></span>
+<td>
+
+<span class="color-preview" style="background-color: #656565"></span>
 
 `#656565`
 
@@ -141,16 +145,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-button-hover-border</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$kendo-button-border`
 
 </td>
 <td>
 
-`rgba( black, .08 )`
+<span class="color-preview" style="background-color: rgba(0, 0, 0, 0.08)"></span>
+
+`rgba(0, 0, 0, 0.08)`
 
 </td>
 </tr>
@@ -160,16 +165,15 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-button-hover-gradient</td>
-    <td></td>
+    <td>List</td>
 <td>
-
 
 `$kendo-button-gradient`
 
 </td>
 <td>
 
-`rgba( black, 0 ), rgba( black, .02 )`
+`rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.02)`
 
 </td>
 </tr>
@@ -179,16 +183,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-button-focus-bg</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$kendo-button-hover-bg`
 
 </td>
 <td>
 
-`try-shade( $kendo-button-bg, .5 )`
+<span class="color-preview" style="background-color: #ececec"></span>
+
+`#ececec`
 
 </td>
 </tr>
@@ -198,14 +203,15 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-button-focus-text</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$kendo-button-hover-text`
 
 </td>
-<td><span class="color-preview" style="background-color: #656565"></span>
+<td>
+
+<span class="color-preview" style="background-color: #656565"></span>
 
 `#656565`
 
@@ -217,16 +223,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-button-focus-border</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$kendo-button-hover-border`
 
 </td>
 <td>
 
-`rgba( black, .08 )`
+<span class="color-preview" style="background-color: rgba(0, 0, 0, 0.08)"></span>
+
+`rgba(0, 0, 0, 0.08)`
 
 </td>
 </tr>
@@ -236,16 +243,15 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-button-focus-gradient</td>
-    <td></td>
+    <td>List</td>
 <td>
-
 
 `$kendo-button-hover-gradient`
 
 </td>
 <td>
 
-`rgba( black, 0 ), rgba( black, .02 )`
+`rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.02)`
 
 </td>
 </tr>
@@ -255,16 +261,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-button-active-bg</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `try-shade( $kendo-button-bg, 1 )`
 
 </td>
 <td>
 
-`try-shade( $kendo-button-bg, 1 )`
+<span class="color-preview" style="background-color: #e2e2e2"></span>
+
+`#e2e2e2`
 
 </td>
 </tr>
@@ -274,14 +281,15 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-button-active-text</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$kendo-button-text`
 
 </td>
-<td><span class="color-preview" style="background-color: #656565"></span>
+<td>
+
+<span class="color-preview" style="background-color: #656565"></span>
 
 `#656565`
 
@@ -293,16 +301,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-button-active-border</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$kendo-button-border`
 
 </td>
 <td>
 
-`rgba( black, .08 )`
+<span class="color-preview" style="background-color: rgba(0, 0, 0, 0.08)"></span>
+
+`rgba(0, 0, 0, 0.08)`
 
 </td>
 </tr>
@@ -312,16 +321,15 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-button-active-gradient</td>
-    <td></td>
+    <td>List</td>
 <td>
-
 
 `$kendo-button-gradient`
 
 </td>
 <td>
 
-`rgba( black, 0 ), rgba( black, .02 )`
+`rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.02)`
 
 </td>
 </tr>

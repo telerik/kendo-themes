@@ -1,17 +1,25 @@
 const fs = require('fs');
 const path = require('path');
-const sassdocExtras = require('sassdoc-extras');
 const nunjucks = require('./nunjucks');
 
 module.exports = function(dest, context) {
     const capitalize = (str) => str[0].toUpperCase() + str.substring(1);
-
-    sassdocExtras( context, 'resolveVariables' );
+    const resolvedVars = JSON.parse( fs.readFileSync(context.json), 'utf-8');
 
     const data = context.data
         .filter((item) => item.access === 'public')
         .reduce((acc, item) => {
             if (item.context.type === 'variable') {
+                let varName = item.context.name;
+
+                // Augment resolved value
+                item.resolvedValue = resolvedVars[varName].value;
+
+                // Augment variable type
+                item.type = item.type !== undefined
+                    ? item.type
+                    : capitalize(resolvedVars[varName].type);
+
                 acc.variableGroups.push(item);
             } else {
                 acc[item.context.type].push(item);
