@@ -30,13 +30,14 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-
 `$primary`
 
 </td>
 <td>
 
-`$primary`
+<span class="color-preview" style="background-color: #0d6efd"></span>
+
+`#0d6efd`
 
 </td>
 </tr>
@@ -49,13 +50,14 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-
 `contrast-wcag( $accent )`
 
 </td>
 <td>
 
-`contrast-wcag( $accent )`
+<span class="color-preview" style="background-color: white"></span>
+
+`white`
 
 </td>
 </tr>
@@ -68,13 +70,14 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-
 `$primary`
 
 </td>
 <td>
 
-`$primary`
+<span class="color-preview" style="background-color: #0d6efd"></span>
+
+`#0d6efd`
 
 </td>
 </tr>
@@ -87,13 +90,14 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-
 `contrast-wcag( $primary )`
 
 </td>
 <td>
 
-`contrast-wcag( $primary )`
+<span class="color-preview" style="background-color: white"></span>
+
+`white`
 
 </td>
 </tr>
@@ -106,13 +110,14 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-
 `$secondary`
 
 </td>
 <td>
 
-`$secondary`
+<span class="color-preview" style="background-color: #6c757d"></span>
+
+`#6c757d`
 
 </td>
 </tr>
@@ -125,13 +130,14 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-
 `contrast-wcag( $secondary )`
 
 </td>
 <td>
 
-`contrast-wcag( $secondary )`
+<span class="color-preview" style="background-color: white"></span>
+
+`white`
 
 </td>
 </tr>
@@ -144,13 +150,14 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-
 `$purple`
 
 </td>
 <td>
 
+<span class="color-preview" style="background-color: #6f42c1"></span>
 
+`#6f42c1`
 
 </td>
 </tr>
@@ -163,13 +170,14 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-
 `contrast-wcag( $tertiary )`
 
 </td>
 <td>
 
-`contrast-wcag( $tertiary )`
+<span class="color-preview" style="background-color: white"></span>
+
+`white`
 
 </td>
 </tr>
@@ -182,13 +190,14 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-
 `$info`
 
 </td>
 <td>
 
-`$info`
+<span class="color-preview" style="background-color: #0dcaf0"></span>
+
+`#0dcaf0`
 
 </td>
 </tr>
@@ -201,13 +210,14 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-
 `$success`
 
 </td>
 <td>
 
-`$success`
+<span class="color-preview" style="background-color: #198754"></span>
+
+`#198754`
 
 </td>
 </tr>
@@ -220,13 +230,14 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-
 `$warning`
 
 </td>
 <td>
 
-`$warning`
+<span class="color-preview" style="background-color: #ffc107"></span>
+
+`#ffc107`
 
 </td>
 </tr>
@@ -239,13 +250,14 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-
 `$danger`
 
 </td>
 <td>
 
+<span class="color-preview" style="background-color: #dc3545"></span>
 
+`#dc3545`
 
 </td>
 </tr>
@@ -258,13 +270,14 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-
 `$dark`
 
 </td>
 <td>
 
-`$dark`
+<span class="color-preview" style="background-color: #212529"></span>
+
+`#212529`
 
 </td>
 </tr>
@@ -277,13 +290,14 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-
 `$light`
 
 </td>
 <td>
 
-`$light`
+<span class="color-preview" style="background-color: #f8f9fa"></span>
+
+`#f8f9fa`
 
 </td>
 </tr>
@@ -293,16 +307,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$inverse</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `if( $dark-theme, $light, $dark )`
 
 </td>
 <td>
 
-`if( $dark-theme, $light, $dark )`
+<span class="color-preview" style="background-color: #212529"></span>
+
+`#212529`
 
 </td>
 </tr>

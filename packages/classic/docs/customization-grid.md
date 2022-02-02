@@ -27,16 +27,17 @@ The following table lists the available variables for customization.
 <tbody>
         <tr>
     <td>$grid-bg</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$component-bg`
 
 </td>
 <td>
 
+<span class="color-preview" style="background-color: #ffffff"></span>
 
+`#ffffff`
 
 </td>
 </tr>
@@ -46,16 +47,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$grid-text</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$component-text`
 
 </td>
 <td>
 
+<span class="color-preview" style="background-color: #272727"></span>
 
+`#272727`
 
 </td>
 </tr>
@@ -65,16 +67,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$grid-border</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$component-border`
 
 </td>
 <td>
 
-`try-shade( $base-bg, 2 )`
+<span class="color-preview" style="background-color: #cacaca"></span>
+
+`#cacaca`
 
 </td>
 </tr>
@@ -84,16 +87,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$grid-header-bg</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$header-bg`
 
 </td>
 <td>
 
+<span class="color-preview" style="background-color: #f0f0f0"></span>
 
+`#f0f0f0`
 
 </td>
 </tr>
@@ -103,16 +107,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$grid-header-text</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$header-text`
 
 </td>
 <td>
 
+<span class="color-preview" style="background-color: #272727"></span>
 
+`#272727`
 
 </td>
 </tr>
@@ -122,16 +127,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$grid-header-border</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$grid-border`
 
 </td>
 <td>
 
-`try-shade( $base-bg, 2 )`
+<span class="color-preview" style="background-color: #cacaca"></span>
+
+`#cacaca`
 
 </td>
 </tr>
@@ -141,16 +147,15 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$grid-header-gradient</td>
-    <td></td>
+    <td>List</td>
 <td>
-
 
 `$header-gradient`
 
 </td>
 <td>
 
-
+`rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0)`
 
 </td>
 </tr>
@@ -160,16 +165,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$grid-footer-bg</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$grid-header-bg`
 
 </td>
 <td>
 
+<span class="color-preview" style="background-color: #f0f0f0"></span>
 
+`#f0f0f0`
 
 </td>
 </tr>
@@ -179,16 +185,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$grid-footer-text</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$grid-header-text`
 
 </td>
 <td>
 
+<span class="color-preview" style="background-color: #272727"></span>
 
+`#272727`
 
 </td>
 </tr>
@@ -198,16 +205,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$grid-footer-border</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$grid-header-border`
 
 </td>
 <td>
 
-`try-shade( $base-bg, 2 )`
+<span class="color-preview" style="background-color: #cacaca"></span>
+
+`#cacaca`
 
 </td>
 </tr>
@@ -217,16 +225,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$grid-alt-bg</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `try-shade( $grid-bg, .5 )`
 
 </td>
 <td>
 
-`try-shade( $grid-bg, .5 )`
+<span class="color-preview" style="background-color: whitesmoke"></span>
+
+`whitesmoke`
 
 </td>
 </tr>
@@ -236,9 +245,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$grid-alt-text</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -255,9 +263,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$grid-alt-border</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -274,16 +281,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$grid-hovered-bg</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `try-shade( $grid-bg, 1 )`
 
 </td>
 <td>
 
-`try-shade( $grid-bg, 1 )`
+<span class="color-preview" style="background-color: #ebebeb"></span>
+
+`#ebebeb`
 
 </td>
 </tr>
@@ -293,9 +301,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$grid-hovered-text</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -312,9 +319,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$grid-hovered-border</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -331,16 +337,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$grid-selected-bg</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `rgba( $selected-bg, .25 )`
 
 </td>
 <td>
 
-`rgba( $selected-bg, .25 )`
+<span class="color-preview" style="background-color: rgba(243, 88, 0, 0.25)"></span>
+
+`rgba(243, 88, 0, 0.25)`
 
 </td>
 </tr>
@@ -350,9 +357,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$grid-selected-text</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -369,9 +375,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$grid-selected-border</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
