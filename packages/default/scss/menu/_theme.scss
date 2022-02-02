@@ -80,14 +80,11 @@
                     $kendo-menu-popup-item-expanded-gradient
                 );
             }
-
-            &.k-focus {
-                @include box-shadow( $kendo-menu-popup-item-focus-shadow );
-            }
         }
 
         .k-item {
-            &:focus {
+            &:focus,
+            &.k-focus {
                 @include box-shadow( $kendo-menu-popup-item-focus-shadow );
             }
         }

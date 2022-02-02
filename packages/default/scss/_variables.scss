@@ -13,6 +13,7 @@ $enable-grid-classes: true !default;
 $use-calc-badge-size: true !default;
 $use-input-button-width: true !default;
 $use-input-spinner-width: true !default;
+$use-input-spinner-icon-offset: false !default;
 $use-picker-select-width: true !default;
 
 
@@ -203,7 +204,7 @@ $light: #ebebeb !default;
 $inverse: if( $dark-theme, $light, $dark ) !default;
 
 
-$theme-colors: (
+$kendo-theme-colors: (
     "primary": $primary,
     "secondary": $secondary,
     "tertiary": $tertiary,
@@ -240,7 +241,7 @@ $app-border: rgba( $black, .08 ) !default;
 
 // Component
 /// Background color of a component.
-/// Note: do not use this variable directly. Instead derive it as `$component-name-bg` e.g. `$grid-bg: $component-bg !defualt;`.
+/// Note: do not use this variable directly. Instead derive it as `$component-name-bg` e.g. `$grid-bg: $component-bg !default;`.
 /// @group component
 $component-bg: $body-bg !default;
 /// Text color of a component.

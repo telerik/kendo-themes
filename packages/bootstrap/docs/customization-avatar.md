@@ -27,9 +27,8 @@ The following table lists the available variables for customization.
 <tbody>
         <tr>
     <td>$kendo-avatar-border-width</td>
-    <td></td>
+    <td>Number</td>
 <td>
-
 
 `1px`
 
@@ -46,16 +45,15 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-avatar-font-family</td>
-    <td></td>
+    <td>List</td>
 <td>
-
 
 `$font-family`
 
 </td>
 <td>
 
-`$font-family-sans-serif`
+`system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"`
 
 </td>
 </tr>
@@ -65,16 +63,15 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-avatar-font-size</td>
-    <td></td>
+    <td>Number</td>
 <td>
-
 
 `$font-size`
 
 </td>
 <td>
 
-`$font-size-base`
+`1rem`
 
 </td>
 </tr>
@@ -84,16 +81,15 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-avatar-line-height</td>
-    <td></td>
+    <td>Number</td>
 <td>
-
 
 `$line-height`
 
 </td>
 <td>
 
-`$line-height-base`
+`1.5`
 
 </td>
 </tr>
@@ -103,9 +99,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-avatar-sizes</td>
-    <td></td>
+    <td>Map</td>
 <td>
-
 
 `(
     sm: map-get( $spacing, 4 ),
@@ -116,11 +111,7 @@ The following table lists the available variables for customization.
 </td>
 <td>
 
-`(
-    sm: map-get( $spacing, 4 ),
-    md: map-get( $spacing, 8 ),
-    lg: map-get( $spacing, 16 )
-)`
+`(sm: 1rem, md: 2rem, lg: 4rem)`
 
 </td>
 </tr>
@@ -130,16 +121,15 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-avatar-theme-colors</td>
-    <td></td>
+    <td>Map</td>
 <td>
 
-
-`$theme-colors`
+`$kendo-theme-colors`
 
 </td>
 <td>
 
-
+`("primary": #0d6efd, "secondary": #6c757d, "tertiary": #6f42c1, "info": #0dcaf0, "success": #198754, "warning": #ffc107, "error": #dc3545, "dark": #212529, "light": #f8f9fa, "inverse": #212529)`
 
 </td>
 </tr>

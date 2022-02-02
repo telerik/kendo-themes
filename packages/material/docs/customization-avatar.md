@@ -27,9 +27,8 @@ The following table lists the available variables for customization.
 <tbody>
         <tr>
     <td>$kendo-avatar-border-width</td>
-    <td></td>
+    <td>Number</td>
 <td>
-
 
 `1px`
 
@@ -46,9 +45,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-avatar-font-family</td>
-    <td></td>
+    <td>List</td>
 <td>
-
 
 `$font-family`
 
@@ -65,9 +63,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-avatar-font-size</td>
-    <td></td>
+    <td>Number</td>
 <td>
-
 
 `$font-size`
 
@@ -84,16 +81,15 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-avatar-line-height</td>
-    <td></td>
+    <td>Number</td>
 <td>
-
 
 `$line-height`
 
 </td>
 <td>
 
-`(28 / 14)`
+`2`
 
 </td>
 </tr>
@@ -103,9 +99,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-avatar-sizes</td>
-    <td></td>
+    <td>Map</td>
 <td>
-
 
 `(
     sm: map-get( $spacing, 4 ),
@@ -116,11 +111,7 @@ The following table lists the available variables for customization.
 </td>
 <td>
 
-`(
-    sm: map-get( $spacing, 4 ),
-    md: map-get( $spacing, 8 ),
-    lg: map-get( $spacing, 16 )
-)`
+`(sm: 16px, md: 32px, lg: 64px)`
 
 </td>
 </tr>
@@ -130,16 +121,15 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-avatar-theme-colors</td>
-    <td></td>
+    <td>Map</td>
 <td>
 
-
-`$theme-colors`
+`$kendo-theme-colors`
 
 </td>
 <td>
 
-
+`("primary": #3f51b5, "secondary": #e51a5f, "tertiary": #00695c, "info": #0058e9, "success": #37b400, "warning": #ffc000, "error": #f31700, "dark": #424242, "light": #f5f5f5, "inverse": #424242)`
 
 </td>
 </tr>

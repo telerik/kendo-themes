@@ -29,6 +29,6 @@ $notification-themes: () !default;
     // sass-lint:enable indentation
 }
 
-@each $theme, $props in $theme-colors {
+@each $theme, $props in $kendo-theme-colors {
     $notification-themes: map-merge($notification-themes, ($theme: notification-theme($theme, $props)) );
 }
