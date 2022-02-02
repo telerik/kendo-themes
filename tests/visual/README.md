@@ -8,6 +8,10 @@ The sample pages contain static HTML that represents:
 * The recommended rendering for components that use the theme.
 * Actual rendering in various suites that may not match the reference rendering.
 
+Some sample pages have two versions:
+* A source page with an extension ending in `.comp.html` that uses the ["Theme HTML components"](https://github.com/telerik/kendo-themes/tree/develop/packages/html) to remove repetition.
+* An output page ending in `.html` that contains the vanilla HTML output of the source page.
+
 ## Creating Images Locally
 
 To generate screenshots for a specific theme:
@@ -25,12 +29,16 @@ These steps will create new screenshots in `tests/visual/output`. Note that due 
 
 Create tests for the reference rendering for components and their features in `tests/src/reference`, for example `tests/src/reference/grid/grid-pager.html`.
 
+Pages that use the ["Theme HTML components"](https://github.com/telerik/kendo-themes/tree/develop/packages/html) for reference rendering, should have the `.comp.html` extension.
+
+The output (`.html`) is updated as part of the CI build and committed automatically. Review the output in PRs for correctness.
+
 ### Per-Suite Rendering
 
 Follow the process established by your team to create and update reference tests.
 The test pages are typically created from live examples with some formatting and filtering applied.
 
-A generic workflow can look like this:
+The workflow can look like this:
 1. Create a runnable example, either for a new scenario or an existing reference demo.
 1. Wrap the actual example in a `<div id="test-area" class="grid">` (see [reference](https://github.com/telerik/kendo-themes/blob/b777e466fa0275f165be5646e51f5be577d55c36/tests/visual/src/reference/buttons/buttons-blazor.html#L24)).
 1. Copy and reference the [styles.css](https://github.com/telerik/kendo-themes/blob/develop/tests/visual/assets/styles.css) stylesheet in your example.

@@ -27,16 +27,17 @@ The following table lists the available variables for customization.
 <tbody>
         <tr>
     <td>$component-bg</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$body-bg`
 
 </td>
 <td>
 
+<span class="color-preview" style="background-color: #ffffff"></span>
 
+`#ffffff`
 
 </td>
 </tr>
@@ -46,16 +47,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$component-text</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$body-text`
 
 </td>
 <td>
 
+<span class="color-preview" style="background-color: #212529"></span>
 
+`#212529`
 
 </td>
 </tr>
@@ -65,16 +67,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$component-border</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `contrast-wcag( $component-bg, $gray-300, $gray-700 )`
 
 </td>
 <td>
 
-`contrast-wcag( $component-bg, $gray-300, $gray-700 )`
+<span class="color-preview" style="background-color: #dee2e6"></span>
+
+`#dee2e6`
 
 </td>
 </tr>
