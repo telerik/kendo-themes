@@ -1,1 +1,0 @@
-* @joneff @PreslavKozovski @inikolova

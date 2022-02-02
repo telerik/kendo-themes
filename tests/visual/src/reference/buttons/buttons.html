@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width:15px;">
+
+<head>
+    <title>Buttons - Blazor</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" data-role="kendo-theme" href="../../../../../packages/default/dist/all.css">
+    <link rel="stylesheet" href="../../../assets/styles.css">
+    <script src="../../../assets/scripts.js"></script>
+    <script src="../../../../../packages/html/dist/index.js"></script>
+
+    <style>
+        #test-area {
+            grid-template-columns: 1fr;
+        }
+
+        #test-area>section.buttons {
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            gap: 10px;
+        }
+    </style>
+</head>
+
+<body class="k-body">
+
+    <div id="test-area" class="grid">
+
+        <section class="buttons">
+            <span></span>
+            <span>Text</span>
+            <span>Icon</span>
+            <span>Icon Text</span>
+            <span>Sprite</span>
+            <span>Sprite Text</span>
+            <span>Image</span>
+            <span>Image Text</span>
+        </section>
+
+        <section class="buttons">
+            <span>Normal</span>
+            <span><button type="button" class="k-button k-button-md k-rounded-md k-button-rectangle k-button-solid k-button-solid-base"><span class="k-button-text">Text</span></button></span>
+            <span><button type="button" class="k-button k-button-md k-rounded-md k-button-rectangle k-button-solid k-button-solid-base k-icon-button"><span class="k-button-icon k-icon k-i-filter"></span></button></span>
+            <span><button type="button" class="k-button k-button-md k-rounded-md k-button-rectangle k-button-solid k-button-solid-base"><span class="k-button-icon k-icon k-i-filter"></span><span class="k-button-text">Text</span></button></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+
+            <span>Primary</span>
+            <span><button type="button" class="k-button k-button-md k-rounded-md k-button-rectangle k-button-solid k-button-solid-primary"><span class="k-button-text">Text</span></button></span>
+            <span><button type="button" class="k-button k-button-md k-rounded-md k-button-rectangle k-button-solid k-button-solid-primary k-icon-button"><span class="k-button-icon k-icon k-i-filter"></span></button></span>
+            <span><button type="button" class="k-button k-button-md k-rounded-md k-button-rectangle k-button-solid k-button-solid-primary"><span class="k-button-icon k-icon k-i-filter"></span><span class="k-button-text">Text</span></button></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+
+            <span>Disabled</span>
+            <span><button type="button" class="k-button k-button-md k-rounded-md k-button-rectangle k-button-solid k-button-solid-base k-disabled" disabled=""><span class="k-button-text">Text</span></button></span>
+            <span><button type="button" class="k-button k-button-md k-rounded-md k-button-rectangle k-button-solid k-button-solid-base k-disabled k-icon-button" disabled=""><span class="k-button-icon k-icon k-i-filter"></span></button></span>
+            <span><button type="button" class="k-button k-button-md k-rounded-md k-button-rectangle k-button-solid k-button-solid-base k-disabled" disabled=""><span class="k-button-icon k-icon k-i-filter"></span><span class="k-button-text">Text</span></button></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+
+            <span>Primary Disabled</span>
+            <span><button type="button" class="k-button k-button-md k-rounded-md k-button-rectangle k-button-solid k-button-solid-primary k-disabled" disabled=""><span class="k-button-text">Text</span></button></span>
+            <span><button type="button" class="k-button k-button-md k-rounded-md k-button-rectangle k-button-solid k-button-solid-primary k-disabled k-icon-button" disabled=""><span class="k-button-icon k-icon k-i-filter"></span></button></span>
+            <span><button type="button" class="k-button k-button-md k-rounded-md k-button-rectangle k-button-solid k-button-solid-primary k-disabled" disabled=""><span class="k-button-icon k-icon k-i-filter"></span><span class="k-button-text">Text</span></button></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </section>
+
+    </div>
+
+
+
+</body>
+
+</html>

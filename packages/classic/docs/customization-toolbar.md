@@ -27,16 +27,15 @@ The following table lists the available variables for customization.
 <tbody>
         <tr>
     <td>$toolbar-padding-x</td>
-    <td></td>
+    <td>Number</td>
 <td>
-
 
 `map-get( $spacing, 2 )`
 
 </td>
 <td>
 
-`map-get( $spacing, 2 )`
+`8px`
 
 </td>
 </tr>
@@ -46,16 +45,15 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$toolbar-padding-y</td>
-    <td></td>
+    <td>Number</td>
 <td>
-
 
 `map-get( $spacing, 2 )`
 
 </td>
 <td>
 
-`map-get( $spacing, 2 )`
+`8px`
 
 </td>
 </tr>

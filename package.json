@@ -34,7 +34,6 @@
     "sass-lint": "^1.13.1",
     "sass-variable-parser": "^1.2.2",
     "sassdoc": "^2.7.3",
-    "sassdoc-extras": "^3.0.0",
     "semver": "^7.3.5",
     "stylelint": "^14.2.0",
     "stylelint-config-standard": "^24.0.0",
