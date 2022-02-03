@@ -46,16 +46,22 @@
     // sass-lint:disable no-important
     @if $utils-overflow {
         @each $overflow in $utils-overflow {
-            .k-overflow-#{$overflow} { overflow: $overflow !important; }
-            .k-overflow-x-#{$overflow} { overflow-x: $overflow !important; }
-            .k-overflow-y-#{$overflow} { overflow-y: $overflow !important; }
+            .k-overflow-#{$overflow} { overflow: $overflow; }
+            .k-overflow-x-#{$overflow} { overflow-x: $overflow; }
+            .k-overflow-y-#{$overflow} { overflow-y: $overflow; }
+
+            .\!k-overflow-#{$overflow}   { overflow: $overflow !important; }
+            .\!k-overflow-x-#{$overflow} { overflow-x: $overflow !important; }
+            .\!k-overflow-y-#{$overflow} { overflow-y: $overflow !important; }
         }
 
 
         @each $overflow-x in $utils-overflow {
             @each $overflow-y in $utils-overflow {
                 @if $overflow-x != $overflow-y {
-                    .k-overflow-#{$overflow-x}-#{$overflow-y} { overflow: $overflow-x $overflow-y !important; }
+                    .k-overflow-#{$overflow-x}-#{$overflow-y} { overflow: $overflow-x $overflow-y; }
+
+                    .\!k-overflow-#{$overflow-x}-#{$overflow-y} { overflow: $overflow-x $overflow-y !important; }
                 }
             }
         }
