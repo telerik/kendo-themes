@@ -52,6 +52,10 @@
     .k-icon-button {
         aspect-ratio: 1;
         gap: 0;
+
+        .k-icon {
+            display: inline-flex;
+        }
     }
 
 
