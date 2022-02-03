@@ -27,9 +27,8 @@ The following table lists the available variables for customization.
 <tbody>
         <tr>
     <td>$kendo-list-font-size</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -46,9 +45,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-list-line-height</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -65,9 +63,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-list-header-padding-x</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -84,9 +81,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-list-header-padding-y</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -103,9 +99,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-list-header-border-width</td>
-    <td></td>
+    <td>List</td>
 <td>
-
 
 `0 0 1px`
 
@@ -122,9 +117,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-list-header-font-size</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -141,9 +135,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-list-header-line-height</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -160,9 +153,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-list-header-font-weight</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -179,9 +171,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-list-item-padding-x</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -198,9 +189,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-list-item-padding-y</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -217,9 +207,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-list-item-font-size</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -236,9 +225,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-list-item-line-height</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -255,9 +243,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-list-group-item-padding-x</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -274,9 +261,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-list-group-item-padding-y</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -293,9 +279,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-list-group-item-border-width</td>
-    <td></td>
+    <td>List</td>
 <td>
-
 
 `1px 0 0`
 
@@ -312,9 +297,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-list-group-item-font-size</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -331,9 +315,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-list-group-item-line-height</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -350,9 +333,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-list-group-item-font-weight</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -369,16 +351,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-list-bg</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$component-bg`
 
 </td>
 <td>
 
+<span class="color-preview" style="background-color: #ffffff"></span>
 
+`#ffffff`
 
 </td>
 </tr>
@@ -388,16 +371,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-list-text</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$component-text`
 
 </td>
 <td>
 
+<span class="color-preview" style="background-color: #272727"></span>
 
+`#272727`
 
 </td>
 </tr>
@@ -407,16 +391,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-list-border</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$component-border`
 
 </td>
 <td>
 
-`try-shade( $base-bg, 2 )`
+<span class="color-preview" style="background-color: #cacaca"></span>
+
+`#cacaca`
 
 </td>
 </tr>
@@ -426,9 +411,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-list-header-bg</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -445,9 +429,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-list-header-text</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -464,9 +447,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-list-header-border</td>
-    <td></td>
+    <td>String</td>
 <td>
-
 
 `inherit`
 
@@ -483,9 +465,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-list-header-shadow</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -502,9 +483,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-list-item-bg</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -521,9 +501,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-list-item-text</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -540,16 +519,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-list-item-hover-bg</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$hovered-bg`
 
 </td>
 <td>
 
-`try-shade( $base-bg, 1 )`
+<span class="color-preview" style="background-color: #dddddd"></span>
+
+`#dddddd`
 
 </td>
 </tr>
@@ -559,16 +539,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-list-item-hover-text</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$hovered-text`
 
 </td>
 <td>
 
-`$base-text`
+<span class="color-preview" style="background-color: #272727"></span>
+
+`#272727`
 
 </td>
 </tr>
@@ -578,9 +559,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-list-item-focus-bg</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -597,9 +577,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-list-item-focus-text</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -616,16 +595,15 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-list-item-focus-shadow</td>
-    <td></td>
+    <td>List</td>
 <td>
-
 
 `inset 0 0 0 2px rgba(0, 0, 0, .12)`
 
 </td>
 <td>
 
-`inset 0 0 0 2px rgba(0, 0, 0, .12)`
+`inset 0 0 0 2px rgba(0, 0, 0, 0.12)`
 
 </td>
 </tr>
@@ -635,16 +613,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-list-item-selected-bg</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$selected-bg`
 
 </td>
 <td>
 
-`$primary`
+<span class="color-preview" style="background-color: #f35800"></span>
+
+`#f35800`
 
 </td>
 </tr>
@@ -654,16 +633,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-list-item-selected-text</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$selected-text`
 
 </td>
 <td>
 
-`contrast-wcag( $selected-bg )`
+<span class="color-preview" style="background-color: white"></span>
+
+`white`
 
 </td>
 </tr>
@@ -673,9 +653,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-list-group-item-bg</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -692,9 +671,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-list-group-item-text</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -711,9 +689,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-list-group-item-border</td>
-    <td></td>
+    <td>String</td>
 <td>
-
 
 `inherit`
 
@@ -730,9 +707,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-list-group-item-shadow</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -749,16 +725,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-list-no-data-text</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$subtle-text`
 
 </td>
 <td>
 
+<span class="color-preview" style="background-color: #646464"></span>
 
+`#646464`
 
 </td>
 </tr>

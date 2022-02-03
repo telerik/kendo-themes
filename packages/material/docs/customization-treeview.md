@@ -27,9 +27,8 @@ The following table lists the available variables for customization.
 <tbody>
         <tr>
     <td>$kendo-treeview-font-family</td>
-    <td></td>
+    <td>List</td>
 <td>
-
 
 `$font-family`
 
@@ -46,16 +45,15 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-treeview-font-size</td>
-    <td></td>
+    <td>Number</td>
 <td>
-
 
 `$font-size-lg`
 
 </td>
 <td>
 
-
+`16px`
 
 </td>
 </tr>
@@ -65,9 +63,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-treeview-line-height</td>
-    <td></td>
+    <td>Number</td>
 <td>
-
 
 `1.25`
 
@@ -84,9 +81,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-treeview-indent</td>
-    <td></td>
+    <td>Number</td>
 <td>
-
 
 `16px`
 
@@ -103,16 +99,15 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-treeview-item-padding-x</td>
-    <td></td>
+    <td>Number</td>
 <td>
-
 
 `map-get( $spacing, 4 )`
 
 </td>
 <td>
 
-`map-get( $spacing, 4 )`
+`16px`
 
 </td>
 </tr>
@@ -122,16 +117,15 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-treeview-item-padding-y</td>
-    <td></td>
+    <td>Number</td>
 <td>
-
 
 `map-get( $spacing, 2 )`
 
 </td>
 <td>
 
-`map-get( $spacing, 2 )`
+`8px`
 
 </td>
 </tr>
@@ -141,9 +135,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-treeview-item-border-width</td>
-    <td></td>
+    <td>Number</td>
 <td>
-
 
 `0px`
 
@@ -160,9 +153,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-treeview-item-border-radius</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -179,9 +171,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-treeview-sizes</td>
-    <td></td>
+    <td>Map</td>
 <td>
-
 
 `(
     sm: (
@@ -207,26 +198,7 @@ The following table lists the available variables for customization.
 </td>
 <td>
 
-`(
-    sm: (
-        font-size: $font-size-lg,
-        line-height: 1.25,
-        item-padding-x: map-get( $spacing, 4 ),
-        item-padding-y: map-get( $spacing, 2 ) - map-get( $spacing, thin )
-    ),
-    md: (
-        font-size: $font-size-lg,
-        line-height: 1.25,
-        item-padding-x: map-get( $spacing, 4 ),
-        item-padding-y: map-get( $spacing, 2 )
-    ),
-    lg: (
-        font-size: $font-size-lg,
-        line-height: 1.25,
-        item-padding-x: map-get( $spacing, 4 ),
-        item-padding-y: map-get( $spacing, 2 ) + map-get( $spacing, thin )
-    )
-)`
+`(sm: (font-size: 16px, line-height: 1.25, item-padding-x: 16px, item-padding-y: 6px), md: (font-size: 16px, line-height: 1.25, item-padding-x: 16px, item-padding-y: 8px), lg: (font-size: 16px, line-height: 1.25, item-padding-x: 16px, item-padding-y: 10px))`
 
 </td>
 </tr>
@@ -236,9 +208,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-treeview-bg</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -255,16 +226,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-treeview-text</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$component-text`
 
 </td>
 <td>
 
-`map-get($theme, component-text)`
+<span class="color-preview" style="background-color: rgba(0, 0, 0, 0.87)"></span>
+
+`rgba(0, 0, 0, 0.87)`
 
 </td>
 </tr>
@@ -274,9 +246,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-treeview-border</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -293,16 +264,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-treeview-item-hover-bg</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `rgba( $kendo-treeview-text, .07 )`
 
 </td>
 <td>
 
-`rgba( $kendo-treeview-text, .07 )`
+<span class="color-preview" style="background-color: rgba(0, 0, 0, 0.07)"></span>
+
+`rgba(0, 0, 0, 0.07)`
 
 </td>
 </tr>
@@ -312,9 +284,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-treeview-item-hover-text</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -331,9 +302,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-treeview-item-hover-border</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -350,9 +320,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-treeview-item-hover-gradient</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -369,9 +338,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-treeview-item-selected-bg</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -388,16 +356,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-treeview-item-selected-text</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$selected-bg`
 
 </td>
 <td>
 
-`$secondary`
+<span class="color-preview" style="background-color: #e51a5f"></span>
+
+`#e51a5f`
 
 </td>
 </tr>
@@ -407,9 +376,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-treeview-item-selected-border</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -426,9 +394,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-treeview-item-selected-gradient</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -445,9 +412,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-treeview-item-focus-shadow</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -464,14 +430,15 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-treeview-loadmore-bg</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `transparent`
 
 </td>
 <td>
+
+<span class="color-preview" style="background-color: transparent"></span>
 
 `transparent`
 
@@ -483,9 +450,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-treeview-loadmore-text</td>
-    <td></td>
+    <td>String</td>
 <td>
-
 
 `inherit`
 
@@ -502,9 +468,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-treeview-loadmore-border</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -521,14 +486,15 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-treeview-loadmore-hover-bg</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `transparent`
 
 </td>
 <td>
+
+<span class="color-preview" style="background-color: transparent"></span>
 
 `transparent`
 
@@ -540,9 +506,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-treeview-loadmore-hover-text</td>
-    <td></td>
+    <td>String</td>
 <td>
-
 
 `inherit`
 
@@ -559,9 +524,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-treeview-loadmore-hover-border</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -578,14 +542,15 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-treeview-loadmore-focus-bg</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `transparent`
 
 </td>
 <td>
+
+<span class="color-preview" style="background-color: transparent"></span>
 
 `transparent`
 
@@ -597,9 +562,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-treeview-loadmore-focus-text</td>
-    <td></td>
+    <td>String</td>
 <td>
-
 
 `inherit`
 
@@ -616,9 +580,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-treeview-loadmore-focus-border</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -635,9 +598,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-treeview-loadmore-focus-shadow</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `$kendo-treeview-item-focus-shadow`
 

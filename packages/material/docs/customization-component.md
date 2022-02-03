@@ -27,16 +27,17 @@ The following table lists the available variables for customization.
 <tbody>
         <tr>
     <td>$component-bg</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `map-get($theme, component-bg)`
 
 </td>
 <td>
 
-`map-get($theme, component-bg)`
+<span class="color-preview" style="background-color: white"></span>
+
+`white`
 
 </td>
 </tr>
@@ -46,16 +47,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$component-text</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `map-get($theme, component-text)`
 
 </td>
 <td>
 
-`map-get($theme, component-text)`
+<span class="color-preview" style="background-color: rgba(0, 0, 0, 0.87)"></span>
+
+`rgba(0, 0, 0, 0.87)`
 
 </td>
 </tr>
@@ -65,16 +67,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$component-border</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `map-get($theme, component-border)`
 
 </td>
 <td>
 
-`map-get($theme, component-border)`
+<span class="color-preview" style="background-color: rgba(0, 0, 0, 0.12)"></span>
+
+`rgba(0, 0, 0, 0.12)`
 
 </td>
 </tr>

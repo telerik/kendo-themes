@@ -27,16 +27,17 @@ The following table lists the available variables for customization.
 <tbody>
         <tr>
     <td>$combobox-bg</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$kendo-input-bg`
 
 </td>
 <td>
 
-`$component-bg`
+<span class="color-preview" style="background-color: #ffffff"></span>
+
+`#ffffff`
 
 </td>
 </tr>
@@ -46,16 +47,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$combobox-text</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$kendo-input-text`
 
 </td>
 <td>
 
-`$component-text`
+<span class="color-preview" style="background-color: #656565"></span>
+
+`#656565`
 
 </td>
 </tr>
@@ -65,16 +67,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$combobox-border</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$kendo-input-border`
 
 </td>
 <td>
 
-`$component-border`
+<span class="color-preview" style="background-color: rgba(0, 0, 0, 0.08)"></span>
+
+`rgba(0, 0, 0, 0.08)`
 
 </td>
 </tr>
@@ -84,16 +87,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$combobox-hover-bg</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$kendo-input-hover-bg`
 
 </td>
 <td>
 
-`$kendo-input-bg`
+<span class="color-preview" style="background-color: #ffffff"></span>
+
+`#ffffff`
 
 </td>
 </tr>
@@ -103,16 +107,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$combobox-hover-text</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$kendo-input-hover-text`
 
 </td>
 <td>
 
-`$kendo-input-text`
+<span class="color-preview" style="background-color: #656565"></span>
+
+`#656565`
 
 </td>
 </tr>
@@ -122,16 +127,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$combobox-hover-border</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$kendo-input-hover-border`
 
 </td>
 <td>
 
-`try-shade( $kendo-input-border, 1 )`
+<span class="color-preview" style="background-color: rgba(0, 0, 0, 0.1536)"></span>
+
+`rgba(0, 0, 0, 0.1536)`
 
 </td>
 </tr>
@@ -141,16 +147,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$combobox-focus-text</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$kendo-input-focus-text`
 
 </td>
 <td>
 
-`$kendo-input-hover-text`
+<span class="color-preview" style="background-color: #656565"></span>
+
+`#656565`
 
 </td>
 </tr>
@@ -160,16 +167,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$combobox-focus-bg</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$kendo-input-focus-bg`
 
 </td>
 <td>
 
-`$kendo-input-hover-bg`
+<span class="color-preview" style="background-color: #ffffff"></span>
+
+`#ffffff`
 
 </td>
 </tr>
@@ -179,16 +187,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$combobox-focus-border</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$kendo-input-focus-border`
 
 </td>
 <td>
 
-`$kendo-input-hover-border`
+<span class="color-preview" style="background-color: rgba(0, 0, 0, 0.1536)"></span>
+
+`rgba(0, 0, 0, 0.1536)`
 
 </td>
 </tr>

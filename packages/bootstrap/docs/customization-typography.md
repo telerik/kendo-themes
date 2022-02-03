@@ -27,9 +27,8 @@ The following table lists the available variables for customization.
 <tbody>
         <tr>
     <td>$enable-typography</td>
-    <td></td>
+    <td>Bool</td>
 <td>
-
 
 `false`
 
@@ -46,16 +45,15 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$font-size</td>
-    <td></td>
+    <td>Number</td>
 <td>
-
 
 `$font-size-base`
 
 </td>
 <td>
 
-
+`1rem`
 
 </td>
 </tr>
@@ -65,16 +63,15 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$font-family</td>
-    <td></td>
+    <td>List</td>
 <td>
-
 
 `$font-family-sans-serif`
 
 </td>
 <td>
 
-
+`system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"`
 
 </td>
 </tr>
@@ -84,16 +81,15 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$font-family-monospace</td>
-    <td></td>
+    <td>List</td>
 <td>
-
 
 `$font-family-monospace`
 
 </td>
 <td>
 
-`$font-family-monospace`
+`SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`
 
 </td>
 </tr>
@@ -103,16 +99,15 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$line-height</td>
-    <td></td>
+    <td>Number</td>
 <td>
-
 
 `$line-height-base`
 
 </td>
 <td>
 
-
+`1.5`
 
 </td>
 </tr>

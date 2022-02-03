@@ -27,8 +27,10 @@
 
     @if $utils-resize {
         @each $resize in $utils-resize {
+            .k-resize-#{$resize} { resize: $resize; }
+
             // sass-lint:disable-block no-important
-            .k-resize-#{$resize} { resize: $resize !important; }
+            .\!k-resize-#{$resize} { resize: $resize !important; }
         }
     }
 

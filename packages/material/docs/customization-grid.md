@@ -27,16 +27,17 @@ The following table lists the available variables for customization.
 <tbody>
         <tr>
     <td>$grid-bg</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$component-bg`
 
 </td>
 <td>
 
-`map-get($theme, component-bg)`
+<span class="color-preview" style="background-color: white"></span>
+
+`white`
 
 </td>
 </tr>
@@ -46,16 +47,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$grid-text</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$component-text`
 
 </td>
 <td>
 
-`map-get($theme, component-text)`
+<span class="color-preview" style="background-color: rgba(0, 0, 0, 0.87)"></span>
+
+`rgba(0, 0, 0, 0.87)`
 
 </td>
 </tr>
@@ -65,16 +67,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$grid-border</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$component-border`
 
 </td>
 <td>
 
-`map-get($theme, component-border)`
+<span class="color-preview" style="background-color: rgba(0, 0, 0, 0.12)"></span>
+
+`rgba(0, 0, 0, 0.12)`
 
 </td>
 </tr>
@@ -84,16 +87,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$grid-header-bg</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$grid-bg`
 
 </td>
 <td>
 
-`map-get($theme, component-bg)`
+<span class="color-preview" style="background-color: white"></span>
+
+`white`
 
 </td>
 </tr>
@@ -103,16 +107,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$grid-header-text</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `if($theme-type == dark, $light-secondary-text, $dark-secondary-text)`
 
 </td>
 <td>
 
-`if($theme-type == dark, $light-secondary-text, $dark-secondary-text)`
+<span class="color-preview" style="background-color: rgba(0, 0, 0, 0.54)"></span>
+
+`rgba(0, 0, 0, 0.54)`
 
 </td>
 </tr>
@@ -122,16 +127,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$grid-header-border</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$grid-border`
 
 </td>
 <td>
 
-`map-get($theme, component-border)`
+<span class="color-preview" style="background-color: rgba(0, 0, 0, 0.12)"></span>
+
+`rgba(0, 0, 0, 0.12)`
 
 </td>
 </tr>
@@ -141,9 +147,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$grid-header-gradient</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -160,16 +165,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$grid-footer-bg</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$grid-header-bg`
 
 </td>
 <td>
 
-`map-get($theme, component-bg)`
+<span class="color-preview" style="background-color: white"></span>
+
+`white`
 
 </td>
 </tr>
@@ -179,16 +185,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$grid-footer-text</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$grid-header-text`
 
 </td>
 <td>
 
-`if($theme-type == dark, $light-secondary-text, $dark-secondary-text)`
+<span class="color-preview" style="background-color: rgba(0, 0, 0, 0.54)"></span>
+
+`rgba(0, 0, 0, 0.54)`
 
 </td>
 </tr>
@@ -198,16 +205,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$grid-footer-border</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$grid-header-border`
 
 </td>
 <td>
 
-`map-get($theme, component-border)`
+<span class="color-preview" style="background-color: rgba(0, 0, 0, 0.12)"></span>
+
+`rgba(0, 0, 0, 0.12)`
 
 </td>
 </tr>
@@ -217,14 +225,15 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$grid-alt-bg</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `transparent`
 
 </td>
 <td>
+
+<span class="color-preview" style="background-color: transparent"></span>
 
 `transparent`
 
@@ -236,9 +245,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$grid-alt-text</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -255,9 +263,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$grid-alt-border</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -274,16 +281,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$grid-hovered-bg</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `rgba( contrast-wcag( $grid-bg ), .07 )`
 
 </td>
 <td>
 
-`rgba( contrast-wcag( $grid-bg ), .07 )`
+<span class="color-preview" style="background-color: rgba(0, 0, 0, 0.07)"></span>
+
+`rgba(0, 0, 0, 0.07)`
 
 </td>
 </tr>
@@ -293,9 +301,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$grid-hovered-text</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -312,16 +319,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$grid-hovered-border</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$grid-border`
 
 </td>
 <td>
 
-`map-get($theme, component-border)`
+<span class="color-preview" style="background-color: rgba(0, 0, 0, 0.12)"></span>
+
+`rgba(0, 0, 0, 0.12)`
 
 </td>
 </tr>
@@ -331,16 +339,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$grid-selected-bg</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `rgba( contrast-wcag( $grid-bg ), .04 )`
 
 </td>
 <td>
 
-`rgba( contrast-wcag( $grid-bg ), .04 )`
+<span class="color-preview" style="background-color: rgba(0, 0, 0, 0.04)"></span>
+
+`rgba(0, 0, 0, 0.04)`
 
 </td>
 </tr>
@@ -350,9 +359,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$grid-selected-text</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -369,16 +377,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$grid-selected-border</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$grid-border`
 
 </td>
 <td>
 
-`map-get($theme, component-border)`
+<span class="color-preview" style="background-color: rgba(0, 0, 0, 0.12)"></span>
+
+`rgba(0, 0, 0, 0.12)`
 
 </td>
 </tr>
