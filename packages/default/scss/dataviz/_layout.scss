@@ -2,6 +2,10 @@
 
     .k-barcode {
         display: inline-block;
+
+        > div {
+            height: 150px;
+        }
     }
 
 }
@@ -391,6 +395,10 @@
 
     .k-qrcode {
         display: inline-block;
+
+        > div {
+            height: 150px;
+        }
     }
 
 }
