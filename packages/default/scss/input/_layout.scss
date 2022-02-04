@@ -266,10 +266,10 @@
             }
         }
         .k-spinner-increase .k-icon {
-            bottom: -$kendo-input-spinner-icon-offset;
+            bottom: if( $use-input-spinner-icon-offset, calc( -1 * #{$kendo-input-spinner-icon-offset}), auto );
         }
         .k-spinner-decrease .k-icon {
-            top: -$kendo-input-spinner-icon-offset;
+            top: if( $use-input-spinner-icon-offset, calc( -1 * #{$kendo-input-spinner-icon-offset}), auto );
         }
     }
 

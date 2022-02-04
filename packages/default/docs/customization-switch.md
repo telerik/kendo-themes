@@ -27,9 +27,8 @@ The following table lists the available variables for customization.
 <tbody>
         <tr>
     <td>$kendo-switch-font-family</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -46,9 +45,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-switch-track-border-width</td>
-    <td></td>
+    <td>Number</td>
 <td>
-
 
 `1px`
 
@@ -65,9 +63,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-switch-thumb-border-width</td>
-    <td></td>
+    <td>Number</td>
 <td>
-
 
 `1px`
 
@@ -84,9 +81,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-switch-label-text-transform</td>
-    <td></td>
+    <td>String</td>
 <td>
-
 
 `uppercase`
 
@@ -103,9 +99,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-switch-label-display</td>
-    <td></td>
+    <td>String</td>
 <td>
-
 
 `inline`
 
@@ -122,9 +117,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-switch-sizes</td>
-    <td></td>
+    <td>Map</td>
 <td>
-
 
 `(
     sm: ( font-size: 10px, track-width: 52px, track-height: 26px, thumb-width: 26px, thumb-height: 26px, thumb-offset: 0px, label-offset: 4px ),
@@ -135,11 +129,7 @@ The following table lists the available variables for customization.
 </td>
 <td>
 
-`(
-    sm: ( font-size: 10px, track-width: 52px, track-height: 26px, thumb-width: 26px, thumb-height: 26px, thumb-offset: 0px, label-offset: 4px ),
-    md: ( font-size: 10px, track-width: 60px, track-height: 30px, thumb-width: 30px, thumb-height: 30px, thumb-offset: 0px, label-offset: 6px ),
-    lg: ( font-size: 10px, track-width: 68px, track-height: 34px, thumb-width: 34px, thumb-height: 34px, thumb-offset: 0px, label-offset: 8px )
-)`
+`(sm: (font-size: 10px, track-width: 52px, track-height: 26px, thumb-width: 26px, thumb-height: 26px, thumb-offset: 0px, label-offset: 4px), md: (font-size: 10px, track-width: 60px, track-height: 30px, thumb-width: 30px, thumb-height: 30px, thumb-offset: 0px, label-offset: 6px), lg: (font-size: 10px, track-width: 68px, track-height: 34px, thumb-width: 34px, thumb-height: 34px, thumb-offset: 0px, label-offset: 8px))`
 
 </td>
 </tr>
@@ -149,16 +139,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-switch-off-track-bg</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$component-bg`
 
 </td>
 <td>
 
+<span class="color-preview" style="background-color: #ffffff"></span>
 
+`#ffffff`
 
 </td>
 </tr>
@@ -168,16 +159,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-switch-off-track-text</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$component-text`
 
 </td>
 <td>
 
+<span class="color-preview" style="background-color: #424242"></span>
 
+`#424242`
 
 </td>
 </tr>
@@ -187,16 +179,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-switch-off-track-border</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `try-shade( $kendo-switch-off-track-bg, 8% )`
 
 </td>
 <td>
 
-`try-shade( $kendo-switch-off-track-bg, 8% )`
+<span class="color-preview" style="background-color: #ebebeb"></span>
+
+`#ebebeb`
 
 </td>
 </tr>
@@ -206,9 +199,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-switch-off-track-gradient</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -225,9 +217,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-switch-off-track-hover-bg</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -244,9 +235,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-switch-off-track-hover-text</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -263,9 +253,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-switch-off-track-hover-border</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -282,9 +271,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-switch-off-track-hover-gradient</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -301,9 +289,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-switch-off-track-focus-bg</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -320,9 +307,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-switch-off-track-focus-text</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -339,9 +325,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-switch-off-track-focus-border</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -358,9 +343,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-switch-off-track-focus-gradient</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -377,16 +361,15 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-switch-off-track-focus-ring</td>
-    <td></td>
+    <td>List</td>
 <td>
-
 
 `2px solid rgba( if( $dark-theme, $white, $black ) , .08 )`
 
 </td>
 <td>
 
-`2px solid rgba( if( $dark-theme, $white, $black ) , .08 )`
+`2px solid rgba(0, 0, 0, 0.08)`
 
 </td>
 </tr>
@@ -396,9 +379,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-switch-off-track-disabled-bg</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -415,9 +397,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-switch-off-track-disabled-text</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -434,9 +415,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-switch-off-track-disabled-border</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -453,9 +433,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-switch-off-track-disabled-gradient</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -472,14 +451,15 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-switch-off-thumb-bg</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$base-bg`
 
 </td>
-<td><span class="color-preview" style="background-color: #fafafa"></span>
+<td>
+
+<span class="color-preview" style="background-color: #fafafa"></span>
 
 `#fafafa`
 
@@ -491,16 +471,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-switch-off-thumb-text</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$base-text`
 
 </td>
 <td>
 
-`$body-text`
+<span class="color-preview" style="background-color: #424242"></span>
+
+`#424242`
 
 </td>
 </tr>
@@ -510,16 +491,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-switch-off-thumb-border</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$base-border`
 
 </td>
 <td>
 
-`rgba( black, .08 )`
+<span class="color-preview" style="background-color: rgba(0, 0, 0, 0.08)"></span>
+
+`rgba(0, 0, 0, 0.08)`
 
 </td>
 </tr>
@@ -529,9 +511,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-switch-off-thumb-gradient</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -548,9 +529,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-switch-off-thumb-hover-bg</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -567,9 +547,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-switch-off-thumb-hover-text</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -586,9 +565,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-switch-off-thumb-hover-border</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -605,9 +583,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-switch-off-thumb-hover-gradient</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -624,14 +601,15 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-switch-on-track-bg</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$primary`
 
 </td>
-<td><span class="color-preview" style="background-color: #ff6358"></span>
+<td>
+
+<span class="color-preview" style="background-color: #ff6358"></span>
 
 `#ff6358`
 
@@ -643,16 +621,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-switch-on-track-text</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `contrast-wcag( $kendo-switch-on-track-bg )`
 
 </td>
 <td>
 
-`contrast-wcag( $kendo-switch-on-track-bg )`
+<span class="color-preview" style="background-color: white"></span>
+
+`white`
 
 </td>
 </tr>
@@ -662,14 +641,15 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-switch-on-track-border</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$kendo-switch-on-track-bg`
 
 </td>
-<td><span class="color-preview" style="background-color: #ff6358"></span>
+<td>
+
+<span class="color-preview" style="background-color: #ff6358"></span>
 
 `#ff6358`
 
@@ -681,9 +661,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-switch-on-track-gradient</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -700,9 +679,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-switch-on-track-hover-bg</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -719,9 +697,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-switch-on-track-hover-text</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -738,9 +715,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-switch-on-track-hover-border</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -757,9 +733,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-switch-on-track-hover-gradient</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -776,9 +751,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-switch-on-track-focus-bg</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -795,9 +769,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-switch-on-track-focus-text</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -814,9 +787,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-switch-on-track-focus-border</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -833,9 +805,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-switch-on-track-focus-gradient</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -852,16 +823,15 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-switch-on-track-focus-ring</td>
-    <td></td>
+    <td>List</td>
 <td>
-
 
 `2px solid rgba( $kendo-switch-on-track-border, .25 )`
 
 </td>
 <td>
 
-`2px solid rgba( $kendo-switch-on-track-border, .25 )`
+`2px solid rgba(255, 99, 88, 0.25)`
 
 </td>
 </tr>
@@ -871,9 +841,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-switch-on-track-disabled-bg</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -890,9 +859,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-switch-on-track-disabled-text</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -909,9 +877,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-switch-on-track-disabled-border</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -928,9 +895,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-switch-on-track-disabled-gradient</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -947,14 +913,15 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-switch-on-thumb-bg</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$base-bg`
 
 </td>
-<td><span class="color-preview" style="background-color: #fafafa"></span>
+<td>
+
+<span class="color-preview" style="background-color: #fafafa"></span>
 
 `#fafafa`
 
@@ -966,16 +933,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-switch-on-thumb-text</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$base-text`
 
 </td>
 <td>
 
-`$body-text`
+<span class="color-preview" style="background-color: #424242"></span>
+
+`#424242`
 
 </td>
 </tr>
@@ -985,16 +953,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-switch-on-thumb-border</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$base-border`
 
 </td>
 <td>
 
-`rgba( black, .08 )`
+<span class="color-preview" style="background-color: rgba(0, 0, 0, 0.08)"></span>
+
+`rgba(0, 0, 0, 0.08)`
 
 </td>
 </tr>
@@ -1004,9 +973,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-switch-on-thumb-gradient</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -1023,9 +991,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-switch-on-thumb-hover-bg</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -1042,9 +1009,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-switch-on-thumb-hover-text</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -1061,9 +1027,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-switch-on-thumb-hover-border</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 
@@ -1080,9 +1045,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-switch-on-thumb-hover-gradient</td>
-    <td></td>
+    <td>Null</td>
 <td>
-
 
 `null`
 

@@ -27,35 +27,37 @@ The following table lists the available variables for customization.
 <tbody>
         <tr>
     <td>$component-bg</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$body-bg`
 
 </td>
 <td>
 
+<span class="color-preview" style="background-color: #ffffff"></span>
 
+`#ffffff`
 
 </td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of a component.<br />Note: do not use this variable directly. Instead derive it as `$component-name-bg` e.g. `$grid-bg: $component-bg !defualt;`.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of a component.<br />Note: do not use this variable directly. Instead derive it as `$component-name-bg` e.g. `$grid-bg: $component-bg !default;`.</div></div>
     </td>
 </tr>
 <tr>
     <td>$component-text</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$body-text`
 
 </td>
 <td>
 
+<span class="color-preview" style="background-color: #656565"></span>
 
+`#656565`
 
 </td>
 </tr>
@@ -65,16 +67,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$component-border</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `rgba( black, .08 )`
 
 </td>
 <td>
 
-`rgba( black, .08 )`
+<span class="color-preview" style="background-color: rgba(0, 0, 0, 0.08)"></span>
+
+`rgba(0, 0, 0, 0.08)`
 
 </td>
 </tr>

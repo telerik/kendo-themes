@@ -27,16 +27,15 @@ The following table lists the available variables for customization.
 <tbody>
         <tr>
     <td>$border-radius</td>
-    <td></td>
+    <td>Number</td>
 <td>
-
 
 `map-get( $spacing, 1 )`
 
 </td>
 <td>
 
-`map-get( $spacing, 1 )`
+`4px`
 
 </td>
 </tr>
@@ -46,14 +45,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$base-bg</td>
-    <td></td>
+    <td>Color</td>
 <td>
+
 <span class="color-preview" style="background-color: #f0f0f0"></span>
 
 `#f0f0f0`
 
 </td>
-<td><span class="color-preview" style="background-color: #f0f0f0"></span>
+<td>
+
+<span class="color-preview" style="background-color: #f0f0f0"></span>
 
 `#f0f0f0`
 
@@ -65,16 +67,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$base-text</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$body-text`
 
 </td>
 <td>
 
+<span class="color-preview" style="background-color: #272727"></span>
 
+`#272727`
 
 </td>
 </tr>
@@ -84,16 +87,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$base-border</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `try-shade( $base-bg, 2 )`
 
 </td>
 <td>
 
-`try-shade( $base-bg, 2 )`
+<span class="color-preview" style="background-color: #cacaca"></span>
+
+`#cacaca`
 
 </td>
 </tr>
@@ -103,16 +107,15 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$base-gradient</td>
-    <td></td>
+    <td>List</td>
 <td>
-
 
 `rgba( white, .1 ), rgba( white, 0 )`
 
 </td>
 <td>
 
-`rgba( white, .1 ), rgba( white, 0 )`
+`rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0)`
 
 </td>
 </tr>
@@ -122,16 +125,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$hovered-bg</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `try-shade( $base-bg, 1 )`
 
 </td>
 <td>
 
-`try-shade( $base-bg, 1 )`
+<span class="color-preview" style="background-color: #dddddd"></span>
+
+`#dddddd`
 
 </td>
 </tr>
@@ -141,16 +145,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$hovered-text</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$base-text`
 
 </td>
 <td>
 
+<span class="color-preview" style="background-color: #272727"></span>
 
+`#272727`
 
 </td>
 </tr>
@@ -160,16 +165,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$hovered-border</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `try-shade( $hovered-bg, 2 )`
 
 </td>
 <td>
 
-`try-shade( $hovered-bg, 2 )`
+<span class="color-preview" style="background-color: #bababa"></span>
+
+`#bababa`
 
 </td>
 </tr>
@@ -179,16 +185,15 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$hovered-gradient</td>
-    <td></td>
+    <td>List</td>
 <td>
-
 
 `$base-gradient`
 
 </td>
 <td>
 
-`rgba( white, .1 ), rgba( white, 0 )`
+`rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0)`
 
 </td>
 </tr>
@@ -198,14 +203,15 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$selected-bg</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$primary`
 
 </td>
-<td><span class="color-preview" style="background-color: #f35800"></span>
+<td>
+
+<span class="color-preview" style="background-color: #f35800"></span>
 
 `#f35800`
 
@@ -217,16 +223,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$selected-text</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `contrast-wcag( $selected-bg )`
 
 </td>
 <td>
 
-`contrast-wcag( $selected-bg )`
+<span class="color-preview" style="background-color: white"></span>
+
+`white`
 
 </td>
 </tr>
@@ -236,16 +243,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$selected-border</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `try-shade( $selected-bg, 2 )`
 
 </td>
 <td>
 
-`try-shade( $selected-bg, 2 )`
+<span class="color-preview" style="background-color: #cc4a00"></span>
+
+`#cc4a00`
 
 </td>
 </tr>
@@ -255,16 +263,15 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$selected-gradient</td>
-    <td></td>
+    <td>List</td>
 <td>
-
 
 `$base-gradient`
 
 </td>
 <td>
 
-`rgba( white, .1 ), rgba( white, 0 )`
+`rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0)`
 
 </td>
 </tr>

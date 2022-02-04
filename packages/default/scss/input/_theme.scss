@@ -37,6 +37,19 @@
             @include box-shadow( $kendo-input-focus-shadow );
         }
 
+        //Disabled
+        &:disabled,
+        &[disabled],
+        &.k-disabled {
+            @include fill(
+                $kendo-input-disabled-text,
+                $kendo-input-disabled-bg,
+                $kendo-input-disabled-border,
+                $kendo-input-disabled-gradient
+            );
+            @include box-shadow( $kendo-input-disabled-shadow );
+        }
+
         // Invalid
         &.k-invalid,
         &.ng-invalid.ng-touched,
@@ -98,6 +111,19 @@
                 $kendo-picker-focus-gradient
             );
             @include box-shadow( $kendo-picker-focus-shadow );
+        }
+
+        //Disabled
+        &:disabled,
+        &[disabled],
+        &.k-disabled {
+            @include fill(
+                $kendo-picker-disabled-text,
+                $kendo-picker-disabled-bg,
+                $kendo-picker-disabled-border,
+                $kendo-picker-disabled-gradient
+            );
+            @include box-shadow( $kendo-picker-disabled-shadow );
         }
 
         // Invalid

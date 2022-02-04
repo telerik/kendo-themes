@@ -27,14 +27,17 @@ The following table lists the available variables for customization.
 <tbody>
         <tr>
     <td>$interactive-bg</td>
-    <td></td>
+    <td>Color</td>
 <td>
+
 <span class="color-preview" style="background-color: #f6f6f6"></span>
 
 `#f6f6f6`
 
 </td>
-<td><span class="color-preview" style="background-color: #f6f6f6"></span>
+<td>
+
+<span class="color-preview" style="background-color: #f6f6f6"></span>
 
 `#f6f6f6`
 
@@ -46,14 +49,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$interactive-text</td>
-    <td></td>
+    <td>Color</td>
 <td>
+
 <span class="color-preview" style="background-color: #656565"></span>
 
 `#656565`
 
 </td>
-<td><span class="color-preview" style="background-color: #656565"></span>
+<td>
+
+<span class="color-preview" style="background-color: #656565"></span>
 
 `#656565`
 
@@ -65,16 +71,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$interactive-border</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `rgba( black, .08 )`
 
 </td>
 <td>
 
-`rgba( black, .08 )`
+<span class="color-preview" style="background-color: rgba(0, 0, 0, 0.08)"></span>
+
+`rgba(0, 0, 0, 0.08)`
 
 </td>
 </tr>
@@ -84,16 +91,15 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$interactive-gradient</td>
-    <td></td>
+    <td>List</td>
 <td>
-
 
 `rgba( black, 0 ), rgba( black, .02 )`
 
 </td>
 <td>
 
-`rgba( black, 0 ), rgba( black, .02 )`
+`rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.02)`
 
 </td>
 </tr>
@@ -103,16 +109,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$hover-bg</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `shade( $interactive-bg, .5 )`
 
 </td>
 <td>
 
-`shade( $interactive-bg, .5 )`
+<span class="color-preview" style="background-color: #ececec"></span>
+
+`#ececec`
 
 </td>
 </tr>
@@ -122,14 +129,15 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$hover-text</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$interactive-text`
 
 </td>
-<td><span class="color-preview" style="background-color: #656565"></span>
+<td>
+
+<span class="color-preview" style="background-color: #656565"></span>
 
 `#656565`
 
@@ -141,16 +149,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$hover-border</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `rgba( black, .15 )`
 
 </td>
 <td>
 
-`rgba( black, .15 )`
+<span class="color-preview" style="background-color: rgba(0, 0, 0, 0.15)"></span>
+
+`rgba(0, 0, 0, 0.15)`
 
 </td>
 </tr>
@@ -160,16 +169,15 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$hover-gradient</td>
-    <td></td>
+    <td>List</td>
 <td>
-
 
 `rgba( black, 0 ), rgba( black, .02 )`
 
 </td>
 <td>
 
-`rgba( black, 0 ), rgba( black, .02 )`
+`rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.02)`
 
 </td>
 </tr>
@@ -179,14 +187,15 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$selected-bg</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `$primary`
 
 </td>
-<td><span class="color-preview" style="background-color: #ff6358"></span>
+<td>
+
+<span class="color-preview" style="background-color: #ff6358"></span>
 
 `#ff6358`
 
@@ -198,16 +207,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$selected-text</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `contrast-wcag( $selected-bg )`
 
 </td>
 <td>
 
-`contrast-wcag( $selected-bg )`
+<span class="color-preview" style="background-color: white"></span>
+
+`white`
 
 </td>
 </tr>
@@ -217,16 +227,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$selected-border</td>
-    <td></td>
+    <td>Color</td>
 <td>
-
 
 `rgba( black, .1 )`
 
 </td>
 <td>
 
-`rgba( black, .1 )`
+<span class="color-preview" style="background-color: rgba(0, 0, 0, 0.1)"></span>
+
+`rgba(0, 0, 0, 0.1)`
 
 </td>
 </tr>
@@ -236,9 +247,8 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$selected-gradient</td>
-    <td></td>
+    <td>String</td>
 <td>
-
 
 `none`
 

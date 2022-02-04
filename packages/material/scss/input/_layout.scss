@@ -32,6 +32,24 @@
     }
 
 
+    // Disabled
+    .k-input,
+    .k-picker {
+        &:disabled,
+        &[disabled],
+        &.k-disabled {
+            opacity: 1;
+            filter: none;
+        }
+
+        .k-input-button,
+        .k-input-spinner .k-spinner-increase,
+        .k-input-spinner .k-spinner-decrease {
+            color: inherit;
+        }
+    }
+
+
     // Input ripple
     .k-floating-label-container {
         @include input-ripple();
