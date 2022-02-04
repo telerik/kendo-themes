@@ -101,7 +101,7 @@
 
         // Step label
         .k-step-label {
-            max-width: 10em;
+            max-width: calc(min(100%, 10em));
             display: inline-flex;
             flex-wrap: wrap;
             align-items: center;
