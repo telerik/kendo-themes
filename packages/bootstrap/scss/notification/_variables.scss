@@ -17,18 +17,19 @@ $notification-bg: $component-bg !default;
 $notification-text: $component-text !default;
 $notification-border: $component-border !default;
 
-$notification-themes: () !default;
+@function notification-theme( $colors ) {
+    $_theme: ();
 
-@function notification-theme($name: null, $color: null) {
-    // sass-lint:disable indentation
-    @return (
-        border: tint( $color, 10 ),
-        color: shade( $color, 6 ),
-        bg: tint( $color, 9 )
-    );
-    // sass-lint:enable indentation
+    @each $name, $color in $colors {
+        $_theme: map-merge(( $name: (
+            color: shade( $color, 6 ),
+            background-color: tint( $color, 9 ),
+            border: tint( $color, 10 ),
+        )), $_theme );
+    }
+
+    @return $_theme;
 }
 
-@each $theme, $props in $kendo-theme-colors {
-    $notification-themes: map-merge($notification-themes, ($theme: notification-theme($theme, $props)) );
-}
+$kendo-notification-theme-colors: $kendo-theme-colors !default;
+$kendo-notification-theme: notification-theme( $kendo-notification-theme-colors ) !default;

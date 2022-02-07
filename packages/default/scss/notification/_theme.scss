@@ -17,11 +17,13 @@
         box-shadow: $notification-shadow;
     }
 
-    @each $theme, $props in $notification-themes {
-        .k-notification-#{$theme} {
-            border-color: map-get( $props, border );
-            color: map-get( $props, color );
-            background-color: map-get( $props, bg );
+    @each $name, $props in $kendo-notification-theme {
+        .k-notification-#{$name} {
+            @include fill(
+                map-get( $props, color ),
+                map-get( $props, background-color ),
+                map-get( $props, border )
+            );
         }
     }
 
