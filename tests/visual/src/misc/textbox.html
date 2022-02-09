@@ -80,6 +80,37 @@
             <input is="Textbox" value="Invalid focus" invalid focus />
         </div>
 
+        <!-- textbox prefix -->
+        <div placeholder="Prefix..." is="Textbox">
+            <span is="InputPrefix">
+                <span is="Icon" name="menu"></span>
+                <button is="Button" fillMode="clear" icon="calendar"></button>
+                <span class="k-input-separator"></span>
+            </span>
+        </div>
+        <div placeholder="Prefix..." dir="rtl" is="Textbox">
+            <span is="InputPrefix">
+                <span is="Icon" name="menu"></span>
+                <button is="Button" fillMode="clear" icon="calendar"></button>
+                <span class="k-input-separator"></span>
+            </span>
+        </div>
+
+        <!-- textbox suffix -->
+        <div placeholder="Suffix..." is="Textbox">
+            <span is="InputSuffix">
+                <span class="k-input-separator"></span>
+                <button is="Button" fillMode="clear" icon="calendar"></button>
+                <span is="Icon" name="bell"></span>
+            </span>
+        </div>
+        <div placeholder="Suffix..." dir="rtl" is="Textbox">
+            <span is="InputSuffix">
+                <span class="k-input-separator"></span>
+                <button is="Button" fillMode="clear" icon="calendar"></button>
+                <span is="Icon" name="bell"></span>
+            </span>
+        </div>
     </div>
 
 </body>
