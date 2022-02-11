@@ -364,6 +364,10 @@
             border-bottom-color: inherit;
         }
 
+        .k-scheduler-times-all-day {
+            text-overflow: ellipsis;
+        }
+
         .k-slot-cell.k-last-resource {
             border-right: 0;
         }
