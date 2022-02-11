@@ -185,7 +185,9 @@
     // Input with icon styles
     .k-input-icon,
     .k-input-validation-icon,
-    .k-input-loading-icon {
+    .k-input-loading-icon,
+    .k-input-prefix > .k-icon,
+    .k-input-suffix > .k-icon {
         flex: none;
         align-self: center;
         display: inline-flex;
@@ -359,7 +361,9 @@
             .k-input-icon,
             .k-input-validation-icon,
             .k-input-loading-icon,
-            .k-clear-value {
+            .k-clear-value,
+            .k-input-prefix > .k-icon,
+            .k-input-suffix > .k-icon {
                 width: $_icon-size;
                 height: $_icon-size;
             }
