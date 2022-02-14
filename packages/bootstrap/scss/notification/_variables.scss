@@ -20,6 +20,7 @@ $notification-border: $component-border !default;
 @function notification-theme( $colors ) {
     $_theme: ();
 
+    // sass-lint:disable-block indentation
     @each $name, $color in $colors {
         $_theme: map-merge(( $name: (
             color: shade( $color, 6 ),
