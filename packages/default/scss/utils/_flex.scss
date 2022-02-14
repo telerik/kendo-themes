@@ -7,48 +7,48 @@
     /// @name k-d-flex
     /// @description This is equivalent to `display: flex`. It defines a flex container and enables a flex context for all its direct children. Think of flex items as primarily laying out either in horizontal rows or vertical columns.
     /// @group flex-layout
-    .k-d-flex                        { display: flex; }
-    .\!k-d-flex                      { display: flex !important; } // sass-lint:disable-line no-important class-name-format
+    .k-d-flex                           { display: flex; }
+    .\!k-d-flex                         { display: flex !important; } // sass-lint:disable-line no-important class-name-format
     /// @name k-d-inline-flex
     /// @description This is equivalent to `display: inline-flex`. It defines a flex container and enables a flex context for all its direct children. Think of flex items as primarily laying out either in horizontal rows or vertical columns.
     /// @group flex-layout
-    .k-d-inline-flex                 { display: inline-flex; }
-    .\!k-d-inline-flex               { display: inline-flex !important; } // sass-lint:disable-line no-important class-name-format
+    .k-d-inline-flex                    { display: inline-flex; }
+    .\!k-d-inline-flex                  { display: inline-flex !important; } // sass-lint:disable-line no-important class-name-format
     /// @name k-d-flex-row
     /// @description This is equivalent to `display: inline-flex` and `flex-direction: row`.
     /// @group flex-layout
-    .k-d-flex-row                    { @extend .k-d-flex, .k-flex-row; }
-    .\!k-d-flex-row                  { @extend .\!k-d-flex, .\!k-flex-row; } // sass-lint:disable-line class-name-format
+    .k-d-flex-row                       { @extend .k-d-flex, .k-flex-row; }
+    .\!k-d-flex-row                     { @extend .\!k-d-flex, .\!k-flex-row; } // sass-lint:disable-line class-name-format
     /// @name k-d-flex-col
     /// @description This is equivalent to `display: inline-flex` and `flex-direction: column`.
     /// @group flex-layout
-    .k-d-flex-col                    { @extend .k-d-flex, .k-flex-col; }
-    .\!k-d-flex-col                  { @extend .\!k-d-flex, .\!k-flex-row; } // sass-lint:disable-line class-name-format
+    .k-d-flex-col                       { @extend .k-d-flex, .k-flex-col; }
+    .\!k-d-flex-col                     { @extend .\!k-d-flex, .\!k-flex-row; } // sass-lint:disable-line class-name-format
     /// @name k-flex-row
     /// @description This is equivalent to `flex-direction: row`. This establishes the main-axis to be horizontal, thus defining the direction flex items are placed in the flex container: left to right in `ltr`; right to left in `rtl`.
     /// @group flex-layout
-    .k-flex-row                      { flex-direction: row; }
-    .\!k-flex-row                    { flex-direction: row !important; } // sass-lint:disable-line no-important class-name-format
+    .k-flex-row                         { flex-direction: row; }
+    .\!k-flex-row                       { flex-direction: row !important; } // sass-lint:disable-line no-important class-name-format
     /// @name k-flex-row-reverse
     /// @description This is equivalent to `flex-direction: row-reverse`. This establishes the main-axis to be horizontal, thus defining the direction flex items are placed in the flex container: right to left in `ltr`; left to right in `rtl`.
     /// @group flex-layout
-    .k-flex-row-reverse              { flex-direction: row-reverse; }
-    .\!k-flex-row-reverse            { flex-direction: row-reverse !important; } // sass-lint:disable-line no-important class-name-format
+    .k-flex-row-reverse                 { flex-direction: row-reverse; }
+    .\!k-flex-row-reverse               { flex-direction: row-reverse !important; } // sass-lint:disable-line no-important class-name-format
     /// @name k-flex-col
     /// @description This is equivalent to `flex-direction: column`. This establishes the main-axis to be vertical, thus defining the direction flex items are placed in the flex container: top to bottom.
     /// @group flex-layout
-    .k-flex-col                      { flex-direction: column; }
-    .\!k-flex-col                    { flex-direction: column !important; } // sass-lint:disable-line no-important class-name-format
+    .k-flex-col                         { flex-direction: column; }
+    .\!k-flex-col                       { flex-direction: column !important; } // sass-lint:disable-line no-important class-name-format
     /// @name k-flex-col-reverse
     /// @description This is equivalent to `flex-direction: column-reverse`. This establishes the main-axis to be vertical, thus defining the direction flex items are placed in the flex container: bottom to top.
     /// @group flex-layout
-    .k-flex-col-reverse              { flex-direction: column-reverse; }
-    .\!k-flex-col-reverse            { flex-direction: column-reverse; } // sass-lint:disable-line no-important class-name-format
+    .k-flex-col-reverse                 { flex-direction: column-reverse; }
+    .\!k-flex-col-reverse               { flex-direction: column-reverse !important; } // sass-lint:disable-line no-important class-name-format
 
 
     // Aliases
-    .k-flex-column                   { @extend .k-flex-col; }
-    .k-flex-column-reverse           { @extend .k-flex-col-reverse; }
+    .k-flex-column                      { @extend .k-flex-col; }
+    .k-flex-column-reverse              { @extend .k-flex-col-reverse; }
 
 
     // Flex wrap
@@ -56,15 +56,18 @@
     /// @name k-flex-wrap
     /// @description This is equivalent to `flex-wrap: wrap`. It allows flex items to wrap as needed onto multiple lines, from top to bottom.
     /// @group flex-layout
-    .k-flex-wrap                     { flex-wrap: wrap; }
+    .k-flex-wrap                        { flex-wrap: wrap; }
+    .\!k-flex-wrap                      { flex-wrap: wrap !important; } // sass-lint:disable-line no-important class-name-format
     /// @name k-flex-nowrap
     /// @description This is equivalent to `flex-wrap: nowrap`. All flex items will be on one line.
     /// @group flex-layout
-    .k-flex-nowrap                   { flex-wrap: nowrap; }
+    .k-flex-nowrap                      { flex-wrap: nowrap; }
+    .\!k-flex-nowrap                    { flex-wrap: nowrap !important; } // sass-lint:disable-line no-important class-name-format
     /// @name k-flex-wrap-reverse
     /// @description This is equivalent to `flex-wrap: wrap-reverse`. It allows flex items to wrap as needed onto multiple lines, from bottom to top.
     /// @group flex-layout
-    .k-flex-wrap-reverse             { flex-wrap: wrap-reverse; }
+    .k-flex-wrap-reverse                { flex-wrap: wrap-reverse; }
+    .\!k-flex-wrap-reverse              { flex-wrap: wrap-reverse !important; } // sass-lint:disable-line no-important class-name-format
 
 
     // Flex, shrink, grow,
@@ -72,79 +75,115 @@
     /// @name k-flex-initial
     /// @description This is the same as `flex: initial;` and the shorthand for the default value: `flex: 0 1 auto`. It sizes the item based on its `width`/`height` properties (or its content if not set). It makes the flex item inflexible when there is some free space left, but allows it to shrink to its minimum when there is not enough space. The alignment abilities or `auto` margins can be used to align flex items along the main axis.
     /// @group flex-layout
-    .k-flex-initial                  { flex: 0 1 auto; }
+    .k-flex-initial                     { flex: 0 1 auto; }
+    .\!k-flex-initial                   { flex: 0 1 auto !important; } // sass-lint:disable-line no-important class-name-format
     /// @name k-flex-1
     /// @description This is equivalent to `flex: 1 1 0%`. It sizes the item not based on its `width`/`height` properties, but based on the available space. This is similar to `flex: 1 1 auto` execpt it is allowed to shrink beyond its initial size.
     /// @group flex-layout
-    .k-flex-1                        { flex: 1 1 0%; }
+    .k-flex-1                           { flex: 1 1 0%; }
+    .\!k-flex-1                         { flex: 1 1 0% !important; } // sass-lint:disable-line no-important class-name-format
     /// @name k-flex-auto
     /// @description This is equivalent to `flex: 1 1 auto`. Beware, this is not the default value. It sizes the item based on its `width`/`height` properties, but makes it fully flexible so that they absorb any extra space along the main axis. If all items are either `flex: auto`, `flex: initial`, or `flex: none`, any remaining space after the items have been sized will be distributed evenly to the items with `flex: auto`.
     /// @group flex-layout
-    .k-flex-auto                     { flex: 1 1 auto; }
+    .k-flex-auto                        { flex: 1 1 auto; }
+    .\!k-flex-auto                      { flex: 1 1 auto !important; } // sass-lint:disable-line no-important class-name-format
     /// @name k-flex-none
     /// @description This is equivalent to `flex: 0 0 auto`. It sizes the item according to its `width`/`height` properties, but makes it fully inflexible. This is similar to `flex: initial` except it is not allowed to shrink, even in an overflow situation.
     /// @group flex-layout
-    .k-flex-none                     { flex: none; }
+    .k-flex-none                        { flex: none; }
+    .\!k-flex-none                      { flex: none !important; } // sass-lint:disable-line no-important class-name-format
     /// @name k-flex-grow
     /// @description This is equivalent to `flex-grow: 1`. It defines the ability for a flex item to grow if necessary. It accepts a unitless value that serves as a proportion. It dictates what amount of the available space inside the flex container the item should take up.
     /// @group flex-layout
-    .k-flex-grow                     { flex-grow: 1; }
+    .k-flex-grow                        { flex-grow: 1; }
+    .\!k-flex-grow                      { flex-grow: 1 !important; } // sass-lint:disable-line no-important class-name-format
     /// @name k-flex-grow-0
     /// @description This is equivalent to `flex-grow: 0`. The item will not grow.
     /// @group flex-layout
-    .k-flex-grow-0                   { flex-grow: 0; }
+    .k-flex-grow-0                      { flex-grow: 0; }
+    .\!k-flex-grow-0                    { flex-grow: 0 !important; } // sass-lint:disable-line no-important class-name-format
     /// @name k-flex-shrink
     /// @description This is equivalent to `flex-shrink: 1`. It determines how much the flex item will shrink relative to the rest of the flex items in the flex container when there isn't enough space on the row.
     /// @group flex-layout
-    .k-flex-shrink                   { flex-shrink: 1; }
+    .k-flex-shrink                      { flex-shrink: 1; }
+    .\!k-flex-shrink                    { flex-shrink: 1 !important; } // sass-lint:disable-line no-important class-name-format
     /// @name k-flex-shrink-0
     /// @description This is equivalent to `flex-shrink: 0`. The item will not shrink.
     /// @group flex-layout
-    .k-flex-shrink-0                 { flex-shrink: 0; }
+    .k-flex-shrink-0                    { flex-shrink: 0; }
+    .\!k-flex-shrink-0                  { flex-shrink: 0 !important; } // sass-lint:disable-line no-important class-name-format
     /// @name k-flex-basis-auto
     /// @description This is equivalent to `flex-basis: auto`. It specifies the initial size of the flex item, before any available space is distributed according to the flex factors. It sizes the element according to its size property.
     /// @group flex-layout
-    .k-flex-basis-auto               { flex-basis: auto; }
+    .k-flex-basis-auto                  { flex-basis: auto; }
+    .\!k-flex-basis-auto                { flex-basis: auto !important; } // sass-lint:disable-line no-important class-name-format
     /// @name k-flex-basis-0
     /// @description This is equivalent to `flex-basis: 0`. It specifies the initial size of the flex item, before any available space is distributed according to the flex factors. It disregards the element' size property.
     /// @group flex-layout
-    .k-flex-basis-0                  { flex-basis: 0%; }
+    .k-flex-basis-0                     { flex-basis: 0%; }
+    .\!k-flex-basis-0                   { flex-basis: 0% !important; } // sass-lint:disable-line no-important class-name-format
 
 
     // Flex align
-    .k-align-items-start            { align-items: flex-start; }
-    .k-align-items-end              { align-items: flex-end; }
-    .k-align-items-center           { align-items: center; }
-    .k-align-items-stretch          { align-items: stretch; }
-    .k-align-items-baseline         { align-items: baseline; }
+    .k-align-items-start                { align-items: flex-start; }
+    .\!k-align-items-start              { align-items: flex-start !important; } // sass-lint:disable-line no-important class-name-format
+    .k-align-items-end                  { align-items: flex-end; }
+    .\!k-align-items-end                { align-items: flex-end !important; } // sass-lint:disable-line no-important class-name-format
+    .k-align-items-center               { align-items: center; }
+    .\!k-align-items-center             { align-items: center !important; } // sass-lint:disable-line no-important class-name-format
+    .k-align-items-stretch              { align-items: stretch; }
+    .\!k-align-items-stretch            { align-items: stretch !important; } // sass-lint:disable-line no-important class-name-format
+    .k-align-items-baseline             { align-items: baseline; }
+    .\!k-align-items-baseline           { align-items: baseline !important; } // sass-lint:disable-line no-important class-name-format
 
-    .k-align-content-start          { align-content: flex-start; }
-    .k-align-content-end            { align-content: flex-end; }
-    .k-align-content-center         { align-content: center; }
-    .k-align-content-stretch        { align-content: stretch; }
-    .k-align-content-baseline       { align-content: baseline; }
+    .k-align-content-start              { align-content: flex-start; }
+    .\!k-align-content-start            { align-content: flex-start !important; } // sass-lint:disable-line no-important class-name-format
+    .k-align-content-end                { align-content: flex-end; }
+    .\!k-align-content-end              { align-content: flex-end !important; } // sass-lint:disable-line no-important class-name-format
+    .k-align-content-center             { align-content: center; }
+    .\!k-align-content-center           { align-content: center !important; } // sass-lint:disable-line no-important class-name-format
+    .k-align-content-stretch            { align-content: stretch; }
+    .\!k-align-content-stretch          { align-content: stretch !important; } // sass-lint:disable-line no-important class-name-format
+    .k-align-content-baseline           { align-content: baseline; }
+    .\!k-align-content-baseline         { align-content: baseline !important; } // sass-lint:disable-line no-important class-name-format
 
-    .k-align-self-start             { align-self: flex-start; }
-    .k-align-self-end               { align-self: flex-end; }
-    .k-align-self-center            { align-self: center; }
-    .k-align-self-stretch           { align-self: stretch; }
-    .k-align-self-baseline          { align-self: baseline; }
+    .k-align-self-start                 { align-self: flex-start; }
+    .\!k-align-self-start               { align-self: flex-start !important; } // sass-lint:disable-line no-important class-name-format
+    .k-align-self-end                   { align-self: flex-end; }
+    .\!k-align-self-end                 { align-self: flex-end !important; } // sass-lint:disable-line no-important class-name-format
+    .k-align-self-center                { align-self: center; }
+    .\!k-align-self-center              { align-self: center !important; } // sass-lint:disable-line no-important class-name-format
+    .k-align-self-stretch               { align-self: stretch; }
+    .\!k-align-self-stretch             { align-self: stretch !important; } // sass-lint:disable-line no-important class-name-format
+    .k-align-self-baseline              { align-self: baseline; }
+    .\!k-align-self-baseline            { align-self: baseline !important; } // sass-lint:disable-line no-important class-name-format
 
 
     // Justify content
-    .k-justify-content-start        { justify-content: flex-start; }
-    .k-justify-content-end          { justify-content: flex-end; }
-    .k-justify-content-center       { justify-content: center; }
-    .k-justify-content-between      { justify-content: space-between; }
-    .k-justify-content-around       { justify-content: space-around; }
-    .k-justify-content-evenly       { justify-content: space-evenly; }
-    .k-justify-content-stretch > *  { flex: 1 0 0%; }
+    .k-justify-content-start            { justify-content: flex-start; }
+    .\!k-justify-content-start          { justify-content: flex-start !important; } // sass-lint:disable-line no-important class-name-format
+    .k-justify-content-end              { justify-content: flex-end; }
+    .\!k-justify-content-end            { justify-content: flex-end !important; } // sass-lint:disable-line no-important class-name-format
+    .k-justify-content-center           { justify-content: center; }
+    .\!k-justify-content-center         { justify-content: center !important; } // sass-lint:disable-line no-important class-name-format
+    .k-justify-content-between          { justify-content: space-between; }
+    .\!k-justify-content-between        { justify-content: space-between !important; } // sass-lint:disable-line no-important class-name-format
+    .k-justify-content-around           { justify-content: space-around; }
+    .\!k-justify-content-around         { justify-content: space-around !important; } // sass-lint:disable-line no-important class-name-format
+    .k-justify-content-evenly           { justify-content: space-evenly; }
+    .\!k-justify-content-evenly         { justify-content: space-evenly !important; } // sass-lint:disable-line no-important class-name-format
+    .k-justify-content-stretch > *      { flex: 1 0 0%; }
+    .\!k-justify-content-stretch > *    { flex: 1 0 0% !important; } // sass-lint:disable-line no-important class-name-format
 
 
     // Justify items
-    .k-justify-items-start          { justify-items: flex-start; }
-    .k-justify-items-end            { justify-items: flex-end; }
-    .k-justify-items-center         { justify-items: center; }
-    .k-justify-items-stretch        { justify-items: stretch; }
+    .k-justify-items-start              { justify-items: flex-start; }
+    .\!k-justify-items-start            { justify-items: flex-start !important; } // sass-lint:disable-line no-important class-name-format
+    .k-justify-items-end                { justify-items: flex-end; }
+    .\!k-justify-items-end              { justify-items: flex-end !important; } // sass-lint:disable-line no-important class-name-format
+    .k-justify-items-center             { justify-items: center; }
+    .\!k-justify-items-center           { justify-items: center !important; } // sass-lint:disable-line no-important class-name-format
+    .k-justify-items-stretch            { justify-items: stretch; }
+    .\!k-justify-items-stretch          { justify-items: stretch !important; } // sass-lint:disable-line no-important class-name-format
 
 }
