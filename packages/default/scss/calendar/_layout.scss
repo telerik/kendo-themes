@@ -363,6 +363,9 @@
                 line-height: $calendar-navigation-item-height;
                 cursor: pointer;
                 padding: 0 1em;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: clip;
             }
         }
 
