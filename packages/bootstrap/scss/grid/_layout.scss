@@ -4,6 +4,6 @@
 
     // Grouping header
     .k-grouping-header .k-group-indicator {
-        @include border-radius( $border-radius );
+        @include border-radius( $kendo-border-radius-md );
     }
 }

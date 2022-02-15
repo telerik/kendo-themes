@@ -16,7 +16,7 @@ $orgchart-node-container-gap: $orgchart-spacer !default;
 $orgchart-node-group-padding-y: $orgchart-spacer !default;
 $orgchart-node-group-padding-x: $orgchart-node-group-padding-y !default;
 $orgchart-node-group-border-width: 1px !default;
-$orgchart-node-group-border-radius: $border-radius !default;
+$orgchart-node-group-border-radius: $kendo-border-radius-md !default;
 $orgchart-node-group-bg: if( $dark-theme, $dark, $light) !default;
 $orgchart-node-group-text: $base-text !default;
 $orgchart-node-group-border: $base-border !default;

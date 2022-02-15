@@ -3,7 +3,7 @@ $coloreditor-spacer: map-get( $spacing, 4 ) !default;
 
 $coloreditor-min-width: 328px !default;
 $coloreditor-border-width: 1px !default;
-$coloreditor-border-radius: $border-radius !default;
+$coloreditor-border-radius: $kendo-border-radius-md !default;
 $coloreditor-font-family: $font-family !default;
 $coloreditor-font-size: $font-size !default;
 $coloreditor-line-height: $line-height !default;

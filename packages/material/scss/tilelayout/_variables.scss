@@ -4,7 +4,7 @@ $tilelayout-card-border-width: 1px !default;
 $tilelayout-card-focus-shadow: $card-focus-shadow !default;
 
 $tilelayout-hint-border-width: 1px !default;
-$tilelayout-hint-border-radius: $border-radius !default;
+$tilelayout-hint-border-radius: $kendo-border-radius-md !default;
 
 $tilelayout-bg: if( $dark-theme, $dark, $light) !default;
 

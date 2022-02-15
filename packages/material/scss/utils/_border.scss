@@ -1,9 +1,9 @@
 $utils-border-radius: (
-    default: $border-radius-md,
+    default: $kendo-border-radius-md,
     0: 0,
-    sm: $border-radius-sm,
-    md: $border-radius-md,
-    lg: $border-radius-lg,
+    sm: $kendo-border-radius-sm,
+    md: $kendo-border-radius-md,
+    lg: $kendo-border-radius-lg,
     full: 9999px
 ) !default;
 

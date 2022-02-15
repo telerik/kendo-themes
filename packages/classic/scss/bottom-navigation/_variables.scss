@@ -14,7 +14,7 @@ $bottom-nav-item-padding-y: 0 !default;
 $bottom-nav-item-min-width: 72px !default;
 $bottom-nav-item-max-width: null !default;
 $bottom-nav-item-min-height: calc( #{$icon-size * 2.5} + #{$padding-x * 2} - #{$bottom-nav-padding-x * 2} ) !default;
-$bottom-nav-item-border-radius: $border-radius !default;
+$bottom-nav-item-border-radius: $kendo-border-radius-md !default;
 $bottom-nav-item-gap: 0 map-get( $spacing, 1 ) !default;
 
 $bottom-nav-item-icon-margin-y: map-get( $spacing, 2 ) !default;
