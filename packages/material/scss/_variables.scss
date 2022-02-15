@@ -125,9 +125,10 @@ $padding-x-lg: $padding-x * 1.5 !default;
 $padding-y-lg: $padding-y * 1.5 !default;
 
 /// Border radius for all components.
-$border-radius: 2px !default;
+$border-radius: map-get( $spacing, 1 ) !default;
 $border-radius-sm: $border-radius / 2 !default;
-$border-radius-lg: $border-radius * 2 !default;
+$border-radius-md: $border-radius !default;
+$border-radius-lg: $border-radius * 1.5 !default;
 
 $panel-padding-x: $padding-x !default;
 $panel-padding-y: $padding-y !default;

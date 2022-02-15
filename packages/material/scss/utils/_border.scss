@@ -1,9 +1,9 @@
 $utils-border-radius: (
-    default: map-get( $spacing, 1 ),
+    default: $border-radius-md,
     0: 0,
-    sm: .125rem,
-    md: .25rem,
-    lg: .375rem,
+    sm: $border-radius-sm,
+    md: $border-radius-md,
+    lg: $border-radius-lg,
     full: 9999px
 ) !default;
 
