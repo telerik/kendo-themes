@@ -138,7 +138,7 @@ $kendo-chip-outline-selected-text: $kendo-chip-outline-hover-text !default;
 /// The sizes of the chip list.
 /// @group chip
 $kendo-chip-list-sizes: (
-    sm: map-get( $spacing, 1 ),
+    sm: map-get( $spacing, 1 ) - map-get( $spacing, thin ),
     md: map-get( $spacing, 1 ),
-    lg: map-get( $spacing, 1 )
+    lg: map-get( $spacing, 1 ) + map-get( $spacing, thin )
 ) !default;
