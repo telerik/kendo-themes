@@ -125,10 +125,10 @@ $padding-x-lg: $padding-x * 1.5 !default;
 $padding-y-lg: $padding-y * 1.5 !default;
 
 /// Border radius for all components.
-$border-radius: map-get( $spacing, 1 ) !default;
-$border-radius-sm: $border-radius / 2 !default;
-$border-radius-md: $border-radius !default;
-$border-radius-lg: $border-radius * 1.5 !default;
+$kendo-border-radius: map-get( $spacing, 1 ) !default;
+$kendo-border-radius-sm: $kendo-border-radius / 2 !default;
+$kendo-border-radius-md: $kendo-border-radius !default;
+$kendo-border-radius-lg: $kendo-border-radius * 1.5 !default;
 
 $panel-padding-x: $padding-x !default;
 $panel-padding-y: $padding-y !default;

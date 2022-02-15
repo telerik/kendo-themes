@@ -7,7 +7,7 @@
 
         .k-slider-track,
         .k-slider-selection {
-            @include border-radius( $border-radius );
+            @include border-radius( $kendo-border-radius );
         }
 
         .k-slider-track {

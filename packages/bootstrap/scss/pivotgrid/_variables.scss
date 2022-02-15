@@ -80,7 +80,7 @@ $pivotgrid-configurator-button-size: calc( #{$pivotgrid-line-height * 1em} + #{$
 $pivotgrid-calculated-field-padding-x: $pivotgrid-spacer !default;
 $pivotgrid-calculated-field-padding-y: $pivotgrid-spacer !default;
 $pivotgrid-calculated-field-border-width: 1px !default;
-$pivotgrid-calculated-field-border-radius: $border-radius !default;
+$pivotgrid-calculated-field-border-radius: $kendo-border-radius-md !default;
 $pivotgrid-calculated-field-gap: $pivotgrid-spacer !default;
 
 $pivotgrid-calculated-field-bg: $component-bg !default;

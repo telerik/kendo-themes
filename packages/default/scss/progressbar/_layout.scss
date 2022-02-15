@@ -2,7 +2,7 @@
 
     // Base
     .k-progressbar {
-        @include border-radius( $border-radius );
+        @include border-radius( $kendo-border-radius );
         --kendo-progressbar-progress: 0;
         border-width: $progressbar-border-width;
         border-style: solid;

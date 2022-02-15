@@ -19,7 +19,7 @@ $scheduler-footer-border: null !default;
 $scheduler-footer-gradient: null !default;
 
 $scheduler-event-min-height: 25px !default;
-$scheduler-event-border-radius: $border-radius !default;
+$scheduler-event-border-radius: $kendo-border-radius-md !default;
 $scheduler-event-line-height: calc( #{$scheduler-event-min-height} - (2 * #{$padding-y-sm}) ) !default;
 
 $scheduler-event-bg: $primary !default;
@@ -86,7 +86,7 @@ $scheduler-tooltip-events-gap: $padding-y !default;
 
 $scheduler-tooltip-event-padding-x: $padding-x-sm !default;
 $scheduler-tooltip-event-padding-y: map-get( $spacing, 2 ) !default;
-$scheduler-tooltip-event-border-radius: $border-radius !default;
+$scheduler-tooltip-event-border-radius: $kendo-border-radius-md !default;
 $scheduler-tooltip-event-gap: $padding-x-sm !default;
 
 $scheduler-tooltip-callout-text: $scheduler-tooltip-bg !default;

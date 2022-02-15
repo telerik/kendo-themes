@@ -32,7 +32,7 @@ $calendar-footer-padding-y: map-get( $spacing, 2 ) !default;
 $calendar-cell-padding-x: map-get( $spacing, 1 ) !default;
 $calendar-cell-padding-y: $calendar-cell-padding-x !default;
 $calendar-cell-line-height: $calendar-line-height !default;
-$calendar-cell-border-radius: $border-radius !default;
+$calendar-cell-border-radius: $kendo-border-radius-md !default;
 
 $calendar-header-cell-padding-x: null !default;
 $calendar-header-cell-padding-y: null !default;
