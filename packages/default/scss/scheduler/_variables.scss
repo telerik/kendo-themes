@@ -19,7 +19,7 @@ $scheduler-footer-border: $toolbar-border !default;
 $scheduler-footer-gradient: $toolbar-gradient !default;
 
 $scheduler-event-min-height: 25px !default;
-$scheduler-event-border-radius: $border-radius !default;
+$scheduler-event-border-radius: $border-radius-md !default;
 $scheduler-event-line-height: calc( #{$scheduler-event-min-height} - (2 * #{$padding-y}) ) !default;
 
 $scheduler-event-bg: tint( $selected-bg, 2 ) !default;
@@ -86,7 +86,7 @@ $scheduler-tooltip-events-gap: $padding-y !default;
 
 $scheduler-tooltip-event-padding-x: $padding-x !default;
 $scheduler-tooltip-event-padding-y: $padding-y !default;
-$scheduler-tooltip-event-border-radius: $border-radius !default;
+$scheduler-tooltip-event-border-radius: $border-radius-md !default;
 $scheduler-tooltip-event-gap: $padding-x-sm !default;
 
 $scheduler-tooltip-callout-text: $scheduler-tooltip-bg !default;

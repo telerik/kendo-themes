@@ -25,7 +25,7 @@ $kendo-treeview-item-padding-y: map-get( $spacing, 1 ) !default;
 $kendo-treeview-item-border-width: 0px !default;
 /// Border radius of treeview items.
 /// @group treeview
-$kendo-treeview-item-border-radius: $border-radius !default;
+$kendo-treeview-item-border-radius: $border-radius-md !default;
 
 
 /// The sizes of the treeview.

@@ -76,7 +76,7 @@
     // Panels
     .k-block,
     .k-panel {
-        @include border-radius( $border-radius );
+        @include border-radius( $border-radius-md );
         @include fill(
             $panel-text,
             $panel-bg,
@@ -88,7 +88,7 @@
         box-sizing: border-box;
 
         > .k-header {
-            @include border-top-radius( $border-radius );
+            @include border-top-radius( $border-radius-md );
             @include fill(
                 $header-text,
                 $header-bg,

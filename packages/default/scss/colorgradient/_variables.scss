@@ -3,7 +3,7 @@ $colorgradient-spacer: map-get( $spacing, 3 ) !default;
 
 $colorgradient-width: 272px !default;
 $colorgradient-border-width: 1px !default;
-$colorgradient-border-radius: $border-radius !default;
+$colorgradient-border-radius: $border-radius-md !default;
 $colorgradient-padding-y: $colorgradient-spacer !default;
 $colorgradient-padding-x: $colorgradient-padding-y !default;
 $colorgradient-gap: $colorgradient-spacer !default;
@@ -17,7 +17,7 @@ $colorgradient-border: $component-border !default;
 $colorgradient-focus-border: null !default;
 $colorgradient-focus-shadow: 1px 1px 7px 1px rgba(0, 0, 0, .3) !default;
 
-$colorgradient-canvas-border-radius: $border-radius !default;
+$colorgradient-canvas-border-radius: $border-radius-md !default;
 $colorgradient-canvas-gap: $colorgradient-spacer !default;
 $colorgradient-canvas-rectangle-height: 180px !default;
 

@@ -569,7 +569,7 @@
         box-sizing: border-box;
     }
     .k-spreadsheet-filter {
-        @include border-radius( $border-radius );
+        @include border-radius( $border-radius-md );
         line-height: 1;
         position: absolute;
         cursor: pointer;
