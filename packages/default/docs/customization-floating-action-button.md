@@ -53,7 +53,7 @@ The following table lists the available variables for customization.
 </td>
 <td>
 
-`2px`
+`4px`
 
 </td>
 </tr>
