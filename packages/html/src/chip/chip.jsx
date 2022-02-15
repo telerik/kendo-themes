@@ -144,7 +144,7 @@ ChipStatic.defaultProps = {
     className: '',
 
     size: 'medium',
-    rounded: 'medium',
+    rounded: 'full',
 
     fillMode: 'solid',
     themeColor: 'base'
