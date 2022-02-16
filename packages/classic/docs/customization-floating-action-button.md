@@ -48,7 +48,7 @@ The following table lists the available variables for customization.
     <td>Number</td>
 <td>
 
-`$border-radius`
+`$kendo-border-radius-md`
 
 </td>
 <td>

@@ -30,7 +30,7 @@ The following table lists the available variables for customizing the Bootstrap 
 </thead>
 <tbody>
         <tr>
-    <td>$border-radius</td>
+    <td>$kendo-border-radius</td>
     <td>Number</td>
 <td>
 
@@ -3230,7 +3230,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Number</td>
 <td>
 
-`$border-radius / 2`
+`$kendo-border-radius / 2`
 
 </td>
 <td>
