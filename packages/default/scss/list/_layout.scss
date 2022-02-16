@@ -99,6 +99,14 @@
             right: 0;
         }
     }
+    .k-list-item-text,
+    .k-list-optionlabel {
+        &::before {
+            content: "\200b";
+            width: 0px;
+            overflow: hidden;
+        }
+    }
     .k-list-optionlabel {
         @extend .k-list-item;
     }
