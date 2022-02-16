@@ -26,16 +26,16 @@ The following table lists the available variables for customization.
 </thead>
 <tbody>
         <tr>
-    <td>$border-radius</td>
+    <td>$kendo-border-radius</td>
     <td>Number</td>
 <td>
 
-`2px`
+`map-get( $spacing, 1 )`
 
 </td>
 <td>
 
-`2px`
+`4px`
 
 </td>
 </tr>

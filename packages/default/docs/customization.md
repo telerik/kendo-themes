@@ -30,7 +30,7 @@ The following table lists the available variables for customizing the Default th
 </thead>
 <tbody>
         <tr>
-    <td>$border-radius</td>
+    <td>$kendo-border-radius</td>
     <td>Number</td>
 <td>
 
@@ -3258,7 +3258,7 @@ The following table lists the available variables for customizing the Default th
     <td>Number</td>
 <td>
 
-`$border-radius`
+`$kendo-border-radius-md`
 
 </td>
 <td>
@@ -8143,7 +8143,7 @@ The following table lists the available variables for customizing the Default th
     <td>Number</td>
 <td>
 
-`$border-radius`
+`$kendo-border-radius-md`
 
 </td>
 <td>
@@ -8743,7 +8743,7 @@ The following table lists the available variables for customizing the Default th
     <td>Number</td>
 <td>
 
-`$border-radius`
+`$kendo-border-radius-md`
 
 </td>
 <td>
