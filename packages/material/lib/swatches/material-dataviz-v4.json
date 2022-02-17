@@ -1,8 +1,9 @@
 {
-    "$schema": "https://unpkg.com/@progress/kendo-theme-tasks@1.11.0/lib/schemas/kendo-swatch.json",
+    "$schema": "https://unpkg.com/@progress/kendo-theme-tasks@1.14.0/lib/schemas/kendo-swatch.json",
     "name": "Material Dataviz v4",
     "product": "kendo",
     "base": "@progress/kendo-theme-material",
+    "version": "5.1.2-dev.7",
     "previewColors": [
         "#3f51b5",
         "#2196f3",

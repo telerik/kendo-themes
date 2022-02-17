@@ -1,8 +1,9 @@
 {
-    "$schema": "https://unpkg.com/@progress/kendo-theme-tasks@1.11.0/lib/schemas/kendo-swatch.json",
+    "$schema": "https://unpkg.com/@progress/kendo-theme-tasks@1.14.0/lib/schemas/kendo-swatch.json",
     "name": "Classic Main Dark",
     "product": "kendo",
     "base": "@progress/kendo-theme-classic",
+    "version": "5.1.2-dev.7",
     "previewColors": [
         "#000000",
         "#101010",
