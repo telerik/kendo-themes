@@ -46,7 +46,7 @@
     "dart:watch": "gulp dart:watch",
     "dart:swatches": "gulp dart:swatches",
     "dart:flat": "gulp dart:flat",
-    "prepublishOnly": "echo 'no prebublish for nouvelle theme'",
+    "prepublishOnly": "node ../../scripts/themes-prepublish.js",
     "postpublish": "echo 'no postpublish for nouvelle theme'"
   },
   "dependencies": {
