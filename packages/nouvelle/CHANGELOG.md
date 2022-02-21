@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.2.0](https://github.com/telerik/kendo-themes/compare/v5.1.1...v5.2.0) (2022-02-21)
+
+
+### Bug Fixes
+
+* **input:** conditionally set spinner offset to calculated or auto ([04d5b35](https://github.com/telerik/kendo-themes/commit/04d5b3529870030ac38777be838680c1d7d0e8a5))
+
+
+
+
+
 ## [5.1.1](https://github.com/telerik/kendo-themes/compare/v5.1.0...v5.1.1) (2022-01-24)
 
 

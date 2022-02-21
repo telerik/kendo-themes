@@ -3,6 +3,54 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.2.0](https://github.com/telerik/kendo-themes/compare/v5.1.1...v5.2.0) (2022-02-21)
+
+
+### Bug Fixes
+
+* add important utils for flex-*, justify and align ([5823691](https://github.com/telerik/kendo-themes/commit/582369185dcfb7187519260c84aa672adaee5e2f))
+* add important utils for overflow ([2a1101a](https://github.com/telerik/kendo-themes/commit/2a1101a35103d87db764a93d9347706689a2c150))
+* add important utils for resize ([bd0edd1](https://github.com/telerik/kendo-themes/commit/bd0edd1f9fdf28477344381ce5f403bcf9baf4b6))
+* **button:** font awesome icons in icon button are not properly aligned ([ece376e](https://github.com/telerik/kendo-themes/commit/ece376e5a42b662dea862eef6dee412024b974c8))
+* **button:** use kendo-button-border-radius variable in button styles ([ee6a073](https://github.com/telerik/kendo-themes/commit/ee6a0739efea1e3dc2aa0b428c277ef08b7ca976))
+* **calendar:** long month names overlapping in infinite calendar navi… ([68a97b3](https://github.com/telerik/kendo-themes/commit/68a97b3673efd87889309a6f1d3836b8e9d849c6))
+* change default border radius in bootstrap theme ([f1db475](https://github.com/telerik/kendo-themes/commit/f1db4756884ca50d826f5333f1d586fa12c55531))
+* change default border radius in material theme ([54a6aa9](https://github.com/telerik/kendo-themes/commit/54a6aa900da973fc7663c1a90b2d3e69d941513c))
+* change default border radius in the default theme from 2 to 4 pixels ([9c0ac14](https://github.com/telerik/kendo-themes/commit/9c0ac1432e8245243bd3660e76988a0283324798))
+* **chip:** fix cut text at bottom of chip ([97e1bc4](https://github.com/telerik/kendo-themes/commit/97e1bc4e7a64b31c90912b685b52a230cac2dcbf))
+* **dataviz:** set default barcode height ([cae3bfc](https://github.com/telerik/kendo-themes/commit/cae3bfc73b90568cfff514565ce5264042303277))
+* **dataviz:** set default QR code height ([e648409](https://github.com/telerik/kendo-themes/commit/e648409543aa14566e77405430bda63651a201d1))
+* **docs:** resolve sass variables before docs generation ([80e37c4](https://github.com/telerik/kendo-themes/commit/80e37c4409d673e006d59ed29845c6aa2b5b713c))
+* **floating-label:** fix rtl display when floatiating label is placed inside container with [dir=rtl] ([14e401e](https://github.com/telerik/kendo-themes/commit/14e401ee539ee25596a1693c25b34d0d6b9e2ca2))
+* **form:** set daterangepicker on a single line ([2b0e8d1](https://github.com/telerik/kendo-themes/commit/2b0e8d1d224bd300d34cb025b052875e36084998))
+* **functions:** escape percent character ([44598e6](https://github.com/telerik/kendo-themes/commit/44598e68e7715ab08add6a1484ea4254c4fd8d7b))
+* **html:** add k-focus to menu item instead of menu link ([8ca69f7](https://github.com/telerik/kendo-themes/commit/8ca69f7e191dfbbab4ddff6c819711039d021638))
+* **input:** conditionally set spinner offset to calculated or auto ([04d5b35](https://github.com/telerik/kendo-themes/commit/04d5b3529870030ac38777be838680c1d7d0e8a5))
+* **input:** excess text is not properly cut ([60c5834](https://github.com/telerik/kendo-themes/commit/60c5834992fd77f5516c8a254ea7bd6bfe8b63fe))
+* **input:** missing styles for kendo icons in suffix and prefix ([78d1cae](https://github.com/telerik/kendo-themes/commit/78d1caedeea5cf50817df7e0a075a9ab4352b494))
+* **list:** empty items have a wrong height ([ebd716e](https://github.com/telerik/kendo-themes/commit/ebd716e8ca576719b6d9a574676e0d1d4e7c6c3c))
+* **menu:** set focus styles to menu items via k-focus class for keyboard navigation purposes ([ebbadf5](https://github.com/telerik/kendo-themes/commit/ebbadf5025d7d0903d35ef9384143894ebfd4d25))
+* **notification:** customizable theme variables ([ed8ae78](https://github.com/telerik/kendo-themes/commit/ed8ae7893d41b306e1e00ba0111e47682918329b))
+* **pivotgrid:** add missing padding between icon and text in pivotgrid cells ([e84fe7c](https://github.com/telerik/kendo-themes/commit/e84fe7c60f82419d555e24ff14002f8a245da50c))
+* **pivotgrid:** add vertical borders for the legacy pivot rendeing in Material theme ([c9194cd](https://github.com/telerik/kendo-themes/commit/c9194cdeb861f42a2556510278e1af84d0444f1e))
+* rename border-radius to kendo-border-radius ([54698d6](https://github.com/telerik/kendo-themes/commit/54698d6a96fecbd1cb7123ca9be488f696c8974d))
+* **stepper:** label overflow doesnt work ([78777c0](https://github.com/telerik/kendo-themes/commit/78777c06db83118a2be681e8a86b1da4bfc80313))
+* **textarea:** set display to inline-flex ([75a6da4](https://github.com/telerik/kendo-themes/commit/75a6da4c0490642eff642dce01be212dfe5a6a65))
+* utilize border radius variables in classic theme ([69968ac](https://github.com/telerik/kendo-themes/commit/69968acf604dc9af07677f9b52131b4fcc370966))
+
+
+### Features
+
+* add disabled state variables for input and picker high-level components ([d85b305](https://github.com/telerik/kendo-themes/commit/d85b3058c5015b235213699e67539cce03f3feaa))
+* **filemanager:** add left and right borders to splitbar according to updated designs ([48d0eae](https://github.com/telerik/kendo-themes/commit/48d0eae19bedcf200be9daeabc15a6e09146fd95))
+* **gantt:** add dependency validation tooltip styles ([ebd1031](https://github.com/telerik/kendo-themes/commit/ebd1031d520f40295b9716c6e0fd68a5ac2efd05))
+* **icons:** add new icons to the font ([12d3c17](https://github.com/telerik/kendo-themes/commit/12d3c17f29bf7e203cc61be1a604d026eefbe4ac))
+* improve component options sizings as per desing ([d927a16](https://github.com/telerik/kendo-themes/commit/d927a1684e42d06700ba1fd0bcb830af6508e7ca))
+
+
+
+
+
 ## [5.1.1](https://github.com/telerik/kendo-themes/compare/v5.1.0...v5.1.1) (2022-01-24)
 
 

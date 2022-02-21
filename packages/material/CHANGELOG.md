@@ -3,6 +3,30 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.2.0](https://github.com/telerik/kendo-themes/compare/v5.1.1...v5.2.0) (2022-02-21)
+
+
+### Bug Fixes
+
+* change default border radius in material theme ([54a6aa9](https://github.com/telerik/kendo-themes/commit/54a6aa900da973fc7663c1a90b2d3e69d941513c))
+* **floating-label:** fix rtl display when floatiating label is placed inside container with [dir=rtl] ([14e401e](https://github.com/telerik/kendo-themes/commit/14e401ee539ee25596a1693c25b34d0d6b9e2ca2))
+* **input:** conditionally set spinner offset to calculated or auto ([04d5b35](https://github.com/telerik/kendo-themes/commit/04d5b3529870030ac38777be838680c1d7d0e8a5))
+* **notification:** customizable theme variables ([ed8ae78](https://github.com/telerik/kendo-themes/commit/ed8ae7893d41b306e1e00ba0111e47682918329b))
+* **pivotgrid:** add missing padding between icon and text in pivotgrid cells ([e84fe7c](https://github.com/telerik/kendo-themes/commit/e84fe7c60f82419d555e24ff14002f8a245da50c))
+* **pivotgrid:** add vertical borders for the legacy pivot rendeing in Material theme ([c9194cd](https://github.com/telerik/kendo-themes/commit/c9194cdeb861f42a2556510278e1af84d0444f1e))
+* rename border-radius to kendo-border-radius ([54698d6](https://github.com/telerik/kendo-themes/commit/54698d6a96fecbd1cb7123ca9be488f696c8974d))
+
+
+### Features
+
+* add disabled state variables for input and picker high-level components ([d85b305](https://github.com/telerik/kendo-themes/commit/d85b3058c5015b235213699e67539cce03f3feaa))
+* **gantt:** add dependency validation tooltip styles ([ebd1031](https://github.com/telerik/kendo-themes/commit/ebd1031d520f40295b9716c6e0fd68a5ac2efd05))
+* improve component options sizings as per desing ([d927a16](https://github.com/telerik/kendo-themes/commit/d927a1684e42d06700ba1fd0bcb830af6508e7ca))
+
+
+
+
+
 ## [5.1.1](https://github.com/telerik/kendo-themes/compare/v5.1.0...v5.1.1) (2022-01-24)
 
 
