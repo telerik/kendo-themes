@@ -393,7 +393,10 @@ $placeholder-bg: rgba(0, 0, 0, .1) !default;
 
 
 // Loading
-
+$loading-bg: $component-bg !default;
+$loading-text: currentColor !default;
+$loading-opacity: .3 !default;
+$zindex-loading: 100 !default;
 
 // Table
 
