@@ -1,7 +1,7 @@
 {
   "name": "@progress/kendo-theme-nouvelle",
   "description": "A css variables heavy theme for Kendo UI",
-  "version": "5.1.2-dev.6",
+  "version": "5.1.2-dev.7",
   "author": "Progress",
   "license": "Apache-2.0",
   "keywords": [
@@ -46,10 +46,10 @@
     "dart:watch": "gulp dart:watch",
     "dart:swatches": "gulp dart:swatches",
     "dart:flat": "gulp dart:flat",
-    "prepublishOnly": "echo 'no prebublish for nouvelle theme'",
+    "prepublishOnly": "node ../../scripts/themes-prepublish.js",
     "postpublish": "echo 'no postpublish for nouvelle theme'"
   },
   "dependencies": {
-    "@progress/kendo-theme-default": "^5.1.2-dev.6"
+    "@progress/kendo-theme-default": "^5.1.2-dev.7"
   }
 }

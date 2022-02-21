@@ -33,6 +33,8 @@
 
     // Chip content
     .k-chip-content {
+        padding: .5em 0;
+        margin: -.5em 0;
         min-width: 0;
         display: flex;
         flex-flow: row nowrap;

@@ -609,7 +609,6 @@
     }
 
     // Planned position
-
     .k-gantt-planned {
         .k-gantt-dependencies,
         .k-task-dot,
@@ -640,7 +639,6 @@
     }
 
     // Planned element
-
     .k-task-planned {
         margin: 0 0 $gantt-planned-margin-y;
         line-height: $gantt-planned-line-height;
@@ -673,7 +671,6 @@
     }
 
     // Planned Tooltip
-
     .k-planned-tooltip {
         .k-task-content {
             display: block;
@@ -681,7 +678,6 @@
     }
 
     // Delay offset
-
     .k-task-offset-wrap .k-task-content .k-resize-e {
         display: none;
     }
@@ -711,6 +707,36 @@
     .k-task-single:hover + .k-task-offset .k-resize-handle,
     .k-task-offset:hover .k-resize-handle {
         visibility: visible;
+    }
+
+
+    // Dependency Validation Tooltip
+    .k-gantt-tooltip-validation {
+        max-width: $gantt-validation-tooltip-width;
+        display: block;
+
+        &::before {
+            content: "";
+            width: 4px;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+    .k-gantt-tooltip-validation-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .k-gantt-tooltip-validation-label {
+        display: inline-flex;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .k-gantt-tooltip-validation-value {
+        font-weight: $font-weight-bold;
     }
 }
 
@@ -757,7 +783,8 @@
 
 @include exports("gantt/rtl") {
 
-    .k-rtl {
+    .k-rtl,
+    [dir="rtl"] {
 
         .k-gantt-rows,
         .k-gantt-columns {
@@ -835,6 +862,11 @@
 
         .k-gantt-timeline .k-milestone-wrap .k-task-start {
             right: $gantt-rtl-milestone-dot-start-margin-x;
+        }
+
+        .k-gantt-tooltip-validation::before {
+            left: auto;
+            right: 0;
         }
     }
 }
