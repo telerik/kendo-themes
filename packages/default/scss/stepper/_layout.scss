@@ -68,6 +68,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            flex: none;
             position: relative;
             z-index: 1;
             overflow: visible;
@@ -101,7 +102,7 @@
 
         // Step label
         .k-step-label {
-            max-width: calc(min(100%, 10em));
+            max-width: clamp(100%, 10em, 100%);
             display: inline-flex;
             flex-wrap: wrap;
             align-items: center;
