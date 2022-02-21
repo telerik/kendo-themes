@@ -8,7 +8,7 @@
     "bootstrap": {
       "concurrency": 1,
       "npmClientArgs": [
-        "--no-package-lock"
+        "--no-save"
       ]
     },
     "clean": {
