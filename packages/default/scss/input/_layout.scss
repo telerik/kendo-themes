@@ -62,9 +62,10 @@
         }
     }
 
-    // Input
+    // Input and Textarea
     .k-input {}
-    input.k-input {
+    input.k-input,
+    textarea.k-textarea {
         padding: $kendo-input-padding-y $kendo-input-padding-x;
     }
 
