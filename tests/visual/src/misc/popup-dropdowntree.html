@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en" class="k-no-animations">
+<head>
+    <title>Popup -- Dropdowntree</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+    <script src="../../assets/scripts.js"></script>
+    <script src="../../../../packages/html/dist/index.js"></script>
+
+    <style>
+        .k-animation-container {
+            position: relative;
+            overflow: visible;
+            width: 250px;
+        }
+    </style>
+
+</head>
+<body class="k-body">
+
+    <div id="test-area" class="k-d-grid k-grid-cols-2">
+
+        <span>LTR</span>
+        <span class="k-rtl">RTL</span>
+
+        <section>
+            <div class="k-animation-container k-animation-container-shown">
+                <div class="k-popup k-popup-dropdowntree">
+                    <div class="k-check-all">
+                        <input is="Checkbox"/>
+                        <span class="k-checkbox-label">
+                            Check all
+                        </span>
+                    </div>
+                    <ul is="Treeview">
+                        <li showCheckbox>Furniture
+                            <ul>
+                                <li showCheckbox>Child 1</li>
+                                <li showCheckbox>Child 2</li>
+                                <li showCheckbox>Child 3</li>
+                            </ul>
+                        </li>
+                        <li showCheckbox>Decor
+                            <ul>
+                                <li showCheckbox>Child 1</li>
+                                <li showCheckbox>Child 2</li>
+                                <li showCheckbox>Child 3</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="k-rtl">
+            <div class="k-animation-container k-animation-container-shown">
+                <div class="k-popup k-popup-dropdowntree">
+                    <div class="k-check-all">
+                        <input is="Checkbox"/>
+                        <span class="k-checkbox-label">
+                            Check all
+                        </span>
+                    </div>
+                    <ul is="Treeview">
+                        <li showCheckbox>Furniture
+                            <ul>
+                                <li showCheckbox>Child 1</li>
+                                <li showCheckbox>Child 2</li>
+                                <li showCheckbox>Child 3</li>
+                            </ul>
+                        </li>
+                        <li showCheckbox>Decor
+                            <ul>
+                                <li showCheckbox>Child 1</li>
+                                <li showCheckbox>Child 2</li>
+                                <li showCheckbox>Child 3</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>
