@@ -88,7 +88,7 @@ function TextareaStatic(props) {
     return (
         <InputStatic className={textareaClasses} {...ariaAttr} {...htmlAttributes}>
             {prefix}
-            <InputInnerTextareaStatic {...inputAttributes} />
+            <InputInnerTextareaStatic className="!k-overflow-auto" {...inputAttributes} />
             {suffix}
         </InputStatic>
     );
