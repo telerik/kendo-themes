@@ -8,10 +8,21 @@
     }
     @each $name, $color in $kendo-chip-theme-colors {
         .k-chip-solid-#{$name} {
+            &:hover,
+            &.k-hover {
+                @include fill(
+                    $bg: rgba($color, .16 ),
+                    $color: $color
+                );
+            }
+
             &:focus,
-            &.k-focus {
-                @include box-shadow( none );
-                @include fill( $bg: rgba( $color, .24 ) );
+            &.k-focus,
+            &.k-selected {
+                @include fill(
+                    $bg: rgba( $color, .24 ),
+                    $color: $color
+                );
             }
         }
     }
