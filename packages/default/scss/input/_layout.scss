@@ -47,8 +47,20 @@
         & > * {
             margin: 0;
         }
-    }
 
+        &:disabled,
+        &[disabled],
+        &.k-disabled {
+            @include disabled( $disabled-styling );
+
+            [disabled],
+            .k-disabled,
+            .k-state-disabled {
+                opacity: 1;
+                filter: grayscale(0);
+            }
+        }
+    }
 
     // Input
     .k-input {}
