@@ -80,7 +80,7 @@
         position: relative;
         z-index: 1;
         overflow: hidden;
-        text-overflow: clip;
+        text-overflow: ellipsis;
         -webkit-appearance: none;
 
         // Hide clear icon
@@ -119,7 +119,7 @@
     .k-input-value-text {
         flex: 1;
         overflow: hidden;
-        text-overflow: clip;
+        text-overflow: ellipsis;
     }
     .k-input-value-text::before {
         content: "\200b";

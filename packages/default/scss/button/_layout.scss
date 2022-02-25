@@ -220,6 +220,18 @@
             aspect-ratio: auto;
             flex: none;
 
+            &.k-button-sm {
+                padding: $kendo-button-arrow-padding-y-sm $kendo-button-arrow-padding-x-sm;
+            }
+
+            &.k-button-md {
+                padding: $kendo-button-arrow-padding-y-md $kendo-button-arrow-padding-x-md;
+            }
+
+            &.k-button-lg {
+                padding: $kendo-button-arrow-padding-y-lg $kendo-button-arrow-padding-x-lg;
+            }
+
             .k-button-icon {
                 min-width: 0;
             }

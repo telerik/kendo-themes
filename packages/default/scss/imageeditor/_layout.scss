@@ -65,6 +65,11 @@
         box-sizing: border-box;
         flex: none;
         overflow-y: auto;
+
+        .k-input-inner,
+        .k-input-value-text {
+            text-overflow: clip;
+        }
     }
 
 

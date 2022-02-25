@@ -1,7 +1,7 @@
 {
   "name": "@progress/kendo-theme-bootstrap",
   "description": "Bootstrap theme for Kendo UI",
-  "version": "5.1.2-dev.7",
+  "version": "5.2.1-dev.0",
   "author": "Progress",
   "license": "Apache-2.0",
   "keywords": [
@@ -45,11 +45,11 @@
     "dart:watch": "gulp dart:watch",
     "dart:swatches": "gulp dart:swatches",
     "dart:flat": "gulp dart:flat",
-    "prepublishOnly": "echo 'no prebublish for bootstrap theme'",
+    "prepublishOnly": "node ../../scripts/themes-prepublish.js",
     "postpublish": "echo 'no postpublish for bootstrap theme'"
   },
   "dependencies": {
-    "@progress/kendo-theme-default": "^5.1.2-dev.7",
+    "@progress/kendo-theme-default": "^5.2.1-dev.0",
     "bootstrap": "^5.1.0"
   }
 }
