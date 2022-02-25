@@ -24,6 +24,12 @@
                     $color: $color
                 );
             }
+
+            &:focus,
+            &.k-focus {
+                @include box-shadow( none );
+            }
+
         }
     }
 
