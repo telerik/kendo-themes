@@ -34,6 +34,7 @@ for pkg in $packages
 do
     cd $themes_dir/packages/$pkg
     npm link
+    git checkout package-lock.json
 done
 
 echo ""
