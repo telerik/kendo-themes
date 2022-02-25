@@ -17,19 +17,20 @@
             }
 
             &:focus,
-            &.k-focus,
+            &.k-focus {
+                @include box-shadow( none );
+                @include fill(
+                    $bg: rgba($color, .24),
+                    $color: $color
+                );
+            }
+
             &.k-selected {
                 @include fill(
                     $bg: rgba( $color, .24 ),
                     $color: $color
                 );
             }
-
-            &:focus,
-            &.k-focus {
-                @include box-shadow( none );
-            }
-
         }
     }
 
