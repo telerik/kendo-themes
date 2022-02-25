@@ -357,7 +357,10 @@ $header-gradient: null !default;
 
 
 // Loading
-
+$loading-bg: $component-bg !default;
+$loading-text: currentColor !default;
+$loading-opacity: .3 !default;
+$zindex-loading: 100 !default;
 
 // Placeholder
 $placeholder-line-width: 100% !default;
