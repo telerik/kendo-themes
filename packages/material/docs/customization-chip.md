@@ -219,14 +219,14 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`try-tint( $kendo-chip-base-bg, 92% )`
+`try-tint( $kendo-chip-base-bg, 90% )`
 
 </td>
 <td>
 
-<span class="color-preview" style="background-color: rgba(239, 239, 239, 0.9896)"></span>
+<span class="color-preview" style="background-color: rgba(235, 235, 235, 0.987)"></span>
 
-`rgba(239, 239, 239, 0.9896)`
+`rgba(235, 235, 235, 0.987)`
 
 </td>
 </tr>
