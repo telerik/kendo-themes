@@ -1,10 +1,14 @@
 @include exports("dropdowngrid/layout") {
 
-    // Dropdown grid
+    // DropdownGrid
     .k-dropdown-grid {}
 
+    // DropdowGrid Popup
     .k-dropdowngrid-popup {
         overflow: hidden;
+    }
+    .k-dropdowngrid-popup > .k-data-table {
+        border-width: 0;
     }
 
 }
