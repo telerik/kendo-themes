@@ -60,6 +60,15 @@
                 filter: grayscale(0);
             }
         }
+
+        &::placeholder {
+            color: $kendo-input-placeholder-text;
+            opacity: $kendo-input-placeholder-opacity;
+            user-select: none;
+        }
+        &:-ms-input-placeholder {
+            color: $kendo-input-placeholder-text;
+        }
     }
 
     // Input and Textarea
