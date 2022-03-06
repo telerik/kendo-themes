@@ -185,6 +185,7 @@
     // Year view
     .k-calendar-yearview {
         $_year-cell-size: ( (7 / 4) * $calendar-cell-size);
+        min-height: (3 * $_year-cell-size);
 
         .k-calendar-td {
             width: auto;
@@ -200,6 +201,7 @@
     // Decade view
     .k-calendar-decadeview {
         $_decade-cell-size: ( (7 / 4) * $calendar-cell-size);
+        min-height: (3 * $_decade-cell-size);
 
         .k-calendar-td {
             width: auto;
@@ -215,6 +217,7 @@
     // Century view
     .k-calendar-centuryview {
         $_century-cell-size: ( (7 / 4) * $calendar-cell-size);
+        min-height: (3 * $_century-cell-size);
 
         .k-calendar-td {
             width: auto;
