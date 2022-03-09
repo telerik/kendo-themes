@@ -60,7 +60,7 @@ $kendo-chip-sizes: (
 
 /// The base background color of the chip.
 /// @group chip
-$kendo-chip-base-bg: if( $dark-theme, contrast-wcag($kendo-button-text), $kendo-button-text ) !default;
+$kendo-chip-base-bg: $kendo-button-text !default;
 
 /// Theme colors map for the chip.
 /// @group chip
