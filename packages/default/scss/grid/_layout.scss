@@ -1088,6 +1088,7 @@
         display: flex;
         flex-flow: row nowrap;
         align-items: center;
+        justify-content: inherit;
         overflow: hidden;
 
         > .k-link {
@@ -1096,6 +1097,7 @@
             display: flex;
             flex-flow: row nowrap;
             align-items: center;
+            justify-content: inherit;
             flex: 1;
             overflow: hidden;
 
