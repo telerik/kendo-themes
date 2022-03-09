@@ -52,6 +52,9 @@ $kendo-button-focus-border: $kendo-button-hover-border !default;
 /// @group button
 $kendo-button-focus-gradient: $kendo-button-hover-gradient !default;
 $kendo-button-focus-shadow: 0 0 0 2px rgba( if( $dark-theme, $white, $black ), .08 ) !default;
+/// The base shadow of focused button in button group
+/// @group button
+$kendo-button-group-focus-shadow: null !default;
 
 /// The background color of pressed buttons.
 /// @group button

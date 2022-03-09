@@ -148,6 +148,9 @@ $kendo-button-focus-gradient: null !default;
 /// The base shadow of focused button.
 /// @group button
 $kendo-button-focus-shadow: 0 0 4px 0 rgba( $kendo-button-border, .75 ) !default;
+/// The base shadow of focused button in button group
+/// @group button
+$kendo-button-group-focus-shadow: inset 0 0 0 3px rgba( $kendo-button-border, 0.16 ) !default;
 
 /// The base background of disabled button.
 /// @group button

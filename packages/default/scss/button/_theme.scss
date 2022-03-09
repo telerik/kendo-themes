@@ -277,7 +277,12 @@
 
 
     // Button group
-    .k-button-group {}
+    .k-button-group {
+        > .k-button:focus,
+        > .k-button.k-focus {
+            @include box-shadow( $kendo-button-group-focus-shadow );
+        }
+    }
 
 
     // Split button
