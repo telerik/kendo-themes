@@ -2409,7 +2409,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Color</td>
 <td>
 
-`if( $dark-theme, contrast-wcag($kendo-button-text), $kendo-button-text )`
+`$kendo-button-text`
 
 </td>
 <td>
