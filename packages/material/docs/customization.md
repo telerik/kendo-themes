@@ -1111,6 +1111,24 @@ The following table lists the available variables for customizing the Material t
     </td>
 </tr>
 <tr>
+    <td>$kendo-button-group-focus-shadow</td>
+    <td>Null</td>
+<td>
+
+`null`
+
+</td>
+<td>
+
+`null`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of focused button in button group</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-button-disabled-bg</td>
     <td>Color</td>
 <td>

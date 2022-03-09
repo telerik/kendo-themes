@@ -715,6 +715,24 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-button-group-focus-shadow</td>
+    <td>List</td>
+<td>
+
+`inset 0 0 0 3px rgba( $kendo-button-border, 0.16 )`
+
+</td>
+<td>
+
+`inset 0 0 0 3px rgba(0, 0, 0, 0.16)`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base shadow of focused button in button group</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-button-disabled-bg</td>
     <td>Null</td>
 <td>
