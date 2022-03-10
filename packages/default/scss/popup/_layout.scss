@@ -20,8 +20,6 @@
     }
     .k-animation-container {
         @include border-bottom-radius-only( $kendo-border-radius-md );
-
-        .k-popup {}
     }
 
     .k-animation-container-shown {
