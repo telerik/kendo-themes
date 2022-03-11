@@ -27,7 +27,7 @@
     {inputPrefix && <span class="k-input-suffix">...</span>}
     {showValidationIcon && valid && <span class="k-input-validation-icon k-icon k-i-check"></span>}
     {showValidationIcon && invalid && <span class="k-input-validation-icon k-icon k-i-warning"></span>}
-    {showLoadingIcon && loading && <span class="k-icon k-i-loading"></span>}
+    {showLoadingIcon && loading && <span class="k-input-loading-icon k-icon k-i-loading"></span>}
     {showClearValue && text !== '' && <span class="k-clear-value"><span class="k-icon k-i-x"></span></span>}
     <button type="button" class="k-input-button k-button k-icon-button k-button-{size} k-button-{fillMode} k-button-{fillMode}-base">
         <span class="k-button-icon k-icon k-i-calendar"></span>
