@@ -237,7 +237,7 @@ To create different shapes, button utilizes two classes, one for the base struct
     </button>
     <button
         type="button"
-        class="k-button k-button-solid k-button-md k-button-square k-rounded-circle k-button-solid-base">
+        class="k-button k-button-solid k-button-md k-button-square k-rounded-full k-button-solid-base">
         <span class="k-button-text">Circle</span></button>
     </button>
 </div>

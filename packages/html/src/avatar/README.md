@@ -1,6 +1,6 @@
 ```html
 <!-- default rendering -->
-<div class="k-avatar k-avatar-md k-rounded-circle k-avatar-solid k-avatar-solid-primary">
+<div class="k-avatar k-avatar-md k-rounded-full k-avatar-solid k-avatar-solid-primary">
     <span class="k-avatar-image">
         <img src="../../assets/avatar.jpg" />
     </span>
