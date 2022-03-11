@@ -30,8 +30,8 @@
     {inputPrefix && <span class="k-input-prefix">...</span>}
     <input type={type} class="k-input-inner" value={value} placeholder={placeholder} disabled={disabled} />
     {inputPrefix && <span class="k-input-suffix">...</span>}
-    {showValidationIcon && valid && <span class="k-validation-icon k-icon k-i-check"></span>}
-    {showValidationIcon && invalid && <span class="k-validation-icon k-icon k-i-warning"></span>}
+    {showValidationIcon && valid && <span class="k-input-validation-icon k-icon k-i-check"></span>}
+    {showValidationIcon && invalid && <span class="k-input-validation-icon k-icon k-i-warning"></span>}
     {showLoadingIcon && loading && <span class="k-icon k-i-loading"></span>}
     {showClearValue && text !== '' && <span class="k-clear-value"><span class="k-icon k-i-x"></span></span>}
     {showSpinButton &&

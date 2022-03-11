@@ -28,8 +28,8 @@
         <span class="k-input-value-text">{valueText}<span>
     </span>
     {inputPrefix && <span class="k-input-suffix">...</span>}
-    {showValidationIcon && valid && <span class="k-validation-icon k-icon k-i-check"></span>}
-    {showValidationIcon && invalid && <span class="k-validation-icon k-icon k-i-warning"></span>}
+    {showValidationIcon && valid && <span class="k-input-validation-icon k-icon k-i-check"></span>}
+    {showValidationIcon && invalid && <span class="k-input-validation-icon k-icon k-i-warning"></span>}
     {showLoadingIcon && loading && <span class="k-icon k-i-loading"></span>}
     {showClearValue && text !== '' && <span class="k-clear-value"><span class="k-icon k-i-x"></span></span>}
     <button type="button" class="k-input-button k-button k-icon-button k-button-{size} k-button-{fillMode} k-button-{fillMode}-base">
