@@ -57,7 +57,7 @@ export * from './dateinput/index';
 export * from './datepicker/index';
 export * from './timepicker/index';
 export * from './datetimepicker/index';
-// export * from './dropdowngrid/index';
+export * from './dropdowngrid/index';
 export * from './dropdownlist/index';
 // export * from './dropdowntree/index';
 export * from './maskedtextbox/index';

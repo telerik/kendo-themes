@@ -2401,7 +2401,7 @@ The following table lists the available variables for customizing the Material t
     <td>Color</td>
 <td>
 
-`if( $dark-theme, $white, $kendo-button-text )`
+`$kendo-button-text`
 
 </td>
 <td>
