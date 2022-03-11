@@ -153,6 +153,7 @@
         @extend .k-actions;
         margin-top: 2 * $form-field-margin-top;
         padding: 0;
+        overflow: visible;
     }
 
     // Form Hint/Error Messages

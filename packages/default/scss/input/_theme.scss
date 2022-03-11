@@ -16,6 +16,7 @@
                 $kendo-input-hover-bg,
                 $kendo-input-hover-border
             );
+            @include box-shadow( $kendo-input-hover-shadow );
         }
 
         // Focus
@@ -90,6 +91,7 @@
                 $kendo-picker-hover-border,
                 $kendo-picker-hover-gradient
             );
+            @include box-shadow( $kendo-picker-hover-shadow );
         }
 
         // Focus

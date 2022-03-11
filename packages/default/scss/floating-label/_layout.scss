@@ -30,7 +30,6 @@
             cursor: text;
             transform-origin: left center;
             transition: transform $floating-label-transition, color $floating-label-transition, top $floating-label-transition, left $floating-label-transition;
-            pointer-events: none;
         }
 
         > .k-widget {
@@ -43,6 +42,7 @@
                 top: $floating-label-offset-y;
                 left: $floating-label-offset-x;
                 transform: scale( $floating-label-scale );
+                pointer-events: none;
             }
         }
 
