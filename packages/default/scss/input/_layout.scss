@@ -60,11 +60,21 @@
                 filter: grayscale(0);
             }
         }
+
+        &::placeholder {
+            color: $kendo-input-placeholder-text;
+            opacity: $kendo-input-placeholder-opacity;
+            user-select: none;
+        }
+        &:-ms-input-placeholder {
+            color: $kendo-input-placeholder-text;
+        }
     }
 
-    // Input
+    // Input and Textarea
     .k-input {}
-    input.k-input {
+    input.k-input,
+    textarea.k-textarea {
         padding: $kendo-input-padding-y $kendo-input-padding-x;
     }
 

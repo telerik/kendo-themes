@@ -1,0 +1,12 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# These files are text and should be normalized (Convert crlf => lf)
+*.md text eol=lf
+*.css text eol=lf
+*.scss text eol=lf
+*.js text eol=lf
+*.jsx text eol=lf
+*.ts text eol=lf
+*.tsx text eol=lf
+*.html text eol=lf
