@@ -48,19 +48,6 @@
             margin: 0;
         }
 
-        &:disabled,
-        &[disabled],
-        &.k-disabled {
-            @include disabled( $disabled-styling );
-
-            [disabled],
-            .k-disabled,
-            .k-state-disabled {
-                opacity: 1;
-                filter: grayscale(0);
-            }
-        }
-
         &::placeholder {
             color: $kendo-input-placeholder-text;
             opacity: $kendo-input-placeholder-opacity;
@@ -76,6 +63,18 @@
     input.k-input,
     textarea.k-textarea {
         padding: $kendo-input-padding-y $kendo-input-padding-x;
+
+        &:disabled,
+        &[disabled] {
+            @include disabled( $disabled-styling );
+
+            [disabled] &,
+            .k-disabled &,
+            .k-state-disabled & {
+                opacity: 1;
+                filter: grayscale(0);
+            }
+        }
     }
 
 
@@ -86,6 +85,18 @@
     select.k-picker {
         padding: $kendo-input-padding-y $kendo-input-padding-x;
         appearance: auto;
+
+        &:disabled,
+        &[disabled] {
+            @include disabled( $disabled-styling );
+
+            [disabled] &,
+            .k-disabled &,
+            .k-state-disabled & {
+                opacity: 1;
+                filter: grayscale(0);
+            }
+        }
     }
 
 
