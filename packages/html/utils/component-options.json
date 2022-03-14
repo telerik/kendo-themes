@@ -1,0 +1,535 @@
+{
+    "autocomplete": {
+        "size": {
+            "small": "sm",
+            "medium": "md",
+            "large": "lg"
+        },
+        "rounded": {
+            "small": "sm",
+            "medium": "md",
+            "large": "lg",
+            "full": "full"
+        },
+        "fillMode": {
+            "solid": "solid",
+            "flat": "flat",
+            "outline": "outline",
+            "link": "link"
+        }
+    },
+    "avatar": {
+        "size": {
+            "small": "sm",
+            "medium": "md",
+            "large": "lg"
+        },
+        "rounded": {
+            "small": "sm",
+            "medium": "md",
+            "large": "lg",
+            "full": "full"
+        },
+        "fillMode": {
+            "solid": "solid",
+            "flat": "flat",
+            "outline": "outline",
+            "link": "link"
+        },
+        "themeColor": {
+            "base": "base",
+            "primary": "primary",
+            "secondary": "secondary",
+            "tertiary": "tertiary",
+            "info": "info",
+            "success": "success",
+            "warning": "warning",
+            "error": "error",
+            "dark": "dark",
+            "light": "light",
+            "inverse": "inverse"
+        }
+    },
+    "button": {
+        "size": {
+            "small": "sm",
+            "medium": "md",
+            "large": "lg"
+        },
+        "rounded": {
+            "small": "sm",
+            "medium": "md",
+            "large": "lg",
+            "full": "full"
+        },
+        "fillMode": {
+            "solid": "solid",
+            "flat": "flat",
+            "outline": "outline",
+            "link": "link"
+        },
+        "shape": {
+            "rectangle": "rectangle",
+            "square": "square"
+        },
+        "themeColor": {
+            "base": "base",
+            "primary": "primary",
+            "secondary": "secondary",
+            "tertiary": "tertiary",
+            "info": "info",
+            "success": "success",
+            "warning": "warning",
+            "error": "error",
+            "dark": "dark",
+            "light": "light",
+            "inverse": "inverse"
+        }
+    },
+    "card": {
+        "themeColor": {
+            "base": "base",
+            "primary": "primary",
+            "secondary": "secondary",
+            "tertiary": "tertiary",
+            "info": "info",
+            "success": "success",
+            "warning": "warning",
+            "error": "error",
+            "dark": "dark",
+            "light": "light",
+            "inverse": "inverse"
+        }
+    },
+    "chip": {
+        "size": {
+            "small": "sm",
+            "medium": "md",
+            "large": "lg"
+        },
+        "rounded": {
+            "small": "sm",
+            "medium": "md",
+            "large": "lg",
+            "full": "full"
+        },
+        "fillMode": {
+            "solid": "solid",
+            "flat": "flat",
+            "outline": "outline",
+            "link": "link"
+        },
+        "themeColor": {
+            "base": "base",
+            "primary": "primary",
+            "secondary": "secondary",
+            "tertiary": "tertiary",
+            "info": "info",
+            "success": "success",
+            "warning": "warning",
+            "error": "error",
+            "dark": "dark",
+            "light": "light",
+            "inverse": "inverse"
+        }
+    },
+    "chipList": {
+        "size": {
+            "small": "sm",
+            "medium": "md",
+            "large": "lg"
+        }
+    },
+    "comboBox": {
+        "size": {
+            "small": "sm",
+            "medium": "md",
+            "large": "lg"
+        },
+        "rounded": {
+            "small": "sm",
+            "medium": "md",
+            "large": "lg",
+            "full": "full"
+        },
+        "fillMode": {
+            "solid": "solid",
+            "flat": "flat",
+            "outline": "outline",
+            "link": "link"
+        }
+    },
+    "colorPicker": {
+        "size": {
+            "small": "sm",
+            "medium": "md",
+            "large": "lg"
+        },
+        "rounded": {
+            "small": "sm",
+            "medium": "md",
+            "large": "lg",
+            "full": "full"
+        },
+        "fillMode": {
+            "solid": "solid",
+            "flat": "flat",
+            "outline": "outline",
+            "link": "link"
+        }
+    },
+    "checkBox": {
+        "size": {
+            "small": "sm",
+            "medium": "md",
+            "large": "lg"
+        },
+        "rounded": {
+            "small": "sm",
+            "medium": "md",
+            "large": "lg",
+            "full": "full"
+        }
+    },
+    "dropDownTree": {
+        "size": {
+            "small": "sm",
+            "medium": "md",
+            "large": "lg"
+        },
+        "rounded": {
+            "small": "sm",
+            "medium": "md",
+            "large": "lg",
+            "full": "full"
+        },
+        "fillMode": {
+            "solid": "solid",
+            "flat": "flat",
+            "outline": "outline",
+            "link": "link"
+        }
+    },
+    "dropDownList": {
+        "size": {
+            "small": "sm",
+            "medium": "md",
+            "large": "lg"
+        },
+        "rounded": {
+            "small": "sm",
+            "medium": "md",
+            "large": "lg",
+            "full": "full"
+        },
+        "fillMode": {
+            "solid": "solid",
+            "flat": "flat",
+            "outline": "outline",
+            "link": "link"
+        }
+    },
+    "dropDownGrid": {
+        "size": {
+            "small": "sm",
+            "medium": "md",
+            "large": "lg"
+        },
+        "rounded": {
+            "small": "sm",
+            "medium": "md",
+            "large": "lg",
+            "full": "full"
+        },
+        "fillMode": {
+            "solid": "solid",
+            "flat": "flat",
+            "outline": "outline",
+            "link": "link"
+        }
+    },
+    "dateInput": {
+        "size": {
+            "small": "sm",
+            "medium": "md",
+            "large": "lg"
+        },
+        "rounded": {
+            "small": "sm",
+            "medium": "md",
+            "large": "lg",
+            "full": "full"
+        },
+        "fillMode": {
+            "solid": "solid",
+            "flat": "flat",
+            "outline": "outline",
+            "link": "link"
+        }
+    },
+    "datePicker": {
+        "size": {
+            "small": "sm",
+            "medium": "md",
+            "large": "lg"
+        },
+        "rounded": {
+            "small": "sm",
+            "medium": "md",
+            "large": "lg",
+            "full": "full"
+        },
+        "fillMode": {
+            "solid": "solid",
+            "flat": "flat",
+            "outline": "outline",
+            "link": "link"
+        }
+    },
+    "dateTimePicker": {
+        "size": {
+            "small": "sm",
+            "medium": "md",
+            "large": "lg"
+        },
+        "rounded": {
+            "small": "sm",
+            "medium": "md",
+            "large": "lg",
+            "full": "full"
+        },
+        "fillMode": {
+            "solid": "solid",
+            "flat": "flat",
+            "outline": "outline",
+            "link": "link"
+        }
+    },
+    "multiselect": {
+        "size": {
+            "small": "sm",
+            "medium": "md",
+            "large": "lg"
+        },
+        "rounded": {
+            "small": "sm",
+            "medium": "md",
+            "large": "lg",
+            "full": "full"
+        },
+        "fillMode": {
+            "solid": "solid",
+            "flat": "flat",
+            "outline": "outline",
+            "link": "link"
+        }
+    },
+    "maskedTexbox": {
+        "size": {
+            "small": "sm",
+            "medium": "md",
+            "large": "lg"
+        },
+        "rounded": {
+            "small": "sm",
+            "medium": "md",
+            "large": "lg",
+            "full": "full"
+        },
+        "fillMode": {
+            "solid": "solid",
+            "flat": "flat",
+            "outline": "outline",
+            "link": "link"
+        }
+    },
+    "menuButton": {
+        "size": {
+            "small": "sm",
+            "medium": "md",
+            "large": "lg"
+        },
+        "rounded": {
+            "small": "sm",
+            "medium": "md",
+            "large": "lg",
+            "full": "full"
+        },
+        "fillMode": {
+            "solid": "solid",
+            "flat": "flat",
+            "outline": "outline",
+            "link": "link"
+        },
+        "shape": {
+            "rectangle": "rectangle",
+            "square": "square"
+        },
+        "themeColor": {
+            "base": "base",
+            "primary": "primary",
+            "secondary": "secondary",
+            "tertiary": "tertiary",
+            "info": "info",
+            "success": "success",
+            "warning": "warning",
+            "error": "error",
+            "dark": "dark",
+            "light": "light",
+            "inverse": "inverse"
+        }
+    },
+    "numericTextBox": {
+        "size": {
+            "small": "sm",
+            "medium": "md",
+            "large": "lg"
+        },
+        "rounded": {
+            "small": "sm",
+            "medium": "md",
+            "large": "lg",
+            "full": "full"
+        },
+        "fillMode": {
+            "solid": "solid",
+            "flat": "flat",
+            "outline": "outline",
+            "link": "link"
+        }
+    },
+    "radioButton": {
+        "size": {
+            "small": "sm",
+            "medium": "md",
+            "large": "lg"
+        }
+    },
+    "switch": {
+        "size": {
+            "small": "sm",
+            "medium": "md",
+            "large": "lg"
+        },
+        "rounded": {
+            "small": "sm",
+            "medium": "md",
+            "large": "lg",
+            "full": "full"
+        },
+        "fillMode": {
+            "solid": "solid",
+            "flat": "flat",
+            "outline": "outline",
+            "link": "link"
+        },
+        "trackRounded": {
+            "small": "sm",
+            "medium": "md",
+            "large": "lg",
+            "full": "full"
+        },
+        "thumbRounded": {
+            "small": "sm",
+            "medium": "md",
+            "large": "lg",
+            "full": "full"
+        }
+    },
+    "splitButton": {
+        "size": {
+            "small": "sm",
+            "medium": "md",
+            "large": "lg"
+        },
+        "rounded": {
+            "small": "sm",
+            "medium": "md",
+            "large": "lg",
+            "full": "full"
+        },
+        "fillMode": {
+            "solid": "solid",
+            "flat": "flat",
+            "outline": "outline",
+            "link": "link"
+        },
+        "themeColor": {
+            "base": "base",
+            "primary": "primary",
+            "secondary": "secondary",
+            "tertiary": "tertiary",
+            "info": "info",
+            "success": "success",
+            "warning": "warning",
+            "error": "error",
+            "dark": "dark",
+            "light": "light",
+            "inverse": "inverse"
+        }
+    },
+    "textArea": {
+        "size": {
+            "small": "sm",
+            "medium": "md",
+            "large": "lg"
+        },
+        "rounded": {
+            "small": "sm",
+            "medium": "md",
+            "large": "lg",
+            "full": "full"
+        },
+        "fillMode": {
+            "solid": "solid",
+            "flat": "flat",
+            "outline": "outline",
+            "link": "link"
+        }
+    },
+    "textBox": {
+        "size": {
+            "small": "sm",
+            "medium": "md",
+            "large": "lg"
+        },
+        "rounded": {
+            "small": "sm",
+            "medium": "md",
+            "large": "lg",
+            "full": "full"
+        },
+        "fillMode": {
+            "solid": "solid",
+            "flat": "flat",
+            "outline": "outline",
+            "link": "link"
+        }
+    },
+    "timePicker": {
+        "size": {
+            "small": "sm",
+            "medium": "md",
+            "large": "lg"
+        },
+        "rounded": {
+            "small": "sm",
+            "medium": "md",
+            "large": "lg",
+            "full": "full"
+        },
+        "fillMode": {
+            "solid": "solid",
+            "flat": "flat",
+            "outline": "outline",
+            "link": "link"
+        }
+    },
+    "treeView": {
+        "size": {
+            "small": "sm",
+            "medium": "md",
+            "large": "lg"
+        }
+    }
+}
