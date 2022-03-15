@@ -57,14 +57,14 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
 
-      - name: Push to GitHub
-        run: |
-          git push origin master --tags --quiet > /dev/null 2>&1
-          git push origin master:develop --quiet > /dev/null 2>&1
-
       - name: Mark checks as successful
         run: |
           commit=$(git rev-parse HEAD)
           ./build/mark-checks.sh $commit
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
+
+      - name: Push to GitHub
+        run: |
+          git push origin master --tags --quiet > /dev/null 2>&1
+          git push origin master:develop --quiet > /dev/null 2>&1
