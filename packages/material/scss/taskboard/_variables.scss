@@ -86,7 +86,7 @@ $taskboard-card-selected-shadow: none !default;
 
 $taskboard-card-header-text: $primary !default;
 $taskboard-card-header-focus-text: $primary-darker !default;
-$taskboard-card-header-hover-text: try-darken( $primary-lighter, 25% ) !default;
+$taskboard-card-header-hover-text: $primary-darker !default;
 
 $taskboard-drag-placeholder-border-width: 1px !default;
 $taskboard-drag-placeholder-border-radius: $taskboard-card-border-radius !default;
