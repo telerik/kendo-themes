@@ -37,7 +37,8 @@
             width: auto;
         }
 
-        &.k-state-empty {
+        &.k-state-empty,
+        &.k-empty {
             > .k-label {
                 top: $floating-label-offset-y;
                 left: $floating-label-offset-x;
@@ -71,7 +72,8 @@
                 transform-origin: right center;
             }
 
-            &.k-state-empty {
+            &.k-state-empty,
+            &.k-empty {
                 > .k-label {
                     left: auto;
                     right: $floating-label-offset-x;
