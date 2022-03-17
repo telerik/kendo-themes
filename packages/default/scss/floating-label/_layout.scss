@@ -70,6 +70,7 @@
 
             > .k-label {
                 transform-origin: right center;
+                transition: transform $floating-label-transition, color $floating-label-transition, top $floating-label-transition, right $floating-label-transition;
             }
 
             &.k-state-empty,
@@ -86,7 +87,7 @@
                 left: auto;
                 right: $floating-label-focus-offset-x;
             }
-            &:focus-within {
+            &:focus-within > .k-label {
                 left: auto;
                 right: $floating-label-focus-offset-x;
             }
