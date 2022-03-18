@@ -60,6 +60,7 @@ const booleanAttr = new Set([
     'active',
     'readonly',
     'disabled',
+    'empty',
 
     'checked',
     'indeterminate',
