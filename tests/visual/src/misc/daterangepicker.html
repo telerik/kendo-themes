@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en" class="k-no-animations">
+<head>
+    <title>DateRangePicker</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+    <script src="../../assets/scripts.js"></script>
+    <script src="../../../../packages/html/dist/index.js"></script>
+
+    <style>
+        .k-daterangepicker {
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="k-body">
+
+    <div id="test-area" class="k-d-grid k-grid-cols-2">
+
+        <span>DateRangePicker</span>
+        <span>DateRangePicker RTL</span>
+
+        <!-- normal -->
+        <div>
+            <span is="DateRangePicker"></span>
+        </div>
+        <div dir="rtl">
+            <span is="DateRangePicker"></span>
+        </div>
+
+        <!-- disabled -->
+        <span>DateRangePicker Disabled</span>
+        <span>DateRangePicker Disabled RTL</span>
+
+        <div>
+            <span is="DateRangePicker" disabled></span>
+        </div>
+        <div dir="rtl">
+            <span is="DateRangePicker" disabled></span>
+        </div>
+
+        <!-- flat -->
+        <span>DateRangePicker Flat</span>
+        <span>DateRangePicker Flat RTL</span>
+
+        <div>
+            <span is="DateRangePicker" fillmode="flat"></span>
+        </div>
+        <div dir="rtl">
+            <span is="DateRangePicker" fillmode="flat"></span>
+        </div>
+
+         <!-- outline -->
+         <span>DateRangePicker Outline</span>
+         <span>DateRangePicker Outline RTL</span>
+
+         <div>
+             <span is="DateRangePicker" fillmode="outline"></span>
+         </div>
+         <div dir="rtl">
+             <span is="DateRangePicker" fillmode="outline"></span>
+         </div>
+
+    </div>
+
+</body>
+</html>
