@@ -23,4 +23,4 @@ $dropzone-hint-text: null !default;
 
 $dropzone-note-font-size: $font-size-sm !default;
 $dropzone-note-spacing: null !default;
-$dropzone-note-text: try-tint( $dropzone-text, 4 ) !default;
+$dropzone-note-text: $subtle-text !default;

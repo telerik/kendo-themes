@@ -31,6 +31,12 @@
     .k-actionsheet-item {}
 
 
+    // Actionsheet item description
+    .k-actionsheet-item-description {
+        @include fill( $color: $actionsheet-item-description-text );
+    }
+
+
     // Actionsheet action
     .k-actionsheet-action {
 
