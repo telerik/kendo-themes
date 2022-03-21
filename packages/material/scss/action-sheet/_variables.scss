@@ -44,8 +44,9 @@ $actionsheet-item-icon-size: null !default;
 
 $actionsheet-item-title-font-weight: null !default;
 $actionsheet-item-title-text-transform: null !default;
+
 $actionsheet-item-description-font-size: .875em !default;
-$actionsheet-item-description-opacity: .75 !default;
+$actionsheet-item-description-text: $subtle-text !default;
 
 $actionsheet-item-hover-bg: rgba( black, .04 ) !default;
 $actionsheet-item-hover-text: null !default;
