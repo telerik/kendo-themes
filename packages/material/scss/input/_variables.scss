@@ -77,6 +77,10 @@ $kendo-input-disabled-border: rgba( $component-border, (alpha( $component-border
 $kendo-input-disabled-gradient: null !default;
 $kendo-input-disabled-shadow: null !default;
 
+$kendo-input-outline-bg: null !default;
+$kendo-input-outline-text: null !default;
+$kendo-input-outline-border: null !default;
+
 $kendo-picker-bg: $kendo-input-bg !default;
 $kendo-picker-text: $kendo-input-text !default;
 $kendo-picker-border: $kendo-input-border !default;
@@ -100,6 +104,10 @@ $kendo-picker-disabled-text: $kendo-input-disabled-text !default;
 $kendo-picker-disabled-border: $kendo-input-disabled-border !default;
 $kendo-picker-disabled-gradient: null !default;
 $kendo-picker-disabled-shadow: null !default;
+
+$kendo-picker-outline-bg: null !default;
+$kendo-picker-outline-text: null !default;
+$kendo-picker-outline-border: null !default;
 
 $kendo-input-placeholder-text: $subtle-text !default;
 $kendo-input-placeholder-opacity: 1 !default;

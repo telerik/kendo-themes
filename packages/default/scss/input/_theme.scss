@@ -148,4 +148,20 @@
         }
     }
 
+    // Outline
+    .k-input-outline {
+        @include fill (
+            $kendo-input-outline-text,
+            $kendo-input-outline-bg,
+            $kendo-input-outline-border
+        );
+    }
+
+    .k-picker-outline {
+        @include fill (
+            $kendo-picker-outline-text,
+            $kendo-picker-outline-bg,
+            $kendo-picker-outline-border
+        );
+    }
 }
