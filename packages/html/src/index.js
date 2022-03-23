@@ -51,6 +51,10 @@ export * from './radio/index';
 // export * from './progressbar/index';
 // export * from './slider/index';
 
+// Form requirements
+export * from './calendar/index';
+export * from './multiviewcalendar/index';
+
 // Augmented inputs
 export * from './autocomplete/index';
 export * from './colorpalette/index';

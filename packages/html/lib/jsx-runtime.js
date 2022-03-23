@@ -52,7 +52,21 @@ const attrMap = {
     contenttemplate: 'contentTemplate',
 
     // ColorPalette
-    tilesize: 'tileSize'
+    tilesize: 'tileSize',
+
+    // Calendar
+    calendarheadertext: 'calendarHeaderText',
+    headercell: 'headerCell',
+    othermonth: 'otherMonth',
+    showothermonth: 'showOtherMonth',
+    showtoday: 'showToday',
+    showcalendarfooter: 'showCalendarFooter',
+    calendarview: 'calendarView',
+    viewscount: 'viewsCount',
+    verticalcalendar: 'verticalCalendar',
+    showweek: 'showWeek',
+    weekcell: 'weekCell',
+    showcalendarcaption: 'showCalendarCaption',
 };
 
 const booleanAttr = new Set([
@@ -96,6 +110,18 @@ const booleanAttr = new Set([
     'showArrow',
 
     'showAvatar',
+
+    'headerCell',
+    'weekend',
+    'today',
+    'otherMonth',
+    'showOtherMonth',
+    'showToday',
+    'showCalendarFooter',
+    'verticalCalendar',
+    'showWeek',
+    'weekCell',
+    'showCalendarCaption',
 
     'aria'
 ]);
