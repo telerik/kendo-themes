@@ -163,5 +163,14 @@
             $kendo-picker-outline-bg,
             $kendo-picker-outline-border
         );
+
+        &:hover,
+        &.k-hover {
+            @include fill (
+                $kendo-picker-outline-hover-text,
+                $kendo-picker-outline-hover-bg,
+                $kendo-picker-outline-hover-border
+            );
+        }
     }
 }
