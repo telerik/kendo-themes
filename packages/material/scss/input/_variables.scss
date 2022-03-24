@@ -105,9 +105,13 @@ $kendo-picker-disabled-border: $kendo-input-disabled-border !default;
 $kendo-picker-disabled-gradient: null !default;
 $kendo-picker-disabled-shadow: null !default;
 
-$kendo-picker-outline-bg: null !default;
+$kendo-picker-outline-bg: transparent !default;
 $kendo-picker-outline-text: null !default;
 $kendo-picker-outline-border: null !default;
+
+$kendo-picker-outline-hover-bg: null !default;
+$kendo-picker-outline-hover-text: null !default;
+$kendo-picker-outline-hover-border: null !default;
 
 $kendo-input-placeholder-text: $subtle-text !default;
 $kendo-input-placeholder-opacity: 1 !default;
