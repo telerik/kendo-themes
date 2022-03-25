@@ -179,6 +179,16 @@
             }
         },
         {
+            "name": "Inputs",
+            "variables": {
+                "kendo-input-clear-value-opacity": {
+                    "name": "Input clear value button opacity",
+                    "type": "number",
+                    "value": "80%"
+                }
+            }
+        },
+        {
             "name": "Dataviz",
             "variables": {
                 "series-a": {
