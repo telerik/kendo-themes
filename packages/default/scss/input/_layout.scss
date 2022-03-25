@@ -347,6 +347,11 @@
             padding-left: 0 !important; // sass-lint:disable-line no-important
             padding-right: 0 !important; // sass-lint:disable-line no-important
         }
+
+        &:focus,
+        &.k-focus {
+            @include border-radius( $kendo-input-flat-border-radius !important ); // sass-lint:disable-line no-important
+        }
     }
 
     .k-input-outline {
