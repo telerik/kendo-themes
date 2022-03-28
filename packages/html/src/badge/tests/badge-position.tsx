@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { Badge } from '../badge';
 
 const root = ReactDOM.createRoot(
     document.getElementById('app') as HTMLElement
@@ -33,36 +34,36 @@ root.render(
 
             <span>Inline</span>
             <div className="k-badge-container">
-                <span className="k-badge k-badge-md k-badge-solid k-badge-primary">Rect</span>
+                <Badge>Rect</Badge>
             </div>
             <div className="k-badge-container">
-                <span className="k-badge k-badge-md k-badge-solid k-badge-primary k-badge-rounded">Round</span>
+                <Badge rounded="medium">Round</Badge>
             </div>
             <div className="k-badge-container">
-                <span className="k-badge k-badge-md k-badge-solid k-badge-primary k-badge-pill">Pill</span>
+                <Badge rounded="full">Pill</Badge>
             </div>
             <div className="k-badge-container">
-                <span className="k-badge k-badge-md k-badge-solid k-badge-primary k-badge-circle">99+</span>
+                <Badge rounded="full">1</Badge>
             </div>
             <div className="k-badge-container">
-                <span className="k-badge k-badge-md k-badge-solid k-badge-primary k-badge-dot"></span>
+                <Badge rounded="full"></Badge>
             </div>
 
             <span>^ RTL</span>
             <div className="k-badge-container k-rtl">
-                <span className="k-badge k-badge-md k-badge-outline k-badge-primary">Rect</span>
+                <Badge fillMode="outline">Rect</Badge>
             </div>
             <div className="k-badge-container k-rtl">
-                <span className="k-badge k-badge-md k-badge-outline k-badge-primary k-badge-rounded">Round</span>
+                <Badge fillMode="outline" rounded="medium">Round</Badge>
             </div>
             <div className="k-badge-container k-rtl">
-                <span className="k-badge k-badge-md k-badge-outline k-badge-primary k-badge-pill">Pill</span>
+                <Badge fillMode="outline" rounded="full">Pill</Badge>
             </div>
             <div className="k-badge-container k-rtl">
-                <span className="k-badge k-badge-md k-badge-outline k-badge-primary k-badge-circle">99+</span>
+                <Badge fillMode="outline" rounded="full">1</Badge>
             </div>
             <div className="k-badge-container k-rtl">
-                <span className="k-badge k-badge-md k-badge-outline k-badge-primary k-badge-dot"></span>
+                <Badge fillMode="outline" rounded="full"></Badge>
             </div>
 
             <span className="col-6"></span>
@@ -74,102 +75,102 @@ root.render(
             <span>bottom end</span>
             <span></span>
 
-
             <span>Inside</span>
             <div className="k-badge-container">
-                <span className="k-badge k-badge-md k-badge-solid k-badge-primary k-badge-rounded k-badge-inside k-top-start">Rect</span>
+                <Badge rounded="medium" position="inside" align="top-start">Rect</Badge>
             </div>
             <div className="k-badge-container">
-                <span className="k-badge k-badge-md k-badge-solid k-badge-primary k-badge-rounded k-badge-inside k-top-end">Rect</span>
+                <Badge rounded="medium" position="inside" align="top-end">Rect</Badge>
             </div>
             <div className="k-badge-container">
-                <span className="k-badge k-badge-md k-badge-solid k-badge-primary k-badge-rounded k-badge-inside k-bottom-start">Rect</span>
+                <Badge rounded="medium" position="inside" align="bottom-start">Rect</Badge>
             </div>
             <div className="k-badge-container">
-                <span className="k-badge k-badge-md k-badge-solid k-badge-primary k-badge-rounded k-badge-inside k-bottom-end">Rect</span>
+                <Badge rounded="medium" position="inside" align="bottom-end">Rect</Badge>
             </div>
             <span></span>
 
             <span>Edge</span>
             <div className="k-badge-container">
-                <span className="k-badge k-badge-md k-badge-solid k-badge-primary k-badge-rounded k-badge-edge k-top-start">Rect</span>
+                <Badge rounded="medium" position="edge" align="top-start">Rect</Badge>
             </div>
             <div className="k-badge-container">
-                <span className="k-badge k-badge-md k-badge-solid k-badge-primary k-badge-rounded k-badge-edge k-top-end">Rect</span>
+                <Badge rounded="medium" position="edge" align="top-end">Rect</Badge>
             </div>
             <div className="k-badge-container">
-                <span className="k-badge k-badge-md k-badge-solid k-badge-primary k-badge-rounded k-badge-edge k-bottom-start">Rect</span>
+                <Badge rounded="medium" position="edge" align="bottom-start">Rect</Badge>
             </div>
             <div className="k-badge-container">
-                <span className="k-badge k-badge-md k-badge-solid k-badge-primary k-badge-rounded k-badge-edge k-bottom-end">Rect</span>
+                <Badge rounded="medium" position="edge" align="bottom-end">Rect</Badge>
             </div>
             <span></span>
 
-            <span className="col-6">{' '}</span>
+            <span className="col-6"></span>
 
             <span>Outside</span>
             <div className="k-badge-container">
-                <span className="k-badge k-badge-md k-badge-solid k-badge-primary k-badge-rounded k-badge-outside k-top-start">Rect</span>
+                <Badge rounded="medium" position="outside" align="top-start">Rect</Badge>
             </div>
             <div className="k-badge-container">
-                <span className="k-badge k-badge-md k-badge-solid k-badge-primary k-badge-rounded k-badge-outside k-top-end">Rect</span>
+                <Badge rounded="medium" position="outside" align="top-end">Rect</Badge>
             </div>
             <div className="k-badge-container">
-                <span className="k-badge k-badge-md k-badge-solid k-badge-primary k-badge-rounded k-badge-outside k-bottom-start">Rect</span>
+                <Badge rounded="medium" position="outside" align="bottom-start">Rect</Badge>
             </div>
             <div className="k-badge-container">
-                <span className="k-badge k-badge-md k-badge-solid k-badge-primary k-badge-rounded k-badge-outside k-bottom-end">Rect</span>
+                <Badge rounded="medium" position="outside" align="bottom-end">Rect</Badge>
             </div>
             <span></span>
 
-            <span className="col-6">{' '}</span>
+            <span className="col-6"></span>
 
             <span>Inside RTL</span>
             <div className="k-badge-container k-rtl">
-                <span className="k-badge k-badge-md k-badge-solid k-badge-primary k-badge-rounded k-badge-inside k-top-start">Rect</span>
+                <Badge rounded="medium" position="inside" align="top-start">Rect</Badge>
             </div>
             <div className="k-badge-container k-rtl">
-                <span className="k-badge k-badge-md k-badge-solid k-badge-primary k-badge-rounded k-badge-inside k-top-end">Rect</span>
+                <Badge rounded="medium" position="inside" align="top-end">Rect</Badge>
             </div>
             <div className="k-badge-container k-rtl">
-                <span className="k-badge k-badge-md k-badge-solid k-badge-primary k-badge-rounded k-badge-inside k-bottom-start">Rect</span>
+                <Badge rounded="medium" position="inside" align="bottom-start">Rect</Badge>
             </div>
             <div className="k-badge-container k-rtl">
-                <span className="k-badge k-badge-md k-badge-solid k-badge-primary k-badge-rounded k-badge-inside k-bottom-end">Rect</span>
+                <Badge rounded="medium" position="inside" align="bottom-end">Rect</Badge>
             </div>
             <span></span>
 
             <span>Edge RTL</span>
             <div className="k-badge-container k-rtl">
-                <span className="k-badge k-badge-md k-badge-solid k-badge-primary k-badge-rounded k-badge-edge k-top-start">Rect</span>
+                <Badge rounded="medium" position="edge" align="top-start">Rect</Badge>
             </div>
             <div className="k-badge-container k-rtl">
-                <span className="k-badge k-badge-md k-badge-solid k-badge-primary k-badge-rounded k-badge-edge k-top-end">Rect</span>
+                <Badge rounded="medium" position="edge" align="top-end">Rect</Badge>
             </div>
             <div className="k-badge-container k-rtl">
-                <span className="k-badge k-badge-md k-badge-solid k-badge-primary k-badge-rounded k-badge-edge k-bottom-start">Rect</span>
+                <Badge rounded="medium" position="edge" align="bottom-start">Rect</Badge>
             </div>
             <div className="k-badge-container k-rtl">
-                <span className="k-badge k-badge-md k-badge-solid k-badge-primary k-badge-rounded k-badge-edge k-bottom-end">Rect</span>
+                <Badge rounded="medium" position="edge" align="bottom-end">Rect</Badge>
             </div>
             <span></span>
 
-            <span className="col-6">{' '}</span>
+            <span className="col-6"></span>
 
             <span>Outside RTL</span>
             <div className="k-badge-container k-rtl">
-                <span className="k-badge k-badge-md k-badge-solid k-badge-primary k-badge-rounded k-badge-outside k-top-start">Rect</span>
+                <Badge rounded="medium" position="outside" align="top-start">Rect</Badge>
             </div>
             <div className="k-badge-container k-rtl">
-                <span className="k-badge k-badge-md k-badge-solid k-badge-primary k-badge-rounded k-badge-outside k-top-end">Rect</span>
+                <Badge rounded="medium" position="outside" align="top-end">Rect</Badge>
             </div>
             <div className="k-badge-container k-rtl">
-                <span className="k-badge k-badge-md k-badge-solid k-badge-primary k-badge-rounded k-badge-outside k-bottom-start">Rect</span>
+                <Badge rounded="medium" position="outside" align="bottom-start">Rect</Badge>
             </div>
             <div className="k-badge-container k-rtl">
-                <span className="k-badge k-badge-md k-badge-solid k-badge-primary k-badge-rounded k-badge-outside k-bottom-end">Rect</span>
+                <Badge rounded="medium" position="outside" align="bottom-end">Rect</Badge>
             </div>
             <span></span>
+
         </div>
     </>
 );

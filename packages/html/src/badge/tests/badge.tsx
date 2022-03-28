@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { Badge } from '../badge';
 
 const root = ReactDOM.createRoot(
     document.getElementById('app') as HTMLElement
@@ -18,213 +19,208 @@ root.render(
 
 
             <span>Primary</span>
-            <span><span className="k-badge k-badge-md k-badge-solid k-badge-primary">Rectangle</span></span>
-            <span><span className="k-badge k-badge-md k-badge-solid k-badge-primary"></span></span>
-            <span><span className="k-badge k-badge-md k-badge-solid k-badge-primary k-badge-rounded">Rounded</span></span>
-            <span><span className="k-badge k-badge-md k-badge-solid k-badge-primary k-badge-rounded"></span></span>
-            <span><span className="k-badge k-badge-md k-badge-solid k-badge-primary k-badge-pill">Pill</span></span>
-            <span><span className="k-badge k-badge-md k-badge-solid k-badge-primary k-badge-pill"></span></span>
-            <span><span className="k-badge k-badge-md k-badge-solid k-badge-primary k-badge-circle">99+</span></span>
-            <span><span className="k-badge k-badge-md k-badge-solid k-badge-primary k-badge-dot"></span></span>
+            <span><Badge>Rectangle</Badge></span>
+            <span><Badge></Badge></span>
+            <span><Badge rounded="medium">Rounded</Badge></span>
+            <span><Badge rounded="medium"></Badge></span>
+            <span><Badge rounded="full">Pill</Badge></span>
+            <span><Badge rounded="full"></Badge></span>
+            <span><Badge rounded="full">1</Badge></span>
+            <span><Badge rounded="full"></Badge></span>
 
             <span>^ outline</span>
-            <span><span className="k-badge k-badge-md k-badge-outline k-badge-primary">Rectangle</span></span>
-            <span><span className="k-badge k-badge-md k-badge-outline k-badge-primary"></span></span>
-            <span><span className="k-badge k-badge-md k-badge-outline k-badge-primary k-badge-rounded">Rounded</span></span>
-            <span><span className="k-badge k-badge-md k-badge-outline k-badge-primary k-badge-rounded"></span></span>
-            <span><span className="k-badge k-badge-md k-badge-outline k-badge-primary k-badge-pill">Pill</span></span>
-            <span><span className="k-badge k-badge-md k-badge-outline k-badge-primary k-badge-pill"></span></span>
-            <span><span className="k-badge k-badge-md k-badge-outline k-badge-primary k-badge-circle">99+</span></span>
-            <span><span className="k-badge k-badge-md k-badge-outline k-badge-primary k-badge-dot"></span></span>
-
+            <span><Badge fillMode="outline">Rectangle</Badge></span>
+            <span><Badge fillMode="outline"></Badge></span>
+            <span><Badge fillMode="outline" rounded="medium">Rounded</Badge></span>
+            <span><Badge fillMode="outline" rounded="medium"></Badge></span>
+            <span><Badge fillMode="outline" rounded="full">Pill</Badge></span>
+            <span><Badge fillMode="outline" rounded="full"></Badge></span>
+            <span><Badge fillMode="outline" rounded="full">1</Badge></span>
+            <span><Badge fillMode="outline" rounded="full"></Badge></span>
 
             <span>Secondary</span>
-            <span><span className="k-badge k-badge-md k-badge-solid k-badge-secondary">Rectangle</span></span>
-            <span><span className="k-badge k-badge-md k-badge-solid k-badge-secondary"></span></span>
-            <span><span className="k-badge k-badge-md k-badge-solid k-badge-secondary k-badge-rounded">Rounded</span></span>
-            <span><span className="k-badge k-badge-md k-badge-solid k-badge-secondary k-badge-rounded"></span></span>
-            <span><span className="k-badge k-badge-md k-badge-solid k-badge-secondary k-badge-pill">Pill</span></span>
-            <span><span className="k-badge k-badge-md k-badge-solid k-badge-secondary k-badge-pill"></span></span>
-            <span><span className="k-badge k-badge-md k-badge-solid k-badge-secondary k-badge-circle">99+</span></span>
-            <span><span className="k-badge k-badge-md k-badge-solid k-badge-secondary k-badge-dot"></span></span>
+            <span><Badge themeColor="secondary">Rectangle</Badge></span>
+            <span><Badge themeColor="secondary"></Badge></span>
+            <span><Badge themeColor="secondary" rounded="medium">Rounded</Badge></span>
+            <span><Badge themeColor="secondary" rounded="medium"></Badge></span>
+            <span><Badge themeColor="secondary" rounded="full">Pill</Badge></span>
+            <span><Badge themeColor="secondary" rounded="full"></Badge></span>
+            <span><Badge themeColor="secondary" rounded="full">1</Badge></span>
+            <span><Badge themeColor="secondary" rounded="full"></Badge></span>
 
             <span>^ outline</span>
-            <span><span className="k-badge k-badge-md k-badge-outline k-badge-secondary">Rectangle</span></span>
-            <span><span className="k-badge k-badge-md k-badge-outline k-badge-secondary"></span></span>
-            <span><span className="k-badge k-badge-md k-badge-outline k-badge-secondary k-badge-rounded">Rounded</span></span>
-            <span><span className="k-badge k-badge-md k-badge-outline k-badge-secondary k-badge-rounded"></span></span>
-            <span><span className="k-badge k-badge-md k-badge-outline k-badge-secondary k-badge-pill">Pill</span></span>
-            <span><span className="k-badge k-badge-md k-badge-outline k-badge-secondary k-badge-pill"></span></span>
-            <span><span className="k-badge k-badge-md k-badge-outline k-badge-secondary k-badge-circle">99+</span></span>
-            <span><span className="k-badge k-badge-md k-badge-outline k-badge-secondary k-badge-dot"></span></span>
-
+            <span><Badge fillMode="outline" themeColor="secondary">Rectangle</Badge></span>
+            <span><Badge fillMode="outline" themeColor="secondary"></Badge></span>
+            <span><Badge fillMode="outline" themeColor="secondary" rounded="medium">Rounded</Badge></span>
+            <span><Badge fillMode="outline" themeColor="secondary" rounded="medium"></Badge></span>
+            <span><Badge fillMode="outline" themeColor="secondary" rounded="full">Pill</Badge></span>
+            <span><Badge fillMode="outline" themeColor="secondary" rounded="full"></Badge></span>
+            <span><Badge fillMode="outline" themeColor="secondary" rounded="full">1</Badge></span>
+            <span><Badge fillMode="outline" themeColor="secondary" rounded="full"></Badge></span>
 
             <span>Tertiary</span>
-            <span><span className="k-badge k-badge-md k-badge-solid k-badge-tertiary">Rectangle</span></span>
-            <span><span className="k-badge k-badge-md k-badge-solid k-badge-tertiary"></span></span>
-            <span><span className="k-badge k-badge-md k-badge-solid k-badge-tertiary k-badge-rounded">Rounded</span></span>
-            <span><span className="k-badge k-badge-md k-badge-solid k-badge-tertiary k-badge-rounded"></span></span>
-            <span><span className="k-badge k-badge-md k-badge-solid k-badge-tertiary k-badge-pill">Pill</span></span>
-            <span><span className="k-badge k-badge-md k-badge-solid k-badge-tertiary k-badge-pill"></span></span>
-            <span><span className="k-badge k-badge-md k-badge-solid k-badge-tertiary k-badge-circle">99+</span></span>
-            <span><span className="k-badge k-badge-md k-badge-solid k-badge-tertiary k-badge-dot"></span></span>
+            <span><Badge themeColor="tertiary">Rectangle</Badge></span>
+            <span><Badge themeColor="tertiary"></Badge></span>
+            <span><Badge themeColor="tertiary" rounded="medium">Rounded</Badge></span>
+            <span><Badge themeColor="tertiary" rounded="medium"></Badge></span>
+            <span><Badge themeColor="tertiary" rounded="full">Pill</Badge></span>
+            <span><Badge themeColor="tertiary" rounded="full"></Badge></span>
+            <span><Badge themeColor="tertiary" rounded="full">1</Badge></span>
+            <span><Badge themeColor="tertiary" rounded="full"></Badge></span>
 
             <span>^ outline</span>
-            <span><span className="k-badge k-badge-md k-badge-outline k-badge-tertiary">Rectangle</span></span>
-            <span><span className="k-badge k-badge-md k-badge-outline k-badge-tertiary"></span></span>
-            <span><span className="k-badge k-badge-md k-badge-outline k-badge-tertiary k-badge-rounded">Rounded</span></span>
-            <span><span className="k-badge k-badge-md k-badge-outline k-badge-tertiary k-badge-rounded"></span></span>
-            <span><span className="k-badge k-badge-md k-badge-outline k-badge-tertiary k-badge-pill">Pill</span></span>
-            <span><span className="k-badge k-badge-md k-badge-outline k-badge-tertiary k-badge-pill"></span></span>
-            <span><span className="k-badge k-badge-md k-badge-outline k-badge-tertiary k-badge-circle">99+</span></span>
-            <span><span className="k-badge k-badge-md k-badge-outline k-badge-tertiary k-badge-dot"></span></span>
-
+            <span><Badge fillMode="outline" themeColor="tertiary">Rectangle</Badge></span>
+            <span><Badge fillMode="outline" themeColor="tertiary"></Badge></span>
+            <span><Badge fillMode="outline" themeColor="tertiary" rounded="medium">Rounded</Badge></span>
+            <span><Badge fillMode="outline" themeColor="tertiary" rounded="medium"></Badge></span>
+            <span><Badge fillMode="outline" themeColor="tertiary" rounded="full">Pill</Badge></span>
+            <span><Badge fillMode="outline" themeColor="tertiary" rounded="full"></Badge></span>
+            <span><Badge fillMode="outline" themeColor="tertiary" rounded="full">1</Badge></span>
+            <span><Badge fillMode="outline" themeColor="tertiary" rounded="full"></Badge></span>
 
             <span>Info</span>
-            <span><span className="k-badge k-badge-md k-badge-solid k-badge-info">Rectangle</span></span>
-            <span><span className="k-badge k-badge-md k-badge-solid k-badge-info"></span></span>
-            <span><span className="k-badge k-badge-md k-badge-solid k-badge-info k-badge-rounded">Rounded</span></span>
-            <span><span className="k-badge k-badge-md k-badge-solid k-badge-info k-badge-rounded"></span></span>
-            <span><span className="k-badge k-badge-md k-badge-solid k-badge-info k-badge-pill">Pill</span></span>
-            <span><span className="k-badge k-badge-md k-badge-solid k-badge-info k-badge-pill"></span></span>
-            <span><span className="k-badge k-badge-md k-badge-solid k-badge-info k-badge-circle">99+</span></span>
-            <span><span className="k-badge k-badge-md k-badge-solid k-badge-info k-badge-dot"></span></span>
+            <span><Badge themeColor="info">Rectangle</Badge></span>
+            <span><Badge themeColor="info"></Badge></span>
+            <span><Badge themeColor="info" rounded="medium">Rounded</Badge></span>
+            <span><Badge themeColor="info" rounded="medium"></Badge></span>
+            <span><Badge themeColor="info" rounded="full">Pill</Badge></span>
+            <span><Badge themeColor="info" rounded="full"></Badge></span>
+            <span><Badge themeColor="info" rounded="full">1</Badge></span>
+            <span><Badge themeColor="info" rounded="full"></Badge></span>
 
             <span>^ outline</span>
-            <span><span className="k-badge k-badge-md k-badge-outline k-badge-info">Rectangle</span></span>
-            <span><span className="k-badge k-badge-md k-badge-outline k-badge-info"></span></span>
-            <span><span className="k-badge k-badge-md k-badge-outline k-badge-info k-badge-rounded">Rounded</span></span>
-            <span><span className="k-badge k-badge-md k-badge-outline k-badge-info k-badge-rounded"></span></span>
-            <span><span className="k-badge k-badge-md k-badge-outline k-badge-info k-badge-pill">Pill</span></span>
-            <span><span className="k-badge k-badge-md k-badge-outline k-badge-info k-badge-pill"></span></span>
-            <span><span className="k-badge k-badge-md k-badge-outline k-badge-info k-badge-circle">99+</span></span>
-            <span><span className="k-badge k-badge-md k-badge-outline k-badge-info k-badge-dot"></span></span>
+            <span><Badge fillMode="outline" themeColor="info">Rectangle</Badge></span>
+            <span><Badge fillMode="outline" themeColor="info"></Badge></span>
+            <span><Badge fillMode="outline" themeColor="info" rounded="medium">Rounded</Badge></span>
+            <span><Badge fillMode="outline" themeColor="info" rounded="medium"></Badge></span>
+            <span><Badge fillMode="outline" themeColor="info" rounded="full">Pill</Badge></span>
+            <span><Badge fillMode="outline" themeColor="info" rounded="full"></Badge></span>
+            <span><Badge fillMode="outline" themeColor="info" rounded="full">1</Badge></span>
+            <span><Badge fillMode="outline" themeColor="info" rounded="full"></Badge></span>
 
 
             <span>Success</span>
-            <span><span className="k-badge k-badge-md k-badge-solid k-badge-success">Rectangle</span></span>
-            <span><span className="k-badge k-badge-md k-badge-solid k-badge-success"></span></span>
-            <span><span className="k-badge k-badge-md k-badge-solid k-badge-success k-badge-rounded">Rounded</span></span>
-            <span><span className="k-badge k-badge-md k-badge-solid k-badge-success k-badge-rounded"></span></span>
-            <span><span className="k-badge k-badge-md k-badge-solid k-badge-success k-badge-pill">Pill</span></span>
-            <span><span className="k-badge k-badge-md k-badge-solid k-badge-success k-badge-pill"></span></span>
-            <span><span className="k-badge k-badge-md k-badge-solid k-badge-success k-badge-circle">99+</span></span>
-            <span><span className="k-badge k-badge-md k-badge-solid k-badge-success k-badge-dot"></span></span>
+            <span><Badge themeColor="success">Rectangle</Badge></span>
+            <span><Badge themeColor="success"></Badge></span>
+            <span><Badge themeColor="success" rounded="medium">Rounded</Badge></span>
+            <span><Badge themeColor="success" rounded="medium"></Badge></span>
+            <span><Badge themeColor="success" rounded="full">Pill</Badge></span>
+            <span><Badge themeColor="success" rounded="full"></Badge></span>
+            <span><Badge themeColor="success" rounded="full">1</Badge></span>
+            <span><Badge themeColor="success" rounded="full"></Badge></span>
 
             <span>^ outline</span>
-            <span><span className="k-badge k-badge-md k-badge-outline k-badge-success">Rectangle</span></span>
-            <span><span className="k-badge k-badge-md k-badge-outline k-badge-success"></span></span>
-            <span><span className="k-badge k-badge-md k-badge-outline k-badge-success k-badge-rounded">Rounded</span></span>
-            <span><span className="k-badge k-badge-md k-badge-outline k-badge-success k-badge-rounded"></span></span>
-            <span><span className="k-badge k-badge-md k-badge-outline k-badge-success k-badge-pill">Pill</span></span>
-            <span><span className="k-badge k-badge-md k-badge-outline k-badge-success k-badge-pill"></span></span>
-            <span><span className="k-badge k-badge-md k-badge-outline k-badge-success k-badge-circle">99+</span></span>
-            <span><span className="k-badge k-badge-md k-badge-outline k-badge-success k-badge-dot"></span></span>
-
+            <span><Badge fillMode="outline" themeColor="success">Rectangle</Badge></span>
+            <span><Badge fillMode="outline" themeColor="success"></Badge></span>
+            <span><Badge fillMode="outline" themeColor="success" rounded="medium">Rounded</Badge></span>
+            <span><Badge fillMode="outline" themeColor="success" rounded="medium"></Badge></span>
+            <span><Badge fillMode="outline" themeColor="success" rounded="full">Pill</Badge></span>
+            <span><Badge fillMode="outline" themeColor="success" rounded="full"></Badge></span>
+            <span><Badge fillMode="outline" themeColor="success" rounded="full">1</Badge></span>
+            <span><Badge fillMode="outline" themeColor="success" rounded="full"></Badge></span>
 
             <span>Warning</span>
-            <span><span className="k-badge k-badge-md k-badge-solid k-badge-warning">Rectangle</span></span>
-            <span><span className="k-badge k-badge-md k-badge-solid k-badge-warning"></span></span>
-            <span><span className="k-badge k-badge-md k-badge-solid k-badge-warning k-badge-rounded">Rounded</span></span>
-            <span><span className="k-badge k-badge-md k-badge-solid k-badge-warning k-badge-rounded"></span></span>
-            <span><span className="k-badge k-badge-md k-badge-solid k-badge-warning k-badge-pill">Pill</span></span>
-            <span><span className="k-badge k-badge-md k-badge-solid k-badge-warning k-badge-pill"></span></span>
-            <span><span className="k-badge k-badge-md k-badge-solid k-badge-warning k-badge-circle">99+</span></span>
-            <span><span className="k-badge k-badge-md k-badge-solid k-badge-warning k-badge-dot"></span></span>
+            <span><Badge themeColor="warning">Rectangle</Badge></span>
+            <span><Badge themeColor="warning"></Badge></span>
+            <span><Badge themeColor="warning" rounded="medium">Rounded</Badge></span>
+            <span><Badge themeColor="warning" rounded="medium"></Badge></span>
+            <span><Badge themeColor="warning" rounded="full">Pill</Badge></span>
+            <span><Badge themeColor="warning" rounded="full"></Badge></span>
+            <span><Badge themeColor="warning" rounded="full">1</Badge></span>
+            <span><Badge themeColor="warning" rounded="full"></Badge></span>
 
             <span>^ outline</span>
-            <span><span className="k-badge k-badge-md k-badge-outline k-badge-warning">Rectangle</span></span>
-            <span><span className="k-badge k-badge-md k-badge-outline k-badge-warning"></span></span>
-            <span><span className="k-badge k-badge-md k-badge-outline k-badge-warning k-badge-rounded">Rounded</span></span>
-            <span><span className="k-badge k-badge-md k-badge-outline k-badge-warning k-badge-rounded"></span></span>
-            <span><span className="k-badge k-badge-md k-badge-outline k-badge-warning k-badge-pill">Pill</span></span>
-            <span><span className="k-badge k-badge-md k-badge-outline k-badge-warning k-badge-pill"></span></span>
-            <span><span className="k-badge k-badge-md k-badge-outline k-badge-warning k-badge-circle">99+</span></span>
-            <span><span className="k-badge k-badge-md k-badge-outline k-badge-warning k-badge-dot"></span></span>
+            <span><Badge fillMode="outline" themeColor="warning">Rectangle</Badge></span>
+            <span><Badge fillMode="outline" themeColor="warning"></Badge></span>
+            <span><Badge fillMode="outline" themeColor="warning" rounded="medium">Rounded</Badge></span>
+            <span><Badge fillMode="outline" themeColor="warning" rounded="medium"></Badge></span>
+            <span><Badge fillMode="outline" themeColor="warning" rounded="full">Pill</Badge></span>
+            <span><Badge fillMode="outline" themeColor="warning" rounded="full"></Badge></span>
+            <span><Badge fillMode="outline" themeColor="warning" rounded="full">1</Badge></span>
+            <span><Badge fillMode="outline" themeColor="warning" rounded="full"></Badge></span>
 
 
             <span>Error</span>
-            <span><span className="k-badge k-badge-md k-badge-solid k-badge-error">Rectangle</span></span>
-            <span><span className="k-badge k-badge-md k-badge-solid k-badge-error"></span></span>
-            <span><span className="k-badge k-badge-md k-badge-solid k-badge-error k-badge-rounded">Rounded</span></span>
-            <span><span className="k-badge k-badge-md k-badge-solid k-badge-error k-badge-rounded"></span></span>
-            <span><span className="k-badge k-badge-md k-badge-solid k-badge-error k-badge-pill">Pill</span></span>
-            <span><span className="k-badge k-badge-md k-badge-solid k-badge-error k-badge-pill"></span></span>
-            <span><span className="k-badge k-badge-md k-badge-solid k-badge-error k-badge-circle">99+</span></span>
-            <span><span className="k-badge k-badge-md k-badge-solid k-badge-error k-badge-dot"></span></span>
+            <span><Badge themeColor="error">Rectangle</Badge></span>
+            <span><Badge themeColor="error"></Badge></span>
+            <span><Badge themeColor="error" rounded="medium">Rounded</Badge></span>
+            <span><Badge themeColor="error" rounded="medium"></Badge></span>
+            <span><Badge themeColor="error" rounded="full">Pill</Badge></span>
+            <span><Badge themeColor="error" rounded="full"></Badge></span>
+            <span><Badge themeColor="error" rounded="full">1</Badge></span>
+            <span><Badge themeColor="error" rounded="full"></Badge></span>
 
             <span>^ outline</span>
-            <span><span className="k-badge k-badge-md k-badge-outline k-badge-error">Rectangle</span></span>
-            <span><span className="k-badge k-badge-md k-badge-outline k-badge-error"></span></span>
-            <span><span className="k-badge k-badge-md k-badge-outline k-badge-error k-badge-rounded">Rounded</span></span>
-            <span><span className="k-badge k-badge-md k-badge-outline k-badge-error k-badge-rounded"></span></span>
-            <span><span className="k-badge k-badge-md k-badge-outline k-badge-error k-badge-pill">Pill</span></span>
-            <span><span className="k-badge k-badge-md k-badge-outline k-badge-error k-badge-pill"></span></span>
-            <span><span className="k-badge k-badge-md k-badge-outline k-badge-error k-badge-circle">99+</span></span>
-            <span><span className="k-badge k-badge-md k-badge-outline k-badge-error k-badge-dot"></span></span>
+            <span><Badge fillMode="outline" themeColor="error">Rectangle</Badge></span>
+            <span><Badge fillMode="outline" themeColor="error"></Badge></span>
+            <span><Badge fillMode="outline" themeColor="error" rounded="medium">Rounded</Badge></span>
+            <span><Badge fillMode="outline" themeColor="error" rounded="medium"></Badge></span>
+            <span><Badge fillMode="outline" themeColor="error" rounded="full">Pill</Badge></span>
+            <span><Badge fillMode="outline" themeColor="error" rounded="full"></Badge></span>
+            <span><Badge fillMode="outline" themeColor="error" rounded="full">1</Badge></span>
+            <span><Badge fillMode="outline" themeColor="error" rounded="full"></Badge></span>
 
 
             <span>Dark</span>
-            <span><span className="k-badge k-badge-md k-badge-solid k-badge-dark">Rectangle</span></span>
-            <span><span className="k-badge k-badge-md k-badge-solid k-badge-dark"></span></span>
-            <span><span className="k-badge k-badge-md k-badge-solid k-badge-dark k-badge-rounded">Rounded</span></span>
-            <span><span className="k-badge k-badge-md k-badge-solid k-badge-dark k-badge-rounded"></span></span>
-            <span><span className="k-badge k-badge-md k-badge-solid k-badge-dark k-badge-pill">Pill</span></span>
-            <span><span className="k-badge k-badge-md k-badge-solid k-badge-dark k-badge-pill"></span></span>
-            <span><span className="k-badge k-badge-md k-badge-solid k-badge-dark k-badge-circle">99+</span></span>
-            <span><span className="k-badge k-badge-md k-badge-solid k-badge-dark k-badge-dot"></span></span>
+            <span><Badge themeColor="dark">Rectangle</Badge></span>
+            <span><Badge themeColor="dark"></Badge></span>
+            <span><Badge themeColor="dark" rounded="medium">Rounded</Badge></span>
+            <span><Badge themeColor="dark" rounded="medium"></Badge></span>
+            <span><Badge themeColor="dark" rounded="full">Pill</Badge></span>
+            <span><Badge themeColor="dark" rounded="full"></Badge></span>
+            <span><Badge themeColor="dark" rounded="full">1</Badge></span>
+            <span><Badge themeColor="dark" rounded="full"></Badge></span>
 
             <span>^ outline</span>
-            <span><span className="k-badge k-badge-md k-badge-outline k-badge-dark">Rectangle</span></span>
-            <span><span className="k-badge k-badge-md k-badge-outline k-badge-dark"></span></span>
-            <span><span className="k-badge k-badge-md k-badge-outline k-badge-dark k-badge-rounded">Rounded</span></span>
-            <span><span className="k-badge k-badge-md k-badge-outline k-badge-dark k-badge-rounded"></span></span>
-            <span><span className="k-badge k-badge-md k-badge-outline k-badge-dark k-badge-pill">Pill</span></span>
-            <span><span className="k-badge k-badge-md k-badge-outline k-badge-dark k-badge-pill"></span></span>
-            <span><span className="k-badge k-badge-md k-badge-outline k-badge-dark k-badge-circle">99+</span></span>
-            <span><span className="k-badge k-badge-md k-badge-outline k-badge-dark k-badge-dot"></span></span>
+            <span><Badge fillMode="outline" themeColor="dark">Rectangle</Badge></span>
+            <span><Badge fillMode="outline" themeColor="dark"></Badge></span>
+            <span><Badge fillMode="outline" themeColor="dark" rounded="medium">Rounded</Badge></span>
+            <span><Badge fillMode="outline" themeColor="dark" rounded="medium"></Badge></span>
+            <span><Badge fillMode="outline" themeColor="dark" rounded="full">Pill</Badge></span>
+            <span><Badge fillMode="outline" themeColor="dark" rounded="full"></Badge></span>
+            <span><Badge fillMode="outline" themeColor="dark" rounded="full">1</Badge></span>
+            <span><Badge fillMode="outline" themeColor="dark" rounded="full"></Badge></span>
 
 
             <span>light</span>
-            <span><span className="k-badge k-badge-md k-badge-solid k-badge-light">Rectangle</span></span>
-            <span><span className="k-badge k-badge-md k-badge-solid k-badge-light"></span></span>
-            <span><span className="k-badge k-badge-md k-badge-solid k-badge-light k-badge-rounded">Rounded</span></span>
-            <span><span className="k-badge k-badge-md k-badge-solid k-badge-light k-badge-rounded"></span></span>
-            <span><span className="k-badge k-badge-md k-badge-solid k-badge-light k-badge-pill">Pill</span></span>
-            <span><span className="k-badge k-badge-md k-badge-solid k-badge-light k-badge-pill"></span></span>
-            <span><span className="k-badge k-badge-md k-badge-solid k-badge-light k-badge-circle">99+</span></span>
-            <span><span className="k-badge k-badge-md k-badge-solid k-badge-light k-badge-dot"></span></span>
+            <span><Badge themeColor="light">Rectangle</Badge></span>
+            <span><Badge themeColor="light"></Badge></span>
+            <span><Badge themeColor="light" rounded="medium">Rounded</Badge></span>
+            <span><Badge themeColor="light" rounded="medium"></Badge></span>
+            <span><Badge themeColor="light" rounded="full">Pill</Badge></span>
+            <span><Badge themeColor="light" rounded="full"></Badge></span>
+            <span><Badge themeColor="light" rounded="full">1</Badge></span>
+            <span><Badge themeColor="light" rounded="full"></Badge></span>
 
             <span>^ outline</span>
-            <span><span className="k-badge k-badge-md k-badge-outline k-badge-light">Rectangle</span></span>
-            <span><span className="k-badge k-badge-md k-badge-outline k-badge-light"></span></span>
-            <span><span className="k-badge k-badge-md k-badge-outline k-badge-light k-badge-rounded">Rounded</span></span>
-            <span><span className="k-badge k-badge-md k-badge-outline k-badge-light k-badge-rounded"></span></span>
-            <span><span className="k-badge k-badge-md k-badge-outline k-badge-light k-badge-pill">Pill</span></span>
-            <span><span className="k-badge k-badge-md k-badge-outline k-badge-light k-badge-pill"></span></span>
-            <span><span className="k-badge k-badge-md k-badge-outline k-badge-light k-badge-circle">99+</span></span>
-            <span><span className="k-badge k-badge-md k-badge-outline k-badge-light k-badge-dot"></span></span>
-
+            <span><Badge fillMode="outline" themeColor="light">Rectangle</Badge></span>
+            <span><Badge fillMode="outline" themeColor="light"></Badge></span>
+            <span><Badge fillMode="outline" themeColor="light" rounded="medium">Rounded</Badge></span>
+            <span><Badge fillMode="outline" themeColor="light" rounded="medium"></Badge></span>
+            <span><Badge fillMode="outline" themeColor="light" rounded="full">Pill</Badge></span>
+            <span><Badge fillMode="outline" themeColor="light" rounded="full"></Badge></span>
+            <span><Badge fillMode="outline" themeColor="light" rounded="full">1</Badge></span>
+            <span><Badge fillMode="outline" themeColor="light" rounded="full"></Badge></span>
 
             <span>Inverse</span>
-            <span><span className="k-badge k-badge-md k-badge-solid k-badge-inverse">Rectangle</span></span>
-            <span><span className="k-badge k-badge-md k-badge-solid k-badge-inverse"></span></span>
-            <span><span className="k-badge k-badge-md k-badge-solid k-badge-inverse k-badge-rounded">Rounded</span></span>
-            <span><span className="k-badge k-badge-md k-badge-solid k-badge-inverse k-badge-rounded"></span></span>
-            <span><span className="k-badge k-badge-md k-badge-solid k-badge-inverse k-badge-pill">Pill</span></span>
-            <span><span className="k-badge k-badge-md k-badge-solid k-badge-inverse k-badge-pill"></span></span>
-            <span><span className="k-badge k-badge-md k-badge-solid k-badge-inverse k-badge-circle">99+</span></span>
-            <span><span className="k-badge k-badge-md k-badge-solid k-badge-inverse k-badge-dot"></span></span>
+            <span><Badge themeColor="inverse">Rectangle</Badge></span>
+            <span><Badge themeColor="inverse"></Badge></span>
+            <span><Badge themeColor="inverse" rounded="medium">Rounded</Badge></span>
+            <span><Badge themeColor="inverse" rounded="medium"></Badge></span>
+            <span><Badge themeColor="inverse" rounded="full">Pill</Badge></span>
+            <span><Badge themeColor="inverse" rounded="full"></Badge></span>
+            <span><Badge themeColor="inverse" rounded="full">1</Badge></span>
+            <span><Badge themeColor="inverse" rounded="full"></Badge></span>
 
             <span>^ outline</span>
-            <span><span className="k-badge k-badge-md k-badge-outline k-badge-inverse">Rectangle</span></span>
-            <span><span className="k-badge k-badge-md k-badge-outline k-badge-inverse"></span></span>
-            <span><span className="k-badge k-badge-md k-badge-outline k-badge-inverse k-badge-rounded">Rounded</span></span>
-            <span><span className="k-badge k-badge-md k-badge-outline k-badge-inverse k-badge-rounded"></span></span>
-            <span><span className="k-badge k-badge-md k-badge-outline k-badge-inverse k-badge-pill">Pill</span></span>
-            <span><span className="k-badge k-badge-md k-badge-outline k-badge-inverse k-badge-pill"></span></span>
-            <span><span className="k-badge k-badge-md k-badge-outline k-badge-inverse k-badge-circle">99+</span></span>
-            <span><span className="k-badge k-badge-md k-badge-outline k-badge-inverse k-badge-dot"></span></span>
+            <span><Badge fillMode="outline" themeColor="inverse">Rectangle</Badge></span>
+            <span><Badge fillMode="outline" themeColor="inverse"></Badge></span>
+            <span><Badge fillMode="outline" themeColor="inverse" rounded="medium">Rounded</Badge></span>
+            <span><Badge fillMode="outline" themeColor="inverse" rounded="medium"></Badge></span>
+            <span><Badge fillMode="outline" themeColor="inverse" rounded="full">Pill</Badge></span>
+            <span><Badge fillMode="outline" themeColor="inverse" rounded="full"></Badge></span>
+            <span><Badge fillMode="outline" themeColor="inverse" rounded="full">1</Badge></span>
+            <span><Badge fillMode="outline" themeColor="inverse" rounded="full"></Badge></span>
 
         </div>
     </>
