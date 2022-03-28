@@ -7,6 +7,7 @@
     .k-badge {
         padding-inline: var( --INTERNAL--kendo-badge-padding-x, 0 );
         padding-block: var( --INTERNAL--kendo-badge-padding-y, 0 );
+        min-width: var( --INTERNAL--kendo-badge-min-width, auto );
         font-size: var( --INTERNAL--kendo-badge-font-size, 1rem );
         line-height: var( --INTERNAL--kendo-badge-line-height, normal );
         border-width: var( --kendo-badge-border-width, #{$kendo-badge-border-width} );
@@ -62,65 +63,21 @@
         $_padding-y: map-get( $size-props, padding-y );
         $_font-size: map-get( $size-props, font-size );
         $_line-height: map-get( $size-props, line-height );
+        $_min-width: map-get( $size-props, min-width );
 
         .k-badge-#{$size} {
             --INTERNAL--kendo-badge-padding-x: var( --kendo-badge-#{$size}-padding-x, #{$_padding-x} );
             --INTERNAL--kendo-badge-padding-y: var( --kendo-badge-#{$size}-padding-y, #{$_padding-y} );
             --INTERNAL--kendo-badge-font-size: var( --kendo-badge-#{$size}-font-size, #{$_font-size} );
             --INTERNAL--kendo-badge-line-height: var( --kendo-badge-#{$size}-line-height, #{$_line-height} );
+            --INTERNAL--kendo-badge-min-width: var( --kendo-badge-#{$size}-min-width, #{$_min-width} );
 
             &:empty {
-                --INTERNAL--kendo-badge-padding-x: var( --kendo-badge-#{$size}-padding-x, #{$_padding-x} );
-                --INTERNAL--kendo-badge-padding-y: var( --kendo-badge-#{$size}-padding-x, #{$_padding-x} );
+                --INTERNAL--kendo-badge-padding-x: var( --kendo-badge-#{$size}-padding-y, #{$_padding-y} );
+                --INTERNAL--kendo-badge-padding-y: var( --kendo-badge-#{$size}-padding-y, #{$_padding-y} );
+
+                min-width: auto;
             }
-        }
-    }
-
-
-    // Badge shapes
-    .k-badge-rounded {
-        &.k-badge-sm { @include border-radius( $kendo-badge-border-radius-sm ); }
-        &.k-badge-md { @include border-radius( $kendo-badge-border-radius-md ); }
-        &.k-badge-lg { @include border-radius( $kendo-badge-border-radius-lg ); }
-    }
-    .k-badge-pill {
-        border-radius: 5rem;
-    }
-    .k-badge-circle {
-        padding: 0 !important; // sass-lint:disable-line no-important
-        border-radius: 100%;
-        width: 22px;
-        height: 22px;
-
-        &.k-badge-sm {
-            width: $kendo-badge-size-sm;
-            height: $kendo-badge-size-sm;
-        }
-        &.k-badge-md {
-            width: $kendo-badge-size;
-            height: $kendo-badge-size;
-        }
-        &.k-badge-lg {
-            width: $kendo-badge-size-lg;
-            height: $kendo-badge-size-lg;
-        }
-    }
-    .k-badge-dot {
-        padding: 0 !important;  // sass-lint:disable-line no-important
-        border-radius: 100%;
-        font-size: 0;
-
-        &.k-badge-sm {
-            width: $kendo-badge-dot-size-sm;
-            height: $kendo-badge-dot-size-sm;
-        }
-        &.k-badge-md {
-            width: $kendo-badge-dot-size;
-            height: $kendo-badge-dot-size;
-        }
-        &.k-badge-lg {
-            width: $kendo-badge-dot-size-lg;
-            height: $kendo-badge-dot-size-lg;
         }
     }
 
@@ -133,6 +90,7 @@
         position: relative;
         overflow: visible;
     }
+
     @each $placement, $translate in ("inside": null, "edge": 50, "outside": 100) {
 
         .k-badge-#{$placement} {
@@ -190,7 +148,7 @@
 
     // Border cutout
     .k-badge-border-cutout {
-        box-shadow: 0 0 0 2px $kendo-component-bg;
+        box-shadow: 0 0 0 2px var( --kendo-component-bg, inherit );
     }
 
 }
