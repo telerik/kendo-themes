@@ -1,0 +1,27 @@
+@include exports( "utils/aspect-ratio" ) {
+
+    // Aspect-ratio documentation sourced from https://developer.mozilla.org/en-US/docs/Web/CSS/aspect-ratio.
+
+    // @name k-aspect-ratio-auto
+    // @description This is equivalent to `aspect-ratio: auto;`. Replaced elements with an intrinsic aspect ratio use that aspect ratio, otherwise the box has no preferred aspect ratio. Size calculations involving intrinsic aspect ratio always work with the content box dimensions.
+    // @group aspect-ratio
+
+    // @name k-aspect-ratio-1
+    // @description This is equivalent to `aspect-ratio: 1;`. The box's preferred aspect ratio is the specified ratio of 1. Size calculations involving preferred aspect ratio work with the dimensions of the box specified by box-sizing.
+    // @group aspect-ratio
+
+    $utils-aspect-ratio: (
+        auto,
+        1
+    ) !default;
+
+    @if $utils-aspect-ratio {
+        @each $aspect-ratio in $utils-aspect-ratio {
+            .k-aspect-ratio-#{$aspect-ratio} { aspect-ratio: $aspect-ratio; }
+
+            // sass-lint:disable-block no-important
+            .\!k-aspect-ratio-#{$aspect-ratio} { aspect-ratio: $aspect-ratio !important; }
+        }
+    }
+
+}
