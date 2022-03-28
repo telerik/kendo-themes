@@ -2,7 +2,7 @@
 
     .k-badge {
         padding: 0;
-        border-width: 0;
+        border-width: $kendo-badge-border-width;
         border-style: solid;
         border-color: transparent;
         box-sizing: border-box;
@@ -52,74 +52,23 @@
 
 
     // Badge sizes
-    .k-badge-sm {
-        padding: $badge-padding-y-sm $badge-padding-x-sm;
-        border-width: $badge-border-width-sm;
-        font-size: $badge-font-size-sm;
-        line-height: $badge-line-height-sm;
+    @each $size, $size-props in $kendo-badge-sizes {
+        $_padding-x: map-get( $size-props, padding-x );
+        $_padding-y: map-get( $size-props, padding-y );
+        $_font-size: map-get( $size-props, font-size );
+        $_line-height: map-get( $size-props, line-height );
+        $_min-width: map-get( $size-props, min-width );
 
-        &:empty { padding: $badge-padding-y-sm; }
-    }
-    .k-badge-md {
-        padding: $badge-padding-y $badge-padding-x;
-        border-width: $badge-border-width;
-        font-size: $badge-font-size;
-        line-height: $badge-line-height;
+        .k-badge-#{$size} {
+            padding: $_padding-y $_padding-x;
+            font-size: $_font-size;
+            line-height: $_line-height;
+            min-width: $_min-width;
 
-        &:empty { padding: $badge-padding-y; }
-    }
-    .k-badge-lg {
-        padding: $badge-padding-y-lg $badge-padding-x-lg;
-        border-width: $badge-border-width-lg;
-        font-size: $badge-font-size-lg;
-        line-height: $badge-line-height-lg;
-
-        &:empty { padding: $badge-padding-y-lg; }
-    }
-
-
-    // Badge shapes
-    .k-badge-rounded {
-        &.k-badge-sm { @include border-radius( $badge-border-radius-sm ); }
-        &.k-badge-md { @include border-radius( $badge-border-radius ); }
-        &.k-badge-lg { @include border-radius( $badge-border-radius-lg ); }
-    }
-    .k-badge-pill {
-        border-radius: 5rem;
-    }
-    .k-badge-circle {
-        padding: 0 !important; // sass-lint:disable-line no-important
-        border-radius: 100%;
-
-        &.k-badge-sm {
-            width: $badge-size-sm;
-            height: $badge-size-sm;
-        }
-        &.k-badge-md {
-            width: $badge-size;
-            height: $badge-size;
-        }
-        &.k-badge-lg {
-            width: $badge-size-lg;
-            height: $badge-size-lg;
-        }
-    }
-    .k-badge-dot {
-        padding: 0 !important;  // sass-lint:disable-line no-important
-        border-radius: 100%;
-        font-size: 0;
-
-        &.k-badge-sm {
-            width: $badge-dot-size-sm;
-            height: $badge-dot-size-sm;
-        }
-        &.k-badge-md {
-            width: $badge-dot-size;
-            height: $badge-dot-size;
-        }
-        &.k-badge-lg {
-            width: $badge-dot-size-lg;
-            height: $badge-dot-size-lg;
+            &:empty {
+                padding: $_padding-y;
+                min-width: auto;
+             }
         }
     }
 
