@@ -81,6 +81,10 @@ $kendo-input-outline-bg: null !default;
 $kendo-input-outline-text: null !default;
 $kendo-input-outline-border: rgba( $kendo-button-text, .5) !default;
 
+$kendo-input-flat-bg: transparent !default;
+$kendo-input-flat-text: $kendo-input-text !default;
+$kendo-input-flat-border: $kendo-input-border !default;
+
 $kendo-input-flat-border-radius: 4px 4px 0px 0px !default;
 
 $kendo-picker-bg: $kendo-button-bg !default;
@@ -114,6 +118,14 @@ $kendo-picker-outline-border: $kendo-button-text !default;
 $kendo-picker-outline-hover-bg: $kendo-button-text !default;
 $kendo-picker-outline-hover-text: $body-bg !default;
 $kendo-picker-outline-hover-border: null !default;
+
+$kendo-picker-flat-bg: transparent !default;
+$kendo-picker-flat-text: $kendo-button-text !default;
+$kendo-picker-flat-border: $kendo-button-border !default;
+
+$kendo-picker-flat-hover-bg: rgba( $kendo-button-text, .04 ) !default;
+$kendo-picker-flat-hover-text: null !default;
+$kendo-picker-flat-hover-border: rgba( $kendo-button-border, .16 ) !default;
 
 $kendo-input-placeholder-text: $subtle-text !default;
 $kendo-input-placeholder-opacity: 1 !default;
