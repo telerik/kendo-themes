@@ -33,6 +33,9 @@ const attrMap = {
 
     showcheckbox: 'showCheckbox',
 
+    // Captcha
+    loading: 'loading',
+
     // Switch
     onlabel: 'onLabel',
     offlabel: 'offLabel',
@@ -83,6 +86,8 @@ const booleanAttr = new Set([
     'showArrow',
 
     'showCheckbox',
+
+    'loading',
 
     'virtualization',
     'root',
