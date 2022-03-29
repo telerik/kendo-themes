@@ -14,6 +14,13 @@ const roundedMap = {
     'large': 'lg'
 };
 
+const calloutMap = {
+    'top': 'n',
+    'bottom': 's',
+    'left': 'w',
+    'right': 'e'
+};
+
 function lookup( map, key ) {
     let result = map[key];
 
@@ -80,6 +87,14 @@ function positionClass( position, prefix ) {
     return `k-pos-absolute ${prefix}-${position}`;
 }
 
+function calloutClass( callout ) {
+    if ( callout === null ) {
+        return '';
+    }
+
+    return `k-callout-${lookup(calloutMap, callout)}`;
+}
+
 function classNames( ...args ) {
 
     /* eslint-disable arrow-body-style, no-nested-ternary */
@@ -140,6 +155,7 @@ export {
     themeColorClass,
     borderedClass,
     positionClass,
+    calloutClass,
 
     classNames,
     cssStyle,
