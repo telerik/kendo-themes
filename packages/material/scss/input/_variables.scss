@@ -58,7 +58,7 @@ $kendo-input-sizes: (
 
 $kendo-input-bg: try-shade( $component-bg, .5 ) !default;
 $kendo-input-text: $component-text !default;
-$kendo-input-border: $component-border !default;
+$kendo-input-border: rgba( $component-border, .54 ) !default;
 $kendo-input-shadow: null !default;
 
 $kendo-input-hover-bg: null !default;
