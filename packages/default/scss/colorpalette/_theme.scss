@@ -16,7 +16,9 @@
         }
 
         &.k-state-selected,
-        &.k-state-selected:hover {
+        &.k-state-selected:hover,
+        &.k-selected,
+        &.k-selected:hover {
             @include box-shadow( $colorpalette-tile-selected-shadow );
         }
 
