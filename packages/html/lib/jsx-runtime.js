@@ -39,6 +39,11 @@ const attrMap = {
     // Captcha
     loading: 'loading',
 
+    // Popover
+    callout: 'callout',
+    title: 'title',
+    body: 'body',
+
     // Switch
     onlabel: 'onLabel',
     offlabel: 'offLabel',
@@ -114,7 +119,9 @@ const nullAttr = new Set([
     'themeColor',
 
     'trackRounded',
-    'thumbRounded'
+    'thumbRounded',
+
+    'callout'
 ]);
 
 const skipAttr = new Set([
