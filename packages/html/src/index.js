@@ -18,6 +18,9 @@ window.addEventListener('DOMContentLoaded', init);
 // Dependencies
 export * from './component/index';
 
+// Typography and utils
+export * from './typography/index';
+
 // Generic content
 export * from './icon/index';
 
