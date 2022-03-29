@@ -190,6 +190,25 @@
                 $kendo-input-flat-focus-border
             );
         }
+
+        // Invalid
+        &.k-invalid,
+        &.ng-invalid.ng-touched,
+        &.ng-invalid.ng-dirty {
+            @include fill( $border: $kendo-input-invalid-border );
+
+            .k-input-validation-icon {
+                color: $invalid-text;
+            }
+
+            &:focus,
+            &.k-focus {
+                @include box-shadow( $kendo-input-invalid-shadow );
+            }
+            &:focus-within {
+                @include box-shadow( $kendo-input-invalid-shadow );
+            }
+        }
     }
 
     .k-picker-flat {
@@ -206,6 +225,35 @@
                 $kendo-picker-flat-hover-bg,
                 $kendo-picker-flat-hover-border
             );
+        }
+
+        &:focus,
+        &.k-focus {
+            @include fill (
+                $kendo-picker-flat-focus-text,
+                $kendo-picker-flat-focus-bg,
+                $kendo-picker-flat-focus-border
+            );
+            @include box-shadow( $kendo-picker-flat-focus-shadow );
+        }
+
+        // Invalid
+        &.k-invalid,
+        &.ng-invalid.ng-touched,
+        &.ng-invalid.ng-dirty {
+            @include fill( $border: $kendo-input-invalid-border );
+
+            .k-input-validation-icon {
+                color: $invalid-text;
+            }
+
+            &:focus,
+            &.k-focus {
+                @include box-shadow( $kendo-input-invalid-shadow );
+            }
+            &:focus-within {
+                @include box-shadow( $kendo-input-invalid-shadow );
+            }
         }
     }
 
