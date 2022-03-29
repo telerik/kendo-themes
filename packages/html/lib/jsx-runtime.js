@@ -49,7 +49,10 @@ const attrMap = {
     leafclassname: 'leafClassName',
 
     // Template
-    contenttemplate: 'contentTemplate'
+    contenttemplate: 'contentTemplate',
+
+    // ColorPalette
+    tilesize: 'tileSize'
 };
 
 const booleanAttr = new Set([
