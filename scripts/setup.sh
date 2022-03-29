@@ -18,7 +18,7 @@ echo ""
 
 # install
 echo "Installing dependencies..."
-npm install
+npm ci
 
 # husky init
 echo "Initializing husky"
