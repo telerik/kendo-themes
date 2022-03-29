@@ -181,6 +181,15 @@
             $kendo-input-flat-bg,
             $kendo-input-flat-border
         );
+
+        &:focus,
+        &.k-focus {
+            @include fill (
+                $kendo-input-flat-focus-text,
+                $kendo-input-flat-focus-bg,
+                $kendo-input-flat-focus-border
+            );
+        }
     }
 
     .k-picker-flat {
