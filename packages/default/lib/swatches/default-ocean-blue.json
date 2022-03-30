@@ -29,7 +29,7 @@
                 "tertiary": {
                     "name": "Tertiary",
                     "type": "color",
-                    "value": "#226581"
+                    "value": "#007F84"
                 },
                 "info": {
                     "name": "Info",
@@ -39,7 +39,7 @@
                 "success": {
                     "name": "Success",
                     "type": "color",
-                    "value": "#33a600"
+                    "value": "#278200"
                 },
                 "warning": {
                     "name": "Warning",
@@ -179,6 +179,16 @@
             }
         },
         {
+            "name": "Inputs",
+            "variables": {
+                "kendo-input-clear-value-opacity": {
+                    "name": "Input clear value button opacity",
+                    "type": "number",
+                    "value": "80%"
+                }
+            }
+        },
+        {
             "name": "Dataviz",
             "variables": {
                 "series-a": {
@@ -189,27 +199,27 @@
                 "series-b": {
                     "name": "Series B",
                     "type": "color",
-                    "value": "#ffd246"
+                    "value": "#FFE162"
                 },
                 "series-c": {
                     "name": "Series C",
                     "type": "color",
-                    "value": "#78d237"
+                    "value": "#4CD180"
                 },
                 "series-d": {
                     "name": "Series D",
                     "type": "color",
-                    "value": "#28b4c8"
+                    "value": "#0074e6"
                 },
                 "series-e": {
                     "name": "Series E",
                     "type": "color",
-                    "value": "#2d73f5"
+                    "value": "#9B4FE6"
                 },
                 "series-f": {
                     "name": "Series F",
                     "type": "color",
-                    "value": "#aa46be"
+                    "value": "#FF80AC"
                 }
             }
         },
