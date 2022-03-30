@@ -15,24 +15,7 @@
 
         <span>Captcha</span>
         <section>
-            <div class="k-widget k-captcha">
-                <div class="k-captcha-image-wrap k-hstack">
-                    <div class="k-captcha-image">
-                        <img src="../../../assets/captcha.jpg" />
-                    </div>
-                    <div class="k-captcha-image-controls k-vstack">
-                        <button is="Button" icon="volume-up"></button>
-                        <button is="Button" icon="reload"></button>
-                    </div>
-                    <div class="k-captcha-volume-control k-vstack k-pos-absolute k-hidden">
-                        <div class="k-widget k-slider k-slider-vertical"></div>
-                    </div>
-                </div>
-                <div class="k-captcha-input k-vstack">
-                    <input is="Textbox" value="YR890" showClearButton="false" />
-                    <span class="k-captcha-validation-message k-text-success">Verification Success</span>
-                </div>
-            </div>
+            <div is="Captcha" value="YR890" valid></div>
         </section>
 
     </div>
