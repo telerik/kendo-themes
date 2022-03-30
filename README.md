@@ -10,17 +10,7 @@
 To setup to monorepo run in the root directory:
 
 ```sh
-# install dependncies
-npm install
-
-# bootstrap lerna monorepo
-npm run bootstrap
-
-# on windows you need to link themes
-cd packages/default
-npm run link
-
-# and so on for each theme
+  npm run setup
 ```
 
 The following npm commands are available:
