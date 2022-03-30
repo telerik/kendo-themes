@@ -10,8 +10,7 @@ const merge = require('lodash.merge');
 const nodeSass = require("node-sass");
 const dartSass = require("sass");
 
-const { getDefaults } = require('@progress/kendo-theme-tasks/src/build/kendo-defaults');
-const { sassBuild, sassCompile } = require('@progress/kendo-theme-tasks/src/build/sass-build');
+const { kendoSassCompile, kendoSassBuild } = require('@progress/kendo-theme-tasks/src/build/kendo-build');
 const { sassFlatten } = require('@progress/kendo-theme-tasks/src/build/sass-flatten');
 const { embedFileBase64 } = require('@progress/kendo-theme-tasks/src/embedFile');
 const { getArg, getEnvArg, logger, colors } = require("@progress/kendo-theme-tasks/src/utils");
@@ -33,12 +32,6 @@ const paths = {
 };
 
 const sassCache = new Set();
-let nodeModules = 'node_modules';
-function getNodeModules() {
-    return nodeModules;
-}
-
-const defaults = getDefaults( { cache: sassCache, nodeModules: getNodeModules } );
 
 const nodeSassOptions = {
     implementation: nodeSass
@@ -47,50 +40,54 @@ const dartSassOptions = {
     implementation: dartSass
 };
 
+let nodeModules = 'node_modules';
 
 // #region helpers
 function buildAll( cwds, options ) {
-
-    let opts = merge( {}, defaults, options );
-
     cwds.forEach( cwd => {
         sassCache.clear();
         nodeModules = path.resolve( cwd, 'node_modules' );
 
-        let file = path.resolve( cwd, opts.file );
-        let output = merge( {}, opts.output, { path: path.resolve( cwd, opts.output.path ) } );
+        let file = path.resolve( cwd, options.file );
+        let output = merge( {}, options.output, { path: path.resolve( cwd, options.output.path ) } );
 
         if (fs.existsSync( file )) {
-            sassBuild({ ...opts, file, output });
+            kendoSassBuild({
+                ...options,
+                file,
+                output,
+                cache: sassCache,
+                nodeModules: nodeModules
+            });
         }
     });
 }
 
 function buildSwatches( cwds, options ) {
-
-    let opts = merge( {}, defaults, options );
-
     cwds.forEach( cwd => {
-        let files = glob.sync( path.resolve( cwd, opts.swatches ) );
+        let files = glob.sync( path.resolve( cwd, options.swatches ) );
 
         files.forEach( file => {
             sassCache.clear();
             nodeModules = path.resolve( cwd, 'node_modules' );
 
-            let output = merge( {}, opts.output, { path: path.resolve( cwd, opts.output.path ) } );
+            let output = merge( {}, options.output, { path: path.resolve( cwd, options.output.path ) } );
             let sassFile = path.resolve( output.path, `${path.basename( file, '.json')}.scss`);
 
             if ( fs.existsSync( sassFile ) ) {
-                sassBuild({ ...opts, file: sassFile, output });
+                kendoSassBuild({
+                    ...options,
+                    file: sassFile,
+                    output,
+                    cache: sassCache,
+                    nodeModules: nodeModules
+                });
             }
         });
     });
 }
 
 function compileAll( cwds, options ) {
-
-    let opts = merge( {}, defaults, options );
-
     cwds.forEach( cwd => {
         let files = glob.sync( path.resolve( cwd, 'scss/!(common|styling)*/_index.scss' ) );
 
@@ -98,7 +95,12 @@ function compileAll( cwds, options ) {
             sassCache.clear();
             nodeModules = path.resolve( cwd, 'node_modules' );
 
-            sassCompile({ ...opts, file, });
+            kendoSassCompile({
+                ...options,
+                file,
+                cache: sassCache,
+                nodeModules: nodeModules
+            });
         });
     });
 }
