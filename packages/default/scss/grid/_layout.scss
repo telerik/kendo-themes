@@ -19,6 +19,8 @@
 
     $grid-group-indicator-border-radius: $kendo-border-radius-md !default;
     $grid-group-indicator-gap: $table-cell-padding-y !default;
+    $grid-group-indicator-button-opacity: $kendo-input-clear-value-opacity !default;
+    $grid-group-indicator-button-hover-opacity: $kendo-input-clear-value-hover-opacity !default;
 
     $grid-grouping-row-border-top: 1px !default;
     $grid-group-footer-border-y: 1px !default;
@@ -487,7 +489,7 @@
             padding: 0;
             width: auto;
             height: auto;
-            opacity: .5;
+            opacity: $grid-group-indicator-button-opacity;
 
             &::before,
             &::after {
@@ -495,7 +497,7 @@
             }
 
             &:hover {
-                opacity: 1;
+                opacity: $grid-group-indicator-button-hover-opacity;
             }
         }
     }
@@ -919,8 +921,7 @@
     }
 
     .k-grid-content,
-    .k-grid-content-locked,
-    .k-pager-wrap {
+    .k-grid-content-locked {
         white-space: normal;
     }
 

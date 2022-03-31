@@ -128,6 +128,9 @@
     .k-event-inverse {
         color: contrast-wcag( $scheduler-event-text );
     }
+    .k-event-ongoing {
+        @include box-shadow( $scheduler-event-ongoing-shadow );
+    }
 
 
     // Drag hint
