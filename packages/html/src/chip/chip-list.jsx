@@ -27,11 +27,7 @@ function ChipListStatic(props) {
     let listClasses = [
         ownClassName,
         'k-chip-list',
-        styles.sizeClass( size, 'k-chip-list' ),
-        {
-            'k-selection-single': selection === 'single',
-            'k-selection-multiple': selection === 'multiple'
-        }
+        styles.sizeClass( size, 'k-chip-list' )
     ];
 
 
