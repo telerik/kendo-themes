@@ -33,17 +33,6 @@ const attrMap = {
 
     showcheckbox: 'showCheckbox',
 
-    // Buttons
-    alignment: 'alignment',
-
-    // Captcha
-    loading: 'loading',
-
-    // Popover
-    callout: 'callout',
-    title: 'title',
-    body: 'body',
-
     // Switch
     onlabel: 'onLabel',
     offlabel: 'offLabel',
