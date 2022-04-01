@@ -142,6 +142,7 @@
             border-style: solid;
             line-height: $chat-bubble-line-height;
             word-wrap: break-word;
+            white-space: pre-wrap;
 
             a {
                 color: inherit;
