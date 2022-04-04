@@ -1,6 +1,7 @@
 @include exports( "utils/text" ) {
 
     // stylelint-disable block-opening-brace-space-before
+    // sass-lint:disable class-name-format
 
     // White-space documentation sourced from https://developer.mozilla.org/en-US/docs/Web/CSS/white-space.
     // Text-align documentation sourced from https://developer.mozilla.org/en-US/docs/Web/CSS/text-align.
@@ -8,6 +9,7 @@
 
     $text-align: ( left, right, center, justify ) !default;
     $text-transform: ( lowercase, uppercase, capitalize ) !default;
+    $white-space: ( normal, nowrap, pre, pre-wrap, pre-line, break-spaces ) !default;
 
     $kendo-font-sizes: (
         xs: $font-size-xs,
@@ -22,11 +24,41 @@
     /// @name k-text-nowrap
     /// @description This is equivalent to `white-space: nowrap;`. Collapses white space as for normal, but suppresses line breaks (text wrapping) within the source.
     /// @group text
-    .k-text-nowrap                  { white-space: nowrap !important; } // sass-lint:disable-line no-important
+    .k-text-nowrap                  { white-space: nowrap; }
+    .\!k-text-nowrap                { white-space: nowrap !important; } // sass-lint:disable-line no-important
     /// @name k-text-ellipsis
     /// @description This is equivalent to `white-space: nowrap; overflow: hidden; text-overflow: ellipsis;`.
     /// @group text
     .k-text-ellipsis                { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; } // sass-lint:disable-line one-declaration-per-line
+
+    /// @name k-white-space-normal
+    /// @description This is equivalent to `white-space: normal;`. Sequences of white space are collapsed. Newline characters in the source are handled the same as other white space. Lines are broken as necessary to fill line boxes.
+    /// @group text
+
+    /// @name k-white-space-nowrap
+    /// @description This is equivalent to `white-space: nowrap;`. Collapses white space as for normal, but suppresses line breaks (text wrapping) within the source.
+    /// @group text
+
+    /// @name k-white-space-pre
+    /// @description This is equivalent to `white-space: pre;`. Sequences of white space are preserved. Lines are only broken at newline characters in the source and at <br> elements.
+    /// @group text
+
+    /// @name k-white-space-pre-wrap
+    /// @description This is equivalent to `white-space: pre-wrap;`. Sequences of white space are preserved. Lines are broken at newline characters, at <br>, and as necessary to fill line boxes.
+    /// @group text
+
+    /// @name k-white-space-pre-line
+    /// @description This is equivalent to `white-space: pre-line;`. Sequences of white space are collapsed. Lines are broken at newline characters, at <br>, and as necessary to fill line boxes.
+    /// @group text
+
+    /// @name k-white-space-break-spaces
+    /// @description This is equivalent to `white-space: break-spaces;`. Collapses white space as for normal, but suppresses line breaks (text wrapping) within the source.
+    /// @group text
+
+    @each $wrap in $white-space {
+        .k-white-space-#{$wrap}    { white-space: $wrap; }
+        .\!k-white-space-#{$wrap}  { white-space: $wrap !important; } // sass-lint:disable-line no-important
+    }
 
 
     // Align
@@ -48,7 +80,8 @@
     /// @group text
 
     @each $align in $text-align {
-        .k-text-#{$align}           { text-align: $align !important; } // sass-lint:disable-line no-important
+        .k-text-#{$align}           { text-align: $align; }
+        .\!k-text-#{$align}         { text-align: $align !important; } // sass-lint:disable-line no-important
     }
 
 
@@ -67,12 +100,14 @@
     /// @group text
 
     @each $transform in $text-transform {
-        .k-text-#{$transform}       { text-transform: $transform !important; } // sass-lint:disable-line no-important
+        .k-text-#{$transform}       { text-transform: $transform; }
+        .\!k-text-#{$transform}     { text-transform: $transform !important; } // sass-lint:disable-line no-important
     }
 
     // Font Size
     @each $name, $size in $kendo-font-sizes {
-        .k-fs-#{$name}       { font-size: $size !important; } // sass-lint:disable-line no-important
+        .k-fs-#{$name}              { font-size: $size; }
+        .\!k-fs-#{$name}            { font-size: $size !important; } // sass-lint:disable-line no-important
     }
 
     // Named font-weight
