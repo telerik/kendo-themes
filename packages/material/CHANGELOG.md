@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.3.0](https://github.com/telerik/kendo-themes/compare/v5.2.0...v5.3.0) (2022-04-04)
+
+
+### Bug Fixes
+
+* **actionsheet:** use subtle text variable for description styling ([043ca4a](https://github.com/telerik/kendo-themes/commit/043ca4a79b9d715d70515f617e01f9d33ee92903))
+* **button:** allow $kendo-solid-button-shade-function to be customized ([83f8965](https://github.com/telerik/kendo-themes/commit/83f8965511228f40953b91b54a7c839a5832256f))
+* **chip:** add box-shadow none on focus ([86b845d](https://github.com/telerik/kendo-themes/commit/86b845d81cb54f89d0fce71db60641447e6ef85b))
+* **chip:** text color in dark swatches ([1682fcc](https://github.com/telerik/kendo-themes/commit/1682fcc9462d1acd565c304625c62e7e658f5f5e))
+* **chip:** update solid chip background color to match design ([18353e9](https://github.com/telerik/kendo-themes/commit/18353e97daa9209b465bc5b87a244b457757be69))
+* **colorgradient:** use subtle text variable for input labels ([860853a](https://github.com/telerik/kendo-themes/commit/860853ad96477b67ef3e93d9dee86ce769ed32fb))
+* **dropzone:** use subtle text variable for note styling ([8a416c1](https://github.com/telerik/kendo-themes/commit/8a416c1afdcd6b22406fdcbba4c18c89d035b7e0))
+* **expansion-panel:** use subtle text variable for sub title styling ([53ca03c](https://github.com/telerik/kendo-themes/commit/53ca03ccfa171812b36d5f0046990fa47860a113))
+* **floating-label:** add offset in front of floating-label in material theme ([5322dfc](https://github.com/telerik/kendo-themes/commit/5322dfcbb4ccf346b0d8d42b899a573cb7466bc6))
+* **taskboard:** use hover color for focus state ([f81ba93](https://github.com/telerik/kendo-themes/commit/f81ba930018e05d03037cd00f93f1b2f936c5e56))
+
+
+### Features
+
+* **common/loading:** add variables for loading indicator ([d271873](https://github.com/telerik/kendo-themes/commit/d271873d571d43776a2e86f09a6f9ea59cbc66af))
+* **scheduler:** add ongoing event styles ([60c6108](https://github.com/telerik/kendo-themes/commit/60c6108ed3c69fb28f2c8d0ccf3d38bdd0ba80e6))
+* **utils:** add aspect-ratio utility classes ([51dfc5a](https://github.com/telerik/kendo-themes/commit/51dfc5a990d1ae19251207e23cf0dec6faaa57df))
+
+
+
+
+
 # [5.2.0](https://github.com/telerik/kendo-themes/compare/v5.1.1...v5.2.0) (2022-02-21)
 
 

@@ -3,6 +3,35 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.3.0](https://github.com/telerik/kendo-themes/compare/v5.2.0...v5.3.0) (2022-04-04)
+
+
+### Bug Fixes
+
+* add clear button to json option file ([9bda9f6](https://github.com/telerik/kendo-themes/commit/9bda9f6f0d0c9696be72e87dff7007a1059f18e4))
+* **html:** add k-input-loading-icon class to loading icon ([f38780b](https://github.com/telerik/kendo-themes/commit/f38780bb1fd39fa451f64b249eb053930e778df4))
+* **html:** avatar rounded option value ([865dc33](https://github.com/telerik/kendo-themes/commit/865dc33dc4e349438d704803102f8bdbb7167425))
+* **html:** remove rounding option from radio buttons readme ([48fb0f7](https://github.com/telerik/kendo-themes/commit/48fb0f7d36e54366f1859f171b9bf03cb07e4e86))
+* **html:** remove unneeded attributes from map ([9993a73](https://github.com/telerik/kendo-themes/commit/9993a73c3d36de66036caecab7d500d5d3525096))
+* **html:** update validation icon classes ([7cdc86a](https://github.com/telerik/kendo-themes/commit/7cdc86aebad04079866c3879ba3a038a5fcf758c))
+
+
+### Features
+
+* **html:** add action buttons html helper ([bc5a49f](https://github.com/telerik/kendo-themes/commit/bc5a49f6c70f816da874dcfd93baa6be8a84b77f))
+* **html:** add captcha html helper ([c50a695](https://github.com/telerik/kendo-themes/commit/c50a6958415ad238d66c54d4351280c068b9a497))
+* **html:** add colorpalette html helper ([1445f1c](https://github.com/telerik/kendo-themes/commit/1445f1cd3ca14b035d5325d02589abaf3737d10b))
+* **html:** add dropdowngrid helper ([8e32c81](https://github.com/telerik/kendo-themes/commit/8e32c811665ece6db39b2c4133dfbe7ed0d03ea1))
+* **html:** add floating label html helper ([61c792c](https://github.com/telerik/kendo-themes/commit/61c792cec339f7863c910bf650a60f5f63665270))
+* **html:** add html helper for ButtonGroup ([2347fd0](https://github.com/telerik/kendo-themes/commit/2347fd083bb4fe31c974912e2aceaa2722147fef))
+* **html:** add html helper for daterangepicker ([5efcbaf](https://github.com/telerik/kendo-themes/commit/5efcbafd41badf1486f8e4effd344813d822b679))
+* **html:** add popover html helper ([07202ac](https://github.com/telerik/kendo-themes/commit/07202acf027e07ded96dea7f027ee0f75840a128))
+* **html:** add typography html helper ([48f244e](https://github.com/telerik/kendo-themes/commit/48f244e83a1d75d9256fc92bfe70dad16b448e64))
+
+
+
+
+
 # [5.2.0](https://github.com/telerik/kendo-themes/compare/v5.1.1...v5.2.0) (2022-02-21)
 
 

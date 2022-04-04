@@ -3,6 +3,69 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.3.0](https://github.com/telerik/kendo-themes/compare/v5.2.0...v5.3.0) (2022-04-04)
+
+
+### Bug Fixes
+
+* **actionsheet:** use subtle text variable for description styling ([043ca4a](https://github.com/telerik/kendo-themes/commit/043ca4a79b9d715d70515f617e01f9d33ee92903))
+* add clear button to json option file ([9bda9f6](https://github.com/telerik/kendo-themes/commit/9bda9f6f0d0c9696be72e87dff7007a1059f18e4))
+* **button:** allow $kendo-solid-button-shade-function to be customized ([83f8965](https://github.com/telerik/kendo-themes/commit/83f8965511228f40953b91b54a7c839a5832256f))
+* **button:** remove forced aspect ratio ([8e41299](https://github.com/telerik/kendo-themes/commit/8e412999ba3859487936bdb3e16baf31341a00a9))
+* **chat:** add pre-wrap to chat messages ([78a5e6d](https://github.com/telerik/kendo-themes/commit/78a5e6dfb82b2c0d3efc8886ad87e4355aab7fde))
+* **chip:** add box-shadow none on focus ([86b845d](https://github.com/telerik/kendo-themes/commit/86b845d81cb54f89d0fce71db60641447e6ef85b))
+* **chip:** text color in dark swatches ([1682fcc](https://github.com/telerik/kendo-themes/commit/1682fcc9462d1acd565c304625c62e7e658f5f5e))
+* **chip:** update solid chip background color to match design ([18353e9](https://github.com/telerik/kendo-themes/commit/18353e97daa9209b465bc5b87a244b457757be69))
+* **colorgradient:** use subtle text variable for input labels ([860853a](https://github.com/telerik/kendo-themes/commit/860853ad96477b67ef3e93d9dee86ce769ed32fb))
+* **colorpalette:** use k-selected for selected state ([92fdec8](https://github.com/telerik/kendo-themes/commit/92fdec83178d88cf9876aa7c402bff69da7e934d))
+* **dropdowngrid:** reset data table border width in popup ([af33de2](https://github.com/telerik/kendo-themes/commit/af33de2a9f9a4fd5dffe4e994628a0760f3982b3))
+* **dropdowntree:** wrong padding of the check-all element ([ba3f72e](https://github.com/telerik/kendo-themes/commit/ba3f72ee72ad57d6a98876b43cd5a2b8d5168982))
+* **dropzone:** use subtle text variable for note styling ([8a416c1](https://github.com/telerik/kendo-themes/commit/8a416c1afdcd6b22406fdcbba4c18c89d035b7e0))
+* **expansion-panel:** use subtle text variable for sub title styling ([53ca03c](https://github.com/telerik/kendo-themes/commit/53ca03ccfa171812b36d5f0046990fa47860a113))
+* **floating-label:** add offset in front of floating-label in material theme ([5322dfc](https://github.com/telerik/kendo-themes/commit/5322dfcbb4ccf346b0d8d42b899a573cb7466bc6))
+* **floating-label:** address comments ([4cb59c8](https://github.com/telerik/kendo-themes/commit/4cb59c89bbd867cd6d389990255739bc41a769af))
+* **floating-label:** allow label to be clickable in order to focus associated input ([4a2acb8](https://github.com/telerik/kendo-themes/commit/4a2acb86905c2a0c338710d366c42f7410ba03b2))
+* **floating-label:** apply correct transitioning and alignment in rtl direction ([f4e423d](https://github.com/telerik/kendo-themes/commit/f4e423d228324a04b7b47de03d826472f5dd7980))
+* **floating-label:** ensure styles are applied when using k-empty class ([fdebefa](https://github.com/telerik/kendo-themes/commit/fdebefaae47f243e36188cb8b49bf6c39c52ffe1))
+* **floating-label:** ensure styles are applied when using k-focus class ([8c6c318](https://github.com/telerik/kendo-themes/commit/8c6c318e225d1d12da6d90b82d3d54be40f6ce8c))
+* **form:** action buttons overflow ([4dbd1f3](https://github.com/telerik/kendo-themes/commit/4dbd1f3a09bd70ce8cc05b61f659b16d6630e1a0))
+* **grid:** allow th cell alignment when sortable is enabled ([a6adf50](https://github.com/telerik/kendo-themes/commit/a6adf505447fc39179b350bee7d5f5c797baf40e))
+* **grid:** incorrect header sorting icon selector ([eec44f5](https://github.com/telerik/kendo-themes/commit/eec44f5bbc105267ed5c405bba4905ce3e6f5dd8))
+* **html:** add k-input-loading-icon class to loading icon ([f38780b](https://github.com/telerik/kendo-themes/commit/f38780bb1fd39fa451f64b249eb053930e778df4))
+* **html:** avatar rounded option value ([865dc33](https://github.com/telerik/kendo-themes/commit/865dc33dc4e349438d704803102f8bdbb7167425))
+* **html:** remove rounding option from radio buttons readme ([48fb0f7](https://github.com/telerik/kendo-themes/commit/48fb0f7d36e54366f1859f171b9bf03cb07e4e86))
+* **html:** remove unneeded attributes from map ([9993a73](https://github.com/telerik/kendo-themes/commit/9993a73c3d36de66036caecab7d500d5d3525096))
+* **html:** update validation icon classes ([7cdc86a](https://github.com/telerik/kendo-themes/commit/7cdc86aebad04079866c3879ba3a038a5fcf758c))
+* **input:** allow placeholder text color customization on generic input ([86270a9](https://github.com/telerik/kendo-themes/commit/86270a9f55683354f5bd87eef7d4a9c481df7f79))
+* **input:** correctly handle native disabled inputs ([bd3b646](https://github.com/telerik/kendo-themes/commit/bd3b646ee19d64f571d03c1d62f627d4f06410c8))
+* **input:** hover shadow variables not present in the code ([5629d40](https://github.com/telerik/kendo-themes/commit/5629d40f72057274b93d8b7c28f3dc2db886e792))
+* **pager:** ensure text inside pager does not wrap when pager is not responsive ([9dd7c2b](https://github.com/telerik/kendo-themes/commit/9dd7c2b5500e6f9c011a40bfaa25eb19e01be549))
+* **taskboard:** use hover color for focus state ([f81ba93](https://github.com/telerik/kendo-themes/commit/f81ba930018e05d03037cd00f93f1b2f936c5e56))
+* **textarea:** add padding when using directive ([1a0cbab](https://github.com/telerik/kendo-themes/commit/1a0cbab0e7a3121e9d7ae5b3e750ddaa13d9b5a7))
+* **textbox:** add necassery disabled styles ([b9b9797](https://github.com/telerik/kendo-themes/commit/b9b9797b21a73dbc89c7b3e332129bc554527ee1))
+
+
+### Features
+
+* add default ocean blue swatch ([867ee02](https://github.com/telerik/kendo-themes/commit/867ee02c7a4d831a80da13ac103d546684ccd003))
+* **common/loading:** add variables for loading indicator ([d271873](https://github.com/telerik/kendo-themes/commit/d271873d571d43776a2e86f09a6f9ea59cbc66af))
+* **html:** add action buttons html helper ([bc5a49f](https://github.com/telerik/kendo-themes/commit/bc5a49f6c70f816da874dcfd93baa6be8a84b77f))
+* **html:** add captcha html helper ([c50a695](https://github.com/telerik/kendo-themes/commit/c50a6958415ad238d66c54d4351280c068b9a497))
+* **html:** add colorpalette html helper ([1445f1c](https://github.com/telerik/kendo-themes/commit/1445f1cd3ca14b035d5325d02589abaf3737d10b))
+* **html:** add dropdowngrid helper ([8e32c81](https://github.com/telerik/kendo-themes/commit/8e32c811665ece6db39b2c4133dfbe7ed0d03ea1))
+* **html:** add floating label html helper ([61c792c](https://github.com/telerik/kendo-themes/commit/61c792cec339f7863c910bf650a60f5f63665270))
+* **html:** add html helper for ButtonGroup ([2347fd0](https://github.com/telerik/kendo-themes/commit/2347fd083bb4fe31c974912e2aceaa2722147fef))
+* **html:** add html helper for daterangepicker ([5efcbaf](https://github.com/telerik/kendo-themes/commit/5efcbafd41badf1486f8e4effd344813d822b679))
+* **html:** add popover html helper ([07202ac](https://github.com/telerik/kendo-themes/commit/07202acf027e07ded96dea7f027ee0f75840a128))
+* **html:** add typography html helper ([48f244e](https://github.com/telerik/kendo-themes/commit/48f244e83a1d75d9256fc92bfe70dad16b448e64))
+* **scheduler:** add ongoing event styles ([60c6108](https://github.com/telerik/kendo-themes/commit/60c6108ed3c69fb28f2c8d0ccf3d38bdd0ba80e6))
+* **utils:** add aspect-ratio utility classes ([51dfc5a](https://github.com/telerik/kendo-themes/commit/51dfc5a990d1ae19251207e23cf0dec6faaa57df))
+* **utils:** add utility classes for white space wrapping ([c4d4a28](https://github.com/telerik/kendo-themes/commit/c4d4a28b5bf10aec8fe41bcb3c1421b6c95ba011))
+
+
+
+
+
 # [5.2.0](https://github.com/telerik/kendo-themes/compare/v5.1.1...v5.2.0) (2022-02-21)
 
 
