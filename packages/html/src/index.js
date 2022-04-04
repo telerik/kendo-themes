@@ -100,7 +100,7 @@ export * from './treeview/index';
 // export * from './wizard/index';
 
 // Layout & containers
-// export * from './card/index';
+export * from './card/index';
 // export * from './expander/index';
 // export * from './panelbar/index';
 // export * from './splitter/index';

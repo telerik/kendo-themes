@@ -84,7 +84,15 @@ function positionClass( position, prefix ) {
         return '';
     }
 
-    return `k-pos-absolute ${prefix}-${position}`;
+    return `${prefix}-${position}`;
+}
+
+function alignClass( align, prefix ) {
+    if ( align === null ) {
+        return '';
+    }
+
+    return `${prefix}-${align}`;
 }
 
 function calloutClass( callout ) {
@@ -93,6 +101,14 @@ function calloutClass( callout ) {
     }
 
     return `k-callout-${lookup(calloutMap, callout)}`;
+}
+
+function orientationClass( orientation, prefix ) {
+    if ( orientation === null ) {
+        return '';
+    }
+
+    return `${prefix}-${orientation}`;
 }
 
 function classNames( ...args ) {
@@ -154,8 +170,10 @@ export {
     fillModeClass,
     themeColorClass,
     borderedClass,
+    alignClass,
     positionClass,
     calloutClass,
+    orientationClass,
 
     classNames,
     cssStyle,
