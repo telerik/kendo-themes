@@ -167,7 +167,7 @@ $kendo-button-disabled-shadow: null !default;
 
 // Solid button
 $kendo-solid-button-gradient: $base-gradient !default;
-$kendo-solid-button-shade-function: "try-shade";
+$kendo-solid-button-shade-function: "try-shade" !default;
 $kendo-solid-button-shade-text-amount: 0 !default;
 $kendo-solid-button-shade-bg-amount: 0 !default;
 $kendo-solid-button-shade-border-amount: 2 !default;

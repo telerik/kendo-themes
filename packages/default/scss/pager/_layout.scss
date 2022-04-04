@@ -9,6 +9,7 @@
         font-family: $pager-font-family;
         font-size: $pager-font-size;
         line-height: $pager-line-height;
+        white-space: nowrap;
         display: flex;
         align-items: center;
         position: relative;

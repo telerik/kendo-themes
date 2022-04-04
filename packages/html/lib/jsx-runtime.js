@@ -49,7 +49,10 @@ const attrMap = {
     leafclassname: 'leafClassName',
 
     // Template
-    contenttemplate: 'contentTemplate'
+    contenttemplate: 'contentTemplate',
+
+    // ColorPalette
+    tilesize: 'tileSize'
 };
 
 const booleanAttr = new Set([
@@ -81,6 +84,8 @@ const booleanAttr = new Set([
 
     'showCheckbox',
 
+    'loading',
+
     'virtualization',
     'root',
 
@@ -103,7 +108,9 @@ const nullAttr = new Set([
     'themeColor',
 
     'trackRounded',
-    'thumbRounded'
+    'thumbRounded',
+
+    'callout'
 ]);
 
 const skipAttr = new Set([

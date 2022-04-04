@@ -18,6 +18,9 @@ window.addEventListener('DOMContentLoaded', init);
 // Dependencies
 export * from './component/index';
 
+// Typography and utils
+export * from './typography/index';
+
 // Generic content
 export * from './icon/index';
 
@@ -50,7 +53,8 @@ export * from './radio/index';
 
 // Augmented inputs
 export * from './autocomplete/index';
-// export * from './captcha/index';
+export * from './colorpalette/index';
+export * from './captcha/index';
 export * from './colorpicker/index';
 export * from './combobox/index';
 export * from './dateinput/index';
@@ -81,7 +85,7 @@ export * from './menu/index';
 // export * from './dialog/index';
 // export * from './drawer/index';
 // export * from './notification/index';
-// export * from './popover/index';
+export * from './popover/index';
 // export * from './tooltip/index';
 // export * from './window/index';
 
