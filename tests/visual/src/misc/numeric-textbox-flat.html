@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en" class="k-no-animations">
+<head>
+    <title>Flat Numeric textbox</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+    <script src="../../assets/scripts.js"></script>
+    <script src="../../../../packages/html/dist/index.js"></script>
+
+    <style>
+        #test-area {
+            max-width: 660px;
+        }
+        .k-numerictextbox {
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="k-body">
+
+    <div id="test-area" class="k-d-grid k-grid-cols-2">
+
+        <span>Flat Numeric textbox</span>
+        <span>Flat Numeric textbox RTL</span>
+
+        <!-- empty -->
+        <div>
+            <input is="NumericTextbox" fillMode="flat" placeholder="Numeric..." />
+        </div>
+        <div dir="rtl">
+            <input is="NumericTextbox" fillMode="flat" placeholder="Numeric..." />
+        </div>
+
+        <!-- normal -->
+        <div>
+            <input is="NumericTextbox" fillMode="flat" value="Normal" />
+        </div>
+        <div dir="rtl">
+            <input is="NumericTextbox" fillMode="flat" value="Normal" />
+        </div>
+
+        <!-- hover -->
+        <div>
+            <input is="NumericTextbox" fillMode="flat" value="Hover" hover />
+        </div>
+        <div dir="rtl">
+            <input is="NumericTextbox" fillMode="flat" value="Hover" hover />
+        </div>
+
+        <!-- focus -->
+        <div>
+            <input is="NumericTextbox" fillMode="flat" value="Focus" focus />
+        </div>
+        <div dir="rtl">
+            <input is="NumericTextbox" fillMode="flat" value="Focus" focus />
+        </div>
+
+        <!-- disabled -->
+        <div>
+            <input is="NumericTextbox" fillMode="flat" value="Disabled" disabled />
+        </div>
+        <div dir="rtl">
+            <input is="NumericTextbox" fillMode="flat" value="Disabled" disabled />
+        </div>
+
+        <!-- invalid -->
+        <div>
+            <input is="NumericTextbox" fillMode="flat" value="Invalid" invalid />
+        </div>
+        <div dir="rtl">
+            <input is="NumericTextbox" fillMode="flat" value="Invalid" invalid />
+        </div>
+
+        <!-- invalid focus -->
+        <div>
+            <input is="NumericTextbox" fillMode="flat" value="Invalid focus" invalid focus />
+        </div>
+        <div dir="rtl">
+            <input is="NumericTextbox" fillMode="flat" value="Invalid focus" invalid focus />
+        </div>
+
+    </div>
+
+</body>
+</html>
