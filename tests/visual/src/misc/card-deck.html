@@ -21,33 +21,25 @@
         <div class="k-widget k-chat">
             <div class="k-message-list k-avatars">
                 <div class="k-message-list-content">
-                    <div class="k-card-deck">
-                        <div class="k-card-wrap">
-                            <div class="k-card k-card-horizontal">
-                                <div class="k-card-body">
-                                    Normal
-                                </div>
+                    <div is="CardDeck">
+                        <div is="Card" orientation="horizontal">
+                            <div is="CardBody">
+                                Normal
                             </div>
                         </div>
-                        <div class="k-card-wrap k-state-focused">
-                            <div class="k-card k-card-horizontal">
-                                <div class="k-card-body">
-                                    Focused
-                                </div>
+                        <div is="Card" orientation="horizontal" focus>
+                            <div is="CardBody">
+                                Focused
                             </div>
                         </div>
-                        <div class="k-card-wrap k-state-selected">
-                            <div class="k-card k-card-horizontal">
-                                <div class="k-card-body">
-                                    Selected
-                                </div>
+                        <div is="Card" orientation="horizontal" selected>
+                            <div is="CardBody">
+                                Selected
                             </div>
                         </div>
-                        <div class="k-card-wrap k-state-selected k-state-focused">
-                            <div class="k-card k-card-horizontal">
-                                <div class="k-card-body">
-                                    Focused Selected
-                                </div>
+                        <div is="Card" orientation="horizontal" focus selected>
+                            <div is="CardBody">
+                                Focused Selected
                             </div>
                         </div>
                     </div>

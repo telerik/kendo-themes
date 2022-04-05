@@ -21,10 +21,8 @@
 
     <div id="test-area" class="grid">
 
-        <div class="k-card k-card-horizontal">
-            <div class="k-card-body">
-                <h5 class="k-card-title">Card Title</h5>
-                <h6 class="k-card-subtitle">Card Subtitle</h6>
+        <div is="Card" orientation="horizontal">
+            <div is="CardBody" title="Card Title" subtitle="Card Subtitle">
                 <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             </div>
             <div is="ActionButtons" class="k-card-actions" alignment="stretched" orientation="vertical">
@@ -33,12 +31,10 @@
             </div>
         </div>
 
-        <div class="k-card k-card-horizontal">
-            <img class="k-card-image" src="../../assets/avatar.jpg" />
+        <div is="Card" orientation="horizontal">
+            <img is="CardImage" src="../../assets/avatar.jpg" />
             <div class="k-vstack k-flex">
-                <div class="k-card-body">
-                    <h5 class="k-card-title">Card Title</h5>
-                    <h6 class="k-card-subtitle">Card Subtitle</h6>
+                <div is="CardBody" title="Card Title" subtitle="Card Subtitle">
                     <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </div>
                 <span class="k-separator"></span>
@@ -49,15 +45,13 @@
             </div>
         </div>
 
-        <div class="k-card k-card-horizontal">
-            <span class="k-card-image">
+        <div is="Card" orientation="horizontal">
+            <span is="CardImage">
                 <img src="../../assets/avatar.jpg" />
             </span>
             <span class="k-separator k-separator-vertical"></span>
             <div class="k-vstack k-flex">
-                <div class="k-card-body">
-                    <h5 class="k-card-title">Card Title</h5>
-                    <h6 class="k-card-subtitle">Card Subtitle</h6>
+                <div is="CardBody" title="Card Title" subtitle="Card Subtitle">
                     <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </div>
                 <span class="k-separator"></span>
@@ -68,11 +62,9 @@
             </div>
         </div>
 
-        <div class="k-card k-card-vertical">
-            <div class="k-card-body k-text-center">
-                <h5 class="k-card-title">Sofia</h5>
+        <div is="Card" orientation="vertical">
+            <div is="CardBody" title="Sofia" subtitle="Sunny" class="k-text-center">
                 <div class="k-display-1">☀️</div>
-                <h6 class="k-card-subtitle">Sunny</h6>
                 <div class="k-display-2">2&deg;C</div>
             </div>
             <span class="k-separator"></span>
@@ -82,13 +74,11 @@
             </div>
         </div>
 
-        <div class="k-card k-card-vertical">
-            <div class="k-card-body">
-                <h5 class="k-card-title">Passenger</h5>
-                <h5 class="k-card-subtitle">GP, Gosho</h5>
+        <div is="Card" orientation="vertical">
+            <div is="CardBody" title="Passenger" subtitle="GP, Gosho">
             </div>
             <hr class="k-separator" />
-            <div class="k-card-body">
+            <div is="CardBody">
                 <div class="k-hstack">
                     <div class="k-flex k-text-left">Departure</div>
                     <div class="k-flex k-text-right">Arrival</div>
@@ -134,7 +124,7 @@
                 </div>
             </div>
             <hr class="k-separator" />
-            <div class="k-card-body">
+            <div is="CardBody">
                 <div class="k-hstack">
                     <div class="k-flex k-text-left">Total</div>
                     <div class="k-flex k-text-right">BGN 234</div>
@@ -142,20 +132,20 @@
             </div>
         </div>
 
-        <div class="k-card k-card-vertical">
-            <div class="k-card-header k-display-flex">
+        <div is="Card" orientation="vertical">
+            <div is="CardHeader" class="k-display-flex">
                 <div is="Avatar" type="image" themeColor="primary" rounded="medium" class="bg-img"></div>
                 <div>
-                    <h5 class="k-card-title">Thumbnail and Footer</h5>
-                    <h6 class="k-card-subtitle">Capital of Italy</h6>
+                    <h5 is="CardTitle">Thumbnail and Footer</h5>
+                    <h6 is="CardSubtitle">Capital of Italy</h6>
                 </div>
             </div>
-            <div class="k-card-body">
+            <div is="CardBody">
                 <p>Rome is a sprawling, cosmopolitan city with nearly 3,000 years of globally influential art, architecture and culture on display.</p>
                 <span class="k-separator k-separator-vertical"></span>
                 <p>Ancient ruins such as the Forum and the Colosseum evoke the power of the former Roman Empire. </p>
             </div>
-            <div class="k-card-footer">
+            <div is="CardFooter">
                 Footer here
             </div>
         </div>

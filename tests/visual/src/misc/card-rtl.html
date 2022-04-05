@@ -18,10 +18,8 @@
 
     <div id="test-area" class="grid k-rtl">
 
-        <div class="k-card k-card-vertical">
-            <div class="k-card-body">
-                <h5 class="k-card-title">RTL Vertical Card</h5>
-                <h6 class="k-card-subtitle">Actions Start</h6>
+        <div is="Card" orientation="vertical">
+            <div is="CardBody" title="RTL Vertical Card" subtitle="Actions Start">
                 <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             </div>
             <span class="k-separator"></span>
@@ -31,16 +29,14 @@
             </div>
         </div>
 
-        <div class="k-card k-card-horizontal">
+        <div is="Card" orientation="horizontal">
             <div class="k-d-flex k-flex-column">
-                <div class="k-card-header">
-                    <h5 class="k-card-title">RTL Horizontal Card</h5>
-                    <h6 class="k-card-subtitle">Actions Stretched</h6>
+                <div is="CardHeader" title="RTL Horizontal Card" subtitle="Actions Stretched">
                 </div>
-                <div class="k-card-body">
+                <div is="CardBody">
                     <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </div>
-                <div class="k-card-footer">
+                <div is="CardFooter">
                     Footer
                 </div>
             </div>
@@ -51,21 +47,19 @@
             </div>
         </div>
 
-        <div class="k-card k-card-horizontal">
-            <img class="k-card-image" src="http://via.placeholder.com/80x80" />
+        <div is="Card" orientation="horizontal">
+            <img is="CardImage" src="http://via.placeholder.com/80x80" />
             <div class="k-d-flex k-flex-column">
-                <div class="k-card-header">
-                    <h5 class="k-card-title">RTL Horizontal Card</h5>
-                    <h6 class="k-card-subtitle">Card Subtitle</h6>
+                <div is="CardHeader" title="RTL Horizontal Card" subtitle="Card Subtitle">
                 </div>
-                <div class="k-card-body">
+                <div is="CardBody">
                     <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </div>
                 <span class="k-separator"></span>
                 <div is="ActionButtons" class="k-card-actions" alignment="stretched">
                     <button is="Button" fillMode="flat" themeColor="primary">Action 1</button>
                 </div>
-                <div class="k-card-footer">
+                <div is="CardFooter">
                     Footer here
                 </div>
             </div>

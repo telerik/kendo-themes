@@ -13,6 +13,7 @@
             height: 200px;
             width: 200px;
             background: #cccccc;
+            display: block;
         }
     </style>
 </head>
@@ -57,17 +58,15 @@
                 <ul class="k-timeline-scrollable-wrap">
                     <li class="k-timeline-event">
                         <div class="k-timeline-card">
-                            <div class="k-card k-card-vertical k-card-with-callout">
-                                <span class="k-timeline-card-callout k-card-callout k-callout-n"></span>
+                            <div is="Card" orientation="vertical" callout="true">
+                                <span is="CardCallout" callout="top" class="k-timeline-card-callout"></span>
                                 <div class="k-card-inner">
-                                    <div class="k-card-header">
-                                        <h5 class="k-card-title">Title</h5>
-                                        <h6 class="k-card-subtitle">Subtitle</h6>
+                                    <div is="CardHeader" title="Title" subtitle="Subtitle">
                                     </div>
-                                    <div class="k-card-body">
+                                    <div is="CardBody">
                                         <div class="k-card-description">
                                             <p>Card Description Here</p>
-                                            <img class="k-card-image" />
+                                            <img is="CardImage" />
                                         </div>
                                     </div>
                                     <div is="ActionButtons" alignment="start" class="k-card-actions">

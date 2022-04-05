@@ -13,6 +13,7 @@
             height: 200px;
             width: 100%;
             background: #cccccc;
+            display: block;
         }
     </style>
 </head>
@@ -30,20 +31,20 @@
                     </div>
                     <a class="k-timeline-circle"></a>
                     <div class="k-timeline-card k-collapsed" >
-                        <div class="k-card k-card-vertical k-card-with-callout">
-                            <span class="k-timeline-card-callout k-card-callout k-callout-w"></span>
+                        <div is="Card" orientation="vertical" callout="true">
+                            <span is="CardCallout" callout="left" class="k-timeline-card-callout"></span>
                             <div class="k-card-inner">
-                                <div class="k-card-header">
-                                    <h5 class="k-card-title">
+                                <div is="CardHeader">
+                                    <h5 is="CardTitle">
                                         <span class="k-event-title">Collapsed Event</span>
                                         <button is="Button" fillMode="flat" icon="chevron-right" class="k-event-collapse"></button>
                                     </h5>
-                                    <h6 class="k-card-subtitle">Subtitle</h6>
+                                    <h6 is="CardSubtitle">Subtitle</h6>
                                 </div>
-                                <div class="k-card-body">
+                                <div is="CardBody">
                                     <div class="k-card-description">
                                         <p>Card Description here</p>
-                                        <img class="k-card-image" />
+                                        <img is="CardImage" />
                                     </div>
                                 </div>
                                 <div is="ActionButtons" class="k-card-actions">
@@ -60,20 +61,20 @@
                     </div>
                     <a class="k-timeline-circle"></a>
                     <div class="k-timeline-card k-expanded" >
-                        <div class="k-card k-card-vertical k-card-with-callout">
-                            <span class="k-timeline-card-callout k-card-callout k-callout-w"></span>
+                        <div is="Card" orientation="vertical" callout="true">
+                            <span is="CardCallout" callout="left" class="k-timeline-card-callout"></span>
                             <div class="k-card-inner">
-                                <div class="k-card-header">
-                                    <h5 class="k-card-title">
+                                <div is="CardHeader">
+                                    <h5 is="CardTitle">
                                         <span class="k-event-title">Expanded event with reallyyyyy long title</span>
                                         <button is="Button" fillMode="flat" icon="chevron-right" class="k-event-collapse"></button>
                                     </h5>
-                                    <h6 class="k-card-subtitle">Subtitle</h6>
+                                    <h6 is="CardSubtitle">Subtitle</h6>
                                 </div>
-                                <div class="k-card-body">
+                                <div is="CardBody">
                                     <div class="k-card-description">
                                         <p>Timeline Event Description</p>
-                                        <img class="k-card-image" />
+                                        <img is="CardImage" />
                                     </div>
                                 </div>
                                 <div is="ActionButtons" class="k-card-actions">
