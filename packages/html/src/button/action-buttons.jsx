@@ -1,3 +1,4 @@
+import * as styles from '../../utils/styles';
 import { Component, globalDefaultProps } from '../component/index';
 
 class ActionButtons extends Component {
@@ -23,8 +24,8 @@ function ActionButtonsStatic(props) {
     let ActionButtonsClasses = [
         ownClassName,
         'k-actions',
-        `k-actions-${alignment}`,
-        `k-actions-${orientation}`
+        styles.alignClass( alignment, 'k-actions' ),
+        styles.orientationClass( orientation, 'k-actions' ),
     ];
 
     let ariaAttr = aria
@@ -43,8 +44,8 @@ ActionButtonsStatic.defaultProps = {
     ...globalDefaultProps,
 
     children: [],
-    alignment: 'start',
-    orientation: 'horizontal'
+    alignment: null,
+    orientation: null
 
 };
 
@@ -52,8 +53,8 @@ ActionButtonsStatic.propTypes = {
     children: typeof [],
     className: typeof '',
 
-    alignment: typeof ['start', 'center', 'end', 'stretched'],
-    orientation: typeof ['horizontal', 'vertical'],
+    alignment: typeof [null, 'start', 'center', 'end', 'stretched'],
+    orientation: typeof [null, 'horizontal', 'vertical'],
     aria: typeof false,
 
     htmlAttributes: typeof []
