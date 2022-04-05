@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en" class="k-no-animations">
+<head>
+    <title>Outline Textbox</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+    <script src="../../assets/scripts.js"></script>
+    <script src="../../../../packages/html/dist/index.js"></script>
+
+    <style>
+        #test-area {
+            max-width: 660px;
+        }
+        .k-textbox {
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="k-body">
+
+    <div id="test-area" class="k-d-grid k-grid-cols-2">
+
+        <span>Outline Textbox</span>
+        <span>Outline Textbox RTL</span>
+
+        <!-- empty -->
+        <div>
+            <input is="Textbox" fillMode="outline" placeholder="Textbox..." />
+        </div>
+        <div dir="rtl">
+            <input is="Textbox" fillMode="outline" placeholder="Textbox..." />
+        </div>
+
+        <!-- normal -->
+        <div>
+            <input is="Textbox" fillMode="outline" value="Normal" />
+        </div>
+        <div dir="rtl">
+            <input is="Textbox" fillMode="outline" value="Normal" />
+        </div>
+
+        <!-- hover -->
+        <div>
+            <input is="Textbox" fillMode="outline" value="Hover" hover />
+        </div>
+        <div dir="rtl">
+            <input is="Textbox" fillMode="outline" value="Hover" hover />
+        </div>
+
+        <!-- focus -->
+        <div>
+            <input is="Textbox" fillMode="outline" value="Focus" focus />
+        </div>
+        <div dir="rtl">
+            <input is="Textbox" fillMode="outline" value="Focus" focus />
+        </div>
+
+        <!-- disabled -->
+        <div>
+            <input is="Textbox" fillMode="outline" value="Disabled" disabled />
+        </div>
+        <div dir="rtl">
+            <input is="Textbox" fillMode="outline" value="Disabled" disabled />
+        </div>
+
+        <!-- invalid -->
+        <div>
+            <input is="Textbox" fillMode="outline" value="Invalid" invalid />
+        </div>
+        <div dir="rtl">
+            <input is="Textbox" fillMode="outline" value="Invalid" invalid />
+        </div>
+
+        <!-- invalid focus -->
+        <div>
+            <input is="Textbox" fillMode="outline" value="Invalid focus" invalid focus />
+        </div>
+        <div dir="rtl">
+            <input is="Textbox" fillMode="outline" value="Invalid focus" invalid focus />
+        </div>
+
+        <!-- textbox prefix -->
+        <div placeholder="Prefix..." is="Textbox" fillMode="outline">
+            <span is="InputPrefix">
+                <span is="Icon" name="menu"></span>
+                <button is="Button" fillMode="clear" icon="calendar"></button>
+                <span class="k-input-separator"></span>
+            </span>
+        </div>
+        <div placeholder="Prefix..." dir="rtl" is="Textbox" fillMode="outline">
+            <span is="InputPrefix">
+                <span is="Icon" name="menu"></span>
+                <button is="Button" fillMode="clear" icon="calendar"></button>
+                <span class="k-input-separator"></span>
+            </span>
+        </div>
+
+        <!-- textbox suffix -->
+        <div placeholder="Suffix..." is="Textbox" fillMode="outline">
+            <span is="InputSuffix">
+                <span class="k-input-separator"></span>
+                <button is="Button" fillMode="clear" icon="calendar"></button>
+                <span is="Icon" name="bell"></span>
+            </span>
+        </div>
+        <div placeholder="Suffix..." dir="rtl" is="Textbox" fillMode="outline">
+            <span is="InputSuffix">
+                <span class="k-input-separator"></span>
+                <button is="Button" fillMode="clear" icon="calendar"></button>
+                <span is="Icon" name="bell"></span>
+            </span>
+        </div>
+    </div>
+
+</body>
+</html>
