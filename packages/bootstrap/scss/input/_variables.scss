@@ -116,8 +116,8 @@ $kendo-picker-disabled-gradient: null !default;
 $kendo-picker-disabled-shadow: null !default;
 
 $kendo-picker-outline-bg: transparent !default;
-$kendo-picker-outline-text: null !default;
-$kendo-picker-outline-border: null !default;
+$kendo-picker-outline-text: $kendo-button-text !default;
+$kendo-picker-outline-border: $kendo-picker-outline-text !default;
 
 $kendo-picker-outline-hover-bg: $kendo-button-text !default;
 $kendo-picker-outline-hover-text: $body-bg !default;
