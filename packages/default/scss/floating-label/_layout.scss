@@ -61,7 +61,8 @@
             transform: scale( $floating-label-focus-scale );
         }
 
-        &.k-state-empty:not(.k-state-focused) ::placeholder {
+        &.k-state-empty:not(.k-state-focused) ::placeholder,
+        &.k-empty:not(.k-focus):not(:focus-within) ::placeholder {
             color: transparent;
         }
 
