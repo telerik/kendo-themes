@@ -172,6 +172,27 @@
                 $kendo-picker-outline-hover-border
             );
         }
+
+        &:focus,
+        &.k-focus {
+            @include fill (
+                $kendo-picker-outline-focus-text,
+                $kendo-picker-outline-focus-bg,
+                $kendo-picker-outline-focus-border
+            );
+            @include box-shadow ( $kendo-picker-outline-focus-shadow );
+        }
+
+        &:focus:hover,
+        &:focus.k-hover,
+        &.k-focus:hover,
+        &.k-focus.k-hover {
+            @include fill (
+                $kendo-picker-outline-hover-focus-text,
+                $kendo-picker-outline-hover-focus-bg,
+                $kendo-picker-outline-hover-focus-border
+            );
+        }
     }
 
     // Flat

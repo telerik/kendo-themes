@@ -133,6 +133,15 @@ $kendo-picker-outline-hover-bg: null !default;
 $kendo-picker-outline-hover-text: null !default;
 $kendo-picker-outline-hover-border: null !default;
 
+$kendo-picker-outline-focus-bg: transparent !default;
+$kendo-picker-outline-focus-text: $kendo-picker-outline-text !default;
+$kendo-picker-outline-focus-border: $kendo-picker-outline-border !default;
+$kendo-picker-outline-focus-shadow: $kendo-picker-focus-shadow !default;
+
+$kendo-picker-outline-hover-focus-bg: $kendo-picker-outline-hover-bg !default;
+$kendo-picker-outline-hover-focus-text: $kendo-picker-outline-hover-text !default;
+$kendo-picker-outline-hover-focus-border: $kendo-picker-outline-hover-border !default;
+
 $kendo-picker-flat-bg: transparent !default;
 $kendo-picker-flat-text: $kendo-button-text !default;
 $kendo-picker-flat-border: $kendo-button-border !default;
