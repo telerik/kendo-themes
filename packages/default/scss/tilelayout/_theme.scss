@@ -7,6 +7,7 @@
     }
 
     .k-tilelayout-item:focus,
+    .k-tilelayout-item.k-focus,
     .k-tilelayout-item.k-state-focus,
     .k-tilelayout-item.k-state-focused {
         @include box-shadow($tilelayout-card-focus-shadow);
