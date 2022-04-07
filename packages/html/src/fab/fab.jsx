@@ -29,7 +29,7 @@ function FabStatic(props) {
 
         icon,
 
-        position,
+        align,
 
         hover,
         focus,
@@ -46,7 +46,8 @@ function FabStatic(props) {
     let buttonClasses = [
         ownClassName,
         'k-fab',
-        styles.positionClass( position, 'k'),
+        styles.positionClass( align && 'absolute' ),
+        styles.alignClass( align, 'k'),
         styles.shapeClass( shape, 'k-fab' ),
         styles.sizeClass( size, 'k-fab' ),
         styles.roundedClass( rounded ),
@@ -81,7 +82,8 @@ function FabStatic(props) {
                 'k-state-selected': selected === true,
                 'k-state-disabled': disabled === true
             },
-            styles.positionClass( position, 'k'),
+            styles.positionClass( align && 'absolute' ),
+            styles.alignClass( align, 'k'),
             styles.sizeClass( size, 'k-fab' )
         ];
 
@@ -114,7 +116,7 @@ FabStatic.defaultProps = {
     rounded: 'full',
     shape: 'rectangle',
 
-    position: null,
+    align: null,
 
     fillMode: 'solid',
     themeColor: 'primary'
@@ -132,7 +134,7 @@ FabStatic.propTypes = {
     fillMode: typeof [ null, 'solid' ],
     themeColor: typeof [ null, 'primary', 'secondary', 'tertiary', 'info', 'success', 'warning', 'error', 'dark', 'light', 'inverse' ],
 
-    position: typeof [ null, 'top-start', 'top-center', 'top-end', 'middle-start', 'middle-end', 'bottom-start', 'bottom-center', 'bottom-end' ],
+    align: typeof [ null, 'top-start', 'top-center', 'top-end', 'middle-start', 'middle-end', 'bottom-start', 'bottom-center', 'bottom-end' ],
 
     hover: typeof false,
     focus: typeof false,

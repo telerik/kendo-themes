@@ -21,6 +21,11 @@ const calloutMap = {
     'right': 'e'
 };
 
+const orientationMap = {
+    'vertical': 'vstack',
+    'horizontal': 'hstack',
+};
+
 function lookup( map, key ) {
     let result = map[key];
 
@@ -79,12 +84,20 @@ function borderedClass( bordered, prefix ) {
     return `${prefix}-bordered`;
 }
 
-function positionClass( position, prefix ) {
+function placementClass( placement, prefix ) {
+    if ( placement === null ) {
+        return '';
+    }
+
+    return `${prefix}-${placement}`;
+}
+
+function positionClass( position ) {
     if ( position === null ) {
         return '';
     }
 
-    return `${prefix}-${position}`;
+    return `k-pos-${position}`;
 }
 
 function alignClass( align, prefix ) {
@@ -109,6 +122,14 @@ function orientationClass( orientation, prefix ) {
     }
 
     return `${prefix}-${orientation}`;
+}
+
+function orientationStackClass( orientation ) {
+    if ( orientation === null ) {
+        return '';
+    }
+
+    return `k-${lookup(orientationMap, orientation)}`;
 }
 
 function classNames( ...args ) {
@@ -171,9 +192,11 @@ export {
     themeColorClass,
     borderedClass,
     alignClass,
+    placementClass,
     positionClass,
     calloutClass,
     orientationClass,
+    orientationStackClass,
 
     classNames,
     cssStyle,

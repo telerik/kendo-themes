@@ -52,7 +52,12 @@ const attrMap = {
     contenttemplate: 'contentTemplate',
 
     // ColorPalette
-    tilesize: 'tileSize'
+    tilesize: 'tileSize',
+
+    //Layout
+    alignitems: 'alignItems',
+    justifycontent: 'justifyContent',
+    justifyitems: 'justifyItems'
 };
 
 const booleanAttr = new Set([
@@ -96,6 +101,9 @@ const booleanAttr = new Set([
     'showArrow',
 
     'showAvatar',
+
+    'line',
+    'plus',
 
     'aria'
 ]);
