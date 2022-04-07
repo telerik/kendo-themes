@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.3.1](https://github.com/telerik/kendo-themes/compare/v5.3.0...v5.3.1) (2022-04-07)
+
+
+### Bug Fixes
+
+* **floatinglabel:** placeholder should be transparent if floating label is not focused ([2192dab](https://github.com/telerik/kendo-themes/commit/2192dab4c3cda7ad54151be6b5845f1135d29179))
+* **swatches:** export ocean blue swatch ([dfbfbc6](https://github.com/telerik/kendo-themes/commit/dfbfbc672e8507ee4a37a3825b8e3fcc9634fce4))
+
+
+
+
+
 # [5.3.0](https://github.com/telerik/kendo-themes/compare/v5.2.0...v5.3.0) (2022-04-04)
 
 

@@ -1,7 +1,7 @@
 {
   "name": "@progress/kendo-theme-material",
   "description": "Material theme for Kendo UI",
-  "version": "5.3.0",
+  "version": "5.3.1",
   "author": "Progress",
   "license": "Apache-2.0",
   "keywords": [
@@ -50,6 +50,6 @@
     "postpublish": "echo 'no postpublish for material theme'"
   },
   "dependencies": {
-    "@progress/kendo-theme-default": "^5.3.0"
+    "@progress/kendo-theme-default": "^5.3.1"
   }
 }
