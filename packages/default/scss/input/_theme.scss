@@ -310,6 +310,17 @@
             @include box-shadow( $kendo-picker-flat-focus-shadow );
         }
 
+        &:focus:hover,
+        &:focus.k-hover,
+        &.k-focus:hover,
+        &.k-focus.k-hover {
+            @include fill (
+                $kendo-picker-flat-hover-focus-text,
+                $kendo-picker-flat-hover-focus-bg,
+                $kendo-picker-flat-hover-focus-border
+            );
+        }
+
         // Invalid
         &.k-invalid,
         &.ng-invalid.ng-touched,
