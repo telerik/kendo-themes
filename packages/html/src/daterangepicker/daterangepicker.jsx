@@ -1,4 +1,6 @@
 import { globalDefaultProps, Component } from '../component/index';
+import { ButtonStatic } from '../button/index';
+import { IconStatic } from '../icon/index';
 import { FloatingLabelStatic } from '../input/index';
 import { DateInputStatic } from '../dateinput/index';
 
@@ -16,6 +18,8 @@ function DateRangePickerStatic(props) {
         size,
         rounded,
         fillMode,
+
+        swapButton,
 
         disabled,
 
@@ -47,6 +51,11 @@ function DateRangePickerStatic(props) {
             <FloatingLabelStatic label="Start">
                 <DateInputStatic showSpinButton="false" {...dateInputAttributes}/>
             </FloatingLabelStatic>
+            {swapButton &&
+                <ButtonStatic className="k-icon-button" rounded={rounded} size={size} fillMode="flat" themeColor="base">
+                    <IconStatic className="k-button-icon" name="arrows-swap" style="transform: rotate(90deg);"/>
+                </ButtonStatic>
+            }
             <FloatingLabelStatic label="End">
                 <DateInputStatic showSpinButton="false" {...dateInputAttributes}/>
             </FloatingLabelStatic>
@@ -68,6 +77,8 @@ DateRangePickerStatic.propTypes = {
     size: typeof [ null, 'small', 'medium', 'large' ],
     rounded: typeof [ null, 'small', 'medium', 'large', 'full' ],
     fillMode: typeof [ null, 'solid', 'flat', 'outline' ],
+
+    swapButton: typeof false,
 
     disabled: typeof false,
 
