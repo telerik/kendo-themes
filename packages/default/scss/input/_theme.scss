@@ -155,6 +155,39 @@
             $kendo-input-outline-bg,
             $kendo-input-outline-border
         );
+
+        & > .k-input-button {
+            border-color: inherit;
+        }
+
+        &:hover,
+        &.k-hover {
+            @include fill (
+                $kendo-input-outline-hover-text,
+                $kendo-input-outline-hover-bg,
+                $kendo-input-outline-hover-border
+            );
+        }
+
+        // Invalid
+        &.k-invalid,
+        &.ng-invalid.ng-touched,
+        &.ng-invalid.ng-dirty {
+            @include fill( $border: $invalid-border );
+
+            .k-input-validation-icon {
+                color: $invalid-text;
+            }
+
+            &:focus,
+            &.k-focus {
+                @include box-shadow($invalid-shadow);
+            }
+            &:focus-within {
+                @include box-shadow($invalid-shadow);
+            }
+        }
+
     }
 
     .k-picker-outline {
@@ -192,6 +225,25 @@
                 $kendo-picker-outline-hover-focus-bg,
                 $kendo-picker-outline-hover-focus-border
             );
+        }
+
+        // Invalid
+        &.k-invalid,
+        &.ng-invalid.ng-touched,
+        &.ng-invalid.ng-dirty {
+            @include fill( $border: $invalid-border );
+
+            .k-input-validation-icon {
+                color: $invalid-text;
+            }
+
+            &:focus,
+            &.k-focus {
+                @include box-shadow($invalid-shadow);
+            }
+            &:focus-within {
+                @include box-shadow($invalid-shadow);
+            }
         }
     }
 
