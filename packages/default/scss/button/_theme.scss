@@ -280,10 +280,4 @@
     .k-button-group {}
 
 
-    // Split button
-    .k-split-button:focus,
-    .k-split-button.k-focus {
-        @include box-shadow( $kendo-button-focus-shadow );
-    }
-
 }
