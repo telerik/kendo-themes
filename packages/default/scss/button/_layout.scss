@@ -68,26 +68,6 @@
 
     .k-button-text {}
 
-
-    // Button arrow
-    .k-button-arrow {
-        padding-left: $kendo-button-arrow-padding-x;
-        padding-right: $kendo-button-arrow-padding-x;
-        flex: none;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .k-button > .k-button-arrow {
-        margin-inline-start: -$kendo-button-arrow-padding-x;
-        margin-inline-end: -$kendo-button-padding-x;
-    }
-    .k-icon-button > .k-button-arrow {
-        margin-inline-start: 0;
-        margin-inline-end: -$kendo-button-padding-y;
-    }
-
-
     // Sizes
     .k-button-sm {
         padding: $kendo-button-padding-y-sm $kendo-button-padding-x-sm;
@@ -134,17 +114,6 @@
     // Button shape
     .k-button-square {
         aspect-ratio: 1;
-    }
-
-
-    // Menu button
-    .k-menu-button,
-    .k-dropdown-button {
-        aspect-ratio: auto;
-        outline: 0;
-        display: inline-flex;
-        flex-flow: row nowrap;
-        vertical-align: middle;
     }
 
 
