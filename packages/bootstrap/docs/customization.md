@@ -2409,7 +2409,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Color</td>
 <td>
 
-`$kendo-button-text`
+`$base-text`
 
 </td>
 <td>
