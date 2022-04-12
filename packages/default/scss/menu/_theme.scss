@@ -82,9 +82,9 @@
             }
         }
 
-        .k-item {
-            &:focus,
-            &.k-focus {
+        .k-item:focus,
+        .k-item.k-focus {
+            > .k-link {
                 @include box-shadow( $kendo-menu-popup-item-focus-shadow );
             }
         }
