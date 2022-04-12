@@ -187,19 +187,19 @@
     .k-i-arrows-no-change::before { content: "\e011"; }
     .k-i-arrow-overflow-down::before { content: "\e012"; }
     .k-i-chevron-up::before { content: "\e013"; }
-    .k-i-chevron-double-up::before { content: "\e94a"; }
+    .k-i-chevron-double-up::before { content: "\e05e"; }
     .k-i-arrow-chevron-up::before { content: "\e013"; }
     .k-i-arrowhead-n::before { content: "\e013"; }
     .k-i-chevron-right::before { content: "\e014"; }
-    .k-i-chevron-double-right::before { content: "\e94b"; }
+    .k-i-chevron-double-right::before { content: "\e05f"; }
     .k-i-arrow-chevron-right::before { content: "\e014"; }
     .k-i-arrowhead-e::before { content: "\e014"; }
     .k-i-chevron-down::before { content: "\e015"; }
-    .k-i-chevron-double-down::before { content: "\e94c"; }
+    .k-i-chevron-double-down::before { content: "\e060"; }
     .k-i-arrow-chevron-down::before { content: "\e015"; }
     .k-i-arrowhead-s::before { content: "\e015"; }
     .k-i-chevron-left::before { content: "\e016"; }
-    .k-i-chevron-double-left::before { content: "\e94d"; }
+    .k-i-chevron-double-left::before { content: "\e061"; }
     .k-i-arrow-chevron-left::before { content: "\e016"; }
     .k-i-arrowhead-w::before { content: "\e016"; }
     .k-i-arrow-up::before { content: "\e017"; }
@@ -1048,6 +1048,7 @@
     .k-i-file-image::before { content: "\e93d"; }
     .k-i-file-presentation::before { content: "\e93e"; }
     .k-i-file-data::before { content: "\e93f"; }
+    .k-i-report-element::before { content: "\e94a"; }
     .k-i-file-disc-image::before { content: "\e940"; }
     .k-i-file-programming::before { content: "\e941"; }
     .k-i-parameters-byte-array::before { content: "\e942"; }
