@@ -8847,22 +8847,22 @@ The following table lists the available variables for customizing the Classic th
 
 `(
     sm: (
-        font-size: $font-size-md,
-        line-height: $line-height-md,
-        item-padding-x: map-get( $spacing, 2 ),
-        item-padding-y: map-get( $spacing, 1 ) - map-get( $spacing, thin )
+        font-size: $kendo-treeview-font-size-sm,
+        line-height: $kendo-treeview-line-height-sm,
+        item-padding-x: $kendo-treeview-item-padding-x-sm,
+        item-padding-y: $kendo-treeview-item-padding-y-sm
     ),
     md: (
-        font-size: $font-size-md,
-        line-height: $line-height-md,
-        item-padding-x: map-get( $spacing, 2 ),
-        item-padding-y: map-get( $spacing, 1 )
+        font-size: $kendo-treeview-font-size-md,
+        line-height: $kendo-treeview-line-height-md,
+        item-padding-x: $kendo-treeview-item-padding-x-md,
+        item-padding-y: $kendo-treeview-item-padding-y-md
     ),
     lg: (
-        font-size: $font-size-md,
-        line-height: $line-height-md,
-        item-padding-x: map-get( $spacing, 2 ),
-        item-padding-y: map-get( $spacing, 1 ) + map-get( $spacing, thin )
+        font-size: $kendo-treeview-font-size-lg,
+        line-height: $kendo-treeview-line-height-lg,
+        item-padding-x: $kendo-treeview-item-padding-x-lg,
+        item-padding-y: $kendo-treeview-item-padding-y-lg
     )
 )`
 
