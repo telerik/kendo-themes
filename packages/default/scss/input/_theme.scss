@@ -160,6 +160,15 @@
             border-color: inherit;
         }
 
+        & > .k-input-spinner {
+            border-color: inherit;
+
+            & > .k-spinner-increase,
+            & > .k-spinner-decrease {
+                border-color: inherit;
+           }
+        }
+
         &:hover,
         &.k-hover {
             @include fill (
