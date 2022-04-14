@@ -93,7 +93,7 @@ $kendo-input-flat-focus-bg: null !default;
 $kendo-input-flat-focus-text: null !default;
 $kendo-input-flat-focus-border: null !default;
 
-$kendo-input-flat-border-radius: 4px 4px 0px 0px !default;
+$kendo-input-flat-border-radius: $kendo-border-radius $kendo-border-radius 0px 0px !default;
 
 $kendo-picker-bg: $kendo-button-bg !default;
 $kendo-picker-text: $kendo-button-text !default;
