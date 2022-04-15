@@ -48,20 +48,6 @@ $kendo-button-calc-size: calc( #{$kendo-button-line-height * 1em} + #{$kendo-but
 /// @group button
 $kendo-button-inner-calc-size: calc( #{$kendo-button-line-height * 1em} + #{$kendo-button-padding-y * 2} ) !default;
 
-/// Horizontal padding of the arrow button.
-/// @group button
-$kendo-button-arrow-padding-x: map-get( $spacing, 1 ) !default;
-$kendo-button-arrow-padding-x-sm: map-get( $spacing, 1 ) !default;
-$kendo-button-arrow-padding-x-md: map-get( $spacing, 1 ) !default;
-$kendo-button-arrow-padding-x-lg: map-get( $spacing, 1 ) !default;
-
-/// Vertical padding of the arrow button.
-/// @group button
-$kendo-button-arrow-padding-y: $kendo-button-padding-y !default;
-$kendo-button-arrow-padding-y-sm: $kendo-button-padding-y-sm !default;
-$kendo-button-arrow-padding-y-md: $kendo-button-padding-y-md !default;
-$kendo-button-arrow-padding-y-lg: $kendo-button-padding-y-lg !default;
-
 /// Theme colors map for the button.
 /// @group button
 $kendo-button-theme-colors: map-merge(

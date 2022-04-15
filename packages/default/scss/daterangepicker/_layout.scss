@@ -5,7 +5,7 @@
         width: $kendo-input-default-width;
         display: flex;
         flex-flow: row nowrap;
-        align-items: flex-start;
+        align-items: flex-end;
         gap: map-get( $spacing, 2 );
 
         *,
