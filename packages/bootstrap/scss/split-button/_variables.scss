@@ -1,0 +1,19 @@
+// Split-button
+
+/// Focus shadow of the split button.
+/// @group split-button
+$kendo-split-button-focus-shadow: $kendo-button-focus-shadow !default;
+
+/// Horizontal padding of the arrow button.
+/// @group split-button
+$kendo-split-button-arrow-padding-x: $kendo-button-padding-y !default;
+$kendo-split-button-arrow-padding-x-sm: $kendo-button-padding-y-sm !default;
+$kendo-split-button-arrow-padding-x-md: $kendo-button-padding-y-md !default;
+$kendo-split-button-arrow-padding-x-lg: $kendo-button-padding-y-lg !default;
+
+/// Vertical padding of the arrow button.
+/// @group split-button
+$kendo-split-button-arrow-padding-y: $kendo-button-padding-y !default;
+$kendo-split-button-arrow-padding-y-sm: $kendo-button-padding-y-sm !default;
+$kendo-split-button-arrow-padding-y-md: $kendo-button-padding-y-md !default;
+$kendo-split-button-arrow-padding-y-lg: $kendo-button-padding-y-lg !default;

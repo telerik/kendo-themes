@@ -1,0 +1,9 @@
+@include exports("split-button/theme") {
+
+    // Split button
+    .k-split-button:focus,
+    .k-split-button.k-focus {
+        @include box-shadow( $kendo-split-button-focus-shadow );
+    }
+
+}
