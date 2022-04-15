@@ -25,6 +25,9 @@
         .k-event-actions {
             right: $padding-x-sm;
             font-size: $font-size-sm;
+            &:first-child {
+                margin: .1ex .4ex 0 $padding-x-sm;
+            }
         }
     }
 
