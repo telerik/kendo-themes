@@ -1,7 +1,7 @@
 {
   "name": "@progress/kendo-themes-html",
   "description": "A collection of HTML helpers used for developing Kendo UI themes",
-  "version": "5.3.0",
+  "version": "5.3.2-dev.0",
   "author": "Progress",
   "license": "Apache-2.0",
   "keywords": [

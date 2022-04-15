@@ -188,42 +188,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-button-arrow-padding-x</td>
-    <td>Number</td>
-<td>
-
-`map-get( $spacing, 1 )`
-
-</td>
-<td>
-
-`4px`
-
-</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the arrow button.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-button-arrow-padding-y</td>
-    <td>Number</td>
-<td>
-
-`$kendo-button-padding-y`
-
-</td>
-<td>
-
-`8px`
-
-</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the arrow button.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-button-theme-colors</td>
     <td>Map</td>
 <td>

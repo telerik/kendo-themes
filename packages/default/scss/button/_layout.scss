@@ -68,26 +68,6 @@
 
     .k-button-text {}
 
-
-    // Button arrow
-    .k-button-arrow {
-        padding-left: $kendo-button-arrow-padding-x;
-        padding-right: $kendo-button-arrow-padding-x;
-        flex: none;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .k-button > .k-button-arrow {
-        margin-inline-start: -$kendo-button-arrow-padding-x;
-        margin-inline-end: -$kendo-button-padding-x;
-    }
-    .k-icon-button > .k-button-arrow {
-        margin-inline-start: 0;
-        margin-inline-end: -$kendo-button-padding-y;
-    }
-
-
     // Sizes
     .k-button-sm {
         padding: $kendo-button-padding-y-sm $kendo-button-padding-x-sm;
@@ -134,17 +114,6 @@
     // Button shape
     .k-button-square {
         aspect-ratio: 1;
-    }
-
-
-    // Menu button
-    .k-menu-button,
-    .k-dropdown-button {
-        aspect-ratio: auto;
-        outline: 0;
-        display: inline-flex;
-        flex-flow: row nowrap;
-        vertical-align: middle;
     }
 
 
@@ -210,34 +179,6 @@
     }
 
 
-    // Split button
-    .k-split-button {
-
-        .k-split-button-arrow {
-            padding: $kendo-button-arrow-padding-y $kendo-button-arrow-padding-x;
-            width: auto;
-            aspect-ratio: auto;
-            flex: none;
-
-            &.k-button-sm {
-                padding: $kendo-button-arrow-padding-y-sm $kendo-button-arrow-padding-x-sm;
-            }
-
-            &.k-button-md {
-                padding: $kendo-button-arrow-padding-y-md $kendo-button-arrow-padding-x-md;
-            }
-
-            &.k-button-lg {
-                padding: $kendo-button-arrow-padding-y-lg $kendo-button-arrow-padding-x-lg;
-            }
-
-            .k-button-icon {
-                min-width: 0;
-            }
-        }
-    }
-
-
     // Flat button
     .k-button-flat {
         border-color: transparent !important; // sass-lint:disable-line no-important
@@ -296,8 +237,7 @@
 
 
     // IE
-    .k-ie .k-button-group,
-    .k-ie .k-split-button {
+    .k-ie .k-button-group {
         .k-button {
             @include border-radius( 0 );
         }

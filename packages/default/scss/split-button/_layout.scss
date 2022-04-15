@@ -1,0 +1,40 @@
+@include exports("split-button/layout") {
+
+
+    // Split button arrow
+    .k-split-button .k-split-button-arrow {
+        padding: $kendo-split-button-arrow-padding-y $kendo-split-button-arrow-padding-x;
+        width: auto;
+        aspect-ratio: auto;
+        flex: none;
+
+        &.k-button-sm {
+            padding: $kendo-split-button-arrow-padding-y-sm $kendo-split-button-arrow-padding-x-sm;
+        }
+
+        &.k-button-md {
+            padding: $kendo-split-button-arrow-padding-y-md $kendo-split-button-arrow-padding-x-md;
+        }
+
+        &.k-button-lg {
+            padding: $kendo-split-button-arrow-padding-y-lg $kendo-split-button-arrow-padding-x-lg;
+        }
+
+        .k-button-icon {
+            min-width: 0;
+        }
+    }
+
+
+}
+
+
+@include exports("split-button/layout/legacy") {
+
+    .k-ie .k-split-button {
+        .k-button {
+            @include border-radius( 0 );
+        }
+    }
+
+}
