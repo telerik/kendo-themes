@@ -178,6 +178,16 @@
             );
         }
 
+        &:focus,
+        &.k-focus {
+            @include fill (
+                $kendo-input-outline-focus-text,
+                $kendo-input-outline-focus-bg,
+                $kendo-input-outline-focus-border
+             );
+            @include box-shadow ( $kendo-input-outline-focus-shadow );
+        }
+
         // Invalid
         &.k-invalid,
         &.ng-invalid.ng-touched,
