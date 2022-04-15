@@ -85,6 +85,11 @@ $kendo-input-outline-hover-bg: null !default;
 $kendo-input-outline-hover-text: null !default;
 $kendo-input-outline-hover-border: rgba( $kendo-button-text, .8) !default;
 
+$kendo-input-outline-focus-bg: null !default;
+$kendo-input-outline-focus-text: null !default;
+$kendo-input-outline-focus-border: $kendo-input-outline-border !default;
+$kendo-input-outline-focus-shadow: $kendo-input-focus-shadow !default;
+
 $kendo-input-flat-bg: transparent !default;
 $kendo-input-flat-text: $kendo-input-text !default;
 $kendo-input-flat-border: $kendo-input-border !default;
