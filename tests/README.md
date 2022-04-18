@@ -3,11 +3,13 @@
 ## Overview
 
 To guard against regressions and make pull request reviews easier, the CI build automatically generates:
+
 * an `.html` output page in `tests/[component]/` for each visual test from `packages/html/[component]/tests/`. The generated page contains the vanilla HTML output of the source page.
 * screenshots of the sample pages in `tests/[component]/`.
 This happens automatically for all feature branches.
 
 The output pages contain static HTML that represents:
+
 * The recommended rendering for components that use the theme.
 * Actual rendering in various suites that may not match the reference rendering.
 

@@ -58,15 +58,14 @@ Stable channel is released manually trough a github action.
 
 ### Visual tests
 
-To guard against regressions and make pull request reviews easier, the CI build makes screenshots of the sample pages in `tests/visual/*.html`. This happens automatically for all feature branches. The sample pages contain static HTML that is the recommended rendering for components that use the theme.
+To guard against regressions and make pull request reviews easier, the CI build makes screenshots of the sample pages in `packages/html/src/[component]/tests/*.html`. This happens automatically for all feature branches. The sample pages contain static HTML that is the recommended rendering for components that use the theme.
 
 To generate screenshots for a specific theme:
 
 1. Build the theme with `npm run sass` or `npm run dart`
 1. Run `npm run create-screenshots <theme>`, substituting `<theme>` with a theme name.
 
-These steps will create new screenshots in `tests/output`. Note that due to platform differences, all of the files will be marked as changed.
-
+These steps will create new screenshots in `tests/_output`. Note that due to platform differences, all of the files will be marked as changed.
 
 ### Embedding Resources
 

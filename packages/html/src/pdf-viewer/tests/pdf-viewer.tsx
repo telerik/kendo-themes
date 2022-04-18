@@ -1,0 +1,42 @@
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import { Button } from '../../button';
+import { Textbox } from '../../textbox';
+
+const root = ReactDOM.createRoot(
+    document.getElementById('app') as HTMLElement
+);
+
+const styles = `
+    #test-area .k-pdf-viewer {
+        height: 600px;
+    }
+`;
+
+root.render(
+    <>
+        <style>{styles}</style>
+        <div id="test-area" className="k-d-grid k-grid-cols-1">
+
+            <div className="k-widget k-pdf-viewer">
+                <div className="k-toolbar k-widget k-toolbar-resizable">
+                    <div className="k-pager-wrap">
+                        <Button fillMode="flat" icon="arrow-end-left" className="k-pager-nav k-pager-first"></Button>
+                        <Button fillMode="flat" icon="arrow-60-left" className="k-pager-nav"></Button>
+                        <span className="k-pager-input k-label"><Textbox />of 4 pages</span>
+                        <Button fillMode="flat" icon="arrow-60-right" className="k-pager-nav"></Button>
+                        <Button fillMode="flat" icon="arrow-end-right" className="k-pager-nav k-pager-last"></Button>
+                    </div>
+                    <span className="k-spacer"></span>
+                    <Button fillMode="flat" icon="file-pdf"></Button>
+                    <Button fillMode="flat" icon="print"></Button>
+                    <Button fillMode="flat" icon="fullscreen"></Button>
+                </div>
+                <div className="k-canvas k-list-scroller">
+                    <div className="k-page" style={{ width: "720px", height: "360px" }}></div>
+                    <div className="k-page" style={{ width: "720px", height: "360px" }}></div>
+                </div>
+            </div>
+        </div>
+    </>
+);
