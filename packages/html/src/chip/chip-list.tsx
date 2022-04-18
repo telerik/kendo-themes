@@ -1,63 +1,39 @@
+import * as React from 'react';
+import { ChipProps } from '../chip';
+import { classNames, kendoThemeMaps } from '../utils';
 
-import * as styles from '../../utils/styles';
-import { Component, globalDefaultProps } from '../component/index';
+export interface ChipListProps {
+    children?: React.ReactElement<ChipProps> | React.ReactElement<ChipProps>[];
+    className?: string;
+    size?: null | 'small' | 'medium' | 'large';
+}
 
-class ChipList extends Component {
+export class ChipList extends React.Component<ChipListProps> {
+
+    static defaultProps = {
+        size: 'medium',
+        selection: null
+    };
+
     render() {
-        return <ChipListStatic {...this.props} />;
+        const {
+            children,
+            className,
+            size
+        } = this.props;
+
+        return (
+            <div
+                className={classNames(
+                    className,
+                    'k-chip-list',
+                    {
+                        [`k-chip-list-${kendoThemeMaps.sizeMap[size!] || size}`]: size,
+                    }
+                )}
+            >
+                {children}
+            </div>
+        );
     }
 }
-
-function ChipListStatic(props) {
-    const {
-        className: ownClassName,
-
-        children,
-
-        size,
-
-        aria,
-
-        ...htmlAttributes
-    } = props;
-
-    let listClasses = [
-        ownClassName,
-        'k-chip-list',
-        styles.sizeClass( size, 'k-chip-list' )
-    ];
-
-    let ariaAttr = aria
-        ? {}
-        : {};
-
-    return (
-        <div className={listClasses} {...ariaAttr} {...htmlAttributes}>
-            {children}
-        </div>
-    );
-}
-
-ChipListStatic.defaultProps = {
-    ...globalDefaultProps,
-
-    size: 'medium',
-
-    selection: 'none'
-};
-
-ChipListStatic.propTypes = {
-    className: typeof '',
-    children: typeof [],
-
-    size: typeof [ null, 'small', 'medium', 'large' ],
-
-    selection: typeof [ null, 'single', 'multiple' ],
-
-    aria: typeof false,
-    legacy: typeof false,
-
-    htmlAttributes: typeof []
-};
-
-export { ChipList, ChipListStatic };

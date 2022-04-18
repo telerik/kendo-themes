@@ -1,44 +1,21 @@
-import * as styles from '../../utils/styles';
-import { Component, globalDefaultProps } from '../component/index';
+import * as React from 'react';
+import { ColorPaletteTileProps } from '../colorpalette';
 
-class ColorPaletteRow extends Component {
+export interface ColorPaletteRowProps {
+    className?: string;
+    children?: React.ReactElement<ColorPaletteTileProps> | React.ReactElement<ColorPaletteTileProps>[];
+
+}
+
+export class ColorPaletteRow extends React.Component<ColorPaletteRowProps> {
+
     render() {
-        return <ColorPaletteRowStatic {...this.props} />;
+        const {
+            children,
+        } = this.props;
+
+        return (
+            <tr>{children}</tr>
+        );
     }
 }
-
-function ColorPaletteRowStatic(props) {
-    const {
-        className: ownClassName,
-
-        aria,
-
-        ...htmlAttributes
-    } = props;
-
-    let ariaAttr = aria
-        ? {}
-        : {};
-
-    let rowClasses = [
-        ownClassName
-    ];
-
-    return (
-        <tr className={styles.classNames(...rowClasses)} {...ariaAttr} {...htmlAttributes}></tr>
-    );
-}
-
-ColorPaletteRowStatic.defaultProps = {
-    ...globalDefaultProps
-};
-
-ColorPaletteRowStatic.propTypes = {
-    className: typeof '',
-
-    aria: typeof false,
-
-    htmlAttributes: typeof []
-};
-
-export { ColorPaletteRow, ColorPaletteRowStatic };

@@ -1,1 +1,1 @@
-export * from './action-buttons.jsx';
+export * from './action-buttons';

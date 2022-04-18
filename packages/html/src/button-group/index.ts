@@ -1,1 +1,1 @@
-export * from './button-group.jsx';
+export * from './button-group';

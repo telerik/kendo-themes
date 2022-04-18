@@ -1,119 +1,83 @@
-import { Component, globalDefaultProps } from '../component/index';
-import { TreeviewGroupStatic } from './treeview-group.jsx';
-import { TreeviewLeafStatic } from './treeview-leaf.jsx';
-import { IconStatic } from '../icon/index';
-import { CheckboxStatic } from '../checkbox/index';
+import * as React from 'react';
+import { Icon } from '../icon';
+import { Checkbox } from '../checkbox';
+import { classNames } from '../utils';
+import { TreeViewLeaf } from './treeview-leaf';
 
-class TreeviewItem extends Component {
+export interface TreeviewItemProps {
+    className?: string;
+    leafClassName?: string;
+    children?: any;
+    hasChildren?: boolean;
+    expanded?: boolean;
+    text?: string;
+    showIcon?: boolean;
+    icon?: string;
+    showCheckbox?: boolean;
+    checked?: boolean;
+    hover?: boolean;
+    focus?: boolean;
+    selected?: boolean;
+    disabled?: boolean;
+}
+
+export class TreeviewItem extends React.Component<TreeviewItemProps> {
+
     render() {
-        return <TreeviewItemStatic {...this.props} />;
+        const {
+            className,
+            leafClassName,
+            children,
+            hasChildren,
+            expanded,
+            text,
+            showIcon,
+            icon,
+            showCheckbox,
+            checked,
+            hover,
+            focus,
+            selected,
+            disabled
+        } = this.props;
+
+        const _hasChildren = hasChildren || children;
+
+        return (
+            <li
+                className={classNames(
+                    className,
+                    'k-treeview-item',
+                    {
+                        'k-disabled': disabled
+                    }
+                )}
+            >
+                <span className="k-treeview-mid">
+                    {_hasChildren && (
+                        <span className="k-treeview-toggle">
+                            <Icon name={expanded ? 'collapse' : 'expand'} />
+                        </span>
+                    )}
+                    {showCheckbox && (
+                        <Checkbox checked={checked} />
+                    )}
+                    <TreeViewLeaf
+                        className={leafClassName}
+                        text={text}
+                        showIcon={showIcon}
+                        icon={icon}
+                        hover={hover}
+                        focus={focus}
+                        selected={selected}
+                    />
+                </span>
+                {expanded && _hasChildren && (
+                    <>
+                        {children}
+                    </>
+                )}
+            </li>
+        );
     }
 }
-
-function TreeviewItemStatic(props) {
-    const {
-        className: ownClassName,
-        leafClassName,
-
-        items,
-        expanded,
-        hasChildren: _hasChildren,
-
-        text,
-
-        showIcon,
-        iconName,
-        showCheckbox,
-        checked,
-
-        hover,
-        focus,
-        selected,
-        disabled,
-
-        aria,
-
-        ...htmlAttributes
-    } = props;
-
-    const leafProps = {
-        className: leafClassName,
-        text,
-        showIcon,
-        iconName,
-        hover,
-        focus,
-        selected
-    };
-
-    const hasChildren = _hasChildren || items.length > 0;
-
-    let treeviewItemClasses = [
-        ownClassName,
-        'k-treeview-item',
-        {
-            'k-disabled': disabled === true
-        }
-    ];
-
-    let ariaAttr = aria
-        ? {}
-        : {};
-
-    return (
-        <li className={treeviewItemClasses} {...ariaAttr} {...htmlAttributes}>
-            <span className="k-treeview-mid">
-                {hasChildren && <span className="k-treeview-toggle"><IconStatic name={expanded ? 'collapse' : 'expand'} /></span>}
-                {showCheckbox && <CheckboxStatic checked={checked} />}
-                <TreeviewLeafStatic {...leafProps} />
-            </span>
-            {expanded && hasChildren && <TreeviewGroupStatic items={items} />}
-        </li>
-    );
-}
-
-TreeviewItemStatic.defaultProps = {
-    ...globalDefaultProps,
-
-    leafClassName: '',
-
-    text: '',
-
-    items: [],
-    expanded: false,
-    hasChildren: false,
-
-    showIcon: false,
-    iconName: '',
-    showCheckbox: false,
-    checked: false,
-};
-
-TreeviewItemStatic.propTypes = {
-    children: typeof [],
-    className: typeof '',
-    leafClassName: typeof '',
-
-    text: typeof '',
-
-    items: [],
-    expanded: typeof false,
-    hasChildren: typeof false,
-
-    showIcon: typeof false,
-    iconName: typeof '',
-    showCheckbox: typeof false,
-    checked: typeof false,
-
-    hover: typeof false,
-    focus: typeof false,
-    selected: typeof false,
-    disabled: typeof false,
-
-    aria: typeof false,
-    legacy: typeof false,
-
-    htmlAttributes: typeof []
-};
-
-export { TreeviewItem, TreeviewItemStatic };

@@ -1,3 +1,3 @@
-export * from './colorpalette-row.jsx';
-export * from './colorpalette-tile.jsx';
-export * from './colorpalette.jsx';
+export * from './colorpalette';
+export * from './colorpalette-row';
+export * from './colorpalette-tile';

@@ -1,93 +1,58 @@
-import { Component, globalDefaultProps } from '../component/index';
-import { CheckboxStatic } from '../checkbox/index';
-import { IconStatic } from '../icon/index';
+import * as React from 'react';
+import { classNames } from '../utils';
+import { Checkbox } from '../checkbox';
+import { Icon } from '../icon';
 
-class ListItem extends Component {
+export interface ListItemProps {
+    children?: React.ReactNode;
+    className?: string;
+    groupLabel?: string;
+    showIcon?: boolean;
+    iconName?: string;
+    showCheckbox?: boolean;
+    checked?: boolean;
+    hover?: boolean;
+    focus?: boolean;
+    selected?: boolean;
+    disabled?: boolean;
+}
+
+
+export class ListItem extends React.Component<ListItemProps> {
+
     render() {
-        return <ListItemStatic {...this.props} />;
+        const {
+            children,
+            className,
+            groupLabel,
+            showIcon,
+            iconName,
+            showCheckbox,
+            checked,
+            hover,
+            focus,
+            selected,
+            disabled,
+        } = this.props;
+
+
+        return (
+            <li
+                className={classNames(
+                    className,
+                    'k-list-item',
+                    {
+                        'k-hover': hover,
+                        'k-focus': focus,
+                        'k-selected': selected,
+                        'k-disabled': disabled
+                    }
+                )}>
+                {showCheckbox && <Checkbox checked={checked} />}
+                {showIcon && <Icon name={iconName} />}
+                <span className="k-list-item-text">{children}</span>
+                {groupLabel && groupLabel !== '' && <div className="k-list-item-group-label">{groupLabel}</div>}
+            </li>
+        );
     }
 }
-
-function ListItemStatic(props) {
-    const {
-        className: ownClassName,
-        children,
-
-        groupLabel,
-
-        showIcon,
-        iconName,
-        showCheckbox,
-        checked,
-
-        hover,
-        focus,
-        selected,
-        disabled,
-
-        aria,
-
-        ...htmlAttributes
-    } = props;
-
-    let listItemClasses = [
-        ownClassName,
-        'k-list-item',
-        {
-            'k-hover': hover === true,
-            'k-focus': focus === true,
-            'k-selected': selected === true,
-            'k-disabled': disabled === true
-        }
-    ];
-
-    let ariaAttr = aria
-        ? {}
-        : {};
-
-    return (
-        <li className={listItemClasses} {...ariaAttr} {...htmlAttributes}>
-            {showCheckbox && <CheckboxStatic checked={checked} />}
-            {showIcon && <IconStatic name={iconName} />}
-            <span className="k-list-item-text">{children}</span>
-            {groupLabel !== '' && <div className="k-list-item-group-label">{groupLabel}</div>}
-        </li>
-    );
-}
-
-ListItemStatic.defaultProps = {
-    ...globalDefaultProps,
-
-    children: [],
-
-    groupLabel: '',
-
-    showIcon: false,
-    iconName: '',
-    showCheckbox: false,
-    checked: false,
-};
-
-ListItemStatic.propTypes = {
-    children: typeof [],
-    className: typeof '',
-
-    groupLabel: typeof '',
-
-    showIcon: typeof false,
-    iconName: typeof '',
-    showCheckbox: typeof false,
-    checked: typeof false,
-
-    hover: typeof false,
-    focus: typeof false,
-    selected: typeof false,
-    disabled: typeof false,
-
-    aria: typeof false,
-    legacy: typeof false,
-
-    htmlAttributes: typeof []
-};
-
-export { ListItem, ListItemStatic };

@@ -1,110 +1,41 @@
-import * as styles from '../../utils/styles';
-import { Component, globalDefaultProps } from '../component/index';
-import { TreeviewGroupStatic } from './treeview-group.jsx';
-import { TreeviewItemStatic } from './treeview-item.jsx';
+import * as React from 'react';
+import { classNames, kendoThemeMaps } from '../utils';
+import { TreeviewGroup } from './treeview-group';
+import { TreeviewItemProps } from './treeview-item';
 
-class Treeview extends Component {
+export interface TreeviewProps {
+    className?: string;
+    children?: React.ReactElement<TreeviewItemProps> | React.ReactElement<TreeviewItemProps>[];
+    size?: null | 'small' | 'medium' | 'large';
+}
 
-    static transformUL( ul ) {
-        let children = ul.props.children;
-        let items = [];
+export class Treeview extends React.Component<TreeviewProps> {
 
-        children.filter( child => child.type === 'LI' ).forEach( li => {
-            items.push( Treeview.transformLI( li ) );
-        });
-
-        return items;
-    }
-
-    static transformLI( li ) {
-        let children = li.props.children;
-        let text = li.props.text || '';
-        let items = [];
-
-        children.forEach( child => {
-            if (text === '' && child.type === '#text') {
-                text = child.props.text;
-            }
-            if (child.type === 'UL') {
-                items.push( ...Treeview.transformUL( child ) );
-            }
-        });
-
-        li.props.children = [];
-        li.props.text = text;
-        li.props.items = items;
-
-        return <TreeviewItemStatic {...li.props} />;
-    }
-
-    init() {
-        let children = this._props.children;
-        let items = [];
-
-        children.filter( child => child.type === 'LI' ).forEach( li => {
-            items.push( Treeview.transformLI( li ) );
-        });
-
-        this._props.children = [];
-        this._props.items = items;
-    }
+    static defaultProps = {
+        size: 'medium'
+    };
 
     render() {
-        return <TreeviewStatic {...this.props} />;
+        const {
+            className,
+            size,
+            children
+        } = this.props;
+
+        return (
+            <div
+                className={classNames(
+                    className,
+                    'k-treeview',
+                    {
+                        [`k-treeview-${kendoThemeMaps.sizeMap[size!] || size}`]: size
+                    }
+                )}
+            >
+                <TreeviewGroup className="k-treeview-lines">
+                    {children}
+                </TreeviewGroup>
+            </div>
+        );
     }
 }
-
-function TreeviewStatic(props) {
-    const {
-        className: ownClassName,
-
-        items,
-
-        size,
-
-        aria,
-
-        ...htmlAttributes
-    } = props;
-
-    let treeviewClasses = [
-        ownClassName,
-        'k-treeview',
-        styles.sizeClass( size, 'k-treeview' )
-    ];
-
-    let ariaAttr = aria
-        ? {}
-        : {};
-
-    return (
-        <div className={treeviewClasses} {...ariaAttr} {...htmlAttributes}>
-            <TreeviewGroupStatic className="k-treeview-lines" items={items} />
-        </div>
-    );
-}
-
-TreeviewStatic.defaultProps = {
-    ...globalDefaultProps,
-
-    children: [],
-    items: [],
-
-    size: 'medium'
-};
-
-TreeviewStatic.propTypes = {
-    children: typeof [],
-    className: typeof '',
-
-    items: typeof [],
-
-    size: typeof [ null, 'small', 'medium', 'large' ],
-
-    aria: typeof false,
-    legacy: typeof false,
-
-    htmlAttributes: typeof []
-};
-
-export { Treeview, TreeviewStatic };

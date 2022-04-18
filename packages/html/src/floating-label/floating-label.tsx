@@ -1,78 +1,55 @@
-import { Component, globalDefaultProps } from '../component/index';
+import * as React from 'react';
+import { classNames } from '../utils';
 
-class FloatingLabel extends Component {
+export interface FloatingLabelProps {
+    className?: string;
+    children?: React.ReactNode;
+    label?: string;
+    focus?: boolean;
+    valid?: boolean;
+    invalid?: boolean;
+    empty?: boolean;
+    disabled?: boolean;
+    style?: React.CSSProperties;
+}
+
+export class FloatingLabel extends React.Component<FloatingLabelProps> {
+
     render() {
-        return <FloatingLabelStatic {...this.props} />;
+        const {
+            className,
+            children,
+            label,
+            focus,
+            valid,
+            invalid,
+            empty,
+            disabled,
+            style,
+        } = this.props;
+
+        return (
+            <span
+                className={classNames(
+                    className,
+                    'k-floating-label-container',
+                    {
+                        'k-focus': focus,
+                        'k-valid': valid,
+                        'k-invalid': invalid,
+                        'k-empty': empty,
+                        'k-disabled': disabled
+                    }
+                )}
+                style={style}
+            >
+                {children}
+                { label && (
+                    <label className="k-label">
+                        {label}
+                    </label>
+                )}
+            </span>
+        );
     }
 }
-
-function FloatingLabelStatic(props) {
-
-    const {
-        className: ownClassName,
-
-        children,
-
-        label,
-
-        focus,
-        valid,
-        invalid,
-        empty,
-        disabled,
-
-        aria,
-
-        ...htmlAttributes
-    } = props;
-
-
-    htmlAttributes.empty = empty;
-
-
-    let ariaAttr = aria
-        ? {}
-        : {};
-
-    let floatingLabelClasses = [
-        ownClassName,
-        'k-floating-label-container',
-        {
-            'k-focus': focus === true,
-            'k-valid': valid === true,
-            'k-invalid': invalid === true,
-            'k-empty': empty === true,
-            'k-disabled': disabled === true,
-        }
-    ];
-
-    return (
-        <span className={floatingLabelClasses} {...ariaAttr} {...htmlAttributes} >
-            <>{children}</>
-            { label && <label className="k-label">{label}</label> }
-        </span>
-    );
-}
-
-FloatingLabelStatic.defaultProps = {
-    ...globalDefaultProps,
-};
-
-FloatingLabelStatic.propTypes = {
-    className: typeof '',
-    children: typeof [],
-
-    label: typeof '',
-
-    focus: typeof false,
-    valid: typeof false,
-    invalid: typeof false,
-    empty: typeof false,
-    disabled: typeof false,
-
-    aria: typeof false,
-
-    htmlAttributes: typeof []
-};
-
-export { FloatingLabel, FloatingLabelStatic };

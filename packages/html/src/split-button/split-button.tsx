@@ -1,134 +1,87 @@
-import * as styles from '../../utils/styles';
-import { Component, globalDefaultProps } from '../component/index';
-import { ButtonStatic } from '../button/index';
+import * as React from 'react';
+import { classNames, kendoThemeMaps } from '../utils';
+import { Button } from '../button';
 
-class SplitButton extends Component {
+export interface SplitButtonProps {
+    children?: React.ReactNode;
+    className?: string;
+    text?: string;
+    icon?: string;
+    arrowIconName?: string;
+    size?: null | 'small' | 'medium' | 'large';
+    rounded: null | 'small' | 'medium' | 'large' | 'full';
+    fillMode?: null | 'solid' | 'outline' | 'flat' | 'link' | 'clear';
+    themeColor?: null | 'base' | 'primary' | 'secondary' | 'tertiary' | 'info' | 'success' | 'warning' | 'error' | 'dark' | 'light' | 'inverse';
+    hover?: boolean;
+    focus?: boolean;
+    active?: boolean;
+    selected?: boolean;
+    disabled?: boolean;
+}
 
-    init() {
-        this._props.text = this.element.innerHTML;
-        this._props.children = [];
-    }
+export class SplitButton extends React.Component<SplitButtonProps> {
+
+    static defaultProps = {
+        size: 'medium',
+        rounded: 'medium',
+        fillMode: 'solid',
+        themeColor: 'base',
+        arrowIconName: 'arrow-s'
+    };
 
     render() {
-        return <SplitButtonStatic {...this.props} />;
+        const {
+            children,
+            className,
+            text,
+            icon,
+            arrowIconName,
+            size,
+            rounded,
+            fillMode,
+            themeColor,
+            hover,
+            focus,
+            active,
+            selected,
+            disabled
+        } = this.props;
+
+        return (
+            <div
+                className={classNames(
+                    className,
+                    'k-split-button',
+                    'k-button-group',
+                    {
+                        [`k-rounded-${kendoThemeMaps.roundedMap[rounded!] || rounded}`]: rounded
+                    }
+                )}>
+                <Button
+                    text={text}
+                    icon={icon}
+                    size={size}
+                    rounded={rounded}
+                    fillMode={fillMode}
+                    themeColor={themeColor}
+                    hover={hover}
+                    focus={focus}
+                    active={active}
+                    selected={selected}
+                    disabled={disabled}
+                >
+                    {children}
+                </Button>
+                <Button
+                    className="k-split-button-arrow"
+                    icon={arrowIconName}
+                    size={size}
+                    rounded={rounded}
+                    fillMode={fillMode}
+                    disabled={disabled}
+                >
+                </Button>
+            </div>
+        );
     }
 }
-
-function SplitButtonStatic(props) {
-    const {
-        className: ownClassName,
-
-        text,
-
-        size,
-        rounded,
-
-        fillMode,
-        themeColor,
-
-        icon,
-
-        arrowIconName,
-
-        hover,
-        focus,
-        active,
-        selected,
-        disabled,
-
-        aria,
-
-        ...htmlAttributes
-    } = props;
-
-    let splitButtonClasses = [
-        ownClassName,
-        'k-split-button',
-        'k-button-group',
-        styles.roundedClass( rounded )
-    ];
-
-    // Augment attributes
-    htmlAttributes.disabled = disabled;
-
-    let ariaAttr = aria
-        ? {}
-        : {};
-
-    return (
-        <div className={splitButtonClasses} {...ariaAttr} {...htmlAttributes}>
-            <ButtonStatic
-                text={text}
-                icon={icon}
-
-                size={size}
-                rounded={rounded}
-                fillMode={fillMode}
-                themeColor={themeColor}
-
-                hover={hover}
-                focus={focus}
-                active={active}
-                selected={selected}
-                disabled={disabled}
-            ></ButtonStatic>
-            <ButtonStatic
-                className="k-split-button-arrow"
-
-                icon={arrowIconName}
-
-                size={size}
-                rounded={rounded}
-                fillMode={fillMode}
-                themeColor={themeColor}
-
-                disabled={disabled}
-            ></ButtonStatic>
-        </div>
-    );
-}
-
-SplitButtonStatic.defaultProps = {
-    ...globalDefaultProps,
-
-    text: '',
-    icon: '',
-
-    arrowIconName: 'arrow-s',
-
-    className: '',
-    type: 'button',
-
-    size: 'medium',
-    rounded: 'medium',
-
-    fillMode: 'solid',
-    themeColor: 'base'
-};
-
-SplitButtonStatic.propTypes = {
-    text: typeof '',
-    icon: typeof '',
-
-    arrowIconName: typeof '',
-
-    size: typeof [ null, 'small', 'medium', 'large' ],
-    rounded: typeof [ null, 'small', 'medium', 'large', 'full' ],
-
-    fillMode: typeof [ null, 'solid', 'flat', 'outline', 'link' ],
-    themeColor: typeof [ null, 'surface', 'base', 'primary' ],
-
-    hover: typeof false,
-    focus: typeof false,
-    active: typeof false,
-    selected: typeof false,
-    disabled: typeof false,
-
-    aria: typeof false,
-    legacy: typeof false,
-
-    className: typeof '',
-    htmlAttributes: typeof []
-};
-
-export { SplitButton, SplitButtonStatic };

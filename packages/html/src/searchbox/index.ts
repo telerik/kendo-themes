@@ -1,1 +1,1 @@
-export * from './searchbox.jsx';
+export * from './searchbox';

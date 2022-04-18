@@ -1,31 +1,32 @@
-import { IconStatic } from '../icon/index';
+import * as React from 'react';
+import { Icon } from '../icon';
 
-function InputClearValueStatic(inputProps) {
-
-    const {
-        value,
-
-        showClearButton,
-
-        readonly,
-        loading,
-        disabled,
-
-        aria
-    } = inputProps;
-
-    if (disabled || readonly || loading || !showClearButton || value === '' || (value.type === "#fragment" && !value.props.children.length) ) {
-        return <></>;
-    }
-
-    let ariaAttr = aria
-        ? {}
-        : {};
-
-    return (
-        <span className="k-clear-value" {...ariaAttr}><IconStatic name="x" /></span>
-    );
-
+export interface InputClearValueProps {
+    className?: string;
+    value?: string;
+    readonly?: boolean;
+    loading?: boolean;
+    disabled?: boolean;
 }
 
-export { InputClearValueStatic };
+export class InputClearValue extends React.Component<InputClearValueProps> {
+
+    render() {
+        const {
+            readonly,
+            loading,
+            disabled,
+            value
+        } = this.props;
+
+        if (disabled || readonly || loading || !value ) {
+            return <></>;
+        }
+
+        return (
+            <span className="k-clear-value">
+                <Icon name="x" />
+            </span>
+        );
+    }
+}

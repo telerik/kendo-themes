@@ -1,124 +1,83 @@
-import * as styles from '../../utils/styles';
-import { Component, globalDefaultProps } from '../component/index';
-import { IconStatic } from '../icon/index';
+import * as React from 'react';
+import { classNames, kendoThemeMaps } from '../utils';
+import { Icon } from '../icon';
 
-class Fab extends Component {
+export interface FloatingActionButtonProps {
+    className?: string;
+    style?: React.CSSProperties;
+    text?: string;
+    icon?: string;
+    type?: 'button' | 'submit' | 'reset';
+    size?: null | 'small' | 'medium' | 'large';
+    rounded: null | 'small' | 'medium' | 'large' | 'full';
+    shape?: null | 'rectangle' | 'square';
+    fillMode?: null | 'solid';
+    themeColor?: null | 'primary' | 'secondary' | 'tertiary' | 'info' | 'success' | 'warning' | 'error' | 'dark' | 'light' | 'inverse';
+    position?: null | 'top-start' | 'top-center' | 'top-end' | 'middle-start' | 'middle-end' | 'bottom-start' | 'bottom-center' | 'bottom-end';
+    hover?: boolean;
+    focus?: boolean;
+    active?: boolean;
+    selected?: boolean;
+    disabled?: boolean;
+}
 
-    init() {
-        this._props.text = this.element.innerHTML;
-    }
+export class FloatingActionButton extends React.Component<FloatingActionButtonProps> {
+
+    static defaultProps = {
+        type: 'button',
+        size: 'medium',
+        shape: 'rectangle',
+        rounded: 'full',
+        fillMode: 'solid',
+        themeColor: 'primary'
+    };
 
     render() {
-        return <FabStatic {...this.props} />;
+        const {
+            className,
+            style,
+            text,
+            icon,
+            type,
+            size,
+            shape,
+            rounded,
+            fillMode,
+            themeColor,
+            position,
+            hover,
+            focus,
+            active,
+            selected,
+            disabled,
+            ...htmlAttributes
+        } = this.props;
+
+        return (
+            <button
+                {...htmlAttributes}
+                type={type}
+                className={classNames(
+                    className,
+                    'k-fab',
+                    {
+                        [`k-fab-${kendoThemeMaps.sizeMap[size!] || size}`]: size,
+                        [`k-fab-${shape}`]: shape,
+                        [`k-fab-${fillMode}`]: fillMode,
+                        [`k-fab-${fillMode}-${themeColor}`]: Boolean(fillMode && themeColor),
+                        [`k-rounded-${kendoThemeMaps.roundedMap[rounded!] || rounded}`]: rounded,
+                        [`k-pos-absolute k-${position}`]: position,
+                        'k-hover': hover,
+                        'k-focus': focus,
+                        'k-active': active,
+                        'k-selected': selected,
+                        'k-disabled': disabled
+                    }
+                )}
+                style={style}>
+                {icon && <Icon className="k-fab-icon" name={icon} /> }
+                {text && <span className="k-fab-text">{text}</span>}
+            </button>
+        );
     }
 }
-
-function FabStatic(props) {
-    const {
-        className: ownClassName,
-
-        text,
-        type,
-
-        size,
-        rounded,
-        shape,
-
-        fillMode,
-        themeColor,
-
-        icon,
-
-        position,
-
-        hover,
-        focus,
-        active,
-        selected,
-        disabled,
-
-        aria,
-
-        ...htmlAttributes
-    } = props;
-
-    let buttonClasses = [
-        ownClassName,
-        'k-fab',
-        styles.positionClass( position, 'k'),
-        styles.shapeClass( shape, 'k-fab' ),
-        styles.sizeClass( size, 'k-fab' ),
-        styles.roundedClass( rounded ),
-        styles.fillModeClass( fillMode, 'k-fab' ),
-        styles.themeColorClass( fillMode, themeColor, 'k-fab' ),
-        {
-            'k-hover': hover === true,
-            'k-focus': focus === true,
-            'k-active': active === true,
-            'k-selected': selected === true,
-            'k-disabled': disabled === true
-        }
-    ];
-
-    // Augment attributes
-    htmlAttributes.disabled = disabled;
-
-    let ariaAttr = aria
-        ? {}
-        : {};
-
-    return (
-        <button type={type} className={buttonClasses} {...ariaAttr} {...htmlAttributes}>
-            <IconStatic className="k-fab-icon" name={icon} />
-            {text && <span className="k-fab-text">{text}</span>}
-        </button>
-    );
-}
-
-FabStatic.defaultProps = {
-    ...globalDefaultProps,
-
-    text: '',
-    icon: '',
-
-    className: '',
-    type: 'button',
-
-    size: 'medium',
-    rounded: 'full',
-    shape: 'rectangle',
-
-    position: null,
-
-    fillMode: 'solid',
-    themeColor: 'primary'
-};
-
-FabStatic.propTypes = {
-    text: typeof '',
-    icon: typeof '',
-
-    type: typeof [ 'button', 'submit', 'reset' ],
-
-    size: typeof [ null, 'small', 'medium', 'large' ],
-    rounded: typeof [ null, 'small', 'medium', 'large', 'full' ],
-    shape: typeof [ null, 'rectangle', 'square' ],
-    fillMode: typeof [ null, 'solid' ],
-    themeColor: typeof [ null, 'primary', 'secondary', 'tertiary', 'info', 'success', 'warning', 'error', 'dark', 'light', 'inverse' ],
-
-    position: typeof [ null, 'top-start', 'top-center', 'top-end', 'middle-start', 'middle-end', 'bottom-start', 'bottom-center', 'bottom-end' ],
-
-    hover: typeof false,
-    focus: typeof false,
-    active: typeof false,
-    selected: typeof false,
-    disabled: typeof false,
-
-    aria: typeof false,
-    legacy: typeof false,
-
-    className: typeof '',
-    htmlAttributes: typeof []
-};
-
-export { Fab, FabStatic };

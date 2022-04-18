@@ -1,73 +1,40 @@
-import * as styles from '../../utils/styles';
-import { Component, globalDefaultProps } from '../component/index';
+import * as React from 'react';
+import { classNames, kendoThemeMaps } from '../utils';
 
-class Popover extends Component {
+export interface PopoverProps {
+    children?: React.ReactNode;
+    className?: string;
+    callout?: null | 'top' | 'bottom' | 'left' | 'right';
+    title?: string;
+    body?: React.ReactNode;
+}
+
+export class Popover extends React.Component<PopoverProps & React.HTMLProps<HTMLDivElement>> {
+
     render() {
-        return <PopoverStatic {...this.props} />;
+        const {
+            className,
+            children,
+            callout,
+            title,
+            body,
+            ...htmlAttributes
+        } = this.props;
+
+        return (
+            <div className={classNames(className, 'k-popover')} {...htmlAttributes}>
+                {callout &&
+                    <div className={classNames(
+                        'k-popover-callout',
+                        {
+                            [`k-callout-${kendoThemeMaps.calloutMap[callout!] || callout}`]: callout
+                        }
+                    )}></div>
+                }
+                {title && <div className="k-popover-header">{title}</div>}
+                {body && <div className="k-popover-body">{body}</div>}
+                <>{children}</>
+            </div>
+        );
     }
 }
-
-function PopoverStatic(props) {
-
-    const {
-        className: ownClassName,
-
-        callout,
-        title,
-        body,
-
-        children,
-
-        aria,
-
-        ...htmlAttributes
-    } = props;
-
-    let PopoverClasses = [
-        ownClassName,
-        'k-popover',
-    ];
-
-    let PopoverCalloutClasses = [
-        'k-popover-callout',
-        styles.calloutClass( callout )
-    ];
-
-    let ariaAttr = aria
-        ? {}
-        : {};
-
-
-    return (
-        <div className={PopoverClasses} {...ariaAttr} {...htmlAttributes}>
-            {callout && <div className={PopoverCalloutClasses}></div>}
-            {title && <div className="k-popover-header">{title}</div>}
-            {body && <div className="k-popover-body">{body}</div>}
-            <>{children}</>
-        </div>
-    );
-}
-
-PopoverStatic.defaultProps = {
-    ...globalDefaultProps,
-
-    children: [],
-    callout: null,
-    title: '',
-    body: '',
-};
-
-PopoverStatic.propTypes = {
-    children: typeof [],
-    className: typeof '',
-
-    callout: typeof [ null, 'top', 'bottom', 'left', 'right' ],
-    title: typeof '',
-    body: typeof '',
-
-    aria: typeof false,
-
-    htmlAttributes: typeof []
-};
-
-export { Popover, PopoverStatic };

@@ -1,52 +1,29 @@
-import { Component, globalDefaultProps } from '../component/index';
+import * as React from 'react';
+import { classNames } from '../utils';
 
-class ListGroupItem extends Component {
+export interface ListGroupItemProps {
+    children?: React.ReactNode;
+    className?: string;
+}
+
+
+export class ListGroupItem extends React.Component<ListGroupItemProps> {
+
     render() {
-        return <ListGroupItemStatic {...this.props} />;
+        const {
+            children,
+            className,
+        } = this.props;
+
+
+        return (
+            <li
+                className={classNames(
+                    className,
+                    'k-list-group-item'
+                )}>
+                <span className="k-list-item-text">{children}</span>
+            </li>
+        );
     }
 }
-
-function ListGroupItemStatic(props) {
-    const {
-        className: ownClassName,
-
-        children,
-
-        aria,
-
-        ...htmlAttributes
-    } = props;
-
-    let listGroupItemClasses = [
-        ownClassName,
-        'k-list-group-item'
-    ];
-
-    let ariaAttr = aria
-        ? {}
-        : {};
-
-    return (
-        <li className={listGroupItemClasses} {...ariaAttr} {...htmlAttributes}>
-            <span className="k-list-item-text">{children}</span>
-        </li>
-    );
-}
-
-ListGroupItemStatic.defaultProps = {
-    ...globalDefaultProps,
-
-    children: []
-};
-
-ListGroupItemStatic.propTypes = {
-    children: typeof [],
-    className: typeof '',
-
-    aria: typeof false,
-    legacy: typeof false,
-
-    htmlAttributes: typeof []
-};
-
-export { ListGroupItem, ListGroupItemStatic };

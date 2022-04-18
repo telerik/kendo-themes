@@ -1,2 +1,1 @@
-export * from './colorpicker.jsx';
-export * from './color-preview.jsx';
+export * from './colorpicker';

@@ -1,147 +1,91 @@
-import * as styles from '../../utils/styles';
-import { Component, globalDefaultProps } from '../component/index';
-import { IconStatic } from '../icon/index';
-import { ChipAvatarStatic } from './chip-avatar.jsx';
-import { ChipActionsStatic } from './chip-actions.jsx';
+import * as React from 'react';
+import { Avatar } from '../avatar';
+import { Icon } from '../icon';
+import { ChipActionProps } from '../chip';
+import { classNames, kendoThemeMaps } from '../utils';
 
-class Chip extends Component {
+export interface ChipProps {
+    children?: React.ReactNode;
+    className?: string;
+    text?: string;
+    icon?: string;
+    actions?: React.ReactElement<ChipActionProps> | React.ReactElement<ChipActionProps>[];
+    showAvatar?: boolean;
+    size?: null | 'small' | 'medium' | 'large';
+    rounded?: null | 'small' | 'medium' | 'large' | 'full';
+    fillMode?: null | 'solid' | 'outline';
+    themeColor?: null | 'base' | 'info' | 'success' | 'warning' | 'error';
+    hover?: boolean;
+    focus?: boolean;
+    active?: boolean;
+    selected?: boolean;
+    disabled?: boolean;
+}
 
-    init() {
-        let actions = this._props.actions;
-        let newActions = [];
+export class Chip extends React.Component<ChipProps> {
 
-        if (actions === undefined) {
-            this._props.actions = [];
-            return;
-        }
-
-        if (Array.isArray(actions)) {
-            return;
-        }
-
-        actions.split(',').forEach(action => {
-            newActions.push(action.trim());
-        });
-
-        this._props.actions = newActions;
-    }
+    static defaultProps = {
+        size: 'medium',
+        rounded: 'medium',
+        fillMode: 'solid',
+        themeColor: 'base'
+    };
 
     render() {
-        return <ChipStatic {...this.props} />;
+        const {
+            children,
+            className,
+            text,
+            icon,
+            actions,
+            showAvatar,
+            size,
+            rounded,
+            fillMode,
+            themeColor,
+            hover,
+            focus,
+            active,
+            selected,
+            disabled
+        } = this.props;
+
+        return (
+            <div
+                className={classNames(
+                    className,
+                    'k-chip',
+                    {
+                        [`k-chip-${kendoThemeMaps.sizeMap[size!] || size}`]: size,
+                        [`k-chip-${fillMode}`]: fillMode,
+                        [`k-chip-${fillMode}-${themeColor}`]: Boolean(fillMode && themeColor),
+                        [`k-rounded-${kendoThemeMaps.roundedMap[rounded!] || rounded}`]: rounded,
+                        'k-hover': hover,
+                        'k-focus': focus,
+                        'k-active': active,
+                        'k-selected': selected,
+                        'k-disabled': disabled
+                    }
+                )}
+            >
+                {icon && <Icon className="k-chip-icon" name={icon} /> }
+                {showAvatar && (
+                    <Avatar className="k-chip-avatar" type="image" >
+                        <img src="/packages/html/assets/avatar.jpg" />
+                    </Avatar>
+                )}
+                <span className="k-chip-content">
+                    { children
+                        ? children
+                        : text && <span className="k-chip-label k-text-ellipsis">{text}</span>
+                    }
+                </span>
+                { actions && (
+                    <span className="k-chip-actions">
+                        {actions}
+                    </span>
+                )}
+            </div>
+        );
     }
 }
-
-function ChipStatic(props) {
-    const {
-        className: ownClassName,
-
-        children,
-
-        text,
-        icon,
-        actions,
-
-        showAvatar,
-
-        size,
-        rounded,
-
-        fillMode,
-        themeColor,
-
-        hover,
-        focus,
-        active,
-        selected,
-        disabled,
-
-        aria,
-
-        ...htmlAttributes
-    } = props;
-
-    let chipClasses = [
-        ownClassName,
-        'k-chip',
-        styles.sizeClass( size, 'k-chip' ),
-        styles.roundedClass( rounded ),
-        styles.fillModeClass( fillMode, 'k-chip' ),
-        styles.themeColorClass( fillMode, themeColor, 'k-chip' ),
-        {
-            'k-hover': hover === true,
-            'k-focus': focus === true,
-            'k-active': active === true,
-            'k-selected': selected === true,
-            'k-disabled': disabled === true
-        }
-    ];
-
-    // Augment attributes
-    htmlAttributes.disabled = disabled;
-
-    let ariaAttr = aria
-        ? {}
-        : {};
-
-    return (
-        <div className={chipClasses} {...ariaAttr} {...htmlAttributes}>
-            <IconStatic className="k-chip-icon" name={icon} />
-            {showAvatar && <ChipAvatarStatic {...props} />}
-            <span className="k-chip-content">
-                { children.length
-                    ? children
-                    : text && <span className="k-chip-label k-text-ellipsis">{text}</span>
-                }
-            </span>
-            { actions.length > 0 && <ChipActionsStatic actions={actions} />}
-        </div>
-    );
-}
-
-ChipStatic.defaultProps = {
-    ...globalDefaultProps,
-
-    children: [],
-
-    text: '',
-    icon: '',
-    actions: [],
-    showAvatar: false,
-
-    className: '',
-
-    size: 'medium',
-    rounded: 'medium',
-
-    fillMode: 'solid',
-    themeColor: 'base'
-};
-
-ChipStatic.propTypes = {
-    className: typeof '',
-    children: typeof [],
-
-    text: typeof '',
-    icon: typeof '',
-    actions: typeof [],
-    showAvatar: typeof false,
-
-    size: typeof [ null, 'small', 'medium', 'large' ],
-    rounded: typeof [ null, 'small', 'medium', 'large', 'full' ],
-
-    fillMode: typeof [ null, 'solid', 'outline' ],
-    themeColor: typeof [ null, 'base', 'error', 'warning', 'info', 'success' ],
-
-    hover: typeof false,
-    focus: typeof false,
-    active: typeof false,
-    selected: typeof false,
-    disabled: typeof false,
-
-    aria: typeof false,
-    legacy: typeof false,
-
-    htmlAttributes: typeof []
-};
-
-export { Chip, ChipStatic };

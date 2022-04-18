@@ -1,1 +1,1 @@
-export * from './menu-button.jsx';
+export * from './menu-button';

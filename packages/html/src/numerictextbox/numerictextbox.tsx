@@ -1,131 +1,84 @@
-import { Component, globalDefaultProps } from '../component/index';
-import { InputStatic, InputInnerInputStatic } from '../input/index';
-import { InputValidationIconStatic, InputLoadingIconStatic, InputClearValueStatic } from '../input/index';
-import { SpinButtonStatic } from '../spinbutton/index';
+import * as React from 'react';
+import { classNames } from '../utils';
+import { SpinButton } from '../spinbutton';
+import {
+    Input,
+    InputInnerInput,
+    InputClearValue,
+    InputLoadingIcon,
+    InputValidationIcon
+} from '../input';
 
-class NumericTextbox extends Component {
-    render() {
-        return <NumericTextboxStatic {...this.props} />;
-    }
+export interface NumericTextboxProps {
+    className?: string;
+    value?: string;
+    placeholder?: string;
+    size?: null | 'small' | 'medium' | 'large';
+    rounded?: null | 'small' | 'medium' | 'large' | 'full';
+    fillMode?: null | 'solid' | 'outline' | 'flat';
+    hover?: boolean;
+    focus?: boolean;
+    valid?: boolean;
+    invalid?: boolean
+    required?: boolean;
+    loading?: boolean;
+    disabled?: boolean;
+    showSpinButton?: boolean;
+    showClearButton?: boolean;
 }
 
-function NumericTextboxStatic(props) {
+export class NumericTextbox extends React.Component<NumericTextboxProps> {
 
-    const {
-        className: ownClassName,
-
-        value,
-        placeholder,
-        autocomplete,
-
-        showSpinButton,
-
-        size,
-        rounded,
-
-        fillMode,
-
-        hover,
-        focus,
-        valid,
-        invalid,
-        required,
-        disabled,
-
-        aria,
-
-        ...htmlAttributes
-
-    } = props;
-
-    htmlAttributes.size = size;
-    htmlAttributes.rounded = rounded;
-    htmlAttributes.fillMode = fillMode;
-    htmlAttributes.hover = hover;
-    htmlAttributes.focus = focus;
-    htmlAttributes.valid = valid;
-    htmlAttributes.invalid = invalid;
-    htmlAttributes.required = required;
-    htmlAttributes.disabled = disabled;
-
-    const inputAttributes = {
-        type: 'text',
-        value,
-        placeholder,
-        autocomplete,
-
-        disabled
+    static defaultProps = {
+        showSpinButton: true,
+        showClearButton: true
     };
 
-    let numericClasses = [
-        ownClassName,
-        'k-numerictextbox'
-    ];
+    render() {
+        const {
+            className,
+            value,
+            placeholder,
+            size,
+            rounded,
+            fillMode,
+            hover,
+            focus,
+            valid,
+            invalid,
+            required,
+            loading,
+            disabled,
+            showSpinButton,
+            showClearButton
+        } = this.props;
 
-    let ariaAttr = aria
-        ? {}
-        : {};
-
-    return (
-        <InputStatic className={numericClasses} {...ariaAttr} {...htmlAttributes}>
-            <InputInnerInputStatic {...inputAttributes} />
-            <InputValidationIconStatic {...props} />
-            <InputLoadingIconStatic {...props} />
-            <InputClearValueStatic {...props} />
-            {showSpinButton === true && <SpinButtonStatic className="k-input-spinner" size={size} fillMode={fillMode} />}
-        </InputStatic>
-    );
+        return (
+            <Input
+                size={size}
+                rounded={rounded}
+                fillMode={fillMode}
+                hover={hover}
+                focus={focus}
+                valid={valid}
+                invalid={invalid}
+                required={required}
+                loading={loading}
+                disabled={disabled}
+                className={classNames(className, 'k-numerictextbox')}
+            >
+                <InputInnerInput placeholder={placeholder} value={value} />
+                <InputValidationIcon {...this.props} />
+                <InputLoadingIcon {...this.props} />
+                {showClearButton && (<InputClearValue {...this.props} />)}
+                {showSpinButton && (
+                    <SpinButton
+                        className="k-input-spinner"
+                        size={size}
+                        fillMode={fillMode}
+                    />
+                )}
+            </Input>
+        );
+    }
 }
-
-NumericTextboxStatic.defaultProps = {
-    ...globalDefaultProps,
-
-    value: '',
-    placeholder: '',
-    autocomplete: 'off',
-
-    showSpinButton: true,
-
-    showValidationIcon: true,
-    showLoadingIcon: true,
-    showClearButton: true,
-
-    size: 'medium',
-    rounded: 'medium',
-
-    fillMode: 'solid'
-};
-
-NumericTextboxStatic.propTypes = {
-    type: typeof [ 'text' ],
-    value: typeof '',
-    placeholder: typeof '',
-    autocomplete: typeof [ 'on', 'off' ],
-
-    showSpinButton: typeof true,
-
-    showValidationIcon: typeof true,
-    showLoadingIcon: typeof true,
-    showClearButton: typeof true,
-
-    size: typeof [ null, 'small', 'medium', 'large' ],
-    rounded: typeof [ null, 'small', 'medium', 'large', 'full' ],
-
-    fillMode: typeof [ null, 'solid', 'flat', 'outline' ],
-
-    hover: typeof false,
-    focus: typeof false,
-    valid: typeof false,
-    invalid: typeof false,
-    required: typeof false,
-    disabled: typeof false,
-
-    aria: typeof false,
-    legacy: typeof false,
-
-    className: typeof '',
-    htmlAttributes: typeof []
-};
-
-export { NumericTextbox, NumericTextboxStatic };
-

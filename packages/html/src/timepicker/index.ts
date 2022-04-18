@@ -1,1 +1,1 @@
-export * from './timepicker.jsx';
+export * from './timepicker';

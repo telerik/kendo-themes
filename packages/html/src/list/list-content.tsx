@@ -1,65 +1,34 @@
-import { Component, globalDefaultProps } from '../component/index';
+import * as React from 'react';
+import { classNames } from '../utils';
 
-class ListContent extends Component {
+export interface ListContentProps {
+    children?: React.ReactNode;
+    className?: string;
+    virtualization?: boolean,
+}
+
+
+export class ListContent extends React.Component<ListContentProps> {
+
     render() {
-        return <ListContentStatic {...this.props} />;
+        const {
+            children,
+            className,
+            virtualization,
+        } = this.props;
+
+        return (
+            <div
+                className={classNames(
+                    className,
+                    'k-list-content'
+                )}>
+                <ul className={classNames('k-list-ul')}>
+                    {children}
+                </ul>
+                { virtualization && <div className="k-height-container"><div></div></div> }
+            </div>
+
+        );
     }
 }
-
-function ListContentStatic(props) {
-    const {
-        className: ownClassName,
-
-        children,
-
-        virtualization,
-
-        aria,
-
-        ...htmlAttributes
-    } = props;
-
-    let listContentClasses = [
-        ownClassName,
-        'k-list-content'
-    ];
-
-    let listULClasses = [
-        'k-list-ul'
-    ];
-
-    let ariaAttr = aria
-        ? {}
-        : {};
-
-    return (
-        <div className={listContentClasses} {...ariaAttr} {...htmlAttributes}>
-            <ul className={listULClasses}>
-                {children}
-            </ul>
-            { virtualization && <div className="k-height-container"><div></div></div> }
-        </div>
-    );
-}
-
-ListContentStatic.defaultProps = {
-    ...globalDefaultProps,
-
-    children: [],
-
-    virtualization: false
-};
-
-ListContentStatic.propTypes = {
-    children: typeof [],
-    className: typeof '',
-
-    virtualization: typeof false,
-
-    aria: typeof false,
-    legacy: typeof false,
-
-    htmlAttributes: typeof []
-};
-
-export { ListContent, ListContentStatic };

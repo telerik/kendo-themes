@@ -1,62 +1,43 @@
-import { Component, globalDefaultProps } from '../component/index';
+import * as React from 'react';
+import { ButtonProps } from '../button';
+import { classNames } from '../utils';
 
-class ActionButtons extends Component {
+export interface ActionButtonsProps {
+    children?: React.ReactElement<ButtonProps>|React.ReactElement<ButtonProps>[];
+    className?: string;
+    alignment?: 'start' | 'center' | 'end' | 'stretched';
+    orientation?: 'horizontal' | 'vertical';
+}
+
+export class ActionButtons extends React.Component<ActionButtonsProps> {
+
+    static defaultProps = {
+        alignment: 'start',
+        orientation: 'horizontal'
+    };
+
     render() {
-        return <ActionButtonsStatic {...this.props} />;
+        const {
+            children,
+            className,
+            alignment,
+            orientation,
+            ...htmlAttributes
+        } = this.props;
+
+        return (
+            <div
+                {...htmlAttributes}
+                className={classNames(
+                    'k-actions',
+                    {
+                        [`k-actions-${alignment}`]: alignment,
+                        [`k-actions-${orientation}`]: orientation
+                    },
+                    className
+                )}>
+                {children}
+            </div>
+        );
     }
 }
-
-function ActionButtonsStatic(props) {
-
-    const {
-        className: ownClassName,
-
-        alignment,
-        orientation,
-        children,
-
-        aria,
-
-        ...htmlAttributes
-    } = props;
-
-    let ActionButtonsClasses = [
-        ownClassName,
-        'k-actions',
-        `k-actions-${alignment}`,
-        `k-actions-${orientation}`
-    ];
-
-    let ariaAttr = aria
-        ? {}
-        : {};
-
-
-    return (
-        <div className={ActionButtonsClasses} {...ariaAttr} {...htmlAttributes}>
-            <>{children}</>
-        </div>
-    );
-}
-
-ActionButtonsStatic.defaultProps = {
-    ...globalDefaultProps,
-
-    children: [],
-    alignment: 'start',
-    orientation: 'horizontal'
-
-};
-
-ActionButtonsStatic.propTypes = {
-    children: typeof [],
-    className: typeof '',
-
-    alignment: typeof [ 'start', 'center', 'end', 'stretched' ],
-    orientation: typeof [ 'horizontal', 'vertical' ],
-    aria: typeof false,
-
-    htmlAttributes: typeof []
-};
-
-export { ActionButtons, ActionButtonsStatic };

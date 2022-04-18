@@ -1,59 +1,36 @@
-import { Component, globalDefaultProps } from '../component/index';
+import * as React from 'react';
+import { classNames } from '../utils';
 
-class Icon extends Component {
+export interface IconProps {
+    className?: string;
+    style?: React.CSSProperties;
+    name?: string;
+}
+
+export class Icon extends React.Component<IconProps> {
+
     render() {
-        return <IconStatic {...this.props} />;
+        const {
+            className,
+            style,
+            name
+        } = this.props;
+
+        return (
+            <>
+                { name &&
+                    <span
+                        className={classNames(
+                            className,
+                            'k-icon',
+                            {
+                                [`k-i-${name}`]: name
+                            }
+                        )}
+                        style={style}>
+                    </span>
+                }
+            </>
+        );
     }
 }
-
-function IconStatic(props) {
-    const {
-        className: ownClassName,
-
-        name,
-
-        aria,
-
-        ...htmlAttributes
-
-    } = props;
-
-    let iconClasses = [
-        ownClassName,
-        'k-icon',
-        `k-i-${name}`
-    ];
-
-    let ariaAttr = aria
-        ? {}
-        : {};
-
-    return (
-        <>
-            { name &&
-                <span className={iconClasses} {...ariaAttr} {...htmlAttributes}>
-                    {props.children}
-                </span>
-            }
-        </>
-    );
-}
-
-IconStatic.defaultProps = {
-    ...globalDefaultProps,
-
-    name: ''
-};
-IconStatic.propTypes = {
-    className: typeof '',
-
-    name: typeof '',
-
-    children: typeof [],
-
-    aria: typeof false,
-
-    htmlAttributes: typeof [],
-};
-
-export { Icon, IconStatic };

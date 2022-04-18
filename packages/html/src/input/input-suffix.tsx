@@ -1,48 +1,31 @@
-import { Component, globalDefaultProps } from '../component/index';
+import * as React from 'react';
+import { classNames } from '../utils';
 
-class InputSuffix extends Component {
+export interface InputSuffixProps {
+    children?: React.ReactNode;
+    className?: string;
+}
+
+export class InputSuffix extends React.Component<InputSuffixProps> {
+
     render() {
-        return <InputSuffixStatic {...this.props} />;
+        const {
+            className,
+            children
+        } = this.props;
+
+        if (!children) {
+            return <></>;
+        }
+
+        return (
+            <span
+                className={classNames(
+                    className,
+                    'k-input-suffix'
+                )}>
+                {children}
+            </span>
+        );
     }
 }
-
-function InputSuffixStatic(props) {
-
-    const {
-        className: ownClassName,
-
-        children,
-
-        ...htmlAttributes
-    } = props;
-
-    let inputSuffixClasses = [
-        ownClassName,
-        'k-input-suffix'
-    ];
-
-    if (children.length === 0) {
-        return <></>;
-    }
-
-    return (
-        <span className={inputSuffixClasses} {...htmlAttributes}>
-            {children}
-        </span>
-    );
-}
-
-InputSuffixStatic.defaultProps = {
-    ...globalDefaultProps,
-
-    children: []
-};
-
-InputSuffixStatic.propTypes = {
-    children: typeof [],
-    className: typeof '',
-
-    htmlAttributes: typeof []
-};
-
-export { InputSuffix, InputSuffixStatic };

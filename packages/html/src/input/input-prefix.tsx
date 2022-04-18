@@ -1,48 +1,31 @@
-import { Component, globalDefaultProps } from '../component/index';
+import * as React from 'react';
+import { classNames } from '../utils';
 
-class InputPrefix extends Component {
+export interface InputPrefixProps {
+    children?: React.ReactNode;
+    className?: string;
+}
+
+export class InputPrefix extends React.Component<InputPrefixProps> {
+
     render() {
-        return <InputPrefixStatic {...this.props} />;
+        const {
+            className,
+            children,
+        } = this.props;
+
+        if (!children) {
+            return <></>;
+        }
+
+        return (
+            <span
+                className={classNames(
+                    className,
+                    'k-input-prefix'
+                )}>
+                {children}
+            </span>
+        );
     }
 }
-
-function InputPrefixStatic(props) {
-
-    const {
-        className: ownClassName,
-
-        children,
-
-        ...htmlAttributes
-    } = props;
-
-    let inputPrefixClasses = [
-        ownClassName,
-        'k-input-prefix'
-    ];
-
-    if (children.length === 0) {
-        return <></>;
-    }
-
-    return (
-        <span className={inputPrefixClasses} {...htmlAttributes}>
-            {children}
-        </span>
-    );
-}
-
-InputPrefixStatic.defaultProps = {
-    ...globalDefaultProps,
-
-    children: []
-};
-
-InputPrefixStatic.propTypes = {
-    children: typeof [],
-    className: typeof '',
-
-    htmlAttributes: typeof []
-};
-
-export { InputPrefix, InputPrefixStatic };

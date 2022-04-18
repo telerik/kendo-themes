@@ -1,90 +1,70 @@
-import { globalDefaultProps, Component } from '../component/index';
-import { ButtonStatic } from '../button/index';
-import { IconStatic } from '../icon/index';
-import { FloatingLabelStatic } from '../input/index';
-import { DateInputStatic } from '../dateinput/index';
+import * as React from 'react';
+import { classNames } from '../utils';
+import { FloatingLabel } from '../floating-label';
+import { DateInput } from '../dateinput';
+import { Button } from '../button';
 
-class DateRangePicker extends Component {
+export interface DateRangePickerProps {
+    className?: string;
+    size?: null | 'small' | 'medium' | 'large';
+    rounded?: null | 'small' | 'medium' | 'large' | 'full';
+    fillMode?: null | 'solid' | 'outline' | 'flat';
+    swapButton?: boolean;
+    disabled?: boolean;
+    style?: React.CSSProperties;
+}
+
+export class DateRangePicker extends React.Component<DateRangePickerProps> {
+
     render() {
-        return <DateRangePickerStatic {...this.props} />;
+        const {
+            className,
+            size,
+            rounded,
+            fillMode,
+            swapButton,
+            disabled,
+            style
+        } = this.props;
+
+        return (
+            <span
+                style={style}
+                className={classNames(
+                    className,
+                    'k-daterangepicker',
+                    {
+                        'k-disabled': disabled
+                    },
+                )}
+            >
+                <FloatingLabel label="Start">
+                    <DateInput
+                        showSpinButton={false}
+                        size={size}
+                        rounded={rounded}
+                        fillMode={fillMode}
+                    />
+                </FloatingLabel>
+                {swapButton && (
+                    <Button
+                        rounded={rounded}
+                        size={size}
+                        fillMode="flat"
+                        icon="arrows-swap"
+                        iconClassName="k-rotate-90"
+                    />
+                )}
+                <FloatingLabel label="End">
+                    <DateInput
+                        showSpinButton={false}
+                        size={size}
+                        rounded={rounded}
+                        fillMode={fillMode}
+                    />
+                </FloatingLabel>
+            </span>
+        );
+
     }
 }
-
-function DateRangePickerStatic(props) {
-
-    const {
-        className: ownClassName,
-
-        size,
-        rounded,
-        fillMode,
-
-        swapButton,
-
-        disabled,
-
-        aria,
-
-        ...htmlAttributes
-    } = props;
-
-
-    const dateInputAttributes = {
-        size,
-        rounded,
-        fillMode
-    };
-
-
-    let DateRangePickerClasses = [
-        ownClassName,
-        'k-daterangepicker',
-        { 'k-disabled': disabled === true }
-    ];
-
-    let ariaAttr = aria
-        ? {}
-        : {};
-
-    return (
-        <span className={DateRangePickerClasses} {...ariaAttr} {...htmlAttributes}>
-            <FloatingLabelStatic label="Start">
-                <DateInputStatic showSpinButton="false" {...dateInputAttributes}/>
-            </FloatingLabelStatic>
-            {swapButton &&
-                <ButtonStatic className="k-icon-button" rounded={rounded} size={size} fillMode="flat" themeColor="base">
-                    <IconStatic className="k-button-icon" name="arrows-swap" style="transform: rotate(90deg);"/>
-                </ButtonStatic>
-            }
-            <FloatingLabelStatic label="End">
-                <DateInputStatic showSpinButton="false" {...dateInputAttributes}/>
-            </FloatingLabelStatic>
-        </span>
-    );
-}
-
-DateRangePickerStatic.defaultProps = {
-    ...globalDefaultProps,
-
-    size: 'medium',
-    rounded: 'medium',
-    fillMode: 'solid'
-};
-
-DateRangePickerStatic.propTypes = {
-    className: typeof '',
-
-    size: typeof [ null, 'small', 'medium', 'large' ],
-    rounded: typeof [ null, 'small', 'medium', 'large', 'full' ],
-    fillMode: typeof [ null, 'solid', 'flat', 'outline' ],
-
-    swapButton: typeof false,
-
-    disabled: typeof false,
-
-    aria: typeof false,
-
-    htmlAttributes: typeof []
-};
-
-export { DateRangePicker, DateRangePickerStatic };

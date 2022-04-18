@@ -18,7 +18,6 @@
         k-button
         ${text === '' && icon !== '' && 'k-icon-button'}
         k-button-${size}
-        k-button-${shape}
         k-rounded-${rounded}
         k-button-${fillMode}
         k-button-${fillMode}-${themeColor}
@@ -32,7 +31,6 @@
         k-button
         k-icon-button
         k-button-${size}
-        k-button-${shape}
         k-rounded-${rounded}
         k-button-${fillMode}
         k-button-${fillMode}-${themeColor}

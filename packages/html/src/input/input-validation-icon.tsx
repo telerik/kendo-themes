@@ -1,37 +1,33 @@
-import { IconStatic } from '../icon/index';
+import * as React from 'react';
+import { Icon } from '../icon';
 
-function InputValidationIconStatic(inputProps) {
-
-    const {
-        showValidationIcon,
-
-        valid,
-        invalid,
-        loading,
-        disabled,
-
-        aria
-    } = inputProps;
-
-    if (disabled || loading || !showValidationIcon ) {
-        return <></>;
-    }
-
-    let iconName = invalid ? 'warning' : 'check';
-    let renderValidationIcon = Boolean( valid || invalid );
-
-    let ariaAttr = aria
-        ? {}
-        : {};
-
-    if (renderValidationIcon === false) {
-        return <></>;
-    }
-
-    return (
-        <IconStatic name={iconName} className="k-input-validation-icon" {...ariaAttr} />
-    );
-
+export interface InputValidationIconProps {
+    className?: string;
+    valid?: boolean;
+    invalid?: boolean;
+    loading?: boolean;
+    disabled?: boolean;
 }
 
-export { InputValidationIconStatic };
+export class InputValidationIcon extends React.Component<InputValidationIconProps> {
+
+    render() {
+        const {
+            valid,
+            invalid,
+            loading,
+            disabled
+        } = this.props;
+
+        const iconName = invalid ? 'warning' : 'check';
+        const renderValidationIcon = Boolean( valid || invalid );
+
+        if (disabled || loading || !renderValidationIcon) {
+            return <></>;
+        }
+
+        return (
+            <Icon className="k-input-validation-icon" name={iconName} />
+        );
+    }
+}

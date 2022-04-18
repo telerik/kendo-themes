@@ -1,53 +1,29 @@
-import { Component, globalDefaultProps } from '../component/index';
+import * as React from 'react';
+import { classNames } from '../utils';
 
-class ListHeader extends Component {
+export interface ListHeaderProps {
+    children?: React.ReactNode;
+    className?: string;
+}
+
+
+export class ListHeader extends React.Component<ListHeaderProps> {
+
     render() {
-        return <ListHeaderStatic {...this.props} />;
+        const {
+            children,
+            className,
+        } = this.props;
+
+        return (
+            <div
+                className={classNames(
+                    className,
+                    'k-list-group-sticky-header'
+                )}>
+                <div className="k-list-header-text">{children}</div>
+            </div>
+
+        );
     }
 }
-
-function ListHeaderStatic(props) {
-    const {
-        className: ownClassName,
-
-        children,
-
-        aria,
-
-        ...htmlAttributes
-    } = props;
-
-    let listHeaderClasses = [
-        ownClassName,
-        // 'k-list-header',
-        'k-list-group-sticky-header'
-    ];
-
-    let ariaAttr = aria
-        ? {}
-        : {};
-
-    return (
-        <div className={listHeaderClasses} {...ariaAttr} {...htmlAttributes}>
-            <div className="k-list-header-text">{children}</div>
-        </div>
-    );
-}
-
-ListHeaderStatic.defaultProps = {
-    ...globalDefaultProps,
-
-    children: []
-};
-
-ListHeaderStatic.propTypes = {
-    children: typeof [],
-    className: typeof '',
-
-    aria: typeof false,
-    legacy: typeof false,
-
-    htmlAttributes: typeof []
-};
-
-export { ListHeader, ListHeaderStatic };

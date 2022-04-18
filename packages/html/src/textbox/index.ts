@@ -1,1 +1,1 @@
-export * from './textbox.jsx';
+export * from './textbox';

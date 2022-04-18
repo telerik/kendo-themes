@@ -1,1 +1,1 @@
-export * from './popup.jsx';
+export * from './popup';

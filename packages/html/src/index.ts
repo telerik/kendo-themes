@@ -1,24 +1,3 @@
-/* eslint-disable no-new */
-/* global kendo */
-import { isFunction } from '../utils/object';
-
-export function init() {
-    document.querySelectorAll('[is]').forEach( element => {
-        const componentName = element.getAttribute('is');
-        const component = kendo.Html[componentName];
-
-        if (isFunction( component )) {
-            new component( element );
-        }
-    });
-}
-
-window.addEventListener('DOMContentLoaded', init);
-
-// Dependencies
-export * from './../lib/jsx-runtime';
-export * from './component/index';
-
 // Typography and utils
 export * from './typography/index';
 
@@ -36,7 +15,7 @@ export * from './nodata/index';
 export * from './avatar/index';
 // export * from './badge/index';
 export * from './chip/index';
-// export * from './color-preview/index';
+export * from './color-preview/index';
 // export * from './loader/index';
 // export * from './skeleton/index';
 
@@ -104,7 +83,7 @@ export * from './treeview/index';
 // export * from './wizard/index';
 
 // Layout & containers
-// export * from './card/index';
+export * from './card/index';
 // export * from './expander/index';
 // export * from './panelbar/index';
 // export * from './splitter/index';

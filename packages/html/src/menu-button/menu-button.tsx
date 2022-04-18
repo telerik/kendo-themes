@@ -1,127 +1,80 @@
-import { Component, globalDefaultProps } from '../component/index';
-import { ButtonStatic } from '../button/index';
-import { IconStatic } from '../icon/index';
+import * as React from 'react';
+import { classNames } from '../utils';
+import { Button } from '../button';
+import { Icon } from '../icon';
 
-class MenuButton extends Component {
 
-    init() {
-        this._props.text = this.element.innerHTML;
-        this._props.children = [];
-    }
+export interface MenuButtonProps {
+    className?: string;
+    dir?: string;
+    text?: string;
+    icon?: string;
+    size?: null | 'small' | 'medium' | 'large';
+    rounded: null | 'small' | 'medium' | 'large' | 'full';
+    fillMode?: null | 'solid' | 'outline' | 'flat' | 'link' | 'clear';
+    themeColor?: null | 'base' | 'primary' | 'secondary' | 'tertiary' | 'info' | 'success' | 'warning' | 'error' | 'dark' | 'light' | 'inverse';
+    hover?: boolean;
+    focus?: boolean;
+    active?: boolean;
+    selected?: boolean;
+    disabled?: boolean;
+    showArrow?: boolean;
+    arrowIconName?: string;
+}
+
+export class MenuButton extends React.Component<MenuButtonProps> {
+
+    static defaultProps = {
+        size: 'medium',
+        rounded: 'medium',
+        fillMode: 'solid',
+        themeColor: 'base',
+        showArrow: true,
+        arrowIconName: 'arrow-s'
+    };
 
     render() {
-        return <MenuButtonStatic {...this.props} />;
+        const {
+            className,
+            text,
+            icon,
+            size,
+            rounded,
+            fillMode,
+            themeColor,
+            hover,
+            focus,
+            active,
+            selected,
+            disabled,
+            showArrow,
+            arrowIconName,
+        } = this.props;
+
+        return (
+            <Button
+                dir={this.props.dir}
+                className={classNames(
+                    className,
+                    'k-menu-button',
+                    {
+                        'k-icon-button': icon !== undefined,
+                    }
+                )}
+                text={text}
+                size={size}
+                rounded={rounded}
+                fillMode={fillMode}
+                themeColor={themeColor}
+                hover={hover}
+                focus={focus}
+                active={active}
+                selected={selected}
+                disabled={disabled}
+                icon={icon}
+            >
+                {showArrow && <span className="k-menu-button-arrow k-button-arrow"><Icon name={arrowIconName} /></span>}
+            </Button>
+        );
     }
 }
-
-function MenuButtonStatic(props) {
-    const {
-        className: ownClassName,
-
-        text,
-
-        size,
-        rounded,
-
-        fillMode,
-        themeColor,
-
-        icon,
-
-        showArrow,
-        arrowIconName,
-
-        hover,
-        focus,
-        active,
-        selected,
-        disabled,
-
-        aria,
-
-        ...htmlAttributes
-    } = props;
-
-    let menuButtonClasses = [
-        ownClassName,
-        'k-menu-button'
-    ];
-
-    // Augment attributes
-    htmlAttributes.disabled = disabled;
-
-    let ariaAttr = aria
-        ? {}
-        : {};
-
-    return (
-        <ButtonStatic className={menuButtonClasses}
-            text={text}
-            icon={icon}
-
-            size={size}
-            rounded={rounded}
-            fillMode={fillMode}
-            themeColor={themeColor}
-
-            hover={hover}
-            focus={focus}
-            active={active}
-            selected={selected}
-            disabled={disabled}
-
-            {...ariaAttr}
-            {...htmlAttributes}
-        >
-            <IconStatic className="k-button-icon" name={icon} />
-            {text && <span className="k-button-text">{text}</span>}
-            {showArrow && <span className="k-menu-button-arrow k-button-arrow"><IconStatic name={arrowIconName} /></span>}
-        </ButtonStatic>
-    );
-}
-
-MenuButtonStatic.defaultProps = {
-    ...globalDefaultProps,
-
-    text: '',
-    icon: '',
-
-    className: '',
-
-    size: 'medium',
-    rounded: 'medium',
-
-    showArrow: 'true',
-    arrowIconName: 'arrow-s',
-
-    fillMode: 'solid',
-    themeColor: 'base'
-};
-
-MenuButtonStatic.propTypes = {
-    text: typeof '',
-    icon: typeof '',
-
-    showArrow: typeof false,
-    arrowIconName: typeof '',
-
-    size: typeof [ null, 'small', 'medium', 'large' ],
-    rounded: typeof [ null, '0', 'small', 'medium', 'large', 'full' ],
-
-    fillMode: typeof [ null, 'solid', 'flat', 'outline', 'link' ],
-    themeColor: typeof [ null, 'surface', 'base', 'primary' ],
-
-    hover: typeof false,
-    focus: typeof false,
-    active: typeof false,
-    selected: typeof false,
-    disabled: typeof false,
-
-    aria: typeof false,
-    legacy: typeof false,
-
-    className: typeof '',
-    htmlAttributes: typeof []
-};
-
-export { MenuButton, MenuButtonStatic };

@@ -1,3 +1,3 @@
-export * from './menu-list.jsx';
-export * from './menu-item.jsx';
-export * from './menu-item-content.jsx';
+export * from './menu-item';
+export * from './menu-item-content';
+export * from './menu-list';

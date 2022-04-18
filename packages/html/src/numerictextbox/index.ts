@@ -1,1 +1,1 @@
-export * from './numerictextbox.jsx';
+export * from './numerictextbox';
