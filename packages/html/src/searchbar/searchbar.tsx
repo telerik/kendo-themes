@@ -1,55 +1,22 @@
-import { Component, globalDefaultProps } from '../component/index';
-import { InputStatic } from '../input/index';
+import * as React from 'react';
+import { InputInnerInput } from '../input';
 
-class Searchbar extends Component {
+export interface SearchBoxProps {
+    className?: string;
+    placeholder?: string;
+}
+
+export class SearchBox extends React.Component<SearchBoxProps> {
+
     render() {
-        return <SearchbarStatic {...this.props} />;
+        const {
+            placeholder,
+        } = this.props;
+
+        return (
+            <span className="k-searchbar">
+                <InputInnerInput placeholder={placeholder} />
+            </span>
+        );
     }
 }
-
-function SearchbarStatic(props) {
-
-    const {
-        className: ownClassName,
-        aria,
-
-        placeholder,
-
-        ...htmlAttributes
-    } = props;
-
-    let searchbarClasses = [
-        ownClassName,
-        'k-searchbar'
-    ];
-
-    let ariaAttr = aria
-        ? {}
-        : {};
-
-    return (
-        <span className={searchbarClasses}
-            {...ariaAttr}
-            {...htmlAttributes}>
-            <InputStatic placeholder={placeholder} />
-        </span>
-    );
-}
-
-SearchbarStatic.defaultProps = {
-    ...globalDefaultProps,
-
-    className: '',
-    placeholder: ''
-};
-
-SearchbarStatic.propTypes = {
-    className: typeof '',
-    placeholder: typeof '',
-
-    aria: typeof false,
-
-    htmlAttributes: typeof []
-};
-
-export { Searchbar, SearchbarStatic };

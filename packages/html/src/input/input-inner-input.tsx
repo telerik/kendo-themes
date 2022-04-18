@@ -1,65 +1,37 @@
-import { Component, globalDefaultProps } from '../component/index';
+import * as React from 'react';
 
-class InputInnerInput extends Component {
+export interface InputInnerInputProps {
+    className?: string;
+    value?: string;
+    type?: string;
+    placeholder?: string;
+    autocomplete?: string;
+}
+
+export class InputInnerInput extends React.Component<InputInnerInputProps> {
+
+    static defaultProps = {
+        type: 'text',
+        autocomplete: 'off',
+        value: '',
+        placeholder: ''
+    };
+
     render() {
-        return <InputInnerInputStatic {...this.props} />;
+        const {
+            type,
+            value,
+            placeholder,
+            autocomplete
+        } = this.props;
+
+        return (
+            <input
+                type={type}
+                className="k-input-inner"
+                placeholder={placeholder}
+                autoComplete={autocomplete}
+                defaultValue={value} />
+        );
     }
 }
-
-function InputInnerInputStatic(props) {
-
-    const {
-        className: ownClassName,
-
-        type,
-        value,
-        placeholder,
-        autocomplete,
-
-        aria,
-
-        ...htmlAttributes
-    } = props;
-
-    let ariaAttr = aria
-        ? {}
-        : {};
-
-    let inputClasses = [
-        ownClassName,
-        'k-input-inner'
-    ];
-
-    htmlAttributes.value = value;
-    htmlAttributes.placeholder = placeholder;
-    htmlAttributes.autocomplete = autocomplete;
-
-    return (
-        <input type={type} className={inputClasses} {...ariaAttr} {...htmlAttributes} />
-    );
-}
-
-InputInnerInputStatic.defaultProps = {
-    ...globalDefaultProps,
-
-    type: 'text',
-    value: '',
-    placeholder: '',
-    autocomplete: 'off'
-};
-
-InputInnerInputStatic.propTypes = {
-    className: typeof '',
-
-    type: typeof [],
-    value: typeof '',
-    placeholder: typeof '',
-    autocomplete: typeof [ 'on', 'off' ],
-
-    aria: typeof false,
-    legacy: typeof false,
-
-    htmlAttributes: typeof []
-};
-
-export { InputInnerInput, InputInnerInputStatic };

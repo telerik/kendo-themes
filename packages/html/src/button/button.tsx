@@ -1,131 +1,89 @@
-import * as styles from '../../utils/styles';
-import { Component, globalDefaultProps } from '../component/index';
-import { IconStatic } from '../icon/index';
+import * as React from 'react';
+import { classNames, kendoThemeMaps } from '../utils';
+import { Icon } from '../icon/';
 
-class Button extends Component {
+export interface ButtonProps {
+    children?: React.ReactNode;
+    className?: string;
+    dir?: string;
+    style?: React.CSSProperties;
+    iconClassName?: string;
+    text?: string;
+    icon?: string;
+    size?: null | 'small' | 'medium' | 'large';
+    rounded: null | 'small' | 'medium' | 'large' | 'full';
+    fillMode?: null | 'solid' | 'outline' | 'flat' | 'link' | 'clear';
+    themeColor?: null | 'base' | 'primary' | 'secondary' | 'tertiary' | 'info' | 'success' | 'warning' | 'error' | 'dark' | 'light' | 'inverse';
+    hover?: boolean;
+    focus?: boolean;
+    active?: boolean;
+    selected?: boolean;
+    disabled?: boolean;
+}
 
-    init() {
-        this._props.text = this.element.innerHTML;
-        this._props.children = [];
-    }
+export class Button extends React.Component<ButtonProps> {
+
+    static defaultProps = {
+        size: 'medium',
+        rounded: 'medium',
+        fillMode: 'solid',
+        themeColor: 'base'
+    };
 
     render() {
-        return <ButtonStatic {...this.props} />;
+        const {
+            children,
+            className,
+            iconClassName,
+            text,
+            icon,
+            size,
+            rounded,
+            fillMode,
+            themeColor,
+            hover,
+            focus,
+            active,
+            selected,
+            disabled,
+            ...htmlAttributes
+        } = this.props;
+
+        const hasIcon = (icon !== undefined);
+        const hasChildren = children !== undefined;
+
+        return (
+            <button
+                style={this.props.style}
+                {...htmlAttributes}
+                dir={this.props.dir}
+                className={classNames(
+                    className,
+                    'k-button',
+                    {
+                        [`k-button-${kendoThemeMaps.sizeMap[size!] || size}`]: size,
+                        [`k-button-${fillMode}`]: fillMode,
+                        [`k-button-${fillMode}-${themeColor}`]: Boolean(fillMode && themeColor),
+                        [`k-rounded-${kendoThemeMaps.roundedMap[rounded!] || rounded}`]: rounded,
+                        'k-icon-button': !hasChildren && hasIcon,
+                        'k-hover': hover,
+                        'k-focus': focus,
+                        'k-active': active,
+                        'k-selected': selected,
+                        'k-disabled': disabled
+                    }
+                )}>
+                {icon && <Icon className={classNames(iconClassName, 'k-button-icon')} name={icon} />}
+
+                {text || hasIcon
+                    ?
+                    <>
+                        {text && <span className="k-button-text">{text}</span>}
+                        {children}
+                    </>
+                    : children && <span className="k-button-text">{children}</span>
+                }
+            </button>
+        );
     }
 }
-
-function ButtonStatic(props) {
-    const {
-        className: ownClassName,
-        children,
-
-        text,
-        type,
-
-        size,
-        rounded,
-        shape,
-
-        fillMode,
-        themeColor,
-
-        icon,
-
-        hover,
-        focus,
-        active,
-        selected,
-        disabled,
-
-        aria,
-
-        ...htmlAttributes
-    } = props;
-
-    const isIconButton = Boolean( icon ) === true && Boolean( text ) === false;
-
-    let buttonClasses = [
-        ownClassName,
-        'k-button',
-        styles.sizeClass( size, 'k-button' ),
-        styles.roundedClass( rounded ),
-        styles.shapeClass( shape, 'k-button' ),
-        styles.fillModeClass( fillMode, 'k-button' ),
-        styles.themeColorClass( fillMode, themeColor, 'k-button' ),
-        {
-            'k-hover': hover === true,
-            'k-focus': focus === true,
-            'k-active': active === true,
-            'k-selected': selected === true,
-            'k-disabled': disabled === true,
-            'k-icon-button': isIconButton
-        }
-    ];
-
-    // Augment attributes
-    htmlAttributes.disabled = disabled;
-
-    let ariaAttr = aria
-        ? {}
-        : {};
-
-    return (
-        <button type={type} className={buttonClasses} {...ariaAttr} {...htmlAttributes}>
-            { children.length === 0
-                ? <>
-                    <IconStatic className="k-button-icon" name={icon} />
-                    {text && <span className="k-button-text">{text}</span>}
-                </>
-                : children
-            }
-        </button>
-    );
-}
-
-ButtonStatic.defaultProps = {
-    ...globalDefaultProps,
-
-    children: [],
-
-    text: '',
-    icon: '',
-
-    className: '',
-    type: 'button',
-
-    size: 'medium',
-    rounded: 'medium',
-    shape: 'rectangle',
-
-    fillMode: 'solid',
-    themeColor: 'base'
-};
-
-ButtonStatic.propTypes = {
-    children: typeof [],
-    text: typeof '',
-    icon: typeof '',
-
-    type: typeof [ 'button', 'submit', 'reset' ],
-
-    size: typeof [ null, 'small', 'medium', 'large' ],
-    rounded: typeof [ null, 'small', 'medium', 'large', 'full' ],
-    shape: typeof [ null, 'rectangle', 'square' ],
-
-    fillMode: typeof [ null, 'solid', 'flat', 'outline', 'link' ],
-    themeColor: typeof [ null, 'surface', 'base', 'primary' ],
-
-    hover: typeof false,
-    focus: typeof false,
-    active: typeof false,
-    selected: typeof false,
-    disabled: typeof false,
-
-    aria: typeof false,
-    legacy: typeof false,
-
-    className: typeof '',
-    htmlAttributes: typeof []
-};
-
-export { Button, ButtonStatic };

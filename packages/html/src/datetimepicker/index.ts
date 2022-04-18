@@ -1,1 +1,1 @@
-export * from './datetimepicker.jsx';
+export * from './datetimepicker';

@@ -1,1 +1,1 @@
-export * from './textarea.jsx';
+export * from './textarea';

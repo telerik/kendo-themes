@@ -1,121 +1,101 @@
-import { globalDefaultProps } from '../component/index';
-import { Picker, PickerStatic, InputInnerSpanStatic } from '../input/index';
-import { ColorPreviewStatic } from './color-preview.jsx';
-import { ButtonStatic } from '../button/index';
+import * as React from 'react';
+import { classNames } from '../utils';
+import { Button } from '../button';
+import {
+    Picker,
+    InputInnerSpan,
+    InputPrefix,
+    InputSuffix
+} from '../input';
 
-class Colorpicker extends Picker {
+import { ColorPreview } from '../color-preview';
+
+export interface ColorPickerProps {
+    className?: string;
+    valueIconName?: string;
+    arrowIconName?: string;
+    prefix?: React.ReactNode;
+    suffix?: React.ReactNode;
+    value?: string;
+    placeholder?: string;
+    size?: null | 'small' | 'medium' | 'large';
+    rounded?: null | 'small' | 'medium' | 'large' | 'full';
+    fillMode?: null | 'solid' | 'outline' | 'flat';
+    hover?: boolean;
+    focus?: boolean;
+    valid?: boolean;
+    invalid?: boolean
+    required?: boolean;
+    disabled?: boolean;
+}
+
+export class ColorPicker extends React.Component<ColorPickerProps> {
+
+    static defaultProps = {
+        arrowIconName: 'arrow-s'
+    };
+
     render() {
-        return <ColorpickerStatic {...this.props} />;
+        const {
+            className,
+            valueIconName,
+            arrowIconName,
+            prefix,
+            suffix,
+            value,
+            placeholder,
+            size,
+            rounded,
+            fillMode,
+            hover,
+            focus,
+            valid,
+            invalid,
+            required,
+            disabled
+        } = this.props;
+
+        return (
+            <Picker
+                size={size}
+                rounded={rounded}
+                fillMode={fillMode}
+                hover={hover}
+                focus={focus}
+                valid={valid}
+                invalid={invalid}
+                required={required}
+                disabled={disabled}
+                className={classNames(
+                    className,
+                    'k-colorpicker',
+                    'k-icon-picker'
+                )}
+            >
+                <InputPrefix>{prefix}</InputPrefix>
+                <InputInnerSpan
+                    placeholder={placeholder}
+                    value={value}
+                    showValue={false}
+                    valueIcon={
+                        <ColorPreview
+                            className="k-value-icon"
+                            color={value}
+                            iconName={valueIconName}
+                        />
+                    }
+                    valueIconName={valueIconName}
+                />
+                <InputSuffix>{suffix}</InputSuffix>
+                <Button
+                    className="k-input-button"
+                    icon={arrowIconName}
+                    rounded={null}
+                    size={this.props.size}
+                    fillMode={this.props.fillMode}
+                />
+            </Picker>
+        );
+
     }
 }
-
-function ColorpickerStatic(props) {
-
-    const {
-        className: ownClassName,
-
-        value,
-
-        iconName,
-
-        prefix,
-        suffix,
-
-        size,
-        rounded,
-
-        fillMode,
-
-        hover,
-        focus,
-        valid,
-        invalid,
-        required,
-        disabled,
-
-        aria,
-
-        ...htmlAttributes
-    } = props;
-
-    htmlAttributes.size = size;
-    htmlAttributes.rounded = rounded;
-    htmlAttributes.fillMode = fillMode;
-    htmlAttributes.hover = hover;
-    htmlAttributes.focus = focus;
-    htmlAttributes.valid = valid;
-    htmlAttributes.invalid = invalid;
-    htmlAttributes.required = required;
-    htmlAttributes.disabled = disabled;
-
-    let colorpickerClasses = [
-        ownClassName,
-        'k-colorpicker',
-        'k-icon-picker'
-    ];
-
-    let ariaAttr = aria
-        ? {}
-        : {};
-
-    return (
-        <PickerStatic className={colorpickerClasses} {...ariaAttr} {...htmlAttributes}>
-            {prefix}
-            <InputInnerSpanStatic showValue={false} valueIcon={<ColorPreviewStatic className="k-value-icon" color={value} iconName={iconName} />} />
-            {suffix}
-            <ButtonStatic className="k-input-button" icon="arrow-s" shape={null} rounded={null} size={size} fillMode={fillMode}></ButtonStatic>
-        </PickerStatic>
-    );
-}
-
-ColorpickerStatic.defaultProps = {
-    ...globalDefaultProps,
-
-    type: 'text',
-    value: '',
-    placeholder: '',
-    autocomplete: 'off',
-
-    iconName: '',
-
-    valueIcon: null,
-
-    size: 'medium',
-    rounded: 'medium',
-
-    fillMode: 'solid'
-};
-
-ColorpickerStatic.propTypes = {
-    children: typeof [],
-    className: typeof '',
-
-    type: typeof [ 'text', 'password' ],
-    value: typeof '',
-    placeholder: typeof '',
-    autocomplete: typeof [ 'on', 'off' ],
-
-    iconName: typeof '',
-
-    prefix: typeof '#fragment',
-    suffix: typeof '#fragment',
-
-    size: typeof [ null, 'small', 'medium', 'large' ],
-    rounded: typeof [ null, 'small', 'medium', 'large', 'full' ],
-
-    fillMode: typeof [ null, 'solid', 'flat', 'outline' ],
-
-    hover: typeof false,
-    focus: typeof false,
-    valid: typeof false,
-    invalid: typeof false,
-    required: typeof false,
-    disabled: typeof false,
-
-    aria: typeof false,
-    legacy: typeof false,
-
-    htmlAttributes: typeof []
-};
-
-export { Colorpicker, ColorpickerStatic };

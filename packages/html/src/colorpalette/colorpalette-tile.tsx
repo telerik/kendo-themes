@@ -1,71 +1,48 @@
-import { Component, globalDefaultProps } from '../component/index';
+import * as React from 'react';
+import { classNames } from '../utils';
 
-class ColorPaletteTile extends Component {
+export interface ColorPaletteTileProps {
+    className?: string;
+    color?: string;
+    tileSize?: string;
+    hover?: boolean;
+    focus?: boolean;
+    selected?: boolean;
+}
+
+export class ColorPaletteTile extends React.Component<ColorPaletteTileProps> {
+
+
     render() {
-        return <ColorPaletteTileStatic {...this.props} />;
+        const {
+            className,
+            color,
+            tileSize,
+            hover,
+            focus,
+            selected,
+        } = this.props;
+
+        const styles = {
+            'background-color': color,
+            'width': tileSize ? tileSize + 'px' : '',
+            'height': tileSize ? tileSize + 'px' : ''
+        };
+
+        return (
+            <td
+                className={classNames(
+                    className,
+                    'k-colorpalette-tile',
+                    {
+                        'k-hover': hover,
+                        'k-focus': focus,
+                        'k-selected': selected,
+                    }
+                )}
+                style={styles}
+            >
+            </td>
+        );
     }
 }
-
-function ColorPaletteTileStatic(props) {
-    const {
-        className: ownClassName,
-
-        color,
-        tileSize,
-
-        hover,
-        focus,
-        selected,
-
-        aria,
-
-        ...htmlAttributes
-    } = props;
-
-    let colorPaletteTileClasses = [
-        ownClassName,
-        'k-colorpalette-tile',
-        {
-            'k-hover': hover === true,
-            'k-focus': focus === true,
-            'k-selected': selected === true
-        }
-    ];
-
-    let styles = {
-        'background-color': color,
-        'width': tileSize ? tileSize + "px" : '',
-        'height': tileSize ? tileSize + "px" : ''
-    };
-
-    let ariaAttr = aria;
-
-    return (
-        <td className={colorPaletteTileClasses} {...ariaAttr} {...htmlAttributes} style={styles}></td>
-    );
-}
-
-ColorPaletteTileStatic.defaultProps = {
-    ...globalDefaultProps,
-
-    color: '',
-    tileSize: ''
-};
-
-ColorPaletteTileStatic.propTypes = {
-    className: typeof '',
-
-    color: typeof '',
-    tileSize: typeof '',
-
-    hover: typeof false,
-    focus: typeof false,
-    selected: typeof false,
-
-    aria: typeof false,
-    legacy: typeof false,
-
-    htmlAttributes: typeof []
-};
-
-export { ColorPaletteTile, ColorPaletteTileStatic };

@@ -1,56 +1,43 @@
-import { Component, globalDefaultProps } from '../component/index';
-import { ButtonStatic } from '../button/index';
+import * as React from 'react';
+import { Button } from '../button';
+import { classNames } from '../utils';
 
-class SpinButton extends Component {
+export interface SpinButtonProps {
+    className?: string;
+    size?: null | 'small' | 'medium' | 'large';
+    fillMode?: null | 'solid' | 'outline' | 'flat' | 'link' | 'clear';
+}
+
+export class SpinButton extends React.Component<SpinButtonProps> {
+
     render() {
-        return <SpinButtonStatic {...this.props} />;
+        const {
+            className,
+            size,
+            fillMode
+        } = this.props;
+
+        return (
+            <span
+                className={classNames(
+                    className,
+                    'k-spin-button'
+                )}>
+                <Button
+                    className="k-spinner-increase"
+                    icon="arrow-n"
+                    rounded={null}
+                    size={size}
+                    fillMode={fillMode}>
+                </Button>
+                <Button
+                    className="k-spinner-decrease"
+                    icon="arrow-s"
+                    rounded={null}
+                    size={size}
+                    fillMode={fillMode}>
+                </Button>
+            </span>
+        );
     }
 }
-
-function SpinButtonStatic(props) {
-
-    const {
-        className: ownClassName,
-
-        size,
-        fillMode,
-
-        aria,
-
-        ...htmlAttributes
-    } = props;
-
-    let spinButtonClasses = [
-        ownClassName,
-        'k-spin-button'
-    ];
-
-    let ariaAttr = aria
-        ? {}
-        : {};
-
-    return (
-        <span className={spinButtonClasses} {...ariaAttr} {...htmlAttributes}>
-            <ButtonStatic className="k-spinner-increase" icon="arrow-n" shape={null} rounded={null} size={size} fillMode={fillMode} />
-            <ButtonStatic className="k-spinner-decrease" icon="arrow-s" shape={null} rounded={null} size={size} fillMode={fillMode} />
-        </span>
-    );
-}
-
-SpinButtonStatic.defaultProps = {
-    ...globalDefaultProps
-};
-
-SpinButtonStatic.propTypes = {
-    className: typeof '',
-
-    size: typeof '',
-    fillMode: typeof '',
-
-    aria: typeof false,
-    legacy: typeof false,
-
-    htmlAttributes: typeof []
-};
-
-export { SpinButton, SpinButtonStatic };

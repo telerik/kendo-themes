@@ -1,59 +1,41 @@
-import * as styles from '../../utils/styles';
-import { Component, globalDefaultProps } from '../component/index';
+import * as React from 'react';
+import { classNames, kendoThemeMaps } from '../utils';
 
-class MenuList extends Component {
+
+export interface MenuListProps {
+    className?: string;
+    children?: React.ReactNode;
+    size?: null | 'small' | 'medium' | 'large';
+}
+
+export class MenuList extends React.Component<MenuListProps> {
+
+    static defaultProps = {
+        size: 'medium',
+    };
+
     render() {
-        return <MenuListStatic {...this.props} />;
+        const {
+            className,
+            children,
+            size,
+        } = this.props;
+
+        if (!children) {
+            return <></>;
+        }
+
+        return (
+            <ul
+                className={classNames(
+                    className,
+                    'k-menu-group',
+                    {
+                        [`k-menu-group-${kendoThemeMaps.sizeMap[size!] || size}`]: size,
+                    }
+                )}>
+                {children}
+            </ul>
+        );
     }
 }
-
-function MenuListStatic(props) {
-    const {
-        className: ownClassName,
-        children,
-
-        size,
-
-        aria,
-
-        ...htmlAttributes
-    } = props;
-
-    let menuListClasses = [
-        ownClassName,
-        'k-menu-group',
-        styles.sizeClass( size, 'k-menu-group' ),
-    ];
-
-    let ariaAttr = aria
-        ? {}
-        : {};
-
-    return (
-        <ul className={menuListClasses} {...ariaAttr} {...htmlAttributes}>
-            {children}
-        </ul>
-    );
-}
-
-MenuListStatic.defaultProps = {
-    ...globalDefaultProps,
-
-    className: '',
-
-    size: 'medium'
-};
-
-MenuListStatic.propTypes = {
-    size: typeof [ null, 'small', 'medium', 'large' ],
-
-    children: typeof [],
-
-    aria: typeof false,
-    legacy: typeof false,
-
-    className: typeof '',
-    htmlAttributes: typeof []
-};
-
-export { MenuList, MenuListStatic };

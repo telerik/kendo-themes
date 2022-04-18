@@ -1,28 +1,26 @@
-import { IconStatic } from '../icon/index';
+import * as React from 'react';
+import { Icon } from '../icon';
 
-function InputLoadingIconStatic(inputProps) {
-
-    const {
-        showLoadingIcon,
-
-        loading,
-        disabled,
-
-        aria
-    } = inputProps;
-
-    if (disabled || !showLoadingIcon || !loading) {
-        return <></>;
-    }
-
-    let ariaAttr = aria
-        ? {}
-        : {};
-
-    return (
-        <IconStatic name="loading" className="k-input-loading-icon" {...ariaAttr} />
-    );
-
+export interface InputLoadingIconProps {
+    className?: string;
+    loading?: boolean;
+    disabled?: boolean;
 }
 
-export { InputLoadingIconStatic };
+export class InputLoadingIcon extends React.Component<InputLoadingIconProps> {
+
+    render() {
+        const {
+            loading,
+            disabled
+        } = this.props;
+
+        if (disabled || !loading) {
+            return <></>;
+        }
+
+        return (
+            <Icon className="k-input-loading-icon" name="loading" />
+        );
+    }
+}

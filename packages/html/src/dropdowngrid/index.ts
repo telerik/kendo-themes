@@ -1,1 +1,1 @@
-export * from './dropdowngrid.jsx';
+export * from './dropdowngrid';

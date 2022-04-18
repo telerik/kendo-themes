@@ -1,85 +1,71 @@
-import { Component, globalDefaultProps } from '../component/index';
-import { CaptchaImageStatic } from '../captcha/index';
-import { TextboxStatic } from '../textbox/index';
+import * as React from 'react';
+import { classNames } from '../utils';
+import { Textbox } from '../textbox';
+import { Button } from '../button';
 
-class Captcha extends Component {
+export interface CaptchaProps {
+    className?: string;
+    value?: string;
+    loading?: boolean;
+    valid?: boolean;
+    invalid?: boolean;
+    disabled?: boolean;
+}
+
+export class Captcha extends React.Component<CaptchaProps> {
+
     render() {
-        return <CaptchaStatic {...this.props} />;
+        const {
+            className,
+            value,
+            valid,
+            invalid,
+            loading,
+            disabled,
+        } = this.props;
+
+        return (
+            <div className={classNames(className, 'k-captcha',
+                {
+                    'k-captcha-loading': loading,
+                    'k-disabled': disabled
+                })}
+            >
+                <div className="k-captcha-image-wrap k-hstack">
+                    <div className="k-captcha-image">
+                        <img
+                            className={classNames({ 'k-hidden': loading })}
+                            src="/packages/html/assets/captcha.jpg"
+                        />
+                        {loading && (
+                            <span
+                                style={{ width: '100%', height: '100%' }}
+                                className="k-skeleton k-skeleton-rect">
+                            </span>
+                        )}
+                    </div>
+                    <div className="k-captcha-image-controls k-vstack">
+                        <Button icon="volume-up" disabled={loading === true}></Button>
+                        <Button icon="reload" disabled={loading === true}></Button>
+                    </div>
+                    <div className="k-captcha-volume-control k-vstack k-pos-absolute k-hidden">
+                        <div className="k-widget k-slider k-slider-vertical"></div>
+                    </div>
+                </div>
+                <div className="k-captcha-input k-vstack">
+                    <Textbox
+                        value={value}
+                        invalid={invalid}
+                        disabled={loading === true}
+                    />
+                    {valid && !loading && (
+                        <span className="k-captcha-validation-message k-text-success">
+                            Verification Success
+                        </span>
+                    )}
+                </div>
+            </div>
+        );
+
     }
 }
-
-function CaptchaStatic(props) {
-
-    const {
-        className: ownClassName,
-
-        loading,
-        value,
-
-        valid,
-        invalid,
-        disabled,
-
-        aria,
-
-        ...htmlAttributes
-
-    } = props;
-
-    htmlAttributes.disabled = disabled;
-
-    let ariaAttr = aria
-        ? {}
-        : {};
-
-    let captchaClasses = [
-        ownClassName,
-        'k-captcha',
-        {
-            'k-captcha-loading': loading === true,
-            'k-disabled': disabled === true,
-        }
-    ];
-
-    const textBoxAttributes = {
-        value,
-        showClearButton: false,
-        invalid,
-        disabled: loading === true
-    };
-
-
-    return (
-        <div className={captchaClasses} {...ariaAttr} {...htmlAttributes}>
-            <CaptchaImageStatic loading={loading}></CaptchaImageStatic>
-
-            <div className="k-captcha-input k-vstack">
-                <TextboxStatic {...textBoxAttributes}></TextboxStatic>
-                {valid && !loading && <span className="k-captcha-validation-message k-text-success">Verification Success</span>}
-            </div>
-        </div>
-    );
-}
-
-CaptchaStatic.defaultProps = {
-    ...globalDefaultProps,
-    loading: false,
-    value: '',
-};
-
-CaptchaStatic.propTypes = {
-    className: typeof '',
-
-    loading: typeof false,
-    value: typeof '',
-
-    valid: typeof false,
-    invalid: typeof false,
-    disabled: typeof false,
-
-    aria: typeof false,
-
-    htmlAttributes: typeof []
-};
-
-export { Captcha, CaptchaStatic };

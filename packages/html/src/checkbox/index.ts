@@ -1,1 +1,1 @@
-export * from './checkbox.jsx';
+export * from './checkbox';

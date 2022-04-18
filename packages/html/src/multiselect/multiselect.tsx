@@ -1,163 +1,96 @@
-import { globalDefaultProps } from '../component/index';
-import { Input, InputStatic, InputInnerInputStatic } from '../input/index';
-import { InputValidationIconStatic, InputLoadingIconStatic, InputClearValueStatic } from '../input/index';
-import { ButtonStatic } from '../button/index';
-import { MultiSelectChipListStatic } from './index';
+import * as React from 'react';
+import { classNames } from '../utils';
+import { Button } from '../button';
+import { ChipList, ChipProps } from '../chip';
+import {
+    Input,
+    InputInnerInput,
+    InputClearValue,
+    InputLoadingIcon,
+    InputPrefix,
+    InputSuffix,
+    InputValidationIcon
+} from '../input';
 
-class MultiSelect extends Input {
+export interface MultiSelectProps {
+    className?: string;
+    prefix?: React.ReactNode;
+    suffix?: React.ReactNode;
+    value?: string;
+    placeholder?: string;
+    tags?: React.ReactElement<ChipProps> | React.ReactElement<ChipProps>[];
+    size?: null | 'small' | 'medium' | 'large';
+    rounded?: null | 'small' | 'medium' | 'large' | 'full';
+    fillMode?: null | 'solid' | 'outline' | 'flat';
+    showArrowButton?: boolean;
+    hover?: boolean;
+    focus?: boolean;
+    valid?: boolean;
+    invalid?: boolean
+    required?: boolean;
+    loading?: boolean;
+    disabled?: boolean;
+}
 
-    init() {
-        let value = <></>;
-        let children = this._props.children;
-        let newChildren = [];
-
-        children.forEach( child => {
-            let component = child._component;
-
-            if (component === 'MultiSelectChipList') {
-                value.props.children.push.apply(value.props.children, child.props.children);
-                return;
-            }
-
-            newChildren.push( child );
-        });
-
-        this._props.value = value;
-        this._props.children = newChildren;
-    }
+export class MultiSelect extends React.Component<MultiSelectProps> {
 
     render() {
-        return <MultiSelectStatic {...this.props} />;
+        const {
+            className,
+            prefix,
+            suffix,
+            value,
+            placeholder,
+            tags,
+            size,
+            rounded,
+            fillMode,
+            showArrowButton,
+            hover,
+            focus,
+            valid,
+            invalid,
+            required,
+            loading,
+            disabled,
+        } = this.props;
+
+        return (
+            <Input
+                size={size}
+                rounded={rounded}
+                fillMode={fillMode}
+                hover={hover}
+                focus={focus}
+                valid={valid}
+                invalid={invalid}
+                required={required}
+                loading={loading}
+                disabled={disabled}
+                className={classNames(className, 'k-multiselect')}
+            >
+                <InputPrefix>{prefix}</InputPrefix>
+                <ChipList className="k-input-values" size={size}>
+                    <>
+                        {tags}
+                    </>
+                    <InputInnerInput placeholder={placeholder} value={value}/>
+                </ChipList>
+                <InputSuffix>{suffix}</InputSuffix>
+                <InputValidationIcon {...this.props} />
+                <InputLoadingIcon {...this.props} />
+                <InputClearValue value={tags ? 'value' : ''} {...this.props} />
+                {showArrowButton && (
+                    <Button
+                        className="k-input-button"
+                        icon="arrow-s"
+                        rounded={null}
+                        size={size}
+                        fillMode={fillMode}
+                    />
+                )}
+            </Input>
+        );
+
     }
 }
-
-function MultiSelectStatic(props) {
-
-    const {
-        className: ownClassName,
-
-        type,
-        placeholder,
-        autocomplete,
-
-        prefix,
-        suffix,
-        value,
-
-        size,
-        rounded,
-
-        fillMode,
-
-        showArrowButton,
-
-        hover,
-        focus,
-        valid,
-        invalid,
-        required,
-        disabled,
-
-        aria,
-
-        ...htmlAttributes
-    } = props;
-
-    htmlAttributes.size = size;
-    htmlAttributes.rounded = rounded;
-    htmlAttributes.fillMode = fillMode;
-    htmlAttributes.hover = hover;
-    htmlAttributes.focus = focus;
-    htmlAttributes.valid = valid;
-    htmlAttributes.invalid = invalid;
-    htmlAttributes.required = required;
-    htmlAttributes.disabled = disabled;
-
-    const inputAttributes = {
-        type,
-        placeholder,
-        autocomplete,
-
-        disabled
-    };
-
-    let multiselectClasses = [
-        ownClassName,
-        'k-multiselect'
-    ];
-
-    let ariaAttr = aria
-        ? {}
-        : {};
-
-    return (
-        <InputStatic className={multiselectClasses} {...ariaAttr} {...htmlAttributes}>
-            {prefix}
-            <MultiSelectChipListStatic {...props}>
-                {value}
-                <InputInnerInputStatic {...inputAttributes} />
-            </MultiSelectChipListStatic>
-            {suffix}
-            <InputValidationIconStatic {...props} />
-            <InputLoadingIconStatic {...props} />
-            <InputClearValueStatic {...props} />
-            {showArrowButton && <ButtonStatic className="k-input-button" icon="arrow-s" shape={null} rounded={null} size={size} fillMode={fillMode}></ButtonStatic>}
-        </InputStatic>
-    );
-}
-
-MultiSelectStatic.defaultProps = {
-    ...globalDefaultProps,
-
-    type: 'text',
-    placeholder: '',
-    autocomplete: 'off',
-
-    showValidationIcon: true,
-    showLoadingIcon: true,
-    showClearButton: true,
-    showArrowButton: false,
-
-    size: 'medium',
-    rounded: 'medium',
-
-    fillMode: 'solid'
-};
-
-MultiSelectStatic.propTypes = {
-    children: typeof [],
-    className: typeof '',
-
-    type: typeof [ 'text', 'password' ],
-    placeholder: typeof '',
-    autocomplete: typeof [ 'on', 'off' ],
-
-    showValidationIcon: typeof true,
-    showLoadingIcon: typeof true,
-    showClearButton: typeof true,
-    showArrowButton: typeof true,
-
-    prefix: typeof '#fragment',
-    suffix: typeof '#fragment',
-    value: typeof '#fragment',
-
-    size: typeof [ null, 'small', 'medium', 'large' ],
-    rounded: typeof [ null, 'small', 'medium', 'large', 'full' ],
-
-    fillMode: typeof [ null, 'solid', 'flat', 'outline' ],
-
-    hover: typeof false,
-    focus: typeof false,
-    valid: typeof false,
-    invalid: typeof false,
-    loading: typeof false,
-    required: typeof false,
-    disabled: typeof false,
-
-    aria: typeof false,
-    legacy: typeof false,
-
-    htmlAttributes: typeof []
-};
-
-export { MultiSelect, MultiSelectStatic };

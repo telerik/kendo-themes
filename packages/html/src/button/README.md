@@ -9,7 +9,6 @@
     k-button
     {text === '' && iconName !== '' && 'k-icon-button'}
     k-button-{size}
-    k-button-{shape}
     k-rounded-{rounded}
     k-button-{fillMode}
     k-button-{fillMode}-{themeColor}

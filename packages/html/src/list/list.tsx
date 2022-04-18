@@ -1,167 +1,115 @@
-import * as styles from '../../utils/styles';
-import { Component, globalDefaultProps } from '../component/index';
-import { ListHeaderStatic } from './list-header.jsx';
-import { ListContentStatic } from './list-content.jsx';
-import { ListGroupItemStatic } from './list-group-item.jsx';
-import { ListItemStatic } from './list-item.jsx';
-import { NoDataStatic } from '../nodata/index';
+import * as React from 'react';
+import { classNames, kendoThemeMaps } from '../utils';
+import { ListItem, ListGroup, ListItemProps, ListContent, ListGroupItem } from '../list';
+import { NoData } from '../nodata';
 
-class List extends Component {
+export interface ListProps {
+    children?: React.ReactElement[];
+    className?: string;
+    size?: null | 'small' | 'medium' | 'large';
+    virtualization?: boolean;
+    framework?: null | 'universal' | 'angular' | 'blazor';
+}
 
-    _transformChildrenUniversal() {
-        let virtualization = this._props.virtualization;
-        let children = this._props.children;
-        let listHeader;
-        let listContent;
-        let listChildren = [];
-        let newChildren = [];
 
-        children.forEach( child => {
-            if ( child.type === 'OPTGROUP') {
-                if (child.props.root === true) {
-                    listHeader = <ListHeaderStatic {...child.props}>{child.props.label}</ListHeaderStatic>;
+export class List extends React.Component<ListProps> {
 
-                    child.props.children.forEach( optChild => {
-                        listChildren.push( <ListItemStatic {...optChild.props} /> );
-                    });
-                } else {
-                    child.props.children.forEach( ( optChild, index ) => {
-                        let groupLabel = '';
-
-                        if ( index === 0 ) {
-                            groupLabel = child.props.label;
-                            optChild.props.className = [ optChild.props.className, 'k-first' ];
-                        }
-                        listChildren.push( <ListItemStatic {...optChild.props} groupLabel={groupLabel} /> );
-                    });
-                }
-            } else if ( child.type === 'OPTION' ) {
-                listChildren.push( <ListItemStatic {...child.props} /> );
-            }
-        });
-
-        listContent = <ListContentStatic virtualization={virtualization}>{listChildren}</ListContentStatic>;
-
-        newChildren.push( listHeader );
-        newChildren.push( listContent );
-
-        this._props.children = newChildren;
-    }
-
-    _transformChildrenAngular() {
-        let virtualization = this._props.virtualization;
-        let children = this._props.children;
-        let listHeader;
-        let listContent;
-        let listChildren = [];
-        let newChildren = [];
-
-        children.forEach( child => {
-            if ( child.type === 'OPTGROUP') {
-                if (child.props.root === true) {
-                    listHeader = <ListHeaderStatic {...child.props}>{child.props.label}</ListHeaderStatic>;
-
-                    child.props.children.forEach( optChild => {
-                        listChildren.push( <ListItemStatic {...optChild.props} /> );
-                    });
-                } else {
-                    listChildren.push( <ListGroupItemStatic {...child.props}>{child.props.label}</ListGroupItemStatic> );
-
-                    child.props.children.forEach( optChild => {
-                        listChildren.push( <ListItemStatic {...optChild.props} /> );
-                    });
-                }
-            } else if ( child.type === 'OPTION' ) {
-                listChildren.push( <ListItemStatic {...child.props} /> );
-            }
-        });
-
-        listContent = <ListContentStatic virtualization={virtualization}>{listChildren}</ListContentStatic>;
-
-        newChildren.push( listHeader );
-        newChildren.push( listContent );
-
-        this._props.children = newChildren;
-    }
-
-    init() {
-        let framework = this._props.framework;
-
-        if ( this._props.children.length === 0 ) {
-            this._props.children.push( <NoDataStatic /> );
-            return;
-        }
-
-        if ( framework === 'angular' || framework === 'blazor' ) {
-            this._transformChildrenAngular();
-            return;
-        }
-
-        this._transformChildrenUniversal();
-    }
+    static defaultProps = {
+        size: 'medium',
+    };
 
     render() {
-        return <ListStatic {...this.props} />;
+        const {
+            children,
+            className,
+            size,
+            virtualization,
+            framework,
+        } = this.props;
+
+        let listHeader: string | undefined;
+        let listGroup: string | number | boolean | JSX.Element | React.ReactFragment | null | undefined;
+        let listContent: string | number | boolean | JSX.Element | React.ReactFragment | null | undefined;
+        const listChildren : React.ReactElement<ListItemProps>[] = [];
+
+        if (children) {
+            children.map((child, index) => {
+                if ( child.type === ListGroup) {
+                    if (child.props.root === true) {
+                        listHeader = child.props.label;
+
+                        child.props.children.map( (optChild, index) => {
+                            listChildren.push(
+                                <ListItem
+                                    key={`optChild-${index}-${new Date().getTime()}`}
+                                    {...optChild.props}
+                                />
+                            );
+                        });
+
+                    } else {
+                        if ( framework === 'angular' || framework === 'blazor' ) {
+                            listChildren.push(
+                                <ListGroupItem
+                                    key={`listChild-${index}`}
+                                    {...child.props}
+                                >
+                                    {child.props.label}
+                                </ListGroupItem>
+                            );
+
+                            child.props.children.map( (optChild, index) => {
+                                listChildren.push(
+                                    <ListItem
+                                        key={`fwOptChild-${index}-${new Date().getTime()}`}
+                                        {...optChild.props}
+                                    />
+                                );
+                            });
+                        } else {
+                            child.props.children.forEach( ( optChild, index ) => {
+                                let groupLabel = '';
+
+                                if ( index === 0 ) {
+                                    groupLabel = child.props.label;
+                                }
+
+                                listChildren.push(
+                                    <ListItem
+                                        className={index === 0 ? 'k-first' : ''}
+                                        key={`groupLabel-${index}-${new Date().getTime()}`}
+                                        {...optChild.props}
+                                        groupLabel={groupLabel}
+                                    />
+                                );
+                            });
+                        }
+                    }
+
+                    listGroup = <ListGroup label={listHeader} virtualization={virtualization}>{listChildren}</ListGroup>;
+
+                } else if ( child.type === ListItem ) {
+                    listChildren.push( <ListItem key={`${child.type}-${index}`} {...child.props} /> );
+                    listContent = <ListContent virtualization={virtualization}>{listChildren}</ListContent>;
+                }
+            });
+        } else {
+            listContent = <NoData>No data found.</NoData>;
+        }
+
+        return (
+            <div
+                className={classNames(
+                    className,
+                    'k-list',
+                    {
+                        [`k-list-${kendoThemeMaps.sizeMap[size!] || size}`]: size,
+                        'k-virtual-list': virtualization
+                    }
+                )}>
+                {listGroup}
+                {listContent}
+            </div>
+        );
     }
 }
-
-function ListStatic(props) {
-    const {
-        className: ownClassName,
-        children,
-
-        size,
-
-        virtualization,
-
-        aria,
-
-        ...htmlAttributes
-    } = props;
-
-    let listClasses = [
-        ownClassName,
-        'k-list',
-        styles.sizeClass( size, 'k-list' ),
-        {
-            'k-virtual-list': virtualization === true
-        }
-    ];
-
-    let ariaAttr = aria
-        ? {}
-        : {};
-
-    return (
-        <div className={listClasses} {...ariaAttr} {...htmlAttributes}>
-            {children}
-        </div>
-    );
-}
-
-ListStatic.defaultProps = {
-    ...globalDefaultProps,
-
-    children: [],
-
-    size: 'medium',
-
-    virtualization: false
-};
-
-ListStatic.propTypes = {
-    framework: typeof [ 'universal', 'angular' ],
-    children: typeof [],
-    className: typeof '',
-
-    size: typeof [ null, 'small', 'medium', 'large' ],
-
-    virtualization: typeof false,
-
-    aria: typeof false,
-    legacy: typeof false,
-
-    htmlAttributes: typeof []
-};
-
-export { List, ListStatic };

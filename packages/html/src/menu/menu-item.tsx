@@ -1,148 +1,96 @@
-import { Component, globalDefaultProps } from '../component/index';
-import { IconStatic } from '../icon/index';
+import * as React from 'react';
+import { classNames } from '../utils';
+import { Icon } from '../icon';
 
-class MenuItem extends Component {
-    init() {
-        let subItem = <></>;
-        let contentTemplate = <></>;
-        let children = this._props.children;
-        let newChildren = [];
 
-        children.forEach( child => {
-            let component = child._component;
+export interface MenuItemProps {
+    className?: string;
+    children?: React.ReactElement[];
+    dir?: string;
+    text?: string;
+    icon?: string;
+    size?: null | 'small' | 'medium' | 'large';
+    hover?: boolean;
+    focus?: boolean;
+    active?: boolean;
+    selected?: boolean;
+    disabled?: boolean;
+    showArrow?: boolean;
+    arrowIconName?: string;
+}
 
-            if (component === 'MenuItem') {
-                subItem.props.children.push( child );
-                return;
-            }
+export class MenuItem extends React.Component<MenuItemProps> {
 
-            if (component === 'MenuItemContent') {
-                contentTemplate.props.children.push( child );
-                return;
-            }
+    static defaultProps = {
+        size: 'medium',
+        dir: 'ltr'
+    };
 
-            newChildren.push( child );
-        });
-
-        this._props.subItem = subItem;
-        this._props.contentTemplate = contentTemplate;
-        this._props.children = newChildren;
-    }
     render() {
-        return <MenuItemStatic {...this.props} />;
+        const {
+            className,
+            children,
+            text,
+            icon,
+            showArrow,
+            arrowIconName,
+            hover,
+            focus,
+            active,
+            selected,
+            disabled,
+            dir,
+        } = this.props;
+
+        const contentTemplate = <></>;
+
+        if (children) {
+            children.forEach( child => {
+                const component = child.type;
+
+                if (component === 'MenuItemContent') {
+                    contentTemplate.props.children.push( child );
+                    return;
+                }
+            });
+        }
+
+        let expandArrowName = arrowIconName;
+
+        if ( !expandArrowName ) {
+            expandArrowName = dir === 'rtl'
+                ? 'arrow-w'
+                : 'arrow-e';
+        }
+
+        return (
+
+            <li
+                className={classNames(
+                    className,
+                    'k-item k-menu-item',
+                    {
+                        'k-disabled': disabled,
+                        'k-focus': focus,
+                    }
+                )}>
+                <span
+                    className={classNames(
+                        className,
+                        'k-link k-menu-link',
+                        {
+                            'k-hover': hover,
+                            'k-active': active,
+                            'k-selected': selected,
+                            'k-disabled': disabled
+                        }
+                    )}>
+                    {icon && <Icon className="k-menu-link-icon" name={icon} />}
+                    <span className="k-menu-link-text">{text}</span>
+                    {showArrow && <span className="k-menu-expand-arrow"><Icon name={expandArrowName} /></span>}
+                </span>
+                {contentTemplate}
+            </li>
+        );
     }
 }
-
-function MenuItemStatic(props) {
-    const {
-        className: ownClassName,
-
-        text,
-
-        icon,
-
-        showArrow,
-        arrowIconName,
-
-        contentTemplate,
-
-        hover,
-        focus,
-        active,
-        selected,
-        disabled,
-
-        dir,
-
-        aria,
-
-        ...htmlAttributes
-    } = props;
-
-    let menuItemClasses = [
-        ownClassName,
-        'k-item k-menu-item',
-        {
-            'k-disabled': disabled === true,
-            'k-focus': focus === true
-        }
-    ];
-
-    let menuItemLinkClasses = [
-        'k-link k-menu-link',
-        {
-            'k-hover': hover === true,
-            'k-active': active === true,
-            'k-selected': selected === true,
-            'k-disabled': disabled === true
-        }
-    ];
-
-    let expandArrowName = arrowIconName;
-
-    if ( expandArrowName === '' ) {
-        expandArrowName = dir === 'rtl'
-            ? 'arrow-w'
-            : 'arrow-e';
-    }
-
-    // Augment attributes
-    htmlAttributes.disabled = disabled;
-
-    let ariaAttr = aria
-        ? {}
-        : {};
-
-    return (
-        <li className={menuItemClasses} {...ariaAttr} {...htmlAttributes}>
-            <span className={menuItemLinkClasses}>
-                {icon && <IconStatic className="k-menu-link-icon" name={icon} />}
-                <span className="k-menu-link-text">{text}</span>
-                {showArrow && <span className="k-menu-expand-arrow"><IconStatic name={expandArrowName} /></span>}
-            </span>
-            {contentTemplate}
-        </li>
-    );
-}
-
-MenuItemStatic.defaultProps = {
-    ...globalDefaultProps,
-
-    text: '',
-    icon: '',
-
-    className: '',
-    arrowIconName: '',
-
-    size: 'medium',
-
-    dir: 'ltr'
-};
-
-MenuItemStatic.propTypes = {
-    text: typeof '',
-    icon: typeof '',
-
-    showArrow: typeof false,
-    arrowIconName: typeof '',
-
-    contentTemplate: typeof '#fragment',
-
-    size: typeof [ null, 'small', 'medium', 'large' ],
-
-    hover: typeof false,
-    focus: typeof false,
-    active: typeof false,
-    selected: typeof false,
-    disabled: typeof false,
-
-    aria: typeof false,
-    legacy: typeof false,
-
-    dir: typeof '',
-
-    className: typeof '',
-    htmlAttributes: typeof []
-};
-
-export { MenuItem, MenuItemStatic };

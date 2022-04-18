@@ -1,135 +1,84 @@
-import { globalDefaultProps } from '../component/index';
-import { Input, InputStatic, InputInnerInputStatic } from '../input/index';
-import { InputValidationIconStatic, InputLoadingIconStatic, InputClearValueStatic } from '../input/index';
-import { ButtonStatic } from '../button/index';
+import * as React from 'react';
+import { classNames } from '../utils';
+import { Button } from '../button';
+import {
+    Input,
+    InputInnerInput,
+    InputClearValue,
+    InputLoadingIcon,
+    InputValidationIcon,
+    InputPrefix,
+    InputSuffix
+} from '../input';
 
-class TimePicker extends Input {
+export interface TimePickerProps {
+    className?: string;
+    prefix?: React.ReactNode;
+    suffix?: React.ReactNode;
+    type?: string;
+    value?: string;
+    placeholder?: string;
+    size?: null | 'small' | 'medium' | 'large';
+    rounded?: null | 'small' | 'medium' | 'large' | 'full';
+    fillMode?: null | 'solid' | 'outline' | 'flat';
+    hover?: boolean;
+    focus?: boolean;
+    valid?: boolean;
+    invalid?: boolean
+    required?: boolean;
+    loading?: boolean;
+    disabled?: boolean;
+}
+
+export class TimePicker extends React.Component<TimePickerProps> {
+
     render() {
-        return <TimePickerStatic {...this.props} />;
+        const {
+            className,
+            prefix,
+            suffix,
+            value,
+            placeholder,
+            size,
+            rounded,
+            fillMode,
+            hover,
+            focus,
+            valid,
+            invalid,
+            required,
+            loading,
+            disabled,
+        } = this.props;
+
+        return (
+            <Input
+                size={size}
+                rounded={rounded}
+                fillMode={fillMode}
+                hover={hover}
+                focus={focus}
+                valid={valid}
+                invalid={invalid}
+                required={required}
+                loading={loading}
+                disabled={disabled}
+                className={classNames(className, 'k-timepicker')}
+            >
+                <InputPrefix>{prefix}</InputPrefix>
+                <InputInnerInput placeholder={placeholder} value={value} />
+                <InputSuffix>{suffix}</InputSuffix>
+                <InputValidationIcon {...this.props} />
+                <InputLoadingIcon {...this.props} />
+                <InputClearValue {...this.props} />
+                <Button
+                    className="k-input-button"
+                    icon="clock"
+                    rounded={null}
+                    size={size}
+                    fillMode={fillMode}>
+                </Button>
+            </Input>
+        );
     }
 }
-
-function TimePickerStatic(props) {
-
-    const {
-        className: ownClassName,
-
-        type,
-        value,
-        placeholder,
-        autocomplete,
-
-        prefix,
-        suffix,
-
-        size,
-        rounded,
-
-        fillMode,
-
-        hover,
-        focus,
-        valid,
-        invalid,
-        required,
-        disabled,
-
-        aria,
-
-        ...htmlAttributes
-    } = props;
-
-    htmlAttributes.size = size;
-    htmlAttributes.rounded = rounded;
-    htmlAttributes.fillMode = fillMode;
-    htmlAttributes.hover = hover;
-    htmlAttributes.focus = focus;
-    htmlAttributes.valid = valid;
-    htmlAttributes.invalid = invalid;
-    htmlAttributes.required = required;
-    htmlAttributes.disabled = disabled;
-
-    const inputAttributes = {
-        type,
-        value,
-        placeholder,
-        autocomplete,
-
-        disabled
-    };
-
-    let timePickerClasses = [
-        ownClassName,
-        'k-timepicker'
-    ];
-
-    let ariaAttr = aria
-        ? {}
-        : {};
-
-    return (
-        <InputStatic className={timePickerClasses} {...ariaAttr} {...htmlAttributes}>
-            {prefix}
-            <InputInnerInputStatic {...inputAttributes} />
-            {suffix}
-            <InputValidationIconStatic {...props} />
-            <InputLoadingIconStatic {...props} />
-            <InputClearValueStatic {...props} />
-            <ButtonStatic className="k-input-button" icon="clock" shape={null} rounded={null} size={size} fillMode={fillMode}></ButtonStatic>
-        </InputStatic>
-    );
-}
-
-TimePickerStatic.defaultProps = {
-    ...globalDefaultProps,
-
-    type: 'text',
-    value: '',
-    placeholder: '',
-    autocomplete: 'off',
-
-    showValidationIcon: true,
-    showLoadingIcon: true,
-    showClearButton: true,
-
-    size: 'medium',
-    rounded: 'medium',
-
-    fillMode: 'solid'
-};
-
-TimePickerStatic.propTypes = {
-    children: typeof [],
-    className: typeof '',
-
-    type: typeof [ 'text', 'password' ],
-    value: typeof '',
-    placeholder: typeof '',
-    autocomplete: typeof [ 'on', 'off' ],
-
-    showValidationIcon: typeof true,
-    showLoadingIcon: typeof true,
-    showClearButton: typeof true,
-
-    prefix: typeof '#fragment',
-    suffix: typeof '#fragment',
-
-    size: typeof [ null, 'small', 'medium', 'large' ],
-    rounded: typeof [ null, 'small', 'medium', 'large', 'full' ],
-
-    fillMode: typeof [ null, 'solid', 'flat', 'outline' ],
-
-    hover: typeof false,
-    focus: typeof false,
-    valid: typeof false,
-    invalid: typeof false,
-    required: typeof false,
-    disabled: typeof false,
-
-    aria: typeof false,
-    legacy: typeof false,
-
-    htmlAttributes: typeof []
-};
-
-export { TimePicker, TimePickerStatic };

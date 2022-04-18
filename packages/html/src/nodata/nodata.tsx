@@ -1,51 +1,27 @@
-import { Component, globalDefaultProps } from '../component/index';
+import * as React from 'react';
+import { classNames } from '../utils';
 
-class NoData extends Component {
+export interface NoDataProps {
+    children?: React.ReactNode;
+    className?: string;
+}
+
+export class NoData extends React.Component<NoDataProps> {
+
     render() {
-        return <NoDataStatic {...this.props} />;
+        const {
+            children,
+            className
+        } = this.props;
+
+        return (
+            <div
+                className={classNames(
+                    className,
+                    'k-nodata',
+                )}>
+                {children}
+            </div>
+        );
     }
 }
-
-function NoDataStatic(props) {
-
-    const {
-        className: ownClassName,
-        // eslint-disable-next-line no-unused-vars
-        children,
-
-        aria,
-
-        ...htmlAttributes
-    } = props;
-
-    let noDataClasses = [
-        ownClassName,
-        'k-no-data'
-    ];
-
-    let ariaAttr = aria
-        ? {}
-        : {};
-
-    return (
-        <div className={noDataClasses} {...ariaAttr} {...htmlAttributes}>No data found.</div>
-    );
-}
-
-NoDataStatic.defaultProps = {
-    ...globalDefaultProps,
-
-    children: []
-};
-
-NoDataStatic.propTypes = {
-    children: typeof [],
-    className: typeof '',
-
-    aria: typeof false,
-    legacy: typeof false,
-
-    htmlAttributes: typeof []
-};
-
-export { NoData, NoDataStatic };

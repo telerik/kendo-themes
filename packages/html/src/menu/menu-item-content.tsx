@@ -1,48 +1,33 @@
-import { Component, globalDefaultProps } from '../component/index';
+import * as React from 'react';
+import { classNames } from '../utils';
 
-class MenuItemContent extends Component {
+
+export interface MenuItemContentProps {
+    className?: string;
+    children?: React.ReactNode;
+}
+
+export class MenuItemContent extends React.Component<MenuItemContentProps> {
+
+
     render() {
-        return <MenuItemContentStatic {...this.props} />;
+        const {
+            className,
+            children,
+        } = this.props;
+
+        if (!children) {
+            return <></>;
+        }
+
+        return (
+            <span
+                className={classNames(
+                    className,
+                    'k-menu-item-content',
+                )}>
+                {children}
+            </span>
+        );
     }
 }
-
-function MenuItemContentStatic(props) {
-
-    const {
-        className: ownClassName,
-
-        children,
-
-        ...htmlAttributes
-    } = props;
-
-    let menuItemContentClasses = [
-        ownClassName,
-        'k-menu-item-content'
-    ];
-
-    if (children.length === 0) {
-        return <></>;
-    }
-
-    return (
-        <span className={menuItemContentClasses} {...htmlAttributes}>
-            {children}
-        </span>
-    );
-}
-
-MenuItemContentStatic.defaultProps = {
-    ...globalDefaultProps,
-
-    children: []
-};
-
-MenuItemContentStatic.propTypes = {
-    children: typeof [],
-    className: typeof '',
-
-    htmlAttributes: typeof []
-};
-
-export { MenuItemContent, MenuItemContentStatic };

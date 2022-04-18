@@ -1,1 +1,1 @@
-export * from './dateinput.jsx';
+export * from './dateinput';

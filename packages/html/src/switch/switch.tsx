@@ -1,106 +1,77 @@
-import * as styles from '../../utils/styles';
-import { Component, globalDefaultProps } from '../component/index';
+import * as React from 'react';
+import { classNames, kendoThemeMaps } from '../utils';
 
-class Switch extends Component {
+export interface SwitchProps {
+    className?: string;
+    checked?: boolean;
+    onLabel?: string;
+    offLabel?: string;
+    size?: null | 'small' | 'medium' | 'large';
+    trackRounded?: null | 'small' | 'medium' | 'large' | 'full';
+    thumbRounded?: null | 'small' | 'medium' | 'large' | 'full';
+    hover?: boolean;
+    focus?: boolean;
+    disabled?: boolean;
+}
+
+export class Switch extends React.Component<SwitchProps> {
+
+    static defaultProps = {
+        size: 'medium',
+        trackRounded: 'full',
+        thumbRounded: 'full'
+    };
+
     render() {
-        return <SwitchStatic {...this.props} />;
+        const {
+            className,
+            checked,
+            onLabel,
+            offLabel,
+            size,
+            trackRounded,
+            thumbRounded,
+            hover,
+            focus,
+            disabled
+        } = this.props;
+
+        return (
+            <span
+                className={classNames(
+                    className,
+                    'k-switch',
+                    {
+                        [`k-switch-${kendoThemeMaps.sizeMap[size!] || size}`]: size,
+                        'k-hover': hover,
+                        'k-focus': focus,
+                        'k-disabled': disabled,
+                        'k-switch-on': checked,
+                        'k-switch-off': !checked
+                    },
+
+                )}>
+                <span
+                    className={classNames(
+                        'k-switch-track',
+                        {
+                            [`k-rounded-${kendoThemeMaps.roundedMap[trackRounded!] || trackRounded}`]: trackRounded
+                        }
+                    )}>
+                    {onLabel && <span className="k-switch-label-on">{onLabel}</span>}
+                    {offLabel && <span className="k-switch-label-off">{offLabel}</span>}
+                </span>
+                <span className="k-switch-thumb-wrap">
+                    <span
+                        className={classNames(
+                            'k-switch-thumb',
+                            {
+                                [`k-rounded-${kendoThemeMaps.roundedMap[thumbRounded!] || thumbRounded}`]: thumbRounded
+                            }
+                        )}>
+                    </span>
+                </span>
+            </span>
+        );
     }
 }
-
-function SwitchStatic(props) {
-    const {
-        className: ownClassName,
-
-        checked,
-
-        onLabel,
-        offLabel,
-
-        size,
-        trackRounded,
-        thumbRounded,
-
-        hover,
-        focus,
-        disabled,
-
-        aria,
-
-        ...htmlAttributes
-    } = props;
-
-    let switchClasses = [
-        ownClassName,
-        'k-switch',
-        styles.sizeClass( size, 'k-switch' ),
-        styles.roundedClass( trackRounded ),
-        {
-            'k-hover': hover === true,
-            'k-focus': focus === true,
-            'k-disabled': disabled === true,
-            'k-switch-on': checked === true,
-            'k-switch-off': checked === false
-        }
-    ];
-
-    let switchTrackClasses = [
-        'k-switch-track',
-        styles.roundedClass( trackRounded )
-    ];
-
-    let switchThumbClasses = [
-        'k-switch-thumb',
-        styles.roundedClass( thumbRounded )
-    ];
-
-    let ariaAttr = aria
-        ? {}
-        : {};
-
-    return (
-        <span className={switchClasses} {...ariaAttr} {...htmlAttributes}>
-            <span className={switchTrackClasses}>
-                {onLabel && <span className="k-switch-label-on">{onLabel}</span>}
-                {offLabel && <span className="k-switch-label-off">{offLabel}</span>}
-            </span>
-            <span className="k-switch-thumb-wrap">
-                <span className={switchThumbClasses}></span>
-            </span>
-        </span>
-    );
-}
-
-SwitchStatic.defaultProps = {
-    ...globalDefaultProps,
-
-    checked: false,
-
-    onLabel: '',
-    offLabel: '',
-
-    size: 'medium',
-    trackRounded: 'full',
-    thumbRounded: 'full'
-};
-SwitchStatic.propTypes = {
-    checked: typeof false,
-
-    onLabel: typeof '',
-    offLabel: typeof '',
-
-    size: typeof [ null, 'small', 'medium', 'large' ],
-    trackRounded: typeof [ null, 'small', 'medium', 'large', 'full' ],
-    thumbRounded: typeof [ null, 'small', 'medium', 'large', 'full' ],
-
-    hover: typeof false,
-    focus: typeof false,
-    disabled: typeof false,
-
-    aria: typeof false,
-    legacy: typeof false,
-
-    className: typeof '',
-    htmlAttributes: typeof []
-};
-
-export { Switch, SwitchStatic };

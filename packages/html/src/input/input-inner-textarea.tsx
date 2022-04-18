@@ -1,60 +1,35 @@
-import { Component, globalDefaultProps } from '../component/index';
+import * as React from 'react';
+import { classNames } from '../utils';
 
-class InputInnerTextarea extends Component {
+export interface InputInnerTextareaProps {
+    className?: string;
+    value?: string;
+    placeholder?: string;
+    rows?: number;
+}
+
+export class InputInnerTextarea extends React.Component<InputInnerTextareaProps> {
+
+    static defaultProps = {
+        value: '',
+        placeholder: ''
+    };
+
     render() {
-        return <InputInnerTextareaStatic {...this.props} />;
+        const {
+            value,
+            className,
+            placeholder,
+            rows
+        } = this.props;
+
+        return (
+            <textarea
+                className={classNames( 'k-input-inner', className )}
+                placeholder={placeholder}
+                rows={rows}>
+                {value}
+            </textarea>
+        );
     }
 }
-
-function InputInnerTextareaStatic(props) {
-
-    const {
-        className: ownClassName,
-
-        value,
-        placeholder,
-
-        aria,
-
-        ...htmlAttributes
-    } = props;
-
-    let ariaAttr = aria
-        ? {}
-        : {};
-
-    let inputClasses = [
-        ownClassName,
-        'k-input-inner'
-    ];
-
-    htmlAttributes.value = value;
-    htmlAttributes.placeholder = placeholder;
-
-    return (
-        <textarea className={inputClasses} {...ariaAttr} {...htmlAttributes}>
-            {value}
-        </textarea>
-    );
-}
-
-InputInnerTextareaStatic.defaultProps = {
-    ...globalDefaultProps,
-
-    value: '',
-    placeholder: ''
-};
-
-InputInnerTextareaStatic.propTypes = {
-    className: typeof '',
-
-    value: typeof '',
-    placeholder: typeof '',
-
-    aria: typeof false,
-    legacy: typeof false,
-
-    htmlAttributes: typeof []
-};
-
-export { InputInnerTextarea, InputInnerTextareaStatic };

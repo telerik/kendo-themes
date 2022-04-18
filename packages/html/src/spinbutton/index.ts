@@ -1,1 +1,1 @@
-export * from './spinbutton.jsx';
+export * from './spinbutton';

@@ -1,1 +1,1 @@
-export * from './split-button.jsx';
+export * from './split-button';

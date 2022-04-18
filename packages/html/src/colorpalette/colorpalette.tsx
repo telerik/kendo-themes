@@ -1,98 +1,73 @@
-import { Component, globalDefaultProps } from '../component/index';
-import { ColorPaletteRowStatic } from './colorpalette-row.jsx';
-import { ColorPaletteTileStatic } from './colorpalette-tile.jsx';
-import { PALETTEPRESETS } from './colorpalette-presets.jsx';
+import * as React from 'react';
+import { classNames } from '../utils';
+import { ColorPaletteRow, ColorPaletteTile, ColorPaletteTileProps } from '../colorpalette';
+import { PALETTEPRESETS } from './colorpalette-presets';
 
-class ColorPalette extends Component {
+export interface ColorPaletteProps {
+    children?: React.ReactNode;
+    className?: string;
+    palette?: null | 'basic' | 'office' | 'apex' | 'austin' | 'clarity' | 'slipstream' | 'metro' | 'flow' | 'hardcover' | 'trek' | 'verve' | 'monochrome';
+    columns?: number;
+    tileSize?: string;
+    disabled?: boolean;
+}
 
-    init() {
-        let preset = PALETTEPRESETS[this._props.palette];
-        let columns = this._props.columns;
-        let tileSize = this._props.tileSize;
-        let newChildren = [];
 
-        if (!preset) { return; }
+export class ColorPalette extends React.Component<ColorPaletteProps> {
 
-        columns = columns || preset.columns;
-
-        Array.from({ length: Math.ceil(preset.colors.length / columns) }, (_, i) => {
-            let row = <ColorPaletteRowStatic></ColorPaletteRowStatic>;
-
-            preset.colors.slice(i * columns, (i + 1) * columns)
-                .map((color) => {
-                    row.props.children.push( <ColorPaletteTileStatic color={color} tileSize={tileSize} /> );
-                });
-
-            newChildren.push(row);
-        });
-
-        this._props.children = newChildren;
-    }
+    static defaultProps = {
+        columns: 10,
+    };
 
     render() {
-        return <ColorPaletteStatic {...this.props} />;
+        const {
+            children,
+            className,
+            palette,
+            columns,
+            tileSize,
+            disabled,
+        } = this.props;
+
+        const newChildren : React.ReactNode[] = [];
+
+        if (palette) {
+            const preset = PALETTEPRESETS[palette];
+
+            if (preset) {
+                const cols = columns || preset.columns;
+
+                Array.from({ length: Math.ceil(preset.colors.length / cols) }, (_, i) => {
+                    const items : React.ReactElement<ColorPaletteTileProps>[] = [];
+
+                    preset.colors.slice(i * cols, (i + 1) * cols)
+                        .map((color) => {
+                            items.push( <ColorPaletteTile color={color} tileSize={tileSize} /> );
+                        });
+
+                    const row = <ColorPaletteRow>{items}</ColorPaletteRow>;
+
+                    newChildren.push(row);
+                });
+            }
+        }
+
+
+        return (
+            <div
+                className={classNames(
+                    className,
+                    'k-colorpalette',
+                    {
+                        'k-disabled': disabled
+                    }
+                )}>
+                <div className="k-colorpalette-table-wrap">
+                    <table className="k-colorpalette-table k-palette">
+                        {newChildren.length > 0 ? newChildren : children}
+                    </table>
+                </div>
+            </div>
+        );
     }
 }
-
-function ColorPaletteStatic(props) {
-    const {
-        className: ownClassName,
-        children,
-
-        disabled,
-
-        aria,
-
-        ...htmlAttributes
-    } = props;
-
-    let colorPaletteClasses = [
-        ownClassName,
-        'k-colorpalette',
-        {
-            'k-disabled': disabled === true
-        }
-    ];
-
-    let ariaAttr = aria
-        ? {}
-        : {};
-
-    return (
-        <div className={colorPaletteClasses} {...ariaAttr} {...htmlAttributes}>
-            <div className="k-colorpalette-table-wrap">
-                <table className="k-colorpalette-table k-palette">
-                    {children}
-                </table>
-            </div>
-        </div>
-    );
-}
-
-ColorPaletteStatic.defaultProps = {
-    ...globalDefaultProps,
-
-    className: '',
-
-    palette: 'office',
-    columns: 10,
-    tileSize: ''
-};
-
-ColorPaletteStatic.propTypes = {
-    children: typeof [],
-
-    palette: typeof '',
-    columns: typeof '',
-    tileSize: typeof '',
-
-    disabled: typeof false,
-
-    aria: typeof false,
-    legacy: typeof false,
-
-    className: typeof '',
-    htmlAttributes: typeof []
-};
-
-export { ColorPalette, ColorPaletteStatic };

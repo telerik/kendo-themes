@@ -1,73 +1,32 @@
-import { IconStatic } from '../icon/index';
-import { Component, globalDefaultProps } from '../component/index';
+import * as React from 'react';
+import { Icon } from '../icon';
 
-class InputInnerSpan extends Component {
+export interface InputInnerSpanProps {
+    value?: string;
+    placeholder?: string;
+    showValue?: boolean;
+    valueIcon?: React.ReactNode;
+    valueIconName?: string;
+}
+
+export class InputInnerSpan extends React.Component<InputInnerSpanProps> {
+
     render() {
-        return <InputInnerSpanStatic {...this.props} />;
+        const {
+            value,
+            placeholder,
+            valueIcon,
+            showValue,
+            valueIconName
+        } = this.props;
+
+        return (
+            <span className="k-input-inner">
+                {valueIcon}
+                {!valueIcon && valueIconName && <Icon className="k-input-value-icon" name={valueIconName} />}
+                {showValue && !value && placeholder}
+                {showValue && value && <span className="k-input-value-text">{value}</span>}
+            </span>
+        );
     }
 }
-
-function InputInnerSpanStatic(props) {
-
-    const {
-        className: ownClassName,
-
-        value,
-        placeholder,
-
-        showValue,
-        valueIcon,
-        valueIconName,
-
-        aria,
-
-        ...htmlAttributes
-    } = props;
-
-    let ariaAttr = aria
-        ? {}
-        : {};
-
-    let inputClasses = [
-        ownClassName,
-        'k-input-inner'
-    ];
-
-    return (
-        <span className={inputClasses} {...ariaAttr} {...htmlAttributes}>
-            {valueIcon}
-            {valueIcon === null && <IconStatic className="k-icon k-input-value-icon" name={valueIconName} />}
-            {showValue && value === '' && placeholder}
-            {showValue && value && <span className="k-input-value-text">{value}</span>}
-        </span>
-    );
-}
-
-InputInnerSpanStatic.defaultProps = {
-    ...globalDefaultProps,
-
-    value: '',
-    placeholder: '',
-
-    showValue: true,
-    valueIcon: null,
-    valueIconName: '',
-};
-
-InputInnerSpanStatic.propTypes = {
-    className: typeof '',
-
-    value: typeof '',
-    placeholder: typeof '',
-
-    showValue: typeof true,
-    valueIcon: typeof '#fragment',
-    valueIconName: typeof '',
-
-    aria: typeof false,
-    legacy: typeof false,
-
-    htmlAttributes: typeof []
-};
-
-export { InputInnerSpan, InputInnerSpanStatic };

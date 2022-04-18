@@ -1,55 +1,24 @@
-import { Component, globalDefaultProps } from '../component/index';
+import * as React from 'react';
+import { classNames } from '../utils';
+import { TreeviewItemProps } from './treeview-item';
 
-class TreeviewGroup extends Component {
+export interface TreeviewGroupProps {
+    className?: string;
+    children?: React.ReactElement<TreeviewItemProps> | React.ReactElement<TreeviewItemProps>[];
+}
+
+export class TreeviewGroup extends React.Component<TreeviewGroupProps> {
+
     render() {
-        return <TreeviewGroupStatic {...this.props} />;
+        const {
+            className,
+            children
+        } = this.props;
+
+        return (
+            <ul className={classNames(className, 'k-treeview-group')}>
+                {children}
+            </ul>
+        );
     }
 }
-
-function TreeviewGroupStatic(props) {
-    const {
-        className: ownClassName,
-
-        items,
-
-        aria,
-
-        ...htmlAttributes
-    } = props;
-
-    let treeviewULClasses = [
-        ownClassName,
-        'k-treeview-group'
-    ];
-
-    let ariaAttr = aria
-        ? {}
-        : {};
-
-    return (
-        <ul className={treeviewULClasses} {...ariaAttr} {...htmlAttributes}>
-            {items}
-        </ul>
-    );
-}
-
-TreeviewGroupStatic.defaultProps = {
-    ...globalDefaultProps,
-
-    children: [],
-    items: []
-};
-
-TreeviewGroupStatic.propTypes = {
-    children: typeof [],
-    className: typeof '',
-
-    items: typeof [],
-
-    aria: typeof false,
-    legacy: typeof false,
-
-    htmlAttributes: typeof []
-};
-
-export { TreeviewGroup, TreeviewGroupStatic };

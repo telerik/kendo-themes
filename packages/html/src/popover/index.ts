@@ -1,1 +1,1 @@
-export * from './popover.jsx';
+export * from './popover';

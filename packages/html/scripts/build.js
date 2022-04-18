@@ -1,18 +1,15 @@
 const esbuild = require('esbuild');
+const glob = require('glob');
 
-let components = [
-    './src/index.ts'
-];
+const components = glob.sync('./src/**/*.tsx');
+components.push('./src/index.ts');
 
-esbuild.build({
+esbuild.buildSync({
     logLevel: 'error',
     entryPoints: components,
     outdir: './dist',
-    globalName: 'kendo.Html',
-    jsxFactory: 'kendo.Html.jsx',
-    jsxFragment: 'kendo.Html.Fragment',
     bundle: true,
     minify: false,
     sourcemap: true,
-    external: [ 'react', 'react-dom' ],
+    external: [ 'react', 'react-dom' ]
 });

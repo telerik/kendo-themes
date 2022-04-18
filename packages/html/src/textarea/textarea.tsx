@@ -1,113 +1,65 @@
-import { globalDefaultProps } from '../component/index';
-import { Input, InputStatic, InputInnerTextareaStatic } from '../input/index';
+import * as React from 'react';
+import { classNames } from '../utils';
+import { Input, InputInnerTextarea } from '../input';
 
-class Textarea extends Input {
+export interface TextareaProps {
+    className?: string;
+    value?: string;
+    placeholder?: string;
+    size?: null | 'small' | 'medium' | 'large';
+    rounded?: null | 'small' | 'medium' | 'large' | 'full';
+    fillMode?: null | 'solid' | 'outline' | 'flat';
+    rows?: number;
+    hover?: boolean;
+    focus?: boolean;
+    valid?: boolean;
+    invalid?: boolean
+    required?: boolean;
+    loading?: boolean;
+    disabled?: boolean;
+}
+
+export class Textarea extends React.Component<TextareaProps> {
+
     render() {
-        return <TextareaStatic {...this.props} />;
+        const {
+            className,
+            placeholder,
+            value,
+            rows,
+            size,
+            rounded,
+            fillMode,
+            hover,
+            focus,
+            valid,
+            invalid,
+            required,
+            loading,
+            disabled,
+        } = this.props;
+
+        return (
+            <Input
+                size={size}
+                rounded={rounded}
+                fillMode={fillMode}
+                hover={hover}
+                focus={focus}
+                valid={valid}
+                invalid={invalid}
+                required={required}
+                loading={loading}
+                disabled={disabled}
+                className={classNames(className, 'k-textarea')}
+            >
+                <InputInnerTextarea
+                    className="!k-overflow-auto"
+                    value={value}
+                    placeholder={placeholder}
+                    rows={rows}
+                />
+            </Input>
+        );
     }
 }
-
-function TextareaStatic(props) {
-
-    const {
-        className: ownClassName,
-
-        value,
-        placeholder,
-
-        prefix,
-        suffix,
-
-        size,
-        rounded,
-
-        fillMode,
-
-        hover,
-        focus,
-        valid,
-        invalid,
-        required,
-        disabled,
-
-        aria,
-
-        ...htmlAttributes
-    } = props;
-
-    htmlAttributes.size = size;
-    htmlAttributes.rounded = rounded;
-    htmlAttributes.fillMode = fillMode;
-    htmlAttributes.hover = hover;
-    htmlAttributes.focus = focus;
-    htmlAttributes.valid = valid;
-    htmlAttributes.invalid = invalid;
-    htmlAttributes.required = required;
-    htmlAttributes.disabled = disabled;
-
-    const inputAttributes = {
-        value,
-        placeholder,
-
-        disabled
-    };
-
-    let textareaClasses = [
-        ownClassName,
-        'k-textarea'
-    ];
-
-    let ariaAttr = aria
-        ? {}
-        : {};
-
-    return (
-        <InputStatic className={textareaClasses} {...ariaAttr} {...htmlAttributes}>
-            {prefix}
-            <InputInnerTextareaStatic className="!k-overflow-auto" {...inputAttributes} />
-            {suffix}
-        </InputStatic>
-    );
-}
-
-TextareaStatic.defaultProps = {
-    ...globalDefaultProps,
-
-    value: '',
-    placeholder: '',
-
-    size: 'medium',
-    rounded: 'medium',
-
-    fillMode: 'solid'
-};
-
-TextareaStatic.propTypes = {
-    children: typeof [],
-    className: typeof '',
-
-    value: typeof '',
-    placeholder: typeof '',
-
-    prefix: typeof '#fragment',
-    suffix: typeof '#fragment',
-
-    size: typeof [ null, 'small', 'medium', 'large' ],
-    rounded: typeof [ null, 'small', 'medium', 'large', 'full' ],
-
-    fillMode: typeof [ null, 'solid', 'flat', 'outline' ],
-
-    hover: typeof false,
-    focus: typeof false,
-    valid: typeof false,
-    invalid: typeof false,
-    required: typeof false,
-    disabled: typeof false,
-
-    aria: typeof false,
-    legacy: typeof false,
-
-    htmlAttributes: typeof []
-};
-
-export { Textarea, TextareaStatic };

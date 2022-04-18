@@ -1,145 +1,74 @@
-import { globalDefaultProps } from '../component/index';
-import { Input, InputStatic, InputInnerInputStatic } from '../input/index';
-import { InputValidationIconStatic, InputLoadingIconStatic, InputClearValueStatic } from '../input/index';
-import { IconStatic } from '../icon/index';
+import * as React from 'react';
+import { classNames } from '../utils';
+import { Icon } from '../icon';
+import {
+    Input,
+    InputInnerInput,
+    InputClearValue,
+    InputLoadingIcon,
+    InputValidationIcon
+} from '../input';
 
-class Searchbox extends Input {
+export interface SearchboxProps {
+    className?: string;
+    type?: string;
+    value?: string;
+    placeholder?: string;
+    showIcon?: boolean;
+    icon?: string;
+    size?: null | 'small' | 'medium' | 'large';
+    rounded?: null | 'small' | 'medium' | 'large' | 'full';
+    fillMode?: null | 'solid' | 'outline' | 'flat';
+    hover?: boolean;
+    focus?: boolean;
+    valid?: boolean;
+    invalid?: boolean;
+    required?: boolean;
+    loading?: boolean;
+    disabled?: boolean;
+}
+
+export class Searchbox extends React.Component<SearchboxProps> {
+
     render() {
-        return <SearchboxInner {...this.props} />;
+        const {
+            className,
+            value,
+            placeholder,
+            size,
+            rounded,
+            fillMode,
+            hover,
+            focus,
+            valid,
+            invalid,
+            required,
+            loading,
+            disabled,
+            showIcon = true,
+            icon = 'search'
+        } = this.props;
+
+        return (
+            <Input
+                size={size}
+                rounded={rounded}
+                fillMode={fillMode}
+                hover={hover}
+                focus={focus}
+                valid={valid}
+                invalid={invalid}
+                required={required}
+                loading={loading}
+                disabled={disabled}
+                className={classNames(className, 'k-searchbox')}
+            >
+                { showIcon && (<Icon className="k-input-icon" name={icon} />) }
+                <InputInnerInput placeholder={placeholder} value={value} />
+                <InputValidationIcon {...this.props} />
+                <InputLoadingIcon {...this.props} />
+                <InputClearValue {...this.props} />
+            </Input>
+        );
     }
 }
-
-function SearchboxInner(props) {
-
-    const {
-        className: ownClassName,
-
-        type,
-        value,
-        placeholder,
-        autocomplete,
-
-        showIcon,
-        iconName,
-
-        prefix,
-        suffix,
-
-        size,
-        rounded,
-
-        fillMode,
-
-        hover,
-        focus,
-        valid,
-        invalid,
-        required,
-        disabled,
-
-        aria,
-
-        ...htmlAttributes
-    } = props;
-
-    htmlAttributes.size = size;
-    htmlAttributes.rounded = rounded;
-    htmlAttributes.fillMode = fillMode;
-    htmlAttributes.hover = hover;
-    htmlAttributes.focus = focus;
-    htmlAttributes.valid = valid;
-    htmlAttributes.invalid = invalid;
-    htmlAttributes.required = required;
-    htmlAttributes.disabled = disabled;
-
-    const inputAttributes = {
-        type,
-        value,
-        placeholder,
-        autocomplete,
-
-        disabled
-    };
-
-    let searchBoxClasses = [
-        ownClassName,
-        'k-searchbox'
-    ];
-
-    let ariaAttr = aria
-        ? {}
-        : {};
-
-    return (
-        <InputStatic className={searchBoxClasses} {...ariaAttr} {...htmlAttributes}>
-            {showIcon && <IconStatic name={iconName} className="k-input-icon" />}
-            {prefix}
-            <InputInnerInputStatic {...inputAttributes} />
-            {suffix}
-            <InputValidationIconStatic {...props} />
-            <InputLoadingIconStatic {...props} />
-            <InputClearValueStatic {...props} />
-        </InputStatic>
-    );
-}
-
-SearchboxInner.defaultProps = {
-    ...globalDefaultProps,
-
-    type: 'text',
-    value: '',
-    placeholder: '',
-    autocomplete: 'off',
-
-    showIcon: true,
-    iconName: 'search',
-
-    showValidationIcon: true,
-    showLoadingIcon: true,
-    showClearButton: true,
-
-    size: 'medium',
-    rounded: 'medium',
-
-    fillMode: 'solid'
-};
-
-SearchboxInner.propTypes = {
-    children: typeof [],
-    className: typeof '',
-
-    type: typeof [ 'text', 'password' ],
-    value: typeof '',
-    placeholder: typeof '',
-    autocomplete: typeof [ 'on', 'off' ],
-
-    showIcon: typeof true,
-    iconName: typeof '',
-
-    showValidationIcon: typeof true,
-    showLoadingIcon: typeof true,
-    showClearButton: typeof true,
-
-    prefix: typeof '#fragment',
-    suffix: typeof '#fragment',
-
-    size: typeof [ null, 'small', 'medium', 'large' ],
-    rounded: typeof [ null, 'small', 'medium', 'large', 'full' ],
-
-    fillMode: typeof [ null, 'solid', 'flat', 'outline' ],
-
-    hover: typeof false,
-    focus: typeof false,
-    valid: typeof false,
-    invalid: typeof false,
-    loading: typeof false,
-    required: typeof false,
-    disabled: typeof false,
-
-    aria: typeof false,
-    legacy: typeof false,
-
-    htmlAttributes: typeof []
-};
-
-export { Searchbox, SearchboxInner };

@@ -1,1 +1,1 @@
-export * from './nodata.jsx';
+export * from './nodata';

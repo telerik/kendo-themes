@@ -1,1 +1,1 @@
-export * from './maskedtextbox.jsx';
+export * from './maskedtextbox';
