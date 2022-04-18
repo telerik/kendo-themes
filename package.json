@@ -55,7 +55,7 @@
     "dart:watch": "gulp dart:watch",
     "dart:swatches": "gulp dart:swatches",
     "build": "npm run sass && npm run build:scripts",
-    "build:scripts": "lerna run build --scope @progress/kendo-themes-html",
+    "build:scripts": "npm run build --prefix packages/html",
     "serve": "npm run sass && npm run build:scripts && npm run serve-tests",
     "eslint": "eslint \"**/*.js\"",
     "sasslint": "sass-lint -v -q ",
@@ -80,6 +80,5 @@
       "pre-push": "npm run eslint && npm run sasslint && npm run sass && npm run docs:check",
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
-  },
-  "dependencies": {}
+  }
 }
