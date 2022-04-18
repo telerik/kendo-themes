@@ -220,21 +220,21 @@ function attrToProps( attributes ) {
     return props;
 }
 
-function jsx( type, config ) {
+function jsx( type, props, ...children ) {
 
     if ( isFunction( type ) ) {
-        return type( { ...type.defaultProps, ...config } );
+        return type( { ...type.defaultProps, ...props, children } );
     }
 
-    let { children = [], ...props } = config;
+    let _children = children;
 
-    if (!isArray( children) ) {
-        children = [ children ];
+    if (!isArray( _children) ) {
+        _children = [ _children ];
     }
 
-    children.forEach( ( child, index ) => {
+    _children.forEach( ( child, index ) => {
         if ( !isObject( child ) ) {
-            children[index] = {
+            _children[index] = {
                 type: JSX_TEXT,
                 props: {
                     text: child
@@ -252,8 +252,20 @@ function jsx( type, config ) {
     };
 }
 
-function jsxs( type, config ) {
-    return jsx( type, config );
+function jsxs( type, props, ...children ) {
+    return jsx( type, props, ...children );
+}
+
+function Fragment(props) {
+    let children = (props.children || []).filter(child => child !== '');
+
+    return {
+        type: JSX_FRAGMENT,
+        props: {
+            ...props,
+            children
+        }
+    };
 }
 
 function renderDOM( jsxNode, container = null ) {
@@ -320,6 +332,10 @@ function renderDOM( jsxNode, container = null ) {
                 return;
             }
 
+            if (Array.isArray(child) && child.length === 0) {
+                return;
+            }
+
             renderDOM( child, element );
         });
     }
@@ -334,7 +350,7 @@ function renderDOM( jsxNode, container = null ) {
 export {
     jsx,
     jsxs,
-    JSX_FRAGMENT as Fragment,
+    Fragment,
     renderDOM,
     attrToProps,
     htmlToProps

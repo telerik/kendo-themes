@@ -16,6 +16,7 @@ export function init() {
 window.addEventListener('DOMContentLoaded', init);
 
 // Dependencies
+export * from './../lib/jsx-runtime';
 export * from './component/index';
 
 // Typography and utils
