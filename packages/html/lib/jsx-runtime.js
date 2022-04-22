@@ -33,6 +33,8 @@ const attrMap = {
 
     showcheckbox: 'showCheckbox',
 
+    swapbutton: 'swapButton',
+
     // Switch
     onlabel: 'onLabel',
     offlabel: 'offLabel',
@@ -83,6 +85,8 @@ const booleanAttr = new Set([
     'showArrow',
 
     'showCheckbox',
+
+    'swapButton',
 
     'loading',
 

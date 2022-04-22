@@ -1,0 +1,29 @@
+@include exports("menu-button/layout") {
+
+    // Menu button
+    .k-menu-button,
+    .k-dropdown-button {
+        aspect-ratio: auto;
+        outline: 0;
+        display: inline-flex;
+        flex-flow: row nowrap;
+        vertical-align: middle;
+
+        > .k-button-arrow {
+            margin-inline-start: -$kendo-menu-button-arrow-padding-x;
+            margin-inline-end: -$kendo-button-padding-x;
+            padding-left: $kendo-menu-button-arrow-padding-x;
+            padding-right: $kendo-menu-button-arrow-padding-x;
+            flex: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &.k-icon-button > .k-button-arrow {
+            margin-inline-start: 0;
+            margin-inline-end: -$kendo-button-padding-y;
+        }
+    }
+
+}

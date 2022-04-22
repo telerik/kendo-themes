@@ -6,6 +6,8 @@
     // Floating label
     .k-floating-label-container {
 
+        &.k-invalid + .k-label,
+        .k-invalid + .k-label,
         &.k-state-invalid + .k-label,
         .k-state-invalid + .k-label,
         .ng-invalid.ng-touched + .k-label,
