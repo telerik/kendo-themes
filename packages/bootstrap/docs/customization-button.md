@@ -592,15 +592,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-button-focus-bg</td>
-    <td>Null</td>
+    <td>Color</td>
 <td>
 
-`null`
+`try-darken( $kendo-button-bg, 10% )`
 
 </td>
 <td>
 
-`null`
+<span class="color-preview" style="background-color: #c7cdd5"></span>
+
+`#c7cdd5`
 
 </td>
 </tr>
@@ -628,15 +630,17 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td>$kendo-button-focus-border</td>
-    <td>Null</td>
+    <td>Color</td>
 <td>
 
-`null`
+`try-darken( $kendo-button-bg, 12.5% )`
 
 </td>
 <td>
 
-`null`
+<span class="color-preview" style="background-color: #bfc6d0"></span>
+
+`#bfc6d0`
 
 </td>
 </tr>
