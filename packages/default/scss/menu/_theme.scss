@@ -92,7 +92,7 @@
 
 
     // Scrolling
-    .k-menu-scroll-button {
+    .k-menu-scroll-wrapper .k-menu-scroll-button {
         @include fill(
             $menu-scroll-button-text,
             $menu-scroll-button-bg,

@@ -598,42 +598,6 @@ The following table lists the available variables for customizing the Material t
     </td>
 </tr>
 <tr>
-    <td>$kendo-button-arrow-padding-x</td>
-    <td>Number</td>
-<td>
-
-`map-get( $spacing, 1 )`
-
-</td>
-<td>
-
-`4px`
-
-</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the arrow button.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-button-arrow-padding-y</td>
-    <td>Number</td>
-<td>
-
-`$kendo-button-padding-y`
-
-</td>
-<td>
-
-`8px`
-
-</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the arrow button.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-button-theme-colors</td>
     <td>Map</td>
 <td>
@@ -2401,7 +2365,7 @@ The following table lists the available variables for customizing the Material t
     <td>Color</td>
 <td>
 
-`$kendo-button-text`
+`$base-text`
 
 </td>
 <td>
@@ -5594,6 +5558,45 @@ The following table lists the available variables for customizing the Material t
 </tbody>
 </table>
 
+### Menu-button
+
+<table class="theme-variables">
+    <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
+    </tr>
+</thead>
+<tbody>
+        <tr>
+    <td>$kendo-menu-button-arrow-padding-x</td>
+    <td>Number</td>
+<td>
+
+`map-get( $spacing, 1 )`
+
+</td>
+<td>
+
+`4px`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the arrow button.</div></div>
+    </td>
+</tr>
+</tbody>
+</table>
+
 ### Radio
 
 <table class="theme-variables">
@@ -6389,6 +6392,81 @@ The following table lists the available variables for customizing the Material t
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Shadow for window and dialog.<br />Equivalent to material elevation 24.</div></div>
+    </td>
+</tr>
+</tbody>
+</table>
+
+### Split-button
+
+<table class="theme-variables">
+    <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
+    </tr>
+</thead>
+<tbody>
+        <tr>
+    <td>$kendo-split-button-focus-shadow</td>
+    <td>Null</td>
+<td>
+
+`$kendo-button-focus-shadow`
+
+</td>
+<td>
+
+`null`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Focus shadow of the split button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-split-button-arrow-padding-x</td>
+    <td>Number</td>
+<td>
+
+`map-get( $spacing, 1 )`
+
+</td>
+<td>
+
+`4px`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the arrow button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-split-button-arrow-padding-y</td>
+    <td>Number</td>
+<td>
+
+`$kendo-button-padding-y`
+
+</td>
+<td>
+
+`8px`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the arrow button.</div></div>
     </td>
 </tr>
 </tbody>

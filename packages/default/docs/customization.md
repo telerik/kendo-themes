@@ -600,42 +600,6 @@ The following table lists the available variables for customizing the Default th
     </td>
 </tr>
 <tr>
-    <td>$kendo-button-arrow-padding-x</td>
-    <td>Number</td>
-<td>
-
-`$kendo-button-padding-y`
-
-</td>
-<td>
-
-`4px`
-
-</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the arrow button.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-button-arrow-padding-y</td>
-    <td>Number</td>
-<td>
-
-`$kendo-button-padding-y`
-
-</td>
-<td>
-
-`4px`
-
-</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the arrow button.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-button-theme-colors</td>
     <td>Map</td>
 <td>
@@ -2417,7 +2381,7 @@ The following table lists the available variables for customizing the Default th
     <td>Color</td>
 <td>
 
-`$kendo-button-text`
+`$base-text`
 
 </td>
 <td>
@@ -5656,6 +5620,45 @@ The following table lists the available variables for customizing the Default th
 </tbody>
 </table>
 
+### Menu-button
+
+<table class="theme-variables">
+    <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
+    </tr>
+</thead>
+<tbody>
+        <tr>
+    <td>$kendo-menu-button-arrow-padding-x</td>
+    <td>Number</td>
+<td>
+
+`$kendo-button-padding-y`
+
+</td>
+<td>
+
+`4px`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the arrow button.</div></div>
+    </td>
+</tr>
+</tbody>
+</table>
+
 ### Radio
 
 <table class="theme-variables">
@@ -6318,6 +6321,81 @@ The following table lists the available variables for customizing the Default th
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Opacity of radio button ripple.</div></div>
+    </td>
+</tr>
+</tbody>
+</table>
+
+### Split-button
+
+<table class="theme-variables">
+    <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
+    </tr>
+</thead>
+<tbody>
+        <tr>
+    <td>$kendo-split-button-focus-shadow</td>
+    <td>List</td>
+<td>
+
+`$kendo-button-focus-shadow`
+
+</td>
+<td>
+
+`0 0 0 2px rgba(0, 0, 0, 0.08)`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Focus shadow of the split button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-split-button-arrow-padding-x</td>
+    <td>Number</td>
+<td>
+
+`$kendo-button-padding-y`
+
+</td>
+<td>
+
+`4px`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the arrow button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-split-button-arrow-padding-y</td>
+    <td>Number</td>
+<td>
+
+`$kendo-button-padding-y`
+
+</td>
+<td>
+
+`4px`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the arrow button.</div></div>
     </td>
 </tr>
 </tbody>
