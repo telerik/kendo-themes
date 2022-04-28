@@ -18,6 +18,7 @@
         }
 
         &:focus,
+        &.k-focus,
         &.k-state-focus {
             @include box-shadow( $orgchart-card-focus-shadow );
         }
@@ -32,6 +33,7 @@
         );
     }
     .k-orgchart-node-group-container:focus,
+    .k-orgchart-node-group-container.k-focus,
     .k-orgchart-node-group-container.k-state-focus,
     .k-orgchart-node-group-container.k-state-focused {
         @include box-shadow( $orgchart-node-group-focus-shadow );
