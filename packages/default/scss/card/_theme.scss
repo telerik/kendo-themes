@@ -10,12 +10,18 @@
         @include box-shadow( $card-shadow );
 
         &:focus,
+        &.k-focus,
         &.k-state-focus {
             @include fill(
                 $card-focus-text,
                 $card-focus-bg,
                 $card-focus-border
             );
+            @include box-shadow( $card-focus-shadow );
+        }
+
+        &.k-selected,
+        &.k-state-selected {
             @include box-shadow( $card-focus-shadow );
         }
     }
@@ -68,7 +74,10 @@
 
     .k-card-wrap {
         &.k-state-focused,
-        &.k-state-selected {
+        &.k-focus,
+        &:focus,
+        &.k-state-selected,
+        &.k-selected {
             > .k-card {
                 @include box-shadow( $card-focus-shadow );
             }
@@ -90,6 +99,7 @@
     .k-card-callout.k-callout-w { @include box-shadow( $card-callout-box-shadow-w ); }
 
     .k-card:focus .k-card-callout,
+    .k-card.k-focus .k-card-callout,
     .k-card.k-state-focus .k-card-callout {
         @include fill(
             $bg: $card-focus-bg,

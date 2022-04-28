@@ -181,8 +181,10 @@
             overflow-wrap: anywhere;
 
             &:focus,
+            &.k-focus,
             &.k-state-focus,
             &:hover,
+            &.k-hover,
             &.k-state-hover {
                 text-decoration: underline;
             }

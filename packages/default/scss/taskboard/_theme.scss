@@ -66,32 +66,38 @@
             @include fill( $color: $taskboard-card-header-text );
 
             &:focus,
+            &.k-focus,
             &.k-state-focus {
                 @include fill( $color: $taskboard-card-header-focus-text );
             }
 
             &:hover,
+            &.k-hover,
             &.k-state-hover {
                 @include fill( $color: $taskboard-card-header-hover-text );
             }
         }
 
         &:focus,
+        &.k-focus,
         &.k-state-focus {
             @include fill( $border: $taskboard-card-focus-border );
             @include box-shadow( $taskboard-card-focus-shadow );
         }
 
         &:hover,
+        &.k-hover,
         &.k-state-hover {
             @include fill( $border: $taskboard-card-hover-border );
         }
 
+        &.k-selected,
         &.k-state-selected {
             @include fill( $border: $taskboard-card-selected-border );
             @include box-shadow( $taskboard-card-selected-shadow );
         }
 
+        &.k-disabled,
         &.k-state-disabled {
             @include disabled( $disabled-styling );
         }
