@@ -360,7 +360,7 @@ $placeholder-bg: rgba(0, 0, 0, .1) !default;
 // Validator
 $invalid-bg: null !default;
 $invalid-text: $error !default;
-$invalid-border: rgba( $error, .5 ) !default;
+$invalid-border: $error !default;
 $invalid-shadow: null !default;
 
 

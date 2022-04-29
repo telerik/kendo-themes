@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en" class="k-no-animations">
+<head>
+    <title>Outline Textarea</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+    <script src="../../assets/scripts.js"></script>
+    <script src="../../../../packages/html/dist/index.js"></script>
+
+    <style>
+        #test-area {
+            max-width: 660px;
+        }
+        .k-textarea {
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="k-body">
+
+    <div id="test-area" class="k-d-grid k-grid-cols-2">
+
+        <span>Outline Textarea</span>
+        <span>Outline Textarea RTL</span>
+
+        <!-- empty -->
+        <div>
+            <textarea is="Textarea" fillMode="outline" placeholder="Textarea..."></textarea>
+        </div>
+        <div dir="rtl">
+            <textarea is="Textarea" fillMode="outline" placeholder="Textarea..."></textarea>
+        </div>
+
+        <!-- normal -->
+        <div>
+            <textarea is="Textarea" fillMode="outline" value="Normal"></textarea>
+        </div>
+        <div dir="rtl">
+            <textarea is="Textarea" fillMode="outline" value="Normal"></textarea>
+        </div>
+
+        <!-- hover -->
+        <div>
+            <textarea is="Textarea" fillMode="outline" value="Hover" hover></textarea>
+        </div>
+        <div dir="rtl">
+            <textarea is="Textarea" fillMode="outline" value="Hover" hover></textarea>
+        </div>
+
+        <!-- focus -->
+        <div>
+            <textarea is="Textarea" fillMode="outline" value="Focus" focus></textarea>
+        </div>
+        <div dir="rtl">
+            <textarea is="Textarea" fillMode="outline" value="Focus" focus></textarea>
+        </div>
+
+        <!-- disabled -->
+        <div>
+            <textarea is="Textarea" fillMode="outline" value="Disabled" disabled></textarea>
+        </div>
+        <div dir="rtl">
+            <textarea is="Textarea" fillMode="outline" value="Disabled" disabled></textarea>
+        </div>
+
+        <!-- invalid -->
+        <div>
+            <textarea is="Textarea" fillMode="outline" value="Invalid" invalid></textarea>
+        </div>
+        <div dir="rtl">
+            <textarea is="Textarea" fillMode="outline" value="Invalid" invalid></textarea>
+        </div>
+
+        <!-- invalid focus -->
+        <div>
+            <textarea is="Textarea" fillMode="outline" value="Invalid focus" invalid focus></textarea>
+        </div>
+        <div dir="rtl">
+            <textarea is="Textarea" fillMode="outline" value="Invalid focus" invalid focus></textarea>
+        </div>
+
+        <!-- vertical overflow -->
+        <div>
+            <textarea is="Textarea" fillMode="outline" rows="3" value="Long text: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et dolorum, illo asperiores alias cum facere illum qui sapiente possimus consectetur magnam aperiam eveniet esse molestias aut repudiandae sit aliquam perspiciatis."></textarea>
+        </div>
+        <div dir="rtl">
+            <textarea is="Textarea" fillMode="outline" rows="3" value="Long text: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et dolorum, illo asperiores alias cum facere illum qui sapiente possimus consectetur magnam aperiam eveniet esse molestias aut repudiandae sit aliquam perspiciatis."></textarea>
+        </div>
+
+    </div>
+
+</body>
+</html>

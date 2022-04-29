@@ -16,6 +16,20 @@
         }
     }
 
+    .k-input-solid:focus,
+    .k-input-solid.k-focus {
+        border-width: $kendo-input-border-width;
+        border-top-color: $kendo-input-focus-border !important; // sass-lint:disable-line no-important
+
+        &.k-invalid,
+        &.ng-invalid.ng-touched,
+        &.ng-invalid.ng-dirty {
+            border-top-color: $invalid-border !important; // sass-lint:disable-line no-important
+        }
+    }
+
+
+
     .k-input-flat,
     .k-picker-flat {
 

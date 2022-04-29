@@ -121,13 +121,13 @@ $kendo-button-selected-shadow: $kendo-button-active-shadow !default;
 
 /// The base background of focused button.
 /// @group button
-$kendo-button-focus-bg: null !default;
+$kendo-button-focus-bg: try-darken( $kendo-button-bg, 10% ) !default;
 /// The base text color of focused button.
 /// @group button
 $kendo-button-focus-text: null !default;
 /// The base border color of focused button.
 /// @group button
-$kendo-button-focus-border: null !default;
+$kendo-button-focus-border: try-darken( $kendo-button-bg, 12.5% ) !default;
 /// The base background gradient of focused button.
 /// @group button
 $kendo-button-focus-gradient: null !default;

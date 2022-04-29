@@ -5,6 +5,8 @@ $panelbar-font-family: $font-family !default;
 $panelbar-font-size: $font-size !default;
 $panelbar-line-height: $line-height !default;
 $panelbar-border-width: 1px !default;
+$panelbar-item-border-width: 1px !default;
+$panelbar-item-border-style: solid !default;
 
 $panelbar-header-padding-x: map-get( $spacing, 6 ) !default;
 $panelbar-header-padding-y: map-get( $spacing, 4 ) !default;
