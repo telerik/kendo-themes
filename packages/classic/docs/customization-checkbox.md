@@ -503,9 +503,9 @@ The following table lists the available variables for customization.
 </td>
 <td>
 
-<span class="color-preview" style="background-color: rgba(217, 40, 0, 0.5)"></span>
+<span class="color-preview" style="background-color: #d92800"></span>
 
-`rgba(217, 40, 0, 0.5)`
+`#d92800`
 
 </td>
 </tr>

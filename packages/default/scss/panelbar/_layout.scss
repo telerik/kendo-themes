@@ -28,7 +28,7 @@
         > .k-panelbar-header {
             // TODO
             border-width: 0;
-            border-style: solid;
+            border-style: $panelbar-item-border-style;
             border-color: inherit;
             display: block;
 
@@ -51,7 +51,7 @@
         }
         > .k-item + .k-item,
         > .k-panelbar-header + .k-panelbar-header {
-            border-top-width: 1px;
+            border-top-width: $panelbar-item-border-width;
         }
 
 
