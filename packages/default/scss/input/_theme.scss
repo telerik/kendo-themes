@@ -148,4 +148,216 @@
         }
     }
 
+    // Outline
+    .k-input-outline {
+        @include fill (
+            $kendo-input-outline-text,
+            $kendo-input-outline-bg,
+            $kendo-input-outline-border
+        );
+
+        & > .k-input-button {
+            border-color: inherit;
+        }
+
+        & > .k-input-spinner {
+            border-color: inherit;
+
+            & > .k-spinner-increase,
+            & > .k-spinner-decrease {
+                border-color: inherit;
+           }
+        }
+
+        &:hover,
+        &.k-hover {
+            @include fill (
+                $kendo-input-outline-hover-text,
+                $kendo-input-outline-hover-bg,
+                $kendo-input-outline-hover-border
+            );
+        }
+
+        &:focus,
+        &.k-focus {
+            @include fill (
+                $kendo-input-outline-focus-text,
+                $kendo-input-outline-focus-bg,
+                $kendo-input-outline-focus-border
+             );
+            @include box-shadow ( $kendo-input-outline-focus-shadow );
+        }
+
+        // Invalid
+        &.k-invalid,
+        &.ng-invalid.ng-touched,
+        &.ng-invalid.ng-dirty {
+            @include fill( $border: $invalid-border );
+
+            .k-input-validation-icon {
+                color: $invalid-text;
+            }
+
+            &:focus,
+            &.k-focus {
+                @include box-shadow($invalid-shadow);
+            }
+            &:focus-within {
+                @include box-shadow($invalid-shadow);
+            }
+        }
+
+    }
+
+    .k-picker-outline {
+        @include fill (
+            $kendo-picker-outline-text,
+            $kendo-picker-outline-bg,
+            $kendo-picker-outline-border
+        );
+
+        &:hover,
+        &.k-hover {
+            @include fill (
+                $kendo-picker-outline-hover-text,
+                $kendo-picker-outline-hover-bg,
+                $kendo-picker-outline-hover-border
+            );
+        }
+
+        &:focus,
+        &.k-focus {
+            @include fill (
+                $kendo-picker-outline-focus-text,
+                $kendo-picker-outline-focus-bg,
+                $kendo-picker-outline-focus-border
+            );
+            @include box-shadow ( $kendo-picker-outline-focus-shadow );
+        }
+
+        &:focus:hover,
+        &:focus.k-hover,
+        &.k-focus:hover,
+        &.k-focus.k-hover {
+            @include fill (
+                $kendo-picker-outline-hover-focus-text,
+                $kendo-picker-outline-hover-focus-bg,
+                $kendo-picker-outline-hover-focus-border
+            );
+        }
+
+        // Invalid
+        &.k-invalid,
+        &.ng-invalid.ng-touched,
+        &.ng-invalid.ng-dirty {
+            @include fill( $border: $invalid-border );
+
+            .k-input-validation-icon {
+                color: $invalid-text;
+            }
+
+            &:focus,
+            &.k-focus {
+                @include box-shadow($invalid-shadow);
+            }
+            &:focus-within {
+                @include box-shadow($invalid-shadow);
+            }
+        }
+    }
+
+    // Flat
+    .k-input-flat {
+        @include fill (
+            $kendo-input-flat-text,
+            $kendo-input-flat-bg,
+            $kendo-input-flat-border
+        );
+
+        &:focus,
+        &.k-focus {
+            @include fill (
+                $kendo-input-flat-focus-text,
+                $kendo-input-flat-focus-bg,
+                $kendo-input-flat-focus-border
+            );
+        }
+
+        // Invalid
+        &.k-invalid,
+        &.ng-invalid.ng-touched,
+        &.ng-invalid.ng-dirty {
+            @include fill( $border: $kendo-input-invalid-border );
+
+            .k-input-validation-icon {
+                color: $invalid-text;
+            }
+
+            &:focus,
+            &.k-focus {
+                @include box-shadow( $kendo-input-invalid-shadow );
+            }
+            &:focus-within {
+                @include box-shadow( $kendo-input-invalid-shadow );
+            }
+        }
+    }
+
+    .k-picker-flat {
+        @include fill (
+            $kendo-picker-flat-text,
+            $kendo-picker-flat-bg,
+            $kendo-picker-flat-border
+        );
+
+        &:hover,
+        &.k-hover {
+            @include fill (
+                $kendo-picker-flat-hover-text,
+                $kendo-picker-flat-hover-bg,
+                $kendo-picker-flat-hover-border
+            );
+        }
+
+        &:focus,
+        &.k-focus {
+            @include fill (
+                $kendo-picker-flat-focus-text,
+                $kendo-picker-flat-focus-bg,
+                $kendo-picker-flat-focus-border
+            );
+            @include box-shadow( $kendo-picker-flat-focus-shadow );
+        }
+
+        &:focus:hover,
+        &:focus.k-hover,
+        &.k-focus:hover,
+        &.k-focus.k-hover {
+            @include fill (
+                $kendo-picker-flat-hover-focus-text,
+                $kendo-picker-flat-hover-focus-bg,
+                $kendo-picker-flat-hover-focus-border
+            );
+        }
+
+        // Invalid
+        &.k-invalid,
+        &.ng-invalid.ng-touched,
+        &.ng-invalid.ng-dirty {
+            @include fill( $border: $kendo-input-invalid-border );
+
+            .k-input-validation-icon {
+                color: $invalid-text;
+            }
+
+            &:focus,
+            &.k-focus {
+                @include box-shadow( $kendo-input-invalid-shadow );
+            }
+            &:focus-within {
+                @include box-shadow( $kendo-input-invalid-shadow );
+            }
+        }
+    }
+
 }
