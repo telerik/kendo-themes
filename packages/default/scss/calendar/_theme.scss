@@ -29,9 +29,11 @@
             color: $calendar-today-nav-text;
 
             &:hover,
+            &.k-hover,
             &.k-state-hover,
             &:focus,
-            &.k-state-focus {
+            &.k-state-focus,
+            &.k-focus {
                 color: $calendar-today-nav-hover-text;
             }
         }
@@ -52,7 +54,8 @@
                 .k-link {
                     box-shadow: inset 0 0 0 1px $calendar-today-color;
                 }
-                &.k-state-focused .k-link {
+                &.k-state-focused .k-link,
+                &.k-focus .k-link {
                     box-shadow: inset 0 0 0 1px $calendar-today-color, $calendar-cell-focused-shadow;
                 }
             } @else if $calendar-today-style == color {
@@ -87,7 +90,8 @@
 
         // Interactive states
         .k-calendar-td:hover .k-link,
-        .k-calendar-td.k-state-hover .k-link {
+        .k-calendar-td.k-state-hover .k-link,
+        .k-calendar-td.k-hover .k-link {
             @include fill(
                 $calendar-cell-hover-text,
                 $calendar-cell-hover-bg,
@@ -95,7 +99,8 @@
                 $calendar-cell-hover-gradient
             );
         }
-        .k-calendar-td.k-state-selected .k-link {
+        .k-calendar-td.k-state-selected .k-link,
+        .k-calendar-td.k-selected .k-link {
             @include fill(
                 $calendar-cell-selected-text,
                 $calendar-cell-selected-bg,
@@ -104,7 +109,9 @@
             );
         }
         .k-calendar-td.k-state-selected:hover .k-link,
-        .k-calendar-td.k-state-selected.k-state-hover .k-link {
+        .k-calendar-td.k-state-selected.k-state-hover .k-link,
+        .k-calendar-td.k-selected:hover .k-link,
+        .k-calendar-td.k-selected.k-hover .k-link {
             @include fill(
                 $calendar-cell-selected-hover-text,
                 $calendar-cell-selected-hover-bg,
@@ -113,11 +120,14 @@
             );
         }
         .k-calendar-td.k-state-focused .k-link,
-        .k-calendar-td.k-state-focus .k-link {
+        .k-calendar-td.k-state-focus .k-link,
+        .k-calendar-td.k-focus .k-link {
             box-shadow: $calendar-cell-focused-shadow;
         }
         .k-calendar-td.k-state-selected.k-state-focused .k-link,
-        .k-calendar-td.k-state-selected.k-state-focus .k-link {
+        .k-calendar-td.k-state-selected.k-state-focus .k-link,
+        .k-calendar-td.k-selected:focus .k-link,
+        .k-calendar-td.k-selected.k-focus .k-link {
             box-shadow: $calendar-cell-selected-focus-shadow;
         }
 
@@ -131,7 +141,8 @@
             box-shadow: inset -1px 0 $calendar-navigation-border;
 
             li:hover,
-            li.k-state-hover {
+            li.k-state-hover,
+            li.k-hover {
                 color: $calendar-today-nav-hover-text;
             }
         }
@@ -214,7 +225,8 @@
         }
 
         .k-range-start.k-state-active,
-        .k-range-end.k-state-active {
+        .k-range-end.k-state-active,
+        .k-range-end.k-active {
             .k-link {
                 box-shadow: inset 0 0 2px 2px rgba(0, 0, 0, .2);
             }
