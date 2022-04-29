@@ -731,12 +731,16 @@
     }
     .k-gantt-tooltip-validation-label {
         display: inline-flex;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
+        min-width: $gantt-validation-tooltip-label-width;
     }
     .k-gantt-tooltip-validation-value {
         font-weight: $font-weight-bold;
+    }
+    .k-gantt-tooltip-validation-label,
+    .k-gantt-tooltip-validation-value {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 }
 
