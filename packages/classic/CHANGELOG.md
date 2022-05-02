@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.4.0](https://github.com/telerik/kendo-themes/compare/v5.3.1...v5.4.0) (2022-05-02)
+
+
+### Bug Fixes
+
+* **chip:** chip text color to depend on the base-text color rather than button-text ([773465c](https://github.com/telerik/kendo-themes/commit/773465c8e2baee7fba719b748bf49260a55923f0))
+* **dropdown:** update hover background-color and text to match design ([95c5a9d](https://github.com/telerik/kendo-themes/commit/95c5a9dad12611ecb73c00955701f9af459fa26e))
+* extract menu-button styles as a separate module ([b20201a](https://github.com/telerik/kendo-themes/commit/b20201a837e927078cbd9a624a2873d14e9a9ce7))
+* extract split-button styles as a separate module ([b52a8ba](https://github.com/telerik/kendo-themes/commit/b52a8baca8c02d2a3e91991a5113e42fb04dc42e))
+* **gantt:** dependency validation tooltip adjustments ([bf7c6e8](https://github.com/telerik/kendo-themes/commit/bf7c6e855815ab0260010b5f6fcd7e3cc314f015))
+* **input:** add inline-start border to input button in default and material ([133d29f](https://github.com/telerik/kendo-themes/commit/133d29fd2a272d1c283bee51db5bb9d48d8673d1))
+* **input:** apply correct hover border-color to input in default theme ([b4da2c1](https://github.com/telerik/kendo-themes/commit/b4da2c1701893b454eb6e307baa9f760e340ff64))
+* **input:** apply correct styles to focused outline picker when hovered ([9cec247](https://github.com/telerik/kendo-themes/commit/9cec2470c83263f8bb9e57ab5eb079c8aef51fda))
+* **input:** ensure correct styles are applied to input and picker when in invalid state ([4cce02a](https://github.com/telerik/kendo-themes/commit/4cce02a481645c4ad65057fa1f80e434fd7dcc6b))
+* **input:** fix flat picker :focus:hover behavior in bootstrap ([6939394](https://github.com/telerik/kendo-themes/commit/69393948336fea28b366ab44877abe9ccf0d1db0))
+* **input:** give flat input and picker border-radius on focus to match design ([7a1cbdc](https://github.com/telerik/kendo-themes/commit/7a1cbdc9a4168b55f9b94d973b6ca2a9d875488e))
+* **input:** give flat picker background-color on hover state ([1e54437](https://github.com/telerik/kendo-themes/commit/1e544376abf05684b63f92e158ed989b95170c6a))
+* **input:** update flat input border-color on focus to match design ([275748c](https://github.com/telerik/kendo-themes/commit/275748c75e239f88aa1436450573f8b49f0f42ef))
+* **input:** update input focus border-color in default to match design ([fd01025](https://github.com/telerik/kendo-themes/commit/fd0102565ed238033ce383402e1422c936d71fbe))
+* **menu:** add missing button dependency ([d070d37](https://github.com/telerik/kendo-themes/commit/d070d37049b532b84d29e3352477e56137d1364e))
+* **treeview:** allow sizing customization through default treeview variables ([61b180d](https://github.com/telerik/kendo-themes/commit/61b180dc4c3febcf541f224d6526886725d83470))
+* update outline input and picker border-colors to match design ([469a96b](https://github.com/telerik/kendo-themes/commit/469a96bf3be269aff3641c12efe86a859d36470e))
+
+
+
+
+
 ## [5.3.1](https://github.com/telerik/kendo-themes/compare/v5.3.0...v5.3.1) (2022-04-07)
 
 **Note:** Version bump only for package @progress/kendo-theme-classic

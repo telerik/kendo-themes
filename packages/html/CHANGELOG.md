@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.4.0](https://github.com/telerik/kendo-themes/compare/v5.3.1...v5.4.0) (2022-05-02)
+
+
+### Features
+
+* add button structure json ([0747339](https://github.com/telerik/kendo-themes/commit/07473391e089ca3b3b773d4c4514648c6c50c64b))
+* **html:** add swap button to daterangepicker html ([a43986e](https://github.com/telerik/kendo-themes/commit/a43986ecf52f0d3604d0a7d2cbaf9d76f99d1d2e))
+
+
+
+
+
 # [5.3.0](https://github.com/telerik/kendo-themes/compare/v5.2.0...v5.3.0) (2022-04-04)
 
 
