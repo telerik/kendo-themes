@@ -421,6 +421,14 @@
         }
     }
 
+
+    // Angular specific
+    .k-input > kendo-popup,
+    .k-picker > kendo-popup {
+        position: fixed;
+    }
+
+
 }
 
 
