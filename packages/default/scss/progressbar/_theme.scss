@@ -8,7 +8,8 @@
     .k-progressbar {
         @include fill( $progressbar-text, $progressbar-bg, $progressbar-border, $progressbar-gradient );
 
-        .k-state-selected {
+        .k-state-selected ,
+        .k-selected {
             @include fill( $progressbar-fill-text, $progressbar-fill-bg, $progressbar-fill-border, $progressbar-fill-gradient );
         }
 

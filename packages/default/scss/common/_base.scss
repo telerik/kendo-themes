@@ -114,6 +114,7 @@
 
     // Disabled state
     .k-state-disabled,
+    .k-disabled,
     .k-widget[disabled],
     .k-disabled {
         @include disabled( $disabled-styling );

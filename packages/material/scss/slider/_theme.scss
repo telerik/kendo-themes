@@ -22,7 +22,8 @@
             }
         }
 
-        &.k-state-disabled {
+        &.k-state-disabled ,
+        &.k-disabled {
             opacity: 1;
 
             .k-slider-track,

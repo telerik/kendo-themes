@@ -136,7 +136,8 @@
             opacity: $stepper-optional-label-opacity;
         }
         .k-step-disabled .k-step-label-optional,
-        &.k-state-disabled .k-step-label-optional {
+        &.k-state-disabled .k-step-label-optional ,
+        &.k-disabled .k-step-label-optional {
             color: inherit;
         }
 

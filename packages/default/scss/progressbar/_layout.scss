@@ -26,7 +26,8 @@
 
 
         // Selection
-        > .k-state-selected {
+        > .k-state-selected ,
+        > .k-selected {
             border-width: 0;
             border-style: solid;
             display: flex;
@@ -96,7 +97,8 @@
             flex-direction: row;
         }
 
-        > .k-state-selected {
+        > .k-state-selected ,
+        > .k-selected {
             width: 0;
             width: calc( var( --kendo-progressbar-progress, 0 ) * 1% ); // sass-lint:disable-line no-duplicate-properties
             flex-direction: row;
@@ -122,7 +124,8 @@
         // Horizontal reverse
         &.k-progressbar-reverse {
 
-            > .k-state-selected {
+            > .k-state-selected ,
+            > .k-selected {
                 flex-direction: row-reverse;
                 justify-self: flex-end;
             }
@@ -146,7 +149,8 @@
             writing-mode: vertical-lr;
         }
 
-        > .k-state-selected {
+        > .k-state-selected ,
+        > .k-selected {
             height: 0;
             height: calc( var( --kendo-progressbar-progress, 0 ) * 1% ); // sass-lint:disable-line no-duplicate-properties
             flex-direction: column-reverse;
@@ -175,7 +179,8 @@
         &.k-progressbar-reverse {
             flex-direction: column;
 
-            > .k-state-selected {
+            > .k-state-selected ,
+            > .k-selected {
                 flex-direction: column;
                 align-self: flex-start;
             }
@@ -187,6 +192,7 @@
     .k-progressbar-indeterminate {
         .k-progress-status-wrap,
         .k-state-selected,
+        .k-selected,
         .k-item {
             display: none;
         }
@@ -197,7 +203,9 @@
     .telerik-blazor.k-progressbar-horizontal {
 
         > .k-state-selected,
-        > .k-state-selected > .k-progress-status-wrap {
+        > .k-selected,
+        > .k-state-selected > .k-progress-status-wrap ,
+        > .k-selected > .k-progress-status-wrap {
             transition: width .1s ease-in-out;
         }
     }
@@ -225,7 +233,8 @@
         display: -ms-inline-grid;
 
         > .k-progress-status-wrap,
-        > .k-state-selected {
+        > .k-state-selected ,
+        > .k-selected {
             -ms-grid-column: 1;
             -ms-grid-row: 1;
         }
@@ -234,7 +243,8 @@
         -ms-grid-columns: 1fr;
         -ms-grid-rows: $progressbar-height;
 
-        &.k-progressbar-reverse > .k-state-selected {
+        &.k-progressbar-reverse > .k-state-selected ,
+        &.k-progressbar-reverse > .k-selected {
             -ms-grid-column-align: end;
         }
     }
@@ -242,11 +252,13 @@
         -ms-grid-columns: $progressbar-height;
         -ms-grid-rows: 1fr;
 
-        > .k-state-selected {
+        > .k-state-selected ,
+        > .k-selected {
             -ms-grid-row-align: end;
         }
 
-        &.k-progressbar-reverse > .k-state-selected {
+        &.k-progressbar-reverse > .k-state-selected ,
+        &.k-progressbar-reverse > .k-selected {
             -ms-grid-row-align: start;
         }
     }

@@ -182,7 +182,8 @@
                 $bg: $stepper-progressbar-bg
             );
 
-            .k-state-selected {
+            .k-state-selected ,
+            .k-selected {
                 @include fill(
                     $color: $stepper-progressbar-fill-text,
                     $bg: $stepper-progressbar-fill-bg
