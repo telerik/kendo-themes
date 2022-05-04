@@ -28,7 +28,8 @@
         );
     }
     .k-taskboard-column:focus,
-    .k-taskboard-column.k-state-focus {
+    .k-taskboard-column.k-state-focus ,
+    .k-taskboard-column.k-focus {
         @include fill(
             $taskboard-column-focus-text,
             $taskboard-column-focus-bg,

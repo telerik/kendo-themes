@@ -100,7 +100,8 @@
             display: block;
         }
 
-        &.k-state-focused {
+        &.k-state-focused ,
+        &.k-focus {
             &::before,
             &::after {
                 display: block;

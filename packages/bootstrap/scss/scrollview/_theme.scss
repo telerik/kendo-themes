@@ -45,7 +45,8 @@
         outline-width: 0;
 
         &:focus,
-        &.k-state-focus {
+        &.k-state-focus ,
+        &.k-focus {
             color: $scrollview-navigation-color;
             opacity: $scrollview-navigation-hover-opacity;
             .k-icon::before {
@@ -55,7 +56,8 @@
         }
 
         &:hover,
-        &.k-state-hover {
+        &.k-state-hover ,
+        &.k-hover {
             color: $scrollview-navigation-color;
             opacity: $scrollview-navigation-hover-opacity;
 
@@ -76,13 +78,15 @@
 
 
         &:focus,
-        &.k-state-focused {
+        &.k-state-focused ,
+        &.k-focus {
             box-shadow: $scrollview-pagebutton-shadow;
         }
     }
 
     .k-scrollview-nav > .k-link:hover,
-    .k-scrollview-nav > .k-link.k-state-hover {
+    .k-scrollview-nav > .k-link.k-state-hover ,
+    .k-scrollview-nav > .k-link.k-hover {
         box-shadow: $scrollview-pagebutton-shadow;
     }
 

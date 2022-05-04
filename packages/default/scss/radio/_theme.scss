@@ -12,7 +12,8 @@
 
     // Hover state
     .k-radio:hover,
-    .k-radio.k-state-hover {
+    .k-radio.k-state-hover ,
+    .k-radio.k-hover {
         @include fill(
             $kendo-radio-hover-text,
             $kendo-radio-hover-bg,
@@ -23,7 +24,8 @@
 
     // Focus state
     .k-radio:focus,
-    .k-radio.k-state-focus {
+    .k-radio.k-state-focus ,
+    .k-radio.k-focus {
         @include fill( $border: $kendo-radio-focus-border );
         @include box-shadow( $kendo-radio-focus-shadow );
     }
@@ -54,7 +56,8 @@
         );
     }
     .k-radio:checked:focus,
-    .k-radio.k-checked.k-state-focus {
+    .k-radio.k-checked.k-state-focus ,
+    .k-radio.k-checked.k-focus {
         @include fill( $border: $kendo-radio-focus-checked-border );
         @include box-shadow( $kendo-radio-focus-checked-shadow );
     }

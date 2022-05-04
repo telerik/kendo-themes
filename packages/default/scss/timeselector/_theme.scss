@@ -30,7 +30,8 @@
             color: $time-list-title-text;
         }
 
-        &.k-state-focused {
+        &.k-state-focused ,
+        &.k-focus {
             .k-title {
                 color: $time-list-title-focus-text;
             }

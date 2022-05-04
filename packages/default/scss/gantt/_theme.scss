@@ -15,7 +15,8 @@
                     $border: $gantt-milestone-border
                 );
             }
-            .k-task-milestone.k-state-selected .k-task-milestone-content {
+            .k-task-milestone.k-state-selected .k-task-milestone-content ,
+            .k-task-milestone.k-selected .k-task-milestone-content {
                 @include fill(
                     $bg: $gantt-milestone-selected-bg,
                     $border: $gantt-milestone-selected-border
@@ -29,7 +30,8 @@
                 stroke: $gantt-line-fill;
             }
 
-            polyline.k-state-selected {
+            polyline.k-state-selected ,
+            polyline.k-selected {
                 stroke: $gantt-line-selected-fill;
             }
         }
@@ -82,7 +84,8 @@
         );
     }
     .k-task-dot:hover::before,
-    .k-task-dot.k-state-hover::before {
+    .k-task-dot.k-state-hover::before ,
+    .k-task-dot.k-hover::before {
         @include fill(
             $bg: $gantt-dot-hover-bg,
             $border: $gantt-dot-hover-border
@@ -107,7 +110,8 @@
             );
         }
     }
-    .k-task-milestone.k-state-selected {
+    .k-task-milestone.k-state-selected ,
+    .k-task-milestone.k-selected {
         background-image: none;
         @include fill(
             $bg: $gantt-milestone-selected-bg,
@@ -137,7 +141,8 @@
     .k-task-advanced .k-task-summary-complete {
         color: $gantt-advanced-bg;
     }
-    .k-task-summary.k-state-selected {
+    .k-task-summary.k-state-selected ,
+    .k-task-summary.k-selected {
         color: $gantt-summary-selected-bg;
 
         .k-task-summary-complete {
@@ -180,7 +185,8 @@
             $bg: $gantt-advanced-bg
         );
     }
-    .k-task-single.k-state-selected {
+    .k-task-single.k-state-selected ,
+    .k-task-single.k-selected {
         @include fill(
             $gantt-task-selected-text,
             $gantt-task-selected-bg,
@@ -196,7 +202,8 @@
     .k-gantt-line {
         color: $gantt-line-fill;
     }
-    .k-gantt-line.k-state-selected {
+    .k-gantt-line.k-state-selected ,
+    .k-gantt-line.k-selected {
         color: $gantt-line-selected-fill;
     }
 

@@ -20,7 +20,8 @@
         .k-tabstrip-items .k-item {
             color: inherit;
         }
-        .k-tabstrip-items .k-item.k-state-active::after {
+        .k-tabstrip-items .k-item.k-state-active::after ,
+        .k-tabstrip-items .k-item.k-active::after {
             border-color: $primary-contrast;
         }
     }
@@ -42,7 +43,8 @@
             $toolbar-gradient
         );
 
-        .k-tabstrip-items .k-item.k-state-active {
+        .k-tabstrip-items .k-item.k-state-active ,
+        .k-tabstrip-items .k-item.k-active {
             border-color: $secondary;
         }
     }
@@ -163,7 +165,8 @@
         );
         box-shadow: inset 0 0 0 1px $kendo-button-border;
 
-        &.k-state-active {
+        &.k-state-active ,
+        &.k-active {
             @include fill(
                 $kendo-button-active-text,
                 $kendo-button-active-bg,
@@ -208,12 +211,14 @@
 
         .k-spreadsheet-has-image {
             &:hover,
-            &.k-state-hovered {
+            &.k-state-hovered ,
+            &.k-hover {
                 box-shadow: $spreadsheet-insert-image-dialog-preview-overlay-shadow;
             }
 
             &:hover div,
-            &.k-state-hovered div {
+            &.k-state-hovered div ,
+            &.k-hover div {
                 color: $spreadsheet-insert-image-dialog-overlay-hovered-text;
             }
         }
@@ -247,7 +252,8 @@
         .k-button {}
 
         .k-button:hover,
-        .k-button.k-state-hover {
+        .k-button.k-state-hover ,
+        .k-button.k-hover {
             @include fill(
                 $kendo-list-item-hover-text,
                 $kendo-list-item-hover-bg
@@ -255,7 +261,9 @@
         }
         .k-button:active,
         .k-button.k-state-active,
-        .k-button.k-state-selected {
+        .k-button.k-active,
+        .k-button.k-state-selected ,
+        .k-button.k-selected {
             @include fill(
                 $kendo-list-item-selected-text,
                 $kendo-list-item-selected-bg

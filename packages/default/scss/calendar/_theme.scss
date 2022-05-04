@@ -109,7 +109,9 @@
             );
         }
         .k-calendar-td.k-state-selected:hover .k-link,
+        .k-calendar-td.k-selected:hover .k-link,
         .k-calendar-td.k-state-selected.k-state-hover .k-link,
+        .k-calendar-td.k-selected.k-hover .k-link,
         .k-calendar-td.k-selected:hover .k-link,
         .k-calendar-td.k-selected.k-hover .k-link {
             @include fill(
@@ -120,12 +122,15 @@
             );
         }
         .k-calendar-td.k-state-focused .k-link,
+        .k-calendar-td.k-focus .k-link,
         .k-calendar-td.k-state-focus .k-link,
         .k-calendar-td.k-focus .k-link {
             box-shadow: $calendar-cell-focused-shadow;
         }
         .k-calendar-td.k-state-selected.k-state-focused .k-link,
+        .k-calendar-td.k-selected.k-focused .k-link,
         .k-calendar-td.k-state-selected.k-state-focus .k-link,
+        .k-calendar-td.k-selected.k-focus .k-link,
         .k-calendar-td.k-selected:focus .k-link,
         .k-calendar-td.k-selected.k-focus .k-link {
             box-shadow: $calendar-cell-selected-focus-shadow;
@@ -225,6 +230,7 @@
         }
 
         .k-range-start.k-state-active,
+        .k-range-start.k-active,
         .k-range-end.k-state-active,
         .k-range-end.k-active {
             .k-link {

@@ -80,7 +80,8 @@
             outline: 0;
         }
     }
-    .k-bottom-nav-item.k-state-disabled {
+    .k-bottom-nav-item.k-state-disabled ,
+    .k-bottom-nav-item.k-disabled {
         background-color: initial;
     }
 

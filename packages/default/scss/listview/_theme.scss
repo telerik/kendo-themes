@@ -13,7 +13,8 @@
     // Listview content
     .k-listview-content {
 
-        > .k-state-focused {
+        > .k-state-focused ,
+        > .k-focus {
             @include fill(
                 $listview-item-focus-text,
                 $listview-item-focus-bg,
@@ -22,7 +23,8 @@
             @include box-shadow( $listview-item-focus-shadow );
         }
 
-        > .k-state-selected {
+        > .k-state-selected ,
+        > .k-selected {
             @include fill(
                 $listview-item-selected-text,
                 $listview-item-selected-bg,
