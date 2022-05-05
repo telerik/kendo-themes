@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.4.1](https://github.com/telerik/kendo-themes/compare/v5.4.0...v5.4.1) (2022-05-05)
+
+
+### Bug Fixes
+
+* compatability with new state className syntax ([c62c363](https://github.com/telerik/kendo-themes/commit/c62c36386c6746f28038177791663ae2e4d9ac56))
+* make kendo-popup 'pos: fixed' inside inputs and pickers so it's not clipped by overflow hidden ([a5492e0](https://github.com/telerik/kendo-themes/commit/a5492e0e57efa6bf2d31f0450cd4c07a8538c5ac))
+
+
+
+
+
 # [5.4.0](https://github.com/telerik/kendo-themes/compare/v5.3.1...v5.4.0) (2022-05-02)
 
 
