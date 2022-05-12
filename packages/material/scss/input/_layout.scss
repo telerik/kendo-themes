@@ -65,8 +65,32 @@
 
 
     // Input ripple
-    .k-floating-label-container {
-        @include input-ripple();
+    .k-input-solid,
+    .k-input-flat,
+    .k-picker-solid,
+    .k-picker-flat {
+        $height: 2 * $kendo-input-border-width;
+
+        &::after {
+            display: block;
+            z-index: 2;
+            content: "";
+            position: absolute;
+            bottom: calc( 1px - #{$height} );
+            left: 0;
+            right: 0;
+            height: $height;
+            margin: auto;
+            opacity: 0;
+            transform: scaleX(.5);
+            transition: transform .3s;
+        }
+
+        &.k-state-focused::after,
+        &.k-focus::after {
+            opacity: 1;
+            transform: scaleX(1);
+        }
     }
 
 }
