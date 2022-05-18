@@ -299,6 +299,7 @@ gulp.task("dart:flat", () => {
 // #region docs
 gulp.task("docs", () => {
     let themes = glob.sync(paths.sass.themes);
+    themes = themes.filter(theme => theme !== 'packages/utils');
 
     distFlat();
     resolveVars();
