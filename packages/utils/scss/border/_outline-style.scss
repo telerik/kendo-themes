@@ -1,0 +1,5 @@
+// TODO DOCS
+
+$kendo-utils-outline-style: map-get( $kendo-utils, "outline-style" ) !default;
+
+@include generate-utils( outline, outline-style, $kendo-utils-outline-style );

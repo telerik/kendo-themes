@@ -1,0 +1,11 @@
+/// @name .k-flex-grow
+/// @description This is equivalent to `flex-grow: 1`. It defines the ability for a flex item to grow if necessary. It accepts a unitless value that serves as a proportion. It dictates what amount of the available space inside the flex container the item should take up.
+/// @group flex-grow
+
+/// @name .k-flex-grow-0
+/// @description This is equivalent to `flex-grow: 0`. The item will not grow.
+/// @group flex-grow
+
+$kendo-utils-flex-grow: map-get( $kendo-utils, "flex-grow" ) !default;
+
+@include generate-utils( grow, flex-grow, $kendo-utils-flex-grow );

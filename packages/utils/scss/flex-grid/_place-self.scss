@@ -1,0 +1,5 @@
+// TODO DOCS
+
+$kendo-utils-place-self: map-get( $kendo-utils, "place-self" ) !default;
+
+@include generate-utils( place-self, place-self, $kendo-utils-place-self );

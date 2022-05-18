@@ -1,0 +1,11 @@
+// TODO DOCS
+
+$kendo-utils-rotate: map-get( $kendo-utils, "rotate" ) !default;
+
+// sass-lint:disable function-name-format
+@function __rotate( $val ) {
+    @return rotate( $val );
+}
+// sass-lint:enable function-name-format
+
+@include generate-utils( rotate, transform, $kendo-utils-rotate, __rotate );

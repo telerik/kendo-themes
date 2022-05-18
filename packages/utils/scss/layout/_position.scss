@@ -1,0 +1,60 @@
+// TODO DOCS
+
+$kendo-utils-position: map-get( $kendo-utils, "position" ) !default;
+
+@include generate-utils( pos, position, $kendo-utils-position );
+
+// Aliases
+.#{$kendo-prefix}static { @extend .#{$kendo-prefix}pos-static !optional; }
+.\!#{$kendo-prefix}static { @extend .\!#{$kendo-prefix}pos-static !optional; }
+.#{$kendo-prefix}relative { @extend .#{$kendo-prefix}pos-relative !optional; }
+.\!#{$kendo-prefix}relative { @extend .\!#{$kendo-prefix}pos-relative !optional; }
+.#{$kendo-prefix}absolute { @extend .#{$kendo-prefix}pos-absolute !optional; }
+.\!#{$kendo-prefix}absolute { @extend .\!#{$kendo-prefix}pos-absolute !optional; }
+.#{$kendo-prefix}fixed { @extend .#{$kendo-prefix}pos-fixed !optional; }
+.\!#{$kendo-prefix}fixed { @extend .\!#{$kendo-prefix}pos-fixed !optional; }
+.#{$kendo-prefix}sticky { @extend .#{$kendo-prefix}pos-sticky !optional; }
+.\!#{$kendo-prefix}sticky { @extend .\!#{$kendo-prefix}pos-sticky !optional; }
+
+
+// TODO DOCS
+
+$kendo-utils-inset: map-get( $kendo-utils, "inset" ) !default;
+
+@include generate-utils( inset, inset, $kendo-utils-inset );
+@include generate-utils( inset-x, inset-inline, $kendo-utils-inset );
+@include generate-utils( inset-y, inset-block, $kendo-utils-inset );
+@include generate-utils( top, top, $kendo-utils-inset );
+@include generate-utils( right, right, $kendo-utils-inset );
+@include generate-utils( bottom, bottom, $kendo-utils-inset );
+@include generate-utils( left, left, $kendo-utils-inset );
+@include generate-utils( top-left, ( top, left ), $kendo-utils-inset );
+@include generate-utils( top-right, ( top, right ), $kendo-utils-inset );
+@include generate-utils( bottom-left, ( bottom, left ), $kendo-utils-inset );
+@include generate-utils( bottom-right, ( bottom, right), $kendo-utils-inset );
+
+.#{$kendo-prefix}top-center {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.#{$kendo-prefix}middle-left {
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+.#{$kendo-prefix}middle-center {
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%);
+}
+.#{$kendo-prefix}middle-right {
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+.#{$kendo-prefix}bottom-center {
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}

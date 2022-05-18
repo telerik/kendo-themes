@@ -1,0 +1,5 @@
+// TODO DOCS
+
+$kendo-utils-order: map-get( $kendo-utils, "order" ) !default;
+
+@include generate-utils( order, order, $kendo-utils-order );

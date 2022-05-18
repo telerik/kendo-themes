@@ -1,0 +1,24 @@
+/// @name .k-flip-h
+/// @description This is equivalent to `transform: scaleX( -1 );`. Flips the element horizontally.
+/// @group transform
+
+/// @name .k-flip-v
+/// @description This is equivalent to `transform: scaleY( -1 );`. Flips the element vertically.
+/// @group transform
+
+$kendo-utils-flip: map-get( $kendo-utils, "flip" ) !default;
+
+@if $kendo-utils-flip {
+    .#{$kendo-prefix}flip-h { transform: scaleX( -1 ); }
+    .\!#{$kendo-prefix}flip-h { transform: scaleX( -1 ) !important; } // sass-lint:disable-line no-important
+    .#{$kendo-prefix}flip-v { transform: scaleY( -1 ); }
+    .\!#{$kendo-prefix}flip-v { transform: scaleY( -1 ) !important; } // sass-lint:disable-line no-important
+    .#{$kendo-prefix}flip-h.#{$kendo-prefix}flip-v { transform: scale( -1, -1 ); }
+    .\!#{$kendo-prefix}flip-h.\!#{$kendo-prefix}flip-v { transform: scale( -1, -1 ) !important; } // sass-lint:disable-line no-important
+
+    // Aliases
+    .#{$kendo-prefix}flip-x { @extend .#{$kendo-prefix}flip-h !optional; }
+    .\!#{$kendo-prefix}flip-x { @extend .\!#{$kendo-prefix}flip-h !optional; }
+    .#{$kendo-prefix}flip-y { @extend .#{$kendo-prefix}flip-v !optional; }
+    .\!#{$kendo-prefix}flip-y { @extend .\!#{$kendo-prefix}flip-v !optional; }
+}

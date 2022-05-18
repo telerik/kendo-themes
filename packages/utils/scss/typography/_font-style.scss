@@ -1,0 +1,5 @@
+// TODO DOCS
+
+$kendo-utils-font-style: map-get( $kendo-utils, "font-style" ) !default;
+
+@include generate-utils( font, font-style, $kendo-utils-font-style );

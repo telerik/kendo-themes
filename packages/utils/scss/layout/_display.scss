@@ -1,0 +1,47 @@
+/// @name .k-d-none
+/// @description This is equivalent to `display: none;`. Turns off the display of an element so that it has no effect on layout (the document is rendered as though the element did not exist). All descendant elements also have their display turned off.
+/// @group display
+
+/// @name .k-d-block
+/// @description This is equivalent to `display: block;`. The element generates a block element box, generating line breaks both before and after the element when in the normal flow.
+/// @group display
+
+/// @name .k-d-inline
+/// @description This is equivalent to `display: inline;`. The element generates one or more inline element boxes that do not generate line breaks before or after themselves. In normal flow, the next element will be on the same line if there is space.
+/// @group display
+
+/// @name .k-d-inline-block
+/// @description This is equivalent to `display: inline-block;`. The element generates a block element box that will be flowed with surrounding content as if it were a single inline box (behaving much like a replaced element would).
+/// @group display
+
+/// @name .k-d-flex
+/// @description This is equivalent to `display: flex;`. The element behaves like a block element and lays out its content according to the flexbox model.
+/// @group display
+
+/// @name .k-d-inline-flex
+/// @description This is equivalent to `display: inline-flex;`. The element behaves like an inline element and lays out its content according to the flexbox model.
+/// @group display
+
+/// @name .k-d-grid
+/// @description This is equivalent to `display: grid`. It defines the element as a grid container and establishes a new grid formatting context for its contents.
+/// @group display
+
+/// @name .k-d-inline-grid
+/// @description This is equivalent to `display: inline-grid`. It defines the element as a grid container and establishes a new grid formatting context for its contents.
+/// @group display
+
+/// @name .k-d-table
+/// @description This is equivalent to `display: table;`. These elements behave like HTML `<table>` elements. It defines a block-level box.
+/// @group display
+
+/// @name .k-d-inline-table
+/// @description This is equivalent to `display: inline-table;`. The inline-table value does not have a direct mapping in HTML. It behaves like an HTML `<table>` element, but as an inline box, rather than a block-level box. Inside the table box is a block-level context.
+/// @group display
+
+/// @name .k-d-list-item
+/// @description This is equivalent to `display: list-item;`. These elements behave like HTML `<LI>` elements. It defines a block-level box.
+/// @group display
+
+$kendo-utils-display: map-get( $kendo-utils, "display" ) !default;
+
+@include generate-utils( d, display, $kendo-utils-display );

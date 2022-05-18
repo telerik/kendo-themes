@@ -1,0 +1,5 @@
+// TODO DOCS
+
+$kendo-utils-clear: map-get( $kendo-utils, "clear" ) !default;
+
+@include generate-utils( clear, clear, $kendo-utils-clear );

@@ -1,0 +1,28 @@
+$kendo-utils-accessibility: map-get( $kendo-utils, "accessibility" ) !default;
+
+@if $kendo-utils-accessibility {
+    /// @name .k-sr-only
+    /// @description This class could be assigned to elements which should be visually hidden, but remain accessible for screen readers.
+    /// @group accessibility
+    .#{$kendo-prefix}sr-only {
+        margin: -1px;
+        padding: 0;
+        width: 1px;
+        height: 1px;
+        border-width: 0;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        position: absolute;
+    }
+
+    .#{$kendo-prefix}not-sr-only {
+        margin: 0;
+        padding: 0;
+        width: auto;
+        height: auto;
+        border-width: 0;
+        overflow: visible;
+        clip: auto;
+        position: static;
+    }
+}

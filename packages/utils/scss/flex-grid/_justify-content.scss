@@ -1,0 +1,8 @@
+// TODO DOCS
+
+$kendo-utils-justify-content: map-get( $kendo-utils, "justify-content" ) !default;
+
+@include generate-utils( justify-content, justify-content, $kendo-utils-justify-content );
+
+.#{$kendo-prefix}justify-content-stretch > * { flex: 1 0 0%; }
+.\!.#{$kendo-prefix}justify-content-stretch > * { flex: 1 0 0% !important; } // sass-lint:disable-line no-important class-name-format

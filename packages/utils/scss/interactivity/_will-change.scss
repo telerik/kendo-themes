@@ -1,0 +1,5 @@
+// TODO DOCS
+
+$kendo-utils-will-change: map-get( $kendo-utils, "will-change" ) !default;
+
+@include generate-utils( will-change, will-change, $kendo-utils-will-change );

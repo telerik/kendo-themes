@@ -1,0 +1,15 @@
+// TODO DOCS
+
+$kendo-utils-translate: map-get( $kendo-utils, "translate" ) !default;
+
+// sass-lint:disable function-name-format
+@function __translate-x( $val ) {
+    @return translateX( $val );
+}
+@function __translate-y( $val ) {
+    @return translateY( $val );
+}
+// sass-lint:enable function-name-format
+
+@include generate-utils( translate-x, transform, $kendo-utils-translate, __translate-x );
+@include generate-utils( translate-y, transform, $kendo-utils-translate, __translate-y );

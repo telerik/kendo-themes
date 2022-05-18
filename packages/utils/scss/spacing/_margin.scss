@@ -1,0 +1,11 @@
+// TODO DOCS
+
+$kendo-utils-margin: map-get( $kendo-utils, "margin" ) !default;
+
+@include generate-utils( m, margin, $kendo-utils-margin );
+@include generate-utils( mt, margin-top, $kendo-utils-margin );
+@include generate-utils( mr, margin-right, $kendo-utils-margin );
+@include generate-utils( mb, margin-bottom, $kendo-utils-margin );
+@include generate-utils( ml, margin-left, $kendo-utils-margin );
+@include generate-utils( mx, margin-inline, $kendo-utils-margin );
+@include generate-utils( my, margin-block, $kendo-utils-margin );

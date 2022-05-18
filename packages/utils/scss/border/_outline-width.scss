@@ -1,0 +1,5 @@
+// TODO DOCS
+
+$kendo-utils-outline-width: map-get( $kendo-utils, "outline-width" ) !default;
+
+@include generate-utils( outline, outline-width, $kendo-utils-outline-width );

@@ -1,0 +1,19 @@
+/// @name .k-text-left
+/// @description This is equivalent to `text-align: left;`. The inline contents are aligned to the left edge of the line box.
+/// @group text-align
+
+/// @name .k-text-right
+/// @description This is equivalent to `text-align: right;`. The inline contents are aligned to the right edge of the line box.
+/// @group text-align
+
+/// @name .k-text-center
+/// @description This is equivalent to `text-align: center;`. The inline contents are centered within the line box.
+/// @group text-align
+
+/// @name .k-text-justify
+/// @description This is equivalent to `text-align: justify;`. The inline contents are justified. Text should be spaced to line up its left and right edges to the left and right edges of the line box, except for the last line.
+/// @group text-align
+
+$kendo-utils-text-align: map-get( $kendo-utils, "text-align" ) !default;
+
+@include generate-utils( text, text-align, $kendo-utils-text-align );

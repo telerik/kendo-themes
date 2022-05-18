@@ -1,0 +1,15 @@
+// TODO DOCS
+
+$kendo-utils-skew: map-get( $kendo-utils, "skew" ) !default;
+
+// sass-lint:disable function-name-format
+@function __skew-x( $val ) {
+    @return skewX( $val );
+}
+@function __skew-y( $val ) {
+    @return skewY( $val );
+}
+// sass-lint:enable function-name-format
+
+@include generate-utils( skew-x, transform, $kendo-utils-skew, __skew-x );
+@include generate-utils( skew-y, transform, $kendo-utils-skew, __skew-y );

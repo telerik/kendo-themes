@@ -1,0 +1,11 @@
+// TODO DOCS
+
+$kendo-utils-border-color: map-get( $kendo-utils, "border-color" ) !default;
+
+@include generate-utils( border, border-color, $kendo-utils-border-color );
+@include generate-utils( border-t, border-top-color, $kendo-utils-border-color );
+@include generate-utils( border-r, border-right-color, $kendo-utils-border-color );
+@include generate-utils( border-b, border-bottom-color, $kendo-utils-border-color );
+@include generate-utils( border-l, border-left-color, $kendo-utils-border-color );
+@include generate-utils( border-x, border-inline-color, $kendo-utils-border-color );
+@include generate-utils( border-y, border-block-color, $kendo-utils-border-color );

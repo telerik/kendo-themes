@@ -1,0 +1,19 @@
+/// @name .k-flex-row
+/// @description This is equivalent to `flex-direction: row`. This establishes the main-axis to be horizontal, thus defining the direction flex items are placed in the flex container: left to right in `ltr`; right to left in `rtl`.
+/// @group flex-direction
+
+/// @name .k-flex-row-reverse
+/// @description This is equivalent to `flex-direction: row-reverse`. This establishes the main-axis to be horizontal, thus defining the direction flex items are placed in the flex container: right to left in `ltr`; left to right in `rtl`.
+/// @group flex-direction
+
+/// @name .k-flex-col
+/// @description This is equivalent to `flex-direction: column`. This establishes the main-axis to be vertical, thus defining the direction flex items are placed in the flex container: top to bottom.
+/// @group flex-direction
+
+/// @name .k-flex-col-reverse
+/// @description This is equivalent to `flex-direction: column-reverse`. This establishes the main-axis to be vertical, thus defining the direction flex items are placed in the flex container: bottom to top.
+/// @group flex-direction
+
+$kendo-utils-flex-direction: map-get( $kendo-utils, "flex-direction" ) !default;
+
+@include generate-utils( flex, flex-direction, $kendo-utils-flex-direction );

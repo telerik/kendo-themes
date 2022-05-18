@@ -1,0 +1,5 @@
+// TODO DOCS
+
+$kendo-utils-font-size: map-get( $kendo-utils, "font-size" ) !default;
+
+@include generate-utils( font-size, font-size, $kendo-utils-font-size );

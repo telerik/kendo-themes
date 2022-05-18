@@ -1,0 +1,5 @@
+// TODO DOCS
+
+$kendo-utils-grid-auto-rows: map-get( $kendo-utils, "grid-auto-rows" ) !default;
+
+@include generate-utils( grid-auto-rows, grid-auto-rows, $kendo-utils-grid-auto-rows );

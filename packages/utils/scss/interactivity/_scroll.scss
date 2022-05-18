@@ -1,0 +1,45 @@
+// TODO DOCS
+
+$kendo-utils-scroll-behavior: map-get( $kendo-utils, "scroll-behavior" ) !default;
+
+@include generate-utils( scroll, scroll-behavior, $kendo-utils-scroll-behavior );
+
+
+$kendo-utils-scroll-snap-type: map-get( $kendo-utils, "scroll-snap-type" ) !default;
+
+@include generate-utils( scroll-snap, scroll-snap-type, $kendo-utils-scroll-snap-type );
+
+.#{$kendo-prefix}scroll-snap-mandatory { #{--#{$kendo-prefix}scroll-snap-strictness}: mandatory; }
+.#{$kendo-prefix}scroll-snap-proximity { #{--#{$kendo-prefix}scroll-snap-strictness}: proximity; }
+
+
+$kendo-utils-scroll-snap-stop: map-get( $kendo-utils, "scroll-snap-stop" ) !default;
+
+@include generate-utils( scroll-snap-stop, scroll-snap-stop, $kendo-utils-scroll-snap-stop );
+
+
+$kendo-utils-scroll-snap-align: map-get( $kendo-utils, "scroll-snap-align" ) !default;
+
+@include generate-utils( scroll-snap-align, scroll-snap-align, $kendo-utils-scroll-snap-align );
+
+
+$kendo-utils-scroll-margin: map-get( $kendo-utils, "scroll-margin" ) !default;
+
+@include generate-utils( scroll-m, scroll-margin, $kendo-utils-scroll-margin );
+@include generate-utils( scroll-mt, scroll-margin-top, $kendo-utils-scroll-margin );
+@include generate-utils( scroll-mr, scroll-margin-right, $kendo-utils-scroll-margin );
+@include generate-utils( scroll-mb, scroll-margin-bottom, $kendo-utils-scroll-margin );
+@include generate-utils( scroll-ml, scroll-margin-left, $kendo-utils-scroll-margin );
+@include generate-utils( scroll-mx, scroll-margin-inline, $kendo-utils-scroll-margin );
+@include generate-utils( scroll-my, scroll-margin-block, $kendo-utils-scroll-margin );
+
+
+$kendo-utils-scroll-padding: map-get( $kendo-utils, "scroll-padding" ) !default;
+
+@include generate-utils( scroll-p, scroll-padding, $kendo-utils-scroll-padding );
+@include generate-utils( scroll-pt, scroll-padding-top, $kendo-utils-scroll-padding );
+@include generate-utils( scroll-pr, scroll-padding-right, $kendo-utils-scroll-padding );
+@include generate-utils( scroll-pb, scroll-padding-bottom, $kendo-utils-scroll-padding );
+@include generate-utils( scroll-pl, scroll-padding-left, $kendo-utils-scroll-padding );
+@include generate-utils( scroll-px, scroll-padding-inline, $kendo-utils-scroll-padding );
+@include generate-utils( scroll-py, scroll-padding-block, $kendo-utils-scroll-padding );

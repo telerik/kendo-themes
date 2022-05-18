@@ -1,0 +1,5 @@
+// TODO DOCS
+
+$kendo-utils-justify-items: map-get( $kendo-utils, "justify-items" ) !default;
+
+@include generate-utils( justify-items, justify-items, $kendo-utils-justify-items );

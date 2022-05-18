@@ -1,0 +1,19 @@
+/// @name .k-resize
+/// @description This is equivalent to `resize: both;`. The element displays a mechanism for allowing the user to resize it, which may be resized both horizontally and vertically.
+/// @group resize
+
+/// @name .k-resize-none
+/// @description This is equivalent to `resize: none;`. The element offers no user-controllable method for resizing it.
+/// @group resize
+
+/// @name .k-resize-x
+/// @description This is equivalent to `resize: horizontal;`. The element displays a mechanism for allowing the user to resize it in the horizontal direction.
+/// @group resize
+
+/// @name .k-resize-y
+/// @description This is equivalent to `resize: vertical;`. The element displays a mechanism for allowing the user to resize it in the vertical direction.
+/// @group resize
+
+$kendo-utils-resize: map-get( $kendo-utils, "resize" ) !default;
+
+@include generate-utils( resize, resize, $kendo-utils-resize );

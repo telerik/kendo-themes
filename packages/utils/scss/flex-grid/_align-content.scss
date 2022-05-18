@@ -1,0 +1,5 @@
+// TODO DOCS
+
+$kendo-utils-align-content: map-get( $kendo-utils, "align-content" ) !default;
+
+@include generate-utils( align-content, align-content, $kendo-utils-align-content );

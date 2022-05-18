@@ -1,0 +1,17 @@
+// TODO DOCS
+
+/// @name k-text-lowercase
+/// @description This is equivalent to `text-transform: lowercase;`. Is a keyword that converts all characters to lowercase.
+/// @group text-transform
+
+/// @name k-text-uppercase
+/// @description This is equivalent to `text-transform: uppercase;`. Is a keyword that converts all characters to uppercase.
+/// @group text-transform
+
+/// @name k-text-capitalize
+/// @description This is equivalent to `text-transform: capitalize;`. Is a keyword that converts the first letter of each word to uppercase. Other characters remain unchanged (they retain their original case as written in the element's text).
+/// @group text-transform
+
+$kendo-utils-text-transform: map-get( $kendo-utils, "text-transform" ) !default;
+
+@include generate-utils( text, text-transform, $kendo-utils-text-transform );

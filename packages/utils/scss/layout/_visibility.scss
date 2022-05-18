@@ -1,0 +1,11 @@
+// TODO DOCS
+
+$kendo-utils-visibility: map-get( $kendo-utils, "visibility" ) !default;
+
+@include generate-utils( visibility, visibility, $kendo-utils-visibility );
+
+// Aliases
+.#{$kendo-prefix}visible { @extend .#{$kendo-prefix}visibility-visible !optional; }
+.\!#{$kendo-prefix}visible { @extend .\!#{$kendo-prefix}visibility-visible !optional; }
+.#{$kendo-prefix}invisible { @extend .#{$kendo-prefix}visibility-hidden !optional; }
+.\!#{$kendo-prefix}invisible { @extend .\!#{$kendo-prefix}visibility-hidden !optional; }

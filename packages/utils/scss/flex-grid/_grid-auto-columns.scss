@@ -1,0 +1,5 @@
+// TODO DOCS
+
+$kendo-utils-grid-auto-columns: map-get( $kendo-utils, "grid-auto-columns" ) !default;
+
+@include generate-utils( grid-auto-cols, grid-auto-columns, $kendo-utils-grid-auto-columns );

@@ -1,0 +1,15 @@
+// TODO DOCS
+
+$kendo-utils-grid-row-start: map-get( $kendo-utils, "grid-row-start" ) !default;
+
+@include generate-utils( row-start, grid-row-start, $kendo-utils-grid-row-start );
+
+
+$kendo-utils-grid-row-end: map-get( $kendo-utils, "grid-row-end" ) !default;
+
+@include generate-utils( row-end, grid-row-end, $kendo-utils-grid-row-end );
+
+
+$kendo-utils-grid-row-span: map-get( $kendo-utils, "grid-row-span" ) !default;
+
+@include generate-utils( row-span, grid-row, $kendo-utils-grid-row-span );

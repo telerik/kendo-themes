@@ -1,0 +1,27 @@
+/// @name .k-white-space-normal
+/// @description This is equivalent to `white-space: normal;`. Sequences of white space are collapsed. Newline characters in the source are handled the same as other white space. Lines are broken as necessary to fill line boxes.
+/// @group white-space
+
+/// @name .k-white-space-nowrap
+/// @description This is equivalent to `white-space: nowrap;`. Collapses white space as for normal, but suppresses line breaks (text wrapping) within the source.
+/// @group white-space
+
+/// @name .k-white-space-pre
+/// @description This is equivalent to `white-space: pre;`. Sequences of white space are preserved. Lines are only broken at newline characters in the source and at <br> elements.
+/// @group white-space
+
+/// @name .k-white-space-pre-wrap
+/// @description This is equivalent to `white-space: pre-wrap;`. Sequences of white space are preserved. Lines are broken at newline characters, at <br>, and as necessary to fill line boxes.
+/// @group white-space
+
+/// @name .k-white-space-pre-line
+/// @description This is equivalent to `white-space: pre-line;`. Sequences of white space are collapsed. Lines are broken at newline characters, at <br>, and as necessary to fill line boxes.
+/// @group white-space
+
+/// @name .k-white-space-break-spaces
+/// @description This is equivalent to `white-space: break-spaces;`. Collapses white space as for normal, but suppresses line breaks (text wrapping) within the source.
+/// @group white-space
+
+$kendo-utils-white-space: map-get( $kendo-utils, "white-space" ) !default;
+
+@include generate-utils( white-space, white-space, $kendo-utils-white-space );

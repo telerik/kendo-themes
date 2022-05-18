@@ -1,0 +1,5 @@
+// TODO DOCS
+
+$kendo-utils-font-weight: map-get( $kendo-utils, "font-weight" ) !default;
+
+@include generate-utils( font, font-weight, $kendo-utils-font-weight );

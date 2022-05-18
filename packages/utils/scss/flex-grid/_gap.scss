@@ -1,0 +1,5 @@
+// TODO DOCS
+
+$kendo-utils-gap: map-get( $kendo-utils, "gap" ) !default;
+
+@include generate-utils( gap, gap, $kendo-utils-gap );
