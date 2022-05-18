@@ -5,7 +5,7 @@
         margin: 0;
         padding: 0;
         border-width: $panelbar-border-width;
-        border-style: solid;
+        border-style: $panelbar-border-style;
         box-sizing: border-box;
         outline: 0;
         font-family: $panelbar-font-family;
