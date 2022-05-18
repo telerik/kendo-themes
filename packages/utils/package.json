@@ -1,0 +1,45 @@
+{
+  "name": "@progress/kendo-theme-utils",
+  "description": "Utility first library alongside Kendo UI",
+  "version": "5.4.2-dev.1",
+  "author": "Progress",
+  "license": "Apache-2.0",
+  "keywords": [
+    "Kendo UI",
+    "Theme",
+    "utils",
+    "css variables"
+  ],
+  "main": "dist/index.css",
+  "sass": "scss/index.scss",
+  "files": [
+    "dist/",
+    "scss/",
+    "lib/"
+  ],
+  "homepage": "https://github.com/telerik/kendo-themes/tree/master/packages/utils",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/telerik/kendo-themes.git",
+    "directory": "packages/utils"
+  },
+  "bugs": {
+    "url": "https://github.com/telerik/kendo-themes/issues/new?labels=bug,T:utils&template=bug_report.md"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "sass": "gulp sass",
+    "sass:watch": "gulp sass:watch",
+    "sass:swatches": "gulp sass:swatches",
+    "sass:flat": "gulp sass:flat",
+    "dart": "gulp dart",
+    "dart:watch": "gulp dart:watch",
+    "dart:swatches": "gulp dart:swatches",
+    "dart:flat": "gulp dart:flat",
+    "prepublishOnly": "node ../../scripts/themes-prepublish.js",
+    "postpublish": "echo 'no postpublish for utils'"
+  },
+  "dependencies": {}
+}

@@ -1,0 +1,5 @@
+// TODO DOCS
+
+$kendo-utils-outline-offset: map-get( $kendo-utils, "outline-offset" ) !default;
+
+@include generate-utils( outline-offset, outline-offset, $kendo-utils-outline-offset );

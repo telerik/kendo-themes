@@ -1,0 +1,19 @@
+/// @name .k-flex-1
+/// @description This is equivalent to `flex: 1 1 0%`. It sizes the item not based on its `width`/`height` properties, but based on the available space. This is similar to `flex: 1 1 auto` except it is allowed to shrink beyond its initial size.
+/// @group flex
+
+/// @name .k-flex-auto
+/// @description This is equivalent to `flex: 1 1 auto`. Beware, this is not the default value. It sizes the item based on its `width`/`height` properties, but makes it fully flexible so that they absorb any extra space along the main axis. If all items are either `flex: auto`, `flex: initial`, or `flex: none`, any remaining space after the items have been sized will be distributed evenly to the items with `flex: auto`.
+/// @group flex
+
+/// @name .k-flex-initial
+/// @description This is the same as `flex: initial;` and the shorthand for the default value: `flex: 0 1 auto`. It sizes the item based on its `width`/`height` properties (or its content if not set). It makes the flex item inflexible when there is some free space left, but allows it to shrink to its minimum when there is not enough space. The alignment abilities or `auto` margins can be used to align flex items along the main axis.
+/// @group flex
+
+/// @name .k-flex-none
+/// @description This is equivalent to `flex: 0 0 auto`. It sizes the item according to its `width`/`height` properties, but makes it fully inflexible. This is similar to `flex: initial` except it is not allowed to shrink, even in an overflow situation.
+/// @group flex
+
+$kendo-utils-flex: map-get( $kendo-utils, "flex" ) !default;
+
+@include generate-utils( flex, flex, $kendo-utils-flex );

@@ -1,0 +1,11 @@
+/// @name .k-pointer-events-none
+/// @description This is equivalent to `pointer-events: none;`. The element is never the target of pointer events; however, pointer events may target its descendant elements if those descendants have pointer-events set to some other value. In these circumstances, pointer events will trigger event listeners on this parent element as appropriate on their way to/from the descendant during the event capture/bubble phases.
+/// @group pointer-events
+
+/// @name .k-pointer-events-auto
+/// @description This is equivalent to `pointer-events: auto;`. The element behaves as it would if the pointer-events property were not specified. In SVG content, this value and the value visiblePainted have the same effect.
+/// @group pointer-events
+
+$kendo-utils-pointer-events: map-get( $kendo-utils, "pointer-events" ) !default;
+
+@include generate-utils( pointer-events, pointer-events, $kendo-utils-pointer-events );

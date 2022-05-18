@@ -1,0 +1,13 @@
+// TODO DOCS
+
+$kendo-utils-border-radius: map-get( $kendo-utils, "border-radius" ) !default;
+
+@include generate-utils( rounded, border-radius, $kendo-utils-border-radius );
+@include generate-utils( rounded-tl, border-top-left-radius, $kendo-utils-border-radius );
+@include generate-utils( rounded-tr, border-top-right-radius, $kendo-utils-border-radius );
+@include generate-utils( rounded-br, border-bottom-right-radius, $kendo-utils-border-radius );
+@include generate-utils( rounded-bl, border-bottom-left-radius, $kendo-utils-border-radius );
+@include generate-utils( rounded-t, ( border-top-left-radius, border-top-right-radius ), $kendo-utils-border-radius );
+@include generate-utils( rounded-r, ( border-top-right-radius, border-bottom-right-radius ), $kendo-utils-border-radius );
+@include generate-utils( rounded-b, ( border-bottom-left-radius, border-bottom-right-radius ), $kendo-utils-border-radius );
+@include generate-utils( rounded-l, ( border-top-left-radius, border-bottom-left-radius ), $kendo-utils-border-radius );

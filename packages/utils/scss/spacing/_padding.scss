@@ -1,0 +1,11 @@
+// TODO DOCS
+
+$kendo-utils-padding: map-get( $kendo-utils, "padding" ) !default;
+
+@include generate-utils( p, padding, $kendo-utils-padding );
+@include generate-utils( pt, padding-top, $kendo-utils-padding );
+@include generate-utils( pr, padding-right, $kendo-utils-padding );
+@include generate-utils( pb, padding-bottom, $kendo-utils-padding );
+@include generate-utils( pl, padding-left, $kendo-utils-padding );
+@include generate-utils( px, padding-inline, $kendo-utils-padding );
+@include generate-utils( py, padding-block, $kendo-utils-padding );

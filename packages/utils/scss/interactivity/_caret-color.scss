@@ -1,0 +1,5 @@
+// TODO DOCS
+
+$kendo-utils-caret-color: map-get( $kendo-utils, "caret-color" ) !default;
+
+@include generate-utils( caret, caret-color, $kendo-utils-caret-color );

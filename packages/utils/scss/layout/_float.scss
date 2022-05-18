@@ -1,0 +1,5 @@
+// TODO DOCS
+
+$kendo-utils-float: map-get( $kendo-utils, "float" ) !default;
+
+@include generate-utils( float, float, $kendo-utils-float );

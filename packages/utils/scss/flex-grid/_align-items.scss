@@ -1,0 +1,5 @@
+// TODO DOCS
+
+$kendo-utils-align-items: map-get( $kendo-utils, "align-items" ) !default;
+
+@include generate-utils( align-items, align-items, $kendo-utils-align-items );

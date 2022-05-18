@@ -1,0 +1,5 @@
+// TODO DOCS
+
+$kendo-utils-border-collapse: map-get( $kendo-utils, "border-collapse" ) !default;
+
+@include generate-utils( border, border-collapse, $kendo-utils-border-collapse );

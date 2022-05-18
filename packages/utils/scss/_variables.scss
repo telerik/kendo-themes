@@ -1,0 +1,754 @@
+$kendo-prefix: k- !default;
+$kendo-important: true !default;
+$kendo-colors: () !default;
+$kendo-spacing: (
+    0: 0,
+    0.5: .125rem, // sass-lint:disable-line leading-zero
+    1: .25rem,
+    1.5: .375rem,
+    2: .5rem,
+    2.5: 6.25rem,
+    3: .75rem,
+    3.5: .875rem,
+    4: 1rem,
+    5: 1.25rem,
+    6: 1.5rem,
+    7: 1.75rem,
+    8: 2rem,
+    9: 2.25rem,
+    10: 2.5rem,
+    11: 2.75rem,
+    12: 3rem,
+    14: 3.5rem,
+    16: 4rem,
+    20: 5rem,
+    24: 6rem,
+    px: 1px,
+    thin: .125rem,
+    hair: .0625rem
+) !default;
+$kendo-sizing: map-merge( $kendo-spacing, (
+    // sass-lint:disable-block indentation
+    "auto": auto,
+    "1/2": 50%,
+    "1/3": 33.333333%,
+    "2/3": 66.666667%,
+    "1/4": 25%,
+    "2/4": 50%,
+    "3/4": 75%,
+    "1/5": 20%,
+    "2/5": 40%,
+    "3/5": 60%,
+    "4/5": 80%,
+    "1/6": 16.666667%,
+    "2/6": 33.333333%,
+    "3/6": 50%,
+    "4/6": 66.666667%,
+    "5/6": 83.333333%,
+    "1/12": 8.333333%,
+    "2/12": 16.666667%,
+    "3/12": 25%,
+    "4/12": 33.333333%,
+    "5/12": 41.666667%,
+    "6/12": 50%,
+    "7/12": 58.333333%,
+    "8/12": 66.666667%,
+    "9/12": 75%,
+    "10/12": 83.333333%,
+    "11/12": 91.666667%,
+    "full": 100%,
+    "min": min-content,
+    "max": max-content,
+    "fit": fit-content
+)) !default;
+
+//
+
+$kendo-utils: (
+
+    // Accessibility
+    "screen-readers": true,
+
+    // Layout
+    "aspect-ratio": (
+        auto: auto,
+        square: unquote("1 / 1"),
+        video: unquote("16 / 9")
+    ),
+    "container": (),
+    "columns": (),
+    "break-after": (),
+    "break-before": (),
+    "break-inside": (),
+    "box-decoration-break": (),
+    "box-sizing": (),
+    "display": (
+        none,
+        block,
+        inline,
+        inline-block,
+        flex,
+        inline-flex,
+        grid,
+        inline-grid,
+        table,
+        inline-table,
+        list-item
+    ),
+    "float": (
+        left,
+        right,
+        none
+    ),
+    "clear": (
+        left,
+        right,
+        both,
+        none
+    ),
+    "isolation": (),
+    "object-fit": (),
+    "object-position": (),
+    "overflow": (
+        auto: auto,
+        hidden: hidden,
+        visible: visible,
+        scroll: scroll,
+        clip: clip,
+        x-auto: auto,
+        x-hidden: hidden,
+        x-visible: visible,
+        x-scroll: scroll,
+        x-clip: clip,
+        y-auto: auto,
+        y-hidden: hidden,
+        y-visible: visible,
+        y-scroll: scroll,
+        y-clip: clip
+    ),
+    "overscroll": (),
+    "position": (
+        static,
+        relative,
+        absolute,
+        fixed,
+        sticky
+    ),
+    "inset": (
+        0: 0,
+        1: 1px,
+        -1: -1px
+    ),
+    "visibility": (
+        visible,
+        hidden
+    ),
+    "zindex": (
+        0: 0,
+        10: 10,
+        20: 20,
+        30: 30,
+        40: 40,
+        50: 50,
+        auto: auto
+    ),
+
+    // Flex / Grid
+    "flex-direction": (
+        row: row,
+        row-reverse: row-reverse,
+        col: column,
+        col-reverse: column
+    ),
+    "flex-wrap": (
+        wrap,
+        wrap-reverse,
+        nowrap
+    ),
+    "flex": (
+        1: 1 1 0%,
+        auto: 1 1 auto,
+        initial: 0 1 auto,
+        none: none
+    ),
+    "flex-grow": (
+        DEFAULT: 1,
+        0: 0
+    ),
+    "flex-shrink": (
+        DEFAULT: 1,
+        0: 0
+    ),
+    "flex-basis": $kendo-sizing,
+    "order": (
+        1: 1,
+        2: 2,
+        3: 3,
+        4: 4,
+        5: 5,
+        6: 6,
+        7: 7,
+        8: 8,
+        9: 9,
+        10: 10,
+        11: 11,
+        12: 12,
+        first: -9999,
+        last: 9999,
+        none: 0
+    ),
+    "grid-template-columns": (
+        1: repeat( 1, minmax( 0, 1fr ) ),
+        2: repeat( 2, minmax( 0, 1fr ) ),
+        3: repeat( 3, minmax( 0, 1fr ) ),
+        4: repeat( 4, minmax( 0, 1fr ) ),
+        5: repeat( 5, minmax( 0, 1fr ) ),
+        6: repeat( 6, minmax( 0, 1fr ) ),
+        7: repeat( 7, minmax( 0, 1fr ) ),
+        8: repeat( 8, minmax( 0, 1fr ) ),
+        9: repeat( 9, minmax( 0, 1fr ) ),
+        10: repeat( 10, minmax( 0, 1fr ) ),
+        11: repeat( 11, minmax( 0, 1fr ) ),
+        12: repeat( 12, minmax( 0, 1fr ) ),
+        none: none
+    ),
+    "grid-template-rows": (
+        1: repeat( 1, minmax( 0, 1fr ) ),
+        2: repeat( 2, minmax( 0, 1fr ) ),
+        3: repeat( 3, minmax( 0, 1fr ) ),
+        4: repeat( 4, minmax( 0, 1fr ) ),
+        5: repeat( 5, minmax( 0, 1fr ) ),
+        6: repeat( 6, minmax( 0, 1fr ) ),
+        7: repeat( 7, minmax( 0, 1fr ) ),
+        8: repeat( 8, minmax( 0, 1fr ) ),
+        9: repeat( 9, minmax( 0, 1fr ) ),
+        10: repeat( 10, minmax( 0, 1fr ) ),
+        11: repeat( 11, minmax( 0, 1fr ) ),
+        12: repeat( 12, minmax( 0, 1fr ) ),
+        none: none
+    ),
+    "grid-column-start": (
+        1: 1,
+        2: 2,
+        3: 3,
+        4: 4,
+        5: 5,
+        6: 6,
+        7: 7,
+        8: 8,
+        9: 9,
+        10: 10,
+        11: 11,
+        12: 12,
+        13: 13,
+        auto: auto
+    ),
+    "grid-column-end": (
+        1: 1,
+        2: 2,
+        3: 3,
+        4: 4,
+        5: 5,
+        6: 6,
+        7: 7,
+        8: 8,
+        9: 9,
+        10: 10,
+        11: 11,
+        12: 12,
+        13: 13,
+        auto: auto
+    ),
+    "grid-column-span": (
+        1: span 1 / span 1,
+        2: span 2 / span 2,
+        3: span 3 / span 3,
+        4: span 4 / span 4,
+        5: span 5 / span 5,
+        6: span 6 / span 6,
+        7: span 7 / span 7,
+        8: span 8 / span 8,
+        9: span 9 / span 9,
+        10: span 10 / span 10,
+        11: span 11 / span 11,
+        12: span 12 / span 12,
+        full: span 1 / span -1,
+        auto: auto
+    ),
+    "grid-row-start": (
+        1: 1,
+        2: 2,
+        3: 3,
+        4: 4,
+        5: 5,
+        6: 6,
+        7: 7,
+        8: 8,
+        9: 9,
+        10: 10,
+        11: 11,
+        12: 12,
+        13: 13,
+        auto: auto
+    ),
+    "grid-row-end": (
+        1: 1,
+        2: 2,
+        3: 3,
+        4: 4,
+        5: 5,
+        6: 6,
+        7: 7,
+        8: 8,
+        9: 9,
+        10: 10,
+        11: 11,
+        12: 12,
+        13: 13,
+        auto: auto
+    ),
+    "grid-row-span": (
+        1: span 1 / span 1,
+        2: span 2 / span 2,
+        3: span 3 / span 3,
+        4: span 4 / span 4,
+        5: span 5 / span 5,
+        6: span 6 / span 6,
+        7: span 7 / span 7,
+        8: span 8 / span 8,
+        9: span 9 / span 9,
+        10: span 10 / span 10,
+        11: span 11 / span 11,
+        12: span 12 / span 12,
+        full: span 1 / span -1,
+        auto: auto
+    ),
+    "grid-auto-flow": (
+        row: row,
+        col: column,
+        row-dense: row dense,
+        col-dense: column dense
+    ),
+    "grid-auto-columns": (
+        auto: auto,
+        min: min-content,
+        max: max-content,
+        fr: minmax( 0, 1fr ),
+    ),
+    "grid-auto-rows": (
+        auto: auto,
+        min: min-content,
+        max: max-content,
+        fr: minmax( 0, 1fr ),
+    ),
+    "gap": $kendo-spacing,
+    "align-content": (
+        normal: normal,
+        stretch: stretch,
+        start: flex-start,
+        end: flex-end,
+        center: center,
+        between: between,
+        around: around,
+        evenly: evenly
+    ),
+    "align-items": (
+        normal: normal,
+        start: flex-start,
+        end: flex-end,
+        center: center,
+        between: between,
+        around: around,
+        evenly: evenly,
+        stretch: stretch
+    ),
+    "align-self": (
+        auto: auto,
+        normal: normal,
+        stretch: stretch,
+        start: flex-start,
+        end: flex-end,
+        center: center
+    ),
+    "justify-content": (
+        normal: normal,
+        start: flex-start,
+        end: flex-end,
+        center: center,
+        between: between,
+        around: around,
+        evenly: evenly,
+        stretch: stretch
+    ),
+    "justify-items": (
+        normal: normal,
+        start: flex-start,
+        end: flex-end,
+        center: center,
+        between: between,
+        around: around,
+        evenly: evenly,
+        stretch: stretch
+    ),
+    "justify-self": (
+        auto: auto,
+        normal: normal,
+        start: flex-start,
+        end: flex-end,
+        center: center,
+        stretch: stretch
+    ),
+    "place-content": (
+        normal: normal,
+        start: flex-start,
+        end: flex-end,
+        center: center,
+        between: between,
+        around: around,
+        evenly: evenly,
+        stretch: stretch
+    ),
+    "place-items": (
+        normal: normal,
+        start: flex-start,
+        end: flex-end,
+        center: center,
+        between: between,
+        around: around,
+        evenly: evenly,
+        stretch: stretch
+    ),
+    "place-self": (
+        auto: auto,
+        normal: normal,
+        start: flex-start,
+        end: flex-end,
+        center: center,
+        stretch: stretch
+    ),
+
+    // Spacing
+    "margin": $kendo-spacing,
+    "padding": $kendo-spacing,
+    "space-between": (),
+
+    // Sizing
+    "width": map-merge( $kendo-sizing, (
+        // sass-lint:disable-block indentation
+        screen: 100vw
+    )),
+    "min-width": (
+        0: 0,
+        full: 100%,
+        screen: 100vw,
+        min: min-content,
+        max: max-content,
+        fit: fit-content
+    ),
+    "max-width": (
+        none: none,
+        0: 0,
+        full: 100%,
+        screen: 100vw,
+        min: min-content,
+        max: max-content,
+        fit: fit-content
+    ),
+    "height": map-merge( $kendo-sizing, (
+        // sass-lint:disable-block indentation
+        screen: 100vh
+    )),
+    "min-height": (
+        0: 0,
+        full: 100%,
+        screen: 100vh,
+        min: min-content,
+        max: max-content,
+        fit: fit-content
+    ),
+    "max-height": (
+        none: none,
+        0: 0,
+        full: 100%,
+        screen: 100vh,
+        min: min-content,
+        max: max-content,
+        fit: fit-content
+    ),
+
+    // Typography
+    "font-family": (),
+    "font-size": (),
+    "font-smoothing": (),
+    "font-style": (
+        italic: italic,
+        non-italic: normal
+    ),
+    "font-weight": (
+        "thin": 100,
+        "extralight": 200,
+        "light": 300,
+        "normal": 400,
+        "medium": 500,
+        "semibold": 600,
+        "bold": 700,
+        "extrabold": 800,
+        "black": 900
+    ),
+    "font-variant-numeric": (),
+    "letter-spacing": (),
+    "line-height": (),
+    "list-style-type": (),
+    "list-style-position": (),
+    "text-align": (
+        left,
+        right,
+        center,
+        justify
+    ),
+    "text-color": (),
+    "text-decoration": (),
+    "text-decoration-width": (),
+    "text-decoration-style": (),
+    "text-decoration-color": (),
+    "text-decoration-offset": (),
+    "text-transform": (
+        uppercase: uppercase,
+        lowercase: lowercase,
+        capitalize: capitalize,
+        normal-case: none
+    ),
+    "text-overflow": (),
+    "text-indent": (),
+    "vertical-align": (),
+    "white-space": (
+        normal,
+        nowrap,
+        pre,
+        pre-line,
+        pre-wrap,
+        break-spaces
+    ),
+    "word-break": (),
+
+    // Background
+
+    // Border
+    "border-width": (
+        DEFAULT: 1px,
+        0: 0,
+        2: 2px,
+        4: 4px,
+        8: 8px
+    ),
+    "border-style": (
+        solid,
+        dashed,
+        dotted,
+        double,
+        hidden,
+        none
+    ),
+    "border-color": (),
+    "border-radius": (
+        DEFAULT: .25rem,
+        0: 0,
+        sm: .125rem,
+        md: .25rem,
+        lg: .5rem,
+        none: 0,
+        full: 9999px
+    ),
+    "outline-width": (
+        DEFAULT: 1px,
+        0: 0,
+        2: 2px,
+        4: 4px,
+        8: 8px
+    ),
+    "outline-style": (
+        solid,
+        dashed,
+        dotted,
+        double,
+        hidden,
+        none
+    ),
+    "outline-color": (),
+    "outline-offset": (
+        0: 0,
+        1: 1px,
+        2: 2px,
+        4: 4px,
+        8: 8px
+    ),
+
+    // Effects
+
+    // Filter
+
+    // Table
+    "border-collapse": (
+        collapse,
+        separate
+    ),
+    "table-layout": (
+        auto,
+        fixed
+    ),
+
+    // Transition
+
+    // Transform
+    "flip": true,
+    "scale": (
+        0,
+        .25,
+        .5,
+        .75,
+        1,
+        1.25,
+        1.5
+    ),
+    "rotate": (
+        0: 0deg,
+        45: 45deg,
+        90: 90deg,
+        135: 135deg,
+        180: 180deg,
+        225: 225deg,
+        270: 270deg,
+        315: 315deg
+    ),
+    "translate": $kendo-sizing,
+    "skew": (
+        0: 0deg,
+        1: 1deg,
+        2: 2deg,
+        3: 3deg,
+        4: 4deg,
+        5: 5deg,
+        6: 6deg,
+        7: 7deg,
+        8: 8deg,
+        9: 9deg,
+        10: 10deg,
+        11: 11deg,
+        12: 12deg
+    ),
+    "origin": (
+        center: center,
+        top: top,
+        right: right,
+        bottom: bottom,
+        left: left,
+        top-left: top left,
+        top-right: top right,
+        bottom-left: bottom left,
+        bottom-right: bottom right
+    ),
+
+
+    // Interactivity
+    "accent-color": (),
+    "appearance": (
+        none,
+        auto
+    ),
+    "cursor": (
+        none,
+        auto,
+        default,
+        context-menu,
+        help,
+        pointer,
+        progress,
+        wait,
+        cell,
+        crosshair,
+        text,
+        vertical-text,
+        alias,
+        copy,
+        move,
+        no-drop,
+        not-allowed,
+        e-resize,
+        n-resize,
+        ne-resize,
+        nw-resize,
+        s-resize,
+        se-resize,
+        sw-resize,
+        w-resize,
+        ew-resize,
+        ns-resize,
+        nesw-resize,
+        nwse-resize,
+        col-resize,
+        row-resize,
+        all-scroll,
+        zoom-in,
+        zoom-out,
+        grab,
+        grabbing
+    ),
+    "caret-color": (),
+    "pointer-events": (
+        none,
+        auto
+    ),
+    "resize": (
+        DEFAULT: both,
+        none: none,
+        x: horizontal,
+        y: vertical
+    ),
+    "scroll-behavior": (
+        auto,
+        smooth
+    ),
+    "scroll-snap-type": (
+        none: none,
+        snap-x: x var(--#{$kendo-prefix}scroll-snap-strictness),
+        snap-y: y var(--#{$kendo-prefix}scroll-snap-strictness),
+        snap-both: both var(--#{$kendo-prefix}scroll-snap-strictness)
+    ),
+    "scroll-snap-align": (
+        start,
+        end,
+        center,
+        none
+    ),
+    "scroll-snap-stop": (
+        normal,
+        always
+    ),
+    "scroll-margin": $kendo-spacing,
+    "scroll-padding": $kendo-spacing,
+    "touch-action": (
+        none,
+        auto,
+        pan-x,
+        pan-left,
+        pan-right,
+        pan-y,
+        pan-up,
+        pan-down,
+        pinch-zoom,
+        manipulation
+    ),
+    "user-select": (
+        none,
+        auto,
+        text,
+        all,
+        contain
+    ),
+    "will-change": (
+        auto: auto,
+        scroll: scroll-position,
+        contents: contents,
+        transform: transform
+    )
+) !default;

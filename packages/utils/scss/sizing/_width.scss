@@ -1,0 +1,15 @@
+// TODO DOCS
+
+$kendo-utils-width: map-get( $kendo-utils, "width" ) !default;
+
+@include generate-utils( w, width, $kendo-utils-width );
+
+
+$kendo-utils-min-width: map-get( $kendo-utils, "min-width" ) !default;
+
+@include generate-utils( min-w, min-width, $kendo-utils-min-width );
+
+
+$kendo-utils-max-width: map-get( $kendo-utils, "max-width" ) !default;
+
+@include generate-utils( max-w, max-width, $kendo-utils-max-width );

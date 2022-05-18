@@ -1,0 +1,11 @@
+// TODO DOCS
+
+$kendo-utils-border-width: map-get( $kendo-utils, "border-width" ) !default;
+
+@include generate-utils( border, border-width, $kendo-utils-border-width );
+@include generate-utils( border-t, border-top-width, $kendo-utils-border-width );
+@include generate-utils( border-r, border-right-width, $kendo-utils-border-width );
+@include generate-utils( border-b, border-bottom-width, $kendo-utils-border-width );
+@include generate-utils( border-l, border-left-width, $kendo-utils-border-width );
+@include generate-utils( border-x, border-inline-width, $kendo-utils-border-width );
+@include generate-utils( border-y, border-block-width, $kendo-utils-border-width );

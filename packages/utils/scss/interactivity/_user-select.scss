@@ -1,0 +1,23 @@
+/// @name .k-user-select-auto
+/// @description This is equivalent to `user-select: auto;`. This is the default value of the `user-select` property.
+/// @group user-select
+
+/// @name .k-user-select-none
+/// @description This is equivalent to `user-select: none;`. The text of the element and its sub-elements is not selectable. Note that the Selection object can contain these elements.
+/// @group user-select
+
+/// @name .k-user-select-text
+/// @description This is equivalent to `user-select: text;`. The text can be selected by the user.
+/// @group user-select
+
+/// @name .k-user-select-all
+/// @description This is equivalent to `user-select: all;`. The content of the element shall be selected atomically: If a selection would contain part of the element, then the selection must contain the entire element including all its descendants.  If a double-click or context-click occurred in sub-elements, the highest ancestor with this value will be selected.
+/// @group user-select
+
+/// @name .k-user-select-contain
+/// @description This is equivalent to `user-select: contain;`. Enables selection to start within the element; however, the selection will be contained by the bounds of that element.
+/// @group user-select
+
+$kendo-utils-user-select: map-get( $kendo-utils, "user-select" ) !default;
+
+@include generate-utils( user-select, user-select, $kendo-utils-user-select );

@@ -1,0 +1,5 @@
+// TODO DOCS
+
+$kendo-utils-accent-color: map-get( $kendo-utils, "accent-color" ) !default;
+
+@include generate-utils( accent-color, accent-color, $kendo-utils-accent-color );

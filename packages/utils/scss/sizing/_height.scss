@@ -1,0 +1,15 @@
+// TODO DOCS
+
+$kendo-utils-height: map-get( $kendo-utils, "height" ) !default;
+
+@include generate-utils( h, height, $kendo-utils-height );
+
+
+$kendo-utils-min-height: map-get( $kendo-utils, "min-height" ) !default;
+
+@include generate-utils( min-h, min-height, $kendo-utils-min-height );
+
+
+$kendo-utils-max-height: map-get( $kendo-utils, "max-height" ) !default;
+
+@include generate-utils( max-h, max-height, $kendo-utils-max-height );

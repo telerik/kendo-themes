@@ -1,0 +1,5 @@
+// TODO DOCS
+
+$kendo-utils-grid-auto-flow: map-get( $kendo-utils, "grid-auto-flow" ) !default;
+
+@include generate-utils( grid-flow, grid-auto-flow, $kendo-utils-grid-auto-flow );

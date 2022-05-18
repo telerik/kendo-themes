@@ -1,0 +1,11 @@
+/// @name .k-flex-shrink
+/// @description This is equivalent to `flex-shrink: 1`. It determines how much the flex item will shrink relative to the rest of the flex items in the flex container when there isn't enough space on the row.
+/// @group flex-shrink
+
+/// @name .k-flex-shrink-0
+/// @description This is equivalent to `flex-shrink: 0`. The item will not shrink.
+/// @group flex-shrink
+
+$kendo-utils-flex-shrink: map-get( $kendo-utils, "flex-shrink" ) !default;
+
+@include generate-utils( shrink, flex-shrink, $kendo-utils-flex-shrink );

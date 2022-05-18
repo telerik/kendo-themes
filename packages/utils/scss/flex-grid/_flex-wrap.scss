@@ -1,0 +1,15 @@
+/// @name .k-flex-wrap
+/// @description This is equivalent to `flex-wrap: wrap`. It allows flex items to wrap as needed onto multiple lines, from top to bottom.
+/// @group flex-wrap
+
+/// @name .k-flex-nowrap
+/// @description This is equivalent to `flex-wrap: nowrap`. All flex items will be on one line.
+/// @group flex-wrap
+
+/// @name .k-flex-wrap-reverse
+/// @description This is equivalent to `flex-wrap: wrap-reverse`. It allows flex items to wrap as needed onto multiple lines, from bottom to top.
+/// @group flex-wrap
+
+$kendo-utils-flex-wrap: map-get( $kendo-utils, "flex-wrap" ) !default;
+
+@include generate-utils( flex, flex-wrap, $kendo-utils-flex-wrap );

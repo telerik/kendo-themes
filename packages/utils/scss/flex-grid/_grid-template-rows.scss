@@ -1,0 +1,5 @@
+// TODO DOCS
+
+$kendo-utils-grid-template-rows: map-get( $kendo-utils, "grid-template-rows" ) !default;
+
+@include generate-utils( grid-rows, grid-template-rows, $kendo-utils-grid-template-rows );

@@ -1,0 +1,28 @@
+@mixin generate-utils( $name, $props, $values, $function: "", $important: $kendo-important ) {
+    @if $values {
+        $_props: if( type-of($props) == list, $props, ( $props ) );
+        $_fn: if( function-exists( $function ), get-function( $function ), null );
+
+        @each $key, $val in $values {
+            $_key: escape-class-name( $key );
+            $_val: if( type-of($values) == list, $_key, $val );
+            $_name: escape-class-name( $name );
+            $_selector: if( $_key == DEFAULT, #{$kendo-prefix}#{$_name}, #{$kendo-prefix}#{$_name}-#{$_key});
+
+            @if $important != only {
+                .#{$_selector} {
+                    @each $prop in $_props {
+                        #{$prop}: if( $_fn, call($_fn, $_val), $_val );
+                    }
+                }
+            }
+            @if $important {
+                .\!#{$_selector} {
+                    @each $prop in $_props {
+                        #{$prop}:  if( $_fn, call($_fn, $_val), $_val ) !important; // sass-lint:disable-line no-important
+                    }
+                }
+            }
+        }
+    }
+}

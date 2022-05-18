@@ -1,0 +1,19 @@
+// TODO DOCS
+
+$kendo-utils-scale: map-get( $kendo-utils, "scale" ) !default;
+
+// sass-lint:disable function-name-format
+@function __scale( $val ) {
+    @return scale( $val );
+}
+@function __scale-x( $val ) {
+    @return scaleX( $val );
+}
+@function __scale-y( $val ) {
+    @return scaleY( $val );
+}
+// sass-lint:enable function-name-format
+
+@include generate-utils( scale, transform, $kendo-utils-scale, __scale );
+@include generate-utils( scale-x, transform, $kendo-utils-scale, __scale-x );
+@include generate-utils( scale-y, transform, $kendo-utils-scale, __scale-y );

@@ -1,0 +1,5 @@
+// TODO DOCS
+
+$kendo-utils-origin: map-get( $kendo-utils, "origin" ) !default;
+
+@include generate-utils( origin, transform-origin, $kendo-utils-origin );
