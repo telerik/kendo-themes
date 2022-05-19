@@ -110,6 +110,16 @@
                 flex: 0 0 1px;
             }
 
+            .k-tick-horizontal {
+                width: 1px;
+                min-height: 100%;
+            }
+
+            .k-tick-vertical {
+                width: 100%;
+                min-height: 1px;
+            }
+
             .k-draghandle {
                 position: absolute;
             }
