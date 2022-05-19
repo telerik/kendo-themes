@@ -37,13 +37,13 @@ jobs:
       - name: Build test assets
         run: |
           npm run build:scripts
+          npm run build:tests
           npm run sass:flat -- --theme packages/${{ matrix.theme }}
 
       - name: Update markup snapshots
         env:
           HEADLESS: 'true'
         run: |
-          npm install --no-save @progress/kendo-e2e@0.9
           ./build/create-snapshots.mjs
 
       - name: Pack snapshots

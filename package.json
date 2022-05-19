@@ -4,6 +4,7 @@
     "@commitlint/cli": "^16.2.4",
     "@commitlint/config-conventional": "^16.2.4",
     "@commitlint/core": "^16.2.4",
+    "@progress/kendo-e2e": "^0.10.1",
     "@progress/kendo-font-icons": "0.1.2",
     "@progress/kendo-theme-tasks": "^1.15.1",
     "@typescript-eslint/eslint-plugin": "^5.20.0",
