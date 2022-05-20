@@ -1,12 +1,11 @@
 <!doctype html>
-<html lang="en" class="k-no-animations">
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width:15px;">
 <head>
-    <title>ContextMenu in Window</title>
+    <title>ContextMenu In Window</title>
     <meta charset="utf-8">
     <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
     <link rel="stylesheet" href="/packages/html/assets/styles.css">
     <script src="/packages/html/assets/scripts.js"></script>
-    <script src="/packages/html/dist/index.js"></script>
 </head>
 <body id="app" class="k-body">
     <style>
@@ -14,43 +13,88 @@
             height: 300px;
         }
         .k-animation-container {
+            top: 50px;
+            left: 100px;
             overflow: visible;
             z-index: 12000;
         }
         .k-window {
             position: relative;
         }
-        kendo-popup {
-            top: 50px;
-            left: 100px;
-        }
-
     </style>
     <div id="test-area" class="k-d-grid">
         <section>
-            <kendo-window class="k-widget k-window k-window-wrapper">
-                <kendo-window-titlebar class="k-window-titlebar k-header">
+            <div class="k-widget k-window k-window-wrapper">
+                <div class="k-window-titlebar k-header">
                     <div class="k-window-title">Window</div>
                     <div class="k-window-actions">
-                        <button is="Button" fillMode="flat" icon="window-minimize"></button>
-                        <button is="Button" fillMode="flat" icon="window-maximize"></button>
-                        <button is="Button" fillMode="flat" icon="close"></button>
+                        <button class="k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                            <span class="k-button-icon k-icon k-i-window-minimize"></span>
+                        </button>
+                        <button class="k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                            <span class="k-button-icon k-icon k-i-window-maximize"></span>
+                        </button>
+                        <button class="k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                            <span class="k-button-icon k-icon k-i-close"></span>
+                        </button>
                     </div>
-                </kendo-window-titlebar>
-                <div class="k-window-content">Target</div>
-            </kendo-window>
-            <kendo-popup class="k-animation-container">
-                <div class="k-popup k-menu-popup">
-                    <menu is="MenuList" class="k-context-menu">
-                        <li is="MenuItem" text="Item 1" showArrow></li>
-                        <li is="MenuItem" text="Item 2" showArrow></li>
-                        <li is="MenuItem" text="Item 3" showArrow></li>
-                        <li is="MenuItem" text="Item 4" showArrow></li>
-                        <li is="MenuItem" text="Item 5" showArrow></li>
-                        <li is="MenuItem" text="Item 6" showArrow></li>
-                    </menu>
                 </div>
-            </kendo-popup>
+                <div class="k-window-content">Target</div>
+            </div>
+            <div class="k-animation-container">
+                <div class="k-menu-popup k-popup">
+                    <ul class="k-context-menu k-menu-group k-menu-group-md">
+                        <li class="k-item k-menu-item">
+                            <span class="k-link k-menu-link">
+                                <span class="k-menu-link-text">Item 1</span>
+                                <span class="k-menu-expand-arrow">
+                                    <span class="k-icon k-i-arrow-e"></span>
+                                </span>
+                            </span>
+                        </li>
+                        <li class="k-item k-menu-item">
+                            <span class="k-link k-menu-link">
+                                <span class="k-menu-link-text">Item 2</span>
+                                <span class="k-menu-expand-arrow">
+                                    <span class="k-icon k-i-arrow-e"></span>
+                                </span>
+                            </span>
+                        </li>
+                        <li class="k-item k-menu-item">
+                            <span class="k-link k-menu-link">
+                                <span class="k-menu-link-text">Item 3</span>
+                                <span class="k-menu-expand-arrow">
+                                    <span class="k-icon k-i-arrow-e"></span>
+                                </span>
+                            </span>
+                        </li>
+                        <li class="k-item k-menu-item">
+                            <span class="k-link k-menu-link">
+                                <span class="k-menu-link-text">Item 4</span>
+                                <span class="k-menu-expand-arrow">
+                                    <span class="k-icon k-i-arrow-e"></span>
+                                </span>
+                            </span>
+                        </li>
+                        <li class="k-item k-menu-item">
+                            <span class="k-link k-menu-link">
+                                <span class="k-menu-link-text">Item 5</span>
+                                <span class="k-menu-expand-arrow">
+                                    <span class="k-icon k-i-arrow-e"></span>
+                                </span>
+                            </span>
+                        </li>
+                        <li class="k-item k-menu-item">
+                            <span class="k-link k-menu-link">
+                                <span class="k-menu-link-text">Item 6</span>
+                                <span class="k-menu-expand-arrow">
+                                    <span class="k-icon k-i-arrow-e"></span>
+                                </span>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </section>
     </div>
 </body>

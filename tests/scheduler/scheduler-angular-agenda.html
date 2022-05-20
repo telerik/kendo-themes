@@ -1,35 +1,39 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width:15px;">
 <head>
     <title>Scheduler Angular Agenda</title>
     <meta charset="utf-8">
     <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
     <link rel="stylesheet" href="/packages/html/assets/styles.css">
     <script src="/packages/html/assets/scripts.js"></script>
-    <script src="/packages/html/dist/index.js"></script>
 </head>
 <body id="app" class="k-body">
     <style>
         #test-area {
             max-width: 1200px;
-            grid-template-columns: 1fr;
             align-items: top;
         }
 
     </style>
-    <div id="test-area">
-        <kendo-scheduler class="k-widget k-scheduler k-floatwrap">
-            <kendo-scheduler-toolbar class="k-scheduler-toolbar k-toolbar">
+    <div id="test-area" class="k-d-grid k-grid-cols-1">
+        <div class="k-widget k-scheduler k-floatwrap">
+            <div class="k-scheduler-toolbar k-toolbar">
                 <div class="k-toolbar-group">
                     <div class="k-scheduler-navigation">
-                        <kendo-buttongroup class="k-button-group">
-                            <button is="Button">Today</button>
-                            <button is="Button" icon="arrow-60-left"></button>
-                            <button is="Button" icon="arrow-60-right"></button>
-                        </kendo-buttongroup>
+                        <div class="k-button-group">
+                            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                                <span class="k-button-text">Today</span>
+                            </button>
+                            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                                <span class="k-button-icon k-icon k-i-arrow-60-left"></span>
+                            </button>
+                            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                                <span class="k-button-icon k-icon k-i-arrow-60-right"></span>
+                            </button>
+                        </div>
                     </div>
                     <a class="k-nav-current" href="#">
-                        <i is="Icon" name="calendar"></i>
+                        <span class="k-icon k-i-calendar"></span>
                         <span class="k-sm-date-format">6/23/2019 - 6/29/2019</span>
                         <span class="k-lg-date-format">Sunday, June 23, 2019 - Saturday, June 29, 2019</span>
                     </a>
@@ -37,16 +41,26 @@
                 <span class="k-spacer"></span>
                 <div class="k-scheduler-views-wrapper">
                     <select class="k-views-dropdown k-picker k-dropdown-list k-dropdown k-rounded-md"></select>
-                    <kendo-buttongroup class="k-scheduler-views k-button-group">
-                        <button is="Button">Day</button>
-                        <button is="Button">Week</button>
-                        <button is="Button">Month</button>
-                        <button is="Button">Timeline</button>
-                        <button is="Button" selected>Agenda</button>
-                    </kendo-buttongroup>
+                    <div class="k-scheduler-views k-button-group">
+                        <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                            <span class="k-button-text">Day</span>
+                        </button>
+                        <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                            <span class="k-button-text">Week</span>
+                        </button>
+                        <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                            <span class="k-button-text">Month</span>
+                        </button>
+                        <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                            <span class="k-button-text">Timeline</span>
+                        </button>
+                        <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-selected">
+                            <span class="k-button-text">Agenda</span>
+                        </button>
+                    </div>
                 </div>
-            </kendo-scheduler-toolbar>
-            <agenda-view-internal>
+            </div>
+            <div>
                 <table class="k-scheduler-layout k-scheduler-agendaview k-scheduler-agenda">
                     <tbody>
                         <tr>
@@ -79,13 +93,13 @@
                                                 </td>
                                                 <td class="k-scheduler-timecolumn">
                                                     <div>
-                                                        <i is="Icon" name="arrow-w"></i> all day
+                                                        <span class="k-icon k-i-arrow-w"></span> all day
                                                     </div>
                                                 </td>
                                                 <td>
                                                     <div class="k-task">
-                                                        <span class="k-scheduler-mark" style="background-color: rgb(110, 179, 250);"></span> All day event <a class="k-link k-event-delete">
-                                                            <i is="Icon" name="x"></i>
+                                                        <span class="k-scheduler-mark" style="background-color: rgb(110, 179, 250);"></span>All day event<a class="k-link k-event-delete">
+                                                            <span class="k-icon k-i-x"></span>
                                                         </a>
                                                     </div>
                                                 </td>
@@ -96,8 +110,8 @@
                                                 </td>
                                                 <td>
                                                     <div class="k-task">
-                                                        <span class="k-scheduler-mark" style="background-color: rgb(245, 138, 138);"></span> Event 1 <a class="k-link k-event-delete">
-                                                            <i is="Icon" name="x"></i>
+                                                        <span class="k-scheduler-mark" style="background-color: rgb(245, 138, 138);"></span>Event 1<a class="k-link k-event-delete">
+                                                            <span class="k-icon k-i-x"></span>
                                                         </a>
                                                     </div>
                                                 </td>
@@ -108,8 +122,8 @@
                                                 </td>
                                                 <td>
                                                     <div class="k-task">
-                                                        <span class="k-scheduler-mark" style="background-color: rgb(245, 138, 138);"></span> Event 2 <a class="k-link k-event-delete">
-                                                            <i is="Icon" name="x"></i>
+                                                        <span class="k-scheduler-mark" style="background-color: rgb(245, 138, 138);"></span>Event 2<a class="k-link k-event-delete">
+                                                            <span class="k-icon k-i-x"></span>
                                                         </a>
                                                     </div>
                                                 </td>
@@ -120,8 +134,8 @@
                                                 </td>
                                                 <td>
                                                     <div class="k-task">
-                                                        <span class="k-scheduler-mark" style="background-color: rgb(245, 138, 138);"></span> Event 3 <a class="k-link k-event-delete">
-                                                            <i is="Icon" name="x"></i>
+                                                        <span class="k-scheduler-mark" style="background-color: rgb(245, 138, 138);"></span>Event 3<a class="k-link k-event-delete">
+                                                            <span class="k-icon k-i-x"></span>
                                                         </a>
                                                     </div>
                                                 </td>
@@ -132,8 +146,8 @@
                                                 </td>
                                                 <td>
                                                     <div class="k-task">
-                                                        <span class="k-scheduler-mark" style="background-color: rgb(245, 138, 138);"></span> Event 4 <a class="k-link k-event-delete">
-                                                            <i is="Icon" name="x"></i>
+                                                        <span class="k-scheduler-mark" style="background-color: rgb(245, 138, 138);"></span>Event 4<a class="k-link k-event-delete">
+                                                            <span class="k-icon k-i-x"></span>
                                                         </a>
                                                     </div>
                                                 </td>
@@ -144,8 +158,8 @@
                                                 </td>
                                                 <td>
                                                     <div class="k-task">
-                                                        <span class="k-scheduler-mark" style="background-color: rgb(110, 179, 250);"></span> Event 5 <a class="k-link k-event-delete">
-                                                            <i is="Icon" name="x"></i>
+                                                        <span class="k-scheduler-mark" style="background-color: rgb(110, 179, 250);"></span>Event 5<a class="k-link k-event-delete">
+                                                            <span class="k-icon k-i-x"></span>
                                                         </a>
                                                     </div>
                                                 </td>
@@ -156,8 +170,8 @@
                                                 </td>
                                                 <td>
                                                     <div class="k-task">
-                                                        <span class="k-scheduler-mark" style="background-color: rgb(110, 179, 250);"></span> Event 6 <a class="k-link k-event-delete">
-                                                            <i is="Icon" name="x"></i>
+                                                        <span class="k-scheduler-mark" style="background-color: rgb(110, 179, 250);"></span>Event 6<a class="k-link k-event-delete">
+                                                            <span class="k-icon k-i-x"></span>
                                                         </a>
                                                     </div>
                                                 </td>
@@ -168,8 +182,8 @@
                                                 </td>
                                                 <td>
                                                     <div class="k-task">
-                                                        <span class="k-scheduler-mark" style="background-color: rgb(110, 179, 250);"></span> Event 7 <a class="k-link k-event-delete">
-                                                            <i is="Icon" name="x"></i>
+                                                        <span class="k-scheduler-mark" style="background-color: rgb(110, 179, 250);"></span>Event 7<a class="k-link k-event-delete">
+                                                            <span class="k-icon k-i-x"></span>
                                                         </a>
                                                     </div>
                                                 </td>
@@ -180,8 +194,8 @@
                                                 </td>
                                                 <td>
                                                     <div class="k-task">
-                                                        <span class="k-scheduler-mark" style="background-color: rgb(110, 179, 250);"></span> Event 8 <a class="k-link k-event-delete">
-                                                            <i is="Icon" name="x"></i>
+                                                        <span class="k-scheduler-mark" style="background-color: rgb(110, 179, 250);"></span>Event 8<a class="k-link k-event-delete">
+                                                            <span class="k-icon k-i-x"></span>
                                                         </a>
                                                     </div>
                                                 </td>
@@ -194,13 +208,13 @@
                                                 </td>
                                                 <td class="k-scheduler-timecolumn">
                                                     <div>
-                                                        <i is="Icon" name="arrow-w"></i> all day
+                                                        <span class="k-icon k-i-arrow-w"></span> all day
                                                     </div>
                                                 </td>
                                                 <td>
                                                     <div class="k-task">
-                                                        <span class="k-scheduler-mark" style="background-color: rgb(110, 179, 250);"></span> All day event <a class="k-link k-event-delete">
-                                                            <i is="Icon" name="x"></i>
+                                                        <span class="k-scheduler-mark" style="background-color: rgb(110, 179, 250);"></span>All day event<a class="k-link k-event-delete">
+                                                            <span class="k-icon k-i-x"></span>
                                                         </a>
                                                     </div>
                                                 </td>
@@ -211,8 +225,8 @@
                                                 </td>
                                                 <td>
                                                     <div class="k-task">
-                                                        <span class="k-scheduler-mark" style="background-color: rgb(245, 138, 138);"></span> Event 1 <a class="k-link k-event-delete">
-                                                            <i is="Icon" name="x"></i>
+                                                        <span class="k-scheduler-mark" style="background-color: rgb(245, 138, 138);"></span>Event 1<a class="k-link k-event-delete">
+                                                            <span class="k-icon k-i-x"></span>
                                                         </a>
                                                     </div>
                                                 </td>
@@ -223,8 +237,8 @@
                                                 </td>
                                                 <td>
                                                     <div class="k-task">
-                                                        <span class="k-scheduler-mark" style="background-color: rgb(245, 138, 138);"></span> Event 2 <a class="k-link k-event-delete">
-                                                            <i is="Icon" name="x"></i>
+                                                        <span class="k-scheduler-mark" style="background-color: rgb(245, 138, 138);"></span>Event 2<a class="k-link k-event-delete">
+                                                            <span class="k-icon k-i-x"></span>
                                                         </a>
                                                     </div>
                                                 </td>
@@ -235,8 +249,8 @@
                                                 </td>
                                                 <td>
                                                     <div class="k-task">
-                                                        <span class="k-scheduler-mark" style="background-color: rgb(245, 138, 138);"></span> Event 3 <a class="k-link k-event-delete">
-                                                            <i is="Icon" name="x"></i>
+                                                        <span class="k-scheduler-mark" style="background-color: rgb(245, 138, 138);"></span>Event 3<a class="k-link k-event-delete">
+                                                            <span class="k-icon k-i-x"></span>
                                                         </a>
                                                     </div>
                                                 </td>
@@ -247,8 +261,8 @@
                                                 </td>
                                                 <td>
                                                     <div class="k-task">
-                                                        <span class="k-scheduler-mark" style="background-color: rgb(245, 138, 138);"></span> Event 4 <a class="k-link k-event-delete">
-                                                            <i is="Icon" name="x"></i>
+                                                        <span class="k-scheduler-mark" style="background-color: rgb(245, 138, 138);"></span>Event 4<a class="k-link k-event-delete">
+                                                            <span class="k-icon k-i-x"></span>
                                                         </a>
                                                     </div>
                                                 </td>
@@ -259,8 +273,8 @@
                                                 </td>
                                                 <td>
                                                     <div class="k-task">
-                                                        <span class="k-scheduler-mark" style="background-color: rgb(110, 179, 250);"></span> Event 5 <a class="k-link k-event-delete">
-                                                            <i is="Icon" name="x"></i>
+                                                        <span class="k-scheduler-mark" style="background-color: rgb(110, 179, 250);"></span>Event 5<a class="k-link k-event-delete">
+                                                            <span class="k-icon k-i-x"></span>
                                                         </a>
                                                     </div>
                                                 </td>
@@ -271,8 +285,8 @@
                                                 </td>
                                                 <td>
                                                     <div class="k-task">
-                                                        <span class="k-scheduler-mark" style="background-color: rgb(110, 179, 250);"></span> Event 6 <a class="k-link k-event-delete">
-                                                            <i is="Icon" name="x"></i>
+                                                        <span class="k-scheduler-mark" style="background-color: rgb(110, 179, 250);"></span>Event 6<a class="k-link k-event-delete">
+                                                            <span class="k-icon k-i-x"></span>
                                                         </a>
                                                     </div>
                                                 </td>
@@ -283,8 +297,8 @@
                                                 </td>
                                                 <td>
                                                     <div class="k-task">
-                                                        <span class="k-scheduler-mark" style="background-color: rgb(110, 179, 250);"></span> Event 7 <a class="k-link k-event-delete">
-                                                            <i is="Icon" name="x"></i>
+                                                        <span class="k-scheduler-mark" style="background-color: rgb(110, 179, 250);"></span>Event 7<a class="k-link k-event-delete">
+                                                            <span class="k-icon k-i-x"></span>
                                                         </a>
                                                     </div>
                                                 </td>
@@ -295,8 +309,8 @@
                                                 </td>
                                                 <td>
                                                     <div class="k-task">
-                                                        <span class="k-scheduler-mark" style="background-color: rgb(110, 179, 250);"></span> Event 8 <a class="k-link k-event-delete">
-                                                            <i is="Icon" name="x"></i>
+                                                        <span class="k-scheduler-mark" style="background-color: rgb(110, 179, 250);"></span>Event 8<a class="k-link k-event-delete">
+                                                            <span class="k-icon k-i-x"></span>
                                                         </a>
                                                     </div>
                                                 </td>
@@ -308,8 +322,8 @@
                         </tr>
                     </tbody>
                 </table>
-            </agenda-view-internal>
-        </kendo-scheduler>
+            </div>
+        </div>
     </div>
 </body>
 </html>

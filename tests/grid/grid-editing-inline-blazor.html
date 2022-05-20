@@ -1,35 +1,38 @@
 <!doctype html>
-<html lang="en" class="k-no-animations">
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width:15px;">
 <head>
-    <title>Editing Inline</title>
+    <title>Telerik Blazor Grid - Inline Editing</title>
     <meta charset="utf-8">
     <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
     <link rel="stylesheet" href="/packages/html/assets/styles.css">
     <script src="/packages/html/assets/scripts.js"></script>
-    <script src="/packages/html/dist/index.js"></script>
 </head>
 <body id="app" class="k-body">
-    <div id="test-area" class="grid">
+    <div id="test-area" class="k-d-grid">
         <h3>Edit Row</h3>
         <div class="k-grid k-widget telerik-blazor">
             <div class="k-toolbar k-grid-toolbar">
-                <button is="Button" icon="add">Add</button>
+                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                    <span class="k-button-icon k-icon k-i-add"></span>Add
+                </button>
             </div>
             <div class="k-grid-header">
                 <div class="k-grid-header-wrap">
                     <table role="grid">
                         <colgroup>
-                            <col style="width: 65px">
+                            <col style="width: 65px;">
                             <col>
                             <col>
                         </colgroup>
                         <thead role="rowgroup">
                             <tr role="row">
                                 <th class="k-header" colspan="1">
-                                    <input is="Checkbox" />
+                                    <span class="k-checkbox-wrap">
+                                        <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                    </span>
                                 </th>
-                                <th class="k-header" colspan="1"> Name </th>
-                                <th class="k-header" colspan="1"> Command </th>
+                                <th class="k-header" colspan="1">Name</th>
+                                <th class="k-header" colspan="1">Command</th>
                             </tr>
                         </thead>
                     </table>
@@ -49,30 +52,44 @@
                                     <tr role="row" class="k-master-row k-grid-edit-row ">
                                         <td colspan="0">
                                             <span>
-                                                <input is="Checkbox" class="k-grid-checkbox" />
+                                                <span class="k-checkbox-wrap">
+                                                    <input type="checkbox" class="k-grid-checkbox k-checkbox k-checkbox-md k-rounded-md">
+                                                </span>
                                             </span>
                                         </td>
                                         <td colspan="0" class=" k-grid-edit-cell ">
-                                            <input is="Textbox" />
+                                            <span class="k-textbox k-input k-input-md k-input-solid k-rounded-md">
+                                                <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="">
+                                            </span>
                                         </td>
                                         <td class="k-command-cell   " colspan="0">
-                                            <span>
-                                                <button is="Button" icon="save">Update</button>
-                                                <button is="Button" icon="cancel">Cancel</button>
+                                            <span class="k-d-flex k-gap-1">
+                                                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                                                    <span class="k-button-icon k-icon k-i-save"></span>Update
+                                                </button>
+                                                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                                                    <span class="k-button-icon k-icon k-i-cancel"></span>Cancel
+                                                </button>
                                             </span>
                                         </td>
                                     </tr>
                                     <tr role="row" class="k-master-row k-alt ">
                                         <td colspan="0">
                                             <span>
-                                                <input is="Checkbox" class="k-grid-checkbox" />
+                                                <span class="k-checkbox-wrap">
+                                                    <input type="checkbox" class="k-grid-checkbox k-checkbox k-checkbox-md k-rounded-md">
+                                                </span>
                                             </span>
                                         </td>
-                                        <td colspan="0"> Product2 </td>
+                                        <td colspan="0">Product2</td>
                                         <td class="k-command-cell   " colspan="0">
-                                            <span>
-                                                <button is="Button" icon="edit">Edit</button>
-                                                <button is="Button" icon="trash">Delete</button>
+                                            <span class="k-d-flex k-gap-1">
+                                                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                                                    <span class="k-button-icon k-icon k-i-edit"></span>Edit
+                                                </button>
+                                                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                                                    <span class="k-button-icon k-icon k-i-trash"></span>Delete
+                                                </button>
                                             </span>
                                         </td>
                                     </tr>
@@ -89,23 +106,27 @@
         <h3>New Row</h3>
         <div class="k-grid k-widget telerik-blazor">
             <div class="k-toolbar k-grid-toolbar">
-                <button is="Button" icon="add">Add</button>
+                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                    <span class="k-button-icon k-icon k-i-add"></span>Add
+                </button>
             </div>
             <div class="k-grid-header">
                 <div class="k-grid-header-wrap">
                     <table role="grid">
                         <colgroup>
-                            <col style="width: 65px">
+                            <col style="width: 65px;">
                             <col>
                             <col>
                         </colgroup>
                         <thead role="rowgroup">
                             <tr role="row">
                                 <th class="k-header" colspan="1">
-                                    <input is="Checkbox" />
+                                    <span class="k-checkbox-wrap">
+                                        <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                    </span>
                                 </th>
-                                <th class="k-header" colspan="1"> Name </th>
-                                <th class="k-header" colspan="1"> Command </th>
+                                <th class="k-header" colspan="1">Name</th>
+                                <th class="k-header" colspan="1">Command</th>
                             </tr>
                         </thead>
                     </table>
@@ -125,44 +146,64 @@
                                     <tr role="row" class="k-master-row k-grid-add-row k-grid-edit-row ">
                                         <td colspan="0">
                                             <span>
-                                                <input is="Checkbox" class="k-grid-checkbox" />
+                                                <span class="k-checkbox-wrap">
+                                                    <input type="checkbox" class="k-grid-checkbox k-checkbox k-checkbox-md k-rounded-md">
+                                                </span>
                                             </span>
                                         </td>
                                         <td colspan="0" class=" k-grid-edit-cell ">
-                                            <input is="Textbox" />
+                                            <span class="k-textbox k-input k-input-md k-input-solid k-rounded-md">
+                                                <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="">
+                                            </span>
                                         </td>
-                                        <td class="k-command-cell   " colspan="0">
-                                            <span>
-                                                <button is="Button" icon="save">Update</button>
-                                                <button is="Button" icon="cancel">Cancel</button>
+                                        <td class="k-command-cell" colspan="0">
+                                            <span class="k-d-flex k-gap-1">
+                                                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                                                    <span class="k-button-icon k-icon k-i-save"></span>Update
+                                                </button>
+                                                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                                                    <span class="k-button-icon k-icon k-i-cancel"></span>Cancel
+                                                </button>
                                             </span>
                                         </td>
                                     </tr>
                                     <tr role="row" class="k-master-row  ">
                                         <td colspan="0">
                                             <span>
-                                                <input is="Checkbox" class="k-grid-checkbox" />
+                                                <span class="k-checkbox-wrap">
+                                                    <input type="checkbox" class="k-grid-checkbox k-checkbox k-checkbox-md k-rounded-md">
+                                                </span>
                                             </span>
                                         </td>
-                                        <td colspan="0"> Product1 </td>
+                                        <td colspan="0">Product1</td>
                                         <td class="k-command-cell   " colspan="0">
-                                            <span>
-                                                <button is="Button" icon="edit">Edit</button>
-                                                <button is="Button" icon="trash">Delete</button>
+                                            <span class="k-d-flex k-gap-1">
+                                                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                                                    <span class="k-button-icon k-icon k-i-edit"></span>Edit
+                                                </button>
+                                                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                                                    <span class="k-button-icon k-icon k-i-trash"></span>Delete
+                                                </button>
                                             </span>
                                         </td>
                                     </tr>
                                     <tr role="row" class="k-master-row k-alt ">
                                         <td colspan="0">
                                             <span>
-                                                <input is="Checkbox" class="k-grid-checkbox" />
+                                                <span class="k-checkbox-wrap">
+                                                    <input type="checkbox" class="k-grid-checkbox k-checkbox k-checkbox-md k-rounded-md">
+                                                </span>
                                             </span>
                                         </td>
-                                        <td colspan="0"> Product2 </td>
+                                        <td colspan="0">Product2</td>
                                         <td class="k-command-cell   " colspan="0">
-                                            <span>
-                                                <button is="Button" icon="edit">Edit</button>
-                                                <button is="Button" icon="trash">Delete</button>
+                                            <span class="k-d-flex k-gap-1">
+                                                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                                                    <span class="k-button-icon k-icon k-i-edit"></span>Edit
+                                                </button>
+                                                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                                                    <span class="k-button-icon k-icon k-i-trash"></span>Delete
+                                                </button>
                                             </span>
                                         </td>
                                     </tr>

@@ -1,12 +1,11 @@
 <!doctype html>
-<html lang="en" class="k-no-animations">
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width:15px;">
 <head>
-    <title>Action buttons</title>
+    <title>Action Buttons</title>
     <meta charset="utf-8">
     <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
     <link rel="stylesheet" href="/packages/html/assets/styles.css">
     <script src="/packages/html/assets/scripts.js"></script>
-    <script src="/packages/html/dist/index.js"></script>
 </head>
 <body id="app" class="k-body">
     <style>
@@ -19,65 +18,113 @@
         <span>start</span>
         <span>end</span>
         <div>
-            <div is="ActionButtons" alignment="start">
-                <button is="Button">First</button>
-                <button is="Button">Second</button>
-                <button is="Button">Third</button>
+            <div class="k-actions k-actions-start k-actions-horizontal">
+                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                    <span class="k-button-text">First</span>
+                </button>
+                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                    <span class="k-button-text">Second</span>
+                </button>
+                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                    <span class="k-button-text">Third</span>
+                </button>
             </div>
         </div>
         <div>
-            <div is="ActionButtons" alignment="end">
-                <button is="Button">First</button>
-                <button is="Button">Second</button>
-                <button is="Button">Third</button>
+            <div class="k-actions k-actions-end k-actions-horizontal">
+                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                    <span class="k-button-text">First</span>
+                </button>
+                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                    <span class="k-button-text">Second</span>
+                </button>
+                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                    <span class="k-button-text">Third</span>
+                </button>
             </div>
         </div>
         <span>center</span>
         <span>stretch</span>
         <div>
-            <div is="ActionButtons" alignment="center">
-                <button is="Button">First</button>
-                <button is="Button">Second</button>
-                <button is="Button">Third</button>
+            <div class="k-actions k-actions-center k-actions-horizontal">
+                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                    <span class="k-button-text">First</span>
+                </button>
+                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                    <span class="k-button-text">Second</span>
+                </button>
+                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                    <span class="k-button-text">Third</span>
+                </button>
             </div>
         </div>
         <div>
-            <div is="ActionButtons" alignment="stretched">
-                <button is="Button">First</button>
-                <button is="Button">Second</button>
-                <button is="Button">Third</button>
+            <div class="k-actions k-actions-stretched k-actions-horizontal">
+                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                    <span class="k-button-text">First</span>
+                </button>
+                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                    <span class="k-button-text">Second</span>
+                </button>
+                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                    <span class="k-button-text">Third</span>
+                </button>
             </div>
         </div>
         <span>rtl start</span>
         <span>rtl end</span>
         <div dir="rtl">
-            <div is="ActionButtons" alignment="start">
-                <button is="Button">First</button>
-                <button is="Button">Second</button>
-                <button is="Button">Third</button>
+            <div class="k-actions k-actions-start k-actions-horizontal">
+                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                    <span class="k-button-text">First</span>
+                </button>
+                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                    <span class="k-button-text">Second</span>
+                </button>
+                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                    <span class="k-button-text">Third</span>
+                </button>
             </div>
         </div>
         <div dir="rtl">
-            <div is="ActionButtons" alignment="end">
-                <button is="Button">First</button>
-                <button is="Button">Second</button>
-                <button is="Button">Third</button>
+            <div class="k-actions k-actions-end k-actions-horizontal">
+                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                    <span class="k-button-text">First</span>
+                </button>
+                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                    <span class="k-button-text">Second</span>
+                </button>
+                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                    <span class="k-button-text">Third</span>
+                </button>
             </div>
         </div>
         <span>rtl center</span>
         <span>rtl stretch</span>
         <div dir="rtl">
-            <div is="ActionButtons" alignment="center">
-                <button is="Button">First</button>
-                <button is="Button">Second</button>
-                <button is="Button">Third</button>
+            <div class="k-actions k-actions-center k-actions-horizontal">
+                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                    <span class="k-button-text">First</span>
+                </button>
+                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                    <span class="k-button-text">Second</span>
+                </button>
+                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                    <span class="k-button-text">Third</span>
+                </button>
             </div>
         </div>
         <div dir="rtl">
-            <div is="ActionButtons" alignment="stretched">
-                <button is="Button">First</button>
-                <button is="Button">Second</button>
-                <button is="Button">Third</button>
+            <div class="k-actions k-actions-stretched k-actions-horizontal">
+                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                    <span class="k-button-text">First</span>
+                </button>
+                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                    <span class="k-button-text">Second</span>
+                </button>
+                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                    <span class="k-button-text">Third</span>
+                </button>
             </div>
         </div>
     </div>

@@ -1,12 +1,11 @@
 <!doctype html>
-<html lang="en" class="k-no-animations">
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width:15px;">
 <head>
-    <title>Outline Searchbox</title>
+    <title>SearchBox Outline</title>
     <meta charset="utf-8">
     <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
     <link rel="stylesheet" href="/packages/html/assets/styles.css">
     <script src="/packages/html/assets/scripts.js"></script>
-    <script src="/packages/html/dist/index.js"></script>
 </head>
 <body id="app" class="k-body">
     <style>
@@ -15,64 +14,140 @@
         }
 
     </style>
-    <div id="test-area" class="k-d-grid k-grid-cols-2">
-        <span>Outline Searchbox</span>
-        <span>Outline Searchbox RTL</span>
-        <!-- empty -->
+    <div id="test-area" class="k-d-grid k-grid-cols-2" style="max-width: 660px;">
+        <span>Searchbox Outline</span>
+        <span>Searchbox Outline RTL</span>
         <div>
-            <input is="Searchbox" fillMode="outline" placeholder="Searchbox..." />
+            <span class="k-searchbox k-input k-input-md k-input-outline k-rounded-md">
+                <span class="k-input-icon k-icon k-i-search"></span>
+                <input type="text" class="k-input-inner" placeholder="Searchbox..." autocomplete="off" value="">
+            </span>
         </div>
         <div dir="rtl">
-            <input is="Searchbox" fillMode="outline" placeholder="Searchbox..." />
+            <span class="k-searchbox k-input k-input-md k-input-outline k-rounded-md">
+                <span class="k-input-icon k-icon k-i-search"></span>
+                <input type="text" class="k-input-inner" placeholder="Searchbox..." autocomplete="off" value="">
+            </span>
         </div>
-        <!-- normal -->
         <div>
-            <input is="Searchbox" fillMode="outline" value="Normal" />
+            <span class="k-searchbox k-input k-input-md k-input-outline k-rounded-md">
+                <span class="k-input-icon k-icon k-i-search"></span>
+                <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="Normal">
+                <span class="k-clear-value">
+                    <span class="k-icon k-i-x"></span>
+                </span>
+            </span>
         </div>
         <div dir="rtl">
-            <input is="Searchbox" fillMode="outline" value="Normal" />
+            <span class="k-searchbox k-input k-input-md k-input-outline k-rounded-md">
+                <span class="k-input-icon k-icon k-i-search"></span>
+                <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="Normal">
+                <span class="k-clear-value">
+                    <span class="k-icon k-i-x"></span>
+                </span>
+            </span>
         </div>
-        <!-- hover -->
         <div>
-            <input is="Searchbox" fillMode="outline" value="Hover" hover />
+            <span class="k-searchbox k-input k-input-md k-input-outline k-rounded-md k-hover">
+                <span class="k-input-icon k-icon k-i-search"></span>
+                <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="Hover">
+                <span class="k-clear-value">
+                    <span class="k-icon k-i-x"></span>
+                </span>
+            </span>
         </div>
         <div dir="rtl">
-            <input is="Searchbox" fillMode="outline" value="Hover" hover />
+            <span class="k-searchbox k-input k-input-md k-input-outline k-rounded-md k-hover">
+                <span class="k-input-icon k-icon k-i-search"></span>
+                <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="Hover">
+                <span class="k-clear-value">
+                    <span class="k-icon k-i-x"></span>
+                </span>
+            </span>
         </div>
-        <!-- focus -->
         <div>
-            <input is="Searchbox" fillMode="outline" value="Focus" focus />
+            <span class="k-searchbox k-input k-input-md k-input-outline k-rounded-md k-focus">
+                <span class="k-input-icon k-icon k-i-search"></span>
+                <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="Focus">
+                <span class="k-clear-value">
+                    <span class="k-icon k-i-x"></span>
+                </span>
+            </span>
         </div>
         <div dir="rtl">
-            <input is="Searchbox" fillMode="outline" value="Focus" focus />
+            <span class="k-searchbox k-input k-input-md k-input-outline k-rounded-md k-focus">
+                <span class="k-input-icon k-icon k-i-search"></span>
+                <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="Focus">
+                <span class="k-clear-value">
+                    <span class="k-icon k-i-x"></span>
+                </span>
+            </span>
         </div>
-        <!-- disabled -->
         <div>
-            <input is="Searchbox" fillMode="outline" value="Disabled" disabled />
+            <span class="k-searchbox k-input k-input-md k-input-outline k-rounded-md k-disabled">
+                <span class="k-input-icon k-icon k-i-search"></span>
+                <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="Disabled">
+            </span>
         </div>
         <div dir="rtl">
-            <input is="Searchbox" fillMode="outline" value="Disabled" disabled />
+            <span class="k-searchbox k-input k-input-md k-input-outline k-rounded-md k-disabled">
+                <span class="k-input-icon k-icon k-i-search"></span>
+                <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="Disabled">
+            </span>
         </div>
-        <!-- invalid -->
         <div>
-            <input is="Searchbox" fillMode="outline" value="Invalid" invalid />
+            <span class="k-searchbox k-input k-input-md k-input-outline k-rounded-md k-invalid">
+                <span class="k-input-icon k-icon k-i-search"></span>
+                <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="Invalid">
+                <span class="k-input-validation-icon k-icon k-i-warning"></span>
+                <span class="k-clear-value">
+                    <span class="k-icon k-i-x"></span>
+                </span>
+            </span>
         </div>
         <div dir="rtl">
-            <input is="Searchbox" fillMode="outline" value="Invalid" invalid />
+            <span class="k-searchbox k-input k-input-md k-input-outline k-rounded-md k-invalid">
+                <span class="k-input-icon k-icon k-i-search"></span>
+                <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="Invalid">
+                <span class="k-input-validation-icon k-icon k-i-warning"></span>
+                <span class="k-clear-value">
+                    <span class="k-icon k-i-x"></span>
+                </span>
+            </span>
         </div>
-        <!-- invalid + focus -->
         <div>
-            <input is="Searchbox" fillMode="outline" value="Invalid focus" invalid focus />
+            <span class="k-searchbox k-input k-input-md k-input-outline k-rounded-md k-focus k-invalid">
+                <span class="k-input-icon k-icon k-i-search"></span>
+                <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="Invalid focus">
+                <span class="k-input-validation-icon k-icon k-i-warning"></span>
+                <span class="k-clear-value">
+                    <span class="k-icon k-i-x"></span>
+                </span>
+            </span>
         </div>
         <div dir="rtl">
-            <input is="Searchbox" fillMode="outline" value="Invalid focus" invalid focus />
+            <span class="k-searchbox k-input k-input-md k-input-outline k-rounded-md k-focus k-invalid">
+                <span class="k-input-icon k-icon k-i-search"></span>
+                <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="Invalid focus">
+                <span class="k-input-validation-icon k-icon k-i-warning"></span>
+                <span class="k-clear-value">
+                    <span class="k-icon k-i-x"></span>
+                </span>
+            </span>
         </div>
-        <!-- loading -->
         <div>
-            <input is="Searchbox" fillMode="outline" value="Loading" loading />
+            <span class="k-searchbox k-input k-input-md k-input-outline k-rounded-md k-loading">
+                <span class="k-input-icon k-icon k-i-search"></span>
+                <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="Loading">
+                <span class="k-input-loading-icon k-icon k-i-loading"></span>
+            </span>
         </div>
         <div dir="rtl">
-            <input is="Searchbox" fillMode="outline" value="Loading" loading />
+            <span class="k-searchbox k-input k-input-md k-input-outline k-rounded-md k-loading">
+                <span class="k-input-icon k-icon k-i-search"></span>
+                <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="Loading">
+                <span class="k-input-loading-icon k-icon k-i-loading"></span>
+            </span>
         </div>
     </div>
 </body>

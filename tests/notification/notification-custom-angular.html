@@ -1,12 +1,11 @@
 <!doctype html>
-<html lang="en" class="k-no-animations">
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width:15px;">
 <head>
-    <title>Notification scenrios -- Angular</title>
+    <title>KUI Angular Notification Custom</title>
     <meta charset="utf-8">
     <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
     <link rel="stylesheet" href="/packages/html/assets/styles.css">
     <script src="/packages/html/assets/scripts.js"></script>
-    <script src="/packages/html/dist/index.js"></script>
 </head>
 <body id="app" class="k-body">
     <style>
@@ -16,12 +15,10 @@
         .k-notification-group {
             position: static;
         }
-        /* Full width */
         .fullwidth,
         .fullwidth>.k-notification {
             width: 100%;
         }
-        /* Custom */
         .k-custom-notification {
             font-size: 20px;
             color: gray;
@@ -31,16 +28,15 @@
     <div id="test-area" class="k-d-grid k-grid-cols-4">
         <span class="k-colspan-all">LTR</span>
         <div>
-            <!-- notification group -->
             <div class="k-notification-group">
                 <div class="k-notification-container">
                     <div class="k-widget k-notification k-notification-closable">
                         <div class="k-notification-wrap">
-                            <div class="k-notification-content"> Multiline notification <div>Closable multiline notification</div>
+                            <div class="k-notification-content">Multiline notification<div>Closable multiline notification</div>
                                 <div>Closable multiline notification</div>
                                 <div>Closable multiline notification</div>
                             </div>
-                            <i is="Icon" name="close"></i>
+                            <span class="k-icon k-i-close"></span>
                         </div>
                     </div>
                 </div>
@@ -58,23 +54,22 @@
                 <div class="k-widget k-notification k-notification-closable">
                     <div class="k-notification-wrap">
                         <div class="k-notification-content">Full width notification</div>
-                        <i is="Icon" name="close"></i>
+                        <span class="k-icon k-i-close"></span>
                     </div>
                 </div>
             </div>
         </div>
         <span class="k-colspan-all">RTL</span>
         <div dir="rtl">
-            <!-- notification group -->
             <div class="k-notification-group">
                 <div class="k-notification-container">
                     <div class="k-widget k-notification k-notification-closable">
                         <div class="k-notification-wrap">
-                            <div class="k-notification-content"> Multiline notification <div>Closable multiline notification</div>
+                            <div class="k-notification-content">Multiline notification<div>Closable multiline notification</div>
                                 <div>Closable multiline notification</div>
                                 <div>Closable multiline notification</div>
                             </div>
-                            <i is="Icon" name="close"></i>
+                            <span class="k-icon k-i-close"></span>
                         </div>
                     </div>
                 </div>
@@ -92,7 +87,7 @@
                 <div class="k-widget k-notification k-notification-closable">
                     <div class="k-notification-wrap">
                         <div class="k-notification-content">Full width notification</div>
-                        <i is="Icon" name="close"></i>
+                        <span class="k-icon k-i-close"></span>
                     </div>
                 </div>
             </div>

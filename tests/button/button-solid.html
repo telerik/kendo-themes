@@ -1,12 +1,11 @@
 <!doctype html>
-<html lang="en" class="k-no-animations">
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width:15px;">
 <head>
     <title>Button Solid</title>
     <meta charset="utf-8">
     <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
     <link rel="stylesheet" href="/packages/html/assets/styles.css">
     <script src="/packages/html/assets/scripts.js"></script>
-    <script src="/packages/html/dist/index.js"></script>
 </head>
 <body id="app" class="k-body">
     <style>
@@ -25,212 +24,344 @@
         <span>Disabled</span>
         <span>base</span>
         <span>
-            <button is="Button">Normal</button>
+            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                <span class="k-button-text">Normal</span>
+            </button>
         </span>
         <span>
-            <button is="Button" hover>Hover</button>
+            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-hover">
+                <span class="k-button-text">Hover</span>
+            </button>
         </span>
         <span>
-            <button is="Button" focus>Focus</button>
+            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-focus">
+                <span class="k-button-text">Focus</span>
+            </button>
         </span>
         <span>
-            <button is="Button" active>Active</button>
+            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-active">
+                <span class="k-button-text">Active</span>
+            </button>
         </span>
         <span>
-            <button is="Button" selected>Selected</button>
+            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-selected">
+                <span class="k-button-text">Selected</span>
+            </button>
         </span>
         <span>
-            <button is="Button" disabled>Disabled</button>
+            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-disabled">
+                <span class="k-button-text">Disabled</span>
+            </button>
         </span>
         <span>primary</span>
         <span>
-            <button is="Button" themeColor="primary">Normal</button>
+            <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md">
+                <span class="k-button-text">Normal</span>
+            </button>
         </span>
         <span>
-            <button is="Button" themeColor="primary" hover>Hover</button>
+            <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md k-hover">
+                <span class="k-button-text">Hover</span>
+            </button>
         </span>
         <span>
-            <button is="Button" themeColor="primary" focus>Focus</button>
+            <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md k-focus">
+                <span class="k-button-text">Focus</span>
+            </button>
         </span>
         <span>
-            <button is="Button" themeColor="primary" active>Active</button>
+            <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md k-active">
+                <span class="k-button-text">Active</span>
+            </button>
         </span>
         <span>
-            <button is="Button" themeColor="primary" selected>Selected</button>
+            <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md k-selected">
+                <span class="k-button-text">Selected</span>
+            </button>
         </span>
         <span>
-            <button is="Button" themeColor="primary" disabled>Disabled</button>
+            <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md k-disabled">
+                <span class="k-button-text">Disabled</span>
+            </button>
         </span>
         <span>secondary</span>
         <span>
-            <button is="Button" themeColor="secondary">Normal</button>
+            <button class="k-button k-button-md k-button-solid k-button-solid-secondary k-rounded-md">
+                <span class="k-button-text">Normal</span>
+            </button>
         </span>
         <span>
-            <button is="Button" themeColor="secondary" hover>Hover</button>
+            <button class="k-button k-button-md k-button-solid k-button-solid-secondary k-rounded-md k-hover">
+                <span class="k-button-text">Hover</span>
+            </button>
         </span>
         <span>
-            <button is="Button" themeColor="secondary" focus>Focus</button>
+            <button class="k-button k-button-md k-button-solid k-button-solid-secondary k-rounded-md k-focus">
+                <span class="k-button-text">Focus</span>
+            </button>
         </span>
         <span>
-            <button is="Button" themeColor="secondary" active>Active</button>
+            <button class="k-button k-button-md k-button-solid k-button-solid-secondary k-rounded-md k-active">
+                <span class="k-button-text">Active</span>
+            </button>
         </span>
         <span>
-            <button is="Button" themeColor="secondary" selected>Selected</button>
+            <button class="k-button k-button-md k-button-solid k-button-solid-secondary k-rounded-md k-selected">
+                <span class="k-button-text">Selected</span>
+            </button>
         </span>
         <span>
-            <button is="Button" themeColor="secondary" disabled>Disabled</button>
+            <button class="k-button k-button-md k-button-solid k-button-solid-secondary k-rounded-md k-disabled">
+                <span class="k-button-text">Disabled</span>
+            </button>
         </span>
         <span>tertiary</span>
         <span>
-            <button is="Button" themeColor="tertiary">Normal</button>
+            <button class="k-button k-button-md k-button-solid k-button-solid-tertiary k-rounded-md">
+                <span class="k-button-text">Normal</span>
+            </button>
         </span>
         <span>
-            <button is="Button" themeColor="tertiary" hover>Hover</button>
+            <button class="k-button k-button-md k-button-solid k-button-solid-tertiary k-rounded-md k-hover">
+                <span class="k-button-text">Hover</span>
+            </button>
         </span>
         <span>
-            <button is="Button" themeColor="tertiary" focus>Focus</button>
+            <button class="k-button k-button-md k-button-solid k-button-solid-tertiary k-rounded-md k-focus">
+                <span class="k-button-text">Focus</span>
+            </button>
         </span>
         <span>
-            <button is="Button" themeColor="tertiary" active>Active</button>
+            <button class="k-button k-button-md k-button-solid k-button-solid-tertiary k-rounded-md k-active">
+                <span class="k-button-text">Active</span>
+            </button>
         </span>
         <span>
-            <button is="Button" themeColor="tertiary" selected>Selected</button>
+            <button class="k-button k-button-md k-button-solid k-button-solid-tertiary k-rounded-md k-selected">
+                <span class="k-button-text">Selected</span>
+            </button>
         </span>
         <span>
-            <button is="Button" themeColor="tertiary" disabled>Disabled</button>
+            <button class="k-button k-button-md k-button-solid k-button-solid-tertiary k-rounded-md k-disabled">
+                <span class="k-button-text">Disabled</span>
+            </button>
         </span>
         <span>info</span>
         <span>
-            <button is="Button" themeColor="info">Normal</button>
+            <button class="k-button k-button-md k-button-solid k-button-solid-info k-rounded-md">
+                <span class="k-button-text">Normal</span>
+            </button>
         </span>
         <span>
-            <button is="Button" themeColor="info" hover>Hover</button>
+            <button class="k-button k-button-md k-button-solid k-button-solid-info k-rounded-md k-hover">
+                <span class="k-button-text">Hover</span>
+            </button>
         </span>
         <span>
-            <button is="Button" themeColor="info" focus>Focus</button>
+            <button class="k-button k-button-md k-button-solid k-button-solid-info k-rounded-md k-focus">
+                <span class="k-button-text">Focus</span>
+            </button>
         </span>
         <span>
-            <button is="Button" themeColor="info" active>Active</button>
+            <button class="k-button k-button-md k-button-solid k-button-solid-info k-rounded-md k-active">
+                <span class="k-button-text">Active</span>
+            </button>
         </span>
         <span>
-            <button is="Button" themeColor="info" selected>Selected</button>
+            <button class="k-button k-button-md k-button-solid k-button-solid-info k-rounded-md k-selected">
+                <span class="k-button-text">Selected</span>
+            </button>
         </span>
         <span>
-            <button is="Button" themeColor="info" disabled>Disabled</button>
+            <button class="k-button k-button-md k-button-solid k-button-solid-info k-rounded-md k-disabled">
+                <span class="k-button-text">Disabled</span>
+            </button>
         </span>
         <span>success</span>
         <span>
-            <button is="Button" themeColor="success">Normal</button>
+            <button class="k-button k-button-md k-button-solid k-button-solid-success k-rounded-md">
+                <span class="k-button-text">Normal</span>
+            </button>
         </span>
         <span>
-            <button is="Button" themeColor="success" hover>Hover</button>
+            <button class="k-button k-button-md k-button-solid k-button-solid-success k-rounded-md k-hover">
+                <span class="k-button-text">Hover</span>
+            </button>
         </span>
         <span>
-            <button is="Button" themeColor="success" focus>Focus</button>
+            <button class="k-button k-button-md k-button-solid k-button-solid-success k-rounded-md k-focus">
+                <span class="k-button-text">Focus</span>
+            </button>
         </span>
         <span>
-            <button is="Button" themeColor="success" active>Active</button>
+            <button class="k-button k-button-md k-button-solid k-button-solid-success k-rounded-md k-active">
+                <span class="k-button-text">Active</span>
+            </button>
         </span>
         <span>
-            <button is="Button" themeColor="success" selected>Selected</button>
+            <button class="k-button k-button-md k-button-solid k-button-solid-success k-rounded-md k-selected">
+                <span class="k-button-text">Selected</span>
+            </button>
         </span>
         <span>
-            <button is="Button" themeColor="success" disabled>Disabled</button>
+            <button class="k-button k-button-md k-button-solid k-button-solid-success k-rounded-md k-disabled">
+                <span class="k-button-text">Disabled</span>
+            </button>
         </span>
         <span>warning</span>
         <span>
-            <button is="Button" themeColor="warning">Normal</button>
+            <button class="k-button k-button-md k-button-solid k-button-solid-warning k-rounded-md">
+                <span class="k-button-text">Normal</span>
+            </button>
         </span>
         <span>
-            <button is="Button" themeColor="warning" hover>Hover</button>
+            <button class="k-button k-button-md k-button-solid k-button-solid-warning k-rounded-md k-hover">
+                <span class="k-button-text">Hover</span>
+            </button>
         </span>
         <span>
-            <button is="Button" themeColor="warning" focus>Focus</button>
+            <button class="k-button k-button-md k-button-solid k-button-solid-warning k-rounded-md k-focus">
+                <span class="k-button-text">Focus</span>
+            </button>
         </span>
         <span>
-            <button is="Button" themeColor="warning" active>Active</button>
+            <button class="k-button k-button-md k-button-solid k-button-solid-warning k-rounded-md k-active">
+                <span class="k-button-text">Active</span>
+            </button>
         </span>
         <span>
-            <button is="Button" themeColor="warning" selected>Selected</button>
+            <button class="k-button k-button-md k-button-solid k-button-solid-warning k-rounded-md k-selected">
+                <span class="k-button-text">Selected</span>
+            </button>
         </span>
         <span>
-            <button is="Button" themeColor="warning" disabled>Disabled</button>
+            <button class="k-button k-button-md k-button-solid k-button-solid-warning k-rounded-md k-disabled">
+                <span class="k-button-text">Disabled</span>
+            </button>
         </span>
         <span>error</span>
         <span>
-            <button is="Button" themeColor="error">Normal</button>
+            <button class="k-button k-button-md k-button-solid k-button-solid-error k-rounded-md">
+                <span class="k-button-text">Normal</span>
+            </button>
         </span>
         <span>
-            <button is="Button" themeColor="error" hover>Hover</button>
+            <button class="k-button k-button-md k-button-solid k-button-solid-error k-rounded-md k-hover">
+                <span class="k-button-text">Hover</span>
+            </button>
         </span>
         <span>
-            <button is="Button" themeColor="error" focus>Focus</button>
+            <button class="k-button k-button-md k-button-solid k-button-solid-error k-rounded-md k-focus">
+                <span class="k-button-text">Focus</span>
+            </button>
         </span>
         <span>
-            <button is="Button" themeColor="error" active>Active</button>
+            <button class="k-button k-button-md k-button-solid k-button-solid-error k-rounded-md k-active">
+                <span class="k-button-text">Active</span>
+            </button>
         </span>
         <span>
-            <button is="Button" themeColor="error" selected>Selected</button>
+            <button class="k-button k-button-md k-button-solid k-button-solid-error k-rounded-md k-selected">
+                <span class="k-button-text">Selected</span>
+            </button>
         </span>
         <span>
-            <button is="Button" themeColor="error" disabled>Disabled</button>
+            <button class="k-button k-button-md k-button-solid k-button-solid-error k-rounded-md k-disabled">
+                <span class="k-button-text">Disabled</span>
+            </button>
         </span>
         <span>dark</span>
         <span>
-            <button is="Button" themeColor="dark">Normal</button>
+            <button class="k-button k-button-md k-button-solid k-button-solid-dark k-rounded-md">
+                <span class="k-button-text">Normal</span>
+            </button>
         </span>
         <span>
-            <button is="Button" themeColor="dark" hover>Hover</button>
+            <button class="k-button k-button-md k-button-solid k-button-solid-dark k-rounded-md k-hover">
+                <span class="k-button-text">Hover</span>
+            </button>
         </span>
         <span>
-            <button is="Button" themeColor="dark" focus>Focus</button>
+            <button class="k-button k-button-md k-button-solid k-button-solid-dark k-rounded-md k-focus">
+                <span class="k-button-text">Focus</span>
+            </button>
         </span>
         <span>
-            <button is="Button" themeColor="dark" active>Active</button>
+            <button class="k-button k-button-md k-button-solid k-button-solid-dark k-rounded-md k-active">
+                <span class="k-button-text">Active</span>
+            </button>
         </span>
         <span>
-            <button is="Button" themeColor="dark" selected>Selected</button>
+            <button class="k-button k-button-md k-button-solid k-button-solid-dark k-rounded-md k-selected">
+                <span class="k-button-text">Selected</span>
+            </button>
         </span>
         <span>
-            <button is="Button" themeColor="dark" disabled>Disabled</button>
+            <button class="k-button k-button-md k-button-solid k-button-solid-dark k-rounded-md k-disabled">
+                <span class="k-button-text">Disabled</span>
+            </button>
         </span>
         <span>light</span>
         <span>
-            <button is="Button" themeColor="light">Normal</button>
+            <button class="k-button k-button-md k-button-solid k-button-solid-light k-rounded-md">
+                <span class="k-button-text">Normal</span>
+            </button>
         </span>
         <span>
-            <button is="Button" themeColor="light" hover>Hover</button>
+            <button class="k-button k-button-md k-button-solid k-button-solid-light k-rounded-md k-hover">
+                <span class="k-button-text">Hover</span>
+            </button>
         </span>
         <span>
-            <button is="Button" themeColor="light" focus>Focus</button>
+            <button class="k-button k-button-md k-button-solid k-button-solid-light k-rounded-md k-focus">
+                <span class="k-button-text">Focus</span>
+            </button>
         </span>
         <span>
-            <button is="Button" themeColor="light" active>Active</button>
+            <button class="k-button k-button-md k-button-solid k-button-solid-light k-rounded-md k-active">
+                <span class="k-button-text">Active</span>
+            </button>
         </span>
         <span>
-            <button is="Button" themeColor="light" selected>Selected</button>
+            <button class="k-button k-button-md k-button-solid k-button-solid-light k-rounded-md k-selected">
+                <span class="k-button-text">Selected</span>
+            </button>
         </span>
         <span>
-            <button is="Button" themeColor="light" disabled>Disabled</button>
+            <button class="k-button k-button-md k-button-solid k-button-solid-light k-rounded-md k-disabled">
+                <span class="k-button-text">Disabled</span>
+            </button>
         </span>
         <span>inverse</span>
         <span>
-            <button is="Button" themeColor="inverse">Normal</button>
+            <button class="k-button k-button-md k-button-solid k-button-solid-inverse k-rounded-md">
+                <span class="k-button-text">Normal</span>
+            </button>
         </span>
         <span>
-            <button is="Button" themeColor="inverse" hover>Hover</button>
+            <button class="k-button k-button-md k-button-solid k-button-solid-inverse k-rounded-md k-hover">
+                <span class="k-button-text">Hover</span>
+            </button>
         </span>
         <span>
-            <button is="Button" themeColor="inverse" focus>Focus</button>
+            <button class="k-button k-button-md k-button-solid k-button-solid-inverse k-rounded-md k-focus">
+                <span class="k-button-text">Focus</span>
+            </button>
         </span>
         <span>
-            <button is="Button" themeColor="inverse" active>Active</button>
+            <button class="k-button k-button-md k-button-solid k-button-solid-inverse k-rounded-md k-active">
+                <span class="k-button-text">Active</span>
+            </button>
         </span>
         <span>
-            <button is="Button" themeColor="inverse" selected>Selected</button>
+            <button class="k-button k-button-md k-button-solid k-button-solid-inverse k-rounded-md k-selected">
+                <span class="k-button-text">Selected</span>
+            </button>
         </span>
         <span>
-            <button is="Button" themeColor="inverse" disabled>Disabled</button>
+            <button class="k-button k-button-md k-button-solid k-button-solid-inverse k-rounded-md k-disabled">
+                <span class="k-button-text">Disabled</span>
+            </button>
         </span>
     </div>
 </body>

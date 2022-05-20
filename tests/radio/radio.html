@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width:15px;">
+<head>
+    <title>RadioButton</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
+    <link rel="stylesheet" href="/packages/html/assets/styles.css">
+    <script src="/packages/html/assets/scripts.js"></script>
+</head>
+<body id="app" class="k-body">
+    <div id="test-area" class="k-d-grid k-grid-cols-4 k-align-items-start">
+        <span>Radio button</span>
+        <span>In label</span>
+        <span dir="rtl">Radio button RTL</span>
+        <span dir="rtl">In label RTL</span>
+        <div>
+            <span class="k-radio-wrap">
+                <input type="radio" id="rad1" class="k-radio k-radio-md k-checked" checked="">
+            </span>
+            <label class="k-radio-label" for="rad1">Checked</label>
+        </div>
+        <div>
+            <label class="k-radio-label">
+                <span class="k-radio-wrap">
+                    <input type="radio" class="k-radio k-radio-md k-checked" checked="">
+                </span>Checked
+            </label>
+        </div>
+        <div dir="rtl">
+            <span class="k-radio-wrap">
+                <input type="radio" id="rad1-rtl" class="k-radio k-radio-md k-checked" checked="">
+            </span>
+            <label class="k-radio-label" for="rad1-rtl">Checked</label>
+        </div>
+        <div dir="rtl">
+            <label class="k-radio-label">
+                <span class="k-radio-wrap">
+                    <input type="radio" class="k-radio k-radio-md k-checked" checked="">
+                </span>Checked
+            </label>
+        </div>
+        <div>
+            <span class="k-radio-wrap">
+                <input type="radio" id="rad2" class="k-radio k-radio-md k-disabled k-checked" checked="">
+            </span>
+            <label class="k-radio-label" for="rad2">Checked</label>
+        </div>
+        <div>
+            <label class="k-radio-label">
+                <span class="k-radio-wrap">
+                    <input type="radio" class="k-radio k-radio-md k-disabled k-checked" checked="">
+                </span>Checked
+            </label>
+        </div>
+        <div dir="rtl">
+            <span class="k-radio-wrap">
+                <input type="radio" id="rad2-rtl" class="k-radio k-radio-md k-disabled k-checked" checked="">
+            </span>
+            <label class="k-radio-label" for="rad2-rtl">Checked</label>
+        </div>
+        <div dir="rtl">
+            <label class="k-radio-label">
+                <span class="k-radio-wrap">
+                    <input type="radio" class="k-radio k-radio-md k-disabled k-checked" checked="">
+                </span>Checked
+            </label>
+        </div>
+        <div>
+            <span class="k-radio-wrap">
+                <input type="radio" id="rad3" class="k-radio k-radio-md">
+            </span>
+            <label class="k-radio-label" for="rad3">Unchecked</label>
+        </div>
+        <div>
+            <label class="k-radio-label">
+                <span class="k-radio-wrap">
+                    <input type="radio" class="k-radio k-radio-md">
+                </span>Unchecked
+            </label>
+        </div>
+        <div dir="rtl">
+            <span class="k-radio-wrap">
+                <input type="radio" id="rad3-rtl" class="k-radio k-radio-md">
+            </span>
+            <label class="k-radio-label" for="rad3-rtl">Unchecked</label>
+        </div>
+        <div dir="rtl">
+            <label class="k-radio-label">
+                <span class="k-radio-wrap">
+                    <input type="radio" class="k-radio k-radio-md">
+                </span>Unchecked
+            </label>
+        </div>
+        <div>
+            <span class="k-radio-wrap">
+                <input type="radio" id="rad4" class="k-radio k-radio-md k-disabled">
+            </span>
+            <label class="k-radio-label" for="rad4">Unchecked</label>
+        </div>
+        <div>
+            <label class="k-radio-label">
+                <span class="k-radio-wrap">
+                    <input type="radio" class="k-radio k-radio-md k-disabled">
+                </span>Unchecked
+            </label>
+        </div>
+        <div dir="rtl">
+            <span class="k-radio-wrap">
+                <input type="radio" id="rad4-rtl" class="k-radio k-radio-md k-disabled">
+            </span>
+            <label class="k-radio-label" for="rad4-rtl">Unchecked</label>
+        </div>
+        <div dir="rtl">
+            <label class="k-radio-label">
+                <span class="k-radio-wrap">
+                    <input type="radio" class="k-radio k-radio-md k-disabled">
+                </span>Unchecked
+            </label>
+        </div>
+        <div>
+            <span class="k-radio-wrap">
+                <input type="radio" id="radError" required="" class="k-radio k-radio-md k-invalid">
+            </span>
+            <label class="k-radio-label" for="radError">Invalid</label>
+        </div>
+        <div>
+            <label class="k-radio-label">
+                <span class="k-radio-wrap">
+                    <input type="radio" required="" class="k-radio k-radio-md k-invalid">
+                </span>Invalid
+            </label>
+        </div>
+        <div dir="rtl">
+            <span class="k-radio-wrap">
+                <input type="radio" id="radError-rtl" required="" class="k-radio k-radio-md k-invalid">
+            </span>
+            <label class="k-radio-label" for="radError-rtl">Invalid</label>
+        </div>
+        <div dir="rtl">
+            <label class="k-radio-label">
+                <span class="k-radio-wrap">
+                    <input type="radio" required="" class="k-radio k-radio-md k-invalid">
+                </span>Invalid
+            </label>
+        </div>
+        <div>
+            <span class="k-radio-wrap">
+                <input type="radio" id="radFocus" class="k-radio k-radio-md k-focus">
+            </span>
+            <label class="k-radio-label" for="radFocus">Focus</label>
+        </div>
+        <div>
+            <label class="k-radio-label">
+                <span class="k-radio-wrap">
+                    <input type="radio" class="k-radio k-radio-md k-focus">
+                </span>Focus
+            </label>
+        </div>
+        <div dir="rtl">
+            <span class="k-radio-wrap">
+                <input type="radio" id="radFocus-rtl" class="k-radio k-radio-md k-focus">
+            </span>
+            <label class="k-radio-label" for="radFocus-rtl">Focus</label>
+        </div>
+        <div dir="rtl">
+            <label class="k-radio-label">
+                <span class="k-radio-wrap">
+                    <input type="radio" class="k-radio k-radio-md k-focus">
+                </span>Focus
+            </label>
+        </div>
+        <div class="k-ripple-container">
+            <span class="k-radio-wrap">
+                <input type="radio" id="radRipple" class="k-radio k-radio-md k-focus">
+            </span>
+            <label class="k-radio-label" for="radRipple">Ripple</label>
+        </div>
+        <div class="k-ripple-container">
+            <label class="k-radio-label">
+                <span class="k-radio-wrap">
+                    <input type="radio" class="k-radio k-radio-md k-focus">
+                </span>Ripple
+            </label>
+        </div>
+        <div class="k-ripple-container" dir="rtl">
+            <span class="k-radio-wrap">
+                <input type="radio" id="radRipple-rtl" class="k-radio k-radio-md k-focus">
+            </span>
+            <label class="k-radio-label" for="radRipple-rtl">Ripple</label>
+        </div>
+        <div class="k-ripple-container" dir="rtl">
+            <label class="k-radio-label">
+                <span class="k-radio-wrap">
+                    <input type="radio" class="k-radio k-radio-md k-focus">
+                </span>Ripple
+            </label>
+        </div>
+        <div>
+            <span class="k-radio-wrap">
+                <input type="radio" id="radLong" class="k-radio k-radio-md k-checked" checked="">
+            </span>
+            <label class="k-radio-label" for="radLong">Long label Vivamus a arcu lacus. Integer augue leo.</label>
+        </div>
+        <div>
+            <label class="k-radio-label">
+                <span class="k-radio-wrap">
+                    <input type="radio" class="k-radio k-radio-md k-checked" checked="">
+                </span>Long label Vivamus a arcu lacus. Integer augue leo.
+            </label>
+        </div>
+        <div dir="rtl">
+            <span class="k-radio-wrap">
+                <input type="radio" id="radLong-rtl" class="k-radio k-radio-md k-checked" checked="">
+            </span>
+            <label class="k-radio-label" for="radLong-rtl">Long label Vivamus a arcu lacus. Integer augue leo.</label>
+        </div>
+        <div dir="rtl">
+            <label class="k-radio-label">
+                <span class="k-radio-wrap">
+                    <input type="radio" class="k-radio k-radio-md k-checked" checked="">
+                </span>Long label Vivamus a arcu lacus. Integer augue leo.
+            </label>
+        </div>
+    </div>
+</body>
+</html>

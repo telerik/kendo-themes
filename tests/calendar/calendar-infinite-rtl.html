@@ -1,27 +1,20 @@
 <!doctype html>
-<html lang="en" class="k-no-animations">
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width:15px;">
 <head>
-    <title>Infinite calendar RTL</title>
+    <title>Calendar Infinite RTL</title>
     <meta charset="utf-8">
     <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
     <link rel="stylesheet" href="/packages/html/assets/styles.css">
     <script src="/packages/html/assets/scripts.js"></script>
-    <script src="/packages/html/dist/index.js"></script>
 </head>
 <body id="app" class="k-body">
-    <style>
-        #test-area {
-            grid-template-columns: repeat(2, 1fr);
-        }
-
-    </style>
-    <div id="test-area" class="grid">
+    <div id="test-area" class="k-d-grid k-grid-cols-2">
         <section>
             <div>infinite calendar month</div>
-            <kendo-calendar class="k-widget k-calendar k-calendar-infinite" dir="rtl">
-                <kendo-calendar-navigation class="k-calendar-navigation">
+            <div class="k-widget k-calendar k-calendar-infinite" dir="rtl">
+                <div class="k-calendar-navigation">
                     <span class="k-calendar-navigation-highlight"></span>
-                    <kendo-virtualization class="k-content k-scrollable">
+                    <div class="k-content k-scrollable">
                         <ul class="k-reset">
                             <li>
                                 <span>Nov</span>
@@ -114,27 +107,28 @@
                                 <span>Apr</span>
                             </li>
                         </ul>
-                        <!-- virtualizaton scrollbar -->
                         <div class="k-scrollable-placeholder" style="height: 1000px;"></div>
-                    </kendo-virtualization>
-                </kendo-calendar-navigation>
-                <kendo-calendar-viewlist class="k-calendar-view k-calendar-monthview k-vstack">
-                    <kendo-calendar-header class="k-calendar-header k-hstack">
-                        <button is="Button" fillMode="flat" class="k-calendar-title k-title">April 2018</button>
+                    </div>
+                </div>
+                <div class="k-calendar-view k-calendar-monthview k-vstack">
+                    <div class="k-calendar-header k-hstack">
+                        <button class="k-calendar-title k-title k-button k-button-md k-button-flat k-button-flat-base k-rounded-md">
+                            <span class="k-button-text">April 2018</span>
+                        </button>
                         <span class="k-spacer"></span>
                         <span class="k-calendar-nav k-hstack">
                             <span class="k-nav-today">Today</span>
                         </span>
-                    </kendo-calendar-header>
+                    </div>
                     <table class="k-calendar-table k-calendar-weekdays">
                         <colgroup>
-                            <col />
-                            <col />
-                            <col />
-                            <col />
-                            <col />
-                            <col />
-                            <col />
+                            <col>
+                            <col>
+                            <col>
+                            <col>
+                            <col>
+                            <col>
+                            <col>
                         </colgroup>
                         <thead class="k-calendar-thead">
                             <tr class="k-calendar-tr">
@@ -148,16 +142,16 @@
                             </tr>
                         </thead>
                     </table>
-                    <kendo-virtualization class="k-content k-scrollable k-flex">
+                    <div class="k-content k-scrollable k-flex">
                         <table class="k-calendar-table">
                             <colgroup>
-                                <col />
-                                <col />
-                                <col />
-                                <col />
-                                <col />
-                                <col />
-                                <col />
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
                             </colgroup>
                             <tbody class="k-calendar-tbody">
                                 <tr class="k-calendar-tr">
@@ -282,20 +276,19 @@
                                 <tr class="k-calendar-tr">
                                     <th class="k-calendar-caption" scope="col" colspan="7">May 2018</th>
                                 </tr>
-                                <!-- content omitted for brevity-->
                             </tbody>
                         </table>
                         <div class="k-scrollable-placeholder" style="height: 1000px;"></div>
-                    </kendo-virtualization>
-                </kendo-calendar-viewlist>
-            </kendo-calendar>
+                    </div>
+                </div>
+            </div>
         </section>
         <section>
             <div>infinite calendar with long month names</div>
-            <kendo-calendar class="k-widget k-calendar k-calendar-infinite" dir="rtl">
-                <kendo-calendar-navigation class="k-calendar-navigation">
+            <div class="k-widget k-calendar k-calendar-infinite" dir="rtl">
+                <div class="k-calendar-navigation">
                     <span class="k-calendar-navigation-highlight"></span>
-                    <kendo-virtualization class="k-content k-scrollable">
+                    <div class="k-content k-scrollable">
                         <ul class="k-reset">
                             <li>
                                 <span>de nov.</span>
@@ -388,27 +381,28 @@
                                 <span>d’abr.</span>
                             </li>
                         </ul>
-                        <!-- virtualizaton scrollbar -->
                         <div class="k-scrollable-placeholder" style="height: 1000px;"></div>
-                    </kendo-virtualization>
-                </kendo-calendar-navigation>
-                <kendo-calendar-viewlist class="k-calendar-view k-calendar-monthview k-vstack">
-                    <kendo-calendar-header class="k-calendar-header k-hstack">
-                        <button is="Button" fillMode="flat" class="k-calendar-title k-title">d’abril 2018</button>
+                    </div>
+                </div>
+                <div class="k-calendar-view k-calendar-monthview k-vstack">
+                    <div class="k-calendar-header k-hstack">
+                        <button class="k-calendar-title k-title k-button k-button-md k-button-flat k-button-flat-base k-rounded-md">
+                            <span class="k-button-text">d’abril 2018</span>
+                        </button>
                         <span class="k-spacer"></span>
                         <span class="k-calendar-nav k-hstack">
                             <span class="k-nav-today">Today</span>
                         </span>
-                    </kendo-calendar-header>
+                    </div>
                     <table class="k-calendar-table k-calendar-weekdays">
                         <colgroup>
-                            <col />
-                            <col />
-                            <col />
-                            <col />
-                            <col />
-                            <col />
-                            <col />
+                            <col>
+                            <col>
+                            <col>
+                            <col>
+                            <col>
+                            <col>
+                            <col>
                         </colgroup>
                         <thead class="k-calendar-thead">
                             <tr class="k-calendar-tr">
@@ -422,16 +416,16 @@
                             </tr>
                         </thead>
                     </table>
-                    <kendo-virtualization class="k-content k-scrollable k-flex">
+                    <div class="k-content k-scrollable k-flex">
                         <table class="k-calendar-table">
                             <colgroup>
-                                <col />
-                                <col />
-                                <col />
-                                <col />
-                                <col />
-                                <col />
-                                <col />
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
                             </colgroup>
                             <tbody class="k-calendar-tbody">
                                 <tr class="k-calendar-tr">
@@ -556,20 +550,19 @@
                                 <tr class="k-calendar-tr">
                                     <th class="k-calendar-caption" scope="col" colspan="7">May 2018</th>
                                 </tr>
-                                <!-- content omitted for brevity-->
                             </tbody>
                         </table>
                         <div class="k-scrollable-placeholder" style="height: 1000px;"></div>
-                    </kendo-virtualization>
-                </kendo-calendar-viewlist>
-            </kendo-calendar>
+                    </div>
+                </div>
+            </div>
         </section>
         <section>
             <div>infinite calendar year</div>
-            <kendo-calendar class="k-widget k-calendar k-calendar-infinite" dir="rtl">
-                <kendo-calendar-navigation class="k-calendar-navigation">
+            <div class="k-widget k-calendar k-calendar-infinite" dir="rtl">
+                <div class="k-calendar-navigation">
                     <span class="k-calendar-navigation-highlight"></span>
-                    <kendo-virtualization class="k-content k-scrollable">
+                    <div class="k-content k-scrollable">
                         <ul class="k-reset">
                             <li>
                                 <span>2013</span>
@@ -663,23 +656,25 @@
                             </li>
                         </ul>
                         <div class="k-scrollable-placeholder" style="height: 1000px;"></div>
-                    </kendo-virtualization>
-                </kendo-calendar-navigation>
-                <kendo-calendar-viewlist class="k-calendar-view k-calendar-yearview k-vstack">
-                    <kendo-calendar-header class="k-calendar-header k-hstack">
-                        <button is="Button" fillMode="flat" class="k-calendar-title k-title">2018</button>
+                    </div>
+                </div>
+                <div class="k-calendar-view k-calendar-yearview k-vstack">
+                    <div class="k-calendar-header k-hstack">
+                        <button class="k-calendar-title k-title k-button k-button-md k-button-flat k-button-flat-base k-rounded-md">
+                            <span class="k-button-text">2018</span>
+                        </button>
                         <span class="k-spacer"></span>
                         <span class="k-calendar-nav k-hstack">
                             <span class="k-nav-today">Today</span>
                         </span>
-                    </kendo-calendar-header>
-                    <kendo-virtualization class="k-content k-scrollable k-flex">
+                    </div>
+                    <div class="k-content k-scrollable k-flex">
                         <table class="k-calendar-table">
                             <colgroup>
-                                <col />
-                                <col />
-                                <col />
-                                <col />
+                                <col>
+                                <col>
+                                <col>
+                                <col>
                             </colgroup>
                             <tbody class="k-calendar-tbody">
                                 <tr class="k-calendar-tr">
@@ -777,16 +772,16 @@
                             </tbody>
                         </table>
                         <div class="k-scrollable-placeholder" style="height: 1000px;"></div>
-                    </kendo-virtualization>
-                </kendo-calendar-viewlist>
-            </kendo-calendar>
+                    </div>
+                </div>
+            </div>
         </section>
         <section>
             <div>infinite calendar decade</div>
-            <kendo-calendar class="k-widget k-calendar k-calendar-infinite" dir="rtl">
-                <kendo-calendar-navigation class="k-calendar-navigation">
+            <div class="k-widget k-calendar k-calendar-infinite" dir="rtl">
+                <div class="k-calendar-navigation">
                     <span class="k-calendar-navigation-highlight"></span>
-                    <kendo-virtualization class="k-content k-scrollable">
+                    <div class="k-content k-scrollable">
                         <ul class="k-reset">
                             <li>
                                 <span>1960</span>
@@ -832,23 +827,25 @@
                             </li>
                         </ul>
                         <div class="k-scrollable-placeholder" style="height: 1000px;"></div>
-                    </kendo-virtualization>
-                </kendo-calendar-navigation>
-                <kendo-calendar-viewlist class="k-calendar-view k-calendar-decadeview k-vstack">
-                    <kendo-calendar-header class="k-calendar-header k-hstack">
-                        <button is="Button" fillMode="flat" class="k-calendar-title k-title">2010 - 2019</button>
+                    </div>
+                </div>
+                <div class="k-calendar-view k-calendar-decadeview k-vstack">
+                    <div class="k-calendar-header k-hstack">
+                        <button class="k-calendar-title k-title k-button k-button-md k-button-flat k-button-flat-base k-rounded-md">
+                            <span class="k-button-text">2010 - 2019</span>
+                        </button>
                         <span class="k-spacer"></span>
                         <span class="k-calendar-nav k-hstack">
                             <span class="k-nav-today">Today</span>
                         </span>
-                    </kendo-calendar-header>
-                    <kendo-virtualization class="k-content k-scrollable k-flex">
+                    </div>
+                    <div class="k-content k-scrollable k-flex">
                         <table class="k-calendar-table">
                             <colgroup>
-                                <col />
-                                <col />
-                                <col />
-                                <col />
+                                <col>
+                                <col>
+                                <col>
+                                <col>
                             </colgroup>
                             <tbody class="k-calendar-tbody">
                                 <tr class="k-calendar-tr">
@@ -938,16 +935,16 @@
                             </tbody>
                         </table>
                         <div class="k-scrollable-placeholder" style="height: 1000px;"></div>
-                    </kendo-virtualization>
-                </kendo-calendar-viewlist>
-            </kendo-calendar>
+                    </div>
+                </div>
+            </div>
         </section>
         <section>
             <div>infinite calendar century</div>
-            <kendo-calendar class="k-widget k-calendar k-calendar-infinite" dir="rtl">
-                <kendo-calendar-navigation class="k-calendar-navigation">
+            <div class="k-widget k-calendar k-calendar-infinite" dir="rtl">
+                <div class="k-calendar-navigation">
                     <span class="k-calendar-navigation-highlight"></span>
-                    <kendo-virtualization class="k-content k-scrollable">
+                    <div class="k-content k-scrollable">
                         <ul class="k-reset">
                             <li>
                                 <span>1900</span>
@@ -957,23 +954,25 @@
                             </li>
                         </ul>
                         <div class="k-scrollable-placeholder" style="height: 1000px;"></div>
-                    </kendo-virtualization>
-                </kendo-calendar-navigation>
-                <kendo-calendar-viewlist class="k-calendar-view k-calendar-centuryview k-vstack">
-                    <kendo-calendar-header class="k-calendar-header k-hstack">
-                        <button is="Button" fillMode="flat" class="k-calendar-title k-title">2000 - 2099</button>
+                    </div>
+                </div>
+                <div class="k-calendar-view k-calendar-centuryview k-vstack">
+                    <div class="k-calendar-header k-hstack">
+                        <button class="k-calendar-title k-title k-button k-button-md k-button-flat k-button-flat-base k-rounded-md">
+                            <span class="k-button-text">2000 - 2099</span>
+                        </button>
                         <span class="k-spacer"></span>
                         <span class="k-calendar-nav k-hstack">
                             <span class="k-nav-today">Today</span>
                         </span>
-                    </kendo-calendar-header>
-                    <kendo-virtualization class="k-content k-scrollable k-flex">
+                    </div>
+                    <div class="k-content k-scrollable k-flex">
                         <table class="k-calendar-table">
                             <colgroup>
-                                <col />
-                                <col />
-                                <col />
-                                <col />
+                                <col>
+                                <col>
+                                <col>
+                                <col>
                             </colgroup>
                             <tbody class="k-calendar-tbody">
                                 <tr class="k-calendar-tr">
@@ -1063,16 +1062,16 @@
                             </tbody>
                         </table>
                         <div class="k-scrollable-placeholder" style="height: 1000px;"></div>
-                    </kendo-virtualization>
-                </kendo-calendar-viewlist>
-            </kendo-calendar>
+                    </div>
+                </div>
+            </div>
         </section>
         <section>
             <div>infinite calendar empty cells</div>
-            <kendo-calendar class="k-widget k-calendar k-calendar-infinite" dir="rtl">
-                <kendo-calendar-navigation class="k-calendar-navigation">
+            <div class="k-widget k-calendar k-calendar-infinite" dir="rtl">
+                <div class="k-calendar-navigation">
                     <span class="k-calendar-navigation-highlight"></span>
-                    <kendo-virtualization class="k-content k-scrollable">
+                    <div class="k-content k-scrollable">
                         <ul class="k-reset" style="transform: translateY(136px);">
                             <li>
                                 <span>2018</span>
@@ -1082,23 +1081,25 @@
                             </li>
                         </ul>
                         <div class="k-scrollable-placeholder" style="height: 328px;"></div>
-                    </kendo-virtualization>
-                </kendo-calendar-navigation>
-                <kendo-calendar-viewlist class="k-calendar-view k-calendar-yearview k-vstack">
-                    <kendo-calendar-header class="k-calendar-header k-hstack">
-                        <button is="Button" fillMode="flat" class="k-calendar-title k-title">2018</button>
+                    </div>
+                </div>
+                <div class="k-calendar-view k-calendar-yearview k-vstack">
+                    <div class="k-calendar-header k-hstack">
+                        <button class="k-calendar-title k-title k-button k-button-md k-button-flat k-button-flat-base k-rounded-md">
+                            <span class="k-button-text">2018</span>
+                        </button>
                         <span class="k-spacer"></span>
                         <span class="k-calendar-nav k-hstack">
                             <span class="k-nav-today">Today</span>
                         </span>
-                    </kendo-calendar-header>
-                    <kendo-virtualization class="k-content k-scrollable k-flex">
+                    </div>
+                    <div class="k-content k-scrollable k-flex">
                         <table class="k-calendar-table" style="transform: translateY(-35px);">
                             <colgroup>
-                                <col />
-                                <col />
-                                <col />
-                                <col />
+                                <col>
+                                <col>
+                                <col>
+                                <col>
                             </colgroup>
                             <tbody class="k-calendar-tbody">
                                 <tr class="k-calendar-tr">
@@ -1159,16 +1160,16 @@
                             </tbody>
                         </table>
                         <div class="k-scrollable-placeholder" style="height: 435px;"></div>
-                    </kendo-virtualization>
-                </kendo-calendar-viewlist>
-            </kendo-calendar>
+                    </div>
+                </div>
+            </div>
         </section>
         <section>
             <div>infinite calendar - week number column</div>
-            <kendo-calendar class="k-widget k-calendar k-calendar-infinite k-week-number" dir="rtl">
-                <kendo-calendar-navigation class="k-calendar-navigation">
+            <div class="k-widget k-calendar k-calendar-infinite k-week-number" dir="rtl">
+                <div class="k-calendar-navigation">
                     <span class="k-calendar-navigation-highlight"></span>
-                    <kendo-virtualization class="k-content k-scrollable">
+                    <div class="k-content k-scrollable">
                         <ul class="k-reset">
                             <li>
                                 <span>Oct</span>
@@ -1262,28 +1263,31 @@
                             </li>
                         </ul>
                         <div class="k-scrollable-placeholder" style="height: 1000px;"></div>
-                    </kendo-virtualization>
-                </kendo-calendar-navigation>
-                <kendo-calendar-viewlist class="k-calendar-view k-calendar-monthview k-vstack">
-                    <kendo-calendar-header class="k-calendar-header k-hstack">
-                        <button is="Button" fillMode="flat" class="k-calendar-title k-title">March 2020</button>
+                    </div>
+                </div>
+                <div class="k-calendar-view k-calendar-monthview k-vstack">
+                    <div class="k-calendar-header k-hstack">
+                        <button class="k-calendar-title k-title k-button k-button-md k-button-flat k-button-flat-base k-rounded-md">
+                            <span class="k-button-text">March 2020</span>
+                        </button>
                         <span class="k-spacer"></span>
                         <span class="k-calendar-nav k-hstack">
                             <span class="k-nav-today">Today</span>
                         </span>
-                    </kendo-calendar-header>
+                    </div>
                     <table class="k-calendar-table k-calendar-weekdays">
-                        <thead class="k-calendar-thead">
-                            <colgroup>
-                                <col />
-                                <col />
-                                <col />
-                                <col />
-                                <col />
-                                <col />
-                                <col />
-                                <col />
-                            </colgroup>
+                        <thead class="k-calendar-thead"></thead>
+                        <colgroup>
+                            <col>
+                            <col>
+                            <col>
+                            <col>
+                            <col>
+                            <col>
+                            <col>
+                            <col>
+                        </colgroup>
+                        <tbody>
                             <tr class="k-calendar-tr">
                                 <th class="k-calendar-th"></th>
                                 <th class="k-calendar-th">Su</th>
@@ -1294,19 +1298,19 @@
                                 <th class="k-calendar-th">Fr</th>
                                 <th class="k-calendar-th">Sa</th>
                             </tr>
-                        </thead>
+                        </tbody>
                     </table>
-                    <kendo-virtualization class="k-content k-scrollable k-flex">
+                    <div class="k-content k-scrollable k-flex">
                         <table class="k-calendar-table">
                             <colgroup>
-                                <col />
-                                <col />
-                                <col />
-                                <col />
-                                <col />
-                                <col />
-                                <col />
-                                <col />
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
                             </colgroup>
                             <tbody class="k-calendar-tbody">
                                 <tr class="k-calendar-tr">
@@ -1941,9 +1945,9 @@
                             </tbody>
                         </table>
                         <div class="k-scrollable-placeholder" style="height: 1000px;"></div>
-                    </kendo-virtualization>
-                </kendo-calendar-viewlist>
-            </kendo-calendar>
+                    </div>
+                </div>
+            </div>
         </section>
     </div>
 </body>

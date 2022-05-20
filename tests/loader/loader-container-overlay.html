@@ -1,18 +1,14 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width:15px;">
 <head>
-    <title>LoaderContainer Overlay</title>
+    <title>LoaderContainer Overlay </title>
     <meta charset="utf-8">
     <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
     <link rel="stylesheet" href="/packages/html/assets/styles.css">
     <script src="/packages/html/assets/scripts.js"></script>
-    <script src="/packages/html/dist/index.js"></script>
 </head>
 <body id="app" class="k-body">
     <style>
-        #test-area {
-            grid-template-columns: repeat(3, 1fr);
-        }
         .example {
             width: 100%;
             min-height: 200px;
@@ -20,8 +16,7 @@
         }
 
     </style>
-    <!-- Remove the .k-no-animations class in order to enable the animations -->
-    <div id="test-area" class="grid k-no-animations">
+    <div id="test-area" class="k-d-grid k-grid-cols-3">
         <span></span>
         <span class="col">Dark</span>
         <span class="col">Light</span>

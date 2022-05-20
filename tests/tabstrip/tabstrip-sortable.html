@@ -1,40 +1,34 @@
 <!doctype html>
-<html lang="en" class="k-no-animations">
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width:15px;">
 <head>
     <title>TabStrip Sortable</title>
     <meta charset="utf-8">
     <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
     <link rel="stylesheet" href="/packages/html/assets/styles.css">
     <script src="/packages/html/assets/scripts.js"></script>
-    <script src="/packages/html/dist/index.js"></script>
 </head>
 <body id="app" class="k-body">
     <style>
-        #test-area {
-            grid-template-columns: 1fr 1fr;
-        }
         #test-area .separator {
             width: 100%;
             grid-column: span 2;
         }
 
     </style>
-    <div id="test-area" class="grid">
+    <div id="test-area" class="k-d-grid k-grid-cols-2">
         <section>
-            <kendo-tabstrip class="k-widget k-tabstrip k-floatwrap k-header k-tabstrip-top">
+            <div class="k-widget k-tabstrip k-floatwrap k-header k-tabstrip-top">
                 <div class="k-tabstrip-items-wrapper k-hstack">
                     <ul class="k-reset k-tabstrip-items">
                         <li class="k-item k-first k-state-active k-tabstrip-dragging">
                             <span class="k-link">First</span>
                         </li>
-                        <!--
-                        -->
                         <li class="k-item">
                             <span class="k-link">Closable</span>
-                            <button is="Button" fillMode="flat" icon="close" class="k-remove-tab"></button>
+                            <button class="k-remove-tab k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                                <span class="k-button-icon k-icon k-i-close"></span>
+                            </button>
                         </li>
-                        <!--
-                        -->
                         <li class="k-item k-state-focused">
                             <span class="k-link">Focused</span>
                         </li>
@@ -43,10 +37,10 @@
                 <div class="k-tabstrip-content k-state-active k-state-focused">
                     <div>Top sortable</div>
                 </div>
-            </kendo-tabstrip>
+            </div>
         </section>
         <section>
-            <kendo-tabstrip class="k-widget k-tabstrip k-floatwrap k-header k-tabstrip-bottom">
+            <div class="k-widget k-tabstrip k-floatwrap k-header k-tabstrip-bottom">
                 <div class="k-tabstrip-content k-state-active">
                     <div>Bottom sortable</div>
                 </div>
@@ -55,51 +49,41 @@
                         <li class="k-item k-first k-state-active k-tabstrip-dragging">
                             <span class="k-link">First</span>
                         </li>
-                        <!--
-                        -->
                         <li class="k-item">
                             <span class="k-link">Closable</span>
-                            <button is="Button" fillMode="flat" icon="close" class="k-remove-tab"></button>
+                            <button class="k-remove-tab k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                                <span class="k-button-icon k-icon k-i-close"></span>
+                            </button>
                         </li>
-                        <!--
-                        -->
                         <li class="k-item k-state-focused">
                             <span class="k-link">Focused</span>
                         </li>
                     </ul>
                 </div>
-            </kendo-tabstrip>
+            </div>
         </section>
         <section>
-            <kendo-tabstrip class="k-widget k-tabstrip k-floatwrap k-header k-tabstrip-left">
+            <div class="k-widget k-tabstrip k-floatwrap k-header k-tabstrip-left">
                 <div class="k-tabstrip-items-wrapper k-vstack">
                     <ul class="k-reset k-tabstrip-items">
                         <li class="k-item k-first k-state-active k-tabstrip-dragging">
                             <span class="k-link">Active</span>
                         </li>
-                        <!--
-                        -->
                         <li class="k-item">
                             <span class="k-link">Normal</span>
                         </li>
-                        <!--
-                        -->
                         <li class="k-item k-state-hover">
                             <span class="k-link">Hover</span>
                         </li>
-                        <!--
-                        -->
                         <li class="k-item k-state-focused">
                             <span class="k-link">Focused</span>
                         </li>
-                        <!--
-                        -->
                         <li class="k-item">
                             <span class="k-link">Closable</span>
-                            <button is="Button" fillMode="flat" icon="close" class="k-remove-tab"></button>
+                            <button class="k-remove-tab k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                                <span class="k-button-icon k-icon k-i-close"></span>
+                            </button>
                         </li>
-                        <!--
-                        -->
                         <li class="k-item k-last k-state-disabled">
                             <span class="k-link">Disabled</span>
                         </li>
@@ -108,38 +92,30 @@
                 <div class="k-tabstrip-content k-state-active">
                     <div>Left orientation</div>
                 </div>
-            </kendo-tabstrip>
+            </div>
         </section>
         <section>
-            <kendo-tabstrip class="k-widget k-tabstrip k-floatwrap k-header k-tabstrip-right">
+            <div class="k-widget k-tabstrip k-floatwrap k-header k-tabstrip-right">
                 <div class="k-tabstrip-items-wrapper k-vstack">
                     <ul class="k-reset k-tabstrip-items">
                         <li class="k-item k-first k-state-active k-tabstrip-dragging">
                             <span class="k-link">Active</span>
                         </li>
-                        <!--
-                        -->
                         <li class="k-item">
                             <span class="k-link">Normal</span>
                         </li>
-                        <!--
-                        -->
                         <li class="k-item k-state-hover">
                             <span class="k-link">Hover</span>
                         </li>
-                        <!--
-                        -->
                         <li class="k-item k-state-focused">
                             <span class="k-link">Focused</span>
                         </li>
-                        <!--
-                        -->
                         <li class="k-item">
                             <span class="k-link">Closable</span>
-                            <button is="Button" fillMode="flat" icon="close" class="k-remove-tab"></button>
+                            <button class="k-remove-tab k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                                <span class="k-button-icon k-icon k-i-close"></span>
+                            </button>
                         </li>
-                        <!--
-                        -->
                         <li class="k-item k-last k-state-disabled">
                             <span class="k-link">Disabled</span>
                         </li>
@@ -148,7 +124,7 @@
                 <div class="k-tabstrip-content k-state-active">
                     <div>Right orientation</div>
                 </div>
-            </kendo-tabstrip>
+            </div>
         </section>
     </div>
 </body>

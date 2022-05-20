@@ -1,21 +1,22 @@
 <!doctype html>
-<html lang="en" class="k-no-animations">
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width:15px;">
 <head>
-    <title>Panelbar -- react</title>
+    <title>PanelBar React</title>
     <meta charset="utf-8">
     <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
     <link rel="stylesheet" href="/packages/html/assets/styles.css">
     <script src="/packages/html/assets/scripts.js"></script>
-    <script src="/packages/html/dist/index.js"></script>
 </head>
 <body id="app" class="k-body">
     <style>
         #test-area {
             align-items: start;
         }
+
         .k-sprite {
             background-color: gray;
         }
+
         .k-image {
             width: 16px;
             height: 16px;
@@ -30,25 +31,25 @@
             <div class="k-widget k-panelbar">
                 <div class="k-item">
                     <span class="k-link k-header">
-                        <i is="Icon" name="cog"></i> Root <i is="Icon" class="k-panelbar-expand" name="arrow-s"></i>
+                        <span class="k-icon k-i-cog"></span>Root<span class="k-panelbar-expand k-icon k-i-arrow-s"></span>
                     </span>
                 </div>
                 <div class="k-item">
                     <span class="k-link k-header k-state-hover">
-                        <span class="k-image"></span> Root hover <i is="Icon" class="k-panelbar-expand" name="arrow-s"></i>
+                        <span class="k-image"></span>Root hover<span class="k-panelbar-expand k-icon k-i-arrow-s"></span>
                     </span>
                 </div>
                 <div class="k-item">
                     <span class="k-link k-header k-state-focus">
-                        <span class="k-sprite"></span> Root focus <i is="Icon" class="k-panelbar-expand" name="arrow-s"></i>
+                        <span class="k-sprite"></span>Root focus<span class="k-panelbar-expand k-icon k-i-arrow-s"></span>
                     </span>
                 </div>
                 <div class="k-item">
-                    <span class="k-link k-header k-state-selected"> Root selected <i is="Icon" class="k-panelbar-expand" name="arrow-s"></i>
+                    <span class="k-link k-header k-state-selected">Root selected<span class="k-panelbar-expand k-icon k-i-arrow-s"></span>
                     </span>
                 </div>
                 <div class="k-item">
-                    <span class="k-link k-header k-state-disabled"> Root disabled <i is="Icon" class="k-panelbar-expand" name="arrow-s"></i>
+                    <span class="k-link k-header k-state-disabled">Root disabled<span class="k-panelbar-expand k-icon k-i-arrow-s"></span>
                     </span>
                 </div>
                 <div class="k-item">
@@ -62,7 +63,7 @@
                     <span class="k-link k-header">First</span>
                 </div>
                 <div class="k-item k-state-expanded">
-                    <span class="k-link k-header"> Middle expanded <i is="Icon" class="k-panelbar-collapse" name="arrow-n"></i>
+                    <span class="k-link k-header">Middle expanded<span class="k-panelbar-collapse k-icon k-i-arrow-n"></span>
                     </span>
                     <div class="k-animation-container k-animation-container-relative" style="display: block;">
                         <div class="k-child-animation-container">
@@ -71,19 +72,19 @@
                                     <span class="k-link">Child</span>
                                 </div>
                                 <div class="k-item">
-                                    <span class="k-link k-state-hover"> Child hover <i is="Icon" class="k-panelbar-expand" name="arrow-s"></i>
+                                    <span class="k-link k-state-hover">Child hover<span class="k-panelbar-expand k-icon k-i-arrow-s"></span>
                                     </span>
                                 </div>
                                 <div class="k-item">
-                                    <span class="k-link k-state-focus"> Child focus <i is="Icon" class="k-panelbar-expand" name="arrow-s"></i>
+                                    <span class="k-link k-state-focus">Child focus<span class="k-panelbar-expand k-icon k-i-arrow-s"></span>
                                     </span>
                                 </div>
                                 <div class="k-item">
-                                    <span class="k-link k-state-selected"> Child selected <i is="Icon" class="k-panelbar-expand" name="arrow-s"></i>
+                                    <span class="k-link k-state-selected">Child selected<span class="k-panelbar-expand k-icon k-i-arrow-s"></span>
                                     </span>
                                 </div>
                                 <div class="k-item k-state-expanded">
-                                    <span class="k-link"> Child expanded <i is="Icon" class="k-panelbar-collapse" name="arrow-n"></i>
+                                    <span class="k-link">Child expanded<span class="k-panelbar-collapse k-icon k-i-arrow-n"></span>
                                     </span>
                                     <div class="k-animation-container k-animation-container-relative" style="display: block;">
                                         <div class="k-child-animation-container">
@@ -102,7 +103,7 @@
                                     </div>
                                 </div>
                                 <div class="k-item">
-                                    <span class="k-link k-state-disabled"> Child disabled <i is="Icon" class="k-panelbar-expand" name="arrow-s"></i>
+                                    <span class="k-link k-state-disabled">Child disabled<span class="k-panelbar-expand k-icon k-i-arrow-s"></span>
                                     </span>
                                 </div>
                                 <div class="k-item">
@@ -120,7 +121,7 @@
         <section>
             <div class="k-widget k-panelbar">
                 <div class="k-item k-state-expanded">
-                    <span class="k-link k-header"> First expanded <i is="Icon" class="k-panelbar-collapse" name="arrow-n"></i>
+                    <span class="k-link k-header">First expanded<span class="k-panelbar-collapse k-icon k-i-arrow-n"></span>
                     </span>
                     <div class="k-animation-container k-animation-container-relative" style="display: block;">
                         <div class="k-child-animation-container">
@@ -148,7 +149,7 @@
                     <span class="k-link k-header">Middle</span>
                 </div>
                 <div class="k-item k-state-expanded">
-                    <span class="k-link k-header"> Last expanded <i is="Icon" class="k-panelbar-collapse" name="arrow-n"></i>
+                    <span class="k-link k-header">Last expanded<span class="k-panelbar-collapse k-icon k-i-arrow-n"></span>
                     </span>
                     <div class="k-animation-container k-animation-container-relative" style="display: block;">
                         <div class="k-child-animation-container">
@@ -166,25 +167,25 @@
             <div class="k-widget k-panelbar">
                 <div class="k-item">
                     <span class="k-link k-header">
-                        <i is="Icon" name="cog"></i> Root <i is="Icon" class="k-panelbar-expand" name="arrow-s"></i>
+                        <span class="k-icon k-i-cog"></span>Root<span class="k-panelbar-expand k-icon k-i-arrow-s"></span>
                     </span>
                 </div>
                 <div class="k-item">
                     <span class="k-link k-header k-state-hover">
-                        <span class="k-image"></span> Root hover <i is="Icon" class="k-panelbar-expand" name="arrow-s"></i>
+                        <span class="k-image"></span>Root hover<span class="k-panelbar-expand k-icon k-i-arrow-s"></span>
                     </span>
                 </div>
                 <div class="k-item">
                     <span class="k-link k-header k-state-focus">
-                        <span class="k-sprite"></span> Root focus <i is="Icon" class="k-panelbar-expand" name="arrow-s"></i>
+                        <span class="k-sprite"></span>Root focus<span class="k-panelbar-expand k-icon k-i-arrow-s"></span>
                     </span>
                 </div>
                 <div class="k-item">
-                    <span class="k-link k-header k-state-selected"> Root selected <i is="Icon" class="k-panelbar-expand" name="arrow-s"></i>
+                    <span class="k-link k-header k-state-selected">Root selected<span class="k-panelbar-expand k-icon k-i-arrow-s"></span>
                     </span>
                 </div>
                 <div class="k-item">
-                    <span class="k-link k-header k-state-disabled"> Root disabled <i is="Icon" class="k-panelbar-expand" name="arrow-s"></i>
+                    <span class="k-link k-header k-state-disabled">Root disabled<span class="k-panelbar-expand k-icon k-i-arrow-s"></span>
                     </span>
                 </div>
                 <div class="k-item">
@@ -198,7 +199,7 @@
                     <span class="k-link k-header">First</span>
                 </div>
                 <div class="k-item k-state-expanded">
-                    <span class="k-link k-header"> Middle expanded <i is="Icon" class="k-panelbar-collapse" name="arrow-n"></i>
+                    <span class="k-link k-header">Middle expanded<span class="k-panelbar-collapse k-icon k-i-arrow-n"></span>
                     </span>
                     <div class="k-animation-container k-animation-container-relative" style="display: block;">
                         <div class="k-child-animation-container">
@@ -207,19 +208,19 @@
                                     <span class="k-link">Child</span>
                                 </div>
                                 <div class="k-item">
-                                    <span class="k-link k-state-hover"> Child hover <i is="Icon" class="k-panelbar-expand" name="arrow-s"></i>
+                                    <span class="k-link k-state-hover">Child hover<span class="k-panelbar-expand k-icon k-i-arrow-s"></span>
                                     </span>
                                 </div>
                                 <div class="k-item">
-                                    <span class="k-link k-state-focus"> Child focus <i is="Icon" class="k-panelbar-expand" name="arrow-s"></i>
+                                    <span class="k-link k-state-focus">Child focus<span class="k-panelbar-expand k-icon k-i-arrow-s"></span>
                                     </span>
                                 </div>
                                 <div class="k-item">
-                                    <span class="k-link k-state-selected"> Child selected <i is="Icon" class="k-panelbar-expand" name="arrow-s"></i>
+                                    <span class="k-link k-state-selected">Child selected<span class="k-panelbar-expand k-icon k-i-arrow-s"></span>
                                     </span>
                                 </div>
                                 <div class="k-item k-state-expanded">
-                                    <span class="k-link"> Child expanded <i is="Icon" class="k-panelbar-collapse" name="arrow-n"></i>
+                                    <span class="k-link">Child expanded<span class="k-panelbar-collapse k-icon k-i-arrow-n"></span>
                                     </span>
                                     <div class="k-animation-container k-animation-container-relative" style="display: block;">
                                         <div class="k-child-animation-container">
@@ -238,7 +239,7 @@
                                     </div>
                                 </div>
                                 <div class="k-item">
-                                    <span class="k-link k-state-disabled"> Child disabled <i is="Icon" class="k-panelbar-expand" name="arrow-s"></i>
+                                    <span class="k-link k-state-disabled">Child disabled<span class="k-panelbar-expand k-icon k-i-arrow-s"></span>
                                     </span>
                                 </div>
                                 <div class="k-item">
@@ -256,7 +257,7 @@
         <section class="k-rtl">
             <div class="k-widget k-panelbar">
                 <div class="k-item k-state-expanded">
-                    <span class="k-link k-header"> First expanded <i is="Icon" class="k-panelbar-collapse" name="arrow-n"></i>
+                    <span class="k-link k-header">First expanded<span class="k-panelbar-collapse k-icon k-i-arrow-n"></span>
                     </span>
                     <div class="k-animation-container k-animation-container-relative" style="display: block;">
                         <div class="k-child-animation-container">
@@ -284,7 +285,7 @@
                     <span class="k-link k-header">Middle</span>
                 </div>
                 <div class="k-item k-state-expanded">
-                    <span class="k-link k-header"> Last expanded <i is="Icon" class="k-panelbar-collapse" name="arrow-n"></i>
+                    <span class="k-link k-header">Last expanded<span class="k-panelbar-collapse k-icon k-i-arrow-n"></span>
                     </span>
                     <div class="k-animation-container k-animation-container-relative" style="display: block;">
                         <div class="k-child-animation-container">

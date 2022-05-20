@@ -1,37 +1,42 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width:15px;">
 <head>
     <title>Scheduler jQuery Agenda</title>
     <meta charset="utf-8">
     <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
     <link rel="stylesheet" href="/packages/html/assets/styles.css">
     <script src="/packages/html/assets/scripts.js"></script>
-    <script src="/packages/html/dist/index.js"></script>
 </head>
 <body id="app" class="k-body">
     <style>
         #test-area {
-            grid-template-columns: 1fr;
             align-items: top;
         }
         th {
             text-align: left;
         }
+
         .k-scheduler-mark {
             background: gold;
         }
 
     </style>
-    <div id="test-area" class="grid">
+    <div id="test-area" class="k-d-grid k-grid-cols-1">
         <div class="k-widget k-scheduler">
             <div class="k-scheduler-toolbar k-toolbar">
                 <span class="k-button-group k-scheduler-navigation">
-                    <button is="Button">Today</button>
-                    <button is="Button" icon="arrow-60-left"></button>
-                    <button is="Button" icon="arrow-60-right"></button>
+                    <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                        <span class="k-button-text">Today</span>
+                    </button>
+                    <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                        <span class="k-button-icon k-icon k-i-arrow-60-left"></span>
+                    </button>
+                    <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                        <span class="k-button-icon k-icon k-i-arrow-60-right"></span>
+                    </button>
                 </span>
                 <a href="#" class="k-nav-current">
-                    <i is="Icon" name="calendar"></i>
+                    <span class="k-icon k-i-calendar"></span>
                     <span class="k-sm-date-format">6/10/2013 - 6/14/2013</span>
                     <span class="k-lg-date-format">Monday, June 10, 2013 - Friday, June 14, 2013</span>
                 </a>
@@ -41,11 +46,21 @@
                         <option>Agenda</option>
                     </select>
                     <span class="k-button-group k-scheduler-views">
-                        <button is="Button">Day</button>
-                        <button is="Button">Week</button>
-                        <button is="Button">Month</button>
-                        <button is="Button">Timeline</button>
-                        <button is="Button" selected>Agenda</button>
+                        <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                            <span class="k-button-text">Day</span>
+                        </button>
+                        <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                            <span class="k-button-text">Week</span>
+                        </button>
+                        <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                            <span class="k-button-text">Month</span>
+                        </button>
+                        <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                            <span class="k-button-text">Timeline</span>
+                        </button>
+                        <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-selected">
+                            <span class="k-button-text">Agenda</span>
+                        </button>
                     </span>
                 </span>
             </div>
@@ -87,7 +102,7 @@
                                                     <span class="k-scheduler-mark"></span>
                                                     <span class="k-scheduler-task-text">Normal</span>
                                                     <a class="k-link k-event-delete">
-                                                        <i is="Icon" name="x"></i>
+                                                        <span class="k-icon k-i-x"></span>
                                                     </a>
                                                 </div>
                                             </td>
@@ -106,7 +121,7 @@
                                                     <span class="k-scheduler-mark"></span>
                                                     <span class="k-scheduler-task-text">Hover</span>
                                                     <a class="k-link k-event-delete">
-                                                        <i is="Icon" name="x"></i>
+                                                        <span class="k-icon k-i-x"></span>
                                                     </a>
                                                 </div>
                                             </td>
@@ -125,7 +140,7 @@
                                                     <span class="k-scheduler-mark"></span>
                                                     <span class="k-scheduler-task-text">Selected</span>
                                                     <a class="k-link k-event-delete">
-                                                        <i is="Icon" name="x"></i>
+                                                        <span class="k-icon k-i-x"></span>
                                                     </a>
                                                 </div>
                                             </td>
@@ -142,7 +157,7 @@
                                             <td>
                                                 <div class="k-task">
                                                     <span class="k-scheduler-mark"></span>
-                                                    <i is="Icon" name="reload"></i>
+                                                    <span class="k-icon k-i-reload"></span>
                                                     <span class="k-scheduler-task-text">Recurring</span>
                                                 </div>
                                             </td>
@@ -155,7 +170,9 @@
                 </tbody>
             </table>
             <div class="k-scheduler-footer k-toolbar">
-                <button is="Button" icon="clock">Show business hours</button>
+                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                    <span class="k-button-icon k-icon k-i-clock"></span>Show business hours
+                </button>
             </div>
         </div>
     </div>

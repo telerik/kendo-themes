@@ -1,24 +1,25 @@
 <!doctype html>
-<html lang="en" class="k-no-animations">
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width:15px;">
 <head>
-    <title>Grid Sticky Columns</title>
+    <title>Grid Sticky Columns RTL</title>
     <meta charset="utf-8">
     <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
     <link rel="stylesheet" href="/packages/html/assets/styles.css">
     <script src="/packages/html/assets/scripts.js"></script>
-    <script src="/packages/html/dist/index.js"></script>
 </head>
 <body id="app" class="k-body">
-    <div id="test-area" class="grid">
+    <div id="test-area" class="k-d-grid">
         <p>React Grid - Sticky columns - RTL</p>
         <div class="k-widget k-grid k-rtl" role="grid" style="height: 700px; width: 500px;">
             <div class="k-grouping-header k-grouping-header-flex">
                 <div class="k-indicator-container" style="touch-action: none;">
                     <div class="k-group-indicator">
                         <a class="k-link" href="#">
-                            <i is="Icon" name="sort-asc-sm"></i>shipName
+                            <span class="k-icon k-i-sort-asc-sm"></span>shipName
                         </a>
-                        <button is="Button" fillMode="flat" icon="close"></button>
+                        <button class="k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                            <span class="k-button-icon k-icon k-i-close"></span>
+                        </button>
                     </div>
                 </div>
                 <div class="k-indicator-container"></div>
@@ -27,14 +28,14 @@
                 <div class="k-grid-header-wrap" style="border-width: 0px;">
                     <table style="width: 1434px;">
                         <colgroup>
-                            <col width="32px" />
-                            <col width="32px" />
-                            <col width="200px" />
-                            <col width="300px" />
-                            <col width="280px" />
-                            <col width="200px" />
-                            <col width="300px" />
-                            <col width="90px" />
+                            <col width="32px">
+                            <col width="32px">
+                            <col width="200px">
+                            <col width="300px">
+                            <col width="280px">
+                            <col width="200px">
+                            <col width="300px">
+                            <col width="90px">
                         </colgroup>
                         <thead>
                             <tr role="row" style="touch-action: none;">
@@ -48,7 +49,7 @@
                                     <a class="k-link" href="#">customerID</a>
                                 </th>
                                 <th colspan="1" rowspan="1" class="k-header k-sorted">
-                                    <a class="k-link" href="#">orderDate<i is="Icon" name="sort-desc-sm"></i>
+                                    <a class="k-link" href="#">orderDate<span class="k-icon k-i-sort-desc-sm"></span>
                                     </a>
                                 </th>
                                 <th colspan="1" rowspan="1" class="k-header">
@@ -73,27 +74,27 @@
                     <div style="position: relative;">
                         <table class="k-grid-table" style="width: 1434px;">
                             <colgroup>
-                                <col width="32px" />
-                                <col width="32px" />
-                                <col width="200px" />
-                                <col class="k-sorted" width="300px" />
-                                <col width="280px" />
-                                <col width="200px" />
-                                <col width="300px" />
-                                <col width="90px" />
+                                <col width="32px">
+                                <col width="32px">
+                                <col width="200px">
+                                <col class="k-sorted" width="300px">
+                                <col width="280px">
+                                <col width="200px">
+                                <col width="300px">
+                                <col width="90px">
                             </colgroup>
                             <tbody>
                                 <tr class="k-grouping-row" role="row">
                                     <td colspan="8" style="left: 0px; right: 0px;">
                                         <p class="k-reset">
-                                            <i is="Icon" name="collapse"></i>Lehmanns Marktstand
+                                            <span class="k-icon k-i-collapse"></span>Lehmanns Marktstand
                                         </p>
                                     </td>
                                 </tr>
                                 <tr class="k-master-row" role="row">
                                     <td class="k-group-cell" style="left: 0px; right: 0px;"></td>
                                     <td class="k-hierarchy-cell">
-                                        <i is="Icon" name="plus"></i>
+                                        <span class="k-icon k-i-plus"></span>
                                     </td>
                                     <td colspan="1" class="k-grid-content-sticky" style="left: 90px; right: 0px;">LEHMS</td>
                                     <td colspan="1">Saturday, January 13, 1996</td>
@@ -105,7 +106,7 @@
                                 <tr class="k-master-row k-alt" role="row">
                                     <td class="k-group-cell" style="left: 0px; right: 0px;"></td>
                                     <td class="k-hierarchy-cell">
-                                        <i is="Icon" name="plus"></i>
+                                        <span class="k-icon k-i-plus"></span>
                                     </td>
                                     <td colspan="1" class="k-grid-content-sticky" style="left: 90px; right: 0px;">LEHMS</td>
                                     <td colspan="1">Saturday, January 13, 1996</td>
@@ -117,14 +118,14 @@
                                 <tr class="k-grouping-row" role="row">
                                     <td colspan="8" style="left: 0px; right: 0px;">
                                         <p class="k-reset">
-                                            <i is="Icon" name="collapse"></i>Split Rail Beer &amp; Ale
+                                            <span class="k-icon k-i-collapse"></span>Split Rail Beer &amp; Ale
                                         </p>
                                     </td>
                                 </tr>
                                 <tr class="k-master-row" role="row">
                                     <td class="k-group-cell" style="left: 0px; right: 0px;"></td>
                                     <td class="k-hierarchy-cell">
-                                        <i is="Icon" name="plus"></i>
+                                        <span class="k-icon k-i-plus"></span>
                                     </td>
                                     <td colspan="1" class="k-grid-content-sticky" style="left: 90px; right: 0px;">SPLIR</td>
                                     <td colspan="1">Monday, January 1, 1996</td>
@@ -136,7 +137,7 @@
                                 <tr class="k-master-row k-alt" role="row">
                                     <td class="k-group-cell" style="left: 0px; right: 0px;"></td>
                                     <td class="k-hierarchy-cell">
-                                        <i is="Icon" name="plus"></i>
+                                        <span class="k-icon k-i-plus"></span>
                                     </td>
                                     <td colspan="1" class="k-grid-content-sticky" style="left: 90px; right: 0px;">SPLIR</td>
                                     <td colspan="1">Monday, January 1, 1996</td>
@@ -148,14 +149,14 @@
                                 <tr class="k-grouping-row" role="row">
                                     <td colspan="8" style="left: 0px; right: 0px;">
                                         <p class="k-reset">
-                                            <i is="Icon" name="collapse"></i>Wartian Herkku
+                                            <span class="k-icon k-i-collapse"></span>Wartian Herkku
                                         </p>
                                     </td>
                                 </tr>
                                 <tr class="k-master-row" role="row">
                                     <td class="k-group-cell" style="left: 0px; right: 0px;"></td>
                                     <td class="k-hierarchy-cell">
-                                        <i is="Icon" name="plus"></i>
+                                        <span class="k-icon k-i-plus"></span>
                                     </td>
                                     <td colspan="1" class="k-grid-content-sticky" style="left: 90px; right: 0px;">WARTH</td>
                                     <td colspan="1">Friday, January 26, 1996</td>
@@ -167,7 +168,7 @@
                                 <tr class="k-master-row k-alt" role="row">
                                     <td class="k-group-cell" style="left: 0px; right: 0px;"></td>
                                     <td class="k-hierarchy-cell">
-                                        <i is="Icon" name="plus"></i>
+                                        <span class="k-icon k-i-plus"></span>
                                     </td>
                                     <td colspan="1" class="k-grid-content-sticky" style="left: 90px; right: 0px;">WARTH</td>
                                     <td colspan="1">Friday, January 26, 1996</td>
@@ -186,10 +187,10 @@
             </div>
             <div class="k-pager-wrap k-pager k-widget k-grid-pager k-pager-sm" role="navigation">
                 <a href="#" class="k-link k-pager-nav k-pager-first k-state-disabled">
-                    <i is="Icon" name="arrow-end-left"></i>
+                    <span class="k-icon k-i-arrow-end-left"></span>
                 </a>
                 <a href="#" class="k-link k-pager-nav k-state-disabled">
-                    <i is="Icon" name="arrow-w"></i>
+                    <span class="k-icon k-i-arrow-w"></span>
                 </a>
                 <div class="k-pager-numbers-wrap">
                     <select class="k-picker k-dropdown-list k-dropdown">
@@ -202,13 +203,20 @@
                     </ul>
                 </div>
                 <a href="#" class="k-link k-pager-nav k-state-disabled">
-                    <i is="Icon" name="arrow-e"></i>
+                    <span class="k-icon k-i-arrow-e"></span>
                 </a>
                 <a href="#" class="k-link k-pager-nav k-pager-last k-state-disabled">
-                    <i is="Icon" name="arrow-end-right"></i>
+                    <span class="k-icon k-i-arrow-end-right"></span>
                 </a>
                 <span class="k-pager-sizes k-label">
-                    <input is="DropdownList" value="20" /> items per page
+                    <span class="k-dropdown k-picker k-picker-md k-picker-solid k-rounded-md">
+                        <span class="k-input-inner">
+                            <span class="k-input-value-text">20</span>
+                        </span>
+                        <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                            <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                        </button>
+                    </span>items per page
                 </span>
                 <div class="k-pager-info k-label">1 - 6 of 6 items</div>
             </div>

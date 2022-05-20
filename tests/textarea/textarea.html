@@ -1,12 +1,11 @@
 <!doctype html>
-<html lang="en" class="k-no-animations">
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width:15px;">
 <head>
-    <title>Textarea</title>
+    <title>TextArea</title>
     <meta charset="utf-8">
     <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
     <link rel="stylesheet" href="/packages/html/assets/styles.css">
     <script src="/packages/html/assets/scripts.js"></script>
-    <script src="/packages/html/dist/index.js"></script>
 </head>
 <body id="app" class="k-body">
     <style>
@@ -15,64 +14,88 @@
         }
 
     </style>
-    <div id="test-area" class="k-d-grid k-grid-cols-2">
-        <span>Textarea</span>
-        <span>Textarea RTL</span>
-        <!-- empty -->
+    <div id="test-area" class="k-d-grid k-grid-cols-2" style="max-width: 660px;">
+        <span>TextArea</span>
+        <span>TextArea RTL</span>
         <div>
-            <textarea is="Textarea" placeholder="Textarea..."></textarea>
+            <span class="k-textarea k-input k-input-md k-input-solid k-rounded-md">
+                <textarea class="k-input-inner" placeholder="TextArea..."></textarea>
+            </span>
         </div>
         <div dir="rtl">
-            <textarea is="Textarea" placeholder="Textarea..."></textarea>
+            <span class="k-textarea k-input k-input-md k-input-solid k-rounded-md">
+                <textarea class="k-input-inner" placeholder="TextArea..."></textarea>
+            </span>
         </div>
-        <!-- normal -->
         <div>
-            <textarea is="Textarea" value="Normal"></textarea>
+            <span class="k-textarea k-input k-input-md k-input-solid k-rounded-md">
+                <textarea class="k-input-inner" placeholder="">Normal</textarea>
+            </span>
         </div>
         <div dir="rtl">
-            <textarea is="Textarea" value="Normal"></textarea>
+            <span class="k-textarea k-input k-input-md k-input-solid k-rounded-md">
+                <textarea class="k-input-inner" placeholder="">Normal</textarea>
+            </span>
         </div>
-        <!-- hover -->
         <div>
-            <textarea is="Textarea" value="Hover" hover></textarea>
+            <span class="k-textarea k-input k-input-md k-input-solid k-rounded-md k-hover">
+                <textarea class="k-input-inner" placeholder="">Hover</textarea>
+            </span>
         </div>
         <div dir="rtl">
-            <textarea is="Textarea" value="Hover" hover></textarea>
+            <span class="k-textarea k-input k-input-md k-input-solid k-rounded-md k-hover">
+                <textarea class="k-input-inner" placeholder="">Hover</textarea>
+            </span>
         </div>
-        <!-- focus -->
         <div>
-            <textarea is="Textarea" value="Focus" focus></textarea>
+            <span class="k-textarea k-input k-input-md k-input-solid k-rounded-md k-focus">
+                <textarea class="k-input-inner" placeholder="">Focus</textarea>
+            </span>
         </div>
         <div dir="rtl">
-            <textarea is="Textarea" value="Focus" focus></textarea>
+            <span class="k-textarea k-input k-input-md k-input-solid k-rounded-md k-focus">
+                <textarea class="k-input-inner" placeholder="">Focus</textarea>
+            </span>
         </div>
-        <!-- disabled -->
         <div>
-            <textarea is="Textarea" value="Disabled" disabled></textarea>
+            <span class="k-textarea k-input k-input-md k-input-solid k-rounded-md k-disabled">
+                <textarea class="k-input-inner" placeholder="">Disabled</textarea>
+            </span>
         </div>
         <div dir="rtl">
-            <textarea is="Textarea" value="Disabled" disabled></textarea>
+            <span class="k-textarea k-input k-input-md k-input-solid k-rounded-md k-disabled">
+                <textarea class="k-input-inner" placeholder="">Disabled</textarea>
+            </span>
         </div>
-        <!-- invalid -->
         <div>
-            <textarea is="Textarea" value="Invalid" invalid></textarea>
+            <span class="k-textarea k-input k-input-md k-input-solid k-rounded-md k-invalid">
+                <textarea class="k-input-inner" placeholder="">Invalid</textarea>
+            </span>
         </div>
         <div dir="rtl">
-            <textarea is="Textarea" value="Invalid" invalid></textarea>
+            <span class="k-textarea k-input k-input-md k-input-solid k-rounded-md k-invalid">
+                <textarea class="k-input-inner" placeholder="">Invalid</textarea>
+            </span>
         </div>
-        <!-- invalid focus -->
         <div>
-            <textarea is="Textarea" value="Invalid focus" invalid focus></textarea>
+            <span class="k-textarea k-input k-input-md k-input-solid k-rounded-md k-focus k-invalid">
+                <textarea class="k-input-inner" placeholder="">Invalid Focus</textarea>
+            </span>
         </div>
         <div dir="rtl">
-            <textarea is="Textarea" value="Invalid focus" invalid focus></textarea>
+            <span class="k-textarea k-input k-input-md k-input-solid k-rounded-md k-focus k-invalid">
+                <textarea class="k-input-inner" placeholder="">Invalid Focus</textarea>
+            </span>
         </div>
-        <!-- vertical overflow -->
         <div>
-            <textarea is="Textarea" rows="3" value="Long text: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et dolorum, illo asperiores alias cum facere illum qui sapiente possimus consectetur magnam aperiam eveniet esse molestias aut repudiandae sit aliquam perspiciatis."></textarea>
+            <span class="k-textarea k-input k-input-md k-input-solid k-rounded-md">
+                <textarea class="k-input-inner" placeholder="" rows="3">Long text: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et dolorum, illo asperiores alias cum facere illum qui sapiente possimus consectetur magnam aperiam eveniet esse molestias aut repudiandae sit aliquam perspiciatis."</textarea>
+            </span>
         </div>
-        <div dir="rtl">
-            <textarea is="Textarea" rows="3" value="Long text: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et dolorum, illo asperiores alias cum facere illum qui sapiente possimus consectetur magnam aperiam eveniet esse molestias aut repudiandae sit aliquam perspiciatis."></textarea>
+        <div>
+            <span class="k-textarea k-input k-input-md k-input-solid k-rounded-md">
+                <textarea class="k-input-inner" placeholder="" rows="3">Long text: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et dolorum, illo asperiores alias cum facere illum qui sapiente possimus consectetur magnam aperiam eveniet esse molestias aut repudiandae sit aliquam perspiciatis."</textarea>
+            </span>
         </div>
     </div>
 </body>

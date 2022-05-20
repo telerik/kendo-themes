@@ -1,20 +1,19 @@
 <!doctype html>
-<html lang="en" class="k-no-animations">
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width:15px;">
 <head>
-    <title>KUI/Angular Grid - Grouping Detail Template</title>
+    <title>KUI Angular Grid - Grouping Detail Template</title>
     <meta charset="utf-8">
     <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
     <link rel="stylesheet" href="/packages/html/assets/styles.css">
     <script src="/packages/html/assets/scripts.js"></script>
-    <script src="/packages/html/dist/index.js"></script>
 </head>
 <body id="app" class="k-body">
-    <div class="grid" id="test-area">
+    <div id="test-area" class="k-d-grid">
         <h3>Base</h3>
-        <kendo-grid dir="ltr" class="k-widget k-grid">
-            <kendo-grid-group-panel class="k-grouping-header k-grouping-header-flex">
+        <div dir="ltr" class="k-widget k-grid">
+            <div class="k-grouping-header k-grouping-header-flex">
                 <div class="k-indicator-container"> Drag a column header and drop it here to group by that column </div>
-            </kendo-grid-group-panel>
+            </div>
             <div class="k-grid-aria-root" role="grid">
                 <div class="k-grid-header">
                     <div class="k-grid-header-wrap">
@@ -30,7 +29,9 @@
                                 <tr role="row">
                                     <th class="k-hierarchy-cell k-header"></th>
                                     <th class="k-header" rowspan="1" colspan="1">
-                                        <input is="Checkbox" id="k-grid0-select-all" />
+                                        <span class="k-checkbox-wrap">
+                                            <input id="k-grid0-select-all" type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                        </span>
                                     </th>
                                     <th class="k-header k-touch-action-none k-grid-draggable-header" rowspan="1" colspan="1">ID</th>
                                     <th class="k-header k-touch-action-none k-grid-draggable-header" rowspan="1" colspan="1">Name</th>
@@ -40,7 +41,7 @@
                         </table>
                     </div>
                 </div>
-                <kendo-grid-list class="k-grid-container">
+                <div class="k-grid-container">
                     <div class="k-grid-content k-virtual-content">
                         <div class="k-grid-table-wrap">
                             <table class="k-grid-table">
@@ -54,28 +55,36 @@
                                 <tbody>
                                     <tr class="k-master-row" role="row">
                                         <td class="k-hierarchy-cell">
-                                            <i is="Icon" name="plus"></i>
+                                            <span class="k-icon k-i-plus"></span>
                                         </td>
                                         <td class="k-touch-action-auto" colspan="1">
-                                            <input is="Checkbox" id="k-grid0-checkbox0" />
+                                            <span class="k-checkbox-wrap">
+                                                <input id="k-grid0-checkbox0" type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                            </span>
                                         </td>
                                         <td class="k-touch-action-auto" colspan="1">1</td>
                                         <td class="k-touch-action-auto" colspan="1">Product1</td>
                                         <td class="k-touch-action-auto k-command-cell" colspan="1">
-                                            <button is="Button" icon="trash">Delete</button>
+                                            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                                                <span class="k-button-icon k-icon k-i-trash"></span>Delete
+                                            </button>
                                         </td>
                                     </tr>
                                     <tr class="k-alt k-master-row" role="row">
                                         <td class="k-hierarchy-cell">
-                                            <i is="Icon" name="plus"></i>
+                                            <span class="k-icon k-i-plus"></span>
                                         </td>
                                         <td class="k-touch-action-auto" colspan="1">
-                                            <input is="Checkbox" id="k-grid0-checkbox1" />
+                                            <span class="k-checkbox-wrap">
+                                                <input id="k-grid0-checkbox1" type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                            </span>
                                         </td>
                                         <td class="k-touch-action-auto" colspan="1">2</td>
                                         <td class="k-touch-action-auto" colspan="1">Product2</td>
                                         <td class="k-touch-action-auto k-command-cell" colspan="1">
-                                            <button is="Button" icon="trash">Delete</button>
+                                            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                                                <span class="k-button-icon k-icon k-i-trash"></span>Delete
+                                            </button>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -85,22 +94,24 @@
                             <div></div>
                         </div>
                     </div>
-                </kendo-grid-list>
+                </div>
             </div>
-        </kendo-grid>
+        </div>
         <h3>Single Group</h3>
-        <kendo-grid dir="ltr" class="k-widget k-grid">
-            <kendo-grid-group-panel class="k-grouping-header k-grouping-header-flex">
+        <div dir="ltr" class="k-widget k-grid">
+            <div class="k-grouping-header k-grouping-header-flex">
                 <div class="k-indicator-container">
                     <div class="k-touch-action-none k-grid-draggable-header k-group-indicator">
                         <a class="k-link" href="#">
-                            <i is="Icon" name="sort-asc-sm"></i> ID
+                            <span class="k-icon k-i-sort-asc-sm"></span> ID
                         </a>
-                        <button is="Button" fillMode="flat" icon="close"></button>
+                        <button class="k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                            <span class="k-button-icon k-icon k-i-close"></span>
+                        </button>
                     </div>
                 </div>
                 <div class="k-indicator-container">&nbsp;</div>
-            </kendo-grid-group-panel>
+            </div>
             <div class="k-grid-aria-root" role="grid">
                 <div class="k-grid-header">
                     <div class="k-grid-header-wrap">
@@ -118,7 +129,9 @@
                                     <th class="k-group-cell k-header"></th>
                                     <th class="k-hierarchy-cell k-header"></th>
                                     <th class="k-header" rowspan="1" colspan="1">
-                                        <input is="Checkbox" />
+                                        <span class="k-checkbox-wrap">
+                                            <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                        </span>
                                     </th>
                                     <th class="k-header k-touch-action-none k-grid-draggable-header" rowspan="1" colspan="1">ID</th>
                                     <th class="k-header k-touch-action-none k-grid-draggable-header" rowspan="1" colspan="1">Name</th>
@@ -128,7 +141,7 @@
                         </table>
                     </div>
                 </div>
-                <kendo-grid-list class="k-grid-container">
+                <div class="k-grid-container">
                     <div class="k-grid-content k-virtual-content">
                         <div class="k-grid-table-wrap">
                             <table class="k-grid-table">
@@ -144,43 +157,51 @@
                                     <tr role="row" class="k-grouping-row">
                                         <td colspan="6">
                                             <p class="k-reset">
-                                                <i is="Icon" name="collapse"></i> ID: 1
+                                                <span class="k-icon k-i-collapse"></span> ID: 1
                                             </p>
                                         </td>
                                     </tr>
                                     <tr class="k-master-row" role="row">
                                         <td class="k-group-cell"></td>
                                         <td class="k-hierarchy-cell">
-                                            <i is="Icon" name="plus"></i>
+                                            <span class="k-icon k-i-plus"></span>
                                         </td>
                                         <td class="k-touch-action-auto" colspan="1">
-                                            <input is="Checkbox" />
+                                            <span class="k-checkbox-wrap">
+                                                <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                            </span>
                                         </td>
                                         <td class="k-touch-action-auto" colspan="1">1</td>
                                         <td class="k-touch-action-auto" colspan="1">Product1</td>
                                         <td class="k-touch-action-auto k-command-cell" colspan="1">
-                                            <button is="Button" icon="trash">Delete</button>
+                                            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                                                <span class="k-button-icon k-icon k-i-trash"></span>Delete
+                                            </button>
                                         </td>
                                     </tr>
                                     <tr role="row" class="k-grouping-row">
                                         <td colspan="6">
                                             <p class="k-reset">
-                                                <i is="Icon" name="collapse"></i> ID: 2
+                                                <span class="k-icon k-i-collapse"></span> ID: 2
                                             </p>
                                         </td>
                                     </tr>
                                     <tr class="k-alt k-master-row" role="row">
                                         <td class="k-group-cell"></td>
                                         <td class="k-hierarchy-cell">
-                                            <i is="Icon" name="plus"></i>
+                                            <span class="k-icon k-i-plus"></span>
                                         </td>
                                         <td class="k-touch-action-auto" colspan="1">
-                                            <input is="Checkbox" />
+                                            <span class="k-checkbox-wrap">
+                                                <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                            </span>
                                         </td>
                                         <td class="k-touch-action-auto" colspan="1">2</td>
                                         <td class="k-touch-action-auto" colspan="1">Product2</td>
                                         <td class="k-touch-action-auto k-command-cell" colspan="1">
-                                            <button is="Button" icon="trash">Delete</button>
+                                            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                                                <span class="k-button-icon k-icon k-i-trash"></span>Delete
+                                            </button>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -190,30 +211,34 @@
                             <div></div>
                         </div>
                     </div>
-                </kendo-grid-list>
+                </div>
             </div>
-        </kendo-grid>
+        </div>
         <h3>Two Groups</h3>
-        <kendo-grid dir="ltr" class="k-widget k-grid">
-            <kendo-grid-group-panel class="k-grouping-header k-grouping-header-flex">
+        <div dir="ltr" class="k-widget k-grid">
+            <div class="k-grouping-header k-grouping-header-flex">
                 <div class="k-indicator-container">
                     <div class="k-touch-action-none k-grid-draggable-header k-group-indicator">
                         <a class="k-link" href="#">
-                            <i is="Icon" name="sort-asc-sm"></i> ID
+                            <span class="k-icon k-i-sort-asc-sm"></span> ID
                         </a>
-                        <button is="Button" fillMode="flat" icon="close"></button>
+                        <button class="k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                            <span class="k-button-icon k-icon k-i-close"></span>
+                        </button>
                     </div>
                 </div>
                 <div class="k-indicator-container">
                     <div class="k-touch-action-none k-grid-draggable-header k-group-indicator">
                         <a class="k-link" href="#">
-                            <i is="Icon" name="sort-asc-sm"></i> Name
+                            <span class="k-icon k-i-sort-asc-sm"></span> Name
                         </a>
-                        <button is="Button" fillMode="flat" icon="close"></button>
+                        <button class="k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                            <span class="k-button-icon k-icon k-i-close"></span>
+                        </button>
                     </div>
                 </div>
                 <div class="k-indicator-container">&nbsp;</div>
-            </kendo-grid-group-panel>
+            </div>
             <div class="k-grid-aria-root" role="grid">
                 <div class="k-grid-header">
                     <div class="k-grid-header-wrap">
@@ -233,7 +258,9 @@
                                     <th class="k-group-cell k-header"></th>
                                     <th class="k-hierarchy-cell k-header"></th>
                                     <th class="k-header" rowspan="1" colspan="1">
-                                        <input is="Checkbox" />
+                                        <span class="k-checkbox-wrap">
+                                            <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                        </span>
                                     </th>
                                     <th class="k-header k-touch-action-none k-grid-draggable-header" rowspan="1" colspan="1">ID</th>
                                     <th class="k-header k-touch-action-none k-grid-draggable-header" rowspan="1" colspan="1">Name</th>
@@ -243,7 +270,7 @@
                         </table>
                     </div>
                 </div>
-                <kendo-grid-list class="k-grid-container">
+                <div class="k-grid-container">
                     <div class="k-grid-content k-virtual-content">
                         <div class="k-grid-table-wrap">
                             <table class="k-grid-table">
@@ -260,7 +287,7 @@
                                     <tr role="row" class="k-grouping-row">
                                         <td colspan="7">
                                             <p class="k-reset">
-                                                <i is="Icon" name="collapse"></i> ID: 1
+                                                <span class="k-icon k-i-collapse"></span> ID: 1
                                             </p>
                                         </td>
                                     </tr>
@@ -268,7 +295,7 @@
                                         <td class="k-group-cell"></td>
                                         <td colspan="6">
                                             <p class="k-reset">
-                                                <i is="Icon" name="collapse"></i> Name: Product1
+                                                <span class="k-icon k-i-collapse"></span> Name: Product1
                                             </p>
                                         </td>
                                     </tr>
@@ -276,21 +303,25 @@
                                         <td class="k-group-cell"></td>
                                         <td class="k-group-cell"></td>
                                         <td class="k-hierarchy-cell">
-                                            <i is="Icon" name="plus"></i>
+                                            <span class="k-icon k-i-plus"></span>
                                         </td>
                                         <td class="k-touch-action-auto" colspan="1">
-                                            <input is="Checkbox" />
+                                            <span class="k-checkbox-wrap">
+                                                <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                            </span>
                                         </td>
                                         <td class="k-touch-action-auto" colspan="1">1</td>
                                         <td class="k-touch-action-auto" colspan="1">Product1</td>
                                         <td class="k-touch-action-auto k-command-cell" colspan="1">
-                                            <button is="Button" icon="trash">Delete</button>
+                                            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                                                <span class="k-button-icon k-icon k-i-trash"></span>Delete
+                                            </button>
                                         </td>
                                     </tr>
                                     <tr role="row" class="k-grouping-row">
                                         <td colspan="7">
                                             <p class="k-reset">
-                                                <i is="Icon" name="collapse"></i> ID: 2
+                                                <span class="k-icon k-i-collapse"></span> ID: 2
                                             </p>
                                         </td>
                                     </tr>
@@ -298,7 +329,7 @@
                                         <td class="k-group-cell"></td>
                                         <td colspan="6">
                                             <p class="k-reset">
-                                                <i is="Icon" name="collapse"></i> Name: Product2
+                                                <span class="k-icon k-i-collapse"></span> Name: Product2
                                             </p>
                                         </td>
                                     </tr>
@@ -306,15 +337,19 @@
                                         <td class="k-group-cell"></td>
                                         <td class="k-group-cell"></td>
                                         <td class="k-hierarchy-cell">
-                                            <i is="Icon" name="plus"></i>
+                                            <span class="k-icon k-i-plus"></span>
                                         </td>
                                         <td class="k-touch-action-auto" colspan="1">
-                                            <input is="Checkbox" />
+                                            <span class="k-checkbox-wrap">
+                                                <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                            </span>
                                         </td>
                                         <td class="k-touch-action-auto" colspan="1">2</td>
                                         <td class="k-touch-action-auto" colspan="1">Product2</td>
                                         <td class="k-touch-action-auto k-command-cell" colspan="1">
-                                            <button is="Button" icon="trash">Delete</button>
+                                            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                                                <span class="k-button-icon k-icon k-i-trash"></span>Delete
+                                            </button>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -324,30 +359,34 @@
                             <div></div>
                         </div>
                     </div>
-                </kendo-grid-list>
+                </div>
             </div>
-        </kendo-grid>
+        </div>
         <h3>Expanded Template</h3>
-        <kendo-grid dir="ltr" class="k-widget k-grid">
-            <kendo-grid-group-panel class="k-grouping-header k-grouping-header-flex">
+        <div dir="ltr" class="k-widget k-grid">
+            <div class="k-grouping-header k-grouping-header-flex">
                 <div class="k-indicator-container">
                     <div class="k-touch-action-none k-grid-draggable-header k-group-indicator">
                         <a class="k-link" href="#">
-                            <i is="Icon" name="sort-asc-sm"></i> ID
+                            <span class="k-icon k-i-sort-asc-sm"></span> ID
                         </a>
-                        <button is="Button" fillMode="flat" icon="close"></button>
+                        <button class="k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                            <span class="k-button-icon k-icon k-i-close"></span>
+                        </button>
                     </div>
                 </div>
                 <div class="k-indicator-container">
                     <div class="k-touch-action-none k-grid-draggable-header k-group-indicator">
                         <a class="k-link" href="#">
-                            <i is="Icon" name="sort-asc-sm"></i> Name
+                            <span class="k-icon k-i-sort-asc-sm"></span> Name
                         </a>
-                        <button is="Button" fillMode="flat" icon="close"></button>
+                        <button class="k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                            <span class="k-button-icon k-icon k-i-close"></span>
+                        </button>
                     </div>
                 </div>
                 <div class="k-indicator-container">&nbsp;</div>
-            </kendo-grid-group-panel>
+            </div>
             <div class="k-grid-aria-root" role="grid">
                 <div class="k-grid-header">
                     <div class="k-grid-header-wrap">
@@ -367,7 +406,9 @@
                                     <th class="k-group-cell k-header"></th>
                                     <th class="k-hierarchy-cell k-header"></th>
                                     <th class="k-header" rowspan="1" colspan="1">
-                                        <input is="Checkbox" />
+                                        <span class="k-checkbox-wrap">
+                                            <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                        </span>
                                     </th>
                                     <th class="k-header k-touch-action-none k-grid-draggable-header" rowspan="1" colspan="1">ID</th>
                                     <th class="k-header k-touch-action-none k-grid-draggable-header" rowspan="1" colspan="1">Name</th>
@@ -377,7 +418,7 @@
                         </table>
                     </div>
                 </div>
-                <kendo-grid-list class="k-grid-container">
+                <div class="k-grid-container">
                     <div class="k-grid-content k-virtual-content">
                         <div class="k-grid-table-wrap">
                             <table class="k-grid-table">
@@ -394,7 +435,7 @@
                                     <tr role="row" class="k-grouping-row">
                                         <td colspan="7">
                                             <p class="k-reset">
-                                                <i is="Icon" name="collapse"></i> ID: 1
+                                                <span class="k-icon k-i-collapse"></span> ID: 1
                                             </p>
                                         </td>
                                     </tr>
@@ -402,7 +443,7 @@
                                         <td class="k-group-cell"></td>
                                         <td colspan="6">
                                             <p class="k-reset">
-                                                <i is="Icon" name="collapse"></i> Name: Product1
+                                                <span class="k-icon k-i-collapse"></span> Name: Product1
                                             </p>
                                         </td>
                                     </tr>
@@ -410,15 +451,19 @@
                                         <td class="k-group-cell"></td>
                                         <td class="k-group-cell"></td>
                                         <td class="k-hierarchy-cell">
-                                            <i is="Icon" name="minus"></i>
+                                            <span class="k-icon k-i-minus"></span>
                                         </td>
                                         <td class="k-touch-action-auto" colspan="1">
-                                            <input is="Checkbox" />
+                                            <span class="k-checkbox-wrap">
+                                                <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                            </span>
                                         </td>
                                         <td class="k-touch-action-auto" colspan="1">1</td>
                                         <td class="k-touch-action-auto" colspan="1">Product1</td>
                                         <td class="k-touch-action-auto k-command-cell" colspan="1">
-                                            <button is="Button" icon="trash">Delete</button>
+                                            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                                                <span class="k-button-icon k-icon k-i-trash"></span>Delete
+                                            </button>
                                         </td>
                                     </tr>
                                     <tr class="k-detail-row" role="row">
@@ -430,7 +475,7 @@
                                     <tr role="row" class="k-grouping-row">
                                         <td colspan="7">
                                             <p class="k-reset">
-                                                <i is="Icon" name="collapse"></i> ID: 2
+                                                <span class="k-icon k-i-collapse"></span> ID: 2
                                             </p>
                                         </td>
                                     </tr>
@@ -438,7 +483,7 @@
                                         <td class="k-group-cell"></td>
                                         <td colspan="6">
                                             <p class="k-reset">
-                                                <i is="Icon" name="collapse"></i> Name: Product2
+                                                <span class="k-icon k-i-collapse"></span> Name: Product2
                                             </p>
                                         </td>
                                     </tr>
@@ -446,15 +491,19 @@
                                         <td class="k-group-cell"></td>
                                         <td class="k-group-cell"></td>
                                         <td class="k-hierarchy-cell">
-                                            <i is="Icon" name="minus"></i>
+                                            <span class="k-icon k-i-minus"></span>
                                         </td>
                                         <td class="k-touch-action-auto" colspan="1">
-                                            <input is="Checkbox" />
+                                            <span class="k-checkbox-wrap">
+                                                <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                            </span>
                                         </td>
                                         <td class="k-touch-action-auto" colspan="1">2</td>
                                         <td class="k-touch-action-auto" colspan="1">Product2</td>
                                         <td class="k-touch-action-auto k-command-cell" colspan="1">
-                                            <button is="Button" icon="trash">Delete</button>
+                                            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                                                <span class="k-button-icon k-icon k-i-trash"></span>Delete
+                                            </button>
                                         </td>
                                     </tr>
                                     <tr class="k-detail-row k-alt" role="row">
@@ -470,9 +519,9 @@
                             <div></div>
                         </div>
                     </div>
-                </kendo-grid-list>
+                </div>
             </div>
-        </kendo-grid>
+        </div>
     </div>
 </body>
 </html>

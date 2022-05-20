@@ -1,28 +1,29 @@
 <!doctype html>
-<html lang="en" class="k-no-animations">
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width:15px;">
 <head>
-    <title>Media Player</title>
+    <title>MediaPlayer</title>
     <meta charset="utf-8">
     <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
     <link rel="stylesheet" href="/packages/html/assets/styles.css">
     <script src="/packages/html/assets/scripts.js"></script>
-    <script src="/packages/html/dist/index.js"></script>
 </head>
 <body id="app" class="k-body">
     <style>
         #test-area {
             align-items: start;
         }
+
         .k-mediaplayer {
             height: 360px;
         }
+
         .k-slider-horizontal {
             --kendo-slider-start: 0;
             --kendo-slider-end: 50;
         }
 
     </style>
-    <div id="test-area" class="grid">
+    <div id="test-area" class="k-d-grid">
         <div class="k-mediaplayer k-widget">
             <div class="k-mediaplayer-titlebar">Media player title</div>
             <div class="k-mediaplayer-toolbar-wrap">
@@ -35,12 +36,16 @@
                     </div>
                 </div>
                 <div class="k-mediaplayer-toolbar k-toolbar k-widget">
-                    <button is="Button" fillMode="flat" icon="play" class="k-play-button"></button>
+                    <button class="k-play-button k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                        <span class="k-button-icon k-icon k-i-play"></span>
+                    </button>
                     <div class="k-mediaplayer-currenttime-wrap">
-                        <span class="k-mediaplayer-currenttime">00:18</span> / <span class="k-mediaplayer-duration">00:55</span>
+                        <span class="k-mediaplayer-currenttime">00:18</span> /<span class="k-mediaplayer-duration">00:55</span>
                     </div>
                     <div class="k-spacer"></div>
-                    <button is="Button" fillMode="flat" icon="volume-up" class="k-volume-button"></button>
+                    <button class="k-volume-button k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                        <span class="k-button-icon k-icon k-i-volume-up"></span>
+                    </button>
                     <div class="k-mediaplayer-volume-wrap">
                         <div class="k-slider k-slider-horizontal k-mediaplayer-volume">
                             <div class="k-slider-track-wrap">
@@ -52,9 +57,18 @@
                         </div>
                     </div>
                     <div class="k-mediaplayer-quality-wrap">
-                        <input is="DropdownList" value="360p" arrowIconName='hd' class="k-mediaplayer-quality" />
+                        <span class="k-mediaplayer-quality k-dropdown k-picker k-picker-md k-picker-solid k-rounded-md">
+                            <span class="k-input-inner">
+                                <span class="k-input-value-text">360p</span>
+                            </span>
+                            <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                <span class="k-button-icon k-icon k-i-hd"></span>
+                            </button>
+                        </span>
                     </div>
-                    <button is="Button" fillMode="flat" icon="fullscreen" class="k-fullscreen-button"></button>
+                    <button class="k-fullscreen-button k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                        <span class="k-button-icon k-icon k-i-fullscreen"></span>
+                    </button>
                 </div>
             </div>
             <div class="k-mediaplayer-overlay"></div>

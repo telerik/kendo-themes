@@ -1,12 +1,11 @@
 <!doctype html>
-<html lang="en" class="k-no-animations">
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width:15px;">
 <head>
-    <title>Form Field Misc Angular</title>
+    <title>KUI Angular Form Misc</title>
     <meta charset="utf-8">
     <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
     <link rel="stylesheet" href="/packages/html/assets/styles.css">
     <script src="/packages/html/assets/scripts.js"></script>
-    <script src="/packages/html/dist/index.js"></script>
 </head>
 <body id="app" class="k-body">
     <style>
@@ -20,113 +19,139 @@
         <span>Vertical Form (Angular)</span>
         <span>Horizontal Form (Angular)</span>
         <section>
-            <div class="k-messagebox k-messagebox-error"> Error: The quick brown fox jumps over the lazy dog. </div>
+            <div class="k-messagebox k-messagebox-error">Error: The quick brown fox jumps over the lazy dog.</div>
             <form class="k-form k-form-vertical">
-                <kendo-form-field class="k-form-field">
+                <div class="k-form-field">
                     <label class="k-label">Normal:<span class="k-label-optional">(Optional)</span>
                     </label>
                     <div>
-                        <input is="Textbox" placeholder="Textbox..." />
-                        <kendo-form-hint class="k-form-hint k-text-start">Hint: hint message</kendo-form-hint>
-                        <kendo-form-error class="k-form-error k-text-start">Error: error message</kendo-form-error>
+                        <span class="k-textbox k-input k-input-md k-input-solid k-rounded-md">
+                            <input type="text" class="k-input-inner" placeholder="Textbox..." autocomplete="off" value="">
+                        </span>
+                        <div class="k-form-hint k-text-start">Hint: hint message</div>
+                        <div class="k-form-error k-text-start">Error: error message</div>
                     </div>
-                </kendo-form-field>
-                <kendo-form-field class="k-form-field k-form-field-error">
+                </div>
+                <div class="k-form-field k-form-field-error">
                     <label class="k-label">Error:<span class="k-field-info">(field info)</span>
                     </label>
                     <div>
-                        <input is="Textbox" placeholder="Textbox..." invalid />
-                        <kendo-form-hint class="k-form-hint k-text-end">Hint: hint message</kendo-form-hint>
-                        <kendo-form-error class="k-form-error k-text-end">Error: error message</kendo-form-error>
+                        <span class="k-textbox k-input k-input-md k-input-solid k-rounded-md k-invalid">
+                            <input type="text" class="k-input-inner" placeholder="Textbox..." autocomplete="off" value="">
+                            <span class="k-input-validation-icon k-icon k-i-warning"></span>
+                        </span>
+                        <div class="k-form-hint k-text-end">Hint: hint message</div>
+                        <div class="k-form-error k-text-end">Error: error message</div>
                     </div>
-                </kendo-form-field>
-                <kendo-form-field class="k-form-field k-form-field-disabled">
+                </div>
+                <div class="k-form-field k-form-field-disabled">
                     <label class="k-label">Disabled:</label>
                     <div>
-                        <input is="Textbox" value="Disabled" disabled />
-                        <kendo-form-hint class="k-form-hint k-text-start">Hint: hint message</kendo-form-hint>
-                        <kendo-form-error class="k-form-error k-text-start">Error: error message</kendo-form-error>
+                        <span class="k-textbox k-input k-input-md k-input-solid k-rounded-md k-disabled">
+                            <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="Disabled">
+                        </span>
+                        <div class="k-form-hint k-text-start">Hint: hint message</div>
+                        <div class="k-form-error k-text-start">Error: error message</div>
                     </div>
-                </kendo-form-field>
-                <kendo-form-field class="k-form-field">
+                </div>
+                <div class="k-form-field">
                     <label class="k-label">Checkbox:</label>
                     <div>
-                        <input is="Checkbox" />
-                        <kendo-form-hint class="k-form-hint k-text-start">Hint: hint message</kendo-form-hint>
-                        <kendo-form-error class="k-form-error k-text-start">Error: error message</kendo-form-error>
+                        <span class="k-checkbox-wrap">
+                            <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                        </span>
+                        <div class="k-form-hint k-text-start">Hint: hint message</div>
+                        <div class="k-form-error k-text-start">Error: error message</div>
                     </div>
-                </kendo-form-field>
-                <kendo-form-field class="k-form-field">
+                </div>
+                <div class="k-form-field">
                     <div>
                         <div class="k-form-field-checkbox-wrap">
-                            <input is="Checkbox" />
-                            <!--
-                            -->
+                            <span class="k-checkbox-wrap">
+                                <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                            </span>
                             <label class="k-checkbox-label">Label after the box</label>
                         </div>
-                        <kendo-form-hint class="k-form-hint k-text-start">Hint: hint message</kendo-form-hint>
-                        <kendo-form-error class="k-form-error k-text-start">Error: error message</kendo-form-error>
+                        <div class="k-form-hint k-text-start">Hint: hint message</div>
+                        <div class="k-form-error k-text-start">Error: error message</div>
                     </div>
-                </kendo-form-field>
+                </div>
                 <div class="k-form-buttons">
-                    <button is="Button" themeColor="primary" class="k-form-submit">Submit</button>
-                    <button is="Button" class="k-form-clear">Clear</button>
+                    <button class="k-form-submit k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md">
+                        <span class="k-button-text">Submit</span>
+                    </button>
+                    <button class="k-form-clear k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                        <span class="k-button-text">Clear</span>
+                    </button>
                 </div>
             </form>
         </section>
         <section>
-            <div class="k-messagebox k-messagebox-error"> Error: The quick brown fox jumps over the lazy dog. </div>
+            <div class="k-messagebox k-messagebox-error">Error: The quick brown fox jumps over the lazy dog.</div>
             <form class="k-form k-form-horizontal">
-                <kendo-form-field class="k-form-field">
+                <div class="k-form-field">
                     <label class="k-label">Normal:<span class="k-label-optional">(Optional)</span>
                     </label>
                     <div class="k-form-field-wrap">
-                        <input is="Textbox" placeholder="Textbox..." />
-                        <kendo-form-hint class="k-form-hint k-text-start">Hint: hint message</kendo-form-hint>
-                        <kendo-form-error class="k-form-error k-text-start">Error: error message</kendo-form-error>
+                        <span class="k-textbox k-input k-input-md k-input-solid k-rounded-md">
+                            <input type="text" class="k-input-inner" placeholder="Textbox..." autocomplete="off" value="">
+                        </span>
+                        <div class="k-form-hint k-text-start">Hint: hint message</div>
+                        <div class="k-form-error k-text-start">Error: error message</div>
                     </div>
-                </kendo-form-field>
-                <kendo-form-field class="k-form-field k-form-field-error">
+                </div>
+                <div class="k-form-field k-form-field-error">
                     <label class="k-label">Error:<span class="k-field-info">(field info)</span>
                     </label>
                     <div class="k-form-field-wrap">
-                        <input is="Textbox" placeholder="Textbox..." invalid />
-                        <kendo-form-hint class="k-form-hint k-text-end">Hint: hint message</kendo-form-hint>
-                        <kendo-form-error class="k-form-error k-text-end">Error: error message</kendo-form-error>
+                        <span class="k-textbox k-input k-input-md k-input-solid k-rounded-md k-invalid">
+                            <input type="text" class="k-input-inner" placeholder="Textbox..." autocomplete="off" value="">
+                            <span class="k-input-validation-icon k-icon k-i-warning"></span>
+                        </span>
+                        <div class="k-form-hint k-text-end">Hint: hint message</div>
+                        <div class="k-form-error k-text-end">Error: error message</div>
                     </div>
-                </kendo-form-field>
-                <kendo-form-field class="k-form-field k-form-field-disabled">
+                </div>
+                <div class="k-form-field k-form-field-disabled">
                     <label class="k-label">Disabled:</label>
                     <div class="k-form-field-wrap">
-                        <input is="Textbox" value="Disabled" disabled />
-                        <kendo-form-hint class="k-form-hint k-text-start">Hint: hint message</kendo-form-hint>
-                        <kendo-form-error class="k-form-error k-text-start">Error: error message</kendo-form-error>
+                        <span class="k-textbox k-input k-input-md k-input-solid k-rounded-md k-disabled">
+                            <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="Disabled">
+                        </span>
+                        <div class="k-form-hint k-text-start">Hint: hint message</div>
+                        <div class="k-form-error k-text-start">Error: error message</div>
                     </div>
-                </kendo-form-field>
-                <kendo-form-field class="k-form-field">
+                </div>
+                <div class="k-form-field">
                     <label class="k-label">Checkbox:</label>
                     <div class="k-form-field-wrap">
-                        <input is="Checkbox" />
-                        <kendo-form-hint class="k-form-hint k-text-start">Hint: hint message</kendo-form-hint>
-                        <kendo-form-error class="k-form-error k-text-start">Error: error message</kendo-form-error>
+                        <span class="k-checkbox-wrap">
+                            <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                        </span>
+                        <div class="k-form-hint k-text-start">Hint: hint message</div>
+                        <div class="k-form-error k-text-start">Error: error message</div>
                     </div>
-                </kendo-form-field>
-                <kendo-form-field class="k-form-field">
+                </div>
+                <div class="k-form-field">
                     <span class="k-label k-label-empty"></span>
                     <div class="k-form-field-wrap">
                         <div class="k-form-field-checkbox-wrap">
-                            <input is="Checkbox" />
-                            <!--
-                            -->
+                            <span class="k-checkbox-wrap">
+                                <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                            </span>
                             <label class="k-checkbox-label">Label after the box</label>
                         </div>
-                        <kendo-form-hint class="k-form-hint k-text-start">Hint: hint message</kendo-form-hint>
-                        <kendo-form-error class="k-form-error k-text-start">Error: error message</kendo-form-error>
+                        <div class="k-form-hint k-text-start">Hint: hint message</div>
+                        <div class="k-form-error k-text-start">Error: error message</div>
                     </div>
-                </kendo-form-field>
+                </div>
                 <div class="k-form-buttons">
-                    <button is="Button" themeColor="primary" class="k-form-submit" focus>Submit</button>
-                    <button is="Button" class="k-form-clear">Clear</button>
+                    <button class="k-form-submit k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md k-focus">
+                        <span class="k-button-text">Submit</span>
+                    </button>
+                    <button class="k-form-clear k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                        <span class="k-button-text">Clear</span>
+                    </button>
                 </div>
             </form>
         </section>

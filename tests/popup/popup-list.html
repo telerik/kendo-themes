@@ -1,12 +1,11 @@
 <!doctype html>
-<html lang="en" class="k-no-animations">
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width:15px;">
 <head>
     <title>Popup -- list</title>
     <meta charset="utf-8">
     <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
     <link rel="stylesheet" href="/packages/html/assets/styles.css">
     <script src="/packages/html/assets/scripts.js"></script>
-    <script src="/packages/html/dist/index.js"></script>
 </head>
 <body id="app" class="k-body">
     <style>
@@ -36,143 +35,403 @@
         <span>Universal virtual (rtl)</span>
         <section>
             <div class="k-animation-container">
-                <div class="k-popup k-list-container">
-                    <select is="List">
-                        <option>Baseball</option>
-                        <option>Basketball</option>
-                        <option>Cricket</option>
-                        <option>Field Hockey</option>
-                        <option>Football</option>
-                        <option>Table Tennis</option>
-                        <option>Tennis</option>
-                        <option>Volleyball</option>
-                        <option>Baseball</option>
-                        <option>Basketball</option>
-                        <option>Cricket</option>
-                        <option>Field Hockey</option>
-                        <option>Football</option>
-                        <option>Table Tennis</option>
-                        <option>Tennis</option>
-                        <option>Volleyball</option>
-                    </select>
+                <div class="k-list-container k-popup">
+                    <div class="k-list k-list-md">
+                        <div class="k-list-content">
+                            <ul class="k-list-ul">
+                                <li class="k-list-item">
+                                    <span class="k-list-item-text">Baseball</span>
+                                    <div class="k-list-item-group-label"></div>
+                                </li>
+                                <li class="k-list-item">
+                                    <span class="k-list-item-text">Basketball</span>
+                                    <div class="k-list-item-group-label"></div>
+                                </li>
+                                <li class="k-list-item">
+                                    <span class="k-list-item-text">Cricket</span>
+                                    <div class="k-list-item-group-label"></div>
+                                </li>
+                                <li class="k-list-item">
+                                    <span class="k-list-item-text">Field Hockey</span>
+                                    <div class="k-list-item-group-label"></div>
+                                </li>
+                                <li class="k-list-item">
+                                    <span class="k-list-item-text">Football</span>
+                                    <div class="k-list-item-group-label"></div>
+                                </li>
+                                <li class="k-list-item">
+                                    <span class="k-list-item-text">Table Tennis</span>
+                                    <div class="k-list-item-group-label"></div>
+                                </li>
+                                <li class="k-list-item">
+                                    <span class="k-list-item-text">Tennis</span>
+                                    <div class="k-list-item-group-label"></div>
+                                </li>
+                                <li class="k-list-item">
+                                    <span class="k-list-item-text">Volleyball</span>
+                                    <div class="k-list-item-group-label"></div>
+                                </li>
+                                <li class="k-list-item">
+                                    <span class="k-list-item-text">Baseball</span>
+                                    <div class="k-list-item-group-label"></div>
+                                </li>
+                                <li class="k-list-item">
+                                    <span class="k-list-item-text">Basketball</span>
+                                    <div class="k-list-item-group-label"></div>
+                                </li>
+                                <li class="k-list-item">
+                                    <span class="k-list-item-text">Cricket</span>
+                                    <div class="k-list-item-group-label"></div>
+                                </li>
+                                <li class="k-list-item">
+                                    <span class="k-list-item-text">Field Hockey</span>
+                                    <div class="k-list-item-group-label"></div>
+                                </li>
+                                <li class="k-list-item">
+                                    <span class="k-list-item-text">Football</span>
+                                    <div class="k-list-item-group-label"></div>
+                                </li>
+                                <li class="k-list-item">
+                                    <span class="k-list-item-text">Table Tennis</span>
+                                    <div class="k-list-item-group-label"></div>
+                                </li>
+                                <li class="k-list-item">
+                                    <span class="k-list-item-text">Tennis</span>
+                                    <div class="k-list-item-group-label"></div>
+                                </li>
+                                <li class="k-list-item">
+                                    <span class="k-list-item-text">Volleyball</span>
+                                    <div class="k-list-item-group-label"></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
         <section>
             <div class="k-animation-container">
-                <div class="k-popup k-list-container">
-                    <select is="List" virtualization>
-                        <option>Baseball</option>
-                        <option>Basketball</option>
-                        <option>Cricket</option>
-                        <option>Field Hockey</option>
-                        <option>Football</option>
-                        <option>Table Tennis</option>
-                        <option>Tennis</option>
-                        <option>Volleyball</option>
-                    </select>
+                <div class="k-list-container k-popup">
+                    <div class="k-list k-list-md k-virtual-list">
+                        <div class="k-list-content">
+                            <ul class="k-list-ul">
+                                <li class="k-list-item">
+                                    <span class="k-list-item-text">Baseball</span>
+                                    <div class="k-list-item-group-label"></div>
+                                </li>
+                                <li class="k-list-item">
+                                    <span class="k-list-item-text">Basketball</span>
+                                    <div class="k-list-item-group-label"></div>
+                                </li>
+                                <li class="k-list-item">
+                                    <span class="k-list-item-text">Cricket</span>
+                                    <div class="k-list-item-group-label"></div>
+                                </li>
+                                <li class="k-list-item">
+                                    <span class="k-list-item-text">Field Hockey</span>
+                                    <div class="k-list-item-group-label"></div>
+                                </li>
+                                <li class="k-list-item">
+                                    <span class="k-list-item-text">Football</span>
+                                    <div class="k-list-item-group-label"></div>
+                                </li>
+                                <li class="k-list-item">
+                                    <span class="k-list-item-text">Table Tennis</span>
+                                    <div class="k-list-item-group-label"></div>
+                                </li>
+                                <li class="k-list-item">
+                                    <span class="k-list-item-text">Tennis</span>
+                                    <div class="k-list-item-group-label"></div>
+                                </li>
+                                <li class="k-list-item">
+                                    <span class="k-list-item-text">Volleyball</span>
+                                    <div class="k-list-item-group-label"></div>
+                                </li>
+                            </ul>
+                            <div class="k-height-container">
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
         <section dir="rtl">
             <div class="k-animation-container">
-                <div class="k-popup k-list-container">
-                    <select is="List">
-                        <option>Baseball</option>
-                        <option>Basketball</option>
-                        <option>Cricket</option>
-                        <option>Field Hockey</option>
-                        <option>Football</option>
-                        <option>Table Tennis</option>
-                        <option>Tennis</option>
-                        <option>Volleyball</option>
-                    </select>
+                <div class="k-list-container k-popup">
+                    <div class="k-list k-list-md">
+                        <div class="k-list-content">
+                            <ul class="k-list-ul">
+                                <li class="k-list-item">
+                                    <span class="k-list-item-text">Baseball</span>
+                                    <div class="k-list-item-group-label"></div>
+                                </li>
+                                <li class="k-list-item">
+                                    <span class="k-list-item-text">Basketball</span>
+                                    <div class="k-list-item-group-label"></div>
+                                </li>
+                                <li class="k-list-item">
+                                    <span class="k-list-item-text">Cricket</span>
+                                    <div class="k-list-item-group-label"></div>
+                                </li>
+                                <li class="k-list-item">
+                                    <span class="k-list-item-text">Field Hockey</span>
+                                    <div class="k-list-item-group-label"></div>
+                                </li>
+                                <li class="k-list-item">
+                                    <span class="k-list-item-text">Football</span>
+                                    <div class="k-list-item-group-label"></div>
+                                </li>
+                                <li class="k-list-item">
+                                    <span class="k-list-item-text">Table Tennis</span>
+                                    <div class="k-list-item-group-label"></div>
+                                </li>
+                                <li class="k-list-item">
+                                    <span class="k-list-item-text">Tennis</span>
+                                    <div class="k-list-item-group-label"></div>
+                                </li>
+                                <li class="k-list-item">
+                                    <span class="k-list-item-text">Volleyball</span>
+                                    <div class="k-list-item-group-label"></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
         <section dir="rtl">
             <div class="k-animation-container">
-                <div class="k-popup k-list-container">
-                    <select is="List" virtualization>
-                        <option>Baseball</option>
-                        <option>Basketball</option>
-                        <option>Cricket</option>
-                        <option>Field Hockey</option>
-                        <option>Football</option>
-                        <option>Table Tennis</option>
-                        <option>Tennis</option>
-                        <option>Volleyball</option>
-                    </select>
+                <div class="k-list-container k-popup">
+                    <div class="k-list k-list-md k-virtual-list">
+                        <div class="k-list-content">
+                            <ul class="k-list-ul">
+                                <li class="k-list-item">
+                                    <span class="k-list-item-text">Baseball</span>
+                                    <div class="k-list-item-group-label"></div>
+                                </li>
+                                <li class="k-list-item">
+                                    <span class="k-list-item-text">Basketball</span>
+                                    <div class="k-list-item-group-label"></div>
+                                </li>
+                                <li class="k-list-item">
+                                    <span class="k-list-item-text">Cricket</span>
+                                    <div class="k-list-item-group-label"></div>
+                                </li>
+                                <li class="k-list-item">
+                                    <span class="k-list-item-text">Field Hockey</span>
+                                    <div class="k-list-item-group-label"></div>
+                                </li>
+                                <li class="k-list-item">
+                                    <span class="k-list-item-text">Football</span>
+                                    <div class="k-list-item-group-label"></div>
+                                </li>
+                                <li class="k-list-item">
+                                    <span class="k-list-item-text">Table Tennis</span>
+                                    <div class="k-list-item-group-label"></div>
+                                </li>
+                                <li class="k-list-item">
+                                    <span class="k-list-item-text">Tennis</span>
+                                    <div class="k-list-item-group-label"></div>
+                                </li>
+                                <li class="k-list-item">
+                                    <span class="k-list-item-text">Volleyball</span>
+                                    <div class="k-list-item-group-label"></div>
+                                </li>
+                            </ul>
+                            <div class="k-height-container">
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-        <span>Universal</span>
-        <span>Universal virtual</span>
-        <span>Universal (rtl)</span>
-        <span>Universal virtual (rtl)</span>
+        <span>Angular</span>
+        <span>Angular virtual</span>
+        <span>Angular (rtl)</span>
+        <span>Angular virtual (rtl)</span>
         <section>
-            <kendo-popup class="k-animation-container k-animation-container-shown">
-                <div class="k-popup k-list-container">
-                    <select is="List" framework="angular">
-                        <option>Baseball</option>
-                        <option>Basketball</option>
-                        <option>Cricket</option>
-                        <option>Field Hockey</option>
-                        <option>Football</option>
-                        <option>Table Tennis</option>
-                        <option>Tennis</option>
-                        <option>Volleyball</option>
-                    </select>
+            <div class="k-animation-container k-animation-container-shown">
+                <div class="k-list-container k-popup">
+                    <div class="k-list k-list-md">
+                        <div class="k-list-content">
+                            <ul class="k-list-ul">
+                                <li class="k-list-item">
+                                    <span class="k-list-item-text">Baseball</span>
+                                    <div class="k-list-item-group-label"></div>
+                                </li>
+                                <li class="k-list-item">
+                                    <span class="k-list-item-text">Basketball</span>
+                                    <div class="k-list-item-group-label"></div>
+                                </li>
+                                <li class="k-list-item">
+                                    <span class="k-list-item-text">Cricket</span>
+                                    <div class="k-list-item-group-label"></div>
+                                </li>
+                                <li class="k-list-item">
+                                    <span class="k-list-item-text">Field Hockey</span>
+                                    <div class="k-list-item-group-label"></div>
+                                </li>
+                                <li class="k-list-item">
+                                    <span class="k-list-item-text">Football</span>
+                                    <div class="k-list-item-group-label"></div>
+                                </li>
+                                <li class="k-list-item">
+                                    <span class="k-list-item-text">Table Tennis</span>
+                                    <div class="k-list-item-group-label"></div>
+                                </li>
+                                <li class="k-list-item">
+                                    <span class="k-list-item-text">Tennis</span>
+                                    <div class="k-list-item-group-label"></div>
+                                </li>
+                                <li class="k-list-item">
+                                    <span class="k-list-item-text">Volleyball</span>
+                                    <div class="k-list-item-group-label"></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-            </kendo-popup>
+            </div>
         </section>
         <section>
-            <kendo-popup class="k-animation-container k-animation-container-shown">
-                <div class="k-popup k-list-container">
-                    <select is="List" framework="angular" virtualization>
-                        <option>Baseball</option>
-                        <option>Basketball</option>
-                        <option>Cricket</option>
-                        <option>Field Hockey</option>
-                        <option>Football</option>
-                        <option>Table Tennis</option>
-                        <option>Tennis</option>
-                        <option>Volleyball</option>
-                    </select>
+            <div class="k-animation-container k-animation-container-shown">
+                <div class="k-list-container k-popup">
+                    <div class="k-list k-list-md k-virtual-list">
+                        <div class="k-list-content">
+                            <ul class="k-list-ul">
+                                <li class="k-list-item">
+                                    <span class="k-list-item-text">Baseball</span>
+                                    <div class="k-list-item-group-label"></div>
+                                </li>
+                                <li class="k-list-item">
+                                    <span class="k-list-item-text">Basketball</span>
+                                    <div class="k-list-item-group-label"></div>
+                                </li>
+                                <li class="k-list-item">
+                                    <span class="k-list-item-text">Cricket</span>
+                                    <div class="k-list-item-group-label"></div>
+                                </li>
+                                <li class="k-list-item">
+                                    <span class="k-list-item-text">Field Hockey</span>
+                                    <div class="k-list-item-group-label"></div>
+                                </li>
+                                <li class="k-list-item">
+                                    <span class="k-list-item-text">Football</span>
+                                    <div class="k-list-item-group-label"></div>
+                                </li>
+                                <li class="k-list-item">
+                                    <span class="k-list-item-text">Table Tennis</span>
+                                    <div class="k-list-item-group-label"></div>
+                                </li>
+                                <li class="k-list-item">
+                                    <span class="k-list-item-text">Tennis</span>
+                                    <div class="k-list-item-group-label"></div>
+                                </li>
+                                <li class="k-list-item">
+                                    <span class="k-list-item-text">Volleyball</span>
+                                    <div class="k-list-item-group-label"></div>
+                                </li>
+                            </ul>
+                            <div class="k-height-container">
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </kendo-popup>
+            </div>
         </section>
         <section dir="rtl">
-            <kendo-popup class="k-animation-container k-animation-container-shown">
-                <div class="k-popup k-list-container">
-                    <select is="List" framework="angular">
-                        <option>Baseball</option>
-                        <option>Basketball</option>
-                        <option>Cricket</option>
-                        <option>Field Hockey</option>
-                        <option>Football</option>
-                        <option>Table Tennis</option>
-                        <option>Tennis</option>
-                        <option>Volleyball</option>
-                    </select>
+            <div class="k-animation-container k-animation-container-shown">
+                <div class="k-list-container k-popup">
+                    <div class="k-list k-list-md">
+                        <div class="k-list-content">
+                            <ul class="k-list-ul">
+                                <li class="k-list-item">
+                                    <span class="k-list-item-text">Baseball</span>
+                                    <div class="k-list-item-group-label"></div>
+                                </li>
+                                <li class="k-list-item">
+                                    <span class="k-list-item-text">Basketball</span>
+                                    <div class="k-list-item-group-label"></div>
+                                </li>
+                                <li class="k-list-item">
+                                    <span class="k-list-item-text">Cricket</span>
+                                    <div class="k-list-item-group-label"></div>
+                                </li>
+                                <li class="k-list-item">
+                                    <span class="k-list-item-text">Field Hockey</span>
+                                    <div class="k-list-item-group-label"></div>
+                                </li>
+                                <li class="k-list-item">
+                                    <span class="k-list-item-text">Football</span>
+                                    <div class="k-list-item-group-label"></div>
+                                </li>
+                                <li class="k-list-item">
+                                    <span class="k-list-item-text">Table Tennis</span>
+                                    <div class="k-list-item-group-label"></div>
+                                </li>
+                                <li class="k-list-item">
+                                    <span class="k-list-item-text">Tennis</span>
+                                    <div class="k-list-item-group-label"></div>
+                                </li>
+                                <li class="k-list-item">
+                                    <span class="k-list-item-text">Volleyball</span>
+                                    <div class="k-list-item-group-label"></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-            </kendo-popup>
+            </div>
         </section>
         <section dir="rtl">
-            <kendo-popup class="k-animation-container k-animation-container-shown">
-                <div class="k-popup k-list-container">
-                    <select is="List" framework="angular" virtualization>
-                        <option>Baseball</option>
-                        <option>Basketball</option>
-                        <option>Cricket</option>
-                        <option>Field Hockey</option>
-                        <option>Football</option>
-                        <option>Table Tennis</option>
-                        <option>Tennis</option>
-                        <option>Volleyball</option>
-                    </select>
+            <div class="k-animation-container k-animation-container-shown">
+                <div class="k-popup">
+                    <div class="k-list k-list-md k-virtual-list">
+                        <div class="k-list-content">
+                            <ul class="k-list-ul">
+                                <li class="k-list-item">
+                                    <span class="k-list-item-text">Baseball</span>
+                                    <div class="k-list-item-group-label"></div>
+                                </li>
+                                <li class="k-list-item">
+                                    <span class="k-list-item-text">Basketball</span>
+                                    <div class="k-list-item-group-label"></div>
+                                </li>
+                                <li class="k-list-item">
+                                    <span class="k-list-item-text">Cricket</span>
+                                    <div class="k-list-item-group-label"></div>
+                                </li>
+                                <li class="k-list-item">
+                                    <span class="k-list-item-text">Field Hockey</span>
+                                    <div class="k-list-item-group-label"></div>
+                                </li>
+                                <li class="k-list-item">
+                                    <span class="k-list-item-text">Football</span>
+                                    <div class="k-list-item-group-label"></div>
+                                </li>
+                                <li class="k-list-item">
+                                    <span class="k-list-item-text">Table Tennis</span>
+                                    <div class="k-list-item-group-label"></div>
+                                </li>
+                                <li class="k-list-item">
+                                    <span class="k-list-item-text">Tennis</span>
+                                    <div class="k-list-item-group-label"></div>
+                                </li>
+                                <li class="k-list-item">
+                                    <span class="k-list-item-text">Volleyball</span>
+                                    <div class="k-list-item-group-label"></div>
+                                </li>
+                            </ul>
+                            <div class="k-height-container">
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </kendo-popup>
+            </div>
         </section>
     </div>
 </body>

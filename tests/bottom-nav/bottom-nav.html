@@ -1,100 +1,98 @@
 <!doctype html>
-<html lang="en" class="k-no-animations">
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width:15px;">
 <head>
-    <title>Bottom Navigation</title>
+    <title>BottomNav</title>
     <meta charset="utf-8">
     <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
     <link rel="stylesheet" href="/packages/html/assets/styles.css">
     <script src="/packages/html/assets/scripts.js"></script>
-    <script src="/packages/html/dist/index.js"></script>
 </head>
 <body id="app" class="k-body">
     <style>
         #test-area {
-            grid-template-columns: repeat(1, 1fr);
             background-color: #F3F5F7;
         }
 
     </style>
-    <div id="test-area" class="grid">
+    <div id="test-area" class="k-d-grid k-grid-cols-1">
         <section>
             <h4>Horizontal</h4>
             <nav class="k-bottom-nav k-bottom-nav-primary k-bottom-nav-flat k-bottom-nav-border k-bottom-nav-item-flow-horizontal">
                 <span class="k-bottom-nav-item">
-                    <i is="Icon" class="k-bottom-nav-item-icon" name="email"></i>
+                    <span class="k-bottom-nav-item-icon k-icon k-i-email"></span>
                     <span class="k-bottom-nav-item-text">Normal</span>
                 </span>
-                <span class="k-bottom-nav-item k-state-focus" href="#">
-                    <i is="Icon" class="k-bottom-nav-item-icon" name="email"></i>
+                <span class="k-bottom-nav-item k-state-focus">
+                    <span class="k-bottom-nav-item-icon k-icon k-i-email"></span>
                     <span class="k-bottom-nav-item-text">Focused</span>
                 </span>
                 <span class="k-bottom-nav-item k-state-selected">
-                    <i is="Icon" class="k-bottom-nav-item-icon" name="email"></i>
+                    <span class="k-bottom-nav-item-icon k-icon k-i-email"></span>
                     <span class="k-bottom-nav-item-text">Selected</span>
                 </span>
                 <span class="k-bottom-nav-item k-state-disabled">
-                    <i is="Icon" class="k-bottom-nav-item-icon" name="email"></i>
+                    <span class="k-bottom-nav-item-icon k-icon k-i-email"></span>
                     <span class="k-bottom-nav-item-text">Disabled</span>
                 </span>
             </nav>
             <h4>Vertical</h4>
             <nav class="k-bottom-nav k-bottom-nav-primary k-bottom-nav-flat k-bottom-nav-border k-bottom-nav-item-flow-vertical">
                 <span class="k-bottom-nav-item">
-                    <i is="Icon" class="k-bottom-nav-item-icon" name="email"></i>
+                    <span class="k-bottom-nav-item-icon k-icon k-i-email"></span>
                     <span class="k-bottom-nav-item-text">Normal</span>
                 </span>
-                <span class="k-bottom-nav-item k-state-focus" href="#">
-                    <i is="Icon" class="k-bottom-nav-item-icon" name="email"></i>
+                <span class="k-bottom-nav-item k-state-focus">
+                    <span class="k-bottom-nav-item-icon k-icon k-i-email"></span>
                     <span class="k-bottom-nav-item-text">Focused</span>
                 </span>
                 <span class="k-bottom-nav-item k-state-selected">
-                    <i is="Icon" class="k-bottom-nav-item-icon" name="email"></i>
+                    <span class="k-bottom-nav-item-icon k-icon k-i-email"></span>
                     <span class="k-bottom-nav-item-text">Selected</span>
                 </span>
                 <span class="k-bottom-nav-item k-state-disabled">
-                    <i is="Icon" class="k-bottom-nav-item-icon" name="email"></i>
+                    <span class="k-bottom-nav-item-icon k-icon k-i-email"></span>
                     <span class="k-bottom-nav-item-text">Disabled</span>
                 </span>
             </nav>
             <h4>Icons only</h4>
             <nav class="k-bottom-nav k-bottom-nav-primary k-bottom-nav-flat k-bottom-nav-border k-bottom-nav-item-flow-horizontal">
                 <span class="k-bottom-nav-item">
-                    <i is="Icon" class="k-bottom-nav-item-icon" name="email"></i>
+                    <span class="k-bottom-nav-item-icon k-icon k-i-email"></span>
                 </span>
                 <span class="k-bottom-nav-item k-state-focus">
-                    <i is="Icon" class="k-bottom-nav-item-icon" name="email"></i>
+                    <span class="k-bottom-nav-item-icon k-icon k-i-email"></span>
                 </span>
                 <span class="k-bottom-nav-item k-state-selected">
-                    <i is="Icon" class="k-bottom-nav-item-icon" name="email"></i>
+                    <span class="k-bottom-nav-item-icon k-icon k-i-email"></span>
                 </span>
                 <span class="k-bottom-nav-item k-state-disabled">
-                    <i is="Icon" class="k-bottom-nav-item-icon" name="email"></i>
+                    <span class="k-bottom-nav-item-icon k-icon k-i-email"></span>
                 </span>
             </nav>
             <h4>Overflow</h4>
             <div style="width: 360px;">
                 <nav class="k-bottom-nav k-bottom-nav-primary k-bottom-nav-flat k-bottom-nav-border k-bottom-nav-item-flow-vertical">
                     <span class="k-bottom-nav-item">
-                        <i is="Icon" class="k-bottom-nav-item-icon" name="email"></i>
+                        <span class="k-bottom-nav-item-icon k-icon k-i-email"></span>
                         <span class="k-bottom-nav-item-text">Normal</span>
                     </span>
-                    <span class="k-bottom-nav-item k-state-focus" href="#">
-                        <i is="Icon" class="k-bottom-nav-item-icon" name="email"></i>
+                    <span class="k-bottom-nav-item k-state-focus">
+                        <span class="k-bottom-nav-item-icon k-icon k-i-email"></span>
                         <span class="k-bottom-nav-item-text">Focused Long</span>
                     </span>
                     <span class="k-bottom-nav-item k-state-selected">
-                        <i is="Icon" class="k-bottom-nav-item-icon" name="email"></i>
+                        <span class="k-bottom-nav-item-icon k-icon k-i-email"></span>
                         <span class="k-bottom-nav-item-text">Selected</span>
                     </span>
                     <span class="k-bottom-nav-item k-state-disabled">
-                        <i is="Icon" class="k-bottom-nav-item-icon" name="email"></i>
+                        <span class="k-bottom-nav-item-icon k-icon k-i-email"></span>
                         <span class="k-bottom-nav-item-text">Disabled Long Text</span>
                     </span>
                 </nav>
             </div>
             <h4>k-bottom-nav-link</h4>
             <div style="width: 360px;">
-                <kendo-bottomnavigation class="k-bottom-nav k-bottom-nav-flat k-bottom-nav-item-flow-vertical k-bottom-nav-primary">
+                <div class="k-bottom-nav k-bottom-nav-flat k-bottom-nav-item-flow-vertical k-bottom-nav-primary">
                     <span class="k-bottom-nav-item k-state-selected">
                         <div class="k-bottom-nav-link">
                             <span>Inbox</span>
@@ -105,7 +103,7 @@
                             <span>Profile</span>
                         </div>
                     </span>
-                </kendo-bottomnavigation>
+                </div>
             </div>
         </section>
     </div>

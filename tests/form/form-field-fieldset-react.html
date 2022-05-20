@@ -1,12 +1,11 @@
 <!doctype html>
-<html lang="en" class="k-no-animations">
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width:15px;">
 <head>
-    <title>Form Field Fieldset React</title>
+    <title>Kendo React FormField Fieldset</title>
     <meta charset="utf-8">
     <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
     <link rel="stylesheet" href="/packages/html/assets/styles.css">
     <script src="/packages/html/assets/scripts.js"></script>
-    <script src="/packages/html/dist/index.js"></script>
 </head>
 <body id="app" class="k-body">
     <style>
@@ -25,22 +24,30 @@
                     <legend class="k-form-legend">Please fill in the fields:</legend>
                     <div class="k-form-field">
                         <label class="k-label">First Name:</label>
-                        <input is="Textbox" />
+                        <span class="k-textbox k-input k-input-md k-input-solid k-rounded-md">
+                            <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="">
+                        </span>
                     </div>
                     <div class="k-form-field">
                         <label class="k-label">Last Name:</label>
-                        <input is="Textbox" />
+                        <span class="k-textbox k-input k-input-md k-input-solid k-rounded-md">
+                            <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="">
+                        </span>
                     </div>
                 </fieldset>
                 <fieldset class="k-form-fieldset">
                     <legend class="k-form-legend">Please fill in your address details:</legend>
                     <div class="k-form-field">
                         <label class="k-label">City:</label>
-                        <input is="Textbox" />
+                        <span class="k-textbox k-input k-input-md k-input-solid k-rounded-md">
+                            <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="">
+                        </span>
                     </div>
                     <div class="k-form-field">
                         <label class="k-label">Address:</label>
-                        <textarea is="Textarea"></textarea>
+                        <span class="k-textarea k-input k-input-md k-input-solid k-rounded-md">
+                            <textarea class="k-input-inner" placeholder=""></textarea>
+                        </span>
                     </div>
                 </fieldset>
             </form>
@@ -52,13 +59,17 @@
                     <div class="k-form-field">
                         <label class="k-label">First Name:</label>
                         <div class="k-form-field-wrap">
-                            <input is="Textbox" />
+                            <span class="k-textbox k-input k-input-md k-input-solid k-rounded-md">
+                                <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="">
+                            </span>
                         </div>
                     </div>
                     <div class="k-form-field">
                         <label class="k-label">Last Name:</label>
                         <div class="k-form-field-wrap">
-                            <input is="Textbox" />
+                            <span class="k-textbox k-input k-input-md k-input-solid k-rounded-md">
+                                <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="">
+                            </span>
                         </div>
                     </div>
                 </fieldset>
@@ -67,13 +78,17 @@
                     <div class="k-form-field">
                         <label class="k-label">City:</label>
                         <div class="k-form-field-wrap">
-                            <input is="Textbox" />
+                            <span class="k-textbox k-input k-input-md k-input-solid k-rounded-md">
+                                <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="">
+                            </span>
                         </div>
                     </div>
                     <div class="k-form-field">
                         <label class="k-label">Address:</label>
                         <div class="k-form-field-wrap">
-                            <textarea is="Textarea"></textarea>
+                            <span class="k-textarea k-input k-input-md k-input-solid k-rounded-md">
+                                <textarea class="k-input-inner" placeholder=""></textarea>
+                            </span>
                         </div>
                     </div>
                 </fieldset>

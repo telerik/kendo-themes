@@ -1,15 +1,14 @@
 <!doctype html>
-<html lang="en" class="k-no-animations">
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width:15px;">
 <head>
-    <title>TreeList</title>
+    <title>Treelist Aggregates</title>
     <meta charset="utf-8">
     <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
     <link rel="stylesheet" href="/packages/html/assets/styles.css">
     <script src="/packages/html/assets/scripts.js"></script>
-    <script src="/packages/html/dist/index.js"></script>
 </head>
 <body id="app" class="k-body">
-    <div id="test-area" class="grid">
+    <div id="test-area" class="k-d-grid">
         <section>
             <span>jQuery</span>
             <div id="treelist" class="k-treelist k-grid k-widget k-grid-display-block" style="height: 650px;">
@@ -17,27 +16,27 @@
                     <div class="k-grid-header-wrap">
                         <table>
                             <colgroup>
-                                <col />
-                                <col />
-                                <col />
+                                <col>
+                                <col>
+                                <col>
                             </colgroup>
                             <thead>
                                 <tr>
                                     <th class="k-header k-with-icon k-filterable" rowspan="1">
                                         <a class="k-grid-filter" href="#">
-                                            <i is="Icon" name="filter"></i>
+                                            <span class="k-icon k-i-filter"></span>
                                         </a>
                                         <a class="k-link" href="#">Name</a>
                                     </th>
                                     <th class="k-header k-with-icon k-filterable" rowspan="1" data-index="1">
                                         <a class="k-grid-filter" href="#">
-                                            <i is="Icon" name="filter"></i>
+                                            <span class="k-icon k-i-filter"></span>
                                         </a>
                                         <a class="k-link" href="#">Position</a>
                                     </th>
                                     <th data-title="Hire Date" class="k-header k-with-icon k-filterable" rowspan="1">
                                         <a class="k-grid-filter" href="#">
-                                            <i is="Icon" name="filter"></i>
+                                            <span class="k-icon k-i-filter"></span>
                                         </a>
                                         <a class="k-link" href="#">Hire Date</a>
                                     </th>
@@ -49,87 +48,87 @@
                 <div class="k-grid-content k-auto-scrollable" style="display: block; height: 591px;">
                     <table>
                         <colgroup>
-                            <col />
-                            <col />
-                            <col />
+                            <col>
+                            <col>
+                            <col>
                         </colgroup>
                         <tbody>
                             <tr class="k-treelist-group">
                                 <td style="white-space: nowrap;">
-                                    <i is="Icon" name="collapse"></i>Daryl Sweeney
+                                    <span class="k-icon k-i-collapse"></span>Daryl Sweeney
                                 </td>
                                 <td>CEO</td>
                                 <td>February 7, 2012</td>
                             </tr>
                             <tr class="k-alt k-treelist-group">
                                 <td style="white-space: nowrap;">
-                                    <i is="Icon" name="none"></i>
-                                    <i is="Icon" name="expand"></i>Guy Wooten
+                                    <span class="k-icon k-i-none"></span>
+                                    <span class="k-icon k-i-expand"></span>Guy Wooten
                                 </td>
                                 <td>Chief Technical Officer</td>
                                 <td>March 3, 2010</td>
                             </tr>
                             <tr class="k-treelist-group">
                                 <td style="white-space: nowrap;">
-                                    <i is="Icon" name="none"></i>
-                                    <i is="Icon" name="expand"></i>Priscilla Frank
+                                    <span class="k-icon k-i-none"></span>
+                                    <span class="k-icon k-i-expand"></span>Priscilla Frank
                                 </td>
                                 <td>Chief Product Officer</td>
                                 <td>November 30, 2014</td>
                             </tr>
                             <tr class="k-alt k-treelist-group">
                                 <td style="white-space: nowrap;">
-                                    <i is="Icon" name="none"></i>
-                                    <i is="Icon" name="collapse"></i>Anika Vega
+                                    <span class="k-icon k-i-none"></span>
+                                    <span class="k-icon k-i-collapse"></span>Anika Vega
                                 </td>
                                 <td>Chief Process Officer</td>
                                 <td>February 25, 2010</td>
                             </tr>
                             <tr class="k-treelist-group">
                                 <td style="white-space: nowrap;">
-                                    <i is="Icon" name="none"></i>
-                                    <i is="Icon" name="none"></i>
-                                    <i is="Icon" name="expand"></i>Vernon Ballard
+                                    <span class="k-icon k-i-none"></span>
+                                    <span class="k-icon k-i-none"></span>
+                                    <span class="k-icon k-i-expand"></span>Vernon Ballard
                                 </td>
                                 <td>Director Facilities</td>
                                 <td>June 26, 2015</td>
                             </tr>
                             <tr class="k-footer-template">
                                 <td class="k-state-focused">
-                                    <i is="Icon" name="none"></i>
-                                    <i is="Icon" name="none"></i>
-                                    <i is="Icon" name="none"></i>7 employee(s)
+                                    <span class="k-icon k-i-none"></span>
+                                    <span class="k-icon k-i-none"></span>
+                                    <span class="k-icon k-i-none"></span>7 employee(s)
                                 </td>
                                 <td></td>
                                 <td>Last employee hired on July 30, 2015</td>
                             </tr>
                             <tr class="k-alt k-treelist-group">
                                 <td style="white-space: nowrap;">
-                                    <i is="Icon" name="none"></i>
-                                    <i is="Icon" name="expand"></i>Nevada Hart
+                                    <span class="k-icon k-i-none"></span>
+                                    <span class="k-icon k-i-expand"></span>Nevada Hart
                                 </td>
                                 <td>Chief Financial Officer</td>
                                 <td>August 17, 2015</td>
                             </tr>
                             <tr class="k-treelist-group">
                                 <td style="white-space: nowrap;">
-                                    <i is="Icon" name="none"></i>
-                                    <i is="Icon" name="expand"></i>Hunter Fry
+                                    <span class="k-icon k-i-none"></span>
+                                    <span class="k-icon k-i-expand"></span>Hunter Fry
                                 </td>
                                 <td>General Counsel</td>
                                 <td>February 12, 2011</td>
                             </tr>
                             <tr class="k-footer-template">
                                 <td>
-                                    <i is="Icon" name="none"></i>
-                                    <i is="Icon" name="none"></i>98 employee(s)
+                                    <span class="k-icon k-i-none"></span>
+                                    <span class="k-icon k-i-none"></span>98 employee(s)
                                 </td>
                                 <td></td>
                                 <td>Last employee hired on August 17, 2015</td>
                             </tr>
                             <tr class="k-footer-template">
                                 <td>
-                                    <i is="Icon" name="none"></i>99 employee(s)
+                                    <span class="k-icon k-i-none"></span>99 employee(s)
                                 </td>
                                 <td></td>
                                 <td>Last employee hired on August 17, 2015</td>
@@ -141,15 +140,15 @@
         </section>
         <section>
             <span>Angular</span>
-            <kendo-treelist class="k-widget k-grid k-treelist" style="height: 410px;">
+            <div class="k-widget k-grid k-treelist" style="height: 410px;">
                 <div class="k-grid-aria-root">
                     <div class="k-grid-header">
                         <div class="k-grid-header-wrap">
                             <table>
                                 <colgroup>
-                                    <col style="width: 250px;" />
-                                    <col style="width: 180px;" />
-                                    <col style="width: 180px;" />
+                                    <col style="width: 250px;">
+                                    <col style="width: 180px;">
+                                    <col style="width: 180px;">
                                 </colgroup>
                                 <thead>
                                     <tr>
@@ -161,71 +160,71 @@
                             </table>
                         </div>
                     </div>
-                    <kendo-treelist-list class="k-grid-container">
+                    <div class="k-grid-container">
                         <div class="k-grid-content k-virtual-content">
                             <div class="k-grid-table-wrap">
                                 <table class="k-grid-table">
                                     <colgroup>
-                                        <col style="width: 250px;" />
-                                        <col style="width: 180px;" />
-                                        <col style="width: 180px;" />
+                                        <col style="width: 250px;">
+                                        <col style="width: 180px;">
+                                        <col style="width: 180px;">
                                     </colgroup>
                                     <tbody>
                                         <tr>
                                             <td colspan="1">
-                                                <i is="Icon" name="collapse"></i> Daryl Sweeney
+                                                <span class="k-icon k-i-collapse"></span>Daryl Sweeney
                                             </td>
-                                            <td colspan="1"> Chief Executive Officer </td>
+                                            <td colspan="1">Chief Executive Officer</td>
                                             <td colspan="1">1/15/2019</td>
                                         </tr>
                                         <tr class="k-alt">
                                             <td colspan="1">
-                                                <i is="Icon" name="none"></i>
-                                                <i is="Icon" name="collapse"></i> Guy Wooten
+                                                <span class="k-icon k-i-none"></span>
+                                                <span class="k-icon k-i-collapse"></span>Guy Wooten
                                             </td>
-                                            <td colspan="1"> Chief Technical Officer </td>
+                                            <td colspan="1">Chief Technical Officer</td>
                                             <td colspan="1">2/19/2019</td>
                                         </tr>
                                         <tr>
                                             <td colspan="1">
-                                                <i is="Icon" name="none"></i>
-                                                <i is="Icon" name="none"></i>
-                                                <i is="Icon" name="expand"></i> Buffy Weber
+                                                <span class="k-icon k-i-none"></span>
+                                                <span class="k-icon k-i-none"></span>
+                                                <span class="k-icon k-i-expand"></span>Buffy Weber
                                             </td>
-                                            <td colspan="1"> VP, Engineering </td>
+                                            <td colspan="1">VP, Engineering</td>
                                             <td colspan="1">4/13/2019</td>
                                         </tr>
                                         <tr class="k-footer">
                                             <td class="k-state-focused">
-                                                <i is="Icon" name="none"></i>
-                                                <i is="Icon" name="none"></i>
-                                                <i is="Icon" name="none"></i> 35 employee(s)
+                                                <span class="k-icon k-i-none"></span>
+                                                <span class="k-icon k-i-none"></span>
+                                                <span class="k-icon k-i-none"></span>35 employee(s)
                                             </td>
                                             <td></td>
-                                            <td> Last employee hired on 10/21/2019 </td>
+                                            <td>Last employee hired on 10/21/2019</td>
                                         </tr>
                                         <tr class="k-alt">
                                             <td colspan="1">
-                                                <i is="Icon" name="none"></i>
-                                                <i is="Icon" name="expand"></i> Priscilla Frank
+                                                <span class="k-icon k-i-none"></span>
+                                                <span class="k-icon k-i-expand"></span>Priscilla Frank
                                             </td>
-                                            <td colspan="1"> Chief Product Officer </td>
+                                            <td colspan="1">Chief Product Officer</td>
                                             <td colspan="1">4/22/2019</td>
                                         </tr>
                                         <tr class="k-footer">
                                             <td>
-                                                <i is="Icon" name="none"></i>
-                                                <i is="Icon" name="none"></i> 42 employee(s)
+                                                <span class="k-icon k-i-none"></span>
+                                                <span class="k-icon k-i-none"></span>42 employee(s)
                                             </td>
                                             <td></td>
-                                            <td> Last employee hired on 10/21/2019 </td>
+                                            <td>Last employee hired on 10/21/2019</td>
                                         </tr>
                                         <tr class="k-footer">
                                             <td>
-                                                <i is="Icon" name="none"></i> 43 employee(s)
+                                                <span class="k-icon k-i-none"></span>43 employee(s)
                                             </td>
                                             <td></td>
-                                            <td> Last employee hired on 10/21/2019 </td>
+                                            <td>Last employee hired on 10/21/2019</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -234,9 +233,9 @@
                                 <div style="height: 0px;"></div>
                             </div>
                         </div>
-                    </kendo-treelist-list>
+                    </div>
                 </div>
-            </kendo-treelist>
+            </div>
         </section>
     </div>
 </body>

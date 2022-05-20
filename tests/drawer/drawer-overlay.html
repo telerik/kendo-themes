@@ -1,12 +1,11 @@
 <!doctype html>
-<html lang="en" class="k-no-animations">
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width:15px;">
 <head>
-    <title>Drawer overlay</title>
+    <title>Drawer Overlay</title>
     <meta charset="utf-8">
     <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
     <link rel="stylesheet" href="/packages/html/assets/styles.css">
     <script src="/packages/html/assets/scripts.js"></script>
-    <script src="/packages/html/dist/index.js"></script>
 </head>
 <body id="app" class="k-body">
     <style>
@@ -14,6 +13,7 @@
             height: 600px;
             position: relative;
         }
+
         #test-area .k-drawer,
         #test-area .k-overlay {
             position: absolute;
@@ -27,47 +27,47 @@
                     <div class="k-drawer-items">
                         <ul>
                             <li class="k-drawer-item">
-                                <i is="Icon" name="star-outline"></i>
+                                <span class="k-icon k-i-star-outline"></span>
                                 <span class="k-item-text">Item</span>
                             </li>
                             <li class="k-drawer-item k-drawer-separator"></li>
                             <li class="k-drawer-item k-state-hover">
-                                <i is="Icon" name="star-outline"></i>
+                                <span class="k-icon k-i-star-outline"></span>
                                 <span class="k-item-text">Hovered Item</span>
                             </li>
                             <li class="k-drawer-item k-state-selected">
-                                <i is="Icon" name="star-outline"></i>
+                                <span class="k-icon k-i-star-outline"></span>
                                 <span class="k-item-text">Selected Item</span>
                             </li>
                             <li class="k-drawer-item k-state-selected k-state-hover">
-                                <i is="Icon" name="star-outline"></i>
+                                <span class="k-icon k-i-star-outline"></span>
                                 <span class="k-item-text">Selected and hovered item</span>
                             </li>
                             <li class="k-drawer-item k-state-focused">
-                                <i is="Icon" name="star-outline"></i>
+                                <span class="k-icon k-i-star-outline"></span>
                                 <span class="k-item-text">Focused item</span>
                             </li>
                             <li class="k-drawer-item">
-                                <i is="Icon" name="star-outline"></i>
+                                <span class="k-icon k-i-star-outline"></span>
                                 <span class="k-item-text">Collapsed</span>
                                 <span class="k-spacer"></span>
-                                <i is="Icon" name="arrow-chevron-down"></i>
+                                <span class="k-icon k-i-arrow-chevron-down"></span>
                             </li>
                             <li class="k-drawer-item">
-                                <i is="Icon" name="star-outline"></i>
+                                <span class="k-icon k-i-star-outline"></span>
                                 <span class="k-item-text">Expanded</span>
                                 <span class="k-spacer"></span>
-                                <i is="Icon" name="arrow-chevron-up"></i>
+                                <span class="k-icon k-i-arrow-chevron-up"></span>
                             </li>
                             <li class="k-drawer-item">
-                                <i is="Icon" name="none"></i>
-                                <i is="Icon" name="star-outline"></i>
+                                <span class="k-icon k-i-none"></span>
+                                <span class="k-icon k-i-star-outline"></span>
                                 <span class="k-item-text">Child Lvl 1</span>
                             </li>
                             <li class="k-drawer-item">
-                                <i is="Icon" name="none"></i>
-                                <i is="Icon" name="none"></i>
-                                <i is="Icon" name="star-outline"></i>
+                                <span class="k-icon k-i-none"></span>
+                                <span class="k-icon k-i-none"></span>
+                                <span class="k-icon k-i-star-outline"></span>
                                 <span class="k-item-text">Child Lvl 2</span>
                             </li>
                         </ul>
@@ -82,59 +82,57 @@
                     <div class="k-drawer-items">
                         <ul>
                             <li class="k-drawer-item">
-                                <i is="Icon" name="star-outline"></i>
+                                <span class="k-icon k-i-star-outline"></span>
                                 <span class="k-item-text">Item</span>
                             </li>
                             <li class="k-drawer-item k-drawer-separator"></li>
                             <li class="k-drawer-item k-state-hover">
-                                <i is="Icon" name="star-outline"></i>
+                                <span class="k-icon k-i-star-outline"></span>
                                 <span class="k-item-text">Hovered Item</span>
                             </li>
                             <li class="k-drawer-item k-state-selected">
-                                <i is="Icon" name="star-outline"></i>
+                                <span class="k-icon k-i-star-outline"></span>
                                 <span class="k-item-text">Selected Item</span>
                             </li>
                             <li class="k-drawer-item k-state-selected k-state-hover">
-                                <i is="Icon" name="star-outline"></i>
+                                <span class="k-icon k-i-star-outline"></span>
                                 <span class="k-item-text">Selected and hovered item</span>
                             </li>
                             <li class="k-drawer-item k-state-focused">
-                                <i is="Icon" name="star-outline"></i>
+                                <span class="k-icon k-i-star-outline"></span>
                                 <span class="k-item-text">Focused item</span>
                             </li>
                             <li class="k-drawer-item">
-                                <i is="Icon" name="star-outline"></i>
+                                <span class="k-icon k-i-star-outline"></span>
                                 <span class="k-item-text">Collapsed</span>
                                 <span class="k-spacer"></span>
-                                <i is="Icon" name="arrow-chevron-down"></i>
+                                <span class="k-icon k-i-arrow-chevron-down"></span>
                             </li>
                             <li class="k-drawer-item">
-                                <i is="Icon" name="star-outline"></i>
+                                <span class="k-icon k-i-star-outline"></span>
                                 <span class="k-item-text">Expanded</span>
                                 <span class="k-spacer"></span>
-                                <i is="Icon" name="arrow-chevron-up"></i>
+                                <span class="k-icon k-i-arrow-chevron-up"></span>
                             </li>
                             <li class="k-drawer-item">
-                                <i is="Icon" name="none"></i>
-                                <i is="Icon" name="star-outline"></i>
+                                <span class="k-icon k-i-none"></span>
+                                <span class="k-icon k-i-star-outline"></span>
                                 <span class="k-item-text">Child Lvl 1</span>
                             </li>
                             <li class="k-drawer-item">
-                                <i is="Icon" name="none"></i>
-                                <i is="Icon" name="none"></i>
-                                <i is="Icon" name="star-outline"></i>
+                                <span class="k-icon k-i-none"></span>
+                                <span class="k-icon k-i-none"></span>
+                                <span class="k-icon k-i-star-outline"></span>
                                 <span class="k-item-text">Child Lvl 2</span>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
-            <div class="k-overlay" style="display: none;">
-                <!-- Hide on purpuse -->
-            </div>
+            <div class="k-overlay" style="display: none;"></div>
         </div>
         <h2 style="text-align: center;">Drawer overlay</h2>
-        <div class="k-drawer-content" style="padding: 0 20px;">Lorem ipsum dolor sit amet consectetur adipisicing elit.olor sit amet consectetur adipisicing elit. Error accusantium odit, optio nulla maiores quo neque fugit debitis dignissimos incidunt maxime? Eum voluptatem blanditiis voluptatum praesentium dolorem, dolore placeat debitis quod delectus laborum assumenda cupiditate. </div>
+        <div class="k-drawer-content" style="padding: 0px 20px;">Lorem ipsum dolor sit amet consectetur adipisicing elit.olor sit amet consectetur adipisicing elit. Error accusantium odit, optio nulla maiores quo neque fugit debitis dignissimos incidunt maxime? Eum voluptatem blanditiis voluptatum praesentium dolorem, dolore placeat debitis quod delectus laborum assumenda cupiditate.</div>
     </div>
 </body>
 </html>

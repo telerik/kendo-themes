@@ -1,12 +1,11 @@
 <!doctype html>
-<html lang="en" class="k-no-animations">
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width:15px;">
 <head>
     <title>List</title>
     <meta charset="utf-8">
     <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
     <link rel="stylesheet" href="/packages/html/assets/styles.css">
     <script src="/packages/html/assets/scripts.js"></script>
-    <script src="/packages/html/dist/index.js"></script>
 </head>
 <body id="app" class="k-body">
     <style>
@@ -22,60 +21,234 @@
         <span>Static list (rtl)</span>
         <span>Virtual list (rtl)</span>
         <section>
-            <select is="List">
-                <option>List item</option>
-                <option hover>Hover</option>
-                <option focus>Focus</option>
-                <option selected>Selected</option>
-                <option hover selected>Hover selected</option>
-                <option disabled>Disabled</option>
-                <option>List item with very long text, that spans on multiple lines</option>
-                <option showCheckbox>Checkbox</option>
-                <option showIcon iconName="cog">Icon</option>
-                <option showCheckbox showIcon iconName="cog">Checkbox icon</option>
-            </select>
+            <div class="k-list k-list-md">
+                <div class="k-list-content">
+                    <ul class="k-list-ul">
+                        <li class="k-list-item">
+                            <span class="k-list-item-text">List item</span>
+                            <div class="k-list-item-group-label"></div>
+                        </li>
+                        <li class="k-list-item k-hover">
+                            <span class="k-list-item-text">Hover</span>
+                            <div class="k-list-item-group-label"></div>
+                        </li>
+                        <li class="k-list-item k-focus">
+                            <span class="k-list-item-text">Focus</span>
+                            <div class="k-list-item-group-label"></div>
+                        </li>
+                        <li class="k-list-item k-selected">
+                            <span class="k-list-item-text">Selected</span>
+                            <div class="k-list-item-group-label"></div>
+                        </li>
+                        <li class="k-list-item k-hover k-selected">
+                            <span class="k-list-item-text">Hover selected</span>
+                            <div class="k-list-item-group-label"></div>
+                        </li>
+                        <li class="k-list-item k-disabled">
+                            <span class="k-list-item-text">Disabled</span>
+                            <div class="k-list-item-group-label"></div>
+                        </li>
+                        <li class="k-list-item">
+                            <span class="k-list-item-text">List item with very long text, that spans on multiple lines</span>
+                            <div class="k-list-item-group-label"></div>
+                        </li>
+                        <li class="k-list-item">
+                            <span class="k-checkbox-wrap">
+                                <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                            </span>
+                            <span class="k-list-item-text">Checkbox</span>
+                            <div class="k-list-item-group-label"></div>
+                        </li>
+                        <li class="k-list-item">
+                            <span class="k-icon k-i-cog"></span>
+                            <span class="k-list-item-text">Icon</span>
+                            <div class="k-list-item-group-label"></div>
+                        </li>
+                        <li class="k-list-item">
+                            <span class="k-checkbox-wrap">
+                                <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                            </span>
+                            <span class="k-icon k-i-cog"></span>
+                            <span class="k-list-item-text">Checkbox icon</span>
+                            <div class="k-list-item-group-label"></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </section>
         <section>
-            <select is="List" virtualization>
-                <option>List item</option>
-                <option hover>Hover</option>
-                <option focus>Focus</option>
-                <option selected>Selected</option>
-                <option hover selected>Hover selected</option>
-                <option disabled>Disabled</option>
-                <option>List item with very long text, that spans on multiple lines</option>
-                <option showCheckbox>Checkbox</option>
-                <option showIcon iconName="cog">Icon</option>
-                <option showCheckbox showIcon iconName="cog">Checkbox icon</option>
-            </select>
+            <div class="k-list k-list-md k-virtual-list">
+                <div class="k-list-content">
+                    <ul class="k-list-ul">
+                        <li class="k-list-item">
+                            <span class="k-list-item-text">List item</span>
+                            <div class="k-list-item-group-label"></div>
+                        </li>
+                        <li class="k-list-item k-hover">
+                            <span class="k-list-item-text">Hover</span>
+                            <div class="k-list-item-group-label"></div>
+                        </li>
+                        <li class="k-list-item k-focus">
+                            <span class="k-list-item-text">Focus</span>
+                            <div class="k-list-item-group-label"></div>
+                        </li>
+                        <li class="k-list-item k-selected">
+                            <span class="k-list-item-text">Selected</span>
+                            <div class="k-list-item-group-label"></div>
+                        </li>
+                        <li class="k-list-item k-hover k-selected">
+                            <span class="k-list-item-text">Hover selected</span>
+                            <div class="k-list-item-group-label"></div>
+                        </li>
+                        <li class="k-list-item k-disabled">
+                            <span class="k-list-item-text">Disabled</span>
+                            <div class="k-list-item-group-label"></div>
+                        </li>
+                        <li class="k-list-item">
+                            <span class="k-list-item-text">List item with very long text, that spans on multiple lines</span>
+                            <div class="k-list-item-group-label"></div>
+                        </li>
+                        <li class="k-list-item">
+                            <span class="k-checkbox-wrap">
+                                <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                            </span>
+                            <span class="k-list-item-text">Checkbox</span>
+                            <div class="k-list-item-group-label"></div>
+                        </li>
+                        <li class="k-list-item">
+                            <span class="k-icon k-i-cog"></span>
+                            <span class="k-list-item-text">Icon</span>
+                            <div class="k-list-item-group-label"></div>
+                        </li>
+                        <li class="k-list-item">
+                            <span class="k-checkbox-wrap">
+                                <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                            </span>
+                            <span class="k-icon k-i-cog"></span>
+                            <span class="k-list-item-text">Checkbox icon</span>
+                            <div class="k-list-item-group-label"></div>
+                        </li>
+                    </ul>
+                    <div class="k-height-container">
+                        <div></div>
+                    </div>
+                </div>
+            </div>
         </section>
         <section dir="rtl">
-            <select is="List">
-                <option>List item</option>
-                <option hover>Hover</option>
-                <option focus>Focus</option>
-                <option selected>Selected</option>
-                <option hover selected>Hover selected</option>
-                <option disabled>Disabled</option>
-                <option>List item with very long text, that spans on multiple lines</option>
-                <option showCheckbox>Checkbox</option>
-                <option showIcon iconName="cog">Icon</option>
-                <option showCheckbox showIcon iconName="cog">Checkbox icon</option>
-            </select>
+            <div class="k-list k-list-md">
+                <div class="k-list-content">
+                    <ul class="k-list-ul">
+                        <li class="k-list-item">
+                            <span class="k-list-item-text">List item</span>
+                            <div class="k-list-item-group-label"></div>
+                        </li>
+                        <li class="k-list-item k-hover">
+                            <span class="k-list-item-text">Hover</span>
+                            <div class="k-list-item-group-label"></div>
+                        </li>
+                        <li class="k-list-item k-focus">
+                            <span class="k-list-item-text">Focus</span>
+                            <div class="k-list-item-group-label"></div>
+                        </li>
+                        <li class="k-list-item k-selected">
+                            <span class="k-list-item-text">Selected</span>
+                            <div class="k-list-item-group-label"></div>
+                        </li>
+                        <li class="k-list-item k-hover k-selected">
+                            <span class="k-list-item-text">Hover selected</span>
+                            <div class="k-list-item-group-label"></div>
+                        </li>
+                        <li class="k-list-item k-disabled">
+                            <span class="k-list-item-text">Disabled</span>
+                            <div class="k-list-item-group-label"></div>
+                        </li>
+                        <li class="k-list-item">
+                            <span class="k-list-item-text">List item with very long text, that spans on multiple lines</span>
+                            <div class="k-list-item-group-label"></div>
+                        </li>
+                        <li class="k-list-item">
+                            <span class="k-checkbox-wrap">
+                                <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                            </span>
+                            <span class="k-list-item-text">Checkbox</span>
+                            <div class="k-list-item-group-label"></div>
+                        </li>
+                        <li class="k-list-item">
+                            <span class="k-icon k-i-cog"></span>
+                            <span class="k-list-item-text">Icon</span>
+                            <div class="k-list-item-group-label"></div>
+                        </li>
+                        <li class="k-list-item">
+                            <span class="k-checkbox-wrap">
+                                <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                            </span>
+                            <span class="k-icon k-i-cog"></span>
+                            <span class="k-list-item-text">Checkbox icon</span>
+                            <div class="k-list-item-group-label"></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </section>
         <section dir="rtl">
-            <select is="List" virtualization>
-                <option>List item</option>
-                <option hover>Hover</option>
-                <option focus>Focus</option>
-                <option selected>Selected</option>
-                <option hover selected>Hover selected</option>
-                <option disabled>Disabled</option>
-                <option>List item with very long text, that spans on multiple lines</option>
-                <option showCheckbox>Checkbox</option>
-                <option showIcon iconName="cog">Icon</option>
-                <option showCheckbox showIcon iconName="cog">Checkbox icon</option>
-            </select>
+            <div class="k-list k-list-md k-virtual-list">
+                <div class="k-list-content">
+                    <ul class="k-list-ul">
+                        <li class="k-list-item">
+                            <span class="k-list-item-text">List item</span>
+                            <div class="k-list-item-group-label"></div>
+                        </li>
+                        <li class="k-list-item k-hover">
+                            <span class="k-list-item-text">Hover</span>
+                            <div class="k-list-item-group-label"></div>
+                        </li>
+                        <li class="k-list-item k-focus">
+                            <span class="k-list-item-text">Focus</span>
+                            <div class="k-list-item-group-label"></div>
+                        </li>
+                        <li class="k-list-item k-selected">
+                            <span class="k-list-item-text">Selected</span>
+                            <div class="k-list-item-group-label"></div>
+                        </li>
+                        <li class="k-list-item k-hover k-selected">
+                            <span class="k-list-item-text">Hover selected</span>
+                            <div class="k-list-item-group-label"></div>
+                        </li>
+                        <li class="k-list-item k-disabled">
+                            <span class="k-list-item-text">Disabled</span>
+                            <div class="k-list-item-group-label"></div>
+                        </li>
+                        <li class="k-list-item">
+                            <span class="k-list-item-text">List item with very long text, that spans on multiple lines</span>
+                            <div class="k-list-item-group-label"></div>
+                        </li>
+                        <li class="k-list-item">
+                            <span class="k-checkbox-wrap">
+                                <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                            </span>
+                            <span class="k-list-item-text">Checkbox</span>
+                            <div class="k-list-item-group-label"></div>
+                        </li>
+                        <li class="k-list-item">
+                            <span class="k-icon k-i-cog"></span>
+                            <span class="k-list-item-text">Icon</span>
+                            <div class="k-list-item-group-label"></div>
+                        </li>
+                        <li class="k-list-item">
+                            <span class="k-checkbox-wrap">
+                                <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                            </span>
+                            <span class="k-icon k-i-cog"></span>
+                            <span class="k-list-item-text">Checkbox icon</span>
+                            <div class="k-list-item-group-label"></div>
+                        </li>
+                    </ul>
+                    <div class="k-height-container">
+                        <div></div>
+                    </div>
+                </div>
+            </div>
         </section>
     </div>
 </body>

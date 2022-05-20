@@ -1,12 +1,11 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width:15px;">
 <head>
-    <title>Grid Short Filter Row</title>
+    <title>Grid Filter Row</title>
     <meta charset="utf-8">
     <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
     <link rel="stylesheet" href="/packages/html/assets/styles.css">
     <script src="/packages/html/assets/scripts.js"></script>
-    <script src="/packages/html/dist/index.js"></script>
 </head>
 <body id="app" class="k-body">
     <div id="test-area" class="k-d-grid k-grid-cols-3">
@@ -23,9 +22,25 @@
                                     <th>
                                         <span class="k-filtercell">
                                             <span>
-                                                <input is="Colorpicker" />
-                                                <input is="DropdownList" class="k-dropdown-operator" arrowIconName="filter" />
-                                                <button is="Button" icon="filter-clear" disabled></button>
+                                                <span class="k-colorpicker k-icon-picker k-picker k-picker-md k-picker-solid k-rounded-md">
+                                                    <span class="k-input-inner">
+                                                        <span class="k-color-preview k-no-color k-value-icon">
+                                                            <span class="k-color-preview-mask"></span>
+                                                        </span>
+                                                    </span>
+                                                    <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                        <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                                                    </button>
+                                                </span>
+                                                <span class="k-dropdown-operator k-dropdown k-picker k-picker-md k-picker-solid k-rounded-md">
+                                                    <span class="k-input-inner"></span>
+                                                    <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                        <span class="k-button-icon k-icon k-i-filter"></span>
+                                                    </button>
+                                                </span>
+                                                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button k-disabled">
+                                                    <span class="k-button-icon k-icon k-i-filter-clear"></span>
+                                                </button>
                                             </span>
                                         </span>
                                     </th>
@@ -51,9 +66,18 @@
                                     <th>
                                         <span class="k-filtercell">
                                             <span>
-                                                <input is="Autocomplete" placeholder="Autocomplete..." />
-                                                <input is="DropdownList" class="k-dropdown-operator" arrowIconName="filter" />
-                                                <button is="Button" icon="filter-clear" disabled></button>
+                                                <span class="k-autocomplete k-input k-input-md k-input-solid k-rounded-md">
+                                                    <input type="text" class="k-input-inner" placeholder="Autocomplete..." autocomplete="off" value="">
+                                                </span>
+                                                <span class="k-dropdown-operator k-dropdown k-picker k-picker-md k-picker-solid k-rounded-md">
+                                                    <span class="k-input-inner"></span>
+                                                    <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                        <span class="k-button-icon k-icon k-i-filter"></span>
+                                                    </button>
+                                                </span>
+                                                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button k-disabled">
+                                                    <span class="k-button-icon k-icon k-i-filter-clear"></span>
+                                                </button>
                                             </span>
                                         </span>
                                     </th>
@@ -77,9 +101,21 @@
                                     <th>
                                         <span class="k-filtercell">
                                             <span>
-                                                <input is="Combobox" placeholder="Combobox..." />
-                                                <input is="DropdownList" class="k-dropdown-operator" arrowIconName="filter" />
-                                                <button is="Button" icon="filter-clear" disabled></button>
+                                                <span class="k-combobox k-input k-input-md k-input-solid k-rounded-md">
+                                                    <input type="text" class="k-input-inner" placeholder="Combobox..." autocomplete="off" value="">
+                                                    <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                        <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                                                    </button>
+                                                </span>
+                                                <span class="k-dropdown-operator k-dropdown k-picker k-picker-md k-picker-solid k-rounded-md">
+                                                    <span class="k-input-inner"></span>
+                                                    <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                        <span class="k-button-icon k-icon k-i-filter"></span>
+                                                    </button>
+                                                </span>
+                                                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button k-disabled">
+                                                    <span class="k-button-icon k-icon k-i-filter-clear"></span>
+                                                </button>
                                             </span>
                                         </span>
                                     </th>
@@ -103,9 +139,21 @@
                                     <th>
                                         <span class="k-filtercell">
                                             <span>
-                                                <input is="DropdownList" placeholder="DropdownList..." />
-                                                <input is="DropdownList" class="k-dropdown-operator" arrowIconName="filter" />
-                                                <button is="Button" icon="filter-clear" disabled></button>
+                                                <span class="k-dropdown k-picker k-picker-md k-picker-solid k-rounded-md">
+                                                    <span class="k-input-inner">DropdownList...</span>
+                                                    <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                        <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                                                    </button>
+                                                </span>
+                                                <span class="k-dropdown-operator k-dropdown k-picker k-picker-md k-picker-solid k-rounded-md">
+                                                    <span class="k-input-inner"></span>
+                                                    <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                        <span class="k-button-icon k-icon k-i-filter"></span>
+                                                    </button>
+                                                </span>
+                                                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button k-disabled">
+                                                    <span class="k-button-icon k-icon k-i-filter-clear"></span>
+                                                </button>
                                             </span>
                                         </span>
                                     </th>
@@ -129,9 +177,26 @@
                                     <th>
                                         <span class="k-filtercell">
                                             <span>
-                                                <input is="NumericTextbox" placeholder="Numeric..." />
-                                                <input is="DropdownList" class="k-dropdown-operator" arrowIconName="filter" />
-                                                <button is="Button" icon="filter-clear" disabled></button>
+                                                <span class="k-numerictextbox k-input k-input-md k-input-solid k-rounded-md">
+                                                    <input type="text" class="k-input-inner" placeholder="Numeric..." autocomplete="off" value="">
+                                                    <span class="k-input-spinner k-spin-button">
+                                                        <button class="k-spinner-increase k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                            <span class="k-button-icon k-icon k-i-arrow-n"></span>
+                                                        </button>
+                                                        <button class="k-spinner-decrease k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                            <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                                                        </button>
+                                                    </span>
+                                                </span>
+                                                <span class="k-dropdown-operator k-dropdown k-picker k-picker-md k-picker-solid k-rounded-md">
+                                                    <span class="k-input-inner"></span>
+                                                    <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                        <span class="k-button-icon k-icon k-i-filter"></span>
+                                                    </button>
+                                                </span>
+                                                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button k-disabled">
+                                                    <span class="k-button-icon k-icon k-i-filter-clear"></span>
+                                                </button>
                                             </span>
                                         </span>
                                     </th>
@@ -155,9 +220,18 @@
                                     <th>
                                         <span class="k-filtercell">
                                             <span>
-                                                <input is="Textbox" placeholder="Textbox..." />
-                                                <input is="DropdownList" class="k-dropdown-operator" arrowIconName="filter" />
-                                                <button is="Button" icon="filter-clear" disabled></button>
+                                                <span class="k-textbox k-input k-input-md k-input-solid k-rounded-md">
+                                                    <input type="text" class="k-input-inner" placeholder="Textbox..." autocomplete="off" value="">
+                                                </span>
+                                                <span class="k-dropdown-operator k-dropdown k-picker k-picker-md k-picker-solid k-rounded-md">
+                                                    <span class="k-input-inner"></span>
+                                                    <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                        <span class="k-button-icon k-icon k-i-filter"></span>
+                                                    </button>
+                                                </span>
+                                                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button k-disabled">
+                                                    <span class="k-button-icon k-icon k-i-filter-clear"></span>
+                                                </button>
                                             </span>
                                         </span>
                                     </th>
@@ -182,9 +256,21 @@
                                     <th>
                                         <span class="k-filtercell">
                                             <span>
-                                                <input is="DatePicker" placeholder="Datepicker..." />
-                                                <input is="DropdownList" class="k-dropdown-operator" arrowIconName="filter" />
-                                                <button is="Button" icon="filter-clear" disabled></button>
+                                                <span class="k-datepicker k-input k-input-md k-input-solid k-rounded-md">
+                                                    <input type="text" class="k-input-inner" placeholder="Datepicker..." autocomplete="off" value="">
+                                                    <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                        <span class="k-button-icon k-icon k-i-calendar"></span>
+                                                    </button>
+                                                </span>
+                                                <span class="k-dropdown-operator k-dropdown k-picker k-picker-md k-picker-solid k-rounded-md">
+                                                    <span class="k-input-inner"></span>
+                                                    <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                        <span class="k-button-icon k-icon k-i-filter"></span>
+                                                    </button>
+                                                </span>
+                                                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button k-disabled">
+                                                    <span class="k-button-icon k-icon k-i-filter-clear"></span>
+                                                </button>
                                             </span>
                                         </span>
                                     </th>
@@ -208,9 +294,21 @@
                                     <th>
                                         <span class="k-filtercell">
                                             <span>
-                                                <input is="TimePicker" placeholder="TimePicker..." />
-                                                <input is="DropdownList" class="k-dropdown-operator" arrowIconName="filter" />
-                                                <button is="Button" icon="filter-clear" disabled></button>
+                                                <span class="k-timepicker k-input k-input-md k-input-solid k-rounded-md">
+                                                    <input type="text" class="k-input-inner" placeholder="TimePicker..." autocomplete="off" value="">
+                                                    <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                        <span class="k-button-icon k-icon k-i-clock"></span>
+                                                    </button>
+                                                </span>
+                                                <span class="k-dropdown-operator k-dropdown k-picker k-picker-md k-picker-solid k-rounded-md">
+                                                    <span class="k-input-inner"></span>
+                                                    <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                        <span class="k-button-icon k-icon k-i-filter"></span>
+                                                    </button>
+                                                </span>
+                                                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button k-disabled">
+                                                    <span class="k-button-icon k-icon k-i-filter-clear"></span>
+                                                </button>
                                             </span>
                                         </span>
                                     </th>
@@ -234,9 +332,21 @@
                                     <th>
                                         <span class="k-filtercell">
                                             <span>
-                                                <input is="DateTimePicker" placeholder="DateTimePicker..." />
-                                                <input is="DropdownList" class="k-dropdown-operator" arrowIconName="filter" />
-                                                <button is="Button" icon="filter-clear" disabled></button>
+                                                <span class="k-datetimepicker k-input k-input-md k-input-solid k-rounded-md">
+                                                    <input type="text" class="k-input-inner" placeholder="DateTimePicker..." autocomplete="off" value="">
+                                                    <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                        <span class="k-button-icon k-icon k-i-calendar"></span>
+                                                    </button>
+                                                </span>
+                                                <span class="k-dropdown-operator k-dropdown k-picker k-picker-md k-picker-solid k-rounded-md">
+                                                    <span class="k-input-inner"></span>
+                                                    <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                        <span class="k-button-icon k-icon k-i-filter"></span>
+                                                    </button>
+                                                </span>
+                                                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button k-disabled">
+                                                    <span class="k-button-icon k-icon k-i-filter-clear"></span>
+                                                </button>
                                             </span>
                                         </span>
                                     </th>

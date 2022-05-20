@@ -1,12 +1,11 @@
 <!doctype html>
-<html lang="en" class="k-no-animations">
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width:15px;">
 <head>
-    <title>Form Field DateInputs Angular</title>
+    <title>KUI Angular FormField DateInputs</title>
     <meta charset="utf-8">
     <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
     <link rel="stylesheet" href="/packages/html/assets/styles.css">
     <script src="/packages/html/assets/scripts.js"></script>
-    <script src="/packages/html/dist/index.js"></script>
 </head>
 <body id="app" class="k-body">
     <style>
@@ -21,68 +20,128 @@
         <span>Horizontal Form (Angular)</span>
         <section>
             <form class="k-form k-form-vertical">
-                <kendo-form-field class="k-form-field">
+                <div class="k-form-field">
                     <label class="k-label">DateInput:</label>
                     <div>
-                        <input is="DateInput" showSpinButton="false" />
+                        <span class="k-dateinput k-input k-input-md k-input-solid k-rounded-md">
+                            <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="">
+                        </span>
                     </div>
-                </kendo-form-field>
-                <kendo-form-field class="k-form-field">
+                </div>
+                <div class="k-form-field">
                     <label class="k-label">DatePicker:</label>
                     <div>
-                        <input is="DatePicker" />
+                        <span class="k-datepicker k-input k-input-md k-input-solid k-rounded-md">
+                            <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="">
+                            <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                <span class="k-button-icon k-icon k-i-calendar"></span>
+                            </button>
+                        </span>
                     </div>
-                </kendo-form-field>
-                <kendo-form-field class="k-form-field">
+                </div>
+                <div class="k-form-field">
                     <label class="k-label">DateTimePicker:</label>
                     <div>
-                        <input is="DateTimePicker" />
+                        <span class="k-datetimepicker k-input k-input-md k-input-solid k-rounded-md">
+                            <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="">
+                            <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                <span class="k-button-icon k-icon k-i-calendar"></span>
+                            </button>
+                        </span>
                     </div>
-                </kendo-form-field>
-                <kendo-form-field class="k-form-field">
+                </div>
+                <div class="k-form-field">
                     <label class="k-label">DateRangePicker:</label>
-                    <input is="DateRangePicker" />
-                </kendo-form-field>
-                <kendo-form-field class="k-form-field">
+                    <span class="k-daterangepicker">
+                        <span class="k-floating-label-container">
+                            <span class="k-dateinput k-input k-input-md k-input-solid k-rounded-md">
+                                <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="">
+                            </span>
+                            <label class="k-label">Start</label>
+                        </span>
+                        <span class="k-floating-label-container">
+                            <span class="k-dateinput k-input k-input-md k-input-solid k-rounded-md">
+                                <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="">
+                            </span>
+                            <label class="k-label">End</label>
+                        </span>
+                    </span>
+                </div>
+                <div class="k-form-field">
                     <label class="k-label">TimePicker:</label>
                     <div>
-                        <input is="TimePicker" />
+                        <span class="k-timepicker k-input k-input-md k-input-solid k-rounded-md">
+                            <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="">
+                            <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                <span class="k-button-icon k-icon k-i-clock"></span>
+                            </button>
+                        </span>
                     </div>
-                </kendo-form-field>
+                </div>
             </form>
         </section>
         <section>
             <form class="k-form k-form-horizontal">
-                <kendo-form-field class="k-form-field">
+                <div class="k-form-field">
                     <label class="k-label">DateInput:</label>
                     <div class="k-form-field-wrap">
-                        <input is="DateInput" showSpinButton="false" />
+                        <span class="k-dateinput k-input k-input-md k-input-solid k-rounded-md">
+                            <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="">
+                        </span>
                     </div>
-                </kendo-form-field>
-                <kendo-form-field class="k-form-field">
+                </div>
+                <div class="k-form-field">
                     <label class="k-label">DatePicker:</label>
                     <div class="k-form-field-wrap">
-                        <input is="DatePicker" />
+                        <span class="k-datepicker k-input k-input-md k-input-solid k-rounded-md">
+                            <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="">
+                            <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                <span class="k-button-icon k-icon k-i-calendar"></span>
+                            </button>
+                        </span>
                     </div>
-                </kendo-form-field>
-                <kendo-form-field class="k-form-field">
+                </div>
+                <div class="k-form-field">
                     <label class="k-label">DateTimePicker:</label>
                     <div class="k-form-field-wrap">
-                        <input is="DateTimePicker" />
+                        <span class="k-datetimepicker k-input k-input-md k-input-solid k-rounded-md">
+                            <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="">
+                            <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                <span class="k-button-icon k-icon k-i-calendar"></span>
+                            </button>
+                        </span>
                     </div>
-                </kendo-form-field>
-                <kendo-form-field class="k-form-field">
+                </div>
+                <div class="k-form-field">
                     <label class="k-label">DateRangePicker:</label>
                     <div class="k-form-field-wrap">
-                        <input is="DateRangePicker" />
+                        <span class="k-daterangepicker">
+                            <span class="k-floating-label-container">
+                                <span class="k-dateinput k-input k-input-md k-input-solid k-rounded-md">
+                                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="">
+                                </span>
+                                <label class="k-label">Start</label>
+                            </span>
+                            <span class="k-floating-label-container">
+                                <span class="k-dateinput k-input k-input-md k-input-solid k-rounded-md">
+                                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="">
+                                </span>
+                                <label class="k-label">End</label>
+                            </span>
+                        </span>
                     </div>
-                </kendo-form-field>
-                <kendo-form-field class="k-form-field">
+                </div>
+                <div class="k-form-field">
                     <label class="k-label">TimePicker:</label>
                     <div class="k-form-field-wrap">
-                        <input is="TimePicker" />
+                        <span class="k-timepicker k-input k-input-md k-input-solid k-rounded-md">
+                            <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="">
+                            <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                <span class="k-button-icon k-icon k-i-clock"></span>
+                            </button>
+                        </span>
                     </div>
-                </kendo-form-field>
+                </div>
             </form>
         </section>
     </div>

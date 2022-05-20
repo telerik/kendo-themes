@@ -1,18 +1,14 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width:15px;">
 <head>
-    <title>Editor Angular</title>
+    <title>KUI Angular Editor</title>
     <meta charset="utf-8">
     <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
     <link rel="stylesheet" href="/packages/html/assets/styles.css">
     <script src="/packages/html/assets/scripts.js"></script>
-    <script src="/packages/html/dist/index.js"></script>
 </head>
 <body id="app" class="k-body">
     <style>
-        #test-area {
-            grid-template-columns: repeat(2, 1fr);
-        }
         .k-editor .k-dialog-wrapper {
             position: static;
         }
@@ -22,47 +18,53 @@
         }
 
     </style>
-    <div id="test-area" class="grid">
+    <div id="test-area" class="k-d-grid k-grid-cols-2">
         <span>Angular Editor with iFrame; responsive toolbar</span>
         <span>Angular Editor without iFrame; responsive toolbar</span>
         <section>
-            <kendo-editor style="height: 200px;" class="k-widget k-editor">
-                <kendo-toolbar class="k-editor-toolbar k-toolbar k-toolbar-resizable">
-                    <kendo-toolbar-renderer>
-                        <kendo-buttongroup class="k-button-group">
-                            <button is="Button" icon="undo"></button>
-                            <button is="Button" icon="redo"></button>
-                        </kendo-buttongroup>
-                    </kendo-toolbar-renderer>
-                    <button is="Button" icon="more-vertical" class="k-overflow-anchor" fillMode="flat" rounded="null"></button>
-                </kendo-toolbar>
+            <div class="k-widget k-editor" style="height: 200px;">
+                <div class="k-editor-toolbar k-toolbar k-toolbar-resizable">
+                    <div>
+                        <div class="k-button-group k-button-group-solid">
+                            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                                <span class="k-button-icon k-icon k-i-undo"></span>
+                            </button>
+                            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                                <span class="k-button-icon k-icon k-i-redo"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <button class="k-overflow-anchor k-button k-button-md k-button-flat k-button-flat-base k-icon-button">
+                        <span class="k-button-icon k-icon k-i-more-vertical"></span>
+                    </button>
+                </div>
                 <div class="k-editor-content">
                     <iframe class="k-iframe" frameborder="0" src="editor-iFrameContent.html"></iframe>
                 </div>
-            </kendo-editor>
+            </div>
         </section>
         <section>
-            <kendo-editor style="height: 200px;" class="k-widget k-editor">
-                <kendo-toolbar class="k-editor-toolbar  k-toolbar k-toolbar-resizable">
-                    <kendo-toolbar-renderer>
-                        <kendo-buttongroup class="k-button-group">
-                            <button is="Button" icon="undo"></button>
-                            <button is="Button" icon="redo"></button>
-                        </kendo-buttongroup>
-                    </kendo-toolbar-renderer>
-                    <button is="Button" icon="more-vertical" class="k-overflow-anchor" fillMode="flat" rounded="null"></button>
-                </kendo-toolbar>
+            <div class="k-widget k-editor" style="height: 200px;">
+                <div class="k-editor-toolbar  k-toolbar k-toolbar-resizable">
+                    <div>
+                        <div class="k-button-group k-button-group-solid">
+                            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                                <span class="k-button-icon k-icon k-i-undo"></span>
+                            </button>
+                            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                                <span class="k-button-icon k-icon k-i-redo"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <button class="k-overflow-anchor k-button k-button-md k-button-flat k-button-flat-base k-icon-button">
+                        <span class="k-button-icon k-icon k-i-more-vertical"></span>
+                    </button>
+                </div>
                 <div class="k-editor-content">
                     <div class="ProseMirror">
-                        <!-- The following wrapper is with demonstrational purpose only
-                        -->
                         <div style="position: relative;">
-                            <!--
-                            -->
-                            <img class="ProseMirror-selectednode" src="/packages/html/assets/avatar.jpg" />
-                            <!--
-                            -->
-                            <div class="k-editor-resize-handles-wrapper ProseMirror-widget" style="width: 100px; height: 110px; top: 0; left: 0;">
+                            <img class="ProseMirror-selectednode" src="/packages/html/assets/avatar.jpg">
+                            <div class="k-editor-resize-handles-wrapper ProseMirror-widget" style="width: 100px; height: 110px; top: 0px; left: 0px;">
                                 <div class="k-editor-resize-handle southeast"></div>
                                 <div class="k-editor-resize-handle east"></div>
                                 <div class="k-editor-resize-handle south"></div>
@@ -73,11 +75,7 @@
                                 <div class="k-editor-resize-handle northeast"></div>
                             </div>
                         </div>
-                        <!--
-                        -->
                         <p>The Kendo UI Angular Editor allows your users to edit HTML in a familiar, user-friendly way.</p>
-                        <!--
-                        -->
                         <p>In this version, the Editor provides the core HTML editing engine which includes basic text formatting, hyperlinks, and lists. The widget <strong>outputs identical HTML</strong> across all major browsers, follows accessibility standards, and provides API for content manipulation.</p>
                         <p>Features include:</p>
                         <ul>
@@ -89,93 +87,163 @@
                         </ul>
                     </div>
                 </div>
-            </kendo-editor>
+            </div>
         </section>
         <span>Angular Editor with iFrame; NO-responsive toolbar</span>
         <span>Angular Editor without iFrame; NO-responsive toolbar</span>
         <section>
-            <kendo-editor class="k-widget k-editor" style="height: 200px;">
-                <kendo-toolbar class="k-editor-toolbar k-toolbar">
-                    <kendo-toolbar-renderer>
-                        <kendo-buttongroup class="k-button-group">
-                            <button is="Button" icon="bold"></button>
-                            <button is="Button" icon="italic"></button>
-                            <button is="Button" icon="underline"></button>
-                        </kendo-buttongroup>
-                    </kendo-toolbar-renderer>
-                    <kendo-toolbar-renderer>
-                        <input is="DropdownList" value="Format" />
-                    </kendo-toolbar-renderer>
-                    <kendo-toolbar-renderer>
-                        <kendo-buttongroup class="k-button-group">
-                            <button is="Button" icon="align-left"></button>
-                            <button is="Button" icon="align-center"></button>
-                            <button is="Button" icon="align-right"></button>
-                            <button is="Button" icon="align-justify"></button>
-                        </kendo-buttongroup>
-                    </kendo-toolbar-renderer>
-                    <kendo-toolbar-renderer>
-                        <kendo-buttongroup class="k-button-group">
-                            <button is="Button" icon="list-unordered"></button>
-                            <button is="Button" icon="list-ordered"></button>
-                            <button is="Button" icon="indent-increase"></button>
-                            <button is="Button" icon="indent-decrease"></button>
-                        </kendo-buttongroup>
-                    </kendo-toolbar-renderer>
-                    <kendo-toolbar-renderer>
-                        <kendo-buttongroup class="k-button-group">
-                            <button is="Button" icon="link-horizontal"></button>
-                            <button is="Button" icon="unlink-horizontal"></button>
-                        </kendo-buttongroup>
-                    </kendo-toolbar-renderer>
-                    <kendo-toolbar-renderer>
-                        <button is="Button" icon="image"></button>
-                    </kendo-toolbar-renderer>
-                </kendo-toolbar>
+            <div class="k-widget k-editor" style="height: 200px;">
+                <div class="k-editor-toolbar k-toolbar">
+                    <div>
+                        <div class="k-button-group k-button-group-solid">
+                            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                                <span class="k-button-icon k-icon k-i-bold"></span>
+                            </button>
+                            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                                <span class="k-button-icon k-icon k-i-italic"></span>
+                            </button>
+                            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                                <span class="k-button-icon k-icon k-i-underline"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="k-dropdown k-picker k-picker-md k-picker-solid k-rounded-md">
+                            <span class="k-input-inner">
+                                <span class="k-input-value-text">Format</span>
+                            </span>
+                            <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                            </button>
+                        </span>
+                    </div>
+                    <div>
+                        <div class="k-button-group k-button-group-solid">
+                            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                                <span class="k-button-icon k-icon k-i-align-left"></span>
+                            </button>
+                            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                                <span class="k-button-icon k-icon k-i-align-center"></span>
+                            </button>
+                            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                                <span class="k-button-icon k-icon k-i-align-right"></span>
+                            </button>
+                            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                                <span class="k-button-icon k-icon k-i-align-justify"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="k-button-group k-button-group-solid">
+                            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                                <span class="k-button-icon k-icon k-i-list-unordered"></span>
+                            </button>
+                            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                                <span class="k-button-icon k-icon k-i-list-ordered"></span>
+                            </button>
+                            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                                <span class="k-button-icon k-icon k-i-indent-increase"></span>
+                            </button>
+                            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                                <span class="k-button-icon k-icon k-i-indent-decrease"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="k-button-group k-button-group-solid">
+                            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                                <span class="k-button-icon k-icon k-i-link-horizontal"></span>
+                            </button>
+                            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                                <span class="k-button-icon k-icon k-i-unlink-horizontal"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                            <span class="k-button-icon k-icon k-i-image"></span>
+                        </button>
+                    </div>
+                </div>
                 <div class="k-editor-content k-state-focused">
                     <iframe class="k-iframe" frameborder="0" src="editor-iFrameContent.html"></iframe>
                 </div>
-            </kendo-editor>
+            </div>
         </section>
         <section>
-            <kendo-editor class="k-widget k-editor k-readonly" style="height: 200px;">
-                <kendo-toolbar class="k-editor-toolbar k-toolbar">
-                    <kendo-toolbar-renderer>
-                        <kendo-buttongroup class="k-button-group">
-                            <button is="Button" icon="bold"></button>
-                            <button is="Button" icon="italic"></button>
-                            <button is="Button" icon="underline"></button>
-                        </kendo-buttongroup>
-                    </kendo-toolbar-renderer>
-                    <kendo-toolbar-renderer>
-                        <input is="DropdownList" value="Format" />
-                    </kendo-toolbar-renderer>
-                    <kendo-toolbar-renderer>
-                        <kendo-buttongroup class="k-button-group">
-                            <button is="Button" icon="align-left"></button>
-                            <button is="Button" icon="align-center"></button>
-                            <button is="Button" icon="align-right"></button>
-                            <button is="Button" icon="align-justify"></button>
-                        </kendo-buttongroup>
-                    </kendo-toolbar-renderer>
-                    <kendo-toolbar-renderer>
-                        <kendo-buttongroup class="k-button-group">
-                            <button is="Button" icon="list-unordered"></button>
-                            <button is="Button" icon="list-ordered"></button>
-                            <button is="Button" icon="indent-increase"></button>
-                            <button is="Button" icon="indent-decrease"></button>
-                        </kendo-buttongroup>
-                    </kendo-toolbar-renderer>
-                    <kendo-toolbar-renderer>
-                        <kendo-buttongroup class="k-button-group">
-                            <button is="Button" icon="link-horizontal"></button>
-                            <button is="Button" icon="unlink-horizontal"></button>
-                        </kendo-buttongroup>
-                    </kendo-toolbar-renderer>
-                    <kendo-toolbar-renderer>
-                        <button is="Button" icon="image"></button>
-                    </kendo-toolbar-renderer>
-                </kendo-toolbar>
+            <div class="k-widget k-editor k-readonly" style="height: 200px;">
+                <div class="k-editor-toolbar k-toolbar">
+                    <div>
+                        <div class="k-button-group k-button-group-solid">
+                            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                                <span class="k-button-icon k-icon k-i-bold"></span>
+                            </button>
+                            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                                <span class="k-button-icon k-icon k-i-italic"></span>
+                            </button>
+                            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                                <span class="k-button-icon k-icon k-i-underline"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="k-dropdown k-picker k-picker-md k-picker-solid k-rounded-md">
+                            <span class="k-input-inner">
+                                <span class="k-input-value-text">Format</span>
+                            </span>
+                            <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                            </button>
+                        </span>
+                    </div>
+                    <div>
+                        <div class="k-button-group k-button-group-solid">
+                            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                                <span class="k-button-icon k-icon k-i-align-left"></span>
+                            </button>
+                            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                                <span class="k-button-icon k-icon k-i-align-center"></span>
+                            </button>
+                            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                                <span class="k-button-icon k-icon k-i-align-right"></span>
+                            </button>
+                            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                                <span class="k-button-icon k-icon k-i-align-justify"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="k-button-group k-button-group-solid">
+                            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                                <span class="k-button-icon k-icon k-i-list-unordered"></span>
+                            </button>
+                            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                                <span class="k-button-icon k-icon k-i-list-ordered"></span>
+                            </button>
+                            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                                <span class="k-button-icon k-icon k-i-indent-increase"></span>
+                            </button>
+                            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                                <span class="k-button-icon k-icon k-i-indent-decrease"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="k-button-group k-button-group-solid">
+                            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                                <span class="k-button-icon k-icon k-i-link-horizontal"></span>
+                            </button>
+                            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                                <span class="k-button-icon k-icon k-i-unlink-horizontal"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                            <span class="k-button-icon k-icon k-i-image"></span>
+                        </button>
+                    </div>
+                </div>
                 <div class="k-editor-content k-state-focused">
                     <div class="ProseMirror">
                         <p>The Kendo UI Angular Editor allows your users to edit HTML in a familiar, user-friendly way.</p>
@@ -190,7 +258,7 @@
                         </ul>
                     </div>
                 </div>
-            </kendo-editor>
+            </div>
         </section>
     </div>
 </body>

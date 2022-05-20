@@ -1,12 +1,11 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width:15px;">
 <head>
     <title>PivotGrid Column Menus</title>
     <meta charset="utf-8">
     <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
     <link rel="stylesheet" href="/packages/html/assets/styles.css">
     <script src="/packages/html/assets/scripts.js"></script>
-    <script src="/packages/html/dist/index.js"></script>
 </head>
 <body id="app" class="k-body">
     <style>
@@ -27,25 +26,25 @@
                         <div>
                             <div class="k-columnmenu-item-wrapper">
                                 <div class="k-columnmenu-item">
-                                    <i is="Icon" name="sort-asc-sm"></i>Sort Ascending
+                                    <span class="k-icon k-i-sort-asc-sm"></span>Sort Ascending
                                 </div>
                                 <div class="k-columnmenu-item ">
-                                    <i is="Icon" name="sort-desc-sm"></i>Sort Descending
+                                    <span class="k-icon k-i-sort-desc-sm"></span>Sort Descending
                                 </div>
                             </div>
                             <div class="k-columnmenu-item-wrapper">
                                 <div class="k-widget k-expander">
                                     <div class="k-columnmenu-item ">
-                                        <i is="Icon" name="grid-layout"></i>Include Fields <span class="k-spacer"></span>
-                                        <i is="Icon" class="k-expander-indicator" name="arrow-chevron-down"></i>
+                                        <span class="k-icon k-i-grid-layout"></span>Include Fields<span class="k-spacer"></span>
+                                        <span class="k-expander-indicator k-icon k-i-arrow-chevron-down"></span>
                                     </div>
                                 </div>
                             </div>
                             <div class="k-columnmenu-item-wrapper">
                                 <div class="k-widget k-expander">
                                     <div class="k-columnmenu-item ">
-                                        <i is="Icon" name="filter"></i>Filter Fields <span class="k-spacer"></span>
-                                        <i is="Icon" class="k-expander-indicator" name="arrow-chevron-down"></i>
+                                        <span class="k-icon k-i-filter"></span>Filter Fields<span class="k-spacer"></span>
+                                        <span class="k-expander-indicator k-icon k-i-arrow-chevron-down"></span>
                                     </div>
                                 </div>
                             </div>
@@ -61,71 +60,99 @@
                         <div>
                             <div class="k-columnmenu-item-wrapper">
                                 <div class="k-columnmenu-item">
-                                    <i is="Icon" name="sort-asc-sm"></i>Sort Ascending
+                                    <span class="k-icon k-i-sort-asc-sm"></span>Sort Ascending
                                 </div>
                                 <div class="k-columnmenu-item ">
-                                    <i is="Icon" name="sort-desc-sm"></i>Sort Descending
+                                    <span class="k-icon k-i-sort-desc-sm"></span>Sort Descending
                                 </div>
                             </div>
                             <div class="k-columnmenu-item-wrapper">
                                 <div class="k-widget k-expander">
                                     <div class="k-columnmenu-item ">
-                                        <i is="Icon" name="grid-layout"></i>Include Fields <span class="k-spacer"></span>
-                                        <i is="Icon" class="k-expander-indicator" name="arrow-chevron-up"></i>
+                                        <span class="k-icon k-i-grid-layout"></span>Include Fields<span class="k-spacer"></span>
+                                        <span class="k-expander-indicator k-icon k-i-arrow-chevron-up"></span>
                                     </div>
                                 </div>
                                 <div class="k-columnmenu-item-content k-columns-item" style="width: 100%; height: auto; overflow: hidden;">
                                     <div class="k-column-list-wrapper">
                                         <div class="k-column-list">
                                             <label class="k-column-list-item k-checkbox-label">
-                                                <input is="Checkbox" /> ID
+                                                <span class="k-checkbox-wrap">
+                                                    <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                                </span>ID
                                             </label>
                                             <label class="k-column-list-item k-checkbox-label">
-                                                <input is="Checkbox" /> Name
+                                                <span class="k-checkbox-wrap">
+                                                    <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                                </span>Name
                                             </label>
                                             <label class="k-column-list-item k-checkbox-label">
-                                                <input is="Checkbox" /> Category
+                                                <span class="k-checkbox-wrap">
+                                                    <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                                </span>Category
                                             </label>
                                             <label class="k-column-list-item k-checkbox-label">
-                                                <input is="Checkbox" /> Account
+                                                <span class="k-checkbox-wrap">
+                                                    <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                                </span>Account
                                             </label>
                                             <label class="k-column-list-item k-checkbox-label">
-                                                <input is="Checkbox" /> Number
+                                                <span class="k-checkbox-wrap">
+                                                    <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                                </span>Number
                                             </label>
                                             <label class="k-column-list-item k-checkbox-label">
-                                                <input is="Checkbox" /> Type
+                                                <span class="k-checkbox-wrap">
+                                                    <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                                </span>Type
                                             </label>
                                             <label class="k-column-list-item k-checkbox-label">
-                                                <input is="Checkbox" /> Employer
+                                                <span class="k-checkbox-wrap">
+                                                    <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                                </span>Employer
                                             </label>
                                             <label class="k-column-list-item k-checkbox-label">
-                                                <input is="Checkbox" /> Employee
+                                                <span class="k-checkbox-wrap">
+                                                    <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                                </span>Employee
                                             </label>
                                             <label class="k-column-list-item k-checkbox-label">
-                                                <input is="Checkbox" /> Company
+                                                <span class="k-checkbox-wrap">
+                                                    <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                                </span>Company
                                             </label>
                                             <label class="k-column-list-item k-checkbox-label">
-                                                <input is="Checkbox" /> Products
+                                                <span class="k-checkbox-wrap">
+                                                    <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                                </span>Products
                                             </label>
                                             <label class="k-column-list-item k-checkbox-label">
-                                                <input is="Checkbox" /> Number
+                                                <span class="k-checkbox-wrap">
+                                                    <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                                </span>Number
                                             </label>
                                             <label class="k-column-list-item k-checkbox-label">
-                                                <input is="Checkbox" /> Type
+                                                <span class="k-checkbox-wrap">
+                                                    <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                                </span>Type
                                             </label>
                                         </div>
                                     </div>
-                                    <div is="ActionButtons" alignment="stretched">
-                                        <button is="Button">Reset</button>
-                                        <button is="Button" themeColor="primary">Apply</button>
+                                    <div class="k-actions k-actions-stretched k-actions-horizontal">
+                                        <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                                            <span class="k-button-text">Reset</span>
+                                        </button>
+                                        <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md">
+                                            <span class="k-button-text">Apply</span>
+                                        </button>
                                     </div>
                                 </div>
                             </div>
                             <div class="k-columnmenu-item-wrapper">
                                 <div class="k-widget k-expander">
                                     <div class="k-columnmenu-item ">
-                                        <i is="Icon" name="filter"></i>Filter Fields <span class="k-spacer"></span>
-                                        <i is="Icon" class="k-expander-indicator" name="arrow-chevron-down"></i>
+                                        <span class="k-icon k-i-filter"></span>Filter Fields<span class="k-spacer"></span>
+                                        <span class="k-expander-indicator k-icon k-i-arrow-chevron-down"></span>
                                     </div>
                                 </div>
                             </div>
@@ -141,52 +168,190 @@
                         <div>
                             <div class="k-columnmenu-item-wrapper">
                                 <div class="k-columnmenu-item">
-                                    <i is="Icon" name="sort-asc-sm"></i>Sort Ascending
+                                    <span class="k-icon k-i-sort-asc-sm"></span>Sort Ascending
                                 </div>
                                 <div class="k-columnmenu-item ">
-                                    <i is="Icon" name="sort-desc-sm"></i>Sort Descending
+                                    <span class="k-icon k-i-sort-desc-sm"></span>Sort Descending
                                 </div>
                             </div>
                             <div class="k-columnmenu-item-wrapper">
                                 <div class="k-widget k-expander">
                                     <div class="k-columnmenu-item ">
-                                        <i is="Icon" name="grid-layout"></i>Include Fields <span class="k-spacer"></span>
-                                        <i is="Icon" class="k-expander-indicator" name="arrow-chevron-up"></i>
+                                        <span class="k-icon k-i-grid-layout"></span>Include Fields<span class="k-spacer"></span>
+                                        <span class="k-expander-indicator k-icon k-i-arrow-chevron-up"></span>
                                     </div>
                                 </div>
                                 <div class="k-columnmenu-item-content" style="width: 100%; height: auto; overflow: hidden;">
                                     <div class="k-column-list-wrapper">
                                         <div class="k-column-list">
-                                            <ul is="Treeview">
-                                                <li showCheckbox hasChildren>Account</li>
-                                                <li showCheckbox hasChildren>Customer</li>
-                                                <li showCheckbox expanded>Date <ul>
-                                                        <li showCheckbox hasChildren>Date.Calendar</li>
-                                                        <li showCheckbox expanded>Date.Calendar Quarter of Year <ul>
-                                                                <li showCheckbox hasChildren>(All)</li>
-                                                                <li showCheckbox hasChildren>Calendar Quarter of Year</li>
-                                                            </ul>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li showCheckbox hasChildren>Delivery date</li>
-                                                <li showCheckbox hasChildren>Department</li>
-                                                <li showCheckbox hasChildren>Country</li>
-                                                <li showCheckbox hasChildren>Region</li>
-                                            </ul>
+                                            <div class="k-treeview k-treeview-md">
+                                                <ul class="k-treeview-lines k-treeview-group">
+                                                    <li class="k-treeview-item">
+                                                        <span class="k-treeview-mid">
+                                                            <span class="k-treeview-toggle">
+                                                                <span class="k-icon k-i-expand"></span>
+                                                            </span>
+                                                            <span class="k-checkbox-wrap">
+                                                                <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                                            </span>
+                                                            <span class="k-treeview-leaf">
+                                                                <span class="k-treeview-leaf-text">Account</span>
+                                                            </span>
+                                                        </span>
+                                                    </li>
+                                                    <li class="k-treeview-item">
+                                                        <span class="k-treeview-mid">
+                                                            <span class="k-treeview-toggle">
+                                                                <span class="k-icon k-i-expand"></span>
+                                                            </span>
+                                                            <span class="k-checkbox-wrap">
+                                                                <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                                            </span>
+                                                            <span class="k-treeview-leaf">
+                                                                <span class="k-treeview-leaf-text">Customer</span>
+                                                            </span>
+                                                        </span>
+                                                    </li>
+                                                    <li class="k-treeview-item">
+                                                        <span class="k-treeview-mid">
+                                                            <span class="k-treeview-toggle">
+                                                                <span class="k-icon k-i-collapse"></span>
+                                                            </span>
+                                                            <span class="k-checkbox-wrap">
+                                                                <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                                            </span>
+                                                            <span class="k-treeview-leaf">
+                                                                <span class="k-treeview-leaf-text">Date</span>
+                                                            </span>
+                                                        </span>
+                                                        <ul class="k-treeview-group">
+                                                            <li class="k-treeview-item">
+                                                                <span class="k-treeview-mid">
+                                                                    <span class="k-treeview-toggle">
+                                                                        <span class="k-icon k-i-expand"></span>
+                                                                    </span>
+                                                                    <span class="k-checkbox-wrap">
+                                                                        <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                                                    </span>
+                                                                    <span class="k-treeview-leaf">
+                                                                        <span class="k-treeview-leaf-text">Date.Calendar</span>
+                                                                    </span>
+                                                                </span>
+                                                            </li>
+                                                            <li class="k-treeview-item">
+                                                                <span class="k-treeview-mid">
+                                                                    <span class="k-treeview-toggle">
+                                                                        <span class="k-icon k-i-collapse"></span>
+                                                                    </span>
+                                                                    <span class="k-checkbox-wrap">
+                                                                        <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                                                    </span>
+                                                                    <span class="k-treeview-leaf">
+                                                                        <span class="k-treeview-leaf-text">Date.Calendar Quarter of Year</span>
+                                                                    </span>
+                                                                </span>
+                                                                <ul class="k-treeview-group">
+                                                                    <li class="k-treeview-item">
+                                                                        <span class="k-treeview-mid">
+                                                                            <span class="k-treeview-toggle">
+                                                                                <span class="k-icon k-i-expand"></span>
+                                                                            </span>
+                                                                            <span class="k-checkbox-wrap">
+                                                                                <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                                                            </span>
+                                                                            <span class="k-treeview-leaf">
+                                                                                <span class="k-treeview-leaf-text">(All)</span>
+                                                                            </span>
+                                                                        </span>
+                                                                    </li>
+                                                                    <li class="k-treeview-item">
+                                                                        <span class="k-treeview-mid">
+                                                                            <span class="k-treeview-toggle">
+                                                                                <span class="k-icon k-i-expand"></span>
+                                                                            </span>
+                                                                            <span class="k-checkbox-wrap">
+                                                                                <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                                                            </span>
+                                                                            <span class="k-treeview-leaf">
+                                                                                <span class="k-treeview-leaf-text">Calendar Quarter of Year</span>
+                                                                            </span>
+                                                                        </span>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="k-treeview-item">
+                                                        <span class="k-treeview-mid">
+                                                            <span class="k-treeview-toggle">
+                                                                <span class="k-icon k-i-expand"></span>
+                                                            </span>
+                                                            <span class="k-checkbox-wrap">
+                                                                <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                                            </span>
+                                                            <span class="k-treeview-leaf">
+                                                                <span class="k-treeview-leaf-text">Delivery date</span>
+                                                            </span>
+                                                        </span>
+                                                    </li>
+                                                    <li class="k-treeview-item">
+                                                        <span class="k-treeview-mid">
+                                                            <span class="k-treeview-toggle">
+                                                                <span class="k-icon k-i-expand"></span>
+                                                            </span>
+                                                            <span class="k-checkbox-wrap">
+                                                                <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                                            </span>
+                                                            <span class="k-treeview-leaf">
+                                                                <span class="k-treeview-leaf-text">Department</span>
+                                                            </span>
+                                                        </span>
+                                                    </li>
+                                                    <li class="k-treeview-item">
+                                                        <span class="k-treeview-mid">
+                                                            <span class="k-treeview-toggle">
+                                                                <span class="k-icon k-i-expand"></span>
+                                                            </span>
+                                                            <span class="k-checkbox-wrap">
+                                                                <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                                            </span>
+                                                            <span class="k-treeview-leaf">
+                                                                <span class="k-treeview-leaf-text">Country</span>
+                                                            </span>
+                                                        </span>
+                                                    </li>
+                                                    <li class="k-treeview-item">
+                                                        <span class="k-treeview-mid">
+                                                            <span class="k-treeview-toggle">
+                                                                <span class="k-icon k-i-expand"></span>
+                                                            </span>
+                                                            <span class="k-checkbox-wrap">
+                                                                <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                                            </span>
+                                                            <span class="k-treeview-leaf">
+                                                                <span class="k-treeview-leaf-text">Region</span>
+                                                            </span>
+                                                        </span>
+                                                    </li>
+                                                </ul>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div is="ActionButtons" alignment="stretched">
-                                        <button is="Button">Reset</button>
-                                        <button is="Button" themeColor="primary">Apply</button>
+                                    <div class="k-actions k-actions-stretched k-actions-horizontal">
+                                        <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                                            <span class="k-button-text">Reset</span>
+                                        </button>
+                                        <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md">
+                                            <span class="k-button-text">Apply</span>
+                                        </button>
                                     </div>
                                 </div>
                             </div>
                             <div class="k-columnmenu-item-wrapper">
                                 <div class="k-widget k-expander">
                                     <div class="k-columnmenu-item ">
-                                        <i is="Icon" name="filter"></i>Filter Fields <span class="k-spacer"></span>
-                                        <i is="Icon" class="k-expander-indicator" name="arrow-chevron-down"></i>
+                                        <span class="k-icon k-i-filter"></span>Filter Fields<span class="k-spacer"></span>
+                                        <span class="k-expander-indicator k-icon k-i-arrow-chevron-down"></span>
                                     </div>
                                 </div>
                             </div>
@@ -202,25 +367,25 @@
                         <div>
                             <div class="k-columnmenu-item-wrapper">
                                 <div class="k-columnmenu-item">
-                                    <i is="Icon" name="sort-asc-sm"></i>Sort Ascending
+                                    <span class="k-icon k-i-sort-asc-sm"></span>Sort Ascending
                                 </div>
                                 <div class="k-columnmenu-item ">
-                                    <i is="Icon" name="sort-desc-sm"></i>Sort Descending
+                                    <span class="k-icon k-i-sort-desc-sm"></span>Sort Descending
                                 </div>
                             </div>
                             <div class="k-columnmenu-item-wrapper">
                                 <div class="k-widget k-expander">
                                     <div class="k-columnmenu-item ">
-                                        <i is="Icon" name="grid-layout"></i>Include Fields <span class="k-spacer"></span>
-                                        <i is="Icon" class="k-expander-indicator" name="arrow-chevron-down"></i>
+                                        <span class="k-icon k-i-grid-layout"></span>Include Fields<span class="k-spacer"></span>
+                                        <span class="k-expander-indicator k-icon k-i-arrow-chevron-down"></span>
                                     </div>
                                 </div>
                             </div>
                             <div class="k-columnmenu-item-wrapper">
                                 <div class="k-widget k-expander">
                                     <div class="k-columnmenu-item ">
-                                        <i is="Icon" name="filter"></i>Filter Fields <span class="k-spacer"></span>
-                                        <i is="Icon" class="k-expander-indicator" name="arrow-chevron-up"></i>
+                                        <span class="k-icon k-i-filter"></span>Filter Fields<span class="k-spacer"></span>
+                                        <span class="k-expander-indicator k-icon k-i-arrow-chevron-up"></span>
                                     </div>
                                 </div>
                                 <div class="k-columnmenu-item-content">
@@ -229,14 +394,43 @@
                                             <div class="kendo-grid-filter-menu-container">
                                                 <form class="k-filter-menu k-group k-reset k-state-border-up">
                                                     <div class="k-filter-menu-container">
-                                                        <input is="DropdownList" value="Contains" />
-                                                        <input is="Textbox" />
-                                                        <input is="DropdownList" value="And" class="k-filter-and" />
-                                                        <input is="DropdownList" value="Contains" />
-                                                        <input is="Textbox" />
-                                                        <div is="ActionButtons" alignment="stretched">
-                                                            <button is="Button">Clear</button>
-                                                            <button is="Button" themeColor="primary">Filter</button>
+                                                        <span class="k-dropdown k-picker k-picker-md k-picker-solid k-rounded-md">
+                                                            <span class="k-input-inner">
+                                                                <span class="k-input-value-text">Contains</span>
+                                                            </span>
+                                                            <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                                <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                                                            </button>
+                                                        </span>
+                                                        <span class="k-textbox k-input k-input-md k-input-solid k-rounded-md">
+                                                            <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="">
+                                                        </span>
+                                                        <span class="k-filter-and k-dropdown k-picker k-picker-md k-picker-solid k-rounded-md">
+                                                            <span class="k-input-inner">
+                                                                <span class="k-input-value-text">And</span>
+                                                            </span>
+                                                            <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                                <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                                                            </button>
+                                                        </span>
+                                                        <span class="k-dropdown k-picker k-picker-md k-picker-solid k-rounded-md">
+                                                            <span class="k-input-inner">
+                                                                <span class="k-input-value-text">Contains</span>
+                                                            </span>
+                                                            <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                                <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                                                            </button>
+                                                        </span>
+                                                        <span class="k-textbox k-input k-input-md k-input-solid k-rounded-md">
+                                                            <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="">
+                                                        </span>
+                                                        <div class="k-actions k-actions-stretched k-actions-horizontal">
+                                                            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                                                                <span class="k-button-text">Clear</span>
+                                                            </button>
+                                                            <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md">
+                                                                <span class="k-button-text">Filter</span>
+                                                            </button>
                                                         </div>
                                                     </div>
                                                 </form>

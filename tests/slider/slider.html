@@ -1,12 +1,11 @@
 <!doctype html>
-<html lang="en" class="k-no-animations">
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width:15px;">
 <head>
     <title>Slider</title>
     <meta charset="utf-8">
     <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
     <link rel="stylesheet" href="/packages/html/assets/styles.css">
     <script src="/packages/html/assets/scripts.js"></script>
-    <script src="/packages/html/dist/index.js"></script>
 </head>
 <body id="app" class="k-body k-bg-gray-50">
     <style>
@@ -19,10 +18,12 @@
             --kendo-slider-start: 0;
             --kendo-slider-end: 0;
         }
+
         .k-slider-50 {
             --kendo-slider-start: 0;
             --kendo-slider-end: 50;
         }
+
         .k-slider-100 {
             --kendo-slider-start: 0;
             --kendo-slider-end: 100;
@@ -37,7 +38,9 @@
         <span>Normal</span>
         <section>
             <div class="k-slider k-slider-horizontal k-slider-0">
-                <button is="Button" icon="arrow-w" rounded="full" class="k-button-decrease"></button>
+                <button class="k-button-decrease k-button k-button-md k-button-solid k-button-solid-base k-rounded-full k-icon-button">
+                    <span class="k-button-icon k-icon k-i-arrow-w"></span>
+                </button>
                 <div class="k-slider-track-wrap">
                     <ul class="k-reset k-slider-items">
                         <li class="k-tick k-tick-large">
@@ -63,12 +66,16 @@
                         <a href="#" class="k-draghandle k-draghandle-end"></a>
                     </div>
                 </div>
-                <button is="Button" icon="arrow-e" rounded="full" class="k-button-increase"></button>
+                <button class="k-button-increase k-button k-button-md k-button-solid k-button-solid-base k-rounded-full k-icon-button">
+                    <span class="k-button-icon k-icon k-i-arrow-e"></span>
+                </button>
             </div>
         </section>
         <section>
             <div class="k-slider k-slider-horizontal k-slider-50">
-                <button is="Button" icon="arrow-w" rounded="full" class="k-button-decrease"></button>
+                <button class="k-button-decrease k-button k-button-md k-button-solid k-button-solid-base k-rounded-full k-icon-button">
+                    <span class="k-button-icon k-icon k-i-arrow-w"></span>
+                </button>
                 <div class="k-slider-track-wrap">
                     <ul class="k-reset k-slider-items">
                         <li class="k-tick k-tick-large">
@@ -94,12 +101,16 @@
                         <a href="#" class="k-draghandle k-draghandle-end"></a>
                     </div>
                 </div>
-                <button is="Button" icon="arrow-e" rounded="full" class="k-button-increase"></button>
+                <button class="k-button-increase k-button k-button-md k-button-solid k-button-solid-base k-rounded-full k-icon-button">
+                    <span class="k-button-icon k-icon k-i-arrow-e"></span>
+                </button>
             </div>
         </section>
         <section>
             <div class="k-slider k-slider-horizontal k-slider-100">
-                <button is="Button" icon="arrow-w" rounded="full" class="k-button-decrease"></button>
+                <button class="k-button-decrease k-button k-button-md k-button-solid k-button-solid-base k-rounded-full k-icon-button">
+                    <span class="k-button-icon k-icon k-i-arrow-w"></span>
+                </button>
                 <div class="k-slider-track-wrap">
                     <ul class="k-reset k-slider-items">
                         <li class="k-tick k-tick-large">
@@ -125,13 +136,17 @@
                         <a href="#" class="k-draghandle k-draghandle-end"></a>
                     </div>
                 </div>
-                <button is="Button" icon="arrow-e" rounded="full" class="k-button-increase"></button>
+                <button class="k-button-increase k-button k-button-md k-button-solid k-button-solid-base k-rounded-full k-icon-button">
+                    <span class="k-button-icon k-icon k-i-arrow-e"></span>
+                </button>
             </div>
         </section>
         <span>Disabled</span>
         <section>
             <div class="k-slider k-slider-horizontal k-slider-0 k-disabled">
-                <button is="Button" icon="arrow-w" rounded="full" class="k-button-decrease"></button>
+                <button class="k-button-decrease k-button k-button-md k-button-solid k-button-solid-base k-rounded-full k-icon-button">
+                    <span class="k-button-icon k-icon k-i-arrow-w"></span>
+                </button>
                 <div class="k-slider-track-wrap">
                     <ul class="k-reset k-slider-items">
                         <li class="k-tick k-tick-large">
@@ -157,12 +172,16 @@
                         <a href="#" class="k-draghandle k-draghandle-end"></a>
                     </div>
                 </div>
-                <button is="Button" icon="arrow-e" rounded="full" class="k-button-increase"></button>
+                <button class="k-button-increase k-button k-button-md k-button-solid k-button-solid-base k-rounded-full k-icon-button">
+                    <span class="k-button-icon k-icon k-i-arrow-e"></span>
+                </button>
             </div>
         </section>
         <section>
             <div class="k-slider k-slider-horizontal k-slider-50 k-disabled">
-                <button is="Button" icon="arrow-w" rounded="full" class="k-button-decrease"></button>
+                <button class="k-button-decrease k-button k-button-md k-button-solid k-button-solid-base k-rounded-full k-icon-button">
+                    <span class="k-button-icon k-icon k-i-arrow-w"></span>
+                </button>
                 <div class="k-slider-track-wrap">
                     <ul class="k-reset k-slider-items">
                         <li class="k-tick k-tick-large">
@@ -188,12 +207,16 @@
                         <a href="#" class="k-draghandle k-draghandle-end"></a>
                     </div>
                 </div>
-                <button is="Button" icon="arrow-e" rounded="full" class="k-button-increase"></button>
+                <button class="k-button-increase k-button k-button-md k-button-solid k-button-solid-base k-rounded-full k-icon-button">
+                    <span class="k-button-icon k-icon k-i-arrow-e"></span>
+                </button>
             </div>
         </section>
         <section>
             <div class="k-slider k-slider-horizontal k-slider-100 k-disabled">
-                <button is="Button" icon="arrow-w" rounded="full" class="k-button-decrease"></button>
+                <button class="k-button-decrease k-button k-button-md k-button-solid k-button-solid-base k-rounded-full k-icon-button">
+                    <span class="k-button-icon k-icon k-i-arrow-w"></span>
+                </button>
                 <div class="k-slider-track-wrap">
                     <ul class="k-reset k-slider-items">
                         <li class="k-tick k-tick-large">
@@ -219,13 +242,17 @@
                         <a href="#" class="k-draghandle k-draghandle-end"></a>
                     </div>
                 </div>
-                <button is="Button" icon="arrow-e" rounded="full" class="k-button-increase"></button>
+                <button class="k-button-increase k-button k-button-md k-button-solid k-button-solid-base k-rounded-full k-icon-button">
+                    <span class="k-button-icon k-icon k-i-arrow-e"></span>
+                </button>
             </div>
         </section>
         <span>Readonly</span>
         <section>
             <div class="k-slider k-slider-horizontal k-slider-0 k-readonly">
-                <button is="Button" icon="arrow-w" rounded="full" class="k-button-decrease"></button>
+                <button class="k-button-decrease k-button k-button-md k-button-solid k-button-solid-base k-rounded-full k-icon-button">
+                    <span class="k-button-icon k-icon k-i-arrow-w"></span>
+                </button>
                 <div class="k-slider-track-wrap">
                     <ul class="k-reset k-slider-items">
                         <li class="k-tick k-tick-large">
@@ -251,12 +278,16 @@
                         <a href="#" class="k-draghandle k-draghandle-end"></a>
                     </div>
                 </div>
-                <button is="Button" icon="arrow-e" rounded="full" class="k-button-increase"></button>
+                <button class="k-button-increase k-button k-button-md k-button-solid k-button-solid-base k-rounded-full k-icon-button">
+                    <span class="k-button-icon k-icon k-i-arrow-e"></span>
+                </button>
             </div>
         </section>
         <section>
             <div class="k-slider k-slider-horizontal k-slider-50 k-readonly">
-                <button is="Button" icon="arrow-w" rounded="full" class="k-button-decrease"></button>
+                <button class="k-button-decrease k-button k-button-md k-button-solid k-button-solid-base k-rounded-full k-icon-button">
+                    <span class="k-button-icon k-icon k-i-arrow-w"></span>
+                </button>
                 <div class="k-slider-track-wrap">
                     <ul class="k-reset k-slider-items">
                         <li class="k-tick k-tick-large">
@@ -282,12 +313,16 @@
                         <a href="#" class="k-draghandle k-draghandle-end"></a>
                     </div>
                 </div>
-                <button is="Button" icon="arrow-e" rounded="full" class="k-button-increase"></button>
+                <button class="k-button-increase k-button k-button-md k-button-solid k-button-solid-base k-rounded-full k-icon-button">
+                    <span class="k-button-icon k-icon k-i-arrow-e"></span>
+                </button>
             </div>
         </section>
         <section>
             <div class="k-slider k-slider-horizontal k-slider-100 k-readonly">
-                <button is="Button" icon="arrow-w" rounded="full" class="k-button-decrease"></button>
+                <button class="k-button-decrease k-button k-button-md k-button-solid k-button-solid-base k-rounded-full k-icon-button">
+                    <span class="k-button-icon k-icon k-i-arrow-w"></span>
+                </button>
                 <div class="k-slider-track-wrap">
                     <ul class="k-reset k-slider-items">
                         <li class="k-tick k-tick-large">
@@ -313,7 +348,9 @@
                         <a href="#" class="k-draghandle k-draghandle-end"></a>
                     </div>
                 </div>
-                <button is="Button" icon="arrow-e" rounded="full" class="k-button-increase"></button>
+                <button class="k-button-increase k-button k-button-md k-button-solid k-button-solid-base k-rounded-full k-icon-button">
+                    <span class="k-button-icon k-icon k-i-arrow-e"></span>
+                </button>
             </div>
         </section>
     </div>

@@ -1,12 +1,11 @@
 <!doctype html>
-<html lang="en" class="k-no-animations">
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width:15px;">
 <head>
-    <title>Responsive Pager</title>
+    <title>Pager Responsive</title>
     <meta charset="utf-8">
     <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
     <link rel="stylesheet" href="/packages/html/assets/styles.css">
     <script src="/packages/html/assets/scripts.js"></script>
-    <script src="/packages/html/dist/index.js"></script>
 </head>
 <body id="app" class="k-body">
     <style>
@@ -16,17 +15,17 @@
         }
 
     </style>
-    <div id="test-area" class="grid">
+    <div id="test-area" class="k-d-grid">
         <span></span>
         <span>LTR</span>
         <span></span>
         <span>lg</span>
         <div class="k-pager-wrap k-widget k-floatwrap k-pager-lg">
             <a class="k-link k-pager-nav k-pager-first k-state-disabled">
-                <i is="Icon" name="arrow-end-left"></i>
+                <span class="k-icon k-i-arrow-end-left"></span>
             </a>
             <a class="k-link k-pager-nav k-state-focus">
-                <i is="Icon" name="arrow-w"></i>
+                <span class="k-icon k-i-arrow-w"></span>
             </a>
             <div class="k-pager-numbers-wrap">
                 <select class="k-picker k-dropdown-list k-dropdown">
@@ -54,16 +53,23 @@
                 </ul>
             </div>
             <a class="k-link k-pager-nav k-state-hover">
-                <i is="Icon" name="arrow-e"></i>
+                <span class="k-icon k-i-arrow-e"></span>
             </a>
             <a class="k-link k-pager-nav k-pager-last">
-                <i is="Icon" name="arrow-end-right"></i>
+                <span class="k-icon k-i-arrow-end-right"></span>
             </a>
             <span class="k-pager-sizes k-label">
-                <input is="DropdownList" value="20" /> items per page
+                <span class="k-dropdown k-picker k-picker-md k-picker-solid k-rounded-md">
+                    <span class="k-input-inner">
+                        <span class="k-input-value-text">20</span>
+                    </span>
+                    <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                        <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                    </button>
+                </span>items per page
             </span>
             <a class="k-pager-refresh k-link">
-                <i is="Icon" name="reload"></i>
+                <span class="k-icon k-i-reload"></span>
             </a>
             <span class="k-pager-info k-label">1 - 20 of 91 items</span>
         </div>
@@ -71,10 +77,10 @@
         <span>md</span>
         <div class="k-pager-wrap k-widget k-floatwrap k-pager-md">
             <a class="k-link k-pager-nav k-pager-first k-state-disabled">
-                <i is="Icon" name="arrow-end-left"></i>
+                <span class="k-icon k-i-arrow-end-left"></span>
             </a>
             <a class="k-link k-pager-nav k-state-disabled">
-                <i is="Icon" name="arrow-w"></i>
+                <span class="k-icon k-i-arrow-w"></span>
             </a>
             <div class="k-pager-numbers-wrap">
                 <select class="k-picker k-dropdown-list k-dropdown">
@@ -99,16 +105,23 @@
                 </ul>
             </div>
             <a class="k-link k-pager-nav">
-                <i is="Icon" name="arrow-e"></i>
+                <span class="k-icon k-i-arrow-e"></span>
             </a>
             <a class="k-link k-pager-nav k-pager-last">
-                <i is="Icon" name="arrow-end-right"></i>
+                <span class="k-icon k-i-arrow-end-right"></span>
             </a>
             <span class="k-pager-sizes k-label">
-                <input is="DropdownList" value="20" /> items per page
+                <span class="k-dropdown k-picker k-picker-md k-picker-solid k-rounded-md">
+                    <span class="k-input-inner">
+                        <span class="k-input-value-text">20</span>
+                    </span>
+                    <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                        <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                    </button>
+                </span>items per page
             </span>
             <a class="k-pager-refresh k-link">
-                <i is="Icon" name="reload"></i>
+                <span class="k-icon k-i-reload"></span>
             </a>
             <span class="k-pager-info k-label">1 - 20 of 91 items</span>
         </div>
@@ -116,10 +129,10 @@
         <span>sm</span>
         <div class="k-pager-wrap k-widget k-floatwrap k-pager-sm">
             <a class="k-link k-pager-nav k-pager-first k-state-disabled">
-                <i is="Icon" name="arrow-end-left"></i>
+                <span class="k-icon k-i-arrow-end-left"></span>
             </a>
             <a class="k-link k-pager-nav k-state-disabled">
-                <i is="Icon" name="arrow-w"></i>
+                <span class="k-icon k-i-arrow-w"></span>
             </a>
             <div class="k-pager-numbers-wrap">
                 <select class="k-picker k-dropdown-list k-dropdown">
@@ -144,25 +157,32 @@
                 </ul>
             </div>
             <a class="k-link k-pager-nav">
-                <i is="Icon" name="arrow-e"></i>
+                <span class="k-icon k-i-arrow-e"></span>
             </a>
             <a class="k-link k-pager-nav k-pager-last">
-                <i is="Icon" name="arrow-end-right"></i>
+                <span class="k-icon k-i-arrow-end-right"></span>
             </a>
             <span class="k-pager-sizes k-label">
-                <input is="DropdownList" value="20" /> items per page
+                <span class="k-dropdown k-picker k-picker-md k-picker-solid k-rounded-md">
+                    <span class="k-input-inner">
+                        <span class="k-input-value-text">20</span>
+                    </span>
+                    <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                        <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                    </button>
+                </span>items per page
             </span>
             <a class="k-pager-refresh k-link">
-                <i is="Icon" name="reload"></i>
+                <span class="k-icon k-i-reload"></span>
             </a>
             <span class="k-pager-info k-label">1 - 20 of 91 items</span>
         </div>
         <div class="k-pager-wrap k-widget k-floatwrap k-pager-sm">
             <a class="k-link k-pager-nav k-pager-first k-state-disabled">
-                <i is="Icon" name="arrow-end-left"></i>
+                <span class="k-icon k-i-arrow-end-left"></span>
             </a>
             <a class="k-link k-pager-nav k-state-disabled">
-                <i is="Icon" name="arrow-w"></i>
+                <span class="k-icon k-i-arrow-w"></span>
             </a>
             <div class="k-pager-numbers-wrap">
                 <select class="k-picker k-dropdown-list k-dropdown">
@@ -187,16 +207,23 @@
                 </ul>
             </div>
             <a class="k-link k-pager-nav">
-                <i is="Icon" name="arrow-e"></i>
+                <span class="k-icon k-i-arrow-e"></span>
             </a>
             <a class="k-link k-pager-nav k-pager-last">
-                <i is="Icon" name="arrow-end-right"></i>
+                <span class="k-icon k-i-arrow-end-right"></span>
             </a>
             <span class="k-pager-sizes k-label">
-                <input is="DropdownList" value="20" /> items per page
+                <span class="k-dropdown k-picker k-picker-md k-picker-solid k-rounded-md">
+                    <span class="k-input-inner">
+                        <span class="k-input-value-text">20</span>
+                    </span>
+                    <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                        <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                    </button>
+                </span>items per page
             </span>
             <a class="k-pager-refresh k-link">
-                <i is="Icon" name="reload"></i>
+                <span class="k-icon k-i-reload"></span>
             </a>
             <span class="k-pager-info k-label">1 - 20 of 91 items</span>
         </div>
@@ -206,10 +233,10 @@
         <span>lg</span>
         <div class="k-pager-wrap k-widget k-floatwrap k-pager-lg" dir="rtl">
             <a class="k-link k-pager-nav k-pager-first k-state-disabled">
-                <i is="Icon" name="arrow-end-left"></i>
+                <span class="k-icon k-i-arrow-end-left"></span>
             </a>
             <a class="k-link k-pager-nav k-state-disabled">
-                <i is="Icon" name="arrow-w"></i>
+                <span class="k-icon k-i-arrow-w"></span>
             </a>
             <div class="k-pager-numbers-wrap">
                 <select class="k-picker k-dropdown-list k-dropdown">
@@ -234,16 +261,23 @@
                 </ul>
             </div>
             <a class="k-link k-pager-nav">
-                <i is="Icon" name="arrow-e"></i>
+                <span class="k-icon k-i-arrow-e"></span>
             </a>
             <a class="k-link k-pager-nav k-pager-last">
-                <i is="Icon" name="arrow-end-right"></i>
+                <span class="k-icon k-i-arrow-end-right"></span>
             </a>
             <span class="k-pager-sizes k-label">
-                <input is="DropdownList" value="20" /> items per page
+                <span class="k-dropdown k-picker k-picker-md k-picker-solid k-rounded-md">
+                    <span class="k-input-inner">
+                        <span class="k-input-value-text">20</span>
+                    </span>
+                    <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                        <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                    </button>
+                </span>items per page
             </span>
             <a class="k-pager-refresh k-link">
-                <i is="Icon" name="reload"></i>
+                <span class="k-icon k-i-reload"></span>
             </a>
             <span class="k-pager-info k-label">1 - 20 of 91 items</span>
         </div>
@@ -251,10 +285,10 @@
         <span>md</span>
         <div class="k-pager-wrap k-widget k-floatwrap k-pager-md" dir="rtl">
             <a class="k-link k-pager-nav k-pager-first k-state-disabled">
-                <i is="Icon" name="arrow-end-left"></i>
+                <span class="k-icon k-i-arrow-end-left"></span>
             </a>
             <a class="k-link k-pager-nav k-state-disabled">
-                <i is="Icon" name="arrow-w"></i>
+                <span class="k-icon k-i-arrow-w"></span>
             </a>
             <div class="k-pager-numbers-wrap">
                 <select class="k-picker k-dropdown-list k-dropdown">
@@ -279,16 +313,23 @@
                 </ul>
             </div>
             <a class="k-link k-pager-nav">
-                <i is="Icon" name="arrow-e"></i>
+                <span class="k-icon k-i-arrow-e"></span>
             </a>
             <a class="k-link k-pager-nav k-pager-last">
-                <i is="Icon" name="arrow-end-right"></i>
+                <span class="k-icon k-i-arrow-end-right"></span>
             </a>
             <span class="k-pager-sizes k-label">
-                <input is="DropdownList" value="20" /> items per page
+                <span class="k-dropdown k-picker k-picker-md k-picker-solid k-rounded-md">
+                    <span class="k-input-inner">
+                        <span class="k-input-value-text">20</span>
+                    </span>
+                    <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                        <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                    </button>
+                </span>items per page
             </span>
             <a class="k-pager-refresh k-link">
-                <i is="Icon" name="reload"></i>
+                <span class="k-icon k-i-reload"></span>
             </a>
             <span class="k-pager-info k-label">1 - 20 of 91 items</span>
         </div>
@@ -296,10 +337,10 @@
         <span>sm</span>
         <div class="k-pager-wrap k-widget k-floatwrap k-pager-sm" dir="rtl">
             <a class="k-link k-pager-nav k-pager-first k-state-disabled">
-                <i is="Icon" name="arrow-end-left"></i>
+                <span class="k-icon k-i-arrow-end-left"></span>
             </a>
             <a class="k-link k-pager-nav k-state-disabled">
-                <i is="Icon" name="arrow-w"></i>
+                <span class="k-icon k-i-arrow-w"></span>
             </a>
             <div class="k-pager-numbers-wrap">
                 <select class="k-picker k-dropdown-list k-dropdown">
@@ -324,25 +365,32 @@
                 </ul>
             </div>
             <a class="k-link k-pager-nav">
-                <i is="Icon" name="arrow-e"></i>
+                <span class="k-icon k-i-arrow-e"></span>
             </a>
             <a class="k-link k-pager-nav k-pager-last">
-                <i is="Icon" name="arrow-end-right"></i>
+                <span class="k-icon k-i-arrow-end-right"></span>
             </a>
             <span class="k-pager-sizes k-label">
-                <input is="DropdownList" value="20" /> items per page
+                <span class="k-dropdown k-picker k-picker-md k-picker-solid k-rounded-md">
+                    <span class="k-input-inner">
+                        <span class="k-input-value-text">20</span>
+                    </span>
+                    <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                        <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                    </button>
+                </span>items per page
             </span>
             <a class="k-pager-refresh k-link">
-                <i is="Icon" name="reload"></i>
+                <span class="k-icon k-i-reload"></span>
             </a>
             <span class="k-pager-info k-label">1 - 20 of 91 items</span>
         </div>
         <div class="k-pager-wrap k-widget k-floatwrap k-pager-sm" dir="rtl">
             <a class="k-link k-pager-nav k-pager-first k-state-disabled">
-                <i is="Icon" name="arrow-end-left"></i>
+                <span class="k-icon k-i-arrow-end-left"></span>
             </a>
             <a class="k-link k-pager-nav k-state-disabled">
-                <i is="Icon" name="arrow-w"></i>
+                <span class="k-icon k-i-arrow-w"></span>
             </a>
             <div class="k-pager-numbers-wrap">
                 <select class="k-picker k-dropdown-list k-dropdown">
@@ -367,16 +415,23 @@
                 </ul>
             </div>
             <a class="k-link k-pager-nav">
-                <i is="Icon" name="arrow-e"></i>
+                <span class="k-icon k-i-arrow-e"></span>
             </a>
             <a class="k-link k-pager-nav k-pager-last">
-                <i is="Icon" name="arrow-end-right"></i>
+                <span class="k-icon k-i-arrow-end-right"></span>
             </a>
             <span class="k-pager-sizes k-label">
-                <input is="DropdownList" value="20" /> items per page
+                <span class="k-dropdown k-picker k-picker-md k-picker-solid k-rounded-md">
+                    <span class="k-input-inner">
+                        <span class="k-input-value-text">20</span>
+                    </span>
+                    <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                        <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                    </button>
+                </span>items per page
             </span>
             <a class="k-pager-refresh k-link">
-                <i is="Icon" name="reload"></i>
+                <span class="k-icon k-i-reload"></span>
             </a>
             <span class="k-pager-info k-label">1 - 20 of 91 items</span>
         </div>

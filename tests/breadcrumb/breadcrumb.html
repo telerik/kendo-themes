@@ -1,155 +1,146 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width:15px;">
 <head>
     <title>Breadcrumb</title>
     <meta charset="utf-8">
     <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
     <link rel="stylesheet" href="/packages/html/assets/styles.css">
     <script src="/packages/html/assets/scripts.js"></script>
-    <script src="/packages/html/dist/index.js"></script>
 </head>
 <body id="app" class="k-body">
-    <style>
-        #test-area {
-            grid-template-columns: 1fr;
-        }
-
-    </style>
-    <div id="test-area">
-        <!-- Wrapping -> collapseMode=wrap -->
-        <h4>Wrapping -> collapseMode=wrap</h4>
-        <kendo-breadcrumb style="width: 400px;" class="k-widget k-breadcrumb k-breadcrumb-wrap">
+    <div id="test-area" class="k-d-grid k-grid-cols-1">
+        <h4>Wrapping -&gt; collapseMode=wrap</h4>
+        <div class="k-widget k-breadcrumb k-breadcrumb-wrap" style="width: 400px;">
             <ol class="k-breadcrumb-root-item-container">
                 <li class="k-flex-none k-breadcrumb-root-item k-breadcrumb-item">
                     <span class="k-cursor-pointer k-flex-none k-breadcrumb-root-link k-breadcrumb-icontext-link">
-                        <i is="Icon" name="home"></i> Start item
+                        <span class="k-icon k-i-home"></span>Start item
                     </span>
                 </li>
             </ol>
             <ol class="k-breadcrumb-container k-flex-wrap">
                 <li class="k-flex-none k-breadcrumb-item">
-                    <i is="Icon" class="k-breadcrumb-delimiter-icon" name="arrow-chevron-right"></i>
+                    <span class="k-breadcrumb-delimiter-icon k-icon k-i-arrow-chevron-right"></span>
                     <span class="k-cursor-pointer k-flex-none k-breadcrumb-link k-state-disabled k-breadcrumb-icontext-link">
-                        <i is="Icon" name="clock"></i> First item
+                        <span class="k-icon k-i-clock"></span>First item
                     </span>
                 </li>
                 <li class="k-flex-none k-breadcrumb-item">
-                    <i is="Icon" class="k-breadcrumb-delimiter-icon" name="arrow-chevron-right"></i>
+                    <span class="k-breadcrumb-delimiter-icon k-icon k-i-arrow-chevron-right"></span>
                     <span class="k-cursor-pointer k-flex-none k-breadcrumb-link">
-                        <img class="k-image" src="/packages/html/assets/avatar.jpg" width="20" height="20" /> Second item
+                        <img class="k-image" src="/packages/html/assets/avatar.jpg" width="20" height="20">Second item
                     </span>
                 </li>
                 <li class="k-flex-none k-breadcrumb-item">
-                    <i is="Icon" class="k-breadcrumb-delimiter-icon" name="arrow-chevron-right"></i>
+                    <span class="k-breadcrumb-delimiter-icon k-icon k-i-arrow-chevron-right"></span>
                     <span class="k-cursor-pointer k-flex-none k-breadcrumb-link">
                         <span class="test"></span> Third item
                     </span>
                 </li>
                 <li class="k-flex-none k-breadcrumb-item">
-                    <i is="Icon" class="k-breadcrumb-delimiter-icon" name="arrow-chevron-right"></i>
+                    <span class="k-breadcrumb-delimiter-icon k-icon k-i-arrow-chevron-right"></span>
                     <span class="k-cursor-pointer k-flex-none k-breadcrumb-link k-breadcrumb-icon-link">
-                        <i is="Icon" name="clock"></i>
+                        <span class="k-icon k-i-clock"></span>
                     </span>
                 </li>
                 <li class="k-flex-none k-breadcrumb-last-item k-breadcrumb-item">
-                    <i is="Icon" class="k-breadcrumb-delimiter-icon" name="arrow-chevron-right"></i>
-                    <span class="k-cursor-pointer k-flex-none k-breadcrumb-link k-state-disabled"> Fifth item </span>
+                    <span class="k-breadcrumb-delimiter-icon k-icon k-i-arrow-chevron-right"></span>
+                    <span class="k-cursor-pointer k-flex-none k-breadcrumb-link k-state-disabled">Fifth item</span>
                 </li>
             </ol>
-        </kendo-breadcrumb>
-        <kendo-breadcrumb style="width: 400px;" class="k-widget k-breadcrumb k-breadcrumb-wrap">
+        </div>
+        <div class="k-widget k-breadcrumb k-breadcrumb-wrap" style="width: 400px;">
             <ol class="k-breadcrumb-root-item-container">
                 <li class="k-flex-none k-breadcrumb-root-item k-breadcrumb-item">
-                    <span class="k-cursor-pointer k-flex-none k-breadcrumb-root-link"> Start item </span>
+                    <span class="k-cursor-pointer k-flex-none k-breadcrumb-root-link">Start item</span>
                 </li>
             </ol>
             <ol class="k-breadcrumb-container k-flex-wrap">
                 <li class="k-flex-none k-breadcrumb-item">
-                    <i is="Icon" class="k-breadcrumb-delimiter-icon" name="arrow-chevron-right"></i>
+                    <span class="k-breadcrumb-delimiter-icon k-icon k-i-arrow-chevron-right"></span>
                     <span class="k-cursor-pointer k-flex-none k-breadcrumb-link k-state-disabled k-breadcrumb-icontext-link">
-                        <i is="Icon" name="clock"></i> First item
+                        <span class="k-icon k-i-clock"></span>First item
                     </span>
                 </li>
                 <li class="k-flex-none k-breadcrumb-item">
-                    <i is="Icon" class="k-breadcrumb-delimiter-icon" name="arrow-chevron-right"></i>
+                    <span class="k-breadcrumb-delimiter-icon k-icon k-i-arrow-chevron-right"></span>
                     <span class="k-cursor-pointer k-flex-none k-breadcrumb-link">
-                        <img class="k-image" src="/packages/html/assets/avatar.jpg" width="20" height="20" /> Second item
+                        <img class="k-image" src="/packages/html/assets/avatar.jpg" width="20" height="20">Second item
                     </span>
                 </li>
                 <li class="k-flex-none k-breadcrumb-item">
-                    <i is="Icon" class="k-breadcrumb-delimiter-icon" name="arrow-chevron-right"></i>
+                    <span class="k-breadcrumb-delimiter-icon k-icon k-i-arrow-chevron-right"></span>
                     <span class="k-cursor-pointer k-flex-none k-breadcrumb-link">
                         <span class="test"></span> Third item
                     </span>
                 </li>
                 <li class="k-flex-none k-breadcrumb-item">
-                    <i is="Icon" class="k-breadcrumb-delimiter-icon" name="arrow-chevron-right"></i>
+                    <span class="k-breadcrumb-delimiter-icon k-icon k-i-arrow-chevron-right"></span>
                     <span class="k-cursor-pointer k-flex-none k-breadcrumb-link k-breadcrumb-icon-link">
-                        <i is="Icon" name="clock"></i>
+                        <span class="k-icon k-i-clock"></span>
                     </span>
                 </li>
                 <li class="k-flex-none k-breadcrumb-last-item k-breadcrumb-item">
-                    <i is="Icon" class="k-breadcrumb-delimiter-icon" name="arrow-chevron-right"></i>
-                    <span class="k-cursor-pointer k-flex-none k-breadcrumb-link k-state-disabled"> Fifth item </span>
+                    <span class="k-breadcrumb-delimiter-icon k-icon k-i-arrow-chevron-right"></span>
+                    <span class="k-cursor-pointer k-flex-none k-breadcrumb-link k-state-disabled">Fifth item</span>
                 </li>
             </ol>
-        </kendo-breadcrumb>
-        <kendo-breadcrumb style="width: 400px;" class="k-widget k-breadcrumb k-breadcrumb-wrap">
+        </div>
+        <div class="k-widget k-breadcrumb k-breadcrumb-wrap" style="width: 400px;">
             <ol class="k-breadcrumb-root-item-container">
                 <li class="k-flex-none k-breadcrumb-root-item k-breadcrumb-item">
                     <span class="k-cursor-pointer k-flex-none k-breadcrumb-root-link k-breadcrumb-icon-link">
-                        <i is="Icon" name="home"></i>
+                        <span class="k-icon k-i-home"></span>
                     </span>
                 </li>
             </ol>
             <ol class="k-breadcrumb-container k-flex-wrap">
                 <li class="k-flex-none k-breadcrumb-item">
-                    <i is="Icon" class="k-breadcrumb-delimiter-icon" name="arrow-chevron-right"></i>
+                    <span class="k-breadcrumb-delimiter-icon k-icon k-i-arrow-chevron-right"></span>
                     <span class="k-cursor-pointer k-flex-none k-breadcrumb-link k-state-disabled k-breadcrumb-icontext-link">
-                        <i is="Icon" name="clock"></i> First item
+                        <span class="k-icon k-i-clock"></span>First item
                     </span>
                 </li>
                 <li class="k-flex-none k-breadcrumb-item">
-                    <i is="Icon" class="k-breadcrumb-delimiter-icon" name="arrow-chevron-right"></i>
+                    <span class="k-breadcrumb-delimiter-icon k-icon k-i-arrow-chevron-right"></span>
                     <span class="k-cursor-pointer k-flex-none k-breadcrumb-link">
-                        <img class="k-image" src="/packages/html/assets/avatar.jpg" width="20" height="20" /> Second item
+                        <img class="k-image" src="/packages/html/assets/avatar.jpg" width="20" height="20">Second item
                     </span>
                 </li>
                 <li class="k-flex-none k-breadcrumb-item">
-                    <i is="Icon" class="k-breadcrumb-delimiter-icon" name="arrow-chevron-right"></i>
+                    <span class="k-breadcrumb-delimiter-icon k-icon k-i-arrow-chevron-right"></span>
                     <span class="k-cursor-pointer k-flex-none k-breadcrumb-link">
                         <span class="test"></span> Third item
                     </span>
                 </li>
                 <li class="k-flex-none k-breadcrumb-item">
-                    <i is="Icon" class="k-breadcrumb-delimiter-icon" name="arrow-chevron-right"></i>
+                    <span class="k-breadcrumb-delimiter-icon k-icon k-i-arrow-chevron-right"></span>
                     <span class="k-cursor-pointer k-flex-none k-breadcrumb-link k-breadcrumb-icon-link">
-                        <i is="Icon" name="clock"></i>
+                        <span class="k-icon k-i-clock"></span>
                     </span>
                 </li>
                 <li class="k-flex-none k-breadcrumb-last-item k-breadcrumb-item">
-                    <i is="Icon" class="k-breadcrumb-delimiter-icon" name="arrow-chevron-right"></i>
-                    <span class="k-cursor-pointer k-flex-none k-breadcrumb-link k-state-disabled"> Fifth item </span>
+                    <span class="k-breadcrumb-delimiter-icon k-icon k-i-arrow-chevron-right"></span>
+                    <span class="k-cursor-pointer k-flex-none k-breadcrumb-link k-state-disabled">Fifth item</span>
                 </li>
             </ol>
-        </kendo-breadcrumb>
-        <!-- Navigation Mode -->
+        </div>
         <h4>Navigation Mode</h4>
         <nav id="breadcrumbs" class="k-widget k-breadcrumb" style="width: 660px;">
             <ol class="k-breadcrumb-container">
                 <li class="k-breadcrumb-item k-breadcrumb-root-item">
                     <a href="#" class="k-breadcrumb-root-link k-breadcrumb-icon-link">
-                        <i is="Icon" name="home"></i>
+                        <span class="k-icon k-i-home"></span>
                     </a>
-                    <i is="Icon" class="k-breadcrumb-delimiter-icon" name="arrow-chevron-right"></i>
+                    <span class="k-breadcrumb-delimiter-icon k-icon k-i-arrow-chevron-right"></span>
                 </li>
                 <li class="k-breadcrumb-item">
                     <a class="k-breadcrumb-link" href="#">WAIPractices</a>
-                    <i is="Icon" class="k-breadcrumb-delimiter-icon" name="arrow-chevron-right"></i>
+                    <span class="k-breadcrumb-delimiter-icon k-icon k-i-arrow-chevron-right"></span>
                 </li>
                 <li class="k-breadcrumb-item">
                     <a class="k-breadcrumb-link" href="#">Design Patterns</a>
-                    <i is="Icon" class="k-breadcrumb-delimiter-icon" name="arrow-chevron-right"></i>
+                    <span class="k-breadcrumb-delimiter-icon k-icon k-i-arrow-chevron-right"></span>
                 </li>
                 <li class="k-breadcrumb-item k-breadcrumb-last-item">
                     <a class="k-breadcrumb-link k-state-disabled" href="#">Breadcrumb Practices</a>
@@ -161,17 +152,17 @@
             <ol class="k-breadcrumb-container">
                 <li class="k-breadcrumb-item k-breadcrumb-root-item">
                     <a href="#" class="k-breadcrumb-root-link k-breadcrumb-icon-link k-state-focused">
-                        <i is="Icon" name="home"></i>
+                        <span class="k-icon k-i-home"></span>
                     </a>
-                    <i is="Icon" class="k-breadcrumb-delimiter-icon" name="arrow-chevron-right"></i>
+                    <span class="k-breadcrumb-delimiter-icon k-icon k-i-arrow-chevron-right"></span>
                 </li>
                 <li class="k-breadcrumb-item">
                     <a class="k-breadcrumb-link k-state-focused" href="#">WAIPractices</a>
-                    <i is="Icon" class="k-breadcrumb-delimiter-icon" name="arrow-chevron-right"></i>
+                    <span class="k-breadcrumb-delimiter-icon k-icon k-i-arrow-chevron-right"></span>
                 </li>
                 <li class="k-breadcrumb-item">
                     <a class="k-breadcrumb-link" href="#">Design Patterns</a>
-                    <i is="Icon" class="k-breadcrumb-delimiter-icon" name="arrow-chevron-right"></i>
+                    <span class="k-breadcrumb-delimiter-icon k-icon k-i-arrow-chevron-right"></span>
                 </li>
                 <li class="k-breadcrumb-item k-breadcrumb-last-item">
                     <a class="k-breadcrumb-link k-state-disabled" href="#">Breadcrumb Practices</a>
@@ -183,17 +174,17 @@
             <ol class="k-breadcrumb-container">
                 <li class="k-breadcrumb-item k-breadcrumb-root-item">
                     <a href="#" class="k-breadcrumb-root-link k-breadcrumb-icon-link k-state-hover">
-                        <i is="Icon" name="home"></i>
+                        <span class="k-icon k-i-home"></span>
                     </a>
-                    <i is="Icon" class="k-breadcrumb-delimiter-icon" name="arrow-chevron-right"></i>
+                    <span class="k-breadcrumb-delimiter-icon k-icon k-i-arrow-chevron-right"></span>
                 </li>
                 <li class="k-breadcrumb-item">
                     <a class="k-breadcrumb-link k-state-hover" href="#">WAIPractices</a>
-                    <i is="Icon" class="k-breadcrumb-delimiter-icon" name="arrow-chevron-right"></i>
+                    <span class="k-breadcrumb-delimiter-icon k-icon k-i-arrow-chevron-right"></span>
                 </li>
                 <li class="k-breadcrumb-item">
                     <a class="k-breadcrumb-link" href="#">Design Patterns</a>
-                    <i is="Icon" class="k-breadcrumb-delimiter-icon" name="arrow-chevron-right"></i>
+                    <span class="k-breadcrumb-delimiter-icon k-icon k-i-arrow-chevron-right"></span>
                 </li>
                 <li class="k-breadcrumb-item k-breadcrumb-last-item">
                     <a class="k-breadcrumb-link k-state-disabled" href="#">Breadcrumb Practices</a>
@@ -205,21 +196,21 @@
             <ol class="k-breadcrumb-container">
                 <li class="k-breadcrumb-item k-breadcrumb-root-item">
                     <a href="#" class="k-breadcrumb-root-link k-breadcrumb-icon-link k-state-hover">
-                        <i is="Icon" name="home"></i>
+                        <span class="k-icon k-i-home"></span>
                     </a>
-                    <i is="Icon" class="k-breadcrumb-delimiter-icon" name="arrow-chevron-right"></i>
+                    <span class="k-breadcrumb-delimiter-icon k-icon k-i-arrow-chevron-right"></span>
                 </li>
                 <li class="k-breadcrumb-item">
                     <a class="k-breadcrumb-link k-breadcrumb-icontext-link" href="#">
-                        <i is="Icon" name="cloud"></i> WAIPractices
+                        <span class="k-icon k-i-cloud"></span>WAIPractices
                     </a>
-                    <i is="Icon" class="k-breadcrumb-delimiter-icon" name="arrow-chevron-right"></i>
+                    <span class="k-breadcrumb-delimiter-icon k-icon k-i-arrow-chevron-right"></span>
                 </li>
                 <li class="k-breadcrumb-item">
                     <a class="k-breadcrumb-link k-breadcrumb-icon-link" href="#">
-                        <i is="Icon" name="photo-camera"></i>
+                        <span class="k-icon k-i-photo-camera"></span>
                     </a>
-                    <i is="Icon" class="k-breadcrumb-delimiter-icon" name="arrow-chevron-right"></i>
+                    <span class="k-breadcrumb-delimiter-icon k-icon k-i-arrow-chevron-right"></span>
                 </li>
                 <li class="k-breadcrumb-item k-breadcrumb-last-item">
                     <a class="k-breadcrumb-link k-state-disabled" href="#">Breadcrumb Practices</a>
@@ -227,24 +218,22 @@
             </ol>
         </nav>
         <br>
-        <!-- Edit Mode -->
         <h4>Edit Mode</h4>
-        <!-- Edit Mode Focused State -->
         <nav id="breadcrumbs" class="k-widget k-breadcrumb k-state-focused" style="width: 660px;">
             <ol class="k-breadcrumb-container">
                 <li class="k-breadcrumb-item k-breadcrumb-root-item">
                     <a href="#" class="k-breadcrumb-root-link">
-                        <i is="Icon" name="home"></i>
+                        <span class="k-icon k-i-home"></span>
                     </a>
-                    <i is="Icon" class="k-breadcrumb-delimiter-icon" name="arrow-chevron-right"></i>
+                    <span class="k-breadcrumb-delimiter-icon k-icon k-i-arrow-chevron-right"></span>
                 </li>
                 <li class="k-breadcrumb-item">
                     <a class="k-breadcrumb-link" href="#">WAIPractices</a>
-                    <i is="Icon" class="k-breadcrumb-delimiter-icon" name="arrow-chevron-right"></i>
+                    <span class="k-breadcrumb-delimiter-icon k-icon k-i-arrow-chevron-right"></span>
                 </li>
                 <li class="k-breadcrumb-item">
                     <a class="k-breadcrumb-link" href="#">Design Patterns</a>
-                    <i is="Icon" class="k-breadcrumb-delimiter-icon" name="arrow-chevron-right"></i>
+                    <span class="k-breadcrumb-delimiter-icon k-icon k-i-arrow-chevron-right"></span>
                 </li>
                 <li class="k-breadcrumb-item k-breadcrumb-last-item">
                     <a class="k-breadcrumb-link k-state-disabled" href="#">Breadcrumb Practices</a>
@@ -252,31 +241,31 @@
             </ol>
         </nav>
         <br>
-        <!-- Edit Mode Edit State -->
         <nav id="breadcrumbs" class="k-widget k-breadcrumb" style="width: 660px;">
             <div class="k-breadcrumb-input-container">
-                <input is="Textbox" showClearButton="false" value="WAIPractices/Design Patterns/Breadcrumb Pattern/Breadcrumb Practices" />
+                <span class="k-textbox k-input k-input-md k-input-solid k-rounded-md">
+                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="WAIPractices/Design Patterns/Breadcrumb Pattern/Breadcrumb Practices">
+                </span>
             </div>
         </nav>
         <br>
-        <!-- Overflow -->
         <h4>Overflow</h4>
         <nav id="breadcrumbs" class="k-widget k-breadcrumb" style="width: 350px;">
             <ol class="k-breadcrumb-container">
                 <li class="k-breadcrumb-item k-breadcrumb-root-item">
                     <a href="#" class="k-breadcrumb-root-link k-breadcrumb-icon-link">
-                        <i is="Icon" name="home"></i>
+                        <span class="k-icon k-i-home"></span>
                     </a>
-                    <i is="Icon" class="k-breadcrumb-delimiter-icon k-breadcrumb-overflow-icon" name="arrow-chevron-right"></i>
-                    <i is="Icon" class="k-breadcrumb-delimiter-icon k-breadcrumb-overflow-icon" name="arrow-chevron-right"></i>
+                    <span class="k-breadcrumb-delimiter-icon k-breadcrumb-overflow-icon k-icon k-i-arrow-chevron-right"></span>
+                    <span class="k-breadcrumb-delimiter-icon k-breadcrumb-overflow-icon k-icon k-i-arrow-chevron-right"></span>
                 </li>
-                <li class="k-breadcrumb-item" hidden>
+                <li class="k-breadcrumb-item" hidden="">
                     <a class="k-breadcrumb-link" href="#">WAIPractices</a>
-                    <i is="Icon" class="k-breadcrumb-delimiter-icon" name="arrow-chevron-right"></i>
+                    <span class="k-breadcrumb-delimiter-icon k-icon k-i-arrow-chevron-right"></span>
                 </li>
                 <li class="k-breadcrumb-item">
                     <a class="k-breadcrumb-link" href="#">Design Patterns</a>
-                    <i is="Icon" class="k-breadcrumb-delimiter-icon" name="arrow-chevron-right"></i>
+                    <span class="k-breadcrumb-delimiter-icon k-icon k-i-arrow-chevron-right"></span>
                 </li>
                 <li class="k-breadcrumb-item k-breadcrumb-last-item">
                     <a class="k-breadcrumb-link k-state-disabled" href="#">Breadcrumb item </a>

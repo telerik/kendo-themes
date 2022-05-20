@@ -1,21 +1,14 @@
 <!doctype html>
-<html lang="en" class="k-no-animations">
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width:15px;">
 <head>
-    <title>Listgroup RTL</title>
+    <title>ListGroup RTL</title>
     <meta charset="utf-8">
     <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
     <link rel="stylesheet" href="/packages/html/assets/styles.css">
     <script src="/packages/html/assets/scripts.js"></script>
-    <script src="/packages/html/dist/index.js"></script>
 </head>
 <body id="app" class="k-body">
-    <style>
-        #test-area {
-            grid-template-columns: repeat(4, 1fr);
-        }
-
-    </style>
-    <div id="test-area" class="grid">
+    <div id="test-area" class="k-d-grid k-grid-cols-4">
         <span class="col-4">RTL</span>
         <section dir="rtl">
             <ul class="k-listgroup">
@@ -31,15 +24,15 @@
         <section dir="rtl">
             <ul class="k-listgroup">
                 <li class="k-listgroup-item">
-                    <a href="#" class="k-link"> Link <span class="k-select">
-                            <i is="Icon" name="arrow-chevron-right"></i>
+                    <a href="#" class="k-link">Link<span class="k-select">
+                            <span class="k-icon k-i-arrow-chevron-right"></span>
                         </span>
                     </a>
                 </li>
                 <li class="k-listgroup-item k-listgroup-item-segmented">
                     <span class="k-link">Pseudo link</span>
                     <span class="k-select">
-                        <i is="Icon" name="arrow-chevron-right"></i>
+                        <span class="k-icon k-i-arrow-chevron-right"></span>
                     </span>
                 </li>
             </ul>
@@ -59,7 +52,7 @@
                     <span class="k-listgroup-form-row">
                         <span class="k-listgroup-form-field-label">Text</span>
                         <span class="k-listgroup-form-field-wrapper">
-                            <input type="text" />
+                            <input type="text">
                         </span>
                     </span>
                 </li>
@@ -67,7 +60,7 @@
                     <span class="k-listgroup-form-row">
                         <span class="k-listgroup-form-field-label">Password</span>
                         <span class="k-listgroup-form-field-wrapper">
-                            <input type="password" />
+                            <input type="password">
                         </span>
                     </span>
                 </li>
@@ -75,7 +68,7 @@
                     <span class="k-listgroup-form-row">
                         <span class="k-listgroup-form-field-label">Date</span>
                         <span class="k-listgroup-form-field-wrapper">
-                            <input type="date" />
+                            <input type="date">
                         </span>
                     </span>
                 </li>
@@ -83,7 +76,7 @@
                     <span class="k-listgroup-form-row">
                         <span class="k-listgroup-form-field-label">Time</span>
                         <span class="k-listgroup-form-field-wrapper">
-                            <input type="time" />
+                            <input type="time">
                         </span>
                     </span>
                 </li>
@@ -91,7 +84,7 @@
                     <span class="k-listgroup-form-row">
                         <span class="k-listgroup-form-field-label">Number</span>
                         <span class="k-listgroup-form-field-wrapper">
-                            <input type="number" />
+                            <input type="number">
                         </span>
                     </span>
                 </li>
@@ -99,7 +92,7 @@
                     <span class="k-listgroup-form-row">
                         <span class="k-listgroup-form-field-label">Radio</span>
                         <span class="k-listgroup-form-field-wrapper">
-                            <input type="radio" />
+                            <input type="radio">
                         </span>
                     </span>
                 </li>
@@ -107,7 +100,7 @@
                     <span class="k-listgroup-form-row">
                         <span class="k-listgroup-form-field-label">Checkbox</span>
                         <span class="k-listgroup-form-field-wrapper">
-                            <input type="checkbox" />
+                            <input type="checkbox">
                         </span>
                     </span>
                 </li>

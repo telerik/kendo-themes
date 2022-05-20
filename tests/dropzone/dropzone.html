@@ -1,52 +1,43 @@
 <!doctype html>
-<html lang="en" class="k-no-animations">
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width:15px;">
 <head>
-    <title>Upload</title>
+    <title>Dropzone</title>
     <meta charset="utf-8">
     <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
     <link rel="stylesheet" href="/packages/html/assets/styles.css">
     <script src="/packages/html/assets/scripts.js"></script>
-    <script src="/packages/html/dist/index.js"></script>
 </head>
 <body id="app" class="k-body">
-    <style>
-        #test-area {
-            grid-template-columns: repeat(2, 1fr);
-        }
-
-    </style>
-    <div id="test-area" class="grid">
+    <div id="test-area" class="k-d-grid k-grid-cols-2">
         <section>
             <p>External dropzone</p>
-            <kendo-uploaddropzone class="k-external-dropzone">
+            <div class="k-external-dropzone">
                 <div class="k-dropzone-inner">
-                    <i is="Icon" name="upload"></i>
+                    <span class="k-icon k-i-upload"></span>
                     <span class="k-dropzone-hint">Drag and drop files here to upload</span>
                     <span class="k-dropzone-note"> Only JPEG, PNG and SVG files are allowed.</span>
                 </div>
-            </kendo-uploaddropzone>
+            </div>
         </section>
         <section>
-            <!-- Hover dragging files -->
             <p>External dropzone - hover dragging files</p>
-            <kendo-uploaddropzone class="k-external-dropzone k-external-dropzone-hover">
+            <div class="k-external-dropzone k-external-dropzone-hover">
                 <div class="k-dropzone-inner">
-                    <i is="Icon" name="upload"></i>
+                    <span class="k-icon k-i-upload"></span>
                     <span class="k-dropzone-hint">Drag and drop files here to upload</span>
                     <span class="k-dropzone-note"> Only JPEG, PNG and SVG files are allowed.</span>
                 </div>
-            </kendo-uploaddropzone>
+            </div>
         </section>
         <section>
-            <!-- Hight set -->
             <p>External dropzone</p>
-            <kendo-uploaddropzone class="k-external-dropzone" style="height: 400px;">
+            <div class="k-external-dropzone" style="height: 400px;">
                 <div class="k-dropzone-inner">
-                    <i is="Icon" name="upload"></i>
+                    <span class="k-icon k-i-upload"></span>
                     <span class="k-dropzone-hint">Drag and drop files here to upload</span>
                     <span class="k-dropzone-note"> Only JPEG, PNG and SVG files are allowed.</span>
                 </div>
-            </kendo-uploaddropzone>
+            </div>
         </section>
     </div>
 </body>

@@ -1,18 +1,14 @@
 <!doctype html>
-<html lang="en" class="k-no-animations">
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width:15px;">
 <head>
-    <title>Badge position</title>
+    <title>Badge Position</title>
     <meta charset="utf-8">
     <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
     <link rel="stylesheet" href="/packages/html/assets/styles.css">
     <script src="/packages/html/assets/scripts.js"></script>
-    <script src="/packages/html/dist/index.js"></script>
 </head>
 <body id="app" class="k-body">
     <style>
-        #test-area {
-            grid-template-columns: repeat(6, 1fr);
-        }
         .k-badge-container {
             padding: 5px;
             width: 80px;
@@ -25,7 +21,7 @@
         }
 
     </style>
-    <div id="test-area" class="grid">
+    <div id="test-area" class="k-d-grid k-grid-cols-6">
         <span></span>
         <span>Rectangle</span>
         <span>Rounded</span>
@@ -99,9 +95,7 @@
             <span class="k-badge k-badge-md k-badge-solid k-badge-primary k-badge-rounded k-badge-edge k-bottom-end">Rect</span>
         </div>
         <span></span>
-        <span class="col-6">
-            <!-- Spacing needed for outside badges -->
-        </span>
+        <span class="col-6"> </span>
         <span>Outside</span>
         <div class="k-badge-container">
             <span class="k-badge k-badge-md k-badge-solid k-badge-primary k-badge-rounded k-badge-outside k-top-start">Rect</span>
@@ -116,9 +110,7 @@
             <span class="k-badge k-badge-md k-badge-solid k-badge-primary k-badge-rounded k-badge-outside k-bottom-end">Rect</span>
         </div>
         <span></span>
-        <span class="col-6">
-            <!-- Spacing needed for outside badges -->
-        </span>
+        <span class="col-6"> </span>
         <span>Inside RTL</span>
         <div class="k-badge-container k-rtl">
             <span class="k-badge k-badge-md k-badge-solid k-badge-primary k-badge-rounded k-badge-inside k-top-start">Rect</span>
@@ -147,9 +139,7 @@
             <span class="k-badge k-badge-md k-badge-solid k-badge-primary k-badge-rounded k-badge-edge k-bottom-end">Rect</span>
         </div>
         <span></span>
-        <span class="col-6">
-            <!-- Spacing needed for outside badges -->
-        </span>
+        <span class="col-6"> </span>
         <span>Outside RTL</span>
         <div class="k-badge-container k-rtl">
             <span class="k-badge k-badge-md k-badge-solid k-badge-primary k-badge-rounded k-badge-outside k-top-start">Rect</span>

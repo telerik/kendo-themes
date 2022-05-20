@@ -1,37 +1,72 @@
 <!doctype html>
-<html lang="en" class="k-typography k-no-animations">
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width:15px;">
 <head>
     <title>Chip List Size</title>
     <meta charset="utf-8">
     <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
     <link rel="stylesheet" href="/packages/html/assets/styles.css">
     <script src="/packages/html/assets/scripts.js"></script>
-    <script src="/packages/html/dist/index.js"></script>
 </head>
 <body id="app" class="k-body">
     <div id="test-area" class="k-d-grid k-grid-cols-1">
         <span>Small</span>
         <section>
-            <div is="ChipList" size="small">
-                <div is="Chip" text="Chip Text" size="small"></div>
-                <div is="Chip" text="Chip Text" size="small"></div>
-                <div is="Chip" text="Chip Text" size="small"></div>
+            <div class="k-chip-list k-chip-list-sm">
+                <div class="k-chip k-chip-sm k-chip-solid k-chip-solid-base k-rounded-md">
+                    <span class="k-chip-content">
+                        <span class="k-chip-label k-text-ellipsis">Chip Text</span>
+                    </span>
+                </div>
+                <div class="k-chip k-chip-sm k-chip-solid k-chip-solid-base k-rounded-md">
+                    <span class="k-chip-content">
+                        <span class="k-chip-label k-text-ellipsis">Chip Text</span>
+                    </span>
+                </div>
+                <div class="k-chip k-chip-sm k-chip-solid k-chip-solid-base k-rounded-md">
+                    <span class="k-chip-content">
+                        <span class="k-chip-label k-text-ellipsis">Chip Text</span>
+                    </span>
+                </div>
             </div>
         </section>
         <span>Medium</span>
         <section>
-            <div is="ChipList" size="medium">
-                <div is="Chip" text="Chip Text" size="medium"></div>
-                <div is="Chip" text="Chip Text" size="medium"></div>
-                <div is="Chip" text="Chip Text" size="medium"></div>
+            <div class="k-chip-list k-chip-list-md">
+                <div class="k-chip k-chip-md k-chip-solid k-chip-solid-base k-rounded-md">
+                    <span class="k-chip-content">
+                        <span class="k-chip-label k-text-ellipsis">Chip Text</span>
+                    </span>
+                </div>
+                <div class="k-chip k-chip-md k-chip-solid k-chip-solid-base k-rounded-md">
+                    <span class="k-chip-content">
+                        <span class="k-chip-label k-text-ellipsis">Chip Text</span>
+                    </span>
+                </div>
+                <div class="k-chip k-chip-md k-chip-solid k-chip-solid-base k-rounded-md">
+                    <span class="k-chip-content">
+                        <span class="k-chip-label k-text-ellipsis">Chip Text</span>
+                    </span>
+                </div>
             </div>
         </section>
         <span>Large</span>
         <section>
-            <div is="ChipList" size="large">
-                <div is="Chip" text="Chip Text" size="large"></div>
-                <div is="Chip" text="Chip Text" size="large"></div>
-                <div is="Chip" text="Chip Text" size="large"></div>
+            <div class="k-chip-list k-chip-list-lg">
+                <div class="k-chip k-chip-lg k-chip-solid k-chip-solid-base k-rounded-md">
+                    <span class="k-chip-content">
+                        <span class="k-chip-label k-text-ellipsis">Chip Text</span>
+                    </span>
+                </div>
+                <div class="k-chip k-chip-lg k-chip-solid k-chip-solid-base k-rounded-md">
+                    <span class="k-chip-content">
+                        <span class="k-chip-label k-text-ellipsis">Chip Text</span>
+                    </span>
+                </div>
+                <div class="k-chip k-chip-lg k-chip-solid k-chip-solid-base k-rounded-md">
+                    <span class="k-chip-content">
+                        <span class="k-chip-label k-text-ellipsis">Chip Text</span>
+                    </span>
+                </div>
             </div>
         </section>
     </div>

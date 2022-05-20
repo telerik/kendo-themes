@@ -1,87 +1,93 @@
 <!doctype html>
-<html lang="en" class="k-no-animations">
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width:15px;">
 <head>
-    <title>Card custom layout</title>
+    <title>Card Custom</title>
     <meta charset="utf-8">
     <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
     <link rel="stylesheet" href="/packages/html/assets/styles.css">
     <script src="/packages/html/assets/scripts.js"></script>
-    <script src="/packages/html/dist/index.js"></script>
 </head>
 <body id="app" class="k-body">
-    <style>
-        #test-area {
-            grid-template-columns: repeat(3, 1fr);
-        }
-        .bg-img>.k-avatar-image {
-            background-image: url("/packages/html/assets/avatar.jpg");
-        }
-
-    </style>
-    <div id="test-area" class="grid">
+    <div id="test-area" class="k-d-grid k-grid-cols-3">
         <div class="k-card k-card-horizontal">
             <div class="k-card-body">
-                <h5 class="k-card-title">Card Title</h5>
-                <h6 class="k-card-subtitle">Card Subtitle</h6>
+                <div class="k-card-title">Card Title</div>
+                <div class="k-card-subtitle">Card Subtitle</div>
                 <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             </div>
-            <div is="ActionButtons" class="k-card-actions" alignment="stretched" orientation="vertical">
-                <button is="Button" fillMode="flat" themeColor="primary">Action 1</button>
-                <button is="Button" fillMode="flat" themeColor="primary">Action 2</button>
+            <div class="k-actions k-actions-stretched k-actions-vertical k-card-actions">
+                <button class="k-button k-button-md k-button-flat k-button-flat-primary k-rounded-md">
+                    <span class="k-button-text">Action 1</span>
+                </button>
+                <button class="k-button k-button-md k-button-flat k-button-flat-primary k-rounded-md">
+                    <span class="k-button-text">Action 2</span>
+                </button>
             </div>
         </div>
         <div class="k-card k-card-horizontal">
-            <img class="k-card-image" src="/packages/html/assets/avatar.jpg" />
+            <img class="k-card-image" src="/packages/html/assets/avatar.jpg">
             <div class="k-vstack k-flex">
                 <div class="k-card-body">
-                    <h5 class="k-card-title">Card Title</h5>
-                    <h6 class="k-card-subtitle">Card Subtitle</h6>
+                    <div class="k-card-title">Card Title</div>
+                    <div class="k-card-subtitle">Card Subtitle</div>
                     <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </div>
                 <span class="k-separator"></span>
-                <div is="ActionButtons" class="k-card-actions" alignment="stretched">
-                    <button is="Button" fillMode="flat" themeColor="primary">Action 1</button>
-                    <button is="Button" fillMode="flat" themeColor="primary">Action 2</button>
+                <div class="k-actions k-actions-stretched k-actions-horizontal k-card-actions">
+                    <button class="k-button k-button-md k-button-flat k-button-flat-primary k-rounded-md">
+                        <span class="k-button-text">Action 1</span>
+                    </button>
+                    <button class="k-button k-button-md k-button-flat k-button-flat-primary k-rounded-md">
+                        <span class="k-button-text">Action 2</span>
+                    </button>
                 </div>
             </div>
         </div>
         <div class="k-card k-card-horizontal">
             <span class="k-card-image">
-                <img src="/packages/html/assets/avatar.jpg" />
+                <img src="/packages/html/assets/avatar.jpg">
             </span>
             <span class="k-separator k-separator-vertical"></span>
             <div class="k-vstack k-flex">
                 <div class="k-card-body">
-                    <h5 class="k-card-title">Card Title</h5>
-                    <h6 class="k-card-subtitle">Card Subtitle</h6>
+                    <div class="k-card-title">Card Title</div>
+                    <div class="k-card-subtitle">Card Subtitle</div>
                     <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </div>
                 <span class="k-separator"></span>
-                <div is="ActionButtons" class="k-card-actions" alignment="stretched">
-                    <button is="Button" fillMode="flat" themeColor="primary">Action 1</button>
-                    <button is="Button" fillMode="flat" themeColor="primary">Action 2</button>
+                <div class="k-actions k-actions-stretched k-actions-horizontal k-card-actions">
+                    <button class="k-button k-button-md k-button-flat k-button-flat-primary k-rounded-md">
+                        <span class="k-button-text">Action 1</span>
+                    </button>
+                    <button class="k-button k-button-md k-button-flat k-button-flat-primary k-rounded-md">
+                        <span class="k-button-text">Action 2</span>
+                    </button>
                 </div>
             </div>
         </div>
         <div class="k-card k-card-vertical">
             <div class="k-card-body k-text-center">
-                <h5 class="k-card-title">Sofia</h5>
+                <div class="k-card-title">Sofia</div>
                 <div class="k-display-1">☀️</div>
-                <h6 class="k-card-subtitle">Sunny</h6>
-                <div class="k-display-2">2&deg;C</div>
+                <div class="k-card-subtitle">Sunny</div>
+                <div class="k-display-2">2°C</div>
             </div>
             <span class="k-separator"></span>
-            <div is="ActionButtons" class="k-card-actions" alignment="stretched">
-                <button is="Button" fillMode="flat" themeColor="primary">Action 1</button>
-                <button is="Button" fillMode="flat" themeColor="primary">Action 2</button>
+            <div class="k-actions k-actions-stretched k-actions-horizontal k-card-actions">
+                <button class="k-button k-button-md k-button-flat k-button-flat-primary k-rounded-md">
+                    <span class="k-button-text">Action 1</span>
+                </button>
+                <button class="k-button k-button-md k-button-flat k-button-flat-primary k-rounded-md">
+                    <span class="k-button-text">Action 2</span>
+                </button>
             </div>
         </div>
         <div class="k-card k-card-vertical">
             <div class="k-card-body">
-                <h5 class="k-card-title">Passenger</h5>
-                <h5 class="k-card-subtitle">GP, Gosho</h5>
+                <div class="k-card-title">Passenger</div>
+                <div class="k-card-subtitle">GP, Gosho</div>
             </div>
-            <hr class="k-separator" />
+            <hr class="k-separator">
             <div class="k-card-body">
                 <div class="k-hstack">
                     <div class="k-flex k-text-left">Departure</div>
@@ -90,36 +96,36 @@
                 <div class="k-hstack">
                     <div class="k-flex k-text-left">
                         <div class="k-display-4">SOF</div>
-                        <div> 6 Dec 2017
-                            <br /> 10:30
+                        <div>6 Dec 2017
+                            <br>10:30
                         </div>
                     </div>
-                    <div class="k-flex k-display-4 k-text-center"> ✈️ </div>
+                    <div class="k-display-4 k-flex k-text-center">✈️</div>
                     <div class="k-flex k-text-right">
                         <div class="k-display-4">LON</div>
-                        <div> 6 Dec 2017
-                            <br /> 12:30
+                        <div>6 Dec 2017
+                            <br>12:30
                         </div>
                     </div>
                 </div>
-                <hr class="k-hr" />
+                <hr class="k-hr">
                 <div class="k-hstack">
                     <div class="k-flex k-text-left">
                         <div class="k-display-4">LON</div>
-                        <div> 12 Dec 2017
-                            <br /> 18:30
+                        <div>12 Dec 2017
+                            <br>18:30
                         </div>
                     </div>
-                    <div class="k-flex k-display-4 k-text-center"> ✈️ </div>
+                    <div class="k-display-4 k-flex k-text-center">✈️</div>
                     <div class="k-flex k-text-right">
                         <div class="k-display-4">SOF</div>
-                        <div> 12 Dec 2017
-                            <br /> 22:30
+                        <div>12 Dec 2017
+                            <br>22:30
                         </div>
                     </div>
                 </div>
             </div>
-            <hr class="k-separator" />
+            <hr class="k-separator">
             <div class="k-card-body">
                 <div class="k-hstack">
                     <div class="k-flex k-text-left">Total</div>
@@ -129,10 +135,14 @@
         </div>
         <div class="k-card k-card-vertical">
             <div class="k-card-header k-display-flex">
-                <div is="Avatar" type="image" themeColor="primary" rounded="medium" class="bg-img"></div>
+                <div class="k-avatar k-avatar-image k-rounded-md k-avatar-md k-avatar-solid k-avatar-solid-primary bg-img">
+                    <span class="k-avatar-image">
+                        <img src="/packages/html/assets/avatar.jpg">
+                    </span>
+                </div>
                 <div>
-                    <h5 class="k-card-title">Thumbnail and Footer</h5>
-                    <h6 class="k-card-subtitle">Capital of Italy</h6>
+                    <div class="k-card-title">Thumbnail and Footer</div>
+                    <div class="k-card-subtitle">Capital of Italy</div>
                 </div>
             </div>
             <div class="k-card-body">
@@ -140,7 +150,7 @@
                 <span class="k-separator k-separator-vertical"></span>
                 <p>Ancient ruins such as the Forum and the Colosseum evoke the power of the former Roman Empire. </p>
             </div>
-            <div class="k-card-footer"> Footer here </div>
+            <div class="k-card-footer">Footer here</div>
         </div>
     </div>
 </body>

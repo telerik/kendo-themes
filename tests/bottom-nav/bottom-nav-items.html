@@ -1,39 +1,37 @@
 <!doctype html>
-<html lang="en" class="k-no-animations">
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width:15px;">
 <head>
-    <title>Bottom Navigation Item Elements</title>
+    <title>BottomNav Items</title>
     <meta charset="utf-8">
     <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
     <link rel="stylesheet" href="/packages/html/assets/styles.css">
     <script src="/packages/html/assets/scripts.js"></script>
-    <script src="/packages/html/dist/index.js"></script>
 </head>
 <body id="app" class="k-body">
     <style>
         #test-area {
-            grid-template-columns: repeat(1, 1fr);
             background-color: #F3F5F7;
         }
 
     </style>
-    <div id="test-area" class="grid">
+    <div id="test-area" class="k-d-grid k-grid-cols-1">
         <section>
             <h4>Bottom Navigation with SPAN</h4>
             <nav class="k-bottom-nav k-bottom-nav-primary k-bottom-nav-flat k-bottom-nav-border k-bottom-nav-item-flow-vertical">
                 <span class="k-bottom-nav-item">
-                    <i is="Icon" class="k-bottom-nav-item-icon" name="email"></i>
+                    <span class="k-bottom-nav-item-icon k-icon k-i-email"></span>
                     <span class="k-bottom-nav-item-text">Normal</span>
                 </span>
-                <span class="k-bottom-nav-item k-state-focus" href="#">
-                    <i is="Icon" class="k-bottom-nav-item-icon" name="email"></i>
+                <span class="k-bottom-nav-item k-state-focus">
+                    <span class="k-bottom-nav-item-icon k-icon k-i-email"></span>
                     <span class="k-bottom-nav-item-text">Focused</span>
                 </span>
                 <span class="k-bottom-nav-item k-state-selected">
-                    <i is="Icon" class="k-bottom-nav-item-icon" name="email"></i>
+                    <span class="k-bottom-nav-item-icon k-icon k-i-email"></span>
                     <span class="k-bottom-nav-item-text">Selected</span>
                 </span>
                 <span class="k-bottom-nav-item k-state-disabled">
-                    <i is="Icon" class="k-bottom-nav-item-icon" name="email"></i>
+                    <span class="k-bottom-nav-item-icon k-icon k-i-email"></span>
                     <span class="k-bottom-nav-item-text">Disabled</span>
                 </span>
             </nav>
@@ -42,19 +40,19 @@
             <h4>Bottom Navigation with BUTTON</h4>
             <nav class="k-bottom-nav k-bottom-nav-primary k-bottom-nav-flat k-bottom-nav-border k-bottom-nav-item-flow-vertical">
                 <button class="k-bottom-nav-item">
-                    <i is="Icon" class="k-bottom-nav-item-icon" name="email"></i>
+                    <span class="k-bottom-nav-item-icon k-icon k-i-email"></span>
                     <span class="k-bottom-nav-item-text">Normal</span>
                 </button>
-                <button class="k-bottom-nav-item k-state-focus" href="#">
-                    <i is="Icon" class="k-bottom-nav-item-icon" name="email"></i>
+                <button class="k-bottom-nav-item k-state-focus">
+                    <span class="k-bottom-nav-item-icon k-icon k-i-email"></span>
                     <span class="k-bottom-nav-item-text">Focused</span>
                 </button>
                 <button class="k-bottom-nav-item k-state-selected">
-                    <i is="Icon" class="k-bottom-nav-item-icon" name="email"></i>
+                    <span class="k-bottom-nav-item-icon k-icon k-i-email"></span>
                     <span class="k-bottom-nav-item-text">Selected</span>
                 </button>
                 <button class="k-bottom-nav-item k-state-disabled">
-                    <i is="Icon" class="k-bottom-nav-item-icon" name="email"></i>
+                    <span class="k-bottom-nav-item-icon k-icon k-i-email"></span>
                     <span class="k-bottom-nav-item-text">Disabled</span>
                 </button>
             </nav>
@@ -63,19 +61,19 @@
             <h4>Bottom Navigation with A</h4>
             <nav class="k-bottom-nav k-bottom-nav-primary k-bottom-nav-flat k-bottom-nav-border k-bottom-nav-item-flow-vertical">
                 <a class="k-bottom-nav-item">
-                    <i is="Icon" class="k-bottom-nav-item-icon" name="email"></i>
+                    <span class="k-bottom-nav-item-icon k-icon k-i-email"></span>
                     <span class="k-bottom-nav-item-text">Normal</span>
                 </a>
                 <a class="k-bottom-nav-item k-state-focus" href="#">
-                    <i is="Icon" class="k-bottom-nav-item-icon" name="email"></i>
+                    <span class="k-bottom-nav-item-icon k-icon k-i-email"></span>
                     <span class="k-bottom-nav-item-text">Focused</span>
                 </a>
                 <a class="k-bottom-nav-item k-state-selected">
-                    <i is="Icon" class="k-bottom-nav-item-icon" name="email"></i>
+                    <span class="k-bottom-nav-item-icon k-icon k-i-email"></span>
                     <span class="k-bottom-nav-item-text">Selected</span>
                 </a>
                 <a class="k-bottom-nav-item k-state-disabled">
-                    <i is="Icon" class="k-bottom-nav-item-icon" name="email"></i>
+                    <span class="k-bottom-nav-item-icon k-icon k-i-email"></span>
                     <span class="k-bottom-nav-item-text">Disabled</span>
                 </a>
             </nav>

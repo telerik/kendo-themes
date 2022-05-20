@@ -1,12 +1,11 @@
 <!doctype html>
-<html lang="en" class="k-typography k-no-animations">
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width:15px;">
 <head>
     <title>Chip Solid</title>
     <meta charset="utf-8">
     <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
     <link rel="stylesheet" href="/packages/html/assets/styles.css">
     <script src="/packages/html/assets/scripts.js"></script>
-    <script src="/packages/html/dist/index.js"></script>
 </head>
 <body id="app" class="k-body">
     <div id="test-area" class="k-d-grid k-grid-cols-6">
@@ -20,83 +19,308 @@
         <span>Success</span>
         <span>Normal</span>
         <span>
-            <div is="Chip" text="Base" actions="remove"></div>
+            <div class="k-chip k-chip-md k-chip-solid k-chip-solid-base k-rounded-md">
+                <span class="k-chip-content">
+                    <span class="k-chip-label k-text-ellipsis">Base</span>
+                </span>
+                <span class="k-chip-actions">
+                    <span class="k-chip-action k-chip-remove-action">
+                        <span class="k-icon k-i-x-circle"></span>
+                    </span>
+                </span>
+            </div>
         </span>
         <span>
-            <div is="Chip" text="Error" actions="remove" themeColor="error"></div>
+            <div class="k-chip k-chip-md k-chip-solid k-chip-solid-error k-rounded-md">
+                <span class="k-chip-content">
+                    <span class="k-chip-label k-text-ellipsis">Error</span>
+                </span>
+                <span class="k-chip-actions">
+                    <span class="k-chip-action k-chip-remove-action">
+                        <span class="k-icon k-i-x-circle"></span>
+                    </span>
+                </span>
+            </div>
         </span>
         <span>
-            <div is="Chip" text="Warning" actions="remove" themeColor="warning"></div>
+            <div class="k-chip k-chip-md k-chip-solid k-chip-solid-warning k-rounded-md">
+                <span class="k-chip-content">
+                    <span class="k-chip-label k-text-ellipsis">Warning</span>
+                </span>
+                <span class="k-chip-actions">
+                    <span class="k-chip-action k-chip-remove-action">
+                        <span class="k-icon k-i-x-circle"></span>
+                    </span>
+                </span>
+            </div>
         </span>
         <span>
-            <div is="Chip" text="Info" actions="remove" themeColor="info"></div>
+            <div class="k-chip k-chip-md k-chip-solid k-chip-solid-info k-rounded-md">
+                <span class="k-chip-content">
+                    <span class="k-chip-label k-text-ellipsis">Info</span>
+                </span>
+                <span class="k-chip-actions">
+                    <span class="k-chip-action k-chip-remove-action">
+                        <span class="k-icon k-i-x-circle"></span>
+                    </span>
+                </span>
+            </div>
         </span>
         <span>
-            <div is="Chip" text="Success" actions="remove" themeColor="success"></div>
+            <div class="k-chip k-chip-md k-chip-solid k-chip-solid-success k-rounded-md">
+                <span class="k-chip-content">
+                    <span class="k-chip-label k-text-ellipsis">Success</span>
+                </span>
+                <span class="k-chip-actions">
+                    <span class="k-chip-action k-chip-remove-action">
+                        <span class="k-icon k-i-x-circle"></span>
+                    </span>
+                </span>
+            </div>
         </span>
         <span>Hover</span>
         <span>
-            <div is="Chip" text="Base" actions="remove" hover></div>
+            <div class="k-chip k-chip-md k-chip-solid k-chip-solid-base k-rounded-md k-hover">
+                <span class="k-chip-content">
+                    <span class="k-chip-label k-text-ellipsis">Base</span>
+                </span>
+                <span class="k-chip-actions">
+                    <span class="k-chip-action k-chip-remove-action">
+                        <span class="k-icon k-i-x-circle"></span>
+                    </span>
+                </span>
+            </div>
         </span>
         <span>
-            <div is="Chip" text="Error" actions="remove" themeColor="error" hover></div>
+            <div class="k-chip k-chip-md k-chip-solid k-chip-solid-error k-rounded-md k-hover">
+                <span class="k-chip-content">
+                    <span class="k-chip-label k-text-ellipsis">Error</span>
+                </span>
+                <span class="k-chip-actions">
+                    <span class="k-chip-action k-chip-remove-action">
+                        <span class="k-icon k-i-x-circle"></span>
+                    </span>
+                </span>
+            </div>
         </span>
         <span>
-            <div is="Chip" text="Warning" actions="remove" themeColor="warning" hover></div>
+            <div class="k-chip k-chip-md k-chip-solid k-chip-solid-warning k-rounded-md k-hover">
+                <span class="k-chip-content">
+                    <span class="k-chip-label k-text-ellipsis">Warning</span>
+                </span>
+                <span class="k-chip-actions">
+                    <span class="k-chip-action k-chip-remove-action">
+                        <span class="k-icon k-i-x-circle"></span>
+                    </span>
+                </span>
+            </div>
         </span>
         <span>
-            <div is="Chip" text="Info" actions="remove" themeColor="info" hover></div>
+            <div class="k-chip k-chip-md k-chip-solid k-chip-solid-info k-rounded-md k-hover">
+                <span class="k-chip-content">
+                    <span class="k-chip-label k-text-ellipsis">Info</span>
+                </span>
+                <span class="k-chip-actions">
+                    <span class="k-chip-action k-chip-remove-action">
+                        <span class="k-icon k-i-x-circle"></span>
+                    </span>
+                </span>
+            </div>
         </span>
         <span>
-            <div is="Chip" text="Success" actions="remove" themeColor="success" hover></div>
+            <div class="k-chip k-chip-md k-chip-solid k-chip-solid-success k-rounded-md k-hover">
+                <span class="k-chip-content">
+                    <span class="k-chip-label k-text-ellipsis">Success</span>
+                </span>
+                <span class="k-chip-actions">
+                    <span class="k-chip-action k-chip-remove-action">
+                        <span class="k-icon k-i-x-circle"></span>
+                    </span>
+                </span>
+            </div>
         </span>
         <span>Focus</span>
         <span>
-            <div is="Chip" text="Base" actions="remove" focus></div>
+            <div class="k-chip k-chip-md k-chip-solid k-chip-solid-base k-rounded-md k-focus">
+                <span class="k-chip-content">
+                    <span class="k-chip-label k-text-ellipsis">Base</span>
+                </span>
+                <span class="k-chip-actions">
+                    <span class="k-chip-action k-chip-remove-action">
+                        <span class="k-icon k-i-x-circle"></span>
+                    </span>
+                </span>
+            </div>
         </span>
         <span>
-            <div is="Chip" text="Error" actions="remove" themeColor="error" focus></div>
+            <div class="k-chip k-chip-md k-chip-solid k-chip-solid-error k-rounded-md k-focus">
+                <span class="k-chip-content">
+                    <span class="k-chip-label k-text-ellipsis">Error</span>
+                </span>
+                <span class="k-chip-actions">
+                    <span class="k-chip-action k-chip-remove-action">
+                        <span class="k-icon k-i-x-circle"></span>
+                    </span>
+                </span>
+            </div>
         </span>
         <span>
-            <div is="Chip" text="Warning" actions="remove" themeColor="warning" focus></div>
+            <div class="k-chip k-chip-md k-chip-solid k-chip-solid-warning k-rounded-md k-focus">
+                <span class="k-chip-content">
+                    <span class="k-chip-label k-text-ellipsis">Warning</span>
+                </span>
+                <span class="k-chip-actions">
+                    <span class="k-chip-action k-chip-remove-action">
+                        <span class="k-icon k-i-x-circle"></span>
+                    </span>
+                </span>
+            </div>
         </span>
         <span>
-            <div is="Chip" text="Info" actions="remove" themeColor="info" focus></div>
+            <div class="k-chip k-chip-md k-chip-solid k-chip-solid-info k-rounded-md k-focus">
+                <span class="k-chip-content">
+                    <span class="k-chip-label k-text-ellipsis">Info</span>
+                </span>
+                <span class="k-chip-actions">
+                    <span class="k-chip-action k-chip-remove-action">
+                        <span class="k-icon k-i-x-circle"></span>
+                    </span>
+                </span>
+            </div>
         </span>
         <span>
-            <div is="Chip" text="Success" actions="remove" themeColor="success" focus></div>
+            <div class="k-chip k-chip-md k-chip-solid k-chip-solid-success k-rounded-md k-focus">
+                <span class="k-chip-content">
+                    <span class="k-chip-label k-text-ellipsis">Success</span>
+                </span>
+                <span class="k-chip-actions">
+                    <span class="k-chip-action k-chip-remove-action">
+                        <span class="k-icon k-i-x-circle"></span>
+                    </span>
+                </span>
+            </div>
         </span>
         <span>Selected</span>
         <span>
-            <div is="Chip" text="Base" actions="remove" selected></div>
+            <div class="k-chip k-chip-md k-chip-solid k-chip-solid-base k-rounded-md k-selected">
+                <span class="k-chip-content">
+                    <span class="k-chip-label k-text-ellipsis">Base</span>
+                </span>
+                <span class="k-chip-actions">
+                    <span class="k-chip-action k-chip-remove-action">
+                        <span class="k-icon k-i-x-circle"></span>
+                    </span>
+                </span>
+            </div>
         </span>
         <span>
-            <div is="Chip" text="Error" actions="remove" themeColor="error" selected></div>
+            <div class="k-chip k-chip-md k-chip-solid k-chip-solid-error k-rounded-md k-selected">
+                <span class="k-chip-content">
+                    <span class="k-chip-label k-text-ellipsis">Error</span>
+                </span>
+                <span class="k-chip-actions">
+                    <span class="k-chip-action k-chip-remove-action">
+                        <span class="k-icon k-i-x-circle"></span>
+                    </span>
+                </span>
+            </div>
         </span>
         <span>
-            <div is="Chip" text="Warning" actions="remove" themeColor="warning" selected></div>
+            <div class="k-chip k-chip-md k-chip-solid k-chip-solid-warning k-rounded-md k-selected">
+                <span class="k-chip-content">
+                    <span class="k-chip-label k-text-ellipsis">Warning</span>
+                </span>
+                <span class="k-chip-actions">
+                    <span class="k-chip-action k-chip-remove-action">
+                        <span class="k-icon k-i-x-circle"></span>
+                    </span>
+                </span>
+            </div>
         </span>
         <span>
-            <div is="Chip" text="Info" actions="remove" themeColor="info" selected></div>
+            <div class="k-chip k-chip-md k-chip-solid k-chip-solid-info k-rounded-md k-selected">
+                <span class="k-chip-content">
+                    <span class="k-chip-label k-text-ellipsis">Info</span>
+                </span>
+                <span class="k-chip-actions">
+                    <span class="k-chip-action k-chip-remove-action">
+                        <span class="k-icon k-i-x-circle"></span>
+                    </span>
+                </span>
+            </div>
         </span>
         <span>
-            <div is="Chip" text="Success" actions="remove" themeColor="success" selected></div>
+            <div class="k-chip k-chip-md k-chip-solid k-chip-solid-success k-rounded-md k-selected">
+                <span class="k-chip-content">
+                    <span class="k-chip-label k-text-ellipsis">Success</span>
+                </span>
+                <span class="k-chip-actions">
+                    <span class="k-chip-action k-chip-remove-action">
+                        <span class="k-icon k-i-x-circle"></span>
+                    </span>
+                </span>
+            </div>
         </span>
         <span>Disabled</span>
         <span>
-            <div is="Chip" text="Base" actions="remove" disabled></div>
+            <div class="k-chip k-chip-md k-chip-solid k-chip-solid-base k-rounded-md k-disabled">
+                <span class="k-chip-content">
+                    <span class="k-chip-label k-text-ellipsis">Base</span>
+                </span>
+                <span class="k-chip-actions">
+                    <span class="k-chip-action k-chip-remove-action">
+                        <span class="k-icon k-i-x-circle"></span>
+                    </span>
+                </span>
+            </div>
         </span>
         <span>
-            <div is="Chip" text="Error" actions="remove" themeColor="error" disabled></div>
+            <div class="k-chip k-chip-md k-chip-solid k-chip-solid-error k-rounded-md k-disabled">
+                <span class="k-chip-content">
+                    <span class="k-chip-label k-text-ellipsis">Error</span>
+                </span>
+                <span class="k-chip-actions">
+                    <span class="k-chip-action k-chip-remove-action">
+                        <span class="k-icon k-i-x-circle"></span>
+                    </span>
+                </span>
+            </div>
         </span>
         <span>
-            <div is="Chip" text="Warning" actions="remove" themeColor="warning" disabled></div>
+            <div class="k-chip k-chip-md k-chip-solid k-chip-solid-warning k-rounded-md k-disabled">
+                <span class="k-chip-content">
+                    <span class="k-chip-label k-text-ellipsis">Warning</span>
+                </span>
+                <span class="k-chip-actions">
+                    <span class="k-chip-action k-chip-remove-action">
+                        <span class="k-icon k-i-x-circle"></span>
+                    </span>
+                </span>
+            </div>
         </span>
         <span>
-            <div is="Chip" text="Info" actions="remove" themeColor="info" disabled></div>
+            <div class="k-chip k-chip-md k-chip-solid k-chip-solid-info k-rounded-md k-disabled">
+                <span class="k-chip-content">
+                    <span class="k-chip-label k-text-ellipsis">Info</span>
+                </span>
+                <span class="k-chip-actions">
+                    <span class="k-chip-action k-chip-remove-action">
+                        <span class="k-icon k-i-x-circle"></span>
+                    </span>
+                </span>
+            </div>
         </span>
         <span>
-            <div is="Chip" text="Success" actions="remove" themeColor="success" disabled></div>
+            <div class="k-chip k-chip-md k-chip-solid k-chip-solid-success k-rounded-md k-disabled">
+                <span class="k-chip-content">
+                    <span class="k-chip-label k-text-ellipsis">Success</span>
+                </span>
+                <span class="k-chip-actions">
+                    <span class="k-chip-action k-chip-remove-action">
+                        <span class="k-icon k-i-x-circle"></span>
+                    </span>
+                </span>
+            </div>
         </span>
         <span></span>
         <span>Text</span>
@@ -106,19 +330,51 @@
         <span>Avatar (rtl)</span>
         <span></span>
         <span>
-            <div is="Chip" text="Text"></div>
+            <div class="k-chip k-chip-md k-chip-solid k-chip-solid-base k-rounded-md">
+                <span class="k-chip-content">
+                    <span class="k-chip-label k-text-ellipsis">Text</span>
+                </span>
+            </div>
         </span>
         <span>
-            <div is="Chip" text="Text" icon="map-marker-target"></div>
+            <div class="k-chip k-chip-md k-chip-solid k-chip-solid-base k-rounded-md">
+                <span class="k-chip-icon k-icon k-i-map-marker-target"></span>
+                <span class="k-chip-content">
+                    <span class="k-chip-label k-text-ellipsis">Text</span>
+                </span>
+            </div>
         </span>
         <span>
-            <div is="Chip" text="Text" showAvatar="true"></div>
+            <div class="k-chip k-chip-md k-chip-solid k-chip-solid-base k-rounded-md">
+                <div class="k-avatar k-avatar-image k-rounded-full k-avatar-md k-avatar-solid k-avatar-solid-primary k-chip-avatar">
+                    <span class="k-avatar-image">
+                        <img src="/packages/html/assets/avatar.jpg">
+                    </span>
+                </div>
+                <span class="k-chip-content">
+                    <span class="k-chip-label k-text-ellipsis">Text</span>
+                </span>
+            </div>
         </span>
         <span dir="rtl">
-            <div is="Chip" text="Text" icon="map-marker-target"></div>
+            <div class="k-chip k-chip-md k-chip-solid k-chip-solid-base k-rounded-md">
+                <span class="k-chip-icon k-icon k-i-map-marker-target"></span>
+                <span class="k-chip-content">
+                    <span class="k-chip-label k-text-ellipsis">Text</span>
+                </span>
+            </div>
         </span>
         <span dir="rtl">
-            <div is="Chip" text="Text" showAvatar="true"></div>
+            <div class="k-chip k-chip-md k-chip-solid k-chip-solid-base k-rounded-md">
+                <div class="k-avatar k-avatar-image k-rounded-full k-avatar-md k-avatar-solid k-avatar-solid-primary k-chip-avatar">
+                    <span class="k-avatar-image">
+                        <img src="/packages/html/assets/avatar.jpg">
+                    </span>
+                </div>
+                <span class="k-chip-content">
+                    <span class="k-chip-label k-text-ellipsis">Text</span>
+                </span>
+            </div>
         </span>
     </div>
 </body>

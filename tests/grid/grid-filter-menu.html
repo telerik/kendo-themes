@@ -1,18 +1,14 @@
 <!doctype html>
-<html lang="en" class="k-no-animations">
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width:15px;">
 <head>
     <title>Grid Filter Menu</title>
     <meta charset="utf-8">
     <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
     <link rel="stylesheet" href="/packages/html/assets/styles.css">
     <script src="/packages/html/assets/scripts.js"></script>
-    <script src="/packages/html/dist/index.js"></script>
 </head>
 <body id="app" class="k-body">
     <style>
-        #test-area {
-            grid-template-columns: repeat(2, 1fr);
-        }
         .k-animation-container,
         .k-popup {
             position: relative;
@@ -23,139 +19,69 @@
         }
 
     </style>
-    <div id="test-area" class="grid">
-        <!-- jQuery rendering -->
+    <div id="test-area" class="k-d-grid k-grid-cols-2">
         <section>
             <div class="k-animation-container" style="overflow: visible;">
                 <form class="k-filter-menu k-popup k-group k-reset k-state-border-up">
                     <div class="k-filter-menu-container">
                         <div class="k-filter-help-text">Show items with value that:</div>
-                        <input is="DropdownList" value="Is equal to" />
-                        <input is="NumericTextbox" />
-                        <input is="DropdownList" value="And" class="k-filter-and" />
-                        <input is="DropdownList" value="Is equal to" />
-                        <input is="NumericTextbox" />
-                        <div is="ActionButtons" alignment="stretched">
-                            <button is="Button">Clear</button>
-                            <button is="Button" themeColor="primary">Filter</button>
+                        <span class="k-dropdown k-picker k-picker-md k-picker-solid k-rounded-md">
+                            <span class="k-input-inner">
+                                <span class="k-input-value-text">Is equal to</span>
+                            </span>
+                            <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                            </button>
+                        </span>
+                        <span class="k-numerictextbox k-input k-input-md k-input-solid k-rounded-md">
+                            <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="">
+                            <span class="k-input-spinner k-spin-button">
+                                <button class="k-spinner-increase k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                    <span class="k-button-icon k-icon k-i-arrow-n"></span>
+                                </button>
+                                <button class="k-spinner-decrease k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                    <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                                </button>
+                            </span>
+                        </span>
+                        <span class="k-filter-and k-dropdown k-picker k-picker-md k-picker-solid k-rounded-md">
+                            <span class="k-input-inner">
+                                <span class="k-input-value-text">And</span>
+                            </span>
+                            <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                            </button>
+                        </span>
+                        <span class="k-dropdown k-picker k-picker-md k-picker-solid k-rounded-md">
+                            <span class="k-input-inner">
+                                <span class="k-input-value-text">Is equal to</span>
+                            </span>
+                            <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                            </button>
+                        </span>
+                        <span class="k-numerictextbox k-input k-input-md k-input-solid k-rounded-md">
+                            <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="">
+                            <span class="k-input-spinner k-spin-button">
+                                <button class="k-spinner-increase k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                    <span class="k-button-icon k-icon k-i-arrow-n"></span>
+                                </button>
+                                <button class="k-spinner-decrease k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                    <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                                </button>
+                            </span>
+                        </span>
+                        <div class="k-actions k-actions-stretched k-actions-horizontal">
+                            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                                <span class="k-button-text">Clear</span>
+                            </button>
+                            <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md">
+                                <span class="k-button-text">Filter</span>
+                            </button>
                         </div>
                     </div>
                 </form>
             </div>
-        </section>
-        <!-- Angular rendering -->
-        <section>
-            <kendo-popup class="k-animation-container" style="z-index: 2;">
-                <div class="k-popup k-grid-filter-popup">
-                    <kendo-grid-filter-menu-container>
-                        <form class="k-filter-menu k-group k-reset k-state-border-up">
-                            <div class="k-filter-menu-container">
-                                <kendo-grid-date-filter-menu>
-                                    <kendo-grid-date-filter-menu-input>
-                                        <kendo-grid-filter-menu-input-wrapper>
-                                            <input is="DropdownList" value="Is after or equal to" />
-                                            <input is="DatePicker" />
-                                        </kendo-grid-filter-menu-input-wrapper>
-                                    </kendo-grid-date-filter-menu-input>
-                                    <input is="DropdownList" value="And" class="k-filter-and" />
-                                    <kendo-grid-date-filter-menu-input>
-                                        <kendo-grid-filter-menu-input-wrapper>
-                                            <input is="DropdownList" value="Is after or equal to" />
-                                            <input is="DatePicker" />
-                                        </kendo-grid-filter-menu-input-wrapper>
-                                    </kendo-grid-date-filter-menu-input>
-                                </kendo-grid-date-filter-menu>
-                                <div is="ActionButtons" alignment="stretched">
-                                    <button is="Button">Clear</button>
-                                    <button is="Button" themeColor="primary">Filter</button>
-                                </div>
-                            </div>
-                        </form>
-                    </kendo-grid-filter-menu-container>
-                </div>
-            </kendo-popup>
-        </section>
-        <!-- Angular rendering - Numeric Grid Filter Menu  -->
-        <section>
-            <kendo-popup class="k-animation-container k-animation-container-shown">
-                <div class="k-popup k-grid-columnmenu-popup">
-                    <kendo-grid-columnmenu-container class="ng-star-inserted">
-                        <kendo-grid-columnmenu-sort class="k-columnmenu-item-wrapper ng-star-inserted">
-                            <kendo-grid-columnmenu-item>
-                                <div class="k-columnmenu-item">
-                                    <span class="k-icon k-i-sort-asc-sm"></span> Sort Ascending
-                                </div>
-                            </kendo-grid-columnmenu-item>
-                            <kendo-grid-columnmenu-item>
-                                <div role="button" class="k-columnmenu-item">
-                                    <span class="k-icon k-i-sort-desc-sm"></span> Sort Descending
-                                </div>
-                            </kendo-grid-columnmenu-item>
-                        </kendo-grid-columnmenu-sort>
-                        <kendo-grid-columnmenu-chooser class="k-columnmenu-item-wrapper">
-                            <kendo-grid-columnmenu-item>
-                                <div class="k-columnmenu-item">
-                                    <span class="k-icon k-i-columns"></span> Columns
-                                </div>
-                            </kendo-grid-columnmenu-item>
-                        </kendo-grid-columnmenu-chooser>
-                        <kendo-grid-columnmenu-filter class="k-columnmenu-item-wrapper">
-                            <kendo-grid-columnmenu-item>
-                                <div class="k-columnmenu-item">
-                                    <span class="k-icon k-i-filter"></span> Filter
-                                </div>
-                                <div class="k-columnmenu-item-content">
-                                    <kendo-grid-filter-menu-container>
-                                        <form class="k-filter-menu k-group k-reset k-state-border-up ng-untouched ng-pristine ng-valid">
-                                            <div class="k-filter-menu-container">
-                                                <kendo-grid-numeric-filter-menu>
-                                                    <kendo-grid-numeric-filter-menu-input>
-                                                        <kendo-grid-filter-menu-input-wrapper>
-                                                            <input is="DropdownList" value="Is equal to" />
-                                                            <input is="NumericTextbox" />
-                                                        </kendo-grid-filter-menu-input-wrapper>
-                                                    </kendo-grid-numeric-filter-menu-input>
-                                                    <input is="DropdownList" class="k-filter-and" Value="And" />
-                                                </kendo-grid-numeric-filter-menu>
-                                                <div class="k-columnmenu-actions">
-                                                    <button is="Button">Clear</button>
-                                                    <button is="Button" ThemeColor="primary">Filter</button>
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </kendo-grid-filter-menu-container>
-                                </div>
-                            </kendo-grid-columnmenu-item>
-                        </kendo-grid-columnmenu-filter>
-                    </kendo-grid-columnmenu-container>
-                </div>
-            </kendo-popup>
-        </section>
-        <!-- Angular rendering - Grid Filter Menu template with Switch component -->
-        <section>
-            <kendo-popup class="k-animation-container">
-                <div class="k-popup k-grid-filter-popup">
-                    <kendo-grid-filter-menu-container>
-                        <form class="k-filter-menu k-group k-reset k-state-border-up">
-                            <div class="k-filter-menu-container">
-                                <kendo-grid-string-filter-menu>
-                                    <kendo-grid-string-filter-menu-input>
-                                        <kendo-grid-filter-menu-input-wrapper>
-                                            <input is="DropdownList" />
-                                            <input is="Textbox" />
-                                        </kendo-grid-filter-menu-input-wrapper>
-                                    </kendo-grid-string-filter-menu-input>
-                                </kendo-grid-string-filter-menu>
-                                <input is="Switch" />
-                                <div is="ActionButtons" alignment="stretched">
-                                    <button is="Button">Clear</button>
-                                    <button is="Button" themeColor="primary">Filter</button>
-                                </div>
-                            </div>
-                        </form>
-                    </kendo-grid-filter-menu-container>
-                </div>
-            </kendo-popup>
         </section>
     </div>
 </body>

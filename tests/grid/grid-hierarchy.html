@@ -1,34 +1,26 @@
 <!doctype html>
-<html lang="en" class="k-no-animations">
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width:15px;">
 <head>
     <title>Grid Hierarchy</title>
     <meta charset="utf-8">
     <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
     <link rel="stylesheet" href="/packages/html/assets/styles.css">
     <script src="/packages/html/assets/scripts.js"></script>
-    <script src="/packages/html/dist/index.js"></script>
 </head>
 <body id="app" class="k-body">
-    <style>
-        #test-area {
-            grid-template-columns: 1fr;
-        }
-
-    </style>
-    <div id="test-area" class="grid">
+    <div id="test-area" class="k-d-grid k-grid-cols-1">
         <section>
             <div class="k-widget k-grid k-grid-no-scrollbar" style="width: 600px; height: 400px;">
                 <div class="k-grid-header">
                     <div class="k-grid-header-wrap">
                         <table>
                             <colgroup>
-                                <col class="k-hierarchy-col" />
-                                <col />
+                                <col class="k-hierarchy-col">
+                                <col>
                             </colgroup>
                             <thead>
                                 <tr>
-                                    <th class="k-header k-hierarchy-cell">
-                                    </th>
+                                    <th class="k-header k-hierarchy-cell"></th>
                                     <th class="k-header">
                                         <a class="k-link">Title<span></span>
                                         </a>
@@ -41,33 +33,32 @@
                 <div class="k-grid-content">
                     <table class="k-grid-table">
                         <colgroup>
-                            <col class="k-hierarchy-col" />
-                            <col />
+                            <col class="k-hierarchy-col">
+                            <col>
                         </colgroup>
                         <tbody>
                             <tr class="k-master-row">
                                 <td class="k-hierarchy-cell">
-                                    <i is="Icon" name="expand"></i>
+                                    <span class="k-icon k-i-expand"></span>
                                 </td>
                                 <td>1</td>
                             </tr>
                             <tr class="k-alt k-master-row">
                                 <td class="k-hierarchy-cell">
-                                    <i is="Icon" name="collapse"></i>
+                                    <span class="k-icon k-i-collapse"></span>
                                 </td>
                                 <td>2</td>
                             </tr>
                             <tr class="k-detail-row">
                                 <td class="k-hierarchy-cell"></td>
                                 <td class="k-detail-cell" colspan="1">
-                                    <!-- hierarchy child content -->
                                     <div class="k-widget k-grid k-grid-no-scrollbar" style="height: 200px;">
                                         <div class="k-grid-header">
                                             <div class="k-grid-header-wrap">
                                                 <table>
                                                     <colgroup>
-                                                        <col />
-                                                        <col />
+                                                        <col>
+                                                        <col>
                                                     </colgroup>
                                                     <thead>
                                                         <tr>
@@ -87,8 +78,8 @@
                                         <div class="k-grid-content">
                                             <table class="k-grid-table">
                                                 <colgroup>
-                                                    <col />
-                                                    <col />
+                                                    <col>
+                                                    <col>
                                                 </colgroup>
                                                 <tbody>
                                                     <tr class="k-master-row">

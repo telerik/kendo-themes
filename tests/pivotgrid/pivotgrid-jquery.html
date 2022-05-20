@@ -1,12 +1,11 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width:15px;">
 <head>
     <title>PivotGrid jQuery</title>
     <meta charset="utf-8">
     <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
     <link rel="stylesheet" href="/packages/html/assets/styles.css">
     <script src="/packages/html/assets/scripts.js"></script>
-    <script src="/packages/html/dist/index.js"></script>
 </head>
 <body id="app" class="k-body">
     <div id="test-area">
@@ -17,10 +16,34 @@
                         <td>
                             <div class="k-pivot-rowheaders" style="width: 163px;">
                                 <div class="k-pivot-toolbar k-toolbar k-settings-measures k-pivot-setting" style="height: 72px;">
-                                    <span is="Chip" text="[Measures].[Reseller Freight Cost]" actions="more, remove"></span>
+                                    <div class="k-chip k-chip-md k-chip-solid k-chip-solid-base k-rounded-md">
+                                        <span class="k-chip-content">
+                                            <span class="k-chip-label k-text-ellipsis">[Measures].[Reseller Freight Cost]</span>
+                                        </span>
+                                        <span class="k-chip-actions">
+                                            <span class="k-chip-action k-chip-more-action">
+                                                <span class="k-icon k-i-more-vertical"></span>
+                                            </span>
+                                            <span class="k-chip-action k-chip-remove-action">
+                                                <span class="k-icon k-i-x-circle"></span>
+                                            </span>
+                                        </span>
+                                    </div>
                                 </div>
                                 <div class="k-pivot-toolbar k-toolbar k-settings-rows k-pivot-setting" style="height: 94px;">
-                                    <span is="Chip" text="[Geography].[City]" actions="more, remove"></span>
+                                    <div class="k-chip k-chip-md k-chip-solid k-chip-solid-base k-rounded-md">
+                                        <span class="k-chip-content">
+                                            <span class="k-chip-label k-text-ellipsis">[Geography].[City]</span>
+                                        </span>
+                                        <span class="k-chip-actions">
+                                            <span class="k-chip-action k-chip-more-action">
+                                                <span class="k-icon k-i-more-vertical"></span>
+                                            </span>
+                                            <span class="k-chip-action k-chip-remove-action">
+                                                <span class="k-icon k-i-x-circle"></span>
+                                            </span>
+                                        </span>
+                                    </div>
                                 </div>
                                 <div class="k-grid k-widget k-alt" style="height: 363px;">
                                     <table>
@@ -30,7 +53,7 @@
                                         <tbody>
                                             <tr>
                                                 <td class="k-first">
-                                                    <i is="Icon" name="expand"></i>
+                                                    <span class="k-icon k-i-expand"></span>
                                                     <span>All Geographies</span>
                                                 </td>
                                             </tr>
@@ -42,8 +65,32 @@
                         <td>
                             <div class="k-pivot-table">
                                 <div class="k-pivot-toolbar k-toolbar k-settings-columns k-pivot-setting" style="height: 72px;">
-                                    <span is="Chip" text="[Date].[Calendar]" actions="more, remove"></span>
-                                    <span is="Chip" text="[Product].[Category]" actions="more, remove"></span>
+                                    <div class="k-chip k-chip-md k-chip-solid k-chip-solid-base k-rounded-md">
+                                        <span class="k-chip-content">
+                                            <span class="k-chip-label k-text-ellipsis">[Date].[Calendar]</span>
+                                        </span>
+                                        <span class="k-chip-actions">
+                                            <span class="k-chip-action k-chip-more-action">
+                                                <span class="k-icon k-i-more-vertical"></span>
+                                            </span>
+                                            <span class="k-chip-action k-chip-remove-action">
+                                                <span class="k-icon k-i-x-circle"></span>
+                                            </span>
+                                        </span>
+                                    </div>
+                                    <div class="k-chip k-chip-md k-chip-solid k-chip-solid-base k-rounded-md">
+                                        <span class="k-chip-content">
+                                            <span class="k-chip-label k-text-ellipsis">[Product].[Category]</span>
+                                        </span>
+                                        <span class="k-chip-actions">
+                                            <span class="k-chip-action k-chip-more-action">
+                                                <span class="k-icon k-i-more-vertical"></span>
+                                            </span>
+                                            <span class="k-chip-action k-chip-remove-action">
+                                                <span class="k-icon k-i-x-circle"></span>
+                                            </span>
+                                        </span>
+                                    </div>
                                 </div>
                                 <div class="k-grid k-widget">
                                     <div class="k-grid-header">
@@ -59,7 +106,7 @@
                                                 <tbody>
                                                     <tr>
                                                         <th class="k-header" colspan="4">
-                                                            <i is="Icon" name="collapse"></i>
+                                                            <span class="k-icon k-i-collapse"></span>
                                                             <span>All Periods</span>
                                                         </th>
                                                         <th class="k-header k-alt" colspan="1" rowspan="2">
@@ -68,41 +115,41 @@
                                                     </tr>
                                                     <tr>
                                                         <th class="k-header">
-                                                            <i is="Icon" name="expand"></i>
+                                                            <span class="k-icon k-i-expand"></span>
                                                             <span>CY 2005</span>
                                                         </th>
                                                         <th class="k-header">
-                                                            <i is="Icon" name="expand"></i>
+                                                            <span class="k-icon k-i-expand"></span>
                                                             <span>CY 2006</span>
                                                         </th>
                                                         <th class="k-header">
-                                                            <i is="Icon" name="expand"></i>
+                                                            <span class="k-icon k-i-expand"></span>
                                                             <span>CY 2007</span>
                                                         </th>
                                                         <th class="k-header">
-                                                            <i is="Icon" name="expand"></i>
+                                                            <span class="k-icon k-i-expand"></span>
                                                             <span>CY 2008</span>
                                                         </th>
                                                     </tr>
                                                     <tr>
                                                         <th class="k-header">
-                                                            <i is="Icon" name="expand"></i>
+                                                            <span class="k-icon k-i-expand"></span>
                                                             <span>All Products</span>
                                                         </th>
                                                         <th class="k-header">
-                                                            <i is="Icon" name="expand"></i>
+                                                            <span class="k-icon k-i-expand"></span>
                                                             <span>All Products</span>
                                                         </th>
                                                         <th class="k-header">
-                                                            <i is="Icon" name="expand"></i>
+                                                            <span class="k-icon k-i-expand"></span>
                                                             <span>All Products</span>
                                                         </th>
                                                         <th class="k-header">
-                                                            <i is="Icon" name="expand"></i>
+                                                            <span class="k-icon k-i-expand"></span>
                                                             <span>All Products</span>
                                                         </th>
                                                         <th class="k-header">
-                                                            <i is="Icon" name="expand"></i>
+                                                            <span class="k-icon k-i-expand"></span>
                                                             <span>All Products</span>
                                                         </th>
                                                     </tr>

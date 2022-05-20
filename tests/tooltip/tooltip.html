@@ -1,12 +1,11 @@
 <!doctype html>
-<html lang="en" class="k-no-animations">
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width:15px;">
 <head>
     <title>Tooltip</title>
     <meta charset="utf-8">
     <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
     <link rel="stylesheet" href="/packages/html/assets/styles.css">
     <script src="/packages/html/assets/scripts.js"></script>
-    <script src="/packages/html/dist/index.js"></script>
 </head>
 <body id="app" class="k-body">
     <style>
@@ -146,7 +145,7 @@
                 <div class="k-tooltip k-tooltip-closable">
                     <div class="k-tooltip-content">tooltip content</div>
                     <div class="k-tooltip-button">
-                        <i is="Icon" name="x"></i>
+                        <span class="k-icon k-i-x"></span>
                     </div>
                     <div class="k-callout k-callout-w"></div>
                 </div>
@@ -165,7 +164,7 @@
                 <div class="k-tooltip k-tooltip-closable">
                     <div class="k-tooltip-content">long tooltip content. Enough so it goes on another line</div>
                     <div class="k-tooltip-button">
-                        <i is="Icon" name="x"></i>
+                        <span class="k-icon k-i-x"></span>
                     </div>
                     <div class="k-callout k-callout-w"></div>
                 </div>
@@ -179,7 +178,7 @@
             <div class="k-animation-container">
                 <div class="k-tooltip">
                     <div class="k-tooltip-content">
-                        <div class="k-tooltip-title">Tooltip title</div> tooltip content
+                        <div class="k-tooltip-title">Tooltip title</div>tooltip content
                     </div>
                     <div class="k-callout k-callout-w"></div>
                 </div>
@@ -189,10 +188,10 @@
             <div class="k-animation-container">
                 <div class="k-tooltip k-tooltip-closable">
                     <div class="k-tooltip-content">
-                        <div class="k-tooltip-title">Tooltip title</div> tooltip content
+                        <div class="k-tooltip-title">Tooltip title</div>tooltip content
                     </div>
                     <div class="k-tooltip-button">
-                        <i is="Icon" name="x"></i>
+                        <span class="k-icon k-i-x"></span>
                     </div>
                     <div class="k-callout k-callout-w"></div>
                 </div>
@@ -202,10 +201,7 @@
             <div class="k-animation-container">
                 <div class="k-tooltip">
                     <div class="k-tooltip-content">
-                        <div class="k-tooltip-title">
-                            <!-- descendants --> g y p q
-                            <!-- ascendant --> f t d l
-                        </div> long tooltip content. Enough so it goes on another line
+                        <div class="k-tooltip-title">g y p q f t d l</div>long tooltip content. Enough so it goes on another line
                     </div>
                     <div class="k-callout k-callout-w"></div>
                 </div>
@@ -215,13 +211,10 @@
             <div class="k-animation-container">
                 <div class="k-tooltip k-tooltip-closable">
                     <div class="k-tooltip-content">
-                        <div class="k-tooltip-title">
-                            <!-- descendants --> g y p q
-                            <!-- ascendant --> f t d l
-                        </div> long tooltip content. Enough so it goes on another line
+                        <div class="k-tooltip-title">g y p q f t d l</div>long tooltip content. Enough so it goes on another line
                     </div>
                     <div class="k-tooltip-button">
-                        <i is="Icon" name="x"></i>
+                        <span class="k-icon k-i-x"></span>
                     </div>
                     <div class="k-callout k-callout-w"></div>
                 </div>
