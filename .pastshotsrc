@@ -1,6 +1,4 @@
 {
-    "serve": "visual/*.html",
-    "port": 8081,
     "selector": "#test-area",
     "viewportSize": {
         "width": 1200,

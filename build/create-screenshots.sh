@@ -3,9 +3,8 @@ set -e
 shopt -s extglob
 
 THEME="${1:-default}"
-TEMP_DIR=".tmp/tests/visual"
+TEMP_DIR=".tmp/visual/"
 THEME_DIR="$TEMP_DIR/$THEME"
-SRC_DIR="$THEME_DIR/src"
 
 if [ -z "$THEME" ]; then
     echo "Usage: create-screenshots <default|bootstrap|material|classic>"
@@ -15,25 +14,19 @@ else
 fi
 
 mkdir -p "$THEME_DIR"
-cp -r tests/visual/!(output) "$THEME_DIR"
-
-find "$THEME_DIR" -name '*.comp.html' -print0 | xargs -0 rm
-
-mkdir -p $THEME_DIR/themes/$THEME
-mkdir -p $THEME_DIR/scripts
-
-cp packages/$THEME/dist/all.css $THEME_DIR/themes/$THEME/all.css
-cp packages/html/dist/index.js $THEME_DIR/scripts/kendo-html.js
+cp -r tests/!(_output) $THEME_DIR
+cp -r packages/html/assets $THEME_DIR
+cp packages/$THEME/dist/all.css $THEME_DIR/assets/all.css
 
 # replace references
-find "$SRC_DIR" -name '*.html' -not -name '*.comp.html' -print0 | xargs -0 sed -i -E \
-    -e "s#../../../../packages/default/dist/#../../themes/$THEME/#" \
-    -e "s#../../../../packages/html/dist/index.js#../../scripts/kendo-html.js#"
+find "$THEME_DIR" -name '*.html' -print0 | xargs -0 sed -i -E \
+    -e "s#/packages/default/dist/#../assets/#" \
+    -e "s#/packages/html/assets/#../assets/#"
 
 # capture screenshots. see .pastshotsrc for config options
 npm install --no-save pastshots@1.6 optipng
 
 npx pastshots \
-    --serve "$SRC_DIR/**/*.html" \
+    --serve "$THEME_DIR/**/*.html" \
     --port $((RANDOM % 1000 + 8000)) \
-    --output "./tests/visual/output/$THEME"
+    --output "./tests/_output/$THEME"
