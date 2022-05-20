@@ -1,17 +1,15 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width:15px;">
 <head>
-    <title>Adaptive Grid Columnmenu</title>
+    <title>Grid Adaptive Column Menu</title>
     <meta charset="utf-8">
     <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
     <link rel="stylesheet" href="/packages/html/assets/styles.css">
     <script src="/packages/html/assets/scripts.js"></script>
-    <script src="/packages/html/dist/index.js"></script>
 </head>
 <body id="app" class="k-body">
     <style>
         #test-area {
-            grid-template-columns: 1fr;
             align-items: top;
         }
         th {
@@ -19,16 +17,20 @@
         }
 
     </style>
-    <div id="test-area" class="grid">
+    <div id="test-area" class="k-d-grid k-grid-cols-1">
         <div class="k-pane-wrapper k-widget" style="height: 650px;">
             <div class="k-pane">
                 <div class="k-grid-column-menu k-view k-widget">
                     <div class="k-appbar k-appbar-primary">
-                        <button is="Button" class="k-header-cancel" fillMode="flat" icon="arrow-chevron-left"></button>
+                        <button class="k-header-cancel k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                            <span class="k-button-icon k-icon k-i-arrow-chevron-left"></span>
+                        </button>
                         <span class="k-spacer"></span>
                         <span>Edit Column Settings</span>
                         <span class="k-spacer"></span>
-                        <button is="Button" class="k-header-done" fillMode="flat" icon="check"></button>
+                        <button class="k-header-done k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                            <span class="k-button-icon k-icon k-i-check"></span>
+                        </button>
                     </div>
                     <div class="k-stretched-view k-content">
                         <div class="k-column-menu">
@@ -36,34 +38,34 @@
                             <ul class="k-listgroup k-listgroup-flush">
                                 <li class="k-item k-listgroup-item k-sort-asc k-state-selected">
                                     <span class="k-link">
-                                        <i is="Icon" name="sort-asc-sm"></i>
+                                        <span class="k-icon k-i-sort-asc-sm"></span>
                                         <span class="k-item-title">Sort Ascending</span>
                                     </span>
                                 </li>
                                 <li class="k-item k-listgroup-item k-sort-desc">
                                     <span class="k-link">
-                                        <i is="Icon" name="sort-desc-sm"></i>
+                                        <span class="k-icon k-i-sort-desc-sm"></span>
                                         <span class="k-item-title">Sort Descending</span>
                                     </span>
                                 </li>
                                 <li class="k-item k-listgroup-item k-lock">
                                     <span class="k-link">
-                                        <i is="Icon" name="lock"></i>
+                                        <span class="k-icon k-i-lock"></span>
                                         <span class="k-item-title">Lock</span>
                                     </span>
                                 </li>
                                 <li class="k-item k-listgroup-item k-unlock k-state-disabled">
                                     <span class="k-link">
-                                        <i is="Icon" name="unlock"></i>
+                                        <span class="k-icon k-i-unlock"></span>
                                         <span class="k-item-title">Unlock</span>
                                     </span>
                                 </li>
                                 <li class="k-item k-listgroup-item k-filter-item">
                                     <span class="k-link k-filterable">
-                                        <i is="Icon" name="filter"></i>
+                                        <span class="k-icon k-i-filter"></span>
                                         <span class="k-item-title">Filter</span>
                                         <span class="k-select">
-                                            <i is="Icon" name="arrow-chevron-right"></i>
+                                            <span class="k-icon k-i-arrow-chevron-right"></span>
                                         </span>
                                     </span>
                                 </li>
@@ -75,7 +77,12 @@
                                     <span class="k-listgroup-form-row">
                                         <span class="k-item-title k-listgroup-form-field-label">Discontinued</span>
                                         <span class="k-listgroup-form-field-wrapper">
-                                            <input is="Switch" checked />
+                                            <span class="k-switch k-switch-md k-switch-on">
+                                                <span class="k-switch-track k-rounded-full"></span>
+                                                <span class="k-switch-thumb-wrap">
+                                                    <span class="k-switch-thumb k-rounded-full"></span>
+                                                </span>
+                                            </span>
                                         </span>
                                     </span>
                                 </li>
@@ -83,7 +90,12 @@
                                     <span class="k-listgroup-form-row">
                                         <span class="k-item-title k-listgroup-form-field-label">ProductID</span>
                                         <span class="k-listgroup-form-field-wrapper">
-                                            <input is="Switch" checked />
+                                            <span class="k-switch k-switch-md k-switch-on">
+                                                <span class="k-switch-track k-rounded-full"></span>
+                                                <span class="k-switch-thumb-wrap">
+                                                    <span class="k-switch-thumb k-rounded-full"></span>
+                                                </span>
+                                            </span>
                                         </span>
                                     </span>
                                 </li>
@@ -94,7 +106,12 @@
                                     <span class="k-listgroup-form-row">
                                         <span class="k-item-title k-listgroup-form-field-label">Name</span>
                                         <span class="k-listgroup-form-field-wrapper">
-                                            <input is="Switch" checked disabled />
+                                            <span class="k-switch k-switch-md k-disabled k-switch-on">
+                                                <span class="k-switch-track k-rounded-full"></span>
+                                                <span class="k-switch-thumb-wrap">
+                                                    <span class="k-switch-thumb k-rounded-full"></span>
+                                                </span>
+                                            </span>
                                         </span>
                                     </span>
                                 </li>

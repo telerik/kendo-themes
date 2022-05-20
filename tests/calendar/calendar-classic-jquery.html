@@ -1,12 +1,11 @@
 <!doctype html>
-<html lang="en" class="k-no-animations">
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width:15px;">
 <head>
-    <title>Calendar Classic</title>
+    <title>Calendar Classic jQuery</title>
     <meta charset="utf-8">
     <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
     <link rel="stylesheet" href="/packages/html/assets/styles.css">
     <script src="/packages/html/assets/scripts.js"></script>
-    <script src="/packages/html/dist/index.js"></script>
 </head>
 <body id="app" class="k-body">
     <div id="test-area" class="k-d-grid k-grid-cols-3">
@@ -16,9 +15,15 @@
         <section>
             <div class="k-widget k-calendar">
                 <div class="k-header k-hstack">
-                    <button is="Button" fillMode="flat" class="k-nav-prev" icon="arrow-60-left"></button>
-                    <button is="Button" fillMode="flat" class="k-nav-fast k-flex">March 2018</button>
-                    <button is="Button" fillMode="flat" class="k-nav-next" icon="arrow-60-right"></button>
+                    <button class="k-nav-prev k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                        <span class="k-button-icon k-icon k-i-arrow-60-left"></span>
+                    </button>
+                    <button class="k-nav-fast k-flex k-button k-button-md k-button-flat k-button-flat-base k-rounded-md">
+                        <span class="k-button-text">March 2018</span>
+                    </button>
+                    <button class="k-nav-next k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                        <span class="k-button-icon k-icon k-i-arrow-60-right"></span>
+                    </button>
                 </div>
                 <div class="k-calendar-view k-calendar-monthview">
                     <table class="k-calendar-table k-month">
@@ -183,9 +188,15 @@
         <section>
             <div class="k-widget k-calendar k-week-number">
                 <div class="k-header k-hstack">
-                    <button is="Button" fillMode="flat" class="k-nav-prev" icon="arrow-60-left"></button>
-                    <button is="Button" fillMode="flat" class="k-nav-fast k-flex">March 2018</button>
-                    <button is="Button" fillMode="flat" class="k-nav-next" icon="arrow-60-right"></button>
+                    <button class="k-nav-prev k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                        <span class="k-button-icon k-icon k-i-arrow-60-left"></span>
+                    </button>
+                    <button class="k-nav-fast k-flex k-button k-button-md k-button-flat k-button-flat-base k-rounded-md">
+                        <span class="k-button-text">March 2018</span>
+                    </button>
+                    <button class="k-nav-next k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                        <span class="k-button-icon k-icon k-i-arrow-60-right"></span>
+                    </button>
                 </div>
                 <div class="k-calendar-view k-calendar-monthview">
                     <table class="k-calendar-table k-month">
@@ -361,9 +372,15 @@
         <section>
             <div class="k-widget k-calendar">
                 <div class="k-header k-hstack">
-                    <button is="Button" fillMode="flat" class="k-nav-prev" icon="arrow-60-left"></button>
-                    <button is="Button" fillMode="flat" class="k-nav-fast k-flex">2018</button>
-                    <button is="Button" fillMode="flat" class="k-nav-next" icon="arrow-60-right"></button>
+                    <button class="k-nav-prev k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                        <span class="k-button-icon k-icon k-i-arrow-60-left"></span>
+                    </button>
+                    <button class="k-nav-fast k-flex k-button k-button-md k-button-flat k-button-flat-base k-rounded-md">
+                        <span class="k-button-text">2018</span>
+                    </button>
+                    <button class="k-nav-next k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                        <span class="k-button-icon k-icon k-i-arrow-60-right"></span>
+                    </button>
                 </div>
                 <div class="k-calendar-view k-calendar-yearview">
                     <table class="k-calendar-table k-meta-view k-year">
@@ -421,9 +438,15 @@
         <section>
             <div class="k-widget k-calendar">
                 <div class="k-header k-hstack">
-                    <button is="Button" fillMode="flat" class="k-nav-prev" icon="arrow-60-left"></button>
-                    <button is="Button" fillMode="flat" class="k-nav-fast k-flex">2010 - 2019</button>
-                    <button is="Button" fillMode="flat" class="k-nav-next" icon="arrow-60-right"></button>
+                    <button class="k-nav-prev k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                        <span class="k-button-icon k-icon k-i-arrow-60-left"></span>
+                    </button>
+                    <button class="k-nav-fast k-flex k-button k-button-md k-button-flat k-button-flat-base k-rounded-md">
+                        <span class="k-button-text">2010 - 2019</span>
+                    </button>
+                    <button class="k-nav-next k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                        <span class="k-button-icon k-icon k-i-arrow-60-right"></span>
+                    </button>
                 </div>
                 <div class="k-calendar-view k-calendar-decadeview">
                     <table class="k-calendar-table k-meta-view k-decade">
@@ -477,9 +500,15 @@
         <section>
             <div class="k-widget k-calendar">
                 <div class="k-header k-hstack">
-                    <button is="Button" fillMode="flat" class="k-nav-prev" icon="arrow-60-left"></button>
-                    <button is="Button" fillMode="flat" class="k-nav-fast k-flex">2000 - 2099</button>
-                    <button is="Button" fillMode="flat" class="k-nav-next" icon="arrow-60-right"></button>
+                    <button class="k-nav-prev k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                        <span class="k-button-icon k-icon k-i-arrow-60-left"></span>
+                    </button>
+                    <button class="k-nav-fast k-flex k-button k-button-md k-button-flat k-button-flat-base k-rounded-md">
+                        <span class="k-button-text">2000 - 2099</span>
+                    </button>
+                    <button class="k-nav-next k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                        <span class="k-button-icon k-icon k-i-arrow-60-right"></span>
+                    </button>
                 </div>
                 <div class="k-calendar-view k-calendar-centuryview">
                     <table class="k-calendar-table k-meta-view k-century">

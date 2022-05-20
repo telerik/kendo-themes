@@ -1,12 +1,11 @@
 <!doctype html>
 <html lang="en" class="k-no-animations" style="--kendo-scrollbar-width:15px;">
 <head>
-    <title>FlatColorPicker</title>
+    <title>ColorEditor</title>
     <meta charset="utf-8">
     <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
     <link rel="stylesheet" href="/packages/html/assets/styles.css">
     <script src="/packages/html/assets/scripts.js"></script>
-    <script src="/packages/html/dist/index.js"></script>
 </head>
 <body id="app" class="k-body">
     <style>
@@ -24,25 +23,23 @@
         <span>Single View</span>
         <section>
             <div class="k-flatcolorpicker k-coloreditor">
-                <!-- Header -->
                 <div class="k-coloreditor-header k-hstack">
                     <div class="k-coloreditor-header-actions k-hstack"></div>
                     <div class="k-spacer"></div>
                     <div class="k-coloreditor-header-actions k-hstack">
-                        <button type="button" class="k-button k-button-md k-rounded-md k-button-rectangle k-button-flat k-button-flat-base k-icon-button">
+                        <button class="k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
                             <span class="k-button-icon k-icon k-i-reset-color"></span>
                         </button>
                         <div class="k-coloreditor-preview k-vstack">
-                            <span class="k-coloreditor-preview-color k-color-preview k-no-color">
+                            <span class="k-color-preview k-no-color k-coloreditor-preview-color">
                                 <span class="k-color-preview-mask"></span>
                             </span>
-                            <span class="k-coloreditor-current-color k-color-preview">
+                            <span class="k-color-preview k-coloreditor-current-color">
                                 <span class="k-color-preview-mask" style="background-color: fuchsia;"></span>
                             </span>
                         </div>
                     </div>
                 </div>
-                <!-- Views  -->
                 <div class="k-coloreditor-views k-vstack">
                     <div class="k-colorgradient">
                         <div class="k-colorgradient-canvas k-hstack">
@@ -60,7 +57,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="k-slider k-slider-vertical k-alpha-slider k-colorgradient-slider">
+                                <div class="k-slider k-slider-vertical k-alpha-slider k-colorgradient-slider" style="--kendo-slider-end:100;">
                                     <div class="k-slider-track-wrap">
                                         <div class="k-slider-track" style="background: linear-gradient(to top, transparent, rgb(255, 0, 0));">
                                             <div class="k-slider-selection"></div>
@@ -72,43 +69,42 @@
                         </div>
                         <div class="k-colorgradient-inputs k-hstack">
                             <div class="k-vstack">
-                                <button type="button" class="k-colorgradient-toggle-mode k-button k-button-md k-rounded-md k-button-rectangle k-button-flat k-button-flat-base k-icon-button">
+                                <button class="k-colorgradient-toggle-mode k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
                                     <span class="k-button-icon k-icon k-i-arrows-kpi"></span>
                                 </button>
                             </div>
                             <div class="k-vstack">
-                                <span class="k-numerictextbox k-input k-input-md k-rounded-md k-input-solid" type="text" autocomplete="off">
-                                    <input type="text" class="k-input-inner" value="132" autocomplete="off">
+                                <span class="k-numerictextbox k-input k-input-md k-input-solid k-rounded-md">
+                                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="132">
                                 </span>
-                                <div class="k-colorgradient-input-label">R</div>
+                                <label class="k-colorgradient-input-label">R</label>
                             </div>
                             <div class="k-vstack">
-                                <span class="k-numerictextbox k-input k-input-md k-rounded-md k-input-solid" type="text" autocomplete="off">
-                                    <input type="text" class="k-input-inner" value="132" autocomplete="off">
+                                <span class="k-numerictextbox k-input k-input-md k-input-solid k-rounded-md">
+                                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="132">
                                 </span>
-                                <div class="k-colorgradient-input-label">G</div>
+                                <label class="k-colorgradient-input-label">G</label>
                             </div>
                             <div class="k-vstack">
-                                <span class="k-numerictextbox k-input k-input-md k-rounded-md k-input-solid" type="text" autocomplete="off">
-                                    <input type="text" class="k-input-inner" value="132" autocomplete="off">
+                                <span class="k-numerictextbox k-input k-input-md k-input-solid k-rounded-md">
+                                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="132">
                                 </span>
-                                <div class="k-colorgradient-input-label">B</div>
+                                <label class="k-colorgradient-input-label">B</label>
                             </div>
                             <div class="k-vstack">
-                                <span class="k-numerictextbox k-input k-input-md k-rounded-md k-input-solid" type="text" autocomplete="off">
-                                    <input type="text" class="k-input-inner" value="1.00" autocomplete="off">
+                                <span class="k-numerictextbox k-input k-input-md k-input-solid k-rounded-md">
+                                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="1.00">
                                 </span>
-                                <div class="k-colorgradient-input-label">A</div>
+                                <label class="k-colorgradient-input-label">A</label>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- Footer Actions  -->
-                <div class="k-coloreditor-footer k-actions k-actions-end">
-                    <button type="button" class="k-coloreditor-cancel k-button k-button-md k-rounded-md k-button-rectangle k-button-solid k-button-solid-base">
+                <div class="k-actions k-actions-end k-actions-horizontal k-coloreditor-footer">
+                    <button class="k-coloreditor-cancel k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
                         <span class="k-button-text">Cancel</span>
                     </button>
-                    <button type="button" class="k-coloreditor-apply k-button k-button-md k-rounded-md k-button-rectangle k-button-solid k-button-solid-primary">
+                    <button class="k-coloreditor-apply k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md">
                         <span class="k-button-text">Apply</span>
                     </button>
                 </div>

@@ -1,12 +1,11 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width:15px;">
 <head>
-    <title>PivotGrid Configurator Top & Overlay</title>
+    <title>PivotGrid Settings Top</title>
     <meta charset="utf-8">
     <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
     <link rel="stylesheet" href="/packages/html/assets/styles.css">
     <script src="/packages/html/assets/scripts.js"></script>
-    <script src="/packages/html/dist/index.js"></script>
 </head>
 <body id="app" class="k-body">
     <div id="test-area" class="k-d-grid k-grid-cols-1">
@@ -14,7 +13,6 @@
             <div class="k-d-flex k-flex-col-reverse k-pos-relative">
                 <div class="k-pivotgrid" style="height: 550px; grid-template-columns: 150px auto; grid-template-rows: 242px auto;">
                     <span class="k-pivotgrid-empty-cell"></span>
-                    <!-- Pivot Multi Column Headers -->
                     <div class="k-pivotgrid-column-headers">
                         <table class="k-pivotgrid-table">
                             <colgroup>
@@ -30,10 +28,9 @@
                                 <col width="120">
                             </colgroup>
                             <tbody class="k-pivotgrid-tbody">
-                                <!-- Four Rows for Date.Calendar Column grouping field -->
                                 <tr class="k-pivotgrid-row k-pivotgrid-column-total">
                                     <th colspan="9" class="k-pivotgrid-cell k-pivotgrid-expanded k-pivotgrid-header-root">
-                                        <i is="Icon" name="arrow-chevron-up"></i>
+                                        <span class="k-icon k-i-arrow-chevron-up"></span>
                                         <span class="k-pivotgrid-header-title">All Periods</span>
                                     </th>
                                     <th colspan="1" rowspan="4" class="k-pivotgrid-cell k-pivotgrid-header-total k-pivotgrid-header-root">
@@ -42,25 +39,25 @@
                                 </tr>
                                 <tr class="k-pivotgrid-row">
                                     <th colspan="6" class="k-pivotgrid-cell k-pivotgrid-expanded">
-                                        <i is="Icon" name="arrow-chevron-up"></i>
+                                        <span class="k-icon k-i-arrow-chevron-up"></span>
                                         <span class="k-pivotgrid-header-title">CY 2010</span>
                                     </th>
                                     <th colspan="1" rowspan="3" class="k-pivotgrid-cell">
-                                        <i is="Icon" name="arrow-chevron-down"></i>
+                                        <span class="k-icon k-i-arrow-chevron-down"></span>
                                         <span class="k-pivotgrid-header-title">CY 2011</span>
                                     </th>
                                     <th colspan="1" rowspan="3" class="k-pivotgrid-cell">
-                                        <i is="Icon" name="arrow-chevron-down"></i>
+                                        <span class="k-icon k-i-arrow-chevron-down"></span>
                                         <span class="k-pivotgrid-header-title">CY 2012</span>
                                     </th>
                                     <th colspan="1" rowspan="3" class="k-pivotgrid-cell">
-                                        <i is="Icon" name="arrow-chevron-down"></i>
+                                        <span class="k-icon k-i-arrow-chevron-down"></span>
                                         <span class="k-pivotgrid-header-title">CY 2013</span>
                                     </th>
                                 </tr>
                                 <tr class="k-pivotgrid-row">
                                     <th colspan="1" class="k-pivotgrid-cell k-pivotgrid-expanded">
-                                        <i is="Icon" name="arrow-chevron-up"></i>
+                                        <span class="k-icon k-i-arrow-chevron-up"></span>
                                         <span class="k-pivotgrid-header-title">H2 CY 2010</span>
                                     </th>
                                     <th colspan="5" rowspan="2" class="k-pivotgrid-cell">
@@ -69,37 +66,36 @@
                                 </tr>
                                 <tr class="k-pivotgrid-row">
                                     <th colspan="1" class="k-pivotgrid-cell">
-                                        <i is="Icon" name="arrow-chevron-down"></i>
+                                        <span class="k-icon k-i-arrow-chevron-down"></span>
                                         <span class="k-pivotgrid-header-title">Q4 CY 2010</span>
                                     </th>
                                 </tr>
-                                <!-- Table for Product.Category Column grouping field -->
                                 <tr class="k-pivotgrid-row k-pivotgrid-column-total">
                                     <th colspan="1" rowspan="2" class="k-pivotgrid-cell k-pivotgrid-header-root">
-                                        <i is="Icon" name="arrow-chevron-down"></i>
+                                        <span class="k-icon k-i-arrow-chevron-down"></span>
                                         <span class="k-pivotgrid-header-title">All Products</span>
                                     </th>
                                     <th colspan="4" class="k-pivotgrid-cell k-pivotgrid-expanded k-pivotgrid-header-root">
-                                        <i is="Icon" name="arrow-chevron-up"></i>
+                                        <span class="k-icon k-i-arrow-chevron-up"></span>
                                         <span class="k-pivotgrid-header-title">All Products</span>
                                     </th>
                                     <th colspan="1" rowspan="2" class="k-pivotgrid-cell k-pivotgrid-header-root">
                                         <span class="k-pivotgrid-header-title">All Products</span>
                                     </th>
                                     <th colspan="1" rowspan="2" class="k-pivotgrid-cell k-pivotgrid-header-root">
-                                        <i is="Icon" name="arrow-chevron-down"></i>
+                                        <span class="k-icon k-i-arrow-chevron-down"></span>
                                         <span class="k-pivotgrid-header-title">All Products</span>
                                     </th>
                                     <th colspan="1" rowspan="2" class="k-pivotgrid-cell k-pivotgrid-header-root">
-                                        <i is="Icon" name="arrow-chevron-down"></i>
+                                        <span class="k-icon k-i-arrow-chevron-down"></span>
                                         <span class="k-pivotgrid-header-title">All Products</span>
                                     </th>
                                     <th colspan="1" rowspan="2" class="k-pivotgrid-cell k-pivotgrid-header-root">
-                                        <i is="Icon" name="arrow-chevron-down"></i>
+                                        <span class="k-icon k-i-arrow-chevron-down"></span>
                                         <span class="k-pivotgrid-header-title">All Products</span>
                                     </th>
                                     <th colspan="1" rowspan="2" class="k-pivotgrid-cell k-pivotgrid-header-total k-pivotgrid-header-root">
-                                        <i is="Icon" name="arrow-chevron-down"></i>
+                                        <span class="k-icon k-i-arrow-chevron-down"></span>
                                         <span class="k-pivotgrid-header-title">All Products</span>
                                     </th>
                                 </tr>
@@ -120,7 +116,6 @@
                             </tbody>
                         </table>
                     </div>
-                    <!-- Pivot Multi Row Headers -->
                     <div class="k-pivotgrid-row-headers">
                         <table class="k-pivotgrid-table">
                             <colgroup>
@@ -130,7 +125,7 @@
                             <tbody class="k-pivotgrid-tbody">
                                 <tr class="k-pivotgrid-row">
                                     <th colspan="1" rowspan="9" class="k-pivotgrid-cell k-pivotgrid-row-total k-pivotgrid-expanded k-pivotgrid-header-root">
-                                        <i is="Icon" name="arrow-chevron-up"></i>
+                                        <span class="k-icon k-i-arrow-chevron-up"></span>
                                         <span class="k-pivotgrid-header-title">All Geographies</span>
                                     </th>
                                     <th colspan="1" class="k-pivotgrid-cell">
@@ -185,9 +180,7 @@
                             </tbody>
                         </table>
                     </div>
-                    <!-- Details -->
                     <div class="k-pivotgrid-values">
-                        <!-- Choose using either style and calculate the width of the content table or use <col> width prop -->
                         <table class="k-pivotgrid-table" style="width: 1200px;">
                             <colgroup>
                                 <col width="120">
@@ -537,11 +530,16 @@
                                     <div class="k-form-field">
                                         <label class="k-label">Fields</label>
                                         <span class="k-spacer"></span>
-                                        <input is="Searchbox" placeholder="Search..." />
+                                        <span class="k-searchbox k-input k-input-md k-input-solid k-rounded-md">
+                                            <span class="k-input-icon k-icon k-i-search"></span>
+                                            <input type="text" class="k-input-inner" placeholder="Search..." autocomplete="off" value="">
+                                        </span>
                                     </div>
                                     <div class="k-form-field">
                                         <div class="k-select-all">
-                                            <input is="Checkbox" />
+                                            <span class="k-checkbox-wrap">
+                                                <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                            </span>
                                             <span>Select all</span>
                                         </div>
                                         <span class="k-spacer"></span>
@@ -549,23 +547,157 @@
                                     </div>
                                     <div class="k-form-field">
                                         <div class="k-fields-list-wrapper">
-                                            <ul is="Treeview">
-                                                <li showCheckbox hasChildren>Account</li>
-                                                <li showCheckbox hasChildren>Customer</li>
-                                                <li showCheckbox expanded>Date <ul>
-                                                        <li showCheckbox hasChildren>Date.Calendar</li>
-                                                        <li showCheckbox expanded>Date.Calendar Quarter of Year <ul>
-                                                                <li showCheckbox hasChildren>(All)</li>
-                                                                <li showCheckbox hasChildren>Calendar Quarter of Year</li>
-                                                            </ul>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li showCheckbox hasChildren>Delivery date</li>
-                                                <li showCheckbox hasChildren>Department</li>
-                                                <li showCheckbox hasChildren>Country</li>
-                                                <li showCheckbox hasChildren>Region</li>
-                                            </ul>
+                                            <div class="k-treeview k-treeview-md">
+                                                <ul class="k-treeview-lines k-treeview-group">
+                                                    <li class="k-treeview-item">
+                                                        <span class="k-treeview-mid">
+                                                            <span class="k-treeview-toggle">
+                                                                <span class="k-icon k-i-expand"></span>
+                                                            </span>
+                                                            <span class="k-checkbox-wrap">
+                                                                <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                                            </span>
+                                                            <span class="k-treeview-leaf">
+                                                                <span class="k-treeview-leaf-text">Account</span>
+                                                            </span>
+                                                        </span>
+                                                    </li>
+                                                    <li class="k-treeview-item">
+                                                        <span class="k-treeview-mid">
+                                                            <span class="k-treeview-toggle">
+                                                                <span class="k-icon k-i-expand"></span>
+                                                            </span>
+                                                            <span class="k-checkbox-wrap">
+                                                                <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                                            </span>
+                                                            <span class="k-treeview-leaf">
+                                                                <span class="k-treeview-leaf-text">Customer</span>
+                                                            </span>
+                                                        </span>
+                                                    </li>
+                                                    <li class="k-treeview-item">
+                                                        <span class="k-treeview-mid">
+                                                            <span class="k-treeview-toggle">
+                                                                <span class="k-icon k-i-collapse"></span>
+                                                            </span>
+                                                            <span class="k-checkbox-wrap">
+                                                                <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                                            </span>
+                                                            <span class="k-treeview-leaf">
+                                                                <span class="k-treeview-leaf-text">Date</span>
+                                                            </span>
+                                                        </span>
+                                                        <ul class="k-treeview-group">
+                                                            <li class="k-treeview-item">
+                                                                <span class="k-treeview-mid">
+                                                                    <span class="k-treeview-toggle">
+                                                                        <span class="k-icon k-i-expand"></span>
+                                                                    </span>
+                                                                    <span class="k-checkbox-wrap">
+                                                                        <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                                                    </span>
+                                                                    <span class="k-treeview-leaf">
+                                                                        <span class="k-treeview-leaf-text">Date.Calendar</span>
+                                                                    </span>
+                                                                </span>
+                                                            </li>
+                                                            <li class="k-treeview-item">
+                                                                <span class="k-treeview-mid">
+                                                                    <span class="k-treeview-toggle">
+                                                                        <span class="k-icon k-i-collapse"></span>
+                                                                    </span>
+                                                                    <span class="k-checkbox-wrap">
+                                                                        <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                                                    </span>
+                                                                    <span class="k-treeview-leaf">
+                                                                        <span class="k-treeview-leaf-text">Date.Calendar Quarter of Year</span>
+                                                                    </span>
+                                                                </span>
+                                                                <ul class="k-treeview-group">
+                                                                    <li class="k-treeview-item">
+                                                                        <span class="k-treeview-mid">
+                                                                            <span class="k-treeview-toggle">
+                                                                                <span class="k-icon k-i-expand"></span>
+                                                                            </span>
+                                                                            <span class="k-checkbox-wrap">
+                                                                                <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                                                            </span>
+                                                                            <span class="k-treeview-leaf">
+                                                                                <span class="k-treeview-leaf-text">(All)</span>
+                                                                            </span>
+                                                                        </span>
+                                                                    </li>
+                                                                    <li class="k-treeview-item">
+                                                                        <span class="k-treeview-mid">
+                                                                            <span class="k-treeview-toggle">
+                                                                                <span class="k-icon k-i-expand"></span>
+                                                                            </span>
+                                                                            <span class="k-checkbox-wrap">
+                                                                                <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                                                            </span>
+                                                                            <span class="k-treeview-leaf">
+                                                                                <span class="k-treeview-leaf-text">Calendar Quarter of Year</span>
+                                                                            </span>
+                                                                        </span>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="k-treeview-item">
+                                                        <span class="k-treeview-mid">
+                                                            <span class="k-treeview-toggle">
+                                                                <span class="k-icon k-i-expand"></span>
+                                                            </span>
+                                                            <span class="k-checkbox-wrap">
+                                                                <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                                            </span>
+                                                            <span class="k-treeview-leaf">
+                                                                <span class="k-treeview-leaf-text">Delivery date</span>
+                                                            </span>
+                                                        </span>
+                                                    </li>
+                                                    <li class="k-treeview-item">
+                                                        <span class="k-treeview-mid">
+                                                            <span class="k-treeview-toggle">
+                                                                <span class="k-icon k-i-expand"></span>
+                                                            </span>
+                                                            <span class="k-checkbox-wrap">
+                                                                <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                                            </span>
+                                                            <span class="k-treeview-leaf">
+                                                                <span class="k-treeview-leaf-text">Department</span>
+                                                            </span>
+                                                        </span>
+                                                    </li>
+                                                    <li class="k-treeview-item">
+                                                        <span class="k-treeview-mid">
+                                                            <span class="k-treeview-toggle">
+                                                                <span class="k-icon k-i-expand"></span>
+                                                            </span>
+                                                            <span class="k-checkbox-wrap">
+                                                                <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                                            </span>
+                                                            <span class="k-treeview-leaf">
+                                                                <span class="k-treeview-leaf-text">Country</span>
+                                                            </span>
+                                                        </span>
+                                                    </li>
+                                                    <li class="k-treeview-item">
+                                                        <span class="k-treeview-mid">
+                                                            <span class="k-treeview-toggle">
+                                                                <span class="k-icon k-i-expand"></span>
+                                                            </span>
+                                                            <span class="k-checkbox-wrap">
+                                                                <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                                            </span>
+                                                            <span class="k-treeview-leaf">
+                                                                <span class="k-treeview-leaf-text">Region</span>
+                                                            </span>
+                                                        </span>
+                                                    </li>
+                                                </ul>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -573,48 +705,120 @@
                                     <div class="k-form-field">
                                         <label class="k-label">Columns</label>
                                     </div>
-                                    <div is="ChipList" class="k-column-fields">
-                                        <div is="Chip" actions="more, remove">
-                                            <span class="k-chip-label">Date.Calendar</span>
-                                            <i is="Icon" class="k-chip-icon" name="more-vertical"></i>
+                                    <div class="k-column-fields k-chip-list k-chip-list-md">
+                                        <div class="k-chip k-chip-md k-chip-solid k-chip-solid-base k-rounded-md">
+                                            <span class="k-chip-content">
+                                                <span class="k-chip-label k-text-ellipsis">Date.Calendar</span>
+                                            </span>
+                                            <span class="k-chip-actions">
+                                                <span class="k-chip-action k-chip-more-action">
+                                                    <span class="k-icon k-i-more-vertical"></span>
+                                                </span>
+                                                <span class="k-chip-action k-chip-remove-action">
+                                                    <span class="k-icon k-i-x-circle"></span>
+                                                </span>
+                                            </span>
                                         </div>
-                                        <div is="Chip" actions="more, remove">
-                                            <span class="k-chip-label">Product.Category</span>
-                                            <i is="Icon" class="k-chip-icon" name="more-vertical"></i>
+                                        <div class="k-chip k-chip-md k-chip-solid k-chip-solid-base k-rounded-md">
+                                            <span class="k-chip-content">
+                                                <span class="k-chip-label k-text-ellipsis">Product.Category</span>
+                                            </span>
+                                            <span class="k-chip-actions">
+                                                <span class="k-chip-action k-chip-more-action">
+                                                    <span class="k-icon k-i-more-vertical"></span>
+                                                </span>
+                                                <span class="k-chip-action k-chip-remove-action">
+                                                    <span class="k-icon k-i-x-circle"></span>
+                                                </span>
+                                            </span>
                                         </div>
-                                        <div is="Chip" actions="more, remove">
-                                            <span class="k-chip-label">MyField.Name</span>
-                                            <i is="Icon" class="k-chip-icon" name="more-vertical"></i>
+                                        <div class="k-chip k-chip-md k-chip-solid k-chip-solid-base k-rounded-md">
+                                            <span class="k-chip-content">
+                                                <span class="k-chip-label k-text-ellipsis">MyField.Name</span>
+                                            </span>
+                                            <span class="k-chip-actions">
+                                                <span class="k-chip-action k-chip-more-action">
+                                                    <span class="k-icon k-i-more-vertical"></span>
+                                                </span>
+                                                <span class="k-chip-action k-chip-remove-action">
+                                                    <span class="k-icon k-i-x-circle"></span>
+                                                </span>
+                                            </span>
                                         </div>
-                                        <div is="Chip" actions="more, remove">
-                                            <span class="k-chip-label">MyField.MyFieldWithALongName</span>
-                                            <i is="Icon" class="k-chip-icon" name="more-vertical"></i>
+                                        <div class="k-chip k-chip-md k-chip-solid k-chip-solid-base k-rounded-md">
+                                            <span class="k-chip-content">
+                                                <span class="k-chip-label k-text-ellipsis">MyField.MyFieldWithALongName</span>
+                                            </span>
+                                            <span class="k-chip-actions">
+                                                <span class="k-chip-action k-chip-more-action">
+                                                    <span class="k-icon k-i-more-vertical"></span>
+                                                </span>
+                                                <span class="k-chip-action k-chip-remove-action">
+                                                    <span class="k-icon k-i-x-circle"></span>
+                                                </span>
+                                            </span>
                                         </div>
-                                        <div is="Chip" actions="more, remove">
-                                            <span class="k-chip-label">MyField.Name</span>
-                                            <i is="Icon" class="k-chip-icon" name="more-vertical"></i>
+                                        <div class="k-chip k-chip-md k-chip-solid k-chip-solid-base k-rounded-md">
+                                            <span class="k-chip-content">
+                                                <span class="k-chip-label k-text-ellipsis">MyField.Name</span>
+                                            </span>
+                                            <span class="k-chip-actions">
+                                                <span class="k-chip-action k-chip-more-action">
+                                                    <span class="k-icon k-i-more-vertical"></span>
+                                                </span>
+                                                <span class="k-chip-action k-chip-remove-action">
+                                                    <span class="k-icon k-i-x-circle"></span>
+                                                </span>
+                                            </span>
                                         </div>
-                                        <div is="Chip" actions="more, remove">
-                                            <span class="k-chip-label">MyField.Name</span>
-                                            <i is="Icon" class="k-chip-icon" name="more-vertical"></i>
+                                        <div class="k-chip k-chip-md k-chip-solid k-chip-solid-base k-rounded-md">
+                                            <span class="k-chip-content">
+                                                <span class="k-chip-label k-text-ellipsis">MyField.Name</span>
+                                            </span>
+                                            <span class="k-chip-actions">
+                                                <span class="k-chip-action k-chip-more-action">
+                                                    <span class="k-icon k-i-more-vertical"></span>
+                                                </span>
+                                                <span class="k-chip-action k-chip-remove-action">
+                                                    <span class="k-icon k-i-x-circle"></span>
+                                                </span>
+                                            </span>
                                         </div>
                                     </div>
                                     <div class="k-form-field">
                                         <label class="k-label">Rows</label>
                                     </div>
-                                    <div is="ChipList" class="k-row-fields">
-                                        <div is="Chip" actions="more, remove">
-                                            <span class="k-chip-label">Geography.City</span>
-                                            <i is="Icon" class="k-chip-icon" name="more-vertical"></i>
+                                    <div class="k-row-fields k-chip-list k-chip-list-md">
+                                        <div class="k-chip k-chip-md k-chip-solid k-chip-solid-base k-rounded-md">
+                                            <span class="k-chip-content">
+                                                <span class="k-chip-label k-text-ellipsis">Geography.City</span>
+                                            </span>
+                                            <span class="k-chip-actions">
+                                                <span class="k-chip-action k-chip-more-action">
+                                                    <span class="k-icon k-i-more-vertical"></span>
+                                                </span>
+                                                <span class="k-chip-action k-chip-remove-action">
+                                                    <span class="k-icon k-i-x-circle"></span>
+                                                </span>
+                                            </span>
                                         </div>
                                     </div>
                                     <div class="k-form-field">
                                         <label class="k-label">Filters</label>
                                     </div>
-                                    <div is="ChipList" class="k-filter-fields">
-                                        <div is="Chip" actions="more, remove">
-                                            <span class="k-chip-label">Sales Channel.Sales Channel</span>
-                                            <i is="Icon" class="k-chip-icon" name="more-vertical"></i>
+                                    <div class="k-filter-fields k-chip-list k-chip-list-md">
+                                        <div class="k-chip k-chip-md k-chip-solid k-chip-solid-base k-rounded-md">
+                                            <span class="k-chip-content">
+                                                <span class="k-chip-label k-text-ellipsis">Sales Channel.Sales Channel</span>
+                                            </span>
+                                            <span class="k-chip-actions">
+                                                <span class="k-chip-action k-chip-more-action">
+                                                    <span class="k-icon k-i-more-vertical"></span>
+                                                </span>
+                                                <span class="k-chip-action k-chip-remove-action">
+                                                    <span class="k-icon k-i-x-circle"></span>
+                                                </span>
+                                            </span>
                                         </div>
                                     </div>
                                 </div>
@@ -622,54 +826,96 @@
                                     <div class="k-form-field">
                                         <label class="k-label">Values</label>
                                         <span class="k-spacer"></span>
-                                        <button is="Button">Add Custom</button>
+                                        <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                                            <span class="k-button-text">Add Custom</span>
+                                        </button>
                                     </div>
                                     <div class="k-value-fields">
                                         <div class="k-calculated-field">
                                             <div class="k-calculated-field-header">
                                                 <div class="k-calculated-field-header-text">Calculated Field 1</div>
-                                                <button is="Button" fillMode="flat" icon="edit"></button>
+                                                <button class="k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                                                    <span class="k-button-icon k-icon k-i-edit"></span>
+                                                </button>
                                                 <span class="k-spacer"></span>
                                                 <div class="k-calculated-field-header-actions">
-                                                    <button is="Button" fillMode="flat" icon="close"></button>
+                                                    <button class="k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                                                        <span class="k-button-icon k-icon k-i-close"></span>
+                                                    </button>
                                                 </div>
                                             </div>
                                             <div class="k-calculated-field-content">
-                                                <input is="Textbox" showClearButton="false" placeholder="Custom function" />
+                                                <span class="k-textbox k-input k-input-md k-input-solid k-rounded-md">
+                                                    <input type="text" class="k-input-inner" placeholder="Custom function" autocomplete="off" value="">
+                                                </span>
                                             </div>
                                             <div class="k-calculated-field-actions">
-                                                <i is="Icon" name="formula-fx"></i>
-                                                <input is="DropdownList" value="Custom" />
+                                                <span class="k-icon k-i-formula-fx"></span>
+                                                <span class="k-dropdown k-picker k-picker-md k-picker-solid k-rounded-md">
+                                                    <span class="k-input-inner">
+                                                        <span class="k-input-value-text">Custom</span>
+                                                    </span>
+                                                    <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                        <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                                                    </button>
+                                                </span>
                                                 <span class="k-spacer"></span>
-                                                <i is="Icon" name="preview"></i>
-                                                <input is="DropdownList" value="Default" />
+                                                <span class="k-icon k-i-preview"></span>
+                                                <span class="k-dropdown k-picker k-picker-md k-picker-solid k-rounded-md">
+                                                    <span class="k-input-inner">
+                                                        <span class="k-input-value-text">Default</span>
+                                                    </span>
+                                                    <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                        <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                                                    </button>
+                                                </span>
                                             </div>
                                         </div>
                                         <div class="k-calculated-field">
                                             <div class="k-calculated-field-header">
-                                                <span is="Textbox" showClearButton="false" value="Renamed Field">
-                                                    <slot is="InputSuffix">
-                                                        <button is="Button" fillMode="flat" icon="check"></button>
-                                                    </slot>
+                                                <span class="k-textbox k-input k-input-md k-input-solid k-rounded-md">
+                                                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="Renamed Field">
+                                                    <span class="k-input-suffix">
+                                                        <button class="k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                                                            <span class="k-button-icon k-icon k-i-check"></span>
+                                                        </button>
+                                                    </span>
                                                 </span>
                                                 <span class="k-spacer"></span>
                                                 <div class="k-calculated-field-header-actions">
-                                                    <button is="Button" fillMode="flat" icon="close"></button>
+                                                    <button class="k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                                                        <span class="k-button-icon k-icon k-i-close"></span>
+                                                    </button>
                                                 </div>
                                             </div>
                                             <div class="k-calculated-field-content">
-                                                <span is="Textbox" showClearButton="false" value="=IF(Amount>100, 3%*Amount)">
-                                                    <slot is="InputPrefix">
-                                                        <span is="Icon" name="formula-fx"></span>
-                                                    </slot>
+                                                <span class="k-textbox k-input k-input-md k-input-solid k-rounded-md">
+                                                    <span class="k-input-prefix">
+                                                        <span class="k-icon k-i-formula-fx"></span>
+                                                    </span>
+                                                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="=IF(Amount>100, 3%*Amount)">
                                                 </span>
                                             </div>
                                             <div class="k-calculated-field-actions">
-                                                <i is="Icon" name="formula-fx"></i>
-                                                <input is="DropdownList" value="Custom" />
+                                                <span class="k-icon k-i-formula-fx"></span>
+                                                <span class="k-dropdown k-picker k-picker-md k-picker-solid k-rounded-md">
+                                                    <span class="k-input-inner">
+                                                        <span class="k-input-value-text">Custom</span>
+                                                    </span>
+                                                    <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                        <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                                                    </button>
+                                                </span>
                                                 <span class="k-spacer"></span>
-                                                <i is="Icon" name="preview"></i>
-                                                <input is="DropdownList" value="Default" />
+                                                <span class="k-icon k-i-preview"></span>
+                                                <span class="k-dropdown k-picker k-picker-md k-picker-solid k-rounded-md">
+                                                    <span class="k-input-inner">
+                                                        <span class="k-input-value-text">Default</span>
+                                                    </span>
+                                                    <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                        <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                                                    </button>
+                                                </span>
                                             </div>
                                         </div>
                                         <div class="k-calculated-field">
@@ -677,15 +923,31 @@
                                                 <div class="k-calculated-field-header-text">Date.Calendar</div>
                                                 <span class="k-spacer"></span>
                                                 <div class="k-calculated-field-header-actions">
-                                                    <button is="Button" fillMode="flat" icon="close"></button>
+                                                    <button class="k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                                                        <span class="k-button-icon k-icon k-i-close"></span>
+                                                    </button>
                                                 </div>
                                             </div>
                                             <div class="k-calculated-field-actions">
-                                                <i is="Icon" name="sum"></i>
-                                                <input is="DropdownList" value="SUM" />
+                                                <span class="k-icon k-i-sum"></span>
+                                                <span class="k-dropdown k-picker k-picker-md k-picker-solid k-rounded-md">
+                                                    <span class="k-input-inner">
+                                                        <span class="k-input-value-text">SUM</span>
+                                                    </span>
+                                                    <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                        <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                                                    </button>
+                                                </span>
                                                 <span class="k-spacer"></span>
-                                                <i is="Icon" name="preview"></i>
-                                                <input is="DropdownList" value="Default" />
+                                                <span class="k-icon k-i-preview"></span>
+                                                <span class="k-dropdown k-picker k-picker-md k-picker-solid k-rounded-md">
+                                                    <span class="k-input-inner">
+                                                        <span class="k-input-value-text">Default</span>
+                                                    </span>
+                                                    <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                        <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                                                    </button>
+                                                </span>
                                             </div>
                                         </div>
                                         <div class="k-calculated-field">
@@ -693,15 +955,31 @@
                                                 <div class="k-calculated-field-header-text">Date.Calendar</div>
                                                 <span class="k-spacer"></span>
                                                 <div class="k-calculated-field-header-actions">
-                                                    <button is="Button" fillMode="flat" icon="close"></button>
+                                                    <button class="k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                                                        <span class="k-button-icon k-icon k-i-close"></span>
+                                                    </button>
                                                 </div>
                                             </div>
                                             <div class="k-calculated-field-actions">
-                                                <i is="Icon" name="sum"></i>
-                                                <input is="DropdownList" value="SUM" />
+                                                <span class="k-icon k-i-sum"></span>
+                                                <span class="k-dropdown k-picker k-picker-md k-picker-solid k-rounded-md">
+                                                    <span class="k-input-inner">
+                                                        <span class="k-input-value-text">SUM</span>
+                                                    </span>
+                                                    <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                        <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                                                    </button>
+                                                </span>
                                                 <span class="k-spacer"></span>
-                                                <i is="Icon" name="preview"></i>
-                                                <input is="DropdownList" value="Default" />
+                                                <span class="k-icon k-i-preview"></span>
+                                                <span class="k-dropdown k-picker k-picker-md k-picker-solid k-rounded-md">
+                                                    <span class="k-input-inner">
+                                                        <span class="k-input-value-text">Default</span>
+                                                    </span>
+                                                    <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                        <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                                                    </button>
+                                                </span>
                                             </div>
                                         </div>
                                         <div class="k-calculated-field">
@@ -709,29 +987,49 @@
                                                 <div class="k-calculated-field-header-text">Date.Calendar</div>
                                                 <span class="k-spacer"></span>
                                                 <div class="k-calculated-field-header-actions">
-                                                    <button is="Button" fillMode="flat" icon="close"></button>
+                                                    <button class="k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                                                        <span class="k-button-icon k-icon k-i-close"></span>
+                                                    </button>
                                                 </div>
                                             </div>
                                             <div class="k-calculated-field-actions">
-                                                <i is="Icon" name="sum"></i>
-                                                <input is="DropdownList" value="SUM" />
+                                                <span class="k-icon k-i-sum"></span>
+                                                <span class="k-dropdown k-picker k-picker-md k-picker-solid k-rounded-md">
+                                                    <span class="k-input-inner">
+                                                        <span class="k-input-value-text">SUM</span>
+                                                    </span>
+                                                    <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                        <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                                                    </button>
+                                                </span>
                                                 <span class="k-spacer"></span>
-                                                <i is="Icon" name="preview"></i>
-                                                <input is="DropdownList" value="Default" />
+                                                <span class="k-icon k-i-preview"></span>
+                                                <span class="k-dropdown k-picker k-picker-md k-picker-solid k-rounded-md">
+                                                    <span class="k-input-inner">
+                                                        <span class="k-input-value-text">Default</span>
+                                                    </span>
+                                                    <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                        <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                                                    </button>
+                                                </span>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </form>
                         </div>
-                        <div class="k-pivotgrid-configurator-actions" is="ActionButtons" alignment="end">
-                            <button is="Button">Cancel</button>
-                            <button is="Button" themeColor="primary">Apply</button>
+                        <div class="k-actions k-actions-end k-actions-horizontal k-pivotgrid-configurator-actions">
+                            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                                <span class="k-button-text">Cancel</span>
+                            </button>
+                            <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md">
+                                <span class="k-button-text">Apply</span>
+                            </button>
                         </div>
                     </div>
                 </div>
                 <div class="k-pivotgrid-configurator-button">
-                    <span> Change settings <i is="Icon" name="cog"></i>
+                    <span>Change settings<span class="k-icon k-i-cog"></span>
                     </span>
                 </div>
             </div>

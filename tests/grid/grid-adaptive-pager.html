@@ -1,17 +1,15 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width:15px;">
 <head>
-    <title>Adaptive Grid Pager</title>
+    <title>Grid Adaptive Pager</title>
     <meta charset="utf-8">
     <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
     <link rel="stylesheet" href="/packages/html/assets/styles.css">
     <script src="/packages/html/assets/scripts.js"></script>
-    <script src="/packages/html/dist/index.js"></script>
 </head>
 <body id="app" class="k-body">
     <style>
         #test-area {
-            grid-template-columns: 1fr;
             align-items: top;
         }
         th {
@@ -19,7 +17,7 @@
         }
 
     </style>
-    <div id="test-area" class="grid">
+    <div id="test-area" class="k-d-grid k-grid-cols-1">
         <span>LTR</span>
         <section>
             <div class="k-pane-wrapper k-widget">
@@ -29,10 +27,10 @@
                             <div class="k-grid k-widget k-grid-display-block k-grid-mobile k-editable">
                                 <div class="k-pager-wrap k-grid-pager k-widget k-floatwrap k-pager-sm">
                                     <a class="k-link k-pager-nav k-pager-first">
-                                        <i is="Icon" name="arrow-end-left"></i>
+                                        <span class="k-icon k-i-arrow-end-left"></span>
                                     </a>
                                     <a class="k-link k-pager-nav">
-                                        <i is="Icon" name="arrow-w"></i>
+                                        <span class="k-icon k-i-arrow-w"></span>
                                     </a>
                                     <div class="k-pager-numbers-wrap">
                                         <select class="k-picker k-dropdown-list k-dropdown k-rounded-md">
@@ -54,10 +52,10 @@
                                         </ul>
                                     </div>
                                     <a class="k-link k-pager-nav k-state-disabled">
-                                        <i is="Icon" name="arrow-e"></i>
+                                        <span class="k-icon k-i-arrow-e"></span>
                                     </a>
                                     <a class="k-link k-pager-nav k-pager-last k-state-disabled">
-                                        <i is="Icon" name="arrow-end-right"></i>
+                                        <span class="k-icon k-i-arrow-end-right"></span>
                                     </a>
                                     <span class="k-pager-info k-label">61 - 77 of 77 items</span>
                                 </div>
@@ -76,10 +74,10 @@
                             <div class="k-grid k-widget k-grid-display-block k-grid-mobile k-editable">
                                 <div class="k-pager-wrap k-grid-pager k-widget k-floatwrap k-pager-sm">
                                     <a class="k-link k-pager-nav k-pager-first">
-                                        <i is="Icon" name="arrow-end-left"></i>
+                                        <span class="k-icon k-i-arrow-end-left"></span>
                                     </a>
                                     <a class="k-link k-pager-nav">
-                                        <i is="Icon" name="arrow-w"></i>
+                                        <span class="k-icon k-i-arrow-w"></span>
                                     </a>
                                     <div class="k-pager-numbers-wrap">
                                         <select class="k-picker k-dropdown-list k-dropdown k-rounded-md">
@@ -104,10 +102,10 @@
                                         </ul>
                                     </div>
                                     <a class="k-link k-pager-nav k-state-disabled">
-                                        <i is="Icon" name="arrow-e"></i>
+                                        <span class="k-icon k-i-arrow-e"></span>
                                     </a>
                                     <a class="k-link k-pager-nav k-pager-last k-state-disabled">
-                                        <i is="Icon" name="arrow-end-right"></i>
+                                        <span class="k-icon k-i-arrow-end-right"></span>
                                     </a>
                                     <span class="k-pager-info k-label">61 - 77 of 77 items</span>
                                 </div>

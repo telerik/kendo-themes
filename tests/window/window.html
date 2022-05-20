@@ -1,80 +1,92 @@
 <!doctype html>
-<html lang="en" class="k-no-animations">
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width:15px;">
 <head>
     <title>Window</title>
     <meta charset="utf-8">
     <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
     <link rel="stylesheet" href="/packages/html/assets/styles.css">
     <script src="/packages/html/assets/scripts.js"></script>
-    <script src="/packages/html/dist/index.js"></script>
 </head>
 <body id="app" class="k-body">
     <style>
-        /* test page overrides */
         .k-window {
             position: relative;
         }
         #test-area {
-            grid-template-columns: repeat(2, 1fr);
             align-items: start;
-        }
-        .grid-single {
-            display: grid;
         }
 
     </style>
-    <div id="test-area" class="grid">
-        <section class="grid-single">
+    <div id="test-area" class="k-d-grid k-grid-cols-2">
+        <section class="k-d-grid">
             <div class="k-widget k-window">
                 <div class="k-window-titlebar k-header">
                     <span class="k-window-title">jQuery window</span>
                     <div class="k-window-actions">
-                        <button is="Button" fillMode="flat" icon="window-minimize"></button>
-                        <button is="Button" fillMode="flat" icon="window-maximize"></button>
-                        <button is="Button" fillMode="flat" icon="close"></button>
+                        <button class="k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                            <span class="k-button-icon k-icon k-i-window-minimize"></span>
+                        </button>
+                        <button class="k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                            <span class="k-button-icon k-icon k-i-window-maximize"></span>
+                        </button>
+                        <button class="k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                            <span class="k-button-icon k-icon k-i-close"></span>
+                        </button>
                     </div>
                 </div>
-                <div class="k-window-content"> jQuery window content </div>
+                <div class="k-window-content">jQuery window content</div>
             </div>
         </section>
-        <section class="grid-single">
+        <section class="k-d-grid">
             <div class="k-widget k-window">
                 <div class="k-window-titlebar k-header">
                     <span class="k-window-title"></span>
                     <div class="k-window-actions">
-                        <button is="Button" fillMode="flat" icon="window-minimize"></button>
-                        <button is="Button" fillMode="flat" icon="window-maximize"></button>
-                        <button is="Button" fillMode="flat" icon="close"></button>
+                        <button class="k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                            <span class="k-button-icon k-icon k-i-window-minimize"></span>
+                        </button>
+                        <button class="k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                            <span class="k-button-icon k-icon k-i-window-maximize"></span>
+                        </button>
+                        <button class="k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                            <span class="k-button-icon k-icon k-i-close"></span>
+                        </button>
                     </div>
                 </div>
-                <div class="k-window-content"> jQuery window with no title specified </div>
+                <div class="k-window-content">jQuery window with no title specified</div>
             </div>
         </section>
-        <section class="grid-single">
+        <section class="k-d-grid">
             <div class="k-widget k-window">
                 <div class="k-window-titlebar k-header">
                     <span class="k-window-title"></span>
                     <div class="k-window-actions"></div>
                 </div>
-                <div class="k-window-content"> jQuery window with empty title and no actions </div>
+                <div class="k-window-content">jQuery window with empty title and no actions</div>
             </div>
         </section>
-        <section class="grid-single">
+        <section class="k-d-grid">
             <div class="k-widget k-window k-window-titleless">
-                <div class="k-window-content"> jQuery window without a title </div>
+                <div class="k-window-content">jQuery window without a title</div>
             </div>
         </section>
-        <section class="grid-single">
+        <section class="k-d-grid">
             <div class="k-widget k-window k-window-minimized">
                 <div class="k-window-titlebar k-header">
                     <span class="k-window-title">jQuery Window minimized</span>
                     <div class="k-window-actions">
-                        <button is="Button" fillMode="flat" icon="window-minimize"></button>
-                        <button is="Button" fillMode="flat" icon="window-maximize"></button>
-                        <button is="Button" fillMode="flat" icon="close"></button>
+                        <button class="k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                            <span class="k-button-icon k-icon k-i-window-minimize"></span>
+                        </button>
+                        <button class="k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                            <span class="k-button-icon k-icon k-i-window-maximize"></span>
+                        </button>
+                        <button class="k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                            <span class="k-button-icon k-icon k-i-close"></span>
+                        </button>
                     </div>
                 </div>
-                <div class="k-window-content" hidden> jQuery Window content </div>
+                <div class="k-window-content" hidden="">jQuery Window content</div>
             </div>
         </section>
     </div>

@@ -1,12 +1,11 @@
 <!doctype html>
-<html lang="en" class="k-no-animations">
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width:15px;">
 <head>
-    <title>Action Sheet -- Position</title>
+    <title>ActionSheet Position</title>
     <meta charset="utf-8">
     <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
     <link rel="stylesheet" href="/packages/html/assets/styles.css">
     <script src="/packages/html/assets/scripts.js"></script>
-    <script src="/packages/html/dist/index.js"></script>
 </head>
 <body id="app" class="k-body">
     <style>
@@ -19,17 +18,16 @@
             max-width: 200px;
             max-height: 280px;
         }
-
     </style>
     <div id="test-area">
         <div class="k-actionsheet-container">
             <div class="k-overlay"></div>
             <div class="k-actionsheet k-actionsheet-top">
-                <div class="k-actionsheet-header"> Top action sheet </div>
+                <div class="k-actionsheet-header">Top action sheet</div>
                 <ul class="k-actionsheet-items">
                     <li class="k-actionsheet-item">
                         <a href="#" class="k-actionsheet-action">
-                            <i is="Icon" class="k-actionsheet-item-icon" name="cog"></i>
+                            <span class="k-actionsheet-item-icon k-icon k-i-cog"></span>
                             <span class="k-actionsheet-item-text">
                                 <span class="k-actionsheet-item-title">Action</span>
                                 <span class="k-actionsheet-item-description">Action description</span>
@@ -38,7 +36,7 @@
                     </li>
                     <li class="k-actionsheet-item">
                         <a href="#" class="k-actionsheet-action k-state-hover">
-                            <i is="Icon" class="k-actionsheet-item-icon" name="cog"></i>
+                            <span class="k-actionsheet-item-icon k-icon k-i-cog"></span>
                             <span class="k-actionsheet-item-text">
                                 <span class="k-actionsheet-item-title">Hover action</span>
                                 <span class="k-actionsheet-item-description">Action Description</span>
@@ -47,7 +45,7 @@
                     </li>
                     <li class="k-actionsheet-item">
                         <a href="#" class="k-actionsheet-action k-state-focus">
-                            <i is="Icon" class="k-actionsheet-item-icon" name="cog"></i>
+                            <span class="k-actionsheet-item-icon k-icon k-i-cog"></span>
                             <span class="k-actionsheet-item-text">
                                 <span class="k-actionsheet-item-title">Focus action</span>
                                 <span class="k-actionsheet-item-description">Action Description</span>
@@ -56,7 +54,7 @@
                     </li>
                     <li class="k-actionsheet-item">
                         <a href="#" class="k-actionsheet-action k-state-disabled">
-                            <i is="Icon" class="k-actionsheet-item-icon" name="cog"></i>
+                            <span class="k-actionsheet-item-icon k-icon k-i-cog"></span>
                             <span class="k-actionsheet-item-text">
                                 <span class="k-actionsheet-item-title">Disabled action</span>
                                 <span class="k-actionsheet-item-description">Action description</span>
@@ -65,7 +63,7 @@
                     </li>
                     <li class="k-actionsheet-item">
                         <a href="#" class="k-actionsheet-action">
-                            <i is="Icon" class="k-actionsheet-item-icon" name="cog"></i>
+                            <span class="k-actionsheet-item-icon k-icon k-i-cog"></span>
                             <span class="k-actionsheet-item-text">
                                 <span class="k-actionsheet-item-title">Action</span>
                                 <span class="k-actionsheet-item-description">Some longer subtitle to break on multiple rows, for testing purposes</span>
@@ -73,11 +71,11 @@
                         </a>
                     </li>
                 </ul>
-                <hr class="k-hr" />
+                <hr class="k-hr">
                 <ul class="k-actionsheet-items">
                     <li class="k-actionsheet-item">
                         <a href="#" class="k-actionsheet-action">
-                            <i is="Icon" class="k-actionsheet-item-icon" name="cog"></i>
+                            <span class="k-actionsheet-item-icon k-icon k-i-cog"></span>
                             <span class="k-actionsheet-item-text">
                                 <span class="k-actionsheet-item-title">Cancel</span>
                                 <span class="k-actionsheet-item-description">Action in second group</span>
@@ -91,7 +89,7 @@
                 <ul class="k-actionsheet-items">
                     <li class="k-actionsheet-item">
                         <a href="#" class="k-actionsheet-action">
-                            <i is="Icon" class="k-actionsheet-item-icon" name="cog"></i>
+                            <span class="k-actionsheet-item-icon k-icon k-i-cog"></span>
                             <span class="k-actionsheet-item-text">
                                 <span class="k-actionsheet-item-title">Action</span>
                                 <span class="k-actionsheet-item-description">Action description</span>
@@ -100,7 +98,7 @@
                     </li>
                     <li class="k-actionsheet-item">
                         <a href="#" class="k-actionsheet-action k-state-hover">
-                            <i is="Icon" class="k-actionsheet-item-icon" name="cog"></i>
+                            <span class="k-actionsheet-item-icon k-icon k-i-cog"></span>
                             <span class="k-actionsheet-item-text">
                                 <span class="k-actionsheet-item-title">Hover action</span>
                                 <span class="k-actionsheet-item-description">Action Description</span>
@@ -109,7 +107,7 @@
                     </li>
                     <li class="k-actionsheet-item">
                         <a href="#" class="k-actionsheet-action k-state-focus">
-                            <i is="Icon" class="k-actionsheet-item-icon" name="cog"></i>
+                            <span class="k-actionsheet-item-icon k-icon k-i-cog"></span>
                             <span class="k-actionsheet-item-text">
                                 <span class="k-actionsheet-item-title">Focus action</span>
                                 <span class="k-actionsheet-item-description">Action Description</span>
@@ -118,7 +116,7 @@
                     </li>
                     <li class="k-actionsheet-item">
                         <a href="#" class="k-actionsheet-action k-state-disabled">
-                            <i is="Icon" class="k-actionsheet-item-icon" name="cog"></i>
+                            <span class="k-actionsheet-item-icon k-icon k-i-cog"></span>
                             <span class="k-actionsheet-item-text">
                                 <span class="k-actionsheet-item-title">Disabled action</span>
                                 <span class="k-actionsheet-item-description">Action description</span>
@@ -127,7 +125,7 @@
                     </li>
                     <li class="k-actionsheet-item">
                         <a href="#" class="k-actionsheet-action">
-                            <i is="Icon" class="k-actionsheet-item-icon" name="cog"></i>
+                            <span class="k-actionsheet-item-icon k-icon k-i-cog"></span>
                             <span class="k-actionsheet-item-text">
                                 <span class="k-actionsheet-item-title">Action</span>
                                 <span class="k-actionsheet-item-description">Some longer subtitle to break on multiple rows, for testing purposes</span>
@@ -135,11 +133,11 @@
                         </a>
                     </li>
                 </ul>
-                <hr class="k-hr" />
+                <hr class="k-hr">
                 <ul class="k-actionsheet-items">
                     <li class="k-actionsheet-item">
                         <a href="#" class="k-actionsheet-action">
-                            <i is="Icon" class="k-actionsheet-item-icon" name="cog"></i>
+                            <span class="k-actionsheet-item-icon k-icon k-i-cog"></span>
                             <span class="k-actionsheet-item-text">
                                 <span class="k-actionsheet-item-title">Cancel</span>
                                 <span class="k-actionsheet-item-description">Action in second group</span>
@@ -153,7 +151,7 @@
                 <ul class="k-actionsheet-items">
                     <li class="k-actionsheet-item">
                         <a href="#" class="k-actionsheet-action">
-                            <i is="Icon" class="k-actionsheet-item-icon" name="cog"></i>
+                            <span class="k-actionsheet-item-icon k-icon k-i-cog"></span>
                             <span class="k-actionsheet-item-text">
                                 <span class="k-actionsheet-item-title">Action</span>
                                 <span class="k-actionsheet-item-description">Action description</span>
@@ -162,7 +160,7 @@
                     </li>
                     <li class="k-actionsheet-item">
                         <a href="#" class="k-actionsheet-action k-state-hover">
-                            <i is="Icon" class="k-actionsheet-item-icon" name="cog"></i>
+                            <span class="k-actionsheet-item-icon k-icon k-i-cog"></span>
                             <span class="k-actionsheet-item-text">
                                 <span class="k-actionsheet-item-title">Hover action</span>
                                 <span class="k-actionsheet-item-description">Action Description</span>
@@ -171,7 +169,7 @@
                     </li>
                     <li class="k-actionsheet-item">
                         <a href="#" class="k-actionsheet-action k-state-focus">
-                            <i is="Icon" class="k-actionsheet-item-icon" name="cog"></i>
+                            <span class="k-actionsheet-item-icon k-icon k-i-cog"></span>
                             <span class="k-actionsheet-item-text">
                                 <span class="k-actionsheet-item-title">Focus action</span>
                                 <span class="k-actionsheet-item-description">Action Description</span>
@@ -180,7 +178,7 @@
                     </li>
                     <li class="k-actionsheet-item">
                         <a href="#" class="k-actionsheet-action k-state-disabled">
-                            <i is="Icon" class="k-actionsheet-item-icon" name="cog"></i>
+                            <span class="k-actionsheet-item-icon k-icon k-i-cog"></span>
                             <span class="k-actionsheet-item-text">
                                 <span class="k-actionsheet-item-title">Disabled action</span>
                                 <span class="k-actionsheet-item-description">Action description</span>
@@ -189,7 +187,7 @@
                     </li>
                     <li class="k-actionsheet-item">
                         <a href="#" class="k-actionsheet-action">
-                            <i is="Icon" class="k-actionsheet-item-icon" name="cog"></i>
+                            <span class="k-actionsheet-item-icon k-icon k-i-cog"></span>
                             <span class="k-actionsheet-item-text">
                                 <span class="k-actionsheet-item-title">Action</span>
                                 <span class="k-actionsheet-item-description">Some longer subtitle to break on multiple rows, for testing purposes</span>
@@ -197,11 +195,11 @@
                         </a>
                     </li>
                 </ul>
-                <hr class="k-hr" />
+                <hr class="k-hr">
                 <ul class="k-actionsheet-items">
                     <li class="k-actionsheet-item">
                         <a href="#" class="k-actionsheet-action">
-                            <i is="Icon" class="k-actionsheet-item-icon" name="cog"></i>
+                            <span class="k-actionsheet-item-icon k-icon k-i-cog"></span>
                             <span class="k-actionsheet-item-text">
                                 <span class="k-actionsheet-item-title">Cancel</span>
                                 <span class="k-actionsheet-item-description">Action in second group</span>
@@ -211,11 +209,11 @@
                 </ul>
             </div>
             <div class="k-actionsheet k-actionsheet-bottom">
-                <div class="k-actionsheet-header"> Bottom action sheet </div>
+                <div class="k-actionsheet-header">Bottom action sheet</div>
                 <ul class="k-actionsheet-items">
                     <li class="k-actionsheet-item">
                         <a href="#" class="k-actionsheet-action">
-                            <i is="Icon" class="k-actionsheet-item-icon" name="cog"></i>
+                            <span class="k-actionsheet-item-icon k-icon k-i-cog"></span>
                             <span class="k-actionsheet-item-text">
                                 <span class="k-actionsheet-item-title">Action</span>
                                 <span class="k-actionsheet-item-description">Action description</span>
@@ -224,7 +222,7 @@
                     </li>
                     <li class="k-actionsheet-item">
                         <a href="#" class="k-actionsheet-action k-state-hover">
-                            <i is="Icon" class="k-actionsheet-item-icon" name="cog"></i>
+                            <span class="k-actionsheet-item-icon k-icon k-i-cog"></span>
                             <span class="k-actionsheet-item-text">
                                 <span class="k-actionsheet-item-title">Hover action</span>
                                 <span class="k-actionsheet-item-description">Action Description</span>
@@ -233,7 +231,7 @@
                     </li>
                     <li class="k-actionsheet-item">
                         <a href="#" class="k-actionsheet-action k-state-focus">
-                            <i is="Icon" class="k-actionsheet-item-icon" name="cog"></i>
+                            <span class="k-actionsheet-item-icon k-icon k-i-cog"></span>
                             <span class="k-actionsheet-item-text">
                                 <span class="k-actionsheet-item-title">Focus action</span>
                                 <span class="k-actionsheet-item-description">Action Description</span>
@@ -242,7 +240,7 @@
                     </li>
                     <li class="k-actionsheet-item">
                         <a href="#" class="k-actionsheet-action k-state-disabled">
-                            <i is="Icon" class="k-actionsheet-item-icon" name="cog"></i>
+                            <span class="k-actionsheet-item-icon k-icon k-i-cog"></span>
                             <span class="k-actionsheet-item-text">
                                 <span class="k-actionsheet-item-title">Disabled action</span>
                                 <span class="k-actionsheet-item-description">Action description</span>
@@ -251,7 +249,7 @@
                     </li>
                     <li class="k-actionsheet-item">
                         <a href="#" class="k-actionsheet-action">
-                            <i is="Icon" class="k-actionsheet-item-icon" name="cog"></i>
+                            <span class="k-actionsheet-item-icon k-icon k-i-cog"></span>
                             <span class="k-actionsheet-item-text">
                                 <span class="k-actionsheet-item-title">Action</span>
                                 <span class="k-actionsheet-item-description">Some longer subtitle to break on multiple rows, for testing purposes</span>
@@ -259,11 +257,11 @@
                         </a>
                     </li>
                 </ul>
-                <hr class="k-hr" />
+                <hr class="k-hr">
                 <ul class="k-actionsheet-items">
                     <li class="k-actionsheet-item">
                         <a href="#" class="k-actionsheet-action">
-                            <i is="Icon" class="k-actionsheet-item-icon" name="cog"></i>
+                            <span class="k-actionsheet-item-icon k-icon k-i-cog"></span>
                             <span class="k-actionsheet-item-text">
                                 <span class="k-actionsheet-item-title">Cancel</span>
                                 <span class="k-actionsheet-item-description">Action in second group</span>

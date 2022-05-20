@@ -1,60 +1,71 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width:15px;">
 <head>
-    <title>File Manager Grid View</title>
+    <title>FileManager Grid View</title>
     <meta charset="utf-8">
     <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
     <link rel="stylesheet" href="/packages/html/assets/styles.css">
     <script src="/packages/html/assets/scripts.js"></script>
-    <script src="/packages/html/dist/index.js"></script>
 </head>
 <body id="app" class="k-body">
-    <div id="test-area" class="grid k-grid-cols-1">
+    <div id="test-area" class="k-d-grid k-grid-cols-1">
         <span>File Manager Grid View</span>
         <div class="k-widget k-filemanager">
-            <!-- Header -->
             <div class="k-filemanager-header">
                 <div class="k-filemanager-toolbar k-toolbar k-widget k-toolbar-resizable">
-                    <button is="Button">New Folder</button>
-                    <button is="Button">Upload</button>
-                    <div class="k-button-group">
-                        <button is="Button" icon="grid-layout"></button>
-                        <button is="Button" icon="grid" selected></button>
+                    <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                        <span class="k-button-text">New Folder</span>
+                    </button>
+                    <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                        <span class="k-button-text">Upload</span>
+                    </button>
+                    <div class="k-button-group k-button-group-solid">
+                        <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                            <span class="k-button-icon k-icon k-i-grid-layout"></span>
+                        </button>
+                        <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button k-selected">
+                            <span class="k-button-icon k-icon k-i-grid"></span>
+                        </button>
                     </div>
                 </div>
             </div>
             <div class="k-filemanager-content-container">
-                <!-- Navigation -->
                 <div class="k-filemanager-navigation">
-                    <ul is="Treeview" class="k-filemanager-treeview">
-                        <li>Folder</li>
-                    </ul>
+                    <div class="k-filemanager-treeview k-treeview k-treeview-md">
+                        <ul class="k-treeview-lines k-treeview-group">
+                            <li class="k-treeview-item">
+                                <span class="k-treeview-mid">
+                                    <span class="k-treeview-leaf">
+                                        <span class="k-treeview-leaf-text">Folder</span>
+                                    </span>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <!-- Content -->
                 <div class="k-filemanager-content">
                     <nav class="k-filemanager-breadcrumb k-widget k-breadcrumb">
                         <ol class="k-breadcrumb-container">
                             <li class="k-breadcrumb-item k-breadcrumb-root-item">
                                 <a class="k-breadcrumb-root-link  k-breadcrumb-icon-link">
-                                    <i is="Icon" name="home"></i>
+                                    <span class="k-icon k-i-home"></span>
                                 </a>
                             </li>
                         </ol>
                     </nav>
-                    <!-- View -->
                     <div class="k-filemanager-grid k-grid k-widget k-grid-display-block k-editable">
                         <div class="k-grid-header">
                             <div class="k-grid-header-wrap k-auto-scrollable">
                                 <table>
                                     <colgroup>
-                                        <col />
-                                        <col />
-                                        <col />
+                                        <col>
+                                        <col>
+                                        <col>
                                     </colgroup>
                                     <thead>
                                         <tr>
                                             <th class="k-header k-sorted">
-                                                <a class="k-link">Name <i is="Icon" name="sort-asc-sm"></i>
+                                                <a class="k-link">Name <span class="k-icon k-i-sort-asc-sm"></span>
                                                 </a>
                                             </th>
                                             <th class="k-header">
@@ -72,14 +83,14 @@
                             <table class="k-selectable">
                                 <colgroup>
                                     <col class="k-sorted">
-                                    <col />
-                                    <col />
+                                    <col>
+                                    <col>
                                 </colgroup>
                                 <tbody>
                                     <tr>
                                         <td>
                                             <span class="k-file-preview">
-                                                <i is="Icon" class="k-file-icon" name="folder"></i>
+                                                <span class="k-file-icon k-icon k-i-folder"></span>
                                             </span>
                                             <span class="k-file-name">Folder</span>
                                         </td>
@@ -89,7 +100,7 @@
                                     <tr class="k-alt">
                                         <td>
                                             <span class="k-file-preview">
-                                                <i is="Icon" class="k-file-icon" name="file"></i>
+                                                <span class="k-file-icon k-icon k-i-file"></span>
                                             </span>
                                             <span class="k-file-name">file.png</span>
                                         </td>
@@ -101,62 +112,72 @@
                         </div>
                     </div>
                 </div>
-                <!-- Preview -->
-                <div class="k-filemanager-preview" hidden></div>
+                <div class="k-filemanager-preview" hidden=""></div>
             </div>
         </div>
         <span>File Manager Grid View Resizing</span>
         <div class="k-widget k-filemanager">
-            <!-- Header -->
             <div class="k-filemanager-header">
                 <div class="k-filemanager-toolbar k-toolbar k-widget k-toolbar-resizable">
-                    <button is="Button">New Folder</button>
-                    <button is="Button">Upload</button>
-                    <div class="k-button-group">
-                        <button is="Button" icon="grid-layout"></button>
-                        <button is="Button" icon="grid" selected></button>
+                    <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                        <span class="k-button-text">New Folder</span>
+                    </button>
+                    <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                        <span class="k-button-text">Upload</span>
+                    </button>
+                    <div class="k-button-group k-button-group-solid">
+                        <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                            <span class="k-button-icon k-icon k-i-grid-layout"></span>
+                        </button>
+                        <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button k-selected">
+                            <span class="k-button-icon k-icon k-i-grid"></span>
+                        </button>
                     </div>
                 </div>
             </div>
             <div class="k-filemanager-content-container">
-                <!-- Navigation -->
                 <div class="k-filemanager-navigation" style="width: 234px;">
                     <div class="k-filemanager-navigation-container">
-                        <ul is="Treeview" class="k-filemanager-treeview">
-                            <li>Folder</li>
-                        </ul>
+                        <div class="k-filemanager-treeview k-treeview k-treeview-md">
+                            <ul class="k-treeview-lines k-treeview-group">
+                                <li class="k-treeview-item">
+                                    <span class="k-treeview-mid">
+                                        <span class="k-treeview-leaf">
+                                            <span class="k-treeview-leaf-text">Folder</span>
+                                        </span>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <!-- Resizing Handle -->
                 <div class="k-splitbar k-splitbar-horizontal k-splitbar-draggable-horizontal k-filemanager-splitbar-navigation k-state-focused">
                     <span class="k-resize-handle"></span>
                 </div>
-                <!-- Content -->
                 <div class="k-filemanager-content">
                     <nav class="k-filemanager-breadcrumb k-widget k-breadcrumb">
                         <ol class="k-breadcrumb-container">
                             <li class="k-breadcrumb-item k-breadcrumb-root-item">
                                 <a class="k-breadcrumb-root-link  k-breadcrumb-icon-link">
-                                    <i is="Icon" name="home"></i>
+                                    <span class="k-icon k-i-home"></span>
                                 </a>
                             </li>
                         </ol>
                     </nav>
-                    <!-- View -->
                     <div class="k-filemanager-view k-filemanager-view-grid">
                         <div class="k-filemanager-grid k-grid k-widget k-grid-display-block k-editable">
                             <div class="k-grid-header">
                                 <div class="k-grid-header-wrap k-auto-scrollable">
                                     <table>
                                         <colgroup>
-                                            <col />
-                                            <col />
-                                            <col />
+                                            <col>
+                                            <col>
+                                            <col>
                                         </colgroup>
                                         <thead>
                                             <tr>
                                                 <th class="k-header k-sorted">
-                                                    <a class="k-link">Name <i is="Icon" name="sort-asc-sm"></i>
+                                                    <a class="k-link">Name <span class="k-icon k-i-sort-asc-sm"></span>
                                                     </a>
                                                 </th>
                                                 <th class="k-header">
@@ -174,14 +195,14 @@
                                 <table class="k-selectable">
                                     <colgroup>
                                         <col class="k-sorted">
-                                        <col />
-                                        <col />
+                                        <col>
+                                        <col>
                                     </colgroup>
                                     <tbody>
                                         <tr>
                                             <td>
                                                 <span class="k-file-preview">
-                                                    <i is="Icon" class="k-file-icon" name="folder"></i>
+                                                    <span class="k-file-icon k-icon k-i-folder"></span>
                                                 </span>
                                                 <span class="k-file-name">Folder</span>
                                             </td>
@@ -191,7 +212,7 @@
                                         <tr class="k-alt">
                                             <td>
                                                 <span class="k-file-preview">
-                                                    <i is="Icon" class="k-file-icon" name="file"></i>
+                                                    <span class="k-file-icon k-icon k-i-file"></span>
                                                 </span>
                                                 <span class="k-file-name">file.png</span>
                                             </td>
@@ -204,9 +225,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- Preview -->
-                <div class="k-filemanager-preview" hidden>
-                </div>
+                <div class="k-filemanager-preview" hidden=""></div>
             </div>
         </div>
     </div>

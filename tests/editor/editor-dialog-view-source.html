@@ -1,12 +1,11 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width:15px;">
 <head>
-    <title>Editor view source dialog</title>
+    <title>Editor Dialog View Source</title>
     <meta charset="utf-8">
     <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
     <link rel="stylesheet" href="/packages/html/assets/styles.css">
     <script src="/packages/html/assets/scripts.js"></script>
-    <script src="/packages/html/dist/index.js"></script>
 </head>
 <body id="app" class="k-body">
     <style>
@@ -26,15 +25,23 @@
                 <div class="k-window-titlebar">
                     <span class="k-window-title">View HTML</span>
                     <div class="k-window-actions">
-                        <button is="Button" fillMode="flat" icon="close"></button>
+                        <button class="k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                            <span class="k-button-icon k-icon k-i-close"></span>
+                        </button>
                     </div>
                 </div>
                 <div class="k-window-content">
-                    <textarea is="Textarea" class="k-editor-textarea"></textarea>
+                    <span class="k-editor-textarea k-textarea k-input k-input-md k-input-solid k-rounded-md">
+                        <textarea class="k-input-inner" placeholder=""></textarea>
+                    </span>
                 </div>
-                <div is="ActionButtons" class="k-window-buttons" alignment="end">
-                    <button is="Button">Cancel</button>
-                    <button is="Button" themeColor="primary">Update</button>
+                <div class="k-actions k-actions-end k-actions-horizontal k-window-buttons">
+                    <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                        <span class="k-button-text">Cancel</span>
+                    </button>
+                    <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md">
+                        <span class="k-button-text">Update</span>
+                    </button>
                 </div>
             </div>
         </section>

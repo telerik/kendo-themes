@@ -1,30 +1,35 @@
 <!doctype html>
-<html lang="en" class="k-no-animations">
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width:15px;">
 <head>
     <title>Grid Editing</title>
     <meta charset="utf-8">
     <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
     <link rel="stylesheet" href="/packages/html/assets/styles.css">
     <script src="/packages/html/assets/scripts.js"></script>
-    <script src="/packages/html/dist/index.js"></script>
 </head>
 <body id="app" class="k-body">
-    <div id="test-area" class="grid">
-        <kendo-grid class="k-widget k-grid k-grid-no-scrollbar">
-            <kendo-grid-toolbar class="k-toolbar k-grid-toolbar">
-                <button is="Button">Add new</button>
-                <button is="Button">Save Changes</button>
-                <button is="Button">Cancel Changes</button>
-            </kendo-grid-toolbar>
+    <div id="test-area" class="k-d-grid">
+        <div class="k-widget k-grid k-grid-no-scrollbar">
+            <div class="k-toolbar k-grid-toolbar">
+                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                    <span class="k-button-text">Add new</span>
+                </button>
+                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                    <span class="k-button-text">Save Changes</span>
+                </button>
+                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                    <span class="k-button-text">Cancel Changes</span>
+                </button>
+            </div>
             <div class="k-grid-aria-root">
                 <div class="k-grid-header">
                     <div class="k-grid-header-wrap">
                         <table>
                             <colgroup>
-                                <col />
-                                <col />
-                                <col />
-                                <col style="width: 300px;" />
+                                <col>
+                                <col>
+                                <col>
+                                <col style="width: 300px;">
                             </colgroup>
                             <thead>
                                 <tr>
@@ -46,32 +51,54 @@
                         </table>
                     </div>
                 </div>
-                <kendo-grid-list class="k-grid-container">
+                <div class="k-grid-container">
                     <div class="k-grid-content">
                         <div>
                             <table class="k-grid-table">
                                 <colgroup>
-                                    <col />
-                                    <col />
-                                    <col />
-                                    <col style="width: 300px;" />
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col style="width: 300px;">
                                 </colgroup>
                                 <tbody>
                                     <tr class="k-grid-add-row k-grid-edit-row">
                                         <td>
-                                            <input is="Textbox" value="Towel" />
+                                            <span class="k-textbox k-input k-input-md k-input-solid k-rounded-md">
+                                                <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="Towel">
+                                                <span class="k-clear-value">
+                                                    <span class="k-icon k-i-x"></span>
+                                                </span>
+                                            </span>
                                         </td>
                                         <td>
-                                            <input is="NumericTextbox" value="42" />
+                                            <span class="k-numerictextbox k-input k-input-md k-input-solid k-rounded-md">
+                                                <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="42">
+                                                <span class="k-clear-value">
+                                                    <span class="k-icon k-i-x"></span>
+                                                </span>
+                                                <span class="k-input-spinner k-spin-button">
+                                                    <button class="k-spinner-increase k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                        <span class="k-button-icon k-icon k-i-arrow-n"></span>
+                                                    </button>
+                                                    <button class="k-spinner-decrease k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                        <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                                                    </button>
+                                                </span>
+                                            </span>
                                         </td>
                                         <td>
-                                            <input is="Checkbox" />
+                                            <span class="k-checkbox-wrap">
+                                                <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                            </span>
                                         </td>
                                         <td class="k-command-cell">
-                                            <button is="Button">Add</button>
-                                            <!--
-                                            -->
-                                            <button is="Button">Cancel</button>
+                                            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                                                <span class="k-button-text">Add</span>
+                                            </button>
+                                            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                                                <span class="k-button-text">Cancel</span>
+                                            </button>
                                         </td>
                                     </tr>
                                     <tr>
@@ -79,7 +106,9 @@
                                         <td>18</td>
                                         <td>false</td>
                                         <td class="k-command-cell">
-                                            <button is="Button">Remove</button>
+                                            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                                                <span class="k-button-text">Remove</span>
+                                            </button>
                                         </td>
                                     </tr>
                                     <tr class="k-alt">
@@ -87,28 +116,32 @@
                                         <td>19</td>
                                         <td>false</td>
                                         <td class="k-command-cell">
-                                            <button is="Button">Remove</button>
+                                            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                                                <span class="k-button-text">Remove</span>
+                                            </button>
                                         </td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
                     </div>
-                </kendo-grid-list>
+                </div>
             </div>
-        </kendo-grid>
+        </div>
         <div class="k-widget k-grid k-grid-no-scrollbar">
             <div class="k-toolbar k-grid-toolbar">
-                <button is="Button" icon="add">Add new record</button>
+                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                    <span class="k-button-icon k-icon k-i-add"></span>Add new record
+                </button>
             </div>
             <div class="k-grid-header">
                 <div class="k-grid-header-wrap">
                     <table>
                         <colgroup>
-                            <col />
-                            <col />
-                            <col />
-                            <col style="width:300px" />
+                            <col>
+                            <col>
+                            <col>
+                            <col style="width: 300px;">
                         </colgroup>
                         <thead>
                             <tr>
@@ -124,46 +157,68 @@
             <div class="k-grid-content">
                 <table style="height: auto;">
                     <colgroup>
-                        <col />
-                        <col />
-                        <col />
-                        <col style="width:300px" />
+                        <col>
+                        <col>
+                        <col>
+                        <col style="width: 300px;">
                     </colgroup>
                     <tbody>
                         <tr class="k-grid-edit-row">
                             <td>
-                                <input is="Textbox" value="Towel" required />
+                                <span class="k-textbox k-input k-input-md k-input-solid k-rounded-md k-required">
+                                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="Towel">
+                                    <span class="k-clear-value">
+                                        <span class="k-icon k-i-x"></span>
+                                    </span>
+                                </span>
                             </td>
                             <td>
-                                <input is="NumericTextbox" invalid />
+                                <span class="k-numerictextbox k-input k-input-md k-input-solid k-rounded-md k-invalid">
+                                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="">
+                                    <span class="k-input-validation-icon k-icon k-i-warning"></span>
+                                    <span class="k-input-spinner k-spin-button">
+                                        <button class="k-spinner-increase k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                            <span class="k-button-icon k-icon k-i-arrow-n"></span>
+                                        </button>
+                                        <button class="k-spinner-decrease k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                            <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                                        </button>
+                                    </span>
+                                </span>
                                 <div class="k-tooltip k-validator-tooltip k-tooltip-error k-invalid-msg">
-                                    <i is="Icon" class="k-tooltip-icon" name="warning"></i>
+                                    <span class="k-tooltip-icon k-icon k-i-warning"></span>
                                     <span class="k-tooltip-content">Price</span>
                                     <div class="k-callout k-callout-n"></div>
                                 </div>
                             </td>
                             <td>
-                                <input is="Checkbox" id="e77452cd-b3b5-4dc9-8210-17007584b695" name="Discontinued" />
-                                <label class="k-checkbox-label" for="e77452cd-b3b5-4dc9-8210-17007584b695">​</label>
+                                <span class="k-checkbox-wrap">
+                                    <input id="e77452cd-b3b5-4dc9-8210-17007584b695" type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                </span>
+                                <label class="k-checkbox-label" for="e77452cd-b3b5-4dc9-8210-17007584b695"></label>
                             </td>
                             <td class="k-command-cell">
-                                <button is="Button" icon="check" themeColor="primary">Update</button>
-                                <!--
-                                -->
-                                <button is="Button" icon="cancel">Cancel</button>
+                                <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md">
+                                    <span class="k-button-icon k-icon k-i-check"></span>Update
+                                </button>
+                                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                                    <span class="k-button-icon k-icon k-i-cancel"></span>Cancel
+                                </button>
                             </td>
                         </tr>
                         <tr class="k-alt k-grid-edit-row">
                             <td class="k-dirty-cell">
-                                <span class="k-dirty"></span> LongSingleWordTestLongSingleWordTestLongSingleWordTestLongSingleWordTest
+                                <span class="k-dirty"></span>LongSingleWordTestLongSingleWordTestLongSingleWordTestLongSingleWordTest
                             </td>
                             <td>18</td>
                             <td>false</td>
                             <td class="k-command-cell">
-                                <button is="Button" icon="edit">Edit</button>
-                                <!--
-                                -->
-                                <button is="Button" icon="close">Delete</button>
+                                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                                    <span class="k-button-icon k-icon k-i-edit"></span>Edit
+                                </button>
+                                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                                    <span class="k-button-icon k-icon k-i-close"></span>Delete
+                                </button>
                             </td>
                         </tr>
                         <tr>
@@ -171,10 +226,12 @@
                             <td>19</td>
                             <td>false</td>
                             <td class="k-command-cell">
-                                <button is="Button" icon="edit">Edit</button>
-                                <!--
-                                -->
-                                <button is="Button" icon="close">Delete</button>
+                                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                                    <span class="k-button-icon k-icon k-i-edit"></span>Edit
+                                </button>
+                                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                                    <span class="k-button-icon k-icon k-i-close"></span>Delete
+                                </button>
                             </td>
                         </tr>
                     </tbody>

@@ -1,76 +1,156 @@
 <!doctype html>
-<html lang="en" class="k-no-animations">
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width:15px;">
 <head>
     <title>Switch</title>
     <meta charset="utf-8">
     <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
     <link rel="stylesheet" href="/packages/html/assets/styles.css">
     <script src="/packages/html/assets/scripts.js"></script>
-    <script src="/packages/html/dist/index.js"></script>
+</head>
+<body id="app" class="k-body">
     <style>
         body {
             background: #fcfcfc;
         }
         #test-area {
             max-width: 600px;
-            grid-template-columns: 1fr 1fr 1fr;
         }
 
     </style>
-</head>
-<body id="app" class="k-body">
-    <div id="test-area" class="grid">
+    <div id="test-area" class="k-d-grid k-grid-cols-3">
         <span></span>
         <span>On</span>
         <span>Off</span>
         <span>Normal</span>
         <section>
-            <input is="Switch" checked />
+            <span class="k-switch k-switch-md k-switch-on">
+                <span class="k-switch-track k-rounded-full"></span>
+                <span class="k-switch-thumb-wrap">
+                    <span class="k-switch-thumb k-rounded-full"></span>
+                </span>
+            </span>
         </section>
         <section>
-            <input is="Switch" />
+            <span class="k-switch k-switch-md k-switch-off">
+                <span class="k-switch-track k-rounded-full"></span>
+                <span class="k-switch-thumb-wrap">
+                    <span class="k-switch-thumb k-rounded-full"></span>
+                </span>
+            </span>
         </section>
         <span>Hover</span>
         <section>
-            <input is="Switch" checked hover />
+            <span class="k-switch k-switch-md k-hover k-switch-on">
+                <span class="k-switch-track k-rounded-full"></span>
+                <span class="k-switch-thumb-wrap">
+                    <span class="k-switch-thumb k-rounded-full"></span>
+                </span>
+            </span>
         </section>
         <section>
-            <input is="Switch" hover />
+            <span class="k-switch k-switch-md k-hover k-switch-off">
+                <span class="k-switch-track k-rounded-full"></span>
+                <span class="k-switch-thumb-wrap">
+                    <span class="k-switch-thumb k-rounded-full"></span>
+                </span>
+            </span>
         </section>
         <span>Focus</span>
         <section>
-            <input is="Switch" checked focus />
+            <span class="k-switch k-switch-md k-focus k-switch-on">
+                <span class="k-switch-track k-rounded-full"></span>
+                <span class="k-switch-thumb-wrap">
+                    <span class="k-switch-thumb k-rounded-full"></span>
+                </span>
+            </span>
         </section>
         <section>
-            <input is="Switch" focus />
+            <span class="k-switch k-switch-md k-focus k-switch-off">
+                <span class="k-switch-track k-rounded-full"></span>
+                <span class="k-switch-thumb-wrap">
+                    <span class="k-switch-thumb k-rounded-full"></span>
+                </span>
+            </span>
         </section>
         <span>Disabled</span>
         <section>
-            <input is="Switch" checked disabled />
+            <span class="k-switch k-switch-md k-disabled k-switch-on">
+                <span class="k-switch-track k-rounded-full"></span>
+                <span class="k-switch-thumb-wrap">
+                    <span class="k-switch-thumb k-rounded-full"></span>
+                </span>
+            </span>
         </section>
         <section>
-            <input is="Switch" disabled />
+            <span class="k-switch k-switch-md k-disabled k-switch-off">
+                <span class="k-switch-track k-rounded-full"></span>
+                <span class="k-switch-thumb-wrap">
+                    <span class="k-switch-thumb k-rounded-full"></span>
+                </span>
+            </span>
         </section>
         <span>Localized</span>
         <section>
-            <input is="Switch" onLabel="On" offLabel="Off" checked />
+            <span class="k-switch k-switch-md k-switch-on">
+                <span class="k-switch-track k-rounded-full">
+                    <span class="k-switch-label-on">On</span>
+                    <span class="k-switch-label-off">Off</span>
+                </span>
+                <span class="k-switch-thumb-wrap">
+                    <span class="k-switch-thumb k-rounded-full"></span>
+                </span>
+            </span>
         </section>
         <section>
-            <input is="Switch" onLabel="On" offLabel="Off" />
+            <span class="k-switch k-switch-md k-switch-off">
+                <span class="k-switch-track k-rounded-full">
+                    <span class="k-switch-label-on">On</span>
+                    <span class="k-switch-label-off">Off</span>
+                </span>
+                <span class="k-switch-thumb-wrap">
+                    <span class="k-switch-thumb k-rounded-full"></span>
+                </span>
+            </span>
         </section>
         <span>RTL</span>
-        <section>
-            <input is="Switch" dir="rtl" checked />
+        <section dir="rtl">
+            <span class="k-switch k-switch-md k-switch-on">
+                <span class="k-switch-track k-rounded-full"></span>
+                <span class="k-switch-thumb-wrap">
+                    <span class="k-switch-thumb k-rounded-full"></span>
+                </span>
+            </span>
         </section>
-        <section>
-            <input is="Switch" dir="rtl" />
+        <section dir="rtl">
+            <span class="k-switch k-switch-md k-switch-off">
+                <span class="k-switch-track k-rounded-full"></span>
+                <span class="k-switch-thumb-wrap">
+                    <span class="k-switch-thumb k-rounded-full"></span>
+                </span>
+            </span>
         </section>
         <span></span>
-        <section>
-            <input is="Switch" dir="rtl" onLabel="On" offLabel="Off" checked />
+        <section dir="rtl">
+            <span class="k-switch k-switch-md k-switch-on">
+                <span class="k-switch-track k-rounded-full">
+                    <span class="k-switch-label-on">On</span>
+                    <span class="k-switch-label-off">Off</span>
+                </span>
+                <span class="k-switch-thumb-wrap">
+                    <span class="k-switch-thumb k-rounded-full"></span>
+                </span>
+            </span>
         </section>
-        <section>
-            <input is="Switch" dir="rtl" onLabel="On" offLabel="Off" />
+        <section dir="rtl">
+            <span class="k-switch k-switch-md k-switch-off">
+                <span class="k-switch-track k-rounded-full">
+                    <span class="k-switch-label-on">On</span>
+                    <span class="k-switch-label-off">Off</span>
+                </span>
+                <span class="k-switch-thumb-wrap">
+                    <span class="k-switch-thumb k-rounded-full"></span>
+                </span>
+            </span>
         </section>
     </div>
 </body>

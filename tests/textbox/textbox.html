@@ -1,12 +1,11 @@
 <!doctype html>
-<html lang="en" class="k-no-animations">
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width:15px;">
 <head>
-    <title>Textbox</title>
+    <title>TextBox</title>
     <meta charset="utf-8">
     <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
     <link rel="stylesheet" href="/packages/html/assets/styles.css">
     <script src="/packages/html/assets/scripts.js"></script>
-    <script src="/packages/html/dist/index.js"></script>
 </head>
 <body id="app" class="k-body">
     <style>
@@ -15,86 +14,159 @@
         }
 
     </style>
-    <div id="test-area" class="k-d-grid k-grid-cols-2">
-        <span>Textbox</span>
-        <span>Textbox RTL</span>
-        <!-- empty -->
+    <div id="test-area" class="k-d-grid k-grid-cols-2" style="max-width: 660px;">
+        <span>TextBox</span>
+        <span>TextBox RTL</span>
         <div>
-            <input is="Textbox" placeholder="Textbox..." />
-        </div>
-        <div dir="rtl">
-            <input is="Textbox" placeholder="Textbox..." />
-        </div>
-        <!-- normal -->
-        <div>
-            <input is="Textbox" value="Normal" />
-        </div>
-        <div dir="rtl">
-            <input is="Textbox" value="Normal" />
-        </div>
-        <!-- hover -->
-        <div>
-            <input is="Textbox" value="Hover" hover />
-        </div>
-        <div dir="rtl">
-            <input is="Textbox" value="Hover" hover />
-        </div>
-        <!-- focus -->
-        <div>
-            <input is="Textbox" value="Focus" focus />
-        </div>
-        <div dir="rtl">
-            <input is="Textbox" value="Focus" focus />
-        </div>
-        <!-- disabled -->
-        <div>
-            <input is="Textbox" value="Disabled" disabled />
-        </div>
-        <div dir="rtl">
-            <input is="Textbox" value="Disabled" disabled />
-        </div>
-        <!-- invalid -->
-        <div>
-            <input is="Textbox" value="Invalid" invalid />
-        </div>
-        <div dir="rtl">
-            <input is="Textbox" value="Invalid" invalid />
-        </div>
-        <!-- invalid focus -->
-        <div>
-            <input is="Textbox" value="Invalid focus" invalid focus />
-        </div>
-        <div dir="rtl">
-            <input is="Textbox" value="Invalid focus" invalid focus />
-        </div>
-        <!-- textbox prefix -->
-        <div placeholder="Prefix..." is="Textbox">
-            <span is="InputPrefix">
-                <span is="Icon" name="menu"></span>
-                <button is="Button" fillMode="clear" icon="calendar"></button>
-                <span class="k-input-separator"></span>
+            <span class="k-textbox k-input k-input-md k-input-solid k-rounded-md">
+                <input type="text" class="k-input-inner" placeholder="TextBox..." autocomplete="off" value="">
             </span>
         </div>
-        <div placeholder="Prefix..." dir="rtl" is="Textbox">
-            <span is="InputPrefix">
-                <span is="Icon" name="menu"></span>
-                <button is="Button" fillMode="clear" icon="calendar"></button>
-                <span class="k-input-separator"></span>
+        <div dir="rtl">
+            <span class="k-textbox k-input k-input-md k-input-solid k-rounded-md">
+                <input type="text" class="k-input-inner" placeholder="TextBox..." autocomplete="off" value="">
             </span>
         </div>
-        <!-- textbox suffix -->
-        <div placeholder="Suffix..." is="Textbox">
-            <span is="InputSuffix">
-                <span class="k-input-separator"></span>
-                <button is="Button" fillMode="clear" icon="calendar"></button>
-                <span is="Icon" name="bell"></span>
+        <div>
+            <span class="k-textbox k-input k-input-md k-input-solid k-rounded-md">
+                <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="Normal">
+                <span class="k-clear-value">
+                    <span class="k-icon k-i-x"></span>
+                </span>
             </span>
         </div>
-        <div placeholder="Suffix..." dir="rtl" is="Textbox">
-            <span is="InputSuffix">
-                <span class="k-input-separator"></span>
-                <button is="Button" fillMode="clear" icon="calendar"></button>
-                <span is="Icon" name="bell"></span>
+        <div dir="rtl">
+            <span class="k-textbox k-input k-input-md k-input-solid k-rounded-md">
+                <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="Normal">
+                <span class="k-clear-value">
+                    <span class="k-icon k-i-x"></span>
+                </span>
+            </span>
+        </div>
+        <div>
+            <span class="k-textbox k-input k-input-md k-input-solid k-rounded-md k-hover">
+                <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="Hover">
+                <span class="k-clear-value">
+                    <span class="k-icon k-i-x"></span>
+                </span>
+            </span>
+        </div>
+        <div dir="rtl">
+            <span class="k-textbox k-input k-input-md k-input-solid k-rounded-md k-hover">
+                <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="Hover">
+                <span class="k-clear-value">
+                    <span class="k-icon k-i-x"></span>
+                </span>
+            </span>
+        </div>
+        <div>
+            <span class="k-textbox k-input k-input-md k-input-solid k-rounded-md k-focus">
+                <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="Focus">
+                <span class="k-clear-value">
+                    <span class="k-icon k-i-x"></span>
+                </span>
+            </span>
+        </div>
+        <div dir="rtl">
+            <span class="k-textbox k-input k-input-md k-input-solid k-rounded-md k-focus">
+                <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="Focus">
+                <span class="k-clear-value">
+                    <span class="k-icon k-i-x"></span>
+                </span>
+            </span>
+        </div>
+        <div>
+            <span class="k-textbox k-input k-input-md k-input-solid k-rounded-md k-disabled">
+                <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="Disabled">
+            </span>
+        </div>
+        <div dir="rtl">
+            <span class="k-textbox k-input k-input-md k-input-solid k-rounded-md k-disabled">
+                <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="Disabled">
+            </span>
+        </div>
+        <div>
+            <span class="k-textbox k-input k-input-md k-input-solid k-rounded-md k-invalid">
+                <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="Invalid">
+                <span class="k-input-validation-icon k-icon k-i-warning"></span>
+                <span class="k-clear-value">
+                    <span class="k-icon k-i-x"></span>
+                </span>
+            </span>
+        </div>
+        <div dir="rtl">
+            <span class="k-textbox k-input k-input-md k-input-solid k-rounded-md k-invalid">
+                <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="Invalid">
+                <span class="k-input-validation-icon k-icon k-i-warning"></span>
+                <span class="k-clear-value">
+                    <span class="k-icon k-i-x"></span>
+                </span>
+            </span>
+        </div>
+        <div>
+            <span class="k-textbox k-input k-input-md k-input-solid k-rounded-md k-focus k-invalid">
+                <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="Invalid Focus">
+                <span class="k-input-validation-icon k-icon k-i-warning"></span>
+                <span class="k-clear-value">
+                    <span class="k-icon k-i-x"></span>
+                </span>
+            </span>
+        </div>
+        <div dir="rtl">
+            <span class="k-textbox k-input k-input-md k-input-solid k-rounded-md k-focus k-invalid">
+                <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="Invalid Focus">
+                <span class="k-input-validation-icon k-icon k-i-warning"></span>
+                <span class="k-clear-value">
+                    <span class="k-icon k-i-x"></span>
+                </span>
+            </span>
+        </div>
+        <div>
+            <span class="k-textbox k-input k-input-md k-input-solid k-rounded-md">
+                <span class="k-input-prefix">
+                    <span class="k-icon k-i-menu"></span>
+                    <button class="k-button k-button-md k-button-clear k-button-clear-base k-rounded-md k-icon-button">
+                        <span class="k-button-icon k-icon k-i-calendar"></span>
+                    </button>
+                    <span class="k-input-separator"></span>
+                </span>
+                <input type="text" class="k-input-inner" placeholder="Prefix..." autocomplete="off" value="">
+            </span>
+        </div>
+        <div dir="rtl">
+            <span class="k-textbox k-input k-input-md k-input-solid k-rounded-md">
+                <span class="k-input-prefix">
+                    <span class="k-icon k-i-menu"></span>
+                    <button class="k-button k-button-md k-button-clear k-button-clear-base k-rounded-md k-icon-button">
+                        <span class="k-button-icon k-icon k-i-calendar"></span>
+                    </button>
+                    <span class="k-input-separator"></span>
+                </span>
+                <input type="text" class="k-input-inner" placeholder="Prefix..." autocomplete="off" value="">
+            </span>
+        </div>
+        <div>
+            <span class="k-textbox k-input k-input-md k-input-solid k-rounded-md">
+                <input type="text" class="k-input-inner" placeholder="Suffix..." autocomplete="off" value="">
+                <span class="k-input-suffix">
+                    <span class="k-input-separator"></span>
+                    <button class="k-button k-button-md k-button-clear k-button-clear-base k-rounded-md k-icon-button">
+                        <span class="k-button-icon k-icon k-i-calendar"></span>
+                    </button>
+                    <span class="k-icon k-i-bell"></span>
+                </span>
+            </span>
+        </div>
+        <div dir="rtl">
+            <span class="k-textbox k-input k-input-md k-input-solid k-rounded-md">
+                <input type="text" class="k-input-inner" placeholder="Suffix..." autocomplete="off" value="">
+                <span class="k-input-suffix">
+                    <span class="k-input-separator"></span>
+                    <button class="k-button k-button-md k-button-clear k-button-clear-base k-rounded-md k-icon-button">
+                        <span class="k-button-icon k-icon k-i-calendar"></span>
+                    </button>
+                    <span class="k-icon k-i-bell"></span>
+                </span>
             </span>
         </div>
     </div>

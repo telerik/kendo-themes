@@ -1,23 +1,27 @@
 <!doctype html>
-<html lang="en" class="k-no-animations">
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width:15px;">
 <head>
-    <title>Search Bar in Adaptive Grid</title>
+    <title>Grid Adaptive Search</title>
     <meta charset="utf-8">
     <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
     <link rel="stylesheet" href="/packages/html/assets/styles.css">
     <script src="/packages/html/assets/scripts.js"></script>
-    <script src="/packages/html/dist/index.js"></script>
 </head>
 <body id="app" class="k-body">
-    <div id="test-area" class="grid">
+    <div id="test-area" class="k-d-grid">
         <div class="k-pane-wrapper k-widget" style="height: 100px;">
             <div class="k-pane">
                 <div class="k-view k-widget">
                     <div class="k-stretched-view k-content">
                         <div id="grid" class="k-grid k-widget k-grid-display-block k-grid-mobile">
                             <div class="k-toolbar k-grid-toolbar">
-                                <button is="Button" class="k-grid-pdf" icon="file-pdf">Export to PDF</button>
-                                <input is="Searchbox" class="k-grid-search" placeholder="Search..." />
+                                <button class="k-grid-pdf k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                                    <span class="k-button-icon k-icon k-i-file-pdf"></span>Export to PDF
+                                </button>
+                                <span class="k-grid-search k-searchbox k-input k-input-md k-input-solid k-rounded-md">
+                                    <span class="k-input-icon k-icon k-i-search"></span>
+                                    <input type="text" class="k-input-inner" placeholder="Search..." autocomplete="off" value="">
+                                </span>
                             </div>
                         </div>
                     </div>
@@ -31,8 +35,13 @@
                     <div class="k-stretched-view k-content">
                         <div id="grid" class="k-grid k-widget k-grid-display-block k-grid-mobile">
                             <div class="k-toolbar k-grid-toolbar">
-                                <button is="Button" class="k-grid-pdf" icon="file-pdf">Export to PDF</button>
-                                <input is="Searchbox" class="k-grid-search" placeholder="Search..." />
+                                <button class="k-grid-pdf k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                                    <span class="k-button-icon k-icon k-i-file-pdf"></span>Export to PDF
+                                </button>
+                                <span class="k-grid-search k-searchbox k-input k-input-md k-input-solid k-rounded-md">
+                                    <span class="k-input-icon k-icon k-i-search"></span>
+                                    <input type="text" class="k-input-inner" placeholder="Search..." autocomplete="off" value="">
+                                </span>
                             </div>
                         </div>
                     </div>

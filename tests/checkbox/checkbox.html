@@ -1,12 +1,11 @@
 <!doctype html>
-<html lang="en" class="k-no-animations">
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width:15px;">
 <head>
     <title>Checkbox</title>
     <meta charset="utf-8">
     <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
     <link rel="stylesheet" href="/packages/html/assets/styles.css">
     <script src="/packages/html/assets/scripts.js"></script>
-    <script src="/packages/html/dist/index.js"></script>
 </head>
 <body id="app" class="k-body">
     <style>
@@ -25,239 +24,269 @@
         });
 
     </script>
-    <div id="test-area" class="k-d-grid k-grid-cols-4">
+    <div id="test-area" class="k-d-grid k-grid-cols-4 k-align-items-start">
         <span>Checkbox</span>
         <span>In label</span>
         <span dir="rtl">Checkbox RTL</span>
         <span dir="rtl">In label RTL</span>
-        <!-- checked -->
         <div>
-            <input is="Checkbox" id="ch1" checked />
-            <!--
-            -->
+            <span class="k-checkbox-wrap">
+                <input id="ch1" type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md k-checked" checked="">
+            </span>
             <label class="k-checkbox-label" for="ch1">Checked</label>
         </div>
         <div>
             <label class="k-checkbox-label">
-                <input is="Checkbox" checked /> Checked
+                <span class="k-checkbox-wrap">
+                    <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md k-checked" checked="">
+                </span>Checked
             </label>
         </div>
         <div dir="rtl">
-            <input is="Checkbox" id="ch1-rtl" checked />
-            <!--
-            -->
+            <span class="k-checkbox-wrap">
+                <input id="ch1-rtl" type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md k-checked" checked="">
+            </span>
             <label class="k-checkbox-label" for="ch1-rtl">Checked</label>
         </div>
         <div dir="rtl">
             <label class="k-checkbox-label">
-                <input is="Checkbox" checked /> Checked
+                <span class="k-checkbox-wrap">
+                    <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md k-checked" checked="">
+                </span>Checked
             </label>
         </div>
-        <!-- disabled checked -->
         <div>
-            <input is="Checkbox" id="ch2" disabled checked />
-            <!--
-            -->
+            <span class="k-checkbox-wrap">
+                <input id="ch2" type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md k-disabled k-checked" checked="">
+            </span>
             <label class="k-checkbox-label" for="ch2">Checked</label>
         </div>
         <div>
             <label class="k-checkbox-label">
-                <input is="Checkbox" disabled checked /> Checked
+                <span class="k-checkbox-wrap">
+                    <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md k-disabled k-checked" checked="">
+                </span>Checked
             </label>
         </div>
         <div dir="rtl">
-            <input is="Checkbox" id="ch2-rtl" disabled checked />
-            <!--
-            -->
+            <span class="k-checkbox-wrap">
+                <input id="ch2-rtl" type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md k-disabled k-checked" checked="">
+            </span>
             <label class="k-checkbox-label" for="ch2-rtl">Checked</label>
         </div>
         <div dir="rtl">
             <label class="k-checkbox-label">
-                <input is="Checkbox" disabled checked /> Checked
+                <span class="k-checkbox-wrap">
+                    <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md k-disabled k-checked" checked="">
+                </span>Checked
             </label>
         </div>
-        <!-- unchecked -->
         <div>
-            <input is="Checkbox" id="ch3" />
-            <!--
-            -->
+            <span class="k-checkbox-wrap">
+                <input id="ch3" type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+            </span>
             <label class="k-checkbox-label" for="ch3">Unchecked</label>
         </div>
         <div>
             <label class="k-checkbox-label">
-                <input is="Checkbox" /> Unchecked
+                <span class="k-checkbox-wrap">
+                    <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                </span>Unchecked
             </label>
         </div>
         <div dir="rtl">
-            <input is="Checkbox" id="ch3-rtl" />
-            <!--
-            -->
+            <span class="k-checkbox-wrap">
+                <input id="ch3-rtl" type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+            </span>
             <label class="k-checkbox-label" for="ch3-rtl">Unchecked</label>
         </div>
         <div dir="rtl">
             <label class="k-checkbox-label">
-                <input is="Checkbox" /> Unchecked
+                <span class="k-checkbox-wrap">
+                    <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                </span>Unchecked
             </label>
         </div>
-        <!-- disabled unchecked -->
         <div>
-            <input is="Checkbox" id="ch4" disabled />
-            <!--
-            -->
+            <span class="k-checkbox-wrap">
+                <input id="ch4" type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md k-disabled">
+            </span>
             <label class="k-checkbox-label" for="ch4">Unchecked</label>
         </div>
         <div>
             <label class="k-checkbox-label">
-                <input is="Checkbox" disabled /> Unchecked
+                <span class="k-checkbox-wrap">
+                    <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md k-disabled">
+                </span>Unchecked
             </label>
         </div>
         <div dir="rtl">
-            <input is="Checkbox" id="ch4-rtl" disabled />
-            <!--
-            -->
+            <span class="k-checkbox-wrap">
+                <input id="ch4-rtl" type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md k-disabled">
+            </span>
             <label class="k-checkbox-label" for="ch4-rtl">Unchecked</label>
         </div>
         <div dir="rtl">
             <label class="k-checkbox-label">
-                <input is="Checkbox" disabled /> Unchecked
+                <span class="k-checkbox-wrap">
+                    <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md k-disabled">
+                </span>Unchecked
             </label>
         </div>
-        <!-- indeterminate -->
         <div>
-            <input is="Checkbox" id="chInd" indeterminate />
-            <!--
-            -->
+            <span class="k-checkbox-wrap">
+                <input id="chInd" type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md k-indeterminate">
+            </span>
             <label class="k-checkbox-label" for="chInd">Indeterminate</label>
         </div>
         <div>
             <label class="k-checkbox-label">
-                <input is="Checkbox" indeterminate /> Indeterminate
+                <span class="k-checkbox-wrap">
+                    <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md k-indeterminate">
+                </span>Indeterminate
             </label>
         </div>
         <div dir="rtl">
-            <input is="Checkbox" id="chInd-rtl" indeterminate />
-            <!--
-            -->
+            <span class="k-checkbox-wrap">
+                <input id="chInd-rtl" type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md k-indeterminate">
+            </span>
             <label class="k-checkbox-label" for="chInd-rtl">Indeterminate</label>
         </div>
         <div dir="rtl">
             <label class="k-checkbox-label">
-                <input is="Checkbox" indeterminate /> Indeterminate
+                <span class="k-checkbox-wrap">
+                    <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md k-indeterminate">
+                </span>Indeterminate
             </label>
         </div>
-        <!-- disabled indeterminate -->
         <div>
-            <input is="Checkbox" id="chIndDis" indeterminate disabled />
-            <!--
-            -->
+            <span class="k-checkbox-wrap">
+                <input id="chIndDis" type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md k-disabled k-indeterminate">
+            </span>
             <label class="k-checkbox-label" for="chIndDis">Indeterminate</label>
         </div>
         <div>
             <label class="k-checkbox-label">
-                <input is="Checkbox" indeterminate disabled /> Indeterminate
+                <span class="k-checkbox-wrap">
+                    <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md k-disabled k-indeterminate">
+                </span>Indeterminate
             </label>
         </div>
         <div dir="rtl">
-            <input is="Checkbox" id="chIndDis-rtl" indeterminate disabled />
-            <!--
-            -->
+            <span class="k-checkbox-wrap">
+                <input id="chIndDis-rtl" type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md k-disabled k-indeterminate">
+            </span>
             <label class="k-checkbox-label" for="chIndDis-rtl">Indeterminate</label>
         </div>
         <div dir="rtl">
             <label class="k-checkbox-label">
-                <input is="Checkbox" indeterminate disabled /> Indeterminate
+                <span class="k-checkbox-wrap">
+                    <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md k-disabled k-indeterminate">
+                </span>Indeterminate
             </label>
         </div>
-        <!-- error -->
         <div>
-            <input is="Checkbox" id="chError" invalid required />
-            <!--
-            -->
+            <span class="k-checkbox-wrap">
+                <input id="chError" type="checkbox" required="" class="k-checkbox k-checkbox-md k-rounded-md k-invalid">
+            </span>
             <label class="k-checkbox-label" for="chError">Invalid</label>
         </div>
         <div>
             <label class="k-checkbox-label">
-                <input is="Checkbox" invalid required /> Invalid
+                <span class="k-checkbox-wrap">
+                    <input type="checkbox" required="" class="k-checkbox k-checkbox-md k-rounded-md k-invalid">
+                </span>Invalid
             </label>
         </div>
         <div dir="rtl">
-            <input is="Checkbox" id="chError-rtl" invalid required />
-            <!--
-            -->
+            <span class="k-checkbox-wrap">
+                <input id="chError-rtl" type="checkbox" required="" class="k-checkbox k-checkbox-md k-rounded-md k-invalid">
+            </span>
             <label class="k-checkbox-label" for="chError-rtl">Invalid</label>
         </div>
         <div dir="rtl">
             <label class="k-checkbox-label">
-                <input is="Checkbox" invalid required /> Invalid
+                <span class="k-checkbox-wrap">
+                    <input type="checkbox" required="" class="k-checkbox k-checkbox-md k-rounded-md k-invalid">
+                </span>Invalid
             </label>
         </div>
-        <!-- focus -->
         <div>
-            <input is="Checkbox" id="chFocus" focus />
-            <!--
-            -->
+            <span class="k-checkbox-wrap">
+                <input id="chFocus" type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md k-focus">
+            </span>
             <label class="k-checkbox-label" for="chFocus">Focus</label>
         </div>
         <div>
             <label class="k-checkbox-label">
-                <input is="Checkbox" focus /> Focus
+                <span class="k-checkbox-wrap">
+                    <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md k-focus">
+                </span>Focus
             </label>
         </div>
         <div dir="rtl">
-            <input is="Checkbox" id="chFocus-rtl" focus />
-            <!--
-            -->
+            <span class="k-checkbox-wrap">
+                <input id="chFocus-rtl" type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md k-focus">
+            </span>
             <label class="k-checkbox-label" for="chFocus-rtl">Focus</label>
         </div>
         <div dir="rtl">
             <label class="k-checkbox-label">
-                <input is="Checkbox" focus /> Focus
+                <span class="k-checkbox-wrap">
+                    <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md k-focus">
+                </span>Focus
             </label>
         </div>
-        <!-- ripple -->
         <div class="k-ripple-container">
-            <input is="Checkbox" id="chRipple" focus />
-            <!--
-            -->
+            <span class="k-checkbox-wrap">
+                <input id="chRipple" type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md k-focus">
+            </span>
             <label class="k-checkbox-label" for="chRipple">Ripple</label>
         </div>
         <div class="k-ripple-container">
             <label class="k-checkbox-label">
-                <input is="Checkbox" focus /> Ripple
+                <span class="k-checkbox-wrap">
+                    <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md k-focus">
+                </span>Ripple
             </label>
         </div>
         <div class="k-ripple-container" dir="rtl">
-            <input is="Checkbox" id="chRipple-rtl" focus />
-            <!--
-            -->
+            <span class="k-checkbox-wrap">
+                <input id="chRipple-rtl" type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md k-focus">
+            </span>
             <label class="k-checkbox-label" for="chRipple-rtl">Ripple</label>
         </div>
         <div class="k-ripple-container" dir="rtl">
             <label class="k-checkbox-label">
-                <input is="Checkbox" focus /> Ripple
+                <span class="k-checkbox-wrap">
+                    <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md k-focus">
+                </span>Ripple
             </label>
         </div>
-        <!-- long label -->
         <div>
-            <input is="Checkbox" id="chLong" checked />
-            <!--
-            -->
+            <span class="k-checkbox-wrap">
+                <input id="chLong" type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md k-checked" checked="">
+            </span>
             <label class="k-checkbox-label" for="chLong">Long label Vivamus a arcu lacus. Integer augue leo.</label>
         </div>
         <div>
             <label class="k-checkbox-label">
-                <input is="Checkbox" checked /> Long label Vivamus a arcu lacus. Integer augue leo.
+                <span class="k-checkbox-wrap">
+                    <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md k-checked" checked="">
+                </span>Long label Vivamus a arcu lacus. Integer augue leo.
             </label>
         </div>
         <div dir="rtl">
-            <input is="Checkbox" id="chLong-rtl" checked />
-            <!--
-            -->
+            <span class="k-checkbox-wrap">
+                <input id="chLong-rtl" type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md k-checked" checked="">
+            </span>
             <label class="k-checkbox-label" for="chLong-rtl">Long label Vivamus a arcu lacus. Integer augue leo.</label>
         </div>
         <div dir="rtl">
             <label class="k-checkbox-label">
-                <input is="Checkbox" checked /> Long label Vivamus a arcu lacus. Integer augue leo.
+                <span class="k-checkbox-wrap">
+                    <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md k-checked" checked="">
+                </span>Long label Vivamus a arcu lacus. Integer augue leo.
             </label>
         </div>
     </div>

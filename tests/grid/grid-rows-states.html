@@ -1,18 +1,18 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width:15px;">
 <head>
     <title>Grid Rows States</title>
     <meta charset="utf-8">
     <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
     <link rel="stylesheet" href="/packages/html/assets/styles.css">
     <script src="/packages/html/assets/scripts.js"></script>
-    <script src="/packages/html/dist/index.js"></script>
 </head>
 <body id="app" class="k-body">
     <style>
         section {
             position: relative;
         }
+
         .k-marquee {
             width: 100px;
             height: 50px;
@@ -26,16 +26,18 @@
             <div class="k-widget k-grid k-grid-no-scrollbar">
                 <table>
                     <colgroup>
-                        <col style="width: 50px" />
-                        <col />
-                        <col class="k-sorted" />
-                        <col />
-                        <col />
+                        <col style="width: 50px;">
+                        <col>
+                        <col class="k-sorted">
+                        <col>
+                        <col>
                     </colgroup>
                     <thead class="k-grid-header">
                         <tr>
                             <th>
-                                <input is="Checkbox" />
+                                <span class="k-checkbox-wrap">
+                                    <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                </span>
                                 <label class="k-checkbox-label"></label>
                             </th>
                             <th class="k-header">Base</th>
@@ -47,7 +49,9 @@
                     <tbody>
                         <tr>
                             <td>
-                                <input is="Checkbox" />
+                                <span class="k-checkbox-wrap">
+                                    <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                </span>
                                 <label class="k-checkbox-label"></label>
                             </td>
                             <td>Normal row</td>
@@ -57,7 +61,9 @@
                         </tr>
                         <tr class="k-alt">
                             <td>
-                                <input is="Checkbox" />
+                                <span class="k-checkbox-wrap">
+                                    <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                </span>
                                 <label class="k-checkbox-label"></label>
                             </td>
                             <td>Alt row</td>
@@ -69,7 +75,9 @@
                     <tbody>
                         <tr class="k-state-hover">
                             <td>
-                                <input is="Checkbox" />
+                                <span class="k-checkbox-wrap">
+                                    <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                </span>
                                 <label class="k-checkbox-label"></label>
                             </td>
                             <td>Sorted</td>
@@ -79,7 +87,9 @@
                         </tr>
                         <tr class="k-alt k-state-hover">
                             <td>
-                                <input is="Checkbox" />
+                                <span class="k-checkbox-wrap">
+                                    <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                </span>
                                 <label class="k-checkbox-label"></label>
                             </td>
                             <td>Alt hovered row</td>
@@ -91,7 +101,9 @@
                     <tbody>
                         <tr class="k-state-focused">
                             <td>
-                                <input is="Checkbox" />
+                                <span class="k-checkbox-wrap">
+                                    <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                </span>
                                 <label class="k-checkbox-label"></label>
                             </td>
                             <td>Focused row</td>
@@ -101,7 +113,9 @@
                         </tr>
                         <tr class="k-alt k-state-focused">
                             <td>
-                                <input is="Checkbox" />
+                                <span class="k-checkbox-wrap">
+                                    <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                </span>
                                 <label class="k-checkbox-label"></label>
                             </td>
                             <td>Alt focused row</td>
@@ -113,7 +127,9 @@
                     <tbody>
                         <tr class="k-state-selected">
                             <td>
-                                <input is="Checkbox" checked />
+                                <span class="k-checkbox-wrap">
+                                    <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md k-checked" checked="">
+                                </span>
                                 <label class="k-checkbox-label"></label>
                             </td>
                             <td>Selected row</td>
@@ -123,7 +139,9 @@
                         </tr>
                         <tr class="k-alt k-state-selected">
                             <td>
-                                <input is="Checkbox" checked />
+                                <span class="k-checkbox-wrap">
+                                    <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md k-checked" checked="">
+                                </span>
                                 <label class="k-checkbox-label"></label>
                             </td>
                             <td>Alt selected row</td>
@@ -135,7 +153,9 @@
                     <tbody>
                         <tr class="k-state-hover k-state-selected">
                             <td>
-                                <input is="Checkbox" checked />
+                                <span class="k-checkbox-wrap">
+                                    <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md k-checked" checked="">
+                                </span>
                                 <label class="k-checkbox-label"></label>
                             </td>
                             <td>Hover + Selected row</td>
@@ -145,7 +165,9 @@
                         </tr>
                         <tr class="k-alt k-state-hover k-state-selected">
                             <td>
-                                <input is="Checkbox" checked />
+                                <span class="k-checkbox-wrap">
+                                    <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md k-checked" checked="">
+                                </span>
                                 <label class="k-checkbox-label"></label>
                             </td>
                             <td>Alt + Hover selected row</td>

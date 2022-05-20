@@ -1,34 +1,43 @@
 <!doctype html>
-<html lang="en" class="k-no-animations">
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width:15px;">
 <head>
     <title>Filter</title>
     <meta charset="utf-8">
     <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
     <link rel="stylesheet" href="/packages/html/assets/styles.css">
     <script src="/packages/html/assets/scripts.js"></script>
-    <script src="/packages/html/dist/index.js"></script>
 </head>
 <body id="app" class="k-body">
-    <div id="test-area" class="grid">
+    <div id="test-area" class="k-d-grid">
         <div id="filter" class="k-widget k-filter">
             <ul class="k-filter-container">
                 <li class="k-filter-group-main">
                     <div class="k-filter-toolbar">
                         <div class="k-toolbar">
                             <div class="k-filter-toolbar-item">
-                                <div class="k-widget k-button-group">
-                                    <button is="Button" selected>And</button>
-                                    <button is="Button">Or</button>
+                                <div class="k-button-group k-button-group-solid">
+                                    <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-selected">
+                                        <span class="k-button-text">And</span>
+                                    </button>
+                                    <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                                        <span class="k-button-text">Or</span>
+                                    </button>
                                 </div>
                             </div>
                             <div class="k-filter-toolbar-item">
-                                <button is="Button" icon="filter-add-expression">Add Expression</button>
+                                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                                    <span class="k-button-icon k-icon k-i-filter-add-expression"></span>Add Expression
+                                </button>
                             </div>
                             <div class="k-filter-toolbar-item">
-                                <button is="Button" icon="filter-add-group">Add Group</button>
+                                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                                    <span class="k-button-icon k-icon k-i-filter-add-group"></span>Add Group
+                                </button>
                             </div>
                             <div class="k-filter-toolbar-item">
-                                <button is="Button" fillMode="flat" icon="close"></button>
+                                <button class="k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                                    <span class="k-button-icon k-icon k-i-close"></span>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -37,16 +46,34 @@
                             <div class="k-filter-toolbar">
                                 <div class="k-toolbar">
                                     <div class="k-filter-toolbar-item k-filter-field">
-                                        <input is="DropdownList" value="Name" />
+                                        <span class="k-dropdown k-picker k-picker-md k-picker-solid k-rounded-md">
+                                            <span class="k-input-inner">
+                                                <span class="k-input-value-text">Name</span>
+                                            </span>
+                                            <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                                            </button>
+                                        </span>
                                     </div>
                                     <div class="k-filter-toolbar-item k-filter-operator">
-                                        <input is="DropdownList" value="Is equal to" />
+                                        <span class="k-dropdown k-picker k-picker-md k-picker-solid k-rounded-md">
+                                            <span class="k-input-inner">
+                                                <span class="k-input-value-text">Is equal to</span>
+                                            </span>
+                                            <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                                            </button>
+                                        </span>
                                     </div>
                                     <div class="k-filter-toolbar-item k-filter-value">
-                                        <input is="Textbox" placeholder="James" />
+                                        <span class="k-textbox k-input k-input-md k-input-solid k-rounded-md">
+                                            <input type="text" class="k-input-inner" placeholder="James" autocomplete="off" value="">
+                                        </span>
                                     </div>
                                     <div class="k-filter-toolbar-item">
-                                        <button is="Button" fillMode="flat" icon="close"></button>
+                                        <button class="k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                                            <span class="k-button-icon k-icon k-i-close"></span>
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -55,16 +82,42 @@
                             <div class="k-filter-toolbar">
                                 <div class="k-toolbar">
                                     <div class="k-filter-toolbar-item k-filter-field">
-                                        <input is="DropdownList" value="Price" />
+                                        <span class="k-dropdown k-picker k-picker-md k-picker-solid k-rounded-md">
+                                            <span class="k-input-inner">
+                                                <span class="k-input-value-text">Price</span>
+                                            </span>
+                                            <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                                            </button>
+                                        </span>
                                     </div>
                                     <div class="k-filter-toolbar-item k-filter-operator">
-                                        <input is="DropdownList" value="Is greater than" />
+                                        <span class="k-dropdown k-picker k-picker-md k-picker-solid k-rounded-md">
+                                            <span class="k-input-inner">
+                                                <span class="k-input-value-text">Is greater than</span>
+                                            </span>
+                                            <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                                            </button>
+                                        </span>
                                     </div>
                                     <div class="k-filter-toolbar-item k-filter-value">
-                                        <input is="NumericTextbox" placeholder="100,00" />
+                                        <span class="k-numerictextbox k-input k-input-md k-input-solid k-rounded-md">
+                                            <input type="text" class="k-input-inner" placeholder="100,00" autocomplete="off" value="">
+                                            <span class="k-input-spinner k-spin-button">
+                                                <button class="k-spinner-increase k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                    <span class="k-button-icon k-icon k-i-arrow-n"></span>
+                                                </button>
+                                                <button class="k-spinner-decrease k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                    <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                                                </button>
+                                            </span>
+                                        </span>
                                     </div>
                                     <div class="k-filter-toolbar-item">
-                                        <button is="Button" fillMode="flat" icon="close"></button>
+                                        <button class="k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                                            <span class="k-button-icon k-icon k-i-close"></span>
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -73,16 +126,39 @@
                             <div class="k-filter-toolbar">
                                 <div class="k-toolbar">
                                     <div class="k-filter-toolbar-item k-filter-field">
-                                        <input is="DropdownList" value="Discontinued" />
+                                        <span class="k-dropdown k-picker k-picker-md k-picker-solid k-rounded-md">
+                                            <span class="k-input-inner">
+                                                <span class="k-input-value-text">Discontinued</span>
+                                            </span>
+                                            <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                                            </button>
+                                        </span>
                                     </div>
                                     <div class="k-filter-toolbar-item k-filter-operator">
-                                        <input is="DropdownList" value="Is equal to" />
+                                        <span class="k-dropdown k-picker k-picker-md k-picker-solid k-rounded-md">
+                                            <span class="k-input-inner">
+                                                <span class="k-input-value-text">Is equal to</span>
+                                            </span>
+                                            <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                                            </button>
+                                        </span>
                                     </div>
                                     <div class="k-filter-toolbar-item k-filter-value">
-                                        <input is="DropdownList" value="False" />
+                                        <span class="k-dropdown k-picker k-picker-md k-picker-solid k-rounded-md">
+                                            <span class="k-input-inner">
+                                                <span class="k-input-value-text">False</span>
+                                            </span>
+                                            <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                                            </button>
+                                        </span>
                                     </div>
                                     <div class="k-filter-toolbar-item">
-                                        <button is="Button" fillMode="flat" icon="close"></button>
+                                        <button class="k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                                            <span class="k-button-icon k-icon k-i-close"></span>
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -91,38 +167,70 @@
                             <div class="k-filter-toolbar">
                                 <div class="k-toolbar">
                                     <div class="k-filter-toolbar-item k-filter-filed">
-                                        <input is="DropdownList" value="First Ordered">
+                                        <span class="k-dropdown k-picker k-picker-md k-picker-solid k-rounded-md">
+                                            <span class="k-input-inner">
+                                                <span class="k-input-value-text">First Ordered</span>
+                                            </span>
+                                            <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                                            </button>
+                                        </span>
                                     </div>
                                     <div class="k-filter-toolbar-item">
                                         <div class="k-filter-operator">
-                                            <input is="DropdownList" value="Is before">
+                                            <span class="k-dropdown k-picker k-picker-md k-picker-solid k-rounded-md">
+                                                <span class="k-input-inner">
+                                                    <span class="k-input-value-text">Is before</span>
+                                                </span>
+                                                <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                    <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                                                </button>
+                                            </span>
                                         </div>
                                     </div>
                                     <div class="k-filter-toolbar-item k-filter-value">
-                                        <input is="DatePicker" placeholder="1/21/2021">
+                                        <span class="k-datepicker k-input k-input-md k-input-solid k-rounded-md">
+                                            <input type="text" class="k-input-inner" placeholder="1/21/2021" autocomplete="off" value="">
+                                            <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                <span class="k-button-icon k-icon k-i-calendar"></span>
+                                            </button>
+                                        </span>
                                     </div>
                                     <div class="k-filter-toolbar-item">
-                                        <button is="Button" fillMode="flat" icon="close"></button>
+                                        <button class="k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                                            <span class="k-button-icon k-icon k-i-close"></span>
+                                        </button>
                                     </div>
                                 </div>
                             </div>
+                        </li>
                         <li class="k-filter-item">
                             <div class="k-filter-toolbar">
                                 <div class="k-toolbar">
                                     <div class="k-filter-toolbar-item">
-                                        <div class="k-widget k-button-group">
-                                            <button is="Button" selected>And</button>
-                                            <button is="Button">Or</button>
+                                        <div class="k-button-group k-button-group-solid">
+                                            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-selected">
+                                                <span class="k-button-text">And</span>
+                                            </button>
+                                            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                                                <span class="k-button-text">Or</span>
+                                            </button>
                                         </div>
                                     </div>
                                     <div class="k-filter-toolbar-item">
-                                        <button is="Button" icon="filter-add-expression">Add Expression</button>
+                                        <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                                            <span class="k-button-icon k-icon k-i-filter-add-expression"></span>Add Expression
+                                        </button>
                                     </div>
                                     <div class="k-filter-toolbar-item">
-                                        <button is="Button" icon="filter-add-group">Add Group</button>
+                                        <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                                            <span class="k-button-icon k-icon k-i-filter-add-group"></span>Add Group
+                                        </button>
                                     </div>
                                     <div class="k-filter-toolbar-item">
-                                        <button is="Button" fillMode="flat" icon="close"></button>
+                                        <button class="k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                                            <span class="k-button-icon k-icon k-i-close"></span>
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -131,13 +239,29 @@
                                     <div class="k-filter-toolbar">
                                         <div class="k-toolbar">
                                             <div class="k-filter-toolbar-item k-filter-field">
-                                                <input is="DropdownList" value="Name" />
+                                                <span class="k-dropdown k-picker k-picker-md k-picker-solid k-rounded-md">
+                                                    <span class="k-input-inner">
+                                                        <span class="k-input-value-text">Name</span>
+                                                    </span>
+                                                    <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                        <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                                                    </button>
+                                                </span>
                                             </div>
                                             <div class="k-filter-toolbar-item k-filter-operator">
-                                                <input is="DropdownList" value="Is empty" />
+                                                <span class="k-dropdown k-picker k-picker-md k-picker-solid k-rounded-md">
+                                                    <span class="k-input-inner">
+                                                        <span class="k-input-value-text">Is empty</span>
+                                                    </span>
+                                                    <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                        <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                                                    </button>
+                                                </span>
                                             </div>
                                             <div class="k-filter-toolbar-item">
-                                                <button is="Button" fillMode="flat" icon="close"></button>
+                                                <button class="k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                                                    <span class="k-button-icon k-icon k-i-close"></span>
+                                                </button>
                                             </div>
                                         </div>
                                     </div>
@@ -146,13 +270,29 @@
                                     <div class="k-filter-toolbar">
                                         <div class="k-toolbar">
                                             <div class="k-filter-toolbar-item k-filter-field">
-                                                <input is="DropdownList" value="Price" />
+                                                <span class="k-dropdown k-picker k-picker-md k-picker-solid k-rounded-md">
+                                                    <span class="k-input-inner">
+                                                        <span class="k-input-value-text">Price</span>
+                                                    </span>
+                                                    <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                        <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                                                    </button>
+                                                </span>
                                             </div>
                                             <div class="k-filter-toolbar-item k-filter-operator">
-                                                <input is="DropdownList" value="Is not null" />
+                                                <span class="k-dropdown k-picker k-picker-md k-picker-solid k-rounded-md">
+                                                    <span class="k-input-inner">
+                                                        <span class="k-input-value-text">Is not null</span>
+                                                    </span>
+                                                    <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                                        <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                                                    </button>
+                                                </span>
                                             </div>
                                             <div class="k-filter-toolbar-item">
-                                                <button is="Button" fillMode="flat" icon="close"></button>
+                                                <button class="k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                                                    <span class="k-button-icon k-icon k-i-close"></span>
+                                                </button>
                                             </div>
                                         </div>
                                     </div>
@@ -164,24 +304,26 @@
             </ul>
             <div class="k-filter-preview">
                 <span class="k-filter-preview-bracket">(</span>
-                <span class="k-filter-preview-field">Name</span>
-                <span class="k-filter-preview-criteria">Is equal to</span>
-                <span class="k-filter-preview-value">'James'</span>
-                <span class="k-filter-preview-operator">AND</span>
+                <span class="k-filter-preview-field">Discontinued</span>
+                <span class="k-filter-preview-criteria"> Is equal to </span>
+                <span class="k-filter-preview-value">'False'</span>
+                <span class="k-filter-preview-operator"> AND </span>
                 <span class="k-filter-preview-field">Price</span>
-                <span class="k-filter-preview-criteria">Is greater than</span>
+                <span class="k-filter-preview-criteria"> Is greater than </span>
                 <span class="k-filter-preview-value">'100,00'</span>
-                <span class="k-filter-preview-operator">AND</span>
+                <span class="k-filter-preview-operator"> AND </span>
                 <span class="k-filter-preview-bracket">(</span>
                 <span class="k-filter-preview-bracket">(</span>
                 <span class="k-filter-preview-field">FirstOrdered</span>
-                <span class="k-filter-preview-criteria">Is before</span>
-                <span class="k-filter-preview-value">'Jan 21 2021'</span>
+                <span class="k-filter-preview-criteria"> Is before </span>
+                <span class="k-filter-preview-value">'Thursday Jan 21 2021'</span>
                 <span class="k-filter-preview-bracket">)</span>
                 <span class="k-filter-preview-bracket">)</span>
                 <span class="k-filter-preview-bracket">)</span>
             </div>
-            <button is="Button" class="k-filter-apply">Apply</button>
+            <button class="k-filter-apply k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                <span class="k-button-text">Apply</span>
+            </button>
         </div>
     </div>
 </body>

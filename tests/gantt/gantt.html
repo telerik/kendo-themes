@@ -1,33 +1,36 @@
 <!doctype html>
-<html lang="en" class="k-no-animations">
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width:15px;">
 <head>
-    <title>Gantt -- jquery</title>
+    <title>Gantt</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width" />
     <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
     <link rel="stylesheet" href="/packages/html/assets/styles.css">
     <script src="/packages/html/assets/scripts.js"></script>
-    <script src="/packages/html/dist/index.js"></script>
 </head>
 <body id="app" class="k-body">
     <style>
         .k-gantt {
             height: 700px;
         }
+
         .k-gantt-treelist {
             width: 250px;
         }
+
         .k-gantt-timeline {
             flex: 1;
             overflow: auto;
         }
-
     </style>
     <div id="test-area">
         <div id="gantt" class="k-widget k-gantt" style="height: 700px;">
             <div class="k-gantt-header k-toolbar k-gantt-toolbar">
-                <button is="Button" class="k-gantt-toggle" icon="layout-1-by-4"></button>
-                <button is="Button" class="k-gantt-create" icon="add">Add Task</button>
+                <button class="k-gantt-toggle k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                    <span class="k-button-icon k-icon k-i-layout-1-by-4"></span>
+                </button>
+                <button class="k-gantt-create k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                    <span class="k-button-icon k-icon k-i-add"></span>Add Task
+                </button>
                 <span class="k-spacer"></span>
                 <div class="k-gantt-views-wrapper">
                     <select class="k-picker k-dropdown-list k-dropdown k-views-dropdown">
@@ -35,11 +38,17 @@
                         <option value="week">Week</option>
                         <option value="month">Month</option>
                     </select>
-                    <span class="k-button-group k-gantt-views">
-                        <button is="Button" class="k-view-day">Day</button>
-                        <button is="Button" class="k-view-week" selected>Week</button>
-                        <button is="Button" class="k-view-month">Month</button>
-                    </span>
+                    <div class="k-gantt-views k-button-group k-button-group-solid">
+                        <button class="k-view-day k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                            <span class="k-button-text">Day</span>
+                        </button>
+                        <button class="k-view-week k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-selected">
+                            <span class="k-button-text">Week</span>
+                        </button>
+                        <button class="k-view-month k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                            <span class="k-button-text">Month</span>
+                        </button>
+                    </div>
                 </div>
             </div>
             <div class="k-gantt-content">
@@ -50,7 +59,7 @@
                                 <table style="min-width: 250px;">
                                     <colgroup>
                                         <col style="width: 50px;">
-                                        <col />
+                                        <col>
                                     </colgroup>
                                     <thead>
                                         <tr>
@@ -67,181 +76,181 @@
                             <table class="k-selectable" style="min-width: 250px;">
                                 <colgroup>
                                     <col style="width: 50px;">
-                                    <col />
+                                    <col>
                                 </colgroup>
                                 <tbody>
                                     <tr class="k-treelist-group">
                                         <td>7</td>
                                         <td style="white-space: nowrap;">
-                                            <i is="Icon" name="collapse"></i>Software validation, research and implementation
+                                            <span class="k-icon k-i-collapse"></span>Software validation, research and implementation
                                         </td>
                                     </tr>
                                     <tr class="k-alt">
                                         <td>18</td>
                                         <td style="white-space: nowrap;">
-                                            <i is="Icon" name="none"></i>
-                                            <i is="Icon" name="none"></i>Project Kickoff
+                                            <span class="k-icon k-i-none"></span>
+                                            <span class="k-icon k-i-none"></span>Project Kickoff
                                         </td>
                                     </tr>
                                     <tr class="k-treelist-group">
                                         <td>11</td>
                                         <td style="white-space: nowrap;">
-                                            <i is="Icon" name="none"></i>
-                                            <i is="Icon" name="collapse"></i>Research
+                                            <span class="k-icon k-i-none"></span>
+                                            <span class="k-icon k-i-collapse"></span>Research
                                         </td>
                                     </tr>
                                     <tr class="k-alt">
                                         <td>19</td>
                                         <td style="white-space: nowrap;">
-                                            <i is="Icon" name="none"></i>
-                                            <i is="Icon" name="none"></i>
-                                            <i is="Icon" name="none"></i>Validation with Customers
+                                            <span class="k-icon k-i-none"></span>
+                                            <span class="k-icon k-i-none"></span>
+                                            <span class="k-icon k-i-none"></span>Validation with Customers
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>20</td>
                                         <td style="white-space: nowrap;">
-                                            <i is="Icon" name="none"></i>
-                                            <i is="Icon" name="none"></i>
-                                            <i is="Icon" name="none"></i>Market Research
+                                            <span class="k-icon k-i-none"></span>
+                                            <span class="k-icon k-i-none"></span>
+                                            <span class="k-icon k-i-none"></span>Market Research
                                         </td>
                                     </tr>
                                     <tr class="k-alt">
                                         <td>39</td>
                                         <td style="white-space: nowrap;">
-                                            <i is="Icon" name="none"></i>
-                                            <i is="Icon" name="none"></i>
-                                            <i is="Icon" name="none"></i>Functional and Technical Specification
+                                            <span class="k-icon k-i-none"></span>
+                                            <span class="k-icon k-i-none"></span>
+                                            <span class="k-icon k-i-none"></span>Functional and Technical Specification
                                         </td>
                                     </tr>
                                     <tr class="k-treelist-group">
                                         <td>12</td>
                                         <td style="white-space: nowrap;">
-                                            <i is="Icon" name="none"></i>
-                                            <i is="Icon" name="collapse"></i>Design
+                                            <span class="k-icon k-i-none"></span>
+                                            <span class="k-icon k-i-collapse"></span>Design
                                         </td>
                                     </tr>
                                     <tr class="k-alt">
                                         <td>22</td>
                                         <td style="white-space: nowrap;">
-                                            <i is="Icon" name="none"></i>
-                                            <i is="Icon" name="none"></i>
-                                            <i is="Icon" name="none"></i>UI Design
+                                            <span class="k-icon k-i-none"></span>
+                                            <span class="k-icon k-i-none"></span>
+                                            <span class="k-icon k-i-none"></span>UI Design
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>23</td>
                                         <td style="white-space: nowrap;">
-                                            <i is="Icon" name="none"></i>
-                                            <i is="Icon" name="none"></i>
-                                            <i is="Icon" name="none"></i>HTML Prototype
+                                            <span class="k-icon k-i-none"></span>
+                                            <span class="k-icon k-i-none"></span>
+                                            <span class="k-icon k-i-none"></span>HTML Prototype
                                         </td>
                                     </tr>
                                     <tr class="k-alt k-treelist-group">
                                         <td>13</td>
                                         <td style="white-space: nowrap;">
-                                            <i is="Icon" name="none"></i>
-                                            <i is="Icon" name="collapse"></i>Implementation
+                                            <span class="k-icon k-i-none"></span>
+                                            <span class="k-icon k-i-collapse"></span>Implementation
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>24</td>
                                         <td style="white-space: nowrap;">
-                                            <i is="Icon" name="none"></i>
-                                            <i is="Icon" name="none"></i>
-                                            <i is="Icon" name="none"></i>Prototype
+                                            <span class="k-icon k-i-none"></span>
+                                            <span class="k-icon k-i-none"></span>
+                                            <span class="k-icon k-i-none"></span>Prototype
                                         </td>
                                     </tr>
                                     <tr class="k-alt">
                                         <td>26</td>
                                         <td style="white-space: nowrap;">
-                                            <i is="Icon" name="none"></i>
-                                            <i is="Icon" name="none"></i>
-                                            <i is="Icon" name="none"></i>Architecture
+                                            <span class="k-icon k-i-none"></span>
+                                            <span class="k-icon k-i-none"></span>
+                                            <span class="k-icon k-i-none"></span>Architecture
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>27</td>
                                         <td style="white-space: nowrap;">
-                                            <i is="Icon" name="none"></i>
-                                            <i is="Icon" name="none"></i>
-                                            <i is="Icon" name="none"></i>Data Layer
+                                            <span class="k-icon k-i-none"></span>
+                                            <span class="k-icon k-i-none"></span>
+                                            <span class="k-icon k-i-none"></span>Data Layer
                                         </td>
                                     </tr>
                                     <tr class="k-alt">
                                         <td>29</td>
                                         <td style="white-space: nowrap;">
-                                            <i is="Icon" name="none"></i>
-                                            <i is="Icon" name="none"></i>
-                                            <i is="Icon" name="none"></i>UI and Interaction
+                                            <span class="k-icon k-i-none"></span>
+                                            <span class="k-icon k-i-none"></span>
+                                            <span class="k-icon k-i-none"></span>UI and Interaction
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>28</td>
                                         <td style="white-space: nowrap;">
-                                            <i is="Icon" name="none"></i>
-                                            <i is="Icon" name="none"></i>
-                                            <i is="Icon" name="none"></i>Unit Tests
+                                            <span class="k-icon k-i-none"></span>
+                                            <span class="k-icon k-i-none"></span>
+                                            <span class="k-icon k-i-none"></span>Unit Tests
                                         </td>
                                     </tr>
                                     <tr class="k-alt k-treelist-group">
                                         <td>14</td>
                                         <td style="white-space: nowrap;">
-                                            <i is="Icon" name="none"></i>
-                                            <i is="Icon" name="collapse"></i>Testing
+                                            <span class="k-icon k-i-none"></span>
+                                            <span class="k-icon k-i-collapse"></span>Testing
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>32</td>
                                         <td style="white-space: nowrap;">
-                                            <i is="Icon" name="none"></i>
-                                            <i is="Icon" name="none"></i>
-                                            <i is="Icon" name="none"></i>Integration Testing
+                                            <span class="k-icon k-i-none"></span>
+                                            <span class="k-icon k-i-none"></span>
+                                            <span class="k-icon k-i-none"></span>Integration Testing
                                         </td>
                                     </tr>
                                     <tr class="k-alt">
                                         <td>33</td>
                                         <td style="white-space: nowrap;">
-                                            <i is="Icon" name="none"></i>
-                                            <i is="Icon" name="none"></i>
-                                            <i is="Icon" name="none"></i>Load Testing
+                                            <span class="k-icon k-i-none"></span>
+                                            <span class="k-icon k-i-none"></span>
+                                            <span class="k-icon k-i-none"></span>Load Testing
                                         </td>
                                     </tr>
                                     <tr class="k-treelist-group">
                                         <td>30</td>
                                         <td style="white-space: nowrap;">
-                                            <i is="Icon" name="none"></i>
-                                            <i is="Icon" name="collapse"></i>Documentation
+                                            <span class="k-icon k-i-none"></span>
+                                            <span class="k-icon k-i-collapse"></span>Documentation
                                         </td>
                                     </tr>
                                     <tr class="k-alt">
                                         <td>34</td>
                                         <td style="white-space: nowrap;">
-                                            <i is="Icon" name="none"></i>
-                                            <i is="Icon" name="none"></i>
-                                            <i is="Icon" name="none"></i>Structure
+                                            <span class="k-icon k-i-none"></span>
+                                            <span class="k-icon k-i-none"></span>
+                                            <span class="k-icon k-i-none"></span>Structure
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>35</td>
                                         <td style="white-space: nowrap;">
-                                            <i is="Icon" name="none"></i>
-                                            <i is="Icon" name="none"></i>
-                                            <i is="Icon" name="none"></i>Articles
+                                            <span class="k-icon k-i-none"></span>
+                                            <span class="k-icon k-i-none"></span>
+                                            <span class="k-icon k-i-none"></span>Articles
                                         </td>
                                     </tr>
                                     <tr class="k-alt k-treelist-group">
                                         <td>31</td>
                                         <td style="white-space: nowrap;">
-                                            <i is="Icon" name="none"></i>
-                                            <i is="Icon" name="expand"></i>Demos
+                                            <span class="k-icon k-i-none"></span>
+                                            <span class="k-icon k-i-expand"></span>Demos
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>17</td>
                                         <td style="white-space: nowrap;">
-                                            <i is="Icon" name="none"></i>
-                                            <i is="Icon" name="none"></i>Release
+                                            <span class="k-icon k-i-none"></span>
+                                            <span class="k-icon k-i-none"></span>Release
                                         </td>
                                     </tr>
                                 </tbody>
@@ -258,48 +267,48 @@
                             <div class="k-grid-header-wrap">
                                 <table style="width: 4200px;">
                                     <colgroup>
-                                        <col />
-                                        <col />
-                                        <col />
-                                        <col />
-                                        <col />
-                                        <col />
-                                        <col />
-                                        <col />
-                                        <col />
-                                        <col />
-                                        <col />
-                                        <col />
-                                        <col />
-                                        <col />
-                                        <col />
-                                        <col />
-                                        <col />
-                                        <col />
-                                        <col />
-                                        <col />
-                                        <col />
-                                        <col />
-                                        <col />
-                                        <col />
-                                        <col />
-                                        <col />
-                                        <col />
-                                        <col />
-                                        <col />
-                                        <col />
-                                        <col />
-                                        <col />
-                                        <col />
-                                        <col />
-                                        <col />
-                                        <col />
-                                        <col />
-                                        <col />
-                                        <col />
-                                        <col />
-                                        <col />
-                                        <col />
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
                                     </colgroup>
                                     <tbody>
                                         <tr>
@@ -362,7 +371,7 @@
                             <div class="k-gantt-tables">
                                 <table class="k-gantt-rows" style="width: 4200px;">
                                     <colgroup>
-                                        <col />
+                                        <col>
                                     </colgroup>
                                     <tbody>
                                         <tr>
@@ -438,48 +447,48 @@
                                 </table>
                                 <table class="k-gantt-columns" style="width: 4200px; height: 828px;">
                                     <colgroup>
-                                        <col />
-                                        <col />
-                                        <col />
-                                        <col />
-                                        <col />
-                                        <col />
-                                        <col />
-                                        <col />
-                                        <col />
-                                        <col />
-                                        <col />
-                                        <col />
-                                        <col />
-                                        <col />
-                                        <col />
-                                        <col />
-                                        <col />
-                                        <col />
-                                        <col />
-                                        <col />
-                                        <col />
-                                        <col />
-                                        <col />
-                                        <col />
-                                        <col />
-                                        <col />
-                                        <col />
-                                        <col />
-                                        <col />
-                                        <col />
-                                        <col />
-                                        <col />
-                                        <col />
-                                        <col />
-                                        <col />
-                                        <col />
-                                        <col />
-                                        <col />
-                                        <col />
-                                        <col />
-                                        <col />
-                                        <col />
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
                                     </colgroup>
                                     <tbody>
                                         <tr>
@@ -530,7 +539,7 @@
                                 </table>
                                 <table class="k-gantt-tasks" style="width: 4200px;">
                                     <colgroup>
-                                        <col />
+                                        <col>
                                     </colgroup>
                                     <tbody>
                                         <tr>
@@ -577,7 +586,7 @@
                                                             <div class="k-task-template">Validation with Customers</div>
                                                             <span class="k-task-actions">
                                                                 <a class="k-link k-task-delete">
-                                                                    <i is="Icon" name="x"></i>
+                                                                    <span class="k-icon k-i-x"></span>
                                                                 </a>
                                                             </span>
                                                             <span class="k-resize-handle k-resize-w"></span>
@@ -599,7 +608,7 @@
                                                             <div class="k-task-template">Market Research</div>
                                                             <span class="k-task-actions">
                                                                 <a class="k-link k-task-delete">
-                                                                    <i is="Icon" name="x"></i>
+                                                                    <span class="k-icon k-i-x"></span>
                                                                 </a>
                                                             </span>
                                                             <span class="k-resize-handle k-resize-w"></span>
@@ -621,7 +630,7 @@
                                                             <div class="k-task-template">Functional and Technical Specification</div>
                                                             <span class="k-task-actions">
                                                                 <a class="k-link k-task-delete">
-                                                                    <i is="Icon" name="x"></i>
+                                                                    <span class="k-icon k-i-x"></span>
                                                                 </a>
                                                             </span>
                                                             <span class="k-resize-handle k-resize-w"></span>
@@ -656,7 +665,7 @@
                                                             <div class="k-task-template">UI Design</div>
                                                             <span class="k-task-actions">
                                                                 <a class="k-link k-task-delete">
-                                                                    <i is="Icon" name="x"></i>
+                                                                    <span class="k-icon k-i-x"></span>
                                                                 </a>
                                                             </span>
                                                             <span class="k-resize-handle k-resize-w"></span>
@@ -678,7 +687,7 @@
                                                             <div class="k-task-template">HTML Prototype</div>
                                                             <span class="k-task-actions">
                                                                 <a class="k-link k-task-delete">
-                                                                    <i is="Icon" name="x"></i>
+                                                                    <span class="k-icon k-i-x"></span>
                                                                 </a>
                                                             </span>
                                                             <span class="k-resize-handle k-resize-w"></span>
@@ -713,7 +722,7 @@
                                                             <div class="k-task-template">Prototype</div>
                                                             <span class="k-task-actions">
                                                                 <a class="k-link k-task-delete">
-                                                                    <i is="Icon" name="x"></i>
+                                                                    <span class="k-icon k-i-x"></span>
                                                                 </a>
                                                             </span>
                                                             <span class="k-resize-handle k-resize-w"></span>
@@ -735,7 +744,7 @@
                                                             <div class="k-task-template">Architecture</div>
                                                             <span class="k-task-actions">
                                                                 <a class="k-link k-task-delete">
-                                                                    <i is="Icon" name="x"></i>
+                                                                    <span class="k-icon k-i-x"></span>
                                                                 </a>
                                                             </span>
                                                             <span class="k-resize-handle k-resize-w"></span>
@@ -757,7 +766,7 @@
                                                             <div class="k-task-template">Data Layer</div>
                                                             <span class="k-task-actions">
                                                                 <a class="k-link k-task-delete">
-                                                                    <i is="Icon" name="x"></i>
+                                                                    <span class="k-icon k-i-x"></span>
                                                                 </a>
                                                             </span>
                                                             <span class="k-resize-handle k-resize-w"></span>
@@ -779,7 +788,7 @@
                                                             <div class="k-task-template">UI and Interaction</div>
                                                             <span class="k-task-actions">
                                                                 <a class="k-link k-task-delete">
-                                                                    <i is="Icon" name="x"></i>
+                                                                    <span class="k-icon k-i-x"></span>
                                                                 </a>
                                                             </span>
                                                             <span class="k-resize-handle k-resize-w"></span>
@@ -801,7 +810,7 @@
                                                             <div class="k-task-template">Unit Tests</div>
                                                             <span class="k-task-actions">
                                                                 <a class="k-link k-task-delete">
-                                                                    <i is="Icon" name="x"></i>
+                                                                    <span class="k-icon k-i-x"></span>
                                                                 </a>
                                                             </span>
                                                             <span class="k-resize-handle k-resize-w"></span>
@@ -836,7 +845,7 @@
                                                             <div class="k-task-template">Integration Testing</div>
                                                             <span class="k-task-actions">
                                                                 <a class="k-link k-task-delete">
-                                                                    <i is="Icon" name="x"></i>
+                                                                    <span class="k-icon k-i-x"></span>
                                                                 </a>
                                                             </span>
                                                             <span class="k-resize-handle k-resize-w"></span>
@@ -858,7 +867,7 @@
                                                             <div class="k-task-template">Load Testing</div>
                                                             <span class="k-task-actions">
                                                                 <a class="k-link k-task-delete">
-                                                                    <i is="Icon" name="x"></i>
+                                                                    <span class="k-icon k-i-x"></span>
                                                                 </a>
                                                             </span>
                                                             <span class="k-resize-handle k-resize-w"></span>
@@ -893,7 +902,7 @@
                                                             <div class="k-task-template">Structure</div>
                                                             <span class="k-task-actions">
                                                                 <a class="k-link k-task-delete">
-                                                                    <i is="Icon" name="x"></i>
+                                                                    <span class="k-icon k-i-x"></span>
                                                                 </a>
                                                             </span>
                                                             <span class="k-resize-handle k-resize-w"></span>
@@ -915,7 +924,7 @@
                                                             <div class="k-task-template">Articles</div>
                                                             <span class="k-task-actions">
                                                                 <a class="k-link k-task-delete">
-                                                                    <i is="Icon" name="x"></i>
+                                                                    <span class="k-icon k-i-x"></span>
                                                                 </a>
                                                             </span>
                                                             <span class="k-resize-handle k-resize-w"></span>
@@ -1079,7 +1088,9 @@
                 </div>
             </div>
             <div class="k-gantt-footer k-toolbar k-gantt-toolbar">
-                <button is="Button" class="k-gantt-create" icon="add">Add Task</button>
+                <button class="k-gantt-create k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                    <span class="k-button-icon k-icon k-i-add"></span>Add Task
+                </button>
             </div>
         </div>
     </div>

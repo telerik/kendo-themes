@@ -1,12 +1,11 @@
 <!doctype html>
-<html lang="en" class="k-no-animations">
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width:15px;">
 <head>
-    <title>Checkbox</title>
+    <title>Checkbox Size</title>
     <meta charset="utf-8">
     <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
     <link rel="stylesheet" href="/packages/html/assets/styles.css">
     <script src="/packages/html/assets/scripts.js"></script>
-    <script src="/packages/html/dist/index.js"></script>
 </head>
 <body id="app" class="k-body">
     <style>
@@ -29,144 +28,137 @@
         <span>Small</span>
         <span>Medium</span>
         <span>Large</span>
-        <!-- Checked -->
         <span></span>
         <div>
-            <input is="Checkbox" size="small" id="ch1" checked />
-            <!--
-            -->
+            <span class="k-checkbox-wrap">
+                <input id="ch1" type="checkbox" class="k-checkbox k-checkbox-sm k-rounded-md k-checked" checked="">
+            </span>
             <label class="k-checkbox-label" for="ch1">Checked</label>
         </div>
         <div>
-            <input is="Checkbox" size="medium" id="ch1" checked />
-            <!--
-            -->
+            <span class="k-checkbox-wrap">
+                <input id="ch1" type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md k-checked" checked="">
+            </span>
             <label class="k-checkbox-label" for="ch1">Checked</label>
         </div>
         <div>
-            <input is="Checkbox" size="large" id="ch1" checked />
-            <!--
-            -->
+            <span class="k-checkbox-wrap">
+                <input id="ch1" type="checkbox" class="k-checkbox k-checkbox-lg k-rounded-md k-checked" checked="">
+            </span>
             <label class="k-checkbox-label" for="ch1">Checked</label>
         </div>
-        <!-- Disabled Checked -->
         <span></span>
         <div>
-            <input is="Checkbox" size="small" id="ch2" disabled checked />
-            <!--
-            -->
+            <span class="k-checkbox-wrap">
+                <input id="ch2" type="checkbox" class="k-checkbox k-checkbox-sm k-rounded-md k-disabled k-checked" checked="">
+            </span>
             <label class="k-checkbox-label" for="ch2">Checked</label>
         </div>
         <div>
-            <input is="Checkbox" size="medium" id="ch2" disabled checked />
-            <!--
-            -->
+            <span class="k-checkbox-wrap">
+                <input id="ch2" type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md k-disabled k-checked" checked="">
+            </span>
             <label class="k-checkbox-label" for="ch2">Checked</label>
         </div>
         <div>
-            <input is="Checkbox" size="large" id="ch2" disabled checked />
-            <!--
-            -->
+            <span class="k-checkbox-wrap">
+                <input id="ch2" type="checkbox" class="k-checkbox k-checkbox-lg k-rounded-md k-disabled k-checked" checked="">
+            </span>
             <label class="k-checkbox-label" for="ch2">Checked</label>
         </div>
-        <!-- Unchecked -->
         <span></span>
         <div>
-            <input is="Checkbox" size="small" id="ch3" />
-            <!--
-            -->
+            <span class="k-checkbox-wrap">
+                <input id="ch3" type="checkbox" class="k-checkbox k-checkbox-sm k-rounded-md">
+            </span>
             <label class="k-checkbox-label" for="ch3">Unchecked</label>
         </div>
         <div>
-            <input is="Checkbox" size="medium" id="ch3" />
-            <!--
-            -->
+            <span class="k-checkbox-wrap">
+                <input id="ch3" type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+            </span>
             <label class="k-checkbox-label" for="ch3">Unchecked</label>
         </div>
         <div>
-            <input is="Checkbox" size="large" id="ch3" />
-            <!--
-            -->
+            <span class="k-checkbox-wrap">
+                <input id="ch3" type="checkbox" class="k-checkbox k-checkbox-lg k-rounded-md">
+            </span>
             <label class="k-checkbox-label" for="ch3">Unchecked</label>
         </div>
-        <!-- Disabled Unchecked -->
         <span></span>
         <div>
-            <input is="Checkbox" size="small" id="ch4" disabled />
-            <!--
-            -->
+            <span class="k-checkbox-wrap">
+                <input id="ch4" type="checkbox" class="k-checkbox k-checkbox-sm k-rounded-md k-disabled">
+            </span>
             <label class="k-checkbox-label" for="ch4">Unchecked</label>
         </div>
         <div>
-            <input is="Checkbox" size="medium" id="ch4" disabled />
-            <!--
-            -->
+            <span class="k-checkbox-wrap">
+                <input id="ch4" type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md k-disabled">
+            </span>
             <label class="k-checkbox-label" for="ch4">Unchecked</label>
         </div>
         <div>
-            <input is="Checkbox" size="large" id="ch4" disabled />
-            <!--
-            -->
+            <span class="k-checkbox-wrap">
+                <input id="ch4" type="checkbox" class="k-checkbox k-checkbox-lg k-rounded-md k-disabled">
+            </span>
             <label class="k-checkbox-label" for="ch4">Unchecked</label>
         </div>
-        <!-- Indeterminate -->
         <span></span>
         <div>
-            <input is="Checkbox" size="small" id="chInd" indeterminate />
-            <!--
-            -->
+            <span class="k-checkbox-wrap">
+                <input id="chInd" type="checkbox" class="k-checkbox k-checkbox-sm k-rounded-md k-indeterminate">
+            </span>
             <label class="k-checkbox-label" for="chInd">Indeterminate</label>
         </div>
         <div>
-            <input is="Checkbox" size="medium" id="chInd" indeterminate />
-            <!--
-            -->
+            <span class="k-checkbox-wrap">
+                <input id="chInd" type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md k-indeterminate">
+            </span>
             <label class="k-checkbox-label" for="chInd">Indeterminate</label>
         </div>
         <div>
-            <input is="Checkbox" size="large" id="chInd" indeterminate />
-            <!--
-            -->
+            <span class="k-checkbox-wrap">
+                <input id="chInd" type="checkbox" class="k-checkbox k-checkbox-lg k-rounded-md k-indeterminate">
+            </span>
             <label class="k-checkbox-label" for="chInd">Indeterminate</label>
         </div>
-        <!-- Disabled indeterminate -->
         <span></span>
         <div>
-            <input is="Checkbox" size="small" id="chIndDis" indeterminate disabled />
-            <!--
-            -->
+            <span class="k-checkbox-wrap">
+                <input id="chIndDis" type="checkbox" class="k-checkbox k-checkbox-sm k-rounded-md k-disabled k-indeterminate">
+            </span>
             <label class="k-checkbox-label" for="chIndDis">Indeterminate</label>
         </div>
         <div>
-            <input is="Checkbox" size="medium" id="chIndDis" indeterminate disabled />
-            <!--
-            -->
+            <span class="k-checkbox-wrap">
+                <input id="chIndDis" type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md k-disabled k-indeterminate">
+            </span>
             <label class="k-checkbox-label" for="chIndDis">Indeterminate</label>
         </div>
         <div>
-            <input is="Checkbox" size="large" id="chIndDis" indeterminate disabled />
-            <!--
-            -->
+            <span class="k-checkbox-wrap">
+                <input id="chIndDis" type="checkbox" class="k-checkbox k-checkbox-lg k-rounded-md k-disabled k-indeterminate">
+            </span>
             <label class="k-checkbox-label" for="chIndDis">Indeterminate</label>
         </div>
-        <!-- Error -->
         <span></span>
         <div>
-            <input is="Checkbox" size="small" id="chError" invalid required />
-            <!--
-            -->
+            <span class="k-checkbox-wrap">
+                <input id="chError" type="checkbox" required="" class="k-checkbox k-checkbox-sm k-rounded-md k-invalid">
+            </span>
             <label class="k-checkbox-label" for="chError">Invalid</label>
         </div>
         <div>
-            <input is="Checkbox" size="medium" id="chError" invalid required />
-            <!--
-            -->
+            <span class="k-checkbox-wrap">
+                <input id="chError" type="checkbox" required="" class="k-checkbox k-checkbox-md k-rounded-md k-invalid">
+            </span>
             <label class="k-checkbox-label" for="chError">Invalid</label>
         </div>
         <div>
-            <input is="Checkbox" size="large" id="chError" invalid required />
-            <!--
-            -->
+            <span class="k-checkbox-wrap">
+                <input id="chError" type="checkbox" required="" class="k-checkbox k-checkbox-lg k-rounded-md k-invalid">
+            </span>
             <label class="k-checkbox-label" for="chError">Invalid</label>
         </div>
     </div>

@@ -1,12 +1,11 @@
 <!doctype html>
-<html lang="en" class="k-no-animations">
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width:15px;">
 <head>
-    <title>Toolbar Overflow Popup -- Legacy</title>
+    <title>Toolbar Popup Legacy</title>
     <meta charset="utf-8">
     <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
     <link rel="stylesheet" href="/packages/html/assets/styles.css">
     <script src="/packages/html/assets/scripts.js"></script>
-    <script src="/packages/html/dist/index.js"></script>
 </head>
 <body id="app" class="k-body">
     <style>
@@ -26,28 +25,42 @@
             <div class="k-animation-container k-overflow-wrapper">
                 <ul class="k-reset k-popup k-group k-list-container k-overflow-container">
                     <li class="k-item">
-                        <button is="Button" class="k-overflow-button">Normal</button>
+                        <button class="k-overflow-button k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                            <span class="k-button-text">Normal</span>
+                        </button>
                     </li>
                     <li class="k-item">
-                        <button is="Button" class="k-overflow-button" hover>Hover</button>
+                        <button class="k-overflow-button k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-hover">
+                            <span class="k-button-text">Hover</span>
+                        </button>
                     </li>
                     <li class="k-item">
-                        <button is="Button" class="k-overflow-button" focus>Focus</button>
+                        <button class="k-overflow-button k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-focus">
+                            <span class="k-button-text">Focus</span>
+                        </button>
                     </li>
                     <li class="k-item">
-                        <button is="Button" class="k-overflow-button" active>Active</button>
+                        <button class="k-overflow-button k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-active">
+                            <span class="k-button-text">Active</span>
+                        </button>
                     </li>
                     <li class="k-item">
-                        <button is="Button" class="k-overflow-button" disabled>Disabled</button>
+                        <button class="k-overflow-button k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-disabled">
+                            <span class="k-button-text">Disabled</span>
+                        </button>
                     </li>
                     <li class="k-item">
-                        <button is="Button" class="k-overflow-button" disabled focus>Disabled focus</button>
+                        <button class="k-overflow-button k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-focus k-disabled">
+                            <span class="k-button-text">Disabled focus</span>
+                        </button>
                     </li>
                     <li class="k-item">
                         <div class="k-separator k-separator-horizontal"></div>
                     </li>
                     <li class="k-item">
-                        <button is="Button" class="k-overflow-button">Item after separator</button>
+                        <button class="k-overflow-button k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                            <span class="k-button-text">Item after separator</span>
+                        </button>
                     </li>
                 </ul>
             </div>
@@ -56,13 +69,27 @@
             <div class="k-animation-container">
                 <ul class="k-reset k-popup k-group k-list-container k-overflow-container">
                     <li class="k-item">
-                        <button is="Button" class="k-overflow-button" disabled>MenuButton</button>
-                        <button is="Button" class="k-overflow-button" icon="plus">Normal</button>
-                        <button is="Button" class="k-overflow-button" icon="plus" hover>Hover</button>
-                        <button is="Button" class="k-overflow-button" icon="plus" focus>Focus</button>
-                        <button is="Button" class="k-overflow-button" icon="plus" active>Active</button>
-                        <button is="Button" class="k-overflow-button" icon="plus" disabled>Disabled</button>
-                        <button is="Button" class="k-overflow-button" icon="plus" disabled focus>Disabled focus</button>
+                        <button class="k-overflow-button k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-disabled">
+                            <span class="k-button-text">MenuButton</span>
+                        </button>
+                        <button class="k-overflow-button k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                            <span class="k-button-icon k-icon k-i-plus"></span>Normal
+                        </button>
+                        <button class="k-overflow-button k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-hover">
+                            <span class="k-button-icon k-icon k-i-plus"></span>Hover
+                        </button>
+                        <button class="k-overflow-button k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-focus">
+                            <span class="k-button-icon k-icon k-i-plus"></span>Focus
+                        </button>
+                        <button class="k-overflow-button k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-active">
+                            <span class="k-button-icon k-icon k-i-plus"></span>Active
+                        </button>
+                        <button class="k-overflow-button k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-disabled">
+                            <span class="k-button-icon k-icon k-i-plus"></span>Disabled
+                        </button>
+                        <button class="k-overflow-button k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-focus k-disabled">
+                            <span class="k-button-icon k-icon k-i-plus"></span>Disabled focus
+                        </button>
                     </li>
                 </ul>
             </div>
@@ -71,13 +98,27 @@
             <div class="k-animation-container">
                 <ul class="k-reset k-popup k-group k-list-container k-overflow-container">
                     <li class="k-item">
-                        <button is="Button" class="k-overflow-button">SplitButton</button>
-                        <button is="Button" class="k-overflow-button" icon="plus">Normal</button>
-                        <button is="Button" class="k-overflow-button" icon="plus" hover>Hover</button>
-                        <button is="Button" class="k-overflow-button" icon="plus" focus>Focus</button>
-                        <button is="Button" class="k-overflow-button" icon="plus" active>Active</button>
-                        <button is="Button" class="k-overflow-button" icon="plus" disabled>Disabled</button>
-                        <button is="Button" class="k-overflow-button" icon="plus" disabled focus>Disabled focus</button>
+                        <button class="k-overflow-button k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                            <span class="k-button-text">SplitButton</span>
+                        </button>
+                        <button class="k-overflow-button k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                            <span class="k-button-icon k-icon k-i-plus"></span>Normal
+                        </button>
+                        <button class="k-overflow-button k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-hover">
+                            <span class="k-button-icon k-icon k-i-plus"></span>Hover
+                        </button>
+                        <button class="k-overflow-button k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-focus">
+                            <span class="k-button-icon k-icon k-i-plus"></span>Focus
+                        </button>
+                        <button class="k-overflow-button k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-active">
+                            <span class="k-button-icon k-icon k-i-plus"></span>Active
+                        </button>
+                        <button class="k-overflow-button k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-disabled">
+                            <span class="k-button-icon k-icon k-i-plus"></span>Disabled
+                        </button>
+                        <button class="k-overflow-button k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-focus k-disabled">
+                            <span class="k-button-icon k-icon k-i-plus"></span>Disabled focus
+                        </button>
                     </li>
                 </ul>
             </div>
@@ -86,12 +127,24 @@
             <div class="k-animation-container k-overflow-wrapper">
                 <ul class="k-reset k-popup k-group k-list-container k-overflow-container">
                     <li class="k-button-group k-overflow-group k-item">
-                        <button is="Button" class="k-overflow-button">Normal</button>
-                        <button is="Button" class="k-overflow-button" hover>Hover</button>
-                        <button is="Button" class="k-overflow-button" focus>Focus</button>
-                        <button is="Button" class="k-overflow-button" active>Active</button>
-                        <button is="Button" class="k-overflow-button" disabled>Disabled</button>
-                        <button is="Button" class="k-overflow-button" disabled focus>Disabled focus</button>
+                        <button class="k-overflow-button k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                            <span class="k-button-text">Normal</span>
+                        </button>
+                        <button class="k-overflow-button k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-hover">
+                            <span class="k-button-text">Hover</span>
+                        </button>
+                        <button class="k-overflow-button k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-focus">
+                            <span class="k-button-text">Focus</span>
+                        </button>
+                        <button class="k-overflow-button k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-active">
+                            <span class="k-button-text">Active</span>
+                        </button>
+                        <button class="k-overflow-button k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-disabled">
+                            <span class="k-button-text">Disabled</span>
+                        </button>
+                        <button class="k-overflow-button k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-focus k-disabled">
+                            <span class="k-button-text">Disabled focus</span>
+                        </button>
                     </li>
                 </ul>
             </div>
@@ -101,28 +154,42 @@
             <div class="k-animation-container k-overflow-wrapper">
                 <ul class="k-reset k-popup k-group k-list-container k-overflow-container">
                     <li class="k-item">
-                        <button is="Button" class="k-overflow-button">Normal</button>
+                        <button class="k-overflow-button k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                            <span class="k-button-text">Normal</span>
+                        </button>
                     </li>
                     <li class="k-item">
-                        <button is="Button" class="k-overflow-button" hover>Hover</button>
+                        <button class="k-overflow-button k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-hover">
+                            <span class="k-button-text">Hover</span>
+                        </button>
                     </li>
                     <li class="k-item">
-                        <button is="Button" class="k-overflow-button" focus>Focus</button>
+                        <button class="k-overflow-button k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-focus">
+                            <span class="k-button-text">Focus</span>
+                        </button>
                     </li>
                     <li class="k-item">
-                        <button is="Button" class="k-overflow-button" active>Active</button>
+                        <button class="k-overflow-button k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-active">
+                            <span class="k-button-text">Active</span>
+                        </button>
                     </li>
                     <li class="k-item">
-                        <button is="Button" class="k-overflow-button" disabled>Disabled</button>
+                        <button class="k-overflow-button k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-disabled">
+                            <span class="k-button-text">Disabled</span>
+                        </button>
                     </li>
                     <li class="k-item">
-                        <button is="Button" class="k-overflow-button" disabled focus>Disabled focus</button>
+                        <button class="k-overflow-button k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-focus k-disabled">
+                            <span class="k-button-text">Disabled focus</span>
+                        </button>
                     </li>
                     <li class="k-item">
                         <div class="k-separator k-separator-horizontal"></div>
                     </li>
                     <li class="k-item">
-                        <button is="Button" class="k-overflow-button">Item after separator</button>
+                        <button class="k-overflow-button k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                            <span class="k-button-text">Item after separator</span>
+                        </button>
                     </li>
                 </ul>
             </div>
@@ -131,13 +198,27 @@
             <div class="k-animation-container">
                 <ul class="k-reset k-popup k-group k-list-container k-overflow-container">
                     <li class="k-item">
-                        <button is="Button" class="k-overflow-button" disabled>MenuButton</button>
-                        <button is="Button" class="k-overflow-button" icon="plus">Normal</button>
-                        <button is="Button" class="k-overflow-button" icon="plus" hover>Hover</button>
-                        <button is="Button" class="k-overflow-button" icon="plus" focus>Focus</button>
-                        <button is="Button" class="k-overflow-button" icon="plus" active>Active</button>
-                        <button is="Button" class="k-overflow-button" icon="plus" disabled>Disabled</button>
-                        <button is="Button" class="k-overflow-button" icon="plus" disabled focus>Disabled focus</button>
+                        <button class="k-overflow-button k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-disabled">
+                            <span class="k-button-text">MenuButton</span>
+                        </button>
+                        <button class="k-overflow-button k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                            <span class="k-button-icon k-icon k-i-plus"></span>Normal
+                        </button>
+                        <button class="k-overflow-button k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-hover">
+                            <span class="k-button-icon k-icon k-i-plus"></span>Hover
+                        </button>
+                        <button class="k-overflow-button k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-focus">
+                            <span class="k-button-icon k-icon k-i-plus"></span>Focus
+                        </button>
+                        <button class="k-overflow-button k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-active">
+                            <span class="k-button-icon k-icon k-i-plus"></span>Active
+                        </button>
+                        <button class="k-overflow-button k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-disabled">
+                            <span class="k-button-icon k-icon k-i-plus"></span>Disabled
+                        </button>
+                        <button class="k-overflow-button k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-focus k-disabled">
+                            <span class="k-button-icon k-icon k-i-plus"></span>Disabled focus
+                        </button>
                     </li>
                 </ul>
             </div>
@@ -146,13 +227,27 @@
             <div class="k-animation-container">
                 <ul class="k-reset k-popup k-group k-list-container k-overflow-container">
                     <li class="k-item">
-                        <button is="Button" class="k-overflow-button">SplitButton</button>
-                        <button is="Button" class="k-overflow-button" icon="plus">Normal</button>
-                        <button is="Button" class="k-overflow-button" icon="plus" hover>Hover</button>
-                        <button is="Button" class="k-overflow-button" icon="plus" focus>Focus</button>
-                        <button is="Button" class="k-overflow-button" icon="plus" active>Active</button>
-                        <button is="Button" class="k-overflow-button" icon="plus" disabled>Disabled</button>
-                        <button is="Button" class="k-overflow-button" icon="plus" disabled focus>Disabled focus</button>
+                        <button class="k-overflow-button k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                            <span class="k-button-text">SplitButton</span>
+                        </button>
+                        <button class="k-overflow-button k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                            <span class="k-button-icon k-icon k-i-plus"></span>Normal
+                        </button>
+                        <button class="k-overflow-button k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-hover">
+                            <span class="k-button-icon k-icon k-i-plus"></span>Hover
+                        </button>
+                        <button class="k-overflow-button k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-focus">
+                            <span class="k-button-icon k-icon k-i-plus"></span>Focus
+                        </button>
+                        <button class="k-overflow-button k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-active">
+                            <span class="k-button-icon k-icon k-i-plus"></span>Active
+                        </button>
+                        <button class="k-overflow-button k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-disabled">
+                            <span class="k-button-icon k-icon k-i-plus"></span>Disabled
+                        </button>
+                        <button class="k-overflow-button k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-focus k-disabled">
+                            <span class="k-button-icon k-icon k-i-plus"></span>Disabled focus
+                        </button>
                     </li>
                 </ul>
             </div>
@@ -161,12 +256,24 @@
             <div class="k-animation-container k-overflow-wrapper">
                 <ul class="k-reset k-popup k-group k-list-container k-overflow-container">
                     <li class="k-button-group k-overflow-group k-item">
-                        <button is="Button" class="k-overflow-button">Normal</button>
-                        <button is="Button" class="k-overflow-button" hover>Hover</button>
-                        <button is="Button" class="k-overflow-button" focus>Focus</button>
-                        <button is="Button" class="k-overflow-button" active>Active</button>
-                        <button is="Button" class="k-overflow-button" disabled>Disabled</button>
-                        <button is="Button" class="k-overflow-button" disabled focus>Disabled focus</button>
+                        <button class="k-overflow-button k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                            <span class="k-button-text">Normal</span>
+                        </button>
+                        <button class="k-overflow-button k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-hover">
+                            <span class="k-button-text">Hover</span>
+                        </button>
+                        <button class="k-overflow-button k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-focus">
+                            <span class="k-button-text">Focus</span>
+                        </button>
+                        <button class="k-overflow-button k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-active">
+                            <span class="k-button-text">Active</span>
+                        </button>
+                        <button class="k-overflow-button k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-disabled">
+                            <span class="k-button-text">Disabled</span>
+                        </button>
+                        <button class="k-overflow-button k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-focus k-disabled">
+                            <span class="k-button-text">Disabled focus</span>
+                        </button>
                     </li>
                 </ul>
             </div>

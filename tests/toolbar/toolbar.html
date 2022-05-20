@@ -1,12 +1,11 @@
 <!doctype html>
-<html lang="en" class="k-no-animations">
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width:15px;">
 <head>
     <title>Toolbar</title>
     <meta charset="utf-8">
     <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
     <link rel="stylesheet" href="/packages/html/assets/styles.css">
     <script src="/packages/html/assets/scripts.js"></script>
-    <script src="/packages/html/dist/index.js"></script>
 </head>
 <body id="app" class="k-body">
     <style>
@@ -21,104 +20,234 @@
         <span class="k-colspan-all">Toolbar</span>
         <section class="k-colspan-all">
             <div class="k-widget k-toolbar k-toolbar-resizable">
-                <button is="Button" icon="more-vertical" class="k-overflow-anchor" fillMode="flat" rounded="null"></button>
-                <button is="Button" icon="bold"></button>
-                <button is="Button">Button</button>
-                <button is="Button" class="k-toggle-button">Toggle</button>
+                <button class="k-overflow-anchor k-button k-button-md k-button-flat k-button-flat-base k-icon-button">
+                    <span class="k-button-icon k-icon k-i-more-vertical"></span>
+                </button>
+                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                    <span class="k-button-icon k-icon k-i-bold"></span>
+                </button>
+                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                    <span class="k-button-text">Button</span>
+                </button>
+                <button class="k-toggle-button k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                    <span class="k-button-text">Toggle</span>
+                </button>
                 <div class="k-separator"></div>
                 <div class="k-button-group">
-                    <button is="Button" icon="align-left">Left</button>
-                    <button is="Button" icon="align-center">Center</button>
-                    <button is="Button" icon="align-right">Right</button>
+                    <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                        <span class="k-button-icon k-icon k-i-align-left"></span>Left
+                    </button>
+                    <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                        <span class="k-button-icon k-icon k-i-align-center"></span>Center
+                    </button>
+                    <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                        <span class="k-button-icon k-icon k-i-align-right"></span>Right
+                    </button>
                 </div>
                 <div class="k-separator"></div>
-                <button is="Button" themeColor="primary">Primary</button>
+                <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md">
+                    <span class="k-button-text">Primary</span>
+                </button>
                 <div class="k-separator"></div>
                 <div class="k-toolbar-template">
                     <label>Label:</label>
-                    <input is="Colorpicker" />
+                    <span class="k-colorpicker k-icon-picker k-picker k-picker-md k-picker-solid k-rounded-md">
+                        <span class="k-input-inner">
+                            <span class="k-color-preview k-no-color k-value-icon">
+                                <span class="k-color-preview-mask"></span>
+                            </span>
+                        </span>
+                        <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                            <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                        </button>
+                    </span>
                 </div>
-                <input is="Switch" checked />
+                <span class="k-switch k-switch-md k-switch-on">
+                    <span class="k-switch-track k-rounded-full"></span>
+                    <span class="k-switch-thumb-wrap">
+                        <span class="k-switch-thumb k-rounded-full"></span>
+                    </span>
+                </span>
             </div>
         </section>
         <span class="k-colspan-all">RTL</span>
         <section class="k-colspan-all" dir="rtl">
             <div class="k-widget k-toolbar k-toolbar-resizable">
-                <button is="Button" icon="more-vertical" class="k-overflow-anchor" fillMode="flat" rounded="null"></button>
-                <button is="Button" icon="bold"></button>
-                <button is="Button">Button</button>
-                <button is="Button" class="k-toggle-button">Toggle</button>
+                <button class="k-overflow-anchor k-button k-button-md k-button-flat k-button-flat-base k-icon-button">
+                    <span class="k-button-icon k-icon k-i-more-vertical"></span>
+                </button>
+                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                    <span class="k-button-icon k-icon k-i-bold"></span>
+                </button>
+                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                    <span class="k-button-text">Button</span>
+                </button>
+                <button class="k-toggle-button k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                    <span class="k-button-text">Toggle</span>
+                </button>
                 <div class="k-separator"></div>
                 <div class="k-button-group">
-                    <button is="Button" icon="align-left">Left</button>
-                    <button is="Button" icon="align-center">Center</button>
-                    <button is="Button" icon="align-right">Right</button>
+                    <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                        <span class="k-button-icon k-icon k-i-align-left"></span>Left
+                    </button>
+                    <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                        <span class="k-button-icon k-icon k-i-align-center"></span>Center
+                    </button>
+                    <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                        <span class="k-button-icon k-icon k-i-align-right"></span>Right
+                    </button>
                 </div>
                 <div class="k-separator"></div>
-                <button is="Button" themeColor="primary">Primary</button>
+                <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md">
+                    <span class="k-button-text">Primary</span>
+                </button>
                 <div class="k-separator"></div>
                 <div class="k-toolbar-template">
                     <label>Label:</label>
-                    <input is="Colorpicker" />
+                    <span class="k-colorpicker k-icon-picker k-picker k-picker-md k-picker-solid k-rounded-md">
+                        <span class="k-input-inner">
+                            <span class="k-color-preview k-no-color k-value-icon">
+                                <span class="k-color-preview-mask"></span>
+                            </span>
+                        </span>
+                        <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                            <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                        </button>
+                    </span>
                 </div>
-                <input is="Switch" checked />
+                <span class="k-switch k-switch-md k-switch-on">
+                    <span class="k-switch-track k-rounded-full"></span>
+                    <span class="k-switch-thumb-wrap">
+                        <span class="k-switch-thumb k-rounded-full"></span>
+                    </span>
+                </span>
             </div>
         </section>
         <span class="k-colspan-all">Button states</span>
         <section class="k-colspan-all">
             <div class="k-widget k-toolbar k-toolbar-resizable">
-                <button is="Button" icon="more-vertical" class="k-overflow-anchor" fillMode="flat" rounded="null" hover></button>
-                <!-- Buttons without icon -->
-                <button is="Button">Normal</button>
-                <button is="Button" hover>Hover</button>
-                <button is="Button" focus>Focus</button>
-                <button is="Button" active>Active</button>
-                <button is="Button" selected>Selected</button>
-                <button is="Button" disabled>Disabled</button>
+                <button class="k-overflow-anchor k-button k-button-md k-button-flat k-button-flat-base k-icon-button k-hover">
+                    <span class="k-button-icon k-icon k-i-more-vertical"></span>
+                </button>
+                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                    <span class="k-button-text">Normal</span>
+                </button>
+                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-hover">
+                    <span class="k-button-text">Hover</span>
+                </button>
+                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-focus">
+                    <span class="k-button-text">Focus</span>
+                </button>
+                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-active">
+                    <span class="k-button-text">Active</span>
+                </button>
+                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-selected">
+                    <span class="k-button-text">Selected</span>
+                </button>
+                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-disabled">
+                    <span class="k-button-text">Disabled</span>
+                </button>
                 <div class="k-separator"></div>
-                <!-- Icon buttons -->
-                <button is="Button" icon="bold"></button>
-                <button is="Button" icon="bold" hover></button>
-                <button is="Button" icon="bold" focus></button>
-                <button is="Button" icon="bold" active></button>
-                <button is="Button" icon="bold" selected></button>
-                <button is="Button" icon="bold" disabled></button>
+                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                    <span class="k-button-icon k-icon k-i-bold"></span>
+                </button>
+                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button k-hover">
+                    <span class="k-button-icon k-icon k-i-bold"></span>
+                </button>
+                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button k-focus">
+                    <span class="k-button-icon k-icon k-i-bold"></span>
+                </button>
+                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button k-active">
+                    <span class="k-button-icon k-icon k-i-bold"></span>
+                </button>
+                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button k-selected">
+                    <span class="k-button-icon k-icon k-i-bold"></span>
+                </button>
+                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button k-disabled">
+                    <span class="k-button-icon k-icon k-i-bold"></span>
+                </button>
             </div>
         </section>
         <section class="k-colspan-all">
             <div class="k-widget k-toolbar k-toolbar-resizable">
-                <button is="Button" icon="more-vertical" class="k-overflow-anchor" fillMode="flat" rounded="null" focus></button>
-                <!-- Buttons with icon -->
-                <button is="Button" icon="align-left" class="k-toggle-button">Normal</button>
-                <button is="Button" icon="align-left" class="k-toggle-button" hover>Hover</button>
-                <button is="Button" icon="align-left" class="k-toggle-button" focus>Focus</button>
-                <button is="Button" icon="align-left" class="k-toggle-button" active>Active</button>
-                <button is="Button" icon="align-left" class="k-toggle-button" selected>Selected</button>
-                <button is="Button" icon="align-left" class="k-toggle-button" disabled>Disabled</button>
+                <button class="k-overflow-anchor k-button k-button-md k-button-flat k-button-flat-base k-icon-button k-focus">
+                    <span class="k-button-icon k-icon k-i-more-vertical"></span>
+                </button>
+                <button class="k-toggle-button k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                    <span class="k-button-icon k-icon k-i-align-left"></span>Normal
+                </button>
+                <button class="k-toggle-button k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-hover">
+                    <span class="k-button-icon k-icon k-i-align-left"></span>Hover
+                </button>
+                <button class="k-toggle-button k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-focus">
+                    <span class="k-button-icon k-icon k-i-align-left"></span>Focus
+                </button>
+                <button class="k-toggle-button k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-active">
+                    <span class="k-button-icon k-icon k-i-align-left"></span>Active
+                </button>
+                <button class="k-toggle-button k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-selected">
+                    <span class="k-button-icon k-icon k-i-align-left"></span>Selected
+                </button>
+                <button class="k-toggle-button k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-disabled">
+                    <span class="k-button-icon k-icon k-i-align-left"></span>Disabled
+                </button>
             </div>
         </section>
         <section class="k-colspan-all">
             <div class="k-widget k-toolbar k-toolbar-resizable">
-                <button is="Button" icon="more-vertical" class="k-overflow-anchor" fillMode="flat" rounded="null" active></button>
-                <!-- Buttons with icon -->
-                <button is="Button" themeColor="primary" icon="align-left">Normal</button>
-                <button is="Button" themeColor="primary" icon="align-left" hover>Hover</button>
-                <button is="Button" themeColor="primary" icon="align-left" focus>Focus</button>
-                <button is="Button" themeColor="primary" icon="align-left" active>Active</button>
-                <button is="Button" themeColor="primary" icon="align-left" selected>Selected</button>
-                <button is="Button" themeColor="primary" icon="align-left" disabled>Disabled</button>
+                <button class="k-overflow-anchor k-button k-button-md k-button-flat k-button-flat-base k-icon-button k-active">
+                    <span class="k-button-icon k-icon k-i-more-vertical"></span>
+                </button>
+                <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md">
+                    <span class="k-button-icon k-icon k-i-align-left"></span>Normal
+                </button>
+                <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md k-hover">
+                    <span class="k-button-icon k-icon k-i-align-left"></span>Hover
+                </button>
+                <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md k-focus">
+                    <span class="k-button-icon k-icon k-i-align-left"></span>Focus
+                </button>
+                <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md k-active">
+                    <span class="k-button-icon k-icon k-i-align-left"></span>Active
+                </button>
+                <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md k-selected">
+                    <span class="k-button-icon k-icon k-i-align-left"></span>Selected
+                </button>
+                <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md k-disabled">
+                    <span class="k-button-icon k-icon k-i-align-left"></span>Disabled
+                </button>
             </div>
         </section>
         <span class="k-colspan-all">Disabled focus state of buttons</span>
         <section class="k-colspan-all">
             <div class="k-widget k-toolbar k-toolbar-resizable">
-                <button is="Button" icon="more-vertical" class="k-overflow-anchor" fillMode="flat" rounded="null" disabled focus></button>
-                <button is="Button" disabled focus>Button</button>
-                <button is="MenuButton" disabled focus>Menu button</button>
-                <button is="SplitButton" disabled focus>Split button</button>
+                <button class="k-overflow-anchor k-button k-button-md k-button-flat k-button-flat-base k-icon-button k-focus k-disabled">
+                    <span class="k-button-icon k-icon k-i-more-vertical"></span>
+                </button>
+                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-focus k-disabled">
+                    <span class="k-button-text">Button</span>
+                </button>
+                <button class="k-menu-button k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-focus k-disabled">
+                    <span class="k-button-text">Menu button</span>
+                    <span class="k-menu-button-arrow k-button-arrow">
+                        <span class="k-icon k-i-arrow-s"></span>
+                    </span>
+                </button>
+                <div class="k-split-button k-button-group k-rounded-md">
+                    <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-focus k-disabled">
+                        <span class="k-button-text">Split button</span>
+                    </button>
+                    <button class="k-split-button-arrow k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button k-disabled">
+                        <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                    </button>
+                </div>
                 <div class="k-button-group">
-                    <button is="Button" icon="align-left" disabled focus>Button 1</button>
-                    <button is="Button" icon="align-center" disabled>Button 2</button>
+                    <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-focus k-disabled">
+                        <span class="k-button-icon k-icon k-i-align-left"></span>Button 1
+                    </button>
+                    <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-disabled">
+                        <span class="k-button-icon k-icon k-i-align-center"></span>Button 2
+                    </button>
                 </div>
             </div>
         </section>
@@ -126,27 +255,71 @@
         <span>wrapped rtl</span>
         <section>
             <div class="k-widget k-toolbar">
-                <button is="Button">Button</button>
-                <button is="MenuButton">Menu button</button>
-                <button is="SplitButton">Split button</button>
+                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                    <span class="k-button-text">Button</span>
+                </button>
+                <button class="k-menu-button k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                    <span class="k-button-text">Menu button</span>
+                    <span class="k-menu-button-arrow k-button-arrow">
+                        <span class="k-icon k-i-arrow-s"></span>
+                    </span>
+                </button>
+                <div class="k-split-button k-button-group k-rounded-md">
+                    <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                        <span class="k-button-text">Split button</span>
+                    </button>
+                    <button class="k-split-button-arrow k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                        <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                    </button>
+                </div>
                 <div class="k-button-group">
-                    <button is="Button" icon="align-left">Left</button>
-                    <button is="Button" icon="align-center">Center</button>
-                    <button is="Button" icon="align-right">Right</button>
-                    <button is="Button" icon="align-justify">Justify</button>
+                    <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                        <span class="k-button-icon k-icon k-i-align-left"></span>Left
+                    </button>
+                    <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                        <span class="k-button-icon k-icon k-i-align-center"></span>Center
+                    </button>
+                    <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                        <span class="k-button-icon k-icon k-i-align-right"></span>Right
+                    </button>
+                    <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                        <span class="k-button-icon k-icon k-i-align-justify"></span>Justify
+                    </button>
                 </div>
             </div>
         </section>
         <section dir="rtl">
             <div class="k-widget k-toolbar">
-                <button is="Button">Button</button>
-                <button is="SplitButton">Split button</button>
-                <button is="MenuButton">Menu button</button>
+                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                    <span class="k-button-text">Button</span>
+                </button>
+                <div class="k-split-button k-button-group k-rounded-md">
+                    <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                        <span class="k-button-text">Split button</span>
+                    </button>
+                    <button class="k-split-button-arrow k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                        <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                    </button>
+                </div>
+                <button class="k-menu-button k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                    <span class="k-button-text">Menu button</span>
+                    <span class="k-menu-button-arrow k-button-arrow">
+                        <span class="k-icon k-i-arrow-s"></span>
+                    </span>
+                </button>
                 <div class="k-button-group">
-                    <button is="Button" icon="align-left">Left</button>
-                    <button is="Button" icon="align-center">Center</button>
-                    <button is="Button" icon="align-right">Right</button>
-                    <button is="Button" icon="align-justify">Justify</button>
+                    <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                        <span class="k-button-icon k-icon k-i-align-left"></span>Left
+                    </button>
+                    <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                        <span class="k-button-icon k-icon k-i-align-center"></span>Center
+                    </button>
+                    <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                        <span class="k-button-icon k-icon k-i-align-right"></span>Right
+                    </button>
+                    <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                        <span class="k-button-icon k-icon k-i-align-justify"></span>Justify
+                    </button>
                 </div>
             </div>
         </section>

@@ -1,14 +1,13 @@
 <!doctype html>
-<html lang="en" class="k-no-animations">
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width:15px;">
 <head>
-    <title>Chat</title>
+    <title>Chat RTL</title>
     <meta charset="utf-8">
     <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
     <link rel="stylesheet" href="/packages/html/assets/styles.css">
     <script src="/packages/html/assets/scripts.js"></script>
-    <script src="/packages/html/dist/index.js"></script>
 </head>
-<body id="app" class="k-body k-rtl">
+<body id="app" class="k-body">
     <style>
         #test-area {
             grid-template-columns: repeat(2, 1fr);
@@ -19,7 +18,7 @@
         }
 
     </style>
-    <div id="test-area" class="grid">
+    <div id="test-area" class="k-d-grid k-rtl">
         <section>
             <div class="k-widget k-chat">
                 <div class="k-message-list k-avatars">
@@ -27,33 +26,27 @@
                         <div class="k-timestamp">Bubbles</div>
                         <div class="k-message-group">
                             <p class="k-author">Bruv</p>
-                            <div is="Avatar" type="image">
-                                <img src="/packages/html/assets/avatar.jpg" />
+                            <div class="k-avatar k-avatar-image k-rounded-full k-avatar-md k-avatar-solid k-avatar-solid-primary">
+                                <span class="k-avatar-image">
+                                    <img src="/packages/html/assets/avatar.jpg">
+                                </span>
                             </div>
                             <div class="k-message k-only">
                                 <time class="k-message-time">Thu Feb 08 2018</time>
-                                <div class="k-bubble">
-                                    <!--
-                                    -->How can I help you?
-                                    <!--
-                                -->
-                                </div>
+                                <div class="k-bubble">How can I help you?</div>
                                 <span class="k-message-status">Seen</span>
                             </div>
                         </div>
                         <div class="k-message-group k-alt">
                             <p class="k-author">Bruv</p>
-                            <div is="Avatar" type="image">
-                                <img src="/packages/html/assets/avatar.jpg" />
+                            <div class="k-avatar k-avatar-image k-rounded-full k-avatar-md k-avatar-solid k-avatar-solid-primary">
+                                <span class="k-avatar-image">
+                                    <img src="/packages/html/assets/avatar.jpg">
+                                </span>
                             </div>
                             <div class="k-message k-only">
                                 <time class="k-message-time">Thu Feb 08 2018</time>
-                                <div class="k-bubble">
-                                    <!--
-                                    -->How can I help you?
-                                    <!--
-                                -->
-                                </div>
+                                <div class="k-bubble">How can I help you?</div>
                                 <span class="k-message-status">Seen</span>
                             </div>
                         </div>
@@ -97,11 +90,14 @@
                         </div>
                     </div>
                 </div>
-                <div is="Textbox" class="k-message-box" placeholder="Type a message...">
-                    <slot is="InputSuffix">
-                        <button is="Button" fillMode="flat" icon="pencil" class="k-chat-send"></button>
-                    </slot>
-                </div>
+                <span class="k-message-box k-textbox k-input k-input-md k-input-solid k-rounded-md">
+                    <input type="text" class="k-input-inner" placeholder="Type a message..." autocomplete="off" value="">
+                    <span class="k-input-suffix">
+                        <button class="k-chat-send k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                            <span class="k-button-icon k-icon k-i-pencil"></span>
+                        </button>
+                    </span>
+                </span>
             </div>
         </section>
     </div>

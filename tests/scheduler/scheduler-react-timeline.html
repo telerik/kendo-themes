@@ -1,32 +1,36 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width:15px;">
 <head>
-    <title>Scheduler React Timeline View</title>
+    <title>Scheduler React Timeline</title>
     <meta charset="utf-8">
     <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
     <link rel="stylesheet" href="/packages/html/assets/styles.css">
     <script src="/packages/html/assets/scripts.js"></script>
-    <script src="/packages/html/dist/index.js"></script>
 </head>
 <body id="app" class="k-body">
     <style>
         #test-area {
             max-width: 1400px;
-            grid-template-columns: 1fr;
             align-items: top;
         }
 
     </style>
-    <div id="test-area">
+    <div id="test-area" class="k-d-grid k-grid-cols-1">
         <div class="k-widget k-scheduler k-scheduler-flex k-floatwrap" style="height: 900px;">
             <div class="k-scheduler-toolbar k-toolbar">
                 <span class="k-button-group k-scheduler-navigation">
-                    <button is="Button">Today</button>
-                    <button is="Button" icon="arrow-60-left"></button>
-                    <button is="Button" icon="arrow-60-right"></button>
+                    <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                        <span class="k-button-text">Today</span>
+                    </button>
+                    <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                        <span class="k-button-icon k-icon k-i-arrow-60-left"></span>
+                    </button>
+                    <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                        <span class="k-button-icon k-icon k-i-arrow-60-right"></span>
+                    </button>
                 </span>
                 <a href="#" class="k-nav-current">
-                    <i is="Icon" name="calendar"></i>
+                    <span class="k-icon k-i-calendar"></span>
                     <span class="k-sm-date-format">6/24/2020</span>
                     <span class="k-lg-date-format">Wednesday, June 24, 2020</span>
                 </a>
@@ -36,11 +40,21 @@
                         <option>Timeline</option>
                     </select>
                     <span class="k-button-group k-scheduler-views">
-                        <button is="Button">Day</button>
-                        <button is="Button">Week</button>
-                        <button is="Button">Month</button>
-                        <button is="Button" selected>Timeline</button>
-                        <button is="Button">Agenda</button>
+                        <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                            <span class="k-button-text">Day</span>
+                        </button>
+                        <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                            <span class="k-button-text">Week</span>
+                        </button>
+                        <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                            <span class="k-button-text">Month</span>
+                        </button>
+                        <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-selected">
+                            <span class="k-button-text">Timeline</span>
+                        </button>
+                        <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                            <span class="k-button-text">Agenda</span>
+                        </button>
                     </span>
                 </span>
             </div>
@@ -238,7 +252,7 @@
                         </div>
                         <span class="k-event-actions">
                             <a class="k-link k-event-delete">
-                                <i is="Icon" name="x"></i>
+                                <span class="k-icon k-i-x"></span>
                             </a>
                         </span>
                         <span class="k-resize-handle k-resize-w"></span>
@@ -252,7 +266,7 @@
                         </div>
                         <span class="k-event-actions">
                             <a class="k-link k-event-delete">
-                                <i is="Icon" name="x"></i>
+                                <span class="k-icon k-i-x"></span>
                             </a>
                         </span>
                         <span class="k-resize-handle k-resize-w"></span>
@@ -266,7 +280,7 @@
                         </div>
                         <span class="k-event-actions">
                             <a class="k-link k-event-delete">
-                                <i is="Icon" name="x"></i>
+                                <span class="k-icon k-i-x"></span>
                             </a>
                         </span>
                         <span class="k-resize-handle k-resize-w"></span>
@@ -280,7 +294,7 @@
                         </div>
                         <span class="k-event-actions">
                             <a class="k-link k-event-delete">
-                                <i is="Icon" name="x"></i>
+                                <span class="k-icon k-i-x"></span>
                             </a>
                         </span>
                         <span class="k-resize-handle k-resize-w"></span>
@@ -294,7 +308,7 @@
                         </div>
                         <span class="k-event-actions">
                             <a class="k-link k-event-delete">
-                                <i is="Icon" name="x"></i>
+                                <span class="k-icon k-i-x"></span>
                             </a>
                         </span>
                         <span class="k-resize-handle k-resize-w"></span>
@@ -308,7 +322,7 @@
                         </div>
                         <span class="k-event-actions">
                             <a class="k-link k-event-delete">
-                                <i is="Icon" name="x"></i>
+                                <span class="k-icon k-i-x"></span>
                             </a>
                         </span>
                         <span class="k-resize-handle k-resize-w"></span>
@@ -322,7 +336,7 @@
                         </div>
                         <span class="k-event-actions">
                             <a class="k-link k-event-delete">
-                                <i is="Icon" name="x"></i>
+                                <span class="k-icon k-i-x"></span>
                             </a>
                         </span>
                         <span class="k-resize-handle k-resize-w"></span>
@@ -336,7 +350,7 @@
                         </div>
                         <span class="k-event-actions">
                             <a class="k-link k-event-delete">
-                                <i is="Icon" name="x"></i>
+                                <span class="k-icon k-i-x"></span>
                             </a>
                         </span>
                         <span class="k-resize-handle k-resize-w"></span>
@@ -349,7 +363,7 @@
                         </div>
                         <span class="k-event-actions">
                             <a class="k-link k-event-delete">
-                                <i is="Icon" name="x"></i>
+                                <span class="k-icon k-i-x"></span>
                             </a>
                         </span>
                         <span class="k-resize-handle k-resize-w"></span>
@@ -362,7 +376,7 @@
                         </div>
                         <span class="k-event-actions">
                             <a class="k-link k-event-delete">
-                                <i is="Icon" name="x"></i>
+                                <span class="k-icon k-i-x"></span>
                             </a>
                         </span>
                         <span class="k-resize-handle k-resize-w"></span>
@@ -375,7 +389,7 @@
                         </div>
                         <span class="k-event-actions">
                             <a class="k-link k-event-delete">
-                                <i is="Icon" name="x"></i>
+                                <span class="k-icon k-i-x"></span>
                             </a>
                         </span>
                         <span class="k-resize-handle k-resize-w"></span>
@@ -388,7 +402,7 @@
                         </div>
                         <span class="k-event-actions">
                             <a class="k-link k-event-delete">
-                                <i is="Icon" name="x"></i>
+                                <span class="k-icon k-i-x"></span>
                             </a>
                         </span>
                         <span class="k-resize-handle k-resize-w"></span>
@@ -401,7 +415,7 @@
                         </div>
                         <span class="k-event-actions">
                             <a class="k-link k-event-delete">
-                                <i is="Icon" name="x"></i>
+                                <span class="k-icon k-i-x"></span>
                             </a>
                         </span>
                         <span class="k-resize-handle k-resize-w"></span>
@@ -414,7 +428,7 @@
                         </div>
                         <span class="k-event-actions">
                             <a class="k-link k-event-delete">
-                                <i is="Icon" name="x"></i>
+                                <span class="k-icon k-i-x"></span>
                             </a>
                         </span>
                         <span class="k-resize-handle k-resize-w"></span>
@@ -427,7 +441,7 @@
                         </div>
                         <span class="k-event-actions">
                             <a class="k-link k-event-delete">
-                                <i is="Icon" name="x"></i>
+                                <span class="k-icon k-i-x"></span>
                             </a>
                         </span>
                         <span class="k-resize-handle k-resize-w"></span>
@@ -440,7 +454,7 @@
                         </div>
                         <span class="k-event-actions">
                             <a class="k-link k-event-delete">
-                                <i is="Icon" name="x"></i>
+                                <span class="k-icon k-i-x"></span>
                             </a>
                         </span>
                         <span class="k-resize-handle k-resize-w"></span>
@@ -453,7 +467,7 @@
                         </div>
                         <span class="k-event-actions">
                             <a class="k-link k-event-delete">
-                                <i is="Icon" name="x"></i>
+                                <span class="k-icon k-i-x"></span>
                             </a>
                         </span>
                         <span class="k-resize-handle k-resize-w"></span>
@@ -466,7 +480,7 @@
                         </div>
                         <span class="k-event-actions">
                             <a class="k-link k-event-delete">
-                                <i is="Icon" name="x"></i>
+                                <span class="k-icon k-i-x"></span>
                             </a>
                         </span>
                         <span class="k-resize-handle k-resize-w"></span>
@@ -479,7 +493,7 @@
                         </div>
                         <span class="k-event-actions">
                             <a class="k-link k-event-delete">
-                                <i is="Icon" name="x"></i>
+                                <span class="k-icon k-i-x"></span>
                             </a>
                         </span>
                         <span class="k-resize-handle k-resize-w"></span>
@@ -492,7 +506,7 @@
                         </div>
                         <span class="k-event-actions">
                             <a class="k-link k-event-delete">
-                                <i is="Icon" name="x"></i>
+                                <span class="k-icon k-i-x"></span>
                             </a>
                         </span>
                         <span class="k-resize-handle k-resize-w"></span>
@@ -506,7 +520,7 @@
                         </div>
                         <span class="k-event-actions">
                             <a class="k-link k-event-delete">
-                                <i is="Icon" name="x"></i>
+                                <span class="k-icon k-i-x"></span>
                             </a>
                         </span>
                         <span class="k-resize-handle k-resize-w"></span>
@@ -520,7 +534,7 @@
                         </div>
                         <span class="k-event-actions">
                             <a class="k-link k-event-delete">
-                                <i is="Icon" name="x"></i>
+                                <span class="k-icon k-i-x"></span>
                             </a>
                         </span>
                         <span class="k-resize-handle k-resize-w"></span>
@@ -534,7 +548,7 @@
                         </div>
                         <span class="k-event-actions">
                             <a class="k-link k-event-delete">
-                                <i is="Icon" name="x"></i>
+                                <span class="k-icon k-i-x"></span>
                             </a>
                         </span>
                         <span class="k-resize-handle k-resize-w"></span>
@@ -548,7 +562,7 @@
                         </div>
                         <span class="k-event-actions">
                             <a class="k-link k-event-delete">
-                                <i is="Icon" name="x"></i>
+                                <span class="k-icon k-i-x"></span>
                             </a>
                         </span>
                         <span class="k-resize-handle k-resize-w"></span>
@@ -562,7 +576,7 @@
                         </div>
                         <span class="k-event-actions">
                             <a class="k-link k-event-delete">
-                                <i is="Icon" name="x"></i>
+                                <span class="k-icon k-i-x"></span>
                             </a>
                         </span>
                         <span class="k-resize-handle k-resize-w"></span>
@@ -576,7 +590,7 @@
                         </div>
                         <span class="k-event-actions">
                             <a class="k-link k-event-delete">
-                                <i is="Icon" name="x"></i>
+                                <span class="k-icon k-i-x"></span>
                             </a>
                         </span>
                         <span class="k-resize-handle k-resize-w"></span>
@@ -590,7 +604,7 @@
                         </div>
                         <span class="k-event-actions">
                             <a class="k-link k-event-delete">
-                                <i is="Icon" name="x"></i>
+                                <span class="k-icon k-i-x"></span>
                             </a>
                         </span>
                         <span class="k-resize-handle k-resize-w"></span>
@@ -604,7 +618,7 @@
                         </div>
                         <span class="k-event-actions">
                             <a class="k-link k-event-delete">
-                                <i is="Icon" name="x"></i>
+                                <span class="k-icon k-i-x"></span>
                             </a>
                         </span>
                         <span class="k-resize-handle k-resize-w"></span>
@@ -613,7 +627,9 @@
                 </div>
             </div>
             <div class="k-scheduler-footer k-toolbar">
-                <button is="Button" icon="clock" class="k-scheduler-fullday">Show full day</button>
+                <button class="k-scheduler-fullday k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                    <span class="k-button-icon k-icon k-i-clock"></span>Show full day
+                </button>
             </div>
         </div>
     </div>

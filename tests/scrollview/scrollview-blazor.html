@@ -1,12 +1,11 @@
 <!doctype html>
-<html lang="en" class="k-no-animations">
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width:15px;">
 <head>
     <title>ScrollView -- Blazor</title>
     <meta charset="utf-8">
     <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
     <link rel="stylesheet" href="/packages/html/assets/styles.css">
     <script src="/packages/html/assets/scripts.js"></script>
-    <script src="/packages/html/dist/index.js"></script>
 </head>
 <body id="app" class="k-body">
     <style>
@@ -24,6 +23,17 @@
             background: black !important;
         }
 
+        .k-scrollview {
+            background: gray !important;
+        }
+
+        .k-scrollview-dark {
+            background: white !important;
+        }
+
+        .k-scrollview-light {
+            background: black !important;
+        }
     </style>
     <div id="test-area" class="k-d-grid k-grid-cols-3">
         <span class="k-colspan-all">Blazor scrollview</span>
@@ -31,29 +41,19 @@
         <span>Normal</span>
         <span>Dark mode</span>
         <div class="k-widget k-scrollview k-scrollview-light">
-            <div class="k-scrollview-wrap k-scrollview-animate" style="--kendo-scrollview-views: 5; --kendo-scrollview-current: 3;">
-                <div class="k-scrollview-view">
-                    <!-- template -->
-                </div>
-                <div class="k-scrollview-view">
-                    <!-- template -->
-                </div>
-                <div class="k-scrollview-view">
-                    <!-- template -->
-                </div>
-                <div class="k-scrollview-view">
-                    <!-- template -->
-                </div>
-                <div class="k-scrollview-view">
-                    <!-- template -->
-                </div>
+            <div class="k-scrollview-wrap k-scrollview-animate" style="--kendo-scrollview-views:5; --kendo-scrollview-current:3;">
+                <div class="k-scrollview-view"></div>
+                <div class="k-scrollview-view"> </div>
+                <div class="k-scrollview-view"></div>
+                <div class="k-scrollview-view"></div>
+                <div class="k-scrollview-view"></div>
             </div>
             <div class="k-scrollview-elements">
                 <a class="k-scrollview-prev">
-                    <i is="Icon" name="arrowhead-w"></i>
+                    <span class="k-icon k-i-arrowhead-w"></span>
                 </a>
                 <a class="k-scrollview-next">
-                    <i is="Icon" name="arrowhead-e"></i>
+                    <span class="k-icon k-i-arrowhead-e"></span>
                 </a>
                 <div class="k-scrollview-nav-wrap">
                     <ul class="k-scrollview-nav">
@@ -67,97 +67,65 @@
             </div>
         </div>
         <div class="k-widget k-scrollview">
-            <div class="k-scrollview-wrap k-scrollview-animate" style="--kendo-scrollview-views: 9; --kendo-scrollview-current: 5;">
-                <div class="k-scrollview-view">
-                    <!-- template -->
-                </div>
-                <div class="k-scrollview-view">
-                    <!-- template -->
-                </div>
-                <div class="k-scrollview-view">
-                    <!-- template -->
-                </div>
-                <div class="k-scrollview-view">
-                    <!-- template -->
-                </div>
-                <div class="k-scrollview-view">
-                    <!-- template -->
-                </div>
-                <div class="k-scrollview-view">
-                    <!-- template -->
-                </div>
-                <div class="k-scrollview-view">
-                    <!-- template -->
-                </div>
-                <div class="k-scrollview-view">
-                    <!-- template -->
-                </div>
-                <div class="k-scrollview-view">
-                    <!-- template -->
-                </div>
+            <div class="k-scrollview-wrap k-scrollview-animate" style="--kendo-scrollview-views:9; --kendo-scrollview-current:5;">
+                <div class="k-scrollview-view"></div>
+                <div class="k-scrollview-view"></div>
+                <div class="k-scrollview-view"></div>
+                <div class="k-scrollview-view"> </div>
+                <div class="k-scrollview-view"></div>
+                <div class="k-scrollview-view"></div>
+                <div class="k-scrollview-view"></div>
+                <div class="k-scrollview-view"></div>
+                <div class="k-scrollview-view"></div>
             </div>
             <div class="k-scrollview-elements">
                 <a class="k-scrollview-prev">
-                    <i is="Icon" name="arrowhead-w"></i>
+                    <span class="k-icon k-i-arrowhead-w"></span>
                 </a>
                 <a class="k-scrollview-next">
-                    <i is="Icon" name="arrowhead-e"></i>
+                    <span class="k-icon k-i-arrowhead-e"></span>
                 </a>
                 <div class="k-scrollview-nav-wrap">
                     <ul class="k-scrollview-nav">
-                        <li class="k-link" style="transform: scale(0.5)"></li>
-                        <li class="k-link" style="transform: scale(0.65)"></li>
-                        <li class="k-link" style="transform: scale(0.8)"></li>
+                        <li class="k-link" style="transform: scale(0.5);"></li>
+                        <li class="k-link" style="transform: scale(0.65);"></li>
+                        <li class="k-link" style="transform: scale(0.8);"></li>
                         <li class="k-link"></li>
                         <li class="k-link k-primary"></li>
                         <li class="k-link"></li>
-                        <li class="k-link" style="transform: scale(0.8)"></li>
-                        <li class="k-link" style="transform: scale(0.65)"></li>
-                        <li class="k-link" style="transform: scale(0.5)"></li>
+                        <li class="k-link" style="transform: scale(0.8);"></li>
+                        <li class="k-link" style="transform: scale(0.65);"></li>
+                        <li class="k-link" style="transform: scale(0.5);"></li>
                     </ul>
                 </div>
             </div>
         </div>
         <div class="k-widget k-scrollview k-scrollview-dark">
-            <div class="k-scrollview-wrap k-scrollview-animate" style="--kendo-scrollview-views: 7; --kendo-scrollview-current: 4;">
-                <div class="k-scrollview-view">
-                    <!-- template -->
-                </div>
-                <div class="k-scrollview-view">
-                    <!-- template -->
-                </div>
-                <div class="k-scrollview-view">
-                    <!-- template -->
-                </div>
-                <div class="k-scrollview-view">
-                    <!-- template -->
-                </div>
-                <div class="k-scrollview-view">
-                    <!-- template -->
-                </div>
-                <div class="k-scrollview-view">
-                    <!-- template -->
-                </div>
-                <div class="k-scrollview-view">
-                    <!-- template -->
-                </div>
+            <div class="k-scrollview-wrap k-scrollview-animate" style="--kendo-scrollview-views:7; --kendo-scrollview-current:4;">
+                <div class="k-scrollview-view"></div>
+                <div class="k-scrollview-view"></div>
+                <div class="k-scrollview-view"></div>
+                <div class="k-scrollview-view"></div>
+                <div class="k-scrollview-view"></div>
+                <div class="k-scrollview-view"></div>
+                <div class="k-scrollview-view"></div>
             </div>
             <div class="k-scrollview-elements">
                 <a class="k-scrollview-prev">
-                    <i is="Icon" name="arrowhead-w"></i>
+                    <span class="k-icon k-i-arrowhead-w"></span>
                 </a>
                 <a class="k-scrollview-next">
-                    <i is="Icon" name="arrowhead-e"></i>
+                    <span class="k-icon k-i-arrowhead-e"></span>
                 </a>
                 <div class="k-scrollview-nav-wrap">
                     <ul class="k-scrollview-nav">
-                        <li class="k-link" style="transform: scale(0.5)"></li>
-                        <li class="k-link" style="transform: scale(0.65)"></li>
+                        <li class="k-link" style="transform: scale(0.5);"></li>
+                        <li class="k-link" style="transform: scale(0.65);"></li>
                         <li class="k-link"></li>
                         <li class="k-link k-primary"></li>
                         <li class="k-link"></li>
-                        <li class="k-link" style="transform: scale(0.65)"></li>
-                        <li class="k-link" style="transform: scale(0.5)"></li>
+                        <li class="k-link" style="transform: scale(0.65);"></li>
+                        <li class="k-link" style="transform: scale(0.5);"></li>
                     </ul>
                 </div>
             </div>

@@ -1,21 +1,22 @@
 <!doctype html>
-<html lang="en" class="k-no-animations">
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width:15px;">
 <head>
-    <title>Panelbar -- jquery</title>
+    <title>PanelBar jQuery</title>
     <meta charset="utf-8">
     <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
     <link rel="stylesheet" href="/packages/html/assets/styles.css">
     <script src="/packages/html/assets/scripts.js"></script>
-    <script src="/packages/html/dist/index.js"></script>
 </head>
 <body id="app" class="k-body">
     <style>
         #test-area {
             align-items: start;
         }
+
         .k-sprite {
             background-color: gray;
         }
+
         .k-image {
             width: 16px;
             height: 16px;
@@ -30,25 +31,25 @@
             <ul class="k-widget k-reset k-header k-panelbar">
                 <li class="k-item k-first">
                     <span class="k-link k-header">
-                        <i is="Icon" name="cog"></i> Root <i is="Icon" class="k-panelbar-expand" name="arrow-s"></i>
+                        <span class="k-icon k-i-cog"></span>Root<span class="k-panelbar-expand k-icon k-i-arrow-s"></span>
                     </span>
                 </li>
                 <li class="k-item">
                     <span class="k-link k-header k-state-hover">
-                        <span class="k-image"></span> Root hover <i is="Icon" class="k-panelbar-expand" name="arrow-s"></i>
+                        <span class="k-image"></span>Root hover<span class="k-panelbar-expand k-icon k-i-arrow-s"></span>
                     </span>
                 </li>
                 <li class="k-item">
                     <span class="k-link k-header k-state-focus">
-                        <span class="k-sprite"></span> Root focus <i is="Icon" class="k-panelbar-expand" name="arrow-s"></i>
+                        <span class="k-sprite"></span>Root focus<span class="k-panelbar-expand k-icon k-i-arrow-s"></span>
                     </span>
                 </li>
                 <li class="k-item">
-                    <span class="k-link k-header k-state-selected"> Root selected <i is="Icon" class="k-panelbar-expand" name="arrow-s"></i>
+                    <span class="k-link k-header k-state-selected">Root selected<span class="k-panelbar-expand k-icon k-i-arrow-s"></span>
                     </span>
                 </li>
                 <li class="k-item">
-                    <span class="k-link k-header k-state-disabled"> Root disabled <i is="Icon" class="k-panelbar-expand" name="arrow-s"></i>
+                    <span class="k-link k-header k-state-disabled">Root disabled<span class="k-panelbar-expand k-icon k-i-arrow-s"></span>
                     </span>
                 </li>
                 <li class="k-item k-last">
@@ -62,26 +63,26 @@
                     <span class="k-link k-header">First</span>
                 </li>
                 <li class="k-item k-state-expanded">
-                    <span class="k-link k-header"> Middle expanded <i is="Icon" class="k-panelbar-collapse" name="arrow-n"></i>
+                    <span class="k-link k-header">Middle expanded<span class="k-panelbar-collapse k-icon k-i-arrow-n"></span>
                     </span>
                     <ul class="k-panel k-group">
                         <li class="k-item">
                             <span class="k-link">Child</span>
                         </li>
                         <li class="k-item">
-                            <span class="k-link k-state-hover"> Child hover <i is="Icon" class="k-panelbar-expand" name="arrow-s"></i>
+                            <span class="k-link k-state-hover">Child hover<span class="k-panelbar-expand k-icon k-i-arrow-s"></span>
                             </span>
                         </li>
                         <li class="k-item">
-                            <span class="k-link k-state-focus"> Child focus <i is="Icon" class="k-panelbar-expand" name="arrow-s"></i>
+                            <span class="k-link k-state-focus">Child focus<span class="k-panelbar-expand k-icon k-i-arrow-s"></span>
                             </span>
                         </li>
                         <li class="k-item">
-                            <span class="k-link k-state-selected"> Child selected <i is="Icon" class="k-panelbar-expand" name="arrow-s"></i>
+                            <span class="k-link k-state-selected">Child selected<span class="k-panelbar-expand k-icon k-i-arrow-s"></span>
                             </span>
                         </li>
                         <li class="k-item k-state-expanded">
-                            <span class="k-link"> Child expanded <i is="Icon" class="k-panelbar-collapse" name="arrow-n"></i>
+                            <span class="k-link">Child expanded<span class="k-panelbar-collapse k-icon k-i-arrow-n"></span>
                             </span>
                             <ul class="k-panel k-group">
                                 <li class="k-item">
@@ -96,7 +97,7 @@
                             </ul>
                         </li>
                         <li class="k-item">
-                            <span class="k-link k-state-disabled"> Child disabled <i is="Icon" class="k-panelbar-expand" name="arrow-s"></i>
+                            <span class="k-link k-state-disabled">Child disabled<span class="k-panelbar-expand k-icon k-i-arrow-s"></span>
                             </span>
                         </li>
                         <li class="k-item">
@@ -112,7 +113,7 @@
         <section>
             <ul class="k-widget k-reset k-header k-panelbar">
                 <li class="k-item k-first k-state-expanded">
-                    <span class="k-link k-header"> First expanded <i is="Icon" class="k-panelbar-collapse" name="arrow-n"></i>
+                    <span class="k-link k-header">First expanded<span class="k-panelbar-collapse k-icon k-i-arrow-n"></span>
                     </span>
                     <div class="k-panelbar-content">
                         <h4>Title in template</h4>
@@ -136,7 +137,7 @@
                     <span class="k-link k-header">Middle</span>
                 </li>
                 <li class="k-item k-state-expanded k-last">
-                    <span class="k-link k-header"> Last expanded <i is="Icon" class="k-panelbar-collapse" name="arrow-n"></i>
+                    <span class="k-link k-header">Last expanded<span class="k-panelbar-collapse k-icon k-i-arrow-n"></span>
                     </span>
                     <div class="k-panelbar-content">
                         <h4>Title in template</h4>
@@ -150,25 +151,25 @@
             <ul class="k-widget k-reset k-header k-panelbar">
                 <li class="k-item k-first">
                     <span class="k-link k-header">
-                        <i is="Icon" name="cog"></i> Root <i is="Icon" class="k-panelbar-expand" name="arrow-s"></i>
+                        <span class="k-icon k-i-cog"></span>Root<span class="k-panelbar-expand k-icon k-i-arrow-s"></span>
                     </span>
                 </li>
                 <li class="k-item">
                     <span class="k-link k-header k-state-hover">
-                        <span class="k-image"></span> Root hover <i is="Icon" class="k-panelbar-expand" name="arrow-s"></i>
+                        <span class="k-image"></span>Root hover<span class="k-panelbar-expand k-icon k-i-arrow-s"></span>
                     </span>
                 </li>
                 <li class="k-item">
                     <span class="k-link k-header k-state-focus">
-                        <span class="k-sprite"></span> Root focus <i is="Icon" class="k-panelbar-expand" name="arrow-s"></i>
+                        <span class="k-sprite"></span>Root focus<span class="k-panelbar-expand k-icon k-i-arrow-s"></span>
                     </span>
                 </li>
                 <li class="k-item">
-                    <span class="k-link k-header k-state-selected"> Root selected <i is="Icon" class="k-panelbar-expand" name="arrow-s"></i>
+                    <span class="k-link k-header k-state-selected">Root selected<span class="k-panelbar-expand k-icon k-i-arrow-s"></span>
                     </span>
                 </li>
                 <li class="k-item">
-                    <span class="k-link k-header k-state-disabled"> Root disabled <i is="Icon" class="k-panelbar-expand" name="arrow-s"></i>
+                    <span class="k-link k-header k-state-disabled">Root disabled<span class="k-panelbar-expand k-icon k-i-arrow-s"></span>
                     </span>
                 </li>
                 <li class="k-item k-last">
@@ -182,26 +183,26 @@
                     <span class="k-link k-header">First</span>
                 </li>
                 <li class="k-item k-state-expanded">
-                    <span class="k-link k-header"> Middle expanded <i is="Icon" class="k-panelbar-collapse" name="arrow-n"></i>
+                    <span class="k-link k-header">Middle expanded<span class="k-panelbar-collapse k-icon k-i-arrow-n"></span>
                     </span>
                     <ul class="k-panel k-group">
                         <li class="k-item">
                             <span class="k-link">Child</span>
                         </li>
                         <li class="k-item">
-                            <span class="k-link k-state-hover"> Child hover <i is="Icon" class="k-panelbar-expand" name="arrow-s"></i>
+                            <span class="k-link k-state-hover">Child hover<span class="k-panelbar-expand k-icon k-i-arrow-s"></span>
                             </span>
                         </li>
                         <li class="k-item">
-                            <span class="k-link k-state-focus"> Child focus <i is="Icon" class="k-panelbar-expand" name="arrow-s"></i>
+                            <span class="k-link k-state-focus">Child focus<span class="k-panelbar-expand k-icon k-i-arrow-s"></span>
                             </span>
                         </li>
                         <li class="k-item">
-                            <span class="k-link k-state-selected"> Child selected <i is="Icon" class="k-panelbar-expand" name="arrow-s"></i>
+                            <span class="k-link k-state-selected">Child selected<span class="k-panelbar-expand k-icon k-i-arrow-s"></span>
                             </span>
                         </li>
                         <li class="k-item k-state-expanded">
-                            <span class="k-link"> Child expanded <i is="Icon" class="k-panelbar-collapse" name="arrow-n"></i>
+                            <span class="k-link">Child expanded<span class="k-panelbar-collapse k-icon k-i-arrow-n"></span>
                             </span>
                             <ul class="k-panel k-group">
                                 <li class="k-item">
@@ -216,7 +217,7 @@
                             </ul>
                         </li>
                         <li class="k-item">
-                            <span class="k-link k-state-disabled"> Child disabled <i is="Icon" class="k-panelbar-expand" name="arrow-s"></i>
+                            <span class="k-link k-state-disabled">Child disabled<span class="k-panelbar-expand k-icon k-i-arrow-s"></span>
                             </span>
                         </li>
                         <li class="k-item">
@@ -232,7 +233,7 @@
         <section class="k-rtl">
             <ul class="k-widget k-reset k-header k-panelbar">
                 <li class="k-item k-first k-state-expanded">
-                    <span class="k-link k-header"> First expanded <i is="Icon" class="k-panelbar-collapse" name="arrow-n"></i>
+                    <span class="k-link k-header">First expanded<span class="k-panelbar-collapse k-icon k-i-arrow-n"></span>
                     </span>
                     <div class="k-panelbar-content">
                         <h4>Title in template</h4>
@@ -256,7 +257,7 @@
                     <span class="k-link k-header">Middle</span>
                 </li>
                 <li class="k-item k-state-expanded k-last">
-                    <span class="k-link k-header"> Last expanded <i is="Icon" class="k-panelbar-collapse" name="arrow-n"></i>
+                    <span class="k-link k-header">Last expanded<span class="k-panelbar-collapse k-icon k-i-arrow-n"></span>
                     </span>
                     <div class="k-panelbar-content">
                         <h4>Title in template</h4>

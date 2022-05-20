@@ -1,18 +1,16 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width:15px;">
 <head>
-    <title>Scheduler jQUery Monthview</title>
+    <title>Scheduler jQuery Month</title>
     <meta charset="utf-8">
     <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
     <link rel="stylesheet" href="/packages/html/assets/styles.css">
     <script src="/packages/html/assets/scripts.js"></script>
-    <script src="/packages/html/dist/index.js"></script>
 </head>
 <body id="app" class="k-body">
     <style>
         #test-area {
             max-width: 1200px;
-            grid-template-columns: 1fr;
             align-items: top;
         }
         .k-event {
@@ -25,21 +23,28 @@
             top: calc(((100% / 6) * (var(--row) - 1)));
             transform: translateY(calc((100% * var(--slot)) + (1px * var(--slot))));
         }
+
         .k-scheduler-monthview .k-scheduler-table td {
             height: auto;
         }
 
     </style>
-    <div id="test-area">
+    <div id="test-area" class="k-d-grid k-grid-cols-1">
         <div class="k-widget k-scheduler">
             <div class="k-scheduler-toolbar k-toolbar">
                 <span class="k-scheduler-navigation k-button-group">
-                    <button is="Button">Today</button>
-                    <button is="Button" icon="arrow-60-left"></button>
-                    <button is="Button" icon="arrow-60-right"></button>
+                    <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                        <span class="k-button-text">Today</span>
+                    </button>
+                    <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                        <span class="k-button-icon k-icon k-i-arrow-60-left"></span>
+                    </button>
+                    <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                        <span class="k-button-icon k-icon k-i-arrow-60-right"></span>
+                    </button>
                 </span>
                 <a role="button" href="#" class="k-nav-current">
-                    <i is="Icon" name="calendar"></i>
+                    <span class="k-icon k-i-calendar"></span>
                     <span class="k-sm-date-format" data-bind="text: formattedShortDate">June, 2013</span>
                     <span class="k-lg-date-format" data-bind="text: formattedDate">June, 2013</span>
                 </a>
@@ -49,11 +54,21 @@
                         <option>Month</option>
                     </select>
                     <span class="k-scheduler-views k-button-group">
-                        <button is="Button">Day</button>
-                        <button is="Button">Week</button>
-                        <button is="Button" selected>Month</button>
-                        <button is="Button">Timeline</button>
-                        <button is="Button">Agenda</button>
+                        <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                            <span class="k-button-text">Day</span>
+                        </button>
+                        <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                            <span class="k-button-text">Week</span>
+                        </button>
+                        <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-selected">
+                            <span class="k-button-text">Month</span>
+                        </button>
+                        <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                            <span class="k-button-text">Timeline</span>
+                        </button>
+                        <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                            <span class="k-button-text">Agenda</span>
+                        </button>
                     </span>
                 </span>
             </div>
@@ -225,129 +240,129 @@
                                         </tr>
                                     </tbody>
                                 </table>
-                                <div style="background-color: rgb(245, 138, 138); border-color: rgb(245, 138, 138); --span: 1; --col: 2; --row: 2; --slot: 1; height: 25px;" class="k-event">
+                                <div class="k-event" style="background-color: rgb(245, 138, 138); border-color: rgb(245, 138, 138); --span:1; --col:2; --row:2; --slot:1; height: 25px;">
                                     <span class="k-event-actions">
-                                        <i is="Icon" name="reload"></i>
+                                        <span class="k-icon k-i-reload"></span>
                                     </span>
                                     <div>
                                         <div class="k-event-template">Dance Practice</div>
                                     </div>
                                 </div>
-                                <div style="background-color: rgb(110, 179, 250); border-color: rgb(110, 179, 250); --span: 1; --col: 3; --row: 2; --slot: 1; height: 25px;" class="k-event">
+                                <div class="k-event" style="background-color: rgb(110, 179, 250); border-color: rgb(110, 179, 250); --span:1; --col:3; --row:2; --slot:1; height: 25px;">
                                     <span class="k-event-actions">
-                                        <i is="Icon" name="reload"></i>
+                                        <span class="k-icon k-i-reload"></span>
                                     </span>
                                     <div>
                                         <div class="k-event-template">HR Lecture</div>
                                     </div>
                                 </div>
-                                <div style="background-color: rgb(245, 138, 138); border-color: rgb(245, 138, 138); --span: 1; --col: 4; --row: 2; --slot: 1; height: 25px;" class="k-event">
+                                <div class="k-event" style="background-color: rgb(245, 138, 138); border-color: rgb(245, 138, 138); --span:1; --col:4; --row:2; --slot:1; height: 25px;">
                                     <span class="k-event-actions">
-                                        <i is="Icon" name="reload"></i>
+                                        <span class="k-icon k-i-reload"></span>
                                     </span>
                                     <div>
                                         <div class="k-event-template">Dance Practice</div>
                                     </div>
                                 </div>
-                                <div style="background-color: rgb(110, 179, 250); border-color: rgb(110, 179, 250); --span: 3; --col: 5; --row: 2; --slot: 1; height: 25px;" class="k-event">
+                                <div class="k-event" style="background-color: rgb(110, 179, 250); border-color: rgb(110, 179, 250); --span:3; --col:5; --row:2; --slot:1; height: 25px;">
                                     <span class="k-event-actions"></span>
                                     <div>
                                         <div class="k-event-template">Attending HR Conference</div>
                                     </div>
                                 </div>
-                                <div style="background-color: rgb(110, 179, 250); border-color: rgb(110, 179, 250); --span: 1; --col: 3; --row: 2; --slot: 2; height: 25px;" class="k-event">
+                                <div class="k-event" style="background-color: rgb(110, 179, 250); border-color: rgb(110, 179, 250); --span:1; --col:3; --row:2; --slot:2; height: 25px;">
                                     <span class="k-event-actions"></span>
                                     <div>
                                         <div class="k-event-template">Software updates</div>
                                     </div>
                                 </div>
-                                <div style="background-color: rgb(110, 179, 250); border-color: rgb(110, 179, 250); --span: 1; --col: 4; --row: 2; --slot: 2; height: 25px;" class="k-event">
+                                <div class="k-event" style="background-color: rgb(110, 179, 250); border-color: rgb(110, 179, 250); --span:1; --col:4; --row:2; --slot:2; height: 25px;">
                                     <span class="k-event-actions">
-                                        <i is="Icon" name="reload"></i>
+                                        <span class="k-icon k-i-reload"></span>
                                     </span>
                                     <div>
                                         <div class="k-event-template">Helpdesk weekly meeting</div>
                                     </div>
                                 </div>
-                                <div style="background-color: rgb(110, 179, 250); border-color: rgb(110, 179, 250); --span: 3; --col: 5; --row: 2; --slot: 2; height: 25px;" class="k-event">
+                                <div class="k-event" style="background-color: rgb(110, 179, 250); border-color: rgb(110, 179, 250); --span:3; --col:5; --row:2; --slot:2; height: 25px;">
                                     <span class="k-event-actions"></span>
                                     <div>
                                         <div class="k-event-template">Grand Canyon tour</div>
                                     </div>
                                 </div>
-                                <div style="background-color: rgb(110, 179, 250); border-color: rgb(110, 179, 250); --span: 2; --col: 1; --row: 3; --slot: 1; height: 25px;" class="k-event">
+                                <div class="k-event" style="background-color: rgb(110, 179, 250); border-color: rgb(110, 179, 250); --span:2; --col:1; --row:3; --slot:1; height: 25px;">
                                     <span class="k-event-actions">
-                                        <i is="Icon" name="arrow-w"></i>
+                                        <span class="k-icon k-i-arrow-w"></span>
                                     </span>
                                     <div>
                                         <div class="k-event-template">Attending HR Conference</div>
                                     </div>
                                 </div>
-                                <div style="background-color: rgb(110, 179, 250); border-color: rgb(110, 179, 250); --span: 1; --col: 3; --row: 3; --slot: 1; height: 25px;" class="k-event">
+                                <div class="k-event" style="background-color: rgb(110, 179, 250); border-color: rgb(110, 179, 250); --span:1; --col:3; --row:3; --slot:1; height: 25px;">
                                     <span class="k-event-actions"></span>
                                     <div>
                                         <div class="k-event-template">Business Lunch with Gregory Watkins</div>
                                     </div>
                                 </div>
-                                <div style="background-color: rgb(110, 179, 250); border-color: rgb(110, 179, 250); --span: 2; --col: 4; --row: 3; --slot: 1; height: 25px;" class="k-event">
+                                <div class="k-event" style="background-color: rgb(110, 179, 250); border-color: rgb(110, 179, 250); --span:2; --col:4; --row:3; --slot:1; height: 25px;">
                                     <span class="k-event-actions"></span>
                                     <div>
                                         <div class="k-event-template">Server maintenance</div>
                                     </div>
                                 </div>
-                                <div style="background-color: rgb(110, 179, 250); border-color: rgb(110, 179, 250); --span: 1; --col: 6; --row: 3; --slot: 1; height: 25px;" class="k-event">
+                                <div class="k-event" style="background-color: rgb(110, 179, 250); border-color: rgb(110, 179, 250); --span:1; --col:6; --row:3; --slot:1; height: 25px;">
                                     <span class="k-event-actions"></span>
                                     <div>
                                         <div class="k-event-template">Dentist</div>
                                     </div>
                                 </div>
-                                <div style="background-color: rgb(110, 179, 250); border-color: rgb(110, 179, 250); --span: 1; --col: 7; --row: 3; --slot: 1; height: 25px;" class="k-event">
+                                <div class="k-event" style="background-color: rgb(110, 179, 250); border-color: rgb(110, 179, 250); --span:1; --col:7; --row:3; --slot:1; height: 25px;">
                                     <span class="k-event-actions"></span>
                                     <div>
                                         <div class="k-event-template">Bob's Birthday Party</div>
                                     </div>
                                 </div>
-                                <div style="background-color: rgb(110, 179, 250); border-color: rgb(110, 179, 250); --span: 1; --col: 1; --row: 3; --slot: 2; height: 25px;" class="k-event">
+                                <div class="k-event" style="background-color: rgb(110, 179, 250); border-color: rgb(110, 179, 250); --span:1; --col:1; --row:3; --slot:2; height: 25px;">
                                     <span class="k-event-actions">
-                                        <i is="Icon" name="arrow-w"></i>
+                                        <span class="k-icon k-i-arrow-w"></span>
                                     </span>
                                     <div>
                                         <div class="k-event-template">Grand Canyon tour</div>
                                     </div>
                                 </div>
-                                <div style="background-color: rgb(245, 138, 138); border-color: rgb(245, 138, 138); --span: 1; --col: 2; --row: 3; --slot: 2; height: 25px;" class="k-event">
+                                <div class="k-event" style="background-color: rgb(245, 138, 138); border-color: rgb(245, 138, 138); --span:1; --col:2; --row:3; --slot:2; height: 25px;">
                                     <span class="k-event-actions"></span>
                                     <div>
                                         <div class="k-event-template">Car Service</div>
                                     </div>
                                 </div>
-                                <div style="background-color: rgb(110, 179, 250); border-color: rgb(110, 179, 250); --span: 1; --col: 3; --row: 3; --slot: 2; height: 25px;" class="k-event">
+                                <div class="k-event" style="background-color: rgb(110, 179, 250); border-color: rgb(110, 179, 250); --span:1; --col:3; --row:3; --slot:2; height: 25px;">
                                     <span class="k-event-actions">
-                                        <i is="Icon" name="reload"></i>
+                                        <span class="k-icon k-i-reload"></span>
                                     </span>
                                     <div>
                                         <div class="k-event-template">HR Lecture</div>
                                     </div>
                                 </div>
-                                <div style="background-color: rgb(245, 138, 138); border-color: rgb(245, 138, 138); --span: 1; --col: 4; --row: 3; --slot: 2; height: 25px;" class="k-event">
+                                <div class="k-event" style="background-color: rgb(245, 138, 138); border-color: rgb(245, 138, 138); --span:1; --col:4; --row:3; --slot:2; height: 25px;">
                                     <span class="k-event-actions"></span>
                                     <div>
                                         <div class="k-event-template">Banking</div>
                                     </div>
                                 </div>
-                                <div style="background-color: rgb(110, 179, 250); border-color: rgb(110, 179, 250); --span: 1; --col: 5; --row: 3; --slot: 2; height: 25px;" class="k-event">
+                                <div class="k-event" style="background-color: rgb(110, 179, 250); border-color: rgb(110, 179, 250); --span:1; --col:5; --row:3; --slot:2; height: 25px;">
                                     <span class="k-event-actions"></span>
                                     <div>
                                         <div class="k-event-template">Breakfast with CFO and COO</div>
                                     </div>
                                 </div>
-                                <div style="background-color: rgb(110, 179, 250); border-color: rgb(110, 179, 250); --span: 1; --col: 6; --row: 3; --slot: 2; height: 25px;" class="k-event">
+                                <div class="k-event" style="background-color: rgb(110, 179, 250); border-color: rgb(110, 179, 250); --span:1; --col:6; --row:3; --slot:2; height: 25px;">
                                     <span class="k-event-actions"></span>
                                     <div>
                                         <div class="k-event-template">Job Interview - Laura Bailey</div>
                                     </div>
                                 </div>
-                                <div style="background-color: rgb(110, 179, 250); border-color: rgb(110, 179, 250); --span: 1; --col: 7; --row: 3; --slot: 2; height: 25px;" class="k-event">
+                                <div class="k-event" style="background-color: rgb(110, 179, 250); border-color: rgb(110, 179, 250); --span:1; --col:7; --row:3; --slot:2; height: 25px;">
                                     <span class="k-event-actions"></span>
                                     <div>
                                         <div class="k-event-template">Bob's Birthday</div>

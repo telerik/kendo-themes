@@ -1,12 +1,11 @@
 <!doctype html>
-<html lang="en" class="k-no-animations">
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width:15px;">
 <head>
     <title>Button RTL</title>
     <meta charset="utf-8">
     <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
     <link rel="stylesheet" href="/packages/html/assets/styles.css">
     <script src="/packages/html/assets/scripts.js"></script>
-    <script src="/packages/html/dist/index.js"></script>
 </head>
 <body id="app" class="k-body">
     <style>
@@ -25,117 +24,189 @@
         <span>Disabled</span>
         <span>base</span>
         <span dir="rtl">
-            <button is="Button">Normal</button>
+            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                <span class="k-button-text">Normal</span>
+            </button>
         </span>
         <span dir="rtl">
-            <button is="Button" hover>Hover</button>
+            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-hover">
+                <span class="k-button-text">Hover</span>
+            </button>
         </span>
         <span dir="rtl">
-            <button is="Button" focus>Focus</button>
+            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-focus">
+                <span class="k-button-text">Focus</span>
+            </button>
         </span>
         <span dir="rtl">
-            <button is="Button" active>Active</button>
+            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-active">
+                <span class="k-button-text">Active</span>
+            </button>
         </span>
         <span dir="rtl">
-            <button is="Button" selected>Selected</button>
+            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-selected">
+                <span class="k-button-text">Selected</span>
+            </button>
         </span>
         <span dir="rtl">
-            <button is="Button" disabled>Disabled</button>
+            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-disabled">
+                <span class="k-button-text">Disabled</span>
+            </button>
         </span>
         <span>^ text + icon</span>
         <span dir="rtl">
-            <button is="Button" icon="folder">Normal</button>
+            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                <span class="k-button-icon k-icon k-i-folder"></span>Normal
+            </button>
         </span>
         <span dir="rtl">
-            <button is="Button" icon="folder" hover>Hover</button>
+            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-hover">
+                <span class="k-button-icon k-icon k-i-folder"></span>Hover
+            </button>
         </span>
         <span dir="rtl">
-            <button is="Button" icon="folder" focus>Focus</button>
+            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-focus">
+                <span class="k-button-icon k-icon k-i-folder"></span>Focus
+            </button>
         </span>
         <span dir="rtl">
-            <button is="Button" icon="folder" active>Active</button>
+            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-active">
+                <span class="k-button-icon k-icon k-i-folder"></span>Active
+            </button>
         </span>
         <span dir="rtl">
-            <button is="Button" icon="folder" selected>Selected</button>
+            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-selected">
+                <span class="k-button-icon k-icon k-i-folder"></span>Selected
+            </button>
         </span>
         <span dir="rtl">
-            <button is="Button" icon="folder" disabled>Disabled</button>
+            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-disabled">
+                <span class="k-button-icon k-icon k-i-folder"></span>Disabled
+            </button>
         </span>
         <span>^ icon</span>
         <span dir="rtl">
-            <button is="Button" icon="folder"></button>
+            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                <span class="k-button-icon k-icon k-i-folder"></span>
+            </button>
         </span>
         <span dir="rtl">
-            <button is="Button" icon="folder" hover></button>
+            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button k-hover">
+                <span class="k-button-icon k-icon k-i-folder"></span>
+            </button>
         </span>
         <span dir="rtl">
-            <button is="Button" icon="folder" focus></button>
+            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button k-focus">
+                <span class="k-button-icon k-icon k-i-folder"></span>
+            </button>
         </span>
         <span dir="rtl">
-            <button is="Button" icon="folder" active></button>
+            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button k-active">
+                <span class="k-button-icon k-icon k-i-folder"></span>
+            </button>
         </span>
         <span dir="rtl">
-            <button is="Button" icon="folder" selected></button>
+            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button k-selected">
+                <span class="k-button-icon k-icon k-i-folder"></span>
+            </button>
         </span>
         <span dir="rtl">
-            <button is="Button" icon="folder" disabled></button>
+            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button k-disabled">
+                <span class="k-button-icon k-icon k-i-folder"></span>
+            </button>
         </span>
         <span>primary</span>
         <span dir="rtl">
-            <button is="Button" themeColor="primary">Normal</button>
+            <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md">
+                <span class="k-button-text">Normal</span>
+            </button>
         </span>
         <span dir="rtl">
-            <button is="Button" themeColor="primary" hover>Hover</button>
+            <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md k-hover">
+                <span class="k-button-text">Hover</span>
+            </button>
         </span>
         <span dir="rtl">
-            <button is="Button" themeColor="primary" focus>Focus</button>
+            <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md k-focus">
+                <span class="k-button-text">Focus</span>
+            </button>
         </span>
         <span dir="rtl">
-            <button is="Button" themeColor="primary" active>Active</button>
+            <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md k-active">
+                <span class="k-button-text">Active</span>
+            </button>
         </span>
         <span dir="rtl">
-            <button is="Button" themeColor="primary" selected>Selected</button>
+            <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md k-selected">
+                <span class="k-button-text">Selected</span>
+            </button>
         </span>
         <span dir="rtl">
-            <button is="Button" themeColor="primary" disabled>Disabled</button>
+            <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md k-disabled">
+                <span class="k-button-text">Disabled</span>
+            </button>
         </span>
         <span>^ text + icon</span>
         <span dir="rtl">
-            <button is="Button" themeColor="primary" icon="folder">Normal</button>
+            <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md">
+                <span class="k-button-icon k-icon k-i-folder"></span>Normal
+            </button>
         </span>
         <span dir="rtl">
-            <button is="Button" themeColor="primary" icon="folder" hover>Hover</button>
+            <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md k-hover">
+                <span class="k-button-icon k-icon k-i-folder"></span>Hover
+            </button>
         </span>
         <span dir="rtl">
-            <button is="Button" themeColor="primary" icon="folder" focus>Focus</button>
+            <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md k-focus">
+                <span class="k-button-icon k-icon k-i-folder"></span>Focus
+            </button>
         </span>
         <span dir="rtl">
-            <button is="Button" themeColor="primary" icon="folder" active>Active</button>
+            <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md k-active">
+                <span class="k-button-icon k-icon k-i-folder"></span>Active
+            </button>
         </span>
         <span dir="rtl">
-            <button is="Button" themeColor="primary" icon="folder" selected>Selected</button>
+            <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md k-selected">
+                <span class="k-button-icon k-icon k-i-folder"></span>Selected
+            </button>
         </span>
         <span dir="rtl">
-            <button is="Button" themeColor="primary" icon="folder" disabled>Disabled</button>
+            <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md k-disabled">
+                <span class="k-button-icon k-icon k-i-folder"></span>Disabled
+            </button>
         </span>
         <span>^ icon</span>
         <span dir="rtl">
-            <button is="Button" themeColor="primary" icon="folder"></button>
+            <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md k-icon-button">
+                <span class="k-button-icon k-icon k-i-folder"></span>
+            </button>
         </span>
         <span dir="rtl">
-            <button is="Button" themeColor="primary" icon="folder" hover></button>
+            <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md k-icon-button k-hover">
+                <span class="k-button-icon k-icon k-i-folder"></span>
+            </button>
         </span>
         <span dir="rtl">
-            <button is="Button" themeColor="primary" icon="folder" focus></button>
+            <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md k-icon-button k-focus">
+                <span class="k-button-icon k-icon k-i-folder"></span>
+            </button>
         </span>
         <span dir="rtl">
-            <button is="Button" themeColor="primary" icon="folder" active></button>
+            <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md k-icon-button k-active">
+                <span class="k-button-icon k-icon k-i-folder"></span>
+            </button>
         </span>
         <span dir="rtl">
-            <button is="Button" themeColor="primary" icon="folder" selected></button>
+            <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md k-icon-button k-selected">
+                <span class="k-button-icon k-icon k-i-folder"></span>
+            </button>
         </span>
         <span dir="rtl">
-            <button is="Button" themeColor="primary" icon="folder" disabled></button>
+            <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md k-icon-button k-disabled">
+                <span class="k-button-icon k-icon k-i-folder"></span>
+            </button>
         </span>
     </div>
 </body>

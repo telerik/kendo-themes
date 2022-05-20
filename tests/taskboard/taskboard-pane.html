@@ -1,34 +1,35 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width:15px;">
 <head>
-    <title>TaskBoard Preview/Edit Pane</title>
+    <title>TaskBoard Pane</title>
     <meta charset="utf-8">
     <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
     <link rel="stylesheet" href="/packages/html/assets/styles.css">
     <script src="/packages/html/assets/scripts.js"></script>
-    <script src="/packages/html/dist/index.js"></script>
 </head>
 <body id="app" class="k-body">
     <style>
         #test-area {
             max-width: 1037px;
         }
-
     </style>
     <div id="test-area" class="k-dgrid k-grid-cols-1">
         <span>Pane on Right(default):</span>
         <div class="k-widget k-taskboard">
-            <!-- Toolbar -->
             <div class="k-taskboard-header">
                 <div class="k-taskboard-header">
                     <div class="k-taskboard-toolbar k-toolbar">
-                        <button is="Button" icon="add">Add Column</button>
+                        <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                            <span class="k-button-icon k-icon k-i-add"></span>Add Column
+                        </button>
                         <span class="k-spacer"></span>
-                        <input is="Searchbox" placeholder="Search..." />
+                        <span class="k-searchbox k-input k-input-md k-input-solid k-rounded-md">
+                            <span class="k-input-icon k-icon k-i-search"></span>
+                            <input type="text" class="k-input-inner" placeholder="Search..." autocomplete="off" value="">
+                        </span>
                     </div>
                 </div>
             </div>
-            <!-- Content -->
             <div class="k-taskboard-content" style="margin-right: 304px;">
                 <div class="k-taskboard-columns-container">
                     <div class="k-taskboard-column">
@@ -36,20 +37,28 @@
                             <div class="k-taskboard-column-header-text k-text-ellipsis">Column Header</div>
                             <span class="k-spacer"></span>
                             <div class="k-taskboard-column-header-actions">
-                                <button is="Button" fillMode="flat" icon="edit"></button>
-                                <button is="Button" fillMode="flat" icon="add"></button>
-                                <button is="Button" fillMode="flat" icon="close"></button>
+                                <button class="k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                                    <span class="k-button-icon k-icon k-i-edit"></span>
+                                </button>
+                                <button class="k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                                    <span class="k-button-icon k-icon k-i-add"></span>
+                                </button>
+                                <button class="k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                                    <span class="k-button-icon k-icon k-i-close"></span>
+                                </button>
                             </div>
                         </div>
                         <div class="k-taskboard-column-cards-container">
                             <div class="k-taskboard-column-cards">
-                                <div class="k-taskboard-card k-card">
+                                <div class="k-card k-taskboard-card">
                                     <div class="k-card-header k-hbox">
                                         <a class="k-card-title k-link" href="#">Card Title</a>
                                         <span class="k-spacer"></span>
-                                        <div class="k-card-header-actions">
-                                            <button is="Button" fillMode="flat" icon="more-vertical" class="k-card-details"></button>
-                                        </div>
+                                        <span class="k-card-header-actions">
+                                            <button class="k-card-details k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                                                <span class="k-button-icon k-icon k-i-more-vertical"></span>
+                                            </button>
+                                        </span>
                                     </div>
                                     <div class="k-card-body">
                                         <p>Card Body</p>
@@ -63,20 +72,28 @@
                             <div class="k-taskboard-column-header-text k-text-ellipsis">Column Header</div>
                             <span class="k-spacer"></span>
                             <div class="k-taskboard-column-header-actions">
-                                <button is="Button" fillMode="flat" icon="edit"></button>
-                                <button is="Button" fillMode="flat" icon="add"></button>
-                                <button is="Button" fillMode="flat" icon="close"></button>
+                                <button class="k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                                    <span class="k-button-icon k-icon k-i-edit"></span>
+                                </button>
+                                <button class="k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                                    <span class="k-button-icon k-icon k-i-add"></span>
+                                </button>
+                                <button class="k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                                    <span class="k-button-icon k-icon k-i-close"></span>
+                                </button>
                             </div>
                         </div>
                         <div class="k-taskboard-column-cards-container">
                             <div class="k-taskboard-column-cards">
-                                <div class="k-taskboard-card k-card">
+                                <div class="k-card k-taskboard-card">
                                     <div class="k-card-header k-hbox">
                                         <a class="k-card-title k-link" href="#">Card Title</a>
                                         <span class="k-spacer"></span>
-                                        <div class="k-card-header-actions">
-                                            <button is="Button" fillMode="flat" icon="more-vertical" class="k-card-details"></button>
-                                        </div>
+                                        <span class="k-card-header-actions">
+                                            <button class="k-card-details k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                                                <span class="k-button-icon k-icon k-i-more-vertical"></span>
+                                            </button>
+                                        </span>
                                     </div>
                                     <div class="k-card-body">
                                         <p>Card Body</p>
@@ -90,20 +107,28 @@
                             <div class="k-taskboard-column-header-text k-text-ellipsis">Column Header</div>
                             <span class="k-spacer"></span>
                             <div class="k-taskboard-column-header-actions">
-                                <button is="Button" fillMode="flat" icon="edit"></button>
-                                <button is="Button" fillMode="flat" icon="add"></button>
-                                <button is="Button" fillMode="flat" icon="close"></button>
+                                <button class="k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                                    <span class="k-button-icon k-icon k-i-edit"></span>
+                                </button>
+                                <button class="k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                                    <span class="k-button-icon k-icon k-i-add"></span>
+                                </button>
+                                <button class="k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                                    <span class="k-button-icon k-icon k-i-close"></span>
+                                </button>
                             </div>
                         </div>
                         <div class="k-taskboard-column-cards-container">
                             <div class="k-taskboard-column-cards">
-                                <div class="k-taskboard-card k-card">
+                                <div class="k-card k-taskboard-card">
                                     <div class="k-card-header k-hbox">
                                         <a class="k-card-title k-link" href="#">Card Title</a>
                                         <span class="k-spacer"></span>
-                                        <div class="k-card-header-actions">
-                                            <button is="Button" fillMode="flat" icon="more-vertical" class="k-card-details"></button>
-                                        </div>
+                                        <span class="k-card-header-actions">
+                                            <button class="k-card-details k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                                                <span class="k-button-icon k-icon k-i-more-vertical"></span>
+                                            </button>
+                                        </span>
                                     </div>
                                     <div class="k-card-body">
                                         <p>Card Body</p>
@@ -114,13 +139,14 @@
                     </div>
                 </div>
             </div>
-            <!-- Preview/Edit Pane -->
             <div class="k-taskboard-pane k-taskboard-edit-pane">
                 <div class="k-taskboard-pane-header">
                     <div class="k-taskboard-pane-header-text">Card X</div>
                     <span class="k-spacer"></span>
                     <div class="k-taskboard-pane-header-actions">
-                        <button is="Button" fillMode="flat" icon="close"></button>
+                        <button class="k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                            <span class="k-button-icon k-icon k-i-close"></span>
+                        </button>
                     </div>
                 </div>
                 <div class="k-taskboard-pane-content">
@@ -128,30 +154,39 @@
                         <div class="k-form-field">
                             <label class="k-label">Textbox:</label>
                             <div>
-                                <input is="Textbox" />
+                                <span class="k-textbox k-input k-input-md k-input-solid k-rounded-md">
+                                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="">
+                                </span>
                             </div>
                         </div>
                     </form>
                 </div>
-                <div is="ActionButtons" alignment="end" class="k-taskboard-pane-actions">
-                    <button is="Button" icon="trash">Delete</button>
-                    <button is="Button" themeColor="primary" icon="edit">Edit</button>
+                <div class="k-actions k-actions-end k-actions-horizontal k-taskboard-pane-actions">
+                    <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                        <span class="k-button-icon k-icon k-i-trash"></span>Delete
+                    </button>
+                    <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md">
+                        <span class="k-button-icon k-icon k-i-edit"></span>Edit
+                    </button>
                 </div>
             </div>
         </div>
         <span>Pane on Left:</span>
         <div class="k-widget k-taskboard">
-            <!-- Toolbar -->
             <div class="k-taskboard-header">
                 <div class="k-taskboard-header">
                     <div class="k-taskboard-toolbar k-toolbar">
-                        <button is="Button" icon="add">Add Column</button>
+                        <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                            <span class="k-button-icon k-icon k-i-add"></span>Add Column
+                        </button>
                         <span class="k-spacer"></span>
-                        <input is="Searchbox" placeholder="Search..." />
+                        <span class="k-searchbox k-input k-input-md k-input-solid k-rounded-md">
+                            <span class="k-input-icon k-icon k-i-search"></span>
+                            <input type="text" class="k-input-inner" placeholder="Search..." autocomplete="off" value="">
+                        </span>
                     </div>
                 </div>
             </div>
-            <!-- Content -->
             <div class="k-taskboard-content" style="margin-left: 304px;">
                 <div class="k-taskboard-columns-container">
                     <div class="k-taskboard-column">
@@ -159,20 +194,28 @@
                             <div class="k-taskboard-column-header-text k-text-ellipsis">Column Header</div>
                             <span class="k-spacer"></span>
                             <div class="k-taskboard-column-header-actions">
-                                <button is="Button" fillMode="flat" icon="edit"></button>
-                                <button is="Button" fillMode="flat" icon="add"></button>
-                                <button is="Button" fillMode="flat" icon="close"></button>
+                                <button class="k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                                    <span class="k-button-icon k-icon k-i-edit"></span>
+                                </button>
+                                <button class="k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                                    <span class="k-button-icon k-icon k-i-add"></span>
+                                </button>
+                                <button class="k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                                    <span class="k-button-icon k-icon k-i-close"></span>
+                                </button>
                             </div>
                         </div>
                         <div class="k-taskboard-column-cards-container">
                             <div class="k-taskboard-column-cards">
-                                <div class="k-taskboard-card k-card">
+                                <div class="k-card k-taskboard-card">
                                     <div class="k-card-header k-hbox">
                                         <a class="k-card-title k-link" href="#">Card Title</a>
                                         <span class="k-spacer"></span>
-                                        <div class="k-card-header-actions">
-                                            <button is="Button" fillMode="flat" icon="more-vertical" class="k-card-details"></button>
-                                        </div>
+                                        <span class="k-card-header-actions">
+                                            <button class="k-card-details k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                                                <span class="k-button-icon k-icon k-i-more-vertical"></span>
+                                            </button>
+                                        </span>
                                     </div>
                                     <div class="k-card-body">
                                         <p>Card Body</p>
@@ -186,20 +229,28 @@
                             <div class="k-taskboard-column-header-text k-text-ellipsis">Column Header</div>
                             <span class="k-spacer"></span>
                             <div class="k-taskboard-column-header-actions">
-                                <button is="Button" fillMode="flat" icon="edit"></button>
-                                <button is="Button" fillMode="flat" icon="add"></button>
-                                <button is="Button" fillMode="flat" icon="close"></button>
+                                <button class="k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                                    <span class="k-button-icon k-icon k-i-edit"></span>
+                                </button>
+                                <button class="k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                                    <span class="k-button-icon k-icon k-i-add"></span>
+                                </button>
+                                <button class="k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                                    <span class="k-button-icon k-icon k-i-close"></span>
+                                </button>
                             </div>
                         </div>
                         <div class="k-taskboard-column-cards-container">
                             <div class="k-taskboard-column-cards">
-                                <div class="k-taskboard-card k-card">
+                                <div class="k-card k-taskboard-card">
                                     <div class="k-card-header k-hbox">
                                         <a class="k-card-title k-link" href="#">Card Title</a>
                                         <span class="k-spacer"></span>
-                                        <div class="k-card-header-actions">
-                                            <button is="Button" fillMode="flat" icon="more-vertical" class="k-card-details"></button>
-                                        </div>
+                                        <span class="k-card-header-actions">
+                                            <button class="k-card-details k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                                                <span class="k-button-icon k-icon k-i-more-vertical"></span>
+                                            </button>
+                                        </span>
                                     </div>
                                     <div class="k-card-body">
                                         <p>Card Body</p>
@@ -213,20 +264,28 @@
                             <div class="k-taskboard-column-header-text k-text-ellipsis">Column Header</div>
                             <span class="k-spacer"></span>
                             <div class="k-taskboard-column-header-actions">
-                                <button is="Button" fillMode="flat" icon="edit"></button>
-                                <button is="Button" fillMode="flat" icon="add"></button>
-                                <button is="Button" fillMode="flat" icon="close"></button>
+                                <button class="k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                                    <span class="k-button-icon k-icon k-i-edit"></span>
+                                </button>
+                                <button class="k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                                    <span class="k-button-icon k-icon k-i-add"></span>
+                                </button>
+                                <button class="k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                                    <span class="k-button-icon k-icon k-i-close"></span>
+                                </button>
                             </div>
                         </div>
                         <div class="k-taskboard-column-cards-container">
                             <div class="k-taskboard-column-cards">
-                                <div class="k-taskboard-card k-card">
+                                <div class="k-card k-taskboard-card">
                                     <div class="k-card-header k-hbox">
                                         <a class="k-card-title k-link" href="#">Card Title</a>
                                         <span class="k-spacer"></span>
-                                        <div class="k-card-header-actions">
-                                            <button is="Button" fillMode="flat" icon="more-vertical" class="k-card-details"></button>
-                                        </div>
+                                        <span class="k-card-header-actions">
+                                            <button class="k-card-details k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                                                <span class="k-button-icon k-icon k-i-more-vertical"></span>
+                                            </button>
+                                        </span>
                                     </div>
                                     <div class="k-card-body">
                                         <p>Card Body</p>
@@ -237,13 +296,14 @@
                     </div>
                 </div>
             </div>
-            <!-- Preview/Edit Pane -->
             <div class="k-taskboard-pane k-taskboard-pane-start k-taskboard-edit-pane">
                 <div class="k-taskboard-pane-header">
                     <div class="k-taskboard-pane-header-text">Card X</div>
                     <span class="k-spacer"></span>
                     <div class="k-taskboard-pane-header-actions">
-                        <button is="Button" fillMode="flat" icon="close"></button>
+                        <button class="k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                            <span class="k-button-icon k-icon k-i-close"></span>
+                        </button>
                     </div>
                 </div>
                 <div class="k-taskboard-pane-content">
@@ -251,14 +311,20 @@
                         <div class="k-form-field">
                             <label class="k-label">Textbox:</label>
                             <div>
-                                <input is="Textbox" />
+                                <span class="k-textbox k-input k-input-md k-input-solid k-rounded-md">
+                                    <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="">
+                                </span>
                             </div>
                         </div>
                     </form>
                 </div>
-                <div is="ActionButtons" alignment="end" class="k-taskboard-pane-actions">
-                    <button is="Button" icon="trash">Delete</button>
-                    <button is="Button" themeColor="primary" icon="edit">Edit</button>
+                <div class="k-actions k-actions-end k-actions-horizontal k-taskboard-pane-actions">
+                    <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                        <span class="k-button-icon k-icon k-i-trash"></span>Delete
+                    </button>
+                    <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md">
+                        <span class="k-button-icon k-icon k-i-edit"></span>Edit
+                    </button>
                 </div>
             </div>
         </div>

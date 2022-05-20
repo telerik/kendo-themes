@@ -1,47 +1,61 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width:15px;">
 <head>
-    <title>Image Editor Default</title>
+    <title>ImageEditor</title>
     <meta charset="utf-8">
     <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
     <link rel="stylesheet" href="/packages/html/assets/styles.css">
     <script src="/packages/html/assets/scripts.js"></script>
-    <script src="/packages/html/dist/index.js"></script>
 </head>
 <body id="app" class="k-body">
-    <style>
-        #test-area {
-            grid-template-columns: 1fr;
-        }
-
-    </style>
-    <div id="test-area" class="grid">
+    <div id="test-area" class="k-d-grid k-grid-cols-1">
         <h4>Image Editor</h4>
         <div class="k-widget k-imageeditor">
-            <!-- Header -->
             <div class="k-imageeditor-header">
                 <div class="k-imageeditor-toolbar k-toolbar k-widget">
-                    <button is="Button" icon="upload"></button>
-                    <button is="Button" icon="download"></button>
+                    <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                        <span class="k-button-icon k-icon k-i-upload"></span>
+                    </button>
+                    <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                        <span class="k-button-icon k-icon k-i-download"></span>
+                    </button>
                     <div class="k-separator"></div>
-                    <button is="Button" icon="undo"></button>
-                    <button is="Button" icon="redo"></button>
+                    <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                        <span class="k-button-icon k-icon k-i-undo"></span>
+                    </button>
+                    <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                        <span class="k-button-icon k-icon k-i-redo"></span>
+                    </button>
                     <div class="k-separator"></div>
-                    <button is="Button" icon="crop"></button>
-                    <button is="Button" icon="image-resize"></button>
-                    <button is="Button" icon="zoom-in"></button>
-                    <button is="Button" icon="zoom-out"></button>
+                    <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                        <span class="k-button-icon k-icon k-i-crop"></span>
+                    </button>
+                    <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                        <span class="k-button-icon k-icon k-i-image-resize"></span>
+                    </button>
+                    <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                        <span class="k-button-icon k-icon k-i-zoom-in"></span>
+                    </button>
+                    <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                        <span class="k-button-icon k-icon k-i-zoom-out"></span>
+                    </button>
                     <div>
-                        <input is="DropdownList" value="Zoom options" />
+                        <span class="k-dropdown k-picker k-picker-md k-picker-solid k-rounded-md">
+                            <span class="k-input-inner">
+                                <span class="k-input-value-text">Zoom options</span>
+                            </span>
+                            <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                            </button>
+                        </span>
                     </div>
                 </div>
             </div>
-            <!-- Content -->
             <div class="k-imageeditor-content" style="height: 250px;">
                 <div class="k-imageeditor-canvas-container">
                     <div class="k-imageeditor-canvas"></div>
                 </div>
-                <div class="k-imageeditor-action-pane" hidden></div>
+                <div class="k-imageeditor-action-pane" hidden=""></div>
             </div>
         </div>
     </div>

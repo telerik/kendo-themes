@@ -1,12 +1,11 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width:15px;">
 <head>
-    <title>Datetime selector</title>
+    <title>DateTime Selector</title>
     <meta charset="utf-8">
     <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
     <link rel="stylesheet" href="/packages/html/assets/styles.css">
     <script src="/packages/html/assets/scripts.js"></script>
-    <script src="/packages/html/dist/index.js"></script>
 </head>
 <body id="app" class="k-body">
     <style>
@@ -16,10 +15,6 @@
             position: relative;
             overflow: visible;
         }
-        kendo-popup {
-            display: block;
-        }
-
     </style>
     <div id="test-area" class="k-d-grid k-grid-cols-2">
         <span>Date tab</span>
@@ -30,24 +25,34 @@
                     <div class="k-datetime-wrap k-date-tab">
                         <div class="k-datetime-buttongroup">
                             <div class="k-button-group k-button-group-stretched">
-                                <button is="Button" class="k-group-start" selected>Date</button>
-                                <button is="Button" class="k-group-end">Time</button>
+                                <button class="k-group-start k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-selected">
+                                    <span class="k-button-text">Date</span>
+                                </button>
+                                <button class="k-group-end k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                                    <span class="k-button-text">Time</span>
+                                </button>
                             </div>
                         </div>
                         <div class="k-datetime-selector">
                             <div class="k-datetime-calendar-wrap">
-                                <div class="k-widget k-calendar">
-                                    <div class="k-calendar-header k-hstack">
-                                        <button is="Button" fillMode="flat" class="k-calendar-title k-title">March 2018</button>
+                                <div class="k-calendar">
+                                    <div class="k-calendar-header">
+                                        <button class="k-calendar-title k-button k-button-md k-button-flat k-button-flat-base k-rounded-md">
+                                            <span class="k-button-text">October 2021</span>
+                                        </button>
                                         <span class="k-spacer"></span>
-                                        <span class="k-calendar-nav k-hstack">
-                                            <button is="Button" fillMode="flat" class="k-prev-view" icon="arrow-60-left"></button>
+                                        <span class="k-calendar-nav">
+                                            <button class="k-nav-prev k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                                                <span class="k-button-icon k-icon k-i-arrow-chevron-left"></span>
+                                            </button>
                                             <span class="k-nav-today">Today</span>
-                                            <button is="Button" fillMode="flat" class="k-next-view" icon="arrow-60-right"></button>
+                                            <button class="k-nav-next k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                                                <span class="k-button-icon k-icon k-i-arrow-chevron-right"></span>
+                                            </button>
                                         </span>
                                     </div>
-                                    <div class="k-calendar-view k-calendar-monthview k-hstack k-align-items-start k-justify-content-center">
-                                        <table class="k-calendar-table k-month">
+                                    <div class="k-calendar-view k-calendar-monthview k-align-items-start k-justify-content-center k-hstack">
+                                        <table class="k-calendar-table">
                                             <thead class="k-calendar-thead">
                                                 <tr class="k-calendar-tr">
                                                     <th class="k-calendar-th">Su</th>
@@ -61,141 +66,141 @@
                                             </thead>
                                             <tbody class="k-calendar-tbody">
                                                 <tr class="k-calendar-tr">
-                                                    <td class="k-calendar-td k-other-month k-weekend">
-                                                        <a class="k-link">25</a>
-                                                    </td>
                                                     <td class="k-calendar-td k-other-month">
-                                                        <a class="k-link">26</a>
-                                                    </td>
-                                                    <td class="k-calendar-td k-other-month">
-                                                        <a class="k-link">27</a>
-                                                    </td>
-                                                    <td class="k-calendar-td k-other-month">
-                                                        <a class="k-link">28</a>
+                                                        <span class="k-link">30</span>
                                                     </td>
                                                     <td class="k-calendar-td">
-                                                        <a class="k-link">1</a>
+                                                        <span class="k-link">1</span>
                                                     </td>
                                                     <td class="k-calendar-td">
-                                                        <a class="k-link">2</a>
+                                                        <span class="k-link">2</span>
+                                                    </td>
+                                                    <td class="k-calendar-td">
+                                                        <span class="k-link">3</span>
+                                                    </td>
+                                                    <td class="k-calendar-td">
+                                                        <span class="k-link">4</span>
+                                                    </td>
+                                                    <td class="k-calendar-td">
+                                                        <span class="k-link">5</span>
                                                     </td>
                                                     <td class="k-calendar-td k-weekend">
-                                                        <a class="k-link">3</a>
+                                                        <span class="k-link">6</span>
                                                     </td>
                                                 </tr>
                                                 <tr class="k-calendar-tr">
                                                     <td class="k-calendar-td k-weekend">
-                                                        <a class="k-link">4</a>
-                                                    </td>
-                                                    <td class="k-calendar-td k-state-hover">
-                                                        <a class="k-link">5</a>
-                                                    </td>
-                                                    <td class="k-calendar-td k-state-focused">
-                                                        <a class="k-link">6</a>
-                                                    </td>
-                                                    <td class="k-calendar-td k-state-selected">
-                                                        <a class="k-link">7</a>
+                                                        <span class="k-link">7</span>
                                                     </td>
                                                     <td class="k-calendar-td">
-                                                        <a class="k-link">8</a>
+                                                        <span class="k-link">8</span>
+                                                    </td>
+                                                    <td class="k-calendar-td k-hover">
+                                                        <span class="k-link">9</span>
+                                                    </td>
+                                                    <td class="k-calendar-td k-focus">
+                                                        <span class="k-link">10</span>
+                                                    </td>
+                                                    <td class="k-calendar-td k-selected">
+                                                        <span class="k-link">11</span>
                                                     </td>
                                                     <td class="k-calendar-td">
-                                                        <a class="k-link">9</a>
+                                                        <span class="k-link">12</span>
                                                     </td>
                                                     <td class="k-calendar-td k-weekend">
-                                                        <a class="k-link">10</a>
+                                                        <span class="k-link">13</span>
                                                     </td>
                                                 </tr>
                                                 <tr class="k-calendar-tr">
                                                     <td class="k-calendar-td k-weekend">
-                                                        <a class="k-link">11</a>
-                                                    </td>
-                                                    <td class="k-calendar-td k-state-hover k-state-focused">
-                                                        <a class="k-link">12</a>
-                                                    </td>
-                                                    <td class="k-calendar-td k-state-selected k-state-focused">
-                                                        <a class="k-link">13</a>
-                                                    </td>
-                                                    <td class="k-calendar-td k-state-selected k-state-hover">
-                                                        <a class="k-link">14</a>
+                                                        <span class="k-link">14</span>
                                                     </td>
                                                     <td class="k-calendar-td">
-                                                        <a class="k-link">15</a>
+                                                        <span class="k-link">15</span>
+                                                    </td>
+                                                    <td class="k-calendar-td k-hover k-focus">
+                                                        <span class="k-link">16</span>
+                                                    </td>
+                                                    <td class="k-calendar-td k-selected">
+                                                        <span class="k-link">17</span>
+                                                    </td>
+                                                    <td class="k-calendar-td k-selected">
+                                                        <span class="k-link">18</span>
                                                     </td>
                                                     <td class="k-calendar-td">
-                                                        <a class="k-link">16</a>
+                                                        <span class="k-link">19</span>
                                                     </td>
                                                     <td class="k-calendar-td k-weekend">
-                                                        <a class="k-link">17</a>
+                                                        <span class="k-link">20</span>
                                                     </td>
                                                 </tr>
                                                 <tr class="k-calendar-tr">
                                                     <td class="k-calendar-td k-weekend">
-                                                        <a class="k-link">18</a>
+                                                        <span class="k-link">21</span>
                                                     </td>
                                                     <td class="k-calendar-td">
-                                                        <a class="k-link">19</a>
+                                                        <span class="k-link">22</span>
                                                     </td>
                                                     <td class="k-calendar-td">
-                                                        <a class="k-link">20</a>
+                                                        <span class="k-link">23</span>
                                                     </td>
                                                     <td class="k-calendar-td">
-                                                        <a class="k-link">21</a>
+                                                        <span class="k-link">24</span>
                                                     </td>
                                                     <td class="k-calendar-td">
-                                                        <a class="k-link">22</a>
+                                                        <span class="k-link">25</span>
                                                     </td>
                                                     <td class="k-calendar-td">
-                                                        <a class="k-link">23</a>
+                                                        <span class="k-link">26</span>
                                                     </td>
                                                     <td class="k-calendar-td k-weekend">
-                                                        <a class="k-link">24</a>
+                                                        <span class="k-link">27</span>
                                                     </td>
                                                 </tr>
                                                 <tr class="k-calendar-tr">
                                                     <td class="k-calendar-td k-weekend">
-                                                        <a class="k-link">25</a>
-                                                    </td>
-                                                    <td class="k-calendar-td">
-                                                        <a class="k-link">26</a>
-                                                    </td>
-                                                    <td class="k-calendar-td">
-                                                        <a class="k-link">27</a>
-                                                    </td>
-                                                    <td class="k-calendar-td">
-                                                        <a class="k-link">28</a>
+                                                        <span class="k-link">28</span>
                                                     </td>
                                                     <td class="k-calendar-td k-today">
-                                                        <a class="k-link">29</a>
+                                                        <span class="k-link">29</span>
                                                     </td>
                                                     <td class="k-calendar-td">
-                                                        <a class="k-link">30</a>
+                                                        <span class="k-link">30</span>
                                                     </td>
-                                                    <td class="k-calendar-td k-weekend">
-                                                        <a class="k-link">31</a>
+                                                    <td class="k-calendar-td">
+                                                        <span class="k-link">31</span>
+                                                    </td>
+                                                    <td class="k-calendar-td k-other-month">
+                                                        <span class="k-link">1</span>
+                                                    </td>
+                                                    <td class="k-calendar-td k-other-month">
+                                                        <span class="k-link">2</span>
+                                                    </td>
+                                                    <td class="k-calendar-td k-weekend k-other-month">
+                                                        <span class="k-link">3</span>
                                                     </td>
                                                 </tr>
                                                 <tr class="k-calendar-tr">
-                                                    <td class="k-calendar-td k-other-month k-weekend">
-                                                        <a class="k-link">1</a>
+                                                    <td class="k-calendar-td k-weekend k-other-month">
+                                                        <span class="k-link">4</span>
                                                     </td>
                                                     <td class="k-calendar-td k-other-month">
-                                                        <a class="k-link">2</a>
+                                                        <span class="k-link">5</span>
                                                     </td>
                                                     <td class="k-calendar-td k-other-month">
-                                                        <a class="k-link">3</a>
+                                                        <span class="k-link">6</span>
                                                     </td>
                                                     <td class="k-calendar-td k-other-month">
-                                                        <a class="k-link">4</a>
+                                                        <span class="k-link">7</span>
                                                     </td>
                                                     <td class="k-calendar-td k-other-month">
-                                                        <a class="k-link">5</a>
+                                                        <span class="k-link">8</span>
                                                     </td>
                                                     <td class="k-calendar-td k-other-month">
-                                                        <a class="k-link">6</a>
+                                                        <span class="k-link">9</span>
                                                     </td>
-                                                    <td class="k-calendar-td k-other-month k-weekend">
-                                                        <a class="k-link">7</a>
+                                                    <td class="k-calendar-td k-weekend k-other-month">
+                                                        <span class="k-link">10</span>
                                                     </td>
                                                 </tr>
                                             </tbody>
@@ -203,13 +208,15 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="k-datetime-time-wrap">
-                                <!-- omit -->
-                            </div>
+                            <div class="k-datetime-time-wrap"></div>
                         </div>
-                        <div is="ActionButtons" class="k-datetime-footer" alignment="stretched">
-                            <button is="Button" class="k-time-cancel">Cancel</button>
-                            <button is="Button" themeColor="primary" class="k-time-accept">Set</button>
+                        <div class="k-actions k-actions-stretched k-actions-horizontal k-datetime-footer">
+                            <button class="k-time-cancel k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                                <span class="k-button-text">Cancel</span>
+                            </button>
+                            <button class="k-time-accept k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md">
+                                <span class="k-button-text">Set</span>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -221,20 +228,24 @@
                     <div class="k-datetime-wrap k-time-tab">
                         <div class="k-datetime-buttongroup">
                             <div class="k-button-group k-button-group-stretched">
-                                <button is="Button" class="k-group-start">Date</button>
-                                <button is="Button" class="k-group-end" selected>Time</button>
+                                <button class="k-group-start k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                                    <span class="k-button-text">Date</span>
+                                </button>
+                                <button class="k-group-end k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-selected">
+                                    <span class="k-button-text">Time</span>
+                                </button>
                             </div>
                         </div>
                         <div class="k-datetime-selector">
-                            <div class="k-datetime-calendar-wrap">
-                                <!-- omit -->
-                            </div>
+                            <div class="k-datetime-calendar-wrap"></div>
                             <div class="k-datetime-time-wrap">
                                 <div class="k-timeselector k-reset">
                                     <div class="k-time-part">
                                         <div class="k-time-header">
                                             <span class="k-title">10:00:00 AM</span>
-                                            <button is="Button" fillMode="flat" class="k-time-now">Now</button>
+                                            <button class="k-time-now k-button k-button-md k-button-flat k-button-flat-base k-rounded-md">
+                                                <span class="k-button-text">Now</span>
+                                            </button>
                                         </div>
                                         <div class="k-time-list-container">
                                             <span class="k-time-highlight"></span>
@@ -382,9 +393,13 @@
                                 </div>
                             </div>
                         </div>
-                        <div is="ActionButtons" class="k-datetime-footer" alignment="stretched">
-                            <button is="Button" class="k-time-cancel">Cancel</button>
-                            <button is="Button" themeColor="primary" class="k-time-accept">Set</button>
+                        <div class="k-actions k-actions-stretched k-actions-horizontal k-datetime-footer">
+                            <button class="k-time-cancel k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                                <span class="k-button-text">Cancel</span>
+                            </button>
+                            <button class="k-time-accept k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md">
+                                <span class="k-button-text">Set</span>
+                            </button>
                         </div>
                     </div>
                 </div>

@@ -1,12 +1,11 @@
 <!doctype html>
-<html lang="en" class="k-no-animations">
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width:15px;">
 <head>
-    <title>DateRangePicker Sizes and Roundness</title>
+    <title>DateRangePicker Size and Roundness</title>
     <meta charset="utf-8">
     <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
     <link rel="stylesheet" href="/packages/html/assets/styles.css">
     <script src="/packages/html/assets/scripts.js"></script>
-    <script src="/packages/html/dist/index.js"></script>
 </head>
 <body id="app" class="k-body">
     <style>
@@ -27,43 +26,199 @@
         <span>large</span>
         <span>small</span>
         <div>
-            <span is="DateRangePicker" size="small" rounded="small"></span>
+            <span class="k-daterangepicker">
+                <span class="k-floating-label-container">
+                    <span class="k-dateinput k-input k-input-sm k-input-solid k-rounded-sm">
+                        <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="">
+                    </span>
+                    <label class="k-label">Start</label>
+                </span>
+                <span class="k-floating-label-container">
+                    <span class="k-dateinput k-input k-input-sm k-input-solid k-rounded-sm">
+                        <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="">
+                    </span>
+                    <label class="k-label">End</label>
+                </span>
+            </span>
         </div>
         <div>
-            <span is="DateRangePicker" size="medium" rounded="small"></span>
+            <span class="k-daterangepicker">
+                <span class="k-floating-label-container">
+                    <span class="k-dateinput k-input k-input-md k-input-solid k-rounded-sm">
+                        <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="">
+                    </span>
+                    <label class="k-label">Start</label>
+                </span>
+                <span class="k-floating-label-container">
+                    <span class="k-dateinput k-input k-input-md k-input-solid k-rounded-sm">
+                        <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="">
+                    </span>
+                    <label class="k-label">End</label>
+                </span>
+            </span>
         </div>
         <div>
-            <span is="DateRangePicker" size="large" rounded="small"></span>
+            <span class="k-daterangepicker">
+                <span class="k-floating-label-container">
+                    <span class="k-dateinput k-input k-input-lg k-input-solid k-rounded-sm">
+                        <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="">
+                    </span>
+                    <label class="k-label">Start</label>
+                </span>
+                <span class="k-floating-label-container">
+                    <span class="k-dateinput k-input k-input-lg k-input-solid k-rounded-sm">
+                        <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="">
+                    </span>
+                    <label class="k-label">End</label>
+                </span>
+            </span>
         </div>
         <span>medium</span>
         <div>
-            <span is="DateRangePicker" size="small" rounded="medium"></span>
+            <span class="k-daterangepicker">
+                <span class="k-floating-label-container">
+                    <span class="k-dateinput k-input k-input-sm k-input-solid k-rounded-md">
+                        <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="">
+                    </span>
+                    <label class="k-label">Start</label>
+                </span>
+                <span class="k-floating-label-container">
+                    <span class="k-dateinput k-input k-input-sm k-input-solid k-rounded-md">
+                        <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="">
+                    </span>
+                    <label class="k-label">End</label>
+                </span>
+            </span>
         </div>
         <div>
-            <span is="DateRangePicker" size="medium" rounded="medium"></span>
+            <span class="k-daterangepicker">
+                <span class="k-floating-label-container">
+                    <span class="k-dateinput k-input k-input-md k-input-solid k-rounded-md">
+                        <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="">
+                    </span>
+                    <label class="k-label">Start</label>
+                </span>
+                <span class="k-floating-label-container">
+                    <span class="k-dateinput k-input k-input-md k-input-solid k-rounded-md">
+                        <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="">
+                    </span>
+                    <label class="k-label">End</label>
+                </span>
+            </span>
         </div>
         <div>
-            <span is="DateRangePicker" size="large" rounded="medium"></span>
+            <span class="k-daterangepicker">
+                <span class="k-floating-label-container">
+                    <span class="k-dateinput k-input k-input-lg k-input-solid k-rounded-md">
+                        <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="">
+                    </span>
+                    <label class="k-label">Start</label>
+                </span>
+                <span class="k-floating-label-container">
+                    <span class="k-dateinput k-input k-input-lg k-input-solid k-rounded-md">
+                        <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="">
+                    </span>
+                    <label class="k-label">End</label>
+                </span>
+            </span>
         </div>
         <span>large</span>
         <div>
-            <span is="DateRangePicker" size="small" rounded="large"></span>
+            <span class="k-daterangepicker">
+                <span class="k-floating-label-container">
+                    <span class="k-dateinput k-input k-input-sm k-input-solid k-rounded-lg">
+                        <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="">
+                    </span>
+                    <label class="k-label">Start</label>
+                </span>
+                <span class="k-floating-label-container">
+                    <span class="k-dateinput k-input k-input-sm k-input-solid k-rounded-lg">
+                        <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="">
+                    </span>
+                    <label class="k-label">End</label>
+                </span>
+            </span>
         </div>
         <div>
-            <span is="DateRangePicker" size="medium" rounded="large"></span>
+            <span class="k-daterangepicker">
+                <span class="k-floating-label-container">
+                    <span class="k-dateinput k-input k-input-md k-input-solid k-rounded-lg">
+                        <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="">
+                    </span>
+                    <label class="k-label">Start</label>
+                </span>
+                <span class="k-floating-label-container">
+                    <span class="k-dateinput k-input k-input-md k-input-solid k-rounded-lg">
+                        <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="">
+                    </span>
+                    <label class="k-label">End</label>
+                </span>
+            </span>
         </div>
         <div>
-            <span is="DateRangePicker" size="large" rounded="large"></span>
+            <span class="k-daterangepicker">
+                <span class="k-floating-label-container">
+                    <span class="k-dateinput k-input k-input-lg k-input-solid k-rounded-lg">
+                        <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="">
+                    </span>
+                    <label class="k-label">Start</label>
+                </span>
+                <span class="k-floating-label-container">
+                    <span class="k-dateinput k-input k-input-lg k-input-solid k-rounded-lg">
+                        <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="">
+                    </span>
+                    <label class="k-label">End</label>
+                </span>
+            </span>
         </div>
         <span>full</span>
         <div>
-            <span is="DateRangePicker" size="small" rounded="full"></span>
+            <span class="k-daterangepicker">
+                <span class="k-floating-label-container">
+                    <span class="k-dateinput k-input k-input-sm k-input-solid k-rounded-full">
+                        <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="">
+                    </span>
+                    <label class="k-label">Start</label>
+                </span>
+                <span class="k-floating-label-container">
+                    <span class="k-dateinput k-input k-input-sm k-input-solid k-rounded-full">
+                        <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="">
+                    </span>
+                    <label class="k-label">End</label>
+                </span>
+            </span>
         </div>
         <div>
-            <span is="DateRangePicker" size="medium" rounded="full"></span>
+            <span class="k-daterangepicker">
+                <span class="k-floating-label-container">
+                    <span class="k-dateinput k-input k-input-md k-input-solid k-rounded-full">
+                        <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="">
+                    </span>
+                    <label class="k-label">Start</label>
+                </span>
+                <span class="k-floating-label-container">
+                    <span class="k-dateinput k-input k-input-md k-input-solid k-rounded-full">
+                        <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="">
+                    </span>
+                    <label class="k-label">End</label>
+                </span>
+            </span>
         </div>
         <div>
-            <span is="DateRangePicker" size="large" rounded="full"></span>
+            <span class="k-daterangepicker">
+                <span class="k-floating-label-container">
+                    <span class="k-dateinput k-input k-input-lg k-input-solid k-rounded-full">
+                        <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="">
+                    </span>
+                    <label class="k-label">Start</label>
+                </span>
+                <span class="k-floating-label-container">
+                    <span class="k-dateinput k-input k-input-lg k-input-solid k-rounded-full">
+                        <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="">
+                    </span>
+                    <label class="k-label">End</label>
+                </span>
+            </span>
         </div>
     </div>
 </body>

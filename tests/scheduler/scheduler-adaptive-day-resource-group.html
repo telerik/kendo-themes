@@ -1,17 +1,15 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width:15px;">
 <head>
-    <title>Adaptive Scheduler Day</title>
+    <title>Adaptive Scheduler Day Resource Group</title>
     <meta charset="utf-8">
     <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
     <link rel="stylesheet" href="/packages/html/assets/styles.css">
     <script src="/packages/html/assets/scripts.js"></script>
-    <script src="/packages/html/dist/index.js"></script>
 </head>
 <body id="app" class="k-body">
     <style>
         #test-area {
-            grid-template-columns: 1fr;
             align-items: top;
         }
         th {
@@ -19,7 +17,7 @@
         }
 
     </style>
-    <div id="test-area" class="grid">
+    <div id="test-area" class="k-d-grid">
         <div class="k-pane-wrapper k-widget">
             <div class="k-pane">
                 <div class="k-view k-widget">
@@ -27,9 +25,15 @@
                         <div id="scheduler" class="k-widget k-scheduler k-floatwrap k-scheduler-mobile">
                             <div class="k-scheduler-toolbar k-toolbar">
                                 <span class="k-scheduler-tools k-button-group">
-                                    <button is="Button" class="k-pdf" icon="file-pdf"></button>
-                                    <button is="Button" class="k-nav-calendar" icon="calendar"></button>
-                                    <button is="Button" class="k-create-event" icon="add"></button>
+                                    <button class="k-pdf k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                                        <span class="k-button-icon k-icon k-i-file-pdf"></span>
+                                    </button>
+                                    <button class="k-nav-calendar k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                                        <span class="k-button-icon k-icon k-i-calendar"></span>
+                                    </button>
+                                    <button class="k-create-event k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                                        <span class="k-button-icon k-icon k-i-add"></span>
+                                    </button>
                                 </span>
                                 <span class="k-spacer"></span>
                                 <span class="k-scheduler-views-wrapper">
@@ -40,12 +44,16 @@
                             </div>
                             <div class="k-scheduler-toolbar k-toolbar">
                                 <span class="k-scheduler-navigation">
-                                    <button is="Button" class="k-nav-prev" icon="arrow-chevron-left"></button>
+                                    <button class="k-nav-prev k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                                        <span class="k-button-icon k-icon k-i-arrow-chevron-left"></span>
+                                    </button>
                                     <span class="k-nav-current">
                                         <span class="k-m-date-format">Jun 13</span>
                                         <span class="k-y-date-format">2013</span>
                                     </span>
-                                    <button is="Button" class="k-nav-next" icon="arrow-chevron-right"></button>
+                                    <button class="k-nav-next k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                                        <span class="k-button-icon k-icon k-i-arrow-chevron-right"></span>
+                                    </button>
                                 </span>
                             </div>
                             <table class="k-scheduler-layout k-scheduler-dayview k-scrollbar-v">
@@ -56,10 +64,10 @@
                                                 <table class="k-scheduler-table">
                                                     <tbody>
                                                         <tr style="height: 38px;">
-                                                            <th>​</th>
+                                                            <th></th>
                                                         </tr>
                                                         <tr style="height: 38px;">
-                                                            <th>​</th>
+                                                            <th></th>
                                                         </tr>
                                                         <tr style="height: 37px;">
                                                             <th class="k-scheduler-times-all-day">all day</th>
@@ -87,11 +95,11 @@
                                                             </tr>
                                                         </tbody>
                                                     </table>
-                                                    <div style="position:relative">
+                                                    <div style="position: relative;">
                                                         <table class="k-scheduler-table k-scheduler-header-all-day">
                                                             <tbody>
                                                                 <tr style="height: 37px;">
-                                                                    <td> &nbsp;</td>
+                                                                    <td>&nbsp;</td>
                                                                     <td> &nbsp;</td>
                                                                 </tr>
                                                             </tbody>
@@ -113,7 +121,7 @@
                                                             </th>
                                                         </tr>
                                                         <tr>
-                                                            <th class="k-slot-cell">​</th>
+                                                            <th class="k-slot-cell"></th>
                                                         </tr>
                                                         <tr>
                                                             <th>
@@ -122,7 +130,7 @@
                                                             </th>
                                                         </tr>
                                                         <tr>
-                                                            <th class="k-slot-cell">​</th>
+                                                            <th class="k-slot-cell"></th>
                                                         </tr>
                                                         <tr>
                                                             <th>
@@ -131,7 +139,7 @@
                                                             </th>
                                                         </tr>
                                                         <tr>
-                                                            <th class="k-slot-cell">​</th>
+                                                            <th class="k-slot-cell"></th>
                                                         </tr>
                                                         <tr>
                                                             <th>
@@ -140,7 +148,7 @@
                                                             </th>
                                                         </tr>
                                                         <tr>
-                                                            <th class="k-slot-cell">​</th>
+                                                            <th class="k-slot-cell"></th>
                                                         </tr>
                                                         <tr>
                                                             <th>
@@ -149,7 +157,7 @@
                                                             </th>
                                                         </tr>
                                                         <tr>
-                                                            <th class="k-slot-cell">​</th>
+                                                            <th class="k-slot-cell"></th>
                                                         </tr>
                                                         <tr>
                                                             <th>
@@ -158,7 +166,7 @@
                                                             </th>
                                                         </tr>
                                                         <tr>
-                                                            <th class="k-slot-cell">​</th>
+                                                            <th class="k-slot-cell"></th>
                                                         </tr>
                                                         <tr>
                                                             <th>
@@ -167,7 +175,7 @@
                                                             </th>
                                                         </tr>
                                                         <tr>
-                                                            <th class="k-slot-cell">​</th>
+                                                            <th class="k-slot-cell"></th>
                                                         </tr>
                                                         <tr>
                                                             <th>
@@ -176,7 +184,7 @@
                                                             </th>
                                                         </tr>
                                                         <tr>
-                                                            <th class="k-slot-cell">​</th>
+                                                            <th class="k-slot-cell"></th>
                                                         </tr>
                                                         <tr>
                                                             <th>
@@ -185,7 +193,7 @@
                                                             </th>
                                                         </tr>
                                                         <tr>
-                                                            <th class="k-slot-cell">​</th>
+                                                            <th class="k-slot-cell"></th>
                                                         </tr>
                                                         <tr>
                                                             <th>
@@ -194,7 +202,7 @@
                                                             </th>
                                                         </tr>
                                                         <tr>
-                                                            <th class="k-slot-cell">​</th>
+                                                            <th class="k-slot-cell"></th>
                                                         </tr>
                                                         <tr>
                                                             <th>
@@ -203,7 +211,7 @@
                                                             </th>
                                                         </tr>
                                                         <tr>
-                                                            <th class="k-slot-cell">​</th>
+                                                            <th class="k-slot-cell"></th>
                                                         </tr>
                                                         <tr>
                                                             <th>
@@ -212,7 +220,7 @@
                                                             </th>
                                                         </tr>
                                                         <tr>
-                                                            <th class="k-slot-cell">​</th>
+                                                            <th class="k-slot-cell"></th>
                                                         </tr>
                                                         <tr>
                                                             <th>
@@ -221,7 +229,7 @@
                                                             </th>
                                                         </tr>
                                                         <tr>
-                                                            <th class="k-slot-cell">​</th>
+                                                            <th class="k-slot-cell"></th>
                                                         </tr>
                                                         <tr>
                                                             <th>
@@ -230,7 +238,7 @@
                                                             </th>
                                                         </tr>
                                                         <tr>
-                                                            <th class="k-slot-cell">​</th>
+                                                            <th class="k-slot-cell"></th>
                                                         </tr>
                                                         <tr>
                                                             <th>
@@ -239,7 +247,7 @@
                                                             </th>
                                                         </tr>
                                                         <tr>
-                                                            <th class="k-slot-cell">​</th>
+                                                            <th class="k-slot-cell"></th>
                                                         </tr>
                                                         <tr>
                                                             <th>
@@ -248,7 +256,7 @@
                                                             </th>
                                                         </tr>
                                                         <tr>
-                                                            <th class="k-slot-cell">​</th>
+                                                            <th class="k-slot-cell"></th>
                                                         </tr>
                                                         <tr>
                                                             <th>
@@ -257,7 +265,7 @@
                                                             </th>
                                                         </tr>
                                                         <tr>
-                                                            <th class="k-slot-cell">​</th>
+                                                            <th class="k-slot-cell"></th>
                                                         </tr>
                                                     </tbody>
                                                 </table>
@@ -405,7 +413,7 @@
                                                         </tr>
                                                     </tbody>
                                                 </table>
-                                                <div style="background-color: rgb(248, 163, 152); border-color: rgb(248, 163, 152); top: 135px; height: 42px; width: 290.1px; left: 2px;" class="k-event k-event-inverse">
+                                                <div class="k-event k-event-inverse" style="background-color: rgb(248, 163, 152); border-color: rgb(248, 163, 152); top: 135px; height: 42px; width: 290.1px; left: 2px;">
                                                     <span class="k-event-actions"></span>
                                                     <div title="(8:30 AM - 9:00 AM): Test">
                                                         <div class="k-event-template k-event-time">8:30 AM - 9:00 AM</div>
@@ -413,7 +421,7 @@
                                                     </div>
                                                     <span class="k-event-actions">
                                                         <a class="k-link k-event-delete">
-                                                            <i is="Icon" name="x"></i>
+                                                            <span class="k-icon k-i-x"></span>
                                                         </a>
                                                     </span>
                                                     <span class="k-event-top-actions"></span>
@@ -427,9 +435,13 @@
                                 </tbody>
                             </table>
                             <div class="k-scheduler-footer k-toolbar">
-                                <button is="Button" class="k-scheduler-today">Today</button>
+                                <button class="k-scheduler-today k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                                    <span class="k-button-text">Today</span>
+                                </button>
                                 <span class="k-spacer"></span>
-                                <button is="Button" class="k-scheduler-fullday">Show business hours</button>
+                                <button class="k-scheduler-fullday k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                                    <span class="k-button-text">Show business hours</span>
+                                </button>
                             </div>
                         </div>
                     </div>

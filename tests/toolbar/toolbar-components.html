@@ -1,47 +1,110 @@
 <!doctype html>
-<html lang="en" class="k-no-animations">
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width:15px;">
 <head>
     <title>Toolbar Components</title>
     <meta charset="utf-8">
     <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
     <link rel="stylesheet" href="/packages/html/assets/styles.css">
     <script src="/packages/html/assets/scripts.js"></script>
-    <script src="/packages/html/dist/index.js"></script>
 </head>
 <body id="app" class="k-body">
-    <div id="test-area" class="grid">
+    <div id="test-area" class="k-d-grid">
         <span>Menu button</span>
         <section>
             <div class="k-widget k-toolbar">
-                <button is="MenuButton">Normal</button>
-                <button is="MenuButton" hover>Hover</button>
-                <button is="MenuButton" focus>Focus</button>
-                <button is="MenuButton" disabled>Disabled</button>
+                <button class="k-menu-button k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                    <span class="k-button-text">Normal</span>
+                    <span class="k-menu-button-arrow k-button-arrow">
+                        <span class="k-icon k-i-arrow-s"></span>
+                    </span>
+                </button>
+                <button class="k-menu-button k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-hover">
+                    <span class="k-button-text">Hover</span>
+                    <span class="k-menu-button-arrow k-button-arrow">
+                        <span class="k-icon k-i-arrow-s"></span>
+                    </span>
+                </button>
+                <button class="k-menu-button k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-focus">
+                    <span class="k-button-text">Focus</span>
+                    <span class="k-menu-button-arrow k-button-arrow">
+                        <span class="k-icon k-i-arrow-s"></span>
+                    </span>
+                </button>
+                <button class="k-menu-button k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-disabled">
+                    <span class="k-button-text">Disabled</span>
+                    <span class="k-menu-button-arrow k-button-arrow">
+                        <span class="k-icon k-i-arrow-s"></span>
+                    </span>
+                </button>
             </div>
         </section>
         <span>Split button</span>
         <section>
             <div class="k-widget k-toolbar">
-                <button is="SplitButton">Normal</button>
-                <button is="SplitButton" hover>Hover</button>
-                <button is="SplitButton" focus>Focus</button>
-                <button is="SplitButton" disabled>Disabled</button>
+                <div class="k-split-button k-button-group k-rounded-md">
+                    <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                        <span class="k-button-text">Normal</span>
+                    </button>
+                    <button class="k-split-button-arrow k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                        <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                    </button>
+                </div>
+                <div class="k-split-button k-button-group k-rounded-md">
+                    <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-hover">
+                        <span class="k-button-text">Hover</span>
+                    </button>
+                    <button class="k-split-button-arrow k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                        <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                    </button>
+                </div>
+                <div class="k-split-button k-button-group k-rounded-md">
+                    <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-focus">
+                        <span class="k-button-text">Focus</span>
+                    </button>
+                    <button class="k-split-button-arrow k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                        <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                    </button>
+                </div>
+                <div class="k-split-button k-button-group k-rounded-md">
+                    <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-disabled">
+                        <span class="k-button-text">Disabled</span>
+                    </button>
+                    <button class="k-split-button-arrow k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button k-disabled">
+                        <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                    </button>
+                </div>
             </div>
         </section>
         <span>Button group</span>
         <section>
             <div class="k-widget k-toolbar">
                 <div class="k-button-group">
-                    <button is="Button" icon="align-left">Normal</button>
-                    <button is="Button" icon="align-center" hover>Hover</button>
-                    <button is="Button" icon="align-right" focus>Focus</button>
-                    <button is="Button" icon="bold" active>Active</button>
-                    <button is="Button" icon="bold" selected>Selected</button>
-                    <button is="Button" icon="italic" disabled>Disabled</button>
+                    <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                        <span class="k-button-icon k-icon k-i-align-left"></span>Normal
+                    </button>
+                    <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-hover">
+                        <span class="k-button-icon k-icon k-i-align-center"></span>Hover
+                    </button>
+                    <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-focus">
+                        <span class="k-button-icon k-icon k-i-align-right"></span>Focus
+                    </button>
+                    <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-active">
+                        <span class="k-button-icon k-icon k-i-bold"></span>Active
+                    </button>
+                    <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-selected">
+                        <span class="k-button-icon k-icon k-i-bold"></span>Selected
+                    </button>
+                    <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-disabled">
+                        <span class="k-button-icon k-icon k-i-italic"></span>Disabled
+                    </button>
                 </div>
                 <div class="k-button-group">
-                    <button is="Button">Adjacent</button>
-                    <button is="Button">Button group</button>
+                    <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                        <span class="k-button-text">Adjacent</span>
+                    </button>
+                    <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                        <span class="k-button-text">Button group</span>
+                    </button>
                 </div>
             </div>
         </section>
@@ -49,16 +112,44 @@
         <section>
             <div class="k-widget k-toolbar">
                 <div>
-                    <input is="DropdownList" value="Normal" />
+                    <span class="k-dropdown k-picker k-picker-md k-picker-solid k-rounded-md">
+                        <span class="k-input-inner">
+                            <span class="k-input-value-text">Normal</span>
+                        </span>
+                        <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                            <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                        </button>
+                    </span>
                 </div>
                 <div>
-                    <input is="DropdownList" value="Hover" hover />
+                    <span class="k-dropdown k-picker k-picker-md k-picker-solid k-rounded-md k-hover">
+                        <span class="k-input-inner">
+                            <span class="k-input-value-text">Hover</span>
+                        </span>
+                        <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                            <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                        </button>
+                    </span>
                 </div>
                 <div>
-                    <input is="DropdownList" value="Focus" focus />
+                    <span class="k-dropdown k-picker k-picker-md k-picker-solid k-rounded-md k-focus">
+                        <span class="k-input-inner">
+                            <span class="k-input-value-text">Focus</span>
+                        </span>
+                        <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                            <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                        </button>
+                    </span>
                 </div>
                 <div>
-                    <input is="DropdownList" value="Disabled" disabled />
+                    <span class="k-dropdown k-picker k-picker-md k-picker-solid k-rounded-md k-disabled">
+                        <span class="k-input-inner">
+                            <span class="k-input-value-text">Disabled</span>
+                        </span>
+                        <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                            <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                        </button>
+                    </span>
                 </div>
             </div>
         </section>
@@ -66,16 +157,45 @@
         <section>
             <div class="k-widget k-toolbar">
                 <div>
-                    <input is="Combobox" value="Normal" />
+                    <span class="k-combobox k-input k-input-md k-input-solid k-rounded-md">
+                        <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="Normal">
+                        <span class="k-clear-value">
+                            <span class="k-icon k-i-x"></span>
+                        </span>
+                        <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                            <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                        </button>
+                    </span>
                 </div>
                 <div>
-                    <input is="Combobox" value="Hover" hover />
+                    <span class="k-combobox k-input k-input-md k-input-solid k-rounded-md k-hover">
+                        <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="Hover">
+                        <span class="k-clear-value">
+                            <span class="k-icon k-i-x"></span>
+                        </span>
+                        <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                            <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                        </button>
+                    </span>
                 </div>
                 <div>
-                    <input is="Combobox" value="Focus" focus />
+                    <span class="k-combobox k-input k-input-md k-input-solid k-rounded-md k-focus">
+                        <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="Focus">
+                        <span class="k-clear-value">
+                            <span class="k-icon k-i-x"></span>
+                        </span>
+                        <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                            <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                        </button>
+                    </span>
                 </div>
                 <div>
-                    <input is="Combobox" value="Disabled" disabled />
+                    <span class="k-combobox k-input k-input-md k-input-solid k-rounded-md k-disabled">
+                        <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="Disabled">
+                        <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                            <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                        </button>
+                    </span>
                 </div>
             </div>
         </section>

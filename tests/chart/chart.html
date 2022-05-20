@@ -1,26 +1,22 @@
 <!doctype html>
-<html lang="en" class="k-no-animations">
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width:15px;">
 <head>
     <title>Chart</title>
     <meta charset="utf-8">
     <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
     <link rel="stylesheet" href="/packages/html/assets/styles.css">
     <script src="/packages/html/assets/scripts.js"></script>
-    <script src="/packages/html/dist/index.js"></script>
 </head>
 <body id="app" class="k-body">
     <style>
-        #test-area {
-            grid-template-columns: repeat(1, 1fr);
-        }
         text[fill="#333333"] {
             fill: currentColor;
         }
 
     </style>
-    <div id="test-area" class="grid">
+    <div id="test-area" class="k-d-grid k-grid-cols-1">
         <div class="k-chart" style="position: relative;">
-            <svg style="width: 100%; height: 100%; overflow: hidden; left: 0px; top: -0.15625px;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="width: 100%; height: 100%; overflow: hidden; left: 0px; top: -0.15625px;">
                 <defs>
                     <clipPath id="kdef3">
                         <path d="M38 68 L 1319 68 1319 338 38 338Z" stroke="#000" stroke-linejoin="miter" fill="none"></path>
@@ -91,49 +87,49 @@
                         <circle cx="38" cy="232.19" r="5" stroke="#fff" stroke-width="2" stroke-opacity="1" class="k-var--series-c" fill-opacity="1"></circle>
                         <circle cx="180.333" cy="223.949" r="5" stroke="#fff" stroke-width="2" stroke-opacity="1" class="k-var--series-c" fill-opacity="1"></circle>
                         <circle cx="1319" cy="153.894" r="5" stroke="#fff" stroke-width="2" stroke-opacity="1" class="k-var--series-c" fill-opacity="1"></circle>
-                        <text style="font:12px Arial, Helvetica, sans-serif;white-space:pre;" x="24.5" y="358" stroke="none" fill="#333333" fill-opacity="1">2002</text>
-                        <text style="font:12px Arial, Helvetica, sans-serif;white-space:pre;" x="166.833" y="358" stroke="none" fill="#333333" fill-opacity="1">2003</text>
-                        <text style="font:12px Arial, Helvetica, sans-serif;white-space:pre;" x="309.167" y="358" stroke="none" fill="#333333" fill-opacity="1">2004</text>
-                        <text style="font:12px Arial, Helvetica, sans-serif;white-space:pre;" x="451.5" y="358" stroke="none" fill="#333333" fill-opacity="1">2005</text>
-                        <text style="font:12px Arial, Helvetica, sans-serif;white-space:pre;" x="593.833" y="358" stroke="none" fill="#333333" fill-opacity="1">2006</text>
-                        <text style="font:12px Arial, Helvetica, sans-serif;white-space:pre;" x="736.167" y="358" stroke="none" fill="#333333" fill-opacity="1">2007</text>
-                        <text style="font:12px Arial, Helvetica, sans-serif;white-space:pre;" x="878.5" y="358" stroke="none" fill="#333333" fill-opacity="1">2008</text>
-                        <text style="font:12px Arial, Helvetica, sans-serif;white-space:pre;" x="1020.8330000000001" y="358" stroke="none" fill="#333333" fill-opacity="1">2009</text>
-                        <text style="font:12px Arial, Helvetica, sans-serif;white-space:pre;" x="1163.167" y="358" stroke="none" fill="#333333" fill-opacity="1">2010</text>
-                        <text style="font:12px Arial, Helvetica, sans-serif;white-space:pre;" x="1306" y="358" stroke="none" fill="#333333" fill-opacity="1">2011</text>
-                        <text style="font:12px Arial, Helvetica, sans-serif;white-space:pre;" x="8" y="342" stroke="none" fill="#333333" fill-opacity="1">-8%</text>
-                        <text style="font:12px Arial, Helvetica, sans-serif;white-space:pre;" x="8" y="315" stroke="none" fill="#333333" fill-opacity="1">-6%</text>
-                        <text style="font:12px Arial, Helvetica, sans-serif;white-space:pre;" x="8" y="288" stroke="none" fill="#333333" fill-opacity="1">-4%</text>
-                        <text style="font:12px Arial, Helvetica, sans-serif;white-space:pre;" x="8" y="261" stroke="none" fill="#333333" fill-opacity="1">-2%</text>
-                        <text style="font:12px Arial, Helvetica, sans-serif;white-space:pre;" x="12" y="234" stroke="none" fill="#333333" fill-opacity="1">0%</text>
-                        <text style="font:12px Arial, Helvetica, sans-serif;white-space:pre;" x="12" y="207" stroke="none" fill="#333333" fill-opacity="1">2%</text>
-                        <text style="font:12px Arial, Helvetica, sans-serif;white-space:pre;" x="12" y="180" stroke="none" fill="#333333" fill-opacity="1">4%</text>
-                        <text style="font:12px Arial, Helvetica, sans-serif;white-space:pre;" x="12" y="153" stroke="none" fill="#333333" fill-opacity="1">6%</text>
-                        <text style="font:12px Arial, Helvetica, sans-serif;white-space:pre;" x="12" y="126" stroke="none" fill="#333333" fill-opacity="1">8%</text>
-                        <text style="font:12px Arial, Helvetica, sans-serif;white-space:pre;" x="5" y="99" stroke="none" fill="#333333" fill-opacity="1">10%</text>
-                        <text style="font:12px Arial, Helvetica, sans-serif;white-space:pre;" x="5" y="72" stroke="none" fill="#333333" fill-opacity="1">12%</text>
-                        <text style="font:16px Arial, Helvetica, sans-serif;white-space:pre;" x="558" y="29" stroke="none" fill="#333333" fill-opacity="1">Gross domestic product growth</text>
-                        <text style="font:16px Arial, Helvetica, sans-serif;white-space:pre;" x="611" y="47" stroke="none" fill="#333333" fill-opacity="1">/GDP annual %/</text>
+                        <text x="24.5" y="358" stroke="none" fill-opacity="1" style="font: 12px Arial, Helvetica, sans-serif; white-space: pre;">2002</text>
+                        <text x="166.833" y="358" stroke="none" fill-opacity="1" style="font: 12px Arial, Helvetica, sans-serif; white-space: pre;">2003</text>
+                        <text x="309.167" y="358" stroke="none" fill-opacity="1" style="font: 12px Arial, Helvetica, sans-serif; white-space: pre;">2004</text>
+                        <text x="451.5" y="358" stroke="none" fill-opacity="1" style="font: 12px Arial, Helvetica, sans-serif; white-space: pre;">2005</text>
+                        <text x="593.833" y="358" stroke="none" fill-opacity="1" style="font: 12px Arial, Helvetica, sans-serif; white-space: pre;">2006</text>
+                        <text x="736.167" y="358" stroke="none" fill-opacity="1" style="font: 12px Arial, Helvetica, sans-serif; white-space: pre;">2007</text>
+                        <text x="878.5" y="358" stroke="none" fill-opacity="1" style="font: 12px Arial, Helvetica, sans-serif; white-space: pre;">2008</text>
+                        <text x="1020.8330000000001" y="358" stroke="none" fill-opacity="1" style="font: 12px Arial, Helvetica, sans-serif; white-space: pre;">2009</text>
+                        <text x="1163.167" y="358" stroke="none" fill-opacity="1" style="font: 12px Arial, Helvetica, sans-serif; white-space: pre;">2010</text>
+                        <text x="1306" y="358" stroke="none" fill-opacity="1" style="font: 12px Arial, Helvetica, sans-serif; white-space: pre;">2011</text>
+                        <text x="8" y="342" stroke="none" fill-opacity="1" style="font: 12px Arial, Helvetica, sans-serif; white-space: pre;">-8%</text>
+                        <text x="8" y="315" stroke="none" fill-opacity="1" style="font: 12px Arial, Helvetica, sans-serif; white-space: pre;">-6%</text>
+                        <text x="8" y="288" stroke="none" fill-opacity="1" style="font: 12px Arial, Helvetica, sans-serif; white-space: pre;">-4%</text>
+                        <text x="8" y="261" stroke="none" fill-opacity="1" style="font: 12px Arial, Helvetica, sans-serif; white-space: pre;">-2%</text>
+                        <text x="12" y="234" stroke="none" fill-opacity="1" style="font: 12px Arial, Helvetica, sans-serif; white-space: pre;">0%</text>
+                        <text x="12" y="207" stroke="none" fill-opacity="1" style="font: 12px Arial, Helvetica, sans-serif; white-space: pre;">2%</text>
+                        <text x="12" y="180" stroke="none" fill-opacity="1" style="font: 12px Arial, Helvetica, sans-serif; white-space: pre;">4%</text>
+                        <text x="12" y="153" stroke="none" fill-opacity="1" style="font: 12px Arial, Helvetica, sans-serif; white-space: pre;">6%</text>
+                        <text x="12" y="126" stroke="none" fill-opacity="1" style="font: 12px Arial, Helvetica, sans-serif; white-space: pre;">8%</text>
+                        <text x="5" y="99" stroke="none" fill-opacity="1" style="font: 12px Arial, Helvetica, sans-serif; white-space: pre;">10%</text>
+                        <text x="5" y="72" stroke="none" fill-opacity="1" style="font: 12px Arial, Helvetica, sans-serif; white-space: pre;">12%</text>
+                        <text x="558" y="29" stroke="none" fill-opacity="1" style="font: 16px Arial, Helvetica, sans-serif; white-space: pre;">Gross domestic product growth</text>
+                        <text x="611" y="47" stroke="none" fill-opacity="1" style="font: 16px Arial, Helvetica, sans-serif; white-space: pre;">/GDP annual %/</text>
                         <g transform="matrix(1,0,0,1,590.5,371)">
                             <path d="M0 5.5 L 15 5.5 15 8.5 0 8.5Z" stroke="#008fd3" stroke-width="0" class="k-var--series-a"></path>
                             <g>
-                                <text style="font:12px Arial, Helvetica, sans-serif;white-space:pre;" x="21" y="11" stroke="none" fill="#333333" fill-opacity="1">India</text>
+                                <text x="21" y="11" stroke="none" fill-opacity="1" style="font: 12px Arial, Helvetica, sans-serif; white-space: pre;">India</text>
                             </g>
-                            <path style="cursor:pointer;" d="M0 0 L 47 0 47 14 0 14Z" stroke="none" fill="#fff" fill-opacity="0"></path>
+                            <path d="M0 0 L 47 0 47 14 0 14Z" stroke="none" fill="#fff" fill-opacity="0" style="cursor: pointer;"></path>
                         </g>
                         <g transform="matrix(1,0,0,1,643.5,371)">
                             <path d="M0 5.5 L 15 5.5 15 8.5 0 8.5Z" stroke="#99d101" stroke-width="0" class="k-var--series-b"></path>
                             <g>
-                                <text style="font:12px Arial, Helvetica, sans-serif;white-space:pre;" x="21" y="11" stroke="none" fill="#333333" fill-opacity="1">World</text>
+                                <text x="21" y="11" stroke="none" fill-opacity="1" style="font: 12px Arial, Helvetica, sans-serif; white-space: pre;">World</text>
                             </g>
-                            <path style="cursor:pointer;" d="M0 0 L 52 0 52 14 0 14Z" stroke="none" fill="#fff" fill-opacity="0"></path>
+                            <path d="M0 0 L 52 0 52 14 0 14Z" stroke="none" fill="#fff" fill-opacity="0" style="cursor: pointer;"></path>
                         </g>
                         <g transform="matrix(1,0,0,1,701.5,371)">
                             <path d="M0 5.5 L 15 5.5 15 8.5 0 8.5Z" stroke="#f39b02" stroke-width="0" class="k-var--series-c"></path>
                             <g>
-                                <text style="font:12px Arial, Helvetica, sans-serif;white-space:pre;" x="21" y="11" stroke="none" fill="#333333" fill-opacity="1">Haiti</text>
+                                <text x="21" y="11" stroke="none" fill-opacity="1" style="font: 12px Arial, Helvetica, sans-serif; white-space: pre;">Haiti</text>
                             </g>
-                            <path style="cursor:pointer;" d="M0 0 L 45 0 45 14 0 14Z" stroke="none" fill="#fff" fill-opacity="0"></path>
+                            <path d="M0 0 L 45 0 45 14 0 14Z" stroke="none" fill="#fff" fill-opacity="0" style="cursor: pointer;"></path>
                         </g>
                     </g>
                 </g>

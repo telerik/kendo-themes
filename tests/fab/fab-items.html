@@ -1,12 +1,11 @@
 <!doctype html>
-<html lang="en" class="k-no-animations">
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width:15px;">
 <head>
     <title>FAB Items</title>
     <meta charset="utf-8">
     <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
     <link rel="stylesheet" href="/packages/html/assets/styles.css">
     <script src="/packages/html/assets/scripts.js"></script>
-    <script src="/packages/html/dist/index.js"></script>
 </head>
 <body id="app" class="k-body">
     <style>
@@ -26,314 +25,342 @@
         <span>Medium</span>
         <span>Large</span>
         <span>Downward - Left Labels</span>
-        <span class="relative-container">
-            <button is="Fab" icon="plus" size="small" position="top-end" style="top: 16px; right: 16px;"></button>
-            <!-- top/bottom calculations are based on spacing from the top/bottom + the FAB height -->
-            <!-- right/left calculations are based on spacing from the left/right + half of the FAB's width - half of the item's with -->
-            <div class="k-fab-popup k-popup k-popup-transparent" style="position: absolute; top: calc(16px + 36px); right: calc(16px + calc(36px / 2) - calc(36px /2));">
+        <span class="relative-container" style="position: relative; border: 1px solid rgb(204, 204, 204);">
+            <button type="button" class="k-fab k-fab-sm k-fab-rectangle k-fab-solid k-fab-solid-primary k-rounded-full k-pos-absolute k-top-end" style="top: 16px; right: 16px;">
+                <span class="k-fab-icon k-icon k-i-plus"></span>
+            </button>
+            <div class="k-fab-popup k-popup k-popup-transparent" style="position: absolute; top: calc(52px); right: calc(16px);">
                 <ul class="k-fab-items k-fab-items-sm k-fab-items-bottom">
                     <li class="k-fab-item k-text-right">
                         <span class="k-fab-item-text">Normal</span>
-                        <i is="Icon" class="k-fab-item-icon" name="pencil"></i>
+                        <span class="k-fab-item-icon k-icon k-i-pencil"></span>
                     </li>
                     <li class="k-fab-item k-text-right k-hover">
                         <span class="k-fab-item-text">Hover long text</span>
-                        <i is="Icon" class="k-fab-item-icon" name="pencil"></i>
+                        <span class="k-fab-item-icon k-icon k-i-pencil"></span>
                     </li>
                     <li class="k-fab-item k-text-right k-focus">
                         <span class="k-fab-item-text">Focus</span>
-                        <i is="Icon" class="k-fab-item-icon" name="pencil"></i>
+                        <span class="k-fab-item-icon k-icon k-i-pencil"></span>
                     </li>
                     <li class="k-fab-item k-text-right k-active">
                         <span class="k-fab-item-text">Active</span>
-                        <i is="Icon" class="k-fab-item-icon" name="pencil"></i>
+                        <span class="k-fab-item-icon k-icon k-i-pencil"></span>
                     </li>
                     <li class="k-fab-item k-text-right k-disabled">
                         <span class="k-fab-item-text">Disabled</span>
-                        <i is="Icon" class="k-fab-item-icon" name="cancel"></i>
+                        <span class="k-fab-item-icon k-icon k-i-cancel"></span>
                     </li>
                 </ul>
             </div>
         </span>
-        <span class="relative-container">
-            <button is="Fab" icon="plus" size="medium" position="top-end" style="top: 16px; right: 16px;"></button>
-            <div class="k-fab-popup k-popup k-popup-transparent" style="position: absolute; top: calc(16px + 52px); right: calc(16px + calc(52px / 2) - calc(36px /2));">
+        <span class="relative-container" style="position: relative; border: 1px solid rgb(204, 204, 204);">
+            <button type="button" class="k-fab k-fab-md k-fab-rectangle k-fab-solid k-fab-solid-primary k-rounded-full k-pos-absolute k-top-end" style="top: 16px; right: 16px;">
+                <span class="k-fab-icon k-icon k-i-plus"></span>
+            </button>
+            <div class="k-fab-popup k-popup k-popup-transparent" style="position: absolute; top: calc(68px); right: calc(24px);">
                 <ul class="k-fab-items k-fab-items-md k-fab-items-bottom">
                     <li class="k-fab-item k-text-right k-hover">
                         <span class="k-fab-item-text">Hover long text</span>
-                        <i is="Icon" class="k-fab-item-icon" name="pencil"></i>
+                        <span class="k-fab-item-icon k-icon k-i-pencil"></span>
                     </li>
                     <li class="k-fab-item k-text-right k-focus">
                         <span class="k-fab-item-text">Focus</span>
-                        <i is="Icon" class="k-fab-item-icon" name="pencil"></i>
+                        <span class="k-fab-item-icon k-icon k-i-pencil"></span>
                     </li>
                     <li class="k-fab-item k-text-right k-active">
                         <span class="k-fab-item-text">Active</span>
-                        <i is="Icon" class="k-fab-item-icon" name="pencil"></i>
+                        <span class="k-fab-item-icon k-icon k-i-pencil"></span>
                     </li>
                     <li class="k-fab-item k-text-right k-disabled k-focus">
-                        <span class="k-fab-item-text">Disabled & Focus</span>
-                        <i is="Icon" class="k-fab-item-icon" name="cancel"></i>
+                        <span class="k-fab-item-text">Disabled &amp; Focus</span>
+                        <span class="k-fab-item-icon k-icon k-i-cancel"></span>
                     </li>
                 </ul>
             </div>
         </span>
-        <span class="relative-container">
-            <button is="Fab" icon="plus" size="large" position="top-end" style="top: 16px; right: 16px;"></button>
-            <div class="k-fab-popup k-popup k-popup-transparent" style="position: absolute; top: calc(16px + 68px); right: calc(16px + calc(68px / 2) - calc(36px /2));">
+        <span class="relative-container" style="position: relative; border: 1px solid rgb(204, 204, 204);">
+            <button type="button" class="k-fab k-fab-lg k-fab-rectangle k-fab-solid k-fab-solid-primary k-rounded-full k-pos-absolute k-top-end" style="top: 16px; right: 16px;">
+                <span class="k-fab-icon k-icon k-i-plus"></span>
+            </button>
+            <div class="k-fab-popup k-popup k-popup-transparent" style="position: absolute; top: calc(84px); right: calc(32px);">
                 <ul class="k-fab-items k-fab-items-lg k-fab-items-bottom">
                     <li class="k-fab-item k-text-right k-hover">
                         <span class="k-fab-item-text">Hover long text</span>
-                        <i is="Icon" class="k-fab-item-icon" name="pencil"></i>
+                        <span class="k-fab-item-icon k-icon k-i-pencil"></span>
                     </li>
                     <li class="k-fab-item k-text-right k-focus">
                         <span class="k-fab-item-text">Focus</span>
-                        <i is="Icon" class="k-fab-item-icon" name="pencil"></i>
+                        <span class="k-fab-item-icon k-icon k-i-pencil"></span>
                     </li>
                     <li class="k-fab-item k-text-right k-active">
                         <span class="k-fab-item-text">Active</span>
-                        <i is="Icon" class="k-fab-item-icon" name="pencil"></i>
+                        <span class="k-fab-item-icon k-icon k-i-pencil"></span>
                     </li>
                     <li class="k-fab-item k-text-right k-disabled">
                         <span class="k-fab-item-text">Disabled</span>
-                        <i is="Icon" class="k-fab-item-icon" name="cancel"></i>
+                        <span class="k-fab-item-icon k-icon k-i-cancel"></span>
                     </li>
                 </ul>
             </div>
         </span>
         <span>Downward - Right Labels</span>
-        <span class="relative-container">
-            <button is="Fab" icon="plus" size="small" position="top-start" style="top: 16px; left: 16px;"></button>
-            <div class="k-fab-popup k-popup k-popup-transparent" style="position: absolute; top: calc(16px + 36px); left: calc(16px + calc(36px / 2) - calc(36px /2));">
+        <span class="relative-container" style="position: relative; border: 1px solid rgb(204, 204, 204);">
+            <button type="button" class="k-fab k-fab-sm k-fab-rectangle k-fab-solid k-fab-solid-primary k-rounded-full k-pos-absolute k-top-start" style="top: 16px; left: 16px;">
+                <span class="k-fab-icon k-icon k-i-plus"></span>
+            </button>
+            <div class="k-fab-popup k-popup k-popup-transparent" style="position: absolute; top: calc(52px); left: calc(16px);">
                 <ul class="k-fab-items k-fab-items-bottom">
                     <li class="k-fab-item k-text-left k-hover">
                         <span class="k-fab-item-text">Hover long text</span>
-                        <i is="Icon" class="k-fab-item-icon" name="pencil"></i>
+                        <span class="k-fab-item-icon k-icon k-i-pencil"></span>
                     </li>
                     <li class="k-fab-item k-text-left k-focus">
                         <span class="k-fab-item-text">Focus</span>
-                        <i is="Icon" class="k-fab-item-icon" name="pencil"></i>
+                        <span class="k-fab-item-icon k-icon k-i-pencil"></span>
                     </li>
                     <li class="k-fab-item k-text-left k-active">
                         <span class="k-fab-item-text">Active</span>
-                        <i is="Icon" class="k-fab-item-icon" name="pencil"></i>
+                        <span class="k-fab-item-icon k-icon k-i-pencil"></span>
                     </li>
                 </ul>
             </div>
         </span>
-        <span class="relative-container">
-            <button is="Fab" icon="plus" size="medium" position="top-start" style="top: 16px; left: 16px;"></button>
-            <div class="k-fab-popup k-popup k-popup-transparent" style="position: absolute; top: calc(16px + 52px); left: calc(16px + calc(52px / 2) - calc(36px /2));">
+        <span class="relative-container" style="position: relative; border: 1px solid rgb(204, 204, 204);">
+            <button type="button" class="k-fab k-fab-md k-fab-rectangle k-fab-solid k-fab-solid-primary k-rounded-full k-pos-absolute k-top-start" style="top: 16px; left: 16px;">
+                <span class="k-fab-icon k-icon k-i-plus"></span>
+            </button>
+            <div class="k-fab-popup k-popup k-popup-transparent" style="position: absolute; top: calc(68px); left: calc(24px);">
                 <ul class="k-fab-items k-fab-items-bottom">
                     <li class="k-fab-item k-text-left k-hover">
                         <span class="k-fab-item-text">Hover long text</span>
-                        <i is="Icon" class="k-fab-item-icon" name="pencil"></i>
+                        <span class="k-fab-item-icon k-icon k-i-pencil"></span>
                     </li>
                     <li class="k-fab-item k-text-left k-focus">
                         <span class="k-fab-item-text">Focus</span>
-                        <i is="Icon" class="k-fab-item-icon" name="pencil"></i>
+                        <span class="k-fab-item-icon k-icon k-i-pencil"></span>
                     </li>
                     <li class="k-fab-item k-text-left k-active">
                         <span class="k-fab-item-text">Active</span>
-                        <i is="Icon" class="k-fab-item-icon" name="pencil"></i>
+                        <span class="k-fab-item-icon k-icon k-i-pencil"></span>
                     </li>
                 </ul>
             </div>
         </span>
-        <span class="relative-container">
-            <button is="Fab" icon="plus" size="large" position="top-start" style="top: 16px; left: 16px;"></button>
-            <div class="k-fab-popup k-popup k-popup-transparent" style="position: absolute; top: calc(16px + 68px); left: calc(16px + calc(68px / 2) - calc(36px /2));">
+        <span class="relative-container" style="position: relative; border: 1px solid rgb(204, 204, 204);">
+            <button type="button" class="k-fab k-fab-lg k-fab-rectangle k-fab-solid k-fab-solid-primary k-rounded-full k-pos-absolute k-top-start" style="top: 16px; left: 16px;">
+                <span class="k-fab-icon k-icon k-i-plus"></span>
+            </button>
+            <div class="k-fab-popup k-popup k-popup-transparent" style="position: absolute; top: calc(84px); left: calc(32px);">
                 <ul class="k-fab-items k-fab-items-bottom">
                     <li class="k-fab-item k-text-left k-hover">
                         <span class="k-fab-item-text">Hover long text</span>
-                        <i is="Icon" class="k-fab-item-icon" name="pencil"></i>
+                        <span class="k-fab-item-icon k-icon k-i-pencil"></span>
                     </li>
                     <li class="k-fab-item k-text-left k-focus">
                         <span class="k-fab-item-text">Focus</span>
-                        <i is="Icon" class="k-fab-item-icon" name="pencil"></i>
+                        <span class="k-fab-item-icon k-icon k-i-pencil"></span>
                     </li>
                     <li class="k-fab-item k-text-left k-active">
                         <span class="k-fab-item-text">Active</span>
-                        <i is="Icon" class="k-fab-item-icon" name="pencil"></i>
+                        <span class="k-fab-item-icon k-icon k-i-pencil"></span>
                     </li>
                 </ul>
             </div>
         </span>
         <span>Upward - Left Labels</span>
-        <span class="relative-container">
-            <button is="Fab" icon="plus" size="small" position="bottom-end" style="bottom: 16px; right: 16px;"></button>
-            <div class="k-fab-popup k-popup k-popup-transparent" style="position: absolute; bottom: calc(16px + 36px); right: calc(16px + calc(36px / 2) - calc(36px /2));">
+        <span class="relative-container" style="position: relative; border: 1px solid rgb(204, 204, 204);">
+            <button type="button" class="k-fab k-fab-sm k-fab-rectangle k-fab-solid k-fab-solid-primary k-rounded-full k-pos-absolute k-bottom-end" style="bottom: 16px; right: 16px;">
+                <span class="k-fab-icon k-icon k-i-plus"></span>
+            </button>
+            <div class="k-fab-popup k-popup k-popup-transparent" style="position: absolute; bottom: calc(52px); right: calc(16px);">
                 <ul class="k-fab-items k-fab-items-top">
                     <li class="k-fab-item k-text-right k-hover">
                         <span class="k-fab-item-text">Hover long text</span>
-                        <i is="Icon" class="k-fab-item-icon" name="pencil"></i>
+                        <span class="k-fab-item-icon k-icon k-i-pencil"></span>
                     </li>
                     <li class="k-fab-item k-text-right k-focus">
                         <span class="k-fab-item-text">Focus</span>
-                        <i is="Icon" class="k-fab-item-icon" name="pencil"></i>
+                        <span class="k-fab-item-icon k-icon k-i-pencil"></span>
                     </li>
                     <li class="k-fab-item k-text-right k-active">
                         <span class="k-fab-item-text">Active</span>
-                        <i is="Icon" class="k-fab-item-icon" name="pencil"></i>
+                        <span class="k-fab-item-icon k-icon k-i-pencil"></span>
                     </li>
                 </ul>
             </div>
         </span>
-        <span class="relative-container">
-            <button is="Fab" icon="plus" size="medium" position="bottom-end" style="bottom: 16px; right: 16px;"></button>
-            <div class="k-fab-popup k-popup k-popup-transparent" style="position: absolute; bottom: calc(16px + 52px); right: calc(16px + calc(52px / 2) - calc(36px /2));">
+        <span class="relative-container" style="position: relative; border: 1px solid rgb(204, 204, 204);">
+            <button type="button" class="k-fab k-fab-md k-fab-rectangle k-fab-solid k-fab-solid-primary k-rounded-full k-pos-absolute k-bottom-end" style="bottom: 16px; right: 16px;">
+                <span class="k-fab-icon k-icon k-i-plus"></span>
+            </button>
+            <div class="k-fab-popup k-popup k-popup-transparent" style="position: absolute; bottom: calc(68px); right: calc(24px);">
                 <ul class="k-fab-items k-fab-items-top">
                     <li class="k-fab-item k-text-right k-hover">
                         <span class="k-fab-item-text">Hover long text</span>
-                        <i is="Icon" class="k-fab-item-icon" name="pencil"></i>
+                        <span class="k-fab-item-icon k-icon k-i-pencil"></span>
                     </li>
                     <li class="k-fab-item k-text-right k-focus">
                         <span class="k-fab-item-text">Focus</span>
-                        <i is="Icon" class="k-fab-item-icon" name="pencil"></i>
+                        <span class="k-fab-item-icon k-icon k-i-pencil"></span>
                     </li>
                     <li class="k-fab-item k-text-right k-active">
                         <span class="k-fab-item-text">Active</span>
-                        <i is="Icon" class="k-fab-item-icon" name="pencil"></i>
+                        <span class="k-fab-item-icon k-icon k-i-pencil"></span>
                     </li>
                 </ul>
             </div>
         </span>
-        <span class="relative-container">
-            <button is="Fab" icon="plus" size="large" position="bottom-end" style="bottom: 16px; right: 16px;"></button>
-            <div class="k-fab-popup k-popup k-popup-transparent" style="position: absolute; bottom: calc(16px + 68px); right: calc(16px + calc(68px / 2) - calc(36px /2));">
+        <span class="relative-container" style="position: relative; border: 1px solid rgb(204, 204, 204);">
+            <button type="button" class="k-fab k-fab-lg k-fab-rectangle k-fab-solid k-fab-solid-primary k-rounded-full k-pos-absolute k-bottom-end" style="bottom: 16px; right: 16px;">
+                <span class="k-fab-icon k-icon k-i-plus"></span>
+            </button>
+            <div class="k-fab-popup k-popup k-popup-transparent" style="position: absolute; bottom: calc(84px); right: calc(32px);">
                 <ul class="k-fab-items k-fab-items-top">
                     <li class="k-fab-item k-text-right k-hover">
                         <span class="k-fab-item-text">Hover long text</span>
-                        <i is="Icon" class="k-fab-item-icon" name="pencil"></i>
+                        <span class="k-fab-item-icon k-icon k-i-pencil"></span>
                     </li>
                     <li class="k-fab-item k-text-right k-focus">
                         <span class="k-fab-item-text">Focus</span>
-                        <i is="Icon" class="k-fab-item-icon" name="pencil"></i>
+                        <span class="k-fab-item-icon k-icon k-i-pencil"></span>
                     </li>
                     <li class="k-fab-item k-text-right k-active">
                         <span class="k-fab-item-text">Active</span>
-                        <i is="Icon" class="k-fab-item-icon" name="pencil"></i>
+                        <span class="k-fab-item-icon k-icon k-i-pencil"></span>
                     </li>
                 </ul>
             </div>
         </span>
         <span>Upward - Right Labels</span>
-        <span class="relative-container">
-            <button is="Fab" icon="plus" size="small" position="bottom-start" style="bottom: 16px; left: 16px;"></button>
-            <div class="k-fab-popup k-popup k-popup-transparent" style="position: absolute; bottom: calc(16px + 36px); left: calc(16px + calc(36px / 2) - calc(36px /2));">
+        <span class="relative-container" style="position: relative; border: 1px solid rgb(204, 204, 204);">
+            <button type="button" class="k-fab k-fab-sm k-fab-rectangle k-fab-solid k-fab-solid-primary k-rounded-full k-pos-absolute k-bottom-start" style="bottom: 16px; left: 16px;">
+                <span class="k-fab-icon k-icon k-i-plus"></span>
+            </button>
+            <div class="k-fab-popup k-popup k-popup-transparent" style="position: absolute; bottom: calc(52px); left: calc(16px);">
                 <ul class="k-fab-items k-fab-items-top">
                     <li class="k-fab-item k-text-left k-hover">
                         <span class="k-fab-item-text">Hover long text</span>
-                        <i is="Icon" class="k-fab-item-icon" name="pencil"></i>
+                        <span class="k-fab-item-icon k-icon k-i-pencil"></span>
                     </li>
                     <li class="k-fab-item k-text-left k-focus">
                         <span class="k-fab-item-text">Focus</span>
-                        <i is="Icon" class="k-fab-item-icon" name="pencil"></i>
+                        <span class="k-fab-item-icon k-icon k-i-pencil"></span>
                     </li>
                     <li class="k-fab-item k-text-left k-active">
                         <span class="k-fab-item-text">Active</span>
-                        <i is="Icon" class="k-fab-item-icon" name="pencil"></i>
+                        <span class="k-fab-item-icon k-icon k-i-pencil"></span>
                     </li>
                 </ul>
             </div>
         </span>
-        <span class="relative-container">
-            <button is="Fab" icon="plus" size="medium" position="bottom-start" style="bottom: 16px; left: 16px;"></button>
-            <div class="k-fab-popup k-popup k-popup-transparent" style="position: absolute; bottom: calc(16px + 52px); left: calc(16px + calc(52px / 2) - calc(36px /2));">
+        <span class="relative-container" style="position: relative; border: 1px solid rgb(204, 204, 204);">
+            <button type="button" class="k-fab k-fab-md k-fab-rectangle k-fab-solid k-fab-solid-primary k-rounded-full k-pos-absolute k-bottom-start" style="bottom: 16px; left: 16px;">
+                <span class="k-fab-icon k-icon k-i-plus"></span>
+            </button>
+            <div class="k-fab-popup k-popup k-popup-transparent" style="position: absolute; bottom: calc(68px); left: calc(24px);">
                 <ul class="k-fab-items k-fab-items-top">
                     <li class="k-fab-item k-text-left k-hover">
                         <span class="k-fab-item-text">Hover long text</span>
-                        <i is="Icon" class="k-fab-item-icon" name="pencil"></i>
+                        <span class="k-fab-item-icon k-icon k-i-pencil"></span>
                     </li>
                     <li class="k-fab-item k-text-left k-focus">
                         <span class="k-fab-item-text">Focus</span>
-                        <i is="Icon" class="k-fab-item-icon" name="pencil"></i>
+                        <span class="k-fab-item-icon k-icon k-i-pencil"></span>
                     </li>
                     <li class="k-fab-item k-text-left k-active">
                         <span class="k-fab-item-text">Active</span>
-                        <i is="Icon" class="k-fab-item-icon" name="pencil"></i>
+                        <span class="k-fab-item-icon k-icon k-i-pencil"></span>
                     </li>
                 </ul>
             </div>
         </span>
-        <span class="relative-container">
-            <button is="Fab" icon="plus" size="large" position="bottom-start" style="bottom: 16px; left: 16px;"></button>
-            <div class="k-fab-popup k-popup k-popup-transparent" style="position: absolute; bottom: calc(16px + 68px); left: calc(16px + calc(68px / 2) - calc(36px /2));">
+        <span class="relative-container" style="position: relative; border: 1px solid rgb(204, 204, 204);">
+            <button type="button" class="k-fab k-fab-lg k-fab-rectangle k-fab-solid k-fab-solid-primary k-rounded-full k-pos-absolute k-bottom-start" style="bottom: 16px; left: 16px;">
+                <span class="k-fab-icon k-icon k-i-plus"></span>
+            </button>
+            <div class="k-fab-popup k-popup k-popup-transparent" style="position: absolute; bottom: calc(84px); left: calc(32px);">
                 <ul class="k-fab-items k-fab-items-top">
                     <li class="k-fab-item k-text-left k-hover">
                         <span class="k-fab-item-text">Hover long text</span>
-                        <i is="Icon" class="k-fab-item-icon" name="pencil"></i>
+                        <span class="k-fab-item-icon k-icon k-i-pencil"></span>
                     </li>
                     <li class="k-fab-item k-text-left k-focus">
                         <span class="k-fab-item-text">Focus</span>
-                        <i is="Icon" class="k-fab-item-icon" name="pencil"></i>
+                        <span class="k-fab-item-icon k-icon k-i-pencil"></span>
                     </li>
                     <li class="k-fab-item k-text-left k-active">
                         <span class="k-fab-item-text">Active</span>
-                        <i is="Icon" class="k-fab-item-icon" name="pencil"></i>
+                        <span class="k-fab-item-icon k-icon k-i-pencil"></span>
                     </li>
                 </ul>
             </div>
         </span>
         <span>Angular rendering</span>
-        <span class="relative-container">
+        <span class="relative-container" style="position: relative; border: 1px solid rgb(204, 204, 204);">
             <span class="k-pos-absolute k-bottom-start" style="bottom: 16px; left: 16px;">
-                <button is="Fab" icon="plus" size="small"></button>
-                <div class="k-fab-popup k-popup k-popup-transparent" style="position: absolute; bottom: 36px; left: calc(calc(36px/2) - calc(36px/2));">
+                <button type="button" class="k-fab k-fab-sm k-fab-rectangle k-fab-solid k-fab-solid-primary k-rounded-full">
+                    <span class="k-fab-icon k-icon k-i-plus"></span>
+                </button>
+                <div class="k-fab-popup k-popup k-popup-transparent" style="position: absolute; bottom: 36px; left: calc(0px);">
                     <ul class="k-fab-items k-fab-items-top">
                         <li class="k-fab-item k-text-left k-hover">
                             <span class="k-fab-item-text">Hover long text</span>
-                            <i is="Icon" class="k-fab-item-icon" name="pencil"></i>
+                            <span class="k-fab-item-icon k-icon k-i-pencil"></span>
                         </li>
                         <li class="k-fab-item k-text-left k-focus">
                             <span class="k-fab-item-text">Focus</span>
-                            <i is="Icon" class="k-fab-item-icon" name="pencil"></i>
+                            <span class="k-fab-item-icon k-icon k-i-pencil"></span>
                         </li>
                         <li class="k-fab-item k-text-left k-active">
                             <span class="k-fab-item-text">Active</span>
-                            <i is="Icon" class="k-fab-item-icon" name="pencil"></i>
+                            <span class="k-fab-item-icon k-icon k-i-pencil"></span>
                         </li>
                     </ul>
                 </div>
             </span>
         </span>
-        <span class="relative-container">
+        <span class="relative-container" style="position: relative; border: 1px solid rgb(204, 204, 204);">
             <span class="k-pos-absolute k-bottom-start" style="bottom: 16px; left: 16px;">
-                <button is="Fab" icon="plus" size="medium"></button>
-                <div class="k-fab-popup k-popup k-popup-transparent" style="position: absolute; bottom: 52px; left: calc(calc(52px/2) - calc(36px/2));">
+                <button type="button" class="k-fab k-fab-md k-fab-rectangle k-fab-solid k-fab-solid-primary k-rounded-full">
+                    <span class="k-fab-icon k-icon k-i-plus"></span>
+                </button>
+                <div class="k-fab-popup k-popup k-popup-transparent" style="position: absolute; bottom: 52px; left: calc(8px);">
                     <ul class="k-fab-items k-fab-items-top">
                         <li class="k-fab-item k-text-left k-hover">
                             <span class="k-fab-item-text">Hover long text</span>
-                            <i is="Icon" class="k-fab-item-icon" name="pencil"></i>
+                            <span class="k-fab-item-icon k-icon k-i-pencil"></span>
                         </li>
                         <li class="k-fab-item k-text-left k-focus">
                             <span class="k-fab-item-text">Focus</span>
-                            <i is="Icon" class="k-fab-item-icon" name="pencil"></i>
+                            <span class="k-fab-item-icon k-icon k-i-pencil"></span>
                         </li>
                         <li class="k-fab-item k-text-left k-active">
                             <span class="k-fab-item-text">Active</span>
-                            <i is="Icon" class="k-fab-item-icon" name="pencil"></i>
+                            <span class="k-fab-item-icon k-icon k-i-pencil"></span>
                         </li>
                     </ul>
                 </div>
             </span>
         </span>
-        <span class="relative-container">
+        <span class="relative-container" style="position: relative; border: 1px solid rgb(204, 204, 204);">
             <span class="k-pos-absolute k-bottom-start" style="bottom: 16px; left: 16px;">
-                <button is="Fab" icon="plus" size="large"></button>
-                <div class="k-fab-popup k-popup k-popup-transparent" style="position: absolute; bottom: 68px; left: calc(calc(68px/2) - calc(36px/2));">
+                <button type="button" class="k-fab k-fab-lg k-fab-rectangle k-fab-solid k-fab-solid-primary k-rounded-full">
+                    <span class="k-fab-icon k-icon k-i-plus"></span>
+                </button>
+                <div class="k-fab-popup k-popup k-popup-transparent" style="position: absolute; bottom: 68px; left: calc(16px);">
                     <ul class="k-fab-items k-fab-items-top">
                         <li class="k-fab-item k-text-left k-hover">
                             <span class="k-fab-item-text">Hover long text</span>
-                            <i is="Icon" class="k-fab-item-icon" name="pencil"></i>
+                            <span class="k-fab-item-icon k-icon k-i-pencil"></span>
                         </li>
                         <li class="k-fab-item k-text-left k-focus">
                             <span class="k-fab-item-text">Focus</span>
-                            <i is="Icon" class="k-fab-item-icon" name="pencil"></i>
+                            <span class="k-fab-item-icon k-icon k-i-pencil"></span>
                         </li>
                         <li class="k-fab-item k-text-left k-active">
                             <span class="k-fab-item-text">Active</span>
-                            <i is="Icon" class="k-fab-item-icon" name="pencil"></i>
+                            <span class="k-fab-item-icon k-icon k-i-pencil"></span>
                         </li>
                     </ul>
                 </div>

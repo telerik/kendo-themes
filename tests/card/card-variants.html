@@ -1,85 +1,102 @@
 <!doctype html>
-<html lang="en" class="k-no-animations">
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width:15px;">
 <head>
-    <title>Card variants</title>
+    <title>Card Variants</title>
     <meta charset="utf-8">
     <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
     <link rel="stylesheet" href="/packages/html/assets/styles.css">
     <script src="/packages/html/assets/scripts.js"></script>
-    <script src="/packages/html/dist/index.js"></script>
 </head>
 <body id="app" class="k-body">
-    <style>
-        #test-area {
-            grid-template-columns: repeat(3, 1fr);
-        }
-
-    </style>
-    <div id="test-area" class="grid">
+    <div id="test-area" class="k-d-grid k-grid-cols-3">
         <div class="k-card">
             <div class="k-card-body">
-                <h5 class="k-card-title">Card Title</h5>
-                <h6 class="k-card-subtitle">Card Subtitle</h6>
+                <div class="k-card-title">Card Title</div>
+                <div class="k-card-subtitle">Card Subtitle</div>
                 <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             </div>
-            <div is="ActionButtons" class="k-card-actions">
-                <button is="Button" fillMode="flat" themeColor="primary">Action 1</button>
-                <button is="Button" fillMode="flat" themeColor="primary">Action 2</button>
+            <div class="k-actions k-actions-start k-actions-horizontal k-card-actions">
+                <button class="k-button k-button-md k-button-flat k-button-flat-primary k-rounded-md">
+                    <span class="k-button-text">Action 1</span>
+                </button>
+                <button class="k-button k-button-md k-button-flat k-button-flat-primary k-rounded-md">
+                    <span class="k-button-text">Action 2</span>
+                </button>
             </div>
         </div>
         <div class="k-card k-card-primary">
             <div class="k-card-body">
-                <h5 class="k-card-title">Card Title Primary</h5>
-                <h6 class="k-card-subtitle">Card Subtitle</h6>
+                <div class="k-card-title">Card Title Primary</div>
+                <div class="k-card-subtitle">Card Subtitle</div>
                 <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             </div>
-            <div is="ActionButtons" class="k-card-actions">
-                <button is="Button" fillMode="flat" themeColor="primary">Action 1</button>
-                <button is="Button" fillMode="flat" themeColor="primary">Action 2</button>
+            <div class="k-actions k-actions-start k-actions-horizontal k-card-actions">
+                <button class="k-button k-button-md k-button-flat k-button-flat-primary k-rounded-md">
+                    <span class="k-button-text">Action 1</span>
+                </button>
+                <button class="k-button k-button-md k-button-flat k-button-flat-primary k-rounded-md">
+                    <span class="k-button-text">Action 2</span>
+                </button>
             </div>
         </div>
         <div class="k-card k-card-info">
             <div class="k-card-body">
-                <h5 class="k-card-title">Card Title Info</h5>
-                <h6 class="k-card-subtitle">Card Subtitle</h6>
+                <div class="k-card-title">Card Title Info</div>
+                <div class="k-card-subtitle">Card Subtitle</div>
                 <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             </div>
-            <div is="ActionButtons" class="k-card-actions">
-                <button is="Button" fillMode="flat" themeColor="primary">Action 1</button>
-                <button is="Button" fillMode="flat" themeColor="primary">Action 2</button>
+            <div class="k-actions k-actions-start k-actions-horizontal k-card-actions">
+                <button class="k-button k-button-md k-button-flat k-button-flat-primary k-rounded-md">
+                    <span class="k-button-text">Action 1</span>
+                </button>
+                <button class="k-button k-button-md k-button-flat k-button-flat-primary k-rounded-md">
+                    <span class="k-button-text">Action 2</span>
+                </button>
             </div>
         </div>
         <div class="k-card k-card-success">
             <div class="k-card-body">
-                <h5 class="k-card-title">Card Title Success</h5>
-                <h6 class="k-card-subtitle">Card Subtitle</h6>
+                <div class="k-card-title">Card Title Success</div>
+                <div class="k-card-subtitle">Card Subtitle</div>
                 <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             </div>
-            <div is="ActionButtons" class="k-card-actions">
-                <button is="Button" fillMode="flat" themeColor="primary">Action 1</button>
-                <button is="Button" fillMode="flat" themeColor="primary">Action 2</button>
+            <div class="k-actions k-actions-start k-actions-horizontal k-card-actions">
+                <button class="k-button k-button-md k-button-flat k-button-flat-primary k-rounded-md">
+                    <span class="k-button-text">Action 1</span>
+                </button>
+                <button class="k-button k-button-md k-button-flat k-button-flat-primary k-rounded-md">
+                    <span class="k-button-text">Action 2</span>
+                </button>
             </div>
         </div>
         <div class="k-card k-card-warning">
             <div class="k-card-body">
-                <h5 class="k-card-title">Card Title Warning</h5>
-                <h6 class="k-card-subtitle">Card Subtitle</h6>
+                <div class="k-card-title">Card Title Warning</div>
+                <div class="k-card-subtitle">Card Subtitle</div>
                 <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             </div>
-            <div is="ActionButtons" class="k-card-actions">
-                <button is="Button" fillMode="flat" themeColor="primary">Action 1</button>
-                <button is="Button" fillMode="flat" themeColor="primary">Action 2</button>
+            <div class="k-actions k-actions-start k-actions-horizontal k-card-actions">
+                <button class="k-button k-button-md k-button-flat k-button-flat-primary k-rounded-md">
+                    <span class="k-button-text">Action 1</span>
+                </button>
+                <button class="k-button k-button-md k-button-flat k-button-flat-primary k-rounded-md">
+                    <span class="k-button-text">Action 2</span>
+                </button>
             </div>
         </div>
         <div class="k-card k-card-error">
             <div class="k-card-body">
-                <h5 class="k-card-title">Card Title Error</h5>
-                <h6 class="k-card-subtitle">Card Subtitle</h6>
+                <div class="k-card-title">Card Title Error</div>
+                <div class="k-card-subtitle">Card Subtitle</div>
                 <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             </div>
-            <div is="ActionButtons" class="k-card-actions">
-                <button is="Button" fillMode="flat" themeColor="primary">Action 1</button>
-                <button is="Button" fillMode="flat" themeColor="primary">Action 2</button>
+            <div class="k-actions k-actions-start k-actions-horizontal k-card-actions">
+                <button class="k-button k-button-md k-button-flat k-button-flat-primary k-rounded-md">
+                    <span class="k-button-text">Action 1</span>
+                </button>
+                <button class="k-button k-button-md k-button-flat k-button-flat-primary k-rounded-md">
+                    <span class="k-button-text">Action 2</span>
+                </button>
             </div>
         </div>
     </div>

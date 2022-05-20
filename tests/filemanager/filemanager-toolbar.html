@@ -1,37 +1,62 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width:15px;">
 <head>
-    <title>File Manager Toolbar</title>
+    <title>FileManager ToolBar</title>
     <meta charset="utf-8">
     <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
     <link rel="stylesheet" href="/packages/html/assets/styles.css">
     <script src="/packages/html/assets/scripts.js"></script>
-    <script src="/packages/html/dist/index.js"></script>
 </head>
 <body id="app" class="k-body">
-    <div id="test-area" class="grid k-grid-cols-1">
+    <div id="test-area" class="k-d-grid k-grid-cols-1">
         <span>Full toolbar</span>
         <div class="k-widget k-filemanager">
-            <!-- Header -->
             <div class="k-filemanager-header">
                 <div class="k-filemanager-toolbar k-toolbar k-widget">
-                    <button is="Button">New Folder</button>
-                    <button is="Button">Upload</button>
-                    <div class="k-button-group">
-                        <button is="Button" icon="sort-asc-sm"></button>
-                        <button is="Button" icon="sort-desc-sm"></button>
+                    <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                        <span class="k-button-text">New Folder</span>
+                    </button>
+                    <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                        <span class="k-button-text">Upload</span>
+                    </button>
+                    <div class="k-button-group k-button-group-solid">
+                        <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                            <span class="k-button-icon k-icon k-i-sort-asc-sm"></span>
+                        </button>
+                        <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                            <span class="k-button-icon k-icon k-i-sort-desc-sm"></span>
+                        </button>
                     </div>
-                    <button is="SplitButton">Sort By</button>
-                    <div class="k-button-group">
-                        <button is="Button" icon="grid-layout"></button>
-                        <button is="Button" icon="grid"></button>
+                    <div class="k-split-button k-button-group k-rounded-md">
+                        <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                            <span class="k-button-text">Sort By</span>
+                        </button>
+                        <button class="k-split-button-arrow k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                            <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                        </button>
+                    </div>
+                    <div class="k-button-group k-button-group-solid">
+                        <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                            <span class="k-button-icon k-icon k-i-grid-layout"></span>
+                        </button>
+                        <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                            <span class="k-button-icon k-icon k-i-grid"></span>
+                        </button>
                     </div>
                     <div class="k-spacer"></div>
                     <div class="k-filemanager-details-toggle">
                         <label>View Details</label>
-                        <input is="Switch" checked />
+                        <span class="k-switch k-switch-md k-switch-on">
+                            <span class="k-switch-track k-rounded-full"></span>
+                            <span class="k-switch-thumb-wrap">
+                                <span class="k-switch-thumb k-rounded-full"></span>
+                            </span>
+                        </span>
                     </div>
-                    <input is="Searchbox" class="k-filemanager-search-tool" placeholder="Search..." />
+                    <span class="k-filemanager-search-tool k-searchbox k-input k-input-md k-input-solid k-rounded-md">
+                        <span class="k-input-icon k-icon k-i-search"></span>
+                        <input type="text" class="k-input-inner" placeholder="Search..." autocomplete="off" value="">
+                    </span>
                 </div>
             </div>
         </div>

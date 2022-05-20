@@ -1,23 +1,24 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width:15px;">
 <head>
     <title>Spreadsheet</title>
     <meta charset="utf-8">
     <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
     <link rel="stylesheet" href="/packages/html/assets/styles.css">
     <script src="/packages/html/assets/scripts.js"></script>
-    <script src="/packages/html/dist/index.js"></script>
 </head>
 <body id="app" class="k-body">
     <style>
         .k-spreadsheet-view {
             overflow: hidden;
         }
+
         .k-spreadsheet-fixed-container {
             width: calc(100% - var(--kendo-scrollbar-width, 0));
             height: calc(100% - var(--kendo-scrollbar-width, 0));
             overflow: hidden;
         }
+
         .k-spreadsheet-cell {
             white-space: normal;
         }
@@ -27,11 +28,15 @@
         }
     </style>
     <div id="test-area">
-        <div style="width: 100%;" class="k-widget k-spreadsheet">
+        <div class="k-widget k-spreadsheet" style="width: 100%;">
             <div class="k-tabstrip-wrapper">
                 <div class="k-spreadsheet-quick-access-toolbar">
-                    <button is="Button" icon="undo"></button>
-                    <button is="Button" icon="redo"></button>
+                    <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                        <span class="k-button-icon k-icon k-i-undo"></span>
+                    </button>
+                    <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                        <span class="k-button-icon k-icon k-i-redo"></span>
+                    </button>
                 </div>
                 <div class="k-widget k-header k-tabstrip k-floatwrap k-tabstrip-top k-spreadsheet-tabstrip">
                     <div class="k-tabstrip-items-wrapper k-hstack">
@@ -52,72 +57,156 @@
                     </div>
                     <div class="k-tabstrip-content k-state-active" style="display: block;">
                         <div class="k-toolbar k-widget k-toolbar-resizable k-spreadsheet-toolbar">
-                            <button is="Button" icon="folder-open" class="k-upload-button"></button>
-                            <button is="Button" icon="download"></button>
+                            <button class="k-upload-button k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                                <span class="k-button-icon k-icon k-i-folder-open"></span>
+                            </button>
+                            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                                <span class="k-button-icon k-icon k-i-download"></span>
+                            </button>
                             <span class="k-separator"></span>
                             <div class="k-button-group">
-                                <button is="Button" icon="cut"></button>
-                                <button is="Button" icon="copy"></button>
-                                <button is="Button" icon="paste"></button>
+                                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                                    <span class="k-button-icon k-icon k-i-cut"></span>
+                                </button>
+                                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                                    <span class="k-button-icon k-icon k-i-copy"></span>
+                                </button>
+                                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                                    <span class="k-button-icon k-icon k-i-paste"></span>
+                                </button>
                             </div>
                             <span class="k-separator"></span>
                             <div class="k-button-group">
-                                <button is="Button" icon="bold"></button>
-                                <button is="Button" icon="italic"></button>
-                                <button is="Button" icon="underline"></button>
+                                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                                    <span class="k-button-icon k-icon k-i-bold"></span>
+                                </button>
+                                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                                    <span class="k-button-icon k-icon k-i-italic"></span>
+                                </button>
+                                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                                    <span class="k-button-icon k-icon k-i-underline"></span>
+                                </button>
                             </div>
                             <span class="k-separator"></span>
-                            <button is="Button" icon="link-horizontal"></button>
+                            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                                <span class="k-button-icon k-icon k-i-link-horizontal"></span>
+                            </button>
                             <span class="k-separator"></span>
-                            <button is="Button" icon="comment"></button>
+                            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                                <span class="k-button-icon k-icon k-i-comment"></span>
+                            </button>
                             <span class="k-separator"></span>
-                            <button is="MenuButton" icon="paint" showArrow></button>
+                            <button class="k-menu-button k-icon-button k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                                <span class="k-button-icon k-icon k-i-paint"></span>
+                                <span class="k-menu-button-arrow k-button-arrow">
+                                    <span class="k-icon k-i-arrow-s"></span>
+                                </span>
+                            </button>
                             <span class="k-separator"></span>
-                            <button is="MenuButton" icon="foreground-color" showArrow></button>
+                            <button class="k-menu-button k-icon-button k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                                <span class="k-button-icon k-icon k-i-foreground-color"></span>
+                                <span class="k-menu-button-arrow k-button-arrow">
+                                    <span class="k-icon k-i-arrow-s"></span>
+                                </span>
+                            </button>
                             <span class="k-separator"></span>
-                            <button is="MenuButton" icon="borders-all" showArrow></button>
+                            <button class="k-menu-button k-icon-button k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                                <span class="k-button-icon k-icon k-i-borders-all"></span>
+                                <span class="k-menu-button-arrow k-button-arrow">
+                                    <span class="k-icon k-i-arrow-s"></span>
+                                </span>
+                            </button>
                             <span class="k-separator"></span>
-                            <input is="Combobox" placeholder="Combobox..." />
+                            <span class="k-combobox k-input k-input-md k-input-solid k-rounded-md">
+                                <input type="text" class="k-input-inner" placeholder="Combobox..." autocomplete="off" value="">
+                                <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                    <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                                </button>
+                            </span>
                             <span class="k-separator"></span>
-                            <input is="DropdownList" value="Arial" />
+                            <span class="k-dropdown k-picker k-picker-md k-picker-solid k-rounded-md">
+                                <span class="k-input-inner">
+                                    <span class="k-input-value-text">Arial</span>
+                                </span>
+                                <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                    <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                                </button>
+                            </span>
                             <span class="k-separator"></span>
-                            <button is="MenuButton" icon="align-left" showArrow></button>
+                            <button class="k-menu-button k-icon-button k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                                <span class="k-button-icon k-icon k-i-align-left"></span>
+                                <span class="k-menu-button-arrow k-button-arrow">
+                                    <span class="k-icon k-i-arrow-s"></span>
+                                </span>
+                            </button>
                             <span class="k-separator"></span>
-                            <button is="Button" icon="text-wrap"></button>
+                            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                                <span class="k-button-icon k-icon k-i-text-wrap"></span>
+                            </button>
                             <span class="k-separator"></span>
                             <div class="k-button-group">
-                                <button is="Button" icon="decimal-decrease"></button>
-                                <button is="Button" icon="decimal-increase"></button>
+                                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                                    <span class="k-button-icon k-icon k-i-decimal-decrease"></span>
+                                </button>
+                                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                                    <span class="k-button-icon k-icon k-i-decimal-increase"></span>
+                                </button>
                             </div>
                             <span class="k-separator"></span>
-                            <input is="DropdownList" value="Custom format" showValue="false" valueIconName="custom-format" />
+                            <span class="k-dropdown k-icon-picker k-picker k-picker-md k-picker-solid k-rounded-md">
+                                <span class="k-input-inner">
+                                    <span class="k-input-value-icon k-icon k-i-custom-format"></span>
+                                </span>
+                                <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                    <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                                </button>
+                            </span>
                             <span class="k-separator"></span>
-                            <button is="MenuButton" icon="cells-merge" showArrow></button>
+                            <button class="k-menu-button k-icon-button k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                                <span class="k-button-icon k-icon k-i-cells-merge"></span>
+                                <span class="k-menu-button-arrow k-button-arrow">
+                                    <span class="k-icon k-i-arrow-s"></span>
+                                </span>
+                            </button>
                             <span class="k-separator"></span>
-                            <button is="MenuButton" icon="pane-freeze" showArrow></button>
+                            <button class="k-menu-button k-icon-button k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                                <span class="k-button-icon k-icon k-i-pane-freeze"></span>
+                                <span class="k-menu-button-arrow k-button-arrow">
+                                    <span class="k-icon k-i-arrow-s"></span>
+                                </span>
+                            </button>
                             <span class="k-separator"></span>
-                            <button is="Button" icon="filter"></button>
+                            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                                <span class="k-button-icon k-icon k-i-filter"></span>
+                            </button>
                             <span class="k-separator"></span>
-                            <button is="Button" icon="border-no"></button>
+                            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                                <span class="k-button-icon k-icon k-i-border-no"></span>
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="k-spreadsheet-action-bar">
                 <div class="k-spreadsheet-name-editor">
-                    <input is="Combobox" placeholder="Combobox..." />
+                    <span class="k-combobox k-input k-input-md k-input-solid k-rounded-md">
+                        <input type="text" class="k-input-inner" placeholder="Combobox..." autocomplete="off" value="">
+                        <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                            <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                        </button>
+                    </span>
                 </div>
                 <div class="k-spreadsheet-formula-bar">
-                    <i is="Icon" name="formula-fx"></i>
-                    <div class="k-spreadsheet-formula-input k-spreadsheet-array-formula">
+                    <span class="k-icon k-i-formula-fx"></span>
+                    <div class="k-spreadsheet-formula-input k-spreadsheet-array-formula" style="white-space: pre;">
                         <span class="k-syntax-startexp k-syntax-at-point">=</span>
                         <span class="k-syntax-func">Product</span>
                         <span class="k-syntax-punc">(</span>
                         <span class="k-syntax-ref k-series-a">C3:C11</span>
                         <span class="k-syntax-punc">)</span>
                     </div>
-                    <div class="k-widget k-tooltip" style="position:absolute; display:none">A1</div>
-                    <div class="k-group-header" style="display:none"></div>
+                    <div class="k-widget k-tooltip" style="position: absolute; display: none;">A1</div>
+                    <div class="k-group-header" style="display: none;"></div>
                     <div class="k-list-scroller"></div>
                 </div>
             </div>
@@ -172,8 +261,7 @@
                             <div class="k-spreadsheet-cell" style="outline: rgb(150, 193, 230) solid 1px; background-color: rgb(167, 214, 255); color: rgb(0, 62, 117); font-family: Arial; text-align: center; font-size: 12px; left: 661px; top: 71px; width: 154px; height: 24px;">
                                 <div class="k-vertical-align-bottom">Amount</div>
                             </div>
-                            <div class="k-spreadsheet-cell" style="outline: rgb(150, 193, 230) solid 1px; background-color: rgb(167, 214, 255); color: rgb(0, 62, 117); font-family: Arial; font-size: 12px; left: 816px; top: 71px; width: 63px; height: 24px;">
-                            </div>
+                            <div class="k-spreadsheet-cell" style="outline: rgb(150, 193, 230) solid 1px; background-color: rgb(167, 214, 255); color: rgb(0, 62, 117); font-family: Arial; font-size: 12px; left: 816px; top: 71px; width: 63px; height: 24px;"></div>
                             <div class="k-spreadsheet-cell" style="outline: rgb(230, 230, 230) solid 1px; background-color: rgb(255, 255, 255); color: rgb(0, 62, 117); font-family: Arial; text-align: center; font-size: 12px; left: 1px; top: 96px; width: 99px; height: 19px;">
                                 <div class="k-vertical-align-bottom">216321</div>
                             </div>
@@ -225,8 +313,7 @@
                                     <span>$21.10</span>
                                 </div>
                             </div>
-                            <div class="k-spreadsheet-cell" style="outline: rgb(206, 219, 230) solid 1px; background-color: rgb(229, 243, 255); color: rgb(0, 62, 117); font-family: Arial; font-size: 12px; left: 816px; top: 116px; width: 63px; height: 19px;">
-                            </div>
+                            <div class="k-spreadsheet-cell" style="outline: rgb(206, 219, 230) solid 1px; background-color: rgb(229, 243, 255); color: rgb(0, 62, 117); font-family: Arial; font-size: 12px; left: 816px; top: 116px; width: 63px; height: 19px;"></div>
                             <div class="k-spreadsheet-cell" style="outline: rgb(230, 230, 230) solid 1px; background-color: rgb(255, 255, 255); color: rgb(0, 62, 117); font-family: Arial; text-align: center; font-size: 12px; left: 1px; top: 136px; width: 99px; height: 19px;">
                                 <div class="k-vertical-align-bottom">456231</div>
                             </div>
@@ -251,8 +338,7 @@
                                     <span>$16.79</span>
                                 </div>
                             </div>
-                            <div class="k-spreadsheet-cell" style="outline: rgb(230, 230, 230) solid 1px; background-color: rgb(255, 255, 255); color: rgb(0, 62, 117); font-family: Arial; font-size: 12px; left: 816px; top: 136px; width: 63px; height: 19px;">
-                            </div>
+                            <div class="k-spreadsheet-cell" style="outline: rgb(230, 230, 230) solid 1px; background-color: rgb(255, 255, 255); color: rgb(0, 62, 117); font-family: Arial; font-size: 12px; left: 816px; top: 136px; width: 63px; height: 19px;"></div>
                             <div class="k-spreadsheet-cell" style="outline: rgb(206, 219, 230) solid 1px; background-color: rgb(229, 243, 255); color: rgb(0, 62, 117); font-family: Arial; text-align: center; font-size: 12px; left: 1px; top: 156px; width: 99px; height: 19px;">
                                 <div class="k-vertical-align-bottom">455873</div>
                             </div>
@@ -277,8 +363,7 @@
                                     <span>$11.39</span>
                                 </div>
                             </div>
-                            <div class="k-spreadsheet-cell" style="outline: rgb(206, 219, 230) solid 1px; background-color: rgb(229, 243, 255); color: rgb(0, 62, 117); font-family: Arial; font-size: 12px; left: 816px; top: 156px; width: 63px; height: 19px;">
-                            </div>
+                            <div class="k-spreadsheet-cell" style="outline: rgb(206, 219, 230) solid 1px; background-color: rgb(229, 243, 255); color: rgb(0, 62, 117); font-family: Arial; font-size: 12px; left: 816px; top: 156px; width: 63px; height: 19px;"></div>
                             <div class="k-spreadsheet-cell" style="outline: rgb(230, 230, 230) solid 1px; background-color: rgb(255, 255, 255); color: rgb(0, 62, 117); font-family: Arial; text-align: center; font-size: 12px; left: 1px; top: 176px; width: 99px; height: 19px;">
                                 <div class="k-vertical-align-bottom">456892</div>
                             </div>
@@ -303,8 +388,7 @@
                                     <span>$41.36</span>
                                 </div>
                             </div>
-                            <div class="k-spreadsheet-cell" style="outline: rgb(230, 230, 230) solid 1px; background-color: rgb(255, 255, 255); color: rgb(0, 62, 117); font-family: Arial; font-size: 12px; left: 816px; top: 176px; width: 63px; height: 19px;">
-                            </div>
+                            <div class="k-spreadsheet-cell" style="outline: rgb(230, 230, 230) solid 1px; background-color: rgb(255, 255, 255); color: rgb(0, 62, 117); font-family: Arial; font-size: 12px; left: 816px; top: 176px; width: 63px; height: 19px;"></div>
                             <div class="k-spreadsheet-cell" style="outline: rgb(206, 219, 230) solid 1px; background-color: rgb(229, 243, 255); color: rgb(0, 62, 117); font-family: Arial; text-align: center; font-size: 12px; left: 1px; top: 196px; width: 99px; height: 19px;">
                                 <div class="k-vertical-align-bottom">546564</div>
                             </div>
@@ -329,8 +413,7 @@
                                     <span>$13.19</span>
                                 </div>
                             </div>
-                            <div class="k-spreadsheet-cell" style="outline: rgb(206, 219, 230) solid 1px; background-color: rgb(229, 243, 255); color: rgb(0, 62, 117); font-family: Arial; font-size: 12px; left: 816px; top: 196px; width: 63px; height: 19px;">
-                            </div>
+                            <div class="k-spreadsheet-cell" style="outline: rgb(206, 219, 230) solid 1px; background-color: rgb(229, 243, 255); color: rgb(0, 62, 117); font-family: Arial; font-size: 12px; left: 816px; top: 196px; width: 63px; height: 19px;"></div>
                             <div class="k-spreadsheet-cell" style="outline: rgb(230, 230, 230) solid 1px; background-color: rgb(255, 255, 255); color: rgb(0, 62, 117); font-family: Arial; text-align: center; font-size: 12px; left: 1px; top: 216px; width: 99px; height: 19px;">
                                 <div class="k-vertical-align-bottom">789455</div>
                             </div>
@@ -355,8 +438,7 @@
                                     <span>$41.94</span>
                                 </div>
                             </div>
-                            <div class="k-spreadsheet-cell" style="outline: rgb(230, 230, 230) solid 1px; background-color: rgb(255, 255, 255); color: rgb(0, 62, 117); font-family: Arial; font-size: 12px; left: 816px; top: 216px; width: 63px; height: 19px;">
-                            </div>
+                            <div class="k-spreadsheet-cell" style="outline: rgb(230, 230, 230) solid 1px; background-color: rgb(255, 255, 255); color: rgb(0, 62, 117); font-family: Arial; font-size: 12px; left: 816px; top: 216px; width: 63px; height: 19px;"></div>
                             <div class="k-spreadsheet-cell" style="outline: rgb(206, 219, 230) solid 1px; background-color: rgb(229, 243, 255); color: rgb(0, 62, 117); font-family: Arial; text-align: center; font-size: 12px; left: 1px; top: 236px; width: 99px; height: 19px;">
                                 <div class="k-vertical-align-bottom">123002</div>
                             </div>
@@ -381,8 +463,7 @@
                                     <span>$23.95</span>
                                 </div>
                             </div>
-                            <div class="k-spreadsheet-cell" style="outline: rgb(206, 219, 230) solid 1px; background-color: rgb(229, 243, 255); color: rgb(0, 62, 117); font-family: Arial; font-size: 12px; left: 816px; top: 236px; width: 63px; height: 19px;">
-                            </div>
+                            <div class="k-spreadsheet-cell" style="outline: rgb(206, 219, 230) solid 1px; background-color: rgb(229, 243, 255); color: rgb(0, 62, 117); font-family: Arial; font-size: 12px; left: 816px; top: 236px; width: 63px; height: 19px;"></div>
                             <div class="k-spreadsheet-cell" style="outline: rgb(230, 230, 230) solid 1px; background-color: rgb(255, 255, 255); color: rgb(0, 62, 117); font-family: Arial; text-align: center; font-size: 12px; left: 1px; top: 256px; width: 99px; height: 19px;">
                                 <div class="k-vertical-align-bottom">564896</div>
                             </div>
@@ -407,31 +488,19 @@
                                     <span>$16.16</span>
                                 </div>
                             </div>
-                            <div class="k-spreadsheet-cell" style="outline: rgb(230, 230, 230) solid 1px; background-color: rgb(255, 255, 255); color: rgb(0, 62, 117); font-family: Arial; font-size: 12px; left: 816px; top: 256px; width: 63px; height: 19px;">
-                            </div>
-                            <div class="k-spreadsheet-cell" style="outline: rgb(206, 219, 230) solid 1px; background-color: rgb(229, 243, 255); color: rgb(0, 62, 117); font-family: Arial; font-size: 12px; left: 1px; top: 276px; width: 99px; height: 19px;">
-                            </div>
-                            <div class="k-spreadsheet-cell" style="outline: rgb(206, 219, 230) solid 1px; background-color: rgb(229, 243, 255); color: rgb(0, 62, 117); font-family: Arial; font-size: 12px; left: 101px; top: 276px; width: 214px; height: 19px;">
-                            </div>
-                            <div class="k-spreadsheet-cell" style="outline: rgb(206, 219, 230) solid 1px; background-color: rgb(229, 243, 255); color: rgb(0, 62, 117); font-family: Arial; font-size: 12px; left: 316px; top: 276px; width: 114px; height: 19px;">
-                            </div>
-                            <div class="k-spreadsheet-cell" style="outline: rgb(206, 219, 230) solid 1px; background-color: rgb(229, 243, 255); color: rgb(0, 62, 117); font-family: Arial; font-size: 12px; left: 431px; top: 276px; width: 114px; height: 19px;">
-                            </div>
-                            <div class="k-spreadsheet-cell" style="outline: rgb(206, 219, 230) solid 1px; background-color: rgb(229, 243, 255); color: rgb(0, 62, 117); font-family: Arial; font-size: 12px; left: 546px; top: 276px; width: 114px; height: 19px;">
-                            </div>
-                            <div class="k-spreadsheet-cell" style="outline: rgb(206, 219, 230) solid 1px; background-color: rgb(229, 243, 255); color: rgb(0, 62, 117); font-family: Arial; font-size: 12px; left: 661px; top: 276px; width: 154px; height: 19px;">
-                            </div>
-                            <div class="k-spreadsheet-cell" style="outline: rgb(206, 219, 230) solid 1px; background-color: rgb(229, 243, 255); color: rgb(0, 62, 117); font-family: Arial; font-size: 12px; left: 816px; top: 276px; width: 63px; height: 19px;">
-                            </div>
-                            <div class="k-spreadsheet-cell" style="outline: rgb(230, 230, 230) solid 1px; background-color: rgb(255, 255, 255); color: rgb(0, 62, 117); font-family: Arial; font-size: 12px; left: 1px; top: 296px; width: 99px; height: 19px;">
-                            </div>
-                            <div class="k-spreadsheet-cell" style="outline: rgb(230, 230, 230) solid 1px; background-color: rgb(255, 255, 255); color: rgb(0, 62, 117); font-family: Arial; font-size: 12px; left: 101px; top: 296px; width: 214px; height: 19px;">
-                            </div>
-                            <div class="k-spreadsheet-cell k-spreadsheet-drawing-anchor-cell" style="outline: rgb(230, 230, 230) solid 1px; color: rgb(0, 62, 117); font-family: Arial; font-size: 12px; left: 316px; top: 296px; width: 114px; height: 19px;">
-                            </div>
+                            <div class="k-spreadsheet-cell" style="outline: rgb(230, 230, 230) solid 1px; background-color: rgb(255, 255, 255); color: rgb(0, 62, 117); font-family: Arial; font-size: 12px; left: 816px; top: 256px; width: 63px; height: 19px;"></div>
+                            <div class="k-spreadsheet-cell" style="outline: rgb(206, 219, 230) solid 1px; background-color: rgb(229, 243, 255); color: rgb(0, 62, 117); font-family: Arial; font-size: 12px; left: 1px; top: 276px; width: 99px; height: 19px;"></div>
+                            <div class="k-spreadsheet-cell" style="outline: rgb(206, 219, 230) solid 1px; background-color: rgb(229, 243, 255); color: rgb(0, 62, 117); font-family: Arial; font-size: 12px; left: 101px; top: 276px; width: 214px; height: 19px;"></div>
+                            <div class="k-spreadsheet-cell" style="outline: rgb(206, 219, 230) solid 1px; background-color: rgb(229, 243, 255); color: rgb(0, 62, 117); font-family: Arial; font-size: 12px; left: 316px; top: 276px; width: 114px; height: 19px;"></div>
+                            <div class="k-spreadsheet-cell" style="outline: rgb(206, 219, 230) solid 1px; background-color: rgb(229, 243, 255); color: rgb(0, 62, 117); font-family: Arial; font-size: 12px; left: 431px; top: 276px; width: 114px; height: 19px;"></div>
+                            <div class="k-spreadsheet-cell" style="outline: rgb(206, 219, 230) solid 1px; background-color: rgb(229, 243, 255); color: rgb(0, 62, 117); font-family: Arial; font-size: 12px; left: 546px; top: 276px; width: 114px; height: 19px;"></div>
+                            <div class="k-spreadsheet-cell" style="outline: rgb(206, 219, 230) solid 1px; background-color: rgb(229, 243, 255); color: rgb(0, 62, 117); font-family: Arial; font-size: 12px; left: 661px; top: 276px; width: 154px; height: 19px;"></div>
+                            <div class="k-spreadsheet-cell" style="outline: rgb(206, 219, 230) solid 1px; background-color: rgb(229, 243, 255); color: rgb(0, 62, 117); font-family: Arial; font-size: 12px; left: 816px; top: 276px; width: 63px; height: 19px;"></div>
+                            <div class="k-spreadsheet-cell" style="outline: rgb(230, 230, 230) solid 1px; background-color: rgb(255, 255, 255); color: rgb(0, 62, 117); font-family: Arial; font-size: 12px; left: 1px; top: 296px; width: 99px; height: 19px;"></div>
+                            <div class="k-spreadsheet-cell" style="outline: rgb(230, 230, 230) solid 1px; background-color: rgb(255, 255, 255); color: rgb(0, 62, 117); font-family: Arial; font-size: 12px; left: 101px; top: 296px; width: 214px; height: 19px;"></div>
+                            <div class="k-spreadsheet-cell k-spreadsheet-drawing-anchor-cell" style="outline: rgb(230, 230, 230) solid 1px; color: rgb(0, 62, 117); font-family: Arial; font-size: 12px; left: 316px; top: 296px; width: 114px; height: 19px;"></div>
                             <div class="k-spreadsheet-drawing k-spreadsheet-active-drawing" style="width: 53px; height: 40px; top: 305px; left: 350px;">
-                                <div class="k-spreadsheet-drawing-image" style="background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhgGAWjR9awAAAABJRU5ErkJggg==); opacity: 1;">
-                                </div>
+                                <div class="k-spreadsheet-drawing-image" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhgGAWjR9awAAAABJRU5ErkJggg==&quot;); opacity: 1;"></div>
                                 <div class="k-spreadsheet-drawing-handle N"></div>
                                 <div class="k-spreadsheet-drawing-handle NE"></div>
                                 <div class="k-spreadsheet-drawing-handle E"></div>
@@ -441,22 +510,14 @@
                                 <div class="k-spreadsheet-drawing-handle W"></div>
                                 <div class="k-spreadsheet-drawing-handle NW"></div>
                             </div>
-                            <div class="k-spreadsheet-cell" style="outline: rgb(230, 230, 230) solid 1px; background-color: rgb(255, 255, 255); color: rgb(0, 62, 117); font-family: Arial; font-size: 12px; left: 431px; top: 296px; width: 114px; height: 19px;">
-                            </div>
-                            <div class="k-spreadsheet-cell" style="outline: rgb(230, 230, 230) solid 1px; background-color: rgb(255, 255, 255); color: rgb(0, 62, 117); font-family: Arial; font-size: 12px; left: 546px; top: 296px; width: 114px; height: 19px;">
-                            </div>
-                            <div class="k-spreadsheet-cell" style="outline: rgb(230, 230, 230) solid 1px; background-color: rgb(255, 255, 255); color: rgb(0, 62, 117); font-family: Arial; font-size: 12px; left: 661px; top: 296px; width: 154px; height: 19px;">
-                            </div>
-                            <div class="k-spreadsheet-cell" style="outline: rgb(230, 230, 230) solid 1px; background-color: rgb(255, 255, 255); color: rgb(0, 62, 117); font-family: Arial; font-size: 12px; left: 816px; top: 296px; width: 63px; height: 19px;">
-                            </div>
-                            <div class="k-spreadsheet-cell" style="outline: rgb(174, 203, 230) solid 1px; background-color: rgb(193, 226, 255); color: rgb(0, 62, 117); font-family: Arial; font-size: 12px; left: 1px; top: 316px; width: 99px; height: 24px;">
-                            </div>
-                            <div class="k-spreadsheet-cell" style="outline: rgb(174, 203, 230) solid 1px; background-color: rgb(193, 226, 255); color: rgb(0, 62, 117); font-family: Arial; font-size: 12px; left: 101px; top: 316px; width: 214px; height: 24px;">
-                            </div>
-                            <div class="k-spreadsheet-cell" style="outline: rgb(174, 203, 230) solid 1px; background-color: rgb(193, 226, 255); color: rgb(0, 62, 117); font-family: Arial; font-size: 12px; left: 316px; top: 316px; width: 114px; height: 24px;">
-                            </div>
-                            <div class="k-spreadsheet-cell" style="outline: rgb(174, 203, 230) solid 1px; background-color: rgb(193, 226, 255); color: rgb(0, 62, 117); font-family: Arial; font-size: 12px; left: 431px; top: 316px; width: 114px; height: 24px;">
-                            </div>
+                            <div class="k-spreadsheet-cell" style="outline: rgb(230, 230, 230) solid 1px; background-color: rgb(255, 255, 255); color: rgb(0, 62, 117); font-family: Arial; font-size: 12px; left: 431px; top: 296px; width: 114px; height: 19px;"></div>
+                            <div class="k-spreadsheet-cell" style="outline: rgb(230, 230, 230) solid 1px; background-color: rgb(255, 255, 255); color: rgb(0, 62, 117); font-family: Arial; font-size: 12px; left: 546px; top: 296px; width: 114px; height: 19px;"></div>
+                            <div class="k-spreadsheet-cell" style="outline: rgb(230, 230, 230) solid 1px; background-color: rgb(255, 255, 255); color: rgb(0, 62, 117); font-family: Arial; font-size: 12px; left: 661px; top: 296px; width: 154px; height: 19px;"></div>
+                            <div class="k-spreadsheet-cell" style="outline: rgb(230, 230, 230) solid 1px; background-color: rgb(255, 255, 255); color: rgb(0, 62, 117); font-family: Arial; font-size: 12px; left: 816px; top: 296px; width: 63px; height: 19px;"></div>
+                            <div class="k-spreadsheet-cell" style="outline: rgb(174, 203, 230) solid 1px; background-color: rgb(193, 226, 255); color: rgb(0, 62, 117); font-family: Arial; font-size: 12px; left: 1px; top: 316px; width: 99px; height: 24px;"></div>
+                            <div class="k-spreadsheet-cell" style="outline: rgb(174, 203, 230) solid 1px; background-color: rgb(193, 226, 255); color: rgb(0, 62, 117); font-family: Arial; font-size: 12px; left: 101px; top: 316px; width: 214px; height: 24px;"></div>
+                            <div class="k-spreadsheet-cell" style="outline: rgb(174, 203, 230) solid 1px; background-color: rgb(193, 226, 255); color: rgb(0, 62, 117); font-family: Arial; font-size: 12px; left: 316px; top: 316px; width: 114px; height: 24px;"></div>
+                            <div class="k-spreadsheet-cell" style="outline: rgb(174, 203, 230) solid 1px; background-color: rgb(193, 226, 255); color: rgb(0, 62, 117); font-family: Arial; font-size: 12px; left: 431px; top: 316px; width: 114px; height: 24px;"></div>
                             <div class="k-spreadsheet-cell" style="outline: rgb(174, 203, 230) solid 1px; background-color: rgb(193, 226, 255); color: rgb(0, 62, 117); font-family: Arial; text-align: right; font-size: 12px; left: 546px; top: 316px; width: 114px; height: 24px;">
                                 <div class="k-vertical-align-bottom">Tip:</div>
                             </div>
@@ -465,12 +526,9 @@
                                     <span>$20.07</span>
                                 </div>
                             </div>
-                            <div class="k-spreadsheet-cell" style="outline: rgb(174, 203, 230) solid 1px; background-color: rgb(193, 226, 255); color: rgb(0, 62, 117); font-family: Arial; font-size: 12px; left: 816px; top: 316px; width: 63px; height: 24px;">
-                            </div>
-                            <div class="k-spreadsheet-cell" style="outline: rgb(174, 203, 230) solid 1px; background-color: rgb(193, 226, 255); color: rgb(0, 62, 117); font-family: Arial; font-size: 12px; left: 1px; top: 341px; width: 99px; height: 49px;">
-                            </div>
-                            <div class="k-spreadsheet-cell" style="outline: rgb(174, 203, 230) solid 1px; background-color: rgb(193, 226, 255); color: rgb(0, 62, 117); font-family: Arial; font-size: 12px; left: 101px; top: 341px; width: 214px; height: 49px;">
-                            </div>
+                            <div class="k-spreadsheet-cell" style="outline: rgb(174, 203, 230) solid 1px; background-color: rgb(193, 226, 255); color: rgb(0, 62, 117); font-family: Arial; font-size: 12px; left: 816px; top: 316px; width: 63px; height: 24px;"></div>
+                            <div class="k-spreadsheet-cell" style="outline: rgb(174, 203, 230) solid 1px; background-color: rgb(193, 226, 255); color: rgb(0, 62, 117); font-family: Arial; font-size: 12px; left: 1px; top: 341px; width: 99px; height: 49px;"></div>
+                            <div class="k-spreadsheet-cell" style="outline: rgb(174, 203, 230) solid 1px; background-color: rgb(193, 226, 255); color: rgb(0, 62, 117); font-family: Arial; font-size: 12px; left: 101px; top: 341px; width: 214px; height: 49px;"></div>
                             <div class="k-spreadsheet-cell k-spreadsheet-merged-cell" style="outline: rgb(174, 203, 230) solid 1px; background-color: rgb(193, 226, 255); color: rgb(0, 62, 117); font-family: Arial; text-align: right; font-size: 20px; left: 316px; top: 341px; width: 344px; height: 49px;">
                                 <div class="k-vertical-align-bottom">Total Amount:</div>
                             </div>
@@ -479,13 +537,12 @@
                                     <span>$220.82</span>
                                 </div>
                             </div>
-                            <div class="k-spreadsheet-cell" style="outline: rgb(174, 203, 230) solid 1px; background-color: rgb(193, 226, 255); color: rgb(0, 62, 117); font-family: Arial; font-size: 12px; left: 816px; top: 341px; width: 63px; height: 49px;">
-                            </div>
+                            <div class="k-spreadsheet-cell" style="outline: rgb(174, 203, 230) solid 1px; background-color: rgb(193, 226, 255); color: rgb(0, 62, 117); font-family: Arial; font-size: 12px; left: 816px; top: 341px; width: 63px; height: 49px;"></div>
                         </div>
                         <div class="k-selection-wrapper">
                             <div class="k-spreadsheet-selection k-single-selection" style="width: 216px; height: 21px; top: 135px; left: 132px;"></div>
                             <div class="k-button k-spreadsheet-editor-button" style="left: 347px; top: 135px; height: 20px;">
-                                <i is="Icon" name="calendar"></i>
+                                <span class="k-icon k-i-calendar"></span>
                             </div>
                             <div class="k-spreadsheet-cell k-spreadsheet-active-cell k-top k-single" style="outline: rgb(86, 163, 230) solid 1px; background-color: rgb(96, 181, 255); color: white; font-family: Arial; text-align: center; font-size: 32px; left: 33px; top: 21px; width: 878px; height: 69px;">
                                 <div class="k-vertical-align-bottom">Invoice #52 - 06/23/2015</div>
@@ -496,22 +553,22 @@
                         <div class="k-filter-wrapper">
                             <div class="k-filter-range" style="width: 816px; height: 206px; top: 90px; left: 32px;"></div>
                             <span class="k-spreadsheet-filter" style="left: 113px; top: 93px;">
-                                <i is="Icon" name="arrow-s"></i>
+                                <span class="k-icon k-i-arrow-s"></span>
                             </span>
                             <span class="k-spreadsheet-filter" style="left: 328px; top: 93px;">
-                                <i is="Icon" name="arrow-s"></i>
+                                <span class="k-icon k-i-arrow-s"></span>
                             </span>
                             <span class="k-spreadsheet-filter" style="left: 443px; top: 93px;">
-                                <i is="Icon" name="arrow-s"></i>
+                                <span class="k-icon k-i-arrow-s"></span>
                             </span>
                             <span class="k-spreadsheet-filter" style="left: 558px; top: 93px;">
-                                <i is="Icon" name="arrow-s"></i>
+                                <span class="k-icon k-i-arrow-s"></span>
                             </span>
                             <span class="k-spreadsheet-filter" style="left: 673px; top: 93px;">
-                                <i is="Icon" name="arrow-s"></i>
+                                <span class="k-icon k-i-arrow-s"></span>
                             </span>
                             <span class="k-spreadsheet-filter" style="left: 828px; top: 93px;">
-                                <i is="Icon" name="arrow-s"></i>
+                                <span class="k-icon k-i-arrow-s"></span>
                             </span>
                         </div>
                         <div class="k-spreadsheet-row-header" style="width: 32px; top: 20px;">
@@ -609,32 +666,42 @@
                         </colgroup>
                         <tbody>
                             <tr style="height: 70px;">
-                                <td colspan="7" rowspan="1" style="background-color: rgb(96, 181, 255); color: white; font-family: Arial; text-align: center; font-size: 32px; border-color: rgb(96, 181, 255);"> Invoice #52 - 06/23/2015</td>
+                                <td colspan="7" rowspan="1" style="background-color: rgb(96, 181, 255); color: white; font-family: Arial; text-align: center; font-size: 32px; border-color: rgb(96, 181, 255);">Invoice #52 - 06/23/2015</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
                 <div class="k-spreadsheet-cell-editor k-spreadsheet-formula-input" style="white-space: pre;">Invoice #52 - 06/23/2015</div>
-                <div class="k-widget k-tooltip" style="position:absolute; display:none">A1</div>
-                <div class="k-group-header" style="display:none"></div>
+                <div class="k-widget k-tooltip" style="position: absolute; display: none;">A1</div>
+                <div class="k-group-header" style="display: none;"></div>
                 <div class="k-list-scroller"></div>
             </div>
             <div class="k-spreadsheet-sheets-bar k-widget k-header">
-                <button is="Button" icon="add" class="k-spreadsheet-sheets-bar-add"></button>
+                <button class="k-spreadsheet-sheets-bar-add k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                    <span class="k-button-icon k-icon k-i-add"></span>
+                </button>
                 <div class="k-spreadsheet-sheets-items k-tabstrip-scrollable k-tabstrip k-floatwrap k-tabstrip-bottom">
                     <div class="k-tabstrip-items-wrapper k-hstack">
-                        <button is="Button" fillMode="flat" rounded="null" size="null" shape="null" icon="arrow-60-left" class="k-tabstrip-prev"></button>
+                        <button class="k-tabstrip-prev k-button k-button-flat k-button-flat-base k-icon-button">
+                            <span class="k-button-icon k-icon k-i-arrow-60-left"></span>
+                        </button>
                         <ul class="k-reset k-tabstrip-items">
                             <li class="k-item k-state-active k-state-tab-on-top k-spreadsheet-sheets-bar-active">
                                 <span class="k-link">Food Order</span>
-                                <button is="Button" fillMode="flat" icon="close" class="k-spreadsheet-sheets-remove k-remove-tab"></button>
+                                <button class="k-spreadsheet-sheets-remove k-remove-tab k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                                    <span class="k-button-icon k-icon k-i-close"></span>
+                                </button>
                             </li>
                             <li class="k-item k-spreadsheet-sheets-bar-inactive">
                                 <span class="k-link">Balance Sheet</span>
-                                <button is="Button" fillMode="flat" icon="close" class="k-spreadsheet-sheets-remove k-remove-tab"></button>
+                                <button class="k-spreadsheet-sheets-remove k-remove-tab k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                                    <span class="k-button-icon k-icon k-i-close"></span>
+                                </button>
                             </li>
                         </ul>
-                        <button is="Button" fillMode="flat" rounded="null" size="null" shape="null" icon="arrow-60-right" class="k-tabstrip-next"></button>
+                        <button class="k-tabstrip-next k-button k-button-flat k-button-flat-base k-icon-button">
+                            <span class="k-button-icon k-icon k-i-arrow-60-right"></span>
+                        </button>
                     </div>
                 </div>
             </div>

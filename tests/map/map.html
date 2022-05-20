@@ -1,12 +1,11 @@
 <!doctype html>
-<html lang="en" class="k-no-animations">
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width:15px;">
 <head>
     <title>Map</title>
     <meta charset="utf-8">
     <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
     <link rel="stylesheet" href="/packages/html/assets/styles.css">
     <script src="/packages/html/assets/scripts.js"></script>
-    <script src="/packages/html/dist/index.js"></script>
 </head>
 <body id="app" class="k-body">
     <style>
@@ -25,7 +24,7 @@
                 <div class="km-scroll-header"></div>
                 <div class="km-scroll-container" style="transform-origin: left top 0px;">
                     <div class="k-layer" style="z-index: 1000;">
-                        <i is="Icon" class="k-marker" name="map-marker-target" style="z-index: 1000; left: 500px; top: 300px;"></i>
+                        <span class="k-marker k-icon k-i-map-marker-target" style="z-index: 1000; left: 500px; top: 300px;"></span>
                     </div>
                     <div class="k-layer"></div>
                 </div>
@@ -33,19 +32,31 @@
                 <div class="km-touch-scrollbar km-vertical-scrollbar" style="transform-origin: left top 0px; height: 239px;"></div>
             </div>
             <div class="k-map-controls k-pos-bottom k-pos-right">
-                <div class="k-widget k-attribution" style="display: block;">&copy; <a href="http://example.com/">Attribution</a>
+                <div class="k-widget k-attribution" style="display: block;">© <a href="http://example.com/">Attribution</a>
                 </div>
             </div>
             <div class="k-map-controls k-pos-top k-pos-left">
                 <div class="k-widget k-navigator">
-                    <button is="Button" class="k-navigator-n" icon="arrow-n" fillMode="flat" rounded="full" shape="square" size="null"></button>
-                    <button is="Button" class="k-navigator-e" icon="arrow-e" fillMode="flat" rounded="full" shape="square" size="null"></button>
-                    <button is="Button" class="k-navigator-s" icon="arrow-s" fillMode="flat" rounded="full" shape="square" size="null"></button>
-                    <button is="Button" class="k-navigator-w" icon="arrow-w" fillMode="flat" rounded="full" shape="square" size="null"></button>
+                    <button class="k-navigator-n k-button k-button-flat k-button-flat-base k-rounded-full k-icon-button">
+                        <span class="k-button-icon k-icon k-i-arrow-n"></span>
+                    </button>
+                    <button class="k-navigator-e k-button k-button-flat k-button-flat-base k-rounded-full k-icon-button">
+                        <span class="k-button-icon k-icon k-i-arrow-e"></span>
+                    </button>
+                    <button class="k-navigator-s k-button k-button-flat k-button-flat-base k-rounded-full k-icon-button">
+                        <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                    </button>
+                    <button class="k-navigator-w k-button k-button-flat k-button-flat-base k-rounded-full k-icon-button">
+                        <span class="k-button-icon k-icon k-i-arrow-w"></span>
+                    </button>
                 </div>
                 <div class="k-widget k-zoom-control k-button-group k-group-horizontal">
-                    <button is="Button" icon="plus" class="k-zoom-in"></button>
-                    <button is="Button" icon="minus" class="k-zoom-out"></button>
+                    <button class="k-zoom-in k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                        <span class="k-button-icon k-icon k-i-plus"></span>
+                    </button>
+                    <button class="k-zoom-out k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
+                        <span class="k-button-icon k-icon k-i-minus"></span>
+                    </button>
                 </div>
             </div>
         </div>

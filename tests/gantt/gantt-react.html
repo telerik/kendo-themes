@@ -1,13 +1,11 @@
 <!doctype html>
-<html lang="en" class="k-no-animations">
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width:15px;">
 <head>
     <title>Gantt -- react</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width" />
     <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
     <link rel="stylesheet" href="/packages/html/assets/styles.css">
     <script src="/packages/html/assets/scripts.js"></script>
-    <script src="/packages/html/dist/index.js"></script>
 </head>
 <body id="app" class="k-body">
     <style>
@@ -17,15 +15,21 @@
 
     </style>
     <div id="test-area">
-        <div class="k-gantt">
+        <div class="k-gantt" style="height: 700px;">
             <div class="k-widget k-toolbar k-gantt-toolbar k-gantt-header">
                 <span class="k-spacer"></span>
                 <span class="k-gantt-views">
                     <div class="k-gantt-views-wrapper">
-                        <div class="k-button-group k-gantt-views">
-                            <button is="Button">Day</button>
-                            <button is="Button" selected>Week</button>
-                            <button is="Button">Month</button>
+                        <div class="k-gantt-views k-button-group k-button-group-solid">
+                            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                                <span class="k-button-text">Day</span>
+                            </button>
+                            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-selected">
+                                <span class="k-button-text">Week</span>
+                            </button>
+                            <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                                <span class="k-button-text">Month</span>
+                            </button>
                         </div>
                         <select class="k-picker k-dropdown-list k-dropdown k-views-dropdown k-rounded-md">
                             <option value="day">Day</option>
@@ -45,7 +49,7 @@
                         </colgroup>
                         <thead class="k-grid-header">
                             <tr>
-                                <th colspan="2" rowspan="1" class="k-header k-grid-header-sticky" style="left: 0px; right: 0px; border-right-width: 1px; top: 0px;">
+                                <th colspan="2" rowspan="1" class="k-header k-grid-header-sticky" style="left: 0px; right: 0px;">
                                     <a class="k-link">summary</a>
                                 </th>
                                 <th colspan="1" rowspan="2" class="k-header" style="top: 0px;">
@@ -108,10 +112,10 @@
                                 </th>
                             </tr>
                             <tr>
-                                <th colspan="1" rowspan="1" class="k-header k-grid-header-sticky" style="left: 0px; right: 200px; top: 37px;">
+                                <th colspan="1" rowspan="1" class="k-header k-grid-header-sticky" style="left: 0px;">
                                     <a class="k-link">id title</a>
                                 </th>
-                                <th colspan="1" rowspan="1" class="k-header k-grid-header-sticky" style="left: 100px; right: 0px; border-right-width: 1px; top: 37px;">
+                                <th colspan="1" rowspan="1" class="k-header k-grid-header-sticky" style="left: 100px; right: 0px;">
                                     <a class="k-link">title</a>
                                 </th>
                             </tr>
@@ -119,9 +123,9 @@
                         <tbody>
                             <tr class="k-master-row" style="height: 40px;">
                                 <td class="k-grid-content-sticky k-text-nowrap" colspan="1" style="left: 0px; right: 200px;">
-                                    <i is="Icon" name="collapse"></i>7
+                                    <span class="k-icon k-i-collapse"></span>7
                                 </td>
-                                <td class="k-grid-content-sticky" colspan="1" style="left: 100px; right: 0px; border-right-width: 1px;"> Software validation, research and implementation </td>
+                                <td class="k-grid-content-sticky" colspan="1" style="left: 100px; right: 0px; border-right-width: 1px;">Software validation, research and implementation</td>
                                 <td>
                                     <div class="k-task k-task-summary" style="left: 83px; top: 15px; width: 4000px;">
                                         <div class="k-task-summary-progress" style="width: 1828px;">
@@ -134,10 +138,10 @@
                             </tr>
                             <tr class="k-master-row k-alt" style="height: 40px;">
                                 <td class="k-grid-content-sticky k-text-nowrap" colspan="1" style="left: 0px; right: 200px;">
-                                    <i is="Icon" name="none"></i>
-                                    <i is="Icon" name="none"></i>18
+                                    <span class="k-icon k-i-none"></span>
+                                    <span class="k-icon k-i-none"></span>18
                                 </td>
-                                <td class="k-grid-content-sticky" colspan="1" style="left: 100px; right: 0px; border-right-width: 1px;"> Project Kickoff </td>
+                                <td class="k-grid-content-sticky" colspan="1" style="left: 100px; right: 0px; border-right-width: 1px;">Project Kickoff</td>
                                 <td>
                                     <div class="k-task k-task-milestone" style="left: 77px; top: 13px;">
                                         <div class="k-task-milestone-content"></div>
@@ -148,10 +152,10 @@
                             </tr>
                             <tr class="k-master-row" style="height: 40px;">
                                 <td class="k-grid-content-sticky k-text-nowrap" colspan="1" style="left: 0px; right: 200px;">
-                                    <i is="Icon" name="none"></i>
-                                    <i is="Icon" name="collapse"></i>11
+                                    <span class="k-icon k-i-none"></span>
+                                    <span class="k-icon k-i-collapse"></span>11
                                 </td>
-                                <td class="k-grid-content-sticky" colspan="1" style="left: 100px; right: 0px; border-right-width: 1px;"> Research </td>
+                                <td class="k-grid-content-sticky" colspan="1" style="left: 100px; right: 0px; border-right-width: 1px;">Research</td>
                                 <td>
                                     <div class="k-task k-task-summary" style="left: 83px; top: 15px; width: 500px;">
                                         <div class="k-task-summary-progress" style="width: 288px;">
@@ -164,18 +168,18 @@
                             </tr>
                             <tr class="k-master-row k-alt" style="height: 40px;">
                                 <td class="k-grid-content-sticky k-text-nowrap" colspan="1" style="left: 0px; right: 200px;">
-                                    <i is="Icon" name="none"></i>
-                                    <i is="Icon" name="none"></i>
-                                    <i is="Icon" name="none"></i>19
+                                    <span class="k-icon k-i-none"></span>
+                                    <span class="k-icon k-i-none"></span>
+                                    <span class="k-icon k-i-none"></span>19
                                 </td>
-                                <td class="k-grid-content-sticky" colspan="1" style="left: 100px; right: 0px; border-right-width: 1px;"> Validation with Customers </td>
+                                <td class="k-grid-content-sticky" colspan="1" style="left: 100px; right: 0px; border-right-width: 1px;">Validation with Customers</td>
                                 <td>
                                     <div class="k-task k-task-single" style="left: 83px; top: 8px; width: 200px;">
                                         <div class="k-task-complete" style="width: 50px;"></div>
                                         <div class="k-task-content">Validation with Customers</div>
                                         <span class="k-task-actions">
                                             <a class="k-link k-task-delete">
-                                                <i is="Icon" name="x"></i>
+                                                <span class="k-icon k-i-x"></span>
                                             </a>
                                         </span>
                                         <span class="k-resize-handle k-resize-w"></span>
@@ -188,18 +192,18 @@
                             </tr>
                             <tr class="k-master-row" style="height: 40px;">
                                 <td class="k-grid-content-sticky k-text-nowrap" colspan="1" style="left: 0px; right: 200px;">
-                                    <i is="Icon" name="none"></i>
-                                    <i is="Icon" name="none"></i>
-                                    <i is="Icon" name="none"></i>20
+                                    <span class="k-icon k-i-none"></span>
+                                    <span class="k-icon k-i-none"></span>
+                                    <span class="k-icon k-i-none"></span>20
                                 </td>
-                                <td class="k-grid-content-sticky" colspan="1" style="left: 100px; right: 0px; border-right-width: 1px;"> Market Research </td>
+                                <td class="k-grid-content-sticky" colspan="1" style="left: 100px; right: 0px; border-right-width: 1px;">Market Research</td>
                                 <td>
                                     <div class="k-task k-task-single" style="left: 83px; top: 8px; width: 200px;">
                                         <div class="k-task-complete" style="width: 50px;"></div>
                                         <div class="k-task-content">Market Research</div>
                                         <span class="k-task-actions">
                                             <a class="k-link k-task-delete">
-                                                <i is="Icon" name="x"></i>
+                                                <span class="k-icon k-i-x"></span>
                                             </a>
                                         </span>
                                         <span class="k-resize-handle k-resize-w"></span>
@@ -212,18 +216,18 @@
                             </tr>
                             <tr class="k-master-row k-alt" style="height: 40px;">
                                 <td class="k-grid-content-sticky k-text-nowrap" colspan="1" style="left: 0px; right: 200px;">
-                                    <i is="Icon" name="none"></i>
-                                    <i is="Icon" name="none"></i>
-                                    <i is="Icon" name="none"></i>39
+                                    <span class="k-icon k-i-none"></span>
+                                    <span class="k-icon k-i-none"></span>
+                                    <span class="k-icon k-i-none"></span>39
                                 </td>
-                                <td class="k-grid-content-sticky" colspan="1" style="left: 100px; right: 0px; border-right-width: 1px;"> Functional and Technical Specification </td>
+                                <td class="k-grid-content-sticky" colspan="1" style="left: 100px; right: 0px; border-right-width: 1px;">Functional and Technical Specification</td>
                                 <td>
                                     <div class="k-task k-task-single" style="left: 283px; top: 8px; width: 300px;">
                                         <div class="k-task-complete" style="width: 198px;"></div>
                                         <div class="k-task-content">Functional and Technical Specification</div>
                                         <span class="k-task-actions">
                                             <a class="k-link k-task-delete">
-                                                <i is="Icon" name="x"></i>
+                                                <span class="k-icon k-i-x"></span>
                                             </a>
                                         </span>
                                         <span class="k-resize-handle k-resize-w"></span>
@@ -236,8 +240,8 @@
                             </tr>
                             <tr class="k-master-row" style="height: 40px;">
                                 <td class="k-grid-content-sticky k-text-nowrap" colspan="1" style="left: 0px; right: 200px;">
-                                    <i is="Icon" name="none"></i>
-                                    <i is="Icon" name="collapse"></i>12
+                                    <span class="k-icon k-i-none"></span>
+                                    <span class="k-icon k-i-collapse"></span>12
                                 </td>
                                 <td class="k-grid-content-sticky" colspan="1" style="left: 100px; right: 0px; border-right-width: 1px;">Design</td>
                                 <td>
@@ -252,9 +256,9 @@
                             </tr>
                             <tr class="k-master-row k-alt" style="height: 40px;">
                                 <td class="k-grid-content-sticky k-text-nowrap" colspan="1" style="left: 0px; right: 200px;">
-                                    <i is="Icon" name="none"></i>
-                                    <i is="Icon" name="none"></i>
-                                    <i is="Icon" name="none"></i>22
+                                    <span class="k-icon k-i-none"></span>
+                                    <span class="k-icon k-i-none"></span>
+                                    <span class="k-icon k-i-none"></span>22
                                 </td>
                                 <td class="k-grid-content-sticky" colspan="1" style="left: 100px; right: 0px; border-right-width: 1px;">UI Design</td>
                                 <td>
@@ -263,7 +267,7 @@
                                         <div class="k-task-content">UI Design</div>
                                         <span class="k-task-actions">
                                             <a class="k-link k-task-delete">
-                                                <i is="Icon" name="x"></i>
+                                                <span class="k-icon k-i-x"></span>
                                             </a>
                                         </span>
                                         <span class="k-resize-handle k-resize-w"></span>
@@ -276,9 +280,9 @@
                             </tr>
                             <tr class="k-master-row k-state-selected" style="height: 40px;">
                                 <td class="k-grid-content-sticky k-text-nowrap" colspan="1" style="left: 0px; right: 200px;">
-                                    <i is="Icon" name="none"></i>
-                                    <i is="Icon" name="none"></i>
-                                    <i is="Icon" name="none"></i>23
+                                    <span class="k-icon k-i-none"></span>
+                                    <span class="k-icon k-i-none"></span>
+                                    <span class="k-icon k-i-none"></span>23
                                 </td>
                                 <td class="k-grid-content-sticky" colspan="1" style="left: 100px; right: 0px; border-right-width: 1px;">HTML Prototype</td>
                                 <td>
@@ -287,7 +291,7 @@
                                         <div class="k-task-content">HTML Prototype</div>
                                         <span class="k-task-actions">
                                             <a class="k-link k-task-delete">
-                                                <i is="Icon" name="x"></i>
+                                                <span class="k-icon k-i-x"></span>
                                             </a>
                                         </span>
                                         <span class="k-resize-handle k-resize-w"></span>
@@ -300,8 +304,8 @@
                             </tr>
                             <tr class="k-master-row k-alt" style="height: 40px;">
                                 <td class="k-grid-content-sticky k-text-nowrap" colspan="1" style="left: 0px; right: 200px;">
-                                    <i is="Icon" name="none"></i>
-                                    <i is="Icon" name="collapse"></i>13
+                                    <span class="k-icon k-i-none"></span>
+                                    <span class="k-icon k-i-collapse"></span>13
                                 </td>
                                 <td class="k-grid-content-sticky" colspan="1" style="left: 100px; right: 0px; border-right-width: 1px;">Implementation</td>
                                 <td>
@@ -316,9 +320,9 @@
                             </tr>
                             <tr class="k-master-row" style="height: 40px;">
                                 <td class="k-grid-content-sticky k-text-nowrap" colspan="1" style="left: 0px; right: 200px;">
-                                    <i is="Icon" name="none"></i>
-                                    <i is="Icon" name="none"></i>
-                                    <i is="Icon" name="none"></i>24
+                                    <span class="k-icon k-i-none"></span>
+                                    <span class="k-icon k-i-none"></span>
+                                    <span class="k-icon k-i-none"></span>24
                                 </td>
                                 <td class="k-grid-content-sticky" colspan="1" style="left: 100px; right: 0px; border-right-width: 1px;">Prototype</td>
                                 <td>
@@ -327,7 +331,7 @@
                                         <div class="k-task-content">Prototype</div>
                                         <span class="k-task-actions">
                                             <a class="k-link k-task-delete">
-                                                <i is="Icon" name="x"></i>
+                                                <span class="k-icon k-i-x"></span>
                                             </a>
                                         </span>
                                         <span class="k-resize-handle k-resize-w"></span>
@@ -340,9 +344,9 @@
                             </tr>
                             <tr class="k-master-row k-alt" style="height: 40px;">
                                 <td class="k-grid-content-sticky k-text-nowrap" colspan="1" style="left: 0px; right: 200px;">
-                                    <i is="Icon" name="none"></i>
-                                    <i is="Icon" name="none"></i>
-                                    <i is="Icon" name="none"></i>26
+                                    <span class="k-icon k-i-none"></span>
+                                    <span class="k-icon k-i-none"></span>
+                                    <span class="k-icon k-i-none"></span>26
                                 </td>
                                 <td class="k-grid-content-sticky" colspan="1" style="left: 100px; right: 0px; border-right-width: 1px;">Architecture</td>
                                 <td>
@@ -351,7 +355,7 @@
                                         <div class="k-task-content">Architecture</div>
                                         <span class="k-task-actions">
                                             <a class="k-link k-task-delete">
-                                                <i is="Icon" name="x"></i>
+                                                <span class="k-icon k-i-x"></span>
                                             </a>
                                         </span>
                                         <span class="k-resize-handle k-resize-w"></span>
@@ -364,9 +368,9 @@
                             </tr>
                             <tr class="k-master-row" style="height: 40px;">
                                 <td class="k-grid-content-sticky k-text-nowrap" colspan="1" style="left: 0px; right: 200px;">
-                                    <i is="Icon" name="none"></i>
-                                    <i is="Icon" name="none"></i>
-                                    <i is="Icon" name="none"></i>27
+                                    <span class="k-icon k-i-none"></span>
+                                    <span class="k-icon k-i-none"></span>
+                                    <span class="k-icon k-i-none"></span>27
                                 </td>
                                 <td class="k-grid-content-sticky" colspan="1" style="left: 100px; right: 0px; border-right-width: 1px;">Data Layer</td>
                                 <td>
@@ -375,7 +379,7 @@
                                         <div class="k-task-content">Data Layer</div>
                                         <span class="k-task-actions">
                                             <a class="k-link k-task-delete">
-                                                <i is="Icon" name="x"></i>
+                                                <span class="k-icon k-i-x"></span>
                                             </a>
                                         </span>
                                         <span class="k-resize-handle k-resize-w"></span>
@@ -388,18 +392,18 @@
                             </tr>
                             <tr class="k-master-row k-alt" style="height: 40px;">
                                 <td class="k-grid-content-sticky k-text-nowrap" colspan="1" style="left: 0px; right: 200px;">
-                                    <i is="Icon" name="none"></i>
-                                    <i is="Icon" name="none"></i>
-                                    <i is="Icon" name="none"></i>29
+                                    <span class="k-icon k-i-none"></span>
+                                    <span class="k-icon k-i-none"></span>
+                                    <span class="k-icon k-i-none"></span>29
                                 </td>
-                                <td class="k-grid-content-sticky" colspan="1" style="left: 100px; right: 0px; border-right-width: 1px;"> UI and Interaction </td>
+                                <td class="k-grid-content-sticky" colspan="1" style="left: 100px; right: 0px; border-right-width: 1px;">UI and Interaction</td>
                                 <td>
                                     <div class="k-task k-task-single" style="left: 2583px; top: 8px; width: 500px;">
                                         <div class="k-task-complete" style="width: 300px;"></div>
                                         <div class="k-task-content">UI and Interaction</div>
                                         <span class="k-task-actions">
                                             <a class="k-link k-task-delete">
-                                                <i is="Icon" name="x"></i>
+                                                <span class="k-icon k-i-x"></span>
                                             </a>
                                         </span>
                                         <span class="k-resize-handle k-resize-w"></span>
@@ -412,9 +416,9 @@
                             </tr>
                             <tr class="k-master-row" style="height: 40px;">
                                 <td class="k-grid-content-sticky k-text-nowrap" colspan="1" style="left: 0px; right: 200px;">
-                                    <i is="Icon" name="none"></i>
-                                    <i is="Icon" name="none"></i>
-                                    <i is="Icon" name="none"></i>28
+                                    <span class="k-icon k-i-none"></span>
+                                    <span class="k-icon k-i-none"></span>
+                                    <span class="k-icon k-i-none"></span>28
                                 </td>
                                 <td class="k-grid-content-sticky" colspan="1" style="left: 100px; right: 0px; border-right-width: 1px;">Unit Tests</td>
                                 <td>
@@ -423,7 +427,7 @@
                                         <div class="k-task-content">Unit Tests</div>
                                         <span class="k-task-actions">
                                             <a class="k-link k-task-delete">
-                                                <i is="Icon" name="x"></i>
+                                                <span class="k-icon k-i-x"></span>
                                             </a>
                                         </span>
                                         <span class="k-resize-handle k-resize-w"></span>
@@ -436,8 +440,8 @@
                             </tr>
                             <tr class="k-master-row k-alt" style="height: 40px;">
                                 <td class="k-grid-content-sticky k-text-nowrap" colspan="1" style="left: 0px; right: 200px;">
-                                    <i is="Icon" name="none"></i>
-                                    <i is="Icon" name="expand"></i>14
+                                    <span class="k-icon k-i-none"></span>
+                                    <span class="k-icon k-i-expand"></span>14
                                 </td>
                                 <td class="k-grid-content-sticky" colspan="1" style="left: 100px; right: 0px; border-right-width: 1px;">Testing</td>
                                 <td>
@@ -452,8 +456,8 @@
                             </tr>
                             <tr class="k-master-row" style="height: 40px;">
                                 <td class="k-grid-content-sticky k-text-nowrap" colspan="1" style="left: 0px; right: 200px;">
-                                    <i is="Icon" name="none"></i>
-                                    <i is="Icon" name="expand"></i>30
+                                    <span class="k-icon k-i-none"></span>
+                                    <span class="k-icon k-i-expand"></span>30
                                 </td>
                                 <td class="k-grid-content-sticky" colspan="1" style="left: 100px; right: 0px; border-right-width: 1px;">Documentation</td>
                                 <td>
@@ -468,8 +472,8 @@
                             </tr>
                             <tr class="k-master-row k-alt" style="height: 40px;">
                                 <td class="k-grid-content-sticky k-text-nowrap" colspan="1" style="left: 0px; right: 200px;">
-                                    <i is="Icon" name="none"></i>
-                                    <i is="Icon" name="expand"></i>31
+                                    <span class="k-icon k-i-none"></span>
+                                    <span class="k-icon k-i-expand"></span>31
                                 </td>
                                 <td class="k-grid-content-sticky" colspan="1" style="left: 100px; right: 0px; border-right-width: 1px;">Demos</td>
                                 <td>
@@ -484,8 +488,8 @@
                             </tr>
                             <tr class="k-master-row" style="height: 40px;">
                                 <td class="k-grid-content-sticky k-text-nowrap" colspan="1" style="left: 0px; right: 200px;">
-                                    <i is="Icon" name="none"></i>
-                                    <i is="Icon" name="none"></i>17
+                                    <span class="k-icon k-i-none"></span>
+                                    <span class="k-icon k-i-none"></span>17
                                 </td>
                                 <td class="k-grid-content-sticky" colspan="1" style="left: 100px; right: 0px; border-right-width: 1px;">Release</td>
                                 <td>
