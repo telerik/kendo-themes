@@ -3,33 +3,28 @@
 <head>
     <title>LoaderContainer Overlay</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
-    <link rel="stylesheet" href="../../assets/styles.css" />
-    <script src="../../assets/scripts.js"></script>
-    <script src="../../../../packages/html/dist/index.js"></script>
-
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css" />
+    <link rel="stylesheet" href="/packages/html/assets/styles.css" />
+    <script src="/packages/html/assets/scripts.js"></script>
+    <script src="/packages/html/dist/index.js"></script>
     <style>
-        #test-area  {
+        #test-area {
             grid-template-columns: repeat(3, 1fr);
         }
-
         .example {
             width: 100%;
             min-height: 200px;
             position: relative;
         }
+
     </style>
 </head>
 <body class="k-body">
-
     <!-- Remove the .k-no-animations class in order to enable the animations -->
     <div id="test-area" class="grid k-no-animations">
-
         <span></span>
         <span class="col">Dark</span>
         <span class="col">Light</span>
-
-
         <span>Panel</span>
         <span class="example">
             <div class="k-loader-container k-loader-container-lg k-loader-top">
@@ -45,7 +40,6 @@
                 </div>
             </div>
         </span>
-
         <span class="example">
             <div class="k-loader-container k-loader-container-lg k-loader-top">
                 <div class="k-loader-container-overlay k-overlay-light"></div>
@@ -60,7 +54,6 @@
                 </div>
             </div>
         </span>
-
         <span>No Panel</span>
         <span class="example">
             <div class="k-loader-container k-loader-container-lg k-loader-top">
@@ -76,7 +69,6 @@
                 </div>
             </div>
         </span>
-
         <span class="example">
             <div class="k-loader-container k-loader-container-lg k-loader-top">
                 <div class="k-loader-container-overlay k-overlay-light"></div>
@@ -91,8 +83,6 @@
                 </div>
             </div>
         </span>
-
     </div>
-
 </body>
 </html>

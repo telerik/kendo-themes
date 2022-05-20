@@ -3,11 +3,10 @@
 <head>
     <title>File Manager ContextMenu</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
-    <link rel="stylesheet" href="../../assets/styles.css" />
-    <script src="../../assets/scripts.js"></script>
-    <script src="../../../../packages/html/dist/index.js"></script>
-
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css" />
+    <link rel="stylesheet" href="/packages/html/assets/styles.css" />
+    <script src="/packages/html/assets/scripts.js"></script>
+    <script src="/packages/html/dist/index.js"></script>
     <style>
         #filemanager-context-menu {
             position: absolute;
@@ -16,11 +15,11 @@
             z-index: 2;
             overflow: visible;
         }
+
     </style>
 </head>
 <body class="k-body">
     <div id="test-area" class="grid k-grid-cols-1">
-
         <span>File Manager ContextMenu</span>
         <div class="k-widget k-filemanager">
             <!-- Header -->
@@ -30,7 +29,6 @@
                     <button is="Button">Upload</button>
                 </div>
             </div>
-
             <div class="k-filemanager-content-container">
                 <!-- Navigation -->
                 <div class="k-filemanager-navigation">
@@ -38,7 +36,6 @@
                         <li>Folder</li>
                     </ul>
                 </div>
-
                 <!-- Content -->
                 <div class="k-filemanager-content">
                     <nav class="k-filemanager-breadcrumb k-widget k-breadcrumb">
@@ -50,28 +47,28 @@
                             </li>
                         </ol>
                     </nav>
-
                     <!-- View -->
                     <div class="k-widget k-listview k-selectable k-filemanager-listview">
                         <div class="k-listview-content k-d-flex k-flex-row k-flex-wrap">
                             <div class="k-listview-item">
-                                <span class="k-file-preview"><i is="Icon" class="k-file-icon" name="folder"></i></span>
+                                <span class="k-file-preview">
+                                    <i is="Icon" class="k-file-icon" name="folder"></i>
+                                </span>
                                 <span class="k-file-name">Folder</span>
                             </div>
                             <div class="k-listview-item">
-                                <span class="k-file-preview"><i is="Icon" class="k-file-icon" name="file-image"></i></span>
+                                <span class="k-file-preview">
+                                    <i is="Icon" class="k-file-icon" name="file-image"></i>
+                                </span>
                                 <span class="k-file-name">file.png</span>
                             </div>
                         </div>
                     </div>
                 </div>
-
-
                 <!-- Preview -->
                 <div class="k-filemanager-preview" hidden></div>
             </div>
         </div>
-
         <div class="k-animation-container k-context-menu-popup" id="filemanager-context-menu">
             <div class="k-popup k-menu-popup">
                 <menu is="MenuList">
@@ -80,7 +77,6 @@
                 </menu>
             </div>
         </div>
-
     </div>
 </body>
 </html>

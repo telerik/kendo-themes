@@ -3,11 +3,10 @@
 <head>
     <title>Slider CSS vars</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
-    <link rel="stylesheet" href="../../assets/styles.css" />
-    <script src="../../assets/scripts.js"></script>
-    <script src="../../../../packages/html/dist/index.js"></script>
-
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css" />
+    <link rel="stylesheet" href="/packages/html/assets/styles.css" />
+    <script src="/packages/html/assets/scripts.js"></script>
+    <script src="/packages/html/dist/index.js"></script>
     <style>
         .k-slider-horizontal {
             width: 100%;
@@ -15,7 +14,6 @@
         .k-slider-vertical {
             height: 300px;
         }
-
         .k-slider {
             --kendo-slider-start: 0;
             --kendo-slider-end: 60;
@@ -24,17 +22,15 @@
             --kendo-slider-start: 20;
             --kendo-slider-end: 60;
         }
+
     </style>
 </head>
 <body class="k-body k-bg-gray-50">
     <div id="test-area" class="k-d-grid k-grid-cols-4">
-
         <span>Single</span>
         <span>Range</span>
         <span>Single RTL</span>
         <span>Range RTL</span>
-
-
         <!-- horizontal -->
         <section>
             <div class="k-widget k-slider k-slider-horizontal">
@@ -218,8 +214,6 @@
                 <button is="Button" icon="arrow-e" rounded="full" class="k-button-increase"></button>
             </div>
         </section>
-
-
         <!-- vertical -->
         <section>
             <div class="k-widget k-slider k-slider-vertical">
@@ -403,7 +397,6 @@
                 <button is="Button" icon="arrow-n" rounded="full" class="k-button-increase"></button>
             </div>
         </section>
-
     </div>
 </body>
 </html>

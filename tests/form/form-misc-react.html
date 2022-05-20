@@ -3,57 +3,48 @@
 <head>
     <title>Form Field Misc React</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
-    <link rel="stylesheet" href="../../assets/styles.css" />
-    <script src="../../assets/scripts.js"></script>
-    <script src="../../../../packages/html/dist/index.js"></script>
-
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css" />
+    <link rel="stylesheet" href="/packages/html/assets/styles.css" />
+    <script src="/packages/html/assets/scripts.js"></script>
+    <script src="/packages/html/dist/index.js"></script>
     <style>
         section {
             padding: 20px;
             border: 1px dashed gray;
         }
-
         .test-heading {
             margin: 0 0 20px;
         }
+
     </style>
 </head>
 <body class="k-body">
-
     <div id="test-area" class="k-d-grid k-grid-cols-2">
-
         <span>Vertical Form (React)</span>
         <span>Horizontal Form (React)</span>
-
         <section>
-            <div class="k-messagebox k-messagebox-error">
-                Error: The quick brown fox jumps over the lazy dog.
-            </div>
-
+            <div class="k-messagebox k-messagebox-error"> Error: The quick brown fox jumps over the lazy dog. </div>
             <form class="k-form k-form-vertical">
-
                 <div class="k-form-field">
-                    <label class="k-label">Normal:<span class="k-label-optional">(Optional)</span></label>
+                    <label class="k-label">Normal:<span class="k-label-optional">(Optional)</span>
+                    </label>
                     <input is="Textbox" placeholder="Textbox..." />
                     <div class="k-form-hint k-text-start">Hint: hint message</div>
                     <div class="k-form-error k-text-start">Error: error message</div>
                 </div>
-
                 <div class="k-form-field">
-                    <label class="k-label k-text-error">Error:<span class="k-field-info">(field info)</span></label>
+                    <label class="k-label k-text-error">Error:<span class="k-field-info">(field info)</span>
+                    </label>
                     <input is="Textbox" placeholder="Textbox..." invalid />
                     <div class="k-form-hint k-text-end">Hint: hint message</div>
                     <div class="k-form-error k-text-end">Error: error message</div>
                 </div>
-
                 <div class="k-form-field">
                     <label class="k-label k-text-disabled">Disabled:</label>
                     <input is="Textbox" value="Disabled" disabled />
                     <div class="k-form-hint k-text-start">Hint: hint message</div>
                     <div class="k-form-error k-text-start">Error: error message</div>
                 </div>
-
                 <div class="k-form-field">
                     <label class="k-label">Checkbox:</label>
                     <span>
@@ -62,50 +53,43 @@
                     <div class="k-form-hint k-text-start">Hint: hint message</div>
                     <div class="k-form-error k-text-start">Error: error message</div>
                 </div>
-
                 <div class="k-form-field">
                     <span>
-                        <input is="Checkbox" /><!--
-                        --><label class="k-checkbox-label">Label after the box</label>
+                        <input is="Checkbox" />
+                        <!--
+                        -->
+                        <label class="k-checkbox-label">Label after the box</label>
                     </span>
                     <div class="k-form-hint k-text-start">Hint: hint message</div>
                     <div class="k-form-error k-text-start">Error: error message</div>
                 </div>
-
                 <div class="k-form-buttons">
                     <button is="Button" themeColor="primary" class="k-form-submit">Submit</button>
                     <button is="Button" class="k-form-clear">Clear</button>
                 </div>
-
             </form>
         </section>
-
-
         <section>
-            <div class="k-messagebox k-messagebox-error">
-                Error: The quick brown fox jumps over the lazy dog.
-            </div>
-
+            <div class="k-messagebox k-messagebox-error"> Error: The quick brown fox jumps over the lazy dog. </div>
             <form class="k-form k-form-horizontal">
-
                 <div class="k-form-field">
-                    <label class="k-label">Normal:<span class="k-label-optional">(Optional)</span></label>
+                    <label class="k-label">Normal:<span class="k-label-optional">(Optional)</span>
+                    </label>
                     <div class="k-form-field-wrap">
                         <input is="Textbox" placeholder="Textbox..." />
                         <div class="k-form-hint k-text-start">Hint: hint message</div>
                         <div class="k-form-error k-text-start">Error: error message</div>
                     </div>
                 </div>
-
                 <div class="k-form-field">
-                    <label class="k-label k-text-error">Error:<span class="k-field-info">(field info)</span></label>
+                    <label class="k-label k-text-error">Error:<span class="k-field-info">(field info)</span>
+                    </label>
                     <div class="k-form-field-wrap">
                         <input is="Textbox" placeholder="Textbox..." invalid />
                         <div class="k-form-hint k-text-end">Hint: hint message</div>
                         <div class="k-form-error k-text-end">Error: error message</div>
                     </div>
                 </div>
-
                 <div class="k-form-field">
                     <label class="k-label k-text-disabled">Disabled:</label>
                     <div class="k-form-field-wrap">
@@ -114,7 +98,6 @@
                         <div class="k-form-error k-text-start">Error: error message</div>
                     </div>
                 </div>
-
                 <div class="k-form-field">
                     <label class="k-label">Checkbox:</label>
                     <div class="k-form-field-wrap">
@@ -125,27 +108,25 @@
                         <div class="k-form-error k-text-start">Error: error message</div>
                     </div>
                 </div>
-
                 <div class="k-form-field">
                     <label class="k-label k-label-empty"></label>
                     <div class="k-form-field-wrap">
                         <span>
-                            <input is="Checkbox" /><!--
-                            --><label class="k-checkbox-label">Label after the box</label>
+                            <input is="Checkbox" />
+                            <!--
+                            -->
+                            <label class="k-checkbox-label">Label after the box</label>
                         </span>
                         <div class="k-form-hint k-text-start">Hint: hint message</div>
                         <div class="k-form-error k-text-start">Error: error message</div>
                     </div>
                 </div>
-
                 <div class="k-form-buttons">
                     <button is="Button" themeColor="primary" class="k-form-submit" focus>Submit</button>
                     <button is="Button" class="k-form-clear">Clear</button>
                 </div>
             </form>
         </section>
-
     </div>
-
 </body>
 </html>

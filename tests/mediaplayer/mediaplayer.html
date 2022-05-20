@@ -3,11 +3,10 @@
 <head>
     <title>Media Player</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
-    <link rel="stylesheet" href="../../assets/styles.css" />
-    <script src="../../assets/scripts.js"></script>
-    <script src="../../../../packages/html/dist/index.js"></script>
-
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css" />
+    <link rel="stylesheet" href="/packages/html/assets/styles.css" />
+    <script src="/packages/html/assets/scripts.js"></script>
+    <script src="/packages/html/dist/index.js"></script>
     <style>
         #test-area {
             align-items: start;
@@ -19,12 +18,11 @@
             --kendo-slider-start: 0;
             --kendo-slider-end: 50;
         }
+
     </style>
 </head>
 <body class="k-body">
-
     <div id="test-area" class="grid">
-
         <div class="k-mediaplayer k-widget">
             <div class="k-mediaplayer-titlebar">Media player title</div>
             <div class="k-mediaplayer-toolbar-wrap">
@@ -39,8 +37,7 @@
                 <div class="k-mediaplayer-toolbar k-toolbar k-widget">
                     <button is="Button" fillMode="flat" icon="play" class="k-play-button"></button>
                     <div class="k-mediaplayer-currenttime-wrap">
-                        <span class="k-mediaplayer-currenttime">00:18</span> /
-                        <span class="k-mediaplayer-duration">00:55</span>
+                        <span class="k-mediaplayer-currenttime">00:18</span> / <span class="k-mediaplayer-duration">00:55</span>
                     </div>
                     <div class="k-spacer"></div>
                     <button is="Button" fillMode="flat" icon="volume-up" class="k-volume-button"></button>
@@ -62,8 +59,6 @@
             </div>
             <div class="k-mediaplayer-overlay"></div>
         </div>
-
     </div>
-
 </body>
 </html>

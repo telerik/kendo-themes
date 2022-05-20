@@ -3,31 +3,27 @@
 <head>
     <title>Grid Filter Menu</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
-    <link rel="stylesheet" href="../../assets/styles.css" />
-    <script src="../../assets/scripts.js"></script>
-    <script src="../../../../packages/html/dist/index.js"></script>
-
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css" />
+    <link rel="stylesheet" href="/packages/html/assets/styles.css" />
+    <script src="/packages/html/assets/scripts.js"></script>
+    <script src="/packages/html/dist/index.js"></script>
     <style>
         #test-area {
             grid-template-columns: repeat(2, 1fr);
         }
-
         .k-animation-container,
         .k-popup {
             position: relative;
             overflow: visible;
         }
-
         .k-animation-container {
             display: inline-block;
         }
+
     </style>
 </head>
 <body class="k-body">
-
     <div id="test-area" class="grid">
-
         <!-- jQuery rendering -->
         <section>
             <div class="k-animation-container" style="overflow: visible;">
@@ -47,12 +43,11 @@
                 </form>
             </div>
         </section>
-
         <!-- Angular rendering -->
         <section>
             <kendo-popup class="k-animation-container" style="z-index: 2;">
                 <div class="k-popup k-grid-filter-popup">
-                    <kendo-grid-filter-menu-container >
+                    <kendo-grid-filter-menu-container>
                         <form class="k-filter-menu k-group k-reset k-state-border-up">
                             <div class="k-filter-menu-container">
                                 <kendo-grid-date-filter-menu>
@@ -64,11 +59,11 @@
                                     </kendo-grid-date-filter-menu-input>
                                     <input is="DropdownList" value="And" class="k-filter-and" />
                                     <kendo-grid-date-filter-menu-input>
-                                            <kendo-grid-filter-menu-input-wrapper>
-                                                <input is="DropdownList" value="Is after or equal to" />
-                                                <input is="DatePicker" />
-                                            </kendo-grid-filter-menu-input-wrapper>
-                                        </kendo-grid-date-filter-menu-input>
+                                        <kendo-grid-filter-menu-input-wrapper>
+                                            <input is="DropdownList" value="Is after or equal to" />
+                                            <input is="DatePicker" />
+                                        </kendo-grid-filter-menu-input-wrapper>
+                                    </kendo-grid-date-filter-menu-input>
                                 </kendo-grid-date-filter-menu>
                                 <div is="ActionButtons" alignment="stretched">
                                     <button is="Button">Clear</button>
@@ -80,50 +75,47 @@
                 </div>
             </kendo-popup>
         </section>
-
         <!-- Angular rendering - Numeric Grid Filter Menu  -->
         <section>
             <kendo-popup class="k-animation-container k-animation-container-shown">
-            <div class="k-popup k-grid-columnmenu-popup">
-                <kendo-grid-columnmenu-container class="ng-star-inserted">
-                    <kendo-grid-columnmenu-sort class="k-columnmenu-item-wrapper ng-star-inserted">
-                        <kendo-grid-columnmenu-item>
-                            <div class="k-columnmenu-item">
-                                <span class="k-icon k-i-sort-asc-sm"></span> Sort Ascending
-                            </div>
-                        </kendo-grid-columnmenu-item>
-                        <kendo-grid-columnmenu-item>
-                            <div role="button" class="k-columnmenu-item">
-                                <span class="k-icon k-i-sort-desc-sm"></span> Sort Descending
-                            </div>
-                        </kendo-grid-columnmenu-item>
-                    </kendo-grid-columnmenu-sort>
-
-                    <kendo-grid-columnmenu-chooser class="k-columnmenu-item-wrapper">
-                        <kendo-grid-columnmenu-item>
-                            <div class="k-columnmenu-item">
-                                <span class="k-icon k-i-columns"></span> Columns
-                            </div>
-                        </kendo-grid-columnmenu-item>
-                    </kendo-grid-columnmenu-chooser>
-
-                    <kendo-grid-columnmenu-filter class="k-columnmenu-item-wrapper">
-                        <kendo-grid-columnmenu-item>
-                            <div  class="k-columnmenu-item">
-                                <span class="k-icon k-i-filter"></span> Filter
-                            </div>
-                            <div class="k-columnmenu-item-content">
-                                <kendo-grid-filter-menu-container>
-                                    <form class="k-filter-menu k-group k-reset k-state-border-up ng-untouched ng-pristine ng-valid">
-                                        <div class="k-filter-menu-container">
-                                            <kendo-grid-numeric-filter-menu>
-                                                <kendo-grid-numeric-filter-menu-input>
-                                                    <kendo-grid-filter-menu-input-wrapper>
-                                                        <input is="DropdownList" value="Is equal to" />
-                                                        <input is="NumericTextbox" />
-                                                    </kendo-grid-filter-menu-input-wrapper>
-                                                </kendo-grid-numeric-filter-menu-input>
-                                                <input is="DropdownList" class="k-filter-and" Value="And" />
+                <div class="k-popup k-grid-columnmenu-popup">
+                    <kendo-grid-columnmenu-container class="ng-star-inserted">
+                        <kendo-grid-columnmenu-sort class="k-columnmenu-item-wrapper ng-star-inserted">
+                            <kendo-grid-columnmenu-item>
+                                <div class="k-columnmenu-item">
+                                    <span class="k-icon k-i-sort-asc-sm"></span> Sort Ascending
+                                </div>
+                            </kendo-grid-columnmenu-item>
+                            <kendo-grid-columnmenu-item>
+                                <div role="button" class="k-columnmenu-item">
+                                    <span class="k-icon k-i-sort-desc-sm"></span> Sort Descending
+                                </div>
+                            </kendo-grid-columnmenu-item>
+                        </kendo-grid-columnmenu-sort>
+                        <kendo-grid-columnmenu-chooser class="k-columnmenu-item-wrapper">
+                            <kendo-grid-columnmenu-item>
+                                <div class="k-columnmenu-item">
+                                    <span class="k-icon k-i-columns"></span> Columns
+                                </div>
+                            </kendo-grid-columnmenu-item>
+                        </kendo-grid-columnmenu-chooser>
+                        <kendo-grid-columnmenu-filter class="k-columnmenu-item-wrapper">
+                            <kendo-grid-columnmenu-item>
+                                <div class="k-columnmenu-item">
+                                    <span class="k-icon k-i-filter"></span> Filter
+                                </div>
+                                <div class="k-columnmenu-item-content">
+                                    <kendo-grid-filter-menu-container>
+                                        <form class="k-filter-menu k-group k-reset k-state-border-up ng-untouched ng-pristine ng-valid">
+                                            <div class="k-filter-menu-container">
+                                                <kendo-grid-numeric-filter-menu>
+                                                    <kendo-grid-numeric-filter-menu-input>
+                                                        <kendo-grid-filter-menu-input-wrapper>
+                                                            <input is="DropdownList" value="Is equal to" />
+                                                            <input is="NumericTextbox" />
+                                                        </kendo-grid-filter-menu-input-wrapper>
+                                                    </kendo-grid-numeric-filter-menu-input>
+                                                    <input is="DropdownList" class="k-filter-and" Value="And" />
                                                 </kendo-grid-numeric-filter-menu>
                                                 <div class="k-columnmenu-actions">
                                                     <button is="Button">Clear</button>
@@ -139,7 +131,6 @@
                 </div>
             </kendo-popup>
         </section>
-
         <!-- Angular rendering - Grid Filter Menu template with Switch component -->
         <section>
             <kendo-popup class="k-animation-container">
@@ -166,8 +157,6 @@
                 </div>
             </kendo-popup>
         </section>
-
     </div>
-
 </body>
 </html>

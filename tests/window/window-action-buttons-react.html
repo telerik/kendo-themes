@@ -3,11 +3,10 @@
 <head>
     <title>Window Action Buttons React</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
-    <link rel="stylesheet" href="../../assets/styles.css" />
-    <script src="../../assets/scripts.js"></script>
-    <script src="../../../../packages/html/dist/index.js"></script>
-
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css" />
+    <link rel="stylesheet" href="/packages/html/assets/styles.css" />
+    <script src="/packages/html/assets/scripts.js"></script>
+    <script src="/packages/html/dist/index.js"></script>
     <style>
         #test-area {
             grid-template-columns: repeat(2, min-content);
@@ -18,10 +17,10 @@
             position: relative;
             width: 300px;
         }
+
     </style>
 </head>
 <body class="k-body">
-
     <div id="test-area" class="grid">
         <div class="k-widget k-window">
             <div class="k-window-titlebar k-dialog-titlebar">
@@ -32,15 +31,12 @@
                     <button is="Button" fillMode="flat" icon="close"></button>
                 </div>
             </div>
-            <div class="k-window-content">
-                Action Buttons at start position
-            </div>
+            <div class="k-window-content"> Action Buttons at start position </div>
             <div is="ActionButtons" alignment="start" class="k-window-buttons">
                 <button is="Button">Cancel</button>
                 <button is="Button" themeColor="primary">Submit</button>
             </div>
         </div>
-
         <div class="k-widget k-window">
             <div class="k-window-titlebar k-dialog-titlebar">
                 <div class="k-window-title">Title</div>
@@ -50,15 +46,12 @@
                     <button is="Button" fillMode="flat" icon="close"></button>
                 </div>
             </div>
-            <div class="k-window-content">
-                Action Buttons at center position
-            </div>
+            <div class="k-window-content"> Action Buttons at center position </div>
             <div is="ActionButtons" alignment="center" class="k-window-buttons">
                 <button is="Button">Cancel</button>
                 <button is="Button" themeColor="primary">Submit</button>
             </div>
         </div>
-
         <div class="k-widget k-window">
             <div class="k-window-titlebar k-dialog-titlebar">
                 <div class="k-window-title">Title</div>
@@ -68,15 +61,12 @@
                     <button is="Button" fillMode="flat" icon="close"></button>
                 </div>
             </div>
-            <div class="k-window-content">
-                Action Buttons at end position
-            </div>
+            <div class="k-window-content"> Action Buttons at end position </div>
             <div is="ActionButtons" alignment="end" class="k-window-buttons">
                 <button is="Button">Cancel</button>
                 <button is="Button" themeColor="primary">Submit</button>
             </div>
         </div>
-
         <div class="k-widget k-window">
             <div class="k-window-titlebar k-dialog-titlebar">
                 <div class="k-window-title">Title</div>
@@ -86,16 +76,12 @@
                     <button is="Button" fillMode="flat" icon="close"></button>
                 </div>
             </div>
-            <div class="k-window-content">
-                Action Buttons with stretched position
-            </div>
+            <div class="k-window-content"> Action Buttons with stretched position </div>
             <div is="ActionButtons" alignment="stretched" class="k-window-buttons">
                 <button is="Button">Cancel</button>
                 <button is="Button" themeColor="primary">Submit</button>
             </div>
         </div>
-
     </div>
-
 </body>
 </html>

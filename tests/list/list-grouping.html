@@ -3,28 +3,25 @@
 <head>
     <title>List -- grouping</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
-    <link rel="stylesheet" href="../../assets/styles.css" />
-    <script src="../../assets/scripts.js"></script>
-    <script src="../../../../packages/html/dist/index.js"></script>
-
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css" />
+    <link rel="stylesheet" href="/packages/html/assets/styles.css" />
+    <script src="/packages/html/assets/scripts.js"></script>
+    <script src="/packages/html/dist/index.js"></script>
     <style>
-        .k-virtual-list > .k-item,
+        .k-virtual-list>.k-item,
         .k-virtual-list .k-list-item,
         .k-virtual-list .k-list-group-item {
             position: relative;
         }
+
     </style>
 </head>
 <body class="k-body">
-
     <div id="test-area" class="k-d-grid k-grid-cols-4">
-
         <span>Universal</span>
         <span>Universal virtual</span>
         <span>Universal (rtl)</span>
         <span>Universal virtual (rtl)</span>
-
         <section>
             <select is="List">
                 <optgroup label="Group 1" root>
@@ -39,7 +36,6 @@
                 </optgroup>
             </select>
         </section>
-
         <section>
             <select is="List" virtualization>
                 <optgroup label="Group 1" root>
@@ -54,7 +50,6 @@
                 </optgroup>
             </select>
         </section>
-
         <section dir="rtl">
             <select is="List">
                 <optgroup label="Group 1" root>
@@ -69,7 +64,6 @@
                 </optgroup>
             </select>
         </section>
-
         <section dir="rtl">
             <select is="List" virtualization>
                 <optgroup label="Group 1" root>
@@ -84,12 +78,10 @@
                 </optgroup>
             </select>
         </section>
-
         <span>Angular</span>
         <span>Angular virtual</span>
         <span>Angular (rtl)</span>
         <span>Angular virtual (rtl)</span>
-
         <section>
             <select is="List" framework="angular">
                 <optgroup label="Group 1" root>
@@ -104,7 +96,6 @@
                 </optgroup>
             </select>
         </section>
-
         <section>
             <select is="List" framework="angular" virtualization>
                 <optgroup label="Group 1" root>
@@ -119,7 +110,6 @@
                 </optgroup>
             </select>
         </section>
-
         <section dir="rtl">
             <select is="List" framework="angular">
                 <optgroup label="Group 1" root>
@@ -134,7 +124,6 @@
                 </optgroup>
             </select>
         </section>
-
         <section dir="rtl">
             <select is="List" framework="angular" virtualization>
                 <optgroup label="Group 1" root>
@@ -149,8 +138,6 @@
                 </optgroup>
             </select>
         </section>
-
     </div>
-
 </body>
 </html>

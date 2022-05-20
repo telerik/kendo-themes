@@ -3,30 +3,27 @@
 <head>
     <title>Steppers</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
-    <link rel="stylesheet" href="../../assets/styles.css" />
-    <script src="../../assets/scripts.js"></script>
-    <script src="../../../../packages/html/dist/index.js"></script>
-
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css" />
+    <link rel="stylesheet" href="/packages/html/assets/styles.css" />
+    <script src="/packages/html/assets/scripts.js"></script>
+    <script src="/packages/html/dist/index.js"></script>
     <style>
         .wrapper {
             border: 1px solid #6c757d4f;
             margin-bottom: 16px;
         }
-
         .wrapper p {
-            background-color:  #6c757d4f;
+            background-color: #6c757d4f;
         }
-
         #test-area {
             display: grid;
             grid-template-columns: 1fr 1fr;
             grid-gap: 20px;
         }
+
     </style>
 </head>
 <body class="k-body">
-
     <div id="test-area" class="grid">
         <section>
             <div class="wrapper">
@@ -77,27 +74,24 @@
                     </nav>
                     <div class="k-wizard-steps">
                         <div class="k-wizard-step k-state-focused">
-                            <div class="k-wizard-content">
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                            </div>
+                            <div class="k-wizard-content"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </div>
                             <div class="k-wizard-buttons">
-                            <span class="k-wizard-buttons-left">
-                                <button is="Button">Reset</button>
-                                <span class="k-wizard-pager">Step 1 of 2</span>
-                            </span>
-                            <span class="k-wizard-buttons-right">
-                                <button is="Button">Previous</button>
-                                <button is="Button" themeColor="primary">Next</button>
-                            </span>
+                                <span class="k-wizard-buttons-left">
+                                    <button is="Button">Reset</button>
+                                    <span class="k-wizard-pager">Step 1 of 2</span>
+                                </span>
+                                <span class="k-wizard-buttons-right">
+                                    <button is="Button">Previous</button>
+                                    <button is="Button" themeColor="primary">Next</button>
+                                </span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
             <div class="wrapper">
                 <p>Small height set</p>
-                <div id="wizard" style="height: 350px;"class="k-widget k-wizard k-wizard-vertical k-wizard-right">
+                <div id="wizard" style="height: 350px;" class="k-widget k-wizard k-wizard-vertical k-wizard-right">
                     <nav class="k-stepper k-widget" style="display: grid; grid-template-rows: repeat(3, 1fr)">
                         <ol class="k-step-list k-step-list-vertical" style="grid-row-start: 1; grid-row-end: -1;">
                             <li class="k-step k-step-first k-step-done k-step-success" style="max-height: 33.333%">
@@ -143,26 +137,21 @@
                     </nav>
                     <div class="k-wizard-steps">
                         <div class="k-wizard-step">
-                            <div class="k-wizard-content">
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                            </div>
+                            <div class="k-wizard-content"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </div>
                             <div class="k-wizard-buttons">
-                            <span class="k-wizard-buttons-left">
-                                <button is="Button">Reset</button>
-                                <span class="k-wizard-pager">Step 1 of 2</span>
-                            </span>
-                            <span class="k-wizard-buttons-right">
-                                <button is="Button">Previous</button>
-                                <button is="Button" themeColor="primary">Next</button>
-                            </span>
+                                <span class="k-wizard-buttons-left">
+                                    <button is="Button">Reset</button>
+                                    <span class="k-wizard-pager">Step 1 of 2</span>
+                                </span>
+                                <span class="k-wizard-buttons-right">
+                                    <button is="Button">Previous</button>
+                                    <button is="Button" themeColor="primary">Next</button>
+                                </span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
             <div class="wrapper">
                 <p>Short content</p>
                 <div id="wizard" class="k-widget k-wizard k-wizard-vertical k-wizard-right">
@@ -191,7 +180,7 @@
                                 </a>
                             </li>
                             <li class="k-step k-step-last k-step-optional" style="max-height: 33.333%">
-                                <a href="#" class="k-step-link" >
+                                <a href="#" class="k-step-link">
                                     <span class="k-step-indicator">
                                         <span class="k-step-indicator-text">3</span>
                                     </span>
@@ -211,27 +200,24 @@
                     </nav>
                     <div class="k-wizard-steps">
                         <div class="k-wizard-step">
-                            <div class="k-wizard-content">
-                            Short content
-                            </div>
+                            <div class="k-wizard-content"> Short content </div>
                             <div class="k-wizard-buttons">
-                            <span class="k-wizard-buttons-left">
-                                <button is="Button">Reset</button>
-                                <span class="k-wizard-pager">Step 1 of 2</span>
-                            </span>
-                            <span class="k-wizard-buttons-right">
-                                <button is="Button">Previous</button>
-                                <button is="Button" themeColor="primary">Next</button>
-                            </span>
+                                <span class="k-wizard-buttons-left">
+                                    <button is="Button">Reset</button>
+                                    <span class="k-wizard-pager">Step 1 of 2</span>
+                                </span>
+                                <span class="k-wizard-buttons-right">
+                                    <button is="Button">Previous</button>
+                                    <button is="Button" themeColor="primary">Next</button>
+                                </span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
             <div class="wrapper">
                 <p>Short content; Big height set</p>
-                <div id="wizard" style="height: 300px;"class="k-widget k-wizard k-wizard-vertical k-wizard-right">
+                <div id="wizard" style="height: 300px;" class="k-widget k-wizard k-wizard-vertical k-wizard-right">
                     <nav class="k-stepper k-widget" style="display: grid; grid-template-rows: repeat(3, 1fr)">
                         <ol class="k-step-list k-step-list-vertical" style="grid-row-start: 1; grid-row-end: -1;">
                             <li class="k-step k-step-first k-step-done k-step-success" style="max-height: 33.333%">
@@ -257,7 +243,7 @@
                                 </a>
                             </li>
                             <li class="k-step k-step-last k-step-optional" style="max-height: 33.333%">
-                                <a href="#" class="k-step-link" >
+                                <a href="#" class="k-step-link">
                                     <span class="k-step-indicator">
                                         <span class="k-step-indicator-text">3</span>
                                     </span>
@@ -277,25 +263,22 @@
                     </nav>
                     <div class="k-wizard-steps">
                         <div class="k-wizard-step">
-                            <div class="k-wizard-content">
-                            Short content
-                            </div>
+                            <div class="k-wizard-content"> Short content </div>
                             <div class="k-wizard-buttons">
-                            <span class="k-wizard-buttons-left">
-                                <button is="Button">Reset</button>
-                                <span class="k-wizard-pager">Step 1 of 2</span>
-                            </span>
-                            <span class="k-wizard-buttons-right">
-                                <button is="Button">Previous</button>
-                                <button is="Button" themeColor="primary">Next</button>
-                            </span>
+                                <span class="k-wizard-buttons-left">
+                                    <button is="Button">Reset</button>
+                                    <span class="k-wizard-pager">Step 1 of 2</span>
+                                </span>
+                                <span class="k-wizard-buttons-right">
+                                    <button is="Button">Previous</button>
+                                    <button is="Button" themeColor="primary">Next</button>
+                                </span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
         <section>
             <div class="wrapper">
                 <p>Vertical wizard; Content is placed to the left</p>
@@ -325,7 +308,7 @@
                                 </a>
                             </li>
                             <li class="k-step k-step-last k-step-optional" style="max-height: 33.333%">
-                                <a href="#" class="k-step-link" >
+                                <a href="#" class="k-step-link">
                                     <span class="k-step-indicator">
                                         <span class="k-step-indicator-text">3</span>
                                     </span>
@@ -345,27 +328,24 @@
                     </nav>
                     <div class="k-wizard-steps">
                         <div class="k-wizard-step">
-                            <div class="k-wizard-content">
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                            </div>
+                            <div class="k-wizard-content"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </div>
                             <div class="k-wizard-buttons">
-                            <span class="k-wizard-buttons-left">
-                                <button is="Button">Reset</button>
-                                <span class="k-wizard-pager">Step 1 of 2</span>
-                            </span>
-                            <span class="k-wizard-buttons-right">
-                                <button is="Button">Previous</button>
-                                <button is="Button" themeColor="primary">Next</button>
-                            </span>
+                                <span class="k-wizard-buttons-left">
+                                    <button is="Button">Reset</button>
+                                    <span class="k-wizard-pager">Step 1 of 2</span>
+                                </span>
+                                <span class="k-wizard-buttons-right">
+                                    <button is="Button">Previous</button>
+                                    <button is="Button" themeColor="primary">Next</button>
+                                </span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
             <div class="wrapper">
                 <p>Small height set</p>
-                <div id="wizard" style="height: 350px;"class="k-widget k-wizard k-wizard-vertical k-wizard-left">
+                <div id="wizard" style="height: 350px;" class="k-widget k-wizard k-wizard-vertical k-wizard-left">
                     <nav class="k-stepper k-widget" style="display: grid; grid-template-rows: repeat(3, 1fr)">
                         <ol class="k-step-list k-step-list-vertical" style="grid-row-start: 1; grid-row-end: -1;">
                             <li class="k-step k-step-first k-step-done k-step-success" style="max-height: 33.333%">
@@ -391,7 +371,7 @@
                                 </a>
                             </li>
                             <li class="k-step k-step-last k-step-optional" style="max-height: 33.333%">
-                                <a href="#" class="k-step-link" >
+                                <a href="#" class="k-step-link">
                                     <span class="k-step-indicator">
                                         <span class="k-step-indicator-text">3</span>
                                     </span>
@@ -411,24 +391,21 @@
                     </nav>
                     <div class="k-wizard-steps">
                         <div class="k-wizard-step">
-                            <div class="k-wizard-content">
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                            </div>
+                            <div class="k-wizard-content"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </div>
                             <div class="k-wizard-buttons">
-                            <span class="k-wizard-buttons-left">
-                                <button is="Button">Reset</button>
-                                <span class="k-wizard-pager">Step 1 of 2</span>
-                            </span>
-                            <span class="k-wizard-buttons-right">
-                                <button is="Button">Previous</button>
-                                <button is="Button" themeColor="primary">Next</button>
-                            </span>
+                                <span class="k-wizard-buttons-left">
+                                    <button is="Button">Reset</button>
+                                    <span class="k-wizard-pager">Step 1 of 2</span>
+                                </span>
+                                <span class="k-wizard-buttons-right">
+                                    <button is="Button">Previous</button>
+                                    <button is="Button" themeColor="primary">Next</button>
+                                </span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
             <div class="wrapper">
                 <p>Short content</p>
                 <div id="wizard" class="k-widget k-wizard k-wizard-vertical k-wizard-left">
@@ -457,7 +434,7 @@
                                 </a>
                             </li>
                             <li class="k-step k-step-last k-step-optional" style="max-height: 33.333%">
-                                <a href="#" class="k-step-link" >
+                                <a href="#" class="k-step-link">
                                     <span class="k-step-indicator">
                                         <span class="k-step-indicator-text">3</span>
                                     </span>
@@ -477,24 +454,21 @@
                     </nav>
                     <div class="k-wizard-steps">
                         <div class="k-wizard-step">
-                            <div class="k-wizard-content">
-                            Short content
-                            </div>
+                            <div class="k-wizard-content"> Short content </div>
                             <div class="k-wizard-buttons">
-                            <span class="k-wizard-buttons-left">
-                                <button is="Button">Reset</button>
-                                <span class="k-wizard-pager">Step 1 of 2</span>
-                            </span>
-                            <span class="k-wizard-buttons-right">
-                                <button is="Button">Previous</button>
-                                <button is="Button" themeColor="primary">Next</button>
-                            </span>
+                                <span class="k-wizard-buttons-left">
+                                    <button is="Button">Reset</button>
+                                    <span class="k-wizard-pager">Step 1 of 2</span>
+                                </span>
+                                <span class="k-wizard-buttons-right">
+                                    <button is="Button">Previous</button>
+                                    <button is="Button" themeColor="primary">Next</button>
+                                </span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
             <div class="wrapper">
                 <p>Short content; Big height set</p>
                 <div id="wizard" style="height: 300px;" class="k-widget k-wizard k-wizard-vertical k-wizard-left">
@@ -523,7 +497,7 @@
                                 </a>
                             </li>
                             <li class="k-step k-step-last k-step-optional" style="max-height: 33.333%">
-                                <a href="#" class="k-step-link" >
+                                <a href="#" class="k-step-link">
                                     <span class="k-step-indicator">
                                         <span class="k-step-indicator-text">3</span>
                                     </span>
@@ -543,27 +517,22 @@
                     </nav>
                     <div class="k-wizard-steps">
                         <div class="k-wizard-step">
-                            <div class="k-wizard-content">
-                            Short content
-                            </div>
+                            <div class="k-wizard-content"> Short content </div>
                             <div class="k-wizard-buttons">
-                            <span class="k-wizard-buttons-left">
-                                <button is="Button">Reset</button>
-                                <span class="k-wizard-pager">Step 1 of 2</span>
-                            </span>
-                            <span class="k-wizard-buttons-right">
-                                <button is="Button">Previous</button>
-                                <button is="Button" themeColor="primary">Next</button>
-                            </span>
+                                <span class="k-wizard-buttons-left">
+                                    <button is="Button">Reset</button>
+                                    <span class="k-wizard-pager">Step 1 of 2</span>
+                                </span>
+                                <span class="k-wizard-buttons-right">
+                                    <button is="Button">Previous</button>
+                                    <button is="Button" themeColor="primary">Next</button>
+                                </span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
-
     </div>
-
 </body>
 </html>

@@ -3,11 +3,10 @@
 <head>
     <title>Vertical Steppers</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
-    <link rel="stylesheet" href="../../assets/styles.css" />
-    <script src="../../assets/scripts.js"></script>
-    <script src="../../../../packages/html/dist/index.js"></script>
-
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css" />
+    <link rel="stylesheet" href="/packages/html/assets/styles.css" />
+    <script src="/packages/html/assets/scripts.js"></script>
+    <script src="/packages/html/dist/index.js"></script>
     <style>
         #test-area {
             grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -17,16 +16,15 @@
             grid-column: 1 / -1;
             visibility: hidden;
         }
+
     </style>
 </head>
 <body class="k-body k-bg-gray-100">
-
     <div id="test-area" class="grid">
         <span>Indicator</span>
         <span>Indicator + label</span>
         <span>Icon</span>
         <span>Label</span>
-
         <section>
             <nav class="k-stepper k-widget" style="display: grid; grid-template-rows: repeat(3, 1fr)">
                 <ol class="k-step-list k-step-list-vertical" style="grid-row-start: 1; grid-row-end: -1;">
@@ -86,7 +84,7 @@
                         </a>
                     </li>
                     <li class="k-step k-step-last k-step-optional" style="max-height: 33.333%">
-                        <a href="#" class="k-step-link" >
+                        <a href="#" class="k-step-link">
                             <span class="k-step-indicator">
                                 <span class="k-step-indicator-text">3</span>
                             </span>
@@ -171,11 +169,8 @@
                 </div>
             </nav>
         </section>
-
         <hr />
-
         <span class="col-4">Content Between Steps</span>
-
         <section class="col-4">
             <nav class="k-stepper k-widget" style="display: grid; grid-template-rows: repeat(3, 1fr)">
                 <ol class="k-step-list k-step-list-vertical" style="grid-row-start: 1; grid-row-end: -1;">
@@ -199,9 +194,7 @@
                             </span>
                         </a>
                         <div class="k-step-content" style="height: 140px">
-                            <div class="content">
-                                This is the first step of your wizard with inline content.
-                            </div>
+                            <div class="content"> This is the first step of your wizard with inline content. </div>
                             <div class="navigation">
                                 <button is="Button">Close</button>
                                 <span>Step 2 of 3</span>
@@ -229,6 +222,5 @@
             </nav>
         </section>
     </div>
-
 </body>
 </html>

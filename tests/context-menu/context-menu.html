@@ -3,11 +3,10 @@
 <head>
     <title>Context Menu</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
-    <link rel="stylesheet" href="../../assets/styles.css" />
-    <script src="../../assets/scripts.js"></script>
-    <script src="../../../../packages/html/dist/index.js"></script>
-
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css" />
+    <link rel="stylesheet" href="/packages/html/assets/styles.css" />
+    <script src="/packages/html/assets/scripts.js"></script>
+    <script src="/packages/html/dist/index.js"></script>
     <style>
         .wrap,
         .k-animation-container {
@@ -15,18 +14,16 @@
             position: relative;
             overflow: visible;
         }
-
         .child-menu {
             position: absolute;
             left: 100%;
             top: 0;
         }
+
     </style>
 </head>
 <body class="k-body">
-
     <div id="test-area" class="k-d-grid">
-
         <section class="wrap">
             <div class="k-animation-container">
                 <div class="k-popup k-menu-popup">
@@ -37,7 +34,6 @@
                     </menu>
                 </div>
             </div>
-
             <div class="k-animation-container child-menu">
                 <div class="k-popup k-menu-popup">
                     <menu is="MenuList">
@@ -48,6 +44,5 @@
             </div>
         </section>
     </div>
-
 </body>
 </html>

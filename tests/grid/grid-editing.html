@@ -3,18 +3,15 @@
 <head>
     <title>Grid Editing</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
-    <link rel="stylesheet" href="../../assets/styles.css" />
-    <script src="../../assets/scripts.js"></script>
-    <script src="../../../../packages/html/dist/index.js"></script>
-
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css" />
+    <link rel="stylesheet" href="/packages/html/assets/styles.css" />
+    <script src="/packages/html/assets/scripts.js"></script>
+    <script src="/packages/html/dist/index.js"></script>
     <style>
     </style>
 </head>
 <body class="k-body">
-
     <div id="test-area" class="grid">
-
         <kendo-grid class="k-widget k-grid k-grid-no-scrollbar">
             <kendo-grid-toolbar class="k-toolbar k-grid-toolbar">
                 <button is="Button">Add new</button>
@@ -26,13 +23,25 @@
                     <div class="k-grid-header-wrap">
                         <table>
                             <colgroup>
-                                <col /><col /><col /><col style="width: 300px;" />
+                                <col />
+                                <col />
+                                <col />
+                                <col style="width: 300px;" />
                             </colgroup>
                             <thead>
                                 <tr>
-                                    <th class="k-header"><a class="k-link">Name<span></span></a></th>
-                                    <th class="k-header"><a class="k-link">Price<span></span></a></th>
-                                    <th class="k-header"><a class="k-link">Available<span></span></a></th>
+                                    <th class="k-header">
+                                        <a class="k-link">Name<span></span>
+                                        </a>
+                                    </th>
+                                    <th class="k-header">
+                                        <a class="k-link">Price<span></span>
+                                        </a>
+                                    </th>
+                                    <th class="k-header">
+                                        <a class="k-link">Available<span></span>
+                                        </a>
+                                    </th>
                                     <th class="k-header"></th>
                                 </tr>
                             </thead>
@@ -44,7 +53,10 @@
                         <div>
                             <table class="k-grid-table">
                                 <colgroup>
-                                    <col /><col /><col /><col style="width: 300px;" />
+                                    <col />
+                                    <col />
+                                    <col />
+                                    <col style="width: 300px;" />
                                 </colgroup>
                                 <tbody>
                                     <tr class="k-grid-add-row k-grid-edit-row">
@@ -54,10 +66,14 @@
                                         <td>
                                             <input is="NumericTextbox" value="42" />
                                         </td>
-                                        <td><input is="Checkbox" /></td>
+                                        <td>
+                                            <input is="Checkbox" />
+                                        </td>
                                         <td class="k-command-cell">
-                                            <button is="Button">Add</button><!--
-                                            --><button is="Button">Cancel</button>
+                                            <button is="Button">Add</button>
+                                            <!--
+                                            -->
+                                            <button is="Button">Cancel</button>
                                         </td>
                                     </tr>
                                     <tr>
@@ -83,7 +99,6 @@
                 </kendo-grid-list>
             </div>
         </kendo-grid>
-
         <div class="k-widget k-grid k-grid-no-scrollbar">
             <div class="k-toolbar k-grid-toolbar">
                 <button is="Button" icon="add">Add new record</button>
@@ -92,7 +107,10 @@
                 <div class="k-grid-header-wrap">
                     <table>
                         <colgroup>
-                            <col /><col /><col /><col style="width:300px" />
+                            <col />
+                            <col />
+                            <col />
+                            <col style="width:300px" />
                         </colgroup>
                         <thead>
                             <tr>
@@ -108,7 +126,10 @@
             <div class="k-grid-content">
                 <table style="height: auto;">
                     <colgroup>
-                        <col /><col /><col /><col style="width:300px" />
+                        <col />
+                        <col />
+                        <col />
+                        <col style="width:300px" />
                     </colgroup>
                     <tbody>
                         <tr class="k-grid-edit-row">
@@ -117,24 +138,34 @@
                             </td>
                             <td>
                                 <input is="NumericTextbox" invalid />
-                                <div class="k-tooltip k-validator-tooltip k-tooltip-error k-invalid-msg"><i is="Icon" class="k-tooltip-icon" name="warning"></i><span class="k-tooltip-content">Price</span><div class="k-callout k-callout-n"></div></div>
+                                <div class="k-tooltip k-validator-tooltip k-tooltip-error k-invalid-msg">
+                                    <i is="Icon" class="k-tooltip-icon" name="warning"></i>
+                                    <span class="k-tooltip-content">Price</span>
+                                    <div class="k-callout k-callout-n"></div>
+                                </div>
                             </td>
-                            <td><input is="Checkbox" id="e77452cd-b3b5-4dc9-8210-17007584b695" name="Discontinued" /><label class="k-checkbox-label" for="e77452cd-b3b5-4dc9-8210-17007584b695">​</label></td>
+                            <td>
+                                <input is="Checkbox" id="e77452cd-b3b5-4dc9-8210-17007584b695" name="Discontinued" />
+                                <label class="k-checkbox-label" for="e77452cd-b3b5-4dc9-8210-17007584b695">​</label>
+                            </td>
                             <td class="k-command-cell">
-                                <button is="Button" icon="check" themeColor="primary">Update</button><!--
-                                --><button is="Button" icon="cancel">Cancel</button>
+                                <button is="Button" icon="check" themeColor="primary">Update</button>
+                                <!--
+                                -->
+                                <button is="Button" icon="cancel">Cancel</button>
                             </td>
                         </tr>
                         <tr class="k-alt k-grid-edit-row">
                             <td class="k-dirty-cell">
-                                <span class="k-dirty"></span>
-                                LongSingleWordTestLongSingleWordTestLongSingleWordTestLongSingleWordTest
+                                <span class="k-dirty"></span> LongSingleWordTestLongSingleWordTestLongSingleWordTestLongSingleWordTest
                             </td>
                             <td>18</td>
                             <td>false</td>
                             <td class="k-command-cell">
-                                <button is="Button" icon="edit">Edit</button><!--
-                                --><button is="Button" icon="close">Delete</button>
+                                <button is="Button" icon="edit">Edit</button>
+                                <!--
+                                -->
+                                <button is="Button" icon="close">Delete</button>
                             </td>
                         </tr>
                         <tr>
@@ -142,8 +173,10 @@
                             <td>19</td>
                             <td>false</td>
                             <td class="k-command-cell">
-                                <button is="Button" icon="edit">Edit</button><!--
-                                --><button is="Button" icon="close">Delete</button>
+                                <button is="Button" icon="edit">Edit</button>
+                                <!--
+                                -->
+                                <button is="Button" icon="close">Delete</button>
                             </td>
                         </tr>
                     </tbody>
@@ -151,6 +184,5 @@
             </div>
         </div>
     </div>
-
 </body>
 </html>

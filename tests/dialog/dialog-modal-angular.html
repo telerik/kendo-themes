@@ -3,53 +3,43 @@
 <head>
     <title>Dialog</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
-    <link rel="stylesheet" href="../../assets/styles.css" />
-    <script src="../../assets/scripts.js"></script>
-    <script src="../../../../packages/html/dist/index.js"></script>
-
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css" />
+    <link rel="stylesheet" href="/packages/html/assets/styles.css" />
+    <script src="/packages/html/assets/scripts.js"></script>
+    <script src="/packages/html/dist/index.js"></script>
     <style>
         #test-area {
             width: 500px;
             height: 400px;
-            transform: translate( 0, 0 );
+            transform: translate(0, 0);
         }
         .k-dialog {
             width: 300px;
             height: 200px;
         }
+
     </style>
 </head>
 <body class="k-body">
-
     <div id="test-area" class="k-grid-cols-1">
-
         <kendo-dialog class="k-dialog-wrapper">
             <div class="k-overlay"></div>
-
             <div class="k-widget k-window k-dialog">
                 <kendo-dialog-titlebar class="k-window-titlebar k-dialog-titlebar k-header">
-                    <div class="k-window-title k-dialog-title">
-                        Title
-                    </div>
+                    <div class="k-window-title k-dialog-title"> Title </div>
                     <div class="k-window-actions k-dialog-actions">
                         <button is="Button" fillMode="flat" icon="close"></button>
                     </div>
                 </kendo-dialog-titlebar>
-
                 <div class="k-window-content k-dialog-content">
-                    <!-- template -->
-                    Dialog content template
+                    <!-- template --> Dialog content template
                 </div>
-
                 <div is="ActionButtons" class="k-dialog-buttongroup" alignment="end">
                     <button is="Button">Action</button>
                     <button is="Button" themeColor="primary">Primary</button>
                 </div>
             </div>
         </kendo-dialog>
-
     </div>
-
 </body>
 </html>

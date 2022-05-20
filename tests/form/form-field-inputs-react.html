@@ -3,11 +3,10 @@
 <head>
     <title>Form Field Inputs React</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
-    <link rel="stylesheet" href="../../assets/styles.css" />
-    <script src="../../assets/scripts.js"></script>
-    <script src="../../../../packages/html/dist/index.js"></script>
-
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css" />
+    <link rel="stylesheet" href="/packages/html/assets/styles.css" />
+    <script src="/packages/html/assets/scripts.js"></script>
+    <script src="/packages/html/dist/index.js"></script>
     <style>
         section {
             padding: 20px;
@@ -18,37 +17,33 @@
             --kendo-slider-start: 0;
             --kendo-slider-end: 50;
         }
+
     </style>
 </head>
 <body class="k-body">
-
     <div id="test-area" class="k-d-grid k-grid-cols-2">
-
         <span>Vertical Form (React)</span>
         <span>Horizontal Form (React)</span>
-
         <section>
             <form class="k-form">
-
                 <div class="k-form-field">
                     <label class="k-label">Textbox:</label>
                     <input is="Textbox" />
                 </div>
-
                 <div class="k-form-field">
                     <label class="k-label">Checkbox:</label>
                     <span>
                         <input is="Checkbox" />
                     </span>
                 </div>
-
                 <div class="k-form-field">
                     <span>
-                        <input is="Checkbox" /><!--
-                        --><label class="k-checkbox-label">Label after the box</label>
+                        <input is="Checkbox" />
+                        <!--
+                        -->
+                        <label class="k-checkbox-label">Label after the box</label>
                     </span>
                 </div>
-
                 <div class="k-form-field">
                     <label class="k-label">Radio (Y):</label>
                     <ul role="radiogroup" class="k-radio-list k-list-vertical">
@@ -62,7 +57,6 @@
                         </li>
                     </ul>
                 </div>
-
                 <div class="k-form-field">
                     <label class="k-label">Radio (X):</label>
                     <ul role="radiogroup" class="k-radio-list k-list-horizontal">
@@ -76,27 +70,22 @@
                         </li>
                     </ul>
                 </div>
-
                 <div class="k-form-field">
                     <label class="k-label">ColorPicker:</label>
                     <input is="Colorpicker" />
                 </div>
-
                 <div class="k-form-field">
                     <label class="k-label">MaskedTextBox:</label>
                     <input is="MaskedTextbox" />
                 </div>
-
                 <div class="k-form-field">
                     <label class="k-label">NumericTextBox:</label>
                     <input is="NumericTextbox" />
                 </div>
-
                 <div class="k-form-field">
                     <label class="k-label">Switch:</label>
                     <input is="Switch" onLabel="On" offLabel="Off" checked />
                 </div>
-
                 <div class="k-form-field">
                     <label class="k-label">Slider:</label>
                     <div class="k-slider k-slider-horizontal">
@@ -129,27 +118,23 @@
                         <button is="Button" icon="arrow-e" rounded="full" class="k-button-increase"></button>
                     </div>
                 </div>
-
                 <div class="k-form-field">
                     <span is="FloatingLabel" label="FloatingLabel" empty>
                         <input is="Textbox" />
                     </span>
                 </div>
-
                 <div class="k-form-field">
                     <span is="FloatingLabel" label="FloatingLabel (focused)" empty focus>
                         <input is="Textbox" focus />
                     </span>
                 </div>
-
                 <div class="k-form-field">
                     <label class="k-label">Upload</label>
                     <div class="k-widget k-upload">
                         <div class="k-dropzone">
                             <button is="Button" class="k-upload-button">Select files...</button>
                             <div class="k-upload-status k-upload-status-total">
-                                <i is="Icon" name="check"></i>
-                                Done
+                                <i is="Icon" name="check"></i> Done
                             </div>
                         </div>
                         <ul class="k-upload-files k-reset">
@@ -174,21 +159,16 @@
                         </ul>
                     </div>
                 </div>
-
             </form>
         </section>
-
-
         <section>
             <form class="k-form k-form-horizontal">
-
                 <div class="k-form-field">
                     <label class="k-label">Textbox:</label>
                     <div class="k-form-field-wrap">
                         <input is="Textbox" />
                     </div>
                 </div>
-
                 <div class="k-form-field">
                     <label class="k-label">Checkbox:</label>
                     <div class="k-form-field-wrap">
@@ -197,17 +177,17 @@
                         </span>
                     </div>
                 </div>
-
                 <div class="k-form-field">
                     <label class="k-label k-label-empty"></label>
                     <div class="k-form-field-wrap">
                         <span>
-                            <input is="Checkbox" /><!--
-                            --><label class="k-checkbox-label">Label after the box</label>
+                            <input is="Checkbox" />
+                            <!--
+                            -->
+                            <label class="k-checkbox-label">Label after the box</label>
                         </span>
                     </div>
                 </div>
-
                 <div class="k-form-field">
                     <label class="k-label">Radio (Y):</label>
                     <div class="k-form-field-wrap">
@@ -223,7 +203,6 @@
                         </ul>
                     </div>
                 </div>
-
                 <div class="k-form-field">
                     <label class="k-label">Radio (X):</label>
                     <div class="k-form-field-wrap">
@@ -239,35 +218,30 @@
                         </ul>
                     </div>
                 </div>
-
                 <div class="k-form-field">
                     <label class="k-label">ColorPicker:</label>
                     <div class="k-form-field-wrap">
                         <input is="Colorpicker" />
                     </div>
                 </div>
-
                 <div class="k-form-field">
                     <label class="k-label">MaskedTextBox:</label>
                     <div class="k-form-field-wrap">
                         <input is="MaskedTextbox" />
                     </div>
                 </div>
-
                 <div class="k-form-field">
                     <label class="k-label">NumericTextBox:</label>
                     <div class="k-form-field-wrap">
                         <input is="NumericTextbox" />
                     </div>
                 </div>
-
                 <div class="k-form-field">
                     <label class="k-label">Switch:</label>
                     <div class="k-form-field-wrap">
                         <input is="Switch" onLabel="On" offLabel="Off" checked />
                     </div>
                 </div>
-
                 <div class="k-form-field">
                     <label class="k-label">Slider:</label>
                     <div class="k-form-field-wrap">
@@ -302,7 +276,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="k-form-field">
                     <span class="k-label k-label-empty"></span>
                     <div class="k-form-field-wrap">
@@ -311,7 +284,6 @@
                         </span>
                     </div>
                 </div>
-
                 <div class="k-form-field">
                     <span class="k-label k-label-empty"></span>
                     <div class="k-form-field-wrap">
@@ -320,7 +292,6 @@
                         </span>
                     </div>
                 </div>
-
                 <div class="k-form-field">
                     <label class="k-label">Upload</label>
                     <div class="k-form-field-wrap">
@@ -328,8 +299,7 @@
                             <div class="k-dropzone">
                                 <button is="Button" class="k-upload-button">Select files...</button>
                                 <div class="k-upload-status k-upload-status-total">
-                                    <i is="Icon" name="check"></i>
-                                    Done
+                                    <i is="Icon" name="check"></i> Done
                                 </div>
                             </div>
                             <ul class="k-upload-files k-reset">
@@ -355,11 +325,8 @@
                         </div>
                     </div>
                 </div>
-
             </form>
         </section>
-
     </div>
-
 </body>
 </html>

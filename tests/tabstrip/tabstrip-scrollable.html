@@ -3,21 +3,18 @@
 <head>
     <title>TabStrip Scrollable</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
-    <link rel="stylesheet" href="../../assets/styles.css" />
-    <script src="../../assets/scripts.js"></script>
-    <script src="../../../../packages/html/dist/index.js"></script>
-
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css" />
+    <link rel="stylesheet" href="/packages/html/assets/styles.css" />
+    <script src="/packages/html/assets/scripts.js"></script>
+    <script src="/packages/html/dist/index.js"></script>
     <style>
         #test-area {
             grid-template-columns: 1fr 1fr;
         }
-
         #test-area .separator {
             width: 100%;
             grid-column: span 2;
         }
-
         /*
             This simulates the element "scroll" (scrollLeft, scrollTop, scrollBy) property
         */
@@ -27,11 +24,11 @@
         .k-tabstrip-scrollable .k-vstack .k-tabstrip-items .k-item:first-child {
             margin-top: -34px;
         }
+
     </style>
 </head>
 <body class="k-body">
     <div id="test-area" class="grid">
-
         <section>
             <kendo-tabstrip class="k-widget k-tabstrip k-floatwrap k-header k-tabstrip-top k-tabstrip-scrollable">
                 <div class="k-tabstrip-items-wrapper k-hstack">
@@ -39,12 +36,16 @@
                     <ul class="k-reset k-tabstrip-items">
                         <li class="k-item k-first k-state-active">
                             <span class="k-link">First</span>
-                        </li><!--
-                        --><li class="k-item">
+                        </li>
+                        <!--
+                        -->
+                        <li class="k-item">
                             <span class="k-link">Closable</span>
                             <button is="Button" fillMode="flat" icon="close" class="k-remove-tab"></button>
-                        </li><!--
-                        --><li class="k-item k-state-focused">
+                        </li>
+                        <!--
+                        -->
+                        <li class="k-item k-state-focused">
                             <span class="k-link">Focused</span>
                         </li>
                     </ul>
@@ -55,7 +56,6 @@
                 </div>
             </kendo-tabstrip>
         </section>
-
         <section>
             <kendo-tabstrip class="k-widget k-tabstrip k-floatwrap k-header k-tabstrip-bottom k-tabstrip-scrollable">
                 <div class="k-tabstrip-content k-state-active">
@@ -66,12 +66,16 @@
                     <ul class="k-reset k-tabstrip-items">
                         <li class="k-item k-first k-state-active">
                             <span class="k-link">First</span>
-                        </li><!--
-                        --><li class="k-item">
+                        </li>
+                        <!--
+                        -->
+                        <li class="k-item">
                             <span class="k-link">Closable</span>
                             <button is="Button" fillMode="flat" icon="close" class="k-remove-tab"></button>
-                        </li><!--
-                        --><li class="k-item k-state-focused">
+                        </li>
+                        <!--
+                        -->
+                        <li class="k-item k-state-focused">
                             <span class="k-link">Focused</span>
                         </li>
                     </ul>
@@ -79,7 +83,6 @@
                 </div>
             </kendo-tabstrip>
         </section>
-
         <section>
             <kendo-tabstrip class="k-widget k-tabstrip k-floatwrap k-header k-tabstrip-left k-tabstrip-scrollable">
                 <div class="k-tabstrip-items-wrapper k-vstack">
@@ -87,21 +90,31 @@
                     <ul class="k-reset k-tabstrip-items">
                         <li class="k-item k-first k-state-active">
                             <span class="k-link">Active</span>
-                        </li><!--
-                        --><li class="k-item">
+                        </li>
+                        <!--
+                        -->
+                        <li class="k-item">
                             <span class="k-link">Normal</span>
-                        </li><!--
-                        --><li class="k-item k-state-hover">
+                        </li>
+                        <!--
+                        -->
+                        <li class="k-item k-state-hover">
                             <span class="k-link">Hover</span>
-                        </li><!--
-                        --><li class="k-item k-state-focused">
+                        </li>
+                        <!--
+                        -->
+                        <li class="k-item k-state-focused">
                             <span class="k-link">Focused</span>
-                        </li><!--
-                        --><li class="k-item">
+                        </li>
+                        <!--
+                        -->
+                        <li class="k-item">
                             <span class="k-link">Closable</span>
                             <button is="Button" fillMode="flat" icon="close" class="k-remove-tab"></button>
-                        </li><!--
-                        --><li class="k-item k-last k-state-disabled">
+                        </li>
+                        <!--
+                        -->
+                        <li class="k-item k-last k-state-disabled">
                             <span class="k-link">Disabled</span>
                         </li>
                     </ul>
@@ -112,7 +125,6 @@
                 </div>
             </kendo-tabstrip>
         </section>
-
         <section>
             <kendo-tabstrip class="k-widget k-tabstrip k-floatwrap k-header k-tabstrip-right k-tabstrip-scrollable">
                 <div class="k-tabstrip-items-wrapper k-vstack">
@@ -120,21 +132,31 @@
                     <ul class="k-reset k-tabstrip-items">
                         <li class="k-item k-first k-state-active">
                             <span class="k-link">Active</span>
-                        </li><!--
-                        --><li class="k-item">
+                        </li>
+                        <!--
+                        -->
+                        <li class="k-item">
                             <span class="k-link">Normal</span>
-                        </li><!--
-                        --><li class="k-item k-state-hover">
+                        </li>
+                        <!--
+                        -->
+                        <li class="k-item k-state-hover">
                             <span class="k-link">Hover</span>
-                        </li><!--
-                        --><li class="k-item k-state-focused">
+                        </li>
+                        <!--
+                        -->
+                        <li class="k-item k-state-focused">
                             <span class="k-link">Focused</span>
-                        </li><!--
-                        --><li class="k-item">
+                        </li>
+                        <!--
+                        -->
+                        <li class="k-item">
                             <span class="k-link">Closable</span>
                             <button is="Button" fillMode="flat" icon="close" class="k-remove-tab"></button>
-                        </li><!--
-                        --><li class="k-item k-last k-state-disabled">
+                        </li>
+                        <!--
+                        -->
+                        <li class="k-item k-last k-state-disabled">
                             <span class="k-link">Disabled</span>
                         </li>
                     </ul>
@@ -145,7 +167,6 @@
                 </div>
             </kendo-tabstrip>
         </section>
-
     </div>
 </body>
 </html>

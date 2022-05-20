@@ -3,29 +3,26 @@
 <head>
     <title>Switch</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
-    <link rel="stylesheet" href="../../assets/styles.css" />
-    <script src="../../assets/scripts.js"></script>
-    <script src="../../../../packages/html/dist/index.js"></script>
-
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css" />
+    <link rel="stylesheet" href="/packages/html/assets/styles.css" />
+    <script src="/packages/html/assets/scripts.js"></script>
+    <script src="/packages/html/dist/index.js"></script>
     <style>
         body {
             background: #fcfcfc;
         }
-
         #test-area {
             max-width: 600px;
             grid-template-columns: 1fr 1fr 1fr;
         }
+
     </style>
 </head>
 <body class="k-body">
     <div id="test-area" class="grid">
-
         <span></span>
         <span>On</span>
         <span>Off</span>
-
         <span>Normal</span>
         <section>
             <input is="Switch" checked />
@@ -33,7 +30,6 @@
         <section>
             <input is="Switch" />
         </section>
-
         <span>Hover</span>
         <section>
             <input is="Switch" checked hover />
@@ -41,7 +37,6 @@
         <section>
             <input is="Switch" hover />
         </section>
-
         <span>Focus</span>
         <section>
             <input is="Switch" checked focus />
@@ -49,7 +44,6 @@
         <section>
             <input is="Switch" focus />
         </section>
-
         <span>Disabled</span>
         <section>
             <input is="Switch" checked disabled />
@@ -57,7 +51,6 @@
         <section>
             <input is="Switch" disabled />
         </section>
-
         <span>Localized</span>
         <section>
             <input is="Switch" onLabel="On" offLabel="Off" checked />
@@ -65,7 +58,6 @@
         <section>
             <input is="Switch" onLabel="On" offLabel="Off" />
         </section>
-
         <span>RTL</span>
         <section>
             <input is="Switch" dir="rtl" checked />
@@ -73,7 +65,6 @@
         <section>
             <input is="Switch" dir="rtl" />
         </section>
-
         <span></span>
         <section>
             <input is="Switch" dir="rtl" onLabel="On" offLabel="Off" checked />
@@ -81,7 +72,6 @@
         <section>
             <input is="Switch" dir="rtl" onLabel="On" offLabel="Off" />
         </section>
-
     </div>
 </body>
 </html>

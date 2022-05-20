@@ -3,32 +3,28 @@
 <head>
     <title>FAB Items</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
-    <link rel="stylesheet" href="../../assets/styles.css" />
-    <script src="../../assets/scripts.js"></script>
-    <script src="../../../../packages/html/dist/index.js"></script>
-
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css" />
+    <link rel="stylesheet" href="/packages/html/assets/styles.css" />
+    <script src="/packages/html/assets/scripts.js"></script>
+    <script src="/packages/html/dist/index.js"></script>
     <style>
         #test-area {
             grid-template-columns: 150px repeat(3, 1fr);
             grid-template-rows: 30px repeat(5, 320px)
         }
-
         .relative-container {
             position: relative;
             border: 1px solid #ccc;
         }
+
     </style>
 </head>
 <body class="k-body">
-
     <div id="test-area" class="k-d-grid">
-
         <span></span>
         <span>Small</span>
         <span>Medium</span>
         <span>Large</span>
-
         <span>Downward - Left Labels</span>
         <span class="relative-container">
             <button is="Fab" icon="plus" size="small" position="top-end" style="top: 16px; right: 16px;"></button>
@@ -105,7 +101,6 @@
                 </ul>
             </div>
         </span>
-
         <span>Downward - Right Labels</span>
         <span class="relative-container">
             <button is="Fab" icon="plus" size="small" position="top-start" style="top: 16px; left: 16px;"></button>
@@ -164,7 +159,6 @@
                 </ul>
             </div>
         </span>
-
         <span>Upward - Left Labels</span>
         <span class="relative-container">
             <button is="Fab" icon="plus" size="small" position="bottom-end" style="bottom: 16px; right: 16px;"></button>
@@ -223,7 +217,6 @@
                 </ul>
             </div>
         </span>
-
         <span>Upward - Right Labels</span>
         <span class="relative-container">
             <button is="Fab" icon="plus" size="small" position="bottom-start" style="bottom: 16px; left: 16px;"></button>
@@ -287,7 +280,7 @@
             <span class="k-pos-absolute k-bottom-start" style="bottom: 16px; left: 16px;">
                 <button is="Fab" icon="plus" size="small"></button>
                 <div class="k-fab-popup k-popup k-popup-transparent" style="position: absolute; bottom: 36px; left: calc(calc(36px/2) - calc(36px/2));">
-                    <ul class="k-fab-items k-fab-items-top" >
+                    <ul class="k-fab-items k-fab-items-top">
                         <li class="k-fab-item k-text-left k-hover">
                             <span class="k-fab-item-text">Hover long text</span>
                             <i is="Icon" class="k-fab-item-icon" name="pencil"></i>
@@ -308,7 +301,7 @@
             <span class="k-pos-absolute k-bottom-start" style="bottom: 16px; left: 16px;">
                 <button is="Fab" icon="plus" size="medium"></button>
                 <div class="k-fab-popup k-popup k-popup-transparent" style="position: absolute; bottom: 52px; left: calc(calc(52px/2) - calc(36px/2));">
-                    <ul class="k-fab-items k-fab-items-top" >
+                    <ul class="k-fab-items k-fab-items-top">
                         <li class="k-fab-item k-text-left k-hover">
                             <span class="k-fab-item-text">Hover long text</span>
                             <i is="Icon" class="k-fab-item-icon" name="pencil"></i>
@@ -329,7 +322,7 @@
             <span class="k-pos-absolute k-bottom-start" style="bottom: 16px; left: 16px;">
                 <button is="Fab" icon="plus" size="large"></button>
                 <div class="k-fab-popup k-popup k-popup-transparent" style="position: absolute; bottom: 68px; left: calc(calc(68px/2) - calc(36px/2));">
-                    <ul class="k-fab-items k-fab-items-top" >
+                    <ul class="k-fab-items k-fab-items-top">
                         <li class="k-fab-item k-text-left k-hover">
                             <span class="k-fab-item-text">Hover long text</span>
                             <i is="Icon" class="k-fab-item-icon" name="pencil"></i>
@@ -347,6 +340,5 @@
             </span>
         </span>
     </div>
-
 </body>
 </html>

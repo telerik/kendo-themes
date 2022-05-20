@@ -3,21 +3,18 @@
 <head>
     <title>ContextMenu in Window</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
-    <link rel="stylesheet" href="../../assets/styles.css" />
-    <script src="../../assets/scripts.js"></script>
-    <script src="../../../../packages/html/dist/index.js"></script>
-
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css" />
+    <link rel="stylesheet" href="/packages/html/assets/styles.css" />
+    <script src="/packages/html/assets/scripts.js"></script>
+    <script src="/packages/html/dist/index.js"></script>
     <style>
         #test-area {
             height: 300px;
         }
-
         .k-animation-container {
             overflow: visible;
             z-index: 12000;
         }
-
         .k-window {
             position: relative;
         }
@@ -25,12 +22,11 @@
             top: 50px;
             left: 100px;
         }
+
     </style>
 </head>
 <body class="k-body">
-
     <div id="test-area" class="k-d-grid">
-
         <section>
             <kendo-window class="k-widget k-window k-window-wrapper">
                 <kendo-window-titlebar class="k-window-titlebar k-header">
@@ -43,7 +39,6 @@
                 </kendo-window-titlebar>
                 <div class="k-window-content">Target</div>
             </kendo-window>
-
             <kendo-popup class="k-animation-container">
                 <div class="k-popup k-menu-popup">
                     <menu is="MenuList" class="k-context-menu">
@@ -57,8 +52,6 @@
                 </div>
             </kendo-popup>
         </section>
-
     </div>
-
 </body>
 </html>

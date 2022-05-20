@@ -3,11 +3,10 @@
 <head>
     <title>Floating Label</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
-    <link rel="stylesheet" href="../../assets/styles.css" />
-    <script src="../../assets/scripts.js"></script>
-    <script src="../../../../packages/html/dist/index.js"></script>
-
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css" />
+    <link rel="stylesheet" href="/packages/html/assets/styles.css" />
+    <script src="/packages/html/assets/scripts.js"></script>
+    <script src="/packages/html/dist/index.js"></script>
     <style>
         #test-area {
             width: 660px;
@@ -17,15 +16,13 @@
         .k-floating-label-container {
             width: 100%;
         }
+
     </style>
 </head>
 <body class="k-body">
-
     <div id="test-area" class="k-d-grid k-grid-cols-2">
-
         <span>Floating label</span>
         <span>Floating label RTL</span>
-
         <!-- empty -->
         <div>
             <span is="FloatingLabel" label="Textbox label" empty>
@@ -44,7 +41,7 @@
         </div>
         <div dir="rtl">
             <span is="FloatingLabel" label="Textbox with placeholder and floating label" empty>
-                <input is="Textbox"placeholder="Placeholder" />
+                <input is="Textbox" placeholder="Placeholder" />
             </span>
         </div>
         <div>
@@ -54,7 +51,7 @@
         </div>
         <div dir="rtl">
             <span is="FloatingLabel" label="Focused Textbox with placeholder" empty focus>
-                <input is="Textbox"placeholder="Placeholder" focus />
+                <input is="Textbox" placeholder="Placeholder" focus />
             </span>
         </div>
         <div>
@@ -67,7 +64,6 @@
                 <input is="Combobox" />
             </span>
         </div>
-
         <!-- value -->
         <div>
             <span is="FloatingLabel" label="Textbox label">
@@ -89,7 +85,6 @@
                 <input is="Combobox" value="Combobox value" />
             </span>
         </div>
-
         <!--hover-->
         <div>
             <span is="FloatingLabel" label="Textbox label">
@@ -111,7 +106,6 @@
                 <input is="Combobox" value="Hover" hover />
             </span>
         </div>
-
         <!-- focus -->
         <div>
             <span is="FloatingLabel" label="Textbox label" focus>
@@ -125,17 +119,16 @@
         </div>
         <div>
             <span is="FloatingLabel" label="Combobox label" focus>
-                <input is="Combobox" value="Focus" focus/>
+                <input is="Combobox" value="Focus" focus />
             </span>
         </div>
         <div dir="rtl">
             <span is="FloatingLabel" label="Combobox label" focus>
-                <input is="Combobox" value="Focus" focus/>
+                <input is="Combobox" value="Focus" focus />
             </span>
         </div>
-
-         <!--disabled-->
-         <div>
+        <!--disabled-->
+        <div>
             <span is="FloatingLabel" label="Textbox label" disabled>
                 <input is="Textbox" value="Disabled" disabled />
             </span>
@@ -155,7 +148,6 @@
                 <input is="Combobox" value="Disabled" disabled />
             </span>
         </div>
-
         <!--invalid-->
         <div>
             <span is="FloatingLabel" label="Textbox label" invalid>
@@ -177,8 +169,6 @@
                 <input is="Combobox" value="Invalid value" invalid />
             </span>
         </div>
-
     </div>
-
 </body>
 </html>

@@ -3,24 +3,22 @@
 <head>
     <title>Scheduler</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
-    <link rel="stylesheet" href="../../assets/styles.css" />
-    <script src="../../assets/scripts.js"></script>
-    <script src="../../../../packages/html/dist/index.js"></script>
-
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css" />
+    <link rel="stylesheet" href="/packages/html/assets/styles.css" />
+    <script src="/packages/html/assets/scripts.js"></script>
+    <script src="/packages/html/dist/index.js"></script>
     <style>
         #test-area {
             grid-template-columns: 1fr;
             align-items: top;
         }
-
         th {
             text-align: left;
         }
+
     </style>
 </head>
 <body class="k-body">
-
     <div id="test-area" class="grid">
         <div class="k-widget k-scheduler">
             <div class="k-scheduler-toolbar k-toolbar">
@@ -55,8 +53,12 @@
                             <div class="k-scheduler-times">
                                 <table class="k-scheduler-table">
                                     <tbody>
-                                        <tr style="height: 37px;"><th>​</th></tr>
-                                        <tr style="height: 72px;"><th class="k-scheduler-times-all-day">all day</th></tr>
+                                        <tr style="height: 37px;">
+                                            <th>​</th>
+                                        </tr>
+                                        <tr style="height: 72px;">
+                                            <th class="k-scheduler-times-all-day">all day</th>
+                                        </tr>
                                     </tbody>
                                 </table>
                             </div>
@@ -67,11 +69,21 @@
                                     <table class="k-scheduler-table">
                                         <tbody>
                                             <tr>
-                                                <th colspan="1"><span class="k-link k-nav-day">Mon 6/10</span></th>
-                                                <th colspan="1"><span class="k-link k-nav-day">Tue 6/11</span></th>
-                                                <th colspan="1"><span class="k-link k-nav-day">Wed 6/12</span></th>
-                                                <th colspan="1"><span class="k-link k-nav-day">Thu 6/13</span></th>
-                                                <th colspan="1"><span class="k-link k-nav-day">Fri 6/14</span></th>
+                                                <th colspan="1">
+                                                    <span class="k-link k-nav-day">Mon 6/10</span>
+                                                </th>
+                                                <th colspan="1">
+                                                    <span class="k-link k-nav-day">Tue 6/11</span>
+                                                </th>
+                                                <th colspan="1">
+                                                    <span class="k-link k-nav-day">Wed 6/12</span>
+                                                </th>
+                                                <th colspan="1">
+                                                    <span class="k-link k-nav-day">Thu 6/13</span>
+                                                </th>
+                                                <th colspan="1">
+                                                    <span class="k-link k-nav-day">Fri 6/14</span>
+                                                </th>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -95,7 +107,9 @@
                                                 <div class="k-event-template">Two Weeks in NZ</div>
                                             </div>
                                             <span class="k-event-actions">
-                                                <a class="k-link k-event-delete"><i is="Icon" name="x"></i></a>
+                                                <a class="k-link k-event-delete">
+                                                    <i is="Icon" name="x"></i>
+                                                </a>
                                                 <i is="Icon" name="arrow-e"></i>
                                             </span>
                                             <span class="k-resize-handle k-resize-w"></span>
@@ -470,7 +484,9 @@
                                         <div class="k-event-template">Event title</div>
                                     </div>
                                     <span class="k-event-actions">
-                                        <a class="k-link k-event-delete"><i is="Icon" name="x"></i></a>
+                                        <a class="k-link k-event-delete">
+                                            <i is="Icon" name="x"></i>
+                                        </a>
                                     </span>
                                     <span class="k-resize-handle k-resize-n"></span>
                                     <span class="k-resize-handle k-resize-s"></span>
@@ -482,7 +498,9 @@
                                         <div class="k-event-template">Event title that is long and overflows, testing multiline and overflow styles</div>
                                     </div>
                                     <span class="k-event-actions">
-                                        <a class="k-link k-event-delete"><i is="Icon" name="x"></i></a>
+                                        <a class="k-link k-event-delete">
+                                            <i is="Icon" name="x"></i>
+                                        </a>
                                     </span>
                                     <span class="k-resize-handle k-resize-n"></span>
                                     <span class="k-resize-handle k-resize-s"></span>
@@ -496,7 +514,9 @@
                                         <div class="k-event-template">Hovered Recurring event</div>
                                     </div>
                                     <span class="k-event-actions">
-                                        <a class="k-link k-event-delete"><i is="Icon" name="x"></i></a>
+                                        <a class="k-link k-event-delete">
+                                            <i is="Icon" name="x"></i>
+                                        </a>
                                     </span>
                                     <span class="k-resize-handle k-resize-n"></span>
                                     <span class="k-resize-handle k-resize-s"></span>
@@ -508,7 +528,9 @@
                                         <div class="k-event-template">Selected event</div>
                                     </div>
                                     <span class="k-event-actions">
-                                        <a class="k-link k-event-delete"><i is="Icon" name="x"></i></a>
+                                        <a class="k-link k-event-delete">
+                                            <i is="Icon" name="x"></i>
+                                        </a>
                                     </span>
                                     <span class="k-resize-handle k-resize-n"></span>
                                     <span class="k-resize-handle k-resize-s"></span>
@@ -521,7 +543,9 @@
                                         <!-- Verifies that event colors can be set on the main wrapper -->
                                     </div>
                                     <span class="k-event-actions">
-                                        <a class="k-link k-event-delete"><i is="Icon" name="x"></i></a>
+                                        <a class="k-link k-event-delete">
+                                            <i is="Icon" name="x"></i>
+                                        </a>
                                     </span>
                                     <span class="k-resize-handle k-resize-n"></span>
                                     <span class="k-resize-handle k-resize-s"></span>
@@ -533,25 +557,27 @@
                                         <div class="k-event-template">Drag hint</div>
                                     </div>
                                     <span class="k-event-actions">
-                                        <a class="k-link k-event-delete"><i is="Icon" name="x"></i></a>
+                                        <a class="k-link k-event-delete">
+                                            <i is="Icon" name="x"></i>
+                                        </a>
                                     </span>
                                     <span class="k-resize-handle k-resize-n"></span>
                                     <span class="k-resize-handle k-resize-s"></span>
                                 </div>
                                 <div style="background-color: rgb(248, 163, 152); border-color: rgb(248, 163, 152); left: 175px; top: 100px; height: 71px; width: 166px;" class="k-event k-event-inverse k-event-ongoing">
-                                        <span class="k-event-actions">
-                                        </span>
-                                        <div>
-                                            <div class="k-event-template k-event-time">10:00 AM - 11:00 AM</div>
-                                            <div class="k-event-template">Inverse Background</div>
-                                        </div>
-                                        <span class="k-event-actions">
-                                            <a class="k-link k-event-delete">
-                                                <i is="Icon" name="x"></i>
-                                            </a>
-                                        </span>
-                                        <span class="k-resize-handle k-resize-n"></span>
-                                        <span class="k-resize-handle k-resize-s"></span>
+                                    <span class="k-event-actions">
+                                    </span>
+                                    <div>
+                                        <div class="k-event-template k-event-time">10:00 AM - 11:00 AM</div>
+                                        <div class="k-event-template">Inverse Background</div>
+                                    </div>
+                                    <span class="k-event-actions">
+                                        <a class="k-link k-event-delete">
+                                            <i is="Icon" name="x"></i>
+                                        </a>
+                                    </span>
+                                    <span class="k-resize-handle k-resize-n"></span>
+                                    <span class="k-resize-handle k-resize-s"></span>
                                 </div>
                                 <div style="top: 110px; height: 71px; width: 166px; left: 708px;" class="k-event k-event-ongoing">
                                     <span class="k-event-actions"></span>
@@ -560,10 +586,16 @@
                                         <div class="k-event-template">Multi-Day event</div>
                                     </div>
                                     <span class="k-event-actions">
-                                        <a class="k-link k-event-delete"><i is="Icon" name="x"></i></a>
+                                        <a class="k-link k-event-delete">
+                                            <i is="Icon" name="x"></i>
+                                        </a>
                                     </span>
-                                    <span class="k-event-top-actions"><i is="Icon" name="arrow-n"></i></span>
-                                    <span class="k-event-bottom-actions"><i is="Icon" name="arrow-s"></i></span>
+                                    <span class="k-event-top-actions">
+                                        <i is="Icon" name="arrow-n"></i>
+                                    </span>
+                                    <span class="k-event-bottom-actions">
+                                        <i is="Icon" name="arrow-s"></i>
+                                    </span>
                                     <span class="k-resize-handle k-resize-n"></span>
                                     <span class="k-resize-handle k-resize-s"></span>
                                 </div>
@@ -576,7 +608,6 @@
                 <button is="Button" icon="clock" class="k-scheduler-fullday">Show business hours</button>
             </div>
         </div>
-
         <div id="scheduler" class="k-widget k-scheduler k-floatwrap">
             <div class="k-scheduler-toolbar k-toolbar">
                 <span class="k-button-group k-scheduler-navigation">
@@ -626,7 +657,9 @@
                                     <table class="k-scheduler-table" style="width: 100%;">
                                         <tbody>
                                             <tr>
-                                                <th colspan="8" class="k-slot-cell"><span class="k-link k-nav-day">February 18</span></th>
+                                                <th colspan="8" class="k-slot-cell">
+                                                    <span class="k-link k-nav-day">February 18</span>
+                                                </th>
                                             </tr>
                                             <tr>
                                                 <th colspan="2">7:00 AM</th>
@@ -658,14 +691,14 @@
                                 <table class="k-scheduler-table" style="width: 100%;">
                                     <tbody>
                                         <tr style="height: 50px;">
-                                        <td class="k-today k-nonwork-hour"></td>
-                                        <td class="k-today k-nonwork-hour"></td>
-                                        <td class="k-today"></td>
-                                        <td class="k-today"></td>
-                                        <td class="k-today"></td>
-                                        <td class="k-today"></td>
-                                        <td class="k-today"></td>
-                                        <td class="k-today"></td>
+                                            <td class="k-today k-nonwork-hour"></td>
+                                            <td class="k-today k-nonwork-hour"></td>
+                                            <td class="k-today"></td>
+                                            <td class="k-today"></td>
+                                            <td class="k-today"></td>
+                                            <td class="k-today"></td>
+                                            <td class="k-today"></td>
+                                            <td class="k-today"></td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -678,8 +711,6 @@
                 <button is="Button" icon="clock" class="k-scheduler-fullday">Show business hours</button>
             </div>
         </div>
-
     </div>
-
 </body>
 </html>

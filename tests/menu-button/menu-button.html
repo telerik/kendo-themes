@@ -3,26 +3,25 @@
 <head>
     <title>Menu button</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
-    <link rel="stylesheet" href="../../assets/styles.css" />
-    <script src="../../assets/scripts.js"></script>
-    <script src="../../../../packages/html/dist/index.js"></script>
-
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css" />
+    <link rel="stylesheet" href="/packages/html/assets/styles.css" />
+    <script src="/packages/html/assets/scripts.js"></script>
+    <script src="/packages/html/dist/index.js"></script>
     <style>
         #test-area {
             grid-template-columns: 120px repeat(3, 1fr);
         }
+
     </style>
 </head>
 <body class="k-body">
-
     <div id="test-area" class="k-d-grid k-grid-cols-4">
-
-        <span><small>state / fillmode</small></span>
+        <span>
+            <small>state / fillmode</small>
+        </span>
         <span>solid</span>
         <span>outline</span>
         <span>flat</span>
-
         <span>normal</span>
         <span>
             <button is="MenuButton" icon="save">Button</button>
@@ -33,7 +32,6 @@
         <span>
             <button is="MenuButton" fillMode="flat" icon="save">Button</button>
         </span>
-
         <span>hover</span>
         <span>
             <button is="MenuButton" icon="save" hover>Button</button>
@@ -44,7 +42,6 @@
         <span>
             <button is="MenuButton" fillMode="flat" icon="save" hover>Button</button>
         </span>
-
         <span>focus</span>
         <span>
             <button is="MenuButton" icon="save" focus>Button</button>
@@ -55,7 +52,6 @@
         <span>
             <button is="MenuButton" fillMode="flat" icon="save" focus>Button</button>
         </span>
-
         <span>active</span>
         <span>
             <button is="MenuButton" icon="save" active>Button</button>
@@ -66,7 +62,6 @@
         <span>
             <button is="MenuButton" fillMode="flat" icon="save" active>Button</button>
         </span>
-
         <span>disabled</span>
         <span>
             <button is="MenuButton" icon="save" disabled>Button</button>
@@ -77,7 +72,6 @@
         <span>
             <button is="MenuButton" fillMode="flat" icon="save" disabled>Button</button>
         </span>
-
         <span>rtl</span>
         <span>
             <button is="MenuButton" icon="save" dir="rtl">Button</button>
@@ -88,8 +82,6 @@
         <span>
             <button is="MenuButton" fillMode="flat" icon="save" dir="rtl">Button</button>
         </span>
-
     </div>
-
 </body>
 </html>

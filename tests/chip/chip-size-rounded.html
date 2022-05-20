@@ -3,30 +3,28 @@
 <head>
     <title>Chip Size Rounded</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
-    <link rel="stylesheet" href="../../assets/styles.css" />
-    <script src="../../assets/scripts.js"></script>
-    <script src="../../../../packages/html/dist/index.js"></script>
-
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css" />
+    <link rel="stylesheet" href="/packages/html/assets/styles.css" />
+    <script src="/packages/html/assets/scripts.js"></script>
+    <script src="/packages/html/dist/index.js"></script>
     <style>
         #test-area {
             grid-template-columns: 120px repeat(3, 1fr);
         }
-
         #test-area {
             gap: 10px;
         }
+
     </style>
 </head>
 <body class="k-body">
-
     <div id="test-area" class="k-d-grid k-grid-cols-3">
-
-        <span><small>rounded / size</small></span>
+        <span>
+            <small>rounded / size</small>
+        </span>
         <span>small</span>
         <span>medium</span>
         <span>large</span>
-
         <span>none</span>
         <span>
             <div is="Chip" text="Text" size="small" rounded="null"></div>
@@ -57,7 +55,6 @@
         <span>
             <div is="Chip" text="Text" size="large" showAvatar="true" rounded="null"></div>
         </span>
-
         <span>small</span>
         <span>
             <div is="Chip" text="Text" size="small" rounded="small"></div>
@@ -88,7 +85,6 @@
         <span>
             <div is="Chip" text="Text" size="large" showAvatar="true" rounded="small"></div>
         </span>
-
         <span>medium</span>
         <span>
             <div is="Chip" text="Text" size="small" rounded="medium"></div>
@@ -119,7 +115,6 @@
         <span>
             <div is="Chip" text="Text" size="large" showAvatar="true" rounded="medium"></div>
         </span>
-
         <span>large</span>
         <span>
             <div is="Chip" text="Text" size="small" rounded="large"></div>
@@ -150,7 +145,6 @@
         <span>
             <div is="Chip" text="Text" size="large" showAvatar="true" rounded="large"></div>
         </span>
-
         <span>full</span>
         <span>
             <div is="Chip" text="Text" size="small" rounded="full"></div>

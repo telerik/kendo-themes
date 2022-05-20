@@ -3,19 +3,22 @@
 <head>
     <title>Editor React</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
-    <link rel="stylesheet" href="../../assets/styles.css" />
-    <script src="../../assets/scripts.js"></script>
-    <script src="../../../../packages/html/dist/index.js"></script>
-
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css" />
+    <link rel="stylesheet" href="/packages/html/assets/styles.css" />
+    <script src="/packages/html/assets/scripts.js"></script>
+    <script src="/packages/html/dist/index.js"></script>
     <style>
         #test-area {
             grid-template-columns: repeat(2, 1fr);
         }
+        /* needed for test */
+        .k-editor-content > .ProseMirror {
+            white-space: normal;
+        }
+
     </style>
 </head>
 <body class="k-body">
-
     <div id="test-area" class="grid">
         <span>React Editor with iFrame</span>
         <span>React Editor without iFrame</span>
@@ -115,10 +118,11 @@
                         <button is="Button" icon="clear-css"></button>
                     </div>
                 </div>
-                <div class="k-editor-content"><iframe frameborder="0" class="k-iframe" src="editor-iFrameContent.html"></iframe></div>
+                <div class="k-editor-content">
+                    <iframe frameborder="0" class="k-iframe" src="editor-iFrameContent.html"></iframe>
+                </div>
             </div>
         </section>
-
         <section>
             <div class="k-widget k-editor" style="height: 400px;">
                 <div class="k-editor-toolbar k-toolbar">
@@ -209,16 +213,28 @@
                         <input is="Colorpicker" value="red" iconName="foreground-color" />
                     </div>
                     <div class="k-tool-group">
-                        <input is="Colorpicker" value="fuchsia" iconName="paint"/>
+                        <input is="Colorpicker" value="fuchsia" iconName="paint" />
                     </div>
                     <div class="k-tool-group">
                         <button is="Button" icon="clear-css"></button>
                     </div>
                 </div>
-                <div class="k-editor-content"><div class="ProseMirror"><p>The Kendo React Editor allows your users to edit HTML in a familiar, user-friendly way.</p><p>In this version, the Editor provides the core HTML editing engine which includes basic text formatting, hyperlinks, and lists. The widget <strong>outputs identical HTML</strong> across all major browsers, follows accessibility standards, and provides API for content manipulation.</p><p>Features include:</p><ul><li>Text formatting</li><li>Bulleted and numbered lists</li><li>Hyperlinks</li><li>Cross-browser support</li><li>Identical HTML output across browsers</li></ul></div></div>
-             </div>
+                <div class="k-editor-content">
+                    <div class="ProseMirror">
+                        <p>The Kendo React Editor allows your users to edit HTML in a familiar, user-friendly way.</p>
+                        <p>In this version, the Editor provides the core HTML editing engine which includes basic text formatting, hyperlinks, and lists. The widget <strong>outputs identical HTML</strong> across all major browsers, follows accessibility standards, and provides API for content manipulation.</p>
+                        <p>Features include:</p>
+                        <ul>
+                            <li>Text formatting</li>
+                            <li>Bulleted and numbered lists</li>
+                            <li>Hyperlinks</li>
+                            <li>Cross-browser support</li>
+                            <li>Identical HTML output across browsers</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </section>
-
         <section></section>
         <section>
             <div class="k-widget k-editor">
@@ -231,10 +247,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="k-editor-content"><div contenteditable="true" class="ProseMirror"><p data-placeholder="Enter some content ..." class="k-placeholder"><br></p></div></div>
+                <div class="k-editor-content">
+                    <div contenteditable="true" class="ProseMirror">
+                        <p data-placeholder="Enter some content ..." class="k-placeholder">
+                            <br>
+                        </p>
+                    </div>
+                </div>
             </div>
         </section>
     </div>
-
 </body>
 </html>

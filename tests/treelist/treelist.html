@@ -1,24 +1,18 @@
 <!doctype html>
 <html lang="en" class="k-no-animations">
-
 <head>
     <title>TreeList</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
-    <link rel="stylesheet" href="../../assets/styles.css" />
-    <script src="../../assets/scripts.js"></script>
-    <script src="../../../../packages/html/dist/index.js"></script>
-
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css" />
+    <link rel="stylesheet" href="/packages/html/assets/styles.css" />
+    <script src="/packages/html/assets/scripts.js"></script>
+    <script src="/packages/html/dist/index.js"></script>
     <style>
     </style>
 </head>
-
 <body class="k-body">
-
     <div id="test-area" class="grid">
-
         <section>
-
             <div id="treelist" class="k-treelist k-grid k-widget k-grid-no-scrollbar">
                 <div class="k-grid-header" style="padding-right: 0;">
                     <div class="k-grid-header-wrap">
@@ -29,10 +23,18 @@
                             </colgroup>
                             <thead>
                                 <tr>
-                                    <th class="k-header k-with-icon"><a class="k-header-column-menu"><i is="Icon" name="more-vertical"></i></a><a class="k-link">First
-                                            Name</a></th>
-                                    <th class="k-header k-with-icon"><a class="k-header-column-menu"><i is="Icon" name="more-vertical"></i></a><a class="k-link">Last
-                                            Name</a></th>
+                                    <th class="k-header k-with-icon">
+                                        <a class="k-header-column-menu">
+                                            <i is="Icon" name="more-vertical"></i>
+                                        </a>
+                                        <a class="k-link">First Name</a>
+                                    </th>
+                                    <th class="k-header k-with-icon">
+                                        <a class="k-header-column-menu">
+                                            <i is="Icon" name="more-vertical"></i>
+                                        </a>
+                                        <a class="k-link">Last Name</a>
+                                    </th>
                                 </tr>
                             </thead>
                         </table>
@@ -46,16 +48,16 @@
                         </colgroup>
                         <tbody>
                             <tr>
-                                <td><i is="Icon" name="expand"></i>Daryl</td>
+                                <td>
+                                    <i is="Icon" name="expand"></i>Daryl
+                                </td>
                                 <td>Sweeney</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
             </div>
-
         </section>
-
         <section>
             <div id="treelist" class="k-treelist k-grid k-widget">
                 <div class="k-grid-header">
@@ -69,15 +71,21 @@
                             <thead>
                                 <tr>
                                     <th class="k-header k-with-icon k-filterable">
-                                        <a class="k-grid-filter"><i is="Icon" name="filter"></i></a>
+                                        <a class="k-grid-filter">
+                                            <i is="Icon" name="filter"></i>
+                                        </a>
                                         <a class="k-link">First Name</a>
                                     </th>
                                     <th class="k-header k-with-icon k-filterable">
-                                        <a class="k-grid-filter"><i is="Icon" name="filter"></i></a>
+                                        <a class="k-grid-filter">
+                                            <i is="Icon" name="filter"></i>
+                                        </a>
                                         <a class="k-link">Last Name</a>
                                     </th>
                                     <th class="k-header k-with-icon k-filterable">
-                                        <a class="k-grid-filter"><i is="Icon" name="filter"></i></a>
+                                        <a class="k-grid-filter">
+                                            <i is="Icon" name="filter"></i>
+                                        </a>
                                         <a class="k-link">Position</a>
                                     </th>
                                 </tr>
@@ -94,29 +102,47 @@
                         </colgroup>
                         <tbody>
                             <tr class="k-treelist-group">
-                                <td><i is="Icon" name="collapse"></i>Daryl</td>
+                                <td>
+                                    <i is="Icon" name="collapse"></i>Daryl
+                                </td>
                                 <td>Sweeney</td>
                                 <td>CEO</td>
                             </tr>
                             <tr class="k-alt k-treelist-group">
-                                <td><i is="Icon" name="none"></i><i is="Icon" name="collapse"></i>Guy
+                                <td>
+                                    <i is="Icon" name="none"></i>
+                                    <i is="Icon" name="collapse"></i>Guy
                                 </td>
                                 <td>Wooten</td>
                                 <td>Chief Technical Officer</td>
                             </tr>
                             <tr class="k-treelist-group">
-                                <td><i is="Icon" name="none"></i><i is="Icon" name="none"></i><i is="Icon" name="collapse"></i>Buffy</td>
+                                <td>
+                                    <i is="Icon" name="none"></i>
+                                    <i is="Icon" name="none"></i>
+                                    <i is="Icon" name="collapse"></i>Buffy
+                                </td>
                                 <td>Weber</td>
                                 <td>VP, Engineering</td>
                             </tr>
                             <tr class="k-alt k-treelist-group">
-                                <td><i is="Icon" name="none"></i><i is="Icon" name="none"></i><i is="Icon" name="none"></i><i is="Icon" name="collapse"></i>Hyacinth
+                                <td>
+                                    <i is="Icon" name="none"></i>
+                                    <i is="Icon" name="none"></i>
+                                    <i is="Icon" name="none"></i>
+                                    <i is="Icon" name="collapse"></i>Hyacinth
                                 </td>
                                 <td>Hood</td>
                                 <td>Team Lead</td>
                             </tr>
                             <tr>
-                                <td><i is="Icon" name="none"></i><i is="Icon" name="none"></i><i is="Icon" name="none"></i><i is="Icon" name="none"></i><i is="Icon" name="none"></i>Akeem</td>
+                                <td>
+                                    <i is="Icon" name="none"></i>
+                                    <i is="Icon" name="none"></i>
+                                    <i is="Icon" name="none"></i>
+                                    <i is="Icon" name="none"></i>
+                                    <i is="Icon" name="none"></i>Akeem
+                                </td>
                                 <td>Carr</td>
                                 <td>Junior Software Developer</td>
                             </tr>
@@ -126,7 +152,5 @@
             </div>
         </section>
     </div>
-
 </body>
-
 </html>

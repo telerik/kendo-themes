@@ -3,11 +3,10 @@
 <head>
     <title>Progressbar Horizontal Reverse</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
-    <link rel="stylesheet" href="../../assets/styles.css" />
-    <script src="../../assets/scripts.js"></script>
-    <script src="../../../../packages/html/dist/index.js"></script>
-
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css" />
+    <link rel="stylesheet" href="/packages/html/assets/styles.css" />
+    <script src="/packages/html/assets/scripts.js"></script>
+    <script src="/packages/html/dist/index.js"></script>
     <style>
         .k-progressbar-indeterminate,
         .k-progressbar-indeterminate::before,
@@ -15,18 +14,17 @@
             /* Comment if you need to preview the indeterminate animation */
             animation: none !important;
         }
-
         .grid hr {
             width: 100%;
             grid-column: 1 / -1;
             visibility: hidden;
         }
-
         .subgrid-horizontal {
             display: grid;
             grid-template-columns: auto 1fr 1fr;
             grid-gap: 20px;
         }
+
     </style>
 </head>
 <body class="k-body">
@@ -35,7 +33,6 @@
             <span></span>
             <span>LTR</span>
             <span>RTL</span>
-
             <span>Reverse start</span>
             <div class="k-widget k-progressbar k-progressbar-horizontal k-progressbar-reverse">
                 <span class="k-progress-status-wrap k-progress-start">
@@ -57,7 +54,6 @@
                     </span>
                 </div>
             </div>
-
             <span>Reverse center</span>
             <div class="k-widget k-progressbar k-progressbar-horizontal k-progressbar-reverse">
                 <span class="k-progress-status-wrap k-progress-center">
@@ -79,7 +75,6 @@
                     </span>
                 </div>
             </div>
-
             <span>Reverse end</span>
             <div class="k-widget k-progressbar k-progressbar-horizontal k-progressbar-reverse">
                 <span class="k-progress-status-wrap k-progress-end">
@@ -101,7 +96,6 @@
                     </span>
                 </div>
             </div>
-
             <span>R 100% start</span>
             <div class="k-widget k-progressbar k-progressbar-horizontal k-progressbar-reverse">
                 <span class="k-progress-status-wrap k-progress-start">
@@ -123,7 +117,6 @@
                     </span>
                 </div>
             </div>
-
             <span>R 100% center</span>
             <div class="k-widget k-progressbar k-progressbar-horizontal k-progressbar-reverse">
                 <span class="k-progress-status-wrap k-progress-center">
@@ -145,7 +138,6 @@
                     </span>
                 </div>
             </div>
-
             <span>R 100% end</span>
             <div class="k-widget k-progressbar k-progressbar-horizontal k-progressbar-reverse">
                 <span class="k-progress-status-wrap k-progress-end">
@@ -170,5 +162,4 @@
         </div>
     </div>
 </body>
-
 </html>

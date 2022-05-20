@@ -1,29 +1,30 @@
 <!doctype html>
 <html lang="en">
-
 <head>
     <title>Spreadsheet</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
-    <link rel="stylesheet" href="../../assets/styles.css" />
-    <script src="../../assets/scripts.js"></script>
-    <script src="../../../../packages/html/dist/index.js"></script>
-
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css" />
+    <link rel="stylesheet" href="/packages/html/assets/styles.css" />
+    <script src="/packages/html/assets/scripts.js"></script>
+    <script src="/packages/html/dist/index.js"></script>
     <style>
         .k-spreadsheet-view {
             overflow: hidden;
         }
         .k-spreadsheet-fixed-container {
-            width: calc( 100% - var(--kendo-scrollbar-width, 0) );
-            height: calc( 100% - var(--kendo-scrollbar-width, 0) );
+            width: calc(100% - var(--kendo-scrollbar-width, 0));
+            height: calc(100% - var(--kendo-scrollbar-width, 0));
             overflow: hidden;
         }
         .k-spreadsheet-cell {
             white-space: normal;
         }
+        /* needed for test */
+        .k-spreadsheet-formula-input {
+            white-space: normal;
+        }
     </style>
 </head>
-
 <body class="k-body">
     <div id="test-area">
         <div style="width: 100%;" class="k-widget k-spreadsheet">
@@ -108,7 +109,13 @@
                 </div>
                 <div class="k-spreadsheet-formula-bar">
                     <i is="Icon" name="formula-fx"></i>
-                    <div class="k-spreadsheet-formula-input k-spreadsheet-array-formula" style="white-space: pre;"><span class="k-syntax-startexp k-syntax-at-point">=</span><span class="k-syntax-func">Product</span><span class="k-syntax-punc">(</span><span class="k-syntax-ref k-series-a">C3:C11</span><span class="k-syntax-punc">)</span></div>
+                    <div class="k-spreadsheet-formula-input k-spreadsheet-array-formula">
+                        <span class="k-syntax-startexp k-syntax-at-point">=</span>
+                        <span class="k-syntax-func">Product</span>
+                        <span class="k-syntax-punc">(</span>
+                        <span class="k-syntax-ref k-series-a">C3:C11</span>
+                        <span class="k-syntax-punc">)</span>
+                    </div>
                     <div class="k-widget k-tooltip" style="position:absolute; display:none">A1</div>
                     <div class="k-group-header" style="display:none"></div>
                     <div class="k-list-scroller"></div>
@@ -177,13 +184,19 @@
                                 <div class="k-vertical-align-bottom">1</div>
                             </div>
                             <div class="k-spreadsheet-cell" style="outline: rgb(230, 230, 230) solid 1px; background-color: rgb(255, 255, 255); color: rgb(0, 62, 117); font-family: Arial; font-size: 12px; left: 431px; top: 96px; width: 114px; height: 19px; text-align: right;">
-                                <div class="k-vertical-align-bottom"><span>$12.39</span></div>
+                                <div class="k-vertical-align-bottom">
+                                    <span>$12.39</span>
+                                </div>
                             </div>
                             <div class="k-spreadsheet-cell" style="outline: rgb(230, 230, 230) solid 1px; background-color: rgb(255, 255, 255); color: rgb(0, 62, 117); font-family: Arial; font-size: 12px; left: 546px; top: 96px; width: 114px; height: 19px; text-align: right;">
-                                <div class="k-vertical-align-bottom"><span>$2.48</span></div>
+                                <div class="k-vertical-align-bottom">
+                                    <span>$2.48</span>
+                                </div>
                             </div>
                             <div class="k-spreadsheet-cell" style="outline: rgb(230, 230, 230) solid 1px; background-color: rgb(255, 255, 255); color: rgb(0, 62, 117); font-family: Arial; font-size: 12px; left: 661px; top: 96px; width: 154px; height: 19px; text-align: right;">
-                                <div class="k-vertical-align-bottom"><span>$14.87</span></div>
+                                <div class="k-vertical-align-bottom">
+                                    <span>$14.87</span>
+                                </div>
                             </div>
                             <div class="k-spreadsheet-cell k-single k-spreadsheet-has-comment k-dirty-cell" style="outline: rgb(230, 230, 230) solid 1px; background-color: rgb(255, 255, 255); color: rgb(0, 62, 117); font-family: Arial; font-size: 12px; left: 816px; top: 96px; width: 63px; height: 19px;">
                                 <span class="k-dirty"></span>
@@ -198,13 +211,19 @@
                                 <div class="k-vertical-align-bottom">2</div>
                             </div>
                             <div class="k-spreadsheet-cell" style="outline: rgb(206, 219, 230) solid 1px; background-color: rgb(229, 243, 255); color: rgb(0, 62, 117); font-family: Arial; font-size: 12px; left: 431px; top: 116px; width: 114px; height: 19px; text-align: right;">
-                                <div class="k-vertical-align-bottom"><span>$8.79</span></div>
+                                <div class="k-vertical-align-bottom">
+                                    <span>$8.79</span>
+                                </div>
                             </div>
                             <div class="k-spreadsheet-cell" style="outline: rgb(206, 219, 230) solid 1px; background-color: rgb(229, 243, 255); color: rgb(0, 62, 117); font-family: Arial; font-size: 12px; left: 546px; top: 116px; width: 114px; height: 19px; text-align: right;">
-                                <div class="k-vertical-align-bottom"><span>$3.52</span></div>
+                                <div class="k-vertical-align-bottom">
+                                    <span>$3.52</span>
+                                </div>
                             </div>
                             <div class="k-spreadsheet-cell" style="outline: rgb(206, 219, 230) solid 1px; background-color: rgb(229, 243, 255); color: rgb(0, 62, 117); font-family: Arial; font-size: 12px; left: 661px; top: 116px; width: 154px; height: 19px; text-align: right;">
-                                <div class="k-vertical-align-bottom"><span>$21.10</span></div>
+                                <div class="k-vertical-align-bottom">
+                                    <span>$21.10</span>
+                                </div>
                             </div>
                             <div class="k-spreadsheet-cell" style="outline: rgb(206, 219, 230) solid 1px; background-color: rgb(229, 243, 255); color: rgb(0, 62, 117); font-family: Arial; font-size: 12px; left: 816px; top: 116px; width: 63px; height: 19px;">
                             </div>
@@ -218,13 +237,19 @@
                                 <div class="k-vertical-align-bottom">1</div>
                             </div>
                             <div class="k-spreadsheet-cell" style="outline: rgb(230, 230, 230) solid 1px; background-color: rgb(255, 255, 255); color: rgb(0, 62, 117); font-family: Arial; font-size: 12px; left: 431px; top: 136px; width: 114px; height: 19px; text-align: right;">
-                                <div class="k-vertical-align-bottom"><span>$13.99</span></div>
+                                <div class="k-vertical-align-bottom">
+                                    <span>$13.99</span>
+                                </div>
                             </div>
                             <div class="k-spreadsheet-cell" style="outline: rgb(230, 230, 230) solid 1px; background-color: rgb(255, 255, 255); color: rgb(0, 62, 117); font-family: Arial; font-size: 12px; left: 546px; top: 136px; width: 114px; height: 19px; text-align: right;">
-                                <div class="k-vertical-align-bottom"><span>$2.80</span></div>
+                                <div class="k-vertical-align-bottom">
+                                    <span>$2.80</span>
+                                </div>
                             </div>
                             <div class="k-spreadsheet-cell" style="outline: rgb(230, 230, 230) solid 1px; background-color: rgb(255, 255, 255); color: rgb(0, 62, 117); font-family: Arial; font-size: 12px; left: 661px; top: 136px; width: 154px; height: 19px; text-align: right;">
-                                <div class="k-vertical-align-bottom"><span>$16.79</span></div>
+                                <div class="k-vertical-align-bottom">
+                                    <span>$16.79</span>
+                                </div>
                             </div>
                             <div class="k-spreadsheet-cell" style="outline: rgb(230, 230, 230) solid 1px; background-color: rgb(255, 255, 255); color: rgb(0, 62, 117); font-family: Arial; font-size: 12px; left: 816px; top: 136px; width: 63px; height: 19px;">
                             </div>
@@ -238,13 +263,19 @@
                                 <div class="k-vertical-align-bottom">1</div>
                             </div>
                             <div class="k-spreadsheet-cell" style="outline: rgb(206, 219, 230) solid 1px; background-color: rgb(229, 243, 255); color: rgb(0, 62, 117); font-family: Arial; font-size: 12px; left: 431px; top: 156px; width: 114px; height: 19px; text-align: right;">
-                                <div class="k-vertical-align-bottom"><span>$9.49</span></div>
+                                <div class="k-vertical-align-bottom">
+                                    <span>$9.49</span>
+                                </div>
                             </div>
                             <div class="k-spreadsheet-cell" style="outline: rgb(206, 219, 230) solid 1px; background-color: rgb(229, 243, 255); color: rgb(0, 62, 117); font-family: Arial; font-size: 12px; left: 546px; top: 156px; width: 114px; height: 19px; text-align: right;">
-                                <div class="k-vertical-align-bottom"><span>$1.90</span></div>
+                                <div class="k-vertical-align-bottom">
+                                    <span>$1.90</span>
+                                </div>
                             </div>
                             <div class="k-spreadsheet-cell" style="outline: rgb(206, 219, 230) solid 1px; background-color: rgb(229, 243, 255); color: rgb(0, 62, 117); font-family: Arial; font-size: 12px; left: 661px; top: 156px; width: 154px; height: 19px; text-align: right;">
-                                <div class="k-vertical-align-bottom"><span>$11.39</span></div>
+                                <div class="k-vertical-align-bottom">
+                                    <span>$11.39</span>
+                                </div>
                             </div>
                             <div class="k-spreadsheet-cell" style="outline: rgb(206, 219, 230) solid 1px; background-color: rgb(229, 243, 255); color: rgb(0, 62, 117); font-family: Arial; font-size: 12px; left: 816px; top: 156px; width: 63px; height: 19px;">
                             </div>
@@ -258,13 +289,19 @@
                                 <div class="k-vertical-align-bottom">3</div>
                             </div>
                             <div class="k-spreadsheet-cell" style="outline: rgb(230, 230, 230) solid 1px; background-color: rgb(255, 255, 255); color: rgb(0, 62, 117); font-family: Arial; font-size: 12px; left: 431px; top: 176px; width: 114px; height: 19px; text-align: right;">
-                                <div class="k-vertical-align-bottom"><span>$11.49</span></div>
+                                <div class="k-vertical-align-bottom">
+                                    <span>$11.49</span>
+                                </div>
                             </div>
                             <div class="k-spreadsheet-cell" style="outline: rgb(230, 230, 230) solid 1px; background-color: rgb(255, 255, 255); color: rgb(0, 62, 117); font-family: Arial; font-size: 12px; left: 546px; top: 176px; width: 114px; height: 19px; text-align: right;">
-                                <div class="k-vertical-align-bottom"><span>$6.89</span></div>
+                                <div class="k-vertical-align-bottom">
+                                    <span>$6.89</span>
+                                </div>
                             </div>
                             <div class="k-spreadsheet-cell" style="outline: rgb(230, 230, 230) solid 1px; background-color: rgb(255, 255, 255); color: rgb(0, 62, 117); font-family: Arial; font-size: 12px; left: 661px; top: 176px; width: 154px; height: 19px; text-align: right;">
-                                <div class="k-vertical-align-bottom"><span>$41.36</span></div>
+                                <div class="k-vertical-align-bottom">
+                                    <span>$41.36</span>
+                                </div>
                             </div>
                             <div class="k-spreadsheet-cell" style="outline: rgb(230, 230, 230) solid 1px; background-color: rgb(255, 255, 255); color: rgb(0, 62, 117); font-family: Arial; font-size: 12px; left: 816px; top: 176px; width: 63px; height: 19px;">
                             </div>
@@ -278,13 +315,19 @@
                                 <div class="k-vertical-align-bottom">1</div>
                             </div>
                             <div class="k-spreadsheet-cell" style="outline: rgb(206, 219, 230) solid 1px; background-color: rgb(229, 243, 255); color: rgb(0, 62, 117); font-family: Arial; font-size: 12px; left: 431px; top: 196px; width: 114px; height: 19px; text-align: right;">
-                                <div class="k-vertical-align-bottom"><span>$10.99</span></div>
+                                <div class="k-vertical-align-bottom">
+                                    <span>$10.99</span>
+                                </div>
                             </div>
                             <div class="k-spreadsheet-cell" style="outline: rgb(206, 219, 230) solid 1px; background-color: rgb(229, 243, 255); color: rgb(0, 62, 117); font-family: Arial; font-size: 12px; left: 546px; top: 196px; width: 114px; height: 19px; text-align: right;">
-                                <div class="k-vertical-align-bottom"><span>$2.20</span></div>
+                                <div class="k-vertical-align-bottom">
+                                    <span>$2.20</span>
+                                </div>
                             </div>
                             <div class="k-spreadsheet-cell" style="outline: rgb(206, 219, 230) solid 1px; background-color: rgb(229, 243, 255); color: rgb(0, 62, 117); font-family: Arial; font-size: 12px; left: 661px; top: 196px; width: 154px; height: 19px; text-align: right;">
-                                <div class="k-vertical-align-bottom"><span>$13.19</span></div>
+                                <div class="k-vertical-align-bottom">
+                                    <span>$13.19</span>
+                                </div>
                             </div>
                             <div class="k-spreadsheet-cell" style="outline: rgb(206, 219, 230) solid 1px; background-color: rgb(229, 243, 255); color: rgb(0, 62, 117); font-family: Arial; font-size: 12px; left: 816px; top: 196px; width: 63px; height: 19px;">
                             </div>
@@ -298,13 +341,19 @@
                                 <div class="k-vertical-align-bottom">5</div>
                             </div>
                             <div class="k-spreadsheet-cell" style="outline: rgb(230, 230, 230) solid 1px; background-color: rgb(255, 255, 255); color: rgb(0, 62, 117); font-family: Arial; font-size: 12px; left: 431px; top: 216px; width: 114px; height: 19px; text-align: right;">
-                                <div class="k-vertical-align-bottom"><span>$6.99</span></div>
+                                <div class="k-vertical-align-bottom">
+                                    <span>$6.99</span>
+                                </div>
                             </div>
                             <div class="k-spreadsheet-cell" style="outline: rgb(230, 230, 230) solid 1px; background-color: rgb(255, 255, 255); color: rgb(0, 62, 117); font-family: Arial; font-size: 12px; left: 546px; top: 216px; width: 114px; height: 19px; text-align: right;">
-                                <div class="k-vertical-align-bottom"><span>$6.99</span></div>
+                                <div class="k-vertical-align-bottom">
+                                    <span>$6.99</span>
+                                </div>
                             </div>
                             <div class="k-spreadsheet-cell" style="outline: rgb(230, 230, 230) solid 1px; background-color: rgb(255, 255, 255); color: rgb(0, 62, 117); font-family: Arial; font-size: 12px; left: 661px; top: 216px; width: 154px; height: 19px; text-align: right;">
-                                <div class="k-vertical-align-bottom"><span>$41.94</span></div>
+                                <div class="k-vertical-align-bottom">
+                                    <span>$41.94</span>
+                                </div>
                             </div>
                             <div class="k-spreadsheet-cell" style="outline: rgb(230, 230, 230) solid 1px; background-color: rgb(255, 255, 255); color: rgb(0, 62, 117); font-family: Arial; font-size: 12px; left: 816px; top: 216px; width: 63px; height: 19px;">
                             </div>
@@ -318,13 +367,19 @@
                                 <div class="k-vertical-align-bottom">4</div>
                             </div>
                             <div class="k-spreadsheet-cell" style="outline: rgb(206, 219, 230) solid 1px; background-color: rgb(229, 243, 255); color: rgb(0, 62, 117); font-family: Arial; font-size: 12px; left: 431px; top: 236px; width: 114px; height: 19px; text-align: right;">
-                                <div class="k-vertical-align-bottom"><span>$4.99</span></div>
+                                <div class="k-vertical-align-bottom">
+                                    <span>$4.99</span>
+                                </div>
                             </div>
                             <div class="k-spreadsheet-cell" style="outline: rgb(206, 219, 230) solid 1px; background-color: rgb(229, 243, 255); color: rgb(0, 62, 117); font-family: Arial; font-size: 12px; left: 546px; top: 236px; width: 114px; height: 19px; text-align: right;">
-                                <div class="k-vertical-align-bottom"><span>$3.99</span></div>
+                                <div class="k-vertical-align-bottom">
+                                    <span>$3.99</span>
+                                </div>
                             </div>
                             <div class="k-spreadsheet-cell" style="outline: rgb(206, 219, 230) solid 1px; background-color: rgb(229, 243, 255); color: rgb(0, 62, 117); font-family: Arial; font-size: 12px; left: 661px; top: 236px; width: 154px; height: 19px; text-align: right;">
-                                <div class="k-vertical-align-bottom"><span>$23.95</span></div>
+                                <div class="k-vertical-align-bottom">
+                                    <span>$23.95</span>
+                                </div>
                             </div>
                             <div class="k-spreadsheet-cell" style="outline: rgb(206, 219, 230) solid 1px; background-color: rgb(229, 243, 255); color: rgb(0, 62, 117); font-family: Arial; font-size: 12px; left: 816px; top: 236px; width: 63px; height: 19px;">
                             </div>
@@ -338,13 +393,19 @@
                                 <div class="k-vertical-align-bottom">3</div>
                             </div>
                             <div class="k-spreadsheet-cell" style="outline: rgb(230, 230, 230) solid 1px; background-color: rgb(255, 255, 255); color: rgb(0, 62, 117); font-family: Arial; font-size: 12px; left: 431px; top: 256px; width: 114px; height: 19px; text-align: right;">
-                                <div class="k-vertical-align-bottom"><span>$4.49</span></div>
+                                <div class="k-vertical-align-bottom">
+                                    <span>$4.49</span>
+                                </div>
                             </div>
                             <div class="k-spreadsheet-cell" style="outline: rgb(230, 230, 230) solid 1px; background-color: rgb(255, 255, 255); color: rgb(0, 62, 117); font-family: Arial; font-size: 12px; left: 546px; top: 256px; width: 114px; height: 19px; text-align: right;">
-                                <div class="k-vertical-align-bottom"><span>$2.69</span></div>
+                                <div class="k-vertical-align-bottom">
+                                    <span>$2.69</span>
+                                </div>
                             </div>
                             <div class="k-spreadsheet-cell" style="outline: rgb(230, 230, 230) solid 1px; background-color: rgb(255, 255, 255); color: rgb(0, 62, 117); font-family: Arial; font-size: 12px; left: 661px; top: 256px; width: 154px; height: 19px; text-align: right;">
-                                <div class="k-vertical-align-bottom"><span>$16.16</span></div>
+                                <div class="k-vertical-align-bottom">
+                                    <span>$16.16</span>
+                                </div>
                             </div>
                             <div class="k-spreadsheet-cell" style="outline: rgb(230, 230, 230) solid 1px; background-color: rgb(255, 255, 255); color: rgb(0, 62, 117); font-family: Arial; font-size: 12px; left: 816px; top: 256px; width: 63px; height: 19px;">
                             </div>
@@ -400,7 +461,9 @@
                                 <div class="k-vertical-align-bottom">Tip:</div>
                             </div>
                             <div class="k-spreadsheet-cell" style="outline: rgb(174, 203, 230) solid 1px; background-color: rgb(193, 226, 255); color: rgb(0, 62, 117); font-family: Arial; font-weight: bold; font-size: 12px; left: 661px; top: 316px; width: 154px; height: 24px; text-align: right;">
-                                <div class="k-vertical-align-bottom"><span>$20.07</span></div>
+                                <div class="k-vertical-align-bottom">
+                                    <span>$20.07</span>
+                                </div>
                             </div>
                             <div class="k-spreadsheet-cell" style="outline: rgb(174, 203, 230) solid 1px; background-color: rgb(193, 226, 255); color: rgb(0, 62, 117); font-family: Arial; font-size: 12px; left: 816px; top: 316px; width: 63px; height: 24px;">
                             </div>
@@ -412,14 +475,18 @@
                                 <div class="k-vertical-align-bottom">Total Amount:</div>
                             </div>
                             <div class="k-spreadsheet-cell" style="outline: rgb(174, 203, 230) solid 1px; background-color: rgb(193, 226, 255); color: rgb(0, 62, 117); font-family: Arial; font-weight: bold; font-size: 20px; left: 661px; top: 341px; width: 154px; height: 49px; text-align: right;">
-                                <div class="k-vertical-align-bottom"><span>$220.82</span></div>
+                                <div class="k-vertical-align-bottom">
+                                    <span>$220.82</span>
+                                </div>
                             </div>
                             <div class="k-spreadsheet-cell" style="outline: rgb(174, 203, 230) solid 1px; background-color: rgb(193, 226, 255); color: rgb(0, 62, 117); font-family: Arial; font-size: 12px; left: 816px; top: 341px; width: 63px; height: 49px;">
                             </div>
                         </div>
                         <div class="k-selection-wrapper">
                             <div class="k-spreadsheet-selection k-single-selection" style="width: 216px; height: 21px; top: 135px; left: 132px;"></div>
-                            <div class="k-button k-spreadsheet-editor-button" style="left: 347px; top: 135px; height: 20px;"><i is="Icon" name="calendar"></i></div>
+                            <div class="k-button k-spreadsheet-editor-button" style="left: 347px; top: 135px; height: 20px;">
+                                <i is="Icon" name="calendar"></i>
+                            </div>
                             <div class="k-spreadsheet-cell k-spreadsheet-active-cell k-top k-single" style="outline: rgb(86, 163, 230) solid 1px; background-color: rgb(96, 181, 255); color: white; font-family: Arial; text-align: center; font-size: 32px; left: 33px; top: 21px; width: 878px; height: 69px;">
                                 <div class="k-vertical-align-bottom">Invoice #52 - 06/23/2015</div>
                             </div>
@@ -542,8 +609,7 @@
                         </colgroup>
                         <tbody>
                             <tr style="height: 70px;">
-                                <td colspan="7" rowspan="1" style="background-color: rgb(96, 181, 255); color: white; font-family: Arial; text-align: center; font-size: 32px; border-color: rgb(96, 181, 255);">
-                                    Invoice #52 - 06/23/2015</td>
+                                <td colspan="7" rowspan="1" style="background-color: rgb(96, 181, 255); color: white; font-family: Arial; text-align: center; font-size: 32px; border-color: rgb(96, 181, 255);"> Invoice #52 - 06/23/2015</td>
                             </tr>
                         </tbody>
                     </table>
@@ -574,6 +640,5 @@
             </div>
         </div>
     </div>
-
 </body>
 </html>

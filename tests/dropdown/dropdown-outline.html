@@ -3,11 +3,10 @@
 <head>
     <title>Outline Dropdown</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
-    <link rel="stylesheet" href="../../assets/styles.css" />
-    <script src="../../assets/scripts.js"></script>
-    <script src="../../../../packages/html/dist/index.js"></script>
-
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css" />
+    <link rel="stylesheet" href="/packages/html/assets/styles.css" />
+    <script src="/packages/html/assets/scripts.js"></script>
+    <script src="/packages/html/dist/index.js"></script>
     <style>
         #test-area {
             max-width: 660px;
@@ -15,15 +14,13 @@
         .k-dropdown {
             width: 100%;
         }
+
     </style>
 </head>
 <body class="k-body">
-
     <div id="test-area" class="k-d-grid k-grid-cols-2">
-
         <span>Outline Dropdown</span>
         <span>Outline Dropdown RTL</span>
-
         <!-- empty -->
         <div>
             <input is="DropdownList" fillMode="outline" placeholder="DropdownList..." />
@@ -31,8 +28,6 @@
         <div dir="rtl">
             <input is="DropdownList" fillMode="outline" placeholder="DropdownList..." />
         </div>
-
-
         <!-- normal -->
         <div>
             <input is="DropdownList" fillMode="outline" value="Normal" />
@@ -40,8 +35,6 @@
         <div dir="rtl">
             <input is="DropdownList" fillMode="outline" value="Normal" />
         </div>
-
-
         <!-- hover -->
         <div>
             <input is="DropdownList" fillMode="outline" value="Hover" hover />
@@ -49,8 +42,6 @@
         <div dir="rtl">
             <input is="DropdownList" fillMode="outline" value="Hover" hover />
         </div>
-
-
         <!-- focus -->
         <div>
             <input is="DropdownList" fillMode="outline" value="Focus" focus />
@@ -58,8 +49,6 @@
         <div dir="rtl">
             <input is="DropdownList" fillMode="outline" value="Focus" focus />
         </div>
-
-
         <!-- disabled -->
         <div>
             <input is="DropdownList" fillMode="outline" value="Disabled" disabled />
@@ -67,8 +56,6 @@
         <div dir="rtl">
             <input is="DropdownList" fillMode="outline" value="Disabled" disabled />
         </div>
-
-
         <!-- invalid -->
         <div>
             <input is="DropdownList" fillMode="outline" value="Invalid" invalid />
@@ -76,8 +63,6 @@
         <div dir="rtl">
             <input is="DropdownList" fillMode="outline" value="Invalid" invalid />
         </div>
-
-
         <!-- invalid + focus -->
         <div>
             <input is="DropdownList" fillMode="outline" value="Invalid focus" invalid focus />
@@ -85,8 +70,6 @@
         <div dir="rtl">
             <input is="DropdownList" fillMode="outline" value="Invalid focus" invalid focus />
         </div>
-
-
         <!-- loading -->
         <div>
             <input is="DropdownList" fillMode="outline" value="Loading..." loading />
@@ -94,8 +77,6 @@
         <div dir="rtl">
             <input is="DropdownList" fillMode="outline" value="Loading..." loading />
         </div>
-
     </div>
-
 </body>
 </html>

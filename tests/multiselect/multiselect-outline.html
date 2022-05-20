@@ -3,25 +3,22 @@
 <head>
     <title>Outline Multiselect</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
-    <link rel="stylesheet" href="../../assets/styles.css" />
-    <script src="../../assets/scripts.js"></script>
-    <script src="../../../../packages/html/dist/index.js"></script>
-
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css" />
+    <link rel="stylesheet" href="/packages/html/assets/styles.css" />
+    <script src="/packages/html/assets/scripts.js"></script>
+    <script src="/packages/html/dist/index.js"></script>
     <style>
         #test-area {
             grid-template-columns: 160px repeat(2, 300px);
         }
+
     </style>
 </head>
 <body class="k-body">
-
     <div id="test-area" class="k-d-grid k-grid-cols-3">
-
         <span></span>
         <span>Outline MultiSelect</span>
         <span>Outline MultiSelect RTL</span>
-
         <!-- empty -->
         <div>Empty</div>
         <div>
@@ -30,7 +27,6 @@
         <div dir="rtl">
             <input is="MultiSelect" fillMode="outline" placeholder="MultiSelect..." />
         </div>
-
         <!-- arrow button -->
         <div>Arrow button</div>
         <div>
@@ -39,7 +35,6 @@
         <div dir="rtl">
             <input is="MultiSelect" fillMode="outline" showArrowButton="true" placeholder="MultiSelect with arrow button" />
         </div>
-
         <!-- normal -->
         <div>Normal</div>
         <div>
@@ -56,7 +51,6 @@
                 </slot>
             </span>
         </div>
-
         <!-- hover -->
         <div>Hover</div>
         <div>
@@ -73,7 +67,6 @@
                 </slot>
             </span>
         </div>
-
         <!-- focus -->
         <div>Focus</div>
         <div>
@@ -90,7 +83,6 @@
                 </slot>
             </span>
         </div>
-
         <!-- disabled -->
         <div>Disabled</div>
         <div>
@@ -107,7 +99,6 @@
                 </slot>
             </span>
         </div>
-
         <!-- invalid -->
         <div>Invalid</div>
         <div>
@@ -124,7 +115,6 @@
                 </slot>
             </span>
         </div>
-
         <!-- invalid + focus -->
         <div>Invalid + Focus</div>
         <div>
@@ -141,16 +131,14 @@
                 </slot>
             </span>
         </div>
-
         <!-- loading -->
         <div>Loading</div>
         <div>
-            <input is="MultiSelect" fillMode="outline" placeholder="Loading..." loading/>
+            <input is="MultiSelect" fillMode="outline" placeholder="Loading..." loading />
         </div>
         <div dir="rtl">
             <input is="MultiSelect" fillMode="outline" placeholder="Loading..." loading />
         </div>
-
         <!-- multi line + overflow -->
         <div>Multi Line + Overflow</div>
         <div>
@@ -169,8 +157,6 @@
                 </slot>
             </span>
         </div>
-
     </div>
-
 </body>
 </html>
