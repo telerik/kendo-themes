@@ -3,21 +3,19 @@
 <head>
     <title>Card RTL</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
-    <link rel="stylesheet" href="../../assets/styles.css" />
-    <script src="../../assets/scripts.js"></script>
-    <script src="../../../../packages/html/dist/index.js"></script>
-
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css" />
+    <link rel="stylesheet" href="/packages/html/assets/styles.css" />
+    <script src="/packages/html/assets/scripts.js"></script>
+    <script src="/packages/html/dist/index.js"></script>
     <style>
         #test-area {
             grid-template-columns: repeat(3, 1fr);
         }
+
     </style>
 </head>
 <body class="k-body">
-
     <div id="test-area" class="grid k-rtl">
-
         <div class="k-card k-card-vertical">
             <div class="k-card-body">
                 <h5 class="k-card-title">RTL Vertical Card</h5>
@@ -30,7 +28,6 @@
                 <button is="Button" fillMode="flat" themeColor="primary">Action 2</button>
             </div>
         </div>
-
         <div class="k-card k-card-horizontal">
             <div class="k-d-flex k-flex-column">
                 <div class="k-card-header">
@@ -40,9 +37,7 @@
                 <div class="k-card-body">
                     <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </div>
-                <div class="k-card-footer">
-                    Footer
-                </div>
+                <div class="k-card-footer"> Footer </div>
             </div>
             <span class="k-separator k-separator-vertical"></span>
             <div is="ActionButtons" class="k-card-actions" alignment="stretched" orientation="vertical">
@@ -50,7 +45,6 @@
                 <button is="Button" fillMode="flat" themeColor="primary">Action 2</button>
             </div>
         </div>
-
         <div class="k-card k-card-horizontal">
             <img class="k-card-image" src="http://via.placeholder.com/80x80" />
             <div class="k-d-flex k-flex-column">
@@ -65,12 +59,9 @@
                 <div is="ActionButtons" class="k-card-actions" alignment="stretched">
                     <button is="Button" fillMode="flat" themeColor="primary">Action 1</button>
                 </div>
-                <div class="k-card-footer">
-                    Footer here
-                </div>
+                <div class="k-card-footer"> Footer here </div>
             </div>
         </div>
-
     </div>
 </body>
 </html>

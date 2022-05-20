@@ -3,16 +3,16 @@
 <head>
     <title>Scheduler Angular Dayview -- RTL</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
-    <link rel="stylesheet" href="../../assets/styles.css" />
-    <script src="../../assets/scripts.js"></script>
-    <script src="../../../../packages/html/dist/index.js"></script>
-
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css" />
+    <link rel="stylesheet" href="/packages/html/assets/styles.css" />
+    <script src="/packages/html/assets/scripts.js"></script>
+    <script src="/packages/html/dist/index.js"></script>
     <style>
         #test-area {
             grid-template-columns: 1fr;
             align-items: top;
         }
+
     </style>
 </head>
 <body class="k-body">
@@ -51,8 +51,12 @@
                         <div class="k-scheduler-times" style="width: 79px;">
                             <table class="k-scheduler-table">
                                 <tbody>
-                                    <tr><th>​</th></tr>
-                                    <tr><th class="k-scheduler-times-all-day" style="height: 46px;">all day</th></tr>
+                                    <tr>
+                                        <th>​</th>
+                                    </tr>
+                                    <tr>
+                                        <th class="k-scheduler-times-all-day" style="height: 46px;">all day</th>
+                                    </tr>
                                 </tbody>
                             </table>
                         </div>
@@ -60,19 +64,33 @@
                             <div class="k-scheduler-header-wrap">
                                 <table class="k-scheduler-table">
                                     <tbody>
-                                        <tr><th><span class="k-link k-nav-day">Mon, 6/24</span></th></tr>
+                                        <tr>
+                                            <th>
+                                                <span class="k-link k-nav-day">Mon, 6/24</span>
+                                            </th>
+                                        </tr>
                                     </tbody>
                                 </table>
                                 <div style="position: relative;">
                                     <table class="k-scheduler-table k-scheduler-header-all-day">
                                         <tbody>
-                                            <tr><td style="height: 46px;"></td></tr>
+                                            <tr>
+                                                <td style="height: 46px;"></td>
+                                            </tr>
                                         </tbody>
                                     </table>
                                     <div style="background-color: rgb(110, 179, 250); border-color: rgb(110, 179, 250); display: block; width: 454px; right: 1px; top: 0px; height: 25px;" class="k-event">
-                                        <span class="k-event-actions"><i is="Icon" name="arrow-e"></i></span>
-                                        <div><div class="k-event-template">Attending HR Conference</div></div>
-                                        <span class="k-event-actions"><a class="k-link k-event-delete"><i is="Icon" name="x"></i></a></span>
+                                        <span class="k-event-actions">
+                                            <i is="Icon" name="arrow-e"></i>
+                                        </span>
+                                        <div>
+                                            <div class="k-event-template">Attending HR Conference</div>
+                                        </div>
+                                        <span class="k-event-actions">
+                                            <a class="k-link k-event-delete">
+                                                <i is="Icon" name="x"></i>
+                                            </a>
+                                        </span>
                                         <span class="k-resize-handle k-resize-w"></span>
                                         <span class="k-resize-handle k-resize-e"></span>
                                     </div>
@@ -84,87 +102,217 @@
                         <div class="k-scheduler-times" style="height: 404px;">
                             <table class="k-scheduler-table">
                                 <tbody>
-                                    <tr><th>8:00 AM</th></tr>
-                                    <tr><th class="k-slot-cell"></th></tr>
-                                    <tr><th>9:00 AM</th></tr>
-                                    <tr><th class="k-slot-cell"></th></tr>
-                                    <tr><th>10:00 AM</th></tr>
-                                    <tr><th class="k-slot-cell"></th></tr>
-                                    <tr><th>11:00 AM</th></tr>
-                                    <tr><th class="k-slot-cell"></th></tr>
-                                    <tr><th>12:00 PM</th></tr>
-                                    <tr><th class="k-slot-cell"></th></tr>
-                                    <tr><th>1:00 PM</th></tr>
-                                    <tr><th class="k-slot-cell"></th></tr>
-                                    <tr><th>2:00 PM</th></tr>
-                                    <tr><th class="k-slot-cell"></th></tr>
-                                    <tr><th>3:00 PM</th></tr>
-                                    <tr><th class="k-slot-cell"></th></tr>
-                                    <tr><th>4:00 PM</th></tr>
-                                    <tr><th class="k-slot-cell"></th></tr>
-                                    <tr><th>5:00 PM</th></tr>
-                                    <tr><th class="k-slot-cell"></th></tr>
-                                    <tr><th>6:00 PM</th></tr>
-                                    <tr><th class="k-slot-cell"></th></tr>
-                                    <tr><th>7:00 PM</th></tr>
-                                    <tr><th class="k-slot-cell"></th></tr>
-                                    <tr><th>8:00 PM</th></tr>
-                                    <tr><th class="k-slot-cell"></th></tr>
-                                    <tr><th>9:00 PM</th></tr>
-                                    <tr><th class="k-slot-cell"></th></tr>
-                                    <tr><th>10:00 PM</th></tr>
-                                    <tr><th class="k-slot-cell"></th></tr>
-                                    <tr><th>11:00 PM</th></tr>
-                                    <tr><th class="k-slot-cell"></th></tr>
+                                    <tr>
+                                        <th>8:00 AM</th>
+                                    </tr>
+                                    <tr>
+                                        <th class="k-slot-cell"></th>
+                                    </tr>
+                                    <tr>
+                                        <th>9:00 AM</th>
+                                    </tr>
+                                    <tr>
+                                        <th class="k-slot-cell"></th>
+                                    </tr>
+                                    <tr>
+                                        <th>10:00 AM</th>
+                                    </tr>
+                                    <tr>
+                                        <th class="k-slot-cell"></th>
+                                    </tr>
+                                    <tr>
+                                        <th>11:00 AM</th>
+                                    </tr>
+                                    <tr>
+                                        <th class="k-slot-cell"></th>
+                                    </tr>
+                                    <tr>
+                                        <th>12:00 PM</th>
+                                    </tr>
+                                    <tr>
+                                        <th class="k-slot-cell"></th>
+                                    </tr>
+                                    <tr>
+                                        <th>1:00 PM</th>
+                                    </tr>
+                                    <tr>
+                                        <th class="k-slot-cell"></th>
+                                    </tr>
+                                    <tr>
+                                        <th>2:00 PM</th>
+                                    </tr>
+                                    <tr>
+                                        <th class="k-slot-cell"></th>
+                                    </tr>
+                                    <tr>
+                                        <th>3:00 PM</th>
+                                    </tr>
+                                    <tr>
+                                        <th class="k-slot-cell"></th>
+                                    </tr>
+                                    <tr>
+                                        <th>4:00 PM</th>
+                                    </tr>
+                                    <tr>
+                                        <th class="k-slot-cell"></th>
+                                    </tr>
+                                    <tr>
+                                        <th>5:00 PM</th>
+                                    </tr>
+                                    <tr>
+                                        <th class="k-slot-cell"></th>
+                                    </tr>
+                                    <tr>
+                                        <th>6:00 PM</th>
+                                    </tr>
+                                    <tr>
+                                        <th class="k-slot-cell"></th>
+                                    </tr>
+                                    <tr>
+                                        <th>7:00 PM</th>
+                                    </tr>
+                                    <tr>
+                                        <th class="k-slot-cell"></th>
+                                    </tr>
+                                    <tr>
+                                        <th>8:00 PM</th>
+                                    </tr>
+                                    <tr>
+                                        <th class="k-slot-cell"></th>
+                                    </tr>
+                                    <tr>
+                                        <th>9:00 PM</th>
+                                    </tr>
+                                    <tr>
+                                        <th class="k-slot-cell"></th>
+                                    </tr>
+                                    <tr>
+                                        <th>10:00 PM</th>
+                                    </tr>
+                                    <tr>
+                                        <th class="k-slot-cell"></th>
+                                    </tr>
+                                    <tr>
+                                        <th>11:00 PM</th>
+                                    </tr>
+                                    <tr>
+                                        <th class="k-slot-cell"></th>
+                                    </tr>
                                 </tbody>
                             </table>
                         </div>
                         <div class="k-scheduler-content" style="height: 404px;">
-
                             <table class="k-scheduler-table">
                                 <tbody>
-                                    <tr class="k-middle-row"><td></td></tr>
-                                    <tr><td></td></tr>
-                                    <tr class="k-middle-row"><td></td></tr>
-                                    <tr><td></td></tr>
-                                    <tr class="k-middle-row"><td></td></tr>
-                                    <tr><td></td></tr>
-                                    <tr class="k-middle-row"><td></td></tr>
-                                    <tr><td></td></tr>
-                                    <tr class="k-middle-row"><td></td></tr>
-                                    <tr><td></td></tr>
-                                    <tr class="k-middle-row"><td></td></tr>
-                                    <tr><td></td></tr>
-                                    <tr class="k-middle-row"><td></td></tr>
-                                    <tr><td></td></tr>
-                                    <tr class="k-middle-row"><td></td></tr>
-                                    <tr><td></td></tr>
-                                    <tr class="k-middle-row"><td></td></tr>
-                                    <tr><td></td></tr>
-                                    <tr class="k-middle-row"><td class="k-nonwork-hour"></td></tr>
-                                    <tr><td class="k-nonwork-hour"></td></tr>
-                                    <tr class="k-middle-row"><td class="k-nonwork-hour"></td></tr>
-                                    <tr><td class="k-nonwork-hour"></td></tr>
-                                    <tr class="k-middle-row"><td class="k-nonwork-hour"></td></tr>
-                                    <tr><td class="k-nonwork-hour"></td></tr>
-                                    <tr class="k-middle-row"><td class="k-nonwork-hour"></td></tr>
-                                    <tr><td class="k-nonwork-hour"></td></tr>
-                                    <tr class="k-middle-row"><td class="k-nonwork-hour"></td></tr>
-                                    <tr><td class="k-nonwork-hour"></td></tr>
-                                    <tr class="k-middle-row"><td class="k-nonwork-hour"></td></tr>
-                                    <tr><td class="k-nonwork-hour"></td></tr>
-                                    <tr class="k-middle-row"><td class="k-nonwork-hour"></td></tr>
-                                    <tr><td class="k-nonwork-hour"></td></tr>
+                                    <tr class="k-middle-row">
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="k-middle-row">
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="k-middle-row">
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="k-middle-row">
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="k-middle-row">
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="k-middle-row">
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="k-middle-row">
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="k-middle-row">
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="k-middle-row">
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="k-middle-row">
+                                        <td class="k-nonwork-hour"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="k-nonwork-hour"></td>
+                                    </tr>
+                                    <tr class="k-middle-row">
+                                        <td class="k-nonwork-hour"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="k-nonwork-hour"></td>
+                                    </tr>
+                                    <tr class="k-middle-row">
+                                        <td class="k-nonwork-hour"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="k-nonwork-hour"></td>
+                                    </tr>
+                                    <tr class="k-middle-row">
+                                        <td class="k-nonwork-hour"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="k-nonwork-hour"></td>
+                                    </tr>
+                                    <tr class="k-middle-row">
+                                        <td class="k-nonwork-hour"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="k-nonwork-hour"></td>
+                                    </tr>
+                                    <tr class="k-middle-row">
+                                        <td class="k-nonwork-hour"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="k-nonwork-hour"></td>
+                                    </tr>
+                                    <tr class="k-middle-row">
+                                        <td class="k-nonwork-hour"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="k-nonwork-hour"></td>
+                                    </tr>
                                 </tbody>
                             </table>
-
                             <div style="background-color: rgb(245, 138, 138); border-color: rgb(245, 138, 138); display: block; width: 56px; right: 3px; top: 37px; height: 443px;" class="k-event">
                                 <span class="k-event-actions"></span>
                                 <div>
                                     <div class="k-event-template k-event-time">8:30 AM - 2:30 PM</div>
                                     <div class="k-event-template">Car Service</div>
                                 </div>
-                                <span class="k-event-actions"><a class="k-link k-event-delete"><i is="Icon" name="x"></i></a></span>
+                                <span class="k-event-actions">
+                                    <a class="k-link k-event-delete">
+                                        <i is="Icon" name="x"></i>
+                                    </a>
+                                </span>
                                 <span class="k-resize-handle k-resize-n"></span>
                                 <span class="k-resize-handle k-resize-s"></span>
                             </div>
@@ -174,7 +322,11 @@
                                     <div class="k-event-template k-event-time">11:30 AM - 12:30 PM</div>
                                     <div class="k-event-template">Event 4</div>
                                 </div>
-                                <span class="k-event-actions"><a class="k-link k-event-delete"><i is="Icon" name="x"></i></a></span>
+                                <span class="k-event-actions">
+                                    <a class="k-link k-event-delete">
+                                        <i is="Icon" name="x"></i>
+                                    </a>
+                                </span>
                                 <span class="k-resize-handle k-resize-n"></span>
                                 <span class="k-resize-handle k-resize-s"></span>
                             </div>
@@ -184,7 +336,11 @@
                                     <div class="k-event-template k-event-time">11:30 AM - 12:30 PM</div>
                                     <div class="k-event-template">Event 5</div>
                                 </div>
-                                <span class="k-event-actions"><a class="k-link k-event-delete"><i is="Icon" name="x"></i></a></span>
+                                <span class="k-event-actions">
+                                    <a class="k-link k-event-delete">
+                                        <i is="Icon" name="x"></i>
+                                    </a>
+                                </span>
                                 <span class="k-resize-handle k-resize-n"></span>
                                 <span class="k-resize-handle k-resize-s"></span>
                             </div>
@@ -194,7 +350,11 @@
                                     <div class="k-event-template k-event-time">11:30 AM - 12:30 PM</div>
                                     <div class="k-event-template">Event 6</div>
                                 </div>
-                                <span class="k-event-actions"><a class="k-link k-event-delete"><i is="Icon" name="x"></i></a></span>
+                                <span class="k-event-actions">
+                                    <a class="k-link k-event-delete">
+                                        <i is="Icon" name="x"></i>
+                                    </a>
+                                </span>
                                 <span class="k-resize-handle k-resize-n"></span>
                                 <span class="k-resize-handle k-resize-s"></span>
                             </div>
@@ -204,7 +364,11 @@
                                     <div class="k-event-template k-event-time">11:30 AM - 12:30 PM</div>
                                     <div class="k-event-template">Event 1</div>
                                 </div>
-                                <span class="k-event-actions"><a class="k-link k-event-delete"><i is="Icon" name="x"></i></a></span>
+                                <span class="k-event-actions">
+                                    <a class="k-link k-event-delete">
+                                        <i is="Icon" name="x"></i>
+                                    </a>
+                                </span>
                                 <span class="k-resize-handle k-resize-n"></span>
                                 <span class="k-resize-handle k-resize-s"></span>
                             </div>
@@ -214,7 +378,11 @@
                                     <div class="k-event-template k-event-time">11:30 AM - 12:30 PM</div>
                                     <div class="k-event-template">Event 2</div>
                                 </div>
-                                <span class="k-event-actions"><a class="k-link k-event-delete"><i is="Icon" name="x"></i></a></span>
+                                <span class="k-event-actions">
+                                    <a class="k-link k-event-delete">
+                                        <i is="Icon" name="x"></i>
+                                    </a>
+                                </span>
                                 <span class="k-resize-handle k-resize-n"></span>
                                 <span class="k-resize-handle k-resize-s"></span>
                             </div>
@@ -224,7 +392,11 @@
                                     <div class="k-event-template k-event-time">11:30 AM - 12:30 PM</div>
                                     <div class="k-event-template">Event 3</div>
                                 </div>
-                                <span class="k-event-actions"><a class="k-link k-event-delete"><i is="Icon" name="x"></i></a></span>
+                                <span class="k-event-actions">
+                                    <a class="k-link k-event-delete">
+                                        <i is="Icon" name="x"></i>
+                                    </a>
+                                </span>
                                 <span class="k-resize-handle k-resize-n"></span>
                                 <span class="k-resize-handle k-resize-s"></span>
                             </div>
@@ -234,7 +406,11 @@
                                     <div class="k-event-template k-event-time">1:00 PM - 2:00 PM</div>
                                     <div class="k-event-template">Replace the printer on the 1st floor</div>
                                 </div>
-                                <span class="k-event-actions"><a class="k-link k-event-delete"><i is="Icon" name="x"></i></a></span>
+                                <span class="k-event-actions">
+                                    <a class="k-link k-event-delete">
+                                        <i is="Icon" name="x"></i>
+                                    </a>
+                                </span>
                                 <span class="k-resize-handle k-resize-n"></span>
                                 <span class="k-resize-handle k-resize-s"></span>
                             </div>
@@ -244,7 +420,11 @@
                                     <div class="k-event-template k-event-time">11:30 AM - 12:00 PM</div>
                                     <div class="k-event-template">Breakfast with Tom</div>
                                 </div>
-                                <span class="k-event-actions"><a class="k-link k-event-delete"><i is="Icon" name="x"></i></a></span>
+                                <span class="k-event-actions">
+                                    <a class="k-link k-event-delete">
+                                        <i is="Icon" name="x"></i>
+                                    </a>
+                                </span>
                                 <span class="k-resize-handle k-resize-n"></span>
                                 <span class="k-resize-handle k-resize-s"></span>
                             </div>
@@ -254,7 +434,11 @@
                                     <div class="k-event-template k-event-time">12:30 PM - 1:00 PM</div>
                                     <div class="k-event-template">Team planning meeting</div>
                                 </div>
-                                <span class="k-event-actions"><a class="k-link k-event-delete"><i is="Icon" name="x"></i></a></span>
+                                <span class="k-event-actions">
+                                    <a class="k-link k-event-delete">
+                                        <i is="Icon" name="x"></i>
+                                    </a>
+                                </span>
                                 <span class="k-resize-handle k-resize-n"></span>
                                 <span class="k-resize-handle k-resize-s"></span>
                             </div>

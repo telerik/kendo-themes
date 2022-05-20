@@ -3,11 +3,10 @@
 <head>
     <title>Grid Editing Popup</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
-    <link rel="stylesheet" href="../../assets/styles.css" />
-    <script src="../../assets/scripts.js"></script>
-    <script src="../../../../packages/html/dist/index.js"></script>
-
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css" />
+    <link rel="stylesheet" href="/packages/html/assets/styles.css" />
+    <script src="/packages/html/assets/scripts.js"></script>
+    <script src="/packages/html/dist/index.js"></script>
     <style>
         #test-area {
             width: 500px;
@@ -16,12 +15,11 @@
             width: 100%;
             position: relative;
         }
+
     </style>
 </head>
 <body class="k-body">
-
     <div id="test-area" class="k-d-grid k-grid-cols-1">
-
         <section>
             <div class="k-window">
                 <div class="k-window-titlebar">
@@ -82,19 +80,19 @@
                                     <ul class="k-upload-files k-reset">
                                         <li class="k-file">
                                             <div class="k-progressbar k-hidden">
-                                            <span class="k-progress" style="width: 100%;"></span>
-                                        </div>
-                                        <span class="k-file-group-wrapper">
-                                            <i is="Icon" class="k-file-group" name="file-image"></i>
-                                            <span class="k-file-state"></span>
-                                        </span>
-                                        <span class="k-file-name-size-wrapper">
-                                            <span class="k-file-name">67409197_2322469807839836_4126207508270284800_n.png</span>
-                                            <span class="k-file-size">24.34 KB</span>
-                                        </span>
-                                        <strong class="k-upload-status">
-                                            <button is="Button" fillMode="flat" icon="close" class="k-upload-action"></button>
-                                        </strong>
+                                                <span class="k-progress" style="width: 100%;"></span>
+                                            </div>
+                                            <span class="k-file-group-wrapper">
+                                                <i is="Icon" class="k-file-group" name="file-image"></i>
+                                                <span class="k-file-state"></span>
+                                            </span>
+                                            <span class="k-file-name-size-wrapper">
+                                                <span class="k-file-name">67409197_2322469807839836_4126207508270284800_n.png</span>
+                                                <span class="k-file-size">24.34 KB</span>
+                                            </span>
+                                            <strong class="k-upload-status">
+                                                <button is="Button" fillMode="flat" icon="close" class="k-upload-action"></button>
+                                            </strong>
                                         </li>
                                     </ul>
                                 </div>
@@ -102,13 +100,12 @@
                         </div>
                     </div>
                 </div>
-                <div is="ActionButtons"  class="k-window-buttons" alignment="end">
+                <div is="ActionButtons" class="k-window-buttons" alignment="end">
                     <button is="Button">Cancel</button>
                     <button is="Button" themeColor="primary">Update</button>
                 </div>
             </div>
         </section>
-
     </div>
 </body>
 </html>

@@ -3,43 +3,36 @@
 <head>
     <title>Form Field Dropdowns React</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
-    <link rel="stylesheet" href="../../assets/styles.css" />
-    <script src="../../assets/scripts.js"></script>
-    <script src="../../../../packages/html/dist/index.js"></script>
-
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css" />
+    <link rel="stylesheet" href="/packages/html/assets/styles.css" />
+    <script src="/packages/html/assets/scripts.js"></script>
+    <script src="/packages/html/dist/index.js"></script>
     <style>
         section {
             padding: 20px;
             border: 1px dashed gray;
         }
+
     </style>
 </head>
 <body class="k-body">
-
     <div id="test-area" class="k-d-grid k-grid-cols-2">
-
         <span>Vertical Form (React)</span>
         <span>Horizontal Form (React)</span>
-
         <section>
             <form class="k-form k-form-vertical">
-
                 <div class="k-form-field">
                     <label class="k-label">AutoComplete:</label>
                     <input is="Autocomplete" placeholder="Autocomplete..." />
                 </div>
-
                 <div class="k-form-field">
                     <label class="k-label">ComboBox:</label>
                     <input is="Combobox" placeholder="Combobox..." />
                 </div>
-
                 <div class="k-form-field">
                     <label class="k-label">DropDownList:</label>
                     <input is="DropdownList" placeholder="DropdownList..." />
                 </div>
-
                 <div class="k-form-field">
                     <label class="k-label">MultiSelect:</label>
                     <span is="MultiSelect">
@@ -48,35 +41,28 @@
                         </slot>
                     </span>
                 </div>
-
             </form>
         </section>
-
-
         <section>
             <form class="k-form k-form-horizontal">
-
                 <div class="k-form-field">
                     <label class="k-label">AutoComplete:</label>
                     <div class="k-form-field-wrap">
                         <input is="Autocomplete" placeholder="Autocomplete..." />
                     </div>
                 </div>
-
                 <div class="k-form-field">
                     <label class="k-label">ComboBox:</label>
                     <div class="k-form-field-wrap">
                         <input is="Combobox" placeholder="Combobox..." />
                     </div>
                 </div>
-
                 <div class="k-form-field">
                     <label class="k-label">DropDownList:</label>
                     <div class="k-form-field-wrap">
                         <input is="DropdownList" placeholder="DropdownList..." />
                     </div>
                 </div>
-
                 <div class="k-form-field">
                     <label class="k-label">MultiSelect:</label>
                     <div class="k-form-field-wrap">
@@ -87,11 +73,8 @@
                         </span>
                     </div>
                 </div>
-
             </form>
         </section>
-
     </div>
-
 </body>
 </html>

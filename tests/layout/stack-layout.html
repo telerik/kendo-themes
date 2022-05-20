@@ -1,50 +1,41 @@
 <!doctype html>
 <html lang="en" class="k-no-animations" style="--kendo-scrollbar-width:15px;">
-
 <head>
     <title>Stack layout</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" data-role="kendo-theme" href="../../../../../packages/default/dist/all.css">
-    <link rel="stylesheet" href="../../../assets/styles.css">
-    <script src="../../../assets/scripts.js"></script>
-    <script src="../../../../../packages/html/dist/index.js"></script>
-
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
+    <link rel="stylesheet" href="/packages/html/assets/styles.css">
+    <script src="/packages/html/assets/scripts.js"></script>
+    <script src="/packages/html/dist/index.js"></script>
     <style>
         .k-hstack,
         .k-vstack {
             outline: 1px dotted;
         }
-
         .k-hstack {
             height: 50px;
         }
-
         .k-vstack {
             height: 150px;
         }
-
         .box {
             box-sizing: border-box;
             padding: 4px;
             border: 1px solid #cccccc;
             background: #fafafa;
         }
+
     </style>
 </head>
-
 <body class="k-body">
-
     <div id="test-area" class="k-d-grid k-grid-cols-5">
-
         <span></span>
         <span class="k-colspan-4">Orientation horizontal</span>
-
         <span></span>
         <span>horizontal align left</span>
         <span>horizontal align center</span>
         <span>horizontal align stretch</span>
         <span>horizontal align right</span>
-
         <span>vertical align top</span>
         <section>
             <div class="k-stack-layout k-hstack k-align-items-start k-justify-content-start">
@@ -74,7 +65,6 @@
                 <div class="box">Box</div>
             </div>
         </section>
-
         <span>vertical align center</span>
         <section>
             <div class="k-stack-layout k-hstack k-align-items-center k-justify-content-start">
@@ -104,7 +94,6 @@
                 <div class="box">Box</div>
             </div>
         </section>
-
         <span>vertical align stretch</span>
         <section>
             <div class="k-stack-layout k-hstack k-align-items-stretch k-justify-content-start">
@@ -134,7 +123,6 @@
                 <div class="box">Box</div>
             </div>
         </section>
-
         <span>vertical align bottom</span>
         <section>
             <div class="k-stack-layout k-hstack k-align-items-end k-justify-content-start">
@@ -164,18 +152,14 @@
                 <div class="box">Box</div>
             </div>
         </section>
-
         <span class="k-colspan-all"></span>
-
         <span></span>
         <span class="k-colspan-4">Orientation vertical</span>
-
         <span></span>
         <span>horizontal align left</span>
         <span>horizontal align center</span>
         <span>horizontal align stretch</span>
         <span>horizontal align right</span>
-
         <span>vertical align top</span>
         <section>
             <div class="k-stack-layout k-vstack k-justify-content-start k-align-items-start">
@@ -205,7 +189,6 @@
                 <div class="box">Box</div>
             </div>
         </section>
-
         <span>vertical align center</span>
         <section>
             <div class="k-stack-layout k-vstack k-justify-content-center k-align-items-start">
@@ -235,7 +218,6 @@
                 <div class="box">Box</div>
             </div>
         </section>
-
         <span>vertical align stretch</span>
         <section>
             <div class="k-stack-layout k-vstack k-justify-content-stretch k-align-items-start">
@@ -265,7 +247,6 @@
                 <div class="box">Box</div>
             </div>
         </section>
-
         <span>vertical align bottom</span>
         <section>
             <div class="k-stack-layout k-vstack k-justify-content-end k-align-items-start">
@@ -295,11 +276,6 @@
                 <div class="box">Box</div>
             </div>
         </section>
-
     </div>
-
-
-
 </body>
-
 </html>

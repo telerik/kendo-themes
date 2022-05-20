@@ -3,27 +3,24 @@
 <head>
     <title>List</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
-    <link rel="stylesheet" href="../../assets/styles.css" />
-    <script src="../../assets/scripts.js"></script>
-    <script src="../../../../packages/html/dist/index.js"></script>
-
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css" />
+    <link rel="stylesheet" href="/packages/html/assets/styles.css" />
+    <script src="/packages/html/assets/scripts.js"></script>
+    <script src="/packages/html/dist/index.js"></script>
     <style>
-        .k-virtual-list > .k-item,
+        .k-virtual-list>.k-item,
         .k-virtual-list .k-list-item {
             position: relative;
         }
+
     </style>
 </head>
 <body class="k-body">
-
     <div id="test-area" class="k-d-grid k-grid-cols-4">
-
         <span>Static list</span>
         <span>Virtual list</span>
         <span>Static list (rtl)</span>
         <span>Virtual list (rtl)</span>
-
         <section>
             <select is="List">
                 <option>List item</option>
@@ -38,7 +35,6 @@
                 <option showCheckbox showIcon iconName="cog">Checkbox icon</option>
             </select>
         </section>
-
         <section>
             <select is="List" virtualization>
                 <option>List item</option>
@@ -53,7 +49,6 @@
                 <option showCheckbox showIcon iconName="cog">Checkbox icon</option>
             </select>
         </section>
-
         <section dir="rtl">
             <select is="List">
                 <option>List item</option>
@@ -68,7 +63,6 @@
                 <option showCheckbox showIcon iconName="cog">Checkbox icon</option>
             </select>
         </section>
-
         <section dir="rtl">
             <select is="List" virtualization>
                 <option>List item</option>
@@ -83,8 +77,6 @@
                 <option showCheckbox showIcon iconName="cog">Checkbox icon</option>
             </select>
         </section>
-
     </div>
-
 </body>
 </html>

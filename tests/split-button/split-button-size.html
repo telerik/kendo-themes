@@ -3,11 +3,10 @@
 <head>
     <title>Split button -- size and rounded</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
-    <link rel="stylesheet" href="../../assets/styles.css" />
-    <script src="../../assets/scripts.js"></script>
-    <script src="../../../../packages/html/dist/index.js"></script>
-
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css" />
+    <link rel="stylesheet" href="/packages/html/assets/styles.css" />
+    <script src="/packages/html/assets/scripts.js"></script>
+    <script src="/packages/html/dist/index.js"></script>
     <style>
         #test-area {
             max-width: 1240px;
@@ -17,17 +16,17 @@
         section {
             white-space: nowrap;
         }
+
     </style>
 </head>
 <body class="k-body">
-
     <div id="test-area" class="k-d-grid">
-
-        <span><small>rounded / size</small></span>
+        <span>
+            <small>rounded / size</small>
+        </span>
         <span>small</span>
         <span>medium</span>
         <span>large</span>
-
         <span>null</span>
         <section>
             <button is="SplitButton" size="small" rounded="none">Button</button>
@@ -44,7 +43,6 @@
             <button is="SplitButton" size="large" rounded="none" icon="folder">Button</button>
             <button is="SplitButton" size="large" rounded="none" icon="folder"></button>
         </section>
-
         <span>small</span>
         <section>
             <button is="SplitButton" size="small" rounded="small">Button</button>
@@ -61,7 +59,6 @@
             <button is="SplitButton" size="large" rounded="small" icon="folder">Button</button>
             <button is="SplitButton" size="large" rounded="small" icon="folder"></button>
         </section>
-
         <span>medium</span>
         <section>
             <button is="SplitButton" size="small">Button</button>
@@ -78,7 +75,6 @@
             <button is="SplitButton" size="large" icon="folder">Button</button>
             <button is="SplitButton" size="large" icon="folder"></button>
         </section>
-
         <span>large</span>
         <section>
             <button is="SplitButton" size="small" rounded="large">Button</button>
@@ -95,7 +91,6 @@
             <button is="SplitButton" size="large" rounded="large" icon="folder">Button</button>
             <button is="SplitButton" size="large" rounded="large" icon="folder"></button>
         </section>
-
         <span>full</span>
         <section>
             <button is="SplitButton" size="small" rounded="full">Button</button>
@@ -112,8 +107,6 @@
             <button is="SplitButton" size="large" rounded="full" icon="folder">Button</button>
             <button is="SplitButton" size="large" rounded="full" icon="folder"></button>
         </section>
-
     </div>
-
 </body>
 </html>

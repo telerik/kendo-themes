@@ -3,11 +3,10 @@
 <head>
     <title>Form Field Inputs RTL</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
-    <link rel="stylesheet" href="../../assets/styles.css" />
-    <script src="../../assets/scripts.js"></script>
-    <script src="../../../../packages/html/dist/index.js"></script>
-
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css" />
+    <link rel="stylesheet" href="/packages/html/assets/styles.css" />
+    <script src="/packages/html/assets/scripts.js"></script>
+    <script src="/packages/html/dist/index.js"></script>
     <style>
         section {
             padding: 20px;
@@ -18,41 +17,37 @@
             --kendo-slider-start: 0;
             --kendo-slider-end: 50;
         }
+
     </style>
 </head>
 <body class="k-body">
-
     <div id="test-area" class="k-d-grid k-grid-cols-2">
-
         <span>Vertical Form (Angular)</span>
         <span>Horizontal Form (Angular)</span>
-
         <section>
             <form class="k-form k-form-vertical">
-
                 <kendo-form-field class="k-form-field" dir="rtl">
                     <label class="k-label">Textbox:</label>
                     <div>
                         <input is="Textbox" />
                     </div>
                 </kendo-form-field>
-
                 <kendo-form-field class="k-form-field" dir="rtl">
                     <label class="k-label">Checkbox:</label>
                     <div>
                         <input is="Checkbox" />
                     </div>
                 </kendo-form-field>
-
                 <kendo-form-field class="k-form-field" dir="rtl">
                     <div>
                         <div class="k-form-field-checkbox-wrap">
-                            <input is="Checkbox" /><!--
-                            --><label class="k-checkbox-label">Label after the box</label>
+                            <input is="Checkbox" />
+                            <!--
+                            -->
+                            <label class="k-checkbox-label">Label after the box</label>
                         </div>
                     </div>
                 </kendo-form-field>
-
                 <kendo-form-field class="k-form-field" dir="rtl">
                     <label class="k-label">Radio (Y):</label>
                     <div>
@@ -61,7 +56,6 @@
                                 <input is="Radio" />
                                 <label class="k-radio-label">Male</label>
                             </li>
-
                             <li class="k-radio-list-item">
                                 <input is="Radio" />
                                 <label class="k-radio-label">Female</label>
@@ -69,7 +63,6 @@
                         </ul>
                     </div>
                 </kendo-form-field>
-
                 <kendo-form-field class="k-form-field" dir="rtl">
                     <label class="k-label">Radio (X):</label>
                     <div>
@@ -78,7 +71,6 @@
                                 <input is="Radio" />
                                 <label class="k-radio-label">Male</label>
                             </li>
-
                             <li class="k-radio-list-item">
                                 <input is="Radio" />
                                 <label class="k-radio-label">Female</label>
@@ -86,35 +78,30 @@
                         </ul>
                     </div>
                 </kendo-form-field>
-
                 <kendo-form-field class="k-form-field" dir="rtl">
                     <label class="k-label">Colorpicker:</label>
                     <div>
                         <input is="Colorpicker" dir="rtl" />
                     </div>
                 </kendo-form-field>
-
                 <kendo-form-field class="k-form-field" dir="rtl">
                     <label class="k-label">MaskedTextBox:</label>
                     <div>
                         <input is="MaskedTextbox" dir="rtl" />
                     </div>
                 </kendo-form-field>
-
                 <kendo-form-field class="k-form-field" dir="rtl">
                     <label class="k-label">NumericTextBox:</label>
                     <div>
                         <input is="NumericTextbox" dir="rtl" />
                     </div>
                 </kendo-form-field>
-
                 <kendo-form-field class="k-form-field" dir="rtl">
                     <label class="k-label">Switch:</label>
                     <div>
                         <input is="Switch" dir="rtl" onLabel="On" offLabel="Off" checked />
                     </div>
                 </kendo-form-field>
-
                 <kendo-form-field class="k-form-field" dir="rtl">
                     <label class="k-label">Slider:</label>
                     <div>
@@ -149,7 +136,6 @@
                         </div>
                     </div>
                 </kendo-form-field>
-
                 <kendo-form-field class="k-form-field" dir="rtl">
                     <div>
                         <span is="FloatingLabel" label="FloatingLabel" empty dir="rtl">
@@ -157,7 +143,6 @@
                         </span>
                     </div>
                 </kendo-form-field>
-
                 <kendo-form-field class="k-form-field" dir="rtl">
                     <div>
                         <span is="FloatingLabel" label="FloatingLabel (Focused)" empty focus dir="rtl">
@@ -165,7 +150,6 @@
                         </span>
                     </div>
                 </kendo-form-field>
-
                 <kendo-form-field class="k-form-field" dir="rtl">
                     <kendo-label>
                         <label class="k-label">Upload</label>
@@ -175,8 +159,7 @@
                             <div class="k-dropzone">
                                 <button is="Button" class="k-upload-button">Select files...</button>
                                 <kendo-upload-status-total class="k-upload-status k-upload-status-total">
-                                    <i is="Icon" name="check"></i>
-                                    Done
+                                    <i is="Icon" name="check"></i> Done
                                 </kendo-upload-status-total>
                                 <div class="k-dropzone-hint">Drop files here to upload</div>
                             </div>
@@ -204,36 +187,31 @@
                         </kendo-upload>
                     </div>
                 </kendo-form-field>
-
             </form>
         </section>
-
-
         <section>
             <form class="k-form k-form-horizontal">
-
                 <kendo-form-field class="k-form-field" dir="rtl">
                     <label class="k-label">Textbox:</label>
                     <div class="k-form-field-wrap">
                         <input is="Textbox" />
                     </div>
                 </kendo-form-field>
-
                 <kendo-form-field class="k-form-field" dir="rtl">
                     <label class="k-label">Checkbox:</label>
                     <div class="k-form-field-wrap">
                         <input is="Checkbox" />
                     </div>
                 </kendo-form-field>
-
                 <kendo-form-field class="k-form-field" dir="rtl">
                     <span class="k-label k-label-empty"></span>
                     <div class="k-form-field-wrap">
-                        <input is="Checkbox" /><!--
-                        --><label class="k-checkbox-label">Label after the box</label>
+                        <input is="Checkbox" />
+                        <!--
+                        -->
+                        <label class="k-checkbox-label">Label after the box</label>
                     </div>
                 </kendo-form-field>
-
                 <kendo-form-field class="k-form-field" dir="rtl">
                     <label class="k-label">Radio (Y):</label>
                     <div class="k-form-field-wrap">
@@ -242,7 +220,6 @@
                                 <input is="Radio" />
                                 <label class="k-radio-label">Male</label>
                             </li>
-
                             <li class="k-radio-list-item">
                                 <input is="Radio" />
                                 <label class="k-radio-label">Female</label>
@@ -250,7 +227,6 @@
                         </ul>
                     </div>
                 </kendo-form-field>
-
                 <kendo-form-field class="k-form-field" dir="rtl">
                     <label class="k-label">Radio (X):</label>
                     <div class="k-form-field-wrap">
@@ -259,7 +235,6 @@
                                 <input is="Radio" />
                                 <label class="k-radio-label">Male</label>
                             </li>
-
                             <li class="k-radio-list-item">
                                 <input is="Radio" />
                                 <label class="k-radio-label">Female</label>
@@ -267,35 +242,30 @@
                         </ul>
                     </div>
                 </kendo-form-field>
-
                 <kendo-form-field class="k-form-field" dir="rtl">
                     <label class="k-label">Colorpicker:</label>
                     <div class="k-form-field-wrap">
                         <input is="Colorpicker" dir="rtl" />
                     </div>
                 </kendo-form-field>
-
                 <kendo-form-field class="k-form-field" dir="rtl">
                     <label class="k-label">MaskedTextBox:</label>
                     <div class="k-form-field-wrap">
                         <input is="MaskedTextbox" />
                     </div>
                 </kendo-form-field>
-
                 <kendo-form-field class="k-form-field" dir="rtl">
                     <label class="k-label">NumericTextBox:</label>
                     <div class="k-form-field-wrap">
                         <input is="NumericTextbox" dir="rtl" />
                     </div>
                 </kendo-form-field>
-
                 <kendo-form-field class="k-form-field" dir="rtl">
                     <label class="k-label">Switch:</label>
                     <div class="k-form-field-wrap">
                         <input is="Switch" dir="rtl" onLabel="On" offLabel="Off" checked />
                     </div>
                 </kendo-form-field>
-
                 <kendo-form-field class="k-form-field" dir="rtl">
                     <label class="k-label">Slider:</label>
                     <div class="k-form-field-wrap">
@@ -330,7 +300,6 @@
                         </div>
                     </div>
                 </kendo-form-field>
-
                 <kendo-form-field class="k-form-field" dir="rtl">
                     <span class="k-label k-label-empty"></span>
                     <div class="k-form-field-wrap">
@@ -339,16 +308,14 @@
                         </span>
                     </div>
                 </kendo-form-field>
-
                 <kendo-form-field class="k-form-field" dir="rtl">
                     <span class="k-label k-label-empty"></span>
                     <div class="k-form-field-wrap">
                         <span is="FloatingLabel" label="FloatingLabel (Focused)" empty focus dir="rtl">
                             <input is="Textbox" focus />
-                        </spanl>
+                            </spanl>
                     </div>
                 </kendo-form-field>
-
                 <kendo-form-field class="k-form-field" dir="rtl">
                     <kendo-label>
                         <label class="k-label">Upload</label>
@@ -359,8 +326,7 @@
                                 <div class="k-dropzone">
                                     <button is="Button" class="k-upload-button">Select files...</button>
                                     <kendo-upload-status-total class="k-upload-status k-upload-status-total">
-                                        <i is="Icon" name="check"></i>
-                                        Done
+                                        <i is="Icon" name="check"></i> Done
                                     </kendo-upload-status-total>
                                     <div class="k-dropzone-hint">Drop files here to upload</div>
                                 </div>
@@ -389,11 +355,8 @@
                         </div>
                     </div>
                 </kendo-form-field>
-
             </form>
         </section>
-
     </div>
-
 </body>
 </html>

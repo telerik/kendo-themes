@@ -3,11 +3,10 @@
 <head>
     <title>Grid Grouping</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
-    <link rel="stylesheet" href="../../assets/styles.css" />
-    <script src="../../assets/scripts.js"></script>
-    <script src="../../../../packages/html/dist/index.js"></script>
-
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css" />
+    <link rel="stylesheet" href="/packages/html/assets/styles.css" />
+    <script src="/packages/html/assets/scripts.js"></script>
+    <script src="/packages/html/dist/index.js"></script>
     <style>
         #test-area {
             grid-template-columns: repeat(2, 1fr);
@@ -19,15 +18,13 @@
         .k-drag-clue {
             position: relative;
         }
+
     </style>
 </head>
 <body class="k-body">
-
     <div id="test-area" class="grid">
-
         <span>angular no grouping</span>
         <span>jquery no grouping</span>
-
         <kendo-grid class="k-widget k-grid k-grid-no-scrollbar">
             <div class="k-toolbar k-grid-toolbar">
                 <button is="Button">Button</button>
@@ -46,7 +43,10 @@
                     <div class="k-grid-header-wrap">
                         <table>
                             <colgroup>
-                                <col /><col /><col /><col />
+                                <col />
+                                <col />
+                                <col />
+                                <col />
                             </colgroup>
                             <thead>
                                 <tr>
@@ -64,7 +64,10 @@
                         <div>
                             <table class="k-grid-table">
                                 <colgroup>
-                                    <col /><col /><col /><col />
+                                    <col />
+                                    <col />
+                                    <col />
+                                    <col />
                                 </colgroup>
                                 <tbody>
                                     <tr>
@@ -80,7 +83,6 @@
                 </kendo-grid-list>
             </div>
         </kendo-grid>
-
         <div class="k-widget k-grid k-grid-no-scrollbar">
             <div class="k-toolbar k-grid-toolbar">
                 <button is="Button">Button</button>
@@ -91,21 +93,31 @@
                 </span>
             </div>
             <div class="k-grouping-header">
-                <div class="k-grouping-dropclue"></div>
-                Drag a column header and drop it here to group by that column
+                <div class="k-grouping-dropclue"></div> Drag a column header and drop it here to group by that column
             </div>
             <div class="k-grid-header">
                 <div class="k-grid-header-wrap">
                     <table>
                         <colgroup>
-                            <col /><col /><col /><col />
+                            <col />
+                            <col />
+                            <col />
+                            <col />
                         </colgroup>
                         <thead>
                             <tr>
-                                <th class="k-header"><a class="k-link">Name</a></th>
-                                <th class="k-header"><a class="k-link">Price</a></th>
-                                <th class="k-header"><a class="k-link">Available</a></th>
-                                <th class="k-header"><a class="k-link">Units</a></th>
+                                <th class="k-header">
+                                    <a class="k-link">Name</a>
+                                </th>
+                                <th class="k-header">
+                                    <a class="k-link">Price</a>
+                                </th>
+                                <th class="k-header">
+                                    <a class="k-link">Available</a>
+                                </th>
+                                <th class="k-header">
+                                    <a class="k-link">Units</a>
+                                </th>
                             </tr>
                         </thead>
                     </table>
@@ -114,7 +126,10 @@
             <div class="k-grid-content">
                 <table>
                     <colgroup>
-                        <col /><col /><col /><col />
+                        <col />
+                        <col />
+                        <col />
+                        <col />
                     </colgroup>
                     <tbody>
                         <tr>
@@ -127,10 +142,8 @@
                 </table>
             </div>
         </div>
-
         <span>angular with grouping</span>
         <span>jquery with grouping</span>
-
         <kendo-grid class="k-widget k-grid k-grid-no-scrollbar">
             <div class="k-toolbar k-grid-toolbar">
                 <button is="Button">Button</button>
@@ -144,13 +157,17 @@
                 <div class="k-grouping-dropclue"></div>
                 <div class="k-indicator-container">
                     <div class="k-group-indicator">
-                        <a class="k-link"><i is="Icon" name="sort-asc-sm"></i>Price</a>
+                        <a class="k-link">
+                            <i is="Icon" name="sort-asc-sm"></i>Price
+                        </a>
                         <button is="Button" fillMode="flat" icon="close"></button>
                     </div>
                 </div>
                 <div class="k-indicator-container">
                     <div class="k-group-indicator">
-                        <a class="k-link"><i is="Icon" name="sort-desc-sm"></i>Name</a>
+                        <a class="k-link">
+                            <i is="Icon" name="sort-desc-sm"></i>Name
+                        </a>
                         <button is="Button" fillMode="flat" icon="close"></button>
                     </div>
                 </div>
@@ -161,7 +178,11 @@
                     <div class="k-grid-header-wrap">
                         <table>
                             <colgroup>
-                                <col class="k-group-col" /><col /><col /><col /><col />
+                                <col class="k-group-col" />
+                                <col />
+                                <col />
+                                <col />
+                                <col />
                             </colgroup>
                             <thead>
                                 <tr>
@@ -180,22 +201,24 @@
                         <div>
                             <table class="k-grid-table">
                                 <colgroup>
-                                    <col class="k-group-col" /><col /><col /><col /><col />
+                                    <col class="k-group-col" />
+                                    <col />
+                                    <col />
+                                    <col />
+                                    <col />
                                 </colgroup>
                                 <tbody>
                                     <tr class="k-grouping-row">
                                         <td colspan="5">
                                             <p class="k-reset">
-                                                <i is="Icon" name="expand"></i>
-                                                Price: 19
+                                                <i is="Icon" name="expand"></i> Price: 19
                                             </p>
                                         </td>
                                     </tr>
                                     <tr class="k-grouping-row">
                                         <td colspan="5">
                                             <p class="k-reset">
-                                                <i is="Icon" name="collapse"></i>
-                                                Price: 30
+                                                <i is="Icon" name="collapse"></i> Price: 30
                                             </p>
                                         </td>
                                     </tr>
@@ -213,7 +236,6 @@
                 </kendo-grid-list>
             </div>
         </kendo-grid>
-
         <div class="k-grid k-grid-no-scrollbar k-widget k-grid-display-block">
             <div class="k-toolbar k-grid-toolbar">
                 <button is="Button">Button</button>
@@ -226,11 +248,15 @@
             <div class="k-grouping-header">
                 <div class="k-grouping-dropclue"></div>
                 <div class="k-group-indicator">
-                    <a class="k-link"><i is="Icon" name="sort-asc-sm"></i>Price</a>
+                    <a class="k-link">
+                        <i is="Icon" name="sort-asc-sm"></i>Price
+                    </a>
                     <button is="Button" fillMode="flat" icon="close"></button>
                 </div>
                 <div class="k-group-indicator">
-                    <a class="k-link"><i is="Icon" name="sort-desc-sm"></i>Name</a>
+                    <a class="k-link">
+                        <i is="Icon" name="sort-desc-sm"></i>Name
+                    </a>
                     <button is="Button" fillMode="flat" icon="close"></button>
                 </div>
             </div>
@@ -238,15 +264,27 @@
                 <div class="k-grid-header-wrap">
                     <table>
                         <colgroup>
-                            <col class="k-group-col"><col /><col /><col /><col />
+                            <col class="k-group-col">
+                            <col />
+                            <col />
+                            <col />
+                            <col />
                         </colgroup>
                         <thead>
                             <tr>
                                 <th class="k-group-cell k-header" scope="col"></th>
-                                <th class="k-header"><a class="k-link">Name</a></th>
-                                <th class="k-header"><a class="k-link">Price</a></th>
-                                <th class="k-header"><a class="k-link">Available</a></th>
-                                <th class="k-header"><a class="k-link">Units</a></th>
+                                <th class="k-header">
+                                    <a class="k-link">Name</a>
+                                </th>
+                                <th class="k-header">
+                                    <a class="k-link">Price</a>
+                                </th>
+                                <th class="k-header">
+                                    <a class="k-link">Available</a>
+                                </th>
+                                <th class="k-header">
+                                    <a class="k-link">Units</a>
+                                </th>
                             </tr>
                         </thead>
                     </table>
@@ -255,22 +293,24 @@
             <div class="k-grid-content">
                 <table style="height: auto;">
                     <colgroup>
-                        <col class="k-group-col"><col /><col /><col /><col />
+                        <col class="k-group-col">
+                        <col />
+                        <col />
+                        <col />
+                        <col />
                     </colgroup>
                     <tbody>
                         <tr class="k-grouping-row">
                             <td colspan="5">
                                 <p class="k-reset">
-                                    <i is="Icon" name="expand"></i>
-                                    Price: 19
+                                    <i is="Icon" name="expand"></i> Price: 19
                                 </p>
                             </td>
                         </tr>
                         <tr class="k-grouping-row">
                             <td colspan="5">
                                 <p class="k-reset">
-                                    <i is="Icon" name="collapse"></i>
-                                    Price: 30
+                                    <i is="Icon" name="collapse"></i> Price: 30
                                 </p>
                             </td>
                         </tr>
@@ -285,19 +325,18 @@
                 </table>
             </div>
         </div>
-
         <span>angular grid drag clue</span>
         <span>jquery grid drag clue</span>
-
         <section class="section">
-            <div class="k-header k-drag-clue"><i is="Icon" class="k-drag-status" name="cancel"></i>Drag clue</div>
+            <div class="k-header k-drag-clue">
+                <i is="Icon" class="k-drag-status" name="cancel"></i>Drag clue
+            </div>
         </section>
-
         <section class="section">
-            <div class="k-header k-drag-clue k-group-clue"><i is="Icon" class="k-drag-status" name="plus"></i>Drag clue</div>
+            <div class="k-header k-drag-clue k-group-clue">
+                <i is="Icon" class="k-drag-status" name="plus"></i>Drag clue
+            </div>
         </section>
-
     </div>
-
 </body>
 </html>

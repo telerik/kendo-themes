@@ -3,11 +3,10 @@
 <head>
     <title>Dialog</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
-    <link rel="stylesheet" href="../../assets/styles.css" />
-    <script src="../../assets/scripts.js"></script>
-    <script src="../../../../packages/html/dist/index.js"></script>
-
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css" />
+    <link rel="stylesheet" href="/packages/html/assets/styles.css" />
+    <script src="/packages/html/assets/scripts.js"></script>
+    <script src="/packages/html/dist/index.js"></script>
     <style>
         #test-area {
             grid-template-columns: repeat(3, 1fr);
@@ -17,17 +16,14 @@
         .k-dialog {
             position: relative;
         }
+
     </style>
 </head>
 <body class="k-body">
-
     <div id="test-area" class="grid">
-
         <div class="k-widget k-window k-dialog">
-
             <div class="k-window-titlebar k-dialog-titlebar">
-                <span class="k-window-title k-dialog-title">
-                    Title
+                <span class="k-window-title k-dialog-title"> Title
                     <!-- descendants --> g y p
                     <!-- ascendant --> t d l
                 </span>
@@ -35,84 +31,61 @@
                     <button is="Button" fillMode="flat" icon="close"></button>
                 </div>
             </div>
-
             <div class="k-window-content k-dialog-content">
-                <!-- template -->
-                Dialog content template
+                <!-- template --> Dialog content template
             </div>
-
             <div is="ActionButtons" class="k-dialog-buttongroup" alignment="end">
                 <button is="Button">Action</button>
                 <button is="Button" themeColor="primary">Primary</button>
             </div>
         </div>
-
         <div class="k-widget k-window k-dialog">
-
             <div class="k-window-titlebar k-dialog-titlebar">
-                <span class="k-window-title k-dialog-title" style="font-family: cursive;">
-                    Cursive
+                <span class="k-window-title k-dialog-title" style="font-family: cursive;"> Cursive
                     <!-- descendants --> g y p
                     <!-- ascendant --> t d l
                 </span>
             </div>
-
             <div class="k-window-content k-dialog-content">
-                <!-- template -->
-                Dialog without titlebar actions
+                <!-- template --> Dialog without titlebar actions
             </div>
-
             <div is="ActionButtons" class="k-dialog-buttongroup" alignment="end">
                 <button is="Button">Action</button>
                 <button is="Button" themeColor="primary">Primary</button>
             </div>
         </div>
-
         <div class="k-widget k-window k-dialog">
-
             <div class="k-window-titlebar k-dialog-titlebar">
                 <span class="k-window-title k-dialog-title"></span>
                 <div class="k-window-actions k-dialog-actions">
                     <button is="Button" fillMode="flat" icon="close"></button>
                 </div>
             </div>
-
             <div class="k-window-content k-dialog-content">
-                <!-- template -->
-                Dialog with empty title and actions
+                <!-- template --> Dialog with empty title and actions
             </div>
-
             <div is="ActionButtons" class="k-dialog-buttongroup" alignment="end">
                 <button is="Button">Action</button>
                 <button is="Button" themeColor="primary">Primary</button>
             </div>
         </div>
-
         <div class="k-widget k-window k-dialog">
-
             <div class="k-window-titlebar k-dialog-titlebar">
                 <span class="k-window-title k-dialog-title"></span>
             </div>
-
             <div class="k-window-content k-dialog-content">
-                <!-- template -->
-                Dialog with empty title and no actions
+                <!-- template --> Dialog with empty title and no actions
             </div>
         </div>
-
         <div class="k-widget k-window k-dialog">
-
             <div class="k-window-content k-dialog-content">
-                <!-- template -->
-                Dialog without title
+                <!-- template --> Dialog without title
             </div>
-
             <div is="ActionButtons" class="k-dialog-buttongroup" alignment="end">
                 <button is="Button">Action</button>
                 <button is="Button" themeColor="primary">Primary</button>
             </div>
         </div>
-
         <div class="k-widget k-window k-dialog" style="height: 170px">
             <div class="k-window-titlebar k-dialog-titlebar">
                 <span class="k-window-title k-dialog-title">Scrolling</span>
@@ -120,21 +93,17 @@
                     <button is="Button" fillMode="flat" icon="close"></button>
                 </div>
             </div>
-
             <div class="k-window-content k-dialog-content k-scroll">
                 <!-- template -->
                 <p>Dialog content template with long text and vertical scrolling.</p>
                 <p>Dialog content template with long text and vertical scrolling.</p>
                 <p>Dialog content template with long text and vertical scrolling.</p>
             </div>
-
             <div is="ActionButtons" class="k-dialog-buttongroup" alignment="end">
                 <button is="Button">Action</button>
                 <button is="Button" themeColor="primary">Primary</button>
             </div>
         </div>
-
     </div>
-
 </body>
 </html>

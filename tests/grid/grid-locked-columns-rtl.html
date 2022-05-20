@@ -3,11 +3,10 @@
 <head>
     <title>Grid Locked Columns</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
-    <link rel="stylesheet" href="../../assets/styles.css" />
-    <script src="../../assets/scripts.js"></script>
-    <script src="../../../../packages/html/dist/index.js"></script>
-
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css" />
+    <link rel="stylesheet" href="/packages/html/assets/styles.css" />
+    <script src="/packages/html/assets/scripts.js"></script>
+    <script src="/packages/html/dist/index.js"></script>
     <style>
         /* These overrides are needed for the "Angular Grid with locked columns, Grouping and Multiline headers" example ->
         they ensure the Grid layout is not broken in neither of the themes */
@@ -17,6 +16,7 @@
             padding-top: 0;
             padding-bottom: 0;
         }
+
     </style>
 </head>
 <body class="k-body">
@@ -54,20 +54,12 @@
                             </colgroup>
                             <thead>
                                 <tr style="height: 38px;">
-                                    <th class="k-header" rowspan="1" colspan="3">
-                                        Availability
-                                    </th>
-                                    <th class="k-header" rowspan="2" colspan="1">
-                                        Discontinued
-                                    </th>
+                                    <th class="k-header" rowspan="1" colspan="3"> Availability </th>
+                                    <th class="k-header" rowspan="2" colspan="1"> Discontinued </th>
                                 </tr>
                                 <tr style="height: 38px;">
-                                    <th class="k-header" rowspan="1" colspan="1">
-                                        Unit Price
-                                    </th>
-                                    <th class="k-header" rowspan="1" colspan="1">
-                                        Units On Order
-                                    </th>
+                                    <th class="k-header" rowspan="1" colspan="1"> Unit Price </th>
+                                    <th class="k-header" rowspan="1" colspan="1"> Units On Order </th>
                                     <th class="k-header" rowspan="1" colspan="1">Units In Stock</th>
                                 </tr>
                             </thead>
@@ -87,9 +79,7 @@
                                     <tr class="k-grouping-row" style="height: 37px;">
                                         <td colspan="3">
                                             <p class="k-reset">
-                                                <i is="Icon" name="collapse"></i>
-
-                                                Discontinued: false
+                                                <i is="Icon" name="collapse"></i> Discontinued: false
                                             </p>
                                         </td>
                                     </tr>
@@ -106,50 +96,34 @@
                                     <tr style="height: 37px;">
                                         <td class="k-group-cell"></td>
                                         <td colspan="1">3</td>
-                                        <td colspan="1">
-                                            Aniseed Syrup
-                                        </td>
+                                        <td colspan="1"> Aniseed Syrup </td>
                                     </tr>
                                     <tr class="k-alt" style="height: 37px;">
                                         <td class="k-group-cell"></td>
-                                        <td colspan="1">
-                                            4
-                                        </td>
-                                        <td colspan="1">
-                                            Chef Anton's Cajun Seasoning
-                                        </td>
+                                        <td colspan="1"> 4 </td>
+                                        <td colspan="1"> Chef Anton's Cajun Seasoning </td>
                                     </tr>
                                     <tr style="height: 37px;">
                                         <td class="k-group-cell"></td>
-                                        <td colspan="1">
-                                            6
-                                        </td>
-                                        <td colspan="1">
-                                            Grandma's Boysenberry Spread
-                                        </td>
+                                        <td colspan="1"> 6 </td>
+                                        <td colspan="1"> Grandma's Boysenberry Spread </td>
                                     </tr>
                                     <tr class="k-group-footer" style="height: 39px;">
                                         <td class="k-group-cell"></td>
                                         <td></td>
                                         <td></td>
                                     </tr>
-
                                     <tr class="k-grouping-row" style="height: 37px;">
                                         <td colspan="3">
                                             <p class="k-reset">
-                                                <i is="Icon" name="collapse"></i>
-                                                Discontinued: true
+                                                <i is="Icon" name="collapse"></i> Discontinued: true
                                             </p>
                                         </td>
                                     </tr>
                                     <tr class="k-alt" style="height: 38px;">
                                         <td class="k-group-cell"></td>
-                                        <td colspan="1">
-                                            5
-                                        </td>
-                                        <td colspan="1">
-                                            Chef Anton's Gumbo Mix
-                                        </td>
+                                        <td colspan="1"> 5 </td>
+                                        <td colspan="1"> Chef Anton's Gumbo Mix </td>
                                     </tr>
                                     <tr class="k-group-footer" style="height: 39px;">
                                         <td class="k-group-cell"></td>
@@ -180,84 +154,51 @@
                                         </td>
                                     </tr>
                                     <tr style="height: 38px;">
-                                        <td colspan="1">
-                                            18
-                                        </td>
-                                        <td colspan="1">
-                                            0
-                                        </td>
-                                        <td colspan="1">
-                                            39
-                                        </td>
+                                        <td colspan="1"> 18 </td>
+                                        <td colspan="1"> 0 </td>
+                                        <td colspan="1"> 39 </td>
                                         <td colspan="1">
                                             <input is="Checkbox" />
                                         </td>
                                     </tr>
                                     <tr class="k-alt" style="height: 37px;">
-                                        <td colspan="1">
-                                            19
-                                        </td>
-                                        <td colspan="1">
-                                            40
-                                        </td>
-                                        <td colspan="1">
-                                            17
-                                        </td>
+                                        <td colspan="1"> 19 </td>
+                                        <td colspan="1"> 40 </td>
+                                        <td colspan="1"> 17 </td>
                                         <td colspan="1">
                                             <input is="Checkbox" />
                                         </td>
                                     </tr>
                                     <tr style="height: 37px;">
-                                        <td colspan="1">
-                                            10
-                                        </td>
-                                        <td colspan="1">
-                                            70
-                                        </td>
-                                        <td colspan="1">
-                                            13
-                                        </td>
+                                        <td colspan="1"> 10 </td>
+                                        <td colspan="1"> 70 </td>
+                                        <td colspan="1"> 13 </td>
                                         <td colspan="1">
                                             <input is="Checkbox" />
                                         </td>
                                     </tr>
                                     <tr class="k-alt" style="height: 37px;">
-                                        <td colspan="1">
-                                            22
-                                        </td>
-                                        <td colspan="1">
-                                            0
-                                        </td>
-                                        <td colspan="1">
-                                            53
-                                        </td>
+                                        <td colspan="1"> 22 </td>
+                                        <td colspan="1"> 0 </td>
+                                        <td colspan="1"> 53 </td>
                                         <td colspan="1">
                                             <input is="Checkbox" />
                                         </td>
                                     </tr>
                                     <tr style="height: 37px;">
-                                        <td colspan="1">
-                                            25
-                                        </td>
-                                        <td colspan="1">
-                                            0
-                                        </td>
-                                        <td colspan="1">
-                                            120
-                                        </td>
+                                        <td colspan="1"> 25 </td>
+                                        <td colspan="1"> 0 </td>
+                                        <td colspan="1"> 120 </td>
                                         <td colspan="1">
                                             <input is="Checkbox" />
                                         </td>
                                     </tr>
                                     <tr class="k-group-footer" style="height: 39px;">
-                                        <td>
-                                            Sum: 94
-                                        </td>
+                                        <td> Sum: 94 </td>
                                         <td></td>
                                         <td></td>
                                         <td></td>
                                     </tr>
-
                                     <tr class="k-grouping-row" style="height: 37px;">
                                         <td colspan="4">
                                             <p class="k-reset"></p>
@@ -265,20 +206,14 @@
                                     </tr>
                                     <tr class="k-alt" style="height: 38px;">
                                         <td colspan="1">21.35</td>
-                                        <td colspan="1">
-                                            0
-                                        </td>
-                                        <td colspan="1">
-                                            0
-                                        </td>
+                                        <td colspan="1"> 0 </td>
+                                        <td colspan="1"> 0 </td>
                                         <td colspan="1">
                                             <input is="Checkbox" />
                                         </td>
                                     </tr>
                                     <tr class="k-group-footer" style="height: 39px;">
-                                        <td>
-                                            Sum: 24
-                                        </td>
+                                        <td> Sum: 24 </td>
                                         <td></td>
                                         <td></td>
                                         <td></td>
@@ -309,7 +244,7 @@
                             </tfoot>
                         </table>
                     </div>
-                    <div class="k-grid-footer-wrap" >
+                    <div class="k-grid-footer-wrap">
                         <table>
                             <colgroup>
                                 <col style="width: 120px;" />

@@ -3,108 +3,88 @@
 <head>
     <title>Form Field DateInputs Angular</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
-    <link rel="stylesheet" href="../../assets/styles.css" />
-    <script src="../../assets/scripts.js"></script>
-    <script src="../../../../packages/html/dist/index.js"></script>
-
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css" />
+    <link rel="stylesheet" href="/packages/html/assets/styles.css" />
+    <script src="/packages/html/assets/scripts.js"></script>
+    <script src="/packages/html/dist/index.js"></script>
     <style>
         section {
             padding: 20px;
             border: 1px dashed gray;
         }
+
     </style>
 </head>
 <body class="k-body">
-
     <div id="test-area" class="k-d-grid k-grid-cols-2">
-
         <span>Vertical Form (Angular)</span>
         <span>Horizontal Form (Angular)</span>
-
         <section>
             <form class="k-form k-form-vertical">
-
                 <kendo-form-field class="k-form-field">
                     <label class="k-label">DateInput:</label>
                     <div>
                         <input is="DateInput" showSpinButton="false" />
                     </div>
                 </kendo-form-field>
-
                 <kendo-form-field class="k-form-field">
                     <label class="k-label">DatePicker:</label>
                     <div>
                         <input is="DatePicker" />
                     </div>
                 </kendo-form-field>
-
                 <kendo-form-field class="k-form-field">
                     <label class="k-label">DateTimePicker:</label>
                     <div>
                         <input is="DateTimePicker" />
                     </div>
                 </kendo-form-field>
-
                 <kendo-form-field class="k-form-field">
                     <label class="k-label">DateRangePicker:</label>
                     <input is="DateRangePicker" />
                 </kendo-form-field>
-
                 <kendo-form-field class="k-form-field">
                     <label class="k-label">TimePicker:</label>
                     <div>
                         <input is="TimePicker" />
                     </div>
                 </kendo-form-field>
-
             </form>
         </section>
-
-
         <section>
             <form class="k-form k-form-horizontal">
-
                 <kendo-form-field class="k-form-field">
                     <label class="k-label">DateInput:</label>
                     <div class="k-form-field-wrap">
                         <input is="DateInput" showSpinButton="false" />
                     </div>
                 </kendo-form-field>
-
                 <kendo-form-field class="k-form-field">
                     <label class="k-label">DatePicker:</label>
                     <div class="k-form-field-wrap">
                         <input is="DatePicker" />
                     </div>
                 </kendo-form-field>
-
                 <kendo-form-field class="k-form-field">
                     <label class="k-label">DateTimePicker:</label>
                     <div class="k-form-field-wrap">
                         <input is="DateTimePicker" />
                     </div>
                 </kendo-form-field>
-
-
                 <kendo-form-field class="k-form-field">
                     <label class="k-label">DateRangePicker:</label>
                     <div class="k-form-field-wrap">
                         <input is="DateRangePicker" />
                     </div>
                 </kendo-form-field>
-
                 <kendo-form-field class="k-form-field">
                     <label class="k-label">TimePicker:</label>
                     <div class="k-form-field-wrap">
                         <input is="TimePicker" />
                     </div>
                 </kendo-form-field>
-
             </form>
         </section>
-
     </div>
-
 </body>
 </html>

@@ -3,11 +3,10 @@
 <head>
     <title>Progressbar Vertical</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
-    <link rel="stylesheet" href="../../assets/styles.css" />
-    <script src="../../assets/scripts.js"></script>
-    <script src="../../../../packages/html/dist/index.js"></script>
-
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css" />
+    <link rel="stylesheet" href="/packages/html/assets/styles.css" />
+    <script src="/packages/html/assets/scripts.js"></script>
+    <script src="/packages/html/dist/index.js"></script>
     <style>
         .k-progressbar-indeterminate,
         .k-progressbar-indeterminate::before,
@@ -15,24 +14,22 @@
             /* Comment if you need to preview the indeterminate animation */
             animation: none !important;
         }
-
         .grid hr {
             width: 100%;
             grid-column: 1 / -1;
             visibility: hidden;
         }
-
         .subgrid-vertical {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
             grid-gap: 20px;
             justify-items: center;
         }
+
     </style>
 </head>
 <body class="k-body">
     <div id="test-area" class="grid">
-
         <div class="subgrid-vertical">
             <span>Partial</span>
             <span>100%</span>
@@ -46,7 +43,6 @@
             <span>No Label</span>
             <span>Thin style</span>
             <span>Thick style</span>
-
             <div class="k-widget k-progressbar k-progressbar-vertical">
                 <span class="k-progress-status-wrap k-progress-end">
                     <span class="k-progress-status">95%</span>
@@ -153,5 +149,4 @@
         </div>
     </div>
 </body>
-
 </html>

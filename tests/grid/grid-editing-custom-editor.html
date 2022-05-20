@@ -3,25 +3,26 @@
 <head>
     <title>Grid Editing Custom Editors</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
-    <link rel="stylesheet" href="../../assets/styles.css" />
-    <script src="../../assets/scripts.js"></script>
-    <script src="../../../../packages/html/dist/index.js"></script>
-
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css" />
+    <link rel="stylesheet" href="/packages/html/assets/styles.css" />
+    <script src="/packages/html/assets/scripts.js"></script>
+    <script src="/packages/html/dist/index.js"></script>
     <style>
     </style>
 </head>
 <body class="k-body">
-
     <div id="test-area" class="grid">
-
         <kendo-grid class="k-widget k-grid k-grid-no-scrollbar">
             <div class="k-grid-aria-root">
                 <div class="k-grid-header">
                     <div class="k-grid-header-wrap">
                         <table>
                             <colgroup>
-                                <col style="width: 68px;" /><col /><col /><col /><col />
+                                <col style="width: 68px;" />
+                                <col />
+                                <col />
+                                <col />
+                                <col />
                             </colgroup>
                             <thead>
                                 <tr>
@@ -40,22 +41,42 @@
                         <div>
                             <table class="k-grid-table">
                                 <colgroup>
-                                    <col style="width: 68px;" /><col /><col /><col /><col />
+                                    <col style="width: 68px;" />
+                                    <col />
+                                    <col />
+                                    <col />
+                                    <col />
                                 </colgroup>
                                 <tbody>
                                     <tr class="k-grid-edit-row">
                                         <td>LTR</td>
-                                        <td><input is="Autocomplete" placeholder="Autocomplete..." /></td>
-                                        <td><input is="Combobox" placeholder="Combobox..." /></td>
-                                        <td><input is="DropdownList" placeholder="DropdownList..." /></td>
-                                        <td><input is="MultiSelect" placeholder="Multiselect..." /></td>
+                                        <td>
+                                            <input is="Autocomplete" placeholder="Autocomplete..." />
+                                        </td>
+                                        <td>
+                                            <input is="Combobox" placeholder="Combobox..." />
+                                        </td>
+                                        <td>
+                                            <input is="DropdownList" placeholder="DropdownList..." />
+                                        </td>
+                                        <td>
+                                            <input is="MultiSelect" placeholder="Multiselect..." />
+                                        </td>
                                     </tr>
                                     <tr class="k-alt k-grid-edit-row">
                                         <td>RTL</td>
-                                        <td><input is="Autocomplete" placeholder="Autocomplete..." dir="rtl" /></td>
-                                        <td><input is="Combobox" placeholder="Combobox..." dir="rtl" /></td>
-                                        <td><input is="DropdownList" placeholder="DropdownList..." dir="rtl" /></td>
-                                        <td><input is="MultiSelect" placeholder="Multiselect..." dir="rtl" /></td>
+                                        <td>
+                                            <input is="Autocomplete" placeholder="Autocomplete..." dir="rtl" />
+                                        </td>
+                                        <td>
+                                            <input is="Combobox" placeholder="Combobox..." dir="rtl" />
+                                        </td>
+                                        <td>
+                                            <input is="DropdownList" placeholder="DropdownList..." dir="rtl" />
+                                        </td>
+                                        <td>
+                                            <input is="MultiSelect" placeholder="Multiselect..." dir="rtl" />
+                                        </td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -64,14 +85,17 @@
                 </kendo-grid-list>
             </div>
         </kendo-grid>
-
         <kendo-grid class="k-widget k-grid k-grid-no-scrollbar">
             <div class="k-grid-aria-root" style="overflow: visible;">
                 <div class="k-grid-header">
                     <div class="k-grid-header-wrap">
                         <table>
                             <colgroup>
-                                <col style="width: 68px;" /><col /><col /><col /><col />
+                                <col style="width: 68px;" />
+                                <col />
+                                <col />
+                                <col />
+                                <col />
                             </colgroup>
                             <thead>
                                 <tr>
@@ -90,22 +114,42 @@
                         <div>
                             <table class="k-grid-table">
                                 <colgroup>
-                                    <col style="width: 68px;" /><col /><col /><col /><col />
+                                    <col style="width: 68px;" />
+                                    <col />
+                                    <col />
+                                    <col />
+                                    <col />
                                 </colgroup>
                                 <tbody>
                                     <tr class="k-grid-edit-row">
                                         <td>LTR</td>
-                                        <td><input is="DatePicker" placeholder="DatePicker..." /></td>
-                                        <td><input is="TimePicker" placeholder="TimePicker..." /></td>
-                                        <td><input is="DateTimePicker" placeholder="DateTimePicker..." /></td>
-                                        <td><input is="DateInput" placeholder="DateInput..." /></td>
+                                        <td>
+                                            <input is="DatePicker" placeholder="DatePicker..." />
+                                        </td>
+                                        <td>
+                                            <input is="TimePicker" placeholder="TimePicker..." />
+                                        </td>
+                                        <td>
+                                            <input is="DateTimePicker" placeholder="DateTimePicker..." />
+                                        </td>
+                                        <td>
+                                            <input is="DateInput" placeholder="DateInput..." />
+                                        </td>
                                     </tr>
                                     <tr class="k-alt k-grid-edit-row">
                                         <td>RTL</td>
-                                        <td><input is="DatePicker" placeholder="DatePicker..." dir="rtl" /></td>
-                                        <td><input is="TimePicker" placeholder="TimePicker..." dir="rtl" /></td>
-                                        <td><input is="DateTimePicker" placeholder="DateTimePicker..." dir="rtl" /></td>
-                                        <td><input is="DateInput" placeholder="DateInput..." dir="rtl" /></td>
+                                        <td>
+                                            <input is="DatePicker" placeholder="DatePicker..." dir="rtl" />
+                                        </td>
+                                        <td>
+                                            <input is="TimePicker" placeholder="TimePicker..." dir="rtl" />
+                                        </td>
+                                        <td>
+                                            <input is="DateTimePicker" placeholder="DateTimePicker..." dir="rtl" />
+                                        </td>
+                                        <td>
+                                            <input is="DateInput" placeholder="DateInput..." dir="rtl" />
+                                        </td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -114,14 +158,16 @@
                 </kendo-grid-list>
             </div>
         </kendo-grid>
-
         <kendo-grid class="k-widget k-grid k-grid-no-scrollbar">
             <div class="k-grid-aria-root">
                 <div class="k-grid-header">
                     <div class="k-grid-header-wrap">
                         <table>
                             <colgroup>
-                                <col style="width: 68px;" /><col /><col /><col />
+                                <col style="width: 68px;" />
+                                <col />
+                                <col />
+                                <col />
                             </colgroup>
                             <thead>
                                 <tr>
@@ -139,7 +185,10 @@
                         <div>
                             <table class="k-grid-table">
                                 <colgroup>
-                                    <col style="width: 68px;" /><col /><col /><col />
+                                    <col style="width: 68px;" />
+                                    <col />
+                                    <col />
+                                    <col />
                                 </colgroup>
                                 <tbody>
                                     <tr class="k-grid-edit-row">
@@ -169,8 +218,6 @@
                 </kendo-grid-list>
             </div>
         </kendo-grid>
-
     </div>
-
 </body>
 </html>

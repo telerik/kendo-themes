@@ -3,27 +3,25 @@
 <head>
     <title>Scheduler jQuery Agenda</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
-    <link rel="stylesheet" href="../../assets/styles.css" />
-    <script src="../../assets/scripts.js"></script>
-    <script src="../../../../packages/html/dist/index.js"></script>
-
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css" />
+    <link rel="stylesheet" href="/packages/html/assets/styles.css" />
+    <script src="/packages/html/assets/scripts.js"></script>
+    <script src="/packages/html/dist/index.js"></script>
     <style>
         #test-area {
             grid-template-columns: 1fr;
             align-items: top;
         }
-
         th {
             text-align: left;
         }
         .k-scheduler-mark {
             background: gold;
         }
+
     </style>
 </head>
 <body class="k-body">
-
     <div id="test-area" class="grid">
         <div class="k-widget k-scheduler">
             <div class="k-scheduler-toolbar k-toolbar">
@@ -43,10 +41,10 @@
                         <option>Agenda</option>
                     </select>
                     <span class="k-button-group k-scheduler-views">
-                        <button is="Button" >Day</button>
-                        <button is="Button" >Week</button>
-                        <button is="Button" >Month</button>
-                        <button is="Button" >Timeline</button>
+                        <button is="Button">Day</button>
+                        <button is="Button">Week</button>
+                        <button is="Button">Month</button>
+                        <button is="Button">Timeline</button>
                         <button is="Button" selected>Agenda</button>
                     </span>
                 </span>
@@ -76,41 +74,71 @@
                                 <table class="k-scheduler-table">
                                     <tbody>
                                         <tr>
-                                            <td class="k-scheduler-datecolumn k-first"><strong class="k-scheduler-agendaday">13</strong><em class="k-scheduler-agendaweek">Thursday</em><span class="k-scheduler-agendadate">June, 2013</span></td>
-                                            <td class="k-scheduler-timecolumn"><div>7:00 PM-9:00 PM</div></td>
+                                            <td class="k-scheduler-datecolumn k-first">
+                                                <strong class="k-scheduler-agendaday">13</strong>
+                                                <em class="k-scheduler-agendaweek">Thursday</em>
+                                                <span class="k-scheduler-agendadate">June, 2013</span>
+                                            </td>
+                                            <td class="k-scheduler-timecolumn">
+                                                <div>7:00 PM-9:00 PM</div>
+                                            </td>
                                             <td>
                                                 <div class="k-task">
                                                     <span class="k-scheduler-mark"></span>
                                                     <span class="k-scheduler-task-text">Normal</span>
-                                                    <a class="k-link k-event-delete"><i is="Icon" name="x"></i></a>
+                                                    <a class="k-link k-event-delete">
+                                                        <i is="Icon" name="x"></i>
+                                                    </a>
                                                 </div>
                                             </td>
                                         </tr>
                                         <tr class="k-state-hover">
-                                            <td class="k-scheduler-datecolumn k-first"><strong class="k-scheduler-agendaday">14</strong><em class="k-scheduler-agendaweek">Friday</em><span class="k-scheduler-agendadate">June, 2013</span></td>
-                                            <td class="k-scheduler-timecolumn"><div>all day</div></td>
+                                            <td class="k-scheduler-datecolumn k-first">
+                                                <strong class="k-scheduler-agendaday">14</strong>
+                                                <em class="k-scheduler-agendaweek">Friday</em>
+                                                <span class="k-scheduler-agendadate">June, 2013</span>
+                                            </td>
+                                            <td class="k-scheduler-timecolumn">
+                                                <div>all day</div>
+                                            </td>
                                             <td>
                                                 <div class="k-task">
                                                     <span class="k-scheduler-mark"></span>
                                                     <span class="k-scheduler-task-text">Hover</span>
-                                                    <a class="k-link k-event-delete"><i is="Icon" name="x"></i></a>
+                                                    <a class="k-link k-event-delete">
+                                                        <i is="Icon" name="x"></i>
+                                                    </a>
                                                 </div>
                                             </td>
                                         </tr>
                                         <tr class="k-state-selected">
-                                            <td class="k-scheduler-datecolumn k-first"><strong class="k-scheduler-agendaday">17</strong><em class="k-scheduler-agendaweek">Monday</em><span class="k-scheduler-agendadate">June, 2013</span></td>
-                                            <td class="k-scheduler-timecolumn"><div>6:30 PM-8:00 PM</div></td>
+                                            <td class="k-scheduler-datecolumn k-first">
+                                                <strong class="k-scheduler-agendaday">17</strong>
+                                                <em class="k-scheduler-agendaweek">Monday</em>
+                                                <span class="k-scheduler-agendadate">June, 2013</span>
+                                            </td>
+                                            <td class="k-scheduler-timecolumn">
+                                                <div>6:30 PM-8:00 PM</div>
+                                            </td>
                                             <td>
                                                 <div class="k-task">
                                                     <span class="k-scheduler-mark"></span>
                                                     <span class="k-scheduler-task-text">Selected</span>
-                                                    <a class="k-link k-event-delete"><i is="Icon" name="x"></i></a>
+                                                    <a class="k-link k-event-delete">
+                                                        <i is="Icon" name="x"></i>
+                                                    </a>
                                                 </div>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td class="k-scheduler-datecolumn k-first"><strong class="k-scheduler-agendaday">18</strong><em class="k-scheduler-agendaweek">Tuesday</em><span class="k-scheduler-agendadate">June, 2013</span></td>
-                                            <td class="k-scheduler-timecolumn"><div>7:00 PM-9:00 PM</div></td>
+                                            <td class="k-scheduler-datecolumn k-first">
+                                                <strong class="k-scheduler-agendaday">18</strong>
+                                                <em class="k-scheduler-agendaweek">Tuesday</em>
+                                                <span class="k-scheduler-agendadate">June, 2013</span>
+                                            </td>
+                                            <td class="k-scheduler-timecolumn">
+                                                <div>7:00 PM-9:00 PM</div>
+                                            </td>
                                             <td>
                                                 <div class="k-task">
                                                     <span class="k-scheduler-mark"></span>
@@ -130,8 +158,6 @@
                 <button is="Button" icon="clock">Show business hours</button>
             </div>
         </div>
-
     </div>
-
 </body>
 </html>

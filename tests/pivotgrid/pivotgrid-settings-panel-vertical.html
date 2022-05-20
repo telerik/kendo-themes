@@ -3,18 +3,20 @@
 <head>
     <title>PivotGrid Vertical Settings Panel</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
-    <link rel="stylesheet" href="../../assets/styles.css" />
-    <script src="../../assets/scripts.js"></script>
-    <script src="../../../../packages/html/dist/index.js"></script>
-
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css" />
+    <link rel="stylesheet" href="/packages/html/assets/styles.css" />
+    <script src="/packages/html/assets/scripts.js"></script>
+    <script src="/packages/html/dist/index.js"></script>
     <style>
-        .k-pivotgrid-configurator-panel { position: static; height: 750px; }
-
+        .k-pivotgrid-configurator-panel {
+            position: static;
+            height: 750px;
+        }
         .k-animation-container,
         .k-popup {
             position: relative;
         }
+
     </style>
 </head>
 <body class="k-body">
@@ -46,11 +48,9 @@
                                     <ul is="Treeview">
                                         <li showCheckbox hasChildren>Account</li>
                                         <li showCheckbox hasChildren>Customer</li>
-                                        <li showCheckbox expanded>Date
-                                            <ul>
+                                        <li showCheckbox expanded>Date <ul>
                                                 <li showCheckbox hasChildren>Date.Calendar</li>
-                                                <li showCheckbox expanded>Date.Calendar Quarter of Year
-                                                    <ul>
+                                                <li showCheckbox expanded>Date.Calendar Quarter of Year <ul>
                                                         <li showCheckbox hasChildren>(All)</li>
                                                         <li showCheckbox hasChildren>Calendar Quarter of Year</li>
                                                     </ul>
@@ -91,7 +91,6 @@
                 </div>
             </div>
         </section>
-
         <section>
             <span>Start View</span>
             <div class="k-pivotgrid-configurator">
@@ -119,11 +118,9 @@
                                     <ul is="Treeview">
                                         <li showCheckbox hasChildren>Account</li>
                                         <li showCheckbox hasChildren>Customer</li>
-                                        <li showCheckbox expanded>Date
-                                            <ul>
+                                        <li showCheckbox expanded>Date <ul>
                                                 <li showCheckbox hasChildren>Date.Calendar</li>
-                                                <li showCheckbox expanded>Date.Calendar Quarter of Year
-                                                    <ul>
+                                                <li showCheckbox expanded>Date.Calendar Quarter of Year <ul>
                                                         <li showCheckbox hasChildren>(All)</li>
                                                         <li showCheckbox hasChildren>Calendar Quarter of Year</li>
                                                     </ul>
@@ -275,7 +272,6 @@
                 </div>
             </div>
         </section>
-
         <section>
             <span>Renaming a custom calculated field</span>
             <div class="k-calculated-field">
@@ -298,10 +294,10 @@
                     <input is="DropdownList" value="Default" />
                 </div>
             </div>
-            <br/>
+            <br />
             <div class="k-calculated-field">
                 <div class="k-calculated-field-header">
-                    <span is="Textbox"  showClearButton="false"value="Renamed Field">
+                    <span is="Textbox" showClearButton="false" value="Renamed Field">
                         <slot is="InputSuffix">
                             <button is="Button" fillMode="flat" icon="check"></button>
                         </slot>
@@ -326,22 +322,22 @@
                     <input is="DropdownList" value="Default" />
                 </div>
             </div>
-            <br/>
+            <br />
             <span>Chip variations</span>
-            <br/>
+            <br />
             <div is="Chip" actions="more, remove">
                 <span class="k-chip-label">Date.Calendar</span>
             </div>
-            <br/>
-            <br/>
+            <br />
+            <br />
             <div is="Chip" actions="sort-asc-sm, filter, more, remove">
                 <span class="k-chip-label">Date.Calendar</span>
             </div>
-            <br/>
-            <br/>
+            <br />
+            <br />
             <div is="Chip" actions="more, remove" text="Date.Calendar"></div>
-            <br/>
-            <br/>
+            <br />
+            <br />
             <div is="Chip" text="Date.Calendar"></div>
         </section>
     </div>

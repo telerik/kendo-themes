@@ -3,20 +3,17 @@
 <head>
     <title>PivotGrid Configurator Top & Overlay</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
-    <link rel="stylesheet" href="../../assets/styles.css" />
-    <script src="../../assets/scripts.js"></script>
-    <script src="../../../../packages/html/dist/index.js"></script>
-
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css" />
+    <link rel="stylesheet" href="/packages/html/assets/styles.css" />
+    <script src="/packages/html/assets/scripts.js"></script>
+    <script src="/packages/html/dist/index.js"></script>
 </head>
 <body class="k-body">
     <div id="test-area" class="k-d-grid k-grid-cols-1">
-
         <section>
             <div class="k-d-flex k-flex-col-reverse k-pos-relative">
                 <div class="k-pivotgrid" style="height: 550px; grid-template-columns: 150px auto; grid-template-rows: 242px auto;">
                     <span class="k-pivotgrid-empty-cell"></span>
-
                     <!-- Pivot Multi Column Headers -->
                     <div class="k-pivotgrid-column-headers">
                         <table class="k-pivotgrid-table">
@@ -39,7 +36,7 @@
                                         <i is="Icon" name="arrow-chevron-up"></i>
                                         <span class="k-pivotgrid-header-title">All Periods</span>
                                     </th>
-                                    <th colspan="1" rowspan="4"class="k-pivotgrid-cell k-pivotgrid-header-total k-pivotgrid-header-root">
+                                    <th colspan="1" rowspan="4" class="k-pivotgrid-cell k-pivotgrid-header-total k-pivotgrid-header-root">
                                         <span class="k-pivotgrid-header-title">All Periods</span>
                                     </th>
                                 </tr>
@@ -76,7 +73,6 @@
                                         <span class="k-pivotgrid-header-title">Q4 CY 2010</span>
                                     </th>
                                 </tr>
-
                                 <!-- Table for Product.Category Column grouping field -->
                                 <tr class="k-pivotgrid-row k-pivotgrid-column-total">
                                     <th colspan="1" rowspan="2" class="k-pivotgrid-cell k-pivotgrid-header-root">
@@ -189,7 +185,6 @@
                             </tbody>
                         </table>
                     </div>
-
                     <!-- Details -->
                     <div class="k-pivotgrid-values">
                         <!-- Choose using either style and calculate the width of the content table or use <col> width prop -->
@@ -557,11 +552,9 @@
                                             <ul is="Treeview">
                                                 <li showCheckbox hasChildren>Account</li>
                                                 <li showCheckbox hasChildren>Customer</li>
-                                                <li showCheckbox expanded>Date
-                                                    <ul>
+                                                <li showCheckbox expanded>Date <ul>
                                                         <li showCheckbox hasChildren>Date.Calendar</li>
-                                                        <li showCheckbox expanded>Date.Calendar Quarter of Year
-                                                            <ul>
+                                                        <li showCheckbox expanded>Date.Calendar Quarter of Year <ul>
                                                                 <li showCheckbox hasChildren>(All)</li>
                                                                 <li showCheckbox hasChildren>Calendar Quarter of Year</li>
                                                             </ul>
@@ -738,9 +731,7 @@
                     </div>
                 </div>
                 <div class="k-pivotgrid-configurator-button">
-                    <span>
-                        Change settings
-                        <i is="Icon" name="cog"></i>
+                    <span> Change settings <i is="Icon" name="cog"></i>
                     </span>
                 </div>
             </div>

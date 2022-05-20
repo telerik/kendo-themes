@@ -3,253 +3,295 @@
 <head>
     <title>Grid React Interaction States</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
-    <link rel="stylesheet" href="../../assets/styles.css" />
-    <script src="../../assets/scripts.js"></script>
-    <script src="../../../../packages/html/dist/index.js"></script>
-
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css" />
+    <link rel="stylesheet" href="/packages/html/assets/styles.css" />
+    <script src="/packages/html/assets/scripts.js"></script>
+    <script src="/packages/html/dist/index.js"></script>
     <style>
     </style>
 </head>
 <body class="k-body">
-
     <div id="test-area" class="k-d-grid k-grid-cols-1">
         <span>Interaction States</span>
-
         <section>
             <div class="k-widget k-grid" style="height: 500px;">
                 <div class="k-grid-header">
-                   <div class="k-grid-header-wrap">
-                      <table style="width: 1180px;">
-                         <colgroup>
-                            <col width="60px">
-                            <col width="90px">
-                            <col width="300px">
-                            <col width="120px">
-                            <col width="120px">
-                            <col width="120px">
-                            <col width="120px">
-                            <col width="250px">
-                         </colgroup>
-                         <thead>
-                            <tr>
-                               <th class="k-header k-grid-header-sticky" style="left: 0px; right: 240px;"><a class="k-link"> </a></th>
-                               <th class="k-header "><a class="k-link">ID</a></th>
-                               <th class="k-header " ><a class="k-link">Name</a></th>
-                               <th class="k-header k-grid-header-sticky" style="left: 60px; right: 120px;"><a class="k-link">Price</a></th>
-                               <th class="k-header k-grid-header-sticky" style="left: 180px; right: 0px;"><a class="k-link">In stock</a></th>
-                               <th class="k-header "><a class="k-link">On order</a></th>
-                               <th class="k-header "><a class="k-link">Discontinued</a></th>
-                               <th class="k-header "><a class="k-link">Additional details</a></th>
-                            </tr>
-                         </thead>
-                      </table>
-                   </div>
+                    <div class="k-grid-header-wrap">
+                        <table style="width: 1180px;">
+                            <colgroup>
+                                <col width="60px">
+                                <col width="90px">
+                                <col width="300px">
+                                <col width="120px">
+                                <col width="120px">
+                                <col width="120px">
+                                <col width="120px">
+                                <col width="250px">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th class="k-header k-grid-header-sticky" style="left: 0px; right: 240px;">
+                                        <a class="k-link"> </a>
+                                    </th>
+                                    <th class="k-header ">
+                                        <a class="k-link">ID</a>
+                                    </th>
+                                    <th class="k-header ">
+                                        <a class="k-link">Name</a>
+                                    </th>
+                                    <th class="k-header k-grid-header-sticky" style="left: 60px; right: 120px;">
+                                        <a class="k-link">Price</a>
+                                    </th>
+                                    <th class="k-header k-grid-header-sticky" style="left: 180px; right: 0px;">
+                                        <a class="k-link">In stock</a>
+                                    </th>
+                                    <th class="k-header ">
+                                        <a class="k-link">On order</a>
+                                    </th>
+                                    <th class="k-header ">
+                                        <a class="k-link">Discontinued</a>
+                                    </th>
+                                    <th class="k-header ">
+                                        <a class="k-link">Additional details</a>
+                                    </th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
                 </div>
                 <div class="k-grid-container">
-                   <div class="k-grid-content k-virtual-content">
-                      <div style="position: relative;">
-                         <table class="k-grid-table" style="width: 1180px;">
-                            <colgroup>
-                               <col width="60px">
-                               <col width="90px">
-                               <col width="300px">
-                               <col width="120px">
-                               <col width="120px">
-                               <col width="120px">
-                               <col width="120px">
-                               <col width="250px">
-                            </colgroup>
-                            <tbody>
-                               <tr class="k-master-row">
-                                  <td class="k-grid-content-sticky" style="left: 0px; right: 240px;"><i is="Icon" name="unpin"></i></td>
-                                  <td>1</td>
-                                  <td >Normal</td>
-                                  <td class="k-grid-content-sticky" style="left: 60px; right: 120px;">$18.00</td>
-                                  <td class="k-grid-content-sticky" style="left: 180px; right: 0px;">39</td>
-                                  <td>0</td>
-                                  <td>false</td>
-                                  <td>10 boxes x 20 bags</td>
-                               </tr>
-                               <tr class="k-master-row k-alt">
-                                  <td class="k-grid-content-sticky k-state-selected" style="left: 0px; right: 240px;"><i is="Icon" name="unpin"></i></td>
-                                  <td class="k-state-selected">2</td>
-                                  <td >Drag Selection Alt</td>
-                                  <td class="k-grid-content-sticky" style="left: 60px; right: 120px;">$19.00</td>
-                                  <td class="k-grid-content-sticky" style="left: 180px; right: 0px;">17</td>
-                                  <td>40</td>
-                                  <td>false</td>
-                                  <td>24 - 12 oz bottles</td>
-                               </tr>
-                               <tr class="k-master-row">
-                                  <td class="k-grid-content-sticky k-state-selected" style="left: 0px; right: 240px;"><i is="Icon" name="unpin"></i></td>
-                                  <td class="k-state-selected">3</td>
-                                  <td >Drag Selection</td>
-                                  <td class="k-grid-content-sticky" style="left: 60px; right: 120px;">$10.00</td>
-                                  <td class="k-grid-content-sticky" style="left: 180px; right: 0px;">13</td>
-                                  <td>70</td>
-                                  <td>false</td>
-                                  <td>12 - 550 ml bottles</td>
-                               </tr>
-                               <tr class="k-master-row k-alt k-state-selected">
-                                  <td class="k-grid-content-sticky" style="left: 0px; right: 240px;"><i is="Icon" name="unpin"></i></td>
-                                  <td>4</td>
-                                  <td >Row Selection Alt</td>
-                                  <td class="k-grid-content-sticky" style="left: 60px; right: 120px;">$22.00</td>
-                                  <td class="k-grid-content-sticky" style="left: 180px; right: 0px;">53</td>
-                                  <td>0</td>
-                                  <td>false</td>
-                                  <td>48 - 6 oz jars</td>
-                               </tr>
-                               <tr class="k-master-row k-state-selected">
-                                  <td class="k-grid-content-sticky" style="left: 0px; right: 240px;"><i is="Icon" name="unpin"></i></td>
-                                  <td>5</td>
-                                  <td >Row Selection</td>
-                                  <td class="k-grid-content-sticky" style="left: 60px; right: 120px;">$21.35</td>
-                                  <td class="k-grid-content-sticky" style="left: 180px; right: 0px;">0</td>
-                                  <td>0</td>
-                                  <td>true</td>
-                                  <td>36 boxes</td>
-                               </tr>
-                               <tr class="k-master-row k-alt k-state-hover">
-                                  <td class="k-grid-content-sticky k-state-selected" style="left: 0px; right: 240px;"><i is="Icon" name="unpin"></i></td>
-                                  <td class="k-state-selected">6</td>
-                                  <td >Drag Selection Alt Hover</td>
-                                  <td class="k-grid-content-sticky" style="left: 60px; right: 120px;">$25.00</td>
-                                  <td class="k-grid-content-sticky" style="left: 180px; right: 0px;">120</td>
-                                  <td>0</td>
-                                  <td>false</td>
-                                  <td>12 - 8 oz jars</td>
-                               </tr>
-                               <tr class="k-master-row k-state-hover">
-                                  <td class="k-grid-content-sticky k-state-selected" style="left: 0px; right: 240px;"><i is="Icon" name="unpin"></i></td>
-                                  <td class="k-state-selected">7</td>
-                                  <td >Drag Selection Hover</td>
-                                  <td class="k-grid-content-sticky" style="left: 60px; right: 120px;">$30.00</td>
-                                  <td class="k-grid-content-sticky" style="left: 180px; right: 0px;">15</td>
-                                  <td>0</td>
-                                  <td>false</td>
-                                  <td>12 - 1 lb pkgs.</td>
-                               </tr>
-                               <tr class="k-master-row k-alt k-state-hover">
-                                  <td class="k-grid-content-sticky" style="left: 0px; right: 240px;"><i is="Icon" name="unpin"></i></td>
-                                  <td>8</td>
-                                  <td >Hover</td>
-                                  <td class="k-grid-content-sticky" style="left: 60px; right: 120px;">$40.00</td>
-                                  <td class="k-grid-content-sticky" style="left: 180px; right: 0px;">6</td>
-                                  <td>0</td>
-                                  <td>false</td>
-                                  <td>12 - 12 oz jars</td>
-                               </tr>
-                               <tr class="k-master-row">
-                                  <td class="k-grid-content-sticky k-state-focused" style="left: 0px; right: 240px;"><i is="Icon" name="unpin"></i></td>
-                                  <td>9</td>
-                                  <td >Focus sticky cell</td>
-                                  <td class="k-grid-content-sticky" style="left: 60px; right: 120px;">$97.00</td>
-                                  <td class="k-grid-content-sticky" style="left: 180px; right: 0px;">29</td>
-                                  <td>0</td>
-                                  <td>true</td>
-                                  <td>18 - 500 g pkgs.</td>
-                               </tr>
-                               <tr class="k-master-row k-alt">
-                                  <td class="k-grid-content-sticky" style="left: 0px; right: 240px;"><i is="Icon" name="unpin"></i></td>
-                                  <td class="k-state-focused">10</td>
-                                  <td >Focus normal cell</td>
-                                  <td class="k-grid-content-sticky" style="left: 60px; right: 120px;">$31.00</td>
-                                  <td class="k-grid-content-sticky" style="left: 180px; right: 0px;">31</td>
-                                  <td>0</td>
-                                  <td>false</td>
-                                  <td>12 - 200 ml jars</td>
-                               </tr>
-                               <tr class="k-master-row">
-                                  <td class="k-grid-content-sticky" style="left: 0px; right: 240px;"><i is="Icon" name="unpin"></i></td>
-                                  <td>11</td>
-                                  <td >Queso Cabrales</td>
-                                  <td class="k-grid-content-sticky" style="left: 60px; right: 120px;">$21.00</td>
-                                  <td class="k-grid-content-sticky" style="left: 180px; right: 0px;">22</td>
-                                  <td>30</td>
-                                  <td>false</td>
-                                  <td>1 kg pkg.</td>
-                               </tr>
-                               <tr class="k-master-row k-alt">
-                                  <td class="k-grid-content-sticky" style="left: 0px; right: 240px;"><i is="Icon" name="unpin"></i></td>
-                                  <td>12</td>
-                                  <td >Queso Manchego La Pastora</td>
-                                  <td class="k-grid-content-sticky" style="left: 60px; right: 120px;">$38.00</td>
-                                  <td class="k-grid-content-sticky" style="left: 180px; right: 0px;">86</td>
-                                  <td>0</td>
-                                  <td>false</td>
-                                  <td>10 - 500 g pkgs.</td>
-                               </tr>
-                               <tr class="k-master-row">
-                                  <td class="k-grid-content-sticky" style="left: 0px; right: 240px;"><i is="Icon" name="unpin"></i></td>
-                                  <td>13</td>
-                                  <td >Konbu</td>
-                                  <td class="k-grid-content-sticky" style="left: 60px; right: 120px;">$6.00</td>
-                                  <td class="k-grid-content-sticky" style="left: 180px; right: 0px;">24</td>
-                                  <td>0</td>
-                                  <td>false</td>
-                                  <td>2 kg box</td>
-                               </tr>
-                               <tr class="k-master-row k-alt">
-                                  <td class="k-grid-content-sticky" style="left: 0px; right: 240px;"><i is="Icon" name="unpin"></i></td>
-                                  <td>14</td>
-                                  <td >Tofu</td>
-                                  <td class="k-grid-content-sticky" style="left: 60px; right: 120px;">$23.25</td>
-                                  <td class="k-grid-content-sticky" style="left: 180px; right: 0px;">35</td>
-                                  <td>0</td>
-                                  <td>false</td>
-                                  <td>40 - 100 g pkgs.</td>
-                               </tr>
-                               <tr class="k-master-row">
-                                  <td class="k-grid-content-sticky" style="left: 0px; right: 240px;"><i is="Icon" name="unpin"></i></td>
-                                  <td>15</td>
-                                  <td >Genen Shouyu</td>
-                                  <td class="k-grid-content-sticky" style="left: 60px; right: 120px;">$15.50</td>
-                                  <td class="k-grid-content-sticky" style="left: 180px; right: 0px;">39</td>
-                                  <td>0</td>
-                                  <td>false</td>
-                                  <td>24 - 250 ml bottles</td>
-                               </tr>
-                            </tbody>
-                         </table>
-                      </div>
-                      <div class="k-height-container">
-                         <div></div>
-                      </div>
-                   </div>
+                    <div class="k-grid-content k-virtual-content">
+                        <div style="position: relative;">
+                            <table class="k-grid-table" style="width: 1180px;">
+                                <colgroup>
+                                    <col width="60px">
+                                    <col width="90px">
+                                    <col width="300px">
+                                    <col width="120px">
+                                    <col width="120px">
+                                    <col width="120px">
+                                    <col width="120px">
+                                    <col width="250px">
+                                </colgroup>
+                                <tbody>
+                                    <tr class="k-master-row">
+                                        <td class="k-grid-content-sticky" style="left: 0px; right: 240px;">
+                                            <i is="Icon" name="unpin"></i>
+                                        </td>
+                                        <td>1</td>
+                                        <td>Normal</td>
+                                        <td class="k-grid-content-sticky" style="left: 60px; right: 120px;">$18.00</td>
+                                        <td class="k-grid-content-sticky" style="left: 180px; right: 0px;">39</td>
+                                        <td>0</td>
+                                        <td>false</td>
+                                        <td>10 boxes x 20 bags</td>
+                                    </tr>
+                                    <tr class="k-master-row k-alt">
+                                        <td class="k-grid-content-sticky k-state-selected" style="left: 0px; right: 240px;">
+                                            <i is="Icon" name="unpin"></i>
+                                        </td>
+                                        <td class="k-state-selected">2</td>
+                                        <td>Drag Selection Alt</td>
+                                        <td class="k-grid-content-sticky" style="left: 60px; right: 120px;">$19.00</td>
+                                        <td class="k-grid-content-sticky" style="left: 180px; right: 0px;">17</td>
+                                        <td>40</td>
+                                        <td>false</td>
+                                        <td>24 - 12 oz bottles</td>
+                                    </tr>
+                                    <tr class="k-master-row">
+                                        <td class="k-grid-content-sticky k-state-selected" style="left: 0px; right: 240px;">
+                                            <i is="Icon" name="unpin"></i>
+                                        </td>
+                                        <td class="k-state-selected">3</td>
+                                        <td>Drag Selection</td>
+                                        <td class="k-grid-content-sticky" style="left: 60px; right: 120px;">$10.00</td>
+                                        <td class="k-grid-content-sticky" style="left: 180px; right: 0px;">13</td>
+                                        <td>70</td>
+                                        <td>false</td>
+                                        <td>12 - 550 ml bottles</td>
+                                    </tr>
+                                    <tr class="k-master-row k-alt k-state-selected">
+                                        <td class="k-grid-content-sticky" style="left: 0px; right: 240px;">
+                                            <i is="Icon" name="unpin"></i>
+                                        </td>
+                                        <td>4</td>
+                                        <td>Row Selection Alt</td>
+                                        <td class="k-grid-content-sticky" style="left: 60px; right: 120px;">$22.00</td>
+                                        <td class="k-grid-content-sticky" style="left: 180px; right: 0px;">53</td>
+                                        <td>0</td>
+                                        <td>false</td>
+                                        <td>48 - 6 oz jars</td>
+                                    </tr>
+                                    <tr class="k-master-row k-state-selected">
+                                        <td class="k-grid-content-sticky" style="left: 0px; right: 240px;">
+                                            <i is="Icon" name="unpin"></i>
+                                        </td>
+                                        <td>5</td>
+                                        <td>Row Selection</td>
+                                        <td class="k-grid-content-sticky" style="left: 60px; right: 120px;">$21.35</td>
+                                        <td class="k-grid-content-sticky" style="left: 180px; right: 0px;">0</td>
+                                        <td>0</td>
+                                        <td>true</td>
+                                        <td>36 boxes</td>
+                                    </tr>
+                                    <tr class="k-master-row k-alt k-state-hover">
+                                        <td class="k-grid-content-sticky k-state-selected" style="left: 0px; right: 240px;">
+                                            <i is="Icon" name="unpin"></i>
+                                        </td>
+                                        <td class="k-state-selected">6</td>
+                                        <td>Drag Selection Alt Hover</td>
+                                        <td class="k-grid-content-sticky" style="left: 60px; right: 120px;">$25.00</td>
+                                        <td class="k-grid-content-sticky" style="left: 180px; right: 0px;">120</td>
+                                        <td>0</td>
+                                        <td>false</td>
+                                        <td>12 - 8 oz jars</td>
+                                    </tr>
+                                    <tr class="k-master-row k-state-hover">
+                                        <td class="k-grid-content-sticky k-state-selected" style="left: 0px; right: 240px;">
+                                            <i is="Icon" name="unpin"></i>
+                                        </td>
+                                        <td class="k-state-selected">7</td>
+                                        <td>Drag Selection Hover</td>
+                                        <td class="k-grid-content-sticky" style="left: 60px; right: 120px;">$30.00</td>
+                                        <td class="k-grid-content-sticky" style="left: 180px; right: 0px;">15</td>
+                                        <td>0</td>
+                                        <td>false</td>
+                                        <td>12 - 1 lb pkgs.</td>
+                                    </tr>
+                                    <tr class="k-master-row k-alt k-state-hover">
+                                        <td class="k-grid-content-sticky" style="left: 0px; right: 240px;">
+                                            <i is="Icon" name="unpin"></i>
+                                        </td>
+                                        <td>8</td>
+                                        <td>Hover</td>
+                                        <td class="k-grid-content-sticky" style="left: 60px; right: 120px;">$40.00</td>
+                                        <td class="k-grid-content-sticky" style="left: 180px; right: 0px;">6</td>
+                                        <td>0</td>
+                                        <td>false</td>
+                                        <td>12 - 12 oz jars</td>
+                                    </tr>
+                                    <tr class="k-master-row">
+                                        <td class="k-grid-content-sticky k-state-focused" style="left: 0px; right: 240px;">
+                                            <i is="Icon" name="unpin"></i>
+                                        </td>
+                                        <td>9</td>
+                                        <td>Focus sticky cell</td>
+                                        <td class="k-grid-content-sticky" style="left: 60px; right: 120px;">$97.00</td>
+                                        <td class="k-grid-content-sticky" style="left: 180px; right: 0px;">29</td>
+                                        <td>0</td>
+                                        <td>true</td>
+                                        <td>18 - 500 g pkgs.</td>
+                                    </tr>
+                                    <tr class="k-master-row k-alt">
+                                        <td class="k-grid-content-sticky" style="left: 0px; right: 240px;">
+                                            <i is="Icon" name="unpin"></i>
+                                        </td>
+                                        <td class="k-state-focused">10</td>
+                                        <td>Focus normal cell</td>
+                                        <td class="k-grid-content-sticky" style="left: 60px; right: 120px;">$31.00</td>
+                                        <td class="k-grid-content-sticky" style="left: 180px; right: 0px;">31</td>
+                                        <td>0</td>
+                                        <td>false</td>
+                                        <td>12 - 200 ml jars</td>
+                                    </tr>
+                                    <tr class="k-master-row">
+                                        <td class="k-grid-content-sticky" style="left: 0px; right: 240px;">
+                                            <i is="Icon" name="unpin"></i>
+                                        </td>
+                                        <td>11</td>
+                                        <td>Queso Cabrales</td>
+                                        <td class="k-grid-content-sticky" style="left: 60px; right: 120px;">$21.00</td>
+                                        <td class="k-grid-content-sticky" style="left: 180px; right: 0px;">22</td>
+                                        <td>30</td>
+                                        <td>false</td>
+                                        <td>1 kg pkg.</td>
+                                    </tr>
+                                    <tr class="k-master-row k-alt">
+                                        <td class="k-grid-content-sticky" style="left: 0px; right: 240px;">
+                                            <i is="Icon" name="unpin"></i>
+                                        </td>
+                                        <td>12</td>
+                                        <td>Queso Manchego La Pastora</td>
+                                        <td class="k-grid-content-sticky" style="left: 60px; right: 120px;">$38.00</td>
+                                        <td class="k-grid-content-sticky" style="left: 180px; right: 0px;">86</td>
+                                        <td>0</td>
+                                        <td>false</td>
+                                        <td>10 - 500 g pkgs.</td>
+                                    </tr>
+                                    <tr class="k-master-row">
+                                        <td class="k-grid-content-sticky" style="left: 0px; right: 240px;">
+                                            <i is="Icon" name="unpin"></i>
+                                        </td>
+                                        <td>13</td>
+                                        <td>Konbu</td>
+                                        <td class="k-grid-content-sticky" style="left: 60px; right: 120px;">$6.00</td>
+                                        <td class="k-grid-content-sticky" style="left: 180px; right: 0px;">24</td>
+                                        <td>0</td>
+                                        <td>false</td>
+                                        <td>2 kg box</td>
+                                    </tr>
+                                    <tr class="k-master-row k-alt">
+                                        <td class="k-grid-content-sticky" style="left: 0px; right: 240px;">
+                                            <i is="Icon" name="unpin"></i>
+                                        </td>
+                                        <td>14</td>
+                                        <td>Tofu</td>
+                                        <td class="k-grid-content-sticky" style="left: 60px; right: 120px;">$23.25</td>
+                                        <td class="k-grid-content-sticky" style="left: 180px; right: 0px;">35</td>
+                                        <td>0</td>
+                                        <td>false</td>
+                                        <td>40 - 100 g pkgs.</td>
+                                    </tr>
+                                    <tr class="k-master-row">
+                                        <td class="k-grid-content-sticky" style="left: 0px; right: 240px;">
+                                            <i is="Icon" name="unpin"></i>
+                                        </td>
+                                        <td>15</td>
+                                        <td>Genen Shouyu</td>
+                                        <td class="k-grid-content-sticky" style="left: 60px; right: 120px;">$15.50</td>
+                                        <td class="k-grid-content-sticky" style="left: 180px; right: 0px;">39</td>
+                                        <td>0</td>
+                                        <td>false</td>
+                                        <td>24 - 250 ml bottles</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="k-height-container">
+                            <div></div>
+                        </div>
+                    </div>
                 </div>
                 <div class="k-grid-footer">
-                   <div class="k-grid-footer-wrap">
-                      <table style="width: 1180px;">
-                         <colgroup>
-                            <col width="60px">
-                            <col width="90px">
-                            <col width="300px">
-                            <col width="120px">
-                            <col width="120px">
-                            <col width="120px">
-                            <col width="120px">
-                            <col width="250px">
-                         </colgroup>
-                         <tfoot>
-                            <tr>
-                               <td class="k-grid-footer-sticky" style="left: 0px; right: 240px;"></td>
-                               <td></td>
-                               <td ></td>
-                               <td class="k-grid-footer-sticky" style="left: 60px; right: 120px;">avg: X</td>
-                               <td class="k-grid-footer-sticky" style="left: 180px; right: 0px;">total: Y</td>
-                               <td></td>
-                               <td></td>
-                               <td></td>
-                            </tr>
-                         </tfoot>
-                      </table>
-                   </div>
+                    <div class="k-grid-footer-wrap">
+                        <table style="width: 1180px;">
+                            <colgroup>
+                                <col width="60px">
+                                <col width="90px">
+                                <col width="300px">
+                                <col width="120px">
+                                <col width="120px">
+                                <col width="120px">
+                                <col width="120px">
+                                <col width="250px">
+                            </colgroup>
+                            <tfoot>
+                                <tr>
+                                    <td class="k-grid-footer-sticky" style="left: 0px; right: 240px;"></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td class="k-grid-footer-sticky" style="left: 60px; right: 120px;">avg: X</td>
+                                    <td class="k-grid-footer-sticky" style="left: 180px; right: 0px;">total: Y</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
                 </div>
             </div>
         </section>
     </div>
-
 </body>
 </html>

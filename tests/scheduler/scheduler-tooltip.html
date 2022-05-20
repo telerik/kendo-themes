@@ -1,19 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <title>Scheduler Tooltip</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
-    <link rel="stylesheet" href="../../assets/styles.css" />
-    <script src="../../assets/scripts.js"></script>
-    <script src="../../../../packages/html/dist/index.js"></script>
-
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css" />
+    <link rel="stylesheet" href="/packages/html/assets/styles.css" />
+    <script src="/packages/html/assets/scripts.js"></script>
+    <script src="/packages/html/dist/index.js"></script>
     <style>
         #test-area {
             grid-template-columns: 1fr 1fr;
         }
-
         /* rest position and visiblity */
         .k-animation-container,
         .k-popup,
@@ -21,21 +18,18 @@
             position: relative;
             overflow: visible;
         }
-
         /* reset display and align */
         .k-animation-container {
             display: inline-flex;
             vertical-align: top;
         }
+
     </style>
 </head>
-
 <body class="k-body">
     <div id="test-area" class="grid">
-
         <span>Events List</span>
         <span>No Data</span>
-
         <section>
             <div class="k-animation-container" style="width: 220px;">
                 <div class="k-widget k-tooltip k-scheduler-tooltip" style="width: 220px;">
@@ -68,7 +62,6 @@
                 </div>
             </div>
         </section>
-
         <section>
             <div class="k-animation-container" style="width: 220px;">
                 <div class="k-widget k-tooltip k-scheduler-tooltip" style="width: 220px;">
@@ -83,7 +76,6 @@
                 </div>
             </div>
         </section>
-
     </div>
 </body>
 </html>

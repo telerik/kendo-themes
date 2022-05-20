@@ -3,18 +3,16 @@
 <head>
     <title>Slider</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
-    <link rel="stylesheet" href="../../assets/styles.css" />
-    <script src="../../assets/scripts.js"></script>
-    <script src="../../../../packages/html/dist/index.js"></script>
-
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css" />
+    <link rel="stylesheet" href="/packages/html/assets/styles.css" />
+    <script src="/packages/html/assets/scripts.js"></script>
+    <script src="/packages/html/dist/index.js"></script>
     <style>
         #test-area {
             display: grid;
             grid-template-columns: 100px 1fr 1fr 1fr;
             align-items: center;
         }
-
         .k-slider-0 {
             --kendo-slider-start: 0;
             --kendo-slider-end: 0;
@@ -27,16 +25,15 @@
             --kendo-slider-start: 0;
             --kendo-slider-end: 100;
         }
+
     </style>
 </head>
 <body class="k-body k-bg-gray-50">
-
     <div id="test-area" class="k-d-grid">
         <span></span>
         <span>Empty</span>
         <span>Not Empty</span>
         <span>Full</span>
-
         <span>Normal</span>
         <section>
             <div class="k-slider k-slider-horizontal k-slider-0">
@@ -131,8 +128,6 @@
                 <button is="Button" icon="arrow-e" rounded="full" class="k-button-increase"></button>
             </div>
         </section>
-
-
         <span>Disabled</span>
         <section>
             <div class="k-slider k-slider-horizontal k-slider-0 k-disabled">
@@ -227,7 +222,6 @@
                 <button is="Button" icon="arrow-e" rounded="full" class="k-button-increase"></button>
             </div>
         </section>
-
         <span>Readonly</span>
         <section>
             <div class="k-slider k-slider-horizontal k-slider-0 k-readonly">
@@ -322,8 +316,6 @@
                 <button is="Button" icon="arrow-e" rounded="full" class="k-button-increase"></button>
             </div>
         </section>
-
     </div>
-
 </body>
 </html>

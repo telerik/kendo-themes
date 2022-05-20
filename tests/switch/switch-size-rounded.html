@@ -3,26 +3,25 @@
 <head>
     <title>Switch Size and Rounded</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
-    <link rel="stylesheet" href="../../assets/styles.css" />
-    <script src="../../assets/scripts.js"></script>
-    <script src="../../../../packages/html/dist/index.js"></script>
-
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css" />
+    <link rel="stylesheet" href="/packages/html/assets/styles.css" />
+    <script src="/packages/html/assets/scripts.js"></script>
+    <script src="/packages/html/dist/index.js"></script>
     <style>
         #test-area {
-            grid-template-columns: 120px repeat( 6, 1fr);
+            grid-template-columns: 120px repeat(6, 1fr);
         }
+
     </style>
 </head>
 <body class="k-body">
-
     <div id="test-area" class="k-d-grid">
-
-        <span><small>rounded / size</small></span>
+        <span>
+            <small>rounded / size</small>
+        </span>
         <span class="k-colspan-2">small</span>
         <span class="k-colspan-2">medium</span>
         <span class="k-colspan-2">large</span>
-
         <span>null</span>
         <span>
             <input is="Switch" checked size="small" onLabel="On" trackRounded="null" thumbRounded="null" />
@@ -42,7 +41,6 @@
         <span>
             <input is="Switch" size="large" offLabel="Off" trackRounded="null" thumbRounded="null" />
         </span>
-
         <span>small</span>
         <span>
             <input is="Switch" checked size="small" onLabel="On" trackRounded="small" thumbRounded="small" />
@@ -62,7 +60,6 @@
         <span>
             <input is="Switch" size="large" offLabel="Off" trackRounded="small" thumbRounded="small" />
         </span>
-
         <span>medium</span>
         <span>
             <input is="Switch" checked size="small" onLabel="On" trackRounded="medium" thumbRounded="medium" />
@@ -82,7 +79,6 @@
         <span>
             <input is="Switch" size="large" offLabel="Off" trackRounded="medium" thumbRounded="medium" />
         </span>
-
         <span>large</span>
         <span>
             <input is="Switch" checked size="small" onLabel="On" trackRounded="large" thumbRounded="large" />
@@ -102,7 +98,6 @@
         <span>
             <input is="Switch" size="large" offLabel="Off" trackRounded="large" thumbRounded="large" />
         </span>
-
         <span>full</span>
         <span>
             <input is="Switch" checked size="small" onLabel="On" trackRounded="full" thumbRounded="full" />
@@ -122,8 +117,6 @@
         <span>
             <input is="Switch" size="large" offLabel="Off" trackRounded="full" thumbRounded="full" />
         </span>
-
     </div>
-
 </body>
 </html>

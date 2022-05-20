@@ -3,11 +3,10 @@
 <head>
     <title>PDF Viewer</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
-    <link rel="stylesheet" href="../../assets/styles.css" />
-    <script src="../../assets/scripts.js"></script>
-    <script src="../../../../packages/html/dist/index.js"></script>
-
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css" />
+    <link rel="stylesheet" href="/packages/html/assets/styles.css" />
+    <script src="/packages/html/assets/scripts.js"></script>
+    <script src="/packages/html/dist/index.js"></script>
     <style>
         #test-area {
             grid-template-columns: 1fr;
@@ -15,17 +14,19 @@
         #test-area .k-pdf-viewer {
             height: 600px;
         }
+
     </style>
 </head>
 <body class="k-body">
     <div id="test-area" class="grid">
-
         <div class="k-widget k-pdf-viewer">
             <div class="k-toolbar k-widget k-toolbar-resizable">
                 <div class="k-pager-wrap">
                     <button is="Button" fillMode="flat" icon="arrow-end-left" class="k-pager-nav k-pager-first"></button>
                     <button is="Button" fillMode="flat" icon="arrow-60-left" class="k-pager-nav"></button>
-                    <span class="k-pager-input k-label"><input is="Textbox" />of 4 pages</span>
+                    <span class="k-pager-input k-label">
+                        <input is="Textbox" />of 4 pages
+                    </span>
                     <button is="Button" fillMode="flat" icon="arrow-60-right" class="k-pager-nav"></button>
                     <button is="Button" fillMode="flat" icon="arrow-end-right" class="k-pager-nav k-pager-last"></button>
                 </div>
@@ -39,7 +40,6 @@
                 <div class="k-page" style="width: 720px; height: 360px;"></div>
             </div>
         </div>
-
     </div>
 </body>
 </html>

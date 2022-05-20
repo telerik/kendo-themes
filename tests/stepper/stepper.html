@@ -3,11 +3,10 @@
 <head>
     <title>Steppers</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
-    <link rel="stylesheet" href="../../assets/styles.css" />
-    <script src="../../assets/scripts.js"></script>
-    <script src="../../../../packages/html/dist/index.js"></script>
-
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css" />
+    <link rel="stylesheet" href="/packages/html/assets/styles.css" />
+    <script src="/packages/html/assets/scripts.js"></script>
+    <script src="/packages/html/dist/index.js"></script>
     <style>
         body {
             background: #fcfcfc;
@@ -20,25 +19,21 @@
             grid-column: 1 / -1;
             visibility: hidden;
         }
-
         .subgrid-horizontal {
             display: grid;
             grid-gap: 20px;
         }
-
         .subgrid-two-cols {
             display: grid;
             grid-template-columns: 1fr 1fr;
             grid-gap: 20px;
         }
+
     </style>
 </head>
 <body class="k-body">
-
     <div id="test-area" class="grid">
-
         <span class="col-2">LTR</span>
-
         <span>Indicator</span>
         <section>
             <nav class="k-stepper k-widget" style="display: grid; grid-template-columns: repeat(6, 1fr)">
@@ -76,7 +71,6 @@
                 </div>
             </nav>
         </section>
-
         <span>^ + label</span>
         <section>
             <nav class="k-stepper k-widget" style="display: grid; grid-template-columns: repeat(6, 1fr)">
@@ -123,7 +117,6 @@
                 </div>
             </nav>
         </section>
-
         <span>Icons</span>
         <section>
             <nav class="k-stepper k-widget" style="display: grid; grid-template-columns: repeat(6, 1fr)">
@@ -161,7 +154,6 @@
                 </div>
             </nav>
         </section>
-
         <span>^ + label</span>
         <section>
             <nav class="k-stepper k-widget" style="display: grid; grid-template-columns: repeat(6, 1fr)">
@@ -206,7 +198,6 @@
                 </div>
             </nav>
         </section>
-
         <span>Labels</span>
         <section>
             <nav class="k-stepper k-widget" style="display: grid; grid-template-columns: repeat(6, 1fr)">
@@ -242,9 +233,7 @@
                 </div>
             </nav>
         </section>
-
         <hr />
-
         <span>Many steps</span>
         <section class="col-2">
             <!-- one step equals to 2 frames => 8 steps = 16 fr -->
@@ -342,8 +331,6 @@
                 </div>
             </nav>
         </section>
-
     </div>
-
 </body>
 </html>

@@ -3,11 +3,10 @@
 <head>
     <title>Grid Locked Columns</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
-    <link rel="stylesheet" href="../../assets/styles.css" />
-    <script src="../../assets/scripts.js"></script>
-    <script src="../../../../packages/html/dist/index.js"></script>
-
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css" />
+    <link rel="stylesheet" href="/packages/html/assets/styles.css" />
+    <script src="/packages/html/assets/scripts.js"></script>
+    <script src="/packages/html/dist/index.js"></script>
     <style>
         /* These overrides are needed for the "Angular Grid with locked columns, Grouping and Multiline headers" example ->
         they ensure the Grid layout is not broken in neither of the themes */
@@ -17,6 +16,7 @@
             padding-top: 0;
             padding-bottom: 0;
         }
+
     </style>
 </head>
 <body class="k-body">
@@ -27,12 +27,22 @@
                     <table>
                         <colgroup>
                             <col style="width:150px">
-                                <col style="width:300px">
+                            <col style="width:300px">
                         </colgroup>
                         <thead>
                             <tr>
-                                <th class="k-header k-with-icon"><a class="k-header-column-menu" href="#"><i is="Icon" name="more-vertical"></i></a><a class="k-link" href="/aspnet-mvc/Grid/FrozenColumns_Read?Grid-sort=OrderID-asc">Order ID</a></th>
-                                <th class="k-header k-with-icon"><a class="k-header-column-menu" href="#"><i is="Icon" name="more-vertical"></i></a><a class="k-link" href="/aspnet-mvc/Grid/FrozenColumns_Read?Grid-sort=ShipName-asc">Ship Name</a></th>
+                                <th class="k-header k-with-icon">
+                                    <a class="k-header-column-menu" href="#">
+                                        <i is="Icon" name="more-vertical"></i>
+                                    </a>
+                                    <a class="k-link" href="/aspnet-mvc/Grid/FrozenColumns_Read?Grid-sort=OrderID-asc">Order ID</a>
+                                </th>
+                                <th class="k-header k-with-icon">
+                                    <a class="k-header-column-menu" href="#">
+                                        <i is="Icon" name="more-vertical"></i>
+                                    </a>
+                                    <a class="k-link" href="/aspnet-mvc/Grid/FrozenColumns_Read?Grid-sort=ShipName-asc">Ship Name</a>
+                                </th>
                             </tr>
                         </thead>
                     </table>
@@ -46,9 +56,24 @@
                         </colgroup>
                         <thead>
                             <tr>
-                                <th class="k-header k-with-icon"><a class="k-header-column-menu" href="#"><i is="Icon" name="more-vertical"></i></a><a class="k-link" href="/aspnet-mvc/Grid/FrozenColumns_Read?Grid-sort=ShipCountry-asc">Ship Country</a></th>
-                                <th class="k-header k-with-icon"><a class="k-header-column-menu" href="#"><i is="Icon" name="more-vertical"></i></a><a class="k-link" href="/aspnet-mvc/Grid/FrozenColumns_Read?Grid-sort=ShipCity-asc">Ship City</a></th>
-                                <th class="k-header k-with-icon"><a class="k-header-column-menu" href="#"><i is="Icon" name="more-vertical"></i></a><a class="k-link" href="/aspnet-mvc/Grid/FrozenColumns_Read?Grid-sort=ShipAddress-asc">Ship Address</a></th>
+                                <th class="k-header k-with-icon">
+                                    <a class="k-header-column-menu" href="#">
+                                        <i is="Icon" name="more-vertical"></i>
+                                    </a>
+                                    <a class="k-link" href="/aspnet-mvc/Grid/FrozenColumns_Read?Grid-sort=ShipCountry-asc">Ship Country</a>
+                                </th>
+                                <th class="k-header k-with-icon">
+                                    <a class="k-header-column-menu" href="#">
+                                        <i is="Icon" name="more-vertical"></i>
+                                    </a>
+                                    <a class="k-link" href="/aspnet-mvc/Grid/FrozenColumns_Read?Grid-sort=ShipCity-asc">Ship City</a>
+                                </th>
+                                <th class="k-header k-with-icon">
+                                    <a class="k-header-column-menu" href="#">
+                                        <i is="Icon" name="more-vertical"></i>
+                                    </a>
+                                    <a class="k-link" href="/aspnet-mvc/Grid/FrozenColumns_Read?Grid-sort=ShipAddress-asc">Ship Address</a>
+                                </th>
                             </tr>
                         </thead>
                     </table>
@@ -61,7 +86,7 @@
                 <table>
                     <colgroup>
                         <col style="width:150px">
-                            <col style="width:300px">
+                        <col style="width:300px">
                     </colgroup>
                     <tbody>
                         <tr>
@@ -98,13 +123,15 @@
                         </tr>
                     </tbody>
                 </table>
-            </div><!--
-            --><div class="k-grid-content k-auto-scrollable" style="width: 597px; height: 320px;">
+            </div>
+            <!--
+            -->
+            <div class="k-grid-content k-auto-scrollable" style="width: 597px; height: 320px;">
                 <table style="width: 1000px;">
                     <colgroup>
                         <col style="width:300px">
-                            <col style="width:300px">
-                                <col style="width:400px">
+                        <col style="width:300px">
+                        <col style="width:400px">
                     </colgroup>
                     <tbody>
                         <tr>
@@ -151,7 +178,6 @@
                 </table>
             </div>
         </div>
-
         <div>
             <span>jQuery Grid - Frozen columns and sorting</span>
             <div style="width: 1000px; height: 200px;" class="k-grid k-widget k-grid-display-block k-grid-lockedcolumns">
@@ -168,7 +194,9 @@
                                         <a class="k-link" href="#">Order ID</a>
                                     </th>
                                     <th rowspan="1" class="k-header k-sorted">
-                                        <a class="k-link" href="#">Ship Name<i is="Icon" name="sort-desc-sm"></i><span class="k-sort-order">1</span></a>
+                                        <a class="k-link" href="#">Ship Name<i is="Icon" name="sort-desc-sm"></i>
+                                            <span class="k-sort-order">1</span>
+                                        </a>
                                     </th>
                                 </tr>
                             </thead>
@@ -183,7 +211,9 @@
                             <thead>
                                 <tr>
                                     <th rowspan="1" class="k-header k-sorted">
-                                        <a class="k-link" href="#">Ship Country<i is="Icon" name="sort-asc-sm"></i><span class="k-sort-order">2</span></a>
+                                        <a class="k-link" href="#">Ship Country<i is="Icon" name="sort-asc-sm"></i>
+                                            <span class="k-sort-order">2</span>
+                                        </a>
                                     </th>
                                     <th rowspan="1" class="k-header">
                                         <a class="k-link" href="#">Ship City</a>
@@ -218,7 +248,8 @@
                             </tr>
                         </tbody>
                     </table>
-                </div><div class="k-grid-content k-auto-scrollable" style="width: 597px; height: 161px;">
+                </div>
+                <div class="k-grid-content k-auto-scrollable" style="width: 597px; height: 161px;">
                     <table role="grid" style="height: auto; width: 900px;">
                         <colgroup>
                             <col style="width: 400px;" class="k-sorted" />
@@ -245,9 +276,7 @@
                     </table>
                 </div>
             </div>
-
         </div>
-
         <div>
             <span>Angular Grid with locked columns, Grouping and Multiline headers</span>
             <kendo-grid class="k-widget k-grid k-grid-lockedcolumns grid-styling-overrides" style="height: 430px;">
@@ -263,12 +292,8 @@
                                 <thead>
                                     <tr style="height: 38px;">
                                         <th class="k-group-cell k-header"></th>
-                                        <th class="k-header" rowspan="2" colspan="1">
-                                            Product ID
-                                        </th>
-                                        <th class="k-header" rowspan="2" colspan="1">
-                                            Product Name
-                                        </th>
+                                        <th class="k-header" rowspan="2" colspan="1"> Product ID </th>
+                                        <th class="k-header" rowspan="2" colspan="1"> Product Name </th>
                                     </tr>
                                     <tr style="height: 38px;">
                                         <th class="k-group-cell k-header"></th>
@@ -286,23 +311,13 @@
                                 </colgroup>
                                 <thead>
                                     <tr style="height: 38px;">
-                                        <th class="k-header" rowspan="1" colspan="3">
-                                            Availability
-                                        </th>
-                                        <th class="k-header" rowspan="2" colspan="1">
-                                            Discontinued
-                                        </th>
+                                        <th class="k-header" rowspan="1" colspan="3"> Availability </th>
+                                        <th class="k-header" rowspan="2" colspan="1"> Discontinued </th>
                                     </tr>
                                     <tr style="height: 38px;">
-                                        <th class="k-header"rowspan="1" colspan="1">
-                                            Unit Price
-                                        </th>
-                                        <th class="k-header" rowspan="1" colspan="1">
-                                            Units On Order
-                                        </th>
-                                        <th class="k-header" rowspan="1" colspan="1">
-                                            Units In Stock
-                                        </th>
+                                        <th class="k-header" rowspan="1" colspan="1"> Unit Price </th>
+                                        <th class="k-header" rowspan="1" colspan="1"> Units On Order </th>
+                                        <th class="k-header" rowspan="1" colspan="1"> Units In Stock </th>
                                     </tr>
                                 </thead>
                             </table>
@@ -321,37 +336,24 @@
                                         <tr class="k-grouping-row" style="height: 37px;">
                                             <td colspan="3">
                                                 <p class="k-reset">
-                                                    <i is="Icon" name="collapse"></i>
-                                                    Discontinued: false
+                                                    <i is="Icon" name="collapse"></i> Discontinued: false
                                                 </p>
                                             </td>
                                         </tr>
                                         <tr style="height: 39px;">
                                             <td class="k-group-cell"></td>
-                                            <td colspan="1">
-                                                1
-                                            </td>
-                                            <td colspan="1">
-                                                Chai
-                                            </td>
+                                            <td colspan="1"> 1 </td>
+                                            <td colspan="1"> Chai </td>
                                         </tr>
                                         <tr class="k-alt" style="height: 38px;">
                                             <td class="k-group-cell"></td>
-                                            <td colspan="1">
-                                                2
-                                            </td>
-                                            <td colspan="1">
-                                                Chang
-                                            </td>
+                                            <td colspan="1"> 2 </td>
+                                            <td colspan="1"> Chang </td>
                                         </tr>
                                         <tr style="height: 38px;">
                                             <td class="k-group-cell"></td>
-                                            <td colspan="1">
-                                                3
-                                            </td>
-                                            <td colspan="1">
-                                                Aniseed Syrup
-                                            </td>
+                                            <td colspan="1"> 3 </td>
+                                            <td colspan="1"> Aniseed Syrup </td>
                                         </tr>
                                         <tr class="k-group-footer" style="height: 39px;">
                                             <td class="k-group-cell"></td>
@@ -361,19 +363,14 @@
                                         <tr class="k-grouping-row" style="height: 37px;">
                                             <td colspan="3">
                                                 <p class="k-reset">
-                                                    <i is="Icon" name="collapse"></i>
-                   Discontinued: true
+                                                    <i is="Icon" name="collapse"></i> Discontinued: true
                                                 </p>
                                             </td>
                                         </tr>
                                         <tr class="k-alt" style="height: 39px;">
                                             <td class="k-group-cell"></td>
-                                            <td colspan="1">
-                                                9
-                                            </td>
-                                            <td colspan="1">
-                                                Mishi Kobe Niku
-                                            </td>
+                                            <td colspan="1"> 9 </td>
+                                            <td colspan="1"> Mishi Kobe Niku </td>
                                         </tr>
                                         <tr class="k-group-footer" style="height: 38px;">
                                             <td class="k-group-cell"></td>
@@ -404,49 +401,31 @@
                                             </td>
                                         </tr>
                                         <tr style="height: 39px;">
-                                            <td colspan="1">
-                                                18
-                                            </td>
-                                            <td colspan="1">
-                                                0
-                                            </td>
-                                            <td colspan="1">
-                                                39
-                                            </td>
+                                            <td colspan="1"> 18 </td>
+                                            <td colspan="1"> 0 </td>
+                                            <td colspan="1"> 39 </td>
                                             <td colspan="1">
                                                 <input is="Checkbox" />
                                             </td>
                                         </tr>
                                         <tr class="k-alt" style="height: 38px;">
-                                            <td colspan="1">
-                                                19
-                                            </td>
-                                            <td colspan="1">
-                                                40
-                                            </td>
-                                            <td colspan="1">
-                                                17
-                                            </td>
+                                            <td colspan="1"> 19 </td>
+                                            <td colspan="1"> 40 </td>
+                                            <td colspan="1"> 17 </td>
                                             <td colspan="1">
                                                 <input is="Checkbox" />
                                             </td>
                                         </tr>
                                         <tr style="height: 38px;">
                                             <td colspan="1"></td>
-                                            <td colspan="1">
-                                                70
-                                            </td>
-                                            <td colspan="1">
-                                                13
-                                            </td>
+                                            <td colspan="1"> 70 </td>
+                                            <td colspan="1"> 13 </td>
                                             <td colspan="1">
                                                 <input is="Checkbox" />
                                             </td>
                                         </tr>
                                         <tr class="k-group-footer" style="height: 39px;">
-                                            <td>
-                                                Sum: 47
-                                            </td>
+                                            <td> Sum: 47 </td>
                                             <td></td>
                                             <td></td>
                                             <td></td>
@@ -456,24 +435,16 @@
                                                 <p class="k-reset"></p>
                                             </td>
                                         </tr>
-                                        <tr class="k-alt"style="height: 39px;">
-                                            <td colspan="1">
-                                                97
-                                            </td>
-                                            <td colspan="1">
-                                                0
-                                            </td>
-                                            <td colspan="1">
-                                                29
-                                            </td>
+                                        <tr class="k-alt" style="height: 39px;">
+                                            <td colspan="1"> 97 </td>
+                                            <td colspan="1"> 0 </td>
+                                            <td colspan="1"> 29 </td>
                                             <td colspan="1">
                                                 <input is="Checkbox" />
                                             </td>
                                         </tr>
                                         <tr class="k-group-footer" style="height: 38px;">
-                                            <td>
-                                                Sum: 97
-                                            </td>
+                                            <td> Sum: 97 </td>
                                             <td></td>
                                             <td></td>
                                             <td></td>
@@ -515,9 +486,7 @@
                                 </colgroup>
                                 <tfoot>
                                     <tr class="k-footer-template">
-                                        <td>
-                                            Total Unit Price: 144
-                                        </td>
+                                        <td> Total Unit Price: 144 </td>
                                         <td></td>
                                         <td></td>
                                         <td></td>

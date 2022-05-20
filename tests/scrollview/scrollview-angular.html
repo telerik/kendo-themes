@@ -3,32 +3,33 @@
 <head>
     <title>ScrollView -- Angular</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
-    <link rel="stylesheet" href="../../assets/styles.css" />
-    <script src="../../assets/scripts.js"></script>
-    <script src="../../../../packages/html/dist/index.js"></script>
-
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css" />
+    <link rel="stylesheet" href="/packages/html/assets/styles.css" />
+    <script src="/packages/html/assets/scripts.js"></script>
+    <script src="/packages/html/dist/index.js"></script>
     <style>
         .k-scrollview {
             width: 100%;
             height: 300px;
         }
+        .k-scrollview {
+            background: gray !important;
+        }
+        .k-scrollview-dark {
+            background: white !important;
+        }
+        .k-scrollview-light {
+            background: black !important;
+        }
 
-        .k-scrollview { background: gray !important; }
-        .k-scrollview-dark { background: white !important; }
-        .k-scrollview-light { background: black !important; }
     </style>
 </head>
 <body class="k-body">
-
     <div id="test-area" class="k-d-grid k-grid-cols-3">
-
         <span class="k-colspan-all">Angular scrollview</span>
-
         <span>Light mode</span>
         <span>Normal</span>
         <span>Dark mode</span>
-
         <kendo-scrollview class="k-widget k-scrollview k-scrollview-light">
             <ul class="k-scrollview-wrap">
                 <li style="transform: translateX(-100%);">
@@ -59,7 +60,6 @@
                 </kendo-scrollview-pager>
             </div>
         </kendo-scrollview>
-
         <kendo-scrollview class="k-widget k-scrollview">
             <ul class="k-scrollview-wrap">
                 <li style="transform: translateX(-100%);">
@@ -94,7 +94,6 @@
                 </kendo-scrollview-pager>
             </div>
         </kendo-scrollview>
-
         <kendo-scrollview class="k-widget k-scrollview k-scrollview-dark">
             <ul class="k-scrollview-wrap">
                 <li style="transform: translateX(-100%);">
@@ -127,8 +126,6 @@
                 </kendo-scrollview-pager>
             </div>
         </kendo-scrollview>
-
     </div>
-
 </body>
 </html>

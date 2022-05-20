@@ -3,11 +3,10 @@
 <head>
     <title>Datetime selector</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
-    <link rel="stylesheet" href="../../assets/styles.css" />
-    <script src="../../assets/scripts.js"></script>
-    <script src="../../../../packages/html/dist/index.js"></script>
-
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css" />
+    <link rel="stylesheet" href="/packages/html/assets/styles.css" />
+    <script src="/packages/html/assets/scripts.js"></script>
+    <script src="/packages/html/dist/index.js"></script>
     <style>
         .k-animation-container {
             width: min-content;
@@ -18,15 +17,13 @@
         kendo-popup {
             display: block;
         }
+
     </style>
 </head>
 <body class="k-body">
-
     <div id="test-area" class="k-d-grid k-grid-cols-2">
-
         <span>Date tab</span>
         <span>Time tab</span>
-
         <section>
             <div class="k-animation-container">
                 <div class="k-popup k-reset k-datetime-container">
@@ -210,7 +207,6 @@
                                 <!-- omit -->
                             </div>
                         </div>
-
                         <div is="ActionButtons" class="k-datetime-footer" alignment="stretched">
                             <button is="Button" class="k-time-cancel">Cancel</button>
                             <button is="Button" themeColor="primary" class="k-time-accept">Set</button>
@@ -219,7 +215,6 @@
                 </div>
             </div>
         </section>
-
         <section>
             <div class="k-animation-container">
                 <div class="k-popup k-reset k-datetime-container">
@@ -244,7 +239,7 @@
                                         <div class="k-time-list-container">
                                             <span class="k-time-highlight"></span>
                                             <div class="k-time-list-wrapper">
-                                            <span class="k-title">Hour</span>
+                                                <span class="k-title">Hour</span>
                                                 <div class="k-time-list">
                                                     <div class="k-content k-scrollable k-time-container">
                                                         <ul class="k-reset" style="transform: translateY(97px);">
@@ -395,8 +390,6 @@
                 </div>
             </div>
         </section>
-
     </div>
-
 </body>
 </html>

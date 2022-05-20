@@ -3,11 +3,10 @@
 <head>
     <title>File Manager Drag Hint</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
-    <link rel="stylesheet" href="../../assets/styles.css" />
-    <script src="../../assets/scripts.js"></script>
-    <script src="../../../../packages/html/dist/index.js"></script>
-
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css" />
+    <link rel="stylesheet" href="/packages/html/assets/styles.css" />
+    <script src="/packages/html/assets/scripts.js"></script>
+    <script src="/packages/html/dist/index.js"></script>
     <style>
         #filemanager-draghint {
             position: absolute;
@@ -15,11 +14,11 @@
             top: 200px;
             z-index: 2;
         }
+
     </style>
 </head>
 <body class="k-body">
     <div id="test-area" class="grid k-grid-cols-1">
-
         <span>File Manager Drag Hint</span>
         <div class="k-widget k-filemanager">
             <!-- Header -->
@@ -29,15 +28,13 @@
                     <button is="Button">Upload</button>
                 </div>
             </div>
-
-            <div class="k-filemanager-content-container" >
+            <div class="k-filemanager-content-container">
                 <!-- Navigation -->
                 <div class="k-filemanager-navigation">
                     <ul is="Treeview" class="k-filemanager-treeview">
                         <li>Folder</li>
                     </ul>
                 </div>
-
                 <!-- Content -->
                 <div class="k-filemanager-content">
                     <nav class="k-filemanager-breadcrumb k-widget k-breadcrumb">
@@ -49,34 +46,33 @@
                             </li>
                         </ol>
                     </nav>
-
                     <!-- View -->
                     <div class="k-widget k-listview k-selectable k-filemanager-listview">
                         <div class="k-listview-content k-d-flex k-flex-row k-flex-wrap">
                             <div class="k-listview-item">
-                                <span class="k-file-preview"><i is="Icon" class="k-file-icon" name="folder"></i></span>
+                                <span class="k-file-preview">
+                                    <i is="Icon" class="k-file-icon" name="folder"></i>
+                                </span>
                                 <span class="k-file-name">Folder</span>
                             </div>
                             <div class="k-listview-item k-state-selected">
-                                <span class="k-file-preview"><i is="Icon" class="k-file-icon" name="file-image"></i></span>
+                                <span class="k-file-preview">
+                                    <i is="Icon" class="k-file-icon" name="file-image"></i>
+                                </span>
                                 <span class="k-file-name">file.png</span>
                             </div>
                         </div>
                     </div>
                 </div>
-
-
                 <!-- Preview -->
                 <div class="k-filemanager-preview k-hidden">
                 </div>
             </div>
         </div>
-
         <div class="k-filemanager-drag-hint k-drag-clue" id="filemanager-draghint">
             <i is="Icon" name="file"></i>
             <span>file.png</span>
         </div>
-
     </div>
 </body>
 </html>

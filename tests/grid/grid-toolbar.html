@@ -1,33 +1,27 @@
 <!doctype html>
 <html lang="en" class="k-no-animations">
-
 <head>
     <title>Grid Toolbar</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
-    <link rel="stylesheet" href="../../assets/styles.css" />
-    <script src="../../assets/scripts.js"></script>
-    <script src="../../../../packages/html/dist/index.js"></script>
-
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css" />
+    <link rel="stylesheet" href="/packages/html/assets/styles.css" />
+    <script src="/packages/html/assets/scripts.js"></script>
+    <script src="/packages/html/dist/index.js"></script>
     <style>
         #test-area {
             grid-template-columns: min-content 1fr 1fr;
         }
-        #test-area > span {
+        #test-area>span {
             white-space: nowrap;
         }
+
     </style>
 </head>
-
 <body class="k-body">
-
     <div id="test-area" class="k-d-grid">
-
         <span></span>
         <span>jQuery</span>
         <span>Angular</span>
-
-
         <span>Toolbar</span>
         <section>
             <div class="k-widget k-grid">
@@ -53,8 +47,6 @@
                 </kendo-grid-toolbar>
             </kendo-grid>
         </section>
-
-
         <span>Toolbar RTL</span>
         <section>
             <div class="k-widget k-grid k-rtl">
@@ -80,8 +72,6 @@
                 </kendo-grid-toolbar>
             </kendo-grid>
         </section>
-
-
         <span>Search</span>
         <section>
             <div class="k-widget k-grid">
@@ -100,11 +90,8 @@
                     <kendo-grid-spacer class="k-spacer"></kendo-grid-spacer>
                     <button is="Button">Spacer</button>
                 </kendo-grid-toolbar>
-
             </kendo-grid>
         </section>
-
-
         <span>Search RTL</span>
         <section>
             <div class="k-widget k-grid k-rtl">
@@ -125,7 +112,6 @@
                 </kendo-grid-toolbar>
             </kendo-grid>
         </section>
-
         <span>Multi-line</span>
         <section>
             <div class="k-widget k-grid">
@@ -140,7 +126,6 @@
             </div>
         </section>
         <section></section>
-
         <span>Multiline RTL</span>
         <section>
             <div class="k-widget k-grid k-rtl">
@@ -155,9 +140,6 @@
             </div>
         </section>
         <section></section>
-
-
     </div>
-
 </body>
 </html>

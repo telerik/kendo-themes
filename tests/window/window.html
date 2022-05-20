@@ -3,31 +3,27 @@
 <head>
     <title>Window</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
-    <link rel="stylesheet" href="../../assets/styles.css" />
-    <script src="../../assets/scripts.js"></script>
-    <script src="../../../../packages/html/dist/index.js"></script>
-
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css" />
+    <link rel="stylesheet" href="/packages/html/assets/styles.css" />
+    <script src="/packages/html/assets/scripts.js"></script>
+    <script src="/packages/html/dist/index.js"></script>
     <style>
         /* test page overrides */
-         .k-window {
+        .k-window {
             position: relative;
         }
-
         #test-area {
             grid-template-columns: repeat(2, 1fr);
             align-items: start;
         }
-
         .grid-single {
             display: grid;
         }
+
     </style>
 </head>
 <body class="k-body">
-
     <div id="test-area" class="grid">
-
         <section class="grid-single">
             <div class="k-widget k-window">
                 <div class="k-window-titlebar k-header">
@@ -38,12 +34,9 @@
                         <button is="Button" fillMode="flat" icon="close"></button>
                     </div>
                 </div>
-                <div class="k-window-content">
-                    jQuery window content
-                </div>
+                <div class="k-window-content"> jQuery window content </div>
             </div>
         </section>
-
         <section class="grid-single">
             <div class="k-widget k-window">
                 <div class="k-window-titlebar k-header">
@@ -54,32 +47,23 @@
                         <button is="Button" fillMode="flat" icon="close"></button>
                     </div>
                 </div>
-                <div class="k-window-content">
-                    jQuery window with no title specified
-                </div>
+                <div class="k-window-content"> jQuery window with no title specified </div>
             </div>
         </section>
-
         <section class="grid-single">
             <div class="k-widget k-window">
                 <div class="k-window-titlebar k-header">
                     <span class="k-window-title"></span>
                     <div class="k-window-actions"></div>
                 </div>
-                <div class="k-window-content">
-                    jQuery window with empty title and no actions
-                </div>
+                <div class="k-window-content"> jQuery window with empty title and no actions </div>
             </div>
         </section>
-
         <section class="grid-single">
             <div class="k-widget k-window k-window-titleless">
-                <div class="k-window-content">
-                    jQuery window without a title
-                </div>
+                <div class="k-window-content"> jQuery window without a title </div>
             </div>
         </section>
-
         <section class="grid-single">
             <div class="k-widget k-window k-window-minimized">
                 <div class="k-window-titlebar k-header">
@@ -90,12 +74,9 @@
                         <button is="Button" fillMode="flat" icon="close"></button>
                     </div>
                 </div>
-                <div class="k-window-content" hidden>
-                    jQuery Window content
-                </div>
+                <div class="k-window-content" hidden> jQuery Window content </div>
             </div>
         </section>
     </div>
-
 </body>
 </html>

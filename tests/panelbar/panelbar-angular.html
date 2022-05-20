@@ -3,11 +3,10 @@
 <head>
     <title>Panelbar -- angular</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
-    <link rel="stylesheet" href="../../assets/styles.css" />
-    <script src="../../assets/scripts.js"></script>
-    <script src="../../../../packages/html/dist/index.js"></script>
-
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css" />
+    <link rel="stylesheet" href="/packages/html/assets/styles.css" />
+    <script src="/packages/html/assets/scripts.js"></script>
+    <script src="/packages/html/dist/index.js"></script>
     <style>
         #test-area {
             align-items: start;
@@ -21,65 +20,49 @@
             display: inline-block;
             background-color: gold;
         }
+
     </style>
 </head>
 <body class="k-body">
     <div id="test-area" class="k-d-grid k-grid-cols-4">
-
         <span class="k-colspan-all">LTR</span>
-
         <section>
             <kendo-panelbar class="k-widget k-panelbar">
                 <kendo-panelbar-item class="k-item">
                     <span class="k-link k-header">
-                        <i is="Icon" name="cog"></i>
-                        Root
-                        <i is="Icon" class="k-panelbar-expand" name="arrow-s"></i>
+                        <i is="Icon" name="cog"></i> Root <i is="Icon" class="k-panelbar-expand" name="arrow-s"></i>
                     </span>
                 </kendo-panelbar-item>
                 <kendo-panelbar-item class="k-item">
                     <span class="k-link k-header k-state-hover">
-                        <span class="k-image"></span>
-                        Root hover
-                        <i is="Icon" class="k-panelbar-expand" name="arrow-s"></i>
+                        <span class="k-image"></span> Root hover <i is="Icon" class="k-panelbar-expand" name="arrow-s"></i>
                     </span>
                 </kendo-panelbar-item>
                 <kendo-panelbar-item class="k-item">
                     <span class="k-link k-header k-state-focus">
-                        <span class="k-sprite"></span>
-                        Root focus
-                        <i is="Icon" class="k-panelbar-expand" name="arrow-s"></i>
+                        <span class="k-sprite"></span> Root focus <i is="Icon" class="k-panelbar-expand" name="arrow-s"></i>
                     </span>
                 </kendo-panelbar-item>
                 <kendo-panelbar-item class="k-item">
-                    <span class="k-link k-header k-state-selected">
-                        Root selected
-                        <i is="Icon" class="k-panelbar-expand" name="arrow-s"></i>
+                    <span class="k-link k-header k-state-selected"> Root selected <i is="Icon" class="k-panelbar-expand" name="arrow-s"></i>
                     </span>
                 </kendo-panelbar-item>
                 <kendo-panelbar-item class="k-item">
-                    <span class="k-link k-header k-state-disabled">
-                        Root disabled
-                        <i is="Icon" class="k-panelbar-expand" name="arrow-s"></i>
+                    <span class="k-link k-header k-state-disabled"> Root disabled <i is="Icon" class="k-panelbar-expand" name="arrow-s"></i>
                     </span>
                 </kendo-panelbar-item>
                 <kendo-panelbar-item class="k-item">
-                    <span class="k-link k-header">
-                        Root last
-                    </span>
+                    <span class="k-link k-header"> Root last </span>
                 </kendo-panelbar-item>
             </kendo-panelbar>
         </section>
-
         <section>
             <kendo-panelbar class="k-widget k-panelbar">
                 <kendo-panelbar-item class="k-item">
                     <span class="k-link k-header">First</span>
                 </kendo-panelbar-item>
                 <kendo-panelbar-item class="k-item k-state-expanded">
-                    <span class="k-link k-header">
-                        Middle expanded
-                        <i is="Icon" class="k-panelbar-collapse" name="arrow-n"></i>
+                    <span class="k-link k-header"> Middle expanded <i is="Icon" class="k-panelbar-collapse" name="arrow-n"></i>
                     </span>
                     <div>
                         <div class="k-panel k-group">
@@ -87,27 +70,19 @@
                                 <span class="k-link">Child</span>
                             </kendo-panelbar-item>
                             <kendo-panelbar-item class="k-item">
-                                <span class="k-link k-state-hover">
-                                    Child hover
-                                    <i is="Icon" class="k-panelbar-expand" name="arrow-s"></i>
+                                <span class="k-link k-state-hover"> Child hover <i is="Icon" class="k-panelbar-expand" name="arrow-s"></i>
                                 </span>
                             </kendo-panelbar-item>
                             <kendo-panelbar-item class="k-item">
-                                <span class="k-link k-state-focus">
-                                    Child focus
-                                    <i is="Icon" class="k-panelbar-expand" name="arrow-s"></i>
+                                <span class="k-link k-state-focus"> Child focus <i is="Icon" class="k-panelbar-expand" name="arrow-s"></i>
                                 </span>
                             </kendo-panelbar-item>
                             <kendo-panelbar-item class="k-item">
-                                <span class="k-link k-state-selected">
-                                    Child selected
-                                    <i is="Icon" class="k-panelbar-expand" name="arrow-s"></i>
+                                <span class="k-link k-state-selected"> Child selected <i is="Icon" class="k-panelbar-expand" name="arrow-s"></i>
                                 </span>
                             </kendo-panelbar-item>
                             <kendo-panelbar-item class="k-item k-state-expanded">
-                                <span class="k-link">
-                                    Child expanded
-                                    <i is="Icon" class="k-panelbar-collapse" name="arrow-n"></i>
+                                <span class="k-link"> Child expanded <i is="Icon" class="k-panelbar-collapse" name="arrow-n"></i>
                                 </span>
                                 <div>
                                     <div class="k-panel k-group">
@@ -124,9 +99,7 @@
                                 </div>
                             </kendo-panelbar-item>
                             <kendo-panelbar-item class="k-item">
-                                <span class="k-link k-state-disabled">
-                                    Child disabled
-                                    <i is="Icon" class="k-panelbar-expand" name="arrow-s"></i>
+                                <span class="k-link k-state-disabled"> Child disabled <i is="Icon" class="k-panelbar-expand" name="arrow-s"></i>
                                 </span>
                             </kendo-panelbar-item>
                             <kendo-panelbar-item class="k-item">
@@ -144,13 +117,10 @@
                 </kendo-panelbar-item>
             </kendo-panelbar>
         </section>
-
         <section>
             <kendo-panelbar class="k-widget k-panelbar">
                 <kendo-panelbar-item class="k-item k-state-expanded">
-                    <span class="k-link k-header">
-                        First expanded
-                        <i is="Icon" class="k-panelbar-collapse" name="arrow-n"></i>
+                    <span class="k-link k-header"> First expanded <i is="Icon" class="k-panelbar-collapse" name="arrow-n"></i>
                     </span>
                     <div>
                         <div class="k-panelbar-content">
@@ -167,7 +137,6 @@
                 </kendo-panelbar-item>
             </kendo-panelbar>
         </section>
-
         <section>
             <kendo-panelbar class="k-widget k-panelbar">
                 <kendo-panelbar-item class="k-item">
@@ -177,9 +146,7 @@
                     <span class="k-link k-header">Middle</span>
                 </kendo-panelbar-item>
                 <kendo-panelbar-item class="k-item k-state-expanded">
-                    <span class="k-link k-header">
-                        Last expanded
-                        <i is="Icon" class="k-panelbar-collapse" name="arrow-n"></i>
+                    <span class="k-link k-header"> Last expanded <i is="Icon" class="k-panelbar-collapse" name="arrow-n"></i>
                     </span>
                     <div>
                         <div class="k-panelbar-content">
@@ -190,61 +157,44 @@
                 </kendo-panelbar-item>
             </kendo-panelbar>
         </section>
-
         <span class="k-colspan-all">RTL</span>
-
         <section>
             <kendo-panelbar class="k-widget k-panelbar" dir="rtl">
                 <kendo-panelbar-item class="k-item">
                     <span class="k-link k-header">
-                        <i is="Icon" name="cog"></i>
-                        Root
-                        <i is="Icon" class="k-panelbar-expand" name="arrow-s"></i>
+                        <i is="Icon" name="cog"></i> Root <i is="Icon" class="k-panelbar-expand" name="arrow-s"></i>
                     </span>
                 </kendo-panelbar-item>
                 <kendo-panelbar-item class="k-item">
                     <span class="k-link k-header k-state-hover">
-                        <span class="k-image"></span>
-                        Root hover
-                        <i is="Icon" class="k-panelbar-expand" name="arrow-s"></i>
+                        <span class="k-image"></span> Root hover <i is="Icon" class="k-panelbar-expand" name="arrow-s"></i>
                     </span>
                 </kendo-panelbar-item>
                 <kendo-panelbar-item class="k-item">
                     <span class="k-link k-header k-state-focus">
-                        <span class="k-sprite"></span>
-                        Root focus
-                        <i is="Icon" class="k-panelbar-expand" name="arrow-s"></i>
+                        <span class="k-sprite"></span> Root focus <i is="Icon" class="k-panelbar-expand" name="arrow-s"></i>
                     </span>
                 </kendo-panelbar-item>
                 <kendo-panelbar-item class="k-item">
-                    <span class="k-link k-header k-state-selected">
-                        Root selected
-                        <i is="Icon" class="k-panelbar-expand" name="arrow-s"></i>
+                    <span class="k-link k-header k-state-selected"> Root selected <i is="Icon" class="k-panelbar-expand" name="arrow-s"></i>
                     </span>
                 </kendo-panelbar-item>
                 <kendo-panelbar-item class="k-item">
-                    <span class="k-link k-header k-state-disabled">
-                        Root disabled
-                        <i is="Icon" class="k-panelbar-expand" name="arrow-s"></i>
+                    <span class="k-link k-header k-state-disabled"> Root disabled <i is="Icon" class="k-panelbar-expand" name="arrow-s"></i>
                     </span>
                 </kendo-panelbar-item>
                 <kendo-panelbar-item class="k-item">
-                    <span class="k-link k-header">
-                        Root last
-                    </span>
+                    <span class="k-link k-header"> Root last </span>
                 </kendo-panelbar-item>
             </kendo-panelbar>
         </section>
-
         <section>
             <kendo-panelbar class="k-widget k-panelbar" dir="rtl">
                 <kendo-panelbar-item class="k-item">
                     <span class="k-link k-header">First</span>
                 </kendo-panelbar-item>
                 <kendo-panelbar-item class="k-item k-state-expanded">
-                    <span class="k-link k-header">
-                        Middle expanded
-                        <i is="Icon" class="k-panelbar-collapse" name="arrow-n"></i>
+                    <span class="k-link k-header"> Middle expanded <i is="Icon" class="k-panelbar-collapse" name="arrow-n"></i>
                     </span>
                     <div>
                         <div class="k-panel k-group">
@@ -252,27 +202,19 @@
                                 <span class="k-link">Child</span>
                             </kendo-panelbar-item>
                             <kendo-panelbar-item class="k-item">
-                                <span class="k-link k-state-hover">
-                                    Child hover
-                                    <i is="Icon" class="k-panelbar-expand" name="arrow-s"></i>
+                                <span class="k-link k-state-hover"> Child hover <i is="Icon" class="k-panelbar-expand" name="arrow-s"></i>
                                 </span>
                             </kendo-panelbar-item>
                             <kendo-panelbar-item class="k-item">
-                                <span class="k-link k-state-focus">
-                                    Child focus
-                                    <i is="Icon" class="k-panelbar-expand" name="arrow-s"></i>
+                                <span class="k-link k-state-focus"> Child focus <i is="Icon" class="k-panelbar-expand" name="arrow-s"></i>
                                 </span>
                             </kendo-panelbar-item>
                             <kendo-panelbar-item class="k-item">
-                                <span class="k-link k-state-selected">
-                                    Child selected
-                                    <i is="Icon" class="k-panelbar-expand" name="arrow-s"></i>
+                                <span class="k-link k-state-selected"> Child selected <i is="Icon" class="k-panelbar-expand" name="arrow-s"></i>
                                 </span>
                             </kendo-panelbar-item>
                             <kendo-panelbar-item class="k-item k-state-expanded">
-                                <span class="k-link">
-                                    Child expanded
-                                    <i is="Icon" class="k-panelbar-collapse" name="arrow-n"></i>
+                                <span class="k-link"> Child expanded <i is="Icon" class="k-panelbar-collapse" name="arrow-n"></i>
                                 </span>
                                 <div>
                                     <div class="k-panel k-group">
@@ -289,9 +231,7 @@
                                 </div>
                             </kendo-panelbar-item>
                             <kendo-panelbar-item class="k-item">
-                                <span class="k-link k-state-disabled">
-                                    Child disabled
-                                    <i is="Icon" class="k-panelbar-expand" name="arrow-s"></i>
+                                <span class="k-link k-state-disabled"> Child disabled <i is="Icon" class="k-panelbar-expand" name="arrow-s"></i>
                                 </span>
                             </kendo-panelbar-item>
                             <kendo-panelbar-item class="k-item">
@@ -309,13 +249,10 @@
                 </kendo-panelbar-item>
             </kendo-panelbar>
         </section>
-
         <section>
             <kendo-panelbar class="k-widget k-panelbar" dir="rtl">
                 <kendo-panelbar-item class="k-item k-state-expanded">
-                    <span class="k-link k-header">
-                        First expanded
-                        <i is="Icon" class="k-panelbar-collapse" name="arrow-n"></i>
+                    <span class="k-link k-header"> First expanded <i is="Icon" class="k-panelbar-collapse" name="arrow-n"></i>
                     </span>
                     <div>
                         <div class="k-panelbar-content">
@@ -332,7 +269,6 @@
                 </kendo-panelbar-item>
             </kendo-panelbar>
         </section>
-
         <section>
             <kendo-panelbar class="k-widget k-panelbar" dir="rtl">
                 <kendo-panelbar-item class="k-item">
@@ -342,9 +278,7 @@
                     <span class="k-link k-header">Middle</span>
                 </kendo-panelbar-item>
                 <kendo-panelbar-item class="k-item k-state-expanded">
-                    <span class="k-link k-header">
-                        Last expanded
-                        <i is="Icon" class="k-panelbar-collapse" name="arrow-n"></i>
+                    <span class="k-link k-header"> Last expanded <i is="Icon" class="k-panelbar-collapse" name="arrow-n"></i>
                     </span>
                     <div>
                         <div class="k-panelbar-content">
@@ -355,8 +289,6 @@
                 </kendo-panelbar-item>
             </kendo-panelbar>
         </section>
-
     </div>
-
 </body>
 </html>

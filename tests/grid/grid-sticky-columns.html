@@ -3,12 +3,11 @@
 <head>
     <title>Grid Sticky Columns</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
-    <link rel="stylesheet" href="../../assets/styles.css" />
-    <script src="../../assets/scripts.js"></script>
-    <script src="../../../../packages/html/dist/index.js"></script>
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css" />
+    <link rel="stylesheet" href="/packages/html/assets/styles.css" />
+    <script src="/packages/html/assets/scripts.js"></script>
+    <script src="/packages/html/dist/index.js"></script>
 </head>
-
 <body class="k-body">
     <div id="test-area" class="grid">
         <div class="k-widget k-grid" role="grid" style="height: 400px; width: 500px;">
@@ -27,12 +26,18 @@
                                 <th colspan="1" rowspan="1" class="k-header k-grid-header-sticky" style="left: 0px; right: 250px; border-right-width: 1px;">
                                     <a class="k-link">Product Name</a>
                                 </th>
-                                <th colspan="1" rowspan="1" class="k-header"><a class="k-link">Units In Stock</a></th>
-                                <th colspan="1" rowspan="1" class="k-header"><a class="k-link">Price</a></th>
+                                <th colspan="1" rowspan="1" class="k-header">
+                                    <a class="k-link">Units In Stock</a>
+                                </th>
+                                <th colspan="1" rowspan="1" class="k-header">
+                                    <a class="k-link">Price</a>
+                                </th>
                                 <th colspan="1" rowspan="1" class="k-header k-grid-header-sticky" style="left: 250px; right: 0px; border-right-width: 1px;">
                                     <a class="k-link">Units On Order</a>
                                 </th>
-                                <th colspan="1" rowspan="1" class="k-header"><a class="k-link">Reorder Level</a></th>
+                                <th colspan="1" rowspan="1" class="k-header">
+                                    <a class="k-link">Reorder Level</a>
+                                </th>
                             </tr>
                         </thead>
                     </table>
@@ -120,28 +125,25 @@
                                     <td colspan="1" class="k-grid-content-sticky" style="left: 250px; right: 0px; border-right-width: 1px;">0</td>
                                     <td colspan="1">0</td>
                                 </tr>
-
                             </tbody>
                         </table>
                     </div>
-                    <div class="k-height-container"><div></div></div>
+                    <div class="k-height-container">
+                        <div></div>
+                    </div>
                 </div>
             </div>
         </div>
-
         <div class="k-grid k-widget telerik-blazor">
             <div class="k-grouping-header k-grouping-header-flex">
                 <div class="k-indicator-container">
                     <div class="k-group-indicator">
-                        <span class="k-link" style="cursor: default">
-                            Active Projects
-                        </span>
+                        <span class="k-link" style="cursor: default"> Active Projects </span>
                         <button is="Button" fillMode="flat" icon="close"></button>
                     </div>
                 </div>
                 <div class="k-indicator-container" style="touch-action: none;"></div>
             </div>
-
             <div class="k-grid-header">
                 <div class="k-grid-header-wrap">
                     <table>
@@ -153,34 +155,19 @@
                             <col style="width: 100px">
                             <col style="width: 100px">
                         </colgroup>
-
                         <thead>
                             <tr>
                                 <th colspan="1" rowspan="1" class="k-group-cell k-header"></th>
-                                <th class="k-header" colspan="1">
-                                    Name
-                                </th>
-                                <th class="k-header k-grid-header-sticky" style="left: 0px; right: 0px" colspan="1">
-                                    Team
-                                </th>
-
-                                <th class="k-header k-grid-header-sticky" colspan="1">
-                                    Active Projects
-                                </th>
-
-                                <th class="k-header" colspan="1">
-                                    Salary
-                                </th>
-
-                                <th class="k-header" colspan="1">
-                                    On Vacation
-                                </th>
+                                <th class="k-header" colspan="1"> Name </th>
+                                <th class="k-header k-grid-header-sticky" style="left: 0px; right: 0px" colspan="1"> Team </th>
+                                <th class="k-header k-grid-header-sticky" colspan="1"> Active Projects </th>
+                                <th class="k-header" colspan="1"> Salary </th>
+                                <th class="k-header" colspan="1"> On Vacation </th>
                             </tr>
                         </thead>
                     </table>
                 </div>
             </div>
-
             <div class="k-grid-container">
                 <div class="k-grid-content k-virtual-content">
                     <div style="position: relative;">
@@ -194,7 +181,6 @@
                                     <col style="width: 100px;">
                                     <col style="width: 100px;">
                                 </colgroup>
-
                                 <tbody>
                                     <tr class="k-grouping-row">
                                         <td colspan="6">
@@ -204,51 +190,33 @@
                                             </p>
                                         </td>
                                     </tr>
-
                                     <tr class="k-master-row">
                                         <td class="k-group-cell"></td>
-                                        <td colspan="1">
-                                            Employee 0</td>
-                                        <td colspan="1" class="k-grid-content-sticky" style="left: 0px; right: 0px">
-                                            Team 0</td>
-                                        <td colspan="1" class="k-grid-content-sticky">
-                                            2</td>
-                                        <td colspan="1">
-                                            1429</td>
-                                        <td colspan="1">
-                                            True</td>
+                                        <td colspan="1"> Employee 0</td>
+                                        <td colspan="1" class="k-grid-content-sticky" style="left: 0px; right: 0px"> Team 0</td>
+                                        <td colspan="1" class="k-grid-content-sticky"> 2</td>
+                                        <td colspan="1"> 1429</td>
+                                        <td colspan="1"> True</td>
                                     </tr>
-
                                     <tr class="k-master-row k-alt">
                                         <td class="k-group-cell"></td>
-                                        <td colspan="1">
-                                            Employee 4</td>
-                                        <td colspan="1" class="k-grid-content-sticky" style="left: 0px; right: 0px">
-                                            Team 1</td>
-                                        <td colspan="1" class="k-grid-content-sticky">
-                                            2</td>
-                                        <td colspan="1">
-                                            2915</td>
-                                        <td colspan="1">
-                                            True</td>
+                                        <td colspan="1"> Employee 4</td>
+                                        <td colspan="1" class="k-grid-content-sticky" style="left: 0px; right: 0px"> Team 1</td>
+                                        <td colspan="1" class="k-grid-content-sticky"> 2</td>
+                                        <td colspan="1"> 2915</td>
+                                        <td colspan="1"> True</td>
                                     </tr>
-
                                     <tr class="k-group-footer">
                                         <td class="k-group-cell"></td>
                                         <td>
                                         </td>
-                                        <td class="k-grid-footer-sticky" style="left: 0px; right: 0px">
-                                            Team size: 7
-                                        </td>
+                                        <td class="k-grid-footer-sticky" style="left: 0px; right: 0px"> Team size: 7 </td>
                                         <td class="k-grid-footer-sticky">
                                         </td>
-                                        <td>
-                                            Total: X
-                                        </td>
+                                        <td> Total: X </td>
                                         <td>
                                         </td>
                                     </tr>
-
                                     <tr class="k-grouping-row">
                                         <td colspan="6">
                                             <p class="k-reset">
@@ -258,75 +226,46 @@
                                             </p>
                                         </td>
                                     </tr>
-
                                     <tr class="k-master-row k-state-hover">
                                         <td class="k-group-cell"></td>
-                                        <td colspan="1">
-                                            Employee 1</td>
-                                        <td colspan="1" class="k-grid-content-sticky  " style="left: 0px; right: 0px">
-                                            Team 1 (Hovered)</td>
-                                        <td colspan="1" class="k-grid-content-sticky">
-                                            5</td>
-                                        <td colspan="1">
-                                            2307</td>
-                                        <td colspan="1">
-                                            False</td>
+                                        <td colspan="1"> Employee 1</td>
+                                        <td colspan="1" class="k-grid-content-sticky  " style="left: 0px; right: 0px"> Team 1 (Hovered)</td>
+                                        <td colspan="1" class="k-grid-content-sticky"> 5</td>
+                                        <td colspan="1"> 2307</td>
+                                        <td colspan="1"> False</td>
                                     </tr>
-
                                     <tr class="k-master-row k-alt k-state-selected">
                                         <td class="k-group-cell"></td>
-                                        <td colspan="1">
-                                            Employee 2</td>
-                                        <td colspan="1" class="k-grid-content-sticky" style="left: 0px; right: 0px">
-                                            Team 2  (Selected)</td>
-                                        <td colspan="1" class="k-grid-content-sticky">
-                                            5</td>
-                                        <td colspan="1">
-                                            4225</td>
-                                        <td colspan="1">
-                                            True</td>
+                                        <td colspan="1"> Employee 2</td>
+                                        <td colspan="1" class="k-grid-content-sticky" style="left: 0px; right: 0px"> Team 2 (Selected)</td>
+                                        <td colspan="1" class="k-grid-content-sticky"> 5</td>
+                                        <td colspan="1"> 4225</td>
+                                        <td colspan="1"> True</td>
                                     </tr>
-
                                     <tr class="k-master-row k-state-hover k-state-selected">
                                         <td class="k-group-cell"></td>
-                                        <td colspan="1">
-                                            Employee 3</td>
-                                        <td colspan="1" class="k-grid-content-sticky  " style="left: 0px; right: 0px">
-                                            Team 0 (Selected and Hovered)</td>
-                                        <td colspan="1" class="k-grid-content-sticky">
-                                            5</td>
-                                        <td colspan="1">
-                                            4593</td>
-                                        <td colspan="1">
-                                            False</td>
+                                        <td colspan="1"> Employee 3</td>
+                                        <td colspan="1" class="k-grid-content-sticky  " style="left: 0px; right: 0px"> Team 0 (Selected and Hovered)</td>
+                                        <td colspan="1" class="k-grid-content-sticky"> 5</td>
+                                        <td colspan="1"> 4593</td>
+                                        <td colspan="1"> False</td>
                                     </tr>
-
                                     <tr class="k-master-row k-alt  ">
                                         <td class="k-group-cell"></td>
-                                        <td colspan="1">
-                                            Employee 5</td>
-                                        <td colspan="1" class="k-grid-content-sticky" style="left: 0px; right: 0px">
-                                            Team 2</td>
-                                        <td colspan="1" class="k-grid-content-sticky">
-                                            5</td>
-                                        <td colspan="1">
-                                            2906</td>
-                                        <td colspan="1">
-                                         False</td>
+                                        <td colspan="1"> Employee 5</td>
+                                        <td colspan="1" class="k-grid-content-sticky" style="left: 0px; right: 0px"> Team 2</td>
+                                        <td colspan="1" class="k-grid-content-sticky"> 5</td>
+                                        <td colspan="1"> 2906</td>
+                                        <td colspan="1"> False</td>
                                     </tr>
-
                                     <tr class="k-group-footer">
                                         <td class="k-group-cell"></td>
                                         <td>
                                         </td>
-                                        <td class="k-grid-content-sticky" style="left: 0px; right: 0px">
-                                            Team size: 18
-                                        </td>
+                                        <td class="k-grid-content-sticky" style="left: 0px; right: 0px"> Team size: 18 </td>
                                         <td class="k-grid-content-sticky">
                                         </td>
-                                        <td>
-                                            Total: Y
-                                        </td>
+                                        <td> Total: Y </td>
                                         <td>
                                         </td>
                                     </tr>
@@ -334,7 +273,6 @@
                             </table>
                         </div>
                     </div>
-
                     <div class="k-height-container">
                         <div></div>
                     </div>
@@ -342,6 +280,5 @@
             </div>
         </div>
     </div>
-
 </body>
 </html>

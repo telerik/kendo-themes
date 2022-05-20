@@ -3,11 +3,10 @@
 <head>
     <title>Grid Rows States</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
-    <link rel="stylesheet" href="../../assets/styles.css" />
-    <script src="../../assets/scripts.js"></script>
-    <script src="../../../../packages/html/dist/index.js"></script>
-
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css" />
+    <link rel="stylesheet" href="/packages/html/assets/styles.css" />
+    <script src="/packages/html/assets/scripts.js"></script>
+    <script src="/packages/html/dist/index.js"></script>
     <style>
         section {
             position: relative;
@@ -18,17 +17,20 @@
             left: 100px;
             top: 50px;
         }
+
     </style>
 </head>
 <body class="k-body">
-
     <div id="test-area">
-
         <section>
             <div class="k-widget k-grid k-grid-no-scrollbar">
                 <table>
                     <colgroup>
-                        <col style="width: 50px" /><col /><col class="k-sorted" /><col /><col />
+                        <col style="width: 50px" />
+                        <col />
+                        <col class="k-sorted" />
+                        <col />
+                        <col />
                     </colgroup>
                     <thead class="k-grid-header">
                         <tr>
@@ -154,9 +156,10 @@
                     </tbody>
                 </table>
             </div>
-            <div class="k-marquee"><div class="k-marquee-color"></div></div>
+            <div class="k-marquee">
+                <div class="k-marquee-color"></div>
+            </div>
         </section>
-
     </div>
 </body>
 </html>

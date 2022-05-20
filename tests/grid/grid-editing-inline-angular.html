@@ -1,16 +1,13 @@
 <!doctype html>
 <html lang="en" class="k-no-animations">
-
 <head>
     <title>KUI/Angular Grid - Inline Editing</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" data-role="kendo-theme" href="../../../../../packages/default/dist/all.css" />
-    <link rel="stylesheet" href="../../../assets/styles.css" />
-    <script src="../../../assets/scripts.js"></script>
-    <script src="../../../../../packages/html/dist/index.js"></script>
-
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css" />
+    <link rel="stylesheet" href="/packages/html/assets/styles.css" />
+    <script src="/packages/html/assets/scripts.js"></script>
+    <script src="/packages/html/dist/index.js"></script>
 </head>
-
 <body class="k-body">
     <div class="grid" id="test-area">
         <h3>Edit Row</h3>
@@ -29,7 +26,9 @@
                             </colgroup>
                             <thead>
                                 <tr role="row">
-                                    <th class="k-header" rowspan="1" colspan="1"><input is="Checkbox" /></th>
+                                    <th class="k-header" rowspan="1" colspan="1">
+                                        <input is="Checkbox" />
+                                    </th>
                                     <th class="k-header" rowspan="1" colspan="1">Name</th>
                                     <th class="k-header" rowspan="1" colspan="1">Command</th>
                                 </tr>
@@ -48,21 +47,29 @@
                                 </colgroup>
                                 <tbody>
                                     <tr class="k-grid-edit-row" role="row">
-                                        <td class="k-touch-action-auto" colspan="1"><input is="Checkbox" /></td>
+                                        <td class="k-touch-action-auto" colspan="1">
+                                            <input is="Checkbox" />
+                                        </td>
                                         <td class="k-touch-action-auto" colspan="1">
                                             <input is="Textbox" />
                                         </td>
                                         <td class="k-touch-action-auto k-command-cell" colspan="1">
-                                            <button is="Button">Update</button><!--
-                                            --><button is="Button">Cancel</button>
+                                            <button is="Button">Update</button>
+                                            <!--
+                                            -->
+                                            <button is="Button">Cancel</button>
                                         </td>
                                     </tr>
                                     <tr class="k-alt" role="row">
-                                        <td class="k-touch-action-auto" colspan="1"><input is="Checkbox" /></td>
+                                        <td class="k-touch-action-auto" colspan="1">
+                                            <input is="Checkbox" />
+                                        </td>
                                         <td class="k-touch-action-auto" colspan="1">Product2</td>
                                         <td class="k-touch-action-auto k-command-cell" colspan="1">
-                                            <button is="Button">Edit</button><!--
-                                            --><button is="Button">Remove</button>
+                                            <button is="Button">Edit</button>
+                                            <!--
+                                            -->
+                                            <button is="Button">Remove</button>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -91,7 +98,9 @@
                             </colgroup>
                             <thead>
                                 <tr role="row">
-                                    <th class="k-header" rowspan="1" colspan="1"><input is="Checkbox" /></th>
+                                    <th class="k-header" rowspan="1" colspan="1">
+                                        <input is="Checkbox" />
+                                    </th>
                                     <th class="k-header" rowspan="1" colspan="1">Name</th>
                                     <th class="k-header" rowspan="1" colspan="1">Command</th>
                                 </tr>
@@ -115,24 +124,34 @@
                                             <input is="Textbox" />
                                         </td>
                                         <td colspan="1" class="k-command-cell">
-                                            <button is="Button">Add</button><!--
-                                            --><button is="Button">Discard changes</button>
+                                            <button is="Button">Add</button>
+                                            <!--
+                                            -->
+                                            <button is="Button">Discard changes</button>
                                         </td>
                                     </tr>
                                     <tr role="row">
-                                        <td class="k-touch-action-auto" colspan="1"><input is="Checkbox" /></td>
+                                        <td class="k-touch-action-auto" colspan="1">
+                                            <input is="Checkbox" />
+                                        </td>
                                         <td class="k-touch-action-auto" colspan="1">Product1</td>
                                         <td class="k-touch-action-auto k-command-cell" colspan="1">
-                                            <button is="Button">Edit</button><!--
-                                            --><button is="Button">Remove</button>
+                                            <button is="Button">Edit</button>
+                                            <!--
+                                            -->
+                                            <button is="Button">Remove</button>
                                         </td>
                                     </tr>
                                     <tr class="k-alt" role="row">
-                                        <td class="k-touch-action-auto" colspan="1"><input is="Checkbox" /></td>
+                                        <td class="k-touch-action-auto" colspan="1">
+                                            <input is="Checkbox" />
+                                        </td>
                                         <td class="k-touch-action-auto" colspan="1">Product2</td>
                                         <td class="k-touch-action-auto k-command-cell" colspan="1">
-                                            <button is="Button">Edit</button><!--
-                                            --><button is="Button">Remove</button>
+                                            <button is="Button">Edit</button>
+                                            <!--
+                                            -->
+                                            <button is="Button">Remove</button>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -147,5 +166,4 @@
         </kendo-grid>
     </div>
 </body>
-
 </html>

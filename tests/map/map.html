@@ -3,23 +3,23 @@
 <head>
     <title>Map</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
-    <link rel="stylesheet" href="../../assets/styles.css" />
-    <script src="../../assets/scripts.js"></script>
-    <script src="../../../../packages/html/dist/index.js"></script>
-
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css" />
+    <link rel="stylesheet" href="/packages/html/assets/styles.css" />
+    <script src="/packages/html/assets/scripts.js"></script>
+    <script src="/packages/html/dist/index.js"></script>
     <style>
-
         .k-map .k-layer:last-child {
             background-color: #f0f0f0;
-            top: 0; right: 0; bottom: 0; left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
         }
+
     </style>
 </head>
 <body class="k-body">
-
     <div id="test-area">
-
         <div id="map" class="k-map" style="position: relative;">
             <div class="km-widget km-scroll-wrapper" style="overflow: hidden;">
                 <div class="km-scroll-header"></div>
@@ -33,7 +33,8 @@
                 <div class="km-touch-scrollbar km-vertical-scrollbar" style="transform-origin: left top 0px; height: 239px;"></div>
             </div>
             <div class="k-map-controls k-pos-bottom k-pos-right">
-                <div class="k-widget k-attribution" style="display: block;">&copy; <a href="http://example.com/">Attribution</a></div>
+                <div class="k-widget k-attribution" style="display: block;">&copy; <a href="http://example.com/">Attribution</a>
+                </div>
             </div>
             <div class="k-map-controls k-pos-top k-pos-left">
                 <div class="k-widget k-navigator">
@@ -48,8 +49,6 @@
                 </div>
             </div>
         </div>
-
     </div>
-
 </body>
 </html>

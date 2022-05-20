@@ -1,23 +1,17 @@
 <!doctype html>
 <html lang="en" class="k-no-animations" style="--kendo-scrollbar-width:15px;">
-
 <head>
     <title>Typography</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" data-role="kendo-theme" href="../../../../../packages/default/dist/all.css">
-    <link rel="stylesheet" href="../../../assets/styles.css">
-    <script src="../../../assets/scripts.js"></script>
-    <script src="../../../../../packages/html/dist/index.js"></script>
-
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
+    <link rel="stylesheet" href="/packages/html/assets/styles.css">
+    <script src="/packages/html/assets/scripts.js"></script>
+    <script src="/packages/html/dist/index.js"></script>
 </head>
-
 <body class="k-body">
-
     <div id="test-area" class="k-d-grid k-grid-cols-2">
-
         <span>Headings</span>
         <span>Other Types</span>
-
         <section>
             <h1 class="k-h1">Heading 1</h1>
             <h2 class="k-h2">Heading 2</h2>
@@ -26,34 +20,26 @@
             <h5 class="k-h5">Heading 5</h5>
             <h6 class="k-h6">Heading 6</h6>
         </section>
-
         <section>
             <p class="k-paragraph">A paragraph of regular body text with<strong class="">bold</strong>,<em class="">italic</em>, and<u class="">underline</u>. Also, the<code class="k-code">code</code>tag is available in typography.</p>
-
-            <button type="button" class="k-button k-button-md k-rounded-md k-button-rectangle k-button-solid k-button-solid-base"><span class="k-button-text">Button</span></button>
-
+            <button type="button" class="k-button k-button-md k-rounded-md k-button-rectangle k-button-solid k-button-solid-base">
+                <span class="k-button-text">Button</span>
+            </button>
             <pre class="k-pre"><code class="k-code">const handleChange = ({ target }) =&gt; {
     const { name, value } = target;
     const newData = Object.assign({}, data, { [name]: value });
     setData(newData);
 }</code></pre>
         </section>
-
         <span>Displays</span>
         <span></span>
-
         <section>
             <div class="k-display-1">Display 1</div>
             <div class="k-display-2">Display 2</div>
             <div class="k-display-3">Display 3</div>
             <div class="k-display-4">Display 4</div>
         </section>
-
         <section></section>
     </div>
-
-
-
 </body>
-
 </html>

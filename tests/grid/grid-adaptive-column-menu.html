@@ -3,26 +3,23 @@
 <head>
     <title>Adaptive Grid Columnmenu</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
-    <link rel="stylesheet" href="../../assets/styles.css" />
-    <script src="../../assets/scripts.js"></script>
-    <script src="../../../../packages/html/dist/index.js"></script>
-
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css" />
+    <link rel="stylesheet" href="/packages/html/assets/styles.css" />
+    <script src="/packages/html/assets/scripts.js"></script>
+    <script src="/packages/html/dist/index.js"></script>
     <style>
         #test-area {
             grid-template-columns: 1fr;
             align-items: top;
         }
-
         th {
             text-align: left;
         }
+
     </style>
 </head>
 <body class="k-body">
-
     <div id="test-area" class="grid">
-
         <div class="k-pane-wrapper k-widget" style="height: 650px;">
             <div class="k-pane">
                 <div class="k-grid-column-menu k-view k-widget">
@@ -65,7 +62,9 @@
                                     <span class="k-link k-filterable">
                                         <i is="Icon" name="filter"></i>
                                         <span class="k-item-title">Filter</span>
-                                        <span class="k-select"><i is="Icon" name="arrow-chevron-right"></i></span>
+                                        <span class="k-select">
+                                            <i is="Icon" name="arrow-chevron-right"></i>
+                                        </span>
                                     </span>
                                 </li>
                             </ul>
@@ -110,8 +109,6 @@
                 </div>
             </div>
         </div>
-
     </div>
-
 </body>
 </html>

@@ -3,26 +3,28 @@
 <head>
     <title>Upload -- Angular</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
-    <link rel="stylesheet" href="../../assets/styles.css" />
-    <script src="../../assets/scripts.js"></script>
-    <script src="../../../../packages/html/dist/index.js"></script>
-
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css" />
+    <link rel="stylesheet" href="/packages/html/assets/styles.css" />
+    <script src="/packages/html/assets/scripts.js"></script>
+    <script src="/packages/html/dist/index.js"></script>
     <style>
         #test-area {
             display: grid;
             grid-template-columns: 1fr 1fr;
         }
+
     </style>
 </head>
 <body class="k-body">
-    <div id="test-area" >
+    <div id="test-area">
         <section>
             <!-- File restrictions set with group icons-->
             <kendo-upload class="k-widget k-upload">
                 <div class="k-dropzone">
                     <button is="Button" class="k-upload-button">Select files...</button>
-                    <kendo-upload-status-total class="k-upload-status k-upload-status-total"><i is="Icon" name="upload"></i> Uploading... </kendo-upload-status-total>
+                    <kendo-upload-status-total class="k-upload-status k-upload-status-total">
+                        <i is="Icon" name="upload"></i> Uploading...
+                    </kendo-upload-status-total>
                     <div class="k-dropzone-hint">Drop files here to upload</div>
                 </div>
                 <ul class="k-upload-files k-reset">
@@ -62,64 +64,64 @@
                                     <span class="k-upload-pct">60%</span>
                                     <button is="Button" fillMode="flat" class="k-upload-action" icon="cancel"></button>
                                 </strong>
-                        </kendo-upload-file-list-item-action-button>
+                            </kendo-upload-file-list-item-action-button>
                         </kendo-upload-file-list-single-item>
                     </li>
                 </ul>
             </kendo-upload>
         </section>
-
         <!-- Successfully uploaded files with group type icon; upload button hovered -->
         <section>
             <kendo-upload class="k-widget k-upload">
-            <div class="k-dropzone">
-                <button is="Button" class="k-upload-button">Select files...</button>
-                <kendo-upload-status-total class="k-upload-status k-upload-status-total"><i is="Icon" name="check"></i> Done </kendo-upload-status-total>
-                <div class="k-dropzone-hint">Drop files here to upload</div>
-            </div>
-            <ul class="k-upload-files k-reset">
-                <li class="k-file k-file-success">
-                    <kendo-upload-file-list-single-item class="k-file-single">
-                        <div class="k-progressbar" style="opacity:1;">
-                            <span class="k-progress" style="width: 100%;"></span>
-                        </div>
-                        <span class="k-file-group-wrapper">
-                            <i is="Icon" class="k-file-group" name="file-image"></i>
-                        </span>
-                        <span class="k-file-name-size-wrapper">
-                            <span class="k-file-name">Image1_With_Very_Very_Very_Very_Long_Name.jpg</span>
-                            <span class="k-text-success k-file-information">File successfully uploaded.</span>
-                        </span>
-                        <kendo-upload-file-list-item-action-button>
-                            <strong class="k-upload-status">
-                                <button is="Button" fillMode="flat" class="k-upload-action" icon="close"></button>
-                            </strong>
-                        </kendo-upload-file-list-item-action-button>
-                    </kendo-upload-file-list-single-item>
-                </li>
-                <li class="k-file k-file-success">
-                    <kendo-upload-file-list-single-item class="k-file-single">
-                        <div class="k-progressbar" style="opacity:1;">
-                            <span class="k-progress" style="width: 100%;"></span>
-                        </div>
-                        <span class="k-file-group-wrapper">
-                            <i is="Icon" class="k-file-group" name="file-image"></i>
-                        </span>
-                        <span class="k-file-name-size-wrapper">
-                            <span class="k-file-name">Image2.jpg</span>
-                            <span class="k-text-success k-file-information">File successfully uploaded.</span>
-                        </span>
-                        <kendo-upload-file-list-item-action-button>
-                            <strong class="k-upload-status">
-                                <button is="Button" fillMode="flat" class="k-upload-action" icon="close"></button>
-                            </strong>
-                        </kendo-upload-file-list-item-action-button>
-                    </kendo-upload-file-list-single-item>
-                </li>
-            </ul>
+                <div class="k-dropzone">
+                    <button is="Button" class="k-upload-button">Select files...</button>
+                    <kendo-upload-status-total class="k-upload-status k-upload-status-total">
+                        <i is="Icon" name="check"></i> Done
+                    </kendo-upload-status-total>
+                    <div class="k-dropzone-hint">Drop files here to upload</div>
+                </div>
+                <ul class="k-upload-files k-reset">
+                    <li class="k-file k-file-success">
+                        <kendo-upload-file-list-single-item class="k-file-single">
+                            <div class="k-progressbar" style="opacity:1;">
+                                <span class="k-progress" style="width: 100%;"></span>
+                            </div>
+                            <span class="k-file-group-wrapper">
+                                <i is="Icon" class="k-file-group" name="file-image"></i>
+                            </span>
+                            <span class="k-file-name-size-wrapper">
+                                <span class="k-file-name">Image1_With_Very_Very_Very_Very_Long_Name.jpg</span>
+                                <span class="k-text-success k-file-information">File successfully uploaded.</span>
+                            </span>
+                            <kendo-upload-file-list-item-action-button>
+                                <strong class="k-upload-status">
+                                    <button is="Button" fillMode="flat" class="k-upload-action" icon="close"></button>
+                                </strong>
+                            </kendo-upload-file-list-item-action-button>
+                        </kendo-upload-file-list-single-item>
+                    </li>
+                    <li class="k-file k-file-success">
+                        <kendo-upload-file-list-single-item class="k-file-single">
+                            <div class="k-progressbar" style="opacity:1;">
+                                <span class="k-progress" style="width: 100%;"></span>
+                            </div>
+                            <span class="k-file-group-wrapper">
+                                <i is="Icon" class="k-file-group" name="file-image"></i>
+                            </span>
+                            <span class="k-file-name-size-wrapper">
+                                <span class="k-file-name">Image2.jpg</span>
+                                <span class="k-text-success k-file-information">File successfully uploaded.</span>
+                            </span>
+                            <kendo-upload-file-list-item-action-button>
+                                <strong class="k-upload-status">
+                                    <button is="Button" fillMode="flat" class="k-upload-action" icon="close"></button>
+                                </strong>
+                            </kendo-upload-file-list-item-action-button>
+                        </kendo-upload-file-list-single-item>
+                    </li>
+                </ul>
             </kendo-upload>
         </section>
-
         <section>
             <!-- Batch upload ->  successfully uploaded files -->
             <kendo-upload class="k-widget k-upload">
@@ -168,14 +170,14 @@
                 </ul>
             </kendo-upload>
         </section>
-
         <section>
             <!-- Batch upload; files in progress -->
             <kendo-upload class="k-widget k-upload">
                 <div class="k-dropzone">
                     <button is="Button" class="k-upload-button">Select files...</button>
                     <kendo-upload-status-total class="k-upload-status k-upload-status-total">
-                        <i is="Icon" name="upload"></i> Uploading... </kendo-upload-status-total>
+                        <i is="Icon" name="upload"></i> Uploading...
+                    </kendo-upload-status-total>
                     <div class="k-dropzone-hint">Drop files here to upload</div>
                 </div>
                 <ul class="k-upload-files k-reset">
@@ -217,7 +219,6 @@
                 </ul>
             </kendo-upload>
         </section>
-
         <section>
             <!-- Batch upload -> validation failed -->
             <kendo-upload class="k-widget k-upload">
@@ -263,7 +264,6 @@
                 </ul>
             </kendo-upload>
         </section>
-
         <section>
             <!-- Auto Upload - false -->
             <kendo-upload class="k-widget k-upload">
@@ -317,7 +317,6 @@
                 </div>
             </kendo-upload>
         </section>
-
         <section>
             <!-- Chunk upload -->
             <kendo-upload class="k-widget k-upload">
@@ -347,13 +346,12 @@
                                     <button is="Button" fillMode="flat" class="k-upload-action" icon="pause-sm"></button>
                                     <button is="Button" fillMode="flat" class="k-upload-action" icon="cancel"></button>
                                 </strong>
-                        </kendo-upload-file-list-item-action-button>
+                            </kendo-upload-file-list-item-action-button>
                         </kendo-upload-file-list-single-item>
                     </li>
                 </ul>
             </kendo-upload>
         </section>
-
         <section>
             <!-- Invalid file -->
             <kendo-upload class="k-widget k-upload ng-invalid ng-touched">
@@ -367,7 +365,9 @@
                             <div class="k-progressbar" style="opacity: 0;">
                                 <span class="k-progress" style="width: 0%;"></span>
                             </div>
-                            <span class="k-file-group-wrapper"><i is="Icon" class="k-file-group" name="file-programming"></i></span>
+                            <span class="k-file-group-wrapper">
+                                <i is="Icon" class="k-file-group" name="file-programming"></i>
+                            </span>
                             <span class="k-file-name-size-wrapper">
                                 <span class="k-file-name">untitled.html</span>
                                 <span class="k-file-validation-message k-text-error">File type not allowed.</span>
@@ -382,7 +382,6 @@
                 </ul>
             </kendo-upload>
         </section>
-
         <section>
             <!-- Drag and drop file text in the dropzone -->
             <kendo-upload class="k-widget k-upload">
@@ -392,7 +391,6 @@
                 </div>
             </kendo-upload>
         </section>
-
         <section>
             <!-- Drag and drop file + Hover the dropzone -->
             <kendo-upload class="k-widget k-upload">
@@ -402,7 +400,6 @@
                 </div>
             </kendo-upload>
         </section>
-
         <section>
             <!-- Disabled Upload -->
             <kendo-upload class="k-widget k-upload k-state-disabled">
@@ -425,6 +422,5 @@
             </kendo-upload>
         </section>
     </div>
-
 </body>
 </html>

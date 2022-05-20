@@ -3,32 +3,28 @@
 <head>
     <title>Tooltip</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" data-role="kendo-theme" href="../../../../packages/default/dist/all.css" />
-    <link rel="stylesheet" href="../../assets/styles.css" />
-    <script src="../../assets/scripts.js"></script>
-    <script src="../../../../packages/html/dist/index.js"></script>
-
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css" />
+    <link rel="stylesheet" href="/packages/html/assets/styles.css" />
+    <script src="/packages/html/assets/scripts.js"></script>
+    <script src="/packages/html/dist/index.js"></script>
     <style>
         .k-animation-container {
             display: inline-block;
             position: relative;
             overflow: visible;
         }
-
         .k-tooltip {
             position: relative;
         }
+
     </style>
 </head>
 <body class="k-body">
-
     <div id="test-area" class="k-d-grid k-grid-cols-4">
-
         <span>Callout top</span>
         <span>Callout right</span>
         <span>Callout bottom</span>
         <span>Callout left</span>
-
         <section>
             <div class="k-animation-container">
                 <div class="k-popup k-popup-transparent">
@@ -133,15 +129,10 @@
                 </div>
             </div>
         </section>
-
-
-
-
         <span>Content</span>
         <span>Closable</span>
         <span>Long content</span>
         <span>Long content closable</span>
-
         <section>
             <div class="k-animation-container">
                 <div class="k-tooltip">
@@ -154,7 +145,9 @@
             <div class="k-animation-container">
                 <div class="k-tooltip k-tooltip-closable">
                     <div class="k-tooltip-content">tooltip content</div>
-                    <div class="k-tooltip-button"><i is="Icon" name="x"></i></div>
+                    <div class="k-tooltip-button">
+                        <i is="Icon" name="x"></i>
+                    </div>
                     <div class="k-callout k-callout-w"></div>
                 </div>
             </div>
@@ -171,26 +164,22 @@
             <div class="k-animation-container">
                 <div class="k-tooltip k-tooltip-closable">
                     <div class="k-tooltip-content">long tooltip content. Enough so it goes on another line</div>
-                    <div class="k-tooltip-button"><i is="Icon" name="x"></i></div>
+                    <div class="k-tooltip-button">
+                        <i is="Icon" name="x"></i>
+                    </div>
                     <div class="k-callout k-callout-w"></div>
                 </div>
             </div>
         </section>
-
-
-
-
         <span>Title</span>
         <span>Title closable</span>
         <span>Title with glyphs</span>
         <span>Title with glyphs closable</span>
-
         <section>
             <div class="k-animation-container">
                 <div class="k-tooltip">
                     <div class="k-tooltip-content">
-                        <div class="k-tooltip-title">Tooltip title</div>
-                        tooltip content
+                        <div class="k-tooltip-title">Tooltip title</div> tooltip content
                     </div>
                     <div class="k-callout k-callout-w"></div>
                 </div>
@@ -200,10 +189,11 @@
             <div class="k-animation-container">
                 <div class="k-tooltip k-tooltip-closable">
                     <div class="k-tooltip-content">
-                        <div class="k-tooltip-title">Tooltip title</div>
-                        tooltip content
+                        <div class="k-tooltip-title">Tooltip title</div> tooltip content
                     </div>
-                    <div class="k-tooltip-button"><i is="Icon" name="x"></i></div>
+                    <div class="k-tooltip-button">
+                        <i is="Icon" name="x"></i>
+                    </div>
                     <div class="k-callout k-callout-w"></div>
                 </div>
             </div>
@@ -215,8 +205,7 @@
                         <div class="k-tooltip-title">
                             <!-- descendants --> g y p q
                             <!-- ascendant --> f t d l
-                        </div>
-                        long tooltip content. Enough so it goes on another line
+                        </div> long tooltip content. Enough so it goes on another line
                     </div>
                     <div class="k-callout k-callout-w"></div>
                 </div>
@@ -229,15 +218,15 @@
                         <div class="k-tooltip-title">
                             <!-- descendants --> g y p q
                             <!-- ascendant --> f t d l
-                        </div>
-                        long tooltip content. Enough so it goes on another line
+                        </div> long tooltip content. Enough so it goes on another line
                     </div>
-                    <div class="k-tooltip-button"><i is="Icon" name="x"></i></div>
+                    <div class="k-tooltip-button">
+                        <i is="Icon" name="x"></i>
+                    </div>
                     <div class="k-callout k-callout-w"></div>
                 </div>
             </div>
         </section>
     </div>
-
 </body>
 </html>
