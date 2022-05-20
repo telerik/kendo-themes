@@ -48,7 +48,7 @@ jobs:
 
       - name: Pack snapshots
         if: ${{ matrix.theme == 'default' }}
-        run: tar -cf snapshots.tar tests/visual/src
+        run: tar --exclude tests/_output -cf snapshots.tar tests
 
       - name: Upload snapshots
         uses: actions/upload-artifact@v2
@@ -61,7 +61,7 @@ jobs:
         run: ./build/create-screenshots.sh ${{ matrix.theme }}
 
       - name: Pack screenshots
-        run: tar -cf screenshots-${{ matrix.theme }}.tar tests/visual/output/${{ matrix.theme }}
+        run: tar -cf screenshots-${{ matrix.theme }}.tar tests/_output/${{ matrix.theme }}
 
       - name: Upload screenshots
         uses: actions/upload-artifact@v2
@@ -92,8 +92,8 @@ jobs:
         run: |
           HAS_CHANGES=0
           HAS_NEW=0
-          git diff --exit-code --quiet -- tests/visual/ || HAS_CHANGES=1
-          [[ $(git ls-files --others --exclude-standard tests/visual) ]] && HAS_NEW=1
+          git diff --exit-code --quiet -- tests/ || HAS_CHANGES=1
+          [[ $(git ls-files --others --exclude-standard tests/) ]] && HAS_NEW=1
           echo "HAS_CHANGES=$HAS_CHANGES" >> $GITHUB_ENV
           echo "HAS_NEW=$HAS_NEW" >> $GITHUB_ENV
 
@@ -109,7 +109,7 @@ jobs:
         run: |
           echo "Visual tests have detected changes. Updating markup and screenshots."
 
-          git add tests/visual
+          git add tests/
           git commit -m "chore: update visual previews"
 
           git push
