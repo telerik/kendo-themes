@@ -11,7 +11,6 @@
     <style>
         #test-area .colors {
             padding: 10px 20px;
-            grid-template-columns: repeat(2, 1fr);
             gap: 20px;
         }
         #test-area .colors-flat {
@@ -21,7 +20,7 @@
     </style>
     <div id="test-area" class="k-d-grid">
         <h2>Solid Colors</h2>
-        <div class="colors k-d-grid">
+        <div class="colors k-d-grid k-grid-cols-2">
             <section>
                 <h4>Primary ThemeColor</h4>
                 <nav class="k-bottom-nav k-bottom-nav-primary k-bottom-nav-solid k-bottom-nav-item-flow-vertical">
@@ -213,7 +212,7 @@
             </section>
         </div>
         <h2>Flat Colors</h2>
-        <div class="colors colors-flat k-d-grid">
+        <div class="colors colors-flat k-d-grid k-grid-cols-2">
             <section>
                 <h4>Primary ThemeColor</h4>
                 <nav class="k-bottom-nav k-bottom-nav-primary k-bottom-nav-flat k-bottom-nav-border k-bottom-nav-item-flow-vertical">

@@ -12,20 +12,18 @@
         .k-spreadsheet-view {
             overflow: hidden;
         }
-
         .k-spreadsheet-fixed-container {
             width: calc(100% - var(--kendo-scrollbar-width, 0));
             height: calc(100% - var(--kendo-scrollbar-width, 0));
             overflow: hidden;
         }
-
         .k-spreadsheet-cell {
             white-space: normal;
         }
-        /* needed for test */
         .k-spreadsheet-formula-input {
             white-space: normal;
         }
+
     </style>
     <div id="test-area">
         <div class="k-widget k-spreadsheet" style="width: 100%;">
@@ -38,7 +36,7 @@
                         <span class="k-button-icon k-icon k-i-redo"></span>
                     </button>
                 </div>
-                <div class="k-widget k-header k-tabstrip k-floatwrap k-tabstrip-top k-spreadsheet-tabstrip">
+                <div class="k-widget k-header k-tabstrip k-tabstrip-top k-spreadsheet-tabstrip">
                     <div class="k-tabstrip-items-wrapper k-hstack">
                         <ul class="k-tabstrip-items k-reset" style="padding-left: 76px;">
                             <li class="k-item k-first k-tab-on-top k-state-active">
@@ -680,7 +678,7 @@
                 <button class="k-spreadsheet-sheets-bar-add k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button">
                     <span class="k-button-icon k-icon k-i-add"></span>
                 </button>
-                <div class="k-spreadsheet-sheets-items k-tabstrip-scrollable k-tabstrip k-floatwrap k-tabstrip-bottom">
+                <div class="k-spreadsheet-sheets-items k-tabstrip-scrollable k-tabstrip k-tabstrip-bottom">
                     <div class="k-tabstrip-items-wrapper k-hstack">
                         <button class="k-tabstrip-prev k-button k-button-flat k-button-flat-base k-icon-button">
                             <span class="k-button-icon k-icon k-i-arrow-60-left"></span>

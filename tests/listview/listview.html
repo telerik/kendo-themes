@@ -9,14 +9,6 @@
 </head>
 <body id="app" class="k-body">
     <style>
-        #test-area {
-            grid-template-columns: 1fr 1fr;
-        }
-        .k-d-grid {
-            grid-template-columns: 1fr 1fr;
-            grid-gap: 10px
-        }
-
         .k-listview-item {
             padding: 10px;
             display: inline-block;
@@ -24,7 +16,7 @@
         }
 
     </style>
-    <div id="test-area" class="k-d-grid">
+    <div id="test-area" class="k-d-grid k-grid-cols-2">
         <section>
             <span>No layout</span>
             <div class="k-widget k-listview">
@@ -50,7 +42,7 @@
         <section>
             <span>Grid layout</span>
             <div class="k-widget k-listview">
-                <div class="k-listview-content k-d-grid">
+                <div class="k-listview-content k-d-grid k-grid-cols-2">
                     <div class="k-listview-item">Listview item</div>
                     <div class="k-listview-item">Listview item</div>
                     <div class="k-listview-item">Listview item</div>
@@ -61,11 +53,11 @@
         <section>
             <span>Interactive states</span>
             <div class="k-widget k-listview k-listview-grid">
-                <div class="k-listview-content k-d-grid">
+                <div class="k-listview-content k-d-grid k-grid-cols-2">
                     <div class="k-listview-item">Normal item</div>
-                    <div class="k-listview-item k-state-focused">Focused item</div>
-                    <div class="k-listview-item k-state-selected">Selected item</div>
-                    <div class="k-listview-item k-state-selected k-state-focused">Selected-focused item</div>
+                    <div class="k-listview-item k-focus">Focus item</div>
+                    <div class="k-listview-item k-selected">Selected item</div>
+                    <div class="k-listview-item k-selected k-focus">Selected focus item</div>
                 </div>
             </div>
         </section>
