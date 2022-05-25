@@ -126,11 +126,11 @@ $kendo-picker-disabled-shadow: null !default;
 
 $kendo-picker-outline-bg: transparent !default;
 $kendo-picker-outline-text: null !default;
-$kendo-picker-outline-border: $kendo-button-text !default;
+$kendo-picker-outline-border: rgba( $kendo-button-text, .5) !default;
 
 $kendo-picker-outline-hover-bg: $kendo-button-text !default;
 $kendo-picker-outline-hover-text: $body-bg !default;
-$kendo-picker-outline-hover-border: null !default;
+$kendo-picker-outline-hover-border: $kendo-button-text !default;
 
 $kendo-picker-outline-focus-bg: transparent !default;
 $kendo-picker-outline-focus-text: $kendo-picker-outline-text !default;
