@@ -163,6 +163,20 @@
             padding: 0 $drawer-item-padding-x;
             display: inline-block;
             white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .k-drawer-toggle {
+            margin-inline-start: auto;
+            cursor: pointer;
+        }
+
+        // Hierarchy items
+        @for $i from 1 through $drawer-item-level-count {
+            &.k-level-#{$i} {
+                padding-inline-start: ( $drawer-item-level-padding-x * $i );
+            }
         }
     }
     .k-drawer-separator {
