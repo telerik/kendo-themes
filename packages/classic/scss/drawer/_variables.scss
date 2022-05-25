@@ -8,6 +8,9 @@ $drawer-font-size: $font-size !default;
 $drawer-line-height: $line-height !default;
 $drawer-content-padding-x: $padding-x !default;
 $drawer-content-padding-y: $padding-y !default;
+$drawer-item-level-padding-x: map-get( $spacing, 4 ) !default;
+
+$drawer-item-level-count: 5 !default;
 
 $drawer-scrollbar-width: 7px !default;
 $drawer-scrollbar-color: rgba(156, 156, 156, .7) !default;
