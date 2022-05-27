@@ -25,7 +25,6 @@ function SwitchStatic(props) {
         disabled,
 
         aria,
-        legacy,
 
         ...htmlAttributes
     } = props;
@@ -44,19 +43,6 @@ function SwitchStatic(props) {
         }
     ];
 
-    let legacyClasses = [
-        ownClassName,
-        'k-switch',
-        'k-widget',
-        {
-            'k-state-hover': hover === true,
-            'k-state-focused': focus === true,
-            'k-state-disabled': disabled === true,
-            'k-switch-on': checked === true,
-            'k-switch-off': checked === false
-        }
-    ];
-
     let switchTrackClasses = [
         'k-switch-track',
         styles.roundedClass( trackRounded )
@@ -70,18 +56,6 @@ function SwitchStatic(props) {
     let ariaAttr = aria
         ? {}
         : {};
-
-    if (legacy) {
-        return (
-            <span className={legacyClasses} {...ariaAttr} {...htmlAttributes}>
-                <span className="k-switch-container">
-                    <span className="k-switch-label-on">{onLabel}</span>
-                    <span className="k-switch-label-off">{offLabel}</span>
-                    <span className="k-switch-handle"></span>
-                </span>
-            </span>
-        );
-    }
 
     return (
         <span className={switchClasses} {...ariaAttr} {...htmlAttributes}>

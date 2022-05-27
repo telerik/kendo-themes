@@ -37,7 +37,6 @@ function SplitButtonStatic(props) {
         disabled,
 
         aria,
-        legacy,
 
         ...htmlAttributes
     } = props;
@@ -55,47 +54,6 @@ function SplitButtonStatic(props) {
     let ariaAttr = aria
         ? {}
         : {};
-
-    if (legacy) {
-
-        let legacySplitButtonClasses = [
-            ownClassName,
-            'k-split-button',
-            'k-button-group'
-        ];
-
-        return (
-            <div className={legacySplitButtonClasses} {...ariaAttr} {...htmlAttributes}>
-                <ButtonStatic
-                    text={text}
-                    icon={icon}
-
-                    size={size}
-                    rounded={rounded}
-                    fillMode={fillMode}
-                    themeColor={themeColor}
-
-                    hover={hover}
-                    focus={focus}
-                    active={active}
-                    selected={selected}
-                    disabled={disabled}
-                ></ButtonStatic>
-                <ButtonStatic
-                    className="k-split-button-arrow"
-
-                    icon={arrowIconName}
-
-                    size={size}
-                    rounded={rounded}
-                    fillMode={fillMode}
-                    themeColor={themeColor}
-
-                    disabled={disabled}
-                ></ButtonStatic>
-            </div>
-        );
-    }
 
     return (
         <div className={splitButtonClasses} {...ariaAttr} {...htmlAttributes}>

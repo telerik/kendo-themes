@@ -38,7 +38,6 @@ function ButtonStatic(props) {
         disabled,
 
         aria,
-        legacy,
 
         ...htmlAttributes
     } = props;
@@ -69,39 +68,6 @@ function ButtonStatic(props) {
     let ariaAttr = aria
         ? {}
         : {};
-
-    if (legacy) {
-
-        let legacyClasses = [
-            ownClassName,
-            'k-button',
-            styles.fillModeClass( fillMode, 'k-button' ),
-            styles.themeColorClass( fillMode, themeColor, 'k-button' ),
-            {
-                'k-primary': themeColor === 'primary',
-                'k-flat': fillMode === 'flat',
-                'k-outline': fillMode === 'outline',
-                'k-state-hover': hover === true,
-                'k-state-focus': focus === true,
-                'k-state-active': active === true,
-                'k-state-selected': selected === true,
-                'k-state-disabled': disabled === true,
-                'k-icon-button': Boolean( icon) === true && Boolean(text) === false
-            }
-        ];
-
-        return (
-            <button type={type} className={legacyClasses} {...ariaAttr} {...htmlAttributes}>
-                { children.length === 0
-                    ? <>
-                        <IconStatic className="k-button-icon" name={icon} />
-                        {text && <span className="k-button-text">{text}</span>}
-                    </>
-                    : children
-                }
-            </button>
-        );
-    }
 
     return (
         <button type={type} className={buttonClasses} {...ariaAttr} {...htmlAttributes}>

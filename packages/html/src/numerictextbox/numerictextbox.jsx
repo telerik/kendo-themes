@@ -14,7 +14,6 @@ function NumericTextboxStatic(props) {
     const {
         className: ownClassName,
 
-        type,
         value,
         placeholder,
         autocomplete,
@@ -34,7 +33,6 @@ function NumericTextboxStatic(props) {
         disabled,
 
         aria,
-        legacy,
 
         ...htmlAttributes
 
@@ -67,42 +65,6 @@ function NumericTextboxStatic(props) {
     let ariaAttr = aria
         ? {}
         : {};
-
-    if (legacy) {
-
-        let legacyClasses = [
-            ownClassName,
-            'k-widget',
-            'k-numerictextbox',
-            {
-                'k-state-hover': hover === true,
-                'k-state-focus': focus === true,
-                'k-state-invalid': invalid === true,
-                'k-state-disabled': disabled === true
-            }
-        ];
-
-        let legacyWrapClasses = [
-            'k-numeric-wrap'
-        ];
-
-        let legacyInputClasses = [
-            'k-input',
-            'k-formatted-value'
-        ];
-
-        return (
-            <InputStatic className={legacyClasses} {...htmlAttributes}>
-                <span className={legacyWrapClasses}>
-                    <input type={type} className={legacyInputClasses} {...inputAttributes} />
-                    <InputValidationIconStatic {...props} />
-                    <InputLoadingIconStatic {...props} />
-                    <InputClearValueStatic {...props} />
-                    {showSpinButton === true && <SpinButtonStatic />}
-                </span>
-            </InputStatic>
-        );
-    }
 
     return (
         <InputStatic className={numericClasses} {...ariaAttr} {...htmlAttributes}>

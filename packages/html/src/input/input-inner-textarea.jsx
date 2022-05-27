@@ -15,7 +15,6 @@ function InputInnerTextareaStatic(props) {
         placeholder,
 
         aria,
-        legacy,
 
         ...htmlAttributes
     } = props;
@@ -29,21 +28,8 @@ function InputInnerTextareaStatic(props) {
         'k-input-inner'
     ];
 
-    let legacyClasses = [
-        ownClassName,
-        'k-input'
-    ];
-
     htmlAttributes.value = value;
     htmlAttributes.placeholder = placeholder;
-
-    if (legacy) {
-        return (
-            <textarea className={legacyClasses} {...ariaAttr} {...htmlAttributes}>
-                {value}
-            </textarea>
-        );
-    }
 
     return (
         <textarea className={inputClasses} {...ariaAttr} {...htmlAttributes}>

@@ -2,7 +2,6 @@ import { globalDefaultProps } from '../component/index';
 import { Input, InputStatic, InputInnerInputStatic } from '../input/index';
 import { InputValidationIconStatic, InputLoadingIconStatic, InputClearValueStatic } from '../input/index';
 import { ButtonStatic } from '../button/index';
-import { IconStatic } from '../icon/index';
 
 class TimePicker extends Input {
     render() {
@@ -36,7 +35,6 @@ function TimePickerStatic(props) {
         disabled,
 
         aria,
-        legacy,
 
         ...htmlAttributes
     } = props;
@@ -68,37 +66,6 @@ function TimePickerStatic(props) {
     let ariaAttr = aria
         ? {}
         : {};
-
-    if (legacy) {
-
-        let legacyClasses = [
-            ownClassName,
-            'k-widget',
-            'k-timepicker',
-            {
-                'k-state-hover': hover === true,
-                'k-state-focus': focus === true,
-                'k-state-invalid': invalid === true,
-                'k-state-disabled': disabled === true
-            }
-        ];
-
-        let legacyWrapClasses = [
-            'k-picker-wrap'
-        ];
-
-        return (
-            <InputStatic className={legacyClasses} {...htmlAttributes}>
-                <span className={legacyWrapClasses}>
-                    <input type={type} className="k-input" {...inputAttributes} />
-                    <InputValidationIconStatic {...props} />
-                    <InputLoadingIconStatic {...props} />
-                    <InputClearValueStatic {...props} />
-                    <span className="k-select"><IconStatic name="clock" /></span>
-                </span>
-            </InputStatic>
-        );
-    }
 
     return (
         <InputStatic className={timePickerClasses} {...ariaAttr} {...htmlAttributes}>

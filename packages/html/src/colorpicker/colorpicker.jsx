@@ -2,7 +2,6 @@ import { globalDefaultProps } from '../component/index';
 import { Picker, PickerStatic, InputInnerSpanStatic } from '../input/index';
 import { ColorPreviewStatic } from './color-preview.jsx';
 import { ButtonStatic } from '../button/index';
-import { IconStatic } from '../icon/index';
 
 class Colorpicker extends Picker {
     render() {
@@ -35,7 +34,6 @@ function ColorpickerStatic(props) {
         disabled,
 
         aria,
-        legacy,
 
         ...htmlAttributes
     } = props;
@@ -59,34 +57,6 @@ function ColorpickerStatic(props) {
     let ariaAttr = aria
         ? {}
         : {};
-
-    if (legacy) {
-
-        let legacyClasses = [
-            ownClassName,
-            'k-widget',
-            'k-colorpicker',
-            {
-                'k-state-hover': hover === true,
-                'k-state-focus': focus === true,
-                'k-state-invalid': invalid === true,
-                'k-state-disabled': disabled === true
-            }
-        ];
-
-        let legacyWrapClasses = [
-            'k-picker-wrap'
-        ];
-
-        return (
-            <PickerStatic className={legacyClasses} {...htmlAttributes}>
-                <span className={legacyWrapClasses}>
-                    <ColorPreviewStatic color={value} iconName={iconName} />
-                    <span className="k-select"><IconStatic name="arrow-s" /></span>
-                </span>
-            </PickerStatic>
-        );
-    }
 
     return (
         <PickerStatic className={colorpickerClasses} {...ariaAttr} {...htmlAttributes}>

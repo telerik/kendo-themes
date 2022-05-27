@@ -38,7 +38,6 @@ function SearchboxInner(props) {
         disabled,
 
         aria,
-        legacy,
 
         ...htmlAttributes
     } = props;
@@ -70,31 +69,6 @@ function SearchboxInner(props) {
     let ariaAttr = aria
         ? {}
         : {};
-
-    if (legacy) {
-
-        let legacyClasses = [
-            ownClassName,
-            'k-searchbox',
-            {
-                'k-state-hover': hover === true,
-                'k-state-focus': focus === true,
-                'k-state-invalid': invalid === true,
-                'k-state-required': required === true,
-                'k-state-disabled': disabled === true
-            }
-        ];
-
-        return (
-            <InputStatic className={legacyClasses} {...htmlAttributes}>
-                {showIcon && <IconStatic name={iconName} className="k-input-icon" />}
-                <input type={type} className="k-input" {...inputAttributes} />
-                <InputValidationIconStatic {...props} />
-                <InputLoadingIconStatic {...props} />
-                <InputClearValueStatic {...props} />
-            </InputStatic>
-        );
-    }
 
     return (
         <InputStatic className={searchBoxClasses} {...ariaAttr} {...htmlAttributes}>

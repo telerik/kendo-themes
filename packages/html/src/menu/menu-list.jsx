@@ -15,7 +15,6 @@ function MenuListStatic(props) {
         size,
 
         aria,
-        legacy,
 
         ...htmlAttributes
     } = props;
@@ -29,20 +28,6 @@ function MenuListStatic(props) {
     let ariaAttr = aria
         ? {}
         : {};
-
-    if (legacy) {
-
-        let legacyMenuListClasses = [
-            ownClassName,
-            'k-group k-menu-group k-reset',
-        ];
-
-        return (
-            <ul className={legacyMenuListClasses} {...ariaAttr} {...htmlAttributes}>
-                {children}
-            </ul>
-        );
-    }
 
     return (
         <ul className={menuListClasses} {...ariaAttr} {...htmlAttributes}>

@@ -56,7 +56,6 @@ function ChipStatic(props) {
         disabled,
 
         aria,
-        legacy,
 
         ...htmlAttributes
     } = props;
@@ -83,38 +82,6 @@ function ChipStatic(props) {
     let ariaAttr = aria
         ? {}
         : {};
-
-    if (legacy) {
-
-        let legacyClasses = [
-            ownClassName,
-            'k-chip',
-            `k-chip-${themeColor}`,
-            {
-                'k-chip-outline': fillMode === 'outline',
-                'k-chip-solid': fillMode === 'solid',
-                'k-state-hover': hover === true,
-                'k-state-focus': focus === true,
-                'k-state-active': active === true,
-                'k-state-selected': selected === true,
-                'k-state-disabled': disabled === true
-            }
-        ];
-
-        return (
-            <div className={legacyClasses} {...ariaAttr} {...htmlAttributes}>
-                <IconStatic className="k-chip-icon" name={icon} />
-                {showAvatar && <ChipAvatarStatic {...props} />}
-                <span className="k-chip-content">
-                    { children.length
-                        ? children
-                        : text && <span className="k-chip-label">{text}</span>
-                    }
-                </span>
-                { actions.length > 0 && <ChipActionsStatic actions={actions} />}
-            </div>
-        );
-    }
 
     return (
         <div className={chipClasses} {...ariaAttr} {...htmlAttributes}>

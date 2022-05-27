@@ -31,7 +31,6 @@ function MaskedTextboxStatic(props) {
         disabled,
 
         aria,
-        legacy,
 
         ...htmlAttributes
 
@@ -64,30 +63,6 @@ function MaskedTextboxStatic(props) {
     let ariaAttr = aria
         ? {}
         : {};
-
-    if (legacy) {
-
-        let legacyClasses = [
-            ownClassName,
-            'k-widget',
-            'k-maskedtextbox',
-            {
-                'k-state-hover': hover === true,
-                'k-state-focus': focus === true,
-                'k-state-invalid': invalid === true,
-                'k-state-disabled': disabled === true
-            }
-        ];
-
-        return (
-            <InputStatic className={legacyClasses} {...htmlAttributes}>
-                <input type={type} className="k-input" {...inputAttributes} />
-                <InputValidationIconStatic {...props} />
-                <InputLoadingIconStatic {...props} />
-                <InputClearValueStatic {...props} />
-            </InputStatic>
-        );
-    }
 
     return (
         <InputStatic className={maskedClasses} {...ariaAttr} {...htmlAttributes}>

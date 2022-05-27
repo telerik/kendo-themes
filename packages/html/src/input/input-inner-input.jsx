@@ -17,7 +17,6 @@ function InputInnerInputStatic(props) {
         autocomplete,
 
         aria,
-        legacy,
 
         ...htmlAttributes
     } = props;
@@ -31,20 +30,9 @@ function InputInnerInputStatic(props) {
         'k-input-inner'
     ];
 
-    let legacyClasses = [
-        ownClassName,
-        'k-input'
-    ];
-
     htmlAttributes.value = value;
     htmlAttributes.placeholder = placeholder;
     htmlAttributes.autocomplete = autocomplete;
-
-    if (legacy) {
-        return (
-            <input type={type} className={legacyClasses} {...ariaAttr} {...htmlAttributes} />
-        );
-    }
 
     return (
         <input type={type} className={inputClasses} {...ariaAttr} {...htmlAttributes} />

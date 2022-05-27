@@ -18,7 +18,6 @@ function PopupStatic(props) {
         rounded,
 
         aria,
-        legacy,
 
         ...htmlAttributes
     } = props;
@@ -33,20 +32,6 @@ function PopupStatic(props) {
     let ariaAttr = aria
         ? {}
         : {};
-
-    if (legacy) {
-
-        let legacyClasses = [
-            ownClassName,
-            'k-popup'
-        ];
-
-        return (
-            <div className={legacyClasses} {...htmlAttributes}>
-                {children}
-            </div>
-        );
-    }
 
     return (
         <div className={PopupClasses} {...ariaAttr} {...htmlAttributes}>

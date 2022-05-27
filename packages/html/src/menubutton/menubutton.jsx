@@ -38,7 +38,6 @@ function MenuButtonStatic(props) {
         disabled,
 
         aria,
-        legacy,
 
         ...htmlAttributes
     } = props;
@@ -54,39 +53,6 @@ function MenuButtonStatic(props) {
     let ariaAttr = aria
         ? {}
         : {};
-
-    if (legacy) {
-
-        let legacyMenuButtonClasses = [
-            ownClassName,
-            'k-menu-button'
-        ];
-
-        return (
-            <ButtonStatic className={legacyMenuButtonClasses}
-                text={text}
-                icon={icon}
-
-                size={size}
-                rounded={rounded}
-                fillMode={fillMode}
-                themeColor={themeColor}
-
-                hover={hover}
-                focus={focus}
-                active={active}
-                selected={selected}
-                disabled={disabled}
-
-                {...ariaAttr}
-                {...htmlAttributes}
-            >
-                <IconStatic className="k-button-icon" name={icon} />
-                {text && <span className="k-button-text">{text}</span>}
-                {showArrow && <span className="k-menu-button-arrow k-button-arrow"><IconStatic name={arrowIconName} /></span>}
-            </ButtonStatic>
-        );
-    }
 
     return (
         <ButtonStatic className={menuButtonClasses}

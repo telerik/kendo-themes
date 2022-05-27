@@ -55,7 +55,6 @@ function InputStatic(props) {
         disabled,
 
         aria,
-        legacy,
 
         ...htmlAttributes
     } = props;
@@ -79,19 +78,6 @@ function InputStatic(props) {
     let ariaAttr = aria
         ? {}
         : {};
-
-    if ( legacy ) {
-
-        let legacyClasses = [
-            ownClassName
-        ];
-
-        return (
-            <span className={legacyClasses} {...htmlAttributes}>
-                {props.children}
-            </span>
-        );
-    }
 
     return (
         <span className={inputClasses} {...ariaAttr} {...htmlAttributes}>

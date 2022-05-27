@@ -25,7 +25,6 @@ function CheckboxStatic(props) {
         disabled,
 
         aria,
-        legacy,
 
         ...htmlAttributes
 
@@ -57,26 +56,6 @@ function CheckboxStatic(props) {
             'k-indeterminate': isIndeterminate,
         }
     ];
-
-    if (legacy) {
-
-        let legacyClasses = [
-            ownClassName,
-            'k-checkbox',
-            {
-                'k-state-hover': hover === true,
-                'k-state-focus': focus === true,
-                'k-state-invalid': invalid === true,
-                'k-state-disabled': disabled === true,
-                'k-checked': checked === true,
-                'k-state-indeterminate': isIndeterminate,
-            }
-        ];
-
-        return (
-            <span className="k-checkbox-wrap"><input type="checkbox" className={legacyClasses} {...ariaAttr} {...htmlAttributes} /></span>
-        );
-    }
 
     return (
         <span className="k-checkbox-wrap"><input type="checkbox" className={checkboxClasses} {...ariaAttr} {...htmlAttributes} /></span>

@@ -20,7 +20,6 @@ function InputInnerSpanStatic(props) {
         valueIconName,
 
         aria,
-        legacy,
 
         ...htmlAttributes
     } = props;
@@ -33,23 +32,6 @@ function InputInnerSpanStatic(props) {
         ownClassName,
         'k-input-inner'
     ];
-
-    if (legacy) {
-
-        let legacyClasses = [
-            ownClassName,
-            'k-input'
-        ];
-
-        return (
-            <span className={legacyClasses} {...htmlAttributes}>
-                {valueIcon}
-                {valueIcon === null && <IconStatic className="k-icon k-input-value-icon" name={valueIconName} />}
-                {showValue && value === '' && placeholder}
-                {showValue && value && <span className="k-input-value-text">{value}</span>}
-            </span>
-        );
-    }
 
     return (
         <span className={inputClasses} {...ariaAttr} {...htmlAttributes}>

@@ -38,7 +38,6 @@ function FabStatic(props) {
         disabled,
 
         aria,
-        legacy,
 
         ...htmlAttributes
     } = props;
@@ -67,31 +66,6 @@ function FabStatic(props) {
     let ariaAttr = aria
         ? {}
         : {};
-
-    if (legacy) {
-        let legacyClasses = [
-            ownClassName,
-            'k-fab',
-            `k-fab-${themeColor}`,
-            styles.roundedClass( rounded ),
-            {
-                'k-state-hover': hover === true,
-                'k-state-focus': focus === true,
-                'k-state-active': active === true,
-                'k-state-selected': selected === true,
-                'k-state-disabled': disabled === true
-            },
-            styles.positionClass( position, 'k'),
-            styles.sizeClass( size, 'k-fab' )
-        ];
-
-        return (
-            <button type={type} className={legacyClasses} {...ariaAttr} {...htmlAttributes}>
-                <IconStatic className="k-fab-icon" name={icon} />
-                {text && <span className="k-fab-text">{text}</span>}
-            </button>
-        );
-    }
 
     return (
         <button type={type} className={buttonClasses} {...ariaAttr} {...htmlAttributes}>

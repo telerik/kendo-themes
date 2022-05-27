@@ -34,7 +34,6 @@ function AutocompleteStatic(props) {
         disabled,
 
         aria,
-        legacy,
 
         ...htmlAttributes
     } = props;
@@ -66,31 +65,6 @@ function AutocompleteStatic(props) {
     let ariaAttr = aria
         ? {}
         : {};
-
-    if (legacy) {
-
-        let legacyClasses = [
-            ownClassName,
-            'k-widget',
-            'k-autocomplete',
-            {
-                'k-state-hover': hover === true,
-                'k-state-focus': focus === true,
-                'k-state-invalid': invalid === true,
-                'k-state-required': required === true,
-                'k-state-disabled': disabled === true
-            }
-        ];
-
-        return (
-            <InputStatic className={legacyClasses} {...htmlAttributes}>
-                <input type={type} className="k-input" {...inputAttributes} />
-                <InputValidationIconStatic {...props} />
-                <InputLoadingIconStatic {...props} />
-                <InputClearValueStatic {...props} />
-            </InputStatic>
-        );
-    }
 
     return (
         <InputStatic className={autocompleteClasses} {...ariaAttr} {...htmlAttributes}>

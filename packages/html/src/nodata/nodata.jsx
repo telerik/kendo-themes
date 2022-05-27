@@ -14,7 +14,6 @@ function NoDataStatic(props) {
         children,
 
         aria,
-        legacy,
 
         ...htmlAttributes
     } = props;
@@ -27,18 +26,6 @@ function NoDataStatic(props) {
     let ariaAttr = aria
         ? {}
         : {};
-
-    if (legacy) {
-
-        let legacyClasses = [
-            ownClassName,
-            'k-nodata'
-        ];
-
-        return (
-            <div className={legacyClasses} {...ariaAttr} {...htmlAttributes}>No data found.</div>
-        );
-    }
 
     return (
         <div className={noDataClasses} {...ariaAttr} {...htmlAttributes}>No data found.</div>
