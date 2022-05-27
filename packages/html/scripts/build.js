@@ -1,7 +1,7 @@
 const esbuild = require('esbuild');
 
 let components = [
-    './src/index.js'
+    './src/index.ts'
 ];
 
 esbuild.build({
