@@ -36,7 +36,7 @@ function TypographyStatic(props) {
 
     return (
         <Component className={TypographyClasses} {...ariaAttr} {...htmlAttributes}>
-           {children}
+            {children}
         </Component>
     );
 }
@@ -52,7 +52,7 @@ TypographyStatic.propTypes = {
     children: typeof [],
     className: typeof '',
 
-    type: typeof [null, 'p', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'code', 'pre', 'display-1', 'display-2', 'display-3', 'display-4'],
+    type: typeof [ null, 'p', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'code', 'pre', 'display-1', 'display-2', 'display-3', 'display-4' ],
 
     aria: typeof false,
 

@@ -61,7 +61,7 @@ PopoverStatic.propTypes = {
     children: typeof [],
     className: typeof '',
 
-    callout: typeof [ null, 'top', 'bottom', 'left', 'right'],
+    callout: typeof [ null, 'top', 'bottom', 'left', 'right' ],
     title: typeof '',
     body: typeof '',
 

@@ -1,3 +1,4 @@
+import * as styles from '../../utils/styles';
 import { Component, globalDefaultProps } from '../component/index';
 
 class ColorPaletteRow extends Component {
@@ -19,13 +20,17 @@ function ColorPaletteRowStatic(props) {
         ? {}
         : {};
 
+    let rowClasses = [
+        ownClassName
+    ];
+
     return (
-        <tr {...ariaAttr} {...htmlAttributes}></tr>
+        <tr className={styles.classNames(...rowClasses)} {...ariaAttr} {...htmlAttributes}></tr>
     );
 }
 
 ColorPaletteRowStatic.defaultProps = {
-    ...globalDefaultProps,
+    ...globalDefaultProps
 };
 
 ColorPaletteRowStatic.propTypes = {

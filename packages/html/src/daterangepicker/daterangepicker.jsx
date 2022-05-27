@@ -39,7 +39,7 @@ function DateRangePickerStatic(props) {
     let DateRangePickerClasses = [
         ownClassName,
         'k-daterangepicker',
-        {'k-disabled': disabled === true}
+        { 'k-disabled': disabled === true }
     ];
 
     let ariaAttr = aria

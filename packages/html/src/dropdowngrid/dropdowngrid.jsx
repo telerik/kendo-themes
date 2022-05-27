@@ -12,40 +12,8 @@ function DropdownGridStatic(props) {
     const {
         className: ownClassName,
 
-        type,
-        value,
-        placeholder,
-        autocomplete,
-
-        prefix,
-        suffix,
-
-        size,
-        rounded,
-
-        fillMode,
-
-        hover,
-        focus,
-        valid,
-        invalid,
-        required,
-        disabled,
-
-        aria,
-
-        ...htmlAttributes
+        ...otherProps
     } = props;
-
-    htmlAttributes.size = size;
-    htmlAttributes.rounded = rounded;
-    htmlAttributes.fillMode = fillMode;
-    htmlAttributes.hover = hover;
-    htmlAttributes.focus = focus;
-    htmlAttributes.valid = valid;
-    htmlAttributes.invalid = invalid;
-    htmlAttributes.required = required;
-    htmlAttributes.disabled = disabled;
 
     let dropdownGridClasses = [
         ownClassName,
@@ -53,7 +21,7 @@ function DropdownGridStatic(props) {
     ];
 
     return (
-        <ComboboxStatic className={dropdownGridClasses} {...props}></ComboboxStatic>
+        <ComboboxStatic className={dropdownGridClasses} {...otherProps}></ComboboxStatic>
     );
 }
 
