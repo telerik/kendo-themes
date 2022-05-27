@@ -52,8 +52,8 @@ ActionButtonsStatic.propTypes = {
     children: typeof [],
     className: typeof '',
 
-    alignment: typeof ['start', 'center', 'end', 'stretched'],
-    orientation: typeof ['horizontal', 'vertical'],
+    alignment: typeof [ 'start', 'center', 'end', 'stretched' ],
+    orientation: typeof [ 'horizontal', 'vertical' ],
     aria: typeof false,
 
     htmlAttributes: typeof []
