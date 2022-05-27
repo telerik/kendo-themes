@@ -13,7 +13,6 @@ function ListHeaderStatic(props) {
         children,
 
         aria,
-        legacy,
 
         ...htmlAttributes
     } = props;
@@ -24,22 +23,9 @@ function ListHeaderStatic(props) {
         'k-list-group-sticky-header'
     ];
 
-    let legacyListHeaderClasses = [
-        ownClassName,
-        'k-group-header'
-    ];
-
     let ariaAttr = aria
         ? {}
         : {};
-
-    if (legacy) {
-        return (
-            <div className={legacyListHeaderClasses} {...ariaAttr} {...htmlAttributes}>
-                {children}
-            </div>
-        );
-    }
 
     return (
         <div className={listHeaderClasses} {...ariaAttr} {...htmlAttributes}>

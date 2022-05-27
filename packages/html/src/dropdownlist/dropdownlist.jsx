@@ -2,7 +2,6 @@ import { globalDefaultProps } from '../component/index';
 import { Picker, PickerStatic, InputInnerSpanStatic } from '../input/index';
 import { InputValidationIconStatic, InputLoadingIconStatic, InputClearValueStatic } from '../input/index';
 import { ButtonStatic } from '../button/index';
-import { IconStatic } from '../icon/index';
 
 class DropdownList extends Picker {
     render() {
@@ -41,7 +40,6 @@ function DropdownListStatic(props) {
         disabled,
 
         aria,
-        legacy,
 
         ...htmlAttributes
     } = props;
@@ -80,37 +78,6 @@ function DropdownListStatic(props) {
     let ariaAttr = aria
         ? {}
         : {};
-
-    if (legacy) {
-
-        let legacyClasses = [
-            ownClassName,
-            'k-widget',
-            'k-dropdown',
-            {
-                'k-state-hover': hover === true,
-                'k-state-focus': focus === true,
-                'k-state-invalid': invalid === true,
-                'k-state-disabled': disabled === true
-            }
-        ];
-
-        let legacyWrapClasses = [
-            'k-dropdown-wrap'
-        ];
-
-        return (
-            <PickerStatic className={legacyClasses} {...htmlAttributes}>
-                <span className={legacyWrapClasses}>
-                    <InputInnerSpanStatic {...inputAttributes} />
-                    <InputValidationIconStatic {...props} />
-                    <InputLoadingIconStatic {...props} />
-                    <InputClearValueStatic {...props} />
-                    <span className="k-select"><IconStatic name={arrowIconName} /></span>
-                </span>
-            </PickerStatic>
-        );
-    }
 
     return (
         <PickerStatic className={dropdownListClasses} {...ariaAttr} {...htmlAttributes}>

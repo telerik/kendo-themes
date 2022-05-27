@@ -26,7 +26,6 @@ function ListItemStatic(props) {
         disabled,
 
         aria,
-        legacy,
 
         ...htmlAttributes
     } = props;
@@ -42,32 +41,9 @@ function ListItemStatic(props) {
         }
     ];
 
-
-    let legacyListItemClasses = [
-        ownClassName,
-        'k-item',
-        {
-            'k-state-hover': hover === true,
-            'k-state-focused': focus === true,
-            'k-state-selected': selected === true,
-            'k-state-disabled': disabled === true
-        }
-    ];
-
     let ariaAttr = aria
         ? {}
         : {};
-
-    if (legacy) {
-        return (
-            <li className={legacyListItemClasses} {...ariaAttr} {...htmlAttributes}>
-                {showCheckbox && <CheckboxStatic checked={checked} />}
-                {showIcon && <IconStatic name={iconName} />}
-                <span className="k-list-item-text">{children}</span>
-                {groupLabel !== '' && <div className="k-group">{groupLabel}</div>}
-            </li>
-        );
-    }
 
     return (
         <li className={listItemClasses} {...ariaAttr} {...htmlAttributes}>

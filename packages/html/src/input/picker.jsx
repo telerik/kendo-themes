@@ -54,7 +54,6 @@ function PickerStatic(props) {
         disabled,
 
         aria,
-        legacy,
 
         ...htmlAttributes
     } = props;
@@ -77,19 +76,6 @@ function PickerStatic(props) {
     let ariaAttr = aria
         ? {}
         : {};
-
-    if ( legacy ) {
-
-        let legacyClasses = [
-            ownClassName
-        ];
-
-        return (
-            <span className={legacyClasses} {...htmlAttributes}>
-                {props.children}
-            </span>
-        );
-    }
 
     return (
         <span className={pickerClasses} {...ariaAttr} {...htmlAttributes}>

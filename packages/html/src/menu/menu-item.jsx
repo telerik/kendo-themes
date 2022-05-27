@@ -55,7 +55,6 @@ function MenuItemStatic(props) {
         dir,
 
         aria,
-        legacy,
 
         ...htmlAttributes
     } = props;
@@ -93,31 +92,6 @@ function MenuItemStatic(props) {
     let ariaAttr = aria
         ? {}
         : {};
-
-    if (legacy) {
-
-        let legacyMenuItemClasses = [
-            ownClassName,
-            'k-item k-menu-item',
-            {
-                'k-state-hover': hover === true,
-                'k-state-focus': focus === true,
-                'k-state-selected': selected === true,
-                'k-state-disabled': disabled === true,
-            }
-        ];
-
-        return (
-            <li className={legacyMenuItemClasses} {...ariaAttr} {...htmlAttributes}>
-                <span className={`k-link k-menu-link ${active === true ? 'k-state-active' : ''}`}>
-                    {icon && <IconStatic className="k-menu-link-icon" name={icon} />}
-                    <span className="k-menu-link-text">{text}</span>
-                    {showArrow && <span className="k-menu-expand-arrow"><IconStatic name={expandArrowName} /></span>}
-                </span>
-                {contentTemplate}
-            </li>
-        );
-    }
 
     return (
         <li className={menuItemClasses} {...ariaAttr} {...htmlAttributes}>

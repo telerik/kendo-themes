@@ -21,7 +21,6 @@ function TreeviewLeafStatic(props) {
         selected,
 
         aria,
-        legacy,
 
         ...htmlAttributes
     } = props;
@@ -39,26 +38,6 @@ function TreeviewLeafStatic(props) {
     let ariaAttr = aria
         ? {}
         : {};
-
-    if (legacy) {
-
-        let legacyTreeviewLeafClasses = [
-            ownClassName,
-            'k-in',
-            {
-                'k-state-hover': hover === true,
-                'k-state-focus': focus === true,
-                'k-state-selected': selected === true
-            }
-        ];
-
-        return (
-            <span className={legacyTreeviewLeafClasses} {...ariaAttr} {...htmlAttributes}>
-                {showIcon && <IconStatic name={iconName} />}
-                <span className="k-treeview-leaf-text">{text}</span>
-            </span>
-        );
-    }
 
     return (
         <span className={treeviewLeafClasses} {...ariaAttr} {...htmlAttributes}>

@@ -59,7 +59,6 @@ function MultiSelectStatic(props) {
         disabled,
 
         aria,
-        legacy,
 
         ...htmlAttributes
     } = props;
@@ -90,31 +89,6 @@ function MultiSelectStatic(props) {
     let ariaAttr = aria
         ? {}
         : {};
-
-    if (legacy) {
-
-        let legacyClasses = [
-            ownClassName,
-            'k-widget',
-            'k-multiselect',
-            {
-                'k-state-hover': hover === true,
-                'k-state-focused': focus === true,
-                'k-state-invalid': invalid === true,
-                'k-state-required': required === true,
-                'k-state-disabled': disabled === true
-            }
-        ];
-
-        return (
-            <InputStatic className={legacyClasses} {...htmlAttributes}>
-                <input type={type} className="k-input" {...inputAttributes} />
-                <InputValidationIconStatic {...props} />
-                <InputLoadingIconStatic {...props} />
-                <InputClearValueStatic {...props} />
-            </InputStatic>
-        );
-    }
 
     return (
         <InputStatic className={multiselectClasses} {...ariaAttr} {...htmlAttributes}>

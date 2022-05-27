@@ -13,7 +13,6 @@ function TreeviewGroupStatic(props) {
         items,
 
         aria,
-        legacy,
 
         ...htmlAttributes
     } = props;
@@ -26,20 +25,6 @@ function TreeviewGroupStatic(props) {
     let ariaAttr = aria
         ? {}
         : {};
-
-    if (legacy) {
-
-        let legacyTreeviewULClasses = [
-            ownClassName,
-            'k-group',
-        ];
-
-        return (
-            <ul className={legacyTreeviewULClasses} {...ariaAttr} {...htmlAttributes}>
-                {items}
-            </ul>
-        );
-    }
 
     return (
         <ul className={treeviewULClasses} {...ariaAttr} {...htmlAttributes}>

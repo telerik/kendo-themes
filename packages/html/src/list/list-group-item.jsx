@@ -13,7 +13,6 @@ function ListGroupItemStatic(props) {
         children,
 
         aria,
-        legacy,
 
         ...htmlAttributes
     } = props;
@@ -23,22 +22,9 @@ function ListGroupItemStatic(props) {
         'k-list-group-item'
     ];
 
-    let legacyListGroupItemClasses = [
-        ownClassName,
-        'k-group-header'
-    ];
-
     let ariaAttr = aria
         ? {}
         : {};
-
-    if (legacy) {
-        return (
-            <li className={legacyListGroupItemClasses} {...ariaAttr} {...htmlAttributes}>
-                {children}
-            </li>
-        );
-    }
 
     return (
         <li className={listGroupItemClasses} {...ariaAttr} {...htmlAttributes}>

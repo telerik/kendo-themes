@@ -21,7 +21,7 @@ class ColorPalette extends Component {
             preset.colors.slice(i * columns, (i + 1) * columns)
                 .map((color) => {
                     row.props.children.push( <ColorPaletteTileStatic color={color} tileSize={tileSize} /> );
-                })
+                });
 
             newChildren.push(row);
         });
@@ -39,14 +39,9 @@ function ColorPaletteStatic(props) {
         className: ownClassName,
         children,
 
-        palette,
-        columns,
-        tileSize,
-
         disabled,
 
         aria,
-        legacy,
 
         ...htmlAttributes
     } = props;

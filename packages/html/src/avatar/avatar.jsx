@@ -23,7 +23,6 @@ function AvatarStatic(props) {
         themeColor,
 
         aria,
-        legacy,
 
         ...htmlAttributes
     } = props;
@@ -41,27 +40,6 @@ function AvatarStatic(props) {
     let ariaAttr = aria
         ? {}
         : {};
-
-    if (legacy) {
-
-        let legacyClasses = [
-            ownClassName,
-            'k-avatar',
-            `k-avatar-${themeColor}`,
-            styles.roundedClass( rounded ),
-            styles.sizeClass( size, 'k-avatar' ),
-            styles.fillModeClass( fillMode, 'k-avatar' ),
-            styles.borderedClass( bordered, 'k-avatar' ),
-        ];
-
-        return (
-            <span className={legacyClasses} {...ariaAttr} {...htmlAttributes}>
-                <span className={`k-avatar-${type}`}>
-                    {children}
-                </span>
-            </span>
-        );
-    }
 
     return (
         <span className={avatarClasses} {...ariaAttr} {...htmlAttributes}>

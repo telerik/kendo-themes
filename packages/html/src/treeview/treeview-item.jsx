@@ -32,7 +32,6 @@ function TreeviewItemStatic(props) {
         disabled,
 
         aria,
-        legacy,
 
         ...htmlAttributes
     } = props;
@@ -60,28 +59,6 @@ function TreeviewItemStatic(props) {
     let ariaAttr = aria
         ? {}
         : {};
-
-    if (legacy) {
-
-        let legacyTreeviewItemClasses = [
-            ownClassName,
-            'k-item',
-            {
-                'k-state-disabled': disabled === true
-            }
-        ];
-
-        return (
-            <li className={legacyTreeviewItemClasses} {...ariaAttr} {...htmlAttributes}>
-                <span className="k-mid">
-                    {hasChildren && <span className="k-treeview-toggle"><IconStatic name={expanded ? 'collapse' : 'expand'} /></span>}
-                    {showCheckbox && <CheckboxStatic checked={checked} />}
-                    <TreeviewLeafStatic {...leafProps} />
-                </span>
-                {expanded && hasChildren && <TreeviewGroupStatic items={items} />}
-            </li>
-        );
-    }
 
     return (
         <li className={treeviewItemClasses} {...ariaAttr} {...htmlAttributes}>

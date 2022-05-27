@@ -115,7 +115,6 @@ function ListStatic(props) {
         virtualization,
 
         aria,
-        legacy,
 
         ...htmlAttributes
     } = props;
@@ -129,23 +128,9 @@ function ListStatic(props) {
         }
     ];
 
-
-    let legacyListClasses = [
-        ownClassName,
-        'k-list-container'
-    ];
-
     let ariaAttr = aria
         ? {}
         : {};
-
-    if (legacy) {
-        return (
-            <div className={legacyListClasses} {...ariaAttr} {...htmlAttributes}>
-                {children}
-            </div>
-        );
-    }
 
     return (
         <div className={listClasses} {...ariaAttr} {...htmlAttributes}>

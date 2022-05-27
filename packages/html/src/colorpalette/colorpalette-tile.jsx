@@ -18,7 +18,6 @@ function ColorPaletteTileStatic(props) {
         selected,
 
         aria,
-        legacy,
 
         ...htmlAttributes
     } = props;

@@ -22,7 +22,6 @@ function RadioStatic(props) {
         disabled,
 
         aria,
-        legacy,
 
         ...htmlAttributes
 
@@ -47,25 +46,6 @@ function RadioStatic(props) {
             'k-checked': checked === true,
         }
     ];
-
-    if (legacy) {
-
-        let legacyClasses = [
-            ownClassName,
-            'k-radio',
-            {
-                'k-state-hover': hover === true,
-                'k-state-focus': focus === true,
-                'k-state-invalid': invalid === true,
-                'k-state-disabled': disabled === true,
-                'k-state-checked': checked === true,
-            }
-        ];
-
-        return (
-            <span className="k-radio-wrap"><input type="radio" className={legacyClasses} {...ariaAttr} {...htmlAttributes}/></span>
-        );
-    }
 
     return (
         <span className="k-radio-wrap"><input type="radio" className={radioClasses} {...ariaAttr} {...htmlAttributes}/></span>

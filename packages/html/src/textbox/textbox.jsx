@@ -34,7 +34,6 @@ function TextboxStatic(props) {
         disabled,
 
         aria,
-        legacy,
 
         ...htmlAttributes
     } = props;
@@ -66,32 +65,6 @@ function TextboxStatic(props) {
     let ariaAttr = aria
         ? {}
         : {};
-
-    if (legacy) {
-
-        let legacyClasses = [
-            ownClassName,
-            'k-textbox',
-            {
-                'k-state-hover': hover === true,
-                'k-state-focus': focus === true,
-                'k-state-invalid': invalid === true,
-                'k-state-required': required === true,
-                'k-state-disabled': disabled === true
-            }
-        ];
-
-        return (
-            <InputStatic className={legacyClasses} {...htmlAttributes}>
-                {prefix}
-                <input type={type} className="k-input" {...inputAttributes} />
-                {suffix}
-                <InputValidationIconStatic {...props} />
-                <InputLoadingIconStatic {...props} />
-                <InputClearValueStatic {...props} />
-            </InputStatic>
-        );
-    }
 
     return (
         <InputStatic className={textboxClasses} {...ariaAttr} {...htmlAttributes}>

@@ -63,7 +63,6 @@ function TreeviewStatic(props) {
         size,
 
         aria,
-        legacy,
 
         ...htmlAttributes
     } = props;
@@ -77,20 +76,6 @@ function TreeviewStatic(props) {
     let ariaAttr = aria
         ? {}
         : {};
-
-    if (legacy) {
-
-        let legacyTreeviewClasses = [
-            ownClassName,
-            'k-treeview'
-        ];
-
-        return (
-            <div className={legacyTreeviewClasses} {...ariaAttr} {...htmlAttributes}>
-                <TreeviewGroupStatic className="k-treeview-lines" items={items} />
-            </div>
-        );
-    }
 
     return (
         <div className={treeviewClasses} {...ariaAttr} {...htmlAttributes}>

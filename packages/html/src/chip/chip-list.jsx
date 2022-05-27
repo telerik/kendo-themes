@@ -16,10 +16,7 @@ function ChipListStatic(props) {
 
         size,
 
-        selection,
-
         aria,
-        legacy,
 
         ...htmlAttributes
     } = props;
@@ -30,23 +27,9 @@ function ChipListStatic(props) {
         styles.sizeClass( size, 'k-chip-list' )
     ];
 
-
-    let legacyListClasses = [
-        ownClassName,
-        'k-chip-list'
-    ];
-
     let ariaAttr = aria
         ? {}
         : {};
-
-    if (legacy) {
-        return (
-            <div className={legacyListClasses} {...ariaAttr} {...htmlAttributes}>
-                {children}
-            </div>
-        );
-    }
 
     return (
         <div className={listClasses} {...ariaAttr} {...htmlAttributes}>

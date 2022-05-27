@@ -1,5 +1,4 @@
 import { Component, globalDefaultProps } from '../component/index';
-import { IconStatic } from '../icon/index';
 import { ButtonStatic } from '../button/index';
 
 class SpinButton extends Component {
@@ -17,7 +16,6 @@ function SpinButtonStatic(props) {
         fillMode,
 
         aria,
-        legacy,
 
         ...htmlAttributes
     } = props;
@@ -30,19 +28,6 @@ function SpinButtonStatic(props) {
     let ariaAttr = aria
         ? {}
         : {};
-
-    if (legacy) {
-        return (
-            <span className="k-select">
-                <span className="k-link k-link-increase">
-                    <IconStatic name="arrow-60-up" />
-                </span>
-                <span className="k-link k-link-decrease">
-                    <IconStatic name="arrow-60-down" />
-                </span>
-            </span>
-        );
-    }
 
     return (
         <span className={spinButtonClasses} {...ariaAttr} {...htmlAttributes}>

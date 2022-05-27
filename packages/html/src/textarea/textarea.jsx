@@ -31,7 +31,6 @@ function TextareaStatic(props) {
         disabled,
 
         aria,
-        legacy,
 
         ...htmlAttributes
     } = props;
@@ -61,29 +60,6 @@ function TextareaStatic(props) {
     let ariaAttr = aria
         ? {}
         : {};
-
-    if (legacy) {
-
-        let legacyClasses = [
-            ownClassName,
-            'k-textarea',
-            {
-                'k-state-hover': hover === true,
-                'k-state-focus': focus === true,
-                'k-state-invalid': invalid === true,
-                'k-state-required': required === true,
-                'k-state-disabled': disabled === true
-            }
-        ];
-
-        return (
-            <InputStatic className={legacyClasses} {...htmlAttributes}>
-                {prefix}
-                <textarea className="k-input" {...inputAttributes}>{value}</textarea>
-                {suffix}
-            </InputStatic>
-        );
-    }
 
     return (
         <InputStatic className={textareaClasses} {...ariaAttr} {...htmlAttributes}>
