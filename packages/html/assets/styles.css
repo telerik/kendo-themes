@@ -11,6 +11,7 @@ body {
     max-width: 1024px;
     box-sizing: border-box;
     gap: 20px;
+    align-items: start;
 }
 #test-area.grid {
     display: grid;
