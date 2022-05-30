@@ -55,6 +55,7 @@ export * from './radio/index';
 // export * from './slider/index';
 
 // Augmented inputs
+export * from './floating-label/index';
 export * from './autocomplete/index';
 export * from './colorpalette/index';
 export * from './captcha/index';
