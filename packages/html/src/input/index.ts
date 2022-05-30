@@ -6,4 +6,3 @@ export * from './input-suffix.jsx';
 export * from './input-validation-icon.jsx';
 export * from './input-loading-icon.jsx';
 export * from './input-clear-value.jsx';
-export * from './floating-label.jsx';
