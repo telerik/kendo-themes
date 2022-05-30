@@ -1,0 +1,21 @@
+[
+    {
+        "component": "icon",
+        "selector": [
+            ".k-icon"
+        ],
+        "options": [
+            {
+                "name": "name",
+                "values": [
+                    {
+                        "name": "*",
+                        "selector": [
+                            ".k-i-{options.name}"
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

@@ -1,0 +1,107 @@
+[
+    {
+        "component": "list",
+        "selector": [
+            ".k-list"
+        ],
+        "options": [
+            {
+                "name": "size",
+                "values": [
+                    {
+                        "name": "small",
+                        "selector": [
+                            ".k-list-sm"
+                        ]
+                    },
+                    {
+                        "name": "medium",
+                        "selector": [
+                            ".k-list-md"
+                        ]
+                    },
+                    {
+                        "name": "large",
+                        "selector": [
+                            ".k-list-lg"
+                        ]
+                    }
+                ]
+            }
+        ],
+        "children": [
+            {
+                "name": "list-item",
+                "$ref": "list-item",
+                "selector": [
+                    ".k-list-item"
+                ]
+            }
+        ]
+    },
+    {
+        "component": "list-item",
+        "selector": [
+            ".k-list-item"
+        ],
+        "states": [
+            {
+                "name": "hover",
+                "selector": [
+                    ":hover",
+                    ".k-hover"
+                ]
+            },
+            {
+                "name": "focus",
+                "selector": [
+                    ":focus",
+                    ".k-focus"
+                ]
+            },
+            {
+                "name": "active",
+                "selector": [
+                    ":active",
+                    ".k-active"
+                ]
+            },
+            {
+                "name": "selected",
+                "selector": [
+                    ".k-selected"
+                ]
+            },
+            {
+                "name": "disabled",
+                "selector": [
+                    ":disabled",
+                    "[disabled]",
+                    ".k-disabled"
+                ]
+            }
+        ],
+        "children": [
+            {
+                "name": "list-item-checkbox",
+                "$ref": "checkbox",
+                "selector": [
+                    ".k-checkbox"
+                ]
+            },
+            {
+                "name": "list-item-icon",
+                "$ref": "icon",
+                "selector": [
+                    ".k-icon"
+                ]
+            },
+            {
+                "name": "list-item-text",
+                "selector": [
+                    ".k-list-item-text"
+                ]
+            }
+        ]
+    }
+]

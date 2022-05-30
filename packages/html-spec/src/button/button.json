@@ -1,7 +1,6 @@
 [
     {
         "component": "button",
-        "version": "5.3.1",
         "selector": [
             ".k-button"
         ],
@@ -198,14 +197,14 @@
         ],
         "children": [
             {
-                "name": "icon",
-                "ref": "icon",
+                "name": "button-icon",
+                "$ref": "icon",
                 "selector": [
                     ".k-button-icon"
                 ]
             },
             {
-                "name": "text",
+                "name": "button-text",
                 "selector": [
                     ".k-button-text"
                 ]
