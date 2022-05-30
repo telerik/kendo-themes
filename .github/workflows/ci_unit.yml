@@ -25,7 +25,7 @@ jobs:
         uses: actions/setup-node@v2
         with:
           cache: 'npm'
-          node-version: 16.x
+          node-version: 14.x
 
       - name: Install
         run: |
