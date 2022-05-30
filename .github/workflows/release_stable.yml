@@ -36,7 +36,7 @@ jobs:
         uses: actions/setup-node@v2
         with:
           cache: 'npm'
-          node-version: 14.x
+          node-version: 16.x
           registry-url: 'https://registry.npmjs.org'
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
