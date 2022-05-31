@@ -1,7 +1,7 @@
 @include exports( "input/theme" ) {
 
     // Solid input
-    .k-input {
+    .k-input-solid {
         @include fill(
             $kendo-input-text,
             $kendo-input-bg,
@@ -38,7 +38,7 @@
             @include box-shadow( $kendo-input-focus-shadow );
         }
 
-        //Disabled
+        // Disabled
         &:disabled,
         &[disabled],
         &.k-disabled {
@@ -55,7 +55,7 @@
         &.k-invalid,
         &.ng-invalid.ng-touched,
         &.ng-invalid.ng-dirty {
-            @include fill( $border: $invalid-border );
+            @include fill( $border: $kendo-input-invalid-border );
 
             .k-input-validation-icon {
                 color: $invalid-text;
@@ -63,10 +63,10 @@
 
             &:focus,
             &.k-focus {
-                @include box-shadow($invalid-shadow);
+                @include box-shadow( $kendo-input-invalid-shadow );
             }
             &:focus-within {
-                @include box-shadow($invalid-shadow);
+                @include box-shadow( $kendo-input-invalid-shadow );
             }
         }
 
@@ -74,7 +74,7 @@
 
 
     // Solid picker
-    .k-picker {
+    .k-picker-solid {
         @include fill(
             $kendo-picker-text,
             $kendo-picker-bg,
@@ -115,7 +115,7 @@
             @include box-shadow( $kendo-picker-focus-shadow );
         }
 
-        //Disabled
+        // Disabled
         &:disabled,
         &[disabled],
         &.k-disabled {
@@ -148,7 +148,8 @@
         }
     }
 
-    // Outline
+
+    // Outline input
     .k-input-outline {
         @include fill (
             $kendo-input-outline-text,
@@ -169,6 +170,7 @@
            }
         }
 
+        // Hover
         &:hover,
         &.k-hover {
             @include fill (
@@ -178,6 +180,7 @@
             );
         }
 
+        // Focus
         &:focus,
         &.k-focus {
             @include fill (
@@ -187,12 +190,33 @@
              );
             @include box-shadow ( $kendo-input-outline-focus-shadow );
         }
+        &:focus-within {
+            @include fill (
+                $kendo-input-outline-focus-text,
+                $kendo-input-outline-focus-bg,
+                $kendo-input-outline-focus-border
+             );
+            @include box-shadow ( $kendo-input-outline-focus-shadow );
+        }
+
+        // Disabled
+        &:disabled,
+        &[disabled],
+        &.k-disabled {
+            @include fill(
+                $kendo-input-disabled-text,
+                $kendo-input-disabled-bg,
+                $kendo-input-disabled-border,
+                $kendo-input-disabled-gradient
+            );
+            @include box-shadow( $kendo-input-disabled-shadow );
+        }
 
         // Invalid
         &.k-invalid,
         &.ng-invalid.ng-touched,
         &.ng-invalid.ng-dirty {
-            @include fill( $border: $invalid-border );
+            @include fill( $border: $kendo-input-invalid-border );
 
             .k-input-validation-icon {
                 color: $invalid-text;
@@ -200,15 +224,17 @@
 
             &:focus,
             &.k-focus {
-                @include box-shadow($invalid-shadow);
+                @include box-shadow( $kendo-input-invalid-shadow );
             }
             &:focus-within {
-                @include box-shadow($invalid-shadow);
+                @include box-shadow( $kendo-input-invalid-shadow );
             }
         }
 
     }
 
+
+    // Outline picker
     .k-picker-outline {
         @include fill (
             $kendo-picker-outline-text,
@@ -216,6 +242,7 @@
             $kendo-picker-outline-border
         );
 
+        // Hover
         &:hover,
         &.k-hover {
             @include fill (
@@ -225,8 +252,17 @@
             );
         }
 
+        // Focus
         &:focus,
         &.k-focus {
+            @include fill (
+                $kendo-picker-outline-focus-text,
+                $kendo-picker-outline-focus-bg,
+                $kendo-picker-outline-focus-border
+            );
+            @include box-shadow ( $kendo-picker-outline-focus-shadow );
+        }
+        &:focus-within {
             @include fill (
                 $kendo-picker-outline-focus-text,
                 $kendo-picker-outline-focus-bg,
@@ -246,41 +282,17 @@
             );
         }
 
-        // Invalid
-        &.k-invalid,
-        &.ng-invalid.ng-touched,
-        &.ng-invalid.ng-dirty {
-            @include fill( $border: $invalid-border );
-
-            .k-input-validation-icon {
-                color: $invalid-text;
-            }
-
-            &:focus,
-            &.k-focus {
-                @include box-shadow($invalid-shadow);
-            }
-            &:focus-within {
-                @include box-shadow($invalid-shadow);
-            }
-        }
-    }
-
-    // Flat
-    .k-input-flat {
-        @include fill (
-            $kendo-input-flat-text,
-            $kendo-input-flat-bg,
-            $kendo-input-flat-border
-        );
-
-        &:focus,
-        &.k-focus {
-            @include fill (
-                $kendo-input-flat-focus-text,
-                $kendo-input-flat-focus-bg,
-                $kendo-input-flat-focus-border
+        // Disabled
+        &:disabled,
+        &[disabled],
+        &.k-disabled {
+            @include fill(
+                $kendo-picker-disabled-text,
+                $kendo-picker-disabled-bg,
+                $kendo-picker-disabled-border,
+                $kendo-picker-disabled-gradient
             );
+            @include box-shadow( $kendo-picker-disabled-shadow );
         }
 
         // Invalid
@@ -303,6 +315,79 @@
         }
     }
 
+
+    // Flat input
+    .k-input-flat {
+        @include fill (
+            $kendo-input-flat-text,
+            $kendo-input-flat-bg,
+            $kendo-input-flat-border
+        );
+
+        // Hover
+        &:hover,
+        &.k-hover {
+            @include fill (
+                $kendo-input-flat-hover-text,
+                $kendo-input-flat-hover-bg,
+                $kendo-input-flat-hover-border
+            );
+        }
+
+        // Focus
+        &:focus,
+        &.k-focus {
+            @include fill (
+                $kendo-input-flat-focus-text,
+                $kendo-input-flat-focus-bg,
+                $kendo-input-flat-focus-border
+            );
+            @include box-shadow( $kendo-input-flat-focus-shadow );
+        }
+        &:focus-within {
+            @include fill (
+                $kendo-input-flat-focus-text,
+                $kendo-input-flat-focus-bg,
+                $kendo-input-flat-focus-border
+            );
+            @include box-shadow( $kendo-input-flat-focus-shadow );
+        }
+
+        // Disabled
+        &:disabled,
+        &[disabled],
+        &.k-disabled {
+            @include fill(
+                $kendo-input-disabled-text,
+                $kendo-input-disabled-bg,
+                $kendo-input-disabled-border,
+                $kendo-input-disabled-gradient
+            );
+            @include box-shadow( $kendo-input-disabled-shadow );
+        }
+
+        // Invalid
+        &.k-invalid,
+        &.ng-invalid.ng-touched,
+        &.ng-invalid.ng-dirty {
+            @include fill( $border: $kendo-input-invalid-border );
+
+            .k-input-validation-icon {
+                color: $invalid-text;
+            }
+
+            &:focus,
+            &.k-focus {
+                @include box-shadow( $kendo-input-invalid-shadow );
+            }
+            &:focus-within {
+                @include box-shadow( $kendo-input-invalid-shadow );
+            }
+        }
+    }
+
+
+    // Flat picker
     .k-picker-flat {
         @include fill (
             $kendo-picker-flat-text,
@@ -310,6 +395,7 @@
             $kendo-picker-flat-border
         );
 
+        // Hover
         &:hover,
         &.k-hover {
             @include fill (
@@ -319,8 +405,17 @@
             );
         }
 
+        // Focus
         &:focus,
         &.k-focus {
+            @include fill (
+                $kendo-picker-flat-focus-text,
+                $kendo-picker-flat-focus-bg,
+                $kendo-picker-flat-focus-border
+            );
+            @include box-shadow( $kendo-picker-flat-focus-shadow );
+        }
+        &:focus-within {
             @include fill (
                 $kendo-picker-flat-focus-text,
                 $kendo-picker-flat-focus-bg,
@@ -338,6 +433,19 @@
                 $kendo-picker-flat-hover-focus-bg,
                 $kendo-picker-flat-hover-focus-border
             );
+        }
+
+        // Disabled
+        &:disabled,
+        &[disabled],
+        &.k-disabled {
+            @include fill(
+                $kendo-picker-disabled-text,
+                $kendo-picker-disabled-bg,
+                $kendo-picker-disabled-border,
+                $kendo-picker-disabled-gradient
+            );
+            @include box-shadow( $kendo-picker-disabled-shadow );
         }
 
         // Invalid
