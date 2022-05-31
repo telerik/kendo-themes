@@ -58,7 +58,7 @@ $kendo-input-sizes: (
 
 $kendo-input-bg: try-shade( $component-bg, .5 ) !default;
 $kendo-input-text: $component-text !default;
-$kendo-input-border: rgba( $component-border, .54 ) !default;
+$kendo-input-border: rgba( $component-border, .38 ) !default;
 $kendo-input-shadow: null !default;
 
 $kendo-input-hover-bg: null !default;
@@ -103,8 +103,6 @@ $kendo-input-flat-focus-text: null !default;
 $kendo-input-flat-focus-border: $kendo-input-focus-border !default;
 $kendo-input-flat-focus-shadow: $kendo-input-focus-shadow !default;
 
-$kendo-input-flat-border-radius: null !default;
-
 $kendo-picker-bg: $kendo-input-bg !default;
 $kendo-picker-text: $kendo-input-text !default;
 $kendo-picker-border: $kendo-input-border !default;
@@ -129,34 +127,34 @@ $kendo-picker-disabled-border: $kendo-input-disabled-border !default;
 $kendo-picker-disabled-gradient: null !default;
 $kendo-picker-disabled-shadow: null !default;
 
-$kendo-picker-outline-bg: transparent !default;
-$kendo-picker-outline-text: null !default;
-$kendo-picker-outline-border: null !default;
+$kendo-picker-outline-bg: null !default;
+$kendo-picker-outline-text: $kendo-picker-text !default;
+$kendo-picker-outline-border: $kendo-picker-border !default;
 
 $kendo-picker-outline-hover-bg: null !default;
 $kendo-picker-outline-hover-text: null !default;
-$kendo-picker-outline-hover-border: null !default;
+$kendo-picker-outline-hover-border: $kendo-picker-hover-border !default;
 
 $kendo-picker-outline-focus-bg: nul !default;
 $kendo-picker-outline-focus-text: null !default;
-$kendo-picker-outline-focus-border: null !default;
+$kendo-picker-outline-focus-border: $kendo-picker-focus-border !default;
 $kendo-picker-outline-focus-shadow: null !default;
 
 $kendo-picker-outline-hover-focus-bg: null !default;
 $kendo-picker-outline-hover-focus-text: null !default;
 $kendo-picker-outline-hover-focus-border: null !default;
 
-$kendo-picker-flat-bg: transparent !default;
-$kendo-picker-flat-text: null !default;
-$kendo-picker-flat-border: null !default;
+$kendo-picker-flat-bg: null !default;
+$kendo-picker-flat-text: $kendo-picker-text !default;
+$kendo-picker-flat-border: $kendo-picker-border !default;
 
 $kendo-picker-flat-hover-bg: null !default;
 $kendo-picker-flat-hover-text: null !default;
-$kendo-picker-flat-hover-border: null !default;
+$kendo-picker-flat-hover-border: $kendo-picker-hover-border !default;
 
 $kendo-picker-flat-focus-bg: null !default;
 $kendo-picker-flat-focus-text: null !default;
-$kendo-picker-flat-focus-border: null !default;
+$kendo-picker-flat-focus-border: $kendo-picker-focus-border !default;
 $kendo-picker-flat-focus-shadow: null !default;
 
 $kendo-picker-flat-hover-focus-bg: null !default;
