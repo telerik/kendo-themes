@@ -338,26 +338,14 @@
     // Fill mode
     .k-input-flat,
     .k-picker-flat {
-        @include border-radius( 0 !important ); // sass-lint:disable-line no-important
+        @include border-bottom-radius( 0 !important ); // sass-lint:disable-line no-important
         border-width: $kendo-input-border-width 0;
         border-top-color: transparent !important; // sass-lint:disable-line no-important
         background-image: none !important; // sass-lint:disable-line no-important
-
-        &:focus,
-        &.k-focus {
-            @include border-radius( $kendo-input-flat-border-radius !important ); // sass-lint:disable-line no-important
-        }
-        &:focus-within {
-            @include border-radius( $kendo-input-flat-border-radius !important ); // sass-lint:disable-line no-important
-        }
     }
 
     .k-input-outline {
         background: none !important; // sass-lint:disable-line no-important
-    }
-
-    .k-picker.k-picker-flat {
-        @include border-radius( $kendo-input-flat-border-radius !important ); // sass-lint:disable-line no-important
     }
 
 
