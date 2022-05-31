@@ -27,6 +27,7 @@
         }
 
         &:disabled,
+        &[disabled],
         &.k-disabled  {
             border-bottom-style: dashed;
         }
@@ -36,6 +37,7 @@
     // Disabled
     .k-input,
     .k-picker {
+
         &:disabled,
         &[disabled],
         &.k-disabled {
@@ -54,29 +56,56 @@
     // Input ripple
     .k-input-solid,
     .k-input-flat,
+    .k-input-outline,
     .k-picker-solid,
-    .k-picker-flat {
-        $height: 2 * $kendo-input-border-width;
+    .k-picker-flat,
+    .k-picker-outline {
+        $_kendo-input-ripple-border-width: (2 * $kendo-input-border-width);
 
         &::after {
-            display: block;
-            z-index: 2;
             content: "";
+            border-width: 0 0 $_kendo-input-ripple-border-width 0;
+            border-style: solid;
+            border-color: inherit;
+            border-radius: inherit;
+            display: block;
             position: absolute;
-            bottom: calc( 1px - #{$height} );
-            left: 0;
-            right: 0;
-            height: $height;
-            margin: auto;
+            z-index: 2;
+            top: -1px;
+            bottom: -1px;
+            left: -1px;
+            right: -1px;
             opacity: 0;
-            transform: scaleX(.5);
-            transition: transform .3s;
+            transform: scaleX(0);
+            transition: opacity .3s, transform .3s;
+            pointer-events: none;
         }
 
-        &.k-state-focused::after,
-        &.k-focus::after {
+        &.k-focus::after,
+        &.k-state-focused::after {
             opacity: 1;
             transform: scaleX(1);
+        }
+        &:focus-within::after {
+            opacity: 1;
+            transform: scaleX(1);
+        }
+    }
+    .k-input-outline,
+    .k-picker-outline {
+        $_kendo-input-ripple-border-width: (2 * $kendo-input-border-width);
+
+        &::after {
+            border-width: $_kendo-input-ripple-border-width;
+            transform: none;
+        }
+
+        &.k-focus::after,
+        &.k-state-focused::after {
+            transform: none;
+        }
+        &:focus-within::after {
+            transform: none;
         }
     }
 
