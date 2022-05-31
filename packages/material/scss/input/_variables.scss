@@ -78,25 +78,30 @@ $kendo-input-disabled-gradient: null !default;
 $kendo-input-disabled-shadow: null !default;
 
 $kendo-input-outline-bg: null !default;
-$kendo-input-outline-text: null !default;
-$kendo-input-outline-border: null !default;
+$kendo-input-outline-text: $kendo-input-text !default;
+$kendo-input-outline-border: $kendo-input-border !default;
 
 $kendo-input-outline-hover-bg: null !default;
 $kendo-input-outline-hover-text: null !default;
-$kendo-input-outline-hover-border: null !default;
+$kendo-input-outline-hover-border: $kendo-input-hover-border !default;
 
 $kendo-input-outline-focus-bg: null !default;
 $kendo-input-outline-focus-text: null !default;
-$kendo-input-outline-focus-border: null !default;
-$kendo-input-outline-focus-shadow: null !default;
+$kendo-input-outline-focus-border: $kendo-input-focus-border !default;
+$kendo-input-outline-focus-shadow: $kendo-input-focus-shadow !default;
 
-$kendo-input-flat-bg: transparent !default;
-$kendo-input-flat-text: null !default;
-$kendo-input-flat-border: null !default;
+$kendo-input-flat-bg: null !default;
+$kendo-input-flat-text: $kendo-input-text !default;
+$kendo-input-flat-border: $kendo-input-border !default;
+
+$kendo-input-flat-hover-bg: null !default;
+$kendo-input-flat-hover-text: null !default;
+$kendo-input-flat-hover-border: $kendo-input-hover-border !default;
 
 $kendo-input-flat-focus-bg: null !default;
 $kendo-input-flat-focus-text: null !default;
-$kendo-input-flat-focus-border: null !default;
+$kendo-input-flat-focus-border: $kendo-input-focus-border !default;
+$kendo-input-flat-focus-shadow: $kendo-input-focus-shadow !default;
 
 $kendo-input-flat-border-radius: null !default;
 
