@@ -136,6 +136,9 @@
         }
 
         .k-input-inner {
+            padding-inline-start: 2px;
+            padding-inline-end: 2px;
+            text-align: center;
             text-overflow: clip;
         }
     }
