@@ -10,6 +10,7 @@
 /packages/material @telerik/kendo-front-end @telerik/kendo-theme-reviewers
 /packages/classic @telerik/kendo-front-end @telerik/kendo-theme-reviewers
 /packages/nouvelle @telerik/kendo-front-end @telerik/kendo-theme-reviewers
+/packages/fluent @telerik/kendo-front-end @telerik/kendo-theme-reviewers
 
 # Visual tests
 /tests/visual @telerik/kendo-front-end @telerik/kendo-theme-reviewers
