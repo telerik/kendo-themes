@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width:15px;">
+<head>
+    <title>Hierarchical Drawer Items</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
+    <link rel="stylesheet" href="/packages/html/assets/styles.css">
+    <script src="/packages/html/assets/scripts.js"></script>
+</head>
+<body id="app" class="k-body">
+    <div id="test-area" class="k-d-grid k-grid-cols-4">
+        <span>hierarchical items</span>
+        <span>hierarchical items - RTL</span>
+        <span></span>
+        <span></span>
+        <section>
+            <div class="k-drawer-container k-drawer-push k-drawer-expanded">
+                <div class="k-widget k-drawer k-drawer-start">
+                    <div class="k-drawer-wrapper">
+                        <ul class="k-drawer-items">
+                            <li class="k-drawer-item k-level-0">
+                                <span class="k-icon k-i-information"></span>
+                                <span class="k-item-text">Getting Started</span>
+                                <span class="k-drawer-toggle">
+                                    <span class="k-icon k-i-arrow-chevron-down"></span>
+                                </span>
+                            </li>
+                            <li class="k-drawer-item k-state-hover k-level-1">
+                                <span class="k-icon k-i-question"></span>
+                                <span class="k-item-text">About Kendo UI</span>
+                            </li>
+                            <li class="k-drawer-item k-state-selected k-level-2">
+                                <span class="k-icon k-i-palette"></span>
+                                <span class="k-item-text">Supported Themes</span>
+                            </li>
+                            <li class="k-drawer-item k-level-0">
+                                <span class="k-icon k-i-zoom"></span>
+                                <span class="k-item-text">Overview</span>
+                                <span class="k-drawer-toggle">
+                                    <span class="k-icon k-i-arrow-chevron-up"></span>
+                                </span>
+                            </li>
+                            <li class="k-drawer-item k-level-0">
+                                <span class="k-icon k-i-star"></span>
+                                <span class="k-item-text">Most Popular Widgets</span>
+                                <span class="k-drawer-toggle">
+                                    <span class="k-icon k-i-arrow-chevron-down"></span>
+                                </span>
+                            </li>
+                            <li class="k-drawer-item k-level-1">
+                                <span class="k-icon k-i-palette"></span>
+                                <span class="k-item-text">Supported Themes</span>
+                            </li>
+                            <li class="k-drawer-item k-level-1">
+                                <span class="k-icon k-i-button"></span>
+                                <span class="k-item-text">Button Package</span>
+                            </li>
+                            <li class="k-drawer-item k-level-2">
+                                <span class="k-icon k-i-button"></span>
+                                <span class="k-item-text">Split Button</span>
+                            </li>
+                            <li class="k-drawer-item k-level-3">
+                                <span class="k-icon k-i-question"></span>
+                                <span class="k-item-text">API</span>
+                            </li>
+                            <li class="k-drawer-item k-level-2">
+                                <span class="k-icon k-i-button"></span>
+                                <span class="k-item-text">Chip List</span>
+                            </li>
+                            <li class="k-drawer-item k-level-3">
+                                <span class="k-icon k-i-question"></span>
+                                <span class="k-item-text">API</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div dir="rtl" class="k-drawer-container k-drawer-push k-drawer-expanded">
+                <div class="k-widget k-drawer k-drawer-start">
+                    <div class="k-drawer-wrapper">
+                        <ul class="k-drawer-items">
+                            <li class="k-drawer-item k-level-0">
+                                <span class="k-icon k-i-information"></span>
+                                <span class="k-item-text">Getting Started</span>
+                                <span class="k-drawer-toggle">
+                                    <span class="k-icon k-i-arrow-chevron-down"></span>
+                                </span>
+                            </li>
+                            <li class="k-drawer-item k-state-hover k-level-1">
+                                <span class="k-icon k-i-question"></span>
+                                <span class="k-item-text">About Kendo UI</span>
+                            </li>
+                            <li class="k-drawer-item k-state-selected k-level-2">
+                                <span class="k-icon k-i-palette"></span>
+                                <span class="k-item-text">Supported Themes</span>
+                            </li>
+                            <li class="k-drawer-item k-level-0">
+                                <span class="k-icon k-i-zoom"></span>
+                                <span class="k-item-text">Overview</span>
+                                <span class="k-drawer-toggle">
+                                    <span class="k-icon k-i-arrow-chevron-up"></span>
+                                </span>
+                            </li>
+                            <li class="k-drawer-item k-level-0">
+                                <span class="k-icon k-i-star"></span>
+                                <span class="k-item-text">Most Popular Widgets</span>
+                                <span class="k-drawer-toggle">
+                                    <span class="k-icon k-i-arrow-chevron-down"></span>
+                                </span>
+                            </li>
+                            <li class="k-drawer-item k-level-1">
+                                <span class="k-icon k-i-palette"></span>
+                                <span class="k-item-text">Supported Themes</span>
+                            </li>
+                            <li class="k-drawer-item k-level-1">
+                                <span class="k-icon k-i-button"></span>
+                                <span class="k-item-text">Button Package</span>
+                            </li>
+                            <li class="k-drawer-item k-level-2">
+                                <span class="k-icon k-i-button"></span>
+                                <span class="k-item-text">Split Button</span>
+                            </li>
+                            <li class="k-drawer-item k-level-3">
+                                <span class="k-icon k-i-question"></span>
+                                <span class="k-item-text">API</span>
+                            </li>
+                            <li class="k-drawer-item k-level-2">
+                                <span class="k-icon k-i-button"></span>
+                                <span class="k-item-text">Chip List</span>
+                            </li>
+                            <li class="k-drawer-item k-level-3">
+                                <span class="k-icon k-i-question"></span>
+                                <span class="k-item-text">API</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
