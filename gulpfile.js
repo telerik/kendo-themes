@@ -182,7 +182,12 @@ gulp.task("assets", function() {
 function distFlat() {
     let file = paths.sass.theme;
     let output = { path: getArg('--output-path') || paths.sass.dist };
-    let themes = glob.sync( getArg('--theme') || paths.sass.themes );
+    let themes = glob.sync( getArg('--theme') || paths.sass.themes, {
+        ignore: [
+            'packages/fluent',
+            'packages/utils'
+        ]
+    });
 
     flattenAll( themes, { file, output } );
 
@@ -298,8 +303,12 @@ gulp.task("dart:flat", () => {
 
 // #region docs
 gulp.task("docs", () => {
-    let themes = glob.sync(paths.sass.themes);
-    themes = themes.filter(theme => theme !== 'packages/utils');
+    let themes = glob.sync(paths.sass.themes, {
+        ignore: [
+            'packages/fluent',
+            'packages/utils'
+        ]
+    });
 
     distFlat();
     resolveVars();
@@ -374,7 +383,12 @@ gulp.task("create-component", function( done ) {
 // #endregion
 
 function resolveVars() {
-    let themes = glob.sync(paths.sass.themes);
+    let themes = glob.sync(paths.sass.themes, {
+        ignore: [
+            'packages/fluent',
+            'packages/utils'
+        ]
+    });
     const cwd = process.cwd();
 
     distFlat();
