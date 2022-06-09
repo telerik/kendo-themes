@@ -9,6 +9,7 @@ const sassdoc = require("sassdoc");
 const merge = require('lodash.merge');
 const nodeSass = require("node-sass");
 const dartSass = require("sass");
+const embeddedSass = require("sass-embedded");
 
 const { kendoSassCompile, kendoSassBuild } = require('@progress/kendo-theme-tasks/src/build/kendo-build');
 const { sassFlatten } = require('@progress/kendo-theme-tasks/src/build/sass-flatten');
@@ -37,7 +38,8 @@ const nodeSassOptions = {
     implementation: nodeSass
 };
 const dartSassOptions = {
-    implementation: dartSass
+    implementation: embeddedSass,
+    logger: embeddedSass.Logger.silent
 };
 
 let nodeModules = 'node_modules';
