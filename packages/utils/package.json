@@ -1,7 +1,7 @@
 {
   "name": "@progress/kendo-theme-utils",
   "description": "Utility first library alongside Kendo UI",
-  "version": "5.4.2-dev.1",
+  "version": "5.4.2-dev.6",
   "author": "Progress",
   "license": "Apache-2.0",
   "keywords": [
@@ -40,6 +40,5 @@
     "dart:flat": "gulp dart:flat",
     "prepublishOnly": "node ../../scripts/themes-prepublish.js",
     "postpublish": "echo 'no postpublish for utils'"
-  },
-  "dependencies": {}
+  }
 }
