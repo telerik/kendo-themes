@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.5.0](https://github.com/telerik/kendo-themes/compare/v5.4.1...v5.5.0) (2022-06-13)
+
+
+### Bug Fixes
+
+* **input:** ensure outline input and picker use the same border-color ([5a8a651](https://github.com/telerik/kendo-themes/commit/5a8a6510767bc121a887f75e6905f524b4b588d8))
+* **panelbar:** expose $panelbar-border-style variable ([cf5afac](https://github.com/telerik/kendo-themes/commit/cf5afac85f27756ba55cc2557ee6ae1a26f31b2b))
+* scope solid input and picker styles ([66e9357](https://github.com/telerik/kendo-themes/commit/66e935745a0d6982edc157d5d5eebc8b5b45e190))
+
+
+### Features
+
+* **drawer:** add hierarchical item levels ([115098b](https://github.com/telerik/kendo-themes/commit/115098ba210004f8541fdffa0d744c94f96e324d))
+
+
+
+
+
 ## [5.4.1](https://github.com/telerik/kendo-themes/compare/v5.4.0...v5.4.1) (2022-05-05)
 
 **Note:** Version bump only for package @progress/kendo-theme-classic

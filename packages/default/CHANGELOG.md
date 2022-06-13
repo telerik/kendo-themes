@@ -3,6 +3,31 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.5.0](https://github.com/telerik/kendo-themes/compare/v5.4.1...v5.5.0) (2022-06-13)
+
+
+### Bug Fixes
+
+* **avatar:** align avatar image to top ([3103874](https://github.com/telerik/kendo-themes/commit/3103874def994e4208fe90ccee0093de4525ea2b))
+* **color-picker:** reduce horizontal padding of inputs, so value is almost never clipped ([40997af](https://github.com/telerik/kendo-themes/commit/40997afb2971445238421d880d919b4beca6fe0f))
+* **drawer:** drawer should not be wider than its parent ([52a8c6b](https://github.com/telerik/kendo-themes/commit/52a8c6b8e892c22f90574dbdc7a18dcae56648f1))
+* **input:** ensure outline input and picker use the same border-color ([5a8a651](https://github.com/telerik/kendo-themes/commit/5a8a6510767bc121a887f75e6905f524b4b588d8))
+* **input:** merge input-ripple styles in input styles ([7be8b2b](https://github.com/telerik/kendo-themes/commit/7be8b2b375786d521d2c08e176d7478b9761bef7))
+* make flat input and picker bottom radius 0 so it can accept different rounding ([f78fbb7](https://github.com/telerik/kendo-themes/commit/f78fbb787c0504fcd7cae0b17dd661bbd16c9644))
+* **panelbar:** expose $panelbar-border-style variable ([cf5afac](https://github.com/telerik/kendo-themes/commit/cf5afac85f27756ba55cc2557ee6ae1a26f31b2b))
+* scope solid input and picker styles ([66e9357](https://github.com/telerik/kendo-themes/commit/66e935745a0d6982edc157d5d5eebc8b5b45e190))
+* **slider:** add absolute positioned tick for slider ([21f931c](https://github.com/telerik/kendo-themes/commit/21f931cf8ef70a0ffae232909a7dacaa137712bd))
+* **switch:** switch should accept k-rtl modifier ([db182a6](https://github.com/telerik/kendo-themes/commit/db182a60c8e0ae6adf1e0ddedbf0e7443807e87a))
+
+
+### Features
+
+* **drawer:** add hierarchical item levels ([115098b](https://github.com/telerik/kendo-themes/commit/115098ba210004f8541fdffa0d744c94f96e324d))
+
+
+
+
+
 ## [5.4.1](https://github.com/telerik/kendo-themes/compare/v5.4.0...v5.4.1) (2022-05-05)
 
 

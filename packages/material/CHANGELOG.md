@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.5.0](https://github.com/telerik/kendo-themes/compare/v5.4.1...v5.5.0) (2022-06-13)
+
+
+### Bug Fixes
+
+* **input:** merge input-ripple styles in input styles ([7be8b2b](https://github.com/telerik/kendo-themes/commit/7be8b2b375786d521d2c08e176d7478b9761bef7))
+* **input:** remove child button border for flat input and pickers ([6a97e09](https://github.com/telerik/kendo-themes/commit/6a97e0912e2cfbaafbea93934b0c76daa2a77849))
+* **material:** apply input ripple on the correct sides ([d95a5ee](https://github.com/telerik/kendo-themes/commit/d95a5ee0e1943abcfe0cf31852a84b774005e9ea))
+* **material:** update input and picker colors to match latest material spec ([e07ad4d](https://github.com/telerik/kendo-themes/commit/e07ad4dd7869c9f4c85ed0a4c981254b8244e830))
+* **panelbar:** expose $panelbar-border-style variable ([cf5afac](https://github.com/telerik/kendo-themes/commit/cf5afac85f27756ba55cc2557ee6ae1a26f31b2b))
+* scope solid input and picker styles ([66e9357](https://github.com/telerik/kendo-themes/commit/66e935745a0d6982edc157d5d5eebc8b5b45e190))
+* **toolbar:** revert shading for indirect child button components ([aa2c385](https://github.com/telerik/kendo-themes/commit/aa2c3852411635446170791dbacde796bccd2d38))
+
+
+### Features
+
+* **drawer:** add hierarchical item levels ([115098b](https://github.com/telerik/kendo-themes/commit/115098ba210004f8541fdffa0d744c94f96e324d))
+
+
+
+
+
 ## [5.4.1](https://github.com/telerik/kendo-themes/compare/v5.4.0...v5.4.1) (2022-05-05)
 
 

@@ -5,7 +5,4 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [5.5.0](https://github.com/telerik/kendo-themes/compare/v5.4.1...v5.5.0) (2022-06-13)
 
-
-### Features
-
-* **utils:** add kendo-theme-utils package ([4b05d67](https://github.com/telerik/kendo-themes/commit/4b05d670d256fce055a2dacda89a0b002659793f))
+**Note:** Version bump only for package @progress/kendo-theme-fluent
