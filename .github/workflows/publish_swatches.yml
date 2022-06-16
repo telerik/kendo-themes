@@ -39,7 +39,7 @@ jobs:
           npm run bootstrap
 
       - name: Build swatches
-        run: gulp sass:swatches
+        run: npm run sass:swatches
 
       - name: Checkout artifact repository
         uses: actions/checkout@v2
