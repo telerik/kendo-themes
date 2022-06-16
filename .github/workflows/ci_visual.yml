@@ -38,7 +38,7 @@ jobs:
         run: |
           npm run build:scripts
           npm run build:tests
-          npm run sass:flat -- --theme packages/${{ matrix.theme }}
+          npm run sass
 
       - name: Update markup snapshots
         env:
