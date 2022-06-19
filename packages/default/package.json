@@ -40,5 +40,8 @@
     "sass": "sass-build",
     "prepublishOnly": "node ../../scripts/themes-prepublish.js",
     "postpublish": "echo 'no postpublish for default theme'"
+  },
+  "devDependencies": {
+    "sass-build": "^0.0.1"
   }
 }

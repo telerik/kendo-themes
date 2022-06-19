@@ -43,5 +43,12 @@
     "sass": "sass-build",
     "prepublishOnly": "node ../../scripts/themes-prepublish.js",
     "postpublish": "echo 'no postpublish for the Fluent theme'"
+  },
+  "dependencies": {
+    "@progress/kendo-font-icons": "^0.1.2",
+    "@progress/kendo-theme-utils": "^5.5.0"
+  },
+  "devDependencies": {
+    "sass-build": "^0.0.1"
   }
 }
