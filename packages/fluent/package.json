@@ -39,15 +39,16 @@
     }
   },
   "scripts": {
-    "sass": "gulp sass",
-    "sass:watch": "gulp sass:watch",
-    "sass:swatches": "gulp sass:swatches",
-    "sass:flat": "gulp sass:flat",
-    "dart": "gulp dart",
-    "dart:watch": "gulp dart:watch",
-    "dart:swatches": "gulp dart:swatches",
-    "dart:flat": "gulp dart:flat",
+    "build": "sass-build",
+    "sass": "sass-build",
     "prepublishOnly": "node ../../scripts/themes-prepublish.js",
     "postpublish": "echo 'no postpublish for the Fluent theme'"
+  },
+  "dependencies": {
+    "@progress/kendo-font-icons": "^0.1.2",
+    "@progress/kendo-theme-utils": "^5.5.0"
+  },
+  "devDependencies": {
+    "sass-build": "^0.0.1"
   }
 }

@@ -36,15 +36,12 @@
     }
   },
   "scripts": {
-    "sass": "gulp sass",
-    "sass:watch": "gulp sass:watch",
-    "sass:swatches": "gulp sass:swatches",
-    "sass:flat": "gulp sass:flat",
-    "dart": "gulp dart",
-    "dart:watch": "gulp dart:watch",
-    "dart:swatches": "gulp dart:swatches",
-    "dart:flat": "gulp dart:flat",
+    "build": "sass-build",
+    "sass": "sass-build",
     "prepublishOnly": "node ../../scripts/themes-prepublish.js",
     "postpublish": "echo 'no postpublish for default theme'"
+  },
+  "devDependencies": {
+    "sass-build": "^0.0.1"
   }
 }

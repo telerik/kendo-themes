@@ -6,12 +6,8 @@ const glob = require("glob");
 const fse = require("fs-extra");
 const gulp = require("gulp");
 const sassdoc = require("sassdoc");
-const merge = require('lodash.merge');
-const nodeSass = require("node-sass");
 const dartSass = require("sass");
-const embeddedSass = require("sass-embedded");
 
-const { kendoSassCompile, kendoSassBuild } = require('@progress/kendo-theme-tasks/src/build/kendo-build');
 const { sassFlatten } = require('@progress/kendo-theme-tasks/src/build/sass-flatten');
 const { embedFileBase64 } = require('@progress/kendo-theme-tasks/src/embedFile');
 const { getArg, getEnvArg, logger, colors } = require("@progress/kendo-theme-tasks/src/utils");
@@ -32,81 +28,7 @@ const paths = {
     }
 };
 
-const sassCache = new Set();
-
-const nodeSassOptions = {
-    implementation: nodeSass
-};
-const dartSassOptions = {
-    implementation: embeddedSass,
-    logger: embeddedSass.Logger.silent
-};
-
-let nodeModules = 'node_modules';
-
 // #region helpers
-function buildAll( cwds, options ) {
-    cwds.forEach( cwd => {
-        sassCache.clear();
-        nodeModules = path.resolve( cwd, 'node_modules' );
-
-        let file = path.resolve( cwd, options.file );
-        let output = merge( {}, options.output, { path: path.resolve( cwd, options.output.path ) } );
-
-        if (fs.existsSync( file )) {
-            kendoSassBuild({
-                ...options,
-                file,
-                output,
-                cache: sassCache,
-                nodeModules: nodeModules
-            });
-        }
-    });
-}
-
-function buildSwatches( cwds, options ) {
-    cwds.forEach( cwd => {
-        let files = glob.sync( path.resolve( cwd, options.swatches ) );
-
-        files.forEach( file => {
-            sassCache.clear();
-            nodeModules = path.resolve( cwd, 'node_modules' );
-
-            let output = merge( {}, options.output, { path: path.resolve( cwd, options.output.path ) } );
-            let sassFile = path.resolve( output.path, `${path.basename( file, '.json')}.scss`);
-
-            if ( fs.existsSync( sassFile ) ) {
-                kendoSassBuild({
-                    ...options,
-                    file: sassFile,
-                    output,
-                    cache: sassCache,
-                    nodeModules: nodeModules
-                });
-            }
-        });
-    });
-}
-
-function compileAll( cwds, options ) {
-    cwds.forEach( cwd => {
-        let files = glob.sync( path.resolve( cwd, 'scss/!(common|styling)*/_index.scss' ) );
-
-        files.forEach( file => {
-            sassCache.clear();
-            nodeModules = path.resolve( cwd, 'node_modules' );
-
-            kendoSassCompile({
-                ...options,
-                file,
-                cache: sassCache,
-                nodeModules: nodeModules
-            });
-        });
-    });
-}
-
 function flattenAll( cwds, options ) {
 
     cwds.forEach( cwd => {
@@ -186,8 +108,7 @@ function distFlat() {
     let output = { path: getArg('--output-path') || paths.sass.dist };
     let themes = glob.sync( getArg('--theme') || paths.sass.themes, {
         ignore: [
-            'packages/fluent',
-            'packages/utils'
+            'packages/fluent'
         ]
     });
 
@@ -209,97 +130,6 @@ function distSwatches() {
     return Promise.resolve();
 }
 gulp.task("dist:swatches", distSwatches);
-// #endregion
-
-
-// #region node-sass
-gulp.task("sass", () => {
-    let file = getArg('--file') || paths.sass.theme;
-    let output = { path: getArg('--output-path') || paths.sass.dist };
-    let themes = glob.sync( getArg('--theme') || paths.sass.themes );
-
-    buildAll( themes, { file, output, sassOptions: nodeSassOptions } );
-
-    return Promise.resolve();
-});
-
-gulp.task("sass:watch", () => {
-    gulp.watch(paths.sass.all, gulp.series("sass"));
-});
-
-gulp.task("sass:swatches", () => {
-    let file = paths.sass.theme;
-    let output = { path: getArg('--output-path') || paths.sass.dist };
-    let themes = glob.sync( getArg('--theme') || paths.sass.themes );
-    let swatches = paths.sass.swatches;
-
-    flattenAll( themes, { file, output } );
-    writeSwatches( themes, { swatches, output } );
-    buildSwatches( themes, { swatches, output, sassOptions: nodeSassOptions } );
-
-    return Promise.resolve();
-});
-
-gulp.task("sass:flat", () => {
-    let file = getArg('--file') || paths.sass.theme;
-    let output = { path: getArg('--output-path') || paths.sass.dist };
-    let themes = glob.sync( getArg('--theme') || paths.sass.themes );
-    let inline = paths.sass.inline;
-
-    flattenAll( themes, { file, output } );
-    buildAll( themes, { file: inline, output, sassOptions: nodeSassOptions } );
-
-    return Promise.resolve();
-});
-
-gulp.task("sass:standalone", () => {
-    let themes = glob.sync( getArg('--theme') || paths.sass.themes );
-    compileAll( themes, { sassOptions: nodeSassOptions } );
-
-    return Promise.resolve();
-});
-// #endregion
-
-
-// #region dart-sass
-gulp.task("dart", () => {
-    let file = getArg('--file') || paths.sass.theme;
-    let output = { path: getArg('--output-path') || paths.sass.dist };
-    let themes = glob.sync( getArg('--theme') || paths.sass.themes );
-
-    buildAll( themes, { file, output, sassOptions: dartSassOptions } );
-
-    return Promise.resolve();
-});
-
-gulp.task("dart:watch", () => {
-    gulp.watch(paths.sass.all, gulp.series("dart"));
-});
-
-gulp.task("dart:swatches", () => {
-    let file = paths.sass.theme;
-    let output = { path: getArg('--output-path') || paths.sass.dist };
-    let themes = glob.sync( getArg('--theme') || paths.sass.themes );
-    let swatches = paths.sass.swatches;
-
-    flattenAll( themes, { file, output } );
-    writeSwatches( themes, { swatches, output } );
-    buildSwatches( themes, { swatches, output, sassOptions: dartSassOptions } );
-
-    return Promise.resolve();
-});
-
-gulp.task("dart:flat", () => {
-    let file = getArg('--file') || paths.sass.theme;
-    let output = { path: getArg('--output-path') || paths.sass.dist };
-    let themes = glob.sync( getArg('--theme') || paths.sass.themes );
-    let inline = paths.sass.inline;
-
-    flattenAll( themes, { file, output } );
-    buildAll( themes, { file: inline, output, sassOptions: dartSassOptions } );
-
-    return Promise.resolve();
-});
 // #endregion
 
 

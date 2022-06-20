@@ -53,15 +53,6 @@ jobs:
       - name: Ensure standalone build
         run: npm run sass:standalone
 
-      - name: Build themes using dart-sass (full)
-        run: npm run dart
-
-      - name: Build themes using dart-sass (flat)
-        run: npm run dart:flat
-
-      - name: Build swatches using dart-sass
-        run: npm run dart:swatches
-
       - name: Build themes using node-sass (full)
         run: npm run sass
 
