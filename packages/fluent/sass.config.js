@@ -6,7 +6,7 @@ module.exports = {
     api: 'modern',
     files: [
         {
-            file: 'scss/index.scss',
+            file: 'scss/all.scss',
             outFile: 'dist/all.css'
         }
     ]

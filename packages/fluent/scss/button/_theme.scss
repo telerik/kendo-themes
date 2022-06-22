@@ -1,0 +1,12 @@
+@mixin kendo-button--theme() {
+
+    .k-button {
+        outline: var( --INTERNAL--kendo-button-outline, none );
+        border-color: var( --INTERNAL--kendo-button-border, initial );
+        color: var( --INTERNAL--kendo-button-text, initial );
+        background-color: var( --INTERNAL--kendo-button-bg, initial );
+        background-image: linear-gradient( var( --INTERNAL--kendo-button-gradient, transparent, transparent ) );
+        box-shadow: var( --INTERNAL--kendo-button-shadow, none );
+    }
+
+}

@@ -1,0 +1,17 @@
+// Basic layout
+.k-hstack,
+%hstack-internal {
+    display: flex;
+    flex-flow: row nowrap;
+}
+.k-vstack,
+%vstack-internal {
+    display: flex;
+    flex-flow: column nowrap;
+}
+.k-flex,
+.k-spacer,
+%flex-internal,
+%spacer-internal {
+    flex: 1 0 0%;
+}
