@@ -661,7 +661,7 @@
             &.k-i-sort-desc-sm,
             &.k-i-sort-asc-sm {
                 vertical-align: text-top;
-                margin-left: $grid-sorted-icon-spacing;
+                margin-inline-start: $grid-sorted-icon-spacing;
             }
         }
 
@@ -671,7 +671,7 @@
             height: $icon-size;
             font-size: $grid-sorting-index-font-size;
             margin-top: $grid-sorting-index-spacing-y;
-            margin-left: $grid-sorting-index-spacing-x;
+            margin-inline-start: $grid-sorting-index-spacing-x;
         }
     }
 
@@ -1072,15 +1072,15 @@
     }
 
     .k-header > .k-cell-inner {
-        margin: (-1 * $grid-header-padding-y) calc(-1 * calc( #{$kendo-button-calc-size} - #{$grid-cell-padding-x})) (-1 * $grid-header-padding-y) (-1 * $grid-cell-padding-x);
+        margin: (-1 * $grid-header-padding-y) (-1 * $grid-cell-padding-x);
     }
 
     .k-filterable {
         > .k-cell-inner {
-            margin: (-1 * $grid-header-padding-y) calc(-1 * #{$kendo-button-calc-size}) (-1 * $grid-header-padding-y) (-1 * $grid-cell-padding-x);
+            margin-inline-end: calc(-1 * #{$grid-filterable-icon-spacing});
 
             .k-link {
-                padding-right: 0;
+                padding-inline-end: 0;
             }
         }
     }
@@ -1119,6 +1119,7 @@
         .k-grid-filter,
         .k-header-column-menu {
             position: static;
+            margin-inline-end: $grid-header-menu-icon-spacing;
         }
 
         .k-grid-filter,
@@ -1428,28 +1429,6 @@
         .k-columnmenu-item > .k-icon {
             margin-left: $icon-spacing;
             margin-right: 0;
-        }
-
-        .k-header > .k-cell-inner {
-            margin-right: (-1 * $grid-cell-padding-x);
-            margin-left: calc(-1 * calc( #{$kendo-button-calc-size} - #{$grid-cell-padding-x}));
-
-            .k-sort-order {
-                margin-right: $grid-sorting-index-spacing-x;
-                margin-left: 0;
-            }
-        }
-
-        .k-filterable {
-            > .k-cell-inner {
-                margin-right: (-1 * $grid-cell-padding-x);
-                margin-left: calc(-1 * #{$kendo-button-calc-size});
-
-                .k-link {
-                    padding-right: $grid-header-padding-x;
-                    padding-left: 0;
-                }
-            }
         }
     }
 }
