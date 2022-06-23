@@ -1,3 +1,5 @@
+@use "_variables.scss" as *;
+
 @mixin kendo-button--theme() {
 
     .k-button {
@@ -7,6 +9,15 @@
         background-color: var( --INTERNAL--kendo-button-bg, initial );
         background-image: linear-gradient( var( --INTERNAL--kendo-button-gradient, transparent, transparent ) );
         box-shadow: var( --INTERNAL--kendo-button-shadow, none );
+    }
+
+    .k-button-solid-primary {
+        --INTERNAL--kendo-button-bg: var(--kendo-button-solid-primary-bg, #{$kendo-button-solid-primary-bg});
+
+        &:hover,
+        &.k-hover {
+            --INTERNAL--kendo-button-bg: var(--kendo-button-solid-primary-hover-bg, #{$kendo-button-solid-primary-hover-bg});
+        }
     }
 
 }

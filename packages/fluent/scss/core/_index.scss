@@ -7,6 +7,9 @@
 // Mixins
 @forward "mixins";
 
+// Color System
+@use "color-system";
+
 // Helpers
 @use "helpers";
 
