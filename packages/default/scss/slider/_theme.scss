@@ -47,20 +47,20 @@
             }
 
             &:focus,
-            &.k-state-focused ,
+            &.k-state-focused,
             &.k-focus {
                 @include box-shadow( $slider-draghandle-focused-shadow );
             }
         }
 
-        &.k-state-focused ,
+        &.k-state-focused,
         &.k-focus {
             .k-draghandle {
                 @include box-shadow( $slider-draghandle-focused-shadow );
             }
         }
 
-        &.k-state-disabled ,
+        &.k-state-disabled,
         &.k-disabled {
             opacity: $slider-disabled-opacity;
         }

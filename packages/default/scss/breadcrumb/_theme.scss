@@ -9,7 +9,7 @@
         );
 
         &:focus,
-        &.k-state-focused ,
+        &.k-state-focused,
         &.k-focus {
             @include box-shadow( $breadcrumb-focused-shadow );
         }
@@ -26,7 +26,7 @@
 
         // Hovered state
         &:hover,
-        &.k-state-hover ,
+        &.k-state-hover,
         &.k-hover {
             @include fill(
                 $breadcrumb-link-hovered-text,
@@ -37,7 +37,7 @@
 
         // Focused state
         &:focus,
-        &.k-state-focused ,
+        &.k-state-focused,
         &.k-focus {
             @include fill(
                 $breadcrumb-link-focused-text,
@@ -59,7 +59,7 @@
 
         // Hovered state
         &:hover,
-        &.k-state-hover ,
+        &.k-state-hover,
         &.k-hover {
             @include fill(
                 $breadcrumb-root-link-hovered-text,
@@ -70,7 +70,7 @@
 
         // Focused state
         &:focus,
-        &.k-state-focused ,
+        &.k-state-focused,
         &.k-focus {
             @include fill(
                 $breadcrumb-root-link-focused-text,

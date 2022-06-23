@@ -257,7 +257,7 @@
         overflow: hidden;
 
         // disabled cells in the Spreadsheet should allow navigation if link is used
-        .k-state-disabled ,
+        .k-state-disabled,
         .k-disabled {
             pointer-events: auto;
         }
@@ -819,7 +819,7 @@
             background-position: 50% 50%;
 
             &:hover div,
-            &.k-state-hovered div ,
+            &.k-state-hovered div,
             &.k-hover div {
                 margin: 0;
                 align-self: center;
@@ -885,7 +885,7 @@
         .k-spreadsheet-insert-image-dialog {
             .k-spreadsheet-has-image {
                 &:hover,
-                &.k-state-hovered ,
+                &.k-state-hovered,
                 &.k-hover {
                     border-radius: $spreadsheet-insert-image-dialog-preview-overlay-border-radius;
                 }

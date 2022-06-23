@@ -82,7 +82,7 @@
                 }
             }
 
-            tr.k-state-selected > td:last-child ,
+            tr.k-state-selected > td:last-child,
             tr.k-selected > td:last-child {
                 background: transparent;
             }
@@ -352,7 +352,7 @@
         border-color: currentColor;
         position: absolute;
     }
-    .k-gantt-line.k-state-selected ,
+    .k-gantt-line.k-state-selected,
     .k-gantt-line.k-selected {
         z-index: 3;
     }
@@ -426,7 +426,7 @@
         transform: translate(-50%, -50%);
     }
     .k-task-dot:hover::before,
-    .k-task-dot.k-state-hover::before ,
+    .k-task-dot.k-state-hover::before,
     .k-task-dot.k-hover::before {
         border-width: 1px;
     }
