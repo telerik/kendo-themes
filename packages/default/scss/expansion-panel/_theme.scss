@@ -7,7 +7,7 @@
             $expander-border
         );
 
-        &.k-state-focus ,
+        &.k-state-focus,
         &.k-focus {
             box-shadow: $expander-focus-shadow;
         }
@@ -22,13 +22,13 @@
         outline: none;
 
         &:hover,
-        &.k-state-hover ,
+        &.k-state-hover,
         &.k-hover {
             background-color: $expander-header-hover-bg;
         }
 
         // Should be removed
-        &.k-state-focused ,
+        &.k-state-focused,
         &.k-focus {
             background-color: $expander-header-focused-bg;
             box-shadow: $expander-header-focused-shadow;

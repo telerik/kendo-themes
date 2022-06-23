@@ -43,7 +43,7 @@
 
         // Hover state
         &:hover,
-        &.k-state-hover ,
+        &.k-state-hover,
         &.k-hover {
             @include fill(
                 $actionsheet-item-hover-text,
@@ -57,7 +57,7 @@
 
         // Focus state
         &:focus,
-        &.k-state-focus ,
+        &.k-state-focus,
         &.k-focus {
             @include fill(
                 $actionsheet-item-focus-text,
@@ -71,7 +71,7 @@
 
         // Disabed state
         &:disabled,
-        &.k-state-disabled ,
+        &.k-state-disabled,
         &.k-disabled {
             @include fill(
                 $actionsheet-item-disabled-text,

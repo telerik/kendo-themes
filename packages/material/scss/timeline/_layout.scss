@@ -10,12 +10,12 @@
     }
 
     .k-timeline-track-item:hover .k-timeline-circle::before,
-    .k-timeline-track-item.k-state-hover .k-timeline-circle::before ,
+    .k-timeline-track-item.k-state-hover .k-timeline-circle::before,
     .k-timeline-track-item.k-hover .k-timeline-circle::before {
         opacity: $kendo-flat-button-hover-opacity;
     }
 
-    .k-timeline-track-item.k-state-focus .k-timeline-circle::before ,
+    .k-timeline-track-item.k-state-focus .k-timeline-circle::before,
     .k-timeline-track-item.k-focus .k-timeline-circle::before {
         opacity: $kendo-flat-button-focus-opacity;
     }

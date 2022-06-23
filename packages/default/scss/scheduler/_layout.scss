@@ -441,7 +441,7 @@
             }
 
             &:hover,
-            &.k-state-hover ,
+            &.k-state-hover,
             &.k-hover {
                 .k-event-delete {
                     opacity: 1;
@@ -507,7 +507,7 @@
 
         // Hover
         &:hover,
-        &.k-state-hover ,
+        &.k-state-hover,
         &.k-hover {
             .k-event-actions .k-event-delete,
             .k-resize-handle {
@@ -769,7 +769,7 @@
         .k-hover .k-task > .k-event-delete,
         .k-scheduler-content tr:hover .k-event-delete,
         .k-scheduler-content .k-scheduler-row:hover .k-event-delete,
-        .k-scheduler-content .k-scheduler-row.k-state-hover .k-event-delete ,
+        .k-scheduler-content .k-scheduler-row.k-state-hover .k-event-delete,
         .k-scheduler-content .k-scheduler-row.k-hover .k-event-delete {
             visibility: visible;
         }
@@ -843,7 +843,7 @@
                 position: relative;
             }
 
-            td.k-state-selected ,
+            td.k-state-selected,
             td.k-selected {
                 background-color: inherit;
             }

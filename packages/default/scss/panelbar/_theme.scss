@@ -38,7 +38,7 @@
 
             // Hover
             > .k-link:hover,
-            > .k-link.k-state-hover ,
+            > .k-link.k-state-hover,
             > .k-link.k-hover {
                 @include fill(
                     $panelbar-header-hovered-text,
@@ -52,7 +52,7 @@
             > .k-link:focus,
             > .k-link.k-state-focus,
             > .k-link.k-focus,
-            > .k-link.k-state-focused ,
+            > .k-link.k-state-focused,
             > .k-link.k-focus {
                 @include fill(
                     $panelbar-header-focused-text,
@@ -65,7 +65,7 @@
 
             // Focus & Hover
             > .k-link:focus:hover,
-            > .k-link.k-state-focus.k-state-hover ,
+            > .k-link.k-state-focus.k-state-hover,
             > .k-link.k-focus.k-hover {
                 @include fill(
                     $panelbar-header-hovered-focused-text,
@@ -76,7 +76,7 @@
             }
 
             // Selected
-            > .k-link.k-state-selected ,
+            > .k-link.k-state-selected,
             > .k-link.k-selected {
                 @include fill(
                     $panelbar-header-selected-text,
@@ -94,7 +94,7 @@
             // Selected Hover
             > .k-link.k-state-selected:hover,
             > .k-link.k-selected:hover,
-            > .k-link.k-state-selected.k-state-hover ,
+            > .k-link.k-state-selected.k-state-hover,
             > .k-link.k-selected.k-hover {
                 @include fill(
                     $panelbar-header-selected-hovered-text,
@@ -109,7 +109,7 @@
             > .k-link.k-selected:focus,
             > .k-link.k-state-selected.k-state-focus,
             > .k-link.k-selected.k-focus,
-            > .k-link.k-state-selected.k-state-focused ,
+            > .k-link.k-state-selected.k-state-focused,
             > .k-link.k-selected.k-focused {
                 @include fill(
                     $panelbar-header-selected-focused-text,
@@ -124,7 +124,7 @@
             > .k-link.k-selected:hover:focus,
             > .k-link.k-state-selected.k-state-hover.k-state-focus,
             > .k-link.k-selected.k-hover.k-state-focus,
-            > .k-link.k-state-selected.k-state-hover.k-state-focused ,
+            > .k-link.k-state-selected.k-state-hover.k-state-focused,
             > .k-link.k-selected.k-hover.k-state-focused {
                 @include fill(
                     $panelbar-header-selected-hovered-focused-text,
@@ -145,7 +145,7 @@
             > .k-item > .k-link.k-state-hover,
             > .k-item > .k-link.k-hover,
             > .k-panelbar-item > .k-link:hover,
-            > .k-panelbar-item > .k-link.k-state-hover ,
+            > .k-panelbar-item > .k-link.k-state-hover,
             > .k-panelbar-item > .k-link.k-hover {
                 @include fill(
                     $panelbar-item-hovered-text,
@@ -164,7 +164,7 @@
             > .k-panelbar-item > .k-link:focus,
             > .k-panelbar-item > .k-link.k-state-focus,
             > .k-panelbar-item > .k-link.k-focus,
-            > .k-panelbar-item > .k-link.k-state-focused ,
+            > .k-panelbar-item > .k-link.k-state-focused,
             > .k-panelbar-item > .k-link.k-focus {
                 @include fill(
                     $panelbar-item-focused-text,
@@ -180,7 +180,7 @@
             > .k-item > .k-link.k-state-focus.k-state-hover,
             > .k-item > .k-link.k-focus.k-hover,
             > .k-panelbar-item > .k-link:focus:hover,
-            > .k-panelbar-item > .k-link.k-state-focus.k-state-hover ,
+            > .k-panelbar-item > .k-link.k-state-focus.k-state-hover,
             > .k-panelbar-item > .k-link.k-focus.k-hover {
                 @include fill(
                     $panelbar-item-hovered-focused-text,
@@ -193,7 +193,7 @@
             // Selected
             > .k-item > .k-link.k-state-selected,
             > .k-item > .k-link.k-selected,
-            > .k-panelbar-item > .k-link.k-state-selected ,
+            > .k-panelbar-item > .k-link.k-state-selected,
             > .k-panelbar-item > .k-link.k-selected {
                 @include fill(
                     $panelbar-item-selected-text,
@@ -210,7 +210,7 @@
             > .k-item > .k-link.k-selected.k-hover,
             > .k-panelbar-item > .k-link.k-state-selected:hover,
             > .k-panelbar-item > .k-link.k-selected:hover,
-            > .k-panelbar-item > .k-link.k-state-selected.k-state-hover ,
+            > .k-panelbar-item > .k-link.k-state-selected.k-state-hover,
             > .k-panelbar-item > .k-link.k-selected.k-hover {
                 @include fill(
                     $panelbar-item-selected-hovered-text,
@@ -231,7 +231,7 @@
             > .k-panelbar-item > .k-link.k-selected:focus,
             > .k-panelbar-item > .k-link.k-state-selected.k-state-focus,
             > .k-panelbar-item > .k-link.k-selected.k-focus,
-            > .k-item > .k-link.k-state-selected.k-state-focused ,
+            > .k-item > .k-link.k-state-selected.k-state-focused,
             > .k-item > .k-link.k-selected.k-focused {
                 @include fill(
                     $panelbar-item-selected-focused-text,
@@ -252,7 +252,7 @@
             > .k-panelbar-item > .k-link.k-selected:focus:hover,
             > .k-panelbar-item > .k-link.k-state-selected.k-state-focus.k-state-hover,
             > .k-panelbar-item > .k-link.k-selected.k-focus.k-state-hover,
-            > .k-item > .k-link.k-state-selected.k-state-focused.k-state-hover ,
+            > .k-item > .k-link.k-state-selected.k-state-focused.k-state-hover,
             > .k-item > .k-link.k-selected.k-focused.k-state-hover {
                 @include fill(
                     $panelbar-item-selected-hovered-focused-text,

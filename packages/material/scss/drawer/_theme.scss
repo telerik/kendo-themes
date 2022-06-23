@@ -2,11 +2,11 @@
 
 @include exports( "drawer/theme/material" ) {
     .k-drawer-item {
-        &.k-state-selected ,
+        &.k-state-selected,
         &.k-selected {
 
             &:focus,
-            &.k-state-focused ,
+            &.k-state-focused,
             &.k-focus {
                 background-color: $drawer-focused-bg;
                 box-shadow: $drawer-focused-shadow;
