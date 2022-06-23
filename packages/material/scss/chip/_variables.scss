@@ -5,7 +5,7 @@
 $kendo-chip-border-width: 1px !default;
 /// The spacing between the text and the icons of the chip.
 /// @group chip
-$kendo-chip-spacing: map-get( $spacing, 1 );
+$kendo-chip-spacing: map-get( $spacing, 1 ) !default;
 
 /// Horizontal padding of the chip.
 /// @group chip
