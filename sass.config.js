@@ -30,7 +30,7 @@ module.exports = {
         },
         {
             cwd: 'packages/fluent',
-            file: 'scss/index.scss',
+            file: 'scss/all.scss',
             outFile: 'dist/all.css',
             implementation: 'sass-embedded',
             api: 'modern'

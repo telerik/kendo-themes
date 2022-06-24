@@ -6,6 +6,7 @@ files:
     ignore:
         - 'packages/*/scss/core/mixins/**/*.scss'
         - 'packages/*/scss/core/functions/**/*.scss'
+        - 'packages/fluent/**/*.scss'
 
 rules:
     no-ids: 2

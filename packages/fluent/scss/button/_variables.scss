@@ -1,0 +1,25 @@
+@use "../core/color-system" as *;
+
+$kendo-button-sizes: (
+    sm: (
+        padding-x: 4px,
+        padding-y: 4px,
+        font-size: 1rem,
+        line-height: normal
+    ),
+    md: (
+        padding-x: 4px,
+        padding-y: 4px,
+        font-size: 1rem,
+        line-height: normal
+    ),
+    lg: (
+        padding-x: 4px,
+        padding-y: 4px,
+        font-size: 1rem,
+        line-height: normal
+    )
+);
+
+$kendo-button-solid-primary-bg: get-theme-color-var( primary-90) !default;
+$kendo-button-solid-primary-hover-bg: get-theme-color-var( primary-150) !default;

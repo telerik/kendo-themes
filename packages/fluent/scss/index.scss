@@ -2,5 +2,16 @@
 @use "~@progress/kendo-font-icons/scss/index.scss" with ( $ki-embed-font: true );
 @use "~@progress/kendo-theme-utils/scss/all.scss";
 
+// Core
+@use "core";
 
+// Components
 @use "button";
+
+// Setup
+@mixin config($config: null ) {
+    @include core.configure($config: $config);
+}
+@mixin styles() {
+    @include button.styles();
+}

@@ -1,0 +1,29 @@
+// Functions
+@forward "functions";
+
+// Variables
+@forward "variables";
+
+// Mixins
+@forward "mixins";
+
+// Color System
+@use "color-system";
+
+// Helpers
+@use "helpers";
+
+// Module System
+@use "module-system/" as module;
+
+$config: null !default;
+
+@mixin configure($config: null) {
+    @if $config {
+        $_components: map-get( $config, "components" );
+
+        @if ($_components) {
+            module.$components: $_components;
+        }
+    }
+}
