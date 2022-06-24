@@ -408,10 +408,13 @@
         .k-calendar-view {
             width: auto;
             white-space: nowrap;
-            outline: 0;
 
             &::after {
                 display: none;
+            }
+
+            &:focus {
+                outline: 0;
             }
         }
 
