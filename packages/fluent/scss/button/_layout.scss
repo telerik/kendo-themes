@@ -1,0 +1,30 @@
+@use "_variables.scss" as *;
+
+@mixin kendo-button--layout() {
+
+    .k-button {
+        display: inline-flex;
+        padding-inline: var( --INTERNAL--kendo-button-padding-x, 0);
+        padding-block: var( --INTERNAL--kendo-button-padding-y, 0);
+        border-width: var( --INTERNAL--kendo-button-border-width, 1px );
+        font-size: var( --INTERNAL--kendo-button-font-size, 1rem );
+        line-height: var( --INTERNAL--kendo-button-line-height, normal );
+    }
+
+
+    // Sizing
+    @each $size, $size-props in $kendo-button-sizes {
+        $_padding-x: map-get( $size-props, padding-x );
+        $_padding-y: map-get( $size-props, padding-y );
+        $_font-size: map-get( $size-props, font-size );
+        $_line-height: map-get( $size-props, line-height );
+
+        .k-button-#{$size} {
+            --INTERNAL--kendo-button-padding-x: var( --kendo-button-#{$size}-padding-x, #{$_padding-x} );
+            --INTERNAL--kendo-button-padding-y: var( --kendo-button-#{$size}-padding-y, #{$_padding-y} );
+            --INTERNAL--kendo-button-font-size: var( --kendo-button-#{$size}-font-size, #{$_font-size} );
+            --INTERNAL--kendo-button-line-height: var( --kendo-button-#{$size}-line-height, #{$_line-height} );
+        }
+    }
+
+}

@@ -1,0 +1,17 @@
+@use "utils" as *;
+@use "palettes" as *;
+
+// Constants
+$white: #ffffff;
+$black: #000000;
+
+// Root styles
+$kendo-body-bg: $white !default;
+$kendo-body-text: get-theme-color( neutral, 160 ) !default;
+
+:root {
+    @include palette-vars( $kendo-fluent-palettes );
+
+    --kendo-body-bg: #{$kendo-body-bg};
+    --kendo-body-text: #{$kendo-body-text};
+}
