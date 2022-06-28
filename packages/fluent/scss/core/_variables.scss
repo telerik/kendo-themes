@@ -17,6 +17,15 @@ $use-picker-select-width: true !default;
 $kendo-font-size: 14px !default;
 $kendo-font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !default;
 $kendo-line-height: ( 20 / 14 ) !default;
+$kendo-font-weight: 400 !default;
+$kendo-letter-spacing: null !default;
 
 $default-scrollbar-width: 17px !default;
 
+:root {
+    --kendo-font-size: #{$kendo-font-size};
+    --kendo-font-family: #{$kendo-font-family};
+    --kendo-line-height: #{$kendo-line-height};
+    --kendo-font-weight: #{$kendo-font-weight};
+    --kendo-letter-spacing: #{$kendo-letter-spacing};
+}

@@ -13,6 +13,10 @@
 // Helpers
 @use "helpers";
 
+// Common styles
+@use "layout";
+@use "theme";
+
 // Module System
 @use "module-system/" as module;
 
