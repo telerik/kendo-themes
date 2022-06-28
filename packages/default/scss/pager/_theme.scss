@@ -10,7 +10,7 @@
         &:focus,
         &.k-focus,
         &.k-state-focus,
-        &.k-state-focused ,
+        &.k-state-focused,
         &.k-focus {
             @include fill( $bg: $pager-focus-bg );
             @include box-shadow( $pager-focus-shadow );
@@ -26,7 +26,7 @@
         );
 
         &:hover,
-        &.k-state-hover ,
+        &.k-state-hover,
         &.k-hover {
             @include fill(
                 $pager-item-hover-text,
@@ -35,7 +35,7 @@
             );
         }
 
-        &.k-state-selected ,
+        &.k-state-selected,
         &.k-selected {
             @include fill(
                 $pager-item-selected-text,
@@ -45,7 +45,7 @@
         }
 
         &:focus,
-        &.k-state-focus ,
+        &.k-state-focus,
         &.k-focus {
             background-color: $pager-item-focus-bg;
             @include box-shadow( $pager-item-focus-shadow );
@@ -69,7 +69,7 @@
             );
 
             &:hover,
-            &.k-state-hover ,
+            &.k-state-hover,
             &.k-hover {
                 @include fill(
                     $pager-number-hover-text,
@@ -79,13 +79,13 @@
             }
 
             &:focus,
-            &.k-state-focus ,
+            &.k-state-focus,
             &.k-focus {
                 background-color: $pager-number-focus-bg;
                 @include box-shadow( $pager-number-focus-shadow );
             }
 
-            &.k-state-selected ,
+            &.k-state-selected,
             &.k-selected {
                 @include fill(
                     $pager-number-selected-text,
@@ -118,7 +118,7 @@
                 );
 
                 &:hover,
-                &.k-state-hover ,
+                &.k-state-hover,
                 &.k-hover {
                     @include fill(
                         $dropdownlist-hovered-text,
@@ -139,7 +139,7 @@
                 .k-link {
 
                     &:hover,
-                    &.k-state-hover ,
+                    &.k-state-hover,
                     &.k-hover {
                         @include fill(
                             $kendo-list-item-hover-text,
@@ -147,7 +147,7 @@
                         );
                     }
 
-                    &.k-state-selected ,
+                    &.k-state-selected,
                     &.k-selected {
                         @include fill(
                             $kendo-list-item-selected-text,

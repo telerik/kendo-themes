@@ -75,7 +75,7 @@
     // Selected state
     .k-pivotgrid-cell.k-state-selected,
     .k-pivotgrid-cell.k-selected,
-    .k-pivotgrid-row.k-state-selected > .k-pivotgrid-cell ,
+    .k-pivotgrid-row.k-state-selected > .k-pivotgrid-cell,
     .k-pivotgrid-row.k-selected > .k-pivotgrid-cell {
         @include fill (
             $pivotgrid-selected-text,

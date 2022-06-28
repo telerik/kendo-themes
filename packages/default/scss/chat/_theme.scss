@@ -38,7 +38,7 @@
         .k-bubble:hover {
             @include box-shadow( $chat-bubble-hover-shadow );
         }
-        .k-state-selected .k-bubble ,
+        .k-state-selected .k-bubble,
         .k-selected .k-bubble {
             @include box-shadow( $chat-bubble-selected-shadow );
         }
@@ -54,7 +54,7 @@
         .k-alt .k-bubble:hover {
             @include box-shadow( $chat-alt-bubble-hover-shadow );
         }
-        .k-alt .k-state-selected .k-bubble ,
+        .k-alt .k-state-selected .k-bubble,
         .k-alt .k-selected .k-bubble {
             @include box-shadow( $chat-alt-bubble-selected-shadow );
         }
