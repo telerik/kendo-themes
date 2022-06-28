@@ -9,9 +9,39 @@ $black: #000000;
 $kendo-body-bg: $white !default;
 $kendo-body-text: get-theme-color( neutral, 160 ) !default;
 
+// Component styles
+$kendo-component-bg: $kendo-body-bg !default;
+$kendo-component-text: $kendo-body-text !default;
+$kendo-component-border: get-theme-color( neutral, 30 ) !default;
+
+// Shadows
+
+/// Shadow for cards and grid item thumbnails.
+/// Equivalent to fluent depth 4.
+$kendo-box-shadow-depth-1: 0px 0.3px 0.9px rgba( $black, 0.1 ), 0px 1.6px 3.6px rgba( $black, 0.13 ) !default;
+/// Shadow for command bars and dropdowns.
+/// Equivalent to fluent depth 8.
+$kendo-box-shadow-depth-2: 0px 0.6px 1.8px rgba( $black, 0.1 ), 0px 3.2px 7.2px rgba( $black, 0.13 ) !default;
+/// Shadow for teaching callouts and hover cards / tooltips.
+/// Equivalent to fluent depth 16.
+$kendo-box-shadow-depth-3: 0px 1.2px 3.6px rgba( $black, 0.1 ), 0px 6.4px 14.4px rgba( $black, 0.13 ) !default;
+/// Shadow for panels and pop up dialogs.
+/// Equivalent to fluent depth 64.
+$kendo-box-shadow-depth-4: 0px 4.8px 14.4px rgba( $black, 0.18 ), 0px 25.6px 57.6px rgba( $black, 0.22 ) !default;
+
+
 :root {
     @include palette-vars( $kendo-fluent-palettes );
 
     --kendo-body-bg: #{$kendo-body-bg};
     --kendo-body-text: #{$kendo-body-text};
+
+    --kendo-component-bg: #{$kendo-component-bg};
+    --kendo-component-text: #{$kendo-component-text};
+    --kendo-component-border: #{$kendo-component-border};
+
+    --kendo-box-shadow-depth-1: #{$kendo-box-shadow-depth-1};
+    --kendo-box-shadow-depth-2: #{$kendo-box-shadow-depth-2};
+    --kendo-box-shadow-depth-3: #{$kendo-box-shadow-depth-3};
+    --kendo-box-shadow-depth-4: #{$kendo-box-shadow-depth-4};
 }

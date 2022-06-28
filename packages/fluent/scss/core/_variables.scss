@@ -1,2 +1,22 @@
 // Options
 $enable-shadows: true !default;
+$enable-rounded: true !default;
+$enable-gradients: true !default;
+$enable-transitions: true !default;
+$enable-flex-classes: true !default;
+$enable-grid-classes: true !default;
+
+$use-calc-badge-size: true !default;
+$use-input-button-width: true !default;
+$use-input-spinner-width: true !default;
+$use-input-spinner-icon-offset: false !default;
+$use-picker-select-width: true !default;
+
+
+// Generic styles
+$kendo-font-size: 14px !default;
+$kendo-font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !default;
+$kendo-line-height: ( 20 / 14 ) !default;
+
+$default-scrollbar-width: 17px !default;
+
