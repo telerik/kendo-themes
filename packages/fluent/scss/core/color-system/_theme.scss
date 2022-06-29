@@ -4,7 +4,6 @@
 // Constants
 $white: #ffffff;
 $black: #000000;
-
 $rgba-transparent: rgba( 0, 0, 0, 0 );
 $gradient-transparent-to-black: rgba( black, 0), black;
 $gradient-transparent-to-white: rgba( white, 0), white;
@@ -33,6 +32,8 @@ $kendo-selected-border: get-theme-color-var( neutral-130 ) !default;
 $kendo-selected-hover-bg: get-theme-color-var( neutral-40 ) !default;
 $kendo-selected-hover-text: get-theme-color-var( neutral-190 ) !default;
 $kendo-selected-hover-border: get-theme-color-var( neutral-130 ) !default;
+
+$kendo-focus-outline: get-theme-color-var( neutral-130 ) !default;
 
 $kendo-subtle-text: get-theme-color-var( neutral-130 ) !default;
 
@@ -66,7 +67,6 @@ $kendo-invalid-shadow: none !default;
 $kendo-disabled-bg: get-theme-color-var( neutral-20 ) !default;
 $kendo-disabled-text: get-theme-color-var( neutral-90 ) !default;
 $kendo-disabled-border: transparent !default;
-
 
 // Theme colors
 $kendo-theme-colors: (
@@ -140,6 +140,8 @@ $kendo-theme-colors: (
     --kendo-selected-hover-bg: #{$kendo-selected-hover-bg};
     --kendo-selected-hover-text: #{$kendo-selected-hover-text};
     --kendo-selected-hover-border: #{$kendo-selected-hover-border};
+
+    --kendo-focus-outline: #{$kendo-focus-outline};
 
     --kendo-subtle-text: #{$kendo-subtle-text};
 
