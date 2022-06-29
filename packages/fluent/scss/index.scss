@@ -90,7 +90,7 @@
 @use "action-buttons";
 @use "appbar";
 // @use "fab";
-// @use "menu";
+@use "menu";
 @use "toolbar";
 
 
@@ -252,7 +252,7 @@
     @include action-buttons.styles();
     @include appbar.styles();
     // @include fab.styles();
-    // @include menu.styles();
+    @include menu.styles();
     @include toolbar.styles();
 
 

@@ -9,4 +9,4 @@ $kendo-icon-size-lg: calc( var(--kendo-icon-size, #{$kendo-icon-size}) * 2 ) !de
 
 /// Spacing around the icons.
 /// @group icon
-$kendo-icon-spacing: map-get( $kendo-spacing, 1 ) !default;
+$kendo-icon-spacing: map-get( $kendo-spacing, 2 ) !default;
