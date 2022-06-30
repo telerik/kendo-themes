@@ -1,3 +1,5 @@
+@use "../_variables.scss" as *;
+
 @mixin fill( $color: null, $bg: null, $border: null, $gradient: null ) {
     @if $border {
         border-color: $border;
@@ -10,5 +12,16 @@
     }
     @if $gradient {
         @include linear-gradient( $gradient );
+    }
+}
+
+@mixin linear-gradient( $gradient: null ) {
+    @if $gradient and $enable-gradients {
+        @if $gradient == none {
+            background-image: none;
+        }
+        @else {
+            background-image: linear-gradient( $gradient );
+        }
     }
 }
