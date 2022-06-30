@@ -1,3 +1,5 @@
+@use "../_variables.scss" as *;
+
 @mixin box-shadow( $shadow... ) {
     @if $enable-shadows and nth($shadow, 1) {
         box-shadow: $shadow;
