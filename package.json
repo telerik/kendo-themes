@@ -6,7 +6,7 @@
     "@commitlint/core": "^17.0.0",
     "@progress/kendo-e2e": "^0.10.1",
     "@progress/kendo-font-icons": "0.1.2",
-    "@progress/kendo-theme-tasks": "^1.15.2",
+    "@progress/kendo-theme-tasks": "^1.15.3",
     "@typescript-eslint/eslint-plugin": "^5.27.0",
     "@typescript-eslint/parser": "^5.27.0",
     "autoprefixer": "^10.4.7",
