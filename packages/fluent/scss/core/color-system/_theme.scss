@@ -5,6 +5,8 @@
 $white: #ffffff;
 $black: #000000;
 
+$rgba-transparent: rgba( 0, 0, 0, 0 );
+
 // Root styles
 $kendo-body-bg: $white !default;
 $kendo-body-text: get-theme-color( neutral, 160 ) !default;
