@@ -21,9 +21,9 @@
 
         // Hover, Focused state
         table {
-            tr:not(.k-detail-row):hover,
-            tr:not(.k-detail-row).k-state-hover,
-            tr:not(.k-detail-row).k-hover,
+            >tr:not(.k-detail-row):hover,
+            >tr:not(.k-detail-row).k-state-hover,
+            >tr:not(.k-detail-row).k-hover,
             td.k-state-focused,
             td.k-focus,
             th.k-state-focused,
