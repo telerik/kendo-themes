@@ -7,6 +7,7 @@
 // Components
 @use "typography";
 @use "icon";
+@use "overlay";
 @use "button";
 @use "calendar";
 
@@ -17,6 +18,7 @@
 @mixin styles() {
     @include typography.styles();
     @include icon.styles();
+    @include overlay.styles();
     @include button.styles();
     @include calendar.styles();
 }
