@@ -1,0 +1,104 @@
+@use "../core/color-system" as *;
+@use "../core/_variables.scss" as *;
+
+/// Width of the border around the window.
+/// @group window
+$kendo-window-border-width: 0 !default;
+/// Border radius of the window.
+/// @group window
+$kendo-window-border-radius: var(--kendo-border-radius-md, 0) !default;
+/// Font family of the window.
+/// @group window
+$kendo-window-font-family: var(--kendo-font-family, inherit ) !default;
+/// Font size of the window.
+/// @group window
+$kendo-window-font-size: var(--kendo-font-size, inherit ) !default;
+/// Line height of the window.
+/// @group window
+$kendo-window-line-height: var(--kendo-line-height, normal ) !default;
+
+/// Horizontal padding of the window titlebar.
+/// @group window
+$kendo-window-titlebar-padding-x: map-get( $kendo-spacing, 6 ) !default;
+/// Vertical padding of the window titlebar.
+/// @group window
+$kendo-window-titlebar-padding-y: map-get( $kendo-spacing, 5 ) !default;
+/// Width of the top border of the window titlebar.
+/// @group window
+$kendo-window-titlebar-border-width: map-get( $kendo-spacing, 1 ) !default;
+/// Style of the top border of the window titlebar.
+/// @group window
+$kendo-window-titlebar-border-style: solid !default;
+
+/// Font size of the title of the window.
+/// @group window
+$kendo-window-title-font-size: var(--kendo-font-size-xl, inherit) !default;
+/// Line height of the title of the window.
+/// @group window
+$kendo-window-title-line-height: var(--kendo-line-height, normal) !default;
+/// Font weight of the title of the window.
+/// @group window
+$kendo-window-title-font-weight: var(--kendo-font-weight-bold, bold) !default;
+
+/// Spacing between the buttons in the header of the window.
+/// @group window
+$kendo-window-actions-gap: 0px !default;
+
+/// Opacity of the buttons in the header of the window.
+/// @group window
+$kendo-window-action-opacity: 1 !default;
+/// Opacity of the buttons when hovered in the header of the window.
+/// @group window
+$kendo-window-action-hover-opacity: 1 !default;
+
+/// Horizontal padding of the content of the window.
+/// @group window
+$kendo-window-inner-padding-x: map-get( $kendo-spacing, 6 ) !default;
+/// Vertical padding of the content of the window.
+/// @group window
+$kendo-window-inner-padding-y: map-get( $kendo-spacing, 6 ) !default;
+
+/// Horizontal padding of the window action buttons.
+/// @group window
+$kendo-window-buttongroup-padding-x: map-get( $kendo-spacing, 6 ) !default; // $actions-padding-x
+/// Vertical padding of the window action buttons.
+/// @group window
+$kendo-window-buttongroup-padding-y: map-get( $kendo-spacing, 6 ) !default; // $actions-padding-y
+/// Width of the top border of the window action buttons.
+/// @group window
+$kendo-window-buttongroup-border-width: 0 !default;
+
+/// Background color of the window.
+/// @group window
+$kendo-window-bg: var(--kendo-component-bg, initial) !default;
+/// Text color of the window.
+/// @group window
+$kendo-window-text: var(--kendo-component-text, initial) !default;
+/// Border color of the window.
+/// @group window
+$kendo-window-border: var(--kendo-component-border, initial) !default;
+
+/// Background color of the window titlebar.
+/// @group window
+$kendo-window-titlebar-bg: var(--kendo-component-bg, initial) !default; // $header-bg
+/// Text color of the window titlebar.
+/// @group window
+$kendo-window-titlebar-text: get-theme-color-var(primary-130)  !default; // $header-text
+/// Border color of the window titlebar.
+/// @group window
+$kendo-window-titlebar-border: get-theme-color-var(primary-130)  !default;
+
+/// Box shadow around the window.
+/// @group window
+$kendo-window-shadow: var( --kendo-box-shadow-depth-4, #{$kendo-box-shadow-depth-4} ) !default;
+/// Box shadow around the window when hovered.
+/// @group window
+$kendo-window-focused-shadow: var( --kendo-box-shadow-depth-4, #{$kendo-box-shadow-depth-4} ) !default;
+
+/// Map of the width of the different window sizes.
+/// @group window
+$kendo-window-sizes: (
+    sm: 300px,
+    md: 800px,
+    lg: 1200px
+) !default;

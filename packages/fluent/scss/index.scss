@@ -11,6 +11,7 @@
 @use "button";
 @use "calendar";
 @use "popup";
+@use "window";
 
 // Setup
 @mixin config($config: null ) {
@@ -23,4 +24,5 @@
     @include button.styles();
     @include calendar.styles();
     @include popup.styles();
+    @include window.styles();
 }

@@ -1,0 +1,30 @@
+@use "../core/mixins" as *;
+@use "_variables.scss" as *;
+
+@mixin kendo-window--theme() {
+
+    // Window
+    .k-window {
+        @include fill(
+            var( --kendo-window-text, #{$kendo-window-text} ),
+            var( --kendo-window-bg, #{$kendo-window-bg} ),
+            var( --kendo-window-border, #{$kendo-window-border} )
+        );
+        @include box-shadow( var( --kendo-window-shadow, #{$kendo-window-shadow} ) );
+
+        &:focus,
+        &.k-focus {
+            @include box-shadow( var( --kendo-window-focused-shadow, #{$kendo-window-focused-shadow} ) );
+        }
+    }
+
+
+    // Titlebar
+    .k-window-titlebar {
+        @include fill(
+            var( --kendo-window-titlebar-text, #{$kendo-window-titlebar-text} ),
+            var( --kendo-window-titlebar-bg, #{$kendo-window-titlebar-bg} ),
+            var( --kendo-window-titlebar-border, #{$kendo-window-titlebar-border} )
+        );
+    }
+}
