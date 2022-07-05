@@ -49,7 +49,8 @@ $kendo-spacing: (
     hair: .0625rem
 ) !default;
 
-// Generic styles
+
+/// Base font size across all components.
 $kendo-font-size: 14px !default;
 $kendo-font-size-xs: 10px !default;
 $kendo-font-size-sm: 12px !default;
@@ -57,7 +58,12 @@ $kendo-font-size-md: $kendo-font-size !default;
 $kendo-font-size-lg: 16px !default;
 $kendo-font-size-xl: 20px !default;
 
+
+/// Font family across all components.
 $kendo-font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !default;
+
+
+/// Line height used along with $font-size.
 $kendo-line-height: calc( 20 / 14 ) !default;
 $kendo-line-height-xs: 1 !default;
 $kendo-line-height-sm: 1.25 !default;
@@ -65,6 +71,8 @@ $kendo-line-height-md: $kendo-line-height !default;
 $kendo-line-height-lg: 1.5 !default;
 $kendo-line-height-em: calc( #{$kendo-line-height} * 1em) !default;
 
+
+/// Font weight.
 $kendo-font-weight: 400 !default;
 $kendo-font-weight-light: 300 !default;
 $kendo-font-weight-bold: 600 !default;
