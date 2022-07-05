@@ -1,0 +1,42 @@
+@use "../core/color-system" as *;
+@use "../core/_variables.scss" as *;
+
+/// Horizontal padding of the popup.
+/// @group popup
+$kendo-popup-padding-x: 0 !default;
+/// Vertical padding of the popup.
+/// @group popup
+$kendo-popup-padding-y: 0 !default;
+/// Width of the border around the popup.
+/// @group popup
+$kendo-popup-border-width: 0 !default;
+/// Border radius of the popup.
+/// @group popup
+$kendo-popup-border-radius: var( --kendo-border-radius-md, 0 ) !default;
+
+/// Font size of the popup.
+/// @group popup
+$kendo-popup-font-size: var(--kendo-font-size, inherit) !default;
+/// Line height of the popup.
+/// @group popup
+$kendo-popup-line-height: var(--kendo-line-height, normal) !default;
+
+/// Horizontal padding of the content inside the popup.
+/// @group popup
+$kendo-popup-content-padding-x: map-get( $kendo-spacing, 2 ) !default;
+/// Vertical padding of the content inside the popup.
+/// @group popup
+$kendo-popup-content-padding-y: map-get( $kendo-spacing, 2 ) !default;
+
+/// Background color of the popup.
+/// @group popup
+$kendo-popup-bg: var( --kendo-component-bg, initial ) !default;
+/// Text color of the popup.
+/// @group popup
+$kendo-popup-text: var( --kendo-component-text, initial ) !default;
+/// Border color of the popup.
+/// @group popup
+$kendo-popup-border: var( --kendo-component-border, initial ) !default;
+/// Box shadow around the popup.
+/// @group popup
+$kendo-popup-shadow: var( --kendo-box-shadow-depth-4, initial ) !default;
