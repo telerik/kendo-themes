@@ -10,6 +10,7 @@
 @use "overlay";
 @use "button";
 @use "calendar";
+@use "popup";
 
 // Setup
 @mixin config($config: null ) {
@@ -21,4 +22,5 @@
     @include overlay.styles();
     @include button.styles();
     @include calendar.styles();
+    @include popup.styles();
 }
