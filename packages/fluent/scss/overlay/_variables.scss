@@ -1,0 +1,12 @@
+@use "../core/color-system" as *;
+
+/// Opacity of the overlay.
+/// @group overlay
+$kendo-overlay-opacity: .4 !default;
+
+/// Background color of the dark overlay.
+/// @group overlay
+$kendo-overlay-dark: $black !default;
+/// Background color of the light overlay.
+/// @group overlay
+$kendo-overlay-light: $white !default;

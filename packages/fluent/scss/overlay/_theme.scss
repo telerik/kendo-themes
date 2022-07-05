@@ -1,0 +1,9 @@
+@use "_variables.scss" as *;
+
+@mixin kendo-overlay--theme() {
+
+    .k-overlay {
+        background-color: var( --kendo-overlay-dark, #{$kendo-overlay-dark} );
+    }
+
+}

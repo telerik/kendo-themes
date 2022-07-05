@@ -1,0 +1,15 @@
+@use "_variables.scss" as *;
+
+@mixin kendo-overlay--layout() {
+
+    .k-overlay {
+        width: 100%;
+        height: 100%;
+        opacity: var( --kendo-overlay-opacity, #{$kendo-overlay-opacity} );
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 10001;
+    }
+
+}
