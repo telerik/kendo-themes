@@ -53,9 +53,10 @@ $kendo-font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helv
 $kendo-line-height: calc( 20 / 14 ) !default;
 
 $kendo-font-weight: 400 !default;
+$kendo-font-weight-light: 300 !default;
 $kendo-font-weight-bold: 600 !default;
 
-$kendo-letter-spacing: null !default;
+$kendo-letter-spacing: normal !default;
 
 $default-scrollbar-width: 17px !default;
 
@@ -65,6 +66,7 @@ $default-scrollbar-width: 17px !default;
     --kendo-line-height: #{$kendo-line-height};
 
     --kendo-font-weight: #{$kendo-font-weight};
+    --kendo-font-weight-light: #{$kendo-font-weight-light};
     --kendo-font-weight-bold: #{$kendo-font-weight-bold};
 
     --kendo-letter-spacing: #{$kendo-letter-spacing};

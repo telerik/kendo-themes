@@ -9,12 +9,12 @@ $rgba-transparent: rgba( 0, 0, 0, 0 );
 
 // Root styles
 $kendo-body-bg: $white !default;
-$kendo-body-text: get-theme-color( neutral, 160 ) !default;
+$kendo-body-text: get-theme-color-var( neutral-160 ) !default;
 
 // Component styles
 $kendo-component-bg: $kendo-body-bg !default;
 $kendo-component-text: $kendo-body-text !default;
-$kendo-component-border: get-theme-color( neutral, 30 ) !default;
+$kendo-component-border: get-theme-color-var( neutral-30 ) !default;
 
 // Shadows
 
@@ -31,6 +31,9 @@ $kendo-box-shadow-depth-3: 0px 1.2px 3.6px rgba( $black, 0.1 ), 0px 6.4px 14.4px
 /// Equivalent to fluent depth 64.
 $kendo-box-shadow-depth-4: 0px 4.8px 14.4px rgba( $black, 0.18 ), 0px 25.6px 57.6px rgba( $black, 0.22 ) !default;
 
+// Link
+$kendo-link-text: get-theme-color-var(primary-130) !default;
+$kendo-link-hover-text: get-theme-color-var(primary-160) !default;
 
 :root {
     @include palette-vars( $kendo-fluent-palettes );
@@ -46,4 +49,7 @@ $kendo-box-shadow-depth-4: 0px 4.8px 14.4px rgba( $black, 0.18 ), 0px 25.6px 57.
     --kendo-box-shadow-depth-2: #{$kendo-box-shadow-depth-2};
     --kendo-box-shadow-depth-3: #{$kendo-box-shadow-depth-3};
     --kendo-box-shadow-depth-4: #{$kendo-box-shadow-depth-4};
+
+    --kendo-link-text: #{$kendo-link-text};
+    --kendo-link-hover-text: #{$kendo-link-hover-text};
 }

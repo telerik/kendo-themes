@@ -1,0 +1,15 @@
+@use "../core/mixins" as *;
+@use "_variables.scss" as *;
+
+@mixin kendo-typography--theme() {
+    // Code snippet
+    .k-pre,
+    .k-code {
+        @include fill(
+            var( --kendo-code-text, #{$kendo-code-text} ),
+            var( --kendo-code-bg, #{$kendo-code-bg} ),
+            var( --kendo-code-border, #{$kendo-code-border} ),
+        );
+    }
+
+}
