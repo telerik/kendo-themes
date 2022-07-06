@@ -1,0 +1,126 @@
+@use "../core/color-system" as *;
+@use "../core/_variables.scss" as *;
+
+// Typography
+
+/// Global typography styles for the Kendo Default theme.
+/// @group typography
+$kendo-enable-typography: false !default;
+
+
+/// Font family for monospaced text. Used for styling the code.
+/// @group typography
+$kendo-font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Roboto Mono", "Ubuntu Mono", "Lucida Console", "Courier New", monospace !default;
+
+
+// Headings
+$kendo-headings: (
+    h1: (
+        font-size: 42px,
+        font-family: var(--kendo-font-family, inherit ),
+        line-height: var(--kendo-line-height, normal ),
+        font-weight: var(--kendo-font-weight-bold, bold),
+        letter-spacing: var(--kendo-letter-spacing, normal),
+        margin: 0 0 var(--kendo-font-size, inherit)
+    ),
+    h2: (
+        font-size: 32px,
+        font-family: var(--kendo-font-family, inherit ),
+        line-height: var(--kendo-line-height, normal ),
+        font-weight: var(--kendo-font-weight-bold, bold),
+        letter-spacing: var(--kendo-letter-spacing, normal),
+        margin: 0 0 var(--kendo-font-size, inherit)
+    ),
+    h3: (
+        font-size: 28px,
+        font-family: var(--kendo-font-family, inherit ),
+        line-height: var(--kendo-line-height, normal ),
+        font-weight: var(--kendo-font-weight-bold, bold),
+        letter-spacing: var(--kendo-letter-spacing, normal),
+        margin: 0 0 var(--kendo-font-size, inherit)
+    ),
+    h4: (
+        font-size: 20px,
+        font-family: var(--kendo-font-family, inherit ),
+        line-height: var(--kendo-line-height, normal ),
+        font-weight: var(--kendo-font-weight-bold, bold),
+        letter-spacing: var(--kendo-letter-spacing, normal),
+        margin: 0 0 var(--kendo-font-size, inherit)
+    ),
+    h5: (
+        font-size: 18px,
+        font-family: var(--kendo-font-family, inherit ),
+        line-height: var(--kendo-line-height, normal ),
+        font-weight: var(--kendo-font-weight-bold, bold),
+        letter-spacing: var(--kendo-letter-spacing, normal),
+        margin: 0 0 var(--kendo-font-size, inherit)
+    ),
+    h6: (
+        font-size: 16px,
+        font-family: var(--kendo-font-family, inherit ),
+        line-height: var(--kendo-line-height, normal ),
+        font-weight: var(--kendo-font-weight-bold, bold),
+        letter-spacing: var(--kendo-letter-spacing, normal),
+        margin: 0 0 var(--kendo-font-size, inherit)
+    )
+) !default;
+
+
+// Paragraph
+$kendo-paragraph-margin: 0 0 var(--kendo-font-size, inherit) !default;
+$kendo-paragraph-font-size: var(--kendo-font-size, inherit) !default;
+$kendo-paragraph-font-family: var(--kendo-font-family, inherit ) !default;
+$kendo-paragraph-line-height: var(--kendo-line-height, normal) !default;
+$kendo-paragraph-font-weight: var(--kendo-font-weight, normal) !default;
+$kendo-paragraph-letter-spacing: var(--kendo-letter-spacing, normal) !default;
+
+
+// Code
+$kendo-code-font-size: var(--kendo-font-size, inherit) !default;
+$kendo-code-font-family: $kendo-font-family-monospace !default;
+$kendo-code-line-height: var(--kendo-line-height, normal) !default;
+$kendo-code-font-weight: var(--kendo-font-weight, normal) !default;
+$kendo-code-letter-spacing: var(--kendo-letter-spacing, normal) !default;
+
+$kendo-code-padding-x: map-get( $kendo-spacing, 1 ) !default;
+$kendo-code-padding-y: map-get( $kendo-spacing, 0 ) !default;
+$kendo-pre-padding-x: map-get( $kendo-spacing, 6 ) !default;
+$kendo-pre-padding-y: map-get( $kendo-spacing, 4 ) !default;
+$kendo-code-border-width: 1px !default;
+
+$kendo-code-bg: var(--kendo-component-bg, initial) !default;
+$kendo-code-text: var(--kendo-component-text, initial) !default;
+$kendo-code-border: var(--kendo-component-border, initial) !default;
+
+
+// Display
+$kendo-display: (
+    1: (
+        font-size: calc( var(--kendo-font-size, inherit) * 6 ),
+        font-family: var(--kendo-font-family, inherit ),
+        line-height: var(--kendo-line-height, normal ),
+        font-weight: var(--kendo-font-weight-bold, bold),
+        letter-spacing: var(--kendo-letter-spacing, normal)
+    ),
+    2: (
+        font-size: calc(var(--kendo-font-size, inherit) * 5 ),
+        font-family: var(--kendo-font-family, inherit ),
+        line-height: var(--kendo-line-height, normal ),
+        font-weight: var(--kendo-font-weight-bold, bold),
+        letter-spacing: var(--kendo-letter-spacing, normal)
+    ),
+    3: (
+        font-size: calc( var(--kendo-font-size, inherit) * 4 ),
+        font-family: var(--kendo-font-family, inherit ),
+        line-height: var(--kendo-line-height, normal ),
+        font-weight: var(--kendo-font-weight-bold, bold),
+        letter-spacing: var(--kendo-letter-spacing, normal)
+    ),
+    4: (
+        font-size: calc(var(--kendo-font-size, inherit) * 3 ),
+        font-family: var(--kendo-font-family, inherit ),
+        line-height: var(--kendo-line-height, normal ),
+        font-weight: var(--kendo-font-weight-bold, bold),
+        letter-spacing: var(--kendo-letter-spacing, normal)
+    )
+) !default;

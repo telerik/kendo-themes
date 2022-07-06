@@ -6,6 +6,7 @@
 @use "core";
 
 // Components
+@use "typography";
 @use "button";
 
 // Setup
@@ -13,5 +14,6 @@
     @include core.configure($config: $config);
 }
 @mixin styles() {
+    @include typography.styles();
     @include button.styles();
 }
