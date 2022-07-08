@@ -87,7 +87,7 @@
 
     // Horizontal
     .k-progressbar-horizontal {
-        width: 27em;
+        width: $progressbar-horizontal-width;
         height: $progressbar-height;
         grid-template-columns: 1fr;
         grid-template-rows: 100%;
