@@ -48,7 +48,7 @@
 @use "button";
 @use "split-button";
 // @use "menu-button";
-// @use "input";
+@use "input";
 // @use "textbox";
 // @use "textarea";
 // @use "checkbox";
@@ -212,7 +212,7 @@
     @include button.styles();
     @include split-button.styles();
     // @include menu-button.styles();
-    // @include input.styles();
+    @include input.styles();
     // @include textbox.styles();
     // @include textarea.styles();
     // @include checkbox.styles();
