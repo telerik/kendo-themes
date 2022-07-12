@@ -39,7 +39,7 @@ root.render(
                 </List>
             </section>
 
-            <span className="k-colspan-all">universal grouping</span>
+            <span className="k-colspan-all k-col-span-full">universal grouping</span>
 
             <section>
                 <List size="small">
@@ -80,7 +80,7 @@ root.render(
                 </List>
             </section>
 
-            <span className="k-colspan-all">angular grouping</span>
+            <span className="k-colspan-all k-col-span-full">angular grouping</span>
 
             <section>
                 <List size="small" framework="angular">

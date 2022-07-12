@@ -25,7 +25,7 @@ root.render(
         <style>{styles}</style>
         <div id="test-area" className="k-d-grid k-grid-cols-4">
 
-            <span className="k-colspan-all">LTR</span>
+            <span className="k-colspan-all k-col-span-full">LTR</span>
 
             <div>
                 <div className="k-notification-container">
@@ -141,7 +141,7 @@ root.render(
                 </div>
             </div>
 
-            <span className="k-colspan-all">RTL</span>
+            <span className="k-colspan-all k-col-span-full">RTL</span>
             <div dir="rtl">
                 <div className="k-notification-container">
                     <div className="k-widget k-notification">

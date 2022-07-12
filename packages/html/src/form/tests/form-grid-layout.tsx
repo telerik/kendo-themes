@@ -22,19 +22,19 @@ root.render(
                         <legend className="k-form-legend">Shipping Address</legend>
 
                         <div className="k-form-layout k-d-grid k-grid-cols-2" style={{ gap: "0px 16px" }}>
-                            <div className="k-form-field k-colspan-1">
+                            <div className="k-form-field k-colspan-1 k-col-span-1">
                                 <label className="k-label k-form-label">Country</label>
                                 <DropdownList value="France" />
                             </div>
 
-                            <div className="k-form-field k-colspan-1">
+                            <div className="k-form-field k-colspan-1 k-col-span-1">
                                 <label className="k-label k-form-label">City</label>
                                 <div className="k-form-field-wrap">
                                     <Textbox />
                                 </div>
                             </div>
 
-                            <div className="k-form-field k-colspan-2">
+                            <div className="k-form-field k-colspan-2 k-col-span-2">
                                 <label className="k-label k-form-label">Address Line</label>
                                 <div className="k-form-field-wrap">
                                     <Textbox />

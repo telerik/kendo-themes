@@ -31,7 +31,7 @@ root.render(
         <style>{styles}</style>
         <div id="test-area" className="k-d-grid k-grid-cols-4">
 
-            <span className="k-colspan-all">LTR</span>
+            <span className="k-colspan-all k-col-span-full">LTR</span>
 
             <div>
                 {/* notification group */}
@@ -58,7 +58,7 @@ root.render(
                     </div>
                 </div>
             </div>
-            <div className="k-colspan-3">
+            <div className="k-colspan-3 k-col-span-3">
                 <div className="k-notification-container fullwidth">
                     <div className="k-widget k-notification k-notification-closable">
                         <div className="k-notification-wrap">
@@ -69,7 +69,7 @@ root.render(
                 </div>
             </div>
 
-            <span className="k-colspan-all">RTL</span>
+            <span className="k-colspan-all k-col-span-full">RTL</span>
 
             <div dir="rtl">
                 {/* notification group */}
@@ -96,7 +96,7 @@ root.render(
                     </div>
                 </div>
             </div>
-            <div className="k-colspan-3" dir="rtl">
+            <div className="k-colspan-3 k-col-span-3" dir="rtl">
                 <div className="k-notification-container fullwidth">
                     <div className="k-widget k-notification k-notification-closable">
                         <div className="k-notification-wrap">

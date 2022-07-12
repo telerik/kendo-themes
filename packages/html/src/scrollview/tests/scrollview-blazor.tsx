@@ -22,7 +22,7 @@ root.render(
         <style>{style}</style>
         <div id="test-area" className="k-d-grid k-grid-cols-3">
 
-            <span className="k-colspan-all">Blazor scrollview</span>
+            <span className="k-colspan-all k-col-span-full">Blazor scrollview</span>
 
             <span>Light mode</span>
             <span>Normal</span>

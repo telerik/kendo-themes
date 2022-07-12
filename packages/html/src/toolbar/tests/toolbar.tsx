@@ -14,8 +14,8 @@ root.render(
     <>
         <div id="test-area" className="k-d-grid k-grid-cols-2">
 
-            <span className="k-colspan-all">Toolbar</span>
-            <section className="k-colspan-all">
+            <span className="k-colspan-all k-col-span-full">Toolbar</span>
+            <section className="k-colspan-all k-col-span-full">
                 <div className="k-widget k-toolbar k-toolbar-resizable">
                     <Button icon="more-vertical" className="k-overflow-anchor" fillMode="flat" rounded={null}></Button>
                     <Button icon="bold"></Button>
@@ -38,8 +38,8 @@ root.render(
                 </div>
             </section>
 
-            <span className="k-colspan-all">RTL</span>
-            <section className="k-colspan-all" dir="rtl">
+            <span className="k-colspan-all k-col-span-full">RTL</span>
+            <section className="k-colspan-all k-col-span-full" dir="rtl">
                 <div className="k-widget k-toolbar k-toolbar-resizable">
                     <Button icon="more-vertical" className="k-overflow-anchor" fillMode="flat" rounded={null}></Button>
                     <Button icon="bold"></Button>
@@ -63,8 +63,8 @@ root.render(
             </section>
 
 
-            <span className="k-colspan-all">Button states</span>
-            <section className="k-colspan-all">
+            <span className="k-colspan-all k-col-span-full">Button states</span>
+            <section className="k-colspan-all k-col-span-full">
                 <div className="k-widget k-toolbar k-toolbar-resizable">
                     <Button icon="more-vertical" className="k-overflow-anchor" fillMode="flat" rounded={null} hover></Button>
                     <Button>Normal</Button>
@@ -82,7 +82,7 @@ root.render(
                     <Button icon="bold" disabled></Button>
                 </div>
             </section>
-            <section className="k-colspan-all">
+            <section className="k-colspan-all k-col-span-full">
                 <div className="k-widget k-toolbar k-toolbar-resizable">
                     <Button icon="more-vertical" className="k-overflow-anchor" fillMode="flat" rounded={null} focus></Button>
                     <Button icon="align-left" className="k-toggle-button">Normal</Button>
@@ -93,7 +93,7 @@ root.render(
                     <Button icon="align-left" className="k-toggle-button" disabled>Disabled</Button>
                 </div>
             </section>
-            <section className="k-colspan-all">
+            <section className="k-colspan-all k-col-span-full">
                 <div className="k-widget k-toolbar k-toolbar-resizable">
                     <Button icon="more-vertical" className="k-overflow-anchor" fillMode="flat" rounded={null} active></Button>
                     <Button themeColor="primary" icon="align-left">Normal</Button>
@@ -105,8 +105,8 @@ root.render(
                 </div>
             </section>
 
-            <span className="k-colspan-all">Disabled focus state of buttons</span>
-            <section className="k-colspan-all">
+            <span className="k-colspan-all k-col-span-full">Disabled focus state of buttons</span>
+            <section className="k-colspan-all k-col-span-full">
                 <div className="k-widget k-toolbar k-toolbar-resizable">
                     <Button icon="more-vertical" className="k-overflow-anchor" fillMode="flat" rounded={null} disabled focus></Button>
                     <Button disabled focus>Button</Button>

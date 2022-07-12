@@ -18,8 +18,8 @@ root.render(
     <>
         <div id="test-area" className="k-d-grid k-grid-cols-2">
 
-            <span className="k-colspan-all">Angular specific rendering and spacing</span>
-            <section className="k-colspan-all">
+            <span className="k-colspan-all k-col-span-full">Angular specific rendering and spacing</span>
+            <section className="k-colspan-all k-col-span-full">
                 <div className="k-widget k-toolbar">
                     <div style={toolbarStyle}>
                         <Button>Button</Button>

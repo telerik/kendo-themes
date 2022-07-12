@@ -23,7 +23,7 @@ root.render(
         <style>{style}</style>
         <div id="test-area" className="k-d-grid k-grid-cols-4">
 
-            <span className="k-colspan-all">Tooltip states</span>
+            <span className="k-colspan-all k-col-span-full">Tooltip states</span>
             <section>
                 <div className="k-animation-container">
                     <div className="k-tooltip k-tooltip-primary">
