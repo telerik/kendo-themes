@@ -14,8 +14,11 @@ export interface CalendarCellProps {
     hover?: boolean;
     focus?: boolean;
     active?: boolean;
-    selected?: boolean
+    selected?: boolean;
     disabled?: boolean;
+    rangeStart?: boolean;
+    rangeMid?: boolean;
+    rangeEnd?: boolean;
 }
 
 export class CalendarCell extends React.Component<CalendarCellProps> {
@@ -35,6 +38,9 @@ export class CalendarCell extends React.Component<CalendarCellProps> {
             active,
             selected,
             disabled,
+            rangeStart,
+            rangeMid,
+            rangeEnd,
             ...htmlAttributes
         } = this.props;
 
@@ -53,6 +59,9 @@ export class CalendarCell extends React.Component<CalendarCellProps> {
                 'k-weekend': weekend,
                 'k-other-month': otherMonth,
                 'k-alt': weekCell,
+                'k-range-start': rangeStart,
+                'k-range-mid': rangeMid,
+                'k-range-end': rangeEnd
             }
         ];
 

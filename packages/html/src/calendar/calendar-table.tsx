@@ -8,6 +8,7 @@ export interface CalendarTableProps {
     showOtherMonth?: boolean;
     showWeek?: boolean;
     showCalendarCaption?: boolean;
+    selectedRange?: boolean;
 }
 
 export class CalendarTable extends React.Component<CalendarTableProps> {
@@ -20,6 +21,7 @@ export class CalendarTable extends React.Component<CalendarTableProps> {
             showOtherMonth,
             showWeek,
             showCalendarCaption,
+            selectedRange,
             ...htmlAttributes
         } = this.props;
 
@@ -145,20 +147,20 @@ export class CalendarTable extends React.Component<CalendarTableProps> {
                     <tr className="k-calendar-tr">
                         {showWeek && <CalendarCell text="40" weekCell /> }
                         <CalendarCell text="7" weekend />
-                        <CalendarCell text="8" />
-                        <CalendarCell text="9" hover />
-                        <CalendarCell text="10" focus />
-                        <CalendarCell text="11" selected />
-                        <CalendarCell text="12" />
+                        <CalendarCell text="8" hover />
+                        <CalendarCell text="9" focus />
+                        <CalendarCell text="10" selected />
+                        <CalendarCell text="11" hover focus />
+                        <CalendarCell text="12" hover selected />
                         <CalendarCell text="13" weekend />
                     </tr>
                     <tr className="k-calendar-tr">
                         {showWeek && <CalendarCell text="41" weekCell /> }
                         <CalendarCell text="14" weekend />
                         <CalendarCell text="15" />
-                        <CalendarCell text="16" hover focus />
-                        <CalendarCell text="17" selected />
-                        <CalendarCell text="18" selected />
+                        <CalendarCell text="16" today />
+                        <CalendarCell text="17" />
+                        <CalendarCell text="18" />
                         <CalendarCell text="19" />
                         <CalendarCell text="20" weekend />
                     </tr>
@@ -168,14 +170,14 @@ export class CalendarTable extends React.Component<CalendarTableProps> {
                         <CalendarCell text="22" />
                         <CalendarCell text="23" />
                         <CalendarCell text="24" />
-                        <CalendarCell text="25" />
-                        <CalendarCell text="26" />
-                        <CalendarCell text="27" weekend />
+                        <CalendarCell text="25" rangeStart={selectedRange} selected={selectedRange} />
+                        <CalendarCell text="26" rangeMid={selectedRange} />
+                        <CalendarCell text="27" weekend rangeMid={selectedRange} />
                     </tr>
                     <tr className="k-calendar-tr">
                         {showWeek && <CalendarCell text="43" weekCell /> }
-                        <CalendarCell text="28" weekend />
-                        <CalendarCell text="29" today />
+                        <CalendarCell text="28" weekend rangeMid={selectedRange} />
+                        <CalendarCell text="29" rangeEnd={selectedRange} focus={selectedRange} selected={selectedRange} />
                         <CalendarCell text="30" />
                         <CalendarCell text="31" />
                         <CalendarCell text="1" otherMonth showOtherMonth={showOtherMonth} />
