@@ -23,7 +23,7 @@ root.render(
         <style>{styles}</style>
         <div id="test-area" className="k-d-grid k-grid-cols-4">
 
-            <span className="k-colspan-all">LTR</span>
+            <span className="k-colspan-all k-col-span-full">LTR</span>
 
             <section>
                 <div className="k-widget k-panelbar">
@@ -190,7 +190,7 @@ root.render(
                 </div>
             </section>
 
-            <span className="k-colspan-all">RTL</span>
+            <span className="k-colspan-all k-col-span-full">RTL</span>
 
             <section className="k-rtl">
                 <div className="k-widget k-panelbar">

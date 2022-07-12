@@ -10,7 +10,7 @@ const root = ReactDOM.createRoot(
 root.render(
     <>
         <div id="test-area" className="k-d-grid k-grid-cols-2 k-rtl">
-            <span className="k-colspan-all">Wrapping</span>
+            <span className="k-colspan-all k-col-span-full">Wrapping</span>
             <div>
                 <div style={{ width: "400px" }} className="k-widget k-breadcrumb k-breadcrumb-wrap" dir="rtl">
                     <ol className="k-breadcrumb-root-item-container">
@@ -146,7 +146,7 @@ root.render(
                 </div>
             </div>
 
-            <span className="k-colspan-all">Navigation Mode</span>
+            <span className="k-colspan-all k-col-span-full">Navigation Mode</span>
             <div>
                 <nav id="breadcrumbs" className="k-widget k-breadcrumb">
                     <ol className="k-breadcrumb-container">
@@ -248,7 +248,7 @@ root.render(
                 </nav>
             </div>
 
-            <span className="k-colspan-all">Edit Mode</span>
+            <span className="k-colspan-all k-col-span-full">Edit Mode</span>
             <div>
                 <nav id="breadcrumbs" className="k-widget k-breadcrumb k-state-focused">
                     <ol className="k-breadcrumb-container">
@@ -281,7 +281,7 @@ root.render(
                 </nav>
             </div>
 
-            <span className="k-colspan-all">Overflow</span>
+            <span className="k-colspan-all k-col-span-full">Overflow</span>
             <div>
                 <nav id="breadcrumbs" className="k-widget k-breadcrumb">
                     <ol className="k-breadcrumb-container">

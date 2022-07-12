@@ -49,31 +49,31 @@ root.render(
                             <fieldset className="k-form-fieldset">
                                 <legend className="k-form-legend">Resize image</legend>
                                 <div className="k-form-layout k-d-grid k-grid-cols-2" style={{ gap: "0px 8px" }}>
-                                    <div className="k-form-field k-colspan-1">
+                                    <div className="k-form-field  k-col-span-1-1 k-col-span-1">
                                         <label className="k-label k-form-label">Width:</label>
                                         <div className="k-form-field-wrap">
                                             <NumericTextbox showClearButton={false} value="61" />
                                         </div>
                                     </div>
-                                    <div className="k-form-field k-colspan-1">
+                                    <div className="k-form-field k-colspan-1 k-col-span-1">
                                         <label className="k-label k-form-label">&nbsp;</label>
                                         <div className="k-form-field-wrap">
                                             <DropdownList value="Pixels" />
                                         </div>
                                     </div>
-                                    <div className="k-form-field k-colspan-1">
+                                    <div className="k-form-field k-colspan-1 k-col-span-1">
                                         <label className="k-label k-form-label">Height:</label>
                                         <div className="k-form-field-wrap">
                                             <NumericTextbox showClearButton={false} value="68" />
                                         </div>
                                     </div>
-                                    <div className="k-form-field k-colspan-1">
+                                    <div className="k-form-field k-colspan-1 k-col-span-1">
                                         <label className="k-label k-form-label">&nbsp;</label>
                                         <div className="k-form-field-wrap">
                                             <DropdownList value="Pixels" />
                                         </div>
                                     </div>
-                                    <div className="k-form-field k-colspan-2">
+                                    <div className="k-form-field k-colspan-2 k-col-span-2">
                                         <label className="k-label k-form-label">Lock aspect ratio:</label>
                                         <div className="k-form-field-wrap">
                                             <Checkbox />

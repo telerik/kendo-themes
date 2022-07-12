@@ -18,9 +18,9 @@ root.render(
         <div id="test-area" className="k-d-grid">
 
             <span><small>rounded / size</small></span>
-            <span className="k-colspan-2">small</span>
-            <span className="k-colspan-2">medium</span>
-            <span className="k-colspan-2">large</span>
+            <span className="k-colspan-2 k-col-span-2">small</span>
+            <span className="k-colspan-2 k-col-span-2">medium</span>
+            <span className="k-colspan-2 k-col-span-2">large</span>
 
             <span>null</span>
             <span>

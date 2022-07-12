@@ -31,7 +31,7 @@ root.render(
         <div id="test-area" className="k-d-grid k-grid-cols-5">
 
             <span></span>
-            <span className="k-colspan-4">Orientation horizontal</span>
+            <span className="k-colspan-4 k-col-span-4">Orientation horizontal</span>
 
             <span></span>
             <span>horizontal align left</span>
@@ -159,10 +159,10 @@ root.render(
                 </Layout>
             </section>
 
-            <span className="k-colspan-all"></span>
+            <span className="k-colspan-all k-col-span-full"></span>
 
             <span></span>
-            <span className="k-colspan-4">Orientation vertical</span>
+            <span className="k-colspan-4 k-col-span-4">Orientation vertical</span>
 
             <span></span>
             <span>horizontal align left</span>

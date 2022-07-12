@@ -85,7 +85,7 @@ root.render(
                 </div>
             </section>
 
-            <span className="k-colspan-all">rtl</span>
+            <span className="k-colspan-all k-col-span-full">rtl</span>
             <section className="k-rtl" dir="rtl">
                 <div className="k-animation-container">
                     <div className="k-popup k-menu-popup">

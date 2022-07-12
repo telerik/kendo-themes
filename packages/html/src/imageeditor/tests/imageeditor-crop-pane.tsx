@@ -63,13 +63,13 @@ root.render(
                             <fieldset className="k-form-fieldset">
                                 <legend className="k-form-legend">Crop Image</legend>
                                 <div className="k-form-layout k-d-grid k-grid-cols-2" style={{ gap: "0px 8px" }}>
-                                    <div className="k-form-field k-colspan-2">
+                                    <div className="k-form-field k-colspan-2 k-col-span-2">
                                         <label className="k-label k-form-label">Aspect Ratio:</label>
                                         <div className="k-form-field-wrap">
                                             <DropdownList value="Original ratio" />
                                         </div>
                                     </div>
-                                    <div className="k-form-field k-colspan-2">
+                                    <div className="k-form-field k-colspan-2 k-col-span-2">
                                         <label className="k-label k-form-label">Orientation:</label>
                                         <div className="k-form-field-wrap">
                                             <div className="k-widget k-button-group">
@@ -78,19 +78,19 @@ root.render(
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="k-form-field k-colspan-1">
+                                    <div className="k-form-field k-colspan-1 k-col-span-1">
                                         <label className="k-label k-form-label">Width:</label>
                                         <div className="k-form-field-wrap">
                                             <NumericTextbox showClearButton={false} value="61" />
                                         </div>
                                     </div>
-                                    <div className="k-form-field k-colspan-1">
+                                    <div className="k-form-field k-colspan-1 k-col-span-1">
                                         <label className="k-label k-form-label">Height:</label>
                                         <div className="k-form-field-wrap">
                                             <NumericTextbox showClearButton={false} value="68" />
                                         </div>
                                     </div>
-                                    <div className="k-form-field k-colspan-2">
+                                    <div className="k-form-field k-colspan-2 k-col-span-2">
                                         <label className="k-label k-form-label">Lock aspect ratio:</label>
                                         <div className="k-form-field-wrap">
                                             <Checkbox />
