@@ -51,8 +51,19 @@ $kendo-spacing: (
 
 // Generic styles
 $kendo-font-size: 14px !default;
+$kendo-font-size-xs: 10px !default;
+$kendo-font-size-sm: 12px !default;
+$kendo-font-size-md: $kendo-font-size !default;
+$kendo-font-size-lg: 16px !default;
+$kendo-font-size-xl: 20px !default;
+
 $kendo-font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !default;
 $kendo-line-height: calc( 20 / 14 ) !default;
+$kendo-line-height-xs: 1 !default;
+$kendo-line-height-sm: 1.25 !default;
+$kendo-line-height-md: $kendo-line-height !default;
+$kendo-line-height-lg: 1.5 !default;
+$kendo-line-height-em: calc( #{$kendo-line-height} * 1em) !default;
 
 $kendo-font-weight: 400 !default;
 $kendo-font-weight-light: 300 !default;
@@ -69,9 +80,20 @@ $kendo-border-radius-md: $kendo-border-radius !default;
 $kendo-border-radius-lg: calc( #{$kendo-border-radius} * 2 ) !default;
 
 :root {
-    --kendo-font-size: #{$kendo-font-size};
     --kendo-font-family: #{meta.inspect($kendo-font-family)};
+
+    --kendo-font-size: #{$kendo-font-size};
+    --kendo-font-size-xs: #{$kendo-font-size-xs};
+    --kendo-font-size-sm: #{$kendo-font-size-sm};
+    --kendo-font-size-md: #{$kendo-font-size-md};
+    --kendo-font-size-lg: #{$kendo-font-size-lg};
+    --kendo-font-size-xl: #{$kendo-font-size-xl};
+
     --kendo-line-height: #{$kendo-line-height};
+    --kendo-line-height-xs: #{$kendo-line-height-xs};
+    --kendo-line-height-sm: #{$kendo-line-height-sm};
+    --kendo-line-height-md: #{$kendo-line-height-md};
+    --kendo-line-height-lg: #{$kendo-line-height-lg};
 
     --kendo-font-weight: #{$kendo-font-weight};
     --kendo-font-weight-light: #{$kendo-font-weight-light};
