@@ -8,6 +8,7 @@
 @use "typography";
 @use "icon";
 @use "button";
+@use "calendar";
 
 // Setup
 @mixin config($config: null ) {
@@ -17,4 +18,5 @@
     @include typography.styles();
     @include icon.styles();
     @include button.styles();
+    @include calendar.styles();
 }
