@@ -10,6 +10,7 @@ export interface CalendarViewProps {
     showWeek?: boolean;
     showOtherMonth?: boolean;
     showCalendarCaption?: boolean;
+    selectedRange?: boolean;
 }
 
 export class CalendarView extends React.Component<CalendarViewProps> {
@@ -29,6 +30,7 @@ export class CalendarView extends React.Component<CalendarViewProps> {
             showWeek,
             showOtherMonth,
             showCalendarCaption,
+            selectedRange,
             ...htmlAttributes
         } = this.props;
 
@@ -54,6 +56,7 @@ export class CalendarView extends React.Component<CalendarViewProps> {
                         showWeek={showWeek}
                         showOtherMonth={showOtherMonth}
                         showCalendarCaption={showCalendarCaption}
+                        selectedRange={selectedRange}
                     />
                 )}
             </div>

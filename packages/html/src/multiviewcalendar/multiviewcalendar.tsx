@@ -53,6 +53,7 @@ export class MultiViewCalendar extends React.Component<MultiViewCalendarProps> {
                 showWeek={showWeek}
                 showOtherMonth={showOtherMonth}
                 showCalendarCaption={showCalendarCaption}
+                selectedRange={true}
 
             />
         );
