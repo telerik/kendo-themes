@@ -79,6 +79,8 @@ jobs:
     steps:
       - name: Checkout branch
         uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.GH_TOKEN }}
 
       - name: Download artifacts
         uses: actions/download-artifact@v2
