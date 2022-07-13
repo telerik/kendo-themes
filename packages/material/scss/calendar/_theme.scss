@@ -13,7 +13,7 @@
             );
         }
         .k-state-selected.k-state-focused .k-link,
-        .k-selected.k-focused .k-link {
+        .k-selected.k-focus .k-link {
             @include fill(
                 $calendar-cell-selected-text,
                 try-tint($calendar-cell-selected-bg),
