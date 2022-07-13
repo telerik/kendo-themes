@@ -79,8 +79,6 @@ jobs:
     steps:
       - name: Checkout branch
         uses: actions/checkout@v2
-        with:
-          token: ${{ secrets.GH_TOKEN }}
 
       - name: Download artifacts
         uses: actions/download-artifact@v2
@@ -105,7 +103,7 @@ jobs:
           git config user.email "kendouiteam@progress.com"
 
       - name: Push changes to GitHub
-        if: ${{ env.HAS_CHANGES == 1 || env.HAS_NEW == 1 }}
+        if: ${{ (env.HAS_CHANGES == 1 || env.HAS_NEW == 1) && github.actor != 'dependabot[bot]' }}
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
