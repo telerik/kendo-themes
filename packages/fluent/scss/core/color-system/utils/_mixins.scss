@@ -1,9 +1,9 @@
 @use "sass:meta";
 
-@mixin palette-vars($palettes) {
-    @each $palette, $values in $palettes {
-        @each $hue, $value in $values {
-            --kendo-#{meta.inspect($palette)}-#{$hue}: #{$value};
+@mixin css-vars($map) {
+    @each $group, $values in $map {
+        @each $key, $value in $values {
+            --kendo-#{meta.inspect($group)}-#{$key}: #{$value};
         }
     }
 }
