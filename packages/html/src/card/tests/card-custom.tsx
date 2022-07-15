@@ -127,7 +127,7 @@ root.render(
             </Card>
 
             <Card orientation="vertical">
-                <CardHeader className="k-display-flex">
+                <CardHeader className="k-d-flex">
                     <Avatar type="image" themeColor="primary" rounded="medium" className="bg-img">
                         <img src="/packages/html/assets/avatar.jpg" />
                     </Avatar>

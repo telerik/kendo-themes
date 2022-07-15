@@ -78,7 +78,8 @@ root.render(
 
             <Card orientation="vertical">
                 <CardImage />
-                <CardBody title="Card Title" subtitle="Card Subtitle">
+                <CardHeader title="Card Title" subtitle="Card Subtitle"></CardHeader>
+                <CardBody>
                     <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </CardBody>
                 <ActionButtons className="k-card-actions" orientation="vertical">
@@ -88,7 +89,8 @@ root.render(
             </Card>
 
             <Card orientation="vertical">
-                <CardBody title="Card Title" subtitle="Card Subtitle">
+                <CardHeader title="Card Title" subtitle="Card Subtitle"></CardHeader>
+                <CardBody>
                     <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </CardBody>
                 <CardImage />
@@ -99,7 +101,8 @@ root.render(
             </Card>
 
             <Card orientation="vertical">
-                <CardBody title="Card Title" subtitle="Card Subtitle">
+                <CardHeader title="Card Title" subtitle="Card Subtitle"></CardHeader>
+                <CardBody>
                     <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </CardBody>
                 <ActionButtons className="k-card-actions" alignment="stretched" orientation="vertical">
