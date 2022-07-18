@@ -8,7 +8,7 @@
 @forward "mixins";
 
 // Color System
-@use "color-system";
+@forward "color-system";
 
 // Helpers
 @use "helpers";
