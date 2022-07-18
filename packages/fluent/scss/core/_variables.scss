@@ -1,3 +1,5 @@
+@use "sass:meta";
+
 // Options
 $enable-shadows: true !default;
 $enable-rounded: true !default;
@@ -60,9 +62,15 @@ $kendo-letter-spacing: normal !default;
 
 $default-scrollbar-width: 17px !default;
 
+/// Border radius for all components.
+$kendo-border-radius: map-get( $kendo-spacing, thin ) !default;
+$kendo-border-radius-sm: calc( #{$kendo-border-radius} / 2 ) !default;
+$kendo-border-radius-md: $kendo-border-radius !default;
+$kendo-border-radius-lg: calc( #{$kendo-border-radius} * 2 ) !default;
+
 :root {
     --kendo-font-size: #{$kendo-font-size};
-    --kendo-font-family: #{$kendo-font-family};
+    --kendo-font-family: #{meta.inspect($kendo-font-family)};
     --kendo-line-height: #{$kendo-line-height};
 
     --kendo-font-weight: #{$kendo-font-weight};
@@ -70,4 +78,8 @@ $default-scrollbar-width: 17px !default;
     --kendo-font-weight-bold: #{$kendo-font-weight-bold};
 
     --kendo-letter-spacing: #{$kendo-letter-spacing};
+
+    --kendo-border-radius-sm: #{$kendo-border-radius-sm};
+    --kendo-border-radius-md: #{$kendo-border-radius-md};
+    --kendo-border-radius-lg: #{$kendo-border-radius-lg};
 }
