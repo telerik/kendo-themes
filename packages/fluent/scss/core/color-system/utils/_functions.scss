@@ -8,6 +8,6 @@
     @return map-get( get-theme-palette( $palette ), $hue );
 }
 
-@function get-theme-color-var($name, $prefix: "kendo") {
-    @return var(--#{$prefix}-#{$name});
+@function get-theme-color-var($name, $fallback: "inherit", $prefix: "kendo") {
+    @return var( --#{$prefix}-#{$name}, #{$fallback} );
 }
