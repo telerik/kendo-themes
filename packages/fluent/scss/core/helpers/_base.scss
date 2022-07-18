@@ -1,0 +1,19 @@
+@use "../mixins" as *;
+
+// Disabled state
+.k-state-disabled,
+.k-disabled,
+.k-widget[disabled],
+.k-disabled {
+    @include disabled(
+        var( --kendo-disabled-text, inherit ),
+        var( --kendo-disabled-bg, inherit ),
+        var( --kendo-disabled-border, inherit )
+    );
+
+    .k-link {
+        cursor: default;
+        outline: 0;
+    }
+}
+

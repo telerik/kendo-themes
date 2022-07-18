@@ -35,6 +35,11 @@ $kendo-box-shadow-depth-4: 0px 4.8px 14.4px rgba( $black, 0.18 ), 0px 25.6px 57.
 $kendo-link-text: get-theme-color-var(primary-130) !default;
 $kendo-link-hover-text: get-theme-color-var(primary-160) !default;
 
+// Disabled Styling
+$kendo-disabled-bg: get-theme-color-var( neutral-20 ) !default;
+$kendo-disabled-text: get-theme-color-var( neutral-90 ) !default;
+$kendo-disabled-border: transparent !default;
+
 :root {
     @include palette-vars( $kendo-fluent-palettes );
 
@@ -52,4 +57,8 @@ $kendo-link-hover-text: get-theme-color-var(primary-160) !default;
 
     --kendo-link-text: #{$kendo-link-text};
     --kendo-link-hover-text: #{$kendo-link-hover-text};
+
+    --kendo-disabled-bg: #{$kendo-disabled-bg};
+    --kendo-disabled-text: #{$kendo-disabled-text};
+    --kendo-disabled-border: #{$kendo-disabled-border};
 }
