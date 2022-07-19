@@ -24,6 +24,11 @@
         }
     }
 
+    .k-popover-inner {
+        position: relative;
+        border-radius: inherit;
+    }
+
     // Header
     .k-popover-header {
         @include border-top-radius( $popover-border-radius );
@@ -50,32 +55,32 @@
         margin: 0;
         width: $popover-callout-width;
         height: $popover-callout-height;
-        border-width: $popover-callout-border-width $popover-callout-border-width 0 0;
+        border-width: $popover-callout-border-width;
         border-style: $popover-callout-border-style;
         position: absolute;
 
         &.k-callout-n {
             top: 0;
             left: 50%;
-            transform: translate(-50%, -50%) rotate(-45deg);
+            transform: translate(-50%, -50%) rotate(45deg);
         }
 
         &.k-callout-e {
             top: 50%;
             right: 0;
-            transform: translate(50%, -50%) rotate(135deg) scaleX(-1);
+            transform: translate(50%, -50%) rotate(-45deg);
         }
 
         &.k-callout-s {
             bottom: 0;
             left: 50%;
-            transform: translate(-50%, 50%) rotate(135deg);
+            transform: translate(-50%, 50%) rotate(45deg);
         }
 
         &.k-callout-w {
             top: 50%;
             left: 0;
-            transform: translate(-50%, -50%) rotate(-135deg);
+            transform: translate(-50%, -50%) rotate(45deg);
         }
     }
 
