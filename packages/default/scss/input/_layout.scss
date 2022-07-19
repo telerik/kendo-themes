@@ -256,7 +256,7 @@
     // Input button
     .k-input-button {
         width: if( $use-input-button-width, $kendo-input-button-width, auto );
-        border-width: 0;
+        border-width: $kendo-input-border-width 0 0 0;
         border-inline-start-width: $kendo-input-button-border-width;
         flex: none;
         aspect-ratio: auto;
@@ -339,8 +339,7 @@
     .k-input-flat,
     .k-picker-flat {
         @include border-bottom-radius( 0 !important ); // sass-lint:disable-line no-important
-        border-width: $kendo-input-border-width 0;
-        border-top-color: transparent !important; // sass-lint:disable-line no-important
+        border-width: 0 0 $kendo-input-border-width 0;
         background-image: none !important; // sass-lint:disable-line no-important
     }
 
