@@ -9,6 +9,11 @@
         );
         @include box-shadow( $card-shadow );
 
+        .k-card-inner {
+            background-color: inherit;
+            border-color: inherit;
+        }
+
         &:focus,
         &.k-focus,
         &.k-state-focus {
@@ -88,28 +93,11 @@
     // Card callout
     .k-card-callout {
         @include fill(
-            $bg: $card-bg,
-            $border: $card-border
-        );
-    }
-
-    .k-card-callout.k-callout-n { @include box-shadow( $card-callout-box-shadow-n ); }
-    .k-card-callout.k-callout-e { @include box-shadow( $card-callout-box-shadow-e ); }
-    .k-card-callout.k-callout-s { @include box-shadow( $card-callout-box-shadow-s ); }
-    .k-card-callout.k-callout-w { @include box-shadow( $card-callout-box-shadow-w ); }
-
-    .k-card:focus .k-card-callout,
-    .k-card.k-focus .k-card-callout,
-    .k-card.k-state-focus .k-card-callout {
-        @include fill(
-            $bg: $card-focus-bg,
-            $border: $card-focus-border
+            $bg: inherit,
+            $border: inherit
         );
 
-        &.k-callout-n { @include box-shadow( $card-focus-callout-box-shadow-n ); }
-        &.k-callout-e { @include box-shadow( $card-focus-callout-box-shadow-e ); }
-        &.k-callout-s { @include box-shadow( $card-focus-callout-box-shadow-s ); }
-        &.k-callout-w { @include box-shadow( $card-focus-callout-box-shadow-w ); }
+        @include box-shadow( inherit );
     }
 
 }
