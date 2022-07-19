@@ -39,6 +39,7 @@
         display: flex;
         flex-direction: inherit;
         overflow: hidden;
+        position: relative;
     }
 
 
@@ -329,7 +330,7 @@
         margin: 0;
         width: $card-callout-width;
         height: $card-callout-height;
-        border-width: $card-border-width $card-border-width 0 0;
+        border-width: $card-border-width;
         border-style: solid;
         box-sizing: border-box;
         position: absolute;
@@ -338,22 +339,22 @@
     .k-card-callout.k-callout-n {
         top: 0;
         left: 50%;
-        transform: translate(-50%, -50%) rotate(-45deg);
+        transform: translate(-50%, -50%) rotate(45deg);
     }
     .k-card-callout.k-callout-e {
         top: 50%;
         right: 0;
-        transform: translate(50%, -50%) rotate(135deg) scaleX(-1);
+        transform: translate(50%, -50%) rotate(-45deg);
     }
     .k-card-callout.k-callout-s {
         bottom: 0;
         left: 50%;
-        transform: translate(-50%, 50%) rotate(135deg);
+        transform: translate(-50%, 50%) rotate(45deg);
     }
     .k-card-callout.k-callout-w {
         top: 50%;
         left: 0;
-        transform: translate(-50%, -50%) rotate(-135deg);
+        transform: translate(-50%, -50%) rotate(45deg);
     }
 
 }

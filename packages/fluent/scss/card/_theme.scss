@@ -19,6 +19,7 @@
 
         .k-card-inner {
             background-color: inherit;
+            border-color: inherit;
         }
 
         &:focus,
@@ -113,13 +114,4 @@
 
         @include box-shadow( inherit );
     }
-
-    .k-card:focus .k-card-callout,
-    .k-card.k-focus .k-card-callout {
-        @include fill(
-            $bg: var( --kendo-card-focus-bg, #{$kendo-card-focus-bg} ),
-            $border: var( --kendo-card-focus-border, #{$kendo-card-focus-border} )
-        );
-    }
-
 }
