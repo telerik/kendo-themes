@@ -11,6 +11,11 @@
         );
     }
 
+    .k-popover-inner {
+        background-color: inherit;
+        border-color: inherit;
+    }
+
     // Header
     .k-popover-header {
         @include fill(
@@ -23,14 +28,11 @@
     // Callout
     .k-popover-callout {
         @include fill(
-            $bg: $popover-callout-bg,
-            $border: $popover-callout-border
+            $bg: inherit,
+            $border: inherit
         );
 
-        &.k-callout-n { @include box-shadow( $popover-callout-shadow-n ); }
-        &.k-callout-e { @include box-shadow( $popover-callout-shadow-e ); }
-        &.k-callout-s { @include box-shadow( $popover-callout-shadow-s ); }
-        &.k-callout-w { @include box-shadow( $popover-callout-shadow-w ); }
+        @include box-shadow( inherit )
     }
 
 }
