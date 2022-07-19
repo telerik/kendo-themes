@@ -27,6 +27,7 @@ export interface ComboboxProps {
     required?: boolean;
     loading?: boolean;
     disabled?: boolean;
+    hoverButton?: boolean;
 }
 
 export class Combobox extends React.Component<ComboboxProps> {
@@ -48,6 +49,7 @@ export class Combobox extends React.Component<ComboboxProps> {
             required,
             loading,
             disabled,
+            hoverButton
         } = this.props;
 
         return (
@@ -76,6 +78,7 @@ export class Combobox extends React.Component<ComboboxProps> {
                     rounded={null}
                     size={this.props.size}
                     fillMode={this.props.fillMode}
+                    hover={hoverButton}
                 />
             </Input>
         );

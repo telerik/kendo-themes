@@ -41,10 +41,10 @@ root.render(
             </div>
 
             <div>
-                <NumericTextbox fillMode="flat" value="Focus" focus />
+                <NumericTextbox fillMode="flat" value="Focus" focus hoverButton />
             </div>
             <div dir="rtl">
-                <NumericTextbox fillMode="flat" value="Focus" focus />
+                <NumericTextbox fillMode="flat" value="Focus" focus hoverButton />
             </div>
 
             <div>

@@ -6,6 +6,7 @@ export interface SpinButtonProps {
     className?: string;
     size?: null | 'small' | 'medium' | 'large';
     fillMode?: null | 'solid' | 'outline' | 'flat' | 'link' | 'clear';
+    hover?: boolean;
 }
 
 export class SpinButton extends React.Component<SpinButtonProps> {
@@ -14,7 +15,8 @@ export class SpinButton extends React.Component<SpinButtonProps> {
         const {
             className,
             size,
-            fillMode
+            fillMode,
+            hover
         } = this.props;
 
         return (
@@ -28,14 +30,16 @@ export class SpinButton extends React.Component<SpinButtonProps> {
                     icon="arrow-n"
                     rounded={null}
                     size={size}
-                    fillMode={fillMode}>
+                    fillMode={fillMode}
+                    hover={hover}>
                 </Button>
                 <Button
                     className="k-spinner-decrease"
                     icon="arrow-s"
                     rounded={null}
                     size={size}
-                    fillMode={fillMode}>
+                    fillMode={fillMode}
+                    hover={hover}>
                 </Button>
             </span>
         );

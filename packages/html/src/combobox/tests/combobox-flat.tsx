@@ -42,10 +42,10 @@ root.render(
             </div>
 
             <div>
-                <Combobox fillMode="flat" value="Focus" focus />
+                <Combobox fillMode="flat" value="Focus" focus hoverButton />
             </div>
             <div dir="rtl">
-                <Combobox fillMode="flat" value="Focus" focus />
+                <Combobox fillMode="flat" value="Focus" focus hoverButton />
             </div>
 
             <div>

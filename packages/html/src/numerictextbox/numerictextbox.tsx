@@ -25,6 +25,7 @@ export interface NumericTextboxProps {
     disabled?: boolean;
     showSpinButton?: boolean;
     showClearButton?: boolean;
+    hoverButton?: boolean;
 }
 
 export class NumericTextbox extends React.Component<NumericTextboxProps> {
@@ -50,7 +51,8 @@ export class NumericTextbox extends React.Component<NumericTextboxProps> {
             loading,
             disabled,
             showSpinButton,
-            showClearButton
+            showClearButton,
+            hoverButton
         } = this.props;
 
         return (
@@ -76,6 +78,7 @@ export class NumericTextbox extends React.Component<NumericTextboxProps> {
                         className="k-input-spinner"
                         size={size}
                         fillMode={fillMode}
+                        hover={hoverButton}
                     />
                 )}
             </Input>
