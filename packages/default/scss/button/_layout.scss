@@ -68,45 +68,27 @@
 
     .k-button-text {}
 
+
     // Sizes
-    .k-button-sm {
-        padding: $kendo-button-padding-y-sm $kendo-button-padding-x-sm;
-        font-size: $kendo-button-font-size-sm;
-        line-height: $kendo-button-line-height-sm;
-    }
-    .k-button-md {
-        padding: $kendo-button-padding-y-md $kendo-button-padding-x-md;
-        font-size: $kendo-button-font-size-md;
-        line-height: $kendo-button-line-height-md;
-    }
-    .k-button-lg {
-        padding: $kendo-button-padding-y-lg $kendo-button-padding-x-lg;
-        font-size: $kendo-button-font-size-lg;
-        line-height: $kendo-button-line-height-lg;
-    }
+    @each $size, $size-props in $kendo-button-sizes {
+        $_padding-x: map-get( $size-props, padding-x );
+        $_padding-y: map-get( $size-props, padding-y );
+        $_font-size: map-get( $size-props, font-size );
+        $_line-height: map-get( $size-props, line-height );
 
-    .k-icon-button.k-button-sm {
-        padding: $kendo-button-padding-y-sm;
-
-        > .k-button-icon {
-            min-width: calc( #{$kendo-button-font-size-sm} * #{$kendo-button-line-height-sm} );
-            min-height: calc( #{$kendo-button-font-size-sm} * #{$kendo-button-line-height-sm} );
+        .k-button-#{$size} {
+            padding: $_padding-y $_padding-x;
+            font-size: $_font-size;
+            line-height: $_line-height;
         }
-    }
-    .k-icon-button.k-button-md {
-        padding: $kendo-button-padding-y-md;
 
-        > .k-button-icon {
-            min-width: calc( #{$kendo-button-font-size-md} * #{$kendo-button-line-height-md} );
-            min-height: calc( #{$kendo-button-font-size-md} * #{$kendo-button-line-height-md} );
-        }
-    }
-    .k-icon-button.k-button-lg {
-        padding: $kendo-button-padding-y-lg;
+        .k-button-#{$size}.k-icon-button {
+            padding: $_padding-y;
 
-        > .k-button-icon {
-            min-width: calc( #{$kendo-button-font-size-lg} * #{$kendo-button-line-height-lg} );
-            min-height: calc( #{$kendo-button-font-size-lg} * #{$kendo-button-line-height-lg} );
+            > .k-button-icon {
+                min-width: calc( #{$_font-size} * #{$_line-height} );
+                min-height: calc( #{$_font-size} * #{$_line-height} );
+            }
         }
     }
 
