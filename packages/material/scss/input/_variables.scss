@@ -1,14 +1,31 @@
 // Input
+
+/// Default width of input components.
+/// @group input
 $kendo-input-default-width: 100% !default;
 
+/// Border width of input components.
+/// @group input
 $kendo-input-border-width: 1px !default;
 $kendo-input-border-height: 1px !default;
+/// Border radius of input components.
+/// @group input
 $kendo-input-border-radius: null !default;
 
+/// Horizontal padding of input components.
+/// @group input
 $kendo-input-padding-x: map-get( $spacing, 4 ) !default;
+/// Vertical padding of input components.
+/// @group input
 $kendo-input-padding-y: map-get( $spacing, 2 ) !default;
+///Font family of input components.
+/// @group input
 $kendo-input-font-family: $font-family !default;
+/// Font size of input components.
+/// @group input
 $kendo-input-font-size: $font-size-lg !default;
+/// Line height of input components.
+/// @group input
 $kendo-input-line-height: 1.25 !default;
 
 $kendo-input-padding-x-sm: map-get( $spacing, 4 ) !default;
@@ -22,9 +39,9 @@ $kendo-input-font-size-md: $font-size-lg !default;
 $kendo-input-line-height-md: 1.25 !default;
 
 $kendo-input-padding-x-lg: map-get( $spacing, 4 ) !default;
-$kendo-input-padding-y-lg: map-get( $spacing, 2 ) + map-get( $spacing, thin ) !default;
+$kendo-input-padding-y-lg: map-get( $spacing, 2 ) !default;
 $kendo-input-font-size-lg: $font-size-lg !default;
-$kendo-input-line-height-lg: 1.25 !default;
+$kendo-input-line-height-lg: 1.5 !default;
 
 $kendo-input-sizes: (
     sm: (
