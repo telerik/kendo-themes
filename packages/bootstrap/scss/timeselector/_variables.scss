@@ -30,3 +30,41 @@ $time-list-highlight-bg: $component-bg !default;
 $time-list-highlight-border: $component-border !default;
 
 $time-list-focused-bg: rgba(0, 0, 0, .02) !default;
+
+
+// Time selector sizes
+$kendo-time-selector-sm-font-size: $kendo-list-font-size-sm !default;
+$kendo-time-selector-sm-line-height: $kendo-list-line-height-sm !default;
+$kendo-time-selector-sm-list-item-padding-x: $kendo-list-item-padding-x-sm !default;
+$kendo-time-selector-sm-list-item-padding-y: $kendo-list-item-padding-y-sm !default;
+
+$kendo-time-selector-md-font-size: $kendo-list-font-size-md !default;
+$kendo-time-selector-md-line-height: $kendo-list-line-height-md !default;
+$kendo-time-selector-md-list-item-padding-x: $kendo-list-item-padding-x-md !default;
+$kendo-time-selector-md-list-item-padding-y: $kendo-list-item-padding-y-md !default;
+
+$kendo-time-selector-lg-font-size: $kendo-list-font-size-lg !default;
+$kendo-time-selector-lg-line-height: $kendo-list-line-height-lg !default;
+$kendo-time-selector-lg-list-item-padding-x: $kendo-list-item-padding-x-lg !default;
+$kendo-time-selector-lg-list-item-padding-y: $kendo-list-item-padding-y-lg !default;
+
+$kendo-time-selector-sizes: (
+    sm: (
+        font-size: $kendo-time-selector-sm-font-size,
+        line-height: $kendo-time-selector-sm-line-height,
+        list-item-padding-x: $kendo-time-selector-sm-list-item-padding-x,
+        list-item-padding-y: $kendo-time-selector-sm-list-item-padding-y
+    ),
+    md: (
+        font-size: $kendo-time-selector-md-font-size,
+        line-height: $kendo-time-selector-md-line-height,
+        list-item-padding-x: $kendo-time-selector-md-list-item-padding-x,
+        list-item-padding-y: $kendo-time-selector-md-list-item-padding-y
+    ),
+    lg: (
+        font-size: $kendo-time-selector-lg-font-size,
+        line-height: $kendo-time-selector-lg-line-height,
+        list-item-padding-x: $kendo-time-selector-lg-list-item-padding-x,
+        list-item-padding-y: $kendo-time-selector-lg-list-item-padding-y
+    )
+) !default;
