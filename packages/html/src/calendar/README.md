@@ -12,7 +12,7 @@
             <button type="button" class="k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button k-nav-prev">
                 <span class="k-button-icon k-icon k-i-arrow-chevron-left"></span>
             </button>
-            <span class="k-nav-today">TODAY</span>
+            <span class="k-nav-today">Today</span>
             <button type="button" class="k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button k-nav-next">
                 <span class="k-button-icon k-icon k-i-arrow-chevron-right"></span>
             </button>
@@ -86,7 +86,7 @@
     </div>
 
     <div class="k-calendar-footer">
-        <a href="#" class="k-link k-nav-today">Monday, March 21, 2022</a>
+        <a class="k-nav-today">Monday, March 21, 2022</a>
     </div>
 </div>
 
@@ -152,6 +152,6 @@
             </tbody>
         </table>
     </div>
-    {showCalendarFooter && <div class="k-calendar-footer"><a href="#" class="k-link k-nav-today">...</a></div>}
+    {showCalendarFooter && <div class="k-calendar-footer"><a class="k-nav-today">...</a></div>}
 </div>
 ```
