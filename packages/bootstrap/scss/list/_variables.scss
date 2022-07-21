@@ -3,14 +3,14 @@
 /// Font size of the list component, if no size is set.
 /// @group list
 $kendo-list-font-size: null !default;
-$kendo-list-font-size-sm: $font-size-md !default;
+$kendo-list-font-size-sm: $font-size-sm !default;
 $kendo-list-font-size-md: $font-size-md !default;
 $kendo-list-font-size-lg: $font-size-md !default;
 
 /// Line height of the list component, if no size is set.
 /// @group list
 $kendo-list-line-height: null !default;
-$kendo-list-line-height-sm: null !default;
+$kendo-list-line-height-sm: (20 / 14) !default;
 $kendo-list-line-height-md: null !default;
 $kendo-list-line-height-lg: null !default;
 
@@ -26,9 +26,9 @@ $kendo-list-header-padding-x-lg: map-get( $spacing, 4 ) !default;
 /// @group list
 $kendo-list-header-padding-y: null !default;
 $kendo-list-header-padding-y-base: map-get( $spacing, 1 ) !default;
-$kendo-list-header-padding-y-sm: map-get( $spacing, 1 ) - map-get( $spacing, thin ) !default;
+$kendo-list-header-padding-y-sm: map-get( $spacing, 1 ) !default;
 $kendo-list-header-padding-y-md: map-get( $spacing, 1 ) !default;
-$kendo-list-header-padding-y-lg: map-get( $spacing, 1 ) + map-get( $spacing, thin ) !default;
+$kendo-list-header-padding-y-lg: map-get( $spacing, 2 ) !default;
 
 /// Border width of list header.
 /// @group list
@@ -64,9 +64,9 @@ $kendo-list-item-padding-x-lg: map-get( $spacing, 4 ) !default;
 /// @group list
 $kendo-list-item-padding-y: null !default;
 $kendo-list-item-padding-y-base: map-get( $spacing, 1 ) !default;
-$kendo-list-item-padding-y-sm: map-get( $spacing, 1 ) - map-get( $spacing, thin ) !default;
+$kendo-list-item-padding-y-sm: map-get( $spacing, 1 ) !default;
 $kendo-list-item-padding-y-md: map-get( $spacing, 1 ) !default;
-$kendo-list-item-padding-y-lg: map-get( $spacing, 1 ) + map-get( $spacing, thin ) !default;
+$kendo-list-item-padding-y-lg: map-get( $spacing, 2 ) !default;
 
 /// Font size of list items, if no size is set.
 /// @group list
