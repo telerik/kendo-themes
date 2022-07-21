@@ -32,8 +32,8 @@
             &.k-hover,
             &.k-state-hover,
             &:focus,
-            &.k-state-focus,
-            &.k-focus {
+            &.k-focus,
+            &.k-state-focus {
                 color: $calendar-today-nav-hover-text;
             }
         }
@@ -51,11 +51,11 @@
         // Special days
         .k-calendar-view .k-today {
             @if $calendar-today-style == box {
-                .k-link {
+                .k-calendar-cell-inner {
                     box-shadow: inset 0 0 0 1px $calendar-today-color;
                 }
-                &.k-state-focused .k-link,
-                &.k-focus .k-link {
+                &.k-focus .k-calendar-cell-inner,
+                &.k-state-focused .k-calendar-cell-inner {
                     box-shadow: inset 0 0 0 1px $calendar-today-color, $calendar-cell-focused-shadow;
                 }
             } @else if $calendar-today-style == color {
@@ -89,9 +89,9 @@
 
 
         // Interactive states
-        .k-calendar-td:hover .k-link,
-        .k-calendar-td.k-state-hover .k-link,
-        .k-calendar-td.k-hover .k-link {
+        .k-calendar-td:hover .k-calendar-cell-inner,
+        .k-calendar-td.k-hover .k-calendar-cell-inner,
+        .k-calendar-td.k-state-hover .k-calendar-cell-inner {
             @include fill(
                 $calendar-cell-hover-text,
                 $calendar-cell-hover-bg,
@@ -99,8 +99,8 @@
                 $calendar-cell-hover-gradient
             );
         }
-        .k-calendar-td.k-state-selected .k-link,
-        .k-calendar-td.k-selected .k-link {
+        .k-calendar-td.k-selected .k-calendar-cell-inner,
+        .k-calendar-td.k-state-selected .k-calendar-cell-inner {
             @include fill(
                 $calendar-cell-selected-text,
                 $calendar-cell-selected-bg,
@@ -108,12 +108,9 @@
                 $calendar-cell-selected-gradient
             );
         }
-        .k-calendar-td.k-state-selected:hover .k-link,
-        .k-calendar-td.k-selected:hover .k-link,
-        .k-calendar-td.k-state-selected.k-state-hover .k-link,
-        .k-calendar-td.k-selected.k-hover .k-link,
-        .k-calendar-td.k-selected:hover .k-link,
-        .k-calendar-td.k-selected.k-hover .k-link {
+        .k-calendar-td.k-selected:hover .k-calendar-cell-inner,
+        .k-calendar-td.k-selected.k-hover .k-calendar-cell-inner,
+        .k-calendar-td.k-state-selected:hover .k-calendar-cell-inner {
             @include fill(
                 $calendar-cell-selected-hover-text,
                 $calendar-cell-selected-hover-bg,
@@ -121,18 +118,15 @@
                 $calendar-cell-selected-hover-gradient
             );
         }
-        .k-calendar-td.k-state-focused .k-link,
-        .k-calendar-td.k-focus .k-link,
-        .k-calendar-td.k-state-focus .k-link,
-        .k-calendar-td.k-focus .k-link {
+        .k-calendar-td:focus .k-calendar-cell-inner,
+        .k-calendar-td.k-focus .k-calendar-cell-inner,
+        .k-calendar-td.k-state-focus .k-calendar-cell-inner,
+        .k-calendar-td.k-state-focused .k-calendar-cell-inner {
             box-shadow: $calendar-cell-focused-shadow;
         }
-        .k-calendar-td.k-state-selected.k-state-focused .k-link,
-        .k-calendar-td.k-selected.k-focused .k-link,
-        .k-calendar-td.k-state-selected.k-state-focus .k-link,
-        .k-calendar-td.k-selected.k-focus .k-link,
-        .k-calendar-td.k-selected:focus .k-link,
-        .k-calendar-td.k-selected.k-focus .k-link {
+        .k-calendar-td.k-selected:focus .k-calendar-cell-inner,
+        .k-calendar-td.k-selected.k-focus .k-calendar-cell-inner,
+        .k-calendar-td.k-state-selected.k-state-focus .k-calendar-cell-inner {
             box-shadow: $calendar-cell-selected-focus-shadow;
         }
 
@@ -146,8 +140,8 @@
             box-shadow: inset -1px 0 $calendar-navigation-border;
 
             li:hover,
-            li.k-state-hover,
-            li.k-hover {
+            li.k-hover,
+            li.k-state-hover {
                 color: $calendar-today-nav-hover-text;
             }
         }
@@ -202,19 +196,7 @@
         .k-range-start,
         .k-range-end,
         .k-range-mid {
-            // sass-lint:disable-block indentation
-            background-image:
-                linear-gradient(
-                    transparent $calendar-range-gap,
-                    $calendar-range-bg $calendar-range-gap,
-                    $calendar-range-bg calc(100% - #{$calendar-range-gap}),
-                    transparent calc(100% - #{$calendar-range-gap})
-                );
-
-            .k-ie & {
-                background-image: none;
-                background-color: $calendar-range-bg;
-            }
+            background-color: $calendar-range-bg;
         }
 
         .k-range-start.k-range-end {
@@ -224,16 +206,16 @@
 
         .k-range-start,
         .k-range-end {
-            .k-link {
+            .k-calendar-cell-inner {
                 background-color: $calendar-cell-selected-bg;
             }
         }
 
-        .k-range-start.k-state-active,
         .k-range-start.k-active,
-        .k-range-end.k-state-active,
-        .k-range-end.k-active {
-            .k-link {
+        .k-range-start.k-state-active,
+        .k-range-end.k-active,
+        .k-range-end.k-state-active {
+            .k-calendar-cell-inner {
                 box-shadow: inset 0 0 2px 2px rgba(0, 0, 0, .2);
             }
         }
@@ -246,8 +228,8 @@
                 content: "";
                 display: block;
                 position: absolute;
-                top: $calendar-range-gap;
-                bottom: $calendar-range-gap;
+                top: 0;
+                bottom: 0;
                 width: $calendar-range-split-size;
             }
         }

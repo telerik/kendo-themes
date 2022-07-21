@@ -13,7 +13,6 @@ $calendar-border: $component-border !default;
 $calendar-header-padding-x: map-get( $spacing, 1 ) !default;
 $calendar-header-padding-y: map-get( $spacing, 1 ) !default;
 $calendar-header-border-width: 0px !default;
-$calendar-header-min-width: ($calendar-cell-size * 8) !default;
 
 $calendar-header-bg: null !default;
 $calendar-header-text: $header-text !default;
@@ -110,3 +109,47 @@ $infinite-calendar-view-height: ( $calendar-cell-size * 9 ) !default;
 
 
 // Multiview calendar
+
+
+// Calendar sizes
+$kendo-calendar-sm-font-size: $font-size-md !default;
+$kendo-calendar-sm-line-height: $line-height-md !default;
+$kendo-calendar-sm-cell-size: 32px !default;
+$kendo-calendar-sm-cell-padding-x: .125rem !default;
+$kendo-calendar-sm-cell-padding-y: .125rem !default;
+
+$kendo-calendar-md-font-size: $font-size-md !default;
+$kendo-calendar-md-line-height: $line-height-md !default;
+$kendo-calendar-md-cell-size: 36px !default;
+$kendo-calendar-md-cell-padding-x: map-get( $spacing, 1 ) !default;
+$kendo-calendar-md-cell-padding-y: map-get( $spacing, 1 ) !default;
+
+$kendo-calendar-lg-font-size: $font-size-lg !default;
+$kendo-calendar-lg-line-height: $line-height-lg !default;
+$kendo-calendar-lg-cell-size: 40px !default;
+$kendo-calendar-lg-cell-padding-x: map-get( $spacing, 1 ) !default;
+$kendo-calendar-lg-cell-padding-y: map-get( $spacing, 1 ) !default;
+
+$kendo-calendar-sizes: (
+    sm: (
+        font-size: $kendo-calendar-sm-font-size,
+        line-height: $kendo-calendar-sm-line-height,
+        cell-size: $kendo-calendar-sm-cell-size,
+        cell-padding-x: $kendo-calendar-sm-cell-padding-y,
+        cell-padding-y: $kendo-calendar-sm-cell-padding-x
+    ),
+    md: (
+        font-size: $kendo-calendar-md-font-size,
+        line-height: $kendo-calendar-md-line-height,
+        cell-size: $kendo-calendar-md-cell-size,
+        cell-padding-x: $kendo-calendar-md-cell-padding-y,
+        cell-padding-y: $kendo-calendar-md-cell-padding-x
+    ),
+    lg: (
+        font-size: $kendo-calendar-lg-font-size,
+        line-height: $kendo-calendar-lg-line-height,
+        cell-size: $kendo-calendar-lg-cell-size,
+        cell-padding-x: $kendo-calendar-lg-cell-padding-y,
+        cell-padding-y: $kendo-calendar-lg-cell-padding-x
+    )
+) !default;
