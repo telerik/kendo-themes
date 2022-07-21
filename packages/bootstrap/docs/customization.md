@@ -2364,7 +2364,7 @@ The following table lists the available variables for customizing the Bootstrap 
 </td>
 <td>
 
-`(sm: (padding-x: 0.25rem, padding-y: 0.125rem, font-size: 1rem, line-height: 1.25), md: (padding-x: 0.25rem, padding-y: 0.25rem, font-size: 1rem, line-height: 1.25), lg: (padding-x: 0.25rem, padding-y: 0.375rem, font-size: 1rem, line-height: 1.25))`
+`(sm: (padding-x: 0.25rem, padding-y: 0.125rem, font-size: 0.875rem, line-height: 1.25), md: (padding-x: 0.25rem, padding-y: 0.25rem, font-size: 1rem, line-height: 1.25), lg: (padding-x: 0.25rem, padding-y: 0.375rem, font-size: 1rem, line-height: 1.25))`
 
 </td>
 </tr>
@@ -4317,6 +4317,171 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The URL to the icon font that will be used by the theme<br />The default value of `null` embeds the package font with a `data:` URL</div></div>
+    </td>
+</tr>
+</tbody>
+</table>
+
+### Input
+
+<table class="theme-variables">
+    <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
+    </tr>
+</thead>
+<tbody>
+        <tr>
+    <td>$kendo-input-default-width</td>
+    <td>Number</td>
+<td>
+
+`100%`
+
+</td>
+<td>
+
+`100%`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Default width of input components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-border-width</td>
+    <td>Number</td>
+<td>
+
+`$input-border-width`
+
+</td>
+<td>
+
+`1px`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border width of input components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-border-radius</td>
+    <td>Null</td>
+<td>
+
+`null`
+
+</td>
+<td>
+
+`null`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border radius of input components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-padding-x</td>
+    <td>Number</td>
+<td>
+
+`$input-padding-x`
+
+</td>
+<td>
+
+`0.75rem`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of input components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-padding-y</td>
+    <td>Number</td>
+<td>
+
+`$input-padding-y`
+
+</td>
+<td>
+
+`0.375rem`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of input components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-font-family</td>
+    <td>List</td>
+<td>
+
+`$font-family`
+
+</td>
+<td>
+
+`system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font family of input components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-font-size</td>
+    <td>Number</td>
+<td>
+
+`$font-size`
+
+</td>
+<td>
+
+`1rem`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of input components.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-input-line-height</td>
+    <td>Number</td>
+<td>
+
+`$input-line-height`
+
+</td>
+<td>
+
+`1.5`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of input components.</div></div>
     </td>
 </tr>
 </tbody>
@@ -8883,7 +9048,7 @@ The following table lists the available variables for customizing the Bootstrap 
 </td>
 <td>
 
-`(sm: (font-size: 1rem, line-height: 1.5, item-padding-x: 0.75rem, item-padding-y: 0.125rem), md: (font-size: 1rem, line-height: 1.5, item-padding-x: 0.75rem, item-padding-y: 0.25rem), lg: (font-size: 1rem, line-height: 1.5, item-padding-x: 0.75rem, item-padding-y: 0.375rem))`
+`(sm: (font-size: 0.875rem, line-height: 1.4285714286, item-padding-x: 0.5rem, item-padding-y: 0.25rem), md: (font-size: 1rem, line-height: 1.5, item-padding-x: 0.75rem, item-padding-y: 0.25rem), lg: (font-size: 1rem, line-height: 1.5, item-padding-x: 0.75rem, item-padding-y: 0.5rem))`
 
 </td>
 </tr>
