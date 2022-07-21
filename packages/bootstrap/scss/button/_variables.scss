@@ -11,34 +11,33 @@ $kendo-button-border-radius: null !default;
 /// Horizontal padding of the button.
 /// @group button
 $kendo-button-padding-x: $btn-padding-x !default;
-$kendo-button-padding-x-sm: $btn-padding-x-sm !default;
-$kendo-button-padding-x-md: $btn-padding-x !default;
-$kendo-button-padding-x-lg: $btn-padding-x-lg !default;
-
 /// Vertical padding of the button.
 /// @group button
 $kendo-button-padding-y: $btn-padding-y !default;
-$kendo-button-padding-y-sm: $btn-padding-y-sm !default;
-$kendo-button-padding-y-md: $btn-padding-y !default;
-$kendo-button-padding-y-lg: $btn-padding-y-lg !default;
-
 /// Font family of the button.
 /// @group button
 $kendo-button-font-family: $font-family !default;
-
 /// Font sizes of the button.
 /// @group button
 $kendo-button-font-size: $btn-font-size !default;
-$kendo-button-font-size-sm: $btn-font-size !default;
-$kendo-button-font-size-md: $btn-font-size !default;
-$kendo-button-font-size-lg: $btn-font-size !default;
-
 /// Line heights used along with $font-size.
 /// @group button
 $kendo-button-line-height: $btn-line-height !default;
-$kendo-button-line-height-sm: $btn-line-height !default;
-$kendo-button-line-height-md: $btn-line-height !default;
-$kendo-button-line-height-lg: $btn-line-height !default;
+
+$kendo-button-padding-x-sm: $btn-padding-x-sm !default;
+$kendo-button-padding-y-sm: $btn-padding-y-sm !default;
+$kendo-button-font-size-sm: $font-size-md !default;
+$kendo-button-line-height-sm: $line-height-md !default;
+
+$kendo-button-padding-x-md: $btn-padding-x !default;
+$kendo-button-padding-y-md: $btn-padding-y !default;
+$kendo-button-font-size-md: $font-size-md !default;
+$kendo-button-line-height-md: $line-height-md !default;
+
+$kendo-button-padding-x-lg: $btn-padding-x-lg !default;
+$kendo-button-padding-y-lg: $btn-padding-y-lg !default;
+$kendo-button-font-size-lg: $font-size-md !default;
+$kendo-button-line-height-lg: $line-height-md !default;
 
 /// Calculated height of the button.
 /// @group button

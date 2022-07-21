@@ -11,33 +11,32 @@ $kendo-button-border-radius: null !default;
 /// Horizontal padding of the button.
 /// @group button
 $kendo-button-padding-x: map-get( $spacing, 4 ) !default;
-$kendo-button-padding-x-sm: map-get( $spacing, 4 ) !default;
-$kendo-button-padding-x-md: map-get( $spacing, 4 ) !default;
-$kendo-button-padding-x-lg: map-get( $spacing, 4 ) !default;
-
 /// Vertical padding of the button.
 /// @group button
 $kendo-button-padding-y: map-get( $spacing, 2 ) !default;
-$kendo-button-padding-y-sm: map-get( $spacing, 2 ) - map-get( $spacing, thin ) !default;
-$kendo-button-padding-y-md: map-get( $spacing, 2 ) !default;
-$kendo-button-padding-y-lg: map-get( $spacing, 2 ) + map-get( $spacing, thin ) !default;
-
 /// Font family of the button.
 /// @group button
 $kendo-button-font-family: $font-family !default;
-
 /// Font sizes of the button.
 /// @group button
 $kendo-button-font-size: $font-size-md !default;
-$kendo-button-font-size-sm: $font-size-md !default;
-$kendo-button-font-size-md: $font-size-md !default;
-$kendo-button-font-size-lg: $font-size-md !default;
-
 /// Line heights used along with $font-size.
 /// @group button
 $kendo-button-line-height: ( 20 / 14 ) !default;
+
+$kendo-button-padding-x-sm: map-get( $spacing, 4 ) !default;
+$kendo-button-padding-y-sm: map-get( $spacing, 2 ) - map-get( $spacing, thin ) !default;
+$kendo-button-font-size-sm: $font-size-md !default;
 $kendo-button-line-height-sm: ( 20 / 14 ) !default;
+
+$kendo-button-padding-x-md: map-get( $spacing, 4 ) !default;
+$kendo-button-padding-y-md: map-get( $spacing, 2 ) !default;
+$kendo-button-font-size-md: $font-size-md !default;
 $kendo-button-line-height-md: ( 20 / 14 ) !default;
+
+$kendo-button-padding-x-lg: map-get( $spacing, 4 ) !default;
+$kendo-button-padding-y-lg: map-get( $spacing, 2 ) + map-get( $spacing, thin ) !default;
+$kendo-button-font-size-lg: $font-size-md !default;
 $kendo-button-line-height-lg: ( 20 / 14 ) !default;
 
 /// Calculated height of the button.
