@@ -21,7 +21,7 @@ export class CalendarFooter extends React.Component<CalendarFooterProps> {
                     className,
                     'k-calendar-footer'
                 )}>
-                <a href="#" className="k-link k-nav-today">Monday, October 29, 2021</a>
+                <a className="k-nav-today">Monday, October 29, 2021</a>
             </div>
         );
     }
