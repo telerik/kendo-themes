@@ -162,7 +162,7 @@ The following table lists the available variables for customization.
 </td>
 <td>
 
-`(sm: (padding-x: 0.25rem, padding-y: 0.125rem, font-size: 1rem, line-height: 1.25), md: (padding-x: 0.25rem, padding-y: 0.25rem, font-size: 1rem, line-height: 1.25), lg: (padding-x: 0.25rem, padding-y: 0.375rem, font-size: 1rem, line-height: 1.25))`
+`(sm: (padding-x: 0.25rem, padding-y: 0.125rem, font-size: 0.875rem, line-height: 1.25), md: (padding-x: 0.25rem, padding-y: 0.25rem, font-size: 1rem, line-height: 1.25), lg: (padding-x: 0.25rem, padding-y: 0.375rem, font-size: 1rem, line-height: 1.25))`
 
 </td>
 </tr>

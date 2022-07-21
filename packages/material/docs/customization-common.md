@@ -277,6 +277,24 @@ The following table lists the available variables for customization.
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The gradient background of selected items.</div></div>
     </td>
 </tr>
+<tr>
+    <td>$kendo-input-font-family</td>
+    <td>List</td>
+<td>
+
+`$font-family`
+
+</td>
+<td>
+
+`Roboto, "Helvetica Neue", sans-serif`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font family of input components.<br /> @group input</div></div>
+    </td>
+</tr>
 </tbody>
 </table>
 

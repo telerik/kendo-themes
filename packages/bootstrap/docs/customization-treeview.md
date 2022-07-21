@@ -198,7 +198,7 @@ The following table lists the available variables for customization.
 </td>
 <td>
 
-`(sm: (font-size: 1rem, line-height: 1.5, item-padding-x: 0.75rem, item-padding-y: 0.125rem), md: (font-size: 1rem, line-height: 1.5, item-padding-x: 0.75rem, item-padding-y: 0.25rem), lg: (font-size: 1rem, line-height: 1.5, item-padding-x: 0.75rem, item-padding-y: 0.375rem))`
+`(sm: (font-size: 0.875rem, line-height: 1.4285714286, item-padding-x: 0.5rem, item-padding-y: 0.25rem), md: (font-size: 1rem, line-height: 1.5, item-padding-x: 0.75rem, item-padding-y: 0.25rem), lg: (font-size: 1rem, line-height: 1.5, item-padding-x: 0.75rem, item-padding-y: 0.5rem))`
 
 </td>
 </tr>
