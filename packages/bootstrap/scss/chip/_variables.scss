@@ -24,7 +24,7 @@ $kendo-chip-padding-y-lg: map-get( $spacing, 1 ) + map-get( $spacing, thin ) !de
 /// Font sizes of the chip.
 /// @group chip
 $kendo-chip-font-size: $font-size-md !default;
-$kendo-chip-font-size-sm: $font-size-md !default;
+$kendo-chip-font-size-sm: $font-size-sm !default;
 $kendo-chip-font-size-md: $font-size-md !default;
 $kendo-chip-font-size-lg: $font-size-md !default;
 
