@@ -6,13 +6,13 @@ $kendo-treeview-font-family: $font-family !default;
 /// Font size of the treeview component.
 /// @group treeview
 $kendo-treeview-font-size: $font-size-md !default;
-$kendo-treeview-font-size-sm: $font-size-md !default;
+$kendo-treeview-font-size-sm: $font-size-sm !default;
 $kendo-treeview-font-size-md: $font-size-md !default;
 $kendo-treeview-font-size-lg: $font-size-md !default;
 /// Line height of the treeview component.
 /// @group treeview
 $kendo-treeview-line-height: $line-height !default;
-$kendo-treeview-line-height-sm: $line-height !default;
+$kendo-treeview-line-height-sm: (20 / 14) !default;
 $kendo-treeview-line-height-md: $line-height !default;
 $kendo-treeview-line-height-lg: $line-height !default;
 
@@ -23,15 +23,15 @@ $kendo-treeview-indent: 16px !default;
 /// Horizontal padding of treeview items.
 /// @group treeview
 $kendo-treeview-item-padding-x: map-get( $spacing, 3 ) !default;
-$kendo-treeview-item-padding-x-sm: map-get( $spacing, 3 ) !default;
+$kendo-treeview-item-padding-x-sm: map-get( $spacing, 2 ) !default;
 $kendo-treeview-item-padding-x-md: map-get( $spacing, 3 ) !default;
 $kendo-treeview-item-padding-x-lg: map-get( $spacing, 3 ) !default;
 /// Vertical padding of treeview items.
 /// @group treeview
 $kendo-treeview-item-padding-y: map-get( $spacing, 1 ) !default;
-$kendo-treeview-item-padding-y-sm: map-get( $spacing, 1 ) - map-get( $spacing, thin ) !default;
+$kendo-treeview-item-padding-y-sm: map-get( $spacing, 1 ) !default;
 $kendo-treeview-item-padding-y-md: map-get( $spacing, 1 ) !default;
-$kendo-treeview-item-padding-y-lg: map-get( $spacing, 1 ) + map-get( $spacing, thin ) !default;
+$kendo-treeview-item-padding-y-lg: map-get( $spacing, 2 ) !default;
 /// Border width of treeview items.
 /// @group treeview
 $kendo-treeview-item-border-width: 0px !default;
