@@ -90,7 +90,7 @@
 // @use "appbar";
 // @use "fab";
 // @use "menu";
-// @use "toolbar";
+@use "toolbar";
 
 
 // Popups and modals
@@ -158,8 +158,6 @@
 // @use "map";
 // @use "orgchart";
 // @use "signature";
-
-
 
 // Setup
 @mixin config($config: null ) {
@@ -254,7 +252,7 @@
     // @include appbar.styles();
     // @include fab.styles();
     // @include menu.styles();
-    // @include toolbar.styles();
+    @include toolbar.styles();
 
 
     // Popups and modals

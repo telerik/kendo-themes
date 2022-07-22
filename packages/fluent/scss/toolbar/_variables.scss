@@ -1,0 +1,40 @@
+@use "../core/" as *;
+
+/// Horizontal padding of the toolbar.
+/// @group toolbar
+$kendo-toolbar-padding-x: map-get( $kendo-spacing, 2 ) !default;
+/// Vertical padding of the toolbar.
+/// @group toolbar
+$kendo-toolbar-padding-y: map-get( $kendo-spacing, 2 ) !default;
+/// Width of the border around the toolbar.
+/// @group toolbar
+$kendo-toolbar-border-width: 1px !default;
+/// Spacing of the toolbar
+/// @group toolbar
+$kendo-toolbar-spacing: $kendo-toolbar-padding-x !default;
+/// Font family of the toolbar.
+/// @group toolbar
+$kendo-toolbar-font-family: var( --kendo-font-family, inherit ) !default;
+/// Font size of the toolbar.
+/// @group toolbar
+$kendo-toolbar-font-size: var( --kendo-font-size, inherit ) !default;
+/// Line height of the toolbar.
+/// @group toolbar
+$kendo-toolbar-line-height: var( --kendo-line-height, normal ) !default;
+/// Background color of the toolbar.
+/// @group toolbar
+$kendo-toolbar-bg: get-theme-color-var( neutral-10 ) !default;
+/// Text color of the toolbar.
+/// @group toolbar
+$kendo-toolbar-text: var( --kendo-component-text, inherit ) !default;
+/// Color of the border around the toolbar
+/// @group toolbar
+$kendo-toolbar-border: var( --kendo-component-border, initial ) !default;
+
+/// Color of the separator border of the toolbar
+/// @group toolbar
+$kendo-toolbar-separator-border: get-theme-color-var( neutral-60 ) !default;
+
+/// The width of the input in the toolbar
+/// @group toolbar
+$kendo-toolbar-input-width: 10em !default;
