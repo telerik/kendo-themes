@@ -103,20 +103,20 @@ root.render(
                                         <td className="k-calendar-td">
                                             <span className="k-link">2</span>
                                         </td>
-                                        <td className="k-calendar-td k-today">
+                                        <td className="k-calendar-td">
                                             <span className="k-link">3</span>
                                         </td>
-                                        <td className="k-calendar-td k-state-hover">
+                                        <td className="k-calendar-td">
                                             <span className="k-link">4</span>
                                         </td>
-                                        <td className="k-calendar-td k-state-focused">
+                                        <td className="k-calendar-td">
                                             <span className="k-link">5</span>
                                         </td>
-                                        <td className="k-calendar-td k-state-selected">
+                                        <td className="k-calendar-td">
                                             <span className="k-link">6</span>
                                         </td>
                                         <td className="k-calendar-td k-weekend">
-                                            <span className="k-link">{7}</span>
+                                            <span className="k-link">7</span>
                                         </td>
                                     </tr>
                                     <tr className="k-calendar-tr">
@@ -129,13 +129,13 @@ root.render(
                                         <td className="k-calendar-td">
                                             <span className="k-link">10</span>
                                         </td>
-                                        <td className="k-calendar-td k-state-hover k-state-focused">
+                                        <td className="k-calendar-td">
                                             <span className="k-link">11</span>
                                         </td>
-                                        <td className="k-calendar-td k-state-selected k-state-focused">
+                                        <td className="k-calendar-td">
                                             <span className="k-link">12</span>
                                         </td>
-                                        <td className="k-calendar-td k-state-selected k-state-hover">
+                                        <td className="k-calendar-td">
                                             <span className="k-link">13</span>
                                         </td>
                                         <td className="k-calendar-td k-weekend">
@@ -146,22 +146,22 @@ root.render(
                                         <td className="k-calendar-td k-weekend">
                                             <span className="k-link">15</span>
                                         </td>
-                                        <td className="k-calendar-td">
+                                        <td className="k-calendar-td k-today">
                                             <span className="k-link">16</span>
                                         </td>
-                                        <td className="k-calendar-td">
-                                            <span className="k-link">1{7}</span>
+                                        <td className="k-calendar-td k-focus">
+                                            <span className="k-link">17</span>
                                         </td>
-                                        <td className="k-calendar-td">
+                                        <td className="k-calendar-td k-selected">
                                             <span className="k-link">18</span>
                                         </td>
-                                        <td className="k-calendar-td">
+                                        <td className="k-calendar-td k-hover k-focus">
                                             <span className="k-link">19</span>
                                         </td>
-                                        <td className="k-calendar-td">
+                                        <td className="k-calendar-td k-selected k-focus">
                                             <span className="k-link">20</span>
                                         </td>
-                                        <td className="k-calendar-td k-weekend">
+                                        <td className="k-calendar-td k-weekend k-selected k-hover">
                                             <span className="k-link">21</span>
                                         </td>
                                     </tr>
@@ -182,7 +182,7 @@ root.render(
                                             <span className="k-link">26</span>
                                         </td>
                                         <td className="k-calendar-td">
-                                            <span className="k-link">2{7}</span>
+                                            <span className="k-link">27</span>
                                         </td>
                                         <td className="k-calendar-td k-weekend">
                                             <span className="k-link">28</span>
@@ -319,17 +319,17 @@ root.render(
                                         <td className="k-calendar-td k-today">
                                             <span className="k-link">3</span>
                                         </td>
-                                        <td className="k-calendar-td k-state-hover">
+                                        <td className="k-calendar-td">
                                             <span className="k-link">4</span>
                                         </td>
-                                        <td className="k-calendar-td k-state-focused">
+                                        <td className="k-calendar-td">
                                             <span className="k-link">5</span>
                                         </td>
-                                        <td className="k-calendar-td k-state-selected">
+                                        <td className="k-calendar-td">
                                             <span className="k-link">6</span>
                                         </td>
                                         <td className="k-calendar-td k-weekend">
-                                            <span className="k-link">{7}</span>
+                                            <span className="k-link">7</span>
                                         </td>
                                     </tr>
                                     <tr className="k-calendar-tr">
@@ -342,13 +342,13 @@ root.render(
                                         <td className="k-calendar-td">
                                             <span className="k-link">10</span>
                                         </td>
-                                        <td className="k-calendar-td k-state-hover k-state-focused">
+                                        <td className="k-calendar-td">
                                             <span className="k-link">11</span>
                                         </td>
-                                        <td className="k-calendar-td k-state-selected k-state-focused">
+                                        <td className="k-calendar-td">
                                             <span className="k-link">12</span>
                                         </td>
-                                        <td className="k-calendar-td k-state-selected k-state-hover">
+                                        <td className="k-calendar-td">
                                             <span className="k-link">13</span>
                                         </td>
                                         <td className="k-calendar-td k-weekend">
@@ -363,7 +363,7 @@ root.render(
                                             <span className="k-link">16</span>
                                         </td>
                                         <td className="k-calendar-td">
-                                            <span className="k-link">1{7}</span>
+                                            <span className="k-link">17</span>
                                         </td>
                                         <td className="k-calendar-td">
                                             <span className="k-link">18</span>
@@ -395,7 +395,7 @@ root.render(
                                             <span className="k-link">26</span>
                                         </td>
                                         <td className="k-calendar-td">
-                                            <span className="k-link">2{7}</span>
+                                            <span className="k-link">27</span>
                                         </td>
                                         <td className="k-calendar-td k-weekend">
                                             <span className="k-link">28</span>
@@ -447,7 +447,7 @@ root.render(
                                 <li><span>2014</span></li>
                                 <li><span>2015</span></li>
                                 <li><span>2016</span></li>
-                                <li><span>201{7}</span></li>
+                                <li><span>2017</span></li>
                                 <li><span>2018</span></li>
                                 <li><span>2019</span></li>
                                 <li><span className="k-calendar-navigation-marker">2020</span></li>
@@ -457,7 +457,7 @@ root.render(
                                 <li><span>2024</span></li>
                                 <li><span>2025</span></li>
                                 <li><span>2026</span></li>
-                                <li><span>202{7}</span></li>
+                                <li><span>2027</span></li>
                                 <li><span>2028</span></li>
                                 <li><span>2029</span></li>
                                 <li><span className="k-calendar-navigation-marker">2030</span></li>
@@ -467,7 +467,7 @@ root.render(
                                 <li><span>2034</span></li>
                                 <li><span>2035</span></li>
                                 <li><span>2036</span></li>
-                                <li><span>203{7}</span></li>
+                                <li><span>2037</span></li>
                                 <li><span>2038</span></li>
                                 <li><span>2039</span></li>
                                 <li><span className="k-calendar-navigation-marker">2040</span></li>
@@ -501,13 +501,13 @@ root.render(
                                         <td className="k-calendar-td">
                                             <span className="k-link">Jan</span>
                                         </td>
-                                        <td className="k-calendar-td k-state-hover">
+                                        <td className="k-calendar-td k-hover">
                                             <span className="k-link">Feb</span>
                                         </td>
-                                        <td className="k-calendar-td k-state-focused">
+                                        <td className="k-calendar-td k-focus">
                                             <span className="k-link">Mar</span>
                                         </td>
-                                        <td className="k-calendar-td k-state-selected">
+                                        <td className="k-calendar-td k-selected">
                                             <span className="k-link">Apr</span>
                                         </td>
                                     </tr>
@@ -518,10 +518,10 @@ root.render(
                                         <td className="k-calendar-td">
                                             <span className="k-link">Jun</span>
                                         </td>
-                                        <td className="k-calendar-td k-state-hover k-state-focused">
+                                        <td className="k-calendar-td k-hover k-focus">
                                             <span className="k-link">Jul</span>
                                         </td>
-                                        <td className="k-calendar-td k-state-selected k-state-hover">
+                                        <td className="k-calendar-td k-selected k-hover">
                                             <span className="k-link">Aug</span>
                                         </td>
                                     </tr>
@@ -602,7 +602,7 @@ root.render(
                         <div className="k-content k-scrollable">
                             <ul className="k-reset">
                                 <li><span>1960</span></li>
-                                <li><span>19{7}0</span></li>
+                                <li><span>1970</span></li>
                                 <li><span>1980</span></li>
                                 <li><span>1990</span></li>
                                 <li><span className="k-calendar-navigation-marker">2000</span></li>
@@ -612,7 +612,7 @@ root.render(
                                 <li><span>2040</span></li>
                                 <li><span>2050</span></li>
                                 <li><span>2060</span></li>
-                                <li><span>20{7}0</span></li>
+                                <li><span>2070</span></li>
                                 <li><span>2080</span></li>
                                 <li><span>2090</span></li>
                             </ul>
@@ -643,13 +643,13 @@ root.render(
                                         <td className="k-calendar-td">
                                             <span className="k-link">2010</span>
                                         </td>
-                                        <td className="k-calendar-td k-state-hover">
+                                        <td className="k-calendar-td k-hover">
                                             <span className="k-link">2011</span>
                                         </td>
-                                        <td className="k-calendar-td k-state-focused">
+                                        <td className="k-calendar-td k-focus">
                                             <span className="k-link">2012</span>
                                         </td>
-                                        <td className="k-calendar-td k-state-selected">
+                                        <td className="k-calendar-td k-selected">
                                             <span className="k-link">2013</span>
                                         </td>
                                     </tr>
@@ -660,11 +660,11 @@ root.render(
                                         <td className="k-calendar-td">
                                             <span className="k-link">2015</span>
                                         </td>
-                                        <td className="k-calendar-td k-state-hover k-state-focused">
+                                        <td className="k-calendar-td k-hover k-focus">
                                             <span className="k-link">2016</span>
                                         </td>
-                                        <td className="k-calendar-td k-state-selected k-state-hover">
-                                            <span className="k-link">201{7}</span>
+                                        <td className="k-calendar-td k-selected k-hover">
+                                            <span className="k-link">2017</span>
                                         </td>
                                     </tr>
                                     <tr className="k-calendar-tr">
@@ -707,7 +707,7 @@ root.render(
                                             <span className="k-link">2026</span>
                                         </td>
                                         <td className="k-calendar-td">
-                                            <span className="k-link">202{7}</span>
+                                            <span className="k-link">2027</span>
                                         </td>
                                     </tr>
                                     <tr className="k-calendar-tr">
@@ -765,13 +765,13 @@ root.render(
                                         <td className="k-calendar-td">
                                             <span className="k-link">1900</span>
                                         </td>
-                                        <td className="k-calendar-td k-state-hover">
+                                        <td className="k-calendar-td k-hover">
                                             <span className="k-link">1910</span>
                                         </td>
-                                        <td className="k-calendar-td k-state-focused">
+                                        <td className="k-calendar-td k-focus">
                                             <span className="k-link">1920</span>
                                         </td>
-                                        <td className="k-calendar-td k-state-selected">
+                                        <td className="k-calendar-td k-selected">
                                             <span className="k-link">1930</span>
                                         </td>
                                     </tr>
@@ -782,11 +782,11 @@ root.render(
                                         <td className="k-calendar-td">
                                             <span className="k-link">1950</span>
                                         </td>
-                                        <td className="k-calendar-td k-state-hover k-state-focused">
+                                        <td className="k-calendar-td k-hover k-focus">
                                             <span className="k-link">1960</span>
                                         </td>
-                                        <td className="k-calendar-td k-state-selected k-state-hover">
-                                            <span className="k-link">19{7}0</span>
+                                        <td className="k-calendar-td k-selected k-hover">
+                                            <span className="k-link">1970</span>
                                         </td>
                                     </tr>
                                     <tr className="k-calendar-tr">
@@ -829,7 +829,7 @@ root.render(
                                             <span className="k-link">2060</span>
                                         </td>
                                         <td className="k-calendar-td">
-                                            <span className="k-link">20{7}0</span>
+                                            <span className="k-link">2070</span>
                                         </td>
                                     </tr>
                                     <tr className="k-calendar-tr">
@@ -1053,7 +1053,7 @@ root.render(
                                             <span className="k-link">6</span>
                                         </td>
                                         <td className="k-calendar-td k-weekend">
-                                            <span className="k-link">{7}</span>
+                                            <span className="k-link">7</span>
                                         </td>
                                     </tr>
                                     <tr className="k-calendar-tr">
@@ -1089,7 +1089,7 @@ root.render(
                                             <span className="k-link">16</span>
                                         </td>
                                         <td className="k-calendar-td">
-                                            <span className="k-link">1{7}</span>
+                                            <span className="k-link">17</span>
                                         </td>
                                         <td className="k-calendar-td">
                                             <span className="k-link">18</span>
@@ -1122,7 +1122,7 @@ root.render(
                                             <span className="k-link">26</span>
                                         </td>
                                         <td className="k-calendar-td">
-                                            <span className="k-link">2{7}</span>
+                                            <span className="k-link">27</span>
                                         </td>
                                         <td className="k-calendar-td k-weekend">
                                             <span className="k-link">28</span>
@@ -1186,7 +1186,7 @@ root.render(
                                             <span className="k-link">6</span>
                                         </td>
                                         <td className="k-calendar-td">
-                                            <span className="k-link">{7}</span>
+                                            <span className="k-link">7</span>
                                         </td>
                                         <td className="k-calendar-td">
                                             <span className="k-link">8</span>
@@ -1219,14 +1219,14 @@ root.render(
                                             <span className="k-link">16</span>
                                         </td>
                                         <td className="k-calendar-td">
-                                            <span className="k-link">1{7}</span>
+                                            <span className="k-link">17</span>
                                         </td>
                                         <td className="k-calendar-td k-weekend">
                                             <span className="k-link">18</span>
                                         </td>
                                     </tr>
                                     <tr className="k-calendar-tr">
-                                        <td className="k-calendar-td k-alt">1{7}</td>
+                                        <td className="k-calendar-td k-alt">17</td>
                                         <td className="k-calendar-td k-weekend">
                                             <span className="k-link">19</span>
                                         </td>
@@ -1255,7 +1255,7 @@ root.render(
                                             <span className="k-link">26</span>
                                         </td>
                                         <td className="k-calendar-td">
-                                            <span className="k-link">2{7}</span>
+                                            <span className="k-link">27</span>
                                         </td>
                                         <td className="k-calendar-td">
                                             <span className="k-link">28</span>
@@ -1313,7 +1313,7 @@ root.render(
                                             <span className="k-link">6</span>
                                         </td>
                                         <td className="k-calendar-td">
-                                            <span className="k-link">{7}</span>
+                                            <span className="k-link">7</span>
                                         </td>
                                         <td className="k-calendar-td">
                                             <span className="k-link">8</span>
@@ -1349,7 +1349,7 @@ root.render(
                                     <tr className="k-calendar-tr">
                                         <td className="k-calendar-td k-alt">21</td>
                                         <td className="k-calendar-td k-weekend">
-                                            <span className="k-link">1{7}</span>
+                                            <span className="k-link">17</span>
                                         </td>
                                         <td className="k-calendar-td">
                                             <span className="k-link">18</span>
@@ -1382,7 +1382,7 @@ root.render(
                                             <span className="k-link">26</span>
                                         </td>
                                         <td className="k-calendar-td">
-                                            <span className="k-link">2{7}</span>
+                                            <span className="k-link">27</span>
                                         </td>
                                         <td className="k-calendar-td">
                                             <span className="k-link">28</span>
@@ -1436,7 +1436,7 @@ root.render(
                                     <tr className="k-calendar-tr">
                                         <td className="k-calendar-td k-alt">24</td>
                                         <td className="k-calendar-td k-weekend">
-                                            <span className="k-link">{7}</span>
+                                            <span className="k-link">7</span>
                                         </td>
                                         <td className="k-calendar-td">
                                             <span className="k-link">8</span>
@@ -1469,7 +1469,7 @@ root.render(
                                             <span className="k-link">16</span>
                                         </td>
                                         <td className="k-calendar-td">
-                                            <span className="k-link">1{7}</span>
+                                            <span className="k-link">17</span>
                                         </td>
                                         <td className="k-calendar-td">
                                             <span className="k-link">18</span>
@@ -1502,11 +1502,11 @@ root.render(
                                             <span className="k-link">26</span>
                                         </td>
                                         <td className="k-calendar-td k-weekend">
-                                            <span className="k-link">2{7}</span>
+                                            <span className="k-link">27</span>
                                         </td>
                                     </tr>
                                     <tr className="k-calendar-tr">
-                                        <td className="k-calendar-td k-alt">2{7}</td>
+                                        <td className="k-calendar-td k-alt">27</td>
                                         <td className="k-calendar-td k-weekend">
                                             <span className="k-link">28</span>
                                         </td>
@@ -1537,7 +1537,7 @@ root.render(
                                         <th className="k-calendar-caption" scope="col" colSpan={8}>July 2020</th>
                                     </tr>
                                     <tr className="k-calendar-tr">
-                                        <td className="k-calendar-td k-alt">2{7}</td>
+                                        <td className="k-calendar-td k-alt">27</td>
                                         <td className="k-calendar-td k-empty"></td>
                                         <td className="k-calendar-td k-empty"></td>
                                         <td className="k-calendar-td k-empty"></td>
@@ -1563,7 +1563,7 @@ root.render(
                                             <span className="k-link">6</span>
                                         </td>
                                         <td className="k-calendar-td">
-                                            <span className="k-link">{7}</span>
+                                            <span className="k-link">7</span>
                                         </td>
                                         <td className="k-calendar-td">
                                             <span className="k-link">8</span>
@@ -1596,7 +1596,7 @@ root.render(
                                             <span className="k-link">16</span>
                                         </td>
                                         <td className="k-calendar-td">
-                                            <span className="k-link">1{7}</span>
+                                            <span className="k-link">17</span>
                                         </td>
                                         <td className="k-calendar-td k-weekend">
                                             <span className="k-link">18</span>
@@ -1632,7 +1632,7 @@ root.render(
                                             <span className="k-link">26</span>
                                         </td>
                                         <td className="k-calendar-td">
-                                            <span className="k-link">2{7}</span>
+                                            <span className="k-link">27</span>
                                         </td>
                                         <td className="k-calendar-td">
                                             <span className="k-link">28</span>
