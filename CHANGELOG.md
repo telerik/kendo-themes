@@ -3,6 +3,49 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.6.0](https://github.com/telerik/kendo-themes/compare/v5.5.0...v5.6.0) (2022-07-25)
+
+
+### Bug Fixes
+
+* **bootstrap:** align spacing and font size in button input and chip ([db2d4f8](https://github.com/telerik/kendo-themes/commit/db2d4f85e97cd6bced6a8bb190cd2004493c4896))
+* **button:** tweak large size so it's compatible with guidelines for mobile ([34752f1](https://github.com/telerik/kendo-themes/commit/34752f189ab6deb7b13815bd438d678cb27d658b))
+* **calendar:** add size property to calendar component ([d9333b5](https://github.com/telerik/kendo-themes/commit/d9333b55fa446ceb03f98ddab9b0640339bafe2f))
+* **calendar:** focus selector in material ([bb2ff70](https://github.com/telerik/kendo-themes/commit/bb2ff700e6b4f4cccbc8f102c3072af45a8946c2))
+* **calendar:** remove outline at focus state ([f319907](https://github.com/telerik/kendo-themes/commit/f3199071e83d729da5040a427105f8435689df34)), closes [telerik/kendo#15502](https://github.com/telerik/kendo/issues/15502) [#3653](https://github.com/telerik/kendo-themes/issues/3653)
+* **grid:** make cell-inner element as wide as parent th cell ([f2fdc5c](https://github.com/telerik/kendo-themes/commit/f2fdc5c26062d528087ea1bfa3a685eb07de98d0))
+* **grid:** remove highlighting of header row in detail grid ([e992dfe](https://github.com/telerik/kendo-themes/commit/e992dfe3389c7bf1766e2ad1c2434a324ad5caf3))
+* **grid:** use correct var for header cell spacing ([36e4b25](https://github.com/telerik/kendo-themes/commit/36e4b259e53494317cbee9455baeee6d4c187dd5))
+* **input:** tweak large size so it's compatible with guidelines for mobile ([7972c1b](https://github.com/telerik/kendo-themes/commit/7972c1bf15d3abb24deb92d362ce000f2cae6040))
+* **list:** tweak large size so it's compatible with guidelines for mobile ([29bb58e](https://github.com/telerik/kendo-themes/commit/29bb58e3adbde15e1fb2a6d0b7607bf4e5c4692e))
+* make the -chip-spacing to be overwrittable [#3665](https://github.com/telerik/kendo-themes/issues/3665) ([55c4abd](https://github.com/telerik/kendo-themes/commit/55c4abdae0de3c7d7c3b58fbfbc234bb31651cd4))
+* **progressbar:** expose width property and set default value ([ad776ca](https://github.com/telerik/kendo-themes/commit/ad776cae4a0b983ff260415f8a06ffde7b2eff3d))
+* remove space before comma in selectors ([932ee9c](https://github.com/telerik/kendo-themes/commit/932ee9c82da28a218aed9c9664cdff9079191474))
+* **treeview:** tweak large size so it's compatible with guidelines for mobile ([fdc2a56](https://github.com/telerik/kendo-themes/commit/fdc2a56d3c489c360046f41f032f75e06ab461f9))
+* **utils:** change grid-column-span full to 1/-1 ([7a195e5](https://github.com/telerik/kendo-themes/commit/7a195e51932e4a9a47fd080b7c7bd47b57190824))
+
+
+### Features
+
+* **action-sheet:** add styles for adaptive behaviour ([356e528](https://github.com/telerik/kendo-themes/commit/356e5288deb981d74472a9d47a7b401ce9c40644))
+* **button:** add fluent styles ([08f217f](https://github.com/telerik/kendo-themes/commit/08f217f6881b6ff3f754895ced3c78b29181e737))
+* **calendar:** add calendar fluent styles ([7bddac5](https://github.com/telerik/kendo-themes/commit/7bddac5f1d715bb591959946d2637037c9454bb1))
+* **calendar:** add sizes for calendar component ([0dc4981](https://github.com/telerik/kendo-themes/commit/0dc49817124f832e105efd2a93428b28e3a7b9cf))
+* **dialog:** add dialog fluent styles ([e8c64d3](https://github.com/telerik/kendo-themes/commit/e8c64d32610801a07fdae21d3567f11485beade6))
+* **html:** add signature helper ([7443084](https://github.com/telerik/kendo-themes/commit/7443084d49700a960e12182d4e7f5d8bb8f6a1d1))
+* **icon:** add icons to fluent theme ([356c8aa](https://github.com/telerik/kendo-themes/commit/356c8aa80db46ab567885c2ab2ec6fc7fe2d4bba))
+* **overlay:** add overlay fluent styles ([b44f8eb](https://github.com/telerik/kendo-themes/commit/b44f8ebc1dd1237a45602ff6abdfd21a4fc86133))
+* **popup:** add popup fluent styles ([ecfec54](https://github.com/telerik/kendo-themes/commit/ecfec54c1af205d2beefeb8834bb6ffdc4393a43))
+* **progressbar:** add circular progressbar styles ([2b30b41](https://github.com/telerik/kendo-themes/commit/2b30b415e3cff46cd0e577e374fc610784f5d3e1))
+* **signature:** add signature component styles ([a71e6d6](https://github.com/telerik/kendo-themes/commit/a71e6d6e220eed2ab3cf61dfa5b0353b57378f2f))
+* **time-selector:** add sizes for time-selector component ([00195fe](https://github.com/telerik/kendo-themes/commit/00195feb29ccf250265780c4164f8c96b51ea537))
+* **typography:** add fluent styles ([b87fb8f](https://github.com/telerik/kendo-themes/commit/b87fb8f6a531f4df2e6152f399976653eb230ad7))
+* **window:** add window fluent styles ([c47e42c](https://github.com/telerik/kendo-themes/commit/c47e42cd8bbe47f762261aca2f1ff67a9af96dc6))
+
+
+
+
+
 # [5.5.0](https://github.com/telerik/kendo-themes/compare/v5.4.1...v5.5.0) (2022-06-13)
 
 

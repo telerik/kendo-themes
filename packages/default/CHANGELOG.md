@@ -3,6 +3,36 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.6.0](https://github.com/telerik/kendo-themes/compare/v5.5.0...v5.6.0) (2022-07-25)
+
+
+### Bug Fixes
+
+* **button:** tweak large size so it's compatible with guidelines for mobile ([34752f1](https://github.com/telerik/kendo-themes/commit/34752f189ab6deb7b13815bd438d678cb27d658b))
+* **calendar:** remove outline at focus state ([f319907](https://github.com/telerik/kendo-themes/commit/f3199071e83d729da5040a427105f8435689df34)), closes [telerik/kendo#15502](https://github.com/telerik/kendo/issues/15502) [#3653](https://github.com/telerik/kendo-themes/issues/3653)
+* **grid:** make cell-inner element as wide as parent th cell ([f2fdc5c](https://github.com/telerik/kendo-themes/commit/f2fdc5c26062d528087ea1bfa3a685eb07de98d0))
+* **grid:** remove highlighting of header row in detail grid ([e992dfe](https://github.com/telerik/kendo-themes/commit/e992dfe3389c7bf1766e2ad1c2434a324ad5caf3))
+* **grid:** use correct var for header cell spacing ([36e4b25](https://github.com/telerik/kendo-themes/commit/36e4b259e53494317cbee9455baeee6d4c187dd5))
+* **input:** tweak large size so it's compatible with guidelines for mobile ([7972c1b](https://github.com/telerik/kendo-themes/commit/7972c1bf15d3abb24deb92d362ce000f2cae6040))
+* **list:** tweak large size so it's compatible with guidelines for mobile ([29bb58e](https://github.com/telerik/kendo-themes/commit/29bb58e3adbde15e1fb2a6d0b7607bf4e5c4692e))
+* make the -chip-spacing to be overwrittable [#3665](https://github.com/telerik/kendo-themes/issues/3665) ([55c4abd](https://github.com/telerik/kendo-themes/commit/55c4abdae0de3c7d7c3b58fbfbc234bb31651cd4))
+* **progressbar:** expose width property and set default value ([ad776ca](https://github.com/telerik/kendo-themes/commit/ad776cae4a0b983ff260415f8a06ffde7b2eff3d))
+* remove space before comma in selectors ([932ee9c](https://github.com/telerik/kendo-themes/commit/932ee9c82da28a218aed9c9664cdff9079191474))
+* **treeview:** tweak large size so it's compatible with guidelines for mobile ([fdc2a56](https://github.com/telerik/kendo-themes/commit/fdc2a56d3c489c360046f41f032f75e06ab461f9))
+
+
+### Features
+
+* **action-sheet:** add styles for adaptive behaviour ([356e528](https://github.com/telerik/kendo-themes/commit/356e5288deb981d74472a9d47a7b401ce9c40644))
+* **calendar:** add sizes for calendar component ([0dc4981](https://github.com/telerik/kendo-themes/commit/0dc49817124f832e105efd2a93428b28e3a7b9cf))
+* **progressbar:** add circular progressbar styles ([2b30b41](https://github.com/telerik/kendo-themes/commit/2b30b415e3cff46cd0e577e374fc610784f5d3e1))
+* **signature:** add signature component styles ([a71e6d6](https://github.com/telerik/kendo-themes/commit/a71e6d6e220eed2ab3cf61dfa5b0353b57378f2f))
+* **time-selector:** add sizes for time-selector component ([00195fe](https://github.com/telerik/kendo-themes/commit/00195feb29ccf250265780c4164f8c96b51ea537))
+
+
+
+
+
 # [5.5.0](https://github.com/telerik/kendo-themes/compare/v5.4.1...v5.5.0) (2022-06-13)
 
 

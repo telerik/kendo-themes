@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.6.0](https://github.com/telerik/kendo-themes/compare/v5.5.0...v5.6.0) (2022-07-25)
+
+
+### Bug Fixes
+
+* **calendar:** add size property to calendar component ([d9333b5](https://github.com/telerik/kendo-themes/commit/d9333b55fa446ceb03f98ddab9b0640339bafe2f))
+
+
+### Features
+
+* **html:** add signature helper ([7443084](https://github.com/telerik/kendo-themes/commit/7443084d49700a960e12182d4e7f5d8bb8f6a1d1))
+* **signature:** add signature component styles ([a71e6d6](https://github.com/telerik/kendo-themes/commit/a71e6d6e220eed2ab3cf61dfa5b0353b57378f2f))
+
+
+
+
+
 # [5.5.0](https://github.com/telerik/kendo-themes/compare/v5.4.1...v5.5.0) (2022-06-13)
 
 
