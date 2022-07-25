@@ -26,3 +26,16 @@
     }
 
 }
+
+@include exports("circular-progressbar/theme") {
+
+    .k-circular-progressbar-scale {
+        stroke: $kendo-circular-progressbar-scale-stroke;
+    }
+
+    .k-circular-progressbar-arc {
+        stroke: $kendo-circular-progressbar-arc-stroke;
+        transition: stroke .5s ease;
+    }
+
+}

@@ -264,3 +264,46 @@
     }
 
 }
+
+@include exports("circular-progressbar/layout") {
+
+    .k-circular-progressbar {
+        display: inline-block;
+        text-align: left;
+        position: relative;
+    }
+
+    .k-circular-progressbar-surface {
+        height: 100%;
+
+        & > div {
+            width: 100%;
+            height: 100%;
+        }
+
+        svg {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .k-circular-progressbar-scale {
+        fill: none;
+    }
+
+    .k-circular-progressbar-arc {
+        transform-box: fill-box;
+        transform-origin: center center;
+        transform: rotate(-90deg);
+        stroke-linecap: round;
+        fill: none;
+    }
+
+    .k-circular-progressbar-label {
+        position: absolute;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+
+}

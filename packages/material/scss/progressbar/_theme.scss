@@ -1,3 +1,5 @@
+@import "~@progress/kendo-theme-default/scss/progressbar/_theme.scss";
+
 @function _translate($direction, $value) {
     @return if($direction == horizontal, translateX($value), translateY($value));
 }
@@ -45,31 +47,11 @@
     }
 }
 
-@include exports("progressbar/theme") {
+@include exports("progressbar/theme/material") {
     @include progressbar-indeterminate-animation(horizontal);
     @include progressbar-indeterminate-animation(vertical);
 
-    // Theme
-    .k-progressbar {
-        @include fill(
-            $progressbar-text,
-            $progressbar-bg,
-            $progressbar-border,
-            $progressbar-gradient
-        );
-
-        .k-state-selected,
-        .k-selected {
-            @include fill(
-                $progressbar-fill-text,
-                $progressbar-fill-bg,
-                $progressbar-fill-border,
-                $progressbar-fill-gradient
-            );
-        }
-
-        .k-item {
-            border-color: $progressbar-chunk-border;
-        }
+    .k-progressbar-indeterminate {
+        background-image: none;
     }
 }

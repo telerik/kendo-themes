@@ -23,3 +23,7 @@ $progressbar-indeterminate-border: $progressbar-border !default;
 $progressbar-indeterminate-gradient: null !default;
 
 $progressbar-chunk-border: $body-bg !default;
+
+// Circular Progressbar
+$kendo-circular-progressbar-arc-stroke: $primary !default;
+$kendo-circular-progressbar-scale-stroke: $progressbar-bg !default;
