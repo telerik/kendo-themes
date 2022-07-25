@@ -1,9 +1,10 @@
 import * as React from 'react';
-import { classNames } from '../utils';
+import { classNames, kendoThemeMaps } from '../utils';
 import { CalendarView, CalendarHeader, CalendarFooter } from '../calendar';
 
 export interface CalendarProps {
     className?: string;
+    size?: null | 'small' | 'medium' | 'large';
     orientation?: 'vertical' | 'horizontal';
     calendarView?: 'month' | 'year' | 'decade' | 'century';
     calendarHeaderText?: string;
@@ -18,6 +19,7 @@ export interface CalendarProps {
 export class Calendar extends React.Component<CalendarProps> {
 
     static defaultProps = {
+        size: 'medium',
         viewsCount: '1',
         orientation: 'horizontal',
         calendarView: 'month',
@@ -27,6 +29,7 @@ export class Calendar extends React.Component<CalendarProps> {
     render() {
         const {
             className,
+            size,
             orientation,
             calendarView,
             calendarHeaderText,
@@ -46,6 +49,7 @@ export class Calendar extends React.Component<CalendarProps> {
                     className,
                     'k-calendar',
                     {
+                        [`k-calendar-${kendoThemeMaps.sizeMap[size!] || size}`]: size,
                         'k-week-number': showWeek,
                     }
                 )}>

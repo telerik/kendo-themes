@@ -177,7 +177,7 @@ root.render(
                         </table>
                     </div>
                     <div className="k-footer">
-                        <a className="k-link k-nav-today">Thursday, March 29, 2018</a>
+                        <a className="k-nav-today">Thursday, March 29, 2018</a>
                     </div>
                 </div>
             </section>
@@ -351,7 +351,7 @@ root.render(
                         </table>
                     </div>
                     <div className="k-footer">
-                        <a className="k-link k-nav-today k-disabled">Thursday, March 29, 2018</a>
+                        <a className="k-nav-today k-disabled">Thursday, March 29, 2018</a>
                     </div>
                 </div>
             </section>
@@ -418,7 +418,7 @@ root.render(
                         </table>
                     </div>
                     <div className="k-footer">
-                        <a className="k-link k-nav-today">Thursday, March 29, 2018</a>
+                        <a className="k-nav-today">Thursday, March 29, 2018</a>
                     </div>
                 </div>
             </section>
@@ -475,7 +475,7 @@ root.render(
                         </table>
                     </div>
                     <div className="k-footer">
-                        <a className="k-link k-nav-today">Thursday, March 29, 2018</a>
+                        <a className="k-nav-today">Thursday, March 29, 2018</a>
                     </div>
                 </div>
             </section>
@@ -534,7 +534,7 @@ root.render(
                         </table>
                     </div>
                     <div className="k-footer">
-                        <a className="k-link k-nav-today">Thursday, March 29, 2018</a>
+                        <a className="k-nav-today">Thursday, March 29, 2018</a>
                     </div>
                 </div>
             </section>

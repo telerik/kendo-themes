@@ -206,4 +206,34 @@
         top: calc( #{$time-list-title-height / 2} );
     }
 
+
+    // Time selector sizes
+    @each $size, $size-props in $kendo-time-selector-sizes {
+        $_font-size: map-get( $size-props, font-size );
+        $_line-height: map-get( $size-props, line-height );
+        $_list-item-padding-x: map-get( $size-props, list-item-padding-x );
+        $_list-item-padding-y: map-get( $size-props, list-item-padding-y );
+        $_highlight-height: calc( #{$_font-size * $_line-height} + #{ $_list-item-padding-y * 2} );
+
+
+        .k-timeselector-#{$size} {
+            font-size: $_font-size;
+            line-height: $_line-height;
+
+            .k-time-highlight,
+            .k-time-list-highlight {
+                height: $_highlight-height;
+            }
+
+            .k-time-separator {
+                height:  $_highlight-height;
+            }
+
+            .k-time-list-item,
+            .k-time-list .k-item {
+                padding: $_list-item-padding-y $_list-item-padding-x;
+            }
+        }
+    }
+
 }

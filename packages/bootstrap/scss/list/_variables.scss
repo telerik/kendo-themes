@@ -11,8 +11,8 @@ $kendo-list-font-size-lg: $font-size-md !default;
 /// @group list
 $kendo-list-line-height: null !default;
 $kendo-list-line-height-sm: (20 / 14) !default;
-$kendo-list-line-height-md: null !default;
-$kendo-list-line-height-lg: null !default;
+$kendo-list-line-height-md: $line-height-md !default;
+$kendo-list-line-height-lg: $line-height-md !default;
 
 /// Horizontal padding of list header, if no size is set.
 /// @group list
