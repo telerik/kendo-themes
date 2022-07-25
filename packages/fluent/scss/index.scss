@@ -1,30 +1,329 @@
 // Dependencies
 @use "~@progress/kendo-theme-utils/scss/all.scss";
 
+
 // Core
 @use "core";
 
-// Components
+
+// Typography and utils
 @use "typography";
+// @use "utils";
+// @use "cursor";
+
+
+// Generic content
+// @use "styling";
 @use "icon";
+// @use "messagebox";
+
+
+// Primitive components
+// @use "list";
+// @use "listgroup";
 @use "overlay";
-@use "button";
-@use "calendar";
 @use "popup";
-@use "window";
+// @use "ripple";
+// @use "table";
+// @use "virtual-scroller";
+
+
+// Indicators
+// @use "avatar";
+// @use "badge";
+// @use "chip";
+// @use "color-preview";
+// @use "loader";
+// @use "loading";
+// @use "skeleton";
+
+
+// Form helpers
+// @use "forms";
+// @use "validator";
+// @use "floating-label";
+
+
+// Native forms
+@use "button";
+// @use "split-button";
+// @use "menu-button";
+// @use "input";
+// @use "textbox";
+// @use "textarea";
+// @use "checkbox";
+// @use "listbox";
+// @use "progressbar";
+// @use "radio";
+// @use "slider";
+
+
+// Form requirements
+@use "calendar";
+// @use "time-selector";
+
+
+// Augmented forms
+// @use "autocomplete";
+// @use "captcha";
+// @use "colorpalette";
+// @use "colorgradient";
+// @use "coloreditor";
+// @use "colorpicker";
+// @use "combobox";
+// @use "dateinput";
+// @use "datepicker";
+// @use "timepicker";
+// @use "datetimepicker";
+// @use "daterangepicker";
+// @use "dropdowngrid";
+// @use "dropdownlist";
+// @use "dropdowntree";
+// @use "maskedtextbox";
+// @use "multiselect";
+// @use "numerictextbox";
+// @use "rating";
+// @use "searchbox";
+// @use "switch";
+// @use "upload";
+// @use "dropzone";
+
+
+// Command interfaces
+// @use "action-buttons";
+// @use "appbar";
+// @use "fab";
+// @use "menu";
+// @use "toolbar";
+
+
+// Popups and modals
+// @use "action-sheet";
 @use "dialog";
+// @use "drawer";
+// @use "notification";
+// @use "popover";
+// @use "responsivepanel";
+// @use "tooltip";
+@use "window";
+
+
+// Navigation
+// @use "bottom-navigation";
+// @use "breadcrumb";
+// @use "pager";
+// @use "stepper";
+// @use "tabstrip";
+// @use "treeview";
+// @use "wizard";
+
+
+// Layout & containers
+// @use "card";
+// @use "expansion-panel";
+// @use "panelbar";
+// @use "splitter";
+// @use "tilelayout";
+
+
+// Data management
+// @use "grid";
+// @use "listview";
+// @use "spreadsheet";
+// @use "pivotgrid";
+// @use "treelist";
+// @use "filter";
+// @use "filemanager";
+// @use "taskboard";
+
+
+// Editors
+// @use "editor";
+// @use "imageeditor";
+
+
+// Scheduling
+// @use "gantt";
+// @use "scheduler";
+
+
+// Misc
+// @use "adaptive";
+// @use "chat";
+// @use "mediaplayer";
+// @use "timeline";
+// @use "pdf-viewer";
+// @use "scroller";
+// @use "scrollview";
+
+
+// Dataviz
+// @use "dataviz";
+// @use "map";
+// @use "orgchart";
+// @use "signature";
+
+
 
 // Setup
 @mixin config($config: null ) {
     @include core.configure($config: $config);
 }
 @mixin styles() {
+    // Typography and utils
     @include typography.styles();
+    // @include utils.styles();
+    // @include cursor.styles();
+
+
+    // Generic content
+    // @include styling.styles();
     @include icon.styles();
+    // @include messagebox.styles();
+
+
+    // Primitive components
+    // @include list.styles();
+    // @include listgroup.styles();
     @include overlay.styles();
-    @include button.styles();
-    @include calendar.styles();
     @include popup.styles();
+    // @include ripple.styles();
+    // @include table.styles();
+    // @include virtual-scroller.styles();
+
+
+    // Indicators
+    // @include avatar.styles();
+    // @include badge.styles();
+    // @include chip.styles();
+    // @include color-preview.styles();
+    // @include loader.styles();
+    // @include loading.styles();
+    // @include skeleton.styles();
+
+
+    // Form helpers
+    // @include forms.styles();
+    // @include validator.styles();
+    // @include floating-label.styles();
+
+
+    // Native forms
+    @include button.styles();
+    // @include split-button.styles();
+    // @include menu-button.styles();
+    // @include input.styles();
+    // @include textbox.styles();
+    // @include textarea.styles();
+    // @include checkbox.styles();
+    // @include listbox.styles();
+    // @include progressbar.styles();
+    // @include radio.styles();
+    // @include slider.styles();
+
+
+    // Form requirements
+    @include calendar.styles();
+    // @include timeselector.styles();
+
+
+    // Augmented forms
+    // @include autocomplete.styles();
+    // @include captcha.styles();
+    // @include colorpalette.styles();
+    // @include colorgradient.styles();
+    // @include coloreditor.styles();
+    // @include colorpicker.styles();
+    // @include combobox.styles();
+    // @include dateinput.styles();
+    // @include datepicker.styles();
+    // @include timepicker.styles();
+    // @include datetimepicker.styles();
+    // @include daterangepicker.styles();
+    // @include dropdowngrid.styles();
+    // @include dropdownlist.styles();
+    // @include dropdowntree.styles();
+    // @include maskedtextbox.styles();
+    // @include multiselect.styles();
+    // @include numerictextbox.styles();
+    // @include rating.styles();
+    // @include searchbox.styles();
+    // @include switch.styles();
+    // @include upload.styles();
+    // @include dropzone.styles();
+
+
+    // Command interfaces
+    // @include action-buttons.styles();
+    // @include appbar.styles();
+    // @include fab.styles();
+    // @include menu.styles();
+    // @include toolbar.styles();
+
+
+    // Popups and modals
     @include window.styles();
+    // @include action-sheet.styles();
     @include dialog.styles();
+    // @include drawer.styles();
+    // @include notification.styles();
+    // @include popover.styles();
+    // @include responsivepanel.styles();
+    // @include tooltip.styles();
+
+
+    // Navigation
+    // @include bottom-navigation.styles();
+    // @include breadcrumb.styles();
+    // @include pager.styles();
+    // @include stepper.styles();
+    // @include tabstrip.styles();
+    // @include treeview.styles();
+    // @include wizard.styles();
+
+
+    // Layout & containers
+    // @include card.styles();
+    // @include expansion-panel.styles();
+    // @include panelbar.styles();
+    // @include splitter.styles();
+    // @include tilelayout.styles();
+
+
+    // Data management
+    // @include grid.styles();
+    // @include listview.styles();
+    // @include spreadsheet.styles();
+    // @include pivotgrid.styles();
+    // @include treelist.styles();
+    // @include filter.styles();
+    // @include filemanager.styles();
+    // @include taskboard.styles();
+
+
+    // Editors
+    // @include editor.styles();
+    // @include imageeditor.styles();
+
+
+    // Scheduling
+    // @include gantt.styles();
+    // @include scheduler.styles();
+
+
+    // Misc
+    // @include adaptive.styles();
+    // @include chat.styles();
+    // @include mediaplayer.styles();
+    // @include timeline.styles();
+    // @include pdf-viewer.styles();
+    // @include scroller.styles();
+    // @include scrollview.styles();
+
+
+    // Dataviz
+    // @include dataviz.styles();
+    // @include map.styles();
+    // @include orgchart.styles();
+    // @include signature.styles();
 }
