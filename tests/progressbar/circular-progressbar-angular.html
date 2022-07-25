@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width:15px;">
+<head>
+    <title>Circular Progressbar Angular</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
+    <link rel="stylesheet" href="/packages/html/assets/styles.css">
+    <script src="/packages/html/assets/scripts.js"></script>
+</head>
+<body id="app" class="k-body">
+    <style>
+        #test-area {
+            justify-items: center;
+        }
+
+    </style>
+    <div id="test-area">
+        <div class="k-circular-progressbar" style="width: 200px; height: 200px;">
+            <div class="k-circular-progressbar-surface">
+                <div>
+                    <svg>
+                        <g>
+                            <circle stroke-width="9.5" class="k-circular-progressbar-scale" r="90" cx="100" cy="100"></circle>
+                            <circle stroke-width="9.5" class="k-circular-progressbar-arc" r="90" cx="100" cy="100" style="stroke-dasharray: 565.487; stroke-dashoffset: 989.602;"></circle>
+                        </g>
+                    </svg>
+                    <div class="k-circular-progressbar-label" style="left: 70.5px; top: 91px;">value: 75</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
