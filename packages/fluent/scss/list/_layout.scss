@@ -1,0 +1,256 @@
+@use "../core/_variables.scss" as *;
+@use "../icon/_variables.scss"as *;
+@use "_variables.scss" as *;
+
+@mixin kendo-list--layout() {
+
+    .k-list {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-size: var( --INTERNAL--kendo-list-font-size, 1rem );
+        line-height: var( --INTERNAL--kendo-list-line-height, normal );
+        display: flex;
+        flex-flow: column nowrap;
+        outline: none;
+        position: relative;
+        overflow: hidden;
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+    }
+
+
+    // List in popup
+    .k-popup > .k-list {
+        height: 100%;
+        border-width: 0;
+    }
+
+
+    // List header
+    .k-list-group-sticky-header {
+        padding-inline: var( --INTERNAL--kendo-list-header-padding-x, 0 );
+        padding-block: var( --INTERNAL--kendo-list-header-padding-y, 0 );
+        border-width: 0;
+        border-width: var( --kendo-list-header-border-width, #{$kendo-list-header-border-width} ); // sass-lint:disable-line no-duplicate-properties
+        border-style: solid;
+        font-size: var( --INTERNAL--kendo-list-header-font-size, 1rem );
+        line-height: var( --INTERNAL--kendo-list-header-line-height, normal );
+        font-weight: var( --kendo-list-header-font-weight, #{$kendo-list-header-font-weight} );
+        white-space: nowrap;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        flex: none;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        cursor: pointer;
+        z-index: 1;
+    }
+
+
+    // List content
+    .k-list-content {
+        border-color: inherit;
+        flex: 1 1 auto;
+        overflow: hidden;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+        position: relative;
+    }
+
+
+    // List UL
+    .k-list-ul {
+        margin: 0;
+        padding: 0;
+        border-width: 0;
+        border-color: inherit;
+        height: auto;
+        list-style: none;
+    }
+
+
+    // List item
+    .k-list-item {
+        padding-inline: var( --INTERNAL--kendo-list-item-padding-x, 0 );
+        padding-block: var( --INTERNAL--kendo-list-item-padding-y, 0 );
+        border: 0;
+        font-size: var( --INTERNAL--kendo-list-item-font-size, 1rem );
+        line-height: var( --INTERNAL--kendo-list-item-line-height, normal );
+        outline: none;
+        cursor: pointer;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        align-content: center;
+        gap: var( --kendo-icon-spacing, #{$kendo-icon-spacing} );
+        position: relative;
+        transition-property: color, background-color, outline-color, box-shadow;
+        transition-duration: 200ms;
+        transition-timing-function: ease;
+
+        &.k-first::before {
+            content: "";
+            border-width: 1px 0 0;
+            border-style: solid;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+        }
+    }
+    .k-list-item-text,
+    .k-list-optionlabel {
+        &::before {
+            content: "\200b";
+            width: 0px;
+            overflow: hidden;
+        }
+    }
+    .k-list-optionlabel {
+        @extend .k-list-item;
+    }
+
+
+    // List group item
+    .k-list-group-item {
+        padding-inline: var( --INTERNAL--kendo-list-group-item-padding-x, 0 );
+        padding-block: var( --INTERNAL--kendo-list-group-item-padding-y, 0 );
+        border-width: 0;
+        border-width: var( --kendo-list-group-item-border-width, #{$kendo-list-group-item-border-width} ); // sass-lint:disable-line no-duplicate-properties
+        border-style: solid;
+        font-size: var( --INTERNAL--kendo-list-group-item-font-size, 1rem );
+        line-height: var( --INTERNAL--kendo-list-group-item-line-height, normal );
+        font-weight: var( --kendo-list-group-item-font-weight, #{$kendo-list-group-item-font-weight} );
+        cursor: default;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        align-content: center;
+        gap: var( --kendo-icon-spacing, #{$kendo-icon-spacing} );
+        position: relative;
+    }
+
+
+    // List item group label
+    .k-list-item-group-label {
+        padding-inline: var( --INTERNAL--kendo-list-item-group-label-padding-x, 0 );
+        padding-block: var( --INTERNAL--kendo-list-item-group-label-padding-y, 0 );
+        font-size: var( --INTERNAL--kendo-list-item-group-label-font-size, 1rem );
+        position: absolute;
+        top: 0;
+        inset-inline-end: 0;
+    }
+
+
+    // Virtualization
+    .k-virtual-list {}
+    .k-virtual-content,
+    .k-virtual-list .k-list-content {
+        overflow-y: scroll;
+    }
+    .k-virtual-list .k-list-item,
+    .k-virtual-list .k-list-group-item,
+    .k-virtual-content .k-list-item,
+    .k-virtual-content .k-list-group-item {
+        position: absolute;
+        width: 100%;
+    }
+    .k-virtual-list .k-list-item-text,
+    .k-virtual-list .k-list-header-text {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .k-virtual-list .k-list-optionlabel {
+        position: relative;
+    }
+
+
+    // Filter
+    .k-list-filter {
+        display: block;
+        position: relative;
+        padding: var( --kendo-padding-x, #{$kendo-padding-x} );
+        box-sizing: border-box;
+        flex: 0 0 auto;
+    }
+
+
+    // Switch sizes
+    @each $size, $size-props in $kendo-list-sizes {
+        $_font-size: map-get( $size-props, font-size );
+        $_line-height: map-get( $size-props, line-height );
+        $_header-padding-x: map-get( $size-props, header-padding-x );
+        $_header-padding-y: map-get( $size-props, header-padding-y );
+        $_header-font-size: map-get( $size-props, header-font-size );
+        $_header-line-height: map-get( $size-props, header-line-height );
+        $_item-padding-x: map-get( $size-props, item-padding-x );
+        $_item-padding-y: map-get( $size-props, item-padding-y );
+        $_item-font-size: map-get( $size-props, item-font-size );
+        $_item-line-height: map-get( $size-props, item-line-height );
+        $_item-group-label-padding-x: map-get( $size-props, item-group-label-padding-x );
+        $_item-group-label-padding-y: map-get( $size-props, item-group-label-padding-y );
+        $_item-group-label-font-size: map-get( $size-props, item-group-label-font-size );
+        $_group-item-padding-x: map-get( $size-props, group-item-padding-x );
+        $_group-item-padding-y: map-get( $size-props, group-item-padding-y );
+        $_group-item-font-size: map-get( $size-props, group-item-font-size );
+        $_group-item-line-height: map-get( $size-props, group-item-line-height );
+
+        .k-list-#{$size} {
+            --INTERNAL--kendo-list-font-size: var( --kendo-list-#{$size}-font-size, #{$_font-size} );
+            --INTERNAL--kendo-list-line-height: var( --kendo-list-#{$size}-line-height, #{$_line-height} );
+
+            .k-list-group-sticky-header {
+                --INTERNAL--kendo-list-header-padding-x: var( --kendo-list-#{$size}-header-padding-x, #{$_header-padding-x} );
+                --INTERNAL--kendo-list-header-padding-y: var( --kendo-list-#{$size}-header-padding-y, #{$_header-padding-y} );
+                --INTERNAL--kendo-list-header-font-size: var( --kendo-list-#{$size}-header-font-size, #{$_header-font-size} );
+                --INTERNAL--kendo-list-header-line-height: var( --kendo-list-#{$size}-header-line-height, #{$_header-line-height} );
+            }
+
+            .k-list-item {
+                --INTERNAL--kendo-list-item-padding-x: var( --kendo-list-#{$size}-item-padding-x, #{$_item-padding-x} );
+                --INTERNAL--kendo-list-item-padding-y: var( --kendo-list-#{$size}-item-padding-y, #{$_item-padding-y} );
+                --INTERNAL--kendo-list-item-font-size: var( --kendo-list-#{$size}-item-font-size, #{$_item-font-size} );
+                --INTERNAL--kendo-list-item-line-height: var( --kendo-list-#{$size}-item-line-height, #{$_item-line-height} );
+            }
+
+            .k-list-group-item {
+                --INTERNAL--kendo-list-group-item-padding-x: var( --kendo-list-#{$size}-group-item-padding-x, #{$_group-item-padding-x} );
+                --INTERNAL--kendo-list-group-item-padding-y: var( --kendo-list-#{$size}-group-item-padding-y, #{$_group-item-padding-y} );
+                --INTERNAL--kendo-list-group-item-font-size: var( --kendo-list-#{$size}-group-item-font-size, #{$_group-item-font-size} );
+                --INTERNAL--kendo-list-group-item-line-height: var( --kendo-list-#{$size}-group-item-line-height, #{$_group-item-line-height} );
+            }
+
+            .k-list-item-group-label {
+                --INTERNAL--kendo-list-item-group-label-padding-x: var( --kendo-list-#{$size}-item-group-label-padding-x, #{$_item-group-label-padding-x} );
+                --INTERNAL--kendo-list-item-group-label-padding-y: var( --kendo-list-#{$size}-item-group-label-padding-y, #{$_item-group-label-padding-y} );
+                --INTERNAL--kendo-list-item-group-label-font-size: var( --kendo-list-#{$size}-item-group-label-font-size, #{$_item-group-label-font-size} );
+            }
+        }
+    }
+
+
+    // No data
+    .k-no-data {
+        min-height: 140px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: lighter;
+        text-align: center;
+        white-space: normal;
+    }
+
+
+    // Alias
+    .k-nodata {
+        @extend .k-no-data !optional;
+    }
+
+}
