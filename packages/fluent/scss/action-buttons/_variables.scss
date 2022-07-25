@@ -1,0 +1,24 @@
+@use "../core" as *;
+
+/// Horizontal padding of the action buttons container.
+/// @group action-buttons
+$kendo-actions-padding-x: map-get( $kendo-spacing, 3 ) !default;
+/// Vertical padding of the action buttons container.
+/// @group action-buttons
+$kendo-actions-padding-y: map-get( $kendo-spacing, 3 ) !default;
+/// Width of the border around the action buttons container.
+/// @group action-buttons
+$kendo-actions-border-width: 0px !default;
+/// The background color of the action buttons container.
+/// @group action-buttons
+$kendo-actions-bg: null !default;
+/// The text color of the action buttons container.
+/// @group action-buttons
+$kendo-actions-text: null !default;
+/// The border color of the action buttons container.
+/// @group action-buttons
+$kendo-actions-border: null !default;
+
+/// Spacing between the action buttons.
+/// @group button
+$kendo-actions-button-spacing: map-get( $kendo-spacing, 2 ) !default;
