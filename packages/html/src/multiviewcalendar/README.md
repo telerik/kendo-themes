@@ -9,11 +9,11 @@
         </button>
         <span class="k-spacer"></span>
         <span class="k-calendar-nav">
-            <button type="button" class="k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button k-nav-prev">
+            <button type="button" class="k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button k-calendar-nav-prev">
                 <span class="k-button-icon k-icon k-i-arrow-chevron-left"></span>
             </button>
-            <span class="k-nav-today">Today</span>
-            <button type="button" class="k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button k-nav-next">
+            <span class="k-calendar-nav-today">Today</span>
+            <button type="button" class="k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button k-calendar-nav-next">
                 <span class="k-button-icon k-icon k-i-arrow-chevron-right"></span>
             </button>
         </span>
@@ -136,7 +136,7 @@
     </div>
 
     <div class="k-calendar-footer">
-        <a class="k-nav-today">Monday, March 21, 2022</a>
+        <a class="k-calendar-nav-today">Monday, March 21, 2022</a>
     </div>
 </div>
 
@@ -154,11 +154,11 @@
         </button>
         <span class="k-spacer"></span>
         <span class="k-calendar-nav">
-            <button type="button" class="k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button k-nav-prev">
+            <button type="button" class="k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button k-calendar-nav-prev">
                 <span class="k-button-icon k-icon k-i-arrow-chevron-left"></span>
             </button>
-            {!showCalendarFooter && <span class="k-nav-today">...</span> }
-            <button type="button" class="k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button k-nav-next">
+            {!showCalendarFooter && <span class="k-calendar-nav-today">...</span> }
+            <button type="button" class="k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button k-calendar-nav-next">
                 <span class="k-button-icon k-icon k-i-arrow-chevron-right"></span>
             </button>
         </span>
@@ -235,6 +235,6 @@
             </tbody>
         </table>
     </div>
-    {showCalendarFooter && <div class="k-calendar-footer"><a href="#" class="k-nav-today">...</a></div>}
+    {showCalendarFooter && <div class="k-calendar-footer"><a href="#" class="k-calendar-nav-today">...</a></div>}
 </div>
 ```
