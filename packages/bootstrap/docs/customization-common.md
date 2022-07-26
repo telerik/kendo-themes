@@ -35,7 +35,7 @@ The following table lists the available variables for customization.
 </td>
 <td>
 
-`0.25rem`
+`0.375rem`
 
 </td>
 </tr>
