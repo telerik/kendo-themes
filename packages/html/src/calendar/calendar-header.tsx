@@ -39,9 +39,9 @@ export class CalendarHeader extends React.Component<CalendarHeaderProps> {
                 <Button className="k-calendar-title" text={calendarHeaderText} fillMode="flat"></Button>
                 <span className="k-spacer"></span>
                 <span className="k-calendar-nav">
-                    <Button className="k-nav-prev" icon="arrow-chevron-left" fillMode="flat"></Button>
-                    {showToday && <span className="k-nav-today">Today</span>}
-                    <Button className="k-nav-next" icon="arrow-chevron-right" fillMode="flat"></Button>
+                    <Button className="k-calendar-nav-prev" icon="arrow-chevron-left" fillMode="flat"></Button>
+                    {showToday && <span className="k-calendar-nav-today">Today</span>}
+                    <Button className="k-calendar-nav-next" icon="arrow-chevron-right" fillMode="flat"></Button>
                 </span>
             </div>
         );
