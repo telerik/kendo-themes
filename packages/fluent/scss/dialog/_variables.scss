@@ -23,6 +23,9 @@ $kendo-dialog-buttongroup-padding-y: map-get( $kendo-spacing, 6 ) !default; // $
 /// Width of the top border of the dialog action buttons.
 /// @group dialog
 $kendo-dialog-buttongroup-border-width: 0 !default;
+/// Spacing between the action buttons of the dialog.
+/// @group dialog
+$kendo-dialog-buttongroup-spacing: map-get( $kendo-spacing, 3 ) !default;
 
 /// Spacing between the buttons in the header of the dialog.
 /// @group dialog

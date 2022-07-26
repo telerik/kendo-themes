@@ -61,7 +61,7 @@
         display: flex;
         flex-flow: row wrap;
         align-items: center;
-        gap: var( --kendo-dialog-button-spacing, #{$kendo-dialog-button-spacing} );
+        gap: var( --kendo-dialog-buttongroup-spacing, #{$kendo-dialog-buttongroup-spacing} );
         overflow: hidden;
     }
 

@@ -67,6 +67,9 @@ $kendo-window-buttongroup-padding-y: map-get( $kendo-spacing, 6 ) !default; // $
 /// Width of the top border of the window action buttons.
 /// @group window
 $kendo-window-buttongroup-border-width: 0 !default;
+/// Spacing between the action buttons of the window.
+/// @group window
+$kendo-window-buttongroup-spacing: map-get( $kendo-spacing, 3 ) !default;
 
 /// Background color of the window.
 /// @group window
