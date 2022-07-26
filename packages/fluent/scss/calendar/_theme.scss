@@ -20,7 +20,8 @@
         }
 
         // Today navigation
-        .k-nav-today {
+        .k-nav-today,
+        .k-calendar-nav-today {
             color: var(--kendo-calendar-today-nav-text, #{$kendo-calendar-today-nav-text});
 
             &:hover,

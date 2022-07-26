@@ -134,7 +134,8 @@
             font-weight: bold;
         }
         .k-today,
-        .k-nav-today {
+        .k-nav-today,
+        .k-calendar-nav-today {
             text-decoration: none;
             cursor: pointer;
             outline: none;
@@ -504,7 +505,9 @@
         .k-nav-prev,
         .k-nav-next,
         .k-prev-view,
-        .k-next-view {
+        .k-next-view,
+        .k-calendar-nav-prev,
+        .k-calendar-nav-next {
             transform: scaleX(-1);
         }
 
