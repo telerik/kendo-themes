@@ -95,7 +95,7 @@ root.render(
                             <span className="k-panelbar-item-text">First</span>
                         </span>
                     </li>
-                    <li className="k-panelbar-header k-item k-state-expanded k-level-0">
+                    <li className="k-panelbar-header k-item k-expanded k-level-0">
                         <span className="k-link">
                             <span className="k-panelbar-item-text">Middle expanded</span>
                             <Icon className="k-panelbar-toggle k-panelbar-collapse" name="arrow-chevron-up" />
@@ -141,7 +141,7 @@ root.render(
                                     <span className="k-panelbar-item-text">Child selected focus&hover</span>
                                 </span>
                             </li>
-                            <li className="k-panelbar-item k-item k-state-expanded k-level-1">
+                            <li className="k-panelbar-item k-item k-expanded k-level-1">
                                 <span className="k-link">
                                     <span className="k-panelbar-item-text">Child expanded</span>
                                     <Icon className="k-panelbar-toggle k-panelbar-collapse" name="arrow-chevron-up" />
@@ -187,7 +187,7 @@ root.render(
 
             <section>
                 <ul className="k-panelbar">
-                    <li className="k-panelbar-header k-item k-state-expanded k-level-0">
+                    <li className="k-panelbar-header k-item k-expanded k-level-0">
                         <span className="k-link">
                             <span className="k-panelbar-item-text">First expanded</span>
                             <Icon className="k-panelbar-toggle k-panelbar-collapse" name="arrow-chevron-up" />
@@ -222,7 +222,7 @@ root.render(
                             <span className="k-panelbar-item-text">Middle</span>
                         </span>
                     </li>
-                    <li className="k-panelbar-header k-item k-state-expanded k-level-0">
+                    <li className="k-panelbar-header k-item k-expanded k-level-0">
                         <span className="k-link">
                             <span className="k-panelbar-item-text">Last expanded</span>
                             <Icon className="k-panelbar-toggle k-panelbar-collapse" name="arrow-chevron-up" />
@@ -307,7 +307,7 @@ root.render(
                             <span className="k-panelbar-item-text">First</span>
                         </span>
                     </li>
-                    <li className="k-panelbar-header k-item k-state-expanded k-level-0">
+                    <li className="k-panelbar-header k-item k-expanded k-level-0">
                         <span className="k-link">
                             <span className="k-panelbar-item-text">Middle expanded</span>
                             <Icon className="k-panelbar-toggle k-panelbar-collapse" name="arrow-chevron-up" />
@@ -353,7 +353,7 @@ root.render(
                                     <span className="k-panelbar-item-text">Child selected focus&hover</span>
                                 </span>
                             </li>
-                            <li className="k-panelbar-item k-item k-state-expanded k-level-1">
+                            <li className="k-panelbar-item k-item k-expanded k-level-1">
                                 <span className="k-link">
                                     <span className="k-panelbar-item-text">Child expanded</span>
                                     <Icon className="k-panelbar-toggle k-panelbar-collapse" name="arrow-chevron-up" />
@@ -399,7 +399,7 @@ root.render(
 
             <section className="k-rtl">
                 <ul className="k-panelbar">
-                    <li className="k-panelbar-header k-item k-state-expanded k-level-0">
+                    <li className="k-panelbar-header k-item k-expanded k-level-0">
                         <span className="k-link">
                             <span className="k-panelbar-item-text">First expanded</span>
                             <Icon className="k-panelbar-toggle k-panelbar-collapse" name="arrow-chevron-up" />
@@ -434,7 +434,7 @@ root.render(
                             <span className="k-panelbar-item-text">Middle</span>
                         </span>
                     </li>
-                    <li className="k-panelbar-header k-item k-state-expanded k-level-0">
+                    <li className="k-panelbar-header k-item k-expanded k-level-0">
                         <span className="k-link">
                             <span className="k-panelbar-item-text">Last expanded</span>
                             <Icon className="k-panelbar-toggle k-panelbar-collapse" name="arrow-chevron-up" />

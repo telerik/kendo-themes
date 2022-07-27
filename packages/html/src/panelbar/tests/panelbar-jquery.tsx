@@ -71,7 +71,7 @@ root.render(
                     <li className="k-item k-first">
                         <span className="k-link k-header">First</span>
                     </li>
-                    <li className="k-item k-state-expanded">
+                    <li className="k-item k-expanded">
                         <span className="k-link k-header">
                             Middle expanded
                             <Icon className="k-panelbar-collapse" name="arrow-n" />
@@ -98,7 +98,7 @@ root.render(
                                     <Icon className="k-panelbar-expand" name="arrow-s" />
                                 </span>
                             </li>
-                            <li className="k-item k-state-expanded">
+                            <li className="k-item k-expanded">
                                 <span className="k-link">
                                     Child expanded
                                     <Icon className="k-panelbar-collapse" name="arrow-n" />
@@ -134,7 +134,7 @@ root.render(
 
             <section>
                 <ul className="k-widget k-reset k-header k-panelbar">
-                    <li className="k-item k-first k-state-expanded">
+                    <li className="k-item k-first k-expanded">
                         <span className="k-link k-header">
                             First expanded
                             <Icon className="k-panelbar-collapse" name="arrow-n" />
@@ -161,7 +161,7 @@ root.render(
                     <li className="k-item">
                         <span className="k-link k-header">Middle</span>
                     </li>
-                    <li className="k-item k-state-expanded k-last">
+                    <li className="k-item k-expanded k-last">
                         <span className="k-link k-header">
                             Last expanded
                             <Icon className="k-panelbar-collapse" name="arrow-n" />
@@ -222,7 +222,7 @@ root.render(
                     <li className="k-item k-first">
                         <span className="k-link k-header">First</span>
                     </li>
-                    <li className="k-item k-state-expanded">
+                    <li className="k-item k-expanded">
                         <span className="k-link k-header">
                             Middle expanded
                             <Icon className="k-panelbar-collapse" name="arrow-n" />
@@ -249,7 +249,7 @@ root.render(
                                     <Icon className="k-panelbar-expand" name="arrow-s" />
                                 </span>
                             </li>
-                            <li className="k-item k-state-expanded">
+                            <li className="k-item k-expanded">
                                 <span className="k-link">
                                     Child expanded
                                     <Icon className="k-panelbar-collapse" name="arrow-n" />
@@ -285,7 +285,7 @@ root.render(
 
             <section className="k-rtl">
                 <ul className="k-widget k-reset k-header k-panelbar">
-                    <li className="k-item k-first k-state-expanded">
+                    <li className="k-item k-first k-expanded">
                         <span className="k-link k-header">
                             First expanded
                             <Icon className="k-panelbar-collapse" name="arrow-n" />
@@ -312,7 +312,7 @@ root.render(
                     <li className="k-item">
                         <span className="k-link k-header">Middle</span>
                     </li>
-                    <li className="k-item k-state-expanded k-last">
+                    <li className="k-item k-expanded k-last">
                         <span className="k-link k-header">
                             Last expanded
                             <Icon className="k-panelbar-collapse" name="arrow-n" />
