@@ -20,7 +20,7 @@ root.render(
 
             <div className="k-widget k-pdf-viewer">
                 <div className="k-toolbar k-widget k-toolbar-resizable">
-                    <div className="k-pager-wrap">
+                    <div className="k-pager">
                         <Button fillMode="flat" icon="arrow-end-left" className="k-pager-nav k-pager-first"></Button>
                         <Button fillMode="flat" icon="arrow-60-left" className="k-pager-nav"></Button>
                         <span className="k-pager-input k-label"><Textbox />of 4 pages</span>

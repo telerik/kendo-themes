@@ -49,15 +49,15 @@ root.render(
                             </tbody>
                         </table>
                     </div>
-                    <div className="k-widget k-pager-wrap k-grid-pager k-state-focused">
-                        <a className="k-link k-pager-nav k-pager-first k-state-disabled"><Icon name="arrow-end-left" /></a>
-                        <a className="k-link k-pager-nav k-state-disabled"><Icon name="arrow-w" /></a>
+                    <div className="k-widget k-pager k-grid-pager k-focus">
+                        <a className="k-link k-pager-nav k-pager-first k-disabled"><Icon name="arrow-end-left" /></a>
+                        <a className="k-link k-pager-nav k-disabled"><Icon name="arrow-w" /></a>
                         <div className="k-pager-numbers-wrap">
                             <select className="k-picker k-dropdown-list k-dropdown">
                                 <option>1</option>
                             </select>
                             <ul className="k-pager-numbers">
-                                <li><span className="k-link k-state-selected">1</span></li>
+                                <li><span className="k-link k-selected">1</span></li>
                                 <li><a className="k-link">2</a></li>
                                 <li><a className="k-link">3</a></li>
                             </ul>
@@ -117,14 +117,14 @@ root.render(
                             </div>
                         </div>
                     </div>
-                    <div className="k-widget k-pager-wrap k-grid-pager k-state-focused">
+                    <div className="k-widget k-pager k-grid-pager k-focus">
                         <div>
-                            <a className="k-link k-pager-nav k-pager-first k-state-disabled"><Icon name="seek-w" /></a>
-                            <a className="k-link k-pager-nav k-state-disabled"><Icon name="arrow-w" /></a>
+                            <a className="k-link k-pager-nav k-pager-first k-disabled"><Icon name="seek-w" /></a>
+                            <a className="k-link k-pager-nav k-disabled"><Icon name="arrow-w" /></a>
                         </div>
                         <div>
                             <ul className="k-pager-numbers">
-                                <li><a className="k-link k-state-selected">1</a></li>
+                                <li><a className="k-link k-selected">1</a></li>
                                 <li><a className="k-link">2</a></li>
                                 <li><a className="k-link">3</a></li>
                             </ul>
@@ -145,15 +145,15 @@ root.render(
 
             <section>
                 <div className="k-widget k-grid k-grid-no-scrollbar">
-                    <div className="k-widget k-pager-wrap k-grid-pager k-grid-pager-top">
-                        <a className="k-link k-pager-nav k-pager-first k-state-disabled"><Icon name="arrow-end-left" /></a>
-                        <a className="k-link k-pager-nav k-state-disabled"><Icon name="arrow-w" /></a>
+                    <div className="k-widget k-pager k-grid-pager k-grid-pager-top">
+                        <a className="k-link k-pager-nav k-pager-first k-disabled"><Icon name="arrow-end-left" /></a>
+                        <a className="k-link k-pager-nav k-disabled"><Icon name="arrow-w" /></a>
                         <div className="k-pager-numbers-wrap">
                             <select className="k-picker k-dropdown-list k-dropdown">
                                 <option>1</option>
                             </select>
                             <ul className="k-pager-numbers">
-                                <li><span className="k-link k-state-selected">1</span></li>
+                                <li><span className="k-link k-selected">1</span></li>
                                 <li><a className="k-link">2</a></li>
                                 <li><a className="k-link">3</a></li>
                             </ul>
@@ -201,14 +201,14 @@ root.render(
 
             <section>
                 <div className="k-widget k-grid k-grid-no-scrollbar">
-                    <div className="k-widget k-pager-wrap k-grid-pager k-grid-pager-top">
+                    <div className="k-widget k-pager k-grid-pager k-grid-pager-top">
                         <div>
-                            <a className="k-link k-pager-nav k-pager-first k-state-disabled"><Icon name="seek-w" /></a>
-                            <a className="k-link k-pager-nav k-state-disabled"><Icon name="arrow-w" /></a>
+                            <a className="k-link k-pager-nav k-pager-first k-disabled"><Icon name="seek-w" /></a>
+                            <a className="k-link k-pager-nav k-disabled"><Icon name="arrow-w" /></a>
                         </div>
                         <div>
                             <ul className="k-pager-numbers">
-                                <li><a className="k-link k-state-selected">1</a></li>
+                                <li><a className="k-link k-selected">1</a></li>
                                 <li><a className="k-link">2</a></li>
                                 <li><a className="k-link">3</a></li>
                             </ul>

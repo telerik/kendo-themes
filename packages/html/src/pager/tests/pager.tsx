@@ -14,23 +14,23 @@ root.render(
 
             <span>LTR</span>
             <section>
-                <div className="k-pager-wrap k-widget">
-                    <a className="k-link k-pager-nav k-pager-first k-state-disabled"><Icon name="arrow-end-left" /></a>
-                    <a className="k-link k-pager-nav k-state-focus"><Icon name="arrow-w" /></a>
+                <div className="k-pager k-widget">
+                    <a className="k-link k-pager-nav k-pager-first k-disabled"><Icon name="arrow-end-left" /></a>
+                    <a className="k-link k-pager-nav k-focus"><Icon name="arrow-w" /></a>
                     <div className="k-pager-numbers-wrap">
                         <select className="k-picker k-dropdown-list k-dropdown">
                             <option>1</option>
                         </select>
                         <ul className="k-pager-numbers">
                             <li><span className="k-link">1</span></li>
-                            <li><a className="k-link k-state-hover">2</a></li>
-                            <li><span className="k-link k-state-focus">3</span></li>
-                            <li><a className="k-link k-state-selected">4</a></li>
-                            <li><a className="k-link k-state-hover k-state-focus">5</a></li>
-                            <li><a className="k-link k-state-selected k-state-focus">6</a></li>
+                            <li><a className="k-link k-hover">2</a></li>
+                            <li><span className="k-link k-focus">3</span></li>
+                            <li><a className="k-link k-selected">4</a></li>
+                            <li><a className="k-link k-hover k-focus">5</a></li>
+                            <li><a className="k-link k-selected k-focus">6</a></li>
                         </ul>
                     </div>
-                    <a className="k-link k-pager-nav k-state-hover"><Icon name="arrow-e" /></a>
+                    <a className="k-link k-pager-nav k-hover"><Icon name="arrow-e" /></a>
                     <a className="k-link k-pager-nav k-pager-last"><Icon name="arrow-end-right" /></a>
 
                     <span className="k-pager-sizes k-label">
@@ -44,9 +44,9 @@ root.render(
                 </div>
             </section>
             <section>
-                <div className="k-pager-wrap k-widget k-focus">
-                    <a className="k-link k-pager-nav k-pager-first k-state-disabled"><Icon name="arrow-end-left" /></a>
-                    <a className="k-link k-pager-nav k-state-disabled"><Icon name="arrow-w" /></a>
+                <div className="k-pager k-widget k-focus">
+                    <a className="k-link k-pager-nav k-pager-first k-disabled"><Icon name="arrow-end-left" /></a>
+                    <a className="k-link k-pager-nav k-disabled"><Icon name="arrow-w" /></a>
                     <span className="k-pager-input k-label">
                         Page
                         <Textbox showClearButton={false} value="999" />
@@ -66,9 +66,9 @@ root.render(
                 </div>
             </section>
             <section>
-                <div className="k-pager-wrap k-widget">
-                    <a className="k-link k-pager-nav k-pager-first k-state-disabled"><Icon name="arrow-end-left" /></a>
-                    <a className="k-link k-pager-nav k-state-disabled"><Icon name="arrow-w" /></a>
+                <div className="k-pager k-widget">
+                    <a className="k-link k-pager-nav k-pager-first k-disabled"><Icon name="arrow-end-left" /></a>
+                    <a className="k-link k-pager-nav k-disabled"><Icon name="arrow-w" /></a>
                     <div className="k-pager-numbers-wrap">
                         <select className="k-picker k-dropdown-list k-dropdown">
                             <option>1</option>
@@ -98,9 +98,9 @@ root.render(
 
             <span>RTL</span>
             <section>
-                <div className="k-pager-wrap k-widget" dir="rtl">
-                    <a className="k-link k-pager-nav k-pager-first k-state-disabled"><Icon name="arrow-end-left" /></a>
-                    <a className="k-link k-pager-nav k-state-disabled"><Icon name="arrow-w" /></a>
+                <div className="k-pager k-widget" dir="rtl">
+                    <a className="k-link k-pager-nav k-pager-first k-disabled"><Icon name="arrow-end-left" /></a>
+                    <a className="k-link k-pager-nav k-disabled"><Icon name="arrow-w" /></a>
                     <div className="k-pager-numbers-wrap">
                         <select className="k-picker k-dropdown-list k-dropdown">
                             <option>1</option>
@@ -127,9 +127,9 @@ root.render(
                 </div>
             </section>
             <section>
-                <div className="k-pager-wrap k-widget" dir="rtl">
-                    <a className="k-link k-pager-nav k-pager-first k-state-disabled"><Icon name="arrow-end-left" /></a>
-                    <a className="k-link k-pager-nav k-state-disabled"><Icon name="arrow-w" /></a>
+                <div className="k-pager k-widget" dir="rtl">
+                    <a className="k-link k-pager-nav k-pager-first k-disabled"><Icon name="arrow-end-left" /></a>
+                    <a className="k-link k-pager-nav k-disabled"><Icon name="arrow-w" /></a>
                     <span className="k-pager-input k-label">
                         Page
                         <Textbox showClearButton={false} value="999" />
@@ -149,9 +149,9 @@ root.render(
                 </div>
             </section>
             <section>
-                <div className="k-pager-wrap k-widget" dir="rtl">
-                    <a className="k-link k-pager-nav k-pager-first k-state-disabled"><Icon name="arrow-end-left" /></a>
-                    <a className="k-link k-pager-nav k-state-disabled"><Icon name="arrow-w" /></a>
+                <div className="k-pager k-widget" dir="rtl">
+                    <a className="k-link k-pager-nav k-pager-first k-disabled"><Icon name="arrow-end-left" /></a>
+                    <a className="k-link k-pager-nav k-disabled"><Icon name="arrow-w" /></a>
                     <div className="k-pager-numbers-wrap">
                         <select className="k-picker k-dropdown-list k-dropdown">
                             <option>1</option>
