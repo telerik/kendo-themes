@@ -62,15 +62,15 @@ root.render(
                             </tbody>
                         </table>
                     </div>
-                    <div className="k-widget k-pager-wrap k-grid-pager">
-                        <a className="k-link k-pager-nav k-pager-first k-state-disabled"><Icon name="arrow-end-left" /></a>
-                        <a className="k-link k-pager-nav k-state-disabled"><Icon name="arrow-w" /></a>
+                    <div className="k-widget k-pager k-grid-pager">
+                        <a className="k-link k-pager-nav k-pager-first k-disabled"><Icon name="arrow-end-left" /></a>
+                        <a className="k-link k-pager-nav k-disabled"><Icon name="arrow-w" /></a>
                         <div className="k-pager-numbers-wrap">
                             <select className="k-picker k-dropdown-list k-dropdown">
                                 <option>1</option>
                             </select>
                             <ul className="k-pager-numbers">
-                                <li><span className="k-link k-state-selected">1</span></li>
+                                <li><span className="k-link k-selected">1</span></li>
                                 <li><a className="k-link">2</a></li>
                                 <li><a className="k-link">3</a></li>
                             </ul>
@@ -99,15 +99,15 @@ root.render(
                                             <a className="k-grid-filter"><Icon name="filter" /></a>
                                             <a className="k-link">Default<span></span></a>
                                         </th>
-                                        <th className="k-header k-filterable k-state-hover">
+                                        <th className="k-header k-filterable k-hover">
                                             <a className="k-grid-filter"><Icon name="filter" /></a>
                                             <a className="k-link">Hover<span></span></a>
                                         </th>
-                                        <th className="k-header k-filterable k-state-focused">
+                                        <th className="k-header k-filterable k-focus">
                                             <a className="k-grid-filter"><Icon name="filter" /></a>
                                             <a className="k-link">Focus<span></span></a>
                                         </th>
-                                        <th className="k-header k-filterable k-state-active">
+                                        <th className="k-header k-filterable k-active">
                                             <a className="k-grid-filter"><Icon name="filter" /></a>
                                             <a className="k-link">Active<span></span></a>
                                         </th>
