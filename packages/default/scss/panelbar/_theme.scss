@@ -12,7 +12,8 @@
         > .k-item,
         > .k-panelbar-header {
 
-            &.k-state-expanded.k-level-0 > .k-link {
+            &.k-state-expanded.k-level-0 > .k-link,
+            &.k-expanded.k-level-0 > .k-link  {
                 @include fill(
                     $panelbar-header-expanded-text,
                     $panelbar-header-expanded-bg,
