@@ -453,7 +453,8 @@
         }
 
         // Pager
-        .k-pager-wrap.k-pager-sm {
+        .k-pager-wrap.k-pager-sm,
+        .k-pager.k-pager-sm {
             justify-content: center;
 
             .k-pager-refresh {

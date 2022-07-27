@@ -1,6 +1,7 @@
 @include exports("pager/layout") {
 
-    .k-pager-wrap {
+    .k-pager-wrap,
+    .k-pager {
         padding: $pager-padding-y $pager-padding-x;
         border-width: $pager-border-width;
         border-style: solid;
