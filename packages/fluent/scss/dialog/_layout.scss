@@ -40,10 +40,6 @@
         }
     }
 
-    .k-dialog-close {
-        align-self: flex-end;
-    }
-
     // Title bar
     .k-dialog-titlebar {
         border-width: var( --kendo-dialog-titlebar-border-width, #{$kendo-dialog-titlebar-border-width} ) 0 0;
