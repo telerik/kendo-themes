@@ -46,7 +46,7 @@
 
 // Native forms
 @use "button";
-// @use "split-button";
+@use "split-button";
 // @use "menu-button";
 // @use "input";
 // @use "textbox";
@@ -210,7 +210,7 @@
 
     // Native forms
     @include button.styles();
-    // @include split-button.styles();
+    @include split-button.styles();
     // @include menu-button.styles();
     // @include input.styles();
     // @include textbox.styles();
