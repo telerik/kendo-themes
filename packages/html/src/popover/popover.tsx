@@ -31,9 +31,11 @@ export class Popover extends React.Component<PopoverProps & React.HTMLProps<HTML
                         }
                     )}></div>
                 }
-                {title && <div className="k-popover-header">{title}</div>}
-                {body && <div className="k-popover-body">{body}</div>}
-                <>{children}</>
+                <div className="k-popover-inner">
+                    {title && <div className="k-popover-header">{title}</div>}
+                    {body && <div className="k-popover-body">{body}</div>}
+                    <>{children}</>
+                </div>
             </div>
         );
     }
