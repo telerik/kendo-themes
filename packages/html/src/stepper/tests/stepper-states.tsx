@@ -33,7 +33,7 @@ root.render(
                                 </span>
                             </a>
                         </li>
-                        <li className="k-step k-step-current k-step-focus" style={{ maxWidth: "33.333%" }}>
+                        <li className="k-step k-step-current k-focus" style={{ maxWidth: "33.333%" }}>
                             <a href="#" className="k-step-link">
                                 <span className="k-step-indicator">
                                     <span className="k-step-indicator-text">2</span>
@@ -74,7 +74,7 @@ root.render(
                                 </span>
                             </a>
                         </li>
-                        <li className="k-step k-step-current k-step-focus" style={{ maxWidth: "33.333%" }}>
+                        <li className="k-step k-step-current k-focus" style={{ maxWidth: "33.333%" }}>
                             <a href="#" className="k-step-link">
                                 <span className="k-step-indicator">
                                     <span className="k-step-indicator-text">2</span>
@@ -115,7 +115,7 @@ root.render(
                                 </span>
                             </a>
                         </li>
-                        <li className="k-step k-step-current k-step-focus" style={{ maxWidth: "33.333%" }}>
+                        <li className="k-step k-step-current k-focus" style={{ maxWidth: "33.333%" }}>
                             <a href="#" className="k-step-link">
                                 <span className="k-step-label">
                                     <span className="k-step-text">Personal Info</span>
@@ -145,21 +145,21 @@ root.render(
             <section className="col-4">
                 <nav className="k-stepper k-widget" style={{ display: "grid", gridTemplateColumns: "repeat(6, 1fr)" }}>
                     <ol className="k-step-list k-step-list-horizontal" style={{ gridColumnStart: "1", gridColumnEnd: "-1" }}>
-                        <li className="k-step k-step-first k-step-done k-step-hover" style={{ maxWidth: "33.333%" }}>
+                        <li className="k-step k-step-first k-step-done k-hover" style={{ maxWidth: "33.333%" }}>
                             <a href="#" className="k-step-link">
                                 <span className="k-step-indicator">
                                     <Icon className="k-step-indicator-icon" name="check"></Icon>
                                 </span>
                             </a>
                         </li>
-                        <li className="k-step k-step-current k-step-focus k-step-hover" style={{ maxWidth: "33.333%" }}>
+                        <li className="k-step k-step-current k-focus k-hover" style={{ maxWidth: "33.333%" }}>
                             <a href="#" className="k-step-link">
                                 <span className="k-step-indicator">
                                     <span className="k-step-indicator-text">2</span>
                                 </span>
                             </a>
                         </li>
-                        <li className="k-step k-step-last k-step-optional k-step-hover" style={{ maxWidth: "33.333%" }}>
+                        <li className="k-step k-step-last k-step-optional k-hover" style={{ maxWidth: "33.333%" }}>
                             <a href="#" className="k-step-link">
                                 <span className="k-step-indicator">
                                     <span className="k-step-indicator-text">3</span>
@@ -183,7 +183,7 @@ root.render(
             <section className="col-4">
                 <nav className="k-stepper k-widget" style={{ display: "grid", gridTemplateColumns: "repeat(6, 1fr)" }}>
                     <ol className="k-step-list k-step-list-horizontal" style={{ gridColumnStart: "1", gridColumnEnd: "-1" }}>
-                        <li className="k-step k-step-first k-step-done k-step-hover" style={{ maxWidth: "33.333%" }}>
+                        <li className="k-step k-step-first k-step-done k-hover" style={{ maxWidth: "33.333%" }}>
                             <a href="#" className="k-step-link">
                                 <span className="k-step-indicator">
                                     <Icon className="k-step-indicator-icon" name="check"></Icon>
@@ -193,7 +193,7 @@ root.render(
                                 </span>
                             </a>
                         </li>
-                        <li className="k-step k-step-current k-step-focus k-step-hover" style={{ maxWidth: "33.333%" }}>
+                        <li className="k-step k-step-current k-focus k-hover" style={{ maxWidth: "33.333%" }}>
                             <a href="#" className="k-step-link">
                                 <span className="k-step-indicator">
                                     <span className="k-step-indicator-text">2</span>
@@ -203,7 +203,7 @@ root.render(
                                 </span>
                             </a>
                         </li>
-                        <li className="k-step k-step-last k-step-hover" style={{ maxWidth: "33.333%" }}>
+                        <li className="k-step k-step-last k-hover" style={{ maxWidth: "33.333%" }}>
                             <a href="#" className="k-step-link">
                                 <span className="k-step-indicator">
                                     <span className="k-step-indicator-text">3</span>
@@ -227,21 +227,21 @@ root.render(
             <section className="col-4">
                 <nav className="k-stepper k-widget" style={{ display: "grid", gridTemplateColumns: "repeat(6, 1fr)" }}>
                     <ol className="k-step-list k-step-list-horizontal" style={{ gridColumnStart: "1", gridColumnEnd: "-1" }}>
-                        <li className="k-step k-step-first k-step-done k-step-hover" style={{ maxWidth: "33.333%" }}>
+                        <li className="k-step k-step-first k-step-done k-hover" style={{ maxWidth: "33.333%" }}>
                             <a href="#" className="k-step-link">
                                 <span className="k-step-label">
                                     <span className="k-step-text">Account Info</span>
                                 </span>
                             </a>
                         </li>
-                        <li className="k-step k-step-current k-step-focus k-step-hover" style={{ maxWidth: "33.333%" }}>
+                        <li className="k-step k-step-current k-focus k-hover" style={{ maxWidth: "33.333%" }}>
                             <a href="#" className="k-step-link">
                                 <span className="k-step-label">
                                     <span className="k-step-text">Personal Info</span>
                                 </span>
                             </a>
                         </li>
-                        <li className="k-step k-step-last k-step-hover" style={{ maxWidth: "33.333%" }}>
+                        <li className="k-step k-step-last k-hover" style={{ maxWidth: "33.333%" }}>
                             <a href="#" className="k-step-link">
                                 <span className="k-step-label">
                                     <span className="k-step-text">Payment Details</span>
@@ -262,21 +262,21 @@ root.render(
             <section className="col-4">
                 <nav className="k-stepper k-widget" style={{ display: "grid", gridTemplateColumns: "repeat(6, 1fr)" }}>
                     <ol className="k-step-list k-step-list-horizontal" style={{ gridColumnStart: "1", gridColumnEnd: "-1" }}>
-                        <li className="k-step k-step-first k-step-done k-step-focus" style={{ maxWidth: "33.333%" }}>
+                        <li className="k-step k-step-first k-step-done k-focus" style={{ maxWidth: "33.333%" }}>
                             <a href="#" className="k-step-link">
                                 <span className="k-step-indicator">
                                     <Icon className="k-step-indicator-icon" name="check"></Icon>
                                 </span>
                             </a>
                         </li>
-                        <li className="k-step k-step-current k-step-focus" style={{ maxWidth: "33.333%" }}>
+                        <li className="k-step k-step-current k-focus" style={{ maxWidth: "33.333%" }}>
                             <a href="#" className="k-step-link">
                                 <span className="k-step-indicator">
                                     <span className="k-step-indicator-text">2</span>
                                 </span>
                             </a>
                         </li>
-                        <li className="k-step k-step-last k-step-optional k-step-focus" style={{ maxWidth: "33.333%" }}>
+                        <li className="k-step k-step-last k-step-optional k-focus" style={{ maxWidth: "33.333%" }}>
                             <a href="#" className="k-step-link">
                                 <span className="k-step-indicator">
                                     <span className="k-step-indicator-text">3</span>
@@ -300,7 +300,7 @@ root.render(
             <section className="col-4">
                 <nav className="k-stepper k-widget" style={{ display: "grid", gridTemplateColumns: "repeat(6, 1fr)" }}>
                     <ol className="k-step-list k-step-list-horizontal" style={{ gridColumnStart: "1", gridColumnEnd: "-1" }}>
-                        <li className="k-step k-step-first k-step-done k-step-focus" style={{ maxWidth: "33.333%" }}>
+                        <li className="k-step k-step-first k-step-done k-focus" style={{ maxWidth: "33.333%" }}>
                             <a href="#" className="k-step-link">
                                 <span className="k-step-indicator">
                                     <Icon className="k-step-indicator-icon" name="check"></Icon>
@@ -310,7 +310,7 @@ root.render(
                                 </span>
                             </a>
                         </li>
-                        <li className="k-step k-step-current k-step-focus" style={{ maxWidth: "33.333%" }}>
+                        <li className="k-step k-step-current k-focus" style={{ maxWidth: "33.333%" }}>
                             <a href="#" className="k-step-link">
                                 <span className="k-step-indicator">
                                     <span className="k-step-indicator-text">2</span>
@@ -320,7 +320,7 @@ root.render(
                                 </span>
                             </a>
                         </li>
-                        <li className="k-step k-step-last k-step-focus" style={{ maxWidth: "33.333%" }}>
+                        <li className="k-step k-step-last k-focus" style={{ maxWidth: "33.333%" }}>
                             <a href="#" className="k-step-link">
                                 <span className="k-step-indicator">
                                     <span className="k-step-indicator-text">3</span>
@@ -344,21 +344,21 @@ root.render(
             <section className="col-4">
                 <nav className="k-stepper k-widget" style={{ display: "grid", gridTemplateColumns: "repeat(6, 1fr)" }}>
                     <ol className="k-step-list k-step-list-horizontal" style={{ gridColumnStart: "1", gridColumnEnd: "-1" }}>
-                        <li className="k-step k-step-first k-step-done k-step-focus" style={{ maxWidth: "33.333%" }}>
+                        <li className="k-step k-step-first k-step-done k-focus" style={{ maxWidth: "33.333%" }}>
                             <a href="#" className="k-step-link">
                                 <span className="k-step-label">
                                     <span className="k-step-text">Account Info</span>
                                 </span>
                             </a>
                         </li>
-                        <li className="k-step k-step-current k-step-focus" style={{ maxWidth: "33.333%" }}>
+                        <li className="k-step k-step-current k-focus" style={{ maxWidth: "33.333%" }}>
                             <a href="#" className="k-step-link">
                                 <span className="k-step-label">
                                     <span className="k-step-text">Personal Info</span>
                                 </span>
                             </a>
                         </li>
-                        <li className="k-step k-step-last k-step-focus" style={{ maxWidth: "33.333%" }}>
+                        <li className="k-step k-step-last k-focus" style={{ maxWidth: "33.333%" }}>
                             <a href="#" className="k-step-link">
                                 <span className="k-step-label">
                                     <span className="k-step-text">Payment Details</span>
@@ -381,21 +381,21 @@ root.render(
             <section className="col-4">
                 <nav className="k-stepper k-widget" style={{ display: "grid", gridTemplateColumns: "repeat(6, 1fr)" }}>
                     <ol className="k-step-list k-step-list-horizontal" style={{ gridColumnStart: "1", gridColumnEnd: "-1" }}>
-                        <li className="k-step k-step-first k-step-done k-step-disabled" style={{ maxWidth: "33.333%" }}>
+                        <li className="k-step k-step-first k-step-done k-disabled" style={{ maxWidth: "33.333%" }}>
                             <a href="#" className="k-step-link">
                                 <span className="k-step-indicator">
                                     <Icon className="k-step-indicator-icon" name="check"></Icon>
                                 </span>
                             </a>
                         </li>
-                        <li className="k-step k-step-current k-step-focus k-step-disabled" style={{ maxWidth: "33.333%" }}>
+                        <li className="k-step k-step-current k-focus k-disabled" style={{ maxWidth: "33.333%" }}>
                             <a href="#" className="k-step-link">
                                 <span className="k-step-indicator">
                                     <span className="k-step-indicator-text">2</span>
                                 </span>
                             </a>
                         </li>
-                        <li className="k-step k-step-last k-step-optional k-step-disabled" style={{ maxWidth: "33.333%" }}>
+                        <li className="k-step k-step-last k-step-optional k-disabled" style={{ maxWidth: "33.333%" }}>
                             <a href="#" className="k-step-link">
                                 <span className="k-step-indicator">
                                     <span className="k-step-indicator-text">3</span>
@@ -419,7 +419,7 @@ root.render(
             <section className="col-4">
                 <nav className="k-stepper k-widget" style={{ display: "grid", gridTemplateColumns: "repeat(6, 1fr)" }}>
                     <ol className="k-step-list k-step-list-horizontal" style={{ gridColumnStart: "1", gridColumnEnd: "-1" }}>
-                        <li className="k-step k-step-first k-step-done k-step-disabled" style={{ maxWidth: "33.333%" }}>
+                        <li className="k-step k-step-first k-step-done k-disabled" style={{ maxWidth: "33.333%" }}>
                             <a href="#" className="k-step-link">
                                 <span className="k-step-indicator">
                                     <Icon className="k-step-indicator-icon" name="check"></Icon>
@@ -429,7 +429,7 @@ root.render(
                                 </span>
                             </a>
                         </li>
-                        <li className="k-step k-step-current k-step-focus k-step-disabled" style={{ maxWidth: "33.333%" }}>
+                        <li className="k-step k-step-current k-focus k-disabled" style={{ maxWidth: "33.333%" }}>
                             <a href="#" className="k-step-link">
                                 <span className="k-step-indicator">
                                     <span className="k-step-indicator-text">2</span>
@@ -439,7 +439,7 @@ root.render(
                                 </span>
                             </a>
                         </li>
-                        <li className="k-step k-step-last k-step-disabled" style={{ maxWidth: "33.333%" }}>
+                        <li className="k-step k-step-last k-disabled" style={{ maxWidth: "33.333%" }}>
                             <a href="#" className="k-step-link">
                                 <span className="k-step-indicator">
                                     <span className="k-step-indicator-text">3</span>
@@ -463,21 +463,21 @@ root.render(
             <section className="col-4">
                 <nav className="k-stepper k-widget" style={{ display: "grid", gridTemplateColumns: "repeat(6, 1fr)" }}>
                     <ol className="k-step-list k-step-list-horizontal" style={{ gridColumnStart: "1", gridColumnEnd: "-1" }}>
-                        <li className="k-step k-step-first k-step-done k-step-disabled" style={{ maxWidth: "33.333%" }}>
+                        <li className="k-step k-step-first k-step-done k-disabled" style={{ maxWidth: "33.333%" }}>
                             <a href="#" className="k-step-link">
                                 <span className="k-step-label">
                                     <span className="k-step-text">Account Info</span>
                                 </span>
                             </a>
                         </li>
-                        <li className="k-step k-step-current k-step-focus k-step-disabled" style={{ maxWidth: "33.333%" }}>
+                        <li className="k-step k-step-current k-focus k-disabled" style={{ maxWidth: "33.333%" }}>
                             <a href="#" className="k-step-link">
                                 <span className="k-step-label">
                                     <span className="k-step-text">Personal Info</span>
                                 </span>
                             </a>
                         </li>
-                        <li className="k-step k-step-last k-step-disabled" style={{ maxWidth: "33.333%" }}>
+                        <li className="k-step k-step-last k-disabled" style={{ maxWidth: "33.333%" }}>
                             <a href="#" className="k-step-link">
                                 <span className="k-step-label">
                                     <span className="k-step-text">Payment Details</span>
