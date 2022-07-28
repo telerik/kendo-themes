@@ -13,6 +13,7 @@
         .k-step {
             // Hover
             &:hover,
+            &.k-hover,
             &.k-step-hover {
                 .k-step-label {
                     color: $stepper-label-hover-text;
@@ -27,9 +28,18 @@
                 }
             }
 
+            &.k-step-focus,
+            &.k-focus,
+            .k-step-link:focus  {
+                // Labels only
+                .k-step-label:only-child {
+                    @include box-shadow( inset 0 0 0 $stepper-indicator-focus-size $component-border );
+                }
+            }
 
             // Disabled
             &.k-step-disabled,
+            &.k-disabled,
             &:disabled {
                 .k-step-indicator {
                     @include fill(
@@ -37,6 +47,10 @@
                         $stepper-indicator-disabled-bg,
                         $stepper-indicator-disabled-border
                     );
+                }
+
+                .k-step-label {
+                    @include fill( $color: $stepper-label-disabled-text );
                 }
             }
         }
@@ -73,6 +87,7 @@
 
             // Hover
             &:hover,
+            &.k-hover,
             &.k-step-hover {
                 .k-step-indicator {
                     @include fill(
@@ -86,6 +101,7 @@
 
             // Disabled
             &.k-step-disabled,
+            &.k-disabled,
             &:disabled {
                 .k-step-indicator {
                     @include fill(
@@ -112,6 +128,7 @@
 
             // Hover
             &:hover,
+            &.k-hover,
             &.k-step-hover {
                 .k-step-indicator {
                     @include fill(
@@ -125,6 +142,7 @@
 
             // Disabled
             &.k-step-disabled,
+            &.k-disabled,
             &:disabled {
                 .k-step-indicator {
                     @include fill(
@@ -153,21 +171,12 @@
             }
 
             &:hover,
+            &.k-hover,
             &.k-step-hover {
                 .k-step-label {
                     @include fill( $color: $stepper-label-error-text );
                 }
             }
-        }
-
-        .k-step-disabled .k-step-label {
-            @include fill( $color: $stepper-label-disabled-text );
-        }
-
-        // Labels only
-        .k-step-focus .k-step-label:only-child,
-        .k-step-link:focus .k-step-label:only-child {
-            @include box-shadow( inset 0 0 0 $stepper-indicator-focus-size $component-border );
         }
 
         // Optional Label
