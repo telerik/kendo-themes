@@ -50,12 +50,6 @@
             align-items: center;
             overflow: hidden;
         }
-        .k-step-disabled {
-            pointer-events: none;
-
-            .k-step-link { cursor: default; }
-        }
-
 
         // Step indicator
         .k-step-indicator {
@@ -92,7 +86,9 @@
                 z-index: 2;
             }
         }
+
         .k-step-focus,
+        .k-step.k-focus,
         .k-step-link:focus {
             .k-step-indicator::after {
                 display: block;
@@ -135,11 +131,20 @@
             font-style: $stepper-optional-label-font-style;
             opacity: $stepper-optional-label-opacity;
         }
-        .k-step-disabled .k-step-label-optional,
-        &.k-state-disabled .k-step-label-optional,
-        &.k-disabled .k-step-label-optional {
-            color: inherit;
+
+
+        .k-step-disabled,
+        .k-step.k-disabled {
+            opacity: 1;
+            pointer-events: none;
+
+            .k-step-link { cursor: default; }
+
+            .k-step-label-optional {
+                color: inherit;
+            }
         }
+
 
         // Progressbar
         .k-progressbar {
