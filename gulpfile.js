@@ -45,7 +45,8 @@ function flattenAll( cwds, options ) {
 function writeSwatches( cwds, options ) {
 
     cwds.forEach( cwd => {
-        let files = glob.sync( path.resolve( cwd, options.swatches ) );
+        let fileGlob = path.resolve( cwd, options.swatches ).split(path.sep).join(path.posix.sep);
+        let files = glob.sync( fileGlob );
 
         files.forEach( file => {
             let json = JSON.parse( fs.readFileSync( file, 'utf-8' ) );
