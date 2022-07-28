@@ -27,7 +27,7 @@
     "postcss": "^8.4.14",
     "postcss-calc": "^8.2.4",
     "sass": "^1.52.2",
-    "sass-build": "^0.0.1",
+    "sass-build": "^0.0.2",
     "sass-embedded": "^1.52.2",
     "sass-lint": "^1.13.1",
     "sassdoc": "^2.7.4",
