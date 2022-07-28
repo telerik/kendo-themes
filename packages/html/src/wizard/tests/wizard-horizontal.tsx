@@ -63,7 +63,7 @@ root.render(
                                     </span>
                                 </a>
                             </li>
-                            <li className="k-step k-step-current k-step-focus k-step-error" style={{ maxHeight: "33.333%" }}>
+                            <li className="k-step k-step-current k-focus k-step-error" style={{ maxHeight: "33.333%" }}>
                                 <a href="#" className="k-step-link">
                                     <span className="k-step-indicator">
                                         <span className="k-step-indicator-text">2</span>
@@ -129,7 +129,7 @@ root.render(
                                     </span>
                                 </a>
                             </li>
-                            <li className="k-step k-step-current k-step-focus k-step-error" style={{ maxHeight: "33.333%" }}>
+                            <li className="k-step k-step-current k-focus k-step-error" style={{ maxHeight: "33.333%" }}>
                                 <a href="#" className="k-step-link">
                                     <span className="k-step-indicator">
                                         <span className="k-step-indicator-text">2</span>
@@ -196,7 +196,7 @@ root.render(
                                     </span>
                                 </a>
                             </li>
-                            <li className="k-step k-step-current k-step-focus k-step-error" style={{ maxHeight: "33.333%" }}>
+                            <li className="k-step k-step-current k-focus k-step-error" style={{ maxHeight: "33.333%" }}>
                                 <a href="#" className="k-step-link">
                                     <span className="k-step-indicator">
                                         <span className="k-step-indicator-text">2</span>
@@ -262,7 +262,7 @@ root.render(
                                     </span>
                                 </a>
                             </li>
-                            <li className="k-step k-step-current k-step-focus k-step-error" style={{ maxHeight: "33.333%" }}>
+                            <li className="k-step k-step-current k-focus k-step-error" style={{ maxHeight: "33.333%" }}>
                                 <a href="#" className="k-step-link">
                                     <span className="k-step-indicator">
                                         <span className="k-step-indicator-text">2</span>
@@ -328,7 +328,7 @@ root.render(
                                     </span>
                                 </a>
                             </li>
-                            <li className="k-step k-step-current k-step-focus k-step-error" style={{ maxHeight: "33.333%" }}>
+                            <li className="k-step k-step-current k-focus k-step-error" style={{ maxHeight: "33.333%" }}>
                                 <a href="#" className="k-step-link">
                                     <span className="k-step-indicator">
                                         <span className="k-step-indicator-text">2</span>
