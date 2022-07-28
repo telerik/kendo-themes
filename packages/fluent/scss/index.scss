@@ -15,7 +15,7 @@
 // Generic content
 // @use "styling";
 @use "icon";
-// @use "messagebox";
+@use "messagebox";
 
 
 // Primitive components
@@ -179,7 +179,7 @@
     // Generic content
     // @include styling.styles();
     @include icon.styles();
-    // @include messagebox.styles();
+    @include messagebox.styles();
 
 
     // Primitive components
