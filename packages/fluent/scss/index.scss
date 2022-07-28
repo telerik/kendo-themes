@@ -46,7 +46,7 @@
 
 // Native forms
 @use "button";
-// @use "split-button";
+@use "split-button";
 // @use "menu-button";
 // @use "input";
 // @use "textbox";
@@ -119,7 +119,7 @@
 
 
 // Layout & containers
-// @use "card";
+@use "card";
 // @use "expansion-panel";
 // @use "panelbar";
 // @use "splitter";
@@ -210,7 +210,7 @@
 
     // Native forms
     @include button.styles();
-    // @include split-button.styles();
+    @include split-button.styles();
     // @include menu-button.styles();
     // @include input.styles();
     // @include textbox.styles();
@@ -283,7 +283,7 @@
 
 
     // Layout & containers
-    // @include card.styles();
+    @include card.styles();
     // @include expansion-panel.styles();
     // @include panelbar.styles();
     // @include splitter.styles();

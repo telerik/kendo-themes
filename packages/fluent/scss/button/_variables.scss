@@ -40,6 +40,14 @@ $kendo-button-font-family: var( --kendo-font-family, inherit ) !default;
 // Font weight of the button.
 $kendo-button-font-weight: var( --kendo-font-weight-bold, normal ) !default;
 
+/// Calculated height of the button.
+/// @group button
+$kendo-button-calc-size: calc( ( #{$kendo-button-line-height-md} * 1em ) + ( #{$kendo-button-padding-y-md} * 2 ) + ( #{$kendo-button-border-width} * 2 ) ) !default;
+
+/// Calculated inner height of the button. Without the border width.
+/// @group button
+$kendo-button-inner-calc-size: calc( ( #{$kendo-button-line-height-md} * 1em ) + ( #{$kendo-button-padding-y-md} * 2 ) ) !default;
+
 /// Sizes map for the button.
 /// @group button
 $kendo-button-sizes: (
@@ -120,7 +128,7 @@ $kendo-button-solid-base-focus-bg: $kendo-button-solid-base-bg !default;
 $kendo-button-solid-base-focus-border: $kendo-button-solid-base-border !default;
 /// The focus outline color of the solid base button.
 /// @group button
-$kendo-button-solid-base-focus-outline: inherit !default;
+$kendo-button-solid-base-focus-outline: get-theme-color-var( neutral-130 ) !default;
 /// The active text color of the solid base button.
 /// @group button
 $kendo-button-solid-base-active-text: $kendo-button-solid-base-hover-text !default;

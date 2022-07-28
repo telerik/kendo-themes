@@ -62,8 +62,39 @@ $kendo-disabled-bg: get-theme-color-var( neutral-20 ) !default;
 $kendo-disabled-text: get-theme-color-var( neutral-90 ) !default;
 $kendo-disabled-border: transparent !default;
 
+
+// Theme colors
+$kendo-theme-colors: (
+    primary: (
+        text: get-theme-color-var( primary-190 ),
+        bg: get-theme-color-var( primary-20 ),
+        border: get-theme-color-var( primary-20 )
+    ),
+    info: (
+        text: get-theme-color-var( info-190 ),
+        bg: get-theme-color-var( info-20 ),
+        border: get-theme-color-var( info-20 )
+    ),
+    success: (
+        text: get-theme-color-var( success-190 ),
+        bg: get-theme-color-var( success-20 ),
+        border: get-theme-color-var( success-20 )
+    ),
+    warning: (
+        text: get-theme-color-var( warning-190 ),
+        bg: get-theme-color-var( warning-20 ),
+        border: get-theme-color-var( warning-20 )
+    ),
+    error: (
+        text: get-theme-color-var( error-190 ),
+        bg: get-theme-color-var( error-20 ),
+        border: get-theme-color-var( error-20 )
+    )
+) !default;
+
 :root {
-    @include palette-vars( $kendo-fluent-palettes );
+    @include css-vars( $kendo-fluent-palettes );
+    @include css-vars( $kendo-theme-colors );
 
     --kendo-body-bg: #{$kendo-body-bg};
     --kendo-body-text: #{$kendo-body-text};
