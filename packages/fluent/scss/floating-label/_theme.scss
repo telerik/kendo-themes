@@ -1,0 +1,32 @@
+@use "_variables.scss" as *;
+@use "../core/mixins/" as *;
+
+@mixin kendo-floating-label--theme() {
+
+     // Floating label
+     .k-floating-label-container {
+
+        > .k-label {
+            @include fill(
+                $color: var( --kendo-floating-label-text, #{$kendo-floating-label-text} ),
+                $bg: var( --kendo-floating-label-bg, #{$kendo-floating-label-bg} )
+            );
+        }
+
+        &.k-focus > .k-label,
+        &.k-state-focused > .k-label {
+            @include fill(
+                $color: var( --kendo-floating-label-focus-text, #{$kendo-floating-label-focus-text} ),
+                $bg: var( --kendo-floating-label-focus-bg, #{$kendo-floating-label-focus-bg} )
+            );
+        }
+
+        &.k-invalid > .k-label,
+        &.ng-invalid.ng-touched > .k-label,
+        &.ng-invalid.ng-dirty > .k-label {
+            @include fill ( $color: var( --kendo-floating-label-invalid-text, #{$kendo-floating-label-invalid-text} ) );
+        }
+
+    }
+
+}
