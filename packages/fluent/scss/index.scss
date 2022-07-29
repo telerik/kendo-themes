@@ -41,7 +41,7 @@
 // Form helpers
 // @use "forms";
 // @use "validator";
-// @use "floating-label";
+@use "floating-label";
 
 
 // Native forms
@@ -205,7 +205,7 @@
     // Form helpers
     // @include forms.styles();
     // @include validator.styles();
-    // @include floating-label.styles();
+    @include floating-label.styles();
 
 
     // Native forms
