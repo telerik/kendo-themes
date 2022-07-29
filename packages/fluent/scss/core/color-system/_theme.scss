@@ -51,10 +51,10 @@ $kendo-link-text: get-theme-color-var( primary-130 ) !default;
 $kendo-link-hover-text: get-theme-color-var( primary-160 ) !default;
 
 // Validator
-$kendo-invalid-bg: null !default;
+$kendo-invalid-bg: initial !default;
 $kendo-invalid-text: get-theme-color-var( error-190 ) !default;
 $kendo-invalid-border: get-theme-color-var( error-190 ) !default;
-$kendo-invalid-shadow: null !default;
+$kendo-invalid-shadow: none !default;
 
 
 // Disabled Styling
@@ -128,4 +128,9 @@ $kendo-theme-colors: (
     --kendo-selected-hover-border: #{$kendo-selected-hover-border};
 
     --kendo-subtle-text: #{$kendo-subtle-text};
+
+    --kendo-invalid-bg: #{$kendo-invalid-bg};
+    --kendo-invalid-text: #{$kendo-invalid-text};
+    --kendo-invalid-border: #{$kendo-invalid-border};
+    --kendo-invalid-shadow: #{$kendo-invalid-shadow};
 }
