@@ -82,7 +82,7 @@
 // @use "maskedtextbox";
 // @use "multiselect";
 // @use "numerictextbox";
-// @use "rating";
+@use "rating";
 // @use "searchbox";
 // @use "switch";
 // @use "upload";
@@ -246,7 +246,7 @@
     // @include maskedtextbox.styles();
     // @include multiselect.styles();
     // @include numerictextbox.styles();
-    // @include rating.styles();
+    @include rating.styles();
     // @include searchbox.styles();
     // @include switch.styles();
     // @include upload.styles();
