@@ -1,7 +1,7 @@
 {
   "name": "@progress/kendo-theme-nouvelle",
   "description": "A css variables heavy theme for Kendo UI",
-  "version": "5.6.1-dev.0",
+  "version": "5.6.1-dev.1",
   "author": "Progress",
   "license": "Apache-2.0",
   "keywords": [
@@ -45,7 +45,7 @@
   },
   "dependencies": {
     "@progress/kendo-font-icons": "^0.2.0",
-    "@progress/kendo-theme-utils": "^5.6.1-dev.0"
+    "@progress/kendo-theme-utils": "^5.6.1-dev.1"
   },
   "devDependencies": {
     "sass-build": "^0.0.1"
