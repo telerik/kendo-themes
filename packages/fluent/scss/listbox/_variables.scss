@@ -1,0 +1,45 @@
+@use "../core/color-system" as *;
+@use "../core/_variables.scss" as *;
+
+/// Margin between the listbox elements.
+/// @group listbox
+$kendo-listbox-margin: $kendo-padding-x !default;
+/// Margin between the listbox buttons.
+/// @group listbox
+$kendo-listbox-button-margin: $kendo-padding-x !default;
+/// Width of the listbox.
+/// @group listbox
+$kendo-listbox-width: 10em !default;
+/// Height of the listbox.
+/// @group listbox
+$kendo-listbox-height: 200px !default;
+
+/// Border width of the listbox.
+/// @group listbox
+$kendo-listbox-border-width: 1px !default;
+/// Font family of the listbox.
+/// @group listbox
+$kendo-listbox-font-family: var( --kendo-font-family, normal ) !default;
+/// Font size of the listbox.
+/// @group listbox
+$kendo-listbox-font-size: var( --kendo-font-size, inherit ) !default;;
+/// Line height of the listbox.
+/// @group listbox
+$kendo-listbox-line-height: var( --kendo-line-height, normal ) !default;
+
+/// Background color of the listbox component.
+/// @group listbox
+$kendo-listbox-bg: $kendo-component-bg !default;
+/// Text color of the listbox component.
+/// @group listbox
+$kendo-listbox-text: $kendo-component-text !default;
+/// Border color of the listbox component.
+/// @group listbox
+$kendo-listbox-border: $kendo-component-border !default;
+
+/// Width of the drop hint.
+/// @group listbox
+$kendo-listbox-drop-hint-width: 1px !default;
+/// Border color of the drop hint.
+/// @group listbox
+$kendo-listbox-drop-hint-border-color: get-theme-color-var( primary-130 ) !default;
