@@ -52,7 +52,7 @@
 // @use "textbox";
 // @use "textarea";
 // @use "checkbox";
-// @use "listbox";
+@use "listbox";
 // @use "progressbar";
 // @use "radio";
 // @use "slider";
@@ -216,7 +216,7 @@
     // @include textbox.styles();
     // @include textarea.styles();
     // @include checkbox.styles();
-    // @include listbox.styles();
+    @include listbox.styles();
     // @include progressbar.styles();
     // @include radio.styles();
     // @include slider.styles();
