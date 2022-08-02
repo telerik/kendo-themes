@@ -87,6 +87,14 @@ $kendo-border-radius-sm: calc( #{$kendo-border-radius} / 2 ) !default;
 $kendo-border-radius-md: $kendo-border-radius !default;
 $kendo-border-radius-lg: calc( #{$kendo-border-radius} * 2 ) !default;
 
+// Metrics
+$kendo-padding-x: map-get( $kendo-spacing, 2 ) !default;
+$kendo-padding-y: map-get( $kendo-spacing, 1 ) !default;
+$kendo-padding-x-sm: calc( #{$kendo-padding-x} / 2) !default;
+$kendo-padding-y-sm: calc( #{$kendo-padding-y} / 2) !default;
+$kendo-padding-x-lg: calc( #{$kendo-padding-x} * 1.5) !default;
+$kendo-padding-y-lg: calc( #{$kendo-padding-y} * 1.5) !default;
+
 :root {
     --kendo-font-family: #{meta.inspect($kendo-font-family)};
 

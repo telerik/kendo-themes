@@ -19,7 +19,7 @@
 
 
 // Primitive components
-// @use "list";
+@use "list";
 // @use "listgroup";
 @use "overlay";
 @use "popup";
@@ -183,7 +183,7 @@
 
 
     // Primitive components
-    // @include list.styles();
+    @include list.styles();
     // @include listgroup.styles();
     @include overlay.styles();
     @include popup.styles();
