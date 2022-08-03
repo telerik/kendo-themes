@@ -83,7 +83,7 @@ root.render(
                                                 </tr>
                                             </tbody>
                                         </table>
-                                        <div className="k-event" style={{ display: "block", width: "300px", right: "304px", top: '0px', height: "25px" }} >
+                                        <div className="k-event" style={{ width: "300px", right: "304px", top: '0px', height: "25px" }} >
                                             <span className="k-event-actions"></span>
                                             <div><div className="k-event-template">Attending HR Conference</div></div>
                                             <span className="k-event-actions"><a className="k-link k-event-delete"><Icon name="x"></Icon></a></span>
@@ -364,7 +364,7 @@ root.render(
                                         </tr>
                                     </tbody>
                                 </table>
-                                <div className="k-event" style={{ display: "block", width: "150px", right: "306px", top: '0px', height: "73px" }} >
+                                <div className="k-event" style={{ width: "150px", right: "306px", top: '0px', height: "73px" }} >
                                     <span className="k-event-actions"><Icon name="reload"></Icon></span>
                                     <div>
                                         <div className="k-event-template k-event-time">7:00 AM - 8:00 AM</div>
@@ -373,7 +373,7 @@ root.render(
                                     <span className="k-event-actions"><a className="k-link k-event-delete"><Icon name="x"></Icon></a></span>
                                 </div>
 
-                                <div className="k-event k-event-drag-hint" style={{ display: "block", width: "150px", right: "631px", top: '0px', height: "73px" }} >
+                                <div className="k-event k-event-drag-hint" style={{ width: "150px", right: "631px", top: '0px', height: "73px" }} >
                                     <span className="k-event-actions"><Icon name="reload"></Icon></span>
                                     <div>
                                         <div className="k-event-template k-event-time">7:00 AM - 8:00 AM</div>
