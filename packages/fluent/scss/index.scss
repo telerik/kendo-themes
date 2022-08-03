@@ -49,8 +49,8 @@
 @use "split-button";
 // @use "menu-button";
 @use "input";
-// @use "textbox";
-// @use "textarea";
+@use "textbox";
+@use "textarea";
 // @use "checkbox";
 @use "listbox";
 // @use "progressbar";
@@ -64,26 +64,26 @@
 
 
 // Augmented forms
-// @use "autocomplete";
+@use "autocomplete";
 // @use "captcha";
 // @use "colorpalette";
 // @use "colorgradient";
 // @use "coloreditor";
 // @use "colorpicker";
-// @use "combobox";
-// @use "dateinput";
-// @use "datepicker";
-// @use "timepicker";
-// @use "datetimepicker";
-// @use "daterangepicker";
-// @use "dropdowngrid";
-// @use "dropdownlist";
-// @use "dropdowntree";
-// @use "maskedtextbox";
-// @use "multiselect";
-// @use "numerictextbox";
+@use "combobox";
+@use "dateinput";
+@use "datepicker";
+@use "timepicker";
+@use "datetimepicker";
+@use "daterangepicker";
+@use "dropdowngrid";
+@use "dropdownlist";
+@use "dropdowntree";
+@use "maskedtextbox";
+@use "multiselect";
+@use "numerictextbox";
 @use "rating";
-// @use "searchbox";
+@use "searchbox";
 // @use "switch";
 // @use "upload";
 // @use "dropzone";
@@ -247,7 +247,7 @@
     // @include multiselect.styles();
     // @include numerictextbox.styles();
     @include rating.styles();
-    // @include searchbox.styles();
+    @include searchbox.styles();
     // @include switch.styles();
     // @include upload.styles();
     // @include dropzone.styles();
