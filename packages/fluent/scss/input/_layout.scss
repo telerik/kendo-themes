@@ -75,6 +75,7 @@
                 border-width: var( --kendo-input-focus-border-width, #{$kendo-input-focus-border-width} );
                 border-style: solid;
                 pointer-events: none;
+                z-index: 1;
             }
         }
     }
@@ -185,11 +186,14 @@
     // Icon picker
     .k-icon-picker {
         .k-input-inner {
-            padding: var( --INTERNAL--kendo-input-padding-y, 0 );
-            width: calc( var( --INTERNAL--kendo-input-line-height, 0 ) * 1em );
-            height: calc( var( --INTERNAL--kendo-input-line-height, 0 ) * 1em );
+            padding: 0;
             box-sizing: content-box;
             justify-content: center;
+        }
+
+        .k-value-icon {
+            border: 0;
+            border-radius: 0;
         }
     }
 
@@ -400,6 +404,10 @@
 
             .k-input-spinner {
                 width: if( $use-input-spinner-width, var( --kendo-input-spinner-width, #{$_button-width} ), auto );
+            }
+
+            &.k-icon-picker .k-input-inner {
+                width: var( --kendo-input-icon-picker-width, #{$_button-width} );
             }
         }
     }
