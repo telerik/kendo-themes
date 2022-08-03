@@ -1,0 +1,44 @@
+@use "../core/" as *;
+@use "_variables.scss" as *;
+
+@mixin kendo-forms--theme() {
+
+    .k-form,
+    .k-form-inline {
+        @include fill( $color: var( --kendo-form-text, #{$kendo-body-text} ) );
+
+        fieldset {
+            legend {
+                @include fill( $color: var( --kendo-fieldset-legend-text, #{$kendo-fieldset-legend-text} ) );
+            }
+        }
+
+        .k-form-legend {
+            @include fill( $border: var( --kendo-form-legend-border-color, #{$kendo-form-legend-border-color} ) );
+        }
+
+        .k-field-info {
+            @include fill( $color: var( --kendo-field-info-text, #{$kendo-subtle-text} ) );
+        }
+
+        .k-alert-error {
+            @include fill( $color: var( --kendo-forms-invalid-color, #{$kendo-forms-invalid-color} ) );
+        }
+    }
+
+    .k-form-error,
+    .k-text-error,
+    .k-form-field-error .k-label {
+        @include fill( $color: var( --kendo-forms-invalid-color, #{$kendo-forms-invalid-color} ) );
+    }
+
+    .k-form-separator {
+        @include fill( $border: var( --kendo-form-separator-border-color, #{$kendo-form-separator-border-color} ) );
+    }
+
+    .k-form-hint,
+    .k-label-optional {
+        @include fill( $color: var( --kendo-form-hint-text, #{$kendo-form-hint-text} ) );
+    }
+
+}

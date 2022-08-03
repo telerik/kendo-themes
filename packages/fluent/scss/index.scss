@@ -39,7 +39,7 @@
 
 
 // Form helpers
-// @use "forms";
+@use "forms";
 // @use "validator";
 @use "floating-label";
 
@@ -203,7 +203,7 @@
 
 
     // Form helpers
-    // @include forms.styles();
+    @include forms.styles();
     // @include validator.styles();
     @include floating-label.styles();
 
