@@ -76,7 +76,7 @@ root.render(
                                                     </div>
                                                 </td>
                                             </tr>
-                                            <tr className="k-state-hover">
+                                            <tr className="k-hover">
                                                 <td className="k-scheduler-datecolumn k-first"><strong className="k-scheduler-agendaday">14</strong><em className="k-scheduler-agendaweek">Friday</em><span className="k-scheduler-agendadate">June, 2013</span></td>
                                                 <td className="k-scheduler-timecolumn"><div>all day</div></td>
                                                 <td>
@@ -87,7 +87,7 @@ root.render(
                                                     </div>
                                                 </td>
                                             </tr>
-                                            <tr className="k-state-selected">
+                                            <tr className="k-selected">
                                                 <td className="k-scheduler-datecolumn k-first"><strong className="k-scheduler-agendaday">17</strong><em className="k-scheduler-agendaweek">Monday</em><span className="k-scheduler-agendadate">June, 2013</span></td>
                                                 <td className="k-scheduler-timecolumn"><div>6:30 PM-8:00 PM</div></td>
                                                 <td>
