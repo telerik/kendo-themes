@@ -166,7 +166,7 @@
     // Scheduler integration
     .k-scheduler .k-calendar .k-other-month {
         @include fill(
-            var( --kendo-calendar-other-month-text, #{$kendo-calendar-other-month-text} )
+            var( --kendo-calendar-other-month-text, #{$kendo-calendar-other-month-text} ),
             transparent
         );
     }
