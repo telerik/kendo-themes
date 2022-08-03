@@ -213,8 +213,8 @@
     @include split-button.styles();
     // @include menu-button.styles();
     @include input.styles();
-    // @include textbox.styles();
-    // @include textarea.styles();
+    @include textbox.styles();
+    @include textarea.styles();
     // @include checkbox.styles();
     @include listbox.styles();
     // @include progressbar.styles();
@@ -228,24 +228,24 @@
 
 
     // Augmented forms
-    // @include autocomplete.styles();
+    @include autocomplete.styles();
     // @include captcha.styles();
     // @include colorpalette.styles();
     // @include colorgradient.styles();
     // @include coloreditor.styles();
     // @include colorpicker.styles();
-    // @include combobox.styles();
-    // @include dateinput.styles();
-    // @include datepicker.styles();
-    // @include timepicker.styles();
-    // @include datetimepicker.styles();
-    // @include daterangepicker.styles();
-    // @include dropdowngrid.styles();
-    // @include dropdownlist.styles();
-    // @include dropdowntree.styles();
-    // @include maskedtextbox.styles();
-    // @include multiselect.styles();
-    // @include numerictextbox.styles();
+    @include combobox.styles();
+    @include dateinput.styles();
+    @include datepicker.styles();
+    @include timepicker.styles();
+    @include datetimepicker.styles();
+    @include daterangepicker.styles();
+    @include dropdowngrid.styles();
+    @include dropdownlist.styles();
+    @include dropdowntree.styles();
+    @include maskedtextbox.styles();
+    @include multiselect.styles();
+    @include numerictextbox.styles();
     @include rating.styles();
     @include searchbox.styles();
     // @include switch.styles();

@@ -20,7 +20,7 @@ $_kendo-module-meta: (
 @include module.register( $_kendo-module-meta );
 
 // Expose
-@mixin style() {
+@mixin styles() {
     @include module.render( "timepicker" ) {
         @include kendo-timepicker--layout();
         @include kendo-timepicker--theme();

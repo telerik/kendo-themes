@@ -18,7 +18,7 @@ $_kendo-module-meta: (
 @include module.register( $_kendo-module-meta );
 
 // Expose
-@mixin style() {
+@mixin styles() {
     @include module.render( "maskedtextbox" ) {
         @include kendo-maskedtextbox--layout();
         @include kendo-maskedtextbox--theme();
