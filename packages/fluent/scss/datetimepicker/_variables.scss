@@ -1,0 +1,3 @@
+@use "../calendar/_variables.scss" as *;
+
+$kendo-datetime-width: calc( #{$kendo-calendar-header-min-width} + #{$kendo-infinite-calendar-view-padding-x * 2} ) !default;

@@ -1,0 +1,13 @@
+@mixin kendo-dropdowngrid--layout() {
+
+    // DropdownGrid
+    .k-dropdown-grid {}
+
+    // DropdowGrid Popup
+    .k-dropdowngrid-popup {
+        overflow: hidden;
+    }
+    .k-dropdowngrid-popup > .k-data-table {
+        border-width: 0;
+    }
+}
