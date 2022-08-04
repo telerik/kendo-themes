@@ -53,7 +53,8 @@ $grid-group-dropclue-top: calc( ( #{$kendo-button-calc-size} + #{$grid-grouping-
             border-radius: 50%;
         }
 
-        .k-header-column-menu {
+        .k-header-column-menu,
+        .k-grid-header-menu  {
             border-radius: 50%;
         }
 
@@ -72,6 +73,7 @@ $grid-group-dropclue-top: calc( ( #{$kendo-button-calc-size} + #{$grid-grouping-
     .k-cell-inner {
         .k-grid-filter,
         .k-header-column-menu,
+        .k-grid-header-menu,
         .k-hierarchy-cell .k-icon {
             line-height: normal;
         }
