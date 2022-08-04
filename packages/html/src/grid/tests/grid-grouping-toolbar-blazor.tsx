@@ -15,10 +15,8 @@ root.render(
                 <Toolbar className="k-grid-toolbar">
                     <Button icon="add">Add</Button>
                 </Toolbar>
-                <div className="k-grouping-header k-grouping-header-flex">
-                    <div className="k-indicator-container">
-                        Drag a column header and drop it here to group by that column
-                    </div>
+                <div className="k-grouping-header">
+                    Drag a column header and drop it here to group by that column
                 </div>
                 <div className="k-grid-header">
                     <div className="k-grid-header-wrap">
