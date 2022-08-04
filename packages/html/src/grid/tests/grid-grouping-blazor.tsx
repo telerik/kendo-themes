@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { Button } from '../../button';
 import { Checkbox } from '../../checkbox';
 import { Icon } from '../../icon';
+import { Chip, ChipList, ChipAction } from '../../chip';
 
 const root = ReactDOM.createRoot(
     document.getElementById('app') as HTMLElement
@@ -13,10 +14,8 @@ root.render(
         <div id="test-area" className="k-d-grid">
             <h3>Base</h3>
             <div className="k-grid k-widget telerik-blazor">
-                <div className="k-grouping-header k-grouping-header-flex">
-                    <div className="k-indicator-container">
-                        Drag a column header and drop it here to group by that column
-                    </div>
+                <div className="k-grouping-header">
+                    Drag a column header and drop it here to group by that column
                 </div>
                 <div className="k-grid-header">
                     <div className="k-grid-header-wrap">
@@ -106,16 +105,10 @@ root.render(
             </div>
             <h3>Single Group</h3>
             <div className="k-grid k-widget telerik-blazor">
-                <div className="k-grouping-header k-grouping-header-flex">
-                    <div className="k-indicator-container">
-                        <div className="k-group-indicator">
-                            <span className="k-link" style={{ cursor: "default" }}>
-                                Id
-                            </span>
-                            <Button fillMode="flat" icon="close"></Button>
-                        </div>
-                    </div>
-                    <div className="k-indicator-container" style={{ touchAction: "none" }}></div>
+                <div className="k-grouping-header">
+                    <ChipList>
+                        <Chip actions={ <ChipAction type="remove"/> }>Id</Chip>
+                    </ChipList>
                 </div>
                 <div className="k-grid-header">
                     <div className="k-grid-header-wrap">
@@ -226,24 +219,11 @@ root.render(
             </div>
             <h3>Two Groups</h3>
             <div className="k-grid k-widget telerik-blazor">
-                <div className="k-grouping-header k-grouping-header-flex">
-                    <div className="k-indicator-container">
-                        <div className="k-group-indicator">
-                            <span className="k-link" style={{ cursor: "default" }}>
-                                Id
-                            </span>
-                            <Button fillMode="flat" icon="close"></Button>
-                        </div>
-                    </div>
-                    <div className="k-indicator-container">
-                        <div className="k-group-indicator">
-                            <span className="k-link" style={{ cursor: "default" }}>
-                                Name
-                            </span>
-                            <Button fillMode="flat" icon="close"></Button>
-                        </div>
-                    </div>
-                    <div className="k-indicator-container" style={{ touchAction: "none" }}></div>
+                <div className="k-grouping-header">
+                    <ChipList>
+                        <Chip actions={ <ChipAction type="remove"/> }>Id</Chip>
+                        <Chip actions={ <ChipAction type="remove"/> }>Name</Chip>
+                    </ChipList>
                 </div>
                 <div className="k-grid-header">
                     <div className="k-grid-header-wrap">

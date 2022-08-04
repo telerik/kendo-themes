@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { Button } from '../../button';
 import { Icon } from '../../icon';
+import { Chip, ChipList, ChipAction } from '../../chip';
 
 const root = ReactDOM.createRoot(
     document.getElementById('app') as HTMLElement
@@ -129,16 +129,10 @@ root.render(
             </div>
 
             <div className="k-grid k-widget telerik-blazor">
-                <div className="k-grouping-header k-grouping-header-flex">
-                    <div className="k-indicator-container">
-                        <div className="k-group-indicator">
-                            <span className="k-link" style={{ cursor: "default" }}>
-                                Active Projects
-                            </span>
-                            <Button fillMode="flat" icon="close"></Button>
-                        </div>
-                    </div>
-                    <div className="k-indicator-container" style={{ touchAction: "none" }}></div>
+                <div className="k-grouping-header">
+                    <ChipList>
+                        <Chip actions={ <ChipAction type="remove"/> }>Active Projects</Chip>
+                    </ChipList>
                 </div>
 
                 <div className="k-grid-header">

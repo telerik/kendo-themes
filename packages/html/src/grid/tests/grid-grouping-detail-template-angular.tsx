@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { Button } from '../../button';
 import { Checkbox } from '../../checkbox';
 import { Icon } from '../../icon';
+import { Chip, ChipList, ChipAction } from '../../chip';
 
 const root = ReactDOM.createRoot(
     document.getElementById('app') as HTMLElement
@@ -13,8 +14,8 @@ root.render(
         <div id="test-area" className="k-d-grid">
             <h3>Base</h3>
             <div dir="ltr" className="k-widget k-grid">
-                <div className="k-grouping-header k-grouping-header-flex">
-                    <div className="k-indicator-container"> Drag a column header and drop it here to group by that column </div>
+                <div className="k-grouping-header">
+                    Drag a column header and drop it here to group by that column
                 </div>
                 <div className="k-grid-aria-root" role="grid">
                     <div className="k-grid-header">
@@ -77,14 +78,10 @@ root.render(
             </div>
             <h3>Single Group</h3>
             <div dir="ltr" className="k-widget k-grid">
-                <div className="k-grouping-header k-grouping-header-flex">
-                    <div className="k-indicator-container">
-                        <div className="k-touch-action-none k-grid-draggable-header k-group-indicator">
-                            <a className="k-link" href="#"><Icon name="sort-asc-sm" /> ID</a>
-                            <Button fillMode="flat" icon="close"></Button>
-                        </div>
-                    </div>
-                    <div className="k-indicator-container">&nbsp;</div>
+                <div className="k-grouping-header">
+                    <ChipList>
+                        <Chip icon="sort-asc-sm" actions={ <ChipAction type="remove"/> }>ID</Chip>
+                    </ChipList>
                 </div>
                 <div className="k-grid-aria-root" role="grid">
                     <div className="k-grid-header">
@@ -162,20 +159,11 @@ root.render(
             </div>
             <h3>Two Groups</h3>
             <div dir="ltr" className="k-widget k-grid">
-                <div className="k-grouping-header k-grouping-header-flex">
-                    <div className="k-indicator-container">
-                        <div className="k-touch-action-none k-grid-draggable-header k-group-indicator">
-                            <a className="k-link" href="#"><Icon name="sort-asc-sm" /> ID</a>
-                            <Button fillMode="flat" icon="close"></Button>
-                        </div>
-                    </div>
-                    <div className="k-indicator-container">
-                        <div className="k-touch-action-none k-grid-draggable-header k-group-indicator">
-                            <a className="k-link" href="#"><Icon name="sort-asc-sm" /> Name</a>
-                            <Button fillMode="flat" icon="close"></Button>
-                        </div>
-                    </div>
-                    <div className="k-indicator-container">&nbsp;</div>
+                <div className="k-grouping-header">
+                    <ChipList>
+                        <Chip icon="sort-asc-sm" actions={ <ChipAction type="remove"/> }>ID</Chip>
+                        <Chip icon="sort-asc-sm" actions={ <ChipAction type="remove"/> }>Name</Chip>
+                    </ChipList>
                 </div>
                 <div className="k-grid-aria-root" role="grid">
                     <div className="k-grid-header">
@@ -270,20 +258,11 @@ root.render(
             </div>
             <h3>Expanded Template</h3>
             <div dir="ltr" className="k-widget k-grid">
-                <div className="k-grouping-header k-grouping-header-flex">
-                    <div className="k-indicator-container">
-                        <div className="k-touch-action-none k-grid-draggable-header k-group-indicator">
-                            <a className="k-link" href="#"><Icon name="sort-asc-sm" /> ID</a>
-                            <Button fillMode="flat" icon="close"></Button>
-                        </div>
-                    </div>
-                    <div className="k-indicator-container">
-                        <div className="k-touch-action-none k-grid-draggable-header k-group-indicator">
-                            <a className="k-link" href="#"><Icon name="sort-asc-sm" /> Name</a>
-                            <Button fillMode="flat" icon="close"></Button>
-                        </div>
-                    </div>
-                    <div className="k-indicator-container">&nbsp;</div>
+                <div className="k-grouping-header">
+                    <ChipList>
+                        <Chip icon="sort-asc-sm" actions={ <ChipAction type="remove"/> }>ID</Chip>
+                        <Chip icon="sort-asc-sm" actions={ <ChipAction type="remove"/> }>Name</Chip>
+                    </ChipList>
                 </div>
                 <div className="k-grid-aria-root" role="grid">
                     <div className="k-grid-header">

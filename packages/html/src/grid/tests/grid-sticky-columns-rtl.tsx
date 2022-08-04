@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { Button } from '../../button';
 import { Icon } from '../../icon';
 import { Pager } from '../../pager';
+import { Chip, ChipList, ChipAction } from '../../chip';
 
 const root = ReactDOM.createRoot(
     document.getElementById('app') as HTMLElement
@@ -13,14 +13,10 @@ root.render(
         <div id="test-area" className="k-d-grid">
             <p>React Grid - Sticky columns - RTL</p>
             <div className="k-widget k-grid k-rtl" role="grid" style={{ height: "700px", width: "500px" }}>
-                <div className="k-grouping-header k-grouping-header-flex">
-                    <div className="k-indicator-container" style={{ touchAction: "none" }}>
-                        <div className="k-group-indicator">
-                            <a className="k-link" href="#"><Icon name="sort-asc-sm" />shipName</a>
-                            <Button fillMode="flat" icon="close"></Button>
-                        </div>
-                    </div>
-                    <div className="k-indicator-container"></div>
+                <div className="k-grouping-header">
+                    <ChipList>
+                        <Chip icon="sort-asc-sm" actions={ <ChipAction type="remove"/> }>shipName</Chip>
+                    </ChipList>
                 </div>
                 <div className="k-grid-header">
                     <div className="k-grid-header-wrap" style={{ borderWidth: '0px' }}>
