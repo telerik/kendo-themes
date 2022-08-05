@@ -33,8 +33,7 @@ root.render(
                                     <span className="k-scheduler-navigation">
                                         <Button className="k-nav-prev" icon="arrow-chevron-left"></Button>
                                         <Button className="k-nav-current" fillMode="flat" >
-                                            <span className="k-m-date-format">Jun 13</span>
-                                            <span className="k-y-date-format">2013</span>
+                                            Jun 13, 2013
                                         </Button>
                                         <Button className="k-nav-next" icon="arrow-chevron-right"></Button>
                                     </span>
