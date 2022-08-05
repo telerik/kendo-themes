@@ -39,7 +39,7 @@
 
 
 // Form helpers
-// @use "forms";
+@use "forms";
 // @use "validator";
 @use "floating-label";
 
@@ -49,8 +49,8 @@
 @use "split-button";
 // @use "menu-button";
 @use "input";
-// @use "textbox";
-// @use "textarea";
+@use "textbox";
+@use "textarea";
 // @use "checkbox";
 @use "listbox";
 // @use "progressbar";
@@ -64,26 +64,26 @@
 
 
 // Augmented forms
-// @use "autocomplete";
+@use "autocomplete";
 // @use "captcha";
 // @use "colorpalette";
 // @use "colorgradient";
 // @use "coloreditor";
 // @use "colorpicker";
-// @use "combobox";
-// @use "dateinput";
-// @use "datepicker";
-// @use "timepicker";
-// @use "datetimepicker";
-// @use "daterangepicker";
-// @use "dropdowngrid";
-// @use "dropdownlist";
-// @use "dropdowntree";
-// @use "maskedtextbox";
-// @use "multiselect";
-// @use "numerictextbox";
+@use "combobox";
+@use "dateinput";
+@use "datepicker";
+@use "timepicker";
+@use "datetimepicker";
+@use "daterangepicker";
+@use "dropdowngrid";
+@use "dropdownlist";
+@use "dropdowntree";
+@use "maskedtextbox";
+@use "multiselect";
+@use "numerictextbox";
 @use "rating";
-// @use "searchbox";
+@use "searchbox";
 // @use "switch";
 // @use "upload";
 // @use "dropzone";
@@ -203,7 +203,7 @@
 
 
     // Form helpers
-    // @include forms.styles();
+    @include forms.styles();
     // @include validator.styles();
     @include floating-label.styles();
 
@@ -213,8 +213,8 @@
     @include split-button.styles();
     // @include menu-button.styles();
     @include input.styles();
-    // @include textbox.styles();
-    // @include textarea.styles();
+    @include textbox.styles();
+    @include textarea.styles();
     // @include checkbox.styles();
     @include listbox.styles();
     // @include progressbar.styles();
@@ -228,26 +228,26 @@
 
 
     // Augmented forms
-    // @include autocomplete.styles();
+    @include autocomplete.styles();
     // @include captcha.styles();
     // @include colorpalette.styles();
     // @include colorgradient.styles();
     // @include coloreditor.styles();
     // @include colorpicker.styles();
-    // @include combobox.styles();
-    // @include dateinput.styles();
-    // @include datepicker.styles();
-    // @include timepicker.styles();
-    // @include datetimepicker.styles();
-    // @include daterangepicker.styles();
-    // @include dropdowngrid.styles();
-    // @include dropdownlist.styles();
-    // @include dropdowntree.styles();
-    // @include maskedtextbox.styles();
-    // @include multiselect.styles();
-    // @include numerictextbox.styles();
+    @include combobox.styles();
+    @include dateinput.styles();
+    @include datepicker.styles();
+    @include timepicker.styles();
+    @include datetimepicker.styles();
+    @include daterangepicker.styles();
+    @include dropdowngrid.styles();
+    @include dropdownlist.styles();
+    @include dropdowntree.styles();
+    @include maskedtextbox.styles();
+    @include multiselect.styles();
+    @include numerictextbox.styles();
     @include rating.styles();
-    // @include searchbox.styles();
+    @include searchbox.styles();
     // @include switch.styles();
     // @include upload.styles();
     // @include dropzone.styles();
