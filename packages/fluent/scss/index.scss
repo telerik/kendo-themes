@@ -64,7 +64,7 @@
 @use "autocomplete";
 // @use "captcha";
 @use "colorpalette";
-// @use "colorgradient";
+@use "colorgradient";
 // @use "coloreditor";
 @use "colorpicker";
 @use "combobox";
@@ -226,7 +226,7 @@
     @include autocomplete.styles();
     // @include captcha.styles();
     @include colorpalette.styles();
-    // @include colorgradient.styles();
+    @include colorgradient.styles();
     // @include coloreditor.styles();
     @include colorpicker.styles();
     @include combobox.styles();
