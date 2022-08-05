@@ -48,7 +48,7 @@
 @use "input";
 @use "textbox";
 @use "textarea";
-// @use "checkbox";
+@use "checkbox";
 @use "listbox";
 // @use "progressbar";
 // @use "radio";
@@ -210,7 +210,7 @@
     @include input.styles();
     @include textbox.styles();
     @include textarea.styles();
-    // @include checkbox.styles();
+    @include checkbox.styles();
     @include listbox.styles();
     // @include progressbar.styles();
     // @include radio.styles();
