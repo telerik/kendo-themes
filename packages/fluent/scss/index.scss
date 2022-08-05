@@ -1,14 +1,10 @@
-// Dependencies
-@use "~@progress/kendo-theme-utils/scss/all.scss";
-
-
 // Core
 @use "core";
 
 
 // Typography and utils
 @use "typography";
-// @use "utils";
+@use "utils";
 // @use "cursor";
 
 
@@ -172,7 +168,7 @@
 @mixin styles() {
     // Typography and utils
     @include typography.styles();
-    // @include utils.styles();
+    @include utils.styles();
     // @include cursor.styles();
 
 
