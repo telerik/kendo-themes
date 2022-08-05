@@ -6,6 +6,11 @@ $white: #ffffff;
 $black: #000000;
 
 $rgba-transparent: rgba( 0, 0, 0, 0 );
+$gradient-transparent-to-black: rgba( black, 0), black;
+$gradient-transparent-to-white: rgba( white, 0), white;
+$gradient-black-to-transparent: black, rgba( black, 0);
+$gradient-white-to-transparent: white, rgba( white, 0);
+$gradient-rainbow: #ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff, #ff0000;
 
 // Root styles
 $kendo-body-bg: $white !default;
