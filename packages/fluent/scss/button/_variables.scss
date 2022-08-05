@@ -6,10 +6,6 @@
 /// @group button
 $kendo-button-border-width: map-get( $kendo-spacing, hair ) !default;
 
-/// Border radius of the button.
-/// @group button
-$kendo-button-border-radius: var( --kendo-border-radius-md, 0 ) !default;
-
 /// Horizontal padding of the button.
 /// @group button
 $kendo-button-padding-x-sm: map-get( $kendo-spacing, 5 ) !default;
