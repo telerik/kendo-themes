@@ -29,13 +29,13 @@ $kendo-listbox-line-height: var( --kendo-line-height, normal ) !default;
 
 /// Background color of the listbox component.
 /// @group listbox
-$kendo-listbox-bg: $kendo-component-bg !default;
+$kendo-listbox-bg: var( --kendo-component-bg, transparent ) !default;
 /// Text color of the listbox component.
 /// @group listbox
-$kendo-listbox-text: $kendo-component-text !default;
+$kendo-listbox-text: var( --kendo-component-text, inherit ) !default;
 /// Border color of the listbox component.
 /// @group listbox
-$kendo-listbox-border: $kendo-component-border !default;
+$kendo-listbox-border: var( --kendo-component-border, inherit ) !default;
 
 /// Width of the drop hint.
 /// @group listbox

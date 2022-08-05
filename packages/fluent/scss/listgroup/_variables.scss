@@ -17,13 +17,13 @@ $kendo-listgroup-line-height: var( --kendo-line-height, normal ) !default;
 
 /// Background color of the listgroup component.
 /// @group listgroup
-$kendo-listgroup-bg: $kendo-component-bg !default;
+$kendo-listgroup-bg: var( --kendo-component-bg, transparent ) !default;
 /// Text color of the listgroup component.
 /// @group listgroup
-$kendo-listgroup-text: $kendo-component-text !default;
+$kendo-listgroup-text: var( --kendo-component-text, inherit ) !default;
 /// Border color of the listgroup component.
 /// @group listgroup
-$kendo-listgroup-border: $kendo-component-border !default;
+$kendo-listgroup-border: var( --kendo-component-border, inherit ) !default;
 
 /// Horizontal padding of the listgroup items.
 /// @group listgroup
