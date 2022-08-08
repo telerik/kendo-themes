@@ -134,7 +134,7 @@
 
 
 // Editors
-// @use "editor";
+@use "editor";
 // @use "imageeditor";
 
 
@@ -296,7 +296,7 @@
 
 
     // Editors
-    // @include editor.styles();
+    @include editor.styles();
     // @include imageeditor.styles();
 
 

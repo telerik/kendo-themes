@@ -1,0 +1,101 @@
+@use "../core/" as *;
+@use "_variables.scss" as *;
+
+@mixin kendo-editor--theme() {
+
+    .k-editor {
+        @include fill(
+            var( --kendo-editor-text, #{$kendo-editor-text} ),
+            var( --kendo-editor-bg, #{$kendo-editor-bg} ),
+            var( --kendo-editor-border, #{$kendo-editor-border} )
+        );
+    }
+
+    kendo-editor {
+        &.k-readonly {
+            .k-editor-content:focus,
+            .k-editor-content.k-focus {
+                outline-color: var( --kendo-editor-content-outline-color, #{$kendo-editor-content-outline-color} );
+            }
+        }
+    }
+
+    // Inline Editor
+    .k-editor-inline {
+
+        .k-table {
+            &,
+            & td {
+                border-color: var( --kendo-editor-inline-td-border, #{$kendo-editor-inline-td-border} );
+            }
+        }
+
+        .k-element-resize-handle-wrapper {
+            background-color: var( --kendo-editor-resize-handle-bg, #{$kendo-editor-resize-handle-bg} );
+            border-color: var( --kendo-editor-resize-handle-border, #{$kendo-editor-resize-handle-border} );
+        }
+
+        .k-column-resize-handle-wrapper {
+            .k-column-resize-handle {
+                .k-column-resize-marker {
+                    background-color: #00b0ff;
+                }
+            }
+        }
+
+        .k-row-resize-handle-wrapper {
+            .k-row-resize-marker {
+                background-color: #00b0ff;
+            }
+        }
+
+        // Hover & Actve state
+        &:hover,
+        &.k-active {
+            border-color: var( --kendo-editor-inline-hover-border, #{$kendo-editor-inline-hover-border} );
+        }
+    }
+
+    // Resizable images
+    .k-editor-resize-handle {
+       @include fill (
+            $bg: var( --kendo-editor-resize-handle-bg, #{$kendo-editor-resize-handle-bg} ),
+            $border: var( --kendo-editor-resize-handle-border, #{$kendo-editor-resize-handle-border} )
+       );
+    }
+    .ProseMirror-selectednode { // sass-lint:disable-line class-name-format
+        outline-color: var( --kendo-editor-selectednode-outline-color, #{$kendo-editor-selectednode-outline-color} );
+    }
+
+
+    // Insert table
+    .k-ct-popup {
+        .k-selected {
+            @include fill(
+                var( ---kendo-editor-ct-popup-text, #{$kendo-editor-ct-popup-text} ),
+                var( --kendo-editor-ct-popup-bg, #{$kendo-editor-ct-popup-bg} ),
+                var( --kendo-editor-ct-popup-border, #{$kendo-editor-ct-popup-border} )
+            );
+        }
+    }
+
+    // Content
+    .k-editor-content {
+
+        // Selection
+        .k-text-selected,
+        &::selection {
+            @include fill (
+                $color: var( --kendo-editor-selected-text, #{$kendo-editor-selected-text} ),
+                $bg: var( --kendo-editor-selected-bg, #{$kendo-editor-selected-bg} )
+            );
+        }
+
+        .k-text-highlighted {
+            @include fill (
+                $bg: var( --kendo-editor-highlighted-bg, #{$kendo-editor-highlighted-bg} )
+            );
+        }
+    }
+
+}
