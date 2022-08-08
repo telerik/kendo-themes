@@ -51,7 +51,7 @@
 @use "listbox";
 // @use "progressbar";
 // @use "radio";
-// @use "slider";
+@use "slider";
 
 
 // Form requirements
@@ -213,7 +213,7 @@
     @include listbox.styles();
     // @include progressbar.styles();
     // @include radio.styles();
-    // @include slider.styles();
+    @include slider.styles();
 
 
     // Form requirements

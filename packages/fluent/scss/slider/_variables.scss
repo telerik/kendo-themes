@@ -1,0 +1,136 @@
+@use "sass:color";
+@use "../core/" as *;
+
+/// The default slider size.
+/// @group slider
+$kendo-slider-size: 200px !default;
+/// The default slider track wrap size.
+/// @group slider
+$kendo-slider-alt-size: 26px !default;
+/// The spacing of the slider.
+/// @group slider
+$kendo-slider-spacing: map-get( $kendo-spacing, 2 ) !default;
+
+/// Font family of the slider.
+/// @group slider
+$kendo-slider-font-family: var( --kendo-font-family, inherit ) !default;
+/// Font size of the slider.
+/// @group slider
+$kendo-slider-font-size: var( --kendo-font-size-sm, inherit ) !default;
+/// Line height of the slider.
+/// @group slider
+$kendo-slider-line-height: var( --kendo-line-height, normal ) !default;
+/// The text color of the slider.
+/// @group slider
+$kendo-slider-text: inherit !default;
+
+/// The size of the slider track.
+/// @group slider
+$kendo-slider-track-size: map-get( $kendo-spacing, 1 ) !default;
+/// The border radius of the slider track.
+/// @group slider
+$kendo-slider-track-border-radius: map-get( $kendo-spacing, thin ) !default;
+/// The background color of the slider track.
+/// @group slider
+$kendo-slider-track-bg: get-theme-color-var( neutral-60 ) !default;
+/// The border color of the slider track.
+/// @group slider
+$kendo-slider-track-border: inherit !default;
+/// The hover background color of the slider track.
+/// @group slider
+$kendo-slider-track-hover-bg: get-theme-color-var( neutral-60 ) !default;
+/// The hover border color of the slider track.
+/// @group slider
+$kendo-slider-track-hover-border: inherit !default;
+/// The focus background color of the slider track.
+/// @group slider
+$kendo-slider-track-focus-bg: get-theme-color-var( neutral-60 ) !default;
+/// The focus border color of the slider track.
+/// @group slider
+$kendo-slider-track-focus-border: inherit !default;
+
+/// The selection background color of the slider track.
+/// @group slider
+$kendo-slider-selection-bg: get-theme-color-var( primary-130 ) !default;
+
+/// The default size of the slider thumb.
+/// @group slider
+$kendo-slider-thumb-size: 16px !default;
+/// The default border width of the slider thumb.
+/// @group slider
+$kendo-slider-thumb-border-width: map-get( $kendo-spacing, thin ) !default;
+/// The border radius of the slider thumb.
+/// @group slider
+$kendo-slider-thumb-border-radius: 999em !default;
+/// The active transition scale of the slider thumb.
+/// @group slider
+$kendo-slider-thumb-active-scale: null !default;
+/// The active size of the slider thumb.
+/// @group slider
+$kendo-slider-thumb-active-size: null !default;
+
+/// The background color of the slider thumb.
+/// @group slider
+$kendo-slider-thumb-bg: var( --kendo-component-bg, transparent ) !default;
+/// The text color of the slider thumb.
+/// @group slider
+$kendo-slider-thumb-text: inherit !default;
+/// The border color of the slider thumb.
+/// @group slider
+$kendo-slider-thumb-border: get-theme-color-var( neutral-130 ) !default;
+/// The gradient of the slider thumb.
+/// @group slider
+$kendo-slider-thumb-gradient: transparent !default;
+
+/// The hover background color of the slider thumb.
+/// @group slider
+$kendo-slider-thumb-hover-bg: $kendo-slider-thumb-bg !default;
+/// The hover text color of the slider thumb.
+/// @group slider
+$kendo-slider-thumb-hover-text: inherit !default;
+/// The hover border color of the slider thumb.
+/// @group slider
+$kendo-slider-thumb-hover-border: get-theme-color-var( primary-130 ) !default;
+/// The hover gradient of the slider thumb.
+/// @group slider
+$kendo-slider-thumb-hover-gradient: transparent !default;
+
+/// The active background color of the slider thumb.
+/// @group slider
+$kendo-slider-thumb-active-bg: $kendo-slider-thumb-hover-bg !default;
+/// The active text color of the slider thumb.
+/// @group slider
+$kendo-slider-thumb-active-text: inherit !default;
+/// The active border color of the slider thumb.
+/// @group slider
+$kendo-slider-thumb-active-border: $kendo-slider-thumb-hover-border !default;
+/// The active gradient of the slider thumb.
+/// @group slider
+$kendo-slider-thumb-active-gradient: transparent !default;
+
+/// The focus background color of the slider thumb.
+/// @group slider
+$kendo-slider-thumb-focus-bg: $kendo-slider-thumb-hover-bg !default;
+/// The focus text color of the slider thumb.
+/// @group slider
+$kendo-slider-thumb-focus-text: inherit !default;
+/// The focus border color of the slider thumb.
+/// @group slider
+$kendo-slider-thumb-focus-border: $kendo-slider-thumb-hover-border !default;
+/// The focus gradient of the slider thumb.
+/// @group slider
+$kendo-slider-thumb-focus-gradient: transparent !default;
+
+/// The transition speed of the slider.
+/// @group slider
+$kendo-slider-transition-speed: .3s !default;
+/// The transition function function.
+/// @group slider
+$kendo-slider-transition-function: ease-out !default;
+
+/// The transition speed of the slider thumb.
+/// @group slider
+$kendo-slider-thumb-transition-speed: .4s !default;
+/// The transition function of the slider thumb.
+/// @group slider
+$kendo-slider-thumb-transition-function: cubic-bezier(.25, .8, .25, 1) !default;
