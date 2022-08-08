@@ -124,7 +124,7 @@
 
 // Data management
 // @use "grid";
-// @use "listview";
+@use "listview";
 // @use "spreadsheet";
 // @use "pivotgrid";
 // @use "treelist";
@@ -286,7 +286,7 @@
 
     // Data management
     // @include grid.styles();
-    // @include listview.styles();
+    @include listview.styles();
     // @include spreadsheet.styles();
     // @include pivotgrid.styles();
     // @include treelist.styles();
