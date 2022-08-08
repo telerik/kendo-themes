@@ -5,7 +5,7 @@
 
         @each $key, $val in $values {
             $_key: escape-class-name( $key );
-            $_val: if( type-of($values) == list, $_key, $val );
+            $_val: if( type-of($values) == list, $key, $val );
             $_name: escape-class-name( $name );
             $_selector: if( $_key == DEFAULT, #{$kendo-prefix}#{$_name}, #{$kendo-prefix}#{$_name}-#{$_key});
 
