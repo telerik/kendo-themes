@@ -1,0 +1,49 @@
+@use "../core/color-system" as *;
+@use "_variables.scss" as *;
+
+@mixin kendo-notification--theme() {
+
+    // Theme
+    .k-notification {
+        --INTERNAL--kendo-notification-text: var( --kendo-notification-text, #{$kendo-notification-text} );
+        --INTERNAL--kendo-notification-bg: var( --kendo-notification-bg, #{$kendo-notification-bg} );
+        --INTERNAL--kendo-notification-border: var( --kendo-notification-border, #{$kendo-notification-border} );
+        --INTERNAL--kendo-notification-box-shadow: var( --kendo-notification-box-shadow, #{$kendo-notification-box-shadow} );
+
+        color: var( --INTERNAL--kendo-notification-text, initial );
+        background-color: var( --INTERNAL--kendo-notification-bg, initial );
+        border-color: var( --INTERNAL--kendo-notification-border, initial );
+        box-shadow: var( --INTERNAL--kendo-notification-box-shadow, none );
+    }
+
+    .k-notification-wrap {
+        >.k-icon {
+            --INTERNAL--kendo-notification-icon-text: var( --kendo-notification-icon-text, #{$kendo-notification-icon-text} );
+
+            color: var( --INTERNAL--kendo-notification-icon-text, initial );
+        }
+
+        >.k-i-close {
+            color: inherit;
+        }
+    }
+
+    @each $theme-color, $color-props in $kendo-theme-colors {
+        $_text: inherit;
+        $_bg: map-get( $color-props, bg );
+        $_border: map-get( $color-props, border );
+        $_icon: map-get( $color-props, text );
+
+        .k-notification-#{$theme-color} {
+            --kendo-notification-text: var( --kendo-notification-#{$theme-color}-text, #{$_text} );
+            --kendo-notification-bg: var( --kendo-notification-#{$theme-color}-bg, #{$_bg} );
+            --kendo-notification-border: var( --kendo-notification-#{$theme-color}-border, #{$_border} );
+
+            .k-notification-wrap > .k-icon {
+                --kendo-notification-icon-text: var( --kendo-notification-#{$theme-color}-icon-text, #{$_icon} );
+            }
+        }
+    }
+
+}
+
