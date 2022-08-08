@@ -26,7 +26,7 @@
 
 // Indicators
 // @use "avatar";
-// @use "badge";
+@use "badge";
 // @use "chip";
 @use "color-preview";
 // @use "loader";
@@ -188,7 +188,7 @@
 
     // Indicators
     // @include avatar.styles();
-    // @include badge.styles();
+    @include badge.styles();
     // @include chip.styles();
     @include color-preview.styles();
     // @include loader.styles();

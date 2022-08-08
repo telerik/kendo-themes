@@ -106,6 +106,34 @@ $kendo-theme-colors: (
     }
 };
 
+$kendo-theme-colors-contrast: (
+    primary: (
+        text: $white,
+        bg: get-theme-color-var( primary-130 ),
+        border: get-theme-color-var( primary-130 )
+    ),
+    info: (
+        text: $white,
+        bg: get-theme-color-var( info-190 ),
+        border: get-theme-color-var( info-190 )
+    ),
+    success: (
+        text: $white,
+        bg: get-theme-color-var( success-190 ),
+        border: get-theme-color-var( success-190 )
+    ),
+    warning: (
+        text: get-theme-color-var( neutral-190 ),
+        bg: get-theme-color-var( warning-100 ),
+        border: get-theme-color-var( warning-100 )
+    ),
+    error: (
+        text: $white,
+        bg: get-theme-color-var( error-190 ),
+        border: get-theme-color-var( error-190 )
+    )
+) !default;
+
 :root {
     @include css-vars( $kendo-fluent-palettes );
     @include css-vars( $kendo-theme-colors );
