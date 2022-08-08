@@ -4,8 +4,8 @@
     $scrollbar-size: 17px;
     $margin: -$max-scrollbar - $scrollbar-size;
 
-    padding-right: $max-scrollbar;
-    padding-left: $max-scrollbar;
+    padding-inline-end: $max-scrollbar;
+    padding-inline-start: $max-scrollbar;
 
     margin-inline-start: -$max-scrollbar;
     margin-inline-end: $margin;
