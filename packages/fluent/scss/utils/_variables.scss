@@ -1,0 +1,13 @@
+@use "../core/_variables.scss" as *;
+
+/// Border radius configuration of the theme utils.
+/// @group utils
+$kendo-utils-border-radius: (
+    DEFAULT: var( --kendo-border-radius-md, $kendo-border-radius-md ),
+    0: 0,
+    sm: var( --kendo-border-radius-sm, $kendo-border-radius-sm ),
+    md: var( --kendo-border-radius-md, $kendo-border-radius-md ),
+    lg: var( --kendo-border-radius-lg, $kendo-border-radius-lg ),
+    none: 0,
+    full: 9999px
+) !default;

@@ -145,33 +145,33 @@ root.render(
                                 <thead>
                                     <tr>
                                         <th scope="col" rowSpan={3} className="k-header k-with-icon">
-                                            <a className="k-header-column-menu"><Icon name="more-vertical" /></a>
+                                            <a className="k-grid-header-menu k-grid-column-menu"><Icon name="more-vertical" /></a>
                                             <a className="k-link" href="#">Company</a>
                                         </th>
                                         <th scope="col" colSpan={5} className="k-header">Contact Info</th>
                                     </tr>
                                     <tr>
                                         <th scope="col" rowSpan={2} className="k-header k-with-icon k-first">
-                                            <a className="k-header-column-menu"><Icon name="more-vertical" /></a>
+                                            <a className="k-grid-header-menu k-grid-column-menu"><Icon name="more-vertical" /></a>
                                             <a className="k-link" href="#">First Name</a>
                                         </th>
                                         <th scope="col" rowSpan={2} className="k-header k-with-icon">
-                                            <a className="k-header-column-menu"><Icon name="more-vertical" /></a>
+                                            <a className="k-grid-header-menu k-grid-column-menu"><Icon name="more-vertical" /></a>
                                             <a className="k-link" href="#">Last Name</a>
                                         </th>
                                         <th scope="col" colSpan={2} className="k-header">Location</th>
                                         <th scope="col" rowSpan={2} className="k-header k-with-icon">
-                                            <a className="k-header-column-menu"><Icon name="more-vertical" /></a>
+                                            <a className="k-grid-header-menu k-grid-column-menu"><Icon name="more-vertical" /></a>
                                             <a className="k-link" href="#">Phone</a>
                                         </th>
                                     </tr>
                                     <tr>
                                         <th scope="col" className="k-header k-with-icon k-first">
-                                            <a className="k-header-column-menu"><Icon name="more-vertical" /></a>
+                                            <a className="k-grid-header-menu k-grid-column-menu"><Icon name="more-vertical" /></a>
                                             <a className="k-link" href="#">Country</a>
                                         </th>
                                         <th scope="col" className="k-header k-with-icon">
-                                            <a className="k-header-column-menu"><Icon name="more-vertical" /></a>
+                                            <a className="k-grid-header-menu k-grid-column-menu"><Icon name="more-vertical" /></a>
                                             <a className="k-link" href="#">City</a>
                                         </th>
                                     </tr>

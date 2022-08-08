@@ -56,11 +56,15 @@
         align-items: center;
         justify-content: center;
 
-        .k-icon {
-            font-size: $splitter-resize-icon-size;
-            display: block;
+        .k-collapse-prev,
+        .k-collapse-next {
             cursor: pointer;
         }
+
+        .k-icon {
+            font-size: $splitter-resize-icon-size;
+        }
+
     }
 
     .k-splitbar-draggable-horizontal { cursor: col-resize; }
