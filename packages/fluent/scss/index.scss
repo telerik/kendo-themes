@@ -56,7 +56,7 @@
 
 // Form requirements
 @use "calendar";
-// @use "time-selector";
+@use "timeselector";
 
 
 // Augmented forms
@@ -220,7 +220,7 @@
 
     // Form requirements
     @include calendar.styles();
-    // @include timeselector.styles();
+    @include timeselector.styles();
 
 
     // Augmented forms
