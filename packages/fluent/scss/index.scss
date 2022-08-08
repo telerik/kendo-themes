@@ -80,7 +80,7 @@
 @use "numerictextbox";
 @use "rating";
 @use "searchbox";
-// @use "switch";
+@use "switch";
 // @use "upload";
 // @use "dropzone";
 
@@ -242,7 +242,7 @@
     @include numerictextbox.styles();
     @include rating.styles();
     @include searchbox.styles();
-    // @include switch.styles();
+    @include switch.styles();
     // @include upload.styles();
     // @include dropzone.styles();
 
