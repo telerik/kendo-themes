@@ -13,7 +13,6 @@
         box-sizing: border-box;
         border-width: var( --kendo-input-border-width, #{$kendo-input-border-width} );
         border-style: solid;
-        border-radius: var( --kendo-input-border-radius, #{$kendo-input-border-radius} );
         outline: 0;
         font-family: var( --kendo-input-font-family, #{$kendo-input-font-family} );
         font-size: var( --INTERNAL--kendo-input-font-size, 1rem );

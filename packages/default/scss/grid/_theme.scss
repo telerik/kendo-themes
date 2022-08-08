@@ -106,6 +106,7 @@
 
         .k-grid-filter,
         .k-header-column-menu,
+        .k-grid-header-menu,
         .k-hierarchy-cell .k-icon {
             color: $grid-header-text;
         }
@@ -190,6 +191,7 @@
 
         .k-grid-filter,
         .k-header-column-menu,
+        .k-grid-header-menu,
         .k-hierarchy-cell .k-icon {
             &:hover {
                 color: $kendo-button-hover-text;

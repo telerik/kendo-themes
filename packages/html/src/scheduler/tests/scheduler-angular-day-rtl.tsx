@@ -20,11 +20,9 @@ root.render(
                                 <Button icon="arrow-60-right"></Button>
                             </div>
                         </div>
-                        <a className="k-nav-current" href="#">
-                            <Icon name="calendar"></Icon>
-                            <span className="k-sm-date-format">6/24/2013</span>
-                            <span className="k-lg-date-format">Monday, June 24, 2013</span>
-                        </a>
+                        <Button icon="calendar" className="k-nav-current" fillMode="flat" >
+                            Monday, June 24, 2013
+                        </Button>
                     </div>
                     <span className="k-spacer"></span>
                     <div className="k-scheduler-views-wrapper">

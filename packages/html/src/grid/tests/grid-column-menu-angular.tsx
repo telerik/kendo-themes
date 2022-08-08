@@ -24,13 +24,13 @@ root.render(
                                 <thead>
                                     <tr role="row">
                                         <th className="k-header k-filterable" rowSpan={1} colSpan={1}>
-                                            <div><a className="k-grid-column-menu k-grid-filter" href="#"><Icon name="more-vertical" /></a></div><Checkbox />
+                                            <div><a className="k-grid-header-menu k-grid-filter-menu" href="#"><Icon name="more-vertical" /></a></div><Checkbox />
                                         </th>
                                         <th className="k-header k-filterable" rowSpan={1} colSpan={1}>
-                                            <div><a className="k-grid-column-menu k-grid-filter" href="#"><Icon name="more-vertical" /></a></div>Name
+                                            <div><a className="k-grid-header-menu k-grid-filter-menu" href="#"><Icon name="more-vertical" /></a></div>Name
                                         </th>
                                         <th className="k-header k-filterable" rowSpan={1} colSpan={1}>
-                                            <div><a className="k-grid-column-menu k-grid-filter" href="#"><Icon name="more-vertical" /></a></div>Command
+                                            <div><a className="k-grid-header-menu k-grid-filter-menu" href="#"><Icon name="more-vertical" /></a></div>Command
                                         </th>
                                     </tr>
                                 </thead>
@@ -81,12 +81,12 @@ root.render(
                                 <thead>
                                     <tr role="row">
                                         <th className="k-header k-filterable" rowSpan={1} colSpan={1}>
-                                            <div><a className="k-grid-column-menu k-grid-filter" href="#"><Icon name="more-vertical" /></a></div><Checkbox />
+                                            <div><a className="k-grid-header-menu k-grid-filter-menu" href="#"><Icon name="more-vertical" /></a></div><Checkbox />
                                         </th>
                                         <th className="k-header k-filterable" rowSpan={1} colSpan={1}><span className="k-cell-inner"><span className="k-link"><span className="k-column-title">Name</span><span></span></span><span className="k-sort-status" role="status" style={{ position: "absolute", left: "-10000px" }}></span>
-                                            <div><a className="k-grid-column-menu k-grid-filter" href="#"><Icon name="more-vertical" /></a></div></span></th>
+                                            <div><a className="k-grid-header-menu k-grid-filter-menu" href="#"><Icon name="more-vertical" /></a></div></span></th>
                                         <th className="k-header k-filterable" rowSpan={1} colSpan={1}>
-                                            <div><a className="k-grid-column-menu k-grid-filter" href="#"><Icon name="more-vertical" /></a></div>Command
+                                            <div><a className="k-grid-header-menu k-grid-filter-menu" href="#"><Icon name="more-vertical" /></a></div>Command
                                         </th>
                                     </tr>
                                 </thead>
@@ -137,12 +137,12 @@ root.render(
                                 <thead>
                                     <tr role="row">
                                         <th className="k-header k-filterable" rowSpan={1} colSpan={1}>
-                                            <div><a className="k-grid-column-menu k-grid-filter" href="#"><Icon name="more-vertical" /></a></div><Checkbox />
+                                            <div><a className="k-grid-header-menu k-grid-filter-menu" href="#"><Icon name="more-vertical" /></a></div><Checkbox />
                                         </th>
                                         <th className="k-header k-filterable" rowSpan={1} colSpan={1}><span className="k-cell-inner"><span className="k-link"><span className="k-column-title">Name</span><span></span></span><span className="k-sort-status" role="status" style={{ position: "absolute", left: "10000px" }}></span>
-                                            <div><a className="k-grid-column-menu k-grid-filter" href="#"><Icon name="more-vertical" /></a></div></span></th>
+                                            <div><a className="k-grid-header-menu k-grid-filter-menu" href="#"><Icon name="more-vertical" /></a></div></span></th>
                                         <th className="k-header k-filterable" rowSpan={1} colSpan={1}>
-                                            <div><a className="k-grid-column-menu k-grid-filter" href="#"><Icon name="more-vertical" /></a></div>Command
+                                            <div><a className="k-grid-header-menu k-grid-filter-menu" href="#"><Icon name="more-vertical" /></a></div>Command
                                         </th>
                                     </tr>
                                 </thead>

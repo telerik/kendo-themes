@@ -32,7 +32,7 @@ root.render(
                                     <thead>
                                         <tr>
                                             <th scope="col" className="k-header k-with-icon">
-                                                <a className="k-header-column-menu k-state-active" href="#">
+                                                <a className="k-grid-header-menu k-grid-column-menu k-state-active" href="#">
                                                     <Icon name="more-vertical" />
                                                 </a>
                                                 Active Column Menu &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lorem ipsum dolor sit amet consectetur adipiscing elit
@@ -58,7 +58,7 @@ root.render(
                                     <thead>
                                         <tr>
                                             <th scope="col" className="k-header k-with-icon">
-                                                <a className="k-header-column-menu" href="#">
+                                                <a className="k-grid-header-menu k-grid-column-menu" href="#">
                                                     <Icon name="more-vertical" />
                                                 </a>
                                                 Lorem ipsum dolor sit amet consectetur adipiscing elit &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; RTL Column Menu
@@ -144,7 +144,7 @@ root.render(
                                     <thead>
                                         <tr>
                                             <th scope="col" className="k-header k-with-icon">
-                                                <a className="k-header-column-menu" href="#">
+                                                <a className="k-grid-header-menu k-grid-column-menu" href="#">
                                                     <Icon name="more-vertical" />
                                                 </a>
                                                 <a className="k-link" href="#">
@@ -172,7 +172,7 @@ root.render(
                                     <thead>
                                         <tr>
                                             <th scope="col" className="k-header k-with-icon">
-                                                <a className="k-header-column-menu" href="#">
+                                                <a className="k-grid-header-menu k-grid-column-menu" href="#">
                                                     <Icon name="more-vertical" />
                                                 </a>
                                                 <a className="k-link" href="#">

@@ -32,8 +32,8 @@ root.render(
                             </colgroup>
                             <thead>
                                 <tr>
-                                    <th className="k-header k-with-icon"><a className="k-header-column-menu" href="#"><Icon name="more-vertical" /></a><a className="k-link" href="/aspnet-mvc/Grid/FrozenColumns_Read?Grid-sort=OrderID-asc">Order ID</a></th>
-                                    <th className="k-header k-with-icon"><a className="k-header-column-menu" href="#"><Icon name="more-vertical" /></a><a className="k-link" href="/aspnet-mvc/Grid/FrozenColumns_Read?Grid-sort=ShipName-asc">Ship Name</a></th>
+                                    <th className="k-header k-with-icon"><a className="k-grid-header-menu k-grid-column-menu" href="#"><Icon name="more-vertical" /></a><a className="k-link" href="/aspnet-mvc/Grid/FrozenColumns_Read?Grid-sort=OrderID-asc">Order ID</a></th>
+                                    <th className="k-header k-with-icon"><a className="k-grid-header-menu k-grid-column-menu" href="#"><Icon name="more-vertical" /></a><a className="k-link" href="/aspnet-mvc/Grid/FrozenColumns_Read?Grid-sort=ShipName-asc">Ship Name</a></th>
                                 </tr>
                             </thead>
                         </table>
@@ -47,9 +47,9 @@ root.render(
                             </colgroup>
                             <thead>
                                 <tr>
-                                    <th className="k-header k-with-icon"><a className="k-header-column-menu" href="#"><Icon name="more-vertical" /></a><a className="k-link" href="/aspnet-mvc/Grid/FrozenColumns_Read?Grid-sort=ShipCountry-asc">Ship Country</a></th>
-                                    <th className="k-header k-with-icon"><a className="k-header-column-menu" href="#"><Icon name="more-vertical" /></a><a className="k-link" href="/aspnet-mvc/Grid/FrozenColumns_Read?Grid-sort=ShipCity-asc">Ship City</a></th>
-                                    <th className="k-header k-with-icon"><a className="k-header-column-menu" href="#"><Icon name="more-vertical" /></a><a className="k-link" href="/aspnet-mvc/Grid/FrozenColumns_Read?Grid-sort=ShipAddress-asc">Ship Address</a></th>
+                                    <th className="k-header k-with-icon"><a className="k-grid-header-menu k-grid-column-menu" href="#"><Icon name="more-vertical" /></a><a className="k-link" href="/aspnet-mvc/Grid/FrozenColumns_Read?Grid-sort=ShipCountry-asc">Ship Country</a></th>
+                                    <th className="k-header k-with-icon"><a className="k-grid-header-menu k-grid-column-menu" href="#"><Icon name="more-vertical" /></a><a className="k-link" href="/aspnet-mvc/Grid/FrozenColumns_Read?Grid-sort=ShipCity-asc">Ship City</a></th>
+                                    <th className="k-header k-with-icon"><a className="k-grid-header-menu k-grid-column-menu" href="#"><Icon name="more-vertical" /></a><a className="k-link" href="/aspnet-mvc/Grid/FrozenColumns_Read?Grid-sort=ShipAddress-asc">Ship Address</a></th>
                                 </tr>
                             </thead>
                         </table>

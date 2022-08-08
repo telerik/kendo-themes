@@ -184,13 +184,13 @@ $kendo-list-sizes: (
 
 /// Background color of the list component.
 /// @group list
-$kendo-list-bg: var( --kendo-component-bg, #{$kendo-component-bg} ) !default;
+$kendo-list-bg: var( --kendo-component-bg, transparent ) !default;
 /// Text color of the list component.
 /// @group list
-$kendo-list-text: var( --kendo-component-text, #{$kendo-component-text} ) !default;
+$kendo-list-text: var( --kendo-component-text, inherit ) !default;
 /// Border color of the list component.
 /// @group list
-$kendo-list-border: var( --kendo-component-border, #{$kendo-component-border} ) !default;
+$kendo-list-border: var( --kendo-component-border, inherit ) !default;
 
 
 /// Background color of list header.

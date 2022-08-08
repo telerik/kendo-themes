@@ -1,14 +1,10 @@
-// Dependencies
-@use "~@progress/kendo-theme-utils/scss/all.scss";
-
-
 // Core
 @use "core";
 
 
 // Typography and utils
 @use "typography";
-// @use "utils";
+@use "utils";
 // @use "cursor";
 
 
@@ -101,7 +97,7 @@
 // @use "action-sheet";
 @use "dialog";
 // @use "drawer";
-// @use "notification";
+@use "notification";
 // @use "popover";
 // @use "responsivepanel";
 // @use "tooltip";
@@ -172,7 +168,7 @@
 @mixin styles() {
     // Typography and utils
     @include typography.styles();
-    // @include utils.styles();
+    @include utils.styles();
     // @include cursor.styles();
 
 
@@ -266,7 +262,7 @@
     // @include action-sheet.styles();
     @include dialog.styles();
     // @include drawer.styles();
-    // @include notification.styles();
+    @include notification.styles();
     // @include popover.styles();
     // @include responsivepanel.styles();
     // @include tooltip.styles();

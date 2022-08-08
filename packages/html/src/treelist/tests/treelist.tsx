@@ -21,9 +21,9 @@ root.render(
                                 </colgroup>
                                 <thead>
                                     <tr>
-                                        <th className="k-header k-with-icon"><a className="k-header-column-menu"><Icon name="more-vertical"></Icon></a><a className="k-link">First
+                                        <th className="k-header k-with-icon"><a className="k-grid-header-menu k-grid-column-menu"><Icon name="more-vertical"></Icon></a><a className="k-link">First
                                                 Name</a></th>
-                                        <th className="k-header k-with-icon"><a className="k-header-column-menu"><Icon name="more-vertical"></Icon></a><a className="k-link">Last
+                                        <th className="k-header k-with-icon"><a className="k-grid-header-menu k-grid-column-menu"><Icon name="more-vertical"></Icon></a><a className="k-link">Last
                                                 Name</a></th>
                                     </tr>
                                 </thead>
