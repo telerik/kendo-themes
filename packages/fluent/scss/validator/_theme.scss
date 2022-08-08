@@ -1,0 +1,5 @@
+@use "_variables.scss" as *;
+
+@mixin kendo-validator--theme() {
+    .k-validator { }
+}
