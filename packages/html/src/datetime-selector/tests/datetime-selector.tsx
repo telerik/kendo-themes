@@ -117,7 +117,7 @@ root.render(
                                                     </div>
                                                 </div>
                                                 <div className="k-time-separator">:</div>
-                                                <div className="k-time-list-wrapper k-state-focused">
+                                                <div className="k-time-list-wrapper k-focus">
                                                     <span className="k-title">Minute</span>
                                                     <div className="k-time-list">
                                                         <div className="k-content k-scrollable k-time-container">
