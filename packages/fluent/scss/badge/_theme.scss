@@ -1,0 +1,40 @@
+@use "_variables.scss" as *;
+@use "../core/mixins" as *;
+@use "../core/color-system" as *;
+
+@mixin kendo-badge--theme() {
+
+    .k-badge {
+        --INTERNAL--kendo-badge-text: var( --kendo-badge-text, #{$kendo-badge-text} );
+        --INTERNAL--kendo-badge-bg: var( --kendo-badge-bg, #{$kendo-badge-bg} );
+        --INTERNAL--kendo-badge-border: var( --kendo-badge-border, #{$kendo-badge-border} );
+
+        color: var( --INTERNAL--kendo-badge-text, initial );
+        background-color: var( --INTERNAL--kendo-badge-bg, initial );
+        border-color: var( --INTERNAL--kendo-badge-border, initial );
+    }
+
+    // Solid badges
+    @each $theme-color, $color-props in $kendo-theme-colors-contrast {
+        $_text: map-get( $color-props, text );
+        $_bg: map-get( $color-props, bg );
+        $_border: map-get( $color-props, border );
+
+        .k-badge-solid.k-badge-#{$theme-color} {
+            --kendo-badge-text: var( --kendo-badge-#{$theme-color}-text, #{$_text} );
+            --kendo-badge-bg: var( --kendo-badge-#{$theme-color}-bg, #{$_bg} );
+            --kendo-badge-border: var( --kendo-badge-#{$theme-color}-border, #{$_border} );
+        }
+    }
+
+    @each $theme-color, $color-props in $kendo-theme-colors-contrast {
+        $_text: map-get( $color-props, bg );
+        $_bg: $kendo-component-bg;
+        $_border: map-get( $color-props, border );
+
+        .k-badge-outline.k-badge-#{$theme-color} {
+            --kendo-badge-text: var( --kendo-badge-#{$theme-color}-text, #{$_text} );
+            --kendo-badge-border: var( --kendo-badge-#{$theme-color}-border, #{$_border} );
+        }
+    }
+}

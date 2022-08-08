@@ -1,0 +1,86 @@
+@use "../core/color-system" as *;
+@use "../core/_variables.scss" as *;
+
+/// Background color of the badge.
+/// @group badge
+$kendo-badge-bg: var( --kendo-component-bg, initial ) !default;
+/// Text color of the badge.
+/// @group badge
+$kendo-badge-text: var( --kendo-component-text, initial ) !default;
+/// Border color of the badge.
+/// @group badge
+$kendo-badge-border: var( --kendo-component-border, initial ) !default;
+
+/// Border width of the badge.
+/// @group badge
+$kendo-badge-border-width: map-get( $kendo-spacing, hair ) !default;
+
+/// Horizontal padding of the badge.
+/// @group badge
+$kendo-badge-padding-x-sm: map-get( $kendo-spacing, thin ) !default;
+$kendo-badge-padding-x-md: map-get( $kendo-spacing, 1 ) !default;
+$kendo-badge-padding-x-lg: calc( map-get( $kendo-spacing, 1 ) + map-get( $kendo-spacing, thin ) ) !default;
+
+/// Vertical padding of the badge.
+/// @group badge
+$kendo-badge-padding-y-sm: map-get( $kendo-spacing, thin ) !default;
+$kendo-badge-padding-y-md: map-get( $kendo-spacing, 1 ) !default;
+$kendo-badge-padding-y-lg: calc( map-get( $kendo-spacing, 1 ) + map-get( $kendo-spacing, thin ) ) !default;
+
+/// Font sizes of the badge.
+/// @group badge
+$kendo-badge-font-size-sm: var( --kendo-font-size-xs, inherit ) !default;
+$kendo-badge-font-size-md: var( --kendo-font-size-xs, inherit ) !default;
+$kendo-badge-font-size-lg: var( --kendo-font-size-xs, inherit ) !default;
+
+/// Border radius of the badge.
+/// @group badge
+$kendo-badge-border-radius-sm: var( --kendo-border-radius-md, 0 ) !default;
+$kendo-badge-border-radius-md: var( --kendo-border-radius-md, 0 ) !default;
+$kendo-badge-border-radius-lg: var( --kendo-border-radius-md, 0 ) !default;
+
+/// Line heights of the badge.
+/// @group badge
+$kendo-badge-line-height-sm: var( --kendo-line-height-xs, normal ) !default;
+$kendo-badge-line-height-md: var( --kendo-line-height-xs, normal ) !default;
+$kendo-badge-line-height-lg: var( --kendo-line-height-xs, normal ) !default;
+
+/// Shapes sizing of the badge.
+/// @group badge
+$kendo-badge-fixed-size: 20px !default;
+$kendo-badge-calc-size: calc( #{$kendo-badge-line-height-md} * 1em + #{$kendo-badge-padding-y-md} * 2 + #{$kendo-badge-border-width} * 2 ) !default;
+$kendo-badge-size: if( $use-calc-badge-size, $kendo-badge-calc-size, $kendo-badge-fixed-size ) !default;
+$kendo-badge-dot-size: 10px !default;
+
+$kendo-badge-fixed-size-sm: 16px !default;
+$kendo-badge-calc-size-sm: calc( #{$kendo-badge-line-height-sm} * 1em + #{$kendo-badge-padding-y-sm} * 2 + #{$kendo-badge-border-width} * 2 ) !default;
+$kendo-badge-size-sm: if( $use-calc-badge-size, $kendo-badge-calc-size-sm, $kendo-badge-fixed-size-sm ) !default;
+$kendo-badge-dot-size-sm: 6px !default;
+
+$kendo-badge-fixed-size-lg: 26px !default;
+$kendo-badge-calc-size-lg: calc( #{$kendo-badge-line-height-lg} * 1em + #{$kendo-badge-padding-y-lg} * 2 + #{$kendo-badge-border-width} * 2 ) !default;
+$kendo-badge-size-lg: if( $use-calc-badge-size, $kendo-badge-calc-size-lg, $kendo-badge-fixed-size-lg ) !default;
+$kendo-badge-dot-size-lg: 12px !default;
+
+/// Sizes map for the badge.
+/// @group badge
+$kendo-badge-sizes: (
+    sm: (
+        padding-x: $kendo-badge-padding-x-sm,
+        padding-y: $kendo-badge-padding-y-sm,
+        font-size: $kendo-badge-font-size-sm,
+        line-height: $kendo-badge-line-height-sm
+    ),
+    md: (
+        padding-x: $kendo-badge-padding-x-md,
+        padding-y: $kendo-badge-padding-y-md,
+        font-size: $kendo-badge-font-size-md,
+        line-height: $kendo-badge-line-height-md
+    ),
+    lg: (
+        padding-x: $kendo-badge-padding-x-lg,
+        padding-y: $kendo-badge-padding-y-lg,
+        font-size: $kendo-badge-font-size-lg,
+        line-height: $kendo-badge-line-height-lg
+    )
+) !default;
