@@ -19,6 +19,8 @@ export interface ButtonProps {
     active?: boolean;
     selected?: boolean;
     disabled?: boolean;
+    showArrow?: boolean;
+    arrowIconName?: string;
 }
 
 export class Button extends React.Component<ButtonProps> {
@@ -27,7 +29,9 @@ export class Button extends React.Component<ButtonProps> {
         size: 'medium',
         rounded: 'medium',
         fillMode: 'solid',
-        themeColor: 'base'
+        themeColor: 'base',
+        showArrow: false,
+        arrowIconName: 'arrow-s'
     };
 
     render() {
@@ -46,6 +50,8 @@ export class Button extends React.Component<ButtonProps> {
             active,
             selected,
             disabled,
+            showArrow,
+            arrowIconName,
             ...htmlAttributes
         } = this.props;
 
@@ -75,7 +81,7 @@ export class Button extends React.Component<ButtonProps> {
                 )}>
                 {icon && <Icon className={classNames(iconClassName, 'k-button-icon')} name={icon} />}
 
-                {text || hasIcon
+                {text
                     ?
                     <>
                         {text && <span className="k-button-text">{text}</span>}
@@ -83,6 +89,8 @@ export class Button extends React.Component<ButtonProps> {
                     </>
                     : children && <span className="k-button-text">{children}</span>
                 }
+
+                {showArrow && <span className="k-menu-button-arrow k-button-arrow"><Icon name={arrowIconName} /></span>}
             </button>
         );
     }

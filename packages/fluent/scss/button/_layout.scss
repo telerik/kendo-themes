@@ -5,7 +5,6 @@
 
     // Button
     .k-button {
-        @include border-radius( var( --kendo-button-border-radius, #{$kendo-button-border-radius} ) );
         padding-inline: var( --INTERNAL--kendo-button-padding-x, 0 );
         padding-block: var( --INTERNAL--kendo-button-padding-y, 0 );
         border-width: var( --kendo-button-border-width, #{$kendo-button-border-width} );

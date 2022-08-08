@@ -32,10 +32,9 @@ root.render(
                                 <div className="k-scheduler-toolbar k-toolbar">
                                     <span className="k-scheduler-navigation">
                                         <Button className="k-nav-prev" icon="arrow-chevron-left"></Button>
-                                        <span className="k-nav-current">
-                                            <span className="k-m-date-format">Jun 13 - 20</span>
-                                            <span className="k-y-date-format">2013</span>
-                                        </span>
+                                        <Button className="k-nav-current" fillMode="flat" >
+                                            Jun 13 - 20, 2013
+                                        </Button>
                                         <Button className="k-nav-next" icon="arrow-chevron-right"></Button>
                                     </span>
                                 </div>

@@ -25,11 +25,9 @@ root.render(
                         <Button icon="arrow-60-left"></Button>
                         <Button icon="arrow-60-right"></Button>
                     </span>
-                    <a href="#" className="k-nav-current">
-                        <Icon name="calendar"></Icon>
-                        <span className="k-sm-date-format">6/21/2020 - 6/28/2020</span>
-                        <span className="k-lg-date-format">Sunday, June 21, 2020 - Saturday, June 27, 2020</span>
-                    </a>
+                    <Button icon="calendar" className="k-nav-current" fillMode="flat" >
+                        Sunday, June 21, 2020 - Saturday, June 27, 2020
+                    </Button>
                     <span className="k-spacer"></span>
                     <span className="k-scheduler-views-wrapper">
                         <select className="k-views-dropdown k-picker k-dropdown-list k-dropdown k-rounded-md">
