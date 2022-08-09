@@ -1,0 +1,77 @@
+@use "../core/" as *;
+
+/// The radius of the border around the tooltip
+/// @group tooltip
+$kendo-tooltip-border-radius: $kendo-border-radius !default;
+/// The horizontal padding of the tooltip
+/// @group tooltip
+$kendo-tooltip-padding-x: map-get( $kendo-spacing, 2 ) !default;
+/// The vertical padding of the tooltip
+/// @group tooltip
+$kendo-tooltip-padding-y: map-get( $kendo-spacing, 2 ) !default;
+/// The width of the border around the tooltip
+/// @group tooltip
+$kendo-tooltip-border-width: 0px !default;
+/// The font family of the tooltip
+/// @group tooltip
+$kendo-tooltip-font-family: var( --kendo-font-family, inherit ) !default;
+/// The font size of the tooltip
+/// @group tooltip
+$kendo-tooltip-font-size: var( --kendo-font-size-sm, inherit ) !default;
+/// The line height of the tooltip
+/// @group tooltip
+$kendo-tooltip-line-height: var( --kendo-line-height, normal ) !default;
+
+/// The font size of the tooltip title
+/// @group tooltip
+$kendo-tooltip-title-font-size: calc( #{$kendo-tooltip-font-size} * 1.25 ) !default;
+/// The line height of the tooltip title
+/// @group tooltip
+$kendo-tooltip-title-line-height: var( --kendo-line-heigh-xs, normal ) !default;
+/// The margin of the tooltip title
+/// @group tooltip
+$kendo-tooltip-title-margin: map-get( $kendo-spacing, 1 ) !default;
+
+/// The size of the tooltip callout
+/// @group tooltip
+$kendo-tooltip-callout-size: map-get( $kendo-spacing, 2 ) !default;
+
+/// The background of the tooltip
+/// @group tooltip
+$kendo-tooltip-bg: $white !default;
+/// The text color of the tooltip
+/// @group tooltip
+$kendo-tooltip-text: var( --kendo-component-text, initial ) !default;
+/// The border color of the tooltip
+/// @group tooltip
+$kendo-tooltip-border: transparent !default;
+/// The box-shadow of the tooltip
+/// @group tooltip
+$kendo-tooltip-shadow: var( --kendo-box-shadow-depth-3, none ) !default;
+
+/// The text color of the tooltip button
+/// @group tooltip
+$kendo-tooltip-button-text: get-theme-color-var( neutral-130, initial ) !default;
+
+/// The primary background color of the tooltip
+/// @group tooltip
+$kendo-tooltip-primary-bg: get-theme-color-var( primary-130 ) !default;
+/// The primary text color of the tooltip
+/// @group tooltip
+$kendo-tooltip-primary-text: $white !default;
+/// The primary border color of the tooltip
+/// @group tooltip
+$kendo-tooltip-primary-border: initial !default;
+
+/// The theme colors map of the tooltip
+/// @group tooltip
+$kendo-tooltip-theme-colors: map-merge(
+    $kendo-theme-colors, (
+        primary: (
+            text: $kendo-tooltip-primary-text,
+            bg: $kendo-tooltip-primary-bg,
+            border: $kendo-tooltip-primary-border
+        )
+    )
+) !default;
+
