@@ -19,12 +19,13 @@
     }
 
 
-    // Titlebar
-    .k-window-titlebar {
+    // Title
+    .k-window-title {
         @include fill(
             var( --kendo-window-titlebar-text, #{$kendo-window-titlebar-text} ),
             var( --kendo-window-titlebar-bg, #{$kendo-window-titlebar-bg} ),
             var( --kendo-window-titlebar-border, #{$kendo-window-titlebar-border} )
         );
     }
+
 }
