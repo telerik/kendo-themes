@@ -37,8 +37,6 @@
     // Title bar
     .k-window-titlebar {
         @include border-top-radius( var( --kendo-window-border-radius, #{$kendo-window-border-radius} ) );
-        border-width: var( --kendo-window-titlebar-border-width, #{$kendo-window-titlebar-border-width} ) 0 0;
-        border-style: solid;
         padding-inline: var( --kendo-window-titlebar-padding-x, #{$kendo-window-titlebar-padding-x} );
         padding-block: var( --kendo-window-titlebar-padding-y, #{$kendo-window-titlebar-padding-y} );
         white-space: nowrap;

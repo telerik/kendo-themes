@@ -25,6 +25,7 @@
 
     .k-dialog {
         padding: 0;
+        border-width: var( --kendo-dialog-border-width, #{$kendo-dialog-border-width} ) 0 0;
         position: fixed;
         box-sizing: border-box;
 
