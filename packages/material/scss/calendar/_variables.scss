@@ -28,7 +28,7 @@ $calendar-today-nav-hover-text: $link-hover-text !default;
 $calendar-footer-padding-x: map-get( $spacing, 4 ) !default;
 $calendar-footer-padding-y: map-get( $spacing, 2 ) !default;
 
-$calendar-cell-padding-x: .5em !default;
+$calendar-cell-padding-x: .25em !default;
 $calendar-cell-padding-y: $calendar-cell-padding-x !default;
 $calendar-cell-line-height: $calendar-line-height !default;
 $calendar-cell-border-radius: 100px !default;
