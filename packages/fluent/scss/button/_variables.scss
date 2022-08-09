@@ -195,56 +195,6 @@ $kendo-button-solid-primary-disabled-bg: var( --kendo-disabled-bg, inherit ) !de
 $kendo-button-solid-primary-disabled-border: var( --kendo-disabled-border, inherit ) !default;
 
 
-/// The text color of the flat base button.
-/// @group button
-$kendo-button-flat-base-text: get-theme-color-var( neutral-160 ) !default;
-/// The background color of the flat base button.
-/// @group button
-$kendo-button-flat-base-bg: initial !default;
-/// The border color of the flat base button.
-/// @group button
-$kendo-button-flat-base-border: transparent !default;
-/// The hover text color of the flat base button.
-/// @group button
-$kendo-button-flat-base-hover-text: get-theme-color-var( neutral-190 ) !default;
-/// The hover background color of the flat base button.
-/// @group button
-$kendo-button-flat-base-hover-bg: get-theme-color-var( neutral-20 ) !default;
-/// The hover border color of the flat base button.
-/// @group button
-$kendo-button-flat-base-hover-border: $kendo-button-flat-base-border !default;
-/// The focus text color of the flat base button.
-/// @group button
-$kendo-button-flat-base-focus-text: $kendo-button-flat-base-text !default;
-/// The focus background color of the flat base button.
-/// @group button
-$kendo-button-flat-base-focus-bg: $kendo-button-flat-base-bg !default;
-/// The focus border color of the flat base button.
-/// @group button
-$kendo-button-flat-base-focus-border: $kendo-button-flat-base-border !default;
-/// The focus outline color of the flat base button.
-/// @group button
-$kendo-button-flat-base-focus-outline: get-theme-color-var( neutral-40 ) !default;
-/// The active text color of the flat base button.
-/// @group button
-$kendo-button-flat-base-active-text: $kendo-button-flat-base-hover-text !default;
-/// The active background color of the flat base button.
-/// @group button
-$kendo-button-flat-base-active-bg: get-theme-color-var( neutral-30 ) !default;
-/// The active border color of the flat base button.
-/// @group button
-$kendo-button-flat-base-active-border: $kendo-button-flat-base-border !default;
-/// The disabled text color of the flat base button.
-/// @group button
-$kendo-button-flat-base-disabled-text: var( --kendo-disabled-text, inherit ) !default;
-/// The disabled background color of the flat base button.
-/// @group button
-$kendo-button-flat-base-disabled-bg: initial !default;
-/// The disabled border color of the flat base button.
-/// @group button
-$kendo-button-flat-base-disabled-border: initial !default;
-
-
 /// The text color of the flat primary button.
 /// @group button
 $kendo-button-flat-primary-text: get-theme-color-var( primary-130 ) !default;
@@ -637,24 +587,6 @@ $kendo-button-theme-colors: (
         )
     ),
     flat: (
-        base: (
-            text: $kendo-button-flat-base-text,
-            bg: $kendo-button-flat-base-bg,
-            border: $kendo-button-flat-base-border,
-            hover-text: $kendo-button-flat-base-hover-text,
-            hover-bg: $kendo-button-flat-base-hover-bg,
-            hover-border: $kendo-button-flat-base-hover-border,
-            focus-text: $kendo-button-flat-base-focus-text,
-            focus-bg: $kendo-button-flat-base-focus-bg,
-            focus-border: $kendo-button-flat-base-focus-border,
-            focus-outline: $kendo-button-flat-base-focus-outline,
-            active-text: $kendo-button-flat-base-active-text,
-            active-bg: $kendo-button-flat-base-active-bg,
-            active-border: $kendo-button-flat-base-active-border,
-            disabled-text: $kendo-button-flat-base-disabled-text,
-            disabled-bg: $kendo-button-flat-base-disabled-bg,
-            disabled-border: $kendo-button-flat-base-disabled-border
-        ),
         primary: (
             text: $kendo-button-flat-primary-text,
             bg: $kendo-button-flat-primary-bg,

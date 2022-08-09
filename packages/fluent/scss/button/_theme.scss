@@ -10,7 +10,7 @@
         --INTERNAL--kendo-button-shadow: var( --kendo-button-shadow );
 
         border-color: var( --INTERNAL--kendo-button-border, initial );
-        color: var( --INTERNAL--kendo-button-text, initial );
+        color: var( --INTERNAL--kendo-button-text, inherit );
         background-color: var( --INTERNAL--kendo-button-bg, initial );
         background-image: linear-gradient(
             var( --INTERNAL--kendo-button-gradient, transparent, transparent )

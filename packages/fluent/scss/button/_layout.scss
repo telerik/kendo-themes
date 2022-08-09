@@ -120,6 +120,75 @@
         }
     }
 
+    .k-button-flat-base {
+        color: inherit;
+        background: none !important;
+        border-color: transparent !important;
+
+        // Overlay
+        &::before {
+            @include border-radius( inherit );
+            content: "";
+            background: currentColor;
+            opacity: 0;
+            display: block;
+            pointer-events: none;
+            position: absolute;
+            left: -$kendo-button-border-width;
+            right: -$kendo-button-border-width;
+            top: -$kendo-button-border-width;
+            bottom: -$kendo-button-border-width;
+            z-index: 0;
+            transition: opacity .2s ease-in-out;
+        }
+
+        // Hovered state
+        &:hover,
+        &.k-hover {
+            &::before {
+                opacity: .05;
+            }
+        }
+
+        // Focused state
+        &:focus-visible,
+        &.k-focus {
+            &::before {
+                opacity: 0;
+            }
+
+            &::after {
+                outline-color: currentColor !important;
+                opacity: .13;
+            }
+        }
+        &.k-no-focus:not(:hover),
+        &.k-no-focus:not(.k-hover) {
+            &::before {
+                opacity: 0;
+            }
+        }
+
+        // Active state
+        &:active,
+        &.k-active {
+            &::before {
+                opacity: .08;
+            }
+        }
+
+        // Selected state
+        &.k-selected {
+            &::before {
+                opacity: .08;
+            }
+        }
+
+        &.k-disabled {
+            color: var( --kendo-disabled-text, inherit );
+        }
+    }
+
 
     // Outline button
     .k-button-outline {
