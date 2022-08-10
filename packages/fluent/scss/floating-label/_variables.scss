@@ -28,7 +28,7 @@ $kendo-floating-label-offset-x: calc( #{$kendo-input-padding-x-md} + #{$kendo-in
 
 /// The vertical offset of the floating label
 /// @group floating-label
-$kendo-floating-label-offset-y: 50% !default;
+$kendo-floating-label-offset-y: calc( #{$kendo-floating-label-height} + #{$kendo-input-border-width} + #{$kendo-input-padding-y-md} ) !default;
 
 /// The focus resize scale of the floating label
 /// @group floating-label
