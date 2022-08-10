@@ -87,7 +87,7 @@
 
 // Command interfaces
 @use "action-buttons";
-// @use "appbar";
+@use "appbar";
 // @use "fab";
 // @use "menu";
 @use "toolbar";
@@ -249,7 +249,7 @@
 
     // Command interfaces
     @include action-buttons.styles();
-    // @include appbar.styles();
+    @include appbar.styles();
     // @include fab.styles();
     // @include menu.styles();
     @include toolbar.styles();
