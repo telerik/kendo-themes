@@ -32,6 +32,7 @@
 // @use "loader";
 // @use "loading";
 // @use "skeleton";
+@use "tooltip";
 
 
 // Form helpers
@@ -100,7 +101,6 @@
 @use "notification";
 // @use "popover";
 // @use "responsivepanel";
-@use "tooltip";
 @use "window";
 
 
@@ -194,6 +194,7 @@
     // @include loader.styles();
     // @include loading.styles();
     // @include skeleton.styles();
+    @include tooltip.styles();
 
 
     // Form helpers
@@ -263,7 +264,6 @@
     @include notification.styles();
     // @include popover.styles();
     // @include responsivepanel.styles();
-    @include tooltip.styles();
 
 
     // Navigation
