@@ -216,7 +216,7 @@
             line-height: 1;
             margin-block-end: calc( var( --kendo-padding-y-lg, #{$kendo-padding-y-lg} ) * 2 );
             text-transform: uppercase;
-            padding: 0 var( --kendo-padding-x, #{$kendo-padding-x} ) 0 0;
+            padding-inline-end: var( --kendo-padding-x, #{$kendo-padding-x} );
             width: auto;
         }
 
