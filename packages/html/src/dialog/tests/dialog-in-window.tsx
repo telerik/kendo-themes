@@ -29,8 +29,8 @@ root.render(
             <section>
                 <div className="k-widget k-window k-window-wrapper">
                     <div className="k-window-titlebar k-header">
-                        <div className="k-window-title k-dialog-title">Window with dialog</div>
-                        <div className="k-window-actions k-dialog-actions">
+                        <div className="k-window-title">Window with dialog</div>
+                        <div className="k-window-actions">
                             <Button fillMode="flat" icon="window-minimize"></Button>
                             <Button fillMode="flat" icon="window-maximize"></Button>
                             <Button fillMode="flat" icon="close"></Button>
