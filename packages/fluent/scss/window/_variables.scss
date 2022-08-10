@@ -83,7 +83,7 @@ $kendo-window-border: get-theme-color-var( primary-130 ) !default;
 
 /// Background color of the window titlebar.
 /// @group window
-$kendo-window-titlebar-bg: var(--kendo-component-bg, initial) !default; // $header-bg
+$kendo-window-titlebar-bg: var( --kendo-component-bg, initial ) !default; // $header-bg
 /// Text color of the window titlebar.
 /// @group window
 $kendo-window-titlebar-text: get-theme-color-var( primary-130 ) !default; // $header-text
@@ -93,10 +93,10 @@ $kendo-window-titlebar-border: get-theme-color-var( primary-130 ) !default;
 
 /// Box shadow around the window.
 /// @group window
-$kendo-window-shadow: var( --kendo-box-shadow-depth-4, #{$kendo-box-shadow-depth-4} ) !default;
+$kendo-window-shadow: var( --kendo-box-shadow-depth-4, none ) !default;
 /// Box shadow around the window when hovered.
 /// @group window
-$kendo-window-focused-shadow: var( --kendo-box-shadow-depth-4, #{$kendo-box-shadow-depth-4} ) !default;
+$kendo-window-focused-shadow: var( --kendo-box-shadow-depth-4, none ) !default;
 
 /// Map of the width of the different window sizes.
 /// @group window
