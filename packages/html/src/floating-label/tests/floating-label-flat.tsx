@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { FloatingLabel } from '../../floating-label';
 import { Textbox } from '../../textbox';
 import { Combobox } from '../../combobox';
+import { Textarea } from '../../textarea';
 
 const root = ReactDOM.createRoot(
     document.getElementById('app') as HTMLElement
@@ -167,6 +168,16 @@ root.render(
             <div dir="rtl">
                 <FloatingLabel label="Combobox label" invalid>
                     <Combobox fillMode="flat" value="Invalid value" invalid />
+                </FloatingLabel>
+            </div>
+            <div>
+                <FloatingLabel label="Textarea label" empty>
+                    <Textarea fillMode="flat" />
+                </FloatingLabel>
+            </div>
+            <div dir="rtl">
+                <FloatingLabel label="Textarea label" empty>
+                    <Textarea fillMode="flat" />
                 </FloatingLabel>
             </div>
         </div>
