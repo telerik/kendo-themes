@@ -58,7 +58,7 @@ $kendo-form-legend-text-transform: uppercase !default;
 
 /// The bottom margin of the form label
 /// @group form
-$kendo-form-label-margin-bottom: 0px !default;
+$kendo-form-label-margin-bottom: map-get( $kendo-spacing, 2 ) !default;
 
 /// The font weight of the form label
 /// @group form
