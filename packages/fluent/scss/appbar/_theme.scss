@@ -1,0 +1,35 @@
+@use "../core/color-system" as *;
+@use "_variables.scss" as *;
+
+@mixin kendo-appbar--theme() {
+
+    .k-appbar {
+        --INTERNAL--kendo-appbar-text: var( --kendo-appbar-text, #{$kendo-appbar-text} );
+        --INTERNAL--kendo-appbar-bg: var( --kendo-appbar-bg, #{$kendo-appbar-bg} );
+        --INTERNAL--kendo-appbar-border: var( --kendo-appbar-border, #{$kendo-appbar-border} );
+
+        color: var( --INTERNAL--kendo-appbar-text, initial );
+        background-color: var( --INTERNAL--kendo-appbar-bg, initial );
+        border-color: var( --INTERNAL--kendo-appbar-border, initial );
+    }
+
+
+    // AppBar theme colors
+    @each $theme-color, $color-props in $kendo-appbar-theme-colors {
+
+        $_text: map-get( $color-props, text );
+        $_bg: map-get( $color-props, bg );
+        $_border: map-get( $color-props, border );
+
+        .k-appbar-#{$theme-color} {
+            --kendo-appbar-text: var( --kendo-appbar-#{$theme-color}-text, #{$_text} );
+            --kendo-appbar-bg: var( --kendo-appbar-#{$theme-color}-bg, #{$_bg} );
+            --kendo-appbar-border: var( --kendo-appbar-#{$theme-color}-border, #{$_border} );
+
+            .k-appbar-subtitle {
+                color: inherit;
+            }
+        }
+    }
+
+}
