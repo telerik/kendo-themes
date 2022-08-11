@@ -51,7 +51,7 @@
 @use "checkbox";
 @use "listbox";
 // @use "progressbar";
-// @use "radio";
+@use "radio";
 @use "slider";
 
 
@@ -213,7 +213,7 @@
     @include checkbox.styles();
     @include listbox.styles();
     // @include progressbar.styles();
-    // @include radio.styles();
+    @include radio.styles();
     @include slider.styles();
 
 
