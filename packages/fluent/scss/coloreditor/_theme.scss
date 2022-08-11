@@ -1,0 +1,27 @@
+@use "../core/mixins" as *;
+@use "_variables.scss" as *;
+
+@mixin kendo-coloreditor--theme() {
+
+    .k-coloreditor {
+        @include fill(
+            var( --kendo-coloreditor-text, #{$kendo-coloreditor-text} ),
+            var( --kendo-coloreditor-bg, #{$kendo-coloreditor-bg} ),
+            var( --kendo-coloreditor-border, #{$kendo-coloreditor-border} )
+        );
+        @include box-shadow(
+            var( --kendo-coloreditor-shadow, #{$kendo-coloreditor-shadow} )
+        );
+    }
+
+    .k-coloreditor:focus,
+    .k-coloreditor.k-focus {
+        @include fill(
+            $border: var( --kendo-coloreditor-focus-border, #{$kendo-coloreditor-focus-border} )
+        );
+        @include box-shadow(
+            var( --kendo-coloreditor-focus-shadow, #{$kendo-coloreditor-focus-shadow} )
+        );
+    }
+
+}
