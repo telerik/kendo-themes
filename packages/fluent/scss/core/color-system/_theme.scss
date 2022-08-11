@@ -97,6 +97,15 @@ $kendo-theme-colors: (
     )
 ) !default;
 
+// Text colors
+@each $theme-color, $color-props in $kendo-theme-colors {
+    $_text: map-get( $color-props, text );
+
+    .k-text-#{$theme-color} {
+        color: var( --kendo-text-#{$theme-color} , #{$_text} ) !important; // sass-lint:disable-line no-important
+    }
+};
+
 :root {
     @include css-vars( $kendo-fluent-palettes );
     @include css-vars( $kendo-theme-colors );
