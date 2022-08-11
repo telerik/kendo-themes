@@ -15,8 +15,8 @@
         border-style: solid;
         outline: 0;
         font-family: var( --kendo-input-font-family, #{$kendo-input-font-family} );
-        font-size: var( --INTERNAL--kendo-input-font-size, 1rem );
-        line-height: var( --INTERNAL--kendo-input-line-height, normal );
+        font-size: var( --INTERNAL--kendo-input-font-size, inherit );
+        line-height: var( --INTERNAL--kendo-input-line-height, #{$kendo-line-height} );
         font-weight: var( --kendo-input-font-weight, #{$kendo-input-font-weight} );
         text-align: start;
         box-shadow: none;
@@ -111,8 +111,8 @@
 
     // Input inner
     .k-input-inner {
-        padding-inline: var( --INTERNAL--kendo-input-padding-x, 0 );
-        padding-block: var( --INTERNAL--kendo-input-padding-y, 0 );
+        padding-inline: var( --INTERNAL--kendo-input-padding-x, #{$kendo-input-padding-x-md} );
+        padding-block: var( --INTERNAL--kendo-input-padding-y, #{$kendo-input-padding-y-md} );
         width: 100%;
         border: 0;
         outline: 0;
