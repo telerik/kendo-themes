@@ -62,7 +62,7 @@
 
 // Augmented forms
 @use "autocomplete";
-// @use "captcha";
+@use "captcha";
 @use "colorpalette";
 @use "colorgradient";
 @use "coloreditor";
@@ -224,7 +224,7 @@
 
     // Augmented forms
     @include autocomplete.styles();
-    // @include captcha.styles();
+    @include captcha.styles();
     @include colorpalette.styles();
     @include colorgradient.styles();
     @include coloreditor.styles();
