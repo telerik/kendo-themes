@@ -1,0 +1,29 @@
+// Module meta
+$_kendo-module-meta: (
+    name: "upload",
+    dependencies: (
+        "icon",
+        "button",
+        "action-buttons",
+        "dropzone",
+        "toolbar"
+    )
+);
+
+
+// Component
+@forward "_variables.scss";
+@use "_layout.scss" as *;
+@use "_theme.scss" as *;
+
+// Register
+@use "../core/module-system/" as module;
+@include module.register( $_kendo-module-meta... );
+
+// Expose
+@mixin styles() {
+    @include module.render( "upload" ) {
+        @include kendo-upload--layout();
+        @include kendo-upload--theme();
+    }
+}

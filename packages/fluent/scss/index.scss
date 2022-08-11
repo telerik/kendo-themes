@@ -82,7 +82,7 @@
 @use "rating";
 @use "searchbox";
 @use "switch";
-// @use "upload";
+@use "upload";
 // @use "dropzone";
 
 
@@ -244,7 +244,7 @@
     @include rating.styles();
     @include searchbox.styles();
     @include switch.styles();
-    // @include upload.styles();
+    @include upload.styles();
     // @include dropzone.styles();
 
 
