@@ -1,0 +1,200 @@
+@use "../core/color-system" as *;
+@use "../core/_variables.scss" as *;
+@use "../core/functions/" as *; 
+@use "../checkbox/_variables.scss" as *;
+@use "../list/_variables.scss" as *;
+
+// Radio button
+
+/// Border radius of radio button.
+/// @group radio
+$kendo-radio-border-radius: 50% !default;
+/// Border width of radio button.
+/// @group radio
+$kendo-radio-border-width: 1px !default;
+
+// Radio button sizes
+$kendo-radio-sizes: (
+    sm: (
+        size: map-get( $kendo-spacing, 4 ),
+        glyph-size: ( map-get( $kendo-spacing, 4 ) - map-get( $kendo-spacing, thin ) ),
+        ripple-size: map-get( $kendo-spacing, 4 ) * 3,
+        checked-border-width: map-get( $kendo-spacing, 1 ),
+        checked-position: ( map-get( $kendo-spacing, 1 ) - map-get( $kendo-spacing, hair ))
+    ),
+    md: (
+        size: map-get( $kendo-spacing, 5 ),
+        glyph-size: ( map-get( $kendo-spacing, 5 ) - map-get( $kendo-spacing, thin ) ),
+        ripple-size: map-get( $kendo-spacing, 5 ) * 3,
+        checked-border-width: ( map-get( $kendo-spacing, 1 ) + map-get( $kendo-spacing, hair )),
+        checked-position: map-get( $kendo-spacing, 1 )
+    ),
+    lg: (
+        size: map-get( $kendo-spacing, 6 ),
+        glyph-size: ( map-get( $kendo-spacing, 6 ) - map-get( $kendo-spacing, thin ) ),
+        ripple-size: map-get( $kendo-spacing, 6 ) * 3,
+        checked-border-width: ( map-get( $kendo-spacing, 1) + map-get( $kendo-spacing, thin )),
+        checked-position: ( map-get( $kendo-spacing, 1) + map-get( $kendo-spacing, hair ))
+    )
+) !default;
+
+/// Default width of radio button.
+/// @group radio
+$kendo-radio-width: map-get( $kendo-spacing, 5 ) !default;
+/// Default height of radio button.
+/// @group radio
+$kendo-radio-height: map-get( $kendo-spacing, 5 ) !default;
+/// Default font size of radio button.
+/// @group radio
+$kendo-radio-font-size: ( map-get( $kendo-spacing, 5 ) - map-get( $kendo-spacing, thin ) ) !default;
+/// Default ripple width of radio button.
+/// @group radio
+$kendo-radio-ripple-width: calc( map-get( $kendo-spacing, 5 ) * 3 ) !default;
+/// Default ripple height of radio button.
+/// @group radio
+$kendo-radio-ripple-height: calc( map-get( $kendo-spacing, 5 ) * 3 ) !default;
+
+/// Background color of radio button.
+/// @group radio
+$kendo-radio-bg: $kendo-checkbox-bg !default;
+/// Color of radio button.
+/// @group radio
+$kendo-radio-text: $kendo-checkbox-text !default;
+/// Border color of radio button.
+/// @group radio
+$kendo-radio-border: $kendo-checkbox-border !default;
+
+/// Background color of hovered radio button.
+/// @group radio
+$kendo-radio-hover-bg: $kendo-checkbox-hover-bg !default;
+/// Color of hovered radio button.
+/// @group radio
+$kendo-radio-hover-text: $kendo-checkbox-hover-text !default;
+/// Border color of hovered radio button.
+/// @group radio
+$kendo-radio-hover-border: get-theme-color-var( neutral-130 ) !default;
+
+/// Border of hovered and checked radio.
+/// @group checkbox
+$kendo-radio-checked-hover-border: get-theme-color-var( primary-150 ) !default;
+
+/// Top position of checked radio button.
+/// @group checked
+$kendo-radio-checked-top: map-get( $kendo-spacing, 1 ) !default;
+/// Left position of checked radio button.
+/// @group checked
+$kendo-radio-checked-left: map-get( $kendo-spacing, 1 ) !default;
+/// Border width of checked radio button.
+/// @group radio
+$kendo-radio-checked-border-width: ( map-get( $kendo-spacing, 1) + map-get( $kendo-spacing, hair) ) !default;
+/// Width of checked radio button.
+/// @group radio
+$kendo-radio-checked-width: calc( $kendo-radio-width / 2 ) !default;
+/// Height of checked radio button.
+/// @group radio
+$kendo-radio-checked-height: calc( $kendo-radio-height / 2 ) !default;
+/// Background color of checked radio button.
+/// @group radio
+$kendo-radio-checked-bg: var( --kendo-component-bg, initial ) !default;
+/// Color of checked radio button.
+/// @group radio
+$kendo-radio-checked-text: get-theme-color-var( primary-130 ) !default;
+/// Border color of checked radio button.
+/// @group radio
+$kendo-radio-checked-border: $kendo-checkbox-checked-border !default;
+
+/// Border color of focused radio button.
+/// @group radio
+$kendo-radio-focus-border: $kendo-checkbox-focus-border !default;
+/// Box shadow of focused radio button.
+/// @group radio
+$kendo-radio-focus-shadow: $kendo-checkbox-focus-shadow !default;
+/// Border color of focused and checked radio button.
+/// @group radio
+$kendo-radio-focus-checked-border: get-theme-color-var( neutral-130 ) !default;
+/// Box shadow of focused and checked radio button.
+/// @group radio
+$kendo-radio-focus-checked-shadow: $kendo-checkbox-focus-checked-shadow !default;
+
+/// Background color of disabled radio button.
+/// @group radio
+$kendo-radio-disabled-bg: $kendo-checkbox-disabled-bg !default;
+/// Color of disabled radio button.
+/// @group radio
+$kendo-radio-disabled-text: $kendo-checkbox-disabled-text !default;
+/// Border color of disabled radio button.
+/// @group radio
+$kendo-radio-disabled-border: get-theme-color( neutral, 60 ) !default;
+
+/// Background color of disabled and checked radio button.
+/// @group radio
+$kendo-radio-disabled-checked-bg: $kendo-radio-checked-bg !default;
+/// Color of disabled and checked radio button.
+/// @group radio
+$kendo-radio-disabled-checked-text: $kendo-checkbox-disabled-checked-text !default;
+/// Border color of disabled and checked radio button.
+/// @group radio
+$kendo-radio-disabled-checked-border: $kendo-checkbox-disabled-checked-border !default;
+
+/// Background color of invalid radio button.
+/// @group radio
+$kendo-radio-invalid-bg: $kendo-checkbox-invalid-bg !default;
+/// Color of invalid radio button.
+/// @group radio
+$kendo-radio-invalid-text: $kendo-checkbox-invalid-text !default;
+/// Border color of invalid radio button.
+/// @group radio
+$kendo-radio-invalid-border: $kendo-checkbox-invalid-border !default;
+
+
+// Radio indicator
+
+/// Type of radio button indicator.
+/// @group radio
+$kendo-radio-indicator-type: image !default;
+
+/// Glyph font family of radio button indicator.
+/// @group radio
+$kendo-radio-glyph-font-family: "WebComponentsIcons", monospace !default;
+/// Glyph of radio button indicator.
+/// @group radio
+$kendo-radio-checked-glyph: "\e308" !default;
+
+/// Image of checked radio button indicator.
+/// @group radio
+$kendo-radio-checked-image: escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 14'><circle cx='50%' cy='50%' r='4' fill='#{$kendo-radio-checked-text}'/></svg>") ) !default;
+/// Image of disabled and checked radio button indicator.
+/// @group radio
+$kendo-radio-disabled-checked-image: null !default;
+
+
+// Radio label
+
+/// The horizontal margin of the radio button inside of a label.
+/// @group radio
+$kendo-radio-label-spacing: map-get( $kendo-spacing, 2 ) !default;
+
+
+// Radio list
+
+/// The horizontal list item margin of radio button.
+/// @group radio
+$kendo-radio-list-spacing: map-get( $kendo-spacing, 4 ) !default;
+/// The horizontal list item padding of radio button.
+/// @group radio
+$kendo-radio-list-item-padding-x: 0px !default;
+/// The vertical list item padding of radio button.
+/// @group radio
+$kendo-radio-list-item-padding-y: $kendo-list-item-padding-y-md !default;
+/// 
+/// @group radio
+$kendo-radio-list-item-gap: map-get( $kendo-spacing, 2 ) !default;
+
+// Radio ripple
+
+/// Background color of radio button ripple.
+/// @group radio
+$kendo-radio-ripple-bg: $kendo-radio-checked-bg !default;
+/// Opacity of radio button ripple.
+/// @group radio
+$kendo-radio-ripple-opacity: .25 !default;
