@@ -22,9 +22,8 @@ root.render(
     <>
         <style>{styles}</style>
         <div id="test-area" className="k-d-grid k-grid-cols-4">
-
             <section>
-                <div className="k-widget k-panelbar">
+                <div className="k-widget k-panelbar" dir="rtl">
                     <div className="k-item">
                         <span className="k-link k-header">
                             <Icon name="cog" className="k-panelbar-item-icon" />
@@ -67,7 +66,7 @@ root.render(
             </section>
 
             <section>
-                <div className="k-widget k-panelbar">
+                <div className="k-widget k-panelbar" dir="rtl">
                     <div className="k-item">
                         <span className="k-link k-header">First</span>
                     </div>
@@ -141,7 +140,7 @@ root.render(
             </section>
 
             <section>
-                <div className="k-widget k-panelbar">
+                <div className="k-widget k-panelbar" dir="rtl">
                     <div className="k-item k-expanded">
                         <span className="k-link k-header">
                             First expanded
@@ -164,7 +163,7 @@ root.render(
             </section>
 
             <section>
-                <div className="k-widget k-panelbar">
+                <div className="k-widget k-panelbar" dir="rtl">
                     <div className="k-item">
                         <span className="k-link k-header">First</span>
                     </div>
@@ -185,6 +184,7 @@ root.render(
                     </div>
                 </div>
             </section>
+
         </div>
     </>
 );
