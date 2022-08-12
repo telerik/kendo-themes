@@ -1,0 +1,108 @@
+@use "../core/color-system" as *;
+@use "../core/_variables.scss" as *;
+@use "../icon/_variables.scss" as *;
+
+/// Width of the border around the upload.
+/// @group upload
+$kendo-upload-border-width: 1px !default;
+/// Font family of the upload.
+/// @group upload
+$kendo-upload-font-family: var( --kendo-font-family, inherit ) !default;
+/// Font size of the upload.
+/// @group upload
+$kendo-upload-font-size: var( --kendo-font-size, inherit ) !default;
+/// Line height of the upload.
+/// @group upload
+$kendo-upload-line-height: var( --kendo-line-height, normal )  !default;
+/// Maximum height of the upload.
+/// @group upload
+$kendo-upload-max-height: 300px !default;
+
+/// Background color of the upload.
+/// @group upload
+$kendo-upload-bg: var( --kendo-component-bg, initial ) !default;
+/// Text color of the upload.
+/// @group upload
+$kendo-upload-text: var( --kendo-component-text, initial ) !default;
+/// Border color of the upload.
+/// @group upload
+$kendo-upload-border: var( --kendo-component-border, initial ) !default;
+
+/// Horizontal padding of the upload dropzone.
+/// @group upload
+$kendo-upload-dropzone-padding-x: map-get( $kendo-spacing, 2 ) !default;
+/// Vertical padding of the upload dropzone.
+/// @group upload
+$kendo-upload-dropzone-padding-y: map-get( $kendo-spacing, 2 ) !default;
+/// Background color of the upload dropzone.
+/// @group upload
+$kendo-upload-dropzone-bg: get-theme-color-var( neutral-10 ) !default; // header-bg
+/// Text color of the upload dropzone.
+/// @group upload
+$kendo-upload-dropzone-text: get-theme-color-var( neutral-130 ) !default; //$header-text
+/// Border color of the upload dropzone.
+/// @group upload
+$kendo-upload-dropzone-border: get-theme-color-var( neutral-30 ) !default;
+/// Background color of the hovered upload dropzone.
+/// @group upload
+$kendo-upload-dropzone-hover-bg: var( --kendo-hover-bg, inherit ) !default;
+
+/// Text color of the file status message in the upload.
+/// @group upload
+$kendo-upload-status-text: var( --kendo-subtle-text, inherit ) !default;
+/// Opacity of the file status message in the upload.
+/// @group upload
+$kendo-upload-status-text-opacity: null !default;
+
+/// Horizontal padding of the upload items.
+/// @group upload
+$kendo-upload-item-padding-x: map-get( $kendo-spacing, 2 ) !default;
+/// Vertical padding of the upload items.
+/// @group upload
+$kendo-upload-item-padding-y: map-get( $kendo-spacing, 2 ) !default;
+
+/// Spacing between multiple items in the upload.
+/// @group upload
+$kendo-upload-multiple-items-spacing: map-get( $kendo-spacing, 4 ) !default;
+
+/// Font size of the upload validation message.
+/// @group upload
+$kendo-upload-validation-font-size: var( --kendo-font-size-xs, inherit ) !default;
+/// Spacing between the icon and text in the upload.
+/// @group upload
+$kendo-upload-icon-spacing: var( --kendo-icon-spacing, #{$kendo-icon-spacing} ) !default;
+/// Color of the icons in the upload.
+/// @group upload
+$kendo-upload-icon-color: var( --kendo-subtle-text, inherit ) !default;
+
+/// Font size of the file icons in the upload.
+/// @group upload
+$kendo-upload-group-icon-size: var( --kendo-icon-size-lg, #{$kendo-icon-size-lg} ) !default;
+
+/// Thickness of the upload progress bar.
+/// @group upload
+$kendo-upload-progress-thickness: 2px !default;
+/// Background color of the upload progress bar.
+/// @group upload
+$kendo-upload-progress-bg: get-theme-color-var( primary-130 ) !default;
+/// Text color of the upload progress bar.
+/// @group upload
+$kendo-upload-progress-text: $kendo-upload-text !default;
+
+/// Success background color of the upload.
+/// @group upload
+$kendo-upload-success-bg: get-theme-color-var( success-190 ) !default;
+/// Success text color of the upload.
+/// @group upload
+$kendo-upload-success-text: get-theme-color-var( success-190 ) !default;
+
+/// Error background color of the upload.
+/// @group upload
+$kendo-upload-error-bg: get-theme-color-var( error-190 ) !default;
+/// Error text color of the upload.
+/// @group upload
+$kendo-upload-error-text: get-theme-color-var( error-190 ) !default;
+
+/// Focus shadow of the upload when focused.
+/// @group upload
+$kendo-upload-focused-shadow: inset 0 0 0 2px rgba(0, 0, 0, .13) !default;

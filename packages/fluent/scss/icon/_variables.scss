@@ -3,6 +3,9 @@
 /// Font size of the icons.
 /// @group icon
 $kendo-icon-size: 1rem !default;
+/// Font size of the large icons.
+/// @group icon
+$kendo-icon-size-lg: calc( var(--kendo-icon-size, #{$kendo-icon-size}) * 2 ) !default;
 
 /// Spacing around the icons.
 /// @group icon
