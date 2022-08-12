@@ -117,7 +117,7 @@
 // Layout & containers
 @use "card";
 @use "expansion-panel";
-// @use "panelbar";
+@use "panelbar";
 // @use "splitter";
 // @use "tilelayout";
 
@@ -279,7 +279,7 @@
     // Layout & containers
     @include card.styles();
     @include expansion-panel.styles();
-    // @include panelbar.styles();
+    @include panelbar.styles();
     // @include splitter.styles();
     // @include tilelayout.styles();
 

@@ -95,6 +95,9 @@ $kendo-padding-y-sm: calc( #{$kendo-padding-y} / 2) !default;
 $kendo-padding-x-lg: calc( #{$kendo-padding-x} * 1.5) !default;
 $kendo-padding-y-lg: calc( #{$kendo-padding-y} * 1.5) !default;
 
+// Default transition
+$kendo-transition: color .2s ease-in-out, background-color .2s ease-in-out, border-color .2s ease-in-out, box-shadow .2s ease-in-out !default;
+
 :root {
     --kendo-font-family: #{meta.inspect($kendo-font-family)};
 
@@ -120,4 +123,6 @@ $kendo-padding-y-lg: calc( #{$kendo-padding-y} * 1.5) !default;
     --kendo-border-radius-sm: #{$kendo-border-radius-sm};
     --kendo-border-radius-md: #{$kendo-border-radius-md};
     --kendo-border-radius-lg: #{$kendo-border-radius-lg};
+
+    --kendo-transition: #{$kendo-transition};
 }
