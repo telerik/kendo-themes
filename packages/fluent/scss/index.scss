@@ -109,7 +109,7 @@
 // @use "breadcrumb";
 @use "pager";
 // @use "stepper";
-// @use "tabstrip";
+@use "tabstrip";
 @use "treeview";
 // @use "wizard";
 
@@ -271,7 +271,7 @@
     // @include breadcrumb.styles();
     @include pager.styles();
     // @include stepper.styles();
-    // @include tabstrip.styles();
+    @include tabstrip.styles();
     @include treeview.styles();
     // @include wizard.styles();
 

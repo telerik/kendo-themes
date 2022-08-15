@@ -1,0 +1,102 @@
+@use "../core/" as *;
+@use "_variables.scss" as *;
+
+@mixin kendo-tabstrip--theme() {
+
+    // Wrapper
+    .k-tabstrip-wrapper {
+        @include fill(
+            var( --kendo-tabstrip-wrapper-text, #{$kendo-tabstrip-wrapper-text} ),
+            var( --kendo-tabstrip-wrapper-bg, #{$kendo-tabstrip-wrapper-bg} ),
+            var( --kendo-tabstrip-wrapper-border, #{$kendo-tabstrip-wrapper-border} )
+        );
+    }
+
+    // Items
+    .k-tabstrip-items-wrapper {
+        @include fill(
+            var( --kendo-tabstrip-text, #{$kendo-tabstrip-text} ),
+            var( --kendo-tabstrip-bg, #{$kendo-tabstrip-bg} ),
+            var( --kendo-tabstrip-border, #{$kendo-tabstrip-border} )
+        );
+
+        .k-item {
+            @include fill(
+                var( --kendo-tabstrip-item-text, #{$kendo-tabstrip-item-text} ),
+                var( --kendo-tabstrip-item-bg, #{$kendo-tabstrip-item-bg} ),
+                var( --kendo-tabstrip-item-border, #{$kendo-tabstrip-item-border} )
+            );
+
+            &:hover,
+            &.k-hover {
+                @include fill(
+                    var( --kendo-tabstrip-item-hovered-text, #{$kendo-tabstrip-item-hovered-text} ),
+                    var( --kendo-tabstrip-item-hovered-bg, #{$kendo-tabstrip-item-hovered-bg} ),
+                    var( --kendo-tabstrip-item-hovered-border, #{$kendo-tabstrip-item-hovered-border} )
+                );
+            }
+
+            &:focus,
+            &.k-focus {
+                @include box-shadow( var( --kendo-tabstrip-item-focused-shadow, #{$kendo-tabstrip-item-focused-shadow} ) );
+            }
+
+            &:active,
+            &.k-active,
+            &.k-selected {
+                @include fill(
+                    $color: var( --kendo-tabstrip-item-selected-text, #{$kendo-tabstrip-item-selected-text} ),
+                    $bg: var( --kendo-tabstrip-item-selected-bg, #{$kendo-tabstrip-item-selected-bg} )
+                );
+
+                &:hover,
+                &.k-hover {
+                    @include fill(
+                        $bg: var( --kendo-tabstrip-item-hovered-bg, #{$kendo-tabstrip-item-hovered-bg} )
+                    );
+                }
+
+            }
+
+            &:disabled,
+            &[disabled],
+            &.k-disabled {
+                @include fill(
+                    var( --kendo-tabstrip-item-disabled-text, #{$kendo-tabstrip-item-disabled-text} ),
+                    var( --kendo-tabstrip-item-disabled-bg, #{$kendo-tabstrip-item-disabled-bg} ),
+                    var( --kendo-tabstrip-item-disabled-border, #{$kendo-tabstrip-item-disabled-border} )
+                );
+            }
+
+            &.k-tabstrip-dragging {
+                @include fill( $color: var( --kendo-tabstrip-item-dragging-text, #{$kendo-tabstrip-item-dragging-text} ) );
+            }
+        }
+
+    }
+
+    // Content
+    .k-tabstrip-content,
+    .k-tabstrip > .k-content {
+        @include fill(
+            var( --kendo-tabstrip-content-text, #{$kendo-tabstrip-content-text} ),
+            var( --kendo-tabstrip-content-bg, #{$kendo-tabstrip-content-bg} ),
+            var( --kendo-tabstrip-content-border, #{$kendo-tabstrip-content-border} )
+        );
+
+        &:focus,
+        &.k-focus {
+            outline-color: var( --kendo-tabstrip-content-border-focused, #{$kendo-tabstrip-content-border-focused} );
+        }
+    }
+
+    // Selected indicator
+    @if ($kendo-tabstrip-indicator-size) {
+        .k-tabstrip-items-wrapper {
+            .k-item.k-active::after {
+                border-color: var( --kendo-tabstrip-indicator-color, #{$kendo-tabstrip-indicator-color} );
+            }
+        }
+    }
+
+}
