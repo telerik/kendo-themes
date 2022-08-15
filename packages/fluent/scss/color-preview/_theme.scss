@@ -1,0 +1,32 @@
+@use "../core/mixins" as *;
+@use "_variables.scss" as *;
+
+@mixin kendo-color-preview--theme() {
+
+    // Color Preview
+    .k-color-preview {
+        @include fill(
+            var( --kendo-color-preview-text, #{$kendo-color-preview-text} ),
+            var( --kendo-color-preview-bg, #{$kendo-color-preview-bg} ),
+            var( --kendo-color-preview-border, #{$kendo-color-preview-border} )
+        );
+
+        &:hover,
+        &.k-hover {
+            @include fill(
+                $border: var( --kendo-color-preview-hover-border, #{$kendo-color-preview-hover-border} )
+            );
+        }
+    }
+
+    // Mask
+    .k-color-preview-mask::before {
+        [disabled] &,
+        .k-disabled & {
+            @include fill(
+                $bg: var( --kendo-disabled-bg )
+            );
+        }
+    }
+
+}

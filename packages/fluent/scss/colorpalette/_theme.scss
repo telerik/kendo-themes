@@ -1,0 +1,53 @@
+@use "../core/mixins" as *;
+@use "_variables.scss" as *;
+
+@mixin kendo-colorpalette--theme() {
+
+    // Tile
+    .k-colorpalette-tile {
+        @include fill(
+            $border: var( --kendo-colorpalette-tile-border, #{$kendo-colorpalette-tile-border} )
+        );
+
+        // Hover
+        &:hover,
+        &.k-hover {
+            @include box-shadow(
+                var( --kendo-colorpalette-tile-hover-shadow, #{$kendo-colorpalette-tile-hover-shadow} )
+            );
+            @include fill(
+                $border: var( --kendo-colorpalette-tile-hover-border, #{$kendo-colorpalette-tile-hover-border} )
+            );
+        }
+
+        // Focus
+        &:focus,
+        &.k-focus {
+            @include box-shadow(
+                var( --kendo-colorpalette-tile-focus-shadow, #{$kendo-colorpalette-tile-focus-shadow} )
+            );
+            @include fill(
+                $border: var( --kendo-colorpalette-tile-focus-border, #{$kendo-colorpalette-tile-focus-border} )
+            );
+        }
+
+        // Selected
+        &.k-selected {
+            @include box-shadow(
+                var( --kendo-colorpalette-tile-selected-shadow, #{$kendo-colorpalette-tile-selected-shadow} )
+            );
+            @include fill(
+                $border: var( --kendo-colorpalette-tile-selected-border, #{$kendo-colorpalette-tile-selected-border} )
+            );
+        }
+
+        // Selected hover/focus
+        &.k-selected:hover,
+        &.k-selected:focus {
+            @include fill(
+                $border: var( --kendo-colorpalette-tile-selected-hover-border, #{$kendo-colorpalette-tile-selected-hover-border} )
+            );
+        }
+    }
+
+}

@@ -1,0 +1,111 @@
+@use "_variables.scss" as *;
+@use "../core/mixins" as *;
+@use "../core/color-system" as *;
+
+@mixin kendo-upload--theme() {
+    .k-upload {
+        @include fill(
+            var( --kendo-upload-text, #{$kendo-upload-text} ),
+            var( --kendo-upload-bg, #{$kendo-upload-bg} ),
+            var( --kendo-upload-border, #{$kendo-upload-border} )
+        );
+
+        .k-dropzone {
+            @include fill(
+                var( --kendo-upload-dropzone-text, #{$kendo-upload-dropzone-text} ),
+                var( --kendo-upload-dropzone-bg, #{$kendo-upload-dropzone-bg} ),
+                var( --kendo-upload-dropzone-border, #{$kendo-upload-dropzone-border} )
+            );
+
+            &:hover,
+            &.k-hover,
+            &.k-dropzone-hover,
+            &.k-dropzone-hovered {
+                background-color: var( --kendo-upload-dropzone-hover-bg, #{$kendo-upload-dropzone-hover-bg} );
+            }
+
+            .k-dropzone-hint {
+                color: var( --kendo-upload-status-text, #{$kendo-upload-status-text} );
+                opacity: var( --kendo-upload-status-text-opacity, #{$kendo-upload-status-text-opacity} );
+            }
+
+        }
+
+        .k-upload-files,
+        .k-file {
+            border-color: var( --kendo-upload-border, #{$kendo-upload-border} );
+        }
+
+        .k-file {
+
+            &.k-focus {
+                box-shadow: var( --kendo-upload-focused-shadow, #{$kendo-upload-focused-shadow} );
+            }
+
+            .k-upload-action.k-focus {
+                box-shadow: var( --kendo-upload-focused-shadow, #{$kendo-upload-focused-shadow} );
+            }
+
+        }
+
+        .k-upload-status {
+            color: var( --kendo-upload-status-text, #{$kendo-upload-status-text} );
+            opacity: var( --kendo-upload-status-text-opacity, #{$kendo-upload-status-text-opacity} );
+        }
+
+        // Upload status: uploading
+        .k-file-progress {
+
+            .k-file-name {
+                color: var( --kendo-upload-progress-text, #{$kendo-upload-progress-text} );
+            }
+            .k-progress {
+                background-color: var( --kendo-upload-progress-bg, #{$kendo-upload-progress-bg} );
+            }
+        }
+
+
+        // Upload status: success
+        .k-file-success {
+            .k-progress {
+                background-color: var( --kendo-upload-success-bg, #{$kendo-upload-success-bg} );
+            }
+        }
+
+        // Upload satus: error
+        .k-file-error,
+        .k-file-invalid {
+            .k-file-validation-message {
+                color: var( --kendo-upload-error-text, #{$kendo-upload-error-text} );
+            }
+            .k-progress {
+                background-color: var( --kendo-upload-error-bg, #{$kendo-upload-error-bg} );
+            }
+        }
+
+        .k-file-group-wrapper,
+        .k-multiple-files-group-wrapper,
+        .k-file-invalid-group-wrapper,
+        .k-multiple-files-invalid-group-wrapper {
+            color: var( --kendo-upload-icon-color, #{$kendo-upload-icon-color} );
+            border-color: var( --kendo-upload-icon-color, #{$kendo-upload-icon-color} );
+        }
+
+        .k-file-size,
+        .k-file-validation-message,
+        .k-file-information {
+            color: var( --kendo-subtle-text, inherit);
+        }
+
+        .k-multiple-files-wrapper .k-file-information {
+            color: var( --kendo-upload-text, #{$kendo-upload-text} );
+        }
+
+        // Invalid,
+        &.k-invalid,
+        &.ng-invalid.ng-touched,
+        &.ng-invalid.ng-dirty {
+            border-color: var( --kendo-invalid-border, inherit);
+        }
+    }
+}

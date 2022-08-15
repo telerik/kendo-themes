@@ -1,0 +1,15 @@
+@use "_variables.scss" as *;
+
+@mixin kendo-colorpicker--layout() {
+
+    // Color picker
+    .k-color-picker {
+        width: min-content;
+    }
+
+    // Alias
+    .k-colorpicker {
+        @extend .k-color-picker;
+    }
+
+}

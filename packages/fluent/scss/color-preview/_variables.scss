@@ -1,0 +1,36 @@
+@use "../core/color-system" as *;
+@use "../core/functions" as *;
+
+/// Border radius of the color preview.
+/// @group color-preview
+$kendo-color-preview-border-radius: var( --kendo-border-radius-md, 0 ) !default;
+/// Border width of the color preview.
+/// @group color-preview
+$kendo-color-preview-border-width: 1px !default;
+/// Default background color of the color preview.
+/// @group color-preview
+$kendo-color-preview-bg: transparent !default;
+/// Text color of the color preview.
+/// @group color-preview
+$kendo-color-preview-text: inherit !default;
+/// Border color of the color preview.
+/// @group color-preview
+$kendo-color-preview-border: get-theme-color-var( neutral-60 ) !default;
+/// Hover Border color of the color preview.
+/// @group color-preview
+$kendo-color-preview-hover-border: get-theme-color-var( neutral-60 ) !default;
+
+/// Background color of the color preview when no color is selected.
+/// @group color-preview
+$kendo-color-preview-no-color-bg: $white !default;
+/// Text color of the color preview when no color is selected.
+/// @group color-preview
+$kendo-color-preview-no-color-text: get-theme-color( error, 190 ) !default;
+/// Border color of the color preview when no color is selected.
+/// @group color-preview
+$kendo-color-preview-no-color-border: currentColor !default;
+// Background image of the color preview when no color is selected.
+$kendo-color-preview-no-color-image: escape-svg( url( "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' version='1.1'><line x1='0' x2='20' y1='0' y2='20' stroke='#{$kendo-color-preview-no-color-text}' stroke-width='1'/></svg>" ) ) !default;
+
+// Background image of the color preview mask.
+$kendo-color-preview-transparent-color-image: url( "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAuSURBVHgBxYyxDQAwDMJIL+YT+DjtzFRliUfLcklqBCRT4eCTxbD6kdL2/LgYXqpvCbs3kBv/AAAAAElFTkSuQmCC" ) !default;
