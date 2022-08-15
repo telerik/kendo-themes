@@ -107,7 +107,7 @@
 // Navigation
 // @use "bottom-navigation";
 // @use "breadcrumb";
-// @use "pager";
+@use "pager";
 // @use "stepper";
 // @use "tabstrip";
 // @use "treeview";
@@ -269,7 +269,7 @@
     // Navigation
     // @include bottom-navigation.styles();
     // @include breadcrumb.styles();
-    // @include pager.styles();
+    @include pager.styles();
     // @include stepper.styles();
     // @include tabstrip.styles();
     // @include treeview.styles();
