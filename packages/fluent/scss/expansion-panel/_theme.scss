@@ -1,0 +1,61 @@
+@use "_variables.scss" as *;
+@use "../core/color-system" as *;
+@use "../core/mixins" as *;
+
+@mixin kendo-expansion-panel--theme() {
+
+    .k-expander {
+        @include fill(
+            var( --kendo-expander-text, #{$kendo-expander-text} ),
+            var( --kendo-expander-bg, #{$kendo-expander-bg} ),
+            var( --kendo-expander-border, #{$kendo-expander-border} ),
+        );
+
+        &.k-focus::after {
+            outline-color: var( --kendo-expander-focus-outline, #{$kendo-expander-focus-outline} );
+        }
+
+        &:disabled,
+        &.k-disabled {
+            @include fill(
+                $color: var( --kendo-expander-disabled-text, #{$kendo-expander-disabled-text} )
+            );
+
+            .k-expander-header,
+            .k-expander-title,
+            .k-expander-sub-title,
+            .k-expander-indicator {
+                @include fill(
+                    $color: var( --kendo-expander-disabled-text, #{$kendo-expander-disabled-text} ),
+                    $bg: var( --kendo-expander-disabled-bg, #{$kendo-expander-disabled-bg} )
+                );
+            }
+        }
+    }
+
+    .k-expander-header {
+        @include fill(
+            var( --kendo-expander-header-text, #{$kendo-expander-header-text} ),
+            var( --kendo-expander-header-bg, #{$kendo-expander-header-bg} )
+        );
+        outline: none;
+
+        &:hover,
+        &.k-hover {
+            background-color: var( --kendo-expander-header-hover-bg, #{$kendo-expander-header-hover-bg} );
+        }
+    }
+
+    .k-expander-title {
+        color: var( --kendo-expander-title-text, #{$kendo-expander-title-text} );
+    }
+
+    .k-expander-sub-title {
+        color: var( --kendo-expander-header-sub-title-text, #{$kendo-expander-header-sub-title-text} );
+    }
+
+    .k-expander-indicator {
+        color: var( --kendo-expander-indicator-text, #{$kendo-expander-indicator-text} );
+    }
+
+}

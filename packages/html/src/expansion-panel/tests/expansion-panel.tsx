@@ -16,7 +16,7 @@ root.render(
                     <div className="k-expander-sub-title">South America</div>
                     <Icon className="k-expander-indicator" name="arrow-chevron-down" />
                 </div>
-                <div className="k-expander-content-wrapper k-display-none">
+                <div className="k-expander-content-wrapper k-d-none">
                     <div className="k-expander-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                     </div>
                 </div>
@@ -33,7 +33,7 @@ root.render(
                     </div>
                 </div>
             </div>
-            <div className="k-expander k-expanded k-state-focus">
+            <div className="k-expander k-expanded k-focus">
                 <div className="k-expander-header">
                     <div className="k-expander-title">Expanded Focused panel</div>
                     <span className="k-spacer"></span>
@@ -52,55 +52,55 @@ root.render(
                     <div className="k-expander-sub-title">South America</div>
                     <Icon className="k-expander-indicator" name="arrow-chevron-down" />
                 </div>
-                <div className="k-expander-content-wrapper k-display-none">
+                <div className="k-expander-content-wrapper k-d-none">
                     <div className="k-expander-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                     </div>
                 </div>
             </div>
-            <div className="k-expander k-state-focus">
+            <div className="k-expander k-focus">
                 <div className="k-expander-header">
                     <div className="k-expander-title">Focus state</div>
                     <span className="k-spacer"></span>
                     <div className="k-expander-sub-title">South America</div>
                     <Icon className="k-expander-indicator" name="arrow-chevron-down" />
                 </div>
-                <div className="k-expander-content-wrapper k-display-none">
+                <div className="k-expander-content-wrapper k-d-none">
                     <div className="k-expander-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                     </div>
                 </div>
             </div>
             <div className="k-expander">
-                <div className="k-expander-header k-state-hover">
+                <div className="k-expander-header k-hover">
                     <div className="k-expander-title">Hover state</div>
                     <span className="k-spacer"></span>
                     <div className="k-expander-sub-title">South America</div>
                     <Icon className="k-expander-indicator" name="arrow-chevron-down" />
                 </div>
-                <div className="k-expander-content-wrapper k-display-none">
+                <div className="k-expander-content-wrapper k-d-none">
                     <div className="k-expander-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                     </div>
                 </div>
             </div>
-            <div className="k-expander k-state-focus">
-                <div className="k-expander-header k-state-hover">
+            <div className="k-expander k-focus">
+                <div className="k-expander-header k-hover">
                     <div className="k-expander-title">Hover & Focus state</div>
                     <span className="k-spacer"></span>
                     <div className="k-expander-sub-title">South America</div>
                     <Icon className="k-expander-indicator" name="arrow-chevron-down" />
                 </div>
-                <div className="k-expander-content-wrapper k-display-none">
+                <div className="k-expander-content-wrapper k-d-none">
                     <div className="k-expander-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                     </div>
                 </div>
             </div>
-            <div className="k-expander">
-                <div className="k-expander-header k-state-disabled">
+            <div className="k-expander k-disabled">
+                <div className="k-expander-header">
                     <div className="k-expander-title">Disabled panel</div>
                     <span className="k-spacer"></span>
                     <div className="k-expander-sub-title">South America</div>
                     <Icon className="k-expander-indicator" name="arrow-chevron-down" />
                 </div>
-                <div className="k-expander-content-wrapper k-display-none">
+                <div className="k-expander-content-wrapper k-d-none">
                     <div className="k-expander-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                     </div>
                 </div>
