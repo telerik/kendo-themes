@@ -25,9 +25,12 @@
 
     // List item
     .k-list-item {
+        --INTERNAL--kendo-list-item-text: var( --kendo-list-item-text, #{$kendo-list-item-text} );
+        --INTERNAL--kendo-list-item-bg: var( --kendo-list-item-bg, #{$kendo-list-item-bg} );
+
         @include fill(
-            var( --INTERNAL--kendo-list-item-text, #{$kendo-list-item-text} ),
-            var( --INTERNAL--kendo-list-item-bg, #{$kendo-list-item-bg} )
+            var( --INTERNAL--kendo-list-item-text, inherit ),
+            var( --INTERNAL--kendo-list-item-bg, transparent )
         );
 
         // Hover
