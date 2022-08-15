@@ -1,0 +1,235 @@
+@use "../core/mixins" as *;
+@use "../core/color-system" as *;
+@use "../button/_variables.scss" as *;
+@use "_variables.scss" as *;
+
+@mixin kendo-pager--layout() {
+
+    .k-pager-wrap,
+    .k-pager {
+        padding-inline: var( --kendo-pager-padding-x, #{$kendo-pager-padding-x} );
+        padding-block: var( --kendo-pager-padding-y, #{$kendo-pager-padding-y} );
+        border-width: var( --kendo-pager-border-width, #{$kendo-pager-border-width} );
+        border-style: solid;
+        box-sizing: border-box;
+        outline: 0;
+        font-family: var( --kendo-pager-font-family, #{$kendo-pager-font-family} );
+        font-size: var( --kendo-pager-font-size, #{$kendo-pager-font-size} );
+        line-height: var( --kendo-pager-line-height, #{$kendo-pager-line-height} );
+        white-space: nowrap;
+        display: flex;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+        cursor: default;
+        flex: 0 0 auto;
+        -webkit-touch-callout: none;
+        -webkit-tap-highlight-color: $rgba-transparent;
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        .k-link {
+            text-decoration: none;
+            outline: 0;
+            font: inherit;
+            background-color: inherit;
+
+            // Focused state
+            &:focus,
+            &.k-focus {
+                z-index: 3;
+            }
+        }
+
+        .k-rtl &,
+        &[dir="rtl"],
+        [dir="rtl"] & {
+            .k-i-arrow-end-left,
+            .k-i-arrow-60-left,
+            .k-i-arrow-60-right,
+            .k-i-arrow-end-right,
+            .k-i-seek-w,
+            .k-i-arrow-w,
+            .k-i-arrow-e,
+            .k-i-seek-e {
+                transform: scaleX(-1);
+            }
+        }
+
+    }
+
+
+    // Base pager section
+    %base-pager-section {
+        @if ($kendo-pager-section-spacing) {
+            margin-inline-start: var( --kendo-pager-section-spacing, #{$kendo-pager-section-spacing} );
+            margin-inline-end: var( --kendo-pager-section-spacing, #{$kendo-pager-section-spacing} );
+        }
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+
+    // Base pager item
+    %base-pager-item {
+        min-width: var( --kendo-button-calc-size, #{$kendo-button-calc-size} );
+        height: var( --kendo-button-calc-size, #{$kendo-button-calc-size} );
+        color: inherit;
+        text-align: center;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+
+        &:hover {
+            z-index: 2;
+        }
+    }
+
+
+    // Pager items
+    .k-pager-nav {
+        @extend %base-pager-item;
+        @include border-radius( var( --kendo-pager-item-border-radius, #{$kendo-pager-item-border-radius} ) );
+        padding-inline: var( --kendo-pager-item-padding-x, #{$kendo-pager-item-padding-x} );
+        padding-block: var( --kendo-pager-item-padding-y, #{$kendo-pager-item-padding-y} );
+        border-width: var( --kendo-pager-item-border-width, #{$kendo-pager-item-border-width} );
+        border-style: solid;
+    }
+
+
+    // Pager numbers
+    .k-pager-numbers-wrap {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+
+        select.k-dropdown-list {
+            cursor: pointer;
+            display: none;
+        }
+    }
+    .k-pager-numbers {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+
+        li {
+            display: inline-flex;
+        }
+
+        // Links
+        .k-link {
+            @extend %base-pager-item;
+            @include border-radius( var( --kendo-pager-number-border-radius, #{$kendo-pager-number-border-radius} ) );
+            padding-inline: var( --kendo-pager-number-padding-x, #{$kendo-pager-number-padding-x} );
+            padding-block: var( --kendo-pager-number-padding-y, #{$kendo-pager-number-padding-y} );
+            border-width: var( --kendo-pager-number-border-width, #{$kendo-pager-number-border-width} );
+            border-style: solid;
+        }
+
+        // Selected state
+        .k-selected {
+            cursor: inherit;
+            z-index: 2;
+        }
+    }
+
+
+    // Spacing between items
+    .k-pager-nav + .k-pager-nav,
+    .k-pager-nav + .k-pager-numbers-wrap,
+    .k-pager-numbers-wrap + .k-pager-nav,
+    .k-pager-numbers > li + li {
+        @if ($kendo-pager-item-spacing) {
+            margin-inline-start: var( --kendo-pager-item-spacing, #{$kendo-pager-item-spacing} );
+        }
+    }
+
+
+    // Pager input
+    .k-pager-input {
+        @extend %base-pager-section;
+
+        .k-textbox {
+            margin-inline: 1ex;
+            margin-block: 0;
+            width: var( --kendo-pager-input-width, #{$kendo-pager-input-width} );
+        }
+    }
+
+
+    // Pager sizes
+    .k-pager-sizes {
+        @extend %base-pager-section;
+
+        .k-dropdown-list,
+        > select {
+            margin-inline-end: 1ex;
+            width: var( --kendo-pager-dropdown-width, #{$kendo-pager-dropdown-width} );
+        }
+
+        .k-input-inner,
+        .k-input-value-text {
+            text-overflow: clip;
+        }
+    }
+
+
+    // Pager info
+    .k-pager-info {
+        @extend %base-pager-section;
+        text-align: right;
+        justify-content: flex-end;
+        flex: 1 1 0%;
+        order: 9;
+    }
+
+
+    // Pager refresh
+    .k-pager-refresh {
+        @extend %base-pager-item;
+        margin-inline-start: auto;
+        order: 10;
+    }
+
+    // Responsive
+    .k-pager-sm {
+        overflow: visible;
+
+        // Show native select
+        .k-pager-numbers-wrap {
+            select.k-dropdown-list {
+                width: var( --kendo-pager-dropdown-width, #{$kendo-pager-dropdown-width} );
+                display: flex;
+            }
+        }
+
+        .k-pager-numbers-wrap {
+            @if ($kendo-pager-section-spacing) {
+                margin-inline-start: var( --kendo-pager-section-spacing, #{$kendo-pager-section-spacing} );
+                margin-inline-end: var( --kendo-pager-section-spacing, #{$kendo-pager-section-spacing} );
+            }
+
+            height: var( --kendo-button-calc-size, #{$kendo-button-calc-size} );
+            border-color: inherit;
+        }
+
+    }
+
+    // Hide components
+    .k-pager-md .k-pager-info,
+    .k-pager-sm .k-pager-info,
+    .k-pager-sm .k-pager-sizes,
+    .k-pager-sm .k-pager-numbers {
+        display: none;
+    }
+
+}
