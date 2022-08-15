@@ -1,0 +1,428 @@
+@use "../core/" as *;
+@use "_variables.scss" as *;
+
+@mixin kendo-tabstrip--layout() {
+
+    .k-tabstrip-wrapper {
+        padding-inline: var( --kendo-tabstrip-wrapper-padding-x, #{ $kendo-tabstrip-wrapper-padding-x} ) ;
+        padding-block: var( --kendo-tabstrip-wrapper-padding-y, #{ $kendo-tabstrip-wrapper-padding-y} ) ;
+        box-sizing: border-box;
+        border-width: 0;
+        border-style: solid;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .k-tabstrip {
+        border-width: 0;
+        border-color: transparent;
+        box-sizing: border-box;
+        outline: 0;
+        font-family: var( --kendo-tabstrip-font-family, #{$kendo-tabstrip-font-family} );
+        font-size: var( --kendo-tabstrip-font-size, #{$kendo-tabstrip-font-size} );
+        line-height: var( --kendo-tabstrip-line-height, #{$kendo-tabstrip-line-height} );
+        color: inherit;
+        background-color: transparent;
+        display: flex;
+        flex-flow: column nowrap;
+        -webkit-touch-callout: none;
+        -webkit-tap-highlight-color: $rgba-transparent;
+
+        .k-tabstrip-wrapper > & {
+            flex: 1 1 auto;
+        }
+    }
+
+    .k-tabstrip-items-wrapper {
+        box-sizing: border-box;
+        border-width: 0;
+        border-style: solid;
+        border-color: inherit;
+        position: relative;
+        z-index: 2;
+    }
+
+    .k-tabstrip-items {
+        box-sizing: border-box;
+        outline: 0;
+        display: flex;
+        flex-flow: row wrap;
+        flex: 0 0 auto;
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        .k-item {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            position: relative;
+            flex-shrink: 0;
+            display: flex;
+            flex-direction: row;
+            align-items: stretch;
+            justify-items: stretch;
+            outline: 0;
+
+            &::before {
+                content: "";
+                border-style: solid;
+                border-color: var( --kendo-tabstrip-item-ripple-border, #{$kendo-tabstrip-item-ripple-border} );
+                display: block;
+                position: absolute;
+                z-index: 2;
+                opacity: 0;
+                transition: opacity .3s, transform .3s;
+                pointer-events: none;
+            }
+        }
+
+        .k-tab-on-top {
+            z-index: 1;
+        }
+
+        .k-link {
+            padding-inline: var( --kendo-tabstrip-item-padding-x, #{$kendo-tabstrip-item-padding-x} );
+            padding-block: var( --kendo-tabstrip-item-padding-y, #{$kendo-tabstrip-item-padding-y} );
+            color: inherit;
+            cursor: pointer;
+            display: inline-flex;
+            vertical-align: middle;
+            flex: 1 1 auto;
+            flex-direction: row;
+            align-content: center;
+            align-items: center;
+        }
+    }
+    .k-ie11 .k-tabstrip-items {
+        white-space: nowrap;
+    }
+
+    .k-tabstrip-content,
+    .k-tabstrip > .k-content {
+        padding-inline: var( --kendo-tabstrip-content-padding-x, #{$kendo-tabstrip-content-padding-x} ) ;
+        padding-block: var( --kendo-tabstrip-content-padding-y, #{$kendo-tabstrip-content-padding-y} ) ;
+        box-sizing: border-box;
+        border-width: 0;
+        border-style: solid;
+        border-color: inherit;
+        display: none;
+        overflow: auto;
+        flex: 1 1 auto;
+        position: relative;
+        z-index: 1;
+
+        &:active,
+        &.k-active {
+            display: block;
+        }
+    }
+
+    // Loading
+    .k-tabstrip-items .k-loading {
+        width: 20%;
+        height: 0;
+        border: 0;
+        border-top: 1px solid transparent;
+        border-color: inherit;
+        background: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: width .2s linear;
+
+        // TODO: a better name
+        display: none;
+
+        &.k-complete {
+            width: 100%;
+            border-top-width: 0;
+        }
+    }
+
+
+    // Scrolling
+    .k-tabstrip-scrollable {
+        > .k-tabstrip-items-wrapper {
+
+            > .k-tabstrip-items {
+                flex: 1 1 auto;
+                flex-wrap: nowrap;
+                white-space: nowrap;
+                overflow: hidden;
+            }
+
+            > .k-button {
+                width: auto;
+                height: auto;
+                flex: none;
+                align-self: stretch;
+                aspect-ratio: auto;
+
+                .k-button-icon {
+                    min-width: auto;
+                    min-height: auto;
+                }
+            }
+            // TODO: Think of a less verbose name
+            &.k-hstack {
+                > .k-button {
+                    padding-inline: var( --kendo-tabstrip-scrollable-button-padding-x, #{$kendo-tabstrip-scrollable-button-padding-x} );
+                }
+            }
+
+            &.k-vstack {
+                > .k-button {
+                    padding-block: var( --kendo-tabstrip-scrollable-button-padding-y, #{$kendo-tabstrip-scrollable-button-padding-y} );
+                }
+            }
+        }
+    }
+
+
+    // Tabstrip variants
+    .k-tabstrip-top {
+        > .k-tabstrip-items-wrapper {
+            border-bottom-width: var( --kendo-tabstrip-border-width, #{$kendo-tabstrip-border-width} );
+            margin-block-end: calc( var( --kendo-tabstrip-content-border-width, #{$kendo-tabstrip-content-border-width} ) * -1 );
+
+            > .k-tabstrip-items {
+                width: 100%;
+            }
+
+            .k-item {
+                margin-block-end: calc( var( --kendo-tabstrip-border-width, #{$kendo-tabstrip-border-width} ) * -1 );
+
+                &::before {
+                    width: 100%;
+                    border-width: 0 0 var( --kendo-tabstrip-item-ripple-border-width, #{$kendo-tabstrip-item-ripple-border-width} ) 0;
+                    inset-block-end: 0;
+                    transform: scaleX(0);
+                }
+
+                &:active,
+                &.k-active,
+                &.k-selected {
+                    font-weight: var( --kendo-tabstrip-item-selected-font-weight, #{$kendo-tabstrip-item-selected-font-weight} );
+
+                    &::before {
+                        opacity: 1;
+                        transform: scaleX(1);
+                    }
+                }
+            }
+
+            .k-item + .k-item {
+                margin-inline-start: var( --kendo-tabstrip-item-gap, #{$kendo-tabstrip-item-gap} );
+            }
+
+        }
+    }
+    .k-tabstrip-bottom {
+        > .k-tabstrip-items-wrapper {
+            border-top-width: var( --kendo-tabstrip-border-width, #{$kendo-tabstrip-border-width} );
+            margin-block-start: calc( var( --kendo-tabstrip-content-border-width, #{$kendo-tabstrip-content-border-width} ) * -1 );
+
+            > .k-tabstrip-items {
+                width: 100%;
+            }
+
+            .k-item {
+                margin-block-start: calc( var( --kendo-tabstrip-border-width, #{$kendo-tabstrip-border-width} ) * -1 );
+
+                &::before {
+                    width: 100%;
+                    border-width: var( --kendo-tabstrip-item-ripple-border-width, #{$kendo-tabstrip-item-ripple-border-width} ) 0 0 0;
+                    inset-block-start: 0;
+                    transform: scaleX(0);
+                }
+
+                &:active,
+                &.k-active,
+                &.k-selected {
+                    font-weight: var( --kendo-tabstrip-item-selected-font-weight, #{$kendo-tabstrip-item-selected-font-weight} );
+
+                    &::before {
+                        opacity: 1;
+                        transform: scaleX(1);
+                    }
+
+                }
+
+            }
+
+            .k-item + .k-item {
+                margin-inline-start: var( --kendo-tabstrip-item-gap, #{$kendo-tabstrip-item-gap} );
+            }
+
+        }
+    }
+    .k-tabstrip-left {
+        flex-direction: row;
+
+        > .k-tabstrip-items-wrapper {
+            border-right-width: var( --kendo-tabstrip-border-width, #{$kendo-tabstrip-border-width} );
+            margin-inline-end: calc( var( --kendo-tabstrip-content-border-width, #{$kendo-tabstrip-content-border-width} ) * -1 );
+
+            > .k-tabstrip-items {
+                height: 100%;
+                display: inline-flex;
+                flex-direction: column;
+            }
+
+            .k-item {
+                margin-inline-end: calc( var( --kendo-tabstrip-border-width, #{$kendo-tabstrip-border-width} ) * -1 );
+
+                &::before {
+                    height: 100%;
+                    border-width: 0 var( --kendo-tabstrip-item-ripple-border-width, #{$kendo-tabstrip-item-ripple-border-width} ) 0 0;
+                    inset-inline-end: 0;
+                    transform: scaleY(0);
+                }
+
+                &:active,
+                &.k-active,
+                &.k-selected {
+                    font-weight: var( --kendo-tabstrip-item-selected-font-weight, #{$kendo-tabstrip-item-selected-font-weight} );
+
+                    &::before {
+                        opacity: 1;
+                        transform: scaleY(1);
+                    }
+
+                }
+
+            }
+
+            .k-item + .k-item {
+                margin-block-start: var( --kendo-tabstrip-item-gap, #{$kendo-tabstrip-item-gap} );
+            }
+        }
+
+        > .k-content,
+        > .k-tabstrip-content {
+            margin: 0 !important; // sass-lint:disable-line no-important
+        }
+
+    }
+    .k-tabstrip-right {
+        flex-direction: row-reverse;
+
+        > .k-tabstrip-items-wrapper {
+            border-left-width: var( --kendo-tabstrip-border-width, #{$kendo-tabstrip-border-width} );
+            margin-inline-start: calc( var( --kendo-tabstrip-content-border-width, #{$kendo-tabstrip-content-border-width} ) * -1 );
+
+            > .k-tabstrip-items {
+                height: 100%;
+                display: inline-flex;
+                flex-direction: column;
+            }
+
+            .k-item {
+                margin-inline-start: calc( var( --kendo-tabstrip-border-width, #{$kendo-tabstrip-border-width} ) * -1 );
+
+                &::before {
+                    height: 100%;
+                    border-width: 0 0 0 var( --kendo-tabstrip-item-ripple-border-width, #{$kendo-tabstrip-item-ripple-border-width} );
+                    inset-inline-start: 0;
+                    transform: scaleY(0);
+                }
+
+                &:active,
+                &.k-active,
+                &.k-selected {
+                    font-weight: var( --kendo-tabstrip-item-selected-font-weight, #{$kendo-tabstrip-item-selected-font-weight} );
+
+                    &::before {
+                        opacity: 1;
+                        transform: scaleY(1);
+                    }
+
+                }
+
+            }
+
+            .k-item + .k-item {
+                margin-block-start: var( --kendo-tabstrip-item-gap, #{$kendo-tabstrip-item-gap} );
+            }
+        }
+
+        > .k-content,
+        > .k-tabstrip-content {
+            margin: 0 !important; // sass-lint:disable-line no-important
+        }
+    }
+
+    // Hide tabstrip ripple when dragging
+    .k-tabstrip-items-wrapper .k-item.k-tabstrip-dragging {
+        &::before {
+            display: none !important; // sass-lint:disable-line no-important
+        }
+    }
+
+    // Selected indicator
+    @if ($kendo-tabstrip-indicator-size) {
+
+        .k-tabstrip-items-wrapper {
+
+            .k-item::after {
+                content: "";
+                border-width: 0;
+                border-style: solid;
+                display: none;
+                position: absolute;
+                z-index: 0;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+
+                // Variants
+                .k-tabstrip-top > & {
+                    border-bottom-width: var( --kendo-tabstrip-indicator-size, #{$kendo-tabstrip-indicator-size} );
+                }
+                .k-tabstrip-bottom > & {
+                    border-top-width: var( --kendo-tabstrip-indicator-size, #{$kendo-tabstrip-indicator-size} );
+                }
+                .k-tabstrip-left > & {
+                    border-right-width: var( --kendo-tabstrip-indicator-size, #{$kendo-tabstrip-indicator-size} );
+                }
+                .k-tabstrip-right > & {
+                    border-left-width: var( --kendo-tabstrip-indicator-size, #{$kendo-tabstrip-indicator-size} );
+                }
+            }
+            .k-item.k-active::after {
+                display: block;
+            }
+
+            .k-item > .k-link {
+                z-index: 1;
+            }
+        }
+
+    }
+
+    .k-rtl .k-tabstrip,
+    .k-tabstrip[dir="rtl"] {
+
+        &.k-tabstrip-left,
+        &.k-tabstrip-right {
+            > .k-tabstrip-items-wrapper {
+                order: 1;
+            }
+
+            > .k-content { order: 0; }
+            > .k-tabstrip-content { order: 0; }
+        }
+
+        .k-tabstrip-prev,
+        .k-tabstrip-next {
+            transform: scaleX(-1);
+        }
+
+    }
+
+}
