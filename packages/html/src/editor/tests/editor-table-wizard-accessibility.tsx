@@ -39,10 +39,10 @@ root.render(
                                 <ul className="k-tabstrip-items k-reset">
                                     <li className="k-item k-first"><span className="k-loading k-complete"></span><span className="k-link">Table</span></li>
                                     <li className="k-item"><span className="k-loading k-complete"></span><span className="k-link">Cell</span></li>
-                                    <li className="k-item k-last k-tab-on-top k-state-active"><span className="k-loading k-complete"></span><span className="k-link">Accessibility</span></li>
+                                    <li className="k-item k-last k-tab-on-top k-active"><span className="k-loading k-complete"></span><span className="k-link">Accessibility</span></li>
                                 </ul>
                             </div>
-                            <div className="k-tabstrip-content k-state-active">
+                            <div className="k-tabstrip-content k-active">
                                 <div className="k-form k-form-horizontal">
                                     <div className="k-form-field">
                                         <div className="k-form-label">
