@@ -1,0 +1,173 @@
+@use "_variables.scss" as *;
+
+@mixin kendo-fab--layout() {
+
+    .k-fab {
+        padding-inline: var( --INTERNAL--kendo-fab-padding-x, 0 );
+        padding-block: var( --INTERNAL--kendo-fab-padding-y, 0 );
+        border-width: 0;
+        border-style: solid;
+        border-color: transparent;
+        box-sizing: border-box;
+        position: relative;
+        color: inherit;
+        background-color: transparent;
+        font-family: var( --kendo-fab-font-family, #{$kendo-fab-font-family} );
+        font-size:var( --kendo-fab-font-size, #{$kendo-fab-font-size} );
+        line-height: var( --kendo-fab-line-height, #{$kendo-fab-line-height} );
+        text-align: center;
+        white-space: nowrap;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        vertical-align: middle;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        cursor: pointer;
+        outline: none;
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        &:focus::after,
+        &.k-focus::after {
+            content: "";
+            position: absolute;
+            border: medium none;
+            inset: var( --kendo-fab-focus-offset, #{$kendo-fab-focus-offset} );
+            outline-width: var( --kendo-fab-focus-outline-width, #{$kendo-fab-focus-outline-width} );
+            outline-style: var( --kendo-fab-focus-outline-style, #{$kendo-fab-focus-outline-style} );
+            z-index: 1;
+        }
+
+        // Fix for focused FAB with full roundness
+        &.k-rounded-full {
+            &:focus::after,
+            &.k-focus::after {
+               border-radius: inherit;
+            }
+        }
+    }
+
+    // FAB Icon
+    .k-fab-icon {
+        width: var( --kendo-fab-icon-width, #{$kendo-fab-icon-width} );
+        height: var( --kendo-fab-icon-height, #{$kendo-fab-icon-height} );
+
+        &:not(:only-child) {
+            margin-inline-end: var( --kendo-fab-icon-spacing, #{$kendo-fab-icon-spacing} );
+            margin-inline-start: calc( var( --kendo-fab-icon-spacing, #{$kendo-fab-icon-spacing} ) * -1 );
+        }
+    }
+
+
+    // Sizes
+    @each $size, $size-props in $kendo-fab-sizes {
+        $_padding-x: map-get( $size-props, padding-x );
+        $_padding-y: map-get( $size-props, padding-y );
+
+        .k-fab-#{$size} {
+            --INTERNAL--kendo-fab-padding-x: var( --kendo-fab-#{$size}-padding-x, #{$_padding-x} );
+            --INTERNAL--kendo-fab-padding-y: var( --kendo-fab-#{$size}-padding-y, #{$_padding-y} );
+        }
+    }
+
+    // Shapes
+    .k-fab-square {
+        aspect-ratio: 1;
+    }
+
+
+    // Items
+    .k-fab-items {
+        margin: 0;
+        padding-inline: var( --kendo-fab-items-padding-x, #{$kendo-fab-items-padding-x} );
+        padding-block: var( --kendo-fab-items-padding-y, #{$kendo-fab-items-padding-y} );
+        display: flex;
+    }
+
+    .k-fab-items-bottom {
+        flex-direction: column;
+    }
+    .k-fab-items-bottom .k-fab-item:last-child {
+        margin-bottom: 0;
+    }
+
+    .k-fab-items-top {
+        flex-direction: column-reverse;
+    }
+    .k-fab-items-top .k-fab-item:first-child {
+        margin-bottom: 0;
+    }
+
+    .k-fab-item {
+        list-style-type: none;
+        margin-block-end: var( --kendo-fab-item-offset-y, #{$kendo-fab-item-offset-y} );
+        outline: none;
+        white-space: nowrap;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        cursor: pointer;
+
+        &:focus .k-fab-item-text::after,
+        &:focus .k-fab-item-icon::after,
+        &.k-focus .k-fab-item-text::after,
+        &.k-focus .k-fab-item-icon::after {
+            content: "";
+            position: absolute;
+            border: medium none;
+            inset: var( --kendo-fab-item-focus-offset, #{$kendo-fab-item-focus-offset} );
+            outline-width: var( --kendo-fab-item-focus-outline-width, #{$kendo-fab-item-focus-outline-width} );
+            outline-style: var( --kendo-fab-item-focus-outline-style, #{$kendo-fab-item-focus-outline-style} );
+            z-index: 1;
+        }
+
+        &.k-text-right {
+            flex-direction: row;
+
+            .k-fab-item-text {
+                margin-inline-end: var( --kendo-fab-item-text-offset-x, #{$kendo-fab-item-text-offset-x} );
+            }
+        }
+
+        &.k-text-left {
+            flex-direction: row-reverse;
+
+            .k-fab-item-text {
+                margin-inline-start: var( --kendo-fab-item-text-offset-x, #{$kendo-fab-item-text-offset-x} );
+            }
+        }
+    }
+
+    .k-fab-item-text {
+        padding-inline: var( --kendo-fab-item-text-padding-x, #{$kendo-fab-item-text-padding-x} );
+        padding-block: var( --kendo-fab-item-text-padding-y, #{$kendo-fab-item-text-padding-y} );
+        border-width: var( --kendo-fab-item-text-border-width, #{$kendo-fab-item-text-border-width} );
+        border-style: var( --kendo-fab-item-text-border-style, #{$kendo-fab-item-text-border-style} );
+        border-radius: var( --kendo-fab-item-text-border-radius, #{$kendo-fab-item-text-border-radius} );
+        position: relative;
+        font-size: var( --kendo-fab-item-text-font-size, #{$kendo-fab-item-text-font-size} );
+        line-height: var( --kendo-fab-item-text-line-height, #{$kendo-fab-item-text-line-height} );
+    }
+
+    .k-fab-item-icon {
+        width: var( --kendo-fab-item-icon-width, #{$kendo-fab-item-icon-width} );
+        height: var( --kendo-fab-item-icon-height, #{$kendo-fab-item-icon-height} );
+        padding-inline: var( --kendo-fab-item-icon-padding-x, #{$kendo-fab-item-icon-padding-x} );
+        padding-block: var( --kendo-fab-item-icon-padding-y, #{$kendo-fab-item-icon-padding-y} );
+        border-width: var( --kendo-fab-item-icon-border-width, #{$kendo-fab-item-icon-border-width} );
+        border-style: var( --kendo-fab-item-icon-border-style, #{$kendo-fab-item-icon-border-style} );
+        border-radius: var( --kendo-fab-item-border-radius, #{$kendo-fab-item-icon-border-radius} );
+        box-sizing: content-box;
+        outline: none;
+
+        &::after {
+            border-radius: inherit;
+        }
+    }
+
+}
