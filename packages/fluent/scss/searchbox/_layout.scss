@@ -1,5 +1,22 @@
 @use "_variables.scss" as *;
+@use "../core/_variables.scss" as *;
 
 @mixin kendo-searchbox--layout() {
-    .k-searchbox { }
+
+    .k-searchbox {
+
+        .k-input-icon {
+            transition: $kendo-transition;
+        }
+
+        &:focus,
+        &:focus-within,
+        &.k-focus {
+            .k-input-icon {
+                width: 0;
+                opacity: 0;
+                transition: $kendo-transition;
+            }
+        }
+    }
 }
