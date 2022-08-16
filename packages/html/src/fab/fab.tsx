@@ -66,7 +66,7 @@ export class FloatingActionButton extends React.Component<FloatingActionButtonPr
                         [`k-fab-${fillMode}`]: fillMode,
                         [`k-fab-${fillMode}-${themeColor}`]: Boolean(fillMode && themeColor),
                         [`k-rounded-${kendoThemeMaps.roundedMap[rounded!] || rounded}`]: rounded,
-                        [`k-pos-absolute k-${position}`]: position,
+                        [`!k-pos-absolute k-${position}`]: position,
                         'k-hover': hover,
                         'k-focus': focus,
                         'k-active': active,
