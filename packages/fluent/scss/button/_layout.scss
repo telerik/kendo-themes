@@ -58,6 +58,14 @@
             outline-style: var( --kendo-button-focus-outline-style, #{$kendo-button-focus-outline-style} );
             z-index: 1;
         }
+
+        // Fix for focused button with full roundness
+        &.k-rounded-full {
+            &:focus::after,
+            &.k-focus::after {
+               border-radius: inherit;
+            }
+        }
     }
 
 
