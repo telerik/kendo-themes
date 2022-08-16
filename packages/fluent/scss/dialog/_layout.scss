@@ -44,6 +44,8 @@
     // Title bar
     .k-dialog-titlebar {
         border-width: var( --kendo-dialog-titlebar-border-width, #{$kendo-dialog-titlebar-border-width} ) 0 0;
+        padding-inline: var( --kendo-dialog-titlebar-padding-x, #{$kendo-dialog-titlebar-padding-x} );
+        padding-block: var( --kendo-dialog-titlebar-padding-y, #{$kendo-dialog-titlebar-padding-y} );
     }
 
     // Buttons
