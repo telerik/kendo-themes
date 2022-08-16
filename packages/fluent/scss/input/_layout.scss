@@ -74,6 +74,7 @@
                 left: 0;
                 border-width: var( --kendo-input-focus-border-width, #{$kendo-input-focus-border-width} );
                 border-style: solid;
+                border-radius: inherit;
                 pointer-events: none;
                 z-index: 1;
             }
