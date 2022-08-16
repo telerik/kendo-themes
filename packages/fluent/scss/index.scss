@@ -128,7 +128,7 @@
 @use "listview";
 // @use "spreadsheet";
 // @use "pivotgrid";
-// @use "treelist";
+@use "treelist";
 @use "filter";
 // @use "filemanager";
 // @use "taskboard";
@@ -290,7 +290,7 @@
     @include listview.styles();
     // @include spreadsheet.styles();
     // @include pivotgrid.styles();
-    // @include treelist.styles();
+    @include treelist.styles();
     @include filter.styles();
     // @include filemanager.styles();
     // @include taskboard.styles();

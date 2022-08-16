@@ -1,0 +1,14 @@
+@use "_variables.scss" as *;
+
+@mixin kendo-treelist--theme() {
+
+    .k-treelist,
+    .k-treelist-scrollable {
+        tr.k-footer,
+        tr.k-group-footer td,
+        tr.k-footer-template {
+            background-color: var( --kendo-treelist-footer-row-bg, #{$kendo-treelist-footer-row-bg} );
+        }
+    }
+
+}
