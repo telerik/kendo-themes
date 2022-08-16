@@ -17,6 +17,12 @@ $kendo-dialog-titlebar-border: var( --kendo-component-border, initial )  !defaul
 /// Width of the border around the dialog title bar.
 /// @group dialog
 $kendo-dialog-titlebar-border-width: 0 !default;
+/// Horizontal padding of the dialog title bar.
+/// @group dialog
+$kendo-dialog-titlebar-padding-x: map-get( $kendo-spacing, 6 ) !default;
+/// Vertical padding of the dialog title bar.
+/// @group dialog
+$kendo-dialog-titlebar-padding-y: map-get( $kendo-spacing, 4 ) !default;
 
 /// Horizontal padding of the dialog action buttons.
 /// @group dialog
