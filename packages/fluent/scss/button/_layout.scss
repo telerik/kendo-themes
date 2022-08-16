@@ -48,7 +48,7 @@
             text-decoration: none;
         }
 
-        &:focus-visible::after,
+        &:focus::after,
         &.k-focus::after {
             content: "";
             position: absolute;
@@ -112,7 +112,7 @@
         border-color: transparent !important; // sass-lint:disable-line no-important
         box-shadow: none;
 
-        &:focus-visible::after,
+        &:focus::after,
         &.k-focus::after {
             @include border-radius( inherit );
             inset: var( --kendo-button-flat-focus-offset, #{$kendo-button-flat-focus-offset} );
@@ -151,7 +151,7 @@
         }
 
         // Focused state
-        &:focus-visible,
+        &:focus,
         &.k-focus {
             &::before {
                 opacity: 0;
@@ -203,7 +203,7 @@
         text-decoration: none;
         background: none;
 
-        &:focus-visible::after,
+        &:focus::after,
         &.k-focus::after {
             @include border-radius( inherit );
             inset: var( --kendo-button-link-focus-offset, #{$kendo-button-link-focus-offset} );
@@ -225,7 +225,7 @@
         color: inherit;
         background: none;
 
-        &:focus-visible::after,
+        &:focus::after,
         &.k-focus::after {
             inset: auto;
             outline-width: 0;

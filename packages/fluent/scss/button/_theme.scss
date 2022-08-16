@@ -24,13 +24,13 @@
             --INTERNAL--kendo-button-border: var( --kendo-button-hover-border );
         }
 
-        &:focus-visible,
+        &:focus,
         &.k-focus {
             --INTERNAL--kendo-button-text: var( --kendo-button-focus-text );
             --INTERNAL--kendo-button-bg: var( --kendo-button-focus-bg );
             --INTERNAL--kendo-button-border: var( --kendo-button-focus-border );
         }
-        &:focus-visible::after,
+        &:focus::after,
         &.k-focus::after {
             outline-color: var( --kendo-button-focus-outline, initial );
         }
