@@ -169,7 +169,16 @@
                 outline-color: currentColor !important;
                 opacity: .13;
             }
+
+            // Focus and hovered state
+            &:hover,
+            &.k-hover {
+                &::before {
+                    opacity: .05;
+                }
+            }
         }
+
         &.k-no-focus:not(:hover),
         &.k-no-focus:not(.k-hover) {
             &::before {
@@ -183,12 +192,28 @@
             &::before {
                 opacity: .08;
             }
+
+            // Active and hovered state
+            &:hover,
+            &.k-hover {
+                &::before {
+                    opacity: .05;
+                }
+            }
         }
 
         // Selected state
         &.k-selected {
             &::before {
                 opacity: .08;
+            }
+
+            // Selected and hovered state
+            &:hover,
+            &.k-hover {
+                &::before {
+                    opacity: .05;
+                }
             }
         }
 

@@ -29,7 +29,15 @@
             --INTERNAL--kendo-button-text: var( --kendo-button-focus-text );
             --INTERNAL--kendo-button-bg: var( --kendo-button-focus-bg );
             --INTERNAL--kendo-button-border: var( --kendo-button-focus-border );
+
+            &:hover,
+            &.k-hover {
+                --INTERNAL--kendo-button-text: var( --kendo-button-focus-hover-text );
+                --INTERNAL--kendo-button-bg: var( --kendo-button-focus-hover-bg );
+                --INTERNAL--kendo-button-border: var( --kendo-button-focus-hover-border );
+            }
         }
+
         &:focus::after,
         &.k-focus::after {
             outline-color: var( --kendo-button-focus-outline, initial );
@@ -40,12 +48,26 @@
             --INTERNAL--kendo-button-text: var( --kendo-button-active-text );
             --INTERNAL--kendo-button-bg: var( --kendo-button-active-bg );
             --INTERNAL--kendo-button-border: var( --kendo-button-active-border );
+
+            &:hover,
+            &.k-hover {
+                --INTERNAL--kendo-button-text: var( --kendo-button-active-hover-text );
+                --INTERNAL--kendo-button-bg: var( --kendo-button-active-hover-bg );
+                --INTERNAL--kendo-button-border: var( --kendo-button-active-hover-border );
+            }
         }
 
         &.k-selected {
             --INTERNAL--kendo-button-text: var( --kendo-button-selected-text );
             --INTERNAL--kendo-button-bg: var( --kendo-button-selected-bg );
             --INTERNAL--kendo-button-border: var( --kendo-button-selected-border );
+
+            &:hover,
+            &.k-hover {
+                --INTERNAL--kendo-button-text: var( --kendo-button-selected-hover-text );
+                --INTERNAL--kendo-button-bg: var( --kendo-button-selected-hover-bg );
+                --INTERNAL--kendo-button-border: var( --kendo-button-selected-hover-border );
+            }
         }
 
         &:disabled,
@@ -67,6 +89,10 @@
             $_focus-border: map-get( $color-props, focus-border );
             $_focus-outline: map-get( $color-props, focus-outline );
 
+            $_focus-hover-text: map-get( $color-props, focus-hover-text );
+            $_focus-hover-bg: map-get( $color-props, focus-hover-bg );
+            $_focus-hover-border: map-get( $color-props, focus-hover-border );
+
             $_hover-text: map-get( $color-props, hover-text );
             $_hover-bg: map-get( $color-props, hover-bg );
             $_hover-border: map-get( $color-props, hover-border );
@@ -74,6 +100,10 @@
             $_active-text: map-get( $color-props, active-text );
             $_active-bg: map-get( $color-props, active-bg );
             $_active-border: map-get( $color-props, active-border );
+
+            $_active-hover-text: map-get( $color-props, active-hover-text );
+            $_active-hover-bg: map-get( $color-props, active-hover-bg );
+            $_active-hover-border: map-get( $color-props, active-hover-border );
 
             $_disabled-text: map-get( $color-props, disabled-text );
             $_disabled-bg: map-get( $color-props, disabled-bg );
@@ -93,13 +123,25 @@
                 --kendo-button-focus-border: var( --kendo-button-#{$fill-mode}-#{$theme-color}-focus-border, #{$_focus-border} );
                 --kendo-button-focus-outline: var( --kendo-button-#{$fill-mode}-#{$theme-color}-focus-outline, #{$_focus-outline} );
 
+                --kendo-button-focus-hover-text: var( --kendo-button-#{$fill-mode}-#{$theme-color}-focus-hover-text, #{$_focus-hover-text} );
+                --kendo-button-focus-hover-bg: var( --kendo-button-#{$fill-mode}-#{$theme-color}-focus-hover-bg, #{$_focus-hover-bg} );
+                --kendo-button-focus-hover-border: var( --kendo-button-#{$fill-mode}-#{$theme-color}-focus-hover-border, #{$_focus-hover-border} );
+
                 --kendo-button-active-text: var( --kendo-button-#{$fill-mode}-#{$theme-color}-active-text, #{$_active-text} );
                 --kendo-button-active-bg: var( --kendo-button-#{$fill-mode}-#{$theme-color}-active-bg, #{$_active-bg} );
                 --kendo-button-active-border: var( --kendo-button-#{$fill-mode}-#{$theme-color}-active-border, #{$_active-border} );
 
+                --kendo-button-active-hover-text: var( --kendo-button-#{$fill-mode}-#{$theme-color}-active-hover-text, #{$_active-hover-text} );
+                --kendo-button-active-hover-bg: var( --kendo-button-#{$fill-mode}-#{$theme-color}-active-hover-bg, #{$_active-hover-bg} );
+                --kendo-button-active-hover-border: var( --kendo-button-#{$fill-mode}-#{$theme-color}-active-hover-border, #{$_active-hover-border} );
+
                 --kendo-button-selected-text: var( --kendo-button-#{$fill-mode}-#{$theme-color}-selected-text, #{$_active-text} );
                 --kendo-button-selected-bg: var( --kendo-button-#{$fill-mode}-#{$theme-color}-selected-bg, #{$_active-bg} );
                 --kendo-button-selected-border: var( --kendo-button-#{$fill-mode}-#{$theme-color}-selected-border, #{$_active-border} );
+
+                --kendo-button-selected-hover-text: var( --kendo-button-#{$fill-mode}-#{$theme-color}-selected-hover-text, #{$_active-hover-text} );
+                --kendo-button-selected-hover-bg: var( --kendo-button-#{$fill-mode}-#{$theme-color}-selected-hover-bg, #{$_active-hover-bg} );
+                --kendo-button-selected-hover-border: var( --kendo-button-#{$fill-mode}-#{$theme-color}-selected-hover-border, #{$_active-hover-border} );
 
                 --kendo-button-disabled-text: var( --kendo-button-#{$fill-mode}-#{$theme-color}-disabled-text, #{$_disabled-text} );
                 --kendo-button-disabled-bg: var( --kendo-button-#{$fill-mode}-#{$theme-color}-disabled-bg, #{$_disabled-bg} );
