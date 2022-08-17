@@ -132,6 +132,10 @@ $kendo-calendar-caption-color: $kendo-subtle-text !default;
 
 $kendo-calendar-view-width: calc($kendo-calendar-cell-size * 7) !default;
 $kendo-calendar-view-height: calc($kendo-calendar-cell-size * 7) !default;
+
+/// Bottom padding of calendar views.
+/// @group calendar
+$kendo-calendar-view-padding-block-end: map-get( $kendo-spacing, 3 ) !default;
 /// Spacing between the views in the multiview calendar.
 /// @group calendar
 $kendo-calendar-view-gap: map-get( $kendo-spacing, 4 ) !default;
