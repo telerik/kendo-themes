@@ -94,6 +94,10 @@
             &.k-selected.k-focus .k-link {
                 --INTERNAL--kendo-calendar-cell-link-shadow: var( --kendo-calendar-cell-selected-focus-shadow, #{$kendo-calendar-cell-selected-focus-shadow} );
             }
+
+            &.k-disabled {
+                --kendo-calendar-cell-text: var( --kendo-disabled-text, inherit );
+            }
         }
 
         // Special days
@@ -186,6 +190,10 @@
 
             &::before {
                 border-color: var( --kendo-calendar-range-border, #{$kendo-calendar-range-border} );
+            }
+
+            &.k-disabled {
+                --kendo-calendar-cell-text: var( --kendo-disabled-text, inherit );
             }
         }
     }
