@@ -1,0 +1,189 @@
+@use "../core/mixins" as *;
+@use "_variables.scss" as *;
+
+@mixin kendo-stepper--theme() {
+
+    // Base
+    .k-stepper {
+        @include fill(
+            var( --kendo-stepper-text, #{$kendo-stepper-text} ),
+            var( --kendo-stepper-bg, #{$kendo-stepper-bg} ),
+            var( --kendo-stepper-border, #{$kendo-stepper-border} )
+        );
+
+
+        // Not done steps
+        .k-step {
+            // Hover
+            &:hover,
+            &.k-hover {
+                .k-step-label {
+                    color: var( --kendo-stepper-label-hover-text, #{$kendo-stepper-label-hover-text} );
+                }
+
+                .k-step-indicator {
+                    @include fill(
+                        var( --kendo-stepper-indicator-hover-text, #{$kendo-stepper-indicator-hover-text} ),
+                        var( --kendo-stepper-indicator-hover-bg, #{$kendo-stepper-indicator-hover-bg} ),
+                        var( --kendo-stepper-indicator-hover-border, #{$kendo-stepper-indicator-hover-border} )
+                    );
+                }
+            }
+
+            &.k-step-focus,
+            &.k-focus,
+            .k-step-link:focus  {
+                // Labels only
+                .k-step-label:only-child {
+                    @include box-shadow( inset 0 0 0 var( --kendo-stepper-indicator-focus-size, #{$kendo-stepper-indicator-focus-size} ) var( --kendo-component-border, initial ) );
+                }
+            }
+
+            // Disabled
+            &:disabled,
+            &.k-disabled {
+                .k-step-indicator {
+                    @include fill(
+                        var( --kendo-stepper-indicator-disabled-text, #{$kendo-stepper-indicator-disabled-text} ),
+                        var( --kendo-stepper-indicator-disabled-bg, #{$kendo-stepper-indicator-disabled-bg} ),
+                        var( --kendo-stepper-indicator-disabled-border, #{$kendo-stepper-indicator-disabled-border} )
+                    );
+                }
+
+                .k-step-label {
+                    @include fill( $color: var( --kendo-stepper-label-disabled-text, #{$kendo-stepper-label-disabled-text} ) );
+                }
+            }
+        }
+        .k-step-indicator {
+            @include fill(
+                var( --kendo-stepper-indicator-text, #{$kendo-stepper-indicator-text} ),
+                var( --kendo-stepper-indicator-bg, #{$kendo-stepper-indicator-bg} ),
+                var( --kendo-stepper-indicator-border, #{$kendo-stepper-indicator-border} )
+            );
+        }
+        .k-step-indicator::after {
+            @include box-shadow( inset 0 0 0 var( --kendo-stepper-indicator-focus-size, #{$kendo-stepper-indicator-focus-size} ) var( --kendo-component-bg, initial ) );
+        }
+        .k-step-label:only-child {
+            @include fill(
+                var( --kendo-component-text, initial ),
+                var( --kendo-component-bg, transparent ),
+                var( --kendo-component-border, initial )
+            );
+        }
+
+
+        // Done steps
+        .k-step-done {
+
+            .k-step-indicator {
+                @include fill(
+                    var( --kendo-stepper-indicator-done-text, #{$kendo-stepper-indicator-done-text} ),
+                    var( --kendo-stepper-indicator-done-bg, #{$kendo-stepper-indicator-done-bg} ),
+                    var( --kendo-stepper-indicator-done-border, #{$kendo-stepper-indicator-done-border} )
+                );
+            }
+
+
+            // Hover
+            &:hover,
+            &.k-hover,
+            &.k-step-hover {
+                .k-step-indicator {
+                    @include fill(
+                        var( --kendo-stepper-indicator-done-hover-text, #{$kendo-stepper-indicator-done-hover-text} ),
+                        var( --kendo-stepper-indicator-done-hover-bg, #{$kendo-stepper-indicator-done-hover-bg} ),
+                        var( --kendo-stepper-indicator-done-hover-border, #{$kendo-stepper-indicator-done-hover-border} )
+                    );
+                }
+            }
+
+
+            // Disabled
+            &.k-step-disabled,
+            &.k-disabled,
+            &:disabled {
+                .k-step-indicator {
+                    @include fill(
+                        var( --kendo-stepper-indicator-done-disabled-text, #{$kendo-stepper-indicator-done-disabled-text} ),
+                        var( --kendo-stepper-indicator-done-disabled-bg, #{$kendo-stepper-indicator-done-disabled-bg} ),
+                        var( --kendo-stepper-indicator-done-disabled-border, #{$kendo-stepper-indicator-done-disabled-border} )
+                    );
+                }
+            }
+        }
+
+
+        // Current
+        .k-step-current {
+
+            .k-step-indicator {
+                @include fill(
+                    var( --kendo-stepper-indicator-current-text, #{$kendo-stepper-indicator-current-text} ),
+                    var( --kendo-stepper-indicator-current-bg, #{$kendo-stepper-indicator-current-bg} ),
+                    var( --kendo-stepper-indicator-current-border, #{$kendo-stepper-indicator-current-border} )
+                );
+            }
+
+
+            // Hover
+            &:hover,
+            &.k-hover,
+            &.k-step-hover {
+                .k-step-indicator {
+                    @include fill(
+                        var( --kendo-stepper-indicator-current-hover-text, #{$kendo-stepper-indicator-current-hover-text} ),
+                        var( --kendo-stepper-indicator-current-hover-bg, #{$kendo-stepper-indicator-current-hover-bg} ),
+                        var( --kendo-stepper-indicator-current-hover-border, #{$kendo-stepper-indicator-current-hover-border} )
+                    );
+                }
+            }
+
+
+            // Disabled
+            &.k-step-disabled,
+            &.k-disabled,
+            &:disabled {
+                .k-step-indicator {
+                    @include fill(
+                        var( --kendo-stepper-indicator-current-disabled-text, #{$kendo-stepper-indicator-current-disabled-text} ),
+                        var( --kendo-stepper-indicator-current-disabled-bg, #{$kendo-stepper-indicator-current-disabled-bg} ),
+                        var( --kendo-stepper-indicator-current-disabled-border, #{$kendo-stepper-indicator-current-disabled-border} )
+                    );
+                }
+            }
+        }
+
+        // Label
+        .k-step-label {
+            @include fill( $color: var( --kendo-stepper-label-text, #{$kendo-stepper-label-text} ) );
+        }
+        .k-step-success .k-step-label .k-icon {
+            @include fill( $color: var( --kendo-stepper-label-success-text, #{$kendo-stepper-label-success-text} ) );
+        }
+        .k-step-error .k-step-label {
+            @include fill( $color: var( --kendo-stepper-label-error-text, #{$kendo-stepper-label-error-text} ) );
+        }
+
+        .k-step-error {
+            .k-step-label {
+                @include fill( $color: var( --kendo-stepper-label-error-text, #{$kendo-stepper-label-error-text} ) );
+            }
+
+            &:hover,
+            &.k-hover,
+            &.k-step-hover {
+                .k-step-label {
+                    @include fill( $color: var( --kendo-stepper-label-error-text, #{$kendo-stepper-label-error-text} ) );
+                }
+            }
+        }
+
+        // Optional Label
+        .k-step-label-optional {
+            color: var( --kendo-stepper-optional-label-text, #{$kendo-stepper-optional-label-text} );
+        }
+    }
+
+}

@@ -1,0 +1,200 @@
+@use "../core/_variables" as *;
+@use "../core/color-system" as *;
+@use "../core/mixins" as *;
+
+/// Width of the border around the stepper.
+/// @group stepper
+$kendo-stepper-border-width: 0px !default;
+// Font size of the stepper.
+/// @group stepper
+$kendo-stepper-font-size: var( --kendo-font-size, inherit ) !default;
+// Font family of the stepper.
+/// @group stepper
+$kendo-stepper-font-family: var( --kendo-font-family, inherit ) !default;
+// Line height of the stepper.
+/// @group stepper
+$kendo-stepper-line-height: var( --kendo-line-height, normal ) !default;
+
+/// Background color of the stepper.
+/// @group stepper
+$kendo-stepper-bg: transparent !default;
+/// Text color of the stepper.
+/// @group stepper
+$kendo-stepper-text: var( --kendo-component-text, initial ) !default;
+/// Border color of the stepper.
+/// @group stepper
+$kendo-stepper-border: transparent !default;
+
+/// Horizontal margin the stepper label.
+/// @group stepper
+$kendo-stepper-label-margin-x: map-get( $kendo-spacing, 2 ) !default;
+/// Horizontal padding the stepper label.
+/// @group stepper
+$kendo-stepper-label-padding-x: map-get( $kendo-spacing, 3 ) !default;
+/// Vertical padding the stepper label.
+/// @group stepper
+$kendo-stepper-label-padding-y: calc( map-get( $kendo-spacing, 1 ) + map-get( $kendo-spacing, thin ) ) !default;
+
+/// Horizontal padding the stepper content.
+/// @group stepper
+$kendo-stepper-inline-content-padding-x: map-get( $kendo-spacing, 5 ) !default;
+/// Vertical padding the stepper content.
+/// @group stepper
+$kendo-stepper-inline-content-padding-y: map-get( $kendo-spacing, 3 ) !default;
+
+/// Width of the stepper indicator.
+/// @group stepper
+$kendo-stepper-indicator-width: calc( map-get( $kendo-spacing, 7 ) + map-get( $kendo-spacing, thin ) ) !default;
+/// Height of the stepper indicator.
+/// @group stepper
+$kendo-stepper-indicator-height: $kendo-stepper-indicator-width !default;
+/// Border width of the stepper indicator.
+/// @group stepper
+$kendo-stepper-indicator-border-width: map-get( $kendo-spacing, hair ) !default;
+/// Border radius of the stepper indicator.
+/// @group stepper
+$kendo-stepper-indicator-border-radius: 50% !default;
+
+/// The focus border width of the stepper indicator.
+/// @group stepper
+$kendo-stepper-indicator-focus-border-width: $kendo-stepper-indicator-border-width !default;
+/// The focus size of the stepper indicator.
+/// @group stepper
+$kendo-stepper-indicator-focus-size: map-get( $kendo-spacing, thin ) !default;
+/// The focus offset of the stepper indicator.
+/// @group stepper
+$kendo-stepper-indicator-focus-offset: calc( map-get( $kendo-spacing, thin ) + map-get( $kendo-spacing, hair ) ) !default;
+/// The focus calculated offset of the stepper indicator.
+/// @group stepper
+$kendo-stepper-indicator-focus-calc-offset: calc( #{$kendo-stepper-indicator-focus-border-width} + #{$kendo-stepper-indicator-focus-offset} ) !default;
+
+/// Background color of the stepper indicator.
+/// @group stepper
+$kendo-stepper-indicator-bg: var( --kendo-component-bg, initial ) !default;
+/// Text color of the stepper indicator.
+/// @group stepper
+$kendo-stepper-indicator-text: var( --kendo-component-text, initial ) !default;
+/// Border color of the stepper indicator.
+/// @group stepper
+$kendo-stepper-indicator-border: get-theme-color-var( neutral-110 ) !default;
+
+/// The hover background color of the stepper indicator.
+/// @group stepper
+$kendo-stepper-indicator-hover-bg: var( --kendo-hover-bg, initial ) !default;
+/// The hover text color of the stepper indicator.
+/// @group stepper
+$kendo-stepper-indicator-hover-text: var( --kendo-hover-text, initial ) !default;
+/// The hover border color of the stepper indicator.
+/// @group stepper
+$kendo-stepper-indicator-hover-border: $kendo-stepper-indicator-border !default;
+
+/// The disabled background color of the stepper indicator.
+/// @group stepper
+$kendo-stepper-indicator-disabled-bg: var( --kendo-disabled-bg, initial ) !default;
+/// The disabled text color of the stepper indicator.
+/// @group stepper
+$kendo-stepper-indicator-disabled-text: var( --kendo-disabled-text, initial) !default;
+/// The disabled border color of the stepper indicator.
+/// @group stepper
+$kendo-stepper-indicator-disabled-border: var( --kendo-disabled-border, initial ) !default;
+
+/// Background color of the stepper done indicator.
+/// @group stepper
+$kendo-stepper-indicator-done-bg: get-theme-color-var( primary-130 ) !default;
+/// Text color of the stepper done indicator.
+/// @group stepper
+$kendo-stepper-indicator-done-text: $white !default;
+/// Border color of the stepper done indicator.
+/// @group stepper
+$kendo-stepper-indicator-done-border: $kendo-stepper-indicator-done-bg !default;
+
+/// The hover background color of the stepper done indicator.
+/// @group stepper
+$kendo-stepper-indicator-done-hover-bg: get-theme-color-var( primary-150 ) !default;
+/// The hover text color of the stepper done indicator.
+/// @group stepper
+$kendo-stepper-indicator-done-hover-text: $kendo-stepper-indicator-done-text !default;
+/// The hover border color of the stepper done indicator.
+/// @group stepper
+$kendo-stepper-indicator-done-hover-border: $kendo-stepper-indicator-done-hover-bg !default;
+
+/// The disabled background color of the stepper done indicator.
+/// @group stepper
+$kendo-stepper-indicator-done-disabled-bg: get-theme-color-var( primary-30 ) !default;
+/// The disabled text color of the stepper done indicator.
+/// @group stepper
+$kendo-stepper-indicator-done-disabled-text: var( --kendo-disabled-text, initial ) !default;
+/// The disabled border color of the stepper done indicator.
+/// @group stepper
+$kendo-stepper-indicator-done-disabled-border: var( --kendo-disabled-border, initial ) !default;
+
+/// The background color of the stepper current indicator.
+/// @group stepper
+$kendo-stepper-indicator-current-bg: $kendo-stepper-indicator-done-bg !default;
+/// The text color of the stepper current indicator.
+/// @group stepper
+$kendo-stepper-indicator-current-text: $kendo-stepper-indicator-done-text !default;
+/// The border color of the stepper current indicator.
+/// @group stepper
+$kendo-stepper-indicator-current-border: $kendo-stepper-indicator-done-border !default;
+
+/// The Hover background color of the stepper current indicator.
+/// @group stepper
+$kendo-stepper-indicator-current-hover-bg: $kendo-stepper-indicator-done-hover-bg !default;
+/// The Hover text color of the stepper current indicator.
+/// @group stepper
+$kendo-stepper-indicator-current-hover-text: $kendo-stepper-indicator-done-hover-text !default;
+/// The Hover border color of the stepper current indicator.
+/// @group stepper
+$kendo-stepper-indicator-current-hover-border: $kendo-stepper-indicator-done-hover-border !default;
+
+/// The Disabled background color of the stepper current indicator.
+/// @group stepper
+$kendo-stepper-indicator-current-disabled-bg: $kendo-stepper-indicator-done-disabled-bg !default;
+/// The Disabled text color of the stepper current indicator.
+/// @group stepper
+$kendo-stepper-indicator-current-disabled-text: $kendo-stepper-indicator-done-disabled-text !default;
+/// The Disabled border color of the stepper current indicator.
+/// @group stepper
+$kendo-stepper-indicator-current-disabled-border: $kendo-stepper-indicator-done-disabled-border !default;
+
+/// The text color of the stepper label.
+/// @group stepper
+$kendo-stepper-label-text: inherit !default;
+/// The success text color of the stepper label.
+/// @group stepper
+$kendo-stepper-label-success-text: get-theme-color-var( success-190 ) !default;
+/// The error text color of the stepper label.
+/// @group stepper
+$kendo-stepper-label-error-text: get-theme-color-var( error-190 ) !default;
+/// The hover text color of the stepper label.
+/// @group stepper
+$kendo-stepper-label-hover-text: $kendo-stepper-text !default;
+/// The disabled text color of the stepper label.
+/// @group stepper
+$kendo-stepper-label-disabled-text: var( --kendo-component-text, initial ) !default;
+
+/// The text color of the stepper optional label.
+/// @group stepper
+$kendo-stepper-optional-label-text: get-theme-color-var( neutral-130 ) !default;
+/// The font size of the stepper optional label.
+/// @group stepper
+$kendo-stepper-optional-label-font-size: inherit !default;
+/// The font style of the stepper optional label.
+/// @group stepper
+$kendo-stepper-optional-label-font-style: italic !default;
+
+/// The size of the stepper progress bar.
+/// @group stepper
+$kendo-stepper-progressbar-size: map-get( $kendo-spacing, thin ) !default;
+
+/// The property name of the stepper transition.
+/// @group stepper
+$kendo-stepper-content-transition-property: none !default;
+/// The duration of the stepper transition.
+/// @group stepper
+$kendo-stepper-content-transition-duration: 300ms !default;
+/// The timing funtion of the stepper transition.
+/// @group stepper
+$kendo-stepper-content-transition-timing-function: cubic-bezier(.4, 0, .2, 1) 0ms !default;
+
