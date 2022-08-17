@@ -110,7 +110,7 @@
 @use "pager";
 // @use "stepper";
 // @use "tabstrip";
-// @use "treeview";
+@use "treeview";
 // @use "wizard";
 
 
@@ -272,7 +272,7 @@
     @include pager.styles();
     // @include stepper.styles();
     // @include tabstrip.styles();
-    // @include treeview.styles();
+    @include treeview.styles();
     // @include wizard.styles();
 
 
