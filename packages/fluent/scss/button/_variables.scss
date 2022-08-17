@@ -125,6 +125,15 @@ $kendo-button-solid-base-focus-border: $kendo-button-solid-base-border !default;
 /// The focus outline color of the solid base button.
 /// @group button
 $kendo-button-solid-base-focus-outline: get-theme-color-var( neutral-130 ) !default;
+/// The focus and hover text color of the solid base button.
+/// @group button
+$kendo-button-solid-base-focus-hover-text: $kendo-button-solid-base-hover-text !default;
+/// The focus and hover background color of the solid base button.
+/// @group button
+$kendo-button-solid-base-focus-hover-bg: $kendo-button-solid-base-hover-bg !default;
+/// The focus and hover border color of the solid base button.
+/// @group button
+$kendo-button-solid-base-focus-hover-border: $kendo-button-solid-base-focus-border !default;
 /// The active text color of the solid base button.
 /// @group button
 $kendo-button-solid-base-active-text: $kendo-button-solid-base-hover-text !default;
@@ -134,6 +143,15 @@ $kendo-button-solid-base-active-bg: get-theme-color-var( neutral-30 ) !default;
 /// The active border color of the solid base button.
 /// @group button
 $kendo-button-solid-base-active-border: $kendo-button-solid-base-border !default;
+/// The active and hover text color of the solid base button.
+/// @group button
+$kendo-button-solid-base-active-hover-text: $kendo-button-solid-base-hover-text !default;
+/// The active and hover background color of the solid base button.
+/// @group button
+$kendo-button-solid-base-active-hover-bg: $kendo-button-solid-base-hover-bg !default;
+/// The active and hover border color of the solid base button.
+/// @group button
+$kendo-button-solid-base-active-hover-border: $kendo-button-solid-base-active-border !default;
 /// The disabled text color of the solid base button.
 /// @group button
 $kendo-button-solid-base-disabled-text: var( --kendo-disabled-text, inherit ) !default;
@@ -175,7 +193,16 @@ $kendo-button-solid-primary-focus-border: $kendo-button-solid-primary-border !de
 /// The focus outline color of the solid primary button.
 /// @group button
 $kendo-button-solid-primary-focus-outline: inherit !default;
-/// The active text color of the solid primary button.
+/// The focus and hover text color of the solid primary button.
+/// @group button
+$kendo-button-solid-primary-focus-hover-text: $kendo-button-solid-primary-hover-text !default;
+/// The focus and hover background color of the solid primary button.
+/// @group button
+$kendo-button-solid-primary-focus-hover-bg: $kendo-button-solid-primary-hover-bg !default;
+/// The focus and hover border color of the solid primary button.
+/// @group button
+$kendo-button-solid-primary-focus-hover-border: $kendo-button-solid-primary-focus-border !default;
+/// The active text primary of the solid primary button.
 /// @group button
 $kendo-button-solid-primary-active-text: $kendo-button-solid-primary-text !default;
 /// The active background color of the solid primary button.
@@ -184,6 +211,15 @@ $kendo-button-solid-primary-active-bg: get-theme-color-var( primary-160 ) !defau
 /// The active border color of the solid primary button.
 /// @group button
 $kendo-button-solid-primary-active-border: $kendo-button-solid-primary-active-bg !default;
+/// The active and hover text color of the solid primary button.
+/// @group button
+$kendo-button-solid-primary-active-hover-text: $kendo-button-solid-primary-hover-text !default;
+/// The active and hover background color of the solid primary button.
+/// @group button
+$kendo-button-solid-primary-active-hover-bg: $kendo-button-solid-primary-hover-bg !default;
+/// The active and hover border color of the solid primary button.
+/// @group button
+$kendo-button-solid-primary-active-hover-border: $kendo-button-solid-primary-active-border !default;
 /// The disabled text color of the solid primary button.
 /// @group button
 $kendo-button-solid-primary-disabled-text: var( --kendo-disabled-text, inherit ) !default;
@@ -225,6 +261,15 @@ $kendo-button-flat-primary-focus-border: $kendo-button-flat-primary-border !defa
 /// The focus outline color of the flat primary button.
 /// @group button
 $kendo-button-flat-primary-focus-outline: get-theme-color-var( primary-30 ) !default;
+/// The focus and hover text color of the flat primary button.
+/// @group button
+$kendo-button-flat-primary-focus-hover-text: $kendo-button-flat-primary-hover-text !default;
+/// The focus and hover background color of the flat primary button.
+/// @group button
+$kendo-button-flat-primary-focus-hover-bg: $kendo-button-flat-primary-hover-bg !default;
+/// The focus and hover border color of the flat primary button.
+/// @group button
+$kendo-button-flat-primary-focus-hover-border: $kendo-button-flat-primary-focus-border !default;
 /// The active text color of the flat primary button.
 /// @group button
 $kendo-button-flat-primary-active-text: $kendo-button-flat-primary-text !default;
@@ -234,6 +279,15 @@ $kendo-button-flat-primary-active-bg: get-theme-color-var( primary-20 ) !default
 /// The active border color of the flat primary button.
 /// @group button
 $kendo-button-flat-primary-active-border: $kendo-button-flat-primary-border !default;
+/// The active and hover text color of the flat primary button.
+/// @group button
+$kendo-button-flat-primary-active-hover-text: $kendo-button-flat-primary-hover-text !default;
+/// The active and hover background color of the solid primary button.
+/// @group button
+$kendo-button-flat-primary-active-hover-bg: $kendo-button-flat-primary-hover-bg !default;
+/// The active and hover border color of the solid primary button.
+/// @group button
+$kendo-button-flat-primary-active-hover-border: $kendo-button-flat-primary-active-border !default;
 /// The disabled text color of the flat primary button.
 /// @group button
 $kendo-button-flat-primary-disabled-text: var( --kendo-disabled-text, inherit ) !default;
@@ -275,6 +329,15 @@ $kendo-button-outline-base-focus-border: $kendo-button-outline-base-border !defa
 /// The focus outline color of the outline base button.
 /// @group button
 $kendo-button-outline-base-focus-outline: inherit !default;
+/// The focus and hover text color of the outline base button.
+/// @group button
+$kendo-button-outline-base-focus-hover-text: $kendo-button-outline-base-hover-text !default;
+/// The focus and hover background color of the outline base button.
+/// @group button
+$kendo-button-outline-base-focus-hover-bg: $kendo-button-outline-base-hover-bg !default;
+/// The focus and hover border color of the outline base button.
+/// @group button
+$kendo-button-outline-base-focus-hover-border: $kendo-button-outline-base-hover-border !default;
 /// The active text color of the outline base button.
 /// @group button
 $kendo-button-outline-base-active-text: $kendo-button-outline-base-hover-text !default;
@@ -284,6 +347,15 @@ $kendo-button-outline-base-active-bg: $kendo-button-outline-base-hover-bg !defau
 /// The active border color of the outline base button.
 /// @group button
 $kendo-button-outline-base-active-border: $kendo-button-outline-base-active-bg !default;
+/// The active and hover text color of the outline base button.
+/// @group button
+$kendo-button-outline-base-active-hover-text: $kendo-button-outline-base-hover-text !default;
+/// The active and hover background color of the outline base button.
+/// @group button
+$kendo-button-outline-base-active-hover-bg: $kendo-button-outline-base-hover-bg !default;
+/// The active and hover border color of the outline base button.
+/// @group button
+$kendo-button-outline-base-active-hover-border: $kendo-button-outline-base-hover-border !default;
 /// The disabled text color of the outline base button.
 /// @group button
 $kendo-button-outline-base-disabled-text: var( --kendo-disabled-text, inherit ) !default;
@@ -325,6 +397,15 @@ $kendo-button-outline-primary-focus-border: $kendo-button-outline-primary-border
 /// The focus outline color of the outline primary button.
 /// @group button
 $kendo-button-outline-primary-focus-outline: inherit !default;
+/// The focus and hover text color of the outline primary button.
+/// @group button
+$kendo-button-outline-primary-focus-hover-text: $kendo-button-outline-primary-hover-text !default;
+/// The focus and hover background color of the outline primary button.
+/// @group button
+$kendo-button-outline-primary-focus-hover-bg: $kendo-button-outline-primary-hover-bg !default;
+/// The focus and hover border color of the outline primary button.
+/// @group button
+$kendo-button-outline-primary-focus-hover-border: $kendo-button-outline-primary-hover-border !default;
 /// The active text color of the outline primary button.
 /// @group button
 $kendo-button-outline-primary-active-text: $kendo-button-outline-primary-hover-text !default;
@@ -334,6 +415,15 @@ $kendo-button-outline-primary-active-bg: $kendo-button-outline-primary-hover-bg 
 /// The active border color of the outline primary button.
 /// @group button
 $kendo-button-outline-primary-active-border: $kendo-button-outline-primary-active-bg !default;
+/// The active and hover text color of the outline primary button.
+/// @group button
+$kendo-button-outline-primary-active-hover-text: $kendo-button-outline-primary-hover-text !default;
+/// The active and hover background color of the outline primary button.
+/// @group button
+$kendo-button-outline-primary-active-hover-bg: $kendo-button-outline-primary-hover-bg !default;
+/// The active and hover border color of the outline primary button.
+/// @group button
+$kendo-button-outline-primary-active-hover-border: $kendo-button-outline-primary-hover-border !default;
 /// The disabled text color of the outline primary button.
 /// @group button
 $kendo-button-outline-primary-disabled-text: var( --kendo-disabled-text, inherit ) !default;
@@ -375,6 +465,15 @@ $kendo-button-link-base-focus-border: $kendo-button-link-base-border !default;
 /// The focus outline color of the link base button.
 /// @group button
 $kendo-button-link-base-focus-outline: get-theme-color-var( neutral-130 ) !default;
+/// The focus and hover text color of the link base button.
+/// @group button
+$kendo-button-link-base-focus-hover-text: $kendo-button-link-base-hover-text !default;
+/// The focus and hover background color of the link base button.
+/// @group button
+$kendo-button-link-base-focus-hover-bg: $kendo-button-link-base-hover-bg !default;
+/// The focus and hover border color of the link base button.
+/// @group button
+$kendo-button-link-base-focus-hover-border: $kendo-button-link-base-focus-border !default;
 /// The active text color of the link base button.
 /// @group button
 $kendo-button-link-base-active-text: $kendo-button-link-base-hover-text !default;
@@ -384,6 +483,15 @@ $kendo-button-link-base-active-bg: $kendo-button-link-base-hover-bg !default;
 /// The active border color of the link base button.
 /// @group button
 $kendo-button-link-base-active-border: $kendo-button-link-base-border !default;
+/// The active and hover text color of the link base button.
+/// @group button
+$kendo-button-link-base-active-hover-text: $kendo-button-link-base-hover-text !default;
+/// The active and hover background color of the link base button.
+/// @group button
+$kendo-button-link-base-active-hover-bg: $kendo-button-link-base-hover-bg !default;
+/// The active and hover border color of the link base button.
+/// @group button
+$kendo-button-link-base-active-hover-border: $kendo-button-link-base-active-border !default;
 /// The disabled text color of the link base button.
 /// @group button
 $kendo-button-link-base-disabled-text: var( --kendo-disabled-text, inherit ) !default;
@@ -425,6 +533,15 @@ $kendo-button-link-primary-focus-border: $kendo-button-link-primary-border !defa
 /// The focus link color of the link primary button.
 /// @group button
 $kendo-button-link-primary-focus-outline: get-theme-color-var( neutral-130 ) !default;
+/// The focus and hover text color of the link primary button.
+/// @group button
+$kendo-button-link-primary-focus-hover-text: $kendo-button-link-primary-hover-text !default;
+/// The focus and hover background color of the link primary button.
+/// @group button
+$kendo-button-link-primary-focus-hover-bg: $kendo-button-link-primary-hover-bg !default;
+/// The focus and hover border color of the link primary button.
+/// @group button
+$kendo-button-link-primary-focus-hover-border: $kendo-button-link-primary-focus-border !default;
 /// The active text color of the link primary button.
 /// @group button
 $kendo-button-link-primary-active-text: $kendo-button-link-primary-hover-text !default;
@@ -434,6 +551,15 @@ $kendo-button-link-primary-active-bg: $kendo-button-link-primary-hover-bg !defau
 /// The active border color of the link primary button.
 /// @group button
 $kendo-button-link-primary-active-border: $kendo-button-link-primary-border !default;
+/// The active and hover text color of the link primary button.
+/// @group button
+$kendo-button-link-primary-active-hover-text: $kendo-button-link-primary-hover-text !default;
+/// The active and hover background color of the link primary button.
+/// @group button
+$kendo-button-link-primary-active-hover-bg: $kendo-button-link-primary-hover-bg !default;
+/// The active and hover border color of the link primary button.
+/// @group button
+$kendo-button-link-primary-active-hover-border: $kendo-button-link-primary-active-border !default;
 /// The disabled text color of the link primary button.
 /// @group button
 $kendo-button-link-primary-disabled-text: var( --kendo-disabled-text, inherit ) !default;
@@ -475,6 +601,15 @@ $kendo-button-clear-base-focus-border: $kendo-button-clear-base-border !default;
 /// The focus outline color of the clear base button.
 /// @group button
 $kendo-button-clear-base-focus-outline: get-theme-color-var( neutral-130 ) !default;
+/// The focus and hover text color of the clear base button.
+/// @group button
+$kendo-button-clear-base-focus-hover-text: $kendo-button-clear-base-hover-text !default;
+/// The focus and hover background color of the clear base button.
+/// @group button
+$kendo-button-clear-base-focus-hover-bg: $kendo-button-clear-base-hover-bg !default;
+/// The focus and hover border color of the clear base button.
+/// @group button
+$kendo-button-clear-base-focus-hover-border: $kendo-button-clear-base-focus-border !default;
 /// The active text color of the clear base button.
 /// @group button
 $kendo-button-clear-base-active-text: $kendo-button-clear-base-hover-text !default;
@@ -484,6 +619,15 @@ $kendo-button-clear-base-active-bg: $kendo-button-clear-base-hover-bg !default;
 /// The active border color of the clear base button.
 /// @group button
 $kendo-button-clear-base-active-border: $kendo-button-clear-base-border !default;
+/// The active and hover text color of the clear base button.
+/// @group button
+$kendo-button-clear-base-active-hover-text: $kendo-button-clear-base-hover-text !default;
+/// The active and hover background color of the clear base button.
+/// @group button
+$kendo-button-clear-base-active-hover-bg: $kendo-button-clear-base-hover-bg !default;
+/// The active and hover border color of the clear base button.
+/// @group button
+$kendo-button-clear-base-active-hover-border: $kendo-button-clear-base-active-border !default;
 /// The disabled text color of the clear base button.
 /// @group button
 $kendo-button-clear-base-disabled-text: var( --kendo-disabled-text, inherit ) !default;
@@ -525,6 +669,15 @@ $kendo-button-clear-primary-focus-border: $kendo-button-clear-primary-border !de
 /// The focus outline color of the clear primary button.
 /// @group button
 $kendo-button-clear-primary-focus-outline: get-theme-color-var( neutral-130 ) !default;
+/// The focus and hover text color of the clear primary button.
+/// @group button
+$kendo-button-clear-primary-focus-hover-text: $kendo-button-clear-primary-hover-text !default;
+/// The focus and hover background color of the clear primary button.
+/// @group button
+$kendo-button-clear-primary-focus-hover-bg: $kendo-button-clear-primary-hover-bg !default;
+/// The focus and hover border color of the clear primary button.
+/// @group button
+$kendo-button-clear-primary-focus-hover-border: $kendo-button-clear-primary-focus-border !default;
 /// The active text color of the clear primary button.
 /// @group button
 $kendo-button-clear-primary-active-text: $kendo-button-clear-primary-hover-text !default;
@@ -534,6 +687,15 @@ $kendo-button-clear-primary-active-bg: $kendo-button-clear-primary-hover-bg !def
 /// The active border color of the clear primary button.
 /// @group button
 $kendo-button-clear-primary-active-border: $kendo-button-clear-primary-border !default;
+/// The active and hover text color of the clear primary button.
+/// @group button
+$kendo-button-clear-primary-active-hover-text: $kendo-button-clear-primary-hover-text !default;
+/// The active and hover background color of the clear primary button.
+/// @group button
+$kendo-button-clear-primary-active-hover-bg: $kendo-button-clear-primary-hover-bg !default;
+/// The active and hover border color of the clear primary button.
+/// @group button
+$kendo-button-clear-primary-active-hover-border: $kendo-button-clear-primary-active-border !default;
 /// The disabled text color of the clear primary button.
 /// @group button
 $kendo-button-clear-primary-disabled-text: var( --kendo-disabled-text, inherit ) !default;
@@ -560,9 +722,15 @@ $kendo-button-theme-colors: (
             focus-bg: $kendo-button-solid-base-focus-bg,
             focus-border: $kendo-button-solid-base-focus-border,
             focus-outline: $kendo-button-solid-base-focus-outline,
+            focus-hover-text: $kendo-button-solid-base-focus-hover-text,
+            focus-hover-bg: $kendo-button-solid-base-focus-hover-bg,
+            focus-hover-border: $kendo-button-solid-base-focus-hover-border,
             active-text: $kendo-button-solid-base-active-text,
             active-bg: $kendo-button-solid-base-active-bg,
             active-border: $kendo-button-solid-base-active-border,
+            active-hover-text: $kendo-button-solid-base-active-hover-text,
+            active-hover-bg: $kendo-button-solid-base-active-hover-bg,
+            active-hover-border: $kendo-button-solid-base-active-hover-border,
             disabled-text: $kendo-button-solid-base-disabled-text,
             disabled-bg: $kendo-button-solid-base-disabled-bg,
             disabled-border: $kendo-button-solid-base-disabled-border
@@ -578,9 +746,15 @@ $kendo-button-theme-colors: (
             focus-bg: $kendo-button-solid-primary-focus-bg,
             focus-border: $kendo-button-solid-primary-focus-border,
             focus-outline: $kendo-button-solid-primary-focus-outline,
+            focus-hover-text: $kendo-button-solid-primary-focus-hover-text,
+            focus-hover-bg: $kendo-button-solid-primary-focus-hover-bg,
+            focus-hover-border: $kendo-button-solid-primary-focus-hover-border,
             active-text: $kendo-button-solid-primary-active-text,
             active-bg: $kendo-button-solid-primary-active-bg,
             active-border: $kendo-button-solid-primary-active-border,
+            active-hover-text: $kendo-button-solid-primary-active-hover-text,
+            active-hover-bg: $kendo-button-solid-primary-active-hover-bg,
+            active-hover-border: $kendo-button-solid-primary-active-hover-border,
             disabled-text: $kendo-button-solid-primary-disabled-text,
             disabled-bg: $kendo-button-solid-primary-disabled-bg,
             disabled-border: $kendo-button-solid-primary-disabled-border
@@ -598,9 +772,15 @@ $kendo-button-theme-colors: (
             focus-bg: $kendo-button-flat-primary-focus-bg,
             focus-border: $kendo-button-flat-primary-focus-border,
             focus-outline: $kendo-button-flat-primary-focus-outline,
+            focus-hover-text: $kendo-button-flat-primary-focus-hover-text,
+            focus-hover-bg: $kendo-button-flat-primary-focus-hover-bg,
+            focus-hover-border: $kendo-button-flat-primary-focus-hover-border,
             active-text: $kendo-button-flat-primary-active-text,
             active-bg: $kendo-button-flat-primary-active-bg,
             active-border: $kendo-button-flat-primary-active-border,
+            active-hover-text: $kendo-button-flat-primary-active-hover-text,
+            active-hover-bg: $kendo-button-flat-primary-active-hover-bg,
+            active-hover-border: $kendo-button-flat-primary-active-hover-border,
             disabled-text: $kendo-button-flat-primary-disabled-text,
             disabled-bg: $kendo-button-flat-primary-disabled-bg,
             disabled-border: $kendo-button-flat-primary-disabled-border
@@ -618,9 +798,15 @@ $kendo-button-theme-colors: (
             focus-bg: $kendo-button-outline-base-focus-bg,
             focus-border: $kendo-button-outline-base-focus-border,
             focus-outline: $kendo-button-outline-base-focus-outline,
+            focus-hover-text: $kendo-button-outline-base-focus-hover-text,
+            focus-hover-bg: $kendo-button-outline-base-focus-hover-bg,
+            focus-hover-border: $kendo-button-outline-base-focus-hover-border,
             active-text: $kendo-button-outline-base-active-text,
             active-bg: $kendo-button-outline-base-active-bg,
             active-border: $kendo-button-outline-base-active-border,
+            active-hover-text: $kendo-button-outline-base-active-hover-text,
+            active-hover-bg: $kendo-button-outline-base-active-hover-bg,
+            active-hover-border: $kendo-button-outline-base-active-hover-border,
             disabled-text: $kendo-button-outline-base-disabled-text,
             disabled-bg: $kendo-button-outline-base-disabled-bg,
             disabled-border: $kendo-button-outline-base-disabled-border
@@ -636,9 +822,15 @@ $kendo-button-theme-colors: (
             focus-bg: $kendo-button-outline-primary-focus-bg,
             focus-border: $kendo-button-outline-primary-focus-border,
             focus-outline: $kendo-button-outline-primary-focus-outline,
+            focus-hover-text: $kendo-button-outline-primary-focus-hover-text,
+            focus-hover-bg: $kendo-button-outline-primary-focus-hover-bg,
+            focus-hover-border: $kendo-button-outline-primary-focus-hover-border,
             active-text: $kendo-button-outline-primary-active-text,
             active-bg: $kendo-button-outline-primary-active-bg,
             active-border: $kendo-button-outline-primary-active-border,
+            active-hover-text: $kendo-button-outline-primary-active-hover-text,
+            active-hover-bg: $kendo-button-outline-primary-active-hover-bg,
+            active-hover-border: $kendo-button-outline-primary-active-hover-border,
             disabled-text: $kendo-button-outline-primary-disabled-text,
             disabled-bg: $kendo-button-outline-primary-disabled-bg,
             disabled-border: $kendo-button-outline-primary-disabled-border
@@ -656,9 +848,15 @@ $kendo-button-theme-colors: (
             focus-bg: $kendo-button-link-base-focus-bg,
             focus-border: $kendo-button-link-base-focus-border,
             focus-outline: $kendo-button-link-base-focus-outline,
+            focus-hover-text: $kendo-button-link-base-focus-hover-text,
+            focus-hover-bg: $kendo-button-link-base-focus-hover-bg,
+            focus-hover-border: $kendo-button-link-base-focus-hover-border,
             active-text: $kendo-button-link-base-active-text,
             active-bg: $kendo-button-link-base-active-bg,
             active-border: $kendo-button-link-base-active-border,
+            active-hover-text: $kendo-button-link-base-active-hover-text,
+            active-hover-bg: $kendo-button-link-base-active-hover-bg,
+            active-hover-border: $kendo-button-link-base-active-hover-border,
             disabled-text: $kendo-button-link-base-disabled-text,
             disabled-bg: $kendo-button-link-base-disabled-bg,
             disabled-border: $kendo-button-link-base-disabled-border
@@ -674,9 +872,15 @@ $kendo-button-theme-colors: (
             focus-bg: $kendo-button-link-primary-focus-bg,
             focus-border: $kendo-button-link-primary-focus-border,
             focus-outline: $kendo-button-link-primary-focus-outline,
+            focus-hover-text: $kendo-button-link-primary-focus-hover-text,
+            focus-hover-bg: $kendo-button-link-primary-focus-hover-bg,
+            focus-hover-border: $kendo-button-link-primary-focus-hover-border,
             active-text: $kendo-button-link-primary-active-text,
             active-bg: $kendo-button-link-primary-active-bg,
             active-border: $kendo-button-link-primary-active-border,
+            active-hover-text: $kendo-button-link-primary-active-hover-text,
+            active-hover-bg: $kendo-button-link-primary-active-hover-bg,
+            active-hover-border: $kendo-button-link-primary-active-hover-border,
             disabled-text: $kendo-button-link-primary-disabled-text,
             disabled-bg: $kendo-button-link-primary-disabled-bg,
             disabled-border: $kendo-button-link-primary-disabled-border
@@ -694,9 +898,15 @@ $kendo-button-theme-colors: (
             focus-bg: $kendo-button-clear-base-focus-bg,
             focus-border: $kendo-button-clear-base-focus-border,
             focus-outline: $kendo-button-clear-base-focus-outline,
+            focus-hover-text: $kendo-button-clear-base-focus-hover-text,
+            focus-hover-bg: $kendo-button-clear-base-focus-hover-bg,
+            focus-hover-border: $kendo-button-clear-base-focus-hover-border,
             active-text: $kendo-button-clear-base-active-text,
             active-bg: $kendo-button-clear-base-active-bg,
             active-border: $kendo-button-clear-base-active-border,
+            active-hover-text: $kendo-button-clear-base-active-hover-text,
+            active-hover-bg: $kendo-button-clear-base-active-hover-bg,
+            active-hover-border: $kendo-button-clear-base-active-hover-border,
             disabled-text: $kendo-button-clear-base-disabled-text,
             disabled-bg: $kendo-button-clear-base-disabled-bg,
             disabled-border: $kendo-button-clear-base-disabled-border
@@ -712,9 +922,15 @@ $kendo-button-theme-colors: (
             focus-bg: $kendo-button-clear-primary-focus-bg,
             focus-border: $kendo-button-clear-primary-focus-border,
             focus-outline: $kendo-button-clear-primary-focus-outline,
+            focus-hover-text: $kendo-button-clear-primary-focus-hover-text,
+            focus-hover-bg: $kendo-button-clear-primary-focus-hover-bg,
+            focus-hover-border: $kendo-button-clear-primary-focus-hover-border,
             active-text: $kendo-button-clear-primary-active-text,
             active-bg: $kendo-button-clear-primary-active-bg,
             active-border: $kendo-button-clear-primary-active-border,
+            active-hover-text: $kendo-button-clear-primary-active-hover-text,
+            active-hover-bg: $kendo-button-clear-primary-active-hover-bg,
+            active-hover-border: $kendo-button-clear-primary-active-hover-border,
             disabled-text: $kendo-button-clear-primary-disabled-text,
             disabled-bg: $kendo-button-clear-primary-disabled-bg,
             disabled-border: $kendo-button-clear-primary-disabled-border
