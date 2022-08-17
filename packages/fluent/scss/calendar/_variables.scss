@@ -41,7 +41,7 @@ $kendo-calendar-header-min-width: calc($kendo-calendar-cell-size * 8) !default;
 
 /// Background color of the calendar header.
 /// @group calendar
-$kendo-calendar-header-bg: $kendo-calendar-bg !default; // $header-bg
+$kendo-calendar-header-bg: get-theme-color-var( neutral-10 ) !default; // $header-bg
 /// Text color of the calendar header.
 /// @group calendar
 $kendo-calendar-header-text: $kendo-calendar-text !default; // $header-text
