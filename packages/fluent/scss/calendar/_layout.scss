@@ -160,6 +160,7 @@
     .k-calendar-view {
         margin: auto;
         padding-inline: var( --kendo-calendar-header-padding-x, #{$kendo-calendar-header-padding-x} );
+        padding-block-end: var( --kendo-calendar-view-padding-block-end, #{$kendo-calendar-view-padding-block-end} );
         // setting width / height prevents layout changes in meta views
         width: $kendo-calendar-view-width;
         min-height: $kendo-calendar-view-height;
