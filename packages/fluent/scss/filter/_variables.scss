@@ -1,0 +1,35 @@
+@use "../core/color-system" as *;
+@use "../core/_variables.scss" as *;
+
+/// Horizontal padding of the filter.
+/// @group filter
+$kendo-filter-padding-x: $kendo-padding-x !default;
+/// Vertical padding of the filter.
+/// @group filter
+$kendo-filter-padding-y: $kendo-padding-y !default;
+
+/// Bottom margin of the filter.
+/// @group filter
+$kendo-filter-bottom-margin: 30px !default;
+/// Width of the line that connects the filter items.
+/// @group filter
+$kendo-filter-line-size: 1px !default;
+
+/// Width of the dropdown elements in the filter items.
+/// @group filter
+$kendo-filter-operator-dropdown-width: 15em !default;
+
+/// Text color of the preview field.
+/// @group filter
+$kendo-filter-preview-field-text: get-theme-color-var( primary-130 ) !default;
+/// Text color of the preview operator.
+/// @group filter
+$kendo-filter-preview-operator-text: get-theme-color-var( neutral-130 ) !default;
+
+/// Text color of the filter.
+/// @group filter
+$kendo-filter-text: var( --kendo-component-text, initial ) !default;
+
+/// Background color of the line that connects the filter items.
+/// @group filter
+$kendo-filter-line-bg: var( --kendo-component-border, initial ) !default;
