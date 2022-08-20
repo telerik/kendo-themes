@@ -1,0 +1,104 @@
+@use "_variables.scss" as *;
+@use "../core/mixins/" as *;
+
+@mixin kendo-chip--theme() {
+
+    .k-chip {
+        --INTERNAL-kendo-chip-text: var( --kendo-chip-text );
+        --INTERNAL-kendo-chip-bg: var( --kendo-chip-bg );
+        --INTERNAL-kendo-chip-border: var( --kendo-chip-border );
+
+        border-color: var( --INTERNAL-kendo-chip-border, initial );
+        color: var( --INTERNAL-kendo-chip-text, initial );
+        background-color: var( --INTERNAL-kendo-chip-bg, initial );
+
+        &:hover,
+        &.k-hover {
+            --INTERNAL-kendo-chip-text: var( --kendo-chip-hover-text );
+            --INTERNAL-kendo-chip-bg: var( --kendo-chip-hover-bg );
+            --INTERNAL-kendo-chip-border: var( --kendo-chip-hover-border );
+        }
+
+        &:focus,
+        &.k-focus {
+            --INTERNAL-kendo-chip-text: var(--kendo-chip-focus-text );
+            --INTERNAL-kendo-chip-bg: var(--kendo-chip-focus-bg );
+            --INTERNAL-kendo-chip-border: var(--kendo-chip-focus-border );
+        }
+
+        &.k-chip-outline:focus::after,
+        &.k-chip-outline.k-focus::after {
+            outline-color: var( --kendo-chip-focus-outline, initial);
+        }
+
+        &.k-selected {
+            --INTERNAL-kendo-chip-text: var( --kendo-chip-selected-text );
+            --INTERNAL-kendo-chip-bg: var( --kendo-chip-selected-bg );
+            --INTERNAL-kendo-chip-border: var( --kendo-chip-selected-border );
+        }
+
+        &:disabled,
+        &.k-disabled {
+            --INTERNAL-kendo-chip-text: var( --kendo-chip-disabled-text );
+            --INTERNAL-kendo-chip-bg: var( --kendo-chip-disabled-bg );
+            --INTERNAL-kendo-chip-border: var( --kendo-chip-disabled-border );
+        }
+
+    }
+
+    @each $fill-mode, $theme-colors in $kendo-chip-theme-colors {
+        @each $theme-color, $color-props in $theme-colors {
+            $_text-color: map-get( $color-props, text );
+            $_bg: map-get( $color-props, bg );
+            $_border-color: map-get( $color-props, border );
+
+            $_hover-text: map-get( $color-props, hover-text );
+            $_hover-bg: map-get( $color-props, hover-bg );
+            $_hover-border: map-get( $color-props, hover-border );
+
+            $_focus-text: map-get( $color-props, focus-text );
+            $_focus-bg: map-get( $color-props, focus-bg );
+            $_focus-border: map-get( $color-props, focus-border );
+            $_focus-outline: map-get( $color-props, focus-outline );
+
+            $_selected-text: map-get( $color-props, selected-text );
+            $_selected-bg: map-get( $color-props, selected-bg );
+            $_selected-border: map-get( $color-props, selected-border );
+
+            $_disabled-text: map-get( $color-props, disabled-text );
+            $_disabled-bg: map-get( $color-props, disabled-bg );
+            $_disabled-border: map-get( $color-props, disabled-border );
+
+            .k-chip-#{$fill-mode}-#{$theme-color} {
+                --kendo-chip-text: var( --kendo-chip-#{$fill-mode}-#{$theme-color}-text, #{$_text-color} );
+                --kendo-chip-bg: var( --kendo-chip-#{$fill-mode}-#{$theme-color}-bg, #{$_bg} );
+                --kendo-chip-border: var( --kendo-chip-#{$fill-mode}-#{$theme-color}-border, #{$_border-color} );
+
+                --kendo-chip-hover-text: var( --kendo-chip-#{$fill-mode}-#{$theme-color}-hover-text, #{$_hover-text} );
+                --kendo-chip-hover-bg: var( --kendo-chip-#{$fill-mode}-#{$theme-color}-hover-bg, #{$_hover-bg} );
+                --kendo-chip-hover-border: var( --kendo-chip-#{$fill-mode}-#{$theme-color}-hover-border, #{$_hover-border} );
+
+                @if $fill-mode == "solid" {
+                    --kendo-chip-focus-text: var( --kendo-chip-#{$fill-mode}-#{$theme-color}-focus-text, #{$_focus-text} );
+                    --kendo-chip-focus-bg: var( --kendo-chip-#{$fill-mode}-#{$theme-color}-focus-bg, #{$_focus-bg} );
+                    --kendo-chip-focus-border: var( --kendo-chip-#{$fill-mode}-#{$theme-color}-focus-border, #{$_focus-border} );
+                }
+
+                @if $fill-mode == "outline" {
+                    --kendo-chip-focus-text: var( --kendo-chip-#{$fill-mode}-#{$theme-color}-focus-text, #{$_focus-outline} );
+                    --kendo-chip-focus-outline: var( --kendo-chip-#{$fill-mode}-#{$theme-color}-focus-outline, #{$_focus-outline} );
+                    --kendo-chip-focus-border: var( --kendo-chip-#{$fill-mode}-#{$theme-color}-focus-border, #{$_focus-outline} );
+                }
+
+                --kendo-chip-selected-text: var( --kendo-chip-#{$fill-mode}-#{$theme-color}-selected-text, #{$_selected-text} );
+                --kendo-chip-selected-bg: var( --kendo-chip-#{$fill-mode}-#{$theme-color}-selected-bg, #{$_selected-bg} );
+                --kendo-chip-selected-border: var( --kendo-chip-#{$fill-mode}-#{$theme-color}-selected-border, #{$_selected-border} );
+
+                --kendo-chip-disabled-text: var( --kendo-chip-#{$fill-mode}-#{$theme-color}-disabled-text, #{$_disabled-text} );
+                --kendo-chip-disabled-bg: var( --kendo-chip-#{$fill-mode}-#{$theme-color}-disabled-bg, #{$_disabled-bg} );
+                --kendo-chip-disabled-border: var( --kendo-chip-#{$fill-mode}-#{$theme-color}-disabled-border, #{$_disabled-border} );
+            }
+        }
+    }
+   
+}

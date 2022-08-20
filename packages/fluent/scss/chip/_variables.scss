@@ -1,0 +1,734 @@
+@use "../core/color-system" as *;
+@use "../core/_variables.scss" as *;
+@use "../core/color-system/" as *;
+
+// Chip
+
+/// Width of the border around the button.
+/// @group chip
+$kendo-chip-border-width: 1px !default;
+/// The spacing between the text and the icons of the chip.
+/// @group chip
+$kendo-chip-spacing: map-get( $kendo-spacing, 1 ) !default;
+
+/// The font family of the chip.
+/// @group chip
+$kendo-chip-font-family: var( --kendo-font-family, inherit );
+
+/// The chip avatar width.
+/// @group chip
+$kendo-chip-avatar-width: 1em;
+/// The chip avatar height.
+/// @group chip
+$kendo-chip-avatar-height: 1em;
+/// The chip avatar flex basis.
+/// @group chip
+$kendo-chip-avatar-flex-basis: 1em;
+/// The text color of disabled chip.
+/// @group chip
+$kendo-chip-disabled-text: var( --kendo-disabled-text, inherit ) !default;
+/// The background of solid disabled chip.
+/// @group chip
+$kendo-chip-solid-disabled-bg: var( --kendo-disabled-bg, transparent ) !default;
+/// The border of solid disabled chip.
+/// @group chip
+$kendo-chip-solid-disabled-border: var( --kendo-disabled-border, inherit ) !default;
+/// The background of outline disabled chip.
+/// @group chip
+$kendo-chip-outline-disabled-bg: var( $kendo-component-bg, transparent ) !default;
+/// The border of outline disabled chip.
+/// @group chip
+$kendo-chip-outline-disabled-border: get-theme-color-var( neutral-90 ) !default;
+
+/// Offset of the outline focused chip.
+/// @group chip
+$kendo-chip-focus-offset: map-get( $kendo-spacing, thin ) !default;
+/// Outline width of the outline focused button.
+/// @group chip
+$kendo-chip-focus-outline-width: map-get( $kendo-spacing, hair) !default;
+/// Outline style of the outline focused button.
+/// @group chip
+$kendo-chip-focus-outline-style: solid !default;
+
+/// Horizontal padding of the chip.
+/// @group chip
+$kendo-chip-padding-x-sm: map-get( $kendo-spacing, 2 ) !default;
+$kendo-chip-padding-x-md: map-get( $kendo-spacing, 2 ) !default;
+$kendo-chip-padding-x-lg: map-get( $kendo-spacing, 2 ) !default;
+
+/// Vertical padding of the chip.
+/// @group chip
+$kendo-chip-padding-y-sm: ( map-get( $kendo-spacing, 1 ) - map-get( $kendo-spacing, thin ) ) !default;
+$kendo-chip-padding-y-md: ( map-get( $kendo-spacing, 1 ) ) !default;
+$kendo-chip-padding-y-lg: ( map-get( $kendo-spacing, 1 ) + map-get( $kendo-spacing, thin ) ) !default;
+
+/// Font sizes of the chip.
+/// @group chip
+$kendo-chip-font-size-sm: var( --kendo-font-size, inherit ) !default;
+$kendo-chip-font-size-md: var( --kendo-font-size, inherit ) !default;
+$kendo-chip-font-size-lg: var( --kendo-font-size, inherit ) !default;
+
+/// Line heights of the chip that are connected to the $font-size.
+/// @group chip
+$kendo-chip-line-height-sm: var( --kendo-line-height, normal ) !default;
+$kendo-chip-line-height-md: var( --kendo-line-height, normal ) !default;
+$kendo-chip-line-height-lg: var( --kendo-line-height, normal ) !default;
+
+/// Sizes map for the chip.
+/// @group chip
+$kendo-chip-sizes: (
+    sm: (
+        padding-x: $kendo-chip-padding-x-sm,
+        padding-y: $kendo-chip-padding-y-sm,
+        font-size: $kendo-chip-font-size-sm,
+        line-height: $kendo-chip-line-height-sm
+    ),
+    md: (
+        padding-x: $kendo-chip-padding-x-md,
+        padding-y: $kendo-chip-padding-y-md,
+        font-size: $kendo-chip-font-size-md,
+        line-height: $kendo-chip-line-height-md
+    ),
+    lg: (
+        padding-x: $kendo-chip-padding-x-lg,
+        padding-y: $kendo-chip-padding-y-lg,
+        font-size: $kendo-chip-font-size-lg,
+        line-height: $kendo-chip-line-height-lg
+    )
+) !default;
+
+// -----Solid Fill Mode-----
+
+// Base Theme Color
+
+/// The solid base background of the chip.
+/// @group chip
+$kendo-chip-solid-base-bg: get-theme-color-var( neutral-20 ) !default;
+/// The solid base border of the chip.
+/// @group chip
+$kendo-chip-solid-base-border: get-theme-color-var( neutral-20 ) !default;
+/// The solid base text of the chip.
+/// @group chip
+$kendo-chip-solid-base-text: get-theme-color-var( neutral-160 ) !default;
+/// The solid base text of hovered chip.
+/// @group chip
+$kendo-chip-solid-base-hover-text: get-theme-color-var( neutral-190 ) !default;
+/// The solid base background of hovered chip.
+/// @group chip
+$kendo-chip-solid-base-hover-bg: get-theme-color-var( neutral-30 ) !default;
+/// The solid base border of hovered chip.
+/// @group chip
+$kendo-chip-solid-base-hover-border: get-theme-color-var( neutral-30 ) !default;
+/// The solid base text of focused chip.
+/// @group chip
+$kendo-chip-solid-base-focus-text: get-theme-color-var( neutral-160 ) !default;
+/// The solid base background of focused chip.
+/// @group chip
+$kendo-chip-solid-base-focus-bg: get-theme-color-var( neutral-20 ) !default;
+/// The solid base border of focused chip.
+/// @group chip
+$kendo-chip-solid-base-focus-border: get-theme-color-var( neutral-130 ) !default;
+/// The solid base border of selected chip.
+/// @group chip
+$kendo-chip-solid-base-selected-text: var( --kendo-component-bg, transparent ) !default;
+/// The solid base background
+/// @group chip
+$kendo-chip-solid-base-selected-bg: get-theme-color-var( primary-130 ) !default;
+/// @group chip
+$kendo-chip-solid-base-selected-border: get-theme-color-var( primary-130 ) !default;
+/// The solid base text of disabled chip.
+/// @group chip
+$kendo-chip-solid-base-disabled-text: $kendo-chip-disabled-text !default;
+/// The solid base bg of disabled chip.
+/// @group chip
+$kendo-chip-solid-base-disabled-bg: $kendo-chip-solid-disabled-bg !default;
+/// The solid base border of disabled chip.
+/// @group chip
+$kendo-chip-solid-base-disabled-border: $kendo-chip-solid-disabled-border !default;
+
+// Warning Theme Color
+
+/// The solid warning text of the chip.
+///@group chip
+$kendo-chip-solid-warning-text: get-theme-color-var( neutral-190 ) !default;
+/// The solid warning background of the chip.
+///@group chip
+$kendo-chip-solid-warning-bg: get-theme-color-var( warning-20 ) !default;
+/// The solid warning border of the chip.
+///@group chip
+$kendo-chip-solid-warning-border: get-theme-color-var( warning-20 ) !default;
+/// The solid warning text of hovered the chip.
+///@group chip
+$kendo-chip-solid-warning-hover-text: get-theme-color-var( neutral-190 ) !default;
+/// The solid warning background of hovered the chip.
+///@group chip
+$kendo-chip-solid-warning-hover-bg: get-theme-color-var( warning-30 ) !default;
+/// The solid warning border of hovered the chip.
+///@group chip
+$kendo-chip-solid-warning-hover-border: get-theme-color-var( warning-30 ) !default;
+/// The solid warning text of focused the chip.
+///@group chip
+$kendo-chip-solid-warning-focus-text: get-theme-color-var( neutral-190 ) !default;
+/// The solid warning background of focus the chip.
+///@group chip
+$kendo-chip-solid-warning-focus-bg: get-theme-color-var( warning-20 ) !default;
+/// The solid warning border of selected the chip.
+///@group chip
+$kendo-chip-solid-warning-focus-border: get-theme-color-var( neutral-190 ) !default;
+/// The solid warning text of selected the chip.
+///@group chip
+$kendo-chip-solid-warning-selected-text: get-theme-color-var( neutral-190 ) !default;
+/// The solid warning background of selected the chip.
+///@group chip
+$kendo-chip-solid-warning-selected-bg: get-theme-color-var( warning-40 ) !default;
+/// The solid warning border of selected the chip.
+///@group chip
+$kendo-chip-solid-warning-selected-border: get-theme-color-var( warning-40 ) !default;
+/// The solid warning text of disabled the chip.
+///@group chip
+$kendo-chip-solid-warning-disabled-text: $kendo-chip-disabled-text !default;
+/// The solid warning background of disabled the chip.
+///@group chip
+$kendo-chip-solid-warning-disabled-bg: $kendo-chip-solid-disabled-bg !default;
+/// The solid warning border of disabled the chip.
+///@group chip
+$kendo-chip-solid-warning-disabled-border: $kendo-chip-solid-disabled-border !default;
+
+// Info Theme Color
+/// The solid info text of the chip.
+/// @group chip
+$kendo-chip-solid-info-text: get-theme-color-var( info-190 ) !default;
+/// The solid info background of the chip.
+/// @group chip
+$kendo-chip-solid-info-bg: get-theme-color-var( info-20 ) !default;
+/// The solid info border of the chip.
+/// @group chip
+$kendo-chip-solid-info-border: get-theme-color-var( info-20 ) !default;
+/// The solid info text of hovered the chip.
+/// @group chip
+$kendo-chip-solid-info-hover-text: get-theme-color-var( info-190 ) !default;
+/// The solid info background of hovered the chip.
+/// @group chip
+$kendo-chip-solid-info-hover-bg: get-theme-color-var( info-30 ) !default;
+/// The solid info border of hovered the chip.
+/// @group chip
+$kendo-chip-solid-info-hover-border: get-theme-color-var( info-30 ) !default;
+/// The solid info text of focus the chip.
+/// @group chip
+$kendo-chip-solid-info-focus-text: get-theme-color-var( info-190 ) !default;
+/// The solid info background of focus the chip.
+/// @group chip
+$kendo-chip-solid-info-focus-bg: get-theme-color-var( info-20 ) !default;
+/// The solid info border of focus the chip.
+/// @group chip
+$kendo-chip-solid-info-focus-border: get-theme-color-var( info-190 ) !default;
+/// The solid info text of selected the chip.
+/// @group chip
+$kendo-chip-solid-info-selected-text: get-theme-color-var( info-190 ) !default;
+/// The solid info background of selected the chip.
+/// @group chip
+$kendo-chip-solid-info-selected-bg: get-theme-color-var( info-40 ) !default;
+/// The solid info border of selected the chip.
+/// @group chip
+$kendo-chip-solid-info-selected-border: get-theme-color-var( info-40 ) !default;
+/// The solid info text of disabled the chip.
+/// @group chip
+$kendo-chip-solid-info-disabled-text: $kendo-chip-disabled-text !default;
+/// The solid info background of disabled the chip.
+/// @group chip
+$kendo-chip-solid-info-disabled-bg: $kendo-chip-solid-disabled-bg !default;
+/// The solid info border of disabled the chip.
+/// @group chip
+$kendo-chip-solid-info-disabled-border: $kendo-chip-solid-disabled-border !default;
+
+// Error Theme Color
+
+/// The solid error text of the chip.
+/// @group chip
+$kendo-chip-solid-error-text: get-theme-color-var( error-190 ) !default;
+/// The solid error background of the chip.
+/// @group chip
+$kendo-chip-solid-error-bg: get-theme-color-var( error-20 ) !default;
+/// The solid error border of the chip.
+/// @group chip
+$kendo-chip-solid-error-border: get-theme-color-var( error-20 ) !default;
+/// The solid error text of hovered the chip.
+/// @group chip
+$kendo-chip-solid-error-hover-text: get-theme-color-var( error-190 ) !default;
+/// The solid error background of hovered the chip.
+/// @group chip
+$kendo-chip-solid-error-hover-bg: get-theme-color-var( error-30 ) !default;
+/// The solid error border of hovered the chip.
+/// @group chip
+$kendo-chip-solid-error-hover-border: get-theme-color-var( error-30 ) !default;
+/// The solid error text of focused the chip.
+/// @group chip
+$kendo-chip-solid-error-focus-text: get-theme-color-var( error-190 ) !default;
+/// The solid error background of focused the chip.
+/// @group chip
+$kendo-chip-solid-error-focus-bg: get-theme-color-var( error-20 ) !default;
+/// The solid error border of focused the chip.
+/// @group chip
+$kendo-chip-solid-error-focus-border: get-theme-color-var( error-190 ) !default;
+/// The solid error text of selected the chip.
+/// @group chip
+$kendo-chip-solid-error-selected-text: get-theme-color-var( error-190 ) !default;
+/// The solid error background of selected the chip.
+/// @group chip
+$kendo-chip-solid-error-selected-bg: get-theme-color-var( error-40 ) !default;
+/// The solid error border of selected the chip.
+/// @group chip
+$kendo-chip-solid-error-selected-border: get-theme-color-var( error-40 ) !default;
+/// The solid error text of disabled the chip.
+/// @group chip
+$kendo-chip-solid-error-disabled-text: $kendo-chip-disabled-text;
+/// The solid error background of disabled the chip.
+/// @group chip
+$kendo-chip-solid-error-disabled-bg: $kendo-chip-solid-disabled-bg;
+/// The solid error border of disabled the chip.
+/// @group chip
+$kendo-chip-solid-error-disabled-border: $kendo-chip-solid-disabled-border;
+
+// Success Theme Color
+/// The solid success text of the chip.
+/// @group chip
+$kendo-chip-solid-success-text: get-theme-color-var( success-190 ) !default;
+/// The solid success background of the chip.
+/// @group chip
+$kendo-chip-solid-success-bg: get-theme-color-var( success-20 ) !default;
+/// The solid success border of the chip.
+/// @group chip
+$kendo-chip-solid-success-border: get-theme-color-var( success-20 ) !default;
+/// The solid success text of hovered chip.
+/// @group chip
+$kendo-chip-solid-success-hover-text: get-theme-color-var( success-190 ) !default;
+/// The solid success background of hovered chip.
+/// @group chip
+$kendo-chip-solid-success-hover-bg: get-theme-color-var( success-30 ) !default;
+/// The solid success border of hovered chip.
+/// @group chip
+$kendo-chip-solid-success-hover-border: get-theme-color-var( success-30 ) !default;
+/// The solid success text of focused chip.
+/// @group chip
+$kendo-chip-solid-success-focus-text: get-theme-color-var( success-190 ) !default;
+/// The solid success background of focused chip.
+/// @group chip
+$kendo-chip-solid-success-focus-bg: get-theme-color-var( success-20 ) !default;
+/// The solid success border of focused chip.
+/// @group chip
+$kendo-chip-solid-success-focus-border: get-theme-color-var( success-190 ) !default;
+/// The solid success text of selected chip.
+/// @group chip
+$kendo-chip-solid-success-selected-text: get-theme-color-var( success-190 ) !default;
+/// The solid success background of selected chip.
+/// @group chip
+$kendo-chip-solid-success-selected-bg: get-theme-color-var( success-40 ) !default;
+/// The solid success border of selected chip.
+/// @group chip
+$kendo-chip-solid-success-selected-border: get-theme-color-var( success-40 ) !default;
+/// The solid success text of disabled chip.
+/// @group chip
+$kendo-chip-solid-success-disabled-text: $kendo-chip-disabled-text !default;
+/// The solid success background of disabled chip.
+/// @group chip
+$kendo-chip-solid-success-disabled-bg: $kendo-chip-solid-disabled-bg !default;
+/// The solid success border of disabled chip.
+/// @group chip
+$kendo-chip-solid-success-disabled-border: $kendo-chip-solid-disabled-border !default;
+
+// -----Outline Fill Mode-----
+
+// Base Theme Color
+
+/// The outline base text of the chip.
+/// @group chip
+$kendo-chip-outline-base-text: get-theme-color-var( neutral-160 ) !default;
+/// The outline base background of the chip.
+/// @group chip
+$kendo-chip-outline-base-bg: var( --kendo-component-bg, transparent ) !default;
+/// The outline base border of the chip.
+/// @group chip
+$kendo-chip-outline-base-border: get-theme-color-var( neutral-160 ) !default;
+/// The outline base text of hovered chip.
+/// @group chip
+$kendo-chip-outline-base-hover-text: var( --kendo-component-bg, transparent ) !default;
+/// The outline base bg of hovered chip.
+/// @group chip
+$kendo-chip-outline-base-hover-bg: get-theme-color-var( neutral-190 ) !default;
+/// The outline base border of hovered chip.
+/// @group chip
+$kendo-chip-outline-base-hover-border: get-theme-color-var( neutral-190 ) !default;
+/// The outline base text of selected chip.
+/// @group chip
+$kendo-chip-outline-base-selected-text: var( --kendo-component-bg, transparent ) !default;
+/// The outline base bg of selected chip.
+/// @group chip
+$kendo-chip-outline-base-selected-bg: get-theme-color-var( neutral-190 ) !default;
+/// The outline base border of selected chip.
+/// @group chip
+$kendo-chip-outline-base-selected-border: get-theme-color-var( neutral-190 ) !default;
+/// The outline base text of disabled chip.
+/// @group chip
+$kendo-chip-outline-base-disabled-text: get-theme-color-var( neutral-90 ) !default;
+/// The outline base bg of disabled chip.
+/// @group chip
+$kendo-chip-outline-base-disabled-bg: var( --kendo-component-bg, transparent ) !default;
+/// The outline base border of disabled chip.
+/// @group chip
+$kendo-chip-outline-base-disabled-border: get-theme-color-var( neutral-90 ) !default;
+/// The outline base color of focused chip.
+/// @group chip
+$kendo-chip-outline-base-focus-outline: get-theme-color-var( neutral-160 ) !default; 
+
+// Warning Theme Color
+
+/// The outline warning text of the chip.
+/// @group chip
+$kendo-chip-outline-warning-text: get-theme-color-var( neutral-160 ) !default;
+/// The outline warning background of the chip.
+/// @group chip
+$kendo-chip-outline-warning-bg: var( --kendo-component-bg, transparent ) !default;
+/// The outline warning border of the chip.
+/// @group chip
+$kendo-chip-outline-warning-border: get-theme-color-var( warning-100 ) !default;
+/// The outline warning text of hovered chip.
+/// @group chip
+$kendo-chip-outline-warning-hover-text: get-theme-color-var( neutral-160 ) !default;
+/// The outline warning background of hovered chip.
+/// @group chip
+$kendo-chip-outline-warning-hover-bg: get-theme-color-var( warning-100 ) !default;
+/// The outline warning border of hovered chip.
+/// @group chip
+$kendo-chip-outline-warning-hover-border: get-theme-color-var( warning-100 ) !default;
+/// The outline warning text of selected chip.
+/// @group chip
+$kendo-chip-outline-warning-selected-text: get-theme-color-var( neutral-160 ) !default;
+/// The outline warning background of selected chip.
+/// @group chip
+$kendo-chip-outline-warning-selected-bg: get-theme-color-var( warning-100 ) !default;
+/// The outline warning border of selected chip.
+/// @group chip
+$kendo-chip-outline-warning-selected-border: get-theme-color-var( warning-100 ) !default;
+/// The outline warning text of disabled chip.
+/// @group chip
+$kendo-chip-outline-warning-disabled-text: $kendo-chip-disabled-text !default;
+/// The outline warning background of disabled chip.
+/// @group chip
+$kendo-chip-outline-warning-disabled-bg: $kendo-chip-outline-disabled-bg !default;
+/// The outline warning border of disabled chip.
+/// @group chip
+$kendo-chip-outline-warning-disabled-border: $kendo-chip-outline-disabled-border !default;
+/// The outline warning color of focused chip.
+/// @group chip
+$kendo-chip-outline-warning-focus-outline: get-theme-color-var( warning-100 ) !default; 
+
+// Info Theme Color
+/// The outline info text of the chip.
+/// @group chip
+$kendo-chip-outline-info-text: get-theme-color-var( info-190 ) !default;
+/// The outline info background of the chip.
+/// @group chip
+$kendo-chip-outline-info-bg: var( --kendo-component-bg, transparent ) !default;
+/// The outline info border of the chip.
+/// @group chip
+$kendo-chip-outline-info-border: get-theme-color-var( info-190 ) !default;
+/// The outline info text of hovered chip.
+/// @group chip
+$kendo-chip-outline-info-hover-text: var( --kendo-component-bg, transparent ) !default;
+/// The outline info background of hovered chip.
+/// @group chip
+$kendo-chip-outline-info-hover-bg: get-theme-color-var( info-190 ) !default;
+/// The outline info border of hovered chip.
+/// @group chip
+$kendo-chip-outline-info-hover-border: get-theme-color-var( info-190 ) !default;
+/// The outline info text of selected chip.
+/// @group chip
+$kendo-chip-outline-info-selected-text: var( --kendo-component-bg, transparent ) !default;
+/// The outline info background of selected chip.
+/// @group chip
+$kendo-chip-outline-info-selected-bg: get-theme-color-var( info-190 ) !default;
+/// The outline info border of selected chip.
+/// @group chip
+$kendo-chip-outline-info-selected-border: get-theme-color-var( info-190 ) !default;
+/// The outline info background of disabled chip.
+/// @group chip
+$kendo-chip-outline-info-disabled-text: $kendo-chip-disabled-text !default;
+/// The outline info background of disabled chip.
+/// @group chip
+$kendo-chip-outline-info-disabled-bg: $kendo-chip-outline-disabled-bg !default;
+/// The outline info border of disabled chip.
+/// @group chip
+$kendo-chip-outline-info-disabled-border: $kendo-chip-outline-disabled-border !default;
+/// The outline info color of focused chip.
+/// @group chip
+$kendo-chip-outline-info-focus-outline: get-theme-color-var( info-190 ) !default; 
+
+// Error Theme Color
+
+/// The outline error text of the chip.
+/// @group chip
+$kendo-chip-outline-error-text: get-theme-color-var( error-190 ) !default;
+
+/// The outline error background of the chip.
+/// @group chip
+$kendo-chip-outline-error-bg: var( --kendo-component-bg, transparent )!default;
+/// The outline error border of the chip.
+/// @group chip
+$kendo-chip-outline-error-border: get-theme-color-var( error-190 ) !default;
+/// The outline error text of hovered chip.
+/// @group chip
+$kendo-chip-outline-error-hover-text: var( --kendo-component-bg, transparent ) !default;
+/// The outline error background of hovered chip.
+/// @group chip
+$kendo-chip-outline-error-hover-bg: get-theme-color-var( error-190 ) !default;
+/// The outline error border of hovered chip.
+/// @group chip
+$kendo-chip-outline-error-hover-border: get-theme-color-var( error-190 ) !default;
+/// The outline error text of selected chip.
+/// @group chip
+$kendo-chip-outline-error-selected-text: var( --kendo-component-bg, transparent ) !default;
+/// The outline error background of selected chip.
+/// @group chip
+$kendo-chip-outline-error-selected-bg: get-theme-color-var( error-190 ) !default;
+/// The outline error border of selected chip.
+/// @group chip
+$kendo-chip-outline-error-selected-border: get-theme-color-var( error-190 ) !default;
+/// The outline error text of disabled chip.
+/// @group chip
+$kendo-chip-outline-error-disabled-text: $kendo-chip-disabled-text !default;
+/// The outline error background of disabled chip.
+/// @group chip
+$kendo-chip-outline-error-disabled-bg: $kendo-chip-outline-disabled-bg !default;
+/// The outline error border of disabled chip.
+/// @group chip
+$kendo-chip-outline-error-disabled-border: $kendo-chip-outline-disabled-border !default;
+/// The outline error color of focused chip.
+/// @group chip
+$kendo-chip-outline-error-focus-outline: get-theme-color-var( error-190 ) !default; 
+
+// Success Theme Color
+
+/// The outline success text of the chip.
+/// @group chip
+$kendo-chip-outline-success-text: get-theme-color-var( success-190 ) !default;
+/// The outline success background of the chip.
+/// @group chip
+$kendo-chip-outline-success-bg:var( --kendo-component-bg, transparent ) !default;
+/// The outline success border of the chip.
+/// @group chip
+$kendo-chip-outline-success-border: get-theme-color-var( success-190 ) !default;
+/// The outline success text of hovered chip.
+/// @group chip
+$kendo-chip-outline-success-hover-text: var( --kendo-component-bg, transparent ) !default;
+/// The outline success background of hovered chip.
+/// @group chip
+$kendo-chip-outline-success-hover-bg: get-theme-color-var( success-190 ) !default;
+/// The outline success border of hovered chip.
+/// @group chip
+$kendo-chip-outline-success-hover-border: get-theme-color-var( success-190 ) !default;
+/// The outline success text of selected chip.
+/// @group chip
+$kendo-chip-outline-success-selected-text: var( --kendo-component-bg, transparent ) !default;
+/// The outline success background of selected chip.
+/// @group chip
+$kendo-chip-outline-success-selected-bg: get-theme-color-var( success-190 ) !default;
+/// The outline success border of selected chip.
+/// @group chip
+$kendo-chip-outline-success-selected-border: get-theme-color-var( success-190 ) !default;
+/// The outline success text of disabled chip.
+/// @group chip
+$kendo-chip-outline-success-disabled-text: $kendo-chip-disabled-text !default; 
+/// The outline success background of disabled chip.
+/// @group chip
+$kendo-chip-outline-success-disabled-bg: $kendo-chip-outline-disabled-bg !default;
+/// The outline success border of disabled chip.
+/// @group chip
+$kendo-chip-outline-success-disabled-border: $kendo-chip-outline-disabled-border !default;
+/// The outline success color of focused chip.
+/// @group chip
+$kendo-chip-outline-success-focus-outline: get-theme-color-var( success-190 ) !default; 
+
+
+
+
+
+// theme color map 
+
+/// Theme colors map for the chip.
+/// @group chip
+$kendo-chip-theme-colors: (
+    solid: (
+        base: (
+            text: $kendo-chip-solid-base-text,
+            bg: $kendo-chip-solid-base-bg,
+            border: $kendo-chip-solid-base-border,
+            hover-text: $kendo-chip-solid-base-hover-text,
+            hover-bg: $kendo-chip-solid-base-hover-bg,
+            hover-border: $kendo-chip-solid-base-border,
+            focus-text: $kendo-chip-solid-base-focus-text,
+            focus-bg: $kendo-chip-solid-base-focus-bg,
+            focus-border: $kendo-chip-solid-base-focus-border,
+            selected-text: $kendo-chip-solid-base-selected-text,
+            selected-bg: $kendo-chip-solid-base-selected-bg,
+            selected-border: $kendo-chip-solid-base-selected-border,
+            disabled-text: $kendo-chip-solid-base-disabled-text,
+            disabled-bg: $kendo-chip-solid-base-disabled-bg,
+            disabled-border: $kendo-chip-solid-base-disabled-border
+        ),
+        warning: (
+            text: $kendo-chip-solid-warning-text,
+            bg: $kendo-chip-solid-warning-bg,
+            border: $kendo-chip-solid-warning-border,
+            hover-text: $kendo-chip-solid-warning-hover-text,
+            hover-bg: $kendo-chip-solid-warning-hover-bg,
+            hover-border: $kendo-chip-solid-warning-border,
+            focus-text: $kendo-chip-solid-warning-focus-text,
+            focus-bg: $kendo-chip-solid-warning-focus-bg,
+            focus-border: $kendo-chip-solid-warning-focus-border,
+            selected-text: $kendo-chip-solid-warning-selected-text,
+            selected-bg: $kendo-chip-solid-warning-selected-bg,
+            selected-border: $kendo-chip-solid-warning-selected-border,
+            disabled-text: $kendo-chip-solid-warning-disabled-text,
+            disabled-bg: $kendo-chip-solid-warning-disabled-bg,
+            disabled-border: $kendo-chip-solid-warning-disabled-border
+        ),
+        info: (
+            text: $kendo-chip-solid-info-text,
+            bg: $kendo-chip-solid-info-bg,
+            border: $kendo-chip-solid-info-border,
+            hover-text: $kendo-chip-solid-info-hover-text,
+            hover-bg: $kendo-chip-solid-info-hover-bg,
+            hover-border: $kendo-chip-solid-info-border,
+            focus-text: $kendo-chip-solid-info-focus-text,
+            focus-bg: $kendo-chip-solid-info-focus-bg,
+            focus-border: $kendo-chip-solid-info-focus-border,
+            selected-text: $kendo-chip-solid-info-selected-text,
+            selected-bg: $kendo-chip-solid-info-selected-bg,
+            selected-border: $kendo-chip-solid-info-selected-border,
+            disabled-text: $kendo-chip-solid-info-disabled-text,
+            disabled-bg: $kendo-chip-solid-info-disabled-bg,
+            disabled-border: $kendo-chip-solid-info-disabled-border
+        ),
+        error: (
+            text: $kendo-chip-solid-error-text,
+            bg: $kendo-chip-solid-error-bg,
+            border: $kendo-chip-solid-error-border,
+            hover-text: $kendo-chip-solid-error-hover-text,
+            hover-bg: $kendo-chip-solid-error-hover-bg,
+            hover-border: $kendo-chip-solid-error-border,
+            focus-text: $kendo-chip-solid-error-focus-text,
+            focus-bg: $kendo-chip-solid-error-focus-bg,
+            focus-border: $kendo-chip-solid-error-focus-border,
+            selected-text: $kendo-chip-solid-error-selected-text,
+            selected-bg: $kendo-chip-solid-error-selected-bg,
+            selected-border: $kendo-chip-solid-error-selected-border,
+            disabled-text: $kendo-chip-solid-error-disabled-text,
+            disabled-bg: $kendo-chip-solid-error-disabled-bg,
+            disabled-border: $kendo-chip-solid-error-disabled-border
+        ),
+        success: (
+            text: $kendo-chip-solid-success-text,
+            bg: $kendo-chip-solid-success-bg,
+            border: $kendo-chip-solid-success-border,
+            hover-text: $kendo-chip-solid-success-hover-text,
+            hover-bg: $kendo-chip-solid-success-hover-bg,
+            hover-border: $kendo-chip-solid-success-border,
+            focus-text: $kendo-chip-solid-success-focus-text,
+            focus-bg: $kendo-chip-solid-success-focus-bg,
+            focus-border: $kendo-chip-solid-success-focus-border,
+            selected-text: $kendo-chip-solid-success-selected-text,
+            selected-bg: $kendo-chip-solid-success-selected-bg,
+            selected-border: $kendo-chip-solid-success-selected-border,
+            disabled-text: $kendo-chip-solid-success-disabled-text,
+            disabled-bg: $kendo-chip-solid-success-disabled-bg,
+            disabled-border: $kendo-chip-solid-success-disabled-border
+        )
+    ),
+    outline: (
+        base: (
+            text: $kendo-chip-outline-base-text,
+            bg: $kendo-chip-outline-base-bg,
+            border: $kendo-chip-outline-base-border,
+            hover-text: $kendo-chip-outline-base-hover-text,
+            hover-bg: $kendo-chip-outline-base-hover-bg,
+            hover-border: $kendo-chip-outline-base-hover-border,
+            selected-text: $kendo-chip-outline-base-selected-text,
+            selected-bg: $kendo-chip-outline-base-selected-bg,
+            selected-border: $kendo-chip-outline-base-selected-border,
+            disabled-text: $kendo-chip-outline-base-disabled-text,
+            disabled-bg: $kendo-chip-outline-base-disabled-bg,
+            disabled-border: $kendo-chip-outline-base-disabled-border,
+            focus-outline: $kendo-chip-outline-base-focus-outline
+        ),
+        warning: (
+            text: $kendo-chip-outline-warning-text,
+            bg: $kendo-chip-outline-warning-bg,
+            border: $kendo-chip-outline-warning-border,
+            hover-text: $kendo-chip-outline-warning-hover-text,
+            hover-bg: $kendo-chip-outline-warning-hover-bg,
+            hover-border: $kendo-chip-outline-warning-hover-border,
+            selected-text: $kendo-chip-outline-warning-selected-text,
+            selected-bg: $kendo-chip-outline-warning-selected-bg,
+            selected-border: $kendo-chip-outline-warning-selected-border,
+            disabled-text: $kendo-chip-outline-warning-disabled-text,
+            disabled-bg: $kendo-chip-outline-warning-disabled-bg,
+            disabled-border: $kendo-chip-outline-warning-disabled-border,
+            focus-outline: $kendo-chip-outline-warning-focus-outline
+        ),
+        info: (
+            text: $kendo-chip-outline-info-text,
+            bg: $kendo-chip-outline-info-bg,
+            border: $kendo-chip-outline-info-border,
+            hover-text: $kendo-chip-outline-info-hover-text,
+            hover-bg: $kendo-chip-outline-info-hover-bg,
+            hover-border: $kendo-chip-outline-info-hover-border,
+            selected-text: $kendo-chip-outline-info-selected-text,
+            selected-bg: $kendo-chip-outline-info-selected-bg,
+            selected-border: $kendo-chip-outline-info-selected-border,
+            disabled-text: $kendo-chip-outline-info-disabled-text,
+            disabled-bg: $kendo-chip-outline-info-disabled-bg,
+            disabled-border: $kendo-chip-outline-info-disabled-border,
+            focus-outline: $kendo-chip-outline-info-focus-outline
+        ),
+        error: (
+            text: $kendo-chip-outline-error-text,
+            bg: $kendo-chip-outline-error-bg,
+            border: $kendo-chip-outline-error-border,
+            hover-text: $kendo-chip-outline-error-hover-text,
+            hover-bg: $kendo-chip-outline-error-hover-bg,
+            hover-border: $kendo-chip-outline-error-hover-border,
+            selected-text: $kendo-chip-outline-error-selected-text,
+            selected-bg: $kendo-chip-outline-error-selected-bg,
+            selected-border: $kendo-chip-outline-error-selected-border,
+            disabled-text: $kendo-chip-outline-error-disabled-text,
+            disabled-bg: $kendo-chip-outline-error-disabled-bg,
+            disabled-border: $kendo-chip-outline-error-disabled-border,
+            focus-outline: $kendo-chip-outline-error-focus-outline
+        ), 
+        success: (
+            text: $kendo-chip-outline-success-text,
+            bg: $kendo-chip-outline-success-bg,
+            border: $kendo-chip-outline-success-border,
+            hover-text: $kendo-chip-outline-success-hover-text,
+            hover-bg: $kendo-chip-outline-success-hover-bg,
+            hover-border: $kendo-chip-outline-success-hover-border,
+            selected-text: $kendo-chip-outline-success-selected-text,
+            selected-bg: $kendo-chip-outline-success-selected-bg,
+            selected-border: $kendo-chip-outline-success-selected-border,
+            disabled-text: $kendo-chip-outline-success-disabled-text,
+            disabled-bg: $kendo-chip-outline-success-disabled-bg,
+            disabled-border: $kendo-chip-outline-success-disabled-border,
+            focus-outline: $kendo-chip-outline-success-focus-outline
+        )
+    )
+) !default;
+
+// Chip List
+
+/// The sizes of the chip list.
+/// @group chip
+$kendo-chip-list-sizes: (
+    sm: map-get( $kendo-spacing, 1 ),
+    md: map-get( $kendo-spacing, 1 ),
+    lg: map-get( $kendo-spacing, 1 )
+) !default;
