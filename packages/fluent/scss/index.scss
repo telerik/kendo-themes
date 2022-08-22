@@ -50,7 +50,7 @@
 @use "textarea";
 @use "checkbox";
 @use "listbox";
-// @use "progressbar";
+@use "progressbar";
 @use "radio";
 @use "slider";
 
@@ -212,7 +212,7 @@
     @include textarea.styles();
     @include checkbox.styles();
     @include listbox.styles();
-    // @include progressbar.styles();
+    @include progressbar.styles();
     @include radio.styles();
     @include slider.styles();
 

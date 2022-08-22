@@ -25,7 +25,7 @@ root.render(
                 <span className="k-progress-status-wrap k-progress-start">
                     <span className="k-progress-status">5%</span>
                 </span>
-                <div className="k-state-selected">
+                <div className="k-selected">
                     <span className="k-progress-status-wrap k-progress-start">
                         <span className="k-progress-status">5%</span>
                     </span>
@@ -35,7 +35,7 @@ root.render(
                 <span className="k-progress-status-wrap k-progress-start">
                     <span className="k-progress-status">5%</span>
                 </span>
-                <div className="k-state-selected">
+                <div className="k-selected">
                     <span className="k-progress-status-wrap k-progress-start">
                         <span className="k-progress-status">5%</span>
                     </span>
@@ -47,7 +47,7 @@ root.render(
                 <span className="k-progress-status-wrap k-progress-center">
                     <span className="k-progress-status">50%</span>
                 </span>
-                <div className="k-state-selected">
+                <div className="k-selected">
                     <span className="k-progress-status-wrap k-progress-center">
                         <span className="k-progress-status">50%</span>
                     </span>
@@ -57,7 +57,7 @@ root.render(
                 <span className="k-progress-status-wrap k-progress-center">
                     <span className="k-progress-status">50%</span>
                 </span>
-                <div className="k-state-selected">
+                <div className="k-selected">
                     <span className="k-progress-status-wrap k-progress-center">
                         <span className="k-progress-status">50%</span>
                     </span>
@@ -69,7 +69,7 @@ root.render(
                 <span className="k-progress-status-wrap k-progress-end">
                     <span className="k-progress-status">95%</span>
                 </span>
-                <div className="k-state-selected">
+                <div className="k-selected">
                     <span className="k-progress-status-wrap k-progress-end">
                         <span className="k-progress-status">95%</span>
                     </span>
@@ -79,7 +79,7 @@ root.render(
                 <span className="k-progress-status-wrap k-progress-end">
                     <span className="k-progress-status">95%</span>
                 </span>
-                <div className="k-state-selected">
+                <div className="k-selected">
                     <span className="k-progress-status-wrap k-progress-end">
                         <span className="k-progress-status">95%</span>
                     </span>
@@ -91,7 +91,7 @@ root.render(
                 <span className="k-progress-status-wrap k-progress-start">
                     <span className="k-progress-status">100%</span>
                 </span>
-                <div className="k-state-selected">
+                <div className="k-selected">
                     <span className="k-progress-status-wrap k-progress-start">
                         <span className="k-progress-status">100%</span>
                     </span>
@@ -101,7 +101,7 @@ root.render(
                 <span className="k-progress-status-wrap k-progress-start">
                     <span className="k-progress-status">100%</span>
                 </span>
-                <div className="k-state-selected">
+                <div className="k-selected">
                     <span className="k-progress-status-wrap k-progress-start">
                         <span className="k-progress-status">100%</span>
                     </span>
@@ -113,7 +113,7 @@ root.render(
                 <span className="k-progress-status-wrap k-progress-center">
                     <span className="k-progress-status">100%</span>
                 </span>
-                <div className="k-state-selected">
+                <div className="k-selected">
                     <span className="k-progress-status-wrap k-progress-center">
                         <span className="k-progress-status">100%</span>
                     </span>
@@ -123,7 +123,7 @@ root.render(
                 <span className="k-progress-status-wrap k-progress-center">
                     <span className="k-progress-status">100%</span>
                 </span>
-                <div className="k-state-selected">
+                <div className="k-selected">
                     <span className="k-progress-status-wrap k-progress-center">
                         <span className="k-progress-status">100%</span>
                     </span>
@@ -135,7 +135,7 @@ root.render(
                 <span className="k-progress-status-wrap k-progress-end">
                     <span className="k-progress-status">100%</span>
                 </span>
-                <div className="k-state-selected">
+                <div className="k-selected">
                     <span className="k-progress-status-wrap k-progress-end">
                         <span className="k-progress-status">100%</span>
                     </span>
@@ -145,7 +145,7 @@ root.render(
                 <span className="k-progress-status-wrap k-progress-end">
                     <span className="k-progress-status">100%</span>
                 </span>
-                <div className="k-state-selected">
+                <div className="k-selected">
                     <span className="k-progress-status-wrap k-progress-end">
                         <span className="k-progress-status">100%</span>
                     </span>
@@ -154,13 +154,13 @@ root.render(
             <span>No Label</span>
             <div className="k-widget k-progressbar k-progressbar-horizontal" style={{ "--kendo-progressbar-progress": "50" } as React.CSSProperties}>
                 <span className="k-progress-status-wrap k-progress-end"></span>
-                <div className="k-state-selected">
+                <div className="k-selected">
                     <span className="k-progress-status-wrap k-progress-end"></span>
                 </div>
             </div>
             <div dir="rtl" className="k-widget k-progressbar k-progressbar-horizontal" style={{ "--kendo-progressbar-progress": "50" } as React.CSSProperties}>
                 <span className="k-progress-status-wrap k-progress-end"></span>
-                <div className="k-state-selected">
+                <div className="k-selected">
                     <span className="k-progress-status-wrap k-progress-end"></span>
                 </div>
             </div>
@@ -168,13 +168,13 @@ root.render(
             <span>Thin style</span>
             <div className="k-widget k-progressbar k-progressbar-horizontal" style={{ height: "2px", "--kendo-progressbar-progress": "50" } as React.CSSProperties}>
                 <span className="k-progress-status-wrap k-progress-end"></span>
-                <div className="k-state-selected">
+                <div className="k-selected">
                     <span className="k-progress-status-wrap k-progress-end"></span>
                 </div>
             </div>
             <div dir="rtl" className="k-widget k-progressbar k-progressbar-horizontal" style={{ height: "2px", "--kendo-progressbar-progress": "50" } as React.CSSProperties}>
                 <span className="k-progress-status-wrap k-progress-end"></span>
-                <div className="k-state-selected">
+                <div className="k-selected">
                     <span className="k-progress-status-wrap k-progress-end"></span>
                 </div>
             </div>
@@ -184,7 +184,7 @@ root.render(
                 <span className="k-progress-status-wrap k-progress-end">
                     <span className="k-progress-status">50%</span>
                 </span>
-                <div className="k-state-selected">
+                <div className="k-selected">
                     <span className="k-progress-status-wrap k-progress-end">
                         <span className="k-progress-status">50%</span>
                     </span>
@@ -194,7 +194,7 @@ root.render(
                 <span className="k-progress-status-wrap k-progress-end">
                     <span className="k-progress-status">50%</span>
                 </span>
-                <div className="k-state-selected">
+                <div className="k-selected">
                     <span className="k-progress-status-wrap k-progress-end">
                         <span className="k-progress-status">50%</span>
                     </span>
