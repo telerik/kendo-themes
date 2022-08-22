@@ -40,7 +40,7 @@ root.render(
                     <div className="k-widget k-header k-tabstrip k-tabstrip-top k-spreadsheet-tabstrip">
                         <div className="k-tabstrip-items-wrapper k-hstack">
                             <ul className="k-tabstrip-items k-reset" style={{ paddingLeft: "76px" }}>
-                                <li className="k-item k-first k-tab-on-top k-state-active">
+                                <li className="k-item k-first k-tab-on-top k-active">
                                     <span className="k-loading k-complete"></span>
                                     <span className="k-link">Home</span>
                                 </li>
@@ -54,7 +54,7 @@ root.render(
                                 </li>
                             </ul>
                         </div>
-                        <div className="k-tabstrip-content k-state-active" style={{ display: "block" }}>
+                        <div className="k-tabstrip-content k-active" style={{ display: "block" }}>
                             <div className="k-toolbar k-widget k-toolbar-resizable k-spreadsheet-toolbar">
                                 <Button icon="folder-open" className="k-upload-button"></Button>
                                 <Button icon="download"></Button>
@@ -570,7 +570,7 @@ root.render(
                         <div className="k-tabstrip-items-wrapper k-hstack">
                             <Button fillMode="flat" rounded={null} size={null} icon="arrow-60-left" className="k-tabstrip-prev"></Button>
                             <ul className="k-reset k-tabstrip-items">
-                                <li className="k-item k-state-active k-state-tab-on-top k-spreadsheet-sheets-bar-active">
+                                <li className="k-item k-active k-state-tab-on-top k-spreadsheet-sheets-bar-active">
                                     <span className="k-link">Food Order</span>
                                     <Button fillMode="flat" icon="close" className="k-spreadsheet-sheets-remove k-remove-tab"></Button>
                                 </li>
