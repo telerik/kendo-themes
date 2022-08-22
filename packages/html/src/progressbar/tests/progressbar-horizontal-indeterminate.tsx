@@ -46,7 +46,7 @@ root.render(
                     <span className="k-progress-status-wrap k-progress-end">
                         <span className="k-progress-status">75</span>
                     </span>
-                    <div className="k-state-selected" style={{ width: "75%", height: "100%" }} >
+                    <div className="k-selected" style={{ width: "75%", height: "100%" }} >
                         <span className="k-progress-status-wrap k-progress-end" style={{ width: "133.333%", height: "100%" }} >
                             <span className="k-progress-status">75</span>
                         </span>
@@ -56,7 +56,7 @@ root.render(
                     <span className="k-progress-status-wrap k-progress-end">
                         <span className="k-progress-status">75</span>
                     </span>
-                    <div className="k-state-selected" style={{ width: "75%", height: "100%" }} >
+                    <div className="k-selected" style={{ width: "75%", height: "100%" }} >
                         <span className="k-progress-status-wrap k-progress-end" style={{ width: "133.333%", height: "100%" }} >
                             <span className="k-progress-status">75</span>
                         </span>
@@ -66,11 +66,11 @@ root.render(
                 <span>Chunk Indeterminate</span>
                 <div className="k-widget k-progressbar k-progressbar-horizontal k-progressbar-indeterminate">
                     <ul className="k-reset">
-                        <li className="k-item k-first k-state-selected" style={{ width: "10%" }} ></li>
-                        <li className="k-item k-state-selected" style={{ width: "10%" }} ></li>
-                        <li className="k-item k-state-selected" style={{ width: "10%" }} ></li>
-                        <li className="k-item k-state-selected" style={{ width: "10%" }} ></li>
-                        <li className="k-item k-state-selected" style={{ width: "10%" }} ></li>
+                        <li className="k-item k-first k-selected" style={{ width: "10%" }} ></li>
+                        <li className="k-item k-selected" style={{ width: "10%" }} ></li>
+                        <li className="k-item k-selected" style={{ width: "10%" }} ></li>
+                        <li className="k-item k-selected" style={{ width: "10%" }} ></li>
+                        <li className="k-item k-selected" style={{ width: "10%" }} ></li>
                         <li className="k-item" style={{ width: "10%" }} ></li>
                         <li className="k-item" style={{ width: "10%" }} ></li>
                         <li className="k-item" style={{ width: "10%" }} ></li>
@@ -80,11 +80,11 @@ root.render(
                 </div>
                 <div dir="rtl" className="k-widget k-progressbar k-progressbar-horizontal k-progressbar-indeterminate">
                     <ul className="k-reset">
-                        <li className="k-item k-first k-state-selected" style={{ width: "10%" }} ></li>
-                        <li className="k-item k-state-selected" style={{ width: "10%" }} ></li>
-                        <li className="k-item k-state-selected" style={{ width: "10%" }} ></li>
-                        <li className="k-item k-state-selected" style={{ width: "10%" }} ></li>
-                        <li className="k-item k-state-selected" style={{ width: "10%" }} ></li>
+                        <li className="k-item k-first k-selected" style={{ width: "10%" }} ></li>
+                        <li className="k-item k-selected" style={{ width: "10%" }} ></li>
+                        <li className="k-item k-selected" style={{ width: "10%" }} ></li>
+                        <li className="k-item k-selected" style={{ width: "10%" }} ></li>
+                        <li className="k-item k-selected" style={{ width: "10%" }} ></li>
                         <li className="k-item" style={{ width: "10%" }} ></li>
                         <li className="k-item" style={{ width: "10%" }} ></li>
                         <li className="k-item" style={{ width: "10%" }} ></li>

@@ -23,8 +23,8 @@ root.render(
             <span>Chunk</span>
             <div className="k-widget k-progressbar k-progressbar-horizontal">
                 <ul className="k-reset">
-                    <li className="k-item k-first k-state-selected" style={{ width: "20%" }} ></li>
-                    <li className="k-item k-state-selected" style={{ width: "20%" }} ></li>
+                    <li className="k-item k-first k-selected" style={{ width: "20%" }} ></li>
+                    <li className="k-item k-selected" style={{ width: "20%" }} ></li>
                     <li className="k-item" style={{ width: "20%" }} ></li>
                     <li className="k-item" style={{ width: "20%" }} ></li>
                     <li className="k-item k-last" style={{ width: "20%" }} ></li>
@@ -32,8 +32,8 @@ root.render(
             </div>
             <div dir="rtl" className="k-widget k-progressbar k-progressbar-horizontal">
                 <ul className="k-reset">
-                    <li className="k-item k-first k-state-selected" style={{ width: "20%" }} ></li>
-                    <li className="k-item k-state-selected" style={{ width: "20%" }} ></li>
+                    <li className="k-item k-first k-selected" style={{ width: "20%" }} ></li>
+                    <li className="k-item k-selected" style={{ width: "20%" }} ></li>
                     <li className="k-item" style={{ width: "20%" }} ></li>
                     <li className="k-item" style={{ width: "20%" }} ></li>
                     <li className="k-item k-last" style={{ width: "20%" }} ></li>
@@ -43,20 +43,20 @@ root.render(
             <span>Chunk 100%</span>
             <div className="k-widget k-progressbar k-progressbar-horizontal">
                 <ul className="k-reset">
-                    <li className="k-item k-first k-state-selected" style={{ width: "20%" }} ></li>
-                    <li className="k-item k-state-selected" style={{ width: "20%" }} ></li>
-                    <li className="k-item k-state-selected" style={{ width: "20%" }} ></li>
-                    <li className="k-item k-state-selected" style={{ width: "20%" }} ></li>
-                    <li className="k-item k-state-selected k-last" style={{ width: "20%" }} ></li>
+                    <li className="k-item k-first k-selected" style={{ width: "20%" }} ></li>
+                    <li className="k-item k-selected" style={{ width: "20%" }} ></li>
+                    <li className="k-item k-selected" style={{ width: "20%" }} ></li>
+                    <li className="k-item k-selected" style={{ width: "20%" }} ></li>
+                    <li className="k-item k-selected k-last" style={{ width: "20%" }} ></li>
                 </ul>
             </div>
             <div dir="rtl" className="k-widget k-progressbar k-progressbar-horizontal">
                 <ul className="k-reset">
-                    <li className="k-item k-first k-state-selected" style={{ width: "20%" }} ></li>
-                    <li className="k-item k-state-selected" style={{ width: "20%" }} ></li>
-                    <li className="k-item k-state-selected" style={{ width: "20%" }} ></li>
-                    <li className="k-item k-state-selected" style={{ width: "20%" }} ></li>
-                    <li className="k-item k-state-selected k-last" style={{ width: "20%" }} ></li>
+                    <li className="k-item k-first k-selected" style={{ width: "20%" }} ></li>
+                    <li className="k-item k-selected" style={{ width: "20%" }} ></li>
+                    <li className="k-item k-selected" style={{ width: "20%" }} ></li>
+                    <li className="k-item k-selected" style={{ width: "20%" }} ></li>
+                    <li className="k-item k-selected k-last" style={{ width: "20%" }} ></li>
                 </ul>
             </div>
 
@@ -66,8 +66,8 @@ root.render(
                     <li className="k-item k-first" style={{ width: "20%" }} ></li>
                     <li className="k-item" style={{ width: "20%" }} ></li>
                     <li className="k-item" style={{ width: "20%" }} ></li>
-                    <li className="k-item k-state-selected" style={{ width: "20%" }} ></li>
-                    <li className="k-item k-state-selected k-last" style={{ width: "20%" }} ></li>
+                    <li className="k-item k-selected" style={{ width: "20%" }} ></li>
+                    <li className="k-item k-selected k-last" style={{ width: "20%" }} ></li>
                 </ul>
             </div>
             <div dir="rtl" className="k-widget k-progressbar k-progressbar-horizontal k-progressbar-reverse">
@@ -75,28 +75,28 @@ root.render(
                     <li className="k-item k-first" style={{ width: "20%" }} ></li>
                     <li className="k-item" style={{ width: "20%" }} ></li>
                     <li className="k-item" style={{ width: "20%" }} ></li>
-                    <li className="k-item k-state-selected" style={{ width: "20%" }} ></li>
-                    <li className="k-item k-state-selected k-last" style={{ width: "20%" }} ></li>
+                    <li className="k-item k-selected" style={{ width: "20%" }} ></li>
+                    <li className="k-item k-selected k-last" style={{ width: "20%" }} ></li>
                 </ul>
             </div>
 
             <span>Chunk 100% reverse</span>
             <div className="k-widget k-progressbar k-progressbar-horizontal k-progressbar-reverse">
                 <ul className="k-reset">
-                    <li className="k-item k-first k-state-selected" style={{ width: "20%" }} ></li>
-                    <li className="k-item k-state-selected" style={{ width: "20%" }} ></li>
-                    <li className="k-item k-state-selected" style={{ width: "20%" }} ></li>
-                    <li className="k-item k-state-selected" style={{ width: "20%" }} ></li>
-                    <li className="k-item k-state-selected k-last" style={{ width: "20%" }} ></li>
+                    <li className="k-item k-first k-selected" style={{ width: "20%" }} ></li>
+                    <li className="k-item k-selected" style={{ width: "20%" }} ></li>
+                    <li className="k-item k-selected" style={{ width: "20%" }} ></li>
+                    <li className="k-item k-selected" style={{ width: "20%" }} ></li>
+                    <li className="k-item k-selected k-last" style={{ width: "20%" }} ></li>
                 </ul>
             </div>
             <div dir="rtl" className="k-widget k-progressbar k-progressbar-horizontal k-progressbar-reverse">
                 <ul className="k-reset">
-                    <li className="k-item k-first k-state-selected" style={{ width: "20%" }} ></li>
-                    <li className="k-item k-state-selected" style={{ width: "20%" }} ></li>
-                    <li className="k-item k-state-selected" style={{ width: "20%" }} ></li>
-                    <li className="k-item k-state-selected" style={{ width: "20%" }} ></li>
-                    <li className="k-item k-state-selected k-last" style={{ width: "20%" }} ></li>
+                    <li className="k-item k-first k-selected" style={{ width: "20%" }} ></li>
+                    <li className="k-item k-selected" style={{ width: "20%" }} ></li>
+                    <li className="k-item k-selected" style={{ width: "20%" }} ></li>
+                    <li className="k-item k-selected" style={{ width: "20%" }} ></li>
+                    <li className="k-item k-selected k-last" style={{ width: "20%" }} ></li>
                 </ul>
             </div>
 

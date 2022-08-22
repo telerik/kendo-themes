@@ -33,7 +33,7 @@ root.render(
                 <span className="k-progress-status-wrap k-progress-end">
                     <span className="k-progress-status">95%</span>
                 </span>
-                <div className="k-state-selected" style={{ height: "95%" }} >
+                <div className="k-selected" style={{ height: "95%" }} >
                     <span className="k-progress-status-wrap k-progress-end" style={{ height: "105.263%" }} >
                         <span className="k-progress-status">95%</span>
                     </span>
@@ -43,7 +43,7 @@ root.render(
                 <span className="k-progress-status-wrap k-progress-end">
                     <span className="k-progress-status">100%</span>
                 </span>
-                <div className="k-state-selected k-complete" style={{ height: "100%" }} >
+                <div className="k-selected k-complete" style={{ height: "100%" }} >
                     <span className="k-progress-status-wrap k-progress-end" style={{ height: "100%" }} >
                         <span className="k-progress-status">100%</span>
                     </span>
@@ -53,25 +53,25 @@ root.render(
                 <ul className="k-reset">
                     <li className="k-item k-first" style={{ height: "20%" }} ></li>
                     <li className="k-item" style={{ height: "20%" }} ></li>
-                    <li className="k-item k-state-selected" style={{ height: "20%" }} ></li>
-                    <li className="k-item k-state-selected" style={{ height: "20%" }} ></li>
-                    <li className="k-item k-last k-state-selected" style={{ height: "20%" }} ></li>
+                    <li className="k-item k-selected" style={{ height: "20%" }} ></li>
+                    <li className="k-item k-selected" style={{ height: "20%" }} ></li>
+                    <li className="k-item k-last k-selected" style={{ height: "20%" }} ></li>
                 </ul>
             </div>
             <div className="k-widget k-progressbar k-progressbar-vertical">
                 <ul className="k-reset">
-                    <li className="k-item k-state-selected k-first" style={{ height: "20%" }} ></li>
-                    <li className="k-item k-state-selected" style={{ height: "20%" }} ></li>
-                    <li className="k-item k-state-selected" style={{ height: "20%" }} ></li>
-                    <li className="k-item k-state-selected" style={{ height: "20%" }} ></li>
-                    <li className="k-item k-last k-state-selected" style={{ height: "20%" }} ></li>
+                    <li className="k-item k-selected k-first" style={{ height: "20%" }} ></li>
+                    <li className="k-item k-selected" style={{ height: "20%" }} ></li>
+                    <li className="k-item k-selected" style={{ height: "20%" }} ></li>
+                    <li className="k-item k-selected" style={{ height: "20%" }} ></li>
+                    <li className="k-item k-last k-selected" style={{ height: "20%" }} ></li>
                 </ul>
             </div>
             <div className="k-widget k-progressbar k-progressbar-vertical k-progressbar-reverse">
                 <span className="k-progress-status-wrap k-progress-end">
                     <span className="k-progress-status">5%</span>
                 </span>
-                <div className="k-state-selected" style={{ height: "5%" }} >
+                <div className="k-selected" style={{ height: "5%" }} >
                     <span className="k-progress-status-wrap k-progress-end" style={{ height: "2000%" }} >
                         <span className="k-progress-status">5%</span>
                     </span>
@@ -81,7 +81,7 @@ root.render(
                 <span className="k-progress-status-wrap k-progress-end">
                     <span className="k-progress-status">100%</span>
                 </span>
-                <div className="k-state-selected k-complete" style={{ height: "100%" }} >
+                <div className="k-selected k-complete" style={{ height: "100%" }} >
                     <span className="k-progress-status-wrap k-progress-end" style={{ height: "100%" }} >
                         <span className="k-progress-status">100%</span>
                     </span>
@@ -89,20 +89,20 @@ root.render(
             </div>
             <div className="k-widget k-progressbar k-progressbar-vertical k-progressbar-reverse">
                 <ul className="k-reset">
-                    <li className="k-item k-first k-state-selected" style={{ height: "20%" }} ></li>
-                    <li className="k-item k-state-selected" style={{ height: "20%" }} ></li>
-                    <li className="k-item k-state-selected" style={{ height: "20%" }} ></li>
+                    <li className="k-item k-first k-selected" style={{ height: "20%" }} ></li>
+                    <li className="k-item k-selected" style={{ height: "20%" }} ></li>
+                    <li className="k-item k-selected" style={{ height: "20%" }} ></li>
                     <li className="k-item" style={{ height: "20%" }} ></li>
                     <li className="k-item k-last" style={{ height: "20%" }} ></li>
                 </ul>
             </div>
             <div className="k-widget k-progressbar k-progressbar-vertical k-progressbar-reverse">
                 <ul className="k-reset">
-                    <li className="k-item k-first k-state-selected" style={{ height: "20%" }} ></li>
-                    <li className="k-item k-state-selected" style={{ height: "20%" }} ></li>
-                    <li className="k-item k-state-selected" style={{ height: "20%" }} ></li>
-                    <li className="k-item k-state-selected" style={{ height: "20%" }} ></li>
-                    <li className="k-item k-state-selected k-last" style={{ height: "20%" }} ></li>
+                    <li className="k-item k-first k-selected" style={{ height: "20%" }} ></li>
+                    <li className="k-item k-selected" style={{ height: "20%" }} ></li>
+                    <li className="k-item k-selected" style={{ height: "20%" }} ></li>
+                    <li className="k-item k-selected" style={{ height: "20%" }} ></li>
+                    <li className="k-item k-selected k-last" style={{ height: "20%" }} ></li>
                 </ul>
             </div>
             <div className="k-widget k-progressbar k-progressbar-vertical k-progressbar-indeterminate">
@@ -112,13 +112,13 @@ root.render(
             </div>
             <div className="k-widget k-progressbar k-progressbar-vertical">
                 <span className="k-progress-status-wrap k-progress-end"></span>
-                <div className="k-state-selected" style={{ height: "50%" }} >
+                <div className="k-selected" style={{ height: "50%" }} >
                     <span className="k-progress-status-wrap k-progress-end" style={{ height: "200%" }} ></span>
                 </div>
             </div>
             <div className="k-widget k-progressbar k-progressbar-vertical" style={{ width: "2px" }} >
                 <span className="k-progress-status-wrap k-progress-end"></span>
-                <div className="k-state-selected" style={{ height: "50%" }} >
+                <div className="k-selected" style={{ height: "50%" }} >
                     <span className="k-progress-status-wrap k-progress-end" style={{ height: "200%" }} ></span>
                 </div>
             </div>
@@ -126,7 +126,7 @@ root.render(
                 <span className="k-progress-status-wrap k-progress-end">
                     <span className="k-progress-status">50%</span>
                 </span>
-                <div className="k-state-selected" style={{ height: "50%" }} >
+                <div className="k-selected" style={{ height: "50%" }} >
                     <span className="k-progress-status-wrap k-progress-end" style={{ height: "200%" }} >
                         <span className="k-progress-status">50%</span>
                     </span>
