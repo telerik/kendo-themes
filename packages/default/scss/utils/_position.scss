@@ -26,9 +26,8 @@
         .k-#{$pos},
         .k-pos-#{$pos} { position: $pos !important; } // sass-lint:disable-line brace-style no-important
 
-        // sass-lint:disable-block no-important
         .\!k-#{$pos},
-        .\!k-pos-#{$pos} { position: $pos !important; }
+        .\!k-pos-#{$pos} { position: $pos !important; } // sass-lint:disable-line brace-style no-important
     }
 
     /// @name k-pos-top
