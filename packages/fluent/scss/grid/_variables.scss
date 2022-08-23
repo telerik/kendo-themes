@@ -1,0 +1,476 @@
+@use "../core/color-system" as *;
+@use "../core/_variables.scss" as *;
+@use "../button/_variables.scss" as *;
+@use "../table/_variables.scss" as *;
+@use "../toolbar/_variables.scss" as *;
+@use "../list/_variables.scss" as *;
+
+/// Border width of the grid.
+/// @group grid
+$kendo-grid-border-width: 1px !default;
+/// Border style of the grid.
+/// @group grid
+$kendo-grid-border-style: solid !default;
+/// Font family of the grid.
+/// @group grid
+$kendo-grid-font-family: var( --kendo-font-family, inherit ) !default;
+/// Font size of the grid.
+/// @group grid
+$kendo-grid-font-size: var( --kendo-font-size, inherit ) !default;
+/// Line height of the grid.
+/// @group grid
+$kendo-grid-line-height: var( --kendo-line-height, normal ) !default;
+/// Horizontal padding of the grid.
+/// @group grid
+$kendo-grid-padding-x: $kendo-table-cell-padding-x !default;
+/// Vertical padding of the grid.
+/// @group grid
+$kendo-grid-padding-y: $kendo-table-cell-padding-y !default;
+
+/// Background color of the grid.
+/// @group grid
+$kendo-grid-bg: $kendo-table-bg !default;
+/// Text color of the grid.
+/// @group grid
+$kendo-grid-text: $kendo-table-text !default;
+/// Border color of the grid.
+/// @group grid
+$kendo-grid-border: $kendo-table-border !default;
+/// Focus shadow of the grid.
+/// @group grid
+$kendo-grid-focus-shadow: $kendo-list-item-focus-shadow !default;
+
+/// Background color of alternating rows in grid.
+/// @group grid
+$kendo-grid-alt-bg: $kendo-table-alt-row-bg !default;
+/// Text color of alternating rows in grid.
+/// @group grid
+$kendo-grid-alt-text: $kendo-table-alt-row-text !default;
+/// Border color of alternating rows in grid.
+/// @group grid
+$kendo-grid-alt-border: $kendo-table-alt-row-border !default;
+
+/// Background color of hover rows in grid.
+/// @group grid
+$kendo-grid-hover-bg: $kendo-table-hover-bg !default;
+/// Text color of hover rows in grid.
+/// @group grid
+$kendo-grid-hover-text: $kendo-table-hover-text !default;
+/// Border color of hover rows in grid.
+/// @group grid
+$kendo-grid-hover-border: $kendo-table-hover-border !default;
+
+/// Background color of selected rows in grid.
+/// @group grid
+$kendo-grid-selected-bg: $kendo-table-selected-bg !default;
+/// Text color of selected rows in grid.
+/// @group grid
+$kendo-grid-selected-text: $kendo-table-selected-text !default;
+/// Border color of selected rows in grid.
+/// @group grid
+$kendo-grid-selected-border: $kendo-table-selected-border !default;
+
+/// Hover background color of selected rows in grid.
+/// @group grid
+$kendo-grid-selected-hover-bg: $kendo-table-selected-hover-bg !default;
+/// Hover text color of selected rows in grid.
+/// @group grid
+$kendo-grid-selected-hover-text: $kendo-table-selected-hover-text !default;
+/// Hover border color of selected rows in grid.
+/// @group grid
+$kendo-grid-selected-hover-border: $kendo-table-selected-hover-border !default;
+
+/// Horizontal padding of the grid header.
+/// @group grid
+$kendo-grid-header-padding-x: $kendo-grid-padding-x !default;
+/// Vertical padding of the grid header.
+/// @group grid
+$kendo-grid-header-padding-y: $kendo-grid-padding-y !default;
+/// Vertical border width of the grid header.
+/// @group grid
+$kendo-grid-header-border-width-y: $kendo-grid-border-width !default;
+/// Horizontal border width of the grid header.
+/// @group grid
+$kendo-grid-header-border-width-x: 0 !default;
+/// Font size of the grid header.
+/// @group grid
+$kendo-grid-header-font-size: inherit !default;
+/// Font weight of the grid header.
+/// @group grid
+$kendo-grid-header-font-weight: var( --kendo-font-weight-bold, normal ) !default;
+/// Menu spacing of the grid header.
+/// @group grid
+$kendo-grid-header-menu-spacing: var( --kendo-icon-spacing, .5rem ) !default;
+/// Border width of the first cell in the grid header.
+/// @group grid
+$kendo-grid-header-first-border-width: $kendo-grid-border-width !default;
+/// Background color of grid header.
+/// @group grid
+$kendo-grid-header-bg: $kendo-table-header-bg !default;
+/// Text color of grid header.
+/// @group grid
+$kendo-grid-header-text: $kendo-table-header-text !default;
+/// Border color of grid header.
+/// @group grid
+$kendo-grid-header-border: $kendo-table-header-border !default;
+/// Background color of grid header icons.
+/// @group grid
+$kendo-grid-header-icon-text: get-theme-color-var( neutral-130 ) !default;
+
+/// Horizontal padding of the grid footer.
+/// @group grid
+$kendo-grid-footer-padding-x: $kendo-grid-header-padding-x !default;
+/// Vertical padding of the grid footer.
+/// @group grid
+$kendo-grid-footer-padding-y: $kendo-grid-header-padding-y !default;
+// Background color of grid footer.
+/// @group grid
+$kendo-grid-footer-bg: $kendo-table-footer-bg !default;
+/// Text color of grid footer.
+/// @group grid
+$kendo-grid-footer-text: $kendo-table-footer-text !default;
+/// Border color of grid footer.
+/// @group grid
+$kendo-grid-footer-border: $kendo-table-footer-border !default;
+
+/// Horizontal padding of the grid grouping header.
+/// @group grid
+$kendo-grid-grouping-header-padding-x: $kendo-toolbar-padding-x !default;
+/// Vertical padding of the grid grouping header.
+/// @group grid
+$kendo-grid-grouping-header-padding-y: $kendo-toolbar-padding-y !default;
+/// Background color of the grid grouping header.
+/// @group grid
+$kendo-grid-grouping-header-bg: $kendo-toolbar-bg !default;
+/// Text color of the grid grouping header.
+/// @group grid
+$kendo-grid-grouping-header-text: $kendo-toolbar-text !default;
+/// Border color of the grid grouping header.
+/// @group grid
+$kendo-grid-grouping-header-border: $kendo-toolbar-border !default;
+
+/// Vertical border width of the grid grouping row.
+/// @group grid
+$kendo-grid-grouping-row-border-width-y: $kendo-grid-border-width !default;
+/// Background color of the grid grouping row.
+/// @group grid
+$kendo-grid-grouping-row-bg: $kendo-table-group-row-bg !default;
+/// Text color of the grid grouping row.
+/// @group grid
+$kendo-grid-grouping-row-text: $kendo-table-group-row-text !default;
+/// Border color of the grid grouping row.
+/// @group grid
+$kendo-grid-grouping-row-border: $kendo-table-group-row-border !default;
+
+/// Horizontal padding of the grid filter cell.
+/// @group grid
+$kendo-grid-filter-cell-padding-x: $kendo-grid-padding-y !default;
+/// Vertical padding of the grid filter cell.
+/// @group grid
+$kendo-grid-filter-cell-padding-y: $kendo-grid-filter-cell-padding-x !default;
+
+/// Horizontal padding of the grid toolbar.
+/// @group grid
+$kendo-grid-toolbar-padding-x: $kendo-toolbar-padding-x !default;
+/// Vertical padding of the grid toolbar.
+/// @group grid
+$kendo-grid-toolbar-padding-y: $kendo-toolbar-padding-y !default;
+/// Spacing of the grid toolbar.
+/// @group grid
+$kendo-grid-toolbar-spacing: $kendo-toolbar-spacing !default;
+/// Border width of the grid toolbar.
+/// @group grid
+$kendo-grid-toolbar-border-width: $kendo-grid-border-width !default;
+
+/// Horizontal padding of the grid cell.
+/// @group grid
+$kendo-grid-cell-padding-x: $kendo-grid-padding-x !default;
+/// Vertical padding of the grid cell.
+/// @group grid
+$kendo-grid-cell-padding-y: $kendo-grid-padding-y !default;
+/// Vertical border width of the grid cell.
+/// @group grid
+$kendo-grid-cell-border-width-y: $kendo-grid-border-width !default;
+/// Horizontal border width of the grid cell.
+/// @group grid
+$kendo-grid-cell-border-width-x: 0px !default;
+/// Default width of the grid cell placeholder.
+/// @group grid
+$kendo-grid-cell-placeholder-width: 80% !default;
+
+/// Font size of the grid sort index.
+/// @group grid
+$kendo-grid-sort-index-font-size: var( --kendo-font-size-sm, inherit ) !default;
+/// Default height of the grid sort index.
+/// @group grid
+$kendo-grid-sort-index-height: var( --kendo-icon-size, 1rem ) !default;
+/// Horizontal offset of the grid sort index.
+/// @group grid
+$kendo-grid-sort-index-spacing-y: calc( var( --kendo-icon-spacing, .5rem ) / 4 ) !default;
+/// Vertical offset of the grid sort index.
+/// @group grid
+$kendo-grid-sort-index-spacing-x: calc( $kendo-grid-sort-index-spacing-y * -1 ) !default;
+/// Spacing of the grid sort icon.
+/// @group grid
+$kendo-grid-sort-icon-spacing: var( --kendo-icon-spacing, .5rem ) !default;
+/// Text color of the grid sort indicator.
+/// @group grid
+$kendo-grid-sort-indicator-text: get-theme-color-var( neutral-130 ) !default;
+/// Text color of the grid sort order indicator.
+/// @group grid
+$kendo-grid-sort-indicator-order-text: get-theme-color-var( primary-130 ) !default;
+/// Background color of the sorted grid cells.
+/// @group grid
+$kendo-grid-sorted-bg: get-theme-color-var( neutral-10 ) !default;
+
+/// Horizontal padding of the grid edit cells.
+/// @group grid
+$kendo-grid-edit-cell-padding-x: $kendo-grid-cell-padding-x !default;
+/// Vertical padding of the grid edit cells.
+/// @group grid
+$kendo-grid-edit-cell-padding-y: map-get( $kendo-spacing, 1 ) + map-get( $kendo-spacing, hair ) !default;
+
+/// Horizontal padding of the grid command cells.
+/// @group grid
+$kendo-grid-command-cell-padding-y: calc( #{$kendo-table-cell-padding-y} - (#{$kendo-button-calc-size} - #{$kendo-line-height-em} ) / 2 ) !default;
+/// Vertical padding of the grid command cells.
+/// @group grid
+$kendo-grid-command-cell-button-spacing: map-get( $kendo-spacing, 2 ) !default;
+
+/// Horizontal padding of the grid group indicator.
+/// @group grid
+$kendo-grid-group-indicator-padding-x: $kendo-button-padding-x-md !default;
+/// Vertical padding of the grid group indicator.
+/// @group grid
+$kendo-grid-group-indicator-padding-y: $kendo-button-padding-y-md !default;
+/// Border width of the grid group indicator.
+/// @group grid
+$kendo-grid-group-indicator-border-width: $kendo-button-border-width !default;
+/// Border radius of the grid group indicator.
+/// @group grid
+$kendo-grid-group-indicator-border-radius: var( --kendo-border-radius-md, 0 ) !default;
+/// Spacing of the grid group indicator.
+/// @group grid
+$kendo-grid-group-indicator-gap: $kendo-table-cell-padding-y !default;
+/// Text color of the grid group indicator.
+/// @group grid
+$kendo-grid-group-indicator-text: var( --kendo-component-text, initial ) !default;
+/// Background color of the grid group indicator.
+/// @group grid
+$kendo-grid-group-indicator-bg: var( --kendo-component-bg, initial ) !default;
+/// Border color of the grid group indicator.
+/// @group grid
+$kendo-grid-group-indicator-border: get-theme-color-var( neutral-110 ) !default;
+/// Text color of the grid group indicator icon.
+/// @group grid
+$kendo-grid-group-indicator-icon-text: get-theme-color-var( neutral-130 ) !default;
+
+/// Horizontal border width of the grid group footer.
+/// @group grid
+$kendo-grid-group-footer-border-width-y: 0px !default;
+/// Vertical border width of the grid group footer.
+/// @group grid
+$kendo-grid-group-footer-border-width-x: 0px !default;
+
+/// Size of the grid group drop clue.
+/// @group grid
+$kendo-grid-group-dropclue-size: 6px !default;
+/// Line size of the grid group drop clue.
+/// @group grid
+$kendo-grid-group-dropclue-line-size: 1px !default;
+/// Dot size of the grid group drop clue.
+/// @group grid
+$kendo-grid-group-dropclue-dot-size: $kendo-grid-group-dropclue-size !default;
+/// Height of the grid  group drop clue.
+/// @group grid
+$kendo-grid-group-dropclue-height: calc( $kendo-button-calc-size + $kendo-grid-group-dropclue-size ) !default;
+/// Top offset of the grid group drop clue.
+/// @group grid
+$kendo-grid-group-dropclue-top: 2px !default;
+/// Text color of the grid group drop clue.
+/// @group grid
+$kendo-grid-group-dropclue-bg: get-theme-color-var( primary-130 ) !default;
+
+/// Border width of the grid sticky cell.
+/// @group grid
+$kendo-grid-sticky-cell-border-width: $kendo-grid-border-width !default;
+/// Background color of the grid sticky cell.
+/// @group grid
+$kendo-grid-sticky-bg: var( --kendo-component-bg, initial ) !default;
+/// Text color of the grid sticky cell.
+/// @group grid
+$kendo-grid-sticky-text: $kendo-grid-text !default;
+/// Border color of the grid sticky cell.
+/// @group grid
+$kendo-grid-sticky-border: get-theme-color-var( neutral-90 ) !default;
+/// Alt background color of the grid sticky cell.
+/// @group grid
+$kendo-grid-sticky-alt-bg: $kendo-grid-sticky-bg !default;
+/// Hover background color of the grid sticky cell.
+/// @group grid
+$kendo-grid-sticky-hover-bg: $kendo-grid-hover-bg !default;
+
+/// Background color of the grid sticky header.
+/// @group grid
+$kendo-grid-sticky-header-bg: $kendo-grid-header-bg !default;
+/// Text color of the grid sticky header.
+/// @group grid
+$kendo-grid-sticky-header-text: $kendo-grid-header-text !default;
+/// Border color of the grid sticky header.
+/// @group grid
+$kendo-grid-sticky-header-border: $kendo-grid-sticky-border !default;
+
+/// Background color of the grid sticky footer.
+/// @group grid
+$kendo-grid-sticky-footer-bg: $kendo-grid-header-bg !default;
+/// Hover background color of the grid sticky footer.
+/// @group grid
+$kendo-grid-sticky-footer-hover-bg: $kendo-grid-hover-bg !default;
+
+/// Selected background color of the grid sticky cells.
+/// @group grid
+$kendo-grid-sticky-selected-bg: $kendo-grid-selected-bg !default;
+/// Alt selected background color of the grid sticky cells.
+/// @group grid
+$kendo-grid-sticky-selected-alt-bg: $kendo-grid-sticky-selected-bg !default;
+/// Selected hover background color of the grid sticky cells.
+/// @group grid
+$kendo-grid-sticky-selected-hover-bg: $kendo-grid-selected-hover-bg !default;
+
+/// Horizontal padding of the grid filter menu container.
+/// @group grid
+$kendo-filter-menu-container-padding-y: map-get( $kendo-spacing, 3 ) !default;
+/// Vertical padding of the grid filter menu container.
+/// @group grid
+$kendo-filter-menu-container-padding-x: map-get( $kendo-spacing, 3 ) !default;
+
+/// Default width of the grid column menu.
+/// @group grid
+$kendo-grid-column-menu-width: 230px !default;
+/// Spacing of the grid column menu.
+/// @group grid
+$kendo-grid-column-menu-spacing: map-get( $kendo-spacing, 2 ) !default;
+/// Focus shadow of the grid column menu.
+/// @group grid
+$kendo-grid-column-menu-shadow: var( --kendo-box-shadow-depth-1, none ) !default;
+/// Background color of the grid column menu.
+/// @group grid
+$kendo-grid-column-menu-bg: var( --kendo-component-bg, inherit ) !default;
+/// Text color of the grid column menu.
+/// @group grid
+$kendo-grid-column-menu-text: var( --kendo-component-text, inherit ) !default;
+/// Border color of the grid column menu.
+/// @group grid
+$kendo-grid-column-menu-border: var( --kendo-component-border, inherit ) !default;
+
+/// Font size of the grid column menu checkbox container.
+/// @group grid
+$kendo-grid-column-menu-multicheck-font-size: $kendo-list-font-size-md !default;
+/// Line height of the grid column menu checkbox container.
+/// @group grid
+$kendo-grid-column-menu-multicheck-line-height: $kendo-list-line-height-md !default;
+
+/// Vertical padding of the grid column menu items wrap.
+/// @group grid
+$kendo-grid-column-menu-items-wrap-padding-y: map-get( $kendo-spacing, 2 ) !default;
+/// Horizontal padding of the grid column menu items wrap.
+/// @group grid
+$kendo-grid-column-menu-items-wrap-padding-x: map-get( $kendo-spacing, 2 ) !default;
+
+/// Horizontal padding of the grid column menu item.
+/// @group grid
+$kendo-grid-column-menu-item-padding-y: $kendo-list-item-padding-y-md !default;
+/// Vertical padding of the grid column menu item.
+/// @group grid
+$kendo-grid-column-menu-item-padding-x: $kendo-list-item-padding-x-md !default;
+/// Spacing of the grid column menu item.
+/// @group grid
+$kendo-grid-column-menu-item-gap: $kendo-list-item-padding-x-md !default;
+/// Icon spacing of the grid column menu item.
+/// @group grid
+$kendo-grid-column-menu-item-icon-spacing: var( --kendo-icon-spacing, .5rem ) !default;
+/// Background color of the grid column menu item.
+/// @group grid
+$kendo-grid-column-menu-item-bg: $kendo-list-item-bg !default;
+/// Text color of the grid column menu item.
+/// @group grid
+$kendo-grid-column-menu-item-text: $kendo-list-item-text !default;
+/// Hover background color of the grid column menu item.
+/// @group grid
+$kendo-grid-column-menu-item-hover-bg: $kendo-list-item-hover-bg !default;
+/// Hover text color of the grid column menu item.
+/// @group grid
+$kendo-grid-column-menu-item-hover-text: $kendo-list-item-hover-text !default;
+/// Selected background color of the grid column menu item.
+/// @group grid
+$kendo-grid-column-menu-item-selected-bg: $kendo-list-item-selected-bg !default;
+/// Selected text color of the grid column menu item.
+/// @group grid
+$kendo-grid-column-menu-item-selected-text: $kendo-list-item-selected-text !default;
+/// Focus shadow of the grid column menu item.
+/// @group grid
+$kendo-grid-column-menu-item-focus-shadow: $kendo-list-item-focus-shadow !default;
+/// Text color of the grid column menu item icon.
+/// @group grid
+$kendo-grid-column-menu-item-icon-text: $kendo-list-item-icon-text !default;
+
+/// Vertical padding of the grid column menu group header.
+/// @group grid
+$kendo-grid-column-menu-group-header-padding-y: $kendo-grid-column-menu-item-padding-y !default;
+/// Horizontal padding of the grid column menu group header.
+/// @group grid
+$kendo-grid-column-menu-group-header-padding-x: $kendo-grid-column-menu-item-padding-x !default;
+/// Border width of the grid column menu group header.
+/// @group grid
+$kendo-grid-column-menu-group-header-border-width: 1px !default;
+/// Border style of the grid column menu group header.
+/// @group grid
+$kendo-grid-column-menu-group-header-border-style: solid !default;
+/// Font size of the grid column menu group header.
+/// @group grid
+$kendo-grid-column-menu-group-header-font-size: var( --kendo-font-size-sm, inherit ) !default;
+/// Font weight of the grid column menu group header.
+/// @group grid
+$kendo-grid-column-menu-group-header-font-weight: var( --kendo-font-weight-bold, normal ) !default;
+/// Line height of the grid column menu group header.
+/// @group grid
+$kendo-grid-column-menu-group-header-line-height: var( --kendo-line-height, normal ) !default;
+/// Text transform of the grid column menu group header.
+/// @group grid
+$kendo-grid-column-menu-group-header-text-transform: uppercase !default;
+
+/// Background color of the grid column menu group.
+/// @group grid
+$kendo-grid-column-menu-group-header-bg: var( --kendo-component-bg, inherit ) !default;
+/// Text color of the grid column menu group.
+/// @group grid
+$kendo-grid-column-menu-group-header-text: var( --kendo-component-text, inherit ) !default;
+/// Border color of the grid column menu group.
+/// @group grid
+$kendo-grid-column-menu-group-header-border: var( --kendo-component-border, inherit) !default;
+
+/// Vertical padding of the grid column menu button.
+/// @group grid
+$kendo-grid-column-menu-button-padding-y: $kendo-button-padding-y-md !default;
+/// Horizontal padding of the grid column menu button.
+/// @group grid
+$kendo-grid-column-menu-button-padding-x: $kendo-button-padding-y-md !default;
+/// Default width of the grid column menu button.
+/// @group grid
+$kendo-grid-column-menu-button-width: $kendo-button-calc-size !default;
+/// Default height of the grid column menu button.
+/// @group grid
+$kendo-grid-column-menu-button-height: $kendo-grid-column-menu-button-width !default;
+/// Line height of the grid column menu button.
+/// @group grid
+$kendo-grid-column-menu-button-line-height: $kendo-button-line-height-md !default;
+
+/// Default width of the grid drag cell.
+/// @group grid
+$kendo-grid-drag-cell-width: calc( var( --kendo-icon-size, 1rem ) * 2.25 ) !default;
+/// Default width of the grid hierarchy cell.
+/// @group grid
+$kendo-grid-hierarchy-col-width: calc( var( --kendo-icon-size, 1rem ) * 2 ) !default;
+/// Spacing of the grid filterable icon.
+/// @group grid
+$kendo-grid-filterable-icon-spacing: calc( #{$kendo-button-calc-size} + #{$kendo-grid-header-menu-spacing} );
