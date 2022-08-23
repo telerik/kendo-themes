@@ -28,20 +28,20 @@ root.render(
                     <div className="k-tabstrip-items-wrapper k-hstack">
                         <Button fillMode="flat" rounded={null} size={null} icon="arrow-60-left" className="k-tabstrip-prev"></Button>
                         <ul className="k-reset k-tabstrip-items">
-                            <li className="k-item k-first k-state-active">
+                            <li className="k-item k-first k-active">
                                 <span className="k-link">First</span>
                             </li>
                             <li className="k-item">
                                 <span className="k-link">Closable</span>
                                 <Button fillMode="flat" icon="close" className="k-remove-tab"></Button>
                             </li>
-                            <li className="k-item k-state-focused">
+                            <li className="k-item k-focus">
                                 <span className="k-link">Focused</span>
                             </li>
                         </ul>
                         <Button fillMode="flat" rounded={null} size={null} icon="arrow-60-right" className="k-tabstrip-next"></Button>
                     </div>
-                    <div className="k-tabstrip-content k-state-active k-state-focused">
+                    <div className="k-tabstrip-content k-active k-focus">
                         <div>Top scrollable</div>
                     </div>
                 </div>
@@ -49,20 +49,20 @@ root.render(
 
             <section>
                 <div className="k-widget k-tabstrip k-header k-tabstrip-bottom k-tabstrip-scrollable" dir="rtl">
-                    <div className="k-tabstrip-content k-state-active">
+                    <div className="k-tabstrip-content k-active">
                         <div>Bottom scrollable</div>
                     </div>
                     <div className="k-tabstrip-items-wrapper k-hstack">
                         <Button fillMode="flat" rounded={null} size={null} icon="arrow-60-left" className="k-tabstrip-prev"></Button>
                         <ul className="k-reset k-tabstrip-items">
-                            <li className="k-item k-first k-state-active">
+                            <li className="k-item k-first k-active">
                                 <span className="k-link">First</span>
                             </li>
                             <li className="k-item">
                                 <span className="k-link">Closable</span>
                                 <Button fillMode="flat" icon="close" className="k-remove-tab"></Button>
                             </li>
-                            <li className="k-item k-state-focused">
+                            <li className="k-item k-focus">
                                 <span className="k-link">Focused</span>
                             </li>
                         </ul>
@@ -76,29 +76,29 @@ root.render(
                     <div className="k-tabstrip-items-wrapper k-vstack">
                         <Button fillMode="flat" rounded={null} size={null} icon="arrow-60-up" className="k-tabstrip-prev"></Button>
                         <ul className="k-reset k-tabstrip-items">
-                            <li className="k-item k-first k-state-active">
+                            <li className="k-item k-first k-active">
                                 <span className="k-link">Active</span>
                             </li>
                             <li className="k-item">
                                 <span className="k-link">Normal</span>
                             </li>
-                            <li className="k-item k-state-hover">
+                            <li className="k-item k-hover">
                                 <span className="k-link">Hover</span>
                             </li>
-                            <li className="k-item k-state-focused">
+                            <li className="k-item k-focus">
                                 <span className="k-link">Focused</span>
                             </li>
                             <li className="k-item">
                                 <span className="k-link">Closable</span>
                                 <Button fillMode="flat" icon="close" className="k-remove-tab"></Button>
                             </li>
-                            <li className="k-item k-last k-state-disabled">
+                            <li className="k-item k-last k-disabled">
                                 <span className="k-link">Disabled</span>
                             </li>
                         </ul>
                         <Button fillMode="flat" rounded={null} size={null} icon="arrow-60-down" className="k-tabstrip-next"></Button>
                     </div>
-                    <div className="k-tabstrip-content k-state-active">
+                    <div className="k-tabstrip-content k-active">
                         <div>Scrollable Left orientation</div>
                     </div>
                 </div>
@@ -109,29 +109,29 @@ root.render(
                     <div className="k-tabstrip-items-wrapper k-vstack">
                         <Button fillMode="flat" rounded={null} size={null} icon="arrow-60-up" className="k-tabstrip-prev"></Button>
                         <ul className="k-reset k-tabstrip-items">
-                            <li className="k-item k-first k-state-active">
+                            <li className="k-item k-first k-active">
                                 <span className="k-link">Active</span>
                             </li>
                             <li className="k-item">
                                 <span className="k-link">Normal</span>
                             </li>
-                            <li className="k-item k-state-hover">
+                            <li className="k-item k-hover">
                                 <span className="k-link">Hover</span>
                             </li>
-                            <li className="k-item k-state-focused">
+                            <li className="k-item k-focus">
                                 <span className="k-link">Focused</span>
                             </li>
                             <li className="k-item">
                                 <span className="k-link">Closable</span>
                                 <Button fillMode="flat" icon="close" className="k-remove-tab"></Button>
                             </li>
-                            <li className="k-item k-last k-state-disabled">
+                            <li className="k-item k-last k-disabled">
                                 <span className="k-link">Disabled</span>
                             </li>
                         </ul>
                         <Button fillMode="flat" rounded={null} size={null} icon="arrow-60-down" className="k-tabstrip-next"></Button>
                     </div>
-                    <div className="k-tabstrip-content k-state-active">
+                    <div className="k-tabstrip-content k-active">
                         <div>Scrollable Right orientation</div>
                     </div>
                 </div>

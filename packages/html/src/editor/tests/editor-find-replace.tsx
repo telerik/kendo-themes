@@ -43,7 +43,7 @@ root.render(
                         <div className="k-tabstrip k-tabstrip-top k-editor-find-replace">
                             <div className="k-tabstrip-items-wrapper k-hstack">
                                 <ul className="k-tabstrip-items k-reset">
-                                    <li className="k-item k-state-active k-tab-on-top">
+                                    <li className="k-item k-active k-tab-on-top">
                                         <span className="k-link">Find</span>
                                     </li>
                                     <li className="k-item">
@@ -51,7 +51,7 @@ root.render(
                                     </li>
                                 </ul>
                             </div>
-                            <div className="k-tabstrip-content k-state-active">
+                            <div className="k-tabstrip-content k-active">
                                 <div className="k-form k-form-horizontal">
                                     <div className="k-form-field">
                                         <div className="k-form-label">
@@ -110,12 +110,12 @@ root.render(
                                     <li className="k-item">
                                         <span className="k-link">Find</span>
                                     </li>
-                                    <li className="k-item k-state-active k-tab-on-top">
+                                    <li className="k-item k-active k-tab-on-top">
                                         <span className="k-link">Replace</span>
                                     </li>
                                 </ul>
                             </div>
-                            <div className="k-tabstrip-content k-state-active">
+                            <div className="k-tabstrip-content k-active">
                                 <div className="k-form k-form-horizontal">
                                     <div className="k-form-field">
                                         <div className="k-form-label">
