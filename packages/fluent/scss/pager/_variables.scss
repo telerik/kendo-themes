@@ -25,7 +25,7 @@ $kendo-pager-line-height: var( --kendo-line-height, normal ) !default;
 
 /// Background color of the pager.
 /// @group pager
-$kendo-pager-bg: var( --kendo-component-bg, transparent ) !default;
+$kendo-pager-bg: get-theme-color-var( neutral-10 ) !default;
 /// Text color of the pager.
 /// @group pager
 $kendo-pager-text: var( --kendo-component-text, inherit ) !default;

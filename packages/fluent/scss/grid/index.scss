@@ -1,0 +1,45 @@
+// Module meta
+$_kendo-module-meta: (
+    name: "grid",
+    dependencies: (
+        "icon",
+        "button",
+        "action-buttons",
+        "input",
+        "toolbar",
+        "textbox",
+        "checkbox",
+        "radio",
+        "autocomplete",
+        "datetimepicker",
+        "dropdownlist",
+        "numerictextbox",
+        "progressbar",
+        "validator",
+        "table",
+        "list",
+        "menu",
+        "dialog",
+        "pager",
+        "skeleton",
+        "draggable"
+    )
+);
+
+
+// Component
+@forward "_variables.scss";
+@use "_layout.scss" as *;
+@use "_theme.scss" as *;
+
+// Register
+@use "../core/module-system/" as module;
+@include module.register( $_kendo-module-meta... );
+
+// Expose
+@mixin styles() {
+    @include module.render( "grid" ) {
+        @include kendo-grid--layout();
+        @include kendo-grid--theme();
+    }
+}
