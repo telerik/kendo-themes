@@ -1,0 +1,54 @@
+@use "../core/color-system" as *;
+@use "../core/_variables.scss" as *;
+
+/// Border width of the wizard.
+/// @group wizard
+$kendo-wizard-border-width: 0px !default;
+/// Horizontal padding of the wizard.
+/// @group wizard
+$kendo-wizard-padding-x: map-get( $kendo-spacing, 6 ) !default;
+/// Vertical padding of the wizard.
+/// @group wizard
+$kendo-wizard-padding-y: map-get( $kendo-spacing, 6 ) !default;
+/// Font size of the wizard.
+/// @group wizard
+$kendo-wizard-font-size: var( --kendo-font-size, inherit ) !default;
+/// Line height of the wizard.
+/// @group wizard
+$kendo-wizard-line-height: var( --kendo-line-height, normal ) !default;
+/// Font family of the wizard.
+/// @group wizard
+$kendo-wizard-font-family: var( --kendo-font-family, inherit ) !default;
+
+
+/// Horizontal padding of the wizard steps.
+/// @group wizard
+$kendo-wizard-steps-padding-x: map-get( $kendo-spacing, 3 ) !default;
+/// Vertical padding of the wizard steps.
+/// @group wizard
+$kendo-wizard-steps-padding-y: map-get( $kendo-spacing, 3 ) !default;
+
+/// Horizontal padding of the wizard content.
+/// @group wizard
+$kendo-wizard-content-padding-x: map-get( $kendo-spacing, 3 ) !default;
+/// Vertical padding of the wizard content.
+/// @group wizard
+$kendo-wizard-content-padding-y: map-get( $kendo-spacing, 3 ) !default;
+/// Text color of the wizard content.
+/// @group wizard
+$kendo-wizard-content-text: var( --kendo-component-text, initial ) !default;
+/// Background color of the wizard content.
+/// @group wizard
+$kendo-wizard-content-bg: var( --kendo-component-bg, initial ) !default;
+
+/// Horizontal margin of the wizard buttons container.
+/// @group wizard
+$kendo-wizard-buttons-margin-x: map-get( $kendo-spacing, 7 ) !default;
+/// Vertical margin of the wizard buttons container.
+/// @group wizard
+$kendo-wizard-buttons-margin-y: map-get( $kendo-spacing, 6 ) !default;
+
+/// Outline of the focused wizard step.
+/// @group wizard
+$kendo-wizard-step-border-focused: get-theme-color-var( neutral-130 ) !default;
+
