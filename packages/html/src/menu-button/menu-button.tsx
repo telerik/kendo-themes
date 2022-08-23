@@ -55,10 +55,7 @@ export class MenuButton extends React.Component<MenuButtonProps> {
                 dir={this.props.dir}
                 className={classNames(
                     className,
-                    'k-menu-button',
-                    {
-                        'k-icon-button': icon !== undefined,
-                    }
+                    'k-menu-button'
                 )}
                 text={text}
                 size={size}
