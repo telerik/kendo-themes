@@ -1,0 +1,18 @@
+@use "../core/mixins" as *;
+@use "_variables.scss" as *;
+
+@mixin kendo-tilelayout--theme() {
+
+    .k-tilelayout {
+        @include fill(
+            $bg: var( --kendo-tilelayout-bg, #{$kendo-tilelayout-bg} )
+        );
+    }
+
+    .k-layout-item-hint {
+        @include fill(
+            $bg: var( --kendo-tilelayout-hint-bg, #{$kendo-tilelayout-hint-bg} ),
+            $border: var( --kendo-tilelayout-hint-border, #{$kendo-tilelayout-hint-border} )
+        );
+    }
+}
