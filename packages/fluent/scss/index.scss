@@ -130,7 +130,7 @@
 // @use "pivotgrid";
 @use "treelist";
 @use "filter";
-// @use "filemanager";
+@use "filemanager";
 // @use "taskboard";
 
 
@@ -292,7 +292,7 @@
     // @include pivotgrid.styles();
     @include treelist.styles();
     @include filter.styles();
-    // @include filemanager.styles();
+    @include filemanager.styles();
     // @include taskboard.styles();
 
 
