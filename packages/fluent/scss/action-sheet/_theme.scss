@@ -1,0 +1,89 @@
+@use "_variables.scss" as *;
+@use "../core/mixins" as *;
+
+@mixin kendo-action-sheet--theme() {
+
+    // Actionsheet
+    .k-actionsheet {
+        color: var( --kendo-actionsheet-text, #{$kendo-actionsheet-text} );
+        background-color: var( --kendo-actionsheet-bg, #{$kendo-actionsheet-bg} );
+        border-color: var( --kendo-actionsheet-border, #{$kendo-actionsheet-border} );
+        @include box-shadow( var( --kendo-actionsheet-shadow, #{$kendo-actionsheet-shadow} ) );
+    }
+
+
+    // Actionsheet header
+    .k-actionsheet-header {
+        color: var( --kendo-actionsheet-header-text, #{$kendo-actionsheet-header-text} );
+        background-color: var( --kendo-actionsheet-header-bg, #{$kendo-actionsheet-header-bg} );
+        border-color: var( --kendo-actionsheet-header-border, #{$kendo-actionsheet-header-border} );
+        @include box-shadow( var( --kendo-actionsheet-header-shadow, #{$kendo-actionsheet-header-shadow} ) );
+    }
+
+
+    // Actionsheet items
+    .k-actionsheet-items {}
+
+
+    // Actionsheet item
+    .k-actionsheet-item {}
+
+    // Actionsheet item icon
+    .k-actionsheet-item-icon {
+        color: var( --kendo-actionsheet-item-icon-color, #{$kendo-actionsheet-item-icon-color} );
+    }
+
+    // Actionsheet item description
+    .k-actionsheet-item-description {
+       color: var( --kendo-actionsheet-item-description-text, #{$kendo-actionsheet-item-description-text} );
+    }
+
+
+    // Actionsheet action
+    .k-actionsheet-action {
+
+        color: var( --INTERNAL--kendo-actionsheet-item-text, inherit );
+        background-color: var( --INTERNAL--kendo-actionsheet-item-bg, inherit );
+        border-color: var( --INTERNAL--kendo-actionsheet-item-border, inherit );
+        outline-color: var( --INTERNAL--kendo-actionsheet-item-outline, inherit );
+
+        // Hover state
+        &:hover,
+        &.k-hover {
+            --INTERNAL--kendo-actionsheet-item-text: var( --kendo-actionsheet-item-hover-text, #{$kendo-actionsheet-item-hover-text} );
+            --INTERNAL--kendo-actionsheet-item-bg: var( --kendo-actionsheet-item-hover-bg, #{$kendo-actionsheet-item-hover-bg} );
+            --INTERNAL--kendo-actionsheet-item-border: var( --kendo-actionsheet-item-hover-border, #{$kendo-actionsheet-item-hover-border} );
+        }
+
+
+        // Focus state
+        &:focus,
+        &.k-focus {
+            --INTERNAL--kendo-actionsheet-item-text: var( --kendo-actionsheet-item-focus-text, #{$kendo-actionsheet-item-focus-text} );
+            --INTERNAL--kendo-actionsheet-item-bg: var( --kendo-actionsheet-item-focus-bg, #{$kendo-actionsheet-item-focus-bg} );
+            --INTERNAL--kendo-actionsheet-item-border: var( --kendo-actionsheet-item-focus-border, #{$kendo-actionsheet-item-focus-border} );
+            --INTERNAL--kendo-actionsheet-item-outline: var( --kendo-actionsheet-item-focus-outline, #{$kendo-actionsheet-item-focus-outline} );
+
+            &:hover,
+            &.k-hover {
+                --INTERNAL--kendo-actionsheet-item-text: var( --kendo-actionsheet-item-focus-hover-text, #{$kendo-actionsheet-item-focus-hover-text} );
+                --INTERNAL--kendo-actionsheet-item-bg: var( --kendo-actionsheet-item-focus-hover-bg, #{$kendo-actionsheet-item-focus-hover-bg} );
+                --INTERNAL--kendo-actionsheet-item-border: var( --kendo-actionsheet-item-focus-hover-border, #{$kendo-actionsheet-item-focus-hover-border} );
+            }
+        }
+
+
+        // Disabed state
+        &:disabled,
+        &.k-disabled {
+            --INTERNAL--kendo-actionsheet-item-text: var( --kendo-actionsheet-item-disabled-text, #{$kendo-actionsheet-item-disabled-text} );
+            --INTERNAL--kendo-actionsheet-item-bg: var( --kendo-actionsheet-item-disabled-bg, #{$kendo-actionsheet-item-disabled-bg} );
+            --INTERNAL--kendo-actionsheet-item-border: var( --kendo-actionsheet-item-disabled-border, #{$kendo-actionsheet-item-disabled-border} );
+
+            .k-actionsheet-item-description,
+            .k-actionsheet-item-icon {
+                color: inherit;
+            }
+        }
+    }
+}
