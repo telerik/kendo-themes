@@ -101,15 +101,6 @@ $kendo-theme-colors: (
     )
 ) !default;
 
-// Text colors
-@each $theme-color, $color-props in $kendo-theme-colors {
-    $_text: map-get( $color-props, text );
-
-    .k-text-#{$theme-color} {
-        color: var( --kendo-text-#{$theme-color} , #{$_text} ) !important; // sass-lint:disable-line no-important
-    }
-};
-
 $kendo-theme-colors-contrast: (
     primary: (
         text: $white,
@@ -137,6 +128,15 @@ $kendo-theme-colors-contrast: (
         border: get-theme-color-var( error-190 )
     )
 ) !default;
+
+// Text colors
+@each $theme-color, $color-props in $kendo-theme-colors {
+    $_text: map-get( $color-props, text );
+
+    .k-text-#{$theme-color} {
+        color: var( --kendo-text-#{$theme-color} , #{$_text} ) !important; // sass-lint:disable-line no-important
+    }
+};
 
 :root {
     @include css-vars( $kendo-fluent-palettes );
