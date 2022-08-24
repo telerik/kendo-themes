@@ -1,7 +1,7 @@
 @use "../mixins" as *;
+@use "../variables" as *;
 
 // Disabled state
-.k-state-disabled,
 .k-disabled,
 .k-widget[disabled],
 .k-disabled {
@@ -17,3 +17,30 @@
     }
 }
 
+// Horizontal line
+.k-hr {
+    margin-block: map-get( $kendo-spacing, 4 );
+    padding: 0;
+    height: 0;
+    border-width: 1px 0 0;
+    border-style: solid;
+    border-color:  var( --kendo-component-border, inherit );
+    display: block;
+    float: none;
+    clear: both;
+}
+
+// Horizontal rule
+.k-d-flex-row > .k-hr {
+    margin: 0;
+    width: 0;
+    height: auto;
+    border-width: 0 0 0 1px;
+    flex: 0 0 auto;
+}
+
+// Vertical rule
+.k-d-flex-col > .k-hr {
+    margin: 0;
+    flex: 0 0 auto;
+}

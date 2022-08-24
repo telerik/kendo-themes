@@ -95,7 +95,7 @@
 
 
 // Popups and modals
-// @use "action-sheet";
+@use "action-sheet";
 @use "dialog";
 // @use "drawer";
 @use "notification";
@@ -258,7 +258,7 @@
 
     // Popups and modals
     @include window.styles();
-    // @include action-sheet.styles();
+    @include action-sheet.styles();
     @include dialog.styles();
     // @include drawer.styles();
     @include notification.styles();

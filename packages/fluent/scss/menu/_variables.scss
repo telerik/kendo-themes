@@ -45,7 +45,7 @@ $kendo-menu-item-focus-outline-style: solid !default;
 
 /// The text color of the menu.
 /// @group menu
-$kendo-menu-text: var( --kendo-body-text, $kendo-body-text ) !default;
+$kendo-menu-text: var( --kendo-body-text, inherit ) !default;
 /// The background color of the menu.
 /// @group menu
 $kendo-menu-bg: transparent !default;
@@ -65,7 +65,7 @@ $kendo-menu-item-bg: transparent !default;
 
 /// The text color of hover menu items.
 /// @group menu
-$kendo-menu-item-hover-text: var( --kendo-hover-text, $kendo-hover-text ) !default;
+$kendo-menu-item-hover-text: var( --kendo-hover-text, inherit ) !default;
 /// The background color of hover menu items.
 /// @group menu
 $kendo-menu-item-hover-bg: var( --kendo-hover-bg, initial ) !default;
@@ -78,7 +78,7 @@ $kendo-menu-item-focus-text: $kendo-menu-item-text !default;
 $kendo-menu-item-focus-bg: $kendo-menu-item-bg !default;
 /// The outline of focused menu items.
 /// @group menu
-$kendo-menu-item-focus-outline: var( --kendo-focus-outline, $kendo-focus-outline ) !default;
+$kendo-menu-item-focus-outline: var( --kendo-focus-outline, none ) !default;
 
 /// The text color of expanded menu items.
 /// @group menu
