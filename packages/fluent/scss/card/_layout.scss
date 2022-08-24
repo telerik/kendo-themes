@@ -64,6 +64,12 @@
     // Card subtitle
     .k-card-subtitle {
         @extend .k-h6;
+        font-weight: var( --kendo-card-title-font-weight, #{$kendo-card-title-font-weight} );
+        margin-block-end: var( --kendo-card-subtitle-margin-bottom, #{$kendo-card-subtitle-margin-bottom} );
+
+        @at-root .k-card-title + & {
+            margin-block-start: calc( var( --kendo-card-title-margin-bottom, #{$kendo-card-title-margin-bottom} ) * -1 );
+        }
     }
 
 
@@ -118,22 +124,6 @@
 
         > .k-card-actions {
             padding: 0;
-        }
-
-        .k-card-title {
-            margin-block-end: var( --kendo-card-title-margin-bottom, #{$kendo-card-title-margin-bottom} );
-
-            & + .k-card-subtitle {
-                margin-block-start: calc( -1 * var( --kendo-card-title-margin-bottom, #{$kendo-card-title-margin-bottom} ) );
-            }
-        }
-
-        .k-card-subtitle {
-            margin-block-end: var( --kendo-card-subtitle-margin-bottom, #{$kendo-card-subtitle-margin-bottom} );
-
-            & + .k-card-subtitle {
-                margin-block-start: - var( --kendo-card-subtitle-margin-bottom, #{$kendo-card-subtitle-margin-bottom} );
-            }
         }
     }
 
