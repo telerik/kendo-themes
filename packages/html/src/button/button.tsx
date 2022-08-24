@@ -71,7 +71,7 @@ export class Button extends React.Component<ButtonProps> {
                         [`k-button-${fillMode}`]: fillMode,
                         [`k-button-${fillMode}-${themeColor}`]: Boolean(fillMode && themeColor),
                         [`k-rounded-${kendoThemeMaps.roundedMap[rounded!] || rounded}`]: rounded,
-                        'k-icon-button': !hasChildren && hasIcon,
+                        'k-icon-button': !text && !hasChildren && hasIcon,
                         'k-hover': hover,
                         'k-focus': focus,
                         'k-active': active,
