@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { Icon } from '../../icon';
+import { Badge } from '../badge';
 
 const root = ReactDOM.createRoot(
     document.getElementById('app') as HTMLElement
@@ -33,48 +34,156 @@ root.render(
 
 
             <span>Small</span>
-            <span><span className="k-badge k-badge-sm k-badge-solid k-badge-success">99</span></span>
-            <span><span className="k-badge k-badge-sm k-badge-solid k-badge-success"><Icon className="k-badge-icon" name="check" /></span></span>
-            <span><span className="k-badge k-badge-sm k-badge-solid k-badge-success k-badge-rounded"><Icon className="k-badge-icon" name="check" /></span></span>
-            <span><span className="k-badge k-badge-sm k-badge-solid k-badge-success k-badge-pill"><Icon className="k-badge-icon" name="check" /></span></span>
-            <span><span className="k-badge k-badge-sm k-badge-solid k-badge-success k-badge-circle"><Icon className="k-badge-icon" name="check" /></span></span>
+            <span>
+                <Badge size="small" themeColor="success">99</Badge>
+            </span>
+            <span>
+                <Badge size="small" themeColor="success">
+                    <Icon className="k-badge-icon" name="check"></Icon>
+                </Badge>
+            </span>
+            <span>
+                <Badge size="small" rounded="small" themeColor="success">
+                    <Icon className="k-badge-icon" name="check"></Icon>
+                </Badge>
+            </span>
+            <span>
+                <Badge size="small" rounded="full" themeColor="success">
+                    <Icon className="k-badge-icon" name="check"></Icon>
+                </Badge>
+            </span>
+            <span>
+                <Badge size="small" rounded="full" themeColor="success">
+                    <Icon className="k-badge-icon" name="check"></Icon>
+                </Badge>
+            </span>
 
             <span>^ outline</span>
-            <span><span className="k-badge k-badge-sm k-badge-outline k-badge-primary">99</span></span>
-            <span><span className="k-badge k-badge-sm k-badge-outline k-badge-primary"><span className="k-badge-icon k-svg-icon"><svg viewBox="0 0 50 50"><circle cx="25" cy="25" r="25" /></svg></span></span></span>
-            <span><span className="k-badge k-badge-sm k-badge-outline k-badge-primary k-badge-rounded"><span className="k-badge-icon k-svg-icon"><svg viewBox="0 0 50 50"><circle cx="25" cy="25" r="25" /></svg></span></span></span>
-            <span><span className="k-badge k-badge-sm k-badge-outline k-badge-primary k-badge-pill"><span className="k-badge-icon k-svg-icon"><svg viewBox="0 0 50 50"><circle cx="25" cy="25" r="25" /></svg></span></span></span>
-            <span><span className="k-badge k-badge-sm k-badge-outline k-badge-primary k-badge-circle"><span className="k-badge-icon k-svg-icon"><svg viewBox="0 0 50 50"><circle cx="25" cy="25" r="25" /></svg></span></span></span>
+            <span>
+                <Badge fillMode="outline" size="small">99</Badge>
+            </span>
+            <span>
+                <Badge fillMode="outline" size="small">
+                    <Icon className="k-badge-icon" name="x-circle"></Icon>
+                </Badge>
+            </span>
+            <span>
+                <Badge fillMode="outline" size="small" rounded="small">
+                    <Icon className="k-badge-icon" name="x-circle"></Icon>
+                </Badge>
+            </span>
+            <span>
+                <Badge fillMode="outline" size="small" rounded="full">
+                    <Icon className="k-badge-icon" name="x-circle"></Icon>
+                </Badge>
+            </span>
+            <span>
+                <Badge fillMode="outline" size="small" rounded="full">
+                    <Icon className="k-badge-icon" name="x-circle"></Icon>
+                </Badge>
+            </span>
 
 
             <span>Normal</span>
-            <span><span className="k-badge k-badge-md k-badge-solid k-badge-info">99</span></span>
-            <span><span className="k-badge k-badge-md k-badge-solid k-badge-info"><Icon className="k-badge-icon" name="calendar" /></span></span>
-            <span><span className="k-badge k-badge-md k-badge-solid k-badge-info k-badge-rounded"><Icon className="k-badge-icon" name="calendar" /></span></span>
-            <span><span className="k-badge k-badge-md k-badge-solid k-badge-info k-badge-pill"><Icon className="k-badge-icon" name="calendar" /></span></span>
-            <span><span className="k-badge k-badge-md k-badge-solid k-badge-info k-badge-circle"><Icon className="k-badge-icon" name="calendar" /></span></span>
+            <span>
+                <Badge themeColor="info">99</Badge>
+            </span>
+            <span>
+                <Badge themeColor="info">
+                    <Icon className="k-badge-icon" name="calendar"></Icon>
+                </Badge>
+            </span>
+            <span>
+                <Badge themeColor="info" rounded="medium">
+                    <Icon className="k-badge-icon" name="calendar"></Icon>
+                </Badge>
+            </span>
+            <span>
+                <Badge themeColor="info" rounded="full">
+                    <Icon className="k-badge-icon" name="calendar"></Icon>
+                </Badge>
+            </span>
+            <span>
+                <Badge themeColor="info" rounded="full">
+                    <Icon className="k-badge-icon" name="calendar"></Icon>
+                </Badge>
+            </span>
 
             <span>^ outline</span>
-            <span><span className="k-badge k-badge-md k-badge-outline k-badge-tertiary">99</span></span>
-            <span><span className="k-badge k-badge-md k-badge-outline k-badge-tertiary"><span className="k-badge-icon k-svg-icon"><svg viewBox="0 0 50 50"><circle cx="25" cy="25" r="25" /></svg></span></span></span>
-            <span><span className="k-badge k-badge-md k-badge-outline k-badge-tertiary k-badge-rounded"><span className="k-badge-icon k-svg-icon"><svg viewBox="0 0 50 50"><circle cx="25" cy="25" r="25" /></svg></span></span></span>
-            <span><span className="k-badge k-badge-md k-badge-outline k-badge-tertiary k-badge-pill"><span className="k-badge-icon k-svg-icon"><svg viewBox="0 0 50 50"><circle cx="25" cy="25" r="25" /></svg></span></span></span>
-            <span><span className="k-badge k-badge-md k-badge-outline k-badge-tertiary k-badge-circle"><span className="k-badge-icon k-svg-icon"><svg viewBox="0 0 50 50"><circle cx="25" cy="25" r="25" /></svg></span></span></span>
+            <span>
+                <Badge fillMode="outline" themeColor="tertiary">99</Badge>
+            </span>
+            <span>
+                <Badge fillMode="outline" themeColor="tertiary">
+                    <Icon className="k-badge-icon" name="plus-circle"></Icon>
+                </Badge>
+            </span>
+            <span>
+                <Badge fillMode="outline" themeColor="tertiary" rounded="medium">
+                    <Icon className="k-badge-icon" name="plus-circle"></Icon>
+                </Badge>
+            </span>
+            <span>
+                <Badge fillMode="outline" themeColor="tertiary" rounded="full">
+                    <Icon className="k-badge-icon" name="plus-circle"></Icon>
+                </Badge>
+            </span>
+            <span>
+                <Badge fillMode="outline" themeColor="tertiary" rounded="full">
+                    <Icon className="k-badge-icon" name="plus-circle"></Icon>
+                </Badge>
+            </span>
 
 
             <span>Large</span>
-            <span><span className="k-badge k-badge-lg k-badge-solid k-badge-warning">99</span></span>
-            <span><span className="k-badge k-badge-lg k-badge-solid k-badge-warning"><Icon className="k-badge-icon" name="bell" /></span></span>
-            <span><span className="k-badge k-badge-lg k-badge-solid k-badge-warning k-badge-rounded"><Icon className="k-badge-icon" name="bell" /></span></span>
-            <span><span className="k-badge k-badge-lg k-badge-solid k-badge-warning k-badge-pill"><Icon className="k-badge-icon" name="bell" /></span></span>
-            <span><span className="k-badge k-badge-lg k-badge-solid k-badge-warning k-badge-circle"><Icon className="k-badge-icon" name="bell" /></span></span>
+            <span>
+                <Badge size="large" themeColor="warning">99</Badge>
+            </span>
+            <span>
+                <Badge size="large" themeColor="warning">
+                    <Icon className="k-badge-icon" name="bell"></Icon>
+                </Badge>
+            </span>
+            <span>
+                <Badge size="large" themeColor="warning" rounded="large">
+                    <Icon className="k-badge-icon" name="bell"></Icon>
+                </Badge>
+            </span>
+            <span>
+                <Badge size="large" themeColor="warning" rounded="full">
+                    <Icon className="k-badge-icon" name="bell"></Icon>
+                </Badge>
+            </span>
+            <span>
+                <Badge size="large" themeColor="warning" rounded="full">
+                    <Icon className="k-badge-icon" name="bell"></Icon>
+                </Badge>
+            </span>
 
             <span>^ outline</span>
-            <span><span className="k-badge k-badge-lg k-badge-outline k-badge-error">99</span></span>
-            <span><span className="k-badge k-badge-lg k-badge-outline k-badge-error"><span className="k-badge-icon k-svg-icon"><svg viewBox="0 0 50 50"><circle cx="25" cy="25" r="25" /></svg></span></span></span>
-            <span><span className="k-badge k-badge-lg k-badge-outline k-badge-error k-badge-rounded"><span className="k-badge-icon k-svg-icon"><svg viewBox="0 0 50 50"><circle cx="25" cy="25" r="25" /></svg></span></span></span>
-            <span><span className="k-badge k-badge-lg k-badge-outline k-badge-error k-badge-pill"><span className="k-badge-icon k-svg-icon"><svg viewBox="0 0 50 50"><circle cx="25" cy="25" r="25" /></svg></span></span></span>
-            <span><span className="k-badge k-badge-lg k-badge-outline k-badge-error k-badge-circle"><span className="k-badge-icon k-svg-icon"><svg viewBox="0 0 50 50"><circle cx="25" cy="25" r="25" /></svg></span></span></span>
+            <span>
+                <Badge size="large" fillMode="outline" themeColor="error">99</Badge>
+            </span>
+            <span>
+                <Badge size="large" fillMode="outline" themeColor="error">
+                    <Icon className="k-badge-icon" name="x-circle"></Icon>
+                </Badge>
+            </span>
+            <span>
+                <Badge size="large" fillMode="outline" themeColor="error" rounded="large">
+                    <Icon className="k-badge-icon" name="x-circle"></Icon>
+                </Badge>
+            </span>
+            <span>
+                <Badge size="large" fillMode="outline" themeColor="error" rounded="full">
+                    <Icon className="k-badge-icon" name="x-circle"></Icon>
+                </Badge>
+            </span>
+            <span>
+                <Badge size="large" fillMode="outline" themeColor="error" rounded="full">
+                    <Icon className="k-badge-icon" name="x-circle"></Icon>
+                </Badge>
+            </span>
 
 
             <span></span>
@@ -87,36 +196,36 @@ root.render(
 
             <span>Inline</span>
             <div className="k-badge-container">
-                <span className="k-badge k-badge-md k-badge-solid k-badge-primary k-badge-border-cutout">Rect</span>
+                <Badge cutoutBorder>Rect</Badge>
             </div>
             <div className="k-badge-container">
-                <span className="k-badge k-badge-md k-badge-solid k-badge-primary k-badge-border-cutout k-badge-rounded">Round</span>
+                <Badge rounded="medium" cutoutBorder>Round</Badge>
             </div>
             <div className="k-badge-container">
-                <span className="k-badge k-badge-md k-badge-solid k-badge-primary k-badge-border-cutout k-badge-pill">Pill</span>
+                <Badge rounded="full" cutoutBorder>Pill</Badge>
             </div>
             <div className="k-badge-container">
-                <span className="k-badge k-badge-md k-badge-solid k-badge-primary k-badge-border-cutout k-badge-circle">99+</span>
+                <Badge rounded="full" cutoutBorder>1</Badge>
             </div>
             <div className="k-badge-container">
-                <span className="k-badge k-badge-md k-badge-solid k-badge-primary k-badge-border-cutout k-badge-dot"></span>
+                <Badge rounded="full" cutoutBorder></Badge>
             </div>
 
             <span>Edge</span>
             <div className="k-badge-container">
-                <span className="k-badge k-badge-md k-badge-solid k-badge-primary k-badge-border-cutout k-badge-edge k-top-end">Rect</span>
+                <Badge position="edge" align="top-end" cutoutBorder>Rect</Badge>
             </div>
             <div className="k-badge-container">
-                <span className="k-badge k-badge-md k-badge-solid k-badge-primary k-badge-border-cutout k-badge-rounded k-badge-edge k-top-end">Round</span>
+                <Badge rounded="medium" position="edge" align="top-end" cutoutBorder>Round</Badge>
             </div>
             <div className="k-badge-container">
-                <span className="k-badge k-badge-md k-badge-solid k-badge-primary k-badge-border-cutout k-badge-pill k-badge-edge k-top-end">Pill</span>
+                <Badge rounded="full" position="edge" align="top-end" cutoutBorder>Pill</Badge>
             </div>
             <div className="k-badge-container">
-                <span className="k-badge k-badge-md k-badge-solid k-badge-primary k-badge-border-cutout k-badge-circle k-badge-edge k-top-end">99+</span>
+                <Badge rounded="full" position="edge" align="top-end" cutoutBorder>1</Badge>
             </div>
             <div className="k-badge-container">
-                <span className="k-badge k-badge-md k-badge-solid k-badge-primary k-badge-border-cutout k-badge-dot k-badge-edge k-top-end"></span>
+                <Badge rounded="full" position="edge" align="top-end" cutoutBorder></Badge>
             </div>
 
         </div>

@@ -79,12 +79,28 @@ function borderedClass( bordered, prefix ) {
     return `${prefix}-bordered`;
 }
 
-function positionClass( position, prefix ) {
+function placementClass( placement, prefix ) {
+    if ( placement === null ) {
+        return '';
+    }
+
+    return `${prefix}-${placement}`;
+}
+
+function positionClass( position ) {
     if ( position === null ) {
         return '';
     }
 
-    return `k-pos-absolute ${prefix}-${position}`;
+    return `k-pos-${position}`;
+}
+
+function alignClass( align, prefix ) {
+    if ( align === null ) {
+        return '';
+    }
+
+    return `${prefix}-${align}`;
 }
 
 function calloutClass( callout ) {
@@ -154,6 +170,8 @@ export {
     fillModeClass,
     themeColorClass,
     borderedClass,
+    alignClass,
+    placementClass,
     positionClass,
     calloutClass,
 
