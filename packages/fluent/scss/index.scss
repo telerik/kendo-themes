@@ -21,7 +21,7 @@
 @use "overlay";
 @use "popup";
 // @use "ripple";
-// @use "table";
+@use "table";
 // @use "virtual-scroller";
 
 
@@ -183,7 +183,7 @@
     @include overlay.styles();
     @include popup.styles();
     // @include ripple.styles();
-    // @include table.styles();
+    @include table.styles();
     // @include virtual-scroller.styles();
 
 
