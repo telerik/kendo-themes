@@ -117,6 +117,12 @@
             align-items: center;
         }
 
+        // Template item
+        .k-toolbar-item:focus {
+            text-decoration: none;
+            outline: 0;
+        }
+
     }
 
 
