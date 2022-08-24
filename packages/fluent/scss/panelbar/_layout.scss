@@ -1,7 +1,6 @@
 @use "_variables.scss" as *;
 @use "../core/color-system" as *;
 @use "../core/variables" as *;
-@use "../icon/variables" as *;
 
 @mixin kendo-panelbar--layout() {
 
@@ -45,7 +44,7 @@
                 text-decoration: none;
                 display: flex;
                 flex-flow: row nowrap;
-                gap: var( --kendo-icon-spacing, #{$kendo-icon-spacing} );
+                gap: var( --kendo-icon-spacing, .5rem );
                 align-items: center;
                 align-content: center;
                 position: relative;

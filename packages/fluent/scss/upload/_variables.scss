@@ -1,6 +1,5 @@
 @use "../core/color-system" as *;
 @use "../core/_variables.scss" as *;
-@use "../icon/_variables.scss" as *;
 
 /// Width of the border around the upload.
 /// @group upload
@@ -70,14 +69,14 @@ $kendo-upload-multiple-items-spacing: map-get( $kendo-spacing, 4 ) !default;
 $kendo-upload-validation-font-size: var( --kendo-font-size-xs, inherit ) !default;
 /// Spacing between the icon and text in the upload.
 /// @group upload
-$kendo-upload-icon-spacing: var( --kendo-icon-spacing, #{$kendo-icon-spacing} ) !default;
+$kendo-upload-icon-spacing: var( --kendo-icon-spacing, .5rem ) !default;
 /// Color of the icons in the upload.
 /// @group upload
 $kendo-upload-icon-color: var( --kendo-subtle-text, inherit ) !default;
 
 /// Font size of the file icons in the upload.
 /// @group upload
-$kendo-upload-group-icon-size: var( --kendo-icon-size-lg, #{$kendo-icon-size-lg} ) !default;
+$kendo-upload-group-icon-size: var( --kendo-icon-size-lg, 2rem ) !default;
 
 /// Thickness of the upload progress bar.
 /// @group upload

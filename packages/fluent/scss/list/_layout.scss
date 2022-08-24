@@ -1,5 +1,4 @@
 @use "../core/_variables.scss" as *;
-@use "../icon/_variables.scss"as *;
 @use "_variables.scss" as *;
 
 @mixin kendo-list--layout() {
@@ -88,7 +87,7 @@
         flex-flow: row nowrap;
         align-items: center;
         align-content: center;
-        gap: var( --kendo-icon-spacing, #{$kendo-icon-spacing} );
+        gap: var( --kendo-icon-spacing, .5rem );
         position: relative;
         transition-property: color, background-color, outline-color, box-shadow;
         transition-duration: 200ms;
@@ -132,7 +131,7 @@
         flex-flow: row nowrap;
         align-items: center;
         align-content: center;
-        gap: var( --kendo-icon-spacing, #{$kendo-icon-spacing} );
+        gap: var( --kendo-icon-spacing, .5rem );
         position: relative;
     }
 

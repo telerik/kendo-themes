@@ -1,6 +1,5 @@
 @use "../core/color-system" as *;
 @use "../core/_variables.scss" as *;
-@use "../icon/_variables.scss" as *;
 
 /// Horizontal padding of the action sheet.
 /// @group action-sheet
@@ -98,7 +97,7 @@ $kendo-actionsheet-item-spacing: map-get( $kendo-spacing, 2 ) !default;
 
 /// Size of the action sheet item icon.
 /// @group action-sheet
-$kendo-actionsheet-item-icon-size: var( --kendo-icon-size, #{$kendo-icon-size} ) !default;
+$kendo-actionsheet-item-icon-size: var( --kendo-icon-size, 1rem ) !default;
 /// Color of the action sheet item icon.
 /// @group action-sheet
 $kendo-actionsheet-item-icon-color: get-theme-color-var( primary-150 ) !default;
