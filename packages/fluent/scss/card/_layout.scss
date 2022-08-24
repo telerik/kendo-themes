@@ -56,6 +56,8 @@
     // Card title
     .k-card-title {
         @extend .k-h5;
+        font-weight: var( --kendo-card-title-font-weight, #{$kendo-card-title-font-weight} );
+        margin-block-end: var( --kendo-card-title-margin-bottom, #{$kendo-card-title-margin-bottom} );
     }
 
 
@@ -67,6 +69,9 @@
 
     // Header
     .k-card-header {
+        @extend .k-h5;
+        font-weight: var( --kendo-card-title-font-weight, #{$kendo-card-title-font-weight} );
+        margin: 0;
         padding-inline: var( --kendo-card-header-padding-x, #{$kendo-card-header-padding-x} );
         padding-block: var( --kendo-card-header-padding-y, #{$kendo-card-header-padding-y} );
         border-width: 0 0 var( --kendo-card-header-border-width, #{$kendo-card-header-border-width} );
