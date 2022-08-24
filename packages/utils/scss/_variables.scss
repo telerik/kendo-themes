@@ -272,7 +272,7 @@ $kendo-utils: (
         10: span 10 / span 10,
         11: span 11 / span 11,
         12: span 12 / span 12,
-        full: 1 / -1,
+        full: unquote("1 / -1"),
         auto: auto
     ),
     "grid-row-start": (
@@ -348,18 +348,15 @@ $kendo-utils: (
         start: flex-start,
         end: flex-end,
         center: center,
-        between: between,
-        around: around,
-        evenly: evenly
+        between: space-between,
+        around: space-around,
+        evenly: space-evenly
     ),
     "align-items": (
         normal: normal,
         start: flex-start,
         end: flex-end,
         center: center,
-        between: between,
-        around: around,
-        evenly: evenly,
         stretch: stretch
     ),
     "align-self": (
@@ -375,9 +372,9 @@ $kendo-utils: (
         start: flex-start,
         end: flex-end,
         center: center,
-        between: between,
-        around: around,
-        evenly: evenly,
+        between: space-between,
+        around: space-around,
+        evenly: space-evenly,
         stretch: stretch
     ),
     "justify-items": (
@@ -385,9 +382,6 @@ $kendo-utils: (
         start: flex-start,
         end: flex-end,
         center: center,
-        between: between,
-        around: around,
-        evenly: evenly,
         stretch: stretch
     ),
     "justify-self": (
@@ -403,9 +397,9 @@ $kendo-utils: (
         start: flex-start,
         end: flex-end,
         center: center,
-        between: between,
-        around: around,
-        evenly: evenly,
+        between: space-between,
+        around: space-around,
+        evenly: space-evenly,
         stretch: stretch
     ),
     "place-items": (
@@ -413,9 +407,6 @@ $kendo-utils: (
         start: flex-start,
         end: flex-end,
         center: center,
-        between: between,
-        around: around,
-        evenly: evenly,
         stretch: stretch
     ),
     "place-self": (
@@ -571,7 +562,10 @@ $kendo-utils: (
         dashed,
         dotted,
         double,
-        hidden,
+        groove,
+        ridge,
+        inset,
+        outset,
         none
     ),
     "outline-color": (),
@@ -602,13 +596,13 @@ $kendo-utils: (
     // Transform
     "flip": true,
     "scale": (
-        0,
-        .25,
-        .5,
-        .75,
-        1,
-        1.25,
-        1.5
+        "0",
+        ".25",
+        ".5",
+        ".75",
+        "1",
+        "1.25",
+        "1.5"
     ),
     "rotate": (
         0: 0deg,
@@ -620,7 +614,7 @@ $kendo-utils: (
         270: 270deg,
         315: 315deg
     ),
-    "translate": $kendo-sizing,
+    "translate": map-remove( $kendo-sizing, "auto", "min", "max", "fit" ),
     "skew": (
         0: 0deg,
         1: 1deg,

@@ -1,6 +1,7 @@
 @include exports("pager/theme") {
 
-    .k-pager-wrap {
+    .k-pager-wrap,
+    .k-pager {
         @include fill(
             $pager-text,
             $pager-bg,

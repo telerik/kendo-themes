@@ -1,0 +1,42 @@
+@use "../core/" as *;
+@use "_variables.scss" as *;
+
+@mixin kendo-tooltip--theme() {
+
+    .k-tooltip-wrapper .k-tooltip {
+        @include box-shadow( var( --kendo-tooltip-shadow, #{$kendo-tooltip-shadow} ) );
+    }
+
+    .k-tooltip {
+        @include box-shadow( var( --kendo-tooltip-shadow, #{$kendo-tooltip-shadow} ) );
+
+        --INTERNAL--kendo-tooltip-text: var( --kendo-tooltip-text, #{$kendo-tooltip-text} );
+        --INTERNAL--kendo-tooltip-bg: var( --kendo-tooltip-bg, #{$kendo-tooltip-bg} );
+        --INTERNAL--kendo-tooltip-border: var( --kendo-tooltip-border, #{$kendo-tooltip-border} );
+
+            color: var( --INTERNAL--kendo-tooltip-text, initial );
+            background-color: var( --INTERNAL--kendo-tooltip-bg, initial );
+            border-color: var( --INTERNAL--kendo-tooltip-border, initial );
+
+        .k-callout {
+            color: var( --INTERNAL--kendo-tooltip-bg, initial );
+        }
+    }
+
+    @each $theme-color, $color-props in $kendo-tooltip-theme-colors {
+            $_bg: map-get( $color-props , bg );
+            $_text: map-get( $color-props , text );
+            $_border: map-get( $color-props , border );
+
+        .k-tooltip-#{$theme-color} {
+            --kendo-tooltip-text: #{$_text};
+            --kendo-tooltip-bg: #{$_bg};
+            --kendo-tooltip-border: #{$_border};
+        }
+    }
+
+    .k-tooltip-button {
+        color: var( --kendo-tooltip-button-text, #{$kendo-tooltip-button-text} );
+    }
+
+}

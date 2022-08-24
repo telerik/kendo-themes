@@ -1,0 +1,29 @@
+// Module meta
+$_kendo-module-meta: (
+    name: "coloreditor",
+    dependencies: (
+        "button",
+        "action-buttons",
+        "color-preview",
+        "colorpalette",
+        "colorgradient"
+    )
+);
+
+
+// Component
+@forward "_variables.scss";
+@use "_layout.scss" as *;
+@use "_theme.scss" as *;
+
+// Register
+@use "../core/module-system/" as module;
+@include module.register( $_kendo-module-meta... );
+
+// Expose
+@mixin styles() {
+    @include module.render( "coloreditor" ) {
+        @include kendo-coloreditor--layout();
+        @include kendo-coloreditor--theme();
+    }
+}

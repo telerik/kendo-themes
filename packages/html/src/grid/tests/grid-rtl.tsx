@@ -60,7 +60,7 @@ root.render(
                             </tbody>
                         </table>
                     </div>
-                    <div className="k-widget k-pager-wrap k-grid-pager">
+                    <div className="k-widget k-pager k-grid-pager">
                         <a className="k-link k-pager-nav k-pager-first k-state-disabled"><Icon name="arrow-end-left" /></a>
                         <a className="k-link k-pager-nav k-state-disabled"><Icon name="arrow-w" /></a>
                         <div className="k-pager-numbers-wrap">

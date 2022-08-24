@@ -35,7 +35,7 @@ root.render(
                             </div>
                             <div className="k-time-list-container">
                                 <span className="k-time-highlight"></span>
-                                <div className="k-time-list-wrapper k-state-focused">
+                                <div className="k-time-list-wrapper k-focus">
                                     <span className="k-title">hour</span>
                                     <div className="k-time-list">
                                         <div className="k-time-container k-content k-scrollable">
@@ -276,7 +276,7 @@ root.render(
                                         </div>
                                     </div>
                                     <div className="k-time-separator">:</div>
-                                    <div className="k-time-list-wrapper k-state-focused">
+                                    <div className="k-time-list-wrapper k-focus">
                                         <span className="k-title">Minute</span>
                                         <div className="k-time-list">
                                             <div className="k-content k-scrollable k-time-container">

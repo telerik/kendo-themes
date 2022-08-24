@@ -1,3 +1,12 @@
+@use "../core/_variables.scss" as *;
+
 /// Font size of the icons.
 /// @group icon
-$kendo-icon-size: var(--kendo-font-size, inherit) !default;
+$kendo-icon-size: 1rem !default;
+/// Font size of the large icons.
+/// @group icon
+$kendo-icon-size-lg: calc( var(--kendo-icon-size, #{$kendo-icon-size}) * 2 ) !default;
+
+/// Spacing around the icons.
+/// @group icon
+$kendo-icon-spacing: map-get( $kendo-spacing, 2 ) !default;

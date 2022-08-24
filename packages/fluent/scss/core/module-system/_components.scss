@@ -17,16 +17,22 @@ $components: (
     "listgroup",
     "overlay",
     "ripple",
+    "virtual-scroller",
 
     // Indicators
     "avatar",
     "badge",
+    "color-preview",
     "loader",
     "loading",
+    "color-preview",
+    "skeleton",
+    "tooltip",
 
     // Native forms
     "button",
     "split-button",
+    "menu-button",
     "textbox",
     "textarea",
     "checkbox",
@@ -36,20 +42,28 @@ $components: (
     "slider",
 
     // Form helpers
-    "form",
+    "forms",
     "validator",
     "floating-label",
 
     // Form requirements
     "calendar",
     "popup",
+    "timeselector",
 
     // Augmented inputs
     "autocomplete",
     "captcha",
+    "colorpalette",
+    "colorgradient",
+    "coloreditor",
     "colorpicker",
     "combobox",
-    "datetime",
+    "dateinput",
+    "datepicker",
+    "timepicker",
+    "datetimepicker",
+    "daterangepicker",
     "dropdowngrid",
     "dropdownlist",
     "dropdowntree",
@@ -76,11 +90,10 @@ $components: (
     "notification",
     "popover",
     "responsivepanel",
-    "tooltip",
     "window",
 
     // Navigation
-    "bottom-nav",
+    "bottom-navigation",
     "breadcrumb",
     "pager",
     "stepper",
@@ -90,7 +103,7 @@ $components: (
 
     // Layout & containers
     "card",
-    "expander",
+    "expansion-panel",
     "panelbar",
     "splitter",
     "tilelayout",
@@ -119,11 +132,12 @@ $components: (
     "mediaplayer",
     "timeline",
     "pdf-viewer",
-    // "scroller",
+    "scroller",
     "scrollview",
 
     // Dataviz
     "dataviz",
     "map",
-    "orgchart"
+    "orgchart",
+    "signature"
 );

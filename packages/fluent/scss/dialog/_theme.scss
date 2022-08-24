@@ -7,8 +7,8 @@
         @include box-shadow( var( --kendo-dialog-shadow, #{$kendo-dialog-shadow} ) );
     }
 
-    // Titlebar
-    .k-dialog-titlebar {
+    // Title
+    .k-dialog-title {
         @include fill(
             var( --kendo-dialog-titlebar-text, #{$kendo-dialog-titlebar-text} ),
             var( --kendo-dialog-titlebar-bg, #{$kendo-dialog-titlebar-bg} ),

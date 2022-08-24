@@ -5,7 +5,6 @@
 
     // Button
     .k-button {
-        @include border-radius( var( --kendo-button-border-radius, #{$kendo-button-border-radius} ) );
         padding-inline: var( --INTERNAL--kendo-button-padding-x, 0 );
         padding-block: var( --INTERNAL--kendo-button-padding-y, 0 );
         border-width: var( --kendo-button-border-width, #{$kendo-button-border-width} );
@@ -49,7 +48,7 @@
             text-decoration: none;
         }
 
-        &:focus-visible::after,
+        &:focus::after,
         &.k-focus::after {
             content: "";
             position: absolute;
@@ -58,6 +57,14 @@
             outline-width: var( --kendo-button-focus-outline-width, #{$kendo-button-focus-outline-width} );
             outline-style: var( --kendo-button-focus-outline-style, #{$kendo-button-focus-outline-style} );
             z-index: 1;
+        }
+
+        // Fix for focused button with full roundness
+        &.k-rounded-full {
+            &:focus::after,
+            &.k-focus::after {
+               border-radius: inherit;
+            }
         }
     }
 
@@ -113,11 +120,105 @@
         border-color: transparent !important; // sass-lint:disable-line no-important
         box-shadow: none;
 
-        &:focus-visible::after,
+        &:focus::after,
         &.k-focus::after {
             @include border-radius( inherit );
             inset: var( --kendo-button-flat-focus-offset, #{$kendo-button-flat-focus-offset} );
             outline-width: var( --kendo-button-flat-focus-outline-width, #{$kendo-button-flat-focus-outline-width} );
+        }
+    }
+
+    .k-button-flat-base {
+        color: inherit;
+        background: none !important;
+        border-color: transparent !important;
+
+        // Overlay
+        &::before {
+            @include border-radius( inherit );
+            content: "";
+            background: currentColor;
+            opacity: 0;
+            display: block;
+            pointer-events: none;
+            position: absolute;
+            left: -$kendo-button-border-width;
+            right: -$kendo-button-border-width;
+            top: -$kendo-button-border-width;
+            bottom: -$kendo-button-border-width;
+            z-index: 0;
+            transition: opacity .2s ease-in-out;
+        }
+
+        // Hovered state
+        &:hover,
+        &.k-hover {
+            &::before {
+                opacity: .05;
+            }
+        }
+
+        // Focused state
+        &:focus,
+        &.k-focus {
+            &::before {
+                opacity: 0;
+            }
+
+            &::after {
+                outline-color: currentColor !important;
+                opacity: .13;
+            }
+
+            // Focus and hovered state
+            &:hover,
+            &.k-hover {
+                &::before {
+                    opacity: .05;
+                }
+            }
+        }
+
+        &.k-no-focus:not(:hover),
+        &.k-no-focus:not(.k-hover) {
+            &::before {
+                opacity: 0;
+            }
+        }
+
+        // Active state
+        &:active,
+        &.k-active {
+            &::before {
+                opacity: .08;
+            }
+
+            // Active and hovered state
+            &:hover,
+            &.k-hover {
+                &::before {
+                    opacity: .05;
+                }
+            }
+        }
+
+        // Selected state
+        &.k-selected {
+            &::before {
+                opacity: .08;
+            }
+
+            // Selected and hovered state
+            &:hover,
+            &.k-hover {
+                &::before {
+                    opacity: .05;
+                }
+            }
+        }
+
+        &.k-disabled {
+            color: var( --kendo-disabled-text, inherit );
         }
     }
 
@@ -135,7 +236,7 @@
         text-decoration: none;
         background: none;
 
-        &:focus-visible::after,
+        &:focus::after,
         &.k-focus::after {
             @include border-radius( inherit );
             inset: var( --kendo-button-link-focus-offset, #{$kendo-button-link-focus-offset} );
@@ -157,7 +258,7 @@
         color: inherit;
         background: none;
 
-        &:focus-visible::after,
+        &:focus::after,
         &.k-focus::after {
             inset: auto;
             outline-width: 0;

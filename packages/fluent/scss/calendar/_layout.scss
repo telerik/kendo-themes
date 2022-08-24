@@ -120,6 +120,7 @@
         min-width: var( --kendo-calendar-header-min-width, #{$kendo-calendar-header-min-width} );
         box-sizing: border-box;
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: space-between;
         flex: 0 0 auto;
@@ -159,6 +160,7 @@
     .k-calendar-view {
         margin: auto;
         padding-inline: var( --kendo-calendar-header-padding-x, #{$kendo-calendar-header-padding-x} );
+        padding-block-end: var( --kendo-calendar-view-padding-block-end, #{$kendo-calendar-view-padding-block-end} );
         // setting width / height prevents layout changes in meta views
         width: $kendo-calendar-view-width;
         min-height: $kendo-calendar-view-height;
@@ -312,6 +314,7 @@
             padding-block: var( --kendo-infinite-calendar-header-padding-y, #{$kendo-infinite-calendar-header-padding-y} );
             width: auto;
             min-width: 0;
+            flex-direction: row;
         }
 
         .k-calendar-weekdays {
@@ -377,6 +380,14 @@
     // Multiview calendar
     .k-calendar-range {
         width: auto;
+
+        .k-calendar-header {
+            flex-direction: row;
+
+            &.k-vstack {
+                flex-direction: column;
+            }
+        }
 
         .k-calendar-view {
             width: auto;

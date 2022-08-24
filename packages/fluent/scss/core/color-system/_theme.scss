@@ -4,8 +4,12 @@
 // Constants
 $white: #ffffff;
 $black: #000000;
-
 $rgba-transparent: rgba( 0, 0, 0, 0 );
+$gradient-transparent-to-black: rgba( black, 0), black;
+$gradient-transparent-to-white: rgba( white, 0), white;
+$gradient-black-to-transparent: black, rgba( black, 0);
+$gradient-white-to-transparent: white, rgba( white, 0);
+$gradient-rainbow: #ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff, #ff0000;
 
 // Root styles
 $kendo-body-bg: $white !default;
@@ -29,6 +33,8 @@ $kendo-selected-hover-bg: get-theme-color-var( neutral-40 ) !default;
 $kendo-selected-hover-text: get-theme-color-var( neutral-190 ) !default;
 $kendo-selected-hover-border: get-theme-color-var( neutral-130 ) !default;
 
+$kendo-focus-outline: get-theme-color-var( neutral-130 ) !default;
+
 $kendo-subtle-text: get-theme-color-var( neutral-130 ) !default;
 
 // Shadows
@@ -51,16 +57,19 @@ $kendo-link-text: get-theme-color-var( primary-130 ) !default;
 $kendo-link-hover-text: get-theme-color-var( primary-160 ) !default;
 
 // Validator
-$kendo-invalid-bg: null !default;
+$kendo-invalid-bg: initial !default;
 $kendo-invalid-text: get-theme-color-var( error-190 ) !default;
 $kendo-invalid-border: get-theme-color-var( error-190 ) !default;
-$kendo-invalid-shadow: null !default;
-
+$kendo-invalid-shadow: none !default;
 
 // Disabled Styling
 $kendo-disabled-bg: get-theme-color-var( neutral-20 ) !default;
 $kendo-disabled-text: get-theme-color-var( neutral-90 ) !default;
 $kendo-disabled-border: transparent !default;
+
+// Loading
+$kendo-loading-bg: $kendo-component-bg !default;
+$kendo-loading-text: currentColor !default;
 
 
 // Theme colors
@@ -81,7 +90,7 @@ $kendo-theme-colors: (
         border: get-theme-color-var( success-20 )
     ),
     warning: (
-        text: get-theme-color-var( warning-190 ),
+        text: get-theme-color-var( neutral-160 ),
         bg: get-theme-color-var( warning-20 ),
         border: get-theme-color-var( warning-20 )
     ),
@@ -89,6 +98,43 @@ $kendo-theme-colors: (
         text: get-theme-color-var( error-190 ),
         bg: get-theme-color-var( error-20 ),
         border: get-theme-color-var( error-20 )
+    )
+) !default;
+
+// Text colors
+@each $theme-color, $color-props in $kendo-theme-colors {
+    $_text: map-get( $color-props, text );
+
+    .k-text-#{$theme-color} {
+        color: var( --kendo-text-#{$theme-color} , #{$_text} ) !important; // sass-lint:disable-line no-important
+    }
+};
+
+$kendo-theme-colors-contrast: (
+    primary: (
+        text: $white,
+        bg: get-theme-color-var( primary-130 ),
+        border: get-theme-color-var( primary-130 )
+    ),
+    info: (
+        text: $white,
+        bg: get-theme-color-var( info-190 ),
+        border: get-theme-color-var( info-190 )
+    ),
+    success: (
+        text: $white,
+        bg: get-theme-color-var( success-190 ),
+        border: get-theme-color-var( success-190 )
+    ),
+    warning: (
+        text: get-theme-color-var( neutral-190 ),
+        bg: get-theme-color-var( warning-100 ),
+        border: get-theme-color-var( warning-100 )
+    ),
+    error: (
+        text: $white,
+        bg: get-theme-color-var( error-190 ),
+        border: get-theme-color-var( error-190 )
     )
 ) !default;
 
@@ -127,5 +173,12 @@ $kendo-theme-colors: (
     --kendo-selected-hover-text: #{$kendo-selected-hover-text};
     --kendo-selected-hover-border: #{$kendo-selected-hover-border};
 
+    --kendo-focus-outline: #{$kendo-focus-outline};
+
     --kendo-subtle-text: #{$kendo-subtle-text};
+
+    --kendo-invalid-bg: #{$kendo-invalid-bg};
+    --kendo-invalid-text: #{$kendo-invalid-text};
+    --kendo-invalid-border: #{$kendo-invalid-border};
+    --kendo-invalid-shadow: #{$kendo-invalid-shadow};
 }

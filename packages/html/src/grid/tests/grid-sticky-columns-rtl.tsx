@@ -150,7 +150,7 @@ root.render(
                         <div className="k-height-container"><div></div></div>
                     </div>
                 </div>
-                <div className="k-pager-wrap k-pager k-widget k-grid-pager k-pager-sm" role="navigation">
+                <div className="k-pager k-widget k-grid-pager k-pager-sm" role="navigation">
                     <a href="#" className="k-link k-pager-nav k-pager-first k-state-disabled"><Icon name="arrow-end-left" /></a>
                     <a href="#" className="k-link k-pager-nav k-state-disabled"><Icon name="arrow-w" /></a>
                     <div className="k-pager-numbers-wrap">

@@ -1,0 +1,40 @@
+@use "../core/color-system" as *;
+@use "../core/_variables.scss" as *;
+
+/// Margin around the message box.
+/// @group messagebox
+$kendo-message-box-margin: 0 0 map-get( $kendo-spacing, 3 ) 0 !default;
+/// Horizontal padding of the message box.
+/// @group messagebox
+$kendo-message-box-padding-x: map-get( $kendo-spacing, 3 ) !default;
+/// Vertical padding of the message box.
+/// @group messagebox
+$kendo-message-box-padding-y: map-get( $kendo-spacing, 2 ) !default;
+/// Border width of the message box.
+/// @group messagebox
+$kendo-message-box-border-width: 0 !default;
+/// Border style of the message box.
+/// @group messagebox
+$kendo-message-box-border-style: solid !default;
+/// Font family of the message box.
+/// @group messagebox
+$kendo-message-box-font-family: var(--kendo-font-family, inherit ) !default;
+/// Font size of the message box.
+/// @group messagebox
+$kendo-message-box-font-size: var(--kendo-font-size-sm, inherit ) !default;
+/// Line height of the message box.
+/// @group messagebox
+$kendo-message-box-line-height: var(--kendo-line-height-sm, normal ) !default;
+
+/// Font style of the message box links.
+/// @group messagebox
+$kendo-message-box-link-font-style: normal !default;
+/// Text decoration of the message box links.
+/// @group messagebox
+$kendo-message-box-link-decoration: underline !default;
+/// Text color of the message box links.
+/// @group messagebox
+$kendo-message-box-link-text: var(--kendo-link-text, initial ) !default;
+/// Hover text color of the message box links.
+/// @group messagebox
+$kendo-message-box-link-hover-text: var(--kendo-link-hover-text, initial ) !default;

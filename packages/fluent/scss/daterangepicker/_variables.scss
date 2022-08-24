@@ -1,0 +1,5 @@
+@use "../input/_variables.scss" as *;
+
+// Daterangepicker
+$kendo-daterange-picker-width: var( --kendo-input-width, #{$kendo-input-width} ) !default;
+$kendo-daterange-picker-input-width: 10em !default;

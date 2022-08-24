@@ -1,0 +1,29 @@
+// Module meta
+$_kendo-module-meta: (
+    name: "pager",
+    dependencies: (
+        "dropdownlist",
+        "icon",
+        "toolbar",
+        "list",
+        "button"
+    )
+);
+
+
+// Component
+@forward "_variables.scss";
+@use "_layout.scss" as *;
+@use "_theme.scss" as *;
+
+// Register
+@use "../core/module-system" as module;
+@include module.register( $_kendo-module-meta... );
+
+// Expose
+@mixin styles() {
+    @include module.render( "pager" ) {
+        @include kendo-pager--layout();
+        @include kendo-pager--theme();
+    }
+}

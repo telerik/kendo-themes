@@ -1,7 +1,6 @@
 import * as React from 'react';
 import { classNames } from '../utils';
 import { Button } from '../button';
-import { Icon } from '../icon';
 
 
 export interface MenuButtonProps {
@@ -56,10 +55,7 @@ export class MenuButton extends React.Component<MenuButtonProps> {
                 dir={this.props.dir}
                 className={classNames(
                     className,
-                    'k-menu-button',
-                    {
-                        'k-icon-button': icon !== undefined,
-                    }
+                    'k-menu-button'
                 )}
                 text={text}
                 size={size}
@@ -72,8 +68,9 @@ export class MenuButton extends React.Component<MenuButtonProps> {
                 selected={selected}
                 disabled={disabled}
                 icon={icon}
+                showArrow={showArrow}
+                arrowIconName={arrowIconName}
             >
-                {showArrow && <span className="k-menu-button-arrow k-button-arrow"><Icon name={arrowIconName} /></span>}
             </Button>
         );
     }

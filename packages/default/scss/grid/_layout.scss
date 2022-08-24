@@ -308,7 +308,8 @@
                 }
 
                 .k-grid-filter,
-                .k-header-column-menu {
+                .k-header-column-menu,
+                .k-grid-header-menu {
                     right: auto;
                     left: $grid-header-menu-icon-spacing;
                 }
@@ -389,6 +390,7 @@
 
         .k-grid-filter,
         .k-header-column-menu,
+        .k-grid-header-menu,
         .k-hierarchy-cell .k-icon {
             border-width: 0;
         }
@@ -636,7 +638,8 @@
         }
 
         .k-grid-filter,
-        .k-header-column-menu {
+        .k-header-column-menu,
+        .k-grid-header-menu {
             padding: $kendo-button-padding-y;
             width: $kendo-button-calc-size;
             height: $kendo-button-calc-size;
@@ -1004,7 +1007,8 @@
             border-right: 0;
         }
 
-        .k-grid-header .k-grid-column-menu {
+        .k-grid-header .k-grid-column-menu,
+        .k-grid-header .k-grid-header-menu {
             z-index: 1;
         }
     }
@@ -1117,13 +1121,15 @@
         }
 
         .k-grid-filter,
-        .k-header-column-menu {
+        .k-header-column-menu,
+        .k-grid-header-menu {
             position: static;
             margin-inline-end: $grid-header-menu-icon-spacing;
         }
 
         .k-grid-filter,
         .k-header-column-menu,
+        .k-grid-header-menu,
         .k-hierarchy-cell .k-icon {
             text-align: center;
             display: inline-block;

@@ -1,0 +1,30 @@
+// Module meta
+$_kendo-module-meta: (
+    name: "forms",
+    dependencies: (
+        "tooltip",
+        "button",
+        "input",
+        "toolbar",
+        "action-buttons",
+        "window"
+    )
+);
+
+
+// Component
+@forward "_variables.scss";
+@use "_layout.scss" as *;
+@use "_theme.scss" as *;
+
+// Register
+@use "../core/module-system/" as module;
+@include module.register( $_kendo-module-meta... );
+
+// Expose
+@mixin styles() {
+    @include module.render( "forms" ) {
+        @include kendo-forms--layout();
+        @include kendo-forms--theme();
+    }
+}

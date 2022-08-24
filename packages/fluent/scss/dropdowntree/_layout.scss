@@ -1,0 +1,22 @@
+@use "_variables.scss" as *;
+
+@mixin kendo-dropdowntree--layout() {
+
+    // Dropdown tree
+    .k-dropdown-tree {}
+
+    // Dropdowntree popup
+    .k-popup-dropdowntree {
+        padding: 0;
+
+        .k-check-all {
+            padding: var( --kendo-dropdowntree-popup-padding-y, #{$kendo-dropdowntree-popup-padding-y} ) var( --kendo-dropdowntree-popup-padding-x, #{$kendo-dropdowntree-popup-padding-x} ) 0;
+        }
+
+        .k-treeview {
+            padding-inline: var( --kendo-dropdowntree-popup-padding-x, #{$kendo-dropdowntree-popup-padding-x} );
+            padding-block: var( --kendo-dropdowntree-popup-padding-y, #{$kendo-dropdowntree-popup-padding-y } );
+        }
+    }
+
+}

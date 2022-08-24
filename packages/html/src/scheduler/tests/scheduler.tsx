@@ -17,11 +17,9 @@ root.render(
                         <Button icon="arrow-60-left"></Button>
                         <Button icon="arrow-60-right"></Button>
                     </span>
-                    <a href="#" className="k-nav-current">
-                        <Icon name="calendar"></Icon>
-                        <span className="k-sm-date-format">6/10/2013 - 6/14/2013</span>
-                        <span className="k-lg-date-format">Monday, June 10, 2013 - Friday, June 14, 2013</span>
-                    </a>
+                    <Button icon="calendar" className="k-nav-current" fillMode="flat" >
+                        Monday, June 10, 2013 - Friday, June 14, 2013
+                    </Button>
                     <span className="k-spacer"></span>
                     <span className="k-scheduler-views-wrapper">
                         <select className="k-views-dropdown k-picker k-dropdown-list k-dropdown k-rounded-md">
@@ -223,14 +221,14 @@ root.render(
                                                 <td className="k-nonwork-hour"></td>
                                                 <td className="k-nonwork-hour"></td>
                                                 <td className="k-nonwork-hour"></td>
-                                                <td className="k-nonwork-hour k-state-selected"></td>
+                                                <td className="k-nonwork-hour k-selected"></td>
                                             </tr>
                                             <tr className="k-middle-row">
                                                 <td></td>
                                                 <td></td>
                                                 <td></td>
                                                 <td></td>
-                                                <td className="k-state-selected"></td>
+                                                <td className="k-selected"></td>
                                             </tr>
                                             <tr>
                                                 <td></td>
@@ -475,7 +473,7 @@ root.render(
                                         <span className="k-resize-handle k-resize-n"></span>
                                         <span className="k-resize-handle k-resize-s"></span>
                                     </div>
-                                    <div style={{ top: "36px", height: "108px", width: "166px", left: "348px" }} className="k-event k-state-hover k-event-ongoing">
+                                    <div style={{ top: "36px", height: "108px", width: "166px", left: "348px" }} className="k-event k-hover k-event-ongoing">
                                         <span className="k-event-actions">
                                             <Icon name="reload"></Icon>
                                         </span>
@@ -489,7 +487,7 @@ root.render(
                                         <span className="k-resize-handle k-resize-n"></span>
                                         <span className="k-resize-handle k-resize-s"></span>
                                     </div>
-                                    <div style={{ top: "110px", height: "71px", width: "166px", left: "520px" }} className="k-event k-state-selected k-event-ongoing">
+                                    <div style={{ top: "110px", height: "71px", width: "166px", left: "520px" }} className="k-event k-selected k-event-ongoing">
                                         <span className="k-event-actions"></span>
                                         <div>
                                             <div className="k-event-template k-event-time">8:30 AM - 9:30 AM</div>
@@ -571,11 +569,9 @@ root.render(
                         <Button icon="arrow-60-left"></Button>
                         <Button icon="arrow-60-right"></Button>
                     </span>
-                    <a href="#" className="k-nav-current">
-                        <Icon name="calendar"></Icon>
-                        <span className="k-sm-date-format">2/18/2019</span>
-                        <span className="k-lg-date-format">Monday, February 18, 2019</span>
-                    </a>
+                    <Button icon="calendar" className="k-nav-current" fillMode="flat" >
+                        Monday, February 18, 2019
+                    </Button>
                     <span className="k-spacer"></span>
                     <span className="k-scheduler-views-wrapper">
                         <select className="k-views-dropdown k-picker k-dropdown-list k-dropdown k-rounded-md">

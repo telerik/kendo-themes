@@ -27,11 +27,9 @@ root.render(
                                 <Button icon="arrow-60-right"></Button>
                             </div>
                         </div>
-                        <a className="k-nav-current" href="#">
-                            <Icon name="calendar"></Icon>
-                            <span className="k-sm-date-format">6/23/2019 - 6/29/2019</span>
-                            <span className="k-lg-date-format">Sunday, June 23, 2019 - Saturday, June 29, 2019</span>
-                        </a>
+                        <Button icon="calendar" className="k-nav-current" fillMode="flat" >
+                            Sunday, June 23, 2019 - Saturday, June 29, 2019
+                        </Button>
                     </div>
                     <span className="k-spacer"></span>
                     <div className="k-scheduler-views-wrapper">
@@ -85,7 +83,7 @@ root.render(
                                                 </tr>
                                             </tbody>
                                         </table>
-                                        <div className="k-event" style={{ display: "block", width: "300px", left: "304px", top: '0px', height: "25px" }} >
+                                        <div className="k-event" style={{ width: "300px", left: "304px", top: '0px', height: "25px" }} >
                                             <span className="k-event-actions"></span>
                                             <div><div className="k-event-template">Attending HR Conference</div></div>
                                             <span className="k-event-actions"><a className="k-link k-event-delete"><Icon name="x"></Icon></a></span>
@@ -366,7 +364,7 @@ root.render(
                                         </tr>
                                     </tbody>
                                 </table>
-                                <div className="k-event" style={{ display: "block", width: "150px", left: "306px", top: '0px', height: "73px" }} >
+                                <div className="k-event" style={{ width: "150px", left: "306px", top: '0px', height: "73px" }} >
                                     <span className="k-event-actions"><Icon name="reload"></Icon></span>
                                     <div>
                                         <div className="k-event-template k-event-time">7:00 AM - 8:00 AM</div>
@@ -375,7 +373,7 @@ root.render(
                                     <span className="k-event-actions"><a className="k-link k-event-delete"><Icon name="x"></Icon></a></span>
                                 </div>
 
-                                <div className="k-event k-event-drag-hint" style={{ display: "block", width: "150px", left: "631px", top: '0px', height: "73px" }} >
+                                <div className="k-event k-event-drag-hint" style={{ width: "150px", left: "631px", top: '0px', height: "73px" }} >
                                     <span className="k-event-actions"><Icon name="reload"></Icon></span>
                                     <div>
                                         <div className="k-event-template k-event-time">7:00 AM - 8:00 AM</div>

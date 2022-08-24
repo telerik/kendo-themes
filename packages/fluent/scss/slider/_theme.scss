@@ -1,0 +1,76 @@
+@use "../core/mixins" as *;
+@use "_variables.scss" as *;
+
+@mixin kendo-slider--theme() {
+
+    $kendo-slider-tick-h-image: "data:image/gif;base64,R0lGODlhtAABAIABALi4uAAAACH5BAEAAAEALAAAAAC0AAEAAAIWjIGJxqzazlux2ovlzND2rAHgSIZWAQA7" !default;
+    $kendo-slider-tick-v-image: "data:image/gif;base64,R0lGODlhAQC0AIABALi4uAAAACH5BAEAAAEALAAAAAABALQAAAIWjIGJxqzazlux2ovlzND2rAHgSIZWAQA7" !default;
+
+    // Slider
+    .k-slider {
+        --INTERNAL--kendo-slider-text: var( --kendo-slider-text, #{$kendo-slider-text} );
+        --INTERNAL--kendo-slider-track-bg: var( --kendo-slider-track-bg, #{$kendo-slider-track-bg} );
+        --INTERNAL--kendo-slider-selection-bg: var( --kendo-slider-selection-bg, #{$kendo-slider-selection-bg} );
+        --INTERNAL--kendo-slider-thumb-bg: var(--kendo-slider-thumb-bg,  #{$kendo-slider-thumb-bg});
+        --INTERNAL--kendo-slider-thumb-text: var(--kendo-slider-thumb-text,  #{$kendo-slider-thumb-text});
+        --INTERNAL--kendo-slider-thumb-border: var(--kendo-slider-thumb-border,  #{$kendo-slider-thumb-border});
+        --INTERNAL--kendo-slider-thumb-gradient: var(--kendo-slider-thumb-gradient,  #{$kendo-slider-thumb-gradient});
+
+        color: var( --INTERNAL--kendo-slider-text, inherit );
+    }
+
+
+    // Slider track
+    .k-slider-track {
+        background-color: var( --INTERNAL--kendo-slider-track-bg, transparent );
+    }
+
+
+    // Slider selection
+    .k-slider-selection {
+        background-color: var( --INTERNAL--kendo-slider-selection-bg, currentColor);
+    }
+
+
+    // Slider thumb
+    .k-slider-thumb {
+        color: var( --INTERNAL--kendo-slider-thumb-text, transparent );
+        background-color: var( --INTERNAL--kendo-slider-thumb-bg, currentColor );
+        border-color: var( --INTERNAL--kendo-slider-thumb-border, currentColor );
+        background-image: linear-gradient( var( --INTERNAL--kendo-slider-thumb-gradient, transparent, transparent ) );
+
+        &:hover,
+        &.k-hover {
+            --INTERNAL--kendo-slider-thumb-bg: #{$kendo-slider-thumb-hover-bg};
+            --INTERNAL--kendo-slider-thumb-text: #{$kendo-slider-thumb-hover-text};
+            --INTERNAL--kendo-slider-thumb-border: #{$kendo-slider-thumb-hover-border};
+            --INTERNAL--kendo-slider-thumb-gradient: #{$kendo-slider-thumb-hover-gradient};
+        }
+
+        &:active,
+        &.k-active {
+            --INTERNAL--kendo-slider-thumb-bg: #{$kendo-slider-thumb-active-bg};
+            --INTERNAL--kendo-slider-thumb-text: #{$kendo-slider-thumb-active-text};
+            --INTERNAL--kendo-slider-thumb-border: #{$kendo-slider-thumb-active-border};
+            --INTERNAL--kendo-slider-thumb-gradient: #{$kendo-slider-thumb-active-gradient};
+        }
+
+        &:focus,
+        &.k-focus {
+            --INTERNAL--kendo-slider-thumb-bg: #{$kendo-slider-thumb-focus-bg};
+            --INTERNAL--kendo-slider-thumb-text: #{$kendo-slider-thumb-focus-text};
+            --INTERNAL--kendo-slider-thumb-border: #{$kendo-slider-thumb-focus-border};
+            --INTERNAL--kendo-slider-thumb-gradient: #{$kendo-slider-thumb-focus-gradient};
+        }
+    }
+
+    .k-slider-horizontal .k-tick {
+        background-image: url( $kendo-slider-tick-v-image );
+    }
+
+    .k-slider-vertical .k-tick {
+        background-image: url( $kendo-slider-tick-h-image );
+    }
+
+
+}

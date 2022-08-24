@@ -1,0 +1,46 @@
+@use "../core/mixins" as *;
+@use "_variables.scss" as *;
+
+@mixin kendo-rating--theme() {
+
+    .k-rating-item {
+        @include fill(
+            $color: var( --kendo-rating-item-text, #{$kendo-rating-item-text} )
+        );
+
+        &.k-selected {
+            @include fill(
+                $color: var( --kendo-rating-item-selected-text, #{$kendo-rating-item-selected-text} )
+            );
+
+
+            &:hover,
+            &.k-hover {
+                @include fill(
+                    $color: var( --kendo-rating-item-selected-hover-text, #{$kendo-rating-item-selected-hover-text} )
+                );
+            }
+        }
+
+        &:hover,
+        &.k-hover {
+            @include fill(
+                $color: var( --kendo-rating-item-hover-text, #{$kendo-rating-item-hover-text} )
+            );
+            cursor: pointer;
+        }
+
+        &:focus,
+        &.k-focus {
+            outline-color: var( --kendo-rating-item-focus-outline, #{$kendo-rating-item-focus-outline} );
+        }
+
+        &.k-disabled {
+            @include disabled(
+                var( --kendo-disabled-text, inherit ),
+                inherit,
+                var( --kendo-disabled-border, inherit )
+            );
+        }
+    }
+}

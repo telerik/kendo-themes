@@ -1,0 +1,20 @@
+@use './variables' as *;
+@use "../button/_variables.scss" as *;
+
+@mixin kendo-menu-button--layout() {
+
+    // Menu button
+    .k-menu-button,
+    .k-dropdown-button {
+        aspect-ratio: auto;
+        flex-flow: row nowrap;
+
+        > .k-button-arrow {
+            flex: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+}

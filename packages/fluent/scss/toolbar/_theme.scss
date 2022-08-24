@@ -1,0 +1,66 @@
+@use "_variables.scss" as *;
+
+@mixin kendo-toolbar--theme() {
+
+    // Theme
+    .k-toolbar {
+        color: var( --kendo-toolbar-text, #{$kendo-toolbar-text} );
+        background-color: var( --kendo-toolbar-bg, #{$kendo-toolbar-bg} );
+        border-color: var( --kendo-toolbar-border, #{$kendo-toolbar-border} );
+
+        // Separator
+        .k-separator {
+            border-color: var( --kendo-toolbar-separator-border, #{$kendo-toolbar-separator-border} );
+        }
+
+    }
+
+    // Overflow container
+    .k-overflow-container {
+
+        .k-button {
+
+            // Hover state
+            &:hover,
+            &.k-hover {
+                color: var( --kendo-menu-popup-item-hover-text, initial );
+                background: var( --kendo-menu-popup-item-hover-bg, initial );
+            }
+
+            // Button focus state
+            &:focus,
+            &.k-focus {
+                box-shadow: var( --kendo-menu-popup-item-focus-shadow, initial );
+            }
+
+            // Active state
+            &:active,
+            &.k-active {
+                color: var( --kendo-menu-popup-item-hover-text, initial );
+                background: var( --kendo-menu-popup-item-hover-bg, initial );
+            }
+
+            // Selected
+            &.k-selected {
+                color: var( --kendo-menu-popup-item-expanded-text, initial );
+                background: var( --kendo-menu-popup-item-expanded-bg, initial );
+            }
+
+            // Disabled state
+            &:disabled,
+            &.k-disabled {
+                color: inherit;
+            }
+        }
+
+    }
+
+    // sass-lint:disable-block class-name-format
+    .k-floating-toolbar,
+    .editorToolbarWindow.k-window-content {
+        color: var( --kendo-toolbar-text, #{$kendo-toolbar-text} );
+        background-color: var( --kendo-toolbar-bg, #{$kendo-toolbar-bg} );
+        border-color: var( --kendo-toolbar-border, #{$kendo-toolbar-border} );
+    }
+
+}

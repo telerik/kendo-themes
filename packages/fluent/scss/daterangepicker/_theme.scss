@@ -1,0 +1,28 @@
+@use "../core/" as *;
+@use "../input/_variables.scss" as *;
+
+@mixin kendo-daterangepicker--theme() {
+
+    .k-daterange-picker {
+
+        &:disabled,
+        &[disabled],
+        &.k-disabled {
+            @include disabled(
+                $color: var( --kendo-daterange-picker-disabled-text, var( --kendo-disabled-text, inherit ) ),
+                $bg: var( --kendo-daterange-picker-disabled-bg, transparent ),
+                $border: var( --kendo-daterange-picker-disabled-border, currentColor )
+            );
+
+            .k-input {
+                @include fill(
+                    $color: var( --kendo-input-disabled-text, inherit ),
+                    $bg: var( --kendo-input-disabled-bg, transparent ),
+                    $border: var( --kendo-input-disabled-border, currentColor )
+                )
+            }
+
+        }
+
+    }
+}

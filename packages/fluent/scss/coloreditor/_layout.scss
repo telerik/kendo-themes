@@ -1,0 +1,81 @@
+@use "../core/mixins" as *;
+@use "../colorpalette/_variables.scss" as *;
+@use "_variables.scss" as *;
+
+@mixin kendo-coloreditor--layout() {
+
+        .k-coloreditor {
+            @include border-radius( var( --kendo-coloreditor-border-radius, #{$kendo-coloreditor-border-radius} ) );
+            min-width: var( --kendo-coloreditor-min-width, #{$kendo-coloreditor-min-width} );
+            border-width: var( --kendo-coloreditor-border-width, #{$kendo-coloreditor-border-width} );
+            border-style: solid;
+            box-sizing: border-box;
+            outline: 0;
+            font-family: var( --kendo-coloreditor-font-family, #{$kendo-coloreditor-font-family} );
+            font-size: var( --kendo-coloreditor-font-size, #{$kendo-coloreditor-font-size} );
+            line-height: var( --kendo-coloreditor-line-height, #{$kendo-coloreditor-line-height} );
+            display: inline-flex;
+            flex-direction: column;
+            align-items: stretch;
+
+            *,
+            *::before,
+            *::after {
+                box-sizing: border-box;
+            }
+        }
+
+        // Header
+        .k-coloreditor-header {
+            padding-inline: var( --kendo-coloreditor-header-padding-x, #{$kendo-coloreditor-header-padding-x} );
+            padding-block-start: var( --kendo-coloreditor-header-padding-y, #{$kendo-coloreditor-header-padding-y} );
+        }
+
+        .k-coloreditor-header-actions {
+            gap: var( --kendo-coloreditor-header-actions-spacing, #{$kendo-coloreditor-header-actions-spacing} );
+        }
+
+        .k-coloreditor-preview {
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: stretch;
+            justify-content: space-between;
+            position: relative;
+            z-index: 1;
+        }
+        .k-coloreditor-preview .k-color-preview {
+            width: var( --kendo-coloreditor-color-preview-width, #{$kendo-coloreditor-color-preview-width} );
+            height: var( --kendo-coloreditor-color-preview-height, #{$kendo-coloreditor-color-preview-height} );
+        }
+
+        // Views
+        .k-coloreditor-views {
+            min-width: calc( var(--kendo-color-preview-width, #{$kendo-colorpalette-tile-width}) * var(--kendo-color-preview-columns, 10) );
+            padding-inline: var( --kendo-coloreditor-views-padding-x, #{$kendo-coloreditor-views-padding-x} );
+            padding-block-start: calc( var( --kendo-coloreditor-views-padding-y, #{$kendo-coloreditor-views-padding-y} ) * 2 );
+            padding-block-end: var( --kendo-coloreditor-views-padding-y, #{$kendo-coloreditor-views-padding-y} );
+            gap: var( --kendo-coloreditor-views-spacing, #{$kendo-coloreditor-views-spacing} );
+
+            .k-colorgradient {
+                padding: 0;
+                width: auto;
+                border-width: 0;
+                box-shadow: none;
+            }
+
+            .k-colorpalette {
+                align-self: center;
+            }
+
+            .k-colorpalette-tile {
+                width: var( --kendo-color-preview-width, $kendo-colorpalette-tile-width );
+                height: var( --kendo-color-preview-height, $kendo-colorpalette-tile-height );
+            }
+        }
+
+        // Footer
+        .k-coloreditor-footer.k-actions {
+            margin: 0;
+        }
+
+}

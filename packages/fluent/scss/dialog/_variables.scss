@@ -1,18 +1,28 @@
 @use "../core/color-system" as *;
 @use "../core/_variables.scss" as *;
 
-/// The background color of the dialog.
-/// @group dialog
-$kendo-dialog-titlebar-bg: var( --kendo-component-bg, initial ) !default;
-/// The text color of the dialog.
-/// @group dialog
-$kendo-dialog-titlebar-text: var( --kendo-component-text, initial )  !default;
-/// The border color of the dialog.
-/// @group dialog
-$kendo-dialog-titlebar-border: var( --kendo-component-border, initial )  !default;
 /// Width of the border around the dialog.
 /// @group dialog
+$kendo-dialog-border-width: 0 !default;
+
+/// The background color of the dialog title bar.
+/// @group dialog
+$kendo-dialog-titlebar-bg: var( --kendo-component-bg, initial ) !default;
+/// The text color of the dialog title bar.
+/// @group dialog
+$kendo-dialog-titlebar-text: var( --kendo-component-text, initial )  !default;
+/// The border color of the dialog title bar.
+/// @group dialog
+$kendo-dialog-titlebar-border: var( --kendo-component-border, initial )  !default;
+/// Width of the border around the dialog title bar.
+/// @group dialog
 $kendo-dialog-titlebar-border-width: 0 !default;
+/// Horizontal padding of the dialog title bar.
+/// @group dialog
+$kendo-dialog-titlebar-padding-x: map-get( $kendo-spacing, 6 ) !default;
+/// Vertical padding of the dialog title bar.
+/// @group dialog
+$kendo-dialog-titlebar-padding-y: map-get( $kendo-spacing, 4 ) !default;
 
 /// Horizontal padding of the dialog action buttons.
 /// @group dialog

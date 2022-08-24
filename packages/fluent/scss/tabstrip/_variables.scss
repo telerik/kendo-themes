@@ -1,0 +1,145 @@
+@use "../core/" as *;
+@use "../list/_variables.scss" as *;
+
+/// The horizontal padding of the tabstrip wrapper
+/// @group tabstrip
+$kendo-tabstrip-wrapper-padding-x: 0px !default;
+/// The vertical padding of the tabstrip wrapper
+/// @group tabstrip
+$kendo-tabstrip-wrapper-padding-y: 0px !default;
+/// The width of the border around the tabstrip wrapper
+/// @group tabstrip
+$kendo-tabstrip-wrapper-border-width: 0px !default;
+/// The background color of the tabstrip wrapper
+/// @group tabstrip
+$kendo-tabstrip-wrapper-bg: transparent !default;
+/// The text color of the tabstrip wrapper
+/// @group tabstrip
+$kendo-tabstrip-wrapper-text: initial !default;
+/// The border color of the tabstrip wrapper
+/// @group tabstrip
+$kendo-tabstrip-wrapper-border: initial !default;
+
+/// The font family of the tabstrip
+/// @group tabstrip
+$kendo-tabstrip-font-family: var( --kendo-font-family, inherit ) !default;
+/// The font size of the tabstrip
+/// @group tabstrip
+$kendo-tabstrip-font-size: var( --kendo-font-size, inherit ) !default;
+/// The line height of the tabstrip
+/// @group tabstrip
+$kendo-tabstrip-line-height: var( --kendo-line-height, normal ) !default;
+/// The width of the border around the tabstrip
+/// @group tabstrip
+$kendo-tabstrip-border-width: 0px !default;
+/// The background color of the tabstrip
+/// @group tabstrip
+$kendo-tabstrip-bg: transparent !default;
+/// The text color of the tabstrip
+/// @group tabstrip
+$kendo-tabstrip-text: var( --kendo-component-text, initial ) !default;
+/// The border color of the tabstrip
+/// @group tabstrip
+$kendo-tabstrip-border: transparent !default;
+
+/// The horizontal padding of the tabstrip item
+/// @group tabstrip
+$kendo-tabstrip-item-padding-x: var( --kendo-padding-x, #{$kendo-padding-x} ) !default;
+/// The vertical padding of the tabstrip item
+/// @group tabstrip
+$kendo-tabstrip-item-padding-y: map-get( $kendo-spacing, 2 ) + map-get( $kendo-spacing, 1 ) !default;
+/// The width of the border around the tabstrip item
+/// @group tabstrip
+$kendo-tabstrip-item-border-width: 0px !default;
+/// The border width of the tabstrip ripple
+/// @group tabstrip
+$kendo-tabstrip-item-ripple-border-width: map-get( $kendo-spacing, thin ) !default;
+/// The border color of the tabstrip ripple
+/// @group tabstrip
+$kendo-tabstrip-item-ripple-border: get-theme-color-var( primary-130 ) !default;
+/// The border radius of the tabstrip item
+/// @group tabstrip
+$kendo-tabstrip-item-border-radius: var( --kendo-border-radius-md, 0 ) !default;
+/// The gap between the tabstrip items
+/// @group tabstrip
+$kendo-tabstrip-item-gap: map-get( $kendo-spacing, 2 ) !default;
+///  The background color of the tabstrip item
+/// @group tabstrip
+$kendo-tabstrip-item-bg: transparent !default;
+/// The text color of the tabstrip item
+/// @group tabstrip
+$kendo-tabstrip-item-text: var( --kendo-component-text, initial ) !default;
+/// The border color of the tabstrip item
+/// @group tabstrip
+$kendo-tabstrip-item-border: transparent !default;
+/// The text color of the disabled tabstrip item
+/// @group tabstrip
+$kendo-tabstrip-item-disabled-text: var( --kendo-disabled-text, initial ) !default;
+/// The background color of the disabled tabstrip item
+/// @group tabstrip
+$kendo-tabstrip-item-disabled-bg: none !default;
+/// The border color of the disabled tabstrip item
+/// @group tabstrip
+$kendo-tabstrip-item-disabled-border: var( --kendo-disabled-border, initial ) !default;
+
+/// The background color of hovered tabs
+/// @group tabstrip
+$kendo-tabstrip-item-hovered-bg: var( --kendo-hover-bg, inherit ) !default;
+/// The text color of hovered tabs
+/// @group tabstrip
+$kendo-tabstrip-item-hovered-text: var( --kendo-hover-text, inherit ) !default;
+/// The border color of hovered tabs
+/// @group tabstrip
+$kendo-tabstrip-item-hovered-border: var( --kendo-hover-bg, inherit ) !default;
+/// The background color of selected tabs
+/// @group tabstrip
+$kendo-tabstrip-item-selected-bg: var( --kendo-component-bg, transparent ) !default;
+/// The text color of selected tabs
+/// @group tabstrip
+$kendo-tabstrip-item-selected-text: get-theme-color-var( neutral-190 ) !default;
+/// The border color of selected tabs
+/// @group tabstrip
+$kendo-tabstrip-item-selected-border: get-theme-color-var( primary-130 ) !default;
+/// The background gradient of selected tabs
+/// @group tabstrip
+$kendo-tabstrip-item-selected-font-weight: var( --kendo-font-weight-bold, normal ) !default;
+/// The focus shadow of the tabstrip item
+/// @group tabstrip
+$kendo-tabstrip-item-focused-shadow: $kendo-list-item-focus-shadow !default;
+/// The text color of the sortable tabstrip item
+/// @group tabstrip
+$kendo-tabstrip-item-dragging-text: get-theme-color-var( primary-130 ) !default;
+
+// Indicator
+$kendo-tabstrip-indicator-size: null !default;
+$kendo-tabstrip-indicator-color: null !default;
+
+/// The horizontal padding of tabstrip content
+/// @group tabstrip
+$kendo-tabstrip-content-padding-x: map-get( $kendo-spacing, 3 ) !default;
+/// The vertical padding of tabstrip content
+/// @group tabstrip
+$kendo-tabstrip-content-padding-y: map-get( $kendo-spacing, 1 ) + map-get( $kendo-spacing, thin ) !default;
+/// The width of border around tabstrip content
+/// @group tabstrip
+$kendo-tabstrip-content-border-width: 1px !default;
+
+/// The background color of tabstrip content
+/// @group tabstrip
+$kendo-tabstrip-content-bg: var( --kendo-component-bg, transparent ) !default;
+/// The text color of tabstrip content
+/// @group tabstrip
+$kendo-tabstrip-content-text: get-theme-color-var( neutral-190 ) !default;
+/// The border color of tabstrip content
+/// @group tabstrip
+$kendo-tabstrip-content-border: transparent !default;
+/// The border color of tabstrip focused content
+/// @group tabstrip
+$kendo-tabstrip-content-border-focused: var( --kendo-component-text, initial ) !default;
+
+/// The horizontal button padding of the scrollable tabstrip
+/// @group tabstrip
+$kendo-tabstrip-scrollable-button-padding-x: map-get( $kendo-spacing, 1 ) !default;
+// The vertical button padding of the scrollable tabstrip
+/// @group tabstrip
+$kendo-tabstrip-scrollable-button-padding-y: map-get( $kendo-spacing, 1 ) !default;

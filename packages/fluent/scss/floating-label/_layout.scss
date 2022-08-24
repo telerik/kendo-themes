@@ -1,0 +1,99 @@
+@use "_variables.scss" as *;
+
+@mixin kendo-floating-label--layout() {
+
+    // Floating label
+    .k-floating-label-container {
+        padding-top: var( --kendo-floating-label-height, #{$kendo-floating-label-height} );
+        box-sizing: border-box;
+        display: inline-flex;
+        vertical-align: middle;
+        position: relative;
+        flex-direction: column;
+        justify-content: stretch;
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        > .k-label {
+            max-width: 90%;
+            font-size: var( --kendo-floating-label-font-size, #{$kendo-floating-label-font-size} );
+            font-weight: var( --kendo-floating-label-font-weight, #{$kendo-floating-label-font-weight} );
+            line-height: var( --kendo-floating-label-line-height, #{$kendo-floating-label-line-height} );
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            position: absolute;
+            top: var( --kendo-floating-label-offset-y, #{$kendo-floating-label-offset-y} );
+            left: var( --kendo-floating-label-offset-x, #{$kendo-floating-label-offset-x} );
+            overflow: hidden;
+            cursor: text;
+            transform-origin: left center;
+            transition: transform var( --kendo-floating-label-transition, #{$kendo-floating-label-transition} ), color var( --kendo-floating-label-transition, #{$kendo-floating-label-transition} ), top var( --kendo-floating-label-transition, #{$kendo-floating-label-transition} ), left var( --kendo-floating-label-transition, #{$kendo-floating-label-transition} );
+        }
+
+        > .k-widget {
+            flex: 1 1 auto;
+            width: auto;
+        }
+
+        &.k-state-empty,
+        &.k-empty {
+            > .k-label {
+                top: var( --kendo-floating-label-offset-y, #{$kendo-floating-label-offset-y} );
+                left: var( --kendo-floating-label-offset-x, #{$kendo-floating-label-offset-x} );
+                transform: scale( var( --kendo-floating-label-scale, #{$kendo-floating-label-scale} ) );
+                pointer-events: none;
+            }
+        }
+
+        > .k-label,
+        &:focus-within > .k-label,
+        &.k-state-focused > .k-label,
+        &.k-focus > .k-label {
+            top: var( --kendo-floating-label-focus-offset-y, #{$kendo-floating-label-focus-offset-y} );
+            left: var( --kendo-floating-label-focus-offset-x, #{$kendo-floating-label-focus-offset-x} );
+            transform: scale( var( --kendo-floating-label-focus-scale, #{$kendo-floating-label-focus-scale} ) );
+        }
+
+
+        &.k-state-empty:not(.k-state-focused) ::placeholder,
+        &.k-empty:not(.k-focus):not(:focus-within) ::placeholder {
+            color: transparent;
+        }
+
+        [dir="rtl"] &,
+        .k-rtl &,
+        &[dir="rtl"] {
+
+            > .k-label {
+                transform-origin: right center;
+                transition: transform var( --kendo-floating-label-transition, #{$kendo-floating-label-transition} ), color var( --kendo-floating-label-transition, #{$kendo-floating-label-transition} ), top var( --kendo-floating-label-transition, #{$kendo-floating-label-transition} ), right var( --kendo-floating-label-transition, #{$kendo-floating-label-transition} );
+            }
+
+            &.k-state-empty,
+            &.k-empty {
+                > .k-label {
+                    left: auto;
+                    right: var( --kendo-floating-label-offset-x, #{$kendo-floating-label-offset-x} );
+                }
+            }
+
+            > .k-label,
+            &:focus-within > .k-label,
+            &.k-state-focused > .k-label,
+            &.k-focus > .k-label {
+                left: auto;
+                right: var( --kendo-floating-label-offset-x, #{$kendo-floating-label-offset-x} );
+            }
+        }
+
+        &:disabled,
+        &[disabled],
+        &.k-disabled  {
+            background: none;
+        }
+    }
+}

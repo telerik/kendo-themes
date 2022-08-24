@@ -35,29 +35,45 @@ root.render(
                         <div style={{ flexBasis: "10px", order: "10" }} className="k-pane-static k-pane">
                         </div>
                         <div className="k-splitbar k-splitbar-horizontal k-splitbar-draggable-horizontal" style={{ order: "1" }}>
-                            <Icon className="k-collapse-prev" name="arrow-w"></Icon>
+                            <div className="k-collapse-prev">
+                                <Icon name="arrow-w"></Icon>
+                            </div>
                             <div className="k-resize-handle"></div>
                             <Icon />
                         </div>
                         <div className="k-splitbar k-splitbar-horizontal k-splitbar-draggable-horizontal" style={{ order: "3" }}>
                             <Icon />
                             <div className="k-resize-handle"></div>
-                            <Icon className="k-collapse-next" name="arrow-e"></Icon>
+                            <div className="k-collapse-next">
+                                <Icon name="arrow-e"></Icon>
+                            </div>
                         </div>
                         <div className="k-splitbar k-splitbar-horizontal k-splitbar-draggable-horizontal" style={{ order: "5" }}>
-                            <Icon className="k-collapse-prev" name="arrow-w"></Icon>
+                            <div className="k-collapse-prev">
+                                <Icon name="arrow-w"></Icon>
+                            </div>
                             <div className="k-resize-handle"></div>
-                            <Icon className="k-collapse-next" name="arrow-e"></Icon>
+                            <div className="k-collapse-next">
+                                <Icon name="arrow-e"></Icon>
+                            </div>
                         </div>
                         <div className="k-splitbar k-state-hover k-splitbar-horizontal k-splitbar-draggable-horizontal" style={{ order: "7" }}>
-                            <Icon className="k-collapse-prev" name="arrow-w"></Icon>
+                            <div className="k-collapse-prev">
+                                <Icon name="arrow-w"></Icon>
+                            </div>
                             <div className="k-resize-handle"></div>
-                            <Icon className="k-collapse-next" name="arrow-e"></Icon>
+                            <div className="k-collapse-next">
+                                <Icon name="arrow-e"></Icon>
+                            </div>
                         </div>
                         <div className="k-splitbar k-state-focused k-splitbar-horizontal k-splitbar-draggable-horizontal" style={{ order: "9" }}>
-                            <Icon className="k-collapse-prev" name="arrow-w"></Icon>
+                            <div className="k-collapse-prev">
+                                <Icon name="arrow-w"></Icon>
+                            </div>
                             <div className="k-resize-handle"></div>
-                            <Icon className="k-collapse-next" name="arrow-e"></Icon>
+                            <div className="k-collapse-next">
+                                <Icon name="arrow-e"></Icon>
+                            </div>
                         </div>
                     </div>
                 </div>

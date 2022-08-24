@@ -25,6 +25,9 @@
     @each $pos in (static, relative, absolute, fixed, sticky) {
         .k-#{$pos},
         .k-pos-#{$pos} { position: $pos !important; } // sass-lint:disable-line brace-style no-important
+
+        .\!k-#{$pos},
+        .\!k-pos-#{$pos} { position: $pos !important; } // sass-lint:disable-line brace-style no-important
     }
 
     /// @name k-pos-top
