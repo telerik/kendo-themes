@@ -62,11 +62,15 @@ $kendo-invalid-text: get-theme-color-var( error-190 ) !default;
 $kendo-invalid-border: get-theme-color-var( error-190 ) !default;
 $kendo-invalid-shadow: none !default;
 
-
 // Disabled Styling
 $kendo-disabled-bg: get-theme-color-var( neutral-20 ) !default;
 $kendo-disabled-text: get-theme-color-var( neutral-90 ) !default;
 $kendo-disabled-border: transparent !default;
+
+// Loading
+$kendo-loading-bg: $kendo-component-bg !default;
+$kendo-loading-text: currentColor !default;
+
 
 // Theme colors
 $kendo-theme-colors: (
