@@ -26,7 +26,7 @@ root.render(
                             <div className="k-column-menu">
                                 <span className="k-list-title">Column: Discontinued</span>
                                 <ul className="k-listgroup k-listgroup-flush">
-                                    <li className="k-item k-listgroup-item k-sort-asc k-state-selected">
+                                    <li className="k-item k-listgroup-item k-sort-asc k-selected">
                                         <span className="k-link">
                                             <Icon name="sort-asc-sm" />
                                             <span className="k-item-title">Sort Ascending</span>
@@ -44,7 +44,7 @@ root.render(
                                             <span className="k-item-title">Lock</span>
                                         </span>
                                     </li>
-                                    <li className="k-item k-listgroup-item k-unlock k-state-disabled">
+                                    <li className="k-item k-listgroup-item k-unlock k-disabled">
                                         <span className="k-link">
                                             <Icon name="unlock" />
                                             <span className="k-item-title">Unlock</span>
