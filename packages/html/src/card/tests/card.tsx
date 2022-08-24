@@ -33,7 +33,7 @@ root.render(
             </Card>
 
             <Card>
-                <CardBody title="Card Title" subtitle="Card Subtitle">
+                <CardBody title="Card Title">
                     <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </CardBody>
                 <ActionButtons className="k-card-actions" orientation="vertical">

@@ -43,7 +43,7 @@ $kendo-card-shadow: var( --kendo-box-shadow-depth-1, none ) !default;
 
 /// Background color of the card when focused.
 /// @group card
-$kendo-card-focus-bg: null !default;
+$kendo-card-focus-bg: $kendo-card-bg !default;
 /// Text color of the card when focused.
 /// @group card
 $kendo-card-focus-text: null !default;
@@ -52,7 +52,7 @@ $kendo-card-focus-text: null !default;
 $kendo-card-focus-border: var( --kendo-component-border, initial ) !default;
 /// Shadow of the card when focused.
 /// @group card
-$kendo-card-focus-shadow: var( --kendo-box-shadow-depth-4, none ) !default;
+$kendo-card-focus-shadow: var( --kendo-box-shadow-depth-3, none ) !default;
 
 /// Text weight of the card header.
 /// @group card
@@ -71,7 +71,7 @@ $kendo-card-header-border-width: 0 !default;
 $kendo-card-header-bg: inherit !default;
 /// Text color of the card header.
 /// @group card
-$kendo-card-header-text: inherit !default; // header-text
+$kendo-card-header-text: get-theme-color-var( neutral-190 ) !default; // header-text
 /// Border color of the card header.
 /// @group card
 $kendo-card-header-border: inherit !default; // header-border
