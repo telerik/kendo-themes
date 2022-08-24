@@ -41,7 +41,7 @@
         gap: 2px;
 
         .k-color-preview-mask {
-            width: $kendo-icon-size;
+            width: var( --kendo-icon-size, 1rem );
             height: 3px;
         }
     }

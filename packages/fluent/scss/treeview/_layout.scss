@@ -1,5 +1,4 @@
 @use "../core/color-system" as *;
-@use "../icon/_variables.scss"as *;
 @use "../core/mixins" as *;
 @use "_variables.scss" as *;
 
@@ -89,15 +88,15 @@
 
     // Loading icon
     .k-treeview-loading {
-        margin-inline-end: var( --kendo-icon-spacing, #{$kendo-icon-spacing} );
+        margin-inline-end: var( --kendo-icon-spacing, .5rem );
     }
 
 
     // Checkbox
     .k-treeview .k-checkbox-wrap,
     .k-treeview .k-checkbox-wrapper {
-        margin-inline-start: var( --kendo-icon-spacing, #{$kendo-icon-spacing} );
-        margin-inline-end: var( --kendo-icon-spacing, #{$kendo-icon-spacing} );
+        margin-inline-start: var( --kendo-icon-spacing, .5rem );
+        margin-inline-end: var( --kendo-icon-spacing, .5rem );
         align-self: center;
     }
 
@@ -118,7 +117,7 @@
         .k-icon,
         .k-image,
         .k-sprite {
-            margin-inline-end: var( --kendo-icon-spacing, #{$kendo-icon-spacing} );
+            margin-inline-end: var( --kendo-icon-spacing, .5rem );
         }
 
         &.k-focus {
