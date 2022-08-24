@@ -2,7 +2,7 @@
 
 @use "~@progress/kendo-font-icons/scss/index.scss" with (
     $ki-embed-font: true,
-    $ki-icon-size: var( --kendo-icon-size, $kendo-icon-size )
+    $ki-icon-size: var( --kendo-icon-size, 1rem )
 );
 
 @mixin kendo-icon--layout() {

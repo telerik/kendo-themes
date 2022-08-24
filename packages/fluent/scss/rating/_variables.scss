@@ -1,5 +1,4 @@
 @use "../core/index.scss" as *;
-@use "../icon/_variables.scss"as *;
 
 /// Font family of the rating.
 /// @group rating
@@ -48,4 +47,4 @@ $kendo-rating-item-selected-hover-text: get-theme-color-var( primary-160 ) !defa
 
 /// Icon size of the rating.
 /// @group rating
-$kendo-rating-icon-size: calc( #{$kendo-icon-size} * #{$kendo-line-height} ) !default;
+$kendo-rating-icon-size: calc( var( --kendo-icon-size, 1rem ) * #{$kendo-line-height} ) !default;
