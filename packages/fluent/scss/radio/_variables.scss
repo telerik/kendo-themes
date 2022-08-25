@@ -1,6 +1,6 @@
 @use "../core/color-system" as *;
 @use "../core/_variables.scss" as *;
-@use "../core/functions/" as *; 
+@use "../core/functions/" as *;
 @use "../checkbox/_variables.scss" as *;
 @use "../list/_variables.scss" as *;
 
@@ -72,7 +72,10 @@ $kendo-radio-hover-bg: $kendo-checkbox-hover-bg !default;
 $kendo-radio-hover-text: $kendo-checkbox-hover-text !default;
 /// Border color of hovered radio button.
 /// @group radio
-$kendo-radio-hover-border: get-theme-color-var( neutral-130 ) !default;
+$kendo-radio-hover-border: $kendo-radio-border !default;
+/// Border color of hovered radio button.
+/// @group radio
+$kendo-radio-hover-color: get-theme-color-var( neutral-130 )!default;
 
 /// Border of hovered and checked radio.
 /// @group checkbox
@@ -186,7 +189,7 @@ $kendo-radio-list-item-padding-x: 0px !default;
 /// The vertical list item padding of radio button.
 /// @group radio
 $kendo-radio-list-item-padding-y: $kendo-list-item-padding-y-md !default;
-/// 
+///
 /// @group radio
 $kendo-radio-list-item-gap: map-get( $kendo-spacing, 2 ) !default;
 
