@@ -38,7 +38,7 @@ root.render(
             <span>Normal</span>
             <section>
                 <div className="k-slider k-slider-horizontal k-slider-0">
-                    <Button icon="arrow-w" rounded="full" className="k-button-decrease"></Button>
+                    <Button icon="caret-alt-left" rounded="full" className="k-button-decrease"></Button>
                     <div className="k-slider-track-wrap">
                         <ul className="k-reset k-slider-items">
                             <li className="k-tick k-tick-large">
@@ -64,12 +64,12 @@ root.render(
                             <a href="#" className="k-draghandle k-draghandle-end"></a>
                         </div>
                     </div>
-                    <Button icon="arrow-e" rounded="full" className="k-button-increase"></Button>
+                    <Button icon="caret-alt-right" rounded="full" className="k-button-increase"></Button>
                 </div>
             </section>
             <section>
                 <div className="k-slider k-slider-horizontal k-slider-50">
-                    <Button icon="arrow-w" rounded="full" className="k-button-decrease"></Button>
+                    <Button icon="caret-alt-left" rounded="full" className="k-button-decrease"></Button>
                     <div className="k-slider-track-wrap">
                         <ul className="k-reset k-slider-items">
                             <li className="k-tick k-tick-large">
@@ -95,12 +95,12 @@ root.render(
                             <a href="#" className="k-draghandle k-draghandle-end"></a>
                         </div>
                     </div>
-                    <Button icon="arrow-e" rounded="full" className="k-button-increase"></Button>
+                    <Button icon="caret-alt-right" rounded="full" className="k-button-increase"></Button>
                 </div>
             </section>
             <section>
                 <div className="k-slider k-slider-horizontal k-slider-100">
-                    <Button icon="arrow-w" rounded="full" className="k-button-decrease"></Button>
+                    <Button icon="caret-alt-left" rounded="full" className="k-button-decrease"></Button>
                     <div className="k-slider-track-wrap">
                         <ul className="k-reset k-slider-items">
                             <li className="k-tick k-tick-large">
@@ -126,7 +126,7 @@ root.render(
                             <a href="#" className="k-draghandle k-draghandle-end"></a>
                         </div>
                     </div>
-                    <Button icon="arrow-e" rounded="full" className="k-button-increase"></Button>
+                    <Button icon="caret-alt-right" rounded="full" className="k-button-increase"></Button>
                 </div>
             </section>
 
@@ -134,7 +134,7 @@ root.render(
             <span>Disabled</span>
             <section>
                 <div className="k-slider k-slider-horizontal k-slider-0 k-disabled">
-                    <Button icon="arrow-w" rounded="full" className="k-button-decrease"></Button>
+                    <Button icon="caret-alt-left" rounded="full" className="k-button-decrease"></Button>
                     <div className="k-slider-track-wrap">
                         <ul className="k-reset k-slider-items">
                             <li className="k-tick k-tick-large">
@@ -160,12 +160,12 @@ root.render(
                             <a href="#" className="k-draghandle k-draghandle-end"></a>
                         </div>
                     </div>
-                    <Button icon="arrow-e" rounded="full" className="k-button-increase"></Button>
+                    <Button icon="caret-alt-right" rounded="full" className="k-button-increase"></Button>
                 </div>
             </section>
             <section>
                 <div className="k-slider k-slider-horizontal k-slider-50 k-disabled">
-                    <Button icon="arrow-w" rounded="full" className="k-button-decrease"></Button>
+                    <Button icon="caret-alt-left" rounded="full" className="k-button-decrease"></Button>
                     <div className="k-slider-track-wrap">
                         <ul className="k-reset k-slider-items">
                             <li className="k-tick k-tick-large">
@@ -191,12 +191,12 @@ root.render(
                             <a href="#" className="k-draghandle k-draghandle-end"></a>
                         </div>
                     </div>
-                    <Button icon="arrow-e" rounded="full" className="k-button-increase"></Button>
+                    <Button icon="caret-alt-right" rounded="full" className="k-button-increase"></Button>
                 </div>
             </section>
             <section>
                 <div className="k-slider k-slider-horizontal k-slider-100 k-disabled">
-                    <Button icon="arrow-w" rounded="full" className="k-button-decrease"></Button>
+                    <Button icon="caret-alt-left" rounded="full" className="k-button-decrease"></Button>
                     <div className="k-slider-track-wrap">
                         <ul className="k-reset k-slider-items">
                             <li className="k-tick k-tick-large">
@@ -222,14 +222,14 @@ root.render(
                             <a href="#" className="k-draghandle k-draghandle-end"></a>
                         </div>
                     </div>
-                    <Button icon="arrow-e" rounded="full" className="k-button-increase"></Button>
+                    <Button icon="caret-alt-right" rounded="full" className="k-button-increase"></Button>
                 </div>
             </section>
 
             <span>Readonly</span>
             <section>
                 <div className="k-slider k-slider-horizontal k-slider-0 k-readonly">
-                    <Button icon="arrow-w" rounded="full" className="k-button-decrease"></Button>
+                    <Button icon="caret-alt-left" rounded="full" className="k-button-decrease"></Button>
                     <div className="k-slider-track-wrap">
                         <ul className="k-reset k-slider-items">
                             <li className="k-tick k-tick-large">
@@ -255,12 +255,12 @@ root.render(
                             <a href="#" className="k-draghandle k-draghandle-end"></a>
                         </div>
                     </div>
-                    <Button icon="arrow-e" rounded="full" className="k-button-increase"></Button>
+                    <Button icon="caret-alt-right" rounded="full" className="k-button-increase"></Button>
                 </div>
             </section>
             <section>
                 <div className="k-slider k-slider-horizontal k-slider-50 k-readonly">
-                    <Button icon="arrow-w" rounded="full" className="k-button-decrease"></Button>
+                    <Button icon="caret-alt-left" rounded="full" className="k-button-decrease"></Button>
                     <div className="k-slider-track-wrap">
                         <ul className="k-reset k-slider-items">
                             <li className="k-tick k-tick-large">
@@ -286,12 +286,12 @@ root.render(
                             <a href="#" className="k-draghandle k-draghandle-end"></a>
                         </div>
                     </div>
-                    <Button icon="arrow-e" rounded="full" className="k-button-increase"></Button>
+                    <Button icon="caret-alt-right" rounded="full" className="k-button-increase"></Button>
                 </div>
             </section>
             <section>
                 <div className="k-slider k-slider-horizontal k-slider-100 k-readonly">
-                    <Button icon="arrow-w" rounded="full" className="k-button-decrease"></Button>
+                    <Button icon="caret-alt-left" rounded="full" className="k-button-decrease"></Button>
                     <div className="k-slider-track-wrap">
                         <ul className="k-reset k-slider-items">
                             <li className="k-tick k-tick-large">
@@ -317,7 +317,7 @@ root.render(
                             <a href="#" className="k-draghandle k-draghandle-end"></a>
                         </div>
                     </div>
-                    <Button icon="arrow-e" rounded="full" className="k-button-increase"></Button>
+                    <Button icon="caret-alt-right" rounded="full" className="k-button-increase"></Button>
                 </div>
             </section>
 
