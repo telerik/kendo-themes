@@ -41,7 +41,7 @@ root.render(
                     <div className="k-widget k-notification k-notification-closable">
                         <div className="k-notification-wrap">
                             <div className="k-notification-content">Closable notification</div>
-                            <Icon name="close" />
+                            <Icon name="x" />
                         </div>
                     </div>
                 </div>
@@ -156,7 +156,7 @@ root.render(
                     <div className="k-widget k-notification k-notification-closable">
                         <div className="k-notification-wrap">
                             <div className="k-notification-content">Closable notification</div>
-                            <Icon name="close" />
+                            <Icon name="x" />
                         </div>
                     </div>
                 </div>

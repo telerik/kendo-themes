@@ -9,7 +9,8 @@
         );
     }
     .k-notification-wrap {
-        > .k-i-close {
+        > .k-i-close,
+        > .k-i-x {
             color: inherit;
         }
     }

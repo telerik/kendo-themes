@@ -45,7 +45,7 @@ root.render(
                                     <div>Closable multiline notification</div>
                                     <div>Closable multiline notification</div>
                                 </div>
-                                <Icon name="close" />
+                                <Icon name="x" />
                             </div>
                         </div>
                     </div>
@@ -63,7 +63,7 @@ root.render(
                     <div className="k-widget k-notification k-notification-closable">
                         <div className="k-notification-wrap">
                             <div className="k-notification-content">Full width notification</div>
-                            <Icon name="close" />
+                            <Icon name="x" />
                         </div>
                     </div>
                 </div>
@@ -83,7 +83,7 @@ root.render(
                                     <div>Closable multiline notification</div>
                                     <div>Closable multiline notification</div>
                                 </div>
-                                <Icon name="close" />
+                                <Icon name="x" />
                             </div>
                         </div>
                     </div>
@@ -101,7 +101,7 @@ root.render(
                     <div className="k-widget k-notification k-notification-closable">
                         <div className="k-notification-wrap">
                             <div className="k-notification-content">Full width notification</div>
-                            <Icon name="close" />
+                            <Icon name="x" />
                         </div>
                     </div>
                 </div>
