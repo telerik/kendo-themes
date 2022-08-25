@@ -39,7 +39,7 @@ root.render(
                             </a>
                         </li>
                         <li className="k-actionsheet-item">
-                            <a href="#" className="k-actionsheet-action k-state-hover">
+                            <a href="#" className="k-actionsheet-action k-hover">
                                 <Icon className="k-actionsheet-item-icon" name="cog" />
                                 <span className="k-actionsheet-item-text">
                                     <span className="k-actionsheet-item-title">Hover action</span>
@@ -48,7 +48,7 @@ root.render(
                             </a>
                         </li>
                         <li className="k-actionsheet-item">
-                            <a href="#" className="k-actionsheet-action k-state-focus">
+                            <a href="#" className="k-actionsheet-action k-focus">
                                 <Icon className="k-actionsheet-item-icon" name="cog" />
                                 <span className="k-actionsheet-item-text">
                                     <span className="k-actionsheet-item-title">Focus action</span>
@@ -57,7 +57,7 @@ root.render(
                             </a>
                         </li>
                         <li className="k-actionsheet-item">
-                            <a href="#" className="k-actionsheet-action k-state-disabled">
+                            <a href="#" className="k-actionsheet-action k-disabled">
                                 <Icon className="k-actionsheet-item-icon" name="cog" />
                                 <span className="k-actionsheet-item-text">
                                     <span className="k-actionsheet-item-title">Disabled action</span>
@@ -106,7 +106,7 @@ root.render(
                             </a>
                         </li>
                         <li className="k-actionsheet-item">
-                            <a href="#" className="k-actionsheet-action k-state-hover">
+                            <a href="#" className="k-actionsheet-action k-hover">
                                 <Icon className="k-actionsheet-item-icon" name="cog" />
                                 <span className="k-actionsheet-item-text">
                                     <span className="k-actionsheet-item-title">Hover action</span>
@@ -115,7 +115,7 @@ root.render(
                             </a>
                         </li>
                         <li className="k-actionsheet-item">
-                            <a href="#" className="k-actionsheet-action k-state-focus">
+                            <a href="#" className="k-actionsheet-action k-focus">
                                 <Icon className="k-actionsheet-item-icon" name="cog" />
                                 <span className="k-actionsheet-item-text">
                                     <span className="k-actionsheet-item-title">Focus action</span>
@@ -124,7 +124,7 @@ root.render(
                             </a>
                         </li>
                         <li className="k-actionsheet-item">
-                            <a href="#" className="k-actionsheet-action k-state-disabled">
+                            <a href="#" className="k-actionsheet-action k-disabled">
                                 <Icon className="k-actionsheet-item-icon" name="cog" />
                                 <span className="k-actionsheet-item-text">
                                     <span className="k-actionsheet-item-title">Disabled action</span>
@@ -173,7 +173,7 @@ root.render(
                             </a>
                         </li>
                         <li className="k-actionsheet-item">
-                            <a href="#" className="k-actionsheet-action k-state-hover">
+                            <a href="#" className="k-actionsheet-action k-hover">
                                 <Icon className="k-actionsheet-item-icon" name="cog" />
                                 <span className="k-actionsheet-item-text">
                                     <span className="k-actionsheet-item-title">Hover action</span>
@@ -182,7 +182,7 @@ root.render(
                             </a>
                         </li>
                         <li className="k-actionsheet-item">
-                            <a href="#" className="k-actionsheet-action k-state-focus">
+                            <a href="#" className="k-actionsheet-action k-focus">
                                 <Icon className="k-actionsheet-item-icon" name="cog" />
                                 <span className="k-actionsheet-item-text">
                                     <span className="k-actionsheet-item-title">Focus action</span>
@@ -191,7 +191,7 @@ root.render(
                             </a>
                         </li>
                         <li className="k-actionsheet-item">
-                            <a href="#" className="k-actionsheet-action k-state-disabled">
+                            <a href="#" className="k-actionsheet-action k-disabled">
                                 <Icon className="k-actionsheet-item-icon" name="cog" />
                                 <span className="k-actionsheet-item-text">
                                     <span className="k-actionsheet-item-title">Disabled action</span>
@@ -240,7 +240,7 @@ root.render(
                             </a>
                         </li>
                         <li className="k-actionsheet-item">
-                            <a href="#" className="k-actionsheet-action k-state-hover">
+                            <a href="#" className="k-actionsheet-action k-hover">
                                 <Icon className="k-actionsheet-item-icon" name="cog" />
                                 <span className="k-actionsheet-item-text">
                                     <span className="k-actionsheet-item-title">Hover action</span>
@@ -249,7 +249,7 @@ root.render(
                             </a>
                         </li>
                         <li className="k-actionsheet-item">
-                            <a href="#" className="k-actionsheet-action k-state-focus">
+                            <a href="#" className="k-actionsheet-action k-focus">
                                 <Icon className="k-actionsheet-item-icon" name="cog" />
                                 <span className="k-actionsheet-item-text">
                                     <span className="k-actionsheet-item-title">Focus action</span>
@@ -258,7 +258,7 @@ root.render(
                             </a>
                         </li>
                         <li className="k-actionsheet-item">
-                            <a href="#" className="k-actionsheet-action k-state-disabled">
+                            <a href="#" className="k-actionsheet-action k-disabled">
                                 <Icon className="k-actionsheet-item-icon" name="cog" />
                                 <span className="k-actionsheet-item-text">
                                     <span className="k-actionsheet-item-title">Disabled action</span>

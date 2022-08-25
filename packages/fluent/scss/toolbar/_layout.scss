@@ -1,6 +1,5 @@
 @use "../core/" as *;
 @use "_variables.scss" as *;
-@use "../icon/_variables.scss" as *;
 @use "../button/_variables.scss" as *;
 
 @mixin kendo-toolbar--layout() {
@@ -155,7 +154,7 @@
             flex-flow: row nowrap;
             align-items: center;
             align-content: center;
-            gap: var( --kendo-overflow-button-spacing, #{$kendo-icon-spacing} );
+            gap: var( --kendo-overflow-button-spacing, .5rem );
             justify-content: flex-start;
             position: relative;
         }

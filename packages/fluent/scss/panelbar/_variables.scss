@@ -1,7 +1,6 @@
 @use "../core/color-system" as *;
 @use "../core/variables" as *;
 @use "../list/variables" as *;
-@use "../icon/variables" as *;
 
 /// Horizontal padding of the panelbar.
 /// @group panelbar
@@ -38,7 +37,7 @@ $kendo-panelbar-icon-spacing: map-get( $kendo-spacing, 2 ) !default;
 
 /// Horizontal padding of the panelbar header.
 /// @group panelbar
-$kendo-panelbar-header-padding-x-start: calc( var( --kendo-panelbar-icon-spacing, #{$kendo-panelbar-icon-spacing} ) * 2 + var( --kendo-icon-size, #{$kendo-icon-size} ) ) !default;
+$kendo-panelbar-header-padding-x-start: calc( var( --kendo-panelbar-icon-spacing, #{$kendo-panelbar-icon-spacing} ) * 2 + var( --kendo-icon-size, 1rem ) ) !default;
 $kendo-panelbar-header-padding-x-end: map-get( $kendo-spacing, 2) !default;
 /// Vertical padding of the panelbar header.
 /// @group panelbar
@@ -46,7 +45,7 @@ $kendo-panelbar-header-padding-y: map-get( $kendo-spacing, 3 ) !default;
 
 /// Horizontal padding of the panelbar items.
 /// @group panelbar
-$kendo-panelbar-item-padding-x-start: calc( var( --kendo-panelbar-icon-spacing, #{$kendo-panelbar-icon-spacing} ) * 2 + var( --kendo-icon-size, #{$kendo-icon-size} ) ) !default;
+$kendo-panelbar-item-padding-x-start: calc( var( --kendo-panelbar-icon-spacing, #{$kendo-panelbar-icon-spacing} ) * 2 + var( --kendo-icon-size, 1rem ) ) !default;
 $kendo-panelbar-item-padding-x-end: map-get( $kendo-spacing, 2) !default;
 /// Vertical padding of the panelbar items.
 /// @group panelbar

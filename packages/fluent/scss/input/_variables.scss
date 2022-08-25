@@ -1,6 +1,5 @@
 @use "../core/color-system/" as *;
 @use "../core/_variables.scss" as *;
-@use "../icon/_variables.scss"as *;
 @use "../button/_variables.scss"as *;
 
 /// Width of the input.
@@ -429,7 +428,7 @@ $kendo-input-sizes: (
         padding-y: $kendo-input-padding-y-sm,
         font-size: $kendo-input-font-size-sm,
         line-height: $kendo-input-line-height-sm,
-        icon-size: calc( #{$kendo-icon-size} + #{$kendo-input-padding-y-sm * 2} ),
+        icon-size: calc( var( --kendo-icon-size, 1rem ) + #{$kendo-input-padding-y-sm * 2} ),
         button-padding-x: $kendo-input-padding-y-sm,
         button-padding-y: $kendo-input-padding-y-sm,
         button-width: $kendo-input-button-width-sm
@@ -439,7 +438,7 @@ $kendo-input-sizes: (
         padding-y: $kendo-input-padding-y-md,
         font-size: $kendo-input-font-size-md,
         line-height: $kendo-input-line-height-md,
-        icon-size: calc( #{$kendo-icon-size} + #{$kendo-input-padding-y-md * 2} ),
+        icon-size: calc( var( --kendo-icon-size, 1rem ) + #{$kendo-input-padding-y-md * 2} ),
         button-padding-x: $kendo-input-padding-y-md,
         button-padding-y: $kendo-input-padding-y-md,
         button-width: $kendo-input-button-width-md
@@ -449,7 +448,7 @@ $kendo-input-sizes: (
         padding-y: $kendo-input-padding-y-lg,
         font-size: $kendo-input-font-size-lg,
         line-height: $kendo-input-line-height-lg,
-        icon-size: calc( #{$kendo-icon-size} + #{$kendo-input-padding-y-lg * 2} ),
+        icon-size: calc( var( --kendo-icon-size, 1rem ) + #{$kendo-input-padding-y-lg * 2} ),
         button-padding-x: $kendo-input-padding-y-lg,
         button-padding-y: $kendo-input-padding-y-lg,
         button-width: $kendo-input-button-width-lg

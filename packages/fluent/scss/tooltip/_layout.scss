@@ -1,6 +1,5 @@
 @use "../core/" as *;
 @use "_variables.scss" as *;
-@use "../icon/_variables.scss" as *;
 
 @mixin kendo-tooltip--layout() {
 
@@ -33,7 +32,7 @@
     }
 
     .k-tooltip-icon {
-        margin-inline-end: var( --kendo-tooltip-icon-spacing, #{$kendo-icon-spacing} );
+        margin-inline-end: var( --kendo-tooltip-icon-spacing, .5rem );
         flex-shrink: 0;
     }
 
@@ -51,7 +50,7 @@
     }
 
     .k-tooltip-button {
-        margin-inline-start: var( --kendo-tooltip-button-spacing, #{$kendo-icon-spacing} );
+        margin-inline-start: var( --kendo-tooltip-button-spacing, .5rem );
         flex-shrink: 0;
 
         .k-icon {
