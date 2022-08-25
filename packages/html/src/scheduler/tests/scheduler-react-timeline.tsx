@@ -22,8 +22,8 @@ root.render(
                 <div className="k-scheduler-toolbar k-toolbar">
                     <span className="k-button-group k-scheduler-navigation">
                         <Button>Today</Button>
-                        <Button icon="arrow-60-left"></Button>
-                        <Button icon="arrow-60-right"></Button>
+                        <Button icon="caret-alt-left"></Button>
+                        <Button icon="caret-alt-right"></Button>
                     </span>
                     <Button icon="calendar" className="k-nav-current" fillMode="flat" >
                         Wednesday, June 24, 2020

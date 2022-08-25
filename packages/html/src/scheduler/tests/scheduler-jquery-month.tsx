@@ -36,8 +36,8 @@ root.render(
                 <div className="k-scheduler-toolbar k-toolbar">
                     <span className="k-scheduler-navigation k-button-group">
                         <Button>Today</Button>
-                        <Button icon="arrow-60-left"></Button>
-                        <Button icon="arrow-60-right"></Button>
+                        <Button icon="caret-alt-left"></Button>
+                        <Button icon="caret-alt-right"></Button>
                     </span>
                     <Button icon="calendar" className="k-nav-current" fillMode="flat" >
                         June, 2013
