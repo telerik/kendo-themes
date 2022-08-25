@@ -13,8 +13,8 @@ root.render(
                 <div className="k-scheduler-toolbar k-toolbar">
                     <span className="k-button-group k-scheduler-navigation">
                         <Button>Today</Button>
-                        <Button icon="arrow-60-left"></Button>
-                        <Button icon="arrow-60-right"></Button>
+                        <Button icon="caret-alt-left"></Button>
+                        <Button icon="caret-alt-right"></Button>
                     </span>
                     <Button icon="calendar" className="k-nav-current" fillMode="flat" >
                         2021
@@ -40,8 +40,8 @@ root.render(
                                 <Button fillMode="flat" className="k-calendar-title k-title">January 2020 - December 2020</Button>
                                 <span className="k-spacer"></span>
                                 <span className="k-calendar-nav k-hstack">
-                                    <Button fillMode="flat" className="k-prev-view" icon="arrow-60-left"></Button>
-                                    <Button fillMode="flat" className="k-next-view" icon="arrow-60-right"></Button>
+                                    <Button fillMode="flat" className="k-prev-view" icon="caret-alt-left"></Button>
+                                    <Button fillMode="flat" className="k-next-view" icon="caret-alt-right"></Button>
                                 </span>
                             </div>
                             <div className="k-calendar-view k-calendar-monthview k-hstack k-align-items-start k-justify-content-center">
