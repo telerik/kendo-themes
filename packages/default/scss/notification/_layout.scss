@@ -51,7 +51,8 @@
             flex: none;
         }
 
-        > .k-i-close {
+        > .k-i-close,
+        > .k-i-x {
             margin-right: 0;
             margin-left: $notification-icon-spacing;
             flex: none;
@@ -74,7 +75,8 @@
                 margin-left: $notification-icon-spacing;
             }
 
-            > .k-i-close {
+            > .k-i-close,
+            > .k-i-x {
                 margin-left: 0;
                 margin-right: $notification-icon-spacing;
             }

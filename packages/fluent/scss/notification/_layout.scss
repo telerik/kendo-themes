@@ -57,7 +57,8 @@
             flex: none;
         }
 
-        >.k-i-close {
+        >.k-i-close,
+        >.k-i-x {
             margin-inline-end: 0;
             margin-inline-start: var( --kendo-notification-close-icon-spacing, #{$kendo-notification-close-icon-spacing} );
             flex: none;
