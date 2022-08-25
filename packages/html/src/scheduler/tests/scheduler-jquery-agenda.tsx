@@ -104,7 +104,7 @@ root.render(
                                                 <td>
                                                     <div className="k-task">
                                                         <span className="k-scheduler-mark"></span>
-                                                        <Icon name="reload"></Icon>
+                                                        <Icon name="arrow-rotate-cw"></Icon>
                                                         <span className="k-scheduler-task-text">Recurring</span>
                                                     </div>
                                                 </td>

@@ -365,7 +365,7 @@ root.render(
                                     </tbody>
                                 </table>
                                 <div className="k-event" style={{ width: "150px", left: "306px", top: '0px', height: "73px" }} >
-                                    <span className="k-event-actions"><Icon name="reload"></Icon></span>
+                                    <span className="k-event-actions"><Icon name="arrow-rotate-cw"></Icon></span>
                                     <div>
                                         <div className="k-event-template k-event-time">7:00 AM - 8:00 AM</div>
                                         <div className="k-event-template">HR Lecture</div>
@@ -374,7 +374,7 @@ root.render(
                                 </div>
 
                                 <div className="k-event k-event-drag-hint" style={{ width: "150px", left: "631px", top: '0px', height: "73px" }} >
-                                    <span className="k-event-actions"><Icon name="reload"></Icon></span>
+                                    <span className="k-event-actions"><Icon name="arrow-rotate-cw"></Icon></span>
                                     <div>
                                         <div className="k-event-template k-event-time">7:00 AM - 8:00 AM</div>
                                         <div className="k-event-template">HR Lecture</div>

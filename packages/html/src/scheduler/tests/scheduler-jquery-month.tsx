@@ -226,15 +226,15 @@ root.render(
                                     </table>
 
                                     <div style={{ backgroundColor: "rgb(245, 138, 138)", borderColor: "rgb(245, 138, 138)", "--span": "1", "--col": "2", "--row": "2", "--slot": "1", height: "25px" } as React.CSSProperties} className="k-event">
-                                        <span className="k-event-actions"><Icon name="reload"></Icon></span>
+                                        <span className="k-event-actions"><Icon name="arrow-rotate-cw"></Icon></span>
                                         <div><div className="k-event-template">Dance Practice</div></div>
                                     </div>
                                     <div style={{ backgroundColor: "rgb(110, 179, 250)", borderColor: "rgb(110, 179, 250)", "--span": "1", "--col": "3", "--row": "2", "--slot": "1", height: "25px" } as React.CSSProperties} className="k-event">
-                                        <span className="k-event-actions"><Icon name="reload"></Icon></span>
+                                        <span className="k-event-actions"><Icon name="arrow-rotate-cw"></Icon></span>
                                         <div><div className="k-event-template">HR Lecture</div></div>
                                     </div>
                                     <div style={{ backgroundColor: "rgb(245, 138, 138)", borderColor: "rgb(245, 138, 138)", "--span": "1", "--col": "4", "--row": "2", "--slot": "1", height: "25px" } as React.CSSProperties} className="k-event">
-                                        <span className="k-event-actions"><Icon name="reload"></Icon></span>
+                                        <span className="k-event-actions"><Icon name="arrow-rotate-cw"></Icon></span>
                                         <div><div className="k-event-template">Dance Practice</div></div>
                                     </div>
                                     <div style={{ backgroundColor: "rgb(110, 179, 250)", borderColor: "rgb(110, 179, 250)", "--span": "3", "--col": "5", "--row": "2", "--slot": "1", height: "25px" } as React.CSSProperties} className="k-event">
@@ -246,7 +246,7 @@ root.render(
                                         <div><div className="k-event-template">Software updates</div></div>
                                     </div>
                                     <div style={{ backgroundColor: "rgb(110, 179, 250)", borderColor: "rgb(110, 179, 250)", "--span": "1", "--col": "4", "--row": "2", "--slot": "2", height: "25px" } as React.CSSProperties} className="k-event">
-                                        <span className="k-event-actions"><Icon name="reload"></Icon></span>
+                                        <span className="k-event-actions"><Icon name="arrow-rotate-cw"></Icon></span>
                                         <div><div className="k-event-template">Helpdesk weekly meeting</div></div>
                                     </div>
                                     <div style={{ backgroundColor: "rgb(110, 179, 250)", borderColor: "rgb(110, 179, 250)", "--span": "3", "--col": "5", "--row": "2", "--slot": "2", height: "25px" } as React.CSSProperties} className="k-event">
@@ -282,7 +282,7 @@ root.render(
                                         <div><div className="k-event-template">Car Service</div></div>
                                     </div>
                                     <div style={{ backgroundColor: "rgb(110, 179, 250)", borderColor: "rgb(110, 179, 250)", "--span": "1", "--col": "3", "--row": "3", "--slot": "2", height: "25px" } as React.CSSProperties} className="k-event">
-                                        <span className="k-event-actions"><Icon name="reload"></Icon></span>
+                                        <span className="k-event-actions"><Icon name="arrow-rotate-cw"></Icon></span>
                                         <div><div className="k-event-template">HR Lecture</div></div>
                                     </div>
                                     <div style={{ backgroundColor: "rgb(245, 138, 138)", borderColor: "rgb(245, 138, 138)", "--span": "1", "--col": "4", "--row": "3", "--slot": "2", height: "25px" } as React.CSSProperties} className="k-event">

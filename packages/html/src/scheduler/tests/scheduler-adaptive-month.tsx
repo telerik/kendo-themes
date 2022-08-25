@@ -124,7 +124,7 @@ root.render(
                                                     </table>
                                                     <div className="k-events-container" style={{ top: "97px", left: "140px", width: "140px" }}>
                                                         <div style={{ backgroundColor: "#51a0ed", borderColor: "#51a0ed" }} className="k-event">
-                                                            <span className="k-event-actions"><Icon name="reload"></Icon></span>
+                                                            <span className="k-event-actions"><Icon name="arrow-rotate-cw"></Icon></span>
                                                             <div><div className="k-event-template">Dance Practice</div></div>
                                                             <span className="k-event-actions"></span>
                                                         </div>

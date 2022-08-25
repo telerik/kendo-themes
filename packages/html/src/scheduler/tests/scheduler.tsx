@@ -475,7 +475,7 @@ root.render(
                                     </div>
                                     <div style={{ top: "36px", height: "108px", width: "166px", left: "348px" }} className="k-event k-hover k-event-ongoing">
                                         <span className="k-event-actions">
-                                            <Icon name="reload"></Icon>
+                                            <Icon name="arrow-rotate-cw"></Icon>
                                         </span>
                                         <div>
                                             <div className="k-event-template k-event-time">7:30 AM - 9:00 AM</div>
