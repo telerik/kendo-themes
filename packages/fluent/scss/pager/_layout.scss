@@ -137,6 +137,7 @@
             padding-block: var( --kendo-pager-number-padding-y, #{$kendo-pager-number-padding-y} );
             border-width: var( --kendo-pager-number-border-width, #{$kendo-pager-number-border-width} );
             border-style: solid;
+            font-weight: var( --kendo-pager-number-font-weight, #{$kendo-pager-number-font-weight} );
         }
 
         // Selected state

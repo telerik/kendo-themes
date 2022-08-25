@@ -131,6 +131,9 @@ $kendo-pager-number-border-radius: 0 !default;
 /// Spacing around the pager numbers.
 /// @group pager
 $kendo-pager-number-spacing: $kendo-pager-item-spacing !default;
+/// Font weight of the pager numbers.
+/// @group pager
+$kendo-pager-number-font-weight: var( --kendo-font-weight-bold, inherit ) !default;
 
 /// Background color of the pager numbers.
 /// @group pager
