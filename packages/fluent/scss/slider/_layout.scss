@@ -349,8 +349,8 @@
                 transform: translateX(50%);
             }
 
-            .k-button .k-i-arrow-e,
-            .k-button .k-i-arrow-w {
+            .k-button-increase .k-icon,
+            .k-button-decrease .k-icon {
                 transform: scaleX(-1);
             }
         }
