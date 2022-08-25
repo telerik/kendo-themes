@@ -48,7 +48,7 @@
 
         }
 
-        .k-upload-status {
+        .k-dropzone .k-upload-status {
             color: var( --kendo-upload-status-text, #{$kendo-upload-status-text} );
             opacity: var( --kendo-upload-status-text-opacity, #{$kendo-upload-status-text-opacity} );
         }
