@@ -47,6 +47,6 @@
     "bootstrap": "^5.2.0"
   },
   "devDependencies": {
-    "sass-build": "^0.0.1"
+    "sass-build": "^1.0.0"
   }
 }
