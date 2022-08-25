@@ -84,7 +84,7 @@ root.render(
                                                             <div>9:30 PM-11:00 PM</div>
                                                         </div>
                                                         <div className="k-scheduler-cell">
-                                                            <div className="k-task"><span className="k-scheduler-mark" style={{ color: 'red', backgroundColor: 'red' }} ></span><Icon name="reload"></Icon>Dance Practice<a className="k-link k-event-delete"><Icon name="x"></Icon></a></div>
+                                                            <div className="k-task"><span className="k-scheduler-mark" style={{ color: 'red', backgroundColor: 'red' }} ></span><Icon name="arrow-rotate-cw"></Icon>Dance Practice<a className="k-link k-event-delete"><Icon name="x"></Icon></a></div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -99,7 +99,7 @@ root.render(
                                                             <div>10:00 PM-12:00 AM</div>
                                                         </div>
                                                         <div className="k-scheduler-cell">
-                                                            <div className="k-task"><span className="k-scheduler-mark" style={{ color: 'red', backgroundColor: 'red' }} ></span><Icon name="reload"></Icon>HR Lecture<a className="k-link k-event-delete"><Icon name="x"></Icon></a></div>
+                                                            <div className="k-task"><span className="k-scheduler-mark" style={{ color: 'red', backgroundColor: 'red' }} ></span><Icon name="arrow-rotate-cw"></Icon>HR Lecture<a className="k-link k-event-delete"><Icon name="x"></Icon></a></div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -167,7 +167,7 @@ root.render(
                                                             <div>6:00 PM-7:00 PM</div>
                                                         </div>
                                                         <div className="k-scheduler-cell">
-                                                            <div className="k-task"><span className="k-scheduler-mark" style={{ color: 'red', backgroundColor: 'red' }} ></span><Icon name="reload"></Icon>Helpdesk weekly meeting<a className="k-link k-event-delete"><Icon name="x"></Icon></a></div>
+                                                            <div className="k-task"><span className="k-scheduler-mark" style={{ color: 'red', backgroundColor: 'red' }} ></span><Icon name="arrow-rotate-cw"></Icon>Helpdesk weekly meeting<a className="k-link k-event-delete"><Icon name="x"></Icon></a></div>
                                                         </div>
                                                     </div>
                                                     <div className="k-scheduler-row">
@@ -183,7 +183,7 @@ root.render(
                                                             <div>9:30 PM-11:00 PM</div>
                                                         </div>
                                                         <div className="k-scheduler-cell">
-                                                            <div className="k-task"><span className="k-scheduler-mark" style={{ color: 'red', backgroundColor: 'red' }} ></span><Icon name="reload"></Icon>Dance Practice<a className="k-link k-event-delete"><Icon name="x"></Icon></a></div>
+                                                            <div className="k-task"><span className="k-scheduler-mark" style={{ color: 'red', backgroundColor: 'red' }} ></span><Icon name="arrow-rotate-cw"></Icon>Dance Practice<a className="k-link k-event-delete"><Icon name="x"></Icon></a></div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -216,7 +216,7 @@ root.render(
                                                             <div>9:30 PM-11:00 PM</div>
                                                         </div>
                                                         <div className="k-scheduler-cell">
-                                                            <div className="k-task"><span className="k-scheduler-mark" style={{ color: 'green', backgroundColor: 'green' }} ></span><Icon name="reload"></Icon>Dance Practice<a className="k-link k-event-delete"><Icon name="x"></Icon></a></div>
+                                                            <div className="k-task"><span className="k-scheduler-mark" style={{ color: 'green', backgroundColor: 'green' }} ></span><Icon name="arrow-rotate-cw"></Icon>Dance Practice<a className="k-link k-event-delete"><Icon name="x"></Icon></a></div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -231,7 +231,7 @@ root.render(
                                                             <div>10:00 PM-12:00 AM</div>
                                                         </div>
                                                         <div className="k-scheduler-cell">
-                                                            <div className="k-task"><span className="k-scheduler-mark" style={{ color: 'green', backgroundColor: 'green' }} ></span><Icon name="reload"></Icon>HR Lecture<a className="k-link k-event-delete"><Icon name="x"></Icon></a></div>
+                                                            <div className="k-task"><span className="k-scheduler-mark" style={{ color: 'green', backgroundColor: 'green' }} ></span><Icon name="arrow-rotate-cw"></Icon>HR Lecture<a className="k-link k-event-delete"><Icon name="x"></Icon></a></div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -310,7 +310,7 @@ root.render(
                                                             <div>6:00 PM-7:00 PM</div>
                                                         </div>
                                                         <div className="k-scheduler-cell">
-                                                            <div className="k-task"><span className="k-scheduler-mark" style={{ color: 'green', backgroundColor: 'green' }} ></span><Icon name="reload"></Icon>Helpdesk weekly meeting<a className="k-link k-event-delete"><Icon name="x"></Icon></a></div>
+                                                            <div className="k-task"><span className="k-scheduler-mark" style={{ color: 'green', backgroundColor: 'green' }} ></span><Icon name="arrow-rotate-cw"></Icon>Helpdesk weekly meeting<a className="k-link k-event-delete"><Icon name="x"></Icon></a></div>
                                                         </div>
                                                     </div>
                                                     <div className="k-scheduler-row">
@@ -326,7 +326,7 @@ root.render(
                                                             <div>9:30 PM-11:00 PM</div>
                                                         </div>
                                                         <div className="k-scheduler-cell">
-                                                            <div className="k-task"><span className="k-scheduler-mark" style={{ color: 'green', backgroundColor: 'green' }} ></span><Icon name="reload"></Icon>Dance Practice<a className="k-link k-event-delete"><Icon name="x"></Icon></a></div>
+                                                            <div className="k-task"><span className="k-scheduler-mark" style={{ color: 'green', backgroundColor: 'green' }} ></span><Icon name="arrow-rotate-cw"></Icon>Dance Practice<a className="k-link k-event-delete"><Icon name="x"></Icon></a></div>
                                                         </div>
                                                     </div>
                                                 </div>

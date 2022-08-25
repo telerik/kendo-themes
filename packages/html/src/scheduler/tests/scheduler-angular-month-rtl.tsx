@@ -212,18 +212,18 @@ root.render(
                                 </table>
 
                                 <div style={{ backgroundColor: "rgb(245, 138, 138)", borderColor: "rgb(245, 138, 138)", width: "162px", right: "163px", top: "123px", height: "25px" }} className="k-event">
-                                    <span className="k-event-actions"><Icon name="reload"></Icon></span>
+                                    <span className="k-event-actions"><Icon name="arrow-rotate-cw"></Icon></span>
                                     <div><div className="k-event-template">Dance Practice</div></div>
                                     <span className="k-event-actions"><a className="k-link k-event-delete"><Icon name="x"></Icon></a></span>
                                     <span className="k-resize-handle k-resize-w"></span>
                                     <span className="k-resize-handle k-resize-e"></span>
                                 </div>
                                 <div style={{ backgroundColor: "rgb(110, 179, 250)", borderColor: "rgb(110, 179, 250)", width: "162px", right: "327px", top: "123px", height: "25px" }} className="k-event">
-                                    <span className="k-event-actions"><Icon name="reload"></Icon></span>
+                                    <span className="k-event-actions"><Icon name="arrow-rotate-cw"></Icon></span>
                                     <div><div className="k-event-template">HR Lecture</div></div>
                                 </div>
                                 <div style={{ backgroundColor: "rgb(245, 138, 138)", borderColor: "rgb(245, 138, 138)", width: "162px", right: "490px", top: "123px", height: "25px" }} className="k-event">
-                                    <span className="k-event-actions"><Icon name="reload"></Icon></span>
+                                    <span className="k-event-actions"><Icon name="arrow-rotate-cw"></Icon></span>
                                     <div><div className="k-event-template">Dance Practice</div></div>
                                 </div>
                                 <div style={{ backgroundColor: "rgb(110, 179, 250)", borderColor: "rgb(110, 179, 250)", width: "488px", right: "653px", top: "123px", height: "25px" }} className="k-event">
@@ -235,7 +235,7 @@ root.render(
                                     <div><div className="k-event-template">Software updates</div></div>
                                 </div>
                                 <div style={{ backgroundColor: "rgb(110, 179, 250)", borderColor: "rgb(110, 179, 250)", width: "162px", right: "490px", top: "150px", height: "25px" }} className="k-event">
-                                    <span className="k-event-actions"><Icon name="reload"></Icon></span>
+                                    <span className="k-event-actions"><Icon name="arrow-rotate-cw"></Icon></span>
                                     <div><div className="k-event-template">Helpdesk weekly meeting</div></div>
                                 </div>
                                 <div style={{ backgroundColor: "rgb(110, 179, 250)", borderColor: "rgb(110, 179, 250)", width: "488px", right: "653px", top: "150px", height: "25px" }} className="k-event">
@@ -271,7 +271,7 @@ root.render(
                                     <div><div className="k-event-template">Car Service</div></div>
                                 </div>
                                 <div style={{ backgroundColor: "rgb(110, 179, 250)", borderColor: "rgb(110, 179, 250)", width: "162px", right: "327px", top: "247px", height: "25px" }} className="k-event">
-                                    <span className="k-event-actions"><Icon name="reload"></Icon></span>
+                                    <span className="k-event-actions"><Icon name="arrow-rotate-cw"></Icon></span>
                                     <div><div className="k-event-template">HR Lecture</div></div>
                                 </div>
                                 <div style={{ backgroundColor: "rgb(245, 138, 138)", borderColor: "rgb(245, 138, 138)", width: "162px", right: "490px", top: "247px", height: "25px" }} className="k-event">

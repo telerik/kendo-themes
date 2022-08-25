@@ -79,7 +79,7 @@ root.render(
                                                                 <td>
                                                                     <div className="k-task">
                                                                         <span className="k-scheduler-mark" style={{ backgroundColor: "#f8a398" }}></span>
-                                                                        <Icon name="reload"></Icon>
+                                                                        <Icon name="arrow-rotate-cw"></Icon>
                                                                         <span className="k-scheduler-task-text">HR Lecture</span>
                                                                     </div>
                                                                 </td>
