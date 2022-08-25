@@ -35,7 +35,7 @@ $kendo-button-font-size-md: $font-size-md !default;
 $kendo-button-line-height-md: $line-height-md !default;
 
 $kendo-button-padding-x-lg: map-get( $spacing, 3 ) !default;
-$kendo-button-padding-y-lg: map-get( $spacing, 2 );
+$kendo-button-padding-y-lg: map-get( $spacing, 2 ) !default;
 $kendo-button-font-size-lg: $font-size-lg !default;
 $kendo-button-line-height-lg: $line-height-lg !default;
 
