@@ -40,12 +40,33 @@
             @include box-shadow( $pdf-viewer-page-shadow );
         }
 
+        .k-blank-page > .k-icon {
+            @include fill( $color: $pdf-viewer-icon-text );
+        }
+
 
         // Search
         .k-search-highlight {
             background-color: $pdf-viewer-search-highlight-bg;
         }
 
+        .k-search-highlight-mark {
+            @include fill( $bg: $pdf-viewer-search-highlight-mark-bg );
+        }
+
+    }
+
+    .k-pdf-viewer-canvas > .k-search-panel {
+        @include fill(
+            $pdf-viewer-search-panel-text,
+            $pdf-viewer-search-panel-bg,
+            $pdf-viewer-search-panel-border,
+        );
+        @include box-shadow( $pdf-viewer-search-panel-shadow );
+    }
+
+    .k-search-container {
+        @extend .k-search-panel !optional;
     }
 
 }
