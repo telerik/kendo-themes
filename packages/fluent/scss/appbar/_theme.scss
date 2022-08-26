@@ -8,11 +8,16 @@
         --INTERNAL--kendo-appbar-bg: var( --kendo-appbar-bg, #{$kendo-appbar-bg} );
         --INTERNAL--kendo-appbar-border: var( --kendo-appbar-border, #{$kendo-appbar-border} );
 
-        color: var( --INTERNAL--kendo-appbar-text, initial );
-        background-color: var( --INTERNAL--kendo-appbar-bg, initial );
-        border-color: var( --INTERNAL--kendo-appbar-border, initial );
+        color: var( --INTERNAL--kendo-appbar-text, inherit );
+        background-color: var( --INTERNAL--kendo-appbar-bg, inherit );
+        border-color: var( --INTERNAL--kendo-appbar-border, inherit );
     }
 
+    .k-appbar-inherit {
+        color: inherit;
+        background-color: inherit;
+        border-color: inherit;
+    }
 
     // AppBar theme colors
     @each $theme-color, $color-props in $kendo-appbar-theme-colors {
