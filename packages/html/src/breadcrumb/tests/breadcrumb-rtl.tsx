@@ -25,7 +25,7 @@ root.render(
                     <ol className="k-breadcrumb-container k-flex-wrap">
                         <li className="k-flex-none k-breadcrumb-item">
                             <Icon className="k-breadcrumb-delimiter-icon" name="arrow-chevron-left" />
-                            <span className="k-cursor-pointer k-flex-none k-breadcrumb-link k-state-disabled k-breadcrumb-icontext-link">
+                            <span className="k-cursor-pointer k-flex-none k-breadcrumb-link k-disabled k-breadcrumb-icontext-link">
                                 <Icon name="clock" />
                                 First item
                             </span>
@@ -49,7 +49,7 @@ root.render(
                         </li>
                         <li className="k-flex-none k-breadcrumb-last-item k-breadcrumb-item">
                             <Icon className="k-breadcrumb-delimiter-icon" name="arrow-chevron-left" />
-                            <span className="k-cursor-pointer k-flex-none k-breadcrumb-link k-state-disabled">
+                            <span className="k-cursor-pointer k-flex-none k-breadcrumb-link k-disabled">
                                 Fifth item
                             </span>
                         </li>
@@ -70,7 +70,7 @@ root.render(
                     <ol className="k-breadcrumb-container k-flex-wrap">
                         <li className="k-flex-none k-breadcrumb-item">
                             <Icon className="k-breadcrumb-delimiter-icon" name="arrow-chevron-left" />
-                            <span className="k-cursor-pointer k-flex-none k-breadcrumb-link k-state-disabled k-breadcrumb-icontext-link">
+                            <span className="k-cursor-pointer k-flex-none k-breadcrumb-link k-disabled k-breadcrumb-icontext-link">
                                 <Icon name="clock" />
                                 First item
                             </span>
@@ -94,7 +94,7 @@ root.render(
                         </li>
                         <li className="k-flex-none k-breadcrumb-last-item k-breadcrumb-item">
                             <Icon className="k-breadcrumb-delimiter-icon" name="arrow-chevron-left" />
-                            <span className="k-cursor-pointer k-flex-none k-breadcrumb-link k-state-disabled">
+                            <span className="k-cursor-pointer k-flex-none k-breadcrumb-link k-disabled">
                                 Fifth item
                             </span>
                         </li>
@@ -114,7 +114,7 @@ root.render(
                     <ol className="k-breadcrumb-container k-flex-wrap">
                         <li className="k-flex-none k-breadcrumb-item">
                             <Icon className="k-breadcrumb-delimiter-icon" name="arrow-chevron-left" />
-                            <span className="k-cursor-pointer k-flex-none k-breadcrumb-link k-state-disabled k-breadcrumb-icontext-link">
+                            <span className="k-cursor-pointer k-flex-none k-breadcrumb-link k-disabled k-breadcrumb-icontext-link">
                                 <Icon name="clock" />
                                 First item
                             </span>
@@ -138,7 +138,7 @@ root.render(
                         </li>
                         <li className="k-flex-none k-breadcrumb-last-item k-breadcrumb-item">
                             <Icon className="k-breadcrumb-delimiter-icon" name="arrow-chevron-left" />
-                            <span className="k-cursor-pointer k-flex-none k-breadcrumb-link k-state-disabled">
+                            <span className="k-cursor-pointer k-flex-none k-breadcrumb-link k-disabled">
                                 Fifth item
                             </span>
                         </li>
@@ -165,7 +165,7 @@ root.render(
                             <Icon className="k-breadcrumb-delimiter-icon" name="arrow-chevron-left" />
                         </li>
                         <li className="k-breadcrumb-item k-breadcrumb-last-item">
-                            <a className="k-breadcrumb-link k-state-disabled" href="#">Third item</a>
+                            <a className="k-breadcrumb-link k-disabled" href="#">Third item</a>
                         </li>
                     </ol>
                 </nav>
@@ -175,13 +175,13 @@ root.render(
                 <nav id="breadcrumbs" className="k-widget k-breadcrumb">
                     <ol className="k-breadcrumb-container">
                         <li className="k-breadcrumb-item k-breadcrumb-root-item">
-                            <a href="#" className="k-breadcrumb-root-link k-breadcrumb-icon-link k-state-focused">
+                            <a href="#" className="k-breadcrumb-root-link k-breadcrumb-icon-link k-focus">
                                 <Icon name="home" />
                             </a>
                             <Icon className="k-breadcrumb-delimiter-icon" name="arrow-chevron-left" />
                         </li>
                         <li className="k-breadcrumb-item">
-                            <a className="k-breadcrumb-link k-state-focused" href="#">First item</a>
+                            <a className="k-breadcrumb-link k-focus" href="#">First item</a>
                             <Icon className="k-breadcrumb-delimiter-icon" name="arrow-chevron-left" />
                         </li>
                         <li className="k-breadcrumb-item">
@@ -189,7 +189,7 @@ root.render(
                             <Icon className="k-breadcrumb-delimiter-icon" name="arrow-chevron-left" />
                         </li>
                         <li className="k-breadcrumb-item k-breadcrumb-last-item">
-                            <a className="k-breadcrumb-link k-state-disabled" href="#">Third item</a>
+                            <a className="k-breadcrumb-link k-disabled" href="#">Third item</a>
                         </li>
                     </ol>
                 </nav>
@@ -199,13 +199,13 @@ root.render(
                 <nav id="breadcrumbs" className="k-widget k-breadcrumb">
                     <ol className="k-breadcrumb-container">
                         <li className="k-breadcrumb-item k-breadcrumb-root-item">
-                            <a href="#" className="k-breadcrumb-root-link k-breadcrumb-icon-link k-state-hover">
+                            <a href="#" className="k-breadcrumb-root-link k-breadcrumb-icon-link k-hover">
                                 <Icon name="home" />
                             </a>
                             <Icon className="k-breadcrumb-delimiter-icon" name="arrow-chevron-left" />
                         </li>
                         <li className="k-breadcrumb-item">
-                            <a className="k-breadcrumb-link k-state-hover" href="#">First item</a>
+                            <a className="k-breadcrumb-link k-hover" href="#">First item</a>
                             <Icon className="k-breadcrumb-delimiter-icon" name="arrow-chevron-left" />
                         </li>
                         <li className="k-breadcrumb-item">
@@ -213,7 +213,7 @@ root.render(
                             <Icon className="k-breadcrumb-delimiter-icon" name="arrow-chevron-left" />
                         </li>
                         <li className="k-breadcrumb-item k-breadcrumb-last-item">
-                            <a className="k-breadcrumb-link k-state-disabled" href="#">Third item</a>
+                            <a className="k-breadcrumb-link k-disabled" href="#">Third item</a>
                         </li>
                     </ol>
                 </nav>
@@ -223,7 +223,7 @@ root.render(
                 <nav id="breadcrumbs" className="k-widget k-breadcrumb">
                     <ol className="k-breadcrumb-container">
                         <li className="k-breadcrumb-item k-breadcrumb-root-item">
-                            <a href="#" className="k-breadcrumb-root-link k-breadcrumb-icon-link k-state-hover">
+                            <a href="#" className="k-breadcrumb-root-link k-breadcrumb-icon-link k-hover">
                                 <Icon name="home" />
                             </a>
                             <Icon className="k-breadcrumb-delimiter-icon" name="arrow-chevron-left" />
@@ -242,7 +242,7 @@ root.render(
                             <Icon className="k-breadcrumb-delimiter-icon" name="arrow-chevron-left" />
                         </li>
                         <li className="k-breadcrumb-item k-breadcrumb-last-item">
-                            <a className="k-breadcrumb-link k-state-disabled" href="#">Third item</a>
+                            <a className="k-breadcrumb-link k-disabled" href="#">Third item</a>
                         </li>
                     </ol>
                 </nav>
@@ -250,7 +250,7 @@ root.render(
 
             <span className="k-colspan-all k-col-span-full">Edit Mode</span>
             <div>
-                <nav id="breadcrumbs" className="k-widget k-breadcrumb k-state-focused">
+                <nav id="breadcrumbs" className="k-widget k-breadcrumb k-focus">
                     <ol className="k-breadcrumb-container">
                         <li className="k-breadcrumb-item k-breadcrumb-root-item">
                             <a href="#" className="k-breadcrumb-root-link">
@@ -267,7 +267,7 @@ root.render(
                             <Icon className="k-breadcrumb-delimiter-icon" name="arrow-chevron-left" />
                         </li>
                         <li className="k-breadcrumb-item k-breadcrumb-last-item">
-                            <a className="k-breadcrumb-link k-state-disabled" href="#">Third item</a>
+                            <a className="k-breadcrumb-link k-disabled" href="#">Third item</a>
                         </li>
                     </ol>
                 </nav>
@@ -301,7 +301,7 @@ root.render(
                             <Icon className="k-breadcrumb-delimiter-icon" name="arrow-chevron-left" />
                         </li>
                         <li className="k-breadcrumb-item k-breadcrumb-last-item">
-                            <a className="k-breadcrumb-link k-state-disabled" href="#">Breadcrumb item </a>
+                            <a className="k-breadcrumb-link k-disabled" href="#">Breadcrumb item </a>
                         </li>
                     </ol>
                 </nav>

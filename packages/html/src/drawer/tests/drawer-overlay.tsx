@@ -31,19 +31,19 @@ root.render(
                                     <span className="k-item-text">Item</span>
                                 </li>
                                 <li className="k-drawer-item k-drawer-separator"></li>
-                                <li className="k-drawer-item k-state-hover">
+                                <li className="k-drawer-item k-hover">
                                     <Icon name="star-outline" />
                                     <span className="k-item-text">Hovered Item</span>
                                 </li>
-                                <li className="k-drawer-item k-state-selected">
+                                <li className="k-drawer-item k-selected">
                                     <Icon name="star-outline" />
                                     <span className="k-item-text">Selected Item</span>
                                 </li>
-                                <li className="k-drawer-item k-state-selected k-state-hover">
+                                <li className="k-drawer-item k-selected k-hover">
                                     <Icon name="star-outline" />
                                     <span className="k-item-text">Selected and hovered item</span>
                                 </li>
-                                <li className="k-drawer-item k-state-focused">
+                                <li className="k-drawer-item k-focus">
                                     <Icon name="star-outline" />
                                     <span className="k-item-text">Focused item</span>
                                 </li>
@@ -87,19 +87,19 @@ root.render(
                                     <span className="k-item-text">Item</span>
                                 </li>
                                 <li className="k-drawer-item k-drawer-separator"></li>
-                                <li className="k-drawer-item k-state-hover">
+                                <li className="k-drawer-item k-hover">
                                     <Icon name="star-outline" />
                                     <span className="k-item-text">Hovered Item</span>
                                 </li>
-                                <li className="k-drawer-item k-state-selected">
+                                <li className="k-drawer-item k-selected">
                                     <Icon name="star-outline" />
                                     <span className="k-item-text">Selected Item</span>
                                 </li>
-                                <li className="k-drawer-item k-state-selected k-state-hover">
+                                <li className="k-drawer-item k-selected k-hover">
                                     <Icon name="star-outline" />
                                     <span className="k-item-text">Selected and hovered item</span>
                                 </li>
-                                <li className="k-drawer-item k-state-focused">
+                                <li className="k-drawer-item k-focus">
                                     <Icon name="star-outline" />
                                     <span className="k-item-text">Focused item</span>
                                 </li>

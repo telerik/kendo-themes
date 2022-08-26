@@ -77,15 +77,15 @@ root.render(
                                 <td>10250</td>
                                 <td>Hanari Carnes</td>
                             </tr>
-                            <tr className="k-alt k-state-hover">
+                            <tr className="k-alt k-hover">
                                 <td>10251</td>
                                 <td>Victuailles en stock (Hovered)</td>
                             </tr>
-                            <tr className="k-state-selected">
+                            <tr className="k-selected">
                                 <td>10252</td>
                                 <td>Suprêmes délices (Selected)</td>
                             </tr>
-                            <tr className="k-alt k-state-hover k-state-selected">
+                            <tr className="k-alt k-hover k-selected">
                                 <td>10253</td>
                                 <td>Hanari (Selected and Hovered)</td>
                             </tr>
@@ -123,17 +123,17 @@ root.render(
                                 <td>Rio de Janeiro</td>
                                 <td>Rua do Paço, 67</td>
                             </tr>
-                            <tr className="k-alt k-state-hover">
+                            <tr className="k-alt k-hover">
                                 <td>France</td>
                                 <td>Lyon</td>
                                 <td>2, rue du Commerce</td>
                             </tr>
-                            <tr className="k-state-selected">
+                            <tr className="k-selected">
                                 <td>Belgium</td>
                                 <td>Charleroi</td>
                                 <td>Boulevard Tirou, 255</td>
                             </tr>
-                            <tr className="k-alt k-state-selected k-state-hover">
+                            <tr className="k-alt k-selected k-hover">
                                 <td>Brazil</td>
                                 <td>Rio de Janeiro</td>
                                 <td>Rua do Paço, 67</td>

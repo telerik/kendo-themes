@@ -35,7 +35,7 @@ root.render(
                         <div className="k-tooltip-content">
                             <div className="k-tooltip-title k-text-center">
                                 <div className="k-month">Jan</div>
-                                <div className="k-link k-day k-text-primary">02</div>
+                                <div className="k-link k-day !k-text-primary">02</div>
                             </div>
                             <div className="k-tooltip-events-container">
                                 <div className="k-tooltip-events">
@@ -68,7 +68,7 @@ root.render(
                         <div className="k-tooltip-content">
                             <div className="k-tooltip-title k-text-center">
                                 <div className="k-month">Jan</div>
-                                <div className="k-link k-day k-text-primary">29</div>
+                                <div className="k-link k-day !k-text-primary">29</div>
                             </div>
                             <div className="k-no-data k-text-center">No events on this date.</div>
                         </div>

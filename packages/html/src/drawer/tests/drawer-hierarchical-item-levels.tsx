@@ -25,11 +25,11 @@ root.render(
                                     <span className="k-item-text">Getting Started</span>
                                     <span className="k-drawer-toggle"><Icon name="arrow-chevron-down" /></span>
                                 </li>
-                                <li className="k-drawer-item k-state-hover k-level-1">
+                                <li className="k-drawer-item k-hover k-level-1">
                                     <Icon name="question" />
                                     <span className="k-item-text">About Kendo UI</span>
                                 </li>
-                                <li className="k-drawer-item k-state-selected k-level-2">
+                                <li className="k-drawer-item k-selected k-level-2">
                                     <Icon name="palette" />
                                     <span className="k-item-text">Supported Themes</span>
                                 </li>
@@ -83,11 +83,11 @@ root.render(
                                     <span className="k-item-text">Getting Started</span>
                                     <span className="k-drawer-toggle"><Icon name="arrow-chevron-down" /></span>
                                 </li>
-                                <li className="k-drawer-item k-state-hover k-level-1">
+                                <li className="k-drawer-item k-hover k-level-1">
                                     <Icon name="question" />
                                     <span className="k-item-text">About Kendo UI</span>
                                 </li>
-                                <li className="k-drawer-item k-state-selected k-level-2">
+                                <li className="k-drawer-item k-selected k-level-2">
                                     <Icon name="palette" />
                                     <span className="k-item-text">Supported Themes</span>
                                 </li>

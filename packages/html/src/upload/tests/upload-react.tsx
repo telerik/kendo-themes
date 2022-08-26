@@ -32,7 +32,7 @@ root.render(
                                 <span className="k-file-invalid-group-wrapper"><Icon className="k-file-group" name="file-image"></Icon><span className="k-file-state"></span></span>
                                 <span className="k-file-name-size-wrapper">
                                     <span className="k-file-name k-file-name-invalid">Video_File_with_Very_Very_Very_Very_Long_Name.jpg</span>
-                                    <span className="k-file-validation-message k-text-error">File type not allowed.</span>
+                                    <span className="k-file-validation-message !k-text-error">File type not allowed.</span>
                                 </span>
                                 <strong className="k-upload-status">
                                     <Button icon="close" fillMode="flat" className="k-upload-action"></Button>
@@ -70,7 +70,7 @@ root.render(
                                     <span className="k-file-name-size-wrapper"> <span className="k-file-name">Video_File_with_Very_Very_Very_VeryLong_Name2.jpg</span><span className="k-file-size">106.43 KB</span> </span>
                                     <span className="k-file-name-size-wrapper"> <span className="k-file-name">Video3.png</span><span className="k-file-size">24.34 KB</span> </span>
                                     <span className="k-file-name-size-wrapper"> <span className="k-file-name">Video4.png</span><span className="k-file-size">19.85 KB</span> </span>
-                                    <span className="k-file-information k-hidden">Total: 4 files, 170.22 KB</span><span className="k-file-validation-message k-text-success">4 File(s) uploaded successfully.</span>
+                                    <span className="k-file-information k-hidden">Total: 4 files, 170.22 KB</span><span className="k-file-validation-message !k-text-success">4 File(s) uploaded successfully.</span>
                                 </span>
                                 <strong className="k-upload-status">
                                     <Button icon="close" fillMode="flat" className="k-upload-action"></Button>

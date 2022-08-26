@@ -49,8 +49,8 @@ root.render(
                                 </td>
                                 <td>Normal row</td>
                                 <td>Sorted</td>
-                                <td className="k-state-focused">Focus</td>
-                                <td className="k-state-selected">Selected</td>
+                                <td className="k-focus">Focus</td>
+                                <td className="k-selected">Selected</td>
                             </tr>
                             <tr className="k-alt">
                                 <td>
@@ -59,34 +59,34 @@ root.render(
                                 </td>
                                 <td>Alt row</td>
                                 <td>Sorted</td>
-                                <td className="k-state-focused">Alt + Focus</td>
-                                <td className="k-state-selected">Alt + Selected</td>
+                                <td className="k-focus">Alt + Focus</td>
+                                <td className="k-selected">Alt + Selected</td>
                             </tr>
                         </tbody>
                         <tbody>
-                            <tr className="k-state-hover">
+                            <tr className="k-hover">
                                 <td>
                                     <Checkbox />
                                     <label className="k-checkbox-label"></label>
                                 </td>
                                 <td>Sorted</td>
                                 <td>Hovered row</td>
-                                <td className="k-state-focused">Hover + Focus</td>
-                                <td className="k-state-selected">Hover + Selected</td>
+                                <td className="k-focus">Hover + Focus</td>
+                                <td className="k-selected">Hover + Selected</td>
                             </tr>
-                            <tr className="k-alt k-state-hover">
+                            <tr className="k-alt k-hover">
                                 <td>
                                     <Checkbox />
                                     <label className="k-checkbox-label"></label>
                                 </td>
                                 <td>Alt hovered row</td>
                                 <td>Sorted</td>
-                                <td className="k-state-focused">Alt + Hover + Focus</td>
-                                <td className="k-state-selected">Alt + Hover + Selected</td>
+                                <td className="k-focus">Alt + Hover + Focus</td>
+                                <td className="k-selected">Alt + Hover + Selected</td>
                             </tr>
                         </tbody>
                         <tbody>
-                            <tr className="k-state-focused">
+                            <tr className="k-focus">
                                 <td>
                                     <Checkbox />
                                     <label className="k-checkbox-label"></label>
@@ -94,9 +94,9 @@ root.render(
                                 <td>Focused row</td>
                                 <td>Sorted</td>
                                 <td>N/A</td>
-                                <td className="k-state-selected">Focus + Selected</td>
+                                <td className="k-selected">Focus + Selected</td>
                             </tr>
-                            <tr className="k-alt k-state-focused">
+                            <tr className="k-alt k-focus">
                                 <td>
                                     <Checkbox />
                                     <label className="k-checkbox-label"></label>
@@ -104,50 +104,50 @@ root.render(
                                 <td>Alt focused row</td>
                                 <td>Sorted</td>
                                 <td>N/A</td>
-                                <td className="k-state-selected">Alt + Focus + Selected</td>
+                                <td className="k-selected">Alt + Focus + Selected</td>
                             </tr>
                         </tbody>
                         <tbody>
-                            <tr className="k-state-selected">
+                            <tr className="k-selected">
                                 <td>
                                     <Checkbox checked />
                                     <label className="k-checkbox-label"></label>
                                 </td>
                                 <td>Selected row</td>
                                 <td>Sorted</td>
-                                <td className="k-state-focused">Selected + Focus</td>
+                                <td className="k-focus">Selected + Focus</td>
                                 <td>N/A</td>
                             </tr>
-                            <tr className="k-alt k-state-selected">
+                            <tr className="k-alt k-selected">
                                 <td>
                                     <Checkbox checked />
                                     <label className="k-checkbox-label"></label>
                                 </td>
                                 <td>Alt selected row</td>
                                 <td>Sorted</td>
-                                <td className="k-state-focused">Alt + Selected + Focus</td>
+                                <td className="k-focus">Alt + Selected + Focus</td>
                                 <td>N/A</td>
                             </tr>
                         </tbody>
                         <tbody>
-                            <tr className="k-state-hover k-state-selected">
+                            <tr className="k-hover k-selected">
                                 <td>
                                     <Checkbox checked />
                                     <label className="k-checkbox-label"></label>
                                 </td>
                                 <td>Hover + Selected row</td>
                                 <td>Sorted</td>
-                                <td className="k-state-focused">Hover + Selected + Focus</td>
+                                <td className="k-focus">Hover + Selected + Focus</td>
                                 <td>N/A</td>
                             </tr>
-                            <tr className="k-alt k-state-hover k-state-selected">
+                            <tr className="k-alt k-hover k-selected">
                                 <td>
                                     <Checkbox checked />
                                     <label className="k-checkbox-label"></label>
                                 </td>
                                 <td>Alt + Hover selected row</td>
                                 <td>Sorted</td>
-                                <td className="k-state-focused">Alt + Hover + Selected + Focus</td>
+                                <td className="k-focus">Alt + Hover + Selected + Focus</td>
                                 <td>N/A</td>
                             </tr>
                         </tbody>

@@ -42,7 +42,7 @@ root.render(
                     </div>
 
                     <div className="k-form-field">
-                        <label className="k-label k-text-error">Error:<span className="k-field-info">(field info)</span></label>
+                        <label className="k-label !k-text-error">Error:<span className="k-field-info">(field info)</span></label>
                         <Textbox placeholder="Textbox..." invalid />
                         <div className="k-form-hint k-text-end">Hint: hint message</div>
                         <div className="k-form-error k-text-end">Error: error message</div>
@@ -99,7 +99,7 @@ root.render(
                     </div>
 
                     <div className="k-form-field">
-                        <label className="k-label k-text-error">Error:<span className="k-field-info">(field info)</span></label>
+                        <label className="k-label !k-text-error">Error:<span className="k-field-info">(field info)</span></label>
                         <div className="k-form-field-wrap">
                             <Textbox placeholder="Textbox..." />
                             <div className="k-form-hint k-text-end">Hint: hint message</div>

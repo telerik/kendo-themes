@@ -285,7 +285,7 @@ root.render(
                                         </div>
                                     </td>
                                 </tr>
-                                <tr className="k-master-row k-state-selected" style={{ height: "40px" }}>
+                                <tr className="k-master-row k-selected" style={{ height: "40px" }}>
                                     <td className="k-grid-content-sticky k-text-nowrap" colSpan={1} style={{ left: '0px', right: "200px" }}>
                                         <Icon name="none" />
                                         <Icon name="none" />

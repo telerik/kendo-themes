@@ -23,15 +23,15 @@ root.render(
                         <Icon className="k-bottom-nav-item-icon" name="email" />
                         <span className="k-bottom-nav-item-text">Normal</span>
                     </span>
-                    <span className="k-bottom-nav-item k-state-focus">
+                    <span className="k-bottom-nav-item k-focus">
                         <Icon className="k-bottom-nav-item-icon" name="email" />
                         <span className="k-bottom-nav-item-text">Focused</span>
                     </span>
-                    <span className="k-bottom-nav-item k-state-selected">
+                    <span className="k-bottom-nav-item k-selected">
                         <Icon className="k-bottom-nav-item-icon" name="email" />
                         <span className="k-bottom-nav-item-text">Selected</span>
                     </span>
-                    <span className="k-bottom-nav-item k-state-disabled">
+                    <span className="k-bottom-nav-item k-disabled">
                         <Icon className="k-bottom-nav-item-icon" name="email" />
                         <span className="k-bottom-nav-item-text">Disabled</span>
                     </span>
@@ -43,15 +43,15 @@ root.render(
                         <Icon className="k-bottom-nav-item-icon" name="email" />
                         <span className="k-bottom-nav-item-text">Normal</span>
                     </span>
-                    <span className="k-bottom-nav-item k-state-focus">
+                    <span className="k-bottom-nav-item k-focus">
                         <Icon className="k-bottom-nav-item-icon" name="email" />
                         <span className="k-bottom-nav-item-text">Focused</span>
                     </span>
-                    <span className="k-bottom-nav-item k-state-selected">
+                    <span className="k-bottom-nav-item k-selected">
                         <Icon className="k-bottom-nav-item-icon" name="email" />
                         <span className="k-bottom-nav-item-text">Selected</span>
                     </span>
-                    <span className="k-bottom-nav-item k-state-disabled">
+                    <span className="k-bottom-nav-item k-disabled">
                         <Icon className="k-bottom-nav-item-icon" name="email" />
                         <span className="k-bottom-nav-item-text">Disabled</span>
                     </span>
@@ -62,13 +62,13 @@ root.render(
                     <span className="k-bottom-nav-item">
                         <Icon className="k-bottom-nav-item-icon" name="email" />
                     </span>
-                    <span className="k-bottom-nav-item k-state-focus">
+                    <span className="k-bottom-nav-item k-focus">
                         <Icon className="k-bottom-nav-item-icon" name="email" />
                     </span>
-                    <span className="k-bottom-nav-item k-state-selected">
+                    <span className="k-bottom-nav-item k-selected">
                         <Icon className="k-bottom-nav-item-icon" name="email" />
                     </span>
-                    <span className="k-bottom-nav-item k-state-disabled">
+                    <span className="k-bottom-nav-item k-disabled">
                         <Icon className="k-bottom-nav-item-icon" name="email" />
                     </span>
                 </nav>
@@ -80,15 +80,15 @@ root.render(
                             <Icon className="k-bottom-nav-item-icon" name="email" />
                             <span className="k-bottom-nav-item-text">Normal</span>
                         </span>
-                        <span className="k-bottom-nav-item k-state-focus">
+                        <span className="k-bottom-nav-item k-focus">
                             <Icon className="k-bottom-nav-item-icon" name="email" />
                             <span className="k-bottom-nav-item-text">Focused Long</span>
                         </span>
-                        <span className="k-bottom-nav-item k-state-selected">
+                        <span className="k-bottom-nav-item k-selected">
                             <Icon className="k-bottom-nav-item-icon" name="email" />
                             <span className="k-bottom-nav-item-text">Selected</span>
                         </span>
-                        <span className="k-bottom-nav-item k-state-disabled">
+                        <span className="k-bottom-nav-item k-disabled">
                             <Icon className="k-bottom-nav-item-icon" name="email" />
                             <span className="k-bottom-nav-item-text">Disabled Long Text</span>
                         </span>
@@ -98,7 +98,7 @@ root.render(
                 <h4>k-bottom-nav-link</h4>
                 <div style={{ width: "360px" }}>
                     <div className="k-bottom-nav k-bottom-nav-flat k-bottom-nav-item-flow-vertical k-bottom-nav-primary">
-                        <span className="k-bottom-nav-item k-state-selected">
+                        <span className="k-bottom-nav-item k-selected">
                             <div className="k-bottom-nav-link"><span>Inbox</span></div>
                         </span>
                         <span className="k-bottom-nav-item">

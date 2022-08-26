@@ -29,7 +29,7 @@ root.render(
             {/* jQuery rendering */}
             <section>
                 <div className="k-animation-container" style={{ overflow: "visible" }}>
-                    <form className="k-filter-menu k-popup k-group k-reset k-state-border-up">
+                    <form className="k-filter-menu k-popup k-group k-reset">
                         <div className="k-filter-menu-container">
                             <div className="k-filter-help-text">Show items with value that:</div>
                             <DropdownList value="Is equal to" />

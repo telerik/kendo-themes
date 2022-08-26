@@ -71,7 +71,7 @@ root.render(
                                     <td>June 26, 2015</td>
                                 </tr>
                                 <tr className="k-footer-template">
-                                    <td className="k-state-focused"><Icon name="none"></Icon><Icon name="none"></Icon><Icon name="none"></Icon>7 employee(s)</td>
+                                    <td className="k-focus"><Icon name="none"></Icon><Icon name="none"></Icon><Icon name="none"></Icon>7 employee(s)</td>
                                     <td></td>
                                     <td>Last employee hired on July 30, 2015</td>
                                 </tr>
@@ -166,7 +166,7 @@ root.render(
                                                 <td colSpan={1}>4/13/2019</td>
                                             </tr>
                                             <tr className="k-footer">
-                                                <td className="k-state-focused">
+                                                <td className="k-focus">
                                                     <Icon name="none"></Icon><Icon name="none"></Icon><Icon name="none"></Icon>
                                                     35 employee(s)
                                                 </td>

@@ -570,7 +570,7 @@ root.render(
                         <div className="k-tabstrip-items-wrapper k-hstack">
                             <Button fillMode="flat" rounded={null} size={null} icon="arrow-60-left" className="k-tabstrip-prev"></Button>
                             <ul className="k-reset k-tabstrip-items">
-                                <li className="k-item k-active k-state-tab-on-top k-spreadsheet-sheets-bar-active">
+                                <li className="k-item k-active k-tab-on-top k-spreadsheet-sheets-bar-active">
                                     <span className="k-link">Food Order</span>
                                     <Button fillMode="flat" icon="close" className="k-spreadsheet-sheets-remove k-remove-tab"></Button>
                                 </li>

@@ -67,7 +67,7 @@
             " type="text" autocomplete="off">
       <input type="text" class="k-input-inner" value="{value}" autocomplete="off">
     </span>
-    {valid && loading !== true && <span class="k-captcha-validation-message k-text-success">{successMessage}</span>}
+    {valid && loading !== true && <span class="k-captcha-validation-message !k-text-success">{successMessage}</span>}
   </div>
 </div>
 

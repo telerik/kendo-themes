@@ -59,7 +59,7 @@ root.render(
                                     <span className="k-file-preview"><Icon className="k-file-icon" name="folder" /></span>
                                     <span className="k-file-name">Folder</span>
                                 </div>
-                                <div className="k-listview-item k-state-selected">
+                                <div className="k-listview-item k-selected">
                                     <span className="k-file-preview"><Icon className="k-file-icon" name="file-image" /></span>
                                     <span className="k-file-name">file.png</span>
                                 </div>

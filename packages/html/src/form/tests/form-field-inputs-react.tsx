@@ -172,7 +172,7 @@ root.render(
                                         </span>
                                         <span className="k-file-name-size-wrapper">
                                             <span className="k-file-name">test long long long long long long long long long long long long long.pdf</span>
-                                            <span className="k-file-validation-message k-text-success">File(s) successfully uploaded.</span>
+                                            <span className="k-file-validation-message !k-text-success">File(s) successfully uploaded.</span>
                                         </span>
                                         <strong className="k-upload-status">
                                             <Button fillMode="flat" icon="close" className="k-upload-action"></Button>
@@ -352,7 +352,7 @@ root.render(
                                             </span>
                                             <span className="k-file-name-size-wrapper">
                                                 <span className="k-file-name">test long long long long long long long long long long long long long.pdf</span>
-                                                <span className="k-file-validation-message k-text-success">File(s) successfully uploaded.</span>
+                                                <span className="k-file-validation-message !k-text-success">File(s) successfully uploaded.</span>
                                             </span>
                                             <strong className="k-upload-status">
                                                 <Button fillMode="flat" icon="close" className="k-upload-action"></Button>

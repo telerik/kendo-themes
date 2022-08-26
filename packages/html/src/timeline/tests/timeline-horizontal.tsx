@@ -38,7 +38,7 @@ root.render(
                                 </div>
                                 <a className="k-timeline-circle" href="#"></a>
                             </li>
-                            <li className="k-timeline-track-item k-state-focus">
+                            <li className="k-timeline-track-item k-focus">
                                 <div className="k-timeline-date-wrap">
                                     <span className="k-timeline-date">Jun 1, 2015</span>
                                 </div>

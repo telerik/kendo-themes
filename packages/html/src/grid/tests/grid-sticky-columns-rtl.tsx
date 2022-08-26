@@ -151,18 +151,18 @@ root.render(
                     </div>
                 </div>
                 <div className="k-pager k-widget k-grid-pager k-pager-sm" role="navigation">
-                    <a href="#" className="k-link k-pager-nav k-pager-first k-state-disabled"><Icon name="arrow-end-left" /></a>
-                    <a href="#" className="k-link k-pager-nav k-state-disabled"><Icon name="arrow-w" /></a>
+                    <a href="#" className="k-link k-pager-nav k-pager-first k-disabled"><Icon name="arrow-end-left" /></a>
+                    <a href="#" className="k-link k-pager-nav k-disabled"><Icon name="arrow-w" /></a>
                     <div className="k-pager-numbers-wrap">
                         <select className="k-picker k-dropdown-list k-dropdown">
                             <option className="k-link">1</option>
                         </select>
                         <ul className="k-pager-numbers k-reset">
-                            <li><a href="#" className="k-link k-state-selected">1</a></li>
+                            <li><a href="#" className="k-link k-selected">1</a></li>
                         </ul>
                     </div>
-                    <a href="#" className="k-link k-pager-nav k-state-disabled"><Icon name="arrow-e" /></a>
-                    <a href="#" className="k-link k-pager-nav k-pager-last k-state-disabled"><Icon name="arrow-end-right" /></a>
+                    <a href="#" className="k-link k-pager-nav k-disabled"><Icon name="arrow-e" /></a>
+                    <a href="#" className="k-link k-pager-nav k-pager-last k-disabled"><Icon name="arrow-end-right" /></a>
                     <span className="k-pager-sizes k-label">
                         <DropdownList value="20" />
                         items per page

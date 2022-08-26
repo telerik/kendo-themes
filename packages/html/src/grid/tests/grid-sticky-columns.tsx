@@ -63,28 +63,28 @@ root.render(
                                         <td colSpan={1} className="k-grid-content-sticky" style={{ left: "250px", right: '0px', borderRightWidth: "1px" }}>40</td>
                                         <td colSpan={1}>25</td>
                                     </tr>
-                                    <tr className="k-master-row k-state-selected" role="row">
+                                    <tr className="k-master-row k-selected" role="row">
                                         <td colSpan={1} className="k-grid-content-sticky" style={{ left: '0px', right: "250px", borderRightWidth: "1px" }}>Aniseed Syrup(Selected)</td>
                                         <td colSpan={1}>13</td>
                                         <td colSpan={1}>10</td>
                                         <td colSpan={1} className="k-grid-content-sticky" style={{ left: "250px", right: '0px', borderRightWidth: "1px" }}>70</td>
                                         <td colSpan={1}>25</td>
                                     </tr>
-                                    <tr className="k-master-row k-alt k-state-selected" role="row">
+                                    <tr className="k-master-row k-alt k-selected" role="row">
                                         <td colSpan={1} className="k-grid-content-sticky" style={{ left: '0px', right: "250px", borderRightWidth: "1px" }}>Chef Anton (Alt Selected)</td>
                                         <td colSpan={1}>53</td>
                                         <td colSpan={1}>22</td>
                                         <td colSpan={1} className="k-grid-content-sticky" style={{ left: "250px", right: '0px', borderRightWidth: "1px" }}>0</td>
                                         <td colSpan={1}>0</td>
                                     </tr>
-                                    <tr className="k-master-row k-state-selected k-state-hover" role="row">
+                                    <tr className="k-master-row k-selected k-hover" role="row">
                                         <td colSpan={1} className="k-grid-content-sticky" style={{ left: '0px', right: "250px", borderRightWidth: "1px" }}>Chef (Selected+Hover)</td>
                                         <td colSpan={1}>0</td>
                                         <td colSpan={1}>21.35</td>
                                         <td colSpan={1} className="k-grid-content-sticky" style={{ left: "250px", right: '0px', borderRightWidth: "1px" }}>0</td>
                                         <td colSpan={1}>0</td>
                                     </tr>
-                                    <tr className="k-master-row k-alt k-state-selected k-state-hover" role="row">
+                                    <tr className="k-master-row k-alt k-selected k-hover" role="row">
                                         <td colSpan={1} className="k-grid-content-sticky" style={{ left: '0px', right: "250px", borderRightWidth: "1px" }}>Gran (Alt Selected+Hover)</td>
                                         <td colSpan={1}>120</td>
                                         <td colSpan={1}>25</td>
@@ -258,7 +258,7 @@ root.render(
                                             </td>
                                         </tr>
 
-                                        <tr className="k-master-row k-state-hover">
+                                        <tr className="k-master-row k-hover">
                                             <td className="k-group-cell"></td>
                                             <td colSpan={1}>
                                                 Employee 1</td>
@@ -272,7 +272,7 @@ root.render(
                                                 False</td>
                                         </tr>
 
-                                        <tr className="k-master-row k-alt k-state-selected">
+                                        <tr className="k-master-row k-alt k-selected">
                                             <td className="k-group-cell"></td>
                                             <td colSpan={1}>
                                                 Employee 2</td>
@@ -286,7 +286,7 @@ root.render(
                                                 True</td>
                                         </tr>
 
-                                        <tr className="k-master-row k-state-hover k-state-selected">
+                                        <tr className="k-master-row k-hover k-selected">
                                             <td className="k-group-cell"></td>
                                             <td colSpan={1}>
                                                 Employee 3</td>

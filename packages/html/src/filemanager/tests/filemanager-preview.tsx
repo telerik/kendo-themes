@@ -84,7 +84,7 @@ root.render(
                                             <td>13/12/2019 at 12:22:04 PM</td>
                                             <td>0</td>
                                         </tr>
-                                        <tr className="k-alt k-state-selected">
+                                        <tr className="k-alt k-selected">
                                             <td>
                                                 <span className="k-file-preview"><Icon className="k-file-icon" name="file" /></span>
                                                 <span className="k-file-name">file.png</span>
@@ -209,7 +209,7 @@ root.render(
                     </div>
 
                     {/* Resizing Handle */}
-                    <div className="k-splitbar k-splitbar-horizontal k-splitbar-draggable-horizontal k-filemanager-splitbar-navigation k-state-focused">
+                    <div className="k-splitbar k-splitbar-horizontal k-splitbar-draggable-horizontal k-filemanager-splitbar-navigation k-focus">
                         <span className="k-resize-handle"></span>
                     </div>
 
@@ -287,7 +287,7 @@ root.render(
                                         <col />
                                     </colgroup>
                                     <tbody>
-                                        <tr className="k-state-selected">
+                                        <tr className="k-selected">
                                             <td>
                                                 <span className="k-file-preview"><Icon className="k-file-icon" name="folder" /></span>
                                                 <span className="k-file-name">Folder</span>
@@ -295,7 +295,7 @@ root.render(
                                             <td>13/12/2019 at 12:22:04 PM</td>
                                             <td>0</td>
                                         </tr>
-                                        <tr className="k-alt k-state-selected">
+                                        <tr className="k-alt k-selected">
                                             <td>
                                                 <span className="k-file-preview"><Icon className="k-file-icon" name="file" /></span>
                                                 <span className="k-file-name">file.png</span>
