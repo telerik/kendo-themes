@@ -83,8 +83,7 @@
             pointer-events: none;
         }
 
-        &.k-focus::after,
-        &.k-state-focused::after {
+        &.k-focus::after {
             opacity: 1;
             transform: scaleX(1);
         }
@@ -102,8 +101,7 @@
             transform: none;
         }
 
-        &.k-focus::after,
-        &.k-state-focused::after {
+        &.k-focus::after {
             transform: none;
         }
         &:focus-within::after {

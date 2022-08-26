@@ -42,9 +42,9 @@
             }
         }
 
-        // Hover & Actve state
+        // Hover & Active state
         &:hover,
-        &.k-state-active,
+        &.k-hover
         &.k-active {
             border-color: $panel-border;
         }
@@ -62,7 +62,6 @@
 
     // Insert table
     .k-ct-popup {
-        .k-state-selected,
         .k-selected {
             @include fill( $selected-text, $selected-bg, $selected-border, none );
         }

@@ -12,7 +12,6 @@
 
     // Hover state
     .k-radio:hover,
-    .k-radio.k-state-hover,
     .k-radio.k-hover {
         @include fill(
             $kendo-radio-hover-text,
@@ -24,7 +23,6 @@
 
     // Focus state
     .k-radio:focus,
-    .k-radio.k-state-focus,
     .k-radio.k-focus {
         @include fill( $border: $kendo-radio-focus-border );
         @include box-shadow( $kendo-radio-focus-shadow );
@@ -33,13 +31,11 @@
 
     // Invalid state
     .k-radio.k-invalid,
-    .k-radio.k-state-invalid,
     .k-radio.ng-invalid.ng-touched,
     .k-radio.ng-invalid.ng-dirty {
         @include fill( $border: $kendo-radio-invalid-border );
     }
     .k-radio.k-invalid + .k-radio-label,
-    .k-radio.k-state-invalid + .k-radio-label,
     .k-radio.ng-invalid.ng-touched + .k-radio-label,
     .k-radio.ng-invalid.ng-dirty + .k-radio-label {
         @include fill( $color: $kendo-radio-invalid-text );
@@ -56,7 +52,6 @@
         );
     }
     .k-radio:checked:focus,
-    .k-radio.k-checked.k-state-focus,
     .k-radio.k-checked.k-focus {
         @include fill( $border: $kendo-radio-focus-checked-border );
         @include box-shadow( $kendo-radio-focus-checked-shadow );

@@ -8,9 +8,6 @@
 
         &.k-invalid + .k-label,
         .k-invalid + .k-label,
-        &.k-state-invalid + .k-label,
-        .k-state-invalid + .k-label,
-        .k-invalid + .k-label,
         .ng-invalid.ng-touched + .k-label,
         .ng-invalid.ng-dirty + .k-label {
             @include fill( $color: $error );

@@ -69,8 +69,7 @@
             @include disabled( $disabled-styling );
 
             [disabled] &,
-            .k-disabled &,
-            .k-state-disabled & {
+            .k-disabled & {
                 opacity: 1;
                 filter: grayscale(0);
             }
@@ -91,8 +90,7 @@
             @include disabled( $disabled-styling );
 
             [disabled] &,
-            .k-disabled &,
-            .k-state-disabled & {
+            .k-disabled & {
                 opacity: 1;
                 filter: grayscale(0);
             }

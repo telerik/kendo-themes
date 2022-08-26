@@ -13,8 +13,7 @@
             );
         }
 
-        &.k-focus > .k-label,
-        &.k-state-focused > .k-label {
+        &.k-focus > .k-label {
             @include fill(
                 $color: var( --kendo-floating-label-focus-text, #{$kendo-floating-label-focus-text} ),
                 $bg: var( --kendo-floating-label-focus-bg, #{$kendo-floating-label-focus-bg} )

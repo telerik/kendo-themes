@@ -27,7 +27,6 @@
             );
 
             &:hover,
-            &.k-state-hover,
             &.k-hover {
                 @include fill(
                     $tabstrip-item-hovered-text,
@@ -38,9 +37,7 @@
             }
 
             &:active,
-            &.k-state-active,
             &.k-active,
-            &.k-state-selected,
             &.k-selected {
                 @include fill(
                     $tabstrip-item-selected-text,
@@ -51,7 +48,6 @@
             }
 
             &:focus,
-            &.k-state-focused,
             &.k-focus {
                 @include box-shadow( $tabstrip-item-focused-shadow );
             }
@@ -74,7 +70,6 @@
         );
 
         &:focus,
-        &.k-state-focused,
         &.k-focus {
             outline-color: $tabstrip-content-border-focused;
         }
@@ -85,7 +80,6 @@
     @if ($tabstrip-indicator-size) {
 
         .k-tabstrip-items-wrapper {
-            .k-item.k-state-active::after,
             .k-item.k-active::after {
                 border-color: $tabstrip-indicator-color;
             }

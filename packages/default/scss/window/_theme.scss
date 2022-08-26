@@ -12,7 +12,6 @@
 
     .k-window {
         &:focus,
-        &.k-state-focused,
         &.k-focus {
             @include box-shadow( $window-focused-shadow );
         }

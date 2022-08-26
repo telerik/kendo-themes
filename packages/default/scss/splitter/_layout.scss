@@ -172,7 +172,7 @@
 
         .k-pane,
         .k-pane-flex {
-            &.k-state-hidden,
+            &.k-hidden,
             &[hidden] {
                 // sass-lint:disable-block no-important
                 // hidden panes need to be zero-width to allow pane animation

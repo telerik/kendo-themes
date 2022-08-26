@@ -113,7 +113,6 @@
 @include exports( "common/disabled" ) {
 
     // Disabled state
-    .k-state-disabled,
     .k-disabled,
     .k-widget[disabled],
     .k-disabled {
@@ -128,8 +127,7 @@
 
         // Nested disabled
         [disabled],
-        .k-disabled,
-        .k-state-disabled {
+        .k-disabled {
             opacity: 1;
             filter: grayscale(0);
         }

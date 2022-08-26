@@ -19,14 +19,14 @@
         );
 
         &:hover,
-        &.k-state-hover {
+        &.k-hover {
             @include fill(
                 var(--kendo-list-item-hover-text),
                 var(--kendo-list-item-hover-bg)
             );
         }
 
-        &.k-state-selected {
+        &.k-selected {
             @include fill(
                 var(--kendo-list-item-selected-text),
                 var(--kendo-list-item-selected-bg)
@@ -34,9 +34,8 @@
         }
 
         &:focus,
-        &:focus-within,
-        &.k-state-focus,
-        &.k-state-focused {
+        &:focus-within
+        &.k-focus {
             box-shadow: var(--kendo-list-item-focus-shadow);
         }
     }

@@ -10,8 +10,7 @@
             );
         }
 
-        &.k-focus > .k-label,
-        &.k-state-focused > .k-label {
+        &.k-focus > .k-label {
             @include fill(
                 $color: $floating-label-focus-text,
                 $bg: $floating-label-focus-bg

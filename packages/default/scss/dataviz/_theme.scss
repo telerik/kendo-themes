@@ -142,7 +142,7 @@
         .k-leaf.k-inverse {
             color: $component-text;
         }
-        .k-leaf.k-state-hover,
+        .k-leaf:hover,
         .k-leaf.k-hover {
             box-shadow: inset 0 0 0 3px $component-border;
         }

@@ -8,8 +8,7 @@
 
     // Listview content
     .k-listview-content {}
-    .k-listview-content > .k-state-selected.k-state-focused,
-    .k-listview-content > .k-selected.k-focused {
+    .k-listview-content > .k-selected.k-focus {
         background-color: rgba( contrast-wcag( $listview-bg ), .12 );
     }
 

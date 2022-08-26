@@ -45,15 +45,12 @@
 
 
     // Hover state
-    .k-pivotgrid-row-headers tbody > .k-pivotgrid-row.k-state-hover,
-    .k-pivotgrid-row-headers tbody > .k-pivotgrid-row.k-hover,
     .k-pivotgrid-row-headers tbody > .k-pivotgrid-row:hover,
-    .k-pivotgrid-column-headers tbody > .k-pivotgrid-row.k-state-hover,
-    .k-pivotgrid-column-headers tbody > .k-pivotgrid-row.k-hover,
+    .k-pivotgrid-row-headers tbody > .k-pivotgrid-row.k-hover,
     .k-pivotgrid-column-headers tbody > .k-pivotgrid-row:hover,
-    .k-pivotgrid-values tbody > .k-pivotgrid-row.k-state-hover,
-    .k-pivotgrid-values tbody > .k-pivotgrid-row.k-hover,
-    .k-pivotgrid-values tbody > .k-pivotgrid-row:hover {
+    .k-pivotgrid-column-headers tbody > .k-pivotgrid-row.k-hover,
+    .k-pivotgrid-values tbody > .k-pivotgrid-row:hover,
+    .k-pivotgrid-values tbody > .k-pivotgrid-row.k-hover {
         @include fill (
             $pivotgrid-hover-text,
             $pivotgrid-hover-bg,
@@ -62,9 +59,8 @@
     }
 
     // Focus state
-    .k-pivotgrid-cell.k-state-focus,
-    .k-pivotgrid-cell.k-focus,
     .k-pivotgrid-cell:focus,
+    .k-pivotgrid-cell.k-focus,
     .k-master-row > .k-pivotgrid-cell:focus,
     .k-grouping-row > .k-pivotgrid-cell:focus,
     .k-detail-row > .k-pivotgrid-cell:focus,
@@ -73,9 +69,7 @@
     }
 
     // Selected state
-    .k-pivotgrid-cell.k-state-selected,
     .k-pivotgrid-cell.k-selected,
-    .k-pivotgrid-row.k-state-selected > .k-pivotgrid-cell,
     .k-pivotgrid-row.k-selected > .k-pivotgrid-cell {
         @include fill (
             $pivotgrid-selected-text,

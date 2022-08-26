@@ -15,8 +15,7 @@
         }
 
         &:focus,
-        &.k-focus,
-        &.k-state-focus {
+        &.k-focus {
             @include fill(
                 $card-focus-text,
                 $card-focus-bg,
@@ -25,8 +24,7 @@
             @include box-shadow( $card-focus-shadow );
         }
 
-        &.k-selected,
-        &.k-state-selected {
+        &.k-selected {
             @include box-shadow( $card-focus-shadow );
         }
     }
@@ -78,10 +76,8 @@
 
 
     .k-card-wrap {
-        &.k-state-focused,
-        &.k-focus,
         &:focus,
-        &.k-state-selected,
+        &.k-focus,
         &.k-selected {
             > .k-card {
                 @include box-shadow( $card-focus-shadow );

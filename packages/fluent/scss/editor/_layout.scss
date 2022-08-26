@@ -50,7 +50,6 @@
                 pointer-events: auto;
             }
 
-            .k-editor-content.k-state-focused,
             .k-editor-content.k-focus {
                 outline-width: 1px;
                 outline-style: dashed;
@@ -490,7 +489,6 @@
             display: block;
             margin: auto;
 
-            &.k-state-selected,
             &.k-selected {
                 color: inherit;
                 border-width: 0;

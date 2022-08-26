@@ -182,10 +182,8 @@
 
             &:focus,
             &.k-focus,
-            &.k-state-focus,
             &:hover,
-            &.k-hover,
-            &.k-state-hover {
+            &.k-hover {
                 text-decoration: underline;
             }
         }

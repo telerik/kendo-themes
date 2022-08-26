@@ -64,7 +64,6 @@
                 );
             }
 
-            &.k-state-selected .k-file-icon,
             &.k-selected .k-file-icon {
                 @include fill(
                     inherit,

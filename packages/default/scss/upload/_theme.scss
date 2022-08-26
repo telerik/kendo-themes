@@ -33,12 +33,10 @@
 
         .k-file {
 
-            &.k-state-focused,
             &.k-focus {
                 box-shadow: inset $upload-focused-shadow;
             }
 
-            .k-upload-action.k-state-focused,
             .k-upload-action.k-focus {
                 box-shadow: $upload-focused-shadow;
             }
@@ -130,7 +128,6 @@
         }
 
         // Invalid,
-        &.k-state-invalid,
         &.k-invalid,
         &.ng-invalid.ng-touched,
         &.ng-invalid.ng-dirty {
