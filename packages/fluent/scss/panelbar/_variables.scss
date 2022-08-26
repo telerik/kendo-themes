@@ -26,7 +26,7 @@ $kendo-panelbar-border-style: solid !default;
 
 /// Width of the border around the panelbar items.
 /// @group panelbar
-$kendo-panelbar-item-border-width: 1px !default;
+$kendo-panelbar-item-border-width: 0 !default;
 /// Style of the border around the panelbar items.
 /// @group panelbar
 $kendo-panelbar-item-border-style: solid !default;
@@ -80,7 +80,7 @@ $kendo-panelbar-header-border: inherit !default;
 $kendo-panelbar-header-hovered-bg: var( --kendo-hover-bg, inherit ) !default;
 /// Text color of the panelbar header when hovered.
 /// @group panelbar
-$kendo-panelbar-header-hovered-text: get-theme-color-var( primary-130 ) !default;
+$kendo-panelbar-header-hovered-text: get-theme-color-var( primary-150 ) !default;
 /// Border color of the panelbar header when hovered.
 /// @group panelbar
 $kendo-panelbar-header-hovered-border: inherit !default;
@@ -96,14 +96,14 @@ $kendo-panelbar-header-focused-text: inherit !default;
 $kendo-panelbar-header-focused-border: inherit !default;
 /// Shadow of the panelbar header when focused.
 /// @group panelbar
-$kendo-panelbar-header-focused-shadow: var( --kendo-list-item-focus-shadow, #{$kendo-list-item-focus-shadow} ) !default;
+$kendo-panelbar-header-focused-shadow: $kendo-list-item-focus-shadow !default;
 
 /// Background color of the panelbar header when focused and hovered.
 /// @group panelbar
-$kendo-panelbar-header-hovered-focused-bg: var( --kendo-panelbar-header-hovered-bg, #{$kendo-panelbar-header-hovered-bg} ) !default;
+$kendo-panelbar-header-hovered-focused-bg: $kendo-panelbar-header-hovered-bg !default;
 /// Text color of the panelbar header when focused and hovered.
 /// @group panelbar
-$kendo-panelbar-header-hovered-focused-text: var( --kendo-panelbar-header-hovered-text, #{$kendo-panelbar-header-hovered-text} ) !default;
+$kendo-panelbar-header-hovered-focused-text: $kendo-panelbar-header-hovered-text !default;
 /// Border color of the panelbar header when focused and hovered.
 /// @group panelbar
 $kendo-panelbar-header-hovered-focused-border: null !default;
@@ -113,7 +113,7 @@ $kendo-panelbar-header-hovered-focused-border: null !default;
 $kendo-panelbar-header-selected-bg: var( --kendo-selected-bg, inherit ) !default;
 /// Text color of the panelbar header when selected.
 /// @group panelbar
-$kendo-panelbar-header-selected-text: var( --kendo-selected-text, inherit ) !default;
+$kendo-panelbar-header-selected-text: $black !default;
 /// Border color of the panelbar header when selected.
 /// @group panelbar
 $kendo-panelbar-header-selected-border: inherit !default;
@@ -123,30 +123,30 @@ $kendo-panelbar-selected-marker: get-theme-color-var( primary-130 ) !default;
 
 /// Background color of the panelbar header when selected and hovered.
 /// @group panelbar
-$kendo-panelbar-header-selected-hovered-bg: var( --kendo-panelbar-header-selected-bg, #{$kendo-panelbar-header-selected-bg} ) !default;
+$kendo-panelbar-header-selected-hovered-bg: $kendo-panelbar-header-selected-bg default;
 /// Text color of the panelbar header when selected and hovered.
 /// @group panelbar
-$kendo-panelbar-header-selected-hovered-text: var( --kendo-panelbar-header-hovered-text, #{$kendo-panelbar-header-hovered-text} ) !default;
+$kendo-panelbar-header-selected-hovered-text: $kendo-panelbar-header-hovered-text !default;
 /// Border color of the panelbar header when selected and hovered.
 /// @group panelbar
 $kendo-panelbar-header-selected-hovered-border: inherit !default;
 
 /// Background color of the panelbar header when selected and focused.
 /// @group panelbar
-$kendo-panelbar-header-selected-focused-bg: var( --kendo-panelbar-header-selected-bg, #{$kendo-panelbar-header-selected-bg} ) !default;
+$kendo-panelbar-header-selected-focused-bg: $kendo-panelbar-header-selected-bg !default;
 /// Text color of the panelbar header when selected and focused.
 /// @group panelbar
-$kendo-panelbar-header-selected-focused-text: var( --kendo-panelbar-header-selected-text, #{$kendo-panelbar-header-selected-text} ) !default;
+$kendo-panelbar-header-selected-focused-text: $kendo-panelbar-header-selected-text !default;
 /// Border color of the panelbar header when selected and focused.
 /// @group panelbar
 $kendo-panelbar-header-selected-focused-border: inherit !default;
 
 /// Background color of the panelbar header when selected, focused and hovered.
 /// @group panelbar
-$kendo-panelbar-header-selected-hovered-focused-bg: var( --kendo-panelbar-header-selected-hovered-bg, #{$kendo-panelbar-header-selected-hovered-bg} ) !default;
+$kendo-panelbar-header-selected-hovered-focused-bg: $kendo-panelbar-header-selected-hovered-bg !default;
 /// Text color of the panelbar header when selected, focused and hovered.
 /// @group panelbar
-$kendo-panelbar-header-selected-hovered-focused-text: var( --kendo-panelbar-header-selected-hovered-text, #{$kendo-panelbar-header-selected-hovered-text} ) !default;
+$kendo-panelbar-header-selected-hovered-focused-text: $kendo-panelbar-header-selected-hovered-text !default;
 /// Border color of the panelbar header when selected, focused and hovered.
 /// @group panelbar
 $kendo-panelbar-header-selected-hovered-focused-border: inherit !default;
@@ -166,7 +166,7 @@ $kendo-panelbar-header-expanded-border: inherit !default;
 $kendo-panelbar-item-hovered-bg: var( --kendo-hover-bg, inherit ) !default;
 /// Text color of the panelbar item when hovered.
 /// @group panelbar
-$kendo-panelbar-item-hovered-text: get-theme-color-var( primary-130 ) !default;
+$kendo-panelbar-item-hovered-text: get-theme-color-var( primary-150 ) !default;
 /// Border color of the panelbar item when hovered.
 /// @group panelbar
 $kendo-panelbar-item-hovered-border: inherit !default;
@@ -182,14 +182,14 @@ $kendo-panelbar-item-focused-text: inherit !default;
 $kendo-panelbar-item-focused-border: inherit !default;
 /// Box shadow of the panelbar item when focused.
 /// @group panelbar
-$kendo-panelbar-item-focused-shadow: var( --kendo-list-item-focus-shadow, #{$kendo-list-item-focus-shadow} ) !default;
+$kendo-panelbar-item-focused-shadow: $kendo-list-item-focus-shadow !default;
 
 /// Background color of the panelbar item when focused and hovered.
 /// @group panelbar
-$kendo-panelbar-item-hovered-focused-bg: var( --kendo-panelbar-item-hovered-bg, #{$kendo-panelbar-item-hovered-bg} ) !default;
+$kendo-panelbar-item-hovered-focused-bg: $kendo-panelbar-item-hovered-bg !default;
 /// Text color of the panelbar item when focused and hovered.
 /// @group panelbar
-$kendo-panelbar-item-hovered-focused-text: var( --kendo-panelbar-item-hovered-text, #{$kendo-panelbar-item-hovered-text} ) !default;
+$kendo-panelbar-item-hovered-focused-text: $kendo-panelbar-item-hovered-text !default;
 /// Border color of the panelbar item when focused and hovered.
 /// @group panelbar
 $kendo-panelbar-item-hovered-focused-border: inherit !default;
@@ -199,37 +199,37 @@ $kendo-panelbar-item-hovered-focused-border: inherit !default;
 $kendo-panelbar-item-selected-bg: var( --kendo-selected-bg, inherit ) !default;
 /// Text color of the panelbar item when selected.
 /// @group panelbar
-$kendo-panelbar-item-selected-text: var( --kendo-selected-text, inherit ) !default;
+$kendo-panelbar-item-selected-text: $black !default;
 /// Border color of the panelbar item when selected.
 /// @group panelbar
 $kendo-panelbar-item-selected-border: inherit !default;
 
 /// Background color of the panelbar item when selected and hovered.
 /// @group panelbar
-$kendo-panelbar-item-selected-hovered-bg: var( --kendo-panelbar-item-selected-bg, #{$kendo-panelbar-item-selected-bg} ) !default;
+$kendo-panelbar-item-selected-hovered-bg: $kendo-panelbar-item-selected-bg !default;
 /// Text color of the panelbar item when selected and hovered.
 /// @group panelbar
-$kendo-panelbar-item-selected-hovered-text: var( --kendo-panelbar-item-hovered-text, #{$kendo-panelbar-item-hovered-text} ) !default;
+$kendo-panelbar-item-selected-hovered-text: $kendo-panelbar-item-hovered-text !default;
 /// Border color of the panelbar item when selected and hovered.
 /// @group panelbar
 $kendo-panelbar-item-selected-hovered-border: inherit !default;
 
 /// Background color of the panelbar item when selected and focused.
 /// @group panelbar
-$kendo-panelbar-item-selected-focused-bg: var( --kendo-panelbar-item-selected-bg, #{$kendo-panelbar-item-selected-bg} ) !default;
+$kendo-panelbar-item-selected-focused-bg: $kendo-panelbar-item-selected-bg !default;
 /// Text color of the panelbar item when selected and focused.
 /// @group panelbar
-$kendo-panelbar-item-selected-focused-text: var( --kendo-panelbar-item-selected-text, #{$kendo-panelbar-item-selected-text} ) !default;
+$kendo-panelbar-item-selected-focused-text: $kendo-panelbar-item-selected-text !default;
 /// Border color of the panelbar item when selected and focused.
 /// @group panelbar
 $kendo-panelbar-item-selected-focused-border: inherit !default;
 
 /// Background color of the panelbar item when selected, focused and hovered.
 /// @group panelbar
-$kendo-panelbar-item-selected-hovered-focused-bg: var( --kendo-panelbar-item-selected-hovered-bg, #{$kendo-panelbar-item-selected-hovered-bg} ) !default;
+$kendo-panelbar-item-selected-hovered-focused-bg: $kendo-panelbar-item-selected-hovered-bg !default;
 /// Text color of the panelbar item when selected, focused and hovered.
 /// @group panelbar
-$kendo-panelbar-item-selected-hovered-focused-text: var( --kendo-panelbar-item-selected-hovered-text, #{$kendo-panelbar-item-selected-hovered-text} ) !default;
+$kendo-panelbar-item-selected-hovered-focused-text: $kendo-panelbar-item-selected-hovered-text !default;
 /// Border color of the panelbar item when selected, focused and hovered.
 /// @group panelbar
 $kendo-panelbar-item-selected-hovered-focused-border: inherit !default;

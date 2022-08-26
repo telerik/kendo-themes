@@ -52,8 +52,8 @@ root.render(
                             <Icon className="k-panelbar-expand" name="arrow-chevron-down" />
                         </span>
                     </div>
-                    <div className="k-item">
-                        <span className="k-link k-header k-disabled">
+                    <div className="k-item k-disabled">
+                        <span className="k-link k-header">
                             Root disabled
                             <Icon className="k-panelbar-expand" name="arrow-chevron-down" />
                         </span>
@@ -118,8 +118,8 @@ root.render(
                                         </div>
                                     </div>
                                 </div>
-                                <div className="k-item">
-                                    <span className="k-link k-disabled">
+                                <div className="k-item k-disabled">
+                                    <span className="k-link">
                                         Child disabled
                                         <Icon className="k-panelbar-expand" name="arrow-chevron-down" />
                                     </span>
