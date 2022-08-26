@@ -5,7 +5,7 @@
 
     @keyframes progressbar-indeterminate-animation-horizontal {
         from {
-            inset-inline-start: -50%;
+            inset-inline-start: -25%;
         }
         to {
             inset-inline-start: 100%;
@@ -14,7 +14,7 @@
 
     @keyframes progressbar-indeterminate-animation-vertical {
         from {
-            inset-block-end: -50%;
+            inset-block-end: -25%;
         }
         to {
             inset-block-end: 100%;
