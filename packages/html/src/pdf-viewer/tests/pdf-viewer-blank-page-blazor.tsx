@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { Button } from '../../button';
 import { Textbox } from '../../textbox';
+import { Icon } from '../../icon';
 
 const root = ReactDOM.createRoot(
     document.getElementById('app') as HTMLElement
@@ -34,8 +35,14 @@ root.render(
                 </div>
                 <div className="k-canvas k-pdf-viewer-canvas k-pos-relative k-overflow-auto">
                     <div className="k-pdf-viewer-pages">
-                        <div className="k-page" style={{ width: "720px", height: "360px" }}></div>
-                        <div className="k-page" style={{ width: "720px", height: "360px" }}></div>
+                        <div className="k-page k-blank-page">
+                            <Icon name="folder-open"></Icon>
+                            <div className="k-upload">
+                                <div className="k-dropzone">
+                                    <Button className="k-upload-button">Select files...</Button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
