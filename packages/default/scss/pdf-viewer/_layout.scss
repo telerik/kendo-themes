@@ -4,6 +4,7 @@
         border-width: $pdf-viewer-border-width;
         border-style: solid;
         box-sizing: border-box;
+        position: relative;
         outline: 0;
         font-family: $pdf-viewer-font-family;
         font-size: $pdf-viewer-font-size;
@@ -34,11 +35,14 @@
 
 
         // Canvas
-        .k-list-scroller {
+        .k-canvas {
+            display: flex;
+            flex-direction: column;
             flex: 1 1 auto;
             outline: none;
 
-            .k-enable-text-select {
+            .k-enable-text-select,
+            &.k-enable-text-select {
                 -webkit-user-select: text;
                 -moz-user-select: text;
                 -ms-user-select: text;
@@ -46,16 +50,22 @@
                 cursor: text;
             }
 
-            .k-enable-panning {
+            .k-enable-panning,
+            &.k-enable-panning {
                 cursor: grab;
             }
-            .k-enable-panning span::selection {
+            .k-enable-panning span::selection,
+            &.k-enable-panning span::selection {
                 background-color: transparent;
             }
         }
 
 
-        // Page
+        // Pages
+        .k-pdf-viewer-pages {
+            flex: 1 1 auto;
+        }
+
         .k-page {
             position: relative;
             margin: $pdf-viewer-page-spacing auto;
@@ -81,46 +91,88 @@
                 mark {
                     color: transparent;
                 }
+
+                .k-search-highlight-mark {
+                    color: transparent;
+                }
             }
         }
+
+        .k-blank-page {
+            margin: 0;
+            display: flex;
+            flex-flow: column nowrap;
+            width: 100%;
+            height: 100%;
+            align-items: center;
+            justify-content: center;
+            background-color: inherit !important; // sass-lint:disable-line no-important
+
+            .k-upload,
+            .k-dropzone,
+            .k-dropzone-inner {
+                border: 0;
+                background: none;
+            }
+
+            > .k-icon {
+                font-size: $pdf-viewer-icon-size;
+            }
+        }
+
     }
 
     // Search
     .k-pdf-viewer-search-dialog {
-        padding: $pdf-viewer-search-dialog-padding;
+        padding: 0 !important; // sass-lint:disable-line no-important
+    }
 
-        .k-search-container {
-            display: flex;
-            gap: $pdf-viewer-search-dialog-spacing;
-            flex-flow: row nowrap;
-            flex: 0 0 auto;
-            justify-content: flex-start;
-            align-items: center;
+    .k-search-panel {
+        padding: $pdf-viewer-search-dialog-padding-y $pdf-viewer-search-dialog-padding-x;
+        display: flex;
+        gap: $pdf-viewer-search-dialog-spacing;
+        flex-flow: row nowrap;
+        flex: 0 0 auto;
+        justify-content: flex-start;
+        align-items: center;
 
-            .k-search-dialog-draghandle {
-                cursor: move;
-                margin-left: 0;
-            }
+        .k-search-dialog-draghandle {
+            cursor: move;
+            margin-left: 0;
+        }
 
-            .k-textbox {
-                width: 10em;
-                flex: none;
+        .k-textbox {
+            width: 10em;
+            flex: none;
 
-                .k-button {
-                    border-width: 0;
-                }
-            }
-
-            .k-search-matches {
-                flex: 1 1 auto;
+            .k-button {
+                border-width: 0;
             }
         }
+
+        .k-search-matches {
+            display: inline-flex;
+            gap: $pdf-viewer-search-panel-matches-spacing;
+        }
+    }
+
+    .k-pdf-viewer-canvas > .k-search-panel {
+        width: max-content;
+        margin-top: calc( (#{$kendo-button-calc-size} + #{$pdf-viewer-search-panel-border-width} + ( 2 * #{$pdf-viewer-search-dialog-padding-y} )) * -1 );
+        border-width: $pdf-viewer-search-panel-border-width;
+        border-style: solid;
+        border-radius: $pdf-viewer-search-panel-border-radius;
+        z-index: 10;
+    }
+
+    // Alias
+    .k-search-container {
+        @extend .k-search-panel !optional;
     }
 
 
     // IE
     .k-ie .k-pdf-viewer-search-dialog {
-
         .k-search-container > * + * {
             margin-left: $pdf-viewer-search-dialog-spacing;
         }
