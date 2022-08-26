@@ -40,6 +40,7 @@
             flex-flow: column nowrap;
             align-items: stretch;
             justify-content: space-between;
+            gap: var( --kendo-coloreditor-preview-spacing, #{$kendo-coloreditor-preview-spacing} );
             position: relative;
             z-index: 1;
         }
