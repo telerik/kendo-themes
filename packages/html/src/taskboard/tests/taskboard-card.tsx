@@ -109,7 +109,7 @@ root.render(
                                     </Card>
                                     <Card className="k-taskboard-card" hover>
                                         <CardHeader className="k-hbox" details>
-                                            <a className="k-card-title k-link k-state-hover" href="#">Hovered Card Title</a>
+                                            <a className="k-card-title k-link k-hover" href="#">Hovered Card Title</a>
                                             <span className="k-spacer"></span>
                                         </CardHeader>
                                         <CardBody>
@@ -118,7 +118,7 @@ root.render(
                                     </Card>
                                     <Card className="k-taskboard-card" focus>
                                         <CardHeader className="k-hbox" details>
-                                            <a className="k-card-title k-link k-state-focus" href="#">Focused Card Title</a>
+                                            <a className="k-card-title k-link k-focus" href="#">Focused Card Title</a>
                                             <span className="k-spacer"></span>
                                         </CardHeader>
                                         <CardBody>

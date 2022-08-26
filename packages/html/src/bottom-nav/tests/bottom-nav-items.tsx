@@ -24,15 +24,15 @@ root.render(
                         <Icon className="k-bottom-nav-item-icon" name="email" />
                         <span className="k-bottom-nav-item-text">Normal</span>
                     </span>
-                    <span className="k-bottom-nav-item k-state-focus">
+                    <span className="k-bottom-nav-item k-focus">
                         <Icon className="k-bottom-nav-item-icon" name="email" />
                         <span className="k-bottom-nav-item-text">Focused</span>
                     </span>
-                    <span className="k-bottom-nav-item k-state-selected">
+                    <span className="k-bottom-nav-item k-selected">
                         <Icon className="k-bottom-nav-item-icon" name="email" />
                         <span className="k-bottom-nav-item-text">Selected</span>
                     </span>
-                    <span className="k-bottom-nav-item k-state-disabled">
+                    <span className="k-bottom-nav-item k-disabled">
                         <Icon className="k-bottom-nav-item-icon" name="email" />
                         <span className="k-bottom-nav-item-text">Disabled</span>
                     </span>
@@ -46,15 +46,15 @@ root.render(
                         <Icon className="k-bottom-nav-item-icon" name="email" />
                         <span className="k-bottom-nav-item-text">Normal</span>
                     </button>
-                    <button className="k-bottom-nav-item k-state-focus">
+                    <button className="k-bottom-nav-item k-focus">
                         <Icon className="k-bottom-nav-item-icon" name="email" />
                         <span className="k-bottom-nav-item-text">Focused</span>
                     </button>
-                    <button className="k-bottom-nav-item k-state-selected">
+                    <button className="k-bottom-nav-item k-selected">
                         <Icon className="k-bottom-nav-item-icon" name="email" />
                         <span className="k-bottom-nav-item-text">Selected</span>
                     </button>
-                    <button className="k-bottom-nav-item k-state-disabled">
+                    <button className="k-bottom-nav-item k-disabled">
                         <Icon className="k-bottom-nav-item-icon" name="email" />
                         <span className="k-bottom-nav-item-text">Disabled</span>
                     </button>
@@ -68,15 +68,15 @@ root.render(
                         <Icon className="k-bottom-nav-item-icon" name="email" />
                         <span className="k-bottom-nav-item-text">Normal</span>
                     </a>
-                    <a className="k-bottom-nav-item k-state-focus" href="#">
+                    <a className="k-bottom-nav-item k-focus" href="#">
                         <Icon className="k-bottom-nav-item-icon" name="email" />
                         <span className="k-bottom-nav-item-text">Focused</span>
                     </a>
-                    <a className="k-bottom-nav-item k-state-selected">
+                    <a className="k-bottom-nav-item k-selected">
                         <Icon className="k-bottom-nav-item-icon" name="email" />
                         <span className="k-bottom-nav-item-text">Selected</span>
                     </a>
-                    <a className="k-bottom-nav-item k-state-disabled">
+                    <a className="k-bottom-nav-item k-disabled">
                         <Icon className="k-bottom-nav-item-icon" name="email" />
                         <span className="k-bottom-nav-item-text">Disabled</span>
                     </a>

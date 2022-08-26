@@ -28,7 +28,7 @@ root.render(
             <span>Focus</span>
 
             <section>
-                <div className="k-flatcolorpicker k-coloreditor k-state-focus">
+                <div className="k-flatcolorpicker k-coloreditor k-focus">
                     <div className="k-coloreditor-header k-hstack">
                         <div className="k-coloreditor-header-actions k-hstack"></div>
                         <div className="k-spacer"></div>

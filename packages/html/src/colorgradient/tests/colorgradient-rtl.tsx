@@ -75,21 +75,21 @@ root.render(
                     <div className="k-colorgradient-color-contrast k-vbox">
                         <div className="k-contrast-ratio">
                             <span className="k-contrast-ratio-text">Contrast ratio: 7.1</span>
-                            <span className="k-contrast-validation k-text-success">
+                            <span className="k-contrast-validation !k-text-success">
                                 <Icon name="check" />
                                 <Icon name="check" />
                             </span>
                         </div>
                         <div>
                             <span>AA: 4.5</span>
-                            <span className="k-contrast-validation k-text-success">
+                            <span className="k-contrast-validation !k-text-success">
                                 Pass
                                 <Icon name="check" />
                             </span>
                         </div>
                         <div>
                             <span>AAA: 7.0</span>
-                            <span className="k-contrast-validation k-text-error">
+                            <span className="k-contrast-validation !k-text-error">
                                 Fail
                                 <Icon name="x" />
                             </span>

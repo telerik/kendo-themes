@@ -59,7 +59,7 @@ export class Captcha extends React.Component<CaptchaProps> {
                         disabled={loading === true}
                     />
                     {valid && !loading && (
-                        <span className="k-captcha-validation-message k-text-success">
+                        <span className="k-captcha-validation-message !k-text-success">
                             Verification Success
                         </span>
                     )}

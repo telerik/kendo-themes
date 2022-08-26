@@ -260,7 +260,7 @@ root.render(
                                         <div className="k-animation-container">
                                             <div className="k-child-animation-container">
                                                 <div className="kendo-grid-filter-menu-container">
-                                                    <form className="k-filter-menu k-group k-reset k-state-border-up">
+                                                    <form className="k-filter-menu k-group k-reset">
                                                         <div className="k-filter-menu-container">
                                                             <DropdownList value="Contains" />
                                                             <Textbox />

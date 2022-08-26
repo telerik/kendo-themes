@@ -24,7 +24,7 @@ root.render(
         <div id="test-area" className="k-d-grid k-grid-cols-1">
             <span>Focus</span>
             <section>
-                <div className="k-colorgradient k-state-focus">
+                <div className="k-colorgradient k-focus">
                     <div className="k-colorgradient-canvas k-hstack">
                         <div className="k-hsv-rectangle" style={{ background: "rgb(255, 0, 0)" }}>
                             <div className="k-hsv-gradient">

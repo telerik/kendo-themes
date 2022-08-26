@@ -91,13 +91,13 @@ root.render(
                             </ol>
                             <div className="k-widget k-progressbar k-progressbar-vertical k-progressbar-reverse" style={progressBarStyle}>
                                 <span className="k-progress-status-wrap k-progress-end"></span>
-                                <div className="k-state-selected" style={progressSelectedStyle}>
+                                <div className="k-selected" style={progressSelectedStyle}>
                                     <span className="k-progress-status-wrap k-progress-end" style={progressStatusStyle}></span>
                                 </div>
                             </div>
                         </nav>
                         <div className="k-wizard-steps">
-                            <div className="k-wizard-step k-state-focused">
+                            <div className="k-wizard-step k-focus">
                                 <div className="k-wizard-content">
                                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
                                 </div>
@@ -157,7 +157,7 @@ root.render(
                             </ol>
                             <div className="k-widget k-progressbar k-progressbar-vertical k-progressbar-reverse" style={progressBarStyle}>
                                 <span className="k-progress-status-wrap k-progress-end"></span>
-                                <div className="k-state-selected" style={progressSelectedStyle}>
+                                <div className="k-selected" style={progressSelectedStyle}>
                                     <span className="k-progress-status-wrap k-progress-end" style={progressStatusStyle}></span>
                                 </div>
                             </div>
@@ -225,7 +225,7 @@ root.render(
                             </ol>
                             <div className="k-widget k-progressbar k-progressbar-vertical k-progressbar-reverse" style={progressBarStyle}>
                                 <span className="k-progress-status-wrap k-progress-end"></span>
-                                <div className="k-state-selected" style={progressSelectedStyle}>
+                                <div className="k-selected" style={progressSelectedStyle}>
                                     <span className="k-progress-status-wrap k-progress-end" style={progressStatusStyle}></span>
                                 </div>
                             </div>
@@ -291,7 +291,7 @@ root.render(
                             </ol>
                             <div className="k-widget k-progressbar k-progressbar-vertical k-progressbar-reverse" style={progressBarStyle}>
                                 <span className="k-progress-status-wrap k-progress-end"></span>
-                                <div className="k-state-selected" style={progressSelectedStyle}>
+                                <div className="k-selected" style={progressSelectedStyle}>
                                     <span className="k-progress-status-wrap k-progress-end" style={progressStatusStyle}></span>
                                 </div>
                             </div>
@@ -359,7 +359,7 @@ root.render(
                             </ol>
                             <div className="k-widget k-progressbar k-progressbar-vertical k-progressbar-reverse" style={progressBarStyle}>
                                 <span className="k-progress-status-wrap k-progress-end"></span>
-                                <div className="k-state-selected" style={progressSelectedStyle}>
+                                <div className="k-selected" style={progressSelectedStyle}>
                                     <span className="k-progress-status-wrap k-progress-end" style={progressStatusStyle}></span>
                                 </div>
                             </div>
@@ -425,7 +425,7 @@ root.render(
                             </ol>
                             <div className="k-widget k-progressbar k-progressbar-vertical k-progressbar-reverse" style={progressBarStyle}>
                                 <span className="k-progress-status-wrap k-progress-end"></span>
-                                <div className="k-state-selected" style={progressSelectedStyle}>
+                                <div className="k-selected" style={progressSelectedStyle}>
                                     <span className="k-progress-status-wrap k-progress-end" style={progressStatusStyle}></span>
                                 </div>
                             </div>
@@ -491,7 +491,7 @@ root.render(
                             </ol>
                             <div className="k-widget k-progressbar k-progressbar-vertical k-progressbar-reverse" style={progressBarStyle}>
                                 <span className="k-progress-status-wrap k-progress-end"></span>
-                                <div className="k-state-selected" style={progressSelectedStyle}>
+                                <div className="k-selected" style={progressSelectedStyle}>
                                     <span className="k-progress-status-wrap k-progress-end" style={progressStatusStyle}></span>
                                 </div>
                             </div>
@@ -557,7 +557,7 @@ root.render(
                             </ol>
                             <div className="k-widget k-progressbar k-progressbar-vertical k-progressbar-reverse" style={progressBarStyle}>
                                 <span className="k-progress-status-wrap k-progress-end"></span>
-                                <div className="k-state-selected" style={progressSelectedStyle}>
+                                <div className="k-selected" style={progressSelectedStyle}>
                                     <span className="k-progress-status-wrap k-progress-end" style={progressStatusStyle}></span>
                                 </div>
                             </div>

@@ -245,7 +245,7 @@ root.render(
             <span></span>
             <section>
                 <div className="k-animation-container" style={{ width: "166px", height: "254px", overflow: "visible", display: "inline-block", position: "relative" }}>
-                    <div className="k-ct-popup k-popup k-group k-reset k-state-border-up" style={{ display: "block", position: "absolute", width: '100%' }}>
+                    <div className="k-ct-popup k-popup k-group k-reset" style={{ display: "block", position: "absolute", width: '100%' }}>
                         <span className="k-ct-cell k-disabled k-selected"></span>
                         <span className="k-ct-cell k-disabled k-selected"></span>
                         <span className="k-ct-cell k-disabled k-selected"></span>

@@ -52,7 +52,7 @@ root.render(
                     </ol>
                     <div className="k-widget k-progressbar k-progressbar-vertical k-progressbar-reverse" style={{ gridRowStart: "1", gridRowEnd: "3", top: "17px" }}>
                         <span className="k-progress-status-wrap k-progress-end"></span>
-                        <div className="k-state-selected" style={{ width: '100%', height: "50%" }}>
+                        <div className="k-selected" style={{ width: '100%', height: "50%" }}>
                             <span className="k-progress-status-wrap k-progress-end" style={{ width: '100%', height: "200%" }}></span>
                         </div>
                     </div>
@@ -97,7 +97,7 @@ root.render(
                     </ol>
                     <div className="k-widget k-progressbar k-progressbar-vertical k-progressbar-reverse" style={{ gridRowStart: "1", gridRowEnd: "3", top: "17px" }}>
                         <span className="k-progress-status-wrap k-progress-end"></span>
-                        <div className="k-state-selected" style={{ width: '100%', height: "50%" }}>
+                        <div className="k-selected" style={{ width: '100%', height: "50%" }}>
                             <span className="k-progress-status-wrap k-progress-end" style={{ width: '100%', height: "200%" }}></span>
                         </div>
                     </div>
@@ -130,7 +130,7 @@ root.render(
                     </ol>
                     <div className="k-widget k-progressbar k-progressbar-vertical k-progressbar-reverse" style={{ gridRowStart: "1", gridRowEnd: "3", top: "17px" }}>
                         <span className="k-progress-status-wrap k-progress-end"></span>
-                        <div className="k-state-selected" style={{ width: '100%', height: "50%" }}>
+                        <div className="k-selected" style={{ width: '100%', height: "50%" }}>
                             <span className="k-progress-status-wrap k-progress-end" style={{ width: '100%', height: "200%" }}></span>
                         </div>
                     </div>
@@ -163,7 +163,7 @@ root.render(
                     </ol>
                     <div className="k-widget k-progressbar k-progressbar-vertical k-progressbar-reverse" style={{ gridRowStart: "1", gridRowEnd: "3", top: "17px" }}>
                         <span className="k-progress-status-wrap k-progress-end"></span>
-                        <div className="k-state-selected" style={{ width: '100%', height: "50%" }}>
+                        <div className="k-selected" style={{ width: '100%', height: "50%" }}>
                             <span className="k-progress-status-wrap k-progress-end" style={{ width: '100%', height: "200%" }}></span>
                         </div>
                     </div>

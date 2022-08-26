@@ -32,7 +32,7 @@ root.render(
                                     <thead>
                                         <tr>
                                             <th scope="col" className="k-header k-with-icon">
-                                                <a className="k-grid-header-menu k-grid-column-menu k-state-active" href="#">
+                                                <a className="k-grid-header-menu k-grid-column-menu k-active" href="#">
                                                     <Icon name="more-vertical" />
                                                 </a>
                                                 Active Column Menu &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lorem ipsum dolor sit amet consectetur adipiscing elit
@@ -88,7 +88,7 @@ root.render(
                                     <thead>
                                         <tr>
                                             <th scope="col" className="k-header k-with-icon k-filterable">
-                                                <a className="k-grid-filter k-state-active" href="#">
+                                                <a className="k-grid-filter k-active" href="#">
                                                     <Icon name="filter" />
                                                 </a>
                                                 Active Filterable &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lorem ipsum dolor sit amet consectetur adipiscing elit

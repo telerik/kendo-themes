@@ -34,7 +34,7 @@ root.render(
                                 <span className="k-loader-segment"></span>
                             </div>
                         </div>
-                        <div className="k-loader-container-label k-text-primary">Loading...</div>
+                        <div className="k-loader-container-label !k-text-primary">Loading...</div>
                     </div>
                 </div>
             </span>
@@ -49,7 +49,7 @@ root.render(
                                 <span className="k-loader-segment"></span>
                             </div>
                         </div>
-                        <div className="k-loader-container-label k-text-primary">Loading...</div>
+                        <div className="k-loader-container-label !k-text-primary">Loading...</div>
                     </div>
                 </div>
             </span>
@@ -65,7 +65,7 @@ root.render(
                                 <span className="k-loader-segment"></span>
                             </div>
                         </div>
-                        <div className="k-loader-container-label k-text-primary">Loading...</div>
+                        <div className="k-loader-container-label !k-text-primary">Loading...</div>
                     </div>
                 </div>
             </span>
@@ -80,7 +80,7 @@ root.render(
                                 <span className="k-loader-segment"></span>
                             </div>
                         </div>
-                        <div className="k-loader-container-label k-text-primary">Loading...</div>
+                        <div className="k-loader-container-label !k-text-primary">Loading...</div>
                     </div>
                 </div>
             </span>

@@ -83,23 +83,23 @@ root.render(
                     <div className="k-colorgradient-canvas k-hstack">
                         <div className="k-hsv-rectangle" style={{ background: "rgb(255, 0, 0)" }}>
                             <div className="k-hsv-gradient">
-                                <div className="k-hsv-draghandle k-draghandle k-state-focus" style={{ top: '50px', left: "73px" }}></div>
+                                <div className="k-hsv-draghandle k-draghandle k-focus" style={{ top: '50px', left: "73px" }}></div>
                             </div>
                         </div>
                         <div className="k-hsv-controls k-hstack">
-                            <div className="k-slider k-slider-vertical k-hue-slider k-colorgradient-slider k-state-focus">
+                            <div className="k-slider k-slider-vertical k-hue-slider k-colorgradient-slider k-focus">
                                 <div className="k-slider-track-wrap">
                                     <div className="k-slider-track">
                                         <div className="k-slider-selection"></div>
-                                        <a className="k-draghandle k-draghandle-end k-state-focus"></a>
+                                        <a className="k-draghandle k-draghandle-end k-focus"></a>
                                     </div>
                                 </div>
                             </div>
-                            <div className="k-slider k-slider-vertical k-alpha-slider k-colorgradient-slider k-state-focus" style={{ "--kendo-slider-end": "100" } as any }>
+                            <div className="k-slider k-slider-vertical k-alpha-slider k-colorgradient-slider k-focus" style={{ "--kendo-slider-end": "100" } as any }>
                                 <div className="k-slider-track-wrap">
                                     <div className="k-slider-track" style={{ background: "linear-gradient(to top, transparent, rgb(255, 0, 0))" }}>
                                         <div className="k-slider-selection"></div>
-                                        <a className="k-draghandle k-draghandle-end k-state-focus"></a>
+                                        <a className="k-draghandle k-draghandle-end k-focus"></a>
                                     </div>
                                 </div>
                             </div>
@@ -134,23 +134,23 @@ root.render(
                     <div className="k-colorgradient-canvas k-hstack">
                         <div className="k-hsv-rectangle" style={{ background: "rgb(255, 0, 0)" }}>
                             <div className="k-hsv-gradient">
-                                <div className="k-hsv-draghandle k-draghandle k-state-hover" style={{ top: '50px', left: "73px" }}></div>
+                                <div className="k-hsv-draghandle k-draghandle k-hover" style={{ top: '50px', left: "73px" }}></div>
                             </div>
                         </div>
                         <div className="k-hsv-controls k-hstack">
-                            <div className="k-slider k-slider-vertical k-hue-slider k-colorgradient-slider k-state-hover">
+                            <div className="k-slider k-slider-vertical k-hue-slider k-colorgradient-slider k-hover">
                                 <div className="k-slider-track-wrap">
                                     <div className="k-slider-track">
                                         <div className="k-slider-selection"></div>
-                                        <a className="k-draghandle k-draghandle-end k-state-hover"></a>
+                                        <a className="k-draghandle k-draghandle-end k-hover"></a>
                                     </div>
                                 </div>
                             </div>
-                            <div className="k-slider k-slider-vertical k-alpha-slider k-colorgradient-slider k-state-hover" style={{ "--kendo-slider-end": "100" } as any }>
+                            <div className="k-slider k-slider-vertical k-alpha-slider k-colorgradient-slider k-hover" style={{ "--kendo-slider-end": "100" } as any }>
                                 <div className="k-slider-track-wrap">
                                     <div className="k-slider-track" style={{ background: "linear-gradient(to top, transparent, rgb(255, 0, 0))" }}>
                                         <div className="k-slider-selection"></div>
-                                        <a className="k-draghandle k-draghandle-end k-state-hover"></a>
+                                        <a className="k-draghandle k-draghandle-end k-hover"></a>
                                     </div>
                                 </div>
                             </div>

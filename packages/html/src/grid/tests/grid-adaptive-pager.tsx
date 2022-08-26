@@ -28,11 +28,11 @@ root.render(
                                                 <li><a className="k-link">1</a></li>
                                                 <li><a className="k-link">2</a></li>
                                                 <li><a className="k-link">3</a></li>
-                                                <li><span className="k-link k-state-selected">4</span></li>
+                                                <li><span className="k-link k-selected">4</span></li>
                                             </ul>
                                         </div>
-                                        <a className="k-link k-pager-nav k-state-disabled"><Icon name="arrow-e" /></a>
-                                        <a className="k-link k-pager-nav k-pager-last k-state-disabled"><Icon name="arrow-end-right" /></a>
+                                        <a className="k-link k-pager-nav k-disabled"><Icon name="arrow-e" /></a>
+                                        <a className="k-link k-pager-nav k-pager-last k-disabled"><Icon name="arrow-end-right" /></a>
                                         <span className="k-pager-info k-label">61 - 77 of 77 items</span>
                                     </div>
                                 </div>
@@ -61,11 +61,11 @@ root.render(
                                                 <li><a className="k-link">1</a></li>
                                                 <li><a className="k-link">2</a></li>
                                                 <li><a className="k-link">3</a></li>
-                                                <li><span className="k-link k-state-selected">4</span></li>
+                                                <li><span className="k-link k-selected">4</span></li>
                                             </ul>
                                         </div>
-                                        <a className="k-link k-pager-nav k-state-disabled"><Icon name="arrow-e" /></a>
-                                        <a className="k-link k-pager-nav k-pager-last k-state-disabled"><Icon name="arrow-end-right" /></a>
+                                        <a className="k-link k-pager-nav k-disabled"><Icon name="arrow-e" /></a>
+                                        <a className="k-link k-pager-nav k-pager-last k-disabled"><Icon name="arrow-end-right" /></a>
                                         <span className="k-pager-info k-label">61 - 77 of 77 items</span>
                                     </div>
                                 </div>

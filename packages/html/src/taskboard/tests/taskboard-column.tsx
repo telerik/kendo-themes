@@ -54,7 +54,7 @@ root.render(
                     <div className="k-taskboard-header k-hidden"></div>
                     <div className="k-taskboard-content">
                         <div className="k-taskboard-columns-container">
-                            <div className="k-taskboard-column k-state-focus">
+                            <div className="k-taskboard-column k-focus">
                                 <div className="k-taskboard-column-header">
                                     <div className="k-taskboard-column-header-text k-text-ellipsis">Column Header</div>
                                     <span className="k-spacer"></span>
@@ -154,7 +154,7 @@ root.render(
                     <div className="k-taskboard-header k-hidden"></div>
                     <div className="k-taskboard-content">
                         <div className="k-taskboard-columns-container">
-                            <div className="k-taskboard-column k-state-focus">
+                            <div className="k-taskboard-column k-focus">
                                 <div className="k-taskboard-column-header">
                                     <div className="k-taskboard-column-header-text k-text-ellipsis">Column with a very very very very very very very very long title</div>
                                     <span className="k-spacer"></span>

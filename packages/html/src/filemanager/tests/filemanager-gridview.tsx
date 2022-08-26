@@ -134,7 +134,7 @@ root.render(
                     </div>
 
                     {/* Resizing Handle */}
-                    <div className="k-splitbar k-splitbar-horizontal k-splitbar-draggable-horizontal k-filemanager-splitbar-navigation k-state-focused">
+                    <div className="k-splitbar k-splitbar-horizontal k-splitbar-draggable-horizontal k-filemanager-splitbar-navigation k-focus">
                         <span className="k-resize-handle"></span>
                     </div>
 

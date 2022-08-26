@@ -309,7 +309,7 @@ root.render(
                                     <Icon className="k-expander-indicator" name="arrow-chevron-up" />
                                 </div>
                                 <div className="k-columnmenu-item-content k-columns-item">
-                                    <form className="k-filter-menu k-group k-reset k-state-border-up">
+                                    <form className="k-filter-menu k-group k-reset">
                                         <div className="k-filter-menu-container">
                                             <DropdownList value="Contains" />
                                             <Textbox placeholder="Filter..." />
@@ -371,7 +371,7 @@ root.render(
                                     <Icon className="k-expander-indicator" name="arrow-chevron-up" />
                                 </div>
                                 <div className="k-columnmenu-item-content k-columns-item">
-                                    <form className="k-filter-menu k-group k-reset k-state-border-up">
+                                    <form className="k-filter-menu k-group k-reset">
                                         <div className="k-filter-menu-container">
                                             <Searchbox placeholder="Search..." />
                                             <ul className="k-reset k-multicheck-wrap">

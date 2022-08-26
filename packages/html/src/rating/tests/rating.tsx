@@ -363,7 +363,7 @@ root.render(
 
             <span>Readonly</span>
             <section>
-                <span className="k-rating k-widget k-state-readonly">
+                <span className="k-rating k-widget k-readonly">
                     <span className="k-rating-container">
                         <span className="k-rating-item k-selected">
                             <Icon name="star"></Icon>
@@ -384,7 +384,7 @@ root.render(
                 </span>
             </section>
             <section>
-                <span className="k-rating k-widget k-state-readonly">
+                <span className="k-rating k-widget k-readonly">
                     <span className="k-rating-container">
                         <span className="k-rating-item">
                             <Icon name="star-outline"></Icon>

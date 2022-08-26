@@ -29,7 +29,7 @@ root.render(
                                 <span className="k-loader-segment"></span>
                             </div>
                         </div>
-                        <div className="k-loader-container-label k-text-primary">Loading...</div>
+                        <div className="k-loader-container-label !k-text-primary">Loading...</div>
                     </div>
                 </div>
             </span>
@@ -45,7 +45,7 @@ root.render(
                                 <span className="k-loader-segment"></span>
                             </div>
                         </div>
-                        <div className="k-loader-container-label k-text-secondary">Loading...</div>
+                        <div className="k-loader-container-label !k-text-secondary">Loading...</div>
                     </div>
                 </div>
             </span>
@@ -61,7 +61,7 @@ root.render(
                                 <span className="k-loader-segment"></span>
                             </div>
                         </div>
-                        <div className="k-loader-container-label k-text-tertiary">Loading...</div>
+                        <div className="k-loader-container-label !k-text-tertiary">Loading...</div>
                     </div>
                 </div>
             </span>
@@ -77,7 +77,7 @@ root.render(
                                 <span className="k-loader-segment"></span>
                             </div>
                         </div>
-                        <div className="k-loader-container-label k-text-info">Loading...</div>
+                        <div className="k-loader-container-label !k-text-info">Loading...</div>
                     </div>
                 </div>
             </span>
@@ -93,7 +93,7 @@ root.render(
                                 <span className="k-loader-segment"></span>
                             </div>
                         </div>
-                        <div className="k-loader-container-label k-text-success">Loading...</div>
+                        <div className="k-loader-container-label !k-text-success">Loading...</div>
                     </div>
                 </div>
             </span>
@@ -109,7 +109,7 @@ root.render(
                                 <span className="k-loader-segment"></span>
                             </div>
                         </div>
-                        <div className="k-loader-container-label k-text-warning">Loading...</div>
+                        <div className="k-loader-container-label !k-text-warning">Loading...</div>
                     </div>
                 </div>
             </span>
@@ -125,7 +125,7 @@ root.render(
                                 <span className="k-loader-segment"></span>
                             </div>
                         </div>
-                        <div className="k-loader-container-label k-text-error">Loading...</div>
+                        <div className="k-loader-container-label !k-text-error">Loading...</div>
                     </div>
                 </div>
             </span>
@@ -141,7 +141,7 @@ root.render(
                                 <span className="k-loader-segment"></span>
                             </div>
                         </div>
-                        <div className="k-loader-container-label k-text-dark">Loading...</div>
+                        <div className="k-loader-container-label !k-text-dark">Loading...</div>
                     </div>
                 </div>
             </span>
@@ -157,7 +157,7 @@ root.render(
                                 <span className="k-loader-segment"></span>
                             </div>
                         </div>
-                        <div className="k-loader-container-label k-text-light">Loading...</div>
+                        <div className="k-loader-container-label !k-text-light">Loading...</div>
                     </div>
                 </div>
             </span>
@@ -173,7 +173,7 @@ root.render(
                                 <span className="k-loader-segment"></span>
                             </div>
                         </div>
-                        <div className="k-loader-container-label k-text-inverse">Loading...</div>
+                        <div className="k-loader-container-label !k-text-inverse">Loading...</div>
                     </div>
                 </div>
             </span>

@@ -88,13 +88,13 @@ root.render(
                         </ol>
                         <div className="k-widget k-progressbar k-progressbar-horizontal" style={progressBarStyle}>
                             <span className="k-progress-status-wrap k-progress-end"></span>
-                            <div className="k-state-selected" style={progressSelectedStyle}>
+                            <div className="k-selected" style={progressSelectedStyle}>
                                 <span className="k-progress-status-wrap k-progress-end" style={progressStatusStyle}></span>
                             </div>
                         </div>
                     </nav>
                     <div className="k-wizard-steps">
-                        <div className="k-wizard-step k-state-focused">
+                        <div className="k-wizard-step k-focus">
                             <div className="k-wizard-content">
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                             </div>
@@ -154,7 +154,7 @@ root.render(
                         </ol>
                         <div className="k-widget k-progressbar k-progressbar-horizontal" style={progressBarStyle}>
                             <span className="k-progress-status-wrap k-progress-end"></span>
-                            <div className="k-state-selected" style={progressSelectedStyle}>
+                            <div className="k-selected" style={progressSelectedStyle}>
                                 <span className="k-progress-status-wrap k-progress-end" style={progressStatusStyle}></span>
                             </div>
                         </div>
@@ -221,7 +221,7 @@ root.render(
                         </ol>
                         <div className="k-widget k-progressbar k-progressbar-horizontal" style={progressBarStyle}>
                             <span className="k-progress-status-wrap k-progress-end"></span>
-                            <div className="k-state-selected" style={progressSelectedStyle}>
+                            <div className="k-selected" style={progressSelectedStyle}>
                                 <span className="k-progress-status-wrap k-progress-end" style={progressStatusStyle}></span>
                             </div>
                         </div>
@@ -287,7 +287,7 @@ root.render(
                         </ol>
                         <div className="k-widget k-progressbar k-progressbar-horizontal" style={progressBarStyle}>
                             <span className="k-progress-status-wrap k-progress-end"></span>
-                            <div className="k-state-selected" style={progressSelectedStyle}>
+                            <div className="k-selected" style={progressSelectedStyle}>
                                 <span className="k-progress-status-wrap k-progress-end" style={progressStatusStyle}></span>
                             </div>
                         </div>
@@ -353,7 +353,7 @@ root.render(
                         </ol>
                         <div className="k-widget k-progressbar k-progressbar-horizontal" style={progressBarStyle}>
                             <span className="k-progress-status-wrap k-progress-end"></span>
-                            <div className="k-state-selected" style={progressSelectedStyle}>
+                            <div className="k-selected" style={progressSelectedStyle}>
                                 <span className="k-progress-status-wrap k-progress-end" style={progressStatusStyle}></span>
                             </div>
                         </div>

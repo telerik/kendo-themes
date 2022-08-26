@@ -57,7 +57,7 @@ root.render(
                                 <Icon name="arrow-e"></Icon>
                             </div>
                         </div>
-                        <div className="k-splitbar k-state-hover k-splitbar-horizontal k-splitbar-draggable-horizontal" style={{ order: "7" }}>
+                        <div className="k-splitbar k-hover k-splitbar-horizontal k-splitbar-draggable-horizontal" style={{ order: "7" }}>
                             <div className="k-collapse-prev">
                                 <Icon name="arrow-w"></Icon>
                             </div>
@@ -66,7 +66,7 @@ root.render(
                                 <Icon name="arrow-e"></Icon>
                             </div>
                         </div>
-                        <div className="k-splitbar k-state-focused k-splitbar-horizontal k-splitbar-draggable-horizontal" style={{ order: "9" }}>
+                        <div className="k-splitbar k-focus k-splitbar-horizontal k-splitbar-draggable-horizontal" style={{ order: "9" }}>
                             <div className="k-collapse-prev">
                                 <Icon name="arrow-w"></Icon>
                             </div>

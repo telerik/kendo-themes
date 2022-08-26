@@ -246,7 +246,7 @@ root.render(
                                             <span className="k-pivotgrid-content">$10567.67</span>
                                         </td>
                                     </tr>
-                                    <tr className="k-pivotgrid-row k-state-hover">
+                                    <tr className="k-pivotgrid-row k-hover">
                                         <td colSpan={1} className="k-pivotgrid-cell">
                                             <span className="k-pivotgrid-content">$344.69</span>
                                         </td>
@@ -279,7 +279,7 @@ root.render(
                                         </td>
                                     </tr>
                                     <tr className="k-pivotgrid-row">
-                                        <td colSpan={1} className="k-pivotgrid-cell k-state-focus">
+                                        <td colSpan={1} className="k-pivotgrid-cell k-focus">
                                             <span className="k-pivotgrid-content">$96.89</span>
                                         </td>
                                         <td colSpan={1} className="k-pivotgrid-cell">
@@ -310,7 +310,7 @@ root.render(
                                             <span className="k-pivotgrid-content">$816.16</span>
                                         </td>
                                     </tr>
-                                    <tr className="k-pivotgrid-row k-state-selected">
+                                    <tr className="k-pivotgrid-row k-selected">
                                         <td colSpan={1} className="k-pivotgrid-cell">
                                             <span className="k-pivotgrid-content">$1070.34</span>
                                         </td>
@@ -375,7 +375,7 @@ root.render(
                                         </td>
                                     </tr>
                                     <tr className="k-pivotgrid-row">
-                                        <td colSpan={1} className="k-pivotgrid-cell k-state-selected">
+                                        <td colSpan={1} className="k-pivotgrid-cell k-selected">
                                             <span className="k-pivotgrid-content">$344.69</span>
                                         </td>
                                         <td colSpan={1} className="k-pivotgrid-cell">

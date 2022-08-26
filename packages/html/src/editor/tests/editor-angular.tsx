@@ -114,7 +114,7 @@ root.render(
                             <Button icon="image"></Button>
                         </div>
                     </div>
-                    <div className="k-editor-content k-state-focused">
+                    <div className="k-editor-content k-focus">
                         <iframe className="k-iframe" frameBorder="0" src="editor-iFrameContent.html"></iframe>
                     </div>
                 </div>
@@ -159,7 +159,7 @@ root.render(
                             <Button icon="image"></Button>
                         </div>
                     </div>
-                    <div className="k-editor-content k-state-focused"><div className="ProseMirror"><p>The Kendo UI Angular Editor allows your users to edit HTML in a familiar, user-friendly way.</p><p>In this version, the Editor provides the core HTML editing engine which includes basic text formatting, hyperlinks, and lists. The widget <strong>outputs identical HTML</strong> across all major browsers, follows accessibility standards, and provides API for content manipulation.</p><p>Features include:</p><ul><li>Text formatting</li><li>Bulleted and numbered lists</li><li>Hyperlinks</li><li>Cross-browser support</li><li>Identical HTML output across browsers</li></ul></div></div>
+                    <div className="k-editor-content k-focus"><div className="ProseMirror"><p>The Kendo UI Angular Editor allows your users to edit HTML in a familiar, user-friendly way.</p><p>In this version, the Editor provides the core HTML editing engine which includes basic text formatting, hyperlinks, and lists. The widget <strong>outputs identical HTML</strong> across all major browsers, follows accessibility standards, and provides API for content manipulation.</p><p>Features include:</p><ul><li>Text formatting</li><li>Bulleted and numbered lists</li><li>Hyperlinks</li><li>Cross-browser support</li><li>Identical HTML output across browsers</li></ul></div></div>
                 </div>
             </section>
 

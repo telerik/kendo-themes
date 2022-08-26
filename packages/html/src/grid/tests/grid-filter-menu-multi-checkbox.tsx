@@ -37,7 +37,7 @@ root.render(
 
             <section>
                 <div className="k-animation-container" style={{ overflow: "visible" }}>
-                    <form className="k-filter-menu k-popup k-group k-reset k-state-border-up">
+                    <form className="k-filter-menu k-popup k-group k-reset">
                         <div className="k-filter-menu-container">
                             <Searchbox placeholder="Search..." />
                             <ul className="k-reset k-multicheck-wrap">
@@ -58,7 +58,7 @@ root.render(
 
             <section className="k-rtl">
                 <div className="k-animation-container" style={{ overflow: "visible" }}>
-                    <form className="k-filter-menu k-popup k-group k-reset k-state-border-up">
+                    <form className="k-filter-menu k-popup k-group k-reset">
                         <div className="k-filter-menu-container">
                             <Searchbox placeholder="Search..." />
                             <ul className="k-reset k-multicheck-wrap">
@@ -82,7 +82,7 @@ root.render(
 
             <section>
                 <div className="k-animation-container" style={{ overflow: "visible" }}>
-                    <form className="k-filter-menu k-popup k-group k-reset k-state-border-up">
+                    <form className="k-filter-menu k-popup k-group k-reset">
                         <div className="k-filter-menu-container">
                             <div className="k-filter-help-text">Show items with value that:</div>
                             <ul className="k-reset k-multicheck-wrap">
@@ -101,7 +101,7 @@ root.render(
 
             <section className="k-rtl">
                 <div className="k-animation-container" style={{ overflow: "visible" }}>
-                    <form className="k-filter-menu k-popup k-group k-reset k-state-border-up">
+                    <form className="k-filter-menu k-popup k-group k-reset">
                         <div className="k-filter-menu-container">
                             <div className="k-filter-help-text">Show items with value that:</div>
                             <ul className="k-reset k-multicheck-wrap">

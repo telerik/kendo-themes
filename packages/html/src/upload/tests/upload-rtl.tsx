@@ -37,7 +37,7 @@ root.render(
                                 </span>
                                 <span className="k-file-name-size-wrapper">
                                     <span className="k-file-name">Video_File_with_Very_Very_Very_Very_Long_Name.mkv</span>
-                                    <span className="k-file-validation-message k-text-error">File type not allowed.</span>
+                                    <span className="k-file-validation-message !k-text-error">File type not allowed.</span>
                                 </span>
                                 <div>
                                     <strong className="k-upload-status">
@@ -88,7 +88,7 @@ root.render(
                                 </span>
                                 <span className="k-file-name-size-wrapper">
                                     <span className="k-file-name">Image1_With_Very_Very_Very_Very_Long_Name.jpg</span>
-                                    <span className="k-text-success k-file-information">File successfully uploaded.</span>
+                                    <span className="!k-text-success k-file-information">File successfully uploaded.</span>
                                 </span>
                                 <div>
                                     <strong className="k-upload-status">
@@ -107,7 +107,7 @@ root.render(
                                 </span>
                                 <span className="k-file-name-size-wrapper">
                                     <span className="k-file-name">Image2.jpg</span>
-                                    <span className="k-text-success k-file-information">File successfully uploaded.</span>
+                                    <span className="!k-text-success k-file-information">File successfully uploaded.</span>
                                 </span>
                                 <div>
                                     <strong className="k-upload-status">
@@ -148,7 +148,7 @@ root.render(
             </section>
 
             <section>
-                <div className="k-widget k-upload k-state-disabled" dir="rtl">
+                <div className="k-widget k-upload k-disabled" dir="rtl">
                     <div className="k-dropzone">
                         <Button className="k-upload-button">Select files...</Button>
                         <div className="k-dropzone-hint">Disabled! Drop files here to upload</div>
@@ -191,7 +191,7 @@ root.render(
                                         <span className="k-file-name"> Video4.png </span>
                                         <span className="k-file-size">24.34 KB</span>
                                     </span>
-                                    <span className="k-file-information k-text-success">4 files successfully uploaded.</span>
+                                    <span className="k-file-information !k-text-success">4 files successfully uploaded.</span>
                                 </span>
                                 <div>
                                     <strong className="k-upload-status">
@@ -270,11 +270,11 @@ root.render(
                                 <span className="k-multiple-files-wrapper">
                                     <span className="k-file-name-size-wrapper">
                                         <span className="k-file-name">Movie_With_Very_Very_Very_Very_Very_Long_Name1.mkv </span>
-                                        <span className="k-text-error k-file-validation-message">File type not allowed.</span>
+                                        <span className="!k-text-error k-file-validation-message">File type not allowed.</span>
                                     </span>
                                     <span className="k-file-name-size-wrapper">
                                         <span className="k-file-name">Movie2.mkv </span>
-                                        <span className="k-text-error k-file-validation-message">File type not allowed.</span>
+                                        <span className="!k-text-error k-file-validation-message">File type not allowed.</span>
                                     </span>
                                     <span className="k-file-name-size-wrapper">
                                         <span className="k-file-name">Image1.jpg </span>

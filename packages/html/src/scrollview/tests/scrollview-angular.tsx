@@ -45,8 +45,8 @@ root.render(
                         <ul className="k-scrollview-nav">
                             <li className="k-link"></li>
                             <li className="k-link k-primary"></li>
-                            <li className="k-link k-primary k-state-focused"></li>
-                            <li className="k-link k-state-focused"></li>
+                            <li className="k-link k-primary k-focus"></li>
+                            <li className="k-link k-focus"></li>
                             <li className="k-link"></li>
                         </ul>
                     </div>

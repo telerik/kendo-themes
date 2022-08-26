@@ -25,7 +25,7 @@ root.render(
 
             <section>
                 <div className="k-animation-container">
-                    <div className="k-spreadsheet-filter-menu k-popup k-group k-reset k-state-border-up">
+                    <div className="k-spreadsheet-filter-menu k-popup k-group k-reset">
                         <div className="k-columnmenu-item-wrapper">
                             <div className="k-columnmenu-item">
                                 <Icon name="sort-asc-sm"></Icon>Sort range A to Z
