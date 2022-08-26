@@ -131,10 +131,22 @@ $kendo-theme-colors-contrast: (
 
 // Text colors
 @each $theme-color, $color-props in $kendo-theme-colors {
-    $_text: map-get( $color-props, text );
+    // sass-lint:disable-line no-important
+    // sass-lint:disable-line class-name-format
+    $_color: map-get( $color-props, text );
 
     .k-text-#{$theme-color} {
-        color: var( --kendo-text-#{$theme-color} , #{$_text} ) !important; // sass-lint:disable-line no-important
+        color: var( --kendo-text-#{$theme-color}, #{$_color} );
+    }
+    .\!k-text-#{$theme-color} {
+        color: var( --kendo-text-#{$theme-color}, #{$_color} ) !important;
+    }
+
+    .k-bg-#{$theme-color} {
+        background-color: var( --kendo-bg-#{$theme-color}, #{$_color} );
+    }
+    .\!k-bg-#{$theme-color} {
+        background-color: var( --kendo-bg-#{$theme-color}, #{$_color} ) !important;
     }
 };
 
