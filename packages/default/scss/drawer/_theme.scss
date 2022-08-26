@@ -25,33 +25,28 @@
     .k-drawer-item {
 
         &:hover,
-        &.k-state-hover,
         &.k-hover {
             color: $drawer-hovered-text;
             background-color: $drawer-hovered-bg;
         }
 
         &:focus,
-        &.k-state-focused,
         &.k-focus {
             background-color: $drawer-focused-bg;
             box-shadow: $drawer-focused-shadow;
 
             &:hover,
-            &.k-state-hover,
             &.k-hover {
                 color: $drawer-hovered-text;
                 background-color: $drawer-hovered-bg;
             }
         }
 
-        &.k-state-selected,
         &.k-selected {
             color: $drawer-selected-text;
             background-color: $drawer-selected-bg;
 
             &:hover,
-            &.k-state-hover,
             &.k-hover {
                 color: $drawer-selected-hover-text;
                 background-color: $drawer-selected-hover-bg;

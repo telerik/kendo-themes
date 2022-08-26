@@ -16,8 +16,11 @@
     }
 
     .k-loader-container-inner {
-        .k-text-secondary {
-            color: $loader-secondary-bg !important; // sass-lint:disable-line no-important
+        // sass-lint:disable-block no-important
+        // sass-lint:disable-block class-name-format
+        .k-text-secondary,
+        .\!k-text-secondary {
+            color: $loader-secondary-bg !important;
         }
     }
 

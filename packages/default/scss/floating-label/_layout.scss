@@ -37,7 +37,6 @@
             width: auto;
         }
 
-        &.k-state-empty,
         &.k-empty {
             > .k-label {
                 top: $floating-label-offset-y;
@@ -48,8 +47,6 @@
         }
 
         > .k-label,
-        // &:focus-within > .k-label,
-        &.k-state-focused > .k-label,
         &.k-focus > .k-label {
             top: $floating-label-focus-offset-y;
             left: $floating-label-focus-offset-x;
@@ -61,7 +58,6 @@
             transform: scale( $floating-label-focus-scale );
         }
 
-        &.k-state-empty:not(.k-state-focused) ::placeholder,
         &.k-empty:not(.k-focus):not(:focus-within) ::placeholder {
             color: transparent;
         }
@@ -75,7 +71,6 @@
                 transition: transform $floating-label-transition, color $floating-label-transition, top $floating-label-transition, right $floating-label-transition;
             }
 
-            &.k-state-empty,
             &.k-empty {
                 > .k-label {
                     left: auto;
@@ -84,8 +79,6 @@
             }
 
             > .k-label,
-            // &:focus-within > .k-label,
-            &.k-state-focused > .k-label,
             &.k-focus > .k-label {
                 left: auto;
                 right: $floating-label-focus-offset-x;

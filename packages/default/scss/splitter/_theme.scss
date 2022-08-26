@@ -14,7 +14,6 @@
         background-color: $splitbar-bg;
     }
     .k-splitbar:hover,
-    .k-splitbar.k-state-hover,
     .k-splitbar.k-hover,
     .k-splitbar-horizontal-hover,
     .k-splitbar-vertical-hover {
@@ -22,9 +21,6 @@
         background-color: $splitbar-hover-bg;
     }
     .k-splitbar:focus,
-    .k-splitbar.k-state-focus,
-    .k-splitbar.k-focus,
-    .k-splitbar.k-state-focused,
     .k-splitbar.k-focus {
         color: $splitbar-selected-text;
         background: $splitbar-selected-bg;

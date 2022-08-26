@@ -4,7 +4,6 @@
         color: $component-text;
 
         &:focus,
-        &.k-state-focused,
         &.k-focus {
 
             .k-rating-item {
@@ -12,7 +11,6 @@
                     text-shadow: $rating-icon-focused-shadow;
                 }
 
-                &.k-state-selected > .k-icon,
                 &.k-selected > .k-icon {
                     text-shadow: $rating-icon-focused-selected-shadow;
                 }
@@ -23,23 +21,19 @@
     .k-rating-item {
         color: $rating-icon-text;
 
-        &.k-state-selected,
         &.k-selected {
             color: $rating-icon-selected-text;
 
             &:focus,
-            &.k-state-focused,
             &.k-focus {
                 color: $rating-icon-focused-text;
             }
         }
 
         &:hover,
-        &.k-state-hover,
         &.k-hover {
             color: $rating-icon-hover-text;
             cursor: pointer;
         }
     }
 }
-

@@ -3,8 +3,7 @@
 @include exports( "switch/layout/bootstrap" ) {
 
     // Switch
-    .k-switch.k-disabled,
-    .k-switch.k-state-disabled {
+    .k-switch.k-disabled {
         opacity: 1;
         filter: none;
     }

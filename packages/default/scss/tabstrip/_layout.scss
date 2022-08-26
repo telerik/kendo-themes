@@ -97,13 +97,11 @@
         position: relative;
         z-index: 1;
 
-        &.k-state-active,
         &.k-active {
             display: block;
         }
 
         &:focus,
-        &.k-state-focused,
         &.k-focus {
             outline-width: 1px;
             outline-style: dotted;
@@ -192,7 +190,6 @@
                 margin-left: $tabstrip-item-gap;
             }
 
-            .k-item.k-state-active,
             .k-item.k-active {
                 border-bottom-color: transparent;
             }
@@ -222,7 +219,6 @@
                 margin-left: $tabstrip-item-gap;
             }
 
-            .k-item.k-state-active,
             .k-item.k-active {
                 border-top-color: transparent;
             }
@@ -256,7 +252,6 @@
                 margin-top: $tabstrip-item-gap;
             }
 
-            .k-item.k-state-active,
             .k-item.k-active {
                 border-right-color: transparent;
             }
@@ -292,7 +287,6 @@
                 margin-top: $tabstrip-item-gap;
             }
 
-            .k-item.k-state-active,
             .k-item.k-active {
                 border-left-color: transparent;
             }
@@ -338,7 +332,6 @@
                     border-left-width: $tabstrip-indicator-size;
                 }
             }
-            .k-item.k-state-active::after,
             .k-item.k-active::after {
                 display: block;
             }

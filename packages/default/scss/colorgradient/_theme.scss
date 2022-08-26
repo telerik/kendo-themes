@@ -10,7 +10,6 @@
     }
 
     .k-colorgradient:focus,
-    .k-colorgradient.k-state-focus,
     .k-colorgradient.k-focus {
         @include fill( $border: $colorgradient-focus-border );
         @include box-shadow( $colorgradient-focus-shadow );
@@ -31,16 +30,15 @@
         @include box-shadow( $colorgradient-draghandle-shadow );
 
         &:focus,
-        &.k-state-focus,
         &.k-focus {
             @include fill( $bg: transparent, $border: $white );
             @include box-shadow( $colorgradient-draghandle-focus-shadow );
         }
 
-        &:active,
         &:hover,
-        &.k-state-hover,
-        &.k-hover {
+        &.k-hover,
+        &.k-active,
+        &:active {
             @include fill( $bg: transparent, $border: $white );
             @include box-shadow( $colorgradient-draghandle-hover-shadow );
         }

@@ -152,7 +152,6 @@
 
 
         // Message states
-        .k-message.k-state-selected,
         .k-message.k-selected {
             margin-bottom: $chat-item-spacing-y;
             border: 0;
@@ -281,7 +280,6 @@
         align-items: center;
 
         &:focus,
-        &.k-state-focus,
         &.k-focus,
         &:focus-within {
             outline: 0;
@@ -362,7 +360,6 @@
             flex: 0 0 auto;
         }
 
-        &.k-state-selected,
         &.k-selected {
             background: none;
         }

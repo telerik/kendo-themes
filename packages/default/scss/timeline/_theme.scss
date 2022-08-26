@@ -41,7 +41,6 @@
             color: $body-text;
         }
 
-        .k-timeline-arrow.k-state-disabled,
         .k-timeline-arrow.k-disabled {
             opacity: 1; // The arrow button in disabled mode should have a solid background
             color: $timeline-track-arrow-disabled-text;
@@ -62,7 +61,6 @@
         background-color: $timeline-flag-bg;
     }
 
-    .k-timeline-track-item.k-state-focus .k-timeline-circle,
     .k-timeline-track-item.k-focus .k-timeline-circle {
         @include box-shadow( $timeline-track-item-focus-shadow );
     }

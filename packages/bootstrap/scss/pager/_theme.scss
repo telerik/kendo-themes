@@ -21,7 +21,6 @@
                 );
 
                 &:hover,
-                &.k-state-hover,
                 &.k-hover {
                     @include fill(
                         $pager-text,

@@ -15,7 +15,6 @@
     // Listview content
     .k-listview-content {
 
-        > .k-state-focused,
         > .k-focus {
             @include fill(
                 var( --kendo-listview-item-focus-text, $kendo-listview-item-focus-text ),
@@ -24,7 +23,6 @@
             box-shadow: var( --kendo-listview-item-focus-shadow, $kendo-listview-item-focus-shadow );
         }
 
-        > .k-state-selected,
         > .k-selected {
             @include fill(
                 var( --kendo-listview-item-selected-text, $kendo-listview-item-selected-text ),

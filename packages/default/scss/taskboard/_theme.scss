@@ -28,7 +28,6 @@
         );
     }
     .k-taskboard-column:focus,
-    .k-taskboard-column.k-state-focus,
     .k-taskboard-column.k-focus {
         @include fill(
             $taskboard-column-focus-text,
@@ -67,39 +66,33 @@
             @include fill( $color: $taskboard-card-header-text );
 
             &:focus,
-            &.k-focus,
-            &.k-state-focus {
+            &.k-focus {
                 @include fill( $color: $taskboard-card-header-focus-text );
             }
 
             &:hover,
-            &.k-hover,
-            &.k-state-hover {
+            &.k-hover {
                 @include fill( $color: $taskboard-card-header-hover-text );
             }
         }
 
         &:focus,
-        &.k-focus,
-        &.k-state-focus {
+        &.k-focus {
             @include fill( $border: $taskboard-card-focus-border );
             @include box-shadow( $taskboard-card-focus-shadow );
         }
 
         &:hover,
-        &.k-hover,
-        &.k-state-hover {
+        &.k-hover {
             @include fill( $border: $taskboard-card-hover-border );
         }
 
-        &.k-selected,
-        &.k-state-selected {
+        &.k-selected {
             @include fill( $border: $taskboard-card-selected-border );
             @include box-shadow( $taskboard-card-selected-shadow );
         }
 
-        &.k-disabled,
-        &.k-state-disabled {
+        &.k-disabled {
             @include disabled( $disabled-styling );
         }
     }

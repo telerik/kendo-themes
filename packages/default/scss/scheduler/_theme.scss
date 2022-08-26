@@ -82,9 +82,7 @@
         );
     }
 
-    .k-scheduler-layout td.k-state-selected,
     .k-scheduler-layout td.k-selected,
-    .k-scheduler-layout .k-scheduler-cell.k-state-selected,
     .k-scheduler-layout .k-scheduler-cell.k-selected {
         background-color: rgba($selected-bg, .25);
     }
@@ -107,7 +105,7 @@
         );
         @include box-shadow( $scheduler-event-shadow );
 
-        &.k-state-hover,
+        &:hover,
         &.k-hover {
             @include fill(
                 $scheduler-event-hover-text,
@@ -118,7 +116,6 @@
             @include box-shadow( $scheduler-event-hover-shadow );
         }
 
-        &.k-state-selected,
         &.k-selected {
             @include fill(
                 $scheduler-event-selected-text,
@@ -185,10 +182,8 @@
 
         // Hover
         .k-scheduler-content tr:hover,
-        .k-scheduler-content tr.k-state-hover,
         .k-scheduler-content tr.k-hover,
         .k-scheduler-content .k-scheduler-row:hover,
-        .k-scheduler-content .k-scheduler-row.k-state-hover,
         .k-scheduler-content .k-scheduler-row.k-hover {
             @include fill(
                 $hovered-text,
@@ -200,9 +195,7 @@
 
         .k-scheduler-content tr:hover .k-scheduler-datecolumn,
         .k-scheduler-content tr:hover .k-scheduler-groupcolumn,
-        .k-scheduler-content tr.k-state-hover .k-scheduler-datecolumn,
         .k-scheduler-content tr.k-hover .k-scheduler-datecolumn,
-        .k-scheduler-content tr.k-state-hover .k-scheduler-groupcolumn,
         .k-scheduler-content tr.k-hover .k-scheduler-groupcolumn {
             @include fill(
                 $scheduler-text,
@@ -212,13 +205,10 @@
         }
 
         // Selected
-        .k-scheduler-content tr.k-state-selected,
         .k-scheduler-content tr.k-selected {
             background-color: rgba($selected-bg, .25);
         }
-        .k-scheduler-content tr.k-state-selected .k-scheduler-datecolumn,
         .k-scheduler-content tr.k-selected .k-scheduler-datecolumn,
-        .k-scheduler-content tr.k-state-selected .k-scheduler-groupcolumn,
         .k-scheduler-content tr.k-selected .k-scheduler-groupcolumn {
             background-color: $scheduler-bg;
         }
@@ -236,7 +226,6 @@
             @include fill( $bg: $scheduler-yearview-indicator-bg );
         }
 
-        .k-state-selected .k-day-indicator,
         .k-selected .k-day-indicator {
             @include fill( $bg: $scheduler-yearview-indicator-selected-bg );
         }

@@ -1,16 +1,16 @@
 @include exports("wizard/theme") {
+
     .k-wizard-step {
         &:focus,
-        &.k-state-focused,
         &.k-focus {
             outline-color: $wizard-step-border-focused;
         }
 
         .k-ie &:focus,
-        .k-ie &.k-state-focused,
         .k-ie &.k-focus {
             @include box-shadow($wizard-focused-shadow);
             outline: none;
         }
     }
+
 }

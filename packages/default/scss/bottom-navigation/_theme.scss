@@ -8,15 +8,11 @@
                 $bg: $color
             );
 
-            .k-bottom-nav-item.k-state-focus,
-            .k-bottom-nav-item.k-focus,
-            .k-bottom-nav-item.k-state-focused,
             .k-bottom-nav-item.k-focus,
             .k-bottom-nav-item:focus {
                 @include fill( $bg: rgba(true-mix( $color, contrast-wcag( $color ), 35%), .2));
             }
 
-            .k-bottom-nav-item.k-state-selected,
             .k-bottom-nav-item.k-selected {
                 @include fill( $color: contrast-wcag( $color ) );
             }
@@ -31,16 +27,12 @@
             $bottom-nav-flat-border
         );
 
-        .k-bottom-nav-item.k-state-focus,
-        .k-bottom-nav-item.k-focus,
-        .k-bottom-nav-item.k-state-focused,
         .k-bottom-nav-item.k-focus,
         .k-bottom-nav-item:focus {
             @include fill( $bg: rgba($bottom-nav-flat-text, .05) );
         }
 
         @each $name, $color in $kendo-theme-colors {
-            &.k-bottom-nav-#{$name} .k-bottom-nav-item.k-state-selected,
             &.k-bottom-nav-#{$name} .k-bottom-nav-item.k-selected {
                 @if $name == "secondary" or $name == "light" {
                     @include fill( $color: try-shade($color, 3) );

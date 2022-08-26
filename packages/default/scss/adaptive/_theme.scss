@@ -82,12 +82,10 @@
 
         .k-column-menu {
 
-            .k-listgroup-item.k-state-selected,
             .k-listgroup-item.k-selected {
                 color: $adaptive-grid-sort-text;
                 background: none;
             }
-            .k-listgroup-item.k-state-selected .k-link,
             .k-listgroup-item.k-selected .k-link {
                 color: inherit;
             }

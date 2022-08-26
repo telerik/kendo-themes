@@ -14,8 +14,8 @@
 
     // Hover state
     @each $name, $color in $kendo-fab-theme-colors {
-        .k-hover.k-fab-solid-#{$name},
-        .k-fab-solid-#{$name}:hover {
+        .k-fab-solid-#{$name}:hover,
+        .k-fab-solid-#{$name}.k-hover {
             border-color: try-darken( $color, 10% );
             color: contrast-wcag( try-darken( $color, 7.5% ) );
             background-color: try-darken( $color, 7.5% );
@@ -24,8 +24,8 @@
 
     // Focus state
     @each $name, $color in $kendo-fab-theme-colors {
-        .k-fab-solid-#{$name}.k-focus,
-        .k-fab-solid-#{$name}:focus {
+        .k-fab-solid-#{$name}:focus,
+        .k-fab-solid-#{$name}.k-focus {
             outline-style: solid;
             outline-width: 3px;
             outline-color: rgba( $color, .5 );
@@ -34,9 +34,9 @@
 
     // Active state
     @each $name, $color in $kendo-fab-theme-colors {
-        .k-active.k-fab-solid-#{$name},
-        .k-selected.k-fab-solid-#{$name},
-        .k-fab-solid-#{$name}:active {
+        .k-fab-solid-#{$name}:active,
+        .k-fab-solid-#{$name}.k-active,
+        .k-fab-solid-#{$name}.k-selected {
             @include box-shadow($kendo-fab-active-shadow);
             border-color: try-darken( $color, 12.5% );
             color: contrast-wcag( try-darken( $color, 10% ) );
@@ -46,8 +46,8 @@
 
     // Disabled state
     @each $name, $color in $kendo-fab-theme-colors {
-        .k-disabled.k-fab-solid-#{$name},
-        .k-fab-solid-#{$name}:disabled {
+        .k-fab-solid-#{$name}:disabled,
+        .k-fab-solid-#{$name}.k-disabled {
             @include box-shadow($kendo-fab-disabled-shadow);
             background-color: try-tint( $color, 4.5 );
             color: try-tint( contrast-wcag( $color ), 5 );
@@ -76,8 +76,8 @@
     }
 
     // Hover state
-    .k-fab-item.k-hover .k-fab-item-icon,
-    .k-fab-item:hover .k-fab-item-icon {
+    .k-fab-item:hover .k-fab-item-icon,
+    .k-fab-item.k-hover .k-fab-item-icon {
         @include box-shadow($kendo-fab-item-shadow);
         outline: $kendo-fab-border-width solid try-darken( $kendo-fab-item-icon-border, 10% );
         outline-offset: -$kendo-fab-border-width;
@@ -88,8 +88,8 @@
 
     // Focus state
     .k-fab-item:focus .k-fab-item-text,
-    .k-fab-item:focus .k-fab-item-icon,
     .k-fab-item.k-focus .k-fab-item-text,
+    .k-fab-item:focus .k-fab-item-icon,
     .k-fab-item.k-focus .k-fab-item-icon {
         outline-style: solid;
         outline-width: 3px;
@@ -97,8 +97,8 @@
     }
 
     // Active state
-    .k-fab-item.k-active .k-fab-item-icon,
-    .k-fab-item:active .k-fab-item-icon {
+    .k-fab-item:active .k-fab-item-icon,
+    .k-fab-item.k-active .k-fab-item-icon {
         @include box-shadow($kendo-fab-item-active-shadow);
         outline: $kendo-fab-border-width solid try-darken( $kendo-fab-item-icon-border, 12.5% );
         outline-offset: -$kendo-fab-border-width;
@@ -108,8 +108,8 @@
     }
 
     // Disabled state
-    .k-fab-item.k-disabled,
-    .k-fab-item:disabled {
+    .k-fab-item:disabled,
+    .k-fab-item.k-disabled {
         opacity: 1;
 
         .k-fab-item-text,

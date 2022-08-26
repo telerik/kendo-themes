@@ -1,18 +1,28 @@
 @include exports( "common/decoration/color" ) {
 
     // sass-lint:disable-block no-important
+    // sass-lint:disable-block class-name-format
     // stylelint-disable block-opening-brace-space-before
 
     .k-text-base,
     .k-color-base {
         color: $base-text;
     }
+    .\!k-text-base,
+    .\!k-color-base {
+        color: $base-text !important;
+    }
 
     .k-color-inherit { color: inherit; }
+    .\!k-color-inherit { color: inherit !important; }
 
     @each $name, $color in $kendo-theme-colors {
         .k-text-#{$name},
         .k-color-#{$name} {
+            color: $color;
+        }
+        .\!k-text-#{$name},
+        .\!k-color-#{$name} {
             color: $color !important;
         }
     }
@@ -23,59 +33,15 @@
 @include exports( "common/decoration/background" ) {
 
     // sass-lint:disable-block no-important
+    // sass-lint:disable-block class-name-format
 
     @each $name, $bg-color in $kendo-theme-colors {
         .k-bg-#{$name} {
+            background-color: $bg-color;
+        }
+        .\!k-bg-#{$name} {
             background-color: $bg-color !important;
         }
-    }
-
-}
-
-
-@mixin variant( $base ) {
-    background-color: tint($base, 10);
-    color: shade($base, 6);
-    border-color: tint($base, 9);
-}
-
-@include exports( "common/decoration/variant" ) {
-
-    @each $name, $variant in $kendo-theme-colors {
-        .k-state-#{$name} {
-            @include variant( $variant );
-        }
-    }
-}
-
-
-@include exports( "common/decoration/legacy" ) {
-
-    .k-info-colored {
-        color: #50607f;
-        border-color: #d0d9df;
-        background-color: #f0f9ff;
-    }
-
-    .k-success-colored {
-        color: #507f50;
-        border-color: #d0dfd0;
-        background-color: #f0fff0;
-    }
-
-    .k-error-colored {
-        color: #7f5050;
-        border-color: #dfd0d0;
-        background-color: #fff0f0;
-    }
-
-    .k-shadow {
-        // Shadow moved to popup/_layout.scss due to variable flow
-        // box-shadow: $popup-shadow;
-    }
-
-    .k-inset {
-        box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, .03), inset 0 4px 5px 0 rgba(0, 0, 0, .04);
     }
 
 }

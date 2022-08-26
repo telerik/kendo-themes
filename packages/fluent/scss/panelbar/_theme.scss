@@ -14,7 +14,6 @@
         > .k-item,
         > .k-panelbar-header {
 
-            &.k-state-expanded.k-level-0 > .k-link,
             &.k-expanded.k-level-0 > .k-link  {
                 @include fill(
                     var( --kendo-panelbar-header-expanded-text, #{$kendo-panelbar-header-expanded-text} ),

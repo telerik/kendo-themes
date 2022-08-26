@@ -6,14 +6,11 @@
     .k-grid {
 
         // Selected state
-        td.k-state-selected,
         td.k-selected,
-        tr.k-state-selected,
         tr.k-selected {
             color: $grid-selected-text;
             background-color: $grid-selected-bg;
         }
-        tr.k-state-selected > td,
         tr.k-selected > td {
             color: inherit;
             background-color: transparent;
@@ -21,14 +18,12 @@
 
         // Hover, Focused state
         table {
-            >tr:not(.k-detail-row):hover,
-            >tr:not(.k-detail-row).k-state-hover,
-            >tr:not(.k-detail-row).k-hover,
-            td.k-state-focused,
+            > tr:not(.k-detail-row):hover,
+            > tr:not(.k-detail-row).k-hover,
+            td:focus,
             td.k-focus,
-            th.k-state-focused,
-            th.k-focus,
             th:focus,
+            th.k-focus,
             .k-master-row > td:focus,
             .k-grouping-row > td:focus,
             .k-detail-row > td:focus,
@@ -38,7 +33,6 @@
             }
 
             tr:hover,
-            tr.k-state-hover,
             tr.k-hover {
                 .k-grid-header-sticky,
                 .k-grid-footer-sticky {
@@ -47,9 +41,8 @@
                 }
             }
 
-            td.k-state-focused,
+            td:focus,
             td.k-focus,
-            th.k-state-focused,
             th.k-focus,
             th:focus,
             .k-master-row > td:focus,
@@ -66,7 +59,6 @@
 
         }
         .k-grid-pager:focus,
-        .k-grid-pager.k-state-focused,
         .k-grid-pager.k-focus {
             color: inherit;
         }
@@ -120,7 +112,6 @@
 
             .k-group-footer {
                 &:hover td,
-                &.k-state-hover td,
                 &.k-hover td {
                     color: inherit;
                     @include fill( $bg: $grid-sticky-footer-hovered-bg );
@@ -171,15 +162,12 @@
             }
 
             &:focus,
-            &.k-state-focus,
-            &.k-focus,
-            &.k-state-border-down {
+            &.k-focus {
                 color: $grid-text;
                 background-color: $grid-filter-button-focus;
                 box-shadow: none;
             }
 
-            &.k-state-active,
             &.k-active {
                 color: $primary-contrast;
                 background-color: $primary;
@@ -220,7 +208,6 @@
         }
 
         &:hover td,
-        &.k-state-hover td,
         &.k-hover td {
             @include fill( $bg: $grid-sticky-footer-hovered-bg );
         }
@@ -253,7 +240,6 @@
     }
 
     .k-columnmenu-item {
-        &.k-state-selected,
         &.k-selected {
             @include fill(
                 $kendo-list-item-selected-text,
@@ -262,7 +248,6 @@
         }
     }
     .k-columnmenu-item:focus,
-    .k-columnmenu-item.k-state-focus,
     .k-columnmenu-item.k-focus {
         background: $kendo-list-item-hover-bg;
     }
@@ -271,7 +256,6 @@
 
         .k-item {
             // Selected state
-            &.k-state-selected,
             &.k-selected {
                 background: $kendo-list-item-hover-bg;
             }
