@@ -9,6 +9,7 @@
         padding-block: var( --INTERNAL--kendo-badge-padding-y, 0 );
         min-width: var( --INTERNAL--kendo-badge-min-width, auto );
         font-size: var( --INTERNAL--kendo-badge-font-size, 1rem );
+        font-weight: var( --kendo-badge-font-weight, #{$kendo-badge-font-weight} );
         line-height: var( --INTERNAL--kendo-badge-line-height, normal );
         border-width: var( --kendo-badge-border-width, #{$kendo-badge-border-width} );
         border-style: solid;
