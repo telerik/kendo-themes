@@ -119,7 +119,7 @@
 @use "expansion-panel";
 @use "panelbar";
 // @use "splitter";
-// @use "tilelayout";
+@use "tilelayout";
 
 
 // Data management
@@ -281,7 +281,7 @@
     @include expansion-panel.styles();
     @include panelbar.styles();
     // @include splitter.styles();
-    // @include tilelayout.styles();
+    @include tilelayout.styles();
 
 
     // Data management

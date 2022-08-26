@@ -56,17 +56,28 @@
     // Card title
     .k-card-title {
         @extend .k-h5;
+        font-weight: var( --kendo-card-title-font-weight, #{$kendo-card-title-font-weight} );
+        margin-block-end: var( --kendo-card-title-margin-bottom, #{$kendo-card-title-margin-bottom} );
     }
 
 
     // Card subtitle
     .k-card-subtitle {
         @extend .k-h6;
+        font-weight: var( --kendo-card-title-font-weight, #{$kendo-card-title-font-weight} );
+        margin-block-end: var( --kendo-card-subtitle-margin-bottom, #{$kendo-card-subtitle-margin-bottom} );
+
+        @at-root .k-card-title + & {
+            margin-block-start: calc( var( --kendo-card-title-margin-bottom, #{$kendo-card-title-margin-bottom} ) * -1 );
+        }
     }
 
 
     // Header
     .k-card-header {
+        @extend .k-h5;
+        font-weight: var( --kendo-card-title-font-weight, #{$kendo-card-title-font-weight} );
+        margin: 0;
         padding-inline: var( --kendo-card-header-padding-x, #{$kendo-card-header-padding-x} );
         padding-block: var( --kendo-card-header-padding-y, #{$kendo-card-header-padding-y} );
         border-width: 0 0 var( --kendo-card-header-border-width, #{$kendo-card-header-border-width} );
@@ -113,22 +124,6 @@
 
         > .k-card-actions {
             padding: 0;
-        }
-
-        .k-card-title {
-            margin-block-end: var( --kendo-card-title-margin-bottom, #{$kendo-card-title-margin-bottom} );
-
-            & + .k-card-subtitle {
-                margin-block-start: calc( -1 * var( --kendo-card-title-margin-bottom, #{$kendo-card-title-margin-bottom} ) );
-            }
-        }
-
-        .k-card-subtitle {
-            margin-block-end: var( --kendo-card-subtitle-margin-bottom, #{$kendo-card-subtitle-margin-bottom} );
-
-            & + .k-card-subtitle {
-                margin-block-start: - var( --kendo-card-subtitle-margin-bottom, #{$kendo-card-subtitle-margin-bottom} );
-            }
         }
     }
 
