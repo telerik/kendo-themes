@@ -17,6 +17,13 @@
         }
 
 
+        // Template item
+        .k-toolbar-item:focus,
+        .k-toolbar-item.k-focus {
+            @include box-shadow( $kendo-button-focus-shadow );
+        }
+
+
         // Button group
         .k-button-group {}
 
