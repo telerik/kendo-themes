@@ -1,0 +1,72 @@
+@use "../core/color-system" as *;
+@use "../core/_variables.scss" as *;
+
+/// Borer radius of the drag clue.
+/// @group draggable
+$kendo-drag-clue-border-radius: var( --kendo-border-radius-md, 0 ) !default;
+/// Borer width of the drag clue.
+/// @group draggable
+$kendo-drag-clue-border-width: 0px !default;
+/// Borer style of the drag clue.
+/// @group draggable
+$kendo-drag-clue-border-style: solid !default;
+/// Horizontal padding of the drag clue.
+/// @group draggable
+$kendo-drag-clue-padding-x: $kendo-padding-x-lg !default;
+/// Vertical padding of the drag clue.
+/// @group draggable
+$kendo-drag-clue-padding-y: $kendo-padding-y-lg !default;
+/// Font family of the drag clue.
+/// @group draggable
+$kendo-drag-clue-font-family: var( --kendo-font-family, inherit ) !default;
+/// Font size of the drag clue.
+/// @group draggable
+$kendo-drag-clue-font-size: var( --kendo-font-size, inherit ) !default;
+/// Line height of the drag clue.
+/// @group draggable
+$kendo-drag-clue-line-height: var( --kendo-line-height, inherit ) !default;
+/// Spacing of the drag clue.
+/// @group draggable
+$kendo-drag-clue-spacing: .4ex !default;
+/// Opacity of the drag clue.
+/// @group draggable
+$kendo-drag-clue-opacity: .8 !default;
+
+/// Text color of the drag clue.
+/// @group draggable
+$kendo-drag-clue-text: var( --kendo-selected-text, inherit ) !default;
+/// Background color of the drag clue.
+/// @group draggable
+$kendo-drag-clue-bg: var( --kendo-selected-bg, inherit ) !default;
+/// Border color of the drag clue.
+/// @group draggable
+$kendo-drag-clue-border: var( --kendo-selected-border, inherit ) !default;
+/// Gradient of the drag clue.
+/// @group draggable
+$kendo-drag-clue-gradient: null !default;
+/// Box shadow of the drag clue.
+/// @group draggable
+$kendo-drag-clue-shadow: var( --kendo-box-shadow-depth-2, none ) !default;
+
+/// Arrow size of the drop hint.
+/// @group draggable
+$kendo-drop-hint-arrow-size: 6px !default;
+/// Arrow spacing of the drop hint.
+/// @group draggable
+$kendo-drop-hint-arrow-spacing: calc( $kendo-drop-hint-arrow-size / 2 ) !default;
+/// Width of the horizontal drop hint line.
+/// @group draggable
+$kendo-drop-hint-line-h-width: 20px !default;
+/// Height of the horizontal drop hint line.
+/// @group draggable
+$kendo-drop-hint-line-h-height: 1px !default;
+/// Width of the vertical drop hint line.
+/// @group draggable
+$kendo-drop-hint-line-v-width: $kendo-drop-hint-line-h-height !default;
+/// Height of the vertical drop hint line.
+/// @group draggable
+$kendo-drop-hint-line-v-height: $kendo-drop-hint-line-h-width !default;
+
+/// Background-color of the drop hint.
+/// @group draggable
+$kendo-drop-hint-bg: get-theme-color-var( primary-130 ) !default;
