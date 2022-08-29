@@ -42,7 +42,7 @@ root.render(
                                     </td>
                                     <td>1</td>
                                 </tr>
-                                <tr className="k-alt k-master-row">
+                                <tr className="k-alt k-master-row k-expanded">
                                     <td className="k-hierarchy-cell">
                                         <Icon name="collapse" />
                                     </td>

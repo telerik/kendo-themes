@@ -126,7 +126,7 @@ root.render(
                                 <col className="k-hierarchy-col" /><col /><col /><col /><col />
                             </colgroup>
                             <tbody>
-                                <tr className="k-master-row">
+                                <tr className="k-master-row k-expanded">
                                     <td className="k-hierarchy-cell">
                                         <Icon name="collapse" />
                                     </td>
