@@ -119,6 +119,9 @@ $kendo-list-group-item-line-height-lg: var( --kendo-line-height, normal ) !defau
 /// @group list
 $kendo-list-group-item-font-weight: var( --kendo-font-weight-bold, normal ) !default;
 
+/// Color of the list item icon
+/// @group list
+$kendo-list-item-icon-text: get-theme-color-var( primary-130 ) !default;
 
 // Kendo list sizes
 $kendo-list-sizes: (
