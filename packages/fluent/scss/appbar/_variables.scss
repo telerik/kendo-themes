@@ -50,7 +50,7 @@ $kendo-appbar-theme-colors: map-merge(
     $kendo-theme-colors, (
         primary: (
             text: $white,
-            bg: get-theme-color-var( primary-130 )
+            bg: get-theme-color-var( primary-100 )
         )
     )
 );

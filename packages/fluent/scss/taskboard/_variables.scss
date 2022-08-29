@@ -181,7 +181,7 @@ $kendo-taskboard-card-category-border-width: 4px !default;
 $kendo-taskboard-card-focus-shadow: none !default;
 /// Selected border of the task board card.
 /// @group taskboard
-$kendo-taskboard-card-selected-border: get-theme-color-var( primary-130 ) !default;
+$kendo-taskboard-card-selected-border: get-theme-color-var( primary-100 ) !default;
 /// Selected shadow of the task board card.
 /// @group taskboard
 $kendo-taskboard-card-selected-shadow: var( --kendo-box-shadow-depth-4, none ) !default;

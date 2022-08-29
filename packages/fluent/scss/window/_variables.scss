@@ -79,17 +79,17 @@ $kendo-window-bg: var( --kendo-component-bg, initial ) !default;
 $kendo-window-text: var( --kendo-component-text, initial ) !default;
 /// Border color of the window.
 /// @group window
-$kendo-window-border: get-theme-color-var( primary-130 ) !default;
+$kendo-window-border: get-theme-color-var( primary-100 ) !default;
 
 /// Background color of the window titlebar.
 /// @group window
 $kendo-window-titlebar-bg: var( --kendo-component-bg, initial ) !default; // $header-bg
 /// Text color of the window titlebar.
 /// @group window
-$kendo-window-titlebar-text: get-theme-color-var( primary-130 ) !default; // $header-text
+$kendo-window-titlebar-text: get-theme-color-var( primary-100 ) !default; // $header-text
 /// Border color of the window titlebar.
 /// @group window
-$kendo-window-titlebar-border: get-theme-color-var( primary-130 ) !default;
+$kendo-window-titlebar-border: get-theme-color-var( primary-100 ) !default;
 
 /// Box shadow around the window.
 /// @group window

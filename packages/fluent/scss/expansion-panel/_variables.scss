@@ -68,7 +68,7 @@ $kendo-expander-header-padding-x: map-get( $kendo-spacing, 4 ) !default;
 $kendo-expander-header-padding-y: map-get( $kendo-spacing, 3 ) !default;
 /// Text color of the expander header.
 /// @group expander
-$kendo-expander-header-text: get-theme-color-var( primary-130 ) !default;
+$kendo-expander-header-text: get-theme-color-var( primary-100 ) !default;
 /// Background color of the expander header.
 /// @group expander
 $kendo-expander-header-bg: inherit !default;
@@ -78,7 +78,7 @@ $kendo-expander-header-hover-bg: get-theme-color-var( neutral-20 ) !default;
 
 /// Text color of the expander title.
 /// @group expander
-$kendo-expander-title-text: get-theme-color-var( primary-130 ) !default;
+$kendo-expander-title-text: get-theme-color-var( primary-100 ) !default;
 
 /// Text color of the expander sub-title.
 /// @group expander

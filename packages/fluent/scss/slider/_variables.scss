@@ -51,7 +51,7 @@ $kendo-slider-track-focus-border: inherit !default;
 
 /// The selection background color of the slider track.
 /// @group slider
-$kendo-slider-selection-bg: get-theme-color-var( primary-130 ) !default;
+$kendo-slider-selection-bg: get-theme-color-var( primary-100 ) !default;
 
 /// The default size of the slider thumb.
 /// @group slider
@@ -90,7 +90,7 @@ $kendo-slider-thumb-hover-bg: $kendo-slider-thumb-bg !default;
 $kendo-slider-thumb-hover-text: inherit !default;
 /// The hover border color of the slider thumb.
 /// @group slider
-$kendo-slider-thumb-hover-border: get-theme-color-var( primary-130 ) !default;
+$kendo-slider-thumb-hover-border: get-theme-color-var( primary-100 ) !default;
 /// The hover gradient of the slider thumb.
 /// @group slider
 $kendo-slider-thumb-hover-gradient: transparent !default;

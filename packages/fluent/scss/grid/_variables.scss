@@ -218,7 +218,7 @@ $kendo-grid-sort-icon-spacing: var( --kendo-icon-spacing, .5rem ) !default;
 $kendo-grid-sort-indicator-text: get-theme-color-var( neutral-130 ) !default;
 /// Text color of the grid sort order indicator.
 /// @group grid
-$kendo-grid-sort-indicator-order-text: get-theme-color-var( primary-130 ) !default;
+$kendo-grid-sort-indicator-order-text: get-theme-color-var( primary-100 ) !default;
 /// Background color of the sorted grid cells.
 /// @group grid
 $kendo-grid-sorted-bg: get-theme-color-var( neutral-10 ) !default;
@@ -289,7 +289,7 @@ $kendo-grid-group-dropclue-height: calc( $kendo-button-calc-size + $kendo-grid-g
 $kendo-grid-group-dropclue-top: 2px !default;
 /// Text color of the grid group drop clue.
 /// @group grid
-$kendo-grid-group-dropclue-bg: get-theme-color-var( primary-130 ) !default;
+$kendo-grid-group-dropclue-bg: get-theme-color-var( primary-100 ) !default;
 
 /// Border width of the grid sticky cell.
 /// @group grid

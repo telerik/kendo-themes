@@ -46,7 +46,7 @@ $kendo-dropzone-icon-spacing: map-get( $kendo-spacing, 6 ) !default;
 $kendo-dropzone-icon-text: get-theme-color-var( neutral-90 ) !default;
 /// Text color of the icon when the dropzone is hovered.
 /// @group dropzone
-$kendo-dropzone-icon-hover-text: get-theme-color-var( primary-130 ) !default;
+$kendo-dropzone-icon-hover-text: get-theme-color-var( primary-100 ) !default;
 
 /// Font size of the hint.
 /// @group dropzone
