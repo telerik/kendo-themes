@@ -100,7 +100,7 @@ $kendo-stepper-indicator-disabled-border: var( --kendo-disabled-border, initial 
 
 /// Background color of the stepper done indicator.
 /// @group stepper
-$kendo-stepper-indicator-done-bg: get-theme-color-var( primary-130 ) !default;
+$kendo-stepper-indicator-done-bg: get-theme-color-var( primary-100 ) !default;
 /// Text color of the stepper done indicator.
 /// @group stepper
 $kendo-stepper-indicator-done-text: $white !default;
@@ -110,7 +110,7 @@ $kendo-stepper-indicator-done-border: $kendo-stepper-indicator-done-bg !default;
 
 /// The hover background color of the stepper done indicator.
 /// @group stepper
-$kendo-stepper-indicator-done-hover-bg: get-theme-color-var( primary-150 ) !default;
+$kendo-stepper-indicator-done-hover-bg: get-theme-color-var( primary-110 ) !default;
 /// The hover text color of the stepper done indicator.
 /// @group stepper
 $kendo-stepper-indicator-done-hover-text: $kendo-stepper-indicator-done-text !default;

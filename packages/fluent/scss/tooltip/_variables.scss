@@ -55,7 +55,7 @@ $kendo-tooltip-button-text: get-theme-color-var( neutral-130, initial ) !default
 
 /// The primary background color of the tooltip
 /// @group tooltip
-$kendo-tooltip-primary-bg: get-theme-color-var( primary-130 ) !default;
+$kendo-tooltip-primary-bg: get-theme-color-var( primary-100 ) !default;
 /// The primary text color of the tooltip
 /// @group tooltip
 $kendo-tooltip-primary-text: $white !default;

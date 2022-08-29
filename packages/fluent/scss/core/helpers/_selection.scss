@@ -3,7 +3,7 @@
 .k-marquee {
     border-width: 1px;
     border-style: solid;
-    border-color: get-theme-color-var( primary-130 );
+    border-color: get-theme-color-var( primary-100 );
     position: absolute;
     z-index: 100000;
 }
@@ -19,7 +19,7 @@
 
 .k-marquee-color {
     color: $white;
-    background-color: get-theme-color-var( primary-130 );
+    background-color: get-theme-color-var( primary-100 );
     opacity: .3;
 }
 .k-marquee-text {

@@ -168,7 +168,7 @@ $kendo-button-solid-base-disabled-border: var( --kendo-disabled-border, inherit 
 $kendo-button-solid-primary-text: $white !default;
 /// The background color of the solid primary button.
 /// @group button
-$kendo-button-solid-primary-bg: get-theme-color-var( primary-130 ) !default;
+$kendo-button-solid-primary-bg: get-theme-color-var( primary-100 ) !default;
 /// The border color of the solid primary button.
 /// @group button
 $kendo-button-solid-primary-border: $kendo-button-solid-primary-bg !default;
@@ -177,7 +177,7 @@ $kendo-button-solid-primary-border: $kendo-button-solid-primary-bg !default;
 $kendo-button-solid-primary-hover-text: $kendo-button-solid-primary-text !default;
 /// The hover background color of the solid primary button.
 /// @group button
-$kendo-button-solid-primary-hover-bg: get-theme-color-var( primary-150 ) !default;
+$kendo-button-solid-primary-hover-bg: get-theme-color-var( primary-110 ) !default;
 /// The hover border color of the solid primary button.
 /// @group button
 $kendo-button-solid-primary-hover-border: $kendo-button-solid-primary-hover-bg !default;
@@ -207,7 +207,7 @@ $kendo-button-solid-primary-focus-hover-border: $kendo-button-solid-primary-focu
 $kendo-button-solid-primary-active-text: $kendo-button-solid-primary-text !default;
 /// The active background color of the solid primary button.
 /// @group button
-$kendo-button-solid-primary-active-bg: get-theme-color-var( primary-160 ) !default;
+$kendo-button-solid-primary-active-bg: get-theme-color-var( primary-120 ) !default;
 /// The active border color of the solid primary button.
 /// @group button
 $kendo-button-solid-primary-active-border: $kendo-button-solid-primary-active-bg !default;
@@ -233,7 +233,7 @@ $kendo-button-solid-primary-disabled-border: var( --kendo-disabled-border, inher
 
 /// The text color of the flat primary button.
 /// @group button
-$kendo-button-flat-primary-text: get-theme-color-var( primary-130 ) !default;
+$kendo-button-flat-primary-text: get-theme-color-var( primary-100 ) !default;
 /// The background color of the flat primary button.
 /// @group button
 $kendo-button-flat-primary-bg: initial !default;
@@ -369,7 +369,7 @@ $kendo-button-outline-base-disabled-border: get-theme-color-var( neutral-90 ) !d
 
 /// The text color of the outline primary button.
 /// @group button
-$kendo-button-outline-primary-text: get-theme-color-var( primary-130 ) !default;
+$kendo-button-outline-primary-text: get-theme-color-var( primary-100 ) !default;
 /// The background color of the outline primary button.
 /// @group button
 $kendo-button-outline-primary-bg: transparent !default;
@@ -505,7 +505,7 @@ $kendo-button-link-base-disabled-border: transparent !default;
 
 /// The text color of the link primary button.
 /// @group button
-$kendo-button-link-primary-text: get-theme-color-var( primary-130 ) !default;
+$kendo-button-link-primary-text: get-theme-color-var( primary-100 ) !default;
 /// The background color of the link primary button.
 /// @group button
 $kendo-button-link-primary-bg: transparent !default;
@@ -514,7 +514,7 @@ $kendo-button-link-primary-bg: transparent !default;
 $kendo-button-link-primary-border: transparent !default;
 /// The hover text color of the link primary button.
 /// @group button
-$kendo-button-link-primary-hover-text: get-theme-color-var( primary-190 ) !default;
+$kendo-button-link-primary-hover-text: get-theme-color-var( primary-130 ) !default;
 /// The hover background color of the link primary button.
 /// @group button
 $kendo-button-link-primary-hover-bg: transparent !default;
@@ -641,7 +641,7 @@ $kendo-button-clear-base-disabled-border: transparent !default;
 
 /// The text color of the clear primary button.
 /// @group button
-$kendo-button-clear-primary-text: get-theme-color-var( primary-130 ) !default;
+$kendo-button-clear-primary-text: get-theme-color-var( primary-100 ) !default;
 /// The background color of the clear primary button.
 /// @group button
 $kendo-button-clear-primary-bg: transparent !default;
@@ -650,7 +650,7 @@ $kendo-button-clear-primary-bg: transparent !default;
 $kendo-button-clear-primary-border: transparent !default;
 /// The hover text color of the clear primary button.
 /// @group button
-$kendo-button-clear-primary-hover-text: get-theme-color-var( primary-190 ) !default;
+$kendo-button-clear-primary-hover-text: get-theme-color-var( primary-130 ) !default;
 /// The hover background color of the clear primary button.
 /// @group button
 $kendo-button-clear-primary-hover-bg: transparent !default;

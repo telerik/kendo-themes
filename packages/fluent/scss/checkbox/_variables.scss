@@ -78,11 +78,11 @@ $kendo-checkbox-bg: var( --kendo-component-bg, initial ) !default;
 $kendo-checkbox-text: initial !default;
 /// Border color of checkbox.
 /// @group checkbox
-$kendo-checkbox-border: get-theme-color( neutral, 160 ) !default;
+$kendo-checkbox-border: get-theme-color-var( neutral-160 ) !default;
 
 /// The outline of a focused checkbox.
 /// @group checkbox
-$kendo-checkbox-focus-outline: get-theme-color( neutral, 130 ) !default;
+$kendo-checkbox-focus-outline: get-theme-color-var( neutral-130 ) !default;
 
 /// Background color of hovered checkbox.
 /// @group checkbox
@@ -96,20 +96,20 @@ $kendo-checkbox-hover-border: $kendo-checkbox-border !default;
 
 /// Background of hovered and checked checkbox.
 /// @group checkbox
-$kendo-checkbox-checked-hover-bg: get-theme-color( primary, 160 ) !default;
+$kendo-checkbox-checked-hover-bg: get-theme-color-var( primary-120 ) !default;
 /// Border of hovered and checked checkbox.
 /// @group checkbox
-$kendo-checkbox-checked-hover-border: get-theme-color( primary, 160 ) !default;
+$kendo-checkbox-checked-hover-border: get-theme-color-var( primary-120 ) !default;
 
 /// Background color of checked checkbox.
 /// @group checkbox
-$kendo-checkbox-checked-bg: get-theme-color( primary, 130 ) !default;
+$kendo-checkbox-checked-bg: get-theme-color-var( primary-100 ) !default;
 /// Color of checked checkbox.
 /// @group checkbox
 $kendo-checkbox-checked-text: $white !default;
 /// Color of checked checkbox.
 /// @group checkbox
-$kendo-checkbox-hovered-text: get-theme-color( neutral, 130 ) !default;
+$kendo-checkbox-hovered-text: get-theme-color-var( neutral-130 ) !default;
 /// Border color of checked checkbox.
 /// @group checkbox
 $kendo-checkbox-checked-border: $kendo-checkbox-checked-bg !default;
@@ -119,22 +119,22 @@ $kendo-checkbox-checked-border: $kendo-checkbox-checked-bg !default;
 $kendo-checkbox-indeterminate-bg: $kendo-checkbox-bg !default;
 /// Color of indeterminate checkbox.
 /// @group checkbox
-$kendo-checkbox-indeterminate-text: get-theme-color( primary, 130 ) !default;
+$kendo-checkbox-indeterminate-text: get-theme-color-var( primary-100 ) !default;
 /// Border color of indeterminate checkbox.
 /// @group checkbox
-$kendo-checkbox-indeterminate-border: get-theme-color( primary, 130 ) !default;
+$kendo-checkbox-indeterminate-border: get-theme-color-var( primary-100 ) !default;
 /// Border color of indeterminate and hovered checkbox.
 /// @group checkbox
-$kendo-checkbox-indeterminate-hover-border: get-theme-color( primary, 160 ) !default;
+$kendo-checkbox-indeterminate-hover-border: get-theme-color-var( primary-120 ) !default;
 /// Background color of indeterminate and hovered checkbox.
 /// @group checkbox
-$kendo-checkbox-indeterminate-hover-bg: get-theme-color( primary, 160 ) !default;
+$kendo-checkbox-indeterminate-hover-bg: get-theme-color-var( primary-120 ) !default;
 /// Background color of indeterminate and disabled checkbox.
 /// @group checkbox
-$kendo-checkbox-indeterminate-disabled-bg: get-theme-color( neutral, 60 ) !default;
+$kendo-checkbox-indeterminate-disabled-bg: get-theme-color-var( neutral-60 ) !default;
 /// Border color of indeterminate and disabled checkbox.
 /// @group checkbox
-$kendo-checkbox-indeterminate-disabled-border: get-theme-color( neutral, 60 ) !default;
+$kendo-checkbox-indeterminate-disabled-border: get-theme-color-var( neutral-60 ) !default;
 
 /// Border color of focused checkbox.
 /// @group checkbox
@@ -147,7 +147,7 @@ $kendo-checkbox-focus-shadow: 0 0 0 2px rgba(0, 0, 0, .06) !default;
 $kendo-checkbox-focus-checked-border: null !default;
 /// Box shadow of focused and checked checkbox.
 /// @group checkbox
-$kendo-checkbox-focus-checked-shadow: 0 0 0 2px rgba( get-theme-color-var( primary-130 ), .3 ) !default;
+$kendo-checkbox-focus-checked-shadow: 0 0 0 2px rgba( get-theme-color-var( primary-100 ), .3 ) !default;
 
 /// Background color of disabled checkbox.
 /// @group checkbox
@@ -157,17 +157,17 @@ $kendo-checkbox-disabled-bg: $white !default;
 $kendo-checkbox-disabled-text: null !default;
 /// Border color of disabled checkbox.
 /// @group checkbox
-$kendo-checkbox-disabled-border: get-theme-color( neutral, 60 ) !default;
+$kendo-checkbox-disabled-border: get-theme-color-var( neutral-60 ) !default;
 
 /// Background color of disabled and checked checkbox.
 /// @group checkbox
-$kendo-checkbox-disabled-checked-bg: get-theme-color( neutral, 60 ) !default;
+$kendo-checkbox-disabled-checked-bg: get-theme-color-var( neutral-60 ) !default;
 /// Color of disabled and checked checkbox.
 /// @group checkbox
 $kendo-checkbox-disabled-checked-text: null !default;
 /// Border color of disabled and checked checkbox.
 /// @group checkbox
-$kendo-checkbox-disabled-checked-border: get-theme-color( neutral, 60 ) !default;
+$kendo-checkbox-disabled-checked-border: get-theme-color-var( neutral-60 ) !default;
 
 /// Background color of invalid checkbox.
 /// @group checkbox
