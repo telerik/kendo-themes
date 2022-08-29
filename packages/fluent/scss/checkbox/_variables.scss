@@ -1,7 +1,7 @@
 @use "../core/color-system/" as *;
 @use "../core/_variables.scss" as *;
 @use "../list/_variables.scss" as *;
-@use "../core/functions/" as *; 
+@use "../core/functions/" as *;
 // Checkbox
 
 /// Border width of checkbox.
@@ -26,7 +26,7 @@ $kendo-checkbox-sizes: (
         size: map-get( $kendo-spacing, 6 ),
         glyph-size: ( map-get( $kendo-spacing, 6 ) - map-get( $kendo-spacing, thin ) ),
         ripple-size: map-get( $kendo-spacing, 6 ) * 3,
-        indeterminate-size: map-get($kendo-spacing, md ) 
+        indeterminate-size: map-get($kendo-spacing, md )
     )
 ) !default;
 
@@ -92,7 +92,7 @@ $kendo-checkbox-hover-bg: var( --kendo-checkbox-bg, initial ) !default;
 $kendo-checkbox-hover-text: var( --kendo-body-text, initial ) !default;
 /// Border color of hovered checkbox.
 /// @group checkbox
-$kendo-checkbox-hover-border: var( --kendo-component-border, initial ) !default;
+$kendo-checkbox-hover-border: $kendo-checkbox-border !default;
 
 /// Background of hovered and checked checkbox.
 /// @group checkbox
@@ -126,7 +126,7 @@ $kendo-checkbox-indeterminate-border: get-theme-color(primary, 130) !default;
 /// Border color of indeterminate and hovered checkbox.
 /// @group checkbox
 $kendo-checkbox-indeterminate-hover-border: get-theme-color(primary, 160) !default;
-/// Background color of indeterminate and hovered checkbox. 
+/// Background color of indeterminate and hovered checkbox.
 /// @group checkbox
 $kendo-checkbox-indeterminate-hover-bg: get-theme-color(primary, 160) !default;
 /// Background color of indeterminate and disabled checkbox.
