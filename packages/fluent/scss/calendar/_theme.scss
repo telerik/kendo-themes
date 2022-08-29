@@ -185,7 +185,6 @@
             --kendo-calendar-cell-bg: var( --kendo-calendar-range-bg, #{$kendo-calendar-range-bg} );
             --kendo-calendar-cell-text: var( --kendo-calendar-range-text, #{$kendo-calendar-range-text} );
             --kendo-calendar-cell-link-bg: transparent;
-            --kendo-calendar-cell-hover-bg: transparent;
             --kendo-calendar-cell-selected-shadow: none;
 
             &::before {
