@@ -96,6 +96,7 @@
         flex: 1 1 auto;
 
         .k-title {
+            padding-block-end: var( --kendo-time-list-title-spacing, $kendo-time-list-title-spacing );
             font-size: var( --kendo-time-list-title-font-size, $kendo-time-list-title-font-size );
             line-height: var( --kendo-time-list-title-line-height, $kendo-time-list-title-line-height );
             font-weight: 600;
@@ -120,7 +121,7 @@
             }
 
             &::before {
-                top: var( --kendo-time-list-title-height, $kendo-time-list-title-height );
+                top: calc( var( --kendo-time-list-title-spacing, $kendo-time-list-title-spacing ) + var( --kendo-time-list-title-height, $kendo-time-list-title-height ) );
             }
 
             &::after {
