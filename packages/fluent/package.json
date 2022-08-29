@@ -1,7 +1,7 @@
 {
   "name": "@progress/kendo-theme-fluent",
   "description": "A css variables based theme for Kendo UI that follows the Fluent design system guidelines.",
-  "version": "5.6.1-dev.6",
+  "version": "5.6.1-dev.7",
   "private": true,
   "author": "Progress",
   "license": "Apache-2.0",
@@ -46,7 +46,7 @@
   },
   "dependencies": {
     "@progress/kendo-font-icons": "^0.2.0",
-    "@progress/kendo-theme-utils": "^5.6.1-dev.6"
+    "@progress/kendo-theme-utils": "^5.6.1-dev.7"
   },
   "devDependencies": {
     "sass-build": "^1.0.0"
