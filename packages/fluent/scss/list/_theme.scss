@@ -68,6 +68,13 @@
         }
     }
 
+    // Icon
+    .k-list-item .k-icon {
+        @include fill(
+            $color: var( --kendo-list-item-icon-text, #{$kendo-list-item-icon-text} )
+        );
+    }
+
 
     // List group item
     .k-list-group-item {
