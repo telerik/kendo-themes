@@ -201,7 +201,7 @@
         align-items: center;
         position: relative;
         z-index: 11;
-        top: calc( var( --kendo-time-list-highlight-height, $kendo-time-list-highlight-height ) / 2);
+        top: calc( var( --kendo-time-list-title-height, $kendo-time-list-title-height ) / 2);
     }
 
 
