@@ -489,7 +489,7 @@ root.render(
                                                 </p>
                                             </td>
                                         </tr>
-                                        <tr role="row" className="k-master-row">
+                                        <tr role="row" className="k-master-row k-expanded">
                                             <td className="k-group-cell"></td>
                                             <td className="k-group-cell"></td>
                                             <td className="k-hierarchy-cell">
@@ -537,7 +537,7 @@ root.render(
                                                 </p>
                                             </td>
                                         </tr>
-                                        <tr role="row" className="k-master-row k-alt">
+                                        <tr role="row" className="k-master-row k-alt k-expanded">
                                             <td className="k-group-cell"></td>
                                             <td className="k-group-cell"></td>
                                             <td className="k-hierarchy-cell">

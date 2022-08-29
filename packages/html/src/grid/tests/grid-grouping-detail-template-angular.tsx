@@ -337,7 +337,7 @@ root.render(
                                                 <p className="k-reset"><Icon name="collapse" /> Name: Product1 </p>
                                             </td>
                                         </tr>
-                                        <tr className="k-master-row" role="row">
+                                        <tr className="k-master-row k-expanded" role="row">
                                             <td className="k-group-cell"></td>
                                             <td className="k-group-cell"></td>
                                             <td className="k-hierarchy-cell"><Icon name="minus" /></td>
@@ -363,7 +363,7 @@ root.render(
                                                 <p className="k-reset"><Icon name="collapse" /> Name: Product2 </p>
                                             </td>
                                         </tr>
-                                        <tr className="k-alt k-master-row" role="row">
+                                        <tr className="k-alt k-master-row k-expanded" role="row">
                                             <td className="k-group-cell"></td>
                                             <td className="k-group-cell"></td>
                                             <td className="k-hierarchy-cell"><Icon name="minus" /></td>
