@@ -102,7 +102,7 @@ $kendo-scheduler-event-hover-shadow: null !default;
 
 /// Background color of the selected scheduler event.
 /// @group scheduler
-$kendo-scheduler-event-selected-bg: $kendo-scheduler-event-bg !default;
+$kendo-scheduler-event-selected-bg: get-theme-color-var( primary-160 ) !default;
 /// Text color of the selected scheduler event.
 /// @group scheduler
 $kendo-scheduler-event-selected-text: $kendo-scheduler-event-text !default;
@@ -114,7 +114,7 @@ $kendo-scheduler-event-selected-border: $kendo-scheduler-event-bg !default;
 $kendo-scheduler-event-selected-gradient: null !default;
 /// Shadow of the selected scheduler event.
 /// @group scheduler
-$kendo-scheduler-event-selected-shadow: inset 0 0 0 2px rgba(0, 0, 0, .12 ) !default;
+$kendo-scheduler-event-selected-shadow: none !default;
 
 /// Shadow of the ongoing scheduler event.
 /// @group scheduler
