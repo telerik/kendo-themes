@@ -119,7 +119,7 @@
 @use "card";
 @use "expansion-panel";
 @use "panelbar";
-// @use "splitter";
+@use "splitter";
 @use "tilelayout";
 
 
@@ -281,7 +281,7 @@
     @include card.styles();
     @include expansion-panel.styles();
     @include panelbar.styles();
-    // @include splitter.styles();
+    @include splitter.styles();
     @include tilelayout.styles();
 
 
