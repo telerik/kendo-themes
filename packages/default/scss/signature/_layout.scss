@@ -2,7 +2,7 @@
 
     .k-signature {
         width: $kendo-signature-width;
-        height: $kendo-signature-height;
+        min-height: $kendo-signature-height;
         position: relative;
         box-sizing: border-box;
         display: flex;
