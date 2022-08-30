@@ -23,29 +23,23 @@ $kendo-signature-line-size-sm: calc( 100% - 2 * #{$kendo-signature-padding-x-sm}
 $kendo-signature-line-size-md: calc( 100% - 2 * #{$kendo-signature-padding-x-md} ) !default;
 $kendo-signature-line-size-lg: calc( 100% - 2 * #{$kendo-signature-padding-x-lg} ) !default;
 
-$kendo-signature-line-bottom-offset: calc( #{$kendo-button-calc-size} + #{$kendo-signature-padding-x} ) !default;
-$kendo-signature-line-bottom-offset-sm: calc( #{$kendo-button-calc-size} + #{$kendo-signature-padding-x-sm} ) !default;
-$kendo-signature-line-bottom-offset-md: calc( #{$kendo-button-calc-size} + #{$kendo-signature-padding-x-md} ) !default;
-$kendo-signature-line-bottom-offset-lg: calc( #{$kendo-button-calc-size} + #{$kendo-signature-padding-x-lg} ) !default;
+$kendo-signature-line-bottom-offset: 33% !default;
 
 $kendo-signature-sizes: (
     sm: (
         padding-x: $kendo-signature-padding-x-sm,
         padding-y: $kendo-signature-padding-y-sm,
-        line-size: $kendo-signature-line-size-sm,
-        line-offset: $kendo-signature-line-bottom-offset-sm
+        line-size: $kendo-signature-line-size-sm
     ),
     md: (
         padding-x: $kendo-signature-padding-x-md,
         padding-y: $kendo-signature-padding-y-md,
-        line-size: $kendo-signature-line-size-md,
-        line-offset: $kendo-signature-line-bottom-offset-md
+        line-size: $kendo-signature-line-size-md
     ),
     lg: (
         padding-x: $kendo-signature-padding-x-lg,
         padding-y: $kendo-signature-padding-y-lg,
-        line-size: $kendo-signature-line-size-lg,
-        line-offset: $kendo-signature-line-bottom-offset-lg
+        line-size: $kendo-signature-line-size-lg
     )
 ) !default;
 
