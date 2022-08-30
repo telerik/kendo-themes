@@ -52,7 +52,7 @@ $kendo-breadcrumb-link-border-radius: 0px !default;
 $kendo-breadcrumb-link-initial-text: inherit !default;
 /// The background color of the breadcrumb link
 /// @group breadcrumb
-$kendo-breadcrumb-link-bg: var( --kendo-component-bg, initial ) !default;
+$kendo-breadcrumb-link-bg: transparent !default;
 /// The text color of the breadcrumb link
 /// @group breadcrumb
 $kendo-breadcrumb-link-text: get-theme-color-var( neutral-130 ) !default;
@@ -79,7 +79,7 @@ $kendo-breadcrumb-link-active-text: var( --kendo-selected-text, initial ) !defau
 $kendo-breadcrumb-link-active-border: get-theme-color-var( neutral-30 ) !default;
 /// The background color of the focused breadcrumb link
 /// @group breadcrumb
-$kendo-breadcrumb-link-focus-bg: var( --kendo-component-bg, initial ) !default;
+$kendo-breadcrumb-link-focus-bg: transparent !default;
 /// The text color of the focused breadcrumb link
 /// @group breadcrumb
 $kendo-breadcrumb-link-focus-text: get-theme-color-var( neutral-190 ) !default;
