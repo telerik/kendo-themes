@@ -157,7 +157,7 @@
 // Dataviz
 // @use "dataviz";
 // @use "map";
-// @use "orgchart";
+@use "orgchart";
 // @use "signature";
 
 // Setup
@@ -319,6 +319,6 @@
     // Dataviz
     // @include dataviz.styles();
     // @include map.styles();
-    // @include orgchart.styles();
+    @include orgchart.styles();
     // @include signature.styles();
 }
