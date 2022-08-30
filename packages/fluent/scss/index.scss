@@ -85,7 +85,7 @@
 @use "searchbox";
 @use "switch";
 @use "upload";
-// @use "dropzone";
+@use "dropzone";
 
 
 // Command interfaces
@@ -247,7 +247,7 @@
     @include searchbox.styles();
     @include switch.styles();
     @include upload.styles();
-    // @include dropzone.styles();
+    @include dropzone.styles();
 
 
     // Command interfaces
