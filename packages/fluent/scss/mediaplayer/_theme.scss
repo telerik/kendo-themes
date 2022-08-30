@@ -1,0 +1,29 @@
+@use "_variables.scss" as *;
+@use "../core/mixins" as *;
+
+@mixin kendo-mediaplayer--theme() {
+
+    .k-mediaplayer {
+        @include fill(
+            var( --kendo-mediaplayer-text, #{$kendo-mediaplayer-text} ),
+            var( --kendo-mediaplayer-bg, #{$kendo-mediaplayer-bg} ),
+            var( --kendo-mediaplayer-border, #{$kendo-mediaplayer-border} )
+        );
+    }
+
+
+    .k-mediaplayer-overlay {
+        background-color: var( --kendo-mediaplayer-overlay-bg, #{$kendo-mediaplayer-overlay-bg} );
+    }
+
+
+    .k-mediaplayer-titlebar {
+        color: var( --kendo-mediaplayer-titlebar-text, #{$kendo-mediaplayer-titlebar-text} );
+        background-color: var( --kendo-mediaplayer-titlebar-bg, #{$kendo-mediaplayer-titlebar-bg} );
+    }
+
+
+    .k-mediaplayer-quality {
+        border-color: var( --kendo-mediaplayer-quality-border, #{$kendo-mediaplayer-quality-border} );
+    }
+}
