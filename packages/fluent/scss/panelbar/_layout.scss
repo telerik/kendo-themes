@@ -50,7 +50,7 @@
                 position: relative;
                 user-select: none;
                 cursor: default;
-                transition: var( --kendo-transition, #{$kendo-transition} );
+                transition: var( --kendo-transition, none );
 
                 &.k-selected {
                     font-weight: var( --kendo-font-weight-bold, #{$kendo-font-weight-bold} );
