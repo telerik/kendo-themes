@@ -15,6 +15,7 @@
 
 
 // Primitive components
+@use "action-buttons";
 @use "list";
 @use "listgroup";
 @use "overlay";
@@ -87,7 +88,6 @@
 
 
 // Command interfaces
-@use "action-buttons";
 @use "appbar";
 @use "fab";
 @use "menu";
@@ -135,7 +135,7 @@
 
 // Editors
 @use "editor";
-// @use "imageeditor";
+@use "imageeditor";
 
 
 // Scheduling
@@ -177,6 +177,7 @@
 
 
     // Primitive components
+    @include action-buttons.styles();
     @include list.styles();
     @include listgroup.styles();
     @include overlay.styles();
@@ -249,7 +250,6 @@
 
 
     // Command interfaces
-    @include action-buttons.styles();
     @include appbar.styles();
     @include fab.styles();
     @include menu.styles();
@@ -297,7 +297,7 @@
 
     // Editors
     @include editor.styles();
-    // @include imageeditor.styles();
+    @include imageeditor.styles();
 
 
     // Scheduling

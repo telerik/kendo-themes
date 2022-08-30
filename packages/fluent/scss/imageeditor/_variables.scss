@@ -1,0 +1,108 @@
+@use "../core/_variables.scss" as *;
+@use "../core/color-system" as *;
+
+/// Background color of the imageeditor.
+/// @group imageeditor
+$kendo-imageeditor-bg: var( --kendo-component-bg, inherit ) !default;
+/// Text color of the imageeditor.
+/// @group imageeditor
+$kendo-imageeditor-text: var( --kendo-component-text, inherit ) !default;
+/// Border color of the imageeditor.
+/// @group imageeditor
+$kendo-imageeditor-border: get-theme-color-var( neutral-90 ) !default;
+
+/// Vertical margin of the imageeditor.
+/// @group imageeditor
+$kendo-imageeditor-margin-y: 0 !default;
+/// Horizontal margin of the imageeditor.
+/// @group imageeditor
+$kendo-imageeditor-margin-x: 0 !default;
+/// Vertical padding of the imageeditor.
+/// @group imageeditor
+$kendo-imageeditor-padding-y: 0 !default;
+/// Horizontal padding of the imageeditor.
+/// @group imageeditor
+$kendo-imageeditor-padding-x: 0 !default;
+
+/// Border width of the imageeditor.
+/// @group imageeditor
+$kendo-imageeditor-border-width: map-get( $kendo-spacing, hair ) !default;
+/// Font size of the imageeditor.
+/// @group imageeditor
+$kendo-imageeditor-font-size: var( --kendo-font-size, inherit ) !default;
+/// Line height of the imageeditor.
+/// @group imageeditor
+$kendo-imageeditor-line-height: var( --kendo-line-height, inherit ) !default;
+/// Font family of the imageeditor.
+/// @group imageeditor
+$kendo-imageeditor-font-family: var( --kendo-font-family, inherit ) !default;
+
+/// Imageeditor content background color.
+/// @group imageeditor
+$kendo-imageeditor-content-bg: get-theme-color-var( neutral-50 ) !default;
+/// Imageeditor content text color.
+/// @group imageeditor
+$kendo-imageeditor-content-text: inherit !default;
+/// Imageeditor content border color.
+/// @group imageeditor
+$kendo-imageeditor-content-border: inherit !default;
+/// Imageeditor content border width.
+/// @group imageeditor
+$kendo-imageeditor-content-border-width: 0 !default;
+
+/// Imageeditor action pane background color.
+/// @group imageeditor
+$kendo-imageeditor-action-pane-bg: var( --kendo-component-bg, inherit ) !default;
+/// Imageeditor action pane text color.
+/// @group imageeditor
+$kendo-imageeditor-action-pane-text: inherit !default;
+/// Imageeditor action pane border.
+/// @group imageeditor
+$kendo-imageeditor-action-pane-border: inherit !default;
+/// Imageeditor action pane vertical padding.
+/// @group imageeditor
+$kendo-imageeditor-action-pane-padding-y: map-get( $kendo-spacing, 3 ) !default;
+/// Imageeditor action pane horizontal padding.
+/// @group imageeditor
+$kendo-imageeditor-action-pane-padding-x: map-get( $kendo-spacing, 3 ) !default;
+/// Imageeditor action pane width.
+/// @group imageeditor
+$kendo-imageeditor-action-pane-width: if( $kendo-imageeditor-content-border-width == 0, 240px, calc(240px + #{$kendo-imageeditor-content-border-width}) );
+
+/// Crop background color of the imageeditor.
+/// @group imageeditor
+$kendo-imageeditor-crop-bg: inherit !default;
+/// Crop text color of the imageeditor.
+/// @group imageeditor
+$kendo-imageeditor-crop-text: inherit !default;
+/// Crop border color of the imageeditor.
+/// @group imageeditor
+$kendo-imageeditor-crop-border: $white !default;
+/// Crop overlay background color of the imageeditor.
+/// @group imageeditor
+$kendo-imageeditor-crop-overlay-bg: rgba( $black, .3 ) !default;
+/// Crop border width of the imageeditor.
+/// @group imageeditor
+$kendo-imageeditor-crop-border-width: map-get( $kendo-spacing, hair ) !default;
+/// Crop border style of the imageeditor.
+/// @group imageeditor
+$kendo-imageeditor-crop-border-style: dashed !default;
+
+/// Imageeditor resize handle horizontal margin.
+/// @group imageeditor
+$kendo-imageeditor-resize-handle-margin-x: map-get( $kendo-spacing, hair ) !default;
+/// Imageeditor resize handle vertical margin.
+/// @group imageeditor
+$kendo-imageeditor-resize-handle-margin-y: map-get( $kendo-spacing, hair ) !default;
+/// Imageeditor resize handle border width.
+/// @group imageeditor
+$kendo-imageeditor-resize-handle-border-width: 0 2px 2px 0 !default;
+/// Imageeditor resize handle size.
+/// @group imageeditor
+$kendo-imageeditor-resize-handle-size: map-get( $kendo-spacing, 4 ) !default;
+/// Imageeditor resize handle top offset.
+/// @group imageeditor
+$kendo-imageeditor-resize-top-offset: calc( $kendo-imageeditor-resize-handle-size / 2 ) !default;
+/// Imageeditor resize handle left offset.
+/// @group imageeditor
+$kendo-imageeditor-resize-left-offset: calc( $kendo-imageeditor-resize-handle-size / 2 ) !default;

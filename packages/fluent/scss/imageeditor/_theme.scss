@@ -1,0 +1,49 @@
+@use "_variables.scss" as *;
+@use "../core/mixins" as *;
+
+@mixin kendo-imageeditor--theme() {
+
+    // Image Editor
+    .k-imageeditor {
+        @include fill(
+            var( --kendo-imageeditor-text, #{$kendo-imageeditor-text} ),
+            var( --kendo-imageeditor-bg, #{$kendo-imageeditor-bg} ),
+            var( --kendo-imageeditor-border, #{$kendo-imageeditor-border} )
+        );
+    }
+
+    // Content
+    .k-imageeditor-content {
+        @include fill(
+            var( --kendo-imageeditor-content-text, #{$kendo-imageeditor-content-text} ),
+            var( --kendo-imageeditor-content-bg, #{$kendo-imageeditor-content-bg} ),
+            var( --kendo-imageeditor-content-border, #{$kendo-imageeditor-content-border} )
+        );
+    }
+
+    // Action Pane
+    .k-imageeditor-action-pane {
+        @include fill(
+            var( --kendo-imageeditor-action-pane-text, #{$kendo-imageeditor-action-pane-text} ),
+            var( --kendo-imageeditor-action-pane-bg, #{$kendo-imageeditor-action-pane-bg} ),
+            var( --kendo-imageeditor-action-pane-border, #{$kendo-imageeditor-action-pane-border} )
+        );
+    }
+
+    // Crop Tool
+    .k-imageeditor-crop {
+        @include fill(
+            var( --kendo-imageeditor-crop-text, #{$kendo-imageeditor-crop-text} ),
+            var( --kendo-imageeditor-crop-bg, #{$kendo-imageeditor-crop-bg} ),
+            var( --kendo-imageeditor-crop-border, #{$kendo-imageeditor-crop-border} )
+        );
+    }
+
+    // Crop Overlay
+    .k-imageeditor-crop-overlay {
+        @include fill (
+            $bg: var( --kendo-imageeditor-crop-overlay-bg, #{$kendo-imageeditor-crop-overlay-bg} )
+        );
+    }
+
+}
