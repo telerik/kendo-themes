@@ -6,7 +6,7 @@
     .k-searchbox {
 
         .k-input-icon {
-            transition: $kendo-transition;
+            transition: var( --kendo-transition, none );
         }
 
         &:focus,
@@ -15,7 +15,7 @@
             .k-input-icon {
                 width: 0;
                 opacity: 0;
-                transition: $kendo-transition;
+                transition: var( --kendo-transition, none );
             }
         }
     }
