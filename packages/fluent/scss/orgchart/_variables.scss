@@ -1,0 +1,152 @@
+@use "../core/color-system" as *;
+@use "../core/_variables.scss" as *;
+@use "../card/_variables.scss" as *;
+
+/// Spacing index of the orgchart.
+/// @group orgchart
+$kendo-orgchart-spacer: map-get( $kendo-spacing, 6) !default;
+/// Vertical padding of the orgchart.
+/// @group orgchart
+$kendo-orgchart-padding-y: $kendo-orgchart-spacer !default;
+/// Horizontal padding of the orgchart.
+/// @group orgchart
+$kendo-orgchart-padding-x: $kendo-orgchart-padding-y !default;
+/// Font family of the orgchart.
+/// @group orgchart
+$kendo-orgchart-font-family: var( --kendo-font-family, inherit ) !default;
+/// Font size of the orgchart.
+/// @group orgchart
+$kendo-orgchart-font-size: var( --kendo-font-size, inherit ) !default;
+/// Line height of the orgchart.
+/// @group orgchart
+$kendo-orgchart-line-height: var( --kendo-line-height, normal ) !default;
+/// Background color of the orgchart.
+/// @group orgchart
+$kendo-orgchart-bg: var( --kendo-component-bg, initial ) !default;
+/// Text color of the orgchart.
+/// @group orgchart
+$kendo-orgchart-text: var( --kendo-component-text, initial ) !default;
+/// Border color of the orgchart.
+/// @group orgchart
+$kendo-orgchart-border: var( --kendo-component-border, initial ) !default;
+
+/// Spacing of the orgchart node.
+/// @group orgchart
+$kendo-orgchart-node-spacing: $kendo-orgchart-spacer !default;
+/// Spacing of the orgchart group.
+/// @group orgchart
+$kendo-orgchart-group-spacing: $kendo-orgchart-spacer !default;
+/// Spacing of the orgchart node container.
+/// @group orgchart
+$kendo-orgchart-node-container-spacing: $kendo-orgchart-spacer !default;
+
+/// Vertical padding of the orgchart node group.
+/// @group orgchart
+$kendo-orgchart-node-group-padding-y: $kendo-orgchart-spacer !default;
+/// Horizontal padding of the orgchart node group.
+/// @group orgchart
+$kendo-orgchart-node-group-padding-x: $kendo-orgchart-node-group-padding-y !default;
+/// Border width of the orgchart node group.
+/// @group orgchart
+$kendo-orgchart-node-group-border-width: 1px !default;
+/// Border radius of the orgchart node group.
+/// @group orgchart
+$kendo-orgchart-node-group-border-radius: var( --kendo-border-radius-md, 0 ) !default;
+/// Background color of the orgchart node group.
+/// @group orgchart
+$kendo-orgchart-node-group-bg: get-theme-color-var( neutral-10 ) !default;
+/// Text color of the orgchart node group.
+/// @group orgchart
+$kendo-orgchart-node-group-text: get-theme-color-var( neutral-190 ) !default;
+/// Border color of the orgchart node group.
+/// @group orgchart
+$kendo-orgchart-node-group-border: get-theme-color-var( neutral-30 ) !default;
+/// Focus border color of the orgchart node group.
+/// @group orgchart
+$kendo-orgchart-node-group-focus-border: $kendo-card-focus-border !default;
+/// Focus shadow of the orgchart node group.
+/// @group orgchart
+$kendo-orgchart-node-group-focus-shadow: $kendo-card-focus-shadow !default;
+
+/// Vertical margin of the orgchart node group title.
+/// @group orgchart
+$kendo-orgchart-node-group-title-margin-y: 0px !default;
+/// Font size of the orgchart node group title.
+/// @group orgchart
+$kendo-orgchart-node-group-title-font-size: var( --kendo-font-size-xl, inherit ) !default;
+/// Line height of the orgchart node group title.
+/// @group orgchart
+$kendo-orgchart-node-group-title-line-height: var( --kendo-line-height-md, normal ) !default;
+
+/// Vertical margin of the orgchart node group subtitle.
+/// @group orgchart
+$kendo-orgchart-node-group-subtitle-margin-y: $kendo-orgchart-spacer - map-get( $kendo-spacing, 1 ) !default;
+/// Font size of the orgchart node group subtitle.
+/// @group orgchart
+$kendo-orgchart-node-group-subtitle-font-size: var( --kendo-font-size, inherit ) !default;
+/// Line height of the orgchart node group subtitle.
+/// @group orgchart
+$kendo-orgchart-node-group-subtitle-text: var( --kendo-subtle-text, inherit ) !default;
+
+/// Width of the orgchart card.
+/// @group orgchart
+$kendo-orgchart-card-width: 300px !default;
+/// Border width of the orgchart card.
+/// @group orgchart
+$kendo-orgchart-card-border-width: $kendo-card-border-width !default;
+/// Shadow of the orgchart card.
+/// @group orgchart
+$kendo-orgchart-card-shadow: $kendo-card-shadow !default;
+/// Focus shadow of the orgchart card.
+/// @group orgchart
+$kendo-orgchart-card-focus-shadow: $kendo-card-focus-shadow !default;
+
+/// Vertical margin of the orgchart card title.
+/// @group orgchart
+$kendo-orgchart-card-title-margin-y: 0px !default;
+/// Font size of the orgchart card title.
+/// @group orgchart
+$kendo-orgchart-card-title-font-size: var( --kendo-font-size, inherit ) !default;
+/// Line height of the orgchart card title.
+/// @group orgchart
+$kendo-orgchart-card-title-line-height: var( --kendo-line-height, normal ) !default;
+
+/// Vertical margin of the orgchart card subtitle.
+/// @group orgchart
+$kendo-orgchart-card-subtitle-margin-y: 0px !default;
+/// Font size of the orgchart card subtitle.
+/// @group orgchart
+$kendo-orgchart-card-subtitle-font-size: var( --kendo-font-size-sm, inherit ) !default;
+/// Line height of the orgchart card subtitle.
+/// @group orgchart
+$kendo-orgchart-card-subtitle-line-height: var( --kendo-line-height-md, inherit ) !default;
+
+/// Vertical padding of the orgchart card body.
+/// @group orgchart
+$kendo-orgchart-card-body-padding-y: $kendo-orgchart-spacer - map-get( $kendo-spacing, 2 ) !default;
+/// Horizontal padding of the orgchart card body.
+/// @group orgchart
+$kendo-orgchart-card-body-padding-x: $kendo-orgchart-card-body-padding-y !default;
+/// Top border width of the orgchart card body.
+/// @group orgchart
+$kendo-orgchart-card-body-border-width: 2px 0 0 !default;
+/// Border color of the orgchart card body.
+/// @group orgchart
+$kendo-orgchart-card-body-border-color: transparent !default;
+
+/// Horizontal margin of the orgchart card body title wrap.
+/// @group orgchart
+$kendo-orgchart-card-body-vbox-margin-x: $kendo-orgchart-spacer - map-get( $kendo-spacing, 2 ) !default;
+/// Min height of the orgchart card body title wrap.
+/// @group orgchart
+$kendo-orgchart-card-body-vbox-min-height: $kendo-card-avatar-size !default;
+
+/// Size of the orgchart connecting line.
+/// @group orgchart
+$kendo-orgchart-line-size: 1px !default;
+/// Fill color of the orgchart connecting line.
+/// @group orgchart
+$kendo-orgchart-line-text: get-theme-color-var( neutral-30 ) !default;
+/// Height of the orgchart connecting line.
+/// @group orgchart
+$kendo-orgchart-line-v-height: 25px !default;
