@@ -33,7 +33,7 @@
 @use "color-preview";
 // @use "loader";
 // @use "loading";
-// @use "skeleton";
+@use "skeleton";
 @use "tooltip";
 
 
@@ -195,7 +195,7 @@
     @include color-preview.styles();
     // @include loader.styles();
     // @include loading.styles();
-    // @include skeleton.styles();
+    @include skeleton.styles();
     @include tooltip.styles();
 
 
