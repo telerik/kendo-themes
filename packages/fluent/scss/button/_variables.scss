@@ -242,7 +242,7 @@ $kendo-button-flat-primary-bg: initial !default;
 $kendo-button-flat-primary-border: transparent !default;
 /// The hover text color of the flat primary button.
 /// @group button
-$kendo-button-flat-primary-hover-text: $kendo-button-flat-primary-text !default;
+$kendo-button-flat-primary-hover-text: get-theme-color-var( primary-150 ) !default;
 /// The hover background color of the flat primary button.
 /// @group button
 $kendo-button-flat-primary-hover-bg: get-theme-color-var( primary-10 ) !default;
@@ -272,7 +272,7 @@ $kendo-button-flat-primary-focus-hover-bg: $kendo-button-flat-primary-hover-bg !
 $kendo-button-flat-primary-focus-hover-border: $kendo-button-flat-primary-focus-border !default;
 /// The active text color of the flat primary button.
 /// @group button
-$kendo-button-flat-primary-active-text: $kendo-button-flat-primary-text !default;
+$kendo-button-flat-primary-active-text: get-theme-color-var( primary-150 ) !default;
 /// The active background color of the flat primary button.
 /// @group button
 $kendo-button-flat-primary-active-bg: get-theme-color-var( primary-20 ) !default;

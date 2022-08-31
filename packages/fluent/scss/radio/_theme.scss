@@ -1,5 +1,5 @@
 @use "_variables.scss" as *;
-@use "../core/mixins/" as *; 
+@use "../core/mixins/" as *;
 
 @mixin kendo-radio--theme() {
 
@@ -22,7 +22,8 @@
 
         &::after {
             @include fill(
-                $border: var( --kendo-radio-hover-border, #{ $kendo-radio-hover-border } )
+                $bg: var( --kendo-radio-hover-color, #{ $kendo-radio-hover-color } ),
+                $border: var( --kendo-radio-hover-color, #{ $kendo-radio-hover-color } )
             );
         }
     }
@@ -73,15 +74,17 @@
             var( --kendo-radio-checked-bg, #{ $kendo-radio-checked-bg } ),
             var( --kendo-radio-checked-border, #{ $kendo-radio-checked-border } )
         );
+
+        &::after {
+            background-color: var( --kendo-radio-checked-border, #{ $kendo-radio-checked-border } );
+        }
     }
 
 
     // Disabled
     .k-radio:disabled,
     .k-radio.k-disabled {
-        @include fill(
-            var( --kendo-radio-disabled-border, #{ $kendo-radio-disabled-border } )
-        );
+            border-color: var( --kendo-radio-disabled-border, #{ $kendo-radio-disabled-border } );
     }
 
 
@@ -96,9 +99,8 @@
 
         &::after {
             @include fill(
-            var( --kendo-radio-disabled-checked-text, #{ $kendo-radio-disabled-checked-text } ),
-            var( --kendo-radio-disabled-checked-bg, #{ $kendo-radio-disabled-checked-bg } ),
-            var( --kendo-radio-disabled-checked-border, #{ $kendo-radio-disabled-checked-border } )
+                $bg: var( --kendo-radio-disabled-checked-border, #{ $kendo-radio-disabled-checked-border } ),
+                $border: var( --kendo-radio-disabled-checked-border, #{ $kendo-radio-disabled-checked-border } )
             );
         }
     }
@@ -109,6 +111,15 @@
         .k-radio::after {
             background: var( --kendo-radio-checked-bg, #{ $kendo-radio-checked-bg } );
             opacity: var( --kendo-radio-ripple-opacity, #{ $kendo-radio-ripple-opacity } );
+        }
+    }
+
+    //Radio items
+    .k-radio-item,
+    .k-radio-list-item {
+        &.k-disabled,
+        &:disabled {
+            background-color: transparent;
         }
     }
 }

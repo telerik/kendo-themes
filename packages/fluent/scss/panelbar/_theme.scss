@@ -15,11 +15,23 @@
         > .k-panelbar-header {
 
             &.k-expanded.k-level-0 > .k-link  {
-                @include fill(
-                    var( --kendo-panelbar-header-expanded-text, #{$kendo-panelbar-header-expanded-text} ),
-                    var( --kendo-panelbar-header-expanded-bg, #{$kendo-panelbar-header-expanded-bg} ),
-                    var( --kendo-panelbar-header-expanded-border, #{$kendo-panelbar-header-expanded-border} )
-                );
+                --INTERNAL--kendo-panelbar-header-text: var( --kendo-panelbar-header-expanded-text, #{$kendo-panelbar-header-expanded-text} );
+                --INTERNAL--kendo-panelbar-header-bg: var( --kendo-panelbar-header-expanded-bg, #{$kendo-panelbar-header-expanded-bg} );
+                --INTERNAL--kendo-panelbar-header-border: var( --kendo-panelbar-header-expanded-bg, #{$kendo-panelbar-header-expanded-bg} );
+
+                // Hover
+                &:hover,
+                &.k-hover {
+                    --INTERNAL--kendo-panelbar-header-text: var( --kendo-panelbar-header-hovered-text, #{$kendo-panelbar-header-hovered-text} );
+                    --INTERNAL--kendo-panelbar-header-bg: var( --kendo-panelbar-header-hovered-bg, #{$kendo-panelbar-header-hovered-bg} );
+                    --INTERNAL--kendo-panelbar-header-border: var( --kendo-panelbar-header-hovered-border, #{$kendo-panelbar-header-hovered-border} );
+                }
+
+                &.k-selected {
+                    --INTERNAL--kendo-panelbar-header-text: var( --kendo-panelbar-header-selected-text, #{$kendo-panelbar-header-selected-text} );
+                    --INTERNAL--kendo-panelbar-header-bg: var( --kendo-panelbar-header-selected-bg, #{$kendo-panelbar-header-selected-bg} );
+                    --INTERNAL--kendo-panelbar-header-border: var( --kendo-panelbar-header-selected-border, #{$kendo-panelbar-header-selected-border} );
+                }
             }
 
             // Normal
@@ -80,7 +92,7 @@
                         background-color: var( --kendo-panelbar-selected-marker, #{$kendo-panelbar-selected-marker} );
                     }
 
-                     // Selected Hover
+                    // Selected Hover
                     &:hover,
                     &.k-hover {
                         --INTERNAL--kendo-panelbar-header-text: var( --kendo-panelbar-header-selected-hovered-text, #{$kendo-panelbar-header-selected-hovered-text} );
@@ -105,6 +117,7 @@
                     }
                 }
 
+                &:disabled,
                 &.k-disabled {
                     --INTERNAL--kendo-panelbar-header-text: var( --kendo-disabled-text, inherit );
 
@@ -112,6 +125,20 @@
                     .k-panelbar-item-icon {
                         color: inherit;
                     }
+                }
+            }
+
+            &:disabled,
+            &.k-disabled {
+                background-color: transparent;
+
+                > .k-link {
+                    --INTERNAL--kendo-panelbar-header-text: var( --kendo-disabled-text, inherit );
+                }
+
+                .k-icon,
+                .k-panelbar-item-icon {
+                    color: inherit;
                 }
             }
         }
@@ -197,6 +224,20 @@
                     .k-panelbar-item-icon {
                         color: inherit;
                     }
+                }
+            }
+
+            &:disabled,
+            &.k-disabled {
+                background-color: transparent;
+
+                > .k-link {
+                    --INTERNAL--kendo-panelbar-item-text: var( --kendo-disabled-text, inherit );
+                }
+
+                .k-icon,
+                .k-panelbar-item-icon {
+                    color: inherit;
                 }
             }
         }

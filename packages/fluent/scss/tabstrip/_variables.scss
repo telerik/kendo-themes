@@ -129,7 +129,7 @@ $kendo-tabstrip-content-border-width: 1px !default;
 $kendo-tabstrip-content-bg: var( --kendo-component-bg, transparent ) !default;
 /// The text color of tabstrip content
 /// @group tabstrip
-$kendo-tabstrip-content-text: get-theme-color-var( neutral-190 ) !default;
+$kendo-tabstrip-content-text: var( --kendo-component-text, inherit ) !default;
 /// The border color of tabstrip content
 /// @group tabstrip
 $kendo-tabstrip-content-border: transparent !default;

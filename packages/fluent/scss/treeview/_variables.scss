@@ -112,10 +112,10 @@ $kendo-treeview-item-focus-shadow: inset 0 0 0 1px get-theme-color-var( neutral-
 
 /// Background color of selected treeview items.
 /// @group treeview
-$kendo-treeview-item-selected-bg: get-theme-color-var( neutral-40 ) !default;
+$kendo-treeview-item-selected-bg: var( --kendo-selected-bg, inherit ) !default;
 /// Text color of selected treeview items.
 /// @group treeview
-$kendo-treeview-item-selected-text: get-theme-color-var( neutral-190 ) !default;
+$kendo-treeview-item-selected-text: var( --kendo-selected-text, inherit ) !default;
 /// Border color of selected treeview items.
 /// @group treeview
 $kendo-treeview-item-selected-border: inherit !default;

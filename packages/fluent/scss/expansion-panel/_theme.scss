@@ -11,8 +11,16 @@
             var( --kendo-expander-border, #{$kendo-expander-border} ),
         );
 
-        &.k-focus::after {
-            outline-color: var( --kendo-expander-focus-outline, #{$kendo-expander-focus-outline} );
+        &.k-expanded {
+            background-color: var( --kendo-expander-expanded-bg, #{$kendo-expander-expanded-bg} );
+        }
+
+        &.k-focus{
+            background-color: var( --kendo-expander-focus-bg, #{$kendo-expander-focus-bg} );
+
+            &::after {
+                outline-color: var( --kendo-expander-focus-outline, #{$kendo-expander-focus-outline} );
+            }
         }
 
         &:disabled,
