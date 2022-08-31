@@ -1,3 +1,5 @@
+@use "sass:map";
+@use "sass:list";
 @use "../palettes" as *;
 
 @function get-theme-palette($name) {
@@ -10,4 +12,56 @@
 
 @function get-theme-color-var($name, $fallback: "inherit", $prefix: "kendo") {
     @return var( --#{$prefix}-#{$name}, #{$fallback} );
+}
+
+@function generate-theme-variation( $theme-color, $source-palette-name, $mapping ) {
+    $temp: ();
+
+    @each $ui-state, $indices in $mapping {
+        $prefix: if( $ui-state == normal, '', '#{$ui-state}-' );
+
+        $bg-prop: list.nth($indices, 1);
+        $text-prop: list.nth($indices, 2);
+        $border-prop: list.nth($indices, 3);
+
+        // Take value from the palette only if it is a number
+        $bg: if( type_of($bg-prop) == number, get-theme-color-var( #{$source-palette-name}-#{$bg-prop} ), $bg-prop );
+        $text: if( type_of($text-prop) == number, get-theme-color-var( #{$source-palette-name}-#{$text-prop} ), $text-prop );
+        $border: if( type_of($border-prop) == number, get-theme-color-var( #{$source-palette-name}-#{$border-prop} ), $border-prop );
+
+        $temp: map.deep-merge( $temp, (
+            #{$prefix}bg: $bg,
+            #{$prefix}text: $text,
+            #{$prefix}border: $border
+        ));
+
+        // Add outline if provided in the map
+        @if(list.length($indices) > 3) {
+            $outline-prop: list.nth($indices, 4);
+            $outline: if( type_of($outline-prop) == number, get-theme-color-var( #{$source-palette-name}-#{$outline-prop} ), $outline-prop );
+
+            $temp: map.deep-merge( $temp, (
+                #{$prefix}outline: $outline
+            ));
+        }
+    }
+
+    $map: (
+        #{$theme-color}: $temp
+    );
+
+    @return $map;
+
+};
+
+
+@function generate-fill-mode-theme-variation( $fill-mode, $theme-color, $source-palette-name, $mapping ) {
+
+    $map: generate-theme-variation( $theme-color, $source-palette-name, $mapping );
+
+    $result: (
+       #{$fill-mode}: $map
+    );
+
+    @return $result;
 }
