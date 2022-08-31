@@ -30,16 +30,6 @@
         }
     }
 
-    .k-checkbox:indeterminate:hover,
-    .k-checkbox.k-hover.k-indeterminate {
-        &::after {
-            @include fill(
-                $bg: var( --kendo-checkbox-indeterminate-hover-bg, #{ $kendo-checkbox-indeterminate-hover-bg } ),
-                $border: var( --kendo-checkbox-indeterminate-hover-border, #{ $kendo-checkbox-indeterminate-hover-border } )
-            );
-        }
-    }
-
     // Focus state
     .k-checkbox:focus,
     .k-checkbox.k-focus {
@@ -60,18 +50,35 @@
         transition-property: border-width, border, border-color;
         transition-duration: 200ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.23, 1);
-    }
 
-     // Indeterminate and disabled
-     .k-checkbox:disabled:indeterminate,
-     .k-checkbox.k-disabled.k-indeterminate {
         &::after {
             @include fill(
-            var( --kendo-checkbox-indeterminate-disabled-bg, #{ $kendo-checkbox-indeterminate-disabled-bg } ),
-            var( --kendo-checkbox-indeterminate-disabled-border, #{ $kendo-checkbox-indeterminate-disabled-border } )
+                $bg: var( --kendo-checkbox-indeterminate-border, #{ $kendo-checkbox-indeterminate-border } )
             );
         }
-     }
+
+        &:hover,
+        &.k-hover {
+            &::after {
+                @include fill(
+                    $bg: var( --kendo-checkbox-indeterminate-hover-border, #{ $kendo-checkbox-indeterminate-hover-border } ),
+                    $border: var( --kendo-checkbox-indeterminate-hover-border, #{ $kendo-checkbox-indeterminate-hover-border } )
+                );
+            }
+        }
+
+        // Indeterminate and disabled
+        &:disabled,
+        &.k-disabled {
+            &::after {
+                @include fill(
+                    var( --kendo-checkbox-indeterminate-disabled-border, #{ $kendo-checkbox-indeterminate-disabled-border } ),
+                    var( --kendo-checkbox-indeterminate-disabled-border, #{ $kendo-checkbox-indeterminate-disabled-border } )
+                );
+            }
+        }
+    }
+
 
     // Checked
     .k-checkbox:checked,
@@ -81,27 +88,25 @@
             var( --kendo-checkbox-checked-bg, #{ $kendo-checkbox-checked-bg } ),
             var( --kendo-checkbox-checked-border, #{ $kendo-checkbox-checked-border } )
         );
-    }
 
-    // Checked and disabled
-    .k-checkbox:checked:disabled,
-    .k-checkbox.k-checked.k-disabled {
-        @include fill(
-            var( --kendo-checkbox-disabled-checked-text, #{ $kendo-checkbox-disabled-checked-text } ),
-            var( --kendo-checkbox-disabled-checked-bg, #{ $kendo-checkbox-disabled-checked-bg } ),
-            var( --kendo-checkbox-disabled-checked-border, #{ $kendo-checkbox-disabled-checked-border } )
-        );
-    }
-    
-    // Checked and hovered
-    .k-checkbox:checked:hover,
-    .k-checkbox.k-checked.k-hover {
-        @include fill(
-            $bg: var( --kendo-checkbox-checked-hover-bg, #{ $kendo-checkbox-checked-hover-bg } ),
-            $border: var( --kendo-checkbox-checked-hover-border, #{ $kendo-checkbox-checked-hover-border } )
-        );
-    }
+        // Checked and hovered
+        &:hover,
+        &.k-hover {
+            @include fill(
+                $bg: var( --kendo-checkbox-checked-hover-bg, #{ $kendo-checkbox-checked-hover-bg } ),
+                $border: var( --kendo-checkbox-checked-hover-border, #{ $kendo-checkbox-checked-hover-border } )
+            );
+        }
 
+        &:disabled,
+        &.k-disabled {
+            @include fill(
+                var( --kendo-checkbox-disabled-checked-text, #{ $kendo-checkbox-disabled-checked-text } ),
+                var( --kendo-checkbox-disabled-checked-bg, #{ $kendo-checkbox-disabled-checked-bg } ),
+                var( --kendo-checkbox-disabled-checked-border, #{ $kendo-checkbox-disabled-checked-border } )
+            );
+        }
+    }
 
     // Disabled
     .k-checkbox:disabled,
@@ -113,7 +118,7 @@
         );
     }
 
-    
+
     // Invalid
     .k-checkbox.k-invalid {
         @include fill( $border: var( --kendo-checkbox-invalid-border, #{ $kendo-checkbox-invalid-border} ) );

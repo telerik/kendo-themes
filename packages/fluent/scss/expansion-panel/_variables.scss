@@ -22,13 +22,17 @@ $kendo-expander-line-height: var( --kendo-line-height, normal ) !default;
 $kendo-expander-text: var( --kendo-component-text, initial ) !default;
 /// Background color of the expander.
 /// @group expander
-$kendo-expander-bg: var( --kendo-component-bg, initial ) !default;
+$kendo-expander-bg: get-theme-color-var( neutral-10 ) !default;
 /// Border color of the expander.
 /// @group expander
 $kendo-expander-border: var( --kendo-component-border, initial ) !default;
 /// Box shadow of the expander.
 /// @group expander
 $kendo-expander-shadow: inset 0 0 0 2px get-theme-color-var( neutral-30 );
+
+/// Background color of the expanded expander.
+/// @group expander
+$kendo-expander-expanded-bg: var( --kendo-component-bg, initial ) !default;
 
 /// Background color of the disabled expander.
 /// @group expander
@@ -49,22 +53,25 @@ $kendo-expander-focus-outline-style: solid !default;
 /// @group expander
 $kendo-expander-focus-outline: get-theme-color-var( neutral-130 ) !default;
 
+/// Background color of the focused expander.
+/// @group expander
+$kendo-expander-focus-bg: var( --kendo-component-bg, initial ) !default;
 /// Box shadow color of the focused expander.
 /// @group expander
 $kendo-expander-focus-shadow: inset 0px 0px 0px 2px get-theme-color-var( neutral-130 ) !default;
 
 /// Horizontal padding of the expander header.
 /// @group expander
-$kendo-expander-header-padding-x: calc( map-get( $kendo-spacing, 4 ) - map-get( $kendo-spacing, thin ) ) !default;
+$kendo-expander-header-padding-x: map-get( $kendo-spacing, 4 ) !default;
 /// Vertical padding of the expander header.
 /// @group expander
-$kendo-expander-header-padding-y: calc( map-get( $kendo-spacing, 4 ) - map-get( $kendo-spacing, thin ) ) !default;
+$kendo-expander-header-padding-y: map-get( $kendo-spacing, 3 ) !default;
 /// Text color of the expander header.
 /// @group expander
 $kendo-expander-header-text: get-theme-color-var( primary-130 ) !default;
 /// Background color of the expander header.
 /// @group expander
-$kendo-expander-header-bg: var( --kendo-component-bg, initial ) !default;
+$kendo-expander-header-bg: inherit !default;
 /// Background color of the hovered expander header.
 /// @group expander
 $kendo-expander-header-hover-bg: get-theme-color-var( neutral-20 ) !default;
@@ -86,7 +93,7 @@ $kendo-expander-indicator-text: var( --kendo-expander-text, #{$kendo-expander-te
 
 /// Horizontal padding of the expander content.
 /// @group expander
-$kendo-expander-content-padding-x: calc($kendo-padding-x * 2) !default;
+$kendo-expander-content-padding-x: map-get( $kendo-spacing, 4 ) !default;
 /// Vertical padding of the expander content.
 /// @group expander
-$kendo-expander-content-padding-y: calc($kendo-padding-y * 4) !default;
+$kendo-expander-content-padding-y: map-get( $kendo-spacing, 4 ) !default;

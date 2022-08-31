@@ -3,7 +3,7 @@
 
 /// Background color of the appbar.
 /// @group appbar
-$kendo-appbar-bg: var( --kendo-component-bg, initial ) !default;
+$kendo-appbar-bg: get-theme-color-var( neutral-10 ) !default;
 /// Text color of the appbar.
 /// @group appbar
 $kendo-appbar-text: var( --kendo-component-text, initial ) !default;

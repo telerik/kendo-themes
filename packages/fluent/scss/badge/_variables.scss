@@ -15,6 +15,10 @@ $kendo-badge-border: var( --kendo-component-border, initial ) !default;
 /// @group badge
 $kendo-badge-border-width: map-get( $kendo-spacing, hair ) !default;
 
+/// Font weight of the badge.
+/// @group badge
+$kendo-badge-font-weight: var( --kendo-font-weight, normal ) !default;
+
 /// Horizontal padding of the badge.
 /// @group badge
 $kendo-badge-padding-x-sm: map-get( $kendo-spacing, thin ) !default;

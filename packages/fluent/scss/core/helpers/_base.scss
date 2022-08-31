@@ -44,3 +44,19 @@
     margin: 0;
     flex: 0 0 auto;
 }
+
+.k-sprite {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    font-size: 0;
+    line-height: 0;
+    text-align: center;
+    -ms-high-contrast-adjust: none;
+}
+
+.k-image {
+    display: inline-block;
+}
