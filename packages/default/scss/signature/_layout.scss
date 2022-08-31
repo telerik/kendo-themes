@@ -40,7 +40,8 @@
     .k-signature-line {
         position: absolute;
         bottom: $kendo-signature-line-bottom-offset;
-        z-index: 0;
+        z-index: 2;
+        pointer-events: none;
         border-bottom-width: $kendo-signature-line-width;
         border-bottom-style: $kendo-signature-line-style;
     }
