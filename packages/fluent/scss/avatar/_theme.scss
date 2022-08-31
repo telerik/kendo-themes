@@ -1,0 +1,33 @@
+@use "_variables.scss" as *;
+
+@mixin kendo-avatar--theme() {
+
+    // Solid Avatars
+    @each $theme-color, $color-props in $kendo-avatar-theme-colors {
+
+        $_text-color: map-get( $color-props, text );
+        $_bg: map-get( $color-props, bg );
+        $_border-color: map-get( $color-props, border );
+
+        .k-avatar-solid-#{$theme-color} {
+            color: var( --kendo-avatar-#{$theme-color}-text, #{$_text-color} );
+            background-color: var( --kendo-avatar-#{$theme-color}-bg, #{$_bg} );
+            border-color: var( --kendo-avatar-#{$theme-color}-border, #{$_border-color} );
+        }
+
+    }
+
+    // Outline avatars
+    .k-avatar-outline {
+        border-color: currentColor;
+    }
+
+    @each $theme-color, $color-props in $kendo-avatar-theme-colors {
+
+        $_bg: map-get( $color-props, bg );
+
+        .k-avatar-outline-#{$theme-color} {
+            color: var( --kendo-avatar-#{$theme-color}-color, #{$_bg} );
+        }
+    }
+}

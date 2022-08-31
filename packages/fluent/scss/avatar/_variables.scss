@@ -1,0 +1,28 @@
+@use "../core/color-system" as *;
+@use "../core/variables" as *;
+
+/// Border width of the avatar.
+/// @group avatar
+$kendo-avatar-border-width: 1px !default;
+
+/// Font family of the avatar.
+/// @group avatar
+$kendo-avatar-font-family: var( --kendo-font-family, inherit ) !default;
+/// Font size of the avatar.
+/// @group avatar
+$kendo-avatar-font-size: var( --kendo-font-size, inherit ) !default;
+/// Line height of the avatar.
+/// @group avatar
+$kendo-avatar-line-height: var( --kendo-line-height, inherit ) !default;
+
+/// The sizes of the avatar.
+/// @group avatar
+$kendo-avatar-sizes: (
+    sm: map-get( $kendo-spacing, 4 ),
+    md: map-get( $kendo-spacing, 8 ),
+    lg: map-get( $kendo-spacing, 16 )
+) !default;
+
+/// Theme colors map of the avatar.
+/// @group avatar
+$kendo-avatar-theme-colors: $kendo-theme-colors-contrast !default;
