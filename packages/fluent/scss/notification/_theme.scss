@@ -29,7 +29,7 @@
         }
     }
 
-    @each $theme-color, $color-props in $kendo-theme-colors {
+    @each $theme-color, $color-props in $kendo-notification-theme-colors {
         $_text: inherit;
         $_bg: map-get( $color-props, bg );
         $_border: map-get( $color-props, border );
@@ -44,6 +44,11 @@
                 --kendo-notification-icon-text: var( --kendo-notification-#{$theme-color}-icon-text, #{$_icon} );
             }
         }
+    }
+
+    // Fix for dark notification text color
+    .k-notification-dark {
+        --kendo-notification-text: white;
     }
 
 }
