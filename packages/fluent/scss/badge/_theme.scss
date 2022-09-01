@@ -14,26 +14,18 @@
         border-color: var( --INTERNAL--kendo-badge-border, initial );
     }
 
-    // Solid badges
-    @each $theme-color, $color-props in $kendo-theme-colors-contrast {
-        $_text: map-get( $color-props, text );
-        $_bg: map-get( $color-props, bg );
-        $_border: map-get( $color-props, border );
+    @each $fill-mode, $theme-colors in $kendo-badge-theme-colors {
+        @each $theme-color, $color-props in $theme-colors {
 
-        .k-badge-solid-#{$theme-color} {
-            --kendo-badge-text: var( --kendo-badge-#{$theme-color}-text, #{$_text} );
-            --kendo-badge-bg: var( --kendo-badge-#{$theme-color}-bg, #{$_bg} );
-            --kendo-badge-border: var( --kendo-badge-#{$theme-color}-border, #{$_border} );
-        }
-    }
+            $_text: map-get( $color-props, text );
+            $_bg: map-get( $color-props, bg );
+            $_border: map-get( $color-props, border );
 
-    @each $theme-color, $color-props in $kendo-theme-colors-contrast {
-        $_text: map-get( $color-props, bg );
-        $_border: map-get( $color-props, border );
-
-        .k-badge-outline-#{$theme-color} {
-            --kendo-badge-text: var( --kendo-badge-#{$theme-color}-text, #{$_text} );
-            --kendo-badge-border: var( --kendo-badge-#{$theme-color}-border, #{$_border} );
+            .k-badge-#{$fill-mode}-#{$theme-color} {
+                --kendo-badge-text: var( --kendo-badge-#{$fill-mode}-#{$theme-color}-text, #{$_text} );
+                --kendo-badge-bg: var( --kendo-badge-#{$fill-mode}-#{$theme-color}-bg, #{$_bg} );
+                --kendo-badge-border: var( --kendo-badge-#{$fill-mode}-#{$theme-color}-border, #{$_border} );
+            }
         }
     }
 }
