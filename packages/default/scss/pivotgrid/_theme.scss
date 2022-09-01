@@ -61,6 +61,8 @@
     // Focus state
     .k-pivotgrid-cell:focus,
     .k-pivotgrid-cell.k-focus,
+    .k-pivotgrid-empty-cell:focus,
+    .k-pivotgrid-empty-cell.k-focus,
     .k-master-row > .k-pivotgrid-cell:focus,
     .k-grouping-row > .k-pivotgrid-cell:focus,
     .k-detail-row > .k-pivotgrid-cell:focus,
