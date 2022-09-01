@@ -91,8 +91,9 @@
         tbody > tr:not(.k-detail-row):hover,
         tbody > tr:not(.k-detail-row).k-hover {
             @include fill(
-                $color: var( --kendo-grid-hover-text, #{$kendo-grid-hover-text} ),
-                $bg: var( --kendo-grid-hover-bg, #{$kendo-grid-hover-bg} )
+                var( --kendo-grid-hover-text, #{$kendo-grid-hover-text} ),
+                var( --kendo-grid-hover-bg, #{$kendo-grid-hover-bg} ),
+                var( --kendo-grid-hover-border, #{$kendo-grid-hover-border} )
             );
         }
 
@@ -100,9 +101,10 @@
         td.k-selected,
         tr.k-selected > td {
             @include fill(
-                $color: var( --kendo-grid-selected-text, #{$kendo-grid-selected-text} ),
-                $bg: var( --kendo-grid-selected-bg, #{$kendo-grid-selected-bg} )
+                var( --kendo-grid-selected-text, #{$kendo-grid-selected-text} ),
+                var( --kendo-grid-selected-bg, #{$kendo-grid-selected-bg} ),
             );
+            border-block-color: var( --kendo-grid-selected-border, #{$kendo-grid-selected-border} );
         }
 
         // Selected hover state
