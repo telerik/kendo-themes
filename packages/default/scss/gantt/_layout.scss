@@ -37,7 +37,7 @@
         }
 
         &.k-gantt-planned .k-grid-content tr {
-            height: calc( #{$line-height-em * 1.7} + #{$grid-cell-padding-y * 2} + #{$grid-cell-horizontal-border-width} );
+            height: calc( #{$line-height-em} * 1.7 + #{$grid-cell-padding-y * 2} + #{$grid-cell-horizontal-border-width} );
         }
 
         // Layout
@@ -260,7 +260,7 @@
             padding: 0 !important; // sass-lint:disable-line no-important
         }
         .k-grid-header tr {
-            height: calc( #{$line-height-em * 2} + #{$grid-header-padding-y * 4} + 2px );
+            height: calc( #{$line-height-em} * 2 + #{$grid-header-padding-y * 4} + 2px );
             vertical-align: bottom;
         }
         .k-grid-content {
