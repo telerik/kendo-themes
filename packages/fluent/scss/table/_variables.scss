@@ -133,7 +133,7 @@ $kendo-table-hover-bg: var( --kendo-hover-bg, inherit ) !default;
 $kendo-table-hover-text: var( --kendo-hover-text, inherit ) !default;
 /// Border color of hovered rows in table.
 /// @group table
-$kendo-table-hover-border: var( --kendo-hover-border, inherit ) !default;
+$kendo-table-hover-border: $kendo-table-border !default;
 
 /// Background color of focused rows in table.
 /// @group table
@@ -156,7 +156,7 @@ $kendo-table-selected-bg: var( --kendo-selected-bg, inherit ) !default;
 $kendo-table-selected-text: var( --kendo-selected-text, inherit ) !default;
 /// Border color of selected rows in table.
 /// @group table
-$kendo-table-selected-border: $kendo-table-border !default;
+$kendo-table-selected-border: get-theme-color-var( neutral-60 ) !default;
 
 /// Hover background color of selected rows in table.
 /// @group table
@@ -166,4 +166,4 @@ $kendo-table-selected-hover-bg: var( --kendo-selected-hover-bg, inherit ) !defau
 $kendo-table-selected-hover-text: var( --kendo-selected-hover-text, inherit ) !default;
 /// Hover border color of selected rows in table.
 /// @group table
-$kendo-table-selected-hover-border: var( --kendo-selected-hover-border, inherit ) !default;
+$kendo-table-selected-hover-border: $kendo-table-selected-border !default;
