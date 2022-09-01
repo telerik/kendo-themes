@@ -1,0 +1,242 @@
+@use "../core/" as *;
+
+/// The first base series color and its light and dark shades.
+/// @group charts
+$kendo-series-a: get-theme-color( series-a, 100 ) !default;
+$kendo-series-a-dark: get-theme-color( series-a, 130 ) !default;
+$kendo-series-a-darker: get-theme-color( series-a, 160 ) !default;
+$kendo-series-a-light: get-theme-color( series-a, 70 ) !default;
+$kendo-series-a-lighter: get-theme-color( series-a, 40 ) !default;
+
+/// The second base series color and its light and dark shades.
+/// @group charts
+$kendo-series-b: get-theme-color( series-b, 100 ) !default;
+$kendo-series-b-dark: get-theme-color( series-b, 130 ) !default;
+$kendo-series-b-darker: get-theme-color( series-b, 160 ) !default;
+$kendo-series-b-light: get-theme-color( series-b, 70 ) !default;
+$kendo-series-b-lighter: get-theme-color( series-b, 40 ) !default;
+
+/// The third base series color and its light and dark shades.
+/// @group charts
+$kendo-series-c: get-theme-color( series-c, 100 ) !default;
+$kendo-series-c-dark: get-theme-color( series-c, 130 ) !default;
+$kendo-series-c-darker: get-theme-color( series-c, 160 ) !default;
+$kendo-series-c-light: get-theme-color( series-c, 70 ) !default;
+$kendo-series-c-lighter: get-theme-color( series-c, 40 ) !default;
+
+/// The fourth base series color and its light and dark shades.
+/// @group charts
+$kendo-series-d: get-theme-color( series-d, 100 ) !default;
+$kendo-series-d-dark: get-theme-color( series-d, 130 ) !default;
+$kendo-series-d-darker: get-theme-color( series-d, 160 ) !default;
+$kendo-series-d-light: get-theme-color( series-d, 70 ) !default;
+$kendo-series-d-lighter: get-theme-color( series-d, 40 ) !default;
+
+/// The fifth base series color and its light and dark shades.
+/// @group charts
+$kendo-series-e: get-theme-color( series-e, 100 ) !default;
+$kendo-series-e-dark: get-theme-color( series-e, 130 ) !default;
+$kendo-series-e-darker: get-theme-color( series-e, 160 ) !default;
+$kendo-series-e-light: get-theme-color( series-e, 70 ) !default;
+$kendo-series-e-lighter: get-theme-color( series-e, 40 ) !default;
+
+/// The sixth base series color and its light and dark shades.
+/// @group charts
+$kendo-series-f: get-theme-color( series-f, 100 ) !default;
+$kendo-series-f-dark: get-theme-color( series-f, 130 ) !default;
+$kendo-series-f-darker: get-theme-color( series-f, 160 ) !default;
+$kendo-series-f-light: get-theme-color( series-f, 70 ) !default;
+$kendo-series-f-lighter: get-theme-color( series-f, 40 ) !default;
+
+/// The series colors in order:
+/// base, light, dark, lighter, darker
+/// @group charts
+$kendo-series-1: $kendo-series-a !default;
+$kendo-series-2: $kendo-series-b !default;
+$kendo-series-3: $kendo-series-c !default;
+$kendo-series-4: $kendo-series-d !default;
+$kendo-series-5: $kendo-series-e !default;
+$kendo-series-6: $kendo-series-f !default;
+$kendo-series-7: $kendo-series-a-light !default;
+$kendo-series-8: $kendo-series-b-light !default;
+$kendo-series-9: $kendo-series-c-light !default;
+$kendo-series-10: $kendo-series-d-light !default;
+$kendo-series-11: $kendo-series-e-light !default;
+$kendo-series-12: $kendo-series-f-light !default;
+$kendo-series-13: $kendo-series-a-dark !default;
+$kendo-series-14: $kendo-series-b-dark !default;
+$kendo-series-15: $kendo-series-c-dark !default;
+$kendo-series-16: $kendo-series-d-dark !default;
+$kendo-series-17: $kendo-series-e-dark !default;
+$kendo-series-18: $kendo-series-f-dark !default;
+$kendo-series-19: $kendo-series-a-lighter !default;
+$kendo-series-20: $kendo-series-b-lighter !default;
+$kendo-series-21: $kendo-series-c-lighter !default;
+$kendo-series-22: $kendo-series-d-lighter !default;
+$kendo-series-23: $kendo-series-e-lighter !default;
+$kendo-series-24: $kendo-series-f-lighter !default;
+$kendo-series-25: $kendo-series-a-darker !default;
+$kendo-series-26: $kendo-series-b-darker !default;
+$kendo-series-27: $kendo-series-c-darker !default;
+$kendo-series-28: $kendo-series-d-darker !default;
+$kendo-series-29: $kendo-series-e-darker !default;
+$kendo-series-30: $kendo-series-f-darker !default;
+
+/// The border width of the chart component.
+/// @group charts
+$kendo-chart-border-width: 0px default;
+/// The font-family of the chart component.
+/// @group charts
+$kendo-chart-font-family: var( --kendo-font-family, inherit ) !default;
+/// The font-size of the chart component.
+/// @group charts
+$kendo-chart-font-size: var( --kendo-font-size, inherit ) !default;
+$kendo-chart-font-size-sm: var( --kendo-font-size-sm, inherit ) !default;
+$kendo-chart-font-size-md: var( --kendo-font-size-md, inherit ) !default;
+$kendo-chart-font-size-lg: var( --kendo-font-size-lg, inherit ) !default;
+/// The line-height of the chart component.
+/// @group charts
+$kendo-chart-line-height: var( --kendo-line-height, normal ) !default;
+
+/// The font-size of the tooltip of the chart component.
+/// @group charts
+$kendo-chart-tooltip-font-size: var( --kendo-font-size-sm, inherit ) !default;
+/// The line-height of the tooltip of the chart component.
+/// @group charts
+$kendo-chart-tooltip-line-height: var( --kendo-line-height-sm, normal ) !default;
+
+/// The font-size of the label of the chart component.
+/// @group chart
+$kendo-chart-label-font-size: var( --kendo-font-size-sm, inherit ) !default;
+
+/// The font-size of the title of the chart component.
+/// @group charts
+$kendo-chart-title-font-size: var( --kendo-font-size-lg, inherit ) !default;
+
+/// The font-size of the pane title of the chart component.
+/// @group charts
+$kendo-chart-pane-title-font-size: var( --kendo-font-size-lg, inherit ) !default;
+/// The font-weight of the pane title of the chart component.
+/// @group charts
+$kendo-chart-pane-title-font-weight: var( --kendo-font-weight, inherit ) !default;
+
+/// The inactive background color of the chart component.
+/// @group chart
+$kendo-chart-inactive-bg: var( --kendo-disabled-bg, initial ) !default;
+
+/// The color of the chart component major grid lines.
+/// @group charts
+$kendo-chart-major-lines: get-theme-color-var( neutral-30 ) !default;
+/// The color of the chart component minor grid lines.
+/// @group charts
+$kendo-chart-minor-lines: get-theme-color-var( neutral-30 ) !default;
+
+/// The opacity of the chart area.
+/// @group charts
+$kendo-chart-area-opacity: .6 !default;
+/// The inactive opacity of the chart area.
+/// @group charts
+$kendo-chart-area-inactive-opacity: .1 !default;
+
+/// The inactive opacity of the chart line.
+/// @group charts
+$kendo-chart-line-inactive-opacity: .3 !default;
+
+/// The background color of the chart component.
+/// @group charts
+$kendo-chart-bg: var( --kendo-component-bg, initial ) !default;
+/// The text color of the chart component.
+/// @group charts
+$kendo-chart-text: var( --kendo-component-text, initial ) !default;
+/// The border color of the chart component.
+/// @group charts
+$kendo-chart-border: var( --kendo-component-border, initial ) !default;
+
+/// The text color of the chart tooltip.
+/// @group charts
+$kendo-chart-tooltip-color: $white !default;
+/// The inverse text color of the chart tooltip.
+/// @group charts
+$kendo-chart-tooltip-color-inverse: $black !default;
+
+/// The background color of the chart crosshairs.
+/// @group charts
+$kendo-chart-crosshair-background: $black !default;
+/// The text color of the chart shared crosshair tooltip.
+/// @group charts
+$kendo-chart-crosshair-shared-tooltip-color: get-theme-color-var( neutral-160 ) !default;
+/// The background color of the chart shared crosshair tooltip.
+/// @group charts
+$kendo-chart-crosshair-shared-tooltip-background: var( --kendo-component-bg, initial ) !default;
+/// The border color of the chart shared crosshair tooltip.
+/// @group charts
+$kendo-chart-crosshair-shared-tooltip-border: transparent !default;
+
+/// The background color of the chart notes.
+/// @group charts
+$kendo-chart-notes-background: get-theme-color-var( neutral-130 ) !default;
+/// The border color of the chart notes.
+/// @group charts
+$kendo-chart-notes-border: $kendo-chart-notes-background !default;
+/// The background color of the chart note lines.
+/// @group charts
+$kendo-chart-notes-lines: $kendo-chart-notes-background !default;
+
+/// The background color of the chart handle.
+/// @group charts
+$kendo-chart-handle-bg: get-theme-color-var( neutral-10 ) !default;
+/// The text color of the chart handle.
+/// @group charts
+$kendo-chart-handle-text: $kendo-chart-text !default;
+/// The border color of the chart handle.
+/// @group charts
+$kendo-chart-handle-border: $kendo-chart-handle-bg !default;
+/// The hover background color of the chart handle.
+/// @group charts
+$kendo-chart-handle-hover-bg: var( --kendo-hover-bg, initial ) !default;
+/// The hover text color of the chart handle.
+/// @group charts
+$kendo-chart-handle-hover-text: var( --kendo-hover-text, initial ) !default;
+/// The hover border color of the chart handle.
+/// @group charts
+$kendo-chart-handle-hover-border: var( --kendo-hover-border, initial ) !default;
+
+/// The color of the chart error bars.
+/// @group charts
+$kendo-error-bars-background: get-theme-color-var( neutral-110 ) !default;
+
+/// The size of the selection handle of the chart component.
+/// @group charts
+$kendo-selection-handle-size: 24px !default;
+/// The color of the selection handle of the chart component.
+/// @group charts
+$kendo-selection-border-color: var( --kendo-component-border, initial ) !default;
+
+/// The font-family of the treemap.
+/// @group charts
+$kendo-treemap-font-family: var( --kendo-font-family, inherit ) !default;
+/// The font-size of the treemap.
+/// @group charts
+$kendo-treemap-font-size: var( -kendo-font-size, inherit ) !default;
+/// The line-height of the treemap.
+/// @group charts
+$kendo-treemap-line-height: var( --kendo-line-height, normal ) !default;
+/// The background color of the treemap.
+/// @group charts
+$kendo-treemap-bg: var( --kendo-component-bg, initial ) !default;
+/// The text color of the treemap.
+/// @group charts
+$kendo-treemap-text: var( --kendo-component-text, initial ) !default;
+/// The border color of the treemap.
+/// @group charts
+$kendo-treemap-border: var( --kendo-component-border, initial ) !default;
+
+/// The background color of the treemap title.
+/// @group charts
+$kendo-treemap-title-bg: get-theme-color-var( neutral-10 ) !default;
+/// The text color of the treemap title.
+/// @group charts
+$kendo-treemap-title-text: $black !default;
+/// The border color of the treemap title.
+/// @group charts
+$kendo-treemap-title-border: var( --kendo-component-border, initial ) !default;
