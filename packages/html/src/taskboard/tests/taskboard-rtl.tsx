@@ -11,7 +11,7 @@ const root = ReactDOM.createRoot(
 const style = `
     #test-area {
         max-width: 1030px;
-        padding: 0;
+        padding: 5px;
     }
 
     #test-area > span {
