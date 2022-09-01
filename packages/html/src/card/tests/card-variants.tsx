@@ -18,8 +18,8 @@ root.render(
                     <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </CardBody>
                 <ActionButtons className="k-card-actions">
-                    <Button fillMode="flat" themeColor="primary">Action 1</Button>
-                    <Button fillMode="flat" themeColor="primary">Action 2</Button>
+                    <Button fillMode="flat" themeColor="base">Action 1</Button>
+                    <Button fillMode="flat" themeColor="base">Action 2</Button>
                 </ActionButtons>
             </Card>
 
@@ -28,8 +28,8 @@ root.render(
                     <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </CardBody>
                 <ActionButtons className="k-card-actions">
-                    <Button fillMode="flat" themeColor="primary">Action 1</Button>
-                    <Button fillMode="flat" themeColor="primary">Action 2</Button>
+                    <Button fillMode="flat" themeColor="base">Action 1</Button>
+                    <Button fillMode="flat" themeColor="base">Action 2</Button>
                 </ActionButtons>
             </Card>
 
@@ -38,8 +38,8 @@ root.render(
                     <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </CardBody>
                 <ActionButtons className="k-card-actions">
-                    <Button fillMode="flat" themeColor="primary">Action 1</Button>
-                    <Button fillMode="flat" themeColor="primary">Action 2</Button>
+                    <Button fillMode="flat" themeColor="base">Action 1</Button>
+                    <Button fillMode="flat" themeColor="base">Action 2</Button>
                 </ActionButtons>
             </Card>
 
@@ -48,8 +48,8 @@ root.render(
                     <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </CardBody>
                 <ActionButtons className="k-card-actions">
-                    <Button fillMode="flat" themeColor="primary">Action 1</Button>
-                    <Button fillMode="flat" themeColor="primary">Action 2</Button>
+                    <Button fillMode="flat" themeColor="base">Action 1</Button>
+                    <Button fillMode="flat" themeColor="base">Action 2</Button>
                 </ActionButtons>
             </Card>
 
@@ -58,8 +58,8 @@ root.render(
                     <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </CardBody>
                 <ActionButtons className="k-card-actions">
-                    <Button fillMode="flat" themeColor="primary">Action 1</Button>
-                    <Button fillMode="flat" themeColor="primary">Action 2</Button>
+                    <Button fillMode="flat" themeColor="base">Action 1</Button>
+                    <Button fillMode="flat" themeColor="base">Action 2</Button>
                 </ActionButtons>
             </Card>
 
@@ -68,8 +68,8 @@ root.render(
                     <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </CardBody>
                 <ActionButtons className="k-card-actions">
-                    <Button fillMode="flat" themeColor="primary">Action 1</Button>
-                    <Button fillMode="flat" themeColor="primary">Action 2</Button>
+                    <Button fillMode="flat" themeColor="base">Action 1</Button>
+                    <Button fillMode="flat" themeColor="base">Action 2</Button>
                 </ActionButtons>
             </Card>
 
