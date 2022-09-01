@@ -1,3 +1,4 @@
+@use "sass:map";
 @use "../core/" as *;
 
 /// The radius of the border around the tooltip
@@ -63,15 +64,35 @@ $kendo-tooltip-primary-text: $white !default;
 /// @group tooltip
 $kendo-tooltip-primary-border: initial !default;
 
-/// The theme colors map of the tooltip
-/// @group tooltip
-$kendo-tooltip-theme-colors: map-merge(
-    $kendo-theme-colors, (
-        primary: (
-            text: $kendo-tooltip-primary-text,
-            bg: $kendo-tooltip-primary-bg,
-            border: $kendo-tooltip-primary-border
-        )
-    )
-) !default;
+/// Theme variations for the tooltip.
+$kendo-tooltip-brand-colors: (error, warning, success, info );
+
+// Matrix with tooltip theme colors in the order: bg, color, border
+$_tc-tooltip-matrix: (
+    (normal: (20, 160, 20)),
+);
+
+$_tc-tooltip-primary-matrix: (
+    (normal: (100, $white, 100)),
+);
+
+/// Theme colors map for the tooltip variations.
+$kendo-tooltip-theme-colors: ();
+
+@each $ui-states in $_tc-tooltip-primary-matrix {
+    $kendo-tooltip-theme-colors: map.deep-merge(
+        $kendo-tooltip-theme-colors,
+        generate-theme-variation( primary, primary, $ui-states )
+    );
+}
+
+@each $ui-states in $_tc-tooltip-matrix {
+    @each $brand-color in $kendo-tooltip-brand-colors {
+        $kendo-tooltip-theme-colors: map.deep-merge(
+            $kendo-tooltip-theme-colors,
+            generate-theme-variation( $brand-color, $brand-color, $ui-states )
+        );
+    };
+}
+
 
