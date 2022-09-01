@@ -3,7 +3,7 @@ $form-spacer: $padding-x * 2 !default;
 
 $form-font-size: $font-size !default;
 $form-line-height: $line-height !default;
-$form-line-height-em: $form-line-height * 1em !default;
+$form-line-height-em: calc( #{$form-line-height} * 1em ) !default;
 $form-line-height-sm: $line-height-sm !default;
 $form-line-height-lg: $line-height-lg !default;
 
