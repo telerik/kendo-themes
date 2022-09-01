@@ -131,7 +131,7 @@
 @use "treelist";
 @use "filter";
 @use "filemanager";
-// @use "taskboard";
+@use "taskboard";
 
 
 // Editors
@@ -293,7 +293,7 @@
     @include treelist.styles();
     @include filter.styles();
     @include filemanager.styles();
-    // @include taskboard.styles();
+    @include taskboard.styles();
 
 
     // Editors
