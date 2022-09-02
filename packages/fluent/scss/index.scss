@@ -5,12 +5,10 @@
 // Typography and utils
 @use "typography";
 @use "utils";
-// @use "cursor";
 @use "draggable";
 
 
 // Generic content
-// @use "styling";
 @use "icon";
 @use "messagebox";
 
@@ -21,7 +19,7 @@
 @use "listgroup";
 @use "overlay";
 @use "popup";
-// @use "ripple";
+@use "ripple";
 @use "table";
 // @use "virtual-scroller";
 
@@ -183,7 +181,7 @@
     @include listgroup.styles();
     @include overlay.styles();
     @include popup.styles();
-    // @include ripple.styles();
+    @include ripple.styles();
     @include table.styles();
     // @include virtual-scroller.styles();
 
