@@ -12,14 +12,17 @@
 
 
     // Actionsheet header
-    .k-actionsheet-header {
+    .k-actionsheet-titlebar {
         @include fill(
-            $actionsheet-header-text,
-            $actionsheet-header-bg,
-            $actionsheet-header-border,
-            $actionsheet-header-gradient
+            $actionsheet-titlebar-text,
+            $actionsheet-titlebar-bg,
+            $actionsheet-titlebar-border,
+            $actionsheet-titlebar-gradient
         );
-        @include box-shadow( $actionsheet-header-shadow );
+        @include box-shadow( $actionsheet-titlebar-shadow );
+    }
+    .k-actionsheet-subtitle {
+        @include fill( $color: $actionsheet-subtitle-text );
     }
 
 
@@ -28,17 +31,7 @@
 
 
     // Actionsheet item
-    .k-actionsheet-item {}
-
-
-    // Actionsheet item description
-    .k-actionsheet-item-description {
-        @include fill( $color: $actionsheet-item-description-text );
-    }
-
-
-    // Actionsheet action
-    .k-actionsheet-action {
+    .k-actionsheet-item {
 
 
         // Hover state
@@ -67,7 +60,7 @@
         }
 
 
-        // Disabed state
+        // Disabled state
         &:disabled,
         &.k-disabled {
             @include fill(
@@ -78,6 +71,22 @@
             );
             @include box-shadow( $actionsheet-item-disabled-shadow );
         }
+    }
+
+
+    // Actionsheet item description
+    .k-actionsheet-item-description {
+        @include fill( $color: $actionsheet-item-description-text );
+    }
+
+
+    // Actionsheet action
+    .k-actionsheet-action {}
+
+
+    // Adaptive Actionsheet
+    .k-adaptive-actionsheet .k-actionsheet-titlebar {
+        @include fill( $border: $adaptive-actionsheet-titlebar-border );
     }
 
 }

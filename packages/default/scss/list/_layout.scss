@@ -1,5 +1,16 @@
 @include exports( "list/layout" ) {
 
+    // List container
+    .k-list-container {
+        display: flex;
+        flex-flow: column nowrap;
+
+        > .k-list {
+            flex: 1;
+            height: 100%;
+        }
+    }
+
     // List
     .k-list {
         margin: 0;
@@ -180,7 +191,7 @@
         position: relative;
         padding: $padding-x;
         box-sizing: border-box;
-        flex: 0 0 auto;
+        flex: none;
     }
 
 

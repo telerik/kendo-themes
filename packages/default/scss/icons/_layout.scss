@@ -13,6 +13,27 @@
         }
     }
 
+    // Icon wrap
+    .k-icon-wrap {
+        flex: none;
+        display: inline-flex;
+        flex-flow: row nowrap;
+        gap: 0;
+        align-items: center;
+        align-self: flex-start;
+        vertical-align: middle;
+        position: relative;
+
+        &::before {
+            content: "\200b";
+            width: 0;
+            overflow: hidden;
+            flex: none;
+            display: inline-block;
+            vertical-align: top;
+        }
+    }
+
     .k-icon {
         width: 1em;
         height: 1em;

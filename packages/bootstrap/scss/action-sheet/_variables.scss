@@ -3,7 +3,8 @@ $actionsheet-padding-x: null !default;
 $actionsheet-padding-y: null !default;
 $actionsheet-width: 360px !default;
 $actionsheet-max-width: 100% !default;
-$actionsheet-max-height: 50vh !default;
+$actionsheet-height: 60vh !default;
+$actionsheet-max-height: 60vh !default;
 
 $actionsheet-border-width: 0px !default;
 $actionsheet-border-radius: 0px !default;
@@ -19,18 +20,23 @@ $actionsheet-shadow: 0 8px 10px -5px rgba( black, .2 ), 0 16px 24px 2px rgba( bl
 
 
 // Actionsheet header
-$actionsheet-header-padding-x: k-map-get( $spacing, 4 ) !default;
-$actionsheet-header-padding-y: k-map-get( $spacing, 2 ) !default;
-$actionsheet-header-border-width: null !default;
-$actionsheet-header-font-size: null !default;
-$actionsheet-header-font-family: null !default;
-$actionsheet-header-line-height: null !default;
+$actionsheet-titlebar-padding-x: k-map-get( $spacing, 4 ) !default;
+$actionsheet-titlebar-padding-y: k-map-get( $spacing, 2 ) !default;
+$actionsheet-titlebar-border-width: null !default;
+$actionsheet-titlebar-font-size: null !default;
+$actionsheet-titlebar-font-family: null !default;
+$actionsheet-titlebar-line-height: null !default;
+$actionsheet-titlebar-gap: k-map-get( $spacing, 4 ) !default;
 
-$actionsheet-header-bg: null !default;
-$actionsheet-header-text: null !default;
-$actionsheet-header-border: null !default;
-$actionsheet-header-gradient: null !default;
-$actionsheet-header-shadow: null !default;
+$actionsheet-titlebar-bg: null !default;
+$actionsheet-titlebar-text: null !default;
+$actionsheet-titlebar-border: null !default;
+$actionsheet-titlebar-gradient: null !default;
+$actionsheet-titlebar-shadow: null !default;
+
+$actionsheet-subtitle-font-size: $font-size-sm !default;
+$actionsheet-subtitle-line-height: $line-height-sm !default;
+$actionsheet-subtitle-text: $subtle-text !default;
 
 
 // Actionsheet item
@@ -65,3 +71,16 @@ $actionsheet-item-disabled-text: null !default;
 $actionsheet-item-disabled-border: null !default;
 $actionsheet-item-disabled-gradient: null !default;
 $actionsheet-item-disabled-shadow: null !default;
+
+
+// Adaptive Actionsheet
+$adaptive-actionsheet-titlebar-border-width: 1px !default;
+$adaptive-actionsheet-titlebar-padding-y: k-map-get( $spacing, 4 ) !default;
+$adaptive-actionsheet-titlebar-padding-x: $adaptive-actionsheet-titlebar-padding-y !default;
+$adaptive-actionsheet-titlebar-border: $component-border !default;
+
+$adaptive-actionsheet-content-padding-y: k-map-get( $spacing, 2 ) !default;
+$adaptive-actionsheet-content-padding-x: k-map-get( $spacing, 4 ) !default;
+
+$adaptive-actionsheet-footer-padding-y: k-map-get( $spacing, 2 ) !default;
+$adaptive-actionsheet-footer-padding-x: k-map-get( $spacing, 4 ) !default;

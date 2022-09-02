@@ -3,6 +3,17 @@
 
 @mixin kendo-list--layout() {
 
+    // List container
+    .k-list-container {
+        display: flex;
+        flex-flow: column nowrap;
+
+        > .k-list {
+            flex: 1;
+            height: 100%;
+        }
+    }
+
     .k-list {
         margin: 0;
         padding: 0;
