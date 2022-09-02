@@ -32,6 +32,14 @@ jobs:
           npm ci
           npm run bootstrap
 
+      - name: Lint scripts
+        run: |
+          npm run eslint
+          npm run check-types
+
+      - name: Lint styles
+        run: npm run sasslint
+
       - name: Ensure standalone build
         run: npm run sass:standalone
 
