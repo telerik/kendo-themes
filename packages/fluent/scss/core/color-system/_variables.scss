@@ -101,33 +101,6 @@ $kendo-theme-colors: (
     )
 ) !default;
 
-$kendo-theme-colors-contrast: (
-    primary: (
-        text: $white,
-        bg: get-theme-color-var( primary-100 ),
-        border: get-theme-color-var( primary-100 )
-    ),
-    info: (
-        text: $white,
-        bg: get-theme-color-var( info-190 ),
-        border: get-theme-color-var( info-190 )
-    ),
-    success: (
-        text: $white,
-        bg: get-theme-color-var( success-190 ),
-        border: get-theme-color-var( success-190 )
-    ),
-    warning: (
-        text: get-theme-color-var( neutral-190 ),
-        bg: get-theme-color-var( warning-100 ),
-        border: get-theme-color-var( warning-100 )
-    ),
-    error: (
-        text: $white,
-        bg: get-theme-color-var( error-190 ),
-        border: get-theme-color-var( error-190 )
-    )
-) !default;
 
 // Text colors
 @each $theme-color, $color-props in $kendo-theme-colors {
