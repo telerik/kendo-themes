@@ -119,9 +119,7 @@ $kendo-fab-item-icon-height: $kendo-fab-item-icon-width !default;
 /// Theme colors map for the FAB.
 /// @group floating-action-button
 $kendo-fab-theme-colors: (
-    solid: (
-        primary: map-get( $kendo-button-theme-colors, "solid", "primary" )
-    )
+    solid: map-get( $kendo-button-theme-colors, "solid")
 ) !default;
 
 /// Sizes map for the FAB.
