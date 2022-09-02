@@ -35,7 +35,7 @@ export class TimeSelector extends React.Component<TimeSelectorProps> {
                 <div className="k-time-part">
                     <div className="k-time-header">
                         <span className="k-title">10:00:00 AM</span>
-                        <Button fillMode="flat" className="k-time-now">Now</Button>
+                        <Button fillMode="flat" size={size} className="k-time-now">Now</Button>
                     </div>
                     <div className="k-time-list-container">
                         <span className="k-time-highlight"></span>
@@ -44,36 +44,7 @@ export class TimeSelector extends React.Component<TimeSelectorProps> {
                             <div className="k-time-list">
                                 <div className="k-content k-scrollable k-time-container">
                                     <ul className="k-reset" style={{ transform: "translateY(97px)" }}>
-                                        <li className="k-item">
-                                            <span>0</span>
-                                        </li>
-                                        <li className="k-item">
-                                            <span>1</span>
-                                        </li>
-                                        <li className="k-item">
-                                            <span>2</span>
-                                        </li>
-                                        <li className="k-item">
-                                            <span>3</span>
-                                        </li>
-                                        <li className="k-item">
-                                            <span>4</span>
-                                        </li>
-                                        <li className="k-item">
-                                            <span>5</span>
-                                        </li>
-                                        <li className="k-item">
-                                            <span>6</span>
-                                        </li>
-                                        <li className="k-item">
-                                            <span>7</span>
-                                        </li>
-                                        <li className="k-item">
-                                            <span>8</span>
-                                        </li>
-                                        <li className="k-item">
-                                            <span>9</span>
-                                        </li>
+                                        {[ ...Array(24).keys() ].map((hour) => <li key={hour} className="k-item"><span>{hour}</span></li>)}
                                     </ul>
                                     <div className="k-scrollable-placeholder"></div>
                                 </div>
@@ -85,36 +56,7 @@ export class TimeSelector extends React.Component<TimeSelectorProps> {
                             <div className="k-time-list">
                                 <div className="k-content k-scrollable k-time-container">
                                     <ul className="k-reset" style={{ transform: "translateY(97px)" }}>
-                                        <li className="k-item">
-                                            <span>0</span>
-                                        </li>
-                                        <li className="k-item">
-                                            <span>1</span>
-                                        </li>
-                                        <li className="k-item">
-                                            <span>2</span>
-                                        </li>
-                                        <li className="k-item">
-                                            <span>3</span>
-                                        </li>
-                                        <li className="k-item">
-                                            <span>4</span>
-                                        </li>
-                                        <li className="k-item">
-                                            <span>5</span>
-                                        </li>
-                                        <li className="k-item">
-                                            <span>6</span>
-                                        </li>
-                                        <li className="k-item">
-                                            <span>7</span>
-                                        </li>
-                                        <li className="k-item">
-                                            <span>8</span>
-                                        </li>
-                                        <li className="k-item">
-                                            <span>9</span>
-                                        </li>
+                                        {[ ...Array(60).keys() ].map((minute) => <li key={minute} className="k-item"><span>{minute}</span></li>)}
                                     </ul>
                                     <div className="k-scrollable-placeholder"></div>
                                 </div>
@@ -126,36 +68,7 @@ export class TimeSelector extends React.Component<TimeSelectorProps> {
                             <div className="k-time-list">
                                 <div className="k-content k-scrollable k-time-container">
                                     <ul className="k-reset" style={{ transform: "translateY(97px)" }}>
-                                        <li className="k-item">
-                                            <span>0</span>
-                                        </li>
-                                        <li className="k-item">
-                                            <span>1</span>
-                                        </li>
-                                        <li className="k-item">
-                                            <span>2</span>
-                                        </li>
-                                        <li className="k-item">
-                                            <span>3</span>
-                                        </li>
-                                        <li className="k-item">
-                                            <span>4</span>
-                                        </li>
-                                        <li className="k-item">
-                                            <span>5</span>
-                                        </li>
-                                        <li className="k-item">
-                                            <span>6</span>
-                                        </li>
-                                        <li className="k-item">
-                                            <span>7</span>
-                                        </li>
-                                        <li className="k-item">
-                                            <span>8</span>
-                                        </li>
-                                        <li className="k-item">
-                                            <span>9</span>
-                                        </li>
+                                        {[ ...Array(60).keys() ].map((second) => <li key={second} className="k-item"><span>{second}</span></li>)}
                                     </ul>
                                     <div className="k-scrollable-placeholder"></div>
                                 </div>

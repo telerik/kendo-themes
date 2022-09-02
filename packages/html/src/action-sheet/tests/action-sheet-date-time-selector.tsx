@@ -1,0 +1,93 @@
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import { ActionSheet, ActionSheetFooter, ActionSheetHeader } from '../../action-sheet';
+import { Button } from '../../button';
+import { Calendar } from '../../calendar';
+import { TimeSelector } from '../../time-selector';
+
+const root = ReactDOM.createRoot(
+    document.getElementById('app') as HTMLElement
+);
+
+const styles = `
+    #test-area {
+        --kendo-actionsheet-height: 521px;
+        --kendo-actionsheet-max-height: 521px;
+    }
+    #test-area > section {
+        height: 600px;
+        outline: 1px dotted;
+        overflow: hidden;
+        position: relative;
+        transform: translateZ(0);
+    }
+`;
+
+root.render(
+    <>
+        <style>{styles}</style>
+        <div id="test-area" className="k-d-grid k-grid-cols-2">
+
+            <span>partial</span>
+            <span>full screen</span>
+
+            <section>
+                <ActionSheet adaptive={true}>
+                    <ActionSheetHeader
+                        actions={[ 'x' ]}
+                        title="Select Date & Time"
+                        subTitle="DD / MM / YY">
+                    </ActionSheetHeader>
+
+                    <div className="k-datetime-wrap k-date-tab">
+                        <div className="k-datetime-buttongroup">
+                            <div className="k-button-group k-button-group-stretched">
+                                <Button className="k-group-start" size="large" selected>Date</Button>
+                                <Button className="k-group-end" size="large">Time</Button>
+                            </div>
+                        </div>
+                        <div className="k-datetime-selector">
+                            <div className="k-datetime-calendar-wrap">
+
+                                <Calendar calendarView="month" size="large" showOtherMonth></Calendar>
+
+                            </div>
+                            <div className="k-datetime-time-wrap">
+                            </div>
+                        </div>
+                    </div>
+
+                    <ActionSheetFooter actions={[ 'Cancel', '!Set' ]} />
+                </ActionSheet>
+            </section>
+
+            <section>
+                <ActionSheet adaptive={true} fullscreen={true}>
+                    <ActionSheetHeader
+                        actions={[ 'x' ]}
+                        title="Select Date & Time"
+                        subTitle="DD / MM / YY">
+                    </ActionSheetHeader>
+
+                    <div className="k-datetime-wrap k-time-tab">
+                        <div className="k-datetime-buttongroup">
+                            <div className="k-button-group k-button-group-stretched">
+                                <Button className="k-group-start" size="large">Date</Button>
+                                <Button className="k-group-end"size="large" selected>Time</Button>
+                            </div>
+                        </div>
+                        <div className="k-datetime-selector">
+                            <div className="k-datetime-calendar-wrap">
+                            </div>
+                            <div className="k-datetime-time-wrap">
+                                <TimeSelector size="large" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <ActionSheetFooter actions={[ 'Cancel', '!Set' ]} />
+                </ActionSheet>
+            </section>
+        </div>
+    </>
+);

@@ -6,6 +6,7 @@ export interface CalendarHeaderProps {
     className?: string;
     calendarHeaderText?: string;
     showToday?: boolean;
+    size?: null | 'small' | 'medium' | 'large';
     orientation?: 'vertical' | 'horizontal';
 }
 
@@ -15,6 +16,7 @@ export class CalendarHeader extends React.Component<CalendarHeaderProps> {
         calendarHeaderText: 'October 2021',
         showToday: true,
         orientation: 'horizontal',
+        size: 'medium'
     };
 
     render() {
@@ -23,6 +25,7 @@ export class CalendarHeader extends React.Component<CalendarHeaderProps> {
             calendarHeaderText,
             showToday,
             orientation,
+            size,
             ...htmlAttributes
         } = this.props;
 
@@ -36,12 +39,12 @@ export class CalendarHeader extends React.Component<CalendarHeaderProps> {
                         'k-vstack': orientation === 'vertical',
                     }
                 )}>
-                <Button className="k-calendar-title" text={calendarHeaderText} fillMode="flat"></Button>
+                <Button className="k-calendar-title" text={calendarHeaderText} size={size} fillMode="flat"></Button>
                 <span className="k-spacer"></span>
                 <span className="k-calendar-nav">
-                    <Button className="k-calendar-nav-prev" icon="arrow-chevron-left" fillMode="flat"></Button>
+                    <Button className="k-calendar-nav-prev" icon="arrow-chevron-left" size={size} fillMode="flat"></Button>
                     {showToday && <span className="k-calendar-nav-today">Today</span>}
-                    <Button className="k-calendar-nav-next" icon="arrow-chevron-right" fillMode="flat"></Button>
+                    <Button className="k-calendar-nav-next" icon="arrow-chevron-right" size={size} fillMode="flat"></Button>
                 </span>
             </div>
         );

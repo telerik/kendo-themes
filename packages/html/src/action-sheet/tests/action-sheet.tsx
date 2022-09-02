@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { Icon } from '../../icon';
+import { ActionSheet, ActionSheetItems, ActionSheetItem } from '../../action-sheet';
 
 const root = ReactDOM.createRoot(
     document.getElementById('app') as HTMLElement
@@ -8,158 +8,57 @@ const root = ReactDOM.createRoot(
 
 const styles = `
     #test-area {
+        --kendo-actionsheet-height: 400px;
+        --kendo-actionsheet-max-height: 400px;
+    }
+    #test-area > section {
         height: 600px;
-        transform: scale(1);
+        outline: 1px dotted;
         overflow: hidden;
-    }
-    .k-actionsheet:not(.k-rtl) {
-        left: 200px;
-    }
-    .k-actionsheet.k-rtl {
-        left: 600px;
+        position: relative;
+        transform: translateZ(0);
     }
 `;
 
 root.render(
     <>
         <style>{styles}</style>
-        <div id="test-area">
-            <div className="k-actionsheet-container">
-                <div className="k-overlay"></div>
+        <div id="test-area" className="k-d-grid k-grid-cols-2">
 
-                <div className="k-actionsheet k-actionsheet-bottom">
+            <span>LTR</span>
+            <span>RTL</span>
 
-                    <div className="k-actionsheet-header">
-                        Header
-                    </div>
-
-                    <ul className="k-actionsheet-items">
-                        <li className="k-actionsheet-item">
-                            <a href="#" className="k-actionsheet-action">
-                                <Icon className="k-actionsheet-item-icon" name="cog" />
-                                <span className="k-actionsheet-item-text">
-                                    <span className="k-actionsheet-item-title">Action</span>
-                                    <span className="k-actionsheet-item-description">Action description</span>
-                                </span>
-                            </a>
-                        </li>
-                        <li className="k-actionsheet-item">
-                            <a href="#" className="k-actionsheet-action k-hover">
-                                <Icon className="k-actionsheet-item-icon" name="cog" />
-                                <span className="k-actionsheet-item-text">
-                                    <span className="k-actionsheet-item-title">Hover action</span>
-                                    <span className="k-actionsheet-item-description">Action Description</span>
-                                </span>
-                            </a>
-                        </li>
-                        <li className="k-actionsheet-item">
-                            <a href="#" className="k-actionsheet-action k-focus">
-                                <Icon className="k-actionsheet-item-icon" name="cog" />
-                                <span className="k-actionsheet-item-text">
-                                    <span className="k-actionsheet-item-title">Focus action</span>
-                                    <span className="k-actionsheet-item-description">Action Description</span>
-                                </span>
-                            </a>
-                        </li>
-                        <li className="k-actionsheet-item">
-                            <a href="#" className="k-actionsheet-action k-disabled">
-                                <Icon className="k-actionsheet-item-icon" name="cog" />
-                                <span className="k-actionsheet-item-text">
-                                    <span className="k-actionsheet-item-title">Disabled action</span>
-                                    <span className="k-actionsheet-item-description">Action description</span>
-                                </span>
-                            </a>
-                        </li>
-                        <li className="k-actionsheet-item">
-                            <a href="#" className="k-actionsheet-action">
-                                <Icon className="k-actionsheet-item-icon" name="cog" />
-                                <span className="k-actionsheet-item-text">
-                                    <span className="k-actionsheet-item-title">Action</span>
-                                    <span className="k-actionsheet-item-description">Some longer subtitle to break on multiple rows, for testing purposes</span>
-                                </span>
-                            </a>
-                        </li>
-                    </ul>
+            <section>
+                <ActionSheet title="Header">
+                    <ActionSheetItems>
+                        <ActionSheetItem text="Action" description="Action description" iconName="cog" />
+                        <ActionSheetItem text="Hover action" description="Action description" iconName="cog" hover />
+                        <ActionSheetItem text="Focus action" description="Action description" iconName="cog" focus />
+                        <ActionSheetItem text="Disabled action" description="Action description" iconName="cog" disabled />
+                        <ActionSheetItem text="Action" description="Some longer subtitle to break on multiple rows, for testing purposes" iconName="cog" />
+                    </ActionSheetItems>
                     <hr className="k-hr" />
-                    <ul className="k-actionsheet-items">
-                        <li className="k-actionsheet-item">
-                            <a href="#" className="k-actionsheet-action">
-                                <Icon className="k-actionsheet-item-icon" name="cog" />
-                                <span className="k-actionsheet-item-text">
-                                    <span className="k-actionsheet-item-title">Cancel</span>
-                                    <span className="k-actionsheet-item-description">Action in second group</span>
-                                </span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+                    <ActionSheetItems>
+                        <ActionSheetItem text="Cancel" description="Action in a second group" iconName="cog" />
+                    </ActionSheetItems>
+                </ActionSheet>
+            </section>
 
-                <div className="k-actionsheet k-actionsheet-bottom k-rtl">
-                    <div className="k-actionsheet-header">
-                        Header
-                    </div>
-
-                    <ul className="k-actionsheet-items">
-                        <li className="k-actionsheet-item">
-                            <a href="#" className="k-actionsheet-action">
-                                <Icon className="k-actionsheet-item-icon" name="cog" />
-                                <span className="k-actionsheet-item-text">
-                                    <span className="k-actionsheet-item-title">Action</span>
-                                    <span className="k-actionsheet-item-description">Action description</span>
-                                </span>
-                            </a>
-                        </li>
-                        <li className="k-actionsheet-item">
-                            <a href="#" className="k-actionsheet-action k-hover">
-                                <Icon className="k-actionsheet-item-icon" name="cog" />
-                                <span className="k-actionsheet-item-text">
-                                    <span className="k-actionsheet-item-title">Hover action</span>
-                                    <span className="k-actionsheet-item-description">Action Description</span>
-                                </span>
-                            </a>
-                        </li>
-                        <li className="k-actionsheet-item">
-                            <a href="#" className="k-actionsheet-action k-focus">
-                                <Icon className="k-actionsheet-item-icon" name="cog" />
-                                <span className="k-actionsheet-item-text">
-                                    <span className="k-actionsheet-item-title">Focus action</span>
-                                    <span className="k-actionsheet-item-description">Action Description</span>
-                                </span>
-                            </a>
-                        </li>
-                        <li className="k-actionsheet-item">
-                            <a href="#" className="k-actionsheet-action k-disabled">
-                                <Icon className="k-actionsheet-item-icon" name="cog" />
-                                <span className="k-actionsheet-item-text">
-                                    <span className="k-actionsheet-item-title">Disabled action</span>
-                                    <span className="k-actionsheet-item-description">Action description</span>
-                                </span>
-                            </a>
-                        </li>
-                        <li className="k-actionsheet-item">
-                            <a href="#" className="k-actionsheet-action">
-                                <Icon className="k-actionsheet-item-icon" name="cog" />
-                                <span className="k-actionsheet-item-text">
-                                    <span className="k-actionsheet-item-title">Action</span>
-                                    <span className="k-actionsheet-item-description">Some longer subtitle to break on multiple rows, for testing purposes</span>
-                                </span>
-                            </a>
-                        </li>
-                    </ul>
+            <section>
+                <ActionSheet title="Header" className="k-rtl">
+                    <ActionSheetItems>
+                        <ActionSheetItem text="Action" description="Action description" iconName="cog" />
+                        <ActionSheetItem text="Hover action" description="Action description" iconName="cog" hover />
+                        <ActionSheetItem text="Focus action" description="Action description" iconName="cog" focus />
+                        <ActionSheetItem text="Disabled action" description="Action description" iconName="cog" disabled />
+                        <ActionSheetItem text="Action" description="Some longer subtitle to break on multiple rows, for testing purposes" iconName="cog" />
+                    </ActionSheetItems>
                     <hr className="k-hr" />
-                    <ul className="k-actionsheet-items">
-                        <li className="k-actionsheet-item">
-                            <a href="#" className="k-actionsheet-action">
-                                <Icon className="k-actionsheet-item-icon" name="cog" />
-                                <span className="k-actionsheet-item-text">
-                                    <span className="k-actionsheet-item-title">Cancel</span>
-                                    <span className="k-actionsheet-item-description">Action in second group</span>
-                                </span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+                    <ActionSheetItems>
+                        <ActionSheetItem text="Cancel" description="Action in a second group" iconName="cog" />
+                    </ActionSheetItems>
+                </ActionSheet>
+            </section>
         </div>
     </>
 );

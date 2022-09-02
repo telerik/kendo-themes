@@ -6,6 +6,7 @@ export interface MultiViewCalendarProps {
     className?: string;
     calendarHeaderText?: string;
     calendarView?: 'month' | 'year' | 'decade' | 'century';
+    size?: null | 'small' | 'medium' | 'large';
     viewsCount?: string;
     orientation?: 'horizontal' | 'vertical';
     showCalendarFooter?: boolean;
@@ -21,6 +22,7 @@ export class MultiViewCalendar extends React.Component<MultiViewCalendarProps> {
         viewsCount: '2',
         orientation: 'horizontal',
         calendarView: 'month',
+        size: 'medium'
     };
 
     render() {
@@ -34,6 +36,7 @@ export class MultiViewCalendar extends React.Component<MultiViewCalendarProps> {
             showWeek,
             showOtherMonth,
             showCalendarCaption,
+            size,
             ...htmlAttributes
         } = this.props;
 
@@ -44,7 +47,7 @@ export class MultiViewCalendar extends React.Component<MultiViewCalendarProps> {
                     className,
                     'k-calendar-range',
                 )}
-
+                size={size}
                 calendarHeaderText={calendarHeaderText}
                 calendarView={calendarView}
                 viewsCount={viewsCount}

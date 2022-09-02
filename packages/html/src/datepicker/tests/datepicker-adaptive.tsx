@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { Button } from '../../button';
+import { ActionSheet, ActionSheetHeader, ActionSheetFooter } from '../../action-sheet';
 import { Calendar } from '../../calendar';
 
 const root = ReactDOM.createRoot(
@@ -8,9 +8,9 @@ const root = ReactDOM.createRoot(
 );
 
 const styles = `
-    .k-actionsheet-container {
-        width: 100%;
+    #test-area > section {
         height: 600px;
+        overflow: hidden;
         position: relative;
         transform: translateZ(0);
     }
@@ -25,52 +25,20 @@ root.render(
             <span>full screen</span>
 
             <section>
-                <div className="k-actionsheet-container">
-                    <div className="k-overlay"></div>
-
-                    <div className="k-actionsheet k-actionsheet-bottom k-adaptive-actionsheet">
-                        <div className="k-actionsheet-titlebar">
-                            <div className="k-actionsheet-title k-text-center">
-                                <div>Select dates</div>
-                                <div className="k-text-muted">DD / MM / YY</div>
-                            </div>
-                            <div className="k-actionsheet-actions">
-                                <Button icon="x" fillMode="flat"></Button>
-                            </div>
-                        </div>
-                        <div className="k-actionsheet-content">
-                            <Calendar size="large"></Calendar>
-                        </div>
-                        <div className="k-actionsheet-footer k-actions k-actions-stretched">
-                            <Button size="large" themeColor="primary">Select date</Button>
-                        </div>
-                    </div>
-                </div>
+                <ActionSheet className="k-adaptive-actionsheet">
+                    <ActionSheetHeader className="k-text-center" title="Select dates" subTitle="DD / MM / YY" actions={[ 'x' ]} />
+                    <Calendar size="large"></Calendar>
+                    <ActionSheetFooter actions={[ 'Cancel', '!Select Date' ]} />
+                </ActionSheet>
             </section>
-            <section>
-                <div className="k-actionsheet-container">
-                    <div className="k-overlay"></div>
 
-                    <div className="k-actionsheet k-actionsheet-bottom k-actionsheet-fullscreen k-adaptive-actionsheet">
-                        <div className="k-actionsheet-titlebar">
-                            <div className="k-actionsheet-title k-text-center">
-                                <div>Select dates</div>
-                                <div className="k-text-muted">DD / MM / YY</div>
-                            </div>
-                            <div className="k-actionsheet-actions">
-                                <Button icon="x" fillMode="flat"></Button>
-                            </div>
-                        </div>
-                        <div className="k-actionsheet-content">
-                            <Calendar size="large"></Calendar>
-                        </div>
-                        <div className="k-actionsheet-footer k-actions k-actions-stretched">
-                            <Button size="large" themeColor="primary">Select date</Button>
-                        </div>
-                    </div>
-                </div>
+            <section>
+                <ActionSheet fullscreen={true} className="k-adaptive-actionsheet">
+                    <ActionSheetHeader className="k-text-center" title="Select dates" subTitle="DD / MM / YY" actions={[ 'x' ]} />
+                    <Calendar size="large"></Calendar>
+                    <ActionSheetFooter actions={[ 'Cancel', '!Select Date' ]} />
+                </ActionSheet>
             </section>
         </div>
-
     </>
 );
