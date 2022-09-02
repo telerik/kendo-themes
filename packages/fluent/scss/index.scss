@@ -21,7 +21,7 @@
 @use "popup";
 @use "ripple";
 @use "table";
-// @use "virtual-scroller";
+@use "virtual-scroller";
 
 
 // Indicators
@@ -181,7 +181,7 @@
     @include popup.styles();
     @include ripple.styles();
     @include table.styles();
-    // @include virtual-scroller.styles();
+    @include virtual-scroller.styles();
 
 
     // Indicators
