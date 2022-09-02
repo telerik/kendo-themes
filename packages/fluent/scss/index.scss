@@ -106,7 +106,7 @@
 
 
 // Navigation
-// @use "bottom-navigation";
+@use "bottom-navigation";
 @use "breadcrumb";
 @use "pager";
 @use "stepper";
@@ -268,7 +268,7 @@
 
 
     // Navigation
-    // @include bottom-navigation.styles();
+    @include bottom-navigation.styles();
     @include breadcrumb.styles();
     @include pager.styles();
     @include stepper.styles();

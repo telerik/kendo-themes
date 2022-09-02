@@ -1,0 +1,178 @@
+@use "sass:map";
+@use "../core/color-system" as *;
+@use "../core/_variables.scss" as *;
+
+/// Horizontal padding of the bottom navigation.
+/// @group bottom-navigation
+$kendo-bottom-nav-padding-x: map-get( $kendo-spacing, 1 ) + map-get( $kendo-spacing, thin ) !default;
+/// Vertical padding of the bottom navigation.
+/// @group bottom-navigation
+$kendo-bottom-nav-padding-y: $kendo-bottom-nav-padding-x !default;
+/// Spacing of the bottom navigation.
+/// @group bottom-navigation
+$kendo-bottom-nav-gap: $kendo-bottom-nav-padding-x !default;
+/// Border width of the bottom navigation.
+/// @group bottom-navigation
+$kendo-bottom-nav-border-width: 1px 0px 0px 0px !default;
+/// Font family of the bottom navigation.
+/// @group bottom-navigation
+$kendo-bottom-nav-font-family: var( --kendo-font-family, inherit) !default;
+/// Font size of the bottom navigation.
+/// @group bottom-navigation
+$kendo-bottom-nav-font-size: var( --kendo-font-size-md, 1rem ) !default;
+/// Line height of the bottom navigation.
+/// @group bottom-navigation
+$kendo-bottom-nav-line-height: var( --kendo-line-height-md, normal ) !default;
+/// Letter spacing of the bottom navigation.
+/// @group bottom-navigation
+$kendo-bottom-nav-letter-spacing: .2px !default;
+
+/// Horizontal padding of the bottom navigation item.
+/// @group bottom-navigation
+$kendo-bottom-nav-item-padding-x: map-get( $kendo-spacing, 2 ) !default;
+/// Vertical padding of the bottom navigation item.
+/// @group bottom-navigation
+$kendo-bottom-nav-item-padding-y: map-get( $kendo-spacing, thin ) !default;
+/// Minimum width of the bottom navigation item.
+/// @group bottom-navigation
+$kendo-bottom-nav-item-min-width: 72px !default;
+/// Maximum width of the bottom navigation item.
+/// @group bottom-navigation
+$kendo-bottom-nav-item-max-width: none !default;
+/// Minimum height of the bottom navigation item.
+/// @group bottom-navigation
+$kendo-bottom-nav-item-min-height: calc( var( --kendo-icon-size, 1rem ) + #{$kendo-padding-x * 2} - #{$kendo-bottom-nav-padding-x * 2} ) !default;
+/// Border radius of the bottom navigation item.
+/// @group bottom-navigation
+$kendo-bottom-nav-item-border-radius: var( --kendo-border-radius-md, 0 ) !default;
+/// Spacing of the bottom navigation item.
+/// @group bottom-navigation
+$kendo-bottom-nav-item-gap: 0 map-get( $kendo-spacing, 1 ) !default;
+/// Offset of the focused bottom navigation item.
+/// @group bottom-nav
+$kendo-bottom-nav-item-focus-offset: map-get( $kendo-spacing, thin ) !default;
+/// Outline width of the focused bottom navigation item.
+/// @group bottom-nav
+$kendo-bottom-nav-item-focus-outline-width: map-get( $kendo-spacing, hair ) !default;
+/// Outline style of the focused bottom navigation item.
+/// @group bottom-nav
+$kendo-bottom-nav-item-focus-outline-style: solid !default;
+
+/// Vertical margin of the focused bottom navigation item icon.
+/// @group bottom-nav
+$kendo-bottom-nav-item-icon-margin-y: map-get( $kendo-spacing, 2 ) !default;
+/// Horizontal margin of the focused bottom navigation item icon.
+/// @group bottom-nav
+$kendo-bottom-nav-item-icon-margin-x: $kendo-bottom-nav-item-icon-margin-y !default;
+
+/// Size of the focused bottom navigation item icon.
+/// @group bottom-nav
+$kendo-bottom-nav-item-icon-size: map-get( $kendo-spacing, 6 ) !default;
+
+/// Box shadow of the bottom navigation.
+/// @group bottom-nav
+$kendo-bottom-nav-shadow: var( --kendo-box-shadow-depth-1, none ) !default;
+
+// Theme variations for the bottom-nav.
+$kendo-bottom-nav-brand-colors: (
+    primary: primary,
+    error: error,
+    success: success,
+    info: info,
+    secondary: neutral,
+    tertiary: tertiary,
+ );
+
+// Matrix with bottom-nav theme colors in the order: bg, color, border
+$_tc-bottom-nav-matrix: (
+    solid: (
+        normal: (100, $white, 100),
+        focus: (100, $white, 100, inherit),
+        active: (120, $white, 120),
+        disabled: ( inherit, 40, var( --kendo-disabled-border, inherit ))
+    ),
+    flat: (
+        normal: ($white, get-theme-color-var( neutral-130 ), transparent),
+        focus: (inherit, 100, transparent, 100),
+        active: (inherit, 100, transparent),
+        disabled: (initial, var( --kendo-disabled-text, inherit ), initial)
+    )
+);
+
+$_tc-bottom-nav-warning-matrix: (
+    solid: (
+        normal: (100, get-theme-color-var( neutral-160 ), 100),
+        focus: (100, get-theme-color-var( neutral-160 ), 100, $white),
+        active: (120, get-theme-color-var( neutral-190 ), 120),
+        disabled: (inherit, get-theme-color-var( neutral-120 ) , var( --kendo-disabled-border, inherit ))
+    ),
+    flat: (
+        normal: ($white, get-theme-color-var( neutral-130 ), 100),
+        focus: (inherit, 100, transparent, 100),
+        active: (inherit, 100, transparent),
+        disabled: (initial, var( --kendo-disabled-text, inherit ), initial)
+    )
+);
+
+$_tc-bottom-nav-dark-matrix: (
+    solid: (
+        normal: (160, $white, 160),
+        focus: (160, $white, 160, $white),
+        active: (180, $white, 180),
+        disabled: (inherit, 60 , var( --kendo-disabled-border, inherit ))
+    ),
+    flat: (
+        normal: ($white, get-theme-color-var( neutral-130 ), transparent),
+        focus: (inherit, 160, transparent, 130),
+        active: (inherit, 170, transparent),
+        disabled: (inherit, var( --kendo-disabled-text, inherit ), initial)
+    )
+);
+
+$_tc-bottom-nav-light-matrix: (
+    solid: (
+        normal: (50, get-theme-color-var( neutral-160 ), 50),
+        focus: (50, 190, 50, $white),
+        active: (70, 190, 70),
+        disabled: (inherit, 120 , var( --kendo-disabled-border, inherit ))
+    ),
+    flat: (
+        normal: ($white, get-theme-color-var( neutral-130 ), transparent),
+        focus: (inherit, 130, transparent, 130),
+        active: (inherit, 130, transparent),
+        disabled: (inherit, var( --kendo-disabled-text, inherit ), initial)
+    )
+);
+
+/// Theme colors map for the bottom-nav variations.
+$kendo-bottom-nav-theme-colors: ();
+
+@each $fill-mode, $ui-states in $_tc-bottom-nav-matrix {
+    @each $brand-color, $palette in $kendo-bottom-nav-brand-colors {
+        $kendo-bottom-nav-theme-colors: map.deep-merge(
+            $kendo-bottom-nav-theme-colors,
+            generate-fill-mode-theme-variation( $fill-mode, $brand-color, $palette, $ui-states )
+        );
+    };
+}
+
+@each $fill-mode, $ui-states in $_tc-bottom-nav-warning-matrix {
+    $kendo-bottom-nav-theme-colors: map.deep-merge(
+        $kendo-bottom-nav-theme-colors,
+        generate-fill-mode-theme-variation( $fill-mode, warning, warning, $ui-states )
+    );
+}
+
+@each $fill-mode, $ui-states in $_tc-bottom-nav-dark-matrix {
+    $kendo-bottom-nav-theme-colors: map.deep-merge(
+        $kendo-bottom-nav-theme-colors,
+        generate-fill-mode-theme-variation( $fill-mode, dark, neutral, $ui-states )
+    );
+}
+
+@each $fill-mode, $ui-states in $_tc-bottom-nav-light-matrix {
+    $kendo-bottom-nav-theme-colors: map.deep-merge(
+        $kendo-bottom-nav-theme-colors,
+        generate-fill-mode-theme-variation( $fill-mode, light, neutral, $ui-states )
+    );
+}
