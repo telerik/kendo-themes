@@ -1,0 +1,207 @@
+@use "../core/_variables.scss" as *;
+@use "../core/color-system" as *;
+@use "../card/_variables.scss" as *;
+
+/// Spacing index of the task board.
+/// @group taskboard
+$kendo-taskboard-spacer: map-get( $kendo-spacing, 4 ) !default;
+
+/// Border width of the task board.
+/// @group taskboard
+$kendo-taskboard-border-width: 1px !default;
+/// Border style of the task board.
+/// @group taskboard
+$kendo-taskboard-border-style: solid !default;
+/// Vertical padding of the task board.
+/// @group taskboard
+$kendo-taskboard-padding-y: 0px !default;
+/// Horizontal of the task board.
+/// @group taskboard
+$kendo-taskboard-padding-x: 0px !default;
+/// Font family of the task board.
+/// @group taskboard
+$kendo-taskboard-font-family: var( --kendo-font-family, inherit ) !default;
+/// Font size of the task board.
+/// @group taskboard
+$kendo-taskboard-font-size: var( --kendo-font-size-md, inherit ) !default;
+/// Line height of the task board.
+/// @group taskboard
+$kendo-taskboard-line-height: var( --kendo-line-height, inherit ) !default;
+/// Background color of the task board.
+/// @group taskboard
+$kendo-taskboard-bg: var( --kendo-component-bg, initial ) !default;
+/// Text color of the task board.
+/// @group taskboard
+$kendo-taskboard-text: var( --kendo-component-text, initial ) !default;
+/// Border color of the task board.
+/// @group taskboard
+$kendo-taskboard-border: var( --kendo-component-border, initial ) !default;
+
+/// Vertical padding of the task board content.
+/// @group taskboard
+$kendo-taskboard-content-padding-y: 0px !default;
+/// Horizontal padding of the task board content.
+/// @group taskboard
+$kendo-taskboard-content-padding-x: 0px !default;
+
+/// Vertical spacing of the task board column container.
+/// @group taskboard
+$kendo-taskboard-column-container-spacing-y: calc( $kendo-taskboard-spacer / 2 ) !default;
+/// Vertical padding of the task board column container.
+/// @group taskboard
+$kendo-taskboard-column-container-padding-y: 0px !default;
+/// Horizontal padding of the task board column container.
+/// @group taskboard
+$kendo-taskboard-column-container-padding-x: calc( $kendo-taskboard-spacer / 2 ) !default;
+/// Spacing of the task board columns container.
+/// @group taskboard
+$kendo-taskboard-columns-container-gap: $kendo-taskboard-spacer !default;
+
+/// Default width of the task board column.
+/// @group taskboard
+$kendo-taskboard-column-width: 320px !default;
+/// Border width of the task board column.
+/// @group taskboard
+$kendo-taskboard-column-border-width: 1px !default;
+/// Border radius of the task board column.
+/// @group taskboard
+$kendo-taskboard-column-border-radius: var( --kendo-border-radius-md, 0 ) !default;
+/// Background color of the task board column.
+/// @group taskboard
+$kendo-taskboard-column-bg: get-theme-color-var( neutral-10 ) !default;
+/// Text color of the task board column.
+/// @group taskboard
+$kendo-taskboard-column-text: var( --kendo-component-text, inherit ) !default;
+/// Border color of the task board column.
+/// @group taskboard
+$kendo-taskboard-column-border: transparent !default;
+/// Focus background color of the task board column.
+/// @group taskboard
+$kendo-taskboard-column-focus-bg: $kendo-taskboard-column-bg !default;
+/// Focus text color of the task board column.
+/// @group taskboard
+$kendo-taskboard-column-focus-text: $kendo-taskboard-column-text !default;
+/// Focus border color of the task board column.
+/// @group taskboard
+$kendo-taskboard-column-focus-border: get-theme-color-var( neutral-130 ) !default;
+
+/// Vertical padding of the task board column header.
+/// @group taskboard
+$kendo-taskboard-column-header-padding-y: calc( $kendo-taskboard-spacer / 2 ) !default;
+/// Horizontal padding of the task board column header.
+/// @group taskboard
+$kendo-taskboard-column-header-padding-x: $kendo-taskboard-column-header-padding-y !default;
+/// Spacing of the task board column header.
+/// @group taskboard
+$kendo-taskboard-column-header-gap: calc( $kendo-taskboard-spacer / 4 ) !default;
+/// Spacing  of the task board column header actions.
+/// @group taskboard
+$kendo-taskboard-column-header-actions-gap: calc( $kendo-taskboard-spacer / 2 ) !default;
+/// Font weight of the task board column header.
+/// @group taskboard
+$kendo-taskboard-column-header-font-weight: 400 !default;
+///  Text color of the task board column header.
+/// @group taskboard
+$kendo-taskboard-column-header-text: var( --kendo-component-text, inherit )  !default;
+
+/// Vertical padding of the task board column cards wrapper.
+/// @group taskboard
+$kendo-taskboard-column-cards-padding-y: 0px !default;
+/// Horizontal padding of the task board column cards wrapper.
+/// @group taskboard
+$kendo-taskboard-column-cards-padding-x: 0px !default;
+/// Spacing of the task board column cards wrapper.
+/// @group taskboard
+$kendo-taskboard-column-cards-gap: calc( $kendo-taskboard-spacer / 2 ) !default;
+
+
+/// Default width of the task board pane.
+/// @group taskboard
+$kendo-taskboard-pane-width: $kendo-taskboard-column-width !default;
+/// Vertical padding of the task board pane
+/// @group taskboard
+$kendo-taskboard-pane-padding-y: 0px !default;
+/// Horizontal padding of the task board pane.
+/// @group taskboard
+$kendo-taskboard-pane-padding-x: 0px !default;
+/// Border width of the task board pane.
+/// @group taskboard
+$kendo-taskboard-pane-border-width: 1px !default;
+/// Background color of the task board pane.
+/// @group taskboard
+$kendo-taskboard-pane-bg: var( --kendo-component-bg, inherit ) !default;
+/// Text color of the task board pane.
+/// @group taskboard
+$kendo-taskboard-pane-text: var( --kendo-component-text, inherit ) !default;
+/// Border color of the task board pane.
+/// @group taskboard
+$kendo-taskboard-pane-border: var( --kendo-component-border, inherit ) !default;
+
+/// Vertical padding of the task board pane header.
+/// @group taskboard
+$kendo-taskboard-pane-header-padding-y: $kendo-taskboard-spacer !default;
+/// Horizontal padding of the task board pane header.
+/// @group taskboard
+$kendo-taskboard-pane-header-padding-x: map-get( $kendo-spacing, 6 )  !default;
+/// Font size of the task board pane header.
+/// @group taskboard
+$kendo-taskboard-pane-header-font-size: var( --kendo-font-size-lg, 1rem ) !default;
+/// Font weight of the task board pane header.
+/// @group taskboard
+$kendo-taskboard-pane-header-font-weight: 500 !default;
+/// Text color of the task board pane header.
+/// @group taskboard
+$kendo-taskboard-pane-header-text: $kendo-taskboard-pane-text !default;
+
+/// Vertical padding of the task board pane content.
+/// @group taskboard
+$kendo-taskboard-pane-content-padding-y: 0px !default;
+/// Horizontal padding of the task board pane content.
+/// @group taskboard
+$kendo-taskboard-pane-content-padding-x: $kendo-taskboard-pane-header-padding-x !default;
+
+/// Vertical padding of the task board pane actions.
+/// @group taskboard
+$kendo-taskboard-pane-actions-padding-y: map-get( $kendo-spacing, 6 ) !default;
+/// Horizontal padding of the task board pane actions.
+/// @group taskboard
+$kendo-taskboard-pane-actions-padding-x: $kendo-taskboard-pane-actions-padding-y !default;
+
+/// Vertical padding of the task board card.
+/// @group taskboard
+$kendo-taskboard-card-padding-y: calc( $kendo-taskboard-spacer / 2 ) !default;
+/// Horizontal padding of the task board card.
+/// @group taskboard
+$kendo-taskboard-card-padding-x: $kendo-taskboard-card-padding-y !default;
+/// Border width of the task board card category.
+/// @group taskboard
+$kendo-taskboard-card-category-border-width: 4px !default;
+/// Focus shadow of the task board card.
+/// @group taskboard
+$kendo-taskboard-card-focus-shadow: none !default;
+/// Selected border of the task board card.
+/// @group taskboard
+$kendo-taskboard-card-selected-border: get-theme-color-var( primary-130 ) !default;
+/// Selected shadow of the task board card.
+/// @group taskboard
+$kendo-taskboard-card-selected-shadow: var( --kendo-box-shadow-depth-4, none ) !default;
+
+/// Font size of the task board card title.
+/// @group taskboard
+$kendo-taskboard-card-title-font-size: var( --kendo-font-size-md, 1rem ) !default;
+/// Font weight of the task board card title.
+/// @group taskboard
+$kendo-taskboard-card-title-font-weight: var( --kendo-font-weight-bold, 600 ) !default;
+
+/// Border width of the task board card placeholder.
+/// @group taskboard
+$kendo-taskboard-drag-placeholder-border-width: 1px !default;
+/// Border radius of the task board card placeholder.
+/// @group taskboard
+$kendo-taskboard-drag-placeholder-border-radius: $kendo-card-border-radius !default;
+/// Background color of the task board card placeholder.
+/// @group taskboard
+$kendo-taskboard-drag-placeholder-bg: get-theme-color-var( neutral-50 ) !default;
+/// Border color of the task board card placeholder.
+/// @group taskboard
+$kendo-taskboard-drag-placeholder-border: var( --kendo-component-border, inherit ) !default;

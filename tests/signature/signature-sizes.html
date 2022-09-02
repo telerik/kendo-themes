@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width:15px;">
+<head>
+    <title>Signature Sizes</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
+    <link rel="stylesheet" href="/packages/html/assets/styles.css">
+    <script src="/packages/html/assets/scripts.js"></script>
+</head>
+<body id="app" class="k-body">
+    <style>
+        div[dir="rtl"] {
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+        }
+
+    </style>
+    <div id="test-area" class="k-d-grid k-grid-cols-2">
+        <span>Signature</span>
+        <span>Signature RTL</span>
+        <div>
+            <span>Small</span>
+            <div class="k-signature k-input k-signature-sm k-input-solid k-rounded-md">
+                <div class="k-signature-actions k-signature-actions-top">
+                    <button class="k-signature-action k-signature-maximize k-button k-button-sm k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                        <span class="k-button-icon k-icon k-i-window-maximize"></span>
+                    </button>
+                    <button class="k-signature-action k-signature-minimize k-hidden k-button k-button-sm k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                        <span class="k-button-icon k-icon k-i-window-minimize"></span>
+                    </button>
+                </div>
+                <canvas class="k-signature-canvas"></canvas>
+                <div class="k-signature-line"></div>
+                <div class="k-signature-actions k-signature-actions-bottom">
+                    <button class="k-signature-action k-signature-clear k-button k-button-sm k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                        <span class="k-button-icon k-icon k-i-close"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div dir="rtl">
+            <span>Small</span>
+            <div class="k-signature k-input k-signature-sm k-input-solid k-rounded-md">
+                <div class="k-signature-actions k-signature-actions-top">
+                    <button class="k-signature-action k-signature-maximize k-button k-button-sm k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                        <span class="k-button-icon k-icon k-i-window-maximize"></span>
+                    </button>
+                    <button class="k-signature-action k-signature-minimize k-hidden k-button k-button-sm k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                        <span class="k-button-icon k-icon k-i-window-minimize"></span>
+                    </button>
+                </div>
+                <canvas class="k-signature-canvas"></canvas>
+                <div class="k-signature-line"></div>
+                <div class="k-signature-actions k-signature-actions-bottom">
+                    <button class="k-signature-action k-signature-clear k-button k-button-sm k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                        <span class="k-button-icon k-icon k-i-close"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div>
+            <span>Medium</span>
+            <div class="k-signature k-input k-signature-md k-input-solid k-rounded-md">
+                <div class="k-signature-actions k-signature-actions-top">
+                    <button class="k-signature-action k-signature-maximize k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                        <span class="k-button-icon k-icon k-i-window-maximize"></span>
+                    </button>
+                    <button class="k-signature-action k-signature-minimize k-hidden k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                        <span class="k-button-icon k-icon k-i-window-minimize"></span>
+                    </button>
+                </div>
+                <canvas class="k-signature-canvas"></canvas>
+                <div class="k-signature-line"></div>
+                <div class="k-signature-actions k-signature-actions-bottom">
+                    <button class="k-signature-action k-signature-clear k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                        <span class="k-button-icon k-icon k-i-close"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div dir="rtl">
+            <span>Medium</span>
+            <div class="k-signature k-input k-signature-md k-input-solid k-rounded-md">
+                <div class="k-signature-actions k-signature-actions-top">
+                    <button class="k-signature-action k-signature-maximize k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                        <span class="k-button-icon k-icon k-i-window-maximize"></span>
+                    </button>
+                    <button class="k-signature-action k-signature-minimize k-hidden k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                        <span class="k-button-icon k-icon k-i-window-minimize"></span>
+                    </button>
+                </div>
+                <canvas class="k-signature-canvas"></canvas>
+                <div class="k-signature-line"></div>
+                <div class="k-signature-actions k-signature-actions-bottom">
+                    <button class="k-signature-action k-signature-clear k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                        <span class="k-button-icon k-icon k-i-close"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div>
+            <span>Large</span>
+            <div class="k-signature k-input k-signature-lg k-input-solid k-rounded-md">
+                <div class="k-signature-actions k-signature-actions-top">
+                    <button class="k-signature-action k-signature-maximize k-button k-button-lg k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                        <span class="k-button-icon k-icon k-i-window-maximize"></span>
+                    </button>
+                    <button class="k-signature-action k-signature-minimize k-hidden k-button k-button-lg k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                        <span class="k-button-icon k-icon k-i-window-minimize"></span>
+                    </button>
+                </div>
+                <canvas class="k-signature-canvas"></canvas>
+                <div class="k-signature-line"></div>
+                <div class="k-signature-actions k-signature-actions-bottom">
+                    <button class="k-signature-action k-signature-clear k-button k-button-lg k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                        <span class="k-button-icon k-icon k-i-close"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div dir="rtl">
+            <span>Large</span>
+            <div class="k-signature k-input k-signature-lg k-input-solid k-rounded-md">
+                <div class="k-signature-actions k-signature-actions-top">
+                    <button class="k-signature-action k-signature-maximize k-button k-button-lg k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                        <span class="k-button-icon k-icon k-i-window-maximize"></span>
+                    </button>
+                    <button class="k-signature-action k-signature-minimize k-hidden k-button k-button-lg k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                        <span class="k-button-icon k-icon k-i-window-minimize"></span>
+                    </button>
+                </div>
+                <canvas class="k-signature-canvas"></canvas>
+                <div class="k-signature-line"></div>
+                <div class="k-signature-actions k-signature-actions-bottom">
+                    <button class="k-signature-action k-signature-clear k-button k-button-lg k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                        <span class="k-button-icon k-icon k-i-close"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

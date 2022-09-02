@@ -2,7 +2,7 @@
 
     .k-signature {
         width: $kendo-signature-width;
-        height: $kendo-signature-height;
+        min-height: $kendo-signature-height;
         position: relative;
         box-sizing: border-box;
         display: flex;
@@ -39,25 +39,28 @@
 
     .k-signature-line {
         position: absolute;
-        z-index: 0;
+        bottom: $kendo-signature-line-bottom-offset;
+        z-index: 2;
+        pointer-events: none;
         border-bottom-width: $kendo-signature-line-width;
         border-bottom-style: $kendo-signature-line-style;
     }
 
     // Sizes
     @each $size, $size-props in $kendo-signature-sizes {
-        $_padding: map-get($size-props, padding);
+        $_padding-x: map-get($size-props, padding-x);
+        $_padding-y: map-get($size-props, padding-y);
         $_line-size: map-get($size-props, line-size);
         $_line-offset: map-get($size-props, line-offset);
 
         .k-signature-#{$size} {
-            padding: $_padding;
+            padding-inline: $_padding-x;
+            padding-block: $_padding-y;
 
             .k-signature-line {
                 width: $_line-size;
-                bottom: $_line-offset;
             }
         }
-
     }
+
 }

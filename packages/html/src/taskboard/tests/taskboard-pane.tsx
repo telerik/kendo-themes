@@ -54,6 +54,15 @@ root.render(
                                             <p>Card Body</p>
                                         </CardBody>
                                     </Card>
+                                    <Card className="k-taskboard-card">
+                                        <CardHeader className="k-hbox" details>
+                                            <a className="k-card-title k-link" href="#">Card Title</a>
+                                            <span className="k-spacer"></span>
+                                        </CardHeader>
+                                        <CardBody>
+                                            <p>Card Body</p>
+                                        </CardBody>
+                                    </Card>
                                 </div>
                             </div>
                         </div>
@@ -157,6 +166,15 @@ root.render(
                             </div>
                             <div className="k-taskboard-column-cards-container">
                                 <div className="k-taskboard-column-cards">
+                                    <Card className="k-taskboard-card">
+                                        <CardHeader className="k-hbox" details>
+                                            <a className="k-card-title k-link" href="#">Card Title</a>
+                                            <span className="k-spacer"></span>
+                                        </CardHeader>
+                                        <CardBody>
+                                            <p>Card Body</p>
+                                        </CardBody>
+                                    </Card>
                                     <Card className="k-taskboard-card">
                                         <CardHeader className="k-hbox" details>
                                             <a className="k-card-title k-link" href="#">Card Title</a>
