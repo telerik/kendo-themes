@@ -1,5 +1,7 @@
 {
+  "name": "kendo-themes.repo",
   "version": "0.0.0",
+  "private": true,
   "devDependencies": {
     "@commitlint/cli": "^17.0.2",
     "@commitlint/config-conventional": "^17.0.2",
@@ -20,6 +22,7 @@
     "http-server": "^14.1.1",
     "husky": "^7.0.4",
     "lerna": "^4.0.0",
+    "lint-staged": "^13.0.3",
     "node-sass": "^7.0.1",
     "nunjucks": "^3.2.3",
     "sass": "^1.54.4",
@@ -34,8 +37,8 @@
   },
   "scripts": {
     "setup": "bash ./scripts/setup.sh",
-    "clean": "find . -name \"node_modules\" -type d -prune | grep -e \".git\" -v | xargs rm -rf",
-    "clean:dist": "find ./packages -name \"dist\" -type d -prune | grep -e \"node_modules\" -v | xargs rm -rf",
+    "clean": "find . -name \"node_modules\" -type d -prune | xargs rm -rf",
+    "clean:dist": "find ./packages -name \"dist\" -type d -prune -maxdepth 2 | xargs rm -rf",
     "clean:tests": "node ./scripts/cleanup-test-results.js",
     "bootstrap": "lerna clean && lerna bootstrap",
     "dist:flat": "gulp dist:flat",
@@ -55,8 +58,9 @@
     "stylelint": "stylelint \"**/*.scss\"",
     "html-validate": "html-validate tests",
     "lint": "npm run eslint && npm run sasslint",
+    "lint-staged": "lint-staged",
     "docs": "gulp docs",
-    "docs:check": "gulp docs:check",
+    "docs:check": "npm run docs && lerna exec -- git diff --exit-code --quiet -- docs/",
     "utils-docs": "gulp utils-docs",
     "create-screenshots": "./build/create-screenshots.sh",
     "serve-tests": "http-server ./ -c-1",
@@ -64,10 +68,13 @@
     "create-component": "gulp create-component",
     "update": "npx npm-check-updates --upgrade"
   },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": "eslint"
+  },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run eslint && npm run sasslint",
-      "pre-push": "npm run eslint && npm run sasslint && npm run sass && npm run docs:check",
+      "pre-commit": "npm run sasslint && npm run lint-staged",
+      "pre-push": "npm run sass && npm run docs:check",
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   }
