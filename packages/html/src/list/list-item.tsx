@@ -6,6 +6,7 @@ import { Icon } from '../icon';
 export interface ListItemProps {
     children?: React.ReactNode;
     className?: string;
+    text?: string;
     groupLabel?: string;
     showIcon?: boolean;
     iconName?: string;
@@ -24,6 +25,7 @@ export class ListItem extends React.Component<ListItemProps> {
         const {
             children,
             className,
+            text,
             groupLabel,
             showIcon,
             iconName,
@@ -35,6 +37,9 @@ export class ListItem extends React.Component<ListItemProps> {
             disabled,
         } = this.props;
 
+        const textOrChildren = text
+            ? text
+            : children;
 
         return (
             <li
@@ -50,7 +55,7 @@ export class ListItem extends React.Component<ListItemProps> {
                 )}>
                 {showCheckbox && <Checkbox checked={checked} />}
                 {showIcon && <Icon name={iconName} />}
-                <span className="k-list-item-text">{children}</span>
+                <span className="k-list-item-text">{textOrChildren}</span>
                 {groupLabel && groupLabel !== '' && <div className="k-list-item-group-label">{groupLabel}</div>}
             </li>
         );

@@ -57,6 +57,7 @@ export class Calendar extends React.Component<CalendarProps> {
                     showToday={showCalendarFooter ? false : true }
                     calendarHeaderText={calendarHeaderText}
                     orientation={orientation}
+                    size={size}
                 />
 
                 <CalendarView

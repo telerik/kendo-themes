@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { Button } from '../../button';
+import { ActionSheet, ActionSheetFooter, ActionSheetHeader } from '../../action-sheet';
 import { List, ListItem } from '../../list';
 
 const root = ReactDOM.createRoot(
@@ -8,9 +8,13 @@ const root = ReactDOM.createRoot(
 );
 
 const styles = `
-    .k-actionsheet-container {
-        width: 100%;
+    #test-area {
+        --kendo-actionsheet-height: 400px;
+        --kendo-actionsheet-max-height: 400px;
+    }
+    #test-area > section {
         height: 600px;
+        overflow: hidden;
         position: relative;
         transform: translateZ(0);
     }
@@ -25,70 +29,45 @@ root.render(
             <span>full screen</span>
 
             <section>
-                <div className="k-actionsheet-container">
-                    <div className="k-overlay"></div>
-
-                    <div className="k-actionsheet k-actionsheet-bottom k-adaptive-actionsheet">
-                        <div className="k-actionsheet-titlebar">
-                            <div className="k-actionsheet-title k-text-center">
-                                <div>Dropdownlist label</div>
-                            </div>
-                            <div className="k-actionsheet-actions">
-                                <Button icon="x" fillMode="flat"></Button>
-                            </div>
-                        </div>
-                        <div className="k-actionsheet-content">
-                            <List size="large">
-                                <ListItem>List item</ListItem>
-                                <ListItem hover>Hover</ListItem>
-                                <ListItem focus>Focus</ListItem>
-                                <ListItem selected>Selected</ListItem>
-                                <ListItem hover selected>Hover selected</ListItem>
-                                <ListItem disabled>Disabled</ListItem>
-                                <ListItem>List item with very long text, that spans on multiple lines</ListItem>
-                                <ListItem showCheckbox>Checkbox</ListItem>
-                                <ListItem showIcon iconName="cog">Icon</ListItem>
-                                <ListItem showCheckbox showIcon iconName="cog">Checkbox icon</ListItem>
-                            </List>
-                        </div>
-                        <div className="k-actionsheet-footer k-actions k-actions-stretched">
-                            <Button size="large" themeColor="primary">Select date</Button>
-                        </div>
+                <ActionSheet adaptive={true}>
+                    <ActionSheetHeader title="Dropdownlist label" className="k-text-center" actions={[ "x" ]} filter={true} />
+                    <div className="k-list-container">
+                        <List size="large">
+                            <ListItem text="List item" />
+                            <ListItem text="Hover" hover />
+                            <ListItem text="Focus" focus />
+                            <ListItem text="Selected" selected />
+                            <ListItem text="Hover selected" hover selected />
+                            <ListItem text="Disabled" disabled />
+                            <ListItem text="List item with very long text, that spans on multiple lines" />
+                            <ListItem text="Checkbox" showCheckbox />
+                            <ListItem text="Icon" showIcon iconName="cog" />
+                            <ListItem text="Checkbox icon" showCheckbox showIcon iconName="cog" />
+                        </List>
                     </div>
-                </div>
+                    <ActionSheetFooter actions={[ "Cancel", "!Select" ]} />
+                </ActionSheet>
             </section>
-            <section>
-                <div className="k-actionsheet-container">
-                    <div className="k-overlay"></div>
 
-                    <div className="k-actionsheet k-actionsheet-bottom k-actionsheet-fullscreen k-adaptive-actionsheet">
-                        <div className="k-actionsheet-titlebar">
-                            <div className="k-actionsheet-title k-text-center">
-                                <div>Dropdownlist label</div>
-                            </div>
-                            <div className="k-actionsheet-actions">
-                                <Button icon="x" fillMode="flat"></Button>
-                            </div>
-                        </div>
-                        <div className="k-actionsheet-content">
-                            <List size="large">
-                                <ListItem>List item</ListItem>
-                                <ListItem hover>Hover</ListItem>
-                                <ListItem focus>Focus</ListItem>
-                                <ListItem selected>Selected</ListItem>
-                                <ListItem hover selected>Hover selected</ListItem>
-                                <ListItem disabled>Disabled</ListItem>
-                                <ListItem>List item with very long text, that spans on multiple lines</ListItem>
-                                <ListItem showCheckbox>Checkbox</ListItem>
-                                <ListItem showIcon iconName="cog">Icon</ListItem>
-                                <ListItem showCheckbox showIcon iconName="cog">Checkbox icon</ListItem>
-                            </List>
-                        </div>
-                        <div className="k-actionsheet-footer k-actions k-actions-stretched">
-                            <Button size="large" themeColor="primary">Select date</Button>
-                        </div>
+            <section>
+                <ActionSheet adaptive={true} fullscreen={true}>
+                    <ActionSheetHeader title="Dropdownlist label" className="k-text-center" actions={[ "x" ]} filter={true} />
+                    <div className="k-list-container">
+                        <List size="large">
+                            <ListItem text="List item" />
+                            <ListItem text="Hover" hover />
+                            <ListItem text="Focus" focus />
+                            <ListItem text="Selected" selected />
+                            <ListItem text="Hover selected" hover selected />
+                            <ListItem text="Disabled" disabled />
+                            <ListItem text="List item with very long text, that spans on multiple lines" />
+                            <ListItem text="Checkbox" showCheckbox />
+                            <ListItem text="Icon" showIcon iconName="cog" />
+                            <ListItem text="Checkbox icon" showCheckbox showIcon iconName="cog" />
+                        </List>
                     </div>
-                </div>
+                    <ActionSheetFooter actions={[ "Cancel", "!Select" ]} />
+                </ActionSheet>
             </section>
         </div>
 

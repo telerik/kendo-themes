@@ -8,9 +8,14 @@ const root = ReactDOM.createRoot(
 );
 
 const styles = `
-    .k-actionsheet-container {
-        width: 100%;
+    #test-area {
+        --kendo-actionsheet-height: 400px;
+        --kendo-actionsheet-max-height: 400px;
+    }
+    #test-area > section {
         height: 600px;
+        outline: 1px dotted;
+        overflow: hidden;
         position: relative;
         transform: translateZ(0);
     }
@@ -25,33 +30,24 @@ root.render(
             <span>full screen</span>
 
             <section>
-
                 <ActionSheet adaptive={true}>
-                    <ActionSheetHeader
-                        actions={[ 'x' ]}
-                        title="Select Dates"
-                        subTitle="DD / MM / YY">
+                    <ActionSheetHeader actions={[ 'x' ]}>
+                        <div className="k-text-center">Select time</div>
                     </ActionSheetHeader>
-
-                    <TimeSelector size="large"></TimeSelector>
-
-                    <ActionSheetFooter actions={[ '!Select Date' ]} />
+                    <TimeSelector size="large" />
+                    <ActionSheetFooter actions={[ 'Cancel', '!Set' ]} />
                 </ActionSheet>
             </section>
+
             <section>
-                <ActionSheet adaptive={true} fullscreen>
-                    <ActionSheetHeader
-                        actions={[ 'x' ]}
-                        title="Select Dates"
-                        subTitle="DD / MM / YY">
+                <ActionSheet adaptive={true} fullscreen={true}>
+                    <ActionSheetHeader actions={[ 'x' ]}>
+                        <div className="k-text-center">Select time</div>
                     </ActionSheetHeader>
-
-                    <TimeSelector size="large"></TimeSelector>
-
-                    <ActionSheetFooter actions={[ '!Select Date' ]} />
+                    <TimeSelector size="large" />
+                    <ActionSheetFooter actions={[ 'Cancel', '!Set' ]} />
                 </ActionSheet>
             </section>
         </div>
-
     </>
 );
