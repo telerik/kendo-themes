@@ -148,7 +148,7 @@
 @use "mediaplayer";
 // @use "timeline";
 // @use "pdf-viewer";
-// @use "scroller";
+@use "scroller";
 // @use "scrollview";
 
 
@@ -166,11 +166,9 @@
     // Typography and utils
     @include typography.styles();
     @include utils.styles();
-    // @include cursor.styles();
 
 
     // Generic content
-    // @include styling.styles();
     @include icon.styles();
     @include messagebox.styles();
 
@@ -310,7 +308,7 @@
     @include mediaplayer.styles();
     // @include timeline.styles();
     // @include pdf-viewer.styles();
-    // @include scroller.styles();
+    @include scroller.styles();
     // @include scrollview.styles();
 
 
