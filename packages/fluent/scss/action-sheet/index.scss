@@ -22,6 +22,7 @@ $_kendo-module-meta: (
 @mixin styles() {
     @include module.render( "action-sheet" ) {
         @include kendo-action-sheet--layout();
+        @include kendo-action-sheet--layout-jq();
         @include kendo-action-sheet--theme();
     }
 }

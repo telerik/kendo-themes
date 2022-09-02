@@ -19,7 +19,9 @@
         border-color: var( --kendo-actionsheet-header-border, #{$kendo-actionsheet-header-border} );
         @include box-shadow( var( --kendo-actionsheet-header-shadow, #{$kendo-actionsheet-header-shadow} ) );
     }
-
+    .k-actionsheet-subtitle-text {
+        color: var( --kendo-actionsheet-subtitle-text, #{$kendo-actionsheet-subtitle-text} );
+    }
 
     // Actionsheet items
     .k-actionsheet-items {}
@@ -40,7 +42,7 @@
 
 
     // Actionsheet action
-    .k-actionsheet-action {
+    .k-actionsheet-item {
 
         color: var( --INTERNAL--kendo-actionsheet-item-text, inherit );
         background-color: var( --INTERNAL--kendo-actionsheet-item-bg, inherit );
@@ -86,4 +88,10 @@
             }
         }
     }
+
+    // Adaptive Actionsheet
+    .k-adaptive-actionsheet .k-actionsheet-titlebar {
+            border-color: var( --kendo-adaptive-actionsheet-header-border, #{$kendo-adaptive-actionsheet-header-border} );
+    }
+
 }

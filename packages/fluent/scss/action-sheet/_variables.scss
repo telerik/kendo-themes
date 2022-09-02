@@ -13,9 +13,12 @@ $kendo-actionsheet-width: 360px !default;
 /// Maximum width of the action sheet.
 /// @group action-sheet
 $kendo-actionsheet-max-width: 100% !default;
+/// Height of the action sheet.
+/// @group action-sheet
+$kendo-actionsheet-height: 60vh !default;
 /// Maximum height of the action sheet.
 /// @group action-sheet
-$kendo-actionsheet-max-height: 50vh !default;
+$kendo-actionsheet-max-height: 60vh !default;
 
 /// Border width around the action sheet.
 /// @group action-sheet
@@ -65,6 +68,10 @@ $kendo-actionsheet-header-font-family: inherit !default;
 /// Line height of the action sheet header.
 /// @group action-sheet
 $kendo-actionsheet-header-line-height: inherit !default;
+/// Spacing between the action sheet header groups.
+/// @group action-sheet
+$kendo-actionsheet-header-gap: map-get( $kendo-spacing, 4 ) !default;
+
 
 /// Background color of the action sheet header.
 /// @group action-sheet
@@ -78,6 +85,16 @@ $kendo-actionsheet-header-border: inherit !default;
 /// Box shadow of the action sheet header.
 /// @group action-sheet
 $kendo-actionsheet-header-shadow: none !default;
+
+/// Font size of the action sheet subtitle.
+/// @group action-sheet
+$kendo-actionsheet-subtitle-font-size: var( --kendo-font-size-sm, inherit ) !default;
+/// Line height of the action sheet subtitle.
+/// @group action-sheet
+$kendo-actionsheet-subtitle-line-height: var( --kendo-line-height-sm, inherit ) !default;
+/// Text color of the action sheet subtitle.
+/// @group action-sheet
+$kendo-actionsheet-subtitle-text: var( --kendo-subtle-text, inherit ) !default;
 
 /// Minimum height of the action sheet item.
 /// @group action-sheet
@@ -161,3 +178,33 @@ $kendo-actionsheet-item-disabled-text: var( --kendo-disabled-text, inherit ) !de
 /// Disabled border color of the action sheet item.
 /// @group action-sheet
 $kendo-actionsheet-item-disabled-border: var( --kendo-disabled-border, inherit ) !default;
+
+
+// Adaptive Actionsheet
+
+/// Border width of the adaptive action sheet titlebar.
+/// @group action-sheet
+$kendo-adaptive-actionsheet-header-border-width: 1px !default;
+/// Vertical padding of the adaptive action sheet titlebar.
+/// @group action-sheet
+$kendo-adaptive-actionsheet-header-padding-y: map-get( $kendo-spacing, 4 ) !default;
+/// Horizontal padding of the adaptive action sheet titlebar.
+/// @group action-sheet
+$kendo-adaptive-actionsheet-header-padding-x: $kendo-adaptive-actionsheet-header-padding-y !default;
+/// Text color of the adaptive action sheet titlebar.
+/// @group action-sheet
+$kendo-adaptive-actionsheet-header-border: var( --kendo-component-border, initial ) !default;
+
+/// Vertical padding of the adaptive action sheet content.
+/// @group action-sheet
+$kendo-adaptive-actionsheet-content-padding-y: map-get( $kendo-spacing, 2 ) !default;
+/// Horizontal padding of the adaptive action sheet content.
+/// @group action-sheet
+$kendo-adaptive-actionsheet-content-padding-x: map-get( $kendo-spacing, 4 ) !default;
+
+/// Vertical padding of the adaptive action sheet footer.
+/// @group action-sheet
+$kendo-adaptive-actionsheet-footer-padding-y: map-get( $kendo-spacing, 2 ) !default;
+/// Horizontal padding of the adaptive action sheet footer.
+/// @group action-sheet
+$kendo-adaptive-actionsheet-footer-padding-x: map-get( $kendo-spacing, 4 ) !default;

@@ -1,21 +1,67 @@
 @include exports("action-sheet/layout") {
 
+    // Action sheet container
     .k-actionsheet-container {
-        width: 100vw;
-        height: 100vh;
+        width: 100%;
+        height: 100%;
+        max-width: unquote("max(100%, 100vw)");
+        max-height: unquote("max(100%, 100vh)");
         position: fixed;
         top: 0;
         left: 0;
         z-index: 9999;
         overflow: hidden;
+        transform: translateZ(0);
     }
+
+
+    // Animation container
+    .k-actionsheet-container {
+
+        // Overlay
+        > .k-overlay {
+            position: absolute;
+            z-index: 1;
+        }
+
+        // Nested animation container
+        > .k-animation-container {
+            width: 100%;
+            height: 100%;
+            border-radius: 0;
+            overflow: hidden;
+            position: absolute;
+            z-index: 2;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+
+            > .k-child-animation-container {
+                position: absolute;
+            }
+        }
+
+        // No animation container
+        > .k-actionsheet {
+            position: absolute;
+            z-index: 2;
+        }
+
+        // Enable mouse events for action sheet
+        .k-actionsheet {
+            pointer-events: all;
+        }
+    }
+
 
     // Actionsheet
     .k-actionsheet {
-        padding: $actionsheet-padding-y $actionsheet-padding-y;
-        width: $actionsheet-width;
-        max-width: $actionsheet-max-width;
-        max-height: $actionsheet-max-height;
+        padding-block: $actionsheet-padding-y;
+        padding-inline: $actionsheet-padding-y;
+        width: var( --kendo-actionsheet-width, #{$actionsheet-width} );
+        height: var( --kendo-actionsheet-height, #{$actionsheet-height} );
+        max-width: var( --kendo-actionsheet-max-width, #{$actionsheet-max-width} );
+        max-height: var( --kendo-actionsheet-max-height, #{$actionsheet-max-height} );
         border-width: 0;
         border-style: solid;
         border-color: transparent;
@@ -23,10 +69,8 @@
         font-size: $actionsheet-font-size;
         font-family: $actionsheet-font-family;
         line-height: $actionsheet-line-height;
-        overflow-x: hidden;
-        overflow-y: auto;
-        position: fixed;
-        z-index: 10002;
+        overflow: hidden;
+        position: relative;
 
         *,
         *::before,
@@ -34,36 +78,36 @@
             box-sizing: border-box;
         }
     }
-    .k-actionsheet-fullscreen {
-        max-height: 100%;
-        height: 100%;
-    }
-
-
-    // Actionsheet header
-    .k-actionsheet-header {
-        padding: $actionsheet-header-padding-y $actionsheet-header-padding-x;
-        border-width: 0;
-        border-bottom-width: if( $actionsheet-header-border-width, $actionsheet-header-border-width, null );
-        border-style: solid;
-        border-color: transparent;
-        box-sizing: border-box;
-        font-size: $actionsheet-header-font-size;
-        font-family: $actionsheet-header-font-family;
-        line-height: $actionsheet-header-line-height;
-        flex: none;
-    }
 
 
     // Actionsheet titlebar
     .k-actionsheet-titlebar {
-        @extend .k-actionsheet-header !optional;
+        padding: $actionsheet-titlebar-padding-y $actionsheet-titlebar-padding-x;
+        border-width: 0;
+        border-bottom-width: if( $actionsheet-titlebar-border-width, $actionsheet-titlebar-border-width, null );
+        border-style: solid;
+        border-color: transparent;
+        font-size: $actionsheet-titlebar-font-size;
+        font-family: $actionsheet-titlebar-font-family;
+        line-height: $actionsheet-titlebar-line-height;
+        flex: none;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        gap: $actionsheet-titlebar-gap;
+    }
+    .k-actionsheet-titlebar-group {
         display: flex;
         flex-flow: row nowrap;
         align-items: center;
+        width: 100%;
     }
     .k-actionsheet-title {
         flex: 1;
+    }
+    .k-actionsheet-subtitle {
+        font-size: $actionsheet-subtitle-font-size;
+        line-height: $actionsheet-subtitle-line-height;
     }
     .k-actionsheet-actions {
         flex: none;
@@ -74,6 +118,7 @@
     .k-actionsheet-content {
         flex: 1;
         overflow: auto;
+        position: relative;
     }
 
 
@@ -88,6 +133,7 @@
         margin: 0;
         padding: 0;
         list-style: none;
+        flex: none;
     }
 
 
@@ -106,7 +152,7 @@
         outline: 0;
         display: flex;
         flex-flow: row nowrap;
-        align-items: center;
+        align-items: flex-start;
         gap: $actionsheet-item-spacing;
     }
     .k-actionsheet-item-icon {
@@ -129,6 +175,7 @@
     .k-actionsheet > .k-hr {
         margin: 0;
         border-color: inherit;
+        flex: none;
     }
 
 
@@ -165,6 +212,12 @@
         top: 50%;
         transform: translateY( -50% );
     }
+    .k-actionsheet-fullscreen {
+        width: 100%;
+        max-width: 100%;
+        max-height: 100%;
+        height: 100%;
+    }
 
 
     // Action sheet in popup
@@ -186,6 +239,28 @@
         display: flex;
         flex-flow: column nowrap;
 
+        .k-actionsheet-titlebar {
+            padding: $adaptive-actionsheet-titlebar-padding-y $adaptive-actionsheet-titlebar-padding-x;
+            border-bottom-width: $adaptive-actionsheet-titlebar-border-width;
+        }
+
+        .k-actionsheet-content {
+            padding: $adaptive-actionsheet-content-padding-y $adaptive-actionsheet-content-padding-x;
+        }
+
+        .k-actionsheet-footer {
+            padding: $adaptive-actionsheet-footer-padding-y $adaptive-actionsheet-footer-padding-x;
+        }
+
+        .k-list-container,
+        .k-treeview {
+            height: 100%;
+        }
+        .k-list-filter {
+            width: 100%;
+            padding-inline: 0;
+        }
+
         .k-calendar {
             margin-inline: auto;
             border-width: 0;
@@ -204,6 +279,58 @@
             .k-time-list-wrapper {
                 height: 100%;
             }
+        }
+
+        .k-datetime-wrap {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-flow: column nowrap;
+        }
+        .k-datetime-selector {
+            flex: 1 1 auto;
+        }
+
+        .k-datetime-calendar-wrap {
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            flex: 0 0 100%;
+        }
+
+        .k-datetime-time-wrap {
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 100%;
+            bottom: 0;
+            flex: 0 0 100%;
+        }
+
+        .k-scrollable-wrap {
+            height: 100%;
+            overflow-y: auto;
+        }
+    }
+
+}
+
+@include exports("action-sheet/layout/legacy") {
+
+    .k-actionsheet-jq {
+        &.k-actionsheet {
+            height: auto;
+        }
+
+        .k-actionsheet-header {
+            @extend .k-actionsheet-titlebar !optional;
+            align-items: flex-start;
+        }
+
+        .k-actionsheet-action {
+            align-items: center;
         }
     }
 
