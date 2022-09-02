@@ -1,0 +1,13 @@
+@use "_variables.scss" as *;
+
+@mixin kendo-signature--theme() {
+
+    // Solid signature
+    .k-signature {
+
+        .k-signature-line {
+            border-bottom-color: var( --kendo-signature-line-color, #{$kendo-signature-line-color} );
+        }
+    }
+
+}
