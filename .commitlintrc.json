@@ -21,12 +21,11 @@
       "always",
       [
         "build",
-        "ci",
         "chore",
+        "ci",
         "docs",
         "feat",
         "fix",
-        "infra",
         "perf",
         "refactor",
         "revert",

@@ -20,6 +20,10 @@ echo ""
 echo "Installing dependencies..."
 npm ci
 
+echo ""
+echo "---"
+echo ""
+
 # husky init
 echo "Initializing husky"
 npx husky install
