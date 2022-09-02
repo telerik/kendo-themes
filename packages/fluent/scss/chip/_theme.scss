@@ -78,17 +78,10 @@
                 --kendo-chip-hover-bg: var( --kendo-chip-#{$fill-mode}-#{$theme-color}-hover-bg, #{$_hover-bg} );
                 --kendo-chip-hover-border: var( --kendo-chip-#{$fill-mode}-#{$theme-color}-hover-border, #{$_hover-border} );
 
-                @if $fill-mode == "solid" {
-                    --kendo-chip-focus-text: var( --kendo-chip-#{$fill-mode}-#{$theme-color}-focus-text, #{$_focus-text} );
-                    --kendo-chip-focus-bg: var( --kendo-chip-#{$fill-mode}-#{$theme-color}-focus-bg, #{$_focus-bg} );
-                    --kendo-chip-focus-border: var( --kendo-chip-#{$fill-mode}-#{$theme-color}-focus-border, #{$_focus-border} );
-                }
-
-                @if $fill-mode == "outline" {
-                    --kendo-chip-focus-text: var( --kendo-chip-#{$fill-mode}-#{$theme-color}-focus-text, #{$_focus-outline} );
-                    --kendo-chip-focus-outline: var( --kendo-chip-#{$fill-mode}-#{$theme-color}-focus-outline, #{$_focus-outline} );
-                    --kendo-chip-focus-border: var( --kendo-chip-#{$fill-mode}-#{$theme-color}-focus-border, #{$_focus-outline} );
-                }
+                --kendo-chip-focus-text: var( --kendo-chip-#{$fill-mode}-#{$theme-color}-focus-text, #{$_focus-text} );
+                --kendo-chip-focus-bg: var( --kendo-chip-#{$fill-mode}-#{$theme-color}-focus-bg, #{$_focus-bg} );
+                --kendo-chip-focus-border: var( --kendo-chip-#{$fill-mode}-#{$theme-color}-focus-border, #{$_focus-border} );
+                --kendo-chip-focus-outline: var( --kendo-chip-#{$fill-mode}-#{$theme-color}-focus-outline, #{$_focus-outline} );
 
                 --kendo-chip-selected-text: var( --kendo-chip-#{$fill-mode}-#{$theme-color}-selected-text, #{$_selected-text} );
                 --kendo-chip-selected-bg: var( --kendo-chip-#{$fill-mode}-#{$theme-color}-selected-bg, #{$_selected-bg} );
@@ -100,5 +93,5 @@
             }
         }
     }
-   
+
 }
