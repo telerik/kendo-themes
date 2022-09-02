@@ -1,0 +1,92 @@
+@use "../core/mixins" as *;
+@use "_variables.scss" as *;
+
+@mixin kendo-bottom-navigation--theme() {
+
+    .k-bottom-nav {
+        --INTERNAL--kendo-bottom-nav-text: var( --kendo-bottom-nav-text );
+        --INTERNAL--kendo-bottom-nav-bg: var( --kendo-bottom-nav-bg );
+        --INTERNAL--kendo-bottom-nav-border: var( --kendo-bottom-nav-border );
+
+        border-color: var( --INTERNAL--kendo-bottom-nav-border, initial );
+        color: var( --INTERNAL--kendo-bottom-nav-text, inherit );
+        background-color: var( --INTERNAL--kendo-bottom-nav-bg, initial );
+    }
+
+    .k-bottom-nav-item {
+        --INTERNAL--kendo-bottom-nav-item-text: var( --kendo-bottom-nav-item-text );
+        --INTERNAL--kendo-bottom-nav-item-bg: var( --kendo-bottom-nav-item-bg );
+        --INTERNAL--kendo-bottom-nav-item-border: var( --kendo-bottom-nav-item-border );
+
+        border-color: var( --INTERNAL--kendo-bottom-nav-item-border, initial );
+        color: var( --INTERNAL--kendo-bottom-nav-item-text, inherit );
+        background-color: var( --INTERNAL--kendo-bottom-nav-item-bg, initial );
+
+        &:focus,
+        &.k-focus {
+            --INTERNAL--kendo-bottom-nav-item-text: var( --kendo-bottom-nav-item-focus-text );
+            --INTERNAL--kendo-bottom-nav-item-bg: var( --kendo-bottom-nav-item-focus-bg );
+            --INTERNAL--kendo-bottom-nav-item-border: var( --kendo-bottom-nav-item-focus-border );
+        }
+
+        &:focus::after,
+        &.k-focus::after {
+            outline-color: var( --kendo-bottom-nav-item-focus-outline, initial );
+        }
+
+        &.k-selected {
+            --INTERNAL--kendo-bottom-nav-item-text: var( --kendo-bottom-nav-item-selected-text );
+            --INTERNAL--kendo-bottom-nav-item-bg: var( --kendo-bottom-nav-item-selected-bg );
+            --INTERNAL--kendo-bottom-nav-item-border: var( --kendo-bottom-nav-item-selected-border );
+        }
+
+        &:disabled,
+        &.k-disabled{
+            --INTERNAL--kendo-bottom-nav-item-text: var( --kendo-bottom-nav-item-disabled-text );
+            --INTERNAL--kendo-bottom-nav-item-bg: var( --kendo-bottom-nav-item-disabled-bg );
+            --INTERNAL--kendo-bottom-nav-item-border: var( --kendo-bottom-nav-item-disabled-border );
+        }
+    }
+
+    @each $fill-mode, $theme-colors in $kendo-bottom-nav-theme-colors {
+        @each $theme-color, $color-props in $theme-colors {
+
+            $_text-color: map-get( $color-props, text );
+            $_bg: map-get( $color-props, bg );
+            $_border-color: map-get( $color-props, border );
+
+            $_focus-text: map-get( $color-props, focus-text );
+            $_focus-bg: map-get( $color-props, focus-bg );
+            $_focus-border: map-get( $color-props, focus-border );
+            $_focus-outline: map-get( $color-props, focus-outline );
+
+            $_active-text: map-get( $color-props, active-text );
+            $_active-bg: map-get( $color-props, active-bg );
+            $_active-border: map-get( $color-props, active-border );
+
+            $_disabled-text: map-get( $color-props, disabled-text );
+            $_disabled-bg: map-get( $color-props, disabled-bg );
+            $_disabled-border: map-get( $color-props, disabled-border );
+
+            .k-bottom-nav-#{$fill-mode}.k-bottom-nav-#{$theme-color} {
+                --kendo-bottom-nav-text: var( --kendo-bottom-nav-#{$fill-mode}-#{$theme-color}-text, #{$_text-color} );
+                --kendo-bottom-nav-bg: var( --kendo-bottom-nav-#{$fill-mode}-#{$theme-color}-bg, #{$_bg} );
+                --kendo-bottom-nav-border: var( --kendo-bottom-nav-#{$fill-mode}-#{$theme-color}-border, #{$_border-color} );
+
+                --kendo-bottom-nav-item-focus-text: var( --kendo-bottom-nav-#{$fill-mode}-#{$theme-color}-focus-text, #{$_focus-text} );
+                --kendo-bottom-nav-item-focus-bg: var( --kendo-bottom-nav-#{$fill-mode}-#{$theme-color}-focus-bg, #{$_focus-bg} );
+                --kendo-bottom-nav-item-focus-border: var( --kendo-bottom-nav-#{$fill-mode}-#{$theme-color}-focus-border, #{$_focus-border} );
+                --kendo-bottom-nav-item-focus-outline: var( --kendo-bottom-nav-#{$fill-mode}-#{$theme-color}-focus-outline, #{$_focus-outline} );
+
+                --kendo-bottom-nav-item-selected-text: var( --kendo-bottom-nav-#{$fill-mode}-#{$theme-color}-selected-text, #{$_active-text} );
+                --kendo-bottom-nav-item-selected-bg: var( --kendo-bottom-nav-#{$fill-mode}-#{$theme-color}-selected-bg, #{$_active-bg} );
+                --kendo-bottom-nav-item-selected-border: var( --kendo-bottom-nav-#{$fill-mode}-#{$theme-color}-selected-border, #{$_active-border} );
+
+                --kendo-bottom-nav-item-disabled-text: var( --kendo-bottom-nav-#{$fill-mode}-#{$theme-color}-disabled-text, #{$_disabled-text} );
+                --kendo-bottom-nav-item-disabled-bg: var( --kendo-bottom-nav-#{$fill-mode}-#{$theme-color}-disabled-bg, #{$_disabled-bg} );
+                --kendo-bottom-nav-item-disabled-border: var( --kendo-bottom-nav-#{$fill-mode}-#{$theme-color}-disabled-border, #{$_disabled-border} );
+            }
+        }
+    }
+
+}
