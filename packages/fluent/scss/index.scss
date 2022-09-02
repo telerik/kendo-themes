@@ -158,7 +158,7 @@
 @use "dataviz";
 @use "map";
 @use "orgchart";
-// @use "signature";
+@use "signature";
 
 // Setup
 @mixin config($config: null ) {
@@ -320,5 +320,5 @@
     @include dataviz.styles();
     @include map.styles();
     @include orgchart.styles();
-    // @include signature.styles();
+    @include signature.styles();
 }
