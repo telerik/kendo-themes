@@ -1,0 +1,210 @@
+@use "sass:map";
+@use "../core/color-system" as *;
+@use "../core/_variables.scss" as *;
+@use "../core/color-system/" as *;
+
+// Chip
+
+/// Width of the border around the button.
+/// @group chip
+$kendo-chip-border-width: 1px !default;
+/// The spacing between the text and the icons of the chip.
+/// @group chip
+$kendo-chip-spacing: map-get( $kendo-spacing, 1 ) !default;
+
+/// The font family of the chip.
+/// @group chip
+$kendo-chip-font-family: var( --kendo-font-family, inherit );
+
+/// The chip avatar width.
+/// @group chip
+$kendo-chip-avatar-width: 1em;
+/// The chip avatar height.
+/// @group chip
+$kendo-chip-avatar-height: 1em;
+/// The chip avatar flex basis.
+/// @group chip
+$kendo-chip-avatar-flex-basis: 1em;
+/// The text color of disabled chip.
+/// @group chip
+$kendo-chip-disabled-text: var( --kendo-disabled-text, inherit ) !default;
+/// The background of solid disabled chip.
+/// @group chip
+$kendo-chip-solid-disabled-bg: var( --kendo-disabled-bg, transparent ) !default;
+/// The border of solid disabled chip.
+/// @group chip
+$kendo-chip-solid-disabled-border: var( --kendo-disabled-border, inherit ) !default;
+/// The background of outline disabled chip.
+/// @group chip
+$kendo-chip-outline-disabled-bg: var( $kendo-component-bg, transparent ) !default;
+/// The border of outline disabled chip.
+/// @group chip
+$kendo-chip-outline-disabled-border: get-theme-color-var( neutral-90 ) !default;
+
+/// Offset of the outline focused chip.
+/// @group chip
+$kendo-chip-focus-offset: map-get( $kendo-spacing, thin ) !default;
+/// Outline width of the outline focused button.
+/// @group chip
+$kendo-chip-focus-outline-width: map-get( $kendo-spacing, hair) !default;
+/// Outline style of the outline focused button.
+/// @group chip
+$kendo-chip-focus-outline-style: solid !default;
+
+/// Horizontal padding of the chip.
+/// @group chip
+$kendo-chip-padding-x-sm: map-get( $kendo-spacing, 2 ) !default;
+$kendo-chip-padding-x-md: map-get( $kendo-spacing, 2 ) !default;
+$kendo-chip-padding-x-lg: map-get( $kendo-spacing, 2 ) !default;
+
+/// Vertical padding of the chip.
+/// @group chip
+$kendo-chip-padding-y-sm: ( map-get( $kendo-spacing, 1 ) - map-get( $kendo-spacing, thin ) ) !default;
+$kendo-chip-padding-y-md: ( map-get( $kendo-spacing, 1 ) ) !default;
+$kendo-chip-padding-y-lg: ( map-get( $kendo-spacing, 1 ) + map-get( $kendo-spacing, thin ) ) !default;
+
+/// Font sizes of the chip.
+/// @group chip
+$kendo-chip-font-size-sm: var( --kendo-font-size, inherit ) !default;
+$kendo-chip-font-size-md: var( --kendo-font-size, inherit ) !default;
+$kendo-chip-font-size-lg: var( --kendo-font-size, inherit ) !default;
+
+/// Line heights of the chip that are connected to the $font-size.
+/// @group chip
+$kendo-chip-line-height-sm: var( --kendo-line-height, normal ) !default;
+$kendo-chip-line-height-md: var( --kendo-line-height, normal ) !default;
+$kendo-chip-line-height-lg: var( --kendo-line-height, normal ) !default;
+
+/// Sizes map for the chip.
+/// @group chip
+$kendo-chip-sizes: (
+    sm: (
+        padding-x: $kendo-chip-padding-x-sm,
+        padding-y: $kendo-chip-padding-y-sm,
+        font-size: $kendo-chip-font-size-sm,
+        line-height: $kendo-chip-line-height-sm
+    ),
+    md: (
+        padding-x: $kendo-chip-padding-x-md,
+        padding-y: $kendo-chip-padding-y-md,
+        font-size: $kendo-chip-font-size-md,
+        line-height: $kendo-chip-line-height-md
+    ),
+    lg: (
+        padding-x: $kendo-chip-padding-x-lg,
+        padding-y: $kendo-chip-padding-y-lg,
+        font-size: $kendo-chip-font-size-lg,
+        line-height: $kendo-chip-line-height-lg
+    )
+) !default;
+
+
+$kendo-chip-brand-colors: ( error, success, info );
+
+// Matrices with theme colors in the order: bg, color, border, outline
+
+// Color matrix for the base chip
+$_tc-base-matrix: (
+    solid: (
+        normal: (20, 160, 20),
+        hover: (30, 190, 30),
+        focus: (20, 160, 130),
+        focus-hover: (20, 190, 130),
+        selected: (get-theme-color-var( primary-100 ), $white, get-theme-color-var( primary-100 )),
+        selected-hover: (get-theme-color-var( primary-100 ), $white, get-theme-color-var( primary-100 )),
+        disabled: (var( --kendo-disabled-bg, inherit ), var( --kendo-disabled-text, inherit ), var( --kendo-disabled-border, inherit ))
+    ),
+    outline: (
+        normal: (transparent, 160, currentColor),
+        hover: (190, $white, 190),
+        focus: (transparent, 160, currentColor, inherit),
+        focus-hover: (190, $white, 190, inherit),
+        selected: (190, $white, 190),
+        selected-hover: (20, 190, 110),
+        disabled: (initial, var( --kendo-disabled-text, inherit ), 90)
+    ),
+);
+
+// Color matrix for error, success, info chips
+$_tc-brand-matrix: (
+    solid: (
+        normal: (20, 160, 20),
+        hover: (30, 190, 30),
+        focus: (20, 160, 160),
+        focus-hover: (20, 190, 160),
+        selected: (40, 190, 40),
+        selected-hover: (30, 190, 30),
+        disabled: (var( --kendo-disabled-bg, inherit ), var( --kendo-disabled-text, inherit ), var( --kendo-disabled-border, inherit ))
+    ),
+    outline: (
+        normal: (transparent, 160, currentColor),
+        hover: (190, $white, 190),
+        focus: (transparent, 160, 160, inherit),
+        focus-hover: (190, $white, 190, inherit),
+        selected: (190, $white, 190),
+        selected-hover: (190, $white, 190),
+        disabled: (initial, var( --kendo-disabled-text, inherit ), var( --kendo-disabled-text, inherit ))
+    )
+);
+
+// Color matrix for warning chips
+$_tc-warning-matrix: (
+    solid: (
+        normal: (20, get-theme-color-var( grey-160 ), 20),
+        hover: (30, get-theme-color-var( grey-190 ), 30),
+        focus: (20, get-theme-color-var( grey-160 ), 160),
+        focus-hover: (20, get-theme-color-var( grey-190 ), 160),
+        selected: (40, get-theme-color-var( grey-190 ), 40),
+        selected-hover: (30, get-theme-color-var( grey-190 ), 30),
+        disabled: (var( --kendo-disabled-bg, inherit ), var( --kendo-disabled-text, inherit ), var( --kendo-disabled-border, inherit ))
+    ),
+    outline: (
+        normal: (transparent, 160, currentColor),
+        hover: (190, $white, 190),
+        focus: (transparent, 160, 160, inherit),
+        focus-hover: (190, $white, 190, inherit),
+        selected: (190, $white, 190),
+        selected-hover: (190, $white, 190),
+        disabled: (initial, var( --kendo-disabled-text, inherit ), var( --kendo-disabled-text, inherit ))
+    )
+);
+
+/// Theme colors map for the button.
+$kendo-chip-theme-colors: ();
+
+// Map for base theme color
+@each $fill-mode, $ui-states in $_tc-base-matrix {
+    $kendo-chip-theme-colors: map.deep-merge(
+        $kendo-chip-theme-colors,
+        generate-fill-mode-theme-variation( $fill-mode, base, neutral, $ui-states )
+    );
+}
+
+// Map for brand theme colors
+@each $fill-mode, $ui-states in $_tc-brand-matrix {
+    @each $brand-color in $kendo-chip-brand-colors {
+        $kendo-chip-theme-colors: map.deep-merge(
+            $kendo-chip-theme-colors,
+            generate-fill-mode-theme-variation( $fill-mode, $brand-color, $brand-color, $ui-states )
+        )
+    }
+}
+
+// Map for warning theme color
+@each $fill-mode, $ui-states in $_tc-warning-matrix {
+    $kendo-chip-theme-colors: map.deep-merge(
+        $kendo-chip-theme-colors,
+        generate-fill-mode-theme-variation( $fill-mode, warning, warning, $ui-states )
+    );
+}
+
+
+// Chip List
+
+/// The sizes of the chip list.
+/// @group chip
+$kendo-chip-list-sizes: (
+    sm: map-get( $kendo-spacing, 1 ),
+    md: map-get( $kendo-spacing, 1 ),
+    lg: map-get( $kendo-spacing, 1 )
+) !default;

@@ -1,0 +1,32 @@
+@use "_variables.scss" as *;
+@use "../core/mixins" as *;
+
+@mixin kendo-map--theme() {
+
+    .k-map {
+        @include fill(
+            var( --kendo-map-text, #{$kendo-map-text} ),
+            var( --kendo-map-bg, #{$kendo-map-bg} ),
+            var( --kendo-map-border, #{$kendo-map-border} )
+        );
+
+        .k-navigator,
+        .k-zoom-control {
+            background-color: var( --kendo-map-navigator-bg, #{$kendo-map-navigator-bg} );
+            border-color: var( --kendo-map-navigator-border, #{$kendo-map-navigator-border} );
+
+            .k-button {
+                color: var( --kendo-map-navigator-text, #{$kendo-map-navigator-text} );
+            }
+        }
+
+        .k-marker {
+            color: var( --kendo-map-marker-fill, #{$kendo-map-marker-fill} );
+        }
+
+        .k-attribution {
+            background-color: var( --kendo-map-attribution-bg, #{$kendo-map-attribution-bg} );
+        }
+    }
+
+}

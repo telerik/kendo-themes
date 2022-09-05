@@ -5,12 +5,10 @@
 // Typography and utils
 @use "typography";
 @use "utils";
-// @use "cursor";
 @use "draggable";
 
 
 // Generic content
-// @use "styling";
 @use "icon";
 @use "messagebox";
 
@@ -21,17 +19,17 @@
 @use "listgroup";
 @use "overlay";
 @use "popup";
-// @use "ripple";
+@use "ripple";
 @use "table";
-// @use "virtual-scroller";
+@use "virtual-scroller";
 
 
 // Indicators
 @use "avatar";
 @use "badge";
-// @use "chip";
+@use "chip";
 @use "color-preview";
-// @use "loader";
+@use "loader";
 // @use "loading";
 @use "skeleton";
 @use "tooltip";
@@ -106,20 +104,20 @@
 
 
 // Navigation
-// @use "bottom-navigation";
+@use "bottom-navigation";
 @use "breadcrumb";
 @use "pager";
-// @use "stepper";
+@use "stepper";
 @use "tabstrip";
 @use "treeview";
-// @use "wizard";
+@use "wizard";
 
 
 // Layout & containers
 @use "card";
 @use "expansion-panel";
 @use "panelbar";
-// @use "splitter";
+@use "splitter";
 @use "tilelayout";
 
 
@@ -150,15 +148,15 @@
 @use "mediaplayer";
 // @use "timeline";
 // @use "pdf-viewer";
-// @use "scroller";
+@use "scroller";
 // @use "scrollview";
 
 
 // Dataviz
-// @use "dataviz";
-// @use "map";
+@use "dataviz";
+@use "map";
 @use "orgchart";
-// @use "signature";
+@use "signature";
 
 // Setup
 @mixin config($config: null ) {
@@ -168,11 +166,9 @@
     // Typography and utils
     @include typography.styles();
     @include utils.styles();
-    // @include cursor.styles();
 
 
     // Generic content
-    // @include styling.styles();
     @include icon.styles();
     @include messagebox.styles();
 
@@ -183,17 +179,17 @@
     @include listgroup.styles();
     @include overlay.styles();
     @include popup.styles();
-    // @include ripple.styles();
+    @include ripple.styles();
     @include table.styles();
-    // @include virtual-scroller.styles();
+    @include virtual-scroller.styles();
 
 
     // Indicators
     @include avatar.styles();
     @include badge.styles();
-    // @include chip.styles();
+    @include chip.styles();
     @include color-preview.styles();
-    // @include loader.styles();
+    @include loader.styles();
     // @include loading.styles();
     @include skeleton.styles();
     @include tooltip.styles();
@@ -268,20 +264,20 @@
 
 
     // Navigation
-    // @include bottom-navigation.styles();
+    @include bottom-navigation.styles();
     @include breadcrumb.styles();
     @include pager.styles();
-    // @include stepper.styles();
+    @include stepper.styles();
     @include tabstrip.styles();
     @include treeview.styles();
-    // @include wizard.styles();
+    @include wizard.styles();
 
 
     // Layout & containers
     @include card.styles();
     @include expansion-panel.styles();
     @include panelbar.styles();
-    // @include splitter.styles();
+    @include splitter.styles();
     @include tilelayout.styles();
 
 
@@ -312,13 +308,13 @@
     @include mediaplayer.styles();
     // @include timeline.styles();
     // @include pdf-viewer.styles();
-    // @include scroller.styles();
+    @include scroller.styles();
     // @include scrollview.styles();
 
 
     // Dataviz
-    // @include dataviz.styles();
-    // @include map.styles();
+    @include dataviz.styles();
+    @include map.styles();
     @include orgchart.styles();
-    // @include signature.styles();
+    @include signature.styles();
 }

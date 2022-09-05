@@ -173,15 +173,8 @@
     // Input multiple values
     .k-input-values {
         width: 100%;
-        padding-inline: calc( var( --INTERNAL--kendo-input-padding-y, 0 ) / 2 );
-        padding-block: calc( var( --INTERNAL--kendo-input-padding-y, 0 ) / 2 );
         gap: calc( var( --INTERNAL--kendo-input-padding-y, 0 ) / 2 );
         cursor: text;
-    }
-    .k-input-values > .k-searchbar,
-    .k-input-values > .k-input-inner {
-        margin-inline: calc( var( --INTERNAL--kendo-input-padding-y, 0 ) / 2 );
-        margin-block: calc( var( --INTERNAL--kendo-input-padding-y, 0 ) / 2 );
     }
 
 

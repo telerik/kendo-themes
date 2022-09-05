@@ -62,7 +62,7 @@ $kendo-progressbar-disabled-border: $kendo-progressbar-disabled-bg !default;
 
 /// Progress background color of the progressbar.
 /// @group progressbar
-$kendo-progressbar-fill-bg: get-theme-color-var( primary-130 ) !default;
+$kendo-progressbar-fill-bg: get-theme-color-var( primary-100 ) !default;
 /// Progress text color of the progressbar.
 /// @group progressbar
 $kendo-progressbar-fill-text: var( --kendo-component-text, initial ) !default;
@@ -92,10 +92,10 @@ $kendo-progressbar-indeterminate-text: $kendo-progressbar-text !default;
 $kendo-progressbar-indeterminate-border: get-theme-color-var( neutral-30 ) !default;
 /// Gradient of the horizontal indeterminate progressbar.
 /// @group progressbar
-$kendo-progressbar-indeterminate-gradient-horizontal: linear-gradient(270deg, get-theme-color-var( neutral-30 ) 15%, get-theme-color-var( primary-130 ) 50%, get-theme-color-var( neutral-30 ) 85%) !default;
+$kendo-progressbar-indeterminate-gradient-horizontal: linear-gradient(270deg, get-theme-color-var( neutral-30 ) 15%, get-theme-color-var( primary-100 ) 50%, get-theme-color-var( neutral-30 ) 85%) !default;
 /// Gradient of the vertical indeterminate progressbar.
 /// @group progressbar
-$kendo-progressbar-indeterminate-gradient-vertical: linear-gradient(180deg, get-theme-color-var( neutral-30 ) 15%, get-theme-color-var( primary-130 ) 50%, get-theme-color-var( neutral-30 ) 85%) !default;
+$kendo-progressbar-indeterminate-gradient-vertical: linear-gradient(180deg, get-theme-color-var( neutral-30 ) 15%, get-theme-color-var( primary-100 ) 50%, get-theme-color-var( neutral-30 ) 85%) !default;
 /// Gradient size of the horizontal indeterminate progressbar.
 /// @group progressbar
 $kendo-progressbar-indeterminate-animation-horizontal: 3s ease 0s infinite running progressbar-indeterminate-animation-horizontal;
@@ -106,7 +106,7 @@ $kendo-progressbar-indeterminate-animation-vertical: 3s ease 0s infinite running
 // Circular Progressbar
 /// Arc stroke color of the circular progressbar.
 /// @group progressbar
-$kendo-circular-progressbar-arc-stroke: get-theme-color-var( primary-130 ) !default;
+$kendo-circular-progressbar-arc-stroke: get-theme-color-var( primary-100 ) !default;
 /// Scale stroke background color of the circular progressbar.
 /// @group progressbar
 $kendo-circular-progressbar-scale-stroke: $kendo-progressbar-bg !default;

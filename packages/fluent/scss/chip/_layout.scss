@@ -1,0 +1,156 @@
+@use "_variables.scss" as *;
+@use "../core/_variables.scss" as *;
+
+@mixin kendo-chip--layout() {
+
+    // Chip
+    .k-chip {
+        padding-inline: var( --INTERNAL-kendo-chip-padding-x, 0 );
+        padding-block: var( --INTERNAL-kendo-chip-padding-y, 0 );
+        border-width: var( --kendo-chip-border-width, #{ $kendo-chip-border-width } );
+        border-style: solid;
+        outline: 0;
+        font-family: var( --kendo-chip-font-family, #{ $kendo-chip-font-family } );
+        font-size: var( --INTERNAL-kendo-chip-font-size, 1rem );
+        line-height: var( --INTERNAL-kendo-chip-line-height, normal );
+        display: inline-flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: center;
+        gap: var( --kendo-chip-spacing, #{ $kendo-chip-spacing } );
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        user-select: none;
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        .k-selected-icon-wrapper {
+            display: none !important; // sass-lint:disable-line no-important
+        }
+
+        &:hover,
+        &:focus {
+            outline: 0;
+            text-decoration: none;
+        }
+
+        &.k-chip-outline.k-focus::after,
+        &.k-chip-outline:focus::after {
+                content: '';
+                position: absolute;
+                border: medium none;
+                inset: var( --kendo-chip-focus-offset, #{ $kendo-chip-focus-offset } );
+                outline-width: var( --kendo-chip-focus-outline-width, #{ $kendo-chip-focus-outline-width } );
+                outline-style: var( --kendo-chip-focus-outline-style, #{ $kendo-chip-focus-outline-style } );
+                z-index: 1;
+        }
+    }
+
+
+    // Chip content
+    .k-chip-content {
+        padding: .5em 0;
+        margin: -.5em 0;
+        min-width: 0;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        overflow: hidden;
+        flex: 1 1 auto;
+    }
+
+    .k-chip-content:first-child {
+        margin-inline-start: var( --kendo-chip-spacing, #{ $kendo-chip-spacing } );
+    }
+    .k-chip-content:last-child {
+        margin-inline-end: var( --kendo-chip-spacing, #{ $kendo-chip-spacing } );
+    }
+
+    // Chip text
+    .k-chip-text,
+    .k-chip-label {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        flex: 1 1 auto;
+    }
+
+
+    // Chip avatar
+    .k-chip-avatar {
+        width: var( --kendo-chip-avatar-width, #{ $kendo-chip-avatar-width } );
+        height: var( --kendo-chip-avatar-height, #{ $kendo-chip-avatar-height } );
+        flex-basis: var( --kendo-chip-avatar-flex-basis, #{ $kendo-chip-avatar-flex-basis } );
+        border-radius: 50%;
+        background-size: cover;
+        background-position: center;
+        flex: none;
+    }
+
+
+    // Chip icon
+    .k-chip-icon {
+        font-size: inherit;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: none;
+    }
+
+
+    // Actions
+    .k-chip-actions {
+        margin: -5em 0;
+        flex: none;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        align-self: center;
+    }
+    .k-chip-action {
+        flex: none;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        align-self: center;
+    }
+
+
+    // Chip list
+    .k-chip-list {
+        min-width: 0px;
+        display: inline-flex;
+        flex-wrap: wrap;
+        align-items: center;
+        position: relative;
+    }
+
+
+    // Sizes
+    @each $size, $size-props in $kendo-chip-sizes {
+        $_padding-x: map-get( $size-props, padding-x );
+        $_padding-y: map-get( $size-props, padding-y );
+        $_font-size: map-get( $size-props, font-size );
+        $_line-height: map-get( $size-props, line-height );
+
+        .k-chip-#{$size} {
+            --INTERNAL-kendo-chip-padding-x: #{ $_padding-x };
+            --INTERNAL-kendo-chip-padding-y: #{ $_padding-y };
+            --INTERNAL-kendo-chip-font-size: #{ $_font-size };
+            --INTERNAL-kendo-chip-line-height: #{ $_line-height };
+        }
+    }
+
+    // Sizes
+    @each $name, $size in $kendo-chip-list-sizes {
+        .k-chip-list-#{$name} {
+            gap: $size;
+        }
+    }
+    
+}

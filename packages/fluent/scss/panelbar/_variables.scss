@@ -80,7 +80,7 @@ $kendo-panelbar-header-border: inherit !default;
 $kendo-panelbar-header-hovered-bg: var( --kendo-hover-bg, inherit ) !default;
 /// Text color of the panelbar header when hovered.
 /// @group panelbar
-$kendo-panelbar-header-hovered-text: get-theme-color-var( primary-150 ) !default;
+$kendo-panelbar-header-hovered-text: get-theme-color-var( primary-110 ) !default;
 /// Border color of the panelbar header when hovered.
 /// @group panelbar
 $kendo-panelbar-header-hovered-border: inherit !default;
@@ -119,7 +119,7 @@ $kendo-panelbar-header-selected-text: $black !default;
 $kendo-panelbar-header-selected-border: inherit !default;
 /// Color of the marker of the panelbar header when selected.
 /// @group panelbar
-$kendo-panelbar-selected-marker: get-theme-color-var( primary-130 ) !default;
+$kendo-panelbar-selected-marker: get-theme-color-var( primary-100 ) !default;
 
 /// Background color of the panelbar header when selected and hovered.
 /// @group panelbar
@@ -166,7 +166,7 @@ $kendo-panelbar-header-expanded-border: inherit !default;
 $kendo-panelbar-item-hovered-bg: var( --kendo-hover-bg, inherit ) !default;
 /// Text color of the panelbar item when hovered.
 /// @group panelbar
-$kendo-panelbar-item-hovered-text: get-theme-color-var( primary-150 ) !default;
+$kendo-panelbar-item-hovered-text: get-theme-color-var( primary-110 ) !default;
 /// Border color of the panelbar item when hovered.
 /// @group panelbar
 $kendo-panelbar-item-hovered-border: inherit !default;

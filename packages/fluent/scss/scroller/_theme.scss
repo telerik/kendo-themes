@@ -1,0 +1,8 @@
+@use "_variables.scss" as *;
+
+@mixin kendo-scroller--theme() {
+
+    .km-touch-scrollbar {
+        background-color: #333333;
+    }
+}

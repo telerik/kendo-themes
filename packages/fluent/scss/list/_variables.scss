@@ -121,7 +121,7 @@ $kendo-list-group-item-font-weight: var( --kendo-font-weight-bold, normal ) !def
 
 /// Color of the list item icon
 /// @group list
-$kendo-list-item-icon-text: get-theme-color-var( primary-130 ) !default;
+$kendo-list-item-icon-text: get-theme-color-var( primary-100 ) !default;
 
 // Kendo list sizes
 $kendo-list-sizes: (
@@ -201,7 +201,7 @@ $kendo-list-border: var( --kendo-component-border, inherit ) !default;
 $kendo-list-header-bg: $white !default;
 /// Text color of list header.
 /// @group list
-$kendo-list-header-text: get-theme-color-var( primary-130 ) !default;
+$kendo-list-header-text: get-theme-color-var( primary-100 ) !default;
 /// Border color of list header.
 /// @group list
 $kendo-list-header-border: inherit !default;
@@ -260,7 +260,7 @@ $kendo-list-item-disabled-text: get-theme-color-var( neutral-90 ) !default;
 $kendo-list-group-item-bg: $white !default;
 /// Text color of list group items.
 /// @group list
-$kendo-list-group-item-text: get-theme-color-var( primary-130 ) !default;
+$kendo-list-group-item-text: get-theme-color-var( primary-100 ) !default;
 /// The border color of list group items.
 /// @group list
 $kendo-list-group-item-border: inherit !default;

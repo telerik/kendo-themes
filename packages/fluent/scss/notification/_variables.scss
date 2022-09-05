@@ -1,3 +1,4 @@
+@use "sass:map";
 @use "../core/color-system" as *;
 @use "../core/_variables.scss" as *;
 
@@ -28,13 +29,13 @@ $kendo-notification-font-size: var( --kendo-font-size-sm, inherit ) !default;
 $kendo-notification-line-height: var( --kendo-line-height, normal ) !default;
 /// Background color of the notification.
 /// @group notification
-$kendo-notification-bg: $kendo-component-bg !default;
+$kendo-notification-bg: var( --kendo-component-bg, inherit ) !default;
 /// Text color of the notification.
 /// @group notification
-$kendo-notification-text: $kendo-component-text !default;
+$kendo-notification-text: var( --kendo-component-text, inherit ) !default;
 /// Border color of the notification.
 /// @group notification
-$kendo-notification-border: $kendo-component-border !default;
+$kendo-notification-border: var( --kendo-component-border, inherit ) !default;
 /// Box shadow of the notification.
 /// @group notification
 $kendo-notification-box-shadow: none !default;
@@ -47,4 +48,55 @@ $kendo-notification-icon-spacing: map-get( $kendo-spacing, 2 ) !default;
 $kendo-notification-close-icon-spacing: map-get( $kendo-spacing, 4 ) !default;
 /// Color of the notification icon.
 /// @group notification
-$kendo-notification-icon-text: $kendo-component-text !default;
+$kendo-notification-icon-text: var( --kendo-component-text, inherit ) !default;
+
+/// Theme variations for the notification.
+$kendo-notification-brand-colors: (
+    primary: primary,
+    error: error,
+    warning: warning,
+    success: success,
+    info: info,
+    secondary: neutral,
+    tertiary: tertiary,
+);
+
+// Matrix with notification theme colors in the order: bg, color, border
+$_tc-notification-matrix: (
+    (normal: (20, 190, 20)),
+);
+
+$_tc-notification-dark-matrix: (
+    (normal: (160, $white, 160)),
+);
+
+$_tc-notification-light-matrix: (
+    (normal: (50, 160, 50)),
+);
+
+/// Theme colors map for the notification variations.
+$kendo-notification-theme-colors: ();
+
+@each $ui-states in $_tc-notification-matrix {
+    @each $brand-color, $palette in $kendo-notification-brand-colors {
+        $kendo-notification-theme-colors: map.deep-merge(
+            $kendo-notification-theme-colors,
+            generate-theme-variation( $brand-color, $palette, $ui-states )
+        );
+    };
+}
+
+@each $ui-states in $_tc-notification-dark-matrix {
+    $kendo-notification-theme-colors: map.deep-merge(
+        $kendo-notification-theme-colors,
+        generate-theme-variation( dark, neutral, $ui-states )
+    );
+}
+
+@each $ui-states in $_tc-notification-light-matrix {
+    $kendo-notification-theme-colors: map.deep-merge(
+        $kendo-notification-theme-colors,
+        generate-theme-variation( light, neutral, $ui-states )
+    );
+}
+

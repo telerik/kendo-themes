@@ -1,0 +1,474 @@
+@use "sass:string";
+@use "../core/" as *;
+@use "_variables.scss" as *;
+@use "../tooltip/_variables.scss" as *;
+
+@mixin kendo-dataviz--layout() {
+
+    .k-barcode {
+        display: inline-block;
+
+        > div {
+            height: 150px;
+        }
+    }
+
+     // Exported variables
+     .k-var--chart-font {
+        font-size: var( --kendo-chart-font-size, #{$kendo-chart-font-size} );
+    }
+
+    .k-var--chart-title-font {
+        font-size: var( --kendo-chart-title-font-size, #{$kendo-chart-title-font-size} );
+    }
+
+    .k-var--chart-pane-title-font {
+        font-size: var( --kendo-chart-pane-title-font-size, #{$kendo-chart-pane-title-font-size} );
+        font-weight: var( --kendo-chart-pane-title-font-weight, #{$kendo-chart-pane-title-font-weight} );
+    }
+
+    .k-var--chart-label-font {
+        font-size: var( --kendo-chart-label-font-size, #{$kendo-chart-label-font-size} );
+    }
+
+    // Elements
+    .k-chart,
+    .k-sparkline,
+    .k-stockchart {
+        border-width: var( --kendo-chart-border-width, #{$kendo-chart-border-width} );
+        border-style: solid;
+        box-sizing: border-box;
+        outline: 0;
+        font-family: var( --kendo-chart-font-family, #{$kendo-chart-font-family} );
+        font-size: var( --kendo-chart-font-size, #{$kendo-chart-font-size} );
+        line-height: var( --kendo-chart-line-height, #{$kendo-chart-line-height} );
+        -webkit-touch-callout: none;
+        -webkit-tap-highlight-color: $rgba-transparent;
+    }
+
+    .k-chart,
+    .k-stockchart {
+        display: block;
+        height: 400px;
+    }
+
+    .k-chart-surface {
+        height: 100%;
+    }
+
+    .k-chart .k-popup {
+        border-width: 0;
+    }
+
+    .k-chart-tooltip-wrapper .k-animation-container-shown,
+    .k-chart-tooltip-wrapper.k-animation-container-shown {
+        transition: left ease-in 80ms, top ease-in 80ms;
+    }
+
+    .k-sparkline-tooltip-wrapper,
+    .k-chart-tooltip-wrapper {
+        z-index: 12000;
+
+        .k-popup {
+            padding: 0;
+            border-width: 0;
+            background: transparent;
+        }
+    }
+
+    .k-chart-tooltip table {
+        border-spacing: 0;
+        border-collapse: collapse;
+    }
+
+    .k-chart-tooltip {
+        @include border-radius( var( --kendo-border-radius-md, #{$kendo-border-radius-md} ) );
+        font-size: var( --kendo-chart-tooltip-font-size, #{$kendo-chart-tooltip-font-size} );
+        line-height: var( --kendo-chart-tooltip-line-height, #{$kendo-chart-tooltip-line-height} );
+        padding-inline: var( --kendo-chart-tooltip-padding-x, #{$kendo-tooltip-padding-x} );
+        padding-block: var( --kendo-chart-tooltip-padding-y, #{$kendo-tooltip-padding-y} );
+    }
+
+    .k-chart-tooltip th {
+        width: auto;
+        text-align: center;
+        padding: 1px;
+    }
+
+    .k-chart-tooltip td {
+        width: auto;
+        text-align: left;
+        padding-inline: var( --kendo-padding-x-sm, #{$kendo-padding-x-sm} ) ;
+        padding-block: var( --kendo-padding-y-sm, #{$kendo-padding-y-sm} ) ;
+        line-height: var( --kendo-chart-tooltip-line-height, #{$kendo-chart-tooltip-line-height} );
+        vertical-align: middle;
+    }
+
+    .k-chart-crosshair-tooltip,
+    .k-chart-shared-tooltip {
+        border-width: 1px;
+        border-style: solid;
+    }
+
+    .k-chart-shared-tooltip .k-chart-shared-tooltip-marker {
+        display: block;
+        width: 15px;
+        height: 3px;
+        vertical-align: middle;
+    }
+
+    // Selection
+    .k-selector {
+        position: absolute;
+        transform: translateZ(0);
+    }
+
+    .k-selection {
+        position: absolute;
+        height: 100%;
+        border-width: 1px;
+        border-style: solid;
+        border-bottom: 0;
+    }
+
+    .k-selection-bg {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+
+    .k-handle {
+        @include border-radius( 50% );
+        width: var( --kendo-selection-handle-size, #{$kendo-selection-handle-size} );
+        height: var( --kendo-selection-handle-size, #{$kendo-selection-handle-size} );
+        border-width: 1px;
+        border-style: solid;
+        z-index: 1;
+        position: absolute;
+        box-sizing: content-box;
+    }
+
+    .k-handle div {
+        width: 100%;
+        height: 100%;
+    }
+
+    .k-left-handle {
+        inset-inline-start: calc( var( kendo-selection-handle-size, #{$kendo-selection-handle-size} ) / -2 );
+    }
+
+    .k-right-handle {
+        inset-inline-end: calc( var( kendo-selection-handle-size, #{$kendo-selection-handle-size} ) / -2 );
+    }
+
+    .k-left-handle div {
+        margin-block-start: calc( var( --kendo-selection-handle-size, #{$kendo-selection-handle-size} ) * -1  );
+        margin-inline-start: calc( var( --kendo-selection-handle-size, #{$kendo-selection-handle-size} ) / -1.5 );
+        padding-block-start: calc( var( --kendo-selection-handle-size, #{$kendo-selection-handle-size} ) * 2 ) ;
+        padding-inline-end: calc( ( var( --kendo-selection-handle-size, #{$kendo-selection-handle-size} ) / 1.5 ) * 2 );
+    }
+
+    .k-right-handle div {
+        margin-block-start: calc( var( --kendo-selection-handle-size, #{$kendo-selection-handle-size} ) * -1 );
+        margin-inline-start: calc( var( --kendo-selection-handle-size, #{$kendo-selection-handle-size} ) / -1.5 );
+        padding-block-start: calc( var( --kendo-selection-handle-size, #{$kendo-selection-handle-size} ) * 2 );
+        padding-inline-start: calc( ( var( --kendo-selection-handle-size, #{$kendo-selection-handle-size} ) / 1.5 ) * 2 );
+    }
+
+    .k-left-handle.k-handle-active div {
+        margin-inline-start: calc( var( --kendo-selection-handle-size, #{$kendo-selection-handle-size} ) * 2 );
+        padding-inline-start: calc( calc( var( --kendo-selection-handle-size, #{$kendo-selection-handle-size} ) * 2 ) + calc( var( --kendo-selection-handle-size, #{$kendo-selection-handle-size} ) / 1.5 ) );
+    }
+
+    .k-right-handle.k-handle-active div {
+        margin-inline-start: calc( var( --kendo-selection-handle-size, #{$kendo-selection-handle-size} ) * 2 );
+        padding-inline-end: calc( calc( var( --kendo-selection-handle-size, #{$kendo-selection-handle-size} ) * 2 ) + calc( var( --kendo-selection-handle-size, #{$kendo-selection-handle-size} ) / 1.5 ) );
+    }
+
+    .k-mask {
+        position: absolute;
+        height: 100%;
+    }
+
+    // Navigator hint
+    .k-navigator-hint div {
+        position: absolute;
+    }
+
+    .k-navigator-hint .k-scroll {
+        @include border-radius( var( --kendo-border-radius-md, #{$kendo-border-radius-md} ) );
+        position: absolute;
+        height: 4px;
+    }
+
+    .k-navigator-hint .k-tooltip {
+        margin-top: 20px;
+        min-width: 160px;
+        opacity: 1;
+        text-align: center;
+    }
+
+    // Sparklines
+    .k-sparkline,
+    .k-sparkline span {
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .k-sparkline span {
+        height: 100%;
+        width: 100%;
+    }
+
+    .k-chart-dragging {
+        user-select: none;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+    }
+
+    .k-chart-donut-center {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 50%;
+        text-align: center;
+
+        border: 4px solid transparent;
+        box-sizing: border-box;
+    }
+
+    .k-pdf-export {
+        .k-chart,
+        .k-sparkline,
+        .k-stockchart {
+            .k-animation-container {
+                display: none;
+            }
+        }
+    }
+
+    .k-diagram {
+        height: 600px;
+    }
+
+    .k-diagram .km-scroll-wrapper {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+
+    .k-diagram .km-scroll-wrapper {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+
+    .k-canvas-container {
+        width: 100%;
+        height: 100%;
+    }
+
+    // IE8-
+    .k-diagram img {
+        box-sizing: content-box;
+    }
+
+    // Base
+    .k-treemap {
+        height: 400px;
+        box-sizing: border-box;
+        border-width: 1px;
+        border-style: solid;
+        outline: 0;
+        font-family: var( --kendo-treemap-font-family, #{$kendo-treemap-font-family} );
+        font-size: var( --kendo-treemap-font-size, #{$kendo-treemap-font-size} );
+        line-height: var( --kendo-treemap-line-height, #{$kendo-treemap-line-height} );
+        display: block;
+        overflow: hidden;
+        -webkit-touch-callout: none;
+        -webkit-tap-highlight-color: $rgba-transparent;
+
+        // Tile
+        .k-treemap-tile {
+            margin: -1px 0 0 -1px;
+            height: 100%;
+            box-sizing: border-box;
+            border: 1px solid;
+            border-color: inherit;
+            color: inherit;
+            background-color: inherit;
+            overflow: hidden;
+            position: absolute;
+        }
+        > .k-treemap-tile {
+            position: relative;
+        }
+
+        // Title
+        .k-treemap-title {
+            padding-inline: var( --kendo-padding-x-sm, #{$kendo-padding-x-sm} );
+            padding-block: var( --kendo-padding-y-sm, #{$kendo-padding-y-sm} );
+            border-width: 0 0 1px;
+            border-style: solid;
+            border-color: inherit;
+            font-size: var( --kendo-treemap-font-size, #{$kendo-treemap-font-size} );
+            background-position: 0 0;
+            background-repeat: repeat-x;
+        }
+        .k-treemap-title-vertical {
+            padding-inline: var( --kendo-padding-y-sm, #{$kendo-padding-y-sm} );
+            padding-block: var( --kendo-padding-x-sm, #{$kendo-padding-x-sm} );
+            width: var( --kendo-line-height-em, #{$kendo-line-height-em} );
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+
+            > div {
+                transform-origin: right;
+                transform: rotate(-90deg);
+                position: absolute;
+                top: 0;
+                right: 1em;
+            }
+        }
+
+
+        // Wrap
+        .k-treemap-wrap {
+            border-color: inherit;
+            color: inherit;
+            background-color: inherit;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+        }
+        .k-treemap-title + .k-treemap-wrap {
+            inset-block-start: calc( #{$kendo-padding-y-sm} * 2 + (#{$kendo-line-height} * #{$kendo-font-size}) + 1px);
+        }
+        .k-treemap-title-vertical + .k-treemap-wrap {
+            inset-inline-start: calc( #{$kendo-padding-y-sm} * 2 + (#{$kendo-line-height} * #{$kendo-font-size}) + 1px);
+        }
+
+
+        // Leaf
+        .k-leaf {
+            padding: var( --kendo-padding-x-sm, #{$kendo-padding-x-sm} );
+        }
+    }
+
+    .k-gauge {
+        text-align: left;
+        position: relative;
+    }
+
+    .k-arcgauge,
+    .k-circulargauge {
+        display: inline-block;
+    }
+
+    .k-arcgauge-label,
+    .k-circulargauge-label {
+        position: absolute;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .k-qrcode {
+        display: inline-block;
+
+        > div {
+            height: 150px;
+        }
+    }
+
+    // export variables to allow use in scripts
+    $exported: (
+        accent: get-theme-color( primary, 100 ),
+        accent-contrast: $white,
+        primary: get-theme-color( primary, 100 ),
+        primary-contrast: $white,
+        base: $kendo-component-bg,
+        background: $kendo-component-bg,
+
+        border-radius: $kendo-border-radius-md,
+
+        normal-background: $kendo-component-bg,
+        normal-text-color: $kendo-component-text,
+        hover-background: $kendo-hover-bg,
+        hover-text-color: $kendo-hover-text,
+        selected-background: $kendo-selected-bg,
+        selected-text-color: $kendo-selected-text,
+
+        success: get-theme-color( success, 100 ),
+        info: get-theme-color( info, 100 ),
+        warning: get-theme-color( warning, 100 ),
+        error: get-theme-color( error, 100 ),
+
+        series-a: $kendo-series-a,
+        series-b: $kendo-series-b,
+        series-c: $kendo-series-c,
+        series-d: $kendo-series-d,
+        series-e: $kendo-series-e,
+        series-f: $kendo-series-f,
+
+        series-1: $kendo-series-1,
+        series-2: $kendo-series-2,
+        series-3: $kendo-series-3,
+        series-4: $kendo-series-4,
+        series-5: $kendo-series-5,
+        series-6: $kendo-series-6,
+        series-7: $kendo-series-7,
+        series-8: $kendo-series-8,
+        series-9: $kendo-series-9,
+        series-10: $kendo-series-10,
+        series-11: $kendo-series-11,
+        series-12: $kendo-series-12,
+        series-13: $kendo-series-13,
+        series-14: $kendo-series-14,
+        series-15: $kendo-series-15,
+        series-16: $kendo-series-16,
+        series-17: $kendo-series-17,
+        series-18: $kendo-series-18,
+        series-19: $kendo-series-19,
+        series-20: $kendo-series-20,
+        series-21: $kendo-series-21,
+        series-22: $kendo-series-22,
+        series-23: $kendo-series-23,
+        series-24: $kendo-series-24,
+        series-25: $kendo-series-25,
+        series-26: $kendo-series-26,
+        series-27: $kendo-series-27,
+        series-28: $kendo-series-28,
+        series-29: $kendo-series-29,
+        series-30: $kendo-series-30,
+
+        gauge-pointer: get-theme-color( primary, 100 ),
+        gauge-track: $white
+    );
+
+    @each $name, $value in $exported {
+        $type: type-of($value);
+
+        .k-var--#{$name} {
+            @if $type == "color" {
+                // background-color can store any color
+                background-color: $value;
+            } @else if $type == "string" and string.slice( $value, 1, 4) == "var(" {
+                background-color: $value;
+            } @else if $type == "number" {
+                // margin-top can store positive & negative values
+                margin-top: $value;
+            }
+        }
+    }
+
+}

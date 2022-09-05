@@ -2,8 +2,13 @@
 
 @mixin kendo-overlay--theme() {
 
-    .k-overlay {
+    .k-overlay,
+    .k-overlay-dark {
         background-color: var( --kendo-overlay-dark, #{$kendo-overlay-dark} );
+    }
+
+    .k-overlay-light {
+        background-color: var( --kendo-overlay-light, #{$kendo-overlay-light} );
     }
 
 }
