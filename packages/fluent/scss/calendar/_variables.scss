@@ -152,13 +152,13 @@ $kendo-calendar-weekend-text: inherit !default;
 $kendo-calendar-today-text: $white !default; // use contrast function
 /// Background color of the calendar today cell.
 /// @group calendar
-$kendo-calendar-today-bg: get-theme-color-var( primary-130 ) !default;
+$kendo-calendar-today-bg: get-theme-color-var( primary-100 ) !default;
 /// Text color of the calendar today cell when hovered.
 /// @group calendar
 $kendo-calendar-today-hover-text: $white !default;  // use contrast function
 /// Background color of the calendar today cell when hovered.
 /// @group calendar
-$kendo-calendar-today-hover-bg: get-theme-color-var( primary-160 ) !default;
+$kendo-calendar-today-hover-bg: get-theme-color-var( primary-120 ) !default;
 /// Border radius of the calendar today cell.
 /// @group calendar
 $kendo-calendar-today-border-radius: 9999px !default;

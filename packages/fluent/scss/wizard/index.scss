@@ -1,12 +1,10 @@
 // Module meta
 $_kendo-module-meta: (
-    name: "card",
+    name: "wizard",
     dependencies: (
-        "action-buttons",
         "button",
         "icon",
-        "typography",
-        "avatar"
+        "stepper"
     )
 );
 
@@ -22,8 +20,8 @@ $_kendo-module-meta: (
 
 // Expose
 @mixin styles() {
-    @include module.render( "card" ) {
-        @include kendo-card--layout();
-        @include kendo-card--theme();
+    @include module.render( "wizard" ) {
+        @include kendo-wizard--layout();
+        @include kendo-wizard--theme();
     }
 }

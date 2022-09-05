@@ -1,5 +1,7 @@
+@use "sass:map";
 @use "../core/color-system" as *;
 @use "../core/_variables.scss" as *;
+@use "../button/_variables.scss" as *;
 
 /// Horizontal padding of the card.
 /// @group card
@@ -141,8 +143,28 @@ $kendo-card-actions-gap: map-get( $kendo-spacing, 2 ) !default;
 /// Border radius of the scroll button in the card deck.
 /// @group card
 $kendo-card-deck-scroll-button-radius: 0 !default;
-$kendo-card-deck-scroll-button-offset: -1px !default; // -$kendo-button-border-width
+$kendo-card-deck-scroll-button-offset: calc( -1 * #{$kendo-button-border-width} ) !default;
 
 /// Size of the card callout.
 /// @group card
 $kendo-card-callout-size: 20px !default;
+
+/// Theme variations for the card.
+$kendo-card-brand-colors: ( primary, error, warning, success, info );
+
+// Matrix with card theme colors in the order: bg, color, border
+$_tc-card-matrix: (
+    (normal: (20, 160, 20)),
+);
+
+/// Theme colors map for the card variations.
+$kendo-card-theme-colors: ();
+
+@each $ui-states in $_tc-card-matrix {
+    @each $brand-color in $kendo-card-brand-colors {
+        $kendo-card-theme-colors: map.deep-merge(
+            $kendo-card-theme-colors,
+            generate-theme-variation( $brand-color, $brand-color, $ui-states )
+        );
+    };
+}

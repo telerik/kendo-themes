@@ -1,3 +1,4 @@
+@use "sass:map";
 @use "../core/color-system" as *;
 @use "../core/variables" as *;
 
@@ -44,13 +45,62 @@ $kendo-appbar-font-family: var( --kendo-font-family, inherit ) !default;
 /// @group appbar
 $kendo-appbar-spacing: map-get( $kendo-spacing, 2 ) !default;
 
-/// Theme colors of the AppBar
-/// @group appbar
-$kendo-appbar-theme-colors: map-merge(
-    $kendo-theme-colors, (
-        primary: (
-            text: $white,
-            bg: get-theme-color-var( primary-130 )
-        )
-    )
+/// Theme variations for the appbar.
+$kendo-appbar-brand-colors: (
+    primary: primary,
+    error: error,
+    success: success,
+    info: info,
+    secondary: neutral,
+    tertiary: tertiary,
+ );
+
+// Matrix with appbar theme colors in the order: bg, color, border
+$_tc-appbar-matrix: (
+    (normal: (100, $white, 100)),
 );
+
+$_tc-appbar-warning-matrix: (
+    (normal: (100, get-theme-color-var( neutral-160 ), 100)),
+);
+
+$_tc-appbar-dark-matrix: (
+    (normal: (160, $white, 160)),
+);
+
+$_tc-appbar-light-matrix: (
+    (normal: (50, 160, 50)),
+);
+
+/// Theme colors map for the appbar variations.
+$kendo-appbar-theme-colors: ();
+
+@each $ui-states in $_tc-appbar-matrix {
+    @each $brand-color, $palette in $kendo-appbar-brand-colors {
+        $kendo-appbar-theme-colors: map.deep-merge(
+            $kendo-appbar-theme-colors,
+            generate-theme-variation( $brand-color, $palette, $ui-states )
+        );
+    };
+}
+
+@each $ui-states in $_tc-appbar-warning-matrix {
+    $kendo-appbar-theme-colors: map.deep-merge(
+        $kendo-appbar-theme-colors,
+        generate-theme-variation( warning, warning, $ui-states )
+    );
+}
+
+@each $ui-states in $_tc-appbar-dark-matrix {
+    $kendo-appbar-theme-colors: map.deep-merge(
+        $kendo-appbar-theme-colors,
+        generate-theme-variation( dark, neutral, $ui-states )
+    );
+}
+
+@each $ui-states in $_tc-appbar-light-matrix {
+    $kendo-appbar-theme-colors: map.deep-merge(
+        $kendo-appbar-theme-colors,
+        generate-theme-variation( light, neutral, $ui-states )
+    );
+}

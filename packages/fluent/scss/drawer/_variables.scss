@@ -77,7 +77,7 @@ $kendo-drawer-mini-initial-width: calc( 4 * #{$kendo-drawer-item-padding-x} + #{
 $kendo-drawer-item-ripple-border-width: map-get( $kendo-spacing, thin ) !default;
 /// The border color of the drawer item ripple
 /// @group drawer
-$kendo-drawer-item-ripple-border: get-theme-color-var( primary-130 ) !default;
+$kendo-drawer-item-ripple-border: get-theme-color-var( primary-100 ) !default;
 /// Background color of the drawer item.
 /// @group drawer
 $kendo-drawer-item-bg: $kendo-drawer-bg !default;
@@ -86,17 +86,17 @@ $kendo-drawer-item-bg: $kendo-drawer-bg !default;
 $kendo-drawer-item-text: $kendo-drawer-text !default;
 /// Text color of the drawer item icon.
 /// @group drawer
-$kendo-drawer-item-icon-text: get-theme-color-var( primary-130 ) !default;
+$kendo-drawer-item-icon-text: get-theme-color-var( primary-100 ) !default;
 
 /// Background color of the hovered drawer item.
 /// @group drawer
 $kendo-drawer-item-hover-bg: $kendo-drawer-item-bg !default;
 /// Text color of the hovered drawer item.
 /// @group drawer
-$kendo-drawer-item-hover-text: get-theme-color-var( primary-150 ) !default;
+$kendo-drawer-item-hover-text: get-theme-color-var( primary-110 ) !default;
 /// Text color of the hovered drawer item icon.
 /// @group drawer
-$kendo-drawer-item-hover-icon-text: get-theme-color-var( primary-150 ) !default;
+$kendo-drawer-item-hover-icon-text: get-theme-color-var( primary-110 ) !default;
 
 /// Background color of the focused drawer item.
 /// @group drawer
@@ -122,7 +122,7 @@ $kendo-drawer-item-selected-bg: var( --kendo-selected-bg, initial ) !default;
 $kendo-drawer-item-selected-text: $black !default;
 /// Text color of the selected drawer item icon.
 /// @group drawer
-$kendo-drawer-item-selected-icon-text: get-theme-color-var( primary-160 ) !default;
+$kendo-drawer-item-selected-icon-text: get-theme-color-var( primary-120 ) !default;
 /// Background color of the selected and hovered drawer item.
 /// @group drawer
 $kendo-drawer-item-selected-hover-bg: var(--kendo-selected-hover-bg, inherit ) !default;

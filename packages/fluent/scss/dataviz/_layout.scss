@@ -392,9 +392,9 @@
 
     // export variables to allow use in scripts
     $exported: (
-        accent: get-theme-color( primary, 130 ),
+        accent: get-theme-color( primary, 100 ),
         accent-contrast: $white,
-        primary: get-theme-color( primary, 130 ),
+        primary: get-theme-color( primary, 100 ),
         primary-contrast: $white,
         base: $kendo-component-bg,
         background: $kendo-component-bg,
@@ -451,7 +451,7 @@
         series-29: $kendo-series-29,
         series-30: $kendo-series-30,
 
-        gauge-pointer: get-theme-color( primary, 130 ),
+        gauge-pointer: get-theme-color( primary, 100 ),
         gauge-track: $white
     );
 

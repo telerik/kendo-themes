@@ -70,7 +70,7 @@ $kendo-scheduler-event-min-height: calc( $kendo-scheduler-line-height + 2 * $ken
 
 /// Background color of the scheduler event.
 /// @group scheduler
-$kendo-scheduler-event-bg: get-theme-color-var( primary-130 ) !default;
+$kendo-scheduler-event-bg: get-theme-color-var( primary-100 ) !default;
 /// Text color of the scheduler event.
 /// @group scheduler
 $kendo-scheduler-event-text: $white !default;
@@ -102,7 +102,7 @@ $kendo-scheduler-event-hover-shadow: null !default;
 
 /// Background color of the selected scheduler event.
 /// @group scheduler
-$kendo-scheduler-event-selected-bg: get-theme-color-var( primary-160 ) !default;
+$kendo-scheduler-event-selected-bg: get-theme-color-var( primary-120 ) !default;
 /// Text color of the selected scheduler event.
 /// @group scheduler
 $kendo-scheduler-event-selected-text: $kendo-scheduler-event-text !default;
@@ -186,7 +186,7 @@ $kendo-scheduler-yearview-indicator-calc-offset-left: calc( 50% - (#{$kendo-sche
 $kendo-scheduler-yearview-indicator-border-radius: 50% !default;
 /// Background color of the days with events indicator in the scheduler year view.
 /// @group scheduler
-$kendo-scheduler-yearview-indicator-bg: get-theme-color-var( primary-130 ) !default;
+$kendo-scheduler-yearview-indicator-bg: get-theme-color-var( primary-100 ) !default;
 /// Background color of the selected days with events indicator in the scheduler year view.
 /// @group scheduler
 $kendo-scheduler-yearview-indicator-selected-bg: $white !default;
@@ -257,4 +257,4 @@ $kendo-scheduler-more-btn-height: 13px !default;
 
 /// Color of the scheduler marquee.
 /// @group scheduler
-$kendo-scheduler-marquee-color: get-theme-color-var( primary-130 );
+$kendo-scheduler-marquee-color: get-theme-color-var( primary-100 );

@@ -112,7 +112,7 @@
 @use "stepper";
 @use "tabstrip";
 @use "treeview";
-// @use "wizard";
+@use "wizard";
 
 
 // Layout & containers
@@ -274,7 +274,7 @@
     @include stepper.styles();
     @include tabstrip.styles();
     @include treeview.styles();
-    // @include wizard.styles();
+    @include wizard.styles();
 
 
     // Layout & containers
