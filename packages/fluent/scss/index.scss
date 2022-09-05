@@ -31,7 +31,7 @@
 @use "badge";
 @use "chip";
 @use "color-preview";
-// @use "loader";
+@use "loader";
 // @use "loading";
 @use "skeleton";
 @use "tooltip";
@@ -193,7 +193,7 @@
     @include badge.styles();
     @include chip.styles();
     @include color-preview.styles();
-    // @include loader.styles();
+    @include loader.styles();
     // @include loading.styles();
     @include skeleton.styles();
     @include tooltip.styles();
