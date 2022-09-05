@@ -31,7 +31,7 @@
 @use "badge";
 @use "chip";
 @use "color-preview";
-// @use "loader";
+@use "loader";
 // @use "loading";
 @use "skeleton";
 @use "tooltip";
@@ -158,7 +158,7 @@
 @use "dataviz";
 @use "map";
 @use "orgchart";
-// @use "signature";
+@use "signature";
 
 // Setup
 @mixin config($config: null ) {
@@ -193,7 +193,7 @@
     @include badge.styles();
     @include chip.styles();
     @include color-preview.styles();
-    // @include loader.styles();
+    @include loader.styles();
     // @include loading.styles();
     @include skeleton.styles();
     @include tooltip.styles();
@@ -320,5 +320,5 @@
     @include dataviz.styles();
     @include map.styles();
     @include orgchart.styles();
-    // @include signature.styles();
+    @include signature.styles();
 }
