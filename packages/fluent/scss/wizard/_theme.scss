@@ -1,0 +1,21 @@
+@use "../core/color-system" as *;
+@use "_variables.scss" as *;
+@use "../core/mixins" as *;
+
+@mixin kendo-wizard--theme() {
+
+    .k-wizard-step {
+        .k-wizard-content {
+            @include fill(
+                var( --kendo-wizard-content-text, #{$kendo-wizard-content-text} ),
+                var( --kendo-wizard-content-bg, #{$kendo-wizard-content-bg} )
+            );
+        }
+
+        &:focus,
+        &.k-focus {
+            outline-color: var( --kendo-wizard-step-border-focused, #{$kendo-wizard-step-border-focused} );
+        }
+    }
+
+}
