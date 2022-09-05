@@ -3,6 +3,31 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.7.0](https://github.com/telerik/kendo-themes/compare/v5.6.0...v5.7.0) (2022-09-05)
+
+
+### Bug Fixes
+
+* **grid:** add support for sort-asc-small and sort-desc-small icons ([f1196db](https://github.com/telerik/kendo-themes/commit/f1196db606a8865e8dc88be04101109ed2cb8bc2))
+* **html:** k-icon-button class is added twice to dropdown button ([cf89feb](https://github.com/telerik/kendo-themes/commit/cf89febdc63daf23e1f6fb71a3f564f48f99f6a4))
+* **notification:** add suport for k-i-x icon ([d0f2e9f](https://github.com/telerik/kendo-themes/commit/d0f2e9fbb96d0eccd4a2db2fae57edec6eb5716d))
+* **pager:** add support for pager icons ([7897467](https://github.com/telerik/kendo-themes/commit/789746723c78dab79c6ab12c7c3f1347f4add9b2))
+* **scheduler:** add support for caret-alt-left and right icons ([59df4a5](https://github.com/telerik/kendo-themes/commit/59df4a5eb3db00cd5ac8db64f9baa417ca118b28))
+* **scheduler:** add support for k-i-arrow-rotate-cw ([afc91fa](https://github.com/telerik/kendo-themes/commit/afc91fad6f5ba1c16c3258d971e1914de0e30acd))
+* **slider:** change icon selectors for prev and next buttons ([88fbe81](https://github.com/telerik/kendo-themes/commit/88fbe8189650a15597399af791d56b89dca0e042))
+
+
+### Features
+
+* **fab:** add fluent styles ([031bae5](https://github.com/telerik/kendo-themes/commit/031bae5692e4612f55ba2ea94b1e60437031c7fd))
+* **html:** add badge html helper ([c651ffa](https://github.com/telerik/kendo-themes/commit/c651ffa4a26b9fc59e70caf3c4988910bbf96b1a))
+* **html:** streamline interactive class names ([4a46e3e](https://github.com/telerik/kendo-themes/commit/4a46e3e88f76c4d5638fde471c3bfeb11d651e7e))
+* **progressbar:** add progressbar fluent styles ([a0cf62e](https://github.com/telerik/kendo-themes/commit/a0cf62eb3545f54c719f61872a718c2064c627f6))
+
+
+
+
+
 # [5.6.0](https://github.com/telerik/kendo-themes/compare/v5.5.0...v5.6.0) (2022-07-25)
 
 

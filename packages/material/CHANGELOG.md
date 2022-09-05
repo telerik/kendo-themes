@@ -3,6 +3,30 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.7.0](https://github.com/telerik/kendo-themes/compare/v5.6.0...v5.7.0) (2022-09-05)
+
+
+### Bug Fixes
+
+* add calc function when calculating line-height-em ([0f7a691](https://github.com/telerik/kendo-themes/commit/0f7a691cf2a2b3ca97c3757b9d72a265f68c16d2))
+* **calendar:** incorrect cell height ([a80d70e](https://github.com/telerik/kendo-themes/commit/a80d70ec0987611cf91bb59976bef61201138445))
+* **card:** improve callout styles and remove unnecessery variables ([7e8ab03](https://github.com/telerik/kendo-themes/commit/7e8ab03a1b23ce185ed2eb158af27264c7c87c3d))
+* **colorpicker:** import missing coloreditor dependency ([64dbc07](https://github.com/telerik/kendo-themes/commit/64dbc07afab098784c3854f067ae5c7d29b4a662))
+* **daterangepicker:** allow $kendo-daterange-picker-input-width customization ([8dee65a](https://github.com/telerik/kendo-themes/commit/8dee65a5e3bbb7260d72daf627ac2de1c39d93a8))
+* **dropdowngrid:** import missing table dependency ([53a72b8](https://github.com/telerik/kendo-themes/commit/53a72b847e1bedd5093e33f42cfcd0a4d425c9a8))
+* **popover:** improve callout styles and remove unnecessery variables ([26055ad](https://github.com/telerik/kendo-themes/commit/26055ada230a0161e8b51b327d18991f4d831a7b))
+
+
+### Features
+
+* **badge:** update styles to match updated badge component options ([83d705d](https://github.com/telerik/kendo-themes/commit/83d705df1680096b80f16fe1e0ad18b6507e34d2))
+* **pdf-viewer:** update component to match latest design ([8e25562](https://github.com/telerik/kendo-themes/commit/8e255626a39faff48d314558f91abde666bcc24f))
+* streamline interactive class names ([041a9ee](https://github.com/telerik/kendo-themes/commit/041a9ee698a5c1c62f8d6cd2ed01b95e6d7c3b76))
+
+
+
+
+
 # [5.6.0](https://github.com/telerik/kendo-themes/compare/v5.5.0...v5.6.0) (2022-07-25)
 
 

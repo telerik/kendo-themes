@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.7.0](https://github.com/telerik/kendo-themes/compare/v5.6.0...v5.7.0) (2022-09-05)
+
+
+### Bug Fixes
+
+* **utils:** add missing position aliases ([afd8f2c](https://github.com/telerik/kendo-themes/commit/afd8f2c0a9ee03f9e27fae1b5d4a4ea69e88ee51))
+* **utils:** fixes invalid css property values ([bd88a5e](https://github.com/telerik/kendo-themes/commit/bd88a5eeeee3aa8e24dbebd8385a44cada56382a))
+
+
+
+
+
 # [5.6.0](https://github.com/telerik/kendo-themes/compare/v5.5.0...v5.6.0) (2022-07-25)
 
 

@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.7.0](https://github.com/telerik/kendo-themes/compare/v5.6.0...v5.7.0) (2022-09-05)
+
+
+### Bug Fixes
+
+* add calc function when calculating line-height-em ([0f7a691](https://github.com/telerik/kendo-themes/commit/0f7a691cf2a2b3ca97c3757b9d72a265f68c16d2))
+
+
+### Features
+
+* streamline interactive class names ([041a9ee](https://github.com/telerik/kendo-themes/commit/041a9ee698a5c1c62f8d6cd2ed01b95e6d7c3b76))
+
+
+
+
+
 # [5.6.0](https://github.com/telerik/kendo-themes/compare/v5.5.0...v5.6.0) (2022-07-25)
 
 **Note:** Version bump only for package @progress/kendo-theme-nouvelle

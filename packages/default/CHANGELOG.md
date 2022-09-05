@@ -3,6 +3,48 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.7.0](https://github.com/telerik/kendo-themes/compare/v5.6.0...v5.7.0) (2022-09-05)
+
+
+### Bug Fixes
+
+* add calc function when calculating line-height-em ([0f7a691](https://github.com/telerik/kendo-themes/commit/0f7a691cf2a2b3ca97c3757b9d72a265f68c16d2))
+* add important utils for position ([4d6e1dd](https://github.com/telerik/kendo-themes/commit/4d6e1ddff892b44b6fd84072b35cd97ef7247db6))
+* **button:** add default to -button-padding-y-lg value ([f6b1afe](https://github.com/telerik/kendo-themes/commit/f6b1afe82106ce2cdeb58fc610d8a2ecdb52cf4f))
+* **calendar:** incorrect cell height ([a80d70e](https://github.com/telerik/kendo-themes/commit/a80d70ec0987611cf91bb59976bef61201138445))
+* **calendar:** remove hidden from out of range cells to allow customization with themebuilder ([75efce8](https://github.com/telerik/kendo-themes/commit/75efce8698686574028c5341dbb0cdb5eee8f0a0))
+* **card:** improve callout styles and remove unnecessery variables ([7e8ab03](https://github.com/telerik/kendo-themes/commit/7e8ab03a1b23ce185ed2eb158af27264c7c87c3d))
+* **charts:** add chart tooltip popup styles when not a direct child ([c3ec811](https://github.com/telerik/kendo-themes/commit/c3ec8118105e934876db2557dd8475b44a297171))
+* **colorgradient:** change icon selector to a more generic one ([869fb83](https://github.com/telerik/kendo-themes/commit/869fb83625d03342824a5feaae4a7478da408e88))
+* **colorpicker:** import missing coloreditor dependency ([64dbc07](https://github.com/telerik/kendo-themes/commit/64dbc07afab098784c3854f067ae5c7d29b4a662))
+* **daterangepicker:** allow $kendo-daterange-picker-input-width customization ([8dee65a](https://github.com/telerik/kendo-themes/commit/8dee65a5e3bbb7260d72daf627ac2de1c39d93a8))
+* **dropdowngrid:** import missing table dependency ([53a72b8](https://github.com/telerik/kendo-themes/commit/53a72b847e1bedd5093e33f42cfcd0a4d425c9a8))
+* **editor:** add support for k-i-caret-br ([3d16bf2](https://github.com/telerik/kendo-themes/commit/3d16bf21f51fca0e26c46e4e5a315f51fba06b50))
+* **grid:** add support for sort-asc-small and sort-desc-small icons ([f1196db](https://github.com/telerik/kendo-themes/commit/f1196db606a8865e8dc88be04101109ed2cb8bc2))
+* **notification:** add suport for k-i-x icon ([d0f2e9f](https://github.com/telerik/kendo-themes/commit/d0f2e9fbb96d0eccd4a2db2fae57edec6eb5716d))
+* **pager:** add support for pager icons ([7897467](https://github.com/telerik/kendo-themes/commit/789746723c78dab79c6ab12c7c3f1347f4add9b2))
+* **panelbar:** panelbar item focus should not have outline ([d891696](https://github.com/telerik/kendo-themes/commit/d891696133424e04491852cda1697747bf943254))
+* **pivotgrid:** add focus state to empty cell in header ([af75b45](https://github.com/telerik/kendo-themes/commit/af75b45a1626163651c4a986ed4297e74a074209))
+* **popover:** improve callout styles and remove unnecessery variables ([26055ad](https://github.com/telerik/kendo-themes/commit/26055ada230a0161e8b51b327d18991f4d831a7b))
+* **scheduler:** add support for caret-alt-left and right icons ([59df4a5](https://github.com/telerik/kendo-themes/commit/59df4a5eb3db00cd5ac8db64f9baa417ca118b28))
+* **scheduler:** add support for k-i-arrow-rotate-cw ([afc91fa](https://github.com/telerik/kendo-themes/commit/afc91fad6f5ba1c16c3258d971e1914de0e30acd))
+* **slider:** change icon selectors for prev and next buttons ([88fbe81](https://github.com/telerik/kendo-themes/commit/88fbe8189650a15597399af791d56b89dca0e042))
+* **splitter:** icons spacing selector ([f7d2a70](https://github.com/telerik/kendo-themes/commit/f7d2a70fb04d3cbe0b01ca16fb3416b2b84a402b))
+
+
+### Features
+
+* **badge:** update styles to match updated badge component options ([83d705d](https://github.com/telerik/kendo-themes/commit/83d705df1680096b80f16fe1e0ad18b6507e34d2))
+* **drawer:** add fluent styles ([e8787e8](https://github.com/telerik/kendo-themes/commit/e8787e856a9daf7291d70afc5c62455c1b3985b3))
+* **fab:** add fluent styles ([031bae5](https://github.com/telerik/kendo-themes/commit/031bae5692e4612f55ba2ea94b1e60437031c7fd))
+* **pdf-viewer:** update component to match latest design ([8e25562](https://github.com/telerik/kendo-themes/commit/8e255626a39faff48d314558f91abde666bcc24f))
+* streamline interactive class names ([041a9ee](https://github.com/telerik/kendo-themes/commit/041a9ee698a5c1c62f8d6cd2ed01b95e6d7c3b76))
+* **toolbar:** add focus state for k-toolbar-item ([59f8ca9](https://github.com/telerik/kendo-themes/commit/59f8ca96d2a2aad4ac7b9b85850ef5c6e2327bb2))
+
+
+
+
+
 # [5.6.0](https://github.com/telerik/kendo-themes/compare/v5.5.0...v5.6.0) (2022-07-25)
 
 
