@@ -1,0 +1,110 @@
+@use "../core/color-system" as *;
+@use "../button/_variables.scss"as *;
+
+/// Width of the border around the scrollview.
+/// @group scrollview
+$kendo-scrollview-border-width: 0px !default;
+/// Font family of the scrollview.
+/// @group scrollview
+$kendo-scrollview-font-family: var( --kendo-font-family, inherit ) !default;
+/// Font size of the scrollview.
+/// @group scrollview
+$kendo-scrollview-font-size: var( --kendo-font-size, inherit ) !default;
+/// Line height of the scrollview.
+/// @group scrollview
+$kendo-scrollview-line-height: var( --kendo-line-height, normal ) !default;
+
+/// Background color of the scrollview.
+/// @group scrollview
+$kendo-scrollview-bg: var( --kendo-component-bg, inherit ) !default;
+/// Text color of the scrollview.
+/// @group scrollview
+$kendo-scrollview-text: var( --kendo-component-text, inherit ) !default;
+/// Border color of the scrollview.
+/// @group scrollview
+$kendo-scrollview-border: var( --kendo-component-border, inherit ) !default;
+
+/// Scrollview page button size.
+/// @group scrollview
+$kendo-scrollview-pagebutton-size: 10px !default;
+/// Scrollview page background color.
+/// @group scrollview
+$kendo-scrollview-pagebutton-bg: $white !default;
+/// Scrollview page button border color.
+/// @group scrollview
+$kendo-scrollview-pagebutton-border: $kendo-scrollview-pagebutton-bg !default;
+/// Scrollview page button primary background color.
+/// @group scrollview
+$kendo-scrollview-pagebutton-primary-bg: get-theme-color-var( primary-100 ) !default;
+/// Scrollview page button primary border color.
+/// @group scrollview
+$kendo-scrollview-pagebutton-primary-border: $kendo-scrollview-pagebutton-primary-bg !default;
+/// Scrollview page button hover shadow.
+/// @group scrollview
+$kendo-scrollview-pagebutton-hover-shadow: 0 0 0 1px get-theme-color-var( neutral-30 ) !default;
+/// Scrollview page button focus shadow.
+/// @group scrollview
+$kendo-scrollview-pagebutton-focus-shadow: 0 0 0 1px get-theme-color-var( neutral-130 ) !default;
+/// Scrollview page button primary hover shadow.
+/// @group scrollview
+$kendo-scrollview-pagebutton-primary-hover-shadow: 0 0 0 2px get-theme-color-var( neutral-30 ) !default;
+/// Scrollview page button primary focus shadow.
+/// @group scrollview
+$kendo-scrollview-pagebutton-primary-focus-shadow: 0 0 0 2px get-theme-color-var( neutral-130 ) !default;
+
+/// Scrollview pager offset.
+/// @group scrollview
+$kendo-scrollview-pager-offset: 0px !default;
+/// Scrollview pager item spacing.
+/// @group scrollview
+$kendo-scrollview-pager-item-spacing: 20px !default;
+/// Scrollview pager item border width.
+/// @group scrollview
+$kendo-scrollview-pager-item-border-width: 0px !default;
+/// Scrollview pager height.
+/// @group scrollview
+$kendo-scrollview-pager-height: calc( #{$kendo-scrollview-pagebutton-size} + #{$kendo-scrollview-pager-item-border-width * 2} + #{$kendo-scrollview-pager-item-spacing * 2} ) !default;
+
+/// Scrollview pager multidot threshold.
+/// @group scrollview
+$kendo-scrollview-pager-multidot-threshold: 10 !default;
+/// Scrollview pager multidot intermediate.
+/// @group scrollview
+$kendo-scrollview-pager-multidot-intermediate: 3 !default;
+/// Scrollview pager multidot step.
+/// @group scrollview
+$kendo-scrollview-pager-multidot-step: 1px !default;
+
+/// Scrollview pager light background color.
+/// @group scrollview
+$kendo-scrollview-pager-light-bg: rgba( $white, .4 ) !default;
+/// Scrollview pager dark background color.
+/// @group scrollview
+$kendo-scrollview-pager-dark-bg: rgba( $black, .4 ) !default;
+
+/// Scrollview arrow arrows size.
+/// @group scrollview
+$kendo-scrollview-arrow-icon-size: calc( var( --kendo-icon-size-lg, 2rem ) * 2 ) !default;
+/// Scrollview navigation text color.
+/// @group scrollview
+$kendo-scrollview-navigation-color: $white !default;
+/// Scrollview navigation arrows shadow.
+/// @group scrollview
+$kendo-scrollview-navigation-arrow-shadow: var( --kendo-box-shadow-depth-3, none ) !default;
+/// Scrollview navigation background color.
+/// @group scrollview
+$kendo-scrollview-navigation-bg: transparent !default;
+/// Scrollview navigation arrows focus shadow.
+/// @group scrollview
+$kendo-scrollview-navigation-focus-shadow: 0 0 0 1px get-theme-color-var( neutral-130 ) !default;
+/// Scrollview navigation arrows hover shadow.
+/// @group scrollview
+$kendo-scrollview-navigation-arrow-hover-shadow: var( --kendo-box-shadow-depth-4, none ) !default;
+
+/// Scrollview transition duration.
+/// @group scrollview
+$kendo-scrollview-transition-duration: .3s !default;
+/// Scrollview transition timing function.
+/// @group scrollview
+$kendo-scrollview-transition-timing-function: ease-in-out !default;
+

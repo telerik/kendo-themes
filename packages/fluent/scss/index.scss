@@ -148,7 +148,7 @@
 // @use "timeline";
 @use "pdf-viewer";
 @use "scroller";
-// @use "scrollview";
+@use "scrollview";
 
 
 // Dataviz
@@ -307,7 +307,7 @@
     // @include timeline.styles();
     @include pdf-viewer.styles();
     @include scroller.styles();
-    // @include scrollview.styles();
+    @include scrollview.styles();
 
 
     // Dataviz
