@@ -145,10 +145,10 @@ $kendo-taskboard-pane-header-padding-y: $kendo-taskboard-spacer !default;
 $kendo-taskboard-pane-header-padding-x: map-get( $kendo-spacing, 6 )  !default;
 /// Font size of the task board pane header.
 /// @group taskboard
-$kendo-taskboard-pane-header-font-size: var( --kendo-font-size-lg, 1rem ) !default;
+$kendo-taskboard-pane-header-font-size: var( --kendo-font-size-xl, 1rem ) !default;
 /// Font weight of the task board pane header.
 /// @group taskboard
-$kendo-taskboard-pane-header-font-weight: 500 !default;
+$kendo-taskboard-pane-header-font-weight: var( --kendo-font-weight-bold, bold ) !default;
 /// Text color of the task board pane header.
 /// @group taskboard
 $kendo-taskboard-pane-header-text: $kendo-taskboard-pane-text !default;
