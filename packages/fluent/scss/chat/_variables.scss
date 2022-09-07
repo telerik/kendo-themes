@@ -1,0 +1,213 @@
+@use "../core/color-system" as *;
+@use "../core/_variables.scss" as *;
+@use "../toolbar/_variables.scss" as *;
+
+// Chat
+
+/// The box shadow transition of the chat.
+/// @group chat
+$kendo-chat-transition: var( --kendo-transition, inherit );
+/// The hover text of links in the bubble of the chat.
+/// @group chat
+$kendo-chat-link-hover-text: var( --kendo-link-hover-text, inherit );
+/// The text of links in the bubble of the chat.
+/// @group chat
+$kendo-chat-link-text: var( --kendo-link-text, inherit );
+/// The horizontal padding of the chat.
+/// @group chat
+$kendo-chat-padding-x: map-get( $kendo-spacing, 4 ) !default;
+/// The vertical padding of the chat.
+/// @group chat
+$kendo-chat-padding-y: map-get( $kendo-spacing, 4 ) !default;
+/// the width of the chat.
+/// @group chat
+$kendo-chat-width: 500px !default;
+/// The height of the chat.
+/// @group chat
+$kendo-chat-height: 600px !default;
+/// The border width of the chat.
+/// @group chat
+$kendo-chat-border-width: 1px !default;
+/// The font family of the chat.
+/// @group chat
+$kendo-chat-font-family: var( --kendo-font-family, inherit ) !default;
+/// The font size of the chat.
+/// @group chat
+$kendo-chat-font-size: var( --kendo-font-size, inherit ) !default;
+/// The line height of the chat.
+/// @group chat
+$kendo-chat-line-height: var( --kendo-line-height, normal ) !default;
+
+/// The size of the chat typeing indicator dot in the chat.
+/// @group chat
+$kendo-chat-typing-indicator-dot-size: 8px !default;
+/// The spacing of the chat typeing indicator dot in the chat.
+/// @group chat
+$kendo-chat-typing-indicator-dot-spacing: 5px !default;
+
+/// The horizontal spacing between items of the chat.
+/// @group chat
+$kendo-chat-item-spacing-x: map-get( $kendo-spacing, 2 ) !default;
+/// The vertical spacing between items of the chat.
+/// @group chat
+$kendo-chat-item-spacing-y: map-get( $kendo-spacing, 4 ) !default;
+
+/// The horizontal padding of message list of the chat.
+/// @group chat
+$kendo-chat-message-list-padding-x: $kendo-chat-padding-x !default;
+/// The vertical padding of message list of the chat.
+/// @group chat
+$kendo-chat-message-list-padding-y: $kendo-chat-padding-y !default;
+/// The spacing of message list of the chat.
+/// @group chat
+$kendo-chat-message-list-spacing: $kendo-chat-item-spacing-y !default;
+
+/// The font size of the timestap.
+/// @group chat
+$kendo-chat-timestamp-font-size: smaller !default;
+/// The line height of the timestamp.
+/// @group chat
+$kendo-chat-timestamp-line-height: var( --kendo-line-height, normal ) !default;
+/// the text transform of the timestamp.
+/// @group chat
+$kendo-chat-timestamp-transform: uppercase !default;
+/// The text of the timestamp.
+/// @group chat
+$kendo-chat-timestamp-text: var( --kendo-subtle-text, inherit ) !default;
+/// the background of the timestamp.
+/// @group chat
+$kendo-chat-timestamp-bg: normal !default;
+
+/// The horizontal padding of the bubble message.
+/// @group chat
+$kendo-chat-bubble-padding-x: map-get( $kendo-spacing, 3 ) !default;
+/// The vertical padding of the bubble message.
+/// @group chat
+$kendo-chat-bubble-padding-y: map-get( $kendo-spacing, 2 ) !default;
+/// The spacing of the bubble message.
+/// @group chat
+$kendo-chat-bubble-spacing: map-get( $kendo-spacing, thin ) !default;
+/// The line height of the bubble message.
+/// @group chat
+$kendo-chat-bubble-line-height: var( --kendo-line-height, normal ) !default;
+
+/// The padding of the scroll button in the chat.
+/// @group chat
+$kendo-chat-scroll-button: map-get( $kendo-spacing, 2 ) !default;
+/// The size of the card deck scrollbar in the chat.
+/// @group chat
+$kendo-card-deck-scrollbar-size: 20px !default;
+
+/// The border radius of the bubble message.
+/// @group chat
+$kendo-chat-bubble-border-radius: map-get( $kendo-spacing, 3 ) !default;
+/// The border radius of the small bubble message
+/// @group chat
+$kendo-chat-bubble-border-radius-sm: var( --kendo-border-radius, 0 ) !default;
+
+/// The size of the avatar.
+/// @group chat
+$kendo-chat-avatar-size: 32px !default;
+/// The spacing of the avatar.
+/// @group chat
+$kendo-chat-avatar-spacing: $kendo-chat-item-spacing-x !default;
+
+/// The horizontal padding of the toolbar in the chat.
+/// @group chat
+$kendo-chat-toolbar-padding-x: $kendo-toolbar-padding-x !default;
+/// The vertical padding of the toolbar in the chat.
+/// @group chat
+$kendo-chat-toolbar-padding-y: $kendo-toolbar-padding-y !default;
+/// The spacing of the toolbar in the chat.
+/// @group chat
+$kendo-chat-toolbar-spacing: $kendo-toolbar-spacing !default;
+/// The background of the toolbar in the chat.
+/// @group chat
+$kendo-chat-toolbar-bg: $kendo-toolbar-bg !default;
+/// The text of the toolbar in the chat.
+/// @group chat
+$kendo-chat-toolbar-text: $kendo-toolbar-text !default;
+/// The border of the toolbar in the chat.
+/// @group chat
+$kendo-chat-toolbar-border: inherit !default;
+
+/// The horizontal padding of the quick reply in the chat.
+/// @group chat
+$kendo-chat-quick-reply-padding-x: map-get( $kendo-spacing, 3 ) !default;
+/// The vertical padding of the quick reply in the chat.
+/// @group chat
+$kendo-chat-quick-reply-padding-y: map-get( $kendo-spacing, 2 ) !default;
+/// The spacing of the quick reply in the chat.
+/// @group chat
+$kendo-chat-quick-reply-spacing: map-get( $kendo-spacing, 2 ) !default;
+/// The line height of the quick reply in the chat.
+/// @group chat
+$kendo-chat-quick-reply-line-height: $kendo-chat-bubble-line-height !default;
+
+/// The background of the chat.
+/// @group chat
+$kendo-chat-bg: get-theme-color-var( neutral-10 ) !default;
+/// The text of the chat.
+/// @group chat
+$kendo-chat-text: get-theme-color-var( neutral-190 ) !default;
+/// The border of the chat.
+/// @group chat
+$kendo-chat-border: get-theme-color-var( neutral-30 ) !default;
+
+/// The background of the bubble in the chat.
+/// @group chat
+$kendo-chat-bubble-bg: var( --kendo-component-bg, inherit ) !default;
+/// The text of the bubble in the chat.
+/// @group chat
+$kendo-chat-bubble-text: var( --kendo-component-text, inherit ) !default;
+/// The border of the bubble in the chat.
+/// @group chat
+$kendo-chat-bubble-border: $kendo-chat-bubble-bg !default;
+/// The box shadow of the bubble in the chat.
+/// @group chat
+$kendo-chat-bubble-shadow: var( --kendo-box-shadow-depth-1, none ) !default;
+/// The hover shadow of the bubble in the chat.
+/// @group chat
+$kendo-chat-bubble-hover-shadow: var( --kendo-box-shadow-depth-1, none ) !default;
+/// The selected shadow of the bubble in the chat.
+/// @group chat
+$kendo-chat-bubble-selected-shadow: var( --kendo-box-shadow-depth-1, none ) !default;
+
+/// The background of the alt bubble in the chat.
+/// @group chat
+$kendo-chat-alt-bubble-bg: get-theme-color-var( primary-100 ) !default;
+/// The text of the alt bubble in the chat.
+/// @group chat
+$kendo-chat-alt-bubble-text: var( --kendo-component-bg, inherit ) !default;
+/// The border of the alt bubble in the chat.
+/// @group chat
+$kendo-chat-alt-bubble-border: $kendo-chat-alt-bubble-bg !default;
+/// The shadow of the alt bubble in the chat.
+/// @group chat
+$kendo-chat-alt-bubble-shadow: var( --kendo-box-shadow-depth-1, none ) !default;
+/// The hover shadow of the alt bubble in the chat.
+/// @group chat
+$kendo-chat-alt-bubble-hover-shadow: var( --kendo-box-shadow-depth-1, none ) !default;
+/// The selected shadow of the alt bubble in the chat.
+/// @group chat
+$kendo-chat-alt-bubble-selected-shadow: var( --kendo-box-shadow-depth-1, none ) !default;
+
+/// The background of quick reply in the chat.
+/// @group chat
+$kendo-chat-quick-reply-bg: transparent !default;
+/// The text of quick reply in the chat.
+/// @group chat
+$kendo-chat-quick-reply-text: get-theme-color-var( primary-100 ) !default;
+/// The border of quick reply in the chat.
+/// @group chat
+$kendo-chat-quick-reply-border: get-theme-color-var( primary-100 ) !default;
+
+/// The hover background of quick reply in the chat.
+/// @group chat
+$kendo-chat-quick-reply-hover-bg: get-theme-color-var( primary-100 ) !default;
+/// The text of quick reply in the chat.
+/// @group chat
+$kendo-chat-quick-reply-hover-text: var( --kendo-component-bg, inherit ) !default;
+/// The hover border of quick reply in the chat.
+/// @group chat
+$kendo-chat-quick-reply-hover-border: get-theme-color-var( primary-100 ) !default;
