@@ -143,7 +143,7 @@
 
 // Misc
 // @use "adaptive";
-// @use "chat";
+@use "chat";
 @use "mediaplayer";
 // @use "timeline";
 @use "pdf-viewer";
@@ -302,7 +302,7 @@
 
     // Misc
     // @include adaptive.styles();
-    // @include chat.styles();
+    @include chat.styles();
     @include mediaplayer.styles();
     // @include timeline.styles();
     @include pdf-viewer.styles();
