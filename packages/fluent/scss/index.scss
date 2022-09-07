@@ -30,7 +30,6 @@
 @use "chip";
 @use "color-preview";
 @use "loader";
-// @use "loading";
 @use "skeleton";
 @use "tooltip";
 
@@ -147,7 +146,7 @@
 // @use "chat";
 @use "mediaplayer";
 // @use "timeline";
-// @use "pdf-viewer";
+@use "pdf-viewer";
 @use "scroller";
 // @use "scrollview";
 
@@ -190,7 +189,6 @@
     @include chip.styles();
     @include color-preview.styles();
     @include loader.styles();
-    // @include loading.styles();
     @include skeleton.styles();
     @include tooltip.styles();
 
@@ -307,7 +305,7 @@
     // @include chat.styles();
     @include mediaplayer.styles();
     // @include timeline.styles();
-    // @include pdf-viewer.styles();
+    @include pdf-viewer.styles();
     @include scroller.styles();
     // @include scrollview.styles();
 
