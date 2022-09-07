@@ -114,7 +114,9 @@
         padding-inline: var( --kendo-taskboard-pane-padding-x, #{$kendo-taskboard-pane-padding-y} );
         padding-block: var( --kendo-taskboard-pane-padding-y, #{$kendo-taskboard-pane-padding-y} );
         width: var( --kendo-taskboard-pane-width, #{$kendo-taskboard-pane-width} );
-        border-width: var( --kendo-taskboard-pane-border-width, #{$kendo-taskboard-pane-border-width} );
+        border-block-width: 0;
+        border-inline-start-width: var( --kendo-taskboard-pane-border-width, #{$kendo-taskboard-pane-border-width} );
+        border-inline-end-width: 0;
         border-style: solid;
         display: flex;
         flex-direction: column;
@@ -159,6 +161,7 @@
     }
 
     .k-taskboard-pane-start {
+        border-inline-end-width: var( --kendo-taskboard-pane-border-width, #{$kendo-taskboard-pane-border-width} );
         inset-inline-end: auto;
         inset-inline-start: 0;
     }
