@@ -1,0 +1,73 @@
+@use "../core/mixins" as *;
+@use "_variables.scss" as *;
+
+@mixin kendo-pdf-viewer--theme() {
+
+    .k-pdf-viewer {
+        @include fill(
+            var( --kendo-pdf-viewer-text, #{$kendo-pdf-viewer-text} ),
+            var( --kendo-pdf-viewer-bg, #{$kendo-pdf-viewer-bg} ),
+            var( --kendo-pdf-viewer-border, #{$kendo-pdf-viewer-border} ),
+        );
+
+
+        // Canvas
+        .k-canvas {
+            @include fill(
+                var( --kendo-pdf-viewer-canvas-text, #{$kendo-pdf-viewer-canvas-text} ),
+                var( --kendo-pdf-viewer-canvas-bg, #{$kendo-pdf-viewer-canvas-bg} ),
+                var( --kendo-pdf-viewer-canvas-border, #{$kendo-pdf-viewer-canvas-border} )
+            );
+        }
+
+
+        // Page
+        .k-page {
+            @include fill(
+                var( --kendo-pdf-viewer-page-text, #{$kendo-pdf-viewer-page-text} ),
+                var( --kendo-pdf-viewer-page-bg, #{$kendo-pdf-viewer-page-bg} ),
+                var( --kendo-pdf-viewer-page-border, #{$kendo-pdf-viewer-page-border} )
+            );
+            @include box-shadow(
+                var( --kendo-pdf-viewer-page-shadow, #{$kendo-pdf-viewer-page-shadow} )
+            );
+        }
+
+        .k-blank-page > .k-icon {
+            @include fill(
+                $color: var( --kendo-pdf-viewer-icon-text, #{$kendo-pdf-viewer-icon-text} )
+            );
+        }
+
+
+        // Search
+        .k-search-highlight {
+            @include fill(
+                $bg: var( --kendo-pdf-viewer-search-highlight-bg, #{$kendo-pdf-viewer-search-highlight-bg} )
+            );
+        }
+
+        .k-search-highlight-mark {
+            @include fill(
+                $bg: var( --kendo-pdf-viewer-search-highlight-mark-bg, #{$kendo-pdf-viewer-search-highlight-mark-bg} )
+            );
+        }
+
+    }
+
+    .k-pdf-viewer-canvas > .k-search-panel {
+        @include fill(
+            var( --kendo-pdf-viewer-search-panel-text, #{$kendo-pdf-viewer-search-panel-text} ),
+            var( --kendo-pdf-viewer-search-panel-bg, #{$kendo-pdf-viewer-search-panel-bg} ),
+            var( --kendo-pdf-viewer-search-panel-border, #{$kendo-pdf-viewer-search-panel-border} )
+        );
+        @include box-shadow(
+            var( --kendo-pdf-viewer-search-panel-shadow, #{$kendo-pdf-viewer-search-panel-shadow} )
+        );
+    }
+
+    .k-search-container {
+        @extend .k-search-panel !optional;
+    }
+
+}

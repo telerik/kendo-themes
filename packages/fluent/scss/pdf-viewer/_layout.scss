@@ -1,0 +1,177 @@
+@use "../core/color-system" as *;
+@use "_variables.scss" as *;
+
+@mixin kendo-pdf-viewer--layout() {
+
+    .k-pdf-viewer {
+        border-width: var( --kendo-pdf-viewer-border-width, #{$kendo-pdf-viewer-border-width} );
+        border-style: solid;
+        box-sizing: border-box;
+        position: relative;
+        outline: 0;
+        font-family: var( --kendo-pdf-viewer-font-family, #{$kendo-pdf-viewer-font-family} );
+        font-size: var( --kendo-pdf-viewer-font-size, #{$kendo-pdf-viewer-font-size} );
+        line-height: var( --kendo-pdf-viewer-line-height, #{$kendo-pdf-viewer-line-height} );
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        -webkit-touch-callout: none;
+        -webkit-tap-highlight-color: $rgba-transparent;
+
+        // Toolbar
+        .k-toolbar {
+            border-block-start-width: 0;
+            border-inline-width: 0;
+            border-color: inherit;
+            flex: 0 0 auto;
+            z-index: 2;
+        }
+        .k-toolbar .k-pager-wrap,
+        .k-toolbar .k-pager {
+            padding: 0;
+            border-width: 0;
+            color: inherit;
+            background: none;
+            overflow: visible;
+        }
+
+
+        // Canvas
+        .k-canvas {
+            display: flex;
+            flex-direction: column;
+            flex: 1 1 auto;
+            outline: none;
+
+            .k-enable-text-select,
+            &.k-enable-text-select {
+                -webkit-user-select: text;
+                -moz-user-select: text;
+                -ms-user-select: text;
+                user-select: text;
+                cursor: text;
+            }
+
+            .k-enable-panning,
+            &.k-enable-panning {
+                cursor: grab;
+            }
+            .k-enable-panning span::selection,
+            &.k-enable-panning span::selection {
+                background-color: transparent;
+            }
+        }
+
+
+        // Pages
+        .k-pdf-viewer-pages {
+            flex: 1 1 auto;
+        }
+
+        .k-page {
+            position: relative;
+            margin-block: var( --kendo-pdf-viewer-page-spacing, #{$kendo-pdf-viewer-page-spacing} );
+            margin-inline: auto;
+
+            canvas {
+                direction: ltr;
+            }
+
+            .k-text-layer {
+                position: absolute;
+                top: 0;
+                left: 0;
+                opacity: .2;
+                overflow: hidden;
+
+                > span {
+                    position: absolute;
+                    line-height: var( --kendo-pdf-viewer-selection-line-height, #{$kendo-pdf-viewer-selection-line-height} );
+                    transform-origin: 0% 0%;
+                    color: transparent;
+                }
+
+                mark {
+                    color: transparent;
+                }
+
+                .k-search-highlight-mark {
+                    color: transparent;
+                }
+            }
+        }
+
+        .k-blank-page {
+            margin: 0;
+            display: flex;
+            flex-flow: column nowrap;
+            width: 100%;
+            height: 100%;
+            align-items: center;
+            justify-content: center;
+            background-color: inherit !important; // sass-lint:disable-line no-important
+
+            .k-upload,
+            .k-dropzone,
+            .k-dropzone-inner {
+                border: 0;
+                background: none;
+            }
+
+            > .k-icon {
+                font-size: var( --kendo-pdf-viewer-icon-size, #{$kendo-pdf-viewer-icon-size} );
+            }
+        }
+
+    }
+
+    // Search
+    .k-pdf-viewer-search-dialog {
+        padding: 0 !important; // sass-lint:disable-line no-important
+    }
+
+    .k-search-panel {
+        padding-block: var( --kendo-pdf-viewer-search-dialog-padding-y, #{$kendo-pdf-viewer-search-dialog-padding-y} );
+        padding-inline: var( --kendo-pdf-viewer-search-dialog-padding-x, #{$kendo-pdf-viewer-search-dialog-padding-x} );
+        display: flex;
+        gap: var( --kendo-pdf-viewer-search-dialog-spacing, #{$kendo-pdf-viewer-search-dialog-spacing} );
+        flex-flow: row nowrap;
+        flex: 0 0 auto;
+        justify-content: flex-start;
+        align-items: center;
+
+        .k-search-dialog-draghandle {
+            cursor: move;
+            margin-left: 0;
+        }
+
+        .k-textbox {
+            width: 10em;
+            flex: none;
+
+            .k-button {
+                border-width: 0;
+            }
+        }
+
+        .k-search-matches {
+            display: inline-flex;
+            gap: var( --kendo-pdf-viewer-search-panel-matches-spacing, #{$kendo-pdf-viewer-search-panel-matches-spacing} );
+        }
+    }
+
+    .k-pdf-viewer-canvas > .k-search-panel {
+        width: max-content;
+        margin-block-start: var( --kendo-pdf-viewer-search-panel-margin-y, #{$kendo-pdf-viewer-search-panel-margin-y} );
+        border-width: var( --kendo-pdf-viewer-search-panel-border-width, #{$kendo-pdf-viewer-search-panel-border-width} );
+        border-style: solid;
+        border-radius: var( --kendo-pdf-viewer-search-panel-border-radius, #{$kendo-pdf-viewer-search-panel-border-radius} );
+        z-index: 10;
+    }
+
+    // Alias
+    .k-search-container {
+        @extend .k-search-panel !optional;
+    }
+
+}
