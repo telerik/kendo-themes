@@ -158,7 +158,7 @@
 
     .k-pdf-viewer-canvas > .k-search-panel {
         width: max-content;
-        margin-top: calc( (#{$kendo-button-calc-size} + #{$pdf-viewer-search-panel-border-width} + ( 2 * #{$pdf-viewer-search-dialog-padding-y} )) * -1 );
+        margin-top: calc( (#{$kendo-button-calc-size} + ( 2 * #{$pdf-viewer-search-panel-border-width} ) + ( 2 * #{$pdf-viewer-search-dialog-padding-y} )) * -1 );
         border-width: $pdf-viewer-search-panel-border-width;
         border-style: solid;
         border-radius: $pdf-viewer-search-panel-border-radius;
