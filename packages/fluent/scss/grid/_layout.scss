@@ -360,7 +360,7 @@
         margin-inline-end: calc( var( --kendo-grid-border-width, #{$kendo-grid-border-width} ) * -1 );
         width: 100%;
         border-inline-start-width: 0;
-        border-inline-end-width: var( --kendo-grid-cell-border-width-x, #{$kendo-grid-cell-border-width-x} );
+        border-inline-end-width: var( --kendo-grid-cell-border-width-y, #{$kendo-grid-cell-border-width-y} );
         border-block-width: 0;
         border-style: solid;
         border-color: inherit;
