@@ -145,7 +145,7 @@
 // @use "adaptive";
 @use "chat";
 @use "mediaplayer";
-// @use "timeline";
+@use "timeline";
 @use "pdf-viewer";
 @use "scroller";
 @use "scrollview";
@@ -304,7 +304,7 @@
     // @include adaptive.styles();
     @include chat.styles();
     @include mediaplayer.styles();
-    // @include timeline.styles();
+    @include timeline.styles();
     @include pdf-viewer.styles();
     @include scroller.styles();
     @include scrollview.styles();
