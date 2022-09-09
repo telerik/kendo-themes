@@ -60,6 +60,10 @@
         border-right-width: $pivotgrid-cell-border-width;
         border-bottom-style: solid;
         border-bottom-width: $pivotgrid-cell-border-width;
+
+        &:focus {
+            outline: none;
+        }
     }
 
 
@@ -130,6 +134,10 @@
         white-space: nowrap;
         vertical-align: top;
         overflow: hidden;
+
+        &:focus {
+            outline: none;
+        }
     }
 
     .k-pivotgrid-cell .k-icon {
