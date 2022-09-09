@@ -264,8 +264,8 @@
         $_group-label-font-size: map-get( $size-props, group-label-font-size );
 
         .k-table-#{$size} {
-            --INTERNAL--kendo-table-font-size: $_font-size;
-            --INTERNAL--kendo-table-line-height: $_line-height;
+            --INTERNAL--kendo-table-font-size: var( --kendo-table-#{size}-font-size, #{$_font-size} );
+            --INTERNAL--kendo-table-line-height: var( --kendo-table-#{size}-line-height, #{$_line-height} );
         }
 
         .k-table-#{$size} .k-table-th,
