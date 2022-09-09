@@ -137,7 +137,7 @@
 
 
 // Scheduling
-// @use "gantt";
+@use "gantt";
 @use "scheduler";
 
 
@@ -296,7 +296,7 @@
 
 
     // Scheduling
-    // @include gantt.styles();
+    @include gantt.styles();
     @include scheduler.styles();
 
 
