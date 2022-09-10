@@ -207,6 +207,10 @@
 
 
     // Responsive gantt toolbar
+    .k-gantt-toggle {
+        display: none;
+    }
+    
     @media (max-width: 480px) {
 
         .k-gantt-toolbar {
