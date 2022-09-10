@@ -1,0 +1,33 @@
+@use "../core/color-system" as *;
+
+
+// Adaptive
+$kendo-adaptive-bg: var( --kendo-component-bg, inherit ) !default;
+$kendo-adaptive-text: var( --kendo-component-text, inherit ) !default;
+$kendo-adaptive-border: var( --kendo-component-border, inherit ) !default;
+
+$kendo-adaptive-content-bg: var( --kendo-component-bg, inherit ) !default;
+$kendo-adaptive-content-text: var( --kendo-component-text, inherit ) !default;
+
+$kendo-adaptive-menu-bg: get-theme-color-var( primary-100 ) !default;
+$kendo-adaptive-menu-text: $white !default;
+
+$kendo-adaptive-menu-clear-text: get-theme-color-var( primary-100 ) !default;
+
+$kendo-adaptive-menu-item-border: var( --kendo-component-border, inherit ) !default;
+$kendo-adaptive-menu-title-text: var( --kendo-component-text, inherit ) !default;
+
+$kendo-adaptive-border-width: 1px !default;
+$kendo-adaptive-font-family: var( --kendo-font-family, inherit ) !default;
+$kendo-adaptive-font-size: var( --kendo-font-size, 1rem ) !default;
+$kendo-adaptive-line-height: var( --kendo-line-height, normal ) !default;
+
+
+// Adaptive Grid
+$kendo-adaptive-grid-sort-text: get-theme-color-var( primary-100 ) !default;
+
+
+// Adaptive Scheduler
+$kendo-adaptive-scheduler-current-text: get-theme-color-var( primary-100 ) !default;
+$kendo-adaptive-scheduler-base-text: inherit !default;
+$kendo-adaptive-scheduler-subtle-text: var( --kendo-subtle-text, inherit ) !default;

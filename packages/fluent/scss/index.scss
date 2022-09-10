@@ -142,7 +142,7 @@
 
 
 // Misc
-// @use "adaptive";
+@use "adaptive";
 @use "chat";
 @use "mediaplayer";
 @use "timeline";
@@ -301,7 +301,7 @@
 
 
     // Misc
-    // @include adaptive.styles();
+    @include adaptive.styles();
     @include chat.styles();
     @include mediaplayer.styles();
     @include timeline.styles();
