@@ -1077,7 +1077,7 @@
         box-sizing: border-box;
     }
     .k-filter-menu-container {
-        padding-block: var( --kendo-filter-menu-container-padding-y, #{$kendo-filter-menu-container-padding-y} );
+        padding-block-end: var( --kendo-filter-menu-container-padding-y, #{$kendo-filter-menu-container-padding-y} );
         padding-inline: var( --kendo-filter-menu-container-padding-x, #{$kendo-filter-menu-container-padding-x} );
         box-sizing: border-box;
         display: flex;
