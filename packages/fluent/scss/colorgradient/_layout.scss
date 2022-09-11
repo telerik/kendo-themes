@@ -41,10 +41,10 @@
             position: relative;
             flex: 1 1 auto;
             user-select: none;
+            overflow: hidden;
         }
 
         .k-hsv-gradient {
-            @include border-radius( var( --kendo-colorgradient-canvas-border-radius, #{$kendo-colorgradient-canvas-border-radius} ) );
             height: var( --kendo-colorgradient-canvas-rectangle-height, #{$kendo-colorgradient-canvas-rectangle-height} );
         }
 
