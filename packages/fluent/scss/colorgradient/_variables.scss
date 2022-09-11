@@ -7,7 +7,7 @@ $kendo-colorgradient-spacer: map-get( $kendo-spacing, 4 ) !default;
 
 /// Default width of the color gradient.
 /// @group cologradient
-$kendo-colorgradient-width: 254px !default;
+$kendo-colorgradient-width: 260px !default;
 /// Border width of the color gradient.
 /// @group cologradient
 $kendo-colorgradient-border-width: 1px !default;
@@ -74,7 +74,7 @@ $kendo-colorgradient-canvas-draghandle-shadow: 0px 0.6px 1.8px rgba(0, 0, 0, 0.1
 
 /// Default input width of the color gradient.
 /// @group cologradient
-$kendo-colorgradient-input-width: 47px !default;
+$kendo-colorgradient-input-width: 48px !default;
 /// Input spacing of the color gradient.
 /// @group cologradient
 $kendo-colorgradient-input-spacing: calc( $kendo-colorgradient-spacer / 4 ) !default;
