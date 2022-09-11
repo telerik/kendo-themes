@@ -132,6 +132,7 @@
         gap: var( --kendo-colorgradient-input-spacing, #{$kendo-colorgradient-input-spacing} );
 
         .k-colorgradient-input-label {
+            font-size: var( --kendo-colorgradient-input-label-font-size, #{$kendo-colorgradient-input-label-font-size} );
             text-transform: uppercase;
         }
 

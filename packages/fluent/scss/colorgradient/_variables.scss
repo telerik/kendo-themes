@@ -78,6 +78,9 @@ $kendo-colorgradient-input-width: 47px !default;
 /// Input spacing of the color gradient.
 /// @group cologradient
 $kendo-colorgradient-input-spacing: calc( $kendo-colorgradient-spacer / 4 ) !default;
+/// Input label font size of the color gradient.
+/// @group cologradient
+$kendo-colorgradient-input-label-font-size: var( --kendo-font-size-sm, inherit ) !default;
 /// Input label spacing of the color gradient.
 /// @group cologradient
 $kendo-colorgradient-input-label-spacing: calc( $kendo-colorgradient-spacer / 4 ) !default;
