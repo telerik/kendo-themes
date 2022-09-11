@@ -85,6 +85,7 @@
         &.k-slider-vertical .k-slider-track {
             width: var( --kendo-colorgradient-slider-track-size, #{$kendo-colorgradient-slider-track-size} );
             border-radius: var( --kendo-colorgradient-slider-border-radius, #{$kendo-colorgradient-slider-border-radius} );
+            margin-inline-start: calc( -1 * (var( --kendo-colorgradient-slider-track-size, #{$kendo-colorgradient-slider-track-size} ) / 2) );
         }
 
         &.k-slider-horizontal {
@@ -111,6 +112,8 @@
         .k-slider-track {
             border-width:  var( --kendo-colorgradient-slider-border-width, #{$kendo-colorgradient-slider-border-width} );
             border-style: solid;
+            transform: none;
+            z-index: auto;
         }
 
         .k-slider-wrap,
