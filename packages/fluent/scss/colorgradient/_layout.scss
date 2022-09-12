@@ -41,10 +41,10 @@
             position: relative;
             flex: 1 1 auto;
             user-select: none;
+            overflow: hidden;
         }
 
         .k-hsv-gradient {
-            @include border-radius( var( --kendo-colorgradient-canvas-border-radius, #{$kendo-colorgradient-canvas-border-radius} ) );
             height: var( --kendo-colorgradient-canvas-rectangle-height, #{$kendo-colorgradient-canvas-rectangle-height} );
         }
 
@@ -85,6 +85,7 @@
         &.k-slider-vertical .k-slider-track {
             width: var( --kendo-colorgradient-slider-track-size, #{$kendo-colorgradient-slider-track-size} );
             border-radius: var( --kendo-colorgradient-slider-border-radius, #{$kendo-colorgradient-slider-border-radius} );
+            margin-inline-start: calc( -1 * (var( --kendo-colorgradient-slider-track-size, #{$kendo-colorgradient-slider-track-size} ) / 2) );
         }
 
         &.k-slider-horizontal {
@@ -111,6 +112,8 @@
         .k-slider-track {
             border-width:  var( --kendo-colorgradient-slider-border-width, #{$kendo-colorgradient-slider-border-width} );
             border-style: solid;
+            transform: none;
+            z-index: auto;
         }
 
         .k-slider-wrap,
@@ -129,6 +132,7 @@
         gap: var( --kendo-colorgradient-input-spacing, #{$kendo-colorgradient-input-spacing} );
 
         .k-colorgradient-input-label {
+            font-size: var( --kendo-colorgradient-input-label-font-size, #{$kendo-colorgradient-input-label-font-size} );
             text-transform: uppercase;
         }
 

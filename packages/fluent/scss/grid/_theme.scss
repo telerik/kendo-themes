@@ -464,6 +464,13 @@
                     var( --kendo-grid-column-menu-item-selected-bg, #{$kendo-grid-column-menu-item-selected-bg} )
                 );
             }
+
+            &.k-disabled .k-link,
+            &.k-disabled .k-icon {
+                @include disabled(
+                    var( --kendo-disabled-text, inherit )
+                );
+            }
         }
 
         .k-column-menu-group-header-text {

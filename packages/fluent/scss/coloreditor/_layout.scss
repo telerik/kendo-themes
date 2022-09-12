@@ -76,6 +76,8 @@
 
         // Footer
         .k-coloreditor-footer.k-actions {
+            padding-block: var( --kendo-coloreditor-footer-padding-y, #{$kendo-coloreditor-footer-padding-y} );
+            padding-inline: var( --kendo-coloreditor-footer-padding-y, #{$kendo-coloreditor-footer-padding-y} );
             margin: 0;
         }
 

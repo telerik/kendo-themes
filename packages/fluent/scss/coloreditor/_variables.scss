@@ -7,7 +7,7 @@ $kendo-coloreditor-spacer: map-get( $kendo-spacing, 2 ) !default;
 
 /// Min width of the color editor.
 /// @group coloreditor
-$kendo-coloreditor-min-width: 254px !default;
+$kendo-coloreditor-min-width: 260px !default;
 /// Border width of the color editor.
 /// @group coloreditor
 $kendo-coloreditor-border-width: 1px !default;
@@ -73,3 +73,10 @@ $kendo-coloreditor-views-padding-x: $kendo-coloreditor-views-padding-y !default;
 /// Spacing of the color editor views container.
 /// @group coloreditor
 $kendo-coloreditor-views-spacing: $kendo-coloreditor-spacer !default;
+
+/// Horizontal padding of the color editor footer.
+/// @group coloreditor
+$kendo-coloreditor-footer-padding-y: map-get( $kendo-spacing, 2 ) !default;
+/// Vertical padding of the color editor footer.
+/// @group coloreditor
+$kendo-coloreditor-footer-padding-x: map-get( $kendo-spacing, 2 ) !default;

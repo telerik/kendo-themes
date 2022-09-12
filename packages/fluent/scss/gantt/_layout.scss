@@ -207,6 +207,10 @@
 
 
     // Responsive gantt toolbar
+    .k-gantt-toggle {
+        display: none;
+    }
+    
     @media (max-width: 480px) {
 
         .k-gantt-toolbar {
@@ -323,7 +327,7 @@
         opacity: .7;
         position: absolute;
         top: 0;
-        left: 0;
+        inset-inline-start: 0;
 
         // Arrows
         .k-arrow-e,
@@ -552,6 +556,7 @@
         display: flex;
         flex-direction: row;
         align-items: center;
+        text-align: start;
     }
     .k-task-template {
         padding-block: var( --kendo-gantt-task-padding-y, #{$kendo-gantt-task-padding-y} );
@@ -768,4 +773,10 @@
         }
     }
 
+    .k-rtl,
+    [dir="rtl"] {
+        .k-gantt-tasks tbody {
+            text-align: end;
+        }
+    }
 }
