@@ -46,7 +46,7 @@
 
         .k-wizard-content {
             padding-inline: var( --kendo-wizard-content-padding-x, #{$kendo-wizard-content-padding-x} );
-            padding-block: var( --kendo-wizard-content-padding-y, #{$kendo-wizard-content-padding-x} );
+            padding-block: var( --kendo-wizard-content-padding-y, #{$kendo-wizard-content-padding-y} );
             box-sizing: border-box;
             overflow-y: auto;
         }

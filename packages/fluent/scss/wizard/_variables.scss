@@ -30,10 +30,10 @@ $kendo-wizard-steps-padding-y: map-get( $kendo-spacing, 3 ) !default;
 
 /// Horizontal padding of the wizard content.
 /// @group wizard
-$kendo-wizard-content-padding-x: map-get( $kendo-spacing, 3 ) !default;
+$kendo-wizard-content-padding-x: 0px !default;
 /// Vertical padding of the wizard content.
 /// @group wizard
-$kendo-wizard-content-padding-y: map-get( $kendo-spacing, 3 ) !default;
+$kendo-wizard-content-padding-y: 0px !default;
 /// Text color of the wizard content.
 /// @group wizard
 $kendo-wizard-content-text: var( --kendo-component-text, initial ) !default;
