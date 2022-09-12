@@ -111,6 +111,10 @@
                         var( --kendo-stepper-indicator-done-disabled-border, #{$kendo-stepper-indicator-done-disabled-border} )
                     );
                 }
+
+                .k-step-label {
+                    @include fill( $color: var( --kendo-stepper-label-disabled-text, #{$kendo-stepper-label-disabled-text} ) );
+                }
             }
         }
 
