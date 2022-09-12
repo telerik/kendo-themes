@@ -51,7 +51,7 @@ $kendo-time-list-title-font-size: var( --kendo-font-size-xs, inherit ) !default;
 /// Line height of the time-selector titles.
 /// @group time-selector
 $kendo-time-list-title-line-height: var( --kendo-line-height-lg, inherit ) !default;
-$kendo-time-list-title-height: calc( $kendo-time-list-title-font-size * $kendo-time-list-title-line-height ) !default;
+$kendo-time-list-title-height: calc( #{$kendo-time-list-title-font-size} * #{$kendo-time-list-title-line-height} ) !default;
 /// Text color of the time-selector titles.
 /// @group time-selector
 $kendo-time-list-title-text: var( --kendo-subtle-text, inherit ) !default;

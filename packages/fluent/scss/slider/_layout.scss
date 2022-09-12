@@ -159,9 +159,9 @@
             transform: translateY(-50%);
         }
         .k-slider-selection {
-            width: calc( (var(--kendo-slider-end, 0) - var(--kendo-slider-start, 0)) * 1% );
+            width: calc( (var( --kendo-slider-end, 0) - var( --kendo-slider-start, 0)) * 1% );
             height: 100%;
-            inset-inline-start: calc( var(--kendo-slider-start, 0) * 1% );
+            inset-inline-start: calc( var( --kendo-slider-start, 0) * 1% );
             top: 0;
         }
         .k-slider-thumb {
@@ -173,10 +173,10 @@
             transform: translate(-50%, -50%) scale($kendo-slider-thumb-active-scale);
         }
         .k-slider-thumb-start {
-            inset-inline-start: calc( var(--kendo-slider-start, 0) * 1% );
+            inset-inline-start: calc( var( --kendo-slider-start, 0) * 1% );
         }
         .k-slider-thumb-end {
-            inset-inline-start: calc( var(--kendo-slider-end, 0) * 1% );
+            inset-inline-start: calc( var( --kendo-slider-end, 0) * 1% );
         }
 
         // Slider ticks
@@ -245,8 +245,8 @@
         }
         .k-slider-selection {
             width: 100%;
-            bottom: calc( var(--kendo-slider-start, 0) * 1% );
-            height: calc( (var(--kendo-slider-end, 0) - var(--kendo-slider-start, 0)) * 1% );
+            bottom: calc( var( --kendo-slider-start, 0) * 1% );
+            height: calc( (var( --kendo-slider-end, 0) - var( --kendo-slider-start, 0)) * 1% );
         }
         .k-slider-thumb {
             left: 50%;
@@ -257,10 +257,10 @@
             transform: if( $kendo-slider-thumb-active-scale, translate(-50%, 50%) scale($kendo-slider-thumb-active-scale), null );
         }
         .k-slider-thumb-start {
-            bottom: calc( var(--kendo-slider-start, 0) * 1% );
+            bottom: calc( var( --kendo-slider-start, 0) * 1% );
         }
         .k-slider-thumb-end {
-            bottom: calc( var(--kendo-slider-end, 0) * 1% );
+            bottom: calc( var( --kendo-slider-end, 0) * 1% );
         }
 
 

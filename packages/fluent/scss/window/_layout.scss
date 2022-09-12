@@ -69,7 +69,7 @@
     // Actions
     .k-window-actions {
         margin: -5em 0;
-        margin-inline-end: calc( #{$kendo-window-titlebar-padding-y} - #{$kendo-window-titlebar-padding-x} );
+        margin-inline-end: ( $kendo-window-titlebar-padding-y - $kendo-window-titlebar-padding-x );
         line-height: 1;
         display: flex;
         gap: var( --kendo-window-actions-gap, #{$kendo-window-actions-gap} );

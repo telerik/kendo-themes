@@ -1,3 +1,4 @@
+@use "sass:math";
 @use "sass:map";
 @use "../core/color-system" as *;
 @use "../core/_variables.scss" as *;
@@ -14,15 +15,15 @@ $kendo-loader-segment-size-lg: map-get( $kendo-spacing, 4 ) !default;
 
 /// Horizontal padding of the loader.
 /// @group loader
-$kendo-loader-padding-x-sm: calc( #{$kendo-loader-segment-size-sm} / 2 ) !default;
-$kendo-loader-padding-x-md: calc( #{$kendo-loader-segment-size-md} / 2 ) !default;
-$kendo-loader-padding-x-lg: calc( #{$kendo-loader-segment-size-lg} / 2 ) !default;
+$kendo-loader-padding-x-sm: math.div( $kendo-loader-segment-size-sm, 2 ) !default;
+$kendo-loader-padding-x-md: math.div( $kendo-loader-segment-size-md, 2 ) !default;
+$kendo-loader-padding-x-lg: math.div( $kendo-loader-segment-size-lg, 2 ) !default;
 
 /// Vertical padding of the loader.
 /// @group loader
-$kendo-loader-padding-y-sm: calc( #{$kendo-loader-segment-size-sm} / 2 ) !default;
-$kendo-loader-padding-y-md: calc( #{$kendo-loader-segment-size-md} / 2 ) !default;
-$kendo-loader-padding-y-lg: calc( #{$kendo-loader-segment-size-lg} / 2 ) !default;
+$kendo-loader-padding-y-sm: math.div( $kendo-loader-segment-size-sm, 2 ) !default;
+$kendo-loader-padding-y-md: math.div( $kendo-loader-segment-size-md, 2 ) !default;
+$kendo-loader-padding-y-lg: math.div( $kendo-loader-segment-size-lg, 2 ) !default;
 
 /// Equilateral height of the loader.
 /// @group loader
@@ -30,21 +31,21 @@ $kendo-loader-equilateral-height: .8660254038 !default;
 
 /// Width of the spinner-3 loader.
 /// @group loader
-$kendo-loader-spinner-3-width-sm: calc( #{$kendo-loader-segment-size-sm} * 4 ) !default;
-$kendo-loader-spinner-3-width-md: calc( #{$kendo-loader-segment-size-md} * 4 ) !default;
-$kendo-loader-spinner-3-width-lg: calc( #{$kendo-loader-segment-size-lg} * 4 ) !default;
+$kendo-loader-spinner-3-width-sm: ( $kendo-loader-segment-size-sm * 4 ) !default;
+$kendo-loader-spinner-3-width-md: ( $kendo-loader-segment-size-md * 4 ) !default;
+$kendo-loader-spinner-3-width-lg: ( $kendo-loader-segment-size-lg * 4 ) !default;
 
 /// Height of the spinner-3 loader.
 /// @group loader
-$kendo-loader-spinner-3-height-sm: calc( #{$kendo-loader-spinner-3-width-sm} * #{$kendo-loader-equilateral-height} ) !default;
-$kendo-loader-spinner-3-height-md: calc( #{$kendo-loader-spinner-3-width-md} * #{$kendo-loader-equilateral-height} ) !default;
-$kendo-loader-spinner-3-height-lg: calc( #{$kendo-loader-spinner-3-width-lg} * #{$kendo-loader-equilateral-height} ) !default;
+$kendo-loader-spinner-3-height-sm: ( $kendo-loader-spinner-3-width-sm * $kendo-loader-equilateral-height ) !default;
+$kendo-loader-spinner-3-height-md: ( $kendo-loader-spinner-3-width-md * $kendo-loader-equilateral-height ) !default;
+$kendo-loader-spinner-3-height-lg: ( $kendo-loader-spinner-3-width-lg * $kendo-loader-equilateral-height ) !default;
 
 /// Width of the spinner-4 loader.
 /// @group loader
-$kendo-loader-spinner-4-width-sm: calc( #{$kendo-loader-segment-size-sm} * 4 ) !default;
-$kendo-loader-spinner-4-width-md: calc( #{$kendo-loader-segment-size-md} * 4 ) !default;
-$kendo-loader-spinner-4-width-lg: calc( #{$kendo-loader-segment-size-lg} * 4 ) !default;
+$kendo-loader-spinner-4-width-sm: ( $kendo-loader-segment-size-sm * 4 ) !default;
+$kendo-loader-spinner-4-width-md: ( $kendo-loader-segment-size-md * 4 ) !default;
+$kendo-loader-spinner-4-width-lg: ( $kendo-loader-segment-size-lg * 4 ) !default;
 
 /// Height of the spinner-4 loader.
 /// @group loader

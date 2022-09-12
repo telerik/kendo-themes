@@ -40,7 +40,7 @@ $kendo-map-navigator-margin-y: map-get( $kendo-spacing, 4 ) !default;
 $kendo-map-navigator-padding: map-get( $kendo-spacing, thin ) !default;
 /// Map navigator width.
 /// @group map
-$kendo-map-navigator-width: calc( var(--kendo-icon-size) * 3 + #{$kendo-map-navigator-padding * 2} ) !default;
+$kendo-map-navigator-width: calc( var( --kendo-icon-size) * 3 + #{$kendo-map-navigator-padding * 2} ) !default;
 /// Map navigator height.
 /// @group map
 $kendo-map-navigator-height: $kendo-map-navigator-width !default;
@@ -75,7 +75,7 @@ $kendo-map-attribution-padding-x: $kendo-padding-x-sm !default;
 $kendo-map-attribution-padding-y: $kendo-padding-y-sm !default;
 /// Map attribution font size.
 /// @group map
-$kendo-map-attribution-font-size: calc( $kendo-map-font-size * .75 ) !default;
+$kendo-map-attribution-font-size: calc( #{$kendo-map-font-size} * .75 ) !default;
 /// Map attribution background color.
 /// @group map
 $kendo-map-attribution-bg: $white !default;

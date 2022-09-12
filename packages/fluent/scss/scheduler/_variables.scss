@@ -66,7 +66,7 @@ $kendo-scheduler-event-padding-x: map-get( $kendo-spacing, 2 ) !default;
 $kendo-scheduler-event-padding-y: map-get( $kendo-spacing, thin ) !default;
 /// Minumum height of the scheduler event.
 /// @group scheduler
-$kendo-scheduler-event-min-height: calc( $kendo-scheduler-line-height + 2 * $kendo-scheduler-event-padding-y ) !default;
+$kendo-scheduler-event-min-height: calc( #{$kendo-scheduler-line-height} + 2 * #{$kendo-scheduler-event-padding-y} ) !default;
 
 /// Background color of the scheduler event.
 /// @group scheduler

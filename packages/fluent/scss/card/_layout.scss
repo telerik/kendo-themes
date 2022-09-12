@@ -305,13 +305,13 @@
 
         // Border-radius
         .k-card.k-first {
-            @include border-left-radius( var(--kendo-card-border-radius, #{$kendo-card-border-radius}) );
+            @include border-left-radius( var( --kendo-card-border-radius, #{$kendo-card-border-radius}) );
         }
         .k-card.k-last {
-            @include border-right-radius( var(--kendo-card-border-radius, #{$kendo-card-border-radius}) );
+            @include border-right-radius( var( --kendo-card-border-radius, #{$kendo-card-border-radius}) );
         }
         .k-card.k-only {
-            @include border-radius( var(--kendo-card-border-radius, #{$kendo-card-border-radius}) );
+            @include border-radius( var( --kendo-card-border-radius, #{$kendo-card-border-radius}) );
         }
     }
 

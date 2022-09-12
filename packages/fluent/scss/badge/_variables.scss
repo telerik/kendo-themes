@@ -24,13 +24,13 @@ $kendo-badge-font-weight: var( --kendo-font-weight, normal ) !default;
 /// @group badge
 $kendo-badge-padding-x-sm: map-get( $kendo-spacing, thin ) !default;
 $kendo-badge-padding-x-md: map-get( $kendo-spacing, 1 ) !default;
-$kendo-badge-padding-x-lg: calc( map-get( $kendo-spacing, 1 ) + map-get( $kendo-spacing, thin ) ) !default;
+$kendo-badge-padding-x-lg: map-get( $kendo-spacing, 1 ) + map-get( $kendo-spacing, thin ) !default;
 
 /// Vertical padding of the badge.
 /// @group badge
 $kendo-badge-padding-y-sm: map-get( $kendo-spacing, thin ) !default;
 $kendo-badge-padding-y-md: map-get( $kendo-spacing, 1 ) !default;
-$kendo-badge-padding-y-lg: calc( map-get( $kendo-spacing, 1 ) + map-get( $kendo-spacing, thin ) ) !default;
+$kendo-badge-padding-y-lg: map-get( $kendo-spacing, 1 ) + map-get( $kendo-spacing, thin ) !default;
 
 /// Font sizes of the badge.
 /// @group badge

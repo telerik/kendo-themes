@@ -69,8 +69,8 @@
         padding-block: var( --kendo-listview-item-padding-y, #{$kendo-listview-item-padding-y} );
     }
     .k-listview-item-padding-rectangle .k-listview-link {
-        margin-inline: calc( var( --kendo-listview-item-padding-x, $kendo-listview-item-padding-x ) * -1);
-        margin-block: calc( var( --kendo-listview-item-padding-y, $kendo-listview-item-padding-y ) * -1);
+        margin-inline: calc( var( --kendo-listview-item-padding-x, #{$kendo-listview-item-padding-x} ) * -1);
+        margin-block: calc( var( --kendo-listview-item-padding-y, #{$kendo-listview-item-padding-y} ) * -1);
         padding-inline: var( --kendo-listview-item-padding-x, #{$kendo-listview-item-padding-x} );
         padding-block: var( --kendo-listview-item-padding-y, #{$kendo-listview-item-padding-y} );
     }

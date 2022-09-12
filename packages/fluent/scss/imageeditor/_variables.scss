@@ -1,3 +1,4 @@
+@use "sass:math";
 @use "../core/_variables.scss" as *;
 @use "../core/color-system" as *;
 
@@ -67,7 +68,7 @@ $kendo-imageeditor-action-pane-padding-y: map-get( $kendo-spacing, 3 ) !default;
 $kendo-imageeditor-action-pane-padding-x: map-get( $kendo-spacing, 3 ) !default;
 /// Imageeditor action pane width.
 /// @group imageeditor
-$kendo-imageeditor-action-pane-width: if( $kendo-imageeditor-content-border-width == 0, 240px, calc(240px + #{$kendo-imageeditor-content-border-width}) );
+$kendo-imageeditor-action-pane-width: if( $kendo-imageeditor-content-border-width == 0, 240px, calc( 240px + #{$kendo-imageeditor-content-border-width}) );
 
 /// Crop background color of the imageeditor.
 /// @group imageeditor
@@ -102,7 +103,7 @@ $kendo-imageeditor-resize-handle-border-width: 0 2px 2px 0 !default;
 $kendo-imageeditor-resize-handle-size: map-get( $kendo-spacing, 4 ) !default;
 /// Imageeditor resize handle top offset.
 /// @group imageeditor
-$kendo-imageeditor-resize-top-offset: calc( $kendo-imageeditor-resize-handle-size / 2 ) !default;
+$kendo-imageeditor-resize-top-offset: math.div( $kendo-imageeditor-resize-handle-size, 2 ) !default;
 /// Imageeditor resize handle left offset.
 /// @group imageeditor
-$kendo-imageeditor-resize-left-offset: calc( $kendo-imageeditor-resize-handle-size / 2 ) !default;
+$kendo-imageeditor-resize-left-offset: math.div( $kendo-imageeditor-resize-handle-size, 2 ) !default;

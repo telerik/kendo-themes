@@ -5,16 +5,16 @@
 @mixin kendo-calendar--theme() {
     .k-calendar {
         @include fill(
-            var(--kendo-calendar-text, #{$kendo-calendar-text}),
-            var(--kendo-calendar-bg, #{$kendo-calendar-bg}),
-            var(--kendo-calendar-border, #{$kendo-calendar-border}),
+            var( --kendo-calendar-text, #{$kendo-calendar-text}),
+            var( --kendo-calendar-bg, #{$kendo-calendar-bg}),
+            var( --kendo-calendar-border, #{$kendo-calendar-border}),
         );
 
         // Header / footer
         .k-header {
             @include fill(
-                var(--kendo-calendar-header-text, #{$kendo-calendar-header-text}),
-                var(--kendo-calendar-header-bg, #{$kendo-calendar-header-bg}),
+                var( --kendo-calendar-header-text, #{$kendo-calendar-header-text}),
+                var( --kendo-calendar-header-bg, #{$kendo-calendar-header-bg}),
                 inherit,
             );
         }
@@ -22,26 +22,26 @@
         // Today navigation
         .k-nav-today,
         .k-calendar-nav-today {
-            color: var(--kendo-calendar-today-nav-text, #{$kendo-calendar-today-nav-text});
+            color: var( --kendo-calendar-today-nav-text, #{$kendo-calendar-today-nav-text});
 
             &:hover,
             &.k-hover,
             &:focus,
             &.k-focus {
-                color: var(--kendo-calendar-today-nav-hover-text, #{$kendo-calendar-today-nav-hover-text});
+                color: var( --kendo-calendar-today-nav-hover-text, #{$kendo-calendar-today-nav-hover-text});
             }
         }
 
 
         // Header cells
         .k-calendar-th {
-            color: var(--kendo-calendar-header-cell-text, #{$kendo-calendar-header-cell-text});
+            color: var( --kendo-calendar-header-cell-text, #{$kendo-calendar-header-cell-text});
         }
 
         .k-calendar-caption,
         .k-meta-header,
         .k-month-header {
-            color: var(--kendo-calendar-caption-color, #{$kendo-calendar-caption-color});
+            color: var( --kendo-calendar-caption-color, #{$kendo-calendar-caption-color});
         }
 
 

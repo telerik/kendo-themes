@@ -109,7 +109,7 @@
             font: 16px/1 "WebComponentsIcons"; // stylelint-disable-line
             // The Calc is needed due to the the negative margin
             // that removes the double bottom border of the header
-            top: calc(50% - 1px);
+            top: calc( 50% - 1px);
             left: 50%;
             transform: translate(-50%, -50%);
             padding: .2em;

@@ -38,7 +38,7 @@ $kendo-menu-separator-width: map-get( $kendo-spacing, hair ) !default;
 
 /// The base outline of focused menu item.
 /// @group menu
-$kendo-menu-item-focus-outline-offset: calc(-1 * map-get( $kendo-spacing, thin )) !default;
+$kendo-menu-item-focus-outline-offset: (-1 * map-get( $kendo-spacing, thin )) !default;
 $kendo-menu-item-focus-outline-width: map-get( $kendo-spacing, hair ) !default;
 $kendo-menu-item-focus-outline-style: solid !default;
 
@@ -141,9 +141,9 @@ $kendo-menu-popup-item-padding-y-md: $kendo-list-item-padding-y-md !default;
 $kendo-menu-popup-item-padding-y-lg: $kendo-list-item-padding-y-lg !default;
 /// The end padding of the menu item in popup.
 /// @group menu
-$kendo-menu-popup-item-padding-end-sm: calc( $kendo-menu-popup-item-padding-x-sm * 2 + var( --kendo-icon-size, 1rem ) ) !default;
-$kendo-menu-popup-item-padding-end-md: calc( $kendo-menu-popup-item-padding-x-md * 2 + var( --kendo-icon-size, 1rem ) ) !default;
-$kendo-menu-popup-item-padding-end-lg: calc( $kendo-menu-popup-item-padding-x-lg * 2 + var( --kendo-icon-size, 1rem ) ) !default;
+$kendo-menu-popup-item-padding-end-sm: calc( #{$kendo-menu-popup-item-padding-x-sm * 2} + var( --kendo-icon-size, 1rem ) ) !default;
+$kendo-menu-popup-item-padding-end-md: calc( #{$kendo-menu-popup-item-padding-x-md * 2} + var( --kendo-icon-size, 1rem ) ) !default;
+$kendo-menu-popup-item-padding-end-lg: calc( #{$kendo-menu-popup-item-padding-x-lg * 2} + var( --kendo-icon-size, 1rem ) ) !default;
 
 /// The start margin of the menu item expand icon.
 /// @group menu
@@ -152,9 +152,9 @@ $kendo-menu-popup-item-icon-margin-start-md: map-get( $kendo-spacing, 0 ) !defau
 $kendo-menu-popup-item-icon-margin-start-lg: map-get( $kendo-spacing, 0 ) !default;
 /// The end margin of the menu item expand icon.
 /// @group menu
-$kendo-menu-popup-item-icon-margin-end-sm: calc( -1 * (var( --kendo-icon-size, 1rem ) + $kendo-menu-popup-item-padding-x-sm) ) !default;
-$kendo-menu-popup-item-icon-margin-end-md: calc( -1 * (var( --kendo-icon-size, 1rem ) + $kendo-menu-popup-item-padding-x-md) ) !default;
-$kendo-menu-popup-item-icon-margin-end-lg: calc( -1 * (var( --kendo-icon-size, 1rem ) + $kendo-menu-popup-item-padding-x-lg) ) !default;
+$kendo-menu-popup-item-icon-margin-end-sm: calc( -1 * (var( --kendo-icon-size, 1rem ) + #{$kendo-menu-popup-item-padding-x-sm}) ) !default;
+$kendo-menu-popup-item-icon-margin-end-md: calc( -1 * (var( --kendo-icon-size, 1rem ) + #{$kendo-menu-popup-item-padding-x-md}) ) !default;
+$kendo-menu-popup-item-icon-margin-end-lg: calc( -1 * (var( --kendo-icon-size, 1rem ) + #{$kendo-menu-popup-item-padding-x-lg}) ) !default;
 
 /// The base shadow of focused menu item in popup.
 /// @group menu

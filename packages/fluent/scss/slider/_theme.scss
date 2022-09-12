@@ -11,10 +11,10 @@
         --INTERNAL--kendo-slider-text: var( --kendo-slider-text, #{$kendo-slider-text} );
         --INTERNAL--kendo-slider-track-bg: var( --kendo-slider-track-bg, #{$kendo-slider-track-bg} );
         --INTERNAL--kendo-slider-selection-bg: var( --kendo-slider-selection-bg, #{$kendo-slider-selection-bg} );
-        --INTERNAL--kendo-slider-thumb-bg: var(--kendo-slider-thumb-bg,  #{$kendo-slider-thumb-bg});
-        --INTERNAL--kendo-slider-thumb-text: var(--kendo-slider-thumb-text,  #{$kendo-slider-thumb-text});
-        --INTERNAL--kendo-slider-thumb-border: var(--kendo-slider-thumb-border,  #{$kendo-slider-thumb-border});
-        --INTERNAL--kendo-slider-thumb-gradient: var(--kendo-slider-thumb-gradient,  #{$kendo-slider-thumb-gradient});
+        --INTERNAL--kendo-slider-thumb-bg: var( --kendo-slider-thumb-bg,  #{$kendo-slider-thumb-bg});
+        --INTERNAL--kendo-slider-thumb-text: var( --kendo-slider-thumb-text,  #{$kendo-slider-thumb-text});
+        --INTERNAL--kendo-slider-thumb-border: var( --kendo-slider-thumb-border,  #{$kendo-slider-thumb-border});
+        --INTERNAL--kendo-slider-thumb-gradient: var( --kendo-slider-thumb-gradient,  #{$kendo-slider-thumb-gradient});
 
         color: var( --INTERNAL--kendo-slider-text, inherit );
     }

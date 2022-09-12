@@ -21,10 +21,10 @@
         -webkit-tap-highlight-color: $rgba-transparent;
 
         &.k-switch-on .k-switch-thumb-wrap {
-            inset-inline-start: calc( 100% - calc( var( --INTERNAL--kendo-switch-thumb-width, auto ) / 2 ) - var( --INTERNAL--kendo-switch-thumb-offset, 0 ) );
+            inset-inline-start: calc( 100% - ( var( --INTERNAL--kendo-switch-thumb-width, auto ) / 2 ) - var( --INTERNAL--kendo-switch-thumb-offset, 0 ) );
         }
         &.k-switch-off .k-switch-thumb-wrap {
-            inset-inline-start: calc( calc( var( --INTERNAL--kendo-switch-thumb-width, auto ) / 2 ) + var( --INTERNAL--kendo-switch-thumb-offset, 0 ) );
+            inset-inline-start: calc( ( var( --INTERNAL--kendo-switch-thumb-width, auto ) / 2 ) + var( --INTERNAL--kendo-switch-thumb-offset, 0 ) );
         }
 
         *,

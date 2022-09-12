@@ -74,7 +74,7 @@
             content: "";
             position: absolute;
             width: var( --kendo-filter-line-size, #{$kendo-filter-line-size} );
-            top: calc( calc( var( --kendo-filter-padding-y, #{$kendo-filter-padding-y} ) * -1 ) - var( --kendo-filter-line-size, #{$kendo-filter-line-size} ) );
+            top: calc( ( var( --kendo-filter-padding-y, #{$kendo-filter-padding-y} ) * -1 ) - var( --kendo-filter-line-size, #{$kendo-filter-line-size} ) );
             bottom: 50%;
             inset-inline-start: calc( var( --kendo-filter-padding-x, #{$kendo-filter-padding-x} ) * -1 );
         }

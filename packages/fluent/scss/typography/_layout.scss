@@ -17,7 +17,7 @@
 
     .k-body {
         p {
-            margin: var(--kendo-paragraph-margin, #{$kendo-paragraph-margin});
+            margin: var( --kendo-paragraph-margin, #{$kendo-paragraph-margin});
         }
     }
 
@@ -45,32 +45,32 @@
     // Paragraph
     .k-paragraph {
         @include typography(
-            var(--kendo-paragraph-font-size, #{$kendo-paragraph-font-size}),
-            var(--kendo-paragraph-font-family, #{$kendo-paragraph-font-family}),
-            var(--kendo-paragraph-line-height, #{$kendo-paragraph-line-height}),
-            var(--kendo-paragraph-font-weight, #{$kendo-paragraph-font-weight}),
-            var(--kendo-paragraph-letter-spacing, #{$kendo-paragraph-letter-spacing})
+            var( --kendo-paragraph-font-size, #{$kendo-paragraph-font-size}),
+            var( --kendo-paragraph-font-family, #{$kendo-paragraph-font-family}),
+            var( --kendo-paragraph-line-height, #{$kendo-paragraph-line-height}),
+            var( --kendo-paragraph-font-weight, #{$kendo-paragraph-font-weight}),
+            var( --kendo-paragraph-letter-spacing, #{$kendo-paragraph-letter-spacing})
         );
-        margin: var(--kendo-paragraph-margin, #{$kendo-paragraph-margin});
+        margin: var( --kendo-paragraph-margin, #{$kendo-paragraph-margin});
     }
 
     // Code snippet
     .k-pre,
     .k-code {
         @include typography(
-            var(--kendo-code-font-size, #{$kendo-code-font-size}),
-            var(--kendo-code-font-family, #{$kendo-code-font-family}),
-            var(--kendo-code-line-height, #{$kendo-code-line-height}),
-            var(--kendo-code-font-weight, #{$kendo-code-font-weight}),
-            var(--kendo-code-letter-spacing, #{$kendo-code-letter-spacing})
+            var( --kendo-code-font-size, #{$kendo-code-font-size}),
+            var( --kendo-code-font-family, #{$kendo-code-font-family}),
+            var( --kendo-code-line-height, #{$kendo-code-line-height}),
+            var( --kendo-code-font-weight, #{$kendo-code-font-weight}),
+            var( --kendo-code-letter-spacing, #{$kendo-code-letter-spacing})
         );
         border-style: solid;
-        border-width: var(--kendo-code-border-width, #{$kendo-code-border-width});
+        border-width: var( --kendo-code-border-width, #{$kendo-code-border-width});
     }
 
     .k-pre {
-        padding-inline: var(--kendo-pre-padding-x, #{$kendo-pre-padding-x});
-        padding-block: var(--kendo-pre-padding-y, #{$kendo-pre-padding-y});
+        padding-inline: var( --kendo-pre-padding-x, #{$kendo-pre-padding-x});
+        padding-block: var( --kendo-pre-padding-y, #{$kendo-pre-padding-y});
         overflow: auto;
     }
 
@@ -84,8 +84,8 @@
     }
 
     .k-code {
-        padding-inline: var(--kendo-code-padding-x, #{$kendo-code-padding-x});
-        padding-block: var(--kendo-code-padding-y, #{$kendo-code-padding-y});
+        padding-inline: var( --kendo-code-padding-x, #{$kendo-code-padding-x});
+        padding-block: var( --kendo-code-padding-y, #{$kendo-code-padding-y});
     }
 
     // Display

@@ -154,11 +154,11 @@
     }
 
     .k-left-handle {
-        inset-inline-start: calc( var( kendo-selection-handle-size, #{$kendo-selection-handle-size} ) / -2 );
+        inset-inline-start: calc( var( --kendo-selection-handle-size, #{$kendo-selection-handle-size} ) / -2 );
     }
 
     .k-right-handle {
-        inset-inline-end: calc( var( kendo-selection-handle-size, #{$kendo-selection-handle-size} ) / -2 );
+        inset-inline-end: calc( var( --kendo-selection-handle-size, #{$kendo-selection-handle-size} ) / -2 );
     }
 
     .k-left-handle div {
@@ -177,12 +177,12 @@
 
     .k-left-handle.k-handle-active div {
         margin-inline-start: calc( var( --kendo-selection-handle-size, #{$kendo-selection-handle-size} ) * 2 );
-        padding-inline-start: calc( calc( var( --kendo-selection-handle-size, #{$kendo-selection-handle-size} ) * 2 ) + calc( var( --kendo-selection-handle-size, #{$kendo-selection-handle-size} ) / 1.5 ) );
+        padding-inline-start: calc( ( var( --kendo-selection-handle-size, #{$kendo-selection-handle-size} ) * 2 ) + ( var( --kendo-selection-handle-size, #{$kendo-selection-handle-size} ) / 1.5 ) );
     }
 
     .k-right-handle.k-handle-active div {
         margin-inline-start: calc( var( --kendo-selection-handle-size, #{$kendo-selection-handle-size} ) * 2 );
-        padding-inline-end: calc( calc( var( --kendo-selection-handle-size, #{$kendo-selection-handle-size} ) * 2 ) + calc( var( --kendo-selection-handle-size, #{$kendo-selection-handle-size} ) / 1.5 ) );
+        padding-inline-end: calc( ( var( --kendo-selection-handle-size, #{$kendo-selection-handle-size} ) * 2 ) + ( var( --kendo-selection-handle-size, #{$kendo-selection-handle-size} ) / 1.5 ) );
     }
 
     .k-mask {
@@ -462,7 +462,7 @@
             @if $type == "color" {
                 // background-color can store any color
                 background-color: $value;
-            } @else if $type == "string" and string.slice( $value, 1, 4) == "var(" {
+            } @else if $type == "string" and string.slice( $value, 1, 4 ) == "var(" {
                 background-color: $value;
             } @else if $type == "number" {
                 // margin-top can store positive & negative values

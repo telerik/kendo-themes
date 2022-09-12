@@ -1,3 +1,4 @@
+@use "sass:math";
 @use "../core/" as *;
 @use "_variables.scss" as *;
 @use "../toolbar/_variables.scss" as *;
@@ -267,8 +268,8 @@
     // Insert table
     .k-ct-popup {
         box-sizing: border-box;
-        width: calc( #{$ct-cell-size} * 10 - (#{$ct-cell-size} / 2) );
-        padding: calc( #{$ct-cell-size} / 4 );
+        width: ( $ct-cell-size * 10 - math.div($ct-cell-size, 2) );
+        padding: math.div( $ct-cell-size, 4 );
 
         .k-button {
             width: 100%;

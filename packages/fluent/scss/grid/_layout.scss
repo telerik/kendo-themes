@@ -522,7 +522,7 @@
     .k-grid-column-menu-standalone a.k-grid-filter {
         position: initial;
         display: inline-block;
-        margin-block: calc( $kendo-padding-y * -1 );
+        margin-block: ( $kendo-padding-y * -1 );
         margin-inline: 0;
         padding-block: $kendo-padding-y;
         padding-inline: $kendo-padding-x;

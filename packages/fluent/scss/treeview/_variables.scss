@@ -92,7 +92,7 @@ $kendo-treeview-item-border: inherit !default;
 $kendo-treeview-item-hover-bg: var( --kendo-hover-bg, inherit ) !default;
 /// Text color of hovered treeview items.
 /// @group treeview
-$kendo-treeview-item-hover-text: var(--kendo-hover-text, inherit ) !default;
+$kendo-treeview-item-hover-text: var( --kendo-hover-text, inherit ) !default;
 /// Border color of hovered treeview items.
 /// @group treeview
 $kendo-treeview-item-hover-border: inherit !default;
@@ -135,7 +135,7 @@ $kendo-treeview-item-disabled-border: inherit !default;
 $kendo-treeview-loadmore-bg: transparent !default;
 /// Text color of load more.
 /// @group treeview
-$kendo-treeview-loadmore-text: var(--kendo-link-text, initial ) !default;
+$kendo-treeview-loadmore-text: var( --kendo-link-text, initial ) !default;
 /// Border color of load more.
 /// @group treeview
 $kendo-treeview-loadmore-border: inherit !default;
@@ -145,7 +145,7 @@ $kendo-treeview-loadmore-border: inherit !default;
 $kendo-treeview-loadmore-hover-bg: transparent !default;
 /// Text color of a hovered load more.
 /// @group treeview
-$kendo-treeview-loadmore-hover-text: var(--kendo-link-hover-text, initial ) !default;
+$kendo-treeview-loadmore-hover-text: var( --kendo-link-hover-text, initial ) !default;
 /// Border color of a hovered load more.
 /// @group treeview
 $kendo-treeview-loadmore-hover-border: inherit !default;
@@ -155,7 +155,7 @@ $kendo-treeview-loadmore-hover-border: inherit !default;
 $kendo-treeview-loadmore-focus-bg: transparent !default;
 /// Text color of a focused load more.
 /// @group treeview
-$kendo-treeview-loadmore-focus-text: var(--kendo-link-hover-text, initial ) !default;
+$kendo-treeview-loadmore-focus-text: var( --kendo-link-hover-text, initial ) !default;
 /// Border color of a focused load more.
 /// @group treeview
 $kendo-treeview-loadmore-focus-border: inherit !default;

@@ -125,8 +125,7 @@ $kendo-drawer-item-selected-text: $black !default;
 $kendo-drawer-item-selected-icon-text: get-theme-color-var( primary-120 ) !default;
 /// Background color of the selected and hovered drawer item.
 /// @group drawer
-$kendo-drawer-item-selected-hover-bg: var(--kendo-selected-hover-bg, inherit ) !default;
+$kendo-drawer-item-selected-hover-bg: var( --kendo-selected-hover-bg, inherit ) !default;
 /// Text color of the selected and hovered drawer item.
 /// @group drawer
-$kendo-drawer-item-selected-hover-text: var(--kendo-selected-hover-text, inherit ) !default;
-
+$kendo-drawer-item-selected-hover-text: var( --kendo-selected-hover-text, inherit ) !default;

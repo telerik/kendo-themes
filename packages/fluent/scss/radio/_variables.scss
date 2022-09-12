@@ -1,3 +1,4 @@
+@use "sass:math";
 @use "../core/color-system" as *;
 @use "../core/_variables.scss" as *;
 @use "../core/functions/" as *;
@@ -49,10 +50,10 @@ $kendo-radio-height: map-get( $kendo-spacing, 5 ) !default;
 $kendo-radio-font-size: ( map-get( $kendo-spacing, 5 ) - map-get( $kendo-spacing, thin ) ) !default;
 /// Default ripple width of radio button.
 /// @group radio
-$kendo-radio-ripple-width: calc( map-get( $kendo-spacing, 5 ) * 3 ) !default;
+$kendo-radio-ripple-width: ( map-get( $kendo-spacing, 5 ) * 3 ) !default;
 /// Default ripple height of radio button.
 /// @group radio
-$kendo-radio-ripple-height: calc( map-get( $kendo-spacing, 5 ) * 3 ) !default;
+$kendo-radio-ripple-height: ( map-get( $kendo-spacing, 5 ) * 3 ) !default;
 
 /// Background color of radio button.
 /// @group radio
@@ -92,10 +93,10 @@ $kendo-radio-checked-left: map-get( $kendo-spacing, 1 ) !default;
 $kendo-radio-checked-border-width: ( map-get( $kendo-spacing, 1) + map-get( $kendo-spacing, hair) ) !default;
 /// Width of checked radio button.
 /// @group radio
-$kendo-radio-checked-width: calc( $kendo-radio-width / 2 ) !default;
+$kendo-radio-checked-width: math.div( $kendo-radio-width, 2 ) !default;
 /// Height of checked radio button.
 /// @group radio
-$kendo-radio-checked-height: calc( $kendo-radio-height / 2 ) !default;
+$kendo-radio-checked-height: math.div( $kendo-radio-height, 2 ) !default;
 /// Background color of checked radio button.
 /// @group radio
 $kendo-radio-checked-bg: var( --kendo-component-bg, initial ) !default;

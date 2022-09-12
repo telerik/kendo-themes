@@ -62,8 +62,8 @@
 
     // Callout
     .k-callout {
-        width: calc( #{$kendo-tooltip-callout-size} * 2 );
-        height: calc( #{$kendo-tooltip-callout-size} * 2 );
+        width: ( $kendo-tooltip-callout-size * 2 );
+        height: ( $kendo-tooltip-callout-size * 2 );
         border-width: $kendo-tooltip-callout-size;
         border-style: solid;
         border-color: transparent;
@@ -79,7 +79,7 @@
     .k-callout-n {
         margin-inline-start: -$kendo-tooltip-callout-size;
         border-bottom-color: currentColor;
-        top: calc( -#{$kendo-tooltip-callout-size} * 2 );
+        top: ( -1 * $kendo-tooltip-callout-size * 2 );
         left: 50%;
         pointer-events: none;
     }
@@ -87,13 +87,13 @@
         margin-block-start: -$kendo-tooltip-callout-size;
         border-left-color: currentColor;
         top: 50%;
-        right: calc( -#{$kendo-tooltip-callout-size} * 2 );
+        right: ( -1 * $kendo-tooltip-callout-size * 2 );
         pointer-events: none;
     }
     .k-callout-s {
         margin-inline-start: -$kendo-tooltip-callout-size;
         border-top-color: currentColor;
-        bottom: calc( -#{$kendo-tooltip-callout-size} * 2 );
+        bottom: ( -1 * $kendo-tooltip-callout-size * 2 );
         left: 50%;
         pointer-events: none;
     }
@@ -101,7 +101,7 @@
         margin-block-start: -$kendo-tooltip-callout-size;
         border-right-color: currentColor;
         top: 50%;
-        left: calc( -#{$kendo-tooltip-callout-size} * 2 );
+        left: ( -1 * $kendo-tooltip-callout-size * 2 );
         pointer-events: none;
     }
 

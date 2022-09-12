@@ -22,8 +22,8 @@ $kendo-button-padding-y-lg: map-get( $kendo-spacing, 2 ) !default;
 /// Font sizes of the button.
 /// @group button
 $kendo-button-font-size-sm: var( --kendo-font-size, inherit ) !default;
-$kendo-button-font-size-md: var(--kendo-font-size, inherit) !default;
-$kendo-button-font-size-lg: var(--kendo-font-size, inherit) !default;
+$kendo-button-font-size-md: var( --kendo-font-size, inherit) !default;
+$kendo-button-font-size-lg: var( --kendo-font-size, inherit) !default;
 
 /// Line heights used along with $font-size.
 /// @group button

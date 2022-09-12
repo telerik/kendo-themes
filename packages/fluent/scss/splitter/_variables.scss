@@ -29,7 +29,7 @@ $kendo-splitter-border: var( --kendo-component-border, initial ) !default;
 $kendo-splitter-splitbar-size: map-get( $kendo-spacing, 2 ) !default;
 /// Icon size of the splitter splitbar.
 /// @group splitter
-$kendo-splitter-resize-icon-size: calc( map-get( $kendo-spacing, 2 ) + map-get( $kendo-spacing, thin ) ) !default;
+$kendo-splitter-resize-icon-size: ( map-get( $kendo-spacing, 2 ) + map-get( $kendo-spacing, thin ) ) !default;
 /// Length of the splitter drag handle.
 /// @group splitter
 $kendo-splitter-drag-handle-length: map-get( $kendo-spacing, 5 ) !default;
@@ -38,7 +38,7 @@ $kendo-splitter-drag-handle-length: map-get( $kendo-spacing, 5 ) !default;
 $kendo-splitter-drag-handle-thickness: map-get( $kendo-spacing, thin ) !default;
 /// Margin of the splitter drag handle icon.
 /// @group splitter
-$kendo-splitter-drag-icon-margin: calc( map-get( $kendo-spacing, 2 ) - map-get( $kendo-spacing, hair ) ) !default;
+$kendo-splitter-drag-icon-margin: ( map-get( $kendo-spacing, 2 ) - map-get( $kendo-spacing, hair ) ) !default;
 
 /// Background color of the splitter splitbar.
 /// @group splitter

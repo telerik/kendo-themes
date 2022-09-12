@@ -6,13 +6,13 @@
 $kendo-calendar-border-width: 1px !default;
 /// Font family of the calendar.
 /// @group calendar
-$kendo-calendar-font-family: var(--kendo-font-family, inherit ) !default;
+$kendo-calendar-font-family: var( --kendo-font-family, inherit ) !default;
 /// Font size of the calendar.
 /// @group calendar
-$kendo-calendar-font-size: var(--kendo-font-size, inherit ) !default;
+$kendo-calendar-font-size: var( --kendo-font-size, inherit ) !default;
 /// Line height of the calendar.
 /// @group calendar
-$kendo-calendar-line-height: var(--kendo-line-height, normal ) !default;
+$kendo-calendar-line-height: var( --kendo-line-height, normal ) !default;
 
 /// Size of the calendar cell.
 /// @group calendar
@@ -20,13 +20,13 @@ $kendo-calendar-cell-size: 28px !default;
 
 /// Background color of the calendar.
 /// @group calendar
-$kendo-calendar-bg: var(--kendo-component-bg, initial) !default;
+$kendo-calendar-bg: var( --kendo-component-bg, initial) !default;
 /// Text color of the calendar.
 /// @group calendar
-$kendo-calendar-text: var(--kendo-component-text, initial) !default;
+$kendo-calendar-text: var( --kendo-component-text, initial) !default;
 /// Border color of the calendar.
 /// @group calendar
-$kendo-calendar-border: var(--kendo-component-border, initial) !default;
+$kendo-calendar-border: var( --kendo-component-border, initial) !default;
 
 /// Horizontal padding of the calendar header.
 /// @group calendar
@@ -37,7 +37,7 @@ $kendo-calendar-header-padding-y: map-get( $kendo-spacing, 3 ) map-get( $kendo-s
 /// Width of the bottom border of the calendar header.
 /// @group calendar
 $kendo-calendar-header-border-width: 1px !default;
-$kendo-calendar-header-min-width: calc($kendo-calendar-cell-size * 8) !default;
+$kendo-calendar-header-min-width: ($kendo-calendar-cell-size * 8) !default;
 
 /// Background color of the calendar header.
 /// @group calendar
@@ -55,10 +55,10 @@ $kendo-calendar-nav-gap: map-get( $kendo-spacing, 1 ) !default;
 
 /// Text color of the Today link in the calendar.
 /// @group calendar
-$kendo-calendar-today-nav-text: var(--kendo-link-text, initial ) !default;
+$kendo-calendar-today-nav-text: var( --kendo-link-text, initial ) !default;
 /// Text color of the Today link when hovered in the calendar.
 /// @group calendar
-$kendo-calendar-today-nav-hover-text: var(--kendo-link-hover-text, initial ) !default;
+$kendo-calendar-today-nav-hover-text: var( --kendo-link-hover-text, initial ) !default;
 
 /// Horizontal padding of the calendar footer.
 /// @group calendar
@@ -69,7 +69,7 @@ $kendo-calendar-footer-padding-y: map-get( $kendo-spacing, 3 ) !default;
 
 /// Font size of the calendar cell.
 /// @group calendar
-$kendo-calendar-cell-font-size: var(--kendo-font-size-sm, inherit ) !default;
+$kendo-calendar-cell-font-size: var( --kendo-font-size-sm, inherit ) !default;
 /// Horizontal padding of the calendar cell.
 /// @group calendar
 $kendo-calendar-cell-padding-x: map-get( $kendo-spacing, 1 ) + map-get( $kendo-spacing, thin ) !default;
@@ -97,7 +97,7 @@ $kendo-calendar-header-cell-width: $kendo-calendar-cell-size !default;
 $kendo-calendar-header-cell-height: $kendo-calendar-cell-size !default;
 /// Font size of the calendar header cell.
 /// @group calendar
-$kendo-calendar-header-cell-font-size: var(--kendo-font-size-sm, inherit ) !default;
+$kendo-calendar-header-cell-font-size: var( --kendo-font-size-sm, inherit ) !default;
 /// Line height of the calendar header cell.
 /// @group calendar
 $kendo-calendar-header-cell-line-height: 2 !default;
@@ -119,7 +119,7 @@ $kendo-calendar-caption-padding-y: map-get( $kendo-spacing, 1 ) !default;
 $kendo-calendar-caption-height: $kendo-calendar-cell-size !default;
 /// Font size of the calendar captions.
 /// @group calendar
-$kendo-calendar-caption-font-size: var(--kendo-font-size-sm, inherit ) !default;
+$kendo-calendar-caption-font-size: var( --kendo-font-size-sm, inherit ) !default;
 /// Line height of the calendar captions.
 /// @group calendar
 $kendo-calendar-caption-line-height: normal !default;
@@ -130,8 +130,8 @@ $kendo-calendar-caption-font-weight: bold !default;
 /// @group calendar
 $kendo-calendar-caption-color: $kendo-subtle-text !default;
 
-$kendo-calendar-view-width: calc($kendo-calendar-cell-size * 7) !default;
-$kendo-calendar-view-height: calc($kendo-calendar-cell-size * 7) !default;
+$kendo-calendar-view-width: ($kendo-calendar-cell-size * 7) !default;
+$kendo-calendar-view-height: ($kendo-calendar-cell-size * 7) !default;
 
 /// Bottom padding of calendar views.
 /// @group calendar
@@ -168,14 +168,14 @@ $kendo-calendar-today-border-radius: 9999px !default;
 $kendo-calendar-week-number-bg: inherit !default;
 /// Text color of the calendar week number cell.
 /// @group calendar
-$kendo-calendar-week-number-text: var(--kendo-subtle-text, inherit ) !default;
+$kendo-calendar-week-number-text: var( --kendo-subtle-text, inherit ) !default;
 
 /// Background color of the other months calendar cells.
 /// @group calendar
 $kendo-calendar-other-month-bg: inherit !default;
 /// Text color of the other months calendar cells.
 /// @group calendar
-$kendo-calendar-other-month-text: var(--kendo-subtle-text, inherit ) !default;
+$kendo-calendar-other-month-text: var( --kendo-subtle-text, inherit ) !default;
 
 /// Background color of the calendar cells.
 /// @group calendar
@@ -186,34 +186,34 @@ $kendo-calendar-cell-text: inherit !default;
 
 /// Background color of the calendar cells when hovered.
 /// @group calendar
-$kendo-calendar-cell-hover-bg: var(--kendo-hover-bg, inherit ) !default;
+$kendo-calendar-cell-hover-bg: var( --kendo-hover-bg, inherit ) !default;
 /// Text color of the calendar cells when hovered.
 /// @group calendar
-$kendo-calendar-cell-hover-text: var(--kendo-hover-text, inherit ) !default;
+$kendo-calendar-cell-hover-text: var( --kendo-hover-text, inherit ) !default;
 
 /// Background color of the selected calendar cell.
 /// @group calendar
-$kendo-calendar-cell-selected-bg: var(--kendo-selected-bg, inherit ) !default;
+$kendo-calendar-cell-selected-bg: var( --kendo-selected-bg, inherit ) !default;
 /// Text color of the selected calendar cell.
 /// @group calendar
-$kendo-calendar-cell-selected-text: var(--kendo-selected-text, inherit ) !default;
+$kendo-calendar-cell-selected-text: var( --kendo-selected-text, inherit ) !default;
 /// Border color of the selected calendar cell.
 /// @group calendar
-$kendo-calendar-cell-selected-border: var(--kendo-selected-border, inherit ) !default;
+$kendo-calendar-cell-selected-border: var( --kendo-selected-border, inherit ) !default;
 /// Shadow of the selected calendar cell.
 /// @group calendar
 $kendo-calendar-cell-selected-shadow: inset 0 0 0 1px $kendo-calendar-cell-selected-border !default;
 
 /// Background color of the selected calendar cell when hovered.
 /// @group calendar
-$kendo-calendar-cell-selected-hover-bg: var(--kendo-selected-hover-bg, inherit ) !default;
+$kendo-calendar-cell-selected-hover-bg: var( --kendo-selected-hover-bg, inherit ) !default;
 /// Text color of the selected calendar cell when hovered.
 /// @group calendar
-$kendo-calendar-cell-selected-hover-text:var(--kendo-selected-hover-text, inherit ) !default;
+$kendo-calendar-cell-selected-hover-text:var( --kendo-selected-hover-text, inherit ) !default;
 
 /// Shadow of the selected calendar cell when focused.
 /// @group calendar
-$kendo-calendar-cell-focus-shadow: inset 0 0 0 1px get-theme-color-var(neutral-130) !default;
+$kendo-calendar-cell-focus-shadow: inset 0 0 0 1px get-theme-color-var( neutral-130) !default;
 /// Shadow of the selected calendar cell when selected and focused.
 /// @group calendar
 $kendo-calendar-cell-selected-focus-shadow: $kendo-calendar-cell-focus-shadow !default;
@@ -252,7 +252,7 @@ $kendo-infinite-calendar-view-padding-x: map-get( $kendo-spacing, 3 ) !default;
 /// Vertical padding of the infinite calendar.
 /// @group calendar
 $kendo-infinite-calendar-view-padding-y: 0px !default;
-$kendo-infinite-calendar-view-height: calc( $kendo-calendar-cell-size * 9 ) !default;
+$kendo-infinite-calendar-view-height: ( $kendo-calendar-cell-size * 9 ) !default;
 
 
 // Range calendar

@@ -114,7 +114,7 @@
             z-index: 1;
         }
         .k-step-label:only-child {
-            @include border-radius( calc((var( --kendo-stepper-indicator-height, #{$kendo-stepper-indicator-height} ) + 2 * var( --kendo-stepper-indicator-border-width, #{$kendo-stepper-indicator-border-width} )) / 2) );
+            @include border-radius( calc( (var( --kendo-stepper-indicator-height, #{$kendo-stepper-indicator-height} ) + 2 * var( --kendo-stepper-indicator-border-width, #{$kendo-stepper-indicator-border-width} )) / 2) );
             padding-inline: var( --kendo-stepper-label-padding-x, #{$kendo-stepper-label-padding-x} );
             padding-block: var( --kendo-stepper-label-padding-y, #{$kendo-stepper-label-padding-y} );
             border-width: 0;
@@ -197,14 +197,14 @@
             text-align: center;
         }
         .k-step-indicator + .k-step-label {
-            margin-top: if($kendo-stepper-indicator-focus-offset > 0, calc(8px - #{$kendo-stepper-indicator-focus-offset}), 8px);
+            margin-top: if($kendo-stepper-indicator-focus-offset > 0, calc( 8px - #{$kendo-stepper-indicator-focus-offset}), 8px);
         }
 
         // Progressbar
         & ~ .k-progressbar {
             width: 100%;
             height: var( --kendo-stepper-progressbar-size, #{$kendo-stepper-progressbar-size} );
-            top: calc(((var( --kendo-stepper-indicator-height, #{$kendo-stepper-indicator-height} ) + 2 * #{$kendo-stepper-indicator-focus-size}) / 2) + #{$kendo-stepper-indicator-focus-size} / 2);
+            top: calc( ((var( --kendo-stepper-indicator-height, #{$kendo-stepper-indicator-height} ) + 2 * #{$kendo-stepper-indicator-focus-size}) / 2) + #{$kendo-stepper-indicator-focus-size} / 2);
         }
     }
 
@@ -213,7 +213,7 @@
         flex-direction: column;
 
         .k-step {
-            min-height: calc((var( --kendo-stepper-indicator-width, #{$kendo-stepper-indicator-width} ) + 2 * var( --kendo-stepper-indicator-border-width, #{$kendo-stepper-indicator-border-width} ) + 2 * #{$kendo-stepper-indicator-focus-size}) + 20px);
+            min-height: calc( (var( --kendo-stepper-indicator-width, #{$kendo-stepper-indicator-width} ) + 2 * var( --kendo-stepper-indicator-border-width, #{$kendo-stepper-indicator-border-width} ) + 2 * #{$kendo-stepper-indicator-focus-size}) + 20px);
         }
 
         // Label
@@ -230,7 +230,7 @@
             width: var( --kendo-stepper-progressbar-size, #{$kendo-stepper-progressbar-size} );
             height: 100%;
             min-height: 20px;
-            inset-inline-start: calc((var( --kendo-stepper-indicator-width, #{$kendo-stepper-indicator-width} ) + 2 * var( --kendo-stepper-indicator-border-width, #{$kendo-stepper-indicator-border-width} ) + 2 * #{$kendo-stepper-indicator-focus-size}) / 2);
+            inset-inline-start: calc( (var( --kendo-stepper-indicator-width, #{$kendo-stepper-indicator-width} ) + 2 * var( --kendo-stepper-indicator-border-width, #{$kendo-stepper-indicator-border-width} ) + 2 * #{$kendo-stepper-indicator-focus-size}) / 2);
         }
 
         // Inline content

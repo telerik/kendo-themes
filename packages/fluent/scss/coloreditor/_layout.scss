@@ -51,7 +51,7 @@
 
         // Views
         .k-coloreditor-views {
-            min-width: calc( var(--kendo-color-preview-width, #{$kendo-colorpalette-tile-width}) * var(--kendo-color-preview-columns, 10) );
+            min-width: calc( var( --kendo-color-preview-width, #{$kendo-colorpalette-tile-width}) * var( --kendo-color-preview-columns, 10) );
             padding-inline: var( --kendo-coloreditor-views-padding-x, #{$kendo-coloreditor-views-padding-x} );
             padding-block-start: calc( var( --kendo-coloreditor-views-padding-y, #{$kendo-coloreditor-views-padding-y} ) * 2 );
             padding-block-end: var( --kendo-coloreditor-views-padding-y, #{$kendo-coloreditor-views-padding-y} );
