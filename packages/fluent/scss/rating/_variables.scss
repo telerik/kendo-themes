@@ -5,7 +5,7 @@
 $kendo-rating-font-family: var( --kendo-font-family, inherit ) !default;
 /// Font size of the rating.
 /// @group rating
-$kendo-rating-font-size: var(--kendo-font-size-sm, inherit ) !default;
+$kendo-rating-font-size: var( --kendo-font-size-sm, inherit ) !default;
 /// Line height of the rating.
 /// @group rating
 $kendo-rating-line-height: var( --kendo-line-height, normal ) !default;

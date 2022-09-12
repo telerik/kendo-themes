@@ -1,3 +1,4 @@
+@use "sass:math";
 @use "../core/color-system" as *;
 @use "../core/_variables.scss" as *;
 
@@ -157,7 +158,7 @@ $kendo-gantt-planned-moment-border-radius: calc( ( #{$kendo-gantt-planned-border
 $kendo-gantt-planned-moment-left-margin-x: calc( #{$kendo-gantt-planned-border-width} / 2 - #{$kendo-gantt-planned-moment-border-radius} ) !default;
 /// Horizontal margin of the gantt milestone planned line dot.
 /// @group gantt
-$kendo-gantt-planned-milestone-moment-margin-x: calc( #{$kendo-gantt-planned-moment-width} / 2 ) !default;
+$kendo-gantt-planned-milestone-moment-margin-x: math.div( $kendo-gantt-planned-moment-width, 2 ) !default;
 
 /// Default height of the gantt planned line.
 /// @group gantt

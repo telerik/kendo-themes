@@ -155,7 +155,7 @@
         padding-block-start:  calc( var( --kendo-filemanager-preview-padding-y, #{$kendo-filemanager-preview-padding-y} ) * 3 );
         padding-block-end: var( --kendo-filemanager-preview-padding-y, #{$kendo-filemanager-preview-padding-y} );
         width: var( --kendo-filemanager-preview-width, #{$kendo-filemanager-preview-width} );
-        min-height: calc( calc( var( --kendo-filemanager-preview-padding-y, #{$kendo-filemanager-preview-padding-y} ) * 4 ) + calc( var( --kendo-filemanager-preview-icon-size, #{$kendo-filemanager-preview-icon-size} ) * 2 ) + calc( var( --kendo-filemanager-preview-spacing, #{$kendo-filemanager-preview-spacing} ) * 3 ) );
+        min-height: calc( ( var( --kendo-filemanager-preview-padding-y, #{$kendo-filemanager-preview-padding-y} ) * 4 ) + ( var( --kendo-filemanager-preview-icon-size, #{$kendo-filemanager-preview-icon-size} ) * 2 ) + ( var( --kendo-filemanager-preview-spacing, #{$kendo-filemanager-preview-spacing} ) * 3 ) );
         border-width: 0;
         border-left-width: var( --kendo-filemanager-preview-border-width, #{$kendo-filemanager-preview-border-width} );
         border-style: solid;

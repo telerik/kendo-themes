@@ -1,3 +1,4 @@
+@use "sass:math";
 @use "../core/" as *;
 @use "_variables.scss" as *;
 @use "../input/_variables.scss" as *;
@@ -23,7 +24,7 @@
 
     .k-label-optional {
         margin-inline-start: var( --kendo-label-optional-margin-x, #{$kendo-label-optional-margin-x} );
-        font-size: var(--kendo-label-optional-font-size, #{$kendo-label-optional-font-size} );
+        font-size: var( --kendo-label-optional-font-size, #{$kendo-label-optional-font-size} );
         font-style: var( --kendo-label-optional-font-style, #{$kendo-label-optional-font-style} );
         align-self: center;
     }
@@ -316,7 +317,7 @@
         }
 
         > .k-reset > li + li {
-            margin-block-start: calc( map-get( $kendo-spacing, 4 ) / 2 );
+            margin-block-start: math.div( map-get( $kendo-spacing, 4 ), 2 );
         }
 
         .k-reset .k-widget {

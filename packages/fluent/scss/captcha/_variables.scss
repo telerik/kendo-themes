@@ -1,3 +1,4 @@
+@use "sass:math";
 @use "../core/color-system" as *;
 @use "../core/_variables.scss" as *;
 
@@ -35,11 +36,11 @@ $kendo-captcha-border: var( --kendo-component-border, initial ) !default;
 $kendo-captcha-image-wrap-spacing: $kendo-captcha-spacer !default;
 /// Spacing of the captcha image controls.
 /// @group captcha
-$kendo-captcha-image-controls-spacing: calc( $kendo-captcha-spacer / 2 ) !default;
+$kendo-captcha-image-controls-spacing: math.div( $kendo-captcha-spacer, 2 ) !default;
 
 /// Offset of the captcha validation text.
 /// @group captcha
-$kendo-captcha-validation-offset-y: calc( $kendo-captcha-spacer / 2 ) !default;
+$kendo-captcha-validation-offset-y: math.div( $kendo-captcha-spacer, 2 ) !default;
 /// Font-size of the captcha validation text.
 /// @group captcha
 $kendo-captcha-validation-font-size: var( --kendo-font-size-sm, inherit ) !default;

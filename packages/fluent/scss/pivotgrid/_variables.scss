@@ -1,3 +1,4 @@
+@use "sass:math";
 @use "../core/color-system" as *;
 @use "../core/_variables.scss" as *;
 @use "../grid/_variables.scss" as *;
@@ -139,7 +140,7 @@ $kendo-pivotgrid-configurator-content-padding-y: 0px !default;
 $kendo-pivotgrid-configurator-fields-margin-x: 0px !default;
 /// Vertical margin of the PivotGrid configurator fields.
 /// @group pivotgrid
-$kendo-pivotgrid-configurator-fields-margin-y: calc( #{$kendo-pivotgrid-spacer} / 2 ) !default;
+$kendo-pivotgrid-configurator-fields-margin-y: math.div( $kendo-pivotgrid-spacer, 2 ) !default;
 /// Spacing of the PivotGrid configurator fields.
 /// @group pivotgrid
 $kendo-pivotgrid-configurator-fields-gap: map-get( $kendo-spacing, 2) !default;
@@ -224,7 +225,7 @@ $kendo-pivotgrid-calculated-field-header-border: inherit !default;
 
 /// Horizontal padding of the PivotGrid treeview.
 /// @group pivotgrid
-$kendo-pivotgrid-treeview-padding-x: calc( #{$kendo-pivotgrid-spacer} / 2 ) !default;
+$kendo-pivotgrid-treeview-padding-x: math.div( $kendo-pivotgrid-spacer, 2 ) !default;
 /// Vertical padding of the PivotGrid treeview.
 /// @group pivotgrid
 $kendo-pivotgrid-treeview-padding-y: 0px !default;

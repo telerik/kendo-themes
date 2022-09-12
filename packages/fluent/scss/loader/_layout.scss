@@ -1,3 +1,4 @@
+@use "sass:math";
 @use "_variables.scss" as *;
 @use "../overlay/_variables.scss" as *;
 
@@ -157,13 +158,13 @@
             top: 100%;
             left: 0;
             animation: spinner-3-segment 2s ease infinite;
-            animation-delay: calc( -2s / 3 );
+            animation-delay: math.div( -2s, 3 );
         }
         .k-loader-segment:nth-child(3) {
             top: 100%;
             left: 100%;
             animation: spinner-3-segment 2s ease infinite;
-            animation-delay: calc( -4s / 3 );
+            animation-delay: math.div( -4s, 3 );
         }
 
 

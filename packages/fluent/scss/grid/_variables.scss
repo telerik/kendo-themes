@@ -209,7 +209,7 @@ $kendo-grid-sort-index-height: var( --kendo-icon-size, 1rem ) !default;
 $kendo-grid-sort-index-spacing-y: calc( var( --kendo-icon-spacing, .5rem ) / 4 ) !default;
 /// Vertical offset of the grid sort index.
 /// @group grid
-$kendo-grid-sort-index-spacing-x: calc( $kendo-grid-sort-index-spacing-y * -1 ) !default;
+$kendo-grid-sort-index-spacing-x: calc( -1 * #{$kendo-grid-sort-index-spacing-y} ) !default;
 /// Spacing of the grid sort icon.
 /// @group grid
 $kendo-grid-sort-icon-spacing: var( --kendo-icon-spacing, .5rem ) !default;
@@ -283,7 +283,7 @@ $kendo-grid-group-dropclue-line-size: 1px !default;
 $kendo-grid-group-dropclue-dot-size: $kendo-grid-group-dropclue-size !default;
 /// Height of the grid  group drop clue.
 /// @group grid
-$kendo-grid-group-dropclue-height: calc( $kendo-button-calc-size + $kendo-grid-group-dropclue-size ) !default;
+$kendo-grid-group-dropclue-height: calc( #{$kendo-button-calc-size} + #{$kendo-grid-group-dropclue-size} ) !default;
 /// Top offset of the grid group drop clue.
 /// @group grid
 $kendo-grid-group-dropclue-top: 2px !default;

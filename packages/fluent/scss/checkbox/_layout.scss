@@ -32,7 +32,7 @@
             content: $kendo-checkbox-checked-glyph;
             width: 1em;
             height: 1em;
-            font-size: var( --INTERNAL-kendo-glyph-size, #{ calc(( map-get( $kendo-spacing, 4 ) - map-get( $kendo-spacing, thin ) )) });
+            font-size: var( --INTERNAL-kendo-glyph-size, ( map-get( $kendo-spacing, 4 ) - map-get( $kendo-spacing, thin ) ) );
             font-family: var( --kendo-checkbox-glyph-font-family, #{ $kendo-checkbox-glyph-font-family } );
             line-height: 1;
             transform: translate(-50%, -50%) scale(0);
@@ -181,8 +181,8 @@
     .k-ripple-container {
         .k-checkbox::after {
             content: "";
-            width: var( --INTERNAL-kendo-ripple-size-width, calc( map-get( $kendo-spacing, 5 ) * 3 ));
-            height: var( --INTERNAL-kendo-ripple-size-height, calc( map-get( $kendo-spacing, 5 ) * 3 ));
+            width: var( --INTERNAL-kendo-ripple-size-width, ( map-get( $kendo-spacing, 5 ) * 3 ));
+            height: var( --INTERNAL-kendo-ripple-size-height, ( map-get( $kendo-spacing, 5 ) * 3 ));
             display: block;
             position: absolute;
             left: 50%;

@@ -1,3 +1,4 @@
+@use "sass:math";
 @use "../core/color-system" as *;
 @use "../core/_variables.scss" as *;
 @use "../button/_variables.scss" as *;
@@ -21,16 +22,16 @@ $kendo-fab-line-height: var( --kendo-line-height, normal ) !default;
 /// Horizontal padding of the FAB.
 /// @group floating-action-button
 $kendo-fab-padding-x: map-get( $kendo-spacing, 4 ) !default;
-$kendo-fab-padding-x-sm: calc( $kendo-fab-padding-x / 2 ) !default;
+$kendo-fab-padding-x-sm: math.div( $kendo-fab-padding-x, 2 ) !default;
 $kendo-fab-padding-x-md: $kendo-fab-padding-x !default;
-$kendo-fab-padding-x-lg: calc( $kendo-fab-padding-x * 1.5 ) !default;
+$kendo-fab-padding-x-lg: ( $kendo-fab-padding-x * 1.5 ) !default;
 
 /// Vertical padding of the FAB.
 /// @group floating-action-button
 $kendo-fab-padding-y: $kendo-fab-padding-x !default;
-$kendo-fab-padding-y-sm: calc( $kendo-fab-padding-y / 2 ) !default;
+$kendo-fab-padding-y-sm: math.div( $kendo-fab-padding-y, 2 ) !default;
 $kendo-fab-padding-y-md: $kendo-fab-padding-y !default;
-$kendo-fab-padding-y-lg: calc( $kendo-fab-padding-y * 1.5 ) !default;
+$kendo-fab-padding-y-lg: ( $kendo-fab-padding-y * 1.5 ) !default;
 
 /// Offset of the focused FAB.
 /// @group floating-action-button
@@ -50,7 +51,7 @@ $kendo-fab-icon-width: 20px !default;
 $kendo-fab-icon-height: $kendo-fab-icon-width !default;
 /// FAB icon spacing.
 /// @group floating-action-button
-$kendo-fab-icon-spacing: calc( map-get( $kendo-spacing, 1 ) / 2 ) !default;
+$kendo-fab-icon-spacing: math.div( map-get( $kendo-spacing, 1 ), 2 ) !default;
 
 /// FAB items horizontal padding.
 /// @group floating-action-button
@@ -153,10 +154,10 @@ $kendo-fab-item-bg: var( --kendo-component-bg, inherit ) !default;
 $kendo-fab-item-border: get-theme-color-var( neutral-110 ) !default;
 /// The hover text color of the FAB item.
 /// @group floating-action-button
-$kendo-fab-item-hover-text: var(--kendo-hover-text, inherit ) !default;
+$kendo-fab-item-hover-text: var( --kendo-hover-text, inherit ) !default;
 /// The hover background color of the FAB item.
 /// @group floating-action-button
-$kendo-fab-item-hover-bg: var(--kendo-hover-bg, inherit ) !default;
+$kendo-fab-item-hover-bg: var( --kendo-hover-bg, inherit ) !default;
 /// The hover border color of the FAB item.
 /// @group floating-action-button
 $kendo-fab-item-hover-border: get-theme-color-var( neutral-110 ) !default;
@@ -171,10 +172,10 @@ $kendo-fab-item-focus-bg: var( --kendo-component-bg, inherit ) !default;
 $kendo-fab-item-focus-border: get-theme-color-var( neutral-110 ) !default;
 /// The active text color of the FAB item.
 /// @group floating-action-button
-$kendo-fab-item-active-text: var(--kendo-selected-text, inherit ) !default;
+$kendo-fab-item-active-text: var( --kendo-selected-text, inherit ) !default;
 /// The active background color of the FAB item.
 /// @group floating-action-button
-$kendo-fab-item-active-bg: var(--kendo-selected-bg, inherit )  !default;
+$kendo-fab-item-active-bg: var( --kendo-selected-bg, inherit )  !default;
 /// The active border color of the FAB item.
 /// @group floating-action-button
 $kendo-fab-item-active-border: get-theme-color-var( neutral-110 ) !default;

@@ -1,3 +1,4 @@
+@use "sass:math";
 @use "../core/color-system" as *;
 @use "../core/mixins" as *;
 @use "_variables.scss" as *;
@@ -187,7 +188,7 @@
         }
     }
     .k-week-number .k-calendar-view {
-        width: calc(8 * var( --kendo-calendar-cell-size, #{$kendo-calendar-cell-size} ));
+        width: calc( 8 * var( --kendo-calendar-cell-size, #{$kendo-calendar-cell-size} ));
     }
 
 
@@ -208,7 +209,7 @@
 
     // Year view
     .k-calendar-yearview {
-        $_year-cell-size: calc( (7 / 4) * var( --kendo-calendar-cell-size, #{$kendo-calendar-cell-size} ));
+        $_year-cell-size: calc( math.div(7, 4) * var( --kendo-calendar-cell-size, #{$kendo-calendar-cell-size} ));
 
         .k-calendar-td {
             width: auto;
@@ -223,7 +224,7 @@
 
     // Decade view
     .k-calendar-decadeview {
-        $_decade-cell-size: calc( (7 / 4) * var( --kendo-calendar-cell-size, #{$kendo-calendar-cell-size} ));
+        $_decade-cell-size: calc( math.div(7, 4) * var( --kendo-calendar-cell-size, #{$kendo-calendar-cell-size} ));
 
         .k-calendar-td {
             width: auto;
@@ -238,7 +239,7 @@
 
     // Century view
     .k-calendar-centuryview {
-        $_century-cell-size: calc( (7 / 4) * var( --kendo-calendar-cell-size, #{$kendo-calendar-cell-size} ));
+        $_century-cell-size: calc( math.div(7, 4) * var( --kendo-calendar-cell-size, #{$kendo-calendar-cell-size} ));
 
         .k-calendar-td {
             width: auto;

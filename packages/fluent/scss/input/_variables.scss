@@ -15,7 +15,7 @@ $kendo-input-focus-border-width: 2px !default;
 
 /// Height of he border around the input.
 /// @group input
-$kendo-input-border-height: calc( $kendo-input-border-width * 2 ) !default;
+$kendo-input-border-height: ( $kendo-input-border-width * 2 ) !default;
 
 /// Horizontal padding of the input.
 /// @group input

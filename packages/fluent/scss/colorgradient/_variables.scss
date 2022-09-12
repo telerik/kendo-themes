@@ -1,3 +1,4 @@
+@use "sass:math";
 @use "../core/color-system" as *;
 @use "../core/_variables.scss" as *;
 
@@ -19,7 +20,7 @@ $kendo-colorgradient-border-radius: var( --kendo-border-radius-md, 0 ) !default;
 $kendo-colorgradient-padding-y: $kendo-colorgradient-spacer !default;
 /// Horizontal padding of the color gradient.
 /// @group cologradient
-$kendo-colorgradient-padding-x: calc( $kendo-colorgradient-spacer / 2 ) !default;
+$kendo-colorgradient-padding-x: math.div( $kendo-colorgradient-spacer, 2 ) !default;
 /// Spacing of the color gradient.
 /// @group cologradient
 $kendo-colorgradient-spacing: $kendo-colorgradient-spacer !default;
@@ -61,7 +62,7 @@ $kendo-colorgradient-canvas-border-radius: var( --kendo-border-radius-md, 0 ) !d
 $kendo-colorgradient-canvas-border-width: 1px !default;
 /// Spacing of the color gradient canvas.
 /// @group cologradient
-$kendo-colorgradient-canvas-spacing: calc( $kendo-colorgradient-spacer / 2 ) !default;
+$kendo-colorgradient-canvas-spacing: math.div( $kendo-colorgradient-spacer, 2 ) !default;
 /// Height the color gradient canvas hsv rectangle.
 /// @group cologradient
 $kendo-colorgradient-canvas-rectangle-height: 180px !default;
@@ -77,13 +78,13 @@ $kendo-colorgradient-canvas-draghandle-shadow: 0px 0.6px 1.8px rgba(0, 0, 0, 0.1
 $kendo-colorgradient-input-width: 48px !default;
 /// Input spacing of the color gradient.
 /// @group cologradient
-$kendo-colorgradient-input-spacing: calc( $kendo-colorgradient-spacer / 4 ) !default;
+$kendo-colorgradient-input-spacing: math.div( $kendo-colorgradient-spacer, 4 ) !default;
 /// Input label font size of the color gradient.
 /// @group cologradient
 $kendo-colorgradient-input-label-font-size: var( --kendo-font-size-sm, inherit ) !default;
 /// Input label spacing of the color gradient.
 /// @group cologradient
-$kendo-colorgradient-input-label-spacing: calc( $kendo-colorgradient-spacer / 4 ) !default;
+$kendo-colorgradient-input-label-spacing: math.div( $kendo-colorgradient-spacer, 4 ) !default;
 /// Input label text color of the color gradient.
 /// @group cologradient
 $kendo-colorgradient-input-label-text: var( --kendo-subtle-text, inherit ) !default;
@@ -93,7 +94,7 @@ $kendo-colorgradient-input-label-text: var( --kendo-subtle-text, inherit ) !defa
 $kendo-colorgradient-contrast-ratio-font-weight: var( --kendo-font-weight-bold, normal ) !default;
 /// Spacing of the color gradient contrast tool.
 /// @group cologradient
-$kendo-colorgradient-contrast-spacing: calc( $kendo-colorgradient-spacer / 1.5 ) !default;
+$kendo-colorgradient-contrast-spacing: math.div( $kendo-colorgradient-spacer, 1.5 ) !default;
 
 /// The size of the color gradient slider.
 /// @group cologradient
@@ -145,8 +146,7 @@ $kendo-colorgradient-draghandle-hover-shadow: $kendo-colorgradient-draghandle-fo
 
 /// Vertical offset of the color gradient canvas draghandle.
 /// @group cologradient
-$kendo-colorgradient-canvas-draghandle-offset-y: calc( ( $kendo-colorgradient-draghandle-height / 2 ) * -1 ) !default;
+$kendo-colorgradient-canvas-draghandle-offset-y: ( -1 * math.div( $kendo-colorgradient-draghandle-height, 2 ) ) !default;
 /// Horizontal offset of the color gradient canvas draghandle.
 /// @group cologradient
-$kendo-colorgradient-canvas-draghandle-offset-x: calc( ( $kendo-colorgradient-draghandle-width / 2 ) * -1 ) !default;
-
+$kendo-colorgradient-canvas-draghandle-offset-x: ( -1 * math.div( $kendo-colorgradient-draghandle-width, 2 ) ) !default;

@@ -2,7 +2,7 @@
 
 /// The padding of the inline form
 /// @group form
-$kendo-form-spacer: calc( #{$kendo-padding-x} * 2 ) !default;
+$kendo-form-spacer: ( $kendo-padding-x * 2 ) !default;
 
 /// The font size of the form
 /// @group form

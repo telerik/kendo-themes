@@ -1,7 +1,8 @@
+@use "sass:math";
 @use "_variables.scss" as *;
 @use "../core/_variables.scss" as *;
-@use "../core/mixins/border-radius" as *; 
-@use "../core/mixins/disabled" as *; 
+@use "../core/mixins/border-radius" as *;
+@use "../core/mixins/disabled" as *;
 
 @mixin kendo-radio--layout() {
 
@@ -79,8 +80,8 @@
             border-radius: var( --kendo-radio-border-radius, #{ $kendo-radio-border-radius } );
             box-sizing: border-box;
             position: absolute;
-            top: var(--INTERNAL-kendo-radio-checked-top, #{ $kendo-radio-checked-top } );
-            left: var(--INTERNAL-kendo-radio-checked-left, #{ $kendo-radio-checked-left } );
+            top: var( --INTERNAL-kendo-radio-checked-top, #{ $kendo-radio-checked-top } );
+            left: var( --INTERNAL-kendo-radio-checked-left, #{ $kendo-radio-checked-left } );
         }
     }
 
@@ -96,8 +97,8 @@
             border-radius: var( --kendo-radio-border-radius, #{ $kendo-radio-border-radius } );
             box-sizing: border-box;
             position: absolute;
-            top: var(--INTERNAL-kendo-radio-checked-top, #{ $kendo-radio-checked-top } );
-            left: var(--INTERNAL-kendo-radio-checked-left, #{ $kendo-radio-checked-left } );
+            top: var( --INTERNAL-kendo-radio-checked-top, #{ $kendo-radio-checked-top } );
+            left: var( --INTERNAL-kendo-radio-checked-left, #{ $kendo-radio-checked-left } );
         }
 
         @if $kendo-radio-indicator-type == "glyph" {
@@ -252,14 +253,14 @@
                 --INTERNAL-kendo-radio-font-size: #{ $_glyph-size };
             }
         }
-        
+
         .k-radio-#{$size}.k-checked,
         .k-radio-#{$size}:checked,
         .k-radio-#{$size}.k-hover,
         .k-radio-#{$size}:hover {
             &::after {
-                --INTERNAL-kendo-radio-checked-width: calc( #{ $_size } / 2 );
-                --INTERNAL-kendo-radio-checked-height: calc( #{ $_size } / 2 );
+                --INTERNAL-kendo-radio-checked-width: #{math.div( $_size, 2 )};
+                --INTERNAL-kendo-radio-checked-height: #{math.div( $_size, 2 )};
                 --INTERNAL-kendo-radio-checked-border-width: #{ $_checked-border-width };
                 --INTERNAL-kendo-radio-checked-top: #{ $_checked-position };
                 --INTERNAL-kendo-radio-checked-left: #{ $_checked-position };

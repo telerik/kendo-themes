@@ -33,7 +33,7 @@ $kendo-stepper-label-margin-x: map-get( $kendo-spacing, 2 ) !default;
 $kendo-stepper-label-padding-x: map-get( $kendo-spacing, 3 ) !default;
 /// Vertical padding the stepper label.
 /// @group stepper
-$kendo-stepper-label-padding-y: calc( map-get( $kendo-spacing, 1 ) + map-get( $kendo-spacing, thin ) ) !default;
+$kendo-stepper-label-padding-y: ( map-get( $kendo-spacing, 1 ) + map-get( $kendo-spacing, thin ) ) !default;
 
 /// Horizontal padding the stepper content.
 /// @group stepper
@@ -44,7 +44,7 @@ $kendo-stepper-inline-content-padding-y: map-get( $kendo-spacing, 3 ) !default;
 
 /// Width of the stepper indicator.
 /// @group stepper
-$kendo-stepper-indicator-width: calc( map-get( $kendo-spacing, 7 ) + map-get( $kendo-spacing, thin ) ) !default;
+$kendo-stepper-indicator-width: ( map-get( $kendo-spacing, 7 ) + map-get( $kendo-spacing, thin ) ) !default;
 /// Height of the stepper indicator.
 /// @group stepper
 $kendo-stepper-indicator-height: $kendo-stepper-indicator-width !default;
@@ -63,7 +63,7 @@ $kendo-stepper-indicator-focus-border-width: $kendo-stepper-indicator-border-wid
 $kendo-stepper-indicator-focus-size: map-get( $kendo-spacing, thin ) !default;
 /// The focus offset of the stepper indicator.
 /// @group stepper
-$kendo-stepper-indicator-focus-offset: calc( map-get( $kendo-spacing, thin ) + map-get( $kendo-spacing, hair ) ) !default;
+$kendo-stepper-indicator-focus-offset: ( map-get( $kendo-spacing, thin ) + map-get( $kendo-spacing, hair ) ) !default;
 /// The focus calculated offset of the stepper indicator.
 /// @group stepper
 $kendo-stepper-indicator-focus-calc-offset: calc( #{$kendo-stepper-indicator-focus-border-width} + #{$kendo-stepper-indicator-focus-offset} ) !default;
@@ -200,4 +200,3 @@ $kendo-stepper-content-transition-duration: 300ms !default;
 /// The timing funtion of the stepper transition.
 /// @group stepper
 $kendo-stepper-content-transition-timing-function: cubic-bezier(.4, 0, .2, 1) 0ms !default;
-

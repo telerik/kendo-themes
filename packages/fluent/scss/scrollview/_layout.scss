@@ -54,14 +54,14 @@
     .k-scrollview-wrap.k-scrollview-animate {
         display: flex;
         flex-flow: row nowrap;
-        width: calc( var(--kendo-scrollview-views, 1) * 100% );
+        width: calc( var( --kendo-scrollview-views, 1) * 100% );
         transition-duration: var( --kendo-scrollview-transition-duration, #{$kendo-scrollview-transition-duration} );
         transition-timing-function: var( --kendo-scrollview-transition-timing-function, #{$kendo-scrollview-transition-timing-function} );
-        transform: translateX( calc( -100% / var(--kendo-scrollview-views, 1) * ( var(--kendo-scrollview-current, 1) - 1) ) );
+        transform: translateX( calc( -100% / var( --kendo-scrollview-views, 1) * ( var( --kendo-scrollview-current, 1) - 1) ) );
 
         .k-scrollview-view {
-            width: calc( 100% / var(--kendo-scrollview-views, 1) );
-            flex: 0 0 calc( 100% / var(--kendo-scrollview-views, 1) );
+            width: calc( 100% / var( --kendo-scrollview-views, 1) );
+            flex: 0 0 calc( 100% / var( --kendo-scrollview-views, 1) );
         }
     }
 

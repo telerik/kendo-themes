@@ -1,3 +1,4 @@
+@use "sass:math";
 @use "../core/color-system" as *;
 @use "../core/_variables.scss" as *;
 
@@ -53,7 +54,7 @@ $kendo-drag-clue-shadow: var( --kendo-box-shadow-depth-2, none ) !default;
 $kendo-drop-hint-arrow-size: 6px !default;
 /// Arrow spacing of the drop hint.
 /// @group draggable
-$kendo-drop-hint-arrow-spacing: calc( $kendo-drop-hint-arrow-size / 2 ) !default;
+$kendo-drop-hint-arrow-spacing: math.div( $kendo-drop-hint-arrow-size, 2 ) !default;
 /// Width of the horizontal drop hint line.
 /// @group draggable
 $kendo-drop-hint-line-h-width: 20px !default;

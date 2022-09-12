@@ -1,3 +1,4 @@
+@use "sass:math";
 @use "../core/color-system" as *;
 @use "../core/_variables.scss" as *;
 
@@ -51,7 +52,7 @@ $kendo-coloreditor-header-padding-y: $kendo-coloreditor-spacer !default;
 $kendo-coloreditor-header-padding-x: $kendo-coloreditor-header-padding-y !default;
 /// Spacing of the color editor header.
 /// @group coloreditor
-$kendo-coloreditor-header-actions-spacing: calc( $kendo-coloreditor-spacer / 2 ) !default;
+$kendo-coloreditor-header-actions-spacing: math.div( $kendo-coloreditor-spacer, 2 ) !default;
 
 /// Width of the color editor preview.
 /// @group coloreditor

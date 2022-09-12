@@ -223,7 +223,7 @@
             position: absolute;
             bottom: calc( var( --kendo-upload-item-padding-y, #{$kendo-upload-item-padding-y} ) / 2 );
             // successed
-            width: calc(100% - var( --kendo-upload-item-padding-x, #{$kendo-upload-item-padding-x} ) * 2);
+            width: calc( 100% - var( --kendo-upload-item-padding-x, #{$kendo-upload-item-padding-x} ) * 2);
 
             .k-progress {
                 position: absolute;

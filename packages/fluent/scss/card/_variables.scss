@@ -143,7 +143,7 @@ $kendo-card-actions-gap: map-get( $kendo-spacing, 2 ) !default;
 /// Border radius of the scroll button in the card deck.
 /// @group card
 $kendo-card-deck-scroll-button-radius: 0 !default;
-$kendo-card-deck-scroll-button-offset: calc( -1 * #{$kendo-button-border-width} ) !default;
+$kendo-card-deck-scroll-button-offset: ( -1 * $kendo-button-border-width ) !default;
 
 /// Size of the card callout.
 /// @group card

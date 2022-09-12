@@ -21,9 +21,9 @@
 
         &:focus,
         &.k-focus {
-            --INTERNAL-kendo-chip-text: var(--kendo-chip-focus-text );
-            --INTERNAL-kendo-chip-bg: var(--kendo-chip-focus-bg );
-            --INTERNAL-kendo-chip-border: var(--kendo-chip-focus-border );
+            --INTERNAL-kendo-chip-text: var( --kendo-chip-focus-text );
+            --INTERNAL-kendo-chip-bg: var( --kendo-chip-focus-bg );
+            --INTERNAL-kendo-chip-border: var( --kendo-chip-focus-border );
         }
 
         &.k-chip-outline:focus::after,
