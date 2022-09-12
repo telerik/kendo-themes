@@ -18,6 +18,13 @@ module.exports = {
         {
             cwd: 'packages/material',
             files: [ 'dist/!(_|variables)*.scss' ]
-        }
+        },
+        {
+            cwd: 'packages/fluent',
+            file: 'scss/all.scss',
+            outFile: 'dist/fluent-main.css',
+            implementation: 'sass-embedded',
+            api: 'modern'
+        },
     ]
 };
