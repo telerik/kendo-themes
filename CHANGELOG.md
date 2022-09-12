@@ -3,6 +3,51 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.8.0](https://github.com/telerik/kendo-themes/compare/v5.7.0...v5.8.0) (2022-09-12)
+
+
+### Bug Fixes
+
+* **chat:** use correct shadow for bubble states in fluent theme ([6b68b9c](https://github.com/telerik/kendo-themes/commit/6b68b9c195f9509e5aad3258b60073a4b153e41d))
+* **coloreditor:** set default width based on design in fluent theme ([7fbdc7c](https://github.com/telerik/kendo-themes/commit/7fbdc7c9011ff1f14cd6c2d1e0d9de3eea696da7))
+* **coloreditor:** use smaller footer padding to comply with the design in fluent theme ([26054a0](https://github.com/telerik/kendo-themes/commit/26054a00a623843452d5d9ee975a50f3ce04f4f0))
+* **colorgradient:** alpha slider opacity is not visible in fluent theme ([cc511ae](https://github.com/telerik/kendo-themes/commit/cc511aeb4c0e50722868bf90b00daade10539d6f))
+* **colorgradient:** prevent canvas from overflow in fluent theme ([e01c8c9](https://github.com/telerik/kendo-themes/commit/e01c8c9c66f1bd001ec65a048786873d78a4295a))
+* **colorgradient:** use smaller font-size for input labels in fluent ([e07811b](https://github.com/telerik/kendo-themes/commit/e07811b7ab749d205dbc85874eb0b6b2fab074db))
+* **column-menu:** apply disabled color in fluent theme ([35b18f0](https://github.com/telerik/kendo-themes/commit/35b18f0c350ebee02cb762622179bd0247202aca))
+* **fluent:** import scrollbar utils ([af4dbcd](https://github.com/telerik/kendo-themes/commit/af4dbcdc4a5560c77df275565919d71bd1403da0))
+* **gantt:** rtl mode does not align tasks to correct side in fluent theme ([4df5e50](https://github.com/telerik/kendo-themes/commit/4df5e507ac8531252ca1a429976489193d9b7ef1))
+* **grid:** remove top padding from filter menu container in fluent theme ([527eb1c](https://github.com/telerik/kendo-themes/commit/527eb1c147667fe4dc14d6adad2ce4c15460c3d8))
+* **imageeditor:** match border color with design in fluent theme ([19bd995](https://github.com/telerik/kendo-themes/commit/19bd99597f93b06b277688912869894f6ac573e6))
+* **pdf-viewer:** search panel offset calculation causes canvas displacement ([73ed102](https://github.com/telerik/kendo-themes/commit/73ed102092e296fbba735b8fc6857ae8c386d643))
+* **pivotgrid:** add outline none to focus cells ([3d9a938](https://github.com/telerik/kendo-themes/commit/3d9a9381365e68eb25870da456c344f0ee696bb8))
+* **progressbar:** match chunks spacing with design in fluent theme ([a5044ec](https://github.com/telerik/kendo-themes/commit/a5044ecf226c57c3726989ce3e30ceb8cd7f7c65))
+* **splitter:** fix styles in fluent theme ([b7edb5f](https://github.com/telerik/kendo-themes/commit/b7edb5fd4fc08720eea81ce530e3419e7dabe583))
+* **stepper:** match styles with design in fluent theme ([a6ca694](https://github.com/telerik/kendo-themes/commit/a6ca694ec2e79d4d7cd61dad3571ec0ce091ac0c))
+* **table:** use interpolation for sizing in fluent theme ([3de1404](https://github.com/telerik/kendo-themes/commit/3de140451f9b37a6a554d29a26cd373c9d132756))
+* **taskboard:** remove preview pane double border in fluent theme ([34973cd](https://github.com/telerik/kendo-themes/commit/34973cd563fba9d1be022b1bd7f8cf25312ace61))
+* **taskboard:** reverse rtl preview pane position in fluent theme ([5ffff8a](https://github.com/telerik/kendo-themes/commit/5ffff8ae5e0fa7584d2154459390f84a3cdfcfe8))
+* **taskboard:** use correct font style for preview pane header in fluent theme ([4127649](https://github.com/telerik/kendo-themes/commit/41276495b8fde094187a7980d9b4a5dac007f316))
+* **utils:** generate correct value for column-reverse util ([def4ef8](https://github.com/telerik/kendo-themes/commit/def4ef8a9eee9e28254af2e8fe9d2960993b6c7e))
+* **utils:** generate missing table layout aliases ([7ff11be](https://github.com/telerik/kendo-themes/commit/7ff11bec112ac9e09fbc447c0910839c57b5eef1))
+* **wizard:** remove content padding in fluent theme ([85a8b1f](https://github.com/telerik/kendo-themes/commit/85a8b1f91de34d1fbc92c1df08014629fc5c8d86))
+
+
+### Features
+
+* **chat:** add fluent styles ([6a5f907](https://github.com/telerik/kendo-themes/commit/6a5f907bc5d5752b43fbeb7cf16fc262480c49e3))
+* **fluent:** add adaptive styles ([787639b](https://github.com/telerik/kendo-themes/commit/787639bddded9a9833ab78ac39e4ca43afc23e3a))
+* **gantt:** add fluent styles ([0407434](https://github.com/telerik/kendo-themes/commit/0407434e15dcc6681841159ac7eb5140131e7370))
+* **pdf-viewer:** add fluent styles ([62d9f9b](https://github.com/telerik/kendo-themes/commit/62d9f9b2409be83ad878619ca0ac2f113724a834))
+* **pivotgrid:** add fluent styles ([e3a4634](https://github.com/telerik/kendo-themes/commit/e3a4634d9e3bd9d315945fafb4e1874473fcafe4))
+* **scrollview:** add fluent styles ([a5ce29c](https://github.com/telerik/kendo-themes/commit/a5ce29c00a09258df000ec491f467644b9131fd7))
+* **spreadsheet:** add fluent styles ([3dfe954](https://github.com/telerik/kendo-themes/commit/3dfe9543f4b7cb02e00171191dedd132f70a9b29))
+* **timeline:** add fluent styles ([d3559ef](https://github.com/telerik/kendo-themes/commit/d3559ef397d50d483e49e5fedfe45fab16d86bb3))
+
+
+
+
+
 # [5.7.0](https://github.com/telerik/kendo-themes/compare/v5.6.0...v5.7.0) (2022-09-05)
 
 

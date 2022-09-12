@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.8.0](https://github.com/telerik/kendo-themes/compare/v5.7.0...v5.8.0) (2022-09-12)
+
+
+### Bug Fixes
+
+* **pdf-viewer:** search panel offset calculation causes canvas displacement ([73ed102](https://github.com/telerik/kendo-themes/commit/73ed102092e296fbba735b8fc6857ae8c386d643))
+* **pivotgrid:** add outline none to focus cells ([3d9a938](https://github.com/telerik/kendo-themes/commit/3d9a9381365e68eb25870da456c344f0ee696bb8))
+
+
+
+
+
 # [5.7.0](https://github.com/telerik/kendo-themes/compare/v5.6.0...v5.7.0) (2022-09-05)
 
 

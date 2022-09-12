@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.8.0](https://github.com/telerik/kendo-themes/compare/v5.7.0...v5.8.0) (2022-09-12)
+
+
+### Bug Fixes
+
+* **utils:** generate correct value for column-reverse util ([def4ef8](https://github.com/telerik/kendo-themes/commit/def4ef8a9eee9e28254af2e8fe9d2960993b6c7e))
+* **utils:** generate missing table layout aliases ([7ff11be](https://github.com/telerik/kendo-themes/commit/7ff11bec112ac9e09fbc447c0910839c57b5eef1))
+
+
+
+
+
 # [5.7.0](https://github.com/telerik/kendo-themes/compare/v5.6.0...v5.7.0) (2022-09-05)
 
 
