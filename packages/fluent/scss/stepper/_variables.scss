@@ -130,13 +130,13 @@ $kendo-stepper-indicator-done-disabled-border: var( --kendo-disabled-border, ini
 
 /// The background color of the stepper current indicator.
 /// @group stepper
-$kendo-stepper-indicator-current-bg: $kendo-stepper-indicator-done-bg !default;
+$kendo-stepper-indicator-current-bg: get-theme-color-var( primary-120 ) !default;
 /// The text color of the stepper current indicator.
 /// @group stepper
 $kendo-stepper-indicator-current-text: $kendo-stepper-indicator-done-text !default;
 /// The border color of the stepper current indicator.
 /// @group stepper
-$kendo-stepper-indicator-current-border: $kendo-stepper-indicator-done-border !default;
+$kendo-stepper-indicator-current-border: $kendo-stepper-indicator-current-bg !default;
 
 /// The Hover background color of the stepper current indicator.
 /// @group stepper
@@ -172,7 +172,10 @@ $kendo-stepper-label-error-text: get-theme-color-var( error-190 ) !default;
 $kendo-stepper-label-hover-text: $kendo-stepper-text !default;
 /// The disabled text color of the stepper label.
 /// @group stepper
-$kendo-stepper-label-disabled-text: var( --kendo-component-text, initial ) !default;
+$kendo-stepper-label-disabled-text: var( --kendo-disabled-text, initial ) !default;
+/// The disabled text color of the stepper label.
+/// @group stepper
+$kendo-stepper-current-label-font-weight: var( --kendo-font-weight-bold, bold ) !default;
 
 /// The text color of the stepper optional label.
 /// @group stepper

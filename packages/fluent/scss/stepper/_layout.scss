@@ -131,7 +131,7 @@
         }
 
         .k-step-current .k-step-label {
-            font-weight: bold;
+            font-weight: var( --kendo-stepper-current-label-font-weight, #{$kendo-stepper-current-label-font-weight} );
         }
 
 
@@ -145,13 +145,16 @@
 
         .k-step-disabled,
         .k-step.k-disabled {
-            opacity: 1;
             pointer-events: none;
 
             .k-step-link { cursor: default; }
 
             .k-step-label-optional {
                 color: inherit;
+            }
+
+            .k-step-label {
+                font-weight: normal;
             }
         }
 
