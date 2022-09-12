@@ -45,7 +45,7 @@ $kendo-splitter-drag-icon-margin: calc( map-get( $kendo-spacing, 2 ) - map-get( 
 $kendo-splitbar-bg: get-theme-color-var( neutral-10 ) !default;
 /// Text color of the splitter splitbar.
 /// @group splitter
-$kendo-splitbar-text: var( $kendo-component-text, initial ) !default;
+$kendo-splitbar-text: var( --kendo-component-text, initial ) !default;
 
 /// Hover background color of the splitter splitbar.
 /// @group splitter
@@ -56,10 +56,10 @@ $kendo-splitbar-hover-text: $kendo-splitbar-text !default;
 
 /// Selected background color of the splitter splitbar.
 /// @group splitter
-$kendo-splitbar-selected-bg: var( --kendo-selected-bg, initial ) !default;
+$kendo-splitbar-selected-bg: get-theme-color-var( primary-100 ) !default;
 /// Selected text color of the splitter splitbar.
 /// @group splitter
-$kendo-splitbar-selected-text: var( --kendo-selected-text, initial ) !default;
+$kendo-splitbar-selected-text: var( --kendo-component-bg, inherit ) !default;
 
 /// Size of the splitter static splitbar.
 /// @group splitter
