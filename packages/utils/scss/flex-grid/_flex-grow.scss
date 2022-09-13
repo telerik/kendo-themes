@@ -9,3 +9,4 @@
 $kendo-utils-flex-grow: map-get( $kendo-utils, "flex-grow" ) !default;
 
 @include generate-utils( grow, flex-grow, $kendo-utils-flex-grow );
+@include generate-utils( flex-grow, flex-grow, $kendo-utils-flex-grow );
