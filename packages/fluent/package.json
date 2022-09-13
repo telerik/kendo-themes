@@ -10,7 +10,7 @@
     "Fluent",
     "CSS Variables"
   ],
-  "main": "dist/index.css",
+  "main": "dist/all.css",
   "sass": "scss/index.scss",
   "files": [
     "dist/",
