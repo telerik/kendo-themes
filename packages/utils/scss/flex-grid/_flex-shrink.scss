@@ -9,3 +9,4 @@
 $kendo-utils-flex-shrink: map-get( $kendo-utils, "flex-shrink" ) !default;
 
 @include generate-utils( shrink, flex-shrink, $kendo-utils-flex-shrink );
+@include generate-utils( flex-shrink, flex-shrink, $kendo-utils-flex-shrink );

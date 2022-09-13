@@ -11,3 +11,4 @@
 $kendo-utils-flex-basis: map-get( $kendo-utils, "flex-basis" ) !default;
 
 @include generate-utils( basis, flex-basis, $kendo-utils-flex-basis );
+@include generate-utils( flex-basis, flex-basis, $kendo-utils-flex-basis );
