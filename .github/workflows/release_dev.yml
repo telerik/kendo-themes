@@ -47,6 +47,7 @@ jobs:
 
       - name: Build themes for dist
         run: |
+          npm run sass
           npm run sass:flat
           npm run dist:swatches
 
