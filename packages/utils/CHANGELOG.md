@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.8.1](https://github.com/telerik/kendo-themes/compare/v5.8.0...v5.8.1) (2022-09-13)
+
+
+### Bug Fixes
+
+* **utils:** add compat aliases for flex grow, shrink and basis ([14e3c34](https://github.com/telerik/kendo-themes/commit/14e3c34a4fbf14a5d600acaae0289f9a01e141a4))
+
+
+
+
+
 # [5.8.0](https://github.com/telerik/kendo-themes/compare/v5.7.0...v5.8.0) (2022-09-12)
 
 

@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.8.1](https://github.com/telerik/kendo-themes/compare/v5.8.0...v5.8.1) (2022-09-13)
+
+
+### Bug Fixes
+
+* point to correct location of all.css in dist ([8b6e1fa](https://github.com/telerik/kendo-themes/commit/8b6e1fa23e23cefab67643d72113bf2dd3a968b6))
+* publish fluent all.css to dist ([8b34f4e](https://github.com/telerik/kendo-themes/commit/8b34f4eef1b29fb0c13785bc326f290cb6cc2bfe))
+* **utils:** add compat aliases for flex grow, shrink and basis ([14e3c34](https://github.com/telerik/kendo-themes/commit/14e3c34a4fbf14a5d600acaae0289f9a01e141a4))
+
+
+
+
+
 # [5.8.0](https://github.com/telerik/kendo-themes/compare/v5.7.0...v5.8.0) (2022-09-12)
 
 
