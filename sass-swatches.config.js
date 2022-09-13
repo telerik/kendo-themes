@@ -2,29 +2,36 @@ module.exports = {
     extends: [
         'sass-build:recommended'
     ],
-    files: [
+    build: [
         {
             cwd: 'packages/default',
-            files: [ 'dist/!(_|variables)*.scss' ]
+            entry: [ 'dist/!(_|variables)*.scss' ]
         },
         {
             cwd: 'packages/bootstrap',
-            files: [ 'dist/!(_|variables)*.scss' ]
+            entry: [ 'dist/!(_|variables)*.scss' ]
         },
         {
             cwd: 'packages/classic',
-            files: [ 'dist/!(_|variables)*.scss' ]
+            entry: [ 'dist/!(_|variables)*.scss' ]
         },
         {
             cwd: 'packages/material',
-            files: [ 'dist/!(_|variables)*.scss' ]
+            entry: [ 'dist/!(_|variables)*.scss' ]
+        },
+        {
+            cwd: 'packages/fluent',
+            file: 'scss/all.scss',
+            outFile: 'dist/all.css',
+            compiler: 'sass-embedded',
+            api: 'modern'
         },
         {
             cwd: 'packages/fluent',
             file: 'scss/all.scss',
             outFile: 'dist/fluent-main.css',
-            implementation: 'sass-embedded',
+            compiler: 'sass-embedded',
             api: 'modern'
-        },
+        }
     ]
 };

@@ -2,7 +2,7 @@ module.exports = {
     extends: [
         'sass-build:recommended'
     ],
-    files: [
+    build: [
         {
             cwd: 'packages/default',
             file: 'scss/all.scss',
@@ -32,7 +32,7 @@ module.exports = {
             cwd: 'packages/fluent',
             file: 'scss/all.scss',
             outFile: 'dist/all.css',
-            implementation: 'sass-embedded',
+            compiler: 'sass-embedded',
             api: 'modern'
         },
         {
