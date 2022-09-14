@@ -435,6 +435,10 @@
             overflow: hidden;
             text-overflow: ellipsis;
             outline: 0;
+
+            .k-icon {
+                margin-inline-start: var( --kendo-grid-sort-icon-spacing, #{$kendo-grid-sort-icon-spacing} );
+            }
         }
 
         .k-with-icon,
@@ -471,11 +475,8 @@
         }
 
         .k-cell-inner > .k-link > .k-icon {
-            &.k-i-sort-desc-small,
-            &.k-i-sort-asc-small {
-                vertical-align: text-top;
-                margin-inline-start: var( --kendo-grid-sort-icon-spacing, #{$kendo-grid-sort-icon-spacing} );
-            }
+            vertical-align: text-top;
+            margin-inline-start: var( --kendo-grid-sort-icon-spacing, #{$kendo-grid-sort-icon-spacing} );
         }
 
         .k-sort-order {
@@ -959,8 +960,7 @@
             flex: 1;
             overflow: hidden;
 
-            > .k-icon.k-i-sort-desc-small,
-            > .k-icon.k-i-sort-asc-small {
+            > .k-icon {
                 margin-left: 0;
                 display: inline-block;
                 flex-shrink: 0;
