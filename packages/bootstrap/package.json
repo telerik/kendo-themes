@@ -44,7 +44,7 @@
   },
   "dependencies": {
     "@progress/kendo-theme-default": "^5.8.1",
-    "bootstrap": "^5.2.0"
+    "bootstrap": "^5.2.1"
   },
   "devDependencies": {
     "sass-build": "^1.0.0"
