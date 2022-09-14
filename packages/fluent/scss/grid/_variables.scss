@@ -212,7 +212,7 @@ $kendo-grid-sort-index-spacing-y: calc( var( --kendo-icon-spacing, .5rem ) / 4 )
 $kendo-grid-sort-index-spacing-x: calc( -1 * #{$kendo-grid-sort-index-spacing-y} ) !default;
 /// Spacing of the grid sort icon.
 /// @group grid
-$kendo-grid-sort-icon-spacing: var( --kendo-icon-spacing, .5rem ) !default;
+$kendo-grid-sort-icon-spacing: var( --kendo-icon-spacing-lg, .5rem ) !default;
 /// Text color of the grid sort indicator.
 /// @group grid
 $kendo-grid-sort-indicator-text: get-theme-color-var( neutral-130 ) !default;
