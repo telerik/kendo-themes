@@ -59,7 +59,7 @@ $kendo-colorgradient-focus-shadow: var( --kendo-box-shadow-depth-3, none ) !defa
 $kendo-colorgradient-canvas-border-radius: var( --kendo-border-radius-md, 0 ) !default;
 /// Border width of the color gradient canvas.
 /// @group cologradient
-$kendo-colorgradient-canvas-border-width: 1px !default;
+$kendo-colorgradient-canvas-border-width: 0 !default;
 /// Spacing of the color gradient canvas.
 /// @group cologradient
 $kendo-colorgradient-canvas-spacing: math.div( $kendo-colorgradient-spacer, 2 ) !default;
