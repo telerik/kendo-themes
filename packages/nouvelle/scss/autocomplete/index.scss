@@ -1,7 +1,12 @@
 // Module meta
 $_kendo-module-meta: (
     name: "autocomplete",
-    dependencies: ()
+    dependencies: (
+        "input",
+        "icon",
+        "popup",
+        "list"
+    )
 );
 
 
@@ -12,9 +17,15 @@ $_kendo-module-meta: (
 
 
 // Register
-@include register-module( $_kendo-module-meta... ) {
-    @include kendo-autocomplete--core-layout();
-    @include kendo-autocomplete--extended-layout();
-    @include kendo-autocomplete--core-theme();
-    @include kendo-autocomplete--extended-theme();
+@include module-register( $_kendo-module-meta... );
+
+
+// Expose
+@mixin autocomplete-styles() {
+    @include module-render( "autocomplete" ) {
+        @include kendo-autocomplete--layout();
+        @include kendo-autocomplete--extended-layout();
+        @include kendo-autocomplete--theme();
+        @include kendo-autocomplete--extended-theme();
+    }
 }

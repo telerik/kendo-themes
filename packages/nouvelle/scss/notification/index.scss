@@ -12,9 +12,15 @@ $_kendo-module-meta: (
 
 
 // Register
-@include register-module( $_kendo-module-meta... ) {
-    @include kendo-notification--core-layout();
-    @include kendo-notification--extended-layout();
-    @include kendo-notification--core-theme();
-    @include kendo-notification--extended-theme();
+@include module-register( $_kendo-module-meta... );
+
+
+// Expose
+@mixin notification-styles() {
+    @include module-render( "notification" ) {
+        @include kendo-notification--layout();
+        @include kendo-notification--extended-layout();
+        @include kendo-notification--theme();
+        @include kendo-notification--extended-theme();
+    }
 }

@@ -1,0 +1,13 @@
+@mixin kendo-color-gradient--layout() {
+
+    // sass-lint:disable-block no-important no-ids
+    #test-area .k-color-gradient {
+        display: none !important;
+    }
+
+}
+
+
+
+
+@mixin kendo-color-gradient--extended-layout() {}

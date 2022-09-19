@@ -12,9 +12,15 @@ $_kendo-module-meta: (
 
 
 // Register
-@include register-module( $_kendo-module-meta... ) {
-    @include kendo-slider--core-layout();
-    @include kendo-slider--extended-layout();
-    @include kendo-slider--core-theme();
-    @include kendo-slider--extended-theme();
+@include module-register( $_kendo-module-meta... );
+
+
+// Expose
+@mixin slider-styles() {
+    @include module-render( "slider" ) {
+        @include kendo-slider--layout();
+        @include kendo-slider--extended-layout();
+        @include kendo-slider--theme();
+        @include kendo-slider--extended-theme();
+    }
 }

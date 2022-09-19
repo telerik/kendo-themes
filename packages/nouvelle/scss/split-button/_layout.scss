@@ -1,0 +1,13 @@
+@mixin kendo-split-button--layout() {
+
+    // sass-lint:disable-block no-important no-ids
+    #test-area .k-split-button {
+        display: none !important;
+    }
+
+}
+
+
+
+
+@mixin kendo-split-button--extended-layout() {}

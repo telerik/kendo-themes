@@ -12,9 +12,15 @@ $_kendo-module-meta: (
 
 
 // Register
-@include register-module( $_kendo-module-meta... ) {
-    @include kendo-dataviz--core-layout();
-    @include kendo-dataviz--extended-layout();
-    @include kendo-dataviz--core-theme();
-    @include kendo-dataviz--extended-theme();
+@include module-register( $_kendo-module-meta... );
+
+
+// Expose
+@mixin dataviz-styles() {
+    @include module-render( "dataviz" ) {
+        @include kendo-dataviz--layout();
+        @include kendo-dataviz--extended-layout();
+        @include kendo-dataviz--theme();
+        @include kendo-dataviz--extended-theme();
+    }
 }

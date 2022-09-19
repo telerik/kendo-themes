@@ -12,9 +12,15 @@ $_kendo-module-meta: (
 
 
 // Register
-@include register-module( $_kendo-module-meta... ) {
-    @include kendo-multiselect--core-layout();
-    @include kendo-multiselect--extended-layout();
-    @include kendo-multiselect--core-theme();
-    @include kendo-multiselect--extended-theme();
+@include module-register( $_kendo-module-meta... );
+
+
+// Expose
+@mixin multiselect-styles() {
+    @include module-render( "multiselect" ) {
+        @include kendo-multiselect--layout();
+        @include kendo-multiselect--extended-layout();
+        @include kendo-multiselect--theme();
+        @include kendo-multiselect--extended-theme();
+    }
 }

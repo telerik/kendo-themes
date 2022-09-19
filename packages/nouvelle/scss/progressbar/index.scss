@@ -12,9 +12,15 @@ $_kendo-module-meta: (
 
 
 // Register
-@include register-module( $_kendo-module-meta... ) {
-    @include kendo-progressbar--core-layout();
-    @include kendo-progressbar--extended-layout();
-    @include kendo-progressbar--core-theme();
-    @include kendo-progressbar--extended-theme();
+@include module-register( $_kendo-module-meta... );
+
+
+// Expose
+@mixin progressbar-styles() {
+    @include module-render( "progressbar" ) {
+        @include kendo-progressbar--layout();
+        @include kendo-progressbar--extended-layout();
+        @include kendo-progressbar--theme();
+        @include kendo-progressbar--extended-theme();
+    }
 }

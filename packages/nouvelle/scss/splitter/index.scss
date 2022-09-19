@@ -12,9 +12,15 @@ $_kendo-module-meta: (
 
 
 // Register
-@include register-module( $_kendo-module-meta... ) {
-    @include kendo-splitter--core-layout();
-    @include kendo-splitter--extended-layout();
-    @include kendo-splitter--core-theme();
-    @include kendo-splitter--extended-theme();
+@include module-register( $_kendo-module-meta... );
+
+
+// Expose
+@mixin splitter-styles() {
+    @include module-render( "splitter" ) {
+        @include kendo-splitter--layout();
+        @include kendo-splitter--extended-layout();
+        @include kendo-splitter--theme();
+        @include kendo-splitter--extended-theme();
+    }
 }

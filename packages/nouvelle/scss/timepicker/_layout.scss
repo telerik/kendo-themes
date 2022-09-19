@@ -1,0 +1,13 @@
+@mixin kendo-timepicker--layout() {
+
+    // sass-lint:disable-block no-important no-ids
+    #test-area .k-timepicker {
+        display: none !important;
+    }
+
+}
+
+
+
+
+@mixin kendo-timepicker--extended-layout() {}

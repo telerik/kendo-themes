@@ -12,9 +12,15 @@ $_kendo-module-meta: (
 
 
 // Register
-@include register-module( $_kendo-module-meta... ) {
-    @include kendo-textarea--core-layout();
-    @include kendo-textarea--extended-layout();
-    @include kendo-textarea--core-theme();
-    @include kendo-textarea--extended-theme();
+@include module-register( $_kendo-module-meta... );
+
+
+// Expose
+@mixin textarea-styles() {
+    @include module-render( "textarea" ) {
+        @include kendo-textarea--layout();
+        @include kendo-textarea--extended-layout();
+        @include kendo-textarea--theme();
+        @include kendo-textarea--extended-theme();
+    }
 }

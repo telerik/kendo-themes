@@ -1,7 +1,9 @@
 // Module meta
 $_kendo-module-meta: (
     name: "badge",
-    dependencies: ()
+    dependencies: (
+        "icon"
+    )
 );
 
 
@@ -12,9 +14,15 @@ $_kendo-module-meta: (
 
 
 // Register
-@include register-module( $_kendo-module-meta... ) {
-    @include kendo-badge--core-layout();
-    @include kendo-badge--extended-layout();
-    @include kendo-badge--core-theme();
-    @include kendo-badge--extended-theme();
+@include module-register( $_kendo-module-meta... );
+
+
+// Expose
+@mixin badge-styles() {
+    @include module-render( "badge" ) {
+        @include kendo-badge--layout();
+        @include kendo-badge--extended-layout();
+        @include kendo-badge--theme();
+        @include kendo-badge--extended-theme();
+    }
 }

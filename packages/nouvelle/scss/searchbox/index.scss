@@ -12,9 +12,15 @@ $_kendo-module-meta: (
 
 
 // Register
-@include register-module( $_kendo-module-meta... ) {
-    @include kendo-searchbox--core-layout();
-    @include kendo-searchbox--extended-layout();
-    @include kendo-searchbox--core-theme();
-    @include kendo-searchbox--extended-theme();
+@include module-register( $_kendo-module-meta... );
+
+
+// Expose
+@mixin searchbox-styles() {
+    @include module-render( "searchbox" ) {
+        @include kendo-searchbox--layout();
+        @include kendo-searchbox--extended-layout();
+        @include kendo-searchbox--theme();
+        @include kendo-searchbox--extended-theme();
+    }
 }

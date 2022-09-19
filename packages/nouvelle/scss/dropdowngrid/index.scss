@@ -12,9 +12,15 @@ $_kendo-module-meta: (
 
 
 // Register
-@include register-module( $_kendo-module-meta... ) {
-    @include kendo-dropdowngrid--core-layout();
-    @include kendo-dropdowngrid--extended-layout();
-    @include kendo-dropdowngrid--core-theme();
-    @include kendo-dropdowngrid--extended-theme();
+@include module-register( $_kendo-module-meta... );
+
+
+// Expose
+@mixin dropdowngrid-styles() {
+    @include module-render( "dropdowngrid" ) {
+        @include kendo-dropdowngrid--layout();
+        @include kendo-dropdowngrid--extended-layout();
+        @include kendo-dropdowngrid--theme();
+        @include kendo-dropdowngrid--extended-theme();
+    }
 }

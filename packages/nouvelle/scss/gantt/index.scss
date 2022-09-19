@@ -12,9 +12,15 @@ $_kendo-module-meta: (
 
 
 // Register
-@include register-module( $_kendo-module-meta... ) {
-    @include kendo-gantt--core-layout();
-    @include kendo-gantt--extended-layout();
-    @include kendo-gantt--core-theme();
-    @include kendo-gantt--extended-theme();
+@include module-register( $_kendo-module-meta... );
+
+
+// Expose
+@mixin gantt-styles() {
+    @include module-render( "gantt" ) {
+        @include kendo-gantt--layout();
+        @include kendo-gantt--extended-layout();
+        @include kendo-gantt--theme();
+        @include kendo-gantt--extended-theme();
+    }
 }

@@ -12,9 +12,15 @@ $_kendo-module-meta: (
 
 
 // Register
-@include register-module( $_kendo-module-meta... ) {
-    @include kendo-avatar--core-layout();
-    @include kendo-avatar--extended-layout();
-    @include kendo-avatar--core-theme();
-    @include kendo-avatar--extended-theme();
+@include module-register( $_kendo-module-meta... );
+
+
+// Expose
+@mixin avatar-styles() {
+    @include module-render( "avatar" ) {
+        @include kendo-avatar--layout();
+        @include kendo-avatar--extended-layout();
+        @include kendo-avatar--theme();
+        @include kendo-avatar--extended-theme();
+    }
 }

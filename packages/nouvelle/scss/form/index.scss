@@ -12,9 +12,15 @@ $_kendo-module-meta: (
 
 
 // Register
-@include register-module( $_kendo-module-meta... ) {
-    @include kendo-form--core-layout();
-    @include kendo-form--extended-layout();
-    @include kendo-form--core-theme();
-    @include kendo-form--extended-theme();
+@include module-register( $_kendo-module-meta... );
+
+
+// Expose
+@mixin form-styles() {
+    @include module-render( "form" ) {
+        @include kendo-form--layout();
+        @include kendo-form--extended-layout();
+        @include kendo-form--theme();
+        @include kendo-form--extended-theme();
+    }
 }

@@ -12,9 +12,15 @@ $_kendo-module-meta: (
 
 
 // Register
-@include register-module( $_kendo-module-meta... ) {
-    @include kendo-treelist--core-layout();
-    @include kendo-treelist--extended-layout();
-    @include kendo-treelist--core-theme();
-    @include kendo-treelist--extended-theme();
+@include module-register( $_kendo-module-meta... );
+
+
+// Expose
+@mixin treelist-styles() {
+    @include module-render( "treelist" ) {
+        @include kendo-treelist--layout();
+        @include kendo-treelist--extended-layout();
+        @include kendo-treelist--theme();
+        @include kendo-treelist--extended-theme();
+    }
 }

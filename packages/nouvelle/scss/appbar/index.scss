@@ -12,9 +12,15 @@ $_kendo-module-meta: (
 
 
 // Register
-@include register-module( $_kendo-module-meta... ) {
-    @include kendo-appbar--core-layout();
-    @include kendo-appbar--extended-layout();
-    @include kendo-appbar--core-theme();
-    @include kendo-appbar--extended-theme();
+@include module-register( $_kendo-module-meta... );
+
+
+// Expose
+@mixin appbar-styles() {
+    @include module-render( "appbar" ) {
+        @include kendo-appbar--layout();
+        @include kendo-appbar--extended-layout();
+        @include kendo-appbar--theme();
+        @include kendo-appbar--extended-theme();
+    }
 }

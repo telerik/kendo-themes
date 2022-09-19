@@ -12,9 +12,15 @@ $_kendo-module-meta: (
 
 
 // Register
-@include register-module( $_kendo-module-meta... ) {
-    @include kendo-filemanager--core-layout();
-    @include kendo-filemanager--extended-layout();
-    @include kendo-filemanager--core-theme();
-    @include kendo-filemanager--extended-theme();
+@include module-register( $_kendo-module-meta... );
+
+
+// Expose
+@mixin filemanager-styles() {
+    @include module-render( "filemanager" ) {
+        @include kendo-filemanager--layout();
+        @include kendo-filemanager--extended-layout();
+        @include kendo-filemanager--theme();
+        @include kendo-filemanager--extended-theme();
+    }
 }

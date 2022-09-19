@@ -12,9 +12,15 @@ $_kendo-module-meta: (
 
 
 // Register
-@include register-module( $_kendo-module-meta... ) {
-    @include kendo-typography--core-layout();
-    @include kendo-typography--extended-layout();
-    @include kendo-typography--core-theme();
-    @include kendo-typography--extended-theme();
+@include module-register( $_kendo-module-meta... );
+
+
+// Expose
+@mixin typography-styles() {
+    @include module-render( "typography" ) {
+        @include kendo-typography--layout();
+        @include kendo-typography--extended-layout();
+        @include kendo-typography--theme();
+        @include kendo-typography--extended-theme();
+    }
 }

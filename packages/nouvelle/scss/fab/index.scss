@@ -12,9 +12,15 @@ $_kendo-module-meta: (
 
 
 // Register
-@include register-module( $_kendo-module-meta... ) {
-    @include kendo-fab--core-layout();
-    @include kendo-fab--extended-layout();
-    @include kendo-fab--core-theme();
-    @include kendo-fab--extended-theme();
+@include module-register( $_kendo-module-meta... );
+
+
+// Expose
+@mixin fab-styles() {
+    @include module-render( "fab" ) {
+        @include kendo-fab--layout();
+        @include kendo-fab--extended-layout();
+        @include kendo-fab--theme();
+        @include kendo-fab--extended-theme();
+    }
 }

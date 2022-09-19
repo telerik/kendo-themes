@@ -1,4 +1,4 @@
-@mixin kendo-textbox--core-theme() {
+@mixin kendo-textbox--theme() {
 
     :where(.k-textbox) {
         color: var( --kendo-textbox-text, inherit );

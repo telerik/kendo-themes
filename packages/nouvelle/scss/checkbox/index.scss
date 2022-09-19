@@ -12,9 +12,15 @@ $_kendo-module-meta: (
 
 
 // Register
-@include register-module( $_kendo-module-meta... ) {
-    @include kendo-checkbox--core-layout();
-    @include kendo-checkbox--extended-layout();
-    @include kendo-checkbox--core-theme();
-    @include kendo-checkbox--extended-theme();
+@include module-register( $_kendo-module-meta... );
+
+
+// Expose
+@mixin checkbox-styles() {
+    @include module-render( "checkbox" ) {
+        @include kendo-checkbox--layout();
+        @include kendo-checkbox--extended-layout();
+        @include kendo-checkbox--theme();
+        @include kendo-checkbox--extended-theme();
+    }
 }

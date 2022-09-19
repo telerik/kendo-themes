@@ -1,7 +1,10 @@
 // Module meta
 $_kendo-module-meta: (
     name: "breadcrumb",
-    dependencies: ()
+    dependencies: (
+        "input",
+        "icon"
+    )
 );
 
 
@@ -12,9 +15,15 @@ $_kendo-module-meta: (
 
 
 // Register
-@include register-module( $_kendo-module-meta... ) {
-    @include kendo-breadcrumb--core-layout();
-    @include kendo-breadcrumb--extended-layout();
-    @include kendo-breadcrumb--core-theme();
-    @include kendo-breadcrumb--extended-theme();
+@include module-register( $_kendo-module-meta... );
+
+
+// Expose
+@mixin breadcrumb-styles() {
+    @include module-render( "breadcrumb" ) {
+        @include kendo-breadcrumb--layout();
+        @include kendo-breadcrumb--extended-layout();
+        @include kendo-breadcrumb--theme();
+        @include kendo-breadcrumb--extended-theme();
+    }
 }

@@ -12,9 +12,15 @@ $_kendo-module-meta: (
 
 
 // Register
-@include register-module( $_kendo-module-meta... ) {
-    @include kendo-taskboard--core-layout();
-    @include kendo-taskboard--extended-layout();
-    @include kendo-taskboard--core-theme();
-    @include kendo-taskboard--extended-theme();
+@include module-register( $_kendo-module-meta... );
+
+
+// Expose
+@mixin taskboard-styles() {
+    @include module-render( "taskboard" ) {
+        @include kendo-taskboard--layout();
+        @include kendo-taskboard--extended-layout();
+        @include kendo-taskboard--theme();
+        @include kendo-taskboard--extended-theme();
+    }
 }

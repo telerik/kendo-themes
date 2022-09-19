@@ -12,9 +12,15 @@ $_kendo-module-meta: (
 
 
 // Register
-@include register-module( $_kendo-module-meta... ) {
-    @include kendo-dropdownlist--core-layout();
-    @include kendo-dropdownlist--extended-layout();
-    @include kendo-dropdownlist--core-theme();
-    @include kendo-dropdownlist--extended-theme();
+@include module-register( $_kendo-module-meta... );
+
+
+// Expose
+@mixin dropdownlist-styles() {
+    @include module-render( "dropdownlist" ) {
+        @include kendo-dropdownlist--layout();
+        @include kendo-dropdownlist--extended-layout();
+        @include kendo-dropdownlist--theme();
+        @include kendo-dropdownlist--extended-theme();
+    }
 }

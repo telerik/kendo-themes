@@ -12,9 +12,15 @@ $_kendo-module-meta: (
 
 
 // Register
-@include register-module( $_kendo-module-meta... ) {
-    @include kendo-scrollview--core-layout();
-    @include kendo-scrollview--extended-layout();
-    @include kendo-scrollview--core-theme();
-    @include kendo-scrollview--extended-theme();
+@include module-register( $_kendo-module-meta... );
+
+
+// Expose
+@mixin scrollview-styles() {
+    @include module-render( "scrollview" ) {
+        @include kendo-scrollview--layout();
+        @include kendo-scrollview--extended-layout();
+        @include kendo-scrollview--theme();
+        @include kendo-scrollview--extended-theme();
+    }
 }

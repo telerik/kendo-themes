@@ -12,9 +12,15 @@ $_kendo-module-meta: (
 
 
 // Register
-@include register-module( $_kendo-module-meta... ) {
-    @include kendo-orgchart--core-layout();
-    @include kendo-orgchart--extended-layout();
-    @include kendo-orgchart--core-theme();
-    @include kendo-orgchart--extended-theme();
+@include module-register( $_kendo-module-meta... );
+
+
+// Expose
+@mixin orgchart-styles() {
+    @include module-render( "orgchart" ) {
+        @include kendo-orgchart--layout();
+        @include kendo-orgchart--extended-layout();
+        @include kendo-orgchart--theme();
+        @include kendo-orgchart--extended-theme();
+    }
 }

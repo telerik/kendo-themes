@@ -12,9 +12,15 @@ $_kendo-module-meta: (
 
 
 // Register
-@include register-module( $_kendo-module-meta... ) {
-    @include kendo-overlay--core-layout();
-    @include kendo-overlay--extended-layout();
-    @include kendo-overlay--core-theme();
-    @include kendo-overlay--extended-theme();
+@include module-register( $_kendo-module-meta... );
+
+
+// Expose
+@mixin overlay-styles() {
+    @include module-render( "overlay" ) {
+        @include kendo-overlay--layout();
+        @include kendo-overlay--extended-layout();
+        @include kendo-overlay--theme();
+        @include kendo-overlay--extended-theme();
+    }
 }

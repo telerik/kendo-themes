@@ -12,9 +12,15 @@ $_kendo-module-meta: (
 
 
 // Register
-@include register-module( $_kendo-module-meta... ) {
-    @include kendo-responsive-panel--core-layout();
-    @include kendo-responsive-panel--extended-layout();
-    @include kendo-responsive-panel--core-theme();
-    @include kendo-responsive-panel--extended-theme();
+@include module-register( $_kendo-module-meta... );
+
+
+// Expose
+@mixin responsive-panel-styles() {
+    @include module-render( "responsive-panel" ) {
+        @include kendo-responsive-panel--layout();
+        @include kendo-responsive-panel--extended-layout();
+        @include kendo-responsive-panel--theme();
+        @include kendo-responsive-panel--extended-theme();
+    }
 }

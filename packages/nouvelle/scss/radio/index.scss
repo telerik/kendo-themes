@@ -12,9 +12,15 @@ $_kendo-module-meta: (
 
 
 // Register
-@include register-module( $_kendo-module-meta... ) {
-    @include kendo-radio--core-layout();
-    @include kendo-radio--extended-layout();
-    @include kendo-radio--core-theme();
-    @include kendo-radio--extended-theme();
+@include module-register( $_kendo-module-meta... );
+
+
+// Expose
+@mixin radio-styles() {
+    @include module-render( "radio" ) {
+        @include kendo-radio--layout();
+        @include kendo-radio--extended-layout();
+        @include kendo-radio--theme();
+        @include kendo-radio--extended-theme();
+    }
 }

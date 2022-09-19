@@ -12,9 +12,15 @@ $_kendo-module-meta: (
 
 
 // Register
-@include register-module( $_kendo-module-meta... ) {
-    @include kendo-pivotgrid--core-layout();
-    @include kendo-pivotgrid--extended-layout();
-    @include kendo-pivotgrid--core-theme();
-    @include kendo-pivotgrid--extended-theme();
+@include module-register( $_kendo-module-meta... );
+
+
+// Expose
+@mixin pivotgrid-styles() {
+    @include module-render( "pivotgrid" ) {
+        @include kendo-pivotgrid--layout();
+        @include kendo-pivotgrid--extended-layout();
+        @include kendo-pivotgrid--theme();
+        @include kendo-pivotgrid--extended-theme();
+    }
 }

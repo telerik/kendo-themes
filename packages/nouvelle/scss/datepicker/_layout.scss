@@ -1,0 +1,13 @@
+@mixin kendo-datepicker--layout() {
+
+    // sass-lint:disable-block no-important no-ids
+    #test-area .k-datepicker {
+        display: none !important;
+    }
+
+}
+
+
+
+
+@mixin kendo-datepicker--extended-layout() {}

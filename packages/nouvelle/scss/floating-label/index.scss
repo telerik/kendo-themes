@@ -12,9 +12,15 @@ $_kendo-module-meta: (
 
 
 // Register
-@include register-module( $_kendo-module-meta... ) {
-    @include kendo-floating-label--core-layout();
-    @include kendo-floating-label--extended-layout();
-    @include kendo-floating-label--core-theme();
-    @include kendo-floating-label--extended-theme();
+@include module-register( $_kendo-module-meta... );
+
+
+// Expose
+@mixin floating-label-styles() {
+    @include module-render( "floating-label" ) {
+        @include kendo-floating-label--layout();
+        @include kendo-floating-label--extended-layout();
+        @include kendo-floating-label--theme();
+        @include kendo-floating-label--extended-theme();
+    }
 }

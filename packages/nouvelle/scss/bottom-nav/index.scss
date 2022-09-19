@@ -1,7 +1,9 @@
 // Module meta
 $_kendo-module-meta: (
     name: "bottom-nav",
-    dependencies: ()
+    dependencies: (
+        "icon"
+    )
 );
 
 
@@ -12,9 +14,15 @@ $_kendo-module-meta: (
 
 
 // Register
-@include register-module( $_kendo-module-meta... ) {
-    @include kendo-bottom-nav--core-layout();
-    @include kendo-bottom-nav--extended-layout();
-    @include kendo-bottom-nav--core-theme();
-    @include kendo-bottom-nav--extended-theme();
+@include module-register( $_kendo-module-meta... );
+
+
+// Expose
+@mixin bottom-nav-styles() {
+    @include module-render( "bottom-nav" ) {
+        @include kendo-bottom-nav--layout();
+        @include kendo-bottom-nav--extended-layout();
+        @include kendo-bottom-nav--theme();
+        @include kendo-bottom-nav--extended-theme();
+    }
 }

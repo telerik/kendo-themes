@@ -12,9 +12,15 @@ $_kendo-module-meta: (
 
 
 // Register
-@include register-module( $_kendo-module-meta... ) {
-    @include kendo-upload--core-layout();
-    @include kendo-upload--extended-layout();
-    @include kendo-upload--core-theme();
-    @include kendo-upload--extended-theme();
+@include module-register( $_kendo-module-meta... );
+
+
+// Expose
+@mixin upload-styles() {
+    @include module-render( "upload" ) {
+        @include kendo-upload--layout();
+        @include kendo-upload--extended-layout();
+        @include kendo-upload--theme();
+        @include kendo-upload--extended-theme();
+    }
 }

@@ -12,9 +12,15 @@ $_kendo-module-meta: (
 
 
 // Register
-@include register-module( $_kendo-module-meta... ) {
-    @include kendo-spreadsheet--core-layout();
-    @include kendo-spreadsheet--extended-layout();
-    @include kendo-spreadsheet--core-theme();
-    @include kendo-spreadsheet--extended-theme();
+@include module-register( $_kendo-module-meta... );
+
+
+// Expose
+@mixin spreadsheet-styles() {
+    @include module-render( "spreadsheet" ) {
+        @include kendo-spreadsheet--layout();
+        @include kendo-spreadsheet--extended-layout();
+        @include kendo-spreadsheet--theme();
+        @include kendo-spreadsheet--extended-theme();
+    }
 }

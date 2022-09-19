@@ -1,7 +1,9 @@
 // Module meta
 $_kendo-module-meta: (
     name: "action-sheet",
-    dependencies: ()
+    dependencies: (
+        "icon"
+    )
 );
 
 
@@ -12,9 +14,15 @@ $_kendo-module-meta: (
 
 
 // Register
-@include register-module( $_kendo-module-meta... ) {
-    @include kendo-action-sheet--core-layout();
-    @include kendo-action-sheet--extended-layout();
-    @include kendo-action-sheet--core-theme();
-    @include kendo-action-sheet--extended-theme();
+@include module-register( $_kendo-module-meta... );
+
+
+// Expose
+@mixin action-sheet-styles() {
+    @include module-render( "action-sheet" ) {
+        @include kendo-action-sheet--layout();
+        @include kendo-action-sheet--extended-layout();
+        @include kendo-action-sheet--theme();
+        @include kendo-action-sheet--extended-theme();
+    }
 }

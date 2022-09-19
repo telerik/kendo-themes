@@ -12,9 +12,15 @@ $_kendo-module-meta: (
 
 
 // Register
-@include register-module( $_kendo-module-meta... ) {
-    @include kendo-mediaplayer--core-layout();
-    @include kendo-mediaplayer--extended-layout();
-    @include kendo-mediaplayer--core-theme();
-    @include kendo-mediaplayer--extended-theme();
+@include module-register( $_kendo-module-meta... );
+
+
+// Expose
+@mixin mediaplayer-styles() {
+    @include module-render( "mediaplayer" ) {
+        @include kendo-mediaplayer--layout();
+        @include kendo-mediaplayer--extended-layout();
+        @include kendo-mediaplayer--theme();
+        @include kendo-mediaplayer--extended-theme();
+    }
 }

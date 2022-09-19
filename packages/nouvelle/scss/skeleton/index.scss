@@ -12,9 +12,15 @@ $_kendo-module-meta: (
 
 
 // Register
-@include register-module( $_kendo-module-meta... ) {
-    @include kendo-skeleton--core-layout();
-    @include kendo-skeleton--extended-layout();
-    @include kendo-skeleton--core-theme();
-    @include kendo-skeleton--extended-theme();
+@include module-register( $_kendo-module-meta... );
+
+
+// Expose
+@mixin skeleton-styles() {
+    @include module-render( "skeleton" ) {
+        @include kendo-skeleton--layout();
+        @include kendo-skeleton--extended-layout();
+        @include kendo-skeleton--theme();
+        @include kendo-skeleton--extended-theme();
+    }
 }

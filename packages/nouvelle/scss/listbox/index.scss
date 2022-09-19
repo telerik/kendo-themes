@@ -1,7 +1,9 @@
 // Module meta
 $_kendo-module-meta: (
     name: "listbox",
-    dependencies: ()
+    dependencies: (
+        "list"
+    )
 );
 
 
@@ -12,9 +14,15 @@ $_kendo-module-meta: (
 
 
 // Register
-@include register-module( $_kendo-module-meta... ) {
-    @include kendo-listbox--core-layout();
-    @include kendo-listbox--extended-layout();
-    @include kendo-listbox--core-theme();
-    @include kendo-listbox--extended-theme();
+@include module-register( $_kendo-module-meta... );
+
+
+// Expose
+@mixin listbox-styles() {
+    @include module-render( "listbox" ) {
+        @include kendo-listbox--layout();
+        @include kendo-listbox--extended-layout();
+        @include kendo-listbox--theme();
+        @include kendo-listbox--extended-theme();
+    }
 }

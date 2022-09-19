@@ -12,9 +12,15 @@ $_kendo-module-meta: (
 
 
 // Register
-@include register-module( $_kendo-module-meta... ) {
-    @include kendo-popover--core-layout();
-    @include kendo-popover--extended-layout();
-    @include kendo-popover--core-theme();
-    @include kendo-popover--extended-theme();
+@include module-register( $_kendo-module-meta... );
+
+
+// Expose
+@mixin popover-styles() {
+    @include module-render( "popover" ) {
+        @include kendo-popover--layout();
+        @include kendo-popover--extended-layout();
+        @include kendo-popover--theme();
+        @include kendo-popover--extended-theme();
+    }
 }

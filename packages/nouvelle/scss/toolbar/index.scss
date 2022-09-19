@@ -12,9 +12,15 @@ $_kendo-module-meta: (
 
 
 // Register
-@include register-module( $_kendo-module-meta... ) {
-    @include kendo-toolbar--core-layout();
-    @include kendo-toolbar--extended-layout();
-    @include kendo-toolbar--core-theme();
-    @include kendo-toolbar--extended-theme();
+@include module-register( $_kendo-module-meta... );
+
+
+// Expose
+@mixin toolbar-styles() {
+    @include module-render( "toolbar" ) {
+        @include kendo-toolbar--layout();
+        @include kendo-toolbar--extended-layout();
+        @include kendo-toolbar--theme();
+        @include kendo-toolbar--extended-theme();
+    }
 }

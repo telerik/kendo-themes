@@ -12,9 +12,15 @@ $_kendo-module-meta: (
 
 
 // Register
-@include register-module( $_kendo-module-meta... ) {
-    @include kendo-filter--core-layout();
-    @include kendo-filter--extended-layout();
-    @include kendo-filter--core-theme();
-    @include kendo-filter--extended-theme();
+@include module-register( $_kendo-module-meta... );
+
+
+// Expose
+@mixin filter-styles() {
+    @include module-render( "filter" ) {
+        @include kendo-filter--layout();
+        @include kendo-filter--extended-layout();
+        @include kendo-filter--theme();
+        @include kendo-filter--extended-theme();
+    }
 }

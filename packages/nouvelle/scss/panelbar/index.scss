@@ -12,9 +12,15 @@ $_kendo-module-meta: (
 
 
 // Register
-@include register-module( $_kendo-module-meta... ) {
-    @include kendo-panelbar--core-layout();
-    @include kendo-panelbar--extended-layout();
-    @include kendo-panelbar--core-theme();
-    @include kendo-panelbar--extended-theme();
+@include module-register( $_kendo-module-meta... );
+
+
+// Expose
+@mixin panelbar-styles() {
+    @include module-render( "panelbar" ) {
+        @include kendo-panelbar--layout();
+        @include kendo-panelbar--extended-layout();
+        @include kendo-panelbar--theme();
+        @include kendo-panelbar--extended-theme();
+    }
 }
