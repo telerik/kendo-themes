@@ -12,9 +12,15 @@ $_kendo-module-meta: (
 
 
 // Register
-@include register-module( $_kendo-module-meta... ) {
-    @include kendo-list--core-layout();
-    @include kendo-list--extended-layout();
-    @include kendo-list--core-theme();
-    @include kendo-list--extended-theme();
+@include module-register( $_kendo-module-meta... );
+
+
+// Expose
+@mixin list-styles() {
+    @include module-render( "list" ) {
+        @include kendo-list--layout();
+        @include kendo-list--extended-layout();
+        @include kendo-list--theme();
+        @include kendo-list--extended-theme();
+    }
 }

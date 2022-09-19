@@ -12,9 +12,15 @@ $_kendo-module-meta: (
 
 
 // Register
-@include register-module( $_kendo-module-meta... ) {
-    @include kendo-treeview--core-layout();
-    @include kendo-treeview--extended-layout();
-    @include kendo-treeview--core-theme();
-    @include kendo-treeview--extended-theme();
+@include module-register( $_kendo-module-meta... );
+
+
+// Expose
+@mixin treeview-styles() {
+    @include module-render( "treeview" ) {
+        @include kendo-treeview--layout();
+        @include kendo-treeview--extended-layout();
+        @include kendo-treeview--theme();
+        @include kendo-treeview--extended-theme();
+    }
 }

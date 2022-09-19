@@ -12,9 +12,15 @@ $_kendo-module-meta: (
 
 
 // Register
-@include register-module( $_kendo-module-meta... ) {
-    @include kendo-colorpicker--core-layout();
-    @include kendo-colorpicker--extended-layout();
-    @include kendo-colorpicker--core-theme();
-    @include kendo-colorpicker--extended-theme();
+@include module-register( $_kendo-module-meta... );
+
+
+// Expose
+@mixin colorpicker-styles() {
+    @include module-render( "colorpicker" ) {
+        @include kendo-colorpicker--layout();
+        @include kendo-colorpicker--extended-layout();
+        @include kendo-colorpicker--theme();
+        @include kendo-colorpicker--extended-theme();
+    }
 }

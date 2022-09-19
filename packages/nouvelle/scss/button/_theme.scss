@@ -1,4 +1,4 @@
-@mixin kendo-button--core-theme() {
+@mixin kendo-button--theme() {
 
     :where(.k-button) {
         color: var( --kendo-button-text, inherit );

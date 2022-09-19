@@ -1,7 +1,10 @@
 // Module meta
 $_kendo-module-meta: (
     name: "button",
-    dependencies: ()
+    dependencies: (
+        "icon",
+        "badge"
+    )
 );
 
 
@@ -12,9 +15,15 @@ $_kendo-module-meta: (
 
 
 // Register
-@include register-module( $_kendo-module-meta... ) {
-    @include kendo-button--core-layout();
-    @include kendo-button--extended-layout();
-    @include kendo-button--core-theme();
-    @include kendo-button--extended-theme();
+@include module-register( $_kendo-module-meta... );
+
+
+// Expose
+@mixin button-styles() {
+    @include module-render( "button" ) {
+        @include kendo-button--layout();
+        @include kendo-button--extended-layout();
+        @include kendo-button--theme();
+        @include kendo-button--extended-theme();
+    }
 }

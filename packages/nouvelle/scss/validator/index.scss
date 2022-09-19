@@ -12,9 +12,15 @@ $_kendo-module-meta: (
 
 
 // Register
-@include register-module( $_kendo-module-meta... ) {
-    @include kendo-validator--core-layout();
-    @include kendo-validator--extended-layout();
-    @include kendo-validator--core-theme();
-    @include kendo-validator--extended-theme();
+@include module-register( $_kendo-module-meta... );
+
+
+// Expose
+@mixin validator-styles() {
+    @include module-render( "validator" ) {
+        @include kendo-validator--layout();
+        @include kendo-validator--extended-layout();
+        @include kendo-validator--theme();
+        @include kendo-validator--extended-theme();
+    }
 }

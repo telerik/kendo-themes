@@ -12,9 +12,15 @@ $_kendo-module-meta: (
 
 
 // Register
-@include register-module( $_kendo-module-meta... ) {
-    @include kendo-drawer--core-layout();
-    @include kendo-drawer--extended-layout();
-    @include kendo-drawer--core-theme();
-    @include kendo-drawer--extended-theme();
+@include module-register( $_kendo-module-meta... );
+
+
+// Expose
+@mixin drawer-styles() {
+    @include module-render( "drawer" ) {
+        @include kendo-drawer--layout();
+        @include kendo-drawer--extended-layout();
+        @include kendo-drawer--theme();
+        @include kendo-drawer--extended-theme();
+    }
 }

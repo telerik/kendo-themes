@@ -12,9 +12,15 @@ $_kendo-module-meta: (
 
 
 // Register
-@include register-module( $_kendo-module-meta... ) {
-    @include kendo-pager--core-layout();
-    @include kendo-pager--extended-layout();
-    @include kendo-pager--core-theme();
-    @include kendo-pager--extended-theme();
+@include module-register( $_kendo-module-meta... );
+
+
+// Expose
+@mixin pager-styles() {
+    @include module-render( "pager" ) {
+        @include kendo-pager--layout();
+        @include kendo-pager--extended-layout();
+        @include kendo-pager--theme();
+        @include kendo-pager--extended-theme();
+    }
 }

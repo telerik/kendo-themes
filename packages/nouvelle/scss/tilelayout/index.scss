@@ -12,9 +12,15 @@ $_kendo-module-meta: (
 
 
 // Register
-@include register-module( $_kendo-module-meta... ) {
-    @include kendo-tilelayout--core-layout();
-    @include kendo-tilelayout--extended-layout();
-    @include kendo-tilelayout--core-theme();
-    @include kendo-tilelayout--extended-theme();
+@include module-register( $_kendo-module-meta... );
+
+
+// Expose
+@mixin tilelayout-styles() {
+    @include module-render( "tilelayout" ) {
+        @include kendo-tilelayout--layout();
+        @include kendo-tilelayout--extended-layout();
+        @include kendo-tilelayout--theme();
+        @include kendo-tilelayout--extended-theme();
+    }
 }

@@ -12,9 +12,15 @@ $_kendo-module-meta: (
 
 
 // Register
-@include register-module( $_kendo-module-meta... ) {
-    @include kendo-dropzone--core-layout();
-    @include kendo-dropzone--extended-layout();
-    @include kendo-dropzone--core-theme();
-    @include kendo-dropzone--extended-theme();
+@include module-register( $_kendo-module-meta... );
+
+
+// Expose
+@mixin dropzone-styles() {
+    @include module-render( "dropzone" ) {
+        @include kendo-dropzone--layout();
+        @include kendo-dropzone--extended-layout();
+        @include kendo-dropzone--theme();
+        @include kendo-dropzone--extended-theme();
+    }
 }

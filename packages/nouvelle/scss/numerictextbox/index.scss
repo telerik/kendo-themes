@@ -12,9 +12,15 @@ $_kendo-module-meta: (
 
 
 // Register
-@include register-module( $_kendo-module-meta... ) {
-    @include kendo-numerictextbox--core-layout();
-    @include kendo-numerictextbox--extended-layout();
-    @include kendo-numerictextbox--core-theme();
-    @include kendo-numerictextbox--extended-theme();
+@include module-register( $_kendo-module-meta... );
+
+
+// Expose
+@mixin numerictextbox-styles() {
+    @include module-render( "numerictextbox" ) {
+        @include kendo-numerictextbox--layout();
+        @include kendo-numerictextbox--extended-layout();
+        @include kendo-numerictextbox--theme();
+        @include kendo-numerictextbox--extended-theme();
+    }
 }

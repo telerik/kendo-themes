@@ -12,9 +12,15 @@ $_kendo-module-meta: (
 
 
 // Register
-@include register-module( $_kendo-module-meta... ) {
-    @include kendo-rating--core-layout();
-    @include kendo-rating--extended-layout();
-    @include kendo-rating--core-theme();
-    @include kendo-rating--extended-theme();
+@include module-register( $_kendo-module-meta... );
+
+
+// Expose
+@mixin rating-styles() {
+    @include module-render( "rating" ) {
+        @include kendo-rating--layout();
+        @include kendo-rating--extended-layout();
+        @include kendo-rating--theme();
+        @include kendo-rating--extended-theme();
+    }
 }

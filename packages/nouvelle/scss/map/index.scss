@@ -12,9 +12,15 @@ $_kendo-module-meta: (
 
 
 // Register
-@include register-module( $_kendo-module-meta... ) {
-    @include kendo-map--core-layout();
-    @include kendo-map--extended-layout();
-    @include kendo-map--core-theme();
-    @include kendo-map--extended-theme();
+@include module-register( $_kendo-module-meta... );
+
+
+// Expose
+@mixin map-styles() {
+    @include module-render( "map" ) {
+        @include kendo-map--layout();
+        @include kendo-map--extended-layout();
+        @include kendo-map--theme();
+        @include kendo-map--extended-theme();
+    }
 }

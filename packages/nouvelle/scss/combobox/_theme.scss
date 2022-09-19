@@ -1,4 +1,4 @@
-@mixin kendo-combobox--core-theme() {
+@mixin kendo-combobox--theme() {
 
     :where(.k-combobox) {
         color: var( --kendo-combobox-text, inherit );

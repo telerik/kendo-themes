@@ -1,0 +1,13 @@
+@mixin kendo-virtual-scroller--layout() {
+
+    // sass-lint:disable-block no-important no-ids
+    #test-area .k-virtual-scroller {
+        display: none !important;
+    }
+
+}
+
+
+
+
+@mixin kendo-virtual-scroller--extended-layout() {}

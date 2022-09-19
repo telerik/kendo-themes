@@ -1,0 +1,13 @@
+@mixin kendo-menu-button--layout() {
+
+    // sass-lint:disable-block no-important no-ids
+    #test-area .k-menu-button {
+        display: none !important;
+    }
+
+}
+
+
+
+
+@mixin kendo-menu-button--extended-layout() {}

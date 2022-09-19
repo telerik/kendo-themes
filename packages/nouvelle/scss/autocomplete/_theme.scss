@@ -1,4 +1,4 @@
-@mixin kendo-autocomplete--core-theme() {
+@mixin kendo-autocomplete--theme() {
 
     :where(.k-autocomplete) {
         color: var( --kendo-autocomplete-text, inherit );

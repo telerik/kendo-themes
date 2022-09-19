@@ -1,7 +1,9 @@
 // Module meta
 $_kendo-module-meta: (
     name: "chip",
-    dependencies: ()
+    dependencies: (
+        "icon"
+    )
 );
 
 
@@ -12,9 +14,15 @@ $_kendo-module-meta: (
 
 
 // Register
-@include register-module( $_kendo-module-meta... ) {
-    @include kendo-chip--core-layout();
-    @include kendo-chip--extended-layout();
-    @include kendo-chip--core-theme();
-    @include kendo-chip--extended-theme();
+@include module-register( $_kendo-module-meta... );
+
+
+// Expose
+@mixin chip-styles() {
+    @include module-render( "chip" ) {
+        @include kendo-chip--layout();
+        @include kendo-chip--extended-layout();
+        @include kendo-chip--theme();
+        @include kendo-chip--extended-theme();
+    }
 }

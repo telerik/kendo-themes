@@ -12,10 +12,15 @@ $_kendo-module-meta: (
 
 
 // Register
-@include register-module( $_kendo-module-meta... ) {
-    @include kendo-textbox--core-layout();
-    @include kendo-textbox--extended-layout();
-    @include kendo-textbox--core-theme();
-    @include kendo-textbox--extended-theme();
-}
+@include module-register( $_kendo-module-meta... );
 
+
+// Expose
+@mixin textbox-styles() {
+    @include module-render( "textbox" ) {
+        @include kendo-textbox--layout();
+        @include kendo-textbox--extended-layout();
+        @include kendo-textbox--theme();
+        @include kendo-textbox--extended-theme();
+    }
+}

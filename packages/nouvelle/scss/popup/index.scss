@@ -12,9 +12,15 @@ $_kendo-module-meta: (
 
 
 // Register
-@include register-module( $_kendo-module-meta... ) {
-    @include kendo-popup--core-layout();
-    @include kendo-popup--extended-layout();
-    @include kendo-popup--core-theme();
-    @include kendo-popup--extended-theme();
+@include module-register( $_kendo-module-meta... );
+
+
+// Expose
+@mixin popup-styles() {
+    @include module-render( "popup" ) {
+        @include kendo-popup--layout();
+        @include kendo-popup--extended-layout();
+        @include kendo-popup--theme();
+        @include kendo-popup--extended-theme();
+    }
 }

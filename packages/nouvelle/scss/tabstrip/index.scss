@@ -12,9 +12,15 @@ $_kendo-module-meta: (
 
 
 // Register
-@include register-module( $_kendo-module-meta... ) {
-    @include kendo-tabstrip--core-layout();
-    @include kendo-tabstrip--extended-layout();
-    @include kendo-tabstrip--core-theme();
-    @include kendo-tabstrip--extended-theme();
+@include module-register( $_kendo-module-meta... );
+
+
+// Expose
+@mixin tabstrip-styles() {
+    @include module-render( "tabstrip" ) {
+        @include kendo-tabstrip--layout();
+        @include kendo-tabstrip--extended-layout();
+        @include kendo-tabstrip--theme();
+        @include kendo-tabstrip--extended-theme();
+    }
 }

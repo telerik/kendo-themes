@@ -1,11 +1,9 @@
-$_imported-modules: ();
-
-// Load all modules by default
-$_required-modules: (
+$components: (
     // Typography and utils
     "typography",
     "utils",
     "cursor",
+    "draggable",
 
     // Generic content
     "styling",
@@ -20,15 +18,22 @@ $_required-modules: (
     "listgroup",
     "overlay",
     "ripple",
+    "virtual-scroller",
 
     // Indicators
     "avatar",
     "badge",
+    "color-preview",
     "loader",
     "loading",
+    "color-preview",
+    "skeleton",
+    "tooltip",
 
     // Native forms
     "button",
+    "split-button",
+    "menu-button",
     "textbox",
     "textarea",
     "checkbox",
@@ -38,20 +43,28 @@ $_required-modules: (
     "slider",
 
     // Form helpers
-    "form",
+    "forms",
     "validator",
     "floating-label",
 
     // Form requirements
     "calendar",
     "popup",
+    "timeselector",
 
     // Augmented inputs
     "autocomplete",
     "captcha",
+    "colorpalette",
+    "colorgradient",
+    "coloreditor",
     "colorpicker",
     "combobox",
-    "datetime",
+    "dateinput",
+    "datepicker",
+    "timepicker",
+    "datetimepicker",
+    "daterangepicker",
     "dropdowngrid",
     "dropdownlist",
     "dropdowntree",
@@ -78,11 +91,10 @@ $_required-modules: (
     "notification",
     "popover",
     "responsivepanel",
-    "tooltip",
     "window",
 
     // Navigation
-    "bottom-nav",
+    "bottom-navigation",
     "breadcrumb",
     "pager",
     "stepper",
@@ -92,7 +104,7 @@ $_required-modules: (
 
     // Layout & containers
     "card",
-    "expander",
+    "expansion-panel",
     "panelbar",
     "splitter",
     "tilelayout",
@@ -121,24 +133,12 @@ $_required-modules: (
     "mediaplayer",
     "timeline",
     "pdf-viewer",
-    // "scroller",
+    "scroller",
     "scrollview",
 
     // Dataviz
     "dataviz",
     "map",
-    "orgchart"
-
+    "orgchart",
+    "signature"
 ) !default;
-
-@mixin register-module( $name: null, $dependencies: null ) {
-    @if ( index( $_required-modules, $name ) != null ) and ( index( $_imported-modules, $name ) == null)  {
-        $_imported-modules: append( $_imported-modules, $name ) !global;
-        @content;
-    }
-}
-@mixin load-modules( $names... ) {
-    @each $name in $names {
-        $_required-modules: append( $_required-modules, $name ) !global;
-    }
-}

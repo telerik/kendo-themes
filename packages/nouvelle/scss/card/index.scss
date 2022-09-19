@@ -1,7 +1,9 @@
 // Module meta
 $_kendo-module-meta: (
     name: "card",
-    dependencies: ()
+    dependencies: (
+        "actions"
+    )
 );
 
 
@@ -12,9 +14,15 @@ $_kendo-module-meta: (
 
 
 // Register
-@include register-module( $_kendo-module-meta... ) {
-    @include kendo-card--core-layout();
-    @include kendo-card--extended-layout();
-    @include kendo-card--core-theme();
-    @include kendo-card--extended-theme();
+@include module-register( $_kendo-module-meta... );
+
+
+// Expose
+@mixin card-styles() {
+    @include module-render( "card" ) {
+        @include kendo-card--layout();
+        @include kendo-card--extended-layout();
+        @include kendo-card--theme();
+        @include kendo-card--extended-theme();
+    }
 }

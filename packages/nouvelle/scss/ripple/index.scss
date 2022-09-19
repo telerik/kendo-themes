@@ -12,9 +12,15 @@ $_kendo-module-meta: (
 
 
 // Register
-@include register-module( $_kendo-module-meta... ) {
-    @include kendo-ripple--core-layout();
-    @include kendo-ripple--extended-layout();
-    @include kendo-ripple--core-theme();
-    @include kendo-ripple--extended-theme();
+@include module-register( $_kendo-module-meta... );
+
+
+// Expose
+@mixin ripple-styles() {
+    @include module-render( "ripple" ) {
+        @include kendo-ripple--layout();
+        @include kendo-ripple--extended-layout();
+        @include kendo-ripple--theme();
+        @include kendo-ripple--extended-theme();
+    }
 }

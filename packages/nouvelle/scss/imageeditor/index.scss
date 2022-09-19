@@ -12,9 +12,15 @@ $_kendo-module-meta: (
 
 
 // Register
-@include register-module( $_kendo-module-meta... ) {
-    @include kendo-imageeditor--core-layout();
-    @include kendo-imageeditor--extended-layout();
-    @include kendo-imageeditor--core-theme();
-    @include kendo-imageeditor--extended-theme();
+@include module-register( $_kendo-module-meta... );
+
+
+// Expose
+@mixin imageeditor-styles() {
+    @include module-render( "imageeditor" ) {
+        @include kendo-imageeditor--layout();
+        @include kendo-imageeditor--extended-layout();
+        @include kendo-imageeditor--theme();
+        @include kendo-imageeditor--extended-theme();
+    }
 }

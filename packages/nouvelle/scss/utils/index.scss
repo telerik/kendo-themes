@@ -11,8 +11,13 @@ $_kendo-module-meta: (
 
 
 // Register
-@include register-module( $_kendo-module-meta... ) {
-    @include kendo-utils--grid();
-    @include kendo-utils--flex();
-}
+@include module-register( $_kendo-module-meta... );
 
+
+// Expose
+@mixin utils-styles() {
+    @include module-render( "utils" ) {
+        @include kendo-utils--grid();
+        @include kendo-utils--flex();
+    }
+}

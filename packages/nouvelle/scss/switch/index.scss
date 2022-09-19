@@ -12,9 +12,15 @@ $_kendo-module-meta: (
 
 
 // Register
-@include register-module( $_kendo-module-meta... ) {
-    @include kendo-switch--core-layout();
-    @include kendo-switch--extended-layout();
-    @include kendo-switch--core-theme();
-    @include kendo-switch--extended-theme();
+@include module-register( $_kendo-module-meta... );
+
+
+// Expose
+@mixin switch-styles() {
+    @include module-render( "switch" ) {
+        @include kendo-switch--layout();
+        @include kendo-switch--extended-layout();
+        @include kendo-switch--theme();
+        @include kendo-switch--extended-theme();
+    }
 }

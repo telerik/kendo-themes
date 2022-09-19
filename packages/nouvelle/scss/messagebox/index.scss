@@ -12,9 +12,15 @@ $_kendo-module-meta: (
 
 
 // Register
-@include register-module( $_kendo-module-meta... ) {
-    @include kendo-messagebox--core-layout();
-    @include kendo-messagebox--extended-layout();
-    @include kendo-messagebox--core-theme();
-    @include kendo-messagebox--extended-theme();
+@include module-register( $_kendo-module-meta... );
+
+
+// Expose
+@mixin messagebox-styles() {
+    @include module-render( "messagebox" ) {
+        @include kendo-messagebox--layout();
+        @include kendo-messagebox--extended-layout();
+        @include kendo-messagebox--theme();
+        @include kendo-messagebox--extended-theme();
+    }
 }

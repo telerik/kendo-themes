@@ -12,9 +12,15 @@ $_kendo-module-meta: (
 
 
 // Register
-@include register-module( $_kendo-module-meta... ) {
-    @include kendo-combobox--core-layout();
-    @include kendo-combobox--extended-layout();
-    @include kendo-combobox--core-theme();
-    @include kendo-combobox--extended-theme();
+@include module-register( $_kendo-module-meta... );
+
+
+// Expose
+@mixin combobox-styles() {
+    @include module-render( "combobox" ) {
+        @include kendo-combobox--layout();
+        @include kendo-combobox--extended-layout();
+        @include kendo-combobox--theme();
+        @include kendo-combobox--extended-theme();
+    }
 }

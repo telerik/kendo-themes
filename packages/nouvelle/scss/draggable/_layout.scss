@@ -1,0 +1,13 @@
+@mixin kendo-draggable--layout() {
+
+    // sass-lint:disable-block no-important no-ids
+    #test-area .k-draggable {
+        display: none !important;
+    }
+
+}
+
+
+
+
+@mixin kendo-draggable--extended-layout() {}

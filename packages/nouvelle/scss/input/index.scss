@@ -12,9 +12,15 @@ $_kendo-module-meta: (
 
 
 // Register
-@include register-module( $_kendo-module-meta... ) {
-    @include kendo-input--core-layout();
-    @include kendo-input--extended-layout();
-    @include kendo-input--core-theme();
-    @include kendo-input--extended-theme();
+@include module-register( $_kendo-module-meta... );
+
+
+// Expose
+@mixin input-styles() {
+    @include module-render( "input" ) {
+        @include kendo-input--layout();
+        @include kendo-input--extended-layout();
+        @include kendo-input--theme();
+        @include kendo-input--extended-theme();
+    }
 }

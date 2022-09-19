@@ -12,9 +12,15 @@ $_kendo-module-meta: (
 
 
 // Register
-@include register-module( $_kendo-module-meta... ) {
-    @include kendo-pdf-viewer--core-layout();
-    @include kendo-pdf-viewer--extended-layout();
-    @include kendo-pdf-viewer--core-theme();
-    @include kendo-pdf-viewer--extended-theme();
+@include module-register( $_kendo-module-meta... );
+
+
+// Expose
+@mixin pdf-viewer-styles() {
+    @include module-render( "pdf-viewer" ) {
+        @include kendo-pdf-viewer--layout();
+        @include kendo-pdf-viewer--extended-layout();
+        @include kendo-pdf-viewer--theme();
+        @include kendo-pdf-viewer--extended-theme();
+    }
 }

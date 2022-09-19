@@ -12,9 +12,15 @@ $_kendo-module-meta: (
 
 
 // Register
-@include register-module( $_kendo-module-meta... ) {
-    @include kendo-adaptive--core-layout();
-    @include kendo-adaptive--extended-layout();
-    @include kendo-adaptive--core-theme();
-    @include kendo-adaptive--extended-theme();
+@include module-register( $_kendo-module-meta... );
+
+
+// Expose
+@mixin adaptive-styles() {
+    @include module-render( "adaptive" ) {
+        @include kendo-adaptive--layout();
+        @include kendo-adaptive--extended-layout();
+        @include kendo-adaptive--theme();
+        @include kendo-adaptive--extended-theme();
+    }
 }

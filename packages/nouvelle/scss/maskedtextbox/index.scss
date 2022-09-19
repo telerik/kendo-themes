@@ -12,9 +12,15 @@ $_kendo-module-meta: (
 
 
 // Register
-@include register-module( $_kendo-module-meta... ) {
-    @include kendo-maskedtextbox--core-layout();
-    @include kendo-maskedtextbox--extended-layout();
-    @include kendo-maskedtextbox--core-theme();
-    @include kendo-maskedtextbox--extended-theme();
+@include module-register( $_kendo-module-meta... );
+
+
+// Expose
+@mixin maskedtextbox-styles() {
+    @include module-render( "maskedtextbox" ) {
+        @include kendo-maskedtextbox--layout();
+        @include kendo-maskedtextbox--extended-layout();
+        @include kendo-maskedtextbox--theme();
+        @include kendo-maskedtextbox--extended-theme();
+    }
 }

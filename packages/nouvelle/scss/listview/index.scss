@@ -12,9 +12,15 @@ $_kendo-module-meta: (
 
 
 // Register
-@include register-module( $_kendo-module-meta... ) {
-    @include kendo-listview--core-layout();
-    @include kendo-listview--extended-layout();
-    @include kendo-listview--core-theme();
-    @include kendo-listview--extended-theme();
+@include module-register( $_kendo-module-meta... );
+
+
+// Expose
+@mixin listview-styles() {
+    @include module-render( "listview" ) {
+        @include kendo-listview--layout();
+        @include kendo-listview--extended-layout();
+        @include kendo-listview--theme();
+        @include kendo-listview--extended-theme();
+    }
 }

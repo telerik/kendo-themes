@@ -1,0 +1,13 @@
+@mixin kendo-table--layout() {
+
+    // sass-lint:disable-block no-important no-ids
+    #test-area .k-table {
+        display: none !important;
+    }
+
+}
+
+
+
+
+@mixin kendo-table--extended-layout() {}

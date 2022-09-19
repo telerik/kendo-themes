@@ -1,7 +1,13 @@
 // Module meta
 $_kendo-module-meta: (
     name: "captcha",
-    dependencies: ()
+    dependencies: (
+        "input",
+        "button",
+        "icon",
+        "textbox",
+        "slider"
+    )
 );
 
 
@@ -12,9 +18,15 @@ $_kendo-module-meta: (
 
 
 // Register
-@include register-module( $_kendo-module-meta... ) {
-    @include kendo-captcha--core-layout();
-    @include kendo-captcha--extended-layout();
-    @include kendo-captcha--core-theme();
-    @include kendo-captcha--extended-theme();
+@include module-register( $_kendo-module-meta... );
+
+
+// Expose
+@mixin captcha-styles() {
+    @include module-render( "captcha" ) {
+        @include kendo-captcha--layout();
+        @include kendo-captcha--extended-layout();
+        @include kendo-captcha--theme();
+        @include kendo-captcha--extended-theme();
+    }
 }

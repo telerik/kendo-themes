@@ -1,7 +1,11 @@
 // Module meta
 $_kendo-module-meta: (
     name: "calendar",
-    dependencies: ()
+    dependencies: (
+        "button",
+        "icon",
+        "list"
+    )
 );
 
 
@@ -12,9 +16,15 @@ $_kendo-module-meta: (
 
 
 // Register
-@include register-module( $_kendo-module-meta... ) {
-    @include kendo-calendar--core-layout();
-    @include kendo-calendar--extended-layout();
-    @include kendo-calendar--core-theme();
-    @include kendo-calendar--extended-theme();
+@include module-register( $_kendo-module-meta... );
+
+
+// Expose
+@mixin calendar-styles() {
+    @include module-render( "calendar" ) {
+        @include kendo-calendar--layout();
+        @include kendo-calendar--extended-layout();
+        @include kendo-calendar--theme();
+        @include kendo-calendar--extended-theme();
+    }
 }

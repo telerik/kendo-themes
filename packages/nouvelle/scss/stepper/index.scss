@@ -12,9 +12,15 @@ $_kendo-module-meta: (
 
 
 // Register
-@include register-module( $_kendo-module-meta... ) {
-    @include kendo-stepper--core-layout();
-    @include kendo-stepper--extended-layout();
-    @include kendo-stepper--core-theme();
-    @include kendo-stepper--extended-theme();
+@include module-register( $_kendo-module-meta... );
+
+
+// Expose
+@mixin stepper-styles() {
+    @include module-render( "stepper" ) {
+        @include kendo-stepper--layout();
+        @include kendo-stepper--extended-layout();
+        @include kendo-stepper--theme();
+        @include kendo-stepper--extended-theme();
+    }
 }

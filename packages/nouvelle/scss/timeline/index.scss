@@ -12,9 +12,15 @@ $_kendo-module-meta: (
 
 
 // Register
-@include register-module( $_kendo-module-meta... ) {
-    @include kendo-timeline--core-layout();
-    @include kendo-timeline--extended-layout();
-    @include kendo-timeline--core-theme();
-    @include kendo-timeline--extended-theme();
+@include module-register( $_kendo-module-meta... );
+
+
+// Expose
+@mixin timeline-styles() {
+    @include module-render( "timeline" ) {
+        @include kendo-timeline--layout();
+        @include kendo-timeline--extended-layout();
+        @include kendo-timeline--theme();
+        @include kendo-timeline--extended-theme();
+    }
 }

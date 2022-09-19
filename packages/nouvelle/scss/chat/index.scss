@@ -1,7 +1,13 @@
 // Module meta
 $_kendo-module-meta: (
     name: "chat",
-    dependencies: ()
+    dependencies: (
+        "input",
+        "button",
+        "icon",
+        "toolbar",
+        "card"
+    )
 );
 
 
@@ -12,9 +18,15 @@ $_kendo-module-meta: (
 
 
 // Register
-@include register-module( $_kendo-module-meta... ) {
-    @include kendo-chat--core-layout();
-    @include kendo-chat--extended-layout();
-    @include kendo-chat--core-theme();
-    @include kendo-chat--extended-theme();
+@include module-register( $_kendo-module-meta... );
+
+
+// Expose
+@mixin chat-styles() {
+    @include module-render( "chat" ) {
+        @include kendo-chat--layout();
+        @include kendo-chat--extended-layout();
+        @include kendo-chat--theme();
+        @include kendo-chat--extended-theme();
+    }
 }
