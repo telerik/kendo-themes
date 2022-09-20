@@ -82,12 +82,6 @@
         white-space: nowrap;
     }
 
-    .k-selected {
-        .k-progress-status {
-            display: none;
-        }
-    }
-
 
     // Horizontal
     .k-progressbar-horizontal {
@@ -162,6 +156,10 @@
 
             > .k-progress-status-wrap {
                 height: calc( 100% * ( 100 / var( --kendo-progressbar-progress, 1 ) ) ); // sass-lint:disable-line no-duplicate-properties
+            }
+
+            .k-progress-status {
+                display: none;
             }
         }
 
