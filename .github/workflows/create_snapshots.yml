@@ -1,0 +1,52 @@
+name: Create snapshots
+
+on:
+  workflow_call:
+
+concurrency:
+  group: create-snapshots-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+
+  create-snapshots:
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Checkout branch
+        uses: actions/checkout@v2
+
+      - name: Print Firefox version
+        run: firefox --version
+
+      - name: Setup node
+        uses: actions/setup-node@v2
+        with:
+          cache: 'npm'
+          node-version: 14.x
+
+      - name: Install
+        run: |
+          npm ci
+          npx lerna bootstrap --scope @progress/kendo-themes-html
+
+      - name: Build test assets
+        run: |
+          npm run build:scripts
+          npm run build:tests
+
+      - name: Update markup snapshots
+        env:
+          HEADLESS: 'true'
+        run: |
+          ./build/create-snapshots.mjs
+
+      - name: Pack snapshots
+        run: tar --exclude tests/_output -cf snapshots.tar tests
+
+      - name: Upload snapshots
+        uses: actions/upload-artifact@v2
+        with:
+          name: snapshots
+          path: snapshots.tar

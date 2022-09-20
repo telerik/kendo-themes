@@ -1,0 +1,50 @@
+name: Compile themes
+
+on:
+  workflow_call:
+
+concurrency:
+  group: compile-themes-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+
+  create-themes:
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Checkout branch
+        uses: actions/checkout@v2
+
+      - name: Setup node
+        uses: actions/setup-node@v2
+        with:
+          cache: 'npm'
+          node-version: 14.x
+
+      - name: Install
+        run: |
+          npm ci
+          npx lerna bootstrap --ignore @progress/kendo-themes-html
+
+      - name: Build test assets
+        run: |
+          npm run sass
+
+      - name: Pack themes
+        run: |
+          tar -cf themes.tar \
+            packages/default/dist/all.css \
+            packages/bootstrap/dist/all.css \
+            packages/classic/dist/all.css \
+            packages/fluent/dist/all.css \
+            packages/material/dist/all.css \
+            packages/nouvelle/dist/all.css \
+            packages/utils/dist/all.css
+
+      - name: Upload themes
+        uses: actions/upload-artifact@v2
+        with:
+          name: themes
+          path: themes.tar
