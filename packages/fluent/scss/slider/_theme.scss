@@ -17,6 +17,13 @@
         --INTERNAL--kendo-slider-thumb-gradient: var( --kendo-slider-thumb-gradient,  #{$kendo-slider-thumb-gradient});
 
         color: var( --INTERNAL--kendo-slider-text, inherit );
+
+        &.k-disabled {
+            --INTERNAL--kendo-slider-text: var( --kendo-slider-disabled-text, #{$kendo-slider-disabled-text} );
+            --INTERNAL--kendo-slider-track-bg: var( --kendo-slider-track-disabled-bg, #{$kendo-slider-track-disabled-bg} );
+            --INTERNAL--kendo-slider-selection-bg: var( --kendo-slider-selection-disabled-bg, #{$kendo-slider-selection-disabled-bg} );
+            --INTERNAL--kendo-slider-thumb-border: var( --kendo-slider-thumb-disabled-border, #{$kendo-slider-thumb-disabled-border});
+        }
     }
 
 
