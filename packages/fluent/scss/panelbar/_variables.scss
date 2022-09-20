@@ -123,7 +123,7 @@ $kendo-panelbar-selected-marker: get-theme-color-var( primary-100 ) !default;
 
 /// Background color of the panelbar header when selected and hovered.
 /// @group panelbar
-$kendo-panelbar-header-selected-hovered-bg: $kendo-panelbar-header-selected-bg default;
+$kendo-panelbar-header-selected-hovered-bg: $kendo-panelbar-header-selected-bg !default;
 /// Text color of the panelbar header when selected and hovered.
 /// @group panelbar
 $kendo-panelbar-header-selected-hovered-text: $kendo-panelbar-header-hovered-text !default;
