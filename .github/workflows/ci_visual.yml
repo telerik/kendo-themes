@@ -7,6 +7,10 @@ on:
       - 'develop'
       - 'v4-dev'
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
 
   prepare-artifacts:
