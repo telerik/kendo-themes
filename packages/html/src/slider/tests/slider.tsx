@@ -92,7 +92,7 @@ root.render(
                         </ul>
                         <div className="k-slider-track">
                             <div className="k-slider-selection"></div>
-                            <a href="#" className="k-draghandle k-draghandle-end"></a>
+                            <a href="#" className="k-draghandle k-draghandle-end k-hover"></a>
                         </div>
                     </div>
                     <Button icon="caret-alt-right" rounded="full" className="k-button-increase"></Button>
@@ -123,7 +123,7 @@ root.render(
                         </ul>
                         <div className="k-slider-track">
                             <div className="k-slider-selection"></div>
-                            <a href="#" className="k-draghandle k-draghandle-end"></a>
+                            <a href="#" className="k-draghandle k-draghandle-end k-focus"></a>
                         </div>
                     </div>
                     <Button icon="caret-alt-right" rounded="full" className="k-button-increase"></Button>
