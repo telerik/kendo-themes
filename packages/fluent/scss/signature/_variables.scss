@@ -71,3 +71,7 @@ $kendo-signature-actions-gap: map-get( $kendo-spacing, 1 ) !default;
 /// The bottom-border width of the row line of the maximized signature component.
 /// @group signature
 $kendo-signature-maximized-line-width: 3px !default;
+
+/// The min-height of the large size signature component.
+/// @group signature
+$kendo-signature-lg-min-height: 110px;
