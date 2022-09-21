@@ -481,10 +481,8 @@
 
         .k-sort-order {
             display: inline-block;
-            vertical-align: top;
             height: var( --kendo-icon-size, 1rem );
             font-size: var( --kendo-grid-sort-index-font-size, #{$kendo-grid-sort-index-font-size} );
-            margin-block-start: var( --kendo-grid-sort-index-spacing-y, #{$kendo-grid-sort-index-spacing-y} );
             margin-inline-start: var( --kendo-grid-sort-index-spacing-x, #{$kendo-grid-sort-index-spacing-x} );
         }
     }
