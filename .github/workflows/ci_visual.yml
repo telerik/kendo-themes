@@ -91,7 +91,7 @@ jobs:
           git config user.email "kendouiteam@progress.com"
 
       - name: Push changes to GitHub
-        if: ${{ (env.HAS_CHANGES == 1 || env.HAS_NEW == 1) && github.actor != 'dependabot[bot]' }}
+        if: ${{ (env.HAS_CHANGES == 1 || env.HAS_NEW == 1) }}
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
