@@ -384,7 +384,7 @@
         display: block;
         overflow: hidden;
         position: relative;
-        z-index: 2;
+        z-index: 1;
 
         &::before,
         &::after {
