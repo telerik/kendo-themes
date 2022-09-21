@@ -22,3 +22,11 @@ $kendo-split-button-arrow-delimiter-line-size: 1px !default;
 /// Background color of the split button arrow delimiter.
 /// @group split-button
 $kendo-split-button-arrow-delimiter-bg: get-theme-color-var( neutral-60 ) !default;
+
+/// Sizes map for the split button.
+/// @group split-button
+$kendo-split-button-sizes: (
+    sm: $kendo-split-button-arrow-padding-y-sm,
+    md: $kendo-split-button-arrow-padding-y-md,
+    lg: $kendo-split-button-arrow-padding-y-lg
+) !default;
