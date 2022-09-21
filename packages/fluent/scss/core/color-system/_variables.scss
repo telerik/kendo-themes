@@ -41,16 +41,16 @@ $kendo-subtle-text: get-theme-color-var( neutral-130 ) !default;
 
 /// Shadow for cards and grid item thumbnails.
 /// Equivalent to fluent depth 4.
-$kendo-box-shadow-depth-1: 0px 0.3px 0.9px rgba( $black, 0.1 ), 0px 1.6px 3.6px rgba( $black, 0.13 ) !default;
+$kendo-box-shadow-depth-1: 0 1.6px 3.6px rgba( $black, 0.132 ), 0 0.3px 0.9px rgba( $black, 0.108 ) !default;
 /// Shadow for command bars and dropdowns.
 /// Equivalent to fluent depth 8.
-$kendo-box-shadow-depth-2: 0px 0.6px 1.8px rgba( $black, 0.1 ), 0px 3.2px 7.2px rgba( $black, 0.13 ) !default;
+$kendo-box-shadow-depth-2: 0 3.2px 7.2px rgba( $black, 0.132 ), 0 0.6px 1.8px rgba( $black, 0.108 ) !default;
 /// Shadow for teaching callouts and hover cards / tooltips.
 /// Equivalent to fluent depth 16.
-$kendo-box-shadow-depth-3: 0px 1.2px 3.6px rgba( $black, 0.1 ), 0px 6.4px 14.4px rgba( $black, 0.13 ) !default;
+$kendo-box-shadow-depth-3: 0 6.4px 14.4px rgba( $black, 0.132 ), 0 1.2px 3.6px rgba( $black, 0.108 ) !default;
 /// Shadow for panels and pop up dialogs.
 /// Equivalent to fluent depth 64.
-$kendo-box-shadow-depth-4: 0px 4.8px 14.4px rgba( $black, 0.18 ), 0px 25.6px 57.6px rgba( $black, 0.22 ) !default;
+$kendo-box-shadow-depth-4: 0 25.6px 57.6px rgba( $black, 0.22 ), 0 4.8px 14.4px rgba( $black, 0.18 ) !default;
 
 // Link
 $kendo-link-text: get-theme-color-var( primary-100 ) !default;
