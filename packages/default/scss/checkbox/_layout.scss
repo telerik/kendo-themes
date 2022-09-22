@@ -179,10 +179,6 @@
         .k-checkbox:focus,
         .k-checkbox.k-focus {
             box-shadow: none !important; // sass-lint:disable-line no-important
-
-            &::after {
-                transform: translate(-50%, -50%) scale(1);
-            }
         }
 
         .k-checkbox:disabled::after,
@@ -207,7 +203,7 @@
             }
         }
         .k-ripple-container {
-            .k-checkbox-#{size}::after {
+            .k-checkbox-#{$size}::after {
                 width: $_ripple-size;
                 height: $_ripple-size;
             }
