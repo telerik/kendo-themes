@@ -171,10 +171,6 @@
         .k-radio:focus,
         .k-radio.k-focus {
             box-shadow: none !important; // sass-lint:disable-line no-important
-
-            &::after {
-                transform: translate(-50%, -50%) scale(1);
-            }
         }
 
         .k-radio:disabled::after,
