@@ -264,8 +264,8 @@
             // min-height: auto !important; // sass-lint:disable-line no-important
         }
 
-        &:focus {
-            box-shadow: none;
+        &:focus::after {
+            outline: none;
         }
     }
     .k-input-outline .k-input-button {
