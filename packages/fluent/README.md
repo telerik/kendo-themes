@@ -30,7 +30,7 @@ and then import it in your project styles:
 
 ```scss
 // Import the entire theme
-@import "~@progress/kendo-theme-fluent/dist/all.scss";
+@use "~@progress/kendo-theme-fluent/scss/all.scss";
 ```
 
 ## Customizing
@@ -39,12 +39,19 @@ You can customize Kendo UI Fluent Theme both in terms of what gets compiled and 
 
 ### Importing
 
-In your custom scss file, you can import the entirety of the theme, by importing `dist/all.scss` or pick just the styles for the components you need. The files for individual components are in `scss/` folder:
+In your custom scss file, you can import the entirety of the theme, by importing `scss/all.scss` or pick just the styles for the components you need. The files for individual components:
 
 ```scss
-// Import only PanelBar and Grid styles
-@import "~@progress/kendo-theme-fluent/scss/panelbar/_index.scss";
-@import "~@progress/kendo-theme-fluent/scss/grid/_index.scss";
+// Import only Button and Grid styles
+@use "~@progress/kendo-theme-fluent/scss/index.scss" as kendo-theme;
+
+@include kendo-theme.config(
+    $components: (
+        "button",
+        "grid"
+    )
+);
+@include kendo-theme.styles();
 ```
 
 ## Bug reports and feature requests
