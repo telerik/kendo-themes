@@ -4,251 +4,248 @@
 @use "../list/_variables.scss"as *;
 
 @mixin kendo-spreadsheet--theme() {
-// Spreadsheet
-.k-spreadsheet {
-    @include fill(
-        var( --kendo-spreadsheet-text, #{$kendo-spreadsheet-text} ),
-        var( --kendo-spreadsheet-bg, #{$kendo-spreadsheet-bg} ),
-        var( --kendo-spreadsheet-border, #{$kendo-spreadsheet-border} )
-    );
-}
-
-
-// Header
-.k-spreadsheet .k-tabstrip-wrapper {}
-
-
-// Quick access toolbar
-.k-spreadsheet-quick-access-toolbar {}
-
-
-// Row / column headers
-.k-spreadsheet-top-corner,
-.k-spreadsheet-row-header,
-.k-spreadsheet-column-header {
-    @include fill(
-        var( --kendo-spreadsheet-header-text, #{$kendo-spreadsheet-header-text} ),
-        var( --kendo-spreadsheet-header-bg, #{$kendo-spreadsheet-header-bg} ),
-        var( --kendo-spreadsheet-header-border, #{$kendo-spreadsheet-header-border} )
-    );
-}
-
-
-// Formula bar
-.k-spreadsheet-formula-list {}
-.k-syntax-ref { color: #ff8822; }
-.k-syntax-num { color: #0099ff; }
-.k-syntax-str { color: #38b714; }
-.k-syntax-error { color: red; }
-.k-syntax-bool { color: #a9169c; }
-.k-syntax-paren-match { background-color: #caf200; }
-
-
-// Cell editor
-.k-spreadsheet-cell-editor {
-    color: var( --kendo-spreadsheet-text, #{$kendo-spreadsheet-text} );
-    background-color: var( --kendo-spreadsheet-bg, #{$kendo-spreadsheet-bg} );
-}
-
-
-// Cells
-.k-spreadsheet-merged-cell {
-    background-color: var( --kendo-spreadsheet-bg, #{$kendo-spreadsheet-bg} );
-}
-
-
-// Selection
-.k-spreadsheet .k-selection-full,
-.k-spreadsheet .k-selection-partial {
-    // TODO: consider extracting variables
-    background-color: var( --kendo-spreadsheet-selected-bg, #{$kendo-spreadsheet-selected-bg} );
-}
-.k-spreadsheet-selection {
-    border-color: var( --kendo-spreadsheet-selected-border, #{$kendo-spreadsheet-selected-border} );
-    background-color: var( --kendo-spreadsheet-selected-bg, #{$kendo-spreadsheet-selected-bg} );
-    box-shadow: inset 0 0 0 1px var( --kendo-spreadsheet-selected-bg, #{$kendo-spreadsheet-selected-bg} );
-}
-.k-spreadsheet .k-single-selection::after {
-    border-color: var( --kendo-spreadsheet-border, #{$kendo-spreadsheet-border} );
-    background-color: var( --kendo-spreadsheet-selected-border, #{$kendo-spreadsheet-selected-border} );
-}
-.k-spreadsheet-active-cell {
-    box-shadow: inset 0 0 0 1px var( --kendo-spreadsheet-selected-bg, #{$kendo-spreadsheet-selected-bg} );
-    background-color: var( --kendo-spreadsheet-bg, #{$kendo-spreadsheet-bg} );
-
-    &.k-right {
-        box-shadow: inset 0 0 0 1px var( --kendo-spreadsheet-selected-bg, #{$kendo-spreadsheet-selected-bg} ), inset -1px 0 0 1px var( --kendo-spreadsheet-selected-bg, #{$kendo-spreadsheet-selected-bg} );
-    }
-
-    &.k-bottom {
-        box-shadow: inset 0 0 0 1px var( --kendo-spreadsheet-selected-bg, #{$kendo-spreadsheet-selected-bg} ), inset 0 -1px 0 1px var( --kendo-spreadsheet-selected-bg, #{$kendo-spreadsheet-selected-bg} );
-    }
-
-    &.k-bottom.k-right {
-        box-shadow: inset 0 0 0 1px var( --kendo-spreadsheet-selected-bg, #{$kendo-spreadsheet-selected-bg} ), inset -1px -1px 0 1px var( --kendo-spreadsheet-selected-bg, #{$kendo-spreadsheet-selected-bg} );
-    }
-}
-
-.k-spreadsheet .k-auto-fill {
-    border-color: var( --kendo-spreadsheet-selected-border, #{$kendo-spreadsheet-selected-border} );
-    background-color: var( --kendo-spreadsheet-selected-bg, #{$kendo-spreadsheet-selected-bg} );
-    box-shadow: inset 0 0 0 1px var( --kendo-spreadsheet-selected-bg, #{$kendo-spreadsheet-selected-bg} );
-}
-.k-spreadsheet .k-auto-fill-punch {
-    background-color: var( --kendo-spreadsheet-bg, #{$kendo-spreadsheet-bg} );
-}
-
-
-// Resize handle
-.k-spreadsheet .k-resize-handle,
-.k-spreadsheet .k-resize-hint-handle,
-.k-spreadsheet .k-resize-hint-marker {
-    background-color: var( --kendo-spreadsheet-primary-bg, #{$kendo-spreadsheet-primary-bg} );
-}
-
-// Comments
-.k-spreadsheet-has-comment::after {
-    border-color: var( --kendo-spreadsheet-primary-border, #{$kendo-spreadsheet-primary-border} ) var( --kendo-spreadsheet-primary-border, #{$kendo-spreadsheet-primary-border} ) transparent transparent;
-}
-
-// Validation
-.k-dirty {
-    border-color: var( --kendo-spreadsheet-error-border, #{$kendo-spreadsheet-error-border} ) transparent transparent var( --kendo-spreadsheet-error-border, #{$kendo-spreadsheet-error-border} );
-}
-
-}
-
-
-
-
-// Filter button
-.k-spreadsheet .k-filter-range {
-    border-color: var( --kendo-spreadsheet-primary-border, #{$kendo-spreadsheet-primary-border} );
-}
-.k-spreadsheet-filter {
-    @include fill(
-        var( --kendo-spreadsheet-filter-button-text, #{$kendo-spreadsheet-filter-button-text} ),
-        var( --kendo-spreadsheet-filter-button-bg, #{$kendo-spreadsheet-filter-button-bg} ),
-        var( --kendo-spreadsheet-filter-button-border, #{$kendo-spreadsheet-filter-button-border} )
-    );
-    box-shadow: inset 0 0 0 1px var( --kendo-spreadsheet-filter-button-border, #{$kendo-spreadsheet-filter-button-border} );
-
-    &:hover {
+    // Spreadsheet
+    .k-spreadsheet {
         @include fill(
-            var( --kendo-spreadsheet-filter-button-hover-text, #{$kendo-spreadsheet-filter-button-hover-text} ),
-            var( --kendo-spreadsheet-filter-button-hover-bg, #{$kendo-spreadsheet-filter-button-hover-bg} ),
-            var( --kendo-spreadsheet-filter-button-hover-border, #{$kendo-spreadsheet-filter-button-hover-border} )
+            var( --kendo-spreadsheet-text, #{$kendo-spreadsheet-text} ),
+            var( --kendo-spreadsheet-bg, #{$kendo-spreadsheet-bg} ),
+            var( --kendo-spreadsheet-border, #{$kendo-spreadsheet-border} )
         );
     }
 
-    &.k-active {
+
+    // Header
+    .k-spreadsheet .k-tabstrip-wrapper {}
+
+
+    // Quick access toolbar
+    .k-spreadsheet-quick-access-toolbar {}
+
+
+    // Row / column headers
+    .k-spreadsheet-top-corner,
+    .k-spreadsheet-row-header,
+    .k-spreadsheet-column-header {
         @include fill(
-            var( --kendo-spreadsheet-filter-button-active-text, #{$kendo-spreadsheet-filter-button-active-text} ),
-            var( --kendo-spreadsheet-filter-button-active-bg, #{$kendo-spreadsheet-filter-button-active-bg} ),
-            var( --kendo-spreadsheet-filter-button-active-border, #{$kendo-spreadsheet-filter-button-active-border} )
+            var( --kendo-spreadsheet-header-text, #{$kendo-spreadsheet-header-text} ),
+            var( --kendo-spreadsheet-header-bg, #{$kendo-spreadsheet-header-bg} ),
+            var( --kendo-spreadsheet-header-border, #{$kendo-spreadsheet-header-border} )
         );
     }
 
-}
 
-.k-spreadsheet-value-treeview-wrapper {
-    @include fill(
-        var( --kendo-spreadsheet-text, #{$kendo-spreadsheet-text} ),
-        var( --kendo-spreadsheet-bg, #{$kendo-spreadsheet-bg} ),
-        var( --kendo-spreadsheet-border, #{$kendo-spreadsheet-border} )
-    );
-}
+    // Formula bar
+    .k-spreadsheet-formula-list {}
+    .k-syntax-ref { color: #ff8822; }
+    .k-syntax-num { color: #0099ff; }
+    .k-syntax-str { color: #38b714; }
+    .k-syntax-error { color: red; }
+    .k-syntax-bool { color: #a9169c; }
+    .k-syntax-paren-match { background-color: #caf200; }
 
-// Filter menu
-.k-spreadsheet-filter-menu {
 
-    > .k-menu,
-    > .k-menu:not(.k-context-menu) {
+    // Cell editor
+    .k-spreadsheet-cell-editor {
+        color: var( --kendo-spreadsheet-text, #{$kendo-spreadsheet-text} );
+        background-color: var( --kendo-spreadsheet-bg, #{$kendo-spreadsheet-bg} );
+    }
 
-        .k-item:hover,
-        .k-item.k-hover {
+
+    // Cells
+    .k-spreadsheet-merged-cell {
+        background-color: var( --kendo-spreadsheet-bg, #{$kendo-spreadsheet-bg} );
+    }
+
+
+    // Selection
+    .k-spreadsheet .k-selection-full,
+    .k-spreadsheet .k-selection-partial {
+        // TODO: consider extracting variables
+        background-color: var( --kendo-spreadsheet-selected-bg, #{$kendo-spreadsheet-selected-bg} );
+    }
+    .k-spreadsheet-selection {
+        border-color: var( --kendo-spreadsheet-selected-border, #{$kendo-spreadsheet-selected-border} );
+        background-color: var( --kendo-spreadsheet-selected-bg, #{$kendo-spreadsheet-selected-bg} );
+        box-shadow: inset 0 0 0 1px var( --kendo-spreadsheet-selected-bg, #{$kendo-spreadsheet-selected-bg} );
+    }
+    .k-spreadsheet .k-single-selection::after {
+        border-color: var( --kendo-spreadsheet-border, #{$kendo-spreadsheet-border} );
+        background-color: var( --kendo-spreadsheet-selected-border, #{$kendo-spreadsheet-selected-border} );
+    }
+    .k-spreadsheet-active-cell {
+        box-shadow: inset 0 0 0 1px var( --kendo-spreadsheet-selected-bg, #{$kendo-spreadsheet-selected-bg} );
+        background-color: var( --kendo-spreadsheet-bg, #{$kendo-spreadsheet-bg} );
+
+        &.k-right {
+            box-shadow: inset 0 0 0 1px var( --kendo-spreadsheet-selected-bg, #{$kendo-spreadsheet-selected-bg} ), inset -1px 0 0 1px var( --kendo-spreadsheet-selected-bg, #{$kendo-spreadsheet-selected-bg} );
+        }
+
+        &.k-bottom {
+            box-shadow: inset 0 0 0 1px var( --kendo-spreadsheet-selected-bg, #{$kendo-spreadsheet-selected-bg} ), inset 0 -1px 0 1px var( --kendo-spreadsheet-selected-bg, #{$kendo-spreadsheet-selected-bg} );
+        }
+
+        &.k-bottom.k-right {
+            box-shadow: inset 0 0 0 1px var( --kendo-spreadsheet-selected-bg, #{$kendo-spreadsheet-selected-bg} ), inset -1px -1px 0 1px var( --kendo-spreadsheet-selected-bg, #{$kendo-spreadsheet-selected-bg} );
+        }
+    }
+
+    .k-spreadsheet .k-auto-fill {
+        border-color: var( --kendo-spreadsheet-selected-border, #{$kendo-spreadsheet-selected-border} );
+        background-color: var( --kendo-spreadsheet-selected-bg, #{$kendo-spreadsheet-selected-bg} );
+        box-shadow: inset 0 0 0 1px var( --kendo-spreadsheet-selected-bg, #{$kendo-spreadsheet-selected-bg} );
+    }
+    .k-spreadsheet .k-auto-fill-punch {
+        background-color: var( --kendo-spreadsheet-bg, #{$kendo-spreadsheet-bg} );
+    }
+
+
+    // Resize handle
+    .k-spreadsheet .k-resize-handle,
+    .k-spreadsheet .k-resize-hint-handle,
+    .k-spreadsheet .k-resize-hint-marker {
+        background-color: var( --kendo-spreadsheet-primary-bg, #{$kendo-spreadsheet-primary-bg} );
+    }
+
+    // Comments
+    .k-spreadsheet-has-comment::after {
+        border-color: var( --kendo-spreadsheet-primary-border, #{$kendo-spreadsheet-primary-border} ) var( --kendo-spreadsheet-primary-border, #{$kendo-spreadsheet-primary-border} ) transparent transparent;
+    }
+
+    // Validation
+    .k-dirty {
+        border-color: var( --kendo-spreadsheet-error-border, #{$kendo-spreadsheet-error-border} ) transparent transparent var( --kendo-spreadsheet-error-border, #{$kendo-spreadsheet-error-border} );
+    }
+
+    // Filter button
+    .k-spreadsheet .k-filter-range {
+        border-color: var( --kendo-spreadsheet-primary-border, #{$kendo-spreadsheet-primary-border} );
+    }
+    .k-spreadsheet-filter {
+        @include fill(
+            var( --kendo-spreadsheet-filter-button-text, #{$kendo-spreadsheet-filter-button-text} ),
+            var( --kendo-spreadsheet-filter-button-bg, #{$kendo-spreadsheet-filter-button-bg} ),
+            var( --kendo-spreadsheet-filter-button-border, #{$kendo-spreadsheet-filter-button-border} )
+        );
+        box-shadow: inset 0 0 0 1px var( --kendo-spreadsheet-filter-button-border, #{$kendo-spreadsheet-filter-button-border} );
+
+        &:hover {
+            @include fill(
+                var( --kendo-spreadsheet-filter-button-hover-text, #{$kendo-spreadsheet-filter-button-hover-text} ),
+                var( --kendo-spreadsheet-filter-button-hover-bg, #{$kendo-spreadsheet-filter-button-hover-bg} ),
+                var( --kendo-spreadsheet-filter-button-hover-border, #{$kendo-spreadsheet-filter-button-hover-border} )
+            );
+        }
+
+        &.k-active {
+            @include fill(
+                var( --kendo-spreadsheet-filter-button-active-text, #{$kendo-spreadsheet-filter-button-active-text} ),
+                var( --kendo-spreadsheet-filter-button-active-bg, #{$kendo-spreadsheet-filter-button-active-bg} ),
+                var( --kendo-spreadsheet-filter-button-active-border, #{$kendo-spreadsheet-filter-button-active-border} )
+            );
+        }
+
+    }
+
+    .k-spreadsheet-value-treeview-wrapper {
+        @include fill(
+            var( --kendo-spreadsheet-text, #{$kendo-spreadsheet-text} ),
+            var( --kendo-spreadsheet-bg, #{$kendo-spreadsheet-bg} ),
+            var( --kendo-spreadsheet-border, #{$kendo-spreadsheet-border} )
+        );
+    }
+
+    // Filter menu
+    .k-spreadsheet-filter-menu {
+
+        > .k-menu,
+        > .k-menu:not(.k-context-menu) {
+
+            .k-item:hover,
+            .k-item.k-hover {
+                @include fill(
+                    var( --kendo-list-item-hover-text, #{$kendo-list-item-hover-text} ),
+                    var( --kendo-list-item-hover-bg, #{$kendo-list-item-hover-bg} )
+                );
+            }
+        }
+
+        .k-columnmenu-item > .k-icon:first-child {
+            color: var( --kendo-spreadsheet-filter-menu-icon-color, #{$kendo-spreadsheet-filter-menu-icon-color} );
+        }
+    }
+
+
+
+
+    .k-spreadsheet-popup {
+
+        // Buttons
+        .k-button {}
+
+        .k-button:hover,
+        .k-button.k-hover {
             @include fill(
                 var( --kendo-list-item-hover-text, #{$kendo-list-item-hover-text} ),
                 var( --kendo-list-item-hover-bg, #{$kendo-list-item-hover-bg} )
             );
         }
-    }
-
-    .k-columnmenu-item > .k-icon:first-child {
-        color: var( --kendo-spreadsheet-filter-menu-icon-color, #{$kendo-spreadsheet-filter-menu-icon-color} );
-    }
-}
-
-
-
-
-.k-spreadsheet-popup {
-
-    // Buttons
-    .k-button {}
-
-    .k-button:hover,
-    .k-button.k-hover {
-        @include fill(
-            var( --kendo-list-item-hover-text, #{$kendo-list-item-hover-text} ),
-            var( --kendo-list-item-hover-bg, #{$kendo-list-item-hover-bg} )
-        );
-    }
-    .k-button:active,
-    .k-button.k-active,
-    .k-button.k-selected {
-        @include fill(
-            var( --kendo-list-item-selected-text, #{$kendo-list-item-selected-text} ),
-            var( --kendo-list-item-selected-bg, #{$kendo-list-item-selected-bg} )
-        );
-    }
-
-}
-
-
-
-.k-spreadsheet-insert-image-dialog {
-    border-color: var( --kendo-spreadsheet-insert-image-dialog-preview-border, #{$kendo-spreadsheet-insert-image-dialog-preview-border} );
-
-    .k-spreadsheet-has-image {
-        &:hover,
-        &.k-hover {
-            box-shadow: var( --kendo-spreadsheet-insert-image-dialog-preview-overlay-shadow, #{$kendo-spreadsheet-insert-image-dialog-preview-overlay-shadow} );
+        .k-button:active,
+        .k-button.k-active,
+        .k-button.k-selected {
+            @include fill(
+                var( --kendo-list-item-selected-text, #{$kendo-list-item-selected-text} ),
+                var( --kendo-list-item-selected-bg, #{$kendo-list-item-selected-bg} )
+            );
         }
 
-        &:hover div,
-        &.k-hover div {
-            color: var( --kendo-spreadsheet-insert-image-dialog-overlay-hovered-text, #{$kendo-spreadsheet-insert-image-dialog-overlay-hovered-text} );
+    }
+
+
+
+    .k-spreadsheet-insert-image-dialog {
+        border-color: var( --kendo-spreadsheet-insert-image-dialog-preview-border, #{$kendo-spreadsheet-insert-image-dialog-preview-border} );
+
+        .k-spreadsheet-has-image {
+            &:hover,
+            &.k-hover {
+                box-shadow: var( --kendo-spreadsheet-insert-image-dialog-preview-overlay-shadow, #{$kendo-spreadsheet-insert-image-dialog-preview-overlay-shadow} );
+            }
+
+            &:hover div,
+            &.k-hover div {
+                color: var( --kendo-spreadsheet-insert-image-dialog-overlay-hovered-text, #{$kendo-spreadsheet-insert-image-dialog-overlay-hovered-text} );
+            }
         }
     }
-}
 
-.k-spreadsheet-drawing {
-    &.k-spreadsheet-active-drawing {
-        outline-color: var( --kendo-spreadsheet-drawing-handle-outline-color, #{$kendo-spreadsheet-drawing-handle-outline-color} );
+    .k-spreadsheet-drawing {
+        &.k-spreadsheet-active-drawing {
+            outline-color: var( --kendo-spreadsheet-drawing-handle-outline-color, #{$kendo-spreadsheet-drawing-handle-outline-color} );
+        }
+
+        .k-spreadsheet-drawing-handle {
+            border-color: var( --kendo-spreadsheet-drawing-handle-border-color, #{$kendo-spreadsheet-drawing-handle-border-color} );
+            background-color: var( --kendo-spreadsheet-drawing-handle-bg, #{$kendo-spreadsheet-drawing-handle-bg} );
+        }
     }
 
-    .k-spreadsheet-drawing-handle {
-        border-color: var( --kendo-spreadsheet-drawing-handle-border-color, #{$kendo-spreadsheet-drawing-handle-border-color} );
-        background-color: var( --kendo-spreadsheet-drawing-handle-bg, #{$kendo-spreadsheet-drawing-handle-bg} );
-    }
-}
-
-.k-spreadsheet-drawing-anchor-cell {
-    background: var( --kendo-spreadsheet-drawing-anchor-bg, #{$kendo-spreadsheet-drawing-anchor-bg} );
-}
-
-
-.k-rtl .k-spreadsheet,
-.k-spreadsheet[dir="rtl"],
-[dir="rtl"] .k-spreadsheet {
-
-    .k-spreadsheet-has-comment::after {
-        border-color: var( --kendo-spreadsheet-primary-border, #{$kendo-spreadsheet-primary-border} ) transparent transparent var( --kendo-spreadsheet-primary-border, #{$kendo-spreadsheet-primary-border} );
+    .k-spreadsheet-drawing-anchor-cell {
+        background: var( --kendo-spreadsheet-drawing-anchor-bg, #{$kendo-spreadsheet-drawing-anchor-bg} );
     }
 
-    .k-dirty {
-        border-color: var( --kendo-spreadsheet-error-border, #{$kendo-spreadsheet-error-border} ) var( --kendo-spreadsheet-error-border, #{$kendo-spreadsheet-error-border} ) transparent transparent;
+
+    .k-rtl .k-spreadsheet,
+    .k-spreadsheet[dir="rtl"],
+    [dir="rtl"] .k-spreadsheet {
+
+        .k-spreadsheet-has-comment::after {
+            border-color: var( --kendo-spreadsheet-primary-border, #{$kendo-spreadsheet-primary-border} ) transparent transparent var( --kendo-spreadsheet-primary-border, #{$kendo-spreadsheet-primary-border} );
+        }
+
+        .k-dirty {
+            border-color: var( --kendo-spreadsheet-error-border, #{$kendo-spreadsheet-error-border} ) var( --kendo-spreadsheet-error-border, #{$kendo-spreadsheet-error-border} ) transparent transparent;
+        }
+
     }
 
 }
