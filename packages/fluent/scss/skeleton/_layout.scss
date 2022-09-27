@@ -68,8 +68,8 @@
         }
     }
 
-    .k-skeleton-pulse  .k-skeleton,
-    .k-skeleton-pulse .k-skeleton {
+    .k-skeleton-pulse .k-skeleton,
+    .k-skeleton-pulse.k-skeleton {
         animation: k-skeleton-pulse 1.5s ease-in-out .5s infinite;
     }
 
