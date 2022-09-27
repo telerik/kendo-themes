@@ -5,9 +5,7 @@
 
     // Tile
     .k-colorpalette-tile {
-        @include fill(
-            $border: var( --kendo-colorpalette-tile-border, #{$kendo-colorpalette-tile-border} )
-        );
+        outline-color: var( --kendo-colorpalette-tile-outline, #{$kendo-colorpalette-tile-outline} );
 
         // Hover
         &:hover,

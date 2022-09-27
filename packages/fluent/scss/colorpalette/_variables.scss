@@ -10,15 +10,15 @@ $kendo-colorpalette-font-size: var( --kendo-font-size, inherit ) !default;
 /// @group colorpalette
 $kendo-colorpalette-line-height: 0 !default;
 
-/// Border width of the color palette tile.
+/// Outline width of the color palette tile.
 /// @group colorpalette
-$kendo-colorpalette-tile-border-width: map-get( $kendo-spacing, hair ) !default;
-/// Border style of the color palette tile.
+$kendo-colorpalette-tile-outline-width: map-get( $kendo-spacing, hair ) !default;
+/// Outline style of the color palette tile.
 /// @group colorpalette
-$kendo-colorpalette-tile-border-style: solid !default;
-/// Border color of the color palette tile.
+$kendo-colorpalette-tile-outline-style: solid !default;
+/// Outline color of the color palette tile.
 /// @group colorpalette
-$kendo-colorpalette-tile-border: transparent !default;
+$kendo-colorpalette-tile-outline: transparent !default;
 /// Width of the color palette tile.
 /// @group colorpalette
 $kendo-colorpalette-tile-width: map-get( $kendo-spacing, 6 ) !default;
