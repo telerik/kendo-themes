@@ -204,7 +204,11 @@
 
         // Selected
         .k-scheduler-content tr.k-selected {
-            background-color: var( --kendo-selected-bg, #{$kendo-selected-bg} );
+            @include fill(
+                var( --kendo-scheduler-selected-text, #{$kendo-scheduler-selected-text} ),
+                var( --kendo-scheduler-selected-bg, #{$kendo-scheduler-selected-bg} ),
+                var( --kendo-scheduler-selected-border, #{$kendo-scheduler-selected-border} )
+            );
         }
 
         .k-scheduler-content tr.k-selected .k-scheduler-datecolumn,
