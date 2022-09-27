@@ -33,8 +33,8 @@
 
     // Tile
     .k-colorpalette-tile {
-        border-width: var( --kendo-colorpalette-tile-border-width, #{$kendo-colorpalette-tile-border-width} );
-        border-style: var( --kendo-colorpalette-tile-border-style, #{$kendo-colorpalette-tile-border-style} );
+        outline-width: var( --kendo-colorpalette-tile-outline-width, #{$kendo-colorpalette-tile-outline-width} );
+        outline-style: var( --kendo-colorpalette-tile-outline-style, #{$kendo-colorpalette-tile-outline-style} );
         width: var( --kendo-colorpalette-tile-width, #{$kendo-colorpalette-tile-width} );
         height: var( --kendo-colorpalette-tile-height, #{$kendo-colorpalette-tile-height} );
         box-sizing: border-box;
