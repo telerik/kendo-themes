@@ -150,20 +150,20 @@ $kendo-table-focus-shadow: $kendo-list-item-focus-shadow !default;
 
 /// Background color of selected rows in table.
 /// @group table
-$kendo-table-selected-bg: var( --kendo-selected-bg, inherit ) !default;
+$kendo-table-selected-bg: get-theme-color-var( primary-20 ) !default;
 /// Text color of selected rows in table.
 /// @group table
-$kendo-table-selected-text: var( --kendo-selected-text, inherit ) !default;
+$kendo-table-selected-text: $kendo-table-text !default;
 /// Border color of selected rows in table.
 /// @group table
-$kendo-table-selected-border: get-theme-color-var( neutral-60 ) !default;
+$kendo-table-selected-border: $kendo-table-border !default;
 
 /// Hover background color of selected rows in table.
 /// @group table
-$kendo-table-selected-hover-bg: var( --kendo-selected-hover-bg, inherit ) !default;
+$kendo-table-selected-hover-bg: get-theme-color-var( primary-30 ) !default;
 /// Hover text color of selected rows in table.
 /// @group table
-$kendo-table-selected-hover-text: var( --kendo-selected-hover-text, inherit ) !default;
+$kendo-table-selected-hover-text: $kendo-table-selected-text !default;
 /// Hover border color of selected rows in table.
 /// @group table
 $kendo-table-selected-hover-border: $kendo-table-selected-border !default;
