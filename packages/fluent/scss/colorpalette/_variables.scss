@@ -25,24 +25,24 @@ $kendo-colorpalette-tile-width: map-get( $kendo-spacing, 6 ) !default;
 /// Height of the color palette tile.
 /// @group colorpalette
 $kendo-colorpalette-tile-height: $kendo-colorpalette-tile-width !default;
-/// Focus border color of the color palette tile.
+/// Focus outline color of the color palette tile.
 /// @group colorpalette
-$kendo-colorpalette-tile-focus-border: get-theme-color-var( neutral-130 ) !default;
+$kendo-colorpalette-tile-focus-outline: get-theme-color-var( neutral-130 ) !default;
 /// Focus shadow of the color palette tile.
 /// @group colorpalette
 $kendo-colorpalette-tile-focus-shadow: inset 0 0 0 2px $white !default;
-/// Hover border color of the color palette tile.
+/// Hover outline color of the color palette tile.
 /// @group colorpalette
-$kendo-colorpalette-tile-hover-border: get-theme-color-var( neutral-20 ) !default;
+$kendo-colorpalette-tile-hover-outline: get-theme-color-var( neutral-20 ) !default;
 /// Hover shadow of the color palette tile.
 /// @group colorpalette
-$kendo-colorpalette-tile-hover-shadow: inset 0 0 0 2px $kendo-colorpalette-tile-hover-border, inset 0 0 0 4px $white !default;
-/// Selected border color of the color palette tile.
+$kendo-colorpalette-tile-hover-shadow: inset 0 0 0 2px $kendo-colorpalette-tile-hover-outline, inset 0 0 0 4px $white !default;
+/// Selected outline color of the color palette tile.
 /// @group colorpalette
-$kendo-colorpalette-tile-selected-border: $kendo-colorpalette-tile-hover-border !default;
+$kendo-colorpalette-tile-selected-outline: $kendo-colorpalette-tile-hover-outline !default;
 /// Selected shadow of the color palette tile.
 /// @group colorpalette
 $kendo-colorpalette-tile-selected-shadow: $kendo-colorpalette-tile-hover-shadow !default;
-/// Selected hover border color of the color palette tile.
+/// Selected hover outline color of the color palette tile.
 /// @group colorpalette
-$kendo-colorpalette-tile-selected-hover-border: $kendo-colorpalette-tile-focus-border !default;
+$kendo-colorpalette-tile-selected-hover-outline: $kendo-colorpalette-tile-focus-outline !default;
