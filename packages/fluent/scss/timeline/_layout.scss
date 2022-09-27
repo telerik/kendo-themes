@@ -313,6 +313,7 @@
 
         .k-timeline-card {
             height: 100%;
+            padding-inline: .5em;
         }
 
         .k-card {
@@ -322,8 +323,6 @@
         .k-timeline-events-list {
             overflow-x: hidden;
             padding-block-start: var( --kendo-timeline-track-margin-bottom, #{ $kendo-timeline-track-margin-bottom} );
-            padding-inline: 5px;
-            margin-inline: -5px;
 
             .k-timeline-scrollable-wrap {
                 position: relative;
