@@ -44,6 +44,11 @@
         tr.k-footer + tr.k-footer td {
             border-top-width: 0;
         }
+
+        .k-i-collapse,
+        .k-i-expand {
+            margin-inline-end: map-get( $kendo-spacing, 2 );
+        }
     }
 
 
