@@ -112,6 +112,15 @@
     .k-menu-vertical {
         flex-direction: column;
 
+        > .k-menu-item > .k-menu-link {
+            padding-inline-end: var( --kendo-menu-popup-item-padding-end-md, #{$kendo-menu-popup-item-padding-end-md} );
+        }
+
+        > .k-menu-item > .k-menu-link > .k-menu-expand-arrow {
+            margin-inline-start: var( --kendo-menu-popup-item-icon-margin-start-md, #{$kendo-menu-popup-item-icon-margin-start-md} );
+            margin-inline-end: var( --kendo-menu-popup-item-icon-margin-end-md, #{$kendo-menu-popup-item-icon-margin-end-md} );
+        }
+
         > .k-menu-item + .k-menu-item {
             margin-block-start: var( --kendo-menu-item-spacing, #{$kendo-menu-item-spacing} );
         }
