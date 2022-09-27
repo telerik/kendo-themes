@@ -44,6 +44,7 @@
         position: relative;
         user-select: none;
 
+        &:focus,
         &:focus-visible,
         &.k-focus {
             outline-offset: var( --kendo-menu-item-focus-outline-offset, #{$kendo-menu-item-focus-outline-offset} );
@@ -192,6 +193,7 @@
     .k-menu.k-context-menu {
 
         .k-item {
+            &:focus,
             &:focus-visible,
             &.k-focus {
 
