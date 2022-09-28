@@ -47,7 +47,7 @@ $kendo-bottom-nav-item-min-height: calc( var( --kendo-icon-size, 1rem ) + #{$ken
 $kendo-bottom-nav-item-border-radius: var( --kendo-border-radius-md, 0 ) !default;
 /// Spacing of the bottom navigation item.
 /// @group bottom-navigation
-$kendo-bottom-nav-item-gap: 0 map-get( $kendo-spacing, 1 ) !default;
+$kendo-bottom-nav-item-gap: map-get( $kendo-spacing, 1 ) !default;
 /// Offset of the focused bottom navigation item.
 /// @group bottom-nav
 $kendo-bottom-nav-item-focus-offset: map-get( $kendo-spacing, thin ) !default;
