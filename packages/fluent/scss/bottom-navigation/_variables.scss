@@ -27,6 +27,10 @@ $kendo-bottom-nav-line-height: var( --kendo-line-height-md, normal ) !default;
 /// @group bottom-navigation
 $kendo-bottom-nav-letter-spacing: .2px !default;
 
+/// Size of the focused bottom navigation item icon.
+/// @group bottom-nav
+$kendo-bottom-nav-item-icon-size: map-get( $kendo-spacing, 6 ) !default;
+
 /// Horizontal padding of the bottom navigation item.
 /// @group bottom-navigation
 $kendo-bottom-nav-item-padding-x: map-get( $kendo-spacing, 2 ) !default;
@@ -41,7 +45,7 @@ $kendo-bottom-nav-item-min-width: 72px !default;
 $kendo-bottom-nav-item-max-width: none !default;
 /// Minimum height of the bottom navigation item.
 /// @group bottom-navigation
-$kendo-bottom-nav-item-min-height: calc( var( --kendo-icon-size, 1rem ) + #{$kendo-padding-x * 2} - #{$kendo-bottom-nav-padding-x * 2} ) !default;
+$kendo-bottom-nav-item-min-height: calc( #{$kendo-bottom-nav-item-icon-size} + #{$kendo-bottom-nav-item-icon-size} + (#{$kendo-bottom-nav-item-padding-y} * 2) ) !default;
 /// Border radius of the bottom navigation item.
 /// @group bottom-navigation
 $kendo-bottom-nav-item-border-radius: var( --kendo-border-radius-md, 0 ) !default;
@@ -64,10 +68,6 @@ $kendo-bottom-nav-item-icon-margin-y: map-get( $kendo-spacing, 2 ) !default;
 /// Horizontal margin of the focused bottom navigation item icon.
 /// @group bottom-nav
 $kendo-bottom-nav-item-icon-margin-x: $kendo-bottom-nav-item-icon-margin-y !default;
-
-/// Size of the focused bottom navigation item icon.
-/// @group bottom-nav
-$kendo-bottom-nav-item-icon-size: map-get( $kendo-spacing, 6 ) !default;
 
 /// Box shadow of the bottom navigation.
 /// @group bottom-nav
