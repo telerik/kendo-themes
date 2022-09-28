@@ -92,7 +92,7 @@ $_tc-bottom-nav-matrix: (
         disabled: ( inherit, 40, var( --kendo-disabled-border, inherit ))
     ),
     flat: (
-        normal: ($white, get-theme-color-var( neutral-130 ), transparent),
+        normal: ($white, get-theme-color-var( neutral-130 ), get-theme-color-var( neutral-30 )),
         focus: (inherit, 100, transparent, 100),
         active: (inherit, 100, transparent),
         disabled: (initial, var( --kendo-disabled-text, inherit ), initial)
@@ -104,7 +104,7 @@ $_tc-bottom-nav-warning-matrix: (
         normal: (100, get-theme-color-var( neutral-160 ), 100),
         focus: (100, get-theme-color-var( neutral-160 ), 100, $white),
         active: (120, get-theme-color-var( neutral-190 ), 120),
-        disabled: (inherit, get-theme-color-var( neutral-120 ) , var( --kendo-disabled-border, inherit ))
+        disabled: (inherit, get-theme-color-var( neutral-120 ), var( --kendo-disabled-border, inherit ))
     ),
     flat: (
         normal: ($white, get-theme-color-var( neutral-130 ), 100),
@@ -122,7 +122,7 @@ $_tc-bottom-nav-dark-matrix: (
         disabled: (inherit, 60 , var( --kendo-disabled-border, inherit ))
     ),
     flat: (
-        normal: ($white, get-theme-color-var( neutral-130 ), transparent),
+        normal: ($white, get-theme-color-var( neutral-130 ), get-theme-color-var( neutral-140 )),
         focus: (inherit, 160, transparent, 130),
         active: (inherit, 170, transparent),
         disabled: (inherit, var( --kendo-disabled-text, inherit ), initial)
