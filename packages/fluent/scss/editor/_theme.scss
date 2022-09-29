@@ -77,6 +77,13 @@
                 var( --kendo-editor-ct-popup-border, #{$kendo-editor-ct-popup-border} )
             );
         }
+
+        .k-disabled:not(.k-selected) {
+            @include disabled(
+                $bg: var( --kendo-disabled-bg, inherit ),
+                $border: var( --kendo-disabled-border, inherit )
+            );
+        }
     }
 
     // Content

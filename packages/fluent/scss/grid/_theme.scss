@@ -484,6 +484,14 @@
         .k-check-all-wrap {
             @include fill( $border: $kendo-popup-border );
         }
+
+        .k-listgroup-item {
+            &.k-disabled {
+                @include disabled(
+                    $bg: var( --kendo-disabled-bg, inherit )
+                );
+            }
+        }
     }
 
 
