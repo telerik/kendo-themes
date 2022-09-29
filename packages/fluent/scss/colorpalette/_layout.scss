@@ -21,6 +21,10 @@
         *::after {
             box-sizing: border-box;
         }
+
+        &.k-disabled {
+            opacity: .3;
+        }
     }
 
     // Table
