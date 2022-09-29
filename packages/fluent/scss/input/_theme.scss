@@ -26,7 +26,7 @@
             --INTERNAL--kendo-input-border: var( --kendo-input-focus-border );
 
             &::after {
-                border-color: var( --kendo-input-focus-border );
+                border-color: var( --kendo-input-focus-border, transparent );
             }
         }
 
