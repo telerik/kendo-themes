@@ -30,6 +30,12 @@
             &.k-focus {
                 color: var( --kendo-calendar-today-nav-hover-text, #{$kendo-calendar-today-nav-hover-text});
             }
+
+            &.k-disabled {
+                @include disabled(
+                    $color: var( --kendo-disabled-text, inherit )
+                );
+            }
         }
 
 
