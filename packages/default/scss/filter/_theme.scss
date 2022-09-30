@@ -18,6 +18,12 @@
         .k-filter-lines .k-filter-item:last-child > * > .k-filter-toolbar::after {
             background-color: $component-border;
         }
+
+        // Focus
+        .k-toolbar:focus,
+        .k-toolbar.k-focus {
+            @include box-shadow( $filter-toolbar-focus-shadow );
+        }
     }
 
 }
