@@ -21,38 +21,32 @@
         aspect-ratio: auto;
         flex: none;
 
-        &::before {
-            content:"";
-            width: var( --kendo-split-button-arrow-delimiter-line-size, #{$kendo-split-button-arrow-delimiter-line-size} );
-            height: var( --kendo-split-button-arrow-delimiter-size, #{$kendo-split-button-arrow-delimiter-size} );
-            position: absolute;
-            top: calc( ( 100% - #{$kendo-split-button-arrow-delimiter-size} ) / 2 );
-            left: 0;
-            background: var( --kendo-split-button-arrow-delimiter-bg, #{$kendo-split-button-arrow-delimiter-bg} );
-            z-index: 2;
-        }
-
-        [dir="rtl"] &::before,
-        .k-rtl &::before {
-            right: 0;
-            left: auto;
-        }
-
-        &.k-button-sm {
-            padding: var( --kendo-split-button-arrow-padding-y-sm, #{$kendo-split-button-arrow-padding-y-sm} );
-        }
-
-        &.k-button-md {
-            padding: var( --kendo-split-button-arrow-padding-y-md, #{$kendo-split-button-arrow-padding-y-md} );
-        }
-
-        &.k-button-lg {
-            padding: var( --kendo-split-button-arrow-padding-y-lg, #{$kendo-split-button-arrow-padding-y-lg} );
-        }
-
         .k-button-icon {
             min-width: 0;
+
+            &::after {
+                content:"";
+                width: var( --kendo-split-button-arrow-delimiter-line-size, #{$kendo-split-button-arrow-delimiter-line-size} );
+                height: var( --kendo-split-button-arrow-delimiter-size, #{$kendo-split-button-arrow-delimiter-size} );
+                position: absolute;
+                top: calc( ( 100% - #{$kendo-split-button-arrow-delimiter-size} ) / 2 );
+                background: var( --kendo-split-button-arrow-delimiter-bg, #{$kendo-split-button-arrow-delimiter-bg} );
+                z-index: 2;
+            }
+        }
+
+        // Sizes
+        @each $size, $size-props in $kendo-split-button-sizes {
+
+            &.k-button-#{$size} {
+                padding: var( --kendo-split-button-arrow-padding-y-#{$size}, #{$size-props} );
+
+                .k-button-icon {
+                    &::after {
+                        inset-inline-start: calc( var( --kendo-split-button-delimiter-offset-#{$size}, #{$size-props} ) * -1 );
+                    }
+                }
+            }
         }
     }
-
 }

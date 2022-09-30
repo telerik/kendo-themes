@@ -5,9 +5,7 @@
 
     // Tile
     .k-colorpalette-tile {
-        @include fill(
-            $border: var( --kendo-colorpalette-tile-border, #{$kendo-colorpalette-tile-border} )
-        );
+        outline-color: var( --kendo-colorpalette-tile-outline, #{$kendo-colorpalette-tile-outline} );
 
         // Hover
         &:hover,
@@ -15,9 +13,7 @@
             @include box-shadow(
                 var( --kendo-colorpalette-tile-hover-shadow, #{$kendo-colorpalette-tile-hover-shadow} )
             );
-            @include fill(
-                $border: var( --kendo-colorpalette-tile-hover-border, #{$kendo-colorpalette-tile-hover-border} )
-            );
+            outline-color: var( --kendo-colorpalette-tile-hover-outline, #{$kendo-colorpalette-tile-hover-outline} );
         }
 
         // Focus
@@ -26,9 +22,7 @@
             @include box-shadow(
                 var( --kendo-colorpalette-tile-focus-shadow, #{$kendo-colorpalette-tile-focus-shadow} )
             );
-            @include fill(
-                $border: var( --kendo-colorpalette-tile-focus-border, #{$kendo-colorpalette-tile-focus-border} )
-            );
+            outline-color: var( --kendo-colorpalette-tile-focus-outline, #{$kendo-colorpalette-tile-focus-outline} );
         }
 
         // Selected
@@ -36,17 +30,13 @@
             @include box-shadow(
                 var( --kendo-colorpalette-tile-selected-shadow, #{$kendo-colorpalette-tile-selected-shadow} )
             );
-            @include fill(
-                $border: var( --kendo-colorpalette-tile-selected-border, #{$kendo-colorpalette-tile-selected-border} )
-            );
+            outline-color: var( --kendo-colorpalette-tile-selected-outline, #{$kendo-colorpalette-tile-selected-outline} );
         }
 
         // Selected hover/focus
         &.k-selected:hover,
         &.k-selected:focus {
-            @include fill(
-                $border: var( --kendo-colorpalette-tile-selected-hover-border, #{$kendo-colorpalette-tile-selected-hover-border} )
-            );
+            outline-color: var( --kendo-colorpalette-tile-selected-hover-outline, #{$kendo-colorpalette-tile-selected-hover-outline} );
         }
     }
 

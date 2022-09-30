@@ -20,7 +20,7 @@ const paths = {
     sass: {
         all: "packages/*/scss/**/*.scss",
         assets: "packages/*/scss/**/*.{png,gif,ttf,woff}",
-        themes: "packages/!(html)",
+        themes: "packages/!(html|html-spec)",
         theme: "scss/all.scss",
         swatches: "lib/swatches/*.json",
         inline: "dist/all.scss",

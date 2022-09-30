@@ -78,8 +78,11 @@
                 }
             }
 
+            &:focus,
             &:focus-visible,
             &.k-focus {
+
+                outline-color: transparent;
 
                 > .k-link {
                     outline-color: var( --kendo-menu-popup-item-focus-outline, #{$kendo-menu-popup-item-focus-outline} );

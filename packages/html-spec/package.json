@@ -1,0 +1,33 @@
+{
+  "name": "@progress/kendo-html-spec",
+  "description": "Specification for Kendo UI component rendering in JSON format",
+  "version": "5.8.2-dev.2",
+  "author": "Progress",
+  "license": "Apache-2.0",
+  "keywords": [
+    "Kendo UI",
+    "Theme",
+    "HTML",
+    "Specification"
+  ],
+  "main": "src/index.js",
+  "files": [
+    "src/**/*.js",
+    "src/**/*.json"
+  ],
+  "homepage": "https://github.com/telerik/kendo-themes/tree/master/packages/html-spec",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/telerik/kendo-themes.git",
+    "directory": "packages/html-spec"
+  },
+  "bugs": {
+    "url": "https://github.com/telerik/kendo-themes/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {},
+  "dependencies": {},
+  "devDependencies": {}
+}

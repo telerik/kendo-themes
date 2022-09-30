@@ -41,7 +41,6 @@
             position: relative;
             flex: 1 1 auto;
             user-select: none;
-            overflow: hidden;
         }
 
         .k-hsv-gradient {
@@ -85,7 +84,9 @@
         &.k-slider-vertical .k-slider-track {
             width: var( --kendo-colorgradient-slider-track-size, #{$kendo-colorgradient-slider-track-size} );
             border-radius: var( --kendo-colorgradient-slider-border-radius, #{$kendo-colorgradient-slider-border-radius} );
-            margin-inline-start: calc( -1 * (var( --kendo-colorgradient-slider-track-size, #{$kendo-colorgradient-slider-track-size} ) / 2) );
+
+            // Required since the track is absolutely left positioned
+            margin-left: calc( -1 * (var( --kendo-colorgradient-slider-track-size, #{$kendo-colorgradient-slider-track-size} ) / 2) );
         }
 
         &.k-slider-horizontal {

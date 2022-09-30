@@ -8,6 +8,13 @@
     <script src="/packages/html/assets/scripts.js"></script>
 </head>
 <body id="app" class="k-body">
+    <style>
+        .k-ripple-container .k-checkbox:focus::after,
+        .k-ripple-container .k-checkbox.k-focus::after {
+            transform: translate(-50%, -50%) scale(1);
+        }
+
+    </style>
     <div id="test-area" class="k-d-grid k-grid-cols-4">
         <span>Checkbox</span>
         <span>In label</span>
