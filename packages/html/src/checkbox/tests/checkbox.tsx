@@ -6,8 +6,16 @@ const root = ReactDOM.createRoot(
     document.getElementById('app') as HTMLElement
 );
 
+const styles = `
+    .k-ripple-container .k-checkbox:focus::after,
+    .k-ripple-container .k-checkbox.k-focus::after {
+        transform: translate(-50%, -50%) scale(1);
+    }
+`;
+
 root.render(
     <>
+        <style>{styles}</style>
         <div id="test-area" className="k-d-grid k-grid-cols-4">
 
             <span>Checkbox</span>
