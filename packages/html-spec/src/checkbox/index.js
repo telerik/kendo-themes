@@ -1,3 +1,3 @@
-import componentJson from './checkbox.json';
+const componentJson = require('./checkbox.json');
 
-export const [ checkbox ] = componentJson;
+exports.checkbox = componentJson;

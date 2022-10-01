@@ -1,3 +1,3 @@
-import componentJson from './combobox.json';
+const componentJson = require('./combobox.json');
 
-export const [ combobox, comboboxPopup ] = componentJson;
+exports.combobox = componentJson;
