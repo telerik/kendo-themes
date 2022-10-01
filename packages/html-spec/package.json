@@ -12,6 +12,7 @@
   ],
   "main": "src/index.js",
   "files": [
+    "dist/**/*.json",
     "src/**/*.js",
     "src/**/*.json"
   ],
@@ -27,5 +28,8 @@
   "publishConfig": {
     "access": "public"
   },
-  "scripts": {}
+  "scripts": {
+    "build": "node ./scripts/build.js",
+    "prepublishOnly": "npm run build"
+  }
 }
