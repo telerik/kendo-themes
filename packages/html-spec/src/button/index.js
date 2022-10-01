@@ -1,3 +1,3 @@
-import componentJson from './button.json';
+const componentJson = require('./button.json');
 
-export const [ button ] = componentJson;
+exports.button = componentJson;

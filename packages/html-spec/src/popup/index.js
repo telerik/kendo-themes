@@ -1,3 +1,3 @@
-import componentJson from './popup.json';
+const componentJson = require('./popup.json');
 
-export const [ popup ] = componentJson;
+exports.popup = componentJson;

@@ -1,6 +1,8 @@
-export * from './button';
-export * from './checkbox';
-export * from './combobox';
-export * from './icon';
-export * from './list';
-export * from './popup';
+module.exports = {
+    ...require('./button'),
+    ...require('./checkbox'),
+    ...require('./combobox'),
+    ...require('./icon'),
+    ...require('./list'),
+    ...require('./popup')
+};

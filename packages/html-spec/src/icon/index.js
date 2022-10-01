@@ -1,3 +1,3 @@
-import componentJson from './icon.json';
+const componentJson = require('./icon.json');
 
-export const [ icon ] = componentJson;
+exports.icon = componentJson;
