@@ -197,7 +197,7 @@
         width: 0;
         height: var( --kendo-time-list-highlight-height, $kendo-time-list-highlight-height );
         align-self: center;
-        display: inline-flex;
+        display: var( --kendo-time-list-separator-display, #{$kendo-time-list-separator-display} );
         justify-content: center;
         align-items: center;
         position: relative;
