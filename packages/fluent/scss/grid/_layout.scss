@@ -1090,7 +1090,7 @@
 
         .k-actions {
             margin: 0;
-            padding-block-start: var( --kendo-filter-menu-container-padding-y, #{$kendo-filter-menu-container-padding-y} );
+            padding-block-start: calc( var( --kendo-filter-menu-container-padding-y, #{$kendo-filter-menu-container-padding-y} ) - var( --kendo-grid-column-menu-spacing, #{$kendo-grid-column-menu-spacing} ) ) ;
             padding-block-end: 0;
             padding-inline: 0;
         }
