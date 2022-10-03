@@ -13,6 +13,12 @@
             border-color: var( --kendo-toolbar-separator-border, #{$kendo-toolbar-separator-border} );
         }
 
+        // Template item
+        .k-toolbar-item:focus,
+        .k-toolbar-item.k-focus {
+            outline-color: var( --kendo-toolbar-item-focus-outline-color, #{$kendo-toolbar-item-focus-outline-color} );
+        }
+
     }
 
     // Overflow container
