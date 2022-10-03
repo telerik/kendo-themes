@@ -1,7 +1,7 @@
 {
   "name": "@progress/kendo-theme-classic",
   "description": "Sass port of less based themes for Kendo UI theme",
-  "version": "5.8.2-dev.2",
+  "version": "5.8.2-dev.3",
   "author": "Progress",
   "license": "Apache-2.0",
   "keywords": [
@@ -43,7 +43,7 @@
     "postpublish": "echo 'no postpublish for classic theme'"
   },
   "dependencies": {
-    "@progress/kendo-theme-default": "^5.8.2-dev.2"
+    "@progress/kendo-theme-default": "^5.8.2-dev.3"
   },
   "devDependencies": {
     "sass-build": "^1.0.0"
