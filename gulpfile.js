@@ -139,7 +139,8 @@ gulp.task("docs", () => {
     let themes = glob.sync(paths.sass.themes, {
         ignore: [
             'packages/fluent',
-            'packages/utils'
+            'packages/utils',
+            'packages/core'
         ]
     });
 
@@ -219,7 +220,8 @@ function resolveVars() {
     let themes = glob.sync(paths.sass.themes, {
         ignore: [
             'packages/fluent',
-            'packages/utils'
+            'packages/utils',
+            'packages/core'
         ]
     });
     const cwd = process.cwd();
