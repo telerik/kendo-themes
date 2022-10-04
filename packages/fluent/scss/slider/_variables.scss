@@ -103,7 +103,7 @@ $kendo-slider-thumb-active-bg: $kendo-slider-thumb-hover-bg !default;
 $kendo-slider-thumb-active-text: inherit !default;
 /// The active border color of the slider thumb.
 /// @group slider
-$kendo-slider-thumb-active-border: $kendo-slider-thumb-hover-border !default;
+$kendo-slider-thumb-active-border: get-theme-color-var( primary-130 ) !default;
 /// The active gradient of the slider thumb.
 /// @group slider
 $kendo-slider-thumb-active-gradient: transparent !default;
@@ -116,7 +116,7 @@ $kendo-slider-thumb-focus-bg: $kendo-slider-thumb-hover-bg !default;
 $kendo-slider-thumb-focus-text: inherit !default;
 /// The focus border color of the slider thumb.
 /// @group slider
-$kendo-slider-thumb-focus-border: $kendo-slider-thumb-hover-border !default;
+$kendo-slider-thumb-focus-border: $kendo-slider-thumb-active-border !default;
 /// The focus gradient of the slider thumb.
 /// @group slider
 $kendo-slider-thumb-focus-gradient: transparent !default;
