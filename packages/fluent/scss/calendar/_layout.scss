@@ -412,7 +412,6 @@
             &::before {
                 content: "";
                 position: absolute;
-                z-index: 1;
                 inset: 0px;
                 border-style: solid;
                 border-width: var( --INTERNAL--kendo-calendar-range-border-width, 0 );
