@@ -353,6 +353,10 @@
         }
     }
 
+    // Alias used in jQuery
+    .k-reorder-cue {
+        @extend .k-grouping-dropclue;
+    }
 
     // Grid header / footer
     .k-grid-header-wrap,
