@@ -66,7 +66,7 @@ The following table lists the available variables for customization.
     <td>Number</td>
 <td>
 
-`map-get( $spacing, 4 )`
+`k-map-get( $spacing, 4 )`
 
 </td>
 <td>
@@ -84,7 +84,7 @@ The following table lists the available variables for customization.
     <td>Number</td>
 <td>
 
-`map-get( $spacing, 2 )`
+`k-map-get( $spacing, 2 )`
 
 </td>
 <td>
@@ -192,7 +192,7 @@ The following table lists the available variables for customization.
     <td>Map</td>
 <td>
 
-`map-merge(
+`k-map-merge(
     $kendo-theme-colors,
     ( "base": $base-bg )
 )`
@@ -669,7 +669,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`try-shade( $body-bg, 12% )`
+`k-try-shade( $body-bg, 12% )`
 
 </td>
 <td>

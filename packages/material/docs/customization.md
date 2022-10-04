@@ -34,7 +34,7 @@ The following table lists the available variables for customizing the Material t
     <td>Number</td>
 <td>
 
-`map-get( $spacing, 1 )`
+`k-map-get( $spacing, 1 )`
 
 </td>
 <td>
@@ -52,7 +52,7 @@ The following table lists the available variables for customizing the Material t
     <td>Color</td>
 <td>
 
-`map-get( $theme, base-bg )`
+`k-map-get( $theme, base-bg )`
 
 </td>
 <td>
@@ -72,7 +72,7 @@ The following table lists the available variables for customizing the Material t
     <td>Color</td>
 <td>
 
-`map-get($theme, component-text)`
+`k-map-get( $theme, component-text )`
 
 </td>
 <td>
@@ -92,7 +92,7 @@ The following table lists the available variables for customizing the Material t
     <td>Color</td>
 <td>
 
-`rgba( if($theme-type == dark, white, black), .08 )`
+`rgba( if( $theme-type == dark, white, black ), .08 )`
 
 </td>
 <td>
@@ -130,7 +130,7 @@ The following table lists the available variables for customizing the Material t
     <td>Color</td>
 <td>
 
-`map-get( $theme, hover-bg )`
+`k-map-get( $theme, hover-bg )`
 
 </td>
 <td>
@@ -170,7 +170,7 @@ The following table lists the available variables for customizing the Material t
     <td>Color</td>
 <td>
 
-`rgba( if($theme-type == dark, white, black), .15 )`
+`rgba( if( $theme-type == dark, white, black ), .15 )`
 
 </td>
 <td>
@@ -398,9 +398,9 @@ The following table lists the available variables for customizing the Material t
 <td>
 
 `(
-    sm: map-get( $spacing, 4 ),
-    md: map-get( $spacing, 8 ),
-    lg: map-get( $spacing, 16 )
+    sm: k-map-get( $spacing, 4 ),
+    md: k-map-get( $spacing, 8 ),
+    lg: k-map-get( $spacing, 16 )
 )`
 
 </td>
@@ -494,7 +494,7 @@ The following table lists the available variables for customizing the Material t
     <td>Number</td>
 <td>
 
-`map-get( $spacing, 1 )`
+`k-map-get( $spacing, 1 )`
 
 </td>
 <td>
@@ -512,7 +512,7 @@ The following table lists the available variables for customizing the Material t
     <td>Number</td>
 <td>
 
-`map-get( $spacing, 1 )`
+`k-map-get( $spacing, 1 )`
 
 </td>
 <td>
@@ -681,7 +681,7 @@ The following table lists the available variables for customizing the Material t
     <td>Number</td>
 <td>
 
-`map-get( $spacing, 4 )`
+`k-map-get( $spacing, 4 )`
 
 </td>
 <td>
@@ -699,7 +699,7 @@ The following table lists the available variables for customizing the Material t
     <td>Number</td>
 <td>
 
-`map-get( $spacing, 2 )`
+`k-map-get( $spacing, 2 )`
 
 </td>
 <td>
@@ -807,7 +807,7 @@ The following table lists the available variables for customizing the Material t
     <td>Map</td>
 <td>
 
-`map-merge(
+`k-map-merge(
     $kendo-theme-colors,
     ( "base": $base-bg )
 )`
@@ -1284,7 +1284,7 @@ The following table lists the available variables for customizing the Material t
     <td>Color</td>
 <td>
 
-`try-shade( $body-bg, 12% )`
+`k-try-shade( $body-bg, 12% )`
 
 </td>
 <td>
@@ -1840,7 +1840,7 @@ The following table lists the available variables for customizing the Material t
     <td>Color</td>
 <td>
 
-`contrast-wcag( $kendo-checkbox-checked-bg )`
+`k-contrast-color( $kendo-checkbox-checked-bg )`
 
 </td>
 <td>
@@ -2048,7 +2048,7 @@ The following table lists the available variables for customizing the Material t
     <td>Color</td>
 <td>
 
-`try-shade( $component-bg, 4 )`
+`k-try-shade( $component-bg, 4 )`
 
 </td>
 <td>
@@ -2088,14 +2088,14 @@ The following table lists the available variables for customizing the Material t
     <td>Color</td>
 <td>
 
-`contrast-wcag( $kendo-checkbox-disabled-checked-bg )`
+`k-contrast-color( $kendo-checkbox-disabled-checked-bg )`
 
 </td>
 <td>
 
-<span class="color-preview" style="background-color: white"></span>
+<span class="color-preview" style="background-color: black"></span>
 
-`white`
+`black`
 
 </td>
 </tr>
@@ -2294,7 +2294,7 @@ The following table lists the available variables for customizing the Material t
     <td>Number</td>
 <td>
 
-`map-get( $spacing, 1 )`
+`k-map-get( $spacing, 1 )`
 
 </td>
 <td>
@@ -2312,7 +2312,7 @@ The following table lists the available variables for customizing the Material t
     <td>Number</td>
 <td>
 
-`map-get( $spacing, 4 )`
+`k-map-get( $spacing, 4 )`
 
 </td>
 <td>
@@ -2443,7 +2443,7 @@ The following table lists the available variables for customizing the Material t
     <td>Number</td>
 <td>
 
-`map-get( $spacing, 1 )`
+`k-map-get( $spacing, 1 )`
 
 </td>
 <td>
@@ -2461,7 +2461,7 @@ The following table lists the available variables for customizing the Material t
     <td>Number</td>
 <td>
 
-`map-get( $spacing, 1 )`
+`k-map-get( $spacing, 1 )`
 
 </td>
 <td>
@@ -2479,7 +2479,7 @@ The following table lists the available variables for customizing the Material t
     <td>Number</td>
 <td>
 
-`map-get( $spacing, 1 )`
+`k-map-get( $spacing, 1 )`
 
 </td>
 <td>
@@ -2592,10 +2592,10 @@ The following table lists the available variables for customizing the Material t
 
 `(
     "base": $kendo-chip-base-bg,
-    "error": map-get( $kendo-theme-colors, "error" ),
-    "info": map-get( $kendo-theme-colors, "info" ),
-    "warning": map-get( $kendo-theme-colors, "warning" ),
-    "success": map-get( $kendo-theme-colors, "success" )
+    "error": k-map-get( $kendo-theme-colors, "error" ),
+    "info": k-map-get( $kendo-theme-colors, "info" ),
+    "warning": k-map-get( $kendo-theme-colors, "warning" ),
+    "success": k-map-get( $kendo-theme-colors, "success" )
 )`
 
 </td>
@@ -2614,7 +2614,7 @@ The following table lists the available variables for customizing the Material t
     <td>Color</td>
 <td>
 
-`try-tint( $kendo-chip-base-bg, 90% )`
+`k-try-tint( $kendo-chip-base-bg, 90% )`
 
 </td>
 <td>
@@ -2654,7 +2654,7 @@ The following table lists the available variables for customizing the Material t
     <td>Color</td>
 <td>
 
-`try-tint( $kendo-chip-base-bg, 70% )`
+`k-try-tint( $kendo-chip-base-bg, 70% )`
 
 </td>
 <td>
@@ -2692,7 +2692,7 @@ The following table lists the available variables for customizing the Material t
     <td>Color</td>
 <td>
 
-`try-tint( $kendo-chip-base-bg, 92% )`
+`k-try-tint( $kendo-chip-base-bg, 92% )`
 
 </td>
 <td>
@@ -2730,7 +2730,7 @@ The following table lists the available variables for customizing the Material t
     <td>Color</td>
 <td>
 
-`try-tint( $kendo-chip-base-bg, 84% )`
+`k-try-tint( $kendo-chip-base-bg, 84% )`
 
 </td>
 <td>
@@ -2768,7 +2768,7 @@ The following table lists the available variables for customizing the Material t
     <td>Color</td>
 <td>
 
-`try-tint( $kendo-chip-base-bg, 76% )`
+`k-try-tint( $kendo-chip-base-bg, 76% )`
 
 </td>
 <td>
@@ -2904,7 +2904,7 @@ The following table lists the available variables for customizing the Material t
     <td>Color</td>
 <td>
 
-`contrast-wcag( $kendo-chip-base-bg )`
+`k-contrast-color( $kendo-chip-base-bg )`
 
 </td>
 <td>
@@ -2965,9 +2965,9 @@ The following table lists the available variables for customizing the Material t
 <td>
 
 `(
-    sm: map-get( $spacing, 1 ),
-    md: map-get( $spacing, 1 ),
-    lg: map-get( $spacing, 1 )
+    sm: k-map-get( $spacing, 1 ),
+    md: k-map-get( $spacing, 1 ),
+    lg: k-map-get( $spacing, 1 )
 )`
 
 </td>
@@ -3296,7 +3296,7 @@ The following table lists the available variables for customizing the Material t
     <td>Color</td>
 <td>
 
-`map-get($theme, component-bg)`
+`k-map-get( $theme, component-bg )`
 
 </td>
 <td>
@@ -3316,7 +3316,7 @@ The following table lists the available variables for customizing the Material t
     <td>Color</td>
 <td>
 
-`map-get($theme, component-text)`
+`k-map-get( $theme, component-text )`
 
 </td>
 <td>
@@ -3336,7 +3336,7 @@ The following table lists the available variables for customizing the Material t
     <td>Color</td>
 <td>
 
-`map-get($theme, component-border)`
+`k-map-get( $theme, component-border )`
 
 </td>
 <td>
@@ -3539,7 +3539,7 @@ The following table lists the available variables for customizing the Material t
     <td>Number</td>
 <td>
 
-`map-get( $spacing, 1 ) * 1.5`
+`k-map-get( $spacing, 1 ) * 1.5`
 
 </td>
 <td>
@@ -3575,7 +3575,7 @@ The following table lists the available variables for customizing the Material t
     <td>Number</td>
 <td>
 
-`map-get( $spacing, 4 )`
+`k-map-get( $spacing, 4 )`
 
 </td>
 <td>
@@ -3593,7 +3593,7 @@ The following table lists the available variables for customizing the Material t
     <td>Number</td>
 <td>
 
-`map-get( $spacing, 1 )`
+`k-map-get( $spacing, 1 )`
 
 </td>
 <td>
@@ -3701,7 +3701,7 @@ The following table lists the available variables for customizing the Material t
     <td>Number</td>
 <td>
 
-`map-get( $spacing, 2 )`
+`k-map-get( $spacing, 2 )`
 
 </td>
 <td>
@@ -3827,7 +3827,7 @@ The following table lists the available variables for customizing the Material t
     <td>List</td>
 <td>
 
-`0px 3px 5px -1px rgba(0, 0, 0, .2), 0px 6px 10px rgba(0, 0, 0, .14), 0px 1px 18px rgba(0, 0, 0, .12)`
+`0px 3px 5px -1px rgba( black, .2 ), 0px 6px 10px rgba( black, .14 ), 0px 1px 18px rgba( black, .12 )`
 
 </td>
 <td>
@@ -3845,7 +3845,7 @@ The following table lists the available variables for customizing the Material t
     <td>List</td>
 <td>
 
-`0px 3px 5px -1px try-tint(rgba(0, 0, 0, .2), .5), 0px 6px 10px try-tint(rgba(0, 0, 0, .14), .5), 0px 1px 18px try-tint(rgba(0, 0, 0, .12), .5)`
+`0px 3px 5px -1px k-try-tint( rgba( black, .2 ), .5 ), 0px 6px 10px k-try-tint( rgba( black, .14 ), .5 ), 0px 1px 18px k-try-tint( rgba( black, .12 ), .5 )`
 
 </td>
 <td>
@@ -3863,7 +3863,7 @@ The following table lists the available variables for customizing the Material t
     <td>List</td>
 <td>
 
-`0px 5px 5px -3px rgba(0, 0, 0, .2), 0px 8px 10px 1px rgba(0, 0, 0, .14), 0px 3px 14px 2px rgba(0, 0, 0, .12)`
+`0px 5px 5px -3px rgba( black, .2 ), 0px 8px 10px 1px rgba( black, .14 ), 0px 3px 14px 2px rgba( black, .12 )`
 
 </td>
 <td>
@@ -4330,7 +4330,7 @@ The following table lists the available variables for customizing the Material t
     <td>Color</td>
 <td>
 
-`rgba( contrast-wcag( $grid-bg ), .07 )`
+`rgba( k-contrast-color( $grid-bg ), .07 )`
 
 </td>
 <td>
@@ -4388,7 +4388,7 @@ The following table lists the available variables for customizing the Material t
     <td>Color</td>
 <td>
 
-`rgba( contrast-wcag( $grid-bg ), .04 )`
+`rgba( k-contrast-color( $grid-bg ), .04 )`
 
 </td>
 <td>
@@ -4560,7 +4560,7 @@ The following table lists the available variables for customizing the Material t
     <td>Number</td>
 <td>
 
-`map-get( $spacing, 4 )`
+`k-map-get( $spacing, 4 )`
 
 </td>
 <td>
@@ -4578,7 +4578,7 @@ The following table lists the available variables for customizing the Material t
     <td>Number</td>
 <td>
 
-`map-get( $spacing, 2 )`
+`k-map-get( $spacing, 2 )`
 
 </td>
 <td>
@@ -5562,7 +5562,7 @@ The following table lists the available variables for customizing the Material t
     <td>Number</td>
 <td>
 
-`map-get( $spacing, 4 )`
+`k-map-get( $spacing, 4 )`
 
 </td>
 <td>
@@ -5580,7 +5580,7 @@ The following table lists the available variables for customizing the Material t
     <td>Number</td>
 <td>
 
-`map-get( $spacing, 2 )`
+`k-map-get( $spacing, 2 )`
 
 </td>
 <td>
@@ -5933,7 +5933,7 @@ The following table lists the available variables for customizing the Material t
     <td>Number</td>
 <td>
 
-`map-get( $spacing, 1 )`
+`k-map-get( $spacing, 1 )`
 
 </td>
 <td>
@@ -6510,7 +6510,7 @@ The following table lists the available variables for customizing the Material t
     <td>Number</td>
 <td>
 
-`map-get( $spacing, 1 )`
+`k-map-get( $spacing, 1 )`
 
 </td>
 <td>
@@ -6528,7 +6528,7 @@ The following table lists the available variables for customizing the Material t
     <td>Number</td>
 <td>
 
-`map-get( $spacing, 4 )`
+`k-map-get( $spacing, 4 )`
 
 </td>
 <td>
@@ -6641,7 +6641,7 @@ The following table lists the available variables for customizing the Material t
     <td>Color</td>
 <td>
 
-`map-get( $theme, elevation )`
+`k-map-get( $theme, elevation )`
 
 </td>
 <td>
@@ -6790,7 +6790,7 @@ The following table lists the available variables for customizing the Material t
     <td>Number</td>
 <td>
 
-`map-get( $spacing, 1 )`
+`k-map-get( $spacing, 1 )`
 
 </td>
 <td>
@@ -8018,20 +8018,20 @@ The following table lists the available variables for customizing the Material t
     sm: (
         font-size: $font-size-md,
         line-height: ( 20 / 14 ),
-        cell-padding-x: map-get( $spacing, 4 ),
-        cell-padding-y: map-get( $spacing, 2 ) + map-get( $spacing, thin )
+        cell-padding-x: k-map-get( $spacing, 4 ),
+        cell-padding-y: k-map-get( $spacing, 2 ) + k-map-get( $spacing, thin )
     ),
     md: (
         font-size: $font-size-md,
         line-height: ( 20 / 14 ),
-        cell-padding-x: map-get( $spacing, 4 ),
-        cell-padding-y: map-get( $spacing, 2 )
+        cell-padding-x: k-map-get( $spacing, 4 ),
+        cell-padding-y: k-map-get( $spacing, 2 )
     ),
     lg: (
         font-size: $font-size-md,
         line-height: ( 20 / 14 ),
-        cell-padding-x: map-get( $spacing, 4 ),
-        cell-padding-y: map-get( $spacing, 2 ) + map-get( $spacing, thin )
+        cell-padding-x: k-map-get( $spacing, 4 ),
+        cell-padding-y: k-map-get( $spacing, 2 ) + k-map-get( $spacing, thin )
     )
 )`
 
@@ -8846,7 +8846,7 @@ The following table lists the available variables for customizing the Material t
 </td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background gradent of hovered tabs</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background gradient of hovered tabs</div></div>
     </td>
 </tr>
 <tr>
@@ -8928,7 +8928,7 @@ The following table lists the available variables for customizing the Material t
     <td>Number</td>
 <td>
 
-`map-get( $spacing, 4 )`
+`k-map-get( $spacing, 4 )`
 
 </td>
 <td>
@@ -8946,7 +8946,7 @@ The following table lists the available variables for customizing the Material t
     <td>Number</td>
 <td>
 
-`map-get( $spacing, 4 )`
+`k-map-get( $spacing, 4 )`
 
 </td>
 <td>
@@ -9079,7 +9079,7 @@ The following table lists the available variables for customizing the Material t
     <td>Number</td>
 <td>
 
-`map-get( $spacing, 2 )`
+`k-map-get( $spacing, 2 )`
 
 </td>
 <td>
@@ -9097,7 +9097,7 @@ The following table lists the available variables for customizing the Material t
     <td>Number</td>
 <td>
 
-`map-get( $spacing, 2 )`
+`k-map-get( $spacing, 2 )`
 
 </td>
 <td>
@@ -9208,7 +9208,7 @@ The following table lists the available variables for customizing the Material t
     <td>Number</td>
 <td>
 
-`map-get( $spacing, 4 )`
+`k-map-get( $spacing, 4 )`
 
 </td>
 <td>
@@ -9226,7 +9226,7 @@ The following table lists the available variables for customizing the Material t
     <td>Number</td>
 <td>
 
-`map-get( $spacing, 2 )`
+`k-map-get( $spacing, 2 )`
 
 </td>
 <td>

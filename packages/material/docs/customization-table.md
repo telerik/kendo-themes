@@ -160,20 +160,20 @@ The following table lists the available variables for customization.
     sm: (
         font-size: $font-size-md,
         line-height: ( 20 / 14 ),
-        cell-padding-x: map-get( $spacing, 4 ),
-        cell-padding-y: map-get( $spacing, 2 ) + map-get( $spacing, thin )
+        cell-padding-x: k-map-get( $spacing, 4 ),
+        cell-padding-y: k-map-get( $spacing, 2 ) + k-map-get( $spacing, thin )
     ),
     md: (
         font-size: $font-size-md,
         line-height: ( 20 / 14 ),
-        cell-padding-x: map-get( $spacing, 4 ),
-        cell-padding-y: map-get( $spacing, 2 )
+        cell-padding-x: k-map-get( $spacing, 4 ),
+        cell-padding-y: k-map-get( $spacing, 2 )
     ),
     lg: (
         font-size: $font-size-md,
         line-height: ( 20 / 14 ),
-        cell-padding-x: map-get( $spacing, 4 ),
-        cell-padding-y: map-get( $spacing, 2 ) + map-get( $spacing, thin )
+        cell-padding-x: k-map-get( $spacing, 4 ),
+        cell-padding-y: k-map-get( $spacing, 2 ) + k-map-get( $spacing, thin )
     )
 )`
 

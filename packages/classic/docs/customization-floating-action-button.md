@@ -120,7 +120,7 @@ The following table lists the available variables for customization.
     <td>Number</td>
 <td>
 
-`map-get( $spacing, 4 )`
+`k-map-get( $spacing, 4 )`
 
 </td>
 <td>
@@ -192,7 +192,7 @@ The following table lists the available variables for customization.
     <td>Number</td>
 <td>
 
-`map-get( $spacing, 1 ) / 2`
+`k-math-div( k-map-get( $spacing, 1 ), 2 )`
 
 </td>
 <td>
@@ -228,7 +228,7 @@ The following table lists the available variables for customization.
     <td>Number</td>
 <td>
 
-`map-get( $spacing, 4 )`
+`k-map-get( $spacing, 4 )`
 
 </td>
 <td>
@@ -246,7 +246,7 @@ The following table lists the available variables for customization.
     <td>Number</td>
 <td>
 
-`map-get( $spacing, 1 )`
+`k-map-get( $spacing, 1 )`
 
 </td>
 <td>
@@ -354,7 +354,7 @@ The following table lists the available variables for customization.
     <td>Number</td>
 <td>
 
-`map-get( $spacing, 2 )`
+`k-map-get( $spacing, 2 )`
 
 </td>
 <td>
@@ -480,7 +480,7 @@ The following table lists the available variables for customization.
     <td>List</td>
 <td>
 
-`0 6px 10px rgba(0, 0, 0, .14), 0 1px 18px rgba(0, 0, 0, .12), 0 3px 5px rgba(0, 0, 0, .2)`
+`0 6px 10px rgba( black, .14 ), 0 1px 18px rgba( black, .12 ), 0 3px 5px rgba( black, .2 )`
 
 </td>
 <td>
@@ -498,7 +498,7 @@ The following table lists the available variables for customization.
     <td>List</td>
 <td>
 
-`0 6px 10px try-tint( rgba(0, 0, 0, .14), .5 ), 0 1px 18px try-tint( rgba(0, 0, 0, .12), .5 ), 0 3px 5px try-tint( rgba(0, 0, 0, .2), .5 )`
+`0 6px 10px k-try-tint( rgba( black, .14 ), .5 ), 0 1px 18px k-try-tint( rgba( black, .12 ), .5 ), 0 3px 5px k-try-tint( rgba( black, .2 ), .5 )`
 
 </td>
 <td>

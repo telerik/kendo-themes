@@ -284,7 +284,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`rgba( contrast-wcag( $grid-bg ), .07 )`
+`rgba( k-contrast-color( $grid-bg ), .07 )`
 
 </td>
 <td>
@@ -342,7 +342,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`rgba( contrast-wcag( $grid-bg ), .04 )`
+`rgba( k-contrast-color( $grid-bg ), .04 )`
 
 </td>
 <td>

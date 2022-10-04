@@ -94,7 +94,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`contrast-wcag( $secondary )`
+`k-contrast-color( $secondary )`
 
 </td>
 <td>
@@ -136,14 +136,14 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`contrast-wcag( $tertiary )`
+`k-contrast-color( $tertiary )`
 
 </td>
 <td>
 
-<span class="color-preview" style="background-color: white"></span>
+<span class="color-preview" style="background-color: black"></span>
 
-`white`
+`black`
 
 </td>
 </tr>
