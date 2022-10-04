@@ -19,18 +19,18 @@ $slider-draghandle-active-scale: 1 !default;
 $slider-draghandle-active-size: null !default;
 
 $slider-draghandle-bg: $primary !default;
-$slider-draghandle-text: contrast-wcag( $primary ) !default;
+$slider-draghandle-text: k-contrast-color( $primary ) !default;
 $slider-draghandle-border: $primary !default;
 $slider-draghandle-gradient: null !default;
 
-$slider-draghandle-hovered-bg: try-darken( $primary, 7.5% ) !default;
-$slider-draghandle-hovered-text: contrast-wcag( $primary ) !default;
-$slider-draghandle-hovered-border: try-darken( $primary, 10% ) !default;
+$slider-draghandle-hovered-bg: k-try-darken( $primary, 7.5% ) !default;
+$slider-draghandle-hovered-text: k-contrast-color( $primary ) !default;
+$slider-draghandle-hovered-border: k-try-darken( $primary, 10% ) !default;
 $slider-draghandle-hovered-gradient: null !default;
 
-$slider-draghandle-pressed-bg: try-darken( $primary, 10% ) !default;
-$slider-draghandle-pressed-text: contrast-wcag( $primary ) !default;
-$slider-draghandle-pressed-border: try-darken( $primary, 12.5% ) !default;
+$slider-draghandle-pressed-bg: k-try-darken( $primary, 10% ) !default;
+$slider-draghandle-pressed-text: k-contrast-color( $primary ) !default;
+$slider-draghandle-pressed-border: k-try-darken( $primary, 12.5% ) !default;
 $slider-draghandle-pressed-gradient: null !default;
 
 $slider-draghandle-focused-shadow:  0 0 0 3px rgba( $primary, .5 ) !default;

@@ -8,7 +8,7 @@ $progressbar-font-size: $progress-font-size !default;
 $progressbar-line-height: 1 !default;
 
 $progressbar-bg: $gray-200 !default;
-$progressbar-text: contrast-wcag( $gray-200 ) !default;
+$progressbar-text: k-contrast-color( $gray-200 ) !default;
 $progressbar-border: null !default;
 $progressbar-gradient: null !default;
 

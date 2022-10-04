@@ -1,6 +1,6 @@
 @import "~@progress/kendo-theme-default/scss/menu/_layout.scss";
 
-@include exports("menu/layout/bootstrap") {
+@include exports( "menu/layout/bootstrap" ) {
 
     .k-menu.k-menu-horizontal:not(.k-context-menu) {
         padding: $navbar-padding-y $navbar-padding-x;

@@ -21,16 +21,16 @@ $black:    #000000 !default;
 // stylelint-enable scss/dollar-variable-colon-space-after
 
 $body-bg: $white !default;
-$body-color: contrast-wcag( $body-bg, $gray-900, $gray-100 ) !default;
+$body-color: k-contrast-color( $body-bg, $gray-900, $gray-100 ) !default;
 
 $component-bg: $body-bg !default;
-$component-text: contrast-wcag( $component-bg, $gray-900, $gray-100 ) !default;
-$component-border: contrast-wcag( $component-bg, $gray-300, $gray-700 ) !default;
+$component-text: k-contrast-color( $component-bg, $gray-900, $gray-100 ) !default;
+$component-border: if( k-is-light( $component-bg ), $gray-300, $gray-700 ) !default;
 
 $input-bg: $component-bg !default;
-$input-color: contrast-wcag( $input-bg, $gray-700, $gray-300 ) !default;
-$input-border-color: contrast-wcag( $input-bg, $gray-400, $gray-600 ) !default;
-$input-placeholder-color: contrast-wcag( $input-bg, $gray-600, $gray-400 ) !default;
+$input-color: k-contrast-color( $input-bg, $gray-700, $gray-300 ) !default;
+$input-border-color: if( k-is-light( $input-bg ), $gray-400, $gray-600 ) !default;
+$input-placeholder-color: k-contrast-color( $input-bg, $gray-600, $gray-400 ) !default;
 
 $card-bg: $component-bg !default;
 $card-color: $component-text !default;
@@ -45,7 +45,7 @@ $table-color: $component-text !default;
 $table-border-color: $component-border !default;
 
 $tooltip-bg: if( $dark-theme, $white, $black ) !default;
-$tooltip-color: contrast-wcag( $tooltip-bg ) !default;
+$tooltip-color: k-contrast-color( $tooltip-bg ) !default;
 
 $popover-font-size: $font-size-base !default;
 

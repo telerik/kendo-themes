@@ -1,4 +1,4 @@
-@include exports("sreadsheet/theme") {
+@include exports( "sreadsheet/theme" ) {
 
     // Spreadsheet
     .k-spreadsheet {
@@ -242,7 +242,7 @@
 
 
 
-@include exports("spreadsheet/rtl/theme") {
+@include exports( "spreadsheet/rtl/theme" ) {
 
     .k-rtl .k-spreadsheet,
     .k-spreadsheet[dir="rtl"],

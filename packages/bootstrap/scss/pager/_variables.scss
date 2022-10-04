@@ -1,6 +1,6 @@
 // Pager
-$pager-padding-x: map-get( $spacing, 2 ) !default;
-$pager-padding-y: map-get( $spacing, 2 ) !default;
+$pager-padding-x: k-map-get( $spacing, 2 ) !default;
+$pager-padding-y: k-map-get( $spacing, 2 ) !default;
 $pager-border-width: 1px !default;
 
 $pager-font-family: $font-family !default;
@@ -12,15 +12,15 @@ $pager-text: $header-text !default;
 $pager-border: $header-border !default;
 
 $pager-focus-bg: null !default;
-$pager-focus-shadow: inset 0 0 0 2px rgba( 0, 0, 0, .08) !default;
+$pager-focus-shadow: inset 0 0 0 2px rgba( black, .08) !default;
 
-$pager-section-spacing: map-get( $spacing, 4 ) !default;
+$pager-section-spacing: k-map-get( $spacing, 4 ) !default;
 
 $pager-item-padding-x: $kendo-button-padding-y !default;
 $pager-item-padding-y: $kendo-button-padding-y !default;
 $pager-item-border-width: 1px !default;
-$pager-item-border-radius: map-get( $spacing, 1 ) !default;
-$pager-item-spacing: (-1 * $pager-item-border-width) !default;
+$pager-item-border-radius: k-map-get( $spacing, 1 ) !default;
+$pager-item-spacing: -$pager-item-border-width !default;
 
 $pager-item-bg: $component-bg !default;
 $pager-item-text: $link-text !default;
@@ -36,7 +36,7 @@ $pager-item-selected-border: $pager-item-selected-bg !default;
 
 $pager-item-focus-opacity: null !default;
 $pager-item-focus-bg: $pager-item-bg !default;
-$pager-item-focus-shadow: 0 0 0 3px rgba($primary, .25) !default;
+$pager-item-focus-shadow: 0 0 0 3px rgba( $primary, .25 ) !default;
 
 $pager-number-padding-x: $pager-item-padding-x !default;
 $pager-number-padding-y: $pager-item-padding-y !default;

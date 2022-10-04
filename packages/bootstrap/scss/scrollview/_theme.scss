@@ -1,4 +1,4 @@
-@include exports("scrollview/theme") {
+@include exports( "scrollview/theme" ) {
 
     // refactor when https://github.com/telerik/kendo-angular-scrollview/issues/130 is done
     kendo-scrollview.k-scrollview-wrap,
@@ -87,7 +87,7 @@
     }
 
     .k-scrollview-pageable > .k-button {
-        box-shadow: inset 0 0 2px rgba(0, 0, 0, .08);
+        box-shadow: inset 0 0 2px rgba( black, .08 );
     }
 
 }
