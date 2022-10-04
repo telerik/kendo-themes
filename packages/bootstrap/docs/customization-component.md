@@ -70,7 +70,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`contrast-wcag( $component-bg, $gray-300, $gray-700 )`
+`if( k-is-light( $component-bg ), $gray-300, $gray-700 )`
 
 </td>
 <td>

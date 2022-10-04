@@ -30,7 +30,7 @@ The following table lists the available variables for customization.
     <td>Number</td>
 <td>
 
-`map-get( $spacing, 1 )`
+`k-map-get( $spacing, 1 )`
 
 </td>
 <td>
@@ -90,7 +90,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`try-shade( $base-bg, 2 )`
+`k-try-shade( $base-bg, 2 )`
 
 </td>
 <td>
@@ -128,7 +128,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`try-shade( $base-bg, 1 )`
+`k-try-shade( $base-bg, 1 )`
 
 </td>
 <td>
@@ -168,7 +168,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`try-shade( $hovered-bg, 2 )`
+`k-try-shade( $hovered-bg, 2 )`
 
 </td>
 <td>
@@ -246,7 +246,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`try-shade( $selected-bg, 2 )`
+`k-try-shade( $selected-bg, 2 )`
 
 </td>
 <td>

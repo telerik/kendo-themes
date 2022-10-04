@@ -598,7 +598,7 @@ The following table lists the available variables for customization.
     <td>List</td>
 <td>
 
-`inset 0 0 0 2px rgba(0, 0, 0, .12)`
+`inset 0 0 0 2px rgba( black, .12 )`
 
 </td>
 <td>

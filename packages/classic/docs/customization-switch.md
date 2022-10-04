@@ -364,7 +364,7 @@ The following table lists the available variables for customization.
     <td>List</td>
 <td>
 
-`0 0 3px 1px rgba( if($dark-theme, $white, $black), .25 )`
+`0 0 3px 1px rgba( if( $dark-theme, $white, $black ), .25 )`
 
 </td>
 <td>
@@ -454,7 +454,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`try-shade( $kendo-switch-off-track-bg )`
+`k-try-shade( $kendo-switch-off-track-bg )`
 
 </td>
 <td>
@@ -530,7 +530,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`try-shade( $kendo-switch-off-thumb-bg )`
+`k-try-shade( $kendo-switch-off-thumb-bg )`
 
 </td>
 <td>
@@ -828,7 +828,7 @@ The following table lists the available variables for customization.
     <td>List</td>
 <td>
 
-`0 0 3px 1px rgba( if($dark-theme, $white, $black), .25 )`
+`0 0 3px 1px rgba( if( $dark-theme, $white, $black ), .25 )`
 
 </td>
 <td>
@@ -956,7 +956,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`try-shade( $kendo-switch-on-thumb-bg )`
+`k-try-shade( $kendo-switch-on-thumb-bg )`
 
 </td>
 <td>
@@ -994,7 +994,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`try-shade( $kendo-switch-on-thumb-bg )`
+`k-try-shade( $kendo-switch-on-thumb-bg )`
 
 </td>
 <td>
@@ -1032,7 +1032,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`try-shade( $kendo-switch-on-thumb-hover-bg )`
+`k-try-shade( $kendo-switch-on-thumb-hover-bg )`
 
 </td>
 <td>

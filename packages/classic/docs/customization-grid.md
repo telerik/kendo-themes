@@ -228,7 +228,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`try-shade( $grid-bg, .5 )`
+`k-try-shade( $grid-bg, .5 )`
 
 </td>
 <td>
@@ -284,7 +284,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`try-shade( $grid-bg, 1 )`
+`k-try-shade( $grid-bg, 1 )`
 
 </td>
 <td>

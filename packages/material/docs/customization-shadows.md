@@ -30,7 +30,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`map-get( $theme, elevation )`
+`k-map-get( $theme, elevation )`
 
 </td>
 <td>

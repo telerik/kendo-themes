@@ -30,7 +30,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`map-get($theme, component-bg)`
+`k-map-get( $theme, component-bg )`
 
 </td>
 <td>
@@ -50,7 +50,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`map-get($theme, component-text)`
+`k-map-get( $theme, component-text )`
 
 </td>
 <td>
@@ -70,7 +70,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`map-get($theme, component-border)`
+`k-map-get( $theme, component-border )`
 
 </td>
 <td>

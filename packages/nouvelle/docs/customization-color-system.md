@@ -30,16 +30,16 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-<span class="color-preview" style="background-color: #ff6358"></span>
+<span class="color-preview" style="background-color: #622331"></span>
 
-`#ff6358`
+`#622331`
 
 </td>
 <td>
 
-<span class="color-preview" style="background-color: #ff6358"></span>
+<span class="color-preview" style="background-color: #622331"></span>
 
-`#ff6358`
+`#622331`
 
 </td>
 </tr>
@@ -52,7 +52,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`contrast-wcag( $primary )`
+`k-contrast-color( $primary )`
 
 </td>
 <td>
@@ -94,7 +94,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`contrast-wcag( $secondary )`
+`k-contrast-color( $secondary )`
 
 </td>
 <td>
@@ -136,14 +136,14 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`contrast-wcag( $tertiary )`
+`k-contrast-color( $tertiary )`
 
 </td>
 <td>
 
-<span class="color-preview" style="background-color: white"></span>
+<span class="color-preview" style="background-color: black"></span>
 
-`white`
+`black`
 
 </td>
 </tr>
@@ -156,16 +156,16 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-<span class="color-preview" style="background-color: #0058e9"></span>
+<span class="color-preview" style="background-color: #0969da"></span>
 
-`#0058e9`
+`#0969da`
 
 </td>
 <td>
 
-<span class="color-preview" style="background-color: #0058e9"></span>
+<span class="color-preview" style="background-color: #0969da"></span>
 
-`#0058e9`
+`#0969da`
 
 </td>
 </tr>
@@ -178,16 +178,16 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-<span class="color-preview" style="background-color: #37b400"></span>
+<span class="color-preview" style="background-color: #1a7f37"></span>
 
-`#37b400`
+`#1a7f37`
 
 </td>
 <td>
 
-<span class="color-preview" style="background-color: #37b400"></span>
+<span class="color-preview" style="background-color: #1a7f37"></span>
 
-`#37b400`
+`#1a7f37`
 
 </td>
 </tr>
@@ -200,16 +200,16 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-<span class="color-preview" style="background-color: #ffc000"></span>
+<span class="color-preview" style="background-color: #bc4c00"></span>
 
-`#ffc000`
+`#bc4c00`
 
 </td>
 <td>
 
-<span class="color-preview" style="background-color: #ffc000"></span>
+<span class="color-preview" style="background-color: #bc4c00"></span>
 
-`#ffc000`
+`#bc4c00`
 
 </td>
 </tr>
@@ -222,16 +222,16 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-<span class="color-preview" style="background-color: #f31700"></span>
+<span class="color-preview" style="background-color: #cf222e"></span>
 
-`#f31700`
+`#cf222e`
 
 </td>
 <td>
 
-<span class="color-preview" style="background-color: #f31700"></span>
+<span class="color-preview" style="background-color: #cf222e"></span>
 
-`#f31700`
+`#cf222e`
 
 </td>
 </tr>

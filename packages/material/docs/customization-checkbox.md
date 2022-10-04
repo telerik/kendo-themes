@@ -178,7 +178,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`contrast-wcag( $kendo-checkbox-checked-bg )`
+`k-contrast-color( $kendo-checkbox-checked-bg )`
 
 </td>
 <td>
@@ -386,7 +386,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`try-shade( $component-bg, 4 )`
+`k-try-shade( $component-bg, 4 )`
 
 </td>
 <td>
@@ -426,14 +426,14 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`contrast-wcag( $kendo-checkbox-disabled-checked-bg )`
+`k-contrast-color( $kendo-checkbox-disabled-checked-bg )`
 
 </td>
 <td>
 
-<span class="color-preview" style="background-color: white"></span>
+<span class="color-preview" style="background-color: black"></span>
 
-`white`
+`black`
 
 </td>
 </tr>
@@ -632,7 +632,7 @@ The following table lists the available variables for customization.
     <td>Number</td>
 <td>
 
-`map-get( $spacing, 1 )`
+`k-map-get( $spacing, 1 )`
 
 </td>
 <td>
@@ -650,7 +650,7 @@ The following table lists the available variables for customization.
     <td>Number</td>
 <td>
 
-`map-get( $spacing, 4 )`
+`k-map-get( $spacing, 4 )`
 
 </td>
 <td>

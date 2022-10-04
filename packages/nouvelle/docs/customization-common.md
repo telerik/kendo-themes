@@ -112,7 +112,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`shade( $interactive-bg, .5 )`
+`k-color-shade( $interactive-bg, .5 )`
 
 </td>
 <td>
@@ -195,9 +195,9 @@ The following table lists the available variables for customization.
 </td>
 <td>
 
-<span class="color-preview" style="background-color: #ff6358"></span>
+<span class="color-preview" style="background-color: #622331"></span>
 
-`#ff6358`
+`#622331`
 
 </td>
 </tr>
@@ -210,7 +210,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`contrast-wcag( $selected-bg )`
+`k-contrast-color( $selected-bg )`
 
 </td>
 <td>
