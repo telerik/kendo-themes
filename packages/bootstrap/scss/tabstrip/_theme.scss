@@ -1,7 +1,7 @@
 @import "~@progress/kendo-theme-default/scss/tabstrip/_theme.scss";
 
 
-@include exports("tabstrip/theme/bootstrap") {
+@include exports( "tabstrip/theme/bootstrap" ) {
 
     // Tabstrip variants
     .k-tabstrip-top {

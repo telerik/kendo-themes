@@ -1,6 +1,6 @@
 @import "~@progress/kendo-theme-default/scss/treelist/_theme.scss";
 
-@include exports("treelist/theme/bootstrap") {
+@include exports( "treelist/theme/bootstrap" ) {
     .k-treelist {
         tr.k-footer,
         tr.k-footer-template {

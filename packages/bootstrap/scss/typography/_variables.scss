@@ -118,10 +118,10 @@ $link-hover-text: $link-hover-color !default;
 
 
 // Display
-$display1-font-size: map-get( $display-font-sizes, 1) !default;
-$display2-font-size: map-get( $display-font-sizes, 2) !default;
-$display3-font-size: map-get( $display-font-sizes, 3) !default;
-$display4-font-size: map-get( $display-font-sizes, 4) !default;
+$display1-font-size: k-map-get( $display-font-sizes, 1) !default;
+$display2-font-size: k-map-get( $display-font-sizes, 2) !default;
+$display3-font-size: k-map-get( $display-font-sizes, 3) !default;
+$display4-font-size: k-map-get( $display-font-sizes, 4) !default;
 
 $display1-font-family: null !default;
 $display2-font-family: null !default;

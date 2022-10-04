@@ -65,7 +65,7 @@ $default-scrollbar-width: 17px !default;
 // Icons
 $icon-size: 16px !default;
 $icon-size-lg: 32px !default;
-$icon-spacing: map-get( $spacing, 2 ) !default;
+$icon-spacing: k-map-get( $spacing, 2 ) !default;
 
 /// The URL to the icon font that will be used by the theme
 /// The default value of `null` embeds the package font with a `data:` URL
@@ -75,15 +75,15 @@ $icon-font-url: null !default;
 
 // Metrics
 $padding-x: $spacer !default;
-$padding-y: $spacer / 2 !default;
-$padding-x-sm: $padding-x / 2 !default;
-$padding-y-sm: $padding-y / 2 !default;
+$padding-y: k-math-div( $spacer, 2 ) !default;
+$padding-x-sm: k-math-div( $padding-x, 2 ) !default;
+$padding-y-sm: k-math-div( $padding-y, 2 ) !default;
 $padding-x-lg: $padding-x * 1.5 !default;
 $padding-y-lg: $padding-y * 1.5 !default;
 
 /// Border radius for all components.
 $kendo-border-radius: $border-radius !default;
-$kendo-border-radius-sm: $kendo-border-radius / 2 !default;
+$kendo-border-radius-sm: k-math-div( $kendo-border-radius, 2 ) !default;
 $kendo-border-radius-md: $kendo-border-radius !default;
 $kendo-border-radius-lg: $kendo-border-radius * 1.5 !default;
 
@@ -122,7 +122,7 @@ $accent: $primary !default;
 /// @deprecated Will be removed in v5. Use `$primary-contrast` variable instead.
 /// @group color-system
 /// @type Color
-$accent-contrast: contrast-wcag( $accent ) !default;
+$accent-contrast: k-contrast-color( $accent ) !default;
 
 
 // Theme colors
@@ -131,68 +131,68 @@ $accent-contrast: contrast-wcag( $accent ) !default;
 /// @group color-system
 /// @type Color
 $primary: $primary !default;
-$primary-lighter: tint( $primary, 2 ) !default;
-$primary-darker: shade( $primary, 2 ) !default;
+$primary-lighter: k-color-tint( $primary, 2 ) !default;
+$primary-darker: k-color-shade( $primary, 2 ) !default;
 
 /// The color used along with the primary color denoted by $primary.
 /// Used to provide contrast between the background and foreground colors.
 /// @group color-system
 /// @type Color
-$primary-contrast: contrast-wcag( $primary ) !default;
+$primary-contrast: k-contrast-color( $primary ) !default;
 
 /// The secondary color of the theme.
 /// @group color-system
 /// @type Color
 $secondary: $secondary !default;
-$secondary-lighter: tint( $secondary, 2 ) !default;
-$secondary-darker: shade( $secondary, 2 ) !default;
+$secondary-lighter: k-color-tint( $secondary, 2 ) !default;
+$secondary-darker: k-color-shade( $secondary, 2 ) !default;
 
 /// The color used along with the secondary color denoted by $secondary.
 /// Used to provide contrast between the background and foreground colors.
 /// @group color-system
 /// @type Color
-$secondary-contrast: contrast-wcag( $secondary ) !default;
+$secondary-contrast: k-contrast-color( $secondary ) !default;
 
 /// The tertiary color of the theme.
 /// @group color-system
 /// @type Color
 $tertiary: $purple !default;
-$tertiary-lighter: tint( $tertiary, 2 ) !default;
-$tertiary-darker: shade( $tertiary, 2 ) !default;
+$tertiary-lighter: k-color-tint( $tertiary, 2 ) !default;
+$tertiary-darker: k-color-shade( $tertiary, 2 ) !default;
 
 /// The color used along with the tertiary color denoted by $tertiary.
 /// Used to provide contrast between the background and foreground colors.
 /// @group color-system
 /// @type Color
-$tertiary-contrast: contrast-wcag( $tertiary ) !default;
+$tertiary-contrast: k-contrast-color( $tertiary ) !default;
 
 /// The color for informational messages and states.
 /// @group color-system
 /// @type Color
 $info: $info !default;
-$info-lighter: tint( $info, 2 ) !default;
-$info-darker: shade( $info, 2 ) !default;
+$info-lighter: k-color-tint( $info, 2 ) !default;
+$info-darker: k-color-shade( $info, 2 ) !default;
 
 /// The color for success messages and states.
 /// @group color-system
 /// @type Color
 $success: $success !default;
-$success-lighter: tint( $success, 2 ) !default;
-$success-darker: shade( $success, 2 ) !default;
+$success-lighter: k-color-tint( $success, 2 ) !default;
+$success-darker: k-color-shade( $success, 2 ) !default;
 
 /// The color for warning messages and states.
 /// @group color-system
 /// @type Color
 $warning: $warning !default;
-$warning-lighter: tint( $warning, 2 ) !default;
-$warning-darker: shade( $warning, 2 ) !default;
+$warning-lighter: k-color-tint( $warning, 2 ) !default;
+$warning-darker: k-color-shade( $warning, 2 ) !default;
 
 /// The color for error messages and states.
 /// @group color-system
 /// @type Color
 $error: $danger !default;
-$error-lighter: tint( $error, 2 ) !default;
-$error-darker: shade( $error, 2 ) !default;
+$error-lighter: k-color-tint( $error, 2 ) !default;
+$error-darker: k-color-shade( $error, 2 ) !default;
 
 /// The dark color of the theme.
 /// @group color-system
@@ -246,9 +246,9 @@ $body-text: $body-color !default;
 $subtle-text: if( $dark-theme, $gray-400, $text-muted ) !default;
 $disabled-text: if( $dark-theme, $gray-600, $gray-500) !default;
 
-$app-bg: try-shade( $body-bg, .25 ) !default;
+$app-bg: k-try-shade( $body-bg, .25 ) !default;
 $app-text: $body-text !default;
-$app-border: contrast-wcag( $app-bg, $gray-300, $gray-700 ) !default;
+$app-border: if( k-is-light( $app-bg ), $gray-300, $gray-700 ) !default;
 
 
 // Components
@@ -265,7 +265,7 @@ $component-text: $body-text !default;
 /// Border color of a component.
 /// Note: do not use this variable directly. Instead derive it as `$component-name-border` e.g. `$grid-border: component-border !default;`.
 /// @group component
-$component-border: contrast-wcag( $component-bg, $gray-300, $gray-700 ) !default;
+$component-border: if( k-is-light( $component-bg ), $gray-300, $gray-700 ) !default;
 
 
 /// The background of the components' chrome area.
@@ -273,7 +273,7 @@ $base-bg: $gray-100 !default;
 /// The text color of the components' chrome area.
 $base-text: $body-text !default;
 /// The border color of the components' chrome area.
-$base-border: try-shade( $base-bg, 1 ) !default;
+$base-border: k-try-shade( $base-bg, 1 ) !default;
 /// The gradient background of the components' chrome area.
 $base-gradient: null !default;
 
@@ -282,20 +282,20 @@ $hovered-bg: $gray-200 !default;
 /// The text color of hovered items.
 $hovered-text: $base-text !default;
 /// The border color of hovered items.
-$hovered-border: try-shade( $hovered-bg, 1 ) !default;
+$hovered-border: k-try-shade( $hovered-bg, 1 ) !default;
 /// The gradient background of hovered items.
 $hovered-gradient: null !default;
 
 /// The background of selected items.
 $selected-bg: $primary !default;
 /// The text color of selected items.
-$selected-text: contrast-wcag( $selected-bg ) !default;
+$selected-text: k-contrast-color( $selected-bg ) !default;
 /// The border color of selected items.
-$selected-border: try-shade( $selected-bg, 1 ) !default;
+$selected-border: k-try-shade( $selected-bg, 1 ) !default;
 /// The gradient background of selected items.
 $selected-gradient: null !default;
 
-$selected-hover-bg: try-shade( $selected-bg, .5 ) !default;
+$selected-hover-bg: k-try-shade( $selected-bg, .5 ) !default;
 $selected-hover-text: $selected-text !default;
 $selected-hover-border: $base-border !default;
 $selected-hover-gradient: null !default;
@@ -326,7 +326,7 @@ $equilateral-index: 1.7320508076 !default;
 $equilateral-height: .8660254038 !default;
 
 $drop-hint-arrow-size: 8px !default;
-$drop-hint-arrow-spacing: ($drop-hint-arrow-size / 2) !default;
+$drop-hint-arrow-spacing: k-math-div( $drop-hint-arrow-size, 2 ) !default;
 $drop-hint-line-h-width: 20px !default;
 $drop-hint-line-h-height: 1px !default;
 $drop-hint-line-v-width: $drop-hint-line-h-height !default;
@@ -365,7 +365,7 @@ $zindex-loading: 100 !default;
 // Placeholder
 $placeholder-line-width: 100% !default;
 $placeholder-line-height: 10px !default;
-$placeholder-bg: rgba(0, 0, 0, .1) !default;
+$placeholder-bg: rgba( black, .1 ) !default;
 
 
 // Table
@@ -375,7 +375,7 @@ $placeholder-bg: rgba(0, 0, 0, .1) !default;
 $invalid-bg: null !default;
 $invalid-text: $error !default;
 $invalid-border: $error !default;
-$invalid-shadow: 0 0 0 .25rem rgba($invalid-border, .25) !default;
+$invalid-shadow: 0 0 0 .25rem rgba( $invalid-border, .25 ) !default;
 
 
 // Drag clue

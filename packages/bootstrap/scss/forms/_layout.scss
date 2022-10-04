@@ -1,6 +1,6 @@
 @import "~@progress/kendo-theme-default/scss/forms/_layout.scss";
 
-@include exports("forms/layout/bootstrap") {
+@include exports( "forms/layout/bootstrap" ) {
 
     // Forms
     .k-form,
@@ -42,11 +42,10 @@
 
 }
 
-@include exports("edit-form/layout/bootstrap") {
+@include exports( "edit-form/layout/bootstrap" ) {
 
     .k-edit-label {
         padding: calc( #{$padding-y} - #{$kendo-input-border-width} ) 0;
     }
 
 }
-

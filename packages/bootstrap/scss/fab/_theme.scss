@@ -3,11 +3,11 @@
     // Normal state
     @each $name, $color in $kendo-fab-theme-colors {
         .k-fab-solid-#{$name} {
-            @include box-shadow($kendo-fab-shadow);
+            @include box-shadow( $kendo-fab-shadow );
             outline: $kendo-fab-border-width solid $color;
             outline-offset: -$kendo-fab-border-width;
             border-color: $color;
-            color: contrast-wcag( $color );
+            color: k-contrast-color( $color );
             background-color: $color;
         }
     }
@@ -16,9 +16,9 @@
     @each $name, $color in $kendo-fab-theme-colors {
         .k-fab-solid-#{$name}:hover,
         .k-fab-solid-#{$name}.k-hover {
-            border-color: try-darken( $color, 10% );
-            color: contrast-wcag( try-darken( $color, 7.5% ) );
-            background-color: try-darken( $color, 7.5% );
+            border-color: k-try-darken( $color, 10% );
+            color: k-contrast-color( k-try-darken( $color, 7.5% ) );
+            background-color: k-try-darken( $color, 7.5% );
         }
     }
 
@@ -37,10 +37,10 @@
         .k-fab-solid-#{$name}:active,
         .k-fab-solid-#{$name}.k-active,
         .k-fab-solid-#{$name}.k-selected {
-            @include box-shadow($kendo-fab-active-shadow);
-            border-color: try-darken( $color, 12.5% );
-            color: contrast-wcag( try-darken( $color, 10% ) );
-            background-color: try-darken( $color, 10% );
+            @include box-shadow( $kendo-fab-active-shadow );
+            border-color: k-try-darken( $color, 12.5% );
+            color: k-contrast-color( k-try-darken( $color, 10% ) );
+            background-color: k-try-darken( $color, 10% );
         }
     }
 
@@ -48,9 +48,9 @@
     @each $name, $color in $kendo-fab-theme-colors {
         .k-fab-solid-#{$name}:disabled,
         .k-fab-solid-#{$name}.k-disabled {
-            @include box-shadow($kendo-fab-disabled-shadow);
-            background-color: try-tint( $color, 4.5 );
-            color: try-tint( contrast-wcag( $color ), 5 );
+            @include box-shadow( $kendo-fab-disabled-shadow );
+            background-color: k-try-tint( $color, 4.5 );
+            color: k-try-tint( k-contrast-color( $color ), 5 );
             opacity: 1;
         }
     }
@@ -62,7 +62,7 @@
             $kendo-fab-item-bg,
             $kendo-fab-item-border
         );
-        @include box-shadow($kendo-fab-item-shadow);
+        @include box-shadow( $kendo-fab-item-shadow );
     }
     .k-fab-item-icon {
         @include fill(
@@ -70,7 +70,7 @@
             $kendo-fab-item-icon-bg,
             $kendo-fab-item-icon-border
         );
-        @include box-shadow($kendo-fab-item-shadow);
+        @include box-shadow( $kendo-fab-item-shadow );
         outline: $kendo-fab-border-width solid $kendo-button-bg;
         outline-offset: -$kendo-fab-border-width;
     }
@@ -78,12 +78,12 @@
     // Hover state
     .k-fab-item:hover .k-fab-item-icon,
     .k-fab-item.k-hover .k-fab-item-icon {
-        @include box-shadow($kendo-fab-item-shadow);
-        outline: $kendo-fab-border-width solid try-darken( $kendo-fab-item-icon-border, 10% );
+        @include box-shadow( $kendo-fab-item-shadow );
+        outline: $kendo-fab-border-width solid k-try-darken( $kendo-fab-item-icon-border, 10% );
         outline-offset: -$kendo-fab-border-width;
-        border-color: try-darken( $kendo-fab-item-icon-border, 10% );
-        color: contrast-wcag( try-darken( $kendo-fab-item-icon-bg, 7.5% ) );
-        background-color: try-darken( $kendo-fab-item-icon-bg, 7.5% );
+        border-color: k-try-darken( $kendo-fab-item-icon-border, 10% );
+        color: k-contrast-color( k-try-darken( $kendo-fab-item-icon-bg, 7.5% ) );
+        background-color: k-try-darken( $kendo-fab-item-icon-bg, 7.5% );
     }
 
     // Focus state
@@ -99,12 +99,12 @@
     // Active state
     .k-fab-item:active .k-fab-item-icon,
     .k-fab-item.k-active .k-fab-item-icon {
-        @include box-shadow($kendo-fab-item-active-shadow);
-        outline: $kendo-fab-border-width solid try-darken( $kendo-fab-item-icon-border, 12.5% );
+        @include box-shadow( $kendo-fab-item-active-shadow );
+        outline: $kendo-fab-border-width solid k-try-darken( $kendo-fab-item-icon-border, 12.5% );
         outline-offset: -$kendo-fab-border-width;
-        border-color: try-darken( $kendo-fab-item-icon-border, 12.5% );
-        color: contrast-wcag( try-darken( $kendo-fab-item-icon-bg, 10% ) );
-        background-color: try-darken( $kendo-fab-item-icon-bg, 10% );
+        border-color: k-try-darken( $kendo-fab-item-icon-border, 12.5% );
+        color: k-contrast-color( k-try-darken( $kendo-fab-item-icon-bg, 10% ) );
+        background-color: k-try-darken( $kendo-fab-item-icon-bg, 10% );
     }
 
     // Disabled state
@@ -114,9 +114,9 @@
 
         .k-fab-item-text,
         .k-fab-item-icon {
-            @include box-shadow($kendo-fab-item-disabled-shadow);
-            background-color: try-tint( $kendo-fab-item-bg, 8 );
-            color: try-tint( $kendo-fab-item-text, 8 );
+            @include box-shadow( $kendo-fab-item-disabled-shadow );
+            background-color: k-try-tint( $kendo-fab-item-bg, 8 );
+            color: k-try-tint( $kendo-fab-item-text, 8 );
         }
     }
 

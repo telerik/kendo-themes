@@ -67,7 +67,7 @@ $grid-footer-border: $grid-header-border !default;
 
 /// Background color of alternating rows in grid
 /// @group grid
-$grid-alt-bg: rgba( contrast-wcag( $grid-bg ), .04 ) !default;
+$grid-alt-bg: rgba( k-contrast-color( $grid-bg ), .04 ) !default;
 /// Text color of alternating rows in grid
 /// @group grid
 $grid-alt-text: null !default;
@@ -77,7 +77,7 @@ $grid-alt-border: null !default;
 
 /// Background color of hovered rows in grid
 /// @group grid
-$grid-hovered-bg: rgba( contrast-wcag( $grid-bg ), .08 ) !default;
+$grid-hovered-bg: rgba( k-contrast-color( $grid-bg ), .08 ) !default;
 /// Text color of hovered rows in grid
 /// @group grid
 $grid-hovered-text: null !default;
@@ -95,10 +95,10 @@ $grid-selected-text: $grid-text !default;
 /// @group grid
 $grid-selected-border: $grid-border !default;
 
-$grid-grouping-row-bg: try-shade( $grid-bg ) !default;
+$grid-grouping-row-bg: k-try-shade( $grid-bg ) !default;
 $grid-grouping-row-text: $grid-text !default;
 
-$grid-sorted-bg: rgba( contrast-wcag( $grid-bg ), .02 ) !default;
+$grid-sorted-bg: rgba( k-contrast-color( $grid-bg ), .02 ) !default;
 $grid-sorting-indicator-text: $primary !default;
 $grid-sorting-index-font-size: ($icon-size * .75) !default;
 $grid-sorting-index-height: $icon-size !default;
@@ -106,18 +106,18 @@ $grid-sorting-index-spacing-y: 2px !default;
 $grid-sorting-index-spacing-x: -$grid-sorting-index-spacing-y !default;
 
 
-$grid-focused-shadow: inset 0 0 0 2px rgba( 0, 0, 0, .08) !default;
+$grid-focused-shadow: inset 0 0 0 2px rgba( black, .08 ) !default;
 
 $grid-edit-cell-padding-x: $grid-cell-padding-x !default;
 $grid-edit-cell-padding-y: 5px !default;
 
-$grid-command-cell-button-spacing: map-get( $spacing, 2 ) !default;
+$grid-command-cell-button-spacing: k-map-get( $spacing, 2 ) !default;
 
 $grid-sticky-bg: $grid-bg !default;
 $grid-sticky-text: $grid-text !default;
-$grid-sticky-border: rgba($grid-text, .5) !default;
+$grid-sticky-border: rgba( $grid-text, .5 ) !default;
 
-$grid-sticky-alt-bg: try-shade( $grid-bg, .5 ) !default;
+$grid-sticky-alt-bg: k-try-shade( $grid-bg, .5 ) !default;
 
 $grid-sticky-header-bg: $grid-header-bg !default;
 $grid-sticky-header-text: $grid-header-text !default;
@@ -126,18 +126,18 @@ $grid-sticky-header-border: $grid-sticky-border !default;
 $grid-sticky-footer-bg: $grid-header-bg !default;
 $grid-sticky-footer-hovered-bg: $grid-sticky-footer-bg !default;
 
-$grid-sticky-selected-bg: mix($selected-bg, $grid-bg, 25%) !default;
-$grid-sticky-selected-alt-bg: shade($grid-sticky-selected-bg, .4) !default;
+$grid-sticky-selected-bg: k-color-mix( $selected-bg, $grid-bg, 25% ) !default;
+$grid-sticky-selected-alt-bg: k-color-shade( $grid-sticky-selected-bg, .4 ) !default;
 
-$grid-sticky-hovered-bg: try-shade( $grid-bg ) !default;
-$grid-sticky-selected-hovered-bg: shade($grid-sticky-selected-bg, .7) !default;
+$grid-sticky-hovered-bg: k-try-shade( $grid-bg ) !default;
+$grid-sticky-selected-hovered-bg: k-color-shade( $grid-sticky-selected-bg, .7 ) !default;
 
 $grid-column-menu-width: 250px !default;
 
 $grid-filter-menu-check-all-border-bottom-width: 1px !default;
 
-$grid-filter-menu-item-spacing-x: map-get( $spacing, 6 ) !default;
-$grid-filter-menu-item-spacing-y: map-get( $spacing, 2 ) !default;
+$grid-filter-menu-item-spacing-x: k-map-get( $spacing, 6 ) !default;
+$grid-filter-menu-item-spacing-y: k-map-get( $spacing, 2 ) !default;
 
 $grid-column-menu-popup-padding-x: null !default;
 $grid-column-menu-popup-padding-y: null !default;
@@ -149,7 +149,7 @@ $grid-column-menu-list-item-padding-x: $kendo-list-item-padding-x-md !default;
 $grid-column-menu-list-item-padding-y: $kendo-list-item-padding-y-md !default;
 
 $grid-column-menu-items-wrap-padding-x: 0 !default;
-$grid-column-menu-items-wrap-padding-y: map-get( $spacing, 2 ) !default;
+$grid-column-menu-items-wrap-padding-y: k-map-get( $spacing, 2 ) !default;
 
 $grid-column-menu-filter-container-padding-x: $padding-x-lg !default;
 $grid-column-menu-filter-container-padding-y: $padding-y-sm !default;
