@@ -1,0 +1,41 @@
+{
+  "name": "@progress/kendo-theme-core",
+  "description": "A collection of functions and mixins used for building themes for Kendo UI",
+  "version": "5.8.2-dev.2",
+  "author": "Progress",
+  "license": "Apache-2.0",
+  "keywords": [
+    "Kendo UI",
+    "Theme",
+    "sass functions",
+    "sass mixins"
+  ],
+  "main": "dist/index.css",
+  "sass": "scss/index.import.scss",
+  "files": [
+    "dist/",
+    "scss/"
+  ],
+  "homepage": "https://github.com/telerik/kendo-themes/tree/master/packages/core",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/telerik/kendo-themes.git",
+    "directory": "packages/core"
+  },
+  "bugs": {
+    "url": "https://github.com/telerik/kendo-themes/issues/new?labels=bug,T:Core&template=bug_report.md"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "sass-build",
+    "sass": "sass-build",
+    "prepublishOnly": "node ../../scripts/themes-prepublish.js",
+    "postpublish": "echo 'no postpublish for core theme'"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "sass-build": "^1.0.0"
+  }
+}

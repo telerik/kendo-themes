@@ -1,0 +1,71 @@
+/// Set a specific jump point for requesting color jumps
+/// @group color-system
+/// @access private
+$kendo-color-level-step: 8% !default;
+
+@function k-color-level( $color, $level: 0 ) {
+
+    @if ( $level == 0 ) or ( $level == 0% ) {
+        @return $color;
+    }
+
+    $base: if( $level < 0, #ffffff, #000000 );
+    $level: k-math-abs( $level );
+
+
+    @if ( k-math-unit($level) == "%" ) {
+        @return k-color-mix( $base, $color, $level );
+    }
+
+    @return k-color-mix( $base, $color, $level * $kendo-color-level-step );
+}
+
+@function k-color-tint( $color, $level: 1 ) {
+    @return k-color-level( $color, -$level );
+}
+@function k-color-shade( $color, $level: 1 ) {
+    @return k-color-level( $color, $level );
+}
+
+@function k-try-shade( $color, $level: 1 ) {
+    $dark-theme: if( variable-exists( dark-theme ), $dark-theme, false );
+
+    @if $dark-theme {
+        @return k-color-tint( $color, $level );
+    }
+
+    @return k-color-shade( $color, $level );
+}
+@function k-try-tint( $color, $level: 1 ) {
+    $dark-theme: if( variable-exists( dark-theme ), $dark-theme, false );
+
+    @if $dark-theme {
+        @return k-color-shade( $color, $level );
+    }
+
+    @return k-color-tint( $color, $level );
+}
+
+
+@function k-try-darken( $color, $amount ) {
+    $dark-theme: if( variable-exists( dark-theme ), $dark-theme, false );
+
+    @if $dark-theme {
+        @return k-color-lighten( $color, $amount );
+    }
+    @return k-color-darken( $color, $amount );
+}
+
+@function k-try-lighten( $color, $amount ) {
+    $dark-theme: if( variable-exists( dark-theme ), $dark-theme, false );
+
+    @if $dark-theme {
+        @return k-color-darken( $color, $amount );
+    }
+    @return k-color-lighten( $color, $amount );
+}
+
+// TODO: Remove this function or rethink the logic
+@function k-true-mix( $color1, $color2, $weight: 50% ) {
+    @return k-color-mix( rgba( $color1, 1 ), rgba( $color2, 1 ), $weight );
+}

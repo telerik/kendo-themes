@@ -1,0 +1,35 @@
+@function k-list-append( $list, $val, $separator: auto ) {
+    @return append( $list, $val, $separator );
+}
+
+@function k-list-index( $list, $value ) {
+    @return index( $list, $value );
+}
+
+@function k-list-is-bracketed( $list ) {
+    @return is-bracketed( $list );
+}
+
+@function k-list-join( $list1, $list2, $separator: auto, $bracketed: auto ) {
+    @return join( $list1, $list2, $separator, $bracketed );
+}
+
+@function k-list-length( $list ) {
+    @return length( $list );
+}
+
+@function k-list-nth( $list, $n ) {
+    @return nth( $list, $n );
+}
+
+@function k-list-separator( $list ) {
+    @return list-separator( $list );
+}
+
+@function k-list-set-nth( $list, $n, $value ) {
+    @return set-nth( $list, $n, $value );
+}
+
+@function k-list-zip( $lists... ) {
+    @return zip( $lists... );
+}

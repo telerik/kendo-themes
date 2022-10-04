@@ -1,0 +1,23 @@
+@function k-color-red( $color ) {
+    @return red( $color );
+}
+
+@function k-color-green( $color ) {
+    @return green( $color );
+}
+
+@function k-color-blue( $color ) {
+    @return blue( $color );
+}
+
+@function k-color-mix( $color1, $color2, $weight: 50% ) {
+    @return mix( $color1, $color2, $weight );
+}
+
+@function k-color-darken( $color, $amount) {
+    @return darken( $color, $amount );
+}
+
+@function k-color-lighten( $color, $amount) {
+    @return lighten( $color, $amount );
+}

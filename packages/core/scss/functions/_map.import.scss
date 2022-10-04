@@ -1,0 +1,33 @@
+@function k-map-get( $map, $keys... ) {
+    @each $key in $keys {
+        $map: map-get( $map, $key );
+    }
+    @return $map;
+}
+
+@function k-map-has-key( $map, $key ) {
+    @return map-has-key( $map, $key );
+}
+
+@function k-map-keys( $map ) {
+    @return map-keys( $map );
+}
+
+@function k-map-merge( $map, $args... ) {
+    @each $arg in $args {
+        $map: map-merge( $map, $arg );
+    }
+    @return $map;
+}
+
+@function k-map-remove( $map, $keys... ) {
+    @return map-remove( $map, $keys... );
+}
+
+@function k-map-set( $map, $key, $value ) {
+    @return k-map-merge( $map, ( $key: $value ) );
+}
+
+@function k-map-values( $map ) {
+    @return map-values( $map );
+}

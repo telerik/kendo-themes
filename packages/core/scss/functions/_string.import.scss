@@ -1,0 +1,46 @@
+@function k-string-index( $string, $substring ) {
+    @return str-index( $string, $substring );
+}
+
+@function k-string-insert( $string, $insert, $index ) {
+    @return str-insert( $string, $insert, $index );
+}
+
+@function k-string-length( $string ) {
+    @return str-length( $string );
+}
+
+@function k-string-quote( $string ) {
+    @return quote( $string );
+}
+
+// See https://www.sassmeister.com/gist/1b4f2da5527830088e4d
+@function k-string-replace( $string, $search, $replace: "" ) {
+    $index: k-string-index( $string, $search );
+
+    @if $index {
+        @return k-string-slice( $string, 1, $index - 1 ) + $replace + k-string-replace( k-string-slice( $string, $index + k-string-length( $search ) ), $search, $replace );
+    }
+
+    @return $string;
+}
+
+@function k-string-slice( $string, $start-at, $end-at: -1 ) {
+    @return str-slice( $string, $start-at, $end-at );
+}
+
+@function k-string-to-lower-case( $string ) {
+    @return to-lower-case( $string );
+}
+
+@function k-string-to-upper-case( $string ) {
+    @return to-upper-case( $string );
+}
+
+@function k-string-unique-id() {
+    @return unique-id();
+}
+
+@function k-string-unquote( $string ) {
+    @return unquote( $string );
+}
