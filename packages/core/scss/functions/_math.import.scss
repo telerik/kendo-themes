@@ -1,0 +1,95 @@
+@function k-math-abs( $number ) {
+    @return abs( $number );
+}
+
+@function k-math-ceil( $number ) {
+    @return ceil( $number );
+}
+
+@function k-math-clamp( $value, $min, $max ) {
+    @return k-math-max( $min, k-math-min( $max, $value ) );
+}
+
+@function k-math-compatible( $a, $b ) {
+    @return comparable( $a, $b );
+}
+
+@function k-math-div( $a, $b )  {
+    @return ( $a / $b );
+}
+
+@function k-math-is-unitless( $number ) {
+    @return unitless( $number );
+}
+
+@function k-math-max( $a, $b ) {
+    @return max( $a, $b );
+}
+
+@function k-math-min( $a, $b ) {
+    @return min( $a, $b );
+}
+
+@function k-math-mod( $a, $b ) {
+    @return ( $a % $b );
+}
+
+@function k-math-mul( $a, $b ) {
+    @return ( $a * $b );
+}
+
+@function k-math-percentage( $number ) {
+    @return ( $number * 100% );
+}
+
+@function k-math-pow( $x, $n ) {
+    $ret: 1;
+
+    @if ( $n == 0 ) {
+        @return $ret;
+    }
+
+    @if ( $n > 0 ) {
+        @for $i from 1 through $n {
+            $ret: $ret * $x;
+        }
+        @return $ret;
+    }
+
+    @for $i from $n to 0 {
+        $ret: k-math-div( $ret, $x );
+    }
+    @return $ret;
+
+}
+
+@function k-math-random( $limit: null ) {
+    @if ( $limit == null ) {
+        @return random();
+    }
+
+    @return random( $limit );
+}
+
+@function k-math-round( $number, $precision: 0 ) {
+
+    @if ( $precision == 0 ) {
+        @return round( $number );
+    }
+
+    $pow: k-math-pow( 10, $precision );
+
+    @return k-math-div( round( $number * $pow ), $pow );
+}
+
+@function k-math-unit( $number ) {
+    @return unit( $number );
+}
+
+@function k-math-strip-unit($number) {
+    @if ( k-meta-type-of( $number ) == "number" ) and not k-math-is-unitless( $number ) {
+        @return k-math-div( $number, 1 * k-math-unit( $number) );
+    }
+
+    @return $number;
+}
