@@ -20,14 +20,10 @@
 // Module System
 @use "module-system/" as module;
 
-$config: null !default;
+$components: null !default;
 
-@mixin configure($config: null) {
-    @if $config {
-        $_components: map-get( $config, "components" );
-
-        @if ($_components) {
-            module.$components: $_components;
-        }
+@mixin configure($components: null) {
+    @if $components {
+        module.$components: $components;
     }
 }

@@ -1,3 +1,3 @@
-import componentJson from './list.json';
+const componentJson = require('./list.json');
 
-export const [ list, listItem ] = componentJson;
+exports.list = componentJson;

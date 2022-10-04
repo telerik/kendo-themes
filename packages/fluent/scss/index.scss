@@ -158,8 +158,8 @@
 @use "signature";
 
 // Setup
-@mixin config($config: null ) {
-    @include core.configure($config: $config);
+@mixin config( $components: null ) {
+    @include core.configure( $components: $components );
 }
 @mixin styles() {
     // Typography and utils
