@@ -1,12 +1,12 @@
 // Loader
 $loader-segment-border-radius: 50% !default;
-$loader-segment-size-sm: map-get( $spacing, 1 ) !default;
-$loader-segment-size-md: map-get( $spacing, 2 ) !default;
-$loader-segment-size-lg: map-get( $spacing, 4 ) !default;
+$loader-segment-size-sm: k-map-get( $spacing, 1 ) !default;
+$loader-segment-size-md: k-map-get( $spacing, 2 ) !default;
+$loader-segment-size-lg: k-map-get( $spacing, 4 ) !default;
 
-$loader-padding-sm: ( $loader-segment-size-sm / 2 ) !default;
-$loader-padding-md: ( $loader-segment-size-md / 2 ) !default;
-$loader-padding-lg: ( $loader-segment-size-lg / 2 ) !default;
+$loader-padding-sm: k-math-div( $loader-segment-size-sm, 2 ) !default;
+$loader-padding-md: k-math-div( $loader-segment-size-md, 2 ) !default;
+$loader-padding-lg: k-math-div( $loader-segment-size-lg, 2 ) !default;
 
 $loader-spinner-3-width-sm: ( $loader-segment-size-sm * 4 ) !default;
 $loader-spinner-3-height-sm: ( $loader-spinner-3-width-sm * $equilateral-height ) !default;
@@ -31,13 +31,13 @@ $loader-container-panel-border-radius: $kendo-border-radius-md !default;
 $loader-container-panel-bg: $white !default;
 
 $loader-container-padding-sm: 15px !default;
-$loader-container-gap-sm: map-get( $spacing, 1 ) !default;
+$loader-container-gap-sm: k-map-get( $spacing, 1 ) !default;
 $loader-container-font-size-sm: $font-size-xs !default;
 
 $loader-container-padding-md: 20px !default;
-$loader-container-gap-md: map-get( $spacing, 2 ) !default;
+$loader-container-gap-md: k-map-get( $spacing, 2 ) !default;
 $loader-container-font-size-md: $font-size-md !default;
 
 $loader-container-padding-lg: 25px !default;
-$loader-container-gap-lg: map-get( $spacing, 3 ) !default;
+$loader-container-gap-lg: k-map-get( $spacing, 3 ) !default;
 $loader-container-font-size-lg: $font-size-lg !default;

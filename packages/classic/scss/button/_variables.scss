@@ -10,10 +10,10 @@ $kendo-button-border-radius: null !default;
 
 /// Horizontal padding of the button.
 /// @group button
-$kendo-button-padding-x: map-get( $spacing, 2 ) !default;
+$kendo-button-padding-x: k-map-get( $spacing, 2 ) !default;
 /// Vertical padding of the button.
 /// @group button
-$kendo-button-padding-y: map-get( $spacing, 1 ) !default;
+$kendo-button-padding-y: k-map-get( $spacing, 1 ) !default;
 /// Font family of the button.
 /// @group button
 $kendo-button-font-family: $font-family !default;
@@ -24,18 +24,18 @@ $kendo-button-font-size: $font-size-md !default;
 /// @group button
 $kendo-button-line-height: $line-height-md !default;
 
-$kendo-button-padding-x-sm: map-get( $spacing, 2 ) !default;
-$kendo-button-padding-y-sm: map-get( $spacing, 1 ) - map-get( $spacing, thin ) !default;
+$kendo-button-padding-x-sm: k-map-get( $spacing, 2 ) !default;
+$kendo-button-padding-y-sm: k-map-get( $spacing, 1 ) - k-map-get( $spacing, thin ) !default;
 $kendo-button-font-size-sm: $font-size-md !default;
 $kendo-button-line-height-sm: $line-height-md !default;
 
-$kendo-button-padding-x-md: map-get( $spacing, 2 ) !default;
-$kendo-button-padding-y-md: map-get( $spacing, 1 ) !default;
+$kendo-button-padding-x-md: k-map-get( $spacing, 2 ) !default;
+$kendo-button-padding-y-md: k-map-get( $spacing, 1 ) !default;
 $kendo-button-font-size-md: $font-size-md !default;
 $kendo-button-line-height-md: $line-height-md !default;
 
-$kendo-button-padding-x-lg: map-get( $spacing, 3 ) !default;
-$kendo-button-padding-y-lg: map-get( $spacing, 2 ) !default;
+$kendo-button-padding-x-lg: k-map-get( $spacing, 3 ) !default;
+$kendo-button-padding-y-lg: k-map-get( $spacing, 2 ) !default;
 $kendo-button-font-size-lg: $font-size-lg !default;
 $kendo-button-line-height-lg: $line-height-lg !default;
 
@@ -70,7 +70,7 @@ $kendo-button-sizes: (
 
 /// Theme colors map for the button.
 /// @group button
-$kendo-button-theme-colors: map-merge(
+$kendo-button-theme-colors: k-map-merge(
     $kendo-theme-colors,
     ( "base": $base-bg )
 ) !default;
@@ -83,7 +83,7 @@ $kendo-button-bg: $base-bg !default;
 $kendo-button-text: $base-text !default;
 /// The base border color of the button.
 /// @group button
-$kendo-button-border: try-shade( $kendo-button-bg, 2 ) !default;
+$kendo-button-border: k-try-shade( $kendo-button-bg, 2 ) !default;
 /// The base background gradient of the button.
 /// @group button
 $kendo-button-gradient: $base-gradient !default;
@@ -93,13 +93,13 @@ $kendo-button-shadow: null !default;
 
 /// The base background of hovered button.
 /// @group button
-$kendo-button-hover-bg: try-shade( $kendo-button-bg, 1 ) !default;
+$kendo-button-hover-bg: k-try-shade( $kendo-button-bg, 1 ) !default;
 /// The base text color of hovered button.
 /// @group button
 $kendo-button-hover-text: null !default;
 /// The base border color of hovered button.
 /// @group button
-$kendo-button-hover-border: try-shade( $kendo-button-bg, 3 ) !default;
+$kendo-button-hover-border: k-try-shade( $kendo-button-bg, 3 ) !default;
 /// The base background gradient of hovered button.
 /// @group button
 $kendo-button-hover-gradient: null !default;
@@ -109,13 +109,13 @@ $kendo-button-hover-shadow: null !default;
 
 /// The base background color of active button.
 /// @group button
-$kendo-button-active-bg: try-shade( $kendo-button-bg, 2 ) !default;
+$kendo-button-active-bg: k-try-shade( $kendo-button-bg, 2 ) !default;
 /// The base text color of active button.
 /// @group button
 $kendo-button-active-text: null !default;
 /// The base border color of active button.
 /// @group button
-$kendo-button-active-border: try-shade( $kendo-button-bg, 4 ) !default;
+$kendo-button-active-border: k-try-shade( $kendo-button-bg, 4 ) !default;
 /// The base background gradient of active button.
 /// @group button
 $kendo-button-active-gradient: null !default;
@@ -173,7 +173,7 @@ $kendo-button-disabled-shadow: null !default;
 
 // Solid button
 $kendo-solid-button-gradient: $base-gradient !default;
-$kendo-solid-button-shade-function: "try-shade" !default;
+$kendo-solid-button-shade-function: "k-try-shade" !default;
 $kendo-solid-button-shade-text-amount: 0 !default;
 $kendo-solid-button-shade-bg-amount: 0 !default;
 $kendo-solid-button-shade-border-amount: 2 !default;

@@ -17,18 +17,18 @@ $kendo-list-line-height-lg: $line-height-lg !default;
 /// Horizontal padding of list header, if no size is set.
 /// @group list
 $kendo-list-header-padding-x: null !default;
-$kendo-list-header-padding-x-base: map-get( $spacing, 2 ) !default;
-$kendo-list-header-padding-x-sm: map-get( $spacing, 2 ) !default;
-$kendo-list-header-padding-x-md: map-get( $spacing, 2 ) !default;
-$kendo-list-header-padding-x-lg: map-get( $spacing, 2 ) !default;
+$kendo-list-header-padding-x-base: k-map-get( $spacing, 2 ) !default;
+$kendo-list-header-padding-x-sm: k-map-get( $spacing, 2 ) !default;
+$kendo-list-header-padding-x-md: k-map-get( $spacing, 2 ) !default;
+$kendo-list-header-padding-x-lg: k-map-get( $spacing, 2 ) !default;
 
 /// Vertical padding of list header, if no size is set.
 /// @group list
 $kendo-list-header-padding-y: null !default;
-$kendo-list-header-padding-y-base: map-get( $spacing, 1 ) !default;
-$kendo-list-header-padding-y-sm: map-get( $spacing, 1 ) - map-get( $spacing, thin ) !default;
-$kendo-list-header-padding-y-md: map-get( $spacing, 1 ) !default;
-$kendo-list-header-padding-y-lg: map-get( $spacing, 1 ) + map-get( $spacing, thin ) !default;
+$kendo-list-header-padding-y-base: k-map-get( $spacing, 1 ) !default;
+$kendo-list-header-padding-y-sm: k-map-get( $spacing, 1 ) - k-map-get( $spacing, thin ) !default;
+$kendo-list-header-padding-y-md: k-map-get( $spacing, 1 ) !default;
+$kendo-list-header-padding-y-lg: k-map-get( $spacing, 1 ) + k-map-get( $spacing, thin ) !default;
 
 /// Border width of list header.
 /// @group list
@@ -55,18 +55,18 @@ $kendo-list-header-font-weight: null !default;
 /// Horizontal padding of list items, when no size is set.
 /// @group list
 $kendo-list-item-padding-x: null !default;
-$kendo-list-item-padding-x-base: map-get( $spacing, 2 ) !default;
-$kendo-list-item-padding-x-sm: map-get( $spacing, 2 ) !default;
-$kendo-list-item-padding-x-md: map-get( $spacing, 2 ) !default;
-$kendo-list-item-padding-x-lg: map-get( $spacing, 3 ) !default;
+$kendo-list-item-padding-x-base: k-map-get( $spacing, 2 ) !default;
+$kendo-list-item-padding-x-sm: k-map-get( $spacing, 2 ) !default;
+$kendo-list-item-padding-x-md: k-map-get( $spacing, 2 ) !default;
+$kendo-list-item-padding-x-lg: k-map-get( $spacing, 3 ) !default;
 
 /// Vertical padding of list items, when no size is set.
 /// @group list
 $kendo-list-item-padding-y: null !default;
-$kendo-list-item-padding-y-base: map-get( $spacing, 1 ) !default;
-$kendo-list-item-padding-y-sm: map-get( $spacing, 1 ) - map-get( $spacing, thin ) !default;
-$kendo-list-item-padding-y-md: map-get( $spacing, 1 ) !default;
-$kendo-list-item-padding-y-lg: map-get( $spacing, 2 ) !default;
+$kendo-list-item-padding-y-base: k-map-get( $spacing, 1 ) !default;
+$kendo-list-item-padding-y-sm: k-map-get( $spacing, 1 ) - k-map-get( $spacing, thin ) !default;
+$kendo-list-item-padding-y-md: k-map-get( $spacing, 1 ) !default;
+$kendo-list-item-padding-y-lg: k-map-get( $spacing, 2 ) !default;
 
 /// Font size of list items, if no size is set.
 /// @group list
@@ -85,18 +85,18 @@ $kendo-list-item-line-height-lg: null !default;
 /// Horizontal padding of list group items, when no size is set.
 /// @group list
 $kendo-list-group-item-padding-x: null !default;
-$kendo-list-group-item-padding-x-base: map-get( $spacing, 2 ) !default;
-$kendo-list-group-item-padding-x-sm: map-get( $spacing, 2 ) !default;
-$kendo-list-group-item-padding-x-md: map-get( $spacing, 2 ) !default;
-$kendo-list-group-item-padding-x-lg: map-get( $spacing, 2 ) !default;
+$kendo-list-group-item-padding-x-base: k-map-get( $spacing, 2 ) !default;
+$kendo-list-group-item-padding-x-sm: k-map-get( $spacing, 2 ) !default;
+$kendo-list-group-item-padding-x-md: k-map-get( $spacing, 2 ) !default;
+$kendo-list-group-item-padding-x-lg: k-map-get( $spacing, 2 ) !default;
 
 /// Vertical padding of list group items, when no size is set.
 /// @group list
 $kendo-list-group-item-padding-y: null !default;
-$kendo-list-group-item-padding-y-base: map-get( $spacing, 1 ) !default;
-$kendo-list-group-item-padding-y-sm: map-get( $spacing, 1 ) - map-get( $spacing, thin ) !default;
-$kendo-list-group-item-padding-y-md: map-get( $spacing, 1 ) !default;
-$kendo-list-group-item-padding-y-lg: map-get( $spacing, 1 ) + map-get( $spacing, thin ) !default;
+$kendo-list-group-item-padding-y-base: k-map-get( $spacing, 1 ) !default;
+$kendo-list-group-item-padding-y-sm: k-map-get( $spacing, 1 ) - k-map-get( $spacing, thin ) !default;
+$kendo-list-group-item-padding-y-md: k-map-get( $spacing, 1 ) !default;
+$kendo-list-group-item-padding-y-lg: k-map-get( $spacing, 1 ) + k-map-get( $spacing, thin ) !default;
 
 /// Border width of list group items.
 /// @group list
@@ -221,7 +221,7 @@ $kendo-list-item-focus-bg: null !default;
 $kendo-list-item-focus-text: null !default;
 /// Box shadow of focused list items.
 /// @group list
-$kendo-list-item-focus-shadow: inset 0 0 0 2px rgba(0, 0, 0, .12) !default;
+$kendo-list-item-focus-shadow: inset 0 0 0 2px rgba( black, .12 ) !default;
 
 /// Background color of selected list items.
 /// @group list

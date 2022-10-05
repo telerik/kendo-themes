@@ -8,15 +8,15 @@ $drawer-font-size: $font-size !default;
 $drawer-line-height: $line-height !default;
 $drawer-content-padding-x: $padding-x !default;
 $drawer-content-padding-y: $padding-y !default;
-$drawer-item-level-padding-x: map-get( $spacing, 4 ) !default;
+$drawer-item-level-padding-x: k-map-get( $spacing, 4 ) !default;
 
 $drawer-item-level-count: 5 !default;
 
 $drawer-scrollbar-width: 7px !default;
-$drawer-scrollbar-color: rgba(156, 156, 156, .7) !default;
+$drawer-scrollbar-color: rgba( 156, 156, 156, .7 ) !default;
 $drawer-scrollbar-bg: #dedede !default;
 $drawer-scrollbar-radius: 20px !default;
-$drawer-scrollbar-hovered-color: rgba(156, 156, 156, 1) !default;
+$drawer-scrollbar-hovered-color: rgba( 156, 156, 156, 1 ) !default;
 
 $drawer-item-padding-x: $padding-x !default;
 $drawer-item-padding-y: $padding-x !default;
@@ -24,7 +24,7 @@ $drawer-item-font-size: 16px !default;
 $drawer-item-line-height: $line-height-lg !default;
 $drawer-icon-size: $icon-size !default;
 
-$drawer-mini-initial-width: calc(4 * #{$drawer-item-padding-x} + #{$drawer-icon-size}) !default;
+$drawer-mini-initial-width: calc( 4 * #{$drawer-item-padding-x} + #{$drawer-icon-size} ) !default;
 
 $drawer-hovered-bg: $hovered-bg !default;
 $drawer-hovered-text: $hovered-text !default;

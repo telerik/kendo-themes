@@ -15,12 +15,12 @@ $actionsheet-line-height: $line-height !default;
 $actionsheet-bg: $component-bg !default;
 $actionsheet-text: $component-text !default;
 $actionsheet-border: $component-border !default;
-$actionsheet-shadow: 0 8px 10px -5px rgba(0, 0, 0, .2), 0 16px 24px 2px rgba(0, 0, 0, .14), 0 6px 30px 5px rgba(0, 0, 0, .12) !default;
+$actionsheet-shadow: 0 8px 10px -5px rgba( black, .2 ), 0 16px 24px 2px rgba( black, .14 ), 0 6px 30px 5px rgba( black, .12 ) !default;
 
 
 // Actionsheet header
-$actionsheet-header-padding-x: map-get( $spacing, 4 ) !default;
-$actionsheet-header-padding-y: map-get( $spacing, 2 ) !default;
+$actionsheet-header-padding-x: k-map-get( $spacing, 4 ) !default;
+$actionsheet-header-padding-y: k-map-get( $spacing, 2 ) !default;
 $actionsheet-header-border-width: null !default;
 $actionsheet-header-font-size: null !default;
 $actionsheet-header-font-family: null !default;
@@ -35,8 +35,8 @@ $actionsheet-header-shadow: null !default;
 
 // Actionsheet item
 $actionsheet-item-min-height: 40px !default;
-$actionsheet-item-padding-x: map-get( $spacing, 4 ) !default;
-$actionsheet-item-padding-y: map-get( $spacing, 2 ) !default;
+$actionsheet-item-padding-x: k-map-get( $spacing, 4 ) !default;
+$actionsheet-item-padding-y: k-map-get( $spacing, 2 ) !default;
 $actionsheet-item-border-width: 1px !default;
 $actionsheet-item-spacing: 12px !default;
 
