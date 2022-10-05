@@ -1,6 +1,6 @@
 @include exports("gantt/layout") {
 
-    $row-height: #{$line-height-em} + #{2 * $table-cell-padding-y} + #{$grid-cell-horizontal-border-width};
+    $row-height: #{$line-height-em} + #{2 * $table-cell-padding-y} + #{$kendo-grid-cell-horizontal-border-width};
 
     .k-gantt {
         border-width: $gantt-border-width;
@@ -24,7 +24,7 @@
             vertical-align: top;
         }
         .k-grid-header tr {
-            height: calc( #{$line-height-em} + #{$grid-header-padding-y * 2} + 1px );
+            height: calc( #{$line-height-em} + #{$kendo-grid-header-padding-y * 2} + 1px );
         }
         .k-grid-header .k-header {
             position: static;
@@ -33,11 +33,11 @@
             position: relative;
         }
         .k-grid-content tr {
-            height: calc( #{$line-height-em} + #{$grid-cell-padding-y * 2} + #{$grid-cell-horizontal-border-width} );
+            height: calc( #{$line-height-em} + #{$kendo-grid-cell-padding-y * 2} + #{$kendo-grid-cell-horizontal-border-width} );
         }
 
         &.k-gantt-planned .k-grid-content tr {
-            height: calc( #{$line-height-em} * 1.7 + #{$grid-cell-padding-y * 2} + #{$grid-cell-horizontal-border-width} );
+            height: calc( #{$line-height-em} * 1.7 + #{$kendo-grid-cell-padding-y * 2} + #{$kendo-grid-cell-horizontal-border-width} );
         }
 
         // Layout
@@ -73,11 +73,12 @@
             .k-grid-header tr:first-child th:last-child,
             tbody td:last-child {
                 padding: 0;
+                vertical-align: top;
             }
             .k-grid-header th:last-child {
                 .k-header {
-                    padding: $grid-header-padding-y $grid-header-padding-x;
-                    border-width: 0 0 1px $grid-cell-vertical-border-width;
+                    padding: $kendo-grid-header-padding-y $kendo-grid-header-padding-x;
+                    border-width: 0 0 1px $kendo-grid-cell-vertical-border-width;
                     white-space: nowrap;
                 }
             }
@@ -109,6 +110,7 @@
                 flex: 1 1 auto;
                 overflow: hidden;
                 text-overflow: ellipsis;
+                white-space: nowrap;
             }
             .k-task-actions {
                 flex-shrink: 0;
@@ -260,7 +262,7 @@
             padding: 0 !important; // sass-lint:disable-line no-important
         }
         .k-grid-header tr {
-            height: calc( #{$line-height-em} * 2 + #{$grid-header-padding-y * 4} + 2px );
+            height: calc( #{$line-height-em} * 2 + #{$kendo-grid-header-padding-y * 4} + 2px );
             vertical-align: bottom;
         }
         .k-grid-content {
@@ -271,7 +273,7 @@
             vertical-align: middle;
         }
         .k-gantt-treelist-nested-columns .k-grid-header tr {
-            height: calc( #{$line-height-em} + #{$grid-header-padding-y * 2} + 1px );
+            height: calc( #{$line-height-em} + #{$kendo-grid-header-padding-y * 2} + 1px );
         }
 
         &.k-gantt-treelist-scrollable {
@@ -295,8 +297,8 @@
             overflow-x: scroll;
         }
         .k-header {
-            padding: $grid-header-padding-y $grid-header-padding-x;
-            border-width: 0 0 1px $grid-cell-vertical-border-width;
+            padding: $kendo-grid-header-padding-y $kendo-grid-header-padding-x;
+            border-width: 0 0 1px $kendo-grid-cell-vertical-border-width;
             white-space: nowrap;
         }
 
@@ -372,7 +374,8 @@
     .k-gantt-tasks {
         position: relative;
 
-        td {
+        td,
+        .k-table-td {
             padding: 0;
             border-width: 0;
             position: relative;
@@ -380,6 +383,7 @@
         }
         td::after { content: "\200b"; }
     }
+
     .k-task-wrap {
         margin: 0 -21px;
         padding: 5px 21px;
@@ -553,6 +557,7 @@
         display: flex;
         flex-direction: row;
         align-items: center;
+        white-space: nowrap;
     }
     .k-task-template {
         padding: $gantt-task-padding-y $gantt-task-padding-x;
@@ -806,7 +811,7 @@
                 text-align: left;
             }
             .k-header {
-                border-width: 0 $grid-cell-vertical-border-width 1px 0;
+                border-width: 0 $kendo-grid-cell-vertical-border-width 1px 0;
             }
             .k-header:first-child {
                 border-right-width: 0;

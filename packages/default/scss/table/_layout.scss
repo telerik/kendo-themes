@@ -39,7 +39,7 @@
     .k-table-th,
     .k-table-td {
         padding: $kendo-table-cell-padding-y $kendo-table-cell-padding-x;
-        border-width: 0 0 $grid-cell-horizontal-border-width $kendo-table-cell-vertical-border-width;
+        border-width: 0 0 $kendo-grid-cell-horizontal-border-width $kendo-table-cell-vertical-border-width;
         border-style: solid;
         border-color: inherit;
         box-sizing: border-box;

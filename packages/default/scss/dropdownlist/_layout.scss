@@ -16,7 +16,9 @@
 
         .k-input-button {
             border-width: 0;
+            width: min-content;
         }
+
         .k-input-button .k-button-icon {
             width: auto;
             aspect-ratio: 1;
