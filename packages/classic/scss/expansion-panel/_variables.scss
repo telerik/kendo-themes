@@ -20,7 +20,7 @@ $expander-header-bg: transparent !default;
 $expander-header-text: $expander-text !default;
 $expander-header-border: null !default;
 
-$expander-header-hover-bg: shade($expander-bg) !default;
+$expander-header-hover-bg: k-color-shade( $expander-bg, 1 ) !default;
 
 $expander-header-focused-bg: null !default;
 $expander-header-focused-shadow: $kendo-list-item-focus-shadow !default;

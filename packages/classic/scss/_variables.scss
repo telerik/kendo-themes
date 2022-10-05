@@ -62,7 +62,7 @@ $default-scrollbar-width: 17px !default;
 // Icons
 $icon-size: 16px !default;
 $icon-size-lg: 32px !default;
-$icon-spacing: map-get( $spacing, 1 ) !default;
+$icon-spacing: k-map-get( $spacing, 1 ) !default;
 
 /// The URL to the icon font that will be used by the theme
 /// The default value of `null` embeds the package font with a `data:` URL
@@ -73,14 +73,14 @@ $icon-font-url: null !default;
 // Metrics
 $padding-x: 8px !default;
 $padding-y: 4px !default;
-$padding-x-sm: $padding-x / 2 !default;
-$padding-y-sm: $padding-y / 2 !default;
+$padding-x-sm: k-math-div( $padding-x, 2 ) !default;
+$padding-y-sm: k-math-div( $padding-y, 2 ) !default;
 $padding-x-lg: $padding-x * 1.5 !default;
 $padding-y-lg: $padding-y * 1.5 !default;
 
 /// Border radius for all components.
-$kendo-border-radius: map-get( $spacing, 1 ) !default;
-$kendo-border-radius-sm: $kendo-border-radius / 2 !default;
+$kendo-border-radius: k-map-get( $spacing, 1 ) !default;
+$kendo-border-radius-sm: k-math-div( $kendo-border-radius, 2 ) !default;
 $kendo-border-radius-md: $kendo-border-radius !default;
 $kendo-border-radius-lg: $kendo-border-radius * 2 !default;
 
@@ -88,13 +88,13 @@ $panel-padding-x: $padding-x !default;
 $panel-padding-y: $padding-y !default;
 
 $nav-item-margin: 0px !default;
-$nav-item-padding-x: map-get( $spacing, 2 ) !default;
-$nav-item-padding-y: map-get( $spacing, 1 ) !default;
+$nav-item-padding-x: k-map-get( $spacing, 2 ) !default;
+$nav-item-padding-y: k-map-get( $spacing, 1 ) !default;
 
-$table-cell-padding-x: map-get( $spacing, 2 ) !default;
-$table-cell-padding-y: map-get( $spacing, 2 ) !default;
-$header-cell-padding-x: map-get( $spacing, 3 ) !default;
-$header-cell-padding-y: map-get( $spacing, 2 ) !default;
+$table-cell-padding-x: k-map-get( $spacing, 2 ) !default;
+$table-cell-padding-y: k-map-get( $spacing, 2 ) !default;
+$header-cell-padding-x: k-map-get( $spacing, 3 ) !default;
+$header-cell-padding-y: k-map-get( $spacing, 2 ) !default;
 
 $zindex-popup: 1 !default;
 $zindex-window: 2 !default;
@@ -113,8 +113,8 @@ $black: #000000 !default;
 /// @group color-system
 /// @type Color
 $primary: #f35800 !default;
-$primary-lighter: tint($primary, 2) !default;
-$primary-darker: shade($primary, 2) !default;
+$primary-lighter: k-color-tint( $primary, 2 ) !default;
+$primary-darker: k-color-shade( $primary, 2 ) !default;
 
 /// The color used along with the primary color denoted by $primary.
 /// Used to provide contrast between the background and foreground colors.
@@ -126,55 +126,55 @@ $primary-contrast: contrast-wcag( $primary ) !default;
 /// @group color-system
 /// @type Color
 $secondary: #e9e9e9 !default;
-$secondary-lighter: tint($secondary, 2) !default;
-$secondary-darker: shade($secondary, 2) !default;
+$secondary-lighter: k-color-tint( $secondary, 2 ) !default;
+$secondary-darker: k-color-shade( $secondary, 2 ) !default;
 
 /// The color used along with the secondary color denoted by $secondary.
 /// Used to provide contrast between the background and foreground colors.
 /// @group color-system
 /// @type Color
-$secondary-contrast: contrast-wcag( $secondary ) !default;
+$secondary-contrast: k-contrast-color( $secondary ) !default;
 
 /// The tertiary color of the theme.
 /// @group color-system
 /// @type Color
 $tertiary: #03a9f4 !default;
-$tertiary-lighter: tint( $tertiary, 2 ) !default;
-$tertiary-darker: shade( $tertiary, 2 ) !default;
+$tertiary-lighter: k-color-tint( $tertiary, 2 ) !default;
+$tertiary-darker: k-color-shade( $tertiary, 2 ) !default;
 
 /// The color used along with the tertiary color denoted by $tertiary.
 /// Used to provide contrast between the background and foreground colors.
 /// @group color-system
 /// @type Color
-$tertiary-contrast: contrast-wcag( $tertiary ) !default;
+$tertiary-contrast: k-contrast-color( $tertiary ) !default;
 
 /// The color for informational messages and states.
 /// @group color-system
 /// @type Color
 $info: #2498bc !default;
-$info-lighter: tint($info, 2) !default;
-$info-darker: shade($info, 2) !default;
+$info-lighter: k-color-tint( $info, 2 ) !default;
+$info-darker: k-color-shade( $info, 2 ) !default;
 
 /// The color for success messages and states.
 /// @group color-system
 /// @type Color
 $success: #3ea44e !default;
-$success-lighter: tint($success, 2) !default;
-$success-darker: shade($success, 2) !default;
+$success-lighter: k-color-tint( $success, 2 ) !default;
+$success-darker: k-color-shade( $success, 2 ) !default;
 
 /// The color for warning messages and states.
 /// @group color-system
 /// @type Color
 $warning: #ff9800 !default;
-$warning-lighter: tint($warning, 2) !default;
-$warning-darker: shade($warning, 2) !default;
+$warning-lighter: k-color-tint( $warning, 2 ) !default;
+$warning-darker: k-color-shade( $warning, 2 ) !default;
 
 /// The color for error messages and states.
 /// @group color-system
 /// @type Color
 $error: #d92800 !default;
-$error-lighter: tint($error, 2) !default;
-$error-darker: shade($error, 2) !default;
+$error-lighter: k-color-tint( $error, 2 ) !default;
+$error-darker: k-color-shade( $error, 2 ) !default;
 
 /// The dark color of the theme.
 /// @group color-system
@@ -214,10 +214,10 @@ $cursors: ( auto, default, none, context-menu, help, pointer, progress, wait, ce
 // Color constants
 $rgba-transparent: rgba( 0, 0, 0, 0 ); // stylelint-disable-line
 
-$gradient-transparent-to-black: rgba( black, 0), black; // stylelint-disable-line
-$gradient-transparent-to-white: rgba( white, 0), white; // stylelint-disable-line
-$gradient-black-to-transparent: black, rgba( black, 0); // stylelint-disable-line
-$gradient-white-to-transparent: white, rgba( white, 0); // stylelint-disable-line
+$gradient-transparent-to-black: rgba( black, 0 ), black; // stylelint-disable-line
+$gradient-transparent-to-white: rgba( white, 0 ), white; // stylelint-disable-line
+$gradient-black-to-transparent: black, rgba( black, 0 ); // stylelint-disable-line
+$gradient-white-to-transparent: white, rgba( white, 0 ); // stylelint-disable-line
 
 $gradient-rainbow: #ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff, #ff0000; // stylelint-disable-line
 
@@ -231,7 +231,7 @@ $disabled-text: #8d8d8d !default;
 
 $app-bg: $body-bg !default;
 $app-text: $body-text !default;
-$app-border: try-shade( $app-bg, 2 ) !default;
+$app-border: k-try-shade( $app-bg, 2 ) !default;
 
 
 // Components
@@ -241,7 +241,7 @@ $base-bg: #f0f0f0 !default;
 /// The text color of the components' chrome area.
 $base-text: $body-text !default;
 /// The border color of the components' chrome area.
-$base-border: try-shade( $base-bg, 2 ) !default;
+$base-border: k-try-shade( $base-bg, 2 ) !default;
 /// The gradient background of the components' chrome area.
 $base-gradient: rgba( white, .1 ), rgba( white, 0 ) !default;
 
@@ -259,11 +259,11 @@ $component-text: $body-text !default;
 $component-border: $base-border !default;
 
 /// The background of hovered items.
-$hovered-bg: try-shade( $base-bg, 1 ) !default;
+$hovered-bg: k-try-shade( $base-bg, 1 ) !default;
 /// The text color of hovered items.
 $hovered-text: $base-text !default;
 /// The border color of hovered items.
-$hovered-border: try-shade( $hovered-bg, 2 ) !default;
+$hovered-border: k-try-shade( $hovered-bg, 2 ) !default;
 /// The gradient background of hovered items.
 $hovered-gradient: $base-gradient !default;
 
@@ -272,17 +272,17 @@ $selected-bg: $primary !default;
 /// The text color of selected items.
 $selected-text: contrast-wcag( $selected-bg ) !default;
 /// The border color of selected items.
-$selected-border: try-shade( $selected-bg, 2 ) !default;
+$selected-border: k-try-shade( $selected-bg, 2 ) !default;
 /// The gradient background of selected items.
 $selected-gradient: $base-gradient !default;
 
-$selected-hover-bg: try-shade( $selected-bg, 1 ) !default;
+$selected-hover-bg: k-try-shade( $selected-bg, 1 ) !default;
 $selected-hover-text: contrast-wcag( $selected-hover-bg ) !default;
 $selected-hover-border: $selected-border !default;
 $selected-hover-gradient: $selected-gradient !default;
 
-$focused-shadow: inset 0 0 0 2px rgba(0, 0, 0, .13) !default;
-$primary-focused-shadow: inset 0 0 0 2px rgba($primary, .3) !default;
+$focused-shadow: inset 0 0 0 2px rgba( black, .13 ) !default;
+$primary-focused-shadow: inset 0 0 0 2px rgba( $primary, .3 ) !default;
 
 $transition: color .2s ease-in-out, background-color .2s ease-in-out, border-color .2s ease-in-out, box-shadow .2s ease-in-out !default;
 
@@ -297,7 +297,7 @@ $disabled-opacity: .6 !default;
 // TODO: refactor once we extract drag drop as separate module
 $font-size: 14px !default;
 $font-family: inherit !default;
-$line-height: ( 20 / 14 ) !default;
+$line-height: k-math-div( 20, 14 ) !default;
 
 
 // Drop Hint
@@ -305,7 +305,7 @@ $equilateral-index: 1.7320508076 !default;
 $equilateral-height: .8660254038 !default;
 
 $drop-hint-arrow-size: 8px !default;
-$drop-hint-arrow-spacing: ($drop-hint-arrow-size / 2) !default;
+$drop-hint-arrow-spacing: k-math-div( $drop-hint-arrow-size, 2 ) !default;
 $drop-hint-line-h-width: 20px !default;
 $drop-hint-line-h-height: 1px !default;
 $drop-hint-line-v-width: $drop-hint-line-h-height !default;
@@ -364,7 +364,7 @@ $zindex-loading: 100 !default;
 // Placeholder
 $placeholder-line-width: 100% !default;
 $placeholder-line-height: 10px !default;
-$placeholder-bg: rgba(0, 0, 0, .1) !default;
+$placeholder-bg: rgba( black, .1 ) !default;
 
 
 // Table
