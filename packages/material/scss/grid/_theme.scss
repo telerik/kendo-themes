@@ -1,151 +1,118 @@
 @import "@progress/kendo-theme-default/scss/grid/_theme.scss";
 
 @include exports ("grid/theme/material") {
-    $grid-filter-button-focus: rgba( black, .12 ) !default;
+    $kendo-grid-filter-button-focus: rgba( black, .12 ) !default;
 
     .k-grid {
 
         // Selected state
-        td.k-selected,
-        tr.k-selected {
-            color: $grid-selected-text;
-            background-color: $grid-selected-bg;
+        .k-table-td.k-selected,
+        .k-table-row.k-selected {
+            color: $kendo-grid-selected-text;
+            background-color: $kendo-grid-selected-bg;
         }
-        tr.k-selected > td {
+
+        .k-table-row.k-selected > .k-table-td {
             color: inherit;
             background-color: transparent;
         }
 
         // Hover, Focused state
-        table {
-            > tr:not(.k-detail-row):hover,
-            > tr:not(.k-detail-row).k-hover,
-            td:focus,
-            td.k-focus,
-            th:focus,
-            th.k-focus,
-            .k-master-row > td:focus,
-            .k-grouping-row > td:focus,
-            .k-detail-row > td:focus,
-            .k-group-footer > td:focus {
+        .k-table {
+            > .k-table-row:not(.k-detail-row):hover,
+            > .k-table-row:not(.k-detail-row).k-hover,
+            .k-table-td:focus,
+            .k-table-td.k-focus,
+            .k-table-th:focus,
+            .k-table-th.k-focus,
+            .k-master-row > .k-table-td:focus,
+            .k-grouping-row > .k-table-td:focus,
+            .k-detail-row > .k-table-td:focus,
+            .k-group-footer > .k-table-td:focus {
                 color: inherit;
-                background-color: $grid-hovered-bg;
+                background-color: $kendo-grid-hovered-bg;
             }
 
-            tr:hover,
-            tr.k-hover {
+            .k-table-row:hover,
+            .k-table-row.k-hover {
                 .k-grid-header-sticky,
                 .k-grid-footer-sticky {
                     color: inherit;
-                    background-color: $grid-sticky-hovered-bg;
+                    background-color: $kendo-grid-sticky-hovered-bg;
                 }
             }
 
-            td:focus,
-            td.k-focus,
-            th.k-focus,
-            th:focus,
-            .k-master-row > td:focus,
-            .k-grouping-row > td:focus,
-            .k-detail-row > td:focus,
-            .k-group-footer > td:focus {
-                &.k-grid-header-sticky,
-                &.k-grid-content-sticky,
-                &.k-grid-footer-sticky {
-                    color: inherit;
-                    background-color: $grid-sticky-hovered-bg;
+            .k-table-th,
+            .k-table-td,
+            .k-master-row > .k-table-td,
+            .k-grouping-row > .k-table-td,
+            .k-detail-row > .k-table-td,
+            .k-group-footer > .k-table-td {
+                &:focus,
+                &.k-focus {
+                    &.k-grid-header-sticky,
+                    &.k-grid-content-sticky,
+                    &.k-grid-footer-sticky {
+                        color: inherit;
+                        background-color: $kendo-grid-sticky-hovered-bg;
+                    }
                 }
             }
-
         }
+
         .k-grid-pager:focus,
         .k-grid-pager.k-focus {
             color: inherit;
         }
 
-        th,
-        td {
-            border-left-color: transparent;
-        }
-
-        &[dir="rtl"],
-        .k-rtl & {
-
-            th,
-            td {
-                border-right-color: transparent;
-            }
-
-            .k-grid-header {
-
-                thead > tr:not(:only-child) > th {
-                    border-right-color: $grid-border;
-                }
-            }
-
-            // Locked columns
-            .k-grid-header-locked,
-            .k-grid-content-locked,
-            .k-grid-header-locked thead > tr > th.k-header,
-            .k-grid-content-locked td {
-                border-left-color: $grid-sticky-header-border;
-                border-right-color: $grid-sticky-header-border;
-            }
-
-            .k-group-footer td {
-                border-top-width: 0;
-            }
-
-            .k-grid-header thead > tr:not(:only-child) > .k-grid-header-sticky,
-            .k-grid-footer-sticky {
-                border-right-color: $grid-sticky-header-border;
-                border-left-color: $grid-sticky-header-border;
-            }
+        .k-table-th,
+        .k-table-td {
+            border-inline-start-color: transparent;
         }
 
         .k-grid-header-locked,
         .k-grid-content-locked,
-        .k-grid-header-locked .k-header,
-        .k-grid-content-locked td {
-            border-top-color: $grid-header-border;
-            border-bottom-color: $grid-header-border;
+        .k-grid-header-locked .k-table-th,
+        .k-grid-content-locked .k-table-td {
+            border-top-color: $kendo-grid-header-border;
+            border-bottom-color: $kendo-grid-header-border;
 
             .k-group-footer {
-                &:hover td,
-                &.k-hover td {
+                &:hover .k-table-td,
+                &.k-hover .k-table-td {
                     color: inherit;
-                    @include fill( $bg: $grid-sticky-footer-hovered-bg );
+                    @include fill( $bg: $kendo-grid-sticky-footer-hovered-bg );
                 }
             }
         }
 
         .k-master-row {
             .k-grid-content-sticky {
-                border-color: $grid-sticky-border;
-                border-bottom-color: $grid-header-border;
+                border-color: $kendo-grid-sticky-border;
+                border-bottom-color: $kendo-grid-header-border;
             }
             .k-grid-row-sticky {
-                border-top-color: $grid-sticky-border;
-                border-bottom-color: $grid-sticky-border;
+                border-top-color: $kendo-grid-sticky-border;
+                border-bottom-color: $kendo-grid-sticky-border;
             }
         }
     }
 
     kendo-grid {
         .k-grid-content-sticky {
-            border-color: $grid-sticky-border;
-            border-bottom-color: $grid-header-border;
+            border-color: $kendo-grid-sticky-border;
+            border-bottom-color: $kendo-grid-header-border;
         }
-        .k-grid-row-sticky td {
-            border-top-color: $grid-sticky-border;
-            border-bottom-color: $grid-sticky-border;
+        .k-grid-row-sticky .k-table-td {
+            border-top-color: $kendo-grid-sticky-border;
+            border-bottom-color: $kendo-grid-sticky-border;
         }
     }
 
     .k-grid-header {
         .k-sorted,
         .k-link:hover {
-            color: $grid-text;
+            color: $kendo-grid-text;
 
             > .k-icon {
                 color: inherit;
@@ -153,18 +120,18 @@
         }
 
         .k-grid-filter,
-        .k-header-column-menu,
+        .k-table-th-column-menu,
         .k-grid-header-menu,
         .k-hierarchy-cell .k-icon {
             &:hover {
-                color: $grid-text;
+                color: $kendo-grid-text;
                 background-color: transparent;
             }
 
             &:focus,
             &.k-focus {
-                color: $grid-text;
-                background-color: $grid-filter-button-focus;
+                color: $kendo-grid-text;
+                background-color: $kendo-grid-filter-button-focus;
                 box-shadow: none;
             }
 
@@ -174,30 +141,28 @@
             }
         }
 
-        thead > tr:not(:only-child) > th {
-            border-left-color: $grid-border;
-
+        .k-table-thead > .k-table-row:not(:only-child) > .k-table-th {
             &.k-grid-header-sticky {
-                border-right-color: $grid-sticky-header-border;
-                border-left-color: $grid-sticky-header-border;
+                border-right-color: $kendo-grid-sticky-header-border;
+                border-left-color: $kendo-grid-sticky-header-border;
             }
         }
 
     }
 
-    thead.k-grid-header > tr:not(:only-child) > th {
-        border-left-color: $grid-border;
+    .k-table-thead.k-grid-header > .k-table-row:not(:only-child) > .k-table-th {
+        border-inline-start-color: $kendo-grid-border;
     }
 
     .k-group-footer {
-        td,
+        .k-table-td,
         .k-grid-footer-sticky {
-            background: $grid-sticky-footer-bg;
+            background: $kendo-grid-sticky-footer-bg;
         }
 
-        &:hover td,
-        &.k-hover td {
-            @include fill( $bg: $grid-sticky-footer-hovered-bg );
+        &:hover .k-table-td,
+        &.k-hover .k-table-td {
+            @include fill( $bg: $kendo-grid-sticky-footer-hovered-bg );
         }
     }
 

@@ -96,9 +96,9 @@ $pivotgrid-treeview-padding-x: 1.5rem !default;
 $pivotgrid-treeview-padding-y: 0px !default;
 
 // Legacy variables
-$pivotgrid-alt-bg: $grid-header-bg !default;
-$pivotgrid-alt-text: $grid-header-text !default;
-$pivotgrid-chrome-border: $grid-border !default;
+$pivotgrid-alt-bg: $kendo-grid-header-bg !default;
+$pivotgrid-alt-text: $kendo-grid-header-text !default;
+$pivotgrid-chrome-border: $kendo-grid-border !default;
 
 $pivotgrid-container-bg: $header-bg !default;
 $pivotgrid-row-headers-bg: k-try-shade( $header-bg, .5 ) !default;

@@ -1,24 +1,10 @@
-$grid-hierarchy-col-width: 32px !default;
-// TODO: perhaps these should be the values for cell-padding-x/-y
-$grid-grouping-row-border-top: 0px !default;
-$grid-group-footer-border-y: 1px !default;
-$grid-group-footer-second-cell-border: 0px !default;
-$grid-header-first-border: 1px !default;
-$grid-sorted-icon-spacing: 4px !default;
-$grid-header-menu-icon-spacing: 14px !default;
-$grid-group-indicator-border-radius: calc( #{$font-size} + #{$kendo-button-padding-y} ) !default;
-$grid-group-indicator-gap: 8px !default;
-
-$grid-group-dropclue-height: $kendo-chip-calc-size !default;
-$grid-group-dropclue-top: calc( ( #{$kendo-chip-calc-size} + #{$grid-grouping-header-padding-y * 2} - #{$grid-group-dropclue-height} ) / 2) !default;
-
 @import "@progress/kendo-theme-default/scss/grid/_layout.scss";
 
 @include exports ("grid/layout/material") {
 
     .k-grid {
 
-        .k-group-footer td {
+        .k-group-footer .k-table-td {
             border-top-width: 0;
         }
 
@@ -29,7 +15,7 @@ $grid-group-dropclue-top: calc( ( #{$kendo-chip-calc-size} + #{$grid-grouping-he
 
     .k-grid-header {
 
-        th {
+        .k-table-th {
             font-weight: 700;
 
             .k-grid-filter {
@@ -46,7 +32,7 @@ $grid-group-dropclue-top: calc( ( #{$kendo-chip-calc-size} + #{$grid-grouping-he
             border-radius: 50%;
         }
 
-        .k-resizable-columns th:not(.k-group-cell) {
+        .k-resizable-columns .k-table-th:not(.k-group-cell) {
             border-right-width: 1px;
             border-right-style: solid;
         }
@@ -69,8 +55,8 @@ $grid-group-dropclue-top: calc( ( #{$kendo-chip-calc-size} + #{$grid-grouping-he
 
     .k-grouping-dropclue {
         width: 0;
-        height: $grid-group-dropclue-height;
-        top: $grid-group-dropclue-top;
+        height: $kendo-grid-group-dropclue-height;
+        top: $kendo-grid-group-dropclue-top;
         border-style: solid;
         border-width: 0 2px 0 0;
 

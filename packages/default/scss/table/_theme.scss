@@ -60,19 +60,22 @@
 
 
     // Focus state
-    .k-table-tbody .k-table-row.k-focus,
-    .k-table-list .k-table-row.k-focus,
-    .k-table-tbody .k-table-td.k-focus,
-    .k-table-list .k-table-td.k-focus {
-        border-color: $kendo-table-focus-border;
-        color: $kendo-table-focus-text;
-        background-color: $kendo-table-focus-bg;
-        box-shadow: $kendo-table-focus-shadow;
+    .k-table-tbody .k-table-row,
+    .k-table-list .k-table-row,
+    .k-table-tbody .k-table-td,
+    .k-table-list .k-table-td {
+        &.k-focus,
+        &:focus {
+            border-color: $kendo-table-focus-border;
+            color: $kendo-table-focus-text;
+            background-color: $kendo-table-focus-bg;
+            box-shadow: $kendo-table-focus-shadow;
+        }
     }
 
 
     // Selected state
-    .k-table-tbody .k-table-row.k-selected,
+    .k-table-tbody .k-table-row.k-selected > .k-table-td,
     .k-table-list .k-table-row.k-selected {
         border-color: $kendo-table-selected-border;
         color: $kendo-table-selected-text;

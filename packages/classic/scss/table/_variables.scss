@@ -5,10 +5,10 @@
 $kendo-table-border-width: 1px !default;
 /// The width of vertical border of table cells.
 /// @group table
-$kendo-table-cell-vertical-border-width: $grid-cell-vertical-border-width !default;
+$kendo-table-cell-vertical-border-width: $kendo-grid-cell-vertical-border-width !default;
 /// The width of horizontal border of table cells.
 /// @group table
-$kendo-table-cell-horizontal-border-width: $grid-cell-horizontal-border-width !default;
+$kendo-table-cell-horizontal-border-width: $kendo-grid-cell-horizontal-border-width !default;
 
 /// The font size of the table if no size is specified.
 /// @group table
@@ -52,35 +52,35 @@ $kendo-table-sizes: (
 
 /// Background color of tables.
 /// @group table
-$kendo-table-bg: $grid-bg !default;
+$kendo-table-bg: $kendo-grid-bg !default;
 /// Text color of tables.
 /// @group table
-$kendo-table-text: $grid-text !default;
+$kendo-table-text: $kendo-grid-text !default;
 /// Border color of tables.
 /// @group table
-$kendo-table-border: $grid-border !default;
+$kendo-table-border: $kendo-grid-border !default;
 
 
 /// Background color of table headers.
 /// @group table
-$kendo-table-header-bg: $grid-header-bg !default;
+$kendo-table-header-bg: $kendo-grid-header-bg !default;
 /// Text color of table headers.
 /// @group table
-$kendo-table-header-text: $grid-header-text !default;
+$kendo-table-header-text: $kendo-grid-header-text !default;
 /// Border color of table headers.
 /// @group table
-$kendo-table-header-border: $grid-header-border !default;
+$kendo-table-header-border: $kendo-grid-header-border !default;
 
 
 /// Background color of table footers.
 /// @group table
-$kendo-table-footer-bg: $grid-footer-bg !default;
+$kendo-table-footer-bg: $kendo-grid-footer-bg !default;
 /// Text color of table footers.
 /// @group table
-$kendo-table-footer-text: $grid-footer-text !default;
+$kendo-table-footer-text: $kendo-grid-footer-text !default;
 /// Border color of table footers.
 /// @group table
-$kendo-table-footer-border: $grid-footer-border !default;
+$kendo-table-footer-border: $kendo-grid-footer-border !default;
 
 
 /// Background color of group rows in table.
@@ -96,24 +96,24 @@ $kendo-table-group-row-border: $kendo-table-header-border !default;
 
 /// Background color of alternating rows in table.
 /// @group table
-$kendo-table-alt-row-bg: $grid-alt-bg !default;
+$kendo-table-alt-row-bg: $kendo-grid-alt-bg !default;
 /// Text color of alternating rows in table.
 /// @group table
-$kendo-table-alt-row-text: $grid-alt-text !default;
+$kendo-table-alt-row-text: $kendo-grid-alt-text !default;
 /// Border color of alternating rows in table.
 /// @group table
-$kendo-table-alt-row-border: $grid-alt-border !default;
+$kendo-table-alt-row-border: $kendo-grid-alt-border !default;
 
 
 /// Background color of hovered rows in table.
 /// @group table
-$kendo-table-hover-bg: $grid-hovered-bg !default;
+$kendo-table-hover-bg: $kendo-grid-hovered-bg !default;
 /// Text color of hovered rows in table.
 /// @group table
-$kendo-table-hover-text: $grid-hovered-text !default;
+$kendo-table-hover-text: $kendo-grid-hovered-text !default;
 /// Border color of hovered rows in table.
 /// @group table
-$kendo-table-hover-border: $grid-hovered-border !default;
+$kendo-table-hover-border: $kendo-grid-hovered-border !default;
 
 
 /// Background color of focused rows in table.
@@ -127,15 +127,15 @@ $kendo-table-focus-text: null !default;
 $kendo-table-focus-border: null !default;
 /// Box shadow of focused rows in table.
 /// @group table
-$kendo-table-focus-shadow: $grid-focused-shadow !default;
+$kendo-table-focus-shadow: $kendo-grid-focused-shadow !default;
 
 
 /// Background color of selected rows in table.
 /// @group table
-$kendo-table-selected-bg: $grid-selected-bg !default;
+$kendo-table-selected-bg: $kendo-grid-selected-bg !default;
 /// Text color of selected rows in table.
 /// @group table
-$kendo-table-selected-text: $grid-selected-text !default;
+$kendo-table-selected-text: $kendo-grid-selected-text !default;
 /// Border color of selected rows in table.
 /// @group table
-$kendo-table-selected-border: $grid-selected-border !default;
+$kendo-table-selected-border: $kendo-grid-selected-border !default;

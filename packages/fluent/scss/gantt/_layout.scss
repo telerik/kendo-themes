@@ -115,6 +115,7 @@
                 flex: 1 1 auto;
                 overflow: hidden;
                 text-overflow: ellipsis;
+                white-space: nowrap;
             }
             .k-task-actions {
                 flex-shrink: 0;
@@ -374,13 +375,15 @@
     .k-gantt-tasks {
         position: relative;
 
-        td {
+        td,
+        .k-table-td {
             padding: 0;
             position: relative;
             vertical-align: middle;
         }
         td::after { content: "\200b"; }
     }
+
     .k-task-wrap {
         margin: 0 -21px;
         padding: 5px 21px;
@@ -556,6 +559,7 @@
         flex-direction: row;
         align-items: center;
         text-align: start;
+        white-space: nowrap;
     }
     .k-task-template {
         padding-block: var( --kendo-gantt-task-padding-y, #{$kendo-gantt-task-padding-y} );
