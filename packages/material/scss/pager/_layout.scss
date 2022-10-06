@@ -1,19 +1,21 @@
 @import "~@progress/kendo-theme-default/scss/pager/_layout.scss";
 
-@include exports( "pager/layout/material" ) {
+@include exports("pager/layout/material") {
 
-    // Responsive
-    .k-pager-md,
-    .k-pager-sm {
+    .k-pager {
 
-        .k-pager-numbers {
-
-            .k-current-page .k-link {
-                border-width: 0 0 1px;
+        .k-pager-numbers-wrap {
+            .k-button {
+                @include border-radius( $kendo-pager-number-border-radius );
             }
-
         }
 
+    }
+
+    .k-pager-numbers {
+        .k-button {
+            padding-inline: $kendo-button-padding-y;
+        }
     }
 
 }

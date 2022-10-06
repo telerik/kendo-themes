@@ -5,20 +5,20 @@
 
     // Pager items
     .k-pager-nav { @include border-radius( 0 ); }
-    .k-pager-first { @include border-left-radius-only( $pager-item-border-radius ); }
-    .k-pager-last { @include border-right-radius-only( $pager-item-border-radius ); }
+    .k-pager-first { @include border-left-radius-only( $kendo-pager-item-border-radius ); }
+    .k-pager-last { @include border-right-radius-only( $kendo-pager-item-border-radius ); }
 
     .k-rtl,
     [dir="rtl"] {
-        .k-pager-first { @include border-right-radius-only( $pager-item-border-radius ); }
-        .k-pager-last { @include border-left-radius-only( $pager-item-border-radius ); }
+        .k-pager-first { @include border-right-radius-only( $kendo-pager-item-border-radius ); }
+        .k-pager-last { @include border-left-radius-only( $kendo-pager-item-border-radius ); }
     }
 
 
     // Pager refresh
     .k-pager-refresh {
-        @include border-radius( $pager-item-border-radius );
-        border-width: $pager-item-border-width;
+        @include border-radius( $kendo-pager-item-border-radius );
+        border-width: $kendo-pager-item-border-width;
         border-style: solid;
     }
 

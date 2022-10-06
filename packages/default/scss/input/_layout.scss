@@ -408,6 +408,9 @@
                 padding: $_padding-y;
             }
         }
+        select.k-picker-#{$size} {
+            padding: $_padding-y $_padding-x;
+        }
     }
 
 

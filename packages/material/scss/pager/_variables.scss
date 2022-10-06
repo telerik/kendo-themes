@@ -1,66 +1,147 @@
 // Pager
-$pager-padding-x: k-map-get( $spacing, 2 ) !default;
-$pager-padding-y: k-map-get( $spacing, 2 ) !default;
-$pager-border-width: 1px !default;
 
-$pager-font-family: $font-family !default;
-$pager-font-size: $font-size !default;
-$pager-line-height: $line-height !default;
+/// Horizontal padding of the pager according to the pager size.
+/// @group pager
+$kendo-pager-padding-x: k-map-get( $spacing, 2 ) !default;
+$kendo-pager-padding-x-sm: k-map-get( $spacing, 1 ) !default;
+$kendo-pager-padding-x-md: k-map-get( $spacing, 2 ) !default;
+$kendo-pager-padding-x-lg: k-map-get( $spacing, 2 ) + k-map-get( $spacing, thin ) !default;
+/// Vertical padding of the pager according to the pager size.
+/// @group pager
+$kendo-pager-padding-y: $kendo-pager-padding-x !default;
+$kendo-pager-padding-y-sm: $kendo-pager-padding-x-sm !default;
+$kendo-pager-padding-y-md: $kendo-pager-padding-x-md !default;
+$kendo-pager-padding-y-lg: $kendo-pager-padding-x-lg !default;
 
-$pager-bg: $component-bg !default;
-$pager-text: if($dark-theme, $light-secondary-text, $dark-secondary-text) !default;
-$pager-border: $component-border !default;
+/// Minimum width of the pager items according to the pager size.
+/// @group pager
+$kendo-pager-item-min-width-sm: $kendo-button-calc-size-sm !default;
+$kendo-pager-item-min-width-md: $kendo-button-calc-size-md !default;
+$kendo-pager-item-min-width-lg: $kendo-button-calc-size-lg !default;
 
-$pager-focus-bg: k-try-shade( $pager-bg, .5 ) !default;
-$pager-focus-shadow: null !default;
+/// Margin between pager item groups according to the pager size.
+/// @group pager
+$kendo-pager-item-group-spacing-sm: k-map-get( $spacing, 1 ) + k-map-get( $spacing, thin ) !default;
+$kendo-pager-item-group-spacing-md: k-map-get( $spacing, 2 ) !default;
+$kendo-pager-item-group-spacing-lg: k-map-get( $spacing, 2 ) + k-map-get( $spacing, thin ) !default;
 
-$pager-section-spacing: $pager-padding-x !default;
+/// Border width of the pager.
+/// @group pager
+$kendo-pager-border-width: 1px !default;
+/// Font family of the pager.
+/// @group pager
+$kendo-pager-font-family: $font-family !default;
+/// Font size of the pager.
+/// @group pager
+$kendo-pager-font-size: $font-size !default;
+/// Line height of the pager.
+/// @group pager
+$kendo-pager-line-height: $line-height !default;
+/// Background color of the pager.
+/// @group pager
+$kendo-pager-bg: $component-bg !default;
+/// Text color of the pager.
+/// @group pager
+$kendo-pager-text: if($dark-theme, $light-secondary-text, $dark-secondary-text) !default;
+/// Border color of the pager.
+/// @group pager
+$kendo-pager-border: $component-border !default;
 
-$pager-item-padding-x: 0px !default;
-$pager-item-padding-y: 0px !default;
-$pager-item-border-width: 0px !default;
-$pager-item-border-radius: 5em !default;
-$pager-item-spacing: 0px !default;
+/// Background color of the focused pager.
+/// @group pager
+$kendo-pager-focus-bg: try-shade( $kendo-pager-bg, .5 ) !default;
+/// Box shadow of the focused pager.
+/// @group pager
+$kendo-pager-focus-shadow: null !default;
 
-$pager-item-bg: null !default;
-$pager-item-text: null !default;
-$pager-item-border: null !default;
+/// Spacing between the pager sections.
+/// @group pager
+$kendo-pager-section-spacing: $kendo-pager-padding-x !default;
 
-$pager-item-hover-bg: $kendo-list-item-hover-bg !default;
-$pager-item-hover-text: $pager-text !default;
-$pager-item-hover-border: null !default;
+/// Border width of the pager items.
+/// @group pager
+$kendo-pager-item-border-width: 0px !default;
+/// Border radius of the pager items.
+/// @group pager
+$kendo-pager-item-border-radius: 5em !default;
+/// Spacing around the pager items.
+/// @group pager
+$kendo-pager-item-spacing: 0px !default;
+/// Background color of the pager items.
+/// @group pager
+$kendo-pager-item-bg: null !default;
+/// Text color of the pager items.
+/// @group pager
+$kendo-pager-item-text: null !default;
+/// Border color of the pager items.
+/// @group pager
+$kendo-pager-item-border: null !default;
 
-$pager-item-selected-bg: $primary !default;
-$pager-item-selected-text: $primary-contrast !default;
-$pager-item-selected-border: null !default;
+/// Background color of the hovered pager items.
+/// @group pager
+$kendo-pager-item-hover-bg: $kendo-list-item-hover-bg !default;
+/// Text color of the hovered pager items.
+/// @group pager
+$kendo-pager-item-hover-text: $kendo-pager-text !default;
+/// Border color of the hovered pager items.
+/// @group pager
+$kendo-pager-item-hover-border: null !default;
+/// Background color of the selected pager items.
+/// @group pager
+$kendo-pager-item-selected-bg: $primary !default;
+/// Text color of the selected pager items.
+/// @group pager
+$kendo-pager-item-selected-text: $primary-contrast !default;
+/// Border color of the selected pager items.
+/// @group pager
+$kendo-pager-item-selected-border: null !default;
 
-$pager-number-padding-x: $pager-item-padding-x !default;
-$pager-number-padding-y: $pager-item-padding-y !default;
-$pager-number-border-width: $pager-item-border-width !default;
-$pager-number-border-radius: $pager-item-border-radius !default;
-$pager-number-spacing: $pager-item-spacing !default;
+/// Border radius of the pager numbers.
+/// @group pager
+$kendo-pager-number-border-radius: $kendo-pager-item-border-radius !default;
 
-$pager-item-focus-opacity: .12 !default;
-$pager-item-focus-bg: rgba( $kendo-list-item-hover-bg, $pager-item-focus-opacity ) !default;
-$pager-item-focus-shadow: null !default;
+/// Opacity of the focused pager items.
+/// @group pager
+$kendo-pager-item-focus-opacity: .12 !default;
+/// Background color of the focused pager items.
+/// @group pager
+$kendo-pager-item-focus-bg: rgba($kendo-list-item-hover-bg, $kendo-pager-item-focus-opacity) !default;
+/// Box shadow of the focused pager items.
+/// @group pager
+$kendo-pager-item-focus-shadow: null !default;
 
-$pager-number-bg: null !default;
-$pager-number-text: $body-text !default;
-$pager-number-border: null !default;
+/// Width of the pager inputs.
+/// @group pager
+$kendo-pager-input-width: 5em !default;
 
-$pager-number-hover-opacity: .04 !default;
-$pager-number-hover-bg: rgba( $pager-number-text, $pager-number-hover-opacity ) !default;
-$pager-number-hover-text: $pager-number-text !default;
-$pager-number-hover-border: null !default;
+/// Width of the pager dropdowns according to the pager size.
+/// @group pager
+$kendo-pager-dropdown-width-sm: 5em !default;
+$kendo-pager-dropdown-width-md: 5em !default;
+$kendo-pager-dropdown-width-lg: 5em !default;
 
-$pager-number-selected-opacity: .22 !default;
-$pager-number-selected-bg: rgba( $primary, $pager-number-selected-opacity ) !default;
-$pager-number-selected-text: $primary !default;
-$pager-number-selected-border: null !default;
-
-$pager-number-focus-opacity: .12 !default;
-$pager-number-focus-bg: rgba( $pager-number-text, $pager-number-focus-opacity ) !default;
-$pager-number-focus-shadow: null !default;
-
-$pager-input-width: 5em !default;
-$pager-dropdown-width: 5em !default;
+/// Sizes map of the pager.
+/// @group pager
+$kendo-pager-sizes: (
+    sm: (
+        padding-x: $kendo-pager-padding-x-sm,
+        padding-y: $kendo-pager-padding-y-sm,
+        item-group-spacing: $kendo-pager-item-group-spacing-sm,
+        item-min-width: $kendo-pager-item-min-width-sm,
+        pager-dropdown-width: $kendo-pager-dropdown-width-sm
+    ),
+    md: (
+        padding-x: $kendo-pager-padding-x-md,
+        padding-y: $kendo-pager-padding-y-md,
+        item-group-spacing: $kendo-pager-item-group-spacing-md,
+        item-min-width: $kendo-pager-item-min-width-md,
+        pager-dropdown-width: $kendo-pager-dropdown-width-md
+    ),
+    lg: (
+        padding-x: $kendo-pager-padding-x-lg,
+        padding-y: $kendo-pager-padding-y-lg,
+        item-group-spacing: $kendo-pager-item-group-spacing-lg,
+        item-min-width: $kendo-pager-item-min-width-lg,
+        pager-dropdown-width: $kendo-pager-dropdown-width-lg
+    )
+) !default;
