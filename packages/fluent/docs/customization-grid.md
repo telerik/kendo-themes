@@ -152,6 +152,276 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-grid-header-padding-x</td>
+    <td></td>
+<td>
+
+`$kendo-grid-padding-x`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the grid header.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-header-padding-y</td>
+    <td></td>
+<td>
+
+`$kendo-grid-padding-y`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the grid header.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-grouping-header-padding-x</td>
+    <td></td>
+<td>
+
+`$kendo-toolbar-padding-x-md`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the grid grouping header.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-grouping-header-padding-y</td>
+    <td></td>
+<td>
+
+`$kendo-toolbar-padding-y-md`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the grid grouping header.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-cell-padding-x</td>
+    <td></td>
+<td>
+
+`$kendo-grid-padding-x`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the grid cell.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-cell-padding-y</td>
+    <td></td>
+<td>
+
+`$kendo-grid-padding-y`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the grid cell.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-filter-cell-padding-x</td>
+    <td></td>
+<td>
+
+`$kendo-grid-padding-y`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the grid filter cell.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-filter-cell-padding-y</td>
+    <td></td>
+<td>
+
+`$kendo-grid-filter-cell-padding-x`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the grid filter cell.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-edit-cell-padding-x</td>
+    <td></td>
+<td>
+
+`$kendo-grid-cell-padding-x`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the grid edit cells.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-edit-cell-padding-y</td>
+    <td></td>
+<td>
+
+`map.get( $kendo-spacing, 1 ) + map.get( $kendo-spacing, hair )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the grid edit cells.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-group-dropclue-size</td>
+    <td></td>
+<td>
+
+`6px`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Size of the grid group drop clue.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-group-dropclue-line-size</td>
+    <td></td>
+<td>
+
+`1px`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line size of the grid group drop clue.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-group-dropclue-dot-size</td>
+    <td></td>
+<td>
+
+`$kendo-grid-group-dropclue-size`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Dot size of the grid group drop clue.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-group-dropclue-height</td>
+    <td></td>
+<td>
+
+`calc( #{$kendo-chip-calc-size} + #{$kendo-grid-group-dropclue-size} )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Height of the grid  group drop clue.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-group-dropclue-top</td>
+    <td></td>
+<td>
+
+`2px`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Top offset of the grid group drop clue.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-grid-bg</td>
     <td></td>
 <td>
@@ -440,42 +710,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-grid-header-padding-x</td>
-    <td></td>
-<td>
-
-`$kendo-grid-padding-x`
-
-</td>
-<td>
-
-
-
-</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the grid header.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-grid-header-padding-y</td>
-    <td></td>
-<td>
-
-`$kendo-grid-padding-y`
-
-</td>
-<td>
-
-
-
-</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the grid header.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-grid-header-border-width-y</td>
     <td></td>
 <td>
@@ -656,42 +890,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-grid-footer-padding-x</td>
-    <td></td>
-<td>
-
-`$kendo-grid-header-padding-x`
-
-</td>
-<td>
-
-
-
-</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the grid footer.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-grid-footer-padding-y</td>
-    <td></td>
-<td>
-
-`$kendo-grid-header-padding-y`
-
-</td>
-<td>
-
-
-
-</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the grid footer.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-grid-footer-bg</td>
     <td></td>
 <td>
@@ -743,42 +941,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of grid footer.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-grid-grouping-header-padding-x</td>
-    <td></td>
-<td>
-
-`$kendo-toolbar-padding-x-md`
-
-</td>
-<td>
-
-
-
-</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the grid grouping header.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-grid-grouping-header-padding-y</td>
-    <td></td>
-<td>
-
-`$kendo-toolbar-padding-y-md`
-
-</td>
-<td>
-
-
-
-</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the grid grouping header.</div></div>
     </td>
 </tr>
 <tr>
@@ -1016,42 +1178,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-grid-cell-padding-x</td>
-    <td></td>
-<td>
-
-`$kendo-grid-padding-x`
-
-</td>
-<td>
-
-
-
-</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the grid cell.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-grid-cell-padding-y</td>
-    <td></td>
-<td>
-
-`$kendo-grid-padding-y`
-
-</td>
-<td>
-
-
-
-</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the grid cell.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-grid-cell-border-width-y</td>
     <td></td>
 <td>
@@ -1247,42 +1373,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the sorted grid cells.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-grid-edit-cell-padding-x</td>
-    <td></td>
-<td>
-
-`$kendo-grid-cell-padding-x`
-
-</td>
-<td>
-
-
-
-</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the grid edit cells.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-grid-edit-cell-padding-y</td>
-    <td></td>
-<td>
-
-`map.get( $kendo-spacing, 1 ) + map.get( $kendo-spacing, hair )`
-
-</td>
-<td>
-
-
-
-</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the grid edit cells.</div></div>
     </td>
 </tr>
 <tr>
@@ -1517,96 +1607,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical border width of the grid group footer.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-grid-group-dropclue-size</td>
-    <td></td>
-<td>
-
-`6px`
-
-</td>
-<td>
-
-
-
-</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Size of the grid group drop clue.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-grid-group-dropclue-line-size</td>
-    <td></td>
-<td>
-
-`1px`
-
-</td>
-<td>
-
-
-
-</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line size of the grid group drop clue.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-grid-group-dropclue-dot-size</td>
-    <td></td>
-<td>
-
-`$kendo-grid-group-dropclue-size`
-
-</td>
-<td>
-
-
-
-</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Dot size of the grid group drop clue.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-grid-group-dropclue-height</td>
-    <td></td>
-<td>
-
-`calc( #{$kendo-chip-calc-size} + #{$kendo-grid-group-dropclue-size} )`
-
-</td>
-<td>
-
-
-
-</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Height of the grid  group drop clue.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-grid-group-dropclue-top</td>
-    <td></td>
-<td>
-
-`2px`
-
-</td>
-<td>
-
-
-
-</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Top offset of the grid group drop clue.</div></div>
     </td>
 </tr>
 <tr>
@@ -2507,96 +2507,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the grid column menu group.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-grid-column-menu-button-padding-y</td>
-    <td></td>
-<td>
-
-`$kendo-button-padding-y-md`
-
-</td>
-<td>
-
-
-
-</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the grid column menu button.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-grid-column-menu-button-padding-x</td>
-    <td></td>
-<td>
-
-`$kendo-button-padding-y-md`
-
-</td>
-<td>
-
-
-
-</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the grid column menu button.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-grid-column-menu-button-width</td>
-    <td></td>
-<td>
-
-`$kendo-button-calc-size`
-
-</td>
-<td>
-
-
-
-</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Default width of the grid column menu button.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-grid-column-menu-button-height</td>
-    <td></td>
-<td>
-
-`$kendo-grid-column-menu-button-width`
-
-</td>
-<td>
-
-
-
-</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Default height of the grid column menu button.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-grid-column-menu-button-line-height</td>
-    <td></td>
-<td>
-
-`$kendo-button-line-height-md`
-
-</td>
-<td>
-
-
-
-</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of the grid column menu button.</div></div>
     </td>
 </tr>
 <tr>
