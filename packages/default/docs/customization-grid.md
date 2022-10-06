@@ -26,11 +26,227 @@ The following table lists the available variables for customization.
 </thead>
 <tbody>
         <tr>
-    <td>$grid-bg</td>
+    <td>$kendo-grid-padding-x</td>
+    <td>Number</td>
+<td>
+
+`$kendo-table-cell-padding-x-md`
+
+</td>
+<td>
+
+`12px`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the grid.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-padding-y</td>
+    <td>Number</td>
+<td>
+
+`$kendo-table-cell-padding-y-md`
+
+</td>
+<td>
+
+`8px`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the grid.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-header-padding-x</td>
+    <td>Number</td>
+<td>
+
+`$kendo-grid-padding-x`
+
+</td>
+<td>
+
+`12px`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the grid header.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-header-padding-y</td>
+    <td>Number</td>
+<td>
+
+`$kendo-grid-padding-y`
+
+</td>
+<td>
+
+`8px`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the grid header.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-grouping-header-padding-x</td>
+    <td>Number</td>
+<td>
+
+`$kendo-grid-padding-y`
+
+</td>
+<td>
+
+`8px`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the grid grouping header.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-grouping-header-padding-y</td>
+    <td>Number</td>
+<td>
+
+`$kendo-grid-grouping-header-padding-x`
+
+</td>
+<td>
+
+`8px`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the grid grouping header.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-cell-padding-x</td>
+    <td>Number</td>
+<td>
+
+`$kendo-grid-padding-x`
+
+</td>
+<td>
+
+`12px`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the grid cell.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-cell-padding-y</td>
+    <td>Number</td>
+<td>
+
+`$kendo-grid-padding-y`
+
+</td>
+<td>
+
+`8px`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the grid cell.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-filter-cell-padding-x</td>
+    <td>Number</td>
+<td>
+
+`$kendo-grid-padding-y`
+
+</td>
+<td>
+
+`8px`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the grid filter cell.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-filter-cell-padding-y</td>
+    <td>Number</td>
+<td>
+
+`$kendo-grid-filter-cell-padding-x`
+
+</td>
+<td>
+
+`8px`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the grid filter cell.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-edit-cell-padding-x</td>
+    <td>Number</td>
+<td>
+
+`$kendo-grid-cell-padding-x`
+
+</td>
+<td>
+
+`12px`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the grid edit cell.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-edit-cell-padding-y</td>
+    <td>Number</td>
+<td>
+
+`3px`
+
+</td>
+<td>
+
+`3px`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the grid filter cell.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-bg</td>
     <td>Color</td>
 <td>
 
-`$component-bg`
+`$kendo-table-bg`
 
 </td>
 <td>
@@ -46,11 +262,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$grid-text</td>
+    <td>$kendo-grid-text</td>
     <td>Color</td>
 <td>
 
-`$component-text`
+`$kendo-table-text`
 
 </td>
 <td>
@@ -66,11 +282,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$grid-border</td>
+    <td>$kendo-grid-border</td>
     <td>Color</td>
 <td>
 
-`$component-border`
+`$kendo-table-border`
 
 </td>
 <td>
@@ -86,11 +302,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$grid-header-bg</td>
+    <td>$kendo-grid-header-bg</td>
     <td>Color</td>
 <td>
 
-`$header-bg`
+`$kendo-table-header-bg`
 
 </td>
 <td>
@@ -106,11 +322,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$grid-header-text</td>
+    <td>$kendo-grid-header-text</td>
     <td>Color</td>
 <td>
 
-`$header-text`
+`$kendo-table-header-text`
 
 </td>
 <td>
@@ -126,11 +342,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$grid-header-border</td>
+    <td>$kendo-grid-header-border</td>
     <td>Color</td>
 <td>
 
-`$grid-border`
+`$kendo-table-header-border`
 
 </td>
 <td>
@@ -146,11 +362,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$grid-header-gradient</td>
+    <td>$kendo-grid-header-gradient</td>
     <td>Null</td>
 <td>
 
-`$header-gradient`
+`$kendo-table-header-gradient`
 
 </td>
 <td>
@@ -164,11 +380,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$grid-footer-bg</td>
+    <td>$kendo-grid-footer-bg</td>
     <td>Color</td>
 <td>
 
-`$grid-header-bg`
+`$kendo-grid-header-bg`
 
 </td>
 <td>
@@ -184,11 +400,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$grid-footer-text</td>
+    <td>$kendo-grid-footer-text</td>
     <td>Color</td>
 <td>
 
-`$grid-header-text`
+`$kendo-grid-header-text`
 
 </td>
 <td>
@@ -204,11 +420,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$grid-footer-border</td>
+    <td>$kendo-grid-footer-border</td>
     <td>Color</td>
 <td>
 
-`$grid-header-border`
+`$kendo-grid-header-border`
 
 </td>
 <td>
@@ -224,11 +440,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$grid-alt-bg</td>
+    <td>$kendo-grid-alt-bg</td>
     <td>Color</td>
 <td>
 
-`rgba( k-contrast-legacy( $grid-bg ), .04 )`
+`$kendo-table-alt-row-bg`
 
 </td>
 <td>
@@ -244,11 +460,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$grid-alt-text</td>
+    <td>$kendo-grid-alt-text</td>
     <td>Null</td>
 <td>
 
-`null`
+`$kendo-table-alt-row-text`
 
 </td>
 <td>
@@ -262,11 +478,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$grid-alt-border</td>
+    <td>$kendo-grid-alt-border</td>
     <td>Null</td>
 <td>
 
-`null`
+`$kendo-table-alt-row-border`
 
 </td>
 <td>
@@ -280,11 +496,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$grid-hovered-bg</td>
+    <td>$kendo-grid-hovered-bg</td>
     <td>Color</td>
 <td>
 
-`k-color-darken($grid-bg, 7%)`
+`$kendo-table-hover-bg`
 
 </td>
 <td>
@@ -300,11 +516,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$grid-hovered-text</td>
+    <td>$kendo-grid-hovered-text</td>
     <td>Null</td>
 <td>
 
-`null`
+`$kendo-table-hover-text`
 
 </td>
 <td>
@@ -318,11 +534,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$grid-hovered-border</td>
+    <td>$kendo-grid-hovered-border</td>
     <td>Null</td>
 <td>
 
-`null`
+`$kendo-table-hover-border`
 
 </td>
 <td>
@@ -336,11 +552,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$grid-selected-bg</td>
+    <td>$kendo-grid-selected-bg</td>
     <td>Color</td>
 <td>
 
-`rgba($selected-bg, .25)`
+`$kendo-table-selected-bg`
 
 </td>
 <td>
@@ -356,11 +572,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$grid-selected-text</td>
+    <td>$kendo-grid-selected-text</td>
     <td>Null</td>
 <td>
 
-`null`
+`$kendo-table-selected-text`
 
 </td>
 <td>
@@ -374,11 +590,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$grid-selected-border</td>
+    <td>$kendo-grid-selected-border</td>
     <td>Null</td>
 <td>
 
-`null`
+`$kendo-table-selected-border`
 
 </td>
 <td>

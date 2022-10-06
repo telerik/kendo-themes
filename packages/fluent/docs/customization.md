@@ -19515,6 +19515,276 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
+    <td>$kendo-grid-header-padding-x</td>
+    <td></td>
+<td>
+
+`$kendo-grid-padding-x`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the grid header.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-header-padding-y</td>
+    <td></td>
+<td>
+
+`$kendo-grid-padding-y`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the grid header.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-grouping-header-padding-x</td>
+    <td></td>
+<td>
+
+`$kendo-toolbar-padding-x-md`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the grid grouping header.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-grouping-header-padding-y</td>
+    <td></td>
+<td>
+
+`$kendo-toolbar-padding-y-md`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the grid grouping header.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-cell-padding-x</td>
+    <td></td>
+<td>
+
+`$kendo-grid-padding-x`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the grid cell.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-cell-padding-y</td>
+    <td></td>
+<td>
+
+`$kendo-grid-padding-y`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the grid cell.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-filter-cell-padding-x</td>
+    <td></td>
+<td>
+
+`$kendo-grid-padding-y`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the grid filter cell.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-filter-cell-padding-y</td>
+    <td></td>
+<td>
+
+`$kendo-grid-filter-cell-padding-x`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the grid filter cell.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-edit-cell-padding-x</td>
+    <td></td>
+<td>
+
+`$kendo-grid-cell-padding-x`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the grid edit cells.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-edit-cell-padding-y</td>
+    <td></td>
+<td>
+
+`map.get( $kendo-spacing, 1 ) + map.get( $kendo-spacing, hair )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the grid edit cells.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-group-dropclue-size</td>
+    <td></td>
+<td>
+
+`6px`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Size of the grid group drop clue.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-group-dropclue-line-size</td>
+    <td></td>
+<td>
+
+`1px`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line size of the grid group drop clue.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-group-dropclue-dot-size</td>
+    <td></td>
+<td>
+
+`$kendo-grid-group-dropclue-size`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Dot size of the grid group drop clue.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-group-dropclue-height</td>
+    <td></td>
+<td>
+
+`calc( #{$kendo-chip-calc-size} + #{$kendo-grid-group-dropclue-size} )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Height of the grid  group drop clue.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-grid-group-dropclue-top</td>
+    <td></td>
+<td>
+
+`2px`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Top offset of the grid group drop clue.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-grid-bg</td>
     <td></td>
 <td>
@@ -19803,42 +20073,6 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-grid-header-padding-x</td>
-    <td></td>
-<td>
-
-`$kendo-grid-padding-x`
-
-</td>
-<td>
-
-
-
-</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the grid header.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-grid-header-padding-y</td>
-    <td></td>
-<td>
-
-`$kendo-grid-padding-y`
-
-</td>
-<td>
-
-
-
-</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the grid header.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-grid-header-border-width-y</td>
     <td></td>
 <td>
@@ -20019,42 +20253,6 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-grid-footer-padding-x</td>
-    <td></td>
-<td>
-
-`$kendo-grid-header-padding-x`
-
-</td>
-<td>
-
-
-
-</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the grid footer.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-grid-footer-padding-y</td>
-    <td></td>
-<td>
-
-`$kendo-grid-header-padding-y`
-
-</td>
-<td>
-
-
-
-</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the grid footer.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-grid-footer-bg</td>
     <td></td>
 <td>
@@ -20106,42 +20304,6 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of grid footer.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-grid-grouping-header-padding-x</td>
-    <td></td>
-<td>
-
-`$kendo-toolbar-padding-x-md`
-
-</td>
-<td>
-
-
-
-</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the grid grouping header.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-grid-grouping-header-padding-y</td>
-    <td></td>
-<td>
-
-`$kendo-toolbar-padding-y-md`
-
-</td>
-<td>
-
-
-
-</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the grid grouping header.</div></div>
     </td>
 </tr>
 <tr>
@@ -20379,42 +20541,6 @@ The following table lists the available variables for customizing the Fluent the
     </td>
 </tr>
 <tr>
-    <td>$kendo-grid-cell-padding-x</td>
-    <td></td>
-<td>
-
-`$kendo-grid-padding-x`
-
-</td>
-<td>
-
-
-
-</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the grid cell.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-grid-cell-padding-y</td>
-    <td></td>
-<td>
-
-`$kendo-grid-padding-y`
-
-</td>
-<td>
-
-
-
-</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the grid cell.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-grid-cell-border-width-y</td>
     <td></td>
 <td>
@@ -20610,42 +20736,6 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the sorted grid cells.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-grid-edit-cell-padding-x</td>
-    <td></td>
-<td>
-
-`$kendo-grid-cell-padding-x`
-
-</td>
-<td>
-
-
-
-</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the grid edit cells.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-grid-edit-cell-padding-y</td>
-    <td></td>
-<td>
-
-`map.get( $kendo-spacing, 1 ) + map.get( $kendo-spacing, hair )`
-
-</td>
-<td>
-
-
-
-</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the grid edit cells.</div></div>
     </td>
 </tr>
 <tr>
@@ -20880,96 +20970,6 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical border width of the grid group footer.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-grid-group-dropclue-size</td>
-    <td></td>
-<td>
-
-`6px`
-
-</td>
-<td>
-
-
-
-</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Size of the grid group drop clue.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-grid-group-dropclue-line-size</td>
-    <td></td>
-<td>
-
-`1px`
-
-</td>
-<td>
-
-
-
-</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line size of the grid group drop clue.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-grid-group-dropclue-dot-size</td>
-    <td></td>
-<td>
-
-`$kendo-grid-group-dropclue-size`
-
-</td>
-<td>
-
-
-
-</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Dot size of the grid group drop clue.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-grid-group-dropclue-height</td>
-    <td></td>
-<td>
-
-`calc( #{$kendo-chip-calc-size} + #{$kendo-grid-group-dropclue-size} )`
-
-</td>
-<td>
-
-
-
-</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Height of the grid  group drop clue.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-grid-group-dropclue-top</td>
-    <td></td>
-<td>
-
-`2px`
-
-</td>
-<td>
-
-
-
-</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Top offset of the grid group drop clue.</div></div>
     </td>
 </tr>
 <tr>
@@ -21870,96 +21870,6 @@ The following table lists the available variables for customizing the Fluent the
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the grid column menu group.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-grid-column-menu-button-padding-y</td>
-    <td></td>
-<td>
-
-`$kendo-button-padding-y-md`
-
-</td>
-<td>
-
-
-
-</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the grid column menu button.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-grid-column-menu-button-padding-x</td>
-    <td></td>
-<td>
-
-`$kendo-button-padding-y-md`
-
-</td>
-<td>
-
-
-
-</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the grid column menu button.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-grid-column-menu-button-width</td>
-    <td></td>
-<td>
-
-`$kendo-button-calc-size`
-
-</td>
-<td>
-
-
-
-</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Default width of the grid column menu button.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-grid-column-menu-button-height</td>
-    <td></td>
-<td>
-
-`$kendo-grid-column-menu-button-width`
-
-</td>
-<td>
-
-
-
-</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Default height of the grid column menu button.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-grid-column-menu-button-line-height</td>
-    <td></td>
-<td>
-
-`$kendo-button-line-height-md`
-
-</td>
-<td>
-
-
-
-</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of the grid column menu button.</div></div>
     </td>
 </tr>
 <tr>
@@ -43192,8 +43102,8 @@ The following table lists the available variables for customizing the Fluent the
     sm: (
         font-size: var( --kendo-font-size, inherit ),
         line-height: var( --kendo-line-height, inherit ),
-        cell-padding-x: map.get( $kendo-spacing, 3 ),
-        cell-padding-y: map.get( $kendo-spacing, 3 ) - map.get( $kendo-spacing, thin ),
+        cell-padding-x: $kendo-table-cell-padding-x-sm,
+        cell-padding-y: $kendo-table-cell-padding-y-sm,
         group-label-padding-x: $kendo-list-item-group-label-padding-x-sm,
         group-label-padding-y: $kendo-list-item-group-label-padding-y-sm,
         group-label-font-size: $kendo-list-item-group-label-font-size-sm
@@ -43201,8 +43111,8 @@ The following table lists the available variables for customizing the Fluent the
     md: (
         font-size: var( --kendo-font-size, inherit ),
         line-height: var( --kendo-line-height, inherit ),
-        cell-padding-x: map.get( $kendo-spacing, 3 ),
-        cell-padding-y: map.get( $kendo-spacing, 3 ),
+        cell-padding-x: $kendo-table-cell-padding-x-md,
+        cell-padding-y: $kendo-table-cell-padding-y-md,
         group-label-padding-x: $kendo-list-item-group-label-padding-x-md,
         group-label-padding-y: $kendo-list-item-group-label-padding-y-md,
         group-label-font-size: $kendo-list-item-group-label-font-size-md
@@ -43210,8 +43120,8 @@ The following table lists the available variables for customizing the Fluent the
     lg: (
         font-size: var( --kendo-font-size, inherit ),
         line-height: var( --kendo-line-height, inherit ),
-        cell-padding-x: map.get( $kendo-spacing, 3 ),
-        cell-padding-y: map.get( $kendo-spacing, 3 ) + map.get( $kendo-spacing, thin ),
+        cell-padding-x: $kendo-table-cell-padding-x-lg,
+        cell-padding-y: $kendo-table-cell-padding-y-lg,
         group-label-padding-x: $kendo-list-item-group-label-padding-x-lg,
         group-label-padding-y: $kendo-list-item-group-label-padding-y-lg,
         group-label-font-size: $kendo-list-item-group-label-font-size-lg

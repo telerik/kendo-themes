@@ -142,8 +142,8 @@ The following table lists the available variables for customization.
     sm: (
         font-size: var( --kendo-font-size, inherit ),
         line-height: var( --kendo-line-height, inherit ),
-        cell-padding-x: map.get( $kendo-spacing, 3 ),
-        cell-padding-y: map.get( $kendo-spacing, 3 ) - map.get( $kendo-spacing, thin ),
+        cell-padding-x: $kendo-table-cell-padding-x-sm,
+        cell-padding-y: $kendo-table-cell-padding-y-sm,
         group-label-padding-x: $kendo-list-item-group-label-padding-x-sm,
         group-label-padding-y: $kendo-list-item-group-label-padding-y-sm,
         group-label-font-size: $kendo-list-item-group-label-font-size-sm
@@ -151,8 +151,8 @@ The following table lists the available variables for customization.
     md: (
         font-size: var( --kendo-font-size, inherit ),
         line-height: var( --kendo-line-height, inherit ),
-        cell-padding-x: map.get( $kendo-spacing, 3 ),
-        cell-padding-y: map.get( $kendo-spacing, 3 ),
+        cell-padding-x: $kendo-table-cell-padding-x-md,
+        cell-padding-y: $kendo-table-cell-padding-y-md,
         group-label-padding-x: $kendo-list-item-group-label-padding-x-md,
         group-label-padding-y: $kendo-list-item-group-label-padding-y-md,
         group-label-font-size: $kendo-list-item-group-label-font-size-md
@@ -160,8 +160,8 @@ The following table lists the available variables for customization.
     lg: (
         font-size: var( --kendo-font-size, inherit ),
         line-height: var( --kendo-line-height, inherit ),
-        cell-padding-x: map.get( $kendo-spacing, 3 ),
-        cell-padding-y: map.get( $kendo-spacing, 3 ) + map.get( $kendo-spacing, thin ),
+        cell-padding-x: $kendo-table-cell-padding-x-lg,
+        cell-padding-y: $kendo-table-cell-padding-y-lg,
         group-label-padding-x: $kendo-list-item-group-label-padding-x-lg,
         group-label-padding-y: $kendo-list-item-group-label-padding-y-lg,
         group-label-font-size: $kendo-list-item-group-label-font-size-lg
