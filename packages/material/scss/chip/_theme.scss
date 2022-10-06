@@ -11,7 +11,7 @@
             &:hover,
             &.k-hover {
                 @include fill(
-                    $bg: rgba($color, .16 ),
+                    $bg: rgba( $color, .16 ),
                     $color: $color
                 );
             }
@@ -20,7 +20,7 @@
             &.k-focus {
                 @include box-shadow( none );
                 @include fill(
-                    $bg: rgba($color, .24),
+                    $bg: rgba( $color, .24),
                     $color: $color
                 );
             }
@@ -46,7 +46,7 @@
             &:hover,
             &.k-hover {
                 @include fill(
-                    $bg: rgba($color, .08 ),
+                    $bg: rgba( $color, .08 ),
                     $color: $color
                 );
             }

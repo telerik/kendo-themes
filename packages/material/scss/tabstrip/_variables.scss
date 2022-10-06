@@ -60,7 +60,7 @@ $tabstrip-item-hovered-text: $body-text !default;
 /// Border color of hovered tabs
 /// @group tabstrip
 $tabstrip-item-hovered-border: null !default;
-/// Background gradent of hovered tabs
+/// Background gradient of hovered tabs
 /// @group tabstrip
 $tabstrip-item-hovered-gradient: null !default;
 
@@ -79,17 +79,17 @@ $tabstrip-item-selected-gradient: null !default;
 
 $tabstrip-item-focused-shadow: $kendo-list-item-focus-shadow !default;
 
-$tabstrip-item-dragging-shadow: 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12), 0 2px 4px -1px rgba(0, 0, 0, .2) !default;
+$tabstrip-item-dragging-shadow: 0 4px 5px 0 rgba( black, .14 ), 0 1px 10px 0 rgba( black, .12 ), 0 2px 4px -1px rgba( black, .2 ) !default;
 
 $tabstrip-indicator-size: 2px !default;
 $tabstrip-indicator-color: $primary !default;
 
 /// Horizontal padding of tabstrip content
 /// @group tabstrip
-$tabstrip-content-padding-x: map-get( $spacing, 4 ) !default;
+$tabstrip-content-padding-x: k-map-get( $spacing, 4 ) !default;
 /// Vertical padding of tabstrip content
 /// @group tabstrip
-$tabstrip-content-padding-y: map-get( $spacing, 4 ) !default;
+$tabstrip-content-padding-y: k-map-get( $spacing, 4 ) !default;
 /// Width of border around tabstrip content
 /// @group tabstrip
 $tabstrip-content-border-width: 0px !default;

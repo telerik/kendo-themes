@@ -82,7 +82,7 @@ $theme: material-theme(
 
 /// Color of shadows
 /// @group shadows
-$elevation: map-get( $theme, elevation ) !default;
+$elevation: k-map-get( $theme, elevation ) !default;
 /// Shadow for switch.
 /// Equivalent to material elevation 1.
 /// @group shadows
@@ -108,7 +108,7 @@ $box-shadow-depth-5: 0 11px 15px -7px rgba( $elevation, .2 ), 0 24px 38px 3px rg
 // Icons
 $icon-size: 16px !default;
 $icon-size-lg: 32px !default;
-$icon-spacing: map-get( $spacing, 2 ) !default;
+$icon-spacing: k-map-get( $spacing, 2 ) !default;
 
 /// The URL to the icon font that will be used by the theme
 /// The default value of `null` embeds the package font with a `data:` URL
@@ -119,14 +119,14 @@ $icon-font-url: null !default;
 // Metrics
 $padding-x: 16px !default;
 $padding-y: 4px !default;
-$padding-x-sm: $padding-x / 2 !default;
-$padding-y-sm: $padding-y / 2 !default;
+$padding-x-sm: k-math-div( $padding-x, 2 ) !default;
+$padding-y-sm: k-math-div( $padding-y, 2 ) !default;
 $padding-x-lg: $padding-x * 1.5 !default;
 $padding-y-lg: $padding-y * 1.5 !default;
 
 /// Border radius for all components.
-$kendo-border-radius: map-get( $spacing, 1 ) !default;
-$kendo-border-radius-sm: $kendo-border-radius / 2 !default;
+$kendo-border-radius: k-map-get( $spacing, 1 ) !default;
+$kendo-border-radius-sm: k-math-div( $kendo-border-radius, 2 ) !default;
 $kendo-border-radius-md: $kendo-border-radius !default;
 $kendo-border-radius-lg: $kendo-border-radius * 1.5 !default;
 
@@ -150,7 +150,7 @@ $zindex-window: 2 !default;
 
 
 // Color settings
-$dark-theme: map-get($theme, is-dark) !default;
+$dark-theme: k-map-get( $theme, is-dark ) !default;
 
 
 // Theme colors
@@ -198,29 +198,29 @@ $tertiary-contrast: material-color($tertiary-palette, main-contrast) !default;
 /// @group color-system
 /// @type Color
 $info: #0058e9 !default;
-$info-lighter: tint( $info, 2 ) !default;
-$info-darker: shade( $info, 2 ) !default;
+$info-lighter: k-color-tint( $info, 2 ) !default;
+$info-darker: k-color-shade( $info, 2 ) !default;
 
 /// The color for success messages and states.
 /// @group color-system
 /// @type Color
 $success: #37b400 !default;
-$success-lighter: tint( $success, 2 ) !default;
-$success-darker: shade( $success, 2 ) !default;
+$success-lighter: k-color-tint( $success, 2 ) !default;
+$success-darker: k-color-shade( $success, 2 ) !default;
 
 /// The color for warning messages and states.
 /// @group color-system
 /// @type Color
 $warning: #ffc000 !default;
-$warning-lighter: tint( $warning, 2 ) !default;
-$warning-darker: shade( $warning, 2 ) !default;
+$warning-lighter: k-color-tint( $warning, 2 ) !default;
+$warning-darker: k-color-shade( $warning, 2 ) !default;
 
 /// The color for error messages and states.
 /// @group color-system
 /// @type Color
 $error: #f31700 !default;
-$error-lighter: tint( $error, 2 ) !default;
-$error-darker: shade( $error, 2 ) !default;
+$error-lighter: k-color-tint( $error, 2 ) !default;
+$error-darker: k-color-shade( $error, 2 ) !default;
 
 /// The dark color of the theme.
 /// @group color-system
@@ -258,15 +258,15 @@ $cursors: ( auto, default, none, context-menu, help, pointer, progress, wait, ce
 
 
 // Root styles
-$body-bg: map-get($theme, body-bg) !default;
-$body-text: map-get($theme, body-text) !default;
+$body-bg: k-map-get( $theme, body-bg ) !default;
+$body-text: k-map-get( $theme, body-text ) !default;
 
-$subtle-text: map-get($theme, subtle-text) !default;
-$disabled-text: map-get($theme, disabled-text) !default;
+$subtle-text: k-map-get( $theme, subtle-text ) !default;
+$disabled-text: k-map-get( $theme, disabled-text ) !default;
 
 $app-bg: $body-bg !default;
 $app-text: $body-text !default;
-$app-border: map-get($theme, component-border) !default;
+$app-border: k-map-get( $theme, component-border ) !default;
 
 
 // Components
@@ -275,32 +275,32 @@ $app-border: map-get($theme, component-border) !default;
 /// Background color of a component.
 /// Note: do not use this variable directly. Instead derive it as `$component-name-bg` e.g. `$grid-bg: $component-bg !default;`.
 /// @group component
-$component-bg: map-get($theme, component-bg) !default;
+$component-bg: k-map-get( $theme, component-bg ) !default;
 /// Text color of a component.
 /// Note: do not use this variable directly. Instead derive it as `$component-name-text` e.g. `$grid-text: component-text !default;`.
 /// @group component
-$component-text: map-get($theme, component-text) !default;
+$component-text: k-map-get( $theme, component-text ) !default;
 /// Border color of a component.
 /// Note: do not use this variable directly. Instead derive it as `$component-name-border` e.g. `$grid-border: component-border !default;`.
 /// @group component
-$component-border: map-get($theme, component-border) !default;
+$component-border: k-map-get( $theme, component-border ) !default;
 
 
 /// The background of the components' chrome area.
-$base-bg: map-get( $theme, base-bg ) !default;
+$base-bg: k-map-get( $theme, base-bg ) !default;
 /// The text color of the components' chrome area.
-$base-text: map-get($theme, component-text) !default;
+$base-text: k-map-get( $theme, component-text ) !default;
 /// The border of the components' chrome area.
-$base-border: rgba( if($theme-type == dark, white, black), .08 ) !default;
+$base-border: rgba( if( $theme-type == dark, white, black ), .08 ) !default;
 /// The gradient background of the components' chrome area.
 $base-gradient: null !default;
 
 /// The background of hovered items.
-$hovered-bg: map-get( $theme, hover-bg ) !default;
+$hovered-bg: k-map-get( $theme, hover-bg ) !default;
 /// The text color of hovered items.
 $hovered-text: $base-text !default;
 /// The border color of hovered items.
-$hovered-border: rgba( if($theme-type == dark, white, black), .15 ) !default;
+$hovered-border: rgba( if( $theme-type == dark, white, black ), .15 ) !default;
 /// The gradient background of hovered items.
 $hovered-gradient: null !default;
 
@@ -313,7 +313,7 @@ $selected-border: rgba( if($theme-type == dark, white, black), .1 ) !default;
 /// The gradient background of selected items.
 $selected-gradient: null !default;
 
-$selected-hover-bg: try-shade( $selected-bg, .5 ) !default;
+$selected-hover-bg: k-try-shade( $selected-bg, .5 ) !default;
 $selected-hover-text: $selected-text !default;
 $selected-hover-border: rgba( if($theme-type == dark, white, black), .1 ) !default;
 $selected-hover-gradient: null !default;
@@ -389,7 +389,7 @@ $node-selected-gradient: null !default;
 // Placeholder
 $placeholder-line-width: 100% !default;
 $placeholder-line-height: 10px !default;
-$placeholder-bg: rgba(0, 0, 0, .1) !default;
+$placeholder-bg: rgba( black, .1 ) !default;
 
 
 // Loading
@@ -431,7 +431,7 @@ $drag-clue-font-size: $font-size !default;
 $drag-clue-font-family: $font-family !default;
 $drag-clue-line-height: ( 20 / 14 ) !default;
 
-$drag-clue-bg: try-shade( $body-bg ) !default;
+$drag-clue-bg: k-try-shade( $body-bg ) !default;
 $drag-clue-text: $body-text !default;
 $drag-clue-border: null !default;
 $drag-clue-gradient: null !default;

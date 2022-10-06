@@ -5,7 +5,7 @@
     .k-tabstrip-items {
 
         .k-disabled {
-            color: map-get( $theme, disabled-text );
+            color: k-map-get( $theme, disabled-text );
         }
 
     }

@@ -10,10 +10,10 @@ $kendo-button-border-radius: null !default;
 
 /// Horizontal padding of the button.
 /// @group button
-$kendo-button-padding-x: map-get( $spacing, 4 ) !default;
+$kendo-button-padding-x: k-map-get( $spacing, 4 ) !default;
 /// Vertical padding of the button.
 /// @group button
-$kendo-button-padding-y: map-get( $spacing, 2 ) !default;
+$kendo-button-padding-y: k-map-get( $spacing, 2 ) !default;
 /// Font family of the button.
 /// @group button
 $kendo-button-font-family: $font-family !default;
@@ -24,18 +24,18 @@ $kendo-button-font-size: $font-size-md !default;
 /// @group button
 $kendo-button-line-height: ( 20 / 14 ) !default;
 
-$kendo-button-padding-x-sm: map-get( $spacing, 4 ) !default;
-$kendo-button-padding-y-sm: map-get( $spacing, 2 ) - map-get( $spacing, thin ) !default;
+$kendo-button-padding-x-sm: k-map-get( $spacing, 4 ) !default;
+$kendo-button-padding-y-sm: k-map-get( $spacing, 2 ) - k-map-get( $spacing, thin ) !default;
 $kendo-button-font-size-sm: $font-size-md !default;
 $kendo-button-line-height-sm: ( 20 / 14 ) !default;
 
-$kendo-button-padding-x-md: map-get( $spacing, 4 ) !default;
-$kendo-button-padding-y-md: map-get( $spacing, 2 ) !default;
+$kendo-button-padding-x-md: k-map-get( $spacing, 4 ) !default;
+$kendo-button-padding-y-md: k-map-get( $spacing, 2 ) !default;
 $kendo-button-font-size-md: $font-size-md !default;
 $kendo-button-line-height-md: ( 20 / 14 ) !default;
 
-$kendo-button-padding-x-lg: map-get( $spacing, 4 ) !default;
-$kendo-button-padding-y-lg: map-get( $spacing, 2 ) + map-get( $spacing, thin ) !default;
+$kendo-button-padding-x-lg: k-map-get( $spacing, 4 ) !default;
+$kendo-button-padding-y-lg: k-map-get( $spacing, 2 ) + k-map-get( $spacing, thin ) !default;
 $kendo-button-font-size-lg: $font-size-md !default;
 $kendo-button-line-height-lg: ( 20 / 14 ) !default;
 
@@ -70,7 +70,7 @@ $kendo-button-sizes: (
 
 /// Theme colors map for the button.
 /// @group button
-$kendo-button-theme-colors: map-merge(
+$kendo-button-theme-colors: k-map-merge(
     $kendo-theme-colors,
     ( "base": $base-bg )
 ) !default;
@@ -157,7 +157,7 @@ $kendo-button-focus-shadow: null !default;
 
 /// The base background color of disabled button.
 /// @group button
-$kendo-button-disabled-bg: try-shade( $body-bg, 12% ) !default;
+$kendo-button-disabled-bg: k-try-shade( $body-bg, 12% ) !default;
 /// The base text color of disabled button.
 /// @group button
 $kendo-button-disabled-text: $disabled-text !default;
@@ -173,7 +173,7 @@ $kendo-button-disabled-shadow: none !default;
 
 // Solid button
 $kendo-solid-button-gradient: null !default;
-$kendo-solid-button-shade-function: "try-shade" !default;
+$kendo-solid-button-shade-function: "k-try-shade" !default;
 $kendo-solid-button-shade-text-amount: null !default;
 $kendo-solid-button-shade-bg-amount: 0 !default;
 $kendo-solid-button-shade-border-amount: 0 !default;

@@ -14,16 +14,16 @@ $gradient-white-to-transparent: white, rgba( white, 0); // stylelint-disable-lin
 
 $gradient-rainbow: #ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff, #ff0000; // stylelint-disable-line scss/dollar-variable-default
 
-$dark-primary-text: rgba($black, .87) !default;
-$dark-secondary-text: rgba($black, .54) !default;
-$dark-disabled-text: rgba($black, .38) !default;
-$dark-dividers: rgba($black, .12) !default;
-$dark-focused: rgba($black, .12) !default;
+$dark-primary-text: rgba( black, .87 ) !default;
+$dark-secondary-text: rgba( black, .54 ) !default;
+$dark-disabled-text: rgba( black, .38 ) !default;
+$dark-dividers: rgba( black, .12 ) !default;
+$dark-focused: rgba( black, .12 ) !default;
 $light-primary-text: $white !default;
-$light-secondary-text: rgba($white, .7) !default;
-$light-disabled-text: rgba($white, .5) !default;
-$light-dividers: rgba($white, .12) !default;
-$light-focused: rgba($white, .12) !default;
+$light-secondary-text: rgba( white, .7 ) !default;
+$light-disabled-text: rgba( white, .5 ) !default;
+$light-dividers: rgba( white, .12 ) !default;
+$light-focused: rgba( white, .12 ) !default;
 
 $palettes: (
 
@@ -68,7 +68,7 @@ $palettes: (
         200: #f48fb1,
         300: #f06292,
         400: #ec407a,
-        500: #e51a5f, // originaly it was #e91e63, but changed for better contrast against white
+        500: #e51a5f, // originally it was #e91e63, but changed for better contrast against white
         600: #d81b60,
         700: #c2185b,
         800: #ad1457,
@@ -676,15 +676,15 @@ $palettes: (
 ) !default;
 
 @function get-base-palette($name) {
-    @return map-get( $palettes, $name );
+    @return k-map-get( $palettes, $name );
 }
 
 @function get-base-hue($palette, $hue) {
-    @return map-get( get-base-palette( $palette ), $hue );
+    @return k-map-get( get-base-palette( $palette ), $hue );
 }
 
 @function get-base-contrast($palette, $hue) {
-    @return map-get( map-get( get-base-palette($palette), contrast), $hue );
+    @return k-map-get( k-map-get( get-base-palette($palette), contrast), $hue );
 }
 
 $material-dark-complimentary: (
@@ -697,8 +697,8 @@ $material-dark-complimentary: (
     component-text: $light-primary-text,
     component-border: $light-dividers,
     base-bg: get-base-hue( gray, 900 ),
-    hover-bg: rgba( $white, .08 ),
-    focus-bg: rgba( $white, .24 ),
+    hover-bg: rgba( white, .08 ),
+    focus-bg: rgba( white, .24 ),
     elevation: $black
 ) !default;
 
@@ -713,15 +713,15 @@ $material-light-complimentary: (
     component-text: $dark-primary-text,
     component-border: $dark-dividers,
     base-bg: $white,
-    hover-bg: rgba( $black, .04 ),
-    focus-bg: rgba( $black, .12 ),
+    hover-bg: rgba( black, .04 ),
+    focus-bg: rgba( black, .12 ),
     elevation: $black
 ) !default;
 
 
 // For a given hue in a palette, return the contrast color from the map of contrast palettes.
 @function material-contrast($palette, $hue) {
-    @return map-get(map-get($palette, contrast), $hue);
+    @return k-map-get(k-map-get($palette, contrast), $hue);
 }
 
 // Creates a map of hues to colors for a theme. This is used to define a theme palette in terms
@@ -749,11 +749,11 @@ $material-light-complimentary: (
     }
 
     // stylelint-disable-next-line function-comma-newline-after
-    $result: map-merge($base-palette, (
+    $result: k-map-merge($base-palette, (
         // sass-lint:disable-block indentation
-        main: map-get($base-palette, $main),
-        lighter: map-get($base-palette, $lighter),
-        darker: map-get($base-palette, $darker),
+        main: k-map-get($base-palette, $main),
+        lighter: k-map-get($base-palette, $lighter),
+        darker: k-map-get($base-palette, $darker),
         main-contrast: material-contrast($base-palette, $main),
         lighter-contrast: material-contrast($base-palette, $lighter),
         darker-contrast: material-contrast($base-palette, $darker)
@@ -762,7 +762,7 @@ $material-light-complimentary: (
     // For each hue in the palette, add a "-contrast" color to the map.
     @each $hue, $color in $base-palette {
         // stylelint-disable-next-line function-comma-newline-after
-        $result: map-merge($result, (
+        $result: k-map-merge($result, (
             // sass-lint:disable-block indentation
             "#{$hue}-contrast": material-contrast($base-palette, $hue)
         ));
@@ -787,16 +787,16 @@ $material-light-complimentary: (
         @return material-color($palette, main, $hue);
     }
 
-    $color: map-get($palette, $hue);
+    $color: k-map-get($palette, $hue);
     $opacity: if($opacity == null, opacity($color), $opacity);
 
-    @return rgba($color, $opacity);
+    @return rgba( $color, $opacity );
 }
 
 // Creates a container object for a light theme to be given to individual component theme mixins.
 @function material-theme($primary, $secondary, $theme-type, $warn: material-palette(red)) {
     $complimentary: if($theme-type == dark, $material-dark-complimentary, $material-light-complimentary);
-    @return map-merge((
+    @return k-map-merge((
         // sass-lint:disable-block indentation
         primary: $primary,
         secondary: $secondary,

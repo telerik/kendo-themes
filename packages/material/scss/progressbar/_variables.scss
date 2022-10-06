@@ -7,7 +7,7 @@ $progressbar-font-family: $font-family !default;
 $progressbar-font-size: $font-size-sm !default;
 $progressbar-line-height: 1 !default;
 
-$progressbar-bg: try-tint( $primary, 8 ) !default;
+$progressbar-bg: k-try-tint( $primary, 8 ) !default;
 $progressbar-text: $component-text !default;
 $progressbar-border: null !default;
 $progressbar-gradient: null !default;

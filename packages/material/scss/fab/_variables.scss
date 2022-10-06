@@ -39,18 +39,18 @@ $kendo-fab-icon-width: 20px !default;
 $kendo-fab-icon-height: $kendo-fab-icon-width !default;
 /// FAB icon spacing.
 /// @group floating-action-button
-$kendo-fab-icon-spacing: map-get( $spacing, 1 ) * 1.5 !default;
+$kendo-fab-icon-spacing: k-map-get( $spacing, 1 ) * 1.5 !default;
 
 /// FAB items horizontal padding.
 /// @group floating-action-button
 $kendo-fab-items-padding-x: 0px !default;
 /// FAB items vertical padding.
 /// @group floating-action-button
-$kendo-fab-items-padding-y: map-get( $spacing, 4 ) !default;
+$kendo-fab-items-padding-y: k-map-get( $spacing, 4 ) !default;
 
 /// FAB item text horizontal padding.
 /// @group floating-action-button
-$kendo-fab-item-text-padding-x: map-get( $spacing, 1 ) !default;
+$kendo-fab-item-text-padding-x: k-map-get( $spacing, 1 ) !default;
 /// FAB item text vertical padding.
 /// @group floating-action-button
 $kendo-fab-item-text-padding-y: $kendo-fab-item-text-padding-x !default;
@@ -69,7 +69,7 @@ $kendo-fab-item-text-line-height: 1.2 !default;
 
 /// FAB item icon horizontal padding.
 /// @group floating-action-button
-$kendo-fab-item-icon-padding-x: map-get( $spacing, 2 ) !default;
+$kendo-fab-item-icon-padding-x: k-map-get( $spacing, 2 ) !default;
 /// FAB item icon vertical padding.
 /// @group floating-action-button
 $kendo-fab-item-icon-padding-y: $kendo-fab-item-icon-padding-x !default;
@@ -92,13 +92,13 @@ $kendo-fab-theme-colors: $kendo-theme-colors !default;
 
 /// The base shadow of the FAB.
 /// @group floating-action-button
-$kendo-fab-shadow: 0px 3px 5px -1px rgba(0, 0, 0, .2), 0px 6px 10px rgba(0, 0, 0, .14), 0px 1px 18px rgba(0, 0, 0, .12) !default;
+$kendo-fab-shadow: 0px 3px 5px -1px rgba( black, .2 ), 0px 6px 10px rgba( black, .14 ), 0px 1px 18px rgba( black, .12 ) !default;
 /// The disabled shadow of the FAB.
 /// @group floating-action-button
-$kendo-fab-disabled-shadow: 0px 3px 5px -1px try-tint(rgba(0, 0, 0, .2), .5), 0px 6px 10px try-tint(rgba(0, 0, 0, .14), .5), 0px 1px 18px try-tint(rgba(0, 0, 0, .12), .5) !default;
+$kendo-fab-disabled-shadow: 0px 3px 5px -1px k-try-tint( rgba( black, .2 ), .5 ), 0px 6px 10px k-try-tint( rgba( black, .14 ), .5 ), 0px 1px 18px k-try-tint( rgba( black, .12 ), .5 ) !default;
 /// The active shadow of the FAB.
 /// @group floating-action-button
-$kendo-fab-active-shadow: 0px 5px 5px -3px rgba(0, 0, 0, .2), 0px 8px 10px 1px rgba(0, 0, 0, .14), 0px 3px 14px 2px rgba(0, 0, 0, .12) !default;
+$kendo-fab-active-shadow: 0px 5px 5px -3px rgba( black, .2 ), 0px 8px 10px 1px rgba( black, .14 ), 0px 3px 14px 2px rgba( black, .12 ) !default;
 
 /// The base text color of the FAB item.
 /// @group floating-action-button
