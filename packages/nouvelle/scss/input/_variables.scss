@@ -1,10 +1,10 @@
-$kendo-input-padding-x: map-get( $spacing, 2 ) !default;
-$kendo-input-padding-y: map-get( $spacing, 1 ) !default;
+$kendo-input-padding-x: k-map-get( $spacing, 2 ) !default;
+$kendo-input-padding-y: k-map-get( $spacing, 1 ) !default;
 
 $kendo-input-border-width: 1px !default;
 $kendo-input-border-style: solid !default;
 
-$kendo-input-border-radius: map-get( $spacing, 1 ) !default;
+$kendo-input-border-radius: k-map-get( $spacing, 1 ) !default;
 
 $kendo-input-font-family: $font-family !default;
 $kendo-input-font-size: $font-size !default;
@@ -30,7 +30,7 @@ $kendo-input-hover-bg: $kendo-input-bg !default;
 $kendo-input-hover-text: $kendo-input-text !default;
 /// The border color of hovered input.
 /// @group input
-$kendo-input-hover-border: try-shade( $kendo-input-border, 1 ) !default;
+$kendo-input-hover-border: k-try-shade( $kendo-input-border, 1 ) !default;
 $kendo-input-hover-shadow: null !default;
 
 /// The background color of focus input.

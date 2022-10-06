@@ -1,6 +1,3 @@
-@import "core/functions/_index.scss";
-
-
 // Options
 $enable-rounded: true !default;
 $enable-shadows: true !default;
@@ -57,7 +54,7 @@ $spacing: (
 
 // Icons
 $icon-size: 16px !default;
-$icon-spacing: map-get( $spacing, 1 ) !default;
+$icon-spacing: k-map-get( $spacing, 1 ) !default;
 
 
 // Color settings
@@ -69,69 +66,69 @@ $dark-theme: false !default;
 /// Used for primary buttons and for elements of primary importance across the theme.
 /// @group color-system
 /// @type Color
-$primary: #ff6358 !default;
-$primary-lighter: tint( $primary, 2 ) !default;
-$primary-darker: shade( $primary, 2 ) !default;
+$primary: #622331 !default;
+$primary-lighter: k-color-tint( $primary, 2 ) !default;
+$primary-darker: k-color-shade( $primary, 2 ) !default;
 
 /// The color used along with the accent color denoted by $primary.
 /// Used to provide contrast between the background and foreground colors.
 /// @group color-system
 /// @type Color
-$primary-contrast: contrast-wcag( $primary ) !default;
+$primary-contrast: k-contrast-color( $primary ) !default;
 
 /// The secondary color of the theme.
 /// @group color-system
 /// @type Color
 $secondary: #f6f6f6 !default;
-$secondary-lighter: tint( $secondary, 2 ) !default;
-$secondary-darker: shade( $secondary, 2 ) !default;
+$secondary-lighter: k-color-tint( $secondary, 2 ) !default;
+$secondary-darker: k-color-shade( $secondary, 2 ) !default;
 
 /// The color used along with the secondary color denoted by $secondary.
 /// Used to provide contrast between the background and foreground colors.
 /// @group color-system
 /// @type Color
-$secondary-contrast: contrast-wcag( $secondary ) !default;
+$secondary-contrast: k-contrast-color( $secondary ) !default;
 
 /// The tertiary color of the theme.
 /// @group color-system
 /// @type Color
 $tertiary: #03a9f4 !default;
-$tertiary-lighter: tint( $tertiary, 2 ) !default;
-$tertiary-darker: shade( $tertiary, 2 ) !default;
+$tertiary-lighter: k-color-tint( $tertiary, 2 ) !default;
+$tertiary-darker: k-color-shade( $tertiary, 2 ) !default;
 
 /// The color used along with the tertiary color denoted by $tertiary.
 /// Used to provide contrast between the background and foreground colors.
 /// @group color-system
 /// @type Color
-$tertiary-contrast: contrast-wcag( $tertiary ) !default;
+$tertiary-contrast: k-contrast-color( $tertiary ) !default;
 
 /// The color for informational messages and states.
 /// @group color-system
 /// @type Color
-$info: #0058e9 !default;
-$info-lighter: tint( $info, 2 ) !default;
-$info-darker: shade( $info, 2 ) !default;
+$info: #0969da !default;
+$info-lighter: k-color-tint( $info, 2 ) !default;
+$info-darker: k-color-shade( $info, 2 ) !default;
 
 /// The color for success messages and states.
 /// @group color-system
 /// @type Color
-$success: #37b400 !default;
-$success-lighter: tint( $success, 2 ) !default;
-$success-darker: shade( $success, 2 ) !default;
+$success: #1a7f37 !default;
+$success-lighter: k-color-tint( $success, 2 ) !default;
+$success-darker: k-color-shade( $success, 2 ) !default;
 
 /// The color for warning messages and states.
 /// @group color-system
 /// @type Color
-$warning: #ffc000 !default;
-$warning-lighter: tint( $warning, 2 ) !default;
-$warning-darker: shade( $warning, 2 ) !default;
+$warning: #bc4c00 !default;
+$warning-lighter: k-color-tint( $warning, 2 ) !default;
+$warning-darker: k-color-shade( $warning, 2 ) !default;
 
 /// The color for error messages and states.
 /// @group color-system
 /// @type Color
-$error: #f31700 !default;
-$error-lighter: tint( $error, 2 ) !default;
-$error-darker: shade( $error, 2 ) !default;
+$error: #cf222e !default;
+$error-lighter: k-color-tint( $error, 2 ) !default;
+$error-darker: k-color-shade( $error, 2 ) !default;
 
 /// The dark color of the theme.
 /// @group color-system
@@ -236,7 +233,7 @@ $interactive-border: rgba( black, .08 ) !default;
 $interactive-gradient: rgba( black, 0 ), rgba( black, .02 ) !default;
 
 /// The background of hovered items.
-$hover-bg: shade( $interactive-bg, .5 ) !default;
+$hover-bg: k-color-shade( $interactive-bg, .5 ) !default;
 /// The text color of hover items.
 $hover-text: $interactive-text !default;
 /// The border color of hover items.
@@ -247,7 +244,7 @@ $hover-gradient: rgba( black, 0 ), rgba( black, .02 ) !default;
 /// The background of selected items.
 $selected-bg: $primary !default;
 /// The text color of selected items.
-$selected-text: contrast-wcag( $selected-bg ) !default;
+$selected-text: k-contrast-color( $selected-bg ) !default;
 /// The border color of selected items.
 $selected-border: rgba( black, .1 ) !default;
 /// The gradient background of selected items.

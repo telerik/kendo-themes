@@ -1,10 +1,10 @@
-$kendo-button-padding-x: map-get( $spacing, 2 ) !default;
-$kendo-button-padding-y: map-get( $spacing, 1 ) !default;
+$kendo-button-padding-x: k-map-get( $spacing, 2 ) !default;
+$kendo-button-padding-y: k-map-get( $spacing, 1 ) !default;
 
 $kendo-button-border-width: 1px !default;
 $kendo-button-border-style: solid !default;
 
-$kendo-button-border-radius: map-get( $spacing, 1 ) !default;
+$kendo-button-border-radius: k-map-get( $spacing, 1 ) !default;
 
 $kendo-button-font-family: $font-family !default;
 $kendo-button-font-size: $font-size !default;
@@ -27,7 +27,7 @@ $kendo-button-shadow: null !default;
 
 /// The background of hovered buttons.
 /// @group button
-$kendo-button-hover-bg: try-shade( $kendo-button-bg, .5 ) !default;
+$kendo-button-hover-bg: k-try-shade( $kendo-button-bg, .5 ) !default;
 /// The text color of hovered buttons.
 /// @group button
 $kendo-button-hover-text: $kendo-button-text !default;
@@ -55,7 +55,7 @@ $kendo-button-focus-shadow: 0 0 0 2px rgba( if( $dark-theme, $white, $black ), .
 
 /// The background color of pressed buttons.
 /// @group button
-$kendo-button-active-bg: try-shade( $kendo-button-bg, 1 ) !default;
+$kendo-button-active-bg: k-try-shade( $kendo-button-bg, 1 ) !default;
 /// The text color of pressed buttons.
 /// @group button
 $kendo-button-active-text: $kendo-button-text !default;
