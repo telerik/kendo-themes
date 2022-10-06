@@ -110,6 +110,9 @@ $kendo-gantt-task-border: inherit !default;
 /// Background color of the gantt task progress.
 /// @group gantt
 $kendo-gantt-task-progress-bg: get-theme-color-var( neutral-160 ) !default;
+/// Background hover color of the gantt task progress.
+/// @group gantt
+$kendo-gantt-task-progress-hover-bg: get-theme-color-var( neutral-190 ) !default;
 /// Selected background color of the gantt task.
 /// @group gantt
 $kendo-gantt-task-selected-bg: get-theme-color-var( primary-50 ) !default;
@@ -207,6 +210,9 @@ $kendo-gantt-advanced-bg: get-theme-color-var( success-160 ) !default;
 /// Complement background color of the gantt advanced task.
 /// @group gantt
 $kendo-gantt-advanced-bg-lighter: get-theme-color-var( success-110 ) !default;
+/// Background hover color of the gantt advanced task.
+/// @group gantt
+$kendo-gantt-advanced-hover-bg: get-theme-color-var( success-190 ) !default;
 
 /// Text color of the gantt delayed task action.
 /// @group gantt

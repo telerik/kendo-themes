@@ -353,6 +353,10 @@
         }
     }
 
+    // Alias used in jQuery
+    .k-reorder-cue {
+        @extend .k-grouping-dropclue;
+    }
 
     // Grid header / footer
     .k-grid-header-wrap,
@@ -514,7 +518,7 @@
     }
 
     .k-grid-filter-popup {
-        min-width: 200px;
+        min-width: 230px;
     }
 
     // Standalone column menu
@@ -1090,7 +1094,7 @@
 
         .k-actions {
             margin: 0;
-            padding-block-start: var( --kendo-filter-menu-container-padding-y, #{$kendo-filter-menu-container-padding-y} );
+            padding-block-start: calc( var( --kendo-filter-menu-container-padding-y, #{$kendo-filter-menu-container-padding-y} ) - var( --kendo-grid-column-menu-spacing, #{$kendo-grid-column-menu-spacing} ) ) ;
             padding-block-end: 0;
             padding-inline: 0;
         }
