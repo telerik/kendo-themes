@@ -1,123 +1,61 @@
 @include exports("pager/theme") {
 
-    .k-pager-wrap,
     .k-pager {
         @include fill(
-            $pager-text,
-            $pager-bg,
-            $pager-border
+            $kendo-pager-text,
+            $kendo-pager-bg,
+            $kendo-pager-border
         );
 
         &:focus,
         &.k-focus {
-            @include fill( $bg: $pager-focus-bg );
-            @include box-shadow( $pager-focus-shadow );
+            @include fill( $bg: $kendo-pager-focus-bg );
+            @include box-shadow( $kendo-pager-focus-shadow );
         }
     }
 
 
     %base-pager-item-theme {
         @include fill(
-            $pager-item-text,
-            $pager-item-bg,
-            $pager-item-border
+            $kendo-pager-item-text,
+            $kendo-pager-item-bg,
+            $kendo-pager-item-border
         );
 
         &:hover,
         &.k-hover {
             @include fill(
-                $pager-item-hover-text,
-                $pager-item-hover-bg,
-                $pager-item-hover-border
+                $kendo-pager-item-hover-text,
+                $kendo-pager-item-hover-bg,
+                $kendo-pager-item-hover-border
             );
         }
 
         &.k-selected {
             @include fill(
-                $pager-item-selected-text,
-                $pager-item-selected-bg,
-                $pager-item-selected-border
+                $kendo-pager-item-selected-text,
+                $kendo-pager-item-selected-bg,
+                $kendo-pager-item-selected-border
             );
         }
 
         &:focus,
         &.k-focus {
-            background-color: $pager-item-focus-bg;
-            @include box-shadow( $pager-item-focus-shadow );
+            background-color: $kendo-pager-item-focus-bg;
+            @include box-shadow( $kendo-pager-item-focus-shadow );
         }
     }
-
-
-    // Pager items
-    .k-pager-nav.k-link {
-        @extend %base-pager-item-theme;
-    }
-
-
-    // Pager numbers
-    .k-pager-numbers {
-        .k-link {
-            @include fill(
-                $pager-number-text,
-                $pager-number-bg,
-                $pager-number-border
-            );
-
-            &:hover,
-            &.k-hover {
-                @include fill(
-                    $pager-number-hover-text,
-                    $pager-number-hover-bg,
-                    $pager-number-hover-border
-                );
-            }
-
-            &:focus,
-            &.k-focus {
-                background-color: $pager-number-focus-bg;
-                @include box-shadow( $pager-number-focus-shadow );
-            }
-
-            &.k-selected {
-                @include fill(
-                    $pager-number-selected-text,
-                    $pager-number-selected-bg,
-                    $pager-number-selected-border
-                );
-            }
-        }
-    }
-
 
     // Pager refresh
     .k-pager-refresh {
         @extend %base-pager-item-theme;
     }
 
-
-
     // Responsive
     .k-pager-md,
     .k-pager-sm {
 
         .k-pager-numbers {
-
-            .k-current-page .k-link {
-                @include fill(
-                    $dropdownlist-text,
-                    $dropdownlist-bg,
-                    $dropdownlist-border
-                );
-
-                &:hover,
-                &.k-hover {
-                    @include fill(
-                        $dropdownlist-hovered-text,
-                        $dropdownlist-hovered-bg,
-                        $dropdownlist-hovered-border
-                    );
-                }
-            }
 
             &.k-expanded {
                 @include fill(
@@ -126,25 +64,6 @@
                     $popup-border
                 );
                 @include box-shadow( $popup-shadow );
-
-                .k-link {
-
-                    &:hover,
-                    &.k-hover {
-                        @include fill(
-                            $kendo-list-item-hover-text,
-                            $kendo-list-item-hover-bg
-                        );
-                    }
-
-                    &.k-selected {
-                        @include fill(
-                            $kendo-list-item-selected-text,
-                            $kendo-list-item-selected-bg
-                        );
-                    }
-
-                }
             }
 
         }

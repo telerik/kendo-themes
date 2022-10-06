@@ -1,17 +1,2 @@
 @import "~@progress/kendo-theme-default/scss/pager/_theme.scss";
 
-@include exports("pager/theme/material") {
-
-    // Responsive
-    .k-pager-md,
-    .k-pager-sm {
-
-        .k-pager-numbers {
-
-            .k-current-page .k-link {
-                background-color: transparent;
-            }
-        }
-    }
-
-}

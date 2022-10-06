@@ -3,7 +3,6 @@
 
 @mixin kendo-pager--theme() {
 
-    .k-pager-wrap,
     .k-pager {
         --INTERNAL--kendo-pager-text: var( --kendo-pager-text, #{$kendo-pager-text} );
         --INTERNAL--kendo-pager-bg: var( --kendo-pager-bg, #{$kendo-pager-bg} );
@@ -23,93 +22,6 @@
         }
     }
 
-
-    %base-pager-item-theme {
-        --INTERNAL--kendo-pager-item-text: var( --kendo-pager-item-text, #{$kendo-pager-item-text} );
-        --INTERNAL--kendo-pager-item-bg: var( --kendo-pager-item-bg, #{$kendo-pager-item-bg} );
-        --INTERNAL--kendo-pager-item-border: var( --kendo-pager-item-border, #{$kendo-pager-item-border} );
-
-        @include fill(
-            var( --INTERNAL--kendo-pager-item-text, inherit ),
-            var( --INTERNAL--kendo-pager-item-bg, transparent ),
-            var( --INTERNAL--kendo-pager-item-border, inherit )
-        );
-
-        &:hover,
-        &.k-hover {
-            --INTERNAL--kendo-pager-item-text: var( --kendo-pager-item-hover-text, #{$kendo-pager-item-hover-text} );
-            --INTERNAL--kendo-pager-item-bg: var( --kendo-pager-item-hover-bg, #{$kendo-pager-item-hover-bg} );
-            --INTERNAL--kendo-pager-item-border: var( --kendo-pager-item-hover-border, #{$kendo-pager-item-hover-border} );
-        }
-
-        &.k-selected {
-            --INTERNAL--kendo-pager-item-text: var( --kendo-pager-item-selected-text, #{$kendo-pager-item-selected-text} );
-            --INTERNAL--kendo-pager-item-bg: var( --kendo-pager-item-selected-bg, #{$kendo-pager-item-selected-bg} );
-            --INTERNAL--kendo-pager-item-border: var( --kendo-pager-item-selected-border, #{$kendo-pager-item-selected-border} );
-        }
-
-        &:focus,
-        &.k-focus {
-            --INTERNAL--kendo-pager-item-text: var( --kendo-pager-item-focus-text, #{$kendo-pager-item-focus-text} );
-            --INTERNAL--kendo-pager-item-bg: var( --kendo-pager-item-focus-bg, #{$kendo-pager-item-focus-bg} );
-            --INTERNAL--kendo-pager-item-border: var( --kendo-pager-item-focus-border, #{$kendo-pager-item-focus-border} );
-
-            @include box-shadow( $kendo-pager-item-focus-shadow );
-        }
-
-        &:disabled,
-        &.k-disabled {
-            --INTERNAL--kendo-pager-item-text: var( --kendo-pager-item-disabled-text, #{$kendo-pager-item-disabled-text} );
-            --INTERNAL--kendo-pager-item-bg: var( --kendo-pager-item-disabled-bg, #{$kendo-pager-item-disabled-bg} );
-            --INTERNAL--kendo-pager-item-border: var( --kendo-pager-item-disabled-border, #{$kendo-pager-item-disabled-border} );
-        }
-    }
-
-
-    // Pager items
-    .k-pager-nav.k-link {
-        @extend %base-pager-item-theme;
-    }
-
-
-    // Pager numbers
-    .k-pager-numbers {
-        .k-link {
-            --INTERNAL--kendo-pager-number-text: var( --kendo-pager-number-text, #{$kendo-pager-number-text} );
-            --INTERNAL--kendo-pager-number-bg: var( --kendo-pager-number-bg, #{$kendo-pager-number-bg} );
-            --INTERNAL--kendo-pager-number-border: var( --kendo-pager-number-border, #{$kendo-pager-number-border} );
-
-            @include fill(
-                var( --INTERNAL--kendo-pager-number-text, inherit ),
-                var( --INTERNAL--kendo-pager-number-bg, transparent ),
-                var( --INTERNAL--kendo-pager-number-border, inherit )
-            );
-
-            &:hover,
-            &.k-hover {
-                --INTERNAL--kendo-pager-number-text: var( --kendo-pager-number-hover-text, #{$kendo-pager-number-hover-text} );
-                --INTERNAL--kendo-pager-number-bg: var( --kendo-pager-number-hover-bg, #{$kendo-pager-number-hover-bg} );
-                --INTERNAL--kendo-pager-number-border: var( --kendo-pager-number-hover-border, #{$kendo-pager-number-hover-border} );
-            }
-
-            &:focus,
-            &.k-focus {
-                --INTERNAL--kendo-pager-number-text: var( --kendo-pager-number-focus-text, #{$kendo-pager-number-focus-text} );
-                --INTERNAL--kendo-pager-number-bg: var( --kendo-pager-number-focus-bg, #{$kendo-pager-number-focus-bg} );
-                --INTERNAL--kendo-pager-number-border: var( --kendo-pager-number-focus-border, #{$kendo-pager-number-focus-border} );
-
-                @include box-shadow( $kendo-pager-number-focus-shadow );
-            }
-
-            &.k-selected {
-                --INTERNAL--kendo-pager-number-text: var( --kendo-pager-number-selected-text, #{$kendo-pager-number-selected-text} );
-                --INTERNAL--kendo-pager-number-bg: var( --kendo-pager-number-selected-bg, #{$kendo-pager-number-selected-bg} );
-                --INTERNAL--kendo-pager-number-border: var( --kendo-pager-number-selected-border, #{$kendo-pager-number-selected-border} );
-            }
-        }
-    }
-
-
     // Pager sizes
     .k-pager-sizes {
         color: var( --kendo-pager-sizes-label-text, #{$kendo-pager-sizes-label-text} );
@@ -119,12 +31,6 @@
     // Pager info
     .k-pager-info {
         color: var( --kendo-pager-info-label-text, #{$kendo-pager-info-label-text} );
-    }
-
-
-    // Pager refresh
-    .k-pager-refresh {
-        @extend %base-pager-item-theme;
     }
 
 }
