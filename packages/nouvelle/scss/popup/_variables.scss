@@ -13,14 +13,14 @@ $popup-line-height: $line-height !default;
 
 /// The background of the popup.
 /// @group popup
-$popup-bg: mix( black, $component-bg, 2% ) !default;
+$popup-bg: k-color-mix( black, $component-bg, 2% ) !default;
 /// The text color of the popup.
 /// @group popup
 $popup-text: $component-text !default;
 /// The border color of the popup.
 /// @group popup
 $popup-border: $component-border !default;
-$popup-shadow: 0 2px 4px 0 rgba(0, 0, 0, .03), 0 4px 5px 0 rgba(0, 0, 0, .04) !default;
+$popup-shadow: 0 2px 4px 0 rgba( black, .03 ), 0 4px 5px 0 rgba( black, .04 ) !default;
 
 
 
