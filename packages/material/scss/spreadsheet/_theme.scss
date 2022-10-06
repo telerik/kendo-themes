@@ -37,7 +37,7 @@
     .k-spreadsheet-sheets-bar {
         @include fill(
             $toolbar-text,
-            try-shade( $toolbar-bg, .5 ),
+            k-try-shade( $toolbar-bg, .5 ),
             inherit,
             $toolbar-gradient
         );
@@ -53,7 +53,7 @@
     .k-spreadsheet-row-header,
     .k-spreadsheet-column-header {
         border-color: $component-border;
-        background-color: try-shade( $component-bg, 1 );
+        background-color: k-try-shade( $component-bg, 1 );
     }
 
 

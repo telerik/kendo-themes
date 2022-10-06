@@ -5,7 +5,7 @@
         .k-fab-solid-#{$name} {
             @include box-shadow($kendo-fab-shadow);
             border-color: $color;
-            color: contrast-wcag( $color );
+            color: k-contrast-color( $color );
             background-color: $color;
         }
     }
@@ -14,8 +14,8 @@
     @each $name, $color in $kendo-fab-theme-colors {
         .k-hover.k-fab-solid-#{$name},
         .k-fab-solid-#{$name}:hover {
-            border-color: true-mix( #ffffff, $color, 8%);
-            background-color: true-mix( #ffffff, $color, 8%);
+            border-color: k-true-mix( #ffffff, $color, 8%);
+            background-color: k-true-mix( #ffffff, $color, 8%);
         }
     }
 
@@ -23,8 +23,8 @@
     @each $name, $color in $kendo-fab-theme-colors {
         .k-focus.k-fab-solid-#{$name},
         .k-fab-solid-#{$name}:focus {
-            border-color: true-mix( #ffffff, $color, 12%);
-            background-color: true-mix( #ffffff, $color, 12%);
+            border-color: k-true-mix( #ffffff, $color, 12%);
+            background-color: k-true-mix( #ffffff, $color, 12%);
         }
     }
 
@@ -33,8 +33,8 @@
         .k-active.k-fab-solid-#{$name},
         .k-selected.k-fab-solid-#{$name},
         .k-fab-solid-#{$name}:active {
-            border-color: true-mix( #ffffff, $color, 16%);
-            background-color: true-mix( #ffffff, $color, 16%);
+            border-color: k-true-mix( #ffffff, $color, 16%);
+            background-color: k-true-mix( #ffffff, $color, 16%);
             box-shadow: $kendo-fab-active-shadow;
         }
     }
@@ -44,9 +44,9 @@
         .k-disabled.k-fab-solid-#{$name},
         .k-fab-solid-#{$name}:disabled {
             @include box-shadow($kendo-fab-disabled-shadow);
-            border-color: try-tint( try-shade( $body-bg, 12% ), 5);
-            background-color: try-tint( try-shade( $body-bg, 12% ), 5);
-            color: tint( $disabled-text, 4);
+            border-color: k-try-tint( k-try-shade( $body-bg, 12% ), 5);
+            background-color: k-try-tint( k-try-shade( $body-bg, 12% ), 5);
+            color: k-color-tint( $disabled-text, 4);
             opacity: 1;
         }
     }
@@ -72,25 +72,25 @@
     // Hover state
     .k-fab-item.k-hover .k-fab-item-icon,
     .k-fab-item:hover .k-fab-item-icon {
-        border-color: true-mix( #000000, $kendo-fab-item-icon-border, 8%);
-        background-color: true-mix( #000000, $kendo-fab-item-icon-bg, 8%);
-        color: true-mix( #000000, $kendo-fab-item-icon-text, 8%);
+        border-color: k-true-mix( #000000, $kendo-fab-item-icon-border, 8%);
+        background-color: k-true-mix( #000000, $kendo-fab-item-icon-bg, 8%);
+        color: k-true-mix( #000000, $kendo-fab-item-icon-text, 8%);
     }
 
     // Focus state
     .k-fab-item:focus .k-fab-item-icon,
     .k-fab-item.k-focus .k-fab-item-icon {
-        border-color: true-mix( #000000, $kendo-fab-item-icon-border, 12%);
-        background-color: true-mix( #000000, $kendo-fab-item-icon-bg, 12%);
-        color: true-mix( #000000, $kendo-fab-item-icon-text, 12%);
+        border-color: k-true-mix( #000000, $kendo-fab-item-icon-border, 12%);
+        background-color: k-true-mix( #000000, $kendo-fab-item-icon-bg, 12%);
+        color: k-true-mix( #000000, $kendo-fab-item-icon-text, 12%);
     }
 
     // Active state
     .k-fab-item.k-active .k-fab-item-icon,
     .k-fab-item:active .k-fab-item-icon {
         @include box-shadow($kendo-fab-item-active-shadow);
-        border-color: true-mix( #ffffff, $kendo-fab-item-icon-border, 12%);
-        background-color: true-mix( #ffffff, $kendo-fab-item-icon-bg, 12%);
+        border-color: k-true-mix( #ffffff, $kendo-fab-item-icon-border, 12%);
+        background-color: k-true-mix( #ffffff, $kendo-fab-item-icon-bg, 12%);
     }
 
     // Disabled state
@@ -101,8 +101,8 @@
         .k-fab-item-text,
         .k-fab-item-icon {
             @include box-shadow($kendo-fab-item-disabled-shadow);
-            background-color: try-tint( $kendo-fab-item-bg, 8 );
-            color: try-tint( $kendo-fab-item-text, 8 );
+            background-color: k-try-tint( $kendo-fab-item-bg, 8 );
+            color: k-try-tint( $kendo-fab-item-text, 8 );
         }
     }
 

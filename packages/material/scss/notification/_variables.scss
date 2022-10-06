@@ -2,13 +2,13 @@
 $notification-padding-x: 16px !default;
 $notification-padding-y: 14px !default;
 $notification-border-width: 0px !default;
-$notification-border-radius: map-get( $spacing, 1 ) !default;
+$notification-border-radius: k-map-get( $spacing, 1 ) !default;
 
 $notification-shadow: $popup-shadow !default;
 
 $notification-font-family: $font-family !default;
 $notification-font-size: $font-size !default;
-$notification-line-height: ( 20 / 14 ) !default;
+$notification-line-height: k-math-div( 20, 14 ) !default;
 
 $notification-icon-offset: 2px !default;
 $notification-icon-spacing: $icon-spacing !default;
@@ -22,8 +22,8 @@ $notification-border: $component-border !default;
 
     // sass-lint:disable-block indentation
     @each $name, $color in $colors {
-        $_theme: map-merge(( $name: (
-            color: contrast-wcag( $color ),
+        $_theme: k-map-merge(( $name: (
+            color: k-contrast-color( $color ),
             background-color: $color,
             border: $color,
         )), $_theme );

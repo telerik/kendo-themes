@@ -14,7 +14,7 @@
         .k-selected.k-focus .k-link {
             @include fill(
                 $calendar-cell-selected-text,
-                try-tint($calendar-cell-selected-bg),
+                k-try-tint($calendar-cell-selected-bg),
                 $calendar-cell-selected-border
             );
         }

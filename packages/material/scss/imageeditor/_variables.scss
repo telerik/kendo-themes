@@ -11,8 +11,8 @@ $imageeditor-font-family: $font-family !default;
 
 $imageeditor-content-border-width: 1px !default;
 
-$imageeditor-action-pane-padding-y: map-get( $spacing, 8 ) !default;
-$imageeditor-action-pane-padding-x: map-get( $spacing, 4 ) !default;
+$imageeditor-action-pane-padding-y: k-map-get( $spacing, 8 ) !default;
+$imageeditor-action-pane-padding-x: k-map-get( $spacing, 4 ) !default;
 $imageeditor-action-pane-width: if( $imageeditor-content-border-width == null, 240px, calc(240px + #{$imageeditor-content-border-width}) );
 
 $imageeditor-crop-border-width: 1px !default;
@@ -39,4 +39,4 @@ $imageeditor-crop-bg: null !default;
 $imageeditor-crop-text: null !default;
 $imageeditor-crop-border: white !default;
 
-$imageeditor-crop-overlay-bg: rgba(black, .3) !default;
+$imageeditor-crop-overlay-bg: rgba( black, .3 ) !default;
