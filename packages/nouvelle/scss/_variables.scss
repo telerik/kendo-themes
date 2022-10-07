@@ -13,6 +13,11 @@ $use-input-spinner-icon-offset: false !default;
 $use-picker-select-width: false !default;
 
 
+// Utils
+$ki-embed-font: true !default;
+$ki-icon-size: var( --kendo-icon-size, 1rem ) !default;
+
+
 // Spacing
 $kendo-spacing: (
     // sass-lint:disable-block leading-zero
