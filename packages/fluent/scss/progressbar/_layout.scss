@@ -67,6 +67,8 @@
         display: flex;
         overflow: unset;
         flex-shrink: 0;
+        grid-column: 1/-1;
+        grid-row: 2/-1;
 
         &.k-progress-start { justify-content: flex-start; }
         &.k-progress-center { justify-content: center; }
@@ -137,10 +139,10 @@
 
         .k-progress-status-wrap {
             flex-direction: column;
-            align-items: flex-end;
-            grid-row: 1 / -1;
-            grid-column: 1 / -1;
-            margin-inline-start: var( --kendo-progressbar-offset-y, #{- $kendo-progressbar-offset-y} );
+            align-items: flex-start;
+            margin-inline-start: var( --kendo-progressbar-vertical-status-offset, #{$kendo-progressbar-vertical-status-offset} );
+            grid-row: 1/-1;
+            grid-column: -1/1;
         }
 
         .k-progress-status {

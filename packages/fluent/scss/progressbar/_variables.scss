@@ -27,13 +27,10 @@ $kendo-progressbar-font-size: var( --kendo-font-size-sm, inherit ) !default;
 /// @group progressbar
 $kendo-progressbar-line-height: var( --kendo-line-height, inherit ) !default;
 
-///  of the progressbar.
-/// @group progressbar
-$kendo-progressbar-offset-y: map-get( $kendo-spacing, 2 ) !default;
-///  of the progressbar.
+/// Horizontal padding of the progressbar.
 /// @group progressbar
 $kendo-progressbar-padding-x: 0 !default;
-///  of the progressbar.
+/// Vertical padding of the progressbar.
 /// @group progressbar
 $kendo-progressbar-padding-y: 0 !default;
 
@@ -72,6 +69,13 @@ $kendo-progressbar-fill-border: $kendo-progressbar-fill-bg !default;
 /// Progress background gradient of the progressbar.
 /// @group progressbar
 $kendo-progressbar-fill-gradient: null !default;
+
+/// Progress status offset of the progressbar.
+/// @group progressbar
+$kendo-progressbar-offset-y: map-get( $kendo-spacing, 2 ) !default;
+/// Vertical status offset of the progressbar.
+/// @group progressbar
+$kendo-progressbar-vertical-status-offset: calc( (#{$kendo-progressbar-font-size} * #{$kendo-progressbar-line-height} + #{$kendo-progressbar-offset-y}) * -1) !default;
 
 /// Progress background color of the disabled progressbar.
 /// @group progressbar
