@@ -11,7 +11,7 @@ root.render(
         <div id="test-area" className="k-d-grid">
             <section>
 
-                <div id="treelist" className="k-treelist k-grid k-widget k-grid-no-scrollbar">
+                <div id="treelist" className="k-treelist k-grid k-grid-md k-grid-no-scrollbar">
                     <div className="k-grid-header" style={{ paddingRight: '0px' }}>
                         <div className="k-grid-header-wrap">
                             <table>
@@ -49,7 +49,7 @@ root.render(
             </section>
 
             <section>
-                <div id="treelist" className="k-treelist k-grid k-widget">
+                <div id="treelist" className="k-treelist k-grid k-grid-md">
                     <div className="k-grid-header">
                         <div className="k-grid-header-wrap">
                             <table>

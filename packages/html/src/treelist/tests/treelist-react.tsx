@@ -16,7 +16,7 @@ root.render(
         <div id="test-area" className="k-d-grid">
             <section>
                 <span>React Treelist</span>
-                <div className="k-widget k-grid k-treelist-scrollable">
+                <div className="k-grid k-grid-md k-treelist-scrollable">
                     <table>
                         <colgroup>
                             <col style={{ width: "200px" }} />

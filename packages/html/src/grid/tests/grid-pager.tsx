@@ -14,37 +14,37 @@ root.render(
             <span>Angular grid</span>
 
             <section>
-                <div className="k-widget k-grid k-grid-no-scrollbar">
+                <div className="k-grid k-grid-md k-grid-no-scrollbar">
                     <div className="k-grid-header">
                         <div className="k-grid-header-wrap">
-                            <table>
+                            <table className="k-table k-table-md k-grid-header-table">
                                 <colgroup>
                                     <col style={{ width: "100px" }} />
                                     <col />
                                 </colgroup>
-                                <thead>
-                                    <tr>
-                                        <th className="k-header">100px</th>
-                                        <th className="k-header">no width</th>
+                                <thead className="k-table-thead">
+                                    <tr className="k-table-row">
+                                        <th className="k-table-th k-header">100px</th>
+                                        <th className="k-table-th k-header">no width</th>
                                     </tr>
                                 </thead>
                             </table>
                         </div>
                     </div>
                     <div className="k-grid-content">
-                        <table className="k-grid-table">
+                        <table className="k-table k-table-md k-grid-table">
                             <colgroup>
                                 <col style={{ width: "100px" }} />
                                 <col />
                             </colgroup>
-                            <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Row</td>
+                            <tbody className="k-table-tbody">
+                                <tr className="k-table-row">
+                                    <td className="k-table-td">1</td>
+                                    <td className="k-table-td">Row</td>
                                 </tr>
-                                <tr className="k-alt">
-                                    <td>2</td>
-                                    <td>Alt row</td>
+                                <tr className="k-table-row k-table-alt-row k-alt">
+                                    <td className="k-table-td">2</td>
+                                    <td className="k-table-td">Alt row</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -54,20 +54,20 @@ root.render(
             </section>
 
             <section>
-                <div className="k-widget k-grid k-grid-no-scrollbar">
+                <div className="k-grid k-grid-md k-grid-no-scrollbar">
                     <div className="k-grid-aria-root">
                         {/* add padding-left or -right for scrollbar width */}
                         <div className="k-grid-header">
                             <div className="k-grid-header-wrap">
-                                <table>
+                                <table className="k-table k-table-md k-grid-header-table">
                                     <colgroup>
                                         <col style={{ width: "100px" }} />
                                         <col />
                                     </colgroup>
-                                    <thead>
-                                        <tr>
-                                            <th className="k-header">100px</th>
-                                            <th className="k-header">no width</th>
+                                    <thead className="k-table-thead">
+                                        <tr className="k-table-row">
+                                            <th className="k-table-th k-header">100px</th>
+                                            <th className="k-table-th k-header">no width</th>
                                         </tr>
                                     </thead>
                                 </table>
@@ -77,19 +77,19 @@ root.render(
                         <div className="k-grid-container">
                             <div className="k-grid-content k-virtual-content">
                                 <div>
-                                    <table className="k-grid-table">
+                                    <table className="k-table k-table-md k-grid-table">
                                         <colgroup>
                                             <col style={{ width: "100px" }} />
                                             <col />
                                         </colgroup>
-                                        <tbody>
-                                            <tr>
-                                                <td>1</td>
-                                                <td>Row</td>
+                                        <tbody className="k-table-tbody">
+                                            <tr className="k-table-row">
+                                                <td className="k-table-td">1</td>
+                                                <td className="k-table-td">Row</td>
                                             </tr>
-                                            <tr className="k-alt">
-                                                <td>2</td>
-                                                <td>Alt row</td>
+                                            <tr className="k-table-row k-table-alt-row k-alt">
+                                                <td className="k-table-td">2</td>
+                                                <td className="k-table-td">Alt row</td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -110,38 +110,38 @@ root.render(
             <span>Angular grid pager top</span>
 
             <section>
-                <div className="k-widget k-grid k-grid-no-scrollbar">
+                <div className="k-grid k-grid-md k-grid-no-scrollbar">
                     <Pager className="k-grid-pager k-grid-pager-top" />
                     <div className="k-grid-header">
                         <div className="k-grid-header-wrap">
-                            <table>
+                            <table className="k-table k-table-md k-grid-header-table">
                                 <colgroup>
                                     <col style={{ width: "100px" }} />
                                     <col />
                                 </colgroup>
-                                <thead>
-                                    <tr>
-                                        <th className="k-header">100px</th>
-                                        <th className="k-header">no width</th>
+                                <thead className="k-table-thead">
+                                    <tr className="k-table-row">
+                                        <th className="k-table-th k-header">100px</th>
+                                        <th className="k-table-th k-header">no width</th>
                                     </tr>
                                 </thead>
                             </table>
                         </div>
                     </div>
                     <div className="k-grid-content">
-                        <table className="k-grid-table">
+                        <table className="k-table k-table-md k-grid-table">
                             <colgroup>
                                 <col style={{ width: "100px" }} />
                                 <col />
                             </colgroup>
-                            <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Row</td>
+                            <tbody className="k-table-tbody">
+                                <tr className="k-table-row">
+                                    <td className="k-table-td">1</td>
+                                    <td className="k-table-td">Row</td>
                                 </tr>
-                                <tr className="k-alt">
-                                    <td>2</td>
-                                    <td>Alt row</td>
+                                <tr className="k-table-row k-table-alt-row k-alt">
+                                    <td className="k-table-td">2</td>
+                                    <td className="k-table-td">Alt row</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -150,21 +150,21 @@ root.render(
             </section>
 
             <section>
-                <div className="k-widget k-grid k-grid-no-scrollbar">
+                <div className="k-grid k-grid-md k-grid-no-scrollbar">
                     <Pager className="k-grid-pager k-grid-pager-top" />
                     <div className="k-grid-aria-root">
                         {/* add padding-left or -right for scrollbar width */}
                         <div className="k-grid-header">
                             <div className="k-grid-header-wrap">
-                                <table>
+                                <table className="k-table k-table-md k-grid-header-table">
                                     <colgroup>
                                         <col style={{ width: "100px" }} />
                                         <col />
                                     </colgroup>
-                                    <thead>
-                                        <tr>
-                                            <th className="k-header">100px</th>
-                                            <th className="k-header">no width</th>
+                                    <thead className="k-table-thead">
+                                        <tr className="k-table-row">
+                                            <th className="k-table-th k-header">100px</th>
+                                            <th className="k-table-th k-header">no width</th>
                                         </tr>
                                     </thead>
                                 </table>
@@ -174,19 +174,19 @@ root.render(
                         <div className="k-grid-container">
                             <div className="k-grid-content k-virtual-content">
                                 <div>
-                                    <table className="k-grid-table">
+                                    <table className="k-table k-table-md k-grid-table">
                                         <colgroup>
                                             <col style={{ width: "100px" }} />
                                             <col />
                                         </colgroup>
-                                        <tbody>
-                                            <tr>
-                                                <td>1</td>
-                                                <td>Row</td>
+                                        <tbody className="k-table-tbody">
+                                            <tr className="k-table-row">
+                                                <td className="k-table-td">1</td>
+                                                <td className="k-table-td">Row</td>
                                             </tr>
-                                            <tr className="k-alt">
-                                                <td>2</td>
-                                                <td>Alt row</td>
+                                            <tr className="k-table-row k-table-alt-row k-alt">
+                                                <td className="k-table-td">2</td>
+                                                <td className="k-table-td">Alt row</td>
                                             </tr>
                                         </tbody>
                                     </table>
