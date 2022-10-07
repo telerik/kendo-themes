@@ -1,8 +1,9 @@
+@use "../variables.scss" as *;
 // Infinite calendar and timepicker
 @mixin hide-scrollbar($max-scrollbar: 100px) {
     // anything larger than the scrollbar width will do
-    $scrollbar-size: 17px;
-    $margin: -$max-scrollbar - $scrollbar-size;
+    $scrollbar-size: var( --kendo-scrollbar-width, #{$default-scrollbar-width} );
+    $margin: calc( -#{$max-scrollbar} - #{$scrollbar-size} );
 
     padding-inline-end: $max-scrollbar;
     padding-inline-start: $max-scrollbar;
