@@ -1,15 +1,24 @@
 // Module system
 @import "module-system/_index.scss";
 
+// Color system
+@import "color-system/_index.scss";
+
+// Functions
 @import "functions/_index.scss";
+
+// Mixins
 @import "mixins/_index.scss";
-@import "../_variables.scss";
+
+// Helpers
+// @import "helpers/_index.scss"
+
+// Common styles
 
 @import "_asp-fallback.scss";
 @import "_normalize.scss";
 @import "_extra.scss";
 @import "_layout.scss";
-@import "_color-system.scss";
 
 
 @import "_component-reset.scss";
