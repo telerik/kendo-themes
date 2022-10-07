@@ -76,32 +76,6 @@ $primary-darker: k-color-shade( $primary, 2 ) !default;
 /// @type Color
 $primary-contrast: k-contrast-color( $primary ) !default;
 
-/// The secondary color of the theme.
-/// @group color-system
-/// @type Color
-$secondary: #f6f6f6 !default;
-$secondary-lighter: k-color-tint( $secondary, 2 ) !default;
-$secondary-darker: k-color-shade( $secondary, 2 ) !default;
-
-/// The color used along with the secondary color denoted by $secondary.
-/// Used to provide contrast between the background and foreground colors.
-/// @group color-system
-/// @type Color
-$secondary-contrast: k-contrast-color( $secondary ) !default;
-
-/// The tertiary color of the theme.
-/// @group color-system
-/// @type Color
-$tertiary: #03a9f4 !default;
-$tertiary-lighter: k-color-tint( $tertiary, 2 ) !default;
-$tertiary-darker: k-color-shade( $tertiary, 2 ) !default;
-
-/// The color used along with the tertiary color denoted by $tertiary.
-/// Used to provide contrast between the background and foreground colors.
-/// @group color-system
-/// @type Color
-$tertiary-contrast: k-contrast-color( $tertiary ) !default;
-
 /// The color for informational messages and states.
 /// @group color-system
 /// @type Color
@@ -147,8 +121,6 @@ $inverse: if( $dark-theme, $light, $dark ) !default;
 
 $kendo-theme-colors: (
     "primary": $primary,
-    "secondary": $secondary,
-    "tertiary": $tertiary,
     "info": $info,
     "success": $success,
     "warning": $warning,
