@@ -1,0 +1,91 @@
+@function k-generate-theme-variant( $variant, $matrix, $src-palette-name ) {
+    $result: ();
+
+    @each $ui-state, $indices in $matrix {
+        $prefix: if( $ui-state == DEFAULT, "", "#{$ui-state}-" );
+        $indices-count: k-list-length( $indices );
+
+        $bg-prop: k-list-nth( $indices, 1 );
+        $text-prop: k-list-nth( $indices, 2 );
+        $border-prop: k-list-nth( $indices, 3 );
+        $gradient-prop: if( $indices-count > 3, k-list-nth( $indices, 4 ), null );
+        $shadow-prop: if( $indices-count > 4, k-list-nth( $indices, 5 ), null );
+        $outline-prop: if( $indices-count > 5, k-list-nth( $indices, 6 ), null );
+
+        // Take value from the palette only if it is a number
+        $bg: if( k-meta-type-of( $bg-prop ) == number, k-get-theme-color( $src-palette-name, $bg-prop ), $bg-prop );
+        $text: if( k-meta-type-of( $text-prop ) == number, k-get-theme-color( $src-palette-name, $text-prop ), $text-prop );
+        $border: if( k-meta-type-of( $border-prop ) == number, k-get-theme-color( $src-palette-name, $border-prop ), $border-prop );
+        $gradient: $gradient-prop;
+        $shadow: $shadow-prop;
+        $outline: $outline-prop;
+
+        $result: k-map-merge($result, (
+            // sass-lint:disable-block indentation
+            #{$prefix}bg: $bg,
+            #{$prefix}text: $text,
+            #{$prefix}border: $border,
+            #{$prefix}gradient: $gradient,
+            #{$prefix}shadow: $shadow,
+            #{$prefix}outline: $outline
+        ));
+    }
+
+    $result: (
+        #{$variant}: $result
+    );
+
+    @return $result;
+
+};
+
+
+@function k-process-variant-matrices( $theme-matrix, $palette-matrix: () ) {
+    $result: ();
+
+    // @debug $theme-matrix;
+    // @debug $palette-matrix;
+
+    @each $variant, $definition in $theme-matrix {
+        $tc-index: k-string-index( $variant, "THEME_COLOR" );
+        $src-palette-name: k-map-get( $definition, PALETTE );
+        $matrix: k-map-remove( $definition, PALETTE );
+
+        @if ($tc-index == null ) {
+            $tmp-result: k-generate-theme-variant( $variant, $matrix, $src-palette-name );
+            $result: k-map-merge( $result, $tmp-result);
+        } @else {
+            @each $color, $palette in $palette-matrix {
+                $variant-name: k-string-replace( $variant, THEME_COLOR, $color);
+                $palette-name: k-string-unquote($src-palette-name + "");
+
+                @if ($palette-name == THEME_COLOR) {
+                    $palette-name: k-string-replace( $palette-name, THEME_COLOR, $color );
+                    $palette-name: k-map-get( $palette-matrix, $palette-name );
+                }
+
+                $tmp-result: k-generate-theme-variant( $variant-name, $matrix, $palette-name );
+                $result: k-map-merge( $result, $tmp-result );
+            }
+        }
+    }
+
+    @return $result;
+}
+
+
+@function k-get-theme-palette( $name ) {
+    @return k-map-get( $kendo-palettes, $name );
+}
+
+@function k-get-theme-color( $palette, $hue ) {
+    @if ( k-meta-type-of( $palette ) == "map" ) {
+        @return k-map-get( $palette, $hue );
+    }
+
+    @return k-map-get( k-get-theme-palette( $palette ), $hue );
+}
+
+@function k-get-theme-color-var( $name, $fallback: "inherit", $prefix: "kendo-" ) {
+    @return var( --#{$prefix}#{$name}, #{$fallback} );
+}
