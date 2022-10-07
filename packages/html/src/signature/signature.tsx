@@ -67,8 +67,9 @@ export class Signature extends React.Component<SignatureProps> {
                             className,
                             'k-signature-action',
                             'k-signature-maximize',
+                            maximized ? 'k-hidden' : ''
                         )}
-                        icon="window-maximize"
+                        icon="hyperlink-open"
                         rounded={this.props.rounded}
                         size={this.props.size}
                         fillMode="flat"
@@ -78,9 +79,9 @@ export class Signature extends React.Component<SignatureProps> {
                             className,
                             'k-signature-action',
                             'k-signature-minimize',
-                            'k-hidden'
+                            maximized ? '' : 'k-hidden'
                         )}
-                        icon="window-minimize"
+                        icon="hyperlink-open"
                         rounded={this.props.rounded}
                         size={this.props.size}
                         fillMode="flat"
