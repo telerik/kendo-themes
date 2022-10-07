@@ -1,13 +1,46 @@
+@import "~@progress/kendo-font-icons/scss/index.scss";
+
 @mixin kendo-icon--layout() {
 
-    // sass-lint:disable-block no-important no-ids
-    #test-area .k-icon {
-        display: none !important;
+    .k-svg-icon {
+
+        &.k-flip-h,
+        &.k-flip-v,
+        &.k-flip-h.k-flip-v {
+            transform: none;
+        }
+
+        &.k-flip-h {
+            > svg {
+                transform: scaleX( -1 );
+            }
+        }
+
+        &.k-flip-v {
+            > svg {
+                transform: scaleY( -1 );
+            }
+        }
+
+        &.k-flip-h.k-flip-v {
+            > svg {
+                transform: scale( -1, -1 );
+            }
+        }
+    }
+
+
+    // Icon with modifier
+    .k-icon-with-modifier {
+        position: relative;
+    }
+
+    .k-icon-modifier {
+        font-size: .5em;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        transform: translate( 50%, -50% );
     }
 
 }
-
-
-
-
-@mixin kendo-icon--extended-layout() {}

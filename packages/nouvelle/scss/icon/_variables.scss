@@ -1,0 +1,16 @@
+/// Font size of the icons.
+/// @group icon
+$kendo-icon-size: 1rem !default;
+/// Font size of the large icons.
+/// @group icon
+$kendo-icon-size-lg: 1.25rem !default;
+
+/// Spacing around the icons.
+/// @group icon
+$kendo-icon-spacing: k-map-get( $kendo-spacing, 1 ) !default;
+
+:root {
+    --kendo-icon-size: #{$kendo-icon-size};
+    --kendo-icon-size-lg: #{$kendo-icon-size-lg};
+    --kendo-icon-spacing: #{$kendo-icon-spacing};
+}

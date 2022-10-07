@@ -12,6 +12,7 @@ $_kendo-module-meta: (
 
 
 // Register
+@import "../core/module-system/_index.scss";
 @include module-register( $_kendo-module-meta... );
 
 
@@ -19,8 +20,6 @@ $_kendo-module-meta: (
 @mixin icon-styles() {
     @include module-render( "icon" ) {
         @include kendo-icon--layout();
-        @include kendo-icon--extended-layout();
         @include kendo-icon--theme();
-        @include kendo-icon--extended-theme();
     }
 }
