@@ -1,25 +1,25 @@
-$kendo-input-padding-x: k-map-get( $spacing, 2 ) !default;
-$kendo-input-padding-y: k-map-get( $spacing, 1 ) !default;
+$kendo-input-padding-x: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-input-padding-y: k-map-get( $kendo-spacing, 1 ) !default;
 
 $kendo-input-border-width: 1px !default;
 $kendo-input-border-style: solid !default;
 
-$kendo-input-border-radius: k-map-get( $spacing, 1 ) !default;
+$kendo-input-border-radius: k-map-get( $kendo-spacing, 1 ) !default;
 
-$kendo-input-font-family: $font-family !default;
-$kendo-input-font-size: $font-size !default;
-$kendo-input-line-height: $line-height !default;
+$kendo-input-font-family: $kendo-font-family !default;
+$kendo-input-font-size: $kendo-font-size-md !default;
+$kendo-input-line-height: $kendo-line-height-md !default;
 
 
 /// The background of the input.
 /// @group input
-$kendo-input-bg: $component-bg !default;
+$kendo-input-bg: $kendo-component-bg !default;
 /// The text color of the input.
 /// @group input
-$kendo-input-text: $component-text !default;
+$kendo-input-text: $kendo-component-text !default;
 /// The border color of the input.
 /// @group input
-$kendo-input-border: $component-border !default;
+$kendo-input-border: $kendo-component-border !default;
 $kendo-input-shadow: null !default;
 
 /// The background of hovered input.
@@ -53,8 +53,8 @@ $kendo-input-spinner-icon-offset: null !default;
 
 
 // Input icon
-$kendo-input-icon-width: $icon-size !default;
-$kendo-input-icon-height: $icon-size !default;
+$kendo-input-icon-width: $kendo-icon-size !default;
+$kendo-input-icon-height: $kendo-icon-size !default;
 
 
 // Input separator

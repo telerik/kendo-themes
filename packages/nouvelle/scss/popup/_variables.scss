@@ -6,20 +6,20 @@ $popup-border-style: solid !default;
 
 $popup-border-radius: 0px !default;
 
-$popup-font-family: $font-family !default;
-$popup-font-size: $font-size !default;
-$popup-line-height: $line-height !default;
+$popup-font-family: $kendo-font-family !default;
+$popup-font-size: $kendo-font-size-md !default;
+$popup-line-height: $kendo-line-height-md !default;
 
 
 /// The background of the popup.
 /// @group popup
-$popup-bg: k-color-mix( black, $component-bg, 2% ) !default;
+$popup-bg: k-color-mix( black, $kendo-component-bg, 2% ) !default;
 /// The text color of the popup.
 /// @group popup
-$popup-text: $component-text !default;
+$popup-text: $kendo-component-text !default;
 /// The border color of the popup.
 /// @group popup
-$popup-border: $component-border !default;
+$popup-border: $kendo-component-border !default;
 $popup-shadow: 0 2px 4px 0 rgba( black, .03 ), 0 4px 5px 0 rgba( black, .04 ) !default;
 
 

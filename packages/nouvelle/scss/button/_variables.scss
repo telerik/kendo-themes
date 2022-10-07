@@ -1,28 +1,28 @@
-$kendo-button-padding-x: k-map-get( $spacing, 2 ) !default;
-$kendo-button-padding-y: k-map-get( $spacing, 1 ) !default;
+$kendo-button-padding-x: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-button-padding-y: k-map-get( $kendo-spacing, 1 ) !default;
 
 $kendo-button-border-width: 1px !default;
 $kendo-button-border-style: solid !default;
 
-$kendo-button-border-radius: k-map-get( $spacing, 1 ) !default;
+$kendo-button-border-radius: k-map-get( $kendo-spacing, 1 ) !default;
 
-$kendo-button-font-family: $font-family !default;
-$kendo-button-font-size: $font-size !default;
-$kendo-button-line-height: $line-height !default;
+$kendo-button-font-family: $kendo-font-family !default;
+$kendo-button-font-size: $kendo-font-size-md !default;
+$kendo-button-line-height: $kendo-line-height-md !default;
 
 
 /// The background of the button.
 /// @group button
-$kendo-button-bg: $interactive-bg !default;
+$kendo-button-bg: $kendo-interactive-bg !default;
 /// The text color of the button.
 /// @group button
-$kendo-button-text: $interactive-text !default;
+$kendo-button-text: $kendo-interactive-text !default;
 /// The border color of the button.
 /// @group button
-$kendo-button-border: $interactive-border !default;
+$kendo-button-border: $kendo-interactive-border !default;
 /// The background gradient of the button.
 /// @group button
-$kendo-button-gradient: $interactive-gradient !default;
+$kendo-button-gradient: $kendo-interactive-gradient !default;
 $kendo-button-shadow: null !default;
 
 /// The background of hovered buttons.
