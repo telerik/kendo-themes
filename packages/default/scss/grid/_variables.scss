@@ -233,7 +233,6 @@ $kendo-grid-sticky-selected-hovered-bg: k-color-shade($kendo-grid-sticky-selecte
 
 $kendo-grid-column-menu-width: 230px !default;
 
-$grid-sticky-alt-bg: k-color-shade($grid-bg, 3.5%) !default;
 $kendo-grid-filter-menu-check-all-border-bottom-width: 1px !default;
 
 $kendo-grid-filter-menu-item-spacing-x: k-map-get( $spacing, 2 ) !default;
@@ -254,7 +253,7 @@ $kendo-grid-column-menu-items-wrap-padding-y: $padding-y-lg !default;
 $kendo-grid-column-menu-filter-container-padding-x: $padding-x !default;
 $kendo-grid-column-menu-filter-container-padding-y: $padding-y !default;
 
-$kendo-grid-column-menu-group-header-padding-x: $kendo-k-menu-popup-item-padding-x-md !default;
+$kendo-grid-column-menu-group-header-padding-x: $kendo-menu-popup-item-padding-x-md !default;
 $kendo-grid-column-menu-group-header-padding-y: $kendo-menu-popup-item-padding-y-md !default;
 
 $kendo-grid-column-menu-group-header-font-size: $font-size-sm !default;

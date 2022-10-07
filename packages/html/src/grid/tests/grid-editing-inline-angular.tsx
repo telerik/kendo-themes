@@ -13,24 +13,24 @@ root.render(
     <>
         <div id="test-area" className="k-d-grid">
             <h3>Edit Row</h3>
-            <div dir="ltr" className="k-widget k-grid">
+            <div dir="ltr" className="k-grid k-grid-md">
                 <Toolbar className="k-grid-toolbar">
                     <Button icon="add">Add</Button>
                 </Toolbar>
                 <div className="k-grid-aria-root" role="grid">
                     <div className="k-grid-header">
                         <div className="k-grid-header-wrap">
-                            <table>
+                            <table className="k-table k-table-md k-grid-header-table">
                                 <colgroup>
                                     <col style={{ width: '50px' }} />
                                     <col />
                                     <col />
                                 </colgroup>
-                                <thead>
-                                    <tr role="row">
-                                        <th className="k-header" rowSpan={1} colSpan={1}><Checkbox /></th>
-                                        <th className="k-header" rowSpan={1} colSpan={1}>Name</th>
-                                        <th className="k-header" rowSpan={1} colSpan={1}>Command</th>
+                                <thead className="k-table-thead">
+                                    <tr className="k-table-row">
+                                        <th className="k-table-th k-header" rowSpan={1} colSpan={1}><Checkbox /></th>
+                                        <th className="k-table-th k-header" rowSpan={1} colSpan={1}>Name</th>
+                                        <th className="k-table-th k-header" rowSpan={1} colSpan={1}>Command</th>
                                     </tr>
                                 </thead>
                             </table>
@@ -39,27 +39,27 @@ root.render(
                     <div className="k-grid-container">
                         <div className="k-grid-content k-virtual-content">
                             <div className="k-grid-table-wrap">
-                                <table className="k-grid-table">
+                                <table className="k-table k-table-md k-grid-table">
                                     <colgroup>
                                         <col style={{ width: '50px' }} />
                                         <col />
                                         <col />
                                     </colgroup>
-                                    <tbody>
-                                        <tr className="k-grid-edit-row" role="row">
-                                            <td className="k-touch-action-auto" colSpan={1}><Checkbox /></td>
-                                            <td className="k-touch-action-auto" colSpan={1}>
+                                    <tbody className="k-table-tbody">
+                                        <tr className="k-table-row k-grid-edit-row" role="row">
+                                            <td className="k-table-td k-touch-action-auto" colSpan={1}><Checkbox /></td>
+                                            <td className="k-table-td k-touch-action-auto" colSpan={1}>
                                                 <Textbox />
                                             </td>
-                                            <td className="k-touch-action-auto k-command-cell" colSpan={1}>
+                                            <td className="k-table-td k-touch-action-auto k-command-cell" colSpan={1}>
                                                 <Button>Update</Button>
                                                 <Button>Cancel</Button>
                                             </td>
                                         </tr>
-                                        <tr className="k-alt" role="row">
-                                            <td className="k-touch-action-auto" colSpan={1}><Checkbox /></td>
-                                            <td className="k-touch-action-auto" colSpan={1}>Product2</td>
-                                            <td className="k-touch-action-auto k-command-cell" colSpan={1}>
+                                        <tr className="k-table-row k-table-alt-row k-alt">
+                                            <td className="k-table-td k-touch-action-auto" colSpan={1}><Checkbox /></td>
+                                            <td className="k-table-td k-touch-action-auto" colSpan={1}>Product2</td>
+                                            <td className="k-table-td k-touch-action-auto k-command-cell" colSpan={1}>
                                                 <Button>Edit</Button>
                                                 <Button>Remove</Button>
                                             </td>
@@ -75,24 +75,24 @@ root.render(
                 </div>
             </div>
             <h3>New Row</h3>
-            <div dir="ltr" className="k-widget k-grid">
+            <div dir="ltr" className="k-grid k-grid-md">
                 <Toolbar className="k-grid-toolbar">
                     <Button icon="add">Add</Button>
                 </Toolbar>
                 <div className="k-grid-aria-root" role="grid">
                     <div className="k-grid-header">
                         <div className="k-grid-header-wrap">
-                            <table>
+                            <table className="k-table k-table-md k-grid-header-table">
                                 <colgroup>
                                     <col style={{ width: '50px' }} />
                                     <col />
                                     <col />
                                 </colgroup>
-                                <thead>
-                                    <tr role="row">
-                                        <th className="k-header" rowSpan={1} colSpan={1}><Checkbox /></th>
-                                        <th className="k-header" rowSpan={1} colSpan={1}>Name</th>
-                                        <th className="k-header" rowSpan={1} colSpan={1}>Command</th>
+                                <thead className="k-table-thead">
+                                    <tr className="k-table-row">
+                                        <th className="k-table-th k-header" rowSpan={1} colSpan={1}><Checkbox /></th>
+                                        <th className="k-table-th k-header" rowSpan={1} colSpan={1}>Name</th>
+                                        <th className="k-table-th k-header" rowSpan={1} colSpan={1}>Command</th>
                                     </tr>
                                 </thead>
                             </table>
@@ -101,35 +101,35 @@ root.render(
                     <div className="k-grid-container">
                         <div className="k-grid-content k-virtual-content">
                             <div className="k-grid-table-wrap">
-                                <table className="k-grid-table">
+                                <table className="k-table k-table-md k-grid-table">
                                     <colgroup>
                                         <col style={{ width: '50px' }} />
                                         <col />
                                         <col />
                                     </colgroup>
-                                    <tbody>
-                                        <tr className="k-grid-add-row k-grid-edit-row" role="row">
-                                            <td colSpan={1}></td>
-                                            <td colSpan={1}>
+                                    <tbody className="k-table-tbody">
+                                        <tr className="k-table-row k-grid-add-row k-grid-edit-row" role="row">
+                                            <td className="k-table-td" colSpan={1}></td>
+                                            <td className="k-table-td" colSpan={1}>
                                                 <Textbox />
                                             </td>
-                                            <td colSpan={1} className="k-command-cell">
+                                            <td className="k-table-td k-command-cell" colSpan={1}>
                                                 <Button>Add</Button>
                                                 <Button>Discard changes</Button>
                                             </td>
                                         </tr>
-                                        <tr role="row">
-                                            <td className="k-touch-action-auto" colSpan={1}><Checkbox /></td>
-                                            <td className="k-touch-action-auto" colSpan={1}>Product1</td>
-                                            <td className="k-touch-action-auto k-command-cell" colSpan={1}>
+                                        <tr className="k-table-row">
+                                            <td className="k-table-td k-touch-action-auto" colSpan={1}><Checkbox /></td>
+                                            <td className="k-table-td k-touch-action-auto" colSpan={1}>Product1</td>
+                                            <td className="k-table-td k-touch-action-auto k-command-cell" colSpan={1}>
                                                 <Button>Edit</Button>
                                                 <Button>Remove</Button>
                                             </td>
                                         </tr>
-                                        <tr className="k-alt" role="row">
-                                            <td className="k-touch-action-auto" colSpan={1}><Checkbox /></td>
-                                            <td className="k-touch-action-auto" colSpan={1}>Product2</td>
-                                            <td className="k-touch-action-auto k-command-cell" colSpan={1}>
+                                        <tr className="k-table-row k-table-alt-row k-alt">
+                                            <td className="k-table-td k-touch-action-auto" colSpan={1}><Checkbox /></td>
+                                            <td className="k-table-td k-touch-action-auto" colSpan={1}>Product2</td>
+                                            <td className="k-table-td k-touch-action-auto k-command-cell" colSpan={1}>
                                                 <Button>Edit</Button>
                                                 <Button>Remove</Button>
                                             </td>

@@ -19,21 +19,21 @@ root.render(
     <>
         <div id="test-area" className="k-d-grid">
 
-            <div className="k-widget k-grid k-grid-no-scrollbar">
+            <div className="k-grid k-grid-md k-grid-no-scrollbar">
                 <div className="k-grid-aria-root">
                     <div className="k-grid-header">
                         <div className="k-grid-header-wrap">
-                            <table>
+                            <table className="k-table k-table-md k-grid-header-table">
                                 <colgroup>
                                     <col style={{ width: "68px" }} /><col /><col /><col /><col />
                                 </colgroup>
-                                <thead>
-                                    <tr>
-                                        <th className="k-header"></th>
-                                        <th className="k-header">Autocomplete</th>
-                                        <th className="k-header">Combobox</th>
-                                        <th className="k-header">Dropdown</th>
-                                        <th className="k-header">Multiselect</th>
+                                <thead className="k-table-thead">
+                                    <tr className="k-table-row">
+                                        <th className="k-table-th k-header"></th>
+                                        <th className="k-table-th k-header">Autocomplete</th>
+                                        <th className="k-table-th k-header">Combobox</th>
+                                        <th className="k-table-th k-header">Dropdown</th>
+                                        <th className="k-table-th k-header">Multiselect</th>
                                     </tr>
                                 </thead>
                             </table>
@@ -42,24 +42,24 @@ root.render(
                     <div className="k-grid-container">
                         <div className="k-grid-content">
                             <div>
-                                <table className="k-grid-table">
+                                <table className="k-table k-table-md k-grid-table">
                                     <colgroup>
                                         <col style={{ width: "68px" }} /><col /><col /><col /><col />
                                     </colgroup>
-                                    <tbody>
-                                        <tr className="k-grid-edit-row">
-                                            <td>LTR</td>
-                                            <td><Autocomplete placeholder="Autocomplete..." /></td>
-                                            <td><Combobox placeholder="Combobox..." /></td>
-                                            <td><DropdownList placeholder="DropdownList..." /></td>
-                                            <td><MultiSelect placeholder="Multiselect..." /></td>
+                                    <tbody className="k-table-tbody">
+                                        <tr className="k-table-row k-grid-edit-row">
+                                            <td className="k-table-td">LTR</td>
+                                            <td className="k-table-td"><Autocomplete placeholder="Autocomplete..." /></td>
+                                            <td className="k-table-td"><Combobox placeholder="Combobox..." /></td>
+                                            <td className="k-table-td"><DropdownList placeholder="DropdownList..." /></td>
+                                            <td className="k-table-td"><MultiSelect placeholder="Multiselect..." /></td>
                                         </tr>
-                                        <tr className="k-alt k-grid-edit-row">
-                                            <td>RTL</td>
-                                            <td><Autocomplete placeholder="Autocomplete..." className="k-rtl" /></td>
-                                            <td><Combobox placeholder="Combobox..." className="k-rtl" /></td>
-                                            <td><DropdownList placeholder="DropdownList..." className="k-rtl" /></td>
-                                            <td><MultiSelect placeholder="Multiselect..." className="k-rtl" /></td>
+                                        <tr className="k-table-row k-table-alt-row k-alt k-grid-edit-row">
+                                            <td className="k-table-td">RTL</td>
+                                            <td className="k-table-td"><Autocomplete placeholder="Autocomplete..." className="k-rtl" /></td>
+                                            <td className="k-table-td"><Combobox placeholder="Combobox..." className="k-rtl" /></td>
+                                            <td className="k-table-td"><DropdownList placeholder="DropdownList..." className="k-rtl" /></td>
+                                            <td className="k-table-td"><MultiSelect placeholder="Multiselect..." className="k-rtl" /></td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -69,21 +69,21 @@ root.render(
                 </div>
             </div>
 
-            <div className="k-widget k-grid k-grid-no-scrollbar">
+            <div className="k-grid k-grid-md k-grid-no-scrollbar">
                 <div className="k-grid-aria-root" style={{ overflow: "visible" }}>
                     <div className="k-grid-header">
                         <div className="k-grid-header-wrap">
-                            <table>
+                            <table className="k-table k-table-md k-grid-header-table">
                                 <colgroup>
                                     <col style={{ width: "68px" }} /><col /><col /><col /><col />
                                 </colgroup>
-                                <thead>
-                                    <tr>
-                                        <th className="k-header"></th>
-                                        <th className="k-header">Datepicker</th>
-                                        <th className="k-header">Timepicker</th>
-                                        <th className="k-header">Datetime</th>
-                                        <th className="k-header">Dateinput</th>
+                                <thead className="k-table-thead">
+                                    <tr className="k-table-row">
+                                        <th className="k-table-th k-header"></th>
+                                        <th className="k-table-th k-header">Datepicker</th>
+                                        <th className="k-table-th k-header">Timepicker</th>
+                                        <th className="k-table-th k-header">Datetime</th>
+                                        <th className="k-table-th k-header">Dateinput</th>
                                     </tr>
                                 </thead>
                             </table>
@@ -92,24 +92,24 @@ root.render(
                     <div className="k-grid-container" style={{ overflow: "visible" }}>
                         <div className="k-grid-content" style={{ overflow: "visible" }}>
                             <div>
-                                <table className="k-grid-table">
+                                <table className="k-table k-table-md k-grid-table">
                                     <colgroup>
                                         <col style={{ width: "68px" }} /><col /><col /><col /><col />
                                     </colgroup>
-                                    <tbody>
-                                        <tr className="k-grid-edit-row">
-                                            <td>LTR</td>
-                                            <td><DatePicker placeholder="DatePicker..." /></td>
-                                            <td><TimePicker placeholder="TimePicker..." /></td>
-                                            <td><DateTimePicker placeholder="DateTimePicker..." /></td>
-                                            <td><DateInput placeholder="DateInput..." /></td>
+                                    <tbody className="k-table-tbody">
+                                        <tr className="k-table-row k-grid-edit-row">
+                                            <td className="k-table-td">LTR</td>
+                                            <td className="k-table-td"><DatePicker placeholder="DatePicker..." /></td>
+                                            <td className="k-table-td"><TimePicker placeholder="TimePicker..." /></td>
+                                            <td className="k-table-td"><DateTimePicker placeholder="DateTimePicker..." /></td>
+                                            <td className="k-table-td"><DateInput placeholder="DateInput..." /></td>
                                         </tr>
-                                        <tr className="k-alt k-grid-edit-row">
-                                            <td>RTL</td>
-                                            <td><DatePicker placeholder="DatePicker..." className="k-rtl"/></td>
-                                            <td><TimePicker placeholder="TimePicker..." className="k-rtl" /></td>
-                                            <td><DateTimePicker placeholder="DateTimePicker..." className="k-rtl" /></td>
-                                            <td><DateInput placeholder="DateInput..." className="k-rtl" /></td>
+                                        <tr className="k-table-row k-table-alt-row k-alt k-grid-edit-row">
+                                            <td className="k-table-td">RTL</td>
+                                            <td className="k-table-td"><DatePicker placeholder="DatePicker..." className="k-rtl"/></td>
+                                            <td className="k-table-td"><TimePicker placeholder="TimePicker..." className="k-rtl" /></td>
+                                            <td className="k-table-td"><DateTimePicker placeholder="DateTimePicker..." className="k-rtl" /></td>
+                                            <td className="k-table-td"><DateInput placeholder="DateInput..." className="k-rtl" /></td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -119,20 +119,20 @@ root.render(
                 </div>
             </div>
 
-            <div className="k-widget k-grid k-grid-no-scrollbar">
+            <div className="k-grid k-grid-md k-grid-no-scrollbar">
                 <div className="k-grid-aria-root">
                     <div className="k-grid-header">
                         <div className="k-grid-header-wrap">
-                            <table>
+                            <table className="k-table k-table-md k-grid-header-table">
                                 <colgroup>
                                     <col style={{ width: "68px" }} /><col /><col /><col />
                                 </colgroup>
-                                <thead>
-                                    <tr>
-                                        <th className="k-header"></th>
-                                        <th className="k-header">Numeric</th>
-                                        <th className="k-header">Switch</th>
-                                        <th className="k-header"></th>
+                                <thead className="k-table-thead">
+                                    <tr className="k-table-row">
+                                        <th className="k-table-th k-header"></th>
+                                        <th className="k-table-th k-header">Numeric</th>
+                                        <th className="k-table-th k-header">Switch</th>
+                                        <th className="k-table-th k-header"></th>
                                     </tr>
                                 </thead>
                             </table>
@@ -141,30 +141,30 @@ root.render(
                     <div className="k-grid-container">
                         <div className="k-grid-content">
                             <div>
-                                <table className="k-grid-table">
+                                <table className="k-table k-table-md k-grid-table">
                                     <colgroup>
                                         <col style={{ width: "68px" }} /><col /><col /><col />
                                     </colgroup>
-                                    <tbody>
-                                        <tr className="k-grid-edit-row">
-                                            <td>LTR</td>
-                                            <td>
+                                    <tbody className="k-table-tbody">
+                                        <tr className="k-table-row k-grid-edit-row">
+                                            <td className="k-table-td">LTR</td>
+                                            <td className="k-table-td">
                                                 <NumericTextbox placeholder="Numeric..." />
                                             </td>
-                                            <td>
+                                            <td className="k-table-td">
                                                 <Switch checked />
                                             </td>
-                                            <td></td>
+                                            <td className="k-table-td"></td>
                                         </tr>
-                                        <tr className="k-alt k-grid-edit-row">
-                                            <td>RTL</td>
-                                            <td>
+                                        <tr className="k-table-row k-table-alt-row k-alt k-grid-edit-row">
+                                            <td className="k-table-td">RTL</td>
+                                            <td className="k-table-td">
                                                 <NumericTextbox placeholder="Numeric..." className="k-rtl" />
                                             </td>
-                                            <td>
+                                            <td className="k-table-td">
                                                 <Switch checked className="k-rtl" />
                                             </td>
-                                            <td></td>
+                                            <td className="k-table-td"></td>
                                         </tr>
                                     </tbody>
                                 </table>

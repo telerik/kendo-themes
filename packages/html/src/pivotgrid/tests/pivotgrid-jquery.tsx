@@ -40,7 +40,7 @@ root.render(
                                             }
                                         />
                                     </Toolbar>
-                                    <div className="k-grid k-widget k-alt" style={{ height: "363px" }}>
+                                    <div className="k-grid k-grid-md k-alt" style={{ height: "363px" }}>
                                         <table>
                                             <colgroup>
                                                 <col />
@@ -76,7 +76,7 @@ root.render(
                                             }
                                         />
                                     </Toolbar>
-                                    <div className="k-grid k-widget">
+                                    <div className="k-grid k-grid-md">
                                         <div className="k-grid-header">
                                             <div className="k-grid-header-wrap" style={{ height: "110px" }}>
                                                 <table style={{ width: "199%" }}>

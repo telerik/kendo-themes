@@ -47,7 +47,7 @@ root.render(
                 </Toolbar>
                 <div className="k-gantt-content">
                     <div className="k-gantt-treelist">
-                        <div className="k-treelist k-grid k-widget k-grid-display-block">
+                        <div className="k-treelist k-grid k-grid-md k-grid-display-block">
                             <div className="k-grid-header">
                                 <div className="k-grid-header-wrap">
                                     <table style={{ minWidth: "250px" }}>
@@ -172,7 +172,7 @@ root.render(
                         <div className="k-resize-handle"></div>
                     </div>
                     <div className="k-gantt-timeline">
-                        <div className="k-timeline k-grid k-widget">
+                        <div className="k-timeline k-grid k-grid-md">
                             <div className="k-grid-header">
                                 <div className="k-grid-header-wrap">
                                     <table style={{ width: "4200px" }}>
