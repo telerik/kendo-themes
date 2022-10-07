@@ -11,6 +11,9 @@ const styles = `
         display: flex;
         justify-content: end;
     }
+    .k-signature-minimize {
+        transform: rotate(180deg);
+    }
 `;
 
 root.render(
