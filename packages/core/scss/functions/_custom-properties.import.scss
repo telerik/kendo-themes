@@ -1,0 +1,37 @@
+@function k-var( $prefix: kendo-, $var: null, $fallback: null ) {
+    $_prefix: $prefix;
+    $_var: $var;
+    $_fallback: $fallback;
+
+    @if ( k-string-index( $prefix, "--" ) == 1 ) {
+        $_prefix: "";
+        $_var: k-string-slice( $prefix, 3 );
+        $_fallback: $var;
+    }
+
+    @if not $_var {
+        @return null;
+    }
+
+    @if $_prefix == null {
+        $_prefix: "";
+    }
+
+    @if ($_fallback != null and $_fallback != "") {
+        @return var( --#{$_prefix}#{$_var}, #{$_fallback} );
+    }
+
+    @return var( --#{$_prefix}#{$_var} );
+}
+
+@function k-vars( $prefix: kendo-, $vars... ) {
+    $vars: k-list-reverse( $vars );
+    $result: null;
+
+    // @debug $prefix;
+    @each $var in $vars {
+        $result: k-var( $prefix, $var, $result );
+    }
+
+    @return $result;
+}

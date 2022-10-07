@@ -1,0 +1,18 @@
+// Color constants
+$white: #ffffff; // stylelint-disable-line scss/dollar-variable-default
+$black: #000000; // stylelint-disable-line scss/dollar-variable-default
+
+$rgba-transparent: rgba( 0, 0, 0, 0 ); // stylelint-disable-line scss/dollar-variable-default
+
+$gradient-transparent-to-black: rgba( black, 0 ), black; // stylelint-disable-line scss/dollar-variable-default
+$gradient-transparent-to-white: rgba( white, 0 ), white; // stylelint-disable-line scss/dollar-variable-default
+$gradient-black-to-transparent: black, rgba( black, 0 ); // stylelint-disable-line scss/dollar-variable-default
+$gradient-white-to-transparent: white, rgba( white, 0 ); // stylelint-disable-line scss/dollar-variable-default
+
+$gradient-rainbow: #ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff, #ff0000; // stylelint-disable-line scss/dollar-variable-default
+
+
+/// Set a specific jump point for requesting color jumps
+/// @group color-system
+/// @access private
+$kendo-color-level-step: 8% !default;

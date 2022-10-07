@@ -22,6 +22,24 @@
     @return nth( $list, $n );
 }
 
+@function k-list-reverse( $list: null ) {
+    $result: ();
+
+    @if ($list) {
+        $len: k-list-length( $list );
+
+        @for $i from $len through 1 {
+            $result: k-list-append( $result, k-list-nth( $list, $i ) );
+        }
+
+        @return $result;
+    }
+
+    // sass-lint:disable-block no-warn
+    @warn "No list passed.";
+    @return $result;
+}
+
 @function k-list-separator( $list ) {
     @return list-separator( $list );
 }
