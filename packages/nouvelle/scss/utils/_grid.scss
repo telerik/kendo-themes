@@ -30,13 +30,13 @@
 
     // Grid utilities
     @if $enable-grid-classes {
-        @for $i from 1 through $grid-cols {
+        @for $i from 1 through $kendo-grid-cols {
             .k-grid-cols-#{$i}   { grid-template-columns: repeat($i, minmax(0, 1fr)); }
             .k-colspan-#{$i}    { grid-column: span $i; }
             .k-col-start-#{$i}  { grid-column-start: $i; }
             .k-col-end-#{$i}    { grid-column-end: $i; }
         }
-        @for $i from 1 through $grid-rows {
+        @for $i from 1 through $kendo-grid-rows {
             .k-grid-rows-#{$i}   { grid-template-rows: repeat($i, minmax(0, 1fr)); }
             .k-rowspan-#{$i}    { grid-row: span $i; }
             .k-row-start-#{$i}  { grid-row-start: $i; }
