@@ -55,6 +55,7 @@ export class Signature extends React.Component<SignatureProps> {
                         'k-signature-maximized': maximized
                     }
                 )}>
+                <canvas className="k-signature-canvas"></canvas>
                 <div
                     className={classNames(
                         className,
@@ -85,7 +86,6 @@ export class Signature extends React.Component<SignatureProps> {
                         fillMode="flat"
                     />
                 </div>
-                <canvas className="k-signature-canvas"></canvas>
                 <div className="k-signature-line"></div>
                 <div
                     className={classNames(
