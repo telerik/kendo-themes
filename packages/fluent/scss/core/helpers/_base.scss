@@ -7,9 +7,8 @@
 .k-widget[disabled],
 .k-disabled {
     @include disabled(
-        var( --kendo-disabled-text, inherit ),
-        var( --kendo-disabled-bg, inherit ),
-        var( --kendo-disabled-border, inherit )
+        $color: var( --kendo-disabled-text, inherit ),
+        $border: var( --kendo-disabled-border, inherit )
     );
 
     .k-link {
