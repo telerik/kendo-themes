@@ -1,5 +1,5 @@
 // Orgchart
-$orgchart-spacer: map-get( $spacing, 6 ) !default;
+$orgchart-spacer: k-map-get( $spacing, 6 ) !default;
 $orgchart-padding-y: $orgchart-spacer !default;
 $orgchart-padding-x: $orgchart-padding-y !default;
 $orgchart-font-family: $font-family !default;
@@ -30,7 +30,7 @@ $orgchart-node-group-title-line-height: $line-height-sm !default;
 
 $orgchart-node-group-subtitle-font-size: $font-size !default;
 $orgchart-node-group-subtitle-margin-bottom: $orgchart-spacer !default;
-$orgchart-node-group-subtitle-text: rgba( 0, 0, 0, .54 ) !default;
+$orgchart-node-group-subtitle-text: rgba( black, .54 ) !default;
 
 $orgchart-card-width: 300px !default;
 $orgchart-card-padding-y: $card-padding-y !default;

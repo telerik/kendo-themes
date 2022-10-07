@@ -59,5 +59,5 @@ $fieldset-text: null !default;
 $fieldset-border: null !default;
 
 $fieldset-legend-bg: null !default;
-$fieldset-legend-text: try-shade( $body-text, 2 ) !default;
+$fieldset-legend-text: k-try-shade( $body-text, 2 ) !default;
 $fieldset-legend-border: null !default;

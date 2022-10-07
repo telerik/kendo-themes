@@ -118,7 +118,8 @@
         }
 
         // Template item
-        .k-toolbar-item:focus {
+        .k-toolbar-item:focus,
+        .k-toolbar-item.k-focus {
             text-decoration: none;
             outline: 0;
         }

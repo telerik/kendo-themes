@@ -157,17 +157,34 @@
                 $bg: var( --kendo-gantt-task-progress-bg, #{$kendo-gantt-task-progress-bg} )
             );
         }
+
+        &:hover {
+            .k-task-complete {
+                background-color: var( --kendo-gantt-task-progress-hover-bg, #{$kendo-gantt-task-progress-hover-bg} )
+            }
+        }
     }
+
     .k-task-delayed .k-task-complete {
         @include fill(
             $bg: var( --kendo-gantt-delayed-bg, #{$kendo-gantt-delayed-bg} )
         );
     }
-    .k-task-advanced .k-task-complete {
-        @include fill(
-            $bg: var( --kendo-gantt-advanced-bg, #{$kendo-gantt-advanced-bg} )
-        );
+
+    .k-task-advanced {
+        .k-task-complete {
+            @include fill(
+                $bg: var( --kendo-gantt-advanced-bg, #{$kendo-gantt-advanced-bg} )
+            );
+        }
+
+        &:hover {
+            .k-task-complete {
+                background-color: var( --kendo-gantt-advanced-hover-bg, #{$kendo-gantt-advanced-hover-bg} );
+            }
+        }
     }
+
     .k-task-single.k-selected {
         @include fill(
             var( --kendo-gantt-task-selected-text, #{$kendo-gantt-task-selected-text} ),

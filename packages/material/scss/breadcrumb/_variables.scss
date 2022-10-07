@@ -37,7 +37,7 @@ $breadcrumb-link-hovered-bg: $hovered-bg !default;
 $breadcrumb-link-hovered-text: null !default;
 $breadcrumb-link-hovered-border: null !default;
 
-$breadcrumb-link-focused-bg: map-get( $theme, focus-bg ) !default;
+$breadcrumb-link-focused-bg: k-map-get( $theme, focus-bg ) !default;
 $breadcrumb-link-focused-text: null !default;
 $breadcrumb-link-focused-border: null !default;
 $breadcrumb-link-focused-shadow: null !default;
@@ -50,9 +50,9 @@ $breadcrumb-root-link-hovered-bg: $hovered-bg !default;
 $breadcrumb-root-link-hovered-text: null !default;
 $breadcrumb-root-link-hovered-border: null !default;
 
-$breadcrumb-root-link-focused-bg: map-get( $theme, focus-bg ) !default;
+$breadcrumb-root-link-focused-bg: k-map-get( $theme, focus-bg ) !default;
 $breadcrumb-root-link-focused-text: null !default;
 $breadcrumb-root-link-focused-border: null !default;
 $breadcrumb-root-link-focused-shadow: null !default;
 
-$breadcrumb-focused-shadow: 0 0 2px 1px rgba(0, 0, 0, .06) !default;
+$breadcrumb-focused-shadow: 0 0 2px 1px rgba( black, .06 ) !default;

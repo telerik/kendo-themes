@@ -13,7 +13,7 @@ $scrollview-pagebutton-bg: $kendo-button-bg !default;
 $scrollview-pagebutton-border: $kendo-button-border !default;
 $scrollview-pagebutton-primary-bg: $primary !default;
 $scrollview-pagebutton-primary-border: $primary !default;
-$scrollview-pagebutton-shadow: 0 0 0 2px rgba(0, 0, 0, .13) !default;
+$scrollview-pagebutton-shadow: 0 0 0 2px rgba( black, .13 ) !default;
 
 $scrollview-pager-offset: 0 !default;
 $scrollview-pager-item-spacing: 20px !default;
@@ -27,14 +27,14 @@ $scrollview-pager-multidot-step: 1px !default;
 $scrollview-arrow-icon-size: 4.5em !default;
 $scrollview-arrow-tap-highlight-color: $rgba-transparent !default;
 $scrollview-navigation-color: white !default;
-$scrollview-navigation-icon-shadow: rgba(0, 0, 0, .3) 0 0 15px !default;
-$scrollview-navigation-bg: rgba(0, 0, 0, 0) !default;
+$scrollview-navigation-icon-shadow: rgba( black, .3 ) 0 0 15px !default;
+$scrollview-navigation-bg: rgba( black, 0 ) !default;
 $scrollview-navigation-default-opacity: .7 !default;
 $scrollview-navigation-hover-opacity: 1 !default;
 $scrollview-navigation-hover-span-bg: null !default;
 
-$scrollview-light-bg: rgba(255, 255, 255, .4) !default;
-$scrollview-dark-bg: rgba(0, 0, 0, .4) !default;
+$scrollview-light-bg: rgba( white, .4 ) !default;
+$scrollview-dark-bg: rgba( black, .4 ) !default;
 
 $scrollview-transition-duration: .3s !default;
 $scrollview-transition-timing-function: ease-in-out !default;

@@ -17,7 +17,7 @@ $splitter-drag-icon-margin: 7px !default;
 $splitbar-bg: $base-bg !default;
 $splitbar-text: $base-text !default;
 
-$splitbar-hover-bg: try-shade( $splitbar-bg, .5 ) !default;
+$splitbar-hover-bg: k-try-shade( $splitbar-bg, .5 ) !default;
 $splitbar-hover-text: $splitbar-text !default;
 
 $splitbar-selected-bg: $selected-bg !default;

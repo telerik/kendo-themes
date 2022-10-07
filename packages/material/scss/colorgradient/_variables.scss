@@ -1,5 +1,5 @@
 // ColorGradient
-$colorgradient-spacer: map-get( $spacing, 3 ) !default;
+$colorgradient-spacer: k-map-get( $spacing, 3 ) !default;
 
 $colorgradient-width: 294px !default;
 $colorgradient-border-width: 1px !default;
@@ -34,18 +34,18 @@ $colorgradient-draghandle-border-width: 1px !default;
 $colorgradient-draghandle-border-radius: 50% !default;
 $colorgradient-draghandle-bg: transparent !default;
 $colorgradient-draghandle-text: null !default;
-$colorgradient-draghandle-border: rgba( $white, .8) !default;
-$colorgradient-draghandle-shadow: 0 1px 4px rgba(0, 0, 0, .5) !default;
+$colorgradient-draghandle-border: rgba( white, .8 ) !default;
+$colorgradient-draghandle-shadow: 0 1px 4px rgba( black, .5 ) !default;
 $colorgradient-draghandle-focus-shadow: 0 1px 4px black !default;
 $colorgradient-draghandle-hover-shadow: $colorgradient-draghandle-focus-shadow !default;
 
-$colorgradient-canvas-draghandle-margin-y: -( $colorgradient-draghandle-height / 2 ) !default;
-$colorgradient-canvas-draghandle-margin-x: -( $colorgradient-draghandle-width / 2 ) !default;
+$colorgradient-canvas-draghandle-margin-y: - k-math-div( $colorgradient-draghandle-height, 2 ) !default;
+$colorgradient-canvas-draghandle-margin-x: - k-math-div( $colorgradient-draghandle-width, 2 ) !default;
 
 $colorgradient-input-width: 50px !default;
-$colorgradient-input-gap: map-get( $spacing, 2 ) !default;
-$colorgradient-input-label-gap: map-get( $spacing, 1 ) !default;
+$colorgradient-input-gap: k-map-get( $spacing, 2 ) !default;
+$colorgradient-input-label-gap: k-map-get( $spacing, 1 ) !default;
 $colorgradient-input-label-text: $subtle-text !default;
 
 $colorgradient-contrast-ratio-font-weight: $font-weight-bold !default;
-$colorgradient-contrast-spacer: map-get( $spacing, 2 ) !default;
+$colorgradient-contrast-spacer: k-map-get( $spacing, 2 ) !default;

@@ -33,3 +33,7 @@ $kendo-filter-text: var( --kendo-component-text, initial ) !default;
 /// Background color of the line that connects the filter items.
 /// @group filter
 $kendo-filter-line-bg: var( --kendo-component-border, initial ) !default;
+
+/// Border color of the focused filter.
+/// @group filter
+$kendo-filter-toolbar-focus-border: get-theme-color-var( neutral-130 ) !default;

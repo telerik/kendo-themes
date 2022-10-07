@@ -30,7 +30,7 @@ The following table lists the available variables for customization.
     <td>Number</td>
 <td>
 
-`map-get( $spacing, 1 )`
+`k-map-get( $spacing, 1 )`
 
 </td>
 <td>
@@ -48,7 +48,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`map-get( $theme, base-bg )`
+`k-map-get( $theme, base-bg )`
 
 </td>
 <td>
@@ -68,7 +68,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`map-get($theme, component-text)`
+`k-map-get( $theme, component-text )`
 
 </td>
 <td>
@@ -88,7 +88,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`rgba( if($theme-type == dark, white, black), .08 )`
+`rgba( if( $theme-type == dark, white, black ), .08 )`
 
 </td>
 <td>
@@ -126,7 +126,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`map-get( $theme, hover-bg )`
+`k-map-get( $theme, hover-bg )`
 
 </td>
 <td>
@@ -166,7 +166,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`rgba( if($theme-type == dark, white, black), .15 )`
+`rgba( if( $theme-type == dark, white, black ), .15 )`
 
 </td>
 <td>

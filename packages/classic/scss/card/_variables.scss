@@ -1,6 +1,6 @@
 // Card
-$card-padding-x: map-get( $spacing, lg ) !default;
-$card-padding-y: map-get( $spacing, md ) !default;
+$card-padding-x: k-map-get( $spacing, lg ) !default;
+$card-padding-y: k-map-get( $spacing, md ) !default;
 $card-border-width: 1px !default;
 $card-border-radius: $kendo-border-radius-lg !default;
 $card-inner-border-radius: calc( #{$card-border-radius} - #{$card-border-width} ) !default;
@@ -8,7 +8,7 @@ $card-font-family: $font-family !default;
 $card-font-size: $font-size !default;
 $card-line-height: $line-height !default;
 
-$card-deck-gap: map-get( $spacing, lg ) !default;
+$card-deck-gap: k-map-get( $spacing, lg ) !default;
 
 $card-bg: $component-bg !default;
 $card-text: $component-text !default;
@@ -27,8 +27,8 @@ $card-header-bg: null !default;
 $card-header-text: $header-text !default;
 $card-header-border: $header-border !default;
 
-$card-body-padding-x: map-get( $spacing, lg ) !default;
-$card-body-padding-y: map-get( $spacing, lg ) !default;
+$card-body-padding-x: k-map-get( $spacing, lg ) !default;
+$card-body-padding-y: k-map-get( $spacing, lg ) !default;
 
 $card-footer-padding-x: $card-padding-x !default;
 $card-footer-padding-y: $card-padding-y !default;
@@ -37,14 +37,14 @@ $card-footer-bg: null !default;
 $card-footer-text: $header-text !default;
 $card-footer-border: $header-border !default;
 
-$card-title-margin-bottom: map-get( $spacing, sm ) !default;
+$card-title-margin-bottom: k-map-get( $spacing, sm ) !default;
 $card-title-font-size: $h5-font-size !default;
 $card-title-font-family: null !default;
 $card-title-line-height: 1.25 !default;
 $card-title-font-weight: $font-weight-normal !default;
 $card-title-letter-spacing: null !default;
 
-$card-subtitle-margin-bottom: map-get( $spacing, sm ) !default;
+$card-subtitle-margin-bottom: k-map-get( $spacing, sm ) !default;
 $card-subtitle-font-size: $font-size-sm !default;
 $card-subtitle-font-family: null !default;
 $card-subtitle-line-height: normal !default;
@@ -56,10 +56,10 @@ $card-img-max-width: 100px !default;
 $card-avatar-size: 45px !default;
 $card-avatar-spacing: $card-header-padding-x !default;
 
-$card-actions-padding-x: map-get( $spacing, 2 ) !default;
-$card-actions-padding-y: map-get( $spacing, 2 ) !default;
+$card-actions-padding-x: k-map-get( $spacing, 2 ) !default;
+$card-actions-padding-y: k-map-get( $spacing, 2 ) !default;
 $card-actions-border-width: 1px !default;
-$card-actions-gap: map-get( $spacing, 2 ) !default;
+$card-actions-gap: k-map-get( $spacing, 2 ) !default;
 
 $card-deck-scroll-button-radius: 0px !default;
 $card-deck-scroll-button-offset: -$kendo-button-border-width !default;

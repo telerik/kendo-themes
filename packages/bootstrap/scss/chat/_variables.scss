@@ -57,7 +57,7 @@ $chat-bubble-hover-shadow: none !default;
 $chat-bubble-selected-shadow: none !default;
 
 $chat-alt-bubble-bg: $primary !default;
-$chat-alt-bubble-text: contrast-wcag( $chat-alt-bubble-bg ) !default;
+$chat-alt-bubble-text: k-contrast-color( $chat-alt-bubble-bg ) !default;
 $chat-alt-bubble-border: $chat-alt-bubble-bg !default;
 $chat-alt-bubble-shadow: none !default;
 $chat-alt-bubble-hover-shadow: none !default;

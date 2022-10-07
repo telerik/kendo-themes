@@ -108,7 +108,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`try-shade( $kendo-button-bg, .5 )`
+`k-try-shade( $kendo-button-bg, .5 )`
 
 </td>
 <td>
@@ -264,7 +264,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`try-shade( $kendo-button-bg, 1 )`
+`k-try-shade( $kendo-button-bg, 1 )`
 
 </td>
 <td>

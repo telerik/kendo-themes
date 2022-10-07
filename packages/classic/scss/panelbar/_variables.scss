@@ -47,7 +47,7 @@ $panelbar-header-selected-text: $selected-text !default;
 $panelbar-header-selected-border: $selected-border !default;
 $panelbar-header-selected-gradient: null !default;
 
-$panelbar-header-selected-hovered-bg: try-shade( $panelbar-header-selected-bg ) !default;
+$panelbar-header-selected-hovered-bg: k-try-shade( $panelbar-header-selected-bg ) !default;
 $panelbar-header-selected-hovered-text: null !default;
 $panelbar-header-selected-hovered-border: null !default;
 $panelbar-header-selected-hovered-gradient: null !default;
@@ -63,7 +63,7 @@ $panelbar-header-selected-hovered-focused-border: null !default;
 $panelbar-header-selected-hovered-focused-gradient: null !default;
 
 
-$panelbar-item-hovered-bg: try-shade( $panelbar-bg, .5 ) !default;
+$panelbar-item-hovered-bg: k-try-shade( $panelbar-bg, .5 ) !default;
 $panelbar-item-hovered-text: null !default;
 $panelbar-item-hovered-border: null !default;
 $panelbar-item-hovered-gradient: null !default;
@@ -84,7 +84,7 @@ $panelbar-item-selected-text: $selected-text !default;
 $panelbar-item-selected-border: null !default;
 $panelbar-item-selected-gradient: null !default;
 
-$panelbar-item-selected-hovered-bg: try-shade( $panelbar-item-selected-bg ) !default;
+$panelbar-item-selected-hovered-bg: k-try-shade( $panelbar-item-selected-bg ) !default;
 $panelbar-item-selected-hovered-text: null !default;
 $panelbar-item-selected-hovered-border: null !default;
 $panelbar-item-selected-hovered-gradient: null !default;

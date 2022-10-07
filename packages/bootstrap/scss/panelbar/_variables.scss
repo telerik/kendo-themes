@@ -9,11 +9,11 @@ $panelbar-border-style: solid !default;
 $panelbar-item-border-width: 1px !default;
 $panelbar-item-border-style: solid !default;
 
-$panelbar-header-padding-x: map-get( $spacing, 6 ) !default;
-$panelbar-header-padding-y: map-get( $spacing, 4 ) !default;
+$panelbar-header-padding-x: k-map-get( $spacing, 6 ) !default;
+$panelbar-header-padding-y: k-map-get( $spacing, 4 ) !default;
 
-$panelbar-item-padding-x: map-get( $spacing, 6 ) !default;
-$panelbar-item-padding-y: map-get( $spacing, 3 ) !default;
+$panelbar-item-padding-x: k-map-get( $spacing, 6 ) !default;
+$panelbar-item-padding-y: k-map-get( $spacing, 3 ) !default;
 
 $panelbar-item-level-count: 4 !default;
 
@@ -26,7 +26,7 @@ $panelbar-header-text: $link-text !default;
 $panelbar-header-border: null !default;
 $panelbar-header-gradient: null !default;
 
-$panelbar-header-hovered-bg: try-shade( $panelbar-header-bg, .5 ) !default;
+$panelbar-header-hovered-bg: k-try-shade( $panelbar-header-bg, .5 ) !default;
 $panelbar-header-hovered-text: null !default;
 $panelbar-header-hovered-border: null !default;
 $panelbar-header-hovered-gradient: null !default;
@@ -47,7 +47,7 @@ $panelbar-header-selected-text: $selected-text !default;
 $panelbar-header-selected-border: null !default;
 $panelbar-header-selected-gradient: null !default;
 
-$panelbar-header-selected-hovered-bg: try-shade( $panelbar-header-selected-bg ) !default;
+$panelbar-header-selected-hovered-bg: k-try-shade( $panelbar-header-selected-bg ) !default;
 $panelbar-header-selected-hovered-text: null !default;
 $panelbar-header-selected-hovered-border: null !default;
 $panelbar-header-selected-hovered-gradient: null !default;
@@ -62,7 +62,7 @@ $panelbar-header-selected-hovered-focused-text: null !default;
 $panelbar-header-selected-hovered-focused-border: null !default;
 $panelbar-header-selected-hovered-focused-gradient: null !default;
 
-$panelbar-item-hovered-bg: try-shade( $panelbar-bg, 1 ) !default;
+$panelbar-item-hovered-bg: k-try-shade( $panelbar-bg, 1 ) !default;
 $panelbar-item-hovered-text: null !default;
 $panelbar-item-hovered-border: null !default;
 $panelbar-item-hovered-gradient: null !default;
@@ -83,7 +83,7 @@ $panelbar-item-selected-text: $selected-text !default;
 $panelbar-item-selected-border: null !default;
 $panelbar-item-selected-gradient: null !default;
 
-$panelbar-item-selected-hovered-bg: try-shade( $panelbar-item-selected-bg ) !default;
+$panelbar-item-selected-hovered-bg: k-try-shade( $panelbar-item-selected-bg ) !default;
 $panelbar-item-selected-hovered-text: null !default;
 $panelbar-item-selected-hovered-border: null !default;
 $panelbar-item-selected-hovered-gradient: null !default;

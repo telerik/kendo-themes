@@ -38,3 +38,13 @@ $kendo-toolbar-separator-border: get-theme-color-var( neutral-60 ) !default;
 /// The width of the input in the toolbar
 /// @group toolbar
 $kendo-toolbar-input-width: 10em !default;
+
+/// Border width of the focused toolbar item.
+/// @group toolbar
+$kendo-toolbar-item-focus-outline-width: 1px !default;
+/// Border style of the focused toolbar item.
+/// @group toolbar
+$kendo-toolbar-item-focus-outline-style: solid !default;
+/// Border color of the focused toolbar item.
+/// @group toolbar
+$kendo-toolbar-item-focus-outline-color: get-theme-color-var( neutral-130 ) !default;

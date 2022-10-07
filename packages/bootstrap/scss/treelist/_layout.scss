@@ -1,6 +1,6 @@
 @import "~@progress/kendo-theme-default/scss/treelist/_layout.scss";
 
-@include exports("treelist/layout/bootstrap") {
+@include exports( "treelist/layout/bootstrap" ) {
     .k-treelist {
         tr.k-footer td,
         tr.k-footer-template td {
@@ -14,4 +14,3 @@
         }
     }
 }
-

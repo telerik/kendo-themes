@@ -12,12 +12,12 @@ $gantt-treelist-bg: null !default;
 $gantt-treelist-text: null !default;
 $gantt-treelist-border: null !default;
 
-$gantt-nonwork-bg: rgba( contrast-wcag( $gantt-bg ), .025 ) !default;
+$gantt-nonwork-bg: rgba( k-contrast-color( $gantt-bg ), .025 ) !default;
 $gantt-nonwork-text: null !default;
 $gantt-nonwork-border: null !default;
 
 $gantt-line-size: 2px !default;
-$gantt-line-fill: mix( $panel-text, $panel-bg ) !default;
+$gantt-line-fill: k-color-mix( $panel-text, $panel-bg ) !default;
 $gantt-line-selected-fill: $selected-bg !default;
 
 $gantt-dot-size: 8px !default;
@@ -32,19 +32,19 @@ $gantt-milestone-border: $primary !default;
 $gantt-milestone-selected-bg: $secondary !default;
 $gantt-milestone-selected-border: $secondary !default;
 
-$gantt-summary-bg: mix( $primary, $gantt-bg ) !default;
+$gantt-summary-bg: k-color-mix( $primary, $gantt-bg ) !default;
 $gantt-summary-progress-bg: $primary !default;
-$gantt-summary-selected-bg: mix( $secondary, $gantt-bg ) !default;
+$gantt-summary-selected-bg: k-color-mix( $secondary, $gantt-bg ) !default;
 $gantt-summary-progress-selected-bg: $secondary !default;
 
-$gantt-task-padding-x: map-get( $spacing, 2 ) !default;
-$gantt-task-padding-y: map-get( $spacing, 1 ) !default;
+$gantt-task-padding-x: k-map-get( $spacing, 2 ) !default;
+$gantt-task-padding-y: k-map-get( $spacing, 1 ) !default;
 $gantt-task-border-width: 0px !default;
-$gantt-task-bg: mix( $primary, $gantt-bg ) !default;
+$gantt-task-bg: k-color-mix( $primary, $gantt-bg ) !default;
 $gantt-task-text: $primary-contrast !default;
 $gantt-task-border: null !default;
 $gantt-task-progress-bg: $primary !default;
-$gantt-task-selected-bg: mix( $secondary, $gantt-bg ) !default;
+$gantt-task-selected-bg: k-color-mix( $secondary, $gantt-bg ) !default;
 $gantt-task-selected-text: $secondary-contrast !default;
 $gantt-task-selected-border: null !default;
 $gantt-task-progress-selected-bg: $secondary !default;
@@ -78,10 +78,10 @@ $gantt-planned-bg: $primary !default;
 $gantt-planned-border: $gantt-planned-bg !default;
 
 $gantt-delayed-bg: $error !default;
-$gantt-delayed-bg-lighter: tint($gantt-delayed-bg, 5) !default;
+$gantt-delayed-bg-lighter: k-color-tint($gantt-delayed-bg, 5) !default;
 
 $gantt-advanced-bg: $success !default;
-$gantt-advanced-bg-lighter: tint($gantt-advanced-bg, 5) !default;
+$gantt-advanced-bg-lighter: k-color-tint($gantt-advanced-bg, 5) !default;
 
 $gantt-action-on-offset-text: #000000 !default;
 $gantt-offset-resize-handler-top: 50% !default;

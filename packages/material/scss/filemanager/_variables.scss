@@ -1,5 +1,5 @@
 // File manager
-$filemanager-spacer: map-get( $spacing, 4 ) !default;
+$filemanager-spacer: k-map-get( $spacing, 4 ) !default;
 $filemanager-border-width: 1px !default;
 $filemanager-font-family: $font-family !default;
 $filemanager-font-size: $font-size !default;
@@ -9,7 +9,7 @@ $filemanager-text: $component-text !default;
 $filemanager-border: $component-border !default;
 
 $filemanager-toolbar-border-width: $filemanager-border-width !default;
-$filemanager-toolbar-bg: try-shade( $kendo-button-bg, .5 ) !default;
+$filemanager-toolbar-bg: k-try-shade( $kendo-button-bg, .5 ) !default;
 $filemanager-toolbar-text: null !default;
 $filemanager-toolbar-border: null !default;
 $filemanager-toolbar-gradient: null !default;
@@ -22,8 +22,8 @@ $filemanager-navigation-bg: null !default;
 $filemanager-navigation-text: null !default;
 $filemanager-navigation-border: null !default;
 
-$filemanager-breadcrumb-padding-x: map-get( $spacing, 2 ) !default;
-$filemanager-breadcrumb-padding-y: map-get( $spacing, 2 ) !default;
+$filemanager-breadcrumb-padding-x: k-map-get( $spacing, 2 ) !default;
+$filemanager-breadcrumb-padding-y: k-map-get( $spacing, 2 ) !default;
 $filemanager-breadcrumb-border-width: $filemanager-border-width !default;
 $filemanager-breadcrumb-bg: $filemanager-toolbar-bg !default;
 $filemanager-breadcrumb-text: null !default;
@@ -33,8 +33,8 @@ $filemanager-listview-bg: null !default;
 $filemanager-listview-text: null !default;
 $filemanager-listview-border: null !default;
 
-$filemanager-listview-item-padding-x: map-get( $spacing, 4 ) !default;
-$filemanager-listview-item-padding-y: map-get( $spacing, 4 ) !default;
+$filemanager-listview-item-padding-x: k-map-get( $spacing, 4 ) !default;
+$filemanager-listview-item-padding-y: k-map-get( $spacing, 4 ) !default;
 $filemanager-listview-item-width: 120px !default;
 $filemanager-listview-item-height: 120px !default;
 $filemanager-listview-item-bg: null !default;
@@ -43,7 +43,7 @@ $filemanager-listview-item-border: null !default;
 
 $filemanager-listview-item-icon-size: ($icon-size * 3) !default;
 $filemanager-listview-item-icon-bg: null !default;
-$filemanager-listview-item-icon-text: try-tint($filemanager-text, 4) !default;
+$filemanager-listview-item-icon-text: k-try-tint($filemanager-text, 4) !default;
 $filemanager-listview-item-icon-border: null !default;
 $filemanager-listview-item-icon-selected-bg: null !default;
 $filemanager-listview-item-icon-selected-text: inherit !default;
@@ -64,5 +64,5 @@ $filemanager-preview-border: null !default;
 
 $filemanager-preview-icon-size: ($icon-size * 6) !default;
 $filemanager-preview-icon-bg: null !default;
-$filemanager-preview-icon-text: try-tint($filemanager-text, 4) !default;
+$filemanager-preview-icon-text: k-try-tint($filemanager-text, 4) !default;
 $filemanager-preview-icon-border: null !default;

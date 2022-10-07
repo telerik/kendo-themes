@@ -43,6 +43,7 @@
     "postpublish": "echo 'no postpublish for bootstrap theme'"
   },
   "dependencies": {
+    "@progress/kendo-theme-core": "^5.8.2-dev.4",
     "@progress/kendo-theme-default": "^5.8.2-dev.4",
     "bootstrap": "^5.2.1"
   },

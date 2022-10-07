@@ -130,7 +130,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`try-shade( $kendo-input-border, 1 )`
+`k-try-shade( $kendo-input-border, 1 )`
 
 </td>
 <td>

@@ -566,7 +566,7 @@ The following table lists the available variables for customization.
     <td>Number</td>
 <td>
 
-`map-get( $spacing, 1 )`
+`k-map-get( $spacing, 1 )`
 
 </td>
 <td>
@@ -584,7 +584,7 @@ The following table lists the available variables for customization.
     <td>Number</td>
 <td>
 
-`map-get( $spacing, 4 )`
+`k-map-get( $spacing, 4 )`
 
 </td>
 <td>

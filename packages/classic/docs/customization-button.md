@@ -66,7 +66,7 @@ The following table lists the available variables for customization.
     <td>Number</td>
 <td>
 
-`map-get( $spacing, 2 )`
+`k-map-get( $spacing, 2 )`
 
 </td>
 <td>
@@ -84,7 +84,7 @@ The following table lists the available variables for customization.
     <td>Number</td>
 <td>
 
-`map-get( $spacing, 1 )`
+`k-map-get( $spacing, 1 )`
 
 </td>
 <td>
@@ -192,7 +192,7 @@ The following table lists the available variables for customization.
     <td>Map</td>
 <td>
 
-`map-merge(
+`k-map-merge(
     $kendo-theme-colors,
     ( "base": $base-bg )
 )`
@@ -253,7 +253,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`try-shade( $kendo-button-bg, 2 )`
+`k-try-shade( $kendo-button-bg, 2 )`
 
 </td>
 <td>
@@ -309,7 +309,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`try-shade( $kendo-button-bg, 1 )`
+`k-try-shade( $kendo-button-bg, 1 )`
 
 </td>
 <td>
@@ -347,7 +347,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`try-shade( $kendo-button-bg, 3 )`
+`k-try-shade( $kendo-button-bg, 3 )`
 
 </td>
 <td>
@@ -403,7 +403,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`try-shade( $kendo-button-bg, 2 )`
+`k-try-shade( $kendo-button-bg, 2 )`
 
 </td>
 <td>
@@ -441,7 +441,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`try-shade( $kendo-button-bg, 4 )`
+`k-try-shade( $kendo-button-bg, 4 )`
 
 </td>
 <td>

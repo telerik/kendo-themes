@@ -22,10 +22,10 @@ $notification-border: $component-border !default;
 
     // sass-lint:disable-block indentation
     @each $name, $color in $colors {
-        $_theme: map-merge(( $name: (
-            color: shade( $color, 6 ),
-            background-color: tint( $color, 9 ),
-            border: tint( $color, 10 ),
+        $_theme: k-map-merge(( $name: (
+            color: k-color-shade( $color, 6 ),
+            background-color: k-color-tint( $color, 9 ),
+            border: k-color-tint( $color, 10 ),
         )), $_theme );
     }
 

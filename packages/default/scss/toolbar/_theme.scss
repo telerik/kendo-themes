@@ -20,7 +20,7 @@
         // Template item
         .k-toolbar-item:focus,
         .k-toolbar-item.k-focus {
-            @include box-shadow( $kendo-button-focus-shadow );
+            @include box-shadow( $toolbar-item-shadow );
         }
 
 

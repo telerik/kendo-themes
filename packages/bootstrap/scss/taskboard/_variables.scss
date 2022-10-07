@@ -1,5 +1,5 @@
 // TaskBoard
-$taskboard-spacer: map-get( $spacing, 4 ) !default;
+$taskboard-spacer: k-map-get( $spacing, 4 ) !default;
 $taskboard-padding-y: null !default;
 $taskboard-padding-x: null !default;
 $taskboard-font-family: $font-family !default;
@@ -33,12 +33,12 @@ $taskboard-column-border: transparent !default;
 
 $taskboard-column-focus-bg: null !default;
 $taskboard-column-focus-text: null !default;
-$taskboard-column-focus-border: try-shade( $base-border, 2.5 ) !default;
+$taskboard-column-focus-border: k-try-shade( $base-border, 2.5 ) !default;
 
 $taskboard-column-header-padding-y: $taskboard-spacer * .75 !default;
 $taskboard-column-header-padding-x: $taskboard-column-header-padding-y !default;
-$taskboard-column-header-gap: ( $taskboard-spacer / 4 ) !default;
-$taskboard-column-header-actions-gap: ( $taskboard-spacer / 2 ) !default;
+$taskboard-column-header-gap: k-math-div( $taskboard-spacer, 4 ) !default;
+$taskboard-column-header-actions-gap: k-math-div( $taskboard-spacer, 2 ) !default;
 $taskboard-column-header-font-weight: 500 !default;
 $taskboard-column-header-text: $header-text !default;
 
@@ -76,12 +76,12 @@ $taskboard-card-shadow: $card-shadow !default;
 
 $taskboard-card-category-border-width: 4px !default;
 
-$taskboard-card-focus-border: try-shade( $taskboard-card-border, 18% ) !default;
+$taskboard-card-focus-border: k-try-shade( $taskboard-card-border, 18% ) !default;
 $taskboard-card-focus-shadow: $card-focus-shadow !default;
 
-$taskboard-card-hover-border: try-shade( $taskboard-card-border, 10% ) !default;
+$taskboard-card-hover-border: k-try-shade( $taskboard-card-border, 10% ) !default;
 
-$taskboard-card-selected-border: tint( $primary-lighter, 8 ) !default;
+$taskboard-card-selected-border: k-color-tint( $primary-lighter, 8 ) !default;
 $taskboard-card-selected-shadow: none !default;
 
 $taskboard-card-header-text: $primary !default;
@@ -90,5 +90,5 @@ $taskboard-card-header-hover-text: $primary-darker !default;
 
 $taskboard-drag-placeholder-border-width: 1px !default;
 $taskboard-drag-placeholder-border-radius: $taskboard-card-border-radius !default;
-$taskboard-drag-placeholder-bg: rgba( if( $dark-theme, $white, $black ), .1) !default;
+$taskboard-drag-placeholder-bg: rgba( if( $dark-theme, $white, $black ), .1 ) !default;
 $taskboard-drag-placeholder-border: $component-border !default;

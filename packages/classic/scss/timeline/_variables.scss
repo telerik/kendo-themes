@@ -13,9 +13,9 @@ $timeline-mobile-spacing-y: 16px !default;
 $timeline-track-arrow-width: 30px !default;
 $timeline-track-arrow-height: 30px !default;
 
-$timeline-track-arrow-disabled-text: true-mix($kendo-button-text, $body-bg, 65%) !default;
-$timeline-track-arrow-disabled-bg: true-mix($kendo-button-bg, $body-bg, 65%) !default;
-$timeline-track-arrow-disabled-border: true-mix(#000000, $body-bg, 4.8%) !default;
+$timeline-track-arrow-disabled-text: k-true-mix( $kendo-button-text, $body-bg, 65% ) !default;
+$timeline-track-arrow-disabled-bg: k-true-mix( $kendo-button-bg, $body-bg, 65% ) !default;
+$timeline-track-arrow-disabled-border: k-true-mix( #000000, $body-bg, 4.8% ) !default;
 
 $timeline-track-size: 6px !default;
 $timeline-track-wrap-padding-bottom: $timeline-track-size / 2 !default;
@@ -27,7 +27,7 @@ $timeline-track-end-calc: calc(#{$timeline-track-arrow-width} - 2 * #{$timeline-
 $timeline-track-bg: $kendo-button-bg !default;
 $timeline-track-border-color: $kendo-button-border !default;
 
-$timeline-track-item-focus-shadow: 0 3px 4px 0 rgba($primary, .4) !default;
+$timeline-track-item-focus-shadow: 0 3px 4px 0 rgba( $primary, .4 ) !default;
 
 $timeline-track-event-offset: 36px !default;
 

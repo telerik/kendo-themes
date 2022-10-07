@@ -20,6 +20,12 @@
         .k-filter-lines .k-filter-item:last-child > * > .k-filter-toolbar::after {
             background-color: var( --kendo-filter-line-bg, #{$kendo-filter-line-bg} );
         }
+
+        // Focus
+        .k-toolbar:focus,
+        .k-toolbar.k-focus {
+            border-color: var( --kendo-filter-toolbar-focus-border, #{$kendo-filter-toolbar-focus-border} );
+        }
     }
 
 }

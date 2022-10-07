@@ -4,12 +4,12 @@ $_deps: ();
 $_imported: ();
 
 @mixin module-register( $name: null, $dependencies: null ) {
-    @if (index( $components, $name) != null) {
-        $_deps: map-merge( $_deps, ( $name: $dependencies ) );
+    @if (k-list-index( $components, $name) != null) {
+        $_deps: k-map-merge( $_deps, ( $name: $dependencies ) );
 
         @if $dependencies {
             @each $dep in $dependencies {
-                @if ( index( $components, $dep ) == null ) {
+                @if ( k-list-index( $components, $dep ) == null ) {
                     // sass-lint:disable-block no-warn
                     @warn "The module \"#{$name}\" depends on module \"#{$dep}\", but the styles will not be loaded!";
                 }
@@ -19,19 +19,19 @@ $_imported: ();
 }
 
 @mixin module-render( $name: null ) {
-    $dependencies: map-get( $_deps, $name );
+    $dependencies: k-map-get( $_deps, $name );
 
     @if $dependencies {
         @each $dep in $dependencies {
-            @if ( index( $_imported, $dep ) == null ) {
+            @if ( k-list-index( $_imported, $dep ) == null ) {
                 // sass-lint:disable-block no-warn
                 @warn "The module \"#{$name}\" depends on module \"#{$dep}\", but the styles have not been loaded yet!";
             }
         }
     }
 
-    @if ( index( $components, $name ) != null ) and ( index( $_imported, $name ) == null )  {
-        $_imported: append( $_imported, $name );
+    @if ( k-list-index( $components, $name ) != null ) and ( k-list-index( $_imported, $name ) == null )  {
+        $_imported: k-list-append( $_imported, $name );
         @content;
     }
 }

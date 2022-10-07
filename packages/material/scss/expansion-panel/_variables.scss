@@ -14,13 +14,13 @@ $expander-bg: $component-bg !default;
 $expander-text: $component-text !default;
 $expander-border: $component-border !default;
 
-$expander-focus-shadow: inset 0 0 0 2px rgba(0, 0, 0, .08) !default;
+$expander-focus-shadow: inset 0 0 0 2px rgba( black, .08 ) !default;
 
 $expander-header-bg: transparent !default;
 $expander-header-text: $expander-text !default;
 $expander-header-border: null !default;
 
-$expander-header-hover-bg: rgba(0, 0, 0, .04) !default;
+$expander-header-hover-bg: rgba( black, .04 ) !default;
 
 $expander-header-focused-bg: rgba( black, .12 ) !default;
 $expander-header-focused-shadow: none !default;

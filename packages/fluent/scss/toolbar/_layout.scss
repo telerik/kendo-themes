@@ -102,6 +102,13 @@
             align-items: center;
         }
 
+        // Template item
+        .k-toolbar-item:focus,
+        .k-toolbar-item.k-focus {
+            outline-width: var( --kendo-toolbar-item-focus-outline-width, #{$kendo-toolbar-item-focus-outline-width} );
+            outline-style: var( --kendo-toolbar-item-focus-outline-style, #{$kendo-toolbar-item-focus-outline-style} );
+        }
+
     }
 
     // Toolbar group

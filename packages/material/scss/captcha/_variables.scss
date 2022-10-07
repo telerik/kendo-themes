@@ -1,5 +1,5 @@
 // Captcha
-$captcha-spacer: map-get( $spacing, 2 ) !default;
+$captcha-spacer: k-map-get( $spacing, 2 ) !default;
 
 $captcha-width: 335px !default;
 $captcha-font-family: $font-family !default;

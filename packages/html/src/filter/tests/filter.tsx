@@ -19,20 +19,20 @@ root.render(
                 <ul className="k-filter-container">
                     <li className="k-filter-group-main">
                         <div className="k-filter-toolbar">
-                            <div className="k-toolbar">
-                                <div className="k-filter-toolbar-item">
+                            <div className="k-toolbar k-focus">
+                                <div className="k-filter-toolbar-item k-toolbar-item">
                                     <ButtonGroup>
                                         <Button selected>And</Button>
                                         <Button>Or</Button>
                                     </ButtonGroup>
                                 </div>
-                                <div className="k-filter-toolbar-item">
+                                <div className="k-filter-toolbar-item k-toolbar-item">
                                     <Button icon="filter-add-expression">Add Expression</Button>
                                 </div>
-                                <div className="k-filter-toolbar-item">
+                                <div className="k-filter-toolbar-item k-toolbar-item">
                                     <Button icon="filter-add-group">Add Group</Button>
                                 </div>
-                                <div className="k-filter-toolbar-item">
+                                <div className="k-filter-toolbar-item k-toolbar-item">
                                     <Button fillMode="flat" icon="close"></Button>
                                 </div>
                             </div>
@@ -41,16 +41,16 @@ root.render(
                             <li className="k-filter-item">
                                 <div className="k-filter-toolbar">
                                     <div className="k-toolbar">
-                                        <div className="k-filter-toolbar-item k-filter-field">
+                                        <div className="k-filter-toolbar-item k-toolbar-item k-filter-field">
                                             <DropdownList value="Name" />
                                         </div>
-                                        <div className="k-filter-toolbar-item k-filter-operator">
+                                        <div className="k-filter-toolbar-item k-toolbar-item k-filter-operator k-focus">
                                             <DropdownList value="Is equal to" />
                                         </div>
-                                        <div className="k-filter-toolbar-item k-filter-value">
+                                        <div className="k-filter-toolbar-item k-toolbar-item k-filter-value">
                                             <Textbox placeholder="James"/>
                                         </div>
-                                        <div className="k-filter-toolbar-item">
+                                        <div className="k-filter-toolbar-item k-toolbar-item">
                                             <Button fillMode="flat" icon="close"></Button>
                                         </div>
                                     </div>
@@ -59,16 +59,16 @@ root.render(
                             <li className="k-filter-item">
                                 <div className="k-filter-toolbar">
                                     <div className="k-toolbar">
-                                        <div className="k-filter-toolbar-item k-filter-field">
+                                        <div className="k-filter-toolbar-item k-toolbar-item k-filter-field">
                                             <DropdownList value="Price" />
                                         </div>
-                                        <div className="k-filter-toolbar-item k-filter-operator">
+                                        <div className="k-filter-toolbar-item k-toolbar-item k-filter-operator">
                                             <DropdownList value="Is greater than" />
                                         </div>
-                                        <div className="k-filter-toolbar-item k-filter-value">
+                                        <div className="k-filter-toolbar-item k-toolbar-item k-filter-value">
                                             <NumericTextbox placeholder="100,00"/>
                                         </div>
-                                        <div className="k-filter-toolbar-item">
+                                        <div className="k-filter-toolbar-item k-toolbar-item">
                                             <Button fillMode="flat" icon="close"></Button>
                                         </div>
                                     </div>
@@ -76,17 +76,17 @@ root.render(
                             </li>
                             <li className="k-filter-item">
                                 <div className="k-filter-toolbar">
-                                    <div className="k-toolbar">
-                                        <div className="k-filter-toolbar-item k-filter-field">
+                                    <div className="k-toolbar k-focus">
+                                        <div className="k-filter-toolbar-item k-toolbar-item k-filter-field">
                                             <DropdownList value="Discontinued" />
                                         </div>
-                                        <div className="k-filter-toolbar-item k-filter-operator">
+                                        <div className="k-filter-toolbar-item k-toolbar-item k-filter-operator">
                                             <DropdownList value="Is equal to" />
                                         </div>
-                                        <div className="k-filter-toolbar-item k-filter-value">
+                                        <div className="k-filter-toolbar-item k-toolbar-item k-filter-value">
                                             <DropdownList value="False"/>
                                         </div>
-                                        <div className="k-filter-toolbar-item">
+                                        <div className="k-filter-toolbar-item k-toolbar-item">
                                             <Button fillMode="flat" icon="close"></Button>
                                         </div>
                                     </div>
@@ -95,18 +95,18 @@ root.render(
                             <li className="k-filter-item">
                                 <div className="k-filter-toolbar">
                                     <div className="k-toolbar">
-                                        <div className="k-filter-toolbar-item k-filter-filed">
+                                        <div className="k-filter-toolbar-item k-toolbar-item k-filter-filed">
                                             <DropdownList value="First Ordered" />
                                         </div>
-                                        <div className="k-filter-toolbar-item">
+                                        <div className="k-filter-toolbar-item k-toolbar-item">
                                             <div className="k-filter-operator">
                                                 <DropdownList value="Is before" />
                                             </div>
                                         </div>
-                                        <div className="k-filter-toolbar-item k-filter-value">
+                                        <div className="k-filter-toolbar-item k-toolbar-item k-filter-value">
                                             <DatePicker placeholder="1/21/2021" />
                                         </div>
-                                        <div className="k-filter-toolbar-item">
+                                        <div className="k-filter-toolbar-item k-toolbar-item">
                                             <Button fillMode="flat" icon="close"></Button>
                                         </div>
                                     </div>
@@ -114,19 +114,19 @@ root.render(
                                 <li className="k-filter-item">
                                     <div className="k-filter-toolbar">
                                         <div className="k-toolbar">
-                                            <div className="k-filter-toolbar-item">
+                                            <div className="k-filter-toolbar-item k-toolbar-item">
                                                 <ButtonGroup>
                                                     <Button selected>And</Button>
                                                     <Button>Or</Button>
                                                 </ButtonGroup>
                                             </div>
-                                            <div className="k-filter-toolbar-item">
+                                            <div className="k-filter-toolbar-item k-toolbar-item">
                                                 <Button icon="filter-add-expression">Add Expression</Button>
                                             </div>
-                                            <div className="k-filter-toolbar-item">
+                                            <div className="k-filter-toolbar-item k-toolbar-item">
                                                 <Button icon="filter-add-group">Add Group</Button>
                                             </div>
-                                            <div className="k-filter-toolbar-item">
+                                            <div className="k-filter-toolbar-item k-toolbar-item">
                                                 <Button fillMode="flat" icon="close"></Button>
                                             </div>
                                         </div>
@@ -135,13 +135,13 @@ root.render(
                                         <li className="k-filter-item">
                                             <div className="k-filter-toolbar">
                                                 <div className="k-toolbar">
-                                                    <div className="k-filter-toolbar-item k-filter-field">
+                                                    <div className="k-filter-toolbar-item k-toolbar-item k-filter-field">
                                                         <DropdownList value="Name" />
                                                     </div>
-                                                    <div className="k-filter-toolbar-item k-filter-operator">
+                                                    <div className="k-filter-toolbar-item k-toolbar-item k-filter-operator">
                                                         <DropdownList value="Is empty" />
                                                     </div>
-                                                    <div className="k-filter-toolbar-item">
+                                                    <div className="k-filter-toolbar-item k-toolbar-item">
                                                         <Button fillMode="flat" icon="close"></Button>
                                                     </div>
                                                 </div>
@@ -150,13 +150,13 @@ root.render(
                                         <li className="k-filter-item">
                                             <div className="k-filter-toolbar">
                                                 <div className="k-toolbar">
-                                                    <div className="k-filter-toolbar-item k-filter-field">
+                                                    <div className="k-filter-toolbar-item k-toolbar-item k-filter-field">
                                                         <DropdownList value="Price" />
                                                     </div>
-                                                    <div className="k-filter-toolbar-item k-filter-operator">
+                                                    <div className="k-filter-toolbar-item k-toolbar-item k-filter-operator">
                                                         <DropdownList value="Is not null" />
                                                     </div>
-                                                    <div className="k-filter-toolbar-item">
+                                                    <div className="k-filter-toolbar-item k-toolbar-item">
                                                         <Button fillMode="flat" icon="close"></Button>
                                                     </div>
                                                 </div>

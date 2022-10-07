@@ -30,7 +30,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`mix( black, $component-bg, 2% )`
+`k-color-mix( black, $component-bg, 2% )`
 
 </td>
 <td>

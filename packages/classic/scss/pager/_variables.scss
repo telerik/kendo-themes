@@ -1,6 +1,6 @@
 // Pager
-$pager-padding-x: map-get( $spacing, 2 ) !default;
-$pager-padding-y: map-get( $spacing, 2 ) !default;
+$pager-padding-x: k-map-get( $spacing, 2 ) !default;
+$pager-padding-y: k-map-get( $spacing, 2 ) !default;
 $pager-border-width: 1px !default;
 
 $pager-font-family: $font-family !default;
@@ -49,18 +49,18 @@ $pager-number-text: $primary !default;
 $pager-number-border: null !default;
 
 $pager-number-hover-opacity: .08 !default;
-$pager-number-hover-bg: rgba($pager-item-selected-bg, $pager-number-hover-opacity) !default;
+$pager-number-hover-bg: rgba( $pager-item-selected-bg, $pager-number-hover-opacity ) !default;
 $pager-number-hover-text: $pager-number-text !default;
 $pager-number-hover-border: $pager-item-hover-border !default;
 
 $pager-number-selected-opacity: .2 !default;
-$pager-number-selected-bg: rgba($pager-item-selected-bg, $pager-number-selected-opacity) !default;
+$pager-number-selected-bg: rgba( $pager-item-selected-bg, $pager-number-selected-opacity ) !default;
 $pager-number-selected-text: $pager-number-text !default;
 $pager-number-selected-border: $pager-item-selected-border !default;
 
 $pager-number-focus-opacity: .12 !default;
 $pager-number-focus-bg: transparent !default;
-$pager-number-focus-shadow: inset 0 0 0 2px rgba($pager-number-selected-bg, $pager-number-focus-opacity) !default;
+$pager-number-focus-shadow: inset 0 0 0 2px rgba( $pager-number-selected-bg, $pager-number-focus-opacity ) !default;
 
 $pager-input-width: 5em !default;
 $pager-dropdown-width: 5em !default;

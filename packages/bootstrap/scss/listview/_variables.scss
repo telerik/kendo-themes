@@ -1,6 +1,6 @@
 // Listview
-$listview-padding-x: map-get( $spacing, 1 ) !default;
-$listview-padding-y: map-get( $spacing, 1 ) !default;
+$listview-padding-x: k-map-get( $spacing, 1 ) !default;
+$listview-padding-y: k-map-get( $spacing, 1 ) !default;
 $listview-border-width: 1px !default;
 $listview-font-family: $font-family !default;
 $listview-font-size: $font-size !default;
@@ -12,8 +12,8 @@ $listview-border: $component-border !default;
 
 $listview-grid-gap: 10px !default;
 
-$listview-item-padding-x: map-get( $spacing, 1 ) !default;
-$listview-item-padding-y: map-get( $spacing, 1 ) !default;
+$listview-item-padding-x: k-map-get( $spacing, 1 ) !default;
+$listview-item-padding-y: k-map-get( $spacing, 1 ) !default;
 
 $listview-item-selected-bg: rgba( $selected-bg, .25 ) !default;
 $listview-item-selected-text: null !default;
