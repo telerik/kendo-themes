@@ -5,11 +5,6 @@ $_kendo-module-meta: (
 );
 
 
-// Component
-@import "_grid.scss";
-@import "_flex.scss";
-
-
 // Register
 @include module-register( $_kendo-module-meta... );
 
@@ -17,7 +12,7 @@ $_kendo-module-meta: (
 // Expose
 @mixin utils-styles() {
     @include module-render( "utils" ) {
-        @include kendo-utils--grid();
-        @include kendo-utils--flex();
+        // @import "~@progress/kendo-theme-utils/scss/all.scss";
     }
 }
+@import "~@progress/kendo-theme-utils/scss/all.scss";
