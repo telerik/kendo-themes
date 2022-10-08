@@ -12,7 +12,7 @@
         outline: 0;
         box-sizing: border-box;
         font-family: k-var( --kendo-input-font-family, #{k-if-var( $kendo-input-font-family, inherit )} );
-        font-size: k-var( --kendo-input-font-size, inherit );
+        font-size: k-var( --kendo-input-font-size, 1rem );
         line-height: k-var( --kendo-input-line-height, normal );
         font-weight: k-var( --kendo-input-font-weight, #{k-if-var( $kendo-input-font-weight, normal )} );
         text-align: start;
