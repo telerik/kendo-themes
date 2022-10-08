@@ -1,0 +1,34 @@
+// Appbar
+$kendo-appbar-margin-y: null !default;
+$kendo-appbar-margin-x: null !default;
+$kendo-appbar-padding-y: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-appbar-padding-x: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-appbar-border-width: 0px !default;
+
+$kendo-appbar-zindex: 1000 !default;
+
+$kendo-appbar-font-size: null !default;
+$kendo-appbar-line-height: null !default;
+$kendo-appbar-font-family: null !default;
+$kendo-appbar-spacing: k-map-get( $kendo-spacing, 2 ) !default;
+
+$kendo-appbar-theme-matrix: (
+    neutral: (
+        PALETTE: neutral,
+        DEFAULT: ( 0, 700, 0 ),
+    ),
+    primary: (
+        PALETTE: primerBlue,
+        DEFAULT: ( 700, 0, 700 ),
+    ),
+    light: (
+        PALETTE: neutral,
+        DEFAULT: ( 50, 700, 50 ),
+    ),
+    dark: (
+        PALETTE: neutral,
+        DEFAULT: ( 700, 0, 700 ),
+    )
+) !default;
+
+$kendo-appbar-theme: k-process-variant-matrices( $kendo-appbar-theme-matrix, null ) !default;
