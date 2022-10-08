@@ -1,0 +1,59 @@
+// Breadcrumb
+
+$kendo-breadcrumb-margin-x: null !default;
+$kendo-breadcrumb-margin-y: null !default;
+$kendo-breadcrumb-padding-x: null !default;
+$kendo-breadcrumb-padding-y: null !default;
+$kendo-breadcrumb-border-width: 0px !default;
+
+$kendo-breadcrumb-font-family: $kendo-font-family !default;
+$kendo-breadcrumb-font-size: $kendo-font-size-md !default;
+$kendo-breadcrumb-line-height: $kendo-line-height-md !default;
+
+$kendo-breadcrumb-delimiter-icon-font-size: $kendo-icon-size * .75 !default;
+
+$kendo-breadcrumb-link-padding-x: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-breadcrumb-link-padding-y: k-map-get( $kendo-spacing, 1.5 ) !default;
+$kendo-breadcrumb-link-border-radius: k-map-get( $kendo-border-radii, md ) !default;
+
+$kendo-breadcrumb-icon-link-padding-x: $kendo-breadcrumb-link-padding-x !default;
+$kendo-breadcrumb-icon-link-padding-y: $kendo-breadcrumb-icon-link-padding-x !default;
+
+$kendo-breadcrumb-root-link-spacing: $kendo-breadcrumb-link-padding-x !default;
+$kendo-breadcrumb-link-icon-spacing: $kendo-icon-spacing !default;
+
+$kendo-breadcrumb-focus-shadow: $kendo-focus-shadow !default;
+$kendo-breadcrumb-link-focus-shadow: $kendo-focus-shadow !default;
+
+
+// Breadcrumb theme
+$kendo-breadcrumb-ui-states: (
+    disabled,
+    current-item,
+    link,
+    link-hover,
+    link-focus,
+    link-disabled
+) !default;
+
+$kendo-breadcrumb-theme-matrix: (
+
+    DEFAULT: (
+        PALETTE: neutral,
+        DEFAULT: ( transparent, 700, null ),
+        disabled: ( transparent, 500, null ),
+
+        current-item: ( null, inherit, null ),
+
+        link: ( null, k-get-theme-color( marsala, 500 ), null ),
+        link-hover: ( null, k-get-theme-color( marsala, 700 ), null ),
+        link-focus: ( null, k-get-theme-color( marsala, 700 ), null ),
+        link-disabled: ( null, 500, null )
+    )
+
+) !default;
+
+$kendo-breadcrumb-theme: k-process-variant-matrices(
+    $kendo-breadcrumb-theme-matrix,
+    null
+) !default;

@@ -1,8 +1,16 @@
 @mixin kendo-split-button--layout() {
 
-    // sass-lint:disable-block no-important no-ids
-    #test-area .k-split-button {
-        display: none !important;
+    // Split button
+    .k-split-button {
+
+        // Split button arrow
+        .k-split-button-arrow {
+            width: auto;
+
+            .k-button-icon {
+                min-width: 0;
+            }
+        }
     }
 
 }
