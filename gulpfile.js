@@ -137,6 +137,7 @@ gulp.task("dist:swatches", distSwatches);
 gulp.task("docs", () => {
     let themes = glob.sync(paths.sass.themes, {
         ignore: [
+            'packages/nouvelle',
             'packages/fluent',
             'packages/utils',
             'packages/core'
@@ -218,6 +219,7 @@ gulp.task("create-component", function( done ) {
 function resolveVars() {
     let themes = glob.sync(paths.sass.themes, {
         ignore: [
+            'packages/nouvelle',
             'packages/fluent',
             'packages/utils',
             'packages/core'
