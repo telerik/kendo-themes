@@ -165,10 +165,18 @@
         }
     }
 
-    .k-task-delayed .k-task-complete {
-        @include fill(
-            $bg: var( --kendo-gantt-delayed-bg, #{$kendo-gantt-delayed-bg} )
-        );
+    .k-task-delayed {
+        .k-task-complete {
+            @include fill(
+                $bg: var( --kendo-gantt-delayed-bg, #{$kendo-gantt-delayed-bg} )
+            );
+        }
+
+        &:hover .k-task-complete {
+            @include fill(
+                $bg: var( --kendo-gantt-delayed-hover-bg, #{$kendo-gantt-delayed-hover-bg} )
+            );
+        }
     }
 
     .k-task-advanced {
