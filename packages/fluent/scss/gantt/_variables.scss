@@ -203,6 +203,9 @@ $kendo-gantt-delayed-bg: get-theme-color-var( error-160 ) !default;
 /// Complement background color of the gantt delayed task.
 /// @group gantt
 $kendo-gantt-delayed-bg-lighter: get-theme-color-var( error-110) !default;
+/// Background hover color of the gantt delayed task.
+/// @group gantt
+$kendo-gantt-delayed-hover-bg: get-theme-color-var( error-190 ) !default;
 
 /// Background color of the gantt advanced task.
 /// @group gantt
