@@ -10,8 +10,8 @@
     }
 
     // Wave animation
-    .k-skeleton-wave  .k-skeleton::after,
-    .k-skeleton-wave .k-skeleton::after {
+    .k-skeleton-wave .k-skeleton::after,
+    .k-skeleton-wave.k-skeleton::after {
         background-image: linear-gradient(
             to right,
             transparent,
