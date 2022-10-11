@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { ActionSheet, ActionSheetFooter, ActionSheetHeader } from '../../action-sheet';
 import { Button } from '../../button';
 import { Calendar } from '../../calendar';
-import { TimeSelector } from '../../time-selector';
+import { TimeSelector, TimeSelectorHeader } from '../../time-selector';
 
 const root = ReactDOM.createRoot(
     document.getElementById('app') as HTMLElement
@@ -73,14 +73,18 @@ root.render(
                         <div className="k-datetime-buttongroup">
                             <div className="k-button-group k-button-group-stretched">
                                 <Button className="k-group-start" size="large">Date</Button>
-                                <Button className="k-group-end"size="large" selected>Time</Button>
+                                <Button className="k-group-end" size="large" selected>Time</Button>
                             </div>
                         </div>
                         <div className="k-datetime-selector">
                             <div className="k-datetime-calendar-wrap">
                             </div>
                             <div className="k-datetime-time-wrap">
-                                <TimeSelector size="large" />
+                                <TimeSelector size="large" columns={[ "HH", "mm", "ss", "tt" ]} focusedColumn="HH" header={(
+                                    <TimeSelectorHeader title="10:00:00 АМ">
+                                        <Button fillMode="flat" className="k-time-now">Now</Button>
+                                    </TimeSelectorHeader>
+                                )}/>
                             </div>
                         </div>
                     </div>

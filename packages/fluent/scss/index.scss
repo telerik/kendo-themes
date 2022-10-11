@@ -70,6 +70,7 @@
 @use "dateinput";
 @use "datepicker";
 @use "timepicker";
+@use "timedurationpicker";
 @use "datetimepicker";
 @use "daterangepicker";
 @use "dropdowngrid";
@@ -229,6 +230,7 @@
     @include dateinput.styles();
     @include datepicker.styles();
     @include timepicker.styles();
+    @include timedurationpicker.styles();
     @include datetimepicker.styles();
     @include daterangepicker.styles();
     @include dropdowngrid.styles();

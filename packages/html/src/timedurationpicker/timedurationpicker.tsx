@@ -11,7 +11,7 @@ import {
     InputSuffix
 } from '../input';
 
-export interface TimePickerProps {
+export interface TimeDurationPickerProps {
     className?: string;
     prefix?: React.ReactNode;
     suffix?: React.ReactNode;
@@ -29,7 +29,7 @@ export interface TimePickerProps {
     loading?: boolean;
     disabled?: boolean;
 }
-export class TimePicker extends React.Component<TimePickerProps> {
+export class TimeDurationPicker extends React.Component<TimeDurationPickerProps> {
 
     render() {
         const {
@@ -62,7 +62,7 @@ export class TimePicker extends React.Component<TimePickerProps> {
                 required={required}
                 loading={loading}
                 disabled={disabled}
-                className={classNames(className, 'k-timepicker')}
+                className={classNames(className, 'k-timedurationpicker')}
             >
                 <InputPrefix>{prefix}</InputPrefix>
                 <InputInnerInput placeholder={placeholder} value={value} />
@@ -72,7 +72,7 @@ export class TimePicker extends React.Component<TimePickerProps> {
                 <InputClearValue {...this.props} />
                 <Button
                     className="k-input-button"
-                    icon="clock"
+                    icon="clock-arrow-rotate"
                     rounded={null}
                     size={size}
                     fillMode={fillMode}>
