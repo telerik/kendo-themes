@@ -1,6 +1,6 @@
 // Module meta
 $_kendo-module-meta: (
-    name: "timepicker",
+    name: "timedurationpicker",
     dependencies: (
         "button",
         "icon",
@@ -22,8 +22,8 @@ $_kendo-module-meta: (
 
 // Expose
 @mixin styles() {
-    @include module.render( "timepicker" ) {
-        @include kendo-timepicker--layout();
-        @include kendo-timepicker--theme();
+    @include module.render( "timedurationpicker" ) {
+        @include kendo-timedurationpicker--layout();
+        @include kendo-timedurationpicker--theme();
     }
 }

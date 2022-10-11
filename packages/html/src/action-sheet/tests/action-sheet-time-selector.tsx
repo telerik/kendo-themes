@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { ActionSheet, ActionSheetFooter, ActionSheetHeader } from '../../action-sheet';
-import { TimeSelector } from '../../time-selector';
+import { Button } from '../../button';
+import { TimeSelector, TimeSelectorHeader } from '../../time-selector';
 
 const root = ReactDOM.createRoot(
     document.getElementById('app') as HTMLElement
@@ -34,7 +35,11 @@ root.render(
                     <ActionSheetHeader actions={[ 'x' ]}>
                         <div className="k-text-center">Select time</div>
                     </ActionSheetHeader>
-                    <TimeSelector size="large" />
+                    <TimeSelector size="large" columns={[ "HH", "mm", "ss", "tt" ]} focusedColumn="HH" header={(
+                        <TimeSelectorHeader title="10:00:00 АМ">
+                            <Button fillMode="flat" className="k-time-now">Now</Button>
+                        </TimeSelectorHeader>
+                    )}/>
                     <ActionSheetFooter actions={[ 'Cancel', '!Set' ]} />
                 </ActionSheet>
             </section>
@@ -44,7 +49,11 @@ root.render(
                     <ActionSheetHeader actions={[ 'x' ]}>
                         <div className="k-text-center">Select time</div>
                     </ActionSheetHeader>
-                    <TimeSelector size="large" />
+                    <TimeSelector size="large" columns={[ "HH", "mm", "ss", "tt" ]} focusedColumn="HH" header={(
+                        <TimeSelectorHeader title="10:00:00 АМ">
+                            <Button fillMode="flat" className="k-time-now">Now</Button>
+                        </TimeSelectorHeader>
+                    )}/>
                     <ActionSheetFooter actions={[ 'Cancel', '!Set' ]} />
                 </ActionSheet>
             </section>

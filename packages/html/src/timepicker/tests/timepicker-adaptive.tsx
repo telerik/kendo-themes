@@ -1,16 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { ActionSheet, ActionSheetFooter, ActionSheetHeader } from '../../action-sheet';
-import { TimeSelector } from '../../time-selector';
+import { Button } from '../../button';
+import { TimeSelector, TimeSelectorHeader } from '../../time-selector';
 
 const root = ReactDOM.createRoot(
     document.getElementById('app') as HTMLElement
 );
 
 const styles = `
-    .k-actionsheet-container {
-        width: 100%;
+    #test-area {
+        --kendo-actionsheet-height: 500px;
+        --kendo-actionsheet-max-height: 500px;
+    }
+    #test-area > section {
         height: 600px;
+        outline: 1px dotted;
+        overflow: hidden;
         position: relative;
         transform: translateZ(0);
     }
@@ -25,16 +31,17 @@ root.render(
             <span>full screen</span>
 
             <section>
-
                 <ActionSheet adaptive={true}>
                     <ActionSheetHeader
                         actions={[ 'x' ]}
                         title="Select Dates"
                         subTitle="DD / MM / YY">
                     </ActionSheetHeader>
-
-                    <TimeSelector size="large"></TimeSelector>
-
+                    <TimeSelector size="large" columns={[ "HH", "mm", "ss", "tt" ]} focusedColumn="HH" header={(
+                        <TimeSelectorHeader title="10:00:00 АМ">
+                            <Button fillMode="flat" className="k-time-now">Now</Button>
+                        </TimeSelectorHeader>
+                    )}/>
                     <ActionSheetFooter actions={[ '!Select Date' ]} />
                 </ActionSheet>
             </section>
@@ -45,9 +52,11 @@ root.render(
                         title="Select Dates"
                         subTitle="DD / MM / YY">
                     </ActionSheetHeader>
-
-                    <TimeSelector size="large"></TimeSelector>
-
+                    <TimeSelector size="large" columns={[ "HH", "mm", "ss", "tt" ]} focusedColumn="HH" header={(
+                        <TimeSelectorHeader title="10:00:00 АМ">
+                            <Button fillMode="flat" className="k-time-now">Now</Button>
+                        </TimeSelectorHeader>
+                    )}/>
                     <ActionSheetFooter actions={[ '!Select Date' ]} />
                 </ActionSheet>
             </section>

@@ -30,7 +30,7 @@
     // Time selector header
     .k-time-header,
     .k-time-selector-header {
-        padding: var( --kendo-time-selector-header-padding-y, $kendo-time-selector-header-padding-y ) var( --kendo-time-selector-header-padding-x, $kendo-time-selector-header-padding-x ) 0;
+        padding: var( --kendo-time-selector-header-padding-y, $kendo-time-selector-header-padding-y ) var( --kendo-time-selector-header-padding-x, $kendo-time-selector-header-padding-x );
         box-sizing: border-box;
         display: flex;
         align-items: center;

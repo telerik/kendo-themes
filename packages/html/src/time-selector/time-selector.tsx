@@ -1,12 +1,19 @@
 import * as React from 'react';
 import { classNames, kendoThemeMaps } from '../utils';
-import { Button } from '../button';
+import { TimeSelectorHeader, TimeSelectorColumn, TimeSelectorFastSelection } from '../time-selector';
+
+
+export type timeType = 'dd' | 'HH' | 'mm' | 'ss' | 'SSS' | 'tt';
 
 export interface TimeSelectorProps {
+    header?: null | React.ReactElement<TimeSelectorHeader>;
+    fastSelection?: null | React.ReactElement<TimeSelectorFastSelection>;
     className?: string;
     value?: string;
     size?: null | 'small' | 'medium' | 'large';
-    disabled?: boolean;
+    columns: Array<timeType>;
+    focusedColumn?: null | timeType;
+    disabled?: null | boolean;
 }
 
 export class TimeSelector extends React.Component<TimeSelectorProps> {
@@ -18,9 +25,31 @@ export class TimeSelector extends React.Component<TimeSelectorProps> {
     render() {
 
         const {
+            header,
+            fastSelection,
             className,
-            size
+            size,
+            columns,
+            focusedColumn
         } = this.props;
+
+        const columnsDom = columns.map(function(columnType, index) {
+            let focus = false;
+            let separator = true;
+
+            if (columnType === focusedColumn) {
+                focus = true;
+            }
+            if (index === 0 || columnType === "tt") {
+                separator = false;
+            }
+
+            return (
+                <>
+                    <TimeSelectorColumn type={columnType} focus={focus} separator={separator}></TimeSelectorColumn>
+                </>
+            );
+        });
 
         return (
             <div
@@ -32,66 +61,15 @@ export class TimeSelector extends React.Component<TimeSelectorProps> {
                     }
 
                 )}>
-                <div className="k-time-part">
-                    <div className="k-time-header">
-                        <span className="k-title">10:00:00 AM</span>
-                        <Button fillMode="flat" size={size} className="k-time-now">Now</Button>
-                    </div>
-                    <div className="k-time-list-container">
-                        <span className="k-time-highlight"></span>
-                        <div className="k-time-list-wrapper">
-                            <span className="k-title">Hour</span>
-                            <div className="k-time-list">
-                                <div className="k-content k-scrollable k-time-container">
-                                    <ul className="k-reset" style={{ transform: "translateY(97px)" }}>
-                                        {[ ...Array(24).keys() ].map((hour) => <li key={hour} className="k-item"><span>{hour}</span></li>)}
-                                    </ul>
-                                    <div className="k-scrollable-placeholder"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="k-time-separator">:</div>
-                        <div className="k-time-list-wrapper k-focus">
-                            <span className="k-title">Minute</span>
-                            <div className="k-time-list">
-                                <div className="k-content k-scrollable k-time-container">
-                                    <ul className="k-reset" style={{ transform: "translateY(97px)" }}>
-                                        {[ ...Array(60).keys() ].map((minute) => <li key={minute} className="k-item"><span>{minute}</span></li>)}
-                                    </ul>
-                                    <div className="k-scrollable-placeholder"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="k-time-separator">:</div>
-                        <div className="k-time-list-wrapper">
-                            <span className="k-title">Second</span>
-                            <div className="k-time-list">
-                                <div className="k-content k-scrollable k-time-container">
-                                    <ul className="k-reset" style={{ transform: "translateY(97px)" }}>
-                                        {[ ...Array(60).keys() ].map((second) => <li key={second} className="k-item"><span>{second}</span></li>)}
-                                    </ul>
-                                    <div className="k-scrollable-placeholder"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="k-time-separator">:</div>
-                        <div className="k-time-list-wrapper">
-                            <span className="k-title">AM/PM</span>
-                            <div className="k-time-list">
-                                <div className="k-content k-scrollable k-time-container">
-                                    <ul className="k-reset" style={{ transform: "translateY(97px)" }}>
-                                        <li className="k-item">
-                                            <span>AM</span>
-                                        </li>
-                                        <li className="k-item">
-                                            <span>PM</span>
-                                        </li>
-                                    </ul>
-                                    <div className="k-scrollable-placeholder"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <>
+                    {header}
+                </>
+                <>
+                    {fastSelection}
+                </>
+                <div className="k-time-list-container">
+                    <span className="k-time-highlight"></span>
+                    {columnsDom}
                 </div>
             </div>
         );

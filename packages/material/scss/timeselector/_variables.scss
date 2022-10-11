@@ -8,9 +8,11 @@ $time-selector-bg: $component-bg !default;
 $time-selector-text: $component-text !default;
 $time-selector-border: $component-border !default;
 
-$time-selector-header-padding-x: k-map-get( $spacing, 1 ) !default;
-$time-selector-header-padding-y: k-map-get( $spacing, 1 ) !default;
+$time-selector-header-padding-x: $actions-padding-x !default;
+$time-selector-header-padding-y: $actions-padding-y !default;
 $time-selector-header-border-width: 0px !default;
+
+$time-selector-fast-selection-gap: k-map-get( $spacing, 2 ) !default;
 
 $time-list-width: 4em !default;
 $time-list-height: 240px !default;

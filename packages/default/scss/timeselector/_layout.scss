@@ -47,6 +47,11 @@
         }
     }
 
+    // Fast selection
+    .k-actions.k-time-fast-selection {
+        margin-top: 0;
+    }
+
 
     // Time selector footer
     // .k-time-footer {}
@@ -172,11 +177,6 @@
             margin: auto;
         }
 
-        .k-rtl &
-        [dir="rtl"] & {
-            @include hide-scrollbar("left");
-        }
-
         .k-scrollable-placeholder {
             position: absolute;
             width: 1px;
@@ -233,6 +233,20 @@
             .k-time-list .k-item {
                 padding: $_list-item-padding-y $_list-item-padding-x;
             }
+        }
+    }
+
+}
+
+@include exports("timeselector/layout/rtl") {
+
+    .k-rtl,
+    [dir="rtl"] {
+
+        // Time list content
+        .k-time-container,
+        .k-time-list-content {
+            @include hide-scrollbar("left");
         }
     }
 

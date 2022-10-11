@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { ActionButtons } from '../../action-buttons';
 import { Button } from '../../button';
 import { Calendar } from '../../calendar';
+import { TimeSelector, TimeSelectorHeader } from '../../time-selector';
 
 const root = ReactDOM.createRoot(
     document.getElementById('app') as HTMLElement
@@ -68,156 +69,11 @@ root.render(
                                 <div className="k-datetime-calendar-wrap">
                                 </div>
                                 <div className="k-datetime-time-wrap">
-                                    <div className="k-timeselector k-reset">
-                                        <div className="k-time-part">
-                                            <div className="k-time-header">
-                                                <span className="k-title">10:00:00 AM</span>
-                                                <Button fillMode="flat" className="k-time-now">Now</Button>
-                                            </div>
-                                            <div className="k-time-list-container">
-                                                <span className="k-time-highlight"></span>
-                                                <div className="k-time-list-wrapper">
-                                                    <span className="k-title">Hour</span>
-                                                    <div className="k-time-list">
-                                                        <div className="k-content k-scrollable k-time-container">
-                                                            <ul className="k-reset" style={{ transform: "translateY(97px)" }}>
-                                                                <li className="k-item">
-                                                                    <span>0</span>
-                                                                </li>
-                                                                <li className="k-item">
-                                                                    <span>1</span>
-                                                                </li>
-                                                                <li className="k-item">
-                                                                    <span>2</span>
-                                                                </li>
-                                                                <li className="k-item">
-                                                                    <span>3</span>
-                                                                </li>
-                                                                <li className="k-item">
-                                                                    <span>4</span>
-                                                                </li>
-                                                                <li className="k-item">
-                                                                    <span>5</span>
-                                                                </li>
-                                                                <li className="k-item">
-                                                                    <span>6</span>
-                                                                </li>
-                                                                <li className="k-item">
-                                                                    <span>7</span>
-                                                                </li>
-                                                                <li className="k-item">
-                                                                    <span>8</span>
-                                                                </li>
-                                                                <li className="k-item">
-                                                                    <span>9</span>
-                                                                </li>
-                                                            </ul>
-                                                            <div className="k-scrollable-placeholder"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="k-time-separator">:</div>
-                                                <div className="k-time-list-wrapper k-focus">
-                                                    <span className="k-title">Minute</span>
-                                                    <div className="k-time-list">
-                                                        <div className="k-content k-scrollable k-time-container">
-                                                            <ul className="k-reset" style={{ transform: "translateY(97px)" }}>
-                                                                <li className="k-item">
-                                                                    <span>0</span>
-                                                                </li>
-                                                                <li className="k-item">
-                                                                    <span>1</span>
-                                                                </li>
-                                                                <li className="k-item">
-                                                                    <span>2</span>
-                                                                </li>
-                                                                <li className="k-item">
-                                                                    <span>3</span>
-                                                                </li>
-                                                                <li className="k-item">
-                                                                    <span>4</span>
-                                                                </li>
-                                                                <li className="k-item">
-                                                                    <span>5</span>
-                                                                </li>
-                                                                <li className="k-item">
-                                                                    <span>6</span>
-                                                                </li>
-                                                                <li className="k-item">
-                                                                    <span>7</span>
-                                                                </li>
-                                                                <li className="k-item">
-                                                                    <span>8</span>
-                                                                </li>
-                                                                <li className="k-item">
-                                                                    <span>9</span>
-                                                                </li>
-                                                            </ul>
-                                                            <div className="k-scrollable-placeholder"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="k-time-separator">:</div>
-                                                <div className="k-time-list-wrapper">
-                                                    <span className="k-title">Second</span>
-                                                    <div className="k-time-list">
-                                                        <div className="k-content k-scrollable k-time-container">
-                                                            <ul className="k-reset" style={{ transform: "translateY(97px)" }}>
-                                                                <li className="k-item">
-                                                                    <span>0</span>
-                                                                </li>
-                                                                <li className="k-item">
-                                                                    <span>1</span>
-                                                                </li>
-                                                                <li className="k-item">
-                                                                    <span>2</span>
-                                                                </li>
-                                                                <li className="k-item">
-                                                                    <span>3</span>
-                                                                </li>
-                                                                <li className="k-item">
-                                                                    <span>4</span>
-                                                                </li>
-                                                                <li className="k-item">
-                                                                    <span>5</span>
-                                                                </li>
-                                                                <li className="k-item">
-                                                                    <span>6</span>
-                                                                </li>
-                                                                <li className="k-item">
-                                                                    <span>7</span>
-                                                                </li>
-                                                                <li className="k-item">
-                                                                    <span>8</span>
-                                                                </li>
-                                                                <li className="k-item">
-                                                                    <span>9</span>
-                                                                </li>
-                                                            </ul>
-                                                            <div className="k-scrollable-placeholder"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="k-time-separator">:</div>
-                                                <div className="k-time-list-wrapper">
-                                                    <span className="k-title">AM/PM</span>
-                                                    <div className="k-time-list">
-                                                        <div className="k-content k-scrollable k-time-container">
-                                                            <ul className="k-reset" style={{ transform: "translateY(97px)" }}>
-                                                                <li className="k-item">
-                                                                    <span>AM</span>
-                                                                </li>
-                                                                <li className="k-item">
-                                                                    <span>PM</span>
-                                                                </li>
-                                                            </ul>
-                                                            <div className="k-scrollable-placeholder"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <TimeSelector columns={[ "HH", "mm", "ss", "tt" ]} focusedColumn="mm" header={(
+                                        <TimeSelectorHeader title="10:00:00 AM">
+                                            <Button fillMode="flat" className="k-time-now">Now</Button>
+                                        </TimeSelectorHeader>
+                                    )}/>
                                 </div>
                             </div>
                             <ActionButtons className="k-datetime-footer" alignment="stretched">
