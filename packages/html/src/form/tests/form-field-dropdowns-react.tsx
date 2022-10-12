@@ -26,7 +26,7 @@ root.render(
             <span>Horizontal Form (React)</span>
 
             <section>
-                <form className="k-form k-form-vertical">
+                <form className="k-form k-form-md k-form-vertical">
 
                     <div className="k-form-field">
                         <label className="k-label">AutoComplete:</label>
@@ -57,7 +57,7 @@ root.render(
 
 
             <section>
-                <form className="k-form k-form-horizontal">
+                <form className="k-form k-form-md k-form-horizontal">
 
                     <div className="k-form-field">
                         <label className="k-label">AutoComplete:</label>

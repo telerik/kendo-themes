@@ -37,7 +37,7 @@ root.render(
                         <div className="k-window-actions"><Button fillMode="flat" icon="close"></Button></div>
                     </div>
                     <div className="k-window-content">
-                        <div className="k-scheduler-edit-form k-form k-form-horizontal">
+                        <div className="k-scheduler-edit-form k-form k-form-md k-form-horizontal">
                             <div className="k-form-field">
                                 <div className="k-form-label">
                                     <label htmlFor="k-event-title">Title</label>

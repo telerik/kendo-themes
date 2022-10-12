@@ -544,7 +544,7 @@ root.render(
                                 <div className="k-pivotgrid-configurator-header-text">Settings</div>
                             </div>
                             <div className="k-pivotgrid-configurator-content">
-                                <form className="k-form k-form-horizontal">
+                                <form className="k-form k-form-md k-form-horizontal">
                                     <div className="k-form-field">
                                         <label className="k-label">Fields</label>
                                         <span className="k-spacer"></span>

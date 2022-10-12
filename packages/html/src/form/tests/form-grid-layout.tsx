@@ -16,7 +16,7 @@ root.render(
             <span></span>
 
             <section>
-                <form className="k-form">
+                <form className="k-form k-form-md">
 
                     <fieldset className="k-form-fieldset">
                         <legend className="k-form-legend">Shipping Address</legend>

@@ -32,7 +32,7 @@ root.render(
                         </div>
                     </div>
                     <div className="k-window-content">
-                        <div className="k-form k-form-horizontal">
+                        <div className="k-form k-form-md k-form-horizontal">
                             <div className="k-form-field">
                                 <div className="k-form-label">
                                     <label>Comment:</label>
