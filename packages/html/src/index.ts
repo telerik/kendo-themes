@@ -61,7 +61,7 @@ export * from './switch/index';
 // Command interfaces
 export * from './fab/index';
 export * from './menu/index';
-// export * from './toolbar/index';
+export * from './toolbar/index';
 
 // Popups and modals
 export * from './action-sheet/index';
