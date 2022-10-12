@@ -18,7 +18,7 @@ $_kendo-module-meta: (
 @include module.register( $_kendo-module-meta... );
 
 // Expose
-@mixin styles() {
+@mixin validator-styles() {
     @include module.render( "validator" ) {
         @include kendo-validator--layout();
         @include kendo-validator--theme();

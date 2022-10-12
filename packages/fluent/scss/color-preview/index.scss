@@ -17,7 +17,7 @@ $_kendo-module-meta: (
 @include module.register( $_kendo-module-meta... );
 
 // Expose
-@mixin styles() {
+@mixin color-preview-styles() {
     @include module.render( "color-preview" ) {
         @include kendo-color-preview--layout();
         @include kendo-color-preview--theme();

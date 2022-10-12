@@ -27,7 +27,7 @@ $_kendo-module-meta: (
 @include module.register( $_kendo-module-meta... );
 
 // Expose
-@mixin styles() {
+@mixin filemanager-styles() {
     @include module.render( "filemanager" ) {
         @include kendo-filemanager--layout();
         @include kendo-filemanager--theme();

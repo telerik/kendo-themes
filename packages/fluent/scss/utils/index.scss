@@ -15,7 +15,7 @@ $_kendo-module-meta: (
 @include module.register( $_kendo-module-meta... );
 
 // Expose
-@mixin styles() {
+@mixin utils-styles() {
     @include module.render( "utils" ) {
         @include kendo-utils--layout();
         @include kendo-utils--theme();

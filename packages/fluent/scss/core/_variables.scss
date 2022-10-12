@@ -103,31 +103,33 @@ $kendo-transition: color .2s ease-in-out, background-color .2s ease-in-out, bord
 $kendo-loading-opacity: .3 !default;
 $kendo-zindex-loading: 100 !default;
 
-:root {
-    --kendo-font-family: #{meta.inspect($kendo-font-family)};
+@mixin core-styles() {
+    :root {
+        --kendo-font-family: #{meta.inspect($kendo-font-family)};
 
-    --kendo-font-size: #{$kendo-font-size};
-    --kendo-font-size-xs: #{$kendo-font-size-xs};
-    --kendo-font-size-sm: #{$kendo-font-size-sm};
-    --kendo-font-size-md: #{$kendo-font-size-md};
-    --kendo-font-size-lg: #{$kendo-font-size-lg};
-    --kendo-font-size-xl: #{$kendo-font-size-xl};
+        --kendo-font-size: #{$kendo-font-size};
+        --kendo-font-size-xs: #{$kendo-font-size-xs};
+        --kendo-font-size-sm: #{$kendo-font-size-sm};
+        --kendo-font-size-md: #{$kendo-font-size-md};
+        --kendo-font-size-lg: #{$kendo-font-size-lg};
+        --kendo-font-size-xl: #{$kendo-font-size-xl};
 
-    --kendo-line-height: #{$kendo-line-height};
-    --kendo-line-height-xs: #{$kendo-line-height-xs};
-    --kendo-line-height-sm: #{$kendo-line-height-sm};
-    --kendo-line-height-md: #{$kendo-line-height-md};
-    --kendo-line-height-lg: #{$kendo-line-height-lg};
+        --kendo-line-height: #{$kendo-line-height};
+        --kendo-line-height-xs: #{$kendo-line-height-xs};
+        --kendo-line-height-sm: #{$kendo-line-height-sm};
+        --kendo-line-height-md: #{$kendo-line-height-md};
+        --kendo-line-height-lg: #{$kendo-line-height-lg};
 
-    --kendo-font-weight: #{$kendo-font-weight};
-    --kendo-font-weight-light: #{$kendo-font-weight-light};
-    --kendo-font-weight-bold: #{$kendo-font-weight-bold};
+        --kendo-font-weight: #{$kendo-font-weight};
+        --kendo-font-weight-light: #{$kendo-font-weight-light};
+        --kendo-font-weight-bold: #{$kendo-font-weight-bold};
 
-    --kendo-letter-spacing: #{$kendo-letter-spacing};
+        --kendo-letter-spacing: #{$kendo-letter-spacing};
 
-    --kendo-border-radius-sm: #{$kendo-border-radius-sm};
-    --kendo-border-radius-md: #{$kendo-border-radius-md};
-    --kendo-border-radius-lg: #{$kendo-border-radius-lg};
+        --kendo-border-radius-sm: #{$kendo-border-radius-sm};
+        --kendo-border-radius-md: #{$kendo-border-radius-md};
+        --kendo-border-radius-lg: #{$kendo-border-radius-lg};
 
-    --kendo-transition: #{$kendo-transition};
+        --kendo-transition: #{$kendo-transition};
+    }
 }

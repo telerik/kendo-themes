@@ -23,7 +23,7 @@ $_kendo-module-meta: (
 @include module.register( $_kendo-module-meta... );
 
 // Expose
-@mixin styles() {
+@mixin filter-styles() {
     @include module.render( "filter" ) {
         @include kendo-filter--layout();
         @include kendo-filter--theme();

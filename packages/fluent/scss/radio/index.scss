@@ -18,7 +18,7 @@ $_kendo-module-meta: (
 @include module.register( $_kendo-module-meta... );
 
 // Expose
-@mixin styles() {
+@mixin radio-styles() {
     @include module.render( "radio" ) {
         @include kendo-radio--layout();
         @include kendo-radio--theme();

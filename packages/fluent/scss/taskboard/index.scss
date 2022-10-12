@@ -23,7 +23,7 @@ $_kendo-module-meta: (
 @include module.register( $_kendo-module-meta... );
 
 // Expose
-@mixin styles() {
+@mixin taskboard-styles() {
     @include module.render( "taskboard" ) {
         @include kendo-taskboard--layout();
         @include kendo-taskboard--theme();

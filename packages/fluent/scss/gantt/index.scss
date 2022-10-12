@@ -27,7 +27,7 @@ $_kendo-module-meta: (
 @include module.register( $_kendo-module-meta... );
 
 // Expose
-@mixin styles() {
+@mixin gantt-styles() {
     @include module.render( "gantt" ) {
         @include kendo-gantt--layout();
         @include kendo-gantt--theme();

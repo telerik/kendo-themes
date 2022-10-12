@@ -21,7 +21,7 @@ $_kendo-module-meta: (
 @include module.register( $_kendo-module-meta... );
 
 // Expose
-@mixin styles() {
+@mixin adaptive-styles() {
     @include module.render( "adaptive" ) {
         @include kendo-adaptive--layout();
         @include kendo-adaptive-grid--layout();

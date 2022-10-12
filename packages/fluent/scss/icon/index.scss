@@ -15,7 +15,7 @@ $_kendo-module-meta: (
 @include module.register( $_kendo-module-meta... );
 
 // Expose
-@mixin styles() {
+@mixin icon-styles() {
     @include module.render( "icon" ) {
         @include kendo-icon--layout();
         @include kendo-icon--theme();

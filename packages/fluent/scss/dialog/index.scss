@@ -17,7 +17,7 @@ $_kendo-module-meta: (
 @include module.register( $_kendo-module-meta... );
 
 // Expose
-@mixin styles() {
+@mixin dialog-styles() {
     @include module.render( "dialog" ) {
         @include kendo-dialog--layout();
         @include kendo-dialog--theme();

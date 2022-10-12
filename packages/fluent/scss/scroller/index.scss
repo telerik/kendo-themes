@@ -15,7 +15,7 @@ $_kendo-module-meta: (
 @include module.register( $_kendo-module-meta... );
 
 // Expose
-@mixin styles() {
+@mixin scroller-styles() {
     @include module.render( "scroller" ) {
         @include kendo-scroller--layout();
         @include kendo-scroller--theme();

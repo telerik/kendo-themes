@@ -18,7 +18,7 @@ $_kendo-module-meta: (
 @include module.register( $_kendo-module-meta... );
 
 // Expose
-@mixin styles() {
+@mixin treeview-styles() {
     @include module.render( "treeview" ) {
         @include kendo-treeview--layout();
         @include kendo-treeview--theme();

@@ -21,7 +21,7 @@ $_kendo-module-meta: (
 @include module.register( $_kendo-module-meta... );
 
 // Expose
-@mixin styles() {
+@mixin captcha-styles() {
     @include module.render( "captcha" ) {
         @include kendo-captcha--layout();
         @include kendo-captcha--theme();
