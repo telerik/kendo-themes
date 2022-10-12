@@ -5,6 +5,7 @@ import { ButtonGroup } from '../../button-group';
 import { Searchbox } from '../../searchbox';
 import { SplitButton } from '../../split-button';
 import { Switch } from '../../switch';
+import { Toolbar } from '../../toolbar';
 
 const root = ReactDOM.createRoot(
     document.getElementById('app') as HTMLElement
@@ -18,7 +19,7 @@ root.render(
             <div className="k-widget k-filemanager">
                 {/* Header */}
                 <div className="k-filemanager-header">
-                    <div className="k-filemanager-toolbar k-toolbar k-widget">
+                    <Toolbar className="k-filemanager-toolbar">
                         <Button>New Folder</Button>
                         <Button>Upload</Button>
                         <ButtonGroup>
@@ -36,7 +37,7 @@ root.render(
                             <Switch checked />
                         </div>
                         <Searchbox className="k-filemanager-search-tool" placeholder="Search..." />
-                    </div>
+                    </Toolbar>
                 </div>
             </div>
 

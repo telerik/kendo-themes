@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { Button } from '../../button';
 import { DropdownList } from '../../dropdownlist';
+import { Toolbar } from '../../toolbar';
 
 const root = ReactDOM.createRoot(
     document.getElementById('app') as HTMLElement
@@ -33,7 +34,7 @@ root.render(
                             </div>
                         </div>
                     </div>
-                    <div className="k-mediaplayer-toolbar k-toolbar k-widget">
+                    <Toolbar className="k-mediaplayer-toolbar">
                         <Button fillMode="flat" icon="play" className="k-play-button"></Button>
                         <div className="k-mediaplayer-currenttime-wrap">
                             <span className="k-mediaplayer-currenttime">00:18</span> /
@@ -55,7 +56,7 @@ root.render(
                             <DropdownList value="360p" arrowIconName="hd" className="k-mediaplayer-quality" />
                         </div>
                         <Button fillMode="flat" icon="fullscreen" className="k-fullscreen-button"></Button>
-                    </div>
+                    </Toolbar>
                 </div>
                 <div className="k-mediaplayer-overlay"></div>
             </div>

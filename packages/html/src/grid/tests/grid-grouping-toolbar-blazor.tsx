@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { Button } from '../../button';
 import { Checkbox } from '../../checkbox';
+import { Toolbar } from '../../toolbar';
 
 const root = ReactDOM.createRoot(
     document.getElementById('app') as HTMLElement
@@ -11,9 +12,9 @@ root.render(
     <>
         <div id="test-area" className="k-d-grid">
             <div className="k-grid k-widget telerik-blazor">
-                <div className="k-toolbar k-grid-toolbar">
+                <Toolbar className="k-grid-toolbar">
                     <Button icon="add">Add</Button>
-                </div>
+                </Toolbar>
                 <div className="k-grouping-header k-grouping-header-flex">
                     <div className="k-indicator-container">
                         Drag a column header and drop it here to group by that column

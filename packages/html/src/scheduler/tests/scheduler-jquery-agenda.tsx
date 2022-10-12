@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { Button } from '../../button';
 import { Icon } from '../../icon';
+import { Toolbar } from '../../toolbar';
 
 const root = ReactDOM.createRoot(
     document.getElementById('app') as HTMLElement
@@ -18,7 +19,7 @@ root.render(
         <style>{style}</style>
         <div id="test-area" className="k-d-grid k-grid-cols-1">
             <div className="k-widget k-scheduler">
-                <div className="k-scheduler-toolbar k-toolbar">
+                <Toolbar className="k-scheduler-toolbar">
                     <span className="k-button-group k-scheduler-navigation">
                         <Button>Today</Button>
                         <Button icon="caret-alt-left"></Button>
@@ -40,7 +41,7 @@ root.render(
                             <Button selected>Agenda</Button>
                         </span>
                     </span>
-                </div>
+                </Toolbar>
                 <table className="k-scheduler-layout k-scheduler-agendaview k-scheduler-agenda k-scrollbar-h">
                     <tbody>
                         <tr>
@@ -116,9 +117,9 @@ root.render(
                         </tr>
                     </tbody>
                 </table>
-                <div className="k-scheduler-footer k-toolbar">
+                <Toolbar className="k-scheduler-footer">
                     <Button icon="clock">Show business hours</Button>
-                </div>
+                </Toolbar>
             </div>
 
         </div>

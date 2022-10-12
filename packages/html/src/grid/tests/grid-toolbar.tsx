@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { Button } from '../../button';
 import { ButtonGroup } from '../../button-group';
 import { Searchbox } from '../../searchbox';
+import { Toolbar } from '../../toolbar';
 
 const root = ReactDOM.createRoot(
     document.getElementById('app') as HTMLElement
@@ -30,26 +31,26 @@ root.render(
             <span>Toolbar</span>
             <section>
                 <div className="k-widget k-grid">
-                    <div className="k-toolbar k-grid-toolbar">
+                    <Toolbar className="k-grid-toolbar">
                         <Button>Button</Button>
                         <ButtonGroup>
                             <Button icon="bold"></Button>
                             <Button icon="italic"></Button>
                             <Button icon="underline"></Button>
                         </ButtonGroup>
-                    </div>
+                    </Toolbar>
                 </div>
             </section>
             <section>
                 <div className="k-widget k-grid">
-                    <div className="k-toolbar k-grid-toolbar">
+                    <Toolbar className="k-grid-toolbar">
                         <Button>Button</Button>
                         <ButtonGroup>
                             <Button icon="bold"></Button>
                             <Button icon="italic"></Button>
                             <Button icon="underline"></Button>
                         </ButtonGroup>
-                    </div>
+                    </Toolbar>
                 </div>
             </section>
 
@@ -57,26 +58,26 @@ root.render(
             <span>Toolbar RTL</span>
             <section>
                 <div className="k-widget k-grid k-rtl">
-                    <div className="k-toolbar k-grid-toolbar">
+                    <Toolbar className="k-grid-toolbar">
                         <Button>Button</Button>
                         <ButtonGroup>
                             <Button icon="bold"></Button>
                             <Button icon="italic"></Button>
                             <Button icon="underline"></Button>
                         </ButtonGroup>
-                    </div>
+                    </Toolbar>
                 </div>
             </section>
             <section>
                 <div className="k-widget k-grid" dir="rtl">
-                    <div className="k-toolbar k-grid-toolbar">
+                    <Toolbar className="k-grid-toolbar">
                         <Button>Button</Button>
                         <ButtonGroup>
                             <Button icon="bold"></Button>
                             <Button icon="italic"></Button>
                             <Button icon="underline"></Button>
                         </ButtonGroup>
-                    </div>
+                    </Toolbar>
                 </div>
             </section>
 
@@ -84,20 +85,20 @@ root.render(
             <span>Search</span>
             <section>
                 <div className="k-widget k-grid">
-                    <div className="k-toolbar k-grid-toolbar">
+                    <Toolbar className="k-grid-toolbar">
                         <Button icon="file-pdf">Export to PDF</Button>
                         <span className="k-spacer"></span>
                         <Searchbox className="k-grid-search" placeholder="Search..." />
-                    </div>
+                    </Toolbar>
                 </div>
             </section>
             <section>
                 <div className="k-widget k-grid">
-                    <div className="k-toolbar k-grid-toolbar">
+                    <Toolbar className="k-grid-toolbar">
                         <Button>Spacer</Button>
                         <div className="k-spacer"></div>
                         <Button>Spacer</Button>
-                    </div>
+                    </Toolbar>
 
                 </div>
             </section>
@@ -106,35 +107,35 @@ root.render(
             <span>Search RTL</span>
             <section>
                 <div className="k-widget k-grid k-rtl">
-                    <div className="k-toolbar k-grid-toolbar">
+                    <Toolbar className="k-grid-toolbar">
                         <Button icon="file-pdf">Export to PDF</Button>
                         <span className="k-spacer"></span>
                         <Searchbox className="k-grid-search" placeholder="Search..." />
-                    </div>
+                    </Toolbar>
                 </div>
             </section>
             <section>
                 {/* Spacer with fixed width */}
                 <div className="k-widget k-grid">
-                    <div className="k-toolbar k-grid-toolbar">
+                    <Toolbar className="k-grid-toolbar">
                         <Button>Spacer fixed width</Button>
                         <div className="k-spacer k-spacer-sized" style={{ width: "10px", flexBasis: "10px" }}></div>
                         <Button>Spacer fixed width</Button>
-                    </div>
+                    </Toolbar>
                 </div>
             </section>
 
             <span>Multi-line</span>
             <section>
                 <div className="k-widget k-grid">
-                    <div className="k-toolbar k-grid-toolbar">
+                    <Toolbar className="k-grid-toolbar">
                         <Button icon="file-pdf">Export to PDF</Button>
                         <span className="k-spacer"></span>
                         <Searchbox className="k-grid-search" placeholder="Search..." />
                         <Button icon="add">Add new record</Button>
                         <Button icon="check">Save changes</Button>
                         <Button icon="cancel">Cancel changes</Button>
-                    </div>
+                    </Toolbar>
                 </div>
             </section>
             <section></section>
@@ -142,14 +143,14 @@ root.render(
             <span>Multiline RTL</span>
             <section>
                 <div className="k-widget k-grid k-rtl">
-                    <div className="k-toolbar k-grid-toolbar">
+                    <Toolbar className="k-grid-toolbar">
                         <Button icon="file-pdf">Export to PDF</Button>
                         <span className="k-spacer"></span>
                         <Searchbox className="k-grid-search" placeholder="Search..." />
                         <Button icon="add">Add new record</Button>
                         <Button icon="check">Save changes</Button>
                         <Button icon="cancel">Cancel changes</Button>
-                    </div>
+                    </Toolbar>
                 </div>
             </section>
             <section></section>

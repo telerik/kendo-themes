@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { Button } from '../../button';
+import { Toolbar } from '../../toolbar';
 
 const root = ReactDOM.createRoot(
     document.getElementById('app') as HTMLElement
@@ -10,7 +11,7 @@ root.render(
     <>
         <div id="test-area" className="k-d-grid k-grid-cols-1">
             <div id="scheduler" className="k-widget k-scheduler">
-                <div className="k-scheduler-toolbar k-toolbar">
+                <Toolbar className="k-scheduler-toolbar">
                     <span className="k-button-group k-scheduler-navigation">
                         <Button>Today</Button>
                         <Button icon="caret-alt-left"></Button>
@@ -31,7 +32,7 @@ root.render(
                             <Button selected>Year</Button>
                         </span>
                     </span>
-                </div>
+                </Toolbar>
 
                 <div className="k-scheduler-layout k-scheduler-layout-flex k-scheduler-yearview">
                     <div className="k-scheduler-body">

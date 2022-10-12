@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { Button } from '../../button';
 import { DropdownList } from '../../dropdownlist';
+import { Toolbar, ToolbarSeparator } from '../../toolbar';
 
 const root = ReactDOM.createRoot(
     document.getElementById('app') as HTMLElement
@@ -16,13 +17,13 @@ root.render(
 
                 {/* Header */}
                 <div className="k-imageeditor-header">
-                    <div className="k-imageeditor-toolbar k-toolbar k-widget">
+                    <Toolbar className="k-imageeditor-toolbar">
                         <Button icon="upload"></Button>
                         <Button icon="download"></Button>
-                        <div className="k-separator"></div>
+                        <ToolbarSeparator></ToolbarSeparator>
                         <Button icon="undo"></Button>
                         <Button icon="redo"></Button>
-                        <div className="k-separator"></div>
+                        <ToolbarSeparator></ToolbarSeparator>
                         <Button icon="crop"></Button>
                         <Button icon="image-resize"></Button>
                         <Button icon="zoom-in"></Button>
@@ -30,7 +31,7 @@ root.render(
                         <div>
                             <DropdownList value="Zoom options" />
                         </div>
-                    </div>
+                    </Toolbar>
                 </div>
 
                 {/* Content */}

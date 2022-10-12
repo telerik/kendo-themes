@@ -5,6 +5,7 @@ import { Combobox } from '../../combobox/combobox';
 import { DropdownList } from '../../dropdownlist';
 import { Icon } from '../../icon';
 import { MenuButton } from '../../menu-button';
+import { Toolbar } from '../../toolbar';
 
 const root = ReactDOM.createRoot(
     document.getElementById('app') as HTMLElement
@@ -55,7 +56,7 @@ root.render(
                             </ul>
                         </div>
                         <div className="k-tabstrip-content k-active" style={{ display: "block" }}>
-                            <div className="k-toolbar k-widget k-toolbar-resizable k-spreadsheet-toolbar">
+                            <Toolbar className="k-spreadsheet-toolbar" resizable>
                                 <Button icon="folder-open" className="k-upload-button"></Button>
                                 <Button icon="download"></Button>
                                 <span className="k-separator"></span>
@@ -103,7 +104,7 @@ root.render(
                                 <Button icon="filter"></Button>
                                 <span className="k-separator"></span>
                                 <Button icon="border-no"></Button>
-                            </div>
+                            </Toolbar>
                         </div>
                     </div>
                 </div>

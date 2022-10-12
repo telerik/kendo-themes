@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { Button } from '../../button';
 import { ButtonGroup } from '../../button-group';
 import { Icon } from '../../icon';
+import { Toolbar } from '../../toolbar';
 
 const root = ReactDOM.createRoot(
     document.getElementById('app') as HTMLElement
@@ -20,7 +21,7 @@ root.render(
         <div id="test-area">
 
             <div className="k-gantt">
-                <div className="k-widget k-toolbar k-gantt-toolbar k-gantt-header">
+                <Toolbar className="k-gantt-toolbar k-gantt-header">
                     <span className="k-spacer"></span>
                     <span className="k-gantt-views">
                         <div className="k-gantt-views-wrapper">
@@ -36,7 +37,7 @@ root.render(
                             </select>
                         </div>
                     </span>
-                </div>
+                </Toolbar>
                 <div className="k-gantt-content">
                     <div className="k-widget k-grid k-treelist-scrollable">
                         <table className="k-table-layout-fixed" style={{ width: "4500px" }}>

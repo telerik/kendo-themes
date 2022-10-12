@@ -26,7 +26,7 @@ root.render(
 
             <section>
                 <div className="k-animation-container">
-                    <div className="k-popup k-menu-popup">
+                    <div className="k-toolbar-popup k-popup k-menu-popup">
                         <MenuList>
                             <MenuItem text="Normal"></MenuItem>
                             <MenuItem text="Hover" hover></MenuItem>
@@ -42,7 +42,7 @@ root.render(
             </section>
             <section>
                 <div className="k-animation-container">
-                    <div className="k-popup k-menu-popup">
+                    <div className="k-toolbar-popup k-popup k-menu-popup">
                         <MenuList>
                             <MenuItem text="MenuButton" disabled></MenuItem>
                             <MenuItem text="Normal" icon="plus"></MenuItem>
@@ -57,7 +57,7 @@ root.render(
             </section>
             <section>
                 <div className="k-animation-container">
-                    <div className="k-popup k-menu-popup">
+                    <div className="k-toolbar-popup k-popup k-menu-popup">
                         <MenuList>
                             <MenuItem text="SplitButton"></MenuItem>
                             <MenuItem text="Normal" icon="plus"></MenuItem>
@@ -72,7 +72,7 @@ root.render(
             </section>
             <section>
                 <div className="k-animation-container">
-                    <div className="k-popup k-menu-popup">
+                    <div className="k-toolbar-popup k-popup k-menu-popup">
                         <MenuList>
                             <MenuItem text="Normal"></MenuItem>
                             <MenuItem text="Hover" hover></MenuItem>
@@ -88,7 +88,7 @@ root.render(
             <span className="k-colspan-all k-col-span-full">rtl</span>
             <section className="k-rtl" dir="rtl">
                 <div className="k-animation-container">
-                    <div className="k-popup k-menu-popup">
+                    <div className="k-toolbar-popup k-popup k-menu-popup">
                         <MenuList>
                             <MenuItem text="Normal"></MenuItem>
                             <MenuItem text="Hover" hover></MenuItem>
@@ -104,7 +104,7 @@ root.render(
             </section>
             <section className="k-rtl" dir="rtl">
                 <div className="k-animation-container">
-                    <div className="k-popup k-menu-popup">
+                    <div className="k-toolbar-popup k-popup k-menu-popup">
                         <MenuList>
                             <MenuItem text="MenuButton" disabled></MenuItem>
                             <MenuItem text="Normal" icon="plus"></MenuItem>
@@ -119,7 +119,7 @@ root.render(
             </section>
             <section className="k-rtl" dir="rtl">
                 <div className="k-animation-container">
-                    <div className="k-popup k-menu-popup">
+                    <div className="k-toolbar-popup k-popup k-menu-popup">
                         <MenuList>
                             <MenuItem text="SplitButton"></MenuItem>
                             <MenuItem text="Normal" icon="plus"></MenuItem>
@@ -134,7 +134,7 @@ root.render(
             </section>
             <section className="k-rtl" dir="rtl">
                 <div className="k-animation-container">
-                    <div className="k-popup k-menu-popup">
+                    <div className="k-toolbar-popup k-popup k-menu-popup">
                         <MenuList>
                             <MenuItem text="Normal"></MenuItem>
                             <MenuItem text="Hover" hover></MenuItem>
