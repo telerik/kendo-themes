@@ -31,7 +31,7 @@ module.exports = {
     // ...require('./skeleton'),
 
     // Form helpers
-    // ...require('./forms'),
+    ...require('./forms'),
     // ...require('./validator'),
     // ...require('./floating-label'),
 
