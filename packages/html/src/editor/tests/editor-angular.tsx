@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { Button } from '../../button';
 import { ButtonGroup } from '../../button-group';
 import { DropdownList } from '../../dropdownlist';
+import { Toolbar } from '../../toolbar';
 
 const root = ReactDOM.createRoot(
     document.getElementById('app') as HTMLElement
@@ -26,15 +27,15 @@ root.render(
             <span>Angular Editor without iFrame; responsive toolbar</span>
             <section>
                 <div style={{ height: "200px" }} className="k-widget k-editor">
-                    <div className="k-editor-toolbar k-toolbar k-toolbar-resizable">
+                    <Toolbar className="k-editor-toolbar" resizable>
                         <div>
                             <ButtonGroup>
                                 <Button icon="undo"></Button>
                                 <Button icon="redo"></Button>
                             </ButtonGroup>
                         </div>
-                        <Button icon="more-vertical" className="k-overflow-anchor" fillMode="flat" rounded={null}></Button>
-                    </div>
+                        <Button icon="more-vertical" className="k-toolbar-overflow-button" fillMode="flat" rounded={null}></Button>
+                    </Toolbar>
                     <div className="k-editor-content">
                         <iframe className="k-iframe" frameBorder="0" src="editor-iFrameContent.html"></iframe>
                     </div>
@@ -42,15 +43,15 @@ root.render(
             </section>
             <section>
                 <div style={{ height: "200px" }} className="k-widget k-editor">
-                    <div className="k-editor-toolbar  k-toolbar k-toolbar-resizable">
+                    <Toolbar className="k-editor-toolbar" resizable>
                         <div>
                             <ButtonGroup>
                                 <Button icon="undo"></Button>
                                 <Button icon="redo"></Button>
                             </ButtonGroup>
                         </div>
-                        <Button icon="more-vertical" className="k-overflow-anchor" fillMode="flat" rounded={null}></Button>
-                    </div>
+                        <Button icon="more-vertical" className="k-toolbar-overflow-button" fillMode="flat" rounded={null}></Button>
+                    </Toolbar>
                     <div className="k-editor-content">
                         <div className="ProseMirror">
                             <div style={{ position: "relative" }}>
@@ -77,7 +78,7 @@ root.render(
             <span>Angular Editor without iFrame; NO-responsive toolbar</span>
             <section>
                 <div className="k-widget k-editor" style={{ height: "200px" }}>
-                    <div className="k-editor-toolbar k-toolbar">
+                    <Toolbar className="k-editor-toolbar">
                         <div>
                             <ButtonGroup>
                                 <Button icon="bold"></Button>
@@ -113,7 +114,7 @@ root.render(
                         <div>
                             <Button icon="image"></Button>
                         </div>
-                    </div>
+                    </Toolbar>
                     <div className="k-editor-content k-focus">
                         <iframe className="k-iframe" frameBorder="0" src="editor-iFrameContent.html"></iframe>
                     </div>
@@ -122,7 +123,7 @@ root.render(
 
             <section>
                 <div className="k-widget k-editor k-readonly" style={{ height: "200px" }}>
-                    <div className="k-editor-toolbar k-toolbar">
+                    <Toolbar className="k-editor-toolbar">
                         <div>
                             <ButtonGroup>
                                 <Button icon="bold"></Button>
@@ -158,7 +159,7 @@ root.render(
                         <div>
                             <Button icon="image"></Button>
                         </div>
-                    </div>
+                    </Toolbar>
                     <div className="k-editor-content k-focus"><div className="ProseMirror"><p>The Kendo UI Angular Editor allows your users to edit HTML in a familiar, user-friendly way.</p><p>In this version, the Editor provides the core HTML editing engine which includes basic text formatting, hyperlinks, and lists. The widget <strong>outputs identical HTML</strong> across all major browsers, follows accessibility standards, and provides API for content manipulation.</p><p>Features include:</p><ul><li>Text formatting</li><li>Bulleted and numbered lists</li><li>Hyperlinks</li><li>Cross-browser support</li><li>Identical HTML output across browsers</li></ul></div></div>
                 </div>
             </section>

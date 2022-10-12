@@ -4,6 +4,7 @@ import { ActionButtons } from '../../action-buttons';
 import { Button } from '../../button';
 import { Checkbox } from '../../checkbox';
 import { Textbox } from '../../textbox';
+import { Toolbar } from '../../toolbar';
 
 const root = ReactDOM.createRoot(
     document.getElementById('app') as HTMLElement
@@ -179,7 +180,7 @@ root.render(
 
             <section>
                 <div className="k-widget k-editor" style={{ height: "150px" }}>
-                    <div className="k-widget k-toolbar">
+                    <Toolbar>
                         <span className="k-tool-group">
                             <div className="k-button-group">
                                 <Button icon="bold"></Button>
@@ -188,7 +189,7 @@ root.render(
                                 <Button icon="find" selected></Button>
                             </div>
                         </span>
-                    </div>
+                    </Toolbar>
                     <div className="k-editor-content"><div className="ProseMirror"><span className="k-text-selected">Word</span> and few more <span className="k-text-highlighted">word</span>s. And yet again. <span className="k-text-highlighted">Word</span>.</div></div>
                 </div>
             </section>

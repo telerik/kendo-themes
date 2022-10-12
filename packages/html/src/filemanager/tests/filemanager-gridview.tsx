@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { Button } from '../../button';
 import { ButtonGroup } from '../../button-group';
 import { Icon } from '../../icon';
+import { Toolbar } from '../../toolbar';
 import { Treeview, TreeviewItem } from '../../treeview';
 
 const root = ReactDOM.createRoot(
@@ -17,14 +18,14 @@ root.render(
             <div className="k-widget k-filemanager">
                 {/* Header */}
                 <div className="k-filemanager-header">
-                    <div className="k-filemanager-toolbar k-toolbar k-widget k-toolbar-resizable">
+                    <Toolbar className="k-filemanager-toolbar" resizable>
                         <Button>New Folder</Button>
                         <Button>Upload</Button>
                         <ButtonGroup>
                             <Button icon="grid-layout"></Button>
                             <Button icon="grid" selected></Button>
                         </ButtonGroup>
-                    </div>
+                    </Toolbar>
                 </div>
 
                 <div className="k-filemanager-content-container">
@@ -113,14 +114,14 @@ root.render(
             <div className="k-widget k-filemanager">
                 {/* Header */}
                 <div className="k-filemanager-header">
-                    <div className="k-filemanager-toolbar k-toolbar k-widget k-toolbar-resizable">
+                    <Toolbar className="k-filemanager-toolbar" resizable>
                         <Button>New Folder</Button>
                         <Button>Upload</Button>
                         <ButtonGroup>
                             <Button icon="grid-layout"></Button>
                             <Button icon="grid" selected></Button>
                         </ButtonGroup>
-                    </div>
+                    </Toolbar>
                 </div>
 
                 <div className="k-filemanager-content-container">

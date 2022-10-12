@@ -6,6 +6,7 @@ import { DatePicker } from '../../datepicker';
 import { DropdownList } from '../../dropdownlist';
 import { NumericTextbox } from '../../numerictextbox';
 import { Textbox } from '../../textbox';
+import { Toolbar, ToolbarItem } from '../../toolbar';
 
 const root = ReactDOM.createRoot(
     document.getElementById('app') as HTMLElement
@@ -19,147 +20,147 @@ root.render(
                 <ul className="k-filter-container">
                     <li className="k-filter-group-main">
                         <div className="k-filter-toolbar">
-                            <div className="k-toolbar k-focus">
-                                <div className="k-filter-toolbar-item k-toolbar-item">
+                            <Toolbar focus>
+                                <ToolbarItem className="k-filter-toolbar-item">
                                     <ButtonGroup>
                                         <Button selected>And</Button>
                                         <Button>Or</Button>
                                     </ButtonGroup>
-                                </div>
-                                <div className="k-filter-toolbar-item k-toolbar-item">
+                                </ToolbarItem>
+                                <ToolbarItem className="k-filter-toolbar-item">
                                     <Button icon="filter-add-expression">Add Expression</Button>
-                                </div>
-                                <div className="k-filter-toolbar-item k-toolbar-item">
+                                </ToolbarItem>
+                                <ToolbarItem className="k-filter-toolbar-item">
                                     <Button icon="filter-add-group">Add Group</Button>
-                                </div>
-                                <div className="k-filter-toolbar-item k-toolbar-item">
+                                </ToolbarItem>
+                                <ToolbarItem className="k-filter-toolbar-item">
                                     <Button fillMode="flat" icon="close"></Button>
-                                </div>
-                            </div>
+                                </ToolbarItem>
+                            </Toolbar>
                         </div>
                         <ul className="k-filter-lines">
                             <li className="k-filter-item">
                                 <div className="k-filter-toolbar">
-                                    <div className="k-toolbar">
-                                        <div className="k-filter-toolbar-item k-toolbar-item k-filter-field">
+                                    <Toolbar>
+                                        <ToolbarItem className="k-filter-toolbar-item k-filter-field">
                                             <DropdownList value="Name" />
-                                        </div>
-                                        <div className="k-filter-toolbar-item k-toolbar-item k-filter-operator k-focus">
+                                        </ToolbarItem>
+                                        <ToolbarItem className="k-filter-toolbar-item k-filter-operator" focus={true}>
                                             <DropdownList value="Is equal to" />
-                                        </div>
-                                        <div className="k-filter-toolbar-item k-toolbar-item k-filter-value">
+                                        </ToolbarItem>
+                                        <ToolbarItem className="k-filter-toolbar-item k-filter-value">
                                             <Textbox placeholder="James"/>
-                                        </div>
-                                        <div className="k-filter-toolbar-item k-toolbar-item">
+                                        </ToolbarItem>
+                                        <ToolbarItem className="k-filter-toolbar-item">
                                             <Button fillMode="flat" icon="close"></Button>
-                                        </div>
-                                    </div>
+                                        </ToolbarItem>
+                                    </Toolbar>
                                 </div>
                             </li>
                             <li className="k-filter-item">
                                 <div className="k-filter-toolbar">
-                                    <div className="k-toolbar">
-                                        <div className="k-filter-toolbar-item k-toolbar-item k-filter-field">
+                                    <Toolbar>
+                                        <ToolbarItem className="k-filter-toolbar-item k-filter-field">
                                             <DropdownList value="Price" />
-                                        </div>
-                                        <div className="k-filter-toolbar-item k-toolbar-item k-filter-operator">
+                                        </ToolbarItem>
+                                        <ToolbarItem className="k-filter-toolbar-item k-filter-operator">
                                             <DropdownList value="Is greater than" />
-                                        </div>
-                                        <div className="k-filter-toolbar-item k-toolbar-item k-filter-value">
+                                        </ToolbarItem>
+                                        <ToolbarItem className="k-filter-toolbar-item k-filter-value">
                                             <NumericTextbox placeholder="100,00"/>
-                                        </div>
-                                        <div className="k-filter-toolbar-item k-toolbar-item">
+                                        </ToolbarItem>
+                                        <ToolbarItem className="k-filter-toolbar-item">
                                             <Button fillMode="flat" icon="close"></Button>
-                                        </div>
-                                    </div>
+                                        </ToolbarItem>
+                                    </Toolbar>
                                 </div>
                             </li>
                             <li className="k-filter-item">
                                 <div className="k-filter-toolbar">
-                                    <div className="k-toolbar k-focus">
-                                        <div className="k-filter-toolbar-item k-toolbar-item k-filter-field">
+                                    <Toolbar focus>
+                                        <ToolbarItem className="k-filter-toolbar-item k-filter-field">
                                             <DropdownList value="Discontinued" />
-                                        </div>
-                                        <div className="k-filter-toolbar-item k-toolbar-item k-filter-operator">
+                                        </ToolbarItem>
+                                        <ToolbarItem className="k-filter-toolbar-item k-filter-operator">
                                             <DropdownList value="Is equal to" />
-                                        </div>
-                                        <div className="k-filter-toolbar-item k-toolbar-item k-filter-value">
+                                        </ToolbarItem>
+                                        <ToolbarItem className="k-filter-toolbar-item k-filter-value">
                                             <DropdownList value="False"/>
-                                        </div>
-                                        <div className="k-filter-toolbar-item k-toolbar-item">
+                                        </ToolbarItem>
+                                        <ToolbarItem className="k-filter-toolbar-item">
                                             <Button fillMode="flat" icon="close"></Button>
-                                        </div>
-                                    </div>
+                                        </ToolbarItem>
+                                    </Toolbar>
                                 </div>
                             </li>
                             <li className="k-filter-item">
                                 <div className="k-filter-toolbar">
-                                    <div className="k-toolbar">
-                                        <div className="k-filter-toolbar-item k-toolbar-item k-filter-filed">
+                                    <Toolbar>
+                                        <ToolbarItem className="k-filter-toolbar-item k-filter-field">
                                             <DropdownList value="First Ordered" />
-                                        </div>
-                                        <div className="k-filter-toolbar-item k-toolbar-item">
+                                        </ToolbarItem>
+                                        <ToolbarItem className="k-filter-toolbar-item">
                                             <div className="k-filter-operator">
                                                 <DropdownList value="Is before" />
                                             </div>
-                                        </div>
-                                        <div className="k-filter-toolbar-item k-toolbar-item k-filter-value">
+                                        </ToolbarItem>
+                                        <ToolbarItem className="k-filter-toolbar-item k-filter-value">
                                             <DatePicker placeholder="1/21/2021" />
-                                        </div>
-                                        <div className="k-filter-toolbar-item k-toolbar-item">
+                                        </ToolbarItem>
+                                        <ToolbarItem className="k-filter-toolbar-item">
                                             <Button fillMode="flat" icon="close"></Button>
-                                        </div>
-                                    </div>
+                                        </ToolbarItem>
+                                    </Toolbar>
                                 </div>
                                 <li className="k-filter-item">
                                     <div className="k-filter-toolbar">
-                                        <div className="k-toolbar">
-                                            <div className="k-filter-toolbar-item k-toolbar-item">
+                                        <Toolbar>
+                                            <ToolbarItem className="k-filter-toolbar-item">
                                                 <ButtonGroup>
                                                     <Button selected>And</Button>
                                                     <Button>Or</Button>
                                                 </ButtonGroup>
-                                            </div>
-                                            <div className="k-filter-toolbar-item k-toolbar-item">
+                                            </ToolbarItem>
+                                            <ToolbarItem className="k-filter-toolbar-item">
                                                 <Button icon="filter-add-expression">Add Expression</Button>
-                                            </div>
-                                            <div className="k-filter-toolbar-item k-toolbar-item">
+                                            </ToolbarItem>
+                                            <ToolbarItem className="k-filter-toolbar-item">
                                                 <Button icon="filter-add-group">Add Group</Button>
-                                            </div>
-                                            <div className="k-filter-toolbar-item k-toolbar-item">
+                                            </ToolbarItem>
+                                            <ToolbarItem className="k-filter-toolbar-item">
                                                 <Button fillMode="flat" icon="close"></Button>
-                                            </div>
-                                        </div>
+                                            </ToolbarItem>
+                                        </Toolbar>
                                     </div>
                                     <ul className="k-filter-lines">
                                         <li className="k-filter-item">
                                             <div className="k-filter-toolbar">
-                                                <div className="k-toolbar">
-                                                    <div className="k-filter-toolbar-item k-toolbar-item k-filter-field">
+                                                <Toolbar>
+                                                    <ToolbarItem className="k-filter-toolbar-item k-filter-field">
                                                         <DropdownList value="Name" />
-                                                    </div>
-                                                    <div className="k-filter-toolbar-item k-toolbar-item k-filter-operator">
+                                                    </ToolbarItem>
+                                                    <ToolbarItem className="k-filter-toolbar-item k-filter-operator">
                                                         <DropdownList value="Is empty" />
-                                                    </div>
-                                                    <div className="k-filter-toolbar-item k-toolbar-item">
+                                                    </ToolbarItem>
+                                                    <ToolbarItem className="k-filter-toolbar-item">
                                                         <Button fillMode="flat" icon="close"></Button>
-                                                    </div>
-                                                </div>
+                                                    </ToolbarItem>
+                                                </Toolbar>
                                             </div>
                                         </li>
                                         <li className="k-filter-item">
                                             <div className="k-filter-toolbar">
-                                                <div className="k-toolbar">
-                                                    <div className="k-filter-toolbar-item k-toolbar-item k-filter-field">
+                                                <Toolbar>
+                                                    <ToolbarItem className="k-filter-toolbar-item k-filter-field">
                                                         <DropdownList value="Price" />
-                                                    </div>
-                                                    <div className="k-filter-toolbar-item k-toolbar-item k-filter-operator">
+                                                    </ToolbarItem>
+                                                    <ToolbarItem className="k-filter-toolbar-item k-filter-operator">
                                                         <DropdownList value="Is not null" />
-                                                    </div>
-                                                    <div className="k-filter-toolbar-item k-toolbar-item">
+                                                    </ToolbarItem>
+                                                    <ToolbarItem className="k-filter-toolbar-item">
                                                         <Button fillMode="flat" icon="close"></Button>
-                                                    </div>
-                                                </div>
+                                                    </ToolbarItem>
+                                                </Toolbar>
                                             </div>
                                         </li>
                                     </ul>

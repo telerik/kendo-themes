@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { Button } from '../../button';
 import { ButtonGroup } from '../../button-group';
 import { Icon } from '../../icon';
+import { Toolbar } from '../../toolbar';
 
 const root = ReactDOM.createRoot(
     document.getElementById('app') as HTMLElement
@@ -26,14 +27,14 @@ root.render(
             <span>jquery no grouping</span>
 
             <div className="k-widget k-grid k-grid-no-scrollbar">
-                <div className="k-toolbar k-grid-toolbar">
+                <Toolbar className="k-grid-toolbar">
                     <Button>Button</Button>
                     <ButtonGroup>
                         <Button icon="bold"></Button>
                         <Button icon="italic"></Button>
                         <Button icon="underline"></Button>
                     </ButtonGroup>
-                </div>
+                </Toolbar>
                 <div className="k-grouping-header k-grouping-header-flex">
                     <div className="k-grouping-dropclue"></div>
                     <div className="k-indicator-container">Drag a column header and drop it here to group by that column</div>
@@ -79,14 +80,14 @@ root.render(
             </div>
 
             <div className="k-widget k-grid k-grid-no-scrollbar">
-                <div className="k-toolbar k-grid-toolbar">
+                <Toolbar className="k-grid-toolbar">
                     <Button>Button</Button>
                     <span className="k-button-group">
                         <Button icon="bold"></Button>
                         <Button icon="italic"></Button>
                         <Button icon="underline"></Button>
                     </span>
-                </div>
+                </Toolbar>
                 <div className="k-grouping-header">
                     <div className="k-grouping-dropclue"></div>
                     Drag a column header and drop it here to group by that column
@@ -129,14 +130,14 @@ root.render(
             <span>jquery with grouping</span>
 
             <div className="k-widget k-grid k-grid-no-scrollbar">
-                <div className="k-toolbar k-grid-toolbar">
+                <Toolbar className="k-grid-toolbar">
                     <Button>Button</Button>
                     <span className="k-button-group">
                         <Button icon="bold"></Button>
                         <Button icon="italic"></Button>
                         <Button icon="underline"></Button>
                     </span>
-                </div>
+                </Toolbar>
                 <div className="k-grouping-header k-grouping-header-flex">
                     <div className="k-grouping-dropclue"></div>
                     <div className="k-indicator-container">
@@ -212,14 +213,14 @@ root.render(
             </div>
 
             <div className="k-grid k-grid-no-scrollbar k-widget k-grid-display-block">
-                <div className="k-toolbar k-grid-toolbar">
+                <Toolbar className="k-grid-toolbar">
                     <Button>Button</Button>
                     <ButtonGroup>
                         <Button icon="bold"></Button>
                         <Button icon="italic"></Button>
                         <Button icon="underline"></Button>
                     </ButtonGroup>
-                </div>
+                </Toolbar>
                 <div className="k-grouping-header">
                     <div className="k-grouping-dropclue"></div>
                     <div className="k-group-indicator">

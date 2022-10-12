@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { Chip, ChipAction } from '../../chip';
 import { Icon } from '../../icon';
+import { Toolbar } from '../../toolbar';
 
 const root = ReactDOM.createRoot(
     document.getElementById('app') as HTMLElement
@@ -17,7 +18,7 @@ root.render(
                         <tr>
                             <td>
                                 <div className="k-pivot-rowheaders" style={{ width: "163px" }}>
-                                    <div className="k-pivot-toolbar k-toolbar k-settings-measures k-pivot-setting" style={{ height: "72px" }}>
+                                    <Toolbar className="k-pivot-toolbar k-settings-measures k-pivot-setting" style={{ height: "72px" }}>
                                         <Chip
                                             text="[Measures].[Reseller Freight Cost]"
                                             actions={
@@ -27,8 +28,8 @@ root.render(
                                                 </>
                                             }
                                         />
-                                    </div>
-                                    <div className="k-pivot-toolbar k-toolbar k-settings-rows k-pivot-setting" style={{ height: "94px" }}>
+                                    </Toolbar>
+                                    <Toolbar className="k-pivot-toolbar k-settings-rows k-pivot-setting" style={{ height: "94px" }}>
                                         <Chip
                                             text="[Geography].[City]"
                                             actions={
@@ -38,7 +39,7 @@ root.render(
                                                 </>
                                             }
                                         />
-                                    </div>
+                                    </Toolbar>
                                     <div className="k-grid k-widget k-alt" style={{ height: "363px" }}>
                                         <table>
                                             <colgroup>
@@ -55,7 +56,7 @@ root.render(
                             </td>
                             <td>
                                 <div className="k-pivot-table">
-                                    <div className="k-pivot-toolbar k-toolbar k-settings-columns k-pivot-setting" style={{ height: "72px" }}>
+                                    <Toolbar className="k-pivot-toolbar k-settings-columns k-pivot-setting" style={{ height: "72px" }}>
                                         <Chip
                                             text="[Date].[Calendar]"
                                             actions={
@@ -74,7 +75,7 @@ root.render(
                                                 </>
                                             }
                                         />
-                                    </div>
+                                    </Toolbar>
                                     <div className="k-grid k-widget">
                                         <div className="k-grid-header">
                                             <div className="k-grid-header-wrap" style={{ height: "110px" }}>

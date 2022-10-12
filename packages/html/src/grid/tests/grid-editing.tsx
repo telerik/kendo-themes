@@ -5,6 +5,7 @@ import { Checkbox } from '../../checkbox';
 import { Icon } from '../../icon';
 import { NumericTextbox } from '../../numerictextbox';
 import { Textbox } from '../../textbox';
+import { Toolbar } from '../../toolbar';
 
 const root = ReactDOM.createRoot(
     document.getElementById('app') as HTMLElement
@@ -15,11 +16,11 @@ root.render(
         <div id="test-area" className="k-d-grid">
 
             <div className="k-widget k-grid k-grid-no-scrollbar">
-                <div className="k-toolbar k-grid-toolbar">
+                <Toolbar className="k-grid-toolbar">
                     <Button>Add new</Button>
                     <Button>Save Changes</Button>
                     <Button>Cancel Changes</Button>
-                </div>
+                </Toolbar>
                 <div className="k-grid-aria-root">
                     <div className="k-grid-header">
                         <div className="k-grid-header-wrap">
@@ -84,9 +85,9 @@ root.render(
             </div>
 
             <div className="k-widget k-grid k-grid-no-scrollbar">
-                <div className="k-toolbar k-grid-toolbar">
+                <Toolbar className="k-grid-toolbar">
                     <Button icon="add">Add new record</Button>
-                </div>
+                </Toolbar>
                 <div className="k-grid-header">
                     <div className="k-grid-header-wrap">
                         <table>

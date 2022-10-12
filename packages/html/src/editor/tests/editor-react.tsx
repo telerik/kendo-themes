@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { Button } from '../../button';
 import { ColorPicker } from '../../colorpicker';
 import { DropdownList } from '../../dropdownlist';
+import { Toolbar } from '../../toolbar';
 
 const root = ReactDOM.createRoot(
     document.getElementById('app') as HTMLElement
@@ -23,7 +24,7 @@ root.render(
             <span>React Editor without iFrame</span>
             <section>
                 <div className="k-widget k-editor" style={{ height: "400px" }}>
-                    <div className="k-editor-toolbar k-toolbar">
+                    <Toolbar className="k-editor-toolbar">
                         <div className="k-tool-group">
                             <div className="k-button-group">
                                 <Button icon="bold"></Button>
@@ -116,14 +117,14 @@ root.render(
                         <div className="k-tool-group">
                             <Button icon="clear-css"></Button>
                         </div>
-                    </div>
+                    </Toolbar>
                     <div className="k-editor-content"><iframe frameBorder="0" className="k-iframe" src="editor-iFrameContent.html"></iframe></div>
                 </div>
             </section>
 
             <section>
                 <div className="k-widget k-editor" style={{ height: "400px" }}>
-                    <div className="k-editor-toolbar k-toolbar">
+                    <Toolbar className="k-editor-toolbar">
                         <div className="k-tool-group">
                             <div className="k-button-group">
                                 <Button icon="bold"></Button>
@@ -216,7 +217,7 @@ root.render(
                         <div className="k-tool-group">
                             <Button icon="clear-css"></Button>
                         </div>
-                    </div>
+                    </Toolbar>
                     <div className="k-editor-content"><div className="ProseMirror"><p>The Kendo React Editor allows your users to edit HTML in a familiar, user-friendly way.</p><p>In this version, the Editor provides the core HTML editing engine which includes basic text formatting, hyperlinks, and lists. The widget <strong>outputs identical HTML</strong> across all major browsers, follows accessibility standards, and provides API for content manipulation.</p><p>Features include:</p><ul><li>Text formatting</li><li>Bulleted and numbered lists</li><li>Hyperlinks</li><li>Cross-browser support</li><li>Identical HTML output across browsers</li></ul></div></div>
                 </div>
             </section>
@@ -224,7 +225,7 @@ root.render(
             <section></section>
             <section>
                 <div className="k-widget k-editor">
-                    <div className="k-editor-toolbar k-toolbar">
+                    <Toolbar className="k-editor-toolbar">
                         <div className="k-tool-group">
                             <div className="k-button-group">
                                 <Button icon="bold"></Button>
@@ -232,7 +233,7 @@ root.render(
                                 <Button icon="underline"></Button>
                             </div>
                         </div>
-                    </div>
+                    </Toolbar>
                     <div className="k-editor-content"><div contentEditable="true" className="ProseMirror"><p data-placeholder="Enter some content ..." className="k-placeholder"><br /></p></div></div>
                 </div>
             </section>

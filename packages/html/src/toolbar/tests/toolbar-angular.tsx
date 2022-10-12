@@ -3,16 +3,14 @@ import ReactDOM from 'react-dom/client';
 import { Button } from '../../button';
 import { SplitButton } from '../../split-button';
 import { MenuButton } from '../../menu-button';
+import { Toolbar } from '../toolbar';
+import { ButtonGroup } from '../../button-group';
+import { ToolbarSeparator } from '../toolbar-separator';
 
 
 const root = ReactDOM.createRoot(
     document.getElementById('app') as HTMLElement
 );
-
-const toolbarStyle = {
-    display: "inline-block",
-    borderColor: "inherit"
-};
 
 root.render(
     <>
@@ -20,34 +18,34 @@ root.render(
 
             <span className="k-colspan-all k-col-span-full">Angular specific rendering and spacing</span>
             <section className="k-colspan-all k-col-span-full">
-                <div className="k-widget k-toolbar">
-                    <div style={toolbarStyle}>
+                <Toolbar>
+                    <div className="k-toolbar-renderer">
                         <Button>Button</Button>
                     </div>
-                    <div style={toolbarStyle}>
-                        <div className="k-separator"></div>
+                    <div className="k-toolbar-renderer">
+                        <ToolbarSeparator></ToolbarSeparator>
                     </div>
-                    <div style={toolbarStyle}>
+                    <div className="k-toolbar-renderer">
                         <SplitButton>Split button</SplitButton>
                     </div>
-                    <div style={toolbarStyle}>
-                        <div className="k-separator"></div>
+                    <div className="k-toolbar-renderer">
+                        <ToolbarSeparator></ToolbarSeparator>
                     </div>
-                    <div style={toolbarStyle}>
+                    <div className="k-toolbar-renderer">
                         <MenuButton text="Menu button"></MenuButton>
                     </div>
-                    <div style={toolbarStyle}>
-                        <div className="k-separator"></div>
+                    <div className="k-toolbar-renderer">
+                        <ToolbarSeparator></ToolbarSeparator>
                     </div>
-                    <div style={toolbarStyle}>
-                        <div className="k-button-group">
+                    <div className="k-toolbar-renderer">
+                        <ButtonGroup>
                             <Button icon="align-left"></Button>
                             <Button icon="align-center"></Button>
                             <Button icon="align-right"></Button>
                             <Button icon="align-justify"></Button>
-                        </div>
+                        </ButtonGroup>
                     </div>
-                </div>
+                </Toolbar>
             </section>
 
 
@@ -55,46 +53,46 @@ root.render(
             <span>rtl</span>
 
             <section>
-                <div className="k-widget k-toolbar">
-                    <div style={toolbarStyle}>
+                <Toolbar>
+                    <div className="k-toolbar-renderer">
                         <Button>Button</Button>
                     </div>
-                    <div style={toolbarStyle}>
+                    <div className="k-toolbar-renderer">
                         <SplitButton>Split button</SplitButton>
                     </div>
-                    <div style={toolbarStyle}>
+                    <div className="k-toolbar-renderer">
                         <MenuButton text="Menu button"></MenuButton>
                     </div>
-                    <div style={toolbarStyle}>
-                        <div className="k-button-group">
+                    <div className="k-toolbar-renderer">
+                        <ButtonGroup>
                             <Button icon="align-left">Left</Button>
                             <Button icon="align-center">Center</Button>
                             <Button icon="align-right">Right</Button>
                             <Button icon="align-justify">Justify</Button>
-                        </div>
+                        </ButtonGroup>
                     </div>
-                </div>
+                </Toolbar>
             </section>
             <section dir="rtl">
-                <div className="k-widget k-toolbar">
-                    <div style={toolbarStyle}>
+                <Toolbar>
+                    <div className="k-toolbar-renderer">
                         <Button>Button</Button>
                     </div>
-                    <div style={toolbarStyle}>
+                    <div className="k-toolbar-renderer">
                         <SplitButton>Split button</SplitButton>
                     </div>
-                    <div style={toolbarStyle}>
+                    <div className="k-toolbar-renderer">
                         <MenuButton text="Menu button"></MenuButton>
                     </div>
-                    <div style={toolbarStyle}>
-                        <div className="k-button-group">
+                    <div className="k-toolbar-renderer">
+                        <ButtonGroup>
                             <Button icon="align-left">Left</Button>
                             <Button icon="align-center">Center</Button>
                             <Button icon="align-right">Right</Button>
                             <Button icon="align-justify">Justify</Button>
-                        </div>
+                        </ButtonGroup>
                     </div>
-                </div>
+                </Toolbar>
             </section>
 
         </div>

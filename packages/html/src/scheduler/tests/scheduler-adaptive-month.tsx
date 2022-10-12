@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { Button } from '../../button';
 import { Icon } from '../../icon';
+import { Toolbar } from '../../toolbar';
 
 const root = ReactDOM.createRoot(
     document.getElementById('app') as HTMLElement
@@ -16,7 +17,7 @@ root.render(
                     <div className="k-view k-widget">
                         <div className="k-stretched-view k-content">
                             <div id="scheduler" className="k-widget k-scheduler k-scheduler-mobile">
-                                <div className="k-scheduler-toolbar k-toolbar">
+                                <Toolbar className="k-scheduler-toolbar">
                                     <span className="k-scheduler-tools k-button-group">
                                         <Button className="k-pdf" icon="file-pdf"></Button>
                                         <Button className="k-nav-calendar" icon="calendar"></Button>
@@ -28,8 +29,8 @@ root.render(
                                             <option>Month</option>
                                         </select>
                                     </span>
-                                </div>
-                                <div className="k-scheduler-toolbar k-toolbar">
+                                </Toolbar>
+                                <Toolbar className="k-scheduler-toolbar">
                                     <span className="k-scheduler-navigation">
                                         <Button className="k-nav-prev" icon="arrow-chevron-left"></Button>
                                         <Button className="k-nav-current" fillMode="flat" >
@@ -37,7 +38,7 @@ root.render(
                                         </Button>
                                         <Button className="k-nav-next" icon="arrow-chevron-right"></Button>
                                     </span>
-                                </div>
+                                </Toolbar>
                                 <table className="k-scheduler-layout k-scheduler-monthview">
                                     <tbody>
                                         <tr className="k-mobile-header">
@@ -146,9 +147,9 @@ root.render(
                                         </tr>
                                     </tbody>
                                 </table>
-                                <div className="k-scheduler-footer k-toolbar">
+                                <Toolbar className="k-scheduler-footer">
                                     <Button className="k-scheduler-today">Today</Button>
-                                </div>
+                                </Toolbar>
                             </div>
                         </div>
                     </div>

@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { Button } from '../../button';
 import { Card, CardBody, CardHeader } from '../../card';
 import { Searchbox } from '../../searchbox';
+import { Toolbar } from '../../toolbar';
 
 const root = ReactDOM.createRoot(
     document.getElementById('app') as HTMLElement
@@ -28,11 +29,11 @@ root.render(
             <div className="k-widget k-taskboard k-rtl">
                 <div className="k-taskboard-header">
                     <div className="k-taskboard-header">
-                        <div className="k-taskboard-toolbar k-toolbar">
+                        <Toolbar className="k-taskboard-toolbar">
                             <Button icon="add">Add Column</Button>
                             <span className="k-spacer"></span>
                             <Searchbox placeholder="Search..." />
-                        </div>
+                        </Toolbar>
                     </div>
                 </div>
                 <div className="k-taskboard-content">

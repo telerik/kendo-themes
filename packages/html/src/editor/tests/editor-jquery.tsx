@@ -4,20 +4,14 @@ import { Button } from '../../button';
 import { ColorPicker } from '../../colorpicker';
 import { Combobox } from '../../combobox';
 import { DropdownList } from '../../dropdownlist';
+import { Toolbar } from '../../toolbar';
 
 const root = ReactDOM.createRoot(
     document.getElementById('app') as HTMLElement
 );
 
-const styles = `
-    .k-editor-toolbar .k-overflow-anchor {
-        position: absolute;
-    }
-`;
-
 root.render(
     <>
-        <style>{styles}</style>
         <div id="test-area" className="k-d-grid k-grid-cols-2">
 
             <span>jQuery Editor with iFrame; responsive toolbar</span>
@@ -28,7 +22,7 @@ root.render(
                     <tbody>
                         <tr>
                             <td className="k-editor-toolbar-wrap">
-                                <div className="k-toolbar k-editor-toolbar k-toolbar-resizable">
+                                <Toolbar className="k-editor-toolbar" resizable>
                                     <div className="k-tool-group k-button-group">
                                         <Button icon="bold"></Button>
                                         <Button icon="italic"></Button>
@@ -41,8 +35,8 @@ root.render(
                                         <Button icon="align-right"></Button>
                                         <Button icon="align-justify"></Button>
                                     </div>
-                                    <Button icon="more-vertical" className="k-overflow-anchor" fillMode="flat" rounded={null}></Button>
-                                </div>
+                                    <Button icon="more-vertical" className="k-toolbar-overflow-button" fillMode="flat" rounded={null}></Button>
+                                </Toolbar>
                             </td>
                         </tr>
                         <tr>
@@ -59,7 +53,7 @@ root.render(
                     <tbody>
                         <tr>
                             <td className="k-editor-toolbar-wrap">
-                                <div className="k-toolbar k-editor-toolbar k-toolbar-resizable">
+                                <Toolbar className="k-editor-toolbar" resizable>
                                     <div className="k-tool-group k-button-group">
                                         <Button icon="bold"></Button>
                                         <Button icon="italic"></Button>
@@ -72,8 +66,8 @@ root.render(
                                         <Button icon="align-right"></Button>
                                         <Button icon="align-justify"></Button>
                                     </div>
-                                    <Button icon="more-vertical" className="k-overflow-anchor" fillMode="flat" rounded={null}></Button>
-                                </div>
+                                    <Button icon="more-vertical" className="k-toolbar-overflow-button" fillMode="flat" rounded={null}></Button>
+                                </Toolbar>
                             </td>
                         </tr>
                         <tr>
@@ -93,7 +87,7 @@ root.render(
                     <tbody>
                         <tr>
                             <td className="k-editor-toolbar-wrap">
-                                <div className="k-toolbar k-editor-toolbar">
+                                <Toolbar className="k-editor-toolbar">
                                     <div className="k-tool-group k-button-group">
                                         <Button icon="bold"></Button>
                                         <Button icon="italic"></Button>
@@ -152,7 +146,7 @@ root.render(
                                     <div className="k-tool-group k-button-group">
                                         <Button icon="clear-css"></Button>
                                     </div>
-                                </div>
+                                </Toolbar>
                             </td>
                         </tr>
                         <tr>
@@ -169,7 +163,7 @@ root.render(
                     <tbody>
                         <tr>
                             <td className="k-editor-toolbar-wrap">
-                                <div className="k-toolbar k-editor-toolbar">
+                                <Toolbar className="k-editor-toolbar">
                                     <div className="k-tool-group k-button-group">
                                         <Button icon="bold"></Button>
                                         <Button icon="italic"></Button>
@@ -228,7 +222,7 @@ root.render(
                                     <div className="k-tool-group k-button-group">
                                         <Button icon="clear-css"></Button>
                                     </div>
-                                </div>
+                                </Toolbar>
                             </td>
                         </tr>
                         <tr>

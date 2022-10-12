@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { Button } from '../../button';
 import { Searchbox } from '../../searchbox';
+import { Toolbar } from '../../toolbar';
 
 const root = ReactDOM.createRoot(
     document.getElementById('app') as HTMLElement
@@ -15,10 +16,10 @@ root.render(
                     <div className="k-view k-widget">
                         <div className="k-stretched-view k-content">
                             <div id="grid" className="k-grid k-widget k-grid-display-block k-grid-mobile">
-                                <div className="k-toolbar k-grid-toolbar">
+                                <Toolbar className="k-grid-toolbar">
                                     <Button className="k-grid-pdf" icon="file-pdf">Export to PDF</Button>
                                     <Searchbox className="k-grid-search" placeholder="Search..." />
-                                </div>
+                                </Toolbar>
                             </div>
                         </div>
                     </div>
@@ -31,10 +32,10 @@ root.render(
                     <div className="k-view k-widget">
                         <div className="k-stretched-view k-content">
                             <div id="grid" className="k-grid k-widget k-grid-display-block k-grid-mobile">
-                                <div className="k-toolbar k-grid-toolbar">
+                                <Toolbar className="k-grid-toolbar">
                                     <Button className="k-grid-pdf" icon="file-pdf">Export to PDF</Button>
                                     <Searchbox className="k-grid-search" placeholder="Search..." />
-                                </div>
+                                </Toolbar>
                             </div>
                         </div>
                     </div>
