@@ -28,7 +28,7 @@ root.render(
                     Error: The quick brown fox jumps over the lazy dog.
                 </div>
 
-                <form className="k-form k-form-vertical">
+                <form className="k-form k-form-md k-form-vertical">
 
                     <div className="k-form-field">
                         <label className="k-label">Normal:<span className="k-label-optional">(Optional)</span></label>
@@ -90,7 +90,7 @@ root.render(
                     Error: The quick brown fox jumps over the lazy dog.
                 </div>
 
-                <form className="k-form k-form-horizontal">
+                <form className="k-form k-form-md k-form-horizontal">
 
                     <div className="k-form-field">
                         <label className="k-label">Normal:<span className="k-label-optional">(Optional)</span></label>

@@ -46,7 +46,7 @@ root.render(
                     </div>
 
                     <div className="k-imageeditor-action-pane">
-                        <div className="k-imageeditor-pane-form k-widget k-form">
+                        <div className="k-imageeditor-pane-form k-widget k-form k-form-md">
                             <fieldset className="k-form-fieldset">
                                 <legend className="k-form-legend">Resize image</legend>
                                 <div className="k-form-layout k-d-grid k-grid-cols-2" style={{ gap: "0px 8px" }}>

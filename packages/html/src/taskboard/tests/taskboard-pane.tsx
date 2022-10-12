@@ -126,7 +126,7 @@ root.render(
                         </div>
                     </div>
                     <div className="k-taskboard-pane-content">
-                        <form className="k-form k-form-vertical">
+                        <form className="k-form k-form-md k-form-vertical">
                             <div className="k-form-field">
                                 <label className="k-label">Textbox:</label>
                                 <div>
@@ -247,7 +247,7 @@ root.render(
                         </div>
                     </div>
                     <div className="k-taskboard-pane-content">
-                        <form className="k-form k-form-vertical">
+                        <form className="k-form k-form-md k-form-vertical">
                             <div className="k-form-field">
                                 <label className="k-label">Textbox:</label>
                                 <div>
