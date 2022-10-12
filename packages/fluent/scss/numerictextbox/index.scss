@@ -19,7 +19,7 @@ $_kendo-module-meta: (
 @include module.register( $_kendo-module-meta... );
 
 // Expose
-@mixin styles() {
+@mixin numerictextbox-styles() {
     @include module.render( "numerictextbox" ) {
         @include kendo-numerictextbox--layout();
         @include kendo-numerictextbox--theme();

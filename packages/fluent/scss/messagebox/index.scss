@@ -15,7 +15,7 @@ $_kendo-module-meta: (
 @include module.register( $_kendo-module-meta... );
 
 // Expose
-@mixin styles() {
+@mixin messagebox-styles() {
     @include module.render( "messagebox" ) {
         @include kendo-messagebox--layout();
         @include kendo-messagebox--theme();

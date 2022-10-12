@@ -15,7 +15,7 @@ $_kendo-module-meta: (
 @include module.register( $_kendo-module-meta... );
 
 // Expose
-@mixin styles() {
+@mixin ripple-styles() {
     @include module.render( "ripple" ) {
         @include kendo-ripple--layout();
         @include kendo-ripple--theme();

@@ -19,7 +19,7 @@ $_kendo-module-meta: (
 @include module.register( $_kendo-module-meta... );
 
 // Expose
-@mixin styles() {
+@mixin wizard-styles() {
     @include module.render( "wizard" ) {
         @include kendo-wizard--layout();
         @include kendo-wizard--theme();

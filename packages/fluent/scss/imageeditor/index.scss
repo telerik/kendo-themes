@@ -20,7 +20,7 @@ $_kendo-module-meta: (
 @include module.register( $_kendo-module-meta... );
 
 // Expose
-@mixin styles() {
+@mixin imageeditor-styles() {
     @include module.render( "imageeditor" ) {
         @include kendo-imageeditor--layout();
         @include kendo-imageeditor--theme();

@@ -18,7 +18,7 @@ $_kendo-module-meta: (
 @include module.register( $_kendo-module-meta... );
 
 // Expose
-@mixin styles() {
+@mixin scrollview-styles() {
     @include module.render( "scrollview" ) {
         @include kendo-scrollview--layout();
         @include kendo-scrollview--theme();

@@ -22,7 +22,7 @@ $_kendo-module-meta: (
 @include module.register( $_kendo-module-meta... );
 
 // Expose
-@mixin styles() {
+@mixin datetimepicker-styles() {
     @include module.render( "datetimepicker" ) {
         @include kendo-datetimepicker--layout();
         @include kendo-datetimepicker--theme();

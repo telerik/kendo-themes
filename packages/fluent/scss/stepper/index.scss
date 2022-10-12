@@ -18,7 +18,7 @@ $_kendo-module-meta: (
 @include module.register( $_kendo-module-meta... );
 
 // Expose
-@mixin styles() {
+@mixin stepper-styles() {
     @include module.render( "stepper" ) {
         @include kendo-stepper--layout();
         @include kendo-stepper--theme();

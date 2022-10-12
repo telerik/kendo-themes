@@ -17,7 +17,7 @@ $_kendo-module-meta: (
 @include module.register( $_kendo-module-meta... );
 
 // Expose
-@mixin styles() {
+@mixin rating-styles() {
     @include module.render( "rating" ) {
         @include kendo-rating--layout();
         @include kendo-rating--theme();

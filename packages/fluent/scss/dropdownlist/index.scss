@@ -20,7 +20,7 @@ $_kendo-module-meta: (
 @include module.register( $_kendo-module-meta... );
 
 // Expose
-@mixin styles() {
+@mixin dropdownlist-styles() {
     @include module.render( "dropdownlist" ) {
         @include kendo-dropdownlist--layout();
         @include kendo-dropdownlist--theme();

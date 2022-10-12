@@ -17,7 +17,7 @@ $_kendo-module-meta: (
 @include module.register( $_kendo-module-meta... );
 
 // Expose
-@mixin styles() {
+@mixin listgroup-styles() {
     @include module.render( "listgroup" ) {
         @include kendo-listgroup--layout();
         @include kendo-listgroup--theme();

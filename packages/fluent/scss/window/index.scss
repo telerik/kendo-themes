@@ -20,7 +20,7 @@ $_kendo-module-meta: (
 @include module.register( $_kendo-module-meta... );
 
 // Expose
-@mixin styles() {
+@mixin window-styles() {
     @include module.render( "window" ) {
         @include kendo-window--layout();
         @include kendo-window--theme();

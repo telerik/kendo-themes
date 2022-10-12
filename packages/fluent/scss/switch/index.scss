@@ -15,7 +15,7 @@ $_kendo-module-meta: (
 @include module.register( $_kendo-module-meta... );
 
 // Expose
-@mixin styles() {
+@mixin switch-styles() {
     @include module.render( "switch" ) {
         @include kendo-switch--layout();
         @include kendo-switch--theme();

@@ -16,7 +16,7 @@ $_kendo-module-meta: (
 @include module.register( $_kendo-module-meta... );
 
 // Expose
-@mixin styles() {
+@mixin dateinput-styles() {
     @include module.render( "dateinput" ) {
         @include kendo-dateinput--layout();
         @include kendo-dateinput--theme();

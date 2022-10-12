@@ -20,7 +20,7 @@ $_kendo-module-meta: (
 @include module.register( $_kendo-module-meta... );
 
 // Expose
-@mixin styles() {
+@mixin datepicker-styles() {
     @include module.render( "datepicker" ) {
         @include kendo-datepicker--layout();
         @include kendo-datepicker--theme();

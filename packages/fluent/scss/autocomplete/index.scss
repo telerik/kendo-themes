@@ -20,7 +20,7 @@ $_kendo-module-meta: (
 @include module.register( $_kendo-module-meta... );
 
 // Expose
-@mixin styles() {
+@mixin autocomplete-styles() {
     @include module.render( "autocomplete" ) {
         @include kendo-autocomplete--layout();
         @include kendo-autocomplete--theme();

@@ -21,7 +21,7 @@ $_kendo-module-meta: (
 @include module.register( $_kendo-module-meta... );
 
 // Expose
-@mixin styles() {
+@mixin coloreditor-styles() {
     @include module.render( "coloreditor" ) {
         @include kendo-coloreditor--layout();
         @include kendo-coloreditor--theme();

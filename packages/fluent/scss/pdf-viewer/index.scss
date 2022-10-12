@@ -24,7 +24,7 @@ $_kendo-module-meta: (
 @include module.register( $_kendo-module-meta... );
 
 // Expose
-@mixin styles() {
+@mixin pdf-viewer-styles() {
     @include module.render( "pdf-viewer" ) {
         @include kendo-pdf-viewer--layout();
         @include kendo-pdf-viewer--theme();

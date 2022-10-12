@@ -20,7 +20,7 @@ $_kendo-module-meta: (
 @include module.register( $_kendo-module-meta... );
 
 // Expose
-@mixin styles() {
+@mixin fab-styles() {
     @include module.render( "fab" ) {
         @include kendo-fab--layout();
         @include kendo-fab--theme();

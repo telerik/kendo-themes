@@ -19,7 +19,7 @@ $_kendo-module-meta: (
 @include module.register( $_kendo-module-meta... );
 
 // Expose
-@mixin styles() {
+@mixin timeselector-styles() {
     @include module.render( "timeselector" ) {
         @include kendo-timeselector--layout();
         @include kendo-timeselector--theme();
