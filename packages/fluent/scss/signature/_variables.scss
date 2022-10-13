@@ -34,6 +34,9 @@ $kendo-signature-line-style: dashed !default;
 /// The color of the row line of the signature component.
 /// @group signature
 $kendo-signature-line-color: get-theme-color-var( primary-30 ) !default;
+/// The color of the row line of the disabled signature component.
+/// @group signature
+$kendo-signature-line-disabled-color: get-theme-color-var( neutral-60 ) !default;
 /// The width of the row line of the signature component.
 /// @group signature
 $kendo-signature-line-size: calc( 100% - 2 * #{$kendo-signature-padding-x} ) !default;
