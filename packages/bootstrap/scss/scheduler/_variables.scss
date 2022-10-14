@@ -8,15 +8,15 @@ $scheduler-bg: $component-bg !default;
 $scheduler-text: $component-text !default;
 $scheduler-border: $component-border !default;
 
-$scheduler-toolbar-bg: $toolbar-bg !default;
-$scheduler-toolbar-text: $toolbar-text !default;
-$scheduler-toolbar-border: $toolbar-border !default;
-$scheduler-toolbar-gradient: $toolbar-gradient !default;
+$scheduler-toolbar-bg: $kendo-toolbar-bg !default;
+$scheduler-toolbar-text: $kendo-toolbar-text !default;
+$scheduler-toolbar-border: $kendo-toolbar-border !default;
+$scheduler-toolbar-gradient: $kendo-toolbar-gradient !default;
 
-$scheduler-footer-bg: $toolbar-bg !default;
-$scheduler-footer-text: $toolbar-text !default;
-$scheduler-footer-border: $toolbar-border !default;
-$scheduler-footer-gradient: $toolbar-gradient !default;
+$scheduler-footer-bg: $kendo-toolbar-bg !default;
+$scheduler-footer-text: $kendo-toolbar-text !default;
+$scheduler-footer-border: $kendo-toolbar-border !default;
+$scheduler-footer-gradient: $kendo-toolbar-gradient !default;
 
 $scheduler-event-min-height: 25px !default;
 $scheduler-event-border-radius: $kendo-border-radius-md !default;

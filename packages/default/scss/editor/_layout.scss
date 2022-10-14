@@ -157,14 +157,14 @@
     // Toolbar
     .k-editor-toolbar,
     .k-editor > .k-toolbar {
-        border-width: 0 0 $toolbar-border-width 0;
+        border-width: 0 0 $kendo-toolbar-border-width 0;
         flex-shrink: 0;
     }
 
 
     // jQuery toolbar
     .k-editor-toolbar {
-        border-width: 0 0 $toolbar-border-width 0;
+        border-width: 0 0 $kendo-toolbar-border-width 0;
 
         // Tool
         .k-tool {
@@ -184,7 +184,7 @@
             right: 0;
             visibility: hidden;
 
-            .k-overflow-anchor {
+            .k-toolbar-overflow-button {
                 position: relative;
             }
         }

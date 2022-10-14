@@ -1,17 +1,27 @@
 @use "../core/" as *;
 
-/// Horizontal padding of the toolbar.
+/// The horizontal padding of the toolbar.
 /// @group toolbar
-$kendo-toolbar-padding-x: map-get( $kendo-spacing, 2 ) !default;
-/// Vertical padding of the toolbar.
+$kendo-toolbar-padding-x-sm: map-get( $kendo-spacing, 1 ) !default;
+$kendo-toolbar-padding-x-md: map-get( $kendo-spacing, 2 ) !default;
+$kendo-toolbar-padding-x-lg: map-get( $kendo-spacing, 2 ) + map-get( $kendo-spacing, thin ) !default;
+
+/// The vertical padding of the toolbar.
 /// @group toolbar
-$kendo-toolbar-padding-y: map-get( $kendo-spacing, 2 ) !default;
+$kendo-toolbar-padding-y-sm: map-get( $kendo-spacing, 1 ) !default;
+$kendo-toolbar-padding-y-md: map-get( $kendo-spacing, 2 ) !default;
+$kendo-toolbar-padding-y-lg: map-get( $kendo-spacing, 2 ) + map-get( $kendo-spacing, thin ) !default;
+
+/// The spacing betweem the toolbar tools.
+/// @group toolbar
+$kendo-toolbar-spacing-sm: map-get( $kendo-spacing, 2 ) !default;
+$kendo-toolbar-spacing-md: map-get( $kendo-spacing, 2 ) !default;
+$kendo-toolbar-spacing-lg: map-get( $kendo-spacing, 2 ) !default;
+
 /// Width of the border around the toolbar.
 /// @group toolbar
 $kendo-toolbar-border-width: 1px !default;
-/// Spacing of the toolbar
-/// @group toolbar
-$kendo-toolbar-spacing: $kendo-toolbar-padding-x !default;
+
 /// Font family of the toolbar.
 /// @group toolbar
 $kendo-toolbar-font-family: var( --kendo-font-family, inherit ) !default;
@@ -21,21 +31,22 @@ $kendo-toolbar-font-size: var( --kendo-font-size, inherit ) !default;
 /// Line height of the toolbar.
 /// @group toolbar
 $kendo-toolbar-line-height: var( --kendo-line-height, normal ) !default;
+
 /// Background color of the toolbar.
 /// @group toolbar
 $kendo-toolbar-bg: get-theme-color-var( neutral-10 ) !default;
 /// Text color of the toolbar.
 /// @group toolbar
 $kendo-toolbar-text: var( --kendo-component-text, inherit ) !default;
-/// Color of the border around the toolbar
+/// Color of the border around the toolbar.
 /// @group toolbar
 $kendo-toolbar-border: var( --kendo-component-border, initial ) !default;
 
-/// Color of the separator border of the toolbar
+/// Color of the separator border of the toolbar.
 /// @group toolbar
 $kendo-toolbar-separator-border: get-theme-color-var( neutral-60 ) !default;
 
-/// The width of the input in the toolbar
+/// The width of the input in the toolbar.
 /// @group toolbar
 $kendo-toolbar-input-width: 10em !default;
 
@@ -48,3 +59,23 @@ $kendo-toolbar-item-focus-outline-style: solid !default;
 /// Border color of the focused toolbar item.
 /// @group toolbar
 $kendo-toolbar-item-focus-outline-color: get-theme-color-var( neutral-130 ) !default;
+
+/// Sizes map for the toolbar.
+/// @group toolbar
+$kendo-toolbar-sizes: (
+    sm: (
+        padding-x: $kendo-toolbar-padding-x-sm,
+        padding-y: $kendo-toolbar-padding-y-sm,
+        spacing: $kendo-toolbar-spacing-sm
+    ),
+    md: (
+        padding-x: $kendo-toolbar-padding-x-md,
+        padding-y: $kendo-toolbar-padding-y-md,
+        spacing: $kendo-toolbar-spacing-md
+    ),
+    lg: (
+        padding-x: $kendo-toolbar-padding-x-lg,
+        padding-y: $kendo-toolbar-padding-y-lg,
+        spacing: $kendo-toolbar-spacing-lg
+    )
+) !default;
