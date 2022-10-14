@@ -10,146 +10,205 @@
 <body id="app" class="k-body">
     <style>
         #test-area {
+            --kendo-actionsheet-height: 400px;
+            --kendo-actionsheet-max-height: 400px;
+        }
+        #test-area>section {
             height: 600px;
-            transform: scale(1);
+            outline: 1px dotted;
             overflow: hidden;
-        }
-        .k-actionsheet:not(.k-rtl) {
-            left: 200px;
-        }
-        .k-actionsheet.k-rtl {
-            left: 600px;
+            position: relative;
+            transform: translateZ(0);
         }
 
     </style>
-    <div id="test-area">
-        <div class="k-actionsheet-container">
-            <div class="k-overlay"></div>
-            <div class="k-actionsheet k-actionsheet-bottom">
-                <div class="k-actionsheet-header">Header</div>
-                <ul class="k-actionsheet-items">
-                    <li class="k-actionsheet-item">
-                        <a href="#" class="k-actionsheet-action">
-                            <span class="k-actionsheet-item-icon k-icon k-i-cog"></span>
-                            <span class="k-actionsheet-item-text">
-                                <span class="k-actionsheet-item-title">Action</span>
-                                <span class="k-actionsheet-item-description">Action description</span>
-                            </span>
-                        </a>
-                    </li>
-                    <li class="k-actionsheet-item">
-                        <a href="#" class="k-actionsheet-action k-hover">
-                            <span class="k-actionsheet-item-icon k-icon k-i-cog"></span>
-                            <span class="k-actionsheet-item-text">
-                                <span class="k-actionsheet-item-title">Hover action</span>
-                                <span class="k-actionsheet-item-description">Action Description</span>
-                            </span>
-                        </a>
-                    </li>
-                    <li class="k-actionsheet-item">
-                        <a href="#" class="k-actionsheet-action k-focus">
-                            <span class="k-actionsheet-item-icon k-icon k-i-cog"></span>
-                            <span class="k-actionsheet-item-text">
-                                <span class="k-actionsheet-item-title">Focus action</span>
-                                <span class="k-actionsheet-item-description">Action Description</span>
-                            </span>
-                        </a>
-                    </li>
-                    <li class="k-actionsheet-item">
-                        <a href="#" class="k-actionsheet-action k-disabled">
-                            <span class="k-actionsheet-item-icon k-icon k-i-cog"></span>
-                            <span class="k-actionsheet-item-text">
-                                <span class="k-actionsheet-item-title">Disabled action</span>
-                                <span class="k-actionsheet-item-description">Action description</span>
-                            </span>
-                        </a>
-                    </li>
-                    <li class="k-actionsheet-item">
-                        <a href="#" class="k-actionsheet-action">
-                            <span class="k-actionsheet-item-icon k-icon k-i-cog"></span>
-                            <span class="k-actionsheet-item-text">
-                                <span class="k-actionsheet-item-title">Action</span>
-                                <span class="k-actionsheet-item-description">Some longer subtitle to break on multiple rows, for testing purposes</span>
-                            </span>
-                        </a>
-                    </li>
-                </ul>
-                <hr class="k-hr">
-                <ul class="k-actionsheet-items">
-                    <li class="k-actionsheet-item">
-                        <a href="#" class="k-actionsheet-action">
-                            <span class="k-actionsheet-item-icon k-icon k-i-cog"></span>
-                            <span class="k-actionsheet-item-text">
-                                <span class="k-actionsheet-item-title">Cancel</span>
-                                <span class="k-actionsheet-item-description">Action in second group</span>
-                            </span>
-                        </a>
-                    </li>
-                </ul>
+    <div id="test-area" class="k-d-grid k-grid-cols-2">
+        <span>LTR</span>
+        <span>RTL</span>
+        <section>
+            <div class="k-actionsheet-container">
+                <div class="k-overlay"></div>
+                <div class="k-animation-container">
+                    <div class="k-child-animation-container" style="bottom: 0px; width: 100%;">
+                        <div class="k-actionsheet k-actionsheet-bottom">
+                            <div class="k-actionsheet-titlebar">
+                                <div class="k-actionsheet-titlebar-group k-hbox">
+                                    <div class="k-actionsheet-title">
+                                        <div class="k-text-center">Header</div>
+                                        <div class="k-actionsheet-subtitle k-text-center"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="k-actionsheet-content">
+                                <ul class="k-list-ul">
+                                    <li class="k-actionsheet-item">
+                                        <a href="#" class="k-actionsheet-action">
+                                            <span class="k-icon-wrap">
+                                                <span class="k-actionsheet-item-icon k-icon k-i-cog"></span>
+                                            </span>
+                                            <span class="k-actionsheet-item-text">
+                                                <span class="k-actionsheet-item-title">Action</span>
+                                                <span class="k-actionsheet-item-description">Action description</span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="k-actionsheet-item k-hover">
+                                        <a href="#" class="k-actionsheet-action">
+                                            <span class="k-icon-wrap">
+                                                <span class="k-actionsheet-item-icon k-icon k-i-cog"></span>
+                                            </span>
+                                            <span class="k-actionsheet-item-text">
+                                                <span class="k-actionsheet-item-title">Hover action</span>
+                                                <span class="k-actionsheet-item-description">Action description</span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="k-actionsheet-item k-focus">
+                                        <a href="#" class="k-actionsheet-action">
+                                            <span class="k-icon-wrap">
+                                                <span class="k-actionsheet-item-icon k-icon k-i-cog"></span>
+                                            </span>
+                                            <span class="k-actionsheet-item-text">
+                                                <span class="k-actionsheet-item-title">Focus action</span>
+                                                <span class="k-actionsheet-item-description">Action description</span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="k-actionsheet-item k-disabled">
+                                        <a href="#" class="k-actionsheet-action">
+                                            <span class="k-icon-wrap">
+                                                <span class="k-actionsheet-item-icon k-icon k-i-cog"></span>
+                                            </span>
+                                            <span class="k-actionsheet-item-text">
+                                                <span class="k-actionsheet-item-title">Disabled action</span>
+                                                <span class="k-actionsheet-item-description">Action description</span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="k-actionsheet-item">
+                                        <a href="#" class="k-actionsheet-action">
+                                            <span class="k-icon-wrap">
+                                                <span class="k-actionsheet-item-icon k-icon k-i-cog"></span>
+                                            </span>
+                                            <span class="k-actionsheet-item-text">
+                                                <span class="k-actionsheet-item-title">Action</span>
+                                                <span class="k-actionsheet-item-description">Some longer subtitle to break on multiple rows, for testing purposes</span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <hr class="k-hr">
+                                <ul class="k-list-ul">
+                                    <li class="k-actionsheet-item">
+                                        <a href="#" class="k-actionsheet-action">
+                                            <span class="k-icon-wrap">
+                                                <span class="k-actionsheet-item-icon k-icon k-i-cog"></span>
+                                            </span>
+                                            <span class="k-actionsheet-item-text">
+                                                <span class="k-actionsheet-item-title">Cancel</span>
+                                                <span class="k-actionsheet-item-description">Action in a second group</span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="k-actionsheet k-actionsheet-bottom k-rtl">
-                <div class="k-actionsheet-header">Header</div>
-                <ul class="k-actionsheet-items">
-                    <li class="k-actionsheet-item">
-                        <a href="#" class="k-actionsheet-action">
-                            <span class="k-actionsheet-item-icon k-icon k-i-cog"></span>
-                            <span class="k-actionsheet-item-text">
-                                <span class="k-actionsheet-item-title">Action</span>
-                                <span class="k-actionsheet-item-description">Action description</span>
-                            </span>
-                        </a>
-                    </li>
-                    <li class="k-actionsheet-item">
-                        <a href="#" class="k-actionsheet-action k-hover">
-                            <span class="k-actionsheet-item-icon k-icon k-i-cog"></span>
-                            <span class="k-actionsheet-item-text">
-                                <span class="k-actionsheet-item-title">Hover action</span>
-                                <span class="k-actionsheet-item-description">Action Description</span>
-                            </span>
-                        </a>
-                    </li>
-                    <li class="k-actionsheet-item">
-                        <a href="#" class="k-actionsheet-action k-focus">
-                            <span class="k-actionsheet-item-icon k-icon k-i-cog"></span>
-                            <span class="k-actionsheet-item-text">
-                                <span class="k-actionsheet-item-title">Focus action</span>
-                                <span class="k-actionsheet-item-description">Action Description</span>
-                            </span>
-                        </a>
-                    </li>
-                    <li class="k-actionsheet-item">
-                        <a href="#" class="k-actionsheet-action k-disabled">
-                            <span class="k-actionsheet-item-icon k-icon k-i-cog"></span>
-                            <span class="k-actionsheet-item-text">
-                                <span class="k-actionsheet-item-title">Disabled action</span>
-                                <span class="k-actionsheet-item-description">Action description</span>
-                            </span>
-                        </a>
-                    </li>
-                    <li class="k-actionsheet-item">
-                        <a href="#" class="k-actionsheet-action">
-                            <span class="k-actionsheet-item-icon k-icon k-i-cog"></span>
-                            <span class="k-actionsheet-item-text">
-                                <span class="k-actionsheet-item-title">Action</span>
-                                <span class="k-actionsheet-item-description">Some longer subtitle to break on multiple rows, for testing purposes</span>
-                            </span>
-                        </a>
-                    </li>
-                </ul>
-                <hr class="k-hr">
-                <ul class="k-actionsheet-items">
-                    <li class="k-actionsheet-item">
-                        <a href="#" class="k-actionsheet-action">
-                            <span class="k-actionsheet-item-icon k-icon k-i-cog"></span>
-                            <span class="k-actionsheet-item-text">
-                                <span class="k-actionsheet-item-title">Cancel</span>
-                                <span class="k-actionsheet-item-description">Action in second group</span>
-                            </span>
-                        </a>
-                    </li>
-                </ul>
+        </section>
+        <section>
+            <div class="k-actionsheet-container">
+                <div class="k-overlay"></div>
+                <div class="k-animation-container">
+                    <div class="k-child-animation-container" style="bottom: 0px; width: 100%;">
+                        <div class="k-actionsheet k-actionsheet-bottom k-rtl">
+                            <div class="k-actionsheet-titlebar">
+                                <div class="k-actionsheet-titlebar-group k-hbox">
+                                    <div class="k-actionsheet-title">
+                                        <div class="k-text-center">Header</div>
+                                        <div class="k-actionsheet-subtitle k-text-center"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="k-actionsheet-content">
+                                <ul class="k-list-ul">
+                                    <li class="k-actionsheet-item">
+                                        <a href="#" class="k-actionsheet-action">
+                                            <span class="k-icon-wrap">
+                                                <span class="k-actionsheet-item-icon k-icon k-i-cog"></span>
+                                            </span>
+                                            <span class="k-actionsheet-item-text">
+                                                <span class="k-actionsheet-item-title">Action</span>
+                                                <span class="k-actionsheet-item-description">Action description</span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="k-actionsheet-item k-hover">
+                                        <a href="#" class="k-actionsheet-action">
+                                            <span class="k-icon-wrap">
+                                                <span class="k-actionsheet-item-icon k-icon k-i-cog"></span>
+                                            </span>
+                                            <span class="k-actionsheet-item-text">
+                                                <span class="k-actionsheet-item-title">Hover action</span>
+                                                <span class="k-actionsheet-item-description">Action description</span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="k-actionsheet-item k-focus">
+                                        <a href="#" class="k-actionsheet-action">
+                                            <span class="k-icon-wrap">
+                                                <span class="k-actionsheet-item-icon k-icon k-i-cog"></span>
+                                            </span>
+                                            <span class="k-actionsheet-item-text">
+                                                <span class="k-actionsheet-item-title">Focus action</span>
+                                                <span class="k-actionsheet-item-description">Action description</span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="k-actionsheet-item k-disabled">
+                                        <a href="#" class="k-actionsheet-action">
+                                            <span class="k-icon-wrap">
+                                                <span class="k-actionsheet-item-icon k-icon k-i-cog"></span>
+                                            </span>
+                                            <span class="k-actionsheet-item-text">
+                                                <span class="k-actionsheet-item-title">Disabled action</span>
+                                                <span class="k-actionsheet-item-description">Action description</span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="k-actionsheet-item">
+                                        <a href="#" class="k-actionsheet-action">
+                                            <span class="k-icon-wrap">
+                                                <span class="k-actionsheet-item-icon k-icon k-i-cog"></span>
+                                            </span>
+                                            <span class="k-actionsheet-item-text">
+                                                <span class="k-actionsheet-item-title">Action</span>
+                                                <span class="k-actionsheet-item-description">Some longer subtitle to break on multiple rows, for testing purposes</span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <hr class="k-hr">
+                                <ul class="k-list-ul">
+                                    <li class="k-actionsheet-item">
+                                        <a href="#" class="k-actionsheet-action">
+                                            <span class="k-icon-wrap">
+                                                <span class="k-actionsheet-item-icon k-icon k-i-cog"></span>
+                                            </span>
+                                            <span class="k-actionsheet-item-text">
+                                                <span class="k-actionsheet-item-title">Cancel</span>
+                                                <span class="k-actionsheet-item-description">Action in a second group</span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
+        </section>
     </div>
 </body>
 </html>

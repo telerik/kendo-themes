@@ -1,0 +1,798 @@
+<!doctype html>
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width:15px;">
+<head>
+    <title>ActionSheet -- date time selector integration</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
+    <link rel="stylesheet" href="/packages/html/assets/styles.css">
+    <script src="/packages/html/assets/scripts.js"></script>
+</head>
+<body id="app" class="k-body">
+    <style>
+        #test-area {
+            --kendo-actionsheet-height: 521px;
+            --kendo-actionsheet-max-height: 521px;
+        }
+        #test-area>section {
+            height: 600px;
+            outline: 1px dotted;
+            overflow: hidden;
+            position: relative;
+            transform: translateZ(0);
+        }
+
+    </style>
+    <div id="test-area" class="k-d-grid k-grid-cols-2">
+        <span>partial</span>
+        <span>full screen</span>
+        <section>
+            <div class="k-actionsheet-container">
+                <div class="k-overlay"></div>
+                <div class="k-animation-container">
+                    <div class="k-child-animation-container" style="bottom: 0px; width: 100%;">
+                        <div class="k-actionsheet k-actionsheet-bottom k-adaptive-actionsheet">
+                            <div class="k-actionsheet-titlebar">
+                                <div class="k-actionsheet-titlebar-group k-hbox">
+                                    <div class="k-actionsheet-title">
+                                        <div class="k-text-center">Select Date &amp; Time</div>
+                                        <div class="k-actionsheet-subtitle k-text-center">DD / MM / YY</div>
+                                    </div>
+                                    <div class="k-actionsheet-actions">
+                                        <button class="k-button k-button-lg k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                                            <span class="k-button-icon k-icon k-i-x"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="k-actionsheet-content !k-overflow-hidden">
+                                <div class="k-datetime-wrap k-date-tab">
+                                    <div class="k-datetime-buttongroup">
+                                        <div class="k-button-group k-button-group-stretched">
+                                            <button class="k-group-start k-button k-button-lg k-button-solid k-button-solid-base k-rounded-md k-selected">
+                                                <span class="k-button-text">Date</span>
+                                            </button>
+                                            <button class="k-group-end k-button k-button-lg k-button-solid k-button-solid-base k-rounded-md">
+                                                <span class="k-button-text">Time</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="k-datetime-selector">
+                                        <div class="k-datetime-calendar-wrap">
+                                            <div class="k-calendar k-calendar-lg">
+                                                <div class="k-calendar-header">
+                                                    <button class="k-calendar-title k-button k-button-lg k-button-flat k-button-flat-base k-rounded-md">
+                                                        <span class="k-button-text">October 2021</span>
+                                                    </button>
+                                                    <span class="k-spacer"></span>
+                                                    <span class="k-calendar-nav">
+                                                        <button class="k-calendar-nav-prev k-button k-button-lg k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                                                            <span class="k-button-icon k-icon k-i-arrow-chevron-left"></span>
+                                                        </button>
+                                                        <span class="k-calendar-nav-today">Today</span>
+                                                        <button class="k-calendar-nav-next k-button k-button-lg k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                                                            <span class="k-button-icon k-icon k-i-arrow-chevron-right"></span>
+                                                        </button>
+                                                    </span>
+                                                </div>
+                                                <div class="k-calendar-view k-calendar-monthview k-align-items-start k-justify-content-center k-hstack">
+                                                    <table class="k-calendar-table">
+                                                        <thead class="k-calendar-thead">
+                                                            <tr class="k-calendar-tr">
+                                                                <th class="k-calendar-th">Su</th>
+                                                                <th class="k-calendar-th">Mo</th>
+                                                                <th class="k-calendar-th">Tu</th>
+                                                                <th class="k-calendar-th">We</th>
+                                                                <th class="k-calendar-th">Th</th>
+                                                                <th class="k-calendar-th">Fr</th>
+                                                                <th class="k-calendar-th">Sa</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody class="k-calendar-tbody">
+                                                            <tr class="k-calendar-tr">
+                                                                <td class="k-calendar-td k-other-month">
+                                                                    <span class="k-link">30</span>
+                                                                </td>
+                                                                <td class="k-calendar-td">
+                                                                    <span class="k-link">1</span>
+                                                                </td>
+                                                                <td class="k-calendar-td">
+                                                                    <span class="k-link">2</span>
+                                                                </td>
+                                                                <td class="k-calendar-td">
+                                                                    <span class="k-link">3</span>
+                                                                </td>
+                                                                <td class="k-calendar-td">
+                                                                    <span class="k-link">4</span>
+                                                                </td>
+                                                                <td class="k-calendar-td">
+                                                                    <span class="k-link">5</span>
+                                                                </td>
+                                                                <td class="k-calendar-td k-weekend">
+                                                                    <span class="k-link">6</span>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="k-calendar-tr">
+                                                                <td class="k-calendar-td k-weekend">
+                                                                    <span class="k-link">7</span>
+                                                                </td>
+                                                                <td class="k-calendar-td k-hover">
+                                                                    <span class="k-link">8</span>
+                                                                </td>
+                                                                <td class="k-calendar-td k-focus">
+                                                                    <span class="k-link">9</span>
+                                                                </td>
+                                                                <td class="k-calendar-td k-selected">
+                                                                    <span class="k-link">10</span>
+                                                                </td>
+                                                                <td class="k-calendar-td k-hover k-focus">
+                                                                    <span class="k-link">11</span>
+                                                                </td>
+                                                                <td class="k-calendar-td k-hover k-selected">
+                                                                    <span class="k-link">12</span>
+                                                                </td>
+                                                                <td class="k-calendar-td k-weekend">
+                                                                    <span class="k-link">13</span>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="k-calendar-tr">
+                                                                <td class="k-calendar-td k-weekend">
+                                                                    <span class="k-link">14</span>
+                                                                </td>
+                                                                <td class="k-calendar-td">
+                                                                    <span class="k-link">15</span>
+                                                                </td>
+                                                                <td class="k-calendar-td k-today">
+                                                                    <span class="k-link">16</span>
+                                                                </td>
+                                                                <td class="k-calendar-td">
+                                                                    <span class="k-link">17</span>
+                                                                </td>
+                                                                <td class="k-calendar-td">
+                                                                    <span class="k-link">18</span>
+                                                                </td>
+                                                                <td class="k-calendar-td">
+                                                                    <span class="k-link">19</span>
+                                                                </td>
+                                                                <td class="k-calendar-td k-weekend">
+                                                                    <span class="k-link">20</span>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="k-calendar-tr">
+                                                                <td class="k-calendar-td k-weekend">
+                                                                    <span class="k-link">21</span>
+                                                                </td>
+                                                                <td class="k-calendar-td">
+                                                                    <span class="k-link">22</span>
+                                                                </td>
+                                                                <td class="k-calendar-td">
+                                                                    <span class="k-link">23</span>
+                                                                </td>
+                                                                <td class="k-calendar-td">
+                                                                    <span class="k-link">24</span>
+                                                                </td>
+                                                                <td class="k-calendar-td">
+                                                                    <span class="k-link">25</span>
+                                                                </td>
+                                                                <td class="k-calendar-td">
+                                                                    <span class="k-link">26</span>
+                                                                </td>
+                                                                <td class="k-calendar-td k-weekend">
+                                                                    <span class="k-link">27</span>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="k-calendar-tr">
+                                                                <td class="k-calendar-td k-weekend">
+                                                                    <span class="k-link">28</span>
+                                                                </td>
+                                                                <td class="k-calendar-td">
+                                                                    <span class="k-link">29</span>
+                                                                </td>
+                                                                <td class="k-calendar-td">
+                                                                    <span class="k-link">30</span>
+                                                                </td>
+                                                                <td class="k-calendar-td">
+                                                                    <span class="k-link">31</span>
+                                                                </td>
+                                                                <td class="k-calendar-td k-other-month">
+                                                                    <span class="k-link">1</span>
+                                                                </td>
+                                                                <td class="k-calendar-td k-other-month">
+                                                                    <span class="k-link">2</span>
+                                                                </td>
+                                                                <td class="k-calendar-td k-weekend k-other-month">
+                                                                    <span class="k-link">3</span>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="k-calendar-tr">
+                                                                <td class="k-calendar-td k-weekend k-other-month">
+                                                                    <span class="k-link">4</span>
+                                                                </td>
+                                                                <td class="k-calendar-td k-other-month">
+                                                                    <span class="k-link">5</span>
+                                                                </td>
+                                                                <td class="k-calendar-td k-other-month">
+                                                                    <span class="k-link">6</span>
+                                                                </td>
+                                                                <td class="k-calendar-td k-other-month">
+                                                                    <span class="k-link">7</span>
+                                                                </td>
+                                                                <td class="k-calendar-td k-other-month">
+                                                                    <span class="k-link">8</span>
+                                                                </td>
+                                                                <td class="k-calendar-td k-other-month">
+                                                                    <span class="k-link">9</span>
+                                                                </td>
+                                                                <td class="k-calendar-td k-weekend k-other-month">
+                                                                    <span class="k-link">10</span>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="k-datetime-time-wrap"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="k-actions k-actions-stretched k-actions-horizontal k-actionsheet-footer">
+                                <button class="k-button k-button-lg k-button-solid k-button-solid-base k-rounded-md">
+                                    <span class="k-button-text">Cancel</span>
+                                </button>
+                                <button class="k-button k-button-lg k-button-solid k-button-solid-primary k-rounded-md">
+                                    <span class="k-button-text">Set</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="k-actionsheet-container">
+                <div class="k-overlay"></div>
+                <div class="k-animation-container">
+                    <div class="k-child-animation-container" style="top: 0px; width: 100%; height: 100%;">
+                        <div class="k-actionsheet k-actionsheet-fullscreen k-adaptive-actionsheet">
+                            <div class="k-actionsheet-titlebar">
+                                <div class="k-actionsheet-titlebar-group k-hbox">
+                                    <div class="k-actionsheet-title">
+                                        <div class="k-text-center">Select Date &amp; Time</div>
+                                        <div class="k-actionsheet-subtitle k-text-center">DD / MM / YY</div>
+                                    </div>
+                                    <div class="k-actionsheet-actions">
+                                        <button class="k-button k-button-lg k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                                            <span class="k-button-icon k-icon k-i-x"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="k-actionsheet-content !k-overflow-hidden">
+                                <div class="k-datetime-wrap k-time-tab">
+                                    <div class="k-datetime-buttongroup">
+                                        <div class="k-button-group k-button-group-stretched">
+                                            <button class="k-group-start k-button k-button-lg k-button-solid k-button-solid-base k-rounded-md">
+                                                <span class="k-button-text">Date</span>
+                                            </button>
+                                            <button class="k-group-end k-button k-button-lg k-button-solid k-button-solid-base k-rounded-md k-selected">
+                                                <span class="k-button-text">Time</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="k-datetime-selector">
+                                        <div class="k-datetime-calendar-wrap"></div>
+                                        <div class="k-datetime-time-wrap">
+                                            <div class="k-timeselector k-timeselector-lg">
+                                                <div class="k-time-part">
+                                                    <div class="k-time-header">
+                                                        <span class="k-title">10:00:00 AM</span>
+                                                        <button class="k-time-now k-button k-button-lg k-button-flat k-button-flat-base k-rounded-md">
+                                                            <span class="k-button-text">Now</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="k-time-list-container">
+                                                        <span class="k-time-highlight"></span>
+                                                        <div class="k-time-list-wrapper">
+                                                            <span class="k-title">Hour</span>
+                                                            <div class="k-time-list">
+                                                                <div class="k-content k-scrollable k-time-container">
+                                                                    <ul class="k-reset" style="transform: translateY(97px);">
+                                                                        <li class="k-item">
+                                                                            <span>0</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>1</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>2</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>3</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>4</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>5</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>6</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>7</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>8</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>9</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>10</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>11</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>12</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>13</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>14</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>15</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>16</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>17</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>18</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>19</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>20</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>21</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>22</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>23</span>
+                                                                        </li>
+                                                                    </ul>
+                                                                    <div class="k-scrollable-placeholder"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="k-time-separator">:</div>
+                                                        <div class="k-time-list-wrapper k-focus">
+                                                            <span class="k-title">Minute</span>
+                                                            <div class="k-time-list">
+                                                                <div class="k-content k-scrollable k-time-container">
+                                                                    <ul class="k-reset" style="transform: translateY(97px);">
+                                                                        <li class="k-item">
+                                                                            <span>0</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>1</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>2</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>3</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>4</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>5</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>6</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>7</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>8</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>9</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>10</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>11</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>12</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>13</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>14</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>15</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>16</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>17</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>18</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>19</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>20</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>21</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>22</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>23</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>24</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>25</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>26</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>27</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>28</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>29</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>30</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>31</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>32</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>33</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>34</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>35</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>36</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>37</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>38</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>39</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>40</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>41</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>42</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>43</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>44</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>45</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>46</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>47</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>48</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>49</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>50</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>51</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>52</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>53</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>54</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>55</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>56</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>57</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>58</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>59</span>
+                                                                        </li>
+                                                                    </ul>
+                                                                    <div class="k-scrollable-placeholder"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="k-time-separator">:</div>
+                                                        <div class="k-time-list-wrapper">
+                                                            <span class="k-title">Second</span>
+                                                            <div class="k-time-list">
+                                                                <div class="k-content k-scrollable k-time-container">
+                                                                    <ul class="k-reset" style="transform: translateY(97px);">
+                                                                        <li class="k-item">
+                                                                            <span>0</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>1</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>2</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>3</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>4</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>5</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>6</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>7</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>8</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>9</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>10</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>11</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>12</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>13</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>14</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>15</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>16</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>17</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>18</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>19</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>20</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>21</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>22</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>23</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>24</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>25</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>26</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>27</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>28</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>29</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>30</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>31</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>32</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>33</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>34</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>35</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>36</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>37</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>38</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>39</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>40</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>41</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>42</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>43</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>44</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>45</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>46</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>47</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>48</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>49</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>50</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>51</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>52</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>53</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>54</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>55</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>56</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>57</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>58</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>59</span>
+                                                                        </li>
+                                                                    </ul>
+                                                                    <div class="k-scrollable-placeholder"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="k-time-separator">:</div>
+                                                        <div class="k-time-list-wrapper">
+                                                            <span class="k-title">AM/PM</span>
+                                                            <div class="k-time-list">
+                                                                <div class="k-content k-scrollable k-time-container">
+                                                                    <ul class="k-reset" style="transform: translateY(97px);">
+                                                                        <li class="k-item">
+                                                                            <span>AM</span>
+                                                                        </li>
+                                                                        <li class="k-item">
+                                                                            <span>PM</span>
+                                                                        </li>
+                                                                    </ul>
+                                                                    <div class="k-scrollable-placeholder"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="k-actions k-actions-stretched k-actions-horizontal k-actionsheet-footer">
+                                <button class="k-button k-button-lg k-button-solid k-button-solid-base k-rounded-md">
+                                    <span class="k-button-text">Cancel</span>
+                                </button>
+                                <button class="k-button k-button-lg k-button-solid k-button-solid-primary k-rounded-md">
+                                    <span class="k-button-text">Set</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
