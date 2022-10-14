@@ -9,7 +9,8 @@
         border-color: var( --kendo-toolbar-border, #{$kendo-toolbar-border} );
 
         // Separator
-        .k-separator {
+        .k-separator,
+        .k-toolbar-separator {
             border-color: var( --kendo-toolbar-separator-border, #{$kendo-toolbar-separator-border} );
         }
 
@@ -21,7 +22,17 @@
 
     }
 
-    // Overflow container
+    // sass-lint:disable-block class-name-format
+    .k-floating-toolbar,
+    .editorToolbarWindow.k-window-content {
+        color: var( --kendo-toolbar-text, #{$kendo-toolbar-text} );
+        background-color: var( --kendo-toolbar-bg, #{$kendo-toolbar-bg} );
+        border-color: var( --kendo-toolbar-border, #{$kendo-toolbar-border} );
+    }
+
+
+    // Remove once the Overflow Popup uses
+    // the proper Menu rendering in all suites.
     .k-overflow-container {
 
         .k-button {
@@ -59,14 +70,6 @@
             }
         }
 
-    }
-
-    // sass-lint:disable-block class-name-format
-    .k-floating-toolbar,
-    .editorToolbarWindow.k-window-content {
-        color: var( --kendo-toolbar-text, #{$kendo-toolbar-text} );
-        background-color: var( --kendo-toolbar-bg, #{$kendo-toolbar-bg} );
-        border-color: var( --kendo-toolbar-border, #{$kendo-toolbar-border} );
     }
 
 }

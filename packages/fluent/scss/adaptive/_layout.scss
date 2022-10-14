@@ -173,7 +173,7 @@
         }
 
         .k-scheduler-toolbar {
-            padding: $kendo-toolbar-padding-y $kendo-toolbar-padding-x;
+            padding: $kendo-toolbar-padding-y-md $kendo-toolbar-padding-x-md;
 
             > * {
                 margin: 0;
@@ -212,7 +212,7 @@
         }
 
         .k-scheduler-footer {
-            padding: $kendo-toolbar-padding-y $kendo-toolbar-padding-x;
+            padding: $kendo-toolbar-padding-y-md $kendo-toolbar-padding-x-md;
             display: flex;
             justify-content: space-between;
 

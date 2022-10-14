@@ -202,7 +202,7 @@
     // Header and footer
     .k-scheduler-toolbar {
         border-width: 0;
-        border-bottom-width: $toolbar-border-width;
+        border-bottom-width: $kendo-toolbar-border-width;
         white-space: nowrap;
         flex-shrink: 0;
         position: relative;
@@ -277,7 +277,7 @@
     .k-scheduler-footer {
         @include box-shadow( none );
         border-width: 0;
-        border-top-width: $toolbar-border-width;
+        border-top-width: $kendo-toolbar-border-width;
         white-space: nowrap;
         flex-shrink: 0;
         position: relative;

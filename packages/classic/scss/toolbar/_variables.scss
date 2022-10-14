@@ -1,29 +1,87 @@
 // Toolbar
 
-/// The horizontal padding of the container.
+/// The horizontal padding of the toolbar.
 /// @group toolbar
-$toolbar-padding-x: k-map-get( $spacing, 2 ) !default;
-/// The vertical padding of the container.
+$kendo-toolbar-padding-x: null !default;
+$kendo-toolbar-padding-x-sm: k-map-get( $spacing, 1 ) !default;
+$kendo-toolbar-padding-x-md: k-map-get( $spacing, 2 ) !default;
+$kendo-toolbar-padding-x-lg: k-map-get( $spacing, 2 ) + k-map-get( $spacing, thin ) !default;
+
+/// The vertical padding of the toolbar.
 /// @group toolbar
-$toolbar-padding-y: k-map-get( $spacing, 2 ) !default;
-$toolbar-border-width: 1px !default;
-$toolbar-border-radius: null !default;
-$toolbar-spacing: $toolbar-padding-x !default;
+$kendo-toolbar-padding-y: null !default;
+$kendo-toolbar-padding-y-sm: k-map-get( $spacing, 1 ) !default;
+$kendo-toolbar-padding-y-md: k-map-get( $spacing, 2 ) !default;
+$kendo-toolbar-padding-y-lg: k-map-get( $spacing, 2 ) + k-map-get( $spacing, thin ) !default;
 
-$toolbar-inner-calc-size: calc( #{$kendo-button-calc-size} + #{$toolbar-padding-y * 2} ) !default;
+/// The spacing betweem the toolbar tools.
+/// @group toolbar
+$kendo-toolbar-spacing: null !default;
+$kendo-toolbar-spacing-sm: k-map-get( $spacing, 1 ) + k-map-get( $spacing, thin ) !default;
+$kendo-toolbar-spacing-md: k-map-get( $spacing, 2 ) !default;
+$kendo-toolbar-spacing-lg: k-map-get( $spacing, 2 ) + k-map-get( $spacing, thin ) !default;
 
-$toolbar-font-family: $font-family !default;
-$toolbar-font-size: $font-size !default;
-$toolbar-line-height: $line-height !default;
+/// Width of the border around the toolbar.
+/// @group toolbar
+$kendo-toolbar-border-width: 1px !default;
+/// Border radius of the toolbar.
+/// @group toolbar
+$kendo-toolbar-border-radius: null !default;
 
-$toolbar-bg: $kendo-button-bg !default;
-$toolbar-text: $kendo-button-text !default;
-$toolbar-border: $kendo-button-border !default;
-$toolbar-gradient: null !default;
-$toolbar-shadow: null !default;
+/// Font family of the toolbar.
+/// @group toolbar
+$kendo-toolbar-font-family: $font-family !default;
+/// Font size of the toolbar.
+/// @group toolbar
+$kendo-toolbar-font-size: $font-size !default;
+/// Line height of the toolbar.
+/// @group toolbar
+$kendo-toolbar-line-height: $line-height !default;
 
-$toolbar-separator-border: inherit !default;
+/// Background color of the toolbar.
+/// @group toolbar
+$kendo-toolbar-bg: $kendo-button-bg !default;
+/// Text color of the toolbar.
+/// @group toolbar
+$kendo-toolbar-text: $kendo-button-text !default;
+/// Color of the border around the toolbar.
+/// @group toolbar
+$kendo-toolbar-border: $kendo-button-border !default;
+/// Gradient of the toolbar.
+/// @group toolbar
+$kendo-toolbar-gradient: null !default;
+/// Box shadow of the toolbar.
+/// @group toolbar
+$kendo-toolbar-shadow: null !default;
 
-$toolbar-input-width: 10em !default;
+/// Color of the separator border of the toolbar.
+/// @group toolbar
+$kendo-toolbar-separator-border: inherit !default;
 
-$toolbar-item-shadow: $kendo-button-focus-shadow !default;
+/// The width of the input in the toolbar.
+/// @group toolbar
+$kendo-toolbar-input-width: 10em !default;
+
+/// Box shadow of the focused toolbar item.
+/// @group toolbar
+$kendo-toolbar-item-shadow: $kendo-button-focus-shadow !default;
+
+/// Sizes map for the toolbar.
+/// @group toolbar
+$kendo-toolbar-sizes: (
+    sm: (
+        padding-x: $kendo-toolbar-padding-x-sm,
+        padding-y: $kendo-toolbar-padding-y-sm,
+        spacing: $kendo-toolbar-spacing-sm
+    ),
+    md: (
+        padding-x: $kendo-toolbar-padding-x-md,
+        padding-y: $kendo-toolbar-padding-y-md,
+        spacing: $kendo-toolbar-spacing-md
+    ),
+    lg: (
+        padding-x: $kendo-toolbar-padding-x-lg,
+        padding-y: $kendo-toolbar-padding-y-lg,
+        spacing: $kendo-toolbar-spacing-lg
+    )
+) !default;

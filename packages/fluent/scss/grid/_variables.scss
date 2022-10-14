@@ -135,10 +135,10 @@ $kendo-grid-footer-border: $kendo-table-footer-border !default;
 
 /// Horizontal padding of the grid grouping header.
 /// @group grid
-$kendo-grid-grouping-header-padding-x: $kendo-toolbar-padding-x !default;
+$kendo-grid-grouping-header-padding-x: $kendo-toolbar-padding-x-md !default;
 /// Vertical padding of the grid grouping header.
 /// @group grid
-$kendo-grid-grouping-header-padding-y: $kendo-toolbar-padding-y !default;
+$kendo-grid-grouping-header-padding-y: $kendo-toolbar-padding-y-md !default;
 /// Background color of the grid grouping header.
 /// @group grid
 $kendo-grid-grouping-header-bg: $kendo-toolbar-bg !default;
@@ -171,13 +171,13 @@ $kendo-grid-filter-cell-padding-y: $kendo-grid-filter-cell-padding-x !default;
 
 /// Horizontal padding of the grid toolbar.
 /// @group grid
-$kendo-grid-toolbar-padding-x: $kendo-toolbar-padding-x !default;
+$kendo-grid-toolbar-padding-x: $kendo-toolbar-padding-x-md !default;
 /// Vertical padding of the grid toolbar.
 /// @group grid
-$kendo-grid-toolbar-padding-y: $kendo-toolbar-padding-y !default;
+$kendo-grid-toolbar-padding-y: $kendo-toolbar-padding-y-md !default;
 /// Spacing of the grid toolbar.
 /// @group grid
-$kendo-grid-toolbar-spacing: $kendo-toolbar-spacing !default;
+$kendo-grid-toolbar-spacing: $kendo-toolbar-spacing-md !default;
 /// Border width of the grid toolbar.
 /// @group grid
 $kendo-grid-toolbar-border-width: $kendo-grid-border-width !default;

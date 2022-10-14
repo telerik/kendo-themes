@@ -22,6 +22,14 @@
         }
     }
 
+}
+
+
+
+
+// Remove once the Overflow Popup uses
+// the proper Menu rendering in all suites.
+@include exports("toolbar/layout/material/legacy") {
 
     // Overflow container
     .k-overflow-container {
