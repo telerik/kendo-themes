@@ -25,6 +25,10 @@ $kendo-signature-padding-y-sm: map-get( $kendo-spacing, thin ) !default;
 $kendo-signature-padding-y-md: $kendo-signature-padding-x-md !default;
 $kendo-signature-padding-y-lg: map-get( $kendo-spacing, 1 ) + map-get( $kendo-spacing, thin ) !default;
 
+/// The opacity of the disabled signature component.
+/// @group signature
+$kendo-signature-disabled-opacity: .3 !default;
+
 /// The bottom-border width of the row line of the signature component.
 /// @group signature
 $kendo-signature-line-width: 1px !default;
