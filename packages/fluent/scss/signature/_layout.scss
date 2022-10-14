@@ -19,6 +19,12 @@
                 border-bottom-width: var( --kendo-signature-maximized-line-width, #{$kendo-signature-maximized-line-width} );
             }
         }
+
+        &:disabled,
+        &[disabled],
+        &.k-disabled {
+            opacity: var( --kendo-signature-disabled-opacity, #{$kendo-signature-disabled-opacity} );
+        }
     }
 
     .k-signature-actions {
