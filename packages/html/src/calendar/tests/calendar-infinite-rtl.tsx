@@ -12,7 +12,7 @@ root.render(
 
             <section>
                 <div>infinite calendar month</div>
-                <div className="k-widget k-calendar k-calendar-infinite" dir="rtl">
+                <div className="k-widget k-calendar k-calendar-infinite k-calendar-md" dir="rtl">
                     <div className="k-calendar-navigation">
                         <span className="k-calendar-navigation-highlight"></span>
                         <div className="k-content k-scrollable">
@@ -225,7 +225,7 @@ root.render(
 
             <section>
                 <div>infinite calendar with long month names</div>
-                <div className="k-widget k-calendar k-calendar-infinite" dir="rtl">
+                <div className="k-widget k-calendar k-calendar-infinite k-calendar-md" dir="rtl">
                     <div className="k-calendar-navigation">
                         <span className="k-calendar-navigation-highlight"></span>
                         <div className="k-content k-scrollable">
@@ -438,7 +438,7 @@ root.render(
 
             <section>
                 <div>infinite calendar year</div>
-                <div className="k-widget k-calendar k-calendar-infinite" dir="rtl">
+                <div className="k-widget k-calendar k-calendar-infinite k-calendar-md" dir="rtl">
                     <div className="k-calendar-navigation">
                         <span className="k-calendar-navigation-highlight"></span>
                         <div className="k-content k-scrollable">
@@ -596,7 +596,7 @@ root.render(
 
             <section>
                 <div>infinite calendar decade</div>
-                <div className="k-widget k-calendar k-calendar-infinite" dir="rtl">
+                <div className="k-widget k-calendar k-calendar-infinite k-calendar-md" dir="rtl">
                     <div className="k-calendar-navigation">
                         <span className="k-calendar-navigation-highlight"></span>
                         <div className="k-content k-scrollable">
@@ -730,7 +730,7 @@ root.render(
 
             <section>
                 <div>infinite calendar century</div>
-                <div className="k-widget k-calendar k-calendar-infinite" dir="rtl">
+                <div className="k-widget k-calendar k-calendar-infinite k-calendar-md" dir="rtl">
                     <div className="k-calendar-navigation">
                         <span className="k-calendar-navigation-highlight"></span>
                         <div className="k-content k-scrollable">
@@ -852,7 +852,7 @@ root.render(
 
             <section>
                 <div>infinite calendar empty cells</div>
-                <div className="k-widget k-calendar k-calendar-infinite" dir="rtl">
+                <div className="k-widget k-calendar k-calendar-infinite k-calendar-md" dir="rtl">
                     <div className="k-calendar-navigation">
                         <span className="k-calendar-navigation-highlight"></span>
                         <div className="k-content k-scrollable">
@@ -945,7 +945,7 @@ root.render(
 
             <section>
                 <div>infinite calendar - week number column</div>
-                <div className="k-widget k-calendar k-calendar-infinite k-week-number" dir="rtl">
+                <div className="k-widget k-calendar k-calendar-infinite k-week-number k-calendar-md" dir="rtl">
                     <div className="k-calendar-navigation">
                         <span className="k-calendar-navigation-highlight"></span>
                         <div className="k-content k-scrollable">
