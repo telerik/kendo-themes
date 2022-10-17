@@ -58,7 +58,7 @@
     "stylelint": "stylelint \"**/*.scss\"",
     "html-validate": "html-validate tests",
     "lint": "npm run eslint && npm run sasslint",
-    "lint-staged": "lint-staged",
+    "lint-staged": "lint-staged --verbose",
     "docs": "gulp docs",
     "docs:check": "npm run docs && lerna exec -- git diff --exit-code --quiet -- docs/",
     "utils-docs": "gulp utils-docs",
