@@ -114,19 +114,19 @@ $infinite-calendar-view-height: ( $calendar-cell-size * 9 ) !default;
 // Calendar sizes
 $kendo-calendar-sm-font-size: $font-size-md !default;
 $kendo-calendar-sm-line-height: $line-height-md !default;
-$kendo-calendar-sm-cell-size: 32px !default;
+$kendo-calendar-sm-cell-size: 34px !default;
 $kendo-calendar-sm-cell-padding-x: .125rem !default;
 $kendo-calendar-sm-cell-padding-y: .125rem !default;
 
 $kendo-calendar-md-font-size: $font-size-md !default;
 $kendo-calendar-md-line-height: $line-height-md !default;
-$kendo-calendar-md-cell-size: 36px !default;
+$kendo-calendar-md-cell-size: 38px !default;
 $kendo-calendar-md-cell-padding-x: k-map-get( $spacing, 1 ) !default;
 $kendo-calendar-md-cell-padding-y: k-map-get( $spacing, 1 ) !default;
 
 $kendo-calendar-lg-font-size: $font-size-lg !default;
 $kendo-calendar-lg-line-height: $line-height-lg !default;
-$kendo-calendar-lg-cell-size: 40px !default;
+$kendo-calendar-lg-cell-size: 42px !default;
 $kendo-calendar-lg-cell-padding-x: k-map-get( $spacing, 1 ) !default;
 $kendo-calendar-lg-cell-padding-y: k-map-get( $spacing, 1 ) !default;
 
