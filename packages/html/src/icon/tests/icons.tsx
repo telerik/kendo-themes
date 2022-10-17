@@ -153,6 +153,7 @@ const icons = [
     "stick",
     "unstick",
     "set-column-position",
+    "clock-arrow-rotate",
     "play",
     "pause",
     "stop",
