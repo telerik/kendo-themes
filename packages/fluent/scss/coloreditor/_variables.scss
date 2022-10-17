@@ -81,3 +81,13 @@ $kendo-coloreditor-footer-padding-y: map-get( $kendo-spacing, 2 ) !default;
 /// Vertical padding of the color editor footer.
 /// @group coloreditor
 $kendo-coloreditor-footer-padding-x: map-get( $kendo-spacing, 2 ) !default;
+
+/// The color of the focused colorgradient.
+/// @group coloreditor
+$kendo-coloreditor-colorgradient-focus-outline-color: rgba(0, 0, 0, 0.3) !default;
+/// The outline of the focused colorgradient.
+/// @group coloreditor
+$kendo-coloreditor-colorgradient-focus-outline: 2px !default;
+/// The outline offset of the focused colorgradient.
+/// @group coloreditor
+$kendo-coloreditor-colorgradient-focus-outline-offset: 2px !default;

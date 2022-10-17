@@ -56,6 +56,12 @@
             width: auto;
             border-width: 0;
         }
+        .k-colorgradient:focus,
+        .k-colorgradient.k-focus {
+            outline: $coloreditor-colorgradient-focus-outline dotted;
+            outline-offset: $coloreditor-colorgradient-focus-outline-offset;
+            border-radius: 0;
+        }
 
         .k-colorpalette {
             align-self: center;

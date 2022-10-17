@@ -24,4 +24,9 @@
         );
     }
 
+    .k-coloreditor .k-colorgradient:focus,
+    .k-coloreditor .k-colorgradient.k-focus {
+        box-shadow: none;
+        outline-color: var( --kendo-coloreditor-colorgradient-focus-outline-color, #{$kendo-coloreditor-colorgradient-focus-outline-color} );
+    }
 }
