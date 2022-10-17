@@ -231,7 +231,7 @@
     // Year view
     .k-year-calendar,
     .k-calendar-yearview {
-        $_year-cell-size: ( 1.75 * $kendo-calendar-cell-size ); // 7 / 4 => 1.75
+        $_year-cell-size: ( 2 * $kendo-calendar-cell-size );
 
         .k-calendar-td {
             width: $_year-cell-size;
@@ -245,7 +245,7 @@
     // Decade view
     .k-decade-calendar,
     .k-calendar-decadeview {
-        $_decade-cell-size: ( 1.75 $kendo-calendar-cell-size ); // 7 / 4 => 1.75
+        $_decade-cell-size: ( 2 * $kendo-calendar-cell-size );
 
         .k-calendar-td {
             width: $_decade-cell-size;
@@ -259,7 +259,7 @@
     // Century view
     .k-century-calendar,
     .k-calendar-centuryview {
-        $_century-cell-size: ( 1.75 * $kendo-calendar-cell-size ); // 7 / 4 => 1.75
+        $_century-cell-size: ( 2 * $kendo-calendar-cell-size );
 
         .k-calendar-td {
             width: $_century-cell-size;
@@ -473,9 +473,9 @@
         $_cell-font-size: map-get( $size-props, cell-font-size );
 
         $_month-cell-size: $_cell-size;
-        $_year-cell-size: ( 1.75 * $_cell-size ); // 7 / 4 => 1.75
-        $_decade-cell-size: ( 1.75 * $_cell-size ); // 7 / 4 => 1.75
-        $_century-cell-size: ( 1.75 * $_cell-size ); // 7 / 4 => 1.75
+        $_year-cell-size: ( 2 * $_cell-size );
+        $_decade-cell-size: ( 2 * $_cell-size );
+        $_century-cell-size: ( 2 * $_cell-size );
 
         .k-calendar-#{$size} {
             --INTERNAL--kendo-calendar-view-width: #{8 * $_cell-size};
