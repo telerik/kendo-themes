@@ -139,9 +139,11 @@
             cursor: e-resize;
         }
     }
+
     .ProseMirror-selectednode { // sass-lint:disable-line class-name-format
         outline-width: $editor-selectednode-outline-width;
         outline-style: solid;
+
     }
     .ProseMirror-hideselection { // sass-lint:disable-line class-name-format
         caret-color: transparent;
@@ -199,7 +201,6 @@
         }
     }
 
-
     // Editor content
     .k-editor-content {
         flex: 1 1 auto;
@@ -235,8 +236,29 @@
                 cursor: text;
                 user-select: none;
             }
+
+            &[contenteditable="false"] {
+                cursor: unset !important; // sass-lint:disable-line no-important
+
+                .k-editor-resize-handles-wrapper,
+                .k-editor-resize-handle,
+                .row-resize-handle,
+                .column-resize-handle {
+                    display: none;
+                }
+
+                img,
+                table {
+                    pointer-events: none;
+                }
+
+                & .ProseMirror-selectednode { // sass-lint:disable-line class-name-format
+                    outline: none;
+                }
+            }
         }
     }
+
     td.k-editor-content {
         padding: $kendo-input-padding-y;
         width: 100%;
