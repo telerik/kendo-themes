@@ -15,4 +15,10 @@
         @include box-shadow( $coloreditor-focus-shadow );
     }
 
+    .k-coloreditor .k-colorgradient:focus,
+    .k-coloreditor .k-colorgradient.k-focus {
+        box-shadow: none;
+        outline-color: $coloreditor-colorgradient-focus-outline-color;
+    }
+
 }

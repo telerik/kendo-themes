@@ -25,6 +25,13 @@
             }
         }
 
+        .k-coloreditor .k-colorgradient:focus,
+        .k-coloreditor .k-colorgradient.k-focus {
+            outline: var( --kendo-coloreditor-colorgradient-focus-outline, #{$kendo-coloreditor-colorgradient-focus-outline} ) dotted;
+            outline-offset: var( --kendo-coloreditor-colorgradient-focus-outline-offset, #{$kendo-coloreditor-colorgradient-focus-outline-offset} );
+            border-radius: 0;
+        }
+
         // Header
         .k-coloreditor-header {
             padding-inline: var( --kendo-coloreditor-header-padding-x, #{$kendo-coloreditor-header-padding-x} );

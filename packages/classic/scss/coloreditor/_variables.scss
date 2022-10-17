@@ -25,3 +25,7 @@ $coloreditor-color-preview-height: 12px !default;
 $coloreditor-views-padding-y: $coloreditor-spacer !default;
 $coloreditor-views-padding-x: $coloreditor-views-padding-y !default;
 $coloreditor-views-gap: $coloreditor-spacer !default;
+
+$coloreditor-colorgradient-focus-outline-color: rgba(0, 0, 0, .3) !default;
+$coloreditor-colorgradient-focus-outline: 2px !default;
+$coloreditor-colorgradient-focus-outline-offset: 4px !default;
