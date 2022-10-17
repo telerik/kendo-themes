@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { ActionSheet, ActionSheetFooter, ActionSheetHeader } from '../../action-sheet';
-import { List, ListGroup, ListItem } from '../../list';
 
 const root = ReactDOM.createRoot(
     document.getElementById('app') as HTMLElement
