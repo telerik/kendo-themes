@@ -275,7 +275,7 @@
         }
 
         .k-grouping-row .k-icon {
-            margin-inline-start: calc( #{k-math-div( $icon-size, 2 )} - #{$table-cell-padding-x} );
+            margin-inline-start: calc( #{k-math-div( $icon-size, 2 )} - #{$kendo-grid-cell-padding-x} );
             margin-inline-end: k-math-div( $icon-size, 2 );
             text-decoration: none;
         }
@@ -295,7 +295,7 @@
             overflow: visible;
 
             > .k-icon {
-                padding: $table-cell-padding-y 0;
+                padding: $kendo-grid-cell-padding-y 0;
                 width: 100%;
                 height: 100%;
                 // That causes an issue with grid material. Commenting it for now
