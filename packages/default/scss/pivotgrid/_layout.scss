@@ -262,6 +262,10 @@
             .k-textbox {
                 flex-basis: 50%;
             }
+
+            .k-chip-list {
+                width: 100%;
+            }
         }
 
         // Rows, Cols and Filters
@@ -294,7 +298,7 @@
         }
 
         .k-settings-description {
-            margin-top: k-map-get( $spacing, 4 );
+            padding-top: k-map-get( $spacing, 4 );
             text-align: center;
         }
 
@@ -363,6 +367,11 @@
     // Vertical Layout
     .k-pivotgrid-configurator-vertical {
         min-width: $pivotgrid-configurator-vertical-width;
+
+        & .k-form .k-form-field {
+            margin-top: 0;
+            padding-top: $pivotgrid-spacer;
+        }
     }
 
     .k-pivotgrid-configurator-vertical.k-pivotgrid-configurator-push .k-pivotgrid-configurator-panel {
@@ -386,13 +395,12 @@
             }
 
             .k-form-field-wrapper {
-                padding-left: $pivotgrid-spacer;
-
                 & > *:first-child {
                     margin-top: 0;
                 }
                 &:first-child {
                     padding-left: 0;
+                    padding-top: 0;
                     flex: 1 1 30%;
                 }
                 &:nth-child(2) {
@@ -403,6 +411,12 @@
                     border-left-width: 1px;
                     border-left-style: solid;
                     flex: 1 1 40%;
+                }
+
+                & .k-chip-list,
+                & .k-form-field {
+                    padding-top: 0;
+                    padding-left: $pivotgrid-spacer;
                 }
             }
 
