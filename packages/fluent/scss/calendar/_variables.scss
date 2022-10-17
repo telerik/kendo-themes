@@ -264,4 +264,54 @@ $kendo-calendar-range-bg: get-theme-color-var( neutral-30 ) !default;
 $kendo-calendar-range-text: inherit !default;
 /// Border color of the range selection in the calendar.
 /// @group calendar
-$kendo-calendar-range-border: get-theme-color-var( neutral-130 )  !default;
+$kendo-calendar-range-border: get-theme-color-var( neutral-130 ) !default;
+
+
+// Calendar sizes
+$kendo-calendar-sm-font-size: $kendo-font-size-sm !default;
+$kendo-calendar-sm-line-height: $kendo-line-height-sm !default;
+$kendo-calendar-sm-cell-size: 24px !default;
+$kendo-calendar-sm-cell-padding-x: map-get( $kendo-spacing, thin) !default;
+$kendo-calendar-sm-cell-padding-y: map-get( $kendo-spacing, thin) !default;
+$kendo-calendar-sm-cell-font-size: $kendo-font-size-sm !default;
+
+$kendo-calendar-md-font-size: $kendo-font-size-md !default;
+$kendo-calendar-md-line-height: $kendo-line-height-md !default;
+$kendo-calendar-md-cell-size: 28px !default;
+$kendo-calendar-md-cell-padding-x: map-get( $kendo-spacing, 1 ) !default;
+$kendo-calendar-md-cell-padding-y: map-get( $kendo-spacing, 1 ) !default;
+$kendo-calendar-md-cell-font-size: $kendo-font-size-sm !default;
+
+$kendo-calendar-lg-font-size: $kendo-font-size-md !default;
+$kendo-calendar-lg-line-height: $kendo-line-height-md !default;
+$kendo-calendar-lg-cell-size: 32px !default;
+$kendo-calendar-lg-cell-padding-x: map-get( $kendo-spacing, 1 ) !default;
+$kendo-calendar-lg-cell-padding-y: map-get( $kendo-spacing, 1 ) !default;
+$kendo-calendar-lg-cell-font-size: $kendo-font-size-md !default;
+
+$kendo-calendar-sizes: (
+    sm: (
+        font-size: $kendo-calendar-sm-font-size,
+        line-height: $kendo-calendar-sm-line-height,
+        cell-size: $kendo-calendar-sm-cell-size,
+        cell-padding-x: $kendo-calendar-sm-cell-padding-y,
+        cell-padding-y: $kendo-calendar-sm-cell-padding-x,
+        cell-font-size: $kendo-calendar-sm-cell-font-size
+    ),
+    md: (
+        font-size: $kendo-calendar-md-font-size,
+        line-height: $kendo-calendar-md-line-height,
+        cell-size: $kendo-calendar-md-cell-size,
+        cell-padding-x: $kendo-calendar-md-cell-padding-y,
+        cell-padding-y: $kendo-calendar-md-cell-padding-x,
+        cell-font-size: $kendo-calendar-md-cell-font-size
+    ),
+    lg: (
+        font-size: $kendo-calendar-lg-font-size,
+        line-height: $kendo-calendar-lg-line-height,
+        cell-size: $kendo-calendar-lg-cell-size,
+        cell-padding-x: $kendo-calendar-lg-cell-padding-y,
+        cell-padding-y: $kendo-calendar-lg-cell-padding-x,
+        cell-font-size: $kendo-calendar-lg-cell-font-size
+    )
+) !default;
