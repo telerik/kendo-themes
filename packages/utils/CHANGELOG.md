@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.9.0](https://github.com/telerik/kendo-themes/compare/v5.8.1...v5.9.0) (2022-10-17)
+
+
+### Bug Fixes
+
+* **utilities:** add alies for col-span ([c8c0fbe](https://github.com/telerik/kendo-themes/commit/c8c0fbecc77d9c598ac97521a20404dfa6118e87))
+
+
+
+
+
 ## [5.8.1](https://github.com/telerik/kendo-themes/compare/v5.8.0...v5.8.1) (2022-09-13)
 
 

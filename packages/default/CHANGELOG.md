@@ -3,6 +3,34 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.9.0](https://github.com/telerik/kendo-themes/compare/v5.8.1...v5.9.0) (2022-10-17)
+
+
+### Bug Fixes
+
+* **calendar:** navigation scrollbar should not be accessible ([13fd191](https://github.com/telerik/kendo-themes/commit/13fd19137d28800deddd63d8376056e6c66058aa))
+* **calendar:** remove double scrollbar placeholder in calendar ([9848262](https://github.com/telerik/kendo-themes/commit/984826224db8f8cbbadbe9b2da1aadc943e49734))
+* **calendar:** remove fixed calendar width and rely on sizes instead ([5fdd61b](https://github.com/telerik/kendo-themes/commit/5fdd61b6100850d426ffda00491533c24cf6e194))
+* **calendar:** year, decade and century view cells should be 2x of month cells ([99bc56d](https://github.com/telerik/kendo-themes/commit/99bc56d82b82b947b9a6e0469248e376dac99318))
+* **coloreditor:** add focus for colorgradient inside coloreditor ([13c95e3](https://github.com/telerik/kendo-themes/commit/13c95e3bdd721f5652c0860a9f270ac8767210cf))
+* **editor:** readonly editor can resize inner table content ([49b209a](https://github.com/telerik/kendo-themes/commit/49b209ade04584c7d511003e3a28b2a31c2711c1))
+* radio and checkbox ripple ([2efd826](https://github.com/telerik/kendo-themes/commit/2efd82690f3958c1167f63d1a339a87caffe6c26))
+* **signature:** large signature should retain size when drawing ([ee61f9c](https://github.com/telerik/kendo-themes/commit/ee61f9c29ccd98f8f44d9180d96641a9ab2d9351))
+* **signature:** remove k-signature-canvas outline on focus-visible ([af7b834](https://github.com/telerik/kendo-themes/commit/af7b834856a46ded7b93cbe1bd9b8410d82bbb60))
+* **toolbar:** wrong or missing toolbar item focus styles ([60fe96b](https://github.com/telerik/kendo-themes/commit/60fe96b72ca54a755413670dd7f584c94a400e55))
+
+
+### Features
+
+* extend action sheet styles to allow for custom content ([073230b](https://github.com/telerik/kendo-themes/commit/073230bc08566bbf6ee3fced16e64e7421e43c05))
+* **filter:** add focus styles ([fbb1e69](https://github.com/telerik/kendo-themes/commit/fbb1e69dc6fced616184ed7abc8b3fe94e904f45))
+* **icon:** add clock-arrow-rotate icon ([bf78deb](https://github.com/telerik/kendo-themes/commit/bf78deb4a6cf321d67059cea6c68dd8e7c40792c))
+* **timedurationpicker:** add component styles ([6f35b78](https://github.com/telerik/kendo-themes/commit/6f35b78eb52fd7b820ece0e7019cabefbd4bcc51))
+
+
+
+
+
 ## [5.8.1](https://github.com/telerik/kendo-themes/compare/v5.8.0...v5.8.1) (2022-09-13)
 
 **Note:** Version bump only for package @progress/kendo-theme-default

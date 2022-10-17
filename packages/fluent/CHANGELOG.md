@@ -3,6 +3,77 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.9.0](https://github.com/telerik/kendo-themes/compare/v5.8.1...v5.9.0) (2022-10-17)
+
+
+### Bug Fixes
+
+* **bottom-navigation:** add border colors in fluent theme ([57c41fd](https://github.com/telerik/kendo-themes/commit/57c41fdada1be5d9fcf43d5a961274a6b62e8f97))
+* **bottom-navigation:** add gap between icon and label in fluent theme ([28cf41a](https://github.com/telerik/kendo-themes/commit/28cf41ab2e731c33273c6a44ff0c171cab789864))
+* **bottom-navigation:** nav items min-height in fluent theme ([4963bfd](https://github.com/telerik/kendo-themes/commit/4963bfd02a7519e119b80491cb72e13d39944905))
+* **calendar:** allow range deselection in fluent ([c26e3bc](https://github.com/telerik/kendo-themes/commit/c26e3bcffbe8955f90efc5614e9b81e06664153c))
+* **calendar:** navigation scrollbar should not be accessible ([13fd191](https://github.com/telerik/kendo-themes/commit/13fd19137d28800deddd63d8376056e6c66058aa))
+* **calendar:** year, decade and century view cells should be 2x of month cells ([99bc56d](https://github.com/telerik/kendo-themes/commit/99bc56d82b82b947b9a6e0469248e376dac99318))
+* **color-preview:** add missing styling for size 'none' ([ab54dd8](https://github.com/telerik/kendo-themes/commit/ab54dd815108f7284263ba5a49c1677832d48a04))
+* **coloreditor:** add focus for colorgradient inside coloreditor ([13c95e3](https://github.com/telerik/kendo-themes/commit/13c95e3bdd721f5652c0860a9f270ac8767210cf))
+* **colorgradient:** allow draghandle overflow ([5823e15](https://github.com/telerik/kendo-themes/commit/5823e15e53041075e1bfe1a0a1b8ecec8044160f))
+* **colorgradient:** correctly position slider-track in rtl direction ([5a2439a](https://github.com/telerik/kendo-themes/commit/5a2439a3e138353468092bc419df4ee19a418d3e))
+* **colorgradient:** remove border around canvas in fluent ([8b68463](https://github.com/telerik/kendo-themes/commit/8b684631ec0a2382bb16183e891df105e2cd9b92))
+* **colorpalette:** adjust disabled state to match fluent design ([e6ef6ea](https://github.com/telerik/kendo-themes/commit/e6ef6eaca29f4001e799921b6a5a1fac095e8ea3))
+* **colorpalette:** improve selected-hover tile state ([6899a9c](https://github.com/telerik/kendo-themes/commit/6899a9c667c0ad3db757ba0f79b25ba0c5702031))
+* **colorpalette:** remove white lines between tiles ([d571e83](https://github.com/telerik/kendo-themes/commit/d571e83fbc6f6867b65893c46f085f3186af2da5))
+* **fluent:** make box-shadows exactly the same as the ones in ms fluent ([4b1d9f1](https://github.com/telerik/kendo-themes/commit/4b1d9f1f261a378e2fced5b0752a9cdce47f4f35))
+* **fluent:** remove redundant config map from params ([871e771](https://github.com/telerik/kendo-themes/commit/871e7714f81455543db18019a78c038d9dc3b3c3))
+* **gantt:** add hover colors for tasks in fluent theme ([716ae39](https://github.com/telerik/kendo-themes/commit/716ae393d4cc0d9f807f9fe38f8da8be60314c8b))
+* **gantt:** fix hover color for delayed tasks in fluent ([5d837ea](https://github.com/telerik/kendo-themes/commit/5d837ea534d7481ca5cb9e3ea902293ffc3e1927))
+* **gauge:** pointer and track have no color in fluent theme ([b7add52](https://github.com/telerik/kendo-themes/commit/b7add52836c52eb49dbdfcaf7258b44236d941e8))
+* **grid:** add k-reorder-cue as k-grouping-dropclue alias ([10da8ce](https://github.com/telerik/kendo-themes/commit/10da8ceb3c0a562610651d312943657733ac7976))
+* **grid:** align sort order icon in fluent theme ([09a8f1b](https://github.com/telerik/kendo-themes/commit/09a8f1b8844d621637b0274c00b1fc29a88c7f8f))
+* **grid:** change action buttons block-start padding ([83628fe](https://github.com/telerik/kendo-themes/commit/83628fed78e76e38f13a4f3b1bf45d47a95508dd))
+* **grid:** match sort icon spacing with fluent design ([560f244](https://github.com/telerik/kendo-themes/commit/560f244955113f1c0bd1a29cedb943a64f1b60da))
+* **grid:** remove specific sort icon classes in fluent theme ([0196f52](https://github.com/telerik/kendo-themes/commit/0196f523e3e9ee7d7ef6f5108b2e1ca90cde941c))
+* **grid:** search field should not change popup width ([5c30699](https://github.com/telerik/kendo-themes/commit/5c306993c84159d1f39f3cc693efd0527712c1de))
+* **input:** remove input button outline on focus ([12ac503](https://github.com/telerik/kendo-themes/commit/12ac503ab4cd8176289dcc5efa81cdcb8902c428))
+* **input:** set focus border color to transparent when fillMode is none ([54d37ca](https://github.com/telerik/kendo-themes/commit/54d37ca231d82bd26ddfcab686d089919fb5bbdf))
+* **menu:** add padding-inline-end to items in vertical menu in fluent ([ddec977](https://github.com/telerik/kendo-themes/commit/ddec9778660a27145f13c2484e5ce4a8caf9486f))
+* **menu:** give first item in menu group initial focus ([080fc83](https://github.com/telerik/kendo-themes/commit/080fc83dea5cb1918f0fd7a344a33e8059bbb54f))
+* **menu:** remove double outline of items in context menu ([7ac8bca](https://github.com/telerik/kendo-themes/commit/7ac8bcabc75ab4fc84f6912eb8bce445ff2090eb))
+* **pager:** increase pager input width in fluent ([d5cd172](https://github.com/telerik/kendo-themes/commit/d5cd172fd5daecfd59a3b18daa7de5a19f73ffb0))
+* **panelbar:** fix typo that prevents setting a background color in panelbar item in fluent ([6677d8c](https://github.com/telerik/kendo-themes/commit/6677d8c4781d9c8c7b3009ba0f7a4719b8d063fa))
+* **progressbar:** label moves down after initial interaction with progressbar in fluent theme ([a77e34a](https://github.com/telerik/kendo-themes/commit/a77e34ae9fd5ec91c0e742c92f797177c5a58573))
+* **progressbar:** scope progressbar status styles in fluent ([5fb334c](https://github.com/telerik/kendo-themes/commit/5fb334c2696c2877cebd386364aa5c7b92721e06))
+* **scheduler:** update selection color in fluent ([be5dab7](https://github.com/telerik/kendo-themes/commit/be5dab75e4cac75a98b8497d8f2fcd0de1820fc8))
+* **signature:** apply opacity to the disabled signature in fluent ([d61b085](https://github.com/telerik/kendo-themes/commit/d61b085923e95b8ffdf2d31d1ede9a9c7351a298))
+* **signature:** large signature should retain size when drawing ([ee61f9c](https://github.com/telerik/kendo-themes/commit/ee61f9c29ccd98f8f44d9180d96641a9ab2d9351))
+* **signature:** update line color to match design ([6d3d600](https://github.com/telerik/kendo-themes/commit/6d3d600e45195f63468608e3de3c70fb5557939e))
+* **signature:** update signature line disabled state to match design ([fb3bf14](https://github.com/telerik/kendo-themes/commit/fb3bf14d9b5c3286be5d2322484ce16c2c2bebff))
+* **skeleton:** add animations in fluent ([00d1b28](https://github.com/telerik/kendo-themes/commit/00d1b282862ce05c11baf0d40207b0713434bf1b))
+* **skeleton:** fix wave animation in fluent ([c115516](https://github.com/telerik/kendo-themes/commit/c115516a1e9ea212700dc00f71378e3052d48f80))
+* **skeleton:** wave animation in fluent ([d84aac6](https://github.com/telerik/kendo-themes/commit/d84aac6b1bb51389a0888f2af309e678d278257f))
+* **slider:** fix active and focus state in fluent ([3b04c92](https://github.com/telerik/kendo-themes/commit/3b04c92700a5023bc03e1ff77a4b5ae0059551b3))
+* **slider:** update focus, active and disabled states as per designs in fluent ([dfefacf](https://github.com/telerik/kendo-themes/commit/dfefacf4562e4d8b153e1bf6e009c98d8db81430))
+* **splitbutton:** move delimiter to k-button-icon element in fluent theme ([8336e56](https://github.com/telerik/kendo-themes/commit/8336e56693cf656410fbca3b42a49912a9479482))
+* **spreadsheet:** theme styles are defined outside of theme mixin in fluent theme ([0534c12](https://github.com/telerik/kendo-themes/commit/0534c128b333f0e84f8eb5082db0e2ccaa857b04))
+* **table:** update selected table colors in fluent ([45f3a22](https://github.com/telerik/kendo-themes/commit/45f3a22f4ed47f29dabe451125bd5104898a80b8))
+* **timeline:** bottom part of the card should be visible ([9e6b966](https://github.com/telerik/kendo-themes/commit/9e6b9661706404a681ba20114512723ec30909e7))
+* **timeline:** prev/nav card should not be visible in fluent ([bd972a8](https://github.com/telerik/kendo-themes/commit/bd972a8975f0af44fd24c11ae8eeb62713121cea))
+* **timeselector:** add list title padding to height var in fluent theme ([3143bee](https://github.com/telerik/kendo-themes/commit/3143bee706c03758523e8310f9a32e1a5c8e12f5))
+* **timeselector:** hide time separator in fluent theme ([7bf6792](https://github.com/telerik/kendo-themes/commit/7bf6792767b3779e0b047362babec050c1aa0cbb))
+* **toolbar:** wrong or missing toolbar item focus styles ([60fe96b](https://github.com/telerik/kendo-themes/commit/60fe96b72ca54a755413670dd7f584c94a400e55))
+* **treelist:** add margin between expand/collapse icon and item's text in fluent theme ([37578db](https://github.com/telerik/kendo-themes/commit/37578dbc5a0542478a34d6797432078d4e37cb16))
+
+
+### Features
+
+* **calendar:** add sizes to calendar in fluent theme ([b743389](https://github.com/telerik/kendo-themes/commit/b743389b004d464371904ec65338def7b9b4a0fd))
+* extend action sheet styles to allow for custom content ([073230b](https://github.com/telerik/kendo-themes/commit/073230bc08566bbf6ee3fced16e64e7421e43c05))
+* **filter:** add focus styles ([fbb1e69](https://github.com/telerik/kendo-themes/commit/fbb1e69dc6fced616184ed7abc8b3fe94e904f45))
+* **timedurationpicker:** add component styles ([6f35b78](https://github.com/telerik/kendo-themes/commit/6f35b78eb52fd7b820ece0e7019cabefbd4bcc51))
+
+
+
+
+
 ## [5.8.1](https://github.com/telerik/kendo-themes/compare/v5.8.0...v5.8.1) (2022-09-13)
 
 

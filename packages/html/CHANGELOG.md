@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.9.0](https://github.com/telerik/kendo-themes/compare/v5.8.1...v5.9.0) (2022-10-17)
+
+
+### Bug Fixes
+
+* radio and checkbox ripple ([2efd826](https://github.com/telerik/kendo-themes/commit/2efd82690f3958c1167f63d1a339a87caffe6c26))
+
+
+### Features
+
+* extract meta for components as a separate package ([ea5c201](https://github.com/telerik/kendo-themes/commit/ea5c2010f94e0e62095a1b3c749f3890512202e1))
+* **icon:** add clock-arrow-rotate icon ([bf78deb](https://github.com/telerik/kendo-themes/commit/bf78deb4a6cf321d67059cea6c68dd8e7c40792c))
+* **timedurationpicker:** add component styles ([6f35b78](https://github.com/telerik/kendo-themes/commit/6f35b78eb52fd7b820ece0e7019cabefbd4bcc51))
+
+
+
+
+
 ## [5.8.1](https://github.com/telerik/kendo-themes/compare/v5.8.0...v5.8.1) (2022-09-13)
 
 **Note:** Version bump only for package @progress/kendo-themes-html

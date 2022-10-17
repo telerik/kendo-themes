@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.9.0](https://github.com/telerik/kendo-themes/compare/v5.8.1...v5.9.0) (2022-10-17)
+
+
+### Features
+
+* **nouvelle:** use theme core in nouvelle theme ([71d0733](https://github.com/telerik/kendo-themes/commit/71d0733c9eef01ce2c42b6f28a191235cdff9c8f))
+
+
+
+
+
 ## [5.8.1](https://github.com/telerik/kendo-themes/compare/v5.8.0...v5.8.1) (2022-09-13)
 
 **Note:** Version bump only for package @progress/kendo-theme-nouvelle

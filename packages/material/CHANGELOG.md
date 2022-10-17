@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.9.0](https://github.com/telerik/kendo-themes/compare/v5.8.1...v5.9.0) (2022-10-17)
+
+
+### Bug Fixes
+
+* **coloreditor:** add focus for colorgradient inside coloreditor ([13c95e3](https://github.com/telerik/kendo-themes/commit/13c95e3bdd721f5652c0860a9f270ac8767210cf))
+* **signature:** large signature should retain size when drawing ([ee61f9c](https://github.com/telerik/kendo-themes/commit/ee61f9c29ccd98f8f44d9180d96641a9ab2d9351))
+* **toolbar:** wrong or missing toolbar item focus styles ([60fe96b](https://github.com/telerik/kendo-themes/commit/60fe96b72ca54a755413670dd7f584c94a400e55))
+
+
+### Features
+
+* extend action sheet styles to allow for custom content ([073230b](https://github.com/telerik/kendo-themes/commit/073230bc08566bbf6ee3fced16e64e7421e43c05))
+* **filter:** add focus styles ([fbb1e69](https://github.com/telerik/kendo-themes/commit/fbb1e69dc6fced616184ed7abc8b3fe94e904f45))
+* **material:** use theme core in material theme ([dd9252a](https://github.com/telerik/kendo-themes/commit/dd9252a67ff28755ee71c4cde91f25b197b0b941))
+* **timedurationpicker:** add component styles ([6f35b78](https://github.com/telerik/kendo-themes/commit/6f35b78eb52fd7b820ece0e7019cabefbd4bcc51))
+
+
+
+
+
 ## [5.8.1](https://github.com/telerik/kendo-themes/compare/v5.8.0...v5.8.1) (2022-09-13)
 
 **Note:** Version bump only for package @progress/kendo-theme-material
