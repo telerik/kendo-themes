@@ -313,6 +313,13 @@
             height: 100%;
             overflow-y: auto;
         }
+
+        .k-data-table {
+            max-height: 100%;
+            overflow: hidden;
+            display: flex;
+            flex-flow: column nowrap;
+        }
     }
 
 }
