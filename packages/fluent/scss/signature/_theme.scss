@@ -8,6 +8,14 @@
         .k-signature-line {
             border-bottom-color: var( --kendo-signature-line-color, #{$kendo-signature-line-color} );
         }
+
+        &:disabled,
+        &[disabled],
+        &.k-disabled {
+            .k-signature-line {
+                border-bottom-color: var( --kendo-signature-line-disabled-color, #{$kendo-signature-line-disabled-color} );
+            }
+        }
     }
 
 }
