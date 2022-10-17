@@ -1,6 +1,6 @@
 @include exports("gantt/layout") {
 
-    $row-height: #{$line-height-em} + #{2 * $table-cell-padding-y} + #{$kendo-grid-cell-horizontal-border-width};
+    $row-height: #{$line-height-em} + #{2 * $kendo-table-cell-padding-y-md} + #{$kendo-grid-cell-horizontal-border-width};
 
     .k-gantt {
         border-width: $gantt-border-width;
