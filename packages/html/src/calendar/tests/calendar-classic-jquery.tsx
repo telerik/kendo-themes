@@ -15,7 +15,7 @@ root.render(
             <span></span>
 
             <section>
-                <div className="k-widget k-calendar">
+                <div className="k-widget k-calendar k-calendar-md">
                     <div className="k-header k-hstack">
                         <Button fillMode="flat" className="k-calendar-nav-prev" icon="arrow-60-left"></Button>
                         <Button fillMode="flat" className="k-calendar-nav-today k-flex">March 2018</Button>
@@ -182,7 +182,7 @@ root.render(
                 </div>
             </section>
             <section>
-                <div className="k-widget k-calendar k-week-number">
+                <div className="k-widget k-calendar k-week-number k-calendar-md">
                     <div className="k-header k-hstack">
                         <Button fillMode="flat" className="k-calendar-nav-prev" icon="arrow-60-left"></Button>
                         <Button fillMode="flat" className="k-calendar-nav-today k-flex">March 2018</Button>
@@ -363,7 +363,7 @@ root.render(
             <span>jquery classic century</span>
 
             <section>
-                <div className="k-widget k-calendar">
+                <div className="k-widget k-calendar k-calendar-md">
                     <div className="k-header k-hstack">
                         <Button fillMode="flat" className="k-calendar-nav-prev" icon="arrow-60-left"></Button>
                         <Button fillMode="flat" className="k-calendar-nav-today k-flex">2018</Button>
@@ -424,7 +424,7 @@ root.render(
             </section>
 
             <section>
-                <div className="k-widget k-calendar">
+                <div className="k-widget k-calendar k-calendar-md">
                     <div className="k-header k-hstack">
                         <Button fillMode="flat" className="k-calendar-nav-prev" icon="arrow-60-left"></Button>
                         <Button fillMode="flat" className="k-calendar-nav-today k-flex">2010 - 2019</Button>
@@ -481,7 +481,7 @@ root.render(
             </section>
 
             <section>
-                <div className="k-widget k-calendar">
+                <div className="k-widget k-calendar k-calendar-md">
                     <div className="k-header k-hstack">
                         <Button fillMode="flat" className="k-calendar-nav-prev" icon="arrow-60-left"></Button>
                         <Button fillMode="flat" className="k-calendar-nav-today k-flex">2000 - 2099</Button>
