@@ -10,7 +10,7 @@ const dartSass = require("sass");
 
 const { sassFlatten } = require('@progress/kendo-theme-tasks/src/build/sass-flatten');
 const { embedFileBase64 } = require('@progress/kendo-theme-tasks/src/embedFile');
-const { getArg, getEnvArg, logger, colors } = require("@progress/kendo-theme-tasks/src/utils");
+const { getArg, getEnvArg } = require("@progress/kendo-theme-tasks/src/utils");
 const { utilsDocs } = require('@progress/kendo-theme-tasks/src/docs');
 const { createComponent } = require('@progress/kendo-theme-tasks/src/create');
 
@@ -87,7 +87,6 @@ gulp.task("assets", function() {
     let template = fs.readFileSync('lib/data-uri.template', 'utf8');
 
     files.forEach( file => {
-        logger.info(`Converting to data URI ${colors.magentaBright(file)}`);
         embedFileBase64({
             file: file,
             output: {
