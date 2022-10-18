@@ -1,0 +1,60 @@
+name: Publish to nuget
+
+defaults:
+  run:
+    shell: bash
+
+on:
+  workflow_dispatch:
+  workflow_run:
+    workflows:
+      - "Release dev channel"
+      - "Release stable channel"
+    branches:
+      - master
+      - develop
+    types:
+      - completed
+
+jobs:
+
+  nuget-publish:
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Checkout branch
+        uses: actions/checkout@v2
+        with:
+          ref: develop
+
+      - name: Setup node
+        uses: actions/setup-node@v2
+        with:
+          cache: 'npm'
+          node-version: 14.x
+
+      - name: Setup nuget
+        uses: nuget/setup-nuget@v1
+        with:
+          nuget-api-key: ${{ secrets.GH_TOKEN }}
+
+      - name: Install
+        run: |
+          npm ci
+          npm run bootstrap
+
+      - name: Build themes for dist
+        run: |
+          npm run sass
+          npm run sass:flat
+          npm run dist:swatches
+
+      - name: Push to nuget
+        run: |
+          nuget sources add -Name "github" -Source "https://nuget.pkg.github.com/telerik/index.json"
+          nuget setapikey $NUGET_API_KEY -Source "https://nuget.pkg.github.com/telerik/index.json"
+          npx lerna run nuget-pack
+          npx lerna run nuget-push
+        env:
+          NUGET_API_KEY: ${{ secrets.GH_TOKEN }}
