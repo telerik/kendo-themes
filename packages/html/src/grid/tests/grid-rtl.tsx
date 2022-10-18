@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { Icon } from '../../icon';
+import { Pager } from '../../pager';
 
 const root = ReactDOM.createRoot(
     document.getElementById('app') as HTMLElement
@@ -60,23 +61,7 @@ root.render(
                             </tbody>
                         </table>
                     </div>
-                    <div className="k-widget k-pager k-grid-pager">
-                        <a className="k-link k-pager-nav k-pager-first k-disabled"><Icon name="arrow-end-left" /></a>
-                        <a className="k-link k-pager-nav k-disabled"><Icon name="arrow-w" /></a>
-                        <div className="k-pager-numbers-wrap">
-                            <select className="k-picker k-dropdown-list k-dropdown">
-                                <option>1</option>
-                            </select>
-                            <ul className="k-pager-numbers">
-                                <li><span className="k-link k-selected">1</span></li>
-                                <li><a className="k-link">2</a></li>
-                                <li><a className="k-link">3</a></li>
-                            </ul>
-                        </div>
-                        <a className="k-link k-pager-nav"><Icon name="arrow-e" /></a>
-                        <a className="k-link k-pager-nav k-pager-last"><Icon name="arrow-end-right" /></a>
-                        <span className="k-pager-info k-label">1 - 6 of 9 items</span>
-                    </div>
+                    <Pager className="k-grid-pager" />
                 </div>
             </section>
 

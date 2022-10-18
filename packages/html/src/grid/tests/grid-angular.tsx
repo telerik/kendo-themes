@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { Checkbox } from '../../checkbox';
 import { Icon } from '../../icon';
+import { Pager } from '../../pager';
 
 const root = ReactDOM.createRoot(
     document.getElementById('app') as HTMLElement
@@ -75,24 +76,7 @@ root.render(
                             </div>
                         </div>
                     </div>
-                    <div className="k-widget k-pager k-grid-pager">
-                        <div>
-                            <a className="k-link k-pager-nav k-pager-first k-disabled"><Icon name="seek-w" /></a>
-                            <a className="k-link k-pager-nav k-disabled"><Icon name="arrow-w" /></a>
-                        </div>
-                        <div>
-                            <ul className="k-pager-numbers">
-                                <li><a className="k-link k-selected">1</a></li>
-                                <li><a className="k-link">2</a></li>
-                                <li><a className="k-link">3</a></li>
-                            </ul>
-                        </div>
-                        <div>
-                            <a className="k-link k-pager-nav"><Icon name="arrow-e" /></a>
-                            <a className="k-link k-pager-nav k-pager-last"><Icon name="seek-e" /></a>
-                        </div>
-                        <div className="k-pager-info k-label">1 - 2 of 5 items</div>
-                    </div>
+                    <Pager className="k-grid-pager" />
                 </div>
             </section>
 
