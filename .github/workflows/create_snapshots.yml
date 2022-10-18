@@ -15,13 +15,13 @@ jobs:
     steps:
 
       - name: Checkout branch
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Print Firefox version
         run: firefox --version
 
       - name: Setup node
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           cache: 'npm'
           node-version: 14.x
@@ -46,7 +46,7 @@ jobs:
         run: tar --exclude tests/_output -cf snapshots.tar tests
 
       - name: Upload snapshots
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: snapshots
           path: snapshots.tar

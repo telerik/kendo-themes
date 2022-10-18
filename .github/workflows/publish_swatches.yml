@@ -23,12 +23,12 @@ jobs:
 
     steps:
       - name: Checkout branch
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           ref: ${{ github.event.inputs.ref }}
 
       - name: Setup node
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           cache: 'npm'
           node-version: 14.x
@@ -42,7 +42,7 @@ jobs:
         run: npm run sass:swatches
 
       - name: Checkout artifact repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           repository: telerik/themes-cdn
           token: ${{ secrets.GH_TOKEN }}

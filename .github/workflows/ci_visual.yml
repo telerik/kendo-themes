@@ -32,13 +32,13 @@ jobs:
 
     steps:
       - name: Checkout branch
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Print Firefox version
         run: firefox --version
 
       - name: Download artifacts
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v3
         with:
           path: .tmp
 
@@ -52,7 +52,7 @@ jobs:
         run: tar -cf screenshots-${{ matrix.theme }}.tar tests/_output/${{ matrix.theme }}
 
       - name: Upload screenshots
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: screenshots-${{ matrix.theme }}
           path: screenshots-${{ matrix.theme }}.tar
@@ -66,10 +66,10 @@ jobs:
 
     steps:
       - name: Checkout branch
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Download artifacts
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v3
         with:
           path: .tmp
 
