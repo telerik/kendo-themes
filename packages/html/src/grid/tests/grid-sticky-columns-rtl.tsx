@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { Button } from '../../button';
-import { DropdownList } from '../../dropdownlist';
 import { Icon } from '../../icon';
+import { Pager } from '../../pager';
 
 const root = ReactDOM.createRoot(
     document.getElementById('app') as HTMLElement
@@ -150,25 +150,7 @@ root.render(
                         <div className="k-height-container"><div></div></div>
                     </div>
                 </div>
-                <div className="k-pager k-widget k-grid-pager k-pager-sm" role="navigation">
-                    <a href="#" className="k-link k-pager-nav k-pager-first k-disabled"><Icon name="arrow-end-left" /></a>
-                    <a href="#" className="k-link k-pager-nav k-disabled"><Icon name="arrow-w" /></a>
-                    <div className="k-pager-numbers-wrap">
-                        <select className="k-picker k-dropdown-list k-dropdown">
-                            <option className="k-link">1</option>
-                        </select>
-                        <ul className="k-pager-numbers k-reset">
-                            <li><a href="#" className="k-link k-selected">1</a></li>
-                        </ul>
-                    </div>
-                    <a href="#" className="k-link k-pager-nav k-disabled"><Icon name="arrow-e" /></a>
-                    <a href="#" className="k-link k-pager-nav k-pager-last k-disabled"><Icon name="arrow-end-right" /></a>
-                    <span className="k-pager-sizes k-label">
-                        <DropdownList value="20" />
-                        items per page
-                    </span>
-                    <div className="k-pager-info k-label">1 - 6 of 6 items</div>
-                </div>
+                <Pager className="k-grid-pager" mobile="small" />
             </div>
         </div>
     </>
