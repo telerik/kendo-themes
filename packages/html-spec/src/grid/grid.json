@@ -1,0 +1,534 @@
+
+{
+    "$schema": "../../schemas/component.schema.json",
+    "title": "Kendo Grid HTML Spec",
+    "component": "grid",
+    "selector": [
+        ".k-grid"
+    ],
+    "options": [
+        {
+            "name": "size",
+            "values": [
+                {
+                    "name": "small",
+                    "selector": [
+                        ".k-grid-sm"
+                    ]
+                },
+                {
+                    "name": "medium",
+                    "selector": [
+                        ".k-grid-md"
+                    ]
+                }
+            ]
+        }
+    ],
+    "children": [
+        {
+            "name": "grid-toolbar",
+            "$ref": "toolbar",
+            "selector": [
+                ".k-grid-toolbar"
+            ],
+            "options": [
+                {
+                    "name": "size",
+                    "value": "{parent.size}"
+                }
+            ]
+        },
+        {
+            "name": "grid-grouping-header",
+            "selector": [
+                ".k-grouping-header",
+                ".k-grid-grouping-header"
+            ],
+            "children": [
+                {
+                    "name": "grid-grouping-indicator",
+                    "$ref": "chip-list",
+                    "selector": [
+                        ".k-chip-list"
+                    ],
+                    "options": [
+                        {
+                            "name": "size",
+                            "value": "{parent.size}"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "grid-header",
+            "selector": [
+                ".k-grid-header"
+            ],
+            "children": [
+                {
+                    "name": "grid-header-wrap",
+                    "selector": [
+                        ".k-grid-header-wrap"
+                    ]
+                },
+                {
+                    "name": "grid-header-table",
+                    "$ref": "data-table-header-table",
+                    "selector": [
+                        ".k-table",
+                        ".k-grid-header-table"
+                    ],
+                    "options": [
+                        {
+                            "name": "size",
+                            "value": "{parent.size}"
+                        }
+                    ],
+                    "children": [
+                        {
+                            "name": "grid-header-row",
+                            "selector": [
+                                ".k-table-row"
+                            ],
+                            "states": [
+                                {
+                                    "name": "filter",
+                                    "selector": [
+                                        ".k-filter-row"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "grid-header-cell",
+                            "selector": [
+                                ".k-header",
+                                ".k-table-th"
+                            ],
+                            "states": [
+                                {
+                                    "name": "focus",
+                                    "selector": [
+                                        ":focus",
+                                        ".k-focus"
+                                    ]
+                                },
+                                {
+                                    "name": "sorted",
+                                    "selector": [
+                                        ".k-sorted"
+                                    ]
+                                },
+                                {
+                                    "name": "filterable",
+                                    "selector": [
+                                        ".k-filterable"
+                                    ]
+                                },
+                                {
+                                    "name": "locked",
+                                    "selector": [
+                                        ".k-locked"
+                                    ]
+                                },
+                                {
+                                    "name": "sticky",
+                                    "selector": [
+                                        ".k-grid-header-sticky"
+                                    ]
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "name": "grid-header-title",
+                                    "selector": [
+                                        ".k-column-title"
+                                    ]
+                                },
+                                {
+                                    "name": "grid-header-sorting",
+                                    "selector": [
+                                        ".k-sort-icon"
+                                    ],
+                                    "children": [
+                                        {
+                                            "name": "grid-header-sorting-icon",
+                                            "$ref": "icon",
+                                            "selector": [
+                                                ".k-icon"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "grid-header-sort-order",
+                                    "selector": [
+                                        ".k-sort-order"
+                                    ]
+                                },
+                                {
+                                    "name": "grid-header-filter",
+                                    "selector": [
+                                        ".k-grid-filter"
+                                    ],
+                                    "states": [
+                                        {
+                                            "name": "hover",
+                                            "selector": [
+                                                ":hover",
+                                                ".k-hover"
+                                            ]
+                                        },
+                                        {
+                                            "name": "focus",
+                                            "selector": [
+                                                ":focus",
+                                                ".k-focus"
+                                            ]
+                                        },
+                                        {
+                                            "name": "active",
+                                            "selector": [
+                                                ":active",
+                                                ".k-active"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "grid-header-menu",
+                                    "selector": [
+                                        ".k-grid-header-menu"
+                                    ],
+                                    "states": [
+                                        {
+                                            "name": "hover",
+                                            "selector": [
+                                                ":hover",
+                                                ".k-hover"
+                                            ]
+                                        },
+                                        {
+                                            "name": "focus",
+                                            "selector": [
+                                                ":focus",
+                                                ".k-focus"
+                                            ]
+                                        },
+                                        {
+                                            "name": "active",
+                                            "selector": [
+                                                ":active",
+                                                ".k-active"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "grid-content",
+            "selector": [
+                ".k-grid-content"
+            ],
+            "children": [
+                {
+                    "name": "grid-table",
+                    "$ref": "data-table-scroller-table",
+                    "selector": [
+                        ".k-table",
+                        ".k-grid-table"
+                    ],
+                    "options": [
+                        {
+                            "name": "size",
+                            "value": "{parent.size}"
+                        }
+                    ],
+                    "children": [
+                        {
+                            "name": "grid-col",
+                            "selector": [
+                                "col"
+                            ],
+                            "states": [
+                                {
+                                    "name": "sorted",
+                                    "selector": [
+                                        ".k-sorted"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "grid-table-row",
+                            "selector": [
+                                ".k-table-row",
+                                ".k-master-row"
+                            ],
+                            "states": [
+                                {
+                                    "name": "hover",
+                                    "selector": [
+                                        ":hover",
+                                        ".k-hover"
+                                    ]
+                                },
+                                {
+                                    "name": "focus",
+                                    "selector": [
+                                        ":focus",
+                                        ".k-focus"
+                                    ]
+                                },
+                                {
+                                    "name": "selected",
+                                    "selector": [
+                                        ".k-selected"
+                                    ]
+                                },
+                                {
+                                    "name": "alt",
+                                    "selector": [
+                                        ".k-alt",
+                                        ".k-table-alt-row"
+                                    ]
+                                },
+                                {
+                                    "name": "sticky",
+                                    "selector": [
+                                        ".k-grid-row-sticky"
+                                    ]
+                                },
+                                {
+                                    "name": "edit",
+                                    "selector": [
+                                        ".k-grid-edit-row"
+                                    ]
+                                },
+                                {
+                                    "name": "add",
+                                    "selector": [
+                                        ".k-grid-add-row"
+                                    ]
+                                },
+                                {
+                                    "name": "grouping",
+                                    "selector": [
+                                        ".k-table-group-row",
+                                        ".k-grouping-row"
+                                    ]
+                                },
+                                {
+                                    "name": "detail",
+                                    "selector": [
+                                        ".k-detail-row"
+                                    ]
+                                },
+                                {
+                                    "name": "expanded",
+                                    "selector": [
+                                        ".k-expanded"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "grid-table-cell",
+                            "selector": [
+                                ".k-table-td"
+                            ],
+                            "states": [
+                                {
+                                    "name": "hover",
+                                    "selector": [
+                                        ":hover",
+                                        ".k-hover"
+                                    ]
+                                },
+                                {
+                                    "name": "focus",
+                                    "selector": [
+                                        ":focus",
+                                        ".k-focus"
+                                    ]
+                                },
+                                {
+                                    "name": "selected",
+                                    "selector": [
+                                        ".k-selected"
+                                    ]
+                                },
+                                {
+                                    "name": "sorted",
+                                    "selector": [
+                                        ".k-sorted"
+                                    ]
+                                },
+                                {
+                                    "name": "locked",
+                                    "selector": [
+                                        ".k-locked"
+                                    ]
+                                },
+                                {
+                                    "name": "sticky",
+                                    "selector": [
+                                        ".k-grid-content-sticky"
+                                    ]
+                                },
+                                {
+                                    "name": "edit",
+                                    "selector": [
+                                        ".k-grid-edit-cell"
+                                    ]
+                                },
+                                {
+                                    "name": "command",
+                                    "selector": [
+                                        ".k-command-cell"
+                                    ]
+                                },
+                                {
+                                    "name": "grouping",
+                                    "selector": [
+                                        ".k-table-group-td",
+                                        ".k-group-cell"
+                                    ]
+                                },
+                                {
+                                    "name": "hierarchy",
+                                    "selector": [
+                                        ".k-hierarchy-cell"
+                                    ]
+                                },
+                                {
+                                    "name": "detail",
+                                    "selector": [
+                                        ".k-detail-cell"
+                                    ]
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "name": "grid-command-button",
+                                    "$ref": "button",
+                                    "selector": [
+                                        ".k-command-cell .k-button"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "grid-textbox",
+                            "$ref": "textbox",
+                            "selector": [
+                                ".k-textbox"
+                            ]
+                        },
+                        {
+                            "name": "grid-numerictextbox",
+                            "$ref": "numerictextbox",
+                            "selector": [
+                                ".k-numerictextbox"
+                            ]
+                        },
+                        {
+                            "name": "grid-checkbox",
+                            "$ref": "checkbox",
+                            "selector": [
+                                ".k-checkbox"
+                            ]
+                        },
+                        {
+                            "name": "grid-datepicker",
+                            "$ref": "datepicker",
+                            "selector": [
+                                ".k-datepicker"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "grid-pager",
+            "$ref": "pager",
+            "selector": [
+                ".k-grid-pager"
+            ],
+            "options": [
+                {
+                    "name": "size",
+                    "value": "{parent.size}"
+                }
+            ]
+        },
+        {
+            "name": "grid-footer",
+            "selector": [
+                ".k-grid-footer"
+            ],
+            "children": [
+                {
+                    "name": "grid-footer-wrap",
+                    "selector": [
+                        ".k-grid-footer-wrap"
+                    ]
+                },
+                {
+                    "name": "grid-footer-table",
+                    "$ref": "data-table-footer-table",
+                    "selector": [
+                        ".k-table",
+                        ".k-grid-footer-table"
+                    ],
+                    "options": [
+                        {
+                            "name": "size",
+                            "value": "{parent.size}"
+                        }
+                    ],
+                    "children": [
+                        {
+                            "name": "grid-footer-table-tfoot",
+                            "selector": [
+                                ".k-table-tfoot"
+                            ],
+                            "children": [
+                                {
+                                    "name": "grid-footer-table-row",
+                                    "selector": [
+                                        ".k-table-row"
+                                    ],
+                                    "children": [
+                                        {
+                                            "name": "grid-footer-table-cell",
+                                            "selector": [
+                                                ".k-table-td"
+                                            ],
+                                            "states": [
+                                                {
+                                                    "name": "sticky",
+                                                    "selector": [
+                                                        ".k-grid-footer-sticky"
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

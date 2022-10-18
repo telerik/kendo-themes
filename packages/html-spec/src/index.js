@@ -60,6 +60,7 @@ module.exports = {
     // ...require('./coloreditor'),
     // ...require('./colorpicker'),
     ...require('./combobox'),
+    ...require('./grid'),
     // ...require('./dateinput'),
     // ...require('./datepicker'),
     // ...require('./timepicker'),
