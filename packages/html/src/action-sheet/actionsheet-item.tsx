@@ -32,7 +32,7 @@ export class ActionSheetItem extends React.Component<ActionSheetItemProps> {
 
 
         return (
-            <li
+            <span
                 className={classNames(
                     className,
                     'k-actionsheet-item',
@@ -44,16 +44,16 @@ export class ActionSheetItem extends React.Component<ActionSheetItemProps> {
                     }
                 )}>
                 {!children && (text !== '' || description !== '' || iconName !== '') && <>
-                    <a href="#" className="k-actionsheet-action">
+                    <span className="k-actionsheet-action">
                         { iconName !== '' && <span className="k-icon-wrap"><Icon className="k-actionsheet-item-icon" name={iconName} /></span> }
                         <span className="k-actionsheet-item-text">
                             { text !== '' && <span className="k-actionsheet-item-title">{text}</span> }
                             { description !== '' && <span className="k-actionsheet-item-description">{description}</span> }
                         </span>
-                    </a>
+                    </span>
                 </>}
                 {children}
-            </li>
+            </span>
         );
     }
 }

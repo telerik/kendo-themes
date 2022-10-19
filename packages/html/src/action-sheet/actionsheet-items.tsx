@@ -16,12 +16,12 @@ export class ActionSheetItems extends React.Component<ActionSheetItemsProps> {
         } = this.props;
 
         return (
-            <ul className={classNames(
+            <div className={classNames(
                 'k-list-ul',
                 className
             )}>
                 {children}
-            </ul>
+            </div>
         );
     }
 }
