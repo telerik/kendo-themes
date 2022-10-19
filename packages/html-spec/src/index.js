@@ -98,7 +98,7 @@ module.exports = {
     // Navigation
     // ...require('./bottom-navigation'),
     // ...require('./breadcrumb'),
-    // ...require('./pager'),
+    ...require('./pager'),
     // ...require('./stepper'),
     // ...require('./tabstrip'),
     // ...require('./treeview'),

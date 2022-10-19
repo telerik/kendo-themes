@@ -1,0 +1,154 @@
+{
+    "$schema": "../../schemas/component.schema.json",
+    "title": "Kendo Pager HTML Spec",
+    "component": "pager",
+    "selector": [
+        ".k-pager"
+    ],
+    "states": [
+        {
+            "name": "focus",
+            "selector": [
+                ":focus",
+                ".k-focus"
+            ]
+        },
+        {
+            "name": "disabled",
+            "selector": [
+                ":disabled",
+                "[disabled]",
+                ".k-disabled"
+            ]
+        }
+    ],
+    "options": [
+        {
+            "name": "size",
+            "values": [
+                {
+                    "name": "small",
+                    "selector": [
+                        ".k-pager-sm"
+                    ]
+                },
+                {
+                    "name": "medium",
+                    "selector": [
+                        ".k-pager-md"
+                    ]
+                },
+                {
+                    "name": "large",
+                    "selector": [
+                        ".k-pager-lg"
+                    ]
+                }
+            ]
+        }
+    ],
+    "children": [
+        {
+            "name": "pager-nav",
+            "$ref": "button",
+            "selector": [
+                ".k-pager-nav"
+            ],
+            "options": [
+                {
+                    "name": "size",
+                    "value": "{parent.size}"
+                },
+                {
+                    "name": "fillMode",
+                    "value": "flat"
+                }
+            ]
+        },
+        {
+            "name": "pager-numbers",
+            "$ref": "button",
+            "selector": [
+                ".k-pager-numbers .k-button"
+            ],
+            "options": [
+                {
+                    "name": "size",
+                    "value": "{parent.size}"
+                },
+                {
+                    "name": "fillMode",
+                    "value": "flat"
+                },
+                {
+                    "name": "themeColor",
+                    "value": "primary"
+                }
+            ]
+        },
+        {
+            "name": "pager-refresh",
+            "$ref": "button",
+            "selector": [
+                ".k-pager-refresh"
+            ],
+            "options": [
+                {
+                    "name": "size",
+                    "value": "{parent.size}"
+                },
+                {
+                    "name": "fillMode",
+                    "value": "flat"
+                }
+            ]
+        },
+        {
+            "name": "pager-select",
+            "$ref": "dropdown",
+            "selector": [
+                "select.k-dropdown"
+            ],
+            "options": [
+                {
+                    "name": "size",
+                    "value": "{parent.size}"
+                }
+            ]
+        },
+        {
+            "name": "pager-input",
+            "$ref": "textbox",
+            "selector": [
+                ".k-pager-input > .k-textbox"
+            ],
+            "options": [
+                {
+                    "name": "size",
+                    "value": "{parent.size}"
+                }
+            ]
+        },
+        {
+            "name": "k-pager-dropdown",
+            "$ref": "dropdown",
+            "selector": [
+                ".k-pager-sizes > .k-dropdown"
+            ],
+            "options": [
+                {
+                    "name": "size",
+                    "value": "{parent.size}"
+                }
+            ]
+        },
+        {
+            "name": "pager-info",
+            "selector": [
+                ".k-pager-info"
+            ]
+        }
+    ]
+}
+
+
