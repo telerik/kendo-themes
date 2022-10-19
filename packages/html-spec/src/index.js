@@ -40,7 +40,7 @@ module.exports = {
     // ...require('./split-button'),
     // ...require('./menu-button'),
     // ...require('./input'),
-    // ...require('./textbox'),
+    ...require('./textbox'),
     // ...require('./textarea'),
     ...require('./checkbox'),
     // ...require('./listbox'),

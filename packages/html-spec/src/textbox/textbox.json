@@ -1,0 +1,136 @@
+
+{
+    "$schema": "../../schemas/component.schema.json",
+    "title": "Kendo Textbox HTML Spec",
+    "component": "textbox",
+    "selector": [
+        ".k-textbox"
+    ],
+    "states": [
+        {
+            "name": "hover",
+            "selector": [
+                ":hover",
+                ".k-hover"
+            ]
+        },
+        {
+            "name": "focus",
+            "selector": [
+                ":focus",
+                ":focus-within",
+                ".k-focus"
+            ]
+        },
+        {
+            "name": "valid",
+            "selector": [
+                ".k-valid",
+                ".ng-valid.ng-touched",
+                ".ng-valid.ng-dirty"
+            ]
+        },
+        {
+            "name": "invalid",
+            "selector": [
+                ".k-invalid",
+                ".ng-invalid.ng-touched",
+                ".ng-invalid.ng-dirty"
+            ]
+        },
+        {
+            "name": "disabled",
+            "selector": [
+                ":disabled",
+                "[disabled]",
+                ".k-disabled"
+            ]
+        }
+    ],
+    "options": [
+        {
+            "name": "size",
+            "values": [
+                {
+                    "name": "small",
+                    "selector": [
+                        ".k-input-sm"
+                    ]
+                },
+                {
+                    "name": "medium",
+                    "selector": [
+                        ".k-input-md"
+                    ]
+                },
+                {
+                    "name": "large",
+                    "selector": [
+                        ".k-input-lg"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "rounded",
+            "values": [
+                {
+                    "name": "small",
+                    "selector": [
+                        ".k-rounded-sm"
+                    ]
+                },
+                {
+                    "name": "medium",
+                    "selector": [
+                        ".k-rounded-md"
+                    ]
+                },
+                {
+                    "name": "large",
+                    "selector": [
+                        ".k-rounded-lg"
+                    ]
+                },
+                {
+                    "name": "full",
+                    "selector": [
+                           ".k-rounded-full"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "fillMode",
+            "values": [
+                {
+                    "name": "solid",
+                    "selector": [
+                        ".k-input-solid"
+                    ]
+                },
+                {
+                    "name": "flat",
+                    "selector": [
+                        ".k-input-flat"
+                    ]
+                },
+                {
+                    "name": "outline",
+                    "selector": [
+                        ".k-input-outline"
+                    ]
+                }
+            ]
+        }
+    ],
+    "children": [
+        {
+            "name": "inner-input",
+            "selector": [
+                ".k-inner-input"
+            ]
+        }
+    ]
+}
+
