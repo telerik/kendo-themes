@@ -1,0 +1,30 @@
+{
+    "$schema": "../../schemas/component.schema.json",
+    "title": "Kendo Dropdown Popup HTML Spec",
+    "component": "dropdown-popup",
+    "$ref": "popup",
+    "selector": [
+        ".k-dropdown-popup"
+    ],
+    "options": [
+        {
+            "name": "size",
+            "value": "{parent.size}"
+        }
+    ],
+    "children": [
+        {
+            "name": "list",
+            "$ref": "list",
+            "selector": [
+                ".k-list"
+            ],
+            "options": [
+                {
+                    "name": "size",
+                    "value": "{parent.size}"
+                }
+            ]
+        }
+    ]
+}

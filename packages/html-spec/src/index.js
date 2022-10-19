@@ -67,7 +67,7 @@ module.exports = {
     // ...require('./timedurationpicker'),
     // ...require('./daterangepicker'),
     // ...require('./dropdowngrid'),
-    // ...require('./dropdownlist'),
+    ...require('./dropdownlist'),
     // ...require('./dropdowntree'),
     // ...require('./maskedtextbox'),
     // ...require('./multiselect'),
