@@ -1,56 +1,54 @@
-[
-    {
-        "component": "popup",
-        "selector": [
-            ".k-popup"
-        ],
-        "options": [
-            {
-                "name": "size",
-                "values": [
-                    {
-                        "name": "small",
-                        "selector": [
-                            ".k-popup-sm"
-                        ]
-                    },
-                    {
-                        "name": "medium",
-                        "selector": [
-                            ".k-popup-md"
-                        ]
-                    },
-                    {
-                        "name": "large",
-                        "selector": [
-                            ".k-popup-lg"
-                        ]
-                    }
-                ]
-            },
-            {
-                "name": "rounded",
-                "values": [
-                    {
-                        "name": "small",
-                        "selector": [
-                            ".k-rounded-sm"
-                        ]
-                    },
-                    {
-                        "name": "medium",
-                        "selector": [
-                            ".k-rounded-md"
-                        ]
-                    },
-                    {
-                        "name": "large",
-                        "selector": [
-                            ".k-rounded-lg"
-                        ]
-                    }
-                ]
-            }
-        ]
-    }
-]
+{
+    "component": "popup",
+    "selector": [
+        ".k-popup"
+    ],
+    "options": [
+        {
+            "name": "size",
+            "values": [
+                {
+                    "name": "small",
+                    "selector": [
+                        ".k-popup-sm"
+                    ]
+                },
+                {
+                    "name": "medium",
+                    "selector": [
+                        ".k-popup-md"
+                    ]
+                },
+                {
+                    "name": "large",
+                    "selector": [
+                        ".k-popup-lg"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "rounded",
+            "values": [
+                {
+                    "name": "small",
+                    "selector": [
+                        ".k-rounded-sm"
+                    ]
+                },
+                {
+                    "name": "medium",
+                    "selector": [
+                        ".k-rounded-md"
+                    ]
+                },
+                {
+                    "name": "large",
+                    "selector": [
+                        ".k-rounded-lg"
+                    ]
+                }
+            ]
+        }
+    ]
+}
