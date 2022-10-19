@@ -36,8 +36,6 @@ jobs:
 
       - name: Setup nuget
         uses: nuget/setup-nuget@v1
-        with:
-          nuget-api-key: ${{ secrets.GH_TOKEN }}
 
       - name: Install
         run: |
@@ -50,11 +48,13 @@ jobs:
           npm run sass:flat
           npm run dist:swatches
 
-      - name: Push to nuget
+      - name: Pack nuget
         run: |
-          nuget sources add -Name "github" -Source "https://nuget.pkg.github.com/telerik/index.json"
-          nuget setapikey $NUGET_API_KEY -Source "https://nuget.pkg.github.com/telerik/index.json"
           npx lerna run nuget-pack
+
+      - name: Push nuget
+        run: |
           npx lerna run nuget-push
         env:
-          NUGET_API_KEY: ${{ secrets.GH_TOKEN }}
+          NUGET_API_KEY: ${{ secrets.GH_TOKEN_PUBLISH }}
+          NUGET_FEED: "https://nuget.pkg.github.com/telerik/index.json"
