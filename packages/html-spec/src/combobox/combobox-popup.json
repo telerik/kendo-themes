@@ -1,0 +1,28 @@
+{
+    "component": "combobox-popup",
+    "$ref": "popup",
+    "selector": [
+        ".k-combobox-popup"
+    ],
+    "options": [
+        {
+            "name": "size",
+            "value": "{parent.size}"
+        }
+    ],
+    "children": [
+        {
+            "name": "list",
+            "$ref": "list",
+            "selector": [
+                ".k-list"
+            ],
+            "options": [
+                {
+                    "name": "size",
+                    "value": "{parent.size}"
+                }
+            ]
+        }
+    ]
+}
