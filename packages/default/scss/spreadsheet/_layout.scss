@@ -432,6 +432,9 @@
         position: relative;
     }
 
+    .k-spreadsheet-disabled-mask {
+        position: absolute;
+    }
 
     // Selection
     .k-spreadsheet .k-selection-wrapper {

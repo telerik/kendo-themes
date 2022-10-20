@@ -52,7 +52,9 @@
     .k-spreadsheet-merged-cell {
         background-color: $spreadsheet-bg;
     }
-
+    .k-spreadsheet-disabled-mask {
+        background-color: $spreadsheet-bg;
+    }
 
     // Selection
     .k-spreadsheet .k-selection-full,
