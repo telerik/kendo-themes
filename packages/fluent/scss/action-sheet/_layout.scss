@@ -5,8 +5,9 @@
     .k-actionsheet-container {
         width: 100%;
         height: 100%;
-        max-width: unquote("max(100%, 100vw)");
-        max-height: unquote("max(100%, 100vh)");
+        // TODO: use max when we drop less themes
+        max-width: clamp(100vw, 100%, 100%);
+        max-height: clamp(100vh, 100%, 100%);
         position: fixed;
         top: 0;
         left: 0;

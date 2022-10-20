@@ -36,6 +36,11 @@ module.exports = {
             api: 'modern'
         },
         {
+            cwd: 'packages/core',
+            file: 'scss/all.scss',
+            outFile: 'dist/all.css'
+        },
+        {
             cwd: 'packages/utils',
             file: 'scss/all.scss',
             outFile: 'dist/all.css'
