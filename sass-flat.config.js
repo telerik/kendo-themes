@@ -29,6 +29,11 @@ module.exports = {
             outFile: 'dist/all.css'
         },
         {
+            cwd: 'packages/core',
+            file: 'dist/all.scss',
+            outFile: 'dist/all.css'
+        },
+        {
             cwd: 'packages/utils',
             file: 'dist/all.scss',
             outFile: 'dist/all.css'
