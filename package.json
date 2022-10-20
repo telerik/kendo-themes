@@ -70,7 +70,8 @@
     "serve-tests": "http-server ./ -c-1",
     "embed-assets": "gulp assets",
     "create-component": "gulp create-component",
-    "update": "npx npm-check-updates --upgrade"
+    "update": "npx npm-check-updates --upgrade",
+    "test-contrast": "node ./scripts/test-contrast.mjs"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx,mjs}": "eslint"

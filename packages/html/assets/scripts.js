@@ -6,8 +6,22 @@ const DEFAULT_SWATCH = "all";
 let params = (new URL(document.location)).searchParams;
 let theme = params.get("theme") || DEFAULT_THEME;
 let swatch = params.get("swatch") || DEFAULT_SWATCH;
+let gradientoff = params.get("gradientoff") === "true";
 let animations = params.get("animations");
 let kendoThemeLink = document.querySelector('link[data-role="kendo-theme"]');
+
+// Inject style to turn off gradient on pickers, buttons, hovered Agenda items and Spreadsheet image insert dialog
+// Needed fo a11y contrast tests
+if (gradientoff) {
+    let css = '.k-picker, .k-button, .k-spreadsheet-insert-image-dialog label, .k-scheduler-agendaview .k-scheduler-content tr.k-hover { background-image: none; }';
+    let head = document.head;
+    let style = document.createElement('style');
+
+    head.appendChild(style);
+    style.setAttribute('type', 'text/css');
+    style.appendChild(document.createTextNode(css));
+}
+
 
 // Alias swatch names
 if (swatch !== 'all' && swatch.indexOf(theme) !== 0) {
