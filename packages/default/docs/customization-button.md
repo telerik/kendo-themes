@@ -257,7 +257,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`rgba( black, .08 )`
+`if( $dark-theme, rgba( white, .08 ), rgba( black, .08 ))`
 
 </td>
 <td>
@@ -665,7 +665,7 @@ The following table lists the available variables for customization.
     <td>List</td>
 <td>
 
-`0 0 0 2px rgba( $kendo-button-border, .08 )`
+`0 0 0 2px if( $dark-theme, rgba( white, .16 ), rgba( black, .08 ))`
 
 </td>
 <td>

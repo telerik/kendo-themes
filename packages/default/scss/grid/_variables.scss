@@ -106,7 +106,7 @@ $grid-sorting-index-spacing-y: ($icon-spacing / 2) !default;
 $grid-sorting-index-spacing-x: -$grid-sorting-index-spacing-y !default;
 
 
-$grid-focused-shadow: $kendo-list-item-focus-shadow !default;
+$grid-focused-shadow: if( $dark-theme, inset 0px 0px 0px 2px rgba($white, 0.24), $kendo-list-item-focus-shadow ) !default;
 
 $grid-edit-cell-padding-x: $grid-cell-padding-x !default;
 $grid-edit-cell-padding-y: 3px !default;

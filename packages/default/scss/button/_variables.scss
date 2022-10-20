@@ -89,7 +89,7 @@ $kendo-button-bg: #f5f5f5 !default;
 $kendo-button-text: #424242 !default;
 /// The base border color of the button.
 /// @group button
-$kendo-button-border: rgba( black, .08 ) !default;
+$kendo-button-border: if( $dark-theme, rgba( white, .08 ), rgba( black, .08 )) !default;
 /// The base background gradient of the button.
 /// @group button
 $kendo-button-gradient: rgba( black, 0 ), rgba( black, .02 ) !default;
@@ -159,8 +159,7 @@ $kendo-button-focus-border: null !default;
 $kendo-button-focus-gradient: null !default;
 /// The base shadow of focused button.
 /// @group button
-$kendo-button-focus-shadow: 0 0 0 2px rgba( $kendo-button-border, .08 ) !default;
-
+$kendo-button-focus-shadow: 0 0 0 2px if( $dark-theme, rgba( white, .16 ), rgba( black, .08 )) !default;
 /// The base background of disabled button.
 /// @group button
 $kendo-button-disabled-bg: null !default;

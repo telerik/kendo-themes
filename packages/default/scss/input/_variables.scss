@@ -85,8 +85,8 @@ $kendo-input-hover-shadow: null !default;
 
 $kendo-input-focus-bg: null !default;
 $kendo-input-focus-text: null !default;
-$kendo-input-focus-border: $kendo-input-hover-border !default;
-$kendo-input-focus-shadow: 0 0 0 2px rgba( $kendo-input-focus-border, .08 ) !default;
+$kendo-input-focus-border: if( $dark-theme, rgba( $kendo-input-hover-border, .32 ), $kendo-input-hover-border ) !default;
+$kendo-input-focus-shadow: 0 0 0 2px if( $dark-theme, rgba( $white, .16 ), rgba( $kendo-input-focus-border, .08 ) ) !default;
 
 $kendo-input-disabled-bg: null !default;
 $kendo-input-disabled-text: null !default;

@@ -68,7 +68,7 @@ $kendo-checkbox-indeterminate-border: $kendo-checkbox-border !default;
 $kendo-checkbox-focus-border: null !default;
 /// Box shadow of focused checkbox.
 /// @group checkbox
-$kendo-checkbox-focus-shadow: 0 0 0 2px rgba(0, 0, 0, .06) !default;
+$kendo-checkbox-focus-shadow: 0 0 0 2px if( $dark-theme, rgba( $kendo-button-text, .12 ), rgba(0, 0, 0, .06) ) !default;
 /// Border color of focused and checked checkbox.
 /// @group checkbox
 $kendo-checkbox-focus-checked-border: null !default;

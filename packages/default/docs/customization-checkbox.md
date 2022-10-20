@@ -298,7 +298,7 @@ The following table lists the available variables for customization.
     <td>List</td>
 <td>
 
-`0 0 0 2px rgba(0, 0, 0, .06)`
+`0 0 0 2px if( $dark-theme, rgba( $kendo-button-text, .12 ), rgba(0, 0, 0, .06) )`
 
 </td>
 <td>
