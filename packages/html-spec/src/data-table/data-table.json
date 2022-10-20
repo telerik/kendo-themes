@@ -1,0 +1,88 @@
+
+{
+    "$schema": "../../schemas/component.schema.json",
+    "title": "Kendo Data Table HTML Spec",
+    "component": "data-table",
+    "selector": [
+        ".k-data-table"
+    ],
+    "options": [
+        {
+            "name": "size",
+            "values": [
+                {
+                    "name": "small",
+                    "selector": [
+                        ".k-table-sm"
+                    ]
+                },
+                {
+                    "name": "medium",
+                    "selector": [
+                        ".k-table-md"
+                    ]
+                },
+                {
+                    "name": "large",
+                    "selector": [
+                        ".k-table-lg"
+                    ]
+                }
+            ]
+        }
+    ],
+    "children": [
+        {
+            "name": "data-table-header",
+            "$ref": "data-table-header",
+            "selector": [
+                ".k-table-header"
+            ],
+            "children": [
+                {
+                    "name": "data-table-header-wrap",
+                    "selector": [
+                        ".k-table-header-wrap"
+                    ]
+                },
+                {
+                    "name": "data-table-header-table",
+                    "$ref": "data-table-header-table",
+                    "selector": [
+                        ".k-table"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "data-table-scroller",
+            "selector": [
+                ".k-table-scroller"
+            ],
+            "children": [
+                {
+                    "name": "data-table-scroller-table",
+                    "$ref": "data-table-scroller-table",
+                    "selector": [
+                        ".k-table"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "data-table-footer",
+            "selector": [
+                ".k-table-footer"
+            ],
+            "children": [
+                {
+                    "name": "data-table-footer-table",
+                    "$ref": "data-table-footer-table",
+                    "selector": [
+                        ".k-table"
+                    ]
+                }
+            ]
+        }
+    ]
+}
