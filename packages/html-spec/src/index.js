@@ -77,6 +77,7 @@ module.exports = {
     // ...require('./switch'),
     ...require('./upload'),
     // ...require('./dropzone'),
+    ...require('./table'),
 
     // Command interfaces
     // ...require('./action-buttons'),
