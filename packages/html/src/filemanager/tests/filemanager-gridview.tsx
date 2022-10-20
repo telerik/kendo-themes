@@ -52,21 +52,21 @@ root.render(
                         <div className="k-filemanager-grid k-grid k-grid-md k-grid-display-block k-editable">
                             <div className="k-grid-header">
                                 <div className="k-grid-header-wrap k-auto-scrollable">
-                                    <table>
+                                    <table className="k-table k-table-md k-grid-header-table">
                                         <colgroup>
                                             <col />
                                             <col />
                                             <col />
                                         </colgroup>
-                                        <thead>
-                                            <tr>
-                                                <th className="k-header k-sorted">
+                                        <thead className="k-table-thead">
+                                            <tr className="k-table-row">
+                                                <th className="k-table-th k-header k-sorted">
                                                     <a className="k-link">Name <Icon name="sort-asc-sm" /></a>
                                                 </th>
-                                                <th className="k-header">
+                                                <th className="k-table-th k-header">
                                                     <a className="k-link">Date Created</a>
                                                 </th>
-                                                <th className="k-header">
+                                                <th className="k-table-th k-header">
                                                     <a className="k-link">File Size</a>
                                                 </th>
                                             </tr>
@@ -75,28 +75,28 @@ root.render(
                                 </div>
                             </div>
                             <div className="k-grid-content k-auto-scrollable">
-                                <table className="k-selectable">
+                                <table className="k-table k-table-md k-grid-table k-selectable">
                                     <colgroup>
                                         <col className="k-sorted" />
                                         <col />
                                         <col />
                                     </colgroup>
-                                    <tbody>
-                                        <tr>
-                                            <td>
+                                    <tbody className="k-table-tbody">
+                                        <tr className="k-table-row">
+                                            <td className="k-table-td">
                                                 <span className="k-file-preview"><Icon className="k-file-icon" name="folder" /></span>
                                                 <span className="k-file-name">Folder</span>
                                             </td>
-                                            <td>13/12/2019 at 12:22:04 PM</td>
-                                            <td>0</td>
+                                            <td className="k-table-td">13/12/2019 at 12:22:04 PM</td>
+                                            <td className="k-table-td">0</td>
                                         </tr>
-                                        <tr className="k-alt">
-                                            <td>
+                                        <tr className="k-table-row k-table-alt-row k-alt">
+                                            <td className="k-table-td">
                                                 <span className="k-file-preview"><Icon className="k-file-icon" name="file" /></span>
                                                 <span className="k-file-name">file.png</span>
                                             </td>
-                                            <td>13/12/2019 at 12:22:04 PM</td>
-                                            <td>73289</td>
+                                            <td className="k-table-td">13/12/2019 at 12:22:04 PM</td>
+                                            <td className="k-table-td">73289</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -156,21 +156,21 @@ root.render(
                             <div className="k-filemanager-grid k-grid k-grid-md k-grid-display-block k-editable">
                                 <div className="k-grid-header">
                                     <div className="k-grid-header-wrap k-auto-scrollable">
-                                        <table>
+                                        <table className="k-table k-table-md k-grid-header-table">
                                             <colgroup>
                                                 <col />
                                                 <col />
                                                 <col />
                                             </colgroup>
-                                            <thead>
-                                                <tr>
-                                                    <th className="k-header k-sorted">
+                                            <thead className="k-table-thead">
+                                                <tr className="k-table-row">
+                                                    <th className="k-table-th k-header k-sorted">
                                                         <a className="k-link">Name <Icon name="sort-asc-sm" /></a>
                                                     </th>
-                                                    <th className="k-header">
+                                                    <th className="k-table-th k-header">
                                                         <a className="k-link">Date Created</a>
                                                     </th>
-                                                    <th className="k-header">
+                                                    <th className="k-table-th k-header">
                                                         <a className="k-link">File Size</a>
                                                     </th>
                                                 </tr>
@@ -179,28 +179,28 @@ root.render(
                                     </div>
                                 </div>
                                 <div className="k-grid-content k-auto-scrollable">
-                                    <table className="k-selectable">
+                                    <table className="k-table k-table-md k-grid-table k-selectable">
                                         <colgroup>
                                             <col className="k-sorted" />
                                             <col />
                                             <col />
                                         </colgroup>
-                                        <tbody>
-                                            <tr>
-                                                <td>
+                                        <tbody className="k-table-tbody">
+                                            <tr className="k-table-row">
+                                                <td className="k-table-td">
                                                     <span className="k-file-preview"><Icon className="k-file-icon" name="folder" /></span>
                                                     <span className="k-file-name">Folder</span>
                                                 </td>
-                                                <td>13/12/2019 at 12:22:04 PM</td>
-                                                <td>0</td>
+                                                <td className="k-table-td">13/12/2019 at 12:22:04 PM</td>
+                                                <td className="k-table-td">0</td>
                                             </tr>
-                                            <tr className="k-alt">
-                                                <td>
+                                            <tr className="k-table-row k-table-alt-row k-alt">
+                                                <td className="k-table-td">
                                                     <span className="k-file-preview"><Icon className="k-file-icon" name="file" /></span>
                                                     <span className="k-file-name">file.png</span>
                                                 </td>
-                                                <td>13/12/2019 at 12:22:04 PM</td>
-                                                <td>73289</td>
+                                                <td className="k-table-td">13/12/2019 at 12:22:04 PM</td>
+                                                <td className="k-table-td">73289</td>
                                             </tr>
                                         </tbody>
                                     </table>
