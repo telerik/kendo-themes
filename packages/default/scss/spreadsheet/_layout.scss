@@ -273,6 +273,7 @@
         user-select: none;
         position: absolute;
         z-index: 2;
+        overflow: hidden;
     }
     .k-spreadsheet-overflow {
         position: absolute;
