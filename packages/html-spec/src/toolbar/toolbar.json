@@ -1,0 +1,149 @@
+{
+    "$schema": "../../schemas/component.schema.json",
+    "title": "Kendo Toolbar HTML Spec",
+    "component": "toolbar",
+    "selector": [
+        ".k-toolbar"
+    ],
+    "states": [
+        {
+            "name": "focus",
+            "selector": [
+                ":focus",
+                ".k-focus"
+            ]
+        }
+    ],
+    "options": [
+        {
+            "name": "size",
+            "values": [
+                {
+                    "name": "small",
+                    "selector": [
+                        ".k-toolbar-sm"
+                    ]
+                },
+                {
+                    "name": "medium",
+                    "selector": [
+                        ".k-toolbar-md"
+                    ]
+                },
+                {
+                    "name": "large",
+                    "selector": [
+                        ".k-toolbar-lg"
+                    ]
+                }
+            ]
+        }
+    ],
+    "children": [
+        {
+            "name": "toolbar-spacer",
+            "selector": [
+                ".k-spacer",
+                ".k-toolbar-spacer"
+            ]
+        },
+        {
+            "name": "toolbar-separator",
+            "selector": [
+                ".k-separator",
+                ".k-toolbar-separator"
+            ]
+        },
+        {
+            "name": "toolbar-item",
+            "selector": [
+                ".k-toolbar-item"
+            ],
+            "states": [
+                {
+                    "name": "focus",
+                    "selector": [
+                        ":focus",
+                        ".k-focus"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "toolbar-overflow-button",
+            "$ref": "button",
+            "selector": [
+                ".k-toolbar-overflow-button"
+            ],
+            "options": [
+                {
+                    "name": "size",
+                    "value": "{parent.size}"
+                },
+                {
+                    "name": "fillMode",
+                    "value": "flat"
+                }
+            ]
+        },
+        {
+            "name": "toolbar-button",
+            "$ref": "button",
+            "selector": [
+                ".k-toolbar-button"
+            ],
+            "options": [
+                {
+                    "name": "size",
+                    "value": "{parent.size}"
+                }
+            ]
+        },
+        {
+            "name": "toolbar-toggle-button",
+            "$ref": "button",
+            "selector": [
+                ".k-toolbar-toggle-button"
+            ],
+            "options": [
+                {
+                    "name": "size",
+                    "value": "{parent.size}"
+                }
+            ]
+        },
+        {
+            "name": "toolbar-button-group",
+            "$ref": "button-group",
+            "selector": [
+                ".k-toolbar-button-group"
+            ]
+        },
+        {
+            "name": "toolbar-menu-button",
+            "$ref": "menu-button",
+            "selector": [
+                ".k-toolbar-menu-button"
+            ],
+            "options": [
+                {
+                    "name": "size",
+                    "value": "{parent.size}"
+                }
+            ]
+        },
+        {
+            "name": "toolbar-split-button",
+            "$ref": "split-button",
+            "selector": [
+                ".k-toolbar-split-button"
+            ],
+            "options": [
+                {
+                    "name": "size",
+                    "value": "{parent.size}"
+                }
+            ]
+        }
+    ]
+}

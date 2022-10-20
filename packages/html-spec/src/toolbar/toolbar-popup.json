@@ -1,0 +1,24 @@
+{
+    "$schema": "../../schemas/component.schema.json",
+    "title": "Kendo Toolbar Popup HTML Spec",
+    "component": "toolbar-popup",
+    "$ref": "popup",
+    "selector": [
+        ".k-toolbar-popup"
+    ],
+    "children": [
+        {
+            "name": "menu",
+            "$ref": "menu",
+            "selector": [
+                ".k-menu-group"
+            ],
+            "options": [
+                {
+                    "name": "size",
+                    "value": "{parent.size}"
+                }
+            ]
+        }
+    ]
+}
