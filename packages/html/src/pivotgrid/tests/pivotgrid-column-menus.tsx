@@ -35,10 +35,10 @@ root.render(
                             <div>
                                 <div className="k-columnmenu-item-wrapper">
                                     <div className="k-columnmenu-item">
-                                        <Icon name="sort-asc-sm" />Sort Ascending
+                                        <Icon name="sort-asc-small" />Sort Ascending
                                     </div>
                                     <div className="k-columnmenu-item">
-                                        <Icon name="sort-desc-sm" />Sort Descending
+                                        <Icon name="sort-desc-small" />Sort Descending
                                     </div>
                                 </div>
                                 <div className="k-columnmenu-item-wrapper">
@@ -72,10 +72,10 @@ root.render(
                             <div>
                                 <div className="k-columnmenu-item-wrapper">
                                     <div className="k-columnmenu-item">
-                                        <Icon name="sort-asc-sm" />Sort Ascending
+                                        <Icon name="sort-asc-small" />Sort Ascending
                                     </div>
                                     <div className="k-columnmenu-item">
-                                        <Icon name="sort-desc-sm" />Sort Descending
+                                        <Icon name="sort-desc-small" />Sort Descending
                                     </div>
                                 </div>
                                 <div className="k-columnmenu-item-wrapper">
@@ -167,10 +167,10 @@ root.render(
                             <div>
                                 <div className="k-columnmenu-item-wrapper">
                                     <div className="k-columnmenu-item">
-                                        <Icon name="sort-asc-sm" />Sort Ascending
+                                        <Icon name="sort-asc-small" />Sort Ascending
                                     </div>
                                     <div className="k-columnmenu-item">
-                                        <Icon name="sort-desc-sm" />Sort Descending
+                                        <Icon name="sort-desc-small" />Sort Descending
                                     </div>
                                 </div>
                                 <div className="k-columnmenu-item-wrapper">
@@ -233,10 +233,10 @@ root.render(
                             <div>
                                 <div className="k-columnmenu-item-wrapper">
                                     <div className="k-columnmenu-item">
-                                        <Icon name="sort-asc-sm" />Sort Ascending
+                                        <Icon name="sort-asc-small" />Sort Ascending
                                     </div>
                                     <div className="k-columnmenu-item">
-                                        <Icon name="sort-desc-sm" />Sort Descending
+                                        <Icon name="sort-desc-small" />Sort Descending
                                     </div>
                                 </div>
                                 <div className="k-columnmenu-item-wrapper">

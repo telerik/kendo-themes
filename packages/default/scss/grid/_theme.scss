@@ -166,10 +166,7 @@
     // Grid header
     .k-grid-header {
 
-        .k-i-sort-asc-sm,
-        .k-i-sort-desc-sm,
-        .k-i-sort-asc-small,
-        .k-i-sort-desc-small,
+        .k-sort-icon,
         .k-sort-order {
             color: $kendo-grid-sorting-indicator-text;
         }

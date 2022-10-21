@@ -169,7 +169,7 @@ root.render(
                                             <a className="k-link" href="#">Order ID</a>
                                         </th>
                                         <th rowSpan={1} className="k-table-th k-header k-sorted">
-                                            <a className="k-link" href="#">Ship Name<Icon name="sort-desc-sm" /><span className="k-sort-order">1</span></a>
+                                            <a className="k-link" href="#">Ship Name<span className="k-sort-icon"><Icon name="sort-desc-small" /></span><span className="k-sort-order">1</span></a>
                                         </th>
                                     </tr>
                                 </thead>
@@ -184,7 +184,7 @@ root.render(
                                 <thead className="k-table-thead">
                                     <tr className="k-table-row">
                                         <th rowSpan={1} className="k-table-th k-header k-sorted">
-                                            <a className="k-link" href="#">Ship Country<Icon name="sort-asc-sm" /><span className="k-sort-order">2</span></a>
+                                            <a className="k-link" href="#">Ship Country<span className="k-sort-icon"><Icon name="sort-asc-small" /></span><span className="k-sort-order">2</span></a>
                                         </th>
                                         <th rowSpan={1} className="k-table-th k-header">
                                             <a className="k-link" href="#">Ship City</a>

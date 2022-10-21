@@ -111,7 +111,7 @@ root.render(
                                                 <span className="k-column-title">
                                                     Name
                                                 </span>
-                                                <Icon name="sort-asc-sm" />
+                                                <span className="k-sort-icon"><Icon name="sort-asc-small" /></span>
                                             </span>
                                             <span className="k-sort-status" style={{ position: "absolute", left: "-10000px" }}>Sorted in ascending order</span>
                                         </span>

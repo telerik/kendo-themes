@@ -399,7 +399,7 @@
             text-overflow: ellipsis;
             outline: 0;
 
-            .k-icon {
+            > .k-icon {
                 margin-inline-start: var( --kendo-grid-sort-icon-spacing, #{$kendo-grid-sort-icon-spacing} );
             }
         }
@@ -437,7 +437,8 @@
             }
         }
 
-        .k-cell-inner > .k-link > .k-icon {
+        .k-cell-inner > .k-link > .k-icon,
+        .k-cell-inner > .k-link > .k-sort-icon {
             vertical-align: text-top;
             margin-inline-start: var( --kendo-grid-sort-icon-spacing, #{$kendo-grid-sort-icon-spacing} );
         }

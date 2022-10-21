@@ -28,13 +28,13 @@ root.render(
                                 <ul className="k-listgroup k-listgroup-flush">
                                     <li className="k-item k-listgroup-item k-sort-asc k-selected">
                                         <span className="k-link">
-                                            <Icon name="sort-asc-sm" />
+                                            <Icon name="sort-asc-small" />
                                             <span className="k-item-title">Sort Ascending</span>
                                         </span>
                                     </li>
                                     <li className="k-item k-listgroup-item k-sort-desc">
                                         <span className="k-link">
-                                            <Icon name="sort-desc-sm" />
+                                            <Icon name="sort-desc-small" />
                                             <span className="k-item-title">Sort Descending</span>
                                         </span>
                                     </li>

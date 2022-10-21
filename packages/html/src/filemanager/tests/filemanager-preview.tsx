@@ -56,7 +56,11 @@ root.render(
                                         <thead className="k-table-thead">
                                             <tr className="k-table-row">
                                                 <th className="k-table-th k-header k-sorted">
-                                                    <a className="k-link">Name <Icon name="sort-asc-sm" /></a>
+                                                    <a className="k-link">Name
+                                                        <span className="k-sort-icon">
+                                                            <Icon name="sort-asc-small" />
+                                                        </span>
+                                                    </a>
                                                 </th>
                                                 <th className="k-table-th k-header">
                                                     <a className="k-link">Date Created</a>
@@ -166,7 +170,11 @@ root.render(
                                         <thead className="k-table-thead">
                                             <tr className="k-table-row">
                                                 <th className="k-table-th k-header k-sorted">
-                                                    <a className="k-link">Name <Icon name="sort-asc-sm" /></a>
+                                                    <a className="k-link">Name
+                                                        <span className="k-sort-icon">
+                                                            <Icon name="sort-asc-small" />
+                                                        </span>
+                                                    </a>
                                                 </th>
                                                 <th className="k-table-th k-header">
                                                     <a className="k-link">Date Created</a>
@@ -267,7 +275,11 @@ root.render(
                                         <thead className="k-table-thead">
                                             <tr className="k-table-row">
                                                 <th className="k-table-th k-header k-sorted">
-                                                    <a className="k-link">Name <Icon name="sort-asc-sm" /></a>
+                                                    <a className="k-link">Name
+                                                        <span className="k-sort-icon">
+                                                            <Icon name="sort-asc-small" />
+                                                        </span>
+                                                    </a>
                                                 </th>
                                                 <th className="k-table-th k-header">
                                                     <a className="k-link">Date Created</a>

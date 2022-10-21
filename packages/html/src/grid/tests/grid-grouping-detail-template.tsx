@@ -80,7 +80,7 @@ root.render(
             <div dir="ltr" className="k-grid k-grid-md">
                 <div className="k-grouping-header">
                     <ChipList>
-                        <Chip icon="sort-asc-sm" actions={ <ChipAction type="remove"/> }>ID</Chip>
+                        <Chip icon="sort-asc-small" actions={ <ChipAction type="remove"/> }>ID</Chip>
                     </ChipList>
                 </div>
                 <div className="k-grid-aria-root" role="grid">
@@ -161,8 +161,8 @@ root.render(
             <div dir="ltr" className="k-grid k-grid-md">
                 <div className="k-grouping-header">
                     <ChipList>
-                        <Chip icon="sort-asc-sm" actions={ <ChipAction type="remove"/> }>ID</Chip>
-                        <Chip icon="sort-asc-sm" actions={ <ChipAction type="remove"/> }>Name</Chip>
+                        <Chip icon="sort-asc-small" actions={ <ChipAction type="remove"/> }>ID</Chip>
+                        <Chip icon="sort-asc-small" actions={ <ChipAction type="remove"/> }>Name</Chip>
                     </ChipList>
                 </div>
                 <div className="k-grid-aria-root" role="grid">
@@ -260,8 +260,8 @@ root.render(
             <div dir="ltr" className="k-grid k-grid-md">
                 <div className="k-grouping-header">
                     <ChipList>
-                        <Chip icon="sort-asc-sm" actions={ <ChipAction type="remove"/> }>ID</Chip>
-                        <Chip icon="sort-asc-sm" actions={ <ChipAction type="remove"/> }>Name</Chip>
+                        <Chip icon="sort-asc-small" actions={ <ChipAction type="remove"/> }>ID</Chip>
+                        <Chip icon="sort-asc-small" actions={ <ChipAction type="remove"/> }>Name</Chip>
                     </ChipList>
                 </div>
                 <div className="k-grid-aria-root" role="grid">

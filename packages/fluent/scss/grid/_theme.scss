@@ -194,10 +194,7 @@
             var( --kendo-grid-header-border, #{$kendo-grid-header-border} )
         );
 
-        .k-i-sort-asc-sm,
-        .k-i-sort-desc-sm,
-        .k-i-sort-asc-small,
-        .k-i-sort-desc-small {
+        .k-sort-icon {
             @include fill( var( --kendo-grid-sort-indicator-text, #{$kendo-grid-sort-indicator-text} ) );
         }
 
