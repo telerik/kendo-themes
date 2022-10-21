@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.10.0](https://github.com/telerik/kendo-themes/compare/v5.9.0...v5.10.0) (2022-10-21)
+
+
+### Bug Fixes
+
+* **action-sheet:** use clamp instead of max for sizing action sheet container ([e2c9af9](https://github.com/telerik/kendo-themes/commit/e2c9af9b3d042ed108736452042c7e65e5abf713))
+
+
+### Features
+
+* **actionsheet:** update rendering to comply with accessibility role ([3962cc9](https://github.com/telerik/kendo-themes/commit/3962cc9a1e6a7ef93a97871daf5bd9e66c4c8db2))
+* add nuspec for themes ([cf12568](https://github.com/telerik/kendo-themes/commit/cf12568710c96da5e57d27b5e8b01dfbbafd8a30))
+
+
+
+
+
 # [5.9.0](https://github.com/telerik/kendo-themes/compare/v5.8.1...v5.9.0) (2022-10-17)
 
 

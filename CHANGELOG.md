@@ -3,6 +3,32 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.10.0](https://github.com/telerik/kendo-themes/compare/v5.9.0...v5.10.0) (2022-10-21)
+
+
+### Bug Fixes
+
+* **action-sheet:** use clamp instead of max for sizing action sheet container ([e2c9af9](https://github.com/telerik/kendo-themes/commit/e2c9af9b3d042ed108736452042c7e65e5abf713))
+* **actionsheet:** remove item outline ([65dc76f](https://github.com/telerik/kendo-themes/commit/65dc76fbec30af8774810b7972f2c80b282cfd34))
+* **calendar:** incorrect default view width with week column ([b5fefc3](https://github.com/telerik/kendo-themes/commit/b5fefc353360043d678f8f49d39134af8764b736))
+* **nouvelle:** use uitls internally ([39f8cbe](https://github.com/telerik/kendo-themes/commit/39f8cbeb67a3501c9e46afcc621399273f221ead))
+* **pdf-viewer:** add utils dependency ([606e880](https://github.com/telerik/kendo-themes/commit/606e8801404bb09ff5283b3d0b45963540bc73fb))
+* **spreadsheet:** hide borders behind disabled/merged cells ([ee85f78](https://github.com/telerik/kendo-themes/commit/ee85f788b1dfce5c1c55e4655ad676314b4203f5))
+* **spreadsheet:** overflow: hidden on .k-spreadsheet-fixed-container ([7fdfd65](https://github.com/telerik/kendo-themes/commit/7fdfd65dd72a4f6f4f0e20e9e62134d71459a370)), closes [telerik/kendo#16396](https://github.com/telerik/kendo/issues/16396)
+
+
+### Features
+
+* **actionsheet:** update rendering to comply with accessibility role ([3962cc9](https://github.com/telerik/kendo-themes/commit/3962cc9a1e6a7ef93a97871daf5bd9e66c4c8db2))
+* add nuspec for themes ([cf12568](https://github.com/telerik/kendo-themes/commit/cf12568710c96da5e57d27b5e8b01dfbbafd8a30))
+* **core:** introduce color system ([f5f977d](https://github.com/telerik/kendo-themes/commit/f5f977daa76d0dca48b2f03de812697f05e0eb54))
+* **nouvelle:** add styles for actions component ([a7b1e2d](https://github.com/telerik/kendo-themes/commit/a7b1e2d9aa6f843fe5b7247933d2b2fa8379df0d))
+* **nouvelle:** add styles for icon component ([f685039](https://github.com/telerik/kendo-themes/commit/f68503923102d03f25e92ee9e055cf19d422340c))
+
+
+
+
+
 # [5.9.0](https://github.com/telerik/kendo-themes/compare/v5.8.1...v5.9.0) (2022-10-17)
 
 
