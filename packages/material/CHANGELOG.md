@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.10.0](https://github.com/telerik/kendo-themes/compare/v5.9.0...v5.10.0) (2022-10-21)
+
+
+### Bug Fixes
+
+* **calendar:** incorrect default view width with week column ([b5fefc3](https://github.com/telerik/kendo-themes/commit/b5fefc353360043d678f8f49d39134af8764b736))
+* **pdf-viewer:** add utils dependency ([606e880](https://github.com/telerik/kendo-themes/commit/606e8801404bb09ff5283b3d0b45963540bc73fb))
+
+
+### Features
+
+* add nuspec for themes ([cf12568](https://github.com/telerik/kendo-themes/commit/cf12568710c96da5e57d27b5e8b01dfbbafd8a30))
+
+
+
+
+
 # [5.9.0](https://github.com/telerik/kendo-themes/compare/v5.8.1...v5.9.0) (2022-10-17)
 
 

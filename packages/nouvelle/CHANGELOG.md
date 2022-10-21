@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.10.0](https://github.com/telerik/kendo-themes/compare/v5.9.0...v5.10.0) (2022-10-21)
+
+
+### Bug Fixes
+
+* **nouvelle:** use uitls internally ([39f8cbe](https://github.com/telerik/kendo-themes/commit/39f8cbeb67a3501c9e46afcc621399273f221ead))
+
+
+### Features
+
+* add nuspec for themes ([cf12568](https://github.com/telerik/kendo-themes/commit/cf12568710c96da5e57d27b5e8b01dfbbafd8a30))
+* **nouvelle:** add styles for actions component ([a7b1e2d](https://github.com/telerik/kendo-themes/commit/a7b1e2d9aa6f843fe5b7247933d2b2fa8379df0d))
+* **nouvelle:** add styles for icon component ([f685039](https://github.com/telerik/kendo-themes/commit/f68503923102d03f25e92ee9e055cf19d422340c))
+
+
+
+
+
 # [5.9.0](https://github.com/telerik/kendo-themes/compare/v5.8.1...v5.9.0) (2022-10-17)
 
 

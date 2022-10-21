@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.10.0](https://github.com/telerik/kendo-themes/compare/v5.9.0...v5.10.0) (2022-10-21)
+
+
+### Features
+
+* **actionsheet:** update rendering to comply with accessibility role ([3962cc9](https://github.com/telerik/kendo-themes/commit/3962cc9a1e6a7ef93a97871daf5bd9e66c4c8db2))
+
+
+
+
+
 # [5.9.0](https://github.com/telerik/kendo-themes/compare/v5.8.1...v5.9.0) (2022-10-17)
 
 
