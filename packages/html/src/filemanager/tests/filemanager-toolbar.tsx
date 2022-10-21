@@ -23,8 +23,8 @@ root.render(
                         <Button>New Folder</Button>
                         <Button>Upload</Button>
                         <ButtonGroup>
-                            <Button icon="sort-asc-sm"></Button>
-                            <Button icon="sort-desc-sm"></Button>
+                            <Button icon="sort-asc-small"></Button>
+                            <Button icon="sort-desc-small"></Button>
                         </ButtonGroup>
                         <SplitButton text="Sort By" />
                         <ButtonGroup>

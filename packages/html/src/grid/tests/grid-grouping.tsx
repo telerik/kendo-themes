@@ -142,8 +142,8 @@ root.render(
                 <div className="k-grouping-header">
                     <div className="k-grouping-dropclue"></div>
                     <ChipList>
-                        <Chip icon="sort-asc-sm" actions={ <ChipAction type="remove"/> }>Price</Chip>
-                        <Chip icon="sort-desc-sm" actions={ <ChipAction type="remove"/> }>Name</Chip>
+                        <Chip icon="sort-asc-small" actions={ <ChipAction type="remove"/> }>Price</Chip>
+                        <Chip icon="sort-desc-small" actions={ <ChipAction type="remove"/> }>Name</Chip>
                     </ChipList>
                 </div>
                 <div className="k-grid-aria-root">
@@ -216,8 +216,8 @@ root.render(
                 <div className="k-grouping-header">
                     <div className="k-grouping-dropclue"></div>
                     <ChipList>
-                        <Chip icon="sort-asc-sm" actions={ <ChipAction type="remove"/> }>Price</Chip>
-                        <Chip icon="sort-desc-sm" actions={ <ChipAction type="remove"/> }>Name</Chip>
+                        <Chip icon="sort-asc-small" actions={ <ChipAction type="remove"/> }>Price</Chip>
+                        <Chip icon="sort-desc-small" actions={ <ChipAction type="remove"/> }>Name</Chip>
                     </ChipList>
                 </div>
                 <div className="k-grid-header">

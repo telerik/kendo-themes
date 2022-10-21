@@ -15,7 +15,7 @@ root.render(
             <div className="k-grid k-grid-md k-rtl" role="grid" style={{ height: "700px", width: "500px" }}>
                 <div className="k-grouping-header">
                     <ChipList>
-                        <Chip icon="sort-asc-sm" actions={ <ChipAction type="remove"/> }>shipName</Chip>
+                        <Chip icon="sort-asc-small" actions={ <ChipAction type="remove"/> }>shipName</Chip>
                     </ChipList>
                 </div>
                 <div className="k-grid-header">
@@ -39,7 +39,7 @@ root.render(
                                         <a className="k-link" href="#">customerID</a>
                                     </th>
                                     <th colSpan={1} rowSpan={1} className="k-table-th k-header k-sorted">
-                                        <a className="k-link" href="#">orderDate<Icon name="sort-desc-sm" /></a>
+                                        <a className="k-link" href="#">orderDate<span className="k-sort-icon"><Icon name="sort-desc-small" /></span></a>
                                     </th>
                                     <th colSpan={1} rowSpan={1} className="k-table-th k-header"><a className="k-link" href="#">shipName</a></th>
                                     <th colSpan={1} rowSpan={1} className="k-table-th k-header"><a className="k-link" href="#">freight</a></th>

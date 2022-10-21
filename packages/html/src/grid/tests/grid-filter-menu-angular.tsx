@@ -77,9 +77,16 @@ root.render(
                                 <thead className="k-table-thead">
                                     <tr className="k-table-row">
                                         <th className="k-table-th k-header" rowSpan={1} colSpan={1}><Checkbox /></th>
-                                        <th className="k-table-th k-header k-filterable" rowSpan={1} colSpan={1}><span className="k-cell-inner"><span className="k-link"><span className="k-column-title">Name</span><Icon name="sort-asc-sm" /></span><span className="k-sort-status" role="status" style={{ position: "absolute", left: "-10000px" }}></span>
-                                            <div><a href="#" className="k-grid-filter"><Icon name="filter" /></a></div>
-                                        </span></th>
+                                        <th className="k-table-th k-header k-filterable" rowSpan={1} colSpan={1}>
+                                            <span className="k-cell-inner">
+                                                <span className="k-link">
+                                                    <span className="k-column-title">Name</span>
+                                                    <span className="k-sort-icon"><Icon name="sort-asc-small" /></span>
+                                                </span>
+                                                <span className="k-sort-status" role="status" style={{ position: "absolute", left: "-10000px" }}></span>
+                                                <div><a href="#" className="k-grid-filter"><Icon name="filter" /></a></div>
+                                            </span>
+                                        </th>
                                         <th className="k-table-th k-header" rowSpan={1} colSpan={1}>Command</th>
                                     </tr>
                                 </thead>
@@ -130,9 +137,16 @@ root.render(
                                 <thead className="k-table-thead">
                                     <tr className="k-table-row">
                                         <th className="k-table-th k-header" rowSpan={1} colSpan={1}><Checkbox /></th>
-                                        <th className="k-table-th k-header k-filterable" rowSpan={1} colSpan={1}><span className="k-cell-inner"><span className="k-link"><span className="k-column-title">Name</span><Icon name="sort-asc-sm" /></span><span className="k-sort-status" role="status" style={{ position: "absolute", left: "-10000px" }}></span>
-                                            <div><a href="#" className="k-grid-filter"><Icon name="filter" /></a></div>
-                                        </span></th>
+                                        <th className="k-table-th k-header k-filterable" rowSpan={1} colSpan={1}>
+                                            <span className="k-cell-inner">
+                                                <span className="k-link">
+                                                    <span className="k-column-title">Name</span>
+                                                    <span className="k-sort-icon"><Icon name="sort-asc-small" /></span>
+                                                </span>
+                                                <span className="k-sort-status" role="status" style={{ position: "absolute", left: "-10000px" }}></span>
+                                                <div><a href="#" className="k-grid-filter"><Icon name="filter" /></a></div>
+                                            </span>
+                                        </th>
                                         <th className="k-table-th k-header" rowSpan={1} colSpan={1}>Command</th>
                                     </tr>
                                 </thead>

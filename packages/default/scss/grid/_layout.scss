@@ -180,14 +180,15 @@
                 }
             }
 
-            .k-cell-inner > .k-link > .k-icon {
-                &.k-i-sort-desc-sm,
-                &.k-i-sort-asc-sm,
-                &.k-i-sort-asc-small,
-                &.k-i-sort-desc-small {
+            .k-cell-inner > .k-link {
+                > .k-sort-icon {
                     vertical-align: text-top;
                     margin-inline-start: $kendo-grid-sorted-icon-spacing;
                 }
+            }
+
+            .k-cell-inner > .k-link > .k-sort-icon .k-icon {
+                display: flex;
             }
 
             .k-sort-order {
@@ -226,8 +227,7 @@
                 flex: 1;
                 overflow: hidden;
 
-                > .k-icon.k-i-sort-desc-sm,
-                > .k-icon.k-i-sort-asc-sm {
+                > .k-sort-icon {
                     margin-inline-start: 0;
                     display: inline-block;
                     flex-shrink: 0;

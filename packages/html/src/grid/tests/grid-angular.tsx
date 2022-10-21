@@ -111,7 +111,11 @@ root.render(
                                             </th>
                                             <th className="k-table-th k-header k-filterable k-sorted">
                                                 <div><a className="k-grid-filter"><Icon name="filter" /></a></div>
-                                                <a className="k-link">Sorted<Icon name="sort-asc-sm" /></a>
+                                                <a className="k-link">Sorted
+                                                    <span className="k-sort-icon">
+                                                        <Icon name="sort-asc-small" />
+                                                    </span>
+                                                </a>
                                             </th>
                                         </tr>
                                     </thead>
