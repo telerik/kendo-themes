@@ -50,7 +50,7 @@ $calendar-caption-font-size: null !default;
 $calendar-caption-line-height: null !default;
 $calendar-caption-font-weight: bold !default;
 
-$calendar-view-width: ($calendar-cell-size * 7) !default;
+$calendar-view-width: ($calendar-cell-size * 8) !default;
 $calendar-view-height: ($calendar-cell-size * 7) !default;
 $calendar-view-gap: k-map-get( $spacing, 4 ) !default;
 
