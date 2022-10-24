@@ -76,7 +76,7 @@ export * from './popover/index';
 // export * from './appbar/index';
 // export * from './bottom-nav/index';
 // export * from './breadcrumb/index';
-// export * from './pager/index';
+export * from './pager/index';
 // export * from './stepper/index';
 // export * from './tabstrip/index';
 export * from './treeview/index';
