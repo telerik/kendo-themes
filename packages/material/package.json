@@ -1,7 +1,7 @@
 {
   "name": "@progress/kendo-theme-material",
   "description": "Material theme for Kendo UI",
-  "version": "5.10.0",
+  "version": "5.10.1-dev.0",
   "author": "Progress",
   "license": "Apache-2.0",
   "keywords": [
@@ -46,8 +46,8 @@
     "postpublish": "echo 'no postpublish for material theme'"
   },
   "dependencies": {
-    "@progress/kendo-theme-core": "^5.10.0",
-    "@progress/kendo-theme-default": "^5.10.0"
+    "@progress/kendo-theme-core": "^5.10.1-dev.0",
+    "@progress/kendo-theme-default": "^5.10.1-dev.0"
   },
   "devDependencies": {
     "sass-build": "^1.0.0"
