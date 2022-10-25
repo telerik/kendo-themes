@@ -130,9 +130,27 @@ root.render(
                                     </colgroup>
                                     <thead className="k-table-thead">
                                         <tr className="k-table-row">
-                                            <th className="k-table-th k-header" rowSpan={1} colSpan={1}>Name</th>
-                                            <th className="k-table-th k-header" rowSpan={1} colSpan={1}>Title</th>
-                                            <th className="k-table-th k-header" rowSpan={1} colSpan={1}>hireDate</th>
+                                            <th className="k-table-th k-header" rowSpan={1} colSpan={1}>
+                                                <span className="k-cell-inner">
+                                                    <span className="k-link">
+                                                        <span className="k-column-title">Name</span>
+                                                    </span>
+                                                </span>
+                                            </th>
+                                            <th className="k-table-th k-header" rowSpan={1} colSpan={1}>
+                                                <span className="k-cell-inner">
+                                                    <span className="k-link">
+                                                        <span className="k-column-title">Title</span>
+                                                    </span>
+                                                </span>
+                                            </th>
+                                            <th className="k-table-th k-header" rowSpan={1} colSpan={1}>
+                                                <span className="k-cell-inner">
+                                                    <span className="k-link">
+                                                        <span className="k-column-title">hireDate</span>
+                                                    </span>
+                                                </span>
+                                            </th>
                                         </tr>
                                     </thead>
                                 </table>

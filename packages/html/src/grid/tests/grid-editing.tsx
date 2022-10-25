@@ -30,9 +30,27 @@ root.render(
                                 </colgroup>
                                 <thead className="k-table-thead">
                                     <tr className="k-table-row">
-                                        <th className="k-table-th k-header"><a className="k-link">Name<span></span></a></th>
-                                        <th className="k-table-th k-header"><a className="k-link">Price<span></span></a></th>
-                                        <th className="k-table-th k-header"><a className="k-link">Available<span></span></a></th>
+                                        <th className="k-table-th k-header">
+                                            <span className="k-cell-inner">
+                                                <span className="k-link">
+                                                    <span className="k-column-title">Name</span>
+                                                </span>
+                                            </span>
+                                        </th>
+                                        <th className="k-table-th k-header">
+                                            <span className="k-cell-inner">
+                                                <span className="k-link">
+                                                    <span className="k-column-title">Price</span>
+                                                </span>
+                                            </span>
+                                        </th>
+                                        <th className="k-table-th k-header">
+                                            <span className="k-cell-inner">
+                                                <span className="k-link">
+                                                    <span className="k-column-title">Available</span>
+                                                </span>
+                                            </span>
+                                        </th>
                                         <th className="k-table-th k-header"></th>
                                     </tr>
                                 </thead>
@@ -96,9 +114,27 @@ root.render(
                             </colgroup>
                             <thead className="k-table-thead">
                                 <tr className="k-table-row">
-                                    <th scope="col" className="k-table-th k-header">Name</th>
-                                    <th scope="col" className="k-table-th k-header">Price</th>
-                                    <th scope="col" className="k-table-th k-header">Available</th>
+                                    <th scope="col" className="k-table-th k-header">
+                                        <span className="k-cell-inner">
+                                            <span className="k-link">
+                                                <span className="k-column-title">Name</span>
+                                            </span>
+                                        </span>
+                                    </th>
+                                    <th scope="col" className="k-table-th k-header">
+                                        <span className="k-cell-inner">
+                                            <span className="k-link">
+                                                <span className="k-column-title">Price</span>
+                                            </span>
+                                        </span>
+                                    </th>
+                                    <th scope="col" className="k-table-th k-header">
+                                        <span className="k-cell-inner">
+                                            <span className="k-link">
+                                                <span className="k-column-title">Available</span>
+                                            </span>
+                                        </span>
+                                    </th>
                                     <th scope="col" className="k-table-th k-header">&nbsp;</th>
                                 </tr>
                             </thead>

@@ -404,10 +404,6 @@
             }
         }
 
-        .k-with-icon,
-        .k-filterable {
-            padding-inline-end: var( --kendo-grid-filterable-icon-spacing, #{$kendo-grid-filterable-icon-spacing} );
-        }
 
         .k-table-th > .k-link:focus {
             text-decoration: none;
@@ -874,8 +870,6 @@
 
     .k-filterable {
         > .k-cell-inner {
-            margin-inline-end: calc( var( --kendo-grid-filterable-icon-spacing, #{$kendo-grid-filterable-icon-spacing} ) * -1 );
-
             .k-link {
                 padding-inline-end: 0;
             }

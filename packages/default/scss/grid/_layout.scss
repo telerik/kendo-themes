@@ -203,8 +203,6 @@
 
         .k-grid-header .k-filterable {
             > .k-cell-inner {
-                margin-inline-end: calc(-1 * #{$kendo-grid-filterable-icon-spacing});
-
                 .k-link {
                     padding-inline-end: 0;
                 }

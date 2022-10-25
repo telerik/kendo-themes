@@ -24,14 +24,40 @@ root.render(
                             <thead className="k-table-thead">
                                 <tr className="k-table-row" role="row" style={{ touchAction: "none" }}>
                                     <th colSpan={1} rowSpan={1} className="k-table-th k-header k-grid-header-sticky" style={{ left: '0px', right: "250px", borderRightWidth: "1px" }}>
-                                        <a className="k-link">Product Name</a>
+                                        <span className="k-cell-inner">
+                                            <span className="k-link">
+                                                <span className="k-column-title">Product Name</span>
+                                            </span>
+                                        </span>
                                     </th>
-                                    <th colSpan={1} rowSpan={1} className="k-table-th k-header"><a className="k-link">Units In Stock</a></th>
-                                    <th colSpan={1} rowSpan={1} className="k-table-th k-header"><a className="k-link">Price</a></th>
+                                    <th colSpan={1} rowSpan={1} className="k-table-th k-header">
+                                        <span className="k-cell-inner">
+                                            <span className="k-link">
+                                                <span className="k-column-title">Units In Stock</span>
+                                            </span>
+                                        </span>
+                                    </th>
+                                    <th colSpan={1} rowSpan={1} className="k-table-th k-header">
+                                        <span className="k-cell-inner">
+                                            <span className="k-link">
+                                                <span className="k-column-title">Price</span>
+                                            </span>
+                                        </span>
+                                    </th>
                                     <th colSpan={1} rowSpan={1} className="k-table-th k-header k-grid-header-sticky" style={{ left: "250px", right: '0px', borderRightWidth: "1px" }}>
-                                        <a className="k-link">Units On Order</a>
+                                        <span className="k-cell-inner">
+                                            <span className="k-link">
+                                                <span className="k-column-title">Units On Order</span>
+                                            </span>
+                                        </span>
                                     </th>
-                                    <th colSpan={1} rowSpan={1} className="k-table-th k-header"><a className="k-link">Reorder Level</a></th>
+                                    <th colSpan={1} rowSpan={1} className="k-table-th k-header">
+                                        <span className="k-cell-inner">
+                                            <span className="k-link">
+                                                <span className="k-column-title">Reorder Level</span>
+                                            </span>
+                                        </span>
+                                    </th>
                                 </tr>
                             </thead>
                         </table>
@@ -151,22 +177,42 @@ root.render(
                                 <tr className="k-table-row">
                                     <th colSpan={1} rowSpan={1} className="k-table-th k-group-cell k-header"></th>
                                     <th className="k-table-th k-header" colSpan={1}>
-                                        Name
+                                        <span className="k-cell-inner">
+                                            <span className="k-link">
+                                                <span className="k-column-title">Name</span>
+                                            </span>
+                                        </span>
                                     </th>
                                     <th className="k-table-th k-header k-grid-header-sticky" style={{ left: '0px', right: '0px' }} colSpan={1}>
-                                        Team
+                                        <span className="k-cell-inner">
+                                            <span className="k-link">
+                                                <span className="k-column-title">Team</span>
+                                            </span>
+                                        </span>
                                     </th>
 
                                     <th className="k-table-th k-header k-grid-header-sticky" colSpan={1}>
-                                        Active Projects
+                                        <span className="k-cell-inner">
+                                            <span className="k-link">
+                                                <span className="k-column-title">Active Projects</span>
+                                            </span>
+                                        </span>
                                     </th>
 
                                     <th className="k-table-th k-header" colSpan={1}>
-                                        Salary
+                                        <span className="k-cell-inner">
+                                            <span className="k-link">
+                                                <span className="k-column-title">Salary</span>
+                                            </span>
+                                        </span>
                                     </th>
 
                                     <th className="k-table-th k-header" colSpan={1}>
-                                        On Vacation
+                                        <span className="k-cell-inner">
+                                            <span className="k-link">
+                                                <span className="k-column-title">On Vacation</span>
+                                            </span>
+                                        </span>
                                     </th>
                                 </tr>
                             </thead>

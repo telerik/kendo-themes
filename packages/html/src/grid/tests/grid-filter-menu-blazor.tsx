@@ -26,13 +26,19 @@ root.render(
                                         <Checkbox />
                                     </th>
                                     <th className="k-table-th k-header" colSpan={1}>
-                                        Name
-                                        <div className="k-grid-filter">
-                                            <Icon name="filter" />
-                                        </div>
+                                        <span className="k-cell-inner">
+                                            <span className="k-link">
+                                                <span className="k-column-title">Name</span>
+                                            </span>
+                                            <a className="k-grid-filter-menu k-grid-header-menu"><Icon name="filter" /></a>
+                                        </span>
                                     </th>
                                     <th className="k-table-th k-header" colSpan={1}>
-                                        Command
+                                        <span className="k-cell-inner">
+                                            <span className="k-link">
+                                                <span className="k-column-title">Command</span>
+                                            </span>
+                                        </span>
                                     </th>
                                 </tr>
                             </thead>
@@ -113,9 +119,8 @@ root.render(
                                                 </span>
                                                 <span className="k-sort-icon"><Icon name="sort-asc-small" /></span>
                                             </span>
-                                            <span className="k-sort-status" style={{ position: "absolute", left: "-10000px" }}>Sorted in ascending order</span>
                                         </span>
-                                        <div className="k-grid-filter">
+                                        <div className="k-grid-filter-menu k-grid-header-menu">
                                             <Icon name="filter" />
                                         </div>
                                     </th>
@@ -202,13 +207,17 @@ root.render(
                                                 </span>
                                             </span>
                                         </span>
-                                        <div className="k-grid-filter">
+                                        <div className="k-grid-filter-menu k-grid-header-menu">
                                             <Icon name="filter" />
                                         </div>
                                         <span className="k-column-resizer" style={{ right: '0px', cursor: "col-resize" }}></span>
                                     </th>
                                     <th className="k-table-th k-header" colSpan={1}>
-                                        Command
+                                        <span className="k-cell-inner">
+                                            <span className="k-link">
+                                                <span className="k-column-title">Command</span>
+                                            </span>
+                                        </span>
                                         <span className="k-column-resizer" style={{ right: '0px', cursor: "col-resize" }}></span>
                                     </th>
                                 </tr>

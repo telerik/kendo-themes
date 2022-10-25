@@ -25,9 +25,20 @@ root.render(
                                     <tr className="k-table-row">
                                         <th className="k-table-th k-header" rowSpan={1} colSpan={1}><Checkbox /></th>
                                         <th className="k-table-th k-header k-filterable" rowSpan={1} colSpan={1}>
-                                            <div><a href="#" className="k-grid-filter"><Icon name="filter" /></a></div>Name
+                                            <span className="k-cell-inner">
+                                                <span className="k-link">
+                                                    <span className="k-column-title">Name</span>
+                                                </span>
+                                                <div><a className="k-grid-filter-menu k-grid-header-menu"><Icon name="filter" /></a></div>
+                                            </span>
                                         </th>
-                                        <th className="k-table-th k-header" rowSpan={1} colSpan={1}>Command</th>
+                                        <th className="k-table-th k-header" rowSpan={1} colSpan={1}>
+                                            <span className="k-cell-inner">
+                                                <span className="k-link">
+                                                    <span className="k-column-title">Command</span>
+                                                </span>
+                                            </span>
+                                        </th>
                                     </tr>
                                 </thead>
                             </table>
@@ -83,11 +94,16 @@ root.render(
                                                     <span className="k-column-title">Name</span>
                                                     <span className="k-sort-icon"><Icon name="sort-asc-small" /></span>
                                                 </span>
-                                                <span className="k-sort-status" role="status" style={{ position: "absolute", left: "-10000px" }}></span>
-                                                <div><a href="#" className="k-grid-filter"><Icon name="filter" /></a></div>
+                                                <div><a href="#" className="k-grid-filter-menu k-grid-header-menu"><Icon name="filter" /></a></div>
                                             </span>
                                         </th>
-                                        <th className="k-table-th k-header" rowSpan={1} colSpan={1}>Command</th>
+                                        <th className="k-table-th k-header" rowSpan={1} colSpan={1}>
+                                            <span className="k-cell-inner">
+                                                <span className="k-link">
+                                                    <span className="k-column-title">Command</span>
+                                                </span>
+                                            </span>
+                                        </th>
                                     </tr>
                                 </thead>
                             </table>
@@ -143,11 +159,16 @@ root.render(
                                                     <span className="k-column-title">Name</span>
                                                     <span className="k-sort-icon"><Icon name="sort-asc-small" /></span>
                                                 </span>
-                                                <span className="k-sort-status" role="status" style={{ position: "absolute", left: "-10000px" }}></span>
-                                                <div><a href="#" className="k-grid-filter"><Icon name="filter" /></a></div>
+                                                <div><a href="#" className="k-grid-filter-menu k-grid-header-menu"><Icon name="filter" /></a></div>
                                             </span>
                                         </th>
-                                        <th className="k-table-th k-header" rowSpan={1} colSpan={1}>Command</th>
+                                        <th className="k-table-th k-header" rowSpan={1} colSpan={1}>
+                                            <span className="k-cell-inner">
+                                                <span className="k-link">
+                                                    <span className="k-column-title">Command</span>
+                                                </span>
+                                            </span>
+                                        </th>
                                     </tr>
                                 </thead>
                             </table>

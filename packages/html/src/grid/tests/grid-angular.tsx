@@ -27,8 +27,20 @@ root.render(
                                     </colgroup>
                                     <thead className="k-table-thead">
                                         <tr className="k-table-row">
-                                            <th className="k-table-th k-header">100px</th>
-                                            <th className="k-table-th k-header">no width</th>
+                                            <th className="k-table-th k-header">
+                                                <span className="k-cell-inner">
+                                                    <span className="k-link">
+                                                        <span className="k-column-title">100px</span>
+                                                    </span>
+                                                </span>
+                                            </th>
+                                            <th className="k-table-th k-header">
+                                                <span className="k-cell-inner">
+                                                    <span className="k-link">
+                                                        <span className="k-column-title">no width</span>
+                                                    </span>
+                                                </span>
+                                            </th>
                                         </tr>
                                     </thead>
                                 </table>
@@ -94,28 +106,57 @@ root.render(
                                         <tr className="k-table-row">
                                             <th className="k-table-th k-header k-hierarchy-cell"></th>
                                             <th className="k-table-th k-header k-filterable">
-                                                <div><a className="k-grid-filter"><Icon name="filter" /></a></div>
-                                                <a className="k-link">Default<span></span></a>
+                                                <span className="k-cell-inner">
+                                                    <span className="k-link">
+                                                        <span className="k-column-title">Default</span>
+                                                    </span>
+                                                    <a className="k-grid-filter-menu k-grid-header-menu">
+                                                        <Icon name="filter" />
+                                                    </a>
+                                                </span>
                                             </th>
                                             <th className="k-table-th k-header k-filterable">
-                                                <div><a className="k-grid-filter"><Icon name="filter" /></a></div>
-                                                <a className="k-link">Hover<span></span></a>
+                                                <span className="k-cell-inner">
+                                                    <span className="k-link">
+                                                        <span className="k-column-title">Hover</span>
+                                                    </span>
+                                                    <a className="k-grid-filter-menu k-grid-header-menu">
+                                                        <Icon name="filter" />
+                                                    </a>
+                                                </span>
                                             </th>
                                             <th className="k-table-th k-header k-filterable k-focus">
-                                                <div><a className="k-grid-filter"><Icon name="filter" /></a></div>
-                                                <a className="k-link">Focus<span></span></a>
+                                                <span className="k-cell-inner">
+                                                    <span className="k-link">
+                                                        <span className="k-column-title">Focus</span>
+                                                    </span>
+                                                    <a className="k-grid-filter-menu k-grid-header-menu">
+                                                        <Icon name="filter" />
+                                                    </a>
+                                                </span>
                                             </th>
                                             <th className="k-table-th k-header k-filterable">
-                                                <div><a className="k-grid-filter k-active"><Icon name="filter" /></a></div>
-                                                <a className="k-link">Active<span></span></a>
+                                                <span className="k-cell-inner">
+                                                    <span className="k-link">
+                                                        <span className="k-column-title">Active</span>
+                                                    </span>
+                                                    <a className="k-grid-filter-menu k-grid-header-menu k-active">
+                                                        <Icon name="filter" />
+                                                    </a>
+                                                </span>
                                             </th>
                                             <th className="k-table-th k-header k-filterable k-sorted">
-                                                <div><a className="k-grid-filter"><Icon name="filter" /></a></div>
-                                                <a className="k-link">Sorted
-                                                    <span className="k-sort-icon">
-                                                        <Icon name="sort-asc-small" />
+                                                <span className="k-cell-inner">
+                                                    <span className="k-link">
+                                                        <span className="k-column-title">Sorted</span>
+                                                        <span className="k-sort-icon">
+                                                            <span className="k-icon k-i-sort-asc-small"></span>
+                                                        </span>
                                                     </span>
-                                                </a>
+                                                    <a className="k-grid-filter-menu k-grid-header-menu">
+                                                        <Icon name="filter" />
+                                                    </a>
+                                                </span>
                                             </th>
                                         </tr>
                                     </thead>
@@ -187,9 +228,27 @@ root.render(
                                         <tr className="k-table-row">
                                             <th className="k-table-th k-hierarchy-cell k-header"></th>
                                             <th className="k-table-th k-header"></th>
-                                            <th className="k-table-th k-header">Product</th>
-                                            <th className="k-table-th k-header">Unit Price</th>
-                                            <th className="k-table-th k-header">Qty Per Unit</th>
+                                            <th className="k-table-th k-header">
+                                                <span className="k-cell-inner">
+                                                    <span className="k-link">
+                                                        <span className="k-column-title">Product</span>
+                                                    </span>
+                                                </span>
+                                            </th>
+                                            <th className="k-table-th k-header">
+                                                <span className="k-cell-inner">
+                                                    <span className="k-link">
+                                                        <span className="k-column-title">Unit Price</span>
+                                                    </span>
+                                                </span>
+                                            </th>
+                                            <th className="k-table-th k-header">
+                                                <span className="k-cell-inner">
+                                                    <span className="k-link">
+                                                        <span className="k-column-title">Qty Per Unit</span>
+                                                    </span>
+                                                </span>
+                                            </th>
                                         </tr>
                                     </thead>
                                 </table>

@@ -36,17 +36,33 @@ root.render(
                                 <thead className="k-table-thead">
                                     <tr className="k-table-row">
                                         <th className="k-table-th k-header" rowSpan={1} colSpan={3}>
-                                            Availability
+                                            <span className="k-cell-inner">
+                                                <span className="k-link">
+                                                    <span className="k-column-title">Availability</span>
+                                                </span>
+                                            </span>
                                         </th>
                                     </tr><tr className="k-table-row">
                                         <th className="k-table-th k-header" rowSpan={1} colSpan={1}>
-                                            Units In Stock
+                                            <span className="k-cell-inner">
+                                                <span className="k-link">
+                                                    <span className="k-column-title">Units In Stock</span>
+                                                </span>
+                                            </span>
                                         </th>
                                         <th className="k-table-th k-header" rowSpan={1} colSpan={1}>
-                                            Unit Price
+                                            <span className="k-cell-inner">
+                                                <span className="k-link">
+                                                    <span className="k-column-title">Unit Price</span>
+                                                </span>
+                                            </span>
                                         </th>
                                         <th className="k-table-th k-header" rowSpan={1} colSpan={1}>
-                                            Discontinued
+                                            <span className="k-cell-inner">
+                                                <span className="k-link">
+                                                    <span className="k-column-title">Discontinued</span>
+                                                </span>
+                                            </span>
                                         </th>
                                     </tr>
                                 </thead>
@@ -152,7 +168,13 @@ root.render(
                                                 <a className="k-grid-header-menu k-grid-column-menu" href="#"><Icon name="more-vertical" /></a>
                                             </span>
                                         </th>
-                                        <th scope="col" colSpan={5} className="k-table-th k-header">Contact Info</th>
+                                        <th scope="col" colSpan={5} className="k-table-th k-header">
+                                            <span className="k-cell-inner">
+                                                <span className="k-link">
+                                                    <span className="k-column-title">Contact Info</span>
+                                                </span>
+                                            </span>
+                                        </th>
                                     </tr>
                                     <tr className="k-table-row">
                                         <th scope="col" rowSpan={2} className="k-table-th k-header k-filterable k-first">

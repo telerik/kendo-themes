@@ -32,8 +32,22 @@ root.render(
                             </colgroup>
                             <thead className="k-table-thead">
                                 <tr className="k-table-row">
-                                    <th className="k-table-th k-header k-with-icon"><a className="k-grid-header-menu k-grid-column-menu" href="#"><Icon name="more-vertical" /></a><a className="k-link" href="/aspnet-mvc/Grid/FrozenColumns_Read?Grid-sort=OrderID-asc">Order ID</a></th>
-                                    <th className="k-table-th k-header k-with-icon"><a className="k-grid-header-menu k-grid-column-menu" href="#"><Icon name="more-vertical" /></a><a className="k-link" href="/aspnet-mvc/Grid/FrozenColumns_Read?Grid-sort=ShipName-asc">Ship Name</a></th>
+                                    <th className="k-table-th k-header k-filterable">
+                                        <span className="k-cell-inner">
+                                            <span className="k-link">
+                                                <span className="k-column-title">Order ID</span>
+                                            </span>
+                                            <a className="k-grid-header-menu k-grid-column-menu" href="#"><Icon name="more-vertical" /></a>
+                                        </span>
+                                    </th>
+                                    <th className="k-table-th k-header k-filterable">
+                                        <span className="k-cell-inner">
+                                            <span className="k-link">
+                                                <span className="k-column-title">Ship Name</span>
+                                            </span>
+                                            <a className="k-grid-header-menu k-grid-column-menu" href="#"><Icon name="more-vertical" /></a>
+                                        </span>
+                                    </th>
                                 </tr>
                             </thead>
                         </table>
@@ -47,9 +61,30 @@ root.render(
                             </colgroup>
                             <thead className="k-table-thead">
                                 <tr className="k-table-row">
-                                    <th className="k-table-th k-header k-with-icon"><a className="k-grid-header-menu k-grid-column-menu" href="#"><Icon name="more-vertical" /></a><a className="k-link" href="/aspnet-mvc/Grid/FrozenColumns_Read?Grid-sort=ShipCountry-asc">Ship Country</a></th>
-                                    <th className="k-table-th k-header k-with-icon"><a className="k-grid-header-menu k-grid-column-menu" href="#"><Icon name="more-vertical" /></a><a className="k-link" href="/aspnet-mvc/Grid/FrozenColumns_Read?Grid-sort=ShipCity-asc">Ship City</a></th>
-                                    <th className="k-table-th k-header k-with-icon"><a className="k-grid-header-menu k-grid-column-menu" href="#"><Icon name="more-vertical" /></a><a className="k-link" href="/aspnet-mvc/Grid/FrozenColumns_Read?Grid-sort=ShipAddress-asc">Ship Address</a></th>
+                                    <th className="k-table-th k-header k-filterable">
+                                        <span className="k-cell-inner">
+                                            <span className="k-link">
+                                                <span className="k-column-title">Ship Country</span>
+                                            </span>
+                                            <a className="k-grid-header-menu k-grid-column-menu" href="#"><Icon name="more-vertical" /></a>
+                                        </span>
+                                    </th>
+                                    <th className="k-table-th k-header k-filterable">
+                                        <span className="k-cell-inner">
+                                            <span className="k-link">
+                                                <span className="k-column-title">Ship City</span>
+                                            </span>
+                                            <a className="k-grid-header-menu k-grid-column-menu" href="#"><Icon name="more-vertical" /></a>
+                                        </span>
+                                    </th>
+                                    <th className="k-table-th k-header k-filterable">
+                                        <span className="k-cell-inner">
+                                            <span className="k-link">
+                                                <span className="k-column-title">Ship Address</span>
+                                            </span>
+                                            <a className="k-grid-header-menu k-grid-column-menu" href="#"><Icon name="more-vertical" /></a>
+                                        </span>
+                                    </th>
                                 </tr>
                             </thead>
                         </table>
@@ -166,10 +201,20 @@ root.render(
                                 <thead className="k-table-thead">
                                     <tr className="k-table-row">
                                         <th rowSpan={1} className="k-table-th k-header">
-                                            <a className="k-link" href="#">Order ID</a>
+                                            <span className="k-cell-inner">
+                                                <span className="k-link">
+                                                    <span className="k-column-title">Order ID</span>
+                                                </span>
+                                            </span>
                                         </th>
                                         <th rowSpan={1} className="k-table-th k-header k-sorted">
-                                            <a className="k-link" href="#">Ship Name<span className="k-sort-icon"><Icon name="sort-desc-small" /></span><span className="k-sort-order">1</span></a>
+                                            <span className="k-cell-inner">
+                                                <span className="k-link">
+                                                    <span className="k-column-title">Ship Name</span>
+                                                    <span className="k-sort-icon"><Icon name="sort-desc-small" /></span>
+                                                    <span className="k-sort-order">1</span>
+                                                </span>
+                                            </span>
                                         </th>
                                     </tr>
                                 </thead>
@@ -184,10 +229,20 @@ root.render(
                                 <thead className="k-table-thead">
                                     <tr className="k-table-row">
                                         <th rowSpan={1} className="k-table-th k-header k-sorted">
-                                            <a className="k-link" href="#">Ship Country<span className="k-sort-icon"><Icon name="sort-asc-small" /></span><span className="k-sort-order">2</span></a>
+                                            <span className="k-cell-inner">
+                                                <span className="k-link">
+                                                    <span className="k-column-title">Ship Country</span>
+                                                    <span className="k-sort-icon"><Icon name="sort-asc-small" /></span>
+                                                    <span className="k-sort-order">2</span>
+                                                </span>
+                                            </span>
                                         </th>
                                         <th rowSpan={1} className="k-table-th k-header">
-                                            <a className="k-link" href="#">Ship City</a>
+                                            <span className="k-cell-inner">
+                                                <span className="k-link">
+                                                    <span className="k-column-title">Ship City</span>
+                                                </span>
+                                            </span>
                                         </th>
                                     </tr>
                                 </thead>
@@ -264,8 +319,20 @@ root.render(
                                     <thead className="k-table-thead">
                                         <tr className="k-table-row" style={{ height: "38px" }}>
                                             <th className="k-table-th k-group-cell k-header"></th>
-                                            <th className="k-table-th k-header" rowSpan={2} colSpan={1}>Product ID</th>
-                                            <th className="k-table-th k-header" rowSpan={2} colSpan={1}>Product Name</th>
+                                            <th className="k-table-th k-header" rowSpan={2} colSpan={1}>
+                                                <span className="k-cell-inner">
+                                                    <span className="k-link">
+                                                        <span className="k-column-title">Product ID</span>
+                                                    </span>
+                                                </span>
+                                            </th>
+                                            <th className="k-table-th k-header" rowSpan={2} colSpan={1}>
+                                                <span className="k-cell-inner">
+                                                    <span className="k-link">
+                                                        <span className="k-column-title">Product Name</span>
+                                                    </span>
+                                                </span>
+                                            </th>
                                         </tr>
                                         <tr className="k-table-row" style={{ height: "38px" }}>
                                             <th className="k-table-th k-group-cell k-header"></th>
@@ -284,20 +351,42 @@ root.render(
                                     <thead className="k-table-thead">
                                         <tr className="k-table-row" style={{ height: "38px" }}>
                                             <th className="k-table-th k-header" rowSpan={1} colSpan={3}>
-                                            Availability
+                                                <span className="k-cell-inner">
+                                                    <span className="k-link">
+                                                        <span className="k-column-title">Availability</span>
+                                                    </span>
+                                                </span>
                                             </th>
                                             <th className="k-table-th k-header" rowSpan={2} colSpan={1}>
-                                            Discontinued
+                                                <span className="k-cell-inner">
+                                                    <span className="k-link">
+                                                        <span className="k-column-title">Discontinued</span>
+                                                    </span>
+                                                </span>
                                             </th>
                                         </tr>
                                         <tr className="k-table-row" style={{ height: "38px" }}>
                                             <th className="k-table-th k-header" rowSpan={1} colSpan={1}>
-                                            Unit Price
+                                                <span className="k-cell-inner">
+                                                    <span className="k-link">
+                                                        <span className="k-column-title">Unit Price</span>
+                                                    </span>
+                                                </span>
                                             </th>
                                             <th className="k-table-th k-header" rowSpan={1} colSpan={1}>
-                                            Units On Order
+                                                <span className="k-cell-inner">
+                                                    <span className="k-link">
+                                                        <span className="k-column-title">Units On Order</span>
+                                                    </span>
+                                                </span>
                                             </th>
-                                            <th className="k-table-th k-header" rowSpan={1} colSpan={1}>Units In Stock</th>
+                                            <th className="k-table-th k-header" rowSpan={1} colSpan={1}>
+                                                <span className="k-cell-inner">
+                                                    <span className="k-link">
+                                                        <span className="k-column-title">Units In Stock</span>
+                                                    </span>
+                                                </span>
+                                            </th>
                                         </tr>
                                     </thead>
                                 </table>

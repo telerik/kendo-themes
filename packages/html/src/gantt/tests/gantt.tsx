@@ -57,8 +57,20 @@ root.render(
                                         </colgroup>
                                         <thead className="k-table-thead">
                                             <tr className="k-table-row">
-                                                <th className="k-table-th k-header" rowSpan={1} id="bed2dc8a-9916-4536-bc4e-70c7e9e53f5e">ID</th>
-                                                <th className="k-table-th k-header" rowSpan={1} id="m81d007a-d0bd-4082-91d7-83a0fdac06de"><a className="k-link">Title</a></th>
+                                                <th className="k-table-th k-header" rowSpan={1}>
+                                                    <span className="k-cell-inner">
+                                                        <span className="k-link">
+                                                            <span className="k-column-title">ID</span>
+                                                        </span>
+                                                    </span>
+                                                </th>
+                                                <th className="k-table-th k-header" rowSpan={1}>
+                                                    <span className="k-cell-inner">
+                                                        <span className="k-link">
+                                                            <span className="k-column-title">Title</span>
+                                                        </span>
+                                                    </span>
+                                                </th>
                                             </tr>
                                         </thead>
                                     </table>

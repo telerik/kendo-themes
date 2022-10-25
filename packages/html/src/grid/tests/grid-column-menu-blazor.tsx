@@ -24,20 +24,21 @@ root.render(
                                 <tr className="k-table-row">
                                     <th className="k-table-th k-header" colSpan={1}>
                                         <Checkbox/>
-                                        <span className="k-grid-header-menu k-grid-filter-menu">
-                                            <Icon name="more-vertical" />
+                                    </th>
+                                    <th className="k-table-th k-header" colSpan={1}>
+                                        <span className="k-cell-inner">
+                                            <span className="k-link">
+                                                <span className="k-column-title">Name</span>
+                                            </span>
+                                            <div><a className="k-grid-header-menu k-grid-column-menu" href="#"><Icon name="more-vertical" /></a></div>
                                         </span>
                                     </th>
                                     <th className="k-table-th k-header" colSpan={1}>
-                                        Name
-                                        <span className="k-grid-header-menu k-grid-filter-menu">
-                                            <Icon name="more-vertical" />
-                                        </span>
-                                    </th>
-                                    <th className="k-table-th k-header" colSpan={1}>
-                                        Command
-                                        <span className="k-grid-header-menu k-grid-filter-menu">
-                                            <Icon name="more-vertical" />
+                                        <span className="k-cell-inner">
+                                            <span className="k-link">
+                                                <span className="k-column-title">Command</span>
+                                            </span>
+                                            <div><a className="k-grid-header-menu k-grid-column-menu" href="#"><Icon name="more-vertical" /></a></div>
                                         </span>
                                     </th>
                                 </tr>
@@ -112,9 +113,6 @@ root.render(
                                 <tr className="k-table-row">
                                     <th className="k-table-th k-header" colSpan={1}>
                                         <Checkbox/>
-                                        <span className="k-grid-header-menu k-grid-filter-menu">
-                                            <Icon name="more-vertical" />
-                                        </span>
                                     </th>
                                     <th className="k-table-th k-header" colSpan={1}>
                                         <span className="k-cell-inner">
@@ -124,16 +122,17 @@ root.render(
                                                 </span>
                                                 <span className="k-sort-icon"><Icon name="sort-asc-small" /></span>
                                             </span>
-                                            <span className="k-sort-status" style={{ position: "absolute", left: "-10000px" }}>Sorted in ascending order</span>
                                         </span>
-                                        <span className="k-grid-header-menu k-grid-filter-menu">
+                                        <span className="k-grid-header-menu k-grid-column-menu">
                                             <Icon name="more-vertical" />
                                         </span>
                                     </th>
                                     <th className="k-table-th k-header" colSpan={1}>
-                                        Command
-                                        <span className="k-grid-header-menu k-grid-filter-menu">
-                                            <Icon name="more-vertical" />
+                                        <span className="k-cell-inner">
+                                            <span className="k-link">
+                                                <span className="k-column-title">Command</span>
+                                            </span>
+                                            <div><a className="k-grid-header-menu k-grid-column-menu" href="#"><Icon name="more-vertical" /></a></div>
                                         </span>
                                     </th>
                                 </tr>
@@ -209,9 +208,6 @@ root.render(
                                 <tr className="k-table-row">
                                     <th className="k-table-th k-header" colSpan={1}>
                                         <Checkbox/>
-                                        <span className="k-grid-header-menu k-grid-filter-menu">
-                                            <Icon name="more-vertical" />
-                                        </span>
                                         <span className="k-column-resizer" style={{ right: '0px', cursor: "col-resize" }}></span>
                                     </th>
                                     <th className="k-table-th k-header" colSpan={1}>
@@ -222,15 +218,17 @@ root.render(
                                                 </span>
                                             </span>
                                         </span>
-                                        <span className="k-grid-header-menu k-grid-filter-menu">
+                                        <span className="k-grid-header-menu k-grid-column-menu">
                                             <Icon name="more-vertical" />
                                         </span>
                                         <span className="k-column-resizer" style={{ right: '0px', cursor: "col-resize" }}></span>
                                     </th>
                                     <th className="k-table-th k-header" colSpan={1}>
-                                        Command
-                                        <span className="k-grid-header-menu k-grid-filter-menu">
-                                            <Icon name="more-vertical" />
+                                        <span className="k-cell-inner">
+                                            <span className="k-link">
+                                                <span className="k-column-title">Command</span>
+                                            </span>
+                                            <div><a className="k-grid-header-menu k-grid-column-menu" href="#"><Icon name="more-vertical" /></a></div>
                                         </span>
                                         <span className="k-column-resizer" style={{ right: '0px', cursor: "col-resize" }}></span>
                                     </th>

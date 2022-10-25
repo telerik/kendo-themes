@@ -23,7 +23,11 @@ root.render(
                                         <th className="k-table-th k-header k-hierarchy-cell">
                                         </th>
                                         <th className="k-table-th k-header">
-                                            <a className="k-link">Title<span></span></a>
+                                            <span className="k-cell-inner">
+                                                <span className="k-link">
+                                                    <span className="k-column-title">Title</span>
+                                                </span>
+                                            </span>
                                         </th>
                                     </tr>
                                 </thead>
@@ -62,10 +66,18 @@ root.render(
                                                         <thead className="k-table-thead">
                                                             <tr className="k-table-row">
                                                                 <th className="k-table-th k-header">
-                                                                    <a className="k-link">Title<span></span></a>
+                                                                    <span className="k-cell-inner">
+                                                                        <span className="k-link">
+                                                                            <span className="k-column-title">Title</span>
+                                                                        </span>
+                                                                    </span>
                                                                 </th>
                                                                 <th className="k-table-th k-header">
-                                                                    <a className="k-link">Title<span></span></a>
+                                                                    <span className="k-cell-inner">
+                                                                        <span className="k-link">
+                                                                            <span className="k-column-title">Title</span>
+                                                                        </span>
+                                                                    </span>
                                                                 </th>
                                                             </tr>
                                                         </thead>

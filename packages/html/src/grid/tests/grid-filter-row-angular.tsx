@@ -29,9 +29,27 @@ root.render(
                                 <thead className="k-table-thead">
                                     <tr className="k-table-row">
                                         <th className="k-table-th k-header" rowSpan={1} colSpan={1}><Checkbox /></th>
-                                        <th className="k-table-th k-header" rowSpan={1} colSpan={1}>ID</th>
-                                        <th className="k-table-th k-header" rowSpan={1} colSpan={1}>Name</th>
-                                        <th className="k-table-th k-header" rowSpan={1} colSpan={1}>Command</th>
+                                        <th className="k-table-th k-header" rowSpan={1} colSpan={1}>
+                                            <span className="k-cell-inner">
+                                                <span className="k-link">
+                                                    <span className="k-column-title">ID</span>
+                                                </span>
+                                            </span>
+                                        </th>
+                                        <th className="k-table-th k-header" rowSpan={1} colSpan={1}>
+                                            <span className="k-cell-inner">
+                                                <span className="k-link">
+                                                    <span className="k-column-title">Name</span>
+                                                </span>
+                                            </span>
+                                        </th>
+                                        <th className="k-table-th k-header" rowSpan={1} colSpan={1}>
+                                            <span className="k-cell-inner">
+                                                <span className="k-link">
+                                                    <span className="k-column-title">Command</span>
+                                                </span>
+                                            </span>
+                                        </th>
                                     </tr>
                                     <tr role="row" className="k-table-row k-filter-row">
                                         <td className="k-table-td"></td>
@@ -116,9 +134,21 @@ root.render(
                                 <thead className="k-table-thead">
                                     <tr className="k-table-row">
                                         <th className="k-table-th k-header" rowSpan={1} colSpan={1}><Checkbox /></th>
-                                        <th className="k-table-th k-header" rowSpan={1} colSpan={1}><span className="k-cell-inner"><span className="k-link"><span className="k-column-title">ID</span><span></span></span><span className="k-sort-status" role="status" style={{ position: "absolute", left: "-10000px" }}></span></span></th>
+                                        <th className="k-table-th k-header" rowSpan={1} colSpan={1}>
+                                            <span className="k-cell-inner">
+                                                <span className="k-link">
+                                                    <span className="k-column-title">ID</span>
+                                                </span>
+                                            </span>
+                                        </th>
                                         <th className="k-table-th k-header" rowSpan={1} colSpan={1}><span className="k-cell-inner"><span className="k-link"><span className="k-column-title">Name</span><span></span></span><span className="k-sort-status" role="status" style={{ position: "absolute", left: "-10000px" }}></span></span></th>
-                                        <th className="k-table-th k-header" rowSpan={1} colSpan={1}>Command</th>
+                                        <th className="k-table-th k-header" rowSpan={1} colSpan={1}>
+                                            <span className="k-cell-inner">
+                                                <span className="k-link">
+                                                    <span className="k-column-title">Command</span>
+                                                </span>
+                                            </span>
+                                        </th>
                                     </tr>
                                     <tr role="row" className="k-table-row k-filter-row">
                                         <td className="k-table-td"></td>

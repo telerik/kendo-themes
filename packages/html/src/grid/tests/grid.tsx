@@ -24,8 +24,20 @@ root.render(
                                 </colgroup>
                                 <thead className="k-table-thead">
                                     <tr className="k-table-row">
-                                        <th className="k-table-th k-header">100px</th>
-                                        <th className="k-table-th k-header">no width</th>
+                                        <th className="k-table-th k-header">
+                                            <span className="k-cell-inner">
+                                                <span className="k-link">
+                                                    <span className="k-column-title">100px</span>
+                                                </span>
+                                            </span>
+                                        </th>
+                                        <th className="k-table-th k-header">
+                                            <span className="k-cell-inner">
+                                                <span className="k-link">
+                                                    <span className="k-column-title">no width</span>
+                                                </span>
+                                            </span>
+                                        </th>
                                     </tr>
                                 </thead>
                             </table>
@@ -81,28 +93,45 @@ root.render(
                                         <th className="k-table-th k-header k-hierarchy-cell">
                                         </th>
                                         <th className="k-table-th k-header k-filterable">
-                                            <a className="k-grid-filter"><Icon name="filter" /></a>
-                                            <a className="k-link">Default<span></span></a>
+                                            <span className="k-cell-inner">
+                                                <span className="k-link">
+                                                    <span className="k-column-title">Default</span>
+                                                </span>
+                                                <a href="#" className="k-grid-filter-menu k-grid-header-menu"><Icon name="filter" /></a>
+                                            </span>
                                         </th>
                                         <th className="k-table-th k-header k-filterable k-hover">
-                                            <a className="k-grid-filter"><Icon name="filter" /></a>
-                                            <a className="k-link">Hover<span></span></a>
+                                            <span className="k-cell-inner">
+                                                <span className="k-link">
+                                                    <span className="k-column-title">Hover</span>
+                                                </span>
+                                                <a href="#" className="k-grid-filter-menu k-grid-header-menu"><Icon name="filter" /></a>
+                                            </span>
                                         </th>
                                         <th className="k-table-th k-header k-filterable k-focus">
-                                            <a className="k-grid-filter"><Icon name="filter" /></a>
-                                            <a className="k-link">Focus<span></span></a>
+                                            <span className="k-cell-inner">
+                                                <span className="k-link">
+                                                    <span className="k-column-title">Focus</span>
+                                                </span>
+                                                <a href="#" className="k-grid-filter-menu k-grid-header-menu"><Icon name="filter" /></a>
+                                            </span>
                                         </th>
                                         <th className="k-table-th k-header k-filterable k-active">
-                                            <a className="k-grid-filter"><Icon name="filter" /></a>
-                                            <a className="k-link">Active<span></span></a>
+                                            <span className="k-cell-inner">
+                                                <span className="k-link">
+                                                    <span className="k-column-title">Active</span>
+                                                </span>
+                                                <a href="#" className="k-grid-filter-menu k-grid-header-menu k-active"><Icon name="filter" /></a>
+                                            </span>
                                         </th>
                                         <th className="k-table-th k-header k-filterable k-sorted">
-                                            <a className="k-grid-filter"><Icon name="filter" /></a>
-                                            <a className="k-link">Sorted
-                                                <span className="k-sort-icon">
-                                                    <Icon name="sort-asc-small" />
+                                            <span className="k-cell-inner">
+                                                <span className="k-link">
+                                                    <span className="k-column-title">Sorted</span>
+                                                    <span className="k-sort-icon"><Icon name="sort-asc-small" /></span>
                                                 </span>
-                                            </a>
+                                                <a href="#" className="k-grid-filter-menu k-grid-header-menu"><Icon name="filter" /></a>
+                                            </span>
                                         </th>
                                     </tr>
                                 </thead>
@@ -164,8 +193,20 @@ root.render(
                                 <thead className="k-table-thead">
                                     <tr className="k-table-row">
                                         <th className="k-drag-cell k-header"></th>
-                                        <th className="k-table-th k-header">Company Name</th>
-                                        <th className="k-table-th k-header">Country</th>
+                                        <th className="k-table-th k-header">
+                                            <span className="k-cell-inner">
+                                                <span className="k-link">
+                                                    <span className="k-column-title">Company Name</span>
+                                                </span>
+                                            </span>
+                                        </th>
+                                        <th className="k-table-th k-header">
+                                            <span className="k-cell-inner">
+                                                <span className="k-link">
+                                                    <span className="k-column-title">Country</span>
+                                                </span>
+                                            </span>
+                                        </th>
                                     </tr>
                                 </thead>
                             </table>
