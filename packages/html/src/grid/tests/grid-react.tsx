@@ -28,14 +28,56 @@ root.render(
                                 </colgroup>
                                 <thead className="k-table-thead">
                                     <tr className="k-table-row">
-                                        <th className="k-table-th k-header k-grid-header-sticky" style={{ left: '0px', right: "240px" }}><a className="k-link"> </a></th>
-                                        <th className="k-table-th k-header"><a className="k-link">ID</a></th>
-                                        <th className="k-table-th k-header " ><a className="k-link">Name</a></th>
-                                        <th className="k-table-th k-header k-grid-header-sticky" style={{ left: "60px", right: "120px" }}><a className="k-link">Price</a></th>
-                                        <th className="k-table-th k-header k-grid-header-sticky" style={{ left: "180px", right: '0px' }}><a className="k-link">In stock</a></th>
-                                        <th className="k-table-th k-header"><a className="k-link">On order</a></th>
-                                        <th className="k-table-th k-header"><a className="k-link">Discontinued</a></th>
-                                        <th className="k-table-th k-header"><a className="k-link">Additional details</a></th>
+                                        <th className="k-table-th k-header k-grid-header-sticky" style={{ left: '0px', right: "240px" }}></th>
+                                        <th className="k-table-th k-header">
+                                            <span className="k-cell-inner">
+                                                <span className="k-link">
+                                                    <span className="k-column-title">ID</span>
+                                                </span>
+                                            </span>
+                                        </th>
+                                        <th className="k-table-th k-header">
+                                            <span className="k-cell-inner">
+                                                <span className="k-link">
+                                                    <span className="k-column-title">Name</span>
+                                                </span>
+                                            </span>
+                                        </th>
+                                        <th className="k-table-th k-header k-grid-header-sticky" style={{ left: "60px", right: "120px" }}>
+                                            <span className="k-cell-inner">
+                                                <span className="k-link">
+                                                    <span className="k-column-title">Price</span>
+                                                </span>
+                                            </span>
+                                        </th>
+                                        <th className="k-table-th k-header k-grid-header-sticky" style={{ left: "180px", right: '0px' }}>
+                                            <span className="k-cell-inner">
+                                                <span className="k-link">
+                                                    <span className="k-column-title">In stock</span>
+                                                </span>
+                                            </span>
+                                        </th>
+                                        <th className="k-table-th k-header">
+                                            <span className="k-cell-inner">
+                                                <span className="k-link">
+                                                    <span className="k-column-title">On order</span>
+                                                </span>
+                                            </span>
+                                        </th>
+                                        <th className="k-table-th k-header">
+                                            <span className="k-cell-inner">
+                                                <span className="k-link">
+                                                    <span className="k-column-title">Discontinued</span>
+                                                </span>
+                                            </span>
+                                        </th>
+                                        <th className="k-table-th k-header">
+                                            <span className="k-cell-inner">
+                                                <span className="k-link">
+                                                    <span className="k-column-title">Additional details</span>
+                                                </span>
+                                            </span>
+                                        </th>
                                     </tr>
                                 </thead>
                             </table>

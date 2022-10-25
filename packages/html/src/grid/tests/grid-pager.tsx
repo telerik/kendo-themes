@@ -24,8 +24,20 @@ root.render(
                                 </colgroup>
                                 <thead className="k-table-thead">
                                     <tr className="k-table-row">
-                                        <th className="k-table-th k-header">100px</th>
-                                        <th className="k-table-th k-header">no width</th>
+                                        <th className="k-table-th k-header">
+                                            <span className="k-cell-inner">
+                                                <span className="k-link">
+                                                    <span className="k-column-title">100px</span>
+                                                </span>
+                                            </span>
+                                        </th>
+                                        <th className="k-table-th k-header">
+                                            <span className="k-cell-inner">
+                                                <span className="k-link">
+                                                    <span className="k-column-title">no width</span>
+                                                </span>
+                                            </span>
+                                        </th>
                                     </tr>
                                 </thead>
                             </table>
@@ -66,8 +78,20 @@ root.render(
                                     </colgroup>
                                     <thead className="k-table-thead">
                                         <tr className="k-table-row">
-                                            <th className="k-table-th k-header">100px</th>
-                                            <th className="k-table-th k-header">no width</th>
+                                            <th className="k-table-th k-header">
+                                                <span className="k-cell-inner">
+                                                    <span className="k-link">
+                                                        <span className="k-column-title">100px</span>
+                                                    </span>
+                                                </span>
+                                            </th>
+                                            <th className="k-table-th k-header">
+                                                <span className="k-cell-inner">
+                                                    <span className="k-link">
+                                                        <span className="k-column-title">no width</span>
+                                                    </span>
+                                                </span>
+                                            </th>
                                         </tr>
                                     </thead>
                                 </table>
@@ -121,8 +145,20 @@ root.render(
                                 </colgroup>
                                 <thead className="k-table-thead">
                                     <tr className="k-table-row">
-                                        <th className="k-table-th k-header">100px</th>
-                                        <th className="k-table-th k-header">no width</th>
+                                        <th className="k-table-th k-header">
+                                            <span className="k-cell-inner">
+                                                <span className="k-link">
+                                                    <span className="k-column-title">100px</span>
+                                                </span>
+                                            </span>
+                                        </th>
+                                        <th className="k-table-th k-header">
+                                            <span className="k-cell-inner">
+                                                <span className="k-link">
+                                                    <span className="k-column-title">no width</span>
+                                                </span>
+                                            </span>
+                                        </th>
                                     </tr>
                                 </thead>
                             </table>
@@ -163,8 +199,20 @@ root.render(
                                     </colgroup>
                                     <thead className="k-table-thead">
                                         <tr className="k-table-row">
-                                            <th className="k-table-th k-header">100px</th>
-                                            <th className="k-table-th k-header">no width</th>
+                                            <th className="k-table-th k-header">
+                                                <span className="k-cell-inner">
+                                                    <span className="k-link">
+                                                        <span className="k-column-title">100px</span>
+                                                    </span>
+                                                </span>
+                                            </th>
+                                            <th className="k-table-th k-header">
+                                                <span className="k-cell-inner">
+                                                    <span className="k-link">
+                                                        <span className="k-column-title">no width</span>
+                                                    </span>
+                                                </span>
+                                            </th>
                                         </tr>
                                     </thead>
                                 </table>

@@ -56,20 +56,42 @@ root.render(
                                 <thead className="k-table-thead">
                                     <tr className="k-table-row" style={{ height: "38px" }}>
                                         <th className="k-table-th k-header" rowSpan={1} colSpan={3}>
-                                            Availability
+                                            <span className="k-cell-inner">
+                                                <span className="k-link">
+                                                    <span className="k-column-title">Availability</span>
+                                                </span>
+                                            </span>
                                         </th>
                                         <th className="k-table-th k-header" rowSpan={2} colSpan={1}>
-                                            Discontinued
+                                            <span className="k-cell-inner">
+                                                <span className="k-link">
+                                                    <span className="k-column-title">Discontinued</span>
+                                                </span>
+                                            </span>
                                         </th>
                                     </tr>
                                     <tr className="k-table-row" style={{ height: "38px" }}>
                                         <th className="k-table-th k-header" rowSpan={1} colSpan={1}>
-                                            Unit Price
+                                            <span className="k-cell-inner">
+                                                <span className="k-link">
+                                                    <span className="k-column-title">Unit Price</span>
+                                                </span>
+                                            </span>
                                         </th>
                                         <th className="k-table-th k-header" rowSpan={1} colSpan={1}>
-                                            Units On Order
+                                            <span className="k-cell-inner">
+                                                <span className="k-link">
+                                                    <span className="k-column-title">Units On Order</span>
+                                                </span>
+                                            </span>
                                         </th>
-                                        <th className="k-table-th k-header" rowSpan={1} colSpan={1}>Units In Stock</th>
+                                        <th className="k-table-th k-header" rowSpan={1} colSpan={1}>
+                                            <span className="k-cell-inner">
+                                                <span className="k-link">
+                                                    <span className="k-column-title">Units In Stock</span>
+                                                </span>
+                                            </span>
+                                        </th>
                                     </tr>
                                 </thead>
                             </table>

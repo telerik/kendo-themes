@@ -23,9 +23,27 @@ root.render(
                             </colgroup>
                             <thead className="k-table-thead">
                                 <tr className="k-table-row">
-                                    <th rowSpan={4} className="k-table-th k-header">Contact Name</th>
-                                    <th colSpan={4} className="k-table-th k-grid-header-sticky k-header" style={{ left: '0px', right: '0px' }}>Contact Info</th>
-                                    <th rowSpan={4} className="k-table-th k-header">Phone</th>
+                                    <th rowSpan={4} className="k-table-th k-header">
+                                        <span className="k-cell-inner">
+                                            <span className="k-link">
+                                                <span className="k-column-title">Contact Name</span>
+                                            </span>
+                                        </span>
+                                    </th>
+                                    <th colSpan={4} className="k-table-th k-grid-header-sticky k-header" style={{ left: '0px', right: '0px' }}>
+                                        <span className="k-cell-inner">
+                                            <span className="k-link">
+                                                <span className="k-column-title">Contact Info</span>
+                                            </span>
+                                        </span>
+                                    </th>
+                                    <th rowSpan={4} className="k-table-th k-header">
+                                        <span className="k-cell-inner">
+                                            <span className="k-link">
+                                                <span className="k-column-title">Phone</span>
+                                            </span>
+                                        </span>
+                                    </th>
                                 </tr>
                                 <tr className="k-table-row">
                                     <th rowSpan={3} className="k-table-th k-grid-header-sticky k-header k-first" style={{ left: '0px', right: "300px" }}>
@@ -97,9 +115,27 @@ root.render(
                                 </colgroup>
                                 <thead className="k-table-thead">
                                     <tr className="k-table-row">
-                                        <th rowSpan={4} className="k-table-th k-header">Contact Name</th>
-                                        <th colSpan={4} className="k-table-th k-grid-header-sticky k-header" style={{ left: '0px', right: '0px' }}>Contact Info</th>
-                                        <th rowSpan={4} className="k-table-th k-header">Phone</th>
+                                        <th rowSpan={4} className="k-table-th k-header">
+                                            <span className="k-cell-inner">
+                                                <span className="k-link">
+                                                    <span className="k-column-title">Contact Name</span>
+                                                </span>
+                                            </span>
+                                        </th>
+                                        <th colSpan={4} className="k-table-th k-grid-header-sticky k-header" style={{ left: '0px', right: '0px' }}>
+                                            <span className="k-cell-inner">
+                                                <span className="k-link">
+                                                    <span className="k-column-title">Contact Info</span>
+                                                </span>
+                                            </span>
+                                        </th>
+                                        <th rowSpan={4} className="k-table-th k-header">
+                                            <span className="k-cell-inner">
+                                                <span className="k-link">
+                                                    <span className="k-column-title">Phone</span>
+                                                </span>
+                                            </span>
+                                        </th>
                                     </tr>
                                     <tr className="k-table-row">
                                         <th rowSpan={3} className="k-table-th k-grid-header-sticky k-header k-first" style={{ left: "300px", right: '0px' }}>
