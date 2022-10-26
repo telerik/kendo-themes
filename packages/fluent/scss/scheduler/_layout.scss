@@ -294,9 +294,14 @@
         position: relative;
         z-index: 1;
 
-        > tbody > tr > td {
-            padding: 0;
-            vertical-align: top;
+        > tbody > tr {
+            height: 1px; // fix vertical grouping height
+
+            & > td {
+                height: inherit;
+                padding: 0;
+                vertical-align: top;
+            }
         }
 
         // Remove bottom border from first cell of hours cells spaning on two rows
@@ -352,6 +357,7 @@
     }
 
     .k-scheduler-times {
+        height: 100%;
         border-color: inherit;
         position: relative;
         overflow: hidden;
