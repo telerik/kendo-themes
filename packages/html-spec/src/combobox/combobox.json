@@ -126,7 +126,7 @@
             {
                 "name": "inner-input",
                 "selector": [
-                    ".k-inner-input"
+                    ".k-input-inner"
                 ]
             },
             {
