@@ -144,22 +144,23 @@ root.render(
                                         <Icon name="star-outline" />
                                         <span className="k-item-text">Collapsed</span>
                                         <span className="k-spacer"></span>
-                                        <Icon name="arrow-chevron-down" />
+                                        <span className="k-drawer-toggle">
+                                            <Icon name="arrow-chevron-down" />
+                                        </span>
                                     </li>
                                     <li className="k-drawer-item">
                                         <Icon name="star-outline" />
                                         <span className="k-item-text">Expanded</span>
                                         <span className="k-spacer"></span>
-                                        <Icon name="arrow-chevron-up" />
+                                        <span className="k-drawer-toggle">
+                                            <Icon name="arrow-chevron-up" />
+                                        </span>
                                     </li>
-                                    <li className="k-drawer-item">
-                                        <Icon name="none" />
+                                    <li className="k-drawer-item k-level-1">
                                         <Icon name="star-outline" />
                                         <span className="k-item-text">Child Lvl 1</span>
                                     </li>
-                                    <li className="k-drawer-item">
-                                        <Icon name="none" />
-                                        <Icon name="none" />
+                                    <li className="k-drawer-item k-level-2">
                                         <Icon name="star-outline" />
                                         <span className="k-item-text">Child Lvl 2</span>
                                     </li>
@@ -218,22 +219,23 @@ root.render(
                                         <Icon name="star-outline" />
                                         <span className="k-item-text">Collapsed</span>
                                         <span className="k-spacer"></span>
-                                        <Icon name="arrow-chevron-down" />
+                                        <span className="k-drawer-toggle">
+                                            <Icon name="arrow-chevron-down" />
+                                        </span>
                                     </li>
                                     <li className="k-drawer-item">
                                         <Icon name="star-outline" />
                                         <span className="k-item-text">Expanded</span>
                                         <span className="k-spacer"></span>
-                                        <Icon name="arrow-chevron-up" />
+                                        <span className="k-drawer-toggle">
+                                            <Icon name="arrow-chevron-up" />
+                                        </span>
                                     </li>
-                                    <li className="k-drawer-item">
-                                        <Icon name="none" />
+                                    <li className="k-drawer-item k-level-1">
                                         <Icon name="star-outline" />
                                         <span className="k-item-text">Child Lvl 1</span>
                                     </li>
-                                    <li className="k-drawer-item">
-                                        <Icon name="none" />
-                                        <Icon name="none" />
+                                    <li className="k-drawer-item k-level-2">
                                         <Icon name="star-outline" />
                                         <span className="k-item-text">Child Lvl 2</span>
                                     </li>
