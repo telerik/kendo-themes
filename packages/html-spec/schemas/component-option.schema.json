@@ -1,0 +1,53 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "kendo-html://schemas/component-state.schema.json",
+    "title": "Schema definition for the Kendo component option",
+    "type": "object",
+    "additionalProperties": false,
+    "definitions": {
+        "component-option": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "name": {
+                    "description": "Name of the component option.",
+                    "type": "string",
+                    "enum": [
+                        "name",
+                        "size",
+                        "rounded",
+                        "fillMode",
+                        "themeColor",
+                        "orientation"
+                    ]
+                },
+                "value": {
+                    "description": "The value of the option when inherited from the parent component. \n Use the following format: `{parent.optionName}`.",
+                    "type": "string"
+                },
+                "values": {
+                    "description": "The accepted values of the component option.",
+                    "type": "array",
+                    "minItems": 1,
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "name": {
+                                "description": "Name of the component option's value.",
+                                "type": "string"
+                            },
+                            "selector": {
+                                "description": "The selector/s that can be used to target the component with this option enabled.",
+                                "type": "array",
+                                "minItems": 1,
+                                "items": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

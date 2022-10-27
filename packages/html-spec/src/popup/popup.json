@@ -1,4 +1,6 @@
 {
+    "$schema": "../../schemas/component.schema.json",
+    "title": "Kendo Popup HTML Spec",
     "component": "popup",
     "selector": [
         ".k-popup"
