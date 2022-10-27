@@ -1,4 +1,6 @@
 {
+    "$schema": "../../schemas/component.schema.json",
+    "title": "Kendo List Item HTML Spec",
     "component": "list-item",
     "selector": [
         ".k-list-item"

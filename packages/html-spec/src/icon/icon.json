@@ -1,4 +1,6 @@
 {
+    "$schema": "../../schemas/component.schema.json",
+    "title": "Kendo Icon HTML Spec",
     "component": "icon",
     "selector": [
         ".k-icon"
