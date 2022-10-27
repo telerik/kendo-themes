@@ -51,13 +51,17 @@ root.render(
                                     <Icon name="star-outline" />
                                     <span className="k-item-text">Collapsed</span>
                                     <span className="k-spacer"></span>
-                                    <Icon name="arrow-chevron-down" />
+                                    <span className="k-drawer-toggle">
+                                        <Icon name="arrow-chevron-down" />
+                                    </span>
                                 </li>
                                 <li className="k-drawer-item">
                                     <Icon name="star-outline" />
                                     <span className="k-item-text">Expanded</span>
                                     <span className="k-spacer"></span>
-                                    <Icon name="arrow-chevron-up" />
+                                    <span className="k-drawer-toggle">
+                                        <Icon name="arrow-chevron-up" />
+                                    </span>
                                 </li>
                                 <li className="k-drawer-item">
                                     <Icon name="none" />
@@ -107,13 +111,17 @@ root.render(
                                     <Icon name="star-outline" />
                                     <span className="k-item-text">Collapsed</span>
                                     <span className="k-spacer"></span>
-                                    <Icon name="arrow-chevron-down" />
+                                    <span className="k-drawer-toggle">
+                                        <Icon name="arrow-chevron-down" />
+                                    </span>
                                 </li>
                                 <li className="k-drawer-item">
                                     <Icon name="star-outline" />
                                     <span className="k-item-text">Expanded</span>
                                     <span className="k-spacer"></span>
-                                    <Icon name="arrow-chevron-up" />
+                                    <span className="k-drawer-toggle">
+                                        <Icon name="arrow-chevron-up" />
+                                    </span>
                                 </li>
                                 <li className="k-drawer-item">
                                     <Icon name="none" />
