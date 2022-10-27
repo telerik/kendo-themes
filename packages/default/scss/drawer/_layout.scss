@@ -137,6 +137,7 @@
         line-height: $drawer-item-line-height;
         display: flex;
         flex-flow: row nowrap;
+        gap: $drawer-item-padding-x;
         cursor: pointer;
 
         > .k-drawer-link {
@@ -146,10 +147,10 @@
             display: flex;
             flex-flow: row nowrap;
             flex: 1 0 auto;
+            gap: $drawer-item-padding-x;
         }
 
         .k-icon {
-            margin: 0 $drawer-item-padding-x;
             height: auto;
             font-size: $drawer-icon-size;
             line-height: $drawer-item-line-height;
@@ -161,7 +162,6 @@
         }
 
         .k-item-text {
-            padding: 0 $drawer-item-padding-x;
             display: inline-block;
             white-space: nowrap;
             overflow: hidden;
@@ -171,12 +171,13 @@
         .k-drawer-toggle {
             margin-inline-start: auto;
             cursor: pointer;
+            display: flex;
         }
 
         // Hierarchy items
         @for $i from 1 through $drawer-item-level-count {
             &.k-level-#{$i} {
-                padding-inline-start: ( $drawer-item-level-padding-x * $i );
+                padding-inline-start: ( $i + 1) * $drawer-item-level-padding-x;
             }
         }
     }
