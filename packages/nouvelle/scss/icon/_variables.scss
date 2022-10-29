@@ -1,6 +1,13 @@
+// @progress/kendo-font-icons settings
+$ki-embed-font: true !default;
+$ki-icon-size: var( --kendo-icon-size, 1rem ) !default;
+
 /// Font size of the icons.
 /// @group icon
 $kendo-icon-size: 1rem !default;
+/// Font size of the icons.
+/// @group icon
+$kendo-icon-size-md: 1rem !default;
 /// Font size of the large icons.
 /// @group icon
 $kendo-icon-size-lg: 1.25rem !default;
