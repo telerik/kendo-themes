@@ -1,7 +1,10 @@
 // Module meta
 $_kendo-module-meta: (
     name: "input",
-    dependencies: ()
+    dependencies: (
+        "icon",
+        "button"
+    )
 );
 
 
