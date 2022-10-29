@@ -1,7 +1,11 @@
 // Module meta
 $_kendo-module-meta: (
     name: "textarea",
-    dependencies: ()
+    dependencies: (
+        "input",
+        "icon",
+        "button"
+    )
 );
 
 

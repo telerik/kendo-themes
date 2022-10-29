@@ -1,7 +1,13 @@
 // Module meta
 $_kendo-module-meta: (
     name: "dropdownlist",
-    dependencies: ()
+    dependencies: (
+        "input",
+        "icon",
+        "button",
+        "popup",
+        "list"
+    )
 );
 
 

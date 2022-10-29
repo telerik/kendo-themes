@@ -1,11 +1,4 @@
-@mixin kendo-maskedtextbox--layout() {
-
-    // sass-lint:disable-block no-important no-ids
-    #test-area .k-maskedtextbox {
-        display: none !important;
-    }
-
-}
+@mixin kendo-maskedtextbox--layout() {}
 
 
 

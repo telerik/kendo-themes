@@ -1,11 +1,4 @@
-@mixin kendo-searchbox--layout() {
-
-    // sass-lint:disable-block no-important no-ids
-    #test-area .k-searchbox {
-        display: none !important;
-    }
-
-}
+@mixin kendo-searchbox--layout() {}
 
 
 

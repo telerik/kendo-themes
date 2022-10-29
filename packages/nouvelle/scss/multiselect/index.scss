@@ -1,7 +1,14 @@
 // Module meta
 $_kendo-module-meta: (
     name: "multiselect",
-    dependencies: ()
+    dependencies: (
+        "input",
+        "icon",
+        "chip",
+        "button",
+        "popup",
+        "list"
+    )
 );
 
 
