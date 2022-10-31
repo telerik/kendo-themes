@@ -2,60 +2,60 @@
 
     .k-upload {
         @include fill(
-            $upload-text,
-            $upload-bg,
-            $upload-border
+            $kendo-upload-text,
+            $kendo-upload-bg,
+            $kendo-upload-border
         );
 
         .k-dropzone {
             @include fill(
-                $upload-dropzone-text,
-                $upload-dropzone-bg,
-                $upload-dropzone-border
+                $kendo-upload-dropzone-text,
+                $kendo-upload-dropzone-bg,
+                $kendo-upload-dropzone-border
             );
 
             &.k-dropzone-hover,
             &.k-dropzone-hovered {
-                background-color: $upload-dropzone-hover-bg;
+                background-color: $kendo-upload-dropzone-hover-bg;
             }
 
             .k-dropzone-hint {
-                color: $upload-status-text;
-                opacity: $upload-status-text-opacity;
+                color: $kendo-upload-status-text;
+                opacity: $kendo-upload-status-text-opacity;
             }
 
         }
 
         .k-upload-files,
         .k-file {
-            border-color: $upload-border;
+            border-color: $kendo-upload-border;
         }
 
         .k-file {
 
             &.k-focus {
-                box-shadow: inset $upload-focused-shadow;
+                box-shadow: inset $kendo-upload-focused-shadow;
             }
 
             .k-upload-action.k-focus {
-                box-shadow: $upload-focused-shadow;
+                box-shadow: $kendo-upload-focused-shadow;
             }
 
         }
 
         .k-upload-status {
-            color: $upload-status-text;
-            opacity: $upload-status-text-opacity;
+            color: $kendo-upload-status-text;
+            opacity: $kendo-upload-status-text-opacity;
         }
 
         // Upload status: uploading
         .k-file-progress {
 
             .k-file-name {
-                color: $upload-progress-text;
+                color: $kendo-upload-progress-text;
             }
             .k-progress {
-                background-color: $upload-progress-bg;
+                background-color: $kendo-upload-progress-bg;
             }
         }
 
@@ -63,7 +63,7 @@
         // Upload status: success
         .k-file-success {
             .k-progress {
-                background-color: $upload-success-bg;
+                background-color: $kendo-upload-success-bg;
             }
         }
 
@@ -71,10 +71,10 @@
         .k-file-error,
         .k-file-invalid {
             .k-file-validation-message {
-                color: $upload-error-text;
+                color: $kendo-upload-error-text;
             }
             .k-progress {
-                background-color: $upload-error-bg;
+                background-color: $kendo-upload-error-bg;
             }
         }
 
@@ -86,8 +86,8 @@
         .k-multiple-files-invalid-extension-wrapper,
         .k-file-invalid-group-wrapper,
         .k-multiple-files-invalid-group-wrapper {
-            color: $upload-icon-color;
-            border-color: $upload-icon-color;
+            color: $kendo-upload-icon-color;
+            border-color: $kendo-upload-icon-color;
         }
 
         // old rendering
@@ -97,7 +97,7 @@
         .k-file-invalid-group-wrapper,
         .k-multiple-files-invalid-group-wrapper,
         .k-file-error .k-file-group-wrapper {
-            border-color: $upload-icon-color;
+            border-color: $kendo-upload-icon-color;
         }
 
         // old rendering
@@ -106,15 +106,15 @@
         .k-file-invalid-extension-wrapper::before,
         .k-multiple-files-invalid-extension-wrapper::before,
         .k-file-error .k-file-extension-wrapper::before {
-            background-color: $upload-bg;
-            border-color: transparent transparent $upload-icon-color $upload-icon-color;
+            background-color: $kendo-upload-bg;
+            border-color: transparent transparent $kendo-upload-icon-color $kendo-upload-icon-color;
         }
 
         // old rendering
         .k-multiple-files-extension-wrapper::after,
         .k-multiple-files-invalid-extension-wrapper::after {
-            border-top-color: $upload-icon-color;
-            border-left-color: $upload-icon-color;
+            border-top-color: $kendo-upload-icon-color;
+            border-left-color: $kendo-upload-icon-color;
         }
 
         .k-file-size,
@@ -124,7 +124,7 @@
         }
 
         .k-multiple-files-wrapper .k-file-information {
-            color: $upload-text;
+            color: $kendo-upload-text;
         }
 
         // Invalid,

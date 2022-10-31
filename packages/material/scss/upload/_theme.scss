@@ -6,7 +6,7 @@
     .k-upload {
         .k-upload-button {
             @include box-shadow( none );
-            background-color: k-try-shade( $upload-dropzone-bg );
+            background-color: k-try-shade( $kendo-upload-dropzone-bg );
         }
     }
 }

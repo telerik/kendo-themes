@@ -1,48 +1,48 @@
 // Upload
-$upload-border-width: 1px !default;
-$upload-font-family: $font-family !default;
-$upload-font-size: $font-size !default;
-$upload-line-height: $line-height !default;
-$upload-max-height: 300px !default;
+$kendo-upload-border-width: 1px !default;
+$kendo-upload-font-family: $font-family !default;
+$kendo-upload-font-size: $font-size !default;
+$kendo-upload-line-height: $line-height !default;
+$kendo-upload-max-height: 300px !default;
 
-$upload-bg: $component-bg !default;
-$upload-text: $component-text !default;
-$upload-border: $component-border !default;
+$kendo-upload-bg: $component-bg !default;
+$kendo-upload-text: $component-text !default;
+$kendo-upload-border: $component-border !default;
 
-$upload-dropzone-padding-x: map-get( $spacing, 2 ) !default;
-$upload-dropzone-padding-y: map-get( $spacing, 2 ) !default;
-$upload-dropzone-bg: $header-bg !default;
-$upload-dropzone-text: $header-text !default;
-$upload-dropzone-border: $upload-border !default;
-$upload-dropzone-hover-bg: $hovered-bg !default;
+$kendo-upload-dropzone-padding-x: map-get( $spacing, 2 ) !default;
+$kendo-upload-dropzone-padding-y: map-get( $spacing, 2 ) !default;
+$kendo-upload-dropzone-bg: $header-bg !default;
+$kendo-upload-dropzone-text: $header-text !default;
+$kendo-upload-dropzone-border: $kendo-upload-border !default;
+$kendo-upload-dropzone-hover-bg: $hovered-bg !default;
 
-$upload-status-text: $subtle-text !default;
-$upload-status-text-opacity: null !default;
+$kendo-upload-status-text: $subtle-text !default;
+$kendo-upload-status-text-opacity: null !default;
 
-$upload-item-padding-x: map-get( $spacing, 2 ) !default;
-$upload-item-padding-y: map-get( $spacing, 2 ) !default;
+$kendo-upload-item-padding-x: map-get( $spacing, 2 ) !default;
+$kendo-upload-item-padding-y: map-get( $spacing, 2 ) !default;
 
-$upload-multiple-items-spacing: 12px !default;
+$kendo-upload-multiple-items-spacing: 12px !default;
 
-$upload-validation-font-size: 11px !default;
-$upload-icon-spacing: $icon-spacing !default;
-$upload-icon-color: $subtle-text !default;
+$kendo-upload-validation-font-size: 11px !default;
+$kendo-upload-icon-spacing: $icon-spacing !default;
+$kendo-upload-icon-color: $subtle-text !default;
 
-$upload-item-image-width: 30px !default;
-$upload-item-image-height: 30px !default;
-$upload-item-image-border: 0px !default; // TODO: remove
+$kendo-upload-item-image-width: 30px !default;
+$kendo-upload-item-image-height: 30px !default;
+$kendo-upload-item-image-border: 0px !default; // TODO: remove
 
-$upload-group-icon-size: $icon-size-lg !default;
+$kendo-upload-group-icon-size: $icon-size-lg !default;
 
-$upload-progress-thickness: 2px !default;
-$upload-progress-bg: $info !default;
-$upload-progress-text: $component-text !default;
+$kendo-upload-progress-thickness: 2px !default;
+$kendo-upload-progress-bg: $info !default;
+$kendo-upload-progress-text: $component-text !default;
 
-$upload-success-bg: $success !default;
-$upload-success-text: $success !default;
+$kendo-upload-success-bg: $success !default;
+$kendo-upload-success-text: $success !default;
 
-$upload-error-bg: $error !default;
-$upload-error-text: $error !default;
-$upload-error-border: $error !default;
+$kendo-upload-error-bg: $error !default;
+$kendo-upload-error-text: $error !default;
+$kendo-upload-error-border: $error !default;
 
-$upload-focused-shadow: 0 0 0 2px rgba(0, 0, 0, .13) !default;
+$kendo-upload-focused-shadow: 0 0 0 2px rgba(0, 0, 0, .13) !default;

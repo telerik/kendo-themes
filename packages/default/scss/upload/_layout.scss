@@ -1,13 +1,13 @@
 @include exports("upload/layout") {
 
     .k-upload {
-        border-width: $upload-border-width;
+        border-width: $kendo-upload-border-width;
         border-style: solid;
         box-sizing: border-box;
         outline: 0;
-        font-family: $upload-font-family;
-        font-size: $upload-font-size;
-        line-height: $upload-line-height;
+        font-family: $kendo-upload-font-family;
+        font-size: $kendo-upload-font-size;
+        line-height: $kendo-upload-line-height;
         position: relative;
         display: block;
         -webkit-touch-callout: none;
@@ -25,7 +25,7 @@
 
         // Drop zone
         .k-dropzone {
-            padding: $upload-dropzone-padding-y $upload-dropzone-padding-x;
+            padding: $kendo-upload-dropzone-padding-y $kendo-upload-dropzone-padding-x;
             border-width: 0;
             text-align: right;
             display: flex;
@@ -51,7 +51,7 @@
                 position: relative;
 
                 > .k-icon {
-                    margin-right: $upload-icon-spacing;
+                    margin-right: $kendo-upload-icon-spacing;
                 }
             }
 
@@ -72,7 +72,7 @@
 
         // Upload files list
         .k-upload-files {
-            max-height: $upload-max-height;
+            max-height: $kendo-upload-max-height;
             overflow-y: auto;
             margin: 0;
             padding: 0;
@@ -97,7 +97,7 @@
             }
 
             .k-file {
-                padding: $upload-item-padding-y $upload-item-padding-x calc(#{$upload-item-padding-y} + #{$upload-progress-thickness});
+                padding: $kendo-upload-item-padding-y $kendo-upload-item-padding-x calc(#{$kendo-upload-item-padding-y} + #{$kendo-upload-progress-thickness});
                 border-width: 0 0 1px;
                 border-style: solid;
                 outline: none;
@@ -125,7 +125,7 @@
             }
 
             .k-upload-pct {
-                margin: 0 $upload-icon-spacing;
+                margin: 0 $kendo-upload-icon-spacing;
                 font-weight: normal;
                 vertical-align: middle;
             }
@@ -159,7 +159,7 @@
             .k-file-size,
             .k-file-information,
             .k-file-validation-message {
-                font-size: $upload-validation-font-size;
+                font-size: $kendo-upload-validation-font-size;
                 line-height: 1;
             }
 
@@ -167,7 +167,7 @@
             .k-multiple-files-extension-wrapper,
             .k-file-invalid-extension-wrapper,
             .k-multiple-files-invalid-extension-wrapper {
-                margin: ($upload-item-image-border / 2) 0;
+                margin: ($kendo-upload-item-image-border / 2) 0;
                 width: 24px;
                 height: 34px;
                 border-width: 2px;
@@ -175,7 +175,7 @@
                 font-size: ($font-size * .57);
                 text-transform: uppercase;
                 position: absolute;
-                top: $upload-item-padding-y;
+                top: $kendo-upload-item-padding-y;
             }
 
             .k-file-group-wrapper,
@@ -184,7 +184,7 @@
             .k-multiple-files-invalid-group-wrapper {
 
                 .k-file-group {
-                    font-size: $upload-group-icon-size;
+                    font-size: $kendo-upload-group-icon-size;
                 }
 
                 .k-file-state {
@@ -211,7 +211,7 @@
             .k-file-single > .k-file-extension-wrapper + .k-file-name-size-wrapper {
                 // 24px - image width
                 margin-left: calc( 24px + #{$spacer-x} );
-                // 34px - $upload-item-image-height; 2px - $upload-item-image-border;
+                // 34px - $kendo-upload-item-image-height; 2px - $kendo-upload-item-image-border;
                 min-height: 34px + (2px * 2);
                 display: block;
                 overflow: hidden;
@@ -305,7 +305,7 @@
         .k-upload-files .k-file-name-size-wrapper {
             margin-left: 0;
             margin-right: 0;
-            min-height: $upload-group-icon-size;
+            min-height: $kendo-upload-group-icon-size;
             display: block;
             overflow: hidden;
             flex: 1 0 0;
@@ -313,7 +313,7 @@
 
         // old rendering
         .k-file-multiple > .k-file-name-size-wrapper {
-            margin-left: $upload-item-padding-x;
+            margin-left: $kendo-upload-item-padding-x;
         }
 
         .k-multiple-files-wrapper,
@@ -321,7 +321,7 @@
         .k-file > .k-file-name-size-wrapper {
             margin-left: $padding-x;
             margin-right: 0;
-            min-height: $upload-group-icon-size;
+            min-height: $kendo-upload-group-icon-size;
             display: block;
             overflow: hidden;
             flex: 1 0 0;
@@ -329,29 +329,29 @@
 
         .k-multiple-files-wrapper {
             .k-file-name-size-wrapper {
-                margin-bottom: $upload-multiple-items-spacing;
+                margin-bottom: $kendo-upload-multiple-items-spacing;
                 display: block;
             }
 
             .k-file-information {
-                margin-top: -($upload-multiple-items-spacing / 3);
+                margin-top: -($kendo-upload-multiple-items-spacing / 3);
             }
         }
 
         // old rendering
         .k-progress {
-            height: $upload-progress-thickness;
+            height: $kendo-upload-progress-thickness;
             position: absolute;
             bottom: 0;
             left: 0;
         }
 
         .k-progressbar {
-            height: $upload-progress-thickness;
+            height: $kendo-upload-progress-thickness;
             position: absolute;
-            bottom: $upload-item-padding-y / 2;
+            bottom: $kendo-upload-item-padding-y / 2;
             // successed
-            width: calc(100% - #{$upload-item-padding-x} * 2);
+            width: calc(100% - #{$kendo-upload-item-padding-x} * 2);
 
             .k-progress {
                 position: absolute;
