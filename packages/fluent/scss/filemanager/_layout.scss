@@ -194,6 +194,7 @@
             text-align: start;
             display: flex;
             flex-flow: row wrap;
+            grid-column-gap: $kendo-filemanager-preview-column-gap;
         }
         .k-file-meta-label {
             display: inline-block;

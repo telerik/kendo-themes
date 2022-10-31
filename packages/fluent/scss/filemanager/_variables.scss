@@ -161,6 +161,9 @@ $kendo-filemanager-preview-border-width: $kendo-filemanager-border-width !defaul
 /// Spacing of the preview.
 /// @group filemanager
 $kendo-filemanager-preview-spacing: $kendo-filemanager-spacer !default;
+/// Spacing of the preview.
+/// @group filemanager
+$kendo-filemanager-preview-column-gap: map-get( $kendo-spacing, 1 ) !default;
 /// Background color of the preview.
 /// @group filemanager
 $kendo-filemanager-preview-bg: transparent !default;

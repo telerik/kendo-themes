@@ -58,6 +58,7 @@ $filemanager-preview-padding-y: $filemanager-spacer !default;
 $filemanager-preview-width: 20% !default;
 $filemanager-preview-border-width: $filemanager-border-width !default;
 $filemanager-preview-spacing: $filemanager-spacer !default;
+$filemanager-preview-column-gap: map-get( $spacing, 1 ) !default;
 $filemanager-preview-bg: null !default;
 $filemanager-preview-text: null !default;
 $filemanager-preview-border: null !default;
