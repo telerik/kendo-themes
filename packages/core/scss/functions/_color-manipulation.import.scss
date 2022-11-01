@@ -65,6 +65,12 @@ $kendo-color-level-step: 8% !default;
     @return k-color-lighten( $color, $amount );
 }
 
+@function k-rgba-to-mix( $color, $bg ) {
+    $percent: k-color-alpha( $color ) * 100%;
+
+    @return k-color-mix( rgba( $color, 1 ), $bg, $percent );
+}
+
 // TODO: Remove this function or rethink the logic
 @function k-true-mix( $color1, $color2, $weight: 50% ) {
     @return k-color-mix( rgba( $color1, 1 ), rgba( $color2, 1 ), $weight );
