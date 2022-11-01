@@ -176,7 +176,7 @@
     }
 
 
-    // Tabstrip variants
+    // Tabstrip position
     .k-tabstrip-top {
         > .k-tabstrip-items-wrapper {
             border-bottom-width: var( --kendo-tabstrip-border-width, #{$kendo-tabstrip-border-width} );
@@ -228,6 +228,25 @@
             }
         }
     }
+
+
+    // Tabstrip align
+    .k-tabstrip-items-start {
+        justify-content: flex-start;
+    }
+    .k-tabstrip-items-center {
+        justify-content: center;
+    }
+    .k-tabstrip-items-end {
+        justify-content: flex-end;
+    }
+    .k-tabstrip-items-justify {
+        justify-content: space-between;
+    }
+    .k-tabstrip-items-stretched > * {
+        flex: 1 0 0;
+    }
+
 
     // Selected indicator
     @if ($kendo-tabstrip-indicator-size) {
