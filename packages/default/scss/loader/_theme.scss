@@ -3,7 +3,7 @@
     @each $name, $color in $kendo-theme-colors {
         .k-loader-#{$name} {
             @if $name == "secondary" {
-                color: $loader-secondary-bg;
+                color: $kendo-loader-secondary-bg;
             } @else {
                 color: $color;
             }
@@ -11,8 +11,8 @@
     }
 
     .k-loader-container-panel {
-        background-color: $loader-container-panel-bg;
-        border-color: $loader-container-panel-border-color;
+        background-color: $kendo-loader-container-panel-bg;
+        border-color: $kendo-loader-container-panel-border-color;
     }
 
     .k-loader-container-inner {
@@ -20,7 +20,7 @@
         // sass-lint:disable-block class-name-format
         .k-text-secondary,
         .\!k-text-secondary {
-            color: $loader-secondary-bg !important;
+            color: $kendo-loader-secondary-bg !important;
         }
     }
 
