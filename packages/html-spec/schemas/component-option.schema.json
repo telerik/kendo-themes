@@ -18,7 +18,9 @@
                         "rounded",
                         "fillMode",
                         "themeColor",
-                        "orientation"
+                        "orientation",
+                        "position",
+                        "animation"
                     ]
                 },
                 "value": {
