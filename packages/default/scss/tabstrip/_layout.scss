@@ -172,7 +172,7 @@
     }
 
 
-    // Tabstrip variants
+    // Tabstrip position
     .k-tabstrip-top {
         > .k-tabstrip-items-wrapper {
             border-bottom-width: $tabstrip-border-width;
@@ -265,6 +265,24 @@
             @include border-left-radius( $tabstrip-item-border-radius );
             border-right-width: 0;
         }
+    }
+
+
+    // Tabstrip align
+    .k-tabstrip-items-start {
+        justify-content: flex-start;
+    }
+    .k-tabstrip-items-center {
+        justify-content: center;
+    }
+    .k-tabstrip-items-end {
+        justify-content: flex-end;
+    }
+    .k-tabstrip-items-justify {
+        justify-content: space-between;
+    }
+    .k-tabstrip-items-stretched > * {
+        flex: 1 0 0;
     }
 
 
