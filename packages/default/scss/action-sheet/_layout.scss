@@ -255,6 +255,15 @@
             padding: $adaptive-actionsheet-footer-padding-y $adaptive-actionsheet-footer-padding-x;
         }
 
+        .k-actionsheet-filter {
+            width: calc( min(100%, calc( 360px - #{$adaptive-actionsheet-titlebar-padding-x * 2}) ) );
+        }
+        .k-actionsheet-content,
+        .k-actionsheet-footer {
+            margin-inline: auto;
+            width: unquote("min(100%, 360px)");
+        }
+
         .k-list-container,
         .k-treeview {
             height: 100%;
