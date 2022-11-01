@@ -39,7 +39,6 @@
         border-style: solid;
         border-color: inherit;
         position: relative;
-        z-index: 2;
     }
 
     .k-tabstrip-items {
@@ -107,7 +106,6 @@
         overflow: auto;
         flex: 1 1 auto;
         position: relative;
-        z-index: 1;
 
         &:active,
         &.k-active {
@@ -259,7 +257,7 @@
                 border-style: solid;
                 display: block;
                 position: absolute;
-                z-index: 0;
+                z-index: 2;
                 top: 0;
                 right: 0;
                 bottom: 0;
