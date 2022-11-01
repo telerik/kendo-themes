@@ -286,6 +286,15 @@
             padding-block: var( --kendo-adaptive-actionsheet-footer-padding-y, #{$kendo-adaptive-actionsheet-footer-padding-y} );
         }
 
+        .k-actionsheet-filter {
+            width: calc( min(100%, calc( 360px - #{$kendo-adaptive-actionsheet-header-padding-x * 2}) ) );
+        }
+        .k-actionsheet-content,
+        .k-actionsheet-footer {
+            margin-inline: auto;
+            width: unquote("min(100%, 360px)");
+        }
+
         .k-list-container,
         .k-treeview {
             height: 100%;
@@ -346,6 +355,13 @@
         .k-scrollable-wrap {
             height: 100%;
             overflow-y: auto;
+        }
+
+        .k-data-table {
+            max-height: 100%;
+            overflow: hidden;
+            display: flex;
+            flex-flow: column nowrap;
         }
     }
 }
