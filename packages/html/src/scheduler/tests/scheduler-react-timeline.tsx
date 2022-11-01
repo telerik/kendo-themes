@@ -18,7 +18,7 @@ root.render(
     <>
         <style>{style}</style>
         <div id="test-area" className="k-d-grid k-grid-cols-1">
-            <div className="k-widget k-scheduler k-scheduler-flex" style={{ height: "900px" }} >
+            <div className="k-widget k-scheduler k-scheduler-flex" style={{ height: "400px" }} >
                 <div className="k-scheduler-toolbar k-toolbar">
                     <span className="k-button-group k-scheduler-navigation">
                         <Button>Today</Button>
@@ -47,14 +47,14 @@ root.render(
                         <div className="k-scheduler-group k-group-horizontal">
                             <div className="k-scheduler-row">
                                 <div className="k-sticky-cell">
-                                    <div className="k-scheduler-cell k-side-cell" style={{ minWidth: "62px" }} ></div>
+                                    <div className="k-scheduler-cell k-side-cell" style={{ minWidth: "66px" }} ></div>
                                 </div>
                                 <div className="k-scheduler-cell k-heading-cell">Meeting Room 101</div>
                                 <div className="k-scheduler-cell k-heading-cell">Meeting Room 201</div>
                             </div>
                             <div className="k-scheduler-row">
                                 <div className="k-sticky-cell">
-                                    <div className="k-scheduler-cell k-side-cell" style={{ minWidth: "62px" }} ></div>
+                                    <div className="k-scheduler-cell k-side-cell" style={{ minWidth: "66px" }} ></div>
                                 </div>
                                 <div className="k-scheduler-cell k-heading-cell">Peter</div>
                                 <div className="k-scheduler-cell k-heading-cell">Alex</div>
@@ -63,7 +63,7 @@ root.render(
                             </div>
                             <div className="k-scheduler-row">
                                 <div className="k-sticky-cell">
-                                    <div className="k-scheduler-cell k-side-cell" style={{ minWidth: "62px" }} ></div>
+                                    <div className="k-scheduler-cell k-side-cell" style={{ minWidth: "66px" }} ></div>
                                 </div>
                                 <div className="k-scheduler-cell k-group-cell">
                                     <div className="k-scheduler-row">
@@ -136,7 +136,7 @@ root.render(
                         <div className="k-scheduler-group k-group-horizontal">
                             <div className="k-scheduler-row">
                                 <div className="k-sticky-cell">
-                                    <div className="k-scheduler-cell k-heading-cell k-side-cell k-scheduler-times-all-day" style={{ minWidth: "62px" }} >All events</div>
+                                    <div className="k-scheduler-cell k-heading-cell k-side-cell k-scheduler-times-all-day" style={{ minWidth: "66px" }} >All events</div>
                                 </div>
                                 <div className="k-scheduler-cell k-group-cell">
                                     <div className="k-scheduler-row">
@@ -150,8 +150,8 @@ root.render(
                                         <div className="k-scheduler-cell k-slot-cell" style={{ userSelect: 'none', minHeight: "10px" }} ></div>
                                         <div className="k-scheduler-cell k-slot-cell" style={{ userSelect: 'none', minHeight: "10px" }} ></div>
                                         <div className="k-scheduler-cell k-slot-cell" style={{ userSelect: 'none', minHeight: "36px" }} ></div>
-                                        <div className="k-scheduler-cell k-slot-cell" style={{ userSelect: 'none', minHeight: "62px" }} ></div>
-                                        <div className="k-scheduler-cell k-slot-cell" style={{ userSelect: 'none', minHeight: "62px" }} ></div>
+                                        <div className="k-scheduler-cell k-slot-cell" style={{ userSelect: 'none', minHeight: "66px" }} ></div>
+                                        <div className="k-scheduler-cell k-slot-cell" style={{ userSelect: 'none', minHeight: "66px" }} ></div>
                                         <div className="k-scheduler-cell k-slot-cell" style={{ userSelect: 'none', minHeight: "36px" }} ></div>
                                         <div className="k-scheduler-cell k-slot-cell" style={{ userSelect: 'none', minHeight: "10px" }} ></div>
                                         <div className="k-scheduler-cell k-slot-cell" style={{ userSelect: 'none', minHeight: "10px" }} ></div>
@@ -172,8 +172,8 @@ root.render(
                                         <div className="k-scheduler-cell k-slot-cell" style={{ userSelect: 'none', minHeight: "10px" }} ></div>
                                         <div className="k-scheduler-cell k-slot-cell" style={{ userSelect: 'none', minHeight: "10px" }} ></div>
                                         <div className="k-scheduler-cell k-slot-cell" style={{ userSelect: 'none', minHeight: "36px" }} ></div>
-                                        <div className="k-scheduler-cell k-slot-cell" style={{ userSelect: 'none', minHeight: "62px" }} ></div>
-                                        <div className="k-scheduler-cell k-slot-cell" style={{ userSelect: 'none', minHeight: "62px" }} ></div>
+                                        <div className="k-scheduler-cell k-slot-cell" style={{ userSelect: 'none', minHeight: "66px" }} ></div>
+                                        <div className="k-scheduler-cell k-slot-cell" style={{ userSelect: 'none', minHeight: "66px" }} ></div>
                                         <div className="k-scheduler-cell k-slot-cell" style={{ userSelect: 'none', minHeight: "36px" }} ></div>
                                         <div className="k-scheduler-cell k-slot-cell" style={{ userSelect: 'none', minHeight: "10px" }} ></div>
                                         <div className="k-scheduler-cell k-slot-cell" style={{ userSelect: 'none', minHeight: "10px" }} ></div>
@@ -306,7 +306,7 @@ root.render(
                             </div>
                             <span className="k-event-actions"><a className="k-link k-event-delete"><Icon name="x"></Icon></a></span><span className="k-resize-handle k-resize-w"></span><span className="k-resize-handle k-resize-e"></span>
                         </div>
-                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'green', backgroundColor: 'green', top: '0px', left: "4629px", width: "395px", height: "25px" }} >
+                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'green', backgroundColor: 'green', top: '0px', left: "4669px", width: "395px", height: "25px" }} >
                             <span className="k-event-actions"></span>
                             <div>
                                 <div className="k-event-template">Team planning meeting</div>
@@ -334,7 +334,7 @@ root.render(
                             </div>
                             <span className="k-event-actions"><a className="k-link k-event-delete"><Icon name="x"></Icon></a></span><span className="k-resize-handle k-resize-w"></span><span className="k-resize-handle k-resize-e"></span>
                         </div>
-                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'green', backgroundColor: 'green', top: "52px", left: "4629px", width: "197px", height: "25px" }} >
+                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'green', backgroundColor: 'green', top: "52px", left: "4669px", width: "197px", height: "25px" }} >
                             <span className="k-event-actions"></span>
                             <div>
                                 <div className="k-event-template">Replace the printer on the 1st floor</div>
@@ -439,6 +439,237 @@ root.render(
                                 <div className="k-event-template">Job Interview - Bernard Atkins</div>
                             </div>
                             <span className="k-event-actions"><a className="k-link k-event-delete"><Icon name="x"></Icon></a></span><span className="k-resize-handle k-resize-w"></span><span className="k-resize-handle k-resize-e"></span>
+                        </div>
+                    </div>
+                </div>
+                <div className="k-scheduler-footer k-toolbar">
+                    <Button icon="clock" className="k-scheduler-fullday">Show full day</Button>
+                </div>
+            </div>
+            <span></span>
+
+            <span>Scheduler with Slot Templates</span>
+            <div className="k-widget k-scheduler k-scheduler-flex" style={{ height: "400px" }} >
+                <div className="k-scheduler-toolbar k-toolbar">
+                    <span className="k-button-group k-scheduler-navigation">
+                        <Button>Today</Button>
+                        <Button icon="caret-alt-left"></Button>
+                        <Button icon="caret-alt-right"></Button>
+                    </span>
+                    <Button icon="calendar" className="k-nav-current" fillMode="flat" >
+                        Wednesday, June 24, 2020
+                    </Button>
+                    <span className="k-spacer"></span>
+                    <span className="k-scheduler-views-wrapper">
+                        <select className="k-views-dropdown k-picker k-dropdown-list k-dropdown k-rounded-md">
+                            <option>Timeline</option>
+                        </select>
+                        <span className="k-button-group k-scheduler-views">
+                            <Button>Day</Button>
+                            <Button>Week</Button>
+                            <Button>Month</Button>
+                            <Button selected>Timeline</Button>
+                            <Button>Agenda</Button>
+                        </span>
+                    </span>
+                </div>
+                <div className="k-scheduler-layout k-scheduler-layout-flex k-scheduler-timeline-view">
+                    <div className="k-scheduler-head" style={{ width: "7201px" }} >
+                        <div className="k-scheduler-group k-group-horizontal">
+                            <div className="k-scheduler-row">
+                                <div className="k-sticky-cell">
+                                    <div className="k-scheduler-cell k-side-cell" style={{ minWidth: "66px" }} ></div>
+                                </div>
+                                <div className="k-scheduler-cell k-heading-cell">Meeting Room 101</div>
+                                <div className="k-scheduler-cell k-heading-cell">Meeting Room 201</div>
+                            </div>
+                            <div className="k-scheduler-row">
+                                <div className="k-sticky-cell">
+                                    <div className="k-scheduler-cell k-side-cell" style={{ minWidth: "66px" }} ></div>
+                                </div>
+                                <div className="k-scheduler-cell k-heading-cell">Peter</div>
+                                <div className="k-scheduler-cell k-heading-cell">Alex</div>
+                                <div className="k-scheduler-cell k-heading-cell">Peter</div>
+                                <div className="k-scheduler-cell k-heading-cell">Alex</div>
+                            </div>
+                            <div className="k-scheduler-row">
+                                <div className="k-sticky-cell">
+                                    <div className="k-scheduler-cell k-side-cell" style={{ minWidth: "66px" }} ></div>
+                                </div>
+                                <div className="k-scheduler-cell k-group-cell">
+                                    <div className="k-scheduler-row">
+                                        <div className="k-scheduler-cell k-heading-cell">Jun 24</div>
+                                    </div>
+                                    <div className="k-scheduler-row">
+                                        <div className="k-scheduler-cell k-heading-cell">8:00 AM</div>
+                                        <div className="k-scheduler-cell k-heading-cell">9:00 AM</div>
+                                        <div className="k-scheduler-cell k-heading-cell">10:00 AM</div>
+                                        <div className="k-scheduler-cell k-heading-cell">11:00 AM</div>
+                                        <div className="k-scheduler-cell k-heading-cell">12:00 PM</div>
+                                        <div className="k-scheduler-cell k-heading-cell">1:00 PM</div>
+                                        <div className="k-scheduler-cell k-heading-cell">2:00 PM</div>
+                                        <div className="k-scheduler-cell k-heading-cell">3:00 PM</div>
+                                        <div className="k-scheduler-cell k-heading-cell">4:00 PM</div>
+                                    </div>
+                                </div>
+                                <div className="k-scheduler-cell k-group-cell">
+                                    <div className="k-scheduler-row">
+                                        <div className="k-scheduler-cell k-heading-cell">Jun 24</div>
+                                    </div>
+                                    <div className="k-scheduler-row">
+                                        <div className="k-scheduler-cell k-heading-cell">8:00 AM</div>
+                                        <div className="k-scheduler-cell k-heading-cell">9:00 AM</div>
+                                        <div className="k-scheduler-cell k-heading-cell">10:00 AM</div>
+                                        <div className="k-scheduler-cell k-heading-cell">11:00 AM</div>
+                                        <div className="k-scheduler-cell k-heading-cell">12:00 PM</div>
+                                        <div className="k-scheduler-cell k-heading-cell">1:00 PM</div>
+                                        <div className="k-scheduler-cell k-heading-cell">2:00 PM</div>
+                                        <div className="k-scheduler-cell k-heading-cell">3:00 PM</div>
+                                        <div className="k-scheduler-cell k-heading-cell">4:00 PM</div>
+                                    </div>
+                                </div>
+                                <div className="k-scheduler-cell k-group-cell">
+                                    <div className="k-scheduler-row">
+                                        <div className="k-scheduler-cell k-heading-cell">Jun 24</div>
+                                    </div>
+                                    <div className="k-scheduler-row">
+                                        <div className="k-scheduler-cell k-heading-cell">8:00 AM</div>
+                                        <div className="k-scheduler-cell k-heading-cell">9:00 AM</div>
+                                        <div className="k-scheduler-cell k-heading-cell">10:00 AM</div>
+                                        <div className="k-scheduler-cell k-heading-cell">11:00 AM</div>
+                                        <div className="k-scheduler-cell k-heading-cell">12:00 PM</div>
+                                        <div className="k-scheduler-cell k-heading-cell">1:00 PM</div>
+                                        <div className="k-scheduler-cell k-heading-cell">2:00 PM</div>
+                                        <div className="k-scheduler-cell k-heading-cell">3:00 PM</div>
+                                        <div className="k-scheduler-cell k-heading-cell">4:00 PM</div>
+                                    </div>
+                                </div>
+                                <div className="k-scheduler-cell k-group-cell">
+                                    <div className="k-scheduler-row">
+                                        <div className="k-scheduler-cell k-heading-cell">Jun 24</div>
+                                    </div>
+                                    <div className="k-scheduler-row">
+                                        <div className="k-scheduler-cell k-heading-cell">8:00 AM</div>
+                                        <div className="k-scheduler-cell k-heading-cell">9:00 AM</div>
+                                        <div className="k-scheduler-cell k-heading-cell">10:00 AM</div>
+                                        <div className="k-scheduler-cell k-heading-cell">11:00 AM</div>
+                                        <div className="k-scheduler-cell k-heading-cell">12:00 PM</div>
+                                        <div className="k-scheduler-cell k-heading-cell">1:00 PM</div>
+                                        <div className="k-scheduler-cell k-heading-cell">2:00 PM</div>
+                                        <div className="k-scheduler-cell k-heading-cell">3:00 PM</div>
+                                        <div className="k-scheduler-cell k-heading-cell">4:00 PM</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="k-scheduler-body" style={{ width: "7201px" }} >
+                        <div className="k-scheduler-group k-group-horizontal">
+                            <div className="k-scheduler-row">
+                                <div className="k-sticky-cell">
+                                    <div className="k-scheduler-cell k-heading-cell k-side-cell k-scheduler-times-all-day" style={{ minWidth: "66px" }} >All events</div>
+                                </div>
+                                <div className="k-scheduler-cell k-group-cell">
+                                    <div className="k-scheduler-row">
+                                        <div className="k-scheduler-cell k-slot-cell" style={{ backgroundColor: "#f5f5f5" }} >
+                                            <div className="!k-pos-absolute">Start</div>
+                                        </div>
+                                        <div className="k-scheduler-cell k-slot-cell" ></div>
+                                        <div className="k-scheduler-cell k-slot-cell" style={{ backgroundColor: "#f5f5f5" }} >
+                                            <div className="!k-pos-absolute">Start</div>
+                                        </div>
+                                        <div className="k-scheduler-cell k-slot-cell" style={{ backgroundColor: "#f5f5f5" }} >
+                                            <div className="!k-pos-absolute">End</div>
+                                        </div>
+                                        <div className="k-scheduler-cell k-slot-cell" style={{ backgroundColor: "#f5f5f5" }} >
+                                            <div className="!k-pos-absolute">Start</div>
+                                        </div>
+                                        <div className="k-scheduler-cell k-slot-cell" style={{ backgroundColor: "#f5f5f5" }} >
+                                            <div className="!k-pos-absolute">End</div>
+                                        </div>
+                                        <div className="k-scheduler-cell k-slot-cell" ></div>
+                                        <div className="k-scheduler-cell k-slot-cell" style={{ userSelect: 'none', minHeight: "10px" }} ></div>
+                                        <div className="k-scheduler-cell k-slot-cell" style={{ userSelect: 'none', minHeight: "10px" }} ></div>
+                                        <div className="k-scheduler-cell k-slot-cell" style={{ userSelect: 'none', minHeight: "36px" }} ></div>
+                                        <div className="k-scheduler-cell k-slot-cell" style={{ userSelect: 'none', minHeight: "62px" }} ></div>
+                                        <div className="k-scheduler-cell k-slot-cell" style={{ userSelect: 'none', minHeight: "62px" }} ></div>
+                                        <div className="k-scheduler-cell k-slot-cell" style={{ userSelect: 'none', minHeight: "36px", backgroundColor: "#f5f5f5" }} >
+                                            <div className="!k-pos-absolute">Start</div>
+                                        </div>
+                                        <div className="k-scheduler-cell k-slot-cell" style={{ userSelect: 'none', minHeight: "10px" }} ></div>
+                                        <div className="k-scheduler-cell k-slot-cell" style={{ userSelect: 'none', minHeight: "10px" }} ></div>
+                                        <div className="k-scheduler-cell k-slot-cell"></div>
+                                        <div className="k-scheduler-cell k-slot-cell"></div>
+                                        <div className="k-scheduler-cell k-slot-cell" style={{ userSelect: 'none', minHeight: "36px" }} ></div>
+                                    </div>
+                                </div>
+                                <div className="k-scheduler-cell k-group-cell">
+                                    <div className="k-scheduler-row">
+                                        <div className="k-scheduler-cell k-slot-cell"></div>
+                                        <div className="k-scheduler-cell k-slot-cell"></div>
+                                        <div className="k-scheduler-cell k-slot-cell"></div>
+                                        <div className="k-scheduler-cell k-slot-cell"></div>
+                                        <div className="k-scheduler-cell k-slot-cell"></div>
+                                        <div className="k-scheduler-cell k-slot-cell"></div>
+                                        <div className="k-scheduler-cell k-slot-cell"></div>
+                                        <div className="k-scheduler-cell k-slot-cell" style={{ userSelect: 'none', minHeight: "10px" }} ></div>
+                                        <div className="k-scheduler-cell k-slot-cell" style={{ userSelect: 'none', minHeight: "10px" }} ></div>
+                                        <div className="k-scheduler-cell k-slot-cell" style={{ userSelect: 'none', minHeight: "36px" }} ></div>
+                                        <div className="k-scheduler-cell k-slot-cell" style={{ userSelect: 'none', minHeight: "62px" }} ></div>
+                                        <div className="k-scheduler-cell k-slot-cell" style={{ userSelect: 'none', minHeight: "62px" }} ></div>
+                                        <div className="k-scheduler-cell k-slot-cell" style={{ userSelect: 'none', minHeight: "36px" }} ></div>
+                                        <div className="k-scheduler-cell k-slot-cell" style={{ userSelect: 'none', minHeight: "10px" }} ></div>
+                                        <div className="k-scheduler-cell k-slot-cell" style={{ userSelect: 'none', minHeight: "10px" }} ></div>
+                                        <div className="k-scheduler-cell k-slot-cell"></div>
+                                        <div className="k-scheduler-cell k-slot-cell"></div>
+                                        <div className="k-scheduler-cell k-slot-cell" style={{ userSelect: 'none', minHeight: "36px" }} ></div>
+                                    </div>
+                                </div>
+                                <div className="k-scheduler-cell k-group-cell">
+                                    <div className="k-scheduler-row">
+                                        <div className="k-scheduler-cell k-slot-cell"></div>
+                                        <div className="k-scheduler-cell k-slot-cell"></div>
+                                        <div className="k-scheduler-cell k-slot-cell"></div>
+                                        <div className="k-scheduler-cell k-slot-cell"></div>
+                                        <div className="k-scheduler-cell k-slot-cell"></div>
+                                        <div className="k-scheduler-cell k-slot-cell"></div>
+                                        <div className="k-scheduler-cell k-slot-cell"></div>
+                                        <div className="k-scheduler-cell k-slot-cell" style={{ userSelect: 'none', minHeight: "10px" }} ></div>
+                                        <div className="k-scheduler-cell k-slot-cell" style={{ userSelect: 'none', minHeight: "10px" }} ></div>
+                                        <div className="k-scheduler-cell k-slot-cell" style={{ userSelect: 'none', minHeight: "36px" }} ></div>
+                                        <div className="k-scheduler-cell k-slot-cell" style={{ userSelect: 'none', minHeight: "62px" }} ></div>
+                                        <div className="k-scheduler-cell k-slot-cell" style={{ userSelect: 'none', minHeight: "62px" }} ></div>
+                                        <div className="k-scheduler-cell k-slot-cell" style={{ userSelect: 'none', minHeight: "36px" }} ></div>
+                                        <div className="k-scheduler-cell k-slot-cell" style={{ userSelect: 'none', minHeight: "10px" }} ></div>
+                                        <div className="k-scheduler-cell k-slot-cell" style={{ userSelect: 'none', minHeight: "10px" }} ></div>
+                                        <div className="k-scheduler-cell k-slot-cell"></div>
+                                        <div className="k-scheduler-cell k-slot-cell"></div>
+                                        <div className="k-scheduler-cell k-slot-cell" style={{ userSelect: 'none', minHeight: "36px" }} ></div>
+                                    </div>
+                                </div>
+                                <div className="k-scheduler-cell k-group-cell">
+                                    <div className="k-scheduler-row">
+                                        <div className="k-scheduler-cell k-slot-cell"></div>
+                                        <div className="k-scheduler-cell k-slot-cell"></div>
+                                        <div className="k-scheduler-cell k-slot-cell"></div>
+                                        <div className="k-scheduler-cell k-slot-cell"></div>
+                                        <div className="k-scheduler-cell k-slot-cell"></div>
+                                        <div className="k-scheduler-cell k-slot-cell"></div>
+                                        <div className="k-scheduler-cell k-slot-cell"></div>
+                                        <div className="k-scheduler-cell k-slot-cell" style={{ userSelect: 'none', minHeight: "10px" }} ></div>
+                                        <div className="k-scheduler-cell k-slot-cell" style={{ userSelect: 'none', minHeight: "10px" }} ></div>
+                                        <div className="k-scheduler-cell k-slot-cell" style={{ userSelect: 'none', minHeight: "36px" }} ></div>
+                                        <div className="k-scheduler-cell k-slot-cell" style={{ userSelect: 'none', minHeight: "62px" }} ></div>
+                                        <div className="k-scheduler-cell k-slot-cell" style={{ userSelect: 'none', minHeight: "62px" }} ></div>
+                                        <div className="k-scheduler-cell k-slot-cell" style={{ userSelect: 'none', minHeight: "36px" }} ></div>
+                                        <div className="k-scheduler-cell k-slot-cell" style={{ userSelect: 'none', minHeight: "10px" }} ></div>
+                                        <div className="k-scheduler-cell k-slot-cell" style={{ userSelect: 'none', minHeight: "10px" }} ></div>
+                                        <div className="k-scheduler-cell k-slot-cell"></div>
+                                        <div className="k-scheduler-cell k-slot-cell"></div>
+                                        <div className="k-scheduler-cell k-slot-cell" style={{ userSelect: 'none', minHeight: "36px" }} ></div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
