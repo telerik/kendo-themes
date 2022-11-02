@@ -10,6 +10,7 @@
         display: inline-flex;
         flex-flow: column-reverse wrap;
         position: fixed;
+        z-index: 1000;
     }
 
     .k-notification-container {
