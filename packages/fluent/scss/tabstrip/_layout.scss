@@ -39,7 +39,6 @@
         border-style: solid;
         border-color: inherit;
         position: relative;
-        z-index: 2;
     }
 
     .k-tabstrip-items {
@@ -47,7 +46,8 @@
         outline: 0;
         display: flex;
         flex-flow: row wrap;
-        flex: 0 0 auto;
+        flex: 1 1 auto;
+        gap: $kendo-tabstrip-item-gap;
 
         *,
         *::before,
@@ -67,16 +67,11 @@
             justify-items: stretch;
             outline: 0;
 
-            &::before {
-                content: "";
-                border-style: solid;
-                border-color: var( --kendo-tabstrip-item-ripple-border, #{$kendo-tabstrip-item-ripple-border} );
-                display: block;
-                position: absolute;
-                z-index: 2;
-                opacity: 0;
-                transition: opacity .3s, transform .3s;
-                pointer-events: none;
+            // Active state
+            &:active,
+            &.k-active,
+            &.k-selected {
+                font-weight: var( --kendo-tabstrip-item-selected-font-weight, #{$kendo-tabstrip-item-selected-font-weight} );
             }
         }
 
@@ -97,12 +92,10 @@
             align-items: center;
         }
     }
-    .k-ie11 .k-tabstrip-items {
-        white-space: nowrap;
-    }
 
     .k-tabstrip-content,
     .k-tabstrip > .k-content {
+        margin: 0 !important; // sass-lint:disable-line no-important
         padding-inline: var( --kendo-tabstrip-content-padding-x, #{$kendo-tabstrip-content-padding-x} ) ;
         padding-block: var( --kendo-tabstrip-content-padding-y, #{$kendo-tabstrip-content-padding-y} ) ;
         box-sizing: border-box;
@@ -113,7 +106,6 @@
         overflow: auto;
         flex: 1 1 auto;
         position: relative;
-        z-index: 1;
 
         &:active,
         &.k-active {
@@ -149,7 +141,6 @@
         > .k-tabstrip-items-wrapper {
 
             > .k-tabstrip-items {
-                flex: 1 1 auto;
                 flex-wrap: nowrap;
                 white-space: nowrap;
                 overflow: hidden;
@@ -183,40 +174,13 @@
     }
 
 
-    // Tabstrip variants
+    // Tabstrip position
     .k-tabstrip-top {
         > .k-tabstrip-items-wrapper {
             border-bottom-width: var( --kendo-tabstrip-border-width, #{$kendo-tabstrip-border-width} );
-            margin-block-end: calc( var( --kendo-tabstrip-content-border-width, #{$kendo-tabstrip-content-border-width} ) * -1 );
-
-            > .k-tabstrip-items {
-                width: 100%;
-            }
 
             .k-item {
                 margin-block-end: calc( var( --kendo-tabstrip-border-width, #{$kendo-tabstrip-border-width} ) * -1 );
-
-                &::before {
-                    width: 100%;
-                    border-width: 0 0 var( --kendo-tabstrip-item-ripple-border-width, #{$kendo-tabstrip-item-ripple-border-width} ) 0;
-                    inset-block-end: 0;
-                    transform: scaleX(0);
-                }
-
-                &:active,
-                &.k-active,
-                &.k-selected {
-                    font-weight: var( --kendo-tabstrip-item-selected-font-weight, #{$kendo-tabstrip-item-selected-font-weight} );
-
-                    &::before {
-                        opacity: 1;
-                        transform: scaleX(1);
-                    }
-                }
-            }
-
-            .k-item + .k-item {
-                margin-inline-start: var( --kendo-tabstrip-item-gap, #{$kendo-tabstrip-item-gap} );
             }
 
         }
@@ -224,38 +188,9 @@
     .k-tabstrip-bottom {
         > .k-tabstrip-items-wrapper {
             border-top-width: var( --kendo-tabstrip-border-width, #{$kendo-tabstrip-border-width} );
-            margin-block-start: calc( var( --kendo-tabstrip-content-border-width, #{$kendo-tabstrip-content-border-width} ) * -1 );
-
-            > .k-tabstrip-items {
-                width: 100%;
-            }
 
             .k-item {
                 margin-block-start: calc( var( --kendo-tabstrip-border-width, #{$kendo-tabstrip-border-width} ) * -1 );
-
-                &::before {
-                    width: 100%;
-                    border-width: var( --kendo-tabstrip-item-ripple-border-width, #{$kendo-tabstrip-item-ripple-border-width} ) 0 0 0;
-                    inset-block-start: 0;
-                    transform: scaleX(0);
-                }
-
-                &:active,
-                &.k-active,
-                &.k-selected {
-                    font-weight: var( --kendo-tabstrip-item-selected-font-weight, #{$kendo-tabstrip-item-selected-font-weight} );
-
-                    &::before {
-                        opacity: 1;
-                        transform: scaleX(1);
-                    }
-
-                }
-
-            }
-
-            .k-item + .k-item {
-                margin-inline-start: var( --kendo-tabstrip-item-gap, #{$kendo-tabstrip-item-gap} );
             }
 
         }
@@ -265,46 +200,14 @@
 
         > .k-tabstrip-items-wrapper {
             border-right-width: var( --kendo-tabstrip-border-width, #{$kendo-tabstrip-border-width} );
-            margin-inline-end: calc( var( --kendo-tabstrip-content-border-width, #{$kendo-tabstrip-content-border-width} ) * -1 );
 
             > .k-tabstrip-items {
-                height: 100%;
-                display: inline-flex;
                 flex-direction: column;
             }
 
             .k-item {
                 margin-inline-end: calc( var( --kendo-tabstrip-border-width, #{$kendo-tabstrip-border-width} ) * -1 );
-
-                &::before {
-                    height: 100%;
-                    border-width: 0 var( --kendo-tabstrip-item-ripple-border-width, #{$kendo-tabstrip-item-ripple-border-width} ) 0 0;
-                    inset-inline-end: 0;
-                    transform: scaleY(0);
-                }
-
-                &:active,
-                &.k-active,
-                &.k-selected {
-                    font-weight: var( --kendo-tabstrip-item-selected-font-weight, #{$kendo-tabstrip-item-selected-font-weight} );
-
-                    &::before {
-                        opacity: 1;
-                        transform: scaleY(1);
-                    }
-
-                }
-
             }
-
-            .k-item + .k-item {
-                margin-block-start: var( --kendo-tabstrip-item-gap, #{$kendo-tabstrip-item-gap} );
-            }
-        }
-
-        > .k-content,
-        > .k-tabstrip-content {
-            margin: 0 !important; // sass-lint:disable-line no-important
         }
 
     }
@@ -313,55 +216,35 @@
 
         > .k-tabstrip-items-wrapper {
             border-left-width: var( --kendo-tabstrip-border-width, #{$kendo-tabstrip-border-width} );
-            margin-inline-start: calc( var( --kendo-tabstrip-content-border-width, #{$kendo-tabstrip-content-border-width} ) * -1 );
 
             > .k-tabstrip-items {
-                height: 100%;
-                display: inline-flex;
                 flex-direction: column;
             }
 
             .k-item {
                 margin-inline-start: calc( var( --kendo-tabstrip-border-width, #{$kendo-tabstrip-border-width} ) * -1 );
-
-                &::before {
-                    height: 100%;
-                    border-width: 0 0 0 var( --kendo-tabstrip-item-ripple-border-width, #{$kendo-tabstrip-item-ripple-border-width} );
-                    inset-inline-start: 0;
-                    transform: scaleY(0);
-                }
-
-                &:active,
-                &.k-active,
-                &.k-selected {
-                    font-weight: var( --kendo-tabstrip-item-selected-font-weight, #{$kendo-tabstrip-item-selected-font-weight} );
-
-                    &::before {
-                        opacity: 1;
-                        transform: scaleY(1);
-                    }
-
-                }
-
             }
-
-            .k-item + .k-item {
-                margin-block-start: var( --kendo-tabstrip-item-gap, #{$kendo-tabstrip-item-gap} );
-            }
-        }
-
-        > .k-content,
-        > .k-tabstrip-content {
-            margin: 0 !important; // sass-lint:disable-line no-important
         }
     }
 
-    // Hide tabstrip ripple when dragging
-    .k-tabstrip-items-wrapper .k-item.k-tabstrip-dragging {
-        &::before {
-            display: none !important; // sass-lint:disable-line no-important
-        }
+
+    // Tabstrip align
+    .k-tabstrip-items-start {
+        justify-content: flex-start;
     }
+    .k-tabstrip-items-center {
+        justify-content: center;
+    }
+    .k-tabstrip-items-end {
+        justify-content: flex-end;
+    }
+    .k-tabstrip-items-justify {
+        justify-content: space-between;
+    }
+    .k-tabstrip-items-stretched > * {
+        flex: 1 0 0;
+    }
+
 
     // Selected indicator
     @if ($kendo-tabstrip-indicator-size) {
@@ -372,13 +255,17 @@
                 content: "";
                 border-width: 0;
                 border-style: solid;
-                display: none;
+                display: block;
                 position: absolute;
-                z-index: 0;
+                z-index: 2;
                 top: 0;
                 right: 0;
                 bottom: 0;
                 left: 0;
+                opacity: 0;
+                transform: scaleY(0);
+                pointer-events: none;
+                transition: opacity .3s, transform .3s;
 
                 // Variants
                 .k-tabstrip-top > & {
@@ -394,12 +281,22 @@
                     border-left-width: var( --kendo-tabstrip-indicator-size, #{$kendo-tabstrip-indicator-size} );
                 }
             }
-            .k-item.k-active::after {
-                display: block;
+            .k-item:active::after,
+            .k-item.k-active::after,
+            .k-item.k-selected::after {
+                opacity: 1;
+                transform: scaleY(1);
             }
 
             .k-item > .k-link {
                 z-index: 1;
+            }
+        }
+
+        // Hide tabstrip indicator when dragging
+        .k-tabstrip-items-wrapper .k-item.k-tabstrip-dragging {
+            &::after {
+                display: none !important; // sass-lint:disable-line no-important
             }
         }
 

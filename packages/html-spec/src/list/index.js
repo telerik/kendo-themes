@@ -1,3 +1,7 @@
-const componentJson = require('./list.json');
+const listJson = require('./list.json');
+const listItemJson = require('./list-item.json');
 
-exports.list = componentJson;
+exports.list = [
+    listJson,
+    listItemJson
+];

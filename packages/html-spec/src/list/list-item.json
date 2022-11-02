@@ -1,0 +1,67 @@
+{
+    "$schema": "../../schemas/component.schema.json",
+    "title": "Kendo List Item HTML Spec",
+    "component": "list-item",
+    "selector": [
+        ".k-list-item"
+    ],
+    "states": [
+        {
+            "name": "hover",
+            "selector": [
+                ":hover",
+                ".k-hover"
+            ]
+        },
+        {
+            "name": "focus",
+            "selector": [
+                ":focus",
+                ".k-focus"
+            ]
+        },
+        {
+            "name": "active",
+            "selector": [
+                ":active",
+                ".k-active"
+            ]
+        },
+        {
+            "name": "selected",
+            "selector": [
+                ".k-selected"
+            ]
+        },
+        {
+            "name": "disabled",
+            "selector": [
+                ":disabled",
+                "[disabled]",
+                ".k-disabled"
+            ]
+        }
+    ],
+    "children": [
+        {
+            "name": "list-item-checkbox",
+            "$ref": "checkbox",
+            "selector": [
+                ".k-checkbox"
+            ]
+        },
+        {
+            "name": "list-item-icon",
+            "$ref": "icon",
+            "selector": [
+                ".k-icon"
+            ]
+        },
+        {
+            "name": "list-item-text",
+            "selector": [
+                ".k-list-item-text"
+            ]
+        }
+    ]
+}
