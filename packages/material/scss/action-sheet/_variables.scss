@@ -23,9 +23,9 @@ $actionsheet-shadow: $box-shadow-depth-4 !default;
 $actionsheet-titlebar-padding-x: k-map-get( $spacing, 4 ) !default;
 $actionsheet-titlebar-padding-y: k-map-get( $spacing, 2 ) !default;
 $actionsheet-titlebar-border-width: null !default;
-$actionsheet-titlebar-font-size: null !default;
+$actionsheet-titlebar-font-size: $font-size-lg !default;
 $actionsheet-titlebar-font-family: null !default;
-$actionsheet-titlebar-line-height: null !default;
+$actionsheet-titlebar-line-height: 1.25 !default;
 $actionsheet-titlebar-gap: k-map-get( $spacing, 4 ) !default;
 
 $actionsheet-titlebar-bg: null !default;
