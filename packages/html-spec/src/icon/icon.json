@@ -1,21 +1,21 @@
-[
-    {
-        "component": "icon",
-        "selector": [
-            ".k-icon"
-        ],
-        "options": [
-            {
-                "name": "name",
-                "values": [
-                    {
-                        "name": "*",
-                        "selector": [
-                            ".k-i-{options.name}"
-                        ]
-                    }
-                ]
-            }
-        ]
-    }
-]
+{
+    "$schema": "../../schemas/component.schema.json",
+    "title": "Kendo Icon HTML Spec",
+    "component": "icon",
+    "selector": [
+        ".k-icon"
+    ],
+    "options": [
+        {
+            "name": "name",
+            "values": [
+                {
+                    "name": "*",
+                    "selector": [
+                        ".k-i-{options.name}"
+                    ]
+                }
+            ]
+        }
+    ]
+}
