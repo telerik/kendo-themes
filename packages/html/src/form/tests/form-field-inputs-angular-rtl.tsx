@@ -4,12 +4,12 @@ import { Button } from '../../button';
 import { Checkbox } from '../../checkbox';
 import { ColorPicker } from '../../colorpicker';
 import { FloatingLabel } from '../../floating-label';
-import { Icon } from '../../icon';
 import { MaskedTextbox } from '../../maskedtextbox';
 import { NumericTextbox } from '../../numerictextbox';
 import { RadioButton } from '../../radio';
 import { Switch } from '../../switch';
 import { Textbox } from '../../textbox';
+import { Upload, UploadFile } from '../../upload';
 
 const root = ReactDOM.createRoot(
     document.getElementById('app') as HTMLElement

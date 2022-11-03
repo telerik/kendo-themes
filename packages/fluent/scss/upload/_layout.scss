@@ -28,11 +28,12 @@
         }
 
         // Drop zone
-        .k-dropzone {
+        .k-dropzone,
+        .k-upload-dropzone {
             padding-inline: var( --kendo-upload-dropzone-padding-x, #{$kendo-upload-dropzone-padding-x} );
             padding-block: var( --kendo-upload-dropzone-padding-y, #{$kendo-upload-dropzone-padding-y} );
             border-width: 0;
-            text-align: right;
+            text-align: end;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -151,7 +152,7 @@
             .k-file-name,
             .k-file-size,
             .k-file-validation-message,
-            .k-file-information {
+            .k-file-summary {
                 display: block;
             }
 
@@ -163,7 +164,7 @@
             }
 
             .k-file-size,
-            .k-file-information,
+            .k-file-summary,
             .k-file-validation-message {
                 font-size: var( --kendo-upload-validation-font-size, #{$kendo-upload-validation-font-size} );
             }
@@ -172,12 +173,9 @@
                 visibility: hidden;
             }
 
-            .k-file-group-wrapper,
-            .k-file-invalid-group-wrapper,
-            .k-multiple-files-group-wrapper,
-            .k-multiple-files-invalid-group-wrapper {
+            .k-file-icon-wrapper {
 
-                .k-file-group {
+                .k-file-icon {
                     font-size: var( --kendo-upload-group-icon-size, #{$kendo-upload-group-icon-size} );
                 }
 
@@ -187,7 +185,7 @@
             }
         }
 
-        .k-upload-files .k-file-name-size-wrapper {
+        .k-upload-files .k-file-info {
             margin-inline-start: 0;
             margin-inline-end: 0;
             min-height: var( --kendo-upload-group-icon-size, #{$kendo-upload-group-icon-size} );
@@ -197,8 +195,7 @@
         }
 
         .k-multiple-files-wrapper,
-        .k-file-single > .k-file-name-size-wrapper,
-        .k-file > .k-file-name-size-wrapper {
+        .k-file-single > .k-file-info {
             margin-inline-start: var( --kendo-padding-x, #{$kendo-padding-x} );
             margin-inline-end: 0;
             min-height: var( --kendo-upload-group-icon-size, #{$kendo-upload-group-icon-size} );
@@ -208,29 +205,24 @@
         }
 
         .k-multiple-files-wrapper {
-            .k-file-name-size-wrapper {
+
+            .k-file-info {
                 margin-block-end: var( --kendo-upload-multiple-items-spacing, #{$kendo-upload-multiple-items-spacing} );
                 display: block;
             }
 
-            .k-file-information {
+            .k-file-summary {
                 margin-block-start: calc( -1 * var( --kendo-upload-multiple-items-spacing, #{$kendo-upload-multiple-items-spacing} ) / 3);
             }
         }
 
         .k-progressbar {
-            height: var( --kendo-upload-progress-thickness, #{$kendo-upload-progress-thickness} );
+            --kendo-progressbar-height: var( --kendo-upload-progress-thickness, #{$kendo-upload-progress-thickness} );
             position: absolute;
+            left: var( --kendo-upload-item-padding-x, #{$kendo-upload-item-padding-x} );
+            right: var( --kendo-upload-item-padding-x, #{$kendo-upload-item-padding-x} );
             bottom: calc( var( --kendo-upload-item-padding-y, #{$kendo-upload-item-padding-y} ) / 2 );
-            // successed
-            width: calc( 100% - var( --kendo-upload-item-padding-x, #{$kendo-upload-item-padding-x} ) * 2);
-
-            .k-progress {
-                position: absolute;
-                width: 100%;
-                max-width: 100%;
-                height: 100%;
-            }
+            width: auto;
         }
 
         // Action buttons
@@ -238,18 +230,10 @@
             border-top-width: 1px;
         }
 
-        // RTL styles
-        &[dir = "rtl"],
-        .k-rtl & {
-            .k-dropzone {
-                text-align: left;
-            }
-        }
     }
 
-    .k-upload-button {
+    .k-upload-button-wrap {
         position: relative;
-        overflow: hidden;
         direction: ltr;
 
         input {

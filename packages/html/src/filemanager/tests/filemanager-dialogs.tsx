@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { Dialog } from '../../dialog';
 import { Button } from '../../button';
+import { Upload } from '../../upload';
 
 const root = ReactDOM.createRoot(
     document.getElementById('app') as HTMLElement
@@ -21,14 +22,8 @@ root.render(
 
             {/* Upload Dialog */}
             <section>
-
                 <Dialog title="Upload Files" actions={[ 'close' ]} actionButtons actionButtonsAlign="end" className="k-filemanager-upload-dialog">
-                    <div className="k-upload k-upload-async k-upload-empty">
-                        <div className="k-dropzone">
-                            <Button className="k-upload-button">Select files...</Button>
-                            <em className="k-dropzone-hint">Drop files here to upload</em>
-                        </div>
-                    </div>
+                    <Upload async empty status="upload"></Upload>
                 </Dialog>
 
             </section>

@@ -24,10 +24,11 @@
         }
 
         // Drop zone
-        .k-dropzone {
+        .k-dropzone,
+        .k-upload-dropzone {
             padding: $kendo-upload-dropzone-padding-y $kendo-upload-dropzone-padding-x;
             border-width: 0;
-            text-align: right;
+            text-align: end;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -51,7 +52,7 @@
                 position: relative;
 
                 > .k-icon {
-                    margin-right: $kendo-upload-icon-spacing;
+                    margin-inline-end: $kendo-upload-icon-spacing;
                 }
             }
 
@@ -105,6 +106,7 @@
                 align-items: flex-start;
                 position: relative;
             }
+
             .k-file:last-child {
                 border-width: 0;
             }
@@ -116,12 +118,6 @@
                 text-overflow: ellipsis;
                 white-space: nowrap;
                 position: relative;
-            }
-
-            .k-upload-status {
-                .k-icon {
-                    vertical-align: middle;
-                }
             }
 
             .k-upload-pct {
@@ -145,7 +141,7 @@
             .k-file-name,
             .k-file-size,
             .k-file-validation-message,
-            .k-file-information {
+            .k-file-summary {
                 display: block;
             }
 
@@ -157,33 +153,16 @@
             }
 
             .k-file-size,
-            .k-file-information,
+            .k-file-summary,
             .k-file-validation-message {
                 font-size: $kendo-upload-validation-font-size;
                 line-height: 1;
             }
 
-            .k-file-extension-wrapper,
-            .k-multiple-files-extension-wrapper,
-            .k-file-invalid-extension-wrapper,
-            .k-multiple-files-invalid-extension-wrapper {
-                margin: ($kendo-upload-item-image-border / 2) 0;
-                width: 24px;
-                height: 34px;
-                border-width: 2px;
-                border-style: solid;
-                font-size: ($font-size * .57);
-                text-transform: uppercase;
-                position: absolute;
-                top: $kendo-upload-item-padding-y;
-            }
 
-            .k-file-group-wrapper,
-            .k-file-invalid-group-wrapper,
-            .k-multiple-files-group-wrapper,
-            .k-multiple-files-invalid-group-wrapper {
+            .k-file-icon-wrapper {
 
-                .k-file-group {
+                .k-file-icon {
                     font-size: $kendo-upload-group-icon-size;
                 }
 
@@ -192,135 +171,21 @@
                 }
             }
 
-            .k-file-invalid-extension-wrapper,
-            .k-multiple-files-invalid-extension-wrapper {
-                font-size: 1.2em;
-            }
-
-            .k-multiple-files-extension-wrapper,
-            .k-multiple-files-invalid-extension-wrapper {
-                margin-top: $padding-y;
-            }
-
             .k-file-state {
                 visibility: hidden;
             }
-
-            // Old icon rendering
-            .k-file-invalid-extension-wrapper + .k-file-name-size-wrapper,
-            .k-file-single > .k-file-extension-wrapper + .k-file-name-size-wrapper {
-                // 24px - image width
-                margin-left: calc( 24px + #{$spacer-x} );
-                // 34px - $kendo-upload-item-image-height; 2px - $kendo-upload-item-image-border;
-                min-height: 34px + (2px * 2);
-                display: block;
-                overflow: hidden;
-            }
-
-            // Old icon rendering
-            .k-multiple-files-invalid-extension-wrapper + .k-file-name-size-wrapper,
-            .k-multiple-files-extension-wrapper + .k-file-name-size-wrapper {
-                // 24px - image width
-                margin-left: calc( 24px + #{$spacer-x} );
-            }
-
-            // Old icon rendering
-            .k-file-extension-wrapper + .k-file-name-size-wrapper {
-                margin-bottom: -2px;
-
-                .k-file-size,
-                .k-file-information,
-                .k-file-validation-message {
-                    font-size: $font-size-sm * .786;
-                }
-            }
-
-            // Old icon rendering
-            .k-file-extension-wrapper::before,
-            .k-multiple-files-extension-wrapper::before,
-            .k-multiple-files-extension-wrapper::after,
-            .k-file-invalid-extension-wrapper::before,
-            .k-multiple-files-invalid-extension-wrapper::before,
-            .k-multiple-files-invalid-extension-wrapper::after {
-                content: "";
-                border-style: solid;
-                display: inline-block;
-                position: absolute;
-            }
-
-            // Old icon rendering
-            .k-file-extension-wrapper::before,
-            .k-multiple-files-extension-wrapper::before,
-            .k-file-invalid-extension-wrapper::before,
-            .k-multiple-files-invalid-extension-wrapper::before {
-                top: -1px;
-                right: -1px;
-                width: 0;
-                height: 0;
-                border-width: 6px;
-                margin-top: -1px;
-                margin-right: -1px;
-            }
-
-            // Old icon rendering
-            .k-multiple-files-extension-wrapper::after,
-            .k-multiple-files-invalid-extension-wrapper::after {
-                top: -6px;
-                left: -6px;
-                width: 15px;
-                height: 35px;
-                border-width: 2px 0 0 2px;
-            }
-
-            // Old icon rendering
-            .k-file-extension,
-            .k-file-invalid-icon {
-                position: absolute;
-                bottom: 0;
-                line-height: normal;
-            }
-
-            // Old icon rendering
-            .k-file-invalid-icon {
-                margin-left: 4px;
-            }
-
-            .k-file-extension {
-                margin-left: .2em;
-                margin-bottom: .3em;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                max-width: 100%;
-                left: 0;
-            }
-
-            .k-upload-action {
-                border-width: 0;
-                color: inherit;
-                background: none;
-                box-shadow: none;
-            }
         }
 
-        .k-upload-files .k-file-name-size-wrapper {
-            margin-left: 0;
-            margin-right: 0;
+        .k-upload-files .k-file-info {
             min-height: $kendo-upload-group-icon-size;
             display: block;
             overflow: hidden;
             flex: 1 0 0;
         }
 
-        // old rendering
-        .k-file-multiple > .k-file-name-size-wrapper {
-            margin-left: $kendo-upload-item-padding-x;
-        }
-
         .k-multiple-files-wrapper,
-        .k-file-single > .k-file-name-size-wrapper,
-        .k-file > .k-file-name-size-wrapper {
-            margin-left: $padding-x;
-            margin-right: 0;
+        .k-file-single > .k-file-info {
+            margin-inline-start: $padding-x;
             min-height: $kendo-upload-group-icon-size;
             display: block;
             overflow: hidden;
@@ -328,83 +193,34 @@
         }
 
         .k-multiple-files-wrapper {
-            .k-file-name-size-wrapper {
+            .k-file-info {
                 margin-bottom: $kendo-upload-multiple-items-spacing;
                 display: block;
             }
 
-            .k-file-information {
+            .k-file-summary {
                 margin-top: -($kendo-upload-multiple-items-spacing / 3);
             }
         }
 
-        // old rendering
-        .k-progress {
-            height: $kendo-upload-progress-thickness;
-            position: absolute;
-            bottom: 0;
-            left: 0;
-        }
-
         .k-progressbar {
-            height: $kendo-upload-progress-thickness;
+            --kendo-progressbar-height: #{$kendo-upload-progress-thickness};
             position: absolute;
+            left: $kendo-upload-item-padding-x;
+            right: $kendo-upload-item-padding-x;
             bottom: $kendo-upload-item-padding-y / 2;
-            // successed
-            width: calc(100% - #{$kendo-upload-item-padding-x} * 2);
-
-            .k-progress {
-                position: absolute;
-                width: 100%;
-                max-width: 100%;
-                height: 100%;
-            }
+            width: auto;
         }
-
-        .k-file-invalid > .k-progress {
-            width: 100%;
-        }
-
 
         // Action buttons
         .k-actions {
             border-top-width: 1px;
         }
 
-        // RTL styles
-        &[dir = "rtl"],
-        .k-rtl & {
-            .k-dropzone {
-                text-align: left;
-
-                .k-upload-status > .k-icon {
-                    margin-left: $padding-y-lg;
-                    margin-right: 0;
-                }
-            }
-
-            .k-multiple-files-wrapper,
-            .k-file-single > .k-file-name-size-wrapper,
-            .k-file-multiple > .k-file-name-size-wrapper,
-            .k-file > .k-file-name-size-wrapper {
-                margin-right: $padding-x;
-            }
-
-            .k-button + .k-button {
-                border-right-width: 0;
-            }
-
-            // old rendering
-            .k-progress {
-                left: auto;
-                right: 0;
-            }
-        }
     }
 
-    .k-upload-button {
+    .k-upload-button-wrap {
         position: relative;
-        overflow: hidden;
         direction: ltr;
 
         input {
