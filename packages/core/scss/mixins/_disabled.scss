@@ -1,0 +1,18 @@
+$disabled-styling: () !default;
+
+// Disabled
+@mixin disabled( $disabled-styling ) {
+    outline: none;
+    cursor: default;
+    opacity: k-map-get($disabled-styling, opacity);
+    filter: k-map-get($disabled-styling, filter);
+    pointer-events: none;
+    box-shadow: none;
+}
+
+@mixin disabled-legacy-ie( $disabled-styling ) {
+    outline: none;
+    cursor: default;
+    opacity: k-map-get($disabled-styling, opacity);
+    box-shadow: none;
+}
