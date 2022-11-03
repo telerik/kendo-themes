@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { Button } from '../../button';
 import { Icon } from '../../icon';
+import { Upload } from '../../upload';
 import { Toolbar } from '../../toolbar';
 import { Pager } from '../../pager';
 
@@ -40,12 +41,7 @@ root.render(
                                     <span className="k-dropzone-hint">Drag and drop files here to upload</span>
                                 </div>
                             </div>
-                            <div className="k-upload">
-                                <div className="k-dropzone">
-                                    <Button className="k-upload-button">Select files...</Button>
-                                    <em className="k-dropzone-hint">Drop files here to upload</em>
-                                </div>
-                            </div>
+                            <Upload async empty status="upload"></Upload>
                         </div>
                     </div>
                 </div>

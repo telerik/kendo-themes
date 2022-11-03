@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { Button } from '../../button';
 import { Icon } from '../../icon';
+import { Upload } from '../../upload';
 import { Toolbar } from '../../toolbar';
 import { Pager } from '../../pager';
 
@@ -32,11 +33,7 @@ root.render(
                     <div className="k-pdf-viewer-pages">
                         <div className="k-page k-blank-page">
                             <Icon name="folder-open"></Icon>
-                            <div className="k-upload">
-                                <div className="k-dropzone">
-                                    <Button className="k-upload-button">Select files...</Button>
-                                </div>
-                            </div>
+                            <Upload async empty></Upload>
                         </div>
                     </div>
                 </div>
