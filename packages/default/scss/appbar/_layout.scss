@@ -2,18 +2,18 @@
 
     // Appbar
     .k-appbar {
-        margin: $appbar-margin-y $appbar-margin-x;
-        padding: $appbar-padding-y $appbar-padding-x;
-        border-width: $appbar-border-width;
+        margin: $kendo-appbar-margin-y $kendo-appbar-margin-x;
+        padding: $kendo-appbar-padding-y $kendo-appbar-padding-x;
+        border-width: $kendo-appbar-border-width;
         border-style: solid;
         box-sizing: border-box;
         outline: 0;
-        font-family: $appbar-font-family;
-        font-size: $appbar-font-size;
-        line-height: $appbar-line-height;
+        font-family: $kendo-appbar-font-family;
+        font-size: $kendo-appbar-font-size;
+        line-height: $kendo-appbar-line-height;
         list-style: none;
         display: flex;
-        gap: $appbar-gap;
+        gap: $kendo-appbar-gap;
         flex-flow: row wrap;
         align-items: center;
         overflow: hidden;
@@ -81,7 +81,7 @@
         width: 100%;
         position: sticky;
         top: 0;
-        z-index: $appbar-zindex;
+        z-index: $kendo-appbar-zindex;
     }
 
 
