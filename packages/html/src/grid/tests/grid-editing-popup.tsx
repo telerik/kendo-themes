@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { Window } from '../../window';
-import { Button } from '../../button';
 import { Checkbox } from '../../checkbox';
 import { Icon } from '../../icon';
 import { NumericTextbox } from '../../numerictextbox';
 import { Textbox } from '../../textbox';
+import { Upload, UploadFile } from '../../upload';
 
 const root = ReactDOM.createRoot(
     document.getElementById('app') as HTMLElement
@@ -72,29 +72,9 @@ root.render(
                                 <label htmlFor="files">Files</label>
                             </div>
                             <div className="k-form-field-wrap">
-                                <div className="k-widget k-upload k-header k-upload-sync">
-                                    <div className="k-dropzone">
-                                        <Button className="k-upload-button">Select files...</Button>
-                                    </div>
-                                    <ul className="k-upload-files k-reset">
-                                        <li className="k-file">
-                                            <div className="k-progressbar k-hidden">
-                                                <span className="k-progress" style={{ width: '100%' }}></span>
-                                            </div>
-                                            <span className="k-file-group-wrapper">
-                                                <Icon className="k-file-group" name="file-image" />
-                                                <span className="k-file-state"></span>
-                                            </span>
-                                            <span className="k-file-name-size-wrapper">
-                                                <span className="k-file-name">67409197_2322469807839836_4126207508270284800_n.png</span>
-                                                <span className="k-file-size">24.34 KB</span>
-                                            </span>
-                                            <strong className="k-upload-status">
-                                                <Button fillMode="flat" icon="close" className="k-upload-action"></Button>
-                                            </strong>
-                                        </li>
-                                    </ul>
-                                </div>
+                                <Upload async status="done">
+                                    <UploadFile progress="100" status="success" name="67409197_2322469807839836_4126207508270284800_n.png" icon="file-image" size="24.34 KB"></UploadFile>
+                                </Upload>
                             </div>
                         </div>
                     </div>
