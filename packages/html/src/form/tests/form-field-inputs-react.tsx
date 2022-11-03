@@ -152,35 +152,9 @@ root.render(
 
                     <div className="k-form-field">
                         <label className="k-label">Upload</label>
-                        <div className="k-widget k-upload">
-                            <div className="k-dropzone">
-                                <Button className="k-upload-button">Select files...</Button>
-                                <div className="k-upload-status k-upload-status-total">
-                                    <Icon name="check" />
-                                    Done
-                                </div>
-                            </div>
-                            <ul className="k-upload-files k-reset">
-                                <li className="k-file k-file-success">
-                                    <div className="k-file-single">
-                                        <div className="k-progressbar" style={{ transition: "opacity 1s ease-in-out 0s", opacity: "0" }}>
-                                            <span className="k-progress" style={{ width: '100%' }}></span>
-                                        </div>
-                                        <span className="k-file-group-wrapper">
-                                            <Icon className="k-file-group" name="file-pdf" />
-                                            <span className="k-file-state"></span>
-                                        </span>
-                                        <span className="k-file-name-size-wrapper">
-                                            <span className="k-file-name">test long long long long long long long long long long long long long.pdf</span>
-                                            <span className="k-file-validation-message !k-text-success">File(s) successfully uploaded.</span>
-                                        </span>
-                                        <strong className="k-upload-status">
-                                            <Button fillMode="flat" icon="close" className="k-upload-action"></Button>
-                                        </strong>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
+                        <Upload async status="done">
+                            <UploadFile progress="100" status="success" validationMsg="File(s) successfully uploaded." name="test long long long long long long long long long long long long long.pdf" icon="file-pdf"></UploadFile>
+                        </Upload>
                     </div>
 
                 </form>
@@ -332,35 +306,9 @@ root.render(
                     <div className="k-form-field">
                         <label className="k-label">Upload</label>
                         <div className="k-form-field-wrap">
-                            <div className="k-widget k-upload">
-                                <div className="k-dropzone">
-                                    <Button className="k-upload-button">Select files...</Button>
-                                    <div className="k-upload-status k-upload-status-total">
-                                        <Icon name="check" />
-                                        Done
-                                    </div>
-                                </div>
-                                <ul className="k-upload-files k-reset">
-                                    <li className="k-file k-file-success">
-                                        <div className="k-file-single">
-                                            <div className="k-progressbar" style={{ transition: "opacity 1s ease-in-out 0s", opacity: "0" }}>
-                                                <span className="k-progress" style={{ width: '100%' }}></span>
-                                            </div>
-                                            <span className="k-file-group-wrapper">
-                                                <Icon className="k-file-group" name="file-pdf" />
-                                                <span className="k-file-state"></span>
-                                            </span>
-                                            <span className="k-file-name-size-wrapper">
-                                                <span className="k-file-name">test long long long long long long long long long long long long long.pdf</span>
-                                                <span className="k-file-validation-message !k-text-success">File(s) successfully uploaded.</span>
-                                            </span>
-                                            <strong className="k-upload-status">
-                                                <Button fillMode="flat" icon="close" className="k-upload-action"></Button>
-                                            </strong>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
+                            <Upload async status="done">
+                                <UploadFile progress="100" status="success" validationMsg="File(s) successfully uploaded." name="test long long long long long long long long long long long long long.pdf" icon="file-pdf"></UploadFile>
+                            </Upload>
                         </div>
                     </div>
 
