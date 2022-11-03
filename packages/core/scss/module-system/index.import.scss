@@ -1,15 +1,16 @@
 @import "./_components.scss";
+@import "./_dependencies.scss";
 
 $_deps: ();
 $_imported: ();
 
 @mixin module-register( $name: null, $dependencies: null ) {
-    @if (k-list-index( $components, $name) != null) {
+    @if (k-list-index( $kendo-components, $name) != null) {
         $_deps: k-map-merge( $_deps, ( $name: $dependencies ) );
 
         @if $dependencies {
             @each $dep in $dependencies {
-                @if ( k-list-index( $components, $dep ) == null ) {
+                @if ( k-list-index( $kendo-components, $dep ) == null ) {
                     // sass-lint:disable-block no-warn
                     @warn "The module \"#{$name}\" depends on module \"#{$dep}\", but the styles will not be loaded!";
                 }
@@ -30,8 +31,18 @@ $_imported: ();
         }
     }
 
-    @if ( k-list-index( $components, $name ) != null ) and ( k-list-index( $_imported, $name ) == null )  {
+    @if ( k-list-index( $kendo-components, $name ) != null ) and ( k-list-index( $_imported, $name ) == null )  {
         $_imported: k-list-append( $_imported, $name );
         @content;
     }
 }
+
+@mixin verify-dependencies() {
+    @each $component in $kendo-components {
+        @if (k-map-has-key( $_kendo-dependencies, $component) == false) {
+            // sass-lint:disable-block no-warn
+            @error "Module '#{$component}' is not defined.";
+        }
+    }
+}
+@include verify-dependencies();

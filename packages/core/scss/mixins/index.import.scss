@@ -1,3 +1,12 @@
+@import "./_border-radius.scss";
+@import "./_box-shadow.scss";
+@import "./_data-uri.scss";
+@import "./_disabled.scss";
+@import "./_gradient.scss";
+@import "./_hide-scrollbar.scss";
+@import "./_import-once.scss";
+@import "./_typography.scss";
+
 @mixin fill( $color: null, $bg: null, $border: null, $gradient: null ) {
     border-color: $border;
     color: $color;
@@ -5,74 +14,8 @@
     @include linear-gradient( $gradient );
 }
 
-@mixin linear-gradient( $gradient: null ) {
-    @if $gradient and $enable-gradients {
-        @if $gradient == none {
-            background-image: none;
-        } @else {
-            background-image: linear-gradient( $gradient );
-        }
-    }
-}
-
-
-
-
-// Border radius
-@mixin border-radius( $radius: null ) {
-    @if $enable-rounded {
-        border-radius: $radius;
-    }
-}
-
-@mixin border-top-radius( $radius: null ) {
-    @if $enable-rounded {
-        border-top-left-radius: $radius;
-        border-top-right-radius: $radius;
-    }
-}
-
-@mixin border-right-radius( $radius: null ) {
-    @if $enable-rounded {
-        border-top-right-radius: $radius;
-        border-bottom-right-radius: $radius;
-    }
-}
-
-@mixin border-bottom-radius( $radius: null ) {
-    @if $enable-rounded {
-        border-bottom-right-radius: $radius;
-        border-bottom-left-radius: $radius;
-    }
-}
-
-@mixin border-left-radius( $radius: null ) {
-    @if $enable-rounded {
-        border-top-left-radius: $radius;
-        border-bottom-left-radius: $radius;
-    }
-}
-
-@mixin border-top-radius-only( $radius: null ) {
-    @if $enable-rounded {
-        border-radius: $radius $radius 0 0;
-    }
-}
-
-@mixin border-right-radius-only( $radius: null ) {
-    @if $enable-rounded {
-        border-radius: 0 $radius $radius 0;
-    }
-}
-
-@mixin border-bottom-radius-only( $radius: null ) {
-    @if $enable-rounded {
-        border-radius: 0 0 $radius $radius;
-    }
-}
-
-@mixin border-left-radius-only( $radius: null ) {
-    @if $enable-rounded {
-        border-radius: $radius 0 0 $radius;
+@mixin background-image( $background-image: null ) {
+    @if $background-image {
+        background-image: url(#{$background-image});
     }
 }
