@@ -37,7 +37,10 @@
     "prepublishOnly": "node ../../scripts/themes-prepublish.js",
     "postpublish": "echo 'no postpublish for utils'"
   },
+  "dependencies": {
+    "@progress/kendo-theme-core": "^5.10.0"
+  },
   "devDependencies": {
-    "sass-build": "^1.0.0"
+    "sass-build": "^1.1.0"
   }
 }
