@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { Icon } from '../../icon';
+import { Notification, NotificationAction } from '../../notification';
 
 const root = ReactDOM.createRoot(
     document.getElementById('app') as HTMLElement
@@ -29,230 +29,124 @@ root.render(
 
             <div>
                 <div className="k-notification-container">
-                    <div className="k-widget k-notification">
-                        <div className="k-notification-wrap">
-                            <div className="k-notification-content">Default notification</div>
-                        </div>
-                    </div>
+                    <Notification text="Default notification" />
                 </div>
             </div>
             <div>
                 <div className="k-notification-container">
-                    <div className="k-widget k-notification k-notification-closable">
-                        <div className="k-notification-wrap">
-                            <div className="k-notification-content">Closable notification</div>
-                            <Icon name="x" />
-                        </div>
-                    </div>
+                    <Notification closable={true} text="Closable notification" actions={ <NotificationAction type="close" /> } />
                 </div>
             </div>
             <div>
                 <div className="k-notification-container">
-                    <div className="k-widget k-notification k-notification-primary">
-                        <div className="k-notification-wrap">
-                            <div className="k-notification-content">Primary notification</div>
-                        </div>
-                    </div>
+                    <Notification themeColor="primary" text="Primary notification" />
                 </div>
             </div>
             <div>
                 <div className="k-notification-container">
-                    <div className="k-widget k-notification k-notification-secondary">
-                        <div className="k-notification-wrap">
-                            <div className="k-notification-content">Secondary notification</div>
-                        </div>
-                    </div>
+                    <Notification themeColor="secondary" text="Secondary notification" />
                 </div>
             </div>
             <div>
                 <div className="k-notification-container">
-                    <div className="k-widget k-notification k-notification-tertiary">
-                        <div className="k-notification-wrap">
-                            <div className="k-notification-content">Tertiary notification</div>
-                        </div>
-                    </div>
+                    <Notification themeColor="tertiary" text="Tertiary notification" />
                 </div>
             </div>
             <div>
                 <div className="k-notification-container">
-                    <div className="k-widget k-notification k-notification-info">
-                        <div className="k-notification-wrap">
-                            <Icon name="info" />
-                            <div className="k-notification-content">Info notification</div>
-                        </div>
-                    </div>
+                    <Notification themeColor="info" text="Info notification" icon="info" />
                 </div>
             </div>
             <div>
                 <div className="k-notification-container">
-                    <div className="k-widget k-notification k-notification-success">
-                        <div className="k-notification-wrap">
-                            <Icon name="success" />
-                            <div className="k-notification-content">Success notification</div>
-                        </div>
-                    </div>
+                    <Notification themeColor="success" text="Success notification" icon="success" />
                 </div>
             </div>
             <div>
                 <div className="k-notification-container">
-                    <div className="k-widget k-notification k-notification-warning">
-                        <div className="k-notification-wrap">
-                            <Icon name="warning" />
-                            <div className="k-notification-content">Warning notification</div>
-                        </div>
-                    </div>
+                    <Notification themeColor="warning" text="Warning notification" icon="warning" />
                 </div>
             </div>
             <div>
                 <div className="k-notification-container">
-                    <div className="k-widget k-notification k-notification-error">
-                        <div className="k-notification-wrap">
-                            <Icon name="error" />
-                            <div className="k-notification-content">Error notification</div>
-                        </div>
-                    </div>
+                    <Notification themeColor="error" text="Error notification" icon="error" />
                 </div>
             </div>
             <div>
                 <div className="k-notification-container">
-                    <div className="k-widget k-notification k-notification-dark">
-                        <div className="k-notification-wrap">
-                            <div className="k-notification-content">Dark notification</div>
-                        </div>
-                    </div>
+                    <Notification themeColor="dark" text="Dark notification" />
                 </div>
             </div>
             <div>
                 <div className="k-notification-container">
-                    <div className="k-widget k-notification k-notification-light">
-                        <div className="k-notification-wrap">
-                            <div className="k-notification-content">Light notification</div>
-                        </div>
-                    </div>
+                    <Notification themeColor="light" text="Light notification" />
                 </div>
             </div>
             <div>
                 <div className="k-notification-container">
-                    <div className="k-widget k-notification k-notification-inverse">
-                        <div className="k-notification-wrap">
-                            <div className="k-notification-content">Inverse notification</div>
-                        </div>
-                    </div>
+                    <Notification themeColor="inverse" text="Inverse notification" />
                 </div>
             </div>
 
             <span className="k-colspan-all k-col-span-full">RTL</span>
             <div dir="rtl">
                 <div className="k-notification-container">
-                    <div className="k-widget k-notification">
-                        <div className="k-notification-wrap">
-                            <div className="k-notification-content">Default notification</div>
-                        </div>
-                    </div>
+                    <Notification text="Default notification" />
                 </div>
             </div>
             <div dir="rtl">
                 <div className="k-notification-container">
-                    <div className="k-widget k-notification k-notification-closable">
-                        <div className="k-notification-wrap">
-                            <div className="k-notification-content">Closable notification</div>
-                            <Icon name="x" />
-                        </div>
-                    </div>
+                    <Notification closable={true} text="Closable notification" actions={ <NotificationAction type="close" /> } />
                 </div>
             </div>
             <div dir="rtl">
                 <div className="k-notification-container">
-                    <div className="k-widget k-notification k-notification-primary">
-                        <div className="k-notification-wrap">
-                            <div className="k-notification-content">Primary notification</div>
-                        </div>
-                    </div>
+                    <Notification themeColor="primary" text="Primary notification" />
                 </div>
             </div>
             <div dir="rtl">
                 <div className="k-notification-container">
-                    <div className="k-widget k-notification k-notification-secondary">
-                        <div className="k-notification-wrap">
-                            <div className="k-notification-content">Secondary notification</div>
-                        </div>
-                    </div>
+                    <Notification themeColor="secondary" text="Secondary notification" />
                 </div>
             </div>
             <div dir="rtl">
                 <div className="k-notification-container">
-                    <div className="k-widget k-notification k-notification-tertiary">
-                        <div className="k-notification-wrap">
-                            <div className="k-notification-content">Tertiary notification</div>
-                        </div>
-                    </div>
+                    <Notification themeColor="tertiary" text="Tertiary notification" />
                 </div>
             </div>
             <div dir="rtl">
                 <div className="k-notification-container">
-                    <div className="k-widget k-notification k-notification-info">
-                        <div className="k-notification-wrap">
-                            <Icon name="info" />
-                            <div className="k-notification-content">Info notification</div>
-                        </div>
-                    </div>
+                    <Notification themeColor="info" text="Info notification" icon="info" />
                 </div>
             </div>
             <div dir="rtl">
                 <div className="k-notification-container">
-                    <div className="k-widget k-notification k-notification-success">
-                        <div className="k-notification-wrap">
-                            <Icon name="success" />
-                            <div className="k-notification-content">Success notification</div>
-                        </div>
-                    </div>
+                    <Notification themeColor="success" text="Success notification" icon="success" />
                 </div>
             </div>
             <div dir="rtl">
                 <div className="k-notification-container">
-                    <div className="k-widget k-notification k-notification-warning">
-                        <div className="k-notification-wrap">
-                            <Icon name="warning" />
-                            <div className="k-notification-content">Warning notification</div>
-                        </div>
-                    </div>
+                    <Notification themeColor="warning" text="Warning notification" icon="warning" />
                 </div>
             </div>
             <div dir="rtl">
                 <div className="k-notification-container">
-                    <div className="k-widget k-notification k-notification-error">
-                        <div className="k-notification-wrap">
-                            <Icon name="error" />
-                            <div className="k-notification-content">Error notification</div>
-                        </div>
-                    </div>
+                    <Notification themeColor="error" text="Error notification" icon="error" />
                 </div>
             </div>
             <div dir="rtl">
                 <div className="k-notification-container">
-                    <div className="k-widget k-notification k-notification-dark">
-                        <div className="k-notification-wrap">
-                            <div className="k-notification-content">Dark notification</div>
-                        </div>
-                    </div>
+                    <Notification themeColor="dark" text="Dark notification" />
                 </div>
             </div>
             <div dir="rtl">
                 <div className="k-notification-container">
-                    <div className="k-widget k-notification k-notification-light">
-                        <div className="k-notification-wrap">
-                            <div className="k-notification-content">Light notification</div>
-                        </div>
-                    </div>
+                    <Notification themeColor="light" text="Light notification" />
                 </div>
             </div>
             <div dir="rtl">
                 <div className="k-notification-container">
-                    <div className="k-widget k-notification k-notification-inverse">
-                        <div className="k-notification-wrap">
-                            <div className="k-notification-content">Inverse notification</div>
-                        </div>
-                    </div>
+                    <Notification themeColor="inverse" text="Inverse notification" />
                 </div>
             </div>
 
