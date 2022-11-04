@@ -75,7 +75,7 @@ module.exports = {
     // ...require('./rating'),
     // ...require('./searchbox'),
     // ...require('./switch'),
-    // ...require('./upload'),
+    ...require('./upload'),
     // ...require('./dropzone'),
 
     // Command interfaces

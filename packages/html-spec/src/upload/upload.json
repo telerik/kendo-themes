@@ -1,0 +1,274 @@
+{
+    "$schema": "../../schemas/component.schema.json",
+    "title": "Kendo Upload HTML Spec",
+    "component": "upload",
+    "selector": [
+        ".k-upload"
+    ],
+    "states": [
+        {
+            "name": "disabled",
+            "selector": [
+                ":disabled",
+                "[disabled]",
+                ".k-disabled"
+            ]
+        },
+        {
+            "name": "empty",
+            "selector": [
+                ".k-upload-empty"
+            ]
+        }
+    ],
+    "children": [
+        {
+            "name": "dropzone",
+            "selector": [
+                ".k-dropzone",
+                ".k-upload-dropzone"
+            ]
+        },
+        {
+            "name": "upload-button",
+            "$ref": "button",
+            "selector": [
+                ".k-upload-button"
+            ]
+        },
+        {
+            "name": "dropzone-hint",
+            "selector": [
+                ".k-dropzone-hint"
+            ]
+        },
+        {
+            "name": "upload-status",
+            "selector": [
+                ".k-upload-status"
+            ],
+            "children": [
+                {
+                    "name": "upload-status-icon",
+                    "$ref": "icon",
+                    "selector": [
+                        ".k-icon"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "upload-files",
+            "selector": [
+                ".k-upload-files"
+            ],
+            "children": [
+                {
+                    "name": "upload-file",
+                    "selector": [
+                        ".k-file"
+                    ],
+                    "states": [
+                        {
+                            "name": "success",
+                            "selector": [
+                                ".k-file-success"
+                            ]
+                        },
+                        {
+                            "name": "error",
+                            "selector": [
+                                ".k-file-error"
+                            ]
+                        },
+                        {
+                            "name": "invalid",
+                            "selector": [
+                                ".k-file-error.k-file-invalid"
+                            ]
+                        },
+                        {
+                            "name": "progress",
+                            "selector": [
+                                ".k-file-progress"
+                            ]
+                        }
+                    ],
+                    "children": [
+                        {
+                            "name": "file-single",
+                            "selector": [
+                                ".k-file-single"
+                            ],
+                            "children": [
+                                {
+                                    "name": "file-info",
+                                    "selector": [
+                                        ".k-file-info"
+                                    ],
+                                    "children": [
+                                        {
+                                            "name": "file-name",
+                                            "selector": [
+                                                ".k-file-name"
+                                            ]
+                                        },
+                                        {
+                                            "name": "file-size",
+                                            "selector": [
+                                                ".k-file-size"
+                                            ]
+                                        },
+                                        {
+                                            "name": "file-validation-message",
+                                            "selector": [
+                                                ".k-file-validation-message"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "file-multiple",
+                            "selector": [
+                                ".k-file-multiple"
+                            ],
+                            "children": [
+                                {
+                                    "name": "file-multiple-wrapper",
+                                    "selector": [
+                                        ".k-multiple-files-wrapper"
+                                    ],
+                                    "children": [
+                                        {
+                                            "name": "file-info",
+                                            "selector": [
+                                                ".k-file-info"
+                                            ],
+                                            "children": [
+                                                {
+                                                    "name": "file-name",
+                                                    "selector": [
+                                                        ".k-file-name"
+                                                    ]
+                                                },
+                                                {
+                                                    "name": "file-size",
+                                                    "selector": [
+                                                        ".k-file-size"
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "file-validation-message",
+                                            "selector": [
+                                                ".k-file-validation-message"
+                                            ]
+                                        },
+                                        {
+                                            "name": "file-summary",
+                                            "selector": [
+                                                ".k-file-summary"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "upload-progressbar",
+                            "$ref": "progressbar",
+                            "selector": [
+                                ".k-progressbar"
+                            ]
+                        },
+                        {
+                            "name": "file-icon-wrapper",
+                            "selector": [
+                                ".k-file-icon-wrapper"
+                            ],
+                            "children": [
+                                {
+                                    "name": "file-icon",
+                                    "$ref": "icon",
+                                    "selector": [
+                                        ".k-file-icon"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "upload-actions",
+                            "selector": [
+                                ".k-upload-actions"
+                            ],
+                            "children": [
+                                {
+                                    "name": "upload-percentage",
+                                    "selector": [
+                                        ".k-upload-pct"
+                                    ]
+                                },
+                                {
+                                    "name": "upload-action",
+                                    "$ref": "button",
+                                    "selector": [
+                                        ".k-upload-action"
+                                    ],
+                                    "options": [
+                                        {
+                                            "name": "fillMode",
+                                            "value": "flat"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "upload-action-buttons",
+            "$ref": "action-buttons",
+            "selector": [
+                ".k-actions"
+            ],
+            "options": [
+                {
+                    "name": "orientation",
+                    "value": "horizontal"
+                },
+                {
+                    "name": "alignment",
+                    "value": "end"
+                }
+            ],
+            "children": [
+                {
+                    "name": "clear-selected",
+                    "$ref": "button",
+                    "selector": [
+                        ".k-clear-selected"
+                    ]
+                },
+                {
+                    "name": "upload-selected",
+                    "$ref": "button",
+                    "selector": [
+                        ".k-upload-selected"
+                    ],
+                    "options": [
+                        {
+                            "name": "themeColor",
+                            "value": "primary"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
