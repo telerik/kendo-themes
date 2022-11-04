@@ -45,8 +45,7 @@ jobs:
       - name: Build themes for dist
         run: |
           npm run sass
-          npm run sass:flat
-          npm run dist:swatches
+          npm run sass:swatches
 
       - name: Pack nuget
         run: |
