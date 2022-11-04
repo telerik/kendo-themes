@@ -89,7 +89,7 @@ module.exports = {
     // ...require('./action-sheet'),
     // ...require('./dialog'),
     // ...require('./drawer'),
-    // ...require('./notification'),
+    ...require('./notification'),
     // ...require('./popover'),
     // ...require('./responsivepanel'),
     ...require('./tooltip'),
