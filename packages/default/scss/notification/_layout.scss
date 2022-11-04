@@ -10,7 +10,7 @@
     }
 
     .k-notification-container {
-        margin: ($notification-padding-y / 2) 0;
+        margin: ($kendo-notification-padding-y / 2) 0;
         display: inline-flex;
         vertical-align: top;
 
@@ -20,15 +20,15 @@
     }
 
     .k-notification {
-        @include border-radius( $notification-border-radius );
-        padding: $notification-padding-y $notification-padding-x;
-        border-width: $notification-border-width;
+        @include border-radius( $kendo-notification-border-radius );
+        padding: $kendo-notification-padding-y $kendo-notification-padding-x;
+        border-width: $kendo-notification-border-width;
         border-style: solid;
         box-sizing: border-box;
         outline: 0;
-        font-family: $notification-font-family;
-        font-size: $notification-font-size;
-        line-height: $notification-line-height;
+        font-family: $kendo-notification-font-family;
+        font-size: $kendo-notification-font-size;
+        line-height: $kendo-notification-line-height;
         cursor: default;
         position: relative;
         display: block;
@@ -47,15 +47,15 @@
         flex-flow: row nowrap;
 
         > .k-icon {
-            margin-top: $notification-icon-offset;
-            margin-right: $notification-icon-spacing;
+            margin-top: $kendo-notification-icon-offset;
+            margin-right: $kendo-notification-icon-spacing;
             flex: none;
         }
 
         > .k-i-close,
         > .k-i-x {
             margin-right: 0;
-            margin-left: $notification-icon-spacing;
+            margin-left: $kendo-notification-icon-spacing;
             flex: none;
             cursor: pointer;
         }
@@ -73,13 +73,13 @@
 
             > .k-icon {
                 margin-right: 0;
-                margin-left: $notification-icon-spacing;
+                margin-left: $kendo-notification-icon-spacing;
             }
 
             > .k-i-close,
             > .k-i-x {
                 margin-left: 0;
-                margin-right: $notification-icon-spacing;
+                margin-right: $kendo-notification-icon-spacing;
             }
         }
     }
