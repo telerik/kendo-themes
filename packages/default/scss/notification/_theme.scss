@@ -7,15 +7,13 @@
             $kendo-notification-bg,
             $kendo-notification-border
         );
+        @include box-shadow( $kendo-notification-shadow );
     }
     .k-notification-wrap {
         > .k-i-close,
         > .k-i-x {
             color: inherit;
         }
-    }
-    .k-notification-group .k-notification {
-        box-shadow: $kendo-notification-shadow;
     }
 
     @each $name, $props in $kendo-notification-theme {
