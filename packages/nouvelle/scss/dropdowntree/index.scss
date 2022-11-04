@@ -1,7 +1,13 @@
 // Module meta
 $_kendo-module-meta: (
     name: "dropdowntree",
-    dependencies: ()
+    dependencies: (
+        "input",
+        "icon",
+        "button",
+        "popup",
+        "treeview"
+    )
 );
 
 

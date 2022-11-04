@@ -71,6 +71,7 @@
 @import "dateinput/index.scss";
 @import "datepicker/index.scss";
 @import "timepicker/index.scss";
+@import "time-duration-picker/index.scss";
 @import "datetimepicker/index.scss";
 @import "daterangepicker/index.scss";
 @import "dropdowngrid/index.scss";
@@ -231,6 +232,7 @@
     @include dateinput-styles();
     @include datepicker-styles();
     @include timepicker-styles();
+    @include time-duration-picker-styles();
     @include datetimepicker-styles();
     @include daterangepicker-styles();
     @include dropdowngrid-styles();

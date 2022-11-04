@@ -1,9 +1,7 @@
 @mixin kendo-textarea--layout() {
 
-    // sass-lint:disable-block no-important no-ids
-    #test-area .k-textarea {
-        display: none !important;
-    }
+    // Textarea
+    .k-textarea {}
 
 }
 

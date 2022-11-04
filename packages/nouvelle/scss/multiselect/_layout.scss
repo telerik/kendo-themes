@@ -1,11 +1,4 @@
-@mixin kendo-multiselect--layout() {
-
-    // sass-lint:disable-block no-important no-ids
-    #test-area .k-multiselect {
-        display: none !important;
-    }
-
-}
+@mixin kendo-multiselect--layout() {}
 
 
 

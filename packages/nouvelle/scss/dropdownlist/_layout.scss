@@ -1,61 +1,7 @@
 @mixin kendo-dropdownlist--layout() {
 
-    :where(.k-dropdown) {
-        padding: 0;
-        width: 100%;
-        border-width: var( --kendo-dropdownlist-border-width, 1px );
-        border-style: var( --kendo-dropdownlist-border-style, solid );
-        border-radius: var( --kendo-dropdownlist-border-radius, 0 );
-        outline: 0;
-        color: inherit;
-        background: none;
-        font: inherit;
-        font-size: var( --kendo-dropdownlist-font-size, inherit );
-        font-family: var( --kendo-dropdownlist-font-family, inherit );
-        line-height: var( --kendo-dropdownlist-line-height, inherit );
-        display: flex;
-        flex-flow: row nowrap;
-    }
-
-    // Dropdown
-    .k-dropdown {
-
-        // Input
-        .k-input,
-        > .k-input {
-            --kendo-input-padding-x: var( --kendo-dropdownlist-padding-x );
-            --kendo-input-padding-y: var( --kendo-dropdownlist-padding-y );
-        }
-
-
-        // Select
-        .k-select {
-            padding: 0;
-            padding-inline: var( --kendo-dropdownlist-select-padding-x );
-            padding-block: var( --kendo-dropdownlist-select-padding-y );
-            border-width: 0;
-            display: flex;
-            flex-flow: row nowrap;
-            align-items: center;
-            justify-content: center;
-            flex: none;
-            cursor: pointer;
-
-            // TMP
-            .k-i-arrow-s,
-            .k-i-arrow-60-down {
-                font-family: monospace;
-
-                &::before {
-                    content: "\25bc";
-                    display: inline-block;
-                    width: 1em;
-                    font: inherit;
-                }
-            }
-        }
-
-    }
+    // Dropdownlist
+    .k-dropdown {}
 
 }
 

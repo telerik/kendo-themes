@@ -1,0 +1,477 @@
+$_kendo-dependencies: (
+    action-sheet: (
+        "icon",
+        "listgroup",
+        "popup"
+    ),
+    actions: (),
+    adaptive: (),
+    appbar: (),
+    autocomplete: (
+        "button",
+        "icon",
+        "input",
+        "list",
+        "popup"
+    ),
+    avatar: (),
+    badge: (),
+    bottom-navigation: (
+        "icon"
+    ),
+    breadcrumb: (
+        "icon",
+        "textbox"
+    ),
+    button: (
+        "badge",
+        "icon"
+    ),
+    calendar: (
+        "button",
+        "list"
+    ),
+    captcha: (
+        "button",
+        "slider",
+        "textbox"
+    ),
+    card: (
+        "actions",
+        "button",
+        // "utils/flex",
+        // "utils/grid"
+    ),
+    chat: (
+        "avatar",
+        "card",
+        "textbox",
+        "toolbar"
+    ),
+    checkbox: (),
+    chip: (),
+    color-editor: (
+        "actions",
+        "color-palette",
+        "color-preview",
+        "color-gradient"
+    ),
+    color-gradient: (
+        "button",
+        "numeric-textbox",
+        "slider",
+        "textbox",
+        // "utils/flex"
+    ),
+    color-palette: (
+        "color-preview",
+        // "utils/flex"
+    ),
+    color-preview: (),
+    color-picker: (
+        "button",
+        "color-editor",
+        "input",
+        "popup"
+    ),
+    combobox: (
+        "button",
+        "input",
+        "popup",
+        "list"
+    ),
+    cursor: (),
+    dataviz: (
+        "popup",
+        "tooltip"
+    ),
+    date-input: (
+        "input"
+    ),
+    date-picker: (
+        "button",
+        "calendar",
+        "icon",
+        "input",
+        "popup"
+    ),
+    date-range-picker: (
+        "date-picker"
+    ),
+    date-time-picker: (
+        "date-picker",
+        "time-picker"
+    ),
+    dialog: (
+        "window"
+    ),
+    draggable: (),
+    drawer: (
+        "list",
+        "overlay"
+    ),
+    dropdown-grid: (
+        "button",
+        "grid",
+        "icon",
+        "input",
+        "popup",
+        "table"
+    ),
+    dropdown-list: (
+        "button",
+        "icon",
+        "input",
+        "list",
+        "popup"
+    ),
+    dropdown-tree: (
+        "button",
+        "icon",
+        "input",
+        "popup",
+        "treeview"
+    ),
+    dropzone: (),
+    editor: (
+        "button",
+        "checkbox",
+        "color-picker",
+        "combobox",
+        "dropdown-list",
+        "toolbar",
+        "upload",
+        "window"
+    ),
+    expander: (
+        "icon",
+        "list",
+        // "utils/display",
+        // "utils/flex"
+    ),
+    fab: (
+        "button",
+        "badge",
+        // "utils/position"
+    ),
+    file-manager: (
+        "breadcrumb",
+        "dialog",
+        "grid",
+        "icon",
+        "input",
+        "listview",
+        "menu",
+        "splitter",
+        "switch",
+        "toolbar",
+        "treeview",
+        "upload"
+    ),
+    filter: (
+        "button",
+        "checkbox",
+        "date-time-picker",
+        "dropdown-list",
+        "input",
+        "numeric-textbox",
+        "textbox",
+        "toolbar"
+    ),
+    floating-label: (
+        "input"
+    ),
+    form: (
+        "actions",
+        "button",
+        "toolbar"
+    ),
+    gantt: (
+        "button",
+        "date-time-picker",
+        "input",
+        "numeric-textbox",
+        "splitter",
+        "treelist",
+        "validator",
+        "window"
+    ),
+    grid: (
+        "actions",
+        "button",
+        "checkbox",
+        "dialog",
+        "input",
+        "list",
+        "menu",
+        "pager",
+        "popup",
+        "radio",
+        "skeleton",
+        "toolbar",
+        "validator"
+    ),
+    icon: (),
+    image-editor: (
+        "checkbox",
+        "dropdown-list",
+        "form",
+        "numeric-textbox",
+        "toolbar"
+    ),
+    input: (
+        "button",
+        "icon"
+    ),
+    list: (),
+    listbox: (
+        "button",
+        "list"
+    ),
+    listgroup: (),
+    listview: (
+        "pager",
+        // "utils/grid",
+        // "utils/flex"
+    ),
+    loader: (),
+    map: (
+        "button",
+        "scroller",
+        // "utils/position"
+    ),
+    masked-textbox: (
+        "button",
+        "input"
+    ),
+    media-player: (
+        "slider",
+        "toolbar"
+    ),
+    menu: (
+        "button",
+        "icon",
+        "popup"
+    ),
+    menu-button: (
+        "button",
+        "menu"
+    ),
+    messagebox: (),
+    multiselect: (
+        "button",
+        "chip",
+        "icon",
+        "input",
+        "list",
+        "popup"
+    ),
+    notification: (
+        "button",
+        "icon",
+        "popup"
+    ),
+    numeric-textbox: (
+        "button",
+        "icon",
+        "input"
+    ),
+    orgchart: (
+        "button",
+        "card",
+        "dropdown-list",
+        "icon",
+        "menu",
+        "textbox",
+        "upload",
+        "window"
+    ),
+    overlay: (),
+    pager: (
+        "dropdown-list",
+        "icon",
+        "list",
+        "toolbar"
+    ),
+    panelbar: (
+        "icon"
+    ),
+    pdf-viewer: (
+        "button",
+        "combobox",
+        "dialog",
+        "dropzone",
+        "pager",
+        "textbox",
+        "toolbar",
+        "window"
+    ),
+    pivotgrid: (
+        "dialog",
+        "grid",
+        "list",
+        "treeview",
+        // "utils/flex",
+        // "utils/grid",
+        // "utils/position"
+    ),
+    popover: (
+        "card",
+        "popup"
+    ),
+    popup: (),
+    progressbar: (),
+    radio: (),
+    rating: (
+        "icon"
+    ),
+    responsive-panel: (),
+    ripple: (),
+    scheduler: (
+        "button",
+        "date-time-picker",
+        "dialog",
+        "dropdown-list",
+        "toolbar",
+        "tooltip"
+    ),
+    scroller: (),
+    scroll-view: (
+        "button"
+    ),
+    searchbox: (
+        "button",
+        "input"
+    ),
+    signature: (
+        "button",
+        "input"
+    ),
+    skeleton: (),
+    slider: (
+        "button",
+        "tooltip"
+    ),
+    split-button: (
+        "button",
+        "menu"
+    ),
+    splitter: (
+        "icon"
+    ),
+    spreadsheet: (
+        "button",
+        "checkbox",
+        "color-picker",
+        "combobox",
+        "date-time-picker",
+        "dropdown-list",
+        "list",
+        "menu",
+        "radio",
+        "tabstrip",
+        "toolbar",
+        "treeview",
+        "upload",
+        "window"
+    ),
+    stepper: (
+        "icon",
+        "progressbar"
+    ),
+    switch: (),
+    table: (),
+    tabstrip: (
+        "button",
+        "icon"
+    ),
+    task-board: (
+        "card",
+        "form",
+        "searchbox",
+        "textbox",
+        "toolbar"
+    ),
+    textarea: (
+        "button",
+        "icon",
+        "input"
+    ),
+    textbox: (
+        "button",
+        "icon",
+        "input"
+    ),
+    tile-layout: (
+        "card"
+    ),
+    time-duration-picker: (
+        "button",
+        "icon",
+        "input",
+        "list",
+        "popup",
+        "time-selector"
+    ),
+    time-selector: (
+        "actions",
+        "button",
+        "list"
+    ),
+    timeline: (
+        "button",
+        "card",
+        "icon"
+    ),
+    time-picker: (
+        "button",
+        "icon",
+        "input",
+        "list",
+        "popup",
+        "time-selector"
+    ),
+    toolbar: (
+        "button",
+        "icon",
+        "menu",
+        "popup"
+    ),
+    tooltip: (
+        "button",
+        "icon",
+        "popup"
+    ),
+    treelist: (
+        "grid"
+    ),
+    treeview: (
+        "checkbox",
+        "icon"
+    ),
+    typography: (),
+    upload: (
+        "actions",
+        "button",
+        "dropzone",
+        "icon",
+        "listgroup",
+        "toolbar"
+    ),
+    utils: (),
+    validator: (
+        "tooltip"
+    ),
+    virtual-scroller: (),
+    window: (
+        "actions",
+        "button",
+        "icon",
+        "overlay"
+    ),
+    wizard: (
+        "button",
+        "form",
+        "stepper"
+    )
+);

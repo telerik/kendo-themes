@@ -2,6 +2,10 @@
     @return append( $list, $val, $separator );
 }
 
+@function k-list-includes( $list, $value ) {
+    @return k-list-index( $list, $value ) != null;
+}
+
 @function k-list-index( $list, $value ) {
     @return index( $list, $value );
 }

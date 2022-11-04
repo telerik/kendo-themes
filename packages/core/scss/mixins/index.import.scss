@@ -1,0 +1,21 @@
+@import "./_border-radius.scss";
+@import "./_box-shadow.scss";
+@import "./_data-uri.scss";
+@import "./_disabled.scss";
+@import "./_gradient.scss";
+@import "./_hide-scrollbar.scss";
+@import "./_import-once.scss";
+@import "./_typography.scss";
+
+@mixin fill( $color: null, $bg: null, $border: null, $gradient: null ) {
+    border-color: $border;
+    color: $color;
+    background-color: $bg;
+    @include linear-gradient( $gradient );
+}
+
+@mixin background-image( $background-image: null ) {
+    @if $background-image {
+        background-image: url(#{$background-image});
+    }
+}

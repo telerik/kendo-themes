@@ -1,3 +1,7 @@
+@function k-color-alpha( $color ) {
+    @return alpha( $color );
+}
+
 @function k-color-red( $color ) {
     @return red( $color );
 }

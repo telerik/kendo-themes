@@ -51,12 +51,6 @@ $kendo-tabstrip-item-padding-y: map-get( $kendo-spacing, 2 ) + map-get( $kendo-s
 /// The width of the border around the tabstrip item
 /// @group tabstrip
 $kendo-tabstrip-item-border-width: 0px !default;
-/// The border width of the tabstrip ripple
-/// @group tabstrip
-$kendo-tabstrip-item-ripple-border-width: map-get( $kendo-spacing, thin ) !default;
-/// The border color of the tabstrip ripple
-/// @group tabstrip
-$kendo-tabstrip-item-ripple-border: get-theme-color-var( primary-100 ) !default;
 /// The border radius of the tabstrip item
 /// @group tabstrip
 $kendo-tabstrip-item-border-radius: var( --kendo-border-radius-md, 0 ) !default;
@@ -111,8 +105,12 @@ $kendo-tabstrip-item-focused-shadow: $kendo-list-item-focus-shadow !default;
 $kendo-tabstrip-item-dragging-text: get-theme-color-var( primary-100 ) !default;
 
 // Indicator
-$kendo-tabstrip-indicator-size: null !default;
-$kendo-tabstrip-indicator-color: null !default;
+/// The border width of the tabstrip indicator
+/// @group tabstrip
+$kendo-tabstrip-indicator-size: map-get( $kendo-spacing, thin ) !default;
+/// The border color of the tabstrip ripple
+/// @group tabstrip
+$kendo-tabstrip-indicator-color: get-theme-color-var( primary-100 ) !default;
 
 /// The horizontal padding of tabstrip content
 /// @group tabstrip

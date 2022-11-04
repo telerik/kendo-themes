@@ -1,11 +1,4 @@
-@mixin kendo-numerictextbox--layout() {
-
-    // sass-lint:disable-block no-important no-ids
-    #test-area .k-numerictextbox {
-        display: none !important;
-    }
-
-}
+@mixin kendo-numerictextbox--layout() {}
 
 
 

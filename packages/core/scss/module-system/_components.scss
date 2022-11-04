@@ -1,0 +1,141 @@
+$kendo-components: (
+    // Typography and utils
+    "typography",
+    "utils",
+    "cursor",
+    "draggable",
+
+    // Generic content
+    "table",
+    "icon",
+    "chip",
+    "messagebox",
+
+    // Primitive components
+    "input",
+    "list",
+    "listgroup",
+    "overlay",
+    "ripple",
+    "virtual-scroller",
+
+    // Indicators
+    "avatar",
+    "badge",
+    "color-preview",
+    "loader",
+    "skeleton",
+    "tooltip",
+
+    // Native forms
+    "button",
+    "split-button",
+    "menu-button",
+    "textbox",
+    "textarea",
+    "checkbox",
+    "listbox",
+    "progressbar",
+    "radio",
+    "slider",
+
+    // Form helpers
+    "form",
+    "validator",
+    "floating-label",
+
+    // Form requirements
+    "calendar",
+    "popup",
+    "time-selector",
+
+    // Augmented inputs
+    "autocomplete",
+    "captcha",
+    "color-palette",
+    "color-gradient",
+    "color-editor",
+    "color-picker",
+    "combobox",
+    "date-input",
+    "date-picker",
+    "time-picker",
+    "date-time-picker",
+    "date-range-picker",
+    "dropdown-grid",
+    "dropdown-list",
+    "dropdown-tree",
+    "masked-textbox",
+    "multiselect",
+    "numeric-textbox",
+    "rating",
+    "searchbox",
+    "switch",
+    "upload",
+    "dropzone",
+
+    // Command interfaces
+    "actions",
+    "appbar",
+    "fab",
+    "menu",
+    "toolbar",
+
+    // Popups and modals
+    "action-sheet",
+    "dialog",
+    "drawer",
+    "notification",
+    "popover",
+    "responsive-panel",
+    "window",
+
+    // Navigation
+    "bottom-navigation",
+    "breadcrumb",
+    "pager",
+    "stepper",
+    "tabstrip",
+    "treeview",
+    "wizard",
+
+    // Layout & containers
+    "card",
+    "expander",
+    "panelbar",
+    "splitter",
+    "tile-layout",
+
+    // Data management
+    "grid",
+    "listview",
+    "spreadsheet",
+    "pivotgrid",
+    "treelist",
+    "filter",
+    "file-manager",
+    "task-board",
+
+    // Editors
+    "editor",
+    "image-editor",
+
+    // Scheduling
+    "gantt",
+    "scheduler",
+
+    // Misc
+    "adaptive",
+    "chat",
+    "media-player",
+    "timeline",
+    "pdf-viewer",
+    "scroller",
+    "scroll-view",
+
+    // Dataviz
+    "dataviz",
+    "map",
+    "orgchart",
+    "signature"
+) !default;

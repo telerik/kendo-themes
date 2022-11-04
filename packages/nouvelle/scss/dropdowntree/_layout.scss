@@ -1,11 +1,4 @@
-@mixin kendo-dropdowntree--layout() {
-
-    // sass-lint:disable-block no-important no-ids
-    #test-area .k-dropdowntree {
-        display: none !important;
-    }
-
-}
+@mixin kendo-dropdowntree--layout() {}
 
 
 

@@ -1,0 +1,36 @@
+@mixin linear-gradient( $gradient: null ) {
+    @if $gradient and $enable-gradients {
+        @if $gradient == none {
+            background-image: none;
+        } @else {
+            background-image: linear-gradient( $gradient );
+        }
+    }
+}
+
+@mixin striped-gradient( $color: rgba( white, .15 ), $angle: 45deg ) {
+    background-image: linear-gradient( $angle, $color 25%, transparent 25%, transparent 50%, $color 50%, $color 75%, transparent 75%, transparent );
+}
+
+@mixin repeating-striped-gradient( $color: rgba( white, .15), $background: white, $angle: 45deg, $large-step: 2px, $small-step: 1px ) {
+    background-image: repeating-linear-gradient( $angle, $background, $background $small-step, $color $small-step, $color $large-step );
+}
+
+@mixin checkerboard-gradient( $primary-color: white, $secondary-color: rgba( black, .09 ), $size: 10px ) {
+    // sass-lint:disable-block indentation
+    $_position: calc( #{$size} / 2 );
+
+    background:
+        linear-gradient( 45deg, $secondary-color 25%, transparent 25%, transparent 75%, $secondary-color 75%, $secondary-color ),
+        linear-gradient( 45deg, $secondary-color 25%, transparent 25%, transparent 75%, $secondary-color 75%, $secondary-color ),
+        $primary-color;
+    background-repeat: repeat, repeat;
+    background-position: 0px 0px, $_position $_position;
+    transform-origin: 0 0 0;
+    background-origin: padding-box, padding-box;
+    background-size: $size $size, $size $size;
+    box-shadow: none;
+    text-shadow: none;
+    transition: none;
+    transform: scaleX(1) scaleY(1) scaleZ(1);
+}
