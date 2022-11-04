@@ -45,11 +45,13 @@
     "postpublish": "echo 'no postpublish for bootstrap theme'"
   },
   "dependencies": {
+    "@progress/kendo-font-icons": "^0.6.0",
     "@progress/kendo-theme-core": "^5.10.1-dev.1",
     "@progress/kendo-theme-default": "^5.10.1-dev.1",
+    "@progress/kendo-theme-utils": "^5.10.1-dev.1",
     "bootstrap": "^5.2.1"
   },
   "devDependencies": {
-    "sass-build": "^1.0.0"
+    "sass-build": "^1.1.0"
   }
 }
