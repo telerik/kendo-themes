@@ -3,6 +3,38 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.11.0](https://github.com/telerik/kendo-themes/compare/v5.10.0...v5.11.0) (2022-11-07)
+
+
+### Bug Fixes
+
+* **action-sheet:** titblebar font size should be 16px ([dfe83f7](https://github.com/telerik/kendo-themes/commit/dfe83f7f39d186871d39282bd6a2d73c329665e7))
+* content in adaptive actionsheet should not exceed 360px width ([803dc21](https://github.com/telerik/kendo-themes/commit/803dc21b79bf13a2ad2e3b2d487dd372234aa16e))
+* **core:** transfer mixins to theme core ([d2b8246](https://github.com/telerik/kendo-themes/commit/d2b8246aae0702f5a01818f976821c93be484a3a))
+* extract core folder to theme core ([3ba661f](https://github.com/telerik/kendo-themes/commit/3ba661f5789d0403ce4f102c94b0539c456ce812))
+* **filemanager:** add spacing between labels and values in the preview pane ([b20d88f](https://github.com/telerik/kendo-themes/commit/b20d88f3671697b789a3b741c977e9c2b93dd46f))
+* **html-spec:** incorrect selector used for combobox inner input ([1abffc9](https://github.com/telerik/kendo-themes/commit/1abffc95b79b1144f9955bb32d6579effe443882))
+* **notification:** add z-index to guarantee notifications stay on top ([bcae231](https://github.com/telerik/kendo-themes/commit/bcae231e6e29c49bb3747b5c499b0119f31870d8))
+* **nouvelle:** ensure all icon related variables are contained in the icons module ([d16f3f1](https://github.com/telerik/kendo-themes/commit/d16f3f173cf9ef2cbca80d8822e5c4eaa4c924fd))
+* **tabstrip:** do not overlap tabstrip and content area ([7f59331](https://github.com/telerik/kendo-themes/commit/7f59331bfbe01d07f4dd68fc7ee76e6611e4191c))
+* **tabstrip:** remove z-index from tabstrip-items and tabstrip-content ([af0f859](https://github.com/telerik/kendo-themes/commit/af0f859b98bfdd5d235343fc341065080f90bf4e))
+* tranfer component system to theme core ([54dbb02](https://github.com/telerik/kendo-themes/commit/54dbb02d4358458b35714b573038cd0740c6942f))
+
+
+### Features
+
+* add alignement classes for tabstrip items ([ca4957c](https://github.com/telerik/kendo-themes/commit/ca4957c56b8b8c333668c79ecf3546724e9a31f8))
+* **core:** add function for checking if element is in list ([53b19b6](https://github.com/telerik/kendo-themes/commit/53b19b628cb1f00305b03217047d422c5a865b49))
+* **core:** add function for working with nullable variables ([1f8671a](https://github.com/telerik/kendo-themes/commit/1f8671ab73aeb4d3b4a48e58c17b187a9893525a))
+* **core:** add function to convert rgba to solid colors ([920abe9](https://github.com/telerik/kendo-themes/commit/920abe9afea392a710d2d891123cb9dea12699cc))
+* **html-sepc:** add json schema validation ([9bba6e6](https://github.com/telerik/kendo-themes/commit/9bba6e62bdf8bdf8ef7833106e28a3815432e2fb))
+* **nouvelle:** use color system for input and picker type components ([35f8b52](https://github.com/telerik/kendo-themes/commit/35f8b52a8716ecf8854d4b229bf9823826a2bb41))
+* **utils:** add row and col gap utility classes ([317d0dc](https://github.com/telerik/kendo-themes/commit/317d0dc2b7a1872e16216e085f7cf048fcf499ec))
+
+
+
+
+
 # [5.10.0](https://github.com/telerik/kendo-themes/compare/v5.9.0...v5.10.0) (2022-10-21)
 
 

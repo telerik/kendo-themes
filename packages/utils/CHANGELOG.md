@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.11.0](https://github.com/telerik/kendo-themes/compare/v5.10.0...v5.11.0) (2022-11-07)
+
+
+### Features
+
+* **utils:** add row and col gap utility classes ([317d0dc](https://github.com/telerik/kendo-themes/commit/317d0dc2b7a1872e16216e085f7cf048fcf499ec))
+
+
+
+
+
 # [5.10.0](https://github.com/telerik/kendo-themes/compare/v5.9.0...v5.10.0) (2022-10-21)
 
 

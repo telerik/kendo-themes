@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.11.0](https://github.com/telerik/kendo-themes/compare/v5.10.0...v5.11.0) (2022-11-07)
+
+
+### Bug Fixes
+
+* **html-spec:** incorrect selector used for combobox inner input ([1abffc9](https://github.com/telerik/kendo-themes/commit/1abffc95b79b1144f9955bb32d6579effe443882))
+
+
+### Features
+
+* **html-sepc:** add json schema validation ([9bba6e6](https://github.com/telerik/kendo-themes/commit/9bba6e62bdf8bdf8ef7833106e28a3815432e2fb))
+
+
+
+
+
 # [5.10.0](https://github.com/telerik/kendo-themes/compare/v5.9.0...v5.10.0) (2022-10-21)
 
 **Note:** Version bump only for package @progress/kendo-html-spec

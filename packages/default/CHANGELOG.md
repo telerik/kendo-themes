@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.11.0](https://github.com/telerik/kendo-themes/compare/v5.10.0...v5.11.0) (2022-11-07)
+
+
+### Bug Fixes
+
+* content in adaptive actionsheet should not exceed 360px width ([803dc21](https://github.com/telerik/kendo-themes/commit/803dc21b79bf13a2ad2e3b2d487dd372234aa16e))
+* **filemanager:** add spacing between labels and values in the preview pane ([b20d88f](https://github.com/telerik/kendo-themes/commit/b20d88f3671697b789a3b741c977e9c2b93dd46f))
+* **notification:** add z-index to guarantee notifications stay on top ([bcae231](https://github.com/telerik/kendo-themes/commit/bcae231e6e29c49bb3747b5c499b0119f31870d8))
+* **tabstrip:** do not overlap tabstrip and content area ([7f59331](https://github.com/telerik/kendo-themes/commit/7f59331bfbe01d07f4dd68fc7ee76e6611e4191c))
+* **tabstrip:** remove z-index from tabstrip-items and tabstrip-content ([af0f859](https://github.com/telerik/kendo-themes/commit/af0f859b98bfdd5d235343fc341065080f90bf4e))
+
+
+### Features
+
+* add alignement classes for tabstrip items ([ca4957c](https://github.com/telerik/kendo-themes/commit/ca4957c56b8b8c333668c79ecf3546724e9a31f8))
+
+
+
+
+
 # [5.10.0](https://github.com/telerik/kendo-themes/compare/v5.9.0...v5.10.0) (2022-10-21)
 
 

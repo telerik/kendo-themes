@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.11.0](https://github.com/telerik/kendo-themes/compare/v5.10.0...v5.11.0) (2022-11-07)
+
+
+### Bug Fixes
+
+* **nouvelle:** ensure all icon related variables are contained in the icons module ([d16f3f1](https://github.com/telerik/kendo-themes/commit/d16f3f173cf9ef2cbca80d8822e5c4eaa4c924fd))
+
+
+### Features
+
+* **nouvelle:** use color system for input and picker type components ([35f8b52](https://github.com/telerik/kendo-themes/commit/35f8b52a8716ecf8854d4b229bf9823826a2bb41))
+
+
+
+
+
 # [5.10.0](https://github.com/telerik/kendo-themes/compare/v5.9.0...v5.10.0) (2022-10-21)
 
 

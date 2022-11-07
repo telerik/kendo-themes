@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.11.0](https://github.com/telerik/kendo-themes/compare/v5.10.0...v5.11.0) (2022-11-07)
+
+
+### Bug Fixes
+
+* **filemanager:** add spacing between labels and values in the preview pane ([b20d88f](https://github.com/telerik/kendo-themes/commit/b20d88f3671697b789a3b741c977e9c2b93dd46f))
+
+
+
+
+
 # [5.10.0](https://github.com/telerik/kendo-themes/compare/v5.9.0...v5.10.0) (2022-10-21)
 
 
