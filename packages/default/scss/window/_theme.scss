@@ -3,17 +3,17 @@
     // Window
     .k-window {
         @include fill(
-            $window-text,
-            $window-bg,
-            $window-border
+            $kendo-window-text,
+            $kendo-window-bg,
+            $kendo-window-border
         );
-        @include box-shadow( $window-shadow );
+        @include box-shadow( $kendo-window-shadow );
     }
 
     .k-window {
         &:focus,
         &.k-focus {
-            @include box-shadow( $window-focused-shadow );
+            @include box-shadow( $kendo-window-focused-shadow );
         }
     }
 
@@ -21,10 +21,10 @@
     // Titlebar
     .k-window-titlebar {
         @include fill(
-            $window-titlebar-text,
-            $window-titlebar-bg,
-            $window-titlebar-border,
-            $window-titlebar-gradient
+            $kendo-window-titlebar-text,
+            $kendo-window-titlebar-bg,
+            $kendo-window-titlebar-border,
+            $kendo-window-titlebar-gradient
         );
     }
 
