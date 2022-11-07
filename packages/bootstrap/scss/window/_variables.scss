@@ -1,43 +1,43 @@
 // Window
-$window-border-width: 1px !default;
-$window-border-radius: $kendo-border-radius-md !default;
-$window-font-family: $font-family !default;
-$window-font-size: $font-size !default;
-$window-line-height: $line-height !default;
+$kendo-window-border-width: 1px !default;
+$kendo-window-border-radius: $kendo-border-radius-md !default;
+$kendo-window-font-family: $font-family !default;
+$kendo-window-font-size: $font-size !default;
+$kendo-window-line-height: $line-height !default;
 
-$window-titlebar-padding-x: k-map-get( $spacing, 4 ) !default;
-$window-titlebar-padding-y: k-map-get( $spacing, 4 ) !default;
-$window-titlebar-border-width: 0 0 1px !default;
-$window-titlebar-border-style: solid !default;
+$kendo-window-titlebar-padding-x: k-map-get( $spacing, 4 ) !default;
+$kendo-window-titlebar-padding-y: k-map-get( $spacing, 4 ) !default;
+$kendo-window-titlebar-border-width: 0 0 1px !default;
+$kendo-window-titlebar-border-style: solid !default;
 
-$window-title-font-size: $font-size-lg !default;
-$window-title-line-height: 1.5 !default;
+$kendo-window-title-font-size: $font-size-lg !default;
+$kendo-window-title-line-height: 1.5 !default;
 
-$window-actions-gap: .5rem !default;
+$kendo-window-actions-gap: .5rem !default;
 
-$window-action-opacity: .5 !default;
-$window-action-hover-opacity: .75 !default;
+$kendo-window-action-opacity: .5 !default;
+$kendo-window-action-hover-opacity: .75 !default;
 
-$window-inner-padding-x: k-map-get( $spacing, 4 ) !default;
-$window-inner-padding-y: k-map-get( $spacing, 4 ) !default;
+$kendo-window-inner-padding-x: k-map-get( $spacing, 4 ) !default;
+$kendo-window-inner-padding-y: k-map-get( $spacing, 4 ) !default;
 
-$window-buttongroup-padding-x: $actions-padding-x !default;
-$window-buttongroup-padding-y: $actions-padding-y !default;
-$window-buttongroup-border-width: 1px !default;
+$kendo-window-buttongroup-padding-x: $actions-padding-x !default;
+$kendo-window-buttongroup-padding-y: $actions-padding-y !default;
+$kendo-window-buttongroup-border-width: 1px !default;
 
-$window-bg: $component-bg !default;
-$window-text: $component-text !default;
-$window-border: $component-border !default;
+$kendo-window-bg: $component-bg !default;
+$kendo-window-text: $component-text !default;
+$kendo-window-border: $component-border !default;
 
-$window-titlebar-bg: null !default;
-$window-titlebar-text: null !default;
-$window-titlebar-border: $component-border !default;
-$window-titlebar-gradient: null !default;
+$kendo-window-titlebar-bg: null !default;
+$kendo-window-titlebar-text: null !default;
+$kendo-window-titlebar-border: $component-border !default;
+$kendo-window-titlebar-gradient: null !default;
 
-$window-shadow: null !default;
-$window-focused-shadow: null !default;
+$kendo-window-shadow: null !default;
+$kendo-window-focused-shadow: null !default;
 
-$window-sizes: (
+$kendo-window-sizes: (
     sm: 300px,
     md: 800px,
     lg: 1200px

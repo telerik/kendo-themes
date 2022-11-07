@@ -1,43 +1,43 @@
 // Window
-$window-border-width: 0px !default;
-$window-border-radius: 4px !default;
-$window-font-family: $font-family !default;
-$window-font-size: $font-size !default;
-$window-line-height: 1.5 !default;
+$kendo-window-border-width: 0px !default;
+$kendo-window-border-radius: 4px !default;
+$kendo-window-font-family: $font-family !default;
+$kendo-window-font-size: $font-size !default;
+$kendo-window-line-height: 1.5 !default;
 
-$window-titlebar-padding-x: 24px !default;
-$window-titlebar-padding-y: 16px !default;
-$window-titlebar-border-width: 0px !default;
-$window-titlebar-border-style: solid !default;
+$kendo-window-titlebar-padding-x: 24px !default;
+$kendo-window-titlebar-padding-y: 16px !default;
+$kendo-window-titlebar-border-width: 0px !default;
+$kendo-window-titlebar-border-style: solid !default;
 
-$window-title-font-size: 20px !default;
-$window-title-line-height: 1.6 !default;
+$kendo-window-title-font-size: 20px !default;
+$kendo-window-title-line-height: 1.6 !default;
 
-$window-actions-gap: null !default;
+$kendo-window-actions-gap: null !default;
 
-$window-action-opacity: null !default;
-$window-action-hover-opacity: null !default;
+$kendo-window-action-opacity: null !default;
+$kendo-window-action-hover-opacity: null !default;
 
-$window-inner-padding-x: 24px !default;
-$window-inner-padding-y: 8px !default;
+$kendo-window-inner-padding-x: 24px !default;
+$kendo-window-inner-padding-y: 8px !default;
 
-$window-buttongroup-padding-x: $actions-padding-x !default;
-$window-buttongroup-padding-y: $actions-padding-y !default;
-$window-buttongroup-border-width: 0px !default;
+$kendo-window-buttongroup-padding-x: $actions-padding-x !default;
+$kendo-window-buttongroup-padding-y: $actions-padding-y !default;
+$kendo-window-buttongroup-border-width: 0px !default;
 
-$window-bg: $component-bg !default;
-$window-text: $component-text !default;
-$window-border: $component-border !default;
+$kendo-window-bg: $component-bg !default;
+$kendo-window-text: $component-text !default;
+$kendo-window-border: $component-border !default;
 
-$window-titlebar-bg: null !default;
-$window-titlebar-text: null !default;
-$window-titlebar-border: null !default;
-$window-titlebar-gradient: null !default;
+$kendo-window-titlebar-bg: null !default;
+$kendo-window-titlebar-text: null !default;
+$kendo-window-titlebar-border: null !default;
+$kendo-window-titlebar-gradient: null !default;
 
-$window-shadow: $box-shadow-depth-4 !default;
-$window-focused-shadow: $box-shadow-depth-5 !default;
+$kendo-window-shadow: $box-shadow-depth-4 !default;
+$kendo-window-focused-shadow: $box-shadow-depth-5 !default;
 
-$window-sizes: (
+$kendo-window-sizes: (
     sm: 300px,
     md: 800px,
     lg: 1200px

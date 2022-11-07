@@ -52,7 +52,7 @@
 
     // Buttons
     .k-dialog-buttongroup {
-        @include border-bottom-radius( $window-border-radius );
+        @include border-bottom-radius( $kendo-window-border-radius );
         padding: $dialog-buttongroup-padding-y $dialog-buttongroup-padding-x;
         border-width: $dialog-buttongroup-border-width 0 0;
         border-style: solid;

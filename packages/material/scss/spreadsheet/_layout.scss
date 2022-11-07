@@ -58,7 +58,7 @@
         box-sizing: border-box;
 
         .k-actions {
-            margin: $spacer (-$window-inner-padding-x) (-$window-inner-padding-y);
+            margin: $spacer (-$kendo-window-inner-padding-x) (-$kendo-window-inner-padding-y);
         }
     }
 
