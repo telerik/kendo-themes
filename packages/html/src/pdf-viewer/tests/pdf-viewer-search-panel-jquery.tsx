@@ -17,7 +17,7 @@ root.render(
     <>
         <style>{styles}</style>
         <div id="test-area" className="k-d-grid k-grid-cols-1">
-            <div className="k-widget k-window k-window-titleless" style={{ position: "relative", display: "flex", alignSelf: "flex-start", width: "430px" }}>
+            <div className="k-window" style={{ position: "relative", display: "flex", alignSelf: "flex-start", width: "430px" }}>
                 <div className="k-pdf-viewer-search-dialog k-window-content">
                     <div className="k-search-container">
                         <Button fillMode="flat" icon="handler-drag" className="k-search-dialog-draghandle"></Button>

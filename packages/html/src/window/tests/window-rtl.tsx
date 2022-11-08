@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { Button } from '../../button';
+import { Window } from '../../window';
 
 const root = ReactDOM.createRoot(
     document.getElementById('app') as HTMLElement
@@ -15,75 +15,28 @@ const style = `
 root.render(
     <>
         <style>{style}</style>
-        <div id="test-area" className="k-d-grid k-grid-cols-2">
+        <div id="test-area" className="k-d-grid k-grid-cols-2 k-rtl">
 
             <section>
-                <div className="k-widget k-window k-rtl">
-                    <div className="k-window-titlebar k-header">
-                        <span className="k-window-title">jQuery window</span>
-                        <div className="k-window-actions">
-                            <Button fillMode="flat" icon="window-minimize"></Button>
-                            <Button fillMode="flat" icon="window-maximize"></Button>
-                            <Button fillMode="flat" icon="close"></Button>
-                        </div>
-                    </div>
-                    <div className="k-rtl k-window-content">
-                        jQuery window content
-                    </div>
-                </div>
+                <Window title="Window" actions={[ 'window-minimize', 'window-maximize', 'close' ]}>Window content</Window>
             </section>
 
             <section>
-                <div className="k-widget k-window k-rtl">
-                    <div className="k-window-titlebar k-header">
-                        <span className="k-window-title"></span>
-                        <div className="k-window-actions">
-                            <Button fillMode="flat" icon="window-minimize"></Button>
-                            <Button fillMode="flat" icon="window-maximize"></Button>
-                            <Button fillMode="flat" icon="close"></Button>
-                        </div>
-                    </div>
-                    <div className="k-rtl k-window-content">
-                        jQuery window with no title specified
-                    </div>
-                </div>
+                <Window title="" actions={[ 'window-minimize', 'window-maximize', 'close' ]}>Window with no title specified</Window>
             </section>
 
             <section>
-                <div className="k-widget k-window k-rtl">
-                    <div className="k-window-titlebar k-header">
-                        <span className="k-window-title"></span>
-                        <div className="k-window-actions"></div>
-                    </div>
-                    <div className="k-rtl k-window-content">
-                        jQuery window with empty title and no actions
-                    </div>
-                </div>
+                <Window title="">Window with empty title and no actions</Window>
             </section>
 
             <section>
-                <div className="k-widget k-window k-rtl k-window-titleless">
-                    <div className="k-rtl k-window-content">
-                        jQuery window without a title
-                    </div>
-                </div>
+                <Window>Window without a title</Window>
             </section>
 
             <section>
-                <div className="k-widget k-window k-rtl">
-                    <div className="k-window-titlebar k-header">
-                        <span className="k-window-title">jQuery Window minimized</span>
-                        <div className="k-window-actions">
-                            <Button fillMode="flat" icon="window-minimize"></Button>
-                            <Button fillMode="flat" icon="window-maximize"></Button>
-                            <Button fillMode="flat" icon="close"></Button>
-                        </div>
-                    </div>
-                    <div className="k-rtl k-window-content" hidden>
-                        jQuery Window content
-                    </div>
-                </div>
+                <Window title="Window minimized" actions={[ 'window-minimize', 'window-maximize', 'close' ]} minimized>Window content</Window>
             </section>
+
         </div>
     </>
 );
