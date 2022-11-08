@@ -1,0 +1,94 @@
+{
+    "$schema": "../../schemas/component.schema.json",
+    "title": "Kendo Window HTML Spec",
+    "component": "window",
+    "selector": [
+        ".k-window"
+    ],
+    "states": [
+        {
+            "name": "focus",
+            "selector": [
+                ":focus",
+                ".k-focus"
+            ]
+        }
+    ],
+    "options": [
+        {
+            "name": "size",
+            "values": [
+                {
+                    "name": "small",
+                    "selector": [
+                        ".k-window-sm"
+                    ]
+                },
+                {
+                    "name": "medium",
+                    "selector": [
+                        ".k-window-md"
+                    ]
+                },
+                {
+                    "name": "large",
+                    "selector": [
+                        ".k-window-lg"
+                    ]
+                }
+            ]
+        }
+    ],
+    "children": [
+        {
+            "name": "window-titlebar",
+            "selector": [
+                ".k-window-titlebar"
+            ]
+        },
+        {
+            "name": "window-title",
+            "selector": [
+                ".k-window-title"
+            ]
+        },
+        {
+            "name": "window-titlebar-actions",
+            "selector": [
+                ".k-window-titlebar-actions"
+            ]
+        },
+        {
+            "name": "window-titlebar-action",
+            "$ref": "button",
+            "selector": [
+                ".k-window-titlebar-action"
+            ],
+            "options": [
+                {
+                    "name": "fillMode",
+                    "value": "flat"
+                }
+            ]
+        },
+        {
+            "name": "window-content",
+            "selector": [
+                ".k-window-content"
+            ]
+        },
+        {
+            "name": "window-buttons",
+            "$ref": "action-buttons",
+            "selector": [
+                ".k-window-actions"
+            ],
+            "options": [
+                {
+                    "name": "alignment",
+                    "value": "end"
+                }
+            ]
+        }
+    ]
+}

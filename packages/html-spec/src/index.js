@@ -93,7 +93,7 @@ module.exports = {
     // ...require('./popover'),
     // ...require('./responsivepanel'),
     ...require('./tooltip'),
-    // ...require('./window'),
+    ...require('./window'),
 
     // Navigation
     // ...require('./bottom-navigation'),
