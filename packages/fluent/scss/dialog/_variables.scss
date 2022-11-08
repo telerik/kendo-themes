@@ -24,6 +24,13 @@ $kendo-dialog-titlebar-padding-x: map-get( $kendo-spacing, 6 ) !default;
 /// @group dialog
 $kendo-dialog-titlebar-padding-y: map-get( $kendo-spacing, 4 ) !default;
 
+/// Horizontal padding of the content of the dialog.
+/// @group dialog
+$kendo-dialog-inner-padding-x: map-get( $kendo-spacing, 6 ) !default;
+/// Vertical padding of the content of the dialog.
+/// @group dialog
+$kendo-dialog-inner-padding-y: map-get( $kendo-spacing, 3 ) !default;
+
 /// Horizontal padding of the dialog action buttons.
 /// @group dialog
 $kendo-dialog-buttongroup-padding-x: map-get( $kendo-spacing, 6 ) !default; // $actions-padding-x
