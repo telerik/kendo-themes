@@ -87,7 +87,7 @@ module.exports = {
 
     // Popups and modals
     // ...require('./action-sheet'),
-    // ...require('./dialog'),
+    ...require('./dialog'),
     // ...require('./drawer'),
     ...require('./notification'),
     // ...require('./popover'),
