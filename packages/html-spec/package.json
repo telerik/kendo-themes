@@ -13,6 +13,7 @@
   "main": "src/index.js",
   "files": [
     "dist/**/*.json",
+    "schemas/*.json",
     "src/**/*.js",
     "src/**/*.json"
   ],
