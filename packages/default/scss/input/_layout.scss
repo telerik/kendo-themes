@@ -167,13 +167,15 @@
 
     // Input multiple values
     .k-input-values {
+        min-width: 0px;
         width: 100%;
-        padding: $kendo-input-values-margin-y $kendo-input-values-margin-x;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
         cursor: text;
     }
-    .k-input-values > .k-searchbar,
-    .k-input-values > .k-input-inner {
-        margin: (-$kendo-input-values-margin-y) (-$kendo-input-values-margin-x);
+    .k-input-values .k-chip-list {
+        display: contents;
     }
 
 
@@ -366,10 +368,8 @@
             line-height: $_line-height;
 
             .k-input-values {
-                width: 100%;
                 padding: ($_padding-y / 2);
                 gap: ($_padding-y / 2);
-                cursor: text;
             }
             .k-input-values > .k-searchbar,
             .k-input-values > .k-input-inner {
