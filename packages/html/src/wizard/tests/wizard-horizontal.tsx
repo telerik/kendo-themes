@@ -3,6 +3,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { Icon } from '../../icon';
 import { Button } from '../../button';
+import { ProgressBar } from '../../progressbar';
 
 const root = ReactDOM.createRoot(
     document.getElementById('app') as HTMLElement
@@ -16,6 +17,11 @@ const style = `
     section > p {
         background-color:  #6c757d4f;
     }
+
+    .k-progressbar {
+        grid-column-start: 2;
+        grid-column-end: 6;
+    }
 `;
 
 const stepperStyle = {
@@ -28,20 +34,6 @@ const stepListStyle = {
     gridColumnEnd: "-1",
 };
 
-const progressBarStyle = {
-    gridColumnStart: "2",
-    gridColumnEnd: "6",
-};
-
-const progressSelectedStyle = {
-    height: "100%",
-    width: "50%",
-};
-
-const progressStatusStyle = {
-    height: "100%",
-    width: "200%",
-};
 
 root.render(
     <>
@@ -86,12 +78,7 @@ root.render(
                                 </a>
                             </li>
                         </ol>
-                        <div className="k-widget k-progressbar k-progressbar-horizontal" style={progressBarStyle}>
-                            <span className="k-progress-status-wrap k-progress-end"></span>
-                            <div className="k-selected" style={progressSelectedStyle}>
-                                <span className="k-progress-status-wrap k-progress-end" style={progressStatusStyle}></span>
-                            </div>
-                        </div>
+                        <ProgressBar label={false} value="50" />
                     </nav>
                     <div className="k-wizard-steps">
                         <div className="k-wizard-step k-focus">
@@ -152,12 +139,7 @@ root.render(
                                 </a>
                             </li>
                         </ol>
-                        <div className="k-widget k-progressbar k-progressbar-horizontal" style={progressBarStyle}>
-                            <span className="k-progress-status-wrap k-progress-end"></span>
-                            <div className="k-selected" style={progressSelectedStyle}>
-                                <span className="k-progress-status-wrap k-progress-end" style={progressStatusStyle}></span>
-                            </div>
-                        </div>
+                        <ProgressBar label={false} value="50" />
                     </nav>
                     <div className="k-wizard-steps">
                         <div className="k-wizard-step">
@@ -219,12 +201,7 @@ root.render(
                                 </a>
                             </li>
                         </ol>
-                        <div className="k-widget k-progressbar k-progressbar-horizontal" style={progressBarStyle}>
-                            <span className="k-progress-status-wrap k-progress-end"></span>
-                            <div className="k-selected" style={progressSelectedStyle}>
-                                <span className="k-progress-status-wrap k-progress-end" style={progressStatusStyle}></span>
-                            </div>
-                        </div>
+                        <ProgressBar label={false} value="50" />
                     </nav>
                     <div className="k-wizard-steps">
                         <div className="k-wizard-step">
@@ -285,12 +262,7 @@ root.render(
                                 </a>
                             </li>
                         </ol>
-                        <div className="k-widget k-progressbar k-progressbar-horizontal" style={progressBarStyle}>
-                            <span className="k-progress-status-wrap k-progress-end"></span>
-                            <div className="k-selected" style={progressSelectedStyle}>
-                                <span className="k-progress-status-wrap k-progress-end" style={progressStatusStyle}></span>
-                            </div>
-                        </div>
+                        <ProgressBar label={false} value="50" />
                     </nav>
                     <div className="k-wizard-steps">
                         <div className="k-wizard-step">
@@ -351,12 +323,7 @@ root.render(
                                 </a>
                             </li>
                         </ol>
-                        <div className="k-widget k-progressbar k-progressbar-horizontal" style={progressBarStyle}>
-                            <span className="k-progress-status-wrap k-progress-end"></span>
-                            <div className="k-selected" style={progressSelectedStyle}>
-                                <span className="k-progress-status-wrap k-progress-end" style={progressStatusStyle}></span>
-                            </div>
-                        </div>
+                        <ProgressBar label={false} value="50" />
                     </nav>
                     <div className="k-wizard-steps">
                         <div className="k-wizard-step">

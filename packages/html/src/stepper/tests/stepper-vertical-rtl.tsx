@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { Icon } from '../../icon';
+import { ProgressBar } from '../../progressbar';
 
 const root = ReactDOM.createRoot(
     document.getElementById('app') as HTMLElement
@@ -11,6 +12,11 @@ const style = `
         width: 100%;
         grid-column: 1 / -1;
         visibility: hidden;
+    }
+    .k-progressbar {
+        grid-row-start: 1;
+        grid-row-end: 3;
+        top: 17px;
     }
 `;
 
@@ -50,12 +56,7 @@ root.render(
                             </a>
                         </li>
                     </ol>
-                    <div className="k-widget k-progressbar k-progressbar-vertical k-progressbar-reverse" style={{ gridRowStart: "1", gridRowEnd: "3", top: "17px" }}>
-                        <span className="k-progress-status-wrap k-progress-end"></span>
-                        <div className="k-selected" style={{ width: '100%', height: "50%" }}>
-                            <span className="k-progress-status-wrap k-progress-end" style={{ width: '100%', height: "200%" }}></span>
-                        </div>
-                    </div>
+                    <ProgressBar orientation="vertical" value="40" label={false} reverse={true} />
                 </nav>
             </section>
             <section>
@@ -95,12 +96,7 @@ root.render(
                             </a>
                         </li>
                     </ol>
-                    <div className="k-widget k-progressbar k-progressbar-vertical k-progressbar-reverse" style={{ gridRowStart: "1", gridRowEnd: "3", top: "17px" }}>
-                        <span className="k-progress-status-wrap k-progress-end"></span>
-                        <div className="k-selected" style={{ width: '100%', height: "50%" }}>
-                            <span className="k-progress-status-wrap k-progress-end" style={{ width: '100%', height: "200%" }}></span>
-                        </div>
-                    </div>
+                    <ProgressBar orientation="vertical" value="40" label={false} reverse={true} />
                 </nav>
             </section>
             <section>
@@ -128,12 +124,7 @@ root.render(
                             </a>
                         </li>
                     </ol>
-                    <div className="k-widget k-progressbar k-progressbar-vertical k-progressbar-reverse" style={{ gridRowStart: "1", gridRowEnd: "3", top: "17px" }}>
-                        <span className="k-progress-status-wrap k-progress-end"></span>
-                        <div className="k-selected" style={{ width: '100%', height: "50%" }}>
-                            <span className="k-progress-status-wrap k-progress-end" style={{ width: '100%', height: "200%" }}></span>
-                        </div>
-                    </div>
+                    <ProgressBar orientation="vertical" value="40" label={false} reverse={true} />
                 </nav>
             </section>
             <section>
@@ -161,12 +152,7 @@ root.render(
                             </a>
                         </li>
                     </ol>
-                    <div className="k-widget k-progressbar k-progressbar-vertical k-progressbar-reverse" style={{ gridRowStart: "1", gridRowEnd: "3", top: "17px" }}>
-                        <span className="k-progress-status-wrap k-progress-end"></span>
-                        <div className="k-selected" style={{ width: '100%', height: "50%" }}>
-                            <span className="k-progress-status-wrap k-progress-end" style={{ width: '100%', height: "200%" }}></span>
-                        </div>
-                    </div>
+                    <ProgressBar orientation="vertical" value="40" label={false} reverse={true} />
                 </nav>
             </section>
 
