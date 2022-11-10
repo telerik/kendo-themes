@@ -70,12 +70,14 @@ export class MultiSelect extends React.Component<MultiSelectProps> {
                 className={classNames(className, 'k-multiselect')}
             >
                 <InputPrefix>{prefix}</InputPrefix>
-                <ChipList className="k-input-values" size={size}>
-                    <>
-                        {tags}
-                    </>
+                <div className="k-input-values">
+                    <ChipList size={size}>
+                        <>
+                            {tags}
+                        </>
+                    </ChipList>
                     <InputInnerInput placeholder={placeholder} value={value}/>
-                </ChipList>
+                </div>
                 <InputSuffix>{suffix}</InputSuffix>
                 <InputValidationIcon {...this.props} />
                 <InputLoadingIcon {...this.props} />
