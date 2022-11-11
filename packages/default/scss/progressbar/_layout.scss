@@ -8,9 +8,9 @@
         border-style: solid;
         box-sizing: border-box;
         outline: 0;
-        font-family: $progressbar-font-family;
-        font-size: $progressbar-font-size;
-        line-height: $progressbar-line-height;
+        font-family: $kendo-progressbar-font-family;
+        font-size: $kendo-progressbar-font-size;
+        line-height: $kendo-progressbar-line-height;
         display: inline-grid;
         vertical-align: middle;
         position: relative;
@@ -83,8 +83,8 @@
 
     // Horizontal
     .k-progressbar-horizontal {
-        width: $progressbar-horizontal-width;
-        height: $progressbar-height;
+        width: $kendo-progressbar-horizontal-width;
+        height: $kendo-progressbar-height;
         grid-template-columns: 1fr;
         grid-template-rows: 100%;
 
@@ -125,7 +125,7 @@
 
     // Vertical
     .k-progressbar-vertical {
-        width: $progressbar-height;
+        width: $kendo-progressbar-height;
         height: 27em;
         grid-template-columns: 100%;
         grid-template-rows: 1fr;
@@ -220,14 +220,14 @@
     }
     .k-progressbar-horizontal {
         -ms-grid-columns: 1fr;
-        -ms-grid-rows: $progressbar-height;
+        -ms-grid-rows: $kendo-progressbar-height;
 
         &.k-progressbar-reverse > .k-progressbar-value {
             -ms-grid-column-align: end;
         }
     }
     .k-progressbar-vertical {
-        -ms-grid-columns: $progressbar-height;
+        -ms-grid-columns: $kendo-progressbar-height;
         -ms-grid-rows: 1fr;
 
         > .k-progressbar-value {
