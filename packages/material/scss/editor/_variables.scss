@@ -1,23 +1,23 @@
 // Editor
-$editor-border-width: 1px !default;
-$editor-font-family: $font-family !default;
-$editor-font-size: $font-size !default;
-$editor-line-height: $line-height !default;
+$kendo-editor-border-width: 1px !default;
+$kendo-editor-font-family: $font-family !default;
+$kendo-editor-font-size: $font-size !default;
+$kendo-editor-line-height: $line-height !default;
 
-$editor-placeholder-text: $kendo-input-placeholder-text !default;
-$editor-placeholder-opacity: $kendo-input-placeholder-opacity !default;
+$kendo-editor-placeholder-text: $kendo-input-placeholder-text !default;
+$kendo-editor-placeholder-opacity: $kendo-input-placeholder-opacity !default;
 
-$editor-selected-text: $primary-contrast !default;
-$editor-selected-bg: $primary !default;
+$kendo-editor-selected-text: $primary-contrast !default;
+$kendo-editor-selected-bg: $primary !default;
 
-$editor-highlighted-bg: k-color-mix($primary, #ffffff, 20%) !default;
+$kendo-editor-highlighted-bg: k-color-mix($primary, #ffffff, 20%) !default;
 
-$editor-export-tool-icon-margin-x: .5em !default;
+$kendo-editor-export-tool-icon-margin-x: .5em !default;
 
-$editor-resize-handle-size: 8px !default;
-$editor-resize-handle-border-width: 1px !default;
-$editor-resize-handle-border: #000000 !default;
-$editor-resize-handle-bg: #ffffff !default;
+$kendo-editor-resize-handle-size: 8px !default;
+$kendo-editor-resize-handle-border-width: 1px !default;
+$kendo-editor-resize-handle-border: #000000 !default;
+$kendo-editor-resize-handle-bg: #ffffff !default;
 
-$editor-selectednode-outline-width: 2px !default;
-$editor-selectednode-outline-color: #8cf !default; // sass-lint:disable-line hex-length
+$kendo-editor-selectednode-outline-width: 2px !default;
+$kendo-editor-selectednode-outline-color: #8cf !default; // sass-lint:disable-line hex-length
