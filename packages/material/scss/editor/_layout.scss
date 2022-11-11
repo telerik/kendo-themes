@@ -20,37 +20,3 @@
         }
     }
 }
-
-
-
-
-@include exports( "editor/dialog/layout/material" ) {
-
-    .k-editor-dialog {
-        box-sizing: border-box;
-
-        .k-edit-form-container {
-            width: auto;
-        }
-
-        .k-edit-label {
-            padding: calc( #{$padding-y} - #{$kendo-input-border-width} ) 0;
-            margin: 0 0 -.5em;
-            width: auto;
-            font-size: $font-size-sm;
-            line-height: 1;
-            text-align: inherit;
-            display: block;
-            float: none;
-        }
-
-        .k-edit-field {
-            width: auto;
-            float: none;
-            display: flex;
-            flex-direction: row;
-        }
-
-    }
-
-}

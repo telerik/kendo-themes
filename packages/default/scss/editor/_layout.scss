@@ -12,32 +12,12 @@
         display: flex;
         flex-flow: column nowrap;
         position: relative;
+        z-index: 1;
         -webkit-touch-callout: none;
         -webkit-tap-highlight-color: $rgba-transparent;
-    }
-    table.k-editor {
-        width: 100%;
-        display: table;
-        vertical-align: top;
-        table-layout: fixed;
-        border-collapse: separate;
-        border-spacing: 0;
-
-        tbody,
-        tr,
-        td {
-            border-color: inherit;
-        }
-    }
-
-    kendo-editor {
-        .k-editor-content {
-            z-index: 1;
-        }
 
         &.k-readonly {
             @include disabled( $disabled-styling );
-            > .k-content,
             .k-editor-content {
                 pointer-events: auto;
             }
@@ -58,9 +38,6 @@
         overflow: auto;
         background: none;
     }
-    .k-window.k-editor-widget {
-        padding: 0;
-    }
 
     // Resizable editor
     .k-editor-resizable {
@@ -73,6 +50,7 @@
         position: absolute;
         visibility: hidden;
     }
+
     .k-editor-resize-handle {
         width: $kendo-editor-resize-handle-size;
         height: $kendo-editor-resize-handle-size;
@@ -154,40 +132,11 @@
         }
     }
 
-    // Toolbar
-    .k-editor-toolbar,
-    .k-editor > .k-toolbar {
-        border-width: 0 0 $kendo-toolbar-border-width 0;
-        flex-shrink: 0;
-    }
 
-
-    // jQuery toolbar
+    // Тoolbar
     .k-editor-toolbar {
         border-width: 0 0 $kendo-toolbar-border-width 0;
-
-        // Tool
-        .k-tool {
-            padding: $kendo-button-padding-y;
-            width: $kendo-button-calc-size;
-            height: $kendo-button-calc-size;
-        }
-        .k-tool-text {
-            display: none;
-        }
-
-        // Overflow tools
-        .k-overflow-tools {
-            margin: 0;
-            position: absolute;
-            top: 0;
-            right: 0;
-            visibility: hidden;
-
-            .k-toolbar-overflow-button {
-                position: relative;
-            }
-        }
+        flex-shrink: 0;
 
         .k-editor-export {
             .k-icon {
@@ -259,17 +208,6 @@
         }
     }
 
-    td.k-editor-content {
-        padding: $kendo-input-padding-y;
-        width: 100%;
-        height: 100%;
-        border-width: 0;
-        outline: 0;
-
-        .k-resizable & {
-            padding: $kendo-input-padding-y $kendo-input-padding-y 16px;
-        }
-    }
 
     .k-edit-form-content {
         flex: 1 1 auto;
@@ -332,14 +270,6 @@
             position: relative;
         }
 
-        .k-edit-form-container {
-            display: inline-block;
-
-            .k-edit-label {
-                text-align: left;
-            }
-        }
-
         .k-actions {
             padding: 0;
         }
@@ -366,30 +296,6 @@
 
 @include exports( "editor/dialog/layout" ) {
 
-
-    .k-editor-dialog {
-        box-sizing: border-box;
-
-        .k-edit-form-container {
-            width: auto;
-        }
-
-        .k-edit-label {
-            width: 30%;
-            padding: calc( #{$padding-y} + #{$kendo-input-border-width} ) 0;
-        }
-
-        .k-edit-field {
-            width: 66%;
-        }
-    }
-
-    // View HTML dialog using flex to fit child textarea
-    .k-editor-dialog.k-viewhtml-dialog {
-        display: flex;
-        flex-direction: column;
-    }
-
     // Text area in editor dialog
     .k-textarea.k-editor-textarea {
         width: 100%;
@@ -401,28 +307,8 @@
 
 
 
-
 @include exports( "editor/filebrowser/layout" ) {
 
-
-    .k-filebrowser-dialog {
-        display: flex;
-
-        .k-edit-form-container {
-            display: flex;
-            flex-direction: column;
-            flex: 1 1 auto;
-
-        }
-
-        .k-edit-label {
-            width: 18%;
-        }
-
-        .k-edit-field {
-            width: 75%;
-        }
-    }
 
     .k-filebrowser {
         max-width: 100%;
@@ -556,15 +442,7 @@
 
 @include exports( "editor/table-wizard/layout" ) {
 
-    .k-editor-table-wizard-dialog {
-        display: flex;
-
-        // Edit form
-        .k-edit-form-container {
-            display: flex;
-            flex-direction: column;
-            flex: 1 1 auto;
-        }
+    .k-editor-table-wizard-window {
 
         // Tabstrip wrapper
         .k-tabstrip-wrapper {
