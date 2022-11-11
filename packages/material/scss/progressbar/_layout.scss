@@ -1,15 +1,15 @@
 @import "~@progress/kendo-theme-default/scss/progressbar/_layout.scss";
 
 @include exports("progressbar/layout/material") {
-    $progressbar-status-font-size: 11px !default;
-    $progressbar-indeterminate-animation-timing: 2s infinite !default;
+    $kendo-progressbar-status-font-size: 11px !default;
+    $kendo-progressbar-indeterminate-animation-timing: 2s infinite !default;
 
     .k-progressbar {
         @include border-radius( 0 );
         overflow: visible;
 
         .k-progress-status-wrap {
-            font-size: $progressbar-status-font-size;
+            font-size: $kendo-progressbar-status-font-size;
         }
     }
 
@@ -48,12 +48,12 @@
             &::before {
                 top: 0;
                 left: -150%;
-                animation: progressbar-primary-indeterminate-horizontal $progressbar-indeterminate-animation-timing;
+                animation: kendo-progressbar-primary-indeterminate-horizontal $kendo-progressbar-indeterminate-animation-timing;
             }
             &::after {
                 top: 0;
                 left: -50%;
-                animation: progressbar-secondary-indeterminate-horizontal $progressbar-indeterminate-animation-timing;
+                animation: kendo-progressbar-secondary-indeterminate-horizontal $kendo-progressbar-indeterminate-animation-timing;
             }
         }
 
@@ -61,12 +61,12 @@
             &::before {
                 top: -150%;
                 left: 0;
-                animation: progressbar-primary-indeterminate-vertical $progressbar-indeterminate-animation-timing;
+                animation: kendo-progressbar-primary-indeterminate-vertical $kendo-progressbar-indeterminate-animation-timing;
             }
             &::after {
                 top: -50%;
                 left: 0;
-                animation: progressbar-secondary-indeterminate-vertical $progressbar-indeterminate-animation-timing;
+                animation: kendo-progressbar-secondary-indeterminate-vertical $kendo-progressbar-indeterminate-animation-timing;
             }
         }
     }
