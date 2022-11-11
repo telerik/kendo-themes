@@ -11,9 +11,19 @@
         .k-selected {
             @include fill( $progressbar-fill-text, $progressbar-fill-bg, $progressbar-fill-border, $progressbar-fill-gradient );
         }
+    }
 
-        .k-item {
-            border-color: $progressbar-chunk-border;
+    // Chunk progressbar
+    .k-chunk-progressbar {
+        // TODO uncomment for 2023 R1
+        // background-color: k-if-var( $progressbar-chunk-border, transparent );
+        background-color: transparent;
+    }
+    .k-progressbar-chunk {
+        background-color: $progressbar-bg;
+
+        .k-selected {
+            background-color: $progressbar-fill-bg;
         }
     }
 

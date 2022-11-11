@@ -40,22 +40,22 @@
 
 
         // Chunks
-        > ul {
+        > .k-progressbar-chunks {
             border-width: inherit;
             border-style: inherit;
             white-space: nowrap;
             display: flex;
             align-items: stretch;
             flex: 1;
+            gap: 1px;
             grid-column: 1 / -1;
             grid-row: 1 / -1;
         }
 
-        .k-item {
+        .k-progressbar-chunk {
             display: block;
             border-width: 0;
-            border-style: solid;
-            border-color: transparent;
+           flex: 1;
         }
     }
 
@@ -108,16 +108,9 @@
 
 
         // Chunks
-        > ul {
+        > .k-progressbar-chunks {
             flex-direction: row;
         }
-
-        .k-item {}
-        .k-item + .k-item {
-            border-inline-start-width: var( --kendo-progressbar-item-border-width, #{$kendo-progressbar-item-border-width} );
-            border-inline-end-width: 0;
-        }
-
 
         // Horizontal reverse
         &.k-progressbar-reverse {
@@ -125,6 +118,10 @@
             > .k-selected {
                 flex-direction: row-reverse;
                 justify-self: flex-end;
+            }
+
+            > .k-progressbar-chunks {
+                flex-direction: row-reverse;
             }
         }
     }
@@ -150,7 +147,6 @@
         }
 
         > .k-selected {
-            height: 0;
             height: calc( var( --kendo-progressbar-progress, 0 ) * 1% ); // sass-lint:disable-line no-duplicate-properties
             flex-direction: column-reverse;
             align-self: flex-end;
@@ -167,15 +163,9 @@
 
 
         // Chunk
-        > ul {
-            flex-direction: column;
+        > .k-progressbar-chunks {
+            flex-direction: column-reverse;
         }
-        .k-item {}
-        .k-item + .k-item {
-            border-block-start-width: var( --kendo-progressbar-item-border-width, #{$kendo-progressbar-item-border-width} );
-            border-block-end-width: 0;
-        }
-
 
         // Vertical reverse
         &.k-progressbar-reverse {
@@ -187,6 +177,10 @@
             > .k-selected {
                 flex-direction: column;
                 align-self: flex-start;
+            }
+
+            > .k-progressbar-chunks {
+                flex-direction: column;
             }
         }
     }
@@ -219,7 +213,7 @@
         .k-reset,
         .k-progress-status-wrap,
         .k-selected,
-        .k-item {
+        .k-progress-chunk {
             display: none;
         }
 

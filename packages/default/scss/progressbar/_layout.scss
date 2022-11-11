@@ -37,21 +37,21 @@
 
 
         // Chunks
-        > ul {
+        > .k-progressbar-chunks {
             border-width: inherit;
             border-style: inherit;
             white-space: nowrap;
             display: flex;
             align-items: stretch;
             flex: 1;
+            gap: 1px;
             grid-column: 1 / -1;
             grid-row: 1 / -1;
         }
-        .k-item {
+        .k-progressbar-chunk {
             display: block;
             border-width: 0;
-            border-style: solid;
-            border-color: transparent;
+            flex: 1;
         }
 
     }
@@ -72,11 +72,8 @@
         &.k-progress-end { justify-content: flex-end; }
     }
     .k-progress-status {
-        padding: 0 ($spacer-x / 2);
-        padding-block-start: 0;
-        padding-block-end: 0;
-        padding-inline-start: ($spacer-x / 2);
-        padding-inline-end: ($spacer-x / 2);
+        padding-block: 0;
+        padding-inline: ($spacer-x / 2);
         min-width: 10px;
         text-align: center;
         display: inline-block;
@@ -97,7 +94,6 @@
         }
 
         > .k-selected {
-            width: 0;
             width: calc( var( --kendo-progressbar-progress, 0 ) * 1% ); // sass-lint:disable-line no-duplicate-properties
             flex-direction: row;
 
@@ -108,16 +104,9 @@
 
 
         // Chunks
-        > ul {
+        > .k-progressbar-chunks {
             flex-direction: row;
         }
-        .k-item {}
-        .k-item + .k-item {
-            border-left-width: 1px;
-            border-inline-start-width: 1px;
-            border-inline-end-width: 0;
-        }
-
 
         // Horizontal reverse
         &.k-progressbar-reverse {
@@ -127,6 +116,9 @@
                 justify-self: flex-end;
             }
 
+            > .k-progressbar-chunks {
+                flex-direction: row-reverse;
+            }
         }
     }
 
@@ -147,7 +139,6 @@
         }
 
         > .k-selected {
-            height: 0;
             height: calc( var( --kendo-progressbar-progress, 0 ) * 1% ); // sass-lint:disable-line no-duplicate-properties
             flex-direction: column-reverse;
             align-self: flex-end;
@@ -160,16 +151,9 @@
 
 
         // Chunk
-        > ul {
-            flex-direction: column;
+        > .k-progressbar-chunks {
+            flex-direction: column-reverse;
         }
-        .k-item {}
-        .k-item + .k-item {
-            border-top-width: 1px;
-            border-block-start-width: 1px;
-            border-block-end-width: 0;
-        }
-
 
         // Vertical reverse
         &.k-progressbar-reverse {
@@ -179,6 +163,10 @@
                 flex-direction: column;
                 align-self: flex-start;
             }
+
+            > .k-progressbar-chunks {
+                flex-direction: column;
+            }
         }
     }
 
@@ -187,7 +175,7 @@
     .k-progressbar-indeterminate {
         .k-progress-status-wrap,
         .k-selected,
-        .k-item {
+        .k-progressbar-chunk {
             display: none;
         }
     }
