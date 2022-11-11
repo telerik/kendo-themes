@@ -88,3 +88,6 @@ export * from './card/index';
 // export * from './panelbar/index';
 // export * from './splitter/index';
 // export * from './tile-layout/index';
+
+// Editors
+export * from './editor/index';
