@@ -40,10 +40,6 @@
                 );
             }
 
-            .k-item {
-                border-color: var( --kendo-progressbar-chunk-border, #{$kendo-progressbar-chunk-border} );
-            }
-
             &[disabled],
             &:disabled,
             &.k-disabled {
@@ -57,6 +53,17 @@
                     background-color: var( --kendo-progressbar-fill-disabled-bg, #{$kendo-progressbar-fill-disabled-bg} );
                 }
             }
+        }
+    }
+
+    .k-progressbar.k-chunk-progressbar:not(.k-progressbar-indeterminate) {
+        background-color: k-if-var( $kendo-progressbar-chunk-border, transparent );
+    }
+    .k-progressbar-chunk {
+        background-color: var( --kendo-progressbar-bg, #{$kendo-progressbar-bg} );
+
+        .k-selected {
+            background-color: var( --kendo-progressbar-fill-bg, #{$kendo-progressbar-fill-bg} );
         }
     }
 
