@@ -25,7 +25,7 @@ root.render(
         <style>{styles}</style>
         <div id="test-area" className="k-d-grid">
             <section>
-                <Window className="k-editor-dialog k-editor-table-wizard-dialog" title="Table Wizard" actions={[ 'close' ]} actionButtons actionButtonsAlign="end">
+                <Window className="k-editor-window k-editor-table-wizard-window" title="Table Wizard" actions={[ 'close' ]} actionButtons actionButtonsAlign="end">
                     <div className="k-tabstrip k-tabstrip-top">
                         <div className="k-tabstrip-items-wrapper k-hstack">
                             <ul className="k-tabstrip-items k-reset">
