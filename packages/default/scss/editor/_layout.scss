@@ -2,13 +2,13 @@
 
     // Base
     .k-editor {
-        border-width: $editor-border-width;
+        border-width: $kendo-editor-border-width;
         border-style: solid;
         box-sizing: border-box;
         outline: 0;
-        font-family: $editor-font-family;
-        font-size: $editor-font-size;
-        line-height: $editor-line-height;
+        font-family: $kendo-editor-font-family;
+        font-size: $kendo-editor-font-size;
+        line-height: $kendo-editor-line-height;
         display: flex;
         flex-flow: column nowrap;
         position: relative;
@@ -74,9 +74,9 @@
         visibility: hidden;
     }
     .k-editor-resize-handle {
-        width: $editor-resize-handle-size;
-        height: $editor-resize-handle-size;
-        border-width: $editor-resize-handle-border-width;
+        width: $kendo-editor-resize-handle-size;
+        height: $kendo-editor-resize-handle-size;
+        border-width: $kendo-editor-resize-handle-border-width;
         border-style: solid;
         box-sizing: border-box;
         position: absolute;
@@ -141,7 +141,7 @@
     }
 
     .ProseMirror-selectednode { // sass-lint:disable-line class-name-format
-        outline-width: $editor-selectednode-outline-width;
+        outline-width: $kendo-editor-selectednode-outline-width;
         outline-style: solid;
 
     }
@@ -191,7 +191,7 @@
 
         .k-editor-export {
             .k-icon {
-                margin-right: $editor-export-tool-icon-margin-x;
+                margin-right: $kendo-editor-export-tool-icon-margin-x;
             }
 
             .k-icon,
@@ -230,9 +230,9 @@
             .k-placeholder::before {
                 content: attr(data-placeholder);
                 height: 0;
-                color: $editor-placeholder-text;
+                color: $kendo-editor-placeholder-text;
                 float: left;
-                opacity: $editor-placeholder-opacity;
+                opacity: $kendo-editor-placeholder-opacity;
                 cursor: text;
                 user-select: none;
             }

@@ -55,11 +55,11 @@
 
     // Resizable images
     .k-editor-resize-handle {
-        background-color: $editor-resize-handle-bg;
-        border-color: $editor-resize-handle-border;
+        background-color: $kendo-editor-resize-handle-bg;
+        border-color: $kendo-editor-resize-handle-border;
     }
     .ProseMirror-selectednode { // sass-lint:disable-line class-name-format
-        outline-color: $editor-selectednode-outline-color;
+        outline-color: $kendo-editor-selectednode-outline-color;
     }
 
 
@@ -77,14 +77,14 @@
         .k-text-selected,
         &::selection {
             @include fill (
-                $color: $editor-selected-text,
-                $bg: $editor-selected-bg
+                $color: $kendo-editor-selected-text,
+                $bg: $kendo-editor-selected-bg
             );
         }
 
         .k-text-highlighted {
             @include fill (
-                $bg: $editor-highlighted-bg
+                $bg: $kendo-editor-highlighted-bg
             );
         }
     }
