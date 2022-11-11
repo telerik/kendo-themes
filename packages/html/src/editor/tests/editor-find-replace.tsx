@@ -4,7 +4,9 @@ import { ActionButtons } from '../../action-buttons';
 import { Button } from '../../button';
 import { Checkbox } from '../../checkbox';
 import { Textbox } from '../../textbox';
-import { Toolbar } from '../../toolbar';
+import { Editor } from '../editor';
+import { EditorContent } from '../editor-content';
+import { EditorToolbar } from '../editor-toolbar';
 import { Window } from '../../window';
 
 const root = ReactDOM.createRoot(
@@ -30,8 +32,8 @@ root.render(
         <style>{styles}</style>
         <div id="test-area" className="k-d-grid k-grid-cols-2">
 
-            <span>Find Dialog</span>
-            <span>Replace Dialog</span>
+            <span>Find Window</span>
+            <span>Replace Window</span>
 
             <section>
                 <Window title="Find and Replace" actions={[ 'close' ]}>
@@ -90,7 +92,7 @@ root.render(
             </section>
 
             <section>
-                <Window title="Find and Replace" actions={[ 'close' ]}>
+                <Window className="k-editor-window" title="Find and Replace" actions={[ 'close' ]}>
                     <div className="k-tabstrip k-tabstrip-top k-editor-find-replace">
                         <div className="k-tabstrip-items-wrapper k-hstack">
                             <ul className="k-tabstrip-items k-reset">
@@ -164,8 +166,8 @@ root.render(
             <span></span>
 
             <section>
-                <div className="k-widget k-editor" style={{ height: "150px" }}>
-                    <Toolbar>
+                <Editor style={{ height: "150px" }}>
+                    <EditorToolbar resizable>
                         <span className="k-tool-group">
                             <div className="k-button-group">
                                 <Button icon="bold"></Button>
@@ -174,9 +176,11 @@ root.render(
                                 <Button icon="find" selected></Button>
                             </div>
                         </span>
-                    </Toolbar>
-                    <div className="k-editor-content"><div className="ProseMirror"><span className="k-text-selected">Word</span> and few more <span className="k-text-highlighted">word</span>s. And yet again. <span className="k-text-highlighted">Word</span>.</div></div>
-                </div>
+                    </EditorToolbar>
+                    <EditorContent>
+                        <div className="ProseMirror"><span className="k-text-selected">Word</span> and few more <span className="k-text-highlighted">word</span>s. And yet again. <span className="k-text-highlighted">Word</span>.</div>
+                    </EditorContent>
+                </Editor>
             </section>
         </div>
     </>
