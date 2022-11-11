@@ -123,7 +123,7 @@ module.exports = {
     // ...require('./taskboard'),
 
     // Editors
-    // ...require('./editor'),
+    ...require('./editor'),
     // ...require('./imageeditor'),
 
     // Scheduling
