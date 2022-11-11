@@ -6,9 +6,7 @@
             $component-bg,
             $component-border
         );
-    }
 
-    kendo-editor {
         &.k-readonly {
             .k-editor-content.k-focus {
                 outline-color: $body-text;
@@ -47,7 +45,7 @@
 
         // Hover & Actve state
         &:hover,
-        &.k-active,
+        &.k-hover,
         &.k-active {
             border-color: $panel-border;
         }

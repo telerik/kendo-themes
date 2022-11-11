@@ -20,33 +20,13 @@
         display: flex;
         flex-flow: column nowrap;
         position: relative;
+        z-index: 1;
         -webkit-touch-callout: none;
         -webkit-tap-highlight-color: $rgba-transparent;
-    }
-    table.k-editor {
-        width: 100%;
-        display: table;
-        vertical-align: top;
-        table-layout: fixed;
-        border-collapse: separate;
-        border-spacing: 0;
-
-        tbody,
-        tr,
-        td {
-            border-color: inherit;
-        }
-    }
-
-    kendo-editor {
-        .k-editor-content {
-            z-index: 1;
-        }
 
         &.k-readonly {
             opacity: .6;
             fill: grayscale(.1);
-            > .k-content,
             .k-editor-content {
                 pointer-events: auto;
             }
@@ -58,6 +38,7 @@
         }
     }
 
+
     // Inline editor
     .k-editor-inline {
         @include border-radius( $kendo-border-radius-md );
@@ -66,9 +47,6 @@
         word-wrap: break-word;
         overflow: auto;
         background: none;
-    }
-    .k-window.k-editor-widget {
-        padding: 0;
     }
 
     // Resizable editor
@@ -82,6 +60,7 @@
         position: absolute;
         visibility: hidden;
     }
+
     .k-editor-resize-handle {
         width: var( --kendo-editor-resize-handle-size, #{$kendo-editor-resize-handle-size} );
         height: var( --kendo-editor-resize-handle-size, #{$kendo-editor-resize-handle-size} );
@@ -148,10 +127,12 @@
             cursor: e-resize;
         }
     }
+
     .ProseMirror-selectednode { // sass-lint:disable-line class-name-format
         outline-width: var( --kendo-editor-selectednode-outline-width, #{$kendo-editor-selectednode-outline-width} );
         outline-style: solid;
     }
+
     .ProseMirror-hideselection { // sass-lint:disable-line class-name-format
         caret-color: transparent;
 
@@ -161,40 +142,11 @@
         }
     }
 
-    // Toolbar
-    .k-editor-toolbar,
-    .k-editor > .k-toolbar {
-        border-width: 0 0 $kendo-toolbar-border-width 0;
-        flex-shrink: 0;
-    }
 
-
-    // jQuery toolbar
+    // Тoolbar
     .k-editor-toolbar {
         border-width: 0 0 $kendo-toolbar-border-width 0;
-
-        // Tool
-        .k-tool {
-            padding: $kendo-button-padding-y-md;
-            width: $kendo-button-calc-size;
-            height: $kendo-button-calc-size;
-        }
-        .k-tool-text {
-            display: none;
-        }
-
-        // Overflow tools
-        .k-overflow-tools {
-            margin: 0;
-            position: absolute;
-            inset-block-start: 0;
-            inset-inline-end: 0;
-            visibility: hidden;
-
-            .k-toolbar-overflow-button {
-                position: relative;
-            }
-        }
+        flex-shrink: 0;
 
         .k-editor-export {
             .k-icon {
@@ -244,17 +196,6 @@
                 cursor: text;
                 user-select: none;
             }
-        }
-    }
-    td.k-editor-content {
-        padding-block: $kendo-input-padding-y-md;
-        width: 100%;
-        height: 100%;
-        border-width: 0;
-        outline: 0;
-
-        .k-resizable & {
-            padding: $kendo-input-padding-y-md $kendo-input-padding-y-md map-get( $kendo-spacing, 4 );
         }
     }
 
@@ -316,14 +257,6 @@
             position: relative;
         }
 
-        .k-edit-form-container {
-            display: inline-block;
-
-            .k-edit-label {
-                text-align: left;
-            }
-        }
-
         .k-actions {
             padding: 0;
         }
@@ -347,53 +280,11 @@
         }
     }
 
-    .k-editor-dialog {
-        box-sizing: border-box;
-
-        .k-edit-form-container {
-            width: auto;
-        }
-
-        .k-edit-label {
-            width: 30%;
-            padding-block: calc( #{$kendo-padding-y} + #{$kendo-input-border-width} );
-        }
-
-        .k-edit-field {
-            width: 66%;
-        }
-    }
-
-    // View HTML dialog using flex to fit child textarea
-    .k-editor-dialog.k-viewhtml-dialog {
-        display: flex;
-        flex-direction: column;
-    }
-
     // Text area in editor dialog
     .k-textarea.k-editor-textarea {
         width: 100%;
         height: 100%;
         resize: none;
-    }
-
-    .k-filebrowser-dialog {
-        display: flex;
-
-        .k-edit-form-container {
-            display: flex;
-            flex-direction: column;
-            flex: 1 1 auto;
-
-        }
-
-        .k-edit-label {
-            width: 18%;
-        }
-
-        .k-edit-field {
-            width: 75%;
-        }
     }
 
     .k-filebrowser {
@@ -521,15 +412,7 @@
         }
     }
 
-    .k-editor-table-wizard-dialog {
-        display: flex;
-
-        // Edit form
-        .k-edit-form-container {
-            display: flex;
-            flex-direction: column;
-            flex: 1 1 auto;
-        }
+    .k-editor-table-wizard-window {
 
         // Tabstrip wrapper
         .k-tabstrip-wrapper {
