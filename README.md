@@ -114,8 +114,8 @@ To change the layout or the front meter of the generated help topic, change the 
 
 This package is part of the following suites:
 
-* [Kendo UI for Angular](http://www.telerik.com/kendo-angular-ui/)
-* [KendoReact](http://www.telerik.com/kendo-react-ui/)
+* [Kendo UI for Angular](http://www.telerik.com/kendo-angular-ui)
+* [KendoReact](http://www.telerik.com/kendo-react-ui)
 * [Kendo UI for jQuery](http://www.telerik.com/kendo-ui)
 * [UI for ASP.NET MVC](http://www.telerik.com/aspnet-mvc)
 * [UI for ASP.NET Core](http://www.telerik.com/aspnet-core-ui)
