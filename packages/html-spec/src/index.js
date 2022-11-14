@@ -44,7 +44,7 @@ module.exports = {
     // ...require('./textarea'),
     ...require('./checkbox'),
     // ...require('./listbox'),
-    // ...require('./progressbar'),
+    ...require('./progressbar'),
     // ...require('./radio'),
     // ...require('./slider'),
 
