@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { Button } from '../../button';
-import { List } from '../../list/list';
-import { ListItem } from '../../list/list-item';
+import { List, ListItem } from '../../list';
+import { ListBox, ListBoxActions } from '../../listbox';
 
 const root = ReactDOM.createRoot(
     document.getElementById('app') as HTMLElement
@@ -28,96 +28,157 @@ root.render(
             <span>Listbox RTL</span>
 
             <section>
-                <div className="k-widget k-listbox k-listbox-toolbar-left">
-                    <div className="k-listbox-toolbar">
-                        <ul className="k-reset">
-                            <li><Button icon="arrow-n"></Button></li>
-                            <li><Button icon="arrow-s"></Button></li>
-                            <li><Button icon="arrow-w"></Button></li>
-                            <li><Button icon="arrow-e"></Button></li>
-                        </ul>
-                    </div>
-                    <div className="k-list-scroller k-selectable">
-                        <List>
-                            <ListItem>Item</ListItem>
-                            <ListItem hover>Hover</ListItem>
-                            <ListItem focus>Focus</ListItem>
-                            <ListItem selected>Selected</ListItem>
-                            <ListItem hover selected>Hover selected</ListItem>
-                            <ListItem disabled>Disabled</ListItem>
-                        </List>
-                    </div>
-                </div>
+                <ListBox>
+                    <ListBoxActions>
+                        <Button icon="arrow-n"></Button>
+                        <Button icon="arrow-s"></Button>
+                        <Button icon="arrow-w"></Button>
+                        <Button icon="arrow-e"></Button>
+                    </ListBoxActions>
+                    <List>
+                        <ListItem>Item</ListItem>
+                        <ListItem hover>Hover</ListItem>
+                        <ListItem focus>Focus</ListItem>
+                        <ListItem selected>Selected</ListItem>
+                        <ListItem hover selected>Hover selected</ListItem>
+                        <ListItem disabled>Disabled</ListItem>
+                    </List>
+                </ListBox>
             </section>
 
             <section dir="rtl">
-                <div className="k-widget k-listbox k-listbox-toolbar-left">
-                    <div className="k-listbox-toolbar">
-                        <ul className="k-reset">
-                            <li><Button icon="arrow-n"></Button></li>
-                            <li><Button icon="arrow-s"></Button></li>
-                            <li><Button icon="arrow-w"></Button></li>
-                            <li><Button icon="arrow-e"></Button></li>
-                        </ul>
-                    </div>
-                    <div className="k-list-scroller k-selectable">
-                        <List>
-                            <ListItem>Item</ListItem>
-                            <ListItem hover>Hover</ListItem>
-                            <ListItem focus>Focus</ListItem>
-                            <ListItem selected>Selected</ListItem>
-                            <ListItem hover selected>Hover selected</ListItem>
-                            <ListItem disabled>Disabled</ListItem>
-                        </List>
-                    </div>
-                </div>
+                <ListBox>
+                    <ListBoxActions>
+                        <Button icon="arrow-n"></Button>
+                        <Button icon="arrow-s"></Button>
+                        <Button icon="arrow-w"></Button>
+                        <Button icon="arrow-e"></Button>
+                    </ListBoxActions>
+                    <List>
+                        <ListItem>Item</ListItem>
+                        <ListItem hover>Hover</ListItem>
+                        <ListItem focus>Focus</ListItem>
+                        <ListItem selected>Selected</ListItem>
+                        <ListItem hover selected>Hover selected</ListItem>
+                        <ListItem disabled>Disabled</ListItem>
+                    </List>
+                </ListBox>
             </section>
 
             <section>
-                <div className="k-widget k-listbox k-listbox-toolbar-right">
-                    <div className="k-listbox-toolbar">
-                        <ul className="k-reset">
-                            <li><Button icon="arrow-n"></Button></li>
-                            <li><Button icon="arrow-s"></Button></li>
-                            <li><Button icon="arrow-w"></Button></li>
-                            <li><Button icon="arrow-e"></Button></li>
-                        </ul>
-                    </div>
-                    <div className="k-list-scroller k-selectable">
-                        <List>
-                            <ListItem>Item</ListItem>
-                            <ListItem hover>Hover</ListItem>
-                            <ListItem focus>Focus</ListItem>
-                            <ListItem selected>Selected</ListItem>
-                            <ListItem hover selected>Hover selected</ListItem>
-                            <ListItem disabled>Disabled</ListItem>
-                        </List>
-                    </div>
-                </div>
+                <ListBox actionsPosition="right">
+                    <ListBoxActions>
+                        <Button icon="arrow-n"></Button>
+                        <Button icon="arrow-s"></Button>
+                        <Button icon="arrow-w"></Button>
+                        <Button icon="arrow-e"></Button>
+                    </ListBoxActions>
+                    <List>
+                        <ListItem>Item</ListItem>
+                        <ListItem hover>Hover</ListItem>
+                        <ListItem focus>Focus</ListItem>
+                        <ListItem selected>Selected</ListItem>
+                        <ListItem hover selected>Hover selected</ListItem>
+                        <ListItem disabled>Disabled</ListItem>
+                    </List>
+                </ListBox>
             </section>
 
             <section dir="rtl">
-                <div className="k-widget k-listbox k-listbox-toolbar-right">
-                    <div className="k-listbox-toolbar">
-                        <ul className="k-reset">
-                            <li><Button icon="arrow-n"></Button></li>
-                            <li><Button icon="arrow-s"></Button></li>
-                            <li><Button icon="arrow-w"></Button></li>
-                            <li><Button icon="arrow-e"></Button></li>
-                        </ul>
-                    </div>
-                    <div className="k-list-scroller k-selectable">
-                        <List>
-                            <ListItem>Item</ListItem>
-                            <ListItem hover>Hover</ListItem>
-                            <ListItem focus>Focus</ListItem>
-                            <ListItem selected>Selected</ListItem>
-                            <ListItem hover selected>Hover selected</ListItem>
-                            <ListItem disabled>Disabled</ListItem>
-                        </List>
-                    </div>
-                </div>
+                <ListBox actionsPosition="right">
+                    <ListBoxActions>
+                        <Button icon="arrow-n"></Button>
+                        <Button icon="arrow-s"></Button>
+                        <Button icon="arrow-w"></Button>
+                        <Button icon="arrow-e"></Button>
+                    </ListBoxActions>
+                    <List>
+                        <ListItem>Item</ListItem>
+                        <ListItem hover>Hover</ListItem>
+                        <ListItem focus>Focus</ListItem>
+                        <ListItem selected>Selected</ListItem>
+                        <ListItem hover selected>Hover selected</ListItem>
+                        <ListItem disabled>Disabled</ListItem>
+                    </List>
+                </ListBox>
             </section>
+
+            <section>
+                <ListBox actionsPosition="top">
+                    <ListBoxActions>
+                        <Button icon="arrow-n"></Button>
+                        <Button icon="arrow-s"></Button>
+                        <Button icon="arrow-w"></Button>
+                        <Button icon="arrow-e"></Button>
+                    </ListBoxActions>
+                    <List>
+                        <ListItem>Item</ListItem>
+                        <ListItem hover>Hover</ListItem>
+                        <ListItem focus>Focus</ListItem>
+                        <ListItem selected>Selected</ListItem>
+                        <ListItem hover selected>Hover selected</ListItem>
+                        <ListItem disabled>Disabled</ListItem>
+                    </List>
+                </ListBox>
+            </section>
+
+            <section dir="rtl">
+                <ListBox actionsPosition="top">
+                    <ListBoxActions>
+                        <Button icon="arrow-n"></Button>
+                        <Button icon="arrow-s"></Button>
+                        <Button icon="arrow-e"></Button>
+                        <Button icon="arrow-w"></Button>
+                    </ListBoxActions>
+                    <List>
+                        <ListItem>Item</ListItem>
+                        <ListItem hover>Hover</ListItem>
+                        <ListItem focus>Focus</ListItem>
+                        <ListItem selected>Selected</ListItem>
+                        <ListItem hover selected>Hover selected</ListItem>
+                        <ListItem disabled>Disabled</ListItem>
+                    </List>
+                </ListBox>
+            </section>
+
+            <section>
+                <ListBox actionsPosition="bottom">
+                    <ListBoxActions>
+                        <Button icon="arrow-n"></Button>
+                        <Button icon="arrow-s"></Button>
+                        <Button icon="arrow-w"></Button>
+                        <Button icon="arrow-e"></Button>
+                    </ListBoxActions>
+                    <List>
+                        <ListItem>Item</ListItem>
+                        <ListItem hover>Hover</ListItem>
+                        <ListItem focus>Focus</ListItem>
+                        <ListItem selected>Selected</ListItem>
+                        <ListItem hover selected>Hover selected</ListItem>
+                        <ListItem disabled>Disabled</ListItem>
+                    </List>
+                </ListBox>
+            </section>
+
+            <section dir="rtl">
+                <ListBox actionsPosition="bottom">
+                    <ListBoxActions>
+                        <Button icon="arrow-n"></Button>
+                        <Button icon="arrow-s"></Button>
+                        <Button icon="arrow-e"></Button>
+                        <Button icon="arrow-w"></Button>
+                    </ListBoxActions>
+                    <List>
+                        <ListItem>Item</ListItem>
+                        <ListItem hover>Hover</ListItem>
+                        <ListItem focus>Focus</ListItem>
+                        <ListItem selected>Selected</ListItem>
+                        <ListItem hover selected>Hover selected</ListItem>
+                        <ListItem disabled>Disabled</ListItem>
+                    </List>
+                </ListBox>
+            </section>
+
 
         </div>
     </>
