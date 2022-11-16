@@ -3,9 +3,9 @@
     // Listview
     .k-listview {
         @include fill(
-            $listview-text,
-            $listview-bg,
-            $listview-border
+            $kendo-listview-text,
+            $kendo-listview-bg,
+            $kendo-listview-border
         );
     }
 
@@ -15,21 +15,26 @@
 
         > .k-focus {
             @include fill(
-                $listview-item-focus-text,
-                $listview-item-focus-bg,
-                $listview-item-focus-border
+                $kendo-listview-item-focus-text,
+                $kendo-listview-item-focus-bg,
+                $kendo-listview-item-focus-border
             );
-            @include box-shadow( $listview-item-focus-shadow );
+            @include box-shadow( $kendo-listview-item-focus-shadow );
         }
 
         > .k-selected {
             @include fill(
-                $listview-item-selected-text,
-                $listview-item-selected-bg,
-                $listview-item-selected-border
+                $kendo-listview-item-selected-text,
+                $kendo-listview-item-selected-bg,
+                $kendo-listview-item-selected-border
             );
         }
 
+    }
+
+    // List item
+    .k-listview-item {
+        border-color: $kendo-listview-border;
     }
 
 }
