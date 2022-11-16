@@ -9,7 +9,7 @@
     // Listview content
     .k-listview-content {}
     .k-listview-content > .k-selected.k-focus {
-        background-color: rgba( k-contrast-color( $listview-bg ), .12 );
+        background-color: rgba( k-contrast-color( $kendo-listview-bg ), .12 );
     }
 
 }

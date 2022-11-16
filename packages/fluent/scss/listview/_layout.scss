@@ -114,7 +114,6 @@
     .k-listview-pager {
         border-width: 0;
         border-color: inherit;
-        font: inherit;
     }
     .k-listview-bordered > .k-listview-pager-top {
         border-block-end-width: var( --kendo-listview-border-width, #{$kendo-listview-border-width} );
