@@ -1,6 +1,6 @@
 // Listbox
-$listbox-margin: 12px !default;
-$listbox-button-margin: 8px !default;
+$listbox-spacing: k-map-get( $spacing, 3 ) !default;
+$listbox-button-spacing: k-map-get( $spacing, 2 ) !default;
 $listbox-width: 10em !default;
 $listbox-default-height: 200px !default;
 
