@@ -12,7 +12,7 @@
     .k-coloreditor:focus,
     .k-coloreditor.k-focus {
         @include fill( $border: $coloreditor-focus-border );
-        @include box-shadow( $coloreditor-focus-shadow );
+        @include focus-indicator( $coloreditor-focus-shadow );
     }
 
     .k-coloreditor .k-colorgradient:focus,

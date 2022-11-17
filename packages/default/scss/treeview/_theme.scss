@@ -31,7 +31,7 @@
         // Focus state
         &:focus,
         &.k-focus {
-            @include box-shadow( $kendo-treeview-item-focus-shadow );
+            @include focus-indicator( $kendo-treeview-item-focus-shadow, true );
         }
 
         // Selected state
@@ -72,7 +72,7 @@
                 $kendo-treeview-loadmore-focus-bg,
                 $kendo-treeview-loadmore-focus-border
             );
-            @include box-shadow( $kendo-treeview-loadmore-focus-shadow );
+            @include focus-indicator( $kendo-treeview-loadmore-focus-shadow, true );
         }
     }
 

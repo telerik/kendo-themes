@@ -56,7 +56,7 @@
                 $actionsheet-item-focus-border,
                 $actionsheet-item-focus-gradient
             );
-            @include box-shadow( $actionsheet-item-focus-shadow );
+            @include focus-indicator( $actionsheet-item-focus-shadow );
         }
 
 

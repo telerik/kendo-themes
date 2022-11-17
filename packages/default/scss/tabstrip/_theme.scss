@@ -49,11 +49,11 @@
 
             &:focus,
             &.k-focus {
-                @include box-shadow( $tabstrip-item-focus-shadow );
+                @include focus-indicator( $tabstrip-item-focus-shadow, true );
             }
 
             &.k-tabstrip-dragging {
-                @include box-shadow( $tabstrip-item-dragging-shadow );
+                @include focus-indicator( $tabstrip-item-dragging-shadow );
             }
         }
 

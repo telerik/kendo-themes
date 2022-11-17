@@ -56,7 +56,7 @@
                     $panelbar-header-focus-border,
                     $panelbar-header-focus-gradient
                 );
-                box-shadow: $panelbar-header-focus-shadow;
+                @include focus-indicator( $panelbar-header-focus-shadow, true );
             }
 
             // Focus & Hover
@@ -148,7 +148,7 @@
                     $panelbar-item-focus-border,
                     $panelbar-item-focus-gradient
                 );
-                box-shadow: $panelbar-item-focus-shadow;
+                @include focus-indicator( $panelbar-item-focus-shadow, true );
             }
 
             // Focus & Hover

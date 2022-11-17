@@ -62,6 +62,6 @@
     }
 
     .k-timeline-track-item.k-focus .k-timeline-circle {
-        @include box-shadow( $timeline-track-item-focus-shadow );
+        @include focus-indicator( $timeline-track-item-focus-shadow );
     }
 }

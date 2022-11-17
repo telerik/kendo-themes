@@ -25,7 +25,7 @@
     .k-radio:focus,
     .k-radio.k-focus {
         @include fill( $border: $kendo-radio-focus-border );
-        @include box-shadow( $kendo-radio-focus-shadow );
+        @include focus-indicator( $kendo-radio-focus-shadow );
     }
 
 
@@ -54,7 +54,7 @@
     .k-radio:checked:focus,
     .k-radio.k-checked.k-focus {
         @include fill( $border: $kendo-radio-focus-checked-border );
-        @include box-shadow( $kendo-radio-focus-checked-shadow );
+        @include focus-indicator( $kendo-radio-focus-checked-shadow );
     }
 
 

@@ -1,0 +1,7 @@
+@mixin focus-indicator( $indicator, $inset: false, $themeable: false, $type: "box-shadow" ) {
+    @if $kendo-enable-focus-contrast and k-list-nth($indicator, 1) {
+        @include box-shadow( if( $inset, inset, null ) 0 0 0 2px if( $themeable, currentColor, rgb( 0, 0, 0 ) ) );
+    } @else {
+        @include box-shadow( $indicator... );
+    }
+}

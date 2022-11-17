@@ -21,7 +21,7 @@
                 $card-focus-bg,
                 $card-focus-border
             );
-            @include box-shadow( $card-focus-shadow );
+            @include focus-indicator( $card-focus-shadow );
         }
 
         &.k-selected {
@@ -80,7 +80,7 @@
         &.k-focus,
         &.k-selected {
             > .k-card {
-                @include box-shadow( $card-focus-shadow );
+                @include focus-indicator( $card-focus-shadow );
             }
         }
     }
