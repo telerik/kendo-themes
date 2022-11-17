@@ -19,7 +19,7 @@
                 $kendo-listview-item-focus-bg,
                 $kendo-listview-item-focus-border
             );
-            @include box-shadow( $kendo-listview-item-focus-shadow );
+            @include focus-indicator( $kendo-listview-item-focus-shadow, true );
         }
 
         > .k-selected {

@@ -13,7 +13,7 @@
     .k-window {
         &:focus,
         &.k-focus {
-            @include box-shadow( $kendo-window-focus-shadow );
+            @include focus-indicator( $kendo-window-focus-shadow );
         }
     }
 

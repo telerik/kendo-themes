@@ -12,7 +12,7 @@
     .k-colorgradient:focus,
     .k-colorgradient.k-focus {
         @include fill( $border: $colorgradient-focus-border );
-        @include box-shadow( $colorgradient-focus-shadow );
+        @include focus-indicator( $colorgradient-focus-shadow );
     }
 
     // Canvas
@@ -32,7 +32,7 @@
         &:focus,
         &.k-focus {
             @include fill( $bg: transparent, $border: $kendo-color-white );
-            @include box-shadow( $colorgradient-draghandle-focus-shadow );
+            @include focus-indicator( $colorgradient-draghandle-focus-shadow );
         }
 
         &:hover,

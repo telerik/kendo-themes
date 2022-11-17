@@ -25,7 +25,7 @@
     .k-checkbox:focus,
     .k-checkbox.k-focus {
         @include fill( $border: $kendo-checkbox-focus-border );
-        @include box-shadow( $kendo-checkbox-focus-shadow );
+        @include focus-indicator( $kendo-checkbox-focus-shadow );
     }
 
 
@@ -52,7 +52,7 @@
     .k-checkbox:checked:focus,
     .k-checkbox.k-checked.k-focus {
         @include fill( $border: $kendo-checkbox-focus-checked-border );
-        @include box-shadow( $kendo-checkbox-focus-checked-shadow );
+        @include focus-indicator( $kendo-checkbox-focus-checked-shadow );
     }
 
 

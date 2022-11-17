@@ -10,7 +10,7 @@
         &:focus,
         &.k-focus {
             @include fill( $bg: $kendo-pager-focus-bg );
-            @include box-shadow( $kendo-pager-focus-shadow );
+            @include focus-indicator( $kendo-pager-focus-shadow, true );
         }
     }
 
@@ -42,7 +42,7 @@
         &:focus,
         &.k-focus {
             background-color: $kendo-pager-item-focus-bg;
-            @include box-shadow( $kendo-pager-item-focus-shadow );
+            @include focus-indicator( $kendo-pager-item-focus-shadow, true );
         }
     }
 

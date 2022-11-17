@@ -19,7 +19,7 @@
 
         &:focus,
         &.k-focus {
-            @include box-shadow( $orgchart-card-focus-shadow );
+            @include focus-indicator( $orgchart-card-focus-shadow );
         }
     }
 
@@ -33,7 +33,7 @@
     }
     .k-orgchart-node-group-container:focus,
     .k-orgchart-node-group-container.k-focus {
-        @include box-shadow( $orgchart-node-group-focus-shadow );
+        @include focus-indicator( $orgchart-node-group-focus-shadow );
         @include fill ( $border: $orgchart-node-group-focus-border );
     }
 

@@ -38,7 +38,7 @@
 
             &:focus,
             &.k-focus {
-                @include box-shadow( $menu-item-focus-shadow );
+                @include focus-indicator( $menu-item-focus-shadow, true );
             }
         }
     }
@@ -85,7 +85,7 @@
         .k-item:focus,
         .k-item.k-focus {
             > .k-link {
-                @include box-shadow( $kendo-menu-popup-item-focus-shadow );
+                @include focus-indicator( $kendo-menu-popup-item-focus-shadow, true );
             }
         }
     }

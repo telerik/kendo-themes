@@ -25,7 +25,7 @@
         // Focus state
         &:focus,
         &.k-focus {
-            @include box-shadow( $kendo-button-focus-shadow );
+            @include focus-indicator( $kendo-button-focus-shadow, true, true );
         }
 
         // Active state
@@ -102,7 +102,7 @@
                 &:focus,
                 &.k-focus {
                     @if ( $kendo-solid-button-shadow ) {
-                        box-shadow: 0 0 $kendo-solid-button-shadow-blur $kendo-solid-button-shadow-spread rgba( $_button-border, $kendo-solid-button-shadow-opacity );
+                        @include focus-indicator( 0 0 $kendo-solid-button-shadow-blur $kendo-solid-button-shadow-spread rgba( $_button-border, $kendo-solid-button-shadow-opacity ), true, true );
                     }
                 }
 
@@ -163,7 +163,7 @@
             &:focus,
             &.k-focus {
                 @if $kendo-outline-button-shadow {
-                    box-shadow: 0 0 $kendo-outline-button-shadow-blur $kendo-outline-button-shadow-spread rgba( $color, $kendo-outline-button-shadow-opacity );
+                    @include focus-indicator( 0 0 $kendo-outline-button-shadow-blur $kendo-outline-button-shadow-spread rgba( $color, $kendo-outline-button-shadow-opacity ), true, true );
                 }
             }
 
@@ -224,7 +224,7 @@
             &:focus,
             &.k-focus {
                 @if ( $kendo-link-button-shadow ) {
-                    box-shadow: 0 0 $kendo-link-button-shadow-blur $kendo-link-button-shadow-spread rgba( $color, $kendo-link-button-shadow-opacity );
+                    @include focus-indicator( 0 0 $kendo-link-button-shadow-blur $kendo-link-button-shadow-spread rgba( $color, $kendo-link-button-shadow-opacity ), true, true );
                 }
             }
 

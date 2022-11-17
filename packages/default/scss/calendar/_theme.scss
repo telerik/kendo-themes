@@ -40,7 +40,7 @@
                     box-shadow: inset 0 0 0 1px $calendar-today-color;
                 }
                 &.k-focus .k-calendar-cell-inner {
-                    box-shadow: inset 0 0 0 1px $calendar-today-color, $calendar-cell-focus-shadow;
+                    @include focus-indicator( $indicator: ( inset 0 0 0 1px $calendar-today-color, $calendar-cell-focus-shadow ), $inset: true );
                 }
             } @else if $calendar-today-style == color {
                 color: $calendar-today-color;
@@ -100,11 +100,11 @@
         }
         .k-calendar-td:focus .k-calendar-cell-inner,
         .k-calendar-td.k-focus .k-calendar-cell-inner {
-            box-shadow: $calendar-cell-focus-shadow;
+            @include focus-indicator( $calendar-cell-focus-shadow, true );
         }
         .k-calendar-td.k-selected:focus .k-calendar-cell-inner,
         .k-calendar-td.k-selected.k-focus .k-calendar-cell-inner {
-            box-shadow: $calendar-cell-selected-focus-shadow;
+            @include focus-indicator( $calendar-cell-selected-focus-shadow, true );
         }
 
 

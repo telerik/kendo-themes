@@ -67,7 +67,7 @@
     .k-grouping-row > .k-pivotgrid-cell:focus,
     .k-detail-row > .k-pivotgrid-cell:focus,
     .k-group-footer > .k-pivotgrid-cell:focus {
-        @include box-shadow($pivotgrid-focus-shadow);
+        @include focus-indicator( $pivotgrid-focus-shadow, true );
     }
 
     // Selected state

@@ -79,7 +79,7 @@
         &:focus,
         &.k-focus {
             @include fill( $border: $taskboard-card-focus-border );
-            @include box-shadow( $taskboard-card-focus-shadow );
+            @include focus-indicator( $taskboard-card-focus-shadow );
         }
 
         &:hover,

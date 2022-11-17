@@ -54,7 +54,7 @@
             opacity: $scrollview-navigation-hover-opacity;
 
             .k-icon::before {
-                box-shadow: $scrollview-pagebutton-shadow;
+                @include focus-indicator( $scrollview-pagebutton-shadow );
             }
         }
 
@@ -79,7 +79,7 @@
 
         &:focus,
         &.k-focus {
-            box-shadow: $scrollview-pagebutton-shadow;
+            @include focus-indicator( $scrollview-pagebutton-shadow );
         }
     }
 

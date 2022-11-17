@@ -57,7 +57,11 @@
                     $kendo-switch-off-track-focus-border,
                     $kendo-switch-off-track-focus-gradient
                 );
-                outline: $kendo-switch-off-track-focus-ring;
+                @if $kendo-enable-focus-contrast {
+                    @include box-shadow( 0 0 0 2px if( $dark-theme, $kendo-color-white, $kendo-color-black ) );
+                } @else {
+                    outline: $kendo-switch-off-track-focus-ring;
+                }
             }
         }
 
@@ -133,7 +137,11 @@
                     $kendo-switch-on-track-focus-border,
                     $kendo-switch-on-track-focus-gradient
                 );
-                outline: $kendo-switch-on-track-focus-ring;
+                @if $kendo-enable-focus-contrast {
+                    @include box-shadow( 0 0 0 2px if( $dark-theme, $kendo-color-white, $kendo-color-black ) );
+                } @else {
+                    outline: $kendo-switch-on-track-focus-ring;
+                }
             }
         }
 

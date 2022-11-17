@@ -33,7 +33,7 @@
         &:focus,
         &.k-focus {
             background-color: $kendo-drawer-focus-bg;
-            box-shadow: $kendo-drawer-focus-shadow;
+            @include focus-indicator( $kendo-drawer-focus-shadow, true );
 
             &:hover,
             &.k-hover {

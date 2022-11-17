@@ -33,7 +33,11 @@
 
         .k-file {
             &.k-focus {
-                box-shadow: inset $kendo-upload-focus-shadow;
+                @include focus-indicator( $indicator: ( inset $kendo-upload-focus-shadow ), $inset: true );
+            }
+
+            .k-upload-action.k-focus {
+                @include focus-indicator( $kendo-upload-focus-shadow );
             }
 
         }

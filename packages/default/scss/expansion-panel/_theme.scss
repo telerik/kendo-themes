@@ -8,7 +8,7 @@
         );
 
         &.k-focus {
-            box-shadow: $expander-focus-shadow;
+            @include focus-indicator( $expander-focus-shadow, true );
         }
     }
 
@@ -27,7 +27,7 @@
 
         &.k-focus {
             background-color: $expander-header-focus-bg;
-            box-shadow: $expander-header-focus-shadow;
+            @include focus-indicator( $expander-header-focus-shadow, true );
         }
     }
 

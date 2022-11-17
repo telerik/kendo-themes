@@ -27,7 +27,7 @@
                 $kendo-input-focus-bg,
                 $kendo-input-focus-border
             );
-            @include box-shadow( $kendo-input-focus-shadow );
+            @include focus-indicator( $kendo-input-focus-shadow );
         }
         &:focus-within {
             @include fill (
@@ -35,7 +35,7 @@
                 $kendo-input-focus-bg,
                 $kendo-input-focus-border
             );
-            @include box-shadow( $kendo-input-focus-shadow );
+            @include focus-indicator( $kendo-input-focus-shadow );
         }
 
         // Disabled
@@ -63,10 +63,10 @@
 
             &:focus,
             &.k-focus {
-                @include box-shadow( $kendo-input-invalid-shadow );
+                @include focus-indicator( $kendo-input-invalid-shadow );
             }
             &:focus-within {
-                @include box-shadow( $kendo-input-invalid-shadow );
+                @include focus-indicator( $kendo-input-invalid-shadow );
             }
         }
 
@@ -103,7 +103,7 @@
                 $kendo-picker-focus-border,
                 $kendo-picker-focus-gradient
             );
-            @include box-shadow( $kendo-picker-focus-shadow );
+            @include focus-indicator( $kendo-picker-focus-shadow );
         }
         &:focus-within {
             @include fill (
@@ -112,7 +112,7 @@
                 $kendo-picker-focus-border,
                 $kendo-picker-focus-gradient
             );
-            @include box-shadow( $kendo-picker-focus-shadow );
+            @include focus-indicator( $kendo-picker-focus-shadow );
         }
 
         // Disabled
@@ -140,10 +140,10 @@
 
             &:focus,
             &.k-focus {
-                @include box-shadow( $kendo-input-invalid-shadow );
+                @include focus-indicator( $kendo-input-invalid-shadow );
             }
             &:focus-within {
-                @include box-shadow( $kendo-input-invalid-shadow );
+                @include focus-indicator( $kendo-input-invalid-shadow );
             }
         }
     }
@@ -188,7 +188,7 @@
                 $kendo-input-outline-focus-bg,
                 $kendo-input-outline-focus-border
              );
-            @include box-shadow ( $kendo-input-outline-focus-shadow );
+            @include focus-indicator( $kendo-input-outline-focus-shadow );
         }
         &:focus-within {
             @include fill (
@@ -196,7 +196,7 @@
                 $kendo-input-outline-focus-bg,
                 $kendo-input-outline-focus-border
              );
-            @include box-shadow ( $kendo-input-outline-focus-shadow );
+            @include focus-indicator( $kendo-input-outline-focus-shadow );
         }
 
         // Disabled
@@ -224,10 +224,10 @@
 
             &:focus,
             &.k-focus {
-                @include box-shadow( $kendo-input-invalid-shadow );
+                @include focus-indicator( $kendo-input-invalid-shadow );
             }
             &:focus-within {
-                @include box-shadow( $kendo-input-invalid-shadow );
+                @include focus-indicator( $kendo-input-invalid-shadow );
             }
         }
 
@@ -260,7 +260,7 @@
                 $kendo-picker-outline-focus-bg,
                 $kendo-picker-outline-focus-border
             );
-            @include box-shadow ( $kendo-picker-outline-focus-shadow );
+            @include focus-indicator( $kendo-picker-outline-focus-shadow );
         }
         &:focus-within {
             @include fill (
@@ -268,7 +268,7 @@
                 $kendo-picker-outline-focus-bg,
                 $kendo-picker-outline-focus-border
             );
-            @include box-shadow ( $kendo-picker-outline-focus-shadow );
+            @include focus-indicator( $kendo-picker-outline-focus-shadow );
         }
 
         &:focus:hover,
@@ -307,10 +307,10 @@
 
             &:focus,
             &.k-focus {
-                @include box-shadow( $kendo-input-invalid-shadow );
+                @include focus-indicator( $kendo-input-invalid-shadow );
             }
             &:focus-within {
-                @include box-shadow( $kendo-input-invalid-shadow );
+                @include focus-indicator( $kendo-input-invalid-shadow );
             }
         }
     }
@@ -342,7 +342,7 @@
                 $kendo-input-flat-focus-bg,
                 $kendo-input-flat-focus-border
             );
-            @include box-shadow( $kendo-input-flat-focus-shadow );
+            @include focus-indicator( $kendo-input-flat-focus-shadow );
         }
         &:focus-within {
             @include fill (
@@ -350,7 +350,7 @@
                 $kendo-input-flat-focus-bg,
                 $kendo-input-flat-focus-border
             );
-            @include box-shadow( $kendo-input-flat-focus-shadow );
+            @include focus-indicator( $kendo-input-flat-focus-shadow );
         }
 
         // Disabled
@@ -378,10 +378,10 @@
 
             &:focus,
             &.k-focus {
-                @include box-shadow( $kendo-input-invalid-shadow );
+                @include focus-indicator( $kendo-input-invalid-shadow );
             }
             &:focus-within {
-                @include box-shadow( $kendo-input-invalid-shadow );
+                @include focus-indicator( $kendo-input-invalid-shadow );
             }
         }
     }
@@ -413,7 +413,7 @@
                 $kendo-picker-flat-focus-bg,
                 $kendo-picker-flat-focus-border
             );
-            @include box-shadow( $kendo-picker-flat-focus-shadow );
+            @include focus-indicator( $kendo-picker-flat-focus-shadow );
         }
         &:focus-within {
             @include fill (
@@ -421,7 +421,7 @@
                 $kendo-picker-flat-focus-bg,
                 $kendo-picker-flat-focus-border
             );
-            @include box-shadow( $kendo-picker-flat-focus-shadow );
+            @include focus-indicator( $kendo-picker-flat-focus-shadow );
         }
 
         &:focus:hover,
@@ -460,10 +460,10 @@
 
             &:focus,
             &.k-focus {
-                @include box-shadow( $kendo-input-invalid-shadow );
+                @include focus-indicator( $kendo-input-invalid-shadow );
             }
             &:focus-within {
-                @include box-shadow( $kendo-input-invalid-shadow );
+                @include focus-indicator( $kendo-input-invalid-shadow );
             }
         }
     }

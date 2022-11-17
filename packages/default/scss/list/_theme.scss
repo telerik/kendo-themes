@@ -45,7 +45,7 @@
                 $kendo-list-item-focus-text,
                 $kendo-list-item-focus-bg
             );
-            @include box-shadow( $kendo-list-item-focus-shadow );
+            @include focus-indicator( $kendo-list-item-focus-shadow, true );
         }
 
         // Selected

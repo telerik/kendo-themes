@@ -3,7 +3,7 @@
     // Split button
     .k-split-button:focus,
     .k-split-button.k-focus {
-        @include box-shadow( $kendo-split-button-focus-shadow );
+        @include focus-indicator( $kendo-split-button-focus-shadow );
     }
 
 }

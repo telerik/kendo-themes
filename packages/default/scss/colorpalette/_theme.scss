@@ -5,7 +5,7 @@
 
         &:focus,
         &.k-focus {
-            @include box-shadow( $colorpalette-tile-focus-shadow );
+            @include focus-indicator( $colorpalette-tile-focus-shadow );
         }
 
         &:hover,

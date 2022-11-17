@@ -22,7 +22,7 @@
         // Focus
         .k-toolbar:focus,
         .k-toolbar.k-focus {
-            @include box-shadow( $filter-toolbar-focus-shadow );
+            @include focus-indicator( $filter-toolbar-focus-shadow );
         }
     }
 

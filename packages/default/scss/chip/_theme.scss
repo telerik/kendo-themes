@@ -14,8 +14,8 @@
 
                 &:focus,
                 &.k-focus {
-                    @include box-shadow( $kendo-chip-solid-shadow );
                     @include fill( $bg: $kendo-chip-solid-focus-bg );
+                    @include focus-indicator( $kendo-chip-solid-shadow );
                 }
 
                 &:hover,
@@ -36,7 +36,7 @@
 
                 &:focus,
                 &.k-focus {
-                    @include box-shadow( 0 0 0 2px rgba( $color, .16 ) );
+                    @include focus-indicator( 0 0 0 2px rgba( $color, .16 ) );
                 }
 
                 &:hover,
@@ -64,7 +64,7 @@
 
                 &:focus,
                 &.k-focus {
-                    @include box-shadow( $kendo-chip-outline-shadow );
+                    @include focus-indicator( $kendo-chip-outline-shadow );
                 }
 
                 &:hover,
@@ -90,7 +90,7 @@
 
                 &:focus,
                 &.k-focus {
-                    @include box-shadow( 0 0 0 2px if( $dark-theme, rgba( k-color-tint( $color, 50% ), .32 ), rgba( $color, .16 )) );
+                    @include focus-indicator( 0 0 0 2px if( $dark-theme, rgba( k-color-tint( $color, 50% ), .32 ), rgba( $color, .16 )) );
                 }
 
                 &:hover,
@@ -116,7 +116,7 @@
 
                 &:focus,
                 &.k-focus {
-                    @include box-shadow( 0 0 0 2px if( $dark-theme, rgba( k-color-tint( $color, 50% ), .32 ), rgba( $color, .16 )) );
+                    @include focus-indicator( 0 0 0 2px if( $dark-theme, rgba( k-color-tint( $color, 50% ), .32 ), rgba( $color, .16 )) );
                 }
 
                 &:hover,
