@@ -13,7 +13,10 @@
 
 .k-flex,
 .k-spacer {
-    flex: 1 0 0%;
+    flex: 1 1 auto;
+}
+.k-spacer-sized {
+    flex-grow: 0;
 }
 
 
