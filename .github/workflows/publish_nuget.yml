@@ -16,6 +16,10 @@ on:
     types:
       - completed
 
+env:
+  NUGET_USER: kendo-bot
+  NUGET_FEED: "https://nuget.pkg.github.com/telerik/index.json"
+
 jobs:
 
   nuget-publish:
@@ -62,7 +66,7 @@ jobs:
 
       - name: Push nuget
         run: |
+          nuget sources add -username ${{ env.NUGET_USER }} -password %NUGET_API_KEY% -StorePasswordInClearText -Name github -Source ${{ env.NUGET_FEED }}
           npx lerna run nuget-push
         env:
           NUGET_API_KEY: ${{ secrets.GH_TOKEN_PUBLISH }}
-          NUGET_FEED: "https://nuget.pkg.github.com/telerik/index.json"
