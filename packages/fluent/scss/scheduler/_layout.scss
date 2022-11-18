@@ -299,6 +299,11 @@
             vertical-align: top;
         }
 
+        td.k-selected,
+        .k-scheduler-cell.k-selected {
+            outline: none;
+        }
+
         // Remove bottom border from first cell of hours cells spaning on two rows
         tr + tr,
         .k-scheduler-pane + .k-scheduler-pane {
