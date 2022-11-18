@@ -1,0 +1,58 @@
+{
+    "$schema": "../../schemas/component.schema.json",
+    "title": "Kendo Listview HTML Spec",
+    "component": "listview",
+    "selector": [
+        ".k-listview"
+    ],
+    "children": [
+        {
+            "name": "listview-header",
+            "selector": [
+                ".k-listview-header"
+            ]
+        },
+        {
+            "name": "listview-content",
+            "selector": [
+                ".k-listview-content"
+            ],
+            "children": [
+                {
+                    "name": "listview-item",
+                    "selector": [
+                        ".k-listview-item"
+                    ],
+                    "states": [
+                        {
+                            "name": "focus",
+                            "selector": [
+                                ":focus",
+                                ".k-focus"
+                            ]
+                        },
+                        {
+                            "name":"selected",
+                            "selector": [
+                                ".k-selected"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "listview-footer",
+            "selector": [
+                ".k-listview-footer"
+            ]
+        },
+        {
+            "name": "listview-pager",
+            "$ref": "pager",
+            "selector": [
+                ".k-listview-pager"
+            ]
+        }
+    ]
+}

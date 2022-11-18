@@ -114,7 +114,7 @@ module.exports = {
 
     // Data management
     // ...require('./grid'),
-    // ...require('./listview'),
+    ...require('./listview'),
     // ...require('./spreadsheet'),
     // ...require('./pivotgrid'),
     // ...require('./treelist'),
