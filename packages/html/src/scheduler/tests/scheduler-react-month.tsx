@@ -296,7 +296,7 @@ root.render(
                                 </div>
                             </div>
                         </div>
-                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'red', backgroundColor: 'red', transform: "translateY(30px)", top: '0px', left: "180px", width: "59px", height: "25px" }} >
+                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'darkred', backgroundColor: 'darkred', transform: "translateY(30px)", top: '0px', left: "180px", width: "59px", height: "25px" }} >
                             <span className="k-event-actions"><Icon name="arrow-rotate-cw"></Icon></span>
                             <div>
                                 <div className="k-event-template k-event-time">(9:30 PM - 11:00 PM): Dance Practice</div>
@@ -304,7 +304,7 @@ root.render(
                             </div>
                             <span className="k-event-actions"><a className="k-link k-event-delete"><Icon name="x"></Icon></a></span><span className="k-resize-handle k-resize-w"></span><span className="k-resize-handle k-resize-e"></span>
                         </div>
-                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'red', backgroundColor: 'red', transform: "translateY(30px)", top: '0px', left: "599px", width: "59px", height: "25px" }} >
+                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'darkred', backgroundColor: 'darkred', transform: "translateY(30px)", top: '0px', left: "599px", width: "59px", height: "25px" }} >
                             <span className="k-event-actions"><Icon name="arrow-rotate-cw"></Icon></span>
                             <div>
                                 <div className="k-event-template k-event-time">(9:30 PM - 11:00 PM): Dance Practice</div>
@@ -328,7 +328,7 @@ root.render(
                             </div>
                             <span className="k-event-actions"><a className="k-link k-event-delete"><Icon name="x"></Icon></a></span><span className="k-resize-handle k-resize-w"></span><span className="k-resize-handle k-resize-e"></span>
                         </div>
-                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'red', backgroundColor: 'red', transform: "translateY(30px)", top: '0px', left: "240px", width: "59px", height: "25px" }} >
+                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'darkred', backgroundColor: 'darkred', transform: "translateY(30px)", top: '0px', left: "240px", width: "59px", height: "25px" }} >
                             <span className="k-event-actions"></span>
                             <div>
                                 <div className="k-event-template k-event-time">(11:00 AM - 12:30 PM): Breakfast at Starbucks</div>
@@ -336,7 +336,7 @@ root.render(
                             </div>
                             <span className="k-event-actions"><a className="k-link k-event-delete"><Icon name="x"></Icon></a></span><span className="k-resize-handle k-resize-w"></span><span className="k-resize-handle k-resize-e"></span>
                         </div>
-                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'red', backgroundColor: 'red', transform: "translateY(30px)", top: '0px', left: "659px", width: "59px", height: "25px" }} >
+                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'darkred', backgroundColor: 'darkred', transform: "translateY(30px)", top: '0px', left: "659px", width: "59px", height: "25px" }} >
                             <span className="k-event-actions"></span>
                             <div>
                                 <div className="k-event-template k-event-time">(11:00 AM - 12:30 PM): Breakfast at Starbucks</div>
@@ -360,7 +360,7 @@ root.render(
                             </div>
                             <span className="k-event-actions"><a className="k-link k-event-delete"><Icon name="x"></Icon></a></span><span className="k-resize-handle k-resize-w"></span><span className="k-resize-handle k-resize-e"></span>
                         </div>
-                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'red', backgroundColor: 'red', transform: "translateY(30px)", top: "26px", left: "240px", width: "59px", height: "25px" }} >
+                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'darkred', backgroundColor: 'darkred', transform: "translateY(30px)", top: "26px", left: "240px", width: "59px", height: "25px" }} >
                             <span className="k-event-actions"></span>
                             <div>
                                 <div className="k-event-template k-event-time">(12:00 PM - 3:00 PM): Software updates</div>
@@ -368,7 +368,7 @@ root.render(
                             </div>
                             <span className="k-event-actions"><a className="k-link k-event-delete"><Icon name="x"></Icon></a></span><span className="k-resize-handle k-resize-w"></span><span className="k-resize-handle k-resize-e"></span>
                         </div>
-                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'red', backgroundColor: 'red', transform: "translateY(30px)", top: "26px", left: "659px", width: "59px", height: "25px" }} >
+                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'darkred', backgroundColor: 'darkred', transform: "translateY(30px)", top: "26px", left: "659px", width: "59px", height: "25px" }} >
                             <span className="k-event-actions"></span>
                             <div>
                                 <div className="k-event-template k-event-time">(12:00 PM - 3:00 PM): Software updates</div>
@@ -392,7 +392,7 @@ root.render(
                             </div>
                             <span className="k-event-actions"><a className="k-link k-event-delete"><Icon name="x"></Icon></a></span><span className="k-resize-handle k-resize-w"></span><span className="k-resize-handle k-resize-e"></span>
                         </div>
-                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'red', backgroundColor: 'red', transform: "translateY(30px)", top: '0px', left: "300px", width: "59px", height: "25px" }} >
+                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'darkred', backgroundColor: 'darkred', transform: "translateY(30px)", top: '0px', left: "300px", width: "59px", height: "25px" }} >
                             <span className="k-event-actions"></span>
                             <div>
                                 <div className="k-event-template k-event-time">(1:00 PM - 3:00 PM): HR seminar preparation</div>
@@ -400,7 +400,7 @@ root.render(
                             </div>
                             <span className="k-event-actions"><a className="k-link k-event-delete"><Icon name="x"></Icon></a></span><span className="k-resize-handle k-resize-w"></span><span className="k-resize-handle k-resize-e"></span>
                         </div>
-                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'red', backgroundColor: 'red', transform: "translateY(30px)", top: '0px', left: "719px", width: "59px", height: "25px" }} >
+                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'darkred', backgroundColor: 'darkred', transform: "translateY(30px)", top: '0px', left: "719px", width: "59px", height: "25px" }} >
                             <span className="k-event-actions"></span>
                             <div>
                                 <div className="k-event-template k-event-time">(1:00 PM - 3:00 PM): HR seminar preparation</div>
@@ -424,7 +424,7 @@ root.render(
                             </div>
                             <span className="k-event-actions"><a className="k-link k-event-delete"><Icon name="x"></Icon></a></span><span className="k-resize-handle k-resize-w"></span><span className="k-resize-handle k-resize-e"></span>
                         </div>
-                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'red', backgroundColor: 'red', transform: "translateY(30px)", top: "97px", left: '0px', width: "59px", height: "25px" }} >
+                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'darkred', backgroundColor: 'darkred', transform: "translateY(30px)", top: "97px", left: '0px', width: "59px", height: "25px" }} >
                             <span className="k-event-actions"></span>
                             <div>
                                 <div className="k-event-template k-event-time">(10:00 AM - 11:30 AM): Website upload</div>
@@ -432,7 +432,7 @@ root.render(
                             </div>
                             <span className="k-event-actions"><a className="k-link k-event-delete"><Icon name="x"></Icon></a></span><span className="k-resize-handle k-resize-w"></span><span className="k-resize-handle k-resize-e"></span>
                         </div>
-                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'red', backgroundColor: 'red', transform: "translateY(30px)", top: "97px", left: "420px", width: "59px", height: "25px" }} >
+                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'darkred', backgroundColor: 'darkred', transform: "translateY(30px)", top: "97px", left: "420px", width: "59px", height: "25px" }} >
                             <span className="k-event-actions"></span>
                             <div>
                                 <div className="k-event-template k-event-time">(10:00 AM - 11:30 AM): Website upload</div>
@@ -456,7 +456,7 @@ root.render(
                             </div>
                             <span className="k-event-actions"><a className="k-link k-event-delete"><Icon name="x"></Icon></a></span><span className="k-resize-handle k-resize-w"></span><span className="k-resize-handle k-resize-e"></span>
                         </div>
-                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'red', backgroundColor: 'red', transform: "translateY(30px)", top: "97px", left: "60px", width: "59px", height: "25px" }} >
+                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'darkred', backgroundColor: 'darkred', transform: "translateY(30px)", top: "97px", left: "60px", width: "59px", height: "25px" }} >
                             <span className="k-event-actions"><Icon name="arrow-rotate-cw"></Icon></span>
                             <div>
                                 <div className="k-event-template k-event-time">(9:30 PM - 11:00 PM): Dance Practice</div>
@@ -464,7 +464,7 @@ root.render(
                             </div>
                             <span className="k-event-actions"><a className="k-link k-event-delete"><Icon name="x"></Icon></a></span><span className="k-resize-handle k-resize-w"></span><span className="k-resize-handle k-resize-e"></span>
                         </div>
-                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'red', backgroundColor: 'red', transform: "translateY(30px)", top: "97px", left: "479px", width: "59px", height: "25px" }} >
+                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'darkred', backgroundColor: 'darkred', transform: "translateY(30px)", top: "97px", left: "479px", width: "59px", height: "25px" }} >
                             <span className="k-event-actions"><Icon name="arrow-rotate-cw"></Icon></span>
                             <div>
                                 <div className="k-event-template k-event-time">(9:30 PM - 11:00 PM): Dance Practice</div>
@@ -488,7 +488,7 @@ root.render(
                             </div>
                             <span className="k-event-actions"><a className="k-link k-event-delete"><Icon name="x"></Icon></a></span><span className="k-resize-handle k-resize-w"></span><span className="k-resize-handle k-resize-e"></span>
                         </div>
-                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'red', backgroundColor: 'red', transform: "translateY(30px)", top: "97px", left: "120px", width: "59px", height: "25px" }} >
+                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'darkred', backgroundColor: 'darkred', transform: "translateY(30px)", top: "97px", left: "120px", width: "59px", height: "25px" }} >
                             <span className="k-event-actions"><Icon name="arrow-rotate-cw"></Icon></span>
                             <div>
                                 <div className="k-event-template k-event-time">(10:00 PM - 12:00 AM): HR Lecture</div>
@@ -496,7 +496,7 @@ root.render(
                             </div>
                             <span className="k-event-actions"><a className="k-link k-event-delete"><Icon name="x"></Icon></a></span><span className="k-resize-handle k-resize-w"></span><span className="k-resize-handle k-resize-e"></span>
                         </div>
-                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'red', backgroundColor: 'red', transform: "translateY(30px)", top: "97px", left: "539px", width: "59px", height: "25px" }} >
+                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'darkred', backgroundColor: 'darkred', transform: "translateY(30px)", top: "97px", left: "539px", width: "59px", height: "25px" }} >
                             <span className="k-event-actions"><Icon name="arrow-rotate-cw"></Icon></span>
                             <div>
                                 <div className="k-event-template k-event-time">(10:00 PM - 12:00 AM): HR Lecture</div>
@@ -520,7 +520,7 @@ root.render(
                             </div>
                             <span className="k-event-actions"><a className="k-link k-event-delete"><Icon name="x"></Icon></a></span><span className="k-resize-handle k-resize-w"></span><span className="k-resize-handle k-resize-e"></span>
                         </div>
-                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'red', backgroundColor: 'red', transform: "translateY(30px)", top: "97px", left: "180px", width: "59px", height: "25px" }} >
+                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'darkred', backgroundColor: 'darkred', transform: "translateY(30px)", top: "97px", left: "180px", width: "59px", height: "25px" }} >
                             <span className="k-event-actions"></span>
                             <div>
                                 <div className="k-event-template k-event-time">(12:00 AM - 3:00 AM): Bowling tournament</div>
@@ -528,7 +528,7 @@ root.render(
                             </div>
                             <span className="k-event-actions"><a className="k-link k-event-delete"><Icon name="x"></Icon></a></span><span className="k-resize-handle k-resize-w"></span><span className="k-resize-handle k-resize-e"></span>
                         </div>
-                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'red', backgroundColor: 'red', transform: "translateY(30px)", top: "97px", left: "599px", width: "59px", height: "25px" }} >
+                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'darkred', backgroundColor: 'darkred', transform: "translateY(30px)", top: "97px", left: "599px", width: "59px", height: "25px" }} >
                             <span className="k-event-actions"></span>
                             <div>
                                 <div className="k-event-template k-event-time">(12:00 AM - 3:00 AM): Bowling tournament</div>
@@ -552,7 +552,7 @@ root.render(
                             </div>
                             <span className="k-event-actions"><a className="k-link k-event-delete"><Icon name="x"></Icon></a></span><span className="k-resize-handle k-resize-w"></span><span className="k-resize-handle k-resize-e"></span>
                         </div>
-                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'red', backgroundColor: 'red', transform: "translateY(30px)", top: "123px", left: "180px", width: "59px", height: "25px" }} >
+                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'darkred', backgroundColor: 'darkred', transform: "translateY(30px)", top: "123px", left: "180px", width: "59px", height: "25px" }} >
                             <span className="k-event-actions"></span>
                             <div>
                                 <div className="k-event-template k-event-time">(10:00 AM - 11:00 AM): Take the dog to the vet</div>
@@ -560,7 +560,7 @@ root.render(
                             </div>
                             <span className="k-event-actions"><a className="k-link k-event-delete"><Icon name="x"></Icon></a></span><span className="k-resize-handle k-resize-w"></span><span className="k-resize-handle k-resize-e"></span>
                         </div>
-                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'red', backgroundColor: 'red', transform: "translateY(30px)", top: "123px", left: "599px", width: "59px", height: "25px" }} >
+                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'darkred', backgroundColor: 'darkred', transform: "translateY(30px)", top: "123px", left: "599px", width: "59px", height: "25px" }} >
                             <span className="k-event-actions"></span>
                             <div>
                                 <div className="k-event-template k-event-time">(10:00 AM - 11:00 AM): Take the dog to the vet</div>
@@ -584,7 +584,7 @@ root.render(
                             </div>
                             <span className="k-event-actions"><a className="k-link k-event-delete"><Icon name="x"></Icon></a></span><span className="k-resize-handle k-resize-w"></span><span className="k-resize-handle k-resize-e"></span>
                         </div>
-                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'red', backgroundColor: 'red', transform: "translateY(30px)", top: "97px", left: "240px", width: "59px", height: "25px" }} >
+                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'darkred', backgroundColor: 'darkred', transform: "translateY(30px)", top: "97px", left: "240px", width: "59px", height: "25px" }} >
                             <span className="k-event-actions"></span>
                             <div>
                                 <div className="k-event-template k-event-time">(2:30 PM - 4:00 PM): Call Charlie about the project</div>
@@ -592,7 +592,7 @@ root.render(
                             </div>
                             <span className="k-event-actions"><a className="k-link k-event-delete"><Icon name="x"></Icon></a></span><span className="k-resize-handle k-resize-w"></span><span className="k-resize-handle k-resize-e"></span>
                         </div>
-                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'red', backgroundColor: 'red', transform: "translateY(30px)", top: "97px", left: "659px", width: "59px", height: "25px" }} >
+                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'darkred', backgroundColor: 'darkred', transform: "translateY(30px)", top: "97px", left: "659px", width: "59px", height: "25px" }} >
                             <span className="k-event-actions"></span>
                             <div>
                                 <div className="k-event-template k-event-time">(2:30 PM - 4:00 PM): Call Charlie about the project</div>
@@ -616,7 +616,7 @@ root.render(
                             </div>
                             <span className="k-event-actions"><a className="k-link k-event-delete"><Icon name="x"></Icon></a></span><span className="k-resize-handle k-resize-w"></span><span className="k-resize-handle k-resize-e"></span>
                         </div>
-                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'red', backgroundColor: 'red', transform: "translateY(30px)", top: "123px", left: "240px", width: "59px", height: "25px" }} >
+                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'darkred', backgroundColor: 'darkred', transform: "translateY(30px)", top: "123px", left: "240px", width: "59px", height: "25px" }} >
                             <span className="k-event-actions"><Icon name="arrow-rotate-cw"></Icon></span>
                             <div>
                                 <div className="k-event-template k-event-time">(10:00 PM - 12:00 AM): HR Lecture</div>
@@ -624,7 +624,7 @@ root.render(
                             </div>
                             <span className="k-event-actions"><a className="k-link k-event-delete"><Icon name="x"></Icon></a></span><span className="k-resize-handle k-resize-w"></span><span className="k-resize-handle k-resize-e"></span>
                         </div>
-                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'red', backgroundColor: 'red', transform: "translateY(30px)", top: "123px", left: "659px", width: "59px", height: "25px" }} >
+                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'darkred', backgroundColor: 'darkred', transform: "translateY(30px)", top: "123px", left: "659px", width: "59px", height: "25px" }} >
                             <span className="k-event-actions"><Icon name="arrow-rotate-cw"></Icon></span>
                             <div>
                                 <div className="k-event-template k-event-time">(10:00 PM - 12:00 AM): HR Lecture</div>
@@ -648,7 +648,7 @@ root.render(
                             </div>
                             <span className="k-event-actions"><a className="k-link k-event-delete"><Icon name="x"></Icon></a></span><span className="k-resize-handle k-resize-w"></span><span className="k-resize-handle k-resize-e"></span>
                         </div>
-                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'red', backgroundColor: 'red', transform: "translateY(30px)", top: "97px", left: "300px", width: "59px", height: "25px" }} >
+                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'darkred', backgroundColor: 'darkred', transform: "translateY(30px)", top: "97px", left: "300px", width: "59px", height: "25px" }} >
                             <span className="k-event-actions"></span>
                             <div>
                                 <div className="k-event-template k-event-time">(2:00 PM - 3:00 PM): Meeting with Alex</div>
@@ -656,7 +656,7 @@ root.render(
                             </div>
                             <span className="k-event-actions"><a className="k-link k-event-delete"><Icon name="x"></Icon></a></span><span className="k-resize-handle k-resize-w"></span><span className="k-resize-handle k-resize-e"></span>
                         </div>
-                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'red', backgroundColor: 'red', transform: "translateY(30px)", top: "97px", left: "719px", width: "59px", height: "25px" }} >
+                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'darkred', backgroundColor: 'darkred', transform: "translateY(30px)", top: "97px", left: "719px", width: "59px", height: "25px" }} >
                             <span className="k-event-actions"></span>
                             <div>
                                 <div className="k-event-template k-event-time">(2:00 PM - 3:00 PM): Meeting with Alex</div>
@@ -680,7 +680,7 @@ root.render(
                             </div>
                             <span className="k-event-actions"><a className="k-link k-event-delete"><Icon name="x"></Icon></a></span><span className="k-resize-handle k-resize-w"></span><span className="k-resize-handle k-resize-e"></span>
                         </div>
-                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'red', backgroundColor: 'red', transform: "translateY(30px)", top: "194px", left: "60px", width: "59px", height: "25px" }} >
+                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'darkred', backgroundColor: 'darkred', transform: "translateY(30px)", top: "194px", left: "60px", width: "59px", height: "25px" }} >
                             <span className="k-event-actions"><Icon name="arrow-rotate-cw"></Icon></span>
                             <div>
                                 <div className="k-event-template k-event-time">(9:30 PM - 11:00 PM): Dance Practice</div>
@@ -688,7 +688,7 @@ root.render(
                             </div>
                             <span className="k-event-actions"><a className="k-link k-event-delete"><Icon name="x"></Icon></a></span><span className="k-resize-handle k-resize-w"></span><span className="k-resize-handle k-resize-e"></span>
                         </div>
-                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'red', backgroundColor: 'red', transform: "translateY(30px)", top: "194px", left: "479px", width: "59px", height: "25px" }} >
+                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'darkred', backgroundColor: 'darkred', transform: "translateY(30px)", top: "194px", left: "479px", width: "59px", height: "25px" }} >
                             <span className="k-event-actions"><Icon name="arrow-rotate-cw"></Icon></span>
                             <div>
                                 <div className="k-event-template k-event-time">(9:30 PM - 11:00 PM): Dance Practice</div>
@@ -712,7 +712,7 @@ root.render(
                             </div>
                             <span className="k-event-actions"><a className="k-link k-event-delete"><Icon name="x"></Icon></a></span><span className="k-resize-handle k-resize-w"></span><span className="k-resize-handle k-resize-e"></span>
                         </div>
-                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'red', backgroundColor: 'red', transform: "translateY(30px)", top: "194px", left: "120px", width: "59px", height: "25px" }} >
+                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'darkred', backgroundColor: 'darkred', transform: "translateY(30px)", top: "194px", left: "120px", width: "59px", height: "25px" }} >
                             <span className="k-event-actions"><Icon name="arrow-rotate-cw"></Icon></span>
                             <div>
                                 <div className="k-event-template k-event-time">(10:00 PM - 12:00 AM): HR Lecture</div>
@@ -720,7 +720,7 @@ root.render(
                             </div>
                             <span className="k-event-actions"><a className="k-link k-event-delete"><Icon name="x"></Icon></a></span><span className="k-resize-handle k-resize-w"></span><span className="k-resize-handle k-resize-e"></span>
                         </div>
-                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'red', backgroundColor: 'red', transform: "translateY(30px)", top: "194px", left: "539px", width: "59px", height: "25px" }} >
+                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'darkred', backgroundColor: 'darkred', transform: "translateY(30px)", top: "194px", left: "539px", width: "59px", height: "25px" }} >
                             <span className="k-event-actions"><Icon name="arrow-rotate-cw"></Icon></span>
                             <div>
                                 <div className="k-event-template k-event-time">(10:00 PM - 12:00 AM): HR Lecture</div>
@@ -744,7 +744,7 @@ root.render(
                             </div>
                             <span className="k-event-actions"><a className="k-link k-event-delete"><Icon name="x"></Icon></a></span><span className="k-resize-handle k-resize-w"></span><span className="k-resize-handle k-resize-e"></span>
                         </div>
-                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'red', backgroundColor: 'red', transform: "translateY(30px)", top: "194px", left: "180px", width: "59px", height: "25px" }} >
+                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'darkred', backgroundColor: 'darkred', transform: "translateY(30px)", top: "194px", left: "180px", width: "59px", height: "25px" }} >
                             <span className="k-event-actions"><Icon name="arrow-rotate-cw"></Icon></span>
                             <div>
                                 <div className="k-event-template k-event-time">(6:00 PM - 7:00 PM): Helpdesk weekly meeting</div>
@@ -752,7 +752,7 @@ root.render(
                             </div>
                             <span className="k-event-actions"><a className="k-link k-event-delete"><Icon name="x"></Icon></a></span><span className="k-resize-handle k-resize-w"></span><span className="k-resize-handle k-resize-e"></span>
                         </div>
-                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'red', backgroundColor: 'red', transform: "translateY(30px)", top: "194px", left: "599px", width: "59px", height: "25px" }} >
+                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'darkred', backgroundColor: 'darkred', transform: "translateY(30px)", top: "194px", left: "599px", width: "59px", height: "25px" }} >
                             <span className="k-event-actions"><Icon name="arrow-rotate-cw"></Icon></span>
                             <div>
                                 <div className="k-event-template k-event-time">(6:00 PM - 7:00 PM): Helpdesk weekly meeting</div>
@@ -776,7 +776,7 @@ root.render(
                             </div>
                             <span className="k-event-actions"><a className="k-link k-event-delete"><Icon name="x"></Icon></a></span><span className="k-resize-handle k-resize-w"></span><span className="k-resize-handle k-resize-e"></span>
                         </div>
-                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'red', backgroundColor: 'red', transform: "translateY(30px)", top: "220px", left: "180px", width: "59px", height: "25px" }} >
+                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'darkred', backgroundColor: 'darkred', transform: "translateY(30px)", top: "220px", left: "180px", width: "59px", height: "25px" }} >
                             <span className="k-event-actions"><Icon name="arrow-rotate-cw"></Icon></span>
                             <div>
                                 <div className="k-event-template k-event-time">(9:30 PM - 11:00 PM): Dance Practice</div>
@@ -784,7 +784,7 @@ root.render(
                             </div>
                             <span className="k-event-actions"><a className="k-link k-event-delete"><Icon name="x"></Icon></a></span><span className="k-resize-handle k-resize-w"></span><span className="k-resize-handle k-resize-e"></span>
                         </div>
-                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'red', backgroundColor: 'red', transform: "translateY(30px)", top: "220px", left: "599px", width: "59px", height: "25px" }} >
+                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'darkred', backgroundColor: 'darkred', transform: "translateY(30px)", top: "220px", left: "599px", width: "59px", height: "25px" }} >
                             <span className="k-event-actions"><Icon name="arrow-rotate-cw"></Icon></span>
                             <div>
                                 <div className="k-event-template k-event-time">(9:30 PM - 11:00 PM): Dance Practice</div>
@@ -808,7 +808,7 @@ root.render(
                             </div>
                             <span className="k-event-actions"><a className="k-link k-event-delete"><Icon name="x"></Icon></a></span><span className="k-resize-handle k-resize-w"></span><span className="k-resize-handle k-resize-e"></span>
                         </div>
-                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'red', backgroundColor: 'red', transform: "translateY(30px)", top: "194px", left: "240px", width: "59px", height: "25px" }} >
+                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'darkred', backgroundColor: 'darkred', transform: "translateY(30px)", top: "194px", left: "240px", width: "59px", height: "25px" }} >
                             <span className="k-event-actions"><Icon name="arrow-rotate-cw"></Icon></span>
                             <div>
                                 <div className="k-event-template k-event-time">(10:00 PM - 12:00 AM): HR Lecture</div>
@@ -816,7 +816,7 @@ root.render(
                             </div>
                             <span className="k-event-actions"><a className="k-link k-event-delete"><Icon name="x"></Icon></a></span><span className="k-resize-handle k-resize-w"></span><span className="k-resize-handle k-resize-e"></span>
                         </div>
-                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'red', backgroundColor: 'red', transform: "translateY(30px)", top: "194px", left: "659px", width: "59px", height: "25px" }} >
+                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'darkred', backgroundColor: 'darkred', transform: "translateY(30px)", top: "194px", left: "659px", width: "59px", height: "25px" }} >
                             <span className="k-event-actions"><Icon name="arrow-rotate-cw"></Icon></span>
                             <div>
                                 <div className="k-event-template k-event-time">(10:00 PM - 12:00 AM): HR Lecture</div>
@@ -840,7 +840,7 @@ root.render(
                             </div>
                             <span className="k-event-actions"><a className="k-link k-event-delete"><Icon name="x"></Icon></a></span><span className="k-resize-handle k-resize-w"></span><span className="k-resize-handle k-resize-e"></span>
                         </div>
-                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'red', backgroundColor: 'red', transform: "translateY(30px)", top: "291px", left: "60px", width: "59px", height: "25px" }} >
+                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'darkred', backgroundColor: 'darkred', transform: "translateY(30px)", top: "291px", left: "60px", width: "59px", height: "25px" }} >
                             <span className="k-event-actions"><Icon name="arrow-rotate-cw"></Icon></span>
                             <div>
                                 <div className="k-event-template k-event-time">(9:30 PM - 11:00 PM): Dance Practice</div>
@@ -848,7 +848,7 @@ root.render(
                             </div>
                             <span className="k-event-actions"><a className="k-link k-event-delete"><Icon name="x"></Icon></a></span><span className="k-resize-handle k-resize-w"></span><span className="k-resize-handle k-resize-e"></span>
                         </div>
-                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'red', backgroundColor: 'red', transform: "translateY(30px)", top: "291px", left: "479px", width: "59px", height: "25px" }} >
+                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'darkred', backgroundColor: 'darkred', transform: "translateY(30px)", top: "291px", left: "479px", width: "59px", height: "25px" }} >
                             <span className="k-event-actions"><Icon name="arrow-rotate-cw"></Icon></span>
                             <div>
                                 <div className="k-event-template k-event-time">(9:30 PM - 11:00 PM): Dance Practice</div>
@@ -872,7 +872,7 @@ root.render(
                             </div>
                             <span className="k-event-actions"><a className="k-link k-event-delete"><Icon name="x"></Icon></a></span><span className="k-resize-handle k-resize-w"></span><span className="k-resize-handle k-resize-e"></span>
                         </div>
-                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'red', backgroundColor: 'red', transform: "translateY(30px)", top: "291px", left: "120px", width: "59px", height: "25px" }} >
+                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'darkred', backgroundColor: 'darkred', transform: "translateY(30px)", top: "291px", left: "120px", width: "59px", height: "25px" }} >
                             <span className="k-event-actions"><Icon name="arrow-rotate-cw"></Icon></span>
                             <div>
                                 <div className="k-event-template k-event-time">(10:00 PM - 12:00 AM): HR Lecture</div>
@@ -880,7 +880,7 @@ root.render(
                             </div>
                             <span className="k-event-actions"><a className="k-link k-event-delete"><Icon name="x"></Icon></a></span><span className="k-resize-handle k-resize-w"></span><span className="k-resize-handle k-resize-e"></span>
                         </div>
-                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'red', backgroundColor: 'red', transform: "translateY(30px)", top: "291px", left: "539px", width: "59px", height: "25px" }} >
+                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'darkred', backgroundColor: 'darkred', transform: "translateY(30px)", top: "291px", left: "539px", width: "59px", height: "25px" }} >
                             <span className="k-event-actions"><Icon name="arrow-rotate-cw"></Icon></span>
                             <div>
                                 <div className="k-event-template k-event-time">(10:00 PM - 12:00 AM): HR Lecture</div>
@@ -904,7 +904,7 @@ root.render(
                             </div>
                             <span className="k-event-actions"><a className="k-link k-event-delete"><Icon name="x"></Icon></a></span><span className="k-resize-handle k-resize-w"></span><span className="k-resize-handle k-resize-e"></span>
                         </div>
-                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'red', backgroundColor: 'red', transform: "translateY(30px)", top: "291px", left: "180px", width: "59px", height: "25px" }} >
+                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'darkred', backgroundColor: 'darkred', transform: "translateY(30px)", top: "291px", left: "180px", width: "59px", height: "25px" }} >
                             <span className="k-event-actions"></span>
                             <div>
                                 <div className="k-event-template k-event-time">(11:30 AM - 1:00 PM): Car Service</div>
@@ -912,7 +912,7 @@ root.render(
                             </div>
                             <span className="k-event-actions"><a className="k-link k-event-delete"><Icon name="x"></Icon></a></span><span className="k-resize-handle k-resize-w"></span><span className="k-resize-handle k-resize-e"></span>
                         </div>
-                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'red', backgroundColor: 'red', transform: "translateY(30px)", top: "291px", left: "599px", width: "59px", height: "25px" }} >
+                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'darkred', backgroundColor: 'darkred', transform: "translateY(30px)", top: "291px", left: "599px", width: "59px", height: "25px" }} >
                             <span className="k-event-actions"></span>
                             <div>
                                 <div className="k-event-template k-event-time">(11:30 AM - 1:00 PM): Car Service</div>
@@ -936,7 +936,7 @@ root.render(
                             </div>
                             <span className="k-event-actions"><a className="k-link k-event-delete"><Icon name="x"></Icon></a></span><span className="k-resize-handle k-resize-w"></span><span className="k-resize-handle k-resize-e"></span>
                         </div>
-                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'red', backgroundColor: 'red', transform: "translateY(30px)", top: "317px", left: "180px", width: "59px", height: "25px" }} >
+                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'darkred', backgroundColor: 'darkred', transform: "translateY(30px)", top: "317px", left: "180px", width: "59px", height: "25px" }} >
                             <span className="k-event-actions"></span>
                             <div>
                                 <div className="k-event-template k-event-time">(12:45 PM - 2:30 PM): Breakfast with Tom</div>
@@ -944,7 +944,7 @@ root.render(
                             </div>
                             <span className="k-event-actions"><a className="k-link k-event-delete"><Icon name="x"></Icon></a></span><span className="k-resize-handle k-resize-w"></span><span className="k-resize-handle k-resize-e"></span>
                         </div>
-                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'red', backgroundColor: 'red', transform: "translateY(30px)", top: "317px", left: "599px", width: "59px", height: "25px" }} >
+                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'darkred', backgroundColor: 'darkred', transform: "translateY(30px)", top: "317px", left: "599px", width: "59px", height: "25px" }} >
                             <span className="k-event-actions"></span>
                             <div>
                                 <div className="k-event-template k-event-time">(12:45 PM - 2:30 PM): Breakfast with Tom</div>
@@ -968,14 +968,14 @@ root.render(
                             </div>
                             <span className="k-event-actions"><a className="k-link k-event-delete"><Icon name="x"></Icon></a></span><span className="k-resize-handle k-resize-w"></span><span className="k-resize-handle k-resize-e"></span>
                         </div>
-                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'red', backgroundColor: 'red', transform: "translateY(30px)", top: "291px", left: "240px", width: "119px", height: "25px" }} >
+                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'darkred', backgroundColor: 'darkred', transform: "translateY(30px)", top: "291px", left: "240px", width: "119px", height: "25px" }} >
                             <span className="k-event-actions"></span>
                             <div>
                                 <div className="k-event-template">Attending HR Conference</div>
                             </div>
                             <span className="k-event-actions"><a className="k-link k-event-delete"><Icon name="x"></Icon></a></span><span className="k-resize-handle k-resize-w"></span><span className="k-resize-handle k-resize-e"></span>
                         </div>
-                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'red', backgroundColor: 'red', transform: "translateY(30px)", top: "291px", left: "659px", width: "119px", height: "25px" }} >
+                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'darkred', backgroundColor: 'darkred', transform: "translateY(30px)", top: "291px", left: "659px", width: "119px", height: "25px" }} >
                             <span className="k-event-actions"></span>
                             <div>
                                 <div className="k-event-template">Attending HR Conference</div>
@@ -996,7 +996,7 @@ root.render(
                             </div>
                             <span className="k-event-actions"><a className="k-link k-event-delete"><Icon name="x"></Icon></a></span><span className="k-resize-handle k-resize-w"></span><span className="k-resize-handle k-resize-e"></span>
                         </div>
-                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'red', backgroundColor: 'red', transform: "translateY(30px)", top: "317px", left: "240px", width: "59px", height: "25px" }} >
+                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'darkred', backgroundColor: 'darkred', transform: "translateY(30px)", top: "317px", left: "240px", width: "59px", height: "25px" }} >
                             <span className="k-event-actions"></span>
                             <div>
                                 <div className="k-event-template k-event-time">(12:00 PM - 1:00 PM): Business breakfast with Caroline</div>
@@ -1004,7 +1004,7 @@ root.render(
                             </div>
                             <span className="k-event-actions"><a className="k-link k-event-delete"><Icon name="x"></Icon></a></span><span className="k-resize-handle k-resize-w"></span><span className="k-resize-handle k-resize-e"></span>
                         </div>
-                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'red', backgroundColor: 'red', transform: "translateY(30px)", top: "317px", left: "659px", width: "59px", height: "25px" }} >
+                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'darkred', backgroundColor: 'darkred', transform: "translateY(30px)", top: "317px", left: "659px", width: "59px", height: "25px" }} >
                             <span className="k-event-actions"></span>
                             <div>
                                 <div className="k-event-template k-event-time">(12:00 PM - 1:00 PM): Business breakfast with Caroline</div>
@@ -1028,7 +1028,7 @@ root.render(
                             </div>
                             <span className="k-event-actions"><a className="k-link k-event-delete"><Icon name="x"></Icon></a></span><span className="k-resize-handle k-resize-w"></span><span className="k-resize-handle k-resize-e"></span>
                         </div>
-                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'red', backgroundColor: 'red', transform: "translateY(30px)", top: "317px", left: "300px", width: "59px", height: "25px" }} >
+                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'darkred', backgroundColor: 'darkred', transform: "translateY(30px)", top: "317px", left: "300px", width: "59px", height: "25px" }} >
                             <span className="k-event-actions"></span>
                             <div>
                                 <div className="k-event-template k-event-time">(12:00 PM - 1:00 PM): Banking</div>
@@ -1036,7 +1036,7 @@ root.render(
                             </div>
                             <span className="k-event-actions"><a className="k-link k-event-delete"><Icon name="x"></Icon></a></span><span className="k-resize-handle k-resize-w"></span><span className="k-resize-handle k-resize-e"></span>
                         </div>
-                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'red', backgroundColor: 'red', transform: "translateY(30px)", top: "317px", left: "719px", width: "59px", height: "25px" }} >
+                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'darkred', backgroundColor: 'darkred', transform: "translateY(30px)", top: "317px", left: "719px", width: "59px", height: "25px" }} >
                             <span className="k-event-actions"></span>
                             <div>
                                 <div className="k-event-template k-event-time">(12:00 PM - 1:00 PM): Banking</div>
@@ -1060,7 +1060,7 @@ root.render(
                             </div>
                             <span className="k-event-actions"><a className="k-link k-event-delete"><Icon name="x"></Icon></a></span><span className="k-resize-handle k-resize-w"></span><span className="k-resize-handle k-resize-e"></span>
                         </div>
-                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'red', backgroundColor: 'red', transform: "translateY(30px)", top: "291px", left: "360px", width: "58px", height: "25px" }} >
+                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'darkred', backgroundColor: 'darkred', transform: "translateY(30px)", top: "291px", left: "360px", width: "58px", height: "25px" }} >
                             <span className="k-event-actions"></span>
                             <div>
                                 <div className="k-event-template k-event-time">(10:30 AM - 11:30 AM): Website upload</div>
@@ -1068,7 +1068,7 @@ root.render(
                             </div>
                             <span className="k-event-actions"><a className="k-link k-event-delete"><Icon name="x"></Icon></a></span><span className="k-resize-handle k-resize-w"></span><span className="k-resize-handle k-resize-e"></span>
                         </div>
-                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'red', backgroundColor: 'red', transform: "translateY(30px)", top: "291px", left: "779px", width: "58px", height: "25px" }} >
+                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'darkred', backgroundColor: 'darkred', transform: "translateY(30px)", top: "291px", left: "779px", width: "58px", height: "25px" }} >
                             <span className="k-event-actions"></span>
                             <div>
                                 <div className="k-event-template k-event-time">(10:30 AM - 11:30 AM): Website upload</div>
@@ -1092,7 +1092,7 @@ root.render(
                             </div>
                             <span className="k-event-actions"><a className="k-link k-event-delete"><Icon name="x"></Icon></a></span><span className="k-resize-handle k-resize-w"></span><span className="k-resize-handle k-resize-e"></span>
                         </div>
-                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'red', backgroundColor: 'red', transform: "translateY(30px)", top: "317px", left: "360px", width: "58px", height: "25px" }} >
+                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'darkred', backgroundColor: 'darkred', transform: "translateY(30px)", top: "317px", left: "360px", width: "58px", height: "25px" }} >
                             <span className="k-event-actions"></span>
                             <div>
                                 <div className="k-event-template k-event-time">(11:30 AM - 12:30 PM): Breakfast with CFO and COO</div>
@@ -1100,7 +1100,7 @@ root.render(
                             </div>
                             <span className="k-event-actions"><a className="k-link k-event-delete"><Icon name="x"></Icon></a></span><span className="k-resize-handle k-resize-w"></span><span className="k-resize-handle k-resize-e"></span>
                         </div>
-                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'red', backgroundColor: 'red', transform: "translateY(30px)", top: "317px", left: "779px", width: "58px", height: "25px" }} >
+                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'darkred', backgroundColor: 'darkred', transform: "translateY(30px)", top: "317px", left: "779px", width: "58px", height: "25px" }} >
                             <span className="k-event-actions"></span>
                             <div>
                                 <div className="k-event-template k-event-time">(11:30 AM - 12:30 PM): Breakfast with CFO and COO</div>
@@ -1124,7 +1124,7 @@ root.render(
                             </div>
                             <span className="k-event-actions"><a className="k-link k-event-delete"><Icon name="x"></Icon></a></span><span className="k-resize-handle k-resize-w"></span><span className="k-resize-handle k-resize-e"></span>
                         </div>
-                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'red', backgroundColor: 'red', transform: "translateY(30px)", top: "388px", left: '0px', width: "59px", height: "25px" }} >
+                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'darkred', backgroundColor: 'darkred', transform: "translateY(30px)", top: "388px", left: '0px', width: "59px", height: "25px" }} >
                             <span className="k-event-actions"></span>
                             <div>
                                 <div className="k-event-template k-event-time">(11:00 AM - 12:00 PM): Dentist</div>
@@ -1132,7 +1132,7 @@ root.render(
                             </div>
                             <span className="k-event-actions"><a className="k-link k-event-delete"><Icon name="x"></Icon></a></span><span className="k-resize-handle k-resize-w"></span><span className="k-resize-handle k-resize-e"></span>
                         </div>
-                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'red', backgroundColor: 'red', transform: "translateY(30px)", top: "388px", left: "420px", width: "59px", height: "25px" }} >
+                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'darkred', backgroundColor: 'darkred', transform: "translateY(30px)", top: "388px", left: "420px", width: "59px", height: "25px" }} >
                             <span className="k-event-actions"></span>
                             <div>
                                 <div className="k-event-template k-event-time">(11:00 AM - 12:00 PM): Dentist</div>
@@ -1156,7 +1156,7 @@ root.render(
                             </div>
                             <span className="k-event-actions"><a className="k-link k-event-delete"><Icon name="x"></Icon></a></span><span className="k-resize-handle k-resize-w"></span><span className="k-resize-handle k-resize-e"></span>
                         </div>
-                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'red', backgroundColor: 'red', transform: "translateY(30px)", top: "414px", left: '0px', width: "59px", height: "25px" }} >
+                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'darkred', backgroundColor: 'darkred', transform: "translateY(30px)", top: "414px", left: '0px', width: "59px", height: "25px" }} >
                             <span className="k-event-actions"></span>
                             <div title="Job Interview - Laura Bailey">
                                 <div className="k-event-template k-event-time">(12:30 PM - 1:30 PM): Job Interview - Laura Bailey</div>
@@ -1164,7 +1164,7 @@ root.render(
                             </div>
                             <span className="k-event-actions"><a className="k-link k-event-delete"><Icon name="x"></Icon></a></span><span className="k-resize-handle k-resize-w"></span><span className="k-resize-handle k-resize-e"></span>
                         </div>
-                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'red', backgroundColor: 'red', transform: "translateY(30px)", top: "414px", left: "420px", width: "59px", height: "25px" }} >
+                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'darkred', backgroundColor: 'darkred', transform: "translateY(30px)", top: "414px", left: "420px", width: "59px", height: "25px" }} >
                             <span className="k-event-actions"></span>
                             <div title="Job Interview - Laura Bailey">
                                 <div className="k-event-template k-event-time">(12:30 PM - 1:30 PM): Job Interview - Laura Bailey</div>
@@ -1188,7 +1188,7 @@ root.render(
                             </div>
                             <span className="k-event-actions"><a className="k-link k-event-delete"><Icon name="x"></Icon></a></span><span className="k-resize-handle k-resize-w"></span><span className="k-resize-handle k-resize-e"></span>
                         </div>
-                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'red', backgroundColor: 'red', transform: "translateY(30px)", top: "388px", left: "60px", width: "59px", height: "25px" }} >
+                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'darkred', backgroundColor: 'darkred', transform: "translateY(30px)", top: "388px", left: "60px", width: "59px", height: "25px" }} >
                             <span className="k-event-actions"><Icon name="arrow-rotate-cw"></Icon></span>
                             <div>
                                 <div className="k-event-template k-event-time">(9:30 PM - 11:00 PM): Dance Practice</div>
@@ -1196,7 +1196,7 @@ root.render(
                             </div>
                             <span className="k-event-actions"><a className="k-link k-event-delete"><Icon name="x"></Icon></a></span><span className="k-resize-handle k-resize-w"></span><span className="k-resize-handle k-resize-e"></span>
                         </div>
-                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'red', backgroundColor: 'red', transform: "translateY(30px)", top: "388px", left: "479px", width: "59px", height: "25px" }} >
+                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'darkred', backgroundColor: 'darkred', transform: "translateY(30px)", top: "388px", left: "479px", width: "59px", height: "25px" }} >
                             <span className="k-event-actions"><Icon name="arrow-rotate-cw"></Icon></span>
                             <div>
                                 <div className="k-event-template k-event-time">(9:30 PM - 11:00 PM): Dance Practice</div>
@@ -1220,7 +1220,7 @@ root.render(
                             </div>
                             <span className="k-event-actions"><a className="k-link k-event-delete"><Icon name="x"></Icon></a></span><span className="k-resize-handle k-resize-w"></span><span className="k-resize-handle k-resize-e"></span>
                         </div>
-                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'red', backgroundColor: 'red', transform: "translateY(30px)", top: "414px", left: "60px", width: "119px", height: "25px" }} >
+                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'darkred', backgroundColor: 'darkred', transform: "translateY(30px)", top: "414px", left: "60px", width: "119px", height: "25px" }} >
                             <span className="k-event-actions"></span>
                             <div title="Bob&apos;s Birthday Party">
                                 <div className="k-event-template k-event-time">(11:00 PM - 2:30 AM): Bob&apos;s Birthday Party</div>
@@ -1228,7 +1228,7 @@ root.render(
                             </div>
                             <span className="k-event-actions"><a className="k-link k-event-delete"><Icon name="x"></Icon></a></span><span className="k-resize-handle k-resize-w"></span><span className="k-resize-handle k-resize-e"></span>
                         </div>
-                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'red', backgroundColor: 'red', transform: "translateY(30px)", top: "414px", left: "479px", width: "119px", height: "25px" }} >
+                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'darkred', backgroundColor: 'darkred', transform: "translateY(30px)", top: "414px", left: "479px", width: "119px", height: "25px" }} >
                             <span className="k-event-actions"></span>
                             <div title="Bob&apos;s Birthday Party">
                                 <div className="k-event-template k-event-time">(11:00 PM - 2:30 AM): Bob&apos;s Birthday Party</div>
@@ -1252,7 +1252,7 @@ root.render(
                             </div>
                             <span className="k-event-actions"><a className="k-link k-event-delete"><Icon name="x"></Icon></a></span><span className="k-resize-handle k-resize-w"></span><span className="k-resize-handle k-resize-e"></span>
                         </div>
-                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'red', backgroundColor: 'red', transform: "translateY(30px)", top: "388px", left: "120px", width: "59px", height: "25px" }} >
+                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'darkred', backgroundColor: 'darkred', transform: "translateY(30px)", top: "388px", left: "120px", width: "59px", height: "25px" }} >
                             <span className="k-event-actions"><Icon name="arrow-rotate-cw"></Icon></span>
                             <div>
                                 <div className="k-event-template k-event-time">(10:00 PM - 12:00 AM): HR Lecture</div>
@@ -1260,7 +1260,7 @@ root.render(
                             </div>
                             <span className="k-event-actions"><a className="k-link k-event-delete"><Icon name="x"></Icon></a></span><span className="k-resize-handle k-resize-w"></span><span className="k-resize-handle k-resize-e"></span>
                         </div>
-                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'red', backgroundColor: 'red', transform: "translateY(30px)", top: "388px", left: "539px", width: "59px", height: "25px" }} >
+                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'darkred', backgroundColor: 'darkred', transform: "translateY(30px)", top: "388px", left: "539px", width: "59px", height: "25px" }} >
                             <span className="k-event-actions"><Icon name="arrow-rotate-cw"></Icon></span>
                             <div>
                                 <div className="k-event-template k-event-time">(10:00 PM - 12:00 AM): HR Lecture</div>
@@ -1284,7 +1284,7 @@ root.render(
                             </div>
                             <span className="k-event-actions"><a className="k-link k-event-delete"><Icon name="x"></Icon></a></span><span className="k-resize-handle k-resize-w"></span><span className="k-resize-handle k-resize-e"></span>
                         </div>
-                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'red', backgroundColor: 'red', transform: "translateY(30px)", top: "388px", left: "180px", width: "59px", height: "25px" }} >
+                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'darkred', backgroundColor: 'darkred', transform: "translateY(30px)", top: "388px", left: "180px", width: "59px", height: "25px" }} >
                             <span className="k-event-actions"><Icon name="arrow-rotate-cw"></Icon></span>
                             <div>
                                 <div className="k-event-template k-event-time">(6:00 PM - 7:00 PM): Helpdesk weekly meeting</div>
@@ -1292,7 +1292,7 @@ root.render(
                             </div>
                             <span className="k-event-actions"><a className="k-link k-event-delete"><Icon name="x"></Icon></a></span><span className="k-resize-handle k-resize-w"></span><span className="k-resize-handle k-resize-e"></span>
                         </div>
-                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'red', backgroundColor: 'red', transform: "translateY(30px)", top: "388px", left: "599px", width: "59px", height: "25px" }} >
+                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'darkred', backgroundColor: 'darkred', transform: "translateY(30px)", top: "388px", left: "599px", width: "59px", height: "25px" }} >
                             <span className="k-event-actions"><Icon name="arrow-rotate-cw"></Icon></span>
                             <div>
                                 <div className="k-event-template k-event-time">(6:00 PM - 7:00 PM): Helpdesk weekly meeting</div>
@@ -1316,7 +1316,7 @@ root.render(
                             </div>
                             <span className="k-event-actions"><a className="k-link k-event-delete"><Icon name="x"></Icon></a></span><span className="k-resize-handle k-resize-w"></span><span className="k-resize-handle k-resize-e"></span>
                         </div>
-                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'red', backgroundColor: 'red', transform: "translateY(30px)", top: "414px", left: "180px", width: "59px", height: "25px" }} >
+                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'darkred', backgroundColor: 'darkred', transform: "translateY(30px)", top: "414px", left: "180px", width: "59px", height: "25px" }} >
                             <span className="k-event-actions"><Icon name="arrow-rotate-cw"></Icon></span>
                             <div>
                                 <div className="k-event-template k-event-time">(9:30 PM - 11:00 PM): Dance Practice</div>
@@ -1324,7 +1324,7 @@ root.render(
                             </div>
                             <span className="k-event-actions"><a className="k-link k-event-delete"><Icon name="x"></Icon></a></span><span className="k-resize-handle k-resize-w"></span><span className="k-resize-handle k-resize-e"></span>
                         </div>
-                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'red', backgroundColor: 'red', transform: "translateY(30px)", top: "414px", left: "599px", width: "59px", height: "25px" }} >
+                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'darkred', backgroundColor: 'darkred', transform: "translateY(30px)", top: "414px", left: "599px", width: "59px", height: "25px" }} >
                             <span className="k-event-actions"><Icon name="arrow-rotate-cw"></Icon></span>
                             <div>
                                 <div className="k-event-template k-event-time">(9:30 PM - 11:00 PM): Dance Practice</div>
@@ -1348,7 +1348,7 @@ root.render(
                             </div>
                             <span className="k-event-actions"><a className="k-link k-event-delete"><Icon name="x"></Icon></a></span><span className="k-resize-handle k-resize-w"></span><span className="k-resize-handle k-resize-e"></span>
                         </div>
-                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'red', backgroundColor: 'red', transform: "translateY(30px)", top: "388px", left: "240px", width: "59px", height: "25px" }} >
+                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'darkred', backgroundColor: 'darkred', transform: "translateY(30px)", top: "388px", left: "240px", width: "59px", height: "25px" }} >
                             <span className="k-event-actions"><Icon name="arrow-rotate-cw"></Icon></span>
                             <div>
                                 <div className="k-event-template k-event-time">(10:00 PM - 12:00 AM): HR Lecture</div>
@@ -1356,7 +1356,7 @@ root.render(
                             </div>
                             <span className="k-event-actions"><a className="k-link k-event-delete"><Icon name="x"></Icon></a></span><span className="k-resize-handle k-resize-w"></span><span className="k-resize-handle k-resize-e"></span>
                         </div>
-                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'red', backgroundColor: 'red', transform: "translateY(30px)", top: "388px", left: "659px", width: "59px", height: "25px" }} >
+                        <div className="k-event" style={{ cursor: 'pointer', userSelect: 'none', borderColor: 'darkred', backgroundColor: 'darkred', transform: "translateY(30px)", top: "388px", left: "659px", width: "59px", height: "25px" }} >
                             <span className="k-event-actions"><Icon name="arrow-rotate-cw"></Icon></span>
                             <div>
                                 <div className="k-event-template k-event-time">(10:00 PM - 12:00 AM): HR Lecture</div>

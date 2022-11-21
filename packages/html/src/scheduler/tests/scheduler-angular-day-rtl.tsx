@@ -60,7 +60,7 @@ root.render(
                                                 <tr><td style={{ height: "46px" }}></td></tr>
                                             </tbody>
                                         </table>
-                                        <div style={{ backgroundColor: "rgb(110, 179, 250)", borderColor: "rgb(110, 179, 250)", width: "454px", right: "1px", top: '0px', height: "25px" }} className="k-event">
+                                        <div style={{ backgroundColor: "rgb(17, 134, 64)", borderColor: "rgb(17, 134, 64)", width: "454px", right: "1px", top: '0px', height: "25px" }} className="k-event">
                                             <span className="k-event-actions"><Icon name="arrow-e"></Icon></span>
                                             <div><div className="k-event-template">Attending HR Conference</div></div>
                                             <span className="k-event-actions"><a className="k-link k-event-delete"><Icon name="x"></Icon></a></span>
@@ -149,7 +149,7 @@ root.render(
                                     </tbody>
                                 </table>
 
-                                <div style={{ backgroundColor: "rgb(245, 138, 138)", borderColor: "rgb(245, 138, 138)", width: "56px", right: "3px", top: "37px", height: "443px" }} className="k-event">
+                                <div style={{ width: "56px", right: "3px", top: "37px", height: "443px" }} className="k-event">
                                     <span className="k-event-actions"></span>
                                     <div>
                                         <div className="k-event-template k-event-time">8:30 AM - 2:30 PM</div>
@@ -159,7 +159,7 @@ root.render(
                                     <span className="k-resize-handle k-resize-n"></span>
                                     <span className="k-resize-handle k-resize-s"></span>
                                 </div>
-                                <div style={{ backgroundColor: "rgb(245, 138, 138)", borderColor: "rgb(245, 138, 138)", width: "54px", right: "61px", top: "259px", height: "73px" }} className="k-event">
+                                <div style={{ width: "54px", right: "61px", top: "259px", height: "73px" }} className="k-event">
                                     <span className="k-event-actions"></span>
                                     <div>
                                         <div className="k-event-template k-event-time">11:30 AM - 12:30 PM</div>
@@ -169,7 +169,7 @@ root.render(
                                     <span className="k-resize-handle k-resize-n"></span>
                                     <span className="k-resize-handle k-resize-s"></span>
                                 </div>
-                                <div style={{ backgroundColor: "rgb(245, 138, 138)", borderColor: "rgb(245, 138, 138)", width: "54px", right: "117px", top: "259px", height: "73px" }} className="k-event">
+                                <div style={{ width: "54px", right: "117px", top: "259px", height: "73px" }} className="k-event">
                                     <span className="k-event-actions"></span>
                                     <div>
                                         <div className="k-event-template k-event-time">11:30 AM - 12:30 PM</div>
@@ -179,7 +179,7 @@ root.render(
                                     <span className="k-resize-handle k-resize-n"></span>
                                     <span className="k-resize-handle k-resize-s"></span>
                                 </div>
-                                <div style={{ backgroundColor: "rgb(245, 138, 138)", borderColor: "rgb(245, 138, 138)", width: "54px", right: "173px", top: "259px", height: "73px" }} className="k-event">
+                                <div style={{ width: "54px", right: "173px", top: "259px", height: "73px" }} className="k-event">
                                     <span className="k-event-actions"></span>
                                     <div>
                                         <div className="k-event-template k-event-time">11:30 AM - 12:30 PM</div>
@@ -189,7 +189,7 @@ root.render(
                                     <span className="k-resize-handle k-resize-n"></span>
                                     <span className="k-resize-handle k-resize-s"></span>
                                 </div>
-                                <div style={{ backgroundColor: "rgb(245, 138, 138)", borderColor: "rgb(245, 138, 138)", width: "54px", right: "229px", top: "259px", height: "73px" }} className="k-event">
+                                <div style={{ width: "54px", right: "229px", top: "259px", height: "73px" }} className="k-event">
                                     <span className="k-event-actions"></span>
                                     <div>
                                         <div className="k-event-template k-event-time">11:30 AM - 12:30 PM</div>
@@ -199,7 +199,7 @@ root.render(
                                     <span className="k-resize-handle k-resize-n"></span>
                                     <span className="k-resize-handle k-resize-s"></span>
                                 </div>
-                                <div style={{ backgroundColor: "rgb(245, 138, 138)", borderColor: "rgb(245, 138, 138)", width: "54px", right: "285px", top: "259px", height: "73px" }} className="k-event">
+                                <div style={{ width: "54px", right: "285px", top: "259px", height: "73px" }} className="k-event">
                                     <span className="k-event-actions"></span>
                                     <div>
                                         <div className="k-event-template k-event-time">11:30 AM - 12:30 PM</div>
@@ -209,7 +209,7 @@ root.render(
                                     <span className="k-resize-handle k-resize-n"></span>
                                     <span className="k-resize-handle k-resize-s"></span>
                                 </div>
-                                <div style={{ backgroundColor: "rgb(245, 138, 138)", borderColor: "rgb(245, 138, 138)", width: "54px", right: "341px", top: "259px", height: "73px" }} className="k-event">
+                                <div style={{ width: "54px", right: "341px", top: "259px", height: "73px" }} className="k-event">
                                     <span className="k-event-actions"></span>
                                     <div>
                                         <div className="k-event-template k-event-time">11:30 AM - 12:30 PM</div>
@@ -219,7 +219,7 @@ root.render(
                                     <span className="k-resize-handle k-resize-n"></span>
                                     <span className="k-resize-handle k-resize-s"></span>
                                 </div>
-                                <div style={{ backgroundColor: "rgb(110, 179, 250)", borderColor: "rgb(110, 179, 250)", width: "393px", right: "61px", top: "370px", height: "73px" }} className="k-event">
+                                <div style={{ backgroundColor: "rgb(17, 134, 64)", borderColor: "rgb(17, 134, 64)", width: "393px", right: "61px", top: "370px", height: "73px" }} className="k-event">
                                     <span className="k-event-actions"></span>
                                     <div>
                                         <div className="k-event-template k-event-time">1:00 PM - 2:00 PM</div>
@@ -229,7 +229,7 @@ root.render(
                                     <span className="k-resize-handle k-resize-n"></span>
                                     <span className="k-resize-handle k-resize-s"></span>
                                 </div>
-                                <div style={{ backgroundColor: "rgb(110, 179, 250)", borderColor: "rgb(110, 179, 250)", width: "54px", right: "397px", top: "259px", height: "36px" }} className="k-event">
+                                <div style={{ backgroundColor: "rgb(17, 134, 64)", borderColor: "rgb(17, 134, 64)", width: "54px", right: "397px", top: "259px", height: "36px" }} className="k-event">
                                     <span className="k-event-actions"></span>
                                     <div>
                                         <div className="k-event-template k-event-time">11:30 AM - 12:00 PM</div>
@@ -239,7 +239,7 @@ root.render(
                                     <span className="k-resize-handle k-resize-n"></span>
                                     <span className="k-resize-handle k-resize-s"></span>
                                 </div>
-                                <div style={{ backgroundColor: "rgb(245, 138, 138)", borderColor: "rgb(245, 138, 138)", width: "393px", right: "61px", top: "333px", height: "36px" }} className="k-event">
+                                <div style={{ width: "393px", right: "61px", top: "333px", height: "36px" }} className="k-event">
                                     <span className="k-event-actions"></span>
                                     <div>
                                         <div className="k-event-template k-event-time">12:30 PM - 1:00 PM</div>
