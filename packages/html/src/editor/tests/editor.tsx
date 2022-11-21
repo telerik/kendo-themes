@@ -29,7 +29,7 @@ root.render(
             <span>Editor with iFrame; responsive toolbar</span>
             <span>Editor without iFrame; responsive toolbar</span>
             <section>
-                <Editor style={{ height: "200px" }}>
+                <Editor style={{ height: "300px" }}>
                     <EditorToolbar resizable>
                         <ButtonGroup>
                             <Button icon="undo"></Button>
@@ -43,7 +43,7 @@ root.render(
                 </Editor>
             </section>
             <section>
-                <Editor style={{ height: "200px" }}>
+                <Editor style={{ height: "300px" }}>
                     <EditorToolbar resizable>
                         <ButtonGroup>
                             <Button icon="undo"></Button>
@@ -53,6 +53,22 @@ root.render(
                     </EditorToolbar>
                     <EditorContent>
                         <div className="ProseMirror">
+                            <p>
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td className="selectedCell">cell 1</td>
+                                            <td>cell 2</td>
+                                            <td>cell 3</td>
+                                        </tr>
+                                        <tr>
+                                            <td>cell 4</td>
+                                            <td>cell 5</td>
+                                            <td>cell 6</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </p>
                             <div style={{ position: "relative" }}>
                                 <img className="ProseMirror-selectednode" src="/packages/html/assets/avatar.jpg" />
                                 <div className="k-editor-resize-handles-wrapper ProseMirror-widget" style={{ width: "100px", height: "110px", top: "0", left: "0" }}>
@@ -76,7 +92,7 @@ root.render(
             <span>Editor with iFrame; NO-responsive toolbar</span>
             <span>Readonly Editor without iFrame; NO-responsive toolbar</span>
             <section>
-                <Editor style={{ height: "400px" }}>
+                <Editor style={{ height: "350px" }}>
                     <EditorToolbar>
                         <div className="k-tool-group">
                             <div className="k-button-group">
@@ -178,7 +194,7 @@ root.render(
             </section>
 
             <section>
-                <Editor readonly style={{ height: "400px" }}>
+                <Editor readonly style={{ height: "350px" }}>
                     <EditorToolbar>
                         <div className="k-tool-group">
                             <div className="k-button-group">
