@@ -18,11 +18,12 @@ const styles = `
 root.render(
     <>
         <style>{styles}</style>
-        <div id="test-area" className="k-d-grid k-grid-cols-4">
+        <div id="test-area" className="k-d-grid k-grid-cols-5">
             <span>Callout top</span>
             <span>Callout right</span>
             <span>Callout bottom</span>
             <span>Callout left</span>
+            <span>Empty body fixed height</span>
 
             <section>
                 <Popover callout="top" title="Title" body="Body content">
@@ -57,6 +58,11 @@ root.render(
                         <Button fillMode="flat">Action</Button>
                         <Button fillMode="flat" themeColor="primary">Primary</Button>
                     </ActionButtons>
+                </Popover>
+            </section>
+
+            <section>
+                <Popover callout="left" title="Title" body="" style={{ height: "150px" }}>
                 </Popover>
             </section>
         </div>
