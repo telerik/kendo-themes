@@ -1,7 +1,7 @@
 {
   "name": "@progress/kendo-html-spec",
   "description": "Specification for Kendo UI component rendering in JSON format",
-  "version": "5.11.1-dev.0",
+  "version": "5.11.1-dev.1",
   "author": "Progress",
   "license": "Apache-2.0",
   "keywords": [
