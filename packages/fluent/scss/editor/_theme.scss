@@ -103,6 +103,16 @@
                 $bg: var( --kendo-editor-highlighted-bg, #{$kendo-editor-highlighted-bg} )
             );
         }
+
+        // Table styles
+        td,
+        th {
+            border-color: #dddddd;
+        }
+
+        .selectedCell::after { // sass-lint:disable-line class-name-format
+            background-color: rgba(200, 200, 255, .4);
+        }
     }
 
 }
