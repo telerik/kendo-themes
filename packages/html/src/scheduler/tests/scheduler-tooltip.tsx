@@ -39,17 +39,17 @@ root.render(
                             </div>
                             <div className="k-tooltip-events-container">
                                 <div className="k-tooltip-events">
-                                    <div className="k-tooltip-event k-event" style={{ backgroundColor: "#51a0ed", borderColor: "#51a0ed" }} >
+                                    <div className="k-tooltip-event k-event" >
                                         <div className="k-event-title k-text-ellipsis">Dance Practice</div>
                                         <span className="k-spacer"></span>
                                         <span className="k-event-time">6:30 PM</span>
                                     </div>
-                                    <div className="k-tooltip-event k-event" style={{ backgroundColor: "#56ca85", borderColor: "#56ca85" }} >
+                                    <div className="k-tooltip-event k-event" style={{ backgroundColor: "rgb(17, 134, 64)", borderColor: "rgb(17, 134, 64)" }} >
                                         <div className="k-event-title k-text-ellipsis">Helpdesk weekly meeting</div>
                                         <span className="k-spacer"></span>
                                         <span className="k-event-time">12:30 PM</span>
                                     </div>
-                                    <div className="k-tooltip-event k-event" style={{ backgroundColor: "#51a0ed", borderColor: "#51a0ed" }} >
+                                    <div className="k-tooltip-event k-event">
                                         <div className="k-event-title k-text-ellipsis">Regular Appointment</div>
                                         <span className="k-spacer"></span>
                                         <span className="k-event-time">13:30 PM</span>
