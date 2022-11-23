@@ -33,11 +33,7 @@ and then import it in your project styles:
 @use "~@progress/kendo-theme-fluent/scss/all.scss";
 ```
 
-## Customizing
-
-You can customize Kendo UI Fluent Theme both in terms of what gets compiled and how the theme will look.
-
-### Importing
+## Importing
 
 In your custom scss file, you can import the entirety of the theme, by importing `scss/all.scss` or pick just the styles for the components you need. The files for individual components:
 
@@ -52,6 +48,70 @@ In your custom scss file, you can import the entirety of the theme, by importing
     )
 );
 @include kendo-theme.styles();
+```
+
+## SCSS Variables Customization
+
+The Kendo UI Fluent theme enables customization through SCSS variables as follows:
+
+```scss
+@use "index.scss" as kendo-theme with (
+    $kendo-body-bg: beige,
+    $kendo-font-size: 1rem
+);
+
+@include kendo-theme.config();
+@include kendo-theme.styles();
+```
+
+or:
+
+```scss
+@use "index.scss" as kendo-theme;
+
+kendo-theme.$kendo-body-bg: beige;
+kendo-theme.$kendo-font-size: 30px;
+
+@include kendo-theme.config();
+@include kendo-theme.styles();
+```
+
+## CSS Variables Customization
+
+The theme is also making use of CSS custom properties in its compiled output for runtime customization. This eliminates the need to recompile the theme from the source.
+
+### Root variables
+
+The theme exposes global [root variables](https://github.com/telerik/kendo-themes/blob/develop/packages/fluent/scss/core/_variables.scss#L106-L133) that can be used anywhere on the page to dynamically customize the theme:
+
+```css
+body {
+    --kendo-font-size: 1.2rem;
+}
+```
+
+### Component variables
+
+The theme also exposes CSS variables for all components and allows dynamic restyling:
+
+```css
+.k-button-solid-primary {
+    --kendo-button-text: #fff;
+    --kendo-button-bg: #28a745;
+    --kendo-button-border: #28a745;
+
+    --kendo-button-hover-text: #fff;
+    --kendo-button-hover-bg: #218838;
+    --kendo-button-hover-border: #218838;
+
+    --kendo-button-focus-text: #fff;
+    --kendo-button-focus-bg: #28a745;
+    --kendo-button-focus-border: #28a745;
+
+    --kendo-button-active-text: #fff;
+    --kendo-button-active-bg: #1e7e34;
+    --kendo-button-active-border: #1e7e34;
+}
 ```
 
 ## Bug reports and feature requests
