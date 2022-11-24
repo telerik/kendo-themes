@@ -40,6 +40,28 @@ You can [download](https://aka.ms/webfluentfonts) and add the font in the follow
   body { font-family: "Segoe UI", sans-serif; }
 </style>
 ```
+## Dynamic customization
+
+The Kendo UI Fluent theme utilizes [CSS custom properties (variables)](https://developer.mozilla.org/en-US/docs/Web/CSS/--*) which allows for dynamic customization without needing to recompile the theme.
+
+The Kendo UI Fluent theme exposes root variables that are globally available:
+
+```html-no-run
+<style>
+  :root { --kendo-font-size: 20px; }
+</style>
+```
+
+As well as variables targeting specific components:
+
+```html-no-run
+<style>
+  .k-button { --kendo-button-bg: hotpink; }
+</style>
+```
+
+All of the custom properties available with the Kendo UI Fluent theme are prefixed with `--kendo` to avoid conflicts with third party libraries.
+
 ## Preview
 
 To apply the Fluent theme to any of the examples on this website, use the theme chooser drop-down at the top-right corner of the example. The {% platform_content angular %}Default{% endplatform_content %}{% platform_content react %}Material{% endplatform_content %}{% platform_content vue %}Material{% endplatform_content %} theme styling is loaded by default.
