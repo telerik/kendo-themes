@@ -109,6 +109,7 @@ $box-shadow-depth-5: 0 11px 15px -7px rgba( $elevation, .2 ), 0 24px 38px 3px rg
 $icon-size: 16px !default;
 $icon-size-lg: 32px !default;
 $icon-spacing: k-map-get( $spacing, 2 ) !default;
+$icon-padding: k-map-get( $spacing, 1 ) !default;
 
 /// The URL to the icon font that will be used by the theme
 /// The default value of `null` embeds the package font with a `data:` URL
