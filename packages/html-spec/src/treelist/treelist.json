@@ -1,0 +1,401 @@
+{
+    "schema": "../../schemas/component.schema.json",
+    "title": "Kendo Treelist HTML Spec",
+    "component": "treelist",
+    "selector": [
+        ".k-treelist"
+    ],
+    "states": [
+        {
+            "name": "disabled",
+            "selector": [
+                ":disabled",
+                "[disabled]",
+                ".k-disabled"
+            ]
+        }
+    ],
+    "options": [
+        {
+            "name": "size",
+            "values": [
+                {
+                    "name": "medium",
+                    "selector": [
+                        ".k-grid-md"
+                    ]
+                }
+            ]
+        }
+    ],
+    "children": [
+        {
+            "name": "treelist-toolbar",
+            "$ref": "toolbar",
+            "selector": [
+                ".k-grid-toolbar"
+            ],
+            "options": [
+                {
+                    "name": "size",
+                    "value": "medium",
+                    "selector": [
+                        ".k-toolbar-md"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "treelist-header",
+            "selector": [
+                ".k-grid-header"
+            ],
+            "children": [
+                {
+                    "name": "treelist-header-wrap",
+                    "selector": [
+                        ".k-grid-header-wrap"
+                    ]
+                },
+                {
+                    "name": "treelist-header-table",
+                    "$ref": "data-table-header-table",
+                    "selector": [
+                        ".k-table",
+                        ".k-grid-header-table"
+                    ],
+                    "options": [
+                        {
+                            "name": "size",
+                            "value": "medium"
+                        }
+                    ],
+                    "children": [
+                        {
+                            "name": "treelist-header-row",
+                            "selector": [
+                                ".k-table-row"
+                            ],
+                            "states": [
+                                {
+                                    "name": "filter",
+                                    "selector": [
+                                        ".k-filter-row"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "treelist-header-cell",
+                            "selector": [
+                                ".k-table-th"
+                            ],
+                            "states": [
+                                {
+                                    "name": "focus",
+                                    "selector": [
+                                        ":focus",
+                                        ".k-focus"
+                                    ]
+                                },
+                                {
+                                    "name": "sorted",
+                                    "selector": [
+                                        ".k-sorted"
+                                    ]
+                                },
+                                {
+                                    "name": "locked",
+                                    "selector": [
+                                        ".k-locked"
+                                    ]
+                                },
+                                {
+                                    "name": "filterable",
+                                    "selector": [
+                                        ".k-filterable"
+                                    ]
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "name": "treelist-header-title",
+                                    "selector": [
+                                        ".k-column-title"
+                                    ]
+                                },
+                                {
+                                    "name": "treelist-header-sorting",
+                                    "selector": [
+                                        ".k-sort-icon"
+                                    ],
+                                    "children": [
+                                        {
+                                            "name": "treelist-header-sorting-icon",
+                                            "$ref": "icon",
+                                            "selector": [
+                                                ".k-icon"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "treelist-header-sort-order",
+                                    "selector": [
+                                        ".k-sort-order"
+                                    ]
+
+                                },
+                                {
+                                    "name": "treelist-header-filter",
+                                    "selector": [
+                                        ".k-grid-filter"
+                                    ],
+                                    "states": [
+                                        {
+                                            "name": "hover",
+                                            "selector": [
+                                                ":hover",
+                                                ".k-hover"
+                                            ]
+                                        },
+                                        {
+                                            "name": "focus",
+                                            "selector": [
+                                                ":focus",
+                                                ".k-focus"
+                                            ]
+                                        },
+                                        {
+                                            "name": "active",
+                                            "selector": [
+                                                ":active",
+                                                ".k-active"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "treelist-header-menu",
+                                    "selector": [
+                                        ".k-grid-header-menu"
+                                    ],
+                                    "states": [
+                                        {
+                                            "name": "hover",
+                                            "selector": [
+                                                ":hover",
+                                                ".k-hover"
+                                            ]
+                                        },
+                                        {
+                                            "name": "focus",
+                                            "selector": [
+                                                ":focus",
+                                                ".k-focus"
+                                            ]
+                                        },
+                                        {
+                                            "name": "active",
+                                            "selector": [
+                                                ":active",
+                                                ".k-active"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "treelist-content",
+            "selector": [
+                ".k-grid-content"
+            ],
+            "children": [
+                {
+                    "name": "treelist-table",
+                    "$ref": "data-table-scroller-table",
+                    "selector": [
+                        ".k-table",
+                        ".k-grid-table"
+                    ],
+                    "options": [
+                        {
+                            "name": "size",
+                            "value": "medium"
+                        }
+                    ],
+                    "children": [
+                        {
+                            "name": "treelist-col",
+                            "selector": [
+                                "col"
+                            ],
+                            "states": [
+                                {
+                                    "name": "sorted",
+                                    "selector": [
+                                        ".k-sorted"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "treelist-table-row",
+                            "selector": [
+                                ".k-table-row",
+                                ".k-master-row"
+                            ],
+                            "states": [
+                                {
+                                    "name": "hover",
+                                    "selector": [
+                                        ":hover",
+                                        ".k-hover"
+                                    ]
+                                },
+                                {
+                                    "name": "focus",
+                                    "selector": [
+                                        ":focus",
+                                        ".k-focus"
+                                    ]
+                                },
+                                {
+                                    "name": "selected",
+                                    "selector": [
+                                        ".k-selected"
+                                    ]
+                                },
+                                {
+                                    "name": "alt",
+                                    "selector": [
+                                        ".k-alt"
+                                    ]
+                                },
+                                {
+                                    "name": "edit",
+                                    "selector": [
+                                        ".k-grid-edit-row"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "treelist-table-cell",
+                            "selector": [
+                                ".k-table-td"
+                            ],
+                            "states": [
+                                {
+                                    "name": "hover",
+                                    "selector": [
+                                        ":hover",
+                                        ".k-hover"
+                                    ]
+                                },
+                                {
+                                    "name": "focus",
+                                    "selector": [
+                                        ":focus",
+                                        ".k-focus"
+                                    ]
+                                },
+                                {
+                                    "name": "selected",
+                                    "selector": [
+                                        ".k-selected"
+                                    ]
+                                },
+                                {
+                                    "name": "sorted",
+                                    "selector": [
+                                        ".k-sorted"
+                                    ]
+                                },
+                                {
+                                    "name": "locked",
+                                    "selector": [
+                                        ".k-locked"
+                                    ]
+                                },
+                                {
+                                    "name": "edit",
+                                    "selector": [
+                                        ".k-grid-edit-cell"
+                                    ]
+                                },
+                                {
+                                    "name": "command",
+                                    "selector": [
+                                        ".k-command-cell"
+                                    ]
+                                }
+                            ],
+                            "children": [
+                                {
+                                    "name": "treelist-command-button",
+                                    "$ref": "button",
+                                    "selector": [
+                                        ".k-command-cell .k-button"
+                                    ]
+                                },
+                                {
+                                    "name": "treelist-textbox",
+                                    "$ref": "textbox",
+                                    "selector": [
+                                        ".k-textbox"
+                                    ]
+                                },
+                                {
+                                    "name": "treelist-numerictextbox",
+                                    "$ref": "numerictextbox",
+                                    "selector": [
+                                        ".k-numerictextbox"
+                                    ]
+                                },
+                                {
+                                    "name": "treelist-checkbox",
+                                    "$ref": "checkbox",
+                                    "selector": [
+                                        ".k-checkbox"
+                                    ]
+                                },
+                                {
+                                    "name": "treelist-datepicker",
+                                    "$ref": "datepicker",
+                                    "selector": [
+                                        ".k-datepicker"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "treelist-pager",
+                            "$ref": "pager",
+                            "selector": [
+                                ".k-grid-pager"
+                            ],
+                            "options": [
+                                {
+                                    "name": "size",
+                                    "value": "medium"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "treelist-footer-template",
+                            "selector": [
+                                ".k-footer-template"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

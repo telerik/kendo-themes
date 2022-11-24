@@ -119,7 +119,7 @@ module.exports = {
     ...require('./listview'),
     // ...require('./spreadsheet'),
     // ...require('./pivotgrid'),
-    // ...require('./treelist'),
+    ...require('./treelist'),
     // ...require('./filter'),
     // ...require('./filemanager'),
     // ...require('./taskboard'),
