@@ -63,6 +63,7 @@ $default-scrollbar-width: 17px !default;
 $icon-size: 16px !default;
 $icon-size-lg: 32px !default;
 $icon-spacing: k-map-get( $spacing, 1 ) !default;
+$icon-padding: k-map-get( $spacing, 1 ) !default;
 
 /// The URL to the icon font that will be used by the theme
 /// The default value of `null` embeds the package font with a `data:` URL

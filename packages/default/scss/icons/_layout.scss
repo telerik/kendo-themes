@@ -121,11 +121,9 @@
         display: none;
     }
 
-    .k-widget .k-icon {
-        &.k-i-expand,
-        &.k-i-collapse {
-            cursor: pointer;
-        }
+    .k-icon-action {
+        padding: $icon-padding;
+        cursor: pointer;
     }
 
     .k-icon-xs { font-size: ( $icon-size * .5 ); }
