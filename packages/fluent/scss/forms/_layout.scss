@@ -87,10 +87,6 @@
             padding: 0;
         }
 
-        .k-form-field {
-            margin-block-start: var( --kendo-form-field-margin-top, #{$kendo-form-field-margin-top} );
-        }
-
         > * {
             &:not(.k-hidden):first-child,
             &.k-hidden + :not(.k-hidden) {
@@ -130,7 +126,6 @@
     // Form Buttons Container
     .k-form-buttons {
         @extend .k-actions;
-        margin-block-start: calc( var( --kendo-form-field-margin-top, #{$kendo-form-field-margin-top} ) * 2 );
         padding: 0;
         overflow: visible;
     }
@@ -191,9 +186,24 @@
         }
     }
 
+    // Sizes
+    @each $size, $size-props in $kendo-form-sizes {
+        $_form-rows-spacing: map-get($size-props, form-rows-spacing);
+
+        .k-form-#{$size} {
+            .k-form-field {
+                margin-block-start: var( --kendo-form-rows-spacing-#{$size}, #{$_form-rows-spacing} );
+            }
+
+            .k-form-buttons {
+                margin-block-start: calc( var( --kendo-form-rows-spacing-#{$size}, #{$_form-rows-spacing} ) * 2 );
+            }
+        }
+    }
+
     // Scheduler
     .k-form-inline {
-        padding: var( --kendo-form-spacer #{$kendo-form-spacer} );
+        padding: var( --kendo-form-spacer, #{$kendo-form-spacer} );
 
         fieldset {
             border-width: 1px 0 0;

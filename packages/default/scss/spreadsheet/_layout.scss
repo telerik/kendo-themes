@@ -88,7 +88,7 @@
         [data-tool="merge"],
         [data-tool="freeze"] {
             width: auto;
-            min-width: calc( #{$form-line-height} * 1em );
+            min-width: calc( #{$kendo-form-line-height} * 1em );
         }
 
         .k-color-picker {
