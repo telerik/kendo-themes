@@ -43,27 +43,27 @@
                 "secondary": {
                     "name": "Secondary",
                     "type": "color",
-                    "value": "#f6f6f6"
+                    "value": "#666666"
                 },
                 "info": {
                     "name": "Info",
                     "type": "color",
-                    "value": "#3e80ed"
+                    "value": "#0058e9"
                 },
                 "success": {
                     "name": "Success",
                     "type": "color",
-                    "value": "#5ec232"
+                    "value": "#37b400"
                 },
                 "warning": {
                     "name": "Warning",
                     "type": "color",
-                    "value": "#fdce3e"
+                    "value": "#ffc000"
                 },
                 "error": {
                     "name": "Error",
                     "type": "color",
-                    "value": "#d51923"
+                    "value": "#f31700"
                 }
             }
         },

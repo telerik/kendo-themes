@@ -2564,14 +2564,14 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Color</td>
 <td>
 
-`$base-text`
+`$kendo-button-bg`
 
 </td>
 <td>
 
-<span class="color-preview" style="background-color: #212529"></span>
+<span class="color-preview" style="background-color: #e4e7eb"></span>
 
-`#212529`
+`#e4e7eb`
 
 </td>
 </tr>
@@ -2595,7 +2595,7 @@ The following table lists the available variables for customizing the Bootstrap 
 </td>
 <td>
 
-`("base": #212529, "error": #dc3545, "info": #0dcaf0, "warning": #ffc107, "success": #198754)`
+`("base": #e4e7eb, "error": #dc3545, "info": #0dcaf0, "warning": #ffc107, "success": #198754)`
 
 </td>
 </tr>
@@ -2608,14 +2608,14 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Color</td>
 <td>
 
-`k-try-tint( $kendo-chip-base-bg, 92% )`
+`$kendo-chip-base-bg`
 
 </td>
 <td>
 
-<span class="color-preview" style="background-color: #edeeee"></span>
+<span class="color-preview" style="background-color: #e4e7eb"></span>
 
-`#edeeee`
+`#e4e7eb`
 
 </td>
 </tr>
@@ -2628,7 +2628,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Color</td>
 <td>
 
-`$kendo-chip-base-bg`
+`$kendo-button-text`
 
 </td>
 <td>
@@ -2648,14 +2648,14 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Color</td>
 <td>
 
-`k-try-tint( $kendo-chip-base-bg, 70% )`
+`$kendo-button-border`
 
 </td>
 <td>
 
-<span class="color-preview" style="background-color: #bcbebf"></span>
+<span class="color-preview" style="background-color: #e4e7eb"></span>
 
-`#bcbebf`
+`#e4e7eb`
 
 </td>
 </tr>
@@ -2673,7 +2673,7 @@ The following table lists the available variables for customizing the Bootstrap 
 </td>
 <td>
 
-`0 0 0 2px rgba(33, 37, 41, 0.16)`
+`0 0 0 2px rgba(228, 231, 235, 0.16)`
 
 </td>
 </tr>
@@ -2682,18 +2682,34 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$kendo-chip-solid-focus-bg</td>
-    <td>Color</td>
+    <td>$kendo-chip-solid-gradient</td>
+    <td>Null</td>
 <td>
 
-`k-try-tint( $kendo-chip-base-bg, 92% )`
+`$kendo-button-gradient`
 
 </td>
 <td>
 
-<span class="color-preview" style="background-color: #edeeee"></span>
+`null`
 
-`#edeeee`
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base gradient of solid chip.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chip-solid-focus-bg</td>
+    <td>Null</td>
+<td>
+
+`null`
+
+</td>
+<td>
+
+`null`
 
 </td>
 </tr>
@@ -2724,14 +2740,14 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Color</td>
 <td>
 
-`k-try-tint( $kendo-chip-base-bg, 84% )`
+`$kendo-button-hover-bg`
 
 </td>
 <td>
 
-<span class="color-preview" style="background-color: #dbdcdd"></span>
+<span class="color-preview" style="background-color: #ced3db"></span>
 
-`#dbdcdd`
+`#ced3db`
 
 </td>
 </tr>
@@ -2762,14 +2778,14 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Color</td>
 <td>
 
-`k-try-tint( $kendo-chip-base-bg, 76% )`
+`$kendo-button-active-bg`
 
 </td>
 <td>
 
-<span class="color-preview" style="background-color: #cacbcc"></span>
+<span class="color-preview" style="background-color: #c7cdd5"></span>
 
-`#cacbcc`
+`#c7cdd5`
 
 </td>
 </tr>
@@ -2820,7 +2836,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Color</td>
 <td>
 
-`$kendo-chip-base-bg`
+`$kendo-chip-solid-text`
 
 </td>
 <td>
@@ -2840,7 +2856,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Color</td>
 <td>
 
-`$kendo-chip-base-bg`
+`$kendo-chip-outline-text`
 
 </td>
 <td>
@@ -2865,7 +2881,7 @@ The following table lists the available variables for customizing the Bootstrap 
 </td>
 <td>
 
-`0 0 0 2px rgba(33, 37, 41, 0.16)`
+`0 0 0 2px rgba(228, 231, 235, 0.16)`
 
 </td>
 </tr>
@@ -2878,7 +2894,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Color</td>
 <td>
 
-`$kendo-chip-base-bg`
+`$kendo-chip-outline-text`
 
 </td>
 <td>
@@ -2898,7 +2914,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Color</td>
 <td>
 
-`k-contrast-color( $kendo-chip-base-bg )`
+`k-contrast-color( $kendo-chip-outline-hover-bg )`
 
 </td>
 <td>
