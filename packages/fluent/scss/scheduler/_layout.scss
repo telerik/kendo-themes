@@ -397,6 +397,10 @@
         border-color: inherit;
         position: relative;
         overflow: auto;
+
+        &:focus {
+            outline: none;
+        }
     }
 
 
