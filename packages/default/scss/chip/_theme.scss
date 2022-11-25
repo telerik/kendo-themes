@@ -8,7 +8,8 @@
                 @include fill(
                     $kendo-chip-solid-text,
                     $kendo-chip-solid-bg,
-                    $kendo-chip-solid-border
+                    $kendo-chip-solid-border,
+                    $kendo-chip-solid-gradient
                 );
 
                 &:focus,
@@ -27,24 +28,24 @@
                 }
             } @else {
                 @include fill(
-                    $color,
-                    try-tint( $color, 92% ),
-                    try-tint( $color, 70% )
+                    try-shade( $color, 65% ),
+                    try-tint( $color, 80% ),
+                    try-tint( $color, 25% ),
+                    $kendo-chip-solid-gradient
                 );
 
                 &:focus,
                 &.k-focus {
                     @include box-shadow( 0 0 0 2px rgba( $color, .16 ) );
-                    @include fill( $bg: try-tint( $color, 92% ) );
                 }
 
                 &:hover,
                 &.k-hover {
-                    @include fill( $bg: try-tint($color, 84% ) );
+                    @include fill( $bg: try-tint($color, 65% ) );
                 }
 
                 &.k-selected {
-                    @include fill( $bg: try-tint( $color, 76% ) );
+                    @include fill( $bg: try-tint( $color, 50% ) );
                 }
             }
         }
@@ -80,30 +81,56 @@
                         $bg: $kendo-chip-outline-selected-bg
                     );
                 }
-            } @else {
+            } @else if ($name == "warning") {
                 @include fill(
-                    $color,
-                    $white,
-                    $color
+                    if( $dark-theme, tint($color, 25%), $kendo-chip-outline-text),
+                    if( $dark-theme, $black, $white ),
+                    if( $dark-theme, tint($color, 25%), $color)
                 );
 
                 &:focus,
                 &.k-focus {
-                    @include box-shadow( 0 0 0 2px rgba( $color, .16 ) );
+                    @include box-shadow( 0 0 0 2px if( $dark-theme, rgba( tint( $color, 50% ), .32 ), rgba( $color, .16 )) );
                 }
 
                 &:hover,
                 &.k-hover {
                     @include fill(
-                        $color: contrast-wcag( $color ),
-                        $bg: $color
+                        $color: if( $dark-theme, contrast-wcag( $color ), try-shade( $color, 80% ) ) ,
+                        $bg: if( $dark-theme, tint($color, 25%), $color)
                     );
                 }
 
                 &.k-selected {
                     @include fill(
-                        $color: contrast-wcag( $color ),
-                        $bg: $color
+                        $color: if( $dark-theme, contrast-wcag( $color ), try-shade( $color, 80% ) ) ,
+                        $bg: if( $dark-theme, tint($color, 25%), $color)
+                    );
+                }
+            } @else {
+                @include fill(
+                    try-shade( $color, 25% ),
+                    if( $dark-theme, $black, $white ),
+                    try-shade( $color, 25% )
+                );
+
+                &:focus,
+                &.k-focus {
+                    @include box-shadow( 0 0 0 2px if( $dark-theme, rgba( tint( $color, 50% ), .32 ), rgba( $color, .16 )) );
+                }
+
+                &:hover,
+                &.k-hover {
+                    @include fill(
+                        $color: contrast-wcag( try-shade( $color, 25% ) ),
+                        $bg: try-shade( $color, 25% )
+                    );
+                }
+
+                &.k-selected {
+                    @include fill(
+                        $color: contrast-wcag( try-shade( $color, 25% ) ),
+                        $bg: try-shade( $color, 25% )
                     );
                 }
             }
