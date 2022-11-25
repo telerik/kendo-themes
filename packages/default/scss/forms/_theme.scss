@@ -6,12 +6,12 @@
 
         fieldset {
             legend {
-                @include fill( $color: $fieldset-legend-text );
+                @include fill( $color: $kendo-fieldset-legend-text );
             }
         }
 
         .k-form-legend {
-            @include fill( $border: $form-legend-border-color );
+            @include fill( $border: $kendo-form-legend-border-color );
         }
 
         .k-field-info {
@@ -30,7 +30,7 @@
     }
 
     .k-form-separator {
-        @include fill( $border: $form-separator-border-color );
+        @include fill( $border: $kendo-form-separator-border-color );
     }
 
 }

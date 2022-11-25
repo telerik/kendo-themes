@@ -84,13 +84,19 @@ $kendo-form-hint-margin-top: map-get( $kendo-spacing, 1 ) !default;
 /// @group form
 $kendo-form-hint-text: get-theme-color-var( neutral-130 );
 
-/// The top margin of the form field
+/// Form row small size spacing
 /// @group form
-$kendo-form-field-margin-top: map-get( $kendo-spacing, 3 ) !default;
+$kendo-form-rows-spacing-sm: map-get( $kendo-spacing, 3 ) !default;
+/// Form row medium size spacing
+/// @group form
+$kendo-form-rows-spacing-md: $kendo-form-rows-spacing-sm !default;
+/// Form row large size spacing
+/// @group form
+$kendo-form-rows-spacing-lg: $kendo-form-rows-spacing-sm !default;
 
 /// The margin of the form separator
 /// @group form
-$kendo-form-separator-margin: $kendo-form-field-margin-top 0 0 !default;
+$kendo-form-separator-margin: map-get( $kendo-spacing, 3 ) 0 0 !default;
 
 /// The border color of the form separator
 /// @group form
@@ -141,3 +147,16 @@ $kendo-fieldset-border: initial !default;
 $kendo-fieldset-legend-bg: transparent !default;
 $kendo-fieldset-legend-text: get-theme-color-var( neutral-130 ) !default;
 $kendo-fieldset-legend-border: initial !default;
+
+// Sizes
+$kendo-form-sizes: (
+    sm: (
+        form-rows-spacing: $kendo-form-rows-spacing-sm
+    ),
+    md: (
+        form-rows-spacing: $kendo-form-rows-spacing-md
+    ),
+    lg: (
+        form-rows-spacing: $kendo-form-rows-spacing-lg
+    )
+) !default;

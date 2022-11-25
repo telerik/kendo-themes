@@ -645,7 +645,7 @@
             height: $kendo-button-calc-size;
             box-sizing: border-box;
             outline: 0;
-            line-height: $form-line-height;
+            line-height: $kendo-form-line-height;
             display: flex;
             align-items: center;
             align-content: center;
@@ -718,7 +718,7 @@
 
     // Filter row
     .k-filter-row {
-        line-height: $form-line-height;
+        line-height: $kendo-form-line-height;
 
         td,
         th {
