@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.12.0](https://github.com/telerik/kendo-themes/compare/v5.11.0...v5.12.0) (2022-11-28)
+
+
+### Bug Fixes
+
+* correct theme colors in default main and main-dark swatches ([d256ea4](https://github.com/telerik/kendo-themes/commit/d256ea4e235f94fdb561c8aef00fba324e9ee7fd))
+* **popover:** set height to inner element to display callout correctly and add a visual test ([e0b72a1](https://github.com/telerik/kendo-themes/commit/e0b72a1d006da9ed93e228510803e2ca2a8f6797))
+* **scheduler:** remove default browser focus outline ([b523f1f](https://github.com/telerik/kendo-themes/commit/b523f1f95cd0cd83ee9ed1621241c6c1c7b9492a))
+* **scheduler:** remove default browser focus outline of the k-scheduler-content element ([7a0df77](https://github.com/telerik/kendo-themes/commit/7a0df770023c03fcfa74b76e18cf44aafdc935d3))
+* **switch:** missing border utility dependency ([d569cf3](https://github.com/telerik/kendo-themes/commit/d569cf3d2274ea0d2c196170c38efff299eca1b3))
+* **treelist:** missing text utility dependency ([2ffbcc2](https://github.com/telerik/kendo-themes/commit/2ffbcc2b8b89ed9679b324b90b2d76dd9aefc475))
+
+
+### Features
+
+* **chip:** update chip colors based on design revision ([4c1abac](https://github.com/telerik/kendo-themes/commit/4c1abac0e02e8f58b4731cd6799b3d932707265f))
+* **icons:** add k-icon-action class ([9e35f34](https://github.com/telerik/kendo-themes/commit/9e35f341f568c7013cb80f24daf00149d29476c6))
+
+
+
+
+
 # [5.11.0](https://github.com/telerik/kendo-themes/compare/v5.10.0...v5.11.0) (2022-11-07)
 
 

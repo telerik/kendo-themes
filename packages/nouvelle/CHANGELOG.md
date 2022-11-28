@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.12.0](https://github.com/telerik/kendo-themes/compare/v5.11.0...v5.12.0) (2022-11-28)
+
+
+### Bug Fixes
+
+* **core:** add missing styles for sized spacer ([2e76d19](https://github.com/telerik/kendo-themes/commit/2e76d195a07f277ebfb30b972ef42f1494e6b351))
+
+
+### Features
+
+* **nouvelle:** add styles for appbar component in nouvelle theme ([65c4206](https://github.com/telerik/kendo-themes/commit/65c4206d042a56606742ffe04991b983a8986743))
+
+
+
+
+
 # [5.11.0](https://github.com/telerik/kendo-themes/compare/v5.10.0...v5.11.0) (2022-11-07)
 
 

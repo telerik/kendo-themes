@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.12.0](https://github.com/telerik/kendo-themes/compare/v5.11.0...v5.12.0) (2022-11-28)
+
+
+### Bug Fixes
+
+* **popover:** set height to inner element to display callout correctly and add a visual test ([e0b72a1](https://github.com/telerik/kendo-themes/commit/e0b72a1d006da9ed93e228510803e2ca2a8f6797))
+* **scheduler:** remove default browser focus outline ([b523f1f](https://github.com/telerik/kendo-themes/commit/b523f1f95cd0cd83ee9ed1621241c6c1c7b9492a))
+* **scheduler:** remove default browser focus outline of the k-scheduler-content element ([7a0df77](https://github.com/telerik/kendo-themes/commit/7a0df770023c03fcfa74b76e18cf44aafdc935d3))
+
+
+### Features
+
+* **fluent:** expose sass variables for customization ([f7ac97d](https://github.com/telerik/kendo-themes/commit/f7ac97d4769a4dd77a7267922d8610befa608fb9))
+* **icons:** add k-icon-action class ([9e35f34](https://github.com/telerik/kendo-themes/commit/9e35f341f568c7013cb80f24daf00149d29476c6))
+
+
+
+
+
 # [5.11.0](https://github.com/telerik/kendo-themes/compare/v5.10.0...v5.11.0) (2022-11-07)
 
 
