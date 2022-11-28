@@ -35,6 +35,10 @@ $kendo-chip-line-height-sm: $kendo-chip-line-height !default;
 $kendo-chip-line-height-md: $kendo-chip-line-height !default;
 $kendo-chip-line-height-lg: $kendo-chip-line-height !default;
 
+/// Calculated height of the chip.
+/// @group chip
+$kendo-chip-calc-size: calc( #{$kendo-chip-line-height * 1em} + #{$kendo-chip-padding-y * 2} + #{$kendo-chip-border-width * 2} ) !default;
+
 /// Sizes map for the chip.
 /// @group chip
 $kendo-chip-sizes: (

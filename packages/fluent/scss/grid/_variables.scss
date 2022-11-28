@@ -1,6 +1,7 @@
 @use "../core/color-system" as *;
 @use "../core/_variables.scss" as *;
 @use "../button/_variables.scss" as *;
+@use "../chip/_variables.scss" as *;
 @use "../table/_variables.scss" as *;
 @use "../toolbar/_variables.scss" as *;
 @use "../list/_variables.scss" as *;
@@ -283,7 +284,7 @@ $kendo-grid-group-dropclue-line-size: 1px !default;
 $kendo-grid-group-dropclue-dot-size: $kendo-grid-group-dropclue-size !default;
 /// Height of the grid  group drop clue.
 /// @group grid
-$kendo-grid-group-dropclue-height: calc( #{$kendo-button-calc-size} + #{$kendo-grid-group-dropclue-size} ) !default;
+$kendo-grid-group-dropclue-height: calc( #{$kendo-chip-calc-size} + #{$kendo-grid-group-dropclue-size} ) !default;
 /// Top offset of the grid group drop clue.
 /// @group grid
 $kendo-grid-group-dropclue-top: 2px !default;

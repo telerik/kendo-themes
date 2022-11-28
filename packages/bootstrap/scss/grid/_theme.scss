@@ -114,15 +114,6 @@
     .k-grouping-header {
         @include fill( $grid-header-text, $grid-header-bg, $grid-header-border );
     }
-    .k-grouping-header .k-group-indicator {
-        @include fill(
-            $kendo-button-text,
-            $kendo-button-bg,
-            $kendo-button-border,
-            $kendo-button-gradient
-        );
-    }
-
 
     // Header
     .k-grid-header {

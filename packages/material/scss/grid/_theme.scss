@@ -189,18 +189,6 @@
         border-left-color: $grid-border;
     }
 
-    .k-grouping-header .k-group-indicator {
-        background-color: $grid-selected-bg;
-
-        .k-link {
-            color: $grid-text;
-
-            .k-icon {
-                color: $grid-header-text;
-            }
-        }
-    }
-
     .k-group-footer {
         td,
         .k-grid-footer-sticky {

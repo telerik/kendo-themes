@@ -6,7 +6,7 @@
 
     $grid-group-dropclue-size: 6px;
     $grid-group-dropclue-line-size: $grid-group-dropclue-size / 3;
-    $grid-group-dropclue-height: $kendo-button-calc-size !default;
+    $grid-group-dropclue-height: calc( #{$kendo-chip-calc-size} + #{$grid-group-dropclue-size}) !default;
     $grid-group-dropclue-top: 3px !default;
 
     $grid-row-inner-height: calc( #{$line-height-em} + #{$table-cell-padding-y * 2} );
@@ -217,26 +217,6 @@
                 border-width: 0 0 0 $grid-cell-vertical-border-width;
             }
 
-            .k-group-indicator {
-                .k-button-flat {
-                    margin-left: -( $icon-spacing / 2 );
-                    margin-right: ( 2 * $icon-spacing );
-                }
-
-                .k-link .k-icon {
-                    margin-left: $icon-spacing;
-                    margin-right: -( $icon-spacing / 2);
-                }
-            }
-            .k-group-indicator {
-                margin-right: 0;
-                margin-left: ( $grid-group-indicator-gap / 2 );
-            }
-
-            .k-group-indicator + .k-group-indicator {
-                margin-right: ( $grid-group-indicator-gap / 2 );
-            }
-
             .k-grid-content-locked,
             .k-grid-footer-locked,
             .k-grid-header-locked {
@@ -423,90 +403,20 @@
         border-style: solid;
         border-color: inherit;
         white-space: normal;
-        flex-shrink: 0;
-        display: block;
+        display: flex;
+        align-items: center;
+        gap: $grid-grouping-header-padding-y;
         position: relative;
 
         &::before {
             content: "";
-            height: $kendo-button-calc-size;
+            height: $kendo-chip-calc-size;
             display: inline-block;
             vertical-align: middle;
-        }
-    }
-
-    .k-grouping-header-flex {
-        display: flex;
-        flex-flow: row wrap;
-        align-items: center;
-        gap: $grid-grouping-header-padding-y;
-
-        &::before {
             margin-left: -$grid-grouping-header-padding-y;
         }
-
-        .k-group-indicator {
-            margin: 0;
-        }
     }
 
-    // override for angular
-    .k-grid .k-indicator-container {
-        margin: -$grid-grouping-header-padding-y 0;
-        padding: $grid-grouping-header-padding-y 0;
-    }
-    .k-grid .k-indicator-container:last-child {
-        flex-grow: 1;
-    }
-
-    .k-group-indicator {
-        @include border-radius( $grid-group-indicator-border-radius );
-        margin: 0;
-        padding: $kendo-button-padding-y $kendo-button-padding-x;
-        border-width: 1px;
-        border-style: solid;
-        display: inline-flex;
-        flex-direction: row;
-        align-items: center;
-        align-content: center;
-        vertical-align: top;
-        box-sizing: border-box;
-
-        .k-link,
-        .k-button-flat {
-            padding: 0;
-            border-width: 0;
-            display: inline-flex;
-            align-items: center;
-        }
-
-        .k-link .k-icon {
-            margin-left: -( $icon-spacing / 2);
-            margin-right: $icon-spacing;
-        }
-
-        .k-button-flat {
-            margin-left: ( 2 * $icon-spacing );
-            margin-right: -( $icon-spacing / 2 );
-            padding: 0;
-            width: auto;
-            height: auto;
-            opacity: $grid-group-indicator-button-opacity;
-
-            &::before,
-            &::after {
-                display: none;
-            }
-
-            &:hover {
-                opacity: $grid-group-indicator-button-hover-opacity;
-            }
-        }
-    }
-
-    .k-group-indicator + .k-group-indicator {
-        margin-left: ( $grid-group-indicator-gap / 2 );
-    }
 
     .k-grouping-dropclue {
         width: ($grid-group-dropclue-size * 2);
