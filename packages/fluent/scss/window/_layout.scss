@@ -67,7 +67,7 @@
 
 
     // Actions
-    .k-window-actions {
+    .k-window-titlebar-actions {
         margin: -5em 0;
         margin-inline-end: ( $kendo-window-titlebar-padding-y - $kendo-window-titlebar-padding-x );
         line-height: 1;
@@ -78,7 +78,7 @@
         align-items: center;
         vertical-align: top;
     }
-    .k-window-action {
+    .k-window-titlebar-action {
         flex-shrink: 0;
         opacity: var( --kendo-window-action-opacity, #{$kendo-window-action-opacity} );
 
@@ -93,7 +93,7 @@
     .k-window-content,
     .k-prompt-container {
         padding-inline: var( --kendo-window-inner-padding-x, #{$kendo-window-inner-padding-x} );
-        padding-block: 0 var( --kendo-window-inner-padding-y, #{$kendo-window-inner-padding-y} );
+        padding-block: var( --kendo-window-inner-padding-y, #{$kendo-window-inner-padding-y} );
         border-width: 0;
         border-color: inherit;
         color: inherit;
@@ -103,14 +103,9 @@
         position: relative;
         flex: 1 1 auto;
     }
+
     .k-window-content + .k-prompt-container {
-        margin-top: calc( -1 * var( --kendo-window-inner-padding-y, #{$kendo-window-inner-padding-y} ) / 2 );
-    }
-    .k-window-content:first-child {
-        padding-top: clamp( var( --kendo-window-inner-padding-y, #{$kendo-window-inner-padding-y} ), var( --kendo-window-titlebar-padding-y, #{$kendo-window-titlebar-padding-y} ), var( --kendo-window-titlebar-padding-y, #{$kendo-window-titlebar-padding-y} ));
-    }
-    .k-window-content:last-child {
-        padding-bottom: clamp( var( --kendo-window-inner-padding-y, #{$kendo-window-inner-padding-y} ), var( --kendo-window-titlebar-padding-y, #{$kendo-window-titlebar-padding-y} ), var( --kendo-window-titlebar-padding-y, #{$kendo-window-titlebar-padding-y} ));
+        margin-block-start: calc( -1 * var( --kendo-window-inner-padding-y, #{$kendo-window-inner-padding-y} ) / 2 );
     }
 
     .k-window-iframecontent {
@@ -126,8 +121,7 @@
     }
 
     // Buttons Layout
-    .k-window-buttons,
-    .k-window-buttongroup {
+    .k-window-actions {
         @include border-bottom-radius( var( --kendo-window-border-radius, #{$kendo-window-border-radius} ) );
         padding-inline: var( --kendo-window-buttongroup-padding-x, #{$kendo-window-buttongroup-padding-x} );
         padding-block: 0 var( --kendo-window-buttongroup-padding-y, #{$kendo-window-buttongroup-padding-y} );
