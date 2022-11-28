@@ -34,8 +34,8 @@ jobs:
       - name: Checkout branch
         uses: actions/checkout@v3
 
-      - name: Print Firefox version
-        run: firefox --version
+      - name: Setup Firefox
+        uses: browser-actions/setup-firefox@latest
 
       - name: Download artifacts
         uses: actions/download-artifact@v3
