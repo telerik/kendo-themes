@@ -31,11 +31,31 @@ jobs:
         theme: [default, bootstrap, material, classic, nouvelle, fluent]
 
     steps:
+
+      - name: Print Firefox version
+        run: firefox --version
+
       - name: Checkout branch
         uses: actions/checkout@v3
 
-      - name: Setup Firefox
-        uses: browser-actions/setup-firefox@latest
+      - name: Setup node
+        id: setup-node
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Use cache for root node_modules
+        id: cache-root-node_modules
+        uses: actions/cache@v3
+        env:
+          cache-name: root-node_modules
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-node-14-${{ env.cache-name }}-${{ hashFiles('package-lock.json') }}
+
+      - name: Install
+        if: steps.cache-root-node_modules.outputs.cache-hit != 'true'
+        run: npm ci --no-audit --no-fund
 
       - name: Download artifacts
         uses: actions/download-artifact@v3
