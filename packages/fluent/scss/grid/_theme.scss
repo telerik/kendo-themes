@@ -46,21 +46,6 @@
         @include fill( $bg: var( --kendo-grid-bg, #{$kendo-grid-bg} ) );
     }
 
-    .k-grouping-header .k-group-indicator {
-        @include fill(
-            var( --kendo-grid-group-indicator-text, #{$kendo-grid-group-indicator-text} ),
-            var( --kendo-grid-group-indicator-bg, #{$kendo-grid-group-indicator-bg} ),
-            var( --kendo-grid-group-indicator-border, #{$kendo-grid-group-indicator-border} )
-        );
-
-        .k-icon {
-            @include fill(
-                $color: var( --kendo-grid-group-indicator-icon-text, #{$kendo-grid-group-indicator-icon-text} )
-            );
-        }
-
-    }
-
     .k-group-footer td,
     .k-grouping-row td,
     tbody .k-group-cell {
