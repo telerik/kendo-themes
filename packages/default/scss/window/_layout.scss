@@ -73,7 +73,7 @@
 
 
     // Actions
-    .k-window-actions {
+    .k-window-titlebar-actions {
         margin: -5em 0;
         margin-inline-end: calc( #{$kendo-window-titlebar-padding-y} - #{$kendo-window-titlebar-padding-x} );
         line-height: 1;
@@ -84,11 +84,11 @@
         align-items: center;
         vertical-align: top;
     }
-    .k-window-action {
+    .k-window-titlebar-action {
         flex-shrink: 0;
         opacity: $kendo-window-action-opacity;
     }
-    .k-window-action:hover {
+    .k-window-titlebar-action:hover {
         opacity: $kendo-window-action-hover-opacity;
     }
 
@@ -129,8 +129,7 @@
     }
 
     // Buttons Layout
-    .k-window-buttons,
-    .k-window-buttongroup {
+    .k-window-actions {
         @include border-bottom-radius( $kendo-window-border-radius );
         padding: $kendo-window-buttongroup-padding-y $kendo-window-buttongroup-padding-x;
         border-width: $kendo-window-buttongroup-border-width 0 0;
