@@ -24,20 +24,28 @@ jobs:
     steps:
 
       - name: Checkout branch
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           ref: develop
 
       - name: Setup node
-        uses: actions/setup-node@v2
+        id: setup-node
+        uses: actions/setup-node@v3
         with:
-          cache: 'npm'
           node-version: 14.x
 
       - name: Setup nuget
         uses: nuget/setup-nuget@v1
 
+      - name: Use cache for root node_modules
+        id: cache-root-node_modules
+        uses: actions/cache@v3
+        with:
+          path: node_modules
+          key: root-node_modules-${{ steps.setup-node.outputs.node-version }}-${{ hashFiles('package-lock.json') }}
+
       - name: Install
+        if: steps.cache-root-node_modules.outputs.cache-hit != 'true'
         run: npm ci --no-audit --no-fund
 
       - name: Bootstrap
