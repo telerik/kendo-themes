@@ -23,9 +23,6 @@ find "$THEME_DIR" -name '*.html' -print0 | xargs -0 sed -i -E \
     -e "s#/packages/default/dist/#../assets/#" \
     -e "s#/packages/html/assets/#../assets/#"
 
-# capture screenshots. see .pastshotsrc for config options
-npm install --no-save pastshots@1.6 optipng
-
 npx pastshots \
     --serve "$THEME_DIR/**/*.html" \
     --port $((RANDOM % 1000 + 8000)) \
