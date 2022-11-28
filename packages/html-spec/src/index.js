@@ -110,6 +110,7 @@ module.exports = {
     // ...require('./panelbar'),
     // ...require('./splitter'),
     // ...require('./tilelayout'),
+    ...require('./grid-layout'),
 
     // Data management
     // ...require('./grid'),
