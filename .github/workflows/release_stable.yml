@@ -42,9 +42,10 @@ jobs:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Install
-        run: |
-          npm ci
-          npm run bootstrap
+        run: npm ci --no-audit --no-fund
+
+      - name: Bootstrap
+        run: npm run bootstrap
 
       - name: Build themes for dist
         run: |
