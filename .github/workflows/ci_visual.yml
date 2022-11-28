@@ -37,6 +37,15 @@ jobs:
       - name: Setup Firefox
         uses: browser-actions/setup-firefox@latest
 
+      - name: Setup node
+        uses: actions/setup-node@v3
+        with:
+          cache: 'npm'
+          node-version: 14.x
+
+      - name: Install
+        run: npm ci --no-audit --no-fund
+
       - name: Download artifacts
         uses: actions/download-artifact@v3
         with:
