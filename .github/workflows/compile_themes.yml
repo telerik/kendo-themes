@@ -24,9 +24,10 @@ jobs:
           node-version: 14.x
 
       - name: Install
-        run: |
-          npm ci
-          npx lerna bootstrap --ignore @progress/kendo-themes-html
+        run: npm ci --no-audit --no-fund
+
+      - name: Bootstrap
+        run: npx lerna bootstrap --ignore @progress/kendo-themes-html
 
       - name: Build test assets
         run: |
