@@ -2,12 +2,12 @@ module.exports = {
     extends: [
         'sass-build:recommended'
     ],
-    implementation: 'sass-embedded',
-    api: 'modern',
-    files: [
+    build: [
         {
             file: 'scss/all.scss',
-            outFile: 'dist/all.css'
+            outFile: 'dist/all.css',
+            compiler: 'sass-embedded',
+            api: 'modern',
         }
     ]
 };

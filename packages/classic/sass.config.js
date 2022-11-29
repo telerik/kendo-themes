@@ -2,7 +2,7 @@ module.exports = {
     extends: [
         'sass-build:recommended'
     ],
-    files: [
+    build: [
         {
             file: 'scss/all.scss',
             outFile: 'dist/all.css'

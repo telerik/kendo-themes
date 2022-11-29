@@ -3,7 +3,6 @@ const path = require("path");
 const cp = require("child_process");
 
 const glob = require("glob");
-const fse = require("fs-extra");
 const gulp = require("gulp");
 const sassdoc = require("sassdoc");
 const dartSass = require("sass");
@@ -234,8 +233,7 @@ function resolveVars() {
         let variablesScss = path.resolve( cwd, `${theme}/dist/variables.scss` );
         let content = {};
 
-        fse.ensureFileSync( variablesJson );
-        fse.copyFileSync('./lib/variables.scss', variablesScss );
+        fs.copyFileSync('./lib/variables.scss', variablesScss );
 
         dartSass.compile(variablesScss, {
             functions: {
