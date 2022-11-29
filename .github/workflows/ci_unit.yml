@@ -6,10 +6,8 @@ defaults:
 
 on:
   push:
-    branches-ignore:
-      - 'master'
-      - 'develop'
-      - 'v4-dev'
+    branches:
+      - '**'
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
