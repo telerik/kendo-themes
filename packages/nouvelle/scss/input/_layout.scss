@@ -53,7 +53,9 @@
     textarea.k-textarea {
         padding-inline: var( --kendo-input-padding-x, 0 );
         padding-block: var( --kendo-input-padding-y, 0 );
-        -webkit-appearance: none;
+    }
+    textarea.k-textarea {
+        overflow: auto;
     }
 
 
