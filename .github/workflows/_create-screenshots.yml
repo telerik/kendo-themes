@@ -1,16 +1,21 @@
-name: Create snapshots
+name: Create screenshots
 
 on:
   workflow_call:
 
 concurrency:
-  group: create-snapshots-${{ github.ref }}
+  group: create-screenshots-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
 
-  create-snapshots:
+  create-screenshots:
+    name: Create screenshots
     runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        theme: [default, bootstrap, material, classic, nouvelle, fluent]
 
     steps:
 
@@ -37,25 +42,22 @@ jobs:
         if: steps.cache-root-node_modules.outputs.cache-hit != 'true'
         run: npm ci --no-audit --no-fund
 
-      - name: Bootstrap
-        run: npx lerna bootstrap --scope @progress/kendo-themes-html
+      - name: Download artifacts
+        uses: actions/download-artifact@v3
+        with:
+          path: .tmp
 
-      - name: Build test assets
-        run: |
-          npm run build:scripts
-          npm run build:tests
+      - name: Unpack artifacts
+        run: find .tmp -name "*.tar" -type f -exec tar -xf {} \;
 
-      - name: Update markup snapshots
-        env:
-          HEADLESS: 'true'
-        run: |
-          ./build/create-snapshots.mjs
+      - name: Create screenshots
+        run: ./build/create-screenshots.sh ${{ matrix.theme }}
 
-      - name: Pack snapshots
-        run: tar --exclude tests/_output -cf snapshots.tar tests
+      - name: Pack screenshots
+        run: tar -cf screenshots-${{ matrix.theme }}.tar tests/_output/${{ matrix.theme }}
 
-      - name: Upload snapshots
+      - name: Upload screenshots
         uses: actions/upload-artifact@v3
         with:
-          name: snapshots
-          path: snapshots.tar
+          name: screenshots-${{ matrix.theme }}
+          path: screenshots-${{ matrix.theme }}.tar

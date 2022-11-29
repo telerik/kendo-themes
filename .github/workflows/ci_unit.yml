@@ -63,6 +63,7 @@ jobs:
         run: npm run build:scripts
 
   ci-unit:
+    # The name of the last job is used for the branch protection status check
     name: CI | Unit
     needs: run-tests
 

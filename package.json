@@ -65,6 +65,7 @@
     "docs": "gulp docs",
     "docs:check": "npm run docs && lerna exec -- git diff --exit-code --quiet -- docs/",
     "utils-docs": "gulp utils-docs",
+    "render-test-pages": "node ./scripts/render-test-pages.mjs",
     "create-screenshots": "./build/create-screenshots.sh",
     "serve-tests": "http-server ./ -c-1",
     "embed-assets": "gulp assets",
