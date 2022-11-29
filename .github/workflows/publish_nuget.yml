@@ -1,24 +1,25 @@
-name: CI | Dev
+name: Publish to nuget
 
 defaults:
   run:
     shell: bash
 
 on:
-  schedule:
-    # Run at 00:20 every Monday
-    - cron: '20 0 * * Mon'
   workflow_dispatch:
+  workflow_run:
+    workflows:
+      - "Publish to npm"
+      - "Publish to npm (dev)"
+    branches:
+      - master
+      - develop
+    types:
+      - completed
 
 jobs:
 
-  ci-nightly:
-
+  nuget-publish:
     runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [14.x, 16.x]
 
     steps:
 
@@ -31,7 +32,10 @@ jobs:
         id: setup-node
         uses: actions/setup-node@v3
         with:
-          node-version: ${{ matrix.node-version }}
+          node-version: 14.x
+
+      - name: Setup nuget
+        uses: nuget/setup-nuget@v1
 
       - name: Use cache for root node_modules
         id: cache-root-node_modules
@@ -47,28 +51,18 @@ jobs:
       - name: Bootstrap
         run: npm run bootstrap
 
-      - name: Lint scripts
+      - name: Build themes for dist
         run: |
-          npm run eslint
-          npm run check-types
+          npm run sass
+          npm run sass:swatches
 
-      - name: Lint styles
-        run: npm run sasslint
+      - name: Pack nuget
+        run: |
+          npx lerna run nuget-pack
 
-      - name: Build docs
-        run: npm run docs
-
-      - name: Check docs
-        run: npm run docs:check
-
-      - name: Ensure standalone build
-        run: npm run sass:standalone
-
-      - name: Build themes using node-sass (full)
-        run: npm run sass
-
-      - name: Build themes using node-sass (flat)
-        run: npm run sass:flat
-
-      - name: Build swatches using node-sass
-        run: npm run sass:swatches
+      - name: Push nuget
+        run: |
+          npx lerna run nuget-push
+        env:
+          NUGET_API_KEY: ${{ secrets.GH_TOKEN_PUBLISH }}
+          NUGET_FEED: "https://nuget.pkg.github.com/telerik/index.json"
