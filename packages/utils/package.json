@@ -38,9 +38,7 @@
     "postpublish": "echo 'no postpublish for utils'"
   },
   "dependencies": {
-    "@progress/kendo-theme-core": "^5.12.0"
+    "@progress/kendo-theme-core": "5.12.0"
   },
-  "devDependencies": {
-    "sass-build": "^1.1.0"
-  }
+  "devDependencies": {}
 }

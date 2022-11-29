@@ -46,12 +46,10 @@
   },
   "dependencies": {
     "@progress/kendo-font-icons": "^0.6.0",
-    "@progress/kendo-theme-core": "^5.12.0",
-    "@progress/kendo-theme-default": "^5.12.0",
-    "@progress/kendo-theme-utils": "^5.12.0",
-    "bootstrap": "^5.2.1"
+    "@progress/kendo-theme-core": "5.12.0",
+    "@progress/kendo-theme-default": "5.12.0",
+    "@progress/kendo-theme-utils": "5.12.0",
+    "bootstrap": "5.2.1"
   },
-  "devDependencies": {
-    "sass-build": "^1.1.0"
-  }
+  "devDependencies": {}
 }

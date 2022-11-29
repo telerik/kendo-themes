@@ -36,7 +36,5 @@
     "prepublishOnly": "node ../../scripts/themes-prepublish.js",
     "postpublish": "echo 'no postpublish for core theme'"
   },
-  "devDependencies": {
-    "sass-build": "^1.0.0"
-  }
+  "devDependencies": {}
 }
