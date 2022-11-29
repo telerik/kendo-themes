@@ -1,17 +1,16 @@
 @mixin kendo-popup--theme() {
 
     .k-popup {
-        @include fill(
-            var(--kenod-popup-text),
-            var(--kendo-popup-bg),
-            var(--kendo-popup-border)
-        );
-        box-shadow: var(--kendo-popup-shadow);
+        background-color: var( --kendo-popup-bg, #{k-if-var( $kendo-popup-bg, transparent )} );
+        color: var( --kendo-popup-text, #{k-if-var( $kendo-popup-text, inherit )} );
+        border-color: var( --kendo-popup-border, #{k-if-var( $kendo-popup-border, transparent )} );
+        box-shadow: var( --kendo-popup-shadow, #{k-if-var( $kendo-popup-shadow, none )} );
+        outline: var( --kendo-popup-outline, #{k-if-var( $kendo-popup-outline, 0 )} );
     }
 
 
-    .k-nodata {
-        color: rgba( $popup-text, .5 );
+    .k-no-data {
+        color: rgba( $kendo-popup-text, .5 );
     }
 
 }
