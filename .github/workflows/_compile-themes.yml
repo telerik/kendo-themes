@@ -9,7 +9,8 @@ concurrency:
 
 jobs:
 
-  create-themes:
+  compile-themes:
+    name: Compile themes
     runs-on: ubuntu-latest
 
     steps:
@@ -32,10 +33,12 @@ jobs:
 
       - name: Install
         if: steps.cache-root-node_modules.outputs.cache-hit != 'true'
-        run: npm ci --no-audit --no-fund
+        run: |
+          npm ci --no-audit --no-fund
 
       - name: Bootstrap
-        run: npx lerna bootstrap --ignore @progress/kendo-themes-html
+        run: |
+          npx lerna bootstrap --ignore @progress/kendo-themes-html
 
       - name: Build test assets
         run: |

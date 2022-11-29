@@ -8,79 +8,37 @@ on:
       - 'v4-dev'
 
 concurrency:
-  group: ${{ github.workflow }}-${{ github.ref }}
+  group: ci-visual-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
 
+  prime-cache:
+    name: Prime cache
+    uses: ./.github/workflows/_prime-cache.yml
+
   compile-themes:
     name: Compile themes
-    uses: ./.github/workflows/compile_themes.yml
+    uses: ./.github/workflows/_compile-themes.yml
+    needs: [ prime-cache ]
 
-  create-snapshots:
-    name: Create snapshots
-    uses: ./.github/workflows/create_snapshots.yml
+  render-test-pages:
+    name: Render test pages
+    uses: ./.github/workflows/_render-test-pages.yml
+    with:
+      force-render: NO
+      upload-policy: conditionally
+    needs: [ prime-cache ]
 
-  run-tests:
-    name: Run tests
-    runs-on: ubuntu-latest
-    needs: [ compile-themes, create-snapshots ]
-
-    strategy:
-      matrix:
-        theme: [default, bootstrap, material, classic, nouvelle, fluent]
-
-    steps:
-
-      - name: Print Firefox version
-        run: firefox --version
-
-      - name: Checkout branch
-        uses: actions/checkout@v3
-
-      - name: Setup node
-        id: setup-node
-        uses: actions/setup-node@v3
-        with:
-          node-version: 14.x
-
-      - name: Use cache for root node_modules
-        id: cache-root-node_modules
-        uses: actions/cache@v3
-        with:
-          path: node_modules
-          key: root-node_modules-${{ steps.setup-node.outputs.node-version }}-${{ hashFiles('package-lock.json') }}
-
-      - name: Install
-        if: steps.cache-root-node_modules.outputs.cache-hit != 'true'
-        run: npm ci --no-audit --no-fund
-
-      - name: Download artifacts
-        uses: actions/download-artifact@v3
-        with:
-          path: .tmp
-
-      - name: Unpack artifacts
-        run: find .tmp -name "*.tar" -type f -exec tar -xf {} \;
-
-      - name: Create screenshots
-        run: ./build/create-screenshots.sh ${{ matrix.theme }}
-
-      - name: Pack screenshots
-        run: tar -cf screenshots-${{ matrix.theme }}.tar tests/_output/${{ matrix.theme }}
-
-      - name: Upload screenshots
-        uses: actions/upload-artifact@v3
-        with:
-          name: screenshots-${{ matrix.theme }}
-          path: screenshots-${{ matrix.theme }}.tar
+  create-screenshots:
+    name: Create screenshots
+    uses: ./.github/workflows/_create-screenshots.yml
+    needs: [ prime-cache, compile-themes, render-test-pages ]
 
   detect-changes:
-    # The name of the last step is used for the branch protection status check
-    name: CI | Visual
-    needs: run-tests
-
+    name: Detect changes
     runs-on: ubuntu-latest
+    needs: [ render-test-pages, create-screenshots ]
 
     steps:
       - name: Checkout branch
@@ -124,3 +82,19 @@ jobs:
 
           commit=$(git rev-parse HEAD)
           ./build/mark-checks.sh $commit
+
+  ci-visual:
+    # The name of the last job is used for the branch protection status check
+    name: CI | Visual
+    needs: [ detect-changes ]
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      # IMPORTANT NOTE (31.10.2020)
+      #
+      # You can not set a workflow to be status check. The job is. Hence the trickery...
+
+      - name: Done
+        run: echo "Done!"
