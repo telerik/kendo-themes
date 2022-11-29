@@ -1,4 +1,4 @@
-name: Release stable channel
+name: Publish to npm
 
 defaults:
   run:

@@ -12,7 +12,7 @@ on:
         default: 'master'
 
   workflow_run:
-    workflows: [ "Release stable channel" ]
+    workflows: [ "Publish to npm" ]
     types: [ completed ]
 
 jobs:

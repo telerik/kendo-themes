@@ -1,25 +1,24 @@
-name: Publish to nuget
+name: CI | Weekly
 
 defaults:
   run:
     shell: bash
 
 on:
+  schedule:
+    # Run at 00:20 every Monday
+    - cron: '20 0 * * Mon'
   workflow_dispatch:
-  workflow_run:
-    workflows:
-      - "Release dev channel"
-      - "Release stable channel"
-    branches:
-      - master
-      - develop
-    types:
-      - completed
 
 jobs:
 
-  nuget-publish:
+  ci-nightly:
+
     runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [14.x, 16.x]
 
     steps:
 
@@ -32,10 +31,7 @@ jobs:
         id: setup-node
         uses: actions/setup-node@v3
         with:
-          node-version: 14.x
-
-      - name: Setup nuget
-        uses: nuget/setup-nuget@v1
+          node-version: ${{ matrix.node-version }}
 
       - name: Use cache for root node_modules
         id: cache-root-node_modules
@@ -51,18 +47,28 @@ jobs:
       - name: Bootstrap
         run: npm run bootstrap
 
-      - name: Build themes for dist
+      - name: Lint scripts
         run: |
-          npm run sass
-          npm run sass:swatches
+          npm run eslint
+          npm run check-types
 
-      - name: Pack nuget
-        run: |
-          npx lerna run nuget-pack
+      - name: Lint styles
+        run: npm run sasslint
 
-      - name: Push nuget
-        run: |
-          npx lerna run nuget-push
-        env:
-          NUGET_API_KEY: ${{ secrets.GH_TOKEN_PUBLISH }}
-          NUGET_FEED: "https://nuget.pkg.github.com/telerik/index.json"
+      - name: Build docs
+        run: npm run docs
+
+      - name: Check docs
+        run: npm run docs:check
+
+      - name: Ensure standalone build
+        run: npm run sass:standalone
+
+      - name: Build themes using node-sass (full)
+        run: npm run sass
+
+      - name: Build themes using node-sass (flat)
+        run: npm run sass:flat
+
+      - name: Build swatches using node-sass
+        run: npm run sass:swatches

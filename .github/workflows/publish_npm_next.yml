@@ -1,4 +1,4 @@
-name: Release dev channel
+name: Publish to npm (vNext)
 
 defaults:
   run:
@@ -7,14 +7,14 @@ defaults:
 on:
   workflow_dispatch:
   workflow_run:
-    workflows: ["CI | Dev"]
-    branches: [develop]
+    workflows: ["CI | Next"]
+    branches: [v5-dev]
     types:
       - completed
 
 jobs:
 
-  release-dev:
+  release-next:
 
     runs-on: ubuntu-latest
 
@@ -23,7 +23,7 @@ jobs:
       - name: Checkout branch
         uses: actions/checkout@v3
         with:
-          ref: develop
+          ref: v5-dev
           token: ${{ secrets.GH_TOKEN }}
 
       - name: Setup git
@@ -56,15 +56,14 @@ jobs:
 
       - name: Build themes for dist
         run: |
-          npm run sass
           npm run sass:flat
           npm run dist:swatches
 
       - name: Determine correct version to publish
         run: |
-          DEV_VERSION=$(npm info @progress/kendo-theme-default@dev version)
+          NEXT_VERSION=$(npm info @progress/kendo-theme-default@next version)
           LATEST_VERSION=$(npm info @progress/kendo-theme-default@latest version)
-          VERSION=$(node ./scripts/semver-dev-inc.js --dev $DEV_VERSION --latest $LATEST_VERSION)
+          VERSION=$(node ./scripts/semver-next-inc.js --next $NEXT_VERSION --latest $LATEST_VERSION)
           echo "Lerna should publish using $VERSION"
           echo "VERSION=$VERSION" >> $GITHUB_ENV
 
@@ -76,20 +75,8 @@ jobs:
 
       - name: Lerna publish
         run: |
-          npx lerna publish from-package --dist-tag dev
+          npx lerna publish from-package --dist-tag next
 
-      - name: Push release commit
+      - name: Push to GitHub
         run: |
-          git push origin develop:tmp-release-dev
-
-      - name: Mark checks as successful
-        run: |
-          commit=$(git rev-parse HEAD)
-          ./build/mark-checks.sh $commit
-        env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
-
-      - name: Push release commit to develop
-        run: |
-          git push origin develop
-          git push --delete origin tmp-release-dev
+          git push origin v5-dev --quiet > /dev/null 2>&1
