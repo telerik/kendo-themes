@@ -98,6 +98,9 @@
         padding-inline: var( --INTERNAL--kendo-input-padding-x, 0 );
         padding-block: var( --INTERNAL--kendo-input-padding-y, 0 );
     }
+    textarea.k-textarea {
+        overflow: auto;
+    }
 
 
     // Picker
