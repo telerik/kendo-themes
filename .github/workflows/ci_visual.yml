@@ -42,16 +42,14 @@ jobs:
         id: setup-node
         uses: actions/setup-node@v3
         with:
-          node-version: ${{ matrix.node-version }}
+          node-version: 14.x
 
       - name: Use cache for root node_modules
         id: cache-root-node_modules
         uses: actions/cache@v3
-        env:
-          cache-name: root-node_modules
         with:
           path: node_modules
-          key: ${{ runner.os }}-node-14-${{ env.cache-name }}-${{ hashFiles('package-lock.json') }}
+          key: root-node_modules-${{ steps.setup-node.outputs.node-version }}-${{ hashFiles('package-lock.json') }}
 
       - name: Install
         if: steps.cache-root-node_modules.outputs.cache-hit != 'true'
