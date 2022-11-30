@@ -1,21 +1,18 @@
 name: Publish to npm (dev)
 
-defaults:
-  run:
-    shell: bash
-
 on:
   workflow_dispatch:
   workflow_run:
-    workflows: ["CI | Weekly"]
-    branches: [develop]
+    workflows:
+      - "CI Weekly"
+    branches:
+      - develop
     types:
       - completed
 
 jobs:
 
   release-dev:
-
     runs-on: ubuntu-latest
 
     steps:

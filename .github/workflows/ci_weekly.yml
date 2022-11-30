@@ -1,8 +1,4 @@
-name: CI | Weekly
-
-defaults:
-  run:
-    shell: bash
+name: CI Weekly
 
 on:
   schedule:
@@ -13,7 +9,6 @@ on:
 jobs:
 
   ci-nightly:
-
     runs-on: ubuntu-latest
 
     strategy:
@@ -42,33 +37,53 @@ jobs:
 
       - name: Install
         if: steps.cache-root-node_modules.outputs.cache-hit != 'true'
-        run: npm ci --no-audit --no-fund
+        run: |
+          npm ci --no-audit --no-fund
 
       - name: Bootstrap
-        run: npm run bootstrap
+        run: |
+          npm run bootstrap
 
       - name: Lint scripts
         run: |
           npm run eslint
+
+      - name: Check types
+        run: |
           npm run check-types
 
+      - name: Build scripts
+        run: |
+          npm run build:scripts
+
+      - name: Build test pages
+        run: |
+          npm run build:tests
+
       - name: Lint styles
-        run: npm run sasslint
-
-      - name: Build docs
-        run: npm run docs
-
-      - name: Check docs
-        run: npm run docs:check
+        run: |
+          npm run sasslint
 
       - name: Ensure standalone build
-        run: npm run sass:standalone
+        run: |
+          npm run sass:standalone
 
       - name: Build themes using node-sass (full)
-        run: npm run sass
+        run: |
+          npm run sass
 
       - name: Build themes using node-sass (flat)
-        run: npm run sass:flat
+        run: |
+          npm run sass:flat
 
       - name: Build swatches using node-sass
-        run: npm run sass:swatches
+        run: |
+          npm run sass:swatches
+
+      - name: Build docs
+        run: |
+          npm run docs
+
+      - name: Check docs
+        run: |
+          npm run docs:check
