@@ -9,8 +9,7 @@ concurrency:
 
 jobs:
 
-  create-screenshots:
-    name: Create screenshots
+  run:
     runs-on: ubuntu-latest
 
     strategy:

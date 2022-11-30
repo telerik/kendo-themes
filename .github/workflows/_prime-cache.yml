@@ -10,7 +10,7 @@ concurrency:
 
 jobs:
 
-  prime-cache:
+  run:
     name: Prime cache
     runs-on: ubuntu-latest
 
