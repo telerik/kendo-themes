@@ -1,15 +1,11 @@
 name: Publish to npm
 
-defaults:
-  run:
-    shell: bash
-
-on: [workflow_dispatch]
+on:
+  workflow_dispatch:
 
 jobs:
 
   release-stable:
-
     runs-on: ubuntu-latest
 
     steps:

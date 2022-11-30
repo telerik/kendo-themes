@@ -1,15 +1,11 @@
 name: Tag stable version
 
-defaults:
-  run:
-    shell: bash
-
-on: [workflow_dispatch]
+on:
+  workflow_dispatch:
 
 jobs:
 
   tag:
-
     runs-on: ubuntu-latest
 
     steps:
