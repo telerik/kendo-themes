@@ -1,4 +1,4 @@
-name: CI | Visual
+name: CI
 
 on:
   push:
@@ -8,19 +8,15 @@ on:
       - 'v4-dev'
 
 concurrency:
-  group: ci-visual-${{ github.ref }}
+  group: ci-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
 
-  prime-cache:
-    name: Prime cache
-    uses: ./.github/workflows/_prime-cache.yml
-
   compile-themes:
     name: Compile themes
     uses: ./.github/workflows/_compile-themes.yml
-    needs: [ prime-cache ]
+
 
   render-test-pages:
     name: Render test pages
@@ -28,12 +24,13 @@ jobs:
     with:
       force-render: NO
       upload-policy: conditionally
-    needs: [ prime-cache ]
+
 
   create-screenshots:
     name: Create screenshots
     uses: ./.github/workflows/_create-screenshots.yml
-    needs: [ prime-cache, compile-themes, render-test-pages ]
+    needs: [ compile-themes, render-test-pages ]
+
 
   detect-changes:
     name: Detect changes
@@ -41,6 +38,7 @@ jobs:
     needs: [ render-test-pages, create-screenshots ]
 
     steps:
+
       - name: Checkout branch
         uses: actions/checkout@v3
 
@@ -83,18 +81,78 @@ jobs:
           commit=$(git rev-parse HEAD)
           ./build/mark-checks.sh $commit
 
+
   ci-visual:
-    # The name of the last job is used for the branch protection status check
-    name: CI | Visual
-    needs: [ detect-changes ]
-
+    name: Status check > Visual
     runs-on: ubuntu-latest
-
+    needs: [ detect-changes ]
     steps:
+      - name: Done
+        run: echo "Done!"
 
-      # IMPORTANT NOTE (31.10.2020)
-      #
-      # You can not set a workflow to be status check. The job is. Hence the trickery...
 
+  lint-scripts:
+    name: Lint scripts
+    uses: ./.github/workflows/_lint-scripts.yml
+
+  ci-lint-scripts:
+    name: Status check > Lint scripts
+    runs-on: ubuntu-latest
+    needs: [ lint-scripts ]
+    steps:
+      - name: Done
+        run: echo "Done!"
+
+
+  lint-styles:
+    name: Lint styles
+    uses: ./.github/workflows/_lint-styles.yml
+
+
+  ci-lint-styles:
+    name: Status check > Lint styles
+    runs-on: ubuntu-latest
+    needs: [ lint-styles ]
+    steps:
+      - name: Done
+        run: echo "Done!"
+
+
+  # placeholder
+  # replace placeholder with ci
+  placeholder-a11y:
+    name: Status check > A11y
+    runs-on: ubuntu-latest
+    steps:
+      - name: Done
+        run: echo "Done!"
+
+  placeholder-unit:
+    name: Status check > Unit
+    runs-on: ubuntu-latest
+    steps:
+      - name: Done
+        run: echo "Done!"
+
+  placeholder-html-spec:
+    name: Status check > HTML spec
+    runs-on: ubuntu-latest
+    steps:
+      - name: Done
+        run: echo "Done!"
+
+
+  # temporary until we change checks
+  temp-unit:
+    name: CI | Unit
+    runs-on: ubuntu-latest
+    steps:
+      - name: Done
+        run: echo "Done!"
+
+  temp-visual:
+    name: CI | Visual
+    runs-on: ubuntu-latest
+    steps:
       - name: Done
         run: echo "Done!"
