@@ -106,12 +106,6 @@ $icon-size-lg: 32px !default;
 $icon-spacing: k-map-get( $kendo-spacing, 2 ) !default;
 $icon-padding: k-map-get( $kendo-spacing, 1 ) !default;
 
-/// The URL to the icon font that will be used by the theme
-/// The default value of `null` embeds the package font with a `data:` URL
-/// @group icons
-$icon-font-url: null !default;
-
-
 // Metrics
 $kendo-padding-x: 16px !default;
 $kendo-padding-y: 4px !default;
