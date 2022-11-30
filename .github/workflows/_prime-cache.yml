@@ -2,6 +2,7 @@ name: Prime cache
 
 on:
   workflow_call:
+  workflow_dispatch:
 
 concurrency:
   group: prime-cache-${{ github.ref }}

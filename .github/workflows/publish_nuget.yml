@@ -1,9 +1,5 @@
 name: Publish to nuget
 
-defaults:
-  run:
-    shell: bash
-
 on:
   workflow_dispatch:
   workflow_run:
