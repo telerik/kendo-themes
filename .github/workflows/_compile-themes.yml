@@ -9,8 +9,7 @@ concurrency:
 
 jobs:
 
-  compile-themes:
-    name: Compile themes
+  run:
     runs-on: ubuntu-latest
 
     steps:
