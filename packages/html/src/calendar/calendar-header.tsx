@@ -43,7 +43,7 @@ export class CalendarHeader extends React.Component<CalendarHeaderProps> {
                 <span className="k-spacer"></span>
                 <span className="k-calendar-nav">
                     <Button className="k-calendar-nav-prev" icon="arrow-chevron-left" size={size} fillMode="flat"></Button>
-                    {showToday && <span className="k-calendar-nav-today">Today</span>}
+                    {showToday && <Button size={size} fillMode="flat" themeColor="primary" className="k-calendar-nav-today">Today</Button>}
                     <Button className="k-calendar-nav-next" icon="arrow-chevron-right" size={size} fillMode="flat"></Button>
                 </span>
             </div>
