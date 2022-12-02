@@ -56,7 +56,7 @@ root.render(
                             <Button fillMode="flat" className="k-calendar-title k-title">April 2018</Button>
                             <span className="k-spacer"></span>
                             <span className="k-calendar-nav k-hstack">
-                                <span className="k-calendar-nav-today">Today</span>
+                                <Button fillMode="flat" themeColor="primary" className="k-calendar-nav-today">Today</Button>
                             </span>
                         </div>
                         <table className="k-calendar-table k-calendar-weekdays">
@@ -269,7 +269,7 @@ root.render(
                             <Button fillMode="flat" className="k-calendar-title k-title">d’abril 2018</Button>
                             <span className="k-spacer"></span>
                             <span className="k-calendar-nav k-hstack">
-                                <span className="k-calendar-nav-today">Today</span>
+                                <Button fillMode="flat" themeColor="primary" className="k-calendar-nav-today">Today</Button>
                             </span>
                         </div>
                         <table className="k-calendar-table k-calendar-weekdays">
@@ -482,7 +482,7 @@ root.render(
                             <Button fillMode="flat" className="k-calendar-title k-title">2018</Button>
                             <span className="k-spacer"></span>
                             <span className="k-calendar-nav k-hstack">
-                                <span className="k-calendar-nav-today">Today</span>
+                                <Button fillMode="flat" themeColor="primary" className="k-calendar-nav-today">Today</Button>
                             </span>
                         </div>
                         <div className="k-content k-scrollable k-flex">
@@ -624,7 +624,7 @@ root.render(
                             <Button fillMode="flat" className="k-calendar-title k-title">2010 - 2019</Button>
                             <span className="k-spacer"></span>
                             <span className="k-calendar-nav k-hstack">
-                                <span className="k-calendar-nav-today">Today</span>
+                                <Button fillMode="flat" themeColor="primary" className="k-calendar-nav-today">Today</Button>
                             </span>
                         </div>
                         <div className="k-content k-scrollable k-flex">
@@ -746,7 +746,7 @@ root.render(
                             <Button fillMode="flat" className="k-calendar-title k-title">2000 - 2099</Button>
                             <span className="k-spacer"></span>
                             <span className="k-calendar-nav k-hstack">
-                                <span className="k-calendar-nav-today">Today</span>
+                                <Button fillMode="flat" themeColor="primary" className="k-calendar-nav-today">Today</Button>
                             </span>
                         </div>
                         <div className="k-content k-scrollable k-flex">
@@ -868,7 +868,7 @@ root.render(
                             <Button fillMode="flat" className="k-calendar-title k-title">2018</Button>
                             <span className="k-spacer"></span>
                             <span className="k-calendar-nav k-hstack">
-                                <span className="k-calendar-nav-today">Today</span>
+                                <Button fillMode="flat" themeColor="primary" className="k-calendar-nav-today">Today</Button>
                             </span>
                         </div>
                         <div className="k-content k-scrollable k-flex">
@@ -989,7 +989,7 @@ root.render(
                             <Button fillMode="flat" className="k-calendar-title k-title">March 2020</Button>
                             <span className="k-spacer"></span>
                             <span className="k-calendar-nav k-hstack">
-                                <span className="k-calendar-nav-today">Today</span>
+                                <Button fillMode="flat" themeColor="primary" className="k-calendar-nav-today">Today</Button>
                             </span>
                         </div>
                         <table className="k-calendar-table k-calendar-weekdays">

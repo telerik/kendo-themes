@@ -18,7 +18,7 @@ root.render(
                 <div className="k-widget k-calendar k-calendar-md">
                     <div className="k-header k-hstack">
                         <Button fillMode="flat" className="k-calendar-nav-prev" icon="arrow-60-left"></Button>
-                        <Button fillMode="flat" className="k-calendar-nav-today k-flex">March 2018</Button>
+                        <Button fillMode="flat" themeColor="primary" className="k-calendar-nav-today k-flex">March 2018</Button>
                         <Button fillMode="flat" className="k-calendar-nav-next" icon="arrow-60-right"></Button>
                     </div>
                     <div className="k-calendar-view k-calendar-monthview">
@@ -177,7 +177,7 @@ root.render(
                         </table>
                     </div>
                     <div className="k-footer">
-                        <a className="k-calendar-nav-today">Thursday, March 29, 2018</a>
+                        <Button fillMode="flat" themeColor="primary" className="k-calendar-nav-today k-flex">Thursday, March 29, 2018</Button>
                     </div>
                 </div>
             </section>
@@ -185,7 +185,7 @@ root.render(
                 <div className="k-widget k-calendar k-week-number k-calendar-md">
                     <div className="k-header k-hstack">
                         <Button fillMode="flat" className="k-calendar-nav-prev" icon="arrow-60-left"></Button>
-                        <Button fillMode="flat" className="k-calendar-nav-today k-flex">March 2018</Button>
+                        <Button fillMode="flat" themeColor="primary" className="k-calendar-nav-today k-flex">March 2018</Button>
                         <Button fillMode="flat" className="k-calendar-nav-next" icon="arrow-60-right"></Button>
                     </div>
                     <div className="k-calendar-view k-calendar-monthview">
@@ -351,7 +351,7 @@ root.render(
                         </table>
                     </div>
                     <div className="k-footer">
-                        <a className="k-calendar-nav-today k-disabled">Thursday, March 29, 2018</a>
+                        <Button fillMode="flat" themeColor="primary" className="k-calendar-nav-today k-flex k-disabled">Thursday, March 29, 2018</Button>
                     </div>
                 </div>
             </section>
@@ -366,7 +366,7 @@ root.render(
                 <div className="k-widget k-calendar k-calendar-md">
                     <div className="k-header k-hstack">
                         <Button fillMode="flat" className="k-calendar-nav-prev" icon="arrow-60-left"></Button>
-                        <Button fillMode="flat" className="k-calendar-nav-today k-flex">2018</Button>
+                        <Button fillMode="flat" themeColor="primary" className="k-calendar-nav-today k-flex">2018</Button>
                         <Button fillMode="flat" className="k-calendar-nav-next" icon="arrow-60-right"></Button>
                     </div>
                     <div className="k-calendar-view k-calendar-yearview">
@@ -418,7 +418,7 @@ root.render(
                         </table>
                     </div>
                     <div className="k-footer">
-                        <a className="k-calendar-nav-today">Thursday, March 29, 2018</a>
+                        <Button fillMode="flat" themeColor="primary" className="k-calendar-nav-today k-flex">Thursday, March 29, 2018</Button>
                     </div>
                 </div>
             </section>
@@ -427,7 +427,7 @@ root.render(
                 <div className="k-widget k-calendar k-calendar-md">
                     <div className="k-header k-hstack">
                         <Button fillMode="flat" className="k-calendar-nav-prev" icon="arrow-60-left"></Button>
-                        <Button fillMode="flat" className="k-calendar-nav-today k-flex">2010 - 2019</Button>
+                        <Button fillMode="flat" themeColor="primary" className="k-calendar-nav-today k-flex">2010 - 2019</Button>
                         <Button fillMode="flat" className="k-calendar-nav-next" icon="arrow-60-right"></Button>
                     </div>
                     <div className="k-calendar-view k-calendar-decadeview">
@@ -475,7 +475,7 @@ root.render(
                         </table>
                     </div>
                     <div className="k-footer">
-                        <a className="k-calendar-nav-today">Thursday, March 29, 2018</a>
+                        <Button fillMode="flat" themeColor="primary" className="k-calendar-nav-today k-flex">Thursday, March 29, 2018</Button>
                     </div>
                 </div>
             </section>
@@ -484,7 +484,7 @@ root.render(
                 <div className="k-widget k-calendar k-calendar-md">
                     <div className="k-header k-hstack">
                         <Button fillMode="flat" className="k-calendar-nav-prev" icon="arrow-60-left"></Button>
-                        <Button fillMode="flat" className="k-calendar-nav-today k-flex">2000 - 2099</Button>
+                        <Button fillMode="flat" themeColor="primary" className="k-calendar-nav-today k-flex">2000 - 2099</Button>
                         <Button fillMode="flat" className="k-calendar-nav-next" icon="arrow-60-right"></Button>
                     </div>
                     <div className="k-calendar-view k-calendar-centuryview">
@@ -534,7 +534,7 @@ root.render(
                         </table>
                     </div>
                     <div className="k-footer">
-                        <a className="k-calendar-nav-today">Thursday, March 29, 2018</a>
+                        <Button fillMode="flat" themeColor="primary" className="k-calendar-nav-today k-flex">Thursday, March 29, 2018</Button>
                     </div>
                 </div>
             </section>
