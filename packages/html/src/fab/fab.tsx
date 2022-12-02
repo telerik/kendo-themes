@@ -10,7 +10,6 @@ export interface FloatingActionButtonProps {
     type?: 'button' | 'submit' | 'reset';
     size?: null | 'small' | 'medium' | 'large';
     rounded: null | 'small' | 'medium' | 'large' | 'full';
-    shape?: null | 'rectangle' | 'square';
     fillMode?: null | 'solid';
     themeColor?: null | 'primary' | 'secondary' | 'tertiary' | 'info' | 'success' | 'warning' | 'error' | 'dark' | 'light' | 'inverse';
     position?: null | 'top-start' | 'top-center' | 'top-end' | 'middle-start' | 'middle-end' | 'bottom-start' | 'bottom-center' | 'bottom-end';
@@ -26,7 +25,6 @@ export class FloatingActionButton extends React.Component<FloatingActionButtonPr
     static defaultProps = {
         type: 'button',
         size: 'medium',
-        shape: 'rectangle',
         rounded: 'full',
         fillMode: 'solid',
         themeColor: 'primary'
@@ -40,7 +38,6 @@ export class FloatingActionButton extends React.Component<FloatingActionButtonPr
             icon,
             type,
             size,
-            shape,
             rounded,
             fillMode,
             themeColor,
@@ -62,7 +59,6 @@ export class FloatingActionButton extends React.Component<FloatingActionButtonPr
                     'k-fab',
                     {
                         [`k-fab-${kendoThemeMaps.sizeMap[size!] || size}`]: size,
-                        [`k-fab-${shape}`]: shape,
                         [`k-fab-${fillMode}`]: fillMode,
                         [`k-fab-${fillMode}-${themeColor}`]: Boolean(fillMode && themeColor),
                         [`k-rounded-${kendoThemeMaps.roundedMap[rounded!] || rounded}`]: rounded,
