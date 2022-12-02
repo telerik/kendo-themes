@@ -20,10 +20,7 @@ $calendar-header-border: $header-border !default;
 $calendar-header-gradient: null !default;
 $calendar-header-shadow: null !default;
 
-$calendar-nav-gap: k-map-get( $spacing, 1 ) !default;
-
-$calendar-today-nav-text: $link-text !default;
-$calendar-today-nav-hover-text: $link-hover-text !default;
+$calendar-nav-gap: null !default;
 
 $calendar-footer-padding-x: k-map-get( $spacing, 4 ) !default;
 $calendar-footer-padding-y: k-map-get( $spacing, 2 ) !default;
@@ -97,6 +94,8 @@ $calendar-navigation-item-height: 2em !default;
 $calendar-navigation-bg: k-true-mix( $calendar-text, $calendar-bg, 3) !default;
 $calendar-navigation-text: $calendar-text !default;
 $calendar-navigation-border: $calendar-border !default;
+
+$calendar-navigation-hover-text: $link-hover-text !default;
 
 
 // Infinite calendar
