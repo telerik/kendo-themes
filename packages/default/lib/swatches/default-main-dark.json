@@ -154,11 +154,6 @@
                     "name": "Button background",
                     "type": "color",
                     "value": "#404040"
-                },
-                "kendo-button-border": {
-                    "name": "Button border color",
-                    "type": "color",
-                    "value": "#FFFFFF28"
                 }
             }
         },
