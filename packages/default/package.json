@@ -1,7 +1,7 @@
 {
   "name": "@progress/kendo-theme-default",
   "description": "SASS resources for the default Kendo UI theme",
-  "version": "5.12.0",
+  "version": "5.12.1-dev.0",
   "author": "Progress",
   "license": "Apache-2.0",
   "keywords": [
@@ -45,8 +45,7 @@
   },
   "dependencies": {
     "@progress/kendo-font-icons": "^0.6.0",
-    "@progress/kendo-theme-core": "5.12.0",
-    "@progress/kendo-theme-utils": "5.12.0"
-  },
-  "devDependencies": {}
+    "@progress/kendo-theme-core": "^5.12.1-dev.0",
+    "@progress/kendo-theme-utils": "^5.12.1-dev.0"
+  }
 }
