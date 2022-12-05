@@ -3396,6 +3396,49 @@ The following table lists the available variables for customizing the Classic th
 </tbody>
 </table>
 
+### Dialog
+
+<table class="theme-variables">
+    <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
+    </tr>
+</thead>
+<tbody>
+        <tr>
+    <td>$kendo-dialog-theme-colors</td>
+    <td>Map</td>
+<td>
+
+`(
+    "primary": map-get($kendo-theme-colors, "primary"),
+    "light": map-get($kendo-theme-colors, "light"),
+    "dark": map-get($kendo-theme-colors, "dark")
+)`
+
+</td>
+<td>
+
+`("primary": #f35800, "light": #ebebeb, "dark": #404040)`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Theme colors map for the dialog.</div></div>
+    </td>
+</tr>
+</tbody>
+</table>
+
 ### Floating-action-button
 
 <table class="theme-variables">
@@ -11738,6 +11781,49 @@ The following table lists the available variables for customizing the Classic th
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height used along with $font-size.</div></div>
+    </td>
+</tr>
+</tbody>
+</table>
+
+### Window
+
+<table class="theme-variables">
+    <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
+    </tr>
+</thead>
+<tbody>
+        <tr>
+    <td>$kendo-window-theme-colors</td>
+    <td>Map</td>
+<td>
+
+`(
+    "primary": map-get($kendo-theme-colors, "primary"),
+    "light": map-get($kendo-theme-colors, "light"),
+    "dark": map-get($kendo-theme-colors, "dark")
+)`
+
+</td>
+<td>
+
+`("primary": #f35800, "light": #ebebeb, "dark": #404040)`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Theme colors map for the window.</div></div>
     </td>
 </tr>
 </tbody>
