@@ -48,6 +48,11 @@
         padding-block: var( --kendo-dialog-titlebar-padding-y, #{$kendo-dialog-titlebar-padding-y} );
     }
 
+    .k-dialog-content {
+        padding-inline: var( --kendo-dialog-inner-padding-x, #{$kendo-dialog-inner-padding-x} );
+        padding-block: var( --kendo-dialog-inner-padding-y, #{$kendo-dialog-inner-padding-y} );
+    }
+
     // Buttons
     .k-dialog-actions {
         @include border-bottom-radius( var( --kendo-window-border-radius, #{$kendo-window-border-radius} ) );
