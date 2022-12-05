@@ -8,6 +8,7 @@ export interface DialogProps {
     className?: string;
     title?: string;
     actions?: string[];
+    themeColor?: null | 'primary' | 'dark' | 'light';
     actionButtons?: boolean;
     actionButtonsAlign?: "start" | "end" | "center" | "stretched";
     style?: React.CSSProperties;
@@ -21,6 +22,7 @@ export class Dialog extends React.Component<DialogProps> {
             children,
             title,
             actions,
+            themeColor,
             actionButtons,
             actionButtonsAlign,
         } = this.props;
@@ -32,6 +34,9 @@ export class Dialog extends React.Component<DialogProps> {
                 className={classNames(
                     "k-window",
                     "k-dialog",
+                    {
+                        [`k-dialog-${themeColor}`]: themeColor,
+                    },
                     className
                 )}>
 

@@ -5,6 +5,31 @@
     "selector": [
         ".k-dialog"
     ],
+    "options": [
+        {
+            "name": "themeColor",
+            "values": [
+                {
+                    "name": "primary",
+                    "selector": [
+                        ".k-dialog-primary"
+                    ]
+                },
+                {
+                    "name": "dark",
+                    "selector": [
+                        ".k-dialog-dark"
+                    ]
+                },
+                {
+                    "name": "light",
+                    "selector": [
+                        ".k-dialog-light"
+                    ]
+                }
+            ]
+        }
+    ],
     "children": [
         {
             "name": "dialog-titlebar",
@@ -48,12 +73,6 @@
             "$ref": "action-buttons",
             "selector": [
                 ".k-dialog-actions"
-            ],
-            "options": [
-                {
-                    "name": "alignment",
-                    "value": "end"
-                }
             ]
         }
     ]
