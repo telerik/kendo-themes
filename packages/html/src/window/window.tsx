@@ -9,6 +9,7 @@ export interface WindowProps {
     title?: string;
     actions?: string[];
     minimized?: boolean;
+    themeColor?: null | 'primary' | 'dark' | 'light';
     actionButtons?: boolean;
     actionButtonsAlign?: "start" | "end" | "center" | "stretched"
 }
@@ -22,6 +23,7 @@ export class Window extends React.Component<WindowProps> {
             title,
             actions,
             minimized,
+            themeColor,
             actionButtons,
             actionButtonsAlign,
         } = this.props;
@@ -32,7 +34,8 @@ export class Window extends React.Component<WindowProps> {
                 className={classNames(
                     "k-window",
                     {
-                        "k-window-minimized": minimized
+                        "k-window-minimized": minimized,
+                        [`k-window-${themeColor}`]: themeColor,
                     },
                     className
                 )}>

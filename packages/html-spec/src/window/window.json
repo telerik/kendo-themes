@@ -37,6 +37,29 @@
                     ]
                 }
             ]
+        },
+        {
+            "name": "themeColor",
+            "values": [
+                {
+                    "name": "primary",
+                    "selector": [
+                        ".k-window-primary"
+                    ]
+                },
+                {
+                    "name": "dark",
+                    "selector": [
+                        ".k-window-dark"
+                    ]
+                },
+                {
+                    "name": "light",
+                    "selector": [
+                        ".k-window-light"
+                    ]
+                }
+            ]
         }
     ],
     "children": [
@@ -82,12 +105,6 @@
             "$ref": "action-buttons",
             "selector": [
                 ".k-window-actions"
-            ],
-            "options": [
-                {
-                    "name": "alignment",
-                    "value": "end"
-                }
             ]
         }
     ]

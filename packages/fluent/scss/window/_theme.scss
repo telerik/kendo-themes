@@ -19,13 +19,32 @@
     }
 
 
-    // Title
-    .k-window-title {
+    // Titlebar
+    .k-window-titlebar {
         @include fill(
-            var( --kendo-window-titlebar-text, #{$kendo-window-titlebar-text} ),
-            var( --kendo-window-titlebar-bg, #{$kendo-window-titlebar-bg} ),
-            var( --kendo-window-titlebar-border, #{$kendo-window-titlebar-border} )
+            $bg: var( --kendo-window-titlebar-bg, #{$kendo-window-titlebar-bg} ),
+            $border: var( --kendo-window-titlebar-border, #{$kendo-window-titlebar-border} )
         );
+    }
+
+    .k-window-title {
+        color: var( --kendo-window-titlebar-text, #{$kendo-window-titlebar-text} ),
+    }
+
+    // Window theme colors
+    @each $theme-color, $color-props in $kendo-window-theme-colors {
+
+        $_text: map-get( $color-props, text );
+        $_bg: map-get( $color-props, bg );
+        $_border: map-get( $color-props, border );
+
+        .k-window-#{$theme-color} .k-window-titlebar {
+            color: var( --kendo-window-titlebar-text, #{$kendo-window-titlebar-text} );
+
+            --kendo-window-titlebar-text: var( --kendo-window-#{$theme-color}-text, #{$_text} );
+            --kendo-window-titlebar-bg: var( --kendo-window-#{$theme-color}-bg, #{$_bg} );
+            --kendo-window-titlebar-border: var( --kendo-window-#{$theme-color}-border, #{$_border} );
+        }
     }
 
 }
