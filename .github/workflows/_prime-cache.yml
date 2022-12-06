@@ -14,6 +14,10 @@ jobs:
     name: Prime cache
     runs-on: ubuntu-latest
 
+    strategy:
+      matrix:
+        node-version: [14.x, 16.x, 18.x]
+
     steps:
 
       - name: Checkout branch
@@ -23,7 +27,7 @@ jobs:
         id: setup-node
         uses: actions/setup-node@v3
         with:
-          node-version: 14.x
+          node-version: ${{ matrix.node-version }}
 
       - name: Use cache for root node_modules
         id: cache-root-node_modules
