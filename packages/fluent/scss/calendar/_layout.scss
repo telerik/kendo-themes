@@ -502,10 +502,6 @@
     .k-rtl .k-calendar,
     .k-calendar[dir="rtl"] {
 
-        .k-nav-prev,
-        .k-nav-next,
-        .k-prev-view,
-        .k-next-view,
         .k-calendar-nav-prev,
         .k-calendar-nav-next {
             transform: scaleX(-1);
