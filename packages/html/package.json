@@ -34,7 +34,8 @@
     "build:tests": "node ./scripts/build-tests.js",
     "watch:tests": "node ./scripts/build-tests.js --watch",
     "check-types": "npx tsc src/index.ts --noEmit --emitDeclarationOnly false --jsx react",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build",
+    "prepack": "cp package.json package.json.orig && jq '.scripts={}' package.json.orig > package.json"
   },
   "dependencies": {
     "react": "^18.0.0",
