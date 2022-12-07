@@ -71,7 +71,6 @@
     "embed-assets": "gulp assets",
     "create-component": "gulp create-component",
     "update": "npx npm-check-updates --upgrade",
-    "prepack": "lerna exec -- cp package.json package.json.orig && lerna exec -- npm pkg delete scripts",
     "postpack": "lerna exec -- mv -f package.json.orig package.json"
   },
   "lint-staged": {
