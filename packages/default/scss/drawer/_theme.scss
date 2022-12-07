@@ -2,59 +2,59 @@
 
     .k-drawer {
         @include fill(
-            $drawer-text,
-            $drawer-bg,
-            $drawer-border
+            $kendo-drawer-text,
+            $kendo-drawer-bg,
+            $kendo-drawer-border
         );
     }
 
     // Drawer items
     .k-drawer-wrapper {
-        scrollbar-color: $drawer-scrollbar-color $drawer-scrollbar-bg;
+        scrollbar-color: $kendo-drawer-scrollbar-color $kendo-drawer-scrollbar-bg;
 
         &::-webkit-scrollbar-track {
-            background: $drawer-scrollbar-bg;
+            background: $kendo-drawer-scrollbar-bg;
         }
         &::-webkit-scrollbar-thumb {
-            background: $drawer-scrollbar-color;
+            background: $kendo-drawer-scrollbar-color;
         }
         &::-webkit-scrollbar-thumb:hover {
-            background: $drawer-scrollbar-hovered-color;
+            background: $kendo-drawer-scrollbar-hovered-color;
         }
     }
     .k-drawer-item {
 
         &:hover,
         &.k-hover {
-            color: $drawer-hovered-text;
-            background-color: $drawer-hovered-bg;
+            color: $kendo-drawer-hovered-text;
+            background-color: $kendo-drawer-hovered-bg;
         }
 
         &:focus,
         &.k-focus {
-            background-color: $drawer-focused-bg;
-            box-shadow: $drawer-focused-shadow;
+            background-color: $kendo-drawer-focused-bg;
+            box-shadow: $kendo-drawer-focused-shadow;
 
             &:hover,
             &.k-hover {
-                color: $drawer-hovered-text;
-                background-color: $drawer-hovered-bg;
+                color: $kendo-drawer-hovered-text;
+                background-color: $kendo-drawer-hovered-bg;
             }
         }
 
         &.k-selected {
-            color: $drawer-selected-text;
-            background-color: $drawer-selected-bg;
+            color: $kendo-drawer-selected-text;
+            background-color: $kendo-drawer-selected-bg;
 
             &:hover,
             &.k-hover {
-                color: $drawer-selected-hover-text;
-                background-color: $drawer-selected-hover-bg;
+                color: $kendo-drawer-selected-hover-text;
+                background-color: $kendo-drawer-selected-hover-bg;
             }
         }
     }
     .k-drawer-separator {
-        background-color: $drawer-border;
+        background-color: $kendo-drawer-border;
     }
 
 }
