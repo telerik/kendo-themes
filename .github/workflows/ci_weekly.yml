@@ -80,6 +80,10 @@ jobs:
         run: |
           npm run sass:swatches
 
+      - name: Test Contrast
+        run: |
+          npm run test-contrast
+
       - name: Build docs
         run: |
           npm run docs
