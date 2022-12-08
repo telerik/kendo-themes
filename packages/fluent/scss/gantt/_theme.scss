@@ -1,6 +1,6 @@
 @use "../core/mixins" as *;
 @use "../core/color-system/_variables.scss" as *;
-@use "_variables.scss" as *;
+@use "./_variables.scss" as *;
 
 @mixin kendo-gantt--theme() {
 

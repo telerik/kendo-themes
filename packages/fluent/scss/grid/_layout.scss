@@ -3,7 +3,7 @@
 @use "../chip/_variables.scss" as *;
 @use "../forms/_variables.scss" as *;
 @use "../table/_variables.scss" as *;
-@use "_variables.scss" as *;
+@use "./_variables.scss" as *;
 
 @mixin kendo-grid--layout() {
 

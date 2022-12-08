@@ -1,6 +1,6 @@
 @use "../core/mixins" as *;
 @use "../colorpalette/_variables.scss" as *;
-@use "_variables.scss" as *;
+@use "./_variables.scss" as *;
 
 @mixin kendo-coloreditor--layout() {
 

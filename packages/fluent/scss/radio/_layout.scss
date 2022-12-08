@@ -1,5 +1,5 @@
 @use "sass:math";
-@use "_variables.scss" as *;
+@use "./_variables.scss" as *;
 @use "../core/_variables.scss" as *;
 @use "../core/mixins/border-radius" as *;
 @use "../core/mixins/disabled" as *;

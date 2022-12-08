@@ -2,7 +2,7 @@
 @use "../core/color-system/_variables.scss" as *;
 @use "../toolbar/_variables.scss" as *;
 @use "../listgroup/_variables.scss" as *;
-@use "_variables.scss" as *;
+@use "./_variables.scss" as *;
 
 @mixin kendo-adaptive--layout() {
 

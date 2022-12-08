@@ -1,24 +1,24 @@
 // Functions
-@forward "functions";
+@forward "./functions";
 
 // Variables
-@forward "variables";
+@forward "./variables";
 
 // Mixins
-@forward "mixins";
+@forward "./mixins";
 
 // Color System
-@forward "color-system";
+@forward "./color-system";
 
 // Helpers
-@use "helpers";
+@use "./helpers";
 
 // Common styles
-@use "layout";
-@use "theme";
+@use "./layout";
+@use "./theme";
 
 // Module System
-@use "module-system/" as module;
+@use "./module-system/" as module;
 
 $components: null !default;
 

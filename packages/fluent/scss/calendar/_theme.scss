@@ -1,6 +1,6 @@
 @use "../core/color-system" as *;
 @use "../core/mixins" as *;
-@use "_variables.scss" as *;
+@use "./_variables.scss" as *;
 
 @mixin kendo-calendar--theme() {
     .k-calendar {

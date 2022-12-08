@@ -1,6 +1,6 @@
 @use "sass:string";
 @use "../core/" as *;
-@use "_variables.scss" as *;
+@use "./_variables.scss" as *;
 @use "../tooltip/_variables.scss" as *;
 
 @mixin kendo-dataviz--layout() {

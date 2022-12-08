@@ -1,7 +1,7 @@
 
 @use "../core/mixins" as *;
 @use "../window/_variables.scss" as *;
-@use "_variables.scss" as *;
+@use "./_variables.scss" as *;
 
 @mixin kendo-dialog--layout() {
 

@@ -1,4 +1,4 @@
-@use "_variables.scss" as *;
+@use "./_variables.scss" as *;
 
 @mixin kendo-virtual-scroller--layout() {
 
@@ -33,5 +33,5 @@
         position: relative;
         z-index: 0;
     }
-    
+
 }

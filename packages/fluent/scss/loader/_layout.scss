@@ -1,5 +1,5 @@
 @use "sass:math";
-@use "_variables.scss" as *;
+@use "./_variables.scss" as *;
 @use "../overlay/_variables.scss" as *;
 
 @mixin kendo-loader--layout() {

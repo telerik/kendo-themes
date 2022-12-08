@@ -15,9 +15,9 @@ $_kendo-module-meta: (
 
 
 // Component
-@forward "_variables.scss";
-@use "_layout.scss" as *;
-@use "_theme.scss" as *;
+@forward "./_variables.scss";
+@use "./_layout.scss" as *;
+@use "./_theme.scss" as *;
 
 // Register
 @use "../core/module-system/" as module;

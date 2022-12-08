@@ -3,7 +3,7 @@
 @use "../list/_variables.scss" as *;
 @use "../popup/_variables.scss" as *;
 @use "../tooltip/_variables.scss" as *;
-@use "_variables.scss" as *;
+@use "./_variables.scss" as *;
 
 @mixin kendo-grid--theme() {
 

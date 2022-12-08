@@ -1,5 +1,5 @@
-@use "mixins" as *;
-@use "_variables.scss" as *;
+@use "./mixins" as *;
+@use "./_variables.scss" as *;
 
 .k-body {
     @include typography(
