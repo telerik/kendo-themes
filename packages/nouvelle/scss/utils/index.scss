@@ -12,7 +12,7 @@ $_kendo-module-meta: (
 // Expose
 @mixin utils-styles() {
     @include module-render( "utils" ) {
-        // @import "~@progress/kendo-theme-utils/scss/all.scss";
+        // @import "@progress/kendo-theme-utils/scss/all.scss";
     }
 }
 @import "@progress/kendo-theme-utils/scss/all.scss";
