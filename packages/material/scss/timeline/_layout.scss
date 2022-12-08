@@ -1,4 +1,4 @@
-@import "~@progress/kendo-theme-default/scss/timeline/_layout.scss";
+@import "@progress/kendo-theme-default/scss/timeline/_layout.scss";
 
 @include exports( "timeline/layout/material" ) {
     .k-timeline-horizontal .k-timeline-card {

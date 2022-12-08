@@ -12,7 +12,7 @@ $grid-group-indicator-gap: 8px !default;
 $grid-group-dropclue-height: $kendo-chip-calc-size !default;
 $grid-group-dropclue-top: calc( ( #{$kendo-chip-calc-size} + #{$grid-grouping-header-padding-y * 2} - #{$grid-group-dropclue-height} ) / 2) !default;
 
-@import "~@progress/kendo-theme-default/scss/grid/_layout.scss";
+@import "@progress/kendo-theme-default/scss/grid/_layout.scss";
 
 @include exports ("grid/layout/material") {
 

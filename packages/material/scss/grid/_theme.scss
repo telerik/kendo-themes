@@ -1,4 +1,4 @@
-@import "~@progress/kendo-theme-default/scss/grid/_theme.scss";
+@import "@progress/kendo-theme-default/scss/grid/_theme.scss";
 
 @include exports ("grid/theme/material") {
     $grid-filter-button-focus: rgba( black, .12 ) !default;
