@@ -1,6 +1,6 @@
 @use "../core/" as *;
 @use "../core/mixins" as *;
-@use "_variables.scss" as *;
+@use "./_variables.scss" as *;
 @use "../list/_variables.scss"as *;
 
 @mixin kendo-spreadsheet--theme() {

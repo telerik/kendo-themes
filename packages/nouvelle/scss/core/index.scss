@@ -1,16 +1,16 @@
 $wcag-min-contrast-ratio: 4.5 !default;
 
 // Functions
-@import "functions/index.import.scss";
+@import "./functions/index.import.scss";
 
 // Color system
-@import "color-system/index.import.scss";
+@import "./color-system/index.import.scss";
 
 // Mixins
-@import "mixins/index.import.scss";
+@import "./mixins/index.import.scss";
 
 // Module system
-@import "module-system/index.import.scss";
+@import "./module-system/index.import.scss";
 
 // Common styles
-@import "styles/index.import.scss";
+@import "./styles/index.import.scss";

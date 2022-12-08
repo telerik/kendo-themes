@@ -1,7 +1,7 @@
 @use "../core/mixins" as *;
 @use "../core/color-system" as *;
 @use "../button/_variables.scss" as *;
-@use "_variables.scss" as *;
+@use "./_variables.scss" as *;
 
 @mixin kendo-pager--layout() {
 

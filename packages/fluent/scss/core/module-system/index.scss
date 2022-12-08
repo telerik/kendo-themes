@@ -1,6 +1,6 @@
 @use "sass:list";
 @use "sass:map";
-@use "_components.scss" as _;
+@use "./_components.scss" as _;
 
 $components: _.$components !default;
 $_deps: ();

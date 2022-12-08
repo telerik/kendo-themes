@@ -1,5 +1,5 @@
 @use "../core/mixins" as *;
-@use "_variables.scss" as *;
+@use "./_variables.scss" as *;
 
 @mixin kendo-captcha--theme() {
 

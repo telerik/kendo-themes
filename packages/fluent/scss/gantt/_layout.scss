@@ -3,7 +3,7 @@
 @use "../button/_variables.scss" as *;
 @use "../grid/_variables.scss" as *;
 @use "../toolbar/_variables.scss" as *;
-@use "_variables.scss" as *;
+@use "./_variables.scss" as *;
 
 @mixin kendo-gantt--layout() {
 

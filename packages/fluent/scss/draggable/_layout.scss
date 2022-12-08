@@ -1,5 +1,5 @@
 @use "../core/mixins" as *;
-@use "_variables.scss" as *;
+@use "./_variables.scss" as *;
 
 .k-drag-clue {
     @include border-radius( var( --kendo-drag-clue-border-radius, #{$kendo-drag-clue-border-radius} ) );

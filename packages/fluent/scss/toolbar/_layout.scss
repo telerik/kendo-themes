@@ -1,5 +1,5 @@
 @use "../core/" as *;
-@use "_variables.scss" as *;
+@use "./_variables.scss" as *;
 @use "../button/_variables.scss" as *;
 
 @mixin kendo-toolbar--layout() {
