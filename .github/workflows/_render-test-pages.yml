@@ -115,12 +115,13 @@ jobs:
         run: |
           npm run render-test-pages
 
-      - name: Check for differences in tests/
+      - name: Pack test pages
         env:
           UPLOAD_POLICY: ${{ inputs.upload-policy }}
         run: |
           HAS_CHANGES=NO
-          git diff --exit-code --quiet -- tests/ || HAS_CHANGES=YES
+          git add .
+          git diff --cached --exit-code --quiet -- tests/ || HAS_CHANGES=YES
 
           echo "Has changes: $HAS_CHANGES"
           echo "HAS_CHANGES=$HAS_CHANGES" >> $GITHUB_ENV
@@ -131,28 +132,23 @@ jobs:
           echo "- Has changes: $HAS_CHANGES" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
 
+          if [ $UPLOAD_POLICY = always ]
+          then
+            tar --exclude tests/_output -cf test-pages.tar tests
+          fi
+
+          if [ $UPLOAD_POLICY = conditionally ] && [ $HAS_CHANGES = YES ]
+          then
+            git diff --cached --name-only -- tests/ | xargs tar --exclude tests/_output -cf test-pages.tar
+          fi
+
           if [ $UPLOAD_POLICY = always ] || ( [ $UPLOAD_POLICY = conditionally ] && [ $HAS_CHANGES = YES ] )
           then
             echo "Test pages will be uploaded" >> $GITHUB_STEP_SUMMARY
+            echo "Number of files uploaded: $(tar -tf test-pages.tar | wc -l)" >> $GITHUB_STEP_SUMMARY
           else
             echo "Test pages will NOT be uploaded" >> $GITHUB_STEP_SUMMARY
           fi
-
-      - name: Pack test pages (always)
-        if: ${{ inputs.upload-policy == 'always' }}
-        run: |
-          tar --exclude tests/_output -cf test-pages.tar tests
-
-          echo "" >> $GITHUB_STEP_SUMMARY
-          echo "Number of files uploaded: $(tar -tf test-pages.tar | wc -l)" >> $GITHUB_STEP_SUMMARY
-
-      - name: Pack test pages (conditionally)
-        if: ${{ inputs.upload-policy == 'conditionally' && env.HAS_CHANGES == 'YES' }}
-        run: |
-          git diff --name-only -- tests/ | xargs tar --exclude tests/_output -cf test-pages.tar
-
-          echo "" >> $GITHUB_STEP_SUMMARY
-          echo "Number of files uploaded: $(tar -tf test-pages.tar | wc -l)" >> $GITHUB_STEP_SUMMARY
 
       - name: Upload test pages
         if: ${{ inputs.upload-policy != 'never' }}
