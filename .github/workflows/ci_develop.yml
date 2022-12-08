@@ -29,11 +29,17 @@ jobs:
     needs: [ prime-cache ]
 
 
+  test-contrast:
+    name: Test contrast
+    uses: ./.github/workflows/_test-contrast.yml
+    needs: [ prime-cache ]
+
+
   ci-develop:
     # The name of the last job is used for the branch protection status check
     name: CI Develop
     runs-on: ubuntu-latest
-    needs: [ lint-scripts, lint-styles ]
+    needs: [ lint-scripts, lint-styles, test-contrast ]
 
     steps:
 

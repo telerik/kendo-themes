@@ -117,16 +117,12 @@ jobs:
       - name: Done
         run: echo "Done!"
 
+  ci-a11y:
+    name: Status check > A11y
+    uses: ./.github/workflows/_test-contrast.yml
 
   # placeholder
   # replace placeholder with ci
-  placeholder-a11y:
-    name: Status check > A11y
-    runs-on: ubuntu-latest
-    steps:
-      - name: Done
-        run: echo "Done!"
-
   placeholder-unit:
     name: Status check > Unit
     runs-on: ubuntu-latest

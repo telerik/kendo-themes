@@ -1,0 +1,59 @@
+name: CI | A11y
+
+on:
+  workflow_call:
+
+concurrency:
+  group: test-contrast-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+
+  run-checks:
+    name: Run checks
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Checkout branch
+        uses: actions/checkout@v3
+
+      - name: Install virtual display on Linux
+        run: sudo apt-get install xvfb
+
+      - name: Setup node
+        id: setup-node
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Use cache for root node_modules
+        id: cache-root-node_modules
+        uses: actions/cache@v3
+        with:
+          path: node_modules
+          key: root-node_modules-${{ steps.setup-node.outputs.node-version }}-${{ hashFiles('package-lock.json') }}
+
+      - name: Install
+        if: steps.cache-root-node_modules.outputs.cache-hit != 'true'
+        run: |
+          npm ci --no-audit --no-fund
+
+      - name: Bootstrap
+        run: |
+          npm run bootstrap
+
+      - name: Build test pages
+        run: |
+          npm run build:tests
+
+      - name: Build swatches
+        run: |
+          npm run sass:swatches
+
+      - name: Test contrast
+        run: xvfb-run --auto-servernum --server-args="-screen 0, 1366x768x24" npm run test-contrast
+
+      - name: Done
+        run: echo "Done!"

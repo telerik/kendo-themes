@@ -548,12 +548,20 @@ const printViolations = (result) => {
     // console.log(violatedComponents.sort());
     // console.log(aaViolatedComponents.sort());
     // console.log(incomplete);
-    /* eslint-disable no-console */
-    // console.dir(result.focusContrast, { depth: 3 });
-    console.dir(result.violations, { depth: 5 });
+    // console.log(incompleteTypes);
     /* eslint-disable no-console */
     console.log(count);
-    // console.log(incompleteTypes);
+
+    if (count.violations > 0 || count.focus > 0) {
+        /* eslint-disable no-console */
+        console.log("Focus contrast WCAG violations:");
+        console.dir(result.focusContrast, { depth: 3 });
+        console.log("Text contrast WCAG AA errors:");
+        console.dir(result.violations, { depth: 5 });
+
+        console.error('A11y contrast checks fail.');
+        process.exit(1);
+    }
 };
 
 export { getContrastViolations };
