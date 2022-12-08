@@ -1,4 +1,4 @@
-@import "~@progress/kendo-theme-default/scss/progressbar/_layout.scss";
+@import "@progress/kendo-theme-default/scss/progressbar/_layout.scss";
 
 @include exports("progressbar/layout/material") {
     $kendo-progressbar-status-font-size: 11px !default;
