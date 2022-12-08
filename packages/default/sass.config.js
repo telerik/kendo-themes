@@ -5,7 +5,12 @@ module.exports = {
     build: [
         {
             file: 'scss/all.scss',
-            outFile: 'dist/all.css'
+            outFile: 'dist/all.css',
+            sassOptions: {
+                loadPaths: [
+                    'node_modules/'
+                ]
+            }
         }
     ]
 };

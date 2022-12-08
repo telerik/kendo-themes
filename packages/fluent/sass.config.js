@@ -8,6 +8,11 @@ module.exports = {
             outFile: 'dist/all.css',
             compiler: 'sass-embedded',
             api: 'modern',
+            sassOptions: {
+                loadPaths: [
+                    'node_modules/'
+                ]
+            }
         }
     ]
 };
