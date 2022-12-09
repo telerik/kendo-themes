@@ -33,10 +33,10 @@
 
             .k-selected {
                 @include fill(
-                    var( --kendo-progressbar-fill-text, #{$kendo-progressbar-fill-text} ),
-                    var( --kendo-progressbar-fill-bg, #{$kendo-progressbar-fill-bg} ),
-                    var( --kendo-progressbar-fill-border, #{$kendo-progressbar-fill-border} ),
-                    var( --kendo-progressbar-fill-gradient, #{$kendo-progressbar-fill-gradient} )
+                    var( --kendo-progressbar-value-text, #{$kendo-progressbar-value-text} ),
+                    var( --kendo-progressbar-value-bg, #{$kendo-progressbar-value-bg} ),
+                    var( --kendo-progressbar-value-border, #{$kendo-progressbar-value-border} ),
+                    var( --kendo-progressbar-value-gradient, #{$kendo-progressbar-value-gradient} )
                 );
             }
 
@@ -50,7 +50,7 @@
                 );
 
                 .k-selected {
-                    background-color: var( --kendo-progressbar-fill-disabled-bg, #{$kendo-progressbar-fill-disabled-bg} );
+                    background-color: var( --kendo-progressbar-value-disabled-bg, #{$kendo-progressbar-value-disabled-bg} );
                 }
             }
         }
@@ -63,7 +63,7 @@
         background-color: var( --kendo-progressbar-bg, #{$kendo-progressbar-bg} );
 
         .k-selected {
-            background-color: var( --kendo-progressbar-fill-bg, #{$kendo-progressbar-fill-bg} );
+            background-color: var( --kendo-progressbar-value-bg, #{$kendo-progressbar-value-bg} );
         }
     }
 

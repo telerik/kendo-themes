@@ -53,7 +53,7 @@ export class ProgressBar extends React.Component<ProgressBarProps> {
                         'k-progressbar-reverse': reverse,
                         'k-disabled': disabled
                     },
-                )} style={ orientation === "horizontal" ? { "--kendo-progressbar-progress": value, height: height } as React.CSSProperties : { "--kendo-progressbar-progress": value, width: width } as React.CSSProperties } >
+                )} style={ orientation === "horizontal" ? { "--kendo-progressbar-value": value, height: height } as React.CSSProperties : { "--kendo-progressbar-value": value, width: width } as React.CSSProperties } >
                 <span className={classNames(
                     'k-progress-status-wrap',
                     {
@@ -63,7 +63,7 @@ export class ProgressBar extends React.Component<ProgressBarProps> {
                     {label && <span className="k-progress-status">{this.props.value}%</span>}
                 </span>
                 {!indeterminate &&
-                <div className="k-selected">
+                <div className="k-progressbar-value k-selected">
                     <span className={classNames(
                         'k-progress-status-wrap',
                         {

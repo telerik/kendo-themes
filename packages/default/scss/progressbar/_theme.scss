@@ -9,7 +9,7 @@
         @include fill( $progressbar-text, $progressbar-bg, $progressbar-border, $progressbar-gradient );
 
         .k-selected {
-            @include fill( $progressbar-fill-text, $progressbar-fill-bg, $progressbar-fill-border, $progressbar-fill-gradient );
+            @include fill( $kendo-progressbar-value-text, $kendo-progressbar-value-bg, $kendo-progressbar-value-border, $kendo-progressbar-value-gradient );
         }
     }
 
@@ -23,7 +23,7 @@
         background-color: $progressbar-bg;
 
         .k-selected {
-            background-color: $progressbar-fill-bg;
+            background-color: $kendo-progressbar-value-bg;
         }
     }
 
