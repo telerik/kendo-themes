@@ -149,18 +149,3 @@
     }
 
 }
-
-
-
-
-@include exports("imageeditor/layout/IE") {
-
-    .k-ie {
-        .k-imageeditor-canvas {
-            flex-direction: row;
-            align-self: flex-start;
-        }
-    }
-
-}
-

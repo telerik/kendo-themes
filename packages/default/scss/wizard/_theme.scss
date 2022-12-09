@@ -5,12 +5,6 @@
         &.k-focus {
             outline-color: $wizard-step-border-focused;
         }
-
-        .k-ie &:focus,
-        .k-ie &.k-focus {
-            @include box-shadow($wizard-focused-shadow);
-            outline: none;
-        }
     }
 
 }

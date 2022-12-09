@@ -149,15 +149,6 @@
         position: absolute;
         top: 0;
         inset-inline-end: 0;
-
-        .k-ie & {
-            right: 0;
-        }
-        .k-ie .k-rtl &,
-        .k-ie [dir="rtl"] & {
-            right: auto;
-            left: 0;
-        }
     }
 
 

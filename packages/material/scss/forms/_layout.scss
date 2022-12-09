@@ -33,10 +33,6 @@
         .k-validator-tooltip {
             bottom: 0;
             transform: translateY(100%) translateY($tooltip-callout-size);
-
-            .k-ie & {
-                left: 0; // TODO: Remove once we drop IE support
-            }
         }
     }
 

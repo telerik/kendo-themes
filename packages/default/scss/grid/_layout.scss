@@ -554,10 +554,6 @@
 
     .k-grid-header-locked + .k-grid-header-wrap.k-auto-scrollable {
         margin-right: 0;
-
-        .k-ie & {
-            display: inline-block;
-        }
     }
 
     .k-grid-header,
@@ -616,21 +612,11 @@
             overflow: hidden;
             text-overflow: ellipsis;
             outline: 0;
-
-            .k-ie & {
-                margin: 0;
-                padding: 0;
-            }
-
         }
 
         .k-with-icon,
         .k-filterable {
             padding-right: $grid-filterable-icon-spacing;
-
-            .k-ie & {
-                padding-right: calc( #{ $kendo-button-calc-size } + #{ $grid-header-menu-icon-spacing });
-            }
         }
 
         .k-header > .k-link:focus {
@@ -1260,19 +1246,6 @@
             gap: map-get( $spacing, 2 );
         }
     }
-    .k-ie .k-filter-menu-container {
-        > * { margin-top: map-get( $spacing, 2 ); }
-        > :first-child { margin-top: 0; }
-
-        // Angular specific
-        .k-filter-and,
-        kendo-grid-filter-menu-input-wrapper > * {
-            margin-top: map-get( $spacing, 2 );
-        }
-        kendo-grid-filter-menu-input-wrapper > :first-child {
-            margin-top: 0;
-        }
-    }
 
     .k-filter-menu.k-popup,
     .k-grid-filter-popup.k-popup {
@@ -1437,28 +1410,6 @@
         .k-columnmenu-item > .k-icon {
             margin-left: $icon-spacing;
             margin-right: 0;
-        }
-    }
-}
-
-@include exports("grid/layout/IE") {
-    // TODO: Remove once we drop IE support
-
-    .k-ie {
-        .k-grid-header,
-        .k-grid-footer {
-            padding-right: $default-scrollbar-width;
-            padding-left: 0;
-            display: block;
-        }
-
-        [dir = "rtl"],
-        .k-rtl {
-            .k-grid-header,
-            .k-grid-footer {
-                padding-right: 0;
-                padding-left: $default-scrollbar-width;
-            }
         }
     }
 }

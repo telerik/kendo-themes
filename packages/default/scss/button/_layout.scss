@@ -216,15 +216,6 @@
         box-shadow: none !important; // sass-lint:disable-line no-important
     }
 
-
-
-    // IE
-    .k-ie .k-button-group {
-        .k-button {
-            @include border-radius( 0 );
-        }
-    }
-
 }
 
 
