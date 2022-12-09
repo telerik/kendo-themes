@@ -3,8 +3,8 @@
     // Base
     .k-progressbar {
         @include border-radius( $kendo-border-radius );
-        --kendo-progressbar-progress: 0;
-        border-width: $progressbar-border-width;
+        --kendo-progressbar-value: 0;
+        border-width: $kendo-progressbar-border-width;
         border-style: solid;
         box-sizing: border-box;
         outline: 0;
@@ -26,7 +26,7 @@
 
 
         // Selection
-        > .k-selected {
+        > .k-progressbar-value {
             border-width: 0;
             border-style: solid;
             display: flex;
@@ -93,12 +93,12 @@
             flex-direction: row;
         }
 
-        > .k-selected {
-            width: calc( var( --kendo-progressbar-progress, 0 ) * 1% ); // sass-lint:disable-line no-duplicate-properties
+        > .k-progressbar-value {
+            width: calc( var( --kendo-progressbar-value, 0 ) * 1% ); // sass-lint:disable-line no-duplicate-properties
             flex-direction: row;
 
             > .k-progress-status-wrap {
-                width: calc( 100% * ( 100 / var( --kendo-progressbar-progress, 1 ) ) );
+                width: calc( 100% * ( 100 / var( --kendo-progressbar-value, 1 ) ) );
             }
         }
 
@@ -111,7 +111,7 @@
         // Horizontal reverse
         &.k-progressbar-reverse {
 
-            > .k-selected {
+            > .k-progressbar-value {
                 flex-direction: row-reverse;
                 justify-self: flex-end;
             }
@@ -138,14 +138,14 @@
             writing-mode: vertical-lr;
         }
 
-        > .k-selected {
-            height: calc( var( --kendo-progressbar-progress, 0 ) * 1% ); // sass-lint:disable-line no-duplicate-properties
+        > .k-progressbar-value {
+            height: calc( var( --kendo-progressbar-value, 0 ) * 1% ); // sass-lint:disable-line no-duplicate-properties
             flex-direction: column-reverse;
             align-self: flex-end;
             align-items: flex-end;
 
             > .k-progress-status-wrap {
-                height: calc( 100% * ( 100 / var( --kendo-progressbar-progress, 1 ) ) ); // sass-lint:disable-line no-duplicate-properties
+                height: calc( 100% * ( 100 / var( --kendo-progressbar-value, 1 ) ) ); // sass-lint:disable-line no-duplicate-properties
             }
         }
 
@@ -159,7 +159,7 @@
         &.k-progressbar-reverse {
             flex-direction: column;
 
-            > .k-selected {
+            > .k-progressbar-value {
                 flex-direction: column;
                 align-self: flex-start;
             }
@@ -174,7 +174,7 @@
     // Indeterminate
     .k-progressbar-indeterminate {
         .k-progress-status-wrap,
-        .k-selected,
+        .k-progressbar-value,
         .k-progressbar-chunk {
             display: none;
         }
@@ -184,8 +184,8 @@
     // Blazor specific
     .telerik-blazor.k-progressbar-horizontal {
 
-        > .k-selected,
-        > .k-selected > .k-progress-status-wrap {
+        > .k-progressbar-value,
+        > .k-progressbar-value > .k-progress-status-wrap {
             transition: width .1s ease-in-out;
         }
     }
@@ -213,7 +213,7 @@
         display: -ms-inline-grid;
 
         > .k-progress-status-wrap,
-        > .k-selected {
+        > .k-progressbar-value {
             -ms-grid-column: 1;
             -ms-grid-row: 1;
         }
@@ -222,7 +222,7 @@
         -ms-grid-columns: 1fr;
         -ms-grid-rows: $progressbar-height;
 
-        &.k-progressbar-reverse > .k-selected {
+        &.k-progressbar-reverse > .k-progressbar-value {
             -ms-grid-column-align: end;
         }
     }
@@ -230,11 +230,11 @@
         -ms-grid-columns: $progressbar-height;
         -ms-grid-rows: 1fr;
 
-        > .k-selected {
+        > .k-progressbar-value {
             -ms-grid-row-align: end;
         }
 
-        &.k-progressbar-reverse > .k-selected {
+        &.k-progressbar-reverse > .k-progressbar-value {
             -ms-grid-row-align: start;
         }
     }

@@ -12,10 +12,18 @@ $progressbar-text: $component-text !default;
 $progressbar-border: null !default;
 $progressbar-gradient: null !default;
 
-$progressbar-fill-bg: $primary !default;
-$progressbar-fill-text: $primary-contrast !default;
-$progressbar-fill-border: null !default;
-$progressbar-fill-gradient: null !default;
+/// Progress background color of the progressbar.
+/// @group progressbar
+$kendo-progressbar-value-bg: $primary !default;
+/// Progress text color of the progressbar.
+/// @group progressbar
+$kendo-progressbar-value-text: $primary-contrast !default;
+/// Progress border color of the progressbar.
+/// @group progressbar
+$kendo-progressbar-value-border: null !default;
+/// Progress background gradient of the progressbar.
+/// @group progressbar
+$kendo-progressbar-value-gradient: null !default;
 
 $progressbar-indeterminate-bg: $progressbar-bg !default;
 $progressbar-indeterminate-text: $progressbar-text !default;
