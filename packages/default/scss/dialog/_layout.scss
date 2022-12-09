@@ -65,19 +65,4 @@
         overflow: hidden;
     }
 
-
-    // Legacy spacing
-    .k-ie .k-dialog-buttongroup {
-
-        .k-button ~ .k-button {
-            margin-left: $dialog-button-spacing;
-
-            .k-rtl &,
-            [dir="rtl"] & {
-                margin-left: 0;
-                margin-right: $dialog-button-spacing;
-            }
-        }
-    }
-
 }

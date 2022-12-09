@@ -36,21 +36,6 @@
         @extend .k-actions;
     }
 
-
-    // Legacy spacing
-    .k-ie {
-        .k-actions .k-button ~ .k-button {
-            margin-left: $actions-button-spacing;
-            flex-shrink: 0;
-
-            .k-rtl &,
-            [dir="rtl"] & {
-                margin-left: 0;
-                margin-right: $actions-button-spacing;
-            }
-        }
-    }
-
     // Actions align
     .k-actions-start {
         justify-content: flex-start;

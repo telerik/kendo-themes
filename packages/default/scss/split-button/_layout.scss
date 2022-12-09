@@ -28,13 +28,3 @@
 
 }
 
-
-@include exports("split-button/layout/legacy") {
-
-    .k-ie .k-split-button {
-        .k-button {
-            @include border-radius( 0 );
-        }
-    }
-
-}

@@ -170,12 +170,4 @@
         @extend .k-search-panel !optional;
     }
 
-
-    // IE
-    .k-ie .k-pdf-viewer-search-dialog {
-        .k-search-container > * + * {
-            margin-left: $pdf-viewer-search-dialog-spacing;
-        }
-    }
-
 }

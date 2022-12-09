@@ -216,26 +216,3 @@
     }
 
 }
-
-@include exports( "taskboard/layout/compatibility" ) {
-
-    .k-ie {
-        .k-taskboard-column:not(:last-child) {
-            margin-right: $taskboard-columns-container-gap;
-        }
-
-        .k-rtl .k-taskboard-column:not(:last-child) {
-            margin-right: 0;
-            margin-left: $taskboard-columns-container-gap;
-        }
-
-        .k-taskboard-column-cards-container {
-            margin-bottom: 3 * $taskboard-column-container-spacing-y;
-        }
-
-        .k-taskboard-column-cards > .k-taskboard-card:not(:last-child) {
-            margin-bottom: $taskboard-column-cards-gap;
-        }
-    }
-
-}

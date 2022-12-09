@@ -377,20 +377,3 @@
     }
 
 }
-
-
-
-
-@include exports("card/layout/ie11") {
-
-    .k-ie11 {
-
-        // IE11 needs units to be added to flex-basis when in shorthand
-        // Thus, `flex: x x 0` will be ignored and we need `flex: x x auto`
-        // See https://github.com/philipwalton/flexbugs#flexbug-4
-        .k-card-body {
-            flex: 1 1 auto;
-        }
-
-    }
-}
