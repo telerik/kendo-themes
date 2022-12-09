@@ -66,7 +66,7 @@
     "utils-docs": "gulp utils-docs",
     "render-test-pages": "node ./scripts/render-test-pages.mjs",
     "update-tests-meta": "node ./scripts/update-tests-meta.js",
-    "cleanup-test-results": "node ./scripts/cleanup-test-results.js",
+    "cleanup-test-results": "npm run update-tests-meta && node ./scripts/cleanup-test-results.js",
     "create-screenshots": "./build/create-screenshots.sh",
     "serve-tests": "http-server ./ -c-1",
     "embed-assets": "gulp assets",

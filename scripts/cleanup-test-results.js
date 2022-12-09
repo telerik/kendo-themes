@@ -2,17 +2,29 @@ const fs = require('fs');
 const path = require('path');
 const glob = require('glob');
 
-const reThemes = /default|classic|bootstrap|material|nouvelle/;
+const testsMeta = JSON.parse( fs.readFileSync( '.cache/tests-meta.json', 'utf8' ) );
+const testCases = Object.keys( testsMeta.files );
+const distHtml = glob.sync('tests/**/*.html');
+const distPng = glob.sync('tests/_output/**/*.png');
 
-const tests = glob.sync('tests/**/*.html').map(test => path.join( path.dirname(test), path.basename(test, '.html')));
-const results = glob.sync('tests/_output/**/*.png');
+// Remove obsolete test pages
+distHtml.forEach( htmlFile => {
+    const fileName = path.basename( htmlFile, '.html' );
 
-results.forEach(result => {
-    let name = path.join( path.dirname(result), path.basename(result, '.png') ).replace('_output', '').replace(reThemes, '');
+    if ( testCases.indexOf( fileName ) === -1 ) {
+        // eslint-disable-next-line no-console
+        console.log( 'Removing', htmlFile );
+        fs.rmSync( htmlFile );
+    }
+});
 
-    name = path.normalize( name );
+// Remove obsolete screenshots
+distPng.forEach( pngFile => {
+    const fileName = path.basename( pngFile, '.png' );
 
-    if (tests.indexOf(name) === -1) {
-        fs.unlinkSync(result);
+    if ( testCases.indexOf( fileName ) === -1 ) {
+        // eslint-disable-next-line no-console
+        console.log( 'Removing', pngFile );
+        fs.rmSync( pngFile );
     }
 });
