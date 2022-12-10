@@ -1,0 +1,2518 @@
+{
+    "files": {
+        "_first": {
+            "path": "_first",
+            "html": "packages/html/src/_first.html",
+            "src": "packages/html/src/_first.html",
+            "dist": "tests/_first.html"
+        },
+        "action-buttons": {
+            "path": "action-buttons/action-buttons",
+            "html": "packages/html/src/action-buttons/tests/action-buttons.html",
+            "src": "packages/html/src/action-buttons/tests/action-buttons.tsx",
+            "dist": "tests/action-buttons/action-buttons.html"
+        },
+        "action-sheet-calendar": {
+            "path": "action-sheet/action-sheet-calendar",
+            "html": "packages/html/src/action-sheet/tests/action-sheet-calendar.html",
+            "src": "packages/html/src/action-sheet/tests/action-sheet-calendar.tsx",
+            "dist": "tests/action-sheet/action-sheet-calendar.html"
+        },
+        "action-sheet-data-table": {
+            "path": "action-sheet/action-sheet-data-table",
+            "html": "packages/html/src/action-sheet/tests/action-sheet-data-table.html",
+            "src": "packages/html/src/action-sheet/tests/action-sheet-data-table.tsx",
+            "dist": "tests/action-sheet/action-sheet-data-table.html"
+        },
+        "action-sheet-date-time-selector": {
+            "path": "action-sheet/action-sheet-date-time-selector",
+            "html": "packages/html/src/action-sheet/tests/action-sheet-date-time-selector.html",
+            "src": "packages/html/src/action-sheet/tests/action-sheet-date-time-selector.tsx",
+            "dist": "tests/action-sheet/action-sheet-date-time-selector.html"
+        },
+        "action-sheet-list": {
+            "path": "action-sheet/action-sheet-list",
+            "html": "packages/html/src/action-sheet/tests/action-sheet-list.html",
+            "src": "packages/html/src/action-sheet/tests/action-sheet-list.tsx",
+            "dist": "tests/action-sheet/action-sheet-list.html"
+        },
+        "action-sheet-position": {
+            "path": "action-sheet/action-sheet-position",
+            "html": "packages/html/src/action-sheet/tests/action-sheet-position.html",
+            "src": "packages/html/src/action-sheet/tests/action-sheet-position.tsx",
+            "dist": "tests/action-sheet/action-sheet-position.html"
+        },
+        "action-sheet-time-selector": {
+            "path": "action-sheet/action-sheet-time-selector",
+            "html": "packages/html/src/action-sheet/tests/action-sheet-time-selector.html",
+            "src": "packages/html/src/action-sheet/tests/action-sheet-time-selector.tsx",
+            "dist": "tests/action-sheet/action-sheet-time-selector.html"
+        },
+        "action-sheet-treeview": {
+            "path": "action-sheet/action-sheet-treeview",
+            "html": "packages/html/src/action-sheet/tests/action-sheet-treeview.html",
+            "src": "packages/html/src/action-sheet/tests/action-sheet-treeview.tsx",
+            "dist": "tests/action-sheet/action-sheet-treeview.html"
+        },
+        "action-sheet": {
+            "path": "action-sheet/action-sheet",
+            "html": "packages/html/src/action-sheet/tests/action-sheet.html",
+            "src": "packages/html/src/action-sheet/tests/action-sheet.tsx",
+            "dist": "tests/action-sheet/action-sheet.html"
+        },
+        "appbar": {
+            "path": "appbar/appbar",
+            "html": "packages/html/src/appbar/tests/appbar.html",
+            "src": "packages/html/src/appbar/tests/appbar.tsx",
+            "dist": "tests/appbar/appbar.html"
+        },
+        "autocomplete-flat": {
+            "path": "autocomplete/autocomplete-flat",
+            "html": "packages/html/src/autocomplete/tests/autocomplete-flat.html",
+            "src": "packages/html/src/autocomplete/tests/autocomplete-flat.tsx",
+            "dist": "tests/autocomplete/autocomplete-flat.html"
+        },
+        "autocomplete-outline": {
+            "path": "autocomplete/autocomplete-outline",
+            "html": "packages/html/src/autocomplete/tests/autocomplete-outline.html",
+            "src": "packages/html/src/autocomplete/tests/autocomplete-outline.tsx",
+            "dist": "tests/autocomplete/autocomplete-outline.html"
+        },
+        "autocomplete": {
+            "path": "autocomplete/autocomplete",
+            "html": "packages/html/src/autocomplete/tests/autocomplete.html",
+            "src": "packages/html/src/autocomplete/tests/autocomplete.tsx",
+            "dist": "tests/autocomplete/autocomplete.html"
+        },
+        "avatar-size-rounded": {
+            "path": "avatar/avatar-size-rounded",
+            "html": "packages/html/src/avatar/tests/avatar-size-rounded.html",
+            "src": "packages/html/src/avatar/tests/avatar-size-rounded.tsx",
+            "dist": "tests/avatar/avatar-size-rounded.html"
+        },
+        "avatar": {
+            "path": "avatar/avatar",
+            "html": "packages/html/src/avatar/tests/avatar.html",
+            "src": "packages/html/src/avatar/tests/avatar.tsx",
+            "dist": "tests/avatar/avatar.html"
+        },
+        "badge-misc": {
+            "path": "badge/badge-misc",
+            "html": "packages/html/src/badge/tests/badge-misc.html",
+            "src": "packages/html/src/badge/tests/badge-misc.tsx",
+            "dist": "tests/badge/badge-misc.html"
+        },
+        "badge-position": {
+            "path": "badge/badge-position",
+            "html": "packages/html/src/badge/tests/badge-position.html",
+            "src": "packages/html/src/badge/tests/badge-position.tsx",
+            "dist": "tests/badge/badge-position.html"
+        },
+        "badge-size": {
+            "path": "badge/badge-size",
+            "html": "packages/html/src/badge/tests/badge-size.html",
+            "src": "packages/html/src/badge/tests/badge-size.tsx",
+            "dist": "tests/badge/badge-size.html"
+        },
+        "badge": {
+            "path": "badge/badge",
+            "html": "packages/html/src/badge/tests/badge.html",
+            "src": "packages/html/src/badge/tests/badge.tsx",
+            "dist": "tests/badge/badge.html"
+        },
+        "barcode": {
+            "path": "barcode/barcode",
+            "html": "packages/html/src/barcode/tests/barcode.html",
+            "src": "packages/html/src/barcode/tests/barcode.tsx",
+            "dist": "tests/barcode/barcode.html"
+        },
+        "bottom-nav-colors": {
+            "path": "bottom-nav/bottom-nav-colors",
+            "html": "packages/html/src/bottom-nav/tests/bottom-nav-colors.html",
+            "src": "packages/html/src/bottom-nav/tests/bottom-nav-colors.tsx",
+            "dist": "tests/bottom-nav/bottom-nav-colors.html"
+        },
+        "bottom-nav-items": {
+            "path": "bottom-nav/bottom-nav-items",
+            "html": "packages/html/src/bottom-nav/tests/bottom-nav-items.html",
+            "src": "packages/html/src/bottom-nav/tests/bottom-nav-items.tsx",
+            "dist": "tests/bottom-nav/bottom-nav-items.html"
+        },
+        "bottom-nav-rtl": {
+            "path": "bottom-nav/bottom-nav-rtl",
+            "html": "packages/html/src/bottom-nav/tests/bottom-nav-rtl.html",
+            "src": "packages/html/src/bottom-nav/tests/bottom-nav-rtl.tsx",
+            "dist": "tests/bottom-nav/bottom-nav-rtl.html"
+        },
+        "bottom-nav": {
+            "path": "bottom-nav/bottom-nav",
+            "html": "packages/html/src/bottom-nav/tests/bottom-nav.html",
+            "src": "packages/html/src/bottom-nav/tests/bottom-nav.tsx",
+            "dist": "tests/bottom-nav/bottom-nav.html"
+        },
+        "breadcrumb-rtl": {
+            "path": "breadcrumb/breadcrumb-rtl",
+            "html": "packages/html/src/breadcrumb/tests/breadcrumb-rtl.html",
+            "src": "packages/html/src/breadcrumb/tests/breadcrumb-rtl.tsx",
+            "dist": "tests/breadcrumb/breadcrumb-rtl.html"
+        },
+        "breadcrumb": {
+            "path": "breadcrumb/breadcrumb",
+            "html": "packages/html/src/breadcrumb/tests/breadcrumb.html",
+            "src": "packages/html/src/breadcrumb/tests/breadcrumb.tsx",
+            "dist": "tests/breadcrumb/breadcrumb.html"
+        },
+        "button-group-rounded": {
+            "path": "button-group/button-group-rounded",
+            "html": "packages/html/src/button-group/tests/button-group-rounded.html",
+            "src": "packages/html/src/button-group/tests/button-group-rounded.tsx",
+            "dist": "tests/button-group/button-group-rounded.html"
+        },
+        "button-group": {
+            "path": "button-group/button-group",
+            "html": "packages/html/src/button-group/tests/button-group.html",
+            "src": "packages/html/src/button-group/tests/button-group.tsx",
+            "dist": "tests/button-group/button-group.html"
+        },
+        "button-clear": {
+            "path": "button/button-clear",
+            "html": "packages/html/src/button/tests/button-clear.html",
+            "src": "packages/html/src/button/tests/button-clear.tsx",
+            "dist": "tests/button/button-clear.html"
+        },
+        "button-flat": {
+            "path": "button/button-flat",
+            "html": "packages/html/src/button/tests/button-flat.html",
+            "src": "packages/html/src/button/tests/button-flat.tsx",
+            "dist": "tests/button/button-flat.html"
+        },
+        "button-link": {
+            "path": "button/button-link",
+            "html": "packages/html/src/button/tests/button-link.html",
+            "src": "packages/html/src/button/tests/button-link.tsx",
+            "dist": "tests/button/button-link.html"
+        },
+        "button-outline": {
+            "path": "button/button-outline",
+            "html": "packages/html/src/button/tests/button-outline.html",
+            "src": "packages/html/src/button/tests/button-outline.tsx",
+            "dist": "tests/button/button-outline.html"
+        },
+        "button-rtl": {
+            "path": "button/button-rtl",
+            "html": "packages/html/src/button/tests/button-rtl.html",
+            "src": "packages/html/src/button/tests/button-rtl.tsx",
+            "dist": "tests/button/button-rtl.html"
+        },
+        "button-size": {
+            "path": "button/button-size",
+            "html": "packages/html/src/button/tests/button-size.html",
+            "src": "packages/html/src/button/tests/button-size.tsx",
+            "dist": "tests/button/button-size.html"
+        },
+        "button-solid": {
+            "path": "button/button-solid",
+            "html": "packages/html/src/button/tests/button-solid.html",
+            "src": "packages/html/src/button/tests/button-solid.tsx",
+            "dist": "tests/button/button-solid.html"
+        },
+        "button": {
+            "path": "button/button",
+            "html": "packages/html/src/button/tests/button.html",
+            "src": "packages/html/src/button/tests/button.tsx",
+            "dist": "tests/button/button.html"
+        },
+        "calendar-classic-jquery": {
+            "path": "calendar/calendar-classic-jquery",
+            "html": "packages/html/src/calendar/tests/calendar-classic-jquery.html",
+            "src": "packages/html/src/calendar/tests/calendar-classic-jquery.tsx",
+            "dist": "tests/calendar/calendar-classic-jquery.html"
+        },
+        "calendar-infinite-rtl": {
+            "path": "calendar/calendar-infinite-rtl",
+            "html": "packages/html/src/calendar/tests/calendar-infinite-rtl.html",
+            "src": "packages/html/src/calendar/tests/calendar-infinite-rtl.tsx",
+            "dist": "tests/calendar/calendar-infinite-rtl.html"
+        },
+        "calendar-infinite": {
+            "path": "calendar/calendar-infinite",
+            "html": "packages/html/src/calendar/tests/calendar-infinite.html",
+            "src": "packages/html/src/calendar/tests/calendar-infinite.tsx",
+            "dist": "tests/calendar/calendar-infinite.html"
+        },
+        "calendar-modern-angular": {
+            "path": "calendar/calendar-modern-angular",
+            "html": "packages/html/src/calendar/tests/calendar-modern-angular.html",
+            "src": "packages/html/src/calendar/tests/calendar-modern-angular.tsx",
+            "dist": "tests/calendar/calendar-modern-angular.html"
+        },
+        "calendar-modern-jquery": {
+            "path": "calendar/calendar-modern-jquery",
+            "html": "packages/html/src/calendar/tests/calendar-modern-jquery.html",
+            "src": "packages/html/src/calendar/tests/calendar-modern-jquery.tsx",
+            "dist": "tests/calendar/calendar-modern-jquery.html"
+        },
+        "calendar-modern-size": {
+            "path": "calendar/calendar-modern-size",
+            "html": "packages/html/src/calendar/tests/calendar-modern-size.html",
+            "src": "packages/html/src/calendar/tests/calendar-modern-size.tsx",
+            "dist": "tests/calendar/calendar-modern-size.html"
+        },
+        "captcha-loading": {
+            "path": "captcha/captcha-loading",
+            "html": "packages/html/src/captcha/tests/captcha-loading.html",
+            "src": "packages/html/src/captcha/tests/captcha-loading.tsx",
+            "dist": "tests/captcha/captcha-loading.html"
+        },
+        "captcha": {
+            "path": "captcha/captcha",
+            "html": "packages/html/src/captcha/tests/captcha.html",
+            "src": "packages/html/src/captcha/tests/captcha.tsx",
+            "dist": "tests/captcha/captcha.html"
+        },
+        "card-callout": {
+            "path": "card/card-callout",
+            "html": "packages/html/src/card/tests/card-callout.html",
+            "src": "packages/html/src/card/tests/card-callout.tsx",
+            "dist": "tests/card/card-callout.html"
+        },
+        "card-custom": {
+            "path": "card/card-custom",
+            "html": "packages/html/src/card/tests/card-custom.html",
+            "src": "packages/html/src/card/tests/card-custom.tsx",
+            "dist": "tests/card/card-custom.html"
+        },
+        "card-deck": {
+            "path": "card/card-deck",
+            "html": "packages/html/src/card/tests/card-deck.html",
+            "src": "packages/html/src/card/tests/card-deck.tsx",
+            "dist": "tests/card/card-deck.html"
+        },
+        "card-layout-horizontal": {
+            "path": "card/card-layout-horizontal",
+            "html": "packages/html/src/card/tests/card-layout-horizontal.html",
+            "src": "packages/html/src/card/tests/card-layout-horizontal.tsx",
+            "dist": "tests/card/card-layout-horizontal.html"
+        },
+        "card-layout-vertical": {
+            "path": "card/card-layout-vertical",
+            "html": "packages/html/src/card/tests/card-layout-vertical.html",
+            "src": "packages/html/src/card/tests/card-layout-vertical.tsx",
+            "dist": "tests/card/card-layout-vertical.html"
+        },
+        "card-rtl": {
+            "path": "card/card-rtl",
+            "html": "packages/html/src/card/tests/card-rtl.html",
+            "src": "packages/html/src/card/tests/card-rtl.tsx",
+            "dist": "tests/card/card-rtl.html"
+        },
+        "card-variants": {
+            "path": "card/card-variants",
+            "html": "packages/html/src/card/tests/card-variants.html",
+            "src": "packages/html/src/card/tests/card-variants.tsx",
+            "dist": "tests/card/card-variants.html"
+        },
+        "card": {
+            "path": "card/card",
+            "html": "packages/html/src/card/tests/card.html",
+            "src": "packages/html/src/card/tests/card.tsx",
+            "dist": "tests/card/card.html"
+        },
+        "chart": {
+            "path": "chart/chart",
+            "html": "packages/html/src/chart/tests/chart.html",
+            "src": "packages/html/src/chart/tests/chart.tsx",
+            "dist": "tests/chart/chart.html"
+        },
+        "chat-rtl": {
+            "path": "chat/chat-rtl",
+            "html": "packages/html/src/chat/tests/chat-rtl.html",
+            "src": "packages/html/src/chat/tests/chat-rtl.tsx",
+            "dist": "tests/chat/chat-rtl.html"
+        },
+        "chat-scrollable-deck": {
+            "path": "chat/chat-scrollable-deck",
+            "html": "packages/html/src/chat/tests/chat-scrollable-deck.html",
+            "src": "packages/html/src/chat/tests/chat-scrollable-deck.tsx",
+            "dist": "tests/chat/chat-scrollable-deck.html"
+        },
+        "chat": {
+            "path": "chat/chat",
+            "html": "packages/html/src/chat/tests/chat.html",
+            "src": "packages/html/src/chat/tests/chat.tsx",
+            "dist": "tests/chat/chat.html"
+        },
+        "checkbox-rounded": {
+            "path": "checkbox/checkbox-rounded",
+            "html": "packages/html/src/checkbox/tests/checkbox-rounded.html",
+            "src": "packages/html/src/checkbox/tests/checkbox-rounded.tsx",
+            "dist": "tests/checkbox/checkbox-rounded.html"
+        },
+        "checkbox-size": {
+            "path": "checkbox/checkbox-size",
+            "html": "packages/html/src/checkbox/tests/checkbox-size.html",
+            "src": "packages/html/src/checkbox/tests/checkbox-size.tsx",
+            "dist": "tests/checkbox/checkbox-size.html"
+        },
+        "checkbox": {
+            "path": "checkbox/checkbox",
+            "html": "packages/html/src/checkbox/tests/checkbox.html",
+            "src": "packages/html/src/checkbox/tests/checkbox.tsx",
+            "dist": "tests/checkbox/checkbox.html"
+        },
+        "chip-list-size": {
+            "path": "chip/chip-list-size",
+            "html": "packages/html/src/chip/tests/chip-list-size.html",
+            "src": "packages/html/src/chip/tests/chip-list-size.tsx",
+            "dist": "tests/chip/chip-list-size.html"
+        },
+        "chip-list": {
+            "path": "chip/chip-list",
+            "html": "packages/html/src/chip/tests/chip-list.html",
+            "src": "packages/html/src/chip/tests/chip-list.tsx",
+            "dist": "tests/chip/chip-list.html"
+        },
+        "chip-outline": {
+            "path": "chip/chip-outline",
+            "html": "packages/html/src/chip/tests/chip-outline.html",
+            "src": "packages/html/src/chip/tests/chip-outline.tsx",
+            "dist": "tests/chip/chip-outline.html"
+        },
+        "chip-size-rounded": {
+            "path": "chip/chip-size-rounded",
+            "html": "packages/html/src/chip/tests/chip-size-rounded.html",
+            "src": "packages/html/src/chip/tests/chip-size-rounded.tsx",
+            "dist": "tests/chip/chip-size-rounded.html"
+        },
+        "chip-solid": {
+            "path": "chip/chip-solid",
+            "html": "packages/html/src/chip/tests/chip-solid.html",
+            "src": "packages/html/src/chip/tests/chip-solid.tsx",
+            "dist": "tests/chip/chip-solid.html"
+        },
+        "coloreditor-focused-colorgradient": {
+            "path": "coloreditor/coloreditor-focused-colorgradient",
+            "html": "packages/html/src/coloreditor/tests/coloreditor-focused-colorgradient.html",
+            "src": "packages/html/src/coloreditor/tests/coloreditor-focused-colorgradient.tsx",
+            "dist": "tests/coloreditor/coloreditor-focused-colorgradient.html"
+        },
+        "coloreditor-rtl": {
+            "path": "coloreditor/coloreditor-rtl",
+            "html": "packages/html/src/coloreditor/tests/coloreditor-rtl.html",
+            "src": "packages/html/src/coloreditor/tests/coloreditor-rtl.tsx",
+            "dist": "tests/coloreditor/coloreditor-rtl.html"
+        },
+        "coloreditor-states": {
+            "path": "coloreditor/coloreditor-states",
+            "html": "packages/html/src/coloreditor/tests/coloreditor-states.html",
+            "src": "packages/html/src/coloreditor/tests/coloreditor-states.tsx",
+            "dist": "tests/coloreditor/coloreditor-states.html"
+        },
+        "coloreditor-views": {
+            "path": "coloreditor/coloreditor-views",
+            "html": "packages/html/src/coloreditor/tests/coloreditor-views.html",
+            "src": "packages/html/src/coloreditor/tests/coloreditor-views.tsx",
+            "dist": "tests/coloreditor/coloreditor-views.html"
+        },
+        "coloreditor": {
+            "path": "coloreditor/coloreditor",
+            "html": "packages/html/src/coloreditor/tests/coloreditor.html",
+            "src": "packages/html/src/coloreditor/tests/coloreditor.tsx",
+            "dist": "tests/coloreditor/coloreditor.html"
+        },
+        "colorgradient-contrast": {
+            "path": "colorgradient/colorgradient-contrast",
+            "html": "packages/html/src/colorgradient/tests/colorgradient-contrast.html",
+            "src": "packages/html/src/colorgradient/tests/colorgradient-contrast.tsx",
+            "dist": "tests/colorgradient/colorgradient-contrast.html"
+        },
+        "colorgradient-draghandle": {
+            "path": "colorgradient/colorgradient-draghandle",
+            "html": "packages/html/src/colorgradient/tests/colorgradient-draghandle.html",
+            "src": "packages/html/src/colorgradient/tests/colorgradient-draghandle.tsx",
+            "dist": "tests/colorgradient/colorgradient-draghandle.html"
+        },
+        "colorgradient-modes": {
+            "path": "colorgradient/colorgradient-modes",
+            "html": "packages/html/src/colorgradient/tests/colorgradient-modes.html",
+            "src": "packages/html/src/colorgradient/tests/colorgradient-modes.tsx",
+            "dist": "tests/colorgradient/colorgradient-modes.html"
+        },
+        "colorgradient-rtl": {
+            "path": "colorgradient/colorgradient-rtl",
+            "html": "packages/html/src/colorgradient/tests/colorgradient-rtl.html",
+            "src": "packages/html/src/colorgradient/tests/colorgradient-rtl.tsx",
+            "dist": "tests/colorgradient/colorgradient-rtl.html"
+        },
+        "colorgradient-states": {
+            "path": "colorgradient/colorgradient-states",
+            "html": "packages/html/src/colorgradient/tests/colorgradient-states.html",
+            "src": "packages/html/src/colorgradient/tests/colorgradient-states.tsx",
+            "dist": "tests/colorgradient/colorgradient-states.html"
+        },
+        "colorgradient": {
+            "path": "colorgradient/colorgradient",
+            "html": "packages/html/src/colorgradient/tests/colorgradient.html",
+            "src": "packages/html/src/colorgradient/tests/colorgradient.tsx",
+            "dist": "tests/colorgradient/colorgradient.html"
+        },
+        "colorpalette-states": {
+            "path": "colorpalette/colorpalette-states",
+            "html": "packages/html/src/colorpalette/tests/colorpalette-states.html",
+            "src": "packages/html/src/colorpalette/tests/colorpalette-states.tsx",
+            "dist": "tests/colorpalette/colorpalette-states.html"
+        },
+        "colorpalette-variants": {
+            "path": "colorpalette/colorpalette-variants",
+            "html": "packages/html/src/colorpalette/tests/colorpalette-variants.html",
+            "src": "packages/html/src/colorpalette/tests/colorpalette-variants.tsx",
+            "dist": "tests/colorpalette/colorpalette-variants.html"
+        },
+        "colorpalette": {
+            "path": "colorpalette/colorpalette",
+            "html": "packages/html/src/colorpalette/tests/colorpalette.html",
+            "src": "packages/html/src/colorpalette/tests/colorpalette.tsx",
+            "dist": "tests/colorpalette/colorpalette.html"
+        },
+        "colorpicker-dropdown": {
+            "path": "colorpicker/colorpicker-dropdown",
+            "html": "packages/html/src/colorpicker/tests/colorpicker-dropdown.html",
+            "src": "packages/html/src/colorpicker/tests/colorpicker-dropdown.tsx",
+            "dist": "tests/colorpicker/colorpicker-dropdown.html"
+        },
+        "colorpicker": {
+            "path": "colorpicker/colorpicker",
+            "html": "packages/html/src/colorpicker/tests/colorpicker.html",
+            "src": "packages/html/src/colorpicker/tests/colorpicker.tsx",
+            "dist": "tests/colorpicker/colorpicker.html"
+        },
+        "combobox-flat": {
+            "path": "combobox/combobox-flat",
+            "html": "packages/html/src/combobox/tests/combobox-flat.html",
+            "src": "packages/html/src/combobox/tests/combobox-flat.tsx",
+            "dist": "tests/combobox/combobox-flat.html"
+        },
+        "combobox-outline": {
+            "path": "combobox/combobox-outline",
+            "html": "packages/html/src/combobox/tests/combobox-outline.html",
+            "src": "packages/html/src/combobox/tests/combobox-outline.tsx",
+            "dist": "tests/combobox/combobox-outline.html"
+        },
+        "combobox": {
+            "path": "combobox/combobox",
+            "html": "packages/html/src/combobox/tests/combobox.html",
+            "src": "packages/html/src/combobox/tests/combobox.tsx",
+            "dist": "tests/combobox/combobox.html"
+        },
+        "context-menu-in-window": {
+            "path": "context-menu/context-menu-in-window",
+            "html": "packages/html/src/context-menu/tests/context-menu-in-window.html",
+            "src": "packages/html/src/context-menu/tests/context-menu-in-window.tsx",
+            "dist": "tests/context-menu/context-menu-in-window.html"
+        },
+        "context-menu": {
+            "path": "context-menu/context-menu",
+            "html": "packages/html/src/context-menu/tests/context-menu.html",
+            "src": "packages/html/src/context-menu/tests/context-menu.tsx",
+            "dist": "tests/context-menu/context-menu.html"
+        },
+        "dateinput-flat": {
+            "path": "dateinput/dateinput-flat",
+            "html": "packages/html/src/dateinput/tests/dateinput-flat.html",
+            "src": "packages/html/src/dateinput/tests/dateinput-flat.tsx",
+            "dist": "tests/dateinput/dateinput-flat.html"
+        },
+        "dateinput-outline": {
+            "path": "dateinput/dateinput-outline",
+            "html": "packages/html/src/dateinput/tests/dateinput-outline.html",
+            "src": "packages/html/src/dateinput/tests/dateinput-outline.tsx",
+            "dist": "tests/dateinput/dateinput-outline.html"
+        },
+        "dateinput": {
+            "path": "dateinput/dateinput",
+            "html": "packages/html/src/dateinput/tests/dateinput.html",
+            "src": "packages/html/src/dateinput/tests/dateinput.tsx",
+            "dist": "tests/dateinput/dateinput.html"
+        },
+        "datepicker-adaptive": {
+            "path": "datepicker/datepicker-adaptive",
+            "html": "packages/html/src/datepicker/tests/datepicker-adaptive.html",
+            "src": "packages/html/src/datepicker/tests/datepicker-adaptive.tsx",
+            "dist": "tests/datepicker/datepicker-adaptive.html"
+        },
+        "datepicker-flat": {
+            "path": "datepicker/datepicker-flat",
+            "html": "packages/html/src/datepicker/tests/datepicker-flat.html",
+            "src": "packages/html/src/datepicker/tests/datepicker-flat.tsx",
+            "dist": "tests/datepicker/datepicker-flat.html"
+        },
+        "datepicker-outline": {
+            "path": "datepicker/datepicker-outline",
+            "html": "packages/html/src/datepicker/tests/datepicker-outline.html",
+            "src": "packages/html/src/datepicker/tests/datepicker-outline.tsx",
+            "dist": "tests/datepicker/datepicker-outline.html"
+        },
+        "datepicker": {
+            "path": "datepicker/datepicker",
+            "html": "packages/html/src/datepicker/tests/datepicker.html",
+            "src": "packages/html/src/datepicker/tests/datepicker.tsx",
+            "dist": "tests/datepicker/datepicker.html"
+        },
+        "daterangepicker-adaptive": {
+            "path": "daterangepicker/daterangepicker-adaptive",
+            "html": "packages/html/src/daterangepicker/tests/daterangepicker-adaptive.html",
+            "src": "packages/html/src/daterangepicker/tests/daterangepicker-adaptive.tsx",
+            "dist": "tests/daterangepicker/daterangepicker-adaptive.html"
+        },
+        "daterangepicker-size-rounded": {
+            "path": "daterangepicker/daterangepicker-size-rounded",
+            "html": "packages/html/src/daterangepicker/tests/daterangepicker-size-rounded.html",
+            "src": "packages/html/src/daterangepicker/tests/daterangepicker-size-rounded.tsx",
+            "dist": "tests/daterangepicker/daterangepicker-size-rounded.html"
+        },
+        "daterangepicker": {
+            "path": "daterangepicker/daterangepicker",
+            "html": "packages/html/src/daterangepicker/tests/daterangepicker.html",
+            "src": "packages/html/src/daterangepicker/tests/daterangepicker.tsx",
+            "dist": "tests/daterangepicker/daterangepicker.html"
+        },
+        "datetime-selector": {
+            "path": "datetime-selector/datetime-selector",
+            "html": "packages/html/src/datetime-selector/tests/datetime-selector.html",
+            "src": "packages/html/src/datetime-selector/tests/datetime-selector.tsx",
+            "dist": "tests/datetime-selector/datetime-selector.html"
+        },
+        "datetimepicker": {
+            "path": "datetimepicker/datetimepicker",
+            "html": "packages/html/src/datetimepicker/tests/datetimepicker.html",
+            "src": "packages/html/src/datetimepicker/tests/datetimepicker.tsx",
+            "dist": "tests/datetimepicker/datetimepicker.html"
+        },
+        "dialog-action-buttons-react": {
+            "path": "dialog/dialog-action-buttons-react",
+            "html": "packages/html/src/dialog/tests/dialog-action-buttons-react.html",
+            "src": "packages/html/src/dialog/tests/dialog-action-buttons-react.tsx",
+            "dist": "tests/dialog/dialog-action-buttons-react.html"
+        },
+        "dialog-action-buttons": {
+            "path": "dialog/dialog-action-buttons",
+            "html": "packages/html/src/dialog/tests/dialog-action-buttons.html",
+            "src": "packages/html/src/dialog/tests/dialog-action-buttons.tsx",
+            "dist": "tests/dialog/dialog-action-buttons.html"
+        },
+        "dialog-in-window": {
+            "path": "dialog/dialog-in-window",
+            "html": "packages/html/src/dialog/tests/dialog-in-window.html",
+            "src": "packages/html/src/dialog/tests/dialog-in-window.tsx",
+            "dist": "tests/dialog/dialog-in-window.html"
+        },
+        "dialog-modal-angular": {
+            "path": "dialog/dialog-modal-angular",
+            "html": "packages/html/src/dialog/tests/dialog-modal-angular.html",
+            "src": "packages/html/src/dialog/tests/dialog-modal-angular.tsx",
+            "dist": "tests/dialog/dialog-modal-angular.html"
+        },
+        "dialog": {
+            "path": "dialog/dialog",
+            "html": "packages/html/src/dialog/tests/dialog.html",
+            "src": "packages/html/src/dialog/tests/dialog.tsx",
+            "dist": "tests/dialog/dialog.html"
+        },
+        "drawer-hierarchical-item-levels": {
+            "path": "drawer/drawer-hierarchical-item-levels",
+            "html": "packages/html/src/drawer/tests/drawer-hierarchical-item-levels.html",
+            "src": "packages/html/src/drawer/tests/drawer-hierarchical-item-levels.tsx",
+            "dist": "tests/drawer/drawer-hierarchical-item-levels.html"
+        },
+        "drawer-overlay-mini": {
+            "path": "drawer/drawer-overlay-mini",
+            "html": "packages/html/src/drawer/tests/drawer-overlay-mini.html",
+            "src": "packages/html/src/drawer/tests/drawer-overlay-mini.tsx",
+            "dist": "tests/drawer/drawer-overlay-mini.html"
+        },
+        "drawer-overlay": {
+            "path": "drawer/drawer-overlay",
+            "html": "packages/html/src/drawer/tests/drawer-overlay.html",
+            "src": "packages/html/src/drawer/tests/drawer-overlay.tsx",
+            "dist": "tests/drawer/drawer-overlay.html"
+        },
+        "drawer-rtl": {
+            "path": "drawer/drawer-rtl",
+            "html": "packages/html/src/drawer/tests/drawer-rtl.html",
+            "src": "packages/html/src/drawer/tests/drawer-rtl.tsx",
+            "dist": "tests/drawer/drawer-rtl.html"
+        },
+        "drawer": {
+            "path": "drawer/drawer",
+            "html": "packages/html/src/drawer/tests/drawer.html",
+            "src": "packages/html/src/drawer/tests/drawer.tsx",
+            "dist": "tests/drawer/drawer.html"
+        },
+        "drop-hint": {
+            "path": "drop-hint/drop-hint",
+            "html": "packages/html/src/drop-hint/tests/drop-hint.html",
+            "src": "packages/html/src/drop-hint/tests/drop-hint.tsx",
+            "dist": "tests/drop-hint/drop-hint.html"
+        },
+        "dropdowngrid-flat": {
+            "path": "dropdowngrid/dropdowngrid-flat",
+            "html": "packages/html/src/dropdowngrid/tests/dropdowngrid-flat.html",
+            "src": "packages/html/src/dropdowngrid/tests/dropdowngrid-flat.tsx",
+            "dist": "tests/dropdowngrid/dropdowngrid-flat.html"
+        },
+        "dropdowngrid-outline": {
+            "path": "dropdowngrid/dropdowngrid-outline",
+            "html": "packages/html/src/dropdowngrid/tests/dropdowngrid-outline.html",
+            "src": "packages/html/src/dropdowngrid/tests/dropdowngrid-outline.tsx",
+            "dist": "tests/dropdowngrid/dropdowngrid-outline.html"
+        },
+        "dropdowngrid": {
+            "path": "dropdowngrid/dropdowngrid",
+            "html": "packages/html/src/dropdowngrid/tests/dropdowngrid.html",
+            "src": "packages/html/src/dropdowngrid/tests/dropdowngrid.tsx",
+            "dist": "tests/dropdowngrid/dropdowngrid.html"
+        },
+        "dropdownlist-adaptive": {
+            "path": "dropdownlist/dropdownlist-adaptive",
+            "html": "packages/html/src/dropdownlist/tests/dropdownlist-adaptive.html",
+            "src": "packages/html/src/dropdownlist/tests/dropdownlist-adaptive.tsx",
+            "dist": "tests/dropdownlist/dropdownlist-adaptive.html"
+        },
+        "dropdownlist-flat": {
+            "path": "dropdownlist/dropdownlist-flat",
+            "html": "packages/html/src/dropdownlist/tests/dropdownlist-flat.html",
+            "src": "packages/html/src/dropdownlist/tests/dropdownlist-flat.tsx",
+            "dist": "tests/dropdownlist/dropdownlist-flat.html"
+        },
+        "dropdownlist-outline": {
+            "path": "dropdownlist/dropdownlist-outline",
+            "html": "packages/html/src/dropdownlist/tests/dropdownlist-outline.html",
+            "src": "packages/html/src/dropdownlist/tests/dropdownlist-outline.tsx",
+            "dist": "tests/dropdownlist/dropdownlist-outline.html"
+        },
+        "dropdownlist": {
+            "path": "dropdownlist/dropdownlist",
+            "html": "packages/html/src/dropdownlist/tests/dropdownlist.html",
+            "src": "packages/html/src/dropdownlist/tests/dropdownlist.tsx",
+            "dist": "tests/dropdownlist/dropdownlist.html"
+        },
+        "dropzone": {
+            "path": "dropzone/dropzone",
+            "html": "packages/html/src/dropzone/tests/dropzone.html",
+            "src": "packages/html/src/dropzone/tests/dropzone.tsx",
+            "dist": "tests/dropzone/dropzone.html"
+        },
+        "editor-angular": {
+            "path": "editor/editor-angular",
+            "html": "packages/html/src/editor/tests/editor-angular.html",
+            "src": "packages/html/src/editor/tests/editor-angular.tsx",
+            "dist": "tests/editor/editor-angular.html"
+        },
+        "editor-dialog-view-source": {
+            "path": "editor/editor-dialog-view-source",
+            "html": "packages/html/src/editor/tests/editor-dialog-view-source.html",
+            "src": "packages/html/src/editor/tests/editor-dialog-view-source.tsx",
+            "dist": "tests/editor/editor-dialog-view-source.html"
+        },
+        "editor-find-replace": {
+            "path": "editor/editor-find-replace",
+            "html": "packages/html/src/editor/tests/editor-find-replace.html",
+            "src": "packages/html/src/editor/tests/editor-find-replace.tsx",
+            "dist": "tests/editor/editor-find-replace.html"
+        },
+        "editor-iFrameContent": {
+            "path": "editor/editor-iFrameContent",
+            "html": "packages/html/src/editor/tests/editor-iFrameContent.html",
+            "src": "packages/html/src/editor/tests/editor-iFrameContent.html",
+            "dist": "tests/editor/editor-iFrameContent.html"
+        },
+        "editor-jquery": {
+            "path": "editor/editor-jquery",
+            "html": "packages/html/src/editor/tests/editor-jquery.html",
+            "src": "packages/html/src/editor/tests/editor-jquery.tsx",
+            "dist": "tests/editor/editor-jquery.html"
+        },
+        "editor-react": {
+            "path": "editor/editor-react",
+            "html": "packages/html/src/editor/tests/editor-react.html",
+            "src": "packages/html/src/editor/tests/editor-react.tsx",
+            "dist": "tests/editor/editor-react.html"
+        },
+        "editor-table-wizard-accessibility": {
+            "path": "editor/editor-table-wizard-accessibility",
+            "html": "packages/html/src/editor/tests/editor-table-wizard-accessibility.html",
+            "src": "packages/html/src/editor/tests/editor-table-wizard-accessibility.tsx",
+            "dist": "tests/editor/editor-table-wizard-accessibility.html"
+        },
+        "expansion-panel-rtl": {
+            "path": "expansion-panel/expansion-panel-rtl",
+            "html": "packages/html/src/expansion-panel/tests/expansion-panel-rtl.html",
+            "src": "packages/html/src/expansion-panel/tests/expansion-panel-rtl.tsx",
+            "dist": "tests/expansion-panel/expansion-panel-rtl.html"
+        },
+        "expansion-panel": {
+            "path": "expansion-panel/expansion-panel",
+            "html": "packages/html/src/expansion-panel/tests/expansion-panel.html",
+            "src": "packages/html/src/expansion-panel/tests/expansion-panel.tsx",
+            "dist": "tests/expansion-panel/expansion-panel.html"
+        },
+        "fab-items": {
+            "path": "fab/fab-items",
+            "html": "packages/html/src/fab/tests/fab-items.html",
+            "src": "packages/html/src/fab/tests/fab-items.tsx",
+            "dist": "tests/fab/fab-items.html"
+        },
+        "fab-position": {
+            "path": "fab/fab-position",
+            "html": "packages/html/src/fab/tests/fab-position.html",
+            "src": "packages/html/src/fab/tests/fab-position.tsx",
+            "dist": "tests/fab/fab-position.html"
+        },
+        "fab-size": {
+            "path": "fab/fab-size",
+            "html": "packages/html/src/fab/tests/fab-size.html",
+            "src": "packages/html/src/fab/tests/fab-size.tsx",
+            "dist": "tests/fab/fab-size.html"
+        },
+        "fab-states": {
+            "path": "fab/fab-states",
+            "html": "packages/html/src/fab/tests/fab-states.html",
+            "src": "packages/html/src/fab/tests/fab-states.tsx",
+            "dist": "tests/fab/fab-states.html"
+        },
+        "fab": {
+            "path": "fab/fab",
+            "html": "packages/html/src/fab/tests/fab.html",
+            "src": "packages/html/src/fab/tests/fab.tsx",
+            "dist": "tests/fab/fab.html"
+        },
+        "filemanager-contextmenu": {
+            "path": "filemanager/filemanager-contextmenu",
+            "html": "packages/html/src/filemanager/tests/filemanager-contextmenu.html",
+            "src": "packages/html/src/filemanager/tests/filemanager-contextmenu.tsx",
+            "dist": "tests/filemanager/filemanager-contextmenu.html"
+        },
+        "filemanager-dialogs": {
+            "path": "filemanager/filemanager-dialogs",
+            "html": "packages/html/src/filemanager/tests/filemanager-dialogs.html",
+            "src": "packages/html/src/filemanager/tests/filemanager-dialogs.tsx",
+            "dist": "tests/filemanager/filemanager-dialogs.html"
+        },
+        "filemanager-drag-hint": {
+            "path": "filemanager/filemanager-drag-hint",
+            "html": "packages/html/src/filemanager/tests/filemanager-drag-hint.html",
+            "src": "packages/html/src/filemanager/tests/filemanager-drag-hint.tsx",
+            "dist": "tests/filemanager/filemanager-drag-hint.html"
+        },
+        "filemanager-gridview": {
+            "path": "filemanager/filemanager-gridview",
+            "html": "packages/html/src/filemanager/tests/filemanager-gridview.html",
+            "src": "packages/html/src/filemanager/tests/filemanager-gridview.tsx",
+            "dist": "tests/filemanager/filemanager-gridview.html"
+        },
+        "filemanager-listview": {
+            "path": "filemanager/filemanager-listview",
+            "html": "packages/html/src/filemanager/tests/filemanager-listview.html",
+            "src": "packages/html/src/filemanager/tests/filemanager-listview.tsx",
+            "dist": "tests/filemanager/filemanager-listview.html"
+        },
+        "filemanager-preview": {
+            "path": "filemanager/filemanager-preview",
+            "html": "packages/html/src/filemanager/tests/filemanager-preview.html",
+            "src": "packages/html/src/filemanager/tests/filemanager-preview.tsx",
+            "dist": "tests/filemanager/filemanager-preview.html"
+        },
+        "filemanager-toolbar": {
+            "path": "filemanager/filemanager-toolbar",
+            "html": "packages/html/src/filemanager/tests/filemanager-toolbar.html",
+            "src": "packages/html/src/filemanager/tests/filemanager-toolbar.tsx",
+            "dist": "tests/filemanager/filemanager-toolbar.html"
+        },
+        "filter": {
+            "path": "filter/filter",
+            "html": "packages/html/src/filter/tests/filter.html",
+            "src": "packages/html/src/filter/tests/filter.tsx",
+            "dist": "tests/filter/filter.html"
+        },
+        "floating-label-flat": {
+            "path": "floating-label/floating-label-flat",
+            "html": "packages/html/src/floating-label/tests/floating-label-flat.html",
+            "src": "packages/html/src/floating-label/tests/floating-label-flat.tsx",
+            "dist": "tests/floating-label/floating-label-flat.html"
+        },
+        "floating-label-outline": {
+            "path": "floating-label/floating-label-outline",
+            "html": "packages/html/src/floating-label/tests/floating-label-outline.html",
+            "src": "packages/html/src/floating-label/tests/floating-label-outline.tsx",
+            "dist": "tests/floating-label/floating-label-outline.html"
+        },
+        "floating-label": {
+            "path": "floating-label/floating-label",
+            "html": "packages/html/src/floating-label/tests/floating-label.html",
+            "src": "packages/html/src/floating-label/tests/floating-label.tsx",
+            "dist": "tests/floating-label/floating-label.html"
+        },
+        "form-field-dateinputs-angular": {
+            "path": "form/form-field-dateinputs-angular",
+            "html": "packages/html/src/form/tests/form-field-dateinputs-angular.html",
+            "src": "packages/html/src/form/tests/form-field-dateinputs-angular.tsx",
+            "dist": "tests/form/form-field-dateinputs-angular.html"
+        },
+        "form-field-dateinputs-react": {
+            "path": "form/form-field-dateinputs-react",
+            "html": "packages/html/src/form/tests/form-field-dateinputs-react.html",
+            "src": "packages/html/src/form/tests/form-field-dateinputs-react.tsx",
+            "dist": "tests/form/form-field-dateinputs-react.html"
+        },
+        "form-field-dropdowns-angular": {
+            "path": "form/form-field-dropdowns-angular",
+            "html": "packages/html/src/form/tests/form-field-dropdowns-angular.html",
+            "src": "packages/html/src/form/tests/form-field-dropdowns-angular.tsx",
+            "dist": "tests/form/form-field-dropdowns-angular.html"
+        },
+        "form-field-dropdowns-react": {
+            "path": "form/form-field-dropdowns-react",
+            "html": "packages/html/src/form/tests/form-field-dropdowns-react.html",
+            "src": "packages/html/src/form/tests/form-field-dropdowns-react.tsx",
+            "dist": "tests/form/form-field-dropdowns-react.html"
+        },
+        "form-field-fieldset-angular": {
+            "path": "form/form-field-fieldset-angular",
+            "html": "packages/html/src/form/tests/form-field-fieldset-angular.html",
+            "src": "packages/html/src/form/tests/form-field-fieldset-angular.tsx",
+            "dist": "tests/form/form-field-fieldset-angular.html"
+        },
+        "form-field-fieldset-react": {
+            "path": "form/form-field-fieldset-react",
+            "html": "packages/html/src/form/tests/form-field-fieldset-react.html",
+            "src": "packages/html/src/form/tests/form-field-fieldset-react.tsx",
+            "dist": "tests/form/form-field-fieldset-react.html"
+        },
+        "form-field-inputs-angular-rtl": {
+            "path": "form/form-field-inputs-angular-rtl",
+            "html": "packages/html/src/form/tests/form-field-inputs-angular-rtl.html",
+            "src": "packages/html/src/form/tests/form-field-inputs-angular-rtl.tsx",
+            "dist": "tests/form/form-field-inputs-angular-rtl.html"
+        },
+        "form-field-inputs-angular": {
+            "path": "form/form-field-inputs-angular",
+            "html": "packages/html/src/form/tests/form-field-inputs-angular.html",
+            "src": "packages/html/src/form/tests/form-field-inputs-angular.tsx",
+            "dist": "tests/form/form-field-inputs-angular.html"
+        },
+        "form-field-inputs-react": {
+            "path": "form/form-field-inputs-react",
+            "html": "packages/html/src/form/tests/form-field-inputs-react.html",
+            "src": "packages/html/src/form/tests/form-field-inputs-react.tsx",
+            "dist": "tests/form/form-field-inputs-react.html"
+        },
+        "form-grid-layout": {
+            "path": "form/form-grid-layout",
+            "html": "packages/html/src/form/tests/form-grid-layout.html",
+            "src": "packages/html/src/form/tests/form-grid-layout.tsx",
+            "dist": "tests/form/form-grid-layout.html"
+        },
+        "form-misc-angular": {
+            "path": "form/form-misc-angular",
+            "html": "packages/html/src/form/tests/form-misc-angular.html",
+            "src": "packages/html/src/form/tests/form-misc-angular.tsx",
+            "dist": "tests/form/form-misc-angular.html"
+        },
+        "form-misc-react": {
+            "path": "form/form-misc-react",
+            "html": "packages/html/src/form/tests/form-misc-react.html",
+            "src": "packages/html/src/form/tests/form-misc-react.tsx",
+            "dist": "tests/form/form-misc-react.html"
+        },
+        "form-sizes": {
+            "path": "form/form-sizes",
+            "html": "packages/html/src/form/tests/form-sizes.html",
+            "src": "packages/html/src/form/tests/form-sizes.tsx",
+            "dist": "tests/form/form-sizes.html"
+        },
+        "gantt-dep-validation-tooltip": {
+            "path": "gantt/gantt-dep-validation-tooltip",
+            "html": "packages/html/src/gantt/tests/gantt-dep-validation-tooltip.html",
+            "src": "packages/html/src/gantt/tests/gantt-dep-validation-tooltip.tsx",
+            "dist": "tests/gantt/gantt-dep-validation-tooltip.html"
+        },
+        "gantt-react": {
+            "path": "gantt/gantt-react",
+            "html": "packages/html/src/gantt/tests/gantt-react.html",
+            "src": "packages/html/src/gantt/tests/gantt-react.tsx",
+            "dist": "tests/gantt/gantt-react.html"
+        },
+        "gantt": {
+            "path": "gantt/gantt",
+            "html": "packages/html/src/gantt/tests/gantt.html",
+            "src": "packages/html/src/gantt/tests/gantt.tsx",
+            "dist": "tests/gantt/gantt.html"
+        },
+        "grid-adaptive-column-menu": {
+            "path": "grid/grid-adaptive-column-menu",
+            "html": "packages/html/src/grid/tests/grid-adaptive-column-menu.html",
+            "src": "packages/html/src/grid/tests/grid-adaptive-column-menu.tsx",
+            "dist": "tests/grid/grid-adaptive-column-menu.html"
+        },
+        "grid-adaptive-edit-popup-no-height": {
+            "path": "grid/grid-adaptive-edit-popup-no-height",
+            "html": "packages/html/src/grid/tests/grid-adaptive-edit-popup-no-height.html",
+            "src": "packages/html/src/grid/tests/grid-adaptive-edit-popup-no-height.tsx",
+            "dist": "tests/grid/grid-adaptive-edit-popup-no-height.html"
+        },
+        "grid-adaptive-edit-popup": {
+            "path": "grid/grid-adaptive-edit-popup",
+            "html": "packages/html/src/grid/tests/grid-adaptive-edit-popup.html",
+            "src": "packages/html/src/grid/tests/grid-adaptive-edit-popup.tsx",
+            "dist": "tests/grid/grid-adaptive-edit-popup.html"
+        },
+        "grid-adaptive-filter-bool": {
+            "path": "grid/grid-adaptive-filter-bool",
+            "html": "packages/html/src/grid/tests/grid-adaptive-filter-bool.html",
+            "src": "packages/html/src/grid/tests/grid-adaptive-filter-bool.tsx",
+            "dist": "tests/grid/grid-adaptive-filter-bool.html"
+        },
+        "grid-adaptive-filter-multi": {
+            "path": "grid/grid-adaptive-filter-multi",
+            "html": "packages/html/src/grid/tests/grid-adaptive-filter-multi.html",
+            "src": "packages/html/src/grid/tests/grid-adaptive-filter-multi.tsx",
+            "dist": "tests/grid/grid-adaptive-filter-multi.html"
+        },
+        "grid-adaptive-filter": {
+            "path": "grid/grid-adaptive-filter",
+            "html": "packages/html/src/grid/tests/grid-adaptive-filter.html",
+            "src": "packages/html/src/grid/tests/grid-adaptive-filter.tsx",
+            "dist": "tests/grid/grid-adaptive-filter.html"
+        },
+        "grid-adaptive-pager": {
+            "path": "grid/grid-adaptive-pager",
+            "html": "packages/html/src/grid/tests/grid-adaptive-pager.html",
+            "src": "packages/html/src/grid/tests/grid-adaptive-pager.tsx",
+            "dist": "tests/grid/grid-adaptive-pager.html"
+        },
+        "grid-adaptive-search": {
+            "path": "grid/grid-adaptive-search",
+            "html": "packages/html/src/grid/tests/grid-adaptive-search.html",
+            "src": "packages/html/src/grid/tests/grid-adaptive-search.tsx",
+            "dist": "tests/grid/grid-adaptive-search.html"
+        },
+        "grid-angular-sticky-rows-and-cols": {
+            "path": "grid/grid-angular-sticky-rows-and-cols",
+            "html": "packages/html/src/grid/tests/grid-angular-sticky-rows-and-cols.html",
+            "src": "packages/html/src/grid/tests/grid-angular-sticky-rows-and-cols.html",
+            "dist": "tests/grid/grid-angular-sticky-rows-and-cols.html"
+        },
+        "grid-angular": {
+            "path": "grid/grid-angular",
+            "html": "packages/html/src/grid/tests/grid-angular.html",
+            "src": "packages/html/src/grid/tests/grid-angular.tsx",
+            "dist": "tests/grid/grid-angular.html"
+        },
+        "grid-column-menu-angular": {
+            "path": "grid/grid-column-menu-angular",
+            "html": "packages/html/src/grid/tests/grid-column-menu-angular.html",
+            "src": "packages/html/src/grid/tests/grid-column-menu-angular.tsx",
+            "dist": "tests/grid/grid-column-menu-angular.html"
+        },
+        "grid-column-menu-blazor": {
+            "path": "grid/grid-column-menu-blazor",
+            "html": "packages/html/src/grid/tests/grid-column-menu-blazor.html",
+            "src": "packages/html/src/grid/tests/grid-column-menu-blazor.tsx",
+            "dist": "tests/grid/grid-column-menu-blazor.html"
+        },
+        "grid-column-menu-rtl": {
+            "path": "grid/grid-column-menu-rtl",
+            "html": "packages/html/src/grid/tests/grid-column-menu-rtl.html",
+            "src": "packages/html/src/grid/tests/grid-column-menu-rtl.tsx",
+            "dist": "tests/grid/grid-column-menu-rtl.html"
+        },
+        "grid-column-menu": {
+            "path": "grid/grid-column-menu",
+            "html": "packages/html/src/grid/tests/grid-column-menu.html",
+            "src": "packages/html/src/grid/tests/grid-column-menu.tsx",
+            "dist": "tests/grid/grid-column-menu.html"
+        },
+        "grid-editing-custom-editor": {
+            "path": "grid/grid-editing-custom-editor",
+            "html": "packages/html/src/grid/tests/grid-editing-custom-editor.html",
+            "src": "packages/html/src/grid/tests/grid-editing-custom-editor.tsx",
+            "dist": "tests/grid/grid-editing-custom-editor.html"
+        },
+        "grid-editing-inline-angular": {
+            "path": "grid/grid-editing-inline-angular",
+            "html": "packages/html/src/grid/tests/grid-editing-inline-angular.html",
+            "src": "packages/html/src/grid/tests/grid-editing-inline-angular.tsx",
+            "dist": "tests/grid/grid-editing-inline-angular.html"
+        },
+        "grid-editing-inline-blazor": {
+            "path": "grid/grid-editing-inline-blazor",
+            "html": "packages/html/src/grid/tests/grid-editing-inline-blazor.html",
+            "src": "packages/html/src/grid/tests/grid-editing-inline-blazor.tsx",
+            "dist": "tests/grid/grid-editing-inline-blazor.html"
+        },
+        "grid-editing-popup": {
+            "path": "grid/grid-editing-popup",
+            "html": "packages/html/src/grid/tests/grid-editing-popup.html",
+            "src": "packages/html/src/grid/tests/grid-editing-popup.tsx",
+            "dist": "tests/grid/grid-editing-popup.html"
+        },
+        "grid-editing": {
+            "path": "grid/grid-editing",
+            "html": "packages/html/src/grid/tests/grid-editing.html",
+            "src": "packages/html/src/grid/tests/grid-editing.tsx",
+            "dist": "tests/grid/grid-editing.html"
+        },
+        "grid-filter-menu-angular": {
+            "path": "grid/grid-filter-menu-angular",
+            "html": "packages/html/src/grid/tests/grid-filter-menu-angular.html",
+            "src": "packages/html/src/grid/tests/grid-filter-menu-angular.tsx",
+            "dist": "tests/grid/grid-filter-menu-angular.html"
+        },
+        "grid-filter-menu-blazor": {
+            "path": "grid/grid-filter-menu-blazor",
+            "html": "packages/html/src/grid/tests/grid-filter-menu-blazor.html",
+            "src": "packages/html/src/grid/tests/grid-filter-menu-blazor.tsx",
+            "dist": "tests/grid/grid-filter-menu-blazor.html"
+        },
+        "grid-filter-menu-multi-checkbox": {
+            "path": "grid/grid-filter-menu-multi-checkbox",
+            "html": "packages/html/src/grid/tests/grid-filter-menu-multi-checkbox.html",
+            "src": "packages/html/src/grid/tests/grid-filter-menu-multi-checkbox.tsx",
+            "dist": "tests/grid/grid-filter-menu-multi-checkbox.html"
+        },
+        "grid-filter-menu-popup-angular": {
+            "path": "grid/grid-filter-menu-popup-angular",
+            "html": "packages/html/src/grid/tests/grid-filter-menu-popup-angular.html",
+            "src": "packages/html/src/grid/tests/grid-filter-menu-popup-angular.html",
+            "dist": "tests/grid/grid-filter-menu-popup-angular.html"
+        },
+        "grid-filter-menu": {
+            "path": "grid/grid-filter-menu",
+            "html": "packages/html/src/grid/tests/grid-filter-menu.html",
+            "src": "packages/html/src/grid/tests/grid-filter-menu.tsx",
+            "dist": "tests/grid/grid-filter-menu.html"
+        },
+        "grid-filter-row-angular": {
+            "path": "grid/grid-filter-row-angular",
+            "html": "packages/html/src/grid/tests/grid-filter-row-angular.html",
+            "src": "packages/html/src/grid/tests/grid-filter-row-angular.tsx",
+            "dist": "tests/grid/grid-filter-row-angular.html"
+        },
+        "grid-filter-row-blazor": {
+            "path": "grid/grid-filter-row-blazor",
+            "html": "packages/html/src/grid/tests/grid-filter-row-blazor.html",
+            "src": "packages/html/src/grid/tests/grid-filter-row-blazor.tsx",
+            "dist": "tests/grid/grid-filter-row-blazor.html"
+        },
+        "grid-filter-row": {
+            "path": "grid/grid-filter-row",
+            "html": "packages/html/src/grid/tests/grid-filter-row.html",
+            "src": "packages/html/src/grid/tests/grid-filter-row.tsx",
+            "dist": "tests/grid/grid-filter-row.html"
+        },
+        "grid-grouping-angular": {
+            "path": "grid/grid-grouping-angular",
+            "html": "packages/html/src/grid/tests/grid-grouping-angular.html",
+            "src": "packages/html/src/grid/tests/grid-grouping-angular.tsx",
+            "dist": "tests/grid/grid-grouping-angular.html"
+        },
+        "grid-grouping-blazor": {
+            "path": "grid/grid-grouping-blazor",
+            "html": "packages/html/src/grid/tests/grid-grouping-blazor.html",
+            "src": "packages/html/src/grid/tests/grid-grouping-blazor.tsx",
+            "dist": "tests/grid/grid-grouping-blazor.html"
+        },
+        "grid-grouping-detail-template-angular": {
+            "path": "grid/grid-grouping-detail-template-angular",
+            "html": "packages/html/src/grid/tests/grid-grouping-detail-template-angular.html",
+            "src": "packages/html/src/grid/tests/grid-grouping-detail-template-angular.tsx",
+            "dist": "tests/grid/grid-grouping-detail-template-angular.html"
+        },
+        "grid-grouping-detail-template-blazor": {
+            "path": "grid/grid-grouping-detail-template-blazor",
+            "html": "packages/html/src/grid/tests/grid-grouping-detail-template-blazor.html",
+            "src": "packages/html/src/grid/tests/grid-grouping-detail-template-blazor.tsx",
+            "dist": "tests/grid/grid-grouping-detail-template-blazor.html"
+        },
+        "grid-grouping-toolbar-blazor": {
+            "path": "grid/grid-grouping-toolbar-blazor",
+            "html": "packages/html/src/grid/tests/grid-grouping-toolbar-blazor.html",
+            "src": "packages/html/src/grid/tests/grid-grouping-toolbar-blazor.tsx",
+            "dist": "tests/grid/grid-grouping-toolbar-blazor.html"
+        },
+        "grid-grouping": {
+            "path": "grid/grid-grouping",
+            "html": "packages/html/src/grid/tests/grid-grouping.html",
+            "src": "packages/html/src/grid/tests/grid-grouping.tsx",
+            "dist": "tests/grid/grid-grouping.html"
+        },
+        "grid-header-new-rendering-rtl": {
+            "path": "grid/grid-header-new-rendering-rtl",
+            "html": "packages/html/src/grid/tests/grid-header-new-rendering-rtl.html",
+            "src": "packages/html/src/grid/tests/grid-header-new-rendering-rtl.html",
+            "dist": "tests/grid/grid-header-new-rendering-rtl.html"
+        },
+        "grid-header-new-rendering": {
+            "path": "grid/grid-header-new-rendering",
+            "html": "packages/html/src/grid/tests/grid-header-new-rendering.html",
+            "src": "packages/html/src/grid/tests/grid-header-new-rendering.html",
+            "dist": "tests/grid/grid-header-new-rendering.html"
+        },
+        "grid-hierarchy": {
+            "path": "grid/grid-hierarchy",
+            "html": "packages/html/src/grid/tests/grid-hierarchy.html",
+            "src": "packages/html/src/grid/tests/grid-hierarchy.tsx",
+            "dist": "tests/grid/grid-hierarchy.html"
+        },
+        "grid-locked-columns-rtl": {
+            "path": "grid/grid-locked-columns-rtl",
+            "html": "packages/html/src/grid/tests/grid-locked-columns-rtl.html",
+            "src": "packages/html/src/grid/tests/grid-locked-columns-rtl.tsx",
+            "dist": "tests/grid/grid-locked-columns-rtl.html"
+        },
+        "grid-locked-columns": {
+            "path": "grid/grid-locked-columns",
+            "html": "packages/html/src/grid/tests/grid-locked-columns.html",
+            "src": "packages/html/src/grid/tests/grid-locked-columns.tsx",
+            "dist": "tests/grid/grid-locked-columns.html"
+        },
+        "grid-long-titles": {
+            "path": "grid/grid-long-titles",
+            "html": "packages/html/src/grid/tests/grid-long-titles.html",
+            "src": "packages/html/src/grid/tests/grid-long-titles.tsx",
+            "dist": "tests/grid/grid-long-titles.html"
+        },
+        "grid-multicolumn-headers": {
+            "path": "grid/grid-multicolumn-headers",
+            "html": "packages/html/src/grid/tests/grid-multicolumn-headers.html",
+            "src": "packages/html/src/grid/tests/grid-multicolumn-headers.tsx",
+            "dist": "tests/grid/grid-multicolumn-headers.html"
+        },
+        "grid-no-records": {
+            "path": "grid/grid-no-records",
+            "html": "packages/html/src/grid/tests/grid-no-records.html",
+            "src": "packages/html/src/grid/tests/grid-no-records.tsx",
+            "dist": "tests/grid/grid-no-records.html"
+        },
+        "grid-pager": {
+            "path": "grid/grid-pager",
+            "html": "packages/html/src/grid/tests/grid-pager.html",
+            "src": "packages/html/src/grid/tests/grid-pager.tsx",
+            "dist": "tests/grid/grid-pager.html"
+        },
+        "grid-react-basic": {
+            "path": "grid/grid-react-basic",
+            "html": "packages/html/src/grid/tests/grid-react-basic.html",
+            "src": "packages/html/src/grid/tests/grid-react-basic.tsx",
+            "dist": "tests/grid/grid-react-basic.html"
+        },
+        "grid-react": {
+            "path": "grid/grid-react",
+            "html": "packages/html/src/grid/tests/grid-react.html",
+            "src": "packages/html/src/grid/tests/grid-react.tsx",
+            "dist": "tests/grid/grid-react.html"
+        },
+        "grid-rows-states": {
+            "path": "grid/grid-rows-states",
+            "html": "packages/html/src/grid/tests/grid-rows-states.html",
+            "src": "packages/html/src/grid/tests/grid-rows-states.tsx",
+            "dist": "tests/grid/grid-rows-states.html"
+        },
+        "grid-rtl-angular": {
+            "path": "grid/grid-rtl-angular",
+            "html": "packages/html/src/grid/tests/grid-rtl-angular.html",
+            "src": "packages/html/src/grid/tests/grid-rtl-angular.tsx",
+            "dist": "tests/grid/grid-rtl-angular.html"
+        },
+        "grid-rtl": {
+            "path": "grid/grid-rtl",
+            "html": "packages/html/src/grid/tests/grid-rtl.html",
+            "src": "packages/html/src/grid/tests/grid-rtl.tsx",
+            "dist": "tests/grid/grid-rtl.html"
+        },
+        "grid-sticky-columns-rtl": {
+            "path": "grid/grid-sticky-columns-rtl",
+            "html": "packages/html/src/grid/tests/grid-sticky-columns-rtl.html",
+            "src": "packages/html/src/grid/tests/grid-sticky-columns-rtl.tsx",
+            "dist": "tests/grid/grid-sticky-columns-rtl.html"
+        },
+        "grid-sticky-columns": {
+            "path": "grid/grid-sticky-columns",
+            "html": "packages/html/src/grid/tests/grid-sticky-columns.html",
+            "src": "packages/html/src/grid/tests/grid-sticky-columns.tsx",
+            "dist": "tests/grid/grid-sticky-columns.html"
+        },
+        "grid-sticky-multicolumn-headers": {
+            "path": "grid/grid-sticky-multicolumn-headers",
+            "html": "packages/html/src/grid/tests/grid-sticky-multicolumn-headers.html",
+            "src": "packages/html/src/grid/tests/grid-sticky-multicolumn-headers.tsx",
+            "dist": "tests/grid/grid-sticky-multicolumn-headers.html"
+        },
+        "grid-toolbar": {
+            "path": "grid/grid-toolbar",
+            "html": "packages/html/src/grid/tests/grid-toolbar.html",
+            "src": "packages/html/src/grid/tests/grid-toolbar.tsx",
+            "dist": "tests/grid/grid-toolbar.html"
+        },
+        "grid": {
+            "path": "grid/grid",
+            "html": "packages/html/src/grid/tests/grid.html",
+            "src": "packages/html/src/grid/tests/grid.tsx",
+            "dist": "tests/grid/grid.html"
+        },
+        "icons": {
+            "path": "icon/icons",
+            "html": "packages/html/src/icon/tests/icons.html",
+            "src": "packages/html/src/icon/tests/icons.tsx",
+            "dist": "tests/icon/icons.html"
+        },
+        "imageeditor-crop-pane": {
+            "path": "imageeditor/imageeditor-crop-pane",
+            "html": "packages/html/src/imageeditor/tests/imageeditor-crop-pane.html",
+            "src": "packages/html/src/imageeditor/tests/imageeditor-crop-pane.tsx",
+            "dist": "tests/imageeditor/imageeditor-crop-pane.html"
+        },
+        "imageeditor-resize-pane": {
+            "path": "imageeditor/imageeditor-resize-pane",
+            "html": "packages/html/src/imageeditor/tests/imageeditor-resize-pane.html",
+            "src": "packages/html/src/imageeditor/tests/imageeditor-resize-pane.tsx",
+            "dist": "tests/imageeditor/imageeditor-resize-pane.html"
+        },
+        "imageeditor": {
+            "path": "imageeditor/imageeditor",
+            "html": "packages/html/src/imageeditor/tests/imageeditor.html",
+            "src": "packages/html/src/imageeditor/tests/imageeditor.tsx",
+            "dist": "tests/imageeditor/imageeditor.html"
+        },
+        "complex-layout": {
+            "path": "layout/complex-layout",
+            "html": "packages/html/src/layout/tests/complex-layout.html",
+            "src": "packages/html/src/layout/tests/complex-layout.tsx",
+            "dist": "tests/layout/complex-layout.html"
+        },
+        "grid-layout": {
+            "path": "layout/grid-layout",
+            "html": "packages/html/src/layout/tests/grid-layout.html",
+            "src": "packages/html/src/layout/tests/grid-layout.tsx",
+            "dist": "tests/layout/grid-layout.html"
+        },
+        "hstack": {
+            "path": "layout/hstack",
+            "html": "packages/html/src/layout/tests/hstack.html",
+            "src": "packages/html/src/layout/tests/hstack.tsx",
+            "dist": "tests/layout/hstack.html"
+        },
+        "stack-layout": {
+            "path": "layout/stack-layout",
+            "html": "packages/html/src/layout/tests/stack-layout.html",
+            "src": "packages/html/src/layout/tests/stack-layout.tsx",
+            "dist": "tests/layout/stack-layout.html"
+        },
+        "vstack": {
+            "path": "layout/vstack",
+            "html": "packages/html/src/layout/tests/vstack.html",
+            "src": "packages/html/src/layout/tests/vstack.tsx",
+            "dist": "tests/layout/vstack.html"
+        },
+        "list-grouping": {
+            "path": "list/list-grouping",
+            "html": "packages/html/src/list/tests/list-grouping.html",
+            "src": "packages/html/src/list/tests/list-grouping.tsx",
+            "dist": "tests/list/list-grouping.html"
+        },
+        "list-sizes": {
+            "path": "list/list-sizes",
+            "html": "packages/html/src/list/tests/list-sizes.html",
+            "src": "packages/html/src/list/tests/list-sizes.tsx",
+            "dist": "tests/list/list-sizes.html"
+        },
+        "list": {
+            "path": "list/list",
+            "html": "packages/html/src/list/tests/list.html",
+            "src": "packages/html/src/list/tests/list.tsx",
+            "dist": "tests/list/list.html"
+        },
+        "listbox": {
+            "path": "listbox/listbox",
+            "html": "packages/html/src/listbox/tests/listbox.html",
+            "src": "packages/html/src/listbox/tests/listbox.tsx",
+            "dist": "tests/listbox/listbox.html"
+        },
+        "listgroup-rtl": {
+            "path": "listgroup/listgroup-rtl",
+            "html": "packages/html/src/listgroup/tests/listgroup-rtl.html",
+            "src": "packages/html/src/listgroup/tests/listgroup-rtl.tsx",
+            "dist": "tests/listgroup/listgroup-rtl.html"
+        },
+        "listgroup": {
+            "path": "listgroup/listgroup",
+            "html": "packages/html/src/listgroup/tests/listgroup.html",
+            "src": "packages/html/src/listgroup/tests/listgroup.tsx",
+            "dist": "tests/listgroup/listgroup.html"
+        },
+        "listview-loading": {
+            "path": "listview/listview-loading",
+            "html": "packages/html/src/listview/tests/listview-loading.html",
+            "src": "packages/html/src/listview/tests/listview-loading.tsx",
+            "dist": "tests/listview/listview-loading.html"
+        },
+        "listview": {
+            "path": "listview/listview",
+            "html": "packages/html/src/listview/tests/listview.html",
+            "src": "packages/html/src/listview/tests/listview.tsx",
+            "dist": "tests/listview/listview.html"
+        },
+        "loader-container-colors": {
+            "path": "loader/loader-container-colors",
+            "html": "packages/html/src/loader/tests/loader-container-colors.html",
+            "src": "packages/html/src/loader/tests/loader-container-colors.tsx",
+            "dist": "tests/loader/loader-container-colors.html"
+        },
+        "loader-container-overlay": {
+            "path": "loader/loader-container-overlay",
+            "html": "packages/html/src/loader/tests/loader-container-overlay.html",
+            "src": "packages/html/src/loader/tests/loader-container-overlay.tsx",
+            "dist": "tests/loader/loader-container-overlay.html"
+        },
+        "loader-container": {
+            "path": "loader/loader-container",
+            "html": "packages/html/src/loader/tests/loader-container.html",
+            "src": "packages/html/src/loader/tests/loader-container.tsx",
+            "dist": "tests/loader/loader-container.html"
+        },
+        "loader-sizes": {
+            "path": "loader/loader-sizes",
+            "html": "packages/html/src/loader/tests/loader-sizes.html",
+            "src": "packages/html/src/loader/tests/loader-sizes.tsx",
+            "dist": "tests/loader/loader-sizes.html"
+        },
+        "loader": {
+            "path": "loader/loader",
+            "html": "packages/html/src/loader/tests/loader.html",
+            "src": "packages/html/src/loader/tests/loader.tsx",
+            "dist": "tests/loader/loader.html"
+        },
+        "loading": {
+            "path": "loading/loading",
+            "html": "packages/html/src/loading/tests/loading.html",
+            "src": "packages/html/src/loading/tests/loading.tsx",
+            "dist": "tests/loading/loading.html"
+        },
+        "map": {
+            "path": "map/map",
+            "html": "packages/html/src/map/tests/map.html",
+            "src": "packages/html/src/map/tests/map.tsx",
+            "dist": "tests/map/map.html"
+        },
+        "maskedtextbox-flat": {
+            "path": "maskedtextbox/maskedtextbox-flat",
+            "html": "packages/html/src/maskedtextbox/tests/maskedtextbox-flat.html",
+            "src": "packages/html/src/maskedtextbox/tests/maskedtextbox-flat.tsx",
+            "dist": "tests/maskedtextbox/maskedtextbox-flat.html"
+        },
+        "maskedtextbox-outline": {
+            "path": "maskedtextbox/maskedtextbox-outline",
+            "html": "packages/html/src/maskedtextbox/tests/maskedtextbox-outline.html",
+            "src": "packages/html/src/maskedtextbox/tests/maskedtextbox-outline.tsx",
+            "dist": "tests/maskedtextbox/maskedtextbox-outline.html"
+        },
+        "maskedtextbox": {
+            "path": "maskedtextbox/maskedtextbox",
+            "html": "packages/html/src/maskedtextbox/tests/maskedtextbox.html",
+            "src": "packages/html/src/maskedtextbox/tests/maskedtextbox.tsx",
+            "dist": "tests/maskedtextbox/maskedtextbox.html"
+        },
+        "mediaplayer": {
+            "path": "mediaplayer/mediaplayer",
+            "html": "packages/html/src/mediaplayer/tests/mediaplayer.html",
+            "src": "packages/html/src/mediaplayer/tests/mediaplayer.tsx",
+            "dist": "tests/mediaplayer/mediaplayer.html"
+        },
+        "menu-button-size": {
+            "path": "menu-button/menu-button-size",
+            "html": "packages/html/src/menu-button/tests/menu-button-size.html",
+            "src": "packages/html/src/menu-button/tests/menu-button-size.tsx",
+            "dist": "tests/menu-button/menu-button-size.html"
+        },
+        "menu-button": {
+            "path": "menu-button/menu-button",
+            "html": "packages/html/src/menu-button/tests/menu-button.html",
+            "src": "packages/html/src/menu-button/tests/menu-button.tsx",
+            "dist": "tests/menu-button/menu-button.html"
+        },
+        "menu-popup-size": {
+            "path": "menu/menu-popup-size",
+            "html": "packages/html/src/menu/tests/menu-popup-size.html",
+            "src": "packages/html/src/menu/tests/menu-popup-size.tsx",
+            "dist": "tests/menu/menu-popup-size.html"
+        },
+        "menu-vertical": {
+            "path": "menu/menu-vertical",
+            "html": "packages/html/src/menu/tests/menu-vertical.html",
+            "src": "packages/html/src/menu/tests/menu-vertical.tsx",
+            "dist": "tests/menu/menu-vertical.html"
+        },
+        "menu": {
+            "path": "menu/menu",
+            "html": "packages/html/src/menu/tests/menu.html",
+            "src": "packages/html/src/menu/tests/menu.tsx",
+            "dist": "tests/menu/menu.html"
+        },
+        "message-box": {
+            "path": "message-box/message-box",
+            "html": "packages/html/src/message-box/tests/message-box.html",
+            "src": "packages/html/src/message-box/tests/message-box.tsx",
+            "dist": "tests/message-box/message-box.html"
+        },
+        "multiselect-flat": {
+            "path": "multiselect/multiselect-flat",
+            "html": "packages/html/src/multiselect/tests/multiselect-flat.html",
+            "src": "packages/html/src/multiselect/tests/multiselect-flat.tsx",
+            "dist": "tests/multiselect/multiselect-flat.html"
+        },
+        "multiselect-outline": {
+            "path": "multiselect/multiselect-outline",
+            "html": "packages/html/src/multiselect/tests/multiselect-outline.html",
+            "src": "packages/html/src/multiselect/tests/multiselect-outline.tsx",
+            "dist": "tests/multiselect/multiselect-outline.html"
+        },
+        "multiselect-size": {
+            "path": "multiselect/multiselect-size",
+            "html": "packages/html/src/multiselect/tests/multiselect-size.html",
+            "src": "packages/html/src/multiselect/tests/multiselect-size.tsx",
+            "dist": "tests/multiselect/multiselect-size.html"
+        },
+        "multiselect": {
+            "path": "multiselect/multiselect",
+            "html": "packages/html/src/multiselect/tests/multiselect.html",
+            "src": "packages/html/src/multiselect/tests/multiselect.tsx",
+            "dist": "tests/multiselect/multiselect.html"
+        },
+        "multiviewcalendar-angular": {
+            "path": "multiviewcalendar/multiviewcalendar-angular",
+            "html": "packages/html/src/multiviewcalendar/tests/multiviewcalendar-angular.html",
+            "src": "packages/html/src/multiviewcalendar/tests/multiviewcalendar-angular.tsx",
+            "dist": "tests/multiviewcalendar/multiviewcalendar-angular.html"
+        },
+        "multiviewcalendar-jquery": {
+            "path": "multiviewcalendar/multiviewcalendar-jquery",
+            "html": "packages/html/src/multiviewcalendar/tests/multiviewcalendar-jquery.html",
+            "src": "packages/html/src/multiviewcalendar/tests/multiviewcalendar-jquery.tsx",
+            "dist": "tests/multiviewcalendar/multiviewcalendar-jquery.html"
+        },
+        "multiviewcalendar-react": {
+            "path": "multiviewcalendar/multiviewcalendar-react",
+            "html": "packages/html/src/multiviewcalendar/tests/multiviewcalendar-react.html",
+            "src": "packages/html/src/multiviewcalendar/tests/multiviewcalendar-react.tsx",
+            "dist": "tests/multiviewcalendar/multiviewcalendar-react.html"
+        },
+        "multiviewcalendar-vertical-angular": {
+            "path": "multiviewcalendar/multiviewcalendar-vertical-angular",
+            "html": "packages/html/src/multiviewcalendar/tests/multiviewcalendar-vertical-angular.html",
+            "src": "packages/html/src/multiviewcalendar/tests/multiviewcalendar-vertical-angular.tsx",
+            "dist": "tests/multiviewcalendar/multiviewcalendar-vertical-angular.html"
+        },
+        "multiviewcalendar-vertical-jquery": {
+            "path": "multiviewcalendar/multiviewcalendar-vertical-jquery",
+            "html": "packages/html/src/multiviewcalendar/tests/multiviewcalendar-vertical-jquery.html",
+            "src": "packages/html/src/multiviewcalendar/tests/multiviewcalendar-vertical-jquery.tsx",
+            "dist": "tests/multiviewcalendar/multiviewcalendar-vertical-jquery.html"
+        },
+        "multiviewcalendar-vertical-react": {
+            "path": "multiviewcalendar/multiviewcalendar-vertical-react",
+            "html": "packages/html/src/multiviewcalendar/tests/multiviewcalendar-vertical-react.html",
+            "src": "packages/html/src/multiviewcalendar/tests/multiviewcalendar-vertical-react.tsx",
+            "dist": "tests/multiviewcalendar/multiviewcalendar-vertical-react.html"
+        },
+        "notification-angular": {
+            "path": "notification/notification-angular",
+            "html": "packages/html/src/notification/tests/notification-angular.html",
+            "src": "packages/html/src/notification/tests/notification-angular.tsx",
+            "dist": "tests/notification/notification-angular.html"
+        },
+        "notification-custom-angular": {
+            "path": "notification/notification-custom-angular",
+            "html": "packages/html/src/notification/tests/notification-custom-angular.html",
+            "src": "packages/html/src/notification/tests/notification-custom-angular.tsx",
+            "dist": "tests/notification/notification-custom-angular.html"
+        },
+        "notification-jquery": {
+            "path": "notification/notification-jquery",
+            "html": "packages/html/src/notification/tests/notification-jquery.html",
+            "src": "packages/html/src/notification/tests/notification-jquery.tsx",
+            "dist": "tests/notification/notification-jquery.html"
+        },
+        "numerictextbox-flat": {
+            "path": "numerictextbox/numerictextbox-flat",
+            "html": "packages/html/src/numerictextbox/tests/numerictextbox-flat.html",
+            "src": "packages/html/src/numerictextbox/tests/numerictextbox-flat.tsx",
+            "dist": "tests/numerictextbox/numerictextbox-flat.html"
+        },
+        "numerictextbox-outline": {
+            "path": "numerictextbox/numerictextbox-outline",
+            "html": "packages/html/src/numerictextbox/tests/numerictextbox-outline.html",
+            "src": "packages/html/src/numerictextbox/tests/numerictextbox-outline.tsx",
+            "dist": "tests/numerictextbox/numerictextbox-outline.html"
+        },
+        "numerictextbox": {
+            "path": "numerictextbox/numerictextbox",
+            "html": "packages/html/src/numerictextbox/tests/numerictextbox.html",
+            "src": "packages/html/src/numerictextbox/tests/numerictextbox.tsx",
+            "dist": "tests/numerictextbox/numerictextbox.html"
+        },
+        "orgchart-group-states": {
+            "path": "orgchart/orgchart-group-states",
+            "html": "packages/html/src/orgchart/tests/orgchart-group-states.html",
+            "src": "packages/html/src/orgchart/tests/orgchart-group-states.tsx",
+            "dist": "tests/orgchart/orgchart-group-states.html"
+        },
+        "orgchart-group": {
+            "path": "orgchart/orgchart-group",
+            "html": "packages/html/src/orgchart/tests/orgchart-group.html",
+            "src": "packages/html/src/orgchart/tests/orgchart-group.tsx",
+            "dist": "tests/orgchart/orgchart-group.html"
+        },
+        "orgchart-node": {
+            "path": "orgchart/orgchart-node",
+            "html": "packages/html/src/orgchart/tests/orgchart-node.html",
+            "src": "packages/html/src/orgchart/tests/orgchart-node.tsx",
+            "dist": "tests/orgchart/orgchart-node.html"
+        },
+        "pager-responsive": {
+            "path": "pager/pager-responsive",
+            "html": "packages/html/src/pager/tests/pager-responsive.html",
+            "src": "packages/html/src/pager/tests/pager-responsive.tsx",
+            "dist": "tests/pager/pager-responsive.html"
+        },
+        "pager-sizes": {
+            "path": "pager/pager-sizes",
+            "html": "packages/html/src/pager/tests/pager-sizes.html",
+            "src": "packages/html/src/pager/tests/pager-sizes.tsx",
+            "dist": "tests/pager/pager-sizes.html"
+        },
+        "pager": {
+            "path": "pager/pager",
+            "html": "packages/html/src/pager/tests/pager.html",
+            "src": "packages/html/src/pager/tests/pager.tsx",
+            "dist": "tests/pager/pager.html"
+        },
+        "panelbar-angular": {
+            "path": "panelbar/panelbar-angular",
+            "html": "packages/html/src/panelbar/tests/panelbar-angular.html",
+            "src": "packages/html/src/panelbar/tests/panelbar-angular.tsx",
+            "dist": "tests/panelbar/panelbar-angular.html"
+        },
+        "panelbar-rtl-angular": {
+            "path": "panelbar/panelbar-rtl-angular",
+            "html": "packages/html/src/panelbar/tests/panelbar-rtl-angular.html",
+            "src": "packages/html/src/panelbar/tests/panelbar-rtl-angular.tsx",
+            "dist": "tests/panelbar/panelbar-rtl-angular.html"
+        },
+        "panelbar-rtl": {
+            "path": "panelbar/panelbar-rtl",
+            "html": "packages/html/src/panelbar/tests/panelbar-rtl.html",
+            "src": "packages/html/src/panelbar/tests/panelbar-rtl.tsx",
+            "dist": "tests/panelbar/panelbar-rtl.html"
+        },
+        "panelbar": {
+            "path": "panelbar/panelbar",
+            "html": "packages/html/src/panelbar/tests/panelbar.html",
+            "src": "packages/html/src/panelbar/tests/panelbar.tsx",
+            "dist": "tests/panelbar/panelbar.html"
+        },
+        "pdf-viewer-blank-page-blazor": {
+            "path": "pdf-viewer/pdf-viewer-blank-page-blazor",
+            "html": "packages/html/src/pdf-viewer/tests/pdf-viewer-blank-page-blazor.html",
+            "src": "packages/html/src/pdf-viewer/tests/pdf-viewer-blank-page-blazor.tsx",
+            "dist": "tests/pdf-viewer/pdf-viewer-blank-page-blazor.html"
+        },
+        "pdf-viewer-blank-page": {
+            "path": "pdf-viewer/pdf-viewer-blank-page",
+            "html": "packages/html/src/pdf-viewer/tests/pdf-viewer-blank-page.html",
+            "src": "packages/html/src/pdf-viewer/tests/pdf-viewer-blank-page.tsx",
+            "dist": "tests/pdf-viewer/pdf-viewer-blank-page.html"
+        },
+        "pdf-viewer-search-panel-jquery": {
+            "path": "pdf-viewer/pdf-viewer-search-panel-jquery",
+            "html": "packages/html/src/pdf-viewer/tests/pdf-viewer-search-panel-jquery.html",
+            "src": "packages/html/src/pdf-viewer/tests/pdf-viewer-search-panel-jquery.tsx",
+            "dist": "tests/pdf-viewer/pdf-viewer-search-panel-jquery.html"
+        },
+        "pdf-viewer-search-panel": {
+            "path": "pdf-viewer/pdf-viewer-search-panel",
+            "html": "packages/html/src/pdf-viewer/tests/pdf-viewer-search-panel.html",
+            "src": "packages/html/src/pdf-viewer/tests/pdf-viewer-search-panel.tsx",
+            "dist": "tests/pdf-viewer/pdf-viewer-search-panel.html"
+        },
+        "pdf-viewer": {
+            "path": "pdf-viewer/pdf-viewer",
+            "html": "packages/html/src/pdf-viewer/tests/pdf-viewer.html",
+            "src": "packages/html/src/pdf-viewer/tests/pdf-viewer.tsx",
+            "dist": "tests/pdf-viewer/pdf-viewer.html"
+        },
+        "pivotgrid-column-menus": {
+            "path": "pivotgrid/pivotgrid-column-menus",
+            "html": "packages/html/src/pivotgrid/tests/pivotgrid-column-menus.html",
+            "src": "packages/html/src/pivotgrid/tests/pivotgrid-column-menus.tsx",
+            "dist": "tests/pivotgrid/pivotgrid-column-menus.html"
+        },
+        "pivotgrid-header-cell-states": {
+            "path": "pivotgrid/pivotgrid-header-cell-states",
+            "html": "packages/html/src/pivotgrid/tests/pivotgrid-header-cell-states.html",
+            "src": "packages/html/src/pivotgrid/tests/pivotgrid-header-cell-states.tsx",
+            "dist": "tests/pivotgrid/pivotgrid-header-cell-states.html"
+        },
+        "pivotgrid-jquery-configurator": {
+            "path": "pivotgrid/pivotgrid-jquery-configurator",
+            "html": "packages/html/src/pivotgrid/tests/pivotgrid-jquery-configurator.html",
+            "src": "packages/html/src/pivotgrid/tests/pivotgrid-jquery-configurator.tsx",
+            "dist": "tests/pivotgrid/pivotgrid-jquery-configurator.html"
+        },
+        "pivotgrid-jquery": {
+            "path": "pivotgrid/pivotgrid-jquery",
+            "html": "packages/html/src/pivotgrid/tests/pivotgrid-jquery.html",
+            "src": "packages/html/src/pivotgrid/tests/pivotgrid-jquery.tsx",
+            "dist": "tests/pivotgrid/pivotgrid-jquery.html"
+        },
+        "pivotgrid-settings-panel-horizontal": {
+            "path": "pivotgrid/pivotgrid-settings-panel-horizontal",
+            "html": "packages/html/src/pivotgrid/tests/pivotgrid-settings-panel-horizontal.html",
+            "src": "packages/html/src/pivotgrid/tests/pivotgrid-settings-panel-horizontal.tsx",
+            "dist": "tests/pivotgrid/pivotgrid-settings-panel-horizontal.html"
+        },
+        "pivotgrid-settings-panel-vertical": {
+            "path": "pivotgrid/pivotgrid-settings-panel-vertical",
+            "html": "packages/html/src/pivotgrid/tests/pivotgrid-settings-panel-vertical.html",
+            "src": "packages/html/src/pivotgrid/tests/pivotgrid-settings-panel-vertical.tsx",
+            "dist": "tests/pivotgrid/pivotgrid-settings-panel-vertical.html"
+        },
+        "pivotgrid-settings-top": {
+            "path": "pivotgrid/pivotgrid-settings-top",
+            "html": "packages/html/src/pivotgrid/tests/pivotgrid-settings-top.html",
+            "src": "packages/html/src/pivotgrid/tests/pivotgrid-settings-top.tsx",
+            "dist": "tests/pivotgrid/pivotgrid-settings-top.html"
+        },
+        "pivotgrid": {
+            "path": "pivotgrid/pivotgrid",
+            "html": "packages/html/src/pivotgrid/tests/pivotgrid.html",
+            "src": "packages/html/src/pivotgrid/tests/pivotgrid.tsx",
+            "dist": "tests/pivotgrid/pivotgrid.html"
+        },
+        "popover": {
+            "path": "popover/popover",
+            "html": "packages/html/src/popover/tests/popover.html",
+            "src": "packages/html/src/popover/tests/popover.tsx",
+            "dist": "tests/popover/popover.html"
+        },
+        "popup-dropdowntree": {
+            "path": "popup/popup-dropdowntree",
+            "html": "packages/html/src/popup/tests/popup-dropdowntree.html",
+            "src": "packages/html/src/popup/tests/popup-dropdowntree.tsx",
+            "dist": "tests/popup/popup-dropdowntree.html"
+        },
+        "popup-list-grouping": {
+            "path": "popup/popup-list-grouping",
+            "html": "packages/html/src/popup/tests/popup-list-grouping.html",
+            "src": "packages/html/src/popup/tests/popup-list-grouping.tsx",
+            "dist": "tests/popup/popup-list-grouping.html"
+        },
+        "popup-list": {
+            "path": "popup/popup-list",
+            "html": "packages/html/src/popup/tests/popup-list.html",
+            "src": "packages/html/src/popup/tests/popup-list.tsx",
+            "dist": "tests/popup/popup-list.html"
+        },
+        "popup-no-data": {
+            "path": "popup/popup-no-data",
+            "html": "packages/html/src/popup/tests/popup-no-data.html",
+            "src": "packages/html/src/popup/tests/popup-no-data.tsx",
+            "dist": "tests/popup/popup-no-data.html"
+        },
+        "circular-progressbar-angular": {
+            "path": "progressbar/circular-progressbar-angular",
+            "html": "packages/html/src/progressbar/tests/circular-progressbar-angular.html",
+            "src": "packages/html/src/progressbar/tests/circular-progressbar-angular.tsx",
+            "dist": "tests/progressbar/circular-progressbar-angular.html"
+        },
+        "progressbar-blazor-vertical": {
+            "path": "progressbar/progressbar-blazor-vertical",
+            "html": "packages/html/src/progressbar/tests/progressbar-blazor-vertical.html",
+            "src": "packages/html/src/progressbar/tests/progressbar-blazor-vertical.tsx",
+            "dist": "tests/progressbar/progressbar-blazor-vertical.html"
+        },
+        "progressbar-blazor": {
+            "path": "progressbar/progressbar-blazor",
+            "html": "packages/html/src/progressbar/tests/progressbar-blazor.html",
+            "src": "packages/html/src/progressbar/tests/progressbar-blazor.tsx",
+            "dist": "tests/progressbar/progressbar-blazor.html"
+        },
+        "progressbar-horizontal-chunk": {
+            "path": "progressbar/progressbar-horizontal-chunk",
+            "html": "packages/html/src/progressbar/tests/progressbar-horizontal-chunk.html",
+            "src": "packages/html/src/progressbar/tests/progressbar-horizontal-chunk.tsx",
+            "dist": "tests/progressbar/progressbar-horizontal-chunk.html"
+        },
+        "progressbar-horizontal-indeterminate": {
+            "path": "progressbar/progressbar-horizontal-indeterminate",
+            "html": "packages/html/src/progressbar/tests/progressbar-horizontal-indeterminate.html",
+            "src": "packages/html/src/progressbar/tests/progressbar-horizontal-indeterminate.tsx",
+            "dist": "tests/progressbar/progressbar-horizontal-indeterminate.html"
+        },
+        "progressbar-horizontal-reverse": {
+            "path": "progressbar/progressbar-horizontal-reverse",
+            "html": "packages/html/src/progressbar/tests/progressbar-horizontal-reverse.html",
+            "src": "packages/html/src/progressbar/tests/progressbar-horizontal-reverse.tsx",
+            "dist": "tests/progressbar/progressbar-horizontal-reverse.html"
+        },
+        "progressbar-vertical": {
+            "path": "progressbar/progressbar-vertical",
+            "html": "packages/html/src/progressbar/tests/progressbar-vertical.html",
+            "src": "packages/html/src/progressbar/tests/progressbar-vertical.tsx",
+            "dist": "tests/progressbar/progressbar-vertical.html"
+        },
+        "progressbar": {
+            "path": "progressbar/progressbar",
+            "html": "packages/html/src/progressbar/tests/progressbar.html",
+            "src": "packages/html/src/progressbar/tests/progressbar.tsx",
+            "dist": "tests/progressbar/progressbar.html"
+        },
+        "qrcode": {
+            "path": "qrcode/qrcode",
+            "html": "packages/html/src/qrcode/tests/qrcode.html",
+            "src": "packages/html/src/qrcode/tests/qrcode.tsx",
+            "dist": "tests/qrcode/qrcode.html"
+        },
+        "quick-replies": {
+            "path": "quick-replies/quick-replies",
+            "html": "packages/html/src/quick-replies/tests/quick-replies.html",
+            "src": "packages/html/src/quick-replies/tests/quick-replies.tsx",
+            "dist": "tests/quick-replies/quick-replies.html"
+        },
+        "radio-size": {
+            "path": "radio/radio-size",
+            "html": "packages/html/src/radio/tests/radio-size.html",
+            "src": "packages/html/src/radio/tests/radio-size.tsx",
+            "dist": "tests/radio/radio-size.html"
+        },
+        "radio": {
+            "path": "radio/radio",
+            "html": "packages/html/src/radio/tests/radio.html",
+            "src": "packages/html/src/radio/tests/radio.tsx",
+            "dist": "tests/radio/radio.html"
+        },
+        "rating": {
+            "path": "rating/rating",
+            "html": "packages/html/src/rating/tests/rating.html",
+            "src": "packages/html/src/rating/tests/rating.tsx",
+            "dist": "tests/rating/rating.html"
+        },
+        "scheduler-adaptive-agenda": {
+            "path": "scheduler/scheduler-adaptive-agenda",
+            "html": "packages/html/src/scheduler/tests/scheduler-adaptive-agenda.html",
+            "src": "packages/html/src/scheduler/tests/scheduler-adaptive-agenda.tsx",
+            "dist": "tests/scheduler/scheduler-adaptive-agenda.html"
+        },
+        "scheduler-adaptive-day-resource-group": {
+            "path": "scheduler/scheduler-adaptive-day-resource-group",
+            "html": "packages/html/src/scheduler/tests/scheduler-adaptive-day-resource-group.html",
+            "src": "packages/html/src/scheduler/tests/scheduler-adaptive-day-resource-group.tsx",
+            "dist": "tests/scheduler/scheduler-adaptive-day-resource-group.html"
+        },
+        "scheduler-adaptive-day": {
+            "path": "scheduler/scheduler-adaptive-day",
+            "html": "packages/html/src/scheduler/tests/scheduler-adaptive-day.html",
+            "src": "packages/html/src/scheduler/tests/scheduler-adaptive-day.tsx",
+            "dist": "tests/scheduler/scheduler-adaptive-day.html"
+        },
+        "scheduler-adaptive-edit-no-height": {
+            "path": "scheduler/scheduler-adaptive-edit-no-height",
+            "html": "packages/html/src/scheduler/tests/scheduler-adaptive-edit-no-height.html",
+            "src": "packages/html/src/scheduler/tests/scheduler-adaptive-edit-no-height.tsx",
+            "dist": "tests/scheduler/scheduler-adaptive-edit-no-height.html"
+        },
+        "scheduler-adaptive-edit-time-zones": {
+            "path": "scheduler/scheduler-adaptive-edit-time-zones",
+            "html": "packages/html/src/scheduler/tests/scheduler-adaptive-edit-time-zones.html",
+            "src": "packages/html/src/scheduler/tests/scheduler-adaptive-edit-time-zones.tsx",
+            "dist": "tests/scheduler/scheduler-adaptive-edit-time-zones.html"
+        },
+        "scheduler-adaptive-edit": {
+            "path": "scheduler/scheduler-adaptive-edit",
+            "html": "packages/html/src/scheduler/tests/scheduler-adaptive-edit.html",
+            "src": "packages/html/src/scheduler/tests/scheduler-adaptive-edit.tsx",
+            "dist": "tests/scheduler/scheduler-adaptive-edit.html"
+        },
+        "scheduler-adaptive-month": {
+            "path": "scheduler/scheduler-adaptive-month",
+            "html": "packages/html/src/scheduler/tests/scheduler-adaptive-month.html",
+            "src": "packages/html/src/scheduler/tests/scheduler-adaptive-month.tsx",
+            "dist": "tests/scheduler/scheduler-adaptive-month.html"
+        },
+        "scheduler-angular-agenda-rtl": {
+            "path": "scheduler/scheduler-angular-agenda-rtl",
+            "html": "packages/html/src/scheduler/tests/scheduler-angular-agenda-rtl.html",
+            "src": "packages/html/src/scheduler/tests/scheduler-angular-agenda-rtl.tsx",
+            "dist": "tests/scheduler/scheduler-angular-agenda-rtl.html"
+        },
+        "scheduler-angular-agenda": {
+            "path": "scheduler/scheduler-angular-agenda",
+            "html": "packages/html/src/scheduler/tests/scheduler-angular-agenda.html",
+            "src": "packages/html/src/scheduler/tests/scheduler-angular-agenda.tsx",
+            "dist": "tests/scheduler/scheduler-angular-agenda.html"
+        },
+        "scheduler-angular-day-rtl": {
+            "path": "scheduler/scheduler-angular-day-rtl",
+            "html": "packages/html/src/scheduler/tests/scheduler-angular-day-rtl.html",
+            "src": "packages/html/src/scheduler/tests/scheduler-angular-day-rtl.tsx",
+            "dist": "tests/scheduler/scheduler-angular-day-rtl.html"
+        },
+        "scheduler-angular-month-rtl": {
+            "path": "scheduler/scheduler-angular-month-rtl",
+            "html": "packages/html/src/scheduler/tests/scheduler-angular-month-rtl.html",
+            "src": "packages/html/src/scheduler/tests/scheduler-angular-month-rtl.tsx",
+            "dist": "tests/scheduler/scheduler-angular-month-rtl.html"
+        },
+        "scheduler-angular-month": {
+            "path": "scheduler/scheduler-angular-month",
+            "html": "packages/html/src/scheduler/tests/scheduler-angular-month.html",
+            "src": "packages/html/src/scheduler/tests/scheduler-angular-month.tsx",
+            "dist": "tests/scheduler/scheduler-angular-month.html"
+        },
+        "scheduler-angular-rtl": {
+            "path": "scheduler/scheduler-angular-rtl",
+            "html": "packages/html/src/scheduler/tests/scheduler-angular-rtl.html",
+            "src": "packages/html/src/scheduler/tests/scheduler-angular-rtl.tsx",
+            "dist": "tests/scheduler/scheduler-angular-rtl.html"
+        },
+        "scheduler-angular": {
+            "path": "scheduler/scheduler-angular",
+            "html": "packages/html/src/scheduler/tests/scheduler-angular.html",
+            "src": "packages/html/src/scheduler/tests/scheduler-angular.tsx",
+            "dist": "tests/scheduler/scheduler-angular.html"
+        },
+        "scheduler-edit-dialog": {
+            "path": "scheduler/scheduler-edit-dialog",
+            "html": "packages/html/src/scheduler/tests/scheduler-edit-dialog.html",
+            "src": "packages/html/src/scheduler/tests/scheduler-edit-dialog.tsx",
+            "dist": "tests/scheduler/scheduler-edit-dialog.html"
+        },
+        "scheduler-flex-layout": {
+            "path": "scheduler/scheduler-flex-layout",
+            "html": "packages/html/src/scheduler/tests/scheduler-flex-layout.html",
+            "src": "packages/html/src/scheduler/tests/scheduler-flex-layout.tsx",
+            "dist": "tests/scheduler/scheduler-flex-layout.html"
+        },
+        "scheduler-jquery-agenda": {
+            "path": "scheduler/scheduler-jquery-agenda",
+            "html": "packages/html/src/scheduler/tests/scheduler-jquery-agenda.html",
+            "src": "packages/html/src/scheduler/tests/scheduler-jquery-agenda.tsx",
+            "dist": "tests/scheduler/scheduler-jquery-agenda.html"
+        },
+        "scheduler-jquery-month": {
+            "path": "scheduler/scheduler-jquery-month",
+            "html": "packages/html/src/scheduler/tests/scheduler-jquery-month.html",
+            "src": "packages/html/src/scheduler/tests/scheduler-jquery-month.tsx",
+            "dist": "tests/scheduler/scheduler-jquery-month.html"
+        },
+        "scheduler-react-agenda": {
+            "path": "scheduler/scheduler-react-agenda",
+            "html": "packages/html/src/scheduler/tests/scheduler-react-agenda.html",
+            "src": "packages/html/src/scheduler/tests/scheduler-react-agenda.tsx",
+            "dist": "tests/scheduler/scheduler-react-agenda.html"
+        },
+        "scheduler-react-day": {
+            "path": "scheduler/scheduler-react-day",
+            "html": "packages/html/src/scheduler/tests/scheduler-react-day.html",
+            "src": "packages/html/src/scheduler/tests/scheduler-react-day.tsx",
+            "dist": "tests/scheduler/scheduler-react-day.html"
+        },
+        "scheduler-react-month": {
+            "path": "scheduler/scheduler-react-month",
+            "html": "packages/html/src/scheduler/tests/scheduler-react-month.html",
+            "src": "packages/html/src/scheduler/tests/scheduler-react-month.tsx",
+            "dist": "tests/scheduler/scheduler-react-month.html"
+        },
+        "scheduler-react-timeline-multi": {
+            "path": "scheduler/scheduler-react-timeline-multi",
+            "html": "packages/html/src/scheduler/tests/scheduler-react-timeline-multi.html",
+            "src": "packages/html/src/scheduler/tests/scheduler-react-timeline-multi.tsx",
+            "dist": "tests/scheduler/scheduler-react-timeline-multi.html"
+        },
+        "scheduler-react-timeline": {
+            "path": "scheduler/scheduler-react-timeline",
+            "html": "packages/html/src/scheduler/tests/scheduler-react-timeline.html",
+            "src": "packages/html/src/scheduler/tests/scheduler-react-timeline.tsx",
+            "dist": "tests/scheduler/scheduler-react-timeline.html"
+        },
+        "scheduler-react-week": {
+            "path": "scheduler/scheduler-react-week",
+            "html": "packages/html/src/scheduler/tests/scheduler-react-week.html",
+            "src": "packages/html/src/scheduler/tests/scheduler-react-week.tsx",
+            "dist": "tests/scheduler/scheduler-react-week.html"
+        },
+        "scheduler-tooltip": {
+            "path": "scheduler/scheduler-tooltip",
+            "html": "packages/html/src/scheduler/tests/scheduler-tooltip.html",
+            "src": "packages/html/src/scheduler/tests/scheduler-tooltip.tsx",
+            "dist": "tests/scheduler/scheduler-tooltip.html"
+        },
+        "scheduler-year": {
+            "path": "scheduler/scheduler-year",
+            "html": "packages/html/src/scheduler/tests/scheduler-year.html",
+            "src": "packages/html/src/scheduler/tests/scheduler-year.tsx",
+            "dist": "tests/scheduler/scheduler-year.html"
+        },
+        "scheduler": {
+            "path": "scheduler/scheduler",
+            "html": "packages/html/src/scheduler/tests/scheduler.html",
+            "src": "packages/html/src/scheduler/tests/scheduler.tsx",
+            "dist": "tests/scheduler/scheduler.html"
+        },
+        "scrollview-angular": {
+            "path": "scrollview/scrollview-angular",
+            "html": "packages/html/src/scrollview/tests/scrollview-angular.html",
+            "src": "packages/html/src/scrollview/tests/scrollview-angular.tsx",
+            "dist": "tests/scrollview/scrollview-angular.html"
+        },
+        "scrollview-blazor": {
+            "path": "scrollview/scrollview-blazor",
+            "html": "packages/html/src/scrollview/tests/scrollview-blazor.html",
+            "src": "packages/html/src/scrollview/tests/scrollview-blazor.tsx",
+            "dist": "tests/scrollview/scrollview-blazor.html"
+        },
+        "scrollview": {
+            "path": "scrollview/scrollview",
+            "html": "packages/html/src/scrollview/tests/scrollview.html",
+            "src": "packages/html/src/scrollview/tests/scrollview.tsx",
+            "dist": "tests/scrollview/scrollview.html"
+        },
+        "searchbox-flat": {
+            "path": "searchbox/searchbox-flat",
+            "html": "packages/html/src/searchbox/tests/searchbox-flat.html",
+            "src": "packages/html/src/searchbox/tests/searchbox-flat.tsx",
+            "dist": "tests/searchbox/searchbox-flat.html"
+        },
+        "searchbox-outline": {
+            "path": "searchbox/searchbox-outline",
+            "html": "packages/html/src/searchbox/tests/searchbox-outline.html",
+            "src": "packages/html/src/searchbox/tests/searchbox-outline.tsx",
+            "dist": "tests/searchbox/searchbox-outline.html"
+        },
+        "searchbox": {
+            "path": "searchbox/searchbox",
+            "html": "packages/html/src/searchbox/tests/searchbox.html",
+            "src": "packages/html/src/searchbox/tests/searchbox.tsx",
+            "dist": "tests/searchbox/searchbox.html"
+        },
+        "signature-flat": {
+            "path": "signature/signature-flat",
+            "html": "packages/html/src/signature/tests/signature-flat.html",
+            "src": "packages/html/src/signature/tests/signature-flat.tsx",
+            "dist": "tests/signature/signature-flat.html"
+        },
+        "signature-outline": {
+            "path": "signature/signature-outline",
+            "html": "packages/html/src/signature/tests/signature-outline.html",
+            "src": "packages/html/src/signature/tests/signature-outline.tsx",
+            "dist": "tests/signature/signature-outline.html"
+        },
+        "signature-sizes": {
+            "path": "signature/signature-sizes",
+            "html": "packages/html/src/signature/tests/signature-sizes.html",
+            "src": "packages/html/src/signature/tests/signature-sizes.tsx",
+            "dist": "tests/signature/signature-sizes.html"
+        },
+        "signature": {
+            "path": "signature/signature",
+            "html": "packages/html/src/signature/tests/signature.html",
+            "src": "packages/html/src/signature/tests/signature.tsx",
+            "dist": "tests/signature/signature.html"
+        },
+        "skeleton": {
+            "path": "skeleton/skeleton",
+            "html": "packages/html/src/skeleton/tests/skeleton.html",
+            "src": "packages/html/src/skeleton/tests/skeleton.tsx",
+            "dist": "tests/skeleton/skeleton.html"
+        },
+        "slider-css-vars": {
+            "path": "slider/slider-css-vars",
+            "html": "packages/html/src/slider/tests/slider-css-vars.html",
+            "src": "packages/html/src/slider/tests/slider-css-vars.tsx",
+            "dist": "tests/slider/slider-css-vars.html"
+        },
+        "slider-tick-absolute-position": {
+            "path": "slider/slider-tick-absolute-position",
+            "html": "packages/html/src/slider/tests/slider-tick-absolute-position.html",
+            "src": "packages/html/src/slider/tests/slider-tick-absolute-position.tsx",
+            "dist": "tests/slider/slider-tick-absolute-position.html"
+        },
+        "slider": {
+            "path": "slider/slider",
+            "html": "packages/html/src/slider/tests/slider.html",
+            "src": "packages/html/src/slider/tests/slider.tsx",
+            "dist": "tests/slider/slider.html"
+        },
+        "split-button-size": {
+            "path": "split-button/split-button-size",
+            "html": "packages/html/src/split-button/tests/split-button-size.html",
+            "src": "packages/html/src/split-button/tests/split-button-size.tsx",
+            "dist": "tests/split-button/split-button-size.html"
+        },
+        "split-button": {
+            "path": "split-button/split-button",
+            "html": "packages/html/src/split-button/tests/split-button.html",
+            "src": "packages/html/src/split-button/tests/split-button.tsx",
+            "dist": "tests/split-button/split-button.html"
+        },
+        "splitter": {
+            "path": "splitter/splitter",
+            "html": "packages/html/src/splitter/tests/splitter.html",
+            "src": "packages/html/src/splitter/tests/splitter.tsx",
+            "dist": "tests/splitter/splitter.html"
+        },
+        "spreadsheet-dialog": {
+            "path": "spreadsheet/spreadsheet-dialog",
+            "html": "packages/html/src/spreadsheet/tests/spreadsheet-dialog.html",
+            "src": "packages/html/src/spreadsheet/tests/spreadsheet-dialog.tsx",
+            "dist": "tests/spreadsheet/spreadsheet-dialog.html"
+        },
+        "spreadsheet-filter-menu": {
+            "path": "spreadsheet/spreadsheet-filter-menu",
+            "html": "packages/html/src/spreadsheet/tests/spreadsheet-filter-menu.html",
+            "src": "packages/html/src/spreadsheet/tests/spreadsheet-filter-menu.tsx",
+            "dist": "tests/spreadsheet/spreadsheet-filter-menu.html"
+        },
+        "spreadsheet": {
+            "path": "spreadsheet/spreadsheet",
+            "html": "packages/html/src/spreadsheet/tests/spreadsheet.html",
+            "src": "packages/html/src/spreadsheet/tests/spreadsheet.tsx",
+            "dist": "tests/spreadsheet/spreadsheet.html"
+        },
+        "stepper-horizontal-rtl": {
+            "path": "stepper/stepper-horizontal-rtl",
+            "html": "packages/html/src/stepper/tests/stepper-horizontal-rtl.html",
+            "src": "packages/html/src/stepper/tests/stepper-horizontal-rtl.tsx",
+            "dist": "tests/stepper/stepper-horizontal-rtl.html"
+        },
+        "stepper-states": {
+            "path": "stepper/stepper-states",
+            "html": "packages/html/src/stepper/tests/stepper-states.html",
+            "src": "packages/html/src/stepper/tests/stepper-states.tsx",
+            "dist": "tests/stepper/stepper-states.html"
+        },
+        "stepper-vertical-rtl": {
+            "path": "stepper/stepper-vertical-rtl",
+            "html": "packages/html/src/stepper/tests/stepper-vertical-rtl.html",
+            "src": "packages/html/src/stepper/tests/stepper-vertical-rtl.tsx",
+            "dist": "tests/stepper/stepper-vertical-rtl.html"
+        },
+        "stepper-vertical": {
+            "path": "stepper/stepper-vertical",
+            "html": "packages/html/src/stepper/tests/stepper-vertical.html",
+            "src": "packages/html/src/stepper/tests/stepper-vertical.tsx",
+            "dist": "tests/stepper/stepper-vertical.html"
+        },
+        "stepper": {
+            "path": "stepper/stepper",
+            "html": "packages/html/src/stepper/tests/stepper.html",
+            "src": "packages/html/src/stepper/tests/stepper.tsx",
+            "dist": "tests/stepper/stepper.html"
+        },
+        "switch-size-rounded": {
+            "path": "switch/switch-size-rounded",
+            "html": "packages/html/src/switch/tests/switch-size-rounded.html",
+            "src": "packages/html/src/switch/tests/switch-size-rounded.tsx",
+            "dist": "tests/switch/switch-size-rounded.html"
+        },
+        "switch": {
+            "path": "switch/switch",
+            "html": "packages/html/src/switch/tests/switch.html",
+            "src": "packages/html/src/switch/tests/switch.tsx",
+            "dist": "tests/switch/switch.html"
+        },
+        "table-data-sizes": {
+            "path": "table/table-data-sizes",
+            "html": "packages/html/src/table/tests/table-data-sizes.html",
+            "src": "packages/html/src/table/tests/table-data-sizes.tsx",
+            "dist": "tests/table/table-data-sizes.html"
+        },
+        "table-list-jquery": {
+            "path": "table/table-list-jquery",
+            "html": "packages/html/src/table/tests/table-list-jquery.html",
+            "src": "packages/html/src/table/tests/table-list-jquery.tsx",
+            "dist": "tests/table/table-list-jquery.html"
+        },
+        "table-list-sizes": {
+            "path": "table/table-list-sizes",
+            "html": "packages/html/src/table/tests/table-list-sizes.html",
+            "src": "packages/html/src/table/tests/table-list-sizes.tsx",
+            "dist": "tests/table/table-list-sizes.html"
+        },
+        "table-list-virtual": {
+            "path": "table/table-list-virtual",
+            "html": "packages/html/src/table/tests/table-list-virtual.html",
+            "src": "packages/html/src/table/tests/table-list-virtual.tsx",
+            "dist": "tests/table/table-list-virtual.html"
+        },
+        "table-native-sizes": {
+            "path": "table/table-native-sizes",
+            "html": "packages/html/src/table/tests/table-native-sizes.html",
+            "src": "packages/html/src/table/tests/table-native-sizes.tsx",
+            "dist": "tests/table/table-native-sizes.html"
+        },
+        "table-native-states": {
+            "path": "table/table-native-states",
+            "html": "packages/html/src/table/tests/table-native-states.html",
+            "src": "packages/html/src/table/tests/table-native-states.tsx",
+            "dist": "tests/table/table-native-states.html"
+        },
+        "tabstrip-rtl": {
+            "path": "tabstrip/tabstrip-rtl",
+            "html": "packages/html/src/tabstrip/tests/tabstrip-rtl.html",
+            "src": "packages/html/src/tabstrip/tests/tabstrip-rtl.tsx",
+            "dist": "tests/tabstrip/tabstrip-rtl.html"
+        },
+        "tabstrip-scrollable-rtl": {
+            "path": "tabstrip/tabstrip-scrollable-rtl",
+            "html": "packages/html/src/tabstrip/tests/tabstrip-scrollable-rtl.html",
+            "src": "packages/html/src/tabstrip/tests/tabstrip-scrollable-rtl.tsx",
+            "dist": "tests/tabstrip/tabstrip-scrollable-rtl.html"
+        },
+        "tabstrip-scrollable": {
+            "path": "tabstrip/tabstrip-scrollable",
+            "html": "packages/html/src/tabstrip/tests/tabstrip-scrollable.html",
+            "src": "packages/html/src/tabstrip/tests/tabstrip-scrollable.tsx",
+            "dist": "tests/tabstrip/tabstrip-scrollable.html"
+        },
+        "tabstrip-sortable": {
+            "path": "tabstrip/tabstrip-sortable",
+            "html": "packages/html/src/tabstrip/tests/tabstrip-sortable.html",
+            "src": "packages/html/src/tabstrip/tests/tabstrip-sortable.tsx",
+            "dist": "tests/tabstrip/tabstrip-sortable.html"
+        },
+        "tabstrip": {
+            "path": "tabstrip/tabstrip",
+            "html": "packages/html/src/tabstrip/tests/tabstrip.html",
+            "src": "packages/html/src/tabstrip/tests/tabstrip.tsx",
+            "dist": "tests/tabstrip/tabstrip.html"
+        },
+        "taskboard-card": {
+            "path": "taskboard/taskboard-card",
+            "html": "packages/html/src/taskboard/tests/taskboard-card.html",
+            "src": "packages/html/src/taskboard/tests/taskboard-card.tsx",
+            "dist": "tests/taskboard/taskboard-card.html"
+        },
+        "taskboard-column": {
+            "path": "taskboard/taskboard-column",
+            "html": "packages/html/src/taskboard/tests/taskboard-column.html",
+            "src": "packages/html/src/taskboard/tests/taskboard-column.tsx",
+            "dist": "tests/taskboard/taskboard-column.html"
+        },
+        "taskboard-pane": {
+            "path": "taskboard/taskboard-pane",
+            "html": "packages/html/src/taskboard/tests/taskboard-pane.html",
+            "src": "packages/html/src/taskboard/tests/taskboard-pane.tsx",
+            "dist": "tests/taskboard/taskboard-pane.html"
+        },
+        "taskboard-resources": {
+            "path": "taskboard/taskboard-resources",
+            "html": "packages/html/src/taskboard/tests/taskboard-resources.html",
+            "src": "packages/html/src/taskboard/tests/taskboard-resources.tsx",
+            "dist": "tests/taskboard/taskboard-resources.html"
+        },
+        "taskboard-rtl": {
+            "path": "taskboard/taskboard-rtl",
+            "html": "packages/html/src/taskboard/tests/taskboard-rtl.html",
+            "src": "packages/html/src/taskboard/tests/taskboard-rtl.tsx",
+            "dist": "tests/taskboard/taskboard-rtl.html"
+        },
+        "taskboard": {
+            "path": "taskboard/taskboard",
+            "html": "packages/html/src/taskboard/tests/taskboard.html",
+            "src": "packages/html/src/taskboard/tests/taskboard.tsx",
+            "dist": "tests/taskboard/taskboard.html"
+        },
+        "textarea-flat": {
+            "path": "textarea/textarea-flat",
+            "html": "packages/html/src/textarea/tests/textarea-flat.html",
+            "src": "packages/html/src/textarea/tests/textarea-flat.tsx",
+            "dist": "tests/textarea/textarea-flat.html"
+        },
+        "textarea-outline": {
+            "path": "textarea/textarea-outline",
+            "html": "packages/html/src/textarea/tests/textarea-outline.html",
+            "src": "packages/html/src/textarea/tests/textarea-outline.tsx",
+            "dist": "tests/textarea/textarea-outline.html"
+        },
+        "textarea": {
+            "path": "textarea/textarea",
+            "html": "packages/html/src/textarea/tests/textarea.html",
+            "src": "packages/html/src/textarea/tests/textarea.tsx",
+            "dist": "tests/textarea/textarea.html"
+        },
+        "textbox-flat": {
+            "path": "textbox/textbox-flat",
+            "html": "packages/html/src/textbox/tests/textbox-flat.html",
+            "src": "packages/html/src/textbox/tests/textbox-flat.tsx",
+            "dist": "tests/textbox/textbox-flat.html"
+        },
+        "textbox-outline": {
+            "path": "textbox/textbox-outline",
+            "html": "packages/html/src/textbox/tests/textbox-outline.html",
+            "src": "packages/html/src/textbox/tests/textbox-outline.tsx",
+            "dist": "tests/textbox/textbox-outline.html"
+        },
+        "textbox-size": {
+            "path": "textbox/textbox-size",
+            "html": "packages/html/src/textbox/tests/textbox-size.html",
+            "src": "packages/html/src/textbox/tests/textbox-size.tsx",
+            "dist": "tests/textbox/textbox-size.html"
+        },
+        "textbox": {
+            "path": "textbox/textbox",
+            "html": "packages/html/src/textbox/tests/textbox.html",
+            "src": "packages/html/src/textbox/tests/textbox.tsx",
+            "dist": "tests/textbox/textbox.html"
+        },
+        "tilelayout-react": {
+            "path": "tilelayout/tilelayout-react",
+            "html": "packages/html/src/tilelayout/tests/tilelayout-react.html",
+            "src": "packages/html/src/tilelayout/tests/tilelayout-react.tsx",
+            "dist": "tests/tilelayout/tilelayout-react.html"
+        },
+        "tilelayout": {
+            "path": "tilelayout/tilelayout",
+            "html": "packages/html/src/tilelayout/tests/tilelayout.html",
+            "src": "packages/html/src/tilelayout/tests/tilelayout.tsx",
+            "dist": "tests/tilelayout/tilelayout.html"
+        },
+        "time-selector": {
+            "path": "time-selector/time-selector",
+            "html": "packages/html/src/time-selector/tests/time-selector.html",
+            "src": "packages/html/src/time-selector/tests/time-selector.tsx",
+            "dist": "tests/time-selector/time-selector.html"
+        },
+        "timedurationpicker-expanded": {
+            "path": "timedurationpicker/timedurationpicker-expanded",
+            "html": "packages/html/src/timedurationpicker/tests/timedurationpicker-expanded.html",
+            "src": "packages/html/src/timedurationpicker/tests/timedurationpicker-expanded.tsx",
+            "dist": "tests/timedurationpicker/timedurationpicker-expanded.html"
+        },
+        "timedurationpicker": {
+            "path": "timedurationpicker/timedurationpicker",
+            "html": "packages/html/src/timedurationpicker/tests/timedurationpicker.html",
+            "src": "packages/html/src/timedurationpicker/tests/timedurationpicker.tsx",
+            "dist": "tests/timedurationpicker/timedurationpicker.html"
+        },
+        "timeline-horizontal": {
+            "path": "timeline/timeline-horizontal",
+            "html": "packages/html/src/timeline/tests/timeline-horizontal.html",
+            "src": "packages/html/src/timeline/tests/timeline-horizontal.tsx",
+            "dist": "tests/timeline/timeline-horizontal.html"
+        },
+        "timeline-vertical-alternating": {
+            "path": "timeline/timeline-vertical-alternating",
+            "html": "packages/html/src/timeline/tests/timeline-vertical-alternating.html",
+            "src": "packages/html/src/timeline/tests/timeline-vertical-alternating.tsx",
+            "dist": "tests/timeline/timeline-vertical-alternating.html"
+        },
+        "timeline-vertical": {
+            "path": "timeline/timeline-vertical",
+            "html": "packages/html/src/timeline/tests/timeline-vertical.html",
+            "src": "packages/html/src/timeline/tests/timeline-vertical.tsx",
+            "dist": "tests/timeline/timeline-vertical.html"
+        },
+        "timepicker-adaptive": {
+            "path": "timepicker/timepicker-adaptive",
+            "html": "packages/html/src/timepicker/tests/timepicker-adaptive.html",
+            "src": "packages/html/src/timepicker/tests/timepicker-adaptive.tsx",
+            "dist": "tests/timepicker/timepicker-adaptive.html"
+        },
+        "timepicker-flat": {
+            "path": "timepicker/timepicker-flat",
+            "html": "packages/html/src/timepicker/tests/timepicker-flat.html",
+            "src": "packages/html/src/timepicker/tests/timepicker-flat.tsx",
+            "dist": "tests/timepicker/timepicker-flat.html"
+        },
+        "timepicker-outline": {
+            "path": "timepicker/timepicker-outline",
+            "html": "packages/html/src/timepicker/tests/timepicker-outline.html",
+            "src": "packages/html/src/timepicker/tests/timepicker-outline.tsx",
+            "dist": "tests/timepicker/timepicker-outline.html"
+        },
+        "timepicker": {
+            "path": "timepicker/timepicker",
+            "html": "packages/html/src/timepicker/tests/timepicker.html",
+            "src": "packages/html/src/timepicker/tests/timepicker.tsx",
+            "dist": "tests/timepicker/timepicker.html"
+        },
+        "toolbar-angular": {
+            "path": "toolbar/toolbar-angular",
+            "html": "packages/html/src/toolbar/tests/toolbar-angular.html",
+            "src": "packages/html/src/toolbar/tests/toolbar-angular.tsx",
+            "dist": "tests/toolbar/toolbar-angular.html"
+        },
+        "toolbar-components": {
+            "path": "toolbar/toolbar-components",
+            "html": "packages/html/src/toolbar/tests/toolbar-components.html",
+            "src": "packages/html/src/toolbar/tests/toolbar-components.tsx",
+            "dist": "tests/toolbar/toolbar-components.html"
+        },
+        "toolbar-popup-legacy": {
+            "path": "toolbar/toolbar-popup-legacy",
+            "html": "packages/html/src/toolbar/tests/toolbar-popup-legacy.html",
+            "src": "packages/html/src/toolbar/tests/toolbar-popup-legacy.tsx",
+            "dist": "tests/toolbar/toolbar-popup-legacy.html"
+        },
+        "toolbar-popup-size": {
+            "path": "toolbar/toolbar-popup-size",
+            "html": "packages/html/src/toolbar/tests/toolbar-popup-size.html",
+            "src": "packages/html/src/toolbar/tests/toolbar-popup-size.tsx",
+            "dist": "tests/toolbar/toolbar-popup-size.html"
+        },
+        "toolbar-popup": {
+            "path": "toolbar/toolbar-popup",
+            "html": "packages/html/src/toolbar/tests/toolbar-popup.html",
+            "src": "packages/html/src/toolbar/tests/toolbar-popup.tsx",
+            "dist": "tests/toolbar/toolbar-popup.html"
+        },
+        "toolbar-sizes": {
+            "path": "toolbar/toolbar-sizes",
+            "html": "packages/html/src/toolbar/tests/toolbar-sizes.html",
+            "src": "packages/html/src/toolbar/tests/toolbar-sizes.tsx",
+            "dist": "tests/toolbar/toolbar-sizes.html"
+        },
+        "toolbar": {
+            "path": "toolbar/toolbar",
+            "html": "packages/html/src/toolbar/tests/toolbar.html",
+            "src": "packages/html/src/toolbar/tests/toolbar.tsx",
+            "dist": "tests/toolbar/toolbar.html"
+        },
+        "tooltip-rtl": {
+            "path": "tooltip/tooltip-rtl",
+            "html": "packages/html/src/tooltip/tests/tooltip-rtl.html",
+            "src": "packages/html/src/tooltip/tests/tooltip-rtl.tsx",
+            "dist": "tests/tooltip/tooltip-rtl.html"
+        },
+        "tooltip-states": {
+            "path": "tooltip/tooltip-states",
+            "html": "packages/html/src/tooltip/tests/tooltip-states.html",
+            "src": "packages/html/src/tooltip/tests/tooltip-states.tsx",
+            "dist": "tests/tooltip/tooltip-states.html"
+        },
+        "tooltip": {
+            "path": "tooltip/tooltip",
+            "html": "packages/html/src/tooltip/tests/tooltip.html",
+            "src": "packages/html/src/tooltip/tests/tooltip.tsx",
+            "dist": "tests/tooltip/tooltip.html"
+        },
+        "treelist-aggregate-react": {
+            "path": "treelist/treelist-aggregate-react",
+            "html": "packages/html/src/treelist/tests/treelist-aggregate-react.html",
+            "src": "packages/html/src/treelist/tests/treelist-aggregate-react.tsx",
+            "dist": "tests/treelist/treelist-aggregate-react.html"
+        },
+        "treelist-aggregates": {
+            "path": "treelist/treelist-aggregates",
+            "html": "packages/html/src/treelist/tests/treelist-aggregates.html",
+            "src": "packages/html/src/treelist/tests/treelist-aggregates.tsx",
+            "dist": "tests/treelist/treelist-aggregates.html"
+        },
+        "treelist-react": {
+            "path": "treelist/treelist-react",
+            "html": "packages/html/src/treelist/tests/treelist-react.html",
+            "src": "packages/html/src/treelist/tests/treelist-react.tsx",
+            "dist": "tests/treelist/treelist-react.html"
+        },
+        "treelist": {
+            "path": "treelist/treelist",
+            "html": "packages/html/src/treelist/tests/treelist.html",
+            "src": "packages/html/src/treelist/tests/treelist.tsx",
+            "dist": "tests/treelist/treelist.html"
+        },
+        "treemap": {
+            "path": "treemap/treemap",
+            "html": "packages/html/src/treemap/tests/treemap.html",
+            "src": "packages/html/src/treemap/tests/treemap.tsx",
+            "dist": "tests/treemap/treemap.html"
+        },
+        "treeview-size": {
+            "path": "treeview/treeview-size",
+            "html": "packages/html/src/treeview/tests/treeview-size.html",
+            "src": "packages/html/src/treeview/tests/treeview-size.tsx",
+            "dist": "tests/treeview/treeview-size.html"
+        },
+        "treeview": {
+            "path": "treeview/treeview",
+            "html": "packages/html/src/treeview/tests/treeview.html",
+            "src": "packages/html/src/treeview/tests/treeview.tsx",
+            "dist": "tests/treeview/treeview.html"
+        },
+        "typography": {
+            "path": "typography/typography",
+            "html": "packages/html/src/typography/tests/typography.html",
+            "src": "packages/html/src/typography/tests/typography.tsx",
+            "dist": "tests/typography/typography.html"
+        },
+        "upload-react": {
+            "path": "upload/upload-react",
+            "html": "packages/html/src/upload/tests/upload-react.html",
+            "src": "packages/html/src/upload/tests/upload-react.tsx",
+            "dist": "tests/upload/upload-react.html"
+        },
+        "upload-rtl": {
+            "path": "upload/upload-rtl",
+            "html": "packages/html/src/upload/tests/upload-rtl.html",
+            "src": "packages/html/src/upload/tests/upload-rtl.tsx",
+            "dist": "tests/upload/upload-rtl.html"
+        },
+        "upload": {
+            "path": "upload/upload",
+            "html": "packages/html/src/upload/tests/upload.html",
+            "src": "packages/html/src/upload/tests/upload.tsx",
+            "dist": "tests/upload/upload.html"
+        },
+        "window-action-buttons-react": {
+            "path": "window/window-action-buttons-react",
+            "html": "packages/html/src/window/tests/window-action-buttons-react.html",
+            "src": "packages/html/src/window/tests/window-action-buttons-react.tsx",
+            "dist": "tests/window/window-action-buttons-react.html"
+        },
+        "window-angular-rtl": {
+            "path": "window/window-angular-rtl",
+            "html": "packages/html/src/window/tests/window-angular-rtl.html",
+            "src": "packages/html/src/window/tests/window-angular-rtl.tsx",
+            "dist": "tests/window/window-angular-rtl.html"
+        },
+        "window-angular": {
+            "path": "window/window-angular",
+            "html": "packages/html/src/window/tests/window-angular.html",
+            "src": "packages/html/src/window/tests/window-angular.tsx",
+            "dist": "tests/window/window-angular.html"
+        },
+        "window-rtl": {
+            "path": "window/window-rtl",
+            "html": "packages/html/src/window/tests/window-rtl.html",
+            "src": "packages/html/src/window/tests/window-rtl.tsx",
+            "dist": "tests/window/window-rtl.html"
+        },
+        "window": {
+            "path": "window/window",
+            "html": "packages/html/src/window/tests/window.html",
+            "src": "packages/html/src/window/tests/window.tsx",
+            "dist": "tests/window/window.html"
+        },
+        "wizard-horizontal": {
+            "path": "wizard/wizard-horizontal",
+            "html": "packages/html/src/wizard/tests/wizard-horizontal.html",
+            "src": "packages/html/src/wizard/tests/wizard-horizontal.tsx",
+            "dist": "tests/wizard/wizard-horizontal.html"
+        },
+        "wizard-vertical": {
+            "path": "wizard/wizard-vertical",
+            "html": "packages/html/src/wizard/tests/wizard-vertical.html",
+            "src": "packages/html/src/wizard/tests/wizard-vertical.tsx",
+            "dist": "tests/wizard/wizard-vertical.html"
+        }
+    }
+}
