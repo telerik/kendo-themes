@@ -62,7 +62,7 @@
 
     .k-chart-tooltip-wrapper .k-animation-container-shown,
     .k-chart-tooltip-wrapper.k-animation-container-shown {
-        transition: left ease-in 80ms, top ease-in 80ms;
+        transition: $chart-tooltip-transition;
     }
 
     .k-sparkline-tooltip-wrapper,
