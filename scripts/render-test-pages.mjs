@@ -48,8 +48,8 @@ Promise.all(chunks.map(async( chunk, index ) => {
             await browser.navigateTo(url);
 
             const fileName = path.basename(filePath);
-            const folderName = filePath.replace(`${TESTS_PATH}/`, '').replace('tests/', '').replace(fileName, '');
-            const outputPath = path.normalize(`${OUTPUT_PATH}/${folderName}/${fileName}`);
+            const folderName = path.basename(path.dirname(path.dirname(filePath)));
+            const outputPath = `${OUTPUT_PATH}/${folderName}/${fileName}`;
 
             fs.mkdirSync(path.dirname(outputPath), { recursive: true });
 
