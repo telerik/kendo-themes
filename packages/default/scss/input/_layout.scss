@@ -53,9 +53,6 @@
             opacity: $kendo-input-placeholder-opacity;
             user-select: none;
         }
-        &:-ms-input-placeholder {
-            color: $kendo-input-placeholder-text;
-        }
     }
 
     // Input and Textarea
@@ -117,17 +114,11 @@
         text-overflow: ellipsis;
         -webkit-appearance: none;
 
-        // Hide clear icon
-        &::-ms-clear { display: none; }
-
         // Placeholder text
         &::placeholder {
             color: $kendo-input-placeholder-text;
             opacity: $kendo-input-placeholder-opacity;
             user-select: none;
-        }
-        &:-ms-input-placeholder {
-            color: $kendo-input-placeholder-text;
         }
 
         // Invalid

@@ -204,43 +204,6 @@
 
 }
 
-
-
-
-@include exports("progressbar/layout/ie11") {
-
-    .k-progressbar {
-        display: -ms-inline-grid;
-
-        > .k-progress-status-wrap,
-        > .k-progressbar-value {
-            -ms-grid-column: 1;
-            -ms-grid-row: 1;
-        }
-    }
-    .k-progressbar-horizontal {
-        -ms-grid-columns: 1fr;
-        -ms-grid-rows: $kendo-progressbar-height;
-
-        &.k-progressbar-reverse > .k-progressbar-value {
-            -ms-grid-column-align: end;
-        }
-    }
-    .k-progressbar-vertical {
-        -ms-grid-columns: $kendo-progressbar-height;
-        -ms-grid-rows: 1fr;
-
-        > .k-progressbar-value {
-            -ms-grid-row-align: end;
-        }
-
-        &.k-progressbar-reverse > .k-progressbar-value {
-            -ms-grid-row-align: start;
-        }
-    }
-
-}
-
 @include exports("circular-progressbar/layout") {
 
     .k-circular-progressbar {
