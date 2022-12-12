@@ -32,8 +32,8 @@ root.render(
                                     <tr role="row">
                                         <th className="k-hierarchy-cell k-header"></th>
                                         <th className="k-header" rowSpan={1} colSpan={1}><Checkbox id="k-grid0-select-all" /></th>
-                                        <th className="k-header k-touch-action-none k-grid-draggable-header" rowSpan={1} colSpan={1}>ID</th>
-                                        <th className="k-header k-touch-action-none k-grid-draggable-header" rowSpan={1} colSpan={1}>Name</th>
+                                        <th className="k-header k-grid-draggable-header" rowSpan={1} colSpan={1}>ID</th>
+                                        <th className="k-header k-grid-draggable-header" rowSpan={1} colSpan={1}>Name</th>
                                         <th className="k-header" rowSpan={1} colSpan={1}>Command</th>
                                     </tr>
                                 </thead>
@@ -54,17 +54,17 @@ root.render(
                                     <tbody>
                                         <tr className="k-master-row" role="row">
                                             <td className="k-hierarchy-cell"><Icon name="plus" /></td>
-                                            <td className="k-touch-action-auto" colSpan={1}><Checkbox id="k-grid0-checkbox0" /></td>
-                                            <td className="k-touch-action-auto" colSpan={1}>1</td>
-                                            <td className="k-touch-action-auto" colSpan={1}>Product1</td>
-                                            <td className="k-touch-action-auto k-command-cell" colSpan={1}><Button icon="trash">Delete</Button></td>
+                                            <td colSpan={1}><Checkbox id="k-grid0-checkbox0" /></td>
+                                            <td colSpan={1}>1</td>
+                                            <td colSpan={1}>Product1</td>
+                                            <td className="k-command-cell" colSpan={1}><Button icon="trash">Delete</Button></td>
                                         </tr>
                                         <tr className="k-alt k-master-row" role="row">
                                             <td className="k-hierarchy-cell"><Icon name="plus" /></td>
-                                            <td className="k-touch-action-auto" colSpan={1}><Checkbox id="k-grid0-checkbox1" /></td>
-                                            <td className="k-touch-action-auto" colSpan={1}>2</td>
-                                            <td className="k-touch-action-auto" colSpan={1}>Product2</td>
-                                            <td className="k-touch-action-auto k-command-cell" colSpan={1}><Button icon="trash">Delete</Button></td>
+                                            <td colSpan={1}><Checkbox id="k-grid0-checkbox1" /></td>
+                                            <td colSpan={1}>2</td>
+                                            <td colSpan={1}>Product2</td>
+                                            <td className="k-command-cell" colSpan={1}><Button icon="trash">Delete</Button></td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -100,8 +100,8 @@ root.render(
                                         <th className="k-group-cell k-header"></th>
                                         <th className="k-hierarchy-cell k-header"></th>
                                         <th className="k-header" rowSpan={1} colSpan={1}><Checkbox /></th>
-                                        <th className="k-header k-touch-action-none k-grid-draggable-header" rowSpan={1} colSpan={1}>ID</th>
-                                        <th className="k-header k-touch-action-none k-grid-draggable-header" rowSpan={1} colSpan={1}>Name</th>
+                                        <th className="k-header k-grid-draggable-header" rowSpan={1} colSpan={1}>ID</th>
+                                        <th className="k-header k-grid-draggable-header" rowSpan={1} colSpan={1}>Name</th>
                                         <th className="k-header" rowSpan={1} colSpan={1}>Command</th>
                                     </tr>
                                 </thead>
@@ -129,10 +129,10 @@ root.render(
                                         <tr className="k-master-row" role="row">
                                             <td className="k-group-cell"></td>
                                             <td className="k-hierarchy-cell"><Icon name="plus" /></td>
-                                            <td className="k-touch-action-auto" colSpan={1}><Checkbox /></td>
-                                            <td className="k-touch-action-auto" colSpan={1}>1</td>
-                                            <td className="k-touch-action-auto" colSpan={1}>Product1</td>
-                                            <td className="k-touch-action-auto k-command-cell" colSpan={1}><Button icon="trash">Delete</Button></td>
+                                            <td colSpan={1}><Checkbox /></td>
+                                            <td colSpan={1}>1</td>
+                                            <td colSpan={1}>Product1</td>
+                                            <td className="k-command-cell" colSpan={1}><Button icon="trash">Delete</Button></td>
                                         </tr>
                                         <tr role="row" className="k-grouping-row">
                                             <td colSpan={6}>
@@ -142,10 +142,10 @@ root.render(
                                         <tr className="k-alt k-master-row" role="row">
                                             <td className="k-group-cell"></td>
                                             <td className="k-hierarchy-cell"><Icon name="plus" /></td>
-                                            <td className="k-touch-action-auto" colSpan={1}><Checkbox /></td>
-                                            <td className="k-touch-action-auto" colSpan={1}>2</td>
-                                            <td className="k-touch-action-auto" colSpan={1}>Product2</td>
-                                            <td className="k-touch-action-auto k-command-cell" colSpan={1}><Button icon="trash">Delete</Button></td>
+                                            <td colSpan={1}><Checkbox /></td>
+                                            <td colSpan={1}>2</td>
+                                            <td colSpan={1}>Product2</td>
+                                            <td className="k-command-cell" colSpan={1}><Button icon="trash">Delete</Button></td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -184,8 +184,8 @@ root.render(
                                         <th className="k-group-cell k-header"></th>
                                         <th className="k-hierarchy-cell k-header"></th>
                                         <th className="k-header" rowSpan={1} colSpan={1}><Checkbox /></th>
-                                        <th className="k-header k-touch-action-none k-grid-draggable-header" rowSpan={1} colSpan={1}>ID</th>
-                                        <th className="k-header k-touch-action-none k-grid-draggable-header" rowSpan={1} colSpan={1}>Name</th>
+                                        <th className="k-header k-grid-draggable-header" rowSpan={1} colSpan={1}>ID</th>
+                                        <th className="k-header k-grid-draggable-header" rowSpan={1} colSpan={1}>Name</th>
                                         <th className="k-header" rowSpan={1} colSpan={1}>Command</th>
                                     </tr>
                                 </thead>
@@ -221,10 +221,10 @@ root.render(
                                             <td className="k-group-cell"></td>
                                             <td className="k-group-cell"></td>
                                             <td className="k-hierarchy-cell"><Icon name="plus" /></td>
-                                            <td className="k-touch-action-auto" colSpan={1}><Checkbox /></td>
-                                            <td className="k-touch-action-auto" colSpan={1}>1</td>
-                                            <td className="k-touch-action-auto" colSpan={1}>Product1</td>
-                                            <td className="k-touch-action-auto k-command-cell" colSpan={1}><Button icon="trash">Delete</Button></td>
+                                            <td colSpan={1}><Checkbox /></td>
+                                            <td colSpan={1}>1</td>
+                                            <td colSpan={1}>Product1</td>
+                                            <td className="k-command-cell" colSpan={1}><Button icon="trash">Delete</Button></td>
                                         </tr>
                                         <tr role="row" className="k-grouping-row">
                                             <td colSpan={7}>
@@ -241,10 +241,10 @@ root.render(
                                             <td className="k-group-cell"></td>
                                             <td className="k-group-cell"></td>
                                             <td className="k-hierarchy-cell"><Icon name="plus" /></td>
-                                            <td className="k-touch-action-auto" colSpan={1}><Checkbox /></td>
-                                            <td className="k-touch-action-auto" colSpan={1}>2</td>
-                                            <td className="k-touch-action-auto" colSpan={1}>Product2</td>
-                                            <td className="k-touch-action-auto k-command-cell" colSpan={1}><Button icon="trash">Delete</Button></td>
+                                            <td colSpan={1}><Checkbox /></td>
+                                            <td colSpan={1}>2</td>
+                                            <td colSpan={1}>Product2</td>
+                                            <td className="k-command-cell" colSpan={1}><Button icon="trash">Delete</Button></td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -283,8 +283,8 @@ root.render(
                                         <th className="k-group-cell k-header"></th>
                                         <th className="k-hierarchy-cell k-header"></th>
                                         <th className="k-header" rowSpan={1} colSpan={1}><Checkbox /></th>
-                                        <th className="k-header k-touch-action-none k-grid-draggable-header" rowSpan={1} colSpan={1}>ID</th>
-                                        <th className="k-header k-touch-action-none k-grid-draggable-header" rowSpan={1} colSpan={1}>Name</th>
+                                        <th className="k-header k-grid-draggable-header" rowSpan={1} colSpan={1}>ID</th>
+                                        <th className="k-header k-grid-draggable-header" rowSpan={1} colSpan={1}>Name</th>
                                         <th className="k-header" rowSpan={1} colSpan={1}>Command</th>
                                     </tr>
                                 </thead>
@@ -320,10 +320,10 @@ root.render(
                                             <td className="k-group-cell"></td>
                                             <td className="k-group-cell"></td>
                                             <td className="k-hierarchy-cell"><Icon name="minus" /></td>
-                                            <td className="k-touch-action-auto" colSpan={1}><Checkbox /></td>
-                                            <td className="k-touch-action-auto" colSpan={1}>1</td>
-                                            <td className="k-touch-action-auto" colSpan={1}>Product1</td>
-                                            <td className="k-touch-action-auto k-command-cell" colSpan={1}><Button icon="trash">Delete</Button></td>
+                                            <td colSpan={1}><Checkbox /></td>
+                                            <td colSpan={1}>1</td>
+                                            <td colSpan={1}>Product1</td>
+                                            <td className="k-command-cell" colSpan={1}><Button icon="trash">Delete</Button></td>
                                         </tr>
                                         <tr className="k-detail-row" role="row">
                                             <td className="k-group-cell"></td>
@@ -346,10 +346,10 @@ root.render(
                                             <td className="k-group-cell"></td>
                                             <td className="k-group-cell"></td>
                                             <td className="k-hierarchy-cell"><Icon name="minus" /></td>
-                                            <td className="k-touch-action-auto" colSpan={1}><Checkbox /></td>
-                                            <td className="k-touch-action-auto" colSpan={1}>2</td>
-                                            <td className="k-touch-action-auto" colSpan={1}>Product2</td>
-                                            <td className="k-touch-action-auto k-command-cell" colSpan={1}><Button icon="trash">Delete</Button></td>
+                                            <td colSpan={1}><Checkbox /></td>
+                                            <td colSpan={1}>2</td>
+                                            <td colSpan={1}>Product2</td>
+                                            <td className="k-command-cell" colSpan={1}><Button icon="trash">Delete</Button></td>
                                         </tr>
                                         <tr className="k-detail-row k-alt" role="row">
                                             <td className="k-group-cell"></td>
