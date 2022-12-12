@@ -1,0 +1,65 @@
+{
+    "$schema": "../../schemas/component.schema.json",
+    "title": "Kendo Chunk Progressbar HTML Spec",
+    "component": "chunk-progressbar",
+    "selector": [
+        ".k-chunk-progressbar"
+    ],
+    "states": [
+        {
+            "name": "indeterminate",
+            "selector": [
+                ".k-progressbar-indeterminate"
+            ]
+        },
+        {
+            "name": "disabled",
+            "selector": [
+                ":disabled",
+                "[disabled]",
+                ".k-disabled"
+            ]
+        }
+    ],
+    "options": [
+        {
+            "name": "orientation",
+            "values": [
+                {
+                    "name": "horizontal",
+                    "selector": [
+                        ".k-progressbar-horizontal"
+                    ]
+                },
+                {
+                    "name": "vertical",
+                    "selector": [
+                        ".k-progressbar-vertical"
+                    ]
+                },
+                {
+                    "name": "reverse",
+                    "selector": [
+                        ".k-progressbar-reverse"
+                    ]
+                }
+            ]
+        }
+    ],
+    "children": [
+        {
+            "name": "progressbar-chunk",
+            "selector": [
+                ".k-progressbar-chunk"
+            ],
+            "states": [
+                {
+                    "name": "selected",
+                    "selector": [
+                        ".k-selected"
+                    ]
+                }
+            ]
+        }
+    ]
+}

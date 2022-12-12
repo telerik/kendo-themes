@@ -1,27 +1,37 @@
 @include exports("progressbar/theme") {
 
-    @keyframes progressbar-indeterminate-animation {
+    @keyframes kendo-progressbar-indeterminate-animation {
         from { background-position: 0 0; }
-        to { background-position: $progressbar-height 0; }
+        to { background-position: $kendo-progressbar-height 0; }
     }
 
     .k-progressbar {
-        @include fill( $progressbar-text, $progressbar-bg, $progressbar-border, $progressbar-gradient );
+        @include fill( $kendo-progressbar-text, $kendo-progressbar-bg, $kendo-progressbar-border, $kendo-progressbar-gradient );
 
         .k-selected {
-            @include fill( $progressbar-fill-text, $progressbar-fill-bg, $progressbar-fill-border, $progressbar-fill-gradient );
+            @include fill( $kendo-progressbar-value-text, $kendo-progressbar-value-bg, $kendo-progressbar-value-border, $kendo-progressbar-value-gradient );
         }
+    }
 
-        .k-item {
-            border-color: $progressbar-chunk-border;
+    // Chunk progressbar
+    .k-chunk-progressbar {
+        // TODO uncomment for 2023 R1
+        // background-color: k-if-var( $progressbar-chunk-border, transparent );
+        background-color: transparent;
+    }
+    .k-progressbar-chunk {
+        background-color: $kendo-progressbar-bg;
+
+        .k-selected {
+            background-color: $kendo-progressbar-value-bg;
         }
     }
 
     .k-progressbar-indeterminate {
-        @include fill( $progressbar-indeterminate-text, $progressbar-indeterminate-bg, $progressbar-indeterminate-border );
-        @include striped-gradient( shade($progressbar-indeterminate-bg) );
-        background-size: $progressbar-height $progressbar-height;
-        animation: progressbar-indeterminate-animation $progressbar-animation-timing;
+        @include fill( $kendo-progressbar-indeterminate-text, $kendo-progressbar-indeterminate-bg, $kendo-progressbar-indeterminate-border );
+        @include striped-gradient( shade($kendo-progressbar-indeterminate-bg) );
+        background-size: $kendo-progressbar-height $kendo-progressbar-height;
+        animation: kendo-progressbar-indeterminate-animation $kendo-progressbar-animation-timing;
     }
 
 }

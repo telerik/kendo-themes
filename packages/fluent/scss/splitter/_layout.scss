@@ -51,9 +51,6 @@
         border-style: solid;
         outline: 0;
         position: absolute;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
         user-select: none;
         display: flex;
         align-items: center;
@@ -155,7 +152,6 @@
         .k-pane {
             position: relative;
             flex: 1 1 auto;
-            display: block; // ie10 + flex
             min-width: 0;
             max-width: 100%;
             min-height: 0;

@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { Icon } from '../../icon';
+import { ProgressBar } from '../../progressbar';
 
 const root = ReactDOM.createRoot(
     document.getElementById('app') as HTMLElement
@@ -14,6 +15,10 @@ const style = `
         width: 100%;
         grid-column: 1 / -1;
         visibility: hidden;
+    }
+    .k-progressbar {
+        grid-column-start: 2;
+        grid-column-end: 6;
     }
 `;
 
@@ -51,12 +56,7 @@ root.render(
                             </a>
                         </li>
                     </ol>
-                    <div className="k-widget k-progressbar k-progressbar-horizontal" style={{ gridColumnStart: "2", gridColumnEnd: "6" }}>
-                        <span className="k-progress-status-wrap k-progress-end"></span>
-                        <div className="k-selected" style={{ height: "100%", width: "50%" }}>
-                            <span className="k-progress-status-wrap k-progress-end" style={{ height: "100%", width: "200%" }}></span>
-                        </div>
-                    </div>
+                    <ProgressBar label={false} value="50" />
                 </nav>
             </section>
 
@@ -95,12 +95,7 @@ root.render(
                             </a>
                         </li>
                     </ol>
-                    <div className="k-widget k-progressbar k-progressbar-horizontal" style={{ gridColumnStart: "2", gridColumnEnd: "6" }}>
-                        <span className="k-progress-status-wrap k-progress-end"></span>
-                        <div className="k-selected" style={{ height: "100%", width: "50%" }}>
-                            <span className="k-progress-status-wrap k-progress-end" style={{ height: "100%", width: "200%" }}></span>
-                        </div>
-                    </div>
+                    <ProgressBar label={false} value="50" />
                 </nav>
             </section>
 
@@ -130,12 +125,7 @@ root.render(
                             </a>
                         </li>
                     </ol>
-                    <div className="k-widget k-progressbar k-progressbar-horizontal" style={{ gridColumnStart: "2", gridColumnEnd: "6" }}>
-                        <span className="k-progress-status-wrap k-progress-end"></span>
-                        <div className="k-selected" style={{ height: "100%", width: "50%" }}>
-                            <span className="k-progress-status-wrap k-progress-end" style={{ height: "100%", width: "200%" }}></span>
-                        </div>
-                    </div>
+                    <ProgressBar label={false} value="50" />
                 </nav>
             </section>
 
@@ -170,12 +160,7 @@ root.render(
                             </a>
                         </li>
                     </ol>
-                    <div className="k-widget k-progressbar k-progressbar-horizontal" style={{ gridColumnStart: "2", gridColumnEnd: "6" }}>
-                        <span className="k-progress-status-wrap k-progress-end"></span>
-                        <div className="k-selected" style={{ height: "100%", width: "50%" }}>
-                            <span className="k-progress-status-wrap k-progress-end" style={{ height: "100%", width: "200%" }}></span>
-                        </div>
-                    </div>
+                    <ProgressBar label={false} value="50" />
                 </nav>
             </section>
 
@@ -214,12 +199,7 @@ root.render(
                             </a>
                         </li>
                     </ol>
-                    <div className="k-widget k-progressbar k-progressbar-horizontal" style={{ gridColumnStart: "2", gridColumnEnd: "6" }}>
-                        <span className="k-progress-status-wrap k-progress-end"></span>
-                        <div className="k-selected" style={{ height: "100%", width: "50%" }}>
-                            <span className="k-progress-status-wrap k-progress-end" style={{ height: "100%", width: "200%" }}></span>
-                        </div>
-                    </div>
+                    <ProgressBar label={false} value="50" />
                 </nav>
             </section>
 
@@ -249,12 +229,7 @@ root.render(
                             </a>
                         </li>
                     </ol>
-                    <div className="k-widget k-progressbar k-progressbar-horizontal" style={{ gridColumnStart: "2", gridColumnEnd: "6" }}>
-                        <span className="k-progress-status-wrap k-progress-end"></span>
-                        <div className="k-selected" style={{ height: "100%", width: "50%" }}>
-                            <span className="k-progress-status-wrap k-progress-end" style={{ height: "100%", width: "200%" }}></span>
-                        </div>
-                    </div>
+                    <ProgressBar label={false} value="50" />
                 </nav>
             </section>
 
@@ -287,12 +262,7 @@ root.render(
                             </a>
                         </li>
                     </ol>
-                    <div className="k-widget k-progressbar k-progressbar-horizontal" style={{ gridColumnStart: "2", gridColumnEnd: "6" }}>
-                        <span className="k-progress-status-wrap k-progress-end"></span>
-                        <div className="k-selected" style={{ height: "100%", width: "50%" }}>
-                            <span className="k-progress-status-wrap k-progress-end" style={{ height: "100%", width: "200%" }}></span>
-                        </div>
-                    </div>
+                    <ProgressBar label={false} value="50" />
                 </nav>
             </section>
 
@@ -331,12 +301,7 @@ root.render(
                             </a>
                         </li>
                     </ol>
-                    <div className="k-widget k-progressbar k-progressbar-horizontal" style={{ gridColumnStart: "2", gridColumnEnd: "6" }}>
-                        <span className="k-progress-status-wrap k-progress-end"></span>
-                        <div className="k-selected" style={{ height: "100%", width: "50%" }}>
-                            <span className="k-progress-status-wrap k-progress-end" style={{ height: "100%", width: "200%" }}></span>
-                        </div>
-                    </div>
+                    <ProgressBar label={false} value="50" />
                 </nav>
             </section>
 
@@ -366,12 +331,7 @@ root.render(
                             </a>
                         </li>
                     </ol>
-                    <div className="k-widget k-progressbar k-progressbar-horizontal" style={{ gridColumnStart: "2", gridColumnEnd: "6" }}>
-                        <span className="k-progress-status-wrap k-progress-end"></span>
-                        <div className="k-selected" style={{ height: "100%", width: "50%" }}>
-                            <span className="k-progress-status-wrap k-progress-end" style={{ height: "100%", width: "200%" }}></span>
-                        </div>
-                    </div>
+                    <ProgressBar label={false} value="50" />
                 </nav>
             </section>
 
@@ -406,12 +366,7 @@ root.render(
                             </a>
                         </li>
                     </ol>
-                    <div className="k-widget k-progressbar k-progressbar-horizontal k-disabled" style={{ gridColumnStart: "2", gridColumnEnd: "6" }}>
-                        <span className="k-progress-status-wrap k-progress-end"></span>
-                        <div className="k-selected" style={{ height: "100%", width: "50%" }}>
-                            <span className="k-progress-status-wrap k-progress-end" style={{ height: "100%", width: "200%" }}></span>
-                        </div>
-                    </div>
+                    <ProgressBar label={false} disabled={true} value="50" />
                 </nav>
             </section>
 
@@ -450,12 +405,7 @@ root.render(
                             </a>
                         </li>
                     </ol>
-                    <div className="k-widget k-progressbar k-progressbar-horizontal k-disabled" style={{ gridColumnStart: "2", gridColumnEnd: "6" }}>
-                        <span className="k-progress-status-wrap k-progress-end"></span>
-                        <div className="k-selected" style={{ height: "100%", width: "50%" }}>
-                            <span className="k-progress-status-wrap k-progress-end" style={{ height: "100%", width: "200%" }}></span>
-                        </div>
-                    </div>
+                    <ProgressBar label={false} disabled={true} value="50" />
                 </nav>
             </section>
 
@@ -485,12 +435,7 @@ root.render(
                             </a>
                         </li>
                     </ol>
-                    <div className="k-widget k-progressbar k-progressbar-horizontal k-disabled" style={{ gridColumnStart: "2", gridColumnEnd: "6" }}>
-                        <span className="k-progress-status-wrap k-progress-end"></span>
-                        <div className="k-selected" style={{ height: "100%", width: "50%" }}>
-                            <span className="k-progress-status-wrap k-progress-end" style={{ height: "100%", width: "200%" }}></span>
-                        </div>
-                    </div>
+                    <ProgressBar label={false} disabled={true} value="50" />
                 </nav>
             </section>
         </div>

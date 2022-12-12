@@ -3,14 +3,14 @@
     // Base
     .k-progressbar {
         @include border-radius( $kendo-border-radius );
-        --kendo-progressbar-progress: 0;
-        border-width: $progressbar-border-width;
+        --kendo-progressbar-value: 0;
+        border-width: $kendo-progressbar-border-width;
         border-style: solid;
         box-sizing: border-box;
         outline: 0;
-        font-family: $progressbar-font-family;
-        font-size: $progressbar-font-size;
-        line-height: $progressbar-line-height;
+        font-family: $kendo-progressbar-font-family;
+        font-size: $kendo-progressbar-font-size;
+        line-height: $kendo-progressbar-line-height;
         display: inline-grid;
         vertical-align: middle;
         position: relative;
@@ -26,7 +26,7 @@
 
 
         // Selection
-        > .k-selected {
+        > .k-progressbar-value {
             border-width: 0;
             border-style: solid;
             display: flex;
@@ -37,21 +37,21 @@
 
 
         // Chunks
-        > ul {
+        > .k-progressbar-chunks {
             border-width: inherit;
             border-style: inherit;
             white-space: nowrap;
             display: flex;
             align-items: stretch;
             flex: 1;
+            gap: 1px;
             grid-column: 1 / -1;
             grid-row: 1 / -1;
         }
-        .k-item {
+        .k-progressbar-chunk {
             display: block;
             border-width: 0;
-            border-style: solid;
-            border-color: transparent;
+            flex: 1;
         }
 
     }
@@ -72,11 +72,8 @@
         &.k-progress-end { justify-content: flex-end; }
     }
     .k-progress-status {
-        padding: 0 ($spacer-x / 2);
-        padding-block-start: 0;
-        padding-block-end: 0;
-        padding-inline-start: ($spacer-x / 2);
-        padding-inline-end: ($spacer-x / 2);
+        padding-block: 0;
+        padding-inline: ($spacer-x / 2);
         min-width: 10px;
         text-align: center;
         display: inline-block;
@@ -86,8 +83,8 @@
 
     // Horizontal
     .k-progressbar-horizontal {
-        width: $progressbar-horizontal-width;
-        height: $progressbar-height;
+        width: $kendo-progressbar-horizontal-width;
+        height: var( --kendo-progressbar-height, #{$kendo-progressbar-height} );
         grid-template-columns: 1fr;
         grid-template-rows: 100%;
 
@@ -96,44 +93,39 @@
             flex-direction: row;
         }
 
-        > .k-selected {
-            width: 0;
-            width: calc( var( --kendo-progressbar-progress, 0 ) * 1% ); // sass-lint:disable-line no-duplicate-properties
+        > .k-progressbar-value {
+            width: calc( var( --kendo-progressbar-value, 0 ) * 1% ); // sass-lint:disable-line no-duplicate-properties
             flex-direction: row;
 
             > .k-progress-status-wrap {
-                width: calc( 100% * ( 100 / var( --kendo-progressbar-progress, 1 ) ) );
+                width: calc( 100% * ( 100 / var( --kendo-progressbar-value, 1 ) ) );
             }
         }
 
 
         // Chunks
-        > ul {
+        > .k-progressbar-chunks {
             flex-direction: row;
         }
-        .k-item {}
-        .k-item + .k-item {
-            border-left-width: 1px;
-            border-inline-start-width: 1px;
-            border-inline-end-width: 0;
-        }
-
 
         // Horizontal reverse
         &.k-progressbar-reverse {
 
-            > .k-selected {
+            > .k-progressbar-value {
                 flex-direction: row-reverse;
                 justify-self: flex-end;
             }
 
+            > .k-progressbar-chunks {
+                flex-direction: row-reverse;
+            }
         }
     }
 
 
     // Vertical
     .k-progressbar-vertical {
-        width: $progressbar-height;
+        width: var( --kendo-progressbar-height, #{$kendo-progressbar-height} );
         height: 27em;
         grid-template-columns: 100%;
         grid-template-rows: 1fr;
@@ -146,38 +138,34 @@
             writing-mode: vertical-lr;
         }
 
-        > .k-selected {
-            height: 0;
-            height: calc( var( --kendo-progressbar-progress, 0 ) * 1% ); // sass-lint:disable-line no-duplicate-properties
+        > .k-progressbar-value {
+            height: calc( var( --kendo-progressbar-value, 0 ) * 1% ); // sass-lint:disable-line no-duplicate-properties
             flex-direction: column-reverse;
             align-self: flex-end;
             align-items: flex-end;
 
             > .k-progress-status-wrap {
-                height: calc( 100% * ( 100 / var( --kendo-progressbar-progress, 1 ) ) ); // sass-lint:disable-line no-duplicate-properties
+                height: calc( 100% * ( 100 / var( --kendo-progressbar-value, 1 ) ) ); // sass-lint:disable-line no-duplicate-properties
             }
         }
 
 
         // Chunk
-        > ul {
-            flex-direction: column;
+        > .k-progressbar-chunks {
+            flex-direction: column-reverse;
         }
-        .k-item {}
-        .k-item + .k-item {
-            border-top-width: 1px;
-            border-block-start-width: 1px;
-            border-block-end-width: 0;
-        }
-
 
         // Vertical reverse
         &.k-progressbar-reverse {
             flex-direction: column;
 
-            > .k-selected {
+            > .k-progressbar-value {
                 flex-direction: column;
                 align-self: flex-start;
+            }
+
+            > .k-progressbar-chunks {
+                flex-direction: column;
             }
         }
     }
@@ -186,8 +174,8 @@
     // Indeterminate
     .k-progressbar-indeterminate {
         .k-progress-status-wrap,
-        .k-selected,
-        .k-item {
+        .k-progressbar-value,
+        .k-progressbar-chunk {
             display: none;
         }
     }
@@ -196,8 +184,8 @@
     // Blazor specific
     .telerik-blazor.k-progressbar-horizontal {
 
-        > .k-selected,
-        > .k-selected > .k-progress-status-wrap {
+        > .k-progressbar-value,
+        > .k-progressbar-value > .k-progress-status-wrap {
             transition: width .1s ease-in-out;
         }
     }
@@ -212,43 +200,6 @@
     .k-rtl .k-progressbar,
     .k-progressbar[dir="rtl"] {
         direction: rtl;
-    }
-
-}
-
-
-
-
-@include exports("progressbar/layout/ie11") {
-
-    .k-progressbar {
-        display: -ms-inline-grid;
-
-        > .k-progress-status-wrap,
-        > .k-selected {
-            -ms-grid-column: 1;
-            -ms-grid-row: 1;
-        }
-    }
-    .k-progressbar-horizontal {
-        -ms-grid-columns: 1fr;
-        -ms-grid-rows: $progressbar-height;
-
-        &.k-progressbar-reverse > .k-selected {
-            -ms-grid-column-align: end;
-        }
-    }
-    .k-progressbar-vertical {
-        -ms-grid-columns: $progressbar-height;
-        -ms-grid-rows: 1fr;
-
-        > .k-selected {
-            -ms-grid-row-align: end;
-        }
-
-        &.k-progressbar-reverse > .k-selected {
-            -ms-grid-row-align: start;
-        }
     }
 
 }

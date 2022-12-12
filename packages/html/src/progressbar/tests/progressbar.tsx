@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { ProgressBar } from '../../progressbar';
 
 const root = ReactDOM.createRoot(
     document.getElementById('app') as HTMLElement
@@ -21,185 +22,40 @@ root.render(
             <span>RTL</span>
 
             <span>Partial start</span>
-            <div className="k-widget k-progressbar k-progressbar-horizontal">
-                <span className="k-progress-status-wrap k-progress-start">
-                    <span className="k-progress-status">5%</span>
-                </span>
-                <div className="k-selected" style={{ width: "5%" }} >
-                    <span className="k-progress-status-wrap k-progress-start" style={{ width: "2000%" }} >
-                        <span className="k-progress-status">5%</span>
-                    </span>
-                </div>
-            </div>
-            <div dir="rtl" className="k-widget k-progressbar k-progressbar-horizontal">
-                <span className="k-progress-status-wrap k-progress-start">
-                    <span className="k-progress-status">5%</span>
-                </span>
-                <div className="k-selected" style={{ width: "5%" }} >
-                    <span className="k-progress-status-wrap k-progress-start" style={{ width: "2000%" }} >
-                        <span className="k-progress-status">5%</span>
-                    </span>
-                </div>
-            </div>
+            <ProgressBar value="5" />
+            <ProgressBar value="5" dir="rtl" />
 
             <span>Partial center</span>
-            <div className="k-widget k-progressbar k-progressbar-horizontal">
-                <span className="k-progress-status-wrap k-progress-center">
-                    <span className="k-progress-status">50%</span>
-                </span>
-                <div className="k-selected" style={{ width: "50%" }} >
-                    <span className="k-progress-status-wrap k-progress-center" style={{ width: "200%" }} >
-                        <span className="k-progress-status">50%</span>
-                    </span>
-                </div>
-            </div>
-            <div dir="rtl" className="k-widget k-progressbar k-progressbar-horizontal">
-                <span className="k-progress-status-wrap k-progress-center">
-                    <span className="k-progress-status">50%</span>
-                </span>
-                <div className="k-selected" style={{ width: "50%" }} >
-                    <span className="k-progress-status-wrap k-progress-center" style={{ width: "200%" }} >
-                        <span className="k-progress-status">50%</span>
-                    </span>
-                </div>
-            </div>
+            <ProgressBar value="50" labelPosition="center" />
+            <ProgressBar value="50" labelPosition="center" dir="rtl" />
 
             <span>Partial end</span>
-            <div className="k-widget k-progressbar k-progressbar-horizontal">
-                <span className="k-progress-status-wrap k-progress-end">
-                    <span className="k-progress-status">95%</span>
-                </span>
-                <div className="k-selected" style={{ width: "95%" }} >
-                    <span className="k-progress-status-wrap k-progress-end" style={{ width: "105.263%" }} >
-                        <span className="k-progress-status">95%</span>
-                    </span>
-                </div>
-            </div>
-            <div dir="rtl" className="k-widget k-progressbar k-progressbar-horizontal">
-                <span className="k-progress-status-wrap k-progress-end">
-                    <span className="k-progress-status">95%</span>
-                </span>
-                <div className="k-selected" style={{ width: "95%" }} >
-                    <span className="k-progress-status-wrap k-progress-end" style={{ width: "105.263%" }} >
-                        <span className="k-progress-status">95%</span>
-                    </span>
-                </div>
-            </div>
+            <ProgressBar value="95" labelPosition="end" />
+            <ProgressBar value="95" labelPosition="end" dir="rtl" />
 
             <span>100% start</span>
-            <div className="k-widget k-progressbar k-progressbar-horizontal">
-                <span className="k-progress-status-wrap k-progress-start">
-                    <span className="k-progress-status">100%</span>
-                </span>
-                <div className="k-selected" style={{ width: '100%' }} >
-                    <span className="k-progress-status-wrap k-progress-start" style={{ width: '100%' }} >
-                        <span className="k-progress-status">100%</span>
-                    </span>
-                </div>
-            </div>
-            <div dir="rtl" className="k-widget k-progressbar k-progressbar-horizontal">
-                <span className="k-progress-status-wrap k-progress-start">
-                    <span className="k-progress-status">100%</span>
-                </span>
-                <div className="k-selected" style={{ width: '100%' }} >
-                    <span className="k-progress-status-wrap k-progress-start" style={{ width: '100%' }} >
-                        <span className="k-progress-status">100%</span>
-                    </span>
-                </div>
-            </div>
+            <ProgressBar value="100" />
+            <ProgressBar value="100" dir="rtl" />
 
             <span>100% center</span>
-            <div className="k-widget k-progressbar k-progressbar-horizontal">
-                <span className="k-progress-status-wrap k-progress-center">
-                    <span className="k-progress-status">100%</span>
-                </span>
-                <div className="k-selected" style={{ width: '100%' }} >
-                    <span className="k-progress-status-wrap k-progress-center" style={{ width: '100%' }} >
-                        <span className="k-progress-status">100%</span>
-                    </span>
-                </div>
-            </div>
-            <div dir="rtl" className="k-widget k-progressbar k-progressbar-horizontal">
-                <span className="k-progress-status-wrap k-progress-center">
-                    <span className="k-progress-status">100%</span>
-                </span>
-                <div className="k-selected" style={{ width: '100%' }} >
-                    <span className="k-progress-status-wrap k-progress-center" style={{ width: '100%' }} >
-                        <span className="k-progress-status">100%</span>
-                    </span>
-                </div>
-            </div>
+            <ProgressBar value="100" labelPosition="center" />
+            <ProgressBar value="100" labelPosition="center" dir="rtl" />
 
             <span>100% end</span>
-            <div className="k-widget k-progressbar k-progressbar-horizontal">
-                <span className="k-progress-status-wrap k-progress-end">
-                    <span className="k-progress-status">100%</span>
-                </span>
-                <div className="k-selected" style={{ width: '100%' }} >
-                    <span className="k-progress-status-wrap k-progress-end" style={{ width: '100%' }} >
-                        <span className="k-progress-status">100%</span>
-                    </span>
-                </div>
-            </div>
-            <div dir="rtl" className="k-widget k-progressbar k-progressbar-horizontal">
-                <span className="k-progress-status-wrap k-progress-end">
-                    <span className="k-progress-status">100%</span>
-                </span>
-                <div className="k-selected" style={{ width: '100%' }} >
-                    <span className="k-progress-status-wrap k-progress-end" style={{ width: '100%' }} >
-                        <span className="k-progress-status">100%</span>
-                    </span>
-                </div>
-            </div>
+            <ProgressBar value="100" labelPosition="end" />
+            <ProgressBar value="100" labelPosition="end" dir="rtl" />
+
             <span>No Label</span>
-            <div className="k-widget k-progressbar k-progressbar-horizontal">
-                <span className="k-progress-status-wrap k-progress-end"></span>
-                <div className="k-selected" style={{ width: "50%" }} >
-                    <span className="k-progress-status-wrap k-progress-end" style={{ width: "200%" }} ></span>
-                </div>
-            </div>
-            <div dir="rtl" className="k-widget k-progressbar k-progressbar-horizontal">
-                <span className="k-progress-status-wrap k-progress-end"></span>
-                <div className="k-selected" style={{ width: "50%" }} >
-                    <span className="k-progress-status-wrap k-progress-end" style={{ width: "200%" }} ></span>
-                </div>
-            </div>
+            <ProgressBar value="50" label={false} />
+            <ProgressBar value="50" label={false} dir="rtl" />
 
             <span>Thin style</span>
-            <div className="k-widget k-progressbar k-progressbar-horizontal" style={{ height: "2px" }} >
-                <span className="k-progress-status-wrap k-progress-end"></span>
-                <div className="k-selected" style={{ width: "50%" }} >
-                    <span className="k-progress-status-wrap k-progress-end" style={{ width: "200%" }} ></span>
-                </div>
-            </div>
-            <div dir="rtl" className="k-widget k-progressbar k-progressbar-horizontal" style={{ height: "2px" }} >
-                <span className="k-progress-status-wrap k-progress-end"></span>
-                <div className="k-selected" style={{ width: "50%" }} >
-                    <span className="k-progress-status-wrap k-progress-end" style={{ width: "200%" }} ></span>
-                </div>
-            </div>
+            <ProgressBar value="50" label={false} height="2px" />
+            <ProgressBar value="50" label={false} height="2px" dir="rtl" />
 
             <span>Thick style</span>
-            <div className="k-widget k-progressbar k-progressbar-horizontal" style={{ height: '50px' }} >
-                <span className="k-progress-status-wrap k-progress-end">
-                    <span className="k-progress-status">50%</span>
-                </span>
-                <div className="k-selected" style={{ width: "50%" }} >
-                    <span className="k-progress-status-wrap k-progress-end" style={{ width: "200%" }} >
-                        <span className="k-progress-status">50%</span>
-                    </span>
-                </div>
-            </div>
-            <div dir="rtl" className="k-widget k-progressbar k-progressbar-horizontal" style={{ height: '50px' }} >
-                <span className="k-progress-status-wrap k-progress-end">
-                    <span className="k-progress-status">50%</span>
-                </span>
-                <div className="k-selected" style={{ width: "50%" }} >
-                    <span className="k-progress-status-wrap k-progress-end" style={{ width: "200%" }} >
-                        <span className="k-progress-status">50%</span>
-                    </span>
-                </div>
-            </div>
+            <ProgressBar value="50" height="50px" labelPosition="end" />
+            <ProgressBar value="50" height="50px" labelPosition="end" dir="rtl" />
 
         </div>
     </>
