@@ -65,31 +65,6 @@ The FloatingActionButton specifies the primary or the most common actions in an 
 </button>
 ```
 
-## Shapes
-To create different shapes, the FloatingActionButton utilizes two classes, one for the base structure and one for rounding.
-
-### Rectangle
-
-```html
-<div class="k-d-flex k-gap-2">
-    <button type="button" class="k-fab k-fab-rectangle k-fab-sm k-fab-solid k-fab-solid-primary">
-        <span class="k-fab-text">Rectangle</span>
-    </button>
-    <button type="button" class="k-fab k-fab-rectangle k-rounded-sm k-fab-sm k-fab-solid k-fab-solid-primary">
-        <span class="k-fab-text">Rectangle Rounded SM</span>
-    </button>
-    <button type="button" class="k-fab k-fab-rectangle k-rounded-md k-fab-sm k-fab-solid k-fab-solid-primary">
-        <span class="k-fab-text">Rectangle Rounded MD</span>
-    </button>
-    <button type="button" class="k-fab k-fab-rectangle k-rounded-lg k-fab-sm k-fab-solid k-fab-solid-primary">
-        <span class="k-fab-text">Rectangle Rounded LG</span>
-    </button>
-    <button type="button" class="k-fab k-fab-rectangle k-rounded-full k-fab-sm k-fab-solid k-fab-solid-primary">
-        <span class="k-fab-text">Rectangle Rounded Full</span>
-    </button>
-</div>
-```
-
 ### Square
 
 ```html
