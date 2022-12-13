@@ -26,7 +26,6 @@
         &::before {
             content: "";
             height: $kendo-button-calc-size;
-            margin-inline-start: -$kendo-toolbar-spacing;
         }
 
         &.k-toolbar-resizable {
