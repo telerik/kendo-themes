@@ -76,7 +76,7 @@
         border-style: solid;
         box-sizing: border-box;
         position: absolute;
-        top: calc( 50% + #{$time-list-title-height / 2});
+        top: calc( 50% + #{k-math-div( $time-list-title-height, 2 )});
         left: 0;
         right: 0;
         transform: translateY(-50%);
@@ -203,7 +203,7 @@
         align-items: center;
         position: relative;
         z-index: 11;
-        top: calc( #{$time-list-title-height / 2} );
+        top: calc( #{k-math-div( $time-list-title-height, 2 )} );
     }
 
 

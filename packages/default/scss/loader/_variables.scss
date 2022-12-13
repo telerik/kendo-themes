@@ -4,9 +4,9 @@ $kendo-loader-segment-size-sm: map-get( $spacing, 1 ) !default;
 $kendo-loader-segment-size-md: map-get( $spacing, 2 ) !default;
 $kendo-loader-segment-size-lg: map-get( $spacing, 4 ) !default;
 
-$kendo-loader-padding-sm: ( $kendo-loader-segment-size-sm / 2 ) !default;
-$kendo-loader-padding-md: ( $kendo-loader-segment-size-md / 2 ) !default;
-$kendo-loader-padding-lg: ( $kendo-loader-segment-size-lg / 2 ) !default;
+$kendo-loader-padding-sm: k-math-div( $kendo-loader-segment-size-sm, 2 ) !default;
+$kendo-loader-padding-md: k-math-div( $kendo-loader-segment-size-md, 2 ) !default;
+$kendo-loader-padding-lg: k-math-div( $kendo-loader-segment-size-lg, 2 ) !default;
 
 $kendo-loader-spinner-3-width-sm: ( $kendo-loader-segment-size-sm * 4 ) !default;
 $kendo-loader-spinner-3-height-sm: ( $kendo-loader-spinner-3-width-sm * $equilateral-height ) !default;

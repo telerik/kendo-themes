@@ -14,6 +14,6 @@ $captcha-image-wrap-gap: $captcha-spacer !default;
 
 $captcha-image-controls-gap: $captcha-spacer !default;
 
-$captcha-validation-message-margin-top: $captcha-spacer / 2 !default;
+$captcha-validation-message-margin-top: k-math-div( $captcha-spacer, 2 ) !default;
 $captcha-validation-message-font-size: $font-size-sm !default;
 $captcha-validation-message-font-style: italic !default;

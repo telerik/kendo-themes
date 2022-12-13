@@ -218,7 +218,7 @@
         .k-timeline-circle {
             margin-top: $timeline-track-event-offset;
             transform: translate(-50%, -50%);
-            margin-right: - $timeline-circle-width / 2;
+            margin-right: - k-math-div( $timeline-circle-width, 2 );
         }
 
         &.k-timeline-alternating {
@@ -330,7 +330,7 @@
 
         .k-timeline-track-wrap {
             position: relative;
-            padding: ($timeline-track-arrow-height / 2) 0;
+            padding: k-math-div( $timeline-track-arrow-height, 2 ) 0;
 
             &::after {
                 top: auto;

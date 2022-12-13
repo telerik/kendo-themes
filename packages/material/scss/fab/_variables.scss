@@ -15,19 +15,19 @@ $kendo-fab-font-family: $font-family !default;
 $kendo-fab-font-size: $font-size !default;
 /// Line height of the FAB.
 /// @group floating-action-button
-$kendo-fab-line-height: (20 / 14) !default;
+$kendo-fab-line-height: k-math-div( 20, 14 ) !default;
 
 /// Horizontal padding of the FAB.
 /// @group floating-action-button
 $kendo-fab-padding-x: $padding-x !default;
-$kendo-fab-padding-x-sm: ( $kendo-fab-padding-x / 2 ) !default;
+$kendo-fab-padding-x-sm: k-math-div( $kendo-fab-padding-x, 2 ) !default;
 $kendo-fab-padding-x-md: $kendo-fab-padding-x !default;
 $kendo-fab-padding-x-lg: ( $kendo-fab-padding-x * 1.5 ) !default;
 
 /// Vertical padding of the FAB.
 /// @group floating-action-button
 $kendo-fab-padding-y: $kendo-fab-padding-x !default;
-$kendo-fab-padding-y-sm: ( $kendo-fab-padding-y / 2 ) !default;
+$kendo-fab-padding-y-sm: k-math-div( $kendo-fab-padding-y, 2 ) !default;
 $kendo-fab-padding-y-md: $kendo-fab-padding-y !default;
 $kendo-fab-padding-y-lg: ( $kendo-fab-padding-y * 1.5 ) !default;
 

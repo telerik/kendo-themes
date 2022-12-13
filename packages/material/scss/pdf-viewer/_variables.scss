@@ -22,7 +22,7 @@ $pdf-viewer-page-spacing: 30px !default;
 $pdf-viewer-page-bg: white !default;
 $pdf-viewer-page-text: $component-text !default;
 $pdf-viewer-page-border: $component-border !default;
-$pdf-viewer-page-shadow: 0 0 ($pdf-viewer-page-spacing / 2) $pdf-viewer-page-border !default;
+$pdf-viewer-page-shadow: 0 0 k-math-div( $pdf-viewer-page-spacing, 2 ) $pdf-viewer-page-border !default;
 
 $pdf-viewer-search-panel-border-width: 1px !default;
 $pdf-viewer-search-panel-border-radius: k-map-get( $spacing, 1 ) !default;

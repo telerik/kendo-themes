@@ -56,7 +56,7 @@
     }
 
     $handle-size: 2px;
-    $handle-half-size: $handle-size / 2;
+    $handle-half-size: k-math-div( $handle-size, 2 );
     .k-event {
         .k-event-delete {
             border-radius: 50%;

@@ -169,7 +169,7 @@
 
         &.k-loader-sm {
             .k-loader-canvas {
-                margin: ( $kendo-loader-segment-size-sm / 2 );
+                margin: k-math-div( $kendo-loader-segment-size-sm, 2 );
                 width: calc( #{$kendo-loader-spinner-3-width-sm} - #{$kendo-loader-segment-size-sm} );
                 height: calc( #{$kendo-loader-spinner-3-height-sm} - #{$kendo-loader-segment-size-sm} );
             }
@@ -177,7 +177,7 @@
 
         &.k-loader-md {
             .k-loader-canvas {
-                margin: ( $kendo-loader-segment-size-md / 2 );
+                margin: k-math-div( $kendo-loader-segment-size-md, 2 );
                 width: calc( #{$kendo-loader-spinner-3-width-md} - #{$kendo-loader-segment-size-md} );
                 height: calc( #{$kendo-loader-spinner-3-height-md} - #{$kendo-loader-segment-size-md} );
             }
@@ -185,7 +185,7 @@
 
         &.k-loader-lg {
             .k-loader-canvas {
-                margin: ( $kendo-loader-segment-size-lg / 2 );
+                margin: k-math-div( $kendo-loader-segment-size-lg, 2 );
                 width: calc( #{$kendo-loader-spinner-3-width-lg} - #{$kendo-loader-segment-size-lg} );
                 height: calc( #{$kendo-loader-spinner-3-height-lg} - #{$kendo-loader-segment-size-lg} );
             }

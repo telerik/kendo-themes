@@ -12,7 +12,7 @@ $stepper-inline-content-padding-x: 20px !default;
 $stepper-inline-content-padding-y: 10px !default;
 
 $stepper-font-size: $font-size !default;
-$stepper-line-height: (20 / 14) !default;
+$stepper-line-height: k-math-div( 20, 14 ) !default;
 $stepper-font-family: $font-family !default;
 
 $stepper-bg: null !default;

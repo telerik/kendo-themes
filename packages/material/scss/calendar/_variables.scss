@@ -2,7 +2,7 @@
 $calendar-border-width: 1px !default;
 $calendar-font-family: $font-family !default;
 $calendar-font-size: $font-size !default;
-$calendar-line-height: (20 / 14) !default;
+$calendar-line-height: k-math-div( 20, 14 ) !default;
 
 $calendar-cell-size: 36px !default;
 

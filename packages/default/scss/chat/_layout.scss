@@ -224,7 +224,7 @@
     .k-quick-reply {
         @include border-radius( 100px );
         margin-right: $chat-quick-reply-spacing;
-        margin-bottom: ($chat-quick-reply-spacing / 2);
+        margin-bottom: k-math-div( $chat-quick-reply-spacing, 2 );
         padding: $chat-quick-reply-padding-y $chat-quick-reply-padding-x;
         border-width: 1px;
         border-style: solid;

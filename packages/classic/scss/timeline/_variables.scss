@@ -18,7 +18,7 @@ $timeline-track-arrow-disabled-bg: k-true-mix( $kendo-button-bg, $body-bg, 65% )
 $timeline-track-arrow-disabled-border: k-true-mix( #000000, $body-bg, 4.8% ) !default;
 
 $timeline-track-size: 6px !default;
-$timeline-track-wrap-padding-bottom: $timeline-track-size / 2 !default;
+$timeline-track-wrap-padding-bottom: k-math-div( $timeline-track-size, 2 ) !default;
 $timeline-track-border-width: 1px !default;
 $timeline-track-margin-bottom: 16px !default;
 $timeline-track-bottom-calc: calc((#{$timeline-track-arrow-height} / 2) + #{$timeline-track-wrap-padding-bottom}) !default;

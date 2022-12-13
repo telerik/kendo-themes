@@ -277,7 +277,7 @@
             margin: $pivotgrid-configurator-fields-margin-y $pivotgrid-configurator-fields-margin-x;
             display: flex;
             flex-direction: column;
-            gap: ($pivotgrid-spacer / 2);
+            gap: k-math-div( $pivotgrid-spacer, 2 );
         }
 
         .k-select-all .k-checkbox {

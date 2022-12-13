@@ -353,14 +353,14 @@
         .k-slider-horizontal & {
             height: $slider-track-thickness;
             left: 0;
-            margin-top: -($slider-track-thickness / 2);
+            margin-top: - k-math-div( $slider-track-thickness, 2 );
             top: 50%;
         }
 
         .k-slider-vertical & {
             bottom: 0;
             left: 50%;
-            margin-left: -($slider-track-thickness / 2);
+            margin-left: - k-math-div( $slider-track-thickness, 2 );
             width: $slider-track-thickness;
         }
     }
@@ -421,12 +421,12 @@
     .k-slider-tooltip {
         .k-callout-n,
         .k-callout-s {
-            margin-left: -$tooltip-callout-size / 2;
+            margin-left: - k-math-div( $tooltip-callout-size, 2 );
         }
 
         .k-callout-w,
         .k-callout-e {
-            margin-top: -$tooltip-callout-size / 2;
+            margin-top: - k-math-div( $tooltip-callout-size, 2 );
         }
     }
 

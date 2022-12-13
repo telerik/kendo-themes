@@ -47,7 +47,7 @@ $card-title-letter-spacing: null !default;
 $card-subtitle-margin-bottom: 12px !default;
 $card-subtitle-font-size: $font-size !default;
 $card-subtitle-font-family: $font-family !default;
-$card-subtitle-line-height: (20 / 14) !default;
+$card-subtitle-line-height: k-math-div( 20, 14 ) !default;
 $card-subtitle-font-weight: 500 !default;
 $card-subtitle-letter-spacing: null !default;
 $card-subtitle-text: $subtle-text !default;
@@ -62,7 +62,7 @@ $card-actions-border-width: 1px !default;
 $card-actions-gap: k-map-get( $spacing, 2 ) !default;
 
 $card-deck-scroll-button-radius: 50% !default;
-$card-deck-scroll-button-offset: ( $card-deck-gap / 2 ) !default;
+$card-deck-scroll-button-offset: k-math-div( $card-deck-gap, 2 ) !default;
 
 $card-callout-width: 20px !default;
 $card-callout-height: 20px !default;

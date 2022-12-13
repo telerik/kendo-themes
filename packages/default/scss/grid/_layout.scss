@@ -5,7 +5,7 @@
     $filter-rows-span-size: null !default;
 
     $grid-group-dropclue-size: 6px;
-    $grid-group-dropclue-line-size: $grid-group-dropclue-size / 3;
+    $grid-group-dropclue-line-size: k-math-div( $grid-group-dropclue-size, 3 );
     $grid-group-dropclue-height: calc( #{$kendo-chip-calc-size} + #{$grid-group-dropclue-size}) !default;
     $grid-group-dropclue-top: 3px !default;
 
@@ -163,8 +163,8 @@
         }
 
         .k-grouping-row .k-icon {
-            margin-inline-start: calc( #{$icon-size / 2} - #{$table-cell-padding-x} );
-            margin-inline-end: ($icon-size / 2);
+            margin-inline-start: calc( #{k-math-div( $icon-size, 2 )} - #{$table-cell-padding-x} );
+            margin-inline-end: k-math-div( $icon-size, 2 );
             text-decoration: none;
         }
 
@@ -315,7 +315,7 @@
             width: $grid-group-dropclue-line-size;
             height: calc(100% - #{$grid-group-dropclue-size});
             top: $grid-group-dropclue-size;
-            inset-inline-start: calc( #{$grid-group-dropclue-size} - #{$grid-group-dropclue-line-size / 2} );
+            inset-inline-start: calc( #{$grid-group-dropclue-size} - #{k-math-div( $grid-group-dropclue-line-size, 2 )} );
         }
     }
 
@@ -517,7 +517,7 @@
             display: flex;
             flex-flow: row nowrap;
             align-items: center;
-            gap: ( $grid-cell-padding-y / 2 );
+            gap: k-math-div( $grid-cell-padding-y, 2 );
             flex: 1 1 auto;
 
             > .k-button {
@@ -637,7 +637,8 @@
 
     .k-pager-input {
         .k-numerictextbox {
-            margin: 0 $font-size / 2;
+            margin-block: 0;
+            margin-inline: k-math-div( $font-size, 2 );
             width: 3em;
         }
     }

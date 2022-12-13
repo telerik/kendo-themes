@@ -232,8 +232,8 @@
             }
 
             .k-spreadsheet-sheets-remove {
-                margin-right: $spacer / 2;
-                margin-left: -$spacer / 2;
+                margin-right: k-math-div( $spacer, 2 );
+                margin-left: - k-math-div( $spacer, 2 );
                 padding: 0;
                 line-height: 1;
                 display: inline-flex;
@@ -735,12 +735,12 @@
     .k-spreadsheet-format-cells {
 
         .k-spreadsheet-preview {
-            margin-top: ($spacer / 2);
+            margin-top: k-math-div( $spacer, 2 );
             text-align: center;
         }
 
         .k-list-scroller {
-            margin-top: ($spacer / 2);
+            margin-top: k-math-div( $spacer, 2 );
             height: 210px;
             border-width: 1px;
             border-style: solid;
@@ -770,7 +770,7 @@
         .k-page-orientation {
             position: absolute;
             right: 0;
-            top: ($spacer-y / 2);
+            top: k-math-div( $spacer-y, 2 );
 
             .k-icon {
                 font-size: 6em;

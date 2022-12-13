@@ -90,7 +90,7 @@ $kendo-input-focus-shadow: null !default;
 
 $kendo-input-disabled-bg: k-try-shade( $component-bg, .25 ) !default;
 $kendo-input-disabled-text: $disabled-text !default;
-$kendo-input-disabled-border: rgba( $component-border, (alpha( $component-border ) / 2) ) !default;
+$kendo-input-disabled-border: rgba( $component-border, k-math-div( alpha( $component-border ), 2 ) ) !default;
 $kendo-input-disabled-gradient: null !default;
 $kendo-input-disabled-shadow: null !default;
 

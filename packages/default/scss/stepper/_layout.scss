@@ -106,7 +106,7 @@
             z-index: 1;
         }
         .k-step-label:only-child {
-            @include border-radius( ($stepper-indicator-height + 2 * $stepper-indicator-border-width) / 2 );
+            @include border-radius( k-math-div( ( $stepper-indicator-height + 2 * $stepper-indicator-border-width ), 2 ) );
             padding: $stepper-label-padding-y $stepper-label-padding-x;
             border-width: 0;
         }

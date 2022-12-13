@@ -80,7 +80,7 @@
         &.k-slider-vertical .k-slider-track {
             width: $colorgradient-slider-track-size;
             border-radius: $colorgradient-slider-border-radius;
-            margin-left: -($colorgradient-slider-track-size / 2);
+            margin-left: - k-math-div( $colorgradient-slider-track-size, 2 );
         }
 
         &.k-slider-horizontal {
@@ -91,7 +91,7 @@
         &.k-slider-horizontal .k-slider-track {
             height: $colorgradient-slider-track-size;
             border-radius: $colorgradient-slider-border-radius;
-            margin-top: -($colorgradient-slider-track-size / 2);
+            margin-top: - k-math-div( $colorgradient-slider-track-size, 2 );
         }
 
         &.k-alpha-slider .k-slider-track::before {
@@ -162,7 +162,7 @@
         .k-contrast-validation {
             display: inline-flex;
             align-items: center;
-            gap: ( $colorgradient-contrast-spacer / 2 );
+            gap: k-math-div( $colorgradient-contrast-spacer, 2 );
 
             .k-icon {
                 vertical-align: middle;

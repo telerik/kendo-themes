@@ -109,10 +109,10 @@
             }
 
             &.k-switch-on .k-switch-thumb-wrap {
-                left: calc( 100% - #{$_thumb-width / 2} - #{$_thumb-offset} );
+                left: calc( 100% - #{k-math-div( $_thumb-width, 2 )} - #{$_thumb-offset} );
             }
             &.k-switch-off .k-switch-thumb-wrap {
-                left: calc( #{$_thumb-width / 2} + #{$_thumb-offset} );
+                left: calc( #{k-math-div( $_thumb-width, 2 )} + #{$_thumb-offset} );
             }
         }
 
@@ -130,10 +130,10 @@
             }
 
             &.k-switch-on .k-switch-thumb-wrap {
-                left: calc( #{$_thumb-width / 2} + #{$_thumb-offset} );
+                left: calc( #{k-math-div( $_thumb-width, 2 )} + #{$_thumb-offset} );
             }
             &.k-switch-off .k-switch-thumb-wrap {
-                left: calc( 100% - #{$_thumb-width / 2} - #{$_thumb-offset} );
+                left: calc( 100% - #{k-math-div( $_thumb-width, 2 )} - #{$_thumb-offset} );
             }
         }
     }
@@ -152,4 +152,3 @@
     }
 
 }
-

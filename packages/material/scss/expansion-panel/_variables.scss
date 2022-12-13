@@ -8,7 +8,7 @@ $expander-border-width: 1px !default;
 $expander-header-padding-x: $padding-x * 1.5 !default;
 $expander-header-padding-y: $padding-y * 3 !default;
 
-$expander-indicator-margin-x: $header-padding-x / 2 !default;
+$expander-indicator-margin-x: k-math-div( $header-padding-x, 2 ) !default;
 
 $expander-bg: $component-bg !default;
 $expander-text: $component-text !default;

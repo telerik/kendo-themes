@@ -6,7 +6,7 @@
             margin: 0;
 
             &::after {
-                $tick-offset: -$slider-tick-size / 2;
+                $tick-offset: - k-math-div( $slider-tick-size, 2 );
 
                 content: "";
                 position: absolute;
