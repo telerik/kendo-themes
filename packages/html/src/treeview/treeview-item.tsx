@@ -47,23 +47,31 @@ export class TreeviewItem extends React.Component<TreeviewItemProps> {
             <li
                 className={classNames(
                     className,
-                    'k-treeview-item',
-                    {
-                        'k-disabled': disabled
-                    }
+                    'k-treeview-item'
                 )}
             >
                 <span className="k-treeview-mid">
                     {_hasChildren && (
-                        <span className="k-treeview-toggle">
+                        <span
+                            className={classNames(
+                                "k-treeview-toggle",
+                                {
+                                    'k-disabled': disabled
+                                }
+                            )}>
                             <Icon name={expanded ? 'collapse' : 'expand'} />
                         </span>
                     )}
                     {showCheckbox && (
-                        <Checkbox checked={checked} />
+                        <Checkbox checked={checked} disabled={disabled} />
                     )}
                     <TreeViewLeaf
-                        className={leafClassName}
+                        className={classNames(
+                            leafClassName,
+                            {
+                                'k-disabled': disabled
+                            }
+                        )}
                         text={text}
                         showIcon={showIcon}
                         icon={icon}
