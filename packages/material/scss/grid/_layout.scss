@@ -22,18 +22,6 @@ $grid-group-dropclue-top: calc( ( #{$kendo-chip-calc-size} + #{$grid-grouping-he
             border-top-width: 0;
         }
 
-        &[dir="rtl"],
-        .k-rtl & {
-
-            th {
-                border-width: 0 $grid-cell-vertical-border-width 1px 0;
-            }
-
-            td {
-                border-width: 0 $grid-cell-vertical-border-width $grid-cell-horizontal-border-width 0;
-            }
-        }
-
         .k-command-cell .k-button {
             @include box-shadow( none );
         }

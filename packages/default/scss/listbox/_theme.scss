@@ -3,9 +3,9 @@
     .k-listbox {
         .k-list-scroller {
             @include fill(
-                $listbox-text,
-                $listbox-bg,
-                $listbox-border
+                $kendo-listbox-text,
+                $kendo-listbox-bg,
+                $kendo-listbox-border
             );
         }
         .k-drop-hint {

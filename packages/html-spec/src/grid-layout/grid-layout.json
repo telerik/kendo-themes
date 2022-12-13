@@ -1,0 +1,79 @@
+{
+    "$schema": "../../schemas/component.schema.json",
+    "title": "Kendo Grid Layout HTML Spec",
+    "component": "grid-layout",
+    "selector": [
+        ".k-grid-layout"
+    ],
+    "options": [
+        {
+            "name": "align-items-inline",
+            "values": [
+                {
+                    "name": "start",
+                    "selector": [
+                        ".k-justify-items-start"
+                    ]
+                },
+                {
+                    "name": "center",
+                    "selector": [
+                        ".k-justify-items-center"
+                    ]
+                },
+                {
+                    "name": "end",
+                    "selector": [
+                        ".k-justify-items-end"
+                    ]
+                },
+                {
+                    "name": "stretch",
+                    "selector": [
+                        ".k-justify-items-stretch"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "align-items-block",
+            "values": [
+                {
+                    "name": "start",
+                    "selector": [
+                        ".k-align-items-start"
+                    ]
+                },
+                {
+                    "name": "center",
+                    "selector": [
+                        ".k-align-items-center"
+                    ]
+                },
+                {
+                    "name": "end",
+                    "selector": [
+                        ".k-align-items-end"
+                    ]
+                },
+                {
+                    "name": "stretch",
+                    "selector": [
+                        ".k-align-items-stretch"
+                    ]
+                },
+                {
+                    "name": "baseline",
+                    "selector": [
+                        ".k-align-items-baseline"
+                    ]
+                }
+            ]
+        }
+    ],
+    "children": [
+        {
+            "name": "grid-layout-item"
+        }
+    ]
+}
