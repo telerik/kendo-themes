@@ -5,7 +5,7 @@ $tabstrip-wrapper-border-width: 0px !default;
 
 $tabstrip-font-family: $font-family !default;
 $tabstrip-font-size: $font-size !default;
-$tabstrip-line-height: (20 / 14) !default;
+$tabstrip-line-height: k-math-div( 20, 14 ) !default;
 $tabstrip-border-width: 1px !default;
 
 $tabstrip-wrapper-bg: null !default;

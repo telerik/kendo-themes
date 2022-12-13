@@ -16,7 +16,7 @@ $coloreditor-focus-shadow: 1px 1px 7px 1px rgba(0, 0, 0, .3) !default;
 
 $coloreditor-header-padding-y: $coloreditor-spacer !default;
 $coloreditor-header-padding-x: $coloreditor-header-padding-y !default;
-$coloreditor-header-actions-gap: ( $coloreditor-spacer / 1.5 ) !default;
+$coloreditor-header-actions-gap: k-math-div( $coloreditor-spacer, 1.5 ) !default;
 
 $coloreditor-preview-gap: map-get( $spacing, 1 ) !default;
 $coloreditor-color-preview-width: 32px !default;

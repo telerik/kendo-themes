@@ -1,13 +1,13 @@
 // Tooltip
 $tooltip-padding-y: ($padding-y * .75) !default;
-$tooltip-padding-x: ($padding-x / 2) !default;
+$tooltip-padding-x: k-math-div( $padding-x, 2 ) !default;
 $tooltip-max-width: null !default;
 $tooltip-border-width: 0px !default;
 $tooltip-border-radius: $kendo-border-radius-md !default;
 
 $tooltip-font-family: $font-family !default;
 $tooltip-font-size: $font-size-sm !default;
-$tooltip-line-height: (20 / 14) !default;
+$tooltip-line-height: k-math-div( 20, 14 ) !default;
 
 $tooltip-title-font-size: ($tooltip-font-size * 1.25) !default;
 $tooltip-title-line-height: 1 !default;

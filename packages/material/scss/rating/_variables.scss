@@ -3,9 +3,9 @@ $rating-font-family: $font-family !default;
 $rating-font-size: $font-size !default;
 $rating-line-height: $line-height !default;
 
-$rating-container-margin-x: $padding-x-sm / 2 !default;
+$rating-container-margin-x: k-math-div( $padding-x-sm, 2 ) !default;
 
-$rating-item-padding-x: $padding-x-sm / 2 !default;
+$rating-item-padding-x: k-math-div( $padding-x-sm, 2 ) !default;
 $rating-item-padding-y: $padding-y !default;
 
 $rating-label-margin-x: $padding-x-sm !default;

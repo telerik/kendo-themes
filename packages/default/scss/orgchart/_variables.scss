@@ -25,7 +25,7 @@ $orgchart-node-group-focus-border: $card-focus-border !default;
 $orgchart-node-group-focus-shadow: $card-focus-shadow !default;
 
 $orgchart-node-group-title-font-size: $font-size-lg !default;
-$orgchart-node-group-title-margin-bottom: $orgchart-spacer / 3 !default;
+$orgchart-node-group-title-margin-bottom: k-math-div( $orgchart-spacer, 3 ) !default;
 $orgchart-node-group-title-line-height: $line-height-sm !default;
 
 $orgchart-node-group-subtitle-font-size: $font-size !default;
@@ -48,7 +48,7 @@ $orgchart-card-subtitle-font-size: null !default;
 $orgchart-card-body-border-width: 2px 0 0 !default;
 $orgchart-card-body-border-color: transparent !default;
 
-$orgchart-card-body-vbox-margin-right: $orgchart-spacer / 2 !default;
+$orgchart-card-body-vbox-margin-right: k-math-div( $orgchart-spacer, 2 ) !default;
 $orgchart-card-body-vbox-min-height: $card-avatar-size !default;
 
 $orgchart-line-size: 1px !default;

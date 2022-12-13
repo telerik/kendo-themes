@@ -115,7 +115,8 @@
 
     .k-scrollview-pageable > .k-button,
     .k-scrollview-nav > .k-link {
-        margin: 0 ($scrollview-pager-item-spacing / 2);
+        margin-block: 0;
+        margin-inline: k-math-div( $scrollview-pager-item-spacing, 2 );
         padding: 0;
         width: $scrollview-pagebutton-size;
         height: $scrollview-pagebutton-size;

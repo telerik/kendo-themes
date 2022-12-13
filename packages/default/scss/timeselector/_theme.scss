@@ -48,7 +48,7 @@
         &::before,
         &::after {
             $shadow-size: 3em;
-            box-shadow: 0 0 $shadow-size ($shadow-size / 2) $time-selector-bg;
+            box-shadow: 0 0 $shadow-size k-math-div( $shadow-size, 2 ) $time-selector-bg;
         }
 
         .k-item:hover {

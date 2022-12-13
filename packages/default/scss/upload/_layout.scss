@@ -199,7 +199,7 @@
             }
 
             .k-file-summary {
-                margin-top: -($kendo-upload-multiple-items-spacing / 3);
+                margin-top: - k-math-div($kendo-upload-multiple-items-spacing, 3);
             }
         }
 
@@ -208,7 +208,7 @@
             position: absolute;
             left: $kendo-upload-item-padding-x;
             right: $kendo-upload-item-padding-x;
-            bottom: $kendo-upload-item-padding-y / 2;
+            bottom: k-math-div( $kendo-upload-item-padding-y, 2 );
             width: auto;
         }
 

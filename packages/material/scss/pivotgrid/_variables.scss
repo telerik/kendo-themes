@@ -53,7 +53,7 @@ $pivotgrid-configurator-content-padding-x: $pivotgrid-spacer !default;
 $pivotgrid-configurator-content-padding-y: 0px !default;
 
 $pivotgrid-configurator-fields-margin-x: 0px !default;
-$pivotgrid-configurator-fields-margin-y: ( $pivotgrid-spacer / 2 ) !default;
+$pivotgrid-configurator-fields-margin-y: k-math-div( $pivotgrid-spacer, 2 ) !default;
 
 $pivotgrid-configurator-vertical-width: 320px !default;
 $pivotgrid-configurator-horizontal-height: 420px !default;

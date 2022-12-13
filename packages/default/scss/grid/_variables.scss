@@ -102,7 +102,7 @@ $grid-sorted-bg: rgba( k-contrast-legacy( $grid-bg ), .02 ) !default;
 $grid-sorting-indicator-text: $primary !default;
 $grid-sorting-index-font-size: $font-size-sm !default;
 $grid-sorting-index-height: $icon-size !default;
-$grid-sorting-index-spacing-y: ($icon-spacing / 2) !default;
+$grid-sorting-index-spacing-y: k-math-div( $icon-spacing, 2 ) !default;
 $grid-sorting-index-spacing-x: -$grid-sorting-index-spacing-y !default;
 
 

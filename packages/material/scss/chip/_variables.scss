@@ -30,7 +30,7 @@ $kendo-chip-font-size-lg: $font-size-md !default;
 
 /// Line heights of the chip that are connected to the $font-size.
 /// @group chip
-$kendo-chip-line-height: (18 / 14) !default;
+$kendo-chip-line-height: k-math-div( 18, 14 ) !default;
 $kendo-chip-line-height-sm: $kendo-chip-line-height !default;
 $kendo-chip-line-height-md: $kendo-chip-line-height !default;
 $kendo-chip-line-height-lg: $kendo-chip-line-height !default;

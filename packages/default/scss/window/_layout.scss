@@ -107,7 +107,7 @@
         flex: 1 1 auto;
     }
     .k-window-content + .k-prompt-container {
-        margin-top: -($kendo-window-inner-padding-y / 2);
+        margin-top: - k-math-div( $kendo-window-inner-padding-y, 2 );
     }
     .k-window-content:first-child {
         padding-top: clamp( #{$kendo-window-inner-padding-y}, #{$kendo-window-titlebar-padding-y}, #{$kendo-window-titlebar-padding-y} );

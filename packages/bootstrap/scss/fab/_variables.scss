@@ -5,7 +5,7 @@
 $kendo-fab-border-width: 1px !default;
 /// Border radius of the FAB.
 /// @group floating-action-button
-$kendo-fab-border-radius: $kendo-border-radius / 2 !default;
+$kendo-fab-border-radius: k-math-div( $kendo-border-radius, 2 ) !default;
 /// Font family of the FAB.
 /// @group floating-action-button
 $kendo-fab-font-family: $font-family !default;

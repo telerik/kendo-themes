@@ -22,22 +22,22 @@ $kendo-button-font-family: $font-family !default;
 $kendo-button-font-size: $font-size-md !default;
 /// Line heights used along with $font-size.
 /// @group button
-$kendo-button-line-height: ( 20 / 14 ) !default;
+$kendo-button-line-height: k-math-div( 20, 14 ) !default;
 
 $kendo-button-padding-x-sm: k-map-get( $spacing, 4 ) !default;
 $kendo-button-padding-y-sm: k-map-get( $spacing, 2 ) - k-map-get( $spacing, thin ) !default;
 $kendo-button-font-size-sm: $font-size-md !default;
-$kendo-button-line-height-sm: ( 20 / 14 ) !default;
+$kendo-button-line-height-sm: k-math-div( 20, 14 ) !default;
 
 $kendo-button-padding-x-md: k-map-get( $spacing, 4 ) !default;
 $kendo-button-padding-y-md: k-map-get( $spacing, 2 ) !default;
 $kendo-button-font-size-md: $font-size-md !default;
-$kendo-button-line-height-md: ( 20 / 14 ) !default;
+$kendo-button-line-height-md: k-math-div( 20, 14 ) !default;
 
 $kendo-button-padding-x-lg: k-map-get( $spacing, 4 ) !default;
 $kendo-button-padding-y-lg: k-map-get( $spacing, 2 ) + k-map-get( $spacing, thin ) !default;
 $kendo-button-font-size-lg: $font-size-md !default;
-$kendo-button-line-height-lg: ( 20 / 14 ) !default;
+$kendo-button-line-height-lg: k-math-div( 20, 14 ) !default;
 
 /// Calculated height of the button.
 /// @group button

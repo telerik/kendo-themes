@@ -23,7 +23,7 @@ $font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Roboto Mono", 
 
 /// Line height used along with $font-size.
 /// @group typography
-$line-height: (20 / 14) !default;
+$line-height: k-math-div( 20, 14 ) !default;
 $line-height-xs: 1 !default;
 $line-height-sm: 1.25 !default;
 $line-height-md: $line-height !default;

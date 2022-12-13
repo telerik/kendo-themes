@@ -377,7 +377,7 @@
         }
 
         > .k-reset > li + li {
-            margin-top: ($spacer / 2);
+            margin-top: k-math-div( $spacer, 2 );
         }
 
         .k-reset .k-widget {

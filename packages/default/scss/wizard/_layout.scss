@@ -23,7 +23,7 @@
 
         .k-wizard-step {
             box-sizing: border-box;
-            padding: calc(#{$wizard-content-padding-x / 4} + 2px);
+            padding: calc(#{k-math-div( $wizard-content-padding-x, 4 )} + 2px);
             width: 100%;
             display: flex;
             flex-direction: column;

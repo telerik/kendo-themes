@@ -10,7 +10,8 @@
     }
 
     .k-notification-container {
-        margin: ($kendo-notification-padding-y / 2) 0;
+        margin-block: k-math-div( $kendo-notification-padding-y, 2 );
+        margin-inline: 0;
         display: inline-flex;
         vertical-align: top;
 

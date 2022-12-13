@@ -39,13 +39,13 @@ $colorgradient-draghandle-shadow: 0 1px 4px rgba(0, 0, 0, .5) !default;
 $colorgradient-draghandle-focus-shadow: 0 1px 4px black !default;
 $colorgradient-draghandle-hover-shadow: $colorgradient-draghandle-focus-shadow !default;
 
-$colorgradient-canvas-draghandle-margin-y: -( $colorgradient-draghandle-height / 2 ) !default;
-$colorgradient-canvas-draghandle-margin-x: -( $colorgradient-draghandle-width / 2 ) !default;
+$colorgradient-canvas-draghandle-margin-y: - k-math-div( $colorgradient-draghandle-height, 2 ) !default;
+$colorgradient-canvas-draghandle-margin-x: - k-math-div( $colorgradient-draghandle-width, 2 ) !default;
 
 $colorgradient-input-width: 46px !default;
-$colorgradient-input-gap: ( $colorgradient-spacer / 1.5 ) !default;
-$colorgradient-input-label-gap: ( $colorgradient-spacer / 3 ) !default;
+$colorgradient-input-gap: k-math-div( $colorgradient-spacer, 1.5 ) !default;
+$colorgradient-input-label-gap: k-math-div( $colorgradient-spacer, 3 ) !default;
 $colorgradient-input-label-text: $subtle-text !default;
 
 $colorgradient-contrast-ratio-font-weight: $font-weight-bold !default;
-$colorgradient-contrast-spacer: ( $colorgradient-spacer / 1.5 ) !default;
+$colorgradient-contrast-spacer: k-math-div( $colorgradient-spacer, 1.5 ) !default;
