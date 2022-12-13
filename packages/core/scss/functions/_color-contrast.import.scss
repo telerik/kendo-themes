@@ -331,3 +331,27 @@ $wcag-light: white !default;
 
     @return $max-ratio-color;
 }
+
+
+// Legacy functions
+@function k-yiq-luma-information($color) {
+    $r: k-color-red($color);
+    $g: k-color-green($color);
+    $b: k-color-blue($color);
+
+    $yiq: (($r * 299) + ($g * 587) + ($b * 114)) / 1000;
+
+    @return $yiq;
+}
+@function k-contrast-yiq($color, $dark: $yiq-dark, $light: $yiq-light) {
+    $yiq: k-yiq-luma-information($color);
+    $out: if($yiq >= $yiq-threshold, $dark, $light);
+    // @debug yiq;
+    @return $out;
+}
+@function k-contrast-legacy($color, $dark: $wcag-dark, $light: $wcag-light) {
+    $luma: k-color-luminance($color);
+    $out: if($luma < .5, $light, $dark);
+    // @debug $luma;
+    @return $out;
+}

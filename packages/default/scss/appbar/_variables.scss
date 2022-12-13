@@ -13,10 +13,10 @@ $kendo-appbar-font-family: $font-family !default;
 $kendo-appbar-gap: map-get( $spacing, 2 ) !default;
 
 $kendo-appbar-light-bg: $light !default;
-$kendo-appbar-light-text: contrast-wcag( $light ) !default;
+$kendo-appbar-light-text: k-contrast-legacy( $light ) !default;
 
 $kendo-appbar-dark-bg: $dark !default;
-$kendo-appbar-dark-text: contrast-wcag( $dark ) !default;
+$kendo-appbar-dark-text: k-contrast-legacy( $dark ) !default;
 
 $kendo-appbar-box-shadow: 0px 1px 1px rgba(0, 0, 0, .16) !default;
 $kendo-appbar-bottom-box-shadow: 0px -1px 1px rgba(0, 0, 0, .16) !default;

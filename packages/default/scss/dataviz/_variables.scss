@@ -115,7 +115,7 @@ $chart-border: $component-border !default;
 
 $chart-crosshair-background: rgba( if( $dark-theme, $white, $black ), .5 ) !default;
 $chart-crosshair-shared-tooltip-color: $chart-text !default;
-$chart-crosshair-shared-tooltip-background: try-shade( $chart-bg, 1 ) !default;
+$chart-crosshair-shared-tooltip-background: k-try-shade( $chart-bg, 1 ) !default;
 $chart-crosshair-shared-tooltip-border: rgba( if( $dark-theme, $white, $black ), .08) !default;
 
 $chart-notes-background: rgba( if( $dark-theme, $white, $black ), .5 ) !default;

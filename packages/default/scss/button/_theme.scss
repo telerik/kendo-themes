@@ -68,7 +68,7 @@
 
     @each $name, $color in $kendo-button-theme-colors {
         @if ($name != "base") {
-            $_button-text: contrast-wcag( $color );
+            $_button-text: k-contrast-legacy( $color );
             $_button-bg: if( $kendo-solid-button-shade-bg-amount, call( $_shade-fn, $color, $kendo-solid-button-shade-bg-amount ), null );
             $_button-border: if( $kendo-solid-button-shade-border-amount, call( $_shade-fn, $color, $kendo-solid-button-shade-border-amount ), null );
 
@@ -153,7 +153,7 @@
             &:hover,
             &.k-hover {
                 @include fill(
-                    contrast-wcag( $color ),
+                    k-contrast-legacy( $color ),
                     $color,
                     $color
                 );
@@ -171,7 +171,7 @@
             &:active,
             &.k-active {
                 @include fill(
-                    contrast-wcag( $color ),
+                    k-contrast-legacy( $color ),
                     $color,
                     $color
                 );
@@ -180,7 +180,7 @@
             // Selected
             &.k-selected {
                 @include fill(
-                    contrast-wcag( $color ),
+                    k-contrast-legacy( $color ),
                     $color,
                     $color
                 );
@@ -217,7 +217,7 @@
             // Hover
             &:hover,
             &.k-hover {
-                color: try-shade( $color, 2 );
+                color: k-try-shade( $color, 2 );
             }
 
             // Focus
@@ -231,12 +231,12 @@
             // Active
             &:active,
             &.k-active {
-                color: try-shade( $color, 2 );
+                color: k-try-shade( $color, 2 );
             }
 
             // Selected
             &.k-selected {
-                color: try-shade( $color, 2 );
+                color: k-try-shade( $color, 2 );
             }
 
             // Disabled state

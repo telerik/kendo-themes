@@ -42,7 +42,7 @@ $stepper-indicator-disabled-text: $disabled-text !default;
 $stepper-indicator-disabled-border: null !default;
 
 $stepper-indicator-done-bg: $primary !default;
-$stepper-indicator-done-text: contrast-wcag( $stepper-indicator-done-bg ) !default;
+$stepper-indicator-done-text: k-contrast-legacy( $stepper-indicator-done-bg ) !default;
 $stepper-indicator-done-border: $stepper-indicator-done-bg !default;
 
 $stepper-indicator-done-hover-bg: k-try-shade( $stepper-indicator-done-bg ) !default;
@@ -50,7 +50,7 @@ $stepper-indicator-done-hover-text: null !default;
 $stepper-indicator-done-hover-border: null !default;
 
 $stepper-indicator-done-disabled-bg: k-color-mix( $stepper-indicator-done-bg, $component-bg, 60% ) !default;
-$stepper-indicator-done-disabled-text: contrast-wcag( $stepper-indicator-done-bg ) !default;
+$stepper-indicator-done-disabled-text: k-contrast-legacy( $stepper-indicator-done-bg ) !default;
 $stepper-indicator-done-disabled-border: $stepper-indicator-done-disabled-bg !default;
 
 $stepper-indicator-current-bg: $stepper-indicator-done-bg !default;

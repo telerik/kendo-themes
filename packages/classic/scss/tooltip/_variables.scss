@@ -19,7 +19,7 @@ $tooltip-text: k-contrast-color( $tooltip-bg ) !default;
 $tooltip-border: $tooltip-bg !default;
 
 $tooltip-primary-bg: $primary !default;
-$tooltip-primary-text: contrast-wcag( $tooltip-primary-bg ) !default;
+$tooltip-primary-text: k-contrast-legacy( $tooltip-primary-bg ) !default;
 $tooltip-primary-border: $tooltip-primary-bg !default;
 $tooltip-info-bg: $info !default;
 $tooltip-info-text: k-contrast-color( $tooltip-info-bg ) !default;

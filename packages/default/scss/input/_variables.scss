@@ -149,7 +149,7 @@ $kendo-picker-outline-text: $kendo-button-text !default;
 $kendo-picker-outline-border: rgba( $kendo-picker-outline-text, .5) !default;
 
 $kendo-picker-outline-hover-bg: $kendo-picker-outline-text !default;
-$kendo-picker-outline-hover-text: contrast-wcag( $kendo-picker-outline-hover-bg ) !default;
+$kendo-picker-outline-hover-text: k-contrast-legacy( $kendo-picker-outline-hover-bg ) !default;
 $kendo-picker-outline-hover-border: $kendo-picker-outline-hover-bg !default;
 
 $kendo-picker-outline-focus-bg: null !default;

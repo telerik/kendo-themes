@@ -31,7 +31,7 @@
     // Window theme colors
     @each $name, $color in $kendo-window-theme-colors {
         .k-window-#{$name} .k-window-titlebar {
-            color: contrast-wcag( $color );
+            color: k-contrast-legacy( $color );
             background-color: $color;
         }
     }

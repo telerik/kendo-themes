@@ -39,7 +39,7 @@ $timeline-flag-max-width: calc(#{$timeline-flag-min-width} + 2 * #{$timeline-spa
 $timeline-mobile-flag-max-width: calc(#{$timeline-flag-min-width} + 2 * #{$timeline-mobile-spacing-x}) !default;
 $timeline-horizontal-flag-min-width: 60px !default;
 $timeline-flag-bg: $primary !default;
-$timeline-flag-text: contrast-wcag( $timeline-flag-bg ) !default;
+$timeline-flag-text: k-contrast-legacy( $timeline-flag-bg ) !default;
 
 $timeline-flag-callout-width: 10px !default;
 $timeline-flag-callout-height: 10px !default;

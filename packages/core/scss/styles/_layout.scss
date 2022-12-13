@@ -7,9 +7,31 @@
     display: flex;
     flex-flow: column nowrap;
 }
+.k-flex {
+    flex: 1 1 auto;
+}
 .k-spacer {
     flex: none;
     flex-grow: 1;
+}
+.k-spacer-sized {
+    flex-grow: 0;
+}
+
+
+// Stack layout
+.k-stack-layout {}
+
+
+// Flex layout
+.k-flex-layout {
+    display: flex;
+}
+
+
+// Grid layout
+.k-grid-layout {
+    display: grid;
 }
 
 
@@ -54,3 +76,8 @@ hr.k-separator {
 .k-rtl {
     direction: rtl;
 }
+
+
+// Legacy aliases
+.k-hbox { @extend .k-hstack; }
+.k-vbox { @extend .k-vstack; }

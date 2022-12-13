@@ -19,7 +19,7 @@ $slider-draghandle-active-scale: 1 !default;
 $slider-draghandle-active-size: null !default;
 
 $slider-draghandle-bg: $primary !default;
-$slider-draghandle-text: contrast-wcag( $primary ) !default;
+$slider-draghandle-text: k-contrast-legacy( $primary ) !default;
 $slider-draghandle-border: k-try-shade( $primary, 2 ) !default;
 $slider-draghandle-gradient: null !default;
 

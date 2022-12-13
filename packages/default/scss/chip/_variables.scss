@@ -131,7 +131,7 @@ $kendo-chip-outline-shadow: 0 0 0 2px if($dark-theme, rgba( 255, 255, 255, .16 )
 $kendo-chip-outline-hover-bg: $kendo-chip-outline-text !default;
 /// The base text color of hovered outline chip.
 /// @group chip
-$kendo-chip-outline-hover-text: contrast-wcag( $kendo-chip-outline-hover-bg ) !default;
+$kendo-chip-outline-hover-text: k-contrast-legacy( $kendo-chip-outline-hover-bg ) !default;
 
 /// The base background color of selected outline chip.
 /// @group chip

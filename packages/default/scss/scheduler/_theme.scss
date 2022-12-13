@@ -127,7 +127,7 @@
         }
     }
     .k-event-inverse {
-        color: contrast-wcag( $scheduler-event-text );
+        color: k-contrast-legacy( $scheduler-event-text );
     }
     .k-event-ongoing {
         @include box-shadow( $scheduler-event-ongoing-shadow );

@@ -19,18 +19,18 @@ $slider-draghandle-active-scale: 1 !default;
 $slider-draghandle-active-size: null !default;
 
 $slider-draghandle-bg: $primary !default;
-$slider-draghandle-text: contrast-wcag( $primary  ) !default;
+$slider-draghandle-text: k-contrast-legacy( $primary  ) !default;
 $slider-draghandle-border: $primary  !default;
 $slider-draghandle-gradient: null !default;
 
-$slider-draghandle-hovered-bg: try-shade( $primary , .5 ) !default;
+$slider-draghandle-hovered-bg: k-try-shade( $primary , .5 ) !default;
 $slider-draghandle-hovered-text: null !default;
 $slider-draghandle-hovered-border: $primary  !default;
 $slider-draghandle-hovered-gradient: null !default;
 
-$slider-draghandle-pressed-bg: try-shade( $primary , 1.5 ) !default;
+$slider-draghandle-pressed-bg: k-try-shade( $primary , 1.5 ) !default;
 $slider-draghandle-pressed-text: null !default;
-$slider-draghandle-pressed-border: try-shade( $primary , 1.5 ) !default;
+$slider-draghandle-pressed-border: k-try-shade( $primary , 1.5 ) !default;
 $slider-draghandle-pressed-gradient: null !default;
 
 $slider-draghandle-focused-shadow: 0 0 0 2px rgba( $primary , .3 ) !default;
@@ -40,6 +40,6 @@ $slider-transition-function: ease-out !default;
 $slider-draghandle-transition-speed: .4s !default;
 $slider-draghandle-transition-function: cubic-bezier(.25, .8, .25, 1) !default;
 
-$slider-track-bg: try-shade( $component-bg, 1 ) !default;
+$slider-track-bg: k-try-shade( $component-bg, 1 ) !default;
 $slider-selection-bg: $primary !default;
 $slider-disabled-opacity: null !default;

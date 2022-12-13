@@ -19,13 +19,13 @@ $pivotgrid-bg: $component-bg !default;
 $pivotgrid-text: $component-text !default;
 $pivotgrid-border: $component-border !default;
 
-$pivotgrid-alt-border: try-shade($pivotgrid-border, 2) !default;
+$pivotgrid-alt-border: k-try-shade($pivotgrid-border, 2) !default;
 
 $pivotgrid-headers-bg: $header-bg !default;
 $pivotgrid-headers-text: $header-text !default;
 $pivotgrid-headers-border: $header-border !default;
 
-$pivotgrid-total-bg: try-shade( $pivotgrid-bg, 1 ) !default;
+$pivotgrid-total-bg: k-try-shade( $pivotgrid-bg, 1 ) !default;
 $pivotgrid-total-text: $header-text !default;
 $pivotgrid-total-border: $header-border !default;
 
@@ -101,7 +101,7 @@ $pivotgrid-alt-text: $grid-header-text !default;
 $pivotgrid-chrome-border: $grid-border !default;
 
 $pivotgrid-container-bg: $component-bg !default;
-$pivotgrid-row-headers-bg: try-shade( $component-bg, 1 ) !default;
+$pivotgrid-row-headers-bg: k-try-shade( $component-bg, 1 ) !default;
 
 $pivotgrid-button-bg: null !default;
 $pivotgrid-button-text: null !default;
