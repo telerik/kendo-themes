@@ -462,7 +462,7 @@
         series-30: $series-30,
 
         gauge-pointer: $primary,
-        gauge-track: try-shade( $chart-bg )
+        gauge-track: k-try-shade( $chart-bg )
     );
 
     @each $name, $value in $exported {

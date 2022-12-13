@@ -23,7 +23,7 @@ $kendo-progressbar-font-size: $font-size-sm !default;
 $kendo-progressbar-line-height: 1 !default;
 /// Background color of the progressbar.
 /// @group progressbar
-$kendo-progressbar-bg: try-shade( $component-bg, 1 ) !default;
+$kendo-progressbar-bg: k-try-shade( $component-bg, 1 ) !default;
 /// Text color of the progressbar.
 /// @group progressbar
 $kendo-progressbar-text: $component-text !default;
@@ -39,10 +39,10 @@ $kendo-progressbar-gradient: null !default;
 $kendo-progressbar-value-bg: $primary !default;
 /// Progress text color of the progressbar.
 /// @group progressbar
-$kendo-progressbar-value-text: contrast-wcag( $kendo-progressbar-value-bg ) !default;
+$kendo-progressbar-value-text: k-contrast-legacy( $kendo-progressbar-value-bg ) !default;
 /// Progress border color of the progressbar.
 /// @group progressbar
-$kendo-progressbar-value-border: try-shade( $kendo-progressbar-value-bg ) !default;
+$kendo-progressbar-value-border: k-try-shade( $kendo-progressbar-value-bg ) !default;
 /// Progress background gradient of the progressbar.
 /// @group progressbar
 $kendo-progressbar-value-gradient: null !default;

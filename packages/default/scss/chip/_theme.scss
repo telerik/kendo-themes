@@ -28,9 +28,9 @@
                 }
             } @else {
                 @include fill(
-                    try-shade( $color, 65% ),
-                    try-tint( $color, 80% ),
-                    try-tint( $color, 25% ),
+                    k-try-shade( $color, 65% ),
+                    k-try-tint( $color, 80% ),
+                    k-try-tint( $color, 25% ),
                     $kendo-chip-solid-gradient
                 );
 
@@ -41,11 +41,11 @@
 
                 &:hover,
                 &.k-hover {
-                    @include fill( $bg: try-tint($color, 65% ) );
+                    @include fill( $bg: k-try-tint($color, 65% ) );
                 }
 
                 &.k-selected {
-                    @include fill( $bg: try-tint( $color, 50% ) );
+                    @include fill( $bg: k-try-tint( $color, 50% ) );
                 }
             }
         }
@@ -83,54 +83,54 @@
                 }
             } @else if ($name == "warning") {
                 @include fill(
-                    if( $dark-theme, tint($color, 25%), $kendo-chip-outline-text),
+                    if( $dark-theme, k-color-tint($color, 25%), $kendo-chip-outline-text),
                     if( $dark-theme, $black, $white ),
-                    if( $dark-theme, tint($color, 25%), $color)
+                    if( $dark-theme, k-color-tint($color, 25%), $color)
                 );
 
                 &:focus,
                 &.k-focus {
-                    @include box-shadow( 0 0 0 2px if( $dark-theme, rgba( tint( $color, 50% ), .32 ), rgba( $color, .16 )) );
+                    @include box-shadow( 0 0 0 2px if( $dark-theme, rgba( k-color-tint( $color, 50% ), .32 ), rgba( $color, .16 )) );
                 }
 
                 &:hover,
                 &.k-hover {
                     @include fill(
-                        $color: if( $dark-theme, contrast-wcag( $color ), try-shade( $color, 80% ) ) ,
-                        $bg: if( $dark-theme, tint($color, 25%), $color)
+                        $color: if( $dark-theme, k-contrast-legacy( $color ), k-try-shade( $color, 80% ) ) ,
+                        $bg: if( $dark-theme, k-color-tint($color, 25%), $color)
                     );
                 }
 
                 &.k-selected {
                     @include fill(
-                        $color: if( $dark-theme, contrast-wcag( $color ), try-shade( $color, 80% ) ) ,
-                        $bg: if( $dark-theme, tint($color, 25%), $color)
+                        $color: if( $dark-theme, k-contrast-legacy( $color ), k-try-shade( $color, 80% ) ) ,
+                        $bg: if( $dark-theme, k-color-tint($color, 25%), $color)
                     );
                 }
             } @else {
                 @include fill(
-                    try-shade( $color, 25% ),
+                    k-try-shade( $color, 25% ),
                     if( $dark-theme, $black, $white ),
-                    try-shade( $color, 25% )
+                    k-try-shade( $color, 25% )
                 );
 
                 &:focus,
                 &.k-focus {
-                    @include box-shadow( 0 0 0 2px if( $dark-theme, rgba( tint( $color, 50% ), .32 ), rgba( $color, .16 )) );
+                    @include box-shadow( 0 0 0 2px if( $dark-theme, rgba( k-color-tint( $color, 50% ), .32 ), rgba( $color, .16 )) );
                 }
 
                 &:hover,
                 &.k-hover {
                     @include fill(
-                        $color: contrast-wcag( try-shade( $color, 25% ) ),
-                        $bg: try-shade( $color, 25% )
+                        $color: k-contrast-legacy( k-try-shade( $color, 25% ) ),
+                        $bg: k-try-shade( $color, 25% )
                     );
                 }
 
                 &.k-selected {
                     @include fill(
-                        $color: contrast-wcag( try-shade( $color, 25% ) ),
-                        $bg: try-shade( $color, 25% )
+                        $color: k-contrast-legacy( k-try-shade( $color, 25% ) ),
+                        $bg: k-try-shade( $color, 25% )
                     );
                 }
             }

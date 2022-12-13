@@ -45,7 +45,7 @@ $kendo-notification-border: $component-border !default;
     // sass-lint:disable-block indentation
     @each $name, $color in $colors {
         $_theme: k-map-merge(( $name: (
-            color: contrast-wcag( $color ),
+            color: k-contrast-legacy( $color ),
             background-color: $color,
             border: $color,
         )), $_theme );

@@ -14,7 +14,7 @@ $dropzone-border: $base-border !default;
 
 $dropzone-icon-size: ( $icon-size * 3 ) !default;
 $dropzone-icon-spacing: map-get( $spacing, 6 ) !default;
-$dropzone-icon-text: try-tint( $dropzone-text, 4 ) !default;
+$dropzone-icon-text: k-try-tint( $dropzone-text, 4 ) !default;
 $dropzone-icon-hover-text: $primary !default;
 
 $dropzone-hint-font-size: null !default;

@@ -48,7 +48,7 @@ $kendo-checkbox-hover-border: null !default;
 $kendo-checkbox-checked-bg: $primary !default;
 /// Color of checked checkbox.
 /// @group checkbox
-$kendo-checkbox-checked-text: contrast-wcag( $kendo-checkbox-checked-bg ) !default;
+$kendo-checkbox-checked-text: k-contrast-legacy( $kendo-checkbox-checked-bg ) !default;
 /// Border color of checked checkbox.
 /// @group checkbox
 $kendo-checkbox-checked-border: $kendo-checkbox-checked-bg !default;
@@ -125,10 +125,10 @@ $kendo-checkbox-indeterminate-glyph: "\e121" !default;
 
 /// Image of checked checkbox indicator.
 /// @group checkbox
-$kendo-checkbox-checked-image: escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='none' stroke='#{$kendo-checkbox-checked-text}' stroke-linecap='square' stroke-linejoin='square' stroke-width='2' d='M3,8 l3,3 l7-7'/></svg>") ) !default;
+$kendo-checkbox-checked-image: k-escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='none' stroke='#{$kendo-checkbox-checked-text}' stroke-linecap='square' stroke-linejoin='square' stroke-width='2' d='M3,8 l3,3 l7-7'/></svg>") ) !default;
 /// Image image of checked checkbox indicator.
 /// @group checkbox
-$kendo-checkbox-indeterminate-image: escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='none' stroke='#{$kendo-checkbox-indeterminate-text}' stroke-linecap='square' stroke-linejoin='square' stroke-width='2' d='M4,8 h8'/></svg>") ) !default;
+$kendo-checkbox-indeterminate-image: k-escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='none' stroke='#{$kendo-checkbox-indeterminate-text}' stroke-linecap='square' stroke-linejoin='square' stroke-width='2' d='M4,8 h8'/></svg>") ) !default;
 
 
 // Checkbox label

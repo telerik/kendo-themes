@@ -39,7 +39,7 @@ $_imported: ();
 
 @mixin verify-dependencies() {
     @each $component in $kendo-components {
-        @if (k-map-has-key( $_kendo-dependencies, $component) == false) {
+        @if (k-map-has-key( $_kendo-dependencies, $component ) == false) {
             // sass-lint:disable-block no-warn
             @error "Module '#{$component}' is not defined.";
         }

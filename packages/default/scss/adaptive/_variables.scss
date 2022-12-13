@@ -7,7 +7,7 @@ $adaptive-content-bg: $app-bg !default;
 $adaptive-content-text: $app-text !default;
 
 $adaptive-menu-bg: $primary !default;
-$adaptive-menu-text: contrast-wcag( $adaptive-menu-bg ) !default;
+$adaptive-menu-text: k-contrast-legacy( $adaptive-menu-bg ) !default;
 
 $adaptive-menu-clear-text: $primary !default;
 

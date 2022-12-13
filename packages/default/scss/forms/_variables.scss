@@ -61,7 +61,7 @@ $kendo-fieldset-text: null !default;
 $kendo-fieldset-border: null !default;
 
 $kendo-fieldset-legend-bg: null !default;
-$kendo-fieldset-legend-text: try-shade( $body-text, 2 ) !default;
+$kendo-fieldset-legend-text: k-try-shade( $body-text, 2 ) !default;
 $kendo-fieldset-legend-border: null !default;
 
 // Sizes
