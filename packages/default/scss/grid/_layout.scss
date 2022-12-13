@@ -79,7 +79,7 @@
         thead,
         tbody,
         tfoot {
-            text-align: left;
+            text-align: start;
             border-color: inherit;
         }
         tr {
@@ -97,7 +97,7 @@
             text-overflow: ellipsis;
 
             &:first-child {
-                border-left-width: 0;
+                border-inline-start-width: 0;
             }
 
             &:focus {
@@ -108,13 +108,19 @@
                 width: $grid-cell-placeholder-line-width;
             }
         }
+
         th {
             padding: $grid-header-padding-y $grid-header-padding-x;
-            border-width: 0 0 1px $grid-cell-vertical-border-width;
+            border-width: 0;
+            border-block-end-width: 1px;
+            border-inline-start-width: $grid-cell-vertical-border-width;
             white-space: nowrap;
         }
+
         td {
-            border-width: 0 0 $grid-cell-horizontal-border-width $grid-cell-vertical-border-width;
+            border-width: 0;
+            border-block-end-width: $grid-cell-horizontal-border-width;
+            border-inline-start-width: $grid-cell-vertical-border-width;
             vertical-align: middle;
         }
 
@@ -157,8 +163,8 @@
         }
 
         .k-grouping-row .k-icon {
-            margin-left: calc( #{$icon-size / 2} - #{$table-cell-padding-x} );
-            margin-right: ($icon-size / 2);
+            margin-inline-start: calc( #{$icon-size / 2} - #{$table-cell-padding-x} );
+            margin-inline-end: ($icon-size / 2);
             text-decoration: none;
         }
 
@@ -167,7 +173,7 @@
             border-width: $grid-group-footer-border-y 0;
         }
         .k-group-footer .k-group-cell + td {
-            border-left-width: $grid-group-footer-second-cell-border;
+            border-inline-start-width: $grid-group-footer-second-cell-border;
         }
 
         .k-hierarchy-cell,
@@ -189,152 +195,14 @@
         }
 
         .k-hierarchy-cell + .k-grid-content-sticky {
-            border-left-width: $grid-cell-vertical-border-width;
+            border-inline-start-width: $grid-cell-vertical-border-width;
         }
         .k-detail-cell {}
         .k-master-row {}
 
         .k-detail-row {
             .k-detail-cell {
-                border-left-width: 0;
-            }
-        }
-
-        &[dir = "rtl"],
-        .k-rtl & {
-            thead,
-            tbody,
-            tfoot {
-                text-align: right;
-            }
-
-            th {
-                white-space: nowrap;
-            }
-
-            .k-grid-header-wrap,
-            .k-grid-footer-wrap {
-                border-width: 0 0 0 $grid-cell-vertical-border-width;
-            }
-
-            .k-grid-content-locked,
-            .k-grid-footer-locked,
-            .k-grid-header-locked {
-                border-left-width: $grid-cell-vertical-border-width;
-                border-right-width: 0;
-            }
-
-            .k-grid-header-sticky,
-            .k-grid-content-sticky,
-            .k-grid-footer-sticky {
-                border-left-width: $grid-cell-vertical-border-width;
-            }
-
-            .k-grid-header-sticky:not([style*="display: none"]) + td,
-            .k-grid-header-sticky:not([style*="display: none"]) + th,
-            .k-grid-content-sticky:not([style*="display: none"]) + td,
-            .k-grid-content-sticky:not([style*="display: none"]) + th {
-                border-left-width: $grid-cell-vertical-border-width;
-                border-right-width: 0;
-            }
-
-            .k-grid-header-sticky.k-header:first-child {
-                border-left-width: $grid-cell-vertical-border-width;
-            }
-
-            .k-grid-row-sticky {
-                border-bottom-width: $grid-border-width;
-                border-top-width: $grid-border-width;
-            }
-
-            th {
-                border-width: 0 $grid-cell-vertical-border-width 1px 0;
-
-                &:first-child {
-                    border-right-width: 0;
-                }
-            }
-
-            td {
-                border-width: 0 $grid-cell-vertical-border-width 0 0;
-
-                &:first-child {
-                    border-right-width: 0;
-                }
-            }
-
-            td.k-hierarchy-cell {
-                border-right-width: 0;
-            }
-
-            .k-hierarchy-cell + td {
-                border-right-width: 0;
-            }
-
-            .k-grid-header {
-                .k-header {
-                    z-index: 1;
-
-                    &.k-first {
-                        border-left-width: 0;
-                        border-right-width: $grid-cell-vertical-border-width;
-                    }
-                }
-
-                .k-with-icon,
-                .k-filterable {
-                    padding-left: $grid-filterable-icon-spacing;
-                    padding-right: $grid-cell-padding-x;
-                }
-
-                .k-grid-filter,
-                .k-header-column-menu,
-                .k-grid-header-menu {
-                    right: auto;
-                    left: $grid-header-menu-icon-spacing;
-                }
-            }
-
-            .k-grid-header-sticky.k-header.k-first {
-                border-left-width: $grid-cell-vertical-border-width;
-            }
-
-            .k-grid-header-sticky.k-header.k-grid-no-left-border.k-first {
-                border-left-width: $grid-cell-vertical-border-width;
-                border-right-width: 0;
-            }
-
-            .k-dirty {
-                border-color: currentColor currentColor transparent transparent;
-                left: auto;
-                right: 0;
-            }
-
-            .k-grid-header-wrap,
-            .k-grid-footer-wrap {
-                margin-left: -1px;
-                margin-right: 0;
-            }
-
-            .k-grid-header-locked + .k-grid-header-wrap.k-auto-scrollable {
-                margin-left: 0;
-            }
-
-            .k-group-footer td {
-                border-width: $grid-group-footer-border-y 0;
-            }
-            .k-group-footer .k-group-cell + td {
-                border-right-width: $grid-group-footer-second-cell-border;
-            }
-
-            .k-grouping-row .k-icon {
-                margin-left: #{$icon-size / 2};
-                margin-right: calc( #{$icon-size / 2} - #{$table-cell-padding-x} );
-            }
-
-            .k-column-resizer {
-                left: 0;
-                right: auto;
+                border-inline-start-width: 0;
             }
         }
 
@@ -352,9 +220,11 @@
 
         .k-dirty {
             border-width: 5px;
-            border-color: currentColor transparent transparent currentColor;
-            left: 0;
-            right: auto;
+            border-color: transparent;
+            border-block-start-color: currentColor;
+            border-inline-start-color: currentColor;
+            inset-inline-start: 0;
+            inset-inline-end: auto;
         }
 
         .k-grid-content-locked + .k-grid-content {
@@ -413,7 +283,7 @@
             height: $kendo-chip-calc-size;
             display: inline-block;
             vertical-align: middle;
-            margin-left: -$grid-grouping-header-padding-y;
+            margin-inline-start: -$grid-grouping-header-padding-y;
         }
     }
 
@@ -445,7 +315,7 @@
             width: $grid-group-dropclue-line-size;
             height: calc(100% - #{$grid-group-dropclue-size});
             top: $grid-group-dropclue-size;
-            left: calc( #{$grid-group-dropclue-size} - #{$grid-group-dropclue-line-size / 2} );
+            inset-inline-start: calc( #{$grid-group-dropclue-size} - #{$grid-group-dropclue-line-size / 2} );
         }
     }
 
@@ -453,9 +323,10 @@
     // Grid header / footer
     .k-grid-header-wrap,
     .k-grid-footer-wrap {
-        margin-right: -1px;
+        margin-inline-end: - $grid-cell-vertical-border-width;
         width: 100%;
-        border-width: 0 $grid-cell-vertical-border-width 0 0;
+        border-width: 0;
+        border-inline-end-width: $grid-cell-vertical-border-width;
         border-style: solid;
         border-color: inherit;
         position: relative;
@@ -463,7 +334,7 @@
     }
 
     .k-grid-header-locked + .k-grid-header-wrap.k-auto-scrollable {
-        margin-right: 0;
+        margin-inline-end: 0;
     }
 
     .k-grid-header,
@@ -506,11 +377,11 @@
             cursor: default;
 
             &:first-child {
-                border-left-width: 0;
+                border-inline-start-width: 0;
             }
 
             &.k-first {
-                border-left-width: $grid-header-first-border;
+                border-inline-start-width: $grid-header-first-border;
             }
         }
 
@@ -526,7 +397,7 @@
 
         .k-with-icon,
         .k-filterable {
-            padding-right: $grid-filterable-icon-spacing;
+            padding-inline-end: $grid-filterable-icon-spacing;
         }
 
         .k-header > .k-link:focus {
@@ -547,7 +418,7 @@
             align-content: center;
             justify-content: center;
             position: absolute;
-            right: $grid-header-menu-icon-spacing;
+            inset-inline-end: $grid-header-menu-icon-spacing;
             bottom: calc( #{ $grid-header-padding-y } + #{ $line-height-em / 2 } - #{ $kendo-button-inner-calc-size / 2 } );
             z-index: 1;
 
@@ -582,7 +453,7 @@
         display: block;
         position: absolute;
         top: 0;
-        right: 0;
+        inset-inline-end: 0;
         cursor: col-resize;
     }
 
@@ -618,13 +489,15 @@
 
         td,
         th {
-            border-width: 0 0 1px $grid-cell-vertical-border-width;
+            border-width: 0;
+            border-block-end-width: 1px;
+            border-inline-start-width: $grid-cell-vertical-border-width;
             white-space: nowrap;
             padding: $grid-filter-cell-padding-y $grid-filter-cell-padding-x;
         }
 
         td:first-child {
-            border-left-width: 0;
+            border-inline-start-width: 0;
         }
 
         .k-multiselect {
@@ -737,7 +610,6 @@
         vertical-align: middle;
     }
     .k-grid .k-command-cell > .k-button + .k-button {
-        margin-left: $grid-command-cell-button-spacing;
         margin-inline-end: unset;
         margin-inline-start: $grid-command-cell-button-spacing;
     }
@@ -772,19 +644,19 @@
 
     .k-grid-virtual .k-grid-content {
         .k-grid-table-wrap {
-            float: left;
+            float: inline-start;
             width: 100%;
         }
 
         .k-grid-table {
             position: relative;
-            float: left;
+            float: inline-start;
             z-index: 1;
         }
 
         > .k-height-container {
             position: relative;
-            float: left;
+            float: inline-start;
         }
 
         &::after {
@@ -803,18 +675,10 @@
         height: 1px;
     }
 
-    .k-grid-virtual[dir="rtl"],
-    .k-grid-virtual.k-rtl {
-        .k-grid-content .k-grid-table {
-            float: right;
-        }
-    }
-
     .k-grid-add-row td {
         border-bottom-style: solid;
         border-bottom-width: 1px;
     }
-
 
     // Locked columns
     .k-grid-lockedcolumns {
@@ -835,7 +699,8 @@
         overflow: hidden;
         position: relative;
         border-style: solid;
-        border-width: 0 1px 0 0;
+        border-width: 0;
+        border-inline-end-width: $grid-cell-vertical-border-width;
         box-sizing: content-box;
 
         & + .k-grid-content.k-auto-scrollable {
@@ -902,7 +767,7 @@
         // Locked and sticky
         .k-grid-header-locked th.k-grid-header-sticky:last-child,
         .k-grid-content-locked tr .k-grid-content-sticky:last-child {
-            border-right: 0;
+            border-inline-end: 0;
         }
 
         .k-grid-header .k-grid-column-menu,
@@ -918,11 +783,11 @@
     .k-grid .k-grid-header-sticky,
     .k-grid .k-grid-content-sticky,
     .k-grid .k-grid-footer-sticky {
-        border-right-width: $grid-cell-vertical-border-width;
+        border-inline-end-width: $grid-cell-vertical-border-width;
 
         &:not([style*="display: none"]) + td,
         &:not([style*="display: none"]) + th {
-            border-left-width: 0;
+            border-inline-start-width: 0;
         }
     }
 
@@ -932,7 +797,7 @@
     }
 
     .k-grid-header-sticky.k-header.k-grid-no-left-border.k-first {
-        border-left-width: 0;
+        border-inline-start-width: 0;
     }
 
     .k-grid.k-grid-no-scrollbar {
@@ -1006,7 +871,7 @@
 
             > .k-icon.k-i-sort-desc-sm,
             > .k-icon.k-i-sort-asc-sm {
-                margin-left: 0;
+                margin-inline-start: 0;
                 display: inline-block;
                 flex-shrink: 0;
             }
@@ -1089,7 +954,7 @@
     // Remove Grid scrollbar during built-in export
     .k-pdf-export-shadow {
         .k-grid {
-            float: left;
+            float: inline-start;
             width: auto !important; // sass-lint:disable-line no-important
         }
 
@@ -1284,7 +1149,7 @@
         cursor: pointer;
 
         > .k-icon {
-            margin-right: $icon-spacing;
+            margin-inline-end: $icon-spacing;
         }
     }
 
@@ -1313,13 +1178,5 @@
         font-weight: bold;
         text-transform: $grid-column-menu-group-header-text-transform;
         flex: 1 1 auto;
-    }
-
-    [dir="rtl"],
-    .k-rtl {
-        .k-columnmenu-item > .k-icon {
-            margin-left: $icon-spacing;
-            margin-right: 0;
-        }
     }
 }

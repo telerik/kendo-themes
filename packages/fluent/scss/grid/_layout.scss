@@ -660,19 +660,19 @@
 
     .k-grid-virtual .k-grid-content {
         .k-grid-table-wrap {
-            float: left;
+            float: inline-start;
             width: 100%;
         }
 
         .k-grid-table {
             position: relative;
-            float: left;
+            float: inline-start;
             z-index: 1;
         }
 
         > .k-height-container {
             position: relative;
-            float: left;
+            float: inline-start;
         }
 
         &::after {
@@ -689,13 +689,6 @@
 
     .k-width-container div {
         height: 1px;
-    }
-
-    .k-grid-virtual[dir="rtl"],
-    .k-grid-virtual.k-rtl {
-        .k-grid-content .k-grid-table {
-            float: right;
-        }
     }
 
     .k-grid-add-row td {
@@ -992,7 +985,7 @@
     // Remove Grid scrollbar during built-in export
     .k-pdf-export-shadow {
         .k-grid {
-            float: left;
+            float: inline-start;
             width: auto !important; // sass-lint:disable-line no-important
         }
 
