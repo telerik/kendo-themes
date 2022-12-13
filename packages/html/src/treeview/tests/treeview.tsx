@@ -149,7 +149,7 @@ root.render(
                     <TreeviewItem text="Root 2" showCheckbox expanded checked>
                         <TreeviewGroup>
                             <TreeviewItem text="Child 2.1" showCheckbox checked />
-                            <TreeviewItem text="Child 2.2" showCheckbox>
+                            <TreeviewItem text="Child 2.2" showCheckbox disabled>
                                 <TreeviewGroup>
                                     <TreeviewItem text="Child 2.2.1" />
                                 </TreeviewGroup>
@@ -171,7 +171,7 @@ root.render(
                     <TreeviewItem text="Root 2" showCheckbox expanded checked>
                         <TreeviewGroup>
                             <TreeviewItem text="Child 2.1" showCheckbox checked />
-                            <TreeviewItem text="Child 2.2" showCheckbox >
+                            <TreeviewItem text="Child 2.2" showCheckbox disabled >
                                 <TreeviewGroup>
                                     <TreeviewItem text="Child 2.2.1" />
                                 </TreeviewGroup>
