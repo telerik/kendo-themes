@@ -14,63 +14,39 @@
         vertical-align: top;
         background-color: transparent;
         display: inline-flex;
+        gap: var( --kendo-listbox-spacing, #{$kendo-listbox-spacing} );
         -webkit-touch-callout: none;
         -webkit-tap-highlight-color: $rgba-transparent;
 
-        .k-listbox-toolbar ul {
+        .k-listbox-actions {
             display: flex;
+            gap: var( --kendo-listbox-button-spacing, #{$kendo-listbox-button-spacing} );
         }
 
-        &.k-listbox-toolbar-left,
-        &.k-listbox-toolbar-right {
-            .k-listbox-toolbar ul {
-                flex-direction: column;
-            }
-
-            .k-listbox-toolbar li + li {
-                margin-block-start: var( --kendo-listbox-button-margin, #{$kendo-listbox-button-margin} );
-            }
-        }
-
-        &.k-listbox-toolbar-left {
+        &.k-listbox-actions-left,
+        &.k-listbox-actions-right {
             flex-direction: row;
 
-            .k-listbox-toolbar {
-                margin-inline-end: var( --kendo-listbox-margin, #{$kendo-listbox-margin} );
+            .k-listbox-actions {
+                flex-direction: column;
             }
         }
 
-        &.k-listbox-toolbar-right {
+        &.k-listbox-actions-right {
             flex-direction: row-reverse;
-
-            .k-listbox-toolbar {
-                margin-inline-start: var( --kendo-listbox-margin, #{$kendo-listbox-margin} );
-            }
         }
 
-        &.k-listbox-toolbar-top,
-        &.k-listbox-toolbar-bottom {
+        &.k-listbox-actions-top,
+        &.k-listbox-actions-bottom {
             flex-direction: column;
 
-            .k-listbox-toolbar ul {
+            .k-listbox-actions {
                 flex-direction: row;
             }
-
-            .k-listbox-toolbar li + li {
-                margin-inline-start: var( --kendo-listbox-button-margin, #{$kendo-listbox-button-margin} );
-            }
         }
 
-        &.k-listbox-toolbar-top {
-            .k-listbox-toolbar {
-                margin-block-end: var( --kendo-listbox-margin, #{$kendo-listbox-margin} );
-            }
-        }
-
-        &.k-listbox-toolbar-bottom {
-            .k-listbox-toolbar {
-                margin-block-start: var( --kendo-listbox-margin, #{$kendo-listbox-margin} );
-            }
+        &.k-listbox-actions-bottom {
+            flex-direction: column-reverse;
         }
 
         .k-list-scroller {

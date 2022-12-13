@@ -1,0 +1,79 @@
+{
+    "schema": "../../schemas/component.schema.json",
+    "title": "Kendo ListBox HTML Spec",
+    "component": "listbox",
+    "selector": [
+        ".k-listbox"
+    ],
+    "states": [
+        {
+            "name": "disabled",
+            "selector": [
+                ":disabled",
+                "[disabled]",
+                ".k-disabled"
+            ]
+        }
+    ],
+    "options": [
+        {
+            "name": "size",
+            "values": [
+                {
+                    "name": "small",
+                    "selector": [
+                        ".k-listbox-sm"
+                    ]
+                },
+                {
+                    "name": "medium",
+                    "selector": [
+                        ".k-listbox-md"
+                    ]
+                },
+                {
+                    "name": "large",
+                    "selector": [
+                        ".k-listbox-lg"
+                    ]
+                }
+            ]
+        }
+    ],
+    "children": [
+        {
+            "name": "k-listbox-action",
+            "$ref": "button",
+            "selector": [
+                ".k-listbox-actions .k-button"
+            ],
+            "options": [
+                {
+                    "name": "size",
+                    "value": "{parent.size}"
+                }
+            ]
+        },
+        {
+            "name": "listbox-scroller",
+            "selector": [
+                ".k-list-scroller"
+            ],
+            "children": [
+                {
+                    "name": "listbox-list",
+                    "$ref": "list",
+                    "selector": [
+                        ".k-list"
+                    ],
+                    "options": [
+                        {
+                            "name": "size",
+                            "value": "{parent.size}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

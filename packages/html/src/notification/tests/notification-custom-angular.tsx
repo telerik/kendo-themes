@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { Icon } from '../../icon';
+import { Notification, NotificationAction } from '../../notification';
 
 const root = ReactDOM.createRoot(
     document.getElementById('app') as HTMLElement
@@ -24,6 +24,10 @@ const styles = `
         font-size: 20px;
         color: gray;
     }
+
+    .k-notification-actions {
+        align-self: start;
+    }
 `;
 
 root.render(
@@ -37,35 +41,20 @@ root.render(
                 {/* notification group */}
                 <div className="k-notification-group">
                     <div className="k-notification-container">
-                        <div className="k-widget k-notification k-notification-closable">
-                            <div className="k-notification-wrap">
-                                <div className="k-notification-content">
-                                    Multiline notification
-                                    <div>Closable multiline notification</div>
-                                    <div>Closable multiline notification</div>
-                                    <div>Closable multiline notification</div>
-                                </div>
-                                <Icon name="x" />
-                            </div>
-                        </div>
+                        <Notification text="Multiline notification" closable={true} actions={ <NotificationAction type="close" /> } >
+                            <div>Closable multiline notification</div>
+                            <div>Closable multiline notification</div>
+                            <div>Closable multiline notification</div>
+                        </Notification>
                     </div>
                     <div className="k-notification-container">
-                        <div className="k-widget k-notification k-custom-notification">
-                            <div className="k-notification-wrap">
-                                <div className="k-notification-content">Custom notification</div>
-                            </div>
-                        </div>
+                        <Notification className="k-custom-notification" text="Custom notification" />
                     </div>
                 </div>
             </div>
             <div className="k-colspan-3 k-col-span-3">
                 <div className="k-notification-container fullwidth">
-                    <div className="k-widget k-notification k-notification-closable">
-                        <div className="k-notification-wrap">
-                            <div className="k-notification-content">Full width notification</div>
-                            <Icon name="x" />
-                        </div>
-                    </div>
+                    <Notification text="Full width notification" closable={true} actions={ <NotificationAction type="close" /> } />
                 </div>
             </div>
 
@@ -75,35 +64,20 @@ root.render(
                 {/* notification group */}
                 <div className="k-notification-group">
                     <div className="k-notification-container">
-                        <div className="k-widget k-notification k-notification-closable">
-                            <div className="k-notification-wrap">
-                                <div className="k-notification-content">
-                                    Multiline notification
-                                    <div>Closable multiline notification</div>
-                                    <div>Closable multiline notification</div>
-                                    <div>Closable multiline notification</div>
-                                </div>
-                                <Icon name="x" />
-                            </div>
-                        </div>
+                        <Notification text="Multiline notification" closable={true} actions={ <NotificationAction type="close" /> } >
+                            <div>Closable multiline notification</div>
+                            <div>Closable multiline notification</div>
+                            <div>Closable multiline notification</div>
+                        </Notification>
                     </div>
                     <div className="k-notification-container">
-                        <div className="k-widget k-notification k-custom-notification">
-                            <div className="k-notification-wrap">
-                                <div className="k-notification-content">Custom notification</div>
-                            </div>
-                        </div>
+                        <Notification className="k-custom-notification" text="Custom notification" />
                     </div>
                 </div>
             </div>
             <div className="k-colspan-3 k-col-span-3" dir="rtl">
                 <div className="k-notification-container fullwidth">
-                    <div className="k-widget k-notification k-notification-closable">
-                        <div className="k-notification-wrap">
-                            <div className="k-notification-content">Full width notification</div>
-                            <Icon name="x" />
-                        </div>
-                    </div>
+                    <Notification text="Full width notification" closable={true} actions={ <NotificationAction type="close" /> } />
                 </div>
             </div>
 

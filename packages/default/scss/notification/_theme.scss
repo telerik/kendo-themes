@@ -3,19 +3,11 @@
     // Theme
     .k-notification {
         @include fill(
-            $notification-text,
-            $notification-bg,
-            $notification-border
+            $kendo-notification-text,
+            $kendo-notification-bg,
+            $kendo-notification-border
         );
-    }
-    .k-notification-wrap {
-        > .k-i-close,
-        > .k-i-x {
-            color: inherit;
-        }
-    }
-    .k-notification-group .k-notification {
-        box-shadow: $notification-shadow;
+        @include box-shadow( $kendo-notification-shadow );
     }
 
     @each $name, $props in $kendo-notification-theme {
