@@ -2,10 +2,18 @@
     // Titlebar
     .k-dialog-titlebar {
         @include fill(
-            $dialog-titlebar-text,
-            $dialog-titlebar-bg,
-            $dialog-titlebar-border
+            $kendo-dialog-titlebar-text,
+            $kendo-dialog-titlebar-bg,
+            $kendo-dialog-titlebar-border
         );
+    }
+
+    // Dialog theme colors
+    @each $name, $color in $kendo-dialog-theme-colors {
+        .k-dialog-#{$name} .k-dialog-titlebar {
+            color: contrast-wcag( $color );
+            background-color: $color;
+        }
     }
 
 }

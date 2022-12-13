@@ -65,12 +65,12 @@ export * from './toolbar/index';
 
 // Popups and modals
 export * from './action-sheet/index';
-// export * from './dialog/index';
+export * from './dialog/index';
 // export * from './drawer/index';
 export * from './notification/index';
 export * from './popover/index';
 // export * from './tooltip/index';
-// export * from './window/index';
+export * from './window/index';
 
 // Navigation
 export * from './appbar/index';

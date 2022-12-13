@@ -274,8 +274,8 @@
     .k-edit-form-content {
         flex: 1 1 auto;
         overflow: auto;
-        margin: (-$window-inner-padding-y) (-$window-inner-padding-x);
-        padding: $window-inner-padding-y $window-inner-padding-x;
+        margin: (-$kendo-window-inner-padding-y) (-$kendo-window-inner-padding-x);
+        padding: $kendo-window-inner-padding-y $kendo-window-inner-padding-x;
     }
 
 

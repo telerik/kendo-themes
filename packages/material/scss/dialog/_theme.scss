@@ -6,9 +6,9 @@
     // Titlebar
     .k-dialog-titlebar {
         @include fill(
-            $dialog-titlebar-text,
-            $dialog-titlebar-bg,
-            $dialog-titlebar-border
+            $kendo-dialog-titlebar-text,
+            $kendo-dialog-titlebar-bg,
+            $kendo-dialog-titlebar-border
         );
     }
 
@@ -17,8 +17,5 @@
         border-color: $component-border;
     }
 
-
-    // Button group
-    .k-dialog-buttongroup {}
 
 }
