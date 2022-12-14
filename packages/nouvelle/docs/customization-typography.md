@@ -26,16 +26,16 @@ The following table lists the available variables for customization.
 </thead>
 <tbody>
         <tr>
-    <td>$font-size</td>
+    <td>$kendo-font-size-xs</td>
     <td>Number</td>
 <td>
 
-`14px`
+`.75rem`
 
 </td>
 <td>
 
-`14px`
+`0.75rem`
 
 </td>
 </tr>
@@ -44,7 +44,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$font-family</td>
+    <td>$kendo-font-family</td>
     <td>String</td>
 <td>
 
@@ -62,7 +62,7 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$font-family-monospace</td>
+    <td>$kendo-font-family-monospace</td>
     <td>List</td>
 <td>
 
@@ -80,16 +80,16 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$line-height</td>
+    <td>$kendo-line-height-sm</td>
     <td>Number</td>
 <td>
 
-`(20 / 14)`
+`1.25rem`
 
 </td>
 <td>
 
-`1.4285714286`
+`1.25rem`
 
 </td>
 </tr>

@@ -26,18 +26,18 @@ The following table lists the available variables for customization.
 </thead>
 <tbody>
         <tr>
-    <td>$popup-bg</td>
+    <td>$kendo-popup-bg</td>
     <td>Color</td>
 <td>
 
-`k-color-mix( black, $component-bg, 2% )`
+`$kendo-component-bg`
 
 </td>
 <td>
 
-<span class="color-preview" style="background-color: #fafafa"></span>
+<span class="color-preview" style="background-color: #ffffff"></span>
 
-`#fafafa`
+`#ffffff`
 
 </td>
 </tr>
@@ -46,11 +46,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$popup-text</td>
+    <td>$kendo-popup-text</td>
     <td>Color</td>
 <td>
 
-`$component-text`
+`$kendo-component-text`
 
 </td>
 <td>
@@ -66,11 +66,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$popup-border</td>
+    <td>$kendo-popup-border</td>
     <td>Color</td>
 <td>
 
-`$component-border`
+`$kendo-component-border`
 
 </td>
 <td>

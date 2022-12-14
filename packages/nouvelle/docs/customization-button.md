@@ -30,7 +30,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`$interactive-bg`
+`$kendo-interactive-bg`
 
 </td>
 <td>
@@ -50,7 +50,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`$interactive-text`
+`$kendo-interactive-text`
 
 </td>
 <td>
@@ -70,7 +70,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`$interactive-border`
+`$kendo-interactive-border`
 
 </td>
 <td>
@@ -90,7 +90,7 @@ The following table lists the available variables for customization.
     <td>List</td>
 <td>
 
-`$interactive-gradient`
+`$kendo-interactive-gradient`
 
 </td>
 <td>
