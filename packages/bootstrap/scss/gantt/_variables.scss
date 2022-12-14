@@ -17,7 +17,7 @@ $gantt-nonwork-text: null !default;
 $gantt-nonwork-border: null !default;
 
 $gantt-line-size: 2px !default;
-$gantt-line-fill: k-color-mix( $panel-text, $panel-bg ) !default;
+$gantt-line-fill: k-color-mix( $gantt-text, $gantt-bg ) !default;
 $gantt-line-selected-fill: $selected-bg !default;
 
 $gantt-dot-size: 8px !default;

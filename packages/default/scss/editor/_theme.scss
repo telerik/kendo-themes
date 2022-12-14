@@ -43,11 +43,11 @@
             }
         }
 
-        // Hover & Actve state
+        // Hover & Active state
         &:hover,
         &.k-hover,
         &.k-active {
-            border-color: $panel-border;
+            border-color: $component-border;
         }
     }
 
