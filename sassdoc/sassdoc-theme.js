@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const nunjucks = require('./nunjucks');
+const annotations = require('./annotations');
 
 module.exports = function(dest, context) {
     const capitalize = (str) => str[0].toUpperCase() + str.substring(1);
@@ -74,3 +75,7 @@ module.exports = function(dest, context) {
 
     return Promise.resolve();
 };
+
+
+module.exports.annotations = [];
+module.exports.annotations.push(...annotations);
