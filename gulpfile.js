@@ -136,10 +136,7 @@ gulp.task("dist:swatches", distSwatches);
 gulp.task("docs", () => {
     let themes = glob.sync(paths.sass.themes, {
         ignore: [
-            'packages/nouvelle',
-            'packages/fluent',
-            'packages/utils',
-            'packages/core'
+            'packages/fluent'
         ]
     });
 
@@ -160,7 +157,7 @@ gulp.task("docs", () => {
                 json: path.join(theme, "dist", 'variables.json'),
                 dest: path.join(theme, ".tmp"),
                 dist: path.join(theme, "docs"),
-                theme: "./docs/sassdoc-theme.js",
+                theme: "./sassdoc/sassdoc-theme.js",
                 meta: sassdocrc.meta,
                 groups: {
                     "color-system": "Color System",
@@ -218,10 +215,7 @@ gulp.task("create-component", function( done ) {
 function resolveVars() {
     let themes = glob.sync(paths.sass.themes, {
         ignore: [
-            'packages/nouvelle',
-            'packages/fluent',
-            'packages/utils',
-            'packages/core'
+            'packages/fluent'
         ]
     });
     const cwd = process.cwd();
