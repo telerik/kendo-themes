@@ -5657,7 +5657,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Color</td>
 <td>
 
-`$panel-bg`
+`$component-bg`
 
 </td>
 <td>
@@ -5677,7 +5677,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Color</td>
 <td>
 
-`$panel-text`
+`$component-text`
 
 </td>
 <td>
@@ -5697,7 +5697,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Color</td>
 <td>
 
-`$panel-border`
+`$component-border`
 
 </td>
 <td>

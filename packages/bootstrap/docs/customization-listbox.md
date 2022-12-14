@@ -174,7 +174,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`$panel-bg`
+`$component-bg`
 
 </td>
 <td>
@@ -194,7 +194,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`$panel-text`
+`$component-text`
 
 </td>
 <td>
@@ -214,7 +214,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`$panel-border`
+`$component-border`
 
 </td>
 <td>
