@@ -1,13 +1,16 @@
 // TODO DOCS
 
+/// This is equivalent to `touch-action: none;`. Disable browser handling of all panning and zooming gestures.
 /// @name .k-touch-action-none
-/// @description This is equivalent to `touch-action: none;`. Disable browser handling of all panning and zooming gestures.
 /// @group touch-action
+/// @contextType css
 
+/// This is equivalent to `touch-action: auto;`. Enable browser handling of all panning and zooming gestures.
 /// @name .k-touch-action-auto
-/// @description This is equivalent to `touch-action: auto;`. Enable browser handling of all panning and zooming gestures.
 /// @group touch-action
+/// @contextType css
 
+// Touch-action utility classes
 $kendo-utils-touch-action: map-get( $kendo-utils, "touch-action" ) !default;
 
 @include generate-utils( touch-action, touch-action, $kendo-utils-touch-action );

@@ -1,11 +1,14 @@
+/// This is equivalent to `appearance: none;`. Resets any browser specific styling on an element.
 /// @name .k-appearance-none
-/// @description This is equivalent to `appearance: none;`. Resets any browser specific styling on an element.
 /// @group appearance
+/// @contextType css
 
+/// This is equivalent to `appearance: auto;`. The user agent selects the appropriate special styling based on the element. Acts as `none` on elements with no special styling.
 /// @name .k-appearance-auto
-/// @description This is equivalent to `appearance: auto;`. The user agent selects the appropriate special styling based on the element. Acts as `none` on elements with no special styling.
 /// @group appearance
+/// @contextType css
 
+// Appearance utility classes
 $kendo-utils-appearance: map-get( $kendo-utils, "appearance" ) !default;
 
 @include generate-utils( appearance, appearance, $kendo-utils-appearance );
