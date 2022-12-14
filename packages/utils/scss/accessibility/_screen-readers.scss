@@ -1,8 +1,8 @@
 $kendo-utils-accessibility: map-get( $kendo-utils, "accessibility" ) !default;
 
 @if $kendo-utils-accessibility {
+    /// This class could be assigned to elements which should be visually hidden, but remain accessible for screen readers.
     /// @name .k-sr-only
-    /// @description This class could be assigned to elements which should be visually hidden, but remain accessible for screen readers.
     /// @group accessibility
     .#{$kendo-prefix}sr-only {
         margin: -1px;

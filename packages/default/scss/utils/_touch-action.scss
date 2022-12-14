@@ -2,14 +2,19 @@
 
     // Touch-action documentation sourced from https://developer.mozilla.org/en-US/docs/Web/CSS/touch-action.
 
-    // @name k-touch-action-none
-    // @description This is equivalent to `touch-action: none;`. Disable browser handling of all panning and zooming gestures.
-    // @group touch-action
+    /// This is equivalent to `touch-action: none;`. Disable browser handling of all panning and zooming gestures.
+    /// @name k-touch-action-none
+    /// @group touch-action
+    /// @contextType css
+    _ {}
 
-    // @name k-touch-action-auto
-    // @description This is equivalent to `touch-action: auto;`. Enable browser handling of all panning and zooming gestures.
-    // @group touch-action
+    /// This is equivalent to `touch-action: auto;`. Enable browser handling of all panning and zooming gestures.
+    /// @name k-touch-action-auto
+    /// @group touch-action
+    /// @contextType css
+    _ {}
 
+    // Touch-action utility classes
     $utils-touch-action: (
         none,
         auto

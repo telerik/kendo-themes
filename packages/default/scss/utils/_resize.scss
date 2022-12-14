@@ -2,22 +2,32 @@
 
     // Resize documentation sourced from https://developer.mozilla.org/en-US/docs/Web/CSS/resize.
 
-    // @name k-resize-none
-    // @description This is equivalent to `resize: none;`. The element offers no user-controllable method for resizing it.
-    // @group resize
+    /// This is equivalent to `resize: none;`. The element offers no user-controllable method for resizing it.
+    /// @name .k-resize-none
+    /// @group resize
+    /// @contextType css
+    _ {}
 
-    // @name k-resize-both
-    // @description This is equivalent to `resize: both;`. The element displays a mechanism for allowing the user to resize it, which may be resized both horizontally and vertically.
-    // @group resize
+    /// This is equivalent to `resize: both;`. The element displays a mechanism for allowing the user to resize it, which may be resized both horizontally and vertically.
+    /// @name .k-resize-both
+    /// @group resize
+    /// @contextType css
+    _ {}
 
-    // @name k-resize-horizontal
-    // @description This is equivalent to `resize: horizontal;`. The element displays a mechanism for allowing the user to resize it in the horizontal direction.
-    // @group resize
+    /// This is equivalent to `resize: horizontal;`. The element displays a mechanism for allowing the user to resize it in the horizontal direction.
+    /// @name .k-resize-horizontal
+    /// @group resize
+    /// @contextType css
+    _ {}
 
-    // @name k-resize-vertical
-    // @description This is equivalent to `resize: vertical;`. The element displays a mechanism for allowing the user to resize it in the vertical direction.
-    // @group resize
+    /// This is equivalent to `resize: vertical;`. The element displays a mechanism for allowing the user to resize it in the vertical direction.
+    /// @name .k-resize-vertical
+    /// @group resize
+    /// @contextType css
+    _ {}
 
+
+    // Resize utility classes
     $utils-resize: (
         none,
         both,

@@ -1,11 +1,14 @@
+/// This is equivalent to `table-layout: auto;`. By default, most browsers use an automatic table layout algorithm. The widths of the table and its cells are adjusted to fit the content.
 /// @name .k-table-layout-auto
-/// @description This is equivalent to `table-layout: auto;`. By default, most browsers use an automatic table layout algorithm. The widths of the table and its cells are adjusted to fit the content.
 /// @group table-layout
+/// @contextType css
 
+/// This is equivalent to `table-layout: fixed;`. Table and column widths are set by the widths of table and col elements or by the width of the first row of cells. Cells in subsequent rows do not affect column widths.
 /// @name .k-table-layout-fixed
-/// @description This is equivalent to `table-layout: fixed;`. Table and column widths are set by the widths of table and col elements or by the width of the first row of cells. Cells in subsequent rows do not affect column widths.
 /// @group table-layout
+/// @contextType css
 
+// Table layout utility classes
 $kendo-utils-table-layout: map-get( $kendo-utils, "table-layout" ) !default;
 
 @include generate-utils( table, table-layout, $kendo-utils-table-layout );

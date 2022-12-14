@@ -1,11 +1,14 @@
+/// This is equivalent to `transform: scaleX( -1 );`. Flips the element horizontally.
 /// @name .k-flip-h
-/// @description This is equivalent to `transform: scaleX( -1 );`. Flips the element horizontally.
 /// @group transform
+/// @contextType css
 
+/// This is equivalent to `transform: scaleY( -1 );`. Flips the element vertically.
 /// @name .k-flip-v
-/// @description This is equivalent to `transform: scaleY( -1 );`. Flips the element vertically.
 /// @group transform
+/// @contextType css
 
+// Flip utility classes
 $kendo-utils-flip: map-get( $kendo-utils, "flip" ) !default;
 
 @if $kendo-utils-flip {

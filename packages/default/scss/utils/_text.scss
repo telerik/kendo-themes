@@ -21,39 +21,51 @@
 
     // Wrapping
 
-    /// @name k-text-nowrap
-    /// @description This is equivalent to `white-space: nowrap;`. Collapses white space as for normal, but suppresses line breaks (text wrapping) within the source.
+    /// This is equivalent to `white-space: nowrap;`. Collapses white space as for normal, but suppresses line breaks (text wrapping) within the source.
+    /// @name .k-text-nowrap
     /// @group text
     .k-text-nowrap                  { white-space: nowrap; }
     .\!k-text-nowrap                { white-space: nowrap !important; } // sass-lint:disable-line no-important
-    /// @name k-text-ellipsis
-    /// @description This is equivalent to `white-space: nowrap; overflow: hidden; text-overflow: ellipsis;`.
+    /// This is equivalent to `white-space: nowrap; overflow: hidden; text-overflow: ellipsis;`.
+    /// @name .k-text-ellipsis
     /// @group text
     .k-text-ellipsis                { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; } // sass-lint:disable-line one-declaration-per-line
 
-    /// @name k-white-space-normal
-    /// @description This is equivalent to `white-space: normal;`. Sequences of white space are collapsed. Newline characters in the source are handled the same as other white space. Lines are broken as necessary to fill line boxes.
+    /// This is equivalent to `white-space: normal;`. Sequences of white space are collapsed. Newline characters in the source are handled the same as other white space. Lines are broken as necessary to fill line boxes.
+    /// @name .k-white-space-normal
     /// @group text
+    /// @contextType css
+    _ {}
 
-    /// @name k-white-space-nowrap
-    /// @description This is equivalent to `white-space: nowrap;`. Collapses white space as for normal, but suppresses line breaks (text wrapping) within the source.
+    /// This is equivalent to `white-space: nowrap;`. Collapses white space as for normal, but suppresses line breaks (text wrapping) within the source.
+    /// @name .k-white-space-nowrap
     /// @group text
+    /// @contextType css
+    _ {}
 
-    /// @name k-white-space-pre
-    /// @description This is equivalent to `white-space: pre;`. Sequences of white space are preserved. Lines are only broken at newline characters in the source and at <br> elements.
+    /// This is equivalent to `white-space: pre;`. Sequences of white space are preserved. Lines are only broken at newline characters in the source and at <br> elements.
+    /// @name .k-white-space-pre
     /// @group text
+    /// @contextType css
+    _ {}
 
-    /// @name k-white-space-pre-wrap
-    /// @description This is equivalent to `white-space: pre-wrap;`. Sequences of white space are preserved. Lines are broken at newline characters, at <br>, and as necessary to fill line boxes.
+    /// This is equivalent to `white-space: pre-wrap;`. Sequences of white space are preserved. Lines are broken at newline characters, at <br>, and as necessary to fill line boxes.
+    /// @name .k-white-space-pre-wrap
     /// @group text
+    /// @contextType css
+    _ {}
 
-    /// @name k-white-space-pre-line
-    /// @description This is equivalent to `white-space: pre-line;`. Sequences of white space are collapsed. Lines are broken at newline characters, at <br>, and as necessary to fill line boxes.
+    /// This is equivalent to `white-space: pre-line;`. Sequences of white space are collapsed. Lines are broken at newline characters, at <br>, and as necessary to fill line boxes.
+    /// @name .k-white-space-pre-line
     /// @group text
+    /// @contextType css
+    _ {}
 
-    /// @name k-white-space-break-spaces
-    /// @description This is equivalent to `white-space: break-spaces;`. Collapses white space as for normal, but suppresses line breaks (text wrapping) within the source.
+    /// This is equivalent to `white-space: break-spaces;`. Collapses white space as for normal, but suppresses line breaks (text wrapping) within the source.
+    /// @name .k-white-space-break-spaces
     /// @group text
+    /// @contextType css
+    _ {}
 
     @each $wrap in $white-space {
         .k-white-space-#{$wrap}    { white-space: $wrap; }
@@ -63,21 +75,29 @@
 
     // Align
 
-    /// @name k-text-left
-    /// @description This is equivalent to `text-align: left;`. The inline contents are aligned to the left edge of the line box.
+    /// This is equivalent to `text-align: left;`. The inline contents are aligned to the left edge of the line box.
+    /// @name .k-text-left
     /// @group text
+    /// @contextType css
+    _ {}
 
-    /// @name k-text-right
-    /// @description This is equivalent to `text-align: right;`. The inline contents are aligned to the right edge of the line box.
+    /// This is equivalent to `text-align: right;`. The inline contents are aligned to the right edge of the line box.
+    /// @name .k-text-right
     /// @group text
+    /// @contextType css
+    _ {}
 
-    /// @name k-text-center
-    /// @description This is equivalent to `text-align: center;`. The inline contents are centered within the line box.
+    /// This is equivalent to `text-align: center;`. The inline contents are centered within the line box.
+    /// @name .k-text-center
     /// @group text
+    /// @contextType css
+    _ {}
 
-    /// @name k-text-justify
-    /// @description This is equivalent to `text-align: justify;`. The inline contents are justified. Text should be spaced to line up its left and right edges to the left and right edges of the line box, except for the last line.
+    /// This is equivalent to `text-align: justify;`. The inline contents are justified. Text should be spaced to line up its left and right edges to the left and right edges of the line box, except for the last line.
+    /// @name .k-text-justify
     /// @group text
+    /// @contextType css
+    _ {}
 
     @each $align in $text-align {
         .k-text-#{$align}           { text-align: $align; }
@@ -87,17 +107,23 @@
 
     // Transform
 
-    /// @name k-text-lowercase
-    /// @description This is equivalent to `text-transform: lowercase;`. Is a keyword that converts all characters to lowercase.
+    /// This is equivalent to `text-transform: lowercase;`. Is a keyword that converts all characters to lowercase.
+    /// @name .k-text-lowercase
     /// @group text
+    /// @contextType css
+    _ {}
 
-    /// @name k-text-uppercase
-    /// @description This is equivalent to `text-transform: uppercase;`. Is a keyword that converts all characters to uppercase.
+    /// This is equivalent to `text-transform: uppercase;`. Is a keyword that converts all characters to uppercase.
+    /// @name .k-text-uppercase
     /// @group text
+    /// @contextType css
+    _ {}
 
-    /// @name k-text-capitalize
-    /// @description This is equivalent to `text-transform: capitalize;`. Is a keyword that converts the first letter of each word to uppercase. Other characters remain unchanged (they retain their original case as written in the element's text).
+    /// This is equivalent to `text-transform: capitalize;`. Is a keyword that converts the first letter of each word to uppercase. Other characters remain unchanged (they retain their original case as written in the element's text).
+    /// @name .k-text-capitalize
     /// @group text
+    /// @contextType css
+    _ {}
 
     @each $transform in $text-transform {
         .k-text-#{$transform}       { text-transform: $transform; }
@@ -112,16 +138,16 @@
 
     // Named font-weight
 
-    /// @name k-font-weight-light
-    /// @description This is equivalent to `font-weight: 300;`. The value of `300` may be different for each Kendo UI Theme.
+    /// This is equivalent to `font-weight: 300;`. The value of `300` may be different for each Kendo UI Theme.
+    /// @name .k-font-weight-light
     /// @group text
     .k-font-weight-light            { font-weight: $font-weight-light !important; } // sass-lint:disable-line no-important
-    /// @name k-font-weight-normal
-    /// @description This is equivalent to `font-weight: 400;`. The value of `400` may be different for each Kendo UI Theme.
+    /// This is equivalent to `font-weight: 400;`. The value of `400` may be different for each Kendo UI Theme.
+    /// @name .k-font-weight-normal
     /// @group text
     .k-font-weight-normal           { font-weight: $font-weight-normal !important; } // sass-lint:disable-line no-important
-    /// @name k-font-weight-bold
-    /// @description This is equivalent to `font-weight: 700;`. The value of `700` may be different for each Kendo UI Theme.
+    /// This is equivalent to `font-weight: 700;`. The value of `700` may be different for each Kendo UI Theme.
+    /// @name .k-font-weight-bold
     /// @group text
     .k-font-weight-bold             { font-weight: $font-weight-bold !important; } // sass-lint:disable-line no-important
 
