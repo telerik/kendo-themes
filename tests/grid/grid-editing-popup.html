@@ -101,30 +101,41 @@
                                 <label for="files">Files</label>
                             </div>
                             <div class="k-form-field-wrap">
-                                <div class="k-widget k-upload k-header k-upload-sync">
-                                    <div class="k-dropzone">
-                                        <button class="k-upload-button k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
-                                            <span class="k-button-text">Select files...</span>
-                                        </button>
+                                <div class="k-upload k-upload-async">
+                                    <div class="k-dropzone k-upload-dropzone">
+                                        <div class="k-upload-button-wrap">
+                                            <button class="k-upload-button k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                                                <span class="k-button-text">Select files...</span>
+                                            </button>
+                                            <input id="upload-input">
+                                        </div>
+                                        <span class="k-dropzone-hint k-hidden">Drop files here to upload</span>
+                                        <span class="k-upload-status">
+                                            <span class="k-icon k-i-check"></span>Done
+                                        </span>
                                     </div>
-                                    <ul class="k-upload-files k-reset">
-                                        <li class="k-file">
-                                            <div class="k-progressbar k-hidden">
-                                                <span class="k-progress" style="width: 100%;"></span>
+                                    <ul class="k-upload-files">
+                                        <li class="k-file k-file-success">
+                                            <div class="k-file-single">
+                                                <div labelposition="start" class="k-hidden k-progressbar k-progressbar-horizontal" style="--kendo-progressbar-value:100;">
+                                                    <span class="k-progress-status-wrap k-progress-start"></span>
+                                                    <div class="k-progressbar-value k-selected">
+                                                        <span class="k-progress-status-wrap k-progress-start"></span>
+                                                    </div>
+                                                </div>
+                                                <span class="k-file-icon-wrapper">
+                                                    <span class="k-file-icon k-icon k-i-file-image"></span>
+                                                </span>
+                                                <div class="k-file-info">
+                                                    <span class="k-file-name">67409197_2322469807839836_4126207508270284800_n.png</span>
+                                                    <span class="k-file-size">24.34 KB</span>
+                                                </div>
+                                                <div class="k-upload-actions">
+                                                    <button class="k-upload-action k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                                                        <span class="k-button-icon k-icon k-i-close"></span>
+                                                    </button>
+                                                </div>
                                             </div>
-                                            <span class="k-file-group-wrapper">
-                                                <span class="k-file-group k-icon k-i-file-image"></span>
-                                                <span class="k-file-state"></span>
-                                            </span>
-                                            <span class="k-file-name-size-wrapper">
-                                                <span class="k-file-name">67409197_2322469807839836_4126207508270284800_n.png</span>
-                                                <span class="k-file-size">24.34 KB</span>
-                                            </span>
-                                            <strong class="k-upload-status">
-                                                <button class="k-upload-action k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
-                                                    <span class="k-button-icon k-icon k-i-close"></span>
-                                                </button>
-                                            </strong>
                                         </li>
                                     </ul>
                                 </div>

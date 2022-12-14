@@ -28,11 +28,14 @@
                 </div>
                 <div class="k-window-content k-dialog-content">
                     <div class="k-upload k-upload-async k-upload-empty">
-                        <div class="k-dropzone">
-                            <button class="k-upload-button k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
-                                <span class="k-button-text">Select files...</span>
-                            </button>
-                            <em class="k-dropzone-hint">Drop files here to upload</em>
+                        <div class="k-dropzone k-upload-dropzone">
+                            <div class="k-upload-button-wrap">
+                                <button class="k-upload-button k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                                    <span class="k-button-text">Select files...</span>
+                                </button>
+                                <input id="upload-input">
+                            </div>
+                            <span class="k-dropzone-hint">Drop files here to upload</span>
                         </div>
                     </div>
                 </div>
