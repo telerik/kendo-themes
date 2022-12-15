@@ -263,26 +263,30 @@
         white-space: normal;
         display: flex;
         align-items: center;
-        gap: var( --kendo-grid-grouping-header-padding-y, #{$kendo-grid-grouping-header-padding-y} );
+        gap: var( --INTERNAL--kendo-grid-grouping-header-padding-y, 0 );
         position: relative;
+        flex-wrap: wrap;
 
         &::before {
             content: "";
             height: $kendo-chip-calc-size;
             display: inline-block;
             vertical-align: middle;
-            margin-left: calc( var( --kendo-grid-grouping-header-padding-y, #{$kendo-grid-grouping-header-padding-y} ) * -1 );
+            margin-left: calc( var( --INTERNAL--kendo-grid-grouping-header-padding-y, 0 ) * -1 );
         }
-    }
 
-    .k-grouping-header-flex {
-        display: flex;
-        flex-flow: row wrap;
-        align-items: center;
-        gap: var( --INTERNAL--kendo-grid-grouping-header-padding-y, 0 );
+        .k-chip-list {
+            flex-grow: 0;
+            display: contents;
+        }
 
-        &::before {
-            margin-inline-start: calc( var( --INTERNAL--kendo-grid-grouping-header-padding-y, 0 ) * -1 );
+        > .k-grouping-drop-container {
+            flex-grow: 1;
+            padding-block: var( --kendo-grid-grouping-header-padding-y, #{$kendo-grid-grouping-header-padding-y} );
+            margin-block: calc( var( --kendo-grid-grouping-header-padding-y, #{$kendo-grid-grouping-header-padding-y} ) * -1 );
+            display: inline-flex;
+            align-self: stretch;
+            align-items: center;
         }
     }
 
