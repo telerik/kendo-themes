@@ -1,6 +1,8 @@
 {
+    "src": "scss",
+    "dest": "docs",
     "meta": {
         "name": "utils",
-        "friendlyName": "Utils"
+        "friendlyName": "Theme Utils"
     }
 }

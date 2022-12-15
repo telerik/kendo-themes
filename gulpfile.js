@@ -1,16 +1,12 @@
 const fs = require("fs");
 const path = require("path");
-const cp = require("child_process");
 
 const glob = require("glob");
 const gulp = require("gulp");
-const sassdoc = require("sassdoc");
-const dartSass = require("sass");
 
 const { sassFlatten } = require('@progress/kendo-theme-tasks/src/build/sass-flatten');
 const { embedFileBase64 } = require('@progress/kendo-theme-tasks/src/embedFile');
 const { getArg, getEnvArg } = require("@progress/kendo-theme-tasks/src/utils");
-const { utilsDocs } = require('@progress/kendo-theme-tasks/src/docs');
 const { createComponent } = require('@progress/kendo-theme-tasks/src/create');
 
 
@@ -36,7 +32,13 @@ function flattenAll( cwds, options ) {
         let nodeModules = path.resolve( cwd, 'node_modules' );
 
         if (fs.existsSync( file )) {
-            sassFlatten({ file, output, nodeModules });
+            fs.mkdirSync( output.path, { recursive: true } );
+
+            if (path.basename( cwd ) === 'fluent') {
+                fs.writeFileSync( path.resolve( output.path, output.filename), '@use "../scss/all.scss";');
+            } else {
+                sassFlatten({ file, output, nodeModules });
+            }
         }
     });
 }
@@ -105,11 +107,7 @@ gulp.task("assets", function() {
 function distFlat() {
     let file = paths.sass.theme;
     let output = { path: getArg('--output-path') || paths.sass.dist };
-    let themes = glob.sync( getArg('--theme') || paths.sass.themes, {
-        ignore: [
-            'packages/fluent'
-        ]
-    });
+    let themes = glob.sync( getArg('--theme') || paths.sass.themes );
 
     flattenAll( themes, { file, output } );
 
@@ -131,68 +129,6 @@ function distSwatches() {
 gulp.task("dist:swatches", distSwatches);
 // #endregion
 
-
-// #region docs
-gulp.task("docs", () => {
-    let themes = glob.sync(paths.sass.themes, {
-        ignore: [
-            'packages/fluent'
-        ]
-    });
-
-    distFlat();
-    resolveVars();
-
-    return Promise.all(
-        themes.map( theme => {
-
-            if (fs.existsSync(path.join(theme, ".sassdocrc")) === false) {
-                return Promise.resolve();
-            }
-
-            let themeFiles = glob.sync(theme + "/dist/all.scss");
-
-            let sassdocrc = JSON.parse( fs.readFileSync( path.join(theme, ".sassdocrc"), "utf8" ) );
-            return sassdoc(themeFiles, {
-                json: path.join(theme, "dist", 'variables.json'),
-                dest: path.join(theme, ".tmp"),
-                dist: path.join(theme, "docs"),
-                theme: "./sassdoc/sassdoc-theme.js",
-                meta: sassdocrc.meta,
-                groups: {
-                    "color-system": "Color System",
-                    "typography": "Typography",
-                    "charts": "Charts",
-                    "undefined": "Common"
-                }
-            });
-        })
-    );
-});
-gulp.task("docs:check", function() {
-    //git diff --exit-code --quiet -- docs/
-    return gulp.task("docs")().then(function() {
-        let status = cp.spawnSync("git", [ "diff", "--exit-code", "--quiet", "--", "**/docs/*" ]).status;
-
-        if (status !== 0) {
-            throw new Error("Docs are out of date");
-        }
-    });
-});
-
-/**
- * Generates documentation for the utility classes.
- *
- * @example npm run utils-docs
- * @example gulp utils-docs
- */
-gulp.task("utils-docs", () => {
-    utilsDocs();
-
-    return Promise.resolve();
-});
-// #endregion
-
 // #region Components
 
 /**
@@ -211,48 +147,3 @@ gulp.task("create-component", function( done ) {
 });
 
 // #endregion
-
-function resolveVars() {
-    let themes = glob.sync(paths.sass.themes, {
-        ignore: [
-            'packages/fluent'
-        ]
-    });
-    const cwd = process.cwd();
-
-    distFlat();
-
-    themes.forEach( theme => {
-        let variablesJson = path.resolve( cwd, `${theme}/dist/variables.json` );
-        let variablesScss = path.resolve( cwd, `${theme}/dist/variables.scss` );
-        let content = {};
-
-        fs.copyFileSync('./lib/variables.scss', variablesScss );
-
-        dartSass.compile(variablesScss, {
-            functions: {
-                'k-resolve-var($key, $type, $value)': (args) => {
-                    const _key = args[0].toString();
-                    const _type = args[1].toString();
-                    const _val = args[2].toString();
-
-                    content[_key] = {
-                        type: _type,
-                        value: _val
-                    };
-
-                    return new dartSass.SassString('');
-                }
-            },
-            logger: dartSass.Logger.silent
-        });
-
-        fs.writeFileSync( variablesJson, JSON.stringify( content, null, 4 ) );
-
-    });
-
-    return Promise.resolve();
-}
-gulp.task('resolve-vars', resolveVars);
-
-module.exports.resolveVars = resolveVars;

@@ -1,4 +1,6 @@
 {
+    "src": "scss",
+    "dest": "docs",
     "meta": {
         "name": "material",
         "friendlyName": "Material"

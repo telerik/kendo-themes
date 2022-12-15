@@ -2,7 +2,7 @@
     "src": "scss",
     "dest": "docs",
     "meta": {
-        "name": "classic",
-        "friendlyName": "Classic"
+        "name": "fluent",
+        "friendlyName": "Fluent"
     }
 }

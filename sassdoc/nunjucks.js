@@ -1,10 +1,8 @@
-'use strict';
-
 const path = require('path');
 const nunjucks = require('nunjucks');
+const templateDir = path.resolve(__dirname, 'templates');
 
-
-let nunjucksEnv = nunjucks.configure(path.resolve(__dirname, './', 'templates'), { autoescape: false });
+let nunjucksEnv = nunjucks.configure( templateDir, { autoescape: false });
 
 const formatText = src =>
     src.replace(/\n(.)/g, '<br />$1').replace(/\s$/, "");
