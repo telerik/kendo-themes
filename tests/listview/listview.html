@@ -9,56 +9,210 @@
 </head>
 <body id="app" class="k-body">
     <style>
+        .k-listview-header,
+        .k-listview-footer,
         .k-listview-item {
             padding: 10px;
-            display: inline-block;
-            outline: 1px dashed;
         }
 
     </style>
-    <div id="test-area" class="k-d-grid k-grid-cols-2">
+    <div id="test-area" class="k-d-grid k-grid-cols-3">
         <section>
-            <span>No layout</span>
-            <div class="k-widget k-listview">
-                <div class="k-listview-content">
-                    <div class="k-listview-item">Listview item</div>
-                    <div class="k-listview-item">Listview item</div>
-                    <div class="k-listview-item">Listview item</div>
-                    <div class="k-listview-item">Listview item</div>
+            <span>Listview - bottom pager</span>
+            <div class="k-listview">
+                <div class="k-listview-header">Header</div>
+                <div class="k-listview-content k-d-flex k-flex-col">
+                    <div class="k-listview-item">Listview Item</div>
+                    <div class="k-listview-item k-focus">Focus Item</div>
+                    <div class="k-listview-item k-selected">Selected Item</div>
+                    <div class="k-listview-item k-focus k-selected">Focus Selected Item</div>
+                </div>
+                <div class="k-listview-footer">Footer</div>
+                <div class="k-listview-pager k-listview-pager-bottom k-pager k-pager-md">
+                    <div class="k-pager-numbers-wrap">
+                        <button class="k-pager-nav k-pager-first k-button k-button-md k-button-flat k-button-flat-base k-icon-button k-disabled">
+                            <span class="k-button-icon k-icon k-i-caret-alt-to-left"></span>
+                        </button>
+                        <button class="k-pager-nav k-button k-button-md k-button-flat k-button-flat-base k-icon-button k-focus">
+                            <span class="k-button-icon k-icon k-i-caret-alt-left"></span>
+                        </button>
+                        <select class="k-picker k-dropdown-list k-dropdown k-rounded-md k-picker-md">
+                            <option>1</option>
+                        </select>
+                        <div class="k-pager-numbers">
+                            <button class="k-button k-button-md k-button-flat k-button-flat-primary">
+                                <span class="k-button-text">1</span>
+                            </button>
+                            <button class="k-button k-button-md k-button-flat k-button-flat-primary k-hover">
+                                <span class="k-button-text">2</span>
+                            </button>
+                            <button class="k-button k-button-md k-button-flat k-button-flat-primary k-focus">
+                                <span class="k-button-text">3</span>
+                            </button>
+                            <button class="k-button k-button-md k-button-flat k-button-flat-primary k-selected">
+                                <span class="k-button-text">4</span>
+                            </button>
+                            <button class="k-button k-button-md k-button-flat k-button-flat-primary k-hover k-focus">
+                                <span class="k-button-text">5</span>
+                            </button>
+                            <button class="k-button k-button-md k-button-flat k-button-flat-primary k-focus k-selected">
+                                <span class="k-button-text">6</span>
+                            </button>
+                        </div>
+                        <button class="k-pager-nav k-button k-button-md k-button-flat k-button-flat-base k-icon-button k-hover">
+                            <span class="k-button-icon k-icon k-i-caret-alt-right"></span>
+                        </button>
+                        <button class="k-pager-nav k-pager-last k-button k-button-md k-button-flat k-button-flat-base k-icon-button">
+                            <span class="k-button-icon k-icon k-i-caret-alt-to-right"></span>
+                        </button>
+                    </div>
+                    <span class="k-pager-sizes">
+                        <span class="k-dropdown k-picker k-picker-md k-picker-solid k-rounded-md">
+                            <span class="k-input-inner">
+                                <span class="k-input-value-text">20</span>
+                            </span>
+                            <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                            </button>
+                        </span>items per page
+                    </span>
+                    <button class="k-pager-refresh k-button k-button-md k-button-flat k-button-flat-base k-icon-button">
+                        <span class="k-button-icon k-icon k-i-arrow-rotate-cw"></span>
+                    </button>
+                    <span class="k-pager-info">1 - 20 of 91 items</span>
                 </div>
             </div>
         </section>
         <section>
-            <span>Flex layout</span>
-            <div class="k-widget k-listview">
-                <div class="k-listview-content k-d-flex k-flex-col k-flex-nowrap">
-                    <div class="k-listview-item">Listview item</div>
-                    <div class="k-listview-item">Listview item</div>
-                    <div class="k-listview-item">Listview item</div>
-                    <div class="k-listview-item">Listview item</div>
+            <span>Listview - top pager</span>
+            <div class="k-listview">
+                <div class="k-listview-pager k-listview-pager-top k-pager k-pager-md">
+                    <div class="k-pager-numbers-wrap">
+                        <button class="k-pager-nav k-pager-first k-button k-button-md k-button-flat k-button-flat-base k-icon-button k-disabled">
+                            <span class="k-button-icon k-icon k-i-caret-alt-to-left"></span>
+                        </button>
+                        <button class="k-pager-nav k-button k-button-md k-button-flat k-button-flat-base k-icon-button k-focus">
+                            <span class="k-button-icon k-icon k-i-caret-alt-left"></span>
+                        </button>
+                        <select class="k-picker k-dropdown-list k-dropdown k-rounded-md k-picker-md">
+                            <option>1</option>
+                        </select>
+                        <div class="k-pager-numbers">
+                            <button class="k-button k-button-md k-button-flat k-button-flat-primary">
+                                <span class="k-button-text">1</span>
+                            </button>
+                            <button class="k-button k-button-md k-button-flat k-button-flat-primary k-hover">
+                                <span class="k-button-text">2</span>
+                            </button>
+                            <button class="k-button k-button-md k-button-flat k-button-flat-primary k-focus">
+                                <span class="k-button-text">3</span>
+                            </button>
+                            <button class="k-button k-button-md k-button-flat k-button-flat-primary k-selected">
+                                <span class="k-button-text">4</span>
+                            </button>
+                            <button class="k-button k-button-md k-button-flat k-button-flat-primary k-hover k-focus">
+                                <span class="k-button-text">5</span>
+                            </button>
+                            <button class="k-button k-button-md k-button-flat k-button-flat-primary k-focus k-selected">
+                                <span class="k-button-text">6</span>
+                            </button>
+                        </div>
+                        <button class="k-pager-nav k-button k-button-md k-button-flat k-button-flat-base k-icon-button k-hover">
+                            <span class="k-button-icon k-icon k-i-caret-alt-right"></span>
+                        </button>
+                        <button class="k-pager-nav k-pager-last k-button k-button-md k-button-flat k-button-flat-base k-icon-button">
+                            <span class="k-button-icon k-icon k-i-caret-alt-to-right"></span>
+                        </button>
+                    </div>
+                    <span class="k-pager-sizes">
+                        <span class="k-dropdown k-picker k-picker-md k-picker-solid k-rounded-md">
+                            <span class="k-input-inner">
+                                <span class="k-input-value-text">20</span>
+                            </span>
+                            <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                            </button>
+                        </span>items per page
+                    </span>
+                    <button class="k-pager-refresh k-button k-button-md k-button-flat k-button-flat-base k-icon-button">
+                        <span class="k-button-icon k-icon k-i-arrow-rotate-cw"></span>
+                    </button>
+                    <span class="k-pager-info">1 - 20 of 91 items</span>
                 </div>
+                <div class="k-listview-header">Header</div>
+                <div class="k-listview-content k-d-flex k-flex-col">
+                    <div class="k-listview-item">Listview Item</div>
+                    <div class="k-listview-item">Listview Item</div>
+                    <div class="k-listview-item">Listview Item</div>
+                    <div class="k-listview-item">Listview Item</div>
+                </div>
+                <div class="k-listview-footer">Footer</div>
             </div>
         </section>
         <section>
-            <span>Grid layout</span>
-            <div class="k-widget k-listview">
-                <div class="k-listview-content k-d-grid k-grid-cols-2">
-                    <div class="k-listview-item">Listview item</div>
-                    <div class="k-listview-item">Listview item</div>
-                    <div class="k-listview-item">Listview item</div>
-                    <div class="k-listview-item">Listview item</div>
+            <span>Listview - top pager</span>
+            <div class="k-listview">
+                <div class="k-listview-pager k-listview-pager-top k-pager k-pager-md">
+                    <div class="k-pager-numbers-wrap">
+                        <button class="k-pager-nav k-pager-first k-button k-button-md k-button-flat k-button-flat-base k-icon-button k-disabled">
+                            <span class="k-button-icon k-icon k-i-caret-alt-to-left"></span>
+                        </button>
+                        <button class="k-pager-nav k-button k-button-md k-button-flat k-button-flat-base k-icon-button k-focus">
+                            <span class="k-button-icon k-icon k-i-caret-alt-left"></span>
+                        </button>
+                        <select class="k-picker k-dropdown-list k-dropdown k-rounded-md k-picker-md">
+                            <option>1</option>
+                        </select>
+                        <div class="k-pager-numbers">
+                            <button class="k-button k-button-md k-button-flat k-button-flat-primary">
+                                <span class="k-button-text">1</span>
+                            </button>
+                            <button class="k-button k-button-md k-button-flat k-button-flat-primary k-hover">
+                                <span class="k-button-text">2</span>
+                            </button>
+                            <button class="k-button k-button-md k-button-flat k-button-flat-primary k-focus">
+                                <span class="k-button-text">3</span>
+                            </button>
+                            <button class="k-button k-button-md k-button-flat k-button-flat-primary k-selected">
+                                <span class="k-button-text">4</span>
+                            </button>
+                            <button class="k-button k-button-md k-button-flat k-button-flat-primary k-hover k-focus">
+                                <span class="k-button-text">5</span>
+                            </button>
+                            <button class="k-button k-button-md k-button-flat k-button-flat-primary k-focus k-selected">
+                                <span class="k-button-text">6</span>
+                            </button>
+                        </div>
+                        <button class="k-pager-nav k-button k-button-md k-button-flat k-button-flat-base k-icon-button k-hover">
+                            <span class="k-button-icon k-icon k-i-caret-alt-right"></span>
+                        </button>
+                        <button class="k-pager-nav k-pager-last k-button k-button-md k-button-flat k-button-flat-base k-icon-button">
+                            <span class="k-button-icon k-icon k-i-caret-alt-to-right"></span>
+                        </button>
+                    </div>
+                    <span class="k-pager-sizes">
+                        <span class="k-dropdown k-picker k-picker-md k-picker-solid k-rounded-md">
+                            <span class="k-input-inner">
+                                <span class="k-input-value-text">20</span>
+                            </span>
+                            <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                                <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                            </button>
+                        </span>items per page
+                    </span>
+                    <button class="k-pager-refresh k-button k-button-md k-button-flat k-button-flat-base k-icon-button">
+                        <span class="k-button-icon k-icon k-i-arrow-rotate-cw"></span>
+                    </button>
+                    <span class="k-pager-info">1 - 20 of 91 items</span>
                 </div>
-            </div>
-        </section>
-        <section>
-            <span>Interactive states</span>
-            <div class="k-widget k-listview k-listview-grid">
-                <div class="k-listview-content k-d-grid k-grid-cols-2">
-                    <div class="k-listview-item">Normal item</div>
-                    <div class="k-listview-item k-focus">Focus item</div>
-                    <div class="k-listview-item k-selected">Selected item</div>
-                    <div class="k-listview-item k-selected k-focus">Selected focus item</div>
+                <div class="k-listview-header">Header</div>
+                <div class="k-listview-content k-d-flex k-flex-col">
+                    <div class="k-listview-item">Listview Item</div>
+                    <div class="k-listview-item">Listview Item</div>
+                    <div class="k-listview-item">Listview Item</div>
+                    <div class="k-listview-item">Listview Item</div>
                 </div>
+                <div class="k-listview-footer">Footer</div>
             </div>
         </section>
     </div>
