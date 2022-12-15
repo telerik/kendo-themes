@@ -1,0 +1,775 @@
+---
+title: Customizing Treeview
+description: "Refer to the list of the Kendo UI Fluent theme variables available for customization."
+slug: variables_kendothemefluent_treeview
+position: 9
+---
+
+# Customizing Treeview
+
+The following table lists the available variables for customization.
+
+<table class="theme-variables">
+    <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
+    </tr>
+</thead>
+<tbody>
+        <tr>
+    <td>$kendo-treeview-font-family</td>
+    <td></td>
+<td>
+
+`var( --kendo-font-family, normal )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font family of the treeview component.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-treeview-font-size-sm</td>
+    <td></td>
+<td>
+
+`var( --kendo-font-size, inherit )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the treeview component.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-treeview-line-height-sm</td>
+    <td></td>
+<td>
+
+`var( --kendo-line-height, normal )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of the treeview component.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-treeview-indent</td>
+    <td></td>
+<td>
+
+`map-get( $kendo-spacing, 4 )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Indentation of child groups in treeview component.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-treeview-item-padding-x-sm</td>
+    <td></td>
+<td>
+
+`map-get( $kendo-spacing, 2 )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of treeview items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-treeview-item-padding-y-sm</td>
+    <td></td>
+<td>
+
+`map-get( $kendo-spacing, 2 ) - map-get( $kendo-spacing, thin )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of treeview items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-treeview-item-border-width</td>
+    <td></td>
+<td>
+
+`0`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border width of treeview items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-treeview-item-border-radius</td>
+    <td></td>
+<td>
+
+`var( --kendo-border-radius-md, 0 )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border radius of treeview items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-treeview-filter-padding-x</td>
+    <td></td>
+<td>
+
+`map-get( $kendo-spacing, 2 )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the treeview filter element.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-treeview-filter-padding-y</td>
+    <td></td>
+<td>
+
+`map-get( $kendo-spacing, 2 )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the treeview filter element.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-treeview-sizes</td>
+    <td></td>
+<td>
+
+`(
+    sm: (
+        font-size: $kendo-treeview-font-size-sm,
+        line-height: $kendo-treeview-line-height-sm,
+        item-padding-x: $kendo-treeview-item-padding-x-sm,
+        item-padding-y: $kendo-treeview-item-padding-y-sm
+    ),
+    md: (
+        font-size: $kendo-treeview-font-size-md,
+        line-height: $kendo-treeview-line-height-md,
+        item-padding-x: $kendo-treeview-item-padding-x-md,
+        item-padding-y: $kendo-treeview-item-padding-y-md
+    ),
+    lg: (
+        font-size: $kendo-treeview-font-size-lg,
+        line-height: $kendo-treeview-line-height-lg,
+        item-padding-x: $kendo-treeview-item-padding-x-lg,
+        item-padding-y: $kendo-treeview-item-padding-y-lg
+    )
+)`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes of the treeview.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-treeview-bg</td>
+    <td></td>
+<td>
+
+`transparent`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the treeview component.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-treeview-text</td>
+    <td></td>
+<td>
+
+`var( --kendo-component-text, inherit )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the treeview component.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-treeview-border</td>
+    <td></td>
+<td>
+
+`inherit`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the treeview component.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-treeview-item-bg</td>
+    <td></td>
+<td>
+
+`transparent`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the treeview items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-treeview-item-text</td>
+    <td></td>
+<td>
+
+`var( --kendo-component-text, inherit )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the treeview items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-treeview-item-border</td>
+    <td></td>
+<td>
+
+`inherit`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the treeview items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-treeview-item-hover-bg</td>
+    <td></td>
+<td>
+
+`var( --kendo-hover-bg, inherit )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of hovered treeview items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-treeview-item-hover-text</td>
+    <td></td>
+<td>
+
+`var( --kendo-hover-text, inherit )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of hovered treeview items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-treeview-item-hover-border</td>
+    <td></td>
+<td>
+
+`inherit`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of hovered treeview items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-treeview-item-focus-bg</td>
+    <td></td>
+<td>
+
+`$kendo-treeview-item-bg`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of focused treeview items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-treeview-item-focus-text</td>
+    <td></td>
+<td>
+
+`$kendo-treeview-item-text`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of focused treeview items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-treeview-item-focus-border</td>
+    <td></td>
+<td>
+
+`$kendo-treeview-item-border`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of focused treeview items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-treeview-item-focus-shadow</td>
+    <td></td>
+<td>
+
+`inset 0 0 0 1px get-theme-color-var( neutral-130 )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Box shadow of focused treeview items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-treeview-item-selected-bg</td>
+    <td></td>
+<td>
+
+`var( --kendo-selected-bg, inherit )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of selected treeview items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-treeview-item-selected-text</td>
+    <td></td>
+<td>
+
+`var( --kendo-selected-text, inherit )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of selected treeview items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-treeview-item-selected-border</td>
+    <td></td>
+<td>
+
+`inherit`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of selected treeview items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-treeview-item-disabled-bg</td>
+    <td></td>
+<td>
+
+`$kendo-treeview-item-bg`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of disabled treeview items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-treeview-item-disabled-text</td>
+    <td></td>
+<td>
+
+`var( --kendo-disabled-text, inherit )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of disabled treeview items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-treeview-item-disabled-border</td>
+    <td></td>
+<td>
+
+`inherit`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of disabled treeview items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-treeview-loadmore-bg</td>
+    <td></td>
+<td>
+
+`transparent`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of load more.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-treeview-loadmore-text</td>
+    <td></td>
+<td>
+
+`var( --kendo-link-text, initial )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of load more.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-treeview-loadmore-border</td>
+    <td></td>
+<td>
+
+`inherit`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of load more.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-treeview-loadmore-hover-bg</td>
+    <td></td>
+<td>
+
+`transparent`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of a hovered load more.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-treeview-loadmore-hover-text</td>
+    <td></td>
+<td>
+
+`var( --kendo-link-hover-text, initial )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of a hovered load more.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-treeview-loadmore-hover-border</td>
+    <td></td>
+<td>
+
+`inherit`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of a hovered load more.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-treeview-loadmore-focus-bg</td>
+    <td></td>
+<td>
+
+`transparent`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of a focused load more.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-treeview-loadmore-focus-text</td>
+    <td></td>
+<td>
+
+`var( --kendo-link-hover-text, initial )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of a focused load more.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-treeview-loadmore-focus-border</td>
+    <td></td>
+<td>
+
+`inherit`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of a focused load more.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-treeview-loadmore-focus-shadow</td>
+    <td></td>
+<td>
+
+`$kendo-treeview-item-focus-shadow`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Box shadow of a focused load more.</div></div>
+    </td>
+</tr>
+</tbody>
+</table>
+
+## Suggested Links
+
+* [Styling Overview]({% slug themesandstyles %})
+* [Web Font Icons]({% slug icons %})
+* [Preview of the Themed Components](../)
+

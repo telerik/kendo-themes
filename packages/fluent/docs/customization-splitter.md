@@ -1,0 +1,378 @@
+---
+title: Customizing Splitter
+description: "Refer to the list of the Kendo UI Fluent theme variables available for customization."
+slug: variables_kendothemefluent_splitter
+position: 9
+---
+
+# Customizing Splitter
+
+The following table lists the available variables for customization.
+
+<table class="theme-variables">
+    <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
+    </tr>
+</thead>
+<tbody>
+        <tr>
+    <td>$kendo-splitter-border-width</td>
+    <td></td>
+<td>
+
+`map-get( $kendo-spacing, hair )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Width of the border around the splitter.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-splitter-font-size</td>
+    <td></td>
+<td>
+
+`var( --kendo-font-size, initial )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the splitter.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-splitter-line-height</td>
+    <td></td>
+<td>
+
+`var( --kendo-line-height, initial )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line hegiht of the splitter.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-splitter-font-family</td>
+    <td></td>
+<td>
+
+`var( --kendo-font-family, initial )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font family of the splitter.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-splitter-bg</td>
+    <td></td>
+<td>
+
+`var( --kendo-component-bg, initial )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the splitter.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-splitter-text</td>
+    <td></td>
+<td>
+
+`var( --kendo-component-text, initial )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the splitter.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-splitter-border</td>
+    <td></td>
+<td>
+
+`var( --kendo-component-border, initial )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the splitter.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-splitter-splitbar-size</td>
+    <td></td>
+<td>
+
+`map-get( $kendo-spacing, 2 )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Size of the splitter splitbar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-splitter-resize-icon-size</td>
+    <td></td>
+<td>
+
+`( map-get( $kendo-spacing, 2 ) + map-get( $kendo-spacing, thin ) )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Icon size of the splitter splitbar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-splitter-drag-handle-length</td>
+    <td></td>
+<td>
+
+`map-get( $kendo-spacing, 5 )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Length of the splitter drag handle.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-splitter-drag-handle-thickness</td>
+    <td></td>
+<td>
+
+`map-get( $kendo-spacing, thin )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">thickness of the splitter drag handle.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-splitter-drag-icon-margin</td>
+    <td></td>
+<td>
+
+`( map-get( $kendo-spacing, 2 ) - map-get( $kendo-spacing, hair ) )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Margin of the splitter drag handle icon.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-splitbar-bg</td>
+    <td></td>
+<td>
+
+`get-theme-color-var( neutral-10 )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the splitter splitbar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-splitbar-text</td>
+    <td></td>
+<td>
+
+`var( --kendo-component-text, initial )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the splitter splitbar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-splitbar-hover-bg</td>
+    <td></td>
+<td>
+
+`get-theme-color-var( neutral-20 )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Hover background color of the splitter splitbar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-splitbar-hover-text</td>
+    <td></td>
+<td>
+
+`$kendo-splitbar-text`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Hover text color of the splitter splitbar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-splitbar-selected-bg</td>
+    <td></td>
+<td>
+
+`get-theme-color-var( primary-100 )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Selected background color of the splitter splitbar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-splitbar-selected-text</td>
+    <td></td>
+<td>
+
+`var( --kendo-component-bg, inherit )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Selected text color of the splitter splitbar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-splitter-splitbar-static-size</td>
+    <td></td>
+<td>
+
+`map-get( $kendo-spacing, thin )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Size of the splitter static splitbar.</div></div>
+    </td>
+</tr>
+</tbody>
+</table>
+
+## Suggested Links
+
+* [Styling Overview]({% slug themesandstyles %})
+* [Web Font Icons]({% slug icons %})
+* [Preview of the Themed Components](../)
+

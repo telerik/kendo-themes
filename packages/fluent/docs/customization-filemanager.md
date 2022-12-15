@@ -1,0 +1,972 @@
+---
+title: Customizing Filemanager
+description: "Refer to the list of the Kendo UI Fluent theme variables available for customization."
+slug: variables_kendothemefluent_filemanager
+position: 9
+---
+
+# Customizing Filemanager
+
+The following table lists the available variables for customization.
+
+<table class="theme-variables">
+    <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
+    </tr>
+</thead>
+<tbody>
+        <tr>
+    <td>$kendo-filemanager-bg</td>
+    <td></td>
+<td>
+
+`var( --kendo-component-bg, transparent )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the filemanager component.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-filemanager-text</td>
+    <td></td>
+<td>
+
+`var( --kendo-component-text, inherit )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the filemanager component.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-filemanager-border</td>
+    <td></td>
+<td>
+
+`var( --kendo-component-border, inherit )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the filemanager component.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-filemanager-toolbar-bg</td>
+    <td></td>
+<td>
+
+`$kendo-toolbar-bg`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the toolbar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-filemanager-toolbar-text</td>
+    <td></td>
+<td>
+
+`$kendo-toolbar-text`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the toolbar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-filemanager-toolbar-border</td>
+    <td></td>
+<td>
+
+`$kendo-toolbar-border`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the toolbar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-filemanager-navigation-padding-x</td>
+    <td></td>
+<td>
+
+`$kendo-filemanager-spacer`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the navigation.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-filemanager-navigation-padding-y</td>
+    <td></td>
+<td>
+
+`$kendo-filemanager-spacer`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the navigation.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-filemanager-navigation-width</td>
+    <td></td>
+<td>
+
+`20%`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Width of the navigation.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-filemanager-navigation-border-width</td>
+    <td></td>
+<td>
+
+`$kendo-filemanager-border-width`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border width of the navigation.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-filemanager-navigation-bg</td>
+    <td></td>
+<td>
+
+`transparent`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the navigation.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-filemanager-navigation-text</td>
+    <td></td>
+<td>
+
+`inherit`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the navigation.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-filemanager-navigation-border</td>
+    <td></td>
+<td>
+
+`inherit`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the navigation.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-filemanager-breadcrumb-padding-x</td>
+    <td></td>
+<td>
+
+`map-get( $kendo-spacing, 2 )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the breadcrumb.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-filemanager-breadcrumb-padding-y</td>
+    <td></td>
+<td>
+
+`map-get( $kendo-spacing, 2 )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the breadcrumb.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-filemanager-breadcrumb-border-width</td>
+    <td></td>
+<td>
+
+`$kendo-filemanager-border-width`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border width of the breadcrumb.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-filemanager-breadcrumb-bg</td>
+    <td></td>
+<td>
+
+`$kendo-toolbar-bg`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the breadcrumb.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-filemanager-breadcrumb-text</td>
+    <td></td>
+<td>
+
+`inherit`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the breadcrumb.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-filemanager-breadcrumb-border</td>
+    <td></td>
+<td>
+
+`inherit`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the breadcrumb.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-filemanager-listview-bg</td>
+    <td></td>
+<td>
+
+`transparent`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the listview.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-filemanager-listview-text</td>
+    <td></td>
+<td>
+
+`inherit`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the listview.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-filemanager-listview-border</td>
+    <td></td>
+<td>
+
+`inherit`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the listview.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-filemanager-listview-item-padding-x</td>
+    <td></td>
+<td>
+
+`map-get( $kendo-spacing, 4 )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the listview item.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-filemanager-listview-item-padding-y</td>
+    <td></td>
+<td>
+
+`map-get( $kendo-spacing, 4 )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the listview item.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-filemanager-listview-item-width</td>
+    <td></td>
+<td>
+
+`120px`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Width of the listview item.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-filemanager-listview-item-height</td>
+    <td></td>
+<td>
+
+`120px`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Height of the listview item.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-filemanager-listview-item-icon-size</td>
+    <td></td>
+<td>
+
+`calc( var( --kendo-icon-size, 1rem ) * 3 )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Size of the listview item icon.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-filemanager-listview-item-icon-bg</td>
+    <td></td>
+<td>
+
+`transparent`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the listview item icon.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-filemanager-listview-item-icon-text</td>
+    <td></td>
+<td>
+
+`var( --kendo-subtle-text, inherit )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the listview item icon.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-filemanager-listview-item-icon-border</td>
+    <td></td>
+<td>
+
+`inherit`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the listview item icon.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-filemanager-listview-item-icon-focus-bg</td>
+    <td></td>
+<td>
+
+`transparent`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the focused listview item icon.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-filemanager-listview-item-icon-focus-text</td>
+    <td></td>
+<td>
+
+`inherit`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the focused listview item icon.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-filemanager-listview-item-icon-focus-border</td>
+    <td></td>
+<td>
+
+`inherit`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the focused listview item icon.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-filemanager-listview-item-icon-selected-bg</td>
+    <td></td>
+<td>
+
+`transparent`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the selected listview item icon.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-filemanager-listview-item-icon-selected-text</td>
+    <td></td>
+<td>
+
+`inherit`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the selected listview item icon.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-filemanager-listview-item-icon-selected-border</td>
+    <td></td>
+<td>
+
+`inherit`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the selected listview item icon.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-filemanager-grid-bg</td>
+    <td></td>
+<td>
+
+`transparent`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the grid.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-filemanager-grid-text</td>
+    <td></td>
+<td>
+
+`inherit`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the grid.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-filemanager-grid-border</td>
+    <td></td>
+<td>
+
+`inherit`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the grid.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-filemanager-preview-padding-x</td>
+    <td></td>
+<td>
+
+`$kendo-filemanager-spacer`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the preview.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-filemanager-preview-padding-y</td>
+    <td></td>
+<td>
+
+`$kendo-filemanager-spacer`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the preview.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-filemanager-preview-width</td>
+    <td></td>
+<td>
+
+`20%`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Width of the preview.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-filemanager-preview-border-width</td>
+    <td></td>
+<td>
+
+`$kendo-filemanager-border-width`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border width of the preview.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-filemanager-preview-spacing</td>
+    <td></td>
+<td>
+
+`$kendo-filemanager-spacer`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Spacing of the preview.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-filemanager-preview-column-gap</td>
+    <td></td>
+<td>
+
+`map-get( $kendo-spacing, 1 )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Spacing of the preview.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-filemanager-preview-bg</td>
+    <td></td>
+<td>
+
+`transparent`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the preview.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-filemanager-preview-text</td>
+    <td></td>
+<td>
+
+`inherit`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the preview.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-filemanager-preview-border</td>
+    <td></td>
+<td>
+
+`inherit`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the preview.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-filemanager-preview-icon-size</td>
+    <td></td>
+<td>
+
+`calc( var( --kendo-icon-size, 1rem ) * 6 )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Size of the preview icon.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-filemanager-preview-icon-bg</td>
+    <td></td>
+<td>
+
+`transparent`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the preview icon.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-filemanager-preview-icon-text</td>
+    <td></td>
+<td>
+
+`var( --kendo-subtle-text, inherit )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the preview icon.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-filemanager-preview-icon-border</td>
+    <td></td>
+<td>
+
+`inherit`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the preview icon.</div></div>
+    </td>
+</tr>
+</tbody>
+</table>
+
+## Suggested Links
+
+* [Styling Overview]({% slug themesandstyles %})
+* [Web Font Icons]({% slug icons %})
+* [Preview of the Themed Components](../)
+
