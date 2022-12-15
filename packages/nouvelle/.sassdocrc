@@ -1,4 +1,6 @@
 {
+    "src": "scss",
+    "dest": "docs",
     "meta": {
         "name": "nouvelle",
         "friendlyName": "Nouvelle"

@@ -1,6 +1,6 @@
 <tr>
     <td>${{ variable.context.name }}</td>
-    <td>{{ variable.type }}</td>
+    <td>{{ variable.resolvedType }}</td>
 <td>
 
 {%
@@ -19,7 +19,7 @@
 <td>
 
 {%
-    if variable.type === 'Color'
+    if variable.resolvedType === 'Color'
 %}<span class="color-preview" style="background-color: {{variable.resolvedValue}}"></span>
 
 {%
