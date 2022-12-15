@@ -1,0 +1,802 @@
+---
+title: Customizing Table
+description: "Refer to the list of the Kendo UI Fluent theme variables available for customization."
+slug: variables_kendothemefluent_table
+position: 9
+---
+
+# Customizing Table
+
+The following table lists the available variables for customization.
+
+<table class="theme-variables">
+    <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
+    </tr>
+</thead>
+<tbody>
+        <tr>
+    <td>$kendo-table-border-width</td>
+    <td></td>
+<td>
+
+`1px`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the table border.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-table-cell-vertical-border-width</td>
+    <td></td>
+<td>
+
+`0px`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of vertical border of table cells.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-table-cell-horizontal-border-width</td>
+    <td></td>
+<td>
+
+`1px`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of horizontal border of table cells.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-table-cell-padding-x</td>
+    <td></td>
+<td>
+
+`map-get( $kendo-spacing, 3 )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the cells in the table if no size is specified.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-table-cell-padding-y</td>
+    <td></td>
+<td>
+
+`map-get( $kendo-spacing, 3 )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the cells in the table if no size is specified.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-table-header-font-weight</td>
+    <td></td>
+<td>
+
+`var( --kendo-font-weight-bold, normal )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font weight of the table header cells.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-table-sizes</td>
+    <td></td>
+<td>
+
+`(
+    sm: (
+        font-size: var( --kendo-font-size, inherit ),
+        line-height: var( --kendo-line-height, inherit ),
+        cell-padding-x: map-get( $kendo-spacing, 3 ),
+        cell-padding-y: map-get( $kendo-spacing, 3 ) - map-get( $kendo-spacing, thin ),
+        group-label-padding-x: $kendo-list-item-group-label-padding-x-sm,
+        group-label-padding-y: $kendo-list-item-group-label-padding-y-sm,
+        group-label-font-size: $kendo-list-item-group-label-font-size-sm
+    ),
+    md: (
+        font-size: var( --kendo-font-size, inherit ),
+        line-height: var( --kendo-line-height, inherit ),
+        cell-padding-x: map-get( $kendo-spacing, 3 ),
+        cell-padding-y: map-get( $kendo-spacing, 3 ),
+        group-label-padding-x: $kendo-list-item-group-label-padding-x-md,
+        group-label-padding-y: $kendo-list-item-group-label-padding-y-md,
+        group-label-font-size: $kendo-list-item-group-label-font-size-md
+    ),
+    lg: (
+        font-size: var( --kendo-font-size, inherit ),
+        line-height: var( --kendo-line-height, inherit ),
+        cell-padding-x: map-get( $kendo-spacing, 3 ),
+        cell-padding-y: map-get( $kendo-spacing, 3 ) + map-get( $kendo-spacing, thin ),
+        group-label-padding-x: $kendo-list-item-group-label-padding-x-lg,
+        group-label-padding-y: $kendo-list-item-group-label-padding-y-lg,
+        group-label-font-size: $kendo-list-item-group-label-font-size-lg
+    )
+)`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The sizes of the table.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-table-bg</td>
+    <td></td>
+<td>
+
+`var( --kendo-component-bg, initial )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of tables.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-table-text</td>
+    <td></td>
+<td>
+
+`var( --kendo-component-text, initial )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of tables.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-table-border</td>
+    <td></td>
+<td>
+
+`var( --kendo-component-border, initial )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of tables.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-table-header-bg</td>
+    <td></td>
+<td>
+
+`$kendo-table-bg`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of table headers.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-table-header-text</td>
+    <td></td>
+<td>
+
+`get-theme-color-var( neutral-190 )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of table headers.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-table-header-border</td>
+    <td></td>
+<td>
+
+`$kendo-table-border`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of table headers.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-table-sticky-header-text</td>
+    <td></td>
+<td>
+
+`$kendo-list-header-text`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the sticky table header.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-table-sticky-header-bg</td>
+    <td></td>
+<td>
+
+`$kendo-list-header-bg`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the sticky table header.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-table-sticky-header-border</td>
+    <td></td>
+<td>
+
+`$kendo-list-header-border`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the sticky table header.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-table-sticky-header-shadow</td>
+    <td></td>
+<td>
+
+`$kendo-list-header-shadow`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Shadow of the sticky table header.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-table-footer-bg</td>
+    <td></td>
+<td>
+
+`$kendo-table-header-bg`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of table footers.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-table-footer-text</td>
+    <td></td>
+<td>
+
+`$kendo-table-header-text`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of table footers.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-table-footer-border</td>
+    <td></td>
+<td>
+
+`$kendo-table-header-border`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of table footers.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-table-group-row-bg</td>
+    <td></td>
+<td>
+
+`$kendo-table-header-bg`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of group rows in table.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-table-group-row-text</td>
+    <td></td>
+<td>
+
+`$kendo-table-header-text`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of group rows in table.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-table-group-row-border</td>
+    <td></td>
+<td>
+
+`$kendo-table-header-border`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of group rows in table.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-table-group-label-text</td>
+    <td></td>
+<td>
+
+`$kendo-list-bg`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of group label in table.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-table-group-label-bg</td>
+    <td></td>
+<td>
+
+`$kendo-list-text`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of group label in table.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-table-alt-row-bg</td>
+    <td></td>
+<td>
+
+`initial`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of alternating rows in table.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-table-alt-row-text</td>
+    <td></td>
+<td>
+
+`$kendo-table-text`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of alternating rows in table.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-table-alt-row-border</td>
+    <td></td>
+<td>
+
+`$kendo-table-border`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of alternating rows in table.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-table-hover-bg</td>
+    <td></td>
+<td>
+
+`var( --kendo-hover-bg, inherit )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of hovered rows in table.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-table-hover-text</td>
+    <td></td>
+<td>
+
+`var( --kendo-hover-text, inherit )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of hovered rows in table.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-table-hover-border</td>
+    <td></td>
+<td>
+
+`$kendo-table-border`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of hovered rows in table.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-table-focus-bg</td>
+    <td></td>
+<td>
+
+`inherit`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of focused rows in table.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-table-focus-text</td>
+    <td></td>
+<td>
+
+`inherit`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of focused rows in table.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-table-focus-border</td>
+    <td></td>
+<td>
+
+`inherit`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of focused rows in table.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-table-focus-shadow</td>
+    <td></td>
+<td>
+
+`$kendo-list-item-focus-shadow`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Box shadow of focused rows in table.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-table-selected-bg</td>
+    <td></td>
+<td>
+
+`get-theme-color-var( primary-20 )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of selected rows in table.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-table-selected-text</td>
+    <td></td>
+<td>
+
+`$kendo-table-text`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of selected rows in table.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-table-selected-border</td>
+    <td></td>
+<td>
+
+`$kendo-table-border`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of selected rows in table.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-table-selected-hover-bg</td>
+    <td></td>
+<td>
+
+`get-theme-color-var( primary-30 )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Hover background color of selected rows in table.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-table-selected-hover-text</td>
+    <td></td>
+<td>
+
+`$kendo-table-selected-text`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Hover text color of selected rows in table.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-table-selected-hover-border</td>
+    <td></td>
+<td>
+
+`$kendo-table-selected-border`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Hover border color of selected rows in table.</div></div>
+    </td>
+</tr>
+</tbody>
+</table>
+
+## Suggested Links
+
+* [Styling Overview]({% slug themesandstyles %})
+* [Web Font Icons]({% slug icons %})
+* [Preview of the Themed Components](../)
+

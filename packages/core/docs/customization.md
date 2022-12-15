@@ -1,13 +1,13 @@
 ---
 title: Customization
-description: "Refer to the list of the Kendo UI Theme Utils theme variables available for customization."
-slug: variables_kendothemeutils
+description: "Refer to the list of the Kendo UI Theme Core theme variables available for customization."
+slug: variables_kendothemecore
 position: 9
 ---
 
 # Customization
 
-The following table lists the available variables for customizing the Theme Utils theme.
+The following table lists the available variables for customizing the Theme Core theme.
 
 ## Variables
 

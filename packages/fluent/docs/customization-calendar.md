@@ -1,0 +1,1350 @@
+---
+title: Customizing Calendar
+description: "Refer to the list of the Kendo UI Fluent theme variables available for customization."
+slug: variables_kendothemefluent_calendar
+position: 9
+---
+
+# Customizing Calendar
+
+The following table lists the available variables for customization.
+
+<table class="theme-variables">
+    <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
+    </tr>
+</thead>
+<tbody>
+        <tr>
+    <td>$kendo-calendar-border-width</td>
+    <td></td>
+<td>
+
+`1px`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Width of the border around the calendar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-calendar-font-family</td>
+    <td></td>
+<td>
+
+`var( --kendo-font-family, inherit )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font family of the calendar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-calendar-font-size</td>
+    <td></td>
+<td>
+
+`var( --kendo-font-size, inherit )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the calendar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-calendar-line-height</td>
+    <td></td>
+<td>
+
+`var( --kendo-line-height, normal )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of the calendar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-calendar-cell-size</td>
+    <td></td>
+<td>
+
+`28px`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Size of the calendar cell.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-calendar-bg</td>
+    <td></td>
+<td>
+
+`var( --kendo-component-bg, initial)`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the calendar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-calendar-text</td>
+    <td></td>
+<td>
+
+`var( --kendo-component-text, initial)`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the calendar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-calendar-border</td>
+    <td></td>
+<td>
+
+`var( --kendo-component-border, initial)`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the calendar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-calendar-header-padding-x</td>
+    <td></td>
+<td>
+
+`map-get( $kendo-spacing, 3 )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the calendar header.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-calendar-header-padding-y</td>
+    <td></td>
+<td>
+
+`map-get( $kendo-spacing, 3 ) map-get( $kendo-spacing, 1 )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the calendar header.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-calendar-header-border-width</td>
+    <td></td>
+<td>
+
+`1px`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Width of the bottom border of the calendar header.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-calendar-header-bg</td>
+    <td></td>
+<td>
+
+`get-theme-color-var( neutral-10 )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the calendar header.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-calendar-header-text</td>
+    <td></td>
+<td>
+
+`$kendo-calendar-text`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the calendar header.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-calendar-header-border</td>
+    <td></td>
+<td>
+
+`$kendo-calendar-border`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the calendar header.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-calendar-nav-gap</td>
+    <td></td>
+<td>
+
+`0`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Spacing between the navigation buttons of the calendar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-calendar-footer-padding-x</td>
+    <td></td>
+<td>
+
+`map-get( $kendo-spacing, 3 )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the calendar footer.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-calendar-footer-padding-y</td>
+    <td></td>
+<td>
+
+`map-get( $kendo-spacing, 3 )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the calendar footer.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-calendar-cell-font-size</td>
+    <td></td>
+<td>
+
+`var( --kendo-font-size-sm, inherit )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the calendar cell.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-calendar-cell-padding-x</td>
+    <td></td>
+<td>
+
+`map-get( $kendo-spacing, 1 ) + map-get( $kendo-spacing, thin )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the calendar cell.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-calendar-cell-padding-y</td>
+    <td></td>
+<td>
+
+`$kendo-calendar-cell-padding-x`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the calendar cell.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-calendar-cell-line-height</td>
+    <td></td>
+<td>
+
+`$kendo-calendar-line-height`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of the calendar cell.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-calendar-cell-border-radius</td>
+    <td></td>
+<td>
+
+`var( --kendo-border-radius-md, 0 )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border radius of the calendar cell.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-calendar-header-cell-padding-x</td>
+    <td></td>
+<td>
+
+`0`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the calendar header cell.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-calendar-header-cell-padding-y</td>
+    <td></td>
+<td>
+
+`0`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the calendar header cell.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-calendar-header-cell-width</td>
+    <td></td>
+<td>
+
+`$kendo-calendar-cell-size`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Width of the calendar header cell.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-calendar-header-cell-height</td>
+    <td></td>
+<td>
+
+`$kendo-calendar-cell-size`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Height of the calendar header cell.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-calendar-header-cell-font-size</td>
+    <td></td>
+<td>
+
+`var( --kendo-font-size-sm, inherit )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the calendar header cell.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-calendar-header-cell-line-height</td>
+    <td></td>
+<td>
+
+`2`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of the calendar header cell.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-calendar-header-cell-text</td>
+    <td></td>
+<td>
+
+`inherit`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the calendar header cell.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-calendar-caption-padding-x</td>
+    <td></td>
+<td>
+
+`map-get( $kendo-spacing, 3 )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the calendar captions.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-calendar-caption-padding-y</td>
+    <td></td>
+<td>
+
+`map-get( $kendo-spacing, 1 )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the calendar captions.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-calendar-caption-height</td>
+    <td></td>
+<td>
+
+`$kendo-calendar-cell-size`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Height of the calendar captions.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-calendar-caption-font-size</td>
+    <td></td>
+<td>
+
+`var( --kendo-font-size-sm, inherit )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the calendar captions.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-calendar-caption-line-height</td>
+    <td></td>
+<td>
+
+`normal`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of the calendar captions.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-calendar-caption-font-weight</td>
+    <td></td>
+<td>
+
+`bold`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font weight of the calendar captions.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-calendar-caption-color</td>
+    <td></td>
+<td>
+
+`$kendo-subtle-text`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the calendar captions.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-calendar-view-padding-block-end</td>
+    <td></td>
+<td>
+
+`map-get( $kendo-spacing, 3 )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Bottom padding of calendar views.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-calendar-view-gap</td>
+    <td></td>
+<td>
+
+`map-get( $kendo-spacing, 4 )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Spacing between the views in the multiview calendar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-calendar-weekend-bg</td>
+    <td></td>
+<td>
+
+`inherit`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the calendar weekend cell.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-calendar-weekend-text</td>
+    <td></td>
+<td>
+
+`inherit`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the calendar weekend cell.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-calendar-today-text</td>
+    <td></td>
+<td>
+
+`$white`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the calendar today cell.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-calendar-today-bg</td>
+    <td></td>
+<td>
+
+`get-theme-color-var( primary-100 )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the calendar today cell.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-calendar-today-hover-text</td>
+    <td></td>
+<td>
+
+`$white`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the calendar today cell when hovered.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-calendar-today-hover-bg</td>
+    <td></td>
+<td>
+
+`get-theme-color-var( primary-120 )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the calendar today cell when hovered.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-calendar-today-border-radius</td>
+    <td></td>
+<td>
+
+`9999px`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border radius of the calendar today cell.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-calendar-week-number-bg</td>
+    <td></td>
+<td>
+
+`inherit`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the calendar week number cell.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-calendar-week-number-text</td>
+    <td></td>
+<td>
+
+`var( --kendo-subtle-text, inherit )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the calendar week number cell.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-calendar-other-month-bg</td>
+    <td></td>
+<td>
+
+`inherit`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the other months calendar cells.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-calendar-other-month-text</td>
+    <td></td>
+<td>
+
+`var( --kendo-subtle-text, inherit )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the other months calendar cells.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-calendar-cell-bg</td>
+    <td></td>
+<td>
+
+`inherit`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the calendar cells.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-calendar-cell-text</td>
+    <td></td>
+<td>
+
+`inherit`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the calendar cells.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-calendar-cell-hover-bg</td>
+    <td></td>
+<td>
+
+`var( --kendo-hover-bg, inherit )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the calendar cells when hovered.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-calendar-cell-hover-text</td>
+    <td></td>
+<td>
+
+`var( --kendo-hover-text, inherit )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the calendar cells when hovered.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-calendar-cell-selected-bg</td>
+    <td></td>
+<td>
+
+`var( --kendo-selected-bg, inherit )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the selected calendar cell.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-calendar-cell-selected-text</td>
+    <td></td>
+<td>
+
+`var( --kendo-selected-text, inherit )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the selected calendar cell.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-calendar-cell-selected-border</td>
+    <td></td>
+<td>
+
+`var( --kendo-selected-border, inherit )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the selected calendar cell.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-calendar-cell-selected-shadow</td>
+    <td></td>
+<td>
+
+`inset 0 0 0 1px $kendo-calendar-cell-selected-border`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Shadow of the selected calendar cell.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-calendar-cell-selected-hover-bg</td>
+    <td></td>
+<td>
+
+`var( --kendo-selected-hover-bg, inherit )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the selected calendar cell when hovered.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-calendar-cell-selected-hover-text</td>
+    <td></td>
+<td>
+
+`var( --kendo-selected-hover-text, inherit )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the selected calendar cell when hovered.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-calendar-cell-focus-shadow</td>
+    <td></td>
+<td>
+
+`inset 0 0 0 1px get-theme-color-var( neutral-130)`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Shadow of the selected calendar cell when focused.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-calendar-cell-selected-focus-shadow</td>
+    <td></td>
+<td>
+
+`$kendo-calendar-cell-focus-shadow`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Shadow of the selected calendar cell when selected and focused.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-calendar-navigation-width</td>
+    <td></td>
+<td>
+
+`5em`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Width of the navigation in the infinite calendar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-calendar-navigation-item-height</td>
+    <td></td>
+<td>
+
+`2em`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Height of the navigation items in the infinite calendar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-calendar-navigation-bg</td>
+    <td></td>
+<td>
+
+`get-theme-color-var( neutral-10 )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the navigation in the infinite calendar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-calendar-navigation-text</td>
+    <td></td>
+<td>
+
+`$kendo-calendar-header-text`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the navigation in the infinite calendar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-calendar-navigation-border</td>
+    <td></td>
+<td>
+
+`$kendo-calendar-header-border`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the navigation in the infinite calendar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-infinite-calendar-header-padding-x</td>
+    <td></td>
+<td>
+
+`map-get( $kendo-spacing, 3 )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the navigation in the infinite calendar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-infinite-calendar-header-padding-y</td>
+    <td></td>
+<td>
+
+`map-get( $kendo-spacing, 3 ) map-get( $kendo-spacing, 1 )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the navigation in the infinite calendar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-infinite-calendar-view-padding-x</td>
+    <td></td>
+<td>
+
+`map-get( $kendo-spacing, 3 )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the infinite calendar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-infinite-calendar-view-padding-y</td>
+    <td></td>
+<td>
+
+`0px`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the infinite calendar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-calendar-range-bg</td>
+    <td></td>
+<td>
+
+`get-theme-color-var( neutral-30 )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the range selection in the calendar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-calendar-range-text</td>
+    <td></td>
+<td>
+
+`inherit`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the range selection in the calendar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-calendar-range-border</td>
+    <td></td>
+<td>
+
+`get-theme-color-var( neutral-130 )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the range selection in the calendar.</div></div>
+    </td>
+</tr>
+</tbody>
+</table>
+
+## Suggested Links
+
+* [Styling Overview]({% slug themesandstyles %})
+* [Web Font Icons]({% slug icons %})
+* [Preview of the Themed Components](../)
+

@@ -11901,12 +11901,6 @@ The following table lists the available variables for customizing the Material t
 
 ## Mixins
 
-### `exports`
-Outputs a module once, no matter how many times it is included.
-
-
-#### Parameters
-- name : `String` - The name of the exported module.
 
 
 
