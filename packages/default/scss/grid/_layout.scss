@@ -385,6 +385,7 @@
         display: flex;
         align-items: center;
         position: relative;
+        flex-wrap: wrap;
 
         &::before {
             content: "";
@@ -392,8 +393,21 @@
             display: inline-block;
             vertical-align: middle;
         }
-    }
 
+        .k-chip-list {
+            flex-grow: 0;
+            display: contents;
+        }
+
+        > .k-grouping-drop-container {
+            flex-grow: 1;
+            padding-block: $kendo-grid-grouping-header-padding-y;
+            margin-block: -$kendo-grid-grouping-header-padding-y;
+            display: inline-flex;
+            align-self: stretch;
+            align-items: center;
+        }
+    }
 
     .k-grouping-dropclue {
         width: ($kendo-grid-group-dropclue-size * 2);
@@ -876,6 +890,11 @@
 
             .k-grouping-header {
                 padding: $_grouping-header-padding-y $_grouping-header-padding-x;
+                gap: $_grouping-header-padding-y;
+
+                &::before {
+                    margin-inline-start: -$_grouping-header-padding-y;
+                }
             }
 
             .k-grid-header {
