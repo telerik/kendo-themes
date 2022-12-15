@@ -15,7 +15,9 @@ root.render(
             <h3>Base</h3>
             <div className="k-grid k-grid-md telerik-blazor">
                 <div className="k-grouping-header">
-                    Drag a column header and drop it here to group by that column
+                    <div className="k-grouping-drop-container">
+                        Drag a column header and drop it here to group by that column
+                    </div>
                 </div>
                 <div className="k-grid-header">
                     <div className="k-grid-header-wrap">
@@ -121,6 +123,7 @@ root.render(
                     <ChipList>
                         <Chip actions={ <ChipAction type="remove"/> }>Id</Chip>
                     </ChipList>
+                    <div className="k-grouping-drop-container"></div>
                 </div>
                 <div className="k-grid-header">
                     <div className="k-grid-header-wrap">
@@ -248,6 +251,7 @@ root.render(
                         <Chip actions={ <ChipAction type="remove"/> }>Id</Chip>
                         <Chip actions={ <ChipAction type="remove"/> }>Name</Chip>
                     </ChipList>
+                    <div className="k-grouping-drop-container"></div>
                 </div>
                 <div className="k-grid-header">
                     <div className="k-grid-header-wrap">
