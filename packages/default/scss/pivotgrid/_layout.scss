@@ -650,58 +650,6 @@
                 margin: 0;
             }
         }
-        .k-ie & .k-column-fields {
-            > * {
-                margin: 2px;
-            }
-        }
-    }
-
-}
-
-
-
-@include exports("pivotgrid/layout/ie11-fixes/legacy") {
-
-    // Pivotgrid is stretched beyond container in IE 11
-    // see https://github.com/telerik/kendo-theme-default/issues/647
-    // see https://github.com/telerik/kendo-themes/issues/1880
-    .k-ie11 {
-        .k-pivot .k-grid {
-            display: block;
-        }
-        .k-pivotgrid {
-            display: flex;
-            flex-direction: column;
-
-            & > div {
-                display: flex;
-                flex-direction: row;
-                overflow: hidden;
-            }
-
-            .k-pivotgrid-empty-cell,
-            .k-pivotgrid-row-headers {
-                flex: 1 1 30%;
-            }
-
-            .k-pivotgrid-column-headers,
-            .k-pivotgrid-values {
-                flex: 1 1 70%;
-            }
-        }
-        .k-pivotgrid-column-headers {
-            padding-right: $default-scrollbar-width;
-            padding-left: 0;
-        }
-
-        [dir = "rtl"],
-        .k-rtl {
-            .k-pivotgrid-column-headers {
-                padding-right: 0;
-                padding-left: $default-scrollbar-width;
-            }
-        }
     }
 
 }

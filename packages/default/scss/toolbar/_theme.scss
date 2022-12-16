@@ -3,24 +3,25 @@
     // Theme
     .k-toolbar {
         @include fill(
-            $toolbar-text,
-            $toolbar-bg,
-            $toolbar-border,
-            $toolbar-gradient
+            $kendo-toolbar-text,
+            $kendo-toolbar-bg,
+            $kendo-toolbar-border,
+            $kendo-toolbar-gradient
         );
-        @include box-shadow( $toolbar-shadow );
+        @include box-shadow( $kendo-toolbar-shadow );
 
 
         // Separator
-        .k-separator {
-            border-color: $toolbar-separator-border;
+        .k-separator,
+        .k-toolbar-separator {
+            border-color: $kendo-toolbar-separator-border;
         }
 
 
         // Template item
         .k-toolbar-item:focus,
         .k-toolbar-item.k-focus {
-            @include box-shadow( $toolbar-item-shadow );
+            @include box-shadow( $kendo-toolbar-item-shadow );
         }
 
 
@@ -29,6 +30,32 @@
 
     }
 
+}
+
+
+
+
+@include exports("floating-toolbar/theme") {
+
+    // sass-lint:disable-block class-name-format
+    .k-floating-toolbar,
+    .editorToolbarWindow.k-window-content {
+        @include fill(
+            $kendo-toolbar-text,
+            $kendo-toolbar-bg,
+            $kendo-toolbar-border,
+            $kendo-toolbar-gradient
+        );
+    }
+
+}
+
+
+
+
+// Remove once the Overflow Popup uses
+// the proper Menu rendering in all suites.
+@include exports("toolbar/theme/legacy") {
 
     // Overflow container
     .k-overflow-container {
@@ -68,24 +95,6 @@
             }
         }
 
-    }
-
-}
-
-
-
-
-@include exports("floating-toolbar/theme") {
-
-    // sass-lint:disable-block class-name-format
-    .k-floating-toolbar,
-    .editorToolbarWindow.k-window-content {
-        @include fill(
-            $toolbar-text,
-            $toolbar-bg,
-            $toolbar-border,
-            $toolbar-gradient
-        );
     }
 
 }

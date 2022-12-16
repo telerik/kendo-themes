@@ -1,0 +1,45 @@
+name: CI Develop
+
+on:
+  push:
+    branches:
+      - 'develop'
+
+concurrency:
+  group: ci-develop-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+
+  # Cache should be primed only from develop branch
+  prime-cache:
+    name: Prime cache
+    uses: ./.github/workflows/_prime-cache.yml
+
+
+  lint-scripts:
+    name: Lint scripts
+    uses: ./.github/workflows/_lint-scripts.yml
+    needs: [ prime-cache ]
+
+
+  lint-styles:
+    name: Lint styles
+    uses: ./.github/workflows/_lint-styles.yml
+    needs: [ prime-cache ]
+
+
+  ci-develop:
+    # The name of the last job is used for the branch protection status check
+    name: CI Develop
+    runs-on: ubuntu-latest
+    needs: [ lint-scripts, lint-styles ]
+
+    steps:
+
+      # IMPORTANT NOTE (31.10.2020)
+      #
+      # You can not set a workflow to be status check. The job is. Hence the trickery...
+
+      - name: Done
+        run: echo "Done!"

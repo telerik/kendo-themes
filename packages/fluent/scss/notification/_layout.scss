@@ -37,7 +37,10 @@
         line-height: var( --kendo-notification-line-height, #{$kendo-notification-line-height} );
         cursor: default;
         position: relative;
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: var( --kendo-notification-icon-spacing, #{$kendo-notification-icon-spacing} );
         -webkit-touch-callout: none;
         -webkit-tap-highlight-color: $rgba-transparent;
 
@@ -46,29 +49,26 @@
         *::after {
             box-sizing: border-box;
         }
-    }
 
-    .k-notification-wrap {
-        display: flex;
-        flex-flow: row nowrap;
-
-        >.k-icon {
-            margin-inline-end: var( --kendo-notification-icon-spacing, #{$kendo-notification-icon-spacing} );
-            align-self: center;
-            flex: none;
-        }
-
-        >.k-i-close,
-        >.k-i-x {
-            margin-inline-end: 0;
-            margin-inline-start: var( --kendo-notification-close-icon-spacing, #{$kendo-notification-close-icon-spacing} );
-            flex: none;
-            cursor: pointer;
-        }
-
-        >.k-notification-content {
+        > .k-notification-content {
             flex: 1 1 auto;
         }
+    }
+
+    .k-notification-actions {
+        flex: none;
+        display: flex;
+        gap: var( --kendo-notification-icon-spacing, #{$kendo-notification-icon-spacing} );
+        flex-flow: row nowrap;
+        align-items: center;
+        cursor: pointer;
+    }
+    .k-notification-action {
+        flex: none;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        align-self: center;
     }
 
 }

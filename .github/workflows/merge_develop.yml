@@ -1,16 +1,11 @@
 name: Merge develop to master
 
-defaults:
-  run:
-    shell: bash
-
-on: [workflow_dispatch]
+on:
+  workflow_dispatch:
 
 jobs:
 
   merge:
-    name: Merge
-
     runs-on: ubuntu-latest
 
     steps:

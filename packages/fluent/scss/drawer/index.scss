@@ -18,7 +18,7 @@ $_kendo-module-meta: (
 @include module.register( $_kendo-module-meta... );
 
 // Expose
-@mixin styles() {
+@mixin drawer-styles() {
     @include module.render( "drawer" ) {
         @include kendo-drawer--layout();
         @include kendo-drawer--theme();

@@ -43,9 +43,6 @@
 
             .k-enable-text-select,
             &.k-enable-text-select {
-                -webkit-user-select: text;
-                -moz-user-select: text;
-                -ms-user-select: text;
                 user-select: text;
                 cursor: text;
             }
@@ -168,14 +165,6 @@
     // Alias
     .k-search-container {
         @extend .k-search-panel !optional;
-    }
-
-
-    // IE
-    .k-ie .k-pdf-viewer-search-dialog {
-        .k-search-container > * + * {
-            margin-left: $pdf-viewer-search-dialog-spacing;
-        }
     }
 
 }

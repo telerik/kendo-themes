@@ -77,9 +77,6 @@
         justify-content: center;
         flex: none;
     }
-    .k-ie .k-chip-icon {
-        margin-right: $kendo-chip-spacing;
-    }
 
 
     // Actions
@@ -108,10 +105,6 @@
         justify-content: center;
         flex: none;
     }
-    .k-ie .k-remove-icon {
-        margin-right: 0;
-        margin-left: $kendo-chip-spacing;
-    }
 
 
     // Chip list
@@ -122,24 +115,6 @@
         align-items: center;
         position: relative;
     }
-
-
-    // RTL
-    .k-ie .k-chip.k-rtl,
-    .k-ie .k-rtl .k-chip,
-    .k-ie .k-chip[dir="rtl"] {
-        .k-chip-icon {
-            margin-right: 0;
-            margin-left: $kendo-chip-spacing;
-        }
-
-        .k-remove-icon {
-            margin-left: 0;
-            margin-right: $kendo-chip-spacing;
-        }
-    }
-
-
 
     // Sizes
     @each $size, $size-props in $kendo-chip-sizes {

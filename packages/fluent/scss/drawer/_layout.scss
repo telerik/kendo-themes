@@ -130,6 +130,7 @@
         flex-direction: column;
         align-items: stretch;
     }
+
     .k-drawer-item {
         padding-inline: var( --kendo-drawer-item-padding-x, #{$kendo-drawer-item-padding-x} );
         padding-block: var( --kendo-drawer-item-padding-y, #{$kendo-drawer-item-padding-y} );
@@ -141,6 +142,7 @@
         display: flex;
         align-items: center;
         flex-flow: row nowrap;
+        gap: var( --kendo-drawer-item-padding-x, #{$kendo-drawer-item-padding-x} );
         cursor: pointer;
 
         &::before {
@@ -178,11 +180,10 @@
             display: flex;
             flex-flow: row nowrap;
             flex: 1 0 auto;
+            gap: var( --kendo-drawer-item-padding-x, #{$kendo-drawer-item-padding-x} );
         }
 
         .k-icon {
-            margin-inline: var( --kendo-drawer-item-padding-x, #{$kendo-drawer-item-padding-x} );
-            margin-block: 0;
             height: auto;
             font-size: var( --kendo-drawer-icon-size, #{$kendo-drawer-icon-size} );
             line-height: var( --kendo-drawer-item-line-height, #{$kendo-drawer-item-line-height} );
@@ -194,8 +195,6 @@
         }
 
         .k-item-text {
-            padding-inline: var( --kendo-drawer-item-padding-x, #{$kendo-drawer-item-padding-x} );
-            padding-block: 0;
             display: inline-block;
             white-space: nowrap;
             overflow: hidden;
@@ -215,12 +214,13 @@
         .k-drawer-toggle {
             margin-inline-start: auto;
             cursor: pointer;
+            display: flex;
         }
 
         // Hierarchy items
         @for $i from 1 through $kendo-drawer-item-level-count {
             &.k-level-#{$i} {
-                padding-inline-start: calc( var( --kendo-drawer-item-level-padding-x, #{$kendo-drawer-item-level-padding-x} ) * $i );
+                padding-inline-start: calc( ( $i + 1 ) * var( --kendo-drawer-item-level-padding-x, #{$kendo-drawer-item-level-padding-x} ) );
             }
         }
     }

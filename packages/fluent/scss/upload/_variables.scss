@@ -84,9 +84,6 @@ $kendo-upload-progress-thickness: 2px !default;
 /// Background color of the upload progress bar.
 /// @group upload
 $kendo-upload-progress-bg: get-theme-color-var( primary-100 ) !default;
-/// Text color of the upload progress bar.
-/// @group upload
-$kendo-upload-progress-text: $kendo-upload-text !default;
 
 /// Success background color of the upload.
 /// @group upload

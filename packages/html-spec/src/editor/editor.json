@@ -1,0 +1,65 @@
+{
+    "$schema": "../../schemas/component.schema.json",
+    "title": "Kendo Editor HTML Spec",
+    "component": "editor",
+    "selector": [
+        ".k-editor"
+    ],
+    "states": [
+        {
+            "name": "resizable",
+            "selector": [
+                ".k-editor-resizable"
+            ]
+        },
+        {
+            "name": "readonly",
+            "selector": [
+                ".k-readonly"
+            ]
+        }
+    ],
+    "children": [
+        {
+            "name": "editor-toolbar",
+            "$ref": "toolbar",
+            "selector": [
+                ".k-editor-toolbar"
+            ]
+        },
+        {
+            "name": "editor-content",
+            "selector": [
+                ".k-editor-content"
+            ],
+            "states": [
+                {
+                    "name": "focus",
+                    "selector": [
+                        ".k-focus"
+                    ]
+                }
+            ],
+            "children": [
+                {
+                    "name": "text-selected",
+                    "selector": [
+                        ".k-text-selected"
+                    ]
+                },
+                {
+                    "name": "text-highlighted",
+                    "selector": [
+                        ".k-text-highlighted"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "editor-resize-handle",
+            "selector": [
+                ".k-editor-resize-handle"
+            ]
+        }
+    ]
+}

@@ -11,45 +11,45 @@
     <div id="test-area" class="k-d-grid">
         <span>LTR</span>
         <section>
-            <div class="k-pager k-widget">
-                <a class="k-link k-pager-nav k-pager-first k-disabled">
-                    <span class="k-icon k-i-caret-alt-to-left"></span>
-                </a>
-                <a class="k-link k-pager-nav k-focus">
-                    <span class="k-icon k-i-caret-alt-left"></span>
-                </a>
+            <div class="k-pager k-pager-md">
                 <div class="k-pager-numbers-wrap">
-                    <select class="k-picker k-dropdown-list k-dropdown">
+                    <button class="k-pager-nav k-pager-first k-button k-button-md k-button-flat k-button-flat-base k-icon-button k-disabled">
+                        <span class="k-button-icon k-icon k-i-caret-alt-to-left"></span>
+                    </button>
+                    <button class="k-pager-nav k-button k-button-md k-button-flat k-button-flat-base k-icon-button k-focus">
+                        <span class="k-button-icon k-icon k-i-caret-alt-left"></span>
+                    </button>
+                    <select class="k-picker k-dropdown-list k-dropdown k-rounded-md k-picker-md">
                         <option>1</option>
                     </select>
-                    <ul class="k-pager-numbers">
-                        <li>
-                            <span class="k-link">1</span>
-                        </li>
-                        <li>
-                            <a class="k-link k-hover">2</a>
-                        </li>
-                        <li>
-                            <span class="k-link k-focus">3</span>
-                        </li>
-                        <li>
-                            <a class="k-link k-selected">4</a>
-                        </li>
-                        <li>
-                            <a class="k-link k-hover k-focus">5</a>
-                        </li>
-                        <li>
-                            <a class="k-link k-selected k-focus">6</a>
-                        </li>
-                    </ul>
+                    <div class="k-pager-numbers">
+                        <button class="k-button k-button-md k-button-flat k-button-flat-primary">
+                            <span class="k-button-text">1</span>
+                        </button>
+                        <button class="k-button k-button-md k-button-flat k-button-flat-primary k-hover">
+                            <span class="k-button-text">2</span>
+                        </button>
+                        <button class="k-button k-button-md k-button-flat k-button-flat-primary k-focus">
+                            <span class="k-button-text">3</span>
+                        </button>
+                        <button class="k-button k-button-md k-button-flat k-button-flat-primary k-selected">
+                            <span class="k-button-text">4</span>
+                        </button>
+                        <button class="k-button k-button-md k-button-flat k-button-flat-primary k-hover k-focus">
+                            <span class="k-button-text">5</span>
+                        </button>
+                        <button class="k-button k-button-md k-button-flat k-button-flat-primary k-focus k-selected">
+                            <span class="k-button-text">6</span>
+                        </button>
+                    </div>
+                    <button class="k-pager-nav k-button k-button-md k-button-flat k-button-flat-base k-icon-button k-hover">
+                        <span class="k-button-icon k-icon k-i-caret-alt-right"></span>
+                    </button>
+                    <button class="k-pager-nav k-pager-last k-button k-button-md k-button-flat k-button-flat-base k-icon-button">
+                        <span class="k-button-icon k-icon k-i-caret-alt-to-right"></span>
+                    </button>
                 </div>
-                <a class="k-link k-pager-nav k-hover">
-                    <span class="k-icon k-i-caret-alt-right"></span>
-                </a>
-                <a class="k-link k-pager-nav k-pager-last">
-                    <span class="k-icon k-i-caret-alt-to-right"></span>
-                </a>
-                <span class="k-pager-sizes k-label">
+                <span class="k-pager-sizes">
                     <span class="k-dropdown k-picker k-picker-md k-picker-solid k-rounded-md">
                         <span class="k-input-inner">
                             <span class="k-input-value-text">20</span>
@@ -59,30 +59,35 @@
                         </button>
                     </span>items per page
                 </span>
-                <a class="k-pager-refresh k-link">
-                    <span class="k-icon k-i-arrow-rotate-cw"></span>
-                </a>
-                <span class="k-pager-info k-label">1 - 20 of 91 items</span>
+                <button class="k-pager-refresh k-button k-button-md k-button-flat k-button-flat-base k-icon-button">
+                    <span class="k-button-icon k-icon k-i-arrow-rotate-cw"></span>
+                </button>
+                <span class="k-pager-info">1 - 20 of 91 items</span>
             </div>
         </section>
         <section>
-            <div class="k-pager k-widget k-focus">
-                <a class="k-link k-pager-nav k-pager-first k-disabled">
-                    <span class="k-icon k-i-caret-alt-to-left"></span>
-                </a>
-                <a class="k-link k-pager-nav k-disabled">
-                    <span class="k-icon k-i-caret-alt-left"></span>
-                </a>
-                <span class="k-pager-input k-label">Page<span class="k-textbox k-input k-input-md k-input-solid k-rounded-md">
-                        <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="999">
-                    </span>of 8</span>
-                <a class="k-link k-pager-nav">
-                    <span class="k-icon k-i-caret-alt-right"></span>
-                </a>
-                <a class="k-link k-pager-nav k-pager-last">
-                    <span class="k-icon k-i-caret-alt-to-right"></span>
-                </a>
-                <span class="k-pager-sizes k-label">
+            <div class="k-pager k-pager-md k-focus">
+                <div class="k-pager-numbers-wrap">
+                    <button class="k-pager-nav k-pager-first k-button k-button-md k-button-flat k-button-flat-base k-icon-button k-disabled">
+                        <span class="k-button-icon k-icon k-i-caret-alt-to-left"></span>
+                    </button>
+                    <button class="k-pager-nav k-button k-button-md k-button-flat k-button-flat-base k-icon-button k-focus">
+                        <span class="k-button-icon k-icon k-i-caret-alt-left"></span>
+                    </button>
+                    <select class="k-picker k-dropdown-list k-dropdown k-rounded-md k-picker-md">
+                        <option>1</option>
+                    </select>
+                    <span class="k-pager-input">Page<span class="k-textbox k-input k-input-md k-input-solid k-rounded-md">
+                            <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="999">
+                        </span>of 8</span>
+                    <button class="k-pager-nav k-button k-button-md k-button-flat k-button-flat-base k-icon-button k-hover">
+                        <span class="k-button-icon k-icon k-i-caret-alt-right"></span>
+                    </button>
+                    <button class="k-pager-nav k-pager-last k-button k-button-md k-button-flat k-button-flat-base k-icon-button">
+                        <span class="k-button-icon k-icon k-i-caret-alt-to-right"></span>
+                    </button>
+                </div>
+                <span class="k-pager-sizes">
                     <span class="k-dropdown k-picker k-picker-md k-picker-solid k-rounded-md">
                         <span class="k-input-inner">
                             <span class="k-input-value-text">20</span>
@@ -92,49 +97,52 @@
                         </button>
                     </span>items per page
                 </span>
-                <a class="k-pager-refresh k-link">
-                    <span class="k-icon k-i-arrow-rotate-cw"></span>
-                </a>
-                <span class="k-pager-info k-label">1 - 20 of 91 items</span>
+                <button class="k-pager-refresh k-button k-button-md k-button-flat k-button-flat-base k-icon-button">
+                    <span class="k-button-icon k-icon k-i-arrow-rotate-cw"></span>
+                </button>
+                <span class="k-pager-info">1 - 20 of 91 items</span>
             </div>
         </section>
         <section>
-            <div class="k-pager k-widget">
-                <a class="k-link k-pager-nav k-pager-first k-disabled">
-                    <span class="k-icon k-i-caret-alt-to-left"></span>
-                </a>
-                <a class="k-link k-pager-nav k-disabled">
-                    <span class="k-icon k-i-caret-alt-left"></span>
-                </a>
+            <div class="k-pager k-pager-md k-disabled">
                 <div class="k-pager-numbers-wrap">
-                    <select class="k-picker k-dropdown-list k-dropdown">
+                    <button class="k-pager-nav k-pager-first k-button k-button-md k-button-flat k-button-flat-base k-icon-button k-disabled">
+                        <span class="k-button-icon k-icon k-i-caret-alt-to-left"></span>
+                    </button>
+                    <button class="k-pager-nav k-button k-button-md k-button-flat k-button-flat-base k-icon-button k-focus">
+                        <span class="k-button-icon k-icon k-i-caret-alt-left"></span>
+                    </button>
+                    <select class="k-picker k-dropdown-list k-dropdown k-rounded-md k-picker-md">
                         <option>1</option>
                     </select>
-                    <ul class="k-pager-numbers">
-                        <li>
-                            <a class="k-link">1</a>
-                        </li>
-                        <li>
-                            <a class="k-link">2</a>
-                        </li>
-                        <li>
-                            <a class="k-link">3</a>
-                        </li>
-                        <li>
-                            <a class="k-link">4</a>
-                        </li>
-                        <li>
-                            <a class="k-link">5</a>
-                        </li>
-                    </ul>
+                    <div class="k-pager-numbers">
+                        <button class="k-button k-button-md k-button-flat k-button-flat-primary">
+                            <span class="k-button-text">1</span>
+                        </button>
+                        <button class="k-button k-button-md k-button-flat k-button-flat-primary k-hover">
+                            <span class="k-button-text">2</span>
+                        </button>
+                        <button class="k-button k-button-md k-button-flat k-button-flat-primary k-focus">
+                            <span class="k-button-text">3</span>
+                        </button>
+                        <button class="k-button k-button-md k-button-flat k-button-flat-primary k-selected">
+                            <span class="k-button-text">4</span>
+                        </button>
+                        <button class="k-button k-button-md k-button-flat k-button-flat-primary k-hover k-focus">
+                            <span class="k-button-text">5</span>
+                        </button>
+                        <button class="k-button k-button-md k-button-flat k-button-flat-primary k-focus k-selected">
+                            <span class="k-button-text">6</span>
+                        </button>
+                    </div>
+                    <button class="k-pager-nav k-button k-button-md k-button-flat k-button-flat-base k-icon-button k-hover">
+                        <span class="k-button-icon k-icon k-i-caret-alt-right"></span>
+                    </button>
+                    <button class="k-pager-nav k-pager-last k-button k-button-md k-button-flat k-button-flat-base k-icon-button">
+                        <span class="k-button-icon k-icon k-i-caret-alt-to-right"></span>
+                    </button>
                 </div>
-                <a class="k-link k-pager-nav">
-                    <span class="k-icon k-i-caret-alt-right"></span>
-                </a>
-                <a class="k-link k-pager-nav k-pager-last">
-                    <span class="k-icon k-i-caret-alt-to-right"></span>
-                </a>
-                <span class="k-pager-sizes k-label">
+                <span class="k-pager-sizes">
                     <span class="k-dropdown k-picker k-picker-md k-picker-solid k-rounded-md">
                         <span class="k-input-inner">
                             <span class="k-input-value-text">20</span>
@@ -144,50 +152,53 @@
                         </button>
                     </span>items per page
                 </span>
-                <a class="k-pager-refresh k-link">
-                    <span class="k-icon k-i-arrow-rotate-cw"></span>
-                </a>
-                <span class="k-pager-info k-label">1 - 20 of 91 items</span>
+                <button class="k-pager-refresh k-button k-button-md k-button-flat k-button-flat-base k-icon-button">
+                    <span class="k-button-icon k-icon k-i-arrow-rotate-cw"></span>
+                </button>
+                <span class="k-pager-info">1 - 20 of 91 items</span>
             </div>
         </section>
         <span>RTL</span>
         <section>
-            <div class="k-pager k-widget" dir="rtl">
-                <a class="k-link k-pager-nav k-pager-first k-disabled">
-                    <span class="k-icon k-i-caret-alt-to-left"></span>
-                </a>
-                <a class="k-link k-pager-nav k-disabled">
-                    <span class="k-icon k-i-caret-alt-left"></span>
-                </a>
+            <div dir="rtl" class="k-pager k-pager-md">
                 <div class="k-pager-numbers-wrap">
-                    <select class="k-picker k-dropdown-list k-dropdown">
+                    <button class="k-pager-nav k-pager-first k-button k-button-md k-button-flat k-button-flat-base k-icon-button k-disabled">
+                        <span class="k-button-icon k-icon k-i-caret-alt-to-left"></span>
+                    </button>
+                    <button class="k-pager-nav k-button k-button-md k-button-flat k-button-flat-base k-icon-button k-focus">
+                        <span class="k-button-icon k-icon k-i-caret-alt-left"></span>
+                    </button>
+                    <select class="k-picker k-dropdown-list k-dropdown k-rounded-md k-picker-md">
                         <option>1</option>
                     </select>
-                    <ul class="k-pager-numbers">
-                        <li>
-                            <a class="k-link">1</a>
-                        </li>
-                        <li>
-                            <a class="k-link">2</a>
-                        </li>
-                        <li>
-                            <a class="k-link">3</a>
-                        </li>
-                        <li>
-                            <a class="k-link">4</a>
-                        </li>
-                        <li>
-                            <a class="k-link">5</a>
-                        </li>
-                    </ul>
+                    <div class="k-pager-numbers">
+                        <button class="k-button k-button-md k-button-flat k-button-flat-primary">
+                            <span class="k-button-text">1</span>
+                        </button>
+                        <button class="k-button k-button-md k-button-flat k-button-flat-primary k-hover">
+                            <span class="k-button-text">2</span>
+                        </button>
+                        <button class="k-button k-button-md k-button-flat k-button-flat-primary k-focus">
+                            <span class="k-button-text">3</span>
+                        </button>
+                        <button class="k-button k-button-md k-button-flat k-button-flat-primary k-selected">
+                            <span class="k-button-text">4</span>
+                        </button>
+                        <button class="k-button k-button-md k-button-flat k-button-flat-primary k-hover k-focus">
+                            <span class="k-button-text">5</span>
+                        </button>
+                        <button class="k-button k-button-md k-button-flat k-button-flat-primary k-focus k-selected">
+                            <span class="k-button-text">6</span>
+                        </button>
+                    </div>
+                    <button class="k-pager-nav k-button k-button-md k-button-flat k-button-flat-base k-icon-button k-hover">
+                        <span class="k-button-icon k-icon k-i-caret-alt-right"></span>
+                    </button>
+                    <button class="k-pager-nav k-pager-last k-button k-button-md k-button-flat k-button-flat-base k-icon-button">
+                        <span class="k-button-icon k-icon k-i-caret-alt-to-right"></span>
+                    </button>
                 </div>
-                <a class="k-link k-pager-nav">
-                    <span class="k-icon k-i-caret-alt-right"></span>
-                </a>
-                <a class="k-link k-pager-nav k-pager-last">
-                    <span class="k-icon k-i-caret-alt-to-right"></span>
-                </a>
-                <span class="k-pager-sizes k-label">
+                <span class="k-pager-sizes">
                     <span class="k-dropdown k-picker k-picker-md k-picker-solid k-rounded-md">
                         <span class="k-input-inner">
                             <span class="k-input-value-text">20</span>
@@ -197,30 +208,35 @@
                         </button>
                     </span>items per page
                 </span>
-                <a class="k-pager-refresh k-link">
-                    <span class="k-icon k-i-arrow-rotate-cw"></span>
-                </a>
-                <span class="k-pager-info k-label">1 - 20 of 91 items</span>
+                <button class="k-pager-refresh k-button k-button-md k-button-flat k-button-flat-base k-icon-button">
+                    <span class="k-button-icon k-icon k-i-arrow-rotate-cw"></span>
+                </button>
+                <span class="k-pager-info">1 - 20 of 91 items</span>
             </div>
         </section>
         <section>
-            <div class="k-pager k-widget" dir="rtl">
-                <a class="k-link k-pager-nav k-pager-first k-disabled">
-                    <span class="k-icon k-i-caret-alt-to-left"></span>
-                </a>
-                <a class="k-link k-pager-nav k-disabled">
-                    <span class="k-icon k-i-caret-alt-left"></span>
-                </a>
-                <span class="k-pager-input k-label">Page<span class="k-textbox k-input k-input-md k-input-solid k-rounded-md">
-                        <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="999">
-                    </span>of 8</span>
-                <a class="k-link k-pager-nav">
-                    <span class="k-icon k-i-caret-alt-right"></span>
-                </a>
-                <a class="k-link k-pager-nav k-pager-last">
-                    <span class="k-icon k-i-caret-alt-to-right"></span>
-                </a>
-                <span class="k-pager-sizes k-label">
+            <div dir="rtl" class="k-pager k-pager-md k-focus">
+                <div class="k-pager-numbers-wrap">
+                    <button class="k-pager-nav k-pager-first k-button k-button-md k-button-flat k-button-flat-base k-icon-button k-disabled">
+                        <span class="k-button-icon k-icon k-i-caret-alt-to-left"></span>
+                    </button>
+                    <button class="k-pager-nav k-button k-button-md k-button-flat k-button-flat-base k-icon-button k-focus">
+                        <span class="k-button-icon k-icon k-i-caret-alt-left"></span>
+                    </button>
+                    <select class="k-picker k-dropdown-list k-dropdown k-rounded-md k-picker-md">
+                        <option>1</option>
+                    </select>
+                    <span class="k-pager-input">Page<span class="k-textbox k-input k-input-md k-input-solid k-rounded-md">
+                            <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="999">
+                        </span>of 8</span>
+                    <button class="k-pager-nav k-button k-button-md k-button-flat k-button-flat-base k-icon-button k-hover">
+                        <span class="k-button-icon k-icon k-i-caret-alt-right"></span>
+                    </button>
+                    <button class="k-pager-nav k-pager-last k-button k-button-md k-button-flat k-button-flat-base k-icon-button">
+                        <span class="k-button-icon k-icon k-i-caret-alt-to-right"></span>
+                    </button>
+                </div>
+                <span class="k-pager-sizes">
                     <span class="k-dropdown k-picker k-picker-md k-picker-solid k-rounded-md">
                         <span class="k-input-inner">
                             <span class="k-input-value-text">20</span>
@@ -230,49 +246,52 @@
                         </button>
                     </span>items per page
                 </span>
-                <a class="k-pager-refresh k-link">
-                    <span class="k-icon k-i-arrow-rotate-cw"></span>
-                </a>
-                <span class="k-pager-info k-label">1 - 20 of 91 items</span>
+                <button class="k-pager-refresh k-button k-button-md k-button-flat k-button-flat-base k-icon-button">
+                    <span class="k-button-icon k-icon k-i-arrow-rotate-cw"></span>
+                </button>
+                <span class="k-pager-info">1 - 20 of 91 items</span>
             </div>
         </section>
         <section>
-            <div class="k-pager k-widget" dir="rtl">
-                <a class="k-link k-pager-nav k-pager-first k-disabled">
-                    <span class="k-icon k-i-caret-alt-to-left"></span>
-                </a>
-                <a class="k-link k-pager-nav k-disabled">
-                    <span class="k-icon k-i-caret-alt-left"></span>
-                </a>
+            <div dir="rtl" class="k-pager k-pager-md k-disabled">
                 <div class="k-pager-numbers-wrap">
-                    <select class="k-picker k-dropdown-list k-dropdown">
+                    <button class="k-pager-nav k-pager-first k-button k-button-md k-button-flat k-button-flat-base k-icon-button k-disabled">
+                        <span class="k-button-icon k-icon k-i-caret-alt-to-left"></span>
+                    </button>
+                    <button class="k-pager-nav k-button k-button-md k-button-flat k-button-flat-base k-icon-button k-focus">
+                        <span class="k-button-icon k-icon k-i-caret-alt-left"></span>
+                    </button>
+                    <select class="k-picker k-dropdown-list k-dropdown k-rounded-md k-picker-md">
                         <option>1</option>
                     </select>
-                    <ul class="k-pager-numbers">
-                        <li>
-                            <a class="k-link">1</a>
-                        </li>
-                        <li>
-                            <a class="k-link">2</a>
-                        </li>
-                        <li>
-                            <a class="k-link">3</a>
-                        </li>
-                        <li>
-                            <a class="k-link">4</a>
-                        </li>
-                        <li>
-                            <a class="k-link">5</a>
-                        </li>
-                    </ul>
+                    <div class="k-pager-numbers">
+                        <button class="k-button k-button-md k-button-flat k-button-flat-primary">
+                            <span class="k-button-text">1</span>
+                        </button>
+                        <button class="k-button k-button-md k-button-flat k-button-flat-primary k-hover">
+                            <span class="k-button-text">2</span>
+                        </button>
+                        <button class="k-button k-button-md k-button-flat k-button-flat-primary k-focus">
+                            <span class="k-button-text">3</span>
+                        </button>
+                        <button class="k-button k-button-md k-button-flat k-button-flat-primary k-selected">
+                            <span class="k-button-text">4</span>
+                        </button>
+                        <button class="k-button k-button-md k-button-flat k-button-flat-primary k-hover k-focus">
+                            <span class="k-button-text">5</span>
+                        </button>
+                        <button class="k-button k-button-md k-button-flat k-button-flat-primary k-focus k-selected">
+                            <span class="k-button-text">6</span>
+                        </button>
+                    </div>
+                    <button class="k-pager-nav k-button k-button-md k-button-flat k-button-flat-base k-icon-button k-hover">
+                        <span class="k-button-icon k-icon k-i-caret-alt-right"></span>
+                    </button>
+                    <button class="k-pager-nav k-pager-last k-button k-button-md k-button-flat k-button-flat-base k-icon-button">
+                        <span class="k-button-icon k-icon k-i-caret-alt-to-right"></span>
+                    </button>
                 </div>
-                <a class="k-link k-pager-nav">
-                    <span class="k-icon k-i-caret-alt-right"></span>
-                </a>
-                <a class="k-link k-pager-nav k-pager-last">
-                    <span class="k-icon k-i-caret-alt-to-right"></span>
-                </a>
-                <span class="k-pager-sizes k-label">
+                <span class="k-pager-sizes">
                     <span class="k-dropdown k-picker k-picker-md k-picker-solid k-rounded-md">
                         <span class="k-input-inner">
                             <span class="k-input-value-text">20</span>
@@ -282,10 +301,10 @@
                         </button>
                     </span>items per page
                 </span>
-                <a class="k-pager-refresh k-link">
-                    <span class="k-icon k-i-arrow-rotate-cw"></span>
-                </a>
-                <span class="k-pager-info k-label">1 - 20 of 91 items</span>
+                <button class="k-pager-refresh k-button k-button-md k-button-flat k-button-flat-base k-icon-button">
+                    <span class="k-button-icon k-icon k-i-arrow-rotate-cw"></span>
+                </button>
+                <span class="k-pager-info">1 - 20 of 91 items</span>
             </div>
         </section>
     </div>

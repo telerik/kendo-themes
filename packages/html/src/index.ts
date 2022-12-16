@@ -55,28 +55,28 @@ export * from './numerictextbox/index';
 // export * from './rating/index';
 export * from './searchbox/index';
 export * from './switch/index';
-// export * from './upload/index';
+export * from './upload/index';
 // export * from './dropzone/index';
 
 // Command interfaces
 export * from './fab/index';
 export * from './menu/index';
-// export * from './toolbar/index';
+export * from './toolbar/index';
 
 // Popups and modals
 export * from './action-sheet/index';
-// export * from './dialog/index';
+export * from './dialog/index';
 // export * from './drawer/index';
-// export * from './notification/index';
+export * from './notification/index';
 export * from './popover/index';
 // export * from './tooltip/index';
-// export * from './window/index';
+export * from './window/index';
 
 // Navigation
-// export * from './appbar/index';
+export * from './appbar/index';
 // export * from './bottom-nav/index';
 // export * from './breadcrumb/index';
-// export * from './pager/index';
+export * from './pager/index';
 // export * from './stepper/index';
 // export * from './tabstrip/index';
 export * from './treeview/index';
@@ -88,3 +88,6 @@ export * from './card/index';
 // export * from './panelbar/index';
 // export * from './splitter/index';
 // export * from './tile-layout/index';
+
+// Editors
+export * from './editor/index';

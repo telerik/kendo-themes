@@ -57,4 +57,9 @@
         transform: scaleX(-1);
     }
 
+    .k-icon-action {
+        padding: var( --kendo-icon-padding, 0 );
+        cursor: pointer;
+    }
+
 }

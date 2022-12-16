@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en" class="k-no-animations" style="--kendo-scrollbar-width:15px;">
 <head>
-    <title>Dialog Action Buttons</title>
+    <title>KUI React Dialog Action Buttons</title>
     <meta charset="utf-8">
     <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
     <link rel="stylesheet" href="/packages/html/assets/styles.css">
@@ -11,85 +11,41 @@
     <style>
         .k-dialog {
             position: relative;
+            width: 300px;
         }
 
     </style>
-    <div id="test-area" class="k-d-grid k-grid-cols-3">
-        <div class="k-widget k-window k-dialog col-3">
+    <div id="test-area" class="k-d-grid k-grid-cols-2">
+        <div class="k-window k-dialog">
             <div class="k-window-titlebar k-dialog-titlebar">
                 <span class="k-window-title k-dialog-title">Title</span>
+                <div class="k-window-titlebar-actions k-dialog-titlebar-actions">
+                    <button class="k-window-titlebar-action k-dialog-titlebar-action k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                        <span class="k-button-icon k-icon k-i-close"></span>
+                    </button>
+                </div>
             </div>
-            <div class="k-window-content k-dialog-content">Normal buttons</div>
-            <div class="k-actions k-actions-end k-actions-horizontal k-dialog-buttongroup">
+            <div class="k-window-content k-dialog-content">Action Buttons at start position</div>
+            <div class="k-actions k-actions-start k-actions-horizontal k-window-actions k-dialog-actions">
                 <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
                     <span class="k-button-text">Action</span>
                 </button>
                 <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md">
                     <span class="k-button-text">Primary</span>
                 </button>
-                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-hover">
-                    <span class="k-button-text">Hover</span>
-                </button>
-                <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md k-hover">
-                    <span class="k-button-text">Hover</span>
-                </button>
-                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-focus">
-                    <span class="k-button-text">Focus</span>
-                </button>
-                <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md k-focus">
-                    <span class="k-button-text">Focus</span>
-                </button>
-                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-active">
-                    <span class="k-button-text">Active</span>
-                </button>
-                <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md k-active">
-                    <span class="k-button-text">Active</span>
-                </button>
             </div>
         </div>
-        <div class="k-widget k-window k-dialog col-3">
+        <div class="k-window k-dialog">
             <div class="k-window-titlebar k-dialog-titlebar">
                 <span class="k-window-title k-dialog-title">Title</span>
-            </div>
-            <div class="k-window-content k-dialog-content">Stretched buttons</div>
-            <div class="k-actions k-actions-stretched k-actions-horizontal k-dialog-buttongroup">
-                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
-                    <span class="k-button-text">Action</span>
-                </button>
-                <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md">
-                    <span class="k-button-text">Primary</span>
-                </button>
-                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-hover">
-                    <span class="k-button-text">Hover</span>
-                </button>
-                <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md k-hover">
-                    <span class="k-button-text">Hover</span>
-                </button>
-                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-focus">
-                    <span class="k-button-text">Focus</span>
-                </button>
-                <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md k-focus">
-                    <span class="k-button-text">Focus</span>
-                </button>
-                <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-active">
-                    <span class="k-button-text">Active</span>
-                </button>
-                <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md k-active">
-                    <span class="k-button-text">Active</span>
-                </button>
-            </div>
-        </div>
-        <div class="k-widget k-window k-dialog k-window-sm">
-            <div class="k-window-titlebar k-dialog-titlebar k-header">
-                <span class="k-window-title k-dialog-title">Title</span>
-                <div class="k-window-actions k-dialog-actions">
-                    <button class="k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                <div class="k-window-titlebar-actions k-dialog-titlebar-actions">
+                    <button class="k-window-titlebar-action k-dialog-titlebar-action k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
                         <span class="k-button-icon k-icon k-i-close"></span>
                     </button>
                 </div>
             </div>
-            <div class="k-window-content k-dialog-content">Narrow Dialog with Stretched button layout</div>
-            <div class="k-actions k-actions-stretched k-actions-horizontal k-dialog-buttongroup">
+            <div class="k-window-content k-dialog-content">Action Buttons at center position</div>
+            <div class="k-actions k-actions-center k-actions-horizontal k-window-actions k-dialog-actions">
                 <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
                     <span class="k-button-text">Action</span>
                 </button>
@@ -98,17 +54,17 @@
                 </button>
             </div>
         </div>
-        <div class="k-widget k-window k-dialog k-window-sm">
-            <div class="k-window-titlebar k-dialog-titlebar k-header">
+        <div class="k-window k-dialog">
+            <div class="k-window-titlebar k-dialog-titlebar">
                 <span class="k-window-title k-dialog-title">Title</span>
-                <div class="k-window-actions k-dialog-actions">
-                    <button class="k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                <div class="k-window-titlebar-actions k-dialog-titlebar-actions">
+                    <button class="k-window-titlebar-action k-dialog-titlebar-action k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
                         <span class="k-button-icon k-icon k-i-close"></span>
                     </button>
                 </div>
             </div>
-            <div class="k-window-content k-dialog-content">Narrow Dialog with Normal button layout</div>
-            <div class="k-actions k-actions-end k-actions-horizontal k-dialog-buttongroup">
+            <div class="k-window-content k-dialog-content">Action Buttons at end position</div>
+            <div class="k-actions k-actions-end k-actions-horizontal k-window-actions k-dialog-actions">
                 <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
                     <span class="k-button-text">Action</span>
                 </button>
@@ -117,17 +73,17 @@
                 </button>
             </div>
         </div>
-        <div class="k-widget k-window k-dialog k-window-md col-3">
-            <div class="k-window-titlebar k-dialog-titlebar k-header">
+        <div class="k-window k-dialog">
+            <div class="k-window-titlebar k-dialog-titlebar">
                 <span class="k-window-title k-dialog-title">Title</span>
-                <div class="k-window-actions k-dialog-actions">
-                    <button class="k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                <div class="k-window-titlebar-actions k-dialog-titlebar-actions">
+                    <button class="k-window-titlebar-action k-dialog-titlebar-action k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
                         <span class="k-button-icon k-icon k-i-close"></span>
                     </button>
                 </div>
             </div>
-            <div class="k-window-content k-dialog-content">Medium Dialog with Stretched button layout</div>
-            <div class="k-actions k-actions-stretched k-actions-horizontal k-dialog-buttongroup">
+            <div class="k-window-content k-dialog-content">Action Buttons with stretched position</div>
+            <div class="k-actions k-actions-stretched k-actions-horizontal k-window-actions k-dialog-actions">
                 <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
                     <span class="k-button-text">Action</span>
                 </button>

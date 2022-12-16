@@ -1,0 +1,72 @@
+name: CI | Next
+
+defaults:
+  run:
+    shell: bash
+
+on:
+  schedule:
+    # Run at 00:30 every Monday
+    - cron: '30 0 * * Mon'
+  workflow_dispatch:
+
+jobs:
+
+  ci-next:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [14.x, 16.x]
+
+    steps:
+
+      - name: Checkout branch
+        uses: actions/checkout@v3
+        with:
+          ref: v5-dev
+
+      - name: Setup node
+        id: setup-node
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Use cache for root node_modules
+        id: cache-root-node_modules
+        uses: actions/cache@v3
+        with:
+          path: node_modules
+          key: root-node_modules-${{ steps.setup-node.outputs.node-version }}-${{ hashFiles('package-lock.json') }}
+
+      - name: Install
+        if: steps.cache-root-node_modules.outputs.cache-hit != 'true'
+        run: npm ci --no-audit --no-fund
+
+      - name: Bootstrap
+        run: npm run bootstrap
+
+      - name: Lint scripts
+        run: npm run eslint
+
+      - name: Lint styles
+        run: npm run sasslint
+
+      - name: Build docs
+        run: npm run docs
+
+      - name: Check docs
+        run: npm run docs:check
+
+      - name: Ensure standalone build
+        run: npm run sass:standalone
+
+      - name: Build themes using node-sass (full)
+        run: npm run sass
+
+      - name: Build themes using node-sass (flat)
+        run: npm run sass:flat
+
+      - name: Build swatches using node-sass
+        run: npm run sass:swatches

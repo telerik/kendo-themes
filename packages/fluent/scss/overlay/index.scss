@@ -15,7 +15,7 @@ $_kendo-module-meta: (
 @include module.register( $_kendo-module-meta... );
 
 // Expose
-@mixin styles() {
+@mixin overlay-styles() {
     @include module.render( "overlay" ) {
         @include kendo-overlay--layout();
         @include kendo-overlay--theme();

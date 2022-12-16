@@ -53,9 +53,6 @@
             opacity: $kendo-input-placeholder-opacity;
             user-select: none;
         }
-        &:-ms-input-placeholder {
-            color: $kendo-input-placeholder-text;
-        }
     }
 
     // Input and Textarea
@@ -74,6 +71,9 @@
                 filter: grayscale(0);
             }
         }
+    }
+    textarea.k-textarea {
+        overflow: auto;
     }
 
 
@@ -114,17 +114,11 @@
         text-overflow: ellipsis;
         -webkit-appearance: none;
 
-        // Hide clear icon
-        &::-ms-clear { display: none; }
-
         // Placeholder text
         &::placeholder {
             color: $kendo-input-placeholder-text;
             opacity: $kendo-input-placeholder-opacity;
             user-select: none;
-        }
-        &:-ms-input-placeholder {
-            color: $kendo-input-placeholder-text;
         }
 
         // Invalid
@@ -164,13 +158,15 @@
 
     // Input multiple values
     .k-input-values {
+        min-width: 0px;
         width: 100%;
-        padding: $kendo-input-values-margin-y $kendo-input-values-margin-x;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
         cursor: text;
     }
-    .k-input-values > .k-searchbar,
-    .k-input-values > .k-input-inner {
-        margin: (-$kendo-input-values-margin-y) (-$kendo-input-values-margin-x);
+    .k-input-values .k-chip-list {
+        display: contents;
     }
 
 
@@ -363,10 +359,8 @@
             line-height: $_line-height;
 
             .k-input-values {
-                width: 100%;
                 padding: ($_padding-y / 2);
                 gap: ($_padding-y / 2);
-                cursor: text;
             }
             .k-input-values > .k-searchbar,
             .k-input-values > .k-input-inner {
@@ -404,6 +398,9 @@
             .k-input-button {
                 padding: $_padding-y;
             }
+        }
+        select.k-picker-#{$size} {
+            padding: $_padding-y $_padding-x;
         }
     }
 

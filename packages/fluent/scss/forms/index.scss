@@ -22,7 +22,7 @@ $_kendo-module-meta: (
 @include module.register( $_kendo-module-meta... );
 
 // Expose
-@mixin styles() {
+@mixin forms-styles() {
     @include module.render( "forms" ) {
         @include kendo-forms--layout();
         @include kendo-forms--theme();

@@ -51,14 +51,7 @@ $kendo-calendar-header-border: $kendo-calendar-border !default; // $header-borde
 
 /// Spacing between the navigation buttons of the calendar.
 /// @group calendar
-$kendo-calendar-nav-gap: map-get( $kendo-spacing, 1 ) !default;
-
-/// Text color of the Today link in the calendar.
-/// @group calendar
-$kendo-calendar-today-nav-text: var( --kendo-link-text, initial ) !default;
-/// Text color of the Today link when hovered in the calendar.
-/// @group calendar
-$kendo-calendar-today-nav-hover-text: var( --kendo-link-hover-text, initial ) !default;
+$kendo-calendar-nav-gap: 0 !default;
 
 /// Horizontal padding of the calendar footer.
 /// @group calendar
@@ -236,6 +229,8 @@ $kendo-calendar-navigation-text: $kendo-calendar-header-text !default;
 /// Border color of the navigation in the infinite calendar.
 /// @group calendar
 $kendo-calendar-navigation-border: $kendo-calendar-header-border !default;
+
+$kendo-calendar-navigation-hover-text: $kendo-link-hover-text !default;
 
 
 // Infinite calendar

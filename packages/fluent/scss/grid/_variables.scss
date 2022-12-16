@@ -1,6 +1,7 @@
 @use "../core/color-system" as *;
 @use "../core/_variables.scss" as *;
 @use "../button/_variables.scss" as *;
+@use "../chip/_variables.scss" as *;
 @use "../table/_variables.scss" as *;
 @use "../toolbar/_variables.scss" as *;
 @use "../list/_variables.scss" as *;
@@ -135,10 +136,10 @@ $kendo-grid-footer-border: $kendo-table-footer-border !default;
 
 /// Horizontal padding of the grid grouping header.
 /// @group grid
-$kendo-grid-grouping-header-padding-x: $kendo-toolbar-padding-x !default;
+$kendo-grid-grouping-header-padding-x: $kendo-toolbar-padding-x-md !default;
 /// Vertical padding of the grid grouping header.
 /// @group grid
-$kendo-grid-grouping-header-padding-y: $kendo-toolbar-padding-y !default;
+$kendo-grid-grouping-header-padding-y: $kendo-toolbar-padding-y-md !default;
 /// Background color of the grid grouping header.
 /// @group grid
 $kendo-grid-grouping-header-bg: $kendo-toolbar-bg !default;
@@ -171,13 +172,13 @@ $kendo-grid-filter-cell-padding-y: $kendo-grid-filter-cell-padding-x !default;
 
 /// Horizontal padding of the grid toolbar.
 /// @group grid
-$kendo-grid-toolbar-padding-x: $kendo-toolbar-padding-x !default;
+$kendo-grid-toolbar-padding-x: $kendo-toolbar-padding-x-md !default;
 /// Vertical padding of the grid toolbar.
 /// @group grid
-$kendo-grid-toolbar-padding-y: $kendo-toolbar-padding-y !default;
+$kendo-grid-toolbar-padding-y: $kendo-toolbar-padding-y-md !default;
 /// Spacing of the grid toolbar.
 /// @group grid
-$kendo-grid-toolbar-spacing: $kendo-toolbar-spacing !default;
+$kendo-grid-toolbar-spacing: $kendo-toolbar-spacing-md !default;
 /// Border width of the grid toolbar.
 /// @group grid
 $kendo-grid-toolbar-border-width: $kendo-grid-border-width !default;
@@ -283,7 +284,7 @@ $kendo-grid-group-dropclue-line-size: 1px !default;
 $kendo-grid-group-dropclue-dot-size: $kendo-grid-group-dropclue-size !default;
 /// Height of the grid  group drop clue.
 /// @group grid
-$kendo-grid-group-dropclue-height: calc( #{$kendo-button-calc-size} + #{$kendo-grid-group-dropclue-size} ) !default;
+$kendo-grid-group-dropclue-height: calc( #{$kendo-chip-calc-size} + #{$kendo-grid-group-dropclue-size} ) !default;
 /// Top offset of the grid group drop clue.
 /// @group grid
 $kendo-grid-group-dropclue-top: 2px !default;

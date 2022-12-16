@@ -1,7 +1,7 @@
 {
   "name": "@progress/kendo-themes-html",
   "description": "A collection of HTML helpers used for developing Kendo UI themes",
-  "version": "5.11.1-dev.0",
+  "version": "5.12.1-dev.0",
   "author": "Progress",
   "license": "Apache-2.0",
   "keywords": [
@@ -34,16 +34,14 @@
     "build:tests": "node ./scripts/build-tests.js",
     "watch:tests": "node ./scripts/build-tests.js --watch",
     "check-types": "npx tsc src/index.ts --noEmit --emitDeclarationOnly false --jsx react",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build",
+    "prepack": "cp package.json package.json.orig && jq '.scripts={}' package.json.orig > package.json"
   },
   "dependencies": {
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
   },
   "devDependencies": {
-    "@types/react": "^18.0.2",
-    "esbuild": "^0.15.0",
-    "glob": "^8.0.3",
-    "typescript": "^4.7.2"
+    "@types/react": "^18.0.2"
   }
 }

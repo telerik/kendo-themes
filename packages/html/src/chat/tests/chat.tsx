@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom/client';
 import { Avatar } from '../../avatar';
 import { Button } from '../../button';
 import { Textbox } from '../../textbox';
+import { Toolbar } from '../../toolbar';
 
 const root = ReactDOM.createRoot(
     document.getElementById('app') as HTMLElement
@@ -98,7 +99,7 @@ root.render(
                             </>
                         }
                     />
-                    <div className="k-chat-toolbar k-toolbar">
+                    <Toolbar className="k-chat-toolbar">
                         <Button className="k-scroll-button k-scroll-button-left k-hidden" fillMode="flat" rounded={null} size={null} icon="arrow-chevron-left"></Button>
                         <div className="k-toolbar-group k-button-list">
                             <Button fillMode="flat" icon="reload"></Button>
@@ -112,7 +113,7 @@ root.render(
                             <Button fillMode="flat" icon="trash"></Button>
                         </div>
                         <Button className="k-scroll-button k-scroll-button-right" fillMode="flat" rounded={null} size={null} icon="arrow-chevron-right"></Button>
-                    </div>
+                    </Toolbar>
                 </div>
             </section>
 

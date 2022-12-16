@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en" class="k-no-animations" style="--kendo-scrollbar-width:15px;">
+<head>
+    <title>Toolbar Popup</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" data-role="kendo-theme" href="/packages/default/dist/all.css">
+    <link rel="stylesheet" href="/packages/html/assets/styles.css">
+    <script src="/packages/html/assets/scripts.js"></script>
+</head>
+<body id="app" class="k-body">
+    <style>
+        .k-animation-container {
+            width: min-content;
+            position: relative;
+            overflow: visible;
+        }
+
+    </style>
+    <div id="test-area" class="k-d-grid k-grid-cols-3">
+        <span>Small</span>
+        <span>Medium</span>
+        <span>Large</span>
+        <section>
+            <div class="k-animation-container">
+                <div class="k-toolbar-popup k-popup k-menu-popup">
+                    <ul class="k-menu-group k-menu-group-sm">
+                        <li class="k-item k-menu-item">
+                            <span class="k-link k-menu-link">
+                                <span class="k-menu-link-text">Normal</span>
+                            </span>
+                        </li>
+                        <li class="k-item k-menu-item">
+                            <span class="k-link k-menu-link k-hover">
+                                <span class="k-menu-link-text">Hover</span>
+                            </span>
+                        </li>
+                        <li class="k-item k-menu-item k-focus">
+                            <span class="k-link k-menu-link">
+                                <span class="k-menu-link-text">Focus</span>
+                            </span>
+                        </li>
+                        <li class="k-item k-menu-item">
+                            <span class="k-link k-menu-link k-active">
+                                <span class="k-menu-link-text">Active</span>
+                            </span>
+                        </li>
+                        <li class="k-item k-menu-item k-disabled">
+                            <span class="k-link k-menu-link k-disabled">
+                                <span class="k-menu-link-text">Disabled</span>
+                            </span>
+                        </li>
+                        <li class="k-item k-menu-item k-disabled k-focus">
+                            <span class="k-link k-menu-link k-disabled">
+                                <span class="k-menu-link-text">Disabled focus</span>
+                            </span>
+                        </li>
+                        <div class="k-separator k-separator-horizontal"></div>
+                        <li class="k-item k-menu-item">
+                            <span class="k-link k-menu-link">
+                                <span class="k-menu-link-text">Item after separator</span>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="k-animation-container">
+                <div class="k-toolbar-popup k-popup k-menu-popup">
+                    <ul class="k-menu-group k-menu-group-md">
+                        <li class="k-item k-menu-item">
+                            <span class="k-link k-menu-link">
+                                <span class="k-menu-link-text">Normal</span>
+                            </span>
+                        </li>
+                        <li class="k-item k-menu-item">
+                            <span class="k-link k-menu-link k-hover">
+                                <span class="k-menu-link-text">Hover</span>
+                            </span>
+                        </li>
+                        <li class="k-item k-menu-item k-focus">
+                            <span class="k-link k-menu-link">
+                                <span class="k-menu-link-text">Focus</span>
+                            </span>
+                        </li>
+                        <li class="k-item k-menu-item">
+                            <span class="k-link k-menu-link k-active">
+                                <span class="k-menu-link-text">Active</span>
+                            </span>
+                        </li>
+                        <li class="k-item k-menu-item k-disabled">
+                            <span class="k-link k-menu-link k-disabled">
+                                <span class="k-menu-link-text">Disabled</span>
+                            </span>
+                        </li>
+                        <li class="k-item k-menu-item k-disabled k-focus">
+                            <span class="k-link k-menu-link k-disabled">
+                                <span class="k-menu-link-text">Disabled focus</span>
+                            </span>
+                        </li>
+                        <div class="k-separator k-separator-horizontal"></div>
+                        <li class="k-item k-menu-item">
+                            <span class="k-link k-menu-link">
+                                <span class="k-menu-link-text">Item after separator</span>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="k-animation-container">
+                <div class="k-toolbar-popup k-popup k-menu-popup">
+                    <ul class="k-menu-group k-menu-group-lg">
+                        <li class="k-item k-menu-item">
+                            <span class="k-link k-menu-link">
+                                <span class="k-menu-link-text">Normal</span>
+                            </span>
+                        </li>
+                        <li class="k-item k-menu-item">
+                            <span class="k-link k-menu-link k-hover">
+                                <span class="k-menu-link-text">Hover</span>
+                            </span>
+                        </li>
+                        <li class="k-item k-menu-item k-focus">
+                            <span class="k-link k-menu-link">
+                                <span class="k-menu-link-text">Focus</span>
+                            </span>
+                        </li>
+                        <li class="k-item k-menu-item">
+                            <span class="k-link k-menu-link k-active">
+                                <span class="k-menu-link-text">Active</span>
+                            </span>
+                        </li>
+                        <li class="k-item k-menu-item k-disabled">
+                            <span class="k-link k-menu-link k-disabled">
+                                <span class="k-menu-link-text">Disabled</span>
+                            </span>
+                        </li>
+                        <li class="k-item k-menu-item k-disabled k-focus">
+                            <span class="k-link k-menu-link k-disabled">
+                                <span class="k-menu-link-text">Disabled focus</span>
+                            </span>
+                        </li>
+                        <div class="k-separator k-separator-horizontal"></div>
+                        <li class="k-item k-menu-item">
+                            <span class="k-link k-menu-link">
+                                <span class="k-menu-link-text">Item after separator</span>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

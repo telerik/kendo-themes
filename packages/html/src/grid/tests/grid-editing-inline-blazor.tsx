@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { Button } from '../../button';
 import { Checkbox } from '../../checkbox';
 import { Textbox } from '../../textbox';
+import { Toolbar } from '../../toolbar';
 
 const root = ReactDOM.createRoot(
     document.getElementById('app') as HTMLElement
@@ -13,9 +14,9 @@ root.render(
         <div id="test-area" className="k-d-grid">
             <h3>Edit Row</h3>
             <div className="k-grid k-widget telerik-blazor">
-                <div className="k-toolbar k-grid-toolbar">
+                <Toolbar className="k-grid-toolbar">
                     <Button icon="add">Add</Button>
-                </div>
+                </Toolbar>
                 <div className="k-grid-header">
                     <div className="k-grid-header-wrap">
                         <table role="grid">
@@ -95,9 +96,9 @@ root.render(
             </div>
             <h3>New Row</h3>
             <div className="k-grid k-widget telerik-blazor">
-                <div className="k-toolbar k-grid-toolbar">
+                <Toolbar className="k-grid-toolbar">
                     <Button icon="add">Add</Button>
-                </div>
+                </Toolbar>
                 <div className="k-grid-header">
                     <div className="k-grid-header-wrap">
                         <table role="grid">

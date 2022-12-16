@@ -1,0 +1,159 @@
+name: Render test pages
+
+on:
+  workflow_call:
+    inputs:
+      node-version:
+        description: 'Version of node tp use'
+        required: false
+        type: number
+        default: 14
+      force-render:
+        description: 'Always render images, regardless of git changes'
+        required: false
+        type: string
+        default: 'NO'
+      upload-policy:
+        description: 'Sets upload policy: always | never | conditionally'
+        required: false
+        type: string
+        default: 'conditionally'
+
+concurrency:
+  group: render-test-pages-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+
+  verify:
+    runs-on: ubuntu-latest
+    outputs:
+      should-render: ${{ steps.should-render.outputs.SHOULD_RENDER }}
+
+    steps:
+
+      - name: Checkout branch
+        uses: actions/checkout@v3
+
+      - name: Check for differences in packages/html
+        run: |
+          git fetch --depth=1 origin develop:develop
+
+          HAS_CHANGES=NO
+          git diff develop..HEAD --exit-code --quiet -- packages/html/ || HAS_CHANGES=YES
+          echo "HAS_CHANGES=$HAS_CHANGES" >> $GITHUB_ENV
+
+      - name: should-render
+        id: should-render
+        env:
+          FORCE_RENDER: ${{ inputs.force-render }}
+        run: |
+          echo "Verify summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "- Has changes: $HAS_CHANGES" >> $GITHUB_STEP_SUMMARY
+          echo "- Force render: $FORCE_RENDER" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+
+          echo "Has changes: $HAS_CHANGES"
+          echo "Force render: $FORCE_RENDER"
+
+          if [ $FORCE_RENDER = YES ] || [ $HAS_CHANGES = YES ]
+          then
+            echo "SHOULD_RENDER=YES" >> $GITHUB_OUTPUT
+            echo "Test pages will be rendered" >> $GITHUB_STEP_SUMMARY
+            echo "Test pages will be rendered"
+          else
+            echo "SHOULD_RENDER=NO" >> $GITHUB_OUTPUT
+            echo "Test pages will NOT be rendered" >> $GITHUB_STEP_SUMMARY
+            echo "Test pages will NOT be rendered"
+          fi
+
+
+  run:
+    runs-on: ubuntu-latest
+    if: ${{ needs.verify.outputs.should-render == 'YES' }}
+    needs: [ verify ]
+
+    steps:
+
+      - name: Print Firefox version
+        run: firefox --version
+
+      - name: Checkout branch
+        uses: actions/checkout@v3
+
+      - name: Setup node
+        id: setup-node
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ inputs.node-version }}
+
+      - name: Use cache for root node_modules
+        id: cache-root-node_modules
+        uses: actions/cache@v3
+        with:
+          path: node_modules
+          key: root-node_modules-${{ steps.setup-node.outputs.node-version }}-${{ hashFiles('package-lock.json') }}
+
+      - name: Install
+        if: steps.cache-root-node_modules.outputs.cache-hit != 'true'
+        run: |
+          npm ci --no-audit --no-fund
+
+      - name: Bootstrap
+        run: |
+          npx lerna bootstrap --scope @progress/kendo-themes-html
+
+      - name: Build test assets
+        run: |
+          npm run build:scripts
+          npm run build:tests
+
+      - name: Update markup snapshots
+        env:
+          HEADLESS: 'true'
+        run: |
+          npm run render-test-pages
+
+      - name: Pack test pages
+        env:
+          UPLOAD_POLICY: ${{ inputs.upload-policy }}
+        run: |
+          HAS_CHANGES=NO
+          git add .
+          git diff --cached --exit-code --quiet -- tests/ || HAS_CHANGES=YES
+
+          echo "Has changes: $HAS_CHANGES"
+          echo "HAS_CHANGES=$HAS_CHANGES" >> $GITHUB_ENV
+
+          echo "Run summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "- Upload policy: $UPLOAD_POLICY" >> $GITHUB_STEP_SUMMARY
+          echo "- Has changes: $HAS_CHANGES" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+
+          if [ $UPLOAD_POLICY = always ]
+          then
+            tar --exclude tests/_output -cf test-pages.tar tests
+          fi
+
+          if [ $UPLOAD_POLICY = conditionally ] && [ $HAS_CHANGES = YES ]
+          then
+            git diff --cached --name-only -- tests/ | xargs tar --exclude tests/_output -cf test-pages.tar
+          fi
+
+          if [ $UPLOAD_POLICY = always ] || ( [ $UPLOAD_POLICY = conditionally ] && [ $HAS_CHANGES = YES ] )
+          then
+            echo "Test pages will be uploaded" >> $GITHUB_STEP_SUMMARY
+            echo "Number of files uploaded: $(tar -tf test-pages.tar | wc -l)" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "Test pages will NOT be uploaded" >> $GITHUB_STEP_SUMMARY
+          fi
+
+      - name: Upload test pages
+        if: ${{ inputs.upload-policy != 'never' }}
+        uses: actions/upload-artifact@v3
+        with:
+          name: test-pages
+          path: test-pages.tar
+          if-no-files-found: warn

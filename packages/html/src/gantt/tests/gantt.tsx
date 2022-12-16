@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { Button } from '../../button';
 import { ButtonGroup } from '../../button-group';
 import { Icon } from '../../icon';
+import { Toolbar } from '../../toolbar';
 
 const root = ReactDOM.createRoot(
     document.getElementById('app') as HTMLElement
@@ -27,7 +28,7 @@ root.render(
         <div id="test-area">
 
             <div id="gantt" className="k-widget k-gantt">
-                <div className="k-gantt-header k-toolbar k-gantt-toolbar">
+                <Toolbar className="k-gantt-toolbar k-gantt-header">
                     <Button className="k-gantt-toggle" icon="layout-1-by-4"></Button>
                     <Button className="k-gantt-create" icon="add">Add Task</Button>
                     <span className="k-spacer"></span>
@@ -43,7 +44,7 @@ root.render(
                             <Button className="k-view-month">Month</Button>
                         </ButtonGroup>
                     </div>
-                </div>
+                </Toolbar>
                 <div className="k-gantt-content">
                     <div className="k-gantt-treelist">
                         <div className="k-treelist k-grid k-widget k-grid-display-block">
@@ -732,9 +733,9 @@ root.render(
                         </div>
                     </div>
                 </div>
-                <div className="k-gantt-footer k-toolbar k-gantt-toolbar">
+                <Toolbar className="k-gantt-toolbar k-gantt-footer">
                     <Button className="k-gantt-create" icon="add">Add Task</Button>
-                </div>
+                </Toolbar>
             </div>
 
         </div>

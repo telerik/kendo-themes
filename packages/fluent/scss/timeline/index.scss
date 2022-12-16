@@ -19,7 +19,7 @@ $_kendo-module-meta: (
 @include module.register( $_kendo-module-meta... );
 
 // Expose
-@mixin styles() {
+@mixin timeline-styles() {
     @include module.render( "timeline" ) {
         @include kendo-timeline--layout();
         @include kendo-timeline--theme();

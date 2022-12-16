@@ -1,3 +1,4 @@
+@use "sass:map";
 @use "../core/color-system" as *;
 @use "../core/_variables.scss" as *;
 
@@ -24,6 +25,13 @@ $kendo-dialog-titlebar-padding-x: map-get( $kendo-spacing, 6 ) !default;
 /// @group dialog
 $kendo-dialog-titlebar-padding-y: map-get( $kendo-spacing, 4 ) !default;
 
+/// Horizontal padding of the content of the dialog.
+/// @group dialog
+$kendo-dialog-inner-padding-x: map-get( $kendo-spacing, 6 ) !default;
+/// Vertical padding of the content of the dialog.
+/// @group dialog
+$kendo-dialog-inner-padding-y: map-get( $kendo-spacing, 3 ) !default;
+
 /// Horizontal padding of the dialog action buttons.
 /// @group dialog
 $kendo-dialog-buttongroup-padding-x: map-get( $kendo-spacing, 6 ) !default; // $actions-padding-x
@@ -44,3 +52,48 @@ $kendo-dialog-button-spacing: map-get( $kendo-spacing, 2 ) !default; // $actions
 /// Box shadow around the dialog.
 /// @group dialog
 $kendo-dialog-shadow: var( --kendo-box-shadow-depth-4, none ) !default;
+
+/// Theme variations for the dialog.
+$kendo-dialog-brand-colors: (
+    primary: primary
+ );
+
+// Matrix with dialog theme colors in the order: bg, color, border
+$_tc-dialog-matrix: (
+    (normal: (100, $white, 100)),
+);
+
+$_tc-dialog-dark-matrix: (
+    (normal: (160, $white, 160)),
+);
+
+$_tc-dialog-light-matrix: (
+    (normal: (50, 160, 50)),
+);
+
+/// Theme colors map for the dialog variations.
+$kendo-dialog-theme-colors: ();
+
+@each $ui-states in $_tc-dialog-matrix {
+    @each $brand-color, $palette in $kendo-dialog-brand-colors {
+        $kendo-dialog-theme-colors: map.deep-merge(
+            $kendo-dialog-theme-colors,
+            generate-theme-variation( $brand-color, $palette, $ui-states )
+        );
+    };
+}
+
+@each $ui-states in $_tc-dialog-dark-matrix {
+    $kendo-dialog-theme-colors: map.deep-merge(
+        $kendo-dialog-theme-colors,
+        generate-theme-variation( dark, neutral, $ui-states )
+    );
+}
+
+@each $ui-states in $_tc-dialog-light-matrix {
+    $kendo-dialog-theme-colors: map.deep-merge(
+        $kendo-dialog-theme-colors,
+        generate-theme-variation( light, neutral, $ui-states )
+    );
+}
+

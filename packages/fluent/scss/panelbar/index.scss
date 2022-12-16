@@ -18,7 +18,7 @@ $_kendo-module-meta: (
 @include module.register( $_kendo-module-meta... );
 
 // Expose
-@mixin styles() {
+@mixin panelbar-styles() {
     @include module.render( "panelbar" ) {
         @include kendo-panelbar--layout();
         @include kendo-panelbar--theme();

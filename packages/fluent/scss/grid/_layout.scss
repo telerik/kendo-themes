@@ -1,5 +1,6 @@
 @use "../core/_variables.scss" as *;
 @use "../button/_variables.scss" as *;
+@use "../chip/_variables.scss" as *;
 @use "../forms/_variables.scss" as *;
 @use "../table/_variables.scss" as *;
 @use "_variables.scss" as *;
@@ -245,15 +246,17 @@
         border-style: solid;
         border-color: inherit;
         white-space: normal;
-        flex-shrink: 0;
-        display: block;
+        display: flex;
+        align-items: center;
+        gap: var( --kendo-grid-grouping-header-padding-y, #{$kendo-grid-grouping-header-padding-y} );
         position: relative;
 
         &::before {
             content: "";
-            height: $kendo-button-calc-size;
+            height: $kendo-chip-calc-size;
             display: inline-block;
             vertical-align: middle;
+            margin-left: calc( var( --kendo-grid-grouping-header-padding-y, #{$kendo-grid-grouping-header-padding-y} ) * -1 );
         }
     }
 
@@ -266,61 +269,6 @@
         &::before {
             margin-left: calc( var( --kendo-grid-grouping-header-padding-y, #{$kendo-grid-grouping-header-padding-y} ) * -1 );
         }
-
-        .k-group-indicator {
-            margin: 0;
-        }
-    }
-
-    // override for angular
-    .k-grid .k-indicator-container {
-        margin-block: calc( var( --kendo-grid-grouping-header-padding-y, #{$kendo-grid-grouping-header-padding-y} ) * -1 );
-        margin-inline: 0;
-        padding-block: var( --kendo-grid-grouping-header-padding-y, #{$kendo-grid-grouping-header-padding-y} );
-        padding-inline: 0;
-    }
-    .k-grid .k-indicator-container:last-child {
-        flex-grow: 1;
-    }
-
-    .k-group-indicator {
-        margin: 0;
-        padding-inline: var( --kendo-grid-group-indicator-padding-x, #{$kendo-grid-group-indicator-padding-x} );
-        padding-block: var( --kendo-grid-group-indicator-padding-y, #{$kendo-grid-group-indicator-padding-y} );
-        border-width: var( --kendo-grid-group-indicator-border-width, #{$kendo-grid-group-indicator-border-width} );
-        border-style: solid;
-        border-radius: var( --kendo-grid-group-indicator-border-radius, #{$kendo-grid-group-indicator-border-radius} );
-        display: inline-flex;
-        flex-direction: row;
-        align-items: center;
-        align-content: center;
-        vertical-align: top;
-        box-sizing: border-box;
-
-        .k-link,
-        .k-button-flat {
-            padding: 0;
-            border-width: 0;
-            display: inline-flex;
-            align-items: center;
-        }
-
-        .k-link .k-icon {
-            margin-inline-start: calc( ( var( --kendo-icon-spacing, .5rem ) / 2 ) * -1 );
-            margin-inline-end: var( --kendo-icon-spacing, .5rem );
-        }
-
-        .k-button-flat {
-            margin-inline-start: var( --kendo-icon-spacing, .5rem );
-            margin-inline-end: calc( var( --kendo-icon-spacing, .5rem ) * -1 );
-            padding: 0;
-            width: auto;
-            height: auto;
-        }
-    }
-
-    .k-group-indicator + .k-group-indicator {
-        margin-inline-start: calc( var( --kendo-grid-group-indicator-gap, #{$kendo-grid-group-indicator-gap} ) / 2 );
     }
 
     .k-grouping-dropclue {
@@ -712,19 +660,19 @@
 
     .k-grid-virtual .k-grid-content {
         .k-grid-table-wrap {
-            float: left;
+            float: inline-start;
             width: 100%;
         }
 
         .k-grid-table {
             position: relative;
-            float: left;
+            float: inline-start;
             z-index: 1;
         }
 
         > .k-height-container {
             position: relative;
-            float: left;
+            float: inline-start;
         }
 
         &::after {
@@ -741,13 +689,6 @@
 
     .k-width-container div {
         height: 1px;
-    }
-
-    .k-grid-virtual[dir="rtl"],
-    .k-grid-virtual.k-rtl {
-        .k-grid-content .k-grid-table {
-            float: right;
-        }
     }
 
     .k-grid-add-row td {
@@ -1044,7 +985,7 @@
     // Remove Grid scrollbar during built-in export
     .k-pdf-export-shadow {
         .k-grid {
-            float: left;
+            float: inline-start;
             width: auto !important; // sass-lint:disable-line no-important
         }
 

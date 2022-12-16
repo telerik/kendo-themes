@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom/client';
 import { Button } from '../../button';
 import { ButtonGroup } from '../../button-group';
 import { Icon } from '../../icon';
+import { Toolbar } from '../../toolbar';
+import { Chip, ChipList, ChipAction } from '../../chip';
 
 const root = ReactDOM.createRoot(
     document.getElementById('app') as HTMLElement
@@ -26,17 +28,17 @@ root.render(
             <span>jquery no grouping</span>
 
             <div className="k-widget k-grid k-grid-no-scrollbar">
-                <div className="k-toolbar k-grid-toolbar">
+                <Toolbar className="k-grid-toolbar">
                     <Button>Button</Button>
                     <ButtonGroup>
                         <Button icon="bold"></Button>
                         <Button icon="italic"></Button>
                         <Button icon="underline"></Button>
                     </ButtonGroup>
-                </div>
-                <div className="k-grouping-header k-grouping-header-flex">
+                </Toolbar>
+                <div className="k-grouping-header">
                     <div className="k-grouping-dropclue"></div>
-                    <div className="k-indicator-container">Drag a column header and drop it here to group by that column</div>
+                    Drag a column header and drop it here to group by that column
                 </div>
                 <div className="k-grid-aria-root">
                     <div className="k-grid-header">
@@ -79,14 +81,14 @@ root.render(
             </div>
 
             <div className="k-widget k-grid k-grid-no-scrollbar">
-                <div className="k-toolbar k-grid-toolbar">
+                <Toolbar className="k-grid-toolbar">
                     <Button>Button</Button>
                     <span className="k-button-group">
                         <Button icon="bold"></Button>
                         <Button icon="italic"></Button>
                         <Button icon="underline"></Button>
                     </span>
-                </div>
+                </Toolbar>
                 <div className="k-grouping-header">
                     <div className="k-grouping-dropclue"></div>
                     Drag a column header and drop it here to group by that column
@@ -129,29 +131,20 @@ root.render(
             <span>jquery with grouping</span>
 
             <div className="k-widget k-grid k-grid-no-scrollbar">
-                <div className="k-toolbar k-grid-toolbar">
+                <Toolbar className="k-grid-toolbar">
                     <Button>Button</Button>
-                    <span className="k-button-group">
+                    <ButtonGroup>
                         <Button icon="bold"></Button>
                         <Button icon="italic"></Button>
                         <Button icon="underline"></Button>
-                    </span>
-                </div>
-                <div className="k-grouping-header k-grouping-header-flex">
+                    </ButtonGroup>
+                </Toolbar>
+                <div className="k-grouping-header">
                     <div className="k-grouping-dropclue"></div>
-                    <div className="k-indicator-container">
-                        <div className="k-group-indicator">
-                            <a className="k-link"><Icon name="sort-asc-sm" />Price</a>
-                            <Button fillMode="flat" icon="close"></Button>
-                        </div>
-                    </div>
-                    <div className="k-indicator-container">
-                        <div className="k-group-indicator">
-                            <a className="k-link"><Icon name="sort-desc-sm" />Name</a>
-                            <Button fillMode="flat" icon="close"></Button>
-                        </div>
-                    </div>
-                    <div className="k-indicator-container">&nbsp;</div>
+                    <ChipList>
+                        <Chip icon="sort-asc-sm" actions={ <ChipAction type="remove"/> }>Price</Chip>
+                        <Chip icon="sort-desc-sm" actions={ <ChipAction type="remove"/> }>Name</Chip>
+                    </ChipList>
                 </div>
                 <div className="k-grid-aria-root">
                     <div className="k-grid-header">
@@ -212,24 +205,20 @@ root.render(
             </div>
 
             <div className="k-grid k-grid-no-scrollbar k-widget k-grid-display-block">
-                <div className="k-toolbar k-grid-toolbar">
+                <Toolbar className="k-grid-toolbar">
                     <Button>Button</Button>
                     <ButtonGroup>
                         <Button icon="bold"></Button>
                         <Button icon="italic"></Button>
                         <Button icon="underline"></Button>
                     </ButtonGroup>
-                </div>
+                </Toolbar>
                 <div className="k-grouping-header">
                     <div className="k-grouping-dropclue"></div>
-                    <div className="k-group-indicator">
-                        <a className="k-link"><Icon name="sort-asc-sm" />Price</a>
-                        <Button fillMode="flat" icon="close"></Button>
-                    </div>
-                    <div className="k-group-indicator">
-                        <a className="k-link"><Icon name="sort-desc-sm" />Name</a>
-                        <Button fillMode="flat" icon="close"></Button>
-                    </div>
+                    <ChipList>
+                        <Chip icon="sort-asc-sm" actions={ <ChipAction type="remove"/> }>Price</Chip>
+                        <Chip icon="sort-desc-sm" actions={ <ChipAction type="remove"/> }>Name</Chip>
+                    </ChipList>
                 </div>
                 <div className="k-grid-header">
                     <div className="k-grid-header-wrap">

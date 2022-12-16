@@ -17,7 +17,7 @@ $_kendo-module-meta: (
 @include module.register( $_kendo-module-meta... );
 
 // Expose
-@mixin styles() {
+@mixin responsivepanel-styles() {
     @include module.render( "responsivepanel" ) {
         @include kendo-responsivepanel--layout();
         @include kendo-responsivepanel--theme();

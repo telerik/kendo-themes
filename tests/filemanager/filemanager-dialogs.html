@@ -20,28 +20,31 @@
             <div class="k-window k-dialog k-filemanager-upload-dialog">
                 <div class="k-window-titlebar k-dialog-titlebar">
                     <span class="k-window-title k-dialog-title">Upload Files</span>
-                    <div class="k-window-actions k-dialog-actions">
-                        <button class="k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                    <div class="k-window-titlebar-actions k-dialog-titlebar-actions">
+                        <button class="k-window-titlebar-action k-dialog-titlebar-action k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
                             <span class="k-button-icon k-icon k-i-close"></span>
                         </button>
                     </div>
                 </div>
                 <div class="k-window-content k-dialog-content">
                     <div class="k-upload k-upload-async k-upload-empty">
-                        <div class="k-dropzone">
-                            <button class="k-upload-button k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
-                                <span class="k-button-text">Select files...</span>
-                            </button>
-                            <em class="k-dropzone-hint">Drop files here to upload</em>
+                        <div class="k-dropzone k-upload-dropzone">
+                            <div class="k-upload-button-wrap">
+                                <button class="k-upload-button k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                                    <span class="k-button-text">Select files...</span>
+                                </button>
+                                <input id="upload-input">
+                            </div>
+                            <span class="k-dropzone-hint">Drop files here to upload</span>
                         </div>
                     </div>
                 </div>
-                <div class="k-actions k-actions-end k-actions-horizontal k-dialog-buttongroup">
+                <div class="k-actions k-actions-end k-actions-horizontal k-window-actions k-dialog-actions">
                     <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
-                        <span class="k-button-text">Clear List</span>
+                        <span class="k-button-text">Action</span>
                     </button>
                     <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md">
-                        <span class="k-button-text">Done</span>
+                        <span class="k-button-text">Primary</span>
                     </button>
                 </div>
             </div>
@@ -51,21 +54,21 @@
             <div class="k-window k-dialog">
                 <div class="k-window-titlebar k-dialog-titlebar">
                     <span class="k-window-title k-dialog-title">Confirm</span>
-                    <div class="k-window-actions k-dialog-actions">
-                        <button class="k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                    <div class="k-window-titlebar-actions k-dialog-titlebar-actions">
+                        <button class="k-window-titlebar-action k-dialog-titlebar-action k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
                             <span class="k-button-icon k-icon k-i-close"></span>
                         </button>
                     </div>
                 </div>
-                <div class="k-window-content k-dialog-content k-text-center">
+                <div class="k-window-content k-dialog-content">
                     <p>Do you want to move or copy?</p>
                 </div>
-                <div class="k-actions k-actions-end k-actions-horizontal k-dialog-buttongroup">
+                <div class="k-actions k-actions-end k-actions-horizontal k-window-actions k-dialog-actions">
                     <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
-                        <span class="k-button-text">Move</span>
+                        <span class="k-button-text">Action</span>
                     </button>
                     <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md">
-                        <span class="k-button-text">Copy</span>
+                        <span class="k-button-text">Primary</span>
                     </button>
                 </div>
             </div>
@@ -74,22 +77,22 @@
             <div class="k-window k-dialog">
                 <div class="k-window-titlebar k-dialog-titlebar">
                     <span class="k-window-title k-dialog-title">Confirm</span>
-                    <div class="k-window-actions k-dialog-actions">
-                        <button class="k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                    <div class="k-window-titlebar-actions k-dialog-titlebar-actions">
+                        <button class="k-window-titlebar-action k-dialog-titlebar-action k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
                             <span class="k-button-icon k-icon k-i-close"></span>
                         </button>
                     </div>
                 </div>
-                <div class="k-window-content k-dialog-content k-text-center">
+                <div class="k-window-content k-dialog-content">
                     <p>Are you sure you want to delete this file?</p>
                     <p>You can't undo this action.</p>
                 </div>
-                <div class="k-actions k-actions-end k-actions-horizontal k-dialog-buttongroup">
+                <div class="k-actions k-actions-end k-actions-horizontal k-window-actions k-dialog-actions">
                     <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
-                        <span class="k-button-text">Cancel</span>
+                        <span class="k-button-text">Action</span>
                     </button>
                     <button class="k-button k-button-md k-button-solid k-button-solid-primary k-rounded-md">
-                        <span class="k-button-text">Delete</span>
+                        <span class="k-button-text">Primary</span>
                     </button>
                 </div>
             </div>

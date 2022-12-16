@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { Button } from '../../button';
 import { Icon } from '../../icon';
+import { Toolbar } from '../../toolbar';
 
 const root = ReactDOM.createRoot(
     document.getElementById('app') as HTMLElement
@@ -11,7 +12,7 @@ root.render(
     <>
         <div id="test-area" className="k-d-grid k-grid-cols-1">
             <div className="k-widget k-scheduler k-scheduler-flex">
-                <div className="k-scheduler-toolbar k-toolbar">
+                <Toolbar className="k-scheduler-toolbar">
                     <span className="k-button-group k-scheduler-navigation">
                         <Button>Today</Button>
                         <Button icon="caret-alt-left"></Button>
@@ -33,7 +34,7 @@ root.render(
                             <Button>Agenda</Button>
                         </span>
                     </span>
-                </div>
+                </Toolbar>
                 <div className="k-scheduler-layout k-scheduler-layout-flex k-scheduler-day-view" style={{ height: "600px" }} >
                     <div className="k-scheduler-head">
                         <div className="k-scheduler-group k-group-horizontal">
@@ -132,7 +133,7 @@ root.render(
                             <span className="k-resize-handle k-resize-w"></span>
                             <span className="k-resize-handle k-resize-e"></span>
                         </div>
-                        <div className="k-event" style={{ top: "115px", left: "79px", width: "220px", height: "25px", borderColor: "rgb(83, 146, 228)", backgroundColor: "rgb(83, 146, 228)", cursor: 'pointer', userSelect: "auto", pointerEvents: "auto" }} >
+                        <div className="k-event" style={{ top: "115px", left: "79px", width: "220px", height: "25px", cursor: 'pointer', userSelect: "auto", pointerEvents: "auto" }} >
                             <span className="k-event-actions"></span>
                             <div title="(3:00 PM): Register new Access Cards">
                                 <div className="k-event-template">Register new Access Cards</div>
@@ -145,7 +146,7 @@ root.render(
                             <span className="k-resize-handle k-resize-w"></span>
                             <span className="k-resize-handle k-resize-e"></span>
                         </div>
-                        <div className="k-event" style={{ top: "141px", left: "79px", width: "220px", height: "25px", borderColor: "rgb(83, 146, 228)", backgroundColor: "rgb(83, 146, 228)", cursor: 'pointer', userSelect: "auto", pointerEvents: "auto" }} >
+                        <div className="k-event" style={{ top: "141px", left: "79px", width: "220px", height: "25px", cursor: 'pointer', userSelect: "auto", pointerEvents: "auto" }} >
                             <span className="k-event-actions"></span>
                             <div title="(7:00 PM): Support Phone Call">
                                 <div className="k-event-template">Support Phone Call</div>
@@ -461,7 +462,7 @@ root.render(
                         </div>
 
 
-                        <div className="k-event" style={{ top: "37px", left: "523px", width: "220px", height: "115px", borderColor: "rgb(255, 114, 114)", backgroundColor: "rgb(255, 114, 114)", cursor: 'pointer', userSelect: "auto", pointerEvents: "auto" }} >
+                        <div className="k-event" style={{ top: "37px", left: "523px", width: "220px", height: "115px", cursor: 'pointer', userSelect: "auto", pointerEvents: "auto" }} >
                             <span className="k-event-actions"></span>
                             <div title="8:30 AM - 10:00 AM">
                                 <div className="k-event-template k-event-time">8:30 AM - 10:00 AM</div>
@@ -475,7 +476,7 @@ root.render(
                             <span className="k-resize-handle k-resize-n"></span>
                             <span className="k-resize-handle k-resize-s"></span>
                         </div>
-                        <div className="k-event" style={{ top: "114px", left: "78px", width: "220px", height: "150px", borderColor: "rgb(83, 146, 228)", backgroundColor: "rgb(83, 146, 228)", cursor: 'pointer', userSelect: "auto", pointerEvents: "auto" }} >
+                        <div className="k-event" style={{ top: "114px", left: "78px", width: "220px", height: "150px", cursor: 'pointer', userSelect: "auto", pointerEvents: "auto" }} >
                             <span className="k-event-actions"></span>
                             <div title="9:45 AM - 11:30 AM">
                                 <div className="k-event-template k-event-time">9:45 AM - 11:30 AM</div>
@@ -491,9 +492,9 @@ root.render(
                         </div>
                     </div>
                 </div>
-                <div className="k-scheduler-footer k-toolbar">
+                <Toolbar className="k-scheduler-footer">
                     <Button icon="clock" className="k-scheduler-fullday">Show business hours</Button>
-                </div>
+                </Toolbar>
             </div>
         </div>
     </>

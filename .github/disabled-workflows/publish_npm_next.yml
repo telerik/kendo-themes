@@ -1,0 +1,82 @@
+name: Publish to npm (vNext)
+
+defaults:
+  run:
+    shell: bash
+
+on:
+  workflow_dispatch:
+  workflow_run:
+    workflows: ["CI | Next"]
+    branches: [v5-dev]
+    types:
+      - completed
+
+jobs:
+
+  release-next:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Checkout branch
+        uses: actions/checkout@v3
+        with:
+          ref: v5-dev
+          token: ${{ secrets.GH_TOKEN }}
+
+      - name: Setup git
+        run: |
+          git config user.name "kendo-bot"
+          git config user.email "kendouiteam@progress.com"
+
+      - name: Setup node
+        id: setup-node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 14.x
+          registry-url: 'https://registry.npmjs.org'
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Use cache for root node_modules
+        id: cache-root-node_modules
+        uses: actions/cache@v3
+        with:
+          path: node_modules
+          key: root-node_modules-${{ steps.setup-node.outputs.node-version }}-${{ hashFiles('package-lock.json') }}
+
+      - name: Install
+        if: steps.cache-root-node_modules.outputs.cache-hit != 'true'
+        run: npm ci --no-audit --no-fund
+
+      - name: Bootstrap
+        run: npm run bootstrap
+
+      - name: Build themes for dist
+        run: |
+          npm run sass:flat
+          npm run dist:swatches
+
+      - name: Determine correct version to publish
+        run: |
+          NEXT_VERSION=$(npm info @progress/kendo-theme-default@next version)
+          LATEST_VERSION=$(npm info @progress/kendo-theme-default@latest version)
+          VERSION=$(node ./scripts/semver-next-inc.js --next $NEXT_VERSION --latest $LATEST_VERSION)
+          echo "Lerna should publish using $VERSION"
+          echo "VERSION=$VERSION" >> $GITHUB_ENV
+
+      - name: Prepare release
+        run: |
+          npx lerna version $VERSION --no-changelog --no-git-tag-version --no-push
+          git add .
+          git commit -m "chore(release): v$VERSION"
+
+      - name: Lerna publish
+        run: |
+          npx lerna publish from-package --dist-tag next
+
+      - name: Push to GitHub
+        run: |
+          git push origin v5-dev --quiet > /dev/null 2>&1

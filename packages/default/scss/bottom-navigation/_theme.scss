@@ -44,11 +44,3 @@
     }
 
 }
-
-@include exports( "bottom-navigation/theme/legacy" ) {
-
-    .k-ie .k-bottom-nav-item {
-        background-color: transparent;
-    }
-
-}

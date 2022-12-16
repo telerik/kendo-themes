@@ -53,5 +53,10 @@
 
     .k-progressbar-indeterminate {
         background-image: none;
+
+        &::before,
+        &::after {
+            background: $kendo-progressbar-value-bg;
+        }
     }
 }

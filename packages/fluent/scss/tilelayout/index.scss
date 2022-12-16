@@ -17,7 +17,7 @@ $_kendo-module-meta: (
 @include module.register( $_kendo-module-meta... );
 
 // Expose
-@mixin styles() {
+@mixin tilelayout-styles() {
     @include module.render( "tilelayout" ) {
         @include kendo-tilelayout--layout();
         @include kendo-tilelayout--theme();

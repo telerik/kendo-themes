@@ -1,10 +1,10 @@
 @include exports("appbar/theme") {
 
     .k-appbar {
-        @include box-shadow( $appbar-box-shadow );
+        @include box-shadow( $kendo-appbar-box-shadow );
     }
     .k-appbar-bottom {
-        @include box-shadow( $appbar-bottom-box-shadow );
+        @include box-shadow( $kendo-appbar-bottom-box-shadow );
     }
 
 
@@ -12,11 +12,11 @@
     @each $name, $color in $kendo-theme-colors {
         .k-appbar-#{$name} {
             @if $name == "light" {
-                color: $appbar-light-text;
-                background-color: $appbar-light-bg;
+                color: $kendo-appbar-light-text;
+                background-color: $kendo-appbar-light-bg;
             } @else if $name == "dark" {
-                color: $appbar-dark-text;
-                background-color: $appbar-dark-bg;
+                color: $kendo-appbar-dark-text;
+                background-color: $kendo-appbar-dark-bg;
             } @else {
                 color: contrast-wcag( $color );
                 background-color: $color;

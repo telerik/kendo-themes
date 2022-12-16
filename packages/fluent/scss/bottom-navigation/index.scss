@@ -17,7 +17,7 @@ $_kendo-module-meta: (
 @include module.register( $_kendo-module-meta... );
 
 // Expose
-@mixin styles() {
+@mixin bottom-navigation-styles() {
     @include module.render( "bottom-navigation" ) {
         @include kendo-bottom-navigation--layout();
         @include kendo-bottom-navigation--theme();

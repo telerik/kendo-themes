@@ -1,22 +1,22 @@
 // Appbar
-$appbar-margin-y: null !default;
-$appbar-margin-x: null !default;
-$appbar-padding-y: map-get( $spacing, 2 ) !default;
-$appbar-padding-x: map-get( $spacing, 2 ) !default;
-$appbar-border-width: 0px !default;
+$kendo-appbar-margin-y: null !default;
+$kendo-appbar-margin-x: null !default;
+$kendo-appbar-padding-y: map-get( $spacing, 2 ) !default;
+$kendo-appbar-padding-x: map-get( $spacing, 2 ) !default;
+$kendo-appbar-border-width: 0px !default;
 
-$appbar-zindex: 1000 !default;
+$kendo-appbar-zindex: 1000 !default;
 
-$appbar-font-size: $font-size !default;
-$appbar-line-height: $line-height !default;
-$appbar-font-family: $font-family !default;
-$appbar-gap: map-get( $spacing, 2 ) !default;
+$kendo-appbar-font-size: $font-size !default;
+$kendo-appbar-line-height: $line-height !default;
+$kendo-appbar-font-family: $font-family !default;
+$kendo-appbar-gap: map-get( $spacing, 2 ) !default;
 
-$appbar-light-bg: $light !default;
-$appbar-light-text: contrast-wcag( $light ) !default;
+$kendo-appbar-light-bg: $light !default;
+$kendo-appbar-light-text: contrast-wcag( $light ) !default;
 
-$appbar-dark-bg: $dark !default;
-$appbar-dark-text: contrast-wcag( $dark ) !default;
+$kendo-appbar-dark-bg: $dark !default;
+$kendo-appbar-dark-text: contrast-wcag( $dark ) !default;
 
-$appbar-box-shadow: 0px 1px 1px rgba(0, 0, 0, .16) !default;
-$appbar-bottom-box-shadow: 0px -1px 1px rgba(0, 0, 0, .16) !default;
+$kendo-appbar-box-shadow: 0px 1px 1px rgba(0, 0, 0, .16) !default;
+$kendo-appbar-bottom-box-shadow: 0px -1px 1px rgba(0, 0, 0, .16) !default;

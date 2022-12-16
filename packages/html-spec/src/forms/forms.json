@@ -1,0 +1,225 @@
+{
+    "$schema": "../../schemas/component.schema.json",
+    "title": "Kendo Forms HTML Spec",
+    "component": "forms",
+    "selector": [
+        ".k-form"
+    ],
+    "options": [
+        {
+            "name": "size",
+            "values": [
+                {
+                    "name": "small",
+                    "selector": [
+                        ".k-form-sm"
+                    ]
+                },
+                {
+                    "name": "medium",
+                    "selector": [
+                        ".k-form-md"
+                    ]
+                },
+                {
+                    "name": "large",
+                    "selector": [
+                        ".k-form-lg"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "orientation",
+            "values": [
+                {
+                    "name": "vertical",
+                    "selector": [
+                        ".k-form-vertical"
+                    ]
+                },
+                {
+                    "name": "horizontal",
+                    "selector": [
+                        ".k-form-horizontal"
+                    ]
+                }
+            ]
+        }
+    ],
+    "children": [
+        {
+            "name": "form-fieldset",
+            "selector": [
+                ".k-form-fieldset"
+            ],
+            "children": [
+                {
+                    "name": "form-legend",
+                    "selector": [
+                        ".k-form-legend"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "form-field",
+            "selector": [
+                ".k-form-field"
+            ],
+            "states": [
+                {
+                    "name": "error",
+                    "selector": [
+                        ".k-form-field-error"
+                    ]
+                }
+            ],
+            "children": [
+                {
+                    "name": "form-label",
+                    "selector": [
+                        ".k-form-label"
+                    ],
+                    "children": [
+                        {
+                            "name": "label-optional",
+                            "selector": [
+                                ".k-label-optional"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "form-field-wrap",
+                    "selector": [
+                        ".k-form-field-wrap"
+                    ]
+                },
+                {
+                    "name": "form-hint",
+                    "selector": [
+                        ".k-form-hint"
+                    ]
+                },
+                {
+                    "name": "form-error",
+                    "selector": [
+                        ".k-form-error"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "form-buttons",
+            "selector": [
+                ".k-form-buttons"
+            ]
+        },
+        {
+            "name": "form-autocomplete",
+            "$ref": "autocomplete",
+            "selector": [
+                ".k-form-autocomplete"
+            ]
+        },
+        {
+            "name": "form-combobox",
+            "$ref": "combobox",
+            "selector": [
+                ".k-form-combobox"
+            ]
+        },
+        {
+            "name": "form-dateinput",
+            "$ref": "dateinput",
+            "selector": [
+                ".k-form-dateinput"
+            ]
+        },
+        {
+            "name": "form-datepicker",
+            "$ref": "datepicker",
+            "selector": [
+                ".k-form-datepicker"
+            ]
+        },
+        {
+            "name": "form-datetimepicker",
+            "$ref": "datetimepicker",
+            "selector": [
+                ".k-form-datetimepicker"
+            ]
+        },
+        {
+            "name": "form-dropdown",
+            "$ref": "dropdown",
+            "selector": [
+                ".k-form-dropdown"
+            ]
+        },
+        {
+            "name": "form-maskedtextbox",
+            "$ref": "maskedtextbox",
+            "selector": [
+                ".k-form-maskedtextbox"
+            ]
+        },
+        {
+            "name": "form-multiselect",
+            "$ref": "multiselect",
+            "selector": [
+                ".k-form-multiselect"
+            ]
+        },
+        {
+            "name": "form-numerictextbox",
+            "$ref": "numerictextbox",
+            "selector": [
+                ".k-form-numerictextbox"
+            ]
+        },
+        {
+            "name": "form-searchbox",
+            "$ref": "searchbox",
+            "selector": [
+                ".k-form-searchbox"
+            ]
+        },
+        {
+            "name": "form-textarea",
+            "$ref": "textarea",
+            "selector": [
+                ".k-form-textarea"
+            ]
+        },
+        {
+            "name": "form-textbox",
+            "$ref": "textbox",
+            "selector": [
+                ".k-form-textbox"
+            ]
+        },
+        {
+            "name": "form-timedurationpicker",
+            "$ref": "timedurationpicker",
+            "selector": [
+                ".k-form-timedurationpicker"
+            ]
+        },
+        {
+            "name": "form-timepicker",
+            "$ref": "timepicker",
+            "selector": [
+                ".k-form-timepicker"
+            ]
+        },
+        {
+            "name": "form-checkbox",
+            "$ref": "checkbox",
+            "selector": [
+                ".k-form-checkbox"
+            ]
+        }
+    ]
+}

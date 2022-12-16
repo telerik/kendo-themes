@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { classNames } from '../utils';
+import { Button } from '../button';
 
 
 export interface CalendarFooterProps {
@@ -21,7 +22,7 @@ export class CalendarFooter extends React.Component<CalendarFooterProps> {
                     className,
                     'k-calendar-footer'
                 )}>
-                <a className="k-calendar-nav-today">Monday, October 29, 2021</a>
+                <Button fillMode="flat" themeColor="primary" className="k-calendar-nav-today">Monday, October 29, 2021</Button>
             </div>
         );
     }

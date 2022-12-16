@@ -1,9 +1,1 @@
 @import "~@progress/kendo-theme-default/scss/grid/_layout.scss";
-
-@include exports( "grid/layout/bootstrap" ) {
-
-    // Grouping header
-    .k-grouping-header .k-group-indicator {
-        @include border-radius( $kendo-border-radius-md );
-    }
-}

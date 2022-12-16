@@ -17,7 +17,7 @@ $_kendo-module-meta: (
 @include module.register( $_kendo-module-meta... );
 
 // Expose
-@mixin styles() {
+@mixin dropzone-styles() {
     @include module.render( "dropzone" ) {
         @include kendo-dropzone--layout();
         @include kendo-dropzone--theme();

@@ -22,8 +22,12 @@
 
 $components: null !default;
 
-@mixin configure($components: null) {
-    @if $components {
-        module.$components: $components;
+@mixin core-configure($config: null) {
+    @if $config {
+        $_components: map-get( $config, "components" );
+
+        @if ($_components) {
+            module.$components: $_components;
+        }
     }
 }

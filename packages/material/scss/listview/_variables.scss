@@ -1,25 +1,25 @@
 // Listview
-$listview-padding-x: k-map-get( $spacing, 1 ) !default;
-$listview-padding-y: k-map-get( $spacing, 1 ) !default;
-$listview-border-width: 1px !default;
-$listview-font-family: $font-family !default;
-$listview-font-size: $font-size !default;
-$listview-line-height: $line-height !default;
+$kendo-listview-padding-x: k-map-get( $spacing, 1 ) !default;
+$kendo-listview-padding-y: k-map-get( $spacing, 1 ) !default;
+$kendo-listview-border-width: 1px !default;
+$kendo-listview-font-family: $font-family !default;
+$kendo-listview-font-size: $font-size !default;
+$kendo-listview-line-height: $line-height !default;
 
-$listview-bg: $component-bg !default;
-$listview-text: $component-text !default;
-$listview-border: $component-border !default;
+$kendo-listview-bg: $component-bg !default;
+$kendo-listview-text: $component-text !default;
+$kendo-listview-border: $component-border !default;
 
-$listview-grid-gap: 10px !default;
+$kendo-listview-grid-gap: 10px !default;
 
-$listview-item-padding-x: k-map-get( $spacing, 1 ) !default;
-$listview-item-padding-y: k-map-get( $spacing, 1 ) !default;
+$kendo-listview-item-padding-x: k-map-get( $spacing, 1 ) !default;
+$kendo-listview-item-padding-y: k-map-get( $spacing, 1 ) !default;
 
-$listview-item-selected-bg: rgba( k-contrast-color( $listview-bg ), .04 ) !default;
-$listview-item-selected-text: null !default;
-$listview-item-selected-border: null !default;
+$kendo-listview-item-selected-bg: rgba( k-contrast-color( $kendo-listview-bg ), .04 ) !default;
+$kendo-listview-item-selected-text: null !default;
+$kendo-listview-item-selected-border: null !default;
 
-$listview-item-focus-bg: rgba( k-contrast-color( $listview-bg ), .08 ) !default;
-$listview-item-focus-text: null !default;
-$listview-item-focus-border: null !default;
-$listview-item-focus-shadow: null !default;
+$kendo-listview-item-focus-bg: rgba( k-contrast-color( $kendo-listview-bg ), .08 ) !default;
+$kendo-listview-item-focus-text: null !default;
+$kendo-listview-item-focus-border: null !default;
+$kendo-listview-item-focus-shadow: null !default;

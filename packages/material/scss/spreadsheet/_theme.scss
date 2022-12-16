@@ -36,10 +36,10 @@
     // Spreadsheet footer
     .k-spreadsheet-sheets-bar {
         @include fill(
-            $toolbar-text,
-            k-try-shade( $toolbar-bg, .5 ),
+            $kendo-toolbar-text,
+            k-try-shade( $kendo-toolbar-bg, .5 ),
             inherit,
-            $toolbar-gradient
+            $kendo-toolbar-gradient
         );
 
         .k-tabstrip-items .k-item.k-active {

@@ -21,7 +21,7 @@ $_kendo-module-meta: (
 @include module.register( $_kendo-module-meta... );
 
 // Expose
-@mixin styles() {
+@mixin menu-styles() {
     @include module.render( "menu" ) {
         @include kendo-menu--layout();
         @include kendo-menu--theme();

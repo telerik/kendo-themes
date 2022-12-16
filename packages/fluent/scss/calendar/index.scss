@@ -17,7 +17,7 @@ $_kendo-module-meta: (
 @include module.register( $_kendo-module-meta... );
 
 // Expose
-@mixin styles() {
+@mixin calendar-styles() {
     @include module.render( "calendar" ) {
         @include kendo-calendar--layout();
         @include kendo-calendar--theme();

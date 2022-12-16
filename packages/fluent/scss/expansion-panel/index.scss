@@ -16,7 +16,7 @@ $_kendo-module-meta: (
 @include module.register( $_kendo-module-meta... );
 
 // Expose
-@mixin styles() {
+@mixin expansion-panel-styles() {
     @include module.render( "expansion-panel" ) {
         @include kendo-expansion-panel--layout();
         @include kendo-expansion-panel--theme();

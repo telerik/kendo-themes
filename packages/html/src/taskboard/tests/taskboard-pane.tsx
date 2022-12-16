@@ -5,6 +5,7 @@ import { Button } from '../../button';
 import { Card, CardBody, CardHeader } from '../../card';
 import { Searchbox } from '../../searchbox';
 import { Textbox } from '../../textbox';
+import { Toolbar } from '../../toolbar';
 
 const root = ReactDOM.createRoot(
     document.getElementById('app') as HTMLElement
@@ -24,11 +25,11 @@ root.render(
             <div className="k-widget k-taskboard">
                 <div className="k-taskboard-header">
                     <div className="k-taskboard-header">
-                        <div className="k-taskboard-toolbar k-toolbar">
+                        <Toolbar className="k-taskboard-toolbar">
                             <Button icon="add">Add Column</Button>
                             <span className="k-spacer"></span>
                             <Searchbox placeholder="Search..." />
-                        </div>
+                        </Toolbar>
                     </div>
                 </div>
                 <div className="k-taskboard-content" style={{ marginRight: "304px" }}>
@@ -125,7 +126,7 @@ root.render(
                         </div>
                     </div>
                     <div className="k-taskboard-pane-content">
-                        <form className="k-form k-form-vertical">
+                        <form className="k-form k-form-md k-form-vertical">
                             <div className="k-form-field">
                                 <label className="k-label">Textbox:</label>
                                 <div>
@@ -145,11 +146,11 @@ root.render(
             <div className="k-widget k-taskboard">
                 <div className="k-taskboard-header">
                     <div className="k-taskboard-header">
-                        <div className="k-taskboard-toolbar k-toolbar">
+                        <Toolbar className="k-taskboard-toolbar">
                             <Button icon="add">Add Column</Button>
                             <span className="k-spacer"></span>
                             <Searchbox placeholder="Search..." />
-                        </div>
+                        </Toolbar>
                     </div>
                 </div>
                 <div className="k-taskboard-content" style={{ marginLeft: "304px" }}>
@@ -246,7 +247,7 @@ root.render(
                         </div>
                     </div>
                     <div className="k-taskboard-pane-content">
-                        <form className="k-form k-form-vertical">
+                        <form className="k-form k-form-md k-form-vertical">
                             <div className="k-form-field">
                                 <label className="k-label">Textbox:</label>
                                 <div>

@@ -19,25 +19,6 @@
             );
         }
 
-        // Today navigation
-        .k-nav-today,
-        .k-calendar-nav-today {
-            color: var( --kendo-calendar-today-nav-text, #{$kendo-calendar-today-nav-text});
-
-            &:hover,
-            &.k-hover,
-            &:focus,
-            &.k-focus {
-                color: var( --kendo-calendar-today-nav-hover-text, #{$kendo-calendar-today-nav-hover-text});
-            }
-
-            &.k-disabled {
-                @include disabled(
-                    $color: var( --kendo-disabled-text, inherit )
-                );
-            }
-        }
-
 
         // Header cells
         .k-calendar-th {
@@ -144,7 +125,7 @@
 
             li:hover,
             li.k-hover {
-                color: var( --kendo-calendar-today-nav-hover-text, #{$kendo-calendar-today-nav-hover-text} );
+                color: var( --kendo-calendar-navigation-hover-text, #{$kendo-calendar-navigation-hover-text} );
             }
         }
         .k-calendar-navigation-highlight {

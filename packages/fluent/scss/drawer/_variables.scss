@@ -28,13 +28,6 @@ $kendo-drawer-content-padding-x: var( --kendo-padding-x, #{$kendo-padding-x} ) !
 /// Vertical padding of the drawer content.
 /// @group drawer
 $kendo-drawer-content-padding-y: var( --kendo-padding-y, #{$kendo-padding-y} ) !default;
-/// Horizontal padding of the drawer item in each level.
-/// @group drawer
-$kendo-drawer-item-level-padding-x: map-get( $kendo-spacing, 4 ) !default;
-
-/// Count of the drawer item levels.
-/// @group drawer
-$kendo-drawer-item-level-count: 5 !default;
 
 /// Scrollbar width of the drawer.
 /// @group drawer
@@ -54,7 +47,7 @@ $kendo-drawer-scrollbar-hover-color: get-theme-color-var( neutral-110 ) !default
 
 /// Horizontal padding of the drawer item.
 /// @group drawer
-$kendo-drawer-item-padding-x: var( --kendo-padding-x, #{$kendo-padding-x} ) !default;
+$kendo-drawer-item-padding-x: map-get( $kendo-spacing, 4 ) !default;
 /// Vertical padding of the drawer item.
 /// @group drawer
 $kendo-drawer-item-padding-y: var( --kendo-padding-x, #{$kendo-padding-x} ) !default;
@@ -64,13 +57,21 @@ $kendo-drawer-item-font-size: $kendo-drawer-font-size !default;
 /// Line height of the drawer item.
 /// @group drawer
 $kendo-drawer-item-line-height: var( --kendo-line-height-lg, normal ) !default;
+
+/// Horizontal padding of the drawer item in each level.
+/// @group drawer
+$kendo-drawer-item-level-padding-x: $kendo-drawer-item-padding-x !default;
+/// Count of the drawer item levels.
+/// @group drawer
+$kendo-drawer-item-level-count: 5 !default;
+
 /// Icon size of the drawer item.
 /// @group drawer
 $kendo-drawer-icon-size: var( --kendo-icon-size, 1rem ) !default;
 
 /// Initial width of the mini drawer.
 /// @group drawer
-$kendo-drawer-mini-initial-width: calc( 4 * #{$kendo-drawer-item-padding-x} + #{$kendo-drawer-icon-size} ) !default;
+$kendo-drawer-mini-initial-width: calc( 2 * #{$kendo-drawer-item-padding-x} + #{$kendo-drawer-icon-size} ) !default;
 
 /// The border width of the drawer item ripple
 /// @group drawer

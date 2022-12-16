@@ -11,8 +11,13 @@ $kendo-icon-size-lg: calc( var( --kendo-icon-size, 1rem ) * 2 ) !default;
 /// @group icon
 $kendo-icon-spacing: map-get( $kendo-spacing, 2 ) !default;
 
+/// Padding of the action icons container.
+/// @group icon
+$kendo-icon-padding: map-get( $kendo-spacing, 1 ) !default;
+
 :root {
     --kendo-icon-size: #{$kendo-icon-size};
     --kendo-icon-size-lg: #{$kendo-icon-size-lg};
     --kendo-icon-spacing: #{$kendo-icon-spacing};
+    --kendo-icon-padding: #{$kendo-icon-padding};
 }

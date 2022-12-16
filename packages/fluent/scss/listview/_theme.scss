@@ -8,7 +8,7 @@
             var( --kendo-listview-text, $kendo-listview-text ),
             var( --kendo-listview-bg, $kendo-listview-bg ),
             var( --kendo-listview-border, $kendo-listview-border )
-        )
+        );
     }
 
 
@@ -29,6 +29,11 @@
                 var( --kendo-listview-item-selected-bg, $kendo-listview-item-selected-bg )
             )
         }
+    }
+
+    // List item
+    .k-listview-item {
+        border-color: $kendo-listview-border;
     }
 
     // Listview header

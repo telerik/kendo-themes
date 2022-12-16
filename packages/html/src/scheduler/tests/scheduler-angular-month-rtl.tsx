@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { Button } from '../../button';
 import { Icon } from '../../icon';
+import { Toolbar } from '../../toolbar';
 
 const root = ReactDOM.createRoot(
     document.getElementById('app') as HTMLElement
@@ -18,7 +19,7 @@ root.render(
         <style>{style}</style>
         <div id="test-area" className="k-d-grid k-grid-cols-1">
             <div className="k-widget k-scheduler k-rtl" dir="rtl">
-                <div className="k-scheduler-toolbar k-toolbar">
+                <Toolbar className="k-scheduler-toolbar">
                     <div className="k-toolbar-group">
                         <div className="k-scheduler-navigation">
                             <div className="k-button-group">
@@ -42,7 +43,7 @@ root.render(
                             <Button>Agenda</Button>
                         </div>
                     </div>
-                </div>
+                </Toolbar>
                 <div style={{ display: "block" }} >
                     <div className="k-scheduler-layout k-scheduler-monthview k-scheduler-flex-layout">
                         <div className="k-scheduler-pane">
@@ -211,82 +212,82 @@ root.render(
                                     </tbody>
                                 </table>
 
-                                <div style={{ backgroundColor: "rgb(245, 138, 138)", borderColor: "rgb(245, 138, 138)", width: "162px", right: "163px", top: "123px", height: "25px" }} className="k-event">
+                                <div style={{ width: "162px", right: "163px", top: "123px", height: "25px" }} className="k-event">
                                     <span className="k-event-actions"><Icon name="arrow-rotate-cw"></Icon></span>
                                     <div><div className="k-event-template">Dance Practice</div></div>
                                     <span className="k-event-actions"><a className="k-link k-event-delete"><Icon name="x"></Icon></a></span>
                                     <span className="k-resize-handle k-resize-w"></span>
                                     <span className="k-resize-handle k-resize-e"></span>
                                 </div>
-                                <div style={{ backgroundColor: "rgb(110, 179, 250)", borderColor: "rgb(110, 179, 250)", width: "162px", right: "327px", top: "123px", height: "25px" }} className="k-event">
+                                <div style={{ backgroundColor: "rgb(17, 134, 64)", borderColor: "rgb(17, 134, 64)", width: "162px", right: "327px", top: "123px", height: "25px" }} className="k-event">
                                     <span className="k-event-actions"><Icon name="arrow-rotate-cw"></Icon></span>
                                     <div><div className="k-event-template">HR Lecture</div></div>
                                 </div>
-                                <div style={{ backgroundColor: "rgb(245, 138, 138)", borderColor: "rgb(245, 138, 138)", width: "162px", right: "490px", top: "123px", height: "25px" }} className="k-event">
+                                <div style={{ width: "162px", right: "490px", top: "123px", height: "25px" }} className="k-event">
                                     <span className="k-event-actions"><Icon name="arrow-rotate-cw"></Icon></span>
                                     <div><div className="k-event-template">Dance Practice</div></div>
                                 </div>
-                                <div style={{ backgroundColor: "rgb(110, 179, 250)", borderColor: "rgb(110, 179, 250)", width: "488px", right: "653px", top: "123px", height: "25px" }} className="k-event">
+                                <div style={{ backgroundColor: "rgb(17, 134, 64)", borderColor: "rgb(17, 134, 64)", width: "488px", right: "653px", top: "123px", height: "25px" }} className="k-event">
                                     <span className="k-event-actions"></span>
                                     <div><div className="k-event-template">Attending HR Conference</div></div>
                                 </div>
-                                <div style={{ backgroundColor: "rgb(110, 179, 250)", borderColor: "rgb(110, 179, 250)", width: "162px", right: "327px", top: "150px", height: "25px" }} className="k-event">
+                                <div style={{ backgroundColor: "rgb(17, 134, 64)", borderColor: "rgb(17, 134, 64)", width: "162px", right: "327px", top: "150px", height: "25px" }} className="k-event">
                                     <span className="k-event-actions"></span>
                                     <div><div className="k-event-template">Software updates</div></div>
                                 </div>
-                                <div style={{ backgroundColor: "rgb(110, 179, 250)", borderColor: "rgb(110, 179, 250)", width: "162px", right: "490px", top: "150px", height: "25px" }} className="k-event">
+                                <div style={{ backgroundColor: "rgb(17, 134, 64)", borderColor: "rgb(17, 134, 64)", width: "162px", right: "490px", top: "150px", height: "25px" }} className="k-event">
                                     <span className="k-event-actions"><Icon name="arrow-rotate-cw"></Icon></span>
                                     <div><div className="k-event-template">Helpdesk weekly meeting</div></div>
                                 </div>
-                                <div style={{ backgroundColor: "rgb(110, 179, 250)", borderColor: "rgb(110, 179, 250)", width: "488px", right: "653px", top: "150px", height: "25px" }} className="k-event">
+                                <div style={{ backgroundColor: "rgb(17, 134, 64)", borderColor: "rgb(17, 134, 64)", width: "488px", right: "653px", top: "150px", height: "25px" }} className="k-event">
                                     <span className="k-event-actions"></span>
                                     <div><div className="k-event-template">Grand Canyon tour</div></div>
                                 </div>
-                                <div style={{ backgroundColor: "rgb(110, 179, 250)", borderColor: "rgb(110, 179, 250)", width: "325px", right: '0px', top: "220px", height: "25px" }} className="k-event">
+                                <div style={{ backgroundColor: "rgb(17, 134, 64)", borderColor: "rgb(17, 134, 64)", width: "325px", right: '0px', top: "220px", height: "25px" }} className="k-event">
                                     <span className="k-event-actions"><Icon name="arrow-e"></Icon></span>
                                     <div><div className="k-event-template">Attending HR Conference</div></div>
                                 </div>
-                                <div style={{ backgroundColor: "rgb(110, 179, 250)", borderColor: "rgb(110, 179, 250)", width: "162px", right: "327px", top: "220px", height: "25px" }} className="k-event">
+                                <div style={{ backgroundColor: "rgb(17, 134, 64)", borderColor: "rgb(17, 134, 64)", width: "162px", right: "327px", top: "220px", height: "25px" }} className="k-event">
                                     <span className="k-event-actions"></span>
                                     <div><div className="k-event-template">Business Lunch with Gregory Watkins</div></div>
                                 </div>
-                                <div style={{ backgroundColor: "rgb(110, 179, 250)", borderColor: "rgb(110, 179, 250)", width: "325px", right: "490px", top: "220px", height: "25px" }} className="k-event">
+                                <div style={{ backgroundColor: "rgb(17, 134, 64)", borderColor: "rgb(17, 134, 64)", width: "325px", right: "490px", top: "220px", height: "25px" }} className="k-event">
                                     <span className="k-event-actions"></span>
                                     <div><div className="k-event-template">Server maintenance</div></div>
                                 </div>
-                                <div style={{ backgroundColor: "rgb(110, 179, 250)", borderColor: "rgb(110, 179, 250)", width: "162px", right: "816px", top: "220px", height: "25px" }} className="k-event">
+                                <div style={{ backgroundColor: "rgb(17, 134, 64)", borderColor: "rgb(17, 134, 64)", width: "162px", right: "816px", top: "220px", height: "25px" }} className="k-event">
                                     <span className="k-event-actions"></span>
                                     <div><div className="k-event-template">Dentist</div></div>
                                 </div>
-                                <div style={{ backgroundColor: "rgb(110, 179, 250)", borderColor: "rgb(110, 179, 250)", width: "162px", right: "981px", top: "220px", height: "25px" }} className="k-event">
+                                <div style={{ backgroundColor: "rgb(17, 134, 64)", borderColor: "rgb(17, 134, 64)", width: "162px", right: "981px", top: "220px", height: "25px" }} className="k-event">
                                     <span className="k-event-actions"></span>
                                     <div><div className="k-event-template">Bob&apos;s Birthday Party</div></div>
                                 </div>
-                                <div style={{ backgroundColor: "rgb(110, 179, 250)", borderColor: "rgb(110, 179, 250)", width: "162px", right: '0px', top: "247px", height: "25px" }} className="k-event">
+                                <div style={{ backgroundColor: "rgb(17, 134, 64)", borderColor: "rgb(17, 134, 64)", width: "162px", right: '0px', top: "247px", height: "25px" }} className="k-event">
                                     <span className="k-event-actions"><Icon name="arrow-e"></Icon></span>
                                     <div><div className="k-event-template">Grand Canyon tour</div></div>
                                 </div>
-                                <div style={{ backgroundColor: "rgb(245, 138, 138)", borderColor: "rgb(245, 138, 138)", width: "162px", right: "163px", top: "247px", height: "25px" }} className="k-event">
+                                <div style={{ width: "162px", right: "163px", top: "247px", height: "25px" }} className="k-event">
                                     <span className="k-event-actions"></span>
                                     <div><div className="k-event-template">Car Service</div></div>
                                 </div>
-                                <div style={{ backgroundColor: "rgb(110, 179, 250)", borderColor: "rgb(110, 179, 250)", width: "162px", right: "327px", top: "247px", height: "25px" }} className="k-event">
+                                <div style={{ backgroundColor: "rgb(17, 134, 64)", borderColor: "rgb(17, 134, 64)", width: "162px", right: "327px", top: "247px", height: "25px" }} className="k-event">
                                     <span className="k-event-actions"><Icon name="arrow-rotate-cw"></Icon></span>
                                     <div><div className="k-event-template">HR Lecture</div></div>
                                 </div>
-                                <div style={{ backgroundColor: "rgb(245, 138, 138)", borderColor: "rgb(245, 138, 138)", width: "162px", right: "490px", top: "247px", height: "25px" }} className="k-event">
+                                <div style={{ width: "162px", right: "490px", top: "247px", height: "25px" }} className="k-event">
                                     <span className="k-event-actions"></span>
                                     <div><div className="k-event-template">Banking</div></div>
                                 </div>
-                                <div style={{ backgroundColor: "rgb(110, 179, 250)", borderColor: "rgb(110, 179, 250)", width: "162px", right: "653px", top: "247px", height: "25px" }} className="k-event">
+                                <div style={{ backgroundColor: "rgb(17, 134, 64)", borderColor: "rgb(17, 134, 64)", width: "162px", right: "653px", top: "247px", height: "25px" }} className="k-event">
                                     <span className="k-event-actions"></span>
                                     <div><div className="k-event-template">Breakfast with CFO and COO</div></div>
                                 </div>
-                                <div style={{ backgroundColor: "rgb(110, 179, 250)", borderColor: "rgb(110, 179, 250)", width: "162px", right: "816px", top: "247px", height: "25px" }} className="k-event">
+                                <div style={{ backgroundColor: "rgb(17, 134, 64)", borderColor: "rgb(17, 134, 64)", width: "162px", right: "816px", top: "247px", height: "25px" }} className="k-event">
                                     <span className="k-event-actions"></span>
                                     <div><div className="k-event-template">Job Interview - Laura Bailey</div></div>
                                 </div>
-                                <div style={{ backgroundColor: "rgb(110, 179, 250)", borderColor: "rgb(110, 179, 250)", width: "162px", right: "981px", top: "247px", height: "25px" }} className="k-event">
+                                <div style={{ backgroundColor: "rgb(17, 134, 64)", borderColor: "rgb(17, 134, 64)", width: "162px", right: "981px", top: "247px", height: "25px" }} className="k-event">
                                     <span className="k-event-actions"></span>
                                     <div><div className="k-event-template">Bob&apos;s Birthday</div></div>
                                 </div>

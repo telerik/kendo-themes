@@ -21,6 +21,7 @@ $_kendo-module-meta: (
         "menu",
         "dialog",
         "pager",
+        "chip",
         "skeleton",
         "draggable"
     )
@@ -37,7 +38,7 @@ $_kendo-module-meta: (
 @include module.register( $_kendo-module-meta... );
 
 // Expose
-@mixin styles() {
+@mixin grid-styles() {
     @include module.render( "grid" ) {
         @include kendo-grid--layout();
         @include kendo-grid--theme();

@@ -15,7 +15,7 @@ $_kendo-module-meta: (
 @include module.register( $_kendo-module-meta... );
 
 // Expose
-@mixin styles() {
+@mixin draggable-styles() {
     @include module.render( "draggable" ) {
         @include kendo-dialog--layout();
         @include kendo-dialog--theme();

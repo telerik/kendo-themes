@@ -5,6 +5,7 @@ import { Checkbox } from '../../checkbox';
 import { DropdownList } from '../../dropdownlist';
 import { NumericTextbox } from '../../numerictextbox';
 import { Textbox } from '../../textbox';
+import { Toolbar } from '../../toolbar';
 
 const root = ReactDOM.createRoot(
     document.getElementById('app') as HTMLElement
@@ -141,9 +142,9 @@ root.render(
             </div>
             <h3>With Toolbar</h3>
             <div className="k-grid k-widget telerik-blazor">
-                <div className="k-toolbar k-grid-toolbar">
+                <Toolbar className="k-grid-toolbar">
                     <Button icon="add">Add</Button>
-                </div>
+                </Toolbar>
                 <div className="k-grid-header">
                     <div className="k-grid-header-wrap">
                         <table role="grid">

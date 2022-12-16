@@ -98,6 +98,9 @@
         padding-inline: var( --INTERNAL--kendo-input-padding-x, 0 );
         padding-block: var( --INTERNAL--kendo-input-padding-y, 0 );
     }
+    textarea.k-textarea {
+        overflow: auto;
+    }
 
 
     // Picker
@@ -172,9 +175,16 @@
 
     // Input multiple values
     .k-input-values {
+        min-width: 0px;
         width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
         gap: calc( var( --INTERNAL--kendo-input-padding-y, 0 ) / 2 );
         cursor: text;
+    }
+    .k-input-values .k-chip-list {
+        display: contents;
     }
 
 

@@ -24,20 +24,6 @@
         }
 
 
-        // Today navigation
-        .k-nav-today,
-        .k-calendar-nav-today {
-            color: $calendar-today-nav-text;
-
-            &:hover,
-            &.k-hover,
-            &:focus,
-            &.k-focus {
-                color: $calendar-today-nav-hover-text;
-            }
-        }
-
-
         // Header cells
         .k-calendar-th,
         .k-calendar-caption,
@@ -132,7 +118,7 @@
 
             li:hover,
             li.k-hover {
-                color: $calendar-today-nav-hover-text;
+                color: $calendar-navigation-hover-text;
             }
         }
         .k-calendar-navigation-highlight {

@@ -12,8 +12,10 @@ on:
         default: 'master'
 
   workflow_run:
-    workflows: [ "Release stable channel" ]
-    types: [ completed ]
+    workflows:
+      - "Publish to npm"
+    types:
+      - completed
 
 jobs:
 
@@ -28,15 +30,24 @@ jobs:
           ref: ${{ github.event.inputs.ref }}
 
       - name: Setup node
+        id: setup-node
         uses: actions/setup-node@v3
         with:
-          cache: 'npm'
-          node-version: 14.x
+          node-version: 16.x
+
+      - name: Use cache for root node_modules
+        id: cache-root-node_modules
+        uses: actions/cache@v3
+        with:
+          path: node_modules
+          key: root-node_modules-${{ steps.setup-node.outputs.node-version }}-${{ hashFiles('package-lock.json') }}
 
       - name: Install
-        run: |
-          npm ci
-          npm run bootstrap
+        if: steps.cache-root-node_modules.outputs.cache-hit != 'true'
+        run: npm ci --no-audit --no-fund
+
+      - name: Bootstrap
+        run: npm run bootstrap
 
       - name: Build swatches
         run: npm run sass:swatches

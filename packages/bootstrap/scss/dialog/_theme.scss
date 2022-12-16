@@ -5,15 +5,23 @@
     // Titlebar
     .k-dialog-titlebar {
         @include fill(
-            $dialog-titlebar-text,
-            $dialog-titlebar-bg,
-            $dialog-titlebar-border
+            $kendo-dialog-titlebar-text,
+            $kendo-dialog-titlebar-bg,
+            $kendo-dialog-titlebar-border
         );
     }
 
     // Buttons
-    .k-dialog-buttongroup {
-        border-color: $window-titlebar-border;
+    .k-dialog-actions {
+        border-color: $kendo-window-titlebar-border;
+    }
+
+    // Dialog theme colors
+    @each $name, $color in $kendo-dialog-theme-colors {
+        .k-dialog-#{$name} .k-dialog-titlebar {
+            color: contrast-wcag( $color );
+            background-color: $color;
+        }
     }
 
 }

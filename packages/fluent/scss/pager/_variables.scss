@@ -1,14 +1,20 @@
 @use "../core/color-system" as *;
 @use "../core/_variables.scss" as *;
 @use "../button/_variables.scss" as *;
-@use "../list/_variables.scss" as *;
 
 /// Horizontal padding of the pager.
 /// @group pager
 $kendo-pager-padding-x: map-get( $kendo-spacing, 2 ) !default;
+$kendo-pager-padding-x-sm: map-get( $kendo-spacing, 1 ) + map-get( $kendo-spacing, thin ) !default;
+$kendo-pager-padding-x-md: map-get( $kendo-spacing, 2 ) !default;
+$kendo-pager-padding-x-lg: map-get( $kendo-spacing, 2 ) + map-get( $kendo-spacing, thin ) !default;
+
 /// Vertical padding of the pager.
 /// @group pager
 $kendo-pager-padding-y: map-get( $kendo-spacing, 2 ) !default;
+$kendo-pager-padding-y-sm: $kendo-pager-padding-x-sm !default;
+$kendo-pager-padding-y-md: $kendo-pager-padding-x-md !default;
+$kendo-pager-padding-y-lg: $kendo-pager-padding-x-lg !default;
 /// Border width of the pager.
 /// @group pager
 $kendo-pager-border-width: 1px !default;
@@ -47,15 +53,6 @@ $kendo-pager-focus-border: get-theme-color-var( neutral-130 ) !default;
 /// @group pager
 $kendo-pager-section-spacing: 1em !default;
 
-/// Horizontal padding of the pager items.
-/// @group pager
-$kendo-pager-item-padding-x: var( --kendo-button-padding-y-md, #{$kendo-button-padding-y-md}) !default;
-/// Vertical padding of the pager items.
-/// @group pager
-$kendo-pager-item-padding-y: $kendo-pager-item-padding-x !default;
-/// Border width of the pager items.
-/// @group pager
-$kendo-pager-item-border-width: 0 !default;
 /// Border radius of the pager items.
 /// @group pager
 $kendo-pager-item-border-radius: 0 !default;
@@ -63,120 +60,11 @@ $kendo-pager-item-border-radius: 0 !default;
 /// @group pager
 $kendo-pager-item-spacing: null !default;
 
-/// Background color of the pager items.
+/// Spacing between the pager item groups according to the pager size.
 /// @group pager
-$kendo-pager-item-bg: transparent !default;
-/// Text color of the pager items.
-/// @group pager
-$kendo-pager-item-text: inherit !default;
-/// Border color of the pager items.
-/// @group pager
-$kendo-pager-item-border: inherit !default;
-
-/// Background color of the hovered pager items.
-/// @group pager
-$kendo-pager-item-hover-bg: var( --kendo-list-item-hover-bg, #{$kendo-list-item-hover-bg}) !default;
-/// Text color of the hovered pager items.
-/// @group pager
-$kendo-pager-item-hover-text: var( --kendo-list-item-hover-text, #{$kendo-list-item-hover-text}) !default;
-/// Border color of the hovered pager items.
-/// @group pager
-$kendo-pager-item-hover-border: inherit !default;
-
-/// Background color of the selected pager items.
-/// @group pager
-$kendo-pager-item-selected-bg: var( --kendo-list-item-selected-bg, #{$kendo-list-item-selected-bg}) !default;
-/// Text color of the selected pager items.
-/// @group pager
-$kendo-pager-item-selected-text: var( --kendo-list-item-selected-text, #{$kendo-list-item-selected-text}) !default;
-/// Border color of the selected pager items.
-/// @group pager
-$kendo-pager-item-selected-border: inherit !default;
-
-/// Background color of the focused pager items.
-/// @group pager
-$kendo-pager-item-focus-bg: transparent !default;
-/// Text color of the focused pager items.
-/// @group pager
-$kendo-pager-item-focus-text: inherit !default;
-/// Border color of the focused pager items.
-/// @group pager
-$kendo-pager-item-focus-border: inherit !default;
-/// Box shadow of the focused pager items.
-/// @group pager
-$kendo-pager-item-focus-shadow: inset 0 0 0 2px get-theme-color-var( neutral-40 ) !default;
-
-/// Background color of the disabled pager items.
-/// @group pager
-$kendo-pager-item-disabled-bg: transparent !default;
-/// Text color of the disabled pager items.
-/// @group pager
-$kendo-pager-item-disabled-text: get-theme-color-var( neutral-90 ) !default;
-/// Border color of the disabled pager items.
-/// @group pager
-$kendo-pager-item-disabled-border: inherit !default;
-
-/// Horizontal padding of the pager numbers.
-/// @group pager
-$kendo-pager-number-padding-x: $kendo-pager-item-padding-x !default;
-/// Vertical padding of the pager numbers.
-/// @group pager
-$kendo-pager-number-padding-y: $kendo-pager-item-padding-y !default;
-/// Border width of the pager numbers.
-/// @group pager
-$kendo-pager-number-border-width: $kendo-pager-item-border-width !default;
-/// Border radius of the pager numbers.
-/// @group pager
-$kendo-pager-number-border-radius: 0 !default;
-/// Spacing around the pager numbers.
-/// @group pager
-$kendo-pager-number-spacing: $kendo-pager-item-spacing !default;
-/// Font weight of the pager numbers.
-/// @group pager
-$kendo-pager-number-font-weight: var( --kendo-font-weight-bold, inherit ) !default;
-
-/// Background color of the pager numbers.
-/// @group pager
-$kendo-pager-number-bg: transparent !default;
-/// Text color of the pager numbers.
-/// @group pager
-$kendo-pager-number-text: get-theme-color-var( primary-100 ) !default;
-/// Border color of the pager numbers.
-/// @group pager
-$kendo-pager-number-border: inherit !default;
-
-/// Background color of the hovered pager numbers.
-/// @group pager
-$kendo-pager-number-hover-bg: get-theme-color-var( primary-10 ) !default;
-/// Text color of the hovered pager numbers.
-/// @group pager
-$kendo-pager-number-hover-text: $kendo-pager-number-text !default;
-/// Border color of the hovered pager numbers.
-/// @group pager
-$kendo-pager-number-hover-border: $kendo-pager-item-hover-border !default;
-
-/// Background color of the selected pager numbers.
-/// @group pager
-$kendo-pager-number-selected-bg: get-theme-color-var( primary-20 ) !default;
-/// Text color of the selected pager numbers.
-/// @group pager
-$kendo-pager-number-selected-text: $kendo-pager-number-text !default;
-/// Border color of the selected pager numbers.
-/// @group pager
-$kendo-pager-number-selected-border: $kendo-pager-item-selected-border !default;
-
-/// Background color of the focused pager numbers.
-/// @group pager
-$kendo-pager-number-focus-bg: $kendo-pager-number-bg !default;
-/// Text color of the focused pager numbers.
-/// @group pager
-$kendo-pager-number-focus-text: $kendo-pager-number-text !default;
-/// Border color of the focused pager numbers.
-/// @group pager
-$kendo-pager-number-focus-border: $kendo-pager-item-focus-border !default;
-/// Box shadow of the focused pager numbers.
-/// @group pager
-$kendo-pager-number-focus-shadow: inset 0 0 0 2px get-theme-color-var( primary-20 ) !default;
+$kendo-pager-item-group-spacing-sm: map-get( $kendo-spacing, 2 ) !default;
+$kendo-pager-item-group-spacing-md: map-get( $kendo-spacing, 2 ) !default;
+$kendo-pager-item-group-spacing-lg: map-get( $kendo-spacing, 2 ) !default;
 
 /// Text color of the pager sizes label.
 /// @group pager
@@ -192,3 +80,23 @@ $kendo-pager-input-width: 5em !default;
 /// Width of the pager dropdowns.
 /// @group pager
 $kendo-pager-dropdown-width: 5em !default;
+
+/// Sizes map of the pager.
+/// @group pager
+$kendo-pager-sizes: (
+    sm: (
+        padding-x: $kendo-pager-padding-x-sm,
+        padding-y: $kendo-pager-padding-y-sm,
+        item-group-spacing: $kendo-pager-item-group-spacing-sm
+    ),
+    md: (
+        padding-x: $kendo-pager-padding-x-md,
+        padding-y: $kendo-pager-padding-y-md,
+        item-group-spacing: $kendo-pager-item-group-spacing-md
+    ),
+    lg: (
+        padding-x: $kendo-pager-padding-x-lg,
+        padding-y: $kendo-pager-padding-y-lg,
+        item-group-spacing: $kendo-pager-item-group-spacing-lg
+    )
+) !default;

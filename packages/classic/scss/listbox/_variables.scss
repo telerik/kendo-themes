@@ -1,20 +1,49 @@
 // Listbox
-$listbox-margin: $padding-x !default;
-$listbox-button-margin: $padding-x !default;
-$listbox-width: 10em !default;
-$listbox-default-height: 200px !default;
 
-$listbox-border-width: 1px !default;
-$listbox-font-family: $font-family !default;
-$listbox-font-size: $font-size !default;
-$listbox-line-height: $line-height !default;
+/// Margin between the listbox elements.
+/// @group listbox
+$kendo-listbox-spacing: $padding-x !default;
+/// Margin between the listbox buttons.
+/// @group listbox
+$kendo-listbox-button-spacing: $padding-x !default;
+/// Width of the listbox.
+/// @group listbox
+$kendo-listbox-width: 10em !default;
+/// Height of the listbox.
+/// @group listbox
+$kendo-listbox-default-height: 200px !default;
+/// Width of the border around the listbox.
+/// @group listbox
+$kendo-listbox-border-width: 1px !default;
+/// Font family of the listbox.
+/// @group listbox
+$kendo-listbox-font-family: $font-family !default;
+/// Font size of the listbox.
+/// @group listbox
+$kendo-listbox-font-size: $font-size !default;
+/// Line height of the listbox.
+/// @group listbox
+$kendo-listbox-line-height: $line-height !default;
+/// Background color of the listbox.
+/// @group listbox
+$kendo-listbox-bg: $component-bg !default;
+/// Text color of the listbox.
+/// @group listbox
+$kendo-listbox-text: $component-text !default;
+/// Border color of the listbox.
+/// @group listbox
+$kendo-listbox-border: $component-border !default;
 
-$listbox-bg: $component-bg !default;
-$listbox-text: $component-text !default;
-$listbox-border: $component-border !default;
+/// Inline item padding of the listbox.
+/// @group listbox
+$kendo-listbox-item-padding-x: null !default;
+/// Block item padding of the listbox.
+/// @group listbox
+$kendo-listbox-item-padding-y: null !default;
 
-$listbox-item-padding-x: null !default;
-$listbox-item-padding-y: null !default;
-
-$listbox-drop-hint-border-width: null !default;
-$listbox-drop-hint-width: 1px !default;
+/// Width of the border around the drop hint.
+/// @group listbox
+$kendo-listbox-drop-hint-border-width: null !default;
+/// Width of the drop hint.
+/// @group listbox
+$kendo-listbox-drop-hint-width: 1px !default;

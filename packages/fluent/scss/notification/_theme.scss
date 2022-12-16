@@ -16,19 +16,6 @@
         box-shadow: var( --INTERNAL--kendo-notification-box-shadow, none );
     }
 
-    .k-notification-wrap {
-        >.k-icon {
-            --INTERNAL--kendo-notification-icon-text: var( --kendo-notification-icon-text, #{$kendo-notification-icon-text} );
-
-            color: var( --INTERNAL--kendo-notification-icon-text, initial );
-        }
-
-        >.k-i-close,
-        >.k-i-x {
-            color: inherit;
-        }
-    }
-
     @each $theme-color, $color-props in $kendo-notification-theme-colors {
         $_text: inherit;
         $_bg: map-get( $color-props, bg );

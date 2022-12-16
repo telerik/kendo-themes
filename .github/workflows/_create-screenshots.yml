@@ -1,0 +1,62 @@
+name: Create screenshots
+
+on:
+  workflow_call:
+
+concurrency:
+  group: create-screenshots-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+
+  run:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        theme: [default, bootstrap, material, classic, nouvelle, fluent]
+
+    steps:
+
+      - name: Print Firefox version
+        run: firefox --version
+
+      - name: Checkout branch
+        uses: actions/checkout@v3
+
+      - name: Setup node
+        id: setup-node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 14.x
+
+      - name: Use cache for root node_modules
+        id: cache-root-node_modules
+        uses: actions/cache@v3
+        with:
+          path: node_modules
+          key: root-node_modules-${{ steps.setup-node.outputs.node-version }}-${{ hashFiles('package-lock.json') }}
+
+      - name: Install
+        if: steps.cache-root-node_modules.outputs.cache-hit != 'true'
+        run: npm ci --no-audit --no-fund
+
+      - name: Download artifacts
+        uses: actions/download-artifact@v3
+        with:
+          path: .tmp
+
+      - name: Unpack artifacts
+        run: find .tmp -name "*.tar" -type f -exec tar -xf {} \;
+
+      - name: Create screenshots
+        run: ./build/create-screenshots.sh ${{ matrix.theme }}
+
+      - name: Pack screenshots
+        run: tar -cf screenshots-${{ matrix.theme }}.tar tests/_output/${{ matrix.theme }}
+
+      - name: Upload screenshots
+        uses: actions/upload-artifact@v3
+        with:
+          name: screenshots-${{ matrix.theme }}
+          path: screenshots-${{ matrix.theme }}.tar

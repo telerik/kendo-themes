@@ -134,6 +134,24 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-chip-calc-size</td>
+    <td>Calculation</td>
+<td>
+
+`calc( #{$kendo-chip-line-height * 1em} + #{$kendo-chip-padding-y * 2} + #{$kendo-chip-border-width * 2} )`
+
+</td>
+<td>
+
+`calc( 1.2857142857em + 8px + 2px )`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Calculated height of the chip.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-chip-sizes</td>
     <td>Map</td>
 <td>
@@ -175,14 +193,14 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`$base-text`
+`if( $dark-theme, $white, $black)`
 
 </td>
 <td>
 
-<span class="color-preview" style="background-color: rgba(0, 0, 0, 0.87)"></span>
+<span class="color-preview" style="background-color: black"></span>
 
-`rgba(0, 0, 0, 0.87)`
+`black`
 
 </td>
 </tr>
@@ -206,7 +224,7 @@ The following table lists the available variables for customization.
 </td>
 <td>
 
-`("base": rgba(0, 0, 0, 0.87), "error": #f31700, "info": #0058e9, "warning": #ffc000, "success": #37b400)`
+`("base": black, "error": #f31700, "info": #0058e9, "warning": #ffc000, "success": #37b400)`
 
 </td>
 </tr>
@@ -219,14 +237,14 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`k-try-tint( $kendo-chip-base-bg, 90% )`
+`if( $dark-theme, $kendo-button-bg, k-try-tint( $kendo-chip-base-bg, 92% ))`
 
 </td>
 <td>
 
-<span class="color-preview" style="background-color: rgba(235, 235, 235, 0.987)"></span>
+<span class="color-preview" style="background-color: #ebebeb"></span>
 
-`rgba(235, 235, 235, 0.987)`
+`#ebebeb`
 
 </td>
 </tr>
@@ -239,7 +257,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`$kendo-chip-base-bg`
+`$kendo-button-text`
 
 </td>
 <td>
@@ -259,14 +277,14 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`k-try-tint( $kendo-chip-base-bg, 70% )`
+`$kendo-chip-solid-bg`
 
 </td>
 <td>
 
-<span class="color-preview" style="background-color: rgba(192, 192, 192, 0.961)"></span>
+<span class="color-preview" style="background-color: #ebebeb"></span>
 
-`rgba(192, 192, 192, 0.961)`
+`#ebebeb`
 
 </td>
 </tr>
@@ -293,18 +311,36 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-chip-solid-focus-bg</td>
-    <td>Color</td>
+    <td>$kendo-chip-solid-gradient</td>
+    <td>Null</td>
 <td>
 
-`k-try-tint( $kendo-chip-base-bg, 92% )`
+`$kendo-button-gradient`
 
 </td>
 <td>
 
-<span class="color-preview" style="background-color: rgba(239, 239, 239, 0.9896)"></span>
+`null`
 
-`rgba(239, 239, 239, 0.9896)`
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base gradient of solid chip.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chip-solid-focus-bg</td>
+    <td>Color</td>
+<td>
+
+`k-try-tint( $kendo-chip-base-bg, 80% )`
+
+</td>
+<td>
+
+<span class="color-preview" style="background-color: #cccccc"></span>
+
+`#cccccc`
 
 </td>
 </tr>
@@ -340,9 +376,9 @@ The following table lists the available variables for customization.
 </td>
 <td>
 
-<span class="color-preview" style="background-color: rgba(222, 222, 222, 0.9792)"></span>
+<span class="color-preview" style="background-color: #d6d6d6"></span>
 
-`rgba(222, 222, 222, 0.9792)`
+`#d6d6d6`
 
 </td>
 </tr>
@@ -378,9 +414,9 @@ The following table lists the available variables for customization.
 </td>
 <td>
 
-<span class="color-preview" style="background-color: rgba(205, 205, 205, 0.9688)"></span>
+<span class="color-preview" style="background-color: #c2c2c2"></span>
 
-`rgba(205, 205, 205, 0.9688)`
+`#c2c2c2`
 
 </td>
 </tr>
@@ -431,7 +467,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`$kendo-chip-base-bg`
+`$kendo-chip-solid-text`
 
 </td>
 <td>
@@ -451,7 +487,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`$kendo-chip-base-bg`
+`$kendo-chip-outline-text`
 
 </td>
 <td>
@@ -489,14 +525,14 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`$kendo-chip-base-bg`
+`k-try-tint( $kendo-chip-base-bg, 92% )`
 
 </td>
 <td>
 
-<span class="color-preview" style="background-color: rgba(0, 0, 0, 0.87)"></span>
+<span class="color-preview" style="background-color: #ebebeb"></span>
 
-`rgba(0, 0, 0, 0.87)`
+`#ebebeb`
 
 </td>
 </tr>
@@ -509,14 +545,14 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`k-contrast-color( $kendo-chip-base-bg )`
+`k-contrast-color( $kendo-chip-outline-hover-bg )`
 
 </td>
 <td>
 
-<span class="color-preview" style="background-color: white"></span>
+<span class="color-preview" style="background-color: black"></span>
 
-`white`
+`black`
 
 </td>
 </tr>
@@ -529,14 +565,14 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`$kendo-chip-outline-hover-bg`
+`k-try-tint( $kendo-chip-base-bg, 84% )`
 
 </td>
 <td>
 
-<span class="color-preview" style="background-color: rgba(0, 0, 0, 0.87)"></span>
+<span class="color-preview" style="background-color: #d6d6d6"></span>
 
-`rgba(0, 0, 0, 0.87)`
+`#d6d6d6`
 
 </td>
 </tr>
@@ -554,9 +590,9 @@ The following table lists the available variables for customization.
 </td>
 <td>
 
-<span class="color-preview" style="background-color: white"></span>
+<span class="color-preview" style="background-color: black"></span>
 
-`white`
+`black`
 
 </td>
 </tr>

@@ -15,7 +15,7 @@ $_kendo-module-meta: (
 @include module.register( $_kendo-module-meta... );
 
 // Expose
-@mixin styles() {
+@mixin badge-styles() {
     @include module.render( "badge" ) {
         @include kendo-badge--layout();
         @include kendo-badge--theme();

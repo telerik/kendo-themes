@@ -176,12 +176,12 @@
 
     // Header and footer
     .k-gantt-header {
-        border-width: 0 0 $toolbar-border-width;
+        border-width: 0 0 $kendo-toolbar-border-width;
         flex-shrink: 0;
         z-index: 6;
     }
     .k-gantt-footer {
-        border-width: $toolbar-border-width 0 0;
+        border-width: $kendo-toolbar-border-width 0 0;
         flex-shrink: 0;
     }
 

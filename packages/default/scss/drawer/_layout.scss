@@ -16,9 +16,9 @@
         border-style: solid;
         box-sizing: border-box;
         outline: 0;
-        font-family: $drawer-font-family;
-        font-size: $drawer-font-size;
-        line-height: $drawer-line-height;
+        font-family: $kendo-drawer-font-family;
+        font-size: $kendo-drawer-font-size;
+        line-height: $kendo-drawer-line-height;
         display: flex;
         flex-direction: column;
         flex: 0 0 auto;
@@ -38,13 +38,13 @@
         .k-drawer-expanded &.k-drawer-start,
         .k-drawer-left.k-drawer-mini &,
         .k-drawer-left.k-drawer-expanded & {
-            border-right-width: $drawer-border-width;
+            border-right-width: $kendo-drawer-border-width;
         }
         .k-drawer-mini &.k-drawer-end,
         .k-drawer-expanded &.k-drawer-end,
         .k-drawer-right.k-drawer-mini &,
         .k-drawer-right.k-drawer-expanded & {
-            border-left-width: $drawer-border-width;
+            border-left-width: $kendo-drawer-border-width;
         }
 
         // Position
@@ -114,10 +114,10 @@
 
         // Scrollbar styles for Chrome, Safari and Opera
         &::-webkit-scrollbar {
-            width: $drawer-scrollbar-width;
+            width: $kendo-drawer-scrollbar-width;
         }
         &::-webkit-scrollbar-thumb {
-            border-radius: $drawer-scrollbar-radius;
+            border-radius: $kendo-drawer-scrollbar-radius;
         }
     }
     .k-drawer-items,
@@ -130,29 +130,30 @@
         align-items: stretch;
     }
     .k-drawer-item {
-        padding: $drawer-item-padding-y $drawer-item-padding-x;
+        padding: $kendo-drawer-item-padding-y $kendo-drawer-item-padding-x;
         outline: 0;
         color: inherit;
-        font-size: $drawer-item-font-size;
-        line-height: $drawer-item-line-height;
+        font-size: $kendo-drawer-item-font-size;
+        line-height: $kendo-drawer-item-line-height;
         display: flex;
         flex-flow: row nowrap;
+        gap: $kendo-drawer-item-padding-x;
         cursor: pointer;
 
         > .k-drawer-link {
-            margin: (-$drawer-item-padding-y) (-$drawer-item-padding-x);
-            padding: $drawer-item-padding-y $drawer-item-padding-x;
+            margin: (-$kendo-drawer-item-padding-y) (-$kendo-drawer-item-padding-x);
+            padding: $kendo-drawer-item-padding-y $kendo-drawer-item-padding-x;
             color: inherit;
             display: flex;
             flex-flow: row nowrap;
             flex: 1 0 auto;
+            gap: $kendo-drawer-item-padding-x;
         }
 
         .k-icon {
-            margin: 0 $drawer-item-padding-x;
             height: auto;
-            font-size: $drawer-icon-size;
-            line-height: $drawer-item-line-height;
+            font-size: $kendo-drawer-icon-size;
+            line-height: $kendo-drawer-item-line-height;
             flex-shrink: 0;
 
             &.k-i-none {
@@ -161,7 +162,6 @@
         }
 
         .k-item-text {
-            padding: 0 $drawer-item-padding-x;
             display: inline-block;
             white-space: nowrap;
             overflow: hidden;
@@ -171,12 +171,13 @@
         .k-drawer-toggle {
             margin-inline-start: auto;
             cursor: pointer;
+            display: flex;
         }
 
         // Hierarchy items
-        @for $i from 1 through $drawer-item-level-count {
+        @for $i from 1 through $kendo-drawer-item-level-count {
             &.k-level-#{$i} {
-                padding-inline-start: ( $drawer-item-level-padding-x * $i );
+                padding-inline-start: ( $i + 1) * $kendo-drawer-item-level-padding-x;
             }
         }
     }
@@ -191,7 +192,7 @@
     .k-drawer-mini {
 
         .k-drawer-wrapper {
-            width: $drawer-mini-initial-width;
+            width: $kendo-drawer-mini-initial-width;
         }
 
     }
@@ -205,7 +206,7 @@
         .k-drawer-mini .k-drawer-start,
         .k-drawer-expanded .k-drawer-start,
         &.k-drawer-expanded .k-drawer-start {
-            border-left-width: $drawer-border-width;
+            border-left-width: $kendo-drawer-border-width;
             border-right-width: 0;
         }
         &.k-drawer-mini .k-drawer-end,
@@ -213,7 +214,7 @@
         &.k-drawer-expanded .k-drawer-end
         .k-drawer-expanded .k-drawer-end {
             border-left-width: 0;
-            border-right-width: $drawer-border-width;
+            border-right-width: $kendo-drawer-border-width;
         }
 
         // Position

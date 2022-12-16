@@ -1,0 +1,76 @@
+name: Publish to npm
+
+on:
+  workflow_dispatch:
+
+jobs:
+
+  release-stable:
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Checkout branch
+        uses: actions/checkout@v3
+        with:
+          ref: master
+          fetch-depth: '0'
+          token: ${{ secrets.GH_TOKEN }}
+
+      - name: Setup git
+        run: |
+          git config user.name "kendo-bot"
+          git config user.email "kendouiteam@progress.com"
+
+      - name: Merge develop to master
+        run: |
+          git fetch --quiet
+          git reset --hard origin/master
+          git merge --ff-only --quiet origin/develop
+
+      - name: Setup node
+        id: setup-node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16.x
+          registry-url: 'https://registry.npmjs.org'
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Use cache for root node_modules
+        id: cache-root-node_modules
+        uses: actions/cache@v3
+        with:
+          path: node_modules
+          key: root-node_modules-${{ steps.setup-node.outputs.node-version }}-${{ hashFiles('package-lock.json') }}
+
+      - name: Install
+        if: steps.cache-root-node_modules.outputs.cache-hit != 'true'
+        run: npm ci --no-audit --no-fund
+
+      - name: Bootstrap
+        run: npm run bootstrap
+
+      - name: Build themes for dist
+        run: |
+          npm run sass
+          npm run sass:flat
+          npm run dist:swatches
+
+      - name: Lerna publish
+        run: |
+          npx lerna publish --conventional-commits --conventional-graduate --create-release github
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+
+      - name: Mark checks as successful
+        run: |
+          commit=$(git rev-parse HEAD)
+          ./build/mark-checks.sh $commit
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+
+      - name: Push to GitHub
+        run: |
+          git push origin master --tags --quiet > /dev/null 2>&1
+          git push origin master:develop --quiet > /dev/null 2>&1

@@ -1,20 +1,28 @@
 @include exports( "utils/order" ) {
 
-    /// @name k-order-first
-    /// @description This is equivalent to `order: -9999;`.
+    /// This is equivalent to `order: -9999;`.
+    /// @name .k-order-first
     /// @group order
+    /// @contextType css
+    _ {}
 
-    /// @name k-order-last
-    /// @description This is equivalent to `order: 9999;`.
+    /// This is equivalent to `order: 9999;`.
+    /// @name .k-order-last
     /// @group order
+    /// @contextType css
+    _ {}
 
-    /// @name k-order-none
-    /// @description This is equivalent to `order: 0;`.
+    /// This is equivalent to `order: 0;`.
+    /// @name .k-order-none
     /// @group order
+    /// @contextType css
+    _ {}
 
-    /// @name from k-order-1 to k-order-12
-    /// @description This is equivalent to `order: 1;`, `order: 2;`, `order: 12;`, etc.
+    /// This is equivalent to `order: 1;`, `order: 2;`, `order: 12;`, etc.
+    /// @name .from k-order-1 to k-order-12
     /// @group order
+    /// @contextType css
+    _ {}
 
     // Order utility classes
     $utils-order: (

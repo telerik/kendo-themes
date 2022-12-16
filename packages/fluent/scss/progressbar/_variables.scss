@@ -59,16 +59,16 @@ $kendo-progressbar-disabled-border: $kendo-progressbar-disabled-bg !default;
 
 /// Progress background color of the progressbar.
 /// @group progressbar
-$kendo-progressbar-fill-bg: get-theme-color-var( primary-100 ) !default;
+$kendo-progressbar-value-bg: get-theme-color-var( primary-100 ) !default;
 /// Progress text color of the progressbar.
 /// @group progressbar
-$kendo-progressbar-fill-text: var( --kendo-component-text, initial ) !default;
+$kendo-progressbar-value-text: var( --kendo-component-text, initial ) !default;
 /// Progress border color of the progressbar.
 /// @group progressbar
-$kendo-progressbar-fill-border: $kendo-progressbar-fill-bg !default;
+$kendo-progressbar-value-border: $kendo-progressbar-value-bg !default;
 /// Progress background gradient of the progressbar.
 /// @group progressbar
-$kendo-progressbar-fill-gradient: null !default;
+$kendo-progressbar-value-gradient: null !default;
 
 /// Progress status offset of the progressbar.
 /// @group progressbar
@@ -79,7 +79,7 @@ $kendo-progressbar-vertical-status-offset: calc( (#{$kendo-progressbar-font-size
 
 /// Progress background color of the disabled progressbar.
 /// @group progressbar
-$kendo-progressbar-fill-disabled-bg: get-theme-color-var( primary-30 ) !default;
+$kendo-progressbar-value-disabled-bg: get-theme-color-var( primary-30 ) !default;
 
 /// Chunk order color of the progressbar.
 /// @group progressbar

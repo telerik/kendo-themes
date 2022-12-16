@@ -1,3 +1,4 @@
+@use "sass:map";
 @use "../core/color-system" as *;
 @use "../core/_variables.scss" as *;
 
@@ -56,7 +57,7 @@ $kendo-window-action-hover-opacity: 1 !default;
 $kendo-window-inner-padding-x: map-get( $kendo-spacing, 6 ) !default;
 /// Vertical padding of the content of the window.
 /// @group window
-$kendo-window-inner-padding-y: map-get( $kendo-spacing, 6 ) !default;
+$kendo-window-inner-padding-y: map-get( $kendo-spacing, 3 ) !default;
 
 /// Horizontal padding of the window action buttons.
 /// @group window
@@ -105,3 +106,47 @@ $kendo-window-sizes: (
     md: 800px,
     lg: 1200px
 ) !default;
+
+/// Theme variations for the window.
+$kendo-window-brand-colors: (
+    primary: primary
+ );
+
+// Matrix with window theme colors in the order: bg, color, border
+$_tc-window-matrix: (
+    (normal: (100, $white, 100)),
+);
+
+$_tc-window-dark-matrix: (
+    (normal: (160, $white, 160)),
+);
+
+$_tc-window-light-matrix: (
+    (normal: (50, 160, 50)),
+);
+
+/// Theme colors map for the window variations.
+$kendo-window-theme-colors: ();
+
+@each $ui-states in $_tc-window-matrix {
+    @each $brand-color, $palette in $kendo-window-brand-colors {
+        $kendo-window-theme-colors: map.deep-merge(
+            $kendo-window-theme-colors,
+            generate-theme-variation( $brand-color, $palette, $ui-states )
+        );
+    };
+}
+
+@each $ui-states in $_tc-window-dark-matrix {
+    $kendo-window-theme-colors: map.deep-merge(
+        $kendo-window-theme-colors,
+        generate-theme-variation( dark, neutral, $ui-states )
+    );
+}
+
+@each $ui-states in $_tc-window-light-matrix {
+    $kendo-window-theme-colors: map.deep-merge(
+        $kendo-window-theme-colors,
+        generate-theme-variation( light, neutral, $ui-states )
+    );
+}

@@ -111,14 +111,7 @@
         }
 
         .k-header a {
-            -webkit-touch-callout: none;
-
-            -webkit-user-select: none;
-            -moz-user-select: none;
             user-select: none;
-
-            -webkit-user-drag: none;
-            -moz-user-drag: none;
         }
     }
 }
@@ -167,7 +160,7 @@
         }
 
         .k-scheduler-toolbar {
-            padding: $toolbar-padding-y $toolbar-padding-x;
+            padding: $kendo-toolbar-padding-y-md $kendo-toolbar-padding-x-md;
 
             > * {
                 margin: 0;
@@ -206,7 +199,7 @@
         }
 
         .k-scheduler-footer {
-            padding: $toolbar-padding-y $toolbar-padding-x;
+            padding: $kendo-toolbar-padding-y-md $kendo-toolbar-padding-x-md;
             display: flex;
             justify-content: space-between;
 

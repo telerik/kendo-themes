@@ -10,32 +10,78 @@
 <body id="app" class="k-body">
     <style>
         .k-listview {
-            height: 200px;
+            height: 300px;
         }
 
     </style>
     <div id="test-area">
-        <div class="k-tabstrip-wrapper">
-            <div class="k-widget k-header k-tabstrip k-tabstrip-top">
-                <div class="k-tabstrip-items-wrapper k-hstack">
-                    <ul class="k-tabstrip-items k-reset">
-                        <li class="k-active k-item k-tab-on-top k-first">
-                            <span class="k-loading k-complete"></span>
-                            <span class="k-link">Child listview with loading</span>
-                        </li>
-                    </ul>
+        <span>Listview with states</span>
+        <div class="k-d-flex k-listview">
+            <div class="k-listview-header">Header</div>
+            <div class="k-listview-content k-d-flex k-flex-row">
+                <div class="k-loading-mask k-opaque" style="height: 100%; width: 100%;">
+                    <span class="k-loading-text">Loading...</span>
+                    <div class="k-loading-image"></div>
+                    <div class="k-loading-color"></div>
                 </div>
-                <div class="k-content k-active" id="tabstrip-1" style="display: block;">
-                    <div class="k-widget k-listview k-d-flex">
-                        <div class="k-listview-content">
-                            <div class="k-loading-mask k-opaque" style="width: 100%; height: 100%; top: 0px; left: 0px;">
-                                <span class="k-loading-text">Loading...</span>
-                                <div class="k-loading-image"></div>
-                                <div class="k-loading-color"></div>
-                            </div>
-                        </div>
+                <div class="k-listview-item">Listview Item</div>
+                <div class="k-listview-item">Listview Item</div>
+                <div class="k-listview-item">Listview Item</div>
+                <div class="k-listview-item">Listview Item</div>
+            </div>
+            <div class="k-listview-footer">Footer</div>
+            <div class="k-listview-pager k-listview-pager-bottom k-pager k-pager-md">
+                <div class="k-pager-numbers-wrap">
+                    <button class="k-pager-nav k-pager-first k-button k-button-md k-button-flat k-button-flat-base k-icon-button k-disabled">
+                        <span class="k-button-icon k-icon k-i-caret-alt-to-left"></span>
+                    </button>
+                    <button class="k-pager-nav k-button k-button-md k-button-flat k-button-flat-base k-icon-button k-focus">
+                        <span class="k-button-icon k-icon k-i-caret-alt-left"></span>
+                    </button>
+                    <select class="k-picker k-dropdown-list k-dropdown k-rounded-md k-picker-md">
+                        <option>1</option>
+                    </select>
+                    <div class="k-pager-numbers">
+                        <button class="k-button k-button-md k-button-flat k-button-flat-primary">
+                            <span class="k-button-text">1</span>
+                        </button>
+                        <button class="k-button k-button-md k-button-flat k-button-flat-primary k-hover">
+                            <span class="k-button-text">2</span>
+                        </button>
+                        <button class="k-button k-button-md k-button-flat k-button-flat-primary k-focus">
+                            <span class="k-button-text">3</span>
+                        </button>
+                        <button class="k-button k-button-md k-button-flat k-button-flat-primary k-selected">
+                            <span class="k-button-text">4</span>
+                        </button>
+                        <button class="k-button k-button-md k-button-flat k-button-flat-primary k-hover k-focus">
+                            <span class="k-button-text">5</span>
+                        </button>
+                        <button class="k-button k-button-md k-button-flat k-button-flat-primary k-focus k-selected">
+                            <span class="k-button-text">6</span>
+                        </button>
                     </div>
+                    <button class="k-pager-nav k-button k-button-md k-button-flat k-button-flat-base k-icon-button k-hover">
+                        <span class="k-button-icon k-icon k-i-caret-alt-right"></span>
+                    </button>
+                    <button class="k-pager-nav k-pager-last k-button k-button-md k-button-flat k-button-flat-base k-icon-button">
+                        <span class="k-button-icon k-icon k-i-caret-alt-to-right"></span>
+                    </button>
                 </div>
+                <span class="k-pager-sizes">
+                    <span class="k-dropdown k-picker k-picker-md k-picker-solid k-rounded-md">
+                        <span class="k-input-inner">
+                            <span class="k-input-value-text">20</span>
+                        </span>
+                        <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
+                            <span class="k-button-icon k-icon k-i-arrow-s"></span>
+                        </button>
+                    </span>items per page
+                </span>
+                <button class="k-pager-refresh k-button k-button-md k-button-flat k-button-flat-base k-icon-button">
+                    <span class="k-button-icon k-icon k-i-arrow-rotate-cw"></span>
+                </button>
+                <span class="k-pager-info">1 - 20 of 91 items</span>
             </div>
         </div>
     </div>

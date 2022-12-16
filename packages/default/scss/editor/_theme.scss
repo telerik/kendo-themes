@@ -6,9 +6,7 @@
             $component-bg,
             $component-border
         );
-    }
 
-    kendo-editor {
         &.k-readonly {
             .k-editor-content.k-focus {
                 outline-color: $body-text;
@@ -45,21 +43,21 @@
             }
         }
 
-        // Hover & Actve state
+        // Hover & Active state
         &:hover,
-        &.k-active,
+        &.k-hover,
         &.k-active {
-            border-color: $panel-border;
+            border-color: $component-border;
         }
     }
 
     // Resizable images
     .k-editor-resize-handle {
-        background-color: $editor-resize-handle-bg;
-        border-color: $editor-resize-handle-border;
+        background-color: $kendo-editor-resize-handle-bg;
+        border-color: $kendo-editor-resize-handle-border;
     }
     .ProseMirror-selectednode { // sass-lint:disable-line class-name-format
-        outline-color: $editor-selectednode-outline-color;
+        outline-color: $kendo-editor-selectednode-outline-color;
     }
 
 
@@ -77,15 +75,25 @@
         .k-text-selected,
         &::selection {
             @include fill (
-                $color: $editor-selected-text,
-                $bg: $editor-selected-bg
+                $color: $kendo-editor-selected-text,
+                $bg: $kendo-editor-selected-bg
             );
         }
 
         .k-text-highlighted {
             @include fill (
-                $bg: $editor-highlighted-bg
+                $bg: $kendo-editor-highlighted-bg
             );
+        }
+
+        // Table styles
+        td,
+        th {
+            border-color: #dddddd;
+        }
+
+        .selectedCell::after { // sass-lint:disable-line class-name-format
+            background-color: rgba(200, 200, 255, .4);
         }
     }
 

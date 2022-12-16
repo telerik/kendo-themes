@@ -1,0 +1,159 @@
+{
+    "$schema": "../../schemas/component.schema.json",
+    "title": "Kendo Dropdown HTML Spec",
+    "component": "dropdown",
+    "selector": [
+        ".k-dropdown",
+        ".k-dropdown-list",
+        ".k-dropdownlist"
+    ],
+    "states": [
+        {
+            "name": "hover",
+            "selector": [
+                ":hover",
+                ".k-hover"
+            ]
+        },
+        {
+            "name": "focus",
+            "selector": [
+                ":focus",
+                ":focus-within",
+                ".k-focus"
+            ]
+        },
+        {
+            "name": "valid",
+            "selector": [
+                ".k-valid",
+                ".ng-valid.ng-touched",
+                ".ng-valid.ng-dirty"
+            ]
+        },
+        {
+            "name": "invalid",
+            "selector": [
+                ".k-invalid",
+                ".ng-invalid.ng-touched",
+                ".ng-invalid.ng-dirty"
+            ]
+        },
+        {
+            "name": "disabled",
+            "selector": [
+                ":disabled",
+                "[disabled]",
+                ".k-disabled"
+            ]
+        }
+    ],
+    "options": [
+        {
+            "name": "size",
+            "values": [
+                {
+                    "name": "small",
+                    "selector": [
+                        ".k-picker-sm"
+                    ]
+                },
+                {
+                    "name": "medium",
+                    "selector": [
+                        ".k-picker-md"
+                    ]
+                },
+                {
+                    "name": "large",
+                    "selector": [
+                        ".k-picker-lg"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "rounded",
+            "values": [
+                {
+                    "name": "small",
+                    "selector": [
+                        ".k-rounded-sm"
+                    ]
+                },
+                {
+                    "name": "medium",
+                    "selector": [
+                        ".k-rounded-md"
+                    ]
+                },
+                {
+                    "name": "large",
+                    "selector": [
+                        ".k-rounded-lg"
+                    ]
+                },
+                {
+                    "name": "full",
+                    "selector": [
+                        ".k-rounded-full"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "fillMode",
+            "values": [
+                {
+                    "name": "solid",
+                    "selector": [
+                        ".k-picker-solid"
+                    ]
+                },
+                {
+                    "name": "flat",
+                    "selector": [
+                        ".k-picker-flat"
+                    ]
+                },
+                {
+                    "name": "outline",
+                    "selector": [
+                        ".k-picker-outline"
+                    ]
+                }
+            ]
+        }
+    ],
+    "children": [
+        {
+            "name": "inner-input",
+            "selector": [
+                ".k-input-inner"
+            ]
+        },
+        {
+            "name": "input-button",
+            "$ref": "button",
+            "selector": [
+                ".k-input-button"
+            ],
+            "options": [
+                {
+                    "name": "size",
+                    "value": "{parent.size}"
+                },
+                {
+                    "name": "fillMode",
+                    "value": "{parent.fillMode}"
+                },
+                {
+                    "name": "themeColor",
+                    "value": "{parent.themeColor}"
+                }
+            ]
+        }
+    ]
+}
+
+

@@ -25,7 +25,7 @@
     // Image editor toolbar
     .k-imageeditor-toolbar {
         border-width: 0;
-        border-bottom-width: $toolbar-border-width;
+        border-bottom-width: $kendo-toolbar-border-width;
     }
 
 
@@ -149,18 +149,3 @@
     }
 
 }
-
-
-
-
-@include exports("imageeditor/layout/IE") {
-
-    .k-ie {
-        .k-imageeditor-canvas {
-            flex-direction: row;
-            align-self: flex-start;
-        }
-    }
-
-}
-

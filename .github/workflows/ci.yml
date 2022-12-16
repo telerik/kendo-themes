@@ -1,0 +1,158 @@
+name: CI
+
+on:
+  push:
+    branches-ignore:
+      - 'master'
+      - 'develop'
+      - 'v4-dev'
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+
+  compile-themes:
+    name: Compile themes
+    uses: ./.github/workflows/_compile-themes.yml
+
+
+  render-test-pages:
+    name: Render test pages
+    uses: ./.github/workflows/_render-test-pages.yml
+    with:
+      force-render: NO
+      upload-policy: conditionally
+
+
+  create-screenshots:
+    name: Create screenshots
+    uses: ./.github/workflows/_create-screenshots.yml
+    needs: [ compile-themes, render-test-pages ]
+
+
+  detect-changes:
+    name: Detect changes
+    runs-on: ubuntu-latest
+    needs: [ render-test-pages, create-screenshots ]
+
+    steps:
+
+      - name: Checkout branch
+        uses: actions/checkout@v3
+
+      - name: Download artifacts
+        uses: actions/download-artifact@v3
+        with:
+          path: .tmp
+
+      - name: Unpack artifacts
+        run: find .tmp -name "*.tar" -type f -exec tar -xf {} \;
+
+      - name: Compare artifacts
+        run: |
+          HAS_CHANGES=0
+          HAS_NEW=0
+          git diff --exit-code --quiet -- tests/ || HAS_CHANGES=1
+          [[ $(git ls-files --others --exclude-standard tests/) ]] && HAS_NEW=1
+          echo "HAS_CHANGES=$HAS_CHANGES" >> $GITHUB_ENV
+          echo "HAS_NEW=$HAS_NEW" >> $GITHUB_ENV
+
+      - name: Setup git user
+        run: |
+          git config user.name "kendo-bot"
+          git config user.email "kendouiteam@progress.com"
+
+      - name: Push changes to GitHub
+        if: ${{ (env.HAS_CHANGES == 1 || env.HAS_NEW == 1) }}
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: |
+          echo "Visual tests have detected changes. Updating markup and screenshots."
+
+          git add tests/
+          git commit -m "chore: update visual previews"
+
+          git push
+
+          echo "Mark checks as successful"
+
+          commit=$(git rev-parse HEAD)
+          ./build/mark-checks.sh $commit
+
+
+  ci-visual:
+    name: Status check > Visual
+    runs-on: ubuntu-latest
+    needs: [ detect-changes ]
+    steps:
+      - name: Done
+        run: echo "Done!"
+
+
+  lint-scripts:
+    name: Lint scripts
+    uses: ./.github/workflows/_lint-scripts.yml
+
+  ci-lint-scripts:
+    name: Status check > Lint scripts
+    runs-on: ubuntu-latest
+    needs: [ lint-scripts ]
+    steps:
+      - name: Done
+        run: echo "Done!"
+
+
+  lint-styles:
+    name: Lint styles
+    uses: ./.github/workflows/_lint-styles.yml
+
+
+  ci-lint-styles:
+    name: Status check > Lint styles
+    runs-on: ubuntu-latest
+    needs: [ lint-styles ]
+    steps:
+      - name: Done
+        run: echo "Done!"
+
+
+  # placeholder
+  # replace placeholder with ci
+  placeholder-a11y:
+    name: Status check > A11y
+    runs-on: ubuntu-latest
+    steps:
+      - name: Done
+        run: echo "Done!"
+
+  placeholder-unit:
+    name: Status check > Unit
+    runs-on: ubuntu-latest
+    steps:
+      - name: Done
+        run: echo "Done!"
+
+  placeholder-html-spec:
+    name: Status check > HTML spec
+    runs-on: ubuntu-latest
+    steps:
+      - name: Done
+        run: echo "Done!"
+
+
+  # temporary until we change checks
+  temp-unit:
+    name: CI | Unit
+    runs-on: ubuntu-latest
+    steps:
+      - name: Done
+        run: echo "Done!"
+
+  temp-visual:
+    name: CI | Visual
+    runs-on: ubuntu-latest
+    steps:
+      - name: Done
+        run: echo "Done!"

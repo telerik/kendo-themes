@@ -43,7 +43,7 @@
 
     // Quick access toolbar
     .k-spreadsheet-quick-access-toolbar {
-        padding: $toolbar-padding-y;
+        padding: $kendo-toolbar-padding-y-md;
         display: inline-flex;
         flex-direction: row;
         position: absolute;
@@ -55,7 +55,7 @@
 
     // Tabstrip
     .k-spreadsheet-tabstrip {
-        padding-top: $toolbar-padding-y;
+        padding-top: $kendo-toolbar-padding-y-md;
         position: relative;
         z-index: 1;
     }
@@ -88,7 +88,7 @@
         [data-tool="merge"],
         [data-tool="freeze"] {
             width: auto;
-            min-width: calc( #{$form-line-height} * 1em );
+            min-width: calc( #{$kendo-form-line-height} * 1em );
         }
 
         .k-color-picker {
@@ -267,9 +267,6 @@
         height: 100%;
         border-color: inherit;
         box-sizing: border-box;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
         user-select: none;
         position: absolute;
         z-index: 2;
@@ -325,7 +322,6 @@
         width: 100%;
         height: 100%;
         overflow: scroll;
-        -webkit-overflow-scrolling: touch;
         position: absolute;
         z-index: 1;
 

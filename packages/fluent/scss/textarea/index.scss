@@ -17,7 +17,7 @@ $_kendo-module-meta: (
 @include module.register( $_kendo-module-meta... );
 
 // Expose
-@mixin styles() {
+@mixin textarea-styles() {
     @include module.render( "textarea" ) {
         @include kendo-textarea--layout();
         @include kendo-textarea--theme();

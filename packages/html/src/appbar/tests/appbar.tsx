@@ -1,5 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { Appbar } from '../appbar';
+import { AppbarSection } from '../appbar-section';
 import { Icon } from '../../icon';
 import { Textbox } from '../../textbox';
 
@@ -37,449 +39,449 @@ root.render(
         <style>{styles}</style>
         <div id="test-area" className="k-d-grid k-grid-cols-1">
             <section>
-                <h4>Appbar Inherit ThemeColor</h4>
+                <h4>Appbar Sticky and Inherit ThemeColor</h4>
                 <div style={{ background: "#1976d2", color: "#fff" }}>
-                    <div className="k-appbar k-appbar-inherit">
-                        <div className="k-appbar-section">
+                    <Appbar positionMode={'sticky'} themeColor={'inherit'}>
+                        <AppbarSection>
                             <Icon name="menu" />
-                        </div>
+                        </AppbarSection>
                         <span className="k-spacer k-spacer-sized" style={{ width: "8px" }}></span>
-                        <div className="k-appbar-section">
+                        <AppbarSection>
                             <h1 className="title">Page Title</h1>
-                        </div>
+                        </AppbarSection>
                         <span className="k-spacer k-spacer-sized" style={{ width: "32px" }}></span>
-                        <div className="k-appbar-section">
+                        <AppbarSection>
                             <ul>
                                 <li>Menu Item</li>
                                 <li>Menu Item</li>
                                 <li>Menu Item</li>
                             </ul>
-                        </div>
+                        </AppbarSection>
 
                         <span className="k-spacer"></span>
 
-                        <div className="k-appbar-section">
+                        <AppbarSection>
                             <Textbox placeholder="Search..." />
-                        </div>
+                        </AppbarSection>
 
-                        <div className="k-appbar-section">
+                        <AppbarSection>
                             <Icon name="sliders" />
                             <Icon name="bell" />
                             <span className="k-appbar-separator"></span>
                             <Icon name="user" />
-                        </div>
-                    </div>
+                        </AppbarSection>
+                    </Appbar>
                 </div>
             </section>
 
 
             <section>
                 <h4>Appbar Light ThemeColor</h4>
-                <div className="k-appbar k-appbar-light">
-                    <div className="k-appbar-section">
+                <Appbar themeColor={'light'}>
+                    <AppbarSection>
                         <Icon name="menu" />
-                    </div>
+                    </AppbarSection>
                     <span className="k-spacer k-spacer-sized" style={{ width: "8px" }}></span>
-                    <div className="k-appbar-section">
+                    <AppbarSection>
                         <h1 className="title">Page Title</h1>
-                    </div>
+                    </AppbarSection>
                     <span className="k-spacer k-spacer-sized" style={{ width: "32px" }}></span>
-                    <div className="k-appbar-section">
+                    <AppbarSection>
                         <ul>
                             <li>Menu Item</li>
                             <li>Menu Item</li>
                             <li>Menu Item</li>
                         </ul>
-                    </div>
+                    </AppbarSection>
 
                     <span className="k-spacer"></span>
 
-                    <div className="k-appbar-section">
+                    <AppbarSection>
                         <Textbox placeholder="Search..." />
-                    </div>
+                    </AppbarSection>
 
-                    <div className="k-appbar-section">
+                    <AppbarSection>
                         <Icon name="sliders" />
                         <Icon name="bell" />
                         <span className="k-appbar-separator"></span>
                         <Icon name="user" />
-                    </div>
-                </div>
+                    </AppbarSection>
+                </Appbar>
             </section>
 
 
             <section>
                 <h4>Appbar Dark ThemeColor</h4>
-                <div className="k-appbar k-appbar-dark">
-                    <div className="k-appbar-section">
+                <Appbar themeColor={'dark'}>
+                    <AppbarSection>
                         <Icon name="menu" />
-                    </div>
+                    </AppbarSection>
                     <span className="k-spacer k-spacer-sized" style={{ width: "8px" }}></span>
-                    <div className="k-appbar-section">
+                    <AppbarSection>
                         <h1 className="title">Page Title</h1>
-                    </div>
+                    </AppbarSection>
                     <span className="k-spacer k-spacer-sized" style={{ width: "32px" }}></span>
-                    <div className="k-appbar-section">
+                    <AppbarSection>
                         <ul>
                             <li>Menu Item</li>
                             <li>Menu Item</li>
                             <li>Menu Item</li>
                         </ul>
-                    </div>
+                    </AppbarSection>
 
                     <span className="k-spacer"></span>
 
-                    <div className="k-appbar-section">
+                    <AppbarSection>
                         <Textbox placeholder="Search..." />
-                    </div>
+                    </AppbarSection>
 
-                    <div className="k-appbar-section">
+                    <AppbarSection>
                         <Icon name="sliders" />
                         <Icon name="bell" />
                         <span className="k-appbar-separator"></span>
                         <Icon name="user" />
-                    </div>
-                </div>
+                    </AppbarSection>
+                </Appbar>
             </section>
 
             <section>
                 <h4>Appbar Primary ThemeColor</h4>
-                <div className="k-appbar k-appbar-primary">
-                    <div className="k-appbar-section">
+                <Appbar themeColor={'primary'}>
+                    <AppbarSection>
                         <Icon name="menu" />
-                    </div>
+                    </AppbarSection>
                     <span className="k-spacer k-spacer-sized" style={{ width: "8px" }}></span>
-                    <div className="k-appbar-section">
+                    <AppbarSection>
                         <h1 className="title">Page Title</h1>
-                    </div>
+                    </AppbarSection>
                     <span className="k-spacer k-spacer-sized" style={{ width: "32px" }}></span>
-                    <div className="k-appbar-section">
+                    <AppbarSection>
                         <ul>
                             <li>Menu Item</li>
                             <li>Menu Item</li>
                             <li>Menu Item</li>
                         </ul>
-                    </div>
+                    </AppbarSection>
 
                     <span className="k-spacer"></span>
 
-                    <div className="k-appbar-section">
+                    <AppbarSection>
                         <Textbox placeholder="Search..." />
-                    </div>
+                    </AppbarSection>
 
-                    <div className="k-appbar-section">
+                    <AppbarSection>
                         <Icon name="sliders" />
                         <Icon name="bell" />
                         <span className="k-appbar-separator"></span>
                         <Icon name="user" />
-                    </div>
-                </div>
+                    </AppbarSection>
+                </Appbar>
             </section>
 
             <section>
                 <h4>Appbar Secondary ThemeColor</h4>
-                <div className="k-appbar k-appbar-secondary">
-                    <div className="k-appbar-section">
+                <Appbar themeColor={'secondary'}>
+                    <AppbarSection>
                         <Icon name="menu" />
-                    </div>
+                    </AppbarSection>
                     <span className="k-spacer k-spacer-sized" style={{ width: "8px" }}></span>
-                    <div className="k-appbar-section">
+                    <AppbarSection>
                         <h1 className="title">Page Title</h1>
-                    </div>
+                    </AppbarSection>
                     <span className="k-spacer k-spacer-sized" style={{ width: "32px" }}></span>
-                    <div className="k-appbar-section">
+                    <AppbarSection>
                         <ul>
                             <li>Menu Item</li>
                             <li>Menu Item</li>
                             <li>Menu Item</li>
                         </ul>
-                    </div>
+                    </AppbarSection>
 
                     <span className="k-spacer"></span>
 
-                    <div className="k-appbar-section">
+                    <AppbarSection>
                         <Textbox placeholder="Search..." />
-                    </div>
+                    </AppbarSection>
 
-                    <div className="k-appbar-section">
+                    <AppbarSection>
                         <Icon name="sliders" />
                         <Icon name="bell" />
                         <span className="k-appbar-separator"></span>
                         <Icon name="user" />
-                    </div>
-                </div>
+                    </AppbarSection>
+                </Appbar>
             </section>
 
             <section>
                 <h4>Appbar Tertiary ThemeColor</h4>
-                <div className="k-appbar k-appbar-tertiary">
-                    <div className="k-appbar-section">
+                <Appbar themeColor={'tertiary'}>
+                    <AppbarSection>
                         <Icon name="menu" />
-                    </div>
+                    </AppbarSection>
                     <span className="k-spacer k-spacer-sized" style={{ width: "8px" }}></span>
-                    <div className="k-appbar-section">
+                    <AppbarSection>
                         <h1 className="title">Page Title</h1>
-                    </div>
+                    </AppbarSection>
                     <span className="k-spacer k-spacer-sized" style={{ width: "32px" }}></span>
-                    <div className="k-appbar-section">
+                    <AppbarSection>
                         <ul>
                             <li>Menu Item</li>
                             <li>Menu Item</li>
                             <li>Menu Item</li>
                         </ul>
-                    </div>
+                    </AppbarSection>
 
                     <span className="k-spacer"></span>
 
-                    <div className="k-appbar-section">
+                    <AppbarSection>
                         <Textbox placeholder="Search..." />
-                    </div>
+                    </AppbarSection>
 
-                    <div className="k-appbar-section">
+                    <AppbarSection>
                         <Icon name="sliders" />
                         <Icon name="bell" />
                         <span className="k-appbar-separator"></span>
                         <Icon name="user" />
-                    </div>
-                </div>
+                    </AppbarSection>
+                </Appbar>
             </section>
 
             <section>
                 <h4>Appbar Info ThemeColor</h4>
-                <div className="k-appbar k-appbar-info">
-                    <div className="k-appbar-section">
+                <Appbar themeColor={'info'}>
+                    <AppbarSection>
                         <Icon name="menu" />
-                    </div>
+                    </AppbarSection>
                     <span className="k-spacer k-spacer-sized" style={{ width: "8px" }}></span>
-                    <div className="k-appbar-section">
+                    <AppbarSection>
                         <h1 className="title">Page Title</h1>
-                    </div>
+                    </AppbarSection>
                     <span className="k-spacer k-spacer-sized" style={{ width: "32px" }}></span>
-                    <div className="k-appbar-section">
+                    <AppbarSection>
                         <ul>
                             <li>Menu Item</li>
                             <li>Menu Item</li>
                             <li>Menu Item</li>
                         </ul>
-                    </div>
+                    </AppbarSection>
 
                     <span className="k-spacer"></span>
 
-                    <div className="k-appbar-section">
+                    <AppbarSection>
                         <Textbox placeholder="Search..." />
-                    </div>
+                    </AppbarSection>
 
-                    <div className="k-appbar-section">
+                    <AppbarSection>
                         <Icon name="sliders" />
                         <Icon name="bell" />
                         <span className="k-appbar-separator"></span>
                         <Icon name="user" />
-                    </div>
-                </div>
+                    </AppbarSection>
+                </Appbar>
             </section>
 
             <section>
                 <h4>Appbar Success ThemeColor</h4>
-                <div className="k-appbar k-appbar-success">
-                    <div className="k-appbar-section">
+                <Appbar themeColor={'success'}>
+                    <AppbarSection>
                         <Icon name="menu" />
-                    </div>
+                    </AppbarSection>
                     <span className="k-spacer k-spacer-sized" style={{ width: "8px" }}></span>
-                    <div className="k-appbar-section">
+                    <AppbarSection>
                         <h1 className="title">Page Title</h1>
-                    </div>
+                    </AppbarSection>
                     <span className="k-spacer k-spacer-sized" style={{ width: "32px" }}></span>
-                    <div className="k-appbar-section">
+                    <AppbarSection>
                         <ul>
                             <li>Menu Item</li>
                             <li>Menu Item</li>
                             <li>Menu Item</li>
                         </ul>
-                    </div>
+                    </AppbarSection>
 
                     <span className="k-spacer"></span>
 
-                    <div className="k-appbar-section">
+                    <AppbarSection>
                         <Textbox placeholder="Search..." />
-                    </div>
+                    </AppbarSection>
 
-                    <div className="k-appbar-section">
+                    <AppbarSection>
                         <Icon name="sliders" />
                         <Icon name="bell" />
                         <span className="k-appbar-separator"></span>
                         <Icon name="user" />
-                    </div>
-                </div>
+                    </AppbarSection>
+                </Appbar>
             </section>
 
             <section>
                 <h4>Appbar Warning ThemeColor</h4>
-                <div className="k-appbar k-appbar-warning">
-                    <div className="k-appbar-section">
+                <Appbar themeColor={'warning'}>
+                    <AppbarSection>
                         <Icon name="menu" />
-                    </div>
+                    </AppbarSection>
                     <span className="k-spacer k-spacer-sized" style={{ width: "8px" }}></span>
-                    <div className="k-appbar-section">
+                    <AppbarSection>
                         <h1 className="title">Page Title</h1>
-                    </div>
+                    </AppbarSection>
                     <span className="k-spacer k-spacer-sized" style={{ width: "32px" }}></span>
-                    <div className="k-appbar-section">
+                    <AppbarSection>
                         <ul>
                             <li>Menu Item</li>
                             <li>Menu Item</li>
                             <li>Menu Item</li>
                         </ul>
-                    </div>
+                    </AppbarSection>
 
                     <span className="k-spacer"></span>
 
-                    <div className="k-appbar-section">
+                    <AppbarSection>
                         <Textbox placeholder="Search..." />
-                    </div>
+                    </AppbarSection>
 
-                    <div className="k-appbar-section">
+                    <AppbarSection>
                         <Icon name="sliders" />
                         <Icon name="bell" />
                         <span className="k-appbar-separator"></span>
                         <Icon name="user" />
-                    </div>
-                </div>
+                    </AppbarSection>
+                </Appbar>
             </section>
 
             <section>
                 <h4>Appbar Error ThemeColor</h4>
-                <div className="k-appbar k-appbar-error">
-                    <div className="k-appbar-section">
+                <Appbar themeColor={'error'}>
+                    <AppbarSection>
                         <Icon name="menu" />
-                    </div>
+                    </AppbarSection>
                     <span className="k-spacer k-spacer-sized" style={{ width: "8px" }}></span>
-                    <div className="k-appbar-section">
+                    <AppbarSection>
                         <h1 className="title">Page Title</h1>
-                    </div>
+                    </AppbarSection>
                     <span className="k-spacer k-spacer-sized" style={{ width: "32px" }}></span>
-                    <div className="k-appbar-section">
+                    <AppbarSection>
                         <ul>
                             <li>Menu Item</li>
                             <li>Menu Item</li>
                             <li>Menu Item</li>
                         </ul>
-                    </div>
+                    </AppbarSection>
 
                     <span className="k-spacer"></span>
 
-                    <div className="k-appbar-section">
+                    <AppbarSection>
                         <Textbox placeholder="Search..." />
-                    </div>
+                    </AppbarSection>
 
-                    <div className="k-appbar-section">
+                    <AppbarSection>
                         <Icon name="sliders" />
                         <Icon name="bell" />
                         <span className="k-appbar-separator"></span>
                         <Icon name="user" />
-                    </div>
-                </div>
+                    </AppbarSection>
+                </Appbar>
             </section>
 
             <section>
                 <h4>Appbar Inverse ThemeColor</h4>
-                <div className="k-appbar k-appbar-inverse">
-                    <div className="k-appbar-section">
+                <Appbar themeColor={'inverse'}>
+                    <AppbarSection>
                         <Icon name="menu" />
-                    </div>
+                    </AppbarSection>
                     <span className="k-spacer k-spacer-sized" style={{ width: "8px" }}></span>
-                    <div className="k-appbar-section">
+                    <AppbarSection>
                         <h1 className="title">Page Title</h1>
-                    </div>
+                    </AppbarSection>
                     <span className="k-spacer k-spacer-sized" style={{ width: "32px" }}></span>
-                    <div className="k-appbar-section">
+                    <AppbarSection>
                         <ul>
                             <li>Menu Item</li>
                             <li>Menu Item</li>
                             <li>Menu Item</li>
                         </ul>
-                    </div>
+                    </AppbarSection>
 
                     <span className="k-spacer"></span>
 
-                    <div className="k-appbar-section">
+                    <AppbarSection>
                         <Textbox placeholder="Search..." />
-                    </div>
+                    </AppbarSection>
 
-                    <div className="k-appbar-section">
+                    <AppbarSection>
                         <Icon name="sliders" />
                         <Icon name="bell" />
                         <span className="k-appbar-separator"></span>
                         <Icon name="user" />
-                    </div>
-                </div>
+                    </AppbarSection>
+                </Appbar>
             </section>
 
             <section>
                 <h4>Sticky AppBar</h4>
-                <div className="k-appbar k-appbar-light k-appbar-sticky">
-                    <div className="k-appbar-section">
+                <Appbar themeColor={'light'} positionMode={'sticky'}>
+                    <AppbarSection>
                         <Icon name="menu" />
-                    </div>
+                    </AppbarSection>
                     <span className="k-spacer k-spacer-sized" style={{ width: "8px" }}></span>
-                    <div className="k-appbar-section">
+                    <AppbarSection>
                         <h1 className="title">Page Title</h1>
-                    </div>
+                    </AppbarSection>
                     <span className="k-spacer k-spacer-sized" style={{ width: "32px" }}></span>
-                    <div className="k-appbar-section">
+                    <AppbarSection>
                         <ul>
                             <li>Menu Item</li>
                             <li>Menu Item</li>
                             <li>Menu Item</li>
                         </ul>
-                    </div>
+                    </AppbarSection>
 
                     <span className="k-spacer"></span>
 
-                    <div className="k-appbar-section">
+                    <AppbarSection>
                         <Textbox placeholder="Search..." />
-                    </div>
+                    </AppbarSection>
 
-                    <div className="k-appbar-section">
+                    <AppbarSection>
                         <Icon name="sliders" />
                         <Icon name="bell" />
                         <span className="k-appbar-separator"></span>
                         <Icon name="user" />
-                    </div>
-                </div>
+                    </AppbarSection>
+                </Appbar>
             </section>
 
             <section>
                 <h4>RTL AppBar</h4>
-                <div className="k-appbar k-appbar-light k-rtl" dir="rtl">
-                    <div className="k-appbar-section">
+                <Appbar themeColor={'light'} dir="rtl">
+                    <AppbarSection>
                         <Icon name="menu" />
-                    </div>
+                    </AppbarSection>
                     <span className="k-spacer k-spacer-sized" style={{ width: "8px" }}></span>
-                    <div className="k-appbar-section">
+                    <AppbarSection>
                         <h1 className="title">Page Title</h1>
-                    </div>
+                    </AppbarSection>
                     <span className="k-spacer k-spacer-sized" style={{ width: "32px" }}></span>
-                    <div className="k-appbar-section">
+                    <AppbarSection>
                         <ul>
                             <li>Menu Item</li>
                             <li>Menu Item</li>
                             <li>Menu Item</li>
                         </ul>
-                    </div>
+                    </AppbarSection>
 
                     <span className="k-spacer"></span>
 
-                    <div className="k-appbar-section">
+                    <AppbarSection>
                         <Textbox placeholder="Search..." />
-                    </div>
+                    </AppbarSection>
 
-                    <div className="k-appbar-section">
+                    <AppbarSection>
                         <Icon name="sliders" />
                         <Icon name="bell" />
                         <span className="k-appbar-separator"></span>
                         <Icon name="user" />
-                    </div>
-                </div>
+                    </AppbarSection>
+                </Appbar>
             </section>
 
         </div>

@@ -19,34 +19,37 @@
     </style>
     <div id="test-area" class="k-d-grid k-grid-cols-1">
         <div class="k-widget k-pdf-viewer">
-            <div class="k-toolbar k-widget k-toolbar-resizable">
-                <div class="k-pager">
-                    <button class="k-pager-nav k-pager-first k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
-                        <span class="k-button-icon k-icon k-i-arrow-end-left"></span>
-                    </button>
-                    <button class="k-pager-nav k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
-                        <span class="k-button-icon k-icon k-i-arrow-60-left"></span>
-                    </button>
-                    <span class="k-pager-input k-label">
-                        <span class="k-textbox k-input k-input-md k-input-solid k-rounded-md">
-                            <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="">
-                        </span>of 4 pages
-                    </span>
-                    <button class="k-pager-nav k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
-                        <span class="k-button-icon k-icon k-i-arrow-60-right"></span>
-                    </button>
-                    <button class="k-pager-nav k-pager-last k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
-                        <span class="k-button-icon k-icon k-i-arrow-end-right"></span>
-                    </button>
+            <div class="k-toolbar k-toolbar-md k-toolbar-resizable">
+                <div class="k-pager k-pager-md">
+                    <div class="k-pager-numbers-wrap">
+                        <button class="k-pager-nav k-pager-first k-button k-button-md k-button-flat k-button-flat-base k-icon-button k-disabled">
+                            <span class="k-button-icon k-icon k-i-caret-alt-to-left"></span>
+                        </button>
+                        <button class="k-pager-nav k-button k-button-md k-button-flat k-button-flat-base k-icon-button k-focus">
+                            <span class="k-button-icon k-icon k-i-caret-alt-left"></span>
+                        </button>
+                        <select class="k-picker k-dropdown-list k-dropdown k-rounded-md k-picker-md">
+                            <option>1</option>
+                        </select>
+                        <span class="k-pager-input">Page<span class="k-textbox k-input k-input-md k-input-solid k-rounded-md">
+                                <input type="text" class="k-input-inner" placeholder="" autocomplete="off" value="999">
+                            </span>of 8</span>
+                        <button class="k-pager-nav k-button k-button-md k-button-flat k-button-flat-base k-icon-button k-hover">
+                            <span class="k-button-icon k-icon k-i-caret-alt-right"></span>
+                        </button>
+                        <button class="k-pager-nav k-pager-last k-button k-button-md k-button-flat k-button-flat-base k-icon-button">
+                            <span class="k-button-icon k-icon k-i-caret-alt-to-right"></span>
+                        </button>
+                    </div>
                 </div>
                 <span class="k-spacer"></span>
-                <button class="k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                <button class="k-toolbar-button  k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
                     <span class="k-button-icon k-icon k-i-file-pdf"></span>
                 </button>
-                <button class="k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                <button class="k-toolbar-button  k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
                     <span class="k-button-icon k-icon k-i-print"></span>
                 </button>
-                <button class="k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
+                <button class="k-toolbar-button  k-button k-button-md k-button-flat k-button-flat-base k-rounded-md k-icon-button">
                     <span class="k-button-icon k-icon k-i-fullscreen"></span>
                 </button>
             </div>
@@ -59,12 +62,15 @@
                                 <span class="k-dropzone-hint">Drag and drop files here to upload</span>
                             </div>
                         </div>
-                        <div class="k-upload">
-                            <div class="k-dropzone">
-                                <button class="k-upload-button k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
-                                    <span class="k-button-text">Select files...</span>
-                                </button>
-                                <em class="k-dropzone-hint">Drop files here to upload</em>
+                        <div class="k-upload k-upload-async k-upload-empty">
+                            <div class="k-dropzone k-upload-dropzone">
+                                <div class="k-upload-button-wrap">
+                                    <button class="k-upload-button k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
+                                        <span class="k-button-text">Select files...</span>
+                                    </button>
+                                    <input id="upload-input">
+                                </div>
+                                <span class="k-dropzone-hint">Drop files here to upload</span>
                             </div>
                         </div>
                     </div>

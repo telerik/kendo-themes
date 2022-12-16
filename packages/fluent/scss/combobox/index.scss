@@ -20,7 +20,7 @@ $_kendo-module-meta: (
 @include module.register( $_kendo-module-meta... );
 
 // Expose
-@mixin styles() {
+@mixin combobox-styles() {
     @include module.render( "combobox" ) {
         @include kendo-combobox--layout();
         @include kendo-combobox--theme();

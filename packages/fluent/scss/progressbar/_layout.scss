@@ -7,7 +7,7 @@
     // Base
     .k-progressbar {
         @include border-radius( var( --kendo-progressbar-border-radius, #{$kendo-progressbar-border-radius} ) );
-        --kendo-progressbar-progress: 0;
+        --kendo-progressbar-value: 0;
         border-width: var( --kendo-progressbar-border-width, #{$kendo-progressbar-border-width} );
         border-style: solid;
         box-sizing: border-box;
@@ -29,7 +29,7 @@
 
 
         // Selection
-        > .k-selected {
+        > .k-progressbar-value {
             border-width: 0;
             border-style: solid;
             display: flex;
@@ -40,22 +40,22 @@
 
 
         // Chunks
-        > ul {
+        > .k-progressbar-chunks {
             border-width: inherit;
             border-style: inherit;
             white-space: nowrap;
             display: flex;
             align-items: stretch;
             flex: 1;
+            gap: 1px;
             grid-column: 1 / -1;
             grid-row: 1 / -1;
         }
 
-        .k-item {
+        .k-progressbar-chunk {
             display: block;
             border-width: 0;
-            border-style: solid;
-            border-color: transparent;
+           flex: 1;
         }
     }
 
@@ -96,35 +96,32 @@
             margin-block-start: var( --kendo-progressbar-offset-y, #{$kendo-progressbar-offset-y} );
         }
 
-        > .k-selected {
+        > .k-progressbar-value {
             width: 0;
-            width: calc( var( --kendo-progressbar-progress, 0 ) * 1% ); // sass-lint:disable-line no-duplicate-properties
+            width: calc( var( --kendo-progressbar-value, 0 ) * 1% ); // sass-lint:disable-line no-duplicate-properties
             flex-direction: row;
 
             > .k-progress-status-wrap {
-                width: calc( 100% * ( 100 / var( --kendo-progressbar-progress, 1 ) ) );
+                width: calc( 100% * ( 100 / var( --kendo-progressbar-value, 1 ) ) );
             }
         }
 
 
         // Chunks
-        > ul {
+        > .k-progressbar-chunks {
             flex-direction: row;
         }
-
-        .k-item {}
-        .k-item + .k-item {
-            border-inline-start-width: var( --kendo-progressbar-item-border-width, #{$kendo-progressbar-item-border-width} );
-            border-inline-end-width: 0;
-        }
-
 
         // Horizontal reverse
         &.k-progressbar-reverse {
 
-            > .k-selected {
+            > .k-progressbar-value {
                 flex-direction: row-reverse;
                 justify-self: flex-end;
+            }
+
+            > .k-progressbar-chunks {
+                flex-direction: row-reverse;
             }
         }
     }
@@ -149,15 +146,14 @@
             writing-mode: vertical-lr;
         }
 
-        > .k-selected {
-            height: 0;
-            height: calc( var( --kendo-progressbar-progress, 0 ) * 1% ); // sass-lint:disable-line no-duplicate-properties
+        > .k-progressbar-value {
+            height: calc( var( --kendo-progressbar-value, 0 ) * 1% ); // sass-lint:disable-line no-duplicate-properties
             flex-direction: column-reverse;
             align-self: flex-end;
             align-items: flex-end;
 
             > .k-progress-status-wrap {
-                height: calc( 100% * ( 100 / var( --kendo-progressbar-progress, 1 ) ) ); // sass-lint:disable-line no-duplicate-properties
+                height: calc( 100% * ( 100 / var( --kendo-progressbar-value, 1 ) ) ); // sass-lint:disable-line no-duplicate-properties
             }
 
             .k-progress-status {
@@ -167,15 +163,9 @@
 
 
         // Chunk
-        > ul {
-            flex-direction: column;
+        > .k-progressbar-chunks {
+            flex-direction: column-reverse;
         }
-        .k-item {}
-        .k-item + .k-item {
-            border-block-start-width: var( --kendo-progressbar-item-border-width, #{$kendo-progressbar-item-border-width} );
-            border-block-end-width: 0;
-        }
-
 
         // Vertical reverse
         &.k-progressbar-reverse {
@@ -184,9 +174,13 @@
                 flex-direction: column-reverse;
             }
 
-            > .k-selected {
+            > .k-progressbar-value {
                 flex-direction: column;
                 align-self: flex-start;
+            }
+
+            > .k-progressbar-chunks {
+                flex-direction: column;
             }
         }
     }
@@ -218,8 +212,8 @@
 
         .k-reset,
         .k-progress-status-wrap,
-        .k-selected,
-        .k-item {
+        .k-progressbar-value,
+        .k-progress-chunk {
             display: none;
         }
 
@@ -231,8 +225,8 @@
     // Blazor specific
     .telerik-blazor.k-progressbar-horizontal {
 
-        > .k-selected,
-        > .k-selected > .k-progress-status-wrap {
+        > .k-progressbar-value,
+        > .k-progressbar-value > .k-progress-status-wrap {
             transition: width .1s ease-in-out;
         }
     }

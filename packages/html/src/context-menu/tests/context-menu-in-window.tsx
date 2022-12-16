@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { Button } from '../../button';
+import { Window } from '../../window';
 import { MenuItem, MenuList } from '../../menu';
 import { Popup } from '../../popup';
 
@@ -30,18 +30,9 @@ root.render(
         <style>{styles}</style>
         <div id="test-area" className="k-d-grid">
             <section>
-                <div className="k-widget k-window k-window-wrapper">
-                    <div className="k-window-titlebar k-header">
-                        <div className="k-window-title">Window</div>
-                        <div className="k-window-actions">
-                            <Button fillMode="flat" icon="window-minimize"></Button>
-                            <Button fillMode="flat" icon="window-maximize"></Button>
-                            <Button fillMode="flat" icon="close"></Button>
-                        </div>
-                    </div>
-                    <div className="k-window-content">Target</div>
-                </div>
-
+                <Window title="Window" actions={[ 'window-minimize', 'window-maximize', 'close' ]}>
+                    Target
+                </Window>
                 <div className="k-animation-container">
                     <Popup className="k-menu-popup">
                         <MenuList className="k-context-menu">

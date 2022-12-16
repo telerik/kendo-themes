@@ -1,4 +1,5 @@
 import React from 'react';
+import { Loader } from '../loader';
 import ReactDOM from 'react-dom/client';
 
 const root = ReactDOM.createRoot(
@@ -17,312 +18,132 @@ root.render(
 
             <span>Primary</span>
             <span>
-                <div className="k-loader k-loader-pulsing-2 k-loader-primary k-loader-lg">
-                    <div className="k-loader-canvas">
-                        <span className="k-loader-segment"></span>
-                        <span className="k-loader-segment"></span>
-                    </div>
-                </div>
+                <Loader size={'large'} themeColor={'primary'} animation={'pulsing'} />
             </span>
 
             <span>
-                <div className="k-loader k-loader-spinner-3 k-loader-primary k-loader-lg">
-                    <div className="k-loader-canvas">
-                        <span className="k-loader-segment"></span>
-                        <span className="k-loader-segment"></span>
-                        <span className="k-loader-segment"></span>
-                    </div>
-                </div>
+                <Loader size={'large'} themeColor={'primary'} animation={'infinite-spinner'} />
             </span>
 
             <span>
-                <div className="k-loader k-loader-spinner-4 k-loader-primary k-loader-lg">
-                    <div className="k-loader-canvas">
-                        <span className="k-loader-segment"></span>
-                        <span className="k-loader-segment"></span>
-                        <span className="k-loader-segment"></span>
-                        <span className="k-loader-segment"></span>
-                    </div>
-                </div>
+                <Loader size={'large'} themeColor={'primary'} animation={'converging-spinner'} />
             </span>
 
             <span>Secondary</span>
             <span>
-                <div className="k-loader k-loader-pulsing-2 k-loader-secondary k-loader-lg">
-                    <div className="k-loader-canvas">
-                        <span className="k-loader-segment"></span>
-                        <span className="k-loader-segment"></span>
-                    </div>
-                </div>
+                <Loader size={'large'} themeColor={'secondary'} animation={'pulsing'} />
             </span>
 
             <span>
-                <div className="k-loader k-loader-spinner-3 k-loader-secondary k-loader-lg">
-                    <div className="k-loader-canvas">
-                        <span className="k-loader-segment"></span>
-                        <span className="k-loader-segment"></span>
-                        <span className="k-loader-segment"></span>
-                    </div>
-                </div>
+                <Loader size={'large'} themeColor={'secondary'} animation={'infinite-spinner'} />
             </span>
 
             <span>
-                <div className="k-loader k-loader-spinner-4 k-loader-secondary k-loader-lg">
-                    <div className="k-loader-canvas">
-                        <span className="k-loader-segment"></span>
-                        <span className="k-loader-segment"></span>
-                        <span className="k-loader-segment"></span>
-                        <span className="k-loader-segment"></span>
-                    </div>
-                </div>
+                <Loader size={'large'} themeColor={'secondary'} animation={'converging-spinner'} />
             </span>
 
             <span>Tertiary</span>
             <span>
-                <div className="k-loader k-loader-pulsing-2 k-loader-tertiary k-loader-lg">
-                    <div className="k-loader-canvas">
-                        <span className="k-loader-segment"></span>
-                        <span className="k-loader-segment"></span>
-                    </div>
-                </div>
+                <Loader size={'large'} themeColor={'tertiary'} animation={'pulsing'} />
             </span>
 
             <span>
-                <div className="k-loader k-loader-spinner-3 k-loader-tertiary k-loader-lg">
-                    <div className="k-loader-canvas">
-                        <span className="k-loader-segment"></span>
-                        <span className="k-loader-segment"></span>
-                        <span className="k-loader-segment"></span>
-                    </div>
-                </div>
+                <Loader size={'large'} themeColor={'tertiary'} animation={'infinite-spinner'} />
             </span>
 
             <span>
-                <div className="k-loader k-loader-spinner-4 k-loader-tertiary k-loader-lg">
-                    <div className="k-loader-canvas">
-                        <span className="k-loader-segment"></span>
-                        <span className="k-loader-segment"></span>
-                        <span className="k-loader-segment"></span>
-                        <span className="k-loader-segment"></span>
-                    </div>
-                </div>
+                <Loader size={'large'} themeColor={'tertiary'} animation={'converging-spinner'} />
             </span>
 
             <span>Info</span>
             <span>
-                <div className="k-loader k-loader-pulsing-2 k-loader-info k-loader-lg">
-                    <div className="k-loader-canvas">
-                        <span className="k-loader-segment"></span>
-                        <span className="k-loader-segment"></span>
-                    </div>
-                </div>
+                <Loader size={'large'} themeColor={'info'} animation={'pulsing'} />
             </span>
 
             <span>
-                <div className="k-loader k-loader-spinner-3 k-loader-info k-loader-lg">
-                    <div className="k-loader-canvas">
-                        <span className="k-loader-segment"></span>
-                        <span className="k-loader-segment"></span>
-                        <span className="k-loader-segment"></span>
-                    </div>
-                </div>
+                <Loader size={'large'} themeColor={'info'} animation={'infinite-spinner'} />
             </span>
 
             <span>
-                <div className="k-loader k-loader-spinner-4 k-loader-info k-loader-lg">
-                    <div className="k-loader-canvas">
-                        <span className="k-loader-segment"></span>
-                        <span className="k-loader-segment"></span>
-                        <span className="k-loader-segment"></span>
-                        <span className="k-loader-segment"></span>
-                    </div>
-                </div>
+                <Loader size={'large'} themeColor={'info'} animation={'converging-spinner'} />
             </span>
 
             <span>Success</span>
             <span>
-                <div className="k-loader k-loader-pulsing-2 k-loader-success k-loader-lg">
-                    <div className="k-loader-canvas">
-                        <span className="k-loader-segment"></span>
-                        <span className="k-loader-segment"></span>
-                    </div>
-                </div>
+                <Loader size={'large'} themeColor={'success'} animation={'pulsing'} />
             </span>
 
             <span>
-                <div className="k-loader k-loader-spinner-3 k-loader-success k-loader-lg">
-                    <div className="k-loader-canvas">
-                        <span className="k-loader-segment"></span>
-                        <span className="k-loader-segment"></span>
-                        <span className="k-loader-segment"></span>
-                    </div>
-                </div>
+                <Loader size={'large'} themeColor={'success'} animation={'infinite-spinner'} />
             </span>
 
             <span>
-                <div className="k-loader k-loader-spinner-4 k-loader-success k-loader-lg">
-                    <div className="k-loader-canvas">
-                        <span className="k-loader-segment"></span>
-                        <span className="k-loader-segment"></span>
-                        <span className="k-loader-segment"></span>
-                        <span className="k-loader-segment"></span>
-                    </div>
-                </div>
+                <Loader size={'large'} themeColor={'success'} animation={'converging-spinner'} />
             </span>
 
             <span>Warning</span>
             <span>
-                <div className="k-loader k-loader-pulsing-2 k-loader-warning k-loader-lg">
-                    <div className="k-loader-canvas">
-                        <span className="k-loader-segment"></span>
-                        <span className="k-loader-segment"></span>
-                    </div>
-                </div>
+                <Loader size={'large'} themeColor={'warning'} animation={'pulsing'} />
             </span>
 
             <span>
-                <div className="k-loader k-loader-spinner-3 k-loader-warning k-loader-lg">
-                    <div className="k-loader-canvas">
-                        <span className="k-loader-segment"></span>
-                        <span className="k-loader-segment"></span>
-                        <span className="k-loader-segment"></span>
-                    </div>
-                </div>
+                <Loader size={'large'} themeColor={'warning'} animation={'infinite-spinner'} />
             </span>
 
             <span>
-                <div className="k-loader k-loader-spinner-4 k-loader-warning k-loader-lg">
-                    <div className="k-loader-canvas">
-                        <span className="k-loader-segment"></span>
-                        <span className="k-loader-segment"></span>
-                        <span className="k-loader-segment"></span>
-                        <span className="k-loader-segment"></span>
-                    </div>
-                </div>
+                <Loader size={'large'} themeColor={'warning'} animation={'converging-spinner'} />
             </span>
 
             <span>Error</span>
             <span>
-                <div className="k-loader k-loader-pulsing-2 k-loader-error k-loader-lg">
-                    <div className="k-loader-canvas">
-                        <span className="k-loader-segment"></span>
-                        <span className="k-loader-segment"></span>
-                    </div>
-                </div>
+                <Loader size={'large'} themeColor={'error'} animation={'pulsing'} />
             </span>
 
             <span>
-                <div className="k-loader k-loader-spinner-3 k-loader-error k-loader-lg">
-                    <div className="k-loader-canvas">
-                        <span className="k-loader-segment"></span>
-                        <span className="k-loader-segment"></span>
-                        <span className="k-loader-segment"></span>
-                    </div>
-                </div>
+                <Loader size={'large'} themeColor={'error'} animation={'infinite-spinner'} />
             </span>
 
             <span>
-                <div className="k-loader k-loader-spinner-4 k-loader-error k-loader-lg">
-                    <div className="k-loader-canvas">
-                        <span className="k-loader-segment"></span>
-                        <span className="k-loader-segment"></span>
-                        <span className="k-loader-segment"></span>
-                        <span className="k-loader-segment"></span>
-                    </div>
-                </div>
+                <Loader size={'large'} themeColor={'error'} animation={'converging-spinner'} />
             </span>
 
             <span>Dark</span>
             <span>
-                <div className="k-loader k-loader-pulsing-2 k-loader-dark k-loader-lg">
-                    <div className="k-loader-canvas">
-                        <span className="k-loader-segment"></span>
-                        <span className="k-loader-segment"></span>
-                    </div>
-                </div>
+                <Loader size={'large'} themeColor={'dark'} animation={'pulsing'} />
             </span>
 
             <span>
-                <div className="k-loader k-loader-spinner-3 k-loader-dark k-loader-lg">
-                    <div className="k-loader-canvas">
-                        <span className="k-loader-segment"></span>
-                        <span className="k-loader-segment"></span>
-                        <span className="k-loader-segment"></span>
-                    </div>
-                </div>
+                <Loader size={'large'} themeColor={'dark'} animation={'infinite-spinner'} />
             </span>
 
             <span>
-                <div className="k-loader k-loader-spinner-4 k-loader-dark k-loader-lg">
-                    <div className="k-loader-canvas">
-                        <span className="k-loader-segment"></span>
-                        <span className="k-loader-segment"></span>
-                        <span className="k-loader-segment"></span>
-                        <span className="k-loader-segment"></span>
-                    </div>
-                </div>
+                <Loader size={'large'} themeColor={'dark'} animation={'converging-spinner'} />
             </span>
 
             <span>Light</span>
             <span>
-                <div className="k-loader k-loader-pulsing-2 k-loader-light k-loader-lg">
-                    <div className="k-loader-canvas">
-                        <span className="k-loader-segment"></span>
-                        <span className="k-loader-segment"></span>
-                    </div>
-                </div>
+                <Loader size={'large'} themeColor={'light'} animation={'pulsing'} />
             </span>
 
             <span>
-                <div className="k-loader k-loader-spinner-3 k-loader-light k-loader-lg">
-                    <div className="k-loader-canvas">
-                        <span className="k-loader-segment"></span>
-                        <span className="k-loader-segment"></span>
-                        <span className="k-loader-segment"></span>
-                    </div>
-                </div>
+                <Loader size={'large'} themeColor={'light'} animation={'infinite-spinner'} />
             </span>
 
             <span>
-                <div className="k-loader k-loader-spinner-4 k-loader-light k-loader-lg">
-                    <div className="k-loader-canvas">
-                        <span className="k-loader-segment"></span>
-                        <span className="k-loader-segment"></span>
-                        <span className="k-loader-segment"></span>
-                        <span className="k-loader-segment"></span>
-                    </div>
-                </div>
+                <Loader size={'large'} themeColor={'light'} animation={'converging-spinner'} />
             </span>
 
             <span>Inverse</span>
             <span>
-                <div className="k-loader k-loader-pulsing-2 k-loader-inverse k-loader-lg">
-                    <div className="k-loader-canvas">
-                        <span className="k-loader-segment"></span>
-                        <span className="k-loader-segment"></span>
-                    </div>
-                </div>
+                <Loader size={'large'} themeColor={'inverse'} animation={'pulsing'} />
             </span>
 
             <span>
-                <div className="k-loader k-loader-spinner-3 k-loader-inverse k-loader-lg">
-                    <div className="k-loader-canvas">
-                        <span className="k-loader-segment"></span>
-                        <span className="k-loader-segment"></span>
-                        <span className="k-loader-segment"></span>
-                    </div>
-                </div>
+                <Loader size={'large'} themeColor={'inverse'} animation={'infinite-spinner'} />
             </span>
 
             <span>
-                <div className="k-loader k-loader-spinner-4 k-loader-inverse k-loader-lg">
-                    <div className="k-loader-canvas">
-                        <span className="k-loader-segment"></span>
-                        <span className="k-loader-segment"></span>
-                        <span className="k-loader-segment"></span>
-                        <span className="k-loader-segment"></span>
-                    </div>
-                </div>
+                <Loader size={'large'} themeColor={'inverse'} animation={'converging-spinner'} />
             </span>
 
         </div>

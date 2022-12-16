@@ -4,6 +4,7 @@ import { Button } from '../../button';
 import { Checkbox } from '../../checkbox';
 import { DropdownList } from '../../dropdownlist';
 import { NumericTextbox } from '../../numerictextbox';
+import { Toolbar, ToolbarSeparator } from '../../toolbar';
 
 const root = ReactDOM.createRoot(
     document.getElementById('app') as HTMLElement
@@ -18,13 +19,13 @@ root.render(
 
                 {/* Header */}
                 <div className="k-imageeditor-header">
-                    <div className="k-imageeditor-toolbar k-toolbar k-widget">
+                    <Toolbar className="k-imageeditor-toolbar">
                         <Button icon="upload"></Button>
                         <Button icon="download"></Button>
-                        <div className="k-separator"></div>
+                        <ToolbarSeparator></ToolbarSeparator>
                         <Button icon="undo"></Button>
                         <Button icon="redo"></Button>
-                        <div className="k-separator"></div>
+                        <ToolbarSeparator></ToolbarSeparator>
                         <Button icon="crop"></Button>
                         <Button icon="image-resize"></Button>
                         <Button icon="zoom-in"></Button>
@@ -32,7 +33,7 @@ root.render(
                         <div>
                             <DropdownList value="Zoom options" />
                         </div>
-                    </div>
+                    </Toolbar>
                 </div>
 
                 {/* Content */}
@@ -59,7 +60,7 @@ root.render(
 
                     {/* Crop Pane */}
                     <div className="k-imageeditor-action-pane">
-                        <div className="k-imageeditor-pane-form k-widget k-form">
+                        <div className="k-imageeditor-pane-form k-widget k-form k-form-md">
                             <fieldset className="k-form-fieldset">
                                 <legend className="k-form-legend">Crop Image</legend>
                                 <div className="k-form-layout k-d-grid k-grid-cols-2" style={{ gap: "0px 8px" }}>

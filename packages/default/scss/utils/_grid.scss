@@ -2,8 +2,8 @@
 
     // stylelint-disable block-opening-brace-space-before
 
-    /// @name k-d-grid
-    /// @description This is equivalent to `display: grid`. It defines the element as a grid container and establishes a new grid formatting context for its contents.
+    /// This is equivalent to `display: grid`. It defines the element as a grid container and establishes a new grid formatting context for its contents.
+    /// @name .k-d-grid
     /// @group grid-layout
     .k-d-grid                   { display: grid; }
     .k-grid-cols-none           { grid-template-columns: none; }

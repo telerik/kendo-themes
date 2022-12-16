@@ -1,0 +1,79 @@
+{
+    "$schema": "../../schemas/component.schema.json",
+    "title": "Kendo Dialog HTML Spec",
+    "component": "dialog",
+    "selector": [
+        ".k-dialog"
+    ],
+    "options": [
+        {
+            "name": "themeColor",
+            "values": [
+                {
+                    "name": "primary",
+                    "selector": [
+                        ".k-dialog-primary"
+                    ]
+                },
+                {
+                    "name": "dark",
+                    "selector": [
+                        ".k-dialog-dark"
+                    ]
+                },
+                {
+                    "name": "light",
+                    "selector": [
+                        ".k-dialog-light"
+                    ]
+                }
+            ]
+        }
+    ],
+    "children": [
+        {
+            "name": "dialog-titlebar",
+            "selector": [
+                ".k-dialog-titlebar"
+            ]
+        },
+        {
+            "name": "dialog-title",
+            "selector": [
+                ".k-dialog-title"
+            ]
+        },
+        {
+            "name": "dialog-actions",
+            "selector": [
+                ".k-dialog-titlebar-actions"
+            ]
+        },
+        {
+            "name": "dialog-action",
+            "$ref": "button",
+            "selector": [
+                ".k-dialog-action"
+            ],
+            "options": [
+                {
+                    "name": "fillMode",
+                    "value": "flat"
+                }
+            ]
+        },
+        {
+            "name": "dialog-content",
+            "selector": [
+                ".k-dialog-content"
+            ]
+        },
+        {
+            "name": "dialog-buttons",
+            "$ref": "action-buttons",
+            "selector": [
+                ".k-dialog-actions"
+            ]
+        }
+    ]
+}

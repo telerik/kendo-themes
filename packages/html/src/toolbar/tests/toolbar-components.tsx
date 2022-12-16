@@ -5,6 +5,8 @@ import { SplitButton } from '../../split-button';
 import { MenuButton } from '../../menu-button';
 import { DropdownList } from '../../dropdownlist';
 import { Combobox } from '../../combobox';
+import { Toolbar } from '../toolbar';
+import { ButtonGroup } from '../../button-group';
 
 
 const root = ReactDOM.createRoot(
@@ -17,46 +19,46 @@ root.render(
 
             <span>Menu button</span>
             <section>
-                <div className="k-widget k-toolbar">
+                <Toolbar>
                     <MenuButton text="Normal"></MenuButton>
                     <MenuButton hover text="Hover"></MenuButton>
                     <MenuButton focus text="Focus"></MenuButton>
                     <MenuButton disabled text="Disabled"></MenuButton>
-                </div>
+                </Toolbar>
             </section>
 
 
             <span>Split button</span>
             <section>
-                <div className="k-widget k-toolbar">
+                <Toolbar>
                     <SplitButton>Normal</SplitButton>
                     <SplitButton hover>Hover</SplitButton>
                     <SplitButton focus>Focus</SplitButton>
                     <SplitButton disabled>Disabled</SplitButton>
-                </div>
+                </Toolbar>
             </section>
 
             <span>Button group</span>
             <section>
-                <div className="k-widget k-toolbar">
-                    <div className="k-button-group">
+                <Toolbar>
+                    <ButtonGroup>
                         <Button icon="align-left">Normal</Button>
                         <Button icon="align-center" hover>Hover</Button>
                         <Button icon="align-right" focus>Focus</Button>
                         <Button icon="bold" active>Active</Button>
                         <Button icon="bold" selected>Selected</Button>
                         <Button icon="italic" disabled>Disabled</Button>
-                    </div>
-                    <div className="k-button-group">
+                    </ButtonGroup>
+                    <ButtonGroup>
                         <Button>Adjacent</Button>
                         <Button>Button group</Button>
-                    </div>
-                </div>
+                    </ButtonGroup>
+                </Toolbar>
             </section>
 
             <span>Dropdownlist in Toolbar</span>
             <section>
-                <div className="k-widget k-toolbar">
+                <Toolbar>
                     <div>
                         <DropdownList value="Normal" />
                     </div>
@@ -69,13 +71,13 @@ root.render(
                     <div>
                         <DropdownList value="Disabled" disabled />
                     </div>
-                </div>
+                </Toolbar>
             </section>
 
 
             <span>Combobox in Toolbar</span>
             <section>
-                <div className="k-widget k-toolbar">
+                <Toolbar>
                     <div>
                         <Combobox value="Normal" />
                     </div>
@@ -88,7 +90,7 @@ root.render(
                     <div>
                         <Combobox value="Disabled" disabled />
                     </div>
-                </div>
+                </Toolbar>
             </section>
 
         </div>

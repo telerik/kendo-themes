@@ -1,7 +1,7 @@
 {
   "name": "@progress/kendo-theme-core",
   "description": "A collection of functions and mixins used for building themes for Kendo UI",
-  "version": "5.11.1-dev.0",
+  "version": "5.12.1-dev.0",
   "author": "Progress",
   "license": "Apache-2.0",
   "keywords": [
@@ -34,9 +34,7 @@
     "nuget-pack": "jq '.version' package.json | xargs nuget pack package.nuspec -Version",
     "nuget-push": "nuget push *.nupkg -ApiKey $NUGET_API_KEY -Source $NUGET_FEED -SkipDuplicate",
     "prepublishOnly": "node ../../scripts/themes-prepublish.js",
-    "postpublish": "echo 'no postpublish for core theme'"
-  },
-  "devDependencies": {
-    "sass-build": "^1.0.0"
+    "postpublish": "echo 'no postpublish for core theme'",
+    "prepack": "cp package.json package.json.orig && jq '.scripts={}' package.json.orig > package.json"
   }
 }

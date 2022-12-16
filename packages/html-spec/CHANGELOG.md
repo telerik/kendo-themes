@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.12.0](https://github.com/telerik/kendo-themes/compare/v5.11.0...v5.12.0) (2022-11-28)
+
+
+### Bug Fixes
+
+* **html-spec:** pack schemas for release ([0e3d58c](https://github.com/telerik/kendo-themes/commit/0e3d58c82518f34631ff989b5d8a7400727e6d0f))
+
+
+
+
+
 # [5.11.0](https://github.com/telerik/kendo-themes/compare/v5.10.0...v5.11.0) (2022-11-07)
 
 

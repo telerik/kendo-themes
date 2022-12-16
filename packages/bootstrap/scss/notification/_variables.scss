@@ -1,21 +1,43 @@
 // Notification
-$notification-padding-x: $alert-padding-x !default;
-$notification-padding-y: $alert-padding-y !default;
-$notification-border-width: $alert-border-width !default;
-$notification-border-radius: $alert-border-radius !default;
 
-$notification-shadow: $popup-shadow !default;
+/// Vertical padding of the notification container.
+/// @group notification
+$kendo-notification-padding-x: $alert-padding-x !default;
+/// Horizontal padding of the notification.
+/// @group notification
+$kendo-notification-padding-y: $alert-padding-y !default;
+/// Width of the border around the notification.
+/// @group notification
+$kendo-notification-border-width: $alert-border-width !default;
+/// Border radius of the notification.
+/// @group notification
+$kendo-notification-border-radius: $alert-border-radius !default;
+/// Box shadow of the notification.
+/// @group notification
+$kendo-notification-shadow: $popup-shadow !default;
+/// Font family of the notification.
+/// @group notification
+$kendo-notification-font-family: $font-family !default;
+/// Font size of the notification.
+/// @group notification
+$kendo-notification-font-size: $font-size-sm !default;
+/// Line height of the notification.
+/// @group notification
+$kendo-notification-line-height: $line-height !default;
 
-$notification-font-family: $font-family !default;
-$notification-font-size: $font-size-sm !default;
-$notification-line-height: $line-height !default;
+/// Horizontal spacing of the notification icon.
+/// @group notification
+$kendo-notification-icon-spacing: $icon-spacing !default;
 
-$notification-icon-offset: 3px !default;
-$notification-icon-spacing: $icon-spacing !default;
-
-$notification-bg: $component-bg !default;
-$notification-text: $component-text !default;
-$notification-border: $component-border !default;
+/// Background color of the notification.
+/// @group notification
+$kendo-notification-bg: $component-bg !default;
+/// Text color of the notification.
+/// @group notification
+$kendo-notification-text: $component-text !default;
+/// Border color of the notification.
+/// @group notification
+$kendo-notification-border: $component-border !default;
 
 @function notification-theme( $colors ) {
     $_theme: ();
@@ -32,5 +54,7 @@ $notification-border: $component-border !default;
     @return $_theme;
 }
 
+/// Theme colors of the notification.
+/// @group notification
 $kendo-notification-theme-colors: $kendo-theme-colors !default;
 $kendo-notification-theme: notification-theme( $kendo-notification-theme-colors ) !default;

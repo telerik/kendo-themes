@@ -17,7 +17,7 @@ $_kendo-module-meta: (
 @include module.register( $_kendo-module-meta... );
 
 // Expose
-@mixin styles() {
+@mixin splitter-styles() {
     @include module.render( "splitter" ) {
         @include kendo-splitter--layout();
         @include kendo-splitter--theme();

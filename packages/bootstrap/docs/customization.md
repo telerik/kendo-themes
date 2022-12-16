@@ -2523,6 +2523,24 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
+    <td>$kendo-chip-calc-size</td>
+    <td>Calculation</td>
+<td>
+
+`calc( #{$kendo-chip-line-height * 1em} + #{$kendo-chip-padding-y * 2} + #{$kendo-chip-border-width * 2} )`
+
+</td>
+<td>
+
+`calc( 1.25em + 0.5rem + 2px )`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Calculated height of the chip.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-chip-sizes</td>
     <td>Map</td>
 <td>
@@ -2564,14 +2582,14 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Color</td>
 <td>
 
-`$base-text`
+`$kendo-button-bg`
 
 </td>
 <td>
 
-<span class="color-preview" style="background-color: #212529"></span>
+<span class="color-preview" style="background-color: #e4e7eb"></span>
 
-`#212529`
+`#e4e7eb`
 
 </td>
 </tr>
@@ -2595,7 +2613,7 @@ The following table lists the available variables for customizing the Bootstrap 
 </td>
 <td>
 
-`("base": #212529, "error": #dc3545, "info": #0dcaf0, "warning": #ffc107, "success": #198754)`
+`("base": #e4e7eb, "error": #dc3545, "info": #0dcaf0, "warning": #ffc107, "success": #198754)`
 
 </td>
 </tr>
@@ -2608,14 +2626,14 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Color</td>
 <td>
 
-`k-try-tint( $kendo-chip-base-bg, 92% )`
+`$kendo-chip-base-bg`
 
 </td>
 <td>
 
-<span class="color-preview" style="background-color: #edeeee"></span>
+<span class="color-preview" style="background-color: #e4e7eb"></span>
 
-`#edeeee`
+`#e4e7eb`
 
 </td>
 </tr>
@@ -2628,7 +2646,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Color</td>
 <td>
 
-`$kendo-chip-base-bg`
+`$kendo-button-text`
 
 </td>
 <td>
@@ -2648,14 +2666,14 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Color</td>
 <td>
 
-`k-try-tint( $kendo-chip-base-bg, 70% )`
+`$kendo-button-border`
 
 </td>
 <td>
 
-<span class="color-preview" style="background-color: #bcbebf"></span>
+<span class="color-preview" style="background-color: #e4e7eb"></span>
 
-`#bcbebf`
+`#e4e7eb`
 
 </td>
 </tr>
@@ -2673,7 +2691,7 @@ The following table lists the available variables for customizing the Bootstrap 
 </td>
 <td>
 
-`0 0 0 2px rgba(33, 37, 41, 0.16)`
+`0 0 0 2px rgba(228, 231, 235, 0.16)`
 
 </td>
 </tr>
@@ -2682,18 +2700,34 @@ The following table lists the available variables for customizing the Bootstrap 
     </td>
 </tr>
 <tr>
-    <td>$kendo-chip-solid-focus-bg</td>
-    <td>Color</td>
+    <td>$kendo-chip-solid-gradient</td>
+    <td>Null</td>
 <td>
 
-`k-try-tint( $kendo-chip-base-bg, 92% )`
+`$kendo-button-gradient`
 
 </td>
 <td>
 
-<span class="color-preview" style="background-color: #edeeee"></span>
+`null`
 
-`#edeeee`
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The base gradient of solid chip.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-chip-solid-focus-bg</td>
+    <td>Null</td>
+<td>
+
+`null`
+
+</td>
+<td>
+
+`null`
 
 </td>
 </tr>
@@ -2724,14 +2758,14 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Color</td>
 <td>
 
-`k-try-tint( $kendo-chip-base-bg, 84% )`
+`$kendo-button-hover-bg`
 
 </td>
 <td>
 
-<span class="color-preview" style="background-color: #dbdcdd"></span>
+<span class="color-preview" style="background-color: #ced3db"></span>
 
-`#dbdcdd`
+`#ced3db`
 
 </td>
 </tr>
@@ -2762,14 +2796,14 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Color</td>
 <td>
 
-`k-try-tint( $kendo-chip-base-bg, 76% )`
+`$kendo-button-active-bg`
 
 </td>
 <td>
 
-<span class="color-preview" style="background-color: #cacbcc"></span>
+<span class="color-preview" style="background-color: #c7cdd5"></span>
 
-`#cacbcc`
+`#c7cdd5`
 
 </td>
 </tr>
@@ -2820,7 +2854,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Color</td>
 <td>
 
-`$kendo-chip-base-bg`
+`$kendo-chip-solid-text`
 
 </td>
 <td>
@@ -2840,7 +2874,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Color</td>
 <td>
 
-`$kendo-chip-base-bg`
+`$kendo-chip-outline-text`
 
 </td>
 <td>
@@ -2865,7 +2899,7 @@ The following table lists the available variables for customizing the Bootstrap 
 </td>
 <td>
 
-`0 0 0 2px rgba(33, 37, 41, 0.16)`
+`0 0 0 2px rgba(228, 231, 235, 0.16)`
 
 </td>
 </tr>
@@ -2878,7 +2912,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Color</td>
 <td>
 
-`$kendo-chip-base-bg`
+`$kendo-chip-outline-text`
 
 </td>
 <td>
@@ -2898,7 +2932,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Color</td>
 <td>
 
-`k-contrast-color( $kendo-chip-base-bg )`
+`k-contrast-color( $kendo-chip-outline-hover-bg )`
 
 </td>
 <td>
@@ -3375,6 +3409,49 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of a component.<br />Note: do not use this variable directly. Instead derive it as `$component-name-border` e.g. `$grid-border: component-border !default;`.</div></div>
+    </td>
+</tr>
+</tbody>
+</table>
+
+### Dialog
+
+<table class="theme-variables">
+    <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
+    </tr>
+</thead>
+<tbody>
+        <tr>
+    <td>$kendo-dialog-theme-colors</td>
+    <td>Map</td>
+<td>
+
+`(
+    "primary": map-get($kendo-theme-colors, "primary"),
+    "light": map-get($kendo-theme-colors, "light"),
+    "dark": map-get($kendo-theme-colors, "dark")
+)`
+
+</td>
+<td>
+
+`("primary": #0d6efd, "light": #f8f9fa, "dark": #212529)`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Theme colors map for the dialog.</div></div>
     </td>
 </tr>
 </tbody>
@@ -5413,6 +5490,303 @@ The following table lists the available variables for customizing the Bootstrap 
 </tbody>
 </table>
 
+### Listbox
+
+<table class="theme-variables">
+    <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
+    </tr>
+</thead>
+<tbody>
+        <tr>
+    <td>$kendo-listbox-spacing</td>
+    <td>Number</td>
+<td>
+
+`k-map-get( $spacing, 2 )`
+
+</td>
+<td>
+
+`0.5rem`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Margin between the listbox elements.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-listbox-button-spacing</td>
+    <td>Number</td>
+<td>
+
+`$padding-x`
+
+</td>
+<td>
+
+`1rem`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Margin between the listbox buttons.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-listbox-width</td>
+    <td>Number</td>
+<td>
+
+`10em`
+
+</td>
+<td>
+
+`10em`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Width of the listbox.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-listbox-default-height</td>
+    <td>Number</td>
+<td>
+
+`200px`
+
+</td>
+<td>
+
+`200px`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Height of the listbox.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-listbox-border-width</td>
+    <td>Number</td>
+<td>
+
+`1px`
+
+</td>
+<td>
+
+`1px`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Width of the border around the listbox.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-listbox-font-family</td>
+    <td>List</td>
+<td>
+
+`$font-family`
+
+</td>
+<td>
+
+`system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font family of the listbox.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-listbox-font-size</td>
+    <td>Number</td>
+<td>
+
+`$font-size`
+
+</td>
+<td>
+
+`1rem`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the listbox.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-listbox-line-height</td>
+    <td>Number</td>
+<td>
+
+`$line-height`
+
+</td>
+<td>
+
+`1.5`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of the listbox.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-listbox-bg</td>
+    <td>Color</td>
+<td>
+
+`$component-bg`
+
+</td>
+<td>
+
+<span class="color-preview" style="background-color: #ffffff"></span>
+
+`#ffffff`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the listbox.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-listbox-text</td>
+    <td>Color</td>
+<td>
+
+`$component-text`
+
+</td>
+<td>
+
+<span class="color-preview" style="background-color: #212529"></span>
+
+`#212529`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the listbox.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-listbox-border</td>
+    <td>Color</td>
+<td>
+
+`$component-border`
+
+</td>
+<td>
+
+<span class="color-preview" style="background-color: #dee2e6"></span>
+
+`#dee2e6`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the listbox.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-listbox-item-padding-x</td>
+    <td>Null</td>
+<td>
+
+`null`
+
+</td>
+<td>
+
+`null`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Inline item padding of the listbox.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-listbox-item-padding-y</td>
+    <td>Null</td>
+<td>
+
+`null`
+
+</td>
+<td>
+
+`null`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Block item padding of the listbox.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-listbox-drop-hint-border-width</td>
+    <td>Null</td>
+<td>
+
+`null`
+
+</td>
+<td>
+
+`null`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Width of the border around the drop hint.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-listbox-drop-hint-width</td>
+    <td>Number</td>
+<td>
+
+`1px`
+
+</td>
+<td>
+
+`1px`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Width of the drop hint.</div></div>
+    </td>
+</tr>
+</tbody>
+</table>
+
 ### Menu
 
 <table class="theme-variables">
@@ -5986,6 +6360,1365 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the arrow button.</div></div>
+    </td>
+</tr>
+</tbody>
+</table>
+
+### Notification
+
+<table class="theme-variables">
+    <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
+    </tr>
+</thead>
+<tbody>
+        <tr>
+    <td>$kendo-notification-padding-x</td>
+    <td>Number</td>
+<td>
+
+`$alert-padding-x`
+
+</td>
+<td>
+
+`1rem`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the notification container.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-notification-padding-y</td>
+    <td>Number</td>
+<td>
+
+`$alert-padding-y`
+
+</td>
+<td>
+
+`1rem`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the notification.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-notification-border-width</td>
+    <td>Number</td>
+<td>
+
+`$alert-border-width`
+
+</td>
+<td>
+
+`1px`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Width of the border around the notification.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-notification-border-radius</td>
+    <td>Number</td>
+<td>
+
+`$alert-border-radius`
+
+</td>
+<td>
+
+`0.375rem`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border radius of the notification.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-notification-shadow</td>
+    <td>List</td>
+<td>
+
+`$popup-shadow`
+
+</td>
+<td>
+
+`0 2px 4px 0 rgba(0, 0, 0, 0.03), 0 4px 5px 0 rgba(0, 0, 0, 0.04)`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Box shadow of the notification.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-notification-font-family</td>
+    <td>List</td>
+<td>
+
+`$font-family`
+
+</td>
+<td>
+
+`system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font family of the notification.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-notification-font-size</td>
+    <td>Number</td>
+<td>
+
+`$font-size-sm`
+
+</td>
+<td>
+
+`0.875rem`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the notification.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-notification-line-height</td>
+    <td>Number</td>
+<td>
+
+`$line-height`
+
+</td>
+<td>
+
+`1.5`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of the notification.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-notification-icon-spacing</td>
+    <td>Number</td>
+<td>
+
+`$icon-spacing`
+
+</td>
+<td>
+
+`0.5rem`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal spacing of the notification icon.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-notification-bg</td>
+    <td>Color</td>
+<td>
+
+`$component-bg`
+
+</td>
+<td>
+
+<span class="color-preview" style="background-color: #ffffff"></span>
+
+`#ffffff`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the notification.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-notification-text</td>
+    <td>Color</td>
+<td>
+
+`$component-text`
+
+</td>
+<td>
+
+<span class="color-preview" style="background-color: #212529"></span>
+
+`#212529`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the notification.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-notification-border</td>
+    <td>Color</td>
+<td>
+
+`$component-border`
+
+</td>
+<td>
+
+<span class="color-preview" style="background-color: #dee2e6"></span>
+
+`#dee2e6`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the notification.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-notification-theme-colors</td>
+    <td>Map</td>
+<td>
+
+`$kendo-theme-colors`
+
+</td>
+<td>
+
+`("primary": #0d6efd, "secondary": #6c757d, "tertiary": #6f42c1, "info": #0dcaf0, "success": #198754, "warning": #ffc107, "error": #dc3545, "dark": #212529, "light": #f8f9fa, "inverse": #212529)`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Theme colors of the notification.</div></div>
+    </td>
+</tr>
+</tbody>
+</table>
+
+### Pager
+
+<table class="theme-variables">
+    <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
+    </tr>
+</thead>
+<tbody>
+        <tr>
+    <td>$kendo-pager-padding-x</td>
+    <td>Number</td>
+<td>
+
+`k-map-get( $spacing, 2 )`
+
+</td>
+<td>
+
+`0.5rem`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal padding of the pager according to the pager size.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pager-padding-y</td>
+    <td>Number</td>
+<td>
+
+`$kendo-pager-padding-x`
+
+</td>
+<td>
+
+`0.5rem`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Vertical padding of the pager according to the pager size.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pager-item-min-width-sm</td>
+    <td>Calculation</td>
+<td>
+
+`$kendo-button-calc-size-sm`
+
+</td>
+<td>
+
+`calc( 1.4285714286em + 0.5rem + 2px )`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Minimum width of the pager items according to the pager size.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pager-item-group-spacing-sm</td>
+    <td>Number</td>
+<td>
+
+`k-map-get( $spacing, 3 ) + k-map-get( $spacing, thin )`
+
+</td>
+<td>
+
+`0.875rem`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Margin between pager item groups according to the pager size.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pager-border-width</td>
+    <td>Number</td>
+<td>
+
+`1px`
+
+</td>
+<td>
+
+`1px`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border width of the pager.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pager-font-family</td>
+    <td>List</td>
+<td>
+
+`$font-family`
+
+</td>
+<td>
+
+`system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font family of the pager.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pager-font-size</td>
+    <td>Number</td>
+<td>
+
+`$font-size`
+
+</td>
+<td>
+
+`1rem`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the pager.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pager-line-height</td>
+    <td>Number</td>
+<td>
+
+`$line-height`
+
+</td>
+<td>
+
+`1.5`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of the pager.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pager-bg</td>
+    <td>Color</td>
+<td>
+
+`$header-bg`
+
+</td>
+<td>
+
+<span class="color-preview" style="background-color: #f8f9fa"></span>
+
+`#f8f9fa`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the pager.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pager-text</td>
+    <td>Color</td>
+<td>
+
+`$header-text`
+
+</td>
+<td>
+
+<span class="color-preview" style="background-color: #212529"></span>
+
+`#212529`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the pager.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pager-border</td>
+    <td>Color</td>
+<td>
+
+`$header-border`
+
+</td>
+<td>
+
+<span class="color-preview" style="background-color: #dee2e6"></span>
+
+`#dee2e6`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the pager.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pager-focus-bg</td>
+    <td>Null</td>
+<td>
+
+`null`
+
+</td>
+<td>
+
+`null`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the focused pager.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pager-focus-shadow</td>
+    <td>List</td>
+<td>
+
+`inset 0 0 0 2px rgba( 0, 0, 0, .08)`
+
+</td>
+<td>
+
+`inset 0 0 0 2px rgba(0, 0, 0, 0.08)`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Box shadow of the focused pager.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pager-section-spacing</td>
+    <td>Number</td>
+<td>
+
+`k-map-get( $spacing, 4 )`
+
+</td>
+<td>
+
+`1rem`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Spacing between the pager sections.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pager-item-border-width</td>
+    <td>Number</td>
+<td>
+
+`1px`
+
+</td>
+<td>
+
+`1px`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border width of the pager items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pager-item-border-radius</td>
+    <td>Number</td>
+<td>
+
+`k-map-get( $spacing, 1 )`
+
+</td>
+<td>
+
+`0.25rem`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border radius of the pager items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pager-item-spacing</td>
+    <td>Number</td>
+<td>
+
+`(-1 * $kendo-pager-item-border-width)`
+
+</td>
+<td>
+
+`-1px`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Spacing around the pager items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pager-item-bg</td>
+    <td>Color</td>
+<td>
+
+`$component-bg`
+
+</td>
+<td>
+
+<span class="color-preview" style="background-color: #ffffff"></span>
+
+`#ffffff`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the pager items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pager-item-text</td>
+    <td>Color</td>
+<td>
+
+`$link-text`
+
+</td>
+<td>
+
+<span class="color-preview" style="background-color: #0d6efd"></span>
+
+`#0d6efd`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the pager items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pager-item-border</td>
+    <td>Color</td>
+<td>
+
+`$component-border`
+
+</td>
+<td>
+
+<span class="color-preview" style="background-color: #dee2e6"></span>
+
+`#dee2e6`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the pager items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pager-item-hover-bg</td>
+    <td>Color</td>
+<td>
+
+`$hovered-bg`
+
+</td>
+<td>
+
+<span class="color-preview" style="background-color: #e9ecef"></span>
+
+`#e9ecef`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the hovered pager items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pager-item-hover-text</td>
+    <td>Color</td>
+<td>
+
+`$link-hover-text`
+
+</td>
+<td>
+
+<span class="color-preview" style="background-color: #0a58ca"></span>
+
+`#0a58ca`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the hovered pager items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pager-item-hover-border</td>
+    <td>Color</td>
+<td>
+
+`$hovered-border`
+
+</td>
+<td>
+
+<span class="color-preview" style="background-color: #d6d9dc"></span>
+
+`#d6d9dc`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the hovered pager items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pager-item-selected-bg</td>
+    <td>Color</td>
+<td>
+
+`$selected-bg`
+
+</td>
+<td>
+
+<span class="color-preview" style="background-color: #0d6efd"></span>
+
+`#0d6efd`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the selected pager items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pager-item-selected-text</td>
+    <td>Color</td>
+<td>
+
+`$selected-text`
+
+</td>
+<td>
+
+<span class="color-preview" style="background-color: white"></span>
+
+`white`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the selected pager items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pager-item-selected-border</td>
+    <td>Color</td>
+<td>
+
+`$kendo-pager-item-selected-bg`
+
+</td>
+<td>
+
+<span class="color-preview" style="background-color: #0d6efd"></span>
+
+`#0d6efd`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the selected pager items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pager-item-focus-opacity</td>
+    <td>Null</td>
+<td>
+
+`null`
+
+</td>
+<td>
+
+`null`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Opacity of the focused pager items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pager-item-focus-bg</td>
+    <td>Color</td>
+<td>
+
+`$kendo-pager-item-bg`
+
+</td>
+<td>
+
+<span class="color-preview" style="background-color: #ffffff"></span>
+
+`#ffffff`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the focused pager items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pager-item-focus-shadow</td>
+    <td>List</td>
+<td>
+
+`0 0 0 3px rgba($primary, .25)`
+
+</td>
+<td>
+
+`0 0 0 3px rgba(13, 110, 253, 0.25)`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Box shadow of the focused pager items.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pager-number-border-radius</td>
+    <td>Number</td>
+<td>
+
+`0px`
+
+</td>
+<td>
+
+`0px`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border radius of the pager numbers.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pager-input-width</td>
+    <td>Number</td>
+<td>
+
+`5em`
+
+</td>
+<td>
+
+`5em`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Width of the pager inputs.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pager-dropdown-width-sm</td>
+    <td>Number</td>
+<td>
+
+`5em`
+
+</td>
+<td>
+
+`5em`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Width of the pager dropdowns according to the pager size.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-pager-sizes</td>
+    <td>Map</td>
+<td>
+
+`(
+    sm: (
+        padding-x: $kendo-pager-padding-x-sm,
+        padding-y: $kendo-pager-padding-y-sm,
+        item-group-spacing: $kendo-pager-item-group-spacing-sm,
+        item-min-width: $kendo-pager-item-min-width-sm,
+        pager-dropdown-width: $kendo-pager-dropdown-width-sm
+    ),
+    md: (
+        padding-x: $kendo-pager-padding-x-md,
+        padding-y: $kendo-pager-padding-y-md,
+        item-group-spacing: $kendo-pager-item-group-spacing-md,
+        item-min-width: $kendo-pager-item-min-width-md,
+        pager-dropdown-width: $kendo-pager-dropdown-width-md
+    ),
+    lg: (
+        padding-x: $kendo-pager-padding-x-lg,
+        padding-y: $kendo-pager-padding-y-lg,
+        item-group-spacing: $kendo-pager-item-group-spacing-lg,
+        item-min-width: $kendo-pager-item-min-width-lg,
+        pager-dropdown-width: $kendo-pager-dropdown-width-lg
+    )
+)`
+
+</td>
+<td>
+
+`(sm: (padding-x: 0.25rem, padding-y: 0.25rem, item-group-spacing: 0.875rem, item-min-width: calc( 1.4285714286em + 0.5rem + 2px ), pager-dropdown-width: 5em), md: (padding-x: 0.5rem, padding-y: 0.5rem, item-group-spacing: 1rem, item-min-width: calc( 1.5em + 0.75rem + 2px ), pager-dropdown-width: 5em), lg: (padding-x: 0.625rem, padding-y: 0.625rem, item-group-spacing: 1.125rem, item-min-width: calc( 1.5em + 1rem + 2px ), pager-dropdown-width: 6em))`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Sizes map of the pager.</div></div>
+    </td>
+</tr>
+</tbody>
+</table>
+
+### Progressbar
+
+<table class="theme-variables">
+    <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
+    </tr>
+</thead>
+<tbody>
+        <tr>
+    <td>$kendo-progressbar-height</td>
+    <td>Number</td>
+<td>
+
+`$progress-height`
+
+</td>
+<td>
+
+`1rem`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Height of the progressbar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-progressbar-horizontal-width</td>
+    <td>Number</td>
+<td>
+
+`100%`
+
+</td>
+<td>
+
+`100%`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Horizontal width of the progressbar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-progressbar-animation-timing</td>
+    <td>String</td>
+<td>
+
+`progress-bar-animation-timing`
+
+</td>
+<td>
+
+`progress-bar-animation-timing`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Animation timing of the progressbar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-progressbar-border-width</td>
+    <td>Number</td>
+<td>
+
+`0px`
+
+</td>
+<td>
+
+`0px`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border width of the progressbar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-progressbar-font-family</td>
+    <td>List</td>
+<td>
+
+`$font-family`
+
+</td>
+<td>
+
+`system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font family of the progressbar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-progressbar-font-size</td>
+    <td>Number</td>
+<td>
+
+`$progress-font-size`
+
+</td>
+<td>
+
+`0.75rem`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the progressbar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-progressbar-line-height</td>
+    <td>Number</td>
+<td>
+
+`1`
+
+</td>
+<td>
+
+`1`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of the progressbar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-progressbar-bg</td>
+    <td>Color</td>
+<td>
+
+`$gray-200`
+
+</td>
+<td>
+
+<span class="color-preview" style="background-color: #e9ecef"></span>
+
+`#e9ecef`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the progressbar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-progressbar-text</td>
+    <td>Color</td>
+<td>
+
+`k-contrast-color( $gray-200 )`
+
+</td>
+<td>
+
+<span class="color-preview" style="background-color: black"></span>
+
+`black`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the progressbar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-progressbar-border</td>
+    <td>Null</td>
+<td>
+
+`null`
+
+</td>
+<td>
+
+`null`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the progressbar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-progressbar-gradient</td>
+    <td>Null</td>
+<td>
+
+`null`
+
+</td>
+<td>
+
+`null`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background gradient of the progressbar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-progressbar-value-bg</td>
+    <td>Color</td>
+<td>
+
+`$selected-bg`
+
+</td>
+<td>
+
+<span class="color-preview" style="background-color: #0d6efd"></span>
+
+`#0d6efd`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Progress background color of the progressbar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-progressbar-value-text</td>
+    <td>Color</td>
+<td>
+
+`$selected-text`
+
+</td>
+<td>
+
+<span class="color-preview" style="background-color: white"></span>
+
+`white`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Progress text color of the progressbar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-progressbar-value-border</td>
+    <td>Null</td>
+<td>
+
+`null`
+
+</td>
+<td>
+
+`null`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Progress border color of the progressbar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-progressbar-value-gradient</td>
+    <td>Null</td>
+<td>
+
+`null`
+
+</td>
+<td>
+
+`null`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Progress background gradient of the progressbar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-progressbar-indeterminate-bg</td>
+    <td>Color</td>
+<td>
+
+`$kendo-progressbar-bg`
+
+</td>
+<td>
+
+<span class="color-preview" style="background-color: #e9ecef"></span>
+
+`#e9ecef`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the indeterminate progressbar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-progressbar-indeterminate-text</td>
+    <td>Color</td>
+<td>
+
+`$kendo-progressbar-text`
+
+</td>
+<td>
+
+<span class="color-preview" style="background-color: black"></span>
+
+`black`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the indeterminate progressbar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-progressbar-indeterminate-border</td>
+    <td>Null</td>
+<td>
+
+`$kendo-progressbar-border`
+
+</td>
+<td>
+
+`null`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the indeterminate progressbar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-progressbar-indeterminate-gradient</td>
+    <td>Null</td>
+<td>
+
+`null`
+
+</td>
+<td>
+
+`null`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background gradient of the indeterminate progressbar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-progressbar-chunk-border</td>
+    <td>Color</td>
+<td>
+
+`$body-bg`
+
+</td>
+<td>
+
+<span class="color-preview" style="background-color: #ffffff"></span>
+
+`#ffffff`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of the chunk progressbar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-circular-progressbar-arc-stroke</td>
+    <td>Color</td>
+<td>
+
+`$primary`
+
+</td>
+<td>
+
+<span class="color-preview" style="background-color: #0d6efd"></span>
+
+`#0d6efd`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Arc stroke color of the circular progressbar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-circular-progressbar-scale-stroke</td>
+    <td>Color</td>
+<td>
+
+`$kendo-progressbar-bg`
+
+</td>
+<td>
+
+<span class="color-preview" style="background-color: #e9ecef"></span>
+
+`#e9ecef`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Scale stroke background color of the circular progressbar.</div></div>
     </td>
 </tr>
 </tbody>
@@ -9006,39 +10739,331 @@ The following table lists the available variables for customizing the Bootstrap 
 </thead>
 <tbody>
         <tr>
-    <td>$toolbar-padding-x</td>
-    <td>Number</td>
+    <td>$kendo-toolbar-padding-x</td>
+    <td>Null</td>
 <td>
 
-`k-map-get( $spacing, 2 )`
+`null`
 
 </td>
 <td>
 
-`0.5rem`
+`null`
 
 </td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the container.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The horizontal padding of the toolbar.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$toolbar-padding-y</td>
-    <td>Number</td>
+    <td>$kendo-toolbar-padding-y</td>
+    <td>Null</td>
 <td>
 
-`k-map-get( $spacing, 2 )`
+`null`
 
 </td>
 <td>
 
-`0.5rem`
+`null`
 
 </td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the container.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The vertical padding of the toolbar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-toolbar-spacing</td>
+    <td>Null</td>
+<td>
+
+`null`
+
+</td>
+<td>
+
+`null`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing betweem the toolbar tools.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-toolbar-border-width</td>
+    <td>Number</td>
+<td>
+
+`1px`
+
+</td>
+<td>
+
+`1px`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Width of the border around the toolbar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-toolbar-border-radius</td>
+    <td>Null</td>
+<td>
+
+`null`
+
+</td>
+<td>
+
+`null`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border radius of the toolbar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-toolbar-font-family</td>
+    <td>List</td>
+<td>
+
+`$font-family`
+
+</td>
+<td>
+
+`system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font family of the toolbar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-toolbar-font-size</td>
+    <td>Number</td>
+<td>
+
+`$font-size`
+
+</td>
+<td>
+
+`1rem`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Font size of the toolbar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-toolbar-line-height</td>
+    <td>Number</td>
+<td>
+
+`$line-height`
+
+</td>
+<td>
+
+`1.5`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height of the toolbar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-toolbar-bg</td>
+    <td>Color</td>
+<td>
+
+`$header-bg`
+
+</td>
+<td>
+
+<span class="color-preview" style="background-color: #f8f9fa"></span>
+
+`#f8f9fa`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of the toolbar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-toolbar-text</td>
+    <td>Color</td>
+<td>
+
+`$header-text`
+
+</td>
+<td>
+
+<span class="color-preview" style="background-color: #212529"></span>
+
+`#212529`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Text color of the toolbar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-toolbar-border</td>
+    <td>Color</td>
+<td>
+
+`$header-border`
+
+</td>
+<td>
+
+<span class="color-preview" style="background-color: #dee2e6"></span>
+
+`#dee2e6`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Color of the border around the toolbar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-toolbar-gradient</td>
+    <td>Null</td>
+<td>
+
+`null`
+
+</td>
+<td>
+
+`null`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Gradient of the toolbar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-toolbar-shadow</td>
+    <td>Null</td>
+<td>
+
+`null`
+
+</td>
+<td>
+
+`null`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Box shadow of the toolbar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-toolbar-separator-border</td>
+    <td>String</td>
+<td>
+
+`inherit`
+
+</td>
+<td>
+
+`inherit`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Color of the separator border of the toolbar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-toolbar-input-width</td>
+    <td>Number</td>
+<td>
+
+`10em`
+
+</td>
+<td>
+
+`10em`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The width of the input in the toolbar.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-toolbar-item-shadow</td>
+    <td>List</td>
+<td>
+
+`0 0 0 .25rem rgba( $primary, .25 )`
+
+</td>
+<td>
+
+`0 0 0 0.25rem rgba(13, 110, 253, 0.25)`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Box shadow of the focused toolbar item.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-toolbar-sizes</td>
+    <td>Map</td>
+<td>
+
+`(
+    sm: (
+        padding-x: $kendo-toolbar-padding-x-sm,
+        padding-y: $kendo-toolbar-padding-y-sm,
+        spacing: $kendo-toolbar-spacing-sm
+    ),
+    md: (
+        padding-x: $kendo-toolbar-padding-x-md,
+        padding-y: $kendo-toolbar-padding-y-md,
+        spacing: $kendo-toolbar-spacing-md
+    ),
+    lg: (
+        padding-x: $kendo-toolbar-padding-x-lg,
+        padding-y: $kendo-toolbar-padding-y-lg,
+        spacing: $kendo-toolbar-spacing-lg
+    )
+)`
+
+</td>
+<td>
+
+`(sm: (padding-x: 0.25rem, padding-y: 0.25rem, spacing: 0.375rem), md: (padding-x: 0.5rem, padding-y: 0.5rem, spacing: 0.5rem), lg: (padding-x: 0.625rem, padding-y: 0.625rem, spacing: 0.625rem))`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Sizes map for the toolbar.</div></div>
     </td>
 </tr>
 </tbody>
@@ -9774,6 +11799,49 @@ The following table lists the available variables for customizing the Bootstrap 
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Line height used along with $font-size.</div></div>
+    </td>
+</tr>
+</tbody>
+</table>
+
+### Window
+
+<table class="theme-variables">
+    <colgroup>
+    <col style="width: 200px; white-space:nowrap;" />
+    <col />
+    <col />
+    <col />
+</colgroup>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default value</th>
+        <th>Computed value</th>
+    </tr>
+</thead>
+<tbody>
+        <tr>
+    <td>$kendo-window-theme-colors</td>
+    <td>Map</td>
+<td>
+
+`(
+    "primary": map-get($kendo-theme-colors, "primary"),
+    "light": map-get($kendo-theme-colors, "light"),
+    "dark": map-get($kendo-theme-colors, "dark")
+)`
+
+</td>
+<td>
+
+`("primary": #0d6efd, "light": #f8f9fa, "dark": #212529)`
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Theme colors map for the window.</div></div>
     </td>
 </tr>
 </tbody>
