@@ -54,6 +54,6 @@
 /// @contextType css
 
 // Display utility classes
-$kendo-utils-display: map-get( $kendo-utils, "display" ) !default;
+$kendo-utils-display: k-map-get( $kendo-utils, "display" ) !default;
 
 @include generate-utils( d, display, $kendo-utils-display );

@@ -1,6 +1,6 @@
 // TODO DOCS
 
-$kendo-utils-padding: map-get( $kendo-utils, "padding" ) !default;
+$kendo-utils-padding: k-map-get( $kendo-utils, "padding" ) !default;
 
 @include generate-utils( p, padding, $kendo-utils-padding );
 @include generate-utils( pt, padding-top, $kendo-utils-padding );

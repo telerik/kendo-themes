@@ -139,7 +139,7 @@
         flex-flow: row nowrap;
         align-items: center;
         align-content: center;
-        gap: map-get( $spacing, 1 );
+        gap: k-map-get( $spacing, 1 );
 
         .k-radio-label {
             margin: 0;
@@ -187,9 +187,9 @@
 
     // Radio size
     @each $size, $size-props in $kendo-radio-sizes {
-        $_size: map-get( $size-props, size );
-        $_glyph-size: map-get( $size-props, glyph-size );
-        $_ripple-size: map-get( $size-props, ripple-size );
+        $_size: k-map-get( $size-props, size );
+        $_glyph-size: k-map-get( $size-props, glyph-size );
+        $_ripple-size: k-map-get( $size-props, ripple-size );
 
         .k-radio-#{$size} {
             width: $_size;

@@ -1,5 +1,5 @@
 // TODO DOCS
 
-$kendo-utils-align-self: map-get( $kendo-utils, "align-self" ) !default;
+$kendo-utils-align-self: k-map-get( $kendo-utils, "align-self" ) !default;
 
 @include generate-utils( align-self, align-self, $kendo-utils-align-self );

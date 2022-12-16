@@ -267,11 +267,11 @@
 
     // Calendar sizes
     @each $size, $size-props in $kendo-calendar-sizes {
-        $_font-size: map-get( $size-props, font-size );
-        $_line-height: map-get( $size-props, line-height );
-        $_cell-size: map-get( $size-props, cell-size );
-        $_cell-padding-x: map-get( $size-props, cell-padding-x );
-        $_cell-padding-y: map-get( $size-props, cell-padding-y );
+        $_font-size: k-map-get( $size-props, font-size );
+        $_line-height: k-map-get( $size-props, line-height );
+        $_cell-size: k-map-get( $size-props, cell-size );
+        $_cell-padding-x: k-map-get( $size-props, cell-padding-x );
+        $_cell-padding-y: k-map-get( $size-props, cell-padding-y );
 
         $_month-cell-size: $_cell-size;
         $_year-cell-size: ( 2 * $_cell-size );

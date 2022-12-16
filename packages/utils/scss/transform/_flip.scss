@@ -9,7 +9,7 @@
 /// @contextType css
 
 // Flip utility classes
-$kendo-utils-flip: map-get( $kendo-utils, "flip" ) !default;
+$kendo-utils-flip: k-map-get( $kendo-utils, "flip" ) !default;
 
 @if $kendo-utils-flip {
     .#{$kendo-prefix}flip-h { transform: scaleX( -1 ); }

@@ -19,6 +19,6 @@
 /// @contextType css
 
 // Flex direction utility classes
-$kendo-utils-flex-direction: map-get( $kendo-utils, "flex-direction" ) !default;
+$kendo-utils-flex-direction: k-map-get( $kendo-utils, "flex-direction" ) !default;
 
 @include generate-utils( flex, flex-direction, $kendo-utils-flex-direction );

@@ -1,6 +1,6 @@
 // TODO DOCS
 
-$kendo-utils-border-radius: map-get( $kendo-utils, "border-radius" ) !default;
+$kendo-utils-border-radius: k-map-get( $kendo-utils, "border-radius" ) !default;
 
 @include generate-utils( rounded, border-radius, $kendo-utils-border-radius );
 @include generate-utils( rounded-tl, border-top-left-radius, $kendo-utils-border-radius );

@@ -9,6 +9,6 @@
 /// @contextType css
 
 // Appearance utility classes
-$kendo-utils-appearance: map-get( $kendo-utils, "appearance" ) !default;
+$kendo-utils-appearance: k-map-get( $kendo-utils, "appearance" ) !default;
 
 @include generate-utils( appearance, appearance, $kendo-utils-appearance );

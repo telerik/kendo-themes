@@ -1,6 +1,6 @@
 // TODO DOCS
 
-$kendo-utils-border-style: map-get( $kendo-utils, "border-style" ) !default;
+$kendo-utils-border-style: k-map-get( $kendo-utils, "border-style" ) !default;
 
 @include generate-utils( border, border-style, $kendo-utils-border-style );
 @include generate-utils( border-t, border-top-style, $kendo-utils-border-style );

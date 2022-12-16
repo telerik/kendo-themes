@@ -1,4 +1,4 @@
-$svg-escaped-characters: (
+$_kendo-svg-escaped-characters: (
     ("%", "%25"),
     ("<", "%3c"),
     (">", "%3e"),
@@ -10,7 +10,7 @@ $svg-escaped-characters: (
 // See https://codepen.io/kevinweber/pen/dXWoRw
 @function k-escape-svg($string) {
     @if k-string-index($string, "data:image/svg+xml") {
-        @each $char, $encoded in $svg-escaped-characters {
+        @each $char, $encoded in $_kendo-svg-escaped-characters {
             // Do not escape the url brackets
             @if k-string-index($string, "url(") == 1 {
                 $string: url("#{k-string-replace(k-string-slice($string, 6, -3), $char, $encoded)}");
@@ -21,4 +21,21 @@ $svg-escaped-characters: (
     }
 
     @return $string;
+}
+
+
+
+$_kendo-escape-class-name: (
+    ".": "\\.",
+    "/": "\\/"
+);
+
+@function k-escape-class-name( $text ) {
+    $_text: $text;
+
+    @each $char, $rep in $_kendo-escape-class-name {
+        $_text: k-string-replace( $_text, unquote( $char ), unquote( $rep ) );
+    }
+
+    @return $_text;
 }

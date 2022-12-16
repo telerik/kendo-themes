@@ -1,5 +1,5 @@
 // TODO DOCS
 
-$kendo-utils-aspect-ratio: map-get( $kendo-utils, "aspect-ratio" ) !default;
+$kendo-utils-aspect-ratio: k-map-get( $kendo-utils, "aspect-ratio" ) !default;
 
 @include generate-utils( ratio, aspect-ratio, $kendo-utils-aspect-ratio );

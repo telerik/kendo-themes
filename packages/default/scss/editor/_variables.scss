@@ -10,7 +10,7 @@ $kendo-editor-placeholder-opacity: $kendo-input-placeholder-opacity !default;
 $kendo-editor-selected-text: $primary-contrast !default;
 $kendo-editor-selected-bg: $primary !default;
 
-$kendo-editor-highlighted-bg: mix($primary, #ffffff, 20%) !default;
+$kendo-editor-highlighted-bg: k-color-mix($primary, #ffffff, 20%) !default;
 
 $kendo-editor-export-tool-icon-margin-x: .25em !default;
 

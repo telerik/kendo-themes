@@ -27,9 +27,9 @@ $kendo-form-hint-font-size: 12px !default;
 $kendo-form-hint-font-style: italic !default;
 $kendo-form-hint-margin-top: 4px !default;
 
-$kendo-form-rows-spacing-sm: map-get( $spacing, 2 ) + map-get( $spacing, thin ) !default;
-$kendo-form-rows-spacing-md: map-get( $spacing, 3 ) + map-get( $spacing, thin ) !default;
-$kendo-form-rows-spacing-lg: map-get( $spacing, 4 ) + map-get( $spacing, thin ) !default;
+$kendo-form-rows-spacing-sm: k-map-get( $spacing, 2 ) + k-map-get( $spacing, thin ) !default;
+$kendo-form-rows-spacing-md: k-map-get( $spacing, 3 ) + k-map-get( $spacing, thin ) !default;
+$kendo-form-rows-spacing-lg: k-map-get( $spacing, 4 ) + k-map-get( $spacing, thin ) !default;
 
 $kendo-form-separator-margin: $kendo-form-rows-spacing-md 0 0 !default;
 $kendo-form-separator-border-color: $kendo-form-legend-border-color !default;

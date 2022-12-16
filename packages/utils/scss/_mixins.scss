@@ -4,9 +4,9 @@
         $_fn: if( function-exists( $function ), get-function( $function ), null );
 
         @each $key, $val in $values {
-            $_key: escape-class-name( $key );
+            $_key: k-escape-class-name( $key );
             $_val: if( type-of($values) == list, $key, $val );
-            $_name: escape-class-name( $name );
+            $_name: k-escape-class-name( $name );
             $_selector: if( $_key == DEFAULT, #{$kendo-prefix}#{$_name}, #{$kendo-prefix}#{$_name}-#{$_key});
 
             @if $important != only {

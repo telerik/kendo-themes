@@ -1,6 +1,6 @@
 // TODO DOCS
 
-$kendo-utils-margin: map-get( $kendo-utils, "margin" ) !default;
+$kendo-utils-margin: k-map-get( $kendo-utils, "margin" ) !default;
 
 @include generate-utils( m, margin, $kendo-utils-margin );
 @include generate-utils( mt, margin-top, $kendo-utils-margin );

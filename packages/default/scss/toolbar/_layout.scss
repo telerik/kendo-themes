@@ -121,9 +121,9 @@
 
     // Toolbar sizes
     @each $size, $size-props in $kendo-toolbar-sizes {
-        $_padding-x: map-get( $size-props, padding-x );
-        $_padding-y: map-get( $size-props, padding-y );
-        $_spacing: map-get( $size-props, spacing );
+        $_padding-x: k-map-get( $size-props, padding-x );
+        $_padding-y: k-map-get( $size-props, padding-y );
+        $_spacing: k-map-get( $size-props, spacing );
 
         .k-toolbar-#{$size} {
             padding: $_padding-y $_padding-x;
@@ -204,7 +204,7 @@
         }
 
         .k-separator {
-            margin: map-get( $spacing, 1 ) 0;
+            margin: k-map-get( $spacing, 1 ) 0;
         }
 
         // Group

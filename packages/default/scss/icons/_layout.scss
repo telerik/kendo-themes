@@ -1,7 +1,7 @@
 @import "./font/WebComponentsIcons.scss";
 
 @include exports( "icons/layout" ) {
-    $icon-font-url: map-get( $data-uris, "WebComponentsIcons.ttf" ) !default;
+    $icon-font-url: k-map-get( $data-uris, "WebComponentsIcons.ttf" ) !default;
 
     // Keep this as a root selector, because nested themes will not work
     @at-root {

@@ -199,7 +199,7 @@
 
     // Sheets bar
     .k-spreadsheet-sheets-bar {
-        padding: 0 0 map-get( $spacing, 1 ) map-get( $spacing, 1 );
+        padding: 0 0 k-map-get( $spacing, 1 ) k-map-get( $spacing, 1 );
         border-width: 1px 0 0;
         border-style: solid;
         border-color: inherit;
@@ -637,10 +637,10 @@
         }
         .k-details-content,
         .k-columnmenu-item-content {
-            padding: map-get( $spacing, 2 );
+            padding: k-map-get( $spacing, 2 );
             display: flex;
             flex-flow: column nowrap;
-            gap: map-get( $spacing, 2 );
+            gap: k-map-get( $spacing, 2 );
 
             .k-filter-and {
                 width: min-content;
@@ -796,7 +796,7 @@
             min-width: 100%;
             width: $spreadsheet-insert-image-dialog-preview-width;
             height: $spreadsheet-insert-image-dialog-preview-height;
-            background-image: url(map-get($data-uris, $spreadsheet-insert-image-dialog-preview-img));
+            background-image: url(k-map-get($data-uris, $spreadsheet-insert-image-dialog-preview-img));
             background-size: auto 70%;
             background-position: 50% 30%;
             background-repeat: no-repeat;

@@ -29,7 +29,7 @@ $pivotgrid-total-bg: k-try-shade( $pivotgrid-bg, 1 ) !default;
 $pivotgrid-total-text: $header-text !default;
 $pivotgrid-total-border: $header-border !default;
 
-$pivotgrid-hover-bg: darken( $pivotgrid-bg, 7% ) !default;
+$pivotgrid-hover-bg: k-color-darken( $pivotgrid-bg, 7% ) !default;
 $pivotgrid-hover-text: null !default;
 $pivotgrid-hover-border: null !default;
 

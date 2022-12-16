@@ -9,6 +9,6 @@
 /// @contextType css
 
 // Pointer events utility classes
-$kendo-utils-pointer-events: map-get( $kendo-utils, "pointer-events" ) !default;
+$kendo-utils-pointer-events: k-map-get( $kendo-utils, "pointer-events" ) !default;
 
 @include generate-utils( pointer-events, pointer-events, $kendo-utils-pointer-events );

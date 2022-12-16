@@ -147,7 +147,7 @@
         flex-flow: row nowrap;
         align-items: center;
         align-content: center;
-        gap: map-get( $spacing, 1 );
+        gap: k-map-get( $spacing, 1 );
 
         .k-checkbox-label {
             margin: 0;
@@ -190,9 +190,9 @@
 
     // Checkbox size
     @each $size, $size-props in $kendo-checkbox-sizes {
-        $_size: map-get( $size-props, size );
-        $_glyph-size: map-get( $size-props, glyph-size );
-        $_ripple-size: map-get( $size-props, ripple-size );
+        $_size: k-map-get( $size-props, size );
+        $_glyph-size: k-map-get( $size-props, glyph-size );
+        $_ripple-size: k-map-get( $size-props, ripple-size );
 
         .k-checkbox-#{$size} {
             width: $_size;

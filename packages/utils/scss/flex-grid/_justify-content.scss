@@ -1,6 +1,6 @@
 // TODO DOCS
 
-$kendo-utils-justify-content: map-get( $kendo-utils, "justify-content" ) !default;
+$kendo-utils-justify-content: k-map-get( $kendo-utils, "justify-content" ) !default;
 
 @include generate-utils( justify-content, justify-content, $kendo-utils-justify-content );
 

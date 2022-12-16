@@ -1,6 +1,6 @@
 @include exports("slider/theme") {
-    $slider-tick-horizontal-image: map-get($data-uris, "slider-h.gif") !default;
-    $slider-tick-vertical-image: map-get($data-uris, "slider-v.gif") !default;
+    $slider-tick-horizontal-image: k-map-get($data-uris, "slider-h.gif") !default;
+    $slider-tick-vertical-image: k-map-get($data-uris, "slider-v.gif") !default;
 
     .k-slider {
         color: $component-text;

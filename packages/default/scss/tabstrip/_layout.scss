@@ -154,13 +154,13 @@
 
             &.k-hstack {
                 > .k-button {
-                    padding: 0 map-get( $spacing, 1 );
+                    padding: 0 k-map-get( $spacing, 1 );
                 }
             }
 
             &.k-vstack {
                 > .k-button {
-                    padding: map-get( $spacing, 1 ) 0;
+                    padding: k-map-get( $spacing, 1 ) 0;
                 }
             }
         }

@@ -1,5 +1,5 @@
 // TODO DOCS
 
-$kendo-utils-cursor: map-get( $kendo-utils, "cursor" ) !default;
+$kendo-utils-cursor: k-map-get( $kendo-utils, "cursor" ) !default;
 
 @include generate-utils( cursor, cursor, $kendo-utils-cursor );

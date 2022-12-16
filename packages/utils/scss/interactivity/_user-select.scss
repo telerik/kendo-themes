@@ -24,6 +24,6 @@
 /// @contextType css
 
 // User select utility classes
-$kendo-utils-user-select: map-get( $kendo-utils, "user-select" ) !default;
+$kendo-utils-user-select: k-map-get( $kendo-utils, "user-select" ) !default;
 
 @include generate-utils( user-select, user-select, $kendo-utils-user-select );

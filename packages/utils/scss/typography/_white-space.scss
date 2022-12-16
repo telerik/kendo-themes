@@ -29,6 +29,6 @@
 /// @contextType css
 
 // White space utility classes
-$kendo-utils-white-space: map-get( $kendo-utils, "white-space" ) !default;
+$kendo-utils-white-space: k-map-get( $kendo-utils, "white-space" ) !default;
 
 @include generate-utils( white-space, white-space, $kendo-utils-white-space );

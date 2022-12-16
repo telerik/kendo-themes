@@ -19,6 +19,6 @@
 /// @contextType css
 
 // Text align utility classes
-$kendo-utils-text-align: map-get( $kendo-utils, "text-align" ) !default;
+$kendo-utils-text-align: k-map-get( $kendo-utils, "text-align" ) !default;
 
 @include generate-utils( text, text-align, $kendo-utils-text-align );

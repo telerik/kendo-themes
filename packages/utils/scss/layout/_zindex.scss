@@ -1,5 +1,5 @@
 // TODO DOCS
 
-$kendo-utils-zindex: map-get( $kendo-utils, "zindex" ) !default;
+$kendo-utils-zindex: k-map-get( $kendo-utils, "zindex" ) !default;
 
 @include generate-utils( z, z-index, $kendo-utils-zindex );

@@ -56,7 +56,7 @@
     }
 
     .k-colorgradient-slider.k-alpha-slider .k-slider-track::before {
-        background: url(map-get($data-uris, "alpha-slider-bgr.png")) center repeat;
+        background: url(k-map-get($data-uris, "alpha-slider-bgr.png")) center repeat;
     }
 
     // Inputs

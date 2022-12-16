@@ -1,6 +1,6 @@
 // TODO DOCS
 
-$kendo-utils-scale: map-get( $kendo-utils, "scale" ) !default;
+$kendo-utils-scale: k-map-get( $kendo-utils, "scale" ) !default;
 
 // sass-lint:disable function-name-format
 @function __scale( $val ) {

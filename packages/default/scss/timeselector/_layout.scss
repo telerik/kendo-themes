@@ -209,10 +209,10 @@
 
     // Time selector sizes
     @each $size, $size-props in $kendo-time-selector-sizes {
-        $_font-size: map-get( $size-props, font-size );
-        $_line-height: map-get( $size-props, line-height );
-        $_list-item-padding-x: map-get( $size-props, list-item-padding-x );
-        $_list-item-padding-y: map-get( $size-props, list-item-padding-y );
+        $_font-size: k-map-get( $size-props, font-size );
+        $_line-height: k-map-get( $size-props, line-height );
+        $_list-item-padding-x: k-map-get( $size-props, list-item-padding-x );
+        $_list-item-padding-y: k-map-get( $size-props, list-item-padding-y );
         $_highlight-height: calc( #{$_font-size * $_line-height} + #{ $_list-item-padding-y * 2} );
 
 

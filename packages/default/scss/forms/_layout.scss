@@ -236,7 +236,7 @@
 
     // Sizes
     @each $size, $size-props in $kendo-form-sizes {
-        $_form-rows-spacing: map-get($size-props, form-rows-spacing);
+        $_form-rows-spacing: k-map-get($size-props, form-rows-spacing);
 
         .k-form-#{$size} {
             .k-form-field,

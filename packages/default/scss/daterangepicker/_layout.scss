@@ -6,7 +6,7 @@
         display: flex;
         flex-flow: row nowrap;
         align-items: flex-end;
-        gap: map-get( $spacing, 2 );
+        gap: k-map-get( $spacing, 2 );
 
         *,
         *::before,
