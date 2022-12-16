@@ -52,7 +52,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`contrast-wcag( $accent )`
+`k-contrast-legacy( $accent )`
 
 </td>
 <td>
@@ -94,7 +94,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`contrast-wcag( $primary )`
+`k-contrast-legacy( $primary )`
 
 </td>
 <td>
@@ -136,7 +136,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`contrast-wcag( $secondary )`
+`k-contrast-legacy( $secondary )`
 
 </td>
 <td>
@@ -178,7 +178,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`contrast-wcag( $tertiary )`
+`k-contrast-legacy( $tertiary )`
 
 </td>
 <td>

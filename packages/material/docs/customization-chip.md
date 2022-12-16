@@ -198,9 +198,9 @@ The following table lists the available variables for customization.
 </td>
 <td>
 
-<span class="color-preview" style="background-color: black"></span>
+<span class="color-preview" style="background-color: #000000"></span>
 
-`black`
+`#000000`
 
 </td>
 </tr>
@@ -224,7 +224,7 @@ The following table lists the available variables for customization.
 </td>
 <td>
 
-`("base": black, "error": #f31700, "info": #0058e9, "warning": #ffc000, "success": #37b400)`
+`("base": #000000, "error": #f31700, "info": #0058e9, "warning": #ffc000, "success": #37b400)`
 
 </td>
 </tr>
@@ -452,9 +452,9 @@ The following table lists the available variables for customization.
 </td>
 <td>
 
-<span class="color-preview" style="background-color: white"></span>
+<span class="color-preview" style="background-color: #ffffff"></span>
 
-`white`
+`#ffffff`
 
 </td>
 </tr>

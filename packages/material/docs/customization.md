@@ -57,9 +57,9 @@ The following table lists the available variables for customizing the Material t
 </td>
 <td>
 
-<span class="color-preview" style="background-color: white"></span>
+<span class="color-preview" style="background-color: #ffffff"></span>
 
-`white`
+`#ffffff`
 
 </td>
 </tr>
@@ -815,7 +815,7 @@ The following table lists the available variables for customizing the Material t
 </td>
 <td>
 
-`("primary": #3f51b5, "secondary": #e51a5f, "tertiary": #00695c, "info": #0058e9, "success": #37b400, "warning": #ffc000, "error": #f31700, "dark": #424242, "light": #f5f5f5, "inverse": #424242, "base": white)`
+`("primary": #3f51b5, "secondary": #e51a5f, "tertiary": #00695c, "info": #0058e9, "success": #37b400, "warning": #ffc000, "error": #f31700, "dark": #424242, "light": #f5f5f5, "inverse": #424242, "base": #ffffff)`
 
 </td>
 </tr>
@@ -833,9 +833,9 @@ The following table lists the available variables for customizing the Material t
 </td>
 <td>
 
-<span class="color-preview" style="background-color: white"></span>
+<span class="color-preview" style="background-color: #ffffff"></span>
 
-`white`
+`#ffffff`
 
 </td>
 </tr>
@@ -873,9 +873,9 @@ The following table lists the available variables for customizing the Material t
 </td>
 <td>
 
-<span class="color-preview" style="background-color: white"></span>
+<span class="color-preview" style="background-color: #ffffff"></span>
 
-`white`
+`#ffffff`
 
 </td>
 </tr>
@@ -2258,7 +2258,7 @@ The following table lists the available variables for customizing the Material t
     <td>String</td>
 <td>
 
-`escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='none' stroke='#{$kendo-checkbox-checked-text}' stroke-width='3' d='M4.1,12.7 9,17.6 20.3,6.3'/></svg>") )`
+`k-escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='none' stroke='#{$kendo-checkbox-checked-text}' stroke-width='3' d='M4.1,12.7 9,17.6 20.3,6.3'/></svg>") )`
 
 </td>
 <td>
@@ -2276,7 +2276,7 @@ The following table lists the available variables for customizing the Material t
     <td>String</td>
 <td>
 
-`escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path fill='none' stroke='#{$kendo-checkbox-indeterminate-text}' stroke-width='3' d='M4 10h12'/></svg>") )`
+`k-escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path fill='none' stroke='#{$kendo-checkbox-indeterminate-text}' stroke-width='3' d='M4 10h12'/></svg>") )`
 
 </td>
 <td>
@@ -2593,9 +2593,9 @@ The following table lists the available variables for customizing the Material t
 </td>
 <td>
 
-<span class="color-preview" style="background-color: black"></span>
+<span class="color-preview" style="background-color: #000000"></span>
 
-`black`
+`#000000`
 
 </td>
 </tr>
@@ -2619,7 +2619,7 @@ The following table lists the available variables for customizing the Material t
 </td>
 <td>
 
-`("base": black, "error": #f31700, "info": #0058e9, "warning": #ffc000, "success": #37b400)`
+`("base": #000000, "error": #f31700, "info": #0058e9, "warning": #ffc000, "success": #37b400)`
 
 </td>
 </tr>
@@ -2847,9 +2847,9 @@ The following table lists the available variables for customizing the Material t
 </td>
 <td>
 
-<span class="color-preview" style="background-color: white"></span>
+<span class="color-preview" style="background-color: #ffffff"></span>
 
-`white`
+`#ffffff`
 
 </td>
 </tr>
@@ -3337,9 +3337,9 @@ The following table lists the available variables for customizing the Material t
 </td>
 <td>
 
-<span class="color-preview" style="background-color: white"></span>
+<span class="color-preview" style="background-color: #ffffff"></span>
 
-`white`
+`#ffffff`
 
 </td>
 </tr>
@@ -3985,9 +3985,9 @@ The following table lists the available variables for customizing the Material t
 </td>
 <td>
 
-<span class="color-preview" style="background-color: white"></span>
+<span class="color-preview" style="background-color: #ffffff"></span>
 
-`white`
+`#ffffff`
 
 </td>
 </tr>
@@ -4045,9 +4045,9 @@ The following table lists the available variables for customizing the Material t
 </td>
 <td>
 
-<span class="color-preview" style="background-color: white"></span>
+<span class="color-preview" style="background-color: #ffffff"></span>
 
-`white`
+`#ffffff`
 
 </td>
 </tr>
@@ -4065,9 +4065,9 @@ The following table lists the available variables for customizing the Material t
 </td>
 <td>
 
-<span class="color-preview" style="background-color: white"></span>
+<span class="color-preview" style="background-color: #ffffff"></span>
 
-`white`
+`#ffffff`
 
 </td>
 </tr>
@@ -4160,9 +4160,9 @@ The following table lists the available variables for customizing the Material t
 </td>
 <td>
 
-<span class="color-preview" style="background-color: white"></span>
+<span class="color-preview" style="background-color: #ffffff"></span>
 
-`white`
+`#ffffff`
 
 </td>
 </tr>
@@ -4220,9 +4220,9 @@ The following table lists the available variables for customizing the Material t
 </td>
 <td>
 
-<span class="color-preview" style="background-color: white"></span>
+<span class="color-preview" style="background-color: #ffffff"></span>
 
-`white`
+`#ffffff`
 
 </td>
 </tr>
@@ -4298,9 +4298,9 @@ The following table lists the available variables for customizing the Material t
 </td>
 <td>
 
-<span class="color-preview" style="background-color: white"></span>
+<span class="color-preview" style="background-color: #ffffff"></span>
 
-`white`
+`#ffffff`
 
 </td>
 </tr>
@@ -5061,9 +5061,9 @@ The following table lists the available variables for customizing the Material t
 </td>
 <td>
 
-<span class="color-preview" style="background-color: white"></span>
+<span class="color-preview" style="background-color: #ffffff"></span>
 
-`white`
+`#ffffff`
 
 </td>
 </tr>
@@ -5325,9 +5325,9 @@ The following table lists the available variables for customizing the Material t
 </td>
 <td>
 
-<span class="color-preview" style="background-color: white"></span>
+<span class="color-preview" style="background-color: #ffffff"></span>
 
-`white`
+`#ffffff`
 
 </td>
 </tr>
@@ -5622,9 +5622,9 @@ The following table lists the available variables for customizing the Material t
 </td>
 <td>
 
-<span class="color-preview" style="background-color: white"></span>
+<span class="color-preview" style="background-color: #ffffff"></span>
 
-`white`
+`#ffffff`
 
 </td>
 </tr>
@@ -5865,9 +5865,9 @@ The following table lists the available variables for customizing the Material t
 </td>
 <td>
 
-<span class="color-preview" style="background-color: white"></span>
+<span class="color-preview" style="background-color: #ffffff"></span>
 
-`white`
+`#ffffff`
 
 </td>
 </tr>
@@ -6199,9 +6199,9 @@ The following table lists the available variables for customizing the Material t
 </td>
 <td>
 
-<span class="color-preview" style="background-color: white"></span>
+<span class="color-preview" style="background-color: #ffffff"></span>
 
-`white`
+`#ffffff`
 
 </td>
 </tr>
@@ -6515,9 +6515,9 @@ The following table lists the available variables for customizing the Material t
 </td>
 <td>
 
-<span class="color-preview" style="background-color: white"></span>
+<span class="color-preview" style="background-color: #ffffff"></span>
 
-`white`
+`#ffffff`
 
 </td>
 </tr>
@@ -6758,9 +6758,9 @@ The following table lists the available variables for customizing the Material t
 </td>
 <td>
 
-<span class="color-preview" style="background-color: white"></span>
+<span class="color-preview" style="background-color: #ffffff"></span>
 
-`white`
+`#ffffff`
 
 </td>
 </tr>
@@ -6813,7 +6813,7 @@ The following table lists the available variables for customizing the Material t
     <td>Color</td>
 <td>
 
-`try-shade( $kendo-pager-bg, .5 )`
+`k-try-shade( $kendo-pager-bg, .5 )`
 
 </td>
 <td>
@@ -7623,9 +7623,9 @@ The following table lists the available variables for customizing the Material t
 </td>
 <td>
 
-<span class="color-preview" style="background-color: white"></span>
+<span class="color-preview" style="background-color: #ffffff"></span>
 
-`white`
+`#ffffff`
 
 </td>
 </tr>
@@ -8201,7 +8201,7 @@ The following table lists the available variables for customizing the Material t
     <td>String</td>
 <td>
 
-`escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'><circle cx='50%' cy='50%' r='4' fill='#{$kendo-radio-checked-text}'/></svg>") )`
+`k-escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'><circle cx='50%' cy='50%' r='4' fill='#{$kendo-radio-checked-text}'/></svg>") )`
 
 </td>
 <td>
@@ -8219,7 +8219,7 @@ The following table lists the available variables for customizing the Material t
     <td>String</td>
 <td>
 
-`escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'><circle cx='50%' cy='50%' r='4' fill='#{$kendo-radio-disabled-checked-text}'/></svg>") )`
+`k-escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'><circle cx='50%' cy='50%' r='4' fill='#{$kendo-radio-disabled-checked-text}'/></svg>") )`
 
 </td>
 <td>
@@ -8373,9 +8373,9 @@ The following table lists the available variables for customizing the Material t
 </td>
 <td>
 
-<span class="color-preview" style="background-color: black"></span>
+<span class="color-preview" style="background-color: #000000"></span>
 
-`black`
+`#000000`
 
 </td>
 </tr>
@@ -8999,9 +8999,9 @@ The following table lists the available variables for customizing the Material t
 </td>
 <td>
 
-<span class="color-preview" style="background-color: white"></span>
+<span class="color-preview" style="background-color: #ffffff"></span>
 
-`white`
+`#ffffff`
 
 </td>
 </tr>
@@ -9783,9 +9783,9 @@ The following table lists the available variables for customizing the Material t
 </td>
 <td>
 
-<span class="color-preview" style="background-color: white"></span>
+<span class="color-preview" style="background-color: #ffffff"></span>
 
-`white`
+`#ffffff`
 
 </td>
 </tr>
@@ -9843,9 +9843,9 @@ The following table lists the available variables for customizing the Material t
 </td>
 <td>
 
-<span class="color-preview" style="background-color: white"></span>
+<span class="color-preview" style="background-color: #ffffff"></span>
 
-`white`
+`#ffffff`
 
 </td>
 </tr>
@@ -9903,9 +9903,9 @@ The following table lists the available variables for customizing the Material t
 </td>
 <td>
 
-<span class="color-preview" style="background-color: white"></span>
+<span class="color-preview" style="background-color: #ffffff"></span>
 
-`white`
+`#ffffff`
 
 </td>
 </tr>
@@ -9963,9 +9963,9 @@ The following table lists the available variables for customizing the Material t
 </td>
 <td>
 
-<span class="color-preview" style="background-color: white"></span>
+<span class="color-preview" style="background-color: #ffffff"></span>
 
-`white`
+`#ffffff`
 
 </td>
 </tr>
@@ -10955,9 +10955,9 @@ The following table lists the available variables for customizing the Material t
 </td>
 <td>
 
-<span class="color-preview" style="background-color: white"></span>
+<span class="color-preview" style="background-color: #ffffff"></span>
 
-`white`
+`#ffffff`
 
 </td>
 </tr>

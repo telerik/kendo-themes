@@ -52,7 +52,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`contrast-wcag( $primary )`
+`k-contrast-legacy( $primary )`
 
 </td>
 <td>

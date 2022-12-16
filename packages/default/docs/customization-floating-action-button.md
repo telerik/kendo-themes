@@ -498,7 +498,7 @@ The following table lists the available variables for customization.
     <td>List</td>
 <td>
 
-`0 6px 10px try-tint( rgba(0, 0, 0, .14), .5 ), 0 1px 18px try-tint( rgba(0, 0, 0, .12), .5 ), 0 3px 5px try-tint( rgba(0, 0, 0, .2), .5 )`
+`0 6px 10px k-try-tint( rgba(0, 0, 0, .14), .5 ), 0 1px 18px k-try-tint( rgba(0, 0, 0, .12), .5 ), 0 3px 5px k-try-tint( rgba(0, 0, 0, .2), .5 )`
 
 </td>
 <td>

@@ -517,7 +517,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`contrast-wcag( $kendo-button-selected-bg )`
+`k-contrast-legacy( $kendo-button-selected-bg )`
 
 </td>
 <td>
