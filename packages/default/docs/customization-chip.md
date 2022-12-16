@@ -48,7 +48,7 @@ The following table lists the available variables for customization.
     <td>Number</td>
 <td>
 
-`map-get( $spacing, 1 )`
+`k-map-get( $spacing, 1 )`
 
 </td>
 <td>
@@ -66,7 +66,7 @@ The following table lists the available variables for customization.
     <td>Number</td>
 <td>
 
-`map-get( $spacing, 1 )`
+`k-map-get( $spacing, 1 )`
 
 </td>
 <td>
@@ -84,7 +84,7 @@ The following table lists the available variables for customization.
     <td>Number</td>
 <td>
 
-`map-get( $spacing, 1 )`
+`k-map-get( $spacing, 1 )`
 
 </td>
 <td>
@@ -215,10 +215,10 @@ The following table lists the available variables for customization.
 
 `(
     "base": $kendo-chip-base-bg,
-    "error": map-get($kendo-theme-colors, "error"),
-    "info": map-get($kendo-theme-colors, "info"),
-    "warning": map-get($kendo-theme-colors, "warning"),
-    "success": map-get($kendo-theme-colors, "success")
+    "error": k-map-get($kendo-theme-colors, "error"),
+    "info": k-map-get($kendo-theme-colors, "info"),
+    "warning": k-map-get($kendo-theme-colors, "warning"),
+    "success": k-map-get($kendo-theme-colors, "success")
 )`
 
 </td>
@@ -604,9 +604,9 @@ The following table lists the available variables for customization.
 <td>
 
 `(
-    sm: map-get( $spacing, 1 ),
-    md: map-get( $spacing, 1 ),
-    lg: map-get( $spacing, 1 )
+    sm: k-map-get( $spacing, 1 ),
+    md: k-map-get( $spacing, 1 ),
+    lg: k-map-get( $spacing, 1 )
 )`
 
 </td>

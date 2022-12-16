@@ -284,7 +284,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`darken($grid-bg, 7%)`
+`k-color-darken($grid-bg, 7%)`
 
 </td>
 <td>

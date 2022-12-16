@@ -102,7 +102,7 @@ The following table lists the available variables for customization.
     <td>Number</td>
 <td>
 
-`(20 / 14)`
+`k-math-div( 20, 14 )`
 
 </td>
 <td>

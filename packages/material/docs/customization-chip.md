@@ -120,7 +120,7 @@ The following table lists the available variables for customization.
     <td>Number</td>
 <td>
 
-`(18 / 14)`
+`k-math-div( 18, 14 )`
 
 </td>
 <td>

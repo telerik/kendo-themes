@@ -159,19 +159,19 @@ The following table lists the available variables for customization.
 `(
     sm: (
         font-size: $font-size-md,
-        line-height: ( 20 / 14 ),
+        line-height: k-math-div( 20, 14 ),
         cell-padding-x: k-map-get( $spacing, 4 ),
         cell-padding-y: k-map-get( $spacing, 2 ) + k-map-get( $spacing, thin )
     ),
     md: (
         font-size: $font-size-md,
-        line-height: ( 20 / 14 ),
+        line-height: k-math-div( 20, 14 ),
         cell-padding-x: k-map-get( $spacing, 4 ),
         cell-padding-y: k-map-get( $spacing, 2 )
     ),
     lg: (
         font-size: $font-size-md,
-        line-height: ( 20 / 14 ),
+        line-height: k-math-div( 20, 14 ),
         cell-padding-x: k-map-get( $spacing, 4 ),
         cell-padding-y: k-map-get( $spacing, 2 ) + k-map-get( $spacing, thin )
     )
