@@ -35,9 +35,9 @@ The following table lists the available variables for customization.
 </td>
 <td>
 
-<span class="color-preview" style="background-color: black"></span>
+<span class="color-preview" style="background-color: #000000"></span>
 
-`black`
+`#000000`
 
 </td>
 </tr>

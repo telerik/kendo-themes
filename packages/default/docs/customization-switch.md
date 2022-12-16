@@ -182,7 +182,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`try-shade( $kendo-switch-off-track-bg, 8% )`
+`k-try-shade( $kendo-switch-off-track-bg, 8% )`
 
 </td>
 <td>
@@ -624,7 +624,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`contrast-wcag( $kendo-switch-on-track-bg )`
+`k-contrast-legacy( $kendo-switch-on-track-bg )`
 
 </td>
 <td>

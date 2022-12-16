@@ -254,7 +254,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`contrast-wcag( $kendo-progressbar-value-bg )`
+`k-contrast-legacy( $kendo-progressbar-value-bg )`
 
 </td>
 <td>

@@ -156,7 +156,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`try-shade( $component-bg, 1 )`
+`k-try-shade( $component-bg, 1 )`
 
 </td>
 <td>
@@ -254,7 +254,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`contrast-wcag( $kendo-progressbar-value-bg )`
+`k-contrast-legacy( $kendo-progressbar-value-bg )`
 
 </td>
 <td>
@@ -274,7 +274,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`try-shade( $kendo-progressbar-value-bg )`
+`k-try-shade( $kendo-progressbar-value-bg )`
 
 </td>
 <td>

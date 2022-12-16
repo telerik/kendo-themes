@@ -534,7 +534,7 @@ The following table lists the available variables for customization.
     <td>String</td>
 <td>
 
-`escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='2' fill='#{$kendo-radio-checked-text}'/></svg>") )`
+`k-escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='2' fill='#{$kendo-radio-checked-text}'/></svg>") )`
 
 </td>
 <td>

@@ -132,7 +132,7 @@ The following table lists the available variables for customizing the Default th
     <td>Color</td>
 <td>
 
-`try-shade( $base-bg, .5 )`
+`k-try-shade( $base-bg, .5 )`
 
 </td>
 <td>
@@ -230,7 +230,7 @@ The following table lists the available variables for customizing the Default th
     <td>Color</td>
 <td>
 
-`contrast-wcag( $selected-bg )`
+`k-contrast-legacy( $selected-bg )`
 
 </td>
 <td>
@@ -912,7 +912,7 @@ The following table lists the available variables for customizing the Default th
     <td>Color</td>
 <td>
 
-`try-shade( $kendo-button-bg, .5 )`
+`k-try-shade( $kendo-button-bg, .5 )`
 
 </td>
 <td>
@@ -1004,7 +1004,7 @@ The following table lists the available variables for customizing the Default th
     <td>Color</td>
 <td>
 
-`try-shade( $kendo-button-bg, 1.5 )`
+`k-try-shade( $kendo-button-bg, 1.5 )`
 
 </td>
 <td>
@@ -1116,7 +1116,7 @@ The following table lists the available variables for customizing the Default th
     <td>Color</td>
 <td>
 
-`contrast-wcag( $kendo-button-selected-bg )`
+`k-contrast-legacy( $kendo-button-selected-bg )`
 
 </td>
 <td>
@@ -1846,7 +1846,7 @@ The following table lists the available variables for customizing the Default th
     <td>Color</td>
 <td>
 
-`contrast-wcag( $kendo-checkbox-checked-bg )`
+`k-contrast-legacy( $kendo-checkbox-checked-bg )`
 
 </td>
 <td>
@@ -2256,7 +2256,7 @@ The following table lists the available variables for customizing the Default th
     <td>String</td>
 <td>
 
-`escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='none' stroke='#{$kendo-checkbox-checked-text}' stroke-linecap='square' stroke-linejoin='square' stroke-width='2' d='M3,8 l3,3 l7-7'/></svg>") )`
+`k-escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='none' stroke='#{$kendo-checkbox-checked-text}' stroke-linecap='square' stroke-linejoin='square' stroke-width='2' d='M3,8 l3,3 l7-7'/></svg>") )`
 
 </td>
 <td>
@@ -2274,7 +2274,7 @@ The following table lists the available variables for customizing the Default th
     <td>String</td>
 <td>
 
-`escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='none' stroke='#{$kendo-checkbox-indeterminate-text}' stroke-linecap='square' stroke-linejoin='square' stroke-width='2' d='M4,8 h8'/></svg>") )`
+`k-escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='none' stroke='#{$kendo-checkbox-indeterminate-text}' stroke-linecap='square' stroke-linejoin='square' stroke-width='2' d='M4,8 h8'/></svg>") )`
 
 </td>
 <td>
@@ -2936,7 +2936,7 @@ The following table lists the available variables for customizing the Default th
     <td>Color</td>
 <td>
 
-`contrast-wcag( $kendo-chip-outline-hover-bg )`
+`k-contrast-legacy( $kendo-chip-outline-hover-bg )`
 
 </td>
 <td>
@@ -3061,7 +3061,7 @@ The following table lists the available variables for customizing the Default th
     <td>Color</td>
 <td>
 
-`contrast-wcag( $accent )`
+`k-contrast-legacy( $accent )`
 
 </td>
 <td>
@@ -3103,7 +3103,7 @@ The following table lists the available variables for customizing the Default th
     <td>Color</td>
 <td>
 
-`contrast-wcag( $primary )`
+`k-contrast-legacy( $primary )`
 
 </td>
 <td>
@@ -3145,7 +3145,7 @@ The following table lists the available variables for customizing the Default th
     <td>Color</td>
 <td>
 
-`contrast-wcag( $secondary )`
+`k-contrast-legacy( $secondary )`
 
 </td>
 <td>
@@ -3187,7 +3187,7 @@ The following table lists the available variables for customizing the Default th
     <td>Color</td>
 <td>
 
-`contrast-wcag( $tertiary )`
+`k-contrast-legacy( $tertiary )`
 
 </td>
 <td>
@@ -3972,7 +3972,7 @@ The following table lists the available variables for customizing the Default th
     <td>List</td>
 <td>
 
-`0 6px 10px try-tint( rgba(0, 0, 0, .14), .5 ), 0 1px 18px try-tint( rgba(0, 0, 0, .12), .5 ), 0 3px 5px try-tint( rgba(0, 0, 0, .2), .5 )`
+`0 6px 10px k-try-tint( rgba(0, 0, 0, .14), .5 ), 0 1px 18px k-try-tint( rgba(0, 0, 0, .12), .5 ), 0 3px 5px k-try-tint( rgba(0, 0, 0, .2), .5 )`
 
 </td>
 <td>
@@ -4401,7 +4401,7 @@ The following table lists the available variables for customizing the Default th
     <td>Color</td>
 <td>
 
-`rgba( contrast-wcag( $grid-bg ), .04 )`
+`rgba( k-contrast-legacy( $grid-bg ), .04 )`
 
 </td>
 <td>
@@ -7448,7 +7448,7 @@ The following table lists the available variables for customizing the Default th
     <td>Color</td>
 <td>
 
-`try-shade( $component-bg, 1 )`
+`k-try-shade( $component-bg, 1 )`
 
 </td>
 <td>
@@ -7546,7 +7546,7 @@ The following table lists the available variables for customizing the Default th
     <td>Color</td>
 <td>
 
-`contrast-wcag( $kendo-progressbar-value-bg )`
+`k-contrast-legacy( $kendo-progressbar-value-bg )`
 
 </td>
 <td>
@@ -7566,7 +7566,7 @@ The following table lists the available variables for customizing the Default th
     <td>Color</td>
 <td>
 
-`try-shade( $kendo-progressbar-value-bg )`
+`k-try-shade( $kendo-progressbar-value-bg )`
 
 </td>
 <td>
@@ -8263,7 +8263,7 @@ The following table lists the available variables for customizing the Default th
     <td>String</td>
 <td>
 
-`escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 14'><circle cx='50%' cy='50%' r='4' fill='#{$kendo-radio-checked-text}'/></svg>") )`
+`k-escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 14'><circle cx='50%' cy='50%' r='4' fill='#{$kendo-radio-checked-text}'/></svg>") )`
 
 </td>
 <td>
@@ -8657,7 +8657,7 @@ The following table lists the available variables for customizing the Default th
     <td>Color</td>
 <td>
 
-`try-shade( $kendo-switch-off-track-bg, 8% )`
+`k-try-shade( $kendo-switch-off-track-bg, 8% )`
 
 </td>
 <td>
@@ -9099,7 +9099,7 @@ The following table lists the available variables for customizing the Default th
     <td>Color</td>
 <td>
 
-`contrast-wcag( $kendo-switch-on-track-bg )`
+`k-contrast-legacy( $kendo-switch-on-track-bg )`
 
 </td>
 <td>

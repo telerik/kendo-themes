@@ -200,7 +200,7 @@ The following table lists the available variables for customization.
 </td>
 <td>
 
-`("primary": #3f51b5, "secondary": #e51a5f, "tertiary": #00695c, "info": #0058e9, "success": #37b400, "warning": #ffc000, "error": #f31700, "dark": #424242, "light": #f5f5f5, "inverse": #424242, "base": white)`
+`("primary": #3f51b5, "secondary": #e51a5f, "tertiary": #00695c, "info": #0058e9, "success": #37b400, "warning": #ffc000, "error": #f31700, "dark": #424242, "light": #f5f5f5, "inverse": #424242, "base": #ffffff)`
 
 </td>
 </tr>
@@ -218,9 +218,9 @@ The following table lists the available variables for customization.
 </td>
 <td>
 
-<span class="color-preview" style="background-color: white"></span>
+<span class="color-preview" style="background-color: #ffffff"></span>
 
-`white`
+`#ffffff`
 
 </td>
 </tr>
@@ -258,9 +258,9 @@ The following table lists the available variables for customization.
 </td>
 <td>
 
-<span class="color-preview" style="background-color: white"></span>
+<span class="color-preview" style="background-color: #ffffff"></span>
 
-`white`
+`#ffffff`
 
 </td>
 </tr>

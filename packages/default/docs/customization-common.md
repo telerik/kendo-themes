@@ -128,7 +128,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`try-shade( $base-bg, .5 )`
+`k-try-shade( $base-bg, .5 )`
 
 </td>
 <td>
@@ -226,7 +226,7 @@ The following table lists the available variables for customization.
     <td>Color</td>
 <td>
 
-`contrast-wcag( $selected-bg )`
+`k-contrast-legacy( $selected-bg )`
 
 </td>
 <td>

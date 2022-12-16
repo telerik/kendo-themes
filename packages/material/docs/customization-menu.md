@@ -125,9 +125,9 @@ The following table lists the available variables for customization.
 </td>
 <td>
 
-<span class="color-preview" style="background-color: white"></span>
+<span class="color-preview" style="background-color: #ffffff"></span>
 
-`white`
+`#ffffff`
 
 </td>
 </tr>
@@ -459,9 +459,9 @@ The following table lists the available variables for customization.
 </td>
 <td>
 
-<span class="color-preview" style="background-color: white"></span>
+<span class="color-preview" style="background-color: #ffffff"></span>
 
-`white`
+`#ffffff`
 
 </td>
 </tr>
