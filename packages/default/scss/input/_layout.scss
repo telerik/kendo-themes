@@ -345,13 +345,13 @@
 
     // Sizing
     @each $size, $size-props in $kendo-input-sizes {
-        $_padding-x: map-get( $size-props, padding-x );
-        $_padding-y: map-get( $size-props, padding-y );
-        $_font-size: map-get( $size-props, font-size );
-        $_line-height: map-get( $size-props, line-height );
-        $_icon-size: map-get( $size-props, icon-size );
-        $_button-padding-x: map-get( $size-props, button-padding-x );
-        $_button-padding-y: map-get( $size-props, button-padding-y );
+        $_padding-x: k-map-get( $size-props, padding-x );
+        $_padding-y: k-map-get( $size-props, padding-y );
+        $_font-size: k-map-get( $size-props, font-size );
+        $_line-height: k-map-get( $size-props, line-height );
+        $_icon-size: k-map-get( $size-props, icon-size );
+        $_button-padding-x: k-map-get( $size-props, button-padding-x );
+        $_button-padding-y: k-map-get( $size-props, button-padding-y );
 
         .k-input-#{$size},
         .k-picker-#{$size} {

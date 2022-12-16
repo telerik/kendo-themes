@@ -1,5 +1,5 @@
 // ColorGradient
-$colorgradient-spacer: map-get( $spacing, 3 ) !default;
+$colorgradient-spacer: k-map-get( $spacing, 3 ) !default;
 
 $colorgradient-width: 272px !default;
 $colorgradient-border-width: 1px !default;

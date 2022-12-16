@@ -9,8 +9,8 @@ $kendo-upload-bg: $component-bg !default;
 $kendo-upload-text: $component-text !default;
 $kendo-upload-border: $component-border !default;
 
-$kendo-upload-dropzone-padding-x: map-get( $spacing, 2 ) !default;
-$kendo-upload-dropzone-padding-y: map-get( $spacing, 2 ) !default;
+$kendo-upload-dropzone-padding-x: k-map-get( $spacing, 2 ) !default;
+$kendo-upload-dropzone-padding-y: k-map-get( $spacing, 2 ) !default;
 $kendo-upload-dropzone-bg: $header-bg !default;
 $kendo-upload-dropzone-text: $header-text !default;
 $kendo-upload-dropzone-border: $kendo-upload-border !default;
@@ -19,8 +19,8 @@ $kendo-upload-dropzone-hover-bg: $hovered-bg !default;
 $kendo-upload-status-text: $subtle-text !default;
 $kendo-upload-status-text-opacity: null !default;
 
-$kendo-upload-item-padding-x: map-get( $spacing, 2 ) !default;
-$kendo-upload-item-padding-y: map-get( $spacing, 2 ) !default;
+$kendo-upload-item-padding-x: k-map-get( $spacing, 2 ) !default;
+$kendo-upload-item-padding-y: k-map-get( $spacing, 2 ) !default;
 
 $kendo-upload-multiple-items-spacing: 12px !default;
 

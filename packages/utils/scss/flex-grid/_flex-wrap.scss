@@ -14,6 +14,6 @@
 /// @contextType css
 
 // Flex wrap utility classes
-$kendo-utils-flex-wrap: map-get( $kendo-utils, "flex-wrap" ) !default;
+$kendo-utils-flex-wrap: k-map-get( $kendo-utils, "flex-wrap" ) !default;
 
 @include generate-utils( flex, flex-wrap, $kendo-utils-flex-wrap );

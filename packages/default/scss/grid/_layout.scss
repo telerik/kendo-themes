@@ -993,12 +993,12 @@
         box-sizing: border-box;
     }
     .k-filter-menu-container {
-        padding: map-get( $spacing, 2 );
+        padding: k-map-get( $spacing, 2 );
         box-sizing: border-box;
         display: flex;
         flex-flow: column nowrap;
         align-items: stretch;
-        gap: map-get( $spacing, 2 );
+        gap: k-map-get( $spacing, 2 );
 
         .k-filter-and {
             width: min-content;
@@ -1019,7 +1019,7 @@
             display: flex;
             flex-flow: column nowrap;
             align-items: stretch;
-            gap: map-get( $spacing, 2 );
+            gap: k-map-get( $spacing, 2 );
         }
     }
 

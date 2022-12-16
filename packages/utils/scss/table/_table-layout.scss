@@ -9,7 +9,7 @@
 /// @contextType css
 
 // Table layout utility classes
-$kendo-utils-table-layout: map-get( $kendo-utils, "table-layout" ) !default;
+$kendo-utils-table-layout: k-map-get( $kendo-utils, "table-layout" ) !default;
 
 @include generate-utils( table, table-layout, $kendo-utils-table-layout );
 @include generate-utils( table-layout, table-layout, $kendo-utils-table-layout );

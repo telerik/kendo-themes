@@ -38,8 +38,8 @@ $gantt-summary-selected-bg: k-try-tint( $selected-bg, 6 ) !default;
 $gantt-summary-progress-selected-bg: $selected-bg !default;
 
 $gantt-task-border-width: 0px !default;
-$gantt-task-padding-x: map-get( $spacing, 2 ) !default;
-$gantt-task-padding-y: map-get( $spacing, 1 ) !default;
+$gantt-task-padding-x: k-map-get( $spacing, 2 ) !default;
+$gantt-task-padding-y: k-map-get( $spacing, 1 ) !default;
 $gantt-task-bg: k-try-tint( $gantt-text, 2 ) !default;
 $gantt-task-text: k-contrast-legacy( $gantt-text ) !default;
 $gantt-task-border: null !default;

@@ -1,16 +1,16 @@
 // TODO DOCS
 
-$kendo-utils-grid-column-start: map-get( $kendo-utils, "grid-column-start" ) !default;
+$kendo-utils-grid-column-start: k-map-get( $kendo-utils, "grid-column-start" ) !default;
 
 @include generate-utils( col-start, grid-column-start, $kendo-utils-grid-column-start );
 
 
-$kendo-utils-grid-column-end: map-get( $kendo-utils, "grid-column-end" ) !default;
+$kendo-utils-grid-column-end: k-map-get( $kendo-utils, "grid-column-end" ) !default;
 
 @include generate-utils( col-end, grid-column-end, $kendo-utils-grid-column-end );
 
 
-$kendo-utils-grid-column-span: map-get( $kendo-utils, "grid-column-span" ) !default;
+$kendo-utils-grid-column-span: k-map-get( $kendo-utils, "grid-column-span" ) !default;
 
 @include generate-utils( col-span, grid-column, $kendo-utils-grid-column-span );
 @include generate-utils( colspan, grid-column, $kendo-utils-grid-column-span );

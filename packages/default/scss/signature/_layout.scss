@@ -49,10 +49,10 @@
 
     // Sizes
     @each $size, $size-props in $kendo-signature-sizes {
-        $_padding-x: map-get($size-props, padding-x);
-        $_padding-y: map-get($size-props, padding-y);
-        $_line-size: map-get($size-props, line-size);
-        $_line-offset: map-get($size-props, line-offset);
+        $_padding-x: k-map-get($size-props, padding-x);
+        $_padding-y: k-map-get($size-props, padding-y);
+        $_line-size: k-map-get($size-props, line-size);
+        $_line-offset: k-map-get($size-props, line-offset);
 
         .k-signature-#{$size} {
             padding-inline: $_padding-x;

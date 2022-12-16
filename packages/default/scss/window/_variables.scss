@@ -46,7 +46,7 @@ $kendo-window-sizes: (
 /// Theme colors map for the window.
 /// @group window
 $kendo-window-theme-colors: (
-    "primary": map-get($kendo-theme-colors, "primary"),
-    "light": map-get($kendo-theme-colors, "light"),
-    "dark": map-get($kendo-theme-colors, "dark")
+    "primary": k-map-get($kendo-theme-colors, "primary"),
+    "light": k-map-get($kendo-theme-colors, "light"),
+    "dark": k-map-get($kendo-theme-colors, "dark")
 ) !default;

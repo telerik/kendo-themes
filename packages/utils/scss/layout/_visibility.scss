@@ -1,6 +1,6 @@
 // TODO DOCS
 
-$kendo-utils-visibility: map-get( $kendo-utils, "visibility" ) !default;
+$kendo-utils-visibility: k-map-get( $kendo-utils, "visibility" ) !default;
 
 @include generate-utils( visibility, visibility, $kendo-utils-visibility );
 

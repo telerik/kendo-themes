@@ -27,7 +27,7 @@
 
     // Treeview filter
     .k-treeview-filter {
-        padding: map-get( $spacing, 2 );
+        padding: k-map-get( $spacing, 2 );
         display: block;
         position: relative;
         flex: none;
@@ -169,10 +169,10 @@
     }
 
     @each $size, $size-props in $kendo-treeview-sizes {
-        $_font-size: map-get( $size-props, font-size);
-        $_line-height: map-get( $size-props, line-height);
-        $_item-padding-x: map-get( $size-props, item-padding-x);
-        $_item-padding-y: map-get( $size-props, item-padding-y);
+        $_font-size: k-map-get( $size-props, font-size);
+        $_line-height: k-map-get( $size-props, line-height);
+        $_item-padding-x: k-map-get( $size-props, item-padding-x);
+        $_item-padding-y: k-map-get( $size-props, item-padding-y);
 
         .k-treeview-#{$size} {
             font-size: $_font-size;

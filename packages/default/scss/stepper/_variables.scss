@@ -49,7 +49,7 @@ $stepper-indicator-done-hover-bg: k-try-shade( $stepper-indicator-done-bg ) !def
 $stepper-indicator-done-hover-text: null !default;
 $stepper-indicator-done-hover-border: null !default;
 
-$stepper-indicator-done-disabled-bg: mix( $stepper-indicator-done-bg, $component-bg, 60%) !default;
+$stepper-indicator-done-disabled-bg: k-color-mix( $stepper-indicator-done-bg, $component-bg, 60%) !default;
 $stepper-indicator-done-disabled-text: k-contrast-legacy( $stepper-indicator-done-bg ) !default;
 $stepper-indicator-done-disabled-border: $stepper-indicator-done-disabled-bg !default;
 

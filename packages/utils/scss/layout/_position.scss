@@ -1,6 +1,6 @@
 // TODO DOCS
 
-$kendo-utils-position: map-get( $kendo-utils, "position" ) !default;
+$kendo-utils-position: k-map-get( $kendo-utils, "position" ) !default;
 
 @include generate-utils( pos, position, $kendo-utils-position );
 
@@ -19,7 +19,7 @@ $kendo-utils-position: map-get( $kendo-utils, "position" ) !default;
 
 // TODO DOCS
 
-$kendo-utils-inset: map-get( $kendo-utils, "inset" ) !default;
+$kendo-utils-inset: k-map-get( $kendo-utils, "inset" ) !default;
 
 @include generate-utils( inset, inset, $kendo-utils-inset );
 @include generate-utils( inset-x, inset-inline, $kendo-utils-inset );

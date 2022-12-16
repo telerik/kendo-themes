@@ -74,6 +74,6 @@
 /// @contextType css
 
 // Overflow utility classes
-$kendo-utils-overflow: map-get( $kendo-utils, "overflow" ) !default;
+$kendo-utils-overflow: k-map-get( $kendo-utils, "overflow" ) !default;
 
 @include generate-utils( overflow, overflow, $kendo-utils-overflow );

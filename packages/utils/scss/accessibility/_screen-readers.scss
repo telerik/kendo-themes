@@ -1,4 +1,4 @@
-$kendo-utils-accessibility: map-get( $kendo-utils, "accessibility" ) !default;
+$kendo-utils-accessibility: k-map-get( $kendo-utils, "accessibility" ) !default;
 
 @if $kendo-utils-accessibility {
     /// This class could be assigned to elements which should be visually hidden, but remain accessible for screen readers.

@@ -74,7 +74,7 @@ $grid-alt-border: null !default;
 
 /// Background color of hovered rows in grid
 /// @group grid
-$grid-hovered-bg: darken($grid-bg, 7%) !default;
+$grid-hovered-bg: k-color-darken($grid-bg, 7%) !default;
 /// Text color of hovered rows in grid
 /// @group grid
 $grid-hovered-text: null !default;
@@ -111,7 +111,7 @@ $grid-focused-shadow: $kendo-list-item-focus-shadow !default;
 $grid-edit-cell-padding-x: $grid-cell-padding-x !default;
 $grid-edit-cell-padding-y: 3px !default;
 
-$grid-command-cell-button-spacing: map-get( $spacing, 2 ) !default;
+$grid-command-cell-button-spacing: k-map-get( $spacing, 2 ) !default;
 
 $grid-sticky-bg: $component-bg !default;
 $grid-sticky-text: $grid-text !default;
@@ -126,17 +126,17 @@ $grid-sticky-header-border: $grid-sticky-border !default;
 $grid-sticky-footer-bg: $grid-header-bg !default;
 $grid-sticky-footer-hovered-bg: $grid-hovered-bg !default;
 
-$grid-sticky-selected-bg: mix($selected-bg, #ffffff, 25%) !default;
+$grid-sticky-selected-bg: k-color-mix($selected-bg, #ffffff, 25%) !default;
 $grid-sticky-selected-alt-bg: k-color-shade($grid-sticky-selected-bg, .4) !default;
 
-$grid-sticky-hovered-bg: darken($grid-bg, 8%) !default;
+$grid-sticky-hovered-bg: k-color-darken($grid-bg, 8%) !default;
 $grid-sticky-selected-hovered-bg: k-color-shade($grid-sticky-selected-bg, .7) !default;
 
 $grid-column-menu-width: 230px !default;
 
 $grid-filter-menu-check-all-border-bottom-width: 1px !default;
 
-$grid-filter-menu-item-spacing-x: map-get( $spacing, 2 ) !default;
+$grid-filter-menu-item-spacing-x: k-map-get( $spacing, 2 ) !default;
 $grid-filter-menu-item-spacing-y: $grid-filter-menu-item-spacing-x !default;
 
 $grid-column-menu-popup-padding-x: null !default;

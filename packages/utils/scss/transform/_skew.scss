@@ -1,6 +1,6 @@
 // TODO DOCS
 
-$kendo-utils-skew: map-get( $kendo-utils, "skew" ) !default;
+$kendo-utils-skew: k-map-get( $kendo-utils, "skew" ) !default;
 
 // sass-lint:disable function-name-format
 @function __skew-x( $val ) {

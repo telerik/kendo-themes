@@ -14,10 +14,10 @@ $kendo-input-border-radius: null !default;
 
 /// Horizontal padding of input components.
 /// @group input
-$kendo-input-padding-x: map-get( $spacing, 2 ) !default;
+$kendo-input-padding-x: k-map-get( $spacing, 2 ) !default;
 /// Vertical padding of input components.
 /// @group input
-$kendo-input-padding-y: map-get( $spacing, 1 ) !default;
+$kendo-input-padding-y: k-map-get( $spacing, 1 ) !default;
 /// Font family of input components.
 /// @group input
 $kendo-input-font-family: $font-family !default;
@@ -28,18 +28,18 @@ $kendo-input-font-size: $font-size-md !default;
 /// @group input
 $kendo-input-line-height: $line-height-md !default;
 
-$kendo-input-padding-x-sm: map-get( $spacing, 2 ) !default;
-$kendo-input-padding-y-sm: map-get( $spacing, 1 ) - map-get( $spacing, thin ) !default;
+$kendo-input-padding-x-sm: k-map-get( $spacing, 2 ) !default;
+$kendo-input-padding-y-sm: k-map-get( $spacing, 1 ) - k-map-get( $spacing, thin ) !default;
 $kendo-input-font-size-sm: $font-size-md !default;
 $kendo-input-line-height-sm: $line-height-md !default;
 
-$kendo-input-padding-x-md: map-get( $spacing, 2 ) !default;
-$kendo-input-padding-y-md: map-get( $spacing, 1 ) !default;
+$kendo-input-padding-x-md: k-map-get( $spacing, 2 ) !default;
+$kendo-input-padding-y-md: k-map-get( $spacing, 1 ) !default;
 $kendo-input-font-size-md: $font-size-md !default;
 $kendo-input-line-height-md: $line-height-md !default;
 
-$kendo-input-padding-x-lg: map-get( $spacing, 3 ) !default;
-$kendo-input-padding-y-lg: map-get( $spacing, 2 ) !default;
+$kendo-input-padding-x-lg: k-map-get( $spacing, 3 ) !default;
+$kendo-input-padding-y-lg: k-map-get( $spacing, 2 ) !default;
 $kendo-input-font-size-lg: $font-size-lg !default;
 $kendo-input-line-height-lg: $line-height-lg !default;
 
@@ -189,7 +189,7 @@ $kendo-input-clear-value-opacity: .5 !default;
 $kendo-input-clear-value-hover-text: null !default;
 $kendo-input-clear-value-hover-opacity: 1 !default;
 
-$kendo-input-values-margin-y: map-get( $spacing, thin ) !default;
+$kendo-input-values-margin-y: k-map-get( $spacing, thin ) !default;
 $kendo-input-values-margin-x: $kendo-input-values-margin-y !default;
 
 

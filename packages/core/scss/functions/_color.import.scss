@@ -14,6 +14,18 @@
     @return blue( $color );
 }
 
+@function k-color-hue( $color ) {
+    @return hue( $color );
+}
+
+@function k-color-saturation( $color ) {
+    @return saturation( $color );
+}
+
+@function k-color-lightness( $color ) {
+    @return lightness( $color );
+}
+
 @function k-color-mix( $color1, $color2, $weight: 50% ) {
     @return mix( $color1, $color2, $weight );
 }
@@ -24,4 +36,28 @@
 
 @function k-color-lighten( $color, $amount) {
     @return lighten( $color, $amount );
+}
+
+@function k-color-adjust-hue( $color, $degrees ) {
+    @return adjust-hue( $color, $degrees );
+}
+
+@function k-color-saturate( $color, $amount ) {
+    @return saturate( $color, $amount );
+}
+
+@function k-color-desaturate( $color, $amount ) {
+    @return desaturate( $color, $amount );
+}
+
+@function k-color-grayscale( $color ) {
+    @return grayscale( $color );
+}
+
+@function k-color-complement( $color ) {
+    @return complement( $color );
+}
+
+@function k-color-invert( $color ) {
+    @return invert( $color );
 }

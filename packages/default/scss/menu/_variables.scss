@@ -33,7 +33,7 @@ $menu-item-expanded-gradient: null !default;
 
 $menu-item-focus-shadow: $kendo-list-item-focus-shadow !default;
 
-$menu-separator-spacing: map-get( $spacing, 1 ) !default;
+$menu-separator-spacing: k-map-get( $spacing, 1 ) !default;
 
 $menu-scroll-button-bg: $component-bg !default;
 $menu-scroll-button-text: $link-text !default;
@@ -92,17 +92,17 @@ $kendo-menu-popup-gradient: null !default;
 
 /// Horizontal padding of the menu item in popup.
 /// @group menu
-$kendo-menu-popup-item-padding-x: map-get( $spacing, 2 ) !default;
-$kendo-menu-popup-item-padding-x-sm: map-get( $spacing, 2 ) !default;
-$kendo-menu-popup-item-padding-x-md: map-get( $spacing, 2 ) !default;
-$kendo-menu-popup-item-padding-x-lg: map-get( $spacing, 2 ) !default;
+$kendo-menu-popup-item-padding-x: k-map-get( $spacing, 2 ) !default;
+$kendo-menu-popup-item-padding-x-sm: k-map-get( $spacing, 2 ) !default;
+$kendo-menu-popup-item-padding-x-md: k-map-get( $spacing, 2 ) !default;
+$kendo-menu-popup-item-padding-x-lg: k-map-get( $spacing, 2 ) !default;
 
 /// Vertical padding of the menu item in popup.
 /// @group menu
-$kendo-menu-popup-item-padding-y: map-get( $spacing, 1 ) !default;
-$kendo-menu-popup-item-padding-y-sm: map-get( $spacing, 1 ) - map-get( $spacing, thin ) !default;
-$kendo-menu-popup-item-padding-y-md: map-get( $spacing, 1 ) !default;
-$kendo-menu-popup-item-padding-y-lg: map-get( $spacing, 1 ) + map-get( $spacing, thin ) !default;
+$kendo-menu-popup-item-padding-y: k-map-get( $spacing, 1 ) !default;
+$kendo-menu-popup-item-padding-y-sm: k-map-get( $spacing, 1 ) - k-map-get( $spacing, thin ) !default;
+$kendo-menu-popup-item-padding-y-md: k-map-get( $spacing, 1 ) !default;
+$kendo-menu-popup-item-padding-y-lg: k-map-get( $spacing, 1 ) + k-map-get( $spacing, thin ) !default;
 
 /// The end padding of the menu item in popup.
 /// @group menu

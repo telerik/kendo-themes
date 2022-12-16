@@ -1,5 +1,5 @@
 // TODO DOCS
 
-$kendo-utils-justify-self: map-get( $kendo-utils, "justify-self" ) !default;
+$kendo-utils-justify-self: k-map-get( $kendo-utils, "justify-self" ) !default;
 
 @include generate-utils( justify-self, justify-self, $kendo-utils-justify-self );

@@ -19,6 +19,6 @@
 /// @contextType css
 
 // Flex utility classes
-$kendo-utils-flex: map-get( $kendo-utils, "flex" ) !default;
+$kendo-utils-flex: k-map-get( $kendo-utils, "flex" ) !default;
 
 @include generate-utils( flex, flex, $kendo-utils-flex );

@@ -11,6 +11,6 @@
 /// @contextType css
 
 // Touch-action utility classes
-$kendo-utils-touch-action: map-get( $kendo-utils, "touch-action" ) !default;
+$kendo-utils-touch-action: k-map-get( $kendo-utils, "touch-action" ) !default;
 
 @include generate-utils( touch-action, touch-action, $kendo-utils-touch-action );

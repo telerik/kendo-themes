@@ -512,7 +512,7 @@
 
             & + .k-color-picker,
             & + .k-dropdown-list {
-                margin-left: map-get( $spacing, 2 );
+                margin-left: k-map-get( $spacing, 2 );
             }
         }
 

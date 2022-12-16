@@ -16,6 +16,10 @@
 
 // See https://www.sassmeister.com/gist/1b4f2da5527830088e4d
 @function k-string-replace( $string, $search, $replace: "" ) {
+    @if k-meta-type-of( $string ) == number {
+        $string: $string + "";
+    }
+
     $index: k-string-index( $string, $search );
 
     @if $index {

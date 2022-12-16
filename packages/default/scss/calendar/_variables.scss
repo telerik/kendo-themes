@@ -10,8 +10,8 @@ $calendar-bg: $component-bg !default;
 $calendar-text: $component-text !default;
 $calendar-border: $component-border !default;
 
-$calendar-header-padding-x: map-get( $spacing, 1 ) !default;
-$calendar-header-padding-y: map-get( $spacing, 1 ) !default;
+$calendar-header-padding-x: k-map-get( $spacing, 1 ) !default;
+$calendar-header-padding-y: k-map-get( $spacing, 1 ) !default;
 $calendar-header-border-width: 1px !default;
 
 $calendar-header-bg: $header-bg !default;
@@ -22,8 +22,8 @@ $calendar-header-shadow: 0 1px 3px 1px rgba(black, .1) !default;
 
 $calendar-nav-gap: null !default;
 
-$calendar-footer-padding-x: map-get( $spacing, 4 ) !default;
-$calendar-footer-padding-y: map-get( $spacing, 2 ) !default;
+$calendar-footer-padding-x: k-map-get( $spacing, 4 ) !default;
+$calendar-footer-padding-y: k-map-get( $spacing, 2 ) !default;
 
 $calendar-cell-padding-x: .25em !default;
 $calendar-cell-padding-y: $calendar-cell-padding-x !default;
@@ -40,8 +40,8 @@ $calendar-header-cell-bg: null !default;
 $calendar-header-cell-text: $subtle-text !default;
 $calendar-header-cell-opacity: null !default;
 
-$calendar-caption-padding-x: map-get( $spacing, 2 ) !default;
-$calendar-caption-padding-y: map-get( $spacing, 1 ) !default;
+$calendar-caption-padding-x: k-map-get( $spacing, 2 ) !default;
+$calendar-caption-padding-y: k-map-get( $spacing, 1 ) !default;
 $calendar-caption-height: $calendar-cell-size !default;
 $calendar-caption-font-size: null !default;
 $calendar-caption-line-height: null !default;
@@ -49,7 +49,7 @@ $calendar-caption-font-weight: bold !default;
 
 $calendar-view-width: ($calendar-cell-size * 8) !default;
 $calendar-view-height: ($calendar-cell-size * 7) !default;
-$calendar-view-gap: map-get( $spacing, 4 ) !default;
+$calendar-view-gap: k-map-get( $spacing, 4 ) !default;
 
 $calendar-weekend-bg: null !default;
 $calendar-weekend-text: null !default;
@@ -99,10 +99,10 @@ $calendar-navigation-hover-text: $link-hover-text !default;
 
 
 // Infinite calendar
-$infinite-calendar-header-padding-x: map-get( $spacing, 4 ) !default;
-$infinite-calendar-header-padding-y: map-get( $spacing, 2 ) !default;
+$infinite-calendar-header-padding-x: k-map-get( $spacing, 4 ) !default;
+$infinite-calendar-header-padding-y: k-map-get( $spacing, 2 ) !default;
 
-$infinite-calendar-view-padding-x: map-get( $spacing, 4 ) !default;
+$infinite-calendar-view-padding-x: k-map-get( $spacing, 4 ) !default;
 $infinite-calendar-view-padding-y: 0px !default;
 $infinite-calendar-view-height: ( $calendar-cell-size * 9 ) !default;
 
@@ -114,20 +114,20 @@ $infinite-calendar-view-height: ( $calendar-cell-size * 9 ) !default;
 $kendo-calendar-sm-font-size: $font-size-md !default;
 $kendo-calendar-sm-line-height: $line-height-md !default;
 $kendo-calendar-sm-cell-size: 28px !default;
-$kendo-calendar-sm-cell-padding-x: map-get( $spacing, 1) - map-get( $spacing, thin ) !default;
-$kendo-calendar-sm-cell-padding-y: map-get( $spacing, 1) - map-get( $spacing, thin ) !default;
+$kendo-calendar-sm-cell-padding-x: k-map-get( $spacing, 1) - k-map-get( $spacing, thin ) !default;
+$kendo-calendar-sm-cell-padding-y: k-map-get( $spacing, 1) - k-map-get( $spacing, thin ) !default;
 
 $kendo-calendar-md-font-size: $font-size-md !default;
 $kendo-calendar-md-line-height: $line-height-md !default;
 $kendo-calendar-md-cell-size: 32px !default;
-$kendo-calendar-md-cell-padding-x: map-get( $spacing, 1 ) !default;
-$kendo-calendar-md-cell-padding-y: map-get( $spacing, 1 ) !default;
+$kendo-calendar-md-cell-padding-x: k-map-get( $spacing, 1 ) !default;
+$kendo-calendar-md-cell-padding-y: k-map-get( $spacing, 1 ) !default;
 
 $kendo-calendar-lg-font-size: $font-size-lg !default;
 $kendo-calendar-lg-line-height: $line-height-lg !default;
 $kendo-calendar-lg-cell-size: 40px !default;
-$kendo-calendar-lg-cell-padding-x: map-get( $spacing, 2 ) !default;
-$kendo-calendar-lg-cell-padding-y: map-get( $spacing, 2 ) !default;
+$kendo-calendar-lg-cell-padding-x: k-map-get( $spacing, 2 ) !default;
+$kendo-calendar-lg-cell-padding-y: k-map-get( $spacing, 2 ) !default;
 
 $kendo-calendar-sizes: (
     sm: (

@@ -1,6 +1,6 @@
 // TODO DOCS
 
-$kendo-utils-gap: map-get( $kendo-utils, "gap" ) !default;
+$kendo-utils-gap: k-map-get( $kendo-utils, "gap" ) !default;
 
 @include generate-utils( gap, gap, $kendo-utils-gap );
 @include generate-utils( gap-x, column-gap, $kendo-utils-gap );

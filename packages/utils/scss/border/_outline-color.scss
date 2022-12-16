@@ -1,5 +1,5 @@
 // TODO DOCS
 
-$kendo-utils-outline-color: map-get( $kendo-utils, "outline-color" ) !default;
+$kendo-utils-outline-color: k-map-get( $kendo-utils, "outline-color" ) !default;
 
 @include generate-utils( outline, outline-color, $kendo-utils-outline-color );

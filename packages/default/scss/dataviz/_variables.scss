@@ -2,50 +2,50 @@
 /// The first base series color and its light and dark shades.
 /// @group charts
 $series-a: #ff6358 !default;
-$series-a-dark: mix(black, $series-a, 25%) !default;
-$series-a-darker: mix(black, $series-a, 50%) !default;
-$series-a-light: mix(white, $series-a, 25%) !default;
-$series-a-lighter: mix(white, $series-a, 50%) !default;
+$series-a-dark: k-color-mix(black, $series-a, 25%) !default;
+$series-a-darker: k-color-mix(black, $series-a, 50%) !default;
+$series-a-light: k-color-mix(white, $series-a, 25%) !default;
+$series-a-lighter: k-color-mix(white, $series-a, 50%) !default;
 
 /// The second base series color and its light and dark shades.
 /// @group charts
 $series-b: #ffe162 !default;
-$series-b-dark: mix(black, $series-b, 25%) !default;
-$series-b-darker: mix(black, $series-b, 50%) !default;
-$series-b-light: mix(white, $series-b, 25%) !default;
-$series-b-lighter: mix(white, $series-b, 50%) !default;
+$series-b-dark: k-color-mix(black, $series-b, 25%) !default;
+$series-b-darker: k-color-mix(black, $series-b, 50%) !default;
+$series-b-light: k-color-mix(white, $series-b, 25%) !default;
+$series-b-lighter: k-color-mix(white, $series-b, 50%) !default;
 
 /// The third base series color and its light and dark shades.
 /// @group charts
 $series-c: #4cd180 !default;
-$series-c-dark: mix(black, $series-c, 25%) !default;
-$series-c-darker: mix(black, $series-c, 50%) !default;
-$series-c-light: mix(white, $series-c, 25%) !default;
-$series-c-lighter: mix(white, $series-c, 50%) !default;
+$series-c-dark: k-color-mix(black, $series-c, 25%) !default;
+$series-c-darker: k-color-mix(black, $series-c, 50%) !default;
+$series-c-light: k-color-mix(white, $series-c, 25%) !default;
+$series-c-lighter: k-color-mix(white, $series-c, 50%) !default;
 
 /// The fourth base series color and its light and dark shades.
 /// @group charts
 $series-d: #4b5ffa !default;
-$series-d-dark: mix(black, $series-d, 25%) !default;
-$series-d-darker: mix(black, $series-d, 50%) !default;
-$series-d-light: mix(white, $series-d, 25%) !default;
-$series-d-lighter: mix(white, $series-d, 50%) !default;
+$series-d-dark: k-color-mix(black, $series-d, 25%) !default;
+$series-d-darker: k-color-mix(black, $series-d, 50%) !default;
+$series-d-light: k-color-mix(white, $series-d, 25%) !default;
+$series-d-lighter: k-color-mix(white, $series-d, 50%) !default;
 
 /// The fifth base series color and its light and dark shades.
 /// @group charts
 $series-e: #ac58ff !default;
-$series-e-dark: mix(black, $series-e, 25%) !default;
-$series-e-darker: mix(black, $series-e, 50%) !default;
-$series-e-light: mix(white, $series-e, 25%) !default;
-$series-e-lighter: mix(white, $series-e, 50%) !default;
+$series-e-dark: k-color-mix(black, $series-e, 25%) !default;
+$series-e-darker: k-color-mix(black, $series-e, 50%) !default;
+$series-e-light: k-color-mix(white, $series-e, 25%) !default;
+$series-e-lighter: k-color-mix(white, $series-e, 50%) !default;
 
 /// The sixth base series color and its light and dark shades.
 /// @group charts
 $series-f: #ff5892 !default;
-$series-f-dark: mix(black, $series-f, 25%) !default;
-$series-f-darker: mix(black, $series-f, 50%) !default;
-$series-f-light: mix(white, $series-f, 25%) !default;
-$series-f-lighter: mix(white, $series-f, 50%) !default;
+$series-f-dark: k-color-mix(black, $series-f, 25%) !default;
+$series-f-darker: k-color-mix(black, $series-f, 50%) !default;
+$series-f-light: k-color-mix(white, $series-f, 25%) !default;
+$series-f-lighter: k-color-mix(white, $series-f, 50%) !default;
 
 /// The series colors in order:
 /// base, light, dark, lighter, darker

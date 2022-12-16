@@ -5,21 +5,21 @@
 $kendo-chip-border-width: 1px !default;
 /// The spacing between the text and the icons of the chip.
 /// @group chip
-$kendo-chip-spacing: map-get( $spacing, 1 ) !default;
+$kendo-chip-spacing: k-map-get( $spacing, 1 ) !default;
 
 /// Horizontal padding of the chip.
 /// @group chip
-$kendo-chip-padding-x: map-get( $spacing, 1 ) !default;
-$kendo-chip-padding-x-sm: map-get( $spacing, 1 ) !default;
-$kendo-chip-padding-x-md: map-get( $spacing, 1 ) !default;
-$kendo-chip-padding-x-lg: map-get( $spacing, 1 ) !default;
+$kendo-chip-padding-x: k-map-get( $spacing, 1 ) !default;
+$kendo-chip-padding-x-sm: k-map-get( $spacing, 1 ) !default;
+$kendo-chip-padding-x-md: k-map-get( $spacing, 1 ) !default;
+$kendo-chip-padding-x-lg: k-map-get( $spacing, 1 ) !default;
 
 /// Vertical padding of the chip.
 /// @group chip
-$kendo-chip-padding-y: map-get( $spacing, 1 ) !default;
-$kendo-chip-padding-y-sm: map-get( $spacing, 1 ) - map-get( $spacing, thin )  !default;
-$kendo-chip-padding-y-md: map-get( $spacing, 1 ) !default;
-$kendo-chip-padding-y-lg: map-get( $spacing, 1 ) + map-get( $spacing, thin ) !default;
+$kendo-chip-padding-y: k-map-get( $spacing, 1 ) !default;
+$kendo-chip-padding-y-sm: k-map-get( $spacing, 1 ) - k-map-get( $spacing, thin )  !default;
+$kendo-chip-padding-y-md: k-map-get( $spacing, 1 ) !default;
+$kendo-chip-padding-y-lg: k-map-get( $spacing, 1 ) + k-map-get( $spacing, thin ) !default;
 
 /// Font sizes of the chip.
 /// @group chip
@@ -70,10 +70,10 @@ $kendo-chip-base-bg: $kendo-button-bg !default;
 /// @group chip
 $kendo-chip-theme-colors: (
     "base": $kendo-chip-base-bg,
-    "error": map-get($kendo-theme-colors, "error"),
-    "info": map-get($kendo-theme-colors, "info"),
-    "warning": map-get($kendo-theme-colors, "warning"),
-    "success": map-get($kendo-theme-colors, "success")
+    "error": k-map-get($kendo-theme-colors, "error"),
+    "info": k-map-get($kendo-theme-colors, "info"),
+    "warning": k-map-get($kendo-theme-colors, "warning"),
+    "success": k-map-get($kendo-theme-colors, "success")
 ) !default;
 
 /// The base background color of solid chip.
@@ -145,7 +145,7 @@ $kendo-chip-outline-selected-text: $kendo-chip-outline-hover-text !default;
 /// The sizes of the chip list.
 /// @group chip
 $kendo-chip-list-sizes: (
-    sm: map-get( $spacing, 1 ),
-    md: map-get( $spacing, 1 ),
-    lg: map-get( $spacing, 1 )
+    sm: k-map-get( $spacing, 1 ),
+    md: k-map-get( $spacing, 1 ),
+    lg: k-map-get( $spacing, 1 )
 ) !default;

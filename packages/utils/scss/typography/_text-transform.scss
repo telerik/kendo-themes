@@ -16,6 +16,6 @@
 /// @contextType css
 
 // Text transform utility classes
-$kendo-utils-text-transform: map-get( $kendo-utils, "text-transform" ) !default;
+$kendo-utils-text-transform: k-map-get( $kendo-utils, "text-transform" ) !default;
 
 @include generate-utils( text, text-transform, $kendo-utils-text-transform );

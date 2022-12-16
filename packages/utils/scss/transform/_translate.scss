@@ -1,6 +1,6 @@
 // TODO DOCS
 
-$kendo-utils-translate: map-get( $kendo-utils, "translate" ) !default;
+$kendo-utils-translate: k-map-get( $kendo-utils, "translate" ) !default;
 
 // sass-lint:disable function-name-format
 @function __translate-x( $val ) {

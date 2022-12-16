@@ -19,6 +19,6 @@
 /// @contextType css
 
 // Resize utility classes
-$kendo-utils-resize: map-get( $kendo-utils, "resize" ) !default;
+$kendo-utils-resize: k-map-get( $kendo-utils, "resize" ) !default;
 
 @include generate-utils( resize, resize, $kendo-utils-resize );
