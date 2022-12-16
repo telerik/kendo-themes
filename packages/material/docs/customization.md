@@ -753,7 +753,7 @@ The following table lists the available variables for customizing the Material t
     <td>Number</td>
 <td>
 
-`( 20 / 14 )`
+`k-math-div( 20, 14 )`
 
 </td>
 <td>
@@ -2515,7 +2515,7 @@ The following table lists the available variables for customizing the Material t
     <td>Number</td>
 <td>
 
-`(18 / 14)`
+`k-math-div( 18, 14 )`
 
 </td>
 <td>
@@ -3414,9 +3414,9 @@ The following table lists the available variables for customizing the Material t
 <td>
 
 `(
-    "primary": map-get($kendo-theme-colors, "primary"),
-    "light": map-get($kendo-theme-colors, "light"),
-    "dark": map-get($kendo-theme-colors, "dark")
+    "primary": k-map-get($kendo-theme-colors, "primary"),
+    "light": k-map-get($kendo-theme-colors, "light"),
+    "dark": k-map-get($kendo-theme-colors, "dark")
 )`
 
 </td>
@@ -3528,7 +3528,7 @@ The following table lists the available variables for customizing the Material t
     <td>Number</td>
 <td>
 
-`(20 / 14)`
+`k-math-div( 20, 14 )`
 
 </td>
 <td>
@@ -6010,7 +6010,7 @@ The following table lists the available variables for customizing the Material t
     <td>Calculation</td>
 <td>
 
-`calc( -1 * (#{$kendo-menu-popup-item-padding-end-sm} - #{$kendo-menu-popup-item-padding-x-sm / 2}) )`
+`calc( -1 * (#{$kendo-menu-popup-item-padding-end-sm} - #{k-math-div( $kendo-menu-popup-item-padding-x-sm, 2 )}) )`
 
 </td>
 <td>
@@ -9744,19 +9744,19 @@ The following table lists the available variables for customizing the Material t
 `(
     sm: (
         font-size: $font-size-md,
-        line-height: ( 20 / 14 ),
+        line-height: k-math-div( 20, 14 ),
         cell-padding-x: k-map-get( $spacing, 4 ),
         cell-padding-y: k-map-get( $spacing, 2 ) + k-map-get( $spacing, thin )
     ),
     md: (
         font-size: $font-size-md,
-        line-height: ( 20 / 14 ),
+        line-height: k-math-div( 20, 14 ),
         cell-padding-x: k-map-get( $spacing, 4 ),
         cell-padding-y: k-map-get( $spacing, 2 )
     ),
     lg: (
         font-size: $font-size-md,
-        line-height: ( 20 / 14 ),
+        line-height: k-math-div( 20, 14 ),
         cell-padding-x: k-map-get( $spacing, 4 ),
         cell-padding-y: k-map-get( $spacing, 2 ) + k-map-get( $spacing, thin )
     )
@@ -11877,9 +11877,9 @@ The following table lists the available variables for customizing the Material t
 <td>
 
 `(
-    "primary": map-get($kendo-theme-colors, "primary"),
-    "light": map-get($kendo-theme-colors, "light"),
-    "dark": map-get($kendo-theme-colors, "dark")
+    "primary": k-map-get($kendo-theme-colors, "primary"),
+    "light": k-map-get($kendo-theme-colors, "light"),
+    "dark": k-map-get($kendo-theme-colors, "dark")
 )`
 
 </td>

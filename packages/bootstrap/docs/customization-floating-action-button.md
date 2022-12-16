@@ -48,7 +48,7 @@ The following table lists the available variables for customization.
     <td>Number</td>
 <td>
 
-`$kendo-border-radius / 2`
+`k-math-div( $kendo-border-radius, 2 )`
 
 </td>
 <td>

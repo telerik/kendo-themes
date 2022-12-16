@@ -31,9 +31,9 @@ The following table lists the available variables for customization.
 <td>
 
 `(
-    "primary": map-get($kendo-theme-colors, "primary"),
-    "light": map-get($kendo-theme-colors, "light"),
-    "dark": map-get($kendo-theme-colors, "dark")
+    "primary": k-map-get($kendo-theme-colors, "primary"),
+    "light": k-map-get($kendo-theme-colors, "light"),
+    "dark": k-map-get($kendo-theme-colors, "dark")
 )`
 
 </td>

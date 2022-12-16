@@ -3438,9 +3438,9 @@ The following table lists the available variables for customizing the Bootstrap 
 <td>
 
 `(
-    "primary": map-get($kendo-theme-colors, "primary"),
-    "light": map-get($kendo-theme-colors, "light"),
-    "dark": map-get($kendo-theme-colors, "dark")
+    "primary": k-map-get($kendo-theme-colors, "primary"),
+    "light": k-map-get($kendo-theme-colors, "light"),
+    "dark": k-map-get($kendo-theme-colors, "dark")
 )`
 
 </td>
@@ -3498,7 +3498,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Number</td>
 <td>
 
-`$kendo-border-radius / 2`
+`k-math-div( $kendo-border-radius, 2 )`
 
 </td>
 <td>
@@ -6050,7 +6050,7 @@ The following table lists the available variables for customizing the Bootstrap 
     <td>Calculation</td>
 <td>
 
-`calc( -1 * (#{$kendo-menu-popup-item-padding-end-sm} - #{$kendo-menu-popup-item-padding-x-sm / 2}) )`
+`calc( -1 * (#{$kendo-menu-popup-item-padding-end-sm} - #{k-math-div( $kendo-menu-popup-item-padding-x-sm, 2 )}) )`
 
 </td>
 <td>
@@ -11828,9 +11828,9 @@ The following table lists the available variables for customizing the Bootstrap 
 <td>
 
 `(
-    "primary": map-get($kendo-theme-colors, "primary"),
-    "light": map-get($kendo-theme-colors, "light"),
-    "dark": map-get($kendo-theme-colors, "dark")
+    "primary": k-map-get($kendo-theme-colors, "primary"),
+    "light": k-map-get($kendo-theme-colors, "light"),
+    "dark": k-map-get($kendo-theme-colors, "dark")
 )`
 
 </td>

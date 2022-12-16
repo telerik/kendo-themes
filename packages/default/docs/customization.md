@@ -34,7 +34,7 @@ The following table lists the available variables for customizing the Default th
     <td>Number</td>
 <td>
 
-`map-get( $spacing, 1 )`
+`k-map-get( $spacing, 1 )`
 
 </td>
 <td>
@@ -382,9 +382,9 @@ The following table lists the available variables for customizing the Default th
 <td>
 
 `(
-    sm: map-get( $spacing, 4 ),
-    md: map-get( $spacing, 8 ),
-    lg: map-get( $spacing, 16 )
+    sm: k-map-get( $spacing, 4 ),
+    md: k-map-get( $spacing, 8 ),
+    lg: k-map-get( $spacing, 16 )
 )`
 
 </td>
@@ -478,7 +478,7 @@ The following table lists the available variables for customizing the Default th
     <td>Number</td>
 <td>
 
-`map-get( $spacing, 1 )`
+`k-map-get( $spacing, 1 )`
 
 </td>
 <td>
@@ -496,7 +496,7 @@ The following table lists the available variables for customizing the Default th
     <td>Number</td>
 <td>
 
-`map-get( $spacing, 1 )`
+`k-map-get( $spacing, 1 )`
 
 </td>
 <td>
@@ -665,7 +665,7 @@ The following table lists the available variables for customizing the Default th
     <td>Number</td>
 <td>
 
-`map-get( $spacing, 2 )`
+`k-map-get( $spacing, 2 )`
 
 </td>
 <td>
@@ -683,7 +683,7 @@ The following table lists the available variables for customizing the Default th
     <td>Number</td>
 <td>
 
-`map-get( $spacing, 1 )`
+`k-map-get( $spacing, 1 )`
 
 </td>
 <td>
@@ -2292,7 +2292,7 @@ The following table lists the available variables for customizing the Default th
     <td>Number</td>
 <td>
 
-`map-get( $spacing, 1 )`
+`k-map-get( $spacing, 1 )`
 
 </td>
 <td>
@@ -2310,7 +2310,7 @@ The following table lists the available variables for customizing the Default th
     <td>Number</td>
 <td>
 
-`map-get( $spacing, 4 )`
+`k-map-get( $spacing, 4 )`
 
 </td>
 <td>
@@ -2441,7 +2441,7 @@ The following table lists the available variables for customizing the Default th
     <td>Number</td>
 <td>
 
-`map-get( $spacing, 1 )`
+`k-map-get( $spacing, 1 )`
 
 </td>
 <td>
@@ -2459,7 +2459,7 @@ The following table lists the available variables for customizing the Default th
     <td>Number</td>
 <td>
 
-`map-get( $spacing, 1 )`
+`k-map-get( $spacing, 1 )`
 
 </td>
 <td>
@@ -2477,7 +2477,7 @@ The following table lists the available variables for customizing the Default th
     <td>Number</td>
 <td>
 
-`map-get( $spacing, 1 )`
+`k-map-get( $spacing, 1 )`
 
 </td>
 <td>
@@ -2608,10 +2608,10 @@ The following table lists the available variables for customizing the Default th
 
 `(
     "base": $kendo-chip-base-bg,
-    "error": map-get($kendo-theme-colors, "error"),
-    "info": map-get($kendo-theme-colors, "info"),
-    "warning": map-get($kendo-theme-colors, "warning"),
-    "success": map-get($kendo-theme-colors, "success")
+    "error": k-map-get($kendo-theme-colors, "error"),
+    "info": k-map-get($kendo-theme-colors, "info"),
+    "warning": k-map-get($kendo-theme-colors, "warning"),
+    "success": k-map-get($kendo-theme-colors, "success")
 )`
 
 </td>
@@ -2997,9 +2997,9 @@ The following table lists the available variables for customizing the Default th
 <td>
 
 `(
-    sm: map-get( $spacing, 1 ),
-    md: map-get( $spacing, 1 ),
-    lg: map-get( $spacing, 1 )
+    sm: k-map-get( $spacing, 1 ),
+    md: k-map-get( $spacing, 1 ),
+    lg: k-map-get( $spacing, 1 )
 )`
 
 </td>
@@ -3462,9 +3462,9 @@ The following table lists the available variables for customizing the Default th
 <td>
 
 `(
-    "primary": map-get($kendo-theme-colors, "primary"),
-    "light": map-get($kendo-theme-colors, "light"),
-    "dark": map-get($kendo-theme-colors, "dark")
+    "primary": k-map-get($kendo-theme-colors, "primary"),
+    "light": k-map-get($kendo-theme-colors, "light"),
+    "dark": k-map-get($kendo-theme-colors, "dark")
 )`
 
 </td>
@@ -3594,7 +3594,7 @@ The following table lists the available variables for customizing the Default th
     <td>Number</td>
 <td>
 
-`map-get( $spacing, 4 )`
+`k-map-get( $spacing, 4 )`
 
 </td>
 <td>
@@ -3666,7 +3666,7 @@ The following table lists the available variables for customizing the Default th
     <td>Number</td>
 <td>
 
-`map-get( $spacing, 1 ) / 2`
+`k-math-div( k-map-get( $spacing, 1 ), 2 )`
 
 </td>
 <td>
@@ -3702,7 +3702,7 @@ The following table lists the available variables for customizing the Default th
     <td>Number</td>
 <td>
 
-`map-get( $spacing, 4 )`
+`k-map-get( $spacing, 4 )`
 
 </td>
 <td>
@@ -3720,7 +3720,7 @@ The following table lists the available variables for customizing the Default th
     <td>Number</td>
 <td>
 
-`map-get( $spacing, 1 )`
+`k-map-get( $spacing, 1 )`
 
 </td>
 <td>
@@ -3828,7 +3828,7 @@ The following table lists the available variables for customizing the Default th
     <td>Number</td>
 <td>
 
-`map-get( $spacing, 2 )`
+`k-map-get( $spacing, 2 )`
 
 </td>
 <td>
@@ -4457,7 +4457,7 @@ The following table lists the available variables for customizing the Default th
     <td>Color</td>
 <td>
 
-`darken($grid-bg, 7%)`
+`k-color-darken($grid-bg, 7%)`
 
 </td>
 <td>
@@ -4683,7 +4683,7 @@ The following table lists the available variables for customizing the Default th
     <td>Number</td>
 <td>
 
-`map-get( $spacing, 2 )`
+`k-map-get( $spacing, 2 )`
 
 </td>
 <td>
@@ -4701,7 +4701,7 @@ The following table lists the available variables for customizing the Default th
     <td>Number</td>
 <td>
 
-`map-get( $spacing, 1 )`
+`k-map-get( $spacing, 1 )`
 
 </td>
 <td>
@@ -5998,7 +5998,7 @@ The following table lists the available variables for customizing the Default th
     <td>Number</td>
 <td>
 
-`map-get( $spacing, 2 )`
+`k-map-get( $spacing, 2 )`
 
 </td>
 <td>
@@ -6016,7 +6016,7 @@ The following table lists the available variables for customizing the Default th
     <td>Number</td>
 <td>
 
-`map-get( $spacing, 1 )`
+`k-map-get( $spacing, 1 )`
 
 </td>
 <td>
@@ -6070,7 +6070,7 @@ The following table lists the available variables for customizing the Default th
     <td>Calculation</td>
 <td>
 
-`calc( -1 * (#{$kendo-menu-popup-item-padding-end-sm} - #{$kendo-menu-popup-item-padding-x-sm / 2}) )`
+`calc( -1 * (#{$kendo-menu-popup-item-padding-end-sm} - #{k-math-div( $kendo-menu-popup-item-padding-x-sm, 2 )}) )`
 
 </td>
 <td>
@@ -6669,7 +6669,7 @@ The following table lists the available variables for customizing the Default th
     <td>Number</td>
 <td>
 
-`map-get( $spacing, 2 )`
+`k-map-get( $spacing, 2 )`
 
 </td>
 <td>
@@ -6723,7 +6723,7 @@ The following table lists the available variables for customizing the Default th
     <td>Number</td>
 <td>
 
-`map-get( $spacing, 3 )`
+`k-map-get( $spacing, 3 )`
 
 </td>
 <td>
@@ -8299,7 +8299,7 @@ The following table lists the available variables for customizing the Default th
     <td>Number</td>
 <td>
 
-`map-get( $spacing, 1 )`
+`k-map-get( $spacing, 1 )`
 
 </td>
 <td>
@@ -8317,7 +8317,7 @@ The following table lists the available variables for customizing the Default th
     <td>Number</td>
 <td>
 
-`map-get( $spacing, 4 )`
+`k-map-get( $spacing, 4 )`
 
 </td>
 <td>
@@ -9692,20 +9692,20 @@ The following table lists the available variables for customizing the Default th
     sm: (
         font-size: $font-size-md,
         line-height: $line-height-md,
-        cell-padding-x: map-get( $spacing, 2 ),
-        cell-padding-y: map-get( $spacing, 2 ) - map-get( $spacing, thin )
+        cell-padding-x: k-map-get( $spacing, 2 ),
+        cell-padding-y: k-map-get( $spacing, 2 ) - k-map-get( $spacing, thin )
     ),
     md: (
         font-size: $font-size-md,
         line-height: $line-height-md,
-        cell-padding-x: map-get( $spacing, 2 ),
-        cell-padding-y: map-get( $spacing, 2 )
+        cell-padding-x: k-map-get( $spacing, 2 ),
+        cell-padding-y: k-map-get( $spacing, 2 )
     ),
     lg: (
         font-size: $font-size-md,
         line-height: $line-height-md,
-        cell-padding-x: map-get( $spacing, 2 ),
-        cell-padding-y: map-get( $spacing, 2 ) + map-get( $spacing, thin )
+        cell-padding-x: k-map-get( $spacing, 2 ),
+        cell-padding-y: k-map-get( $spacing, 2 ) + k-map-get( $spacing, thin )
     )
 )`
 
@@ -10600,7 +10600,7 @@ The following table lists the available variables for customizing the Default th
     <td>Number</td>
 <td>
 
-`map-get( $spacing, 4 )`
+`k-map-get( $spacing, 4 )`
 
 </td>
 <td>
@@ -10618,7 +10618,7 @@ The following table lists the available variables for customizing the Default th
     <td>Number</td>
 <td>
 
-`map-get( $spacing, 4 )`
+`k-map-get( $spacing, 4 )`
 
 </td>
 <td>
@@ -11176,7 +11176,7 @@ The following table lists the available variables for customizing the Default th
     <td>Number</td>
 <td>
 
-`map-get( $spacing, 2 )`
+`k-map-get( $spacing, 2 )`
 
 </td>
 <td>
@@ -11194,7 +11194,7 @@ The following table lists the available variables for customizing the Default th
     <td>Number</td>
 <td>
 
-`map-get( $spacing, 1 )`
+`k-map-get( $spacing, 1 )`
 
 </td>
 <td>
@@ -11796,7 +11796,7 @@ The following table lists the available variables for customizing the Default th
     <td>Number</td>
 <td>
 
-`(20 / 14)`
+`k-math-div( 20, 14 )`
 
 </td>
 <td>
@@ -11836,9 +11836,9 @@ The following table lists the available variables for customizing the Default th
 <td>
 
 `(
-    "primary": map-get($kendo-theme-colors, "primary"),
-    "light": map-get($kendo-theme-colors, "light"),
-    "dark": map-get($kendo-theme-colors, "dark")
+    "primary": k-map-get($kendo-theme-colors, "primary"),
+    "light": k-map-get($kendo-theme-colors, "light"),
+    "dark": k-map-get($kendo-theme-colors, "dark")
 )`
 
 </td>
