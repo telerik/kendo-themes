@@ -7,10 +7,6 @@ const root = ReactDOM.createRoot(
 );
 
 const styles = `
-    body {
-        background: #fcfcfc;
-    }
-
     .k-notification-group {
         position: static;
     }
@@ -22,7 +18,7 @@ const styles = `
 
     .k-custom-notification {
         font-size: 20px;
-        color: gray;
+        color: black;
     }
 
     .k-notification-actions {
