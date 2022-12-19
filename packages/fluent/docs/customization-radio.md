@@ -66,7 +66,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 5 )`
+`map.get( $kendo-spacing, 5 )`
 
 </td>
 <td>
@@ -84,7 +84,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 5 )`
+`map.get( $kendo-spacing, 5 )`
 
 </td>
 <td>
@@ -102,7 +102,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`( map-get( $kendo-spacing, 5 ) - map-get( $kendo-spacing, thin ) )`
+`( map.get( $kendo-spacing, 5 ) - map.get( $kendo-spacing, thin ) )`
 
 </td>
 <td>
@@ -120,7 +120,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`( map-get( $kendo-spacing, 5 ) * 3 )`
+`( map.get( $kendo-spacing, 5 ) * 3 )`
 
 </td>
 <td>
@@ -138,7 +138,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`( map-get( $kendo-spacing, 5 ) * 3 )`
+`( map.get( $kendo-spacing, 5 ) * 3 )`
 
 </td>
 <td>
@@ -282,7 +282,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`( map-get( $kendo-spacing, 1) + map-get( $kendo-spacing, hair) )`
+`( map.get( $kendo-spacing, 1) + map.get( $kendo-spacing, hair) )`
 
 </td>
 <td>
@@ -714,7 +714,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 )`
+`map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -732,7 +732,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 4 )`
+`map.get( $kendo-spacing, 4 )`
 
 </td>
 <td>
@@ -786,7 +786,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 )`
+`map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>
