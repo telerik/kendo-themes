@@ -3,127 +3,115 @@
 
 @mixin kendo-checkbox--theme() {
 
-     // Checkbox
-     .k-checkbox {
+    // Checkbox
+    .k-checkbox {
         @include fill(
-            var( --kendo-checkbox-text, #{ $kendo-checkbox-text } ),
-            var( --kendo-checkbox-bg, #{ $kendo-checkbox-bg } ),
-            var( --kendo-checkbox-border, #{ $kendo-checkbox-border } )
+            var( --kendo-checkbox-text, #{$kendo-checkbox-text} ),
+            var( --kendo-checkbox-bg, #{$kendo-checkbox-bg} ),
+            var( --kendo-checkbox-border, #{$kendo-checkbox-border} )
         );
     }
+
 
     // Hover state
     .k-checkbox:hover,
     .k-checkbox.k-hover {
         @include fill(
-            var( --kendo-checkbox-hover-text, #{ $kendo-checkbox-hover-text } ),
-            var( --kendo-checkbox-hover-bg, #{ $kendo-checkbox-hover-bg } ),
-            var( --kendo-checkbox-hover-border, #{ $kendo-checkbox-hover-border } )
+            var( --kendo-checkbox-hover-text, #{$kendo-checkbox-hover-text} ),
+            var( --kendo-checkbox-hover-bg, #{$kendo-checkbox-hover-bg} ),
+            var( --kendo-checkbox-hover-border, #{$kendo-checkbox-hover-border} )
         );
-
-        &:not(
-            .k-checkbox.k-checked, .k-checkbox:checked,
-            .k-checkbox:indeterminate, .k-checkbox.k-indeterminate,
-            .k-checkbox:invalid, .k-checkbox.k-invalid,
-            .k-checkbox:disabled, .k-checkbox.k-disabled) {
-                background-image: var( --kendo-checkbox-hover-image, #{ $kendo-checkbox-hover-image } );
-        }
     }
+
 
     // Focus state
     .k-checkbox:focus,
     .k-checkbox.k-focus {
-        &::before {
-            @include fill( $border: var( --kendo-checkbox-focus-outline, #{ $kendo-checkbox-focus-outline } ) );
-        }
-    }
-
-    // Indeterminate
-    .k-checkbox:indeterminate,
-    .k-checkbox.k-indeterminate {
-        @include fill(
-            var( --kendo-checkbox-indeterminate-text, #{ $kendo-checkbox-indeterminate-text }) ,
-            var( --kendo-checkbox-indeterminate-bg, #{ $kendo-checkbox-indeterminate-bg } ),
-            var( --kendo-checkbox-indeterminate-border, #{ $kendo-checkbox-indeterminate-border } )
-        );
-
-        transition-property: border-width, border, border-color;
-        transition-duration: 200ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.23, 1);
-
-        &::after {
-            @include fill(
-                $bg: var( --kendo-checkbox-indeterminate-border, #{ $kendo-checkbox-indeterminate-border } )
-            );
-        }
-
-        &:hover,
-        &.k-hover {
-            &::after {
-                @include fill(
-                    $bg: var( --kendo-checkbox-indeterminate-hover-border, #{ $kendo-checkbox-indeterminate-hover-border } ),
-                    $border: var( --kendo-checkbox-indeterminate-hover-border, #{ $kendo-checkbox-indeterminate-hover-border } )
-                );
-            }
-        }
-
-        // Indeterminate and disabled
-        &:disabled,
-        &.k-disabled {
-            &::after {
-                @include fill(
-                    var( --kendo-checkbox-indeterminate-disabled-border, #{ $kendo-checkbox-indeterminate-disabled-border } ),
-                    var( --kendo-checkbox-indeterminate-disabled-border, #{ $kendo-checkbox-indeterminate-disabled-border } )
-                );
-            }
-        }
+        box-shadow: $kendo-checkbox-focus-shadow;
+        outline: $kendo-checkbox-focus-outline;
     }
 
 
-    // Checked
+    // Checked state
     .k-checkbox:checked,
     .k-checkbox.k-checked {
         @include fill(
-            var( --kendo-checkbox-checked-text, #{ $kendo-checkbox-checked-text }) ,
-            var( --kendo-checkbox-checked-bg, #{ $kendo-checkbox-checked-bg } ),
-            var( --kendo-checkbox-checked-border, #{ $kendo-checkbox-checked-border } )
+            var( --kendo-checkbox-checked-text, #{$kendo-checkbox-checked-text} ),
+            var( --kendo-checkbox-checked-bg, #{$kendo-checkbox-checked-bg} ),
+            var( --kendo-checkbox-checked-border, #{$kendo-checkbox-checked-border} )
         );
-
-        // Checked and hovered
-        &:hover,
-        &.k-hover {
-            @include fill(
-                $bg: var( --kendo-checkbox-checked-hover-bg, #{ $kendo-checkbox-checked-hover-bg } ),
-                $border: var( --kendo-checkbox-checked-hover-border, #{ $kendo-checkbox-checked-hover-border } )
-            );
-        }
-
-        &:disabled,
-        &.k-disabled {
-            @include fill(
-                var( --kendo-checkbox-disabled-checked-text, #{ $kendo-checkbox-disabled-checked-text } ),
-                var( --kendo-checkbox-disabled-checked-bg, #{ $kendo-checkbox-disabled-checked-bg } ),
-                var( --kendo-checkbox-disabled-checked-border, #{ $kendo-checkbox-disabled-checked-border } )
-            );
-        }
     }
 
-    // Disabled
+
+    // Hover checked state
+    .k-checkbox:checked:hover,
+    .k-checkbox.k-checked.k-hover {
+        @include fill(
+            var( --kendo-checkbox-hover-checked-text, #{$kendo-checkbox-hover-checked-text} ),
+            var( --kendo-checkbox-hover-checked-bg, #{$kendo-checkbox-hover-checked-bg} ),
+            var( --kendo-checkbox-hover-checked-border, #{$kendo-checkbox-hover-checked-border} )
+        );
+    }
+
+
+    // Indeterminate state
+    .k-checkbox:indeterminate,
+    .k-checkbox.k-indeterminate {
+        @include fill(
+            var( --kendo-checkbox-indeterminate-text, #{$kendo-checkbox-indeterminate-text} ),
+            var( --kendo-checkbox-indeterminate-bg, #{$kendo-checkbox-indeterminate-bg} ),
+            var( --kendo-checkbox-indeterminate-border, #{$kendo-checkbox-indeterminate-border} )
+        );
+    }
+
+
+    // Hover indeterminate state
+    .k-checkbox:indeterminate:hover,
+    .k-checkbox.k-indeterminate.k-hover {
+        @include fill(
+            var( --kendo-checkbox-hover-indeterminate-text, #{$kendo-checkbox-hover-indeterminate-text} ),
+            var( --kendo-checkbox-hover-indeterminate-bg, #{$kendo-checkbox-hover-indeterminate-bg} ),
+            var( --kendo-checkbox-hover-indeterminate-border, #{$kendo-checkbox-hover-indeterminate-border} )
+        );
+    }
+
+
+    // Disabled state
     .k-checkbox:disabled,
     .k-checkbox.k-disabled {
         @include fill(
-            var( --kendo-checkbox-disabled-text, #{ $kendo-checkbox-disabled-text } ),
-            var( --kendo-checkbox-disabled-bg, #{ $kendo-checkbox-disabled-bg } ),
-            var( --kendo-checkbox-disabled-border, #{ $kendo-checkbox-disabled-border } )
+            var( --kendo-checkbox-disabled-text, #{$kendo-checkbox-disabled-text} ),
+            var( --kendo-checkbox-disabled-bg, #{$kendo-checkbox-disabled-bg} ),
+            var( --kendo-checkbox-disabled-border, #{$kendo-checkbox-disabled-border} )
+        );
+    }
+    .k-checkbox:checked:disabled,
+    .k-checkbox.k-checked.k-disabled {
+        @include fill(
+            var( --kendo-checkbox-disabled-checked-text, #{$kendo-checkbox-disabled-checked-text} ),
+            var( --kendo-checkbox-disabled-checked-bg, #{$kendo-checkbox-disabled-checked-bg} ),
+            var( --kendo-checkbox-disabled-checked-border, #{$kendo-checkbox-disabled-checked-border} )
+        );
+    }
+    .k-checkbox:indeterminate:disabled,
+    .k-checkbox.k-indeterminate.k-disabled {
+        @include fill(
+            var( --kendo-checkbox-disabled-indeterminate-text, #{$kendo-checkbox-disabled-indeterminate-text} ),
+            var( --kendo-checkbox-disabled-indeterminate-bg, #{$kendo-checkbox-disabled-indeterminate-bg} ),
+            var( --kendo-checkbox-disabled-indeterminate-border, #{$kendo-checkbox-disabled-indeterminate-border} )
         );
     }
 
 
-    // Invalid
-    .k-checkbox.k-invalid {
+    // Invalid state
+    .k-checkbox.k-invalid,
+    .k-checkbox.ng-invalid.ng-touched,
+    .k-checkbox.ng-invalid.ng-dirty {
         @include fill( $border: var( --kendo-checkbox-invalid-border, #{ $kendo-checkbox-invalid-border} ) );
     }
-    .k-checkbox.k-invalid + .k-checkbox-label {
+    .k-checkbox.k-invalid + .k-checkbox-label,
+    .k-checkbox.ng-invalid.ng-touched + .k-checkbox-label,
+    .k-checkbox.ng-invalid.ng-dirty + .k-checkbox-label {
         @include fill( $color: var( --kendo-checkbox-invalid-text, #{ $kendo-checkbox-invalid-text } ) );
     }
 
@@ -139,4 +127,5 @@
             opacity: var( --kendo-checkbox-ripple-opacity, #{ $kendo-checkbox-ripple-opacity } );
         }
     }
+
 }

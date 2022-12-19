@@ -4,6 +4,10 @@
 
 // Checkbox
 
+/// Border radius of radio button.
+/// @group checkbox
+$kendo-checkbox-border-radius: null !default;
+
 /// Border width of checkbox.
 /// @group checkbox
 $kendo-checkbox-border-width: 1px !default;
@@ -13,93 +17,45 @@ $kendo-checkbox-sizes: (
     sm: (
         size: map.get( $kendo-spacing, 4 ),
         glyph-size: ( map.get( $kendo-spacing, 4 ) - map.get( $kendo-spacing, thin ) ),
-        ripple-size: map.get( $kendo-spacing, 4 ) * 3,
-        indeterminate-size: map.get( $kendo-spacing, sm )
+        indicator-size: map.get( $kendo-spacing, 4 ),
+        indeterminate-size: map.get( $kendo-spacing, 3 ),
+        ripple-size: 300%
     ),
     md: (
         size: map.get( $kendo-spacing, 5 ),
         glyph-size: ( map.get( $kendo-spacing, 6 ) - map.get( $kendo-spacing, thin ) ),
-        ripple-size: map.get( $kendo-spacing, 5 ) * 3,
-        indeterminate-size: ( map.get( $kendo-spacing, md ) - map.get( $kendo-spacing, thin ))
+        indicator-size: map.get( $kendo-spacing, 4 ),
+        indeterminate-size: map.get( $kendo-spacing, 4 ),
+        ripple-size: 300%
     ),
     lg: (
         size: map.get( $kendo-spacing, 6 ),
         glyph-size: ( map.get( $kendo-spacing, 6 ) - map.get( $kendo-spacing, thin ) ),
-        ripple-size: map.get( $kendo-spacing, 6 ) * 3,
-        indeterminate-size: map.get( $kendo-spacing, md )
+        indicator-size: map.get( $kendo-spacing, 4 ),
+        indeterminate-size: map.get( $kendo-spacing, 5 ),
+        ripple-size: 300%
     )
 ) !default;
-
-// Checkbox indeterminte sizes
-$kendo-checkbox-indeterminate-sizes: (
-    sm: (
-        size: map.get( $kendo-spacing, sm ),
-        position: ( map.get( $kendo-spacing, 1 ) - map.get( $kendo-spacing, hair )),
-        border-width: map.get( $kendo-spacing, 1 )
-    ),
-    md: (
-        size: ( map.get( $kendo-spacing, md ) - map.get( $kendo-spacing, thin )),
-        position: map.get( $kendo-spacing, 1 ),
-        border-width: ( map.get( $kendo-spacing, 1 ) + map.get( $kendo-spacing, hair ))
-    ),
-    lg: (
-        size: map.get( $kendo-spacing, md ),
-        position: ( map.get( $kendo-spacing, 1) + map.get( $kendo-spacing, hair )),
-        border-width: ( map.get( $kendo-spacing, 1) + map.get( $kendo-spacing, thin ))
-    )
-) !default;
-
-/// Default width of the checbox.
-/// @group checkbox
-$kendo-checkbox-width: map.get( $kendo-spacing, 5 ) !default;
-/// Default height of the checbox.
-/// @group checkbox
-$kendo-checkbox-height: map.get( $kendo-spacing, 5 ) !default;
-
-/// Default width of indeterminate checkbox.
-/// @group checkbox
-$kendo-checkbox-indeterminate-width: ( map.get( $kendo-spacing, 3) - map.get( $kendo-spacing, thin) ) !default;
-/// Default height of indeterminate checkbox.
-/// @group checkbox
-$kendo-checkbox-indeterminate-height: ( map.get( $kendo-spacing, 3) - map.get( $kendo-spacing, thin) ) !default;
-
-/// Default top position of indeterminate checkbox.
-/// @group checkbox
-$kendo-checkbox-indeterminate-top: map.get( $kendo-spacing, 1 ) !default;
-/// Default left position of indeterminate checkbox.
-/// @group checkbox
-$kendo-checkbox-indeterminate-left: map.get( $kendo-spacing, 1 ) !default;
 
 /// Background color of checkbox.
 /// @group checkbox
-$kendo-checkbox-bg: var( --kendo-component-bg, initial ) !default;
+$kendo-checkbox-bg: $kendo-component-bg !default;
 /// Color of checkbox.
 /// @group checkbox
-$kendo-checkbox-text: initial !default;
+$kendo-checkbox-text: transparent !default;
 /// Border color of checkbox.
 /// @group checkbox
 $kendo-checkbox-border: get-theme-color-var( neutral-160 ) !default;
 
-/// The outline of a focused checkbox.
-/// @group checkbox
-$kendo-checkbox-focus-outline: get-theme-color-var( neutral-130 ) !default;
-
 /// Background color of hovered checkbox.
 /// @group checkbox
-$kendo-checkbox-hover-bg: var( --kendo-checkbox-bg, initial ) !default;
+$kendo-checkbox-hover-bg: $kendo-checkbox-bg !default;
 /// Color of hovered checkbox.
 /// @group checkbox
-$kendo-checkbox-hover-text: var( --kendo-body-text, initial ) !default;
+$kendo-checkbox-hover-text: get-theme-color( neutral, 130 ) !default;
 /// Border color of hovered checkbox.
 /// @group checkbox
 $kendo-checkbox-hover-border: $kendo-checkbox-border !default;
-
-/// Background of hovered and checked checkbox.
-/// @group checkbox
-$kendo-checkbox-checked-hover-bg: get-theme-color-var( primary-120 ) !default;
-/// Border of hovered and checked checkbox.
-/// @group checkbox
-$kendo-checkbox-checked-hover-border: get-theme-color-var( primary-120 ) !default;
 
 /// Background color of checked checkbox.
 /// @group checkbox
@@ -107,54 +63,57 @@ $kendo-checkbox-checked-bg: get-theme-color-var( primary-100 ) !default;
 /// Color of checked checkbox.
 /// @group checkbox
 $kendo-checkbox-checked-text: $white !default;
-/// Color of checked checkbox.
-/// @group checkbox
-$kendo-checkbox-hovered-text: get-theme-color-var( neutral-130 ) !default;
 /// Border color of checked checkbox.
 /// @group checkbox
 $kendo-checkbox-checked-border: $kendo-checkbox-checked-bg !default;
 
-/// Background color of indeterminate checkbox.
+/// Background of hovered and checked checkbox.
 /// @group checkbox
-$kendo-checkbox-indeterminate-bg: $kendo-checkbox-bg !default;
-/// Color of indeterminate checkbox.
+$kendo-checkbox-hover-checked-bg: get-theme-color-var( primary-110 ) !default;
+/// Color of checked checkbox.
 /// @group checkbox
-$kendo-checkbox-indeterminate-text: get-theme-color-var( primary-100 ) !default;
-/// Border color of indeterminate checkbox.
+$kendo-checkbox-hover-checked-text: $white !default;
+/// Border of hovered and checked checkbox.
 /// @group checkbox
-$kendo-checkbox-indeterminate-border: get-theme-color-var( primary-100 ) !default;
-/// Border color of indeterminate and hovered checkbox.
-/// @group checkbox
-$kendo-checkbox-indeterminate-hover-border: get-theme-color-var( primary-120 ) !default;
-/// Background color of indeterminate and hovered checkbox.
-/// @group checkbox
-$kendo-checkbox-indeterminate-hover-bg: get-theme-color-var( primary-120 ) !default;
-/// Background color of indeterminate and disabled checkbox.
-/// @group checkbox
-$kendo-checkbox-indeterminate-disabled-bg: get-theme-color-var( neutral-60 ) !default;
-/// Border color of indeterminate and disabled checkbox.
-/// @group checkbox
-$kendo-checkbox-indeterminate-disabled-border: get-theme-color-var( neutral-60 ) !default;
+$kendo-checkbox-hover-checked-border: $kendo-checkbox-hover-checked-bg !default;
 
 /// Border color of focused checkbox.
 /// @group checkbox
 $kendo-checkbox-focus-border: null !default;
 /// Box shadow of focused checkbox.
 /// @group checkbox
-$kendo-checkbox-focus-shadow: 0 0 0 2px rgba(0, 0, 0, .06) !default;
-/// Border color of focused and checked checkbox.
+$kendo-checkbox-focus-shadow: null !default;
+/// The outline of a focused checkbox.
 /// @group checkbox
-$kendo-checkbox-focus-checked-border: null !default;
-/// Box shadow of focused and checked checkbox.
+$kendo-checkbox-focus-outline: 1px solid get-theme-color-var( neutral-130 ) !default;
+$kendo-checkbox-focus-outline-offset: 2px !default;
+
+/// Background color of indeterminate checkbox.
 /// @group checkbox
-$kendo-checkbox-focus-checked-shadow: 0 0 0 2px rgba( get-theme-color-var( primary-100 ), .3 ) !default;
+$kendo-checkbox-indeterminate-bg: $kendo-checkbox-bg !default;
+/// Color of indeterminate checkbox.
+/// @group checkbox
+$kendo-checkbox-indeterminate-text: get-theme-color( primary, 100 ) !default;
+/// Border color of indeterminate checkbox.
+/// @group checkbox
+$kendo-checkbox-indeterminate-border: get-theme-color-var( primary-100 ) !default;
+
+/// Background color of hovered and indeterminate checkbox.
+/// @group checkbox
+$kendo-checkbox-hover-indeterminate-bg: $kendo-checkbox-bg !default;
+/// Background color of hovered and indeterminate checkbox.
+/// @group checkbox
+$kendo-checkbox-hover-indeterminate-text: get-theme-color( primary, 110 ) !default;
+/// Border color of hovered and indeterminate checkbox.
+/// @group checkbox
+$kendo-checkbox-hover-indeterminate-border: get-theme-color-var( primary-110 ) !default;
 
 /// Background color of disabled checkbox.
 /// @group checkbox
-$kendo-checkbox-disabled-bg: $white !default;
+$kendo-checkbox-disabled-bg: $kendo-checkbox-bg !default;
 /// Color of disabled checkbox.
 /// @group checkbox
-$kendo-checkbox-disabled-text: null !default;
+$kendo-checkbox-disabled-text: get-theme-color-var( neutral-60 ) !default;
 /// Border color of disabled checkbox.
 /// @group checkbox
 $kendo-checkbox-disabled-border: get-theme-color-var( neutral-60 ) !default;
@@ -164,14 +123,24 @@ $kendo-checkbox-disabled-border: get-theme-color-var( neutral-60 ) !default;
 $kendo-checkbox-disabled-checked-bg: get-theme-color-var( neutral-60 ) !default;
 /// Color of disabled and checked checkbox.
 /// @group checkbox
-$kendo-checkbox-disabled-checked-text: null !default;
+$kendo-checkbox-disabled-checked-text: $white !default;
 /// Border color of disabled and checked checkbox.
 /// @group checkbox
 $kendo-checkbox-disabled-checked-border: get-theme-color-var( neutral-60 ) !default;
 
+/// Background color of disabled and indeterminate checkbox.
+/// @group checkbox
+$kendo-checkbox-disabled-indeterminate-bg: $kendo-checkbox-bg !default;
+/// Border color of disabled and indeterminate checkbox.
+/// @group checkbox
+$kendo-checkbox-disabled-indeterminate-text: get-theme-color( neutral, 60 ) !default;
+/// Border color of disabled and indeterminate checkbox.
+/// @group checkbox
+$kendo-checkbox-disabled-indeterminate-border: get-theme-color-var( neutral-60 ) !default;
+
 /// Background color of invalid checkbox.
 /// @group checkbox
-$kendo-checkbox-invalid-bg: null !default;
+$kendo-checkbox-invalid-bg: $kendo-checkbox-bg !default;
 /// Color of invalid checkbox.
 /// @group checkbox
 $kendo-checkbox-invalid-text: $kendo-invalid-text !default;
@@ -196,12 +165,27 @@ $kendo-checkbox-checked-glyph: "\e118" !default;
 /// @group checkbox
 $kendo-checkbox-indeterminate-glyph: "\e121" !default;
 
+/// Image of hovered checkbox indicator.
+/// @group checkbox
+$kendo-checkbox-hover-image: escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='none' stroke='#{$kendo-checkbox-hover-text}' stroke-linecap='square' stroke-linejoin='square' stroke-width='2' d='M3,8 l3,3 l7-7'/></svg>") ) !default;
 /// Image of checked checkbox indicator.
 /// @group checkbox
 $kendo-checkbox-checked-image: escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='none' stroke='#{$kendo-checkbox-checked-text}' stroke-linecap='square' stroke-linejoin='square' stroke-width='2' d='M3,8 l3,3 l7-7'/></svg>") ) !default;
-/// Image of hovered checkbox indicator.
+/// Image of indeterminate checkbox indicator.
 /// @group checkbox
-$kendo-checkbox-hover-image: escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='none' stroke='#{$kendo-checkbox-hovered-text}' stroke-linecap='square' stroke-linejoin='square' stroke-width='2' d='M3,8 l3,3 l7-7'/></svg>") ) !default;
+$kendo-checkbox-indeterminate-image: escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><rect x='3' y='3' width='10' height='10' rx='2' fill='#{$kendo-checkbox-indeterminate-text}'/></svg>") ) !default;
+/// Image of hovered and checked checkbox indicator.
+/// @group checkbox
+$kendo-checkbox-hover-checked-image: escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='none' stroke='#{$kendo-checkbox-hover-checked-text}' stroke-linecap='square' stroke-linejoin='square' stroke-width='2' d='M3,8 l3,3 l7-7'/></svg>") ) !default;
+/// Image of hovered and indeterminate checkbox indicator.
+/// @group checkbox
+$kendo-checkbox-hover-indeterminate-image: escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><rect x='3' y='3' width='10' height='10' rx='2' fill='#{$kendo-checkbox-hover-indeterminate-text}'/></svg>") ) !default;
+/// Image of checked checkbox indicator.
+/// @group checkbox
+$kendo-checkbox-disabled-checked-image: escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='none' stroke='#{$kendo-checkbox-disabled-checked-text}' stroke-linecap='square' stroke-linejoin='square' stroke-width='2' d='M3,8 l3,3 l7-7'/></svg>") ) !default;
+/// Image of indeterminate checkbox indicator.
+/// @group checkbox
+$kendo-checkbox-disabled-indeterminate-image: escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><rect x='3' y='3' width='10' height='10' rx='2' fill='#{$kendo-checkbox-disabled-indeterminate-text}'/></svg>") ) !default;
 
 
 // Checkbox label
@@ -228,7 +212,7 @@ $kendo-checkbox-list-item-padding-y: $kendo-list-item-padding-y-md !default;
 
 /// Background color of checkbox ripple.
 /// @group checkbox
-$kendo-checkbox-ripple-bg: $kendo-checkbox-checked-bg !default;
+$kendo-checkbox-ripple-bg: get-theme-color-var( primary-100 ) !default;
 /// Opacity of checkbox ripple.
 /// @group checkbox
 $kendo-checkbox-ripple-opacity: .25 !default;
