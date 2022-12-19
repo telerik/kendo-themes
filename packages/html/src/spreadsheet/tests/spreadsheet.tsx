@@ -156,7 +156,7 @@ root.render(
                                 <div className="k-spreadsheet-haxis" style={{ top: "340px", width: "943px" }}></div>
                                 <div className="k-spreadsheet-haxis" style={{ top: "390px", width: "943px" }}></div>
                                 <div className="k-spreadsheet-haxis" style={{ top: "410px", width: "943px" }}></div>
-                                <div className="k-spreadsheet-cell k-spreadsheet-merged-cell" style={{ outline: "rgb(86, 163, 230) solid 1px", backgroundColor: "rgb(96, 181, 255)", color: "white", fontFamily: "Arial", textAlign: "center", fontSize: "32px", left: "1px", top: "1px", width: "878px", height: "69px" }}>
+                                <div className="k-spreadsheet-cell k-spreadsheet-merged-cell" style={{ outline: "rgb(86, 163, 230) solid 1px", backgroundColor: "rgb(96, 181, 255)", color: "rgb(0, 62, 117)", fontFamily: "Arial", textAlign: "center", fontSize: "32px", left: "1px", top: "1px", width: "878px", height: "69px" }}>
                                     <div className="k-vertical-align-bottom">Invoice #52 - 06/23/2015</div>
                                 </div>
                                 <div className="k-spreadsheet-cell" style={{ outline: "rgb(150, 193, 230) solid 1px", backgroundColor: "rgb(167, 214, 255)", color: "rgb(0, 62, 117)", fontFamily: "Arial", textAlign: "center", fontSize: "12px", left: "1px", top: "71px", width: "99px", height: "24px" }}>
@@ -432,7 +432,7 @@ root.render(
                             <div className="k-selection-wrapper">
                                 <div className="k-spreadsheet-selection k-single-selection" style={{ width: "216px", height: "21px", top: "135px", left: "132px" }}></div>
                                 <div className="k-button k-spreadsheet-editor-button" style={{ left: "347px", top: "135px", height: "20px" }}><Icon name="calendar"></Icon></div>
-                                <div className="k-spreadsheet-cell k-spreadsheet-active-cell k-top k-single" style={{ outline: "rgb(86, 163, 230) solid 1px", backgroundColor: "rgb(96, 181, 255)", color: "white", fontFamily: "Arial", textAlign: "center", fontSize: "32px", left: "33px", top: "21px", width: "878px", height: "69px" }}>
+                                <div className="k-spreadsheet-cell k-spreadsheet-active-cell k-top k-single" style={{ outline: "rgb(86, 163, 230) solid 1px", backgroundColor: "rgb(96, 181, 255)", color: "rgb(0, 62, 117)", fontFamily: "Arial", textAlign: "center", fontSize: "32px", left: "33px", top: "21px", width: "878px", height: "69px" }}>
                                     <div className="k-vertical-align-bottom">Invoice #52 - 06/23/2015</div>
                                 </div>
                             </div>
