@@ -171,71 +171,71 @@ root.render(
             <section>
                 <Editor readonly style={{ height: "350px" }}>
                     <EditorToolbar>
-                        <ButtonGroup>
+                        <ButtonGroup disabled>
                             <Button icon="bold"></Button>
                             <Button icon="italic"></Button>
                             <Button icon="underline"></Button>
                             <Button icon="strikethrough"></Button>
                         </ButtonGroup>
-                        <ButtonGroup>
+                        <ButtonGroup disabled>
                             <Button icon="subscript"></Button>
                             <Button icon="superscript"></Button>
                         </ButtonGroup>
-                        <ButtonGroup>
+                        <ButtonGroup disabled>
                             <Button icon="align-left"></Button>
                             <Button icon="align-center"></Button>
                             <Button icon="align-right"></Button>
                             <Button icon="align-justify"></Button>
                         </ButtonGroup>
-                        <ButtonGroup>
+                        <ButtonGroup disabled>
                             <Button icon="indent-increase"></Button>
                             <Button icon="indent-decrease"></Button>
                         </ButtonGroup>
-                        <ButtonGroup>
+                        <ButtonGroup disabled>
                             <Button icon="list-ordered"></Button>
                             <Button icon="list-unordered"></Button>
                         </ButtonGroup>
                         <ToolbarItem>
-                            <DropdownList value="Font Size" />
+                            <DropdownList value="Font Size" disabled />
                         </ToolbarItem>
                         <ToolbarItem>
-                            <DropdownList value="Font Name" />
+                            <DropdownList value="Font Name" disabled />
                         </ToolbarItem>
                         <ToolbarItem>
-                            <DropdownList value="Paragraph" />
+                            <DropdownList value="Paragraph" disabled />
                         </ToolbarItem>
-                        <ButtonGroup>
+                        <ButtonGroup disabled>
                             <Button icon="undo"></Button>
                             <Button icon="redo"></Button>
                         </ButtonGroup>
-                        <ButtonGroup>
+                        <ButtonGroup disabled>
                             <Button icon="link-horizontal"></Button>
                             <Button icon="unlink-horizontal"></Button>
                             <Button icon="image"></Button>
                             <Button icon="html"></Button>
                         </ButtonGroup>
-                        <Button icon="table-insert"></Button>
-                        <ButtonGroup>
+                        <Button icon="table-insert" disabled />
+                        <ButtonGroup disabled>
                             <Button icon="table-row-insert-below"></Button>
                             <Button icon="table-column-insert-left"></Button>
                             <Button icon="table-column-insert-right"></Button>
                         </ButtonGroup>
-                        <ButtonGroup>
+                        <ButtonGroup disabled>
                             <Button icon="table-row-delete"></Button>
                             <Button icon="table-column-delete"></Button>
                             <Button icon="table-delete"></Button>
                         </ButtonGroup>
-                        <ButtonGroup>
+                        <ButtonGroup disabled>
                             <Button icon="cells-merge"></Button>
                             <Button icon="cell-split-horizontally"></Button>
                         </ButtonGroup>
                         <ToolbarItem>
-                            <ColorPicker value="red" valueIconName="foreground-color" />
+                            <ColorPicker value="red" valueIconName="foreground-color" disabled />
                         </ToolbarItem>
                         <ToolbarItem>
-                            <ColorPicker value="fuchsia" valueIconName="paint" />
+                            <ColorPicker value="fuchsia" valueIconName="paint" disabled />
                         </ToolbarItem>
-                        <Button icon="clear-css"></Button>
+                        <Button icon="clear-css" disabled />
                     </EditorToolbar>
                     <EditorContent focus>
                         <div className="ProseMirror"><p>The Editor allows your users to edit HTML in a familiar, user-friendly way.</p><p>In this version, the Editor provides the core HTML editing engine which includes basic text formatting, hyperlinks, and lists. The widget <strong>outputs identical HTML</strong> across all major browsers, follows accessibility standards, and provides API for content manipulation.</p><p>Features include:</p><ul><li>Text formatting</li><li>Bulleted and numbered lists</li><li>Hyperlinks</li><li>Cross-browser support</li><li>Identical HTML output across browsers</li></ul></div>
