@@ -17,7 +17,6 @@
         -webkit-tap-highlight-color: $rgba-transparent;
 
         &.k-readonly {
-            @include disabled( $disabled-styling );
             .k-editor-content {
                 pointer-events: auto;
             }
