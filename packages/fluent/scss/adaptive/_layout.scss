@@ -1,5 +1,5 @@
-@use "../core/_variables.scss" as *;
-@use "../core/color-system/_variables.scss" as *;
+@use "sass:map";
+@use "../core/" as *;
 @use "../toolbar/_variables.scss" as *;
 @use "../listgroup/_variables.scss" as *;
 @use "./_variables.scss" as *;
@@ -359,7 +359,7 @@
     .k-pane-wrapper {
 
         .k-appbar {
-            padding: map-get( $kendo-spacing, 1 );
+            padding: map.get( $kendo-spacing, 1 );
         }
 
         .k-list-title,
@@ -381,15 +381,15 @@
             }
         }
         .k-listgroup + .k-listgroup {
-            margin-top: map-get( $kendo-spacing, 4 );
+            margin-top: map.get( $kendo-spacing, 4 );
         }
 
         // Column menu
         .k-column-menu {
-            padding: map-get( $kendo-spacing, 2 );
+            padding: map.get( $kendo-spacing, 2 );
             display: flex;
             flex-flow: column nowrap;
-            gap: map-get( $kendo-spacing, 2 );
+            gap: map.get( $kendo-spacing, 2 );
 
             .k-filter-item .k-filterable * {
                 pointer-events: none;
@@ -401,16 +401,16 @@
             }
 
             .k-listgroup {
-                margin-inline: -#{map-get( $kendo-spacing, 2 )};
+                margin-inline: -#{map.get( $kendo-spacing, 2 )};
             }
         }
 
         // Filter menu
         .k-filter-menu {
-            padding: map-get( $kendo-spacing, 2 );
+            padding: map.get( $kendo-spacing, 2 );
             display: flex;
             flex-flow: column nowrap;
-            gap: map-get( $kendo-spacing, 2 );
+            gap: map.get( $kendo-spacing, 2 );
 
             .k-list-title {
                 padding: 0;
@@ -430,7 +430,7 @@
             }
 
             .k-listgroup {
-                margin-inline: -#{map-get( $kendo-spacing, 2 )};
+                margin-inline: -#{map.get( $kendo-spacing, 2 )};
             }
         }
 

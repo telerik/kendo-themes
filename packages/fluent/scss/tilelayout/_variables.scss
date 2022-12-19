@@ -1,7 +1,6 @@
-@use "../core/" as *;
-@use "../core/color-system" as *;
-@use "../card/_variables.scss" as *;
 @use "sass:color";
+@use "../core/" as *;
+@use "../card/_variables.scss" as *;
 
 /// Width of the border around the tilelayout.
 /// @group tilelayout

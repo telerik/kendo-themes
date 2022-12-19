@@ -1,3 +1,4 @@
+@use "sass:map";
 @use "./_variables.scss" as *;
 
 @mixin kendo-fab--layout() {
@@ -66,8 +67,8 @@
 
     // Sizes
     @each $size, $size-props in $kendo-fab-sizes {
-        $_padding-x: map-get( $size-props, padding-x );
-        $_padding-y: map-get( $size-props, padding-y );
+        $_padding-x: map.get( $size-props, padding-x );
+        $_padding-y: map.get( $size-props, padding-y );
 
         .k-fab-#{$size} {
             --INTERNAL--kendo-fab-padding-x: var( --kendo-fab-#{$size}-padding-x, #{$_padding-x} );

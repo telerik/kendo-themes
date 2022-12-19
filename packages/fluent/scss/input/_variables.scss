@@ -1,5 +1,5 @@
-@use "../core/color-system/" as *;
-@use "../core/_variables.scss" as *;
+@use "sass:map";
+@use "../core/" as *;
 @use "../button/_variables.scss"as *;
 
 /// Width of the input.
@@ -19,15 +19,15 @@ $kendo-input-border-height: ( $kendo-input-border-width * 2 ) !default;
 
 /// Horizontal padding of the input.
 /// @group input
-$kendo-input-padding-x-sm: map-get( $kendo-spacing, 2 ) !default;
-$kendo-input-padding-x-md: map-get( $kendo-spacing, 2 ) !default;
-$kendo-input-padding-x-lg: map-get( $kendo-spacing, 2 ) !default;
+$kendo-input-padding-x-sm: map.get( $kendo-spacing, 2 ) !default;
+$kendo-input-padding-x-md: map.get( $kendo-spacing, 2 ) !default;
+$kendo-input-padding-x-lg: map.get( $kendo-spacing, 2 ) !default;
 
 /// Vertical padding of the input.
 /// @group input
-$kendo-input-padding-y-sm: map-get( $kendo-spacing, 1 ) !default;
-$kendo-input-padding-y-md: map-get( $kendo-spacing, 1 ) + map-get( $kendo-spacing, thin ) !default;
-$kendo-input-padding-y-lg: map-get( $kendo-spacing, 2 ) !default;
+$kendo-input-padding-y-sm: map.get( $kendo-spacing, 1 ) !default;
+$kendo-input-padding-y-md: map.get( $kendo-spacing, 1 ) + map.get( $kendo-spacing, thin ) !default;
+$kendo-input-padding-y-lg: map.get( $kendo-spacing, 2 ) !default;
 
 /// Font sizes of the input.
 /// @group input

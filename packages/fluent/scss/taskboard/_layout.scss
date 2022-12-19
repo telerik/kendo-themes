@@ -1,4 +1,4 @@
-@use "../core/mixins" as *;
+@use "../core/" as *;
 @use "./_variables.scss" as *;
 
 @mixin kendo-taskboard--layout() {
@@ -8,7 +8,7 @@
         border-width: var( --kendo-taskboard-border-width, #{$kendo-taskboard-border-width} );
         border-style: var( --kendo-taskboard-border-style, #{$kendo-taskboard-border-style} );
         padding-inline: var( --kendo-taskboard-padding-x, #{$kendo-taskboard-padding-x} );
-        padding-inline: var( --kendo-taskboard-padding-y, #{$kendo-taskboard-padding-y} );
+        padding-block: var( --kendo-taskboard-padding-y, #{$kendo-taskboard-padding-y} );
         box-sizing: border-box;
         font-size: var( --kendo-taskboard-font-size, #{$kendo-taskboard-font-size} );
         font-family: var( --kendo-taskboard-font-family, #{$kendo-taskboard-font-family} );

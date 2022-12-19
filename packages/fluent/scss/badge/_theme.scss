@@ -1,6 +1,6 @@
+@use "sass:map";
+@use "../core/" as *;
 @use "./_variables.scss" as *;
-@use "../core/mixins" as *;
-@use "../core/color-system" as *;
 
 @mixin kendo-badge--theme() {
 
@@ -17,9 +17,9 @@
     @each $fill-mode, $theme-colors in $kendo-badge-theme-colors {
         @each $theme-color, $color-props in $theme-colors {
 
-            $_text: map-get( $color-props, text );
-            $_bg: map-get( $color-props, bg );
-            $_border: map-get( $color-props, border );
+            $_text: map.get( $color-props, text );
+            $_bg: map.get( $color-props, bg );
+            $_border: map.get( $color-props, border );
 
             .k-badge-#{$fill-mode}-#{$theme-color} {
                 --kendo-badge-text: var( --kendo-badge-#{$fill-mode}-#{$theme-color}-text, #{$_text} );

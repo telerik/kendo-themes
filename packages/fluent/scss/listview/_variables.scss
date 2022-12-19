@@ -1,22 +1,23 @@
-@use "../core" as *;
+@use "sass:map";
+@use "../core/" as *;
 @use "../list/_variables.scss"as *;
 
 /// Horizontal padding of listview.
 /// @group listview
-$kendo-listview-padding-x: map-get( $kendo-spacing, 1 ) !default;
+$kendo-listview-padding-x: map.get( $kendo-spacing, 1 ) !default;
 /// Vertical padding of listview.
 /// @group listview
-$kendo-listview-padding-y: map-get( $kendo-spacing, 1 ) !default;
+$kendo-listview-padding-y: map.get( $kendo-spacing, 1 ) !default;
 /// Width of listview.
 /// @group listview
-$kendo-listview-border-width: map-get( $kendo-spacing, hair ) !default;
+$kendo-listview-border-width: map.get( $kendo-spacing, hair ) !default;
 
 /// Horizontal padding of listview header.
 /// @group listview
-$kendo-listview-header-padding-x: map-get( $kendo-spacing, 4 ) !default;
+$kendo-listview-header-padding-x: map.get( $kendo-spacing, 4 ) !default;
 /// Vertical padding of listview header.
 /// @group listview
-$kendo-listview-header-padding-y: map-get( $kendo-spacing, 2 ) !default;
+$kendo-listview-header-padding-y: map.get( $kendo-spacing, 2 ) !default;
 
 /// Horizontal padding of listview footer.
 /// @group listview
@@ -27,10 +28,10 @@ $kendo-listview-footer-padding-y: $kendo-listview-header-padding-y !default;
 
 /// Horizontal padding of listview items.
 /// @group listview
-$kendo-listview-item-padding-x: map-get( $kendo-spacing, 1 ) !default;
+$kendo-listview-item-padding-x: map.get( $kendo-spacing, 1 ) !default;
 /// Vertical padding of listview items.
 /// @group listview
-$kendo-listview-item-padding-y: map-get( $kendo-spacing, 1 ) !default;
+$kendo-listview-item-padding-y: map.get( $kendo-spacing, 1 ) !default;
 
 /// Font family of listview.
 /// @group listview
@@ -44,7 +45,7 @@ $kendo-listview-line-height: var( --kendo-line-height, initial ) !default;
 
 /// Gap between items of grid listview.
 /// @group listview
-$kendo-listview-grid-gap: map-get( $kendo-spacing, 0 ) !default;
+$kendo-listview-grid-gap: map.get( $kendo-spacing, 0 ) !default;
 
 /// Text color of listview.
 /// @group listview

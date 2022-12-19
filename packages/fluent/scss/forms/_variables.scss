@@ -1,3 +1,4 @@
+@use "sass:map";
 @use "../core/" as *;
 
 /// The padding of the inline form
@@ -25,7 +26,7 @@ $kendo-form-fieldset-padding: 0px !default;
 
 /// The margin of the form legend
 /// @group form
-$kendo-form-legend-margin: 0 0 map-get( $kendo-spacing, 3 ) !default;
+$kendo-form-legend-margin: 0 0 map.get( $kendo-spacing, 3 ) !default;
 
 /// The padding of the form legend
 /// @group form
@@ -33,7 +34,7 @@ $kendo-form-legend-padding: 0px !default;
 
 /// The border width of the form legend
 /// @group form
-$kendo-form-legend-border-width: 0 0 map-get( $kendo-spacing, thin ) !default;
+$kendo-form-legend-border-width: 0 0 map.get( $kendo-spacing, thin ) !default;
 
 /// The border style of the form legend
 /// @group form
@@ -58,7 +59,7 @@ $kendo-form-legend-text-transform: uppercase !default;
 
 /// The bottom margin of the form label
 /// @group form
-$kendo-form-label-margin-bottom: map-get( $kendo-spacing, 2 ) !default;
+$kendo-form-label-margin-bottom: map.get( $kendo-spacing, 2 ) !default;
 
 /// The font weight of the form label
 /// @group form
@@ -66,7 +67,7 @@ $kendo-form-label-font-weight: var( --kendo-font-weight-bold, inherit ) !default
 
 /// The horizontal margin of the form button
 /// @group form
-$kendo-form-button-margin-x: map-get( $kendo-spacing, 2 ) !default;
+$kendo-form-button-margin-x: map.get( $kendo-spacing, 2 ) !default;
 
 /// The font size of the form hint
 /// @group form
@@ -78,7 +79,7 @@ $kendo-form-hint-font-style: normal !default;
 
 /// The top margin of the form hint
 /// @group form
-$kendo-form-hint-margin-top: map-get( $kendo-spacing, 1 ) !default;
+$kendo-form-hint-margin-top: map.get( $kendo-spacing, 1 ) !default;
 
 /// The text color of the font hint
 /// @group form
@@ -86,7 +87,7 @@ $kendo-form-hint-text: get-theme-color-var( neutral-130 );
 
 /// Form row small size spacing
 /// @group form
-$kendo-form-rows-spacing-sm: map-get( $kendo-spacing, 3 ) !default;
+$kendo-form-rows-spacing-sm: map.get( $kendo-spacing, 3 ) !default;
 /// Form row medium size spacing
 /// @group form
 $kendo-form-rows-spacing-md: $kendo-form-rows-spacing-sm !default;
@@ -96,7 +97,7 @@ $kendo-form-rows-spacing-lg: $kendo-form-rows-spacing-sm !default;
 
 /// The margin of the form separator
 /// @group form
-$kendo-form-separator-margin: map-get( $kendo-spacing, 3 ) 0 0 !default;
+$kendo-form-separator-margin: map.get( $kendo-spacing, 3 ) 0 0 !default;
 
 /// The border color of the form separator
 /// @group form
@@ -104,11 +105,11 @@ $kendo-form-separator-border-color: $kendo-form-legend-border-color !default;
 
 /// The top padding of the horizontal form label
 /// @group form
-$kendo-horizontal-form-label-padding-top: map-get( $kendo-spacing, 1 ) + map-get( $kendo-spacing, thin ) !default;
+$kendo-horizontal-form-label-padding-top: map.get( $kendo-spacing, 1 ) + map.get( $kendo-spacing, thin ) !default;
 
 /// The horizontal margin of the horizontal form
 /// @group form
-$kendo-horizontal-form-label-margin-x: map-get( $kendo-spacing, 2 ) !default;
+$kendo-horizontal-form-label-margin-x: map.get( $kendo-spacing, 2 ) !default;
 
 /// The width of the horizontal form label
 /// @group form
@@ -131,13 +132,13 @@ $kendo-forms-invalid-color: var( --kendo-invalid-text, initial ) !default;
 
 
 // Label
-$kendo-label-optional-margin-x: map-get( $kendo-spacing, 1 ) + map-get( $kendo-spacing, thin ) !default;
+$kendo-label-optional-margin-x: map.get( $kendo-spacing, 1 ) + map.get( $kendo-spacing, thin ) !default;
 $kendo-label-optional-font-size: var( --kendo-font-size-sm, inherit ) !default;
 $kendo-label-optional-font-style: normal !default;
 
 
 // Fieldset
-$kendo-fieldset-margin: map-get( $kendo-spacing, 8 ) - map-get( $kendo-spacing, thin ) !default;
+$kendo-fieldset-margin: map.get( $kendo-spacing, 8 ) - map.get( $kendo-spacing, thin ) !default;
 $kendo-fieldset-font-size: var( --kendo-font-size-xl, inherit ) !default;
 
 $kendo-fieldset-bg: transparent !default;

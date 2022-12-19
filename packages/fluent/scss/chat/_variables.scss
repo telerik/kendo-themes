@@ -1,5 +1,5 @@
-@use "../core/color-system" as *;
-@use "../core/_variables.scss" as *;
+@use "sass:map";
+@use "../core/" as *;
 @use "../toolbar/_variables.scss" as *;
 
 // Chat
@@ -15,10 +15,10 @@ $kendo-chat-link-hover-text: var( --kendo-link-hover-text, inherit );
 $kendo-chat-link-text: var( --kendo-link-text, inherit );
 /// The horizontal padding of the chat.
 /// @group chat
-$kendo-chat-padding-x: map-get( $kendo-spacing, 4 ) !default;
+$kendo-chat-padding-x: map.get( $kendo-spacing, 4 ) !default;
 /// The vertical padding of the chat.
 /// @group chat
-$kendo-chat-padding-y: map-get( $kendo-spacing, 4 ) !default;
+$kendo-chat-padding-y: map.get( $kendo-spacing, 4 ) !default;
 /// the width of the chat.
 /// @group chat
 $kendo-chat-width: 500px !default;
@@ -47,10 +47,10 @@ $kendo-chat-typing-indicator-dot-spacing: 5px !default;
 
 /// The horizontal spacing between items of the chat.
 /// @group chat
-$kendo-chat-item-spacing-x: map-get( $kendo-spacing, 2 ) !default;
+$kendo-chat-item-spacing-x: map.get( $kendo-spacing, 2 ) !default;
 /// The vertical spacing between items of the chat.
 /// @group chat
-$kendo-chat-item-spacing-y: map-get( $kendo-spacing, 4 ) !default;
+$kendo-chat-item-spacing-y: map.get( $kendo-spacing, 4 ) !default;
 
 /// The horizontal padding of message list of the chat.
 /// @group chat
@@ -80,27 +80,27 @@ $kendo-chat-timestamp-bg: normal !default;
 
 /// The horizontal padding of the bubble message.
 /// @group chat
-$kendo-chat-bubble-padding-x: map-get( $kendo-spacing, 3 ) !default;
+$kendo-chat-bubble-padding-x: map.get( $kendo-spacing, 3 ) !default;
 /// The vertical padding of the bubble message.
 /// @group chat
-$kendo-chat-bubble-padding-y: map-get( $kendo-spacing, 2 ) !default;
+$kendo-chat-bubble-padding-y: map.get( $kendo-spacing, 2 ) !default;
 /// The spacing of the bubble message.
 /// @group chat
-$kendo-chat-bubble-spacing: map-get( $kendo-spacing, thin ) !default;
+$kendo-chat-bubble-spacing: map.get( $kendo-spacing, thin ) !default;
 /// The line height of the bubble message.
 /// @group chat
 $kendo-chat-bubble-line-height: var( --kendo-line-height, normal ) !default;
 
 /// The padding of the scroll button in the chat.
 /// @group chat
-$kendo-chat-scroll-button: map-get( $kendo-spacing, 2 ) !default;
+$kendo-chat-scroll-button: map.get( $kendo-spacing, 2 ) !default;
 /// The size of the card deck scrollbar in the chat.
 /// @group chat
 $kendo-card-deck-scrollbar-size: 20px !default;
 
 /// The border radius of the bubble message.
 /// @group chat
-$kendo-chat-bubble-border-radius: map-get( $kendo-spacing, 3 ) !default;
+$kendo-chat-bubble-border-radius: map.get( $kendo-spacing, 3 ) !default;
 /// The border radius of the small bubble message
 /// @group chat
 $kendo-chat-bubble-border-radius-sm: var( --kendo-border-radius, 0 ) !default;
@@ -133,13 +133,13 @@ $kendo-chat-toolbar-border: inherit !default;
 
 /// The horizontal padding of the quick reply in the chat.
 /// @group chat
-$kendo-chat-quick-reply-padding-x: map-get( $kendo-spacing, 3 ) !default;
+$kendo-chat-quick-reply-padding-x: map.get( $kendo-spacing, 3 ) !default;
 /// The vertical padding of the quick reply in the chat.
 /// @group chat
-$kendo-chat-quick-reply-padding-y: map-get( $kendo-spacing, 2 ) !default;
+$kendo-chat-quick-reply-padding-y: map.get( $kendo-spacing, 2 ) !default;
 /// The spacing of the quick reply in the chat.
 /// @group chat
-$kendo-chat-quick-reply-spacing: map-get( $kendo-spacing, 2 ) !default;
+$kendo-chat-quick-reply-spacing: map.get( $kendo-spacing, 2 ) !default;
 /// The line height of the quick reply in the chat.
 /// @group chat
 $kendo-chat-quick-reply-line-height: $kendo-chat-bubble-line-height !default;

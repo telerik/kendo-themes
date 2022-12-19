@@ -1,5 +1,5 @@
-@use "../core/color-system" as *;
-@use "../core/_variables.scss" as *;
+@use "sass:map";
+@use "../core/" as *;
 
 /// Background color of the drawer.
 /// @group drawer
@@ -47,7 +47,7 @@ $kendo-drawer-scrollbar-hover-color: get-theme-color-var( neutral-110 ) !default
 
 /// Horizontal padding of the drawer item.
 /// @group drawer
-$kendo-drawer-item-padding-x: map-get( $kendo-spacing, 4 ) !default;
+$kendo-drawer-item-padding-x: map.get( $kendo-spacing, 4 ) !default;
 /// Vertical padding of the drawer item.
 /// @group drawer
 $kendo-drawer-item-padding-y: var( --kendo-padding-x, #{$kendo-padding-x} ) !default;
@@ -75,7 +75,7 @@ $kendo-drawer-mini-initial-width: calc( 2 * #{$kendo-drawer-item-padding-x} + #{
 
 /// The border width of the drawer item ripple
 /// @group drawer
-$kendo-drawer-item-ripple-border-width: map-get( $kendo-spacing, thin ) !default;
+$kendo-drawer-item-ripple-border-width: map.get( $kendo-spacing, thin ) !default;
 /// The border color of the drawer item ripple
 /// @group drawer
 $kendo-drawer-item-ripple-border: get-theme-color-var( primary-100 ) !default;

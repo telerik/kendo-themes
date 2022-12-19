@@ -1,4 +1,5 @@
-@use "../core/mixins" as *;
+@use "sass:map";
+@use "../core/" as *;
 @use "./_variables.scss" as *;
 
 @mixin kendo-window--theme() {
@@ -34,9 +35,9 @@
     // Window theme colors
     @each $theme-color, $color-props in $kendo-window-theme-colors {
 
-        $_text: map-get( $color-props, text );
-        $_bg: map-get( $color-props, bg );
-        $_border: map-get( $color-props, border );
+        $_text: map.get( $color-props, text );
+        $_bg: map.get( $color-props, bg );
+        $_border: map.get( $color-props, border );
 
         .k-window-#{$theme-color} .k-window-titlebar {
             color: var( --kendo-window-titlebar-text, #{$kendo-window-titlebar-text} );

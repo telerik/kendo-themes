@@ -1,6 +1,5 @@
 @use "./_variables.scss" as *;
-@use "../core/mixins" as *;
-@use "../core/color-system" as *;
+@use "../core/" as *;
 
 @mixin kendo-notification--layout() {
 

@@ -3,11 +3,11 @@
 @use "../palettes" as *;
 
 @function get-theme-palette($name) {
-    @return map-get( $kendo-fluent-palettes, $name );
+    @return map.get( $kendo-fluent-palettes, $name );
 }
 
 @function get-theme-color($palette, $hue) {
-    @return map-get( get-theme-palette( $palette ), $hue );
+    @return map.get( get-theme-palette( $palette ), $hue );
 }
 
 @function get-theme-color-var( $name, $fallback: "inherit", $prefix: "kendo") {

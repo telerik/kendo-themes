@@ -1,9 +1,9 @@
-@use "../core/color-system" as *;
-@use "../core/_variables.scss" as *;
+@use "sass:map";
+@use "../core/" as *;
 
 /// Border width of the mediaplayer.
 /// @group mediaplayer
-$kendo-mediaplayer-border-width: map-get( $kendo-spacing, hair ) !default;
+$kendo-mediaplayer-border-width: map.get( $kendo-spacing, hair ) !default;
 /// Font family of the mediaplayer.
 /// @group mediaplayer
 $kendo-mediaplayer-font-family: var( --kendo-font-family, inherit ) !default;
@@ -34,10 +34,10 @@ $kendo-mediaplayer-quality-border: get-theme-color-var( neutral-110 ) !default;
 
 /// Mediaplayer titlebar horizontal padding.
 /// @group mediaplayer
-$kendo-mediaplayer-titlebar-padding-x: map-get( $kendo-spacing, 2 ) !default;
+$kendo-mediaplayer-titlebar-padding-x: map.get( $kendo-spacing, 2 ) !default;
 /// Mediaplayer titlebar vertical padding.
 /// @group mediaplayer
-$kendo-mediaplayer-titlebar-padding-y: map-get( $kendo-spacing, 2 ) !default;
+$kendo-mediaplayer-titlebar-padding-y: map.get( $kendo-spacing, 2 ) !default;
 /// Mediaplayer titlebar background color.
 /// @group mediaplayer
 $kendo-mediaplayer-titlebar-bg: rgba( $black, .4 ) !default;

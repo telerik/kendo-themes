@@ -1,7 +1,6 @@
-@use "sass:math";
 @use "sass:map";
-@use "../core/color-system" as *;
-@use "../core/_variables.scss" as *;
+@use "sass:math";
+@use "../core/" as *;
 
 /// Border radius of the loader segment.
 /// @group loader
@@ -9,9 +8,9 @@ $kendo-loader-segment-border-radius: 50% !default;
 
 /// Size of the loader segment.
 /// @group loader
-$kendo-loader-segment-size-sm: map-get( $kendo-spacing, 1 ) !default;
-$kendo-loader-segment-size-md: map-get( $kendo-spacing, 2 ) !default;
-$kendo-loader-segment-size-lg: map-get( $kendo-spacing, 4 ) !default;
+$kendo-loader-segment-size-sm: map.get( $kendo-spacing, 1 ) !default;
+$kendo-loader-segment-size-md: map.get( $kendo-spacing, 2 ) !default;
+$kendo-loader-segment-size-lg: map.get( $kendo-spacing, 4 ) !default;
 
 /// Horizontal padding of the loader.
 /// @group loader
@@ -71,21 +70,21 @@ $kendo-loader-container-panel-bg: $white !default;
 
 /// Horizontal padding of the loader container.
 /// @group loader
-$kendo-loader-container-padding-x-sm: map-get( $kendo-spacing, 4 ) !default;
-$kendo-loader-container-padding-x-md: map-get( $kendo-spacing, 5 ) !default;
-$kendo-loader-container-padding-x-lg: map-get( $kendo-spacing, 6 ) !default;
+$kendo-loader-container-padding-x-sm: map.get( $kendo-spacing, 4 ) !default;
+$kendo-loader-container-padding-x-md: map.get( $kendo-spacing, 5 ) !default;
+$kendo-loader-container-padding-x-lg: map.get( $kendo-spacing, 6 ) !default;
 
 /// Vertical padding of the loader container.
 /// @group loader
-$kendo-loader-container-padding-y-sm: map-get( $kendo-spacing, 4 ) !default;
-$kendo-loader-container-padding-y-md: map-get( $kendo-spacing, 5 ) !default;
-$kendo-loader-container-padding-y-lg: map-get( $kendo-spacing, 6 ) !default;
+$kendo-loader-container-padding-y-sm: map.get( $kendo-spacing, 4 ) !default;
+$kendo-loader-container-padding-y-md: map.get( $kendo-spacing, 5 ) !default;
+$kendo-loader-container-padding-y-lg: map.get( $kendo-spacing, 6 ) !default;
 
 /// Gap of the loader container.
 /// @group loader
-$kendo-loader-container-gap-sm: map-get( $kendo-spacing, 1 ) !default;
-$kendo-loader-container-gap-md: map-get( $kendo-spacing, 2 ) !default;
-$kendo-loader-container-gap-lg: map-get( $kendo-spacing, 3 ) !default;
+$kendo-loader-container-gap-sm: map.get( $kendo-spacing, 1 ) !default;
+$kendo-loader-container-gap-md: map.get( $kendo-spacing, 2 ) !default;
+$kendo-loader-container-gap-lg: map.get( $kendo-spacing, 3 ) !default;
 
 /// Font size of the loader container.
 /// @group loader

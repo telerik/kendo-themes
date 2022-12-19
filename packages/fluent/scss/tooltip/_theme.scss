@@ -1,3 +1,4 @@
+@use "sass:map";
 @use "../core/" as *;
 @use "./_variables.scss" as *;
 
@@ -24,9 +25,9 @@
     }
 
     @each $theme-color, $color-props in $kendo-tooltip-theme-colors {
-            $_bg: map-get( $color-props , bg );
-            $_text: map-get( $color-props , text );
-            $_border: map-get( $color-props , border );
+            $_bg: map.get( $color-props , bg );
+            $_text: map.get( $color-props , text );
+            $_border: map.get( $color-props , border );
 
         .k-tooltip-#{$theme-color} {
             --kendo-tooltip-text: #{$_text};

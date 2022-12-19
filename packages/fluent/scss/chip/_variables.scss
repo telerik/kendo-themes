@@ -1,7 +1,5 @@
 @use "sass:map";
-@use "../core/color-system" as *;
-@use "../core/_variables.scss" as *;
-@use "../core/color-system/" as *;
+@use "../core/" as *;
 
 // Chip
 
@@ -10,7 +8,7 @@
 $kendo-chip-border-width: 1px !default;
 /// The spacing between the text and the icons of the chip.
 /// @group chip
-$kendo-chip-spacing: map-get( $kendo-spacing, 1 ) !default;
+$kendo-chip-spacing: map.get( $kendo-spacing, 1 ) !default;
 
 /// The font family of the chip.
 /// @group chip
@@ -43,25 +41,25 @@ $kendo-chip-outline-disabled-border: get-theme-color-var( neutral-90 ) !default;
 
 /// Offset of the outline focused chip.
 /// @group chip
-$kendo-chip-focus-offset: map-get( $kendo-spacing, thin ) !default;
+$kendo-chip-focus-offset: map.get( $kendo-spacing, thin ) !default;
 /// Outline width of the outline focused button.
 /// @group chip
-$kendo-chip-focus-outline-width: map-get( $kendo-spacing, hair) !default;
+$kendo-chip-focus-outline-width: map.get( $kendo-spacing, hair) !default;
 /// Outline style of the outline focused button.
 /// @group chip
 $kendo-chip-focus-outline-style: solid !default;
 
 /// Horizontal padding of the chip.
 /// @group chip
-$kendo-chip-padding-x-sm: map-get( $kendo-spacing, 2 ) !default;
-$kendo-chip-padding-x-md: map-get( $kendo-spacing, 2 ) !default;
-$kendo-chip-padding-x-lg: map-get( $kendo-spacing, 2 ) !default;
+$kendo-chip-padding-x-sm: map.get( $kendo-spacing, 2 ) !default;
+$kendo-chip-padding-x-md: map.get( $kendo-spacing, 2 ) !default;
+$kendo-chip-padding-x-lg: map.get( $kendo-spacing, 2 ) !default;
 
 /// Vertical padding of the chip.
 /// @group chip
-$kendo-chip-padding-y-sm: ( map-get( $kendo-spacing, 1 ) - map-get( $kendo-spacing, thin ) ) !default;
-$kendo-chip-padding-y-md: ( map-get( $kendo-spacing, 1 ) ) !default;
-$kendo-chip-padding-y-lg: ( map-get( $kendo-spacing, 1 ) + map-get( $kendo-spacing, thin ) ) !default;
+$kendo-chip-padding-y-sm: ( map.get( $kendo-spacing, 1 ) - map.get( $kendo-spacing, thin ) ) !default;
+$kendo-chip-padding-y-md: ( map.get( $kendo-spacing, 1 ) ) !default;
+$kendo-chip-padding-y-lg: ( map.get( $kendo-spacing, 1 ) + map.get( $kendo-spacing, thin ) ) !default;
 
 /// Font sizes of the chip.
 /// @group chip
@@ -208,7 +206,7 @@ $kendo-chip-theme-colors: ();
 /// The sizes of the chip list.
 /// @group chip
 $kendo-chip-list-sizes: (
-    sm: map-get( $kendo-spacing, 1 ),
-    md: map-get( $kendo-spacing, 1 ),
-    lg: map-get( $kendo-spacing, 1 )
+    sm: map.get( $kendo-spacing, 1 ),
+    md: map.get( $kendo-spacing, 1 ),
+    lg: map.get( $kendo-spacing, 1 )
 ) !default;

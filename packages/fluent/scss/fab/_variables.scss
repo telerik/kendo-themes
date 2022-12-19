@@ -1,6 +1,6 @@
+@use "sass:map";
 @use "sass:math";
-@use "../core/color-system" as *;
-@use "../core/_variables.scss" as *;
+@use "../core/" as *;
 @use "../button/_variables.scss" as *;
 
 /// Width of the border around the FAB.
@@ -21,7 +21,7 @@ $kendo-fab-line-height: var( --kendo-line-height, normal ) !default;
 
 /// Horizontal padding of the FAB.
 /// @group floating-action-button
-$kendo-fab-padding-x: map-get( $kendo-spacing, 4 ) !default;
+$kendo-fab-padding-x: map.get( $kendo-spacing, 4 ) !default;
 $kendo-fab-padding-x-sm: math.div( $kendo-fab-padding-x, 2 ) !default;
 $kendo-fab-padding-x-md: $kendo-fab-padding-x !default;
 $kendo-fab-padding-x-lg: ( $kendo-fab-padding-x * 1.5 ) !default;
@@ -51,21 +51,21 @@ $kendo-fab-icon-width: 20px !default;
 $kendo-fab-icon-height: $kendo-fab-icon-width !default;
 /// FAB icon spacing.
 /// @group floating-action-button
-$kendo-fab-icon-spacing: math.div( map-get( $kendo-spacing, 1 ), 2 ) !default;
+$kendo-fab-icon-spacing: math.div( map.get( $kendo-spacing, 1 ), 2 ) !default;
 
 /// FAB items horizontal padding.
 /// @group floating-action-button
 $kendo-fab-items-padding-x: 0px !default;
 /// FAB items vertical padding.
 /// @group floating-action-button
-$kendo-fab-items-padding-y: map-get( $kendo-spacing, 4 ) !default;
+$kendo-fab-items-padding-y: map.get( $kendo-spacing, 4 ) !default;
 
 /// FAB item text horizontal padding.
 /// @group floating-action-button
-$kendo-fab-item-text-padding-x: map-get( $kendo-spacing, 1 ) !default;
+$kendo-fab-item-text-padding-x: map.get( $kendo-spacing, 1 ) !default;
 /// FAB item text vertical padding.
 /// @group floating-action-button
-$kendo-fab-item-text-padding-y: map-get( $kendo-spacing, 1 ) !default;
+$kendo-fab-item-text-padding-y: map.get( $kendo-spacing, 1 ) !default;
 /// Width of the FAB item text border.
 /// @group floating-action-button
 $kendo-fab-item-text-border-width: 1px !default;
@@ -83,7 +83,7 @@ $kendo-fab-item-text-font-size: var( --kendo-font-size-sm, inherit ) !default;
 $kendo-fab-item-text-line-height: var( --kendo-line-height-sm, inherit ) !default;
 /// The bottom margin of the FAB item.
 /// @group floating-action-button
-$kendo-fab-item-text-offset-x: map-get( $kendo-spacing, 2 );
+$kendo-fab-item-text-offset-x: map.get( $kendo-spacing, 2 );
 
 /// Offset of the focused FAB item.
 /// @group floating-action-button
@@ -97,10 +97,10 @@ $kendo-fab-item-focus-outline-style: $kendo-button-focus-outline-style !default;
 
 /// FAB item icon horizontal padding.
 /// @group floating-action-button
-$kendo-fab-item-icon-padding-x: map-get( $kendo-spacing, 2 ) !default;
+$kendo-fab-item-icon-padding-x: map.get( $kendo-spacing, 2 ) !default;
 /// FAB item icon vertical padding.
 /// @group floating-action-button
-$kendo-fab-item-icon-padding-y: map-get( $kendo-spacing, 2 ) !default;
+$kendo-fab-item-icon-padding-y: map.get( $kendo-spacing, 2 ) !default;
 /// Width of the FAB item icon border.
 /// @group floating-action-button
 $kendo-fab-item-icon-border-width: 1px !default;
@@ -120,7 +120,7 @@ $kendo-fab-item-icon-height: $kendo-fab-item-icon-width !default;
 /// Theme colors map for the FAB.
 /// @group floating-action-button
 $kendo-fab-theme-colors: (
-    solid: map-get( $kendo-button-theme-colors, "solid")
+    solid: map.get( $kendo-button-theme-colors, "solid")
 ) !default;
 
 /// Sizes map for the FAB.
@@ -142,7 +142,7 @@ $kendo-fab-sizes: (
 
 /// The bottom margin of the FAB item.
 /// @group floating-action-button
-$kendo-fab-item-offset-y: map-get( $kendo-spacing, 2 );
+$kendo-fab-item-offset-y: map.get( $kendo-spacing, 2 );
 /// The base text color of the FAB item.
 /// @group floating-action-button
 $kendo-fab-item-text: get-theme-color-var( neutral-160 ) !default;

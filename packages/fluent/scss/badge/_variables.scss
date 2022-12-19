@@ -1,6 +1,5 @@
 @use "sass:map";
-@use "../core/color-system" as *;
-@use "../core/_variables.scss" as *;
+@use "../core/" as *;
 
 /// Background color of the badge.
 /// @group badge
@@ -14,7 +13,7 @@ $kendo-badge-border: var( --kendo-component-border, initial ) !default;
 
 /// Border width of the badge.
 /// @group badge
-$kendo-badge-border-width: map-get( $kendo-spacing, hair ) !default;
+$kendo-badge-border-width: map.get( $kendo-spacing, hair ) !default;
 
 /// Font weight of the badge.
 /// @group badge
@@ -22,15 +21,15 @@ $kendo-badge-font-weight: var( --kendo-font-weight, normal ) !default;
 
 /// Horizontal padding of the badge.
 /// @group badge
-$kendo-badge-padding-x-sm: map-get( $kendo-spacing, thin ) !default;
-$kendo-badge-padding-x-md: map-get( $kendo-spacing, 1 ) !default;
-$kendo-badge-padding-x-lg: map-get( $kendo-spacing, 1 ) + map-get( $kendo-spacing, thin ) !default;
+$kendo-badge-padding-x-sm: map.get( $kendo-spacing, thin ) !default;
+$kendo-badge-padding-x-md: map.get( $kendo-spacing, 1 ) !default;
+$kendo-badge-padding-x-lg: map.get( $kendo-spacing, 1 ) + map.get( $kendo-spacing, thin ) !default;
 
 /// Vertical padding of the badge.
 /// @group badge
-$kendo-badge-padding-y-sm: map-get( $kendo-spacing, thin ) !default;
-$kendo-badge-padding-y-md: map-get( $kendo-spacing, 1 ) !default;
-$kendo-badge-padding-y-lg: map-get( $kendo-spacing, 1 ) + map-get( $kendo-spacing, thin ) !default;
+$kendo-badge-padding-y-sm: map.get( $kendo-spacing, thin ) !default;
+$kendo-badge-padding-y-md: map.get( $kendo-spacing, 1 ) !default;
+$kendo-badge-padding-y-lg: map.get( $kendo-spacing, 1 ) + map.get( $kendo-spacing, thin ) !default;
 
 /// Font sizes of the badge.
 /// @group badge

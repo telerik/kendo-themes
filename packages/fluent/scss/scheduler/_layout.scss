@@ -1,5 +1,6 @@
+@use "sass:map";
 @use "./_variables.scss" as *;
-@use "../core" as *;
+@use "../core/" as *;
 @use "../toolbar/_variables.scss" as *;
 
 @mixin kendo-scheduler--layout() {
@@ -730,7 +731,7 @@
             display: flex;
             flex: 1 1 100%;
             align-items: center;
-            gap: map-get( $kendo-spacing, thin );
+            gap: map.get( $kendo-spacing, thin );
         }
 
         .k-scheduler-mark {
@@ -953,7 +954,7 @@
         .k-scheduler-datetime-picker {
             display: flex;
             flex-flow: row nowrap;
-            gap: map-get( $kendo-spacing, 1 );
+            gap: map.get( $kendo-spacing, 1 );
         }
 
     }

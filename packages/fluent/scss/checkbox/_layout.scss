@@ -1,6 +1,6 @@
+@use "sass:map";
+@use "../core/" as *;
 @use "./_variables.scss" as *;
-@use "../core/_variables.scss" as *;
-@use "../core/mixins/_disabled.scss" as *;
 
 @mixin kendo-checkbox--layout() {
 
@@ -32,7 +32,7 @@
             content: $kendo-checkbox-checked-glyph;
             width: 1em;
             height: 1em;
-            font-size: var( --INTERNAL-kendo-glyph-size, ( map-get( $kendo-spacing, 4 ) - map-get( $kendo-spacing, thin ) ) );
+            font-size: var( --INTERNAL-kendo-glyph-size, ( map.get( $kendo-spacing, 4 ) - map.get( $kendo-spacing, thin ) ) );
             font-family: var( --kendo-checkbox-glyph-font-family, #{ $kendo-checkbox-glyph-font-family } );
             line-height: 1;
             transform: translate(-50%, -50%) scale(0);
@@ -163,7 +163,7 @@
         flex-flow: row nowrap;
         align-items: center;
         align-content: center;
-        gap: map-get( $kendo-spacing, 2 );
+        gap: map.get( $kendo-spacing, 2 );
 
         .k-checkbox-label {
             margin: 0;
@@ -181,8 +181,8 @@
     .k-ripple-container {
         .k-checkbox::after {
             content: "";
-            width: var( --INTERNAL-kendo-ripple-size-width, ( map-get( $kendo-spacing, 5 ) * 3 ));
-            height: var( --INTERNAL-kendo-ripple-size-height, ( map-get( $kendo-spacing, 5 ) * 3 ));
+            width: var( --INTERNAL-kendo-ripple-size-width, ( map.get( $kendo-spacing, 5 ) * 3 ));
+            height: var( --INTERNAL-kendo-ripple-size-height, ( map.get( $kendo-spacing, 5 ) * 3 ));
             display: block;
             position: absolute;
             left: 50%;
@@ -209,9 +209,9 @@
 
     // Checkbox size
     @each $size, $size-props in $kendo-checkbox-sizes {
-        $_size: map-get( $size-props, size );
-        $_glyph-size: map-get( $size-props, glyph-size );
-        $_ripple-size: map-get( $size-props, ripple-size );
+        $_size: map.get( $size-props, size );
+        $_glyph-size: map.get( $size-props, glyph-size );
+        $_ripple-size: map.get( $size-props, ripple-size );
 
         .k-checkbox-#{$size} {
             --INTERNAL--kendo-checkbox-width: #{ $_size };
@@ -230,9 +230,9 @@
     }
 
     @each $size, $size-props in $kendo-checkbox-indeterminate-sizes {
-        $_size: map-get( $size-props, size );
-        $_position: map-get( $size-props, position );
-        $_border-width: map-get( $size-props, border-width);
+        $_size: map.get( $size-props, size );
+        $_position: map.get( $size-props, position );
+        $_border-width: map.get( $size-props, border-width);
 
         .k-checkbox-#{$size}:indeterminate,
         .k-checkbox-#{$size}.k-indeterminate {

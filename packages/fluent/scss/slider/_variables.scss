@@ -1,4 +1,5 @@
 @use "sass:color";
+@use "sass:map";
 @use "../core/" as *;
 
 /// The default slider size.
@@ -9,7 +10,7 @@ $kendo-slider-size: 200px !default;
 $kendo-slider-alt-size: 26px !default;
 /// The spacing of the slider.
 /// @group slider
-$kendo-slider-spacing: map-get( $kendo-spacing, 2 ) !default;
+$kendo-slider-spacing: map.get( $kendo-spacing, 2 ) !default;
 
 /// Font family of the slider.
 /// @group slider
@@ -26,10 +27,10 @@ $kendo-slider-text: inherit !default;
 
 /// The size of the slider track.
 /// @group slider
-$kendo-slider-track-size: map-get( $kendo-spacing, 1 ) !default;
+$kendo-slider-track-size: map.get( $kendo-spacing, 1 ) !default;
 /// The border radius of the slider track.
 /// @group slider
-$kendo-slider-track-border-radius: map-get( $kendo-spacing, thin ) !default;
+$kendo-slider-track-border-radius: map.get( $kendo-spacing, thin ) !default;
 /// The background color of the slider track.
 /// @group slider
 $kendo-slider-track-bg: get-theme-color-var( neutral-60 ) !default;
@@ -58,7 +59,7 @@ $kendo-slider-selection-bg: get-theme-color-var( primary-100 ) !default;
 $kendo-slider-thumb-size: 16px !default;
 /// The default border width of the slider thumb.
 /// @group slider
-$kendo-slider-thumb-border-width: map-get( $kendo-spacing, thin ) !default;
+$kendo-slider-thumb-border-width: map.get( $kendo-spacing, thin ) !default;
 /// The border radius of the slider thumb.
 /// @group slider
 $kendo-slider-thumb-border-radius: 999em !default;

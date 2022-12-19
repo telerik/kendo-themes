@@ -1,4 +1,5 @@
-@use "../core/color-system" as *;
+@use "sass:map";
+@use "../core/" as *;
 @use "./_variables.scss" as *;
 
 @mixin kendo-switch--layout() {
@@ -118,13 +119,13 @@
     // Switch sizes
     @each $size, $size-props in $kendo-switch-sizes {
 
-        $_font-size: map-get( $size-props, font-size );
-        $_track-width: map-get( $size-props, track-width );
-        $_track-height: map-get( $size-props, track-height );
-        $_thumb-width: map-get( $size-props, thumb-width );
-        $_thumb-height: map-get( $size-props, thumb-height );
-        $_thumb-offset: map-get( $size-props, thumb-offset );
-        $_label-offset: map-get( $size-props, label-offset );
+        $_font-size: map.get( $size-props, font-size );
+        $_track-width: map.get( $size-props, track-width );
+        $_track-height: map.get( $size-props, track-height );
+        $_thumb-width: map.get( $size-props, thumb-width );
+        $_thumb-height: map.get( $size-props, thumb-height );
+        $_thumb-offset: map.get( $size-props, thumb-offset );
+        $_label-offset: map.get( $size-props, label-offset );
 
         .k-switch-#{$size} {
             --INTERNAL--kendo-switch-width: var( --kendo-switch-#{$size}-width, #{$_track-width} );

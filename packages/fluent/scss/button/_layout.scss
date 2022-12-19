@@ -1,5 +1,6 @@
+@use "sass:map";
 @use "sass:math";
-@use "../core" as *;
+@use "../core/" as *;
 @use "./_variables.scss" as *;
 
 @mixin kendo-button--layout() {
@@ -72,10 +73,10 @@
 
     // Sizing
     @each $size, $size-props in $kendo-button-sizes {
-        $_padding-x: map-get( $size-props, padding-x );
-        $_padding-y: map-get( $size-props, padding-y );
-        $_font-size: map-get( $size-props, font-size );
-        $_line-height: map-get( $size-props, line-height );
+        $_padding-x: map.get( $size-props, padding-x );
+        $_padding-y: map.get( $size-props, padding-y );
+        $_font-size: map.get( $size-props, font-size );
+        $_line-height: map.get( $size-props, line-height );
 
         $_icon-button-padding: math.div( $_padding-x, 2 );
 

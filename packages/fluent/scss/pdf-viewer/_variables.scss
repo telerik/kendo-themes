@@ -1,5 +1,5 @@
-@use "../core/color-system" as *;
-@use "../core/_variables.scss" as *;
+@use "sass:map";
+@use "../core/" as *;
 @use "../button/_variables.scss" as *;
 @use "../dropzone/_variables.scss" as *;
 
@@ -37,7 +37,7 @@ $kendo-pdf-viewer-canvas-border:  var( --kendo-component-border, inherit ) !defa
 
 /// Spacing of the PDF viewer page.
 /// @group pdf-viewer
-$kendo-pdf-viewer-page-spacing: map-get( $kendo-spacing, 8 ) - map-get( $kendo-spacing, thin ) !default;
+$kendo-pdf-viewer-page-spacing: map.get( $kendo-spacing, 8 ) - map.get( $kendo-spacing, thin ) !default;
 /// Background color of the PDF viewer page.
 /// @group pdf-viewer
 $kendo-pdf-viewer-page-bg: var( --kendo-component-bg, inherit ) !default;
@@ -53,13 +53,13 @@ $kendo-pdf-viewer-page-shadow: var( --kendo-box-shadow-depth-1, none ) !default;
 
 /// Horizontal padding of the PDF viewer search dialog.
 /// @group pdf-viewer
-$kendo-pdf-viewer-search-dialog-padding-x: map-get( $kendo-spacing, 3 ) !default;
+$kendo-pdf-viewer-search-dialog-padding-x: map.get( $kendo-spacing, 3 ) !default;
 /// Vertical padding of the PDF viewer search dialog.
 /// @group pdf-viewer
 $kendo-pdf-viewer-search-dialog-padding-y: $kendo-pdf-viewer-search-dialog-padding-x !default;
 /// Spacing of the PDF viewer search dialog.
 /// @group pdf-viewer
-$kendo-pdf-viewer-search-dialog-spacing: map-get( $kendo-spacing, 2 ) !default;
+$kendo-pdf-viewer-search-dialog-spacing: map.get( $kendo-spacing, 2 ) !default;
 
 /// Border width of the PDF viewer search panel.
 /// @group pdf-viewer

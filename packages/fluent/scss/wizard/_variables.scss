@@ -1,15 +1,15 @@
-@use "../core/color-system" as *;
-@use "../core/_variables.scss" as *;
+@use "sass:map";
+@use "../core/" as *;
 
 /// Border width of the wizard.
 /// @group wizard
 $kendo-wizard-border-width: 0px !default;
 /// Horizontal padding of the wizard.
 /// @group wizard
-$kendo-wizard-padding-x: map-get( $kendo-spacing, 6 ) !default;
+$kendo-wizard-padding-x: map.get( $kendo-spacing, 6 ) !default;
 /// Vertical padding of the wizard.
 /// @group wizard
-$kendo-wizard-padding-y: map-get( $kendo-spacing, 6 ) !default;
+$kendo-wizard-padding-y: map.get( $kendo-spacing, 6 ) !default;
 /// Font size of the wizard.
 /// @group wizard
 $kendo-wizard-font-size: var( --kendo-font-size, inherit ) !default;
@@ -23,10 +23,10 @@ $kendo-wizard-font-family: var( --kendo-font-family, inherit ) !default;
 
 /// Horizontal padding of the wizard steps.
 /// @group wizard
-$kendo-wizard-steps-padding-x: map-get( $kendo-spacing, 3 ) !default;
+$kendo-wizard-steps-padding-x: map.get( $kendo-spacing, 3 ) !default;
 /// Vertical padding of the wizard steps.
 /// @group wizard
-$kendo-wizard-steps-padding-y: map-get( $kendo-spacing, 3 ) !default;
+$kendo-wizard-steps-padding-y: map.get( $kendo-spacing, 3 ) !default;
 
 /// Horizontal padding of the wizard content.
 /// @group wizard
@@ -43,10 +43,10 @@ $kendo-wizard-content-bg: var( --kendo-component-bg, initial ) !default;
 
 /// Horizontal margin of the wizard buttons container.
 /// @group wizard
-$kendo-wizard-buttons-margin-x: map-get( $kendo-spacing, 7 ) !default;
+$kendo-wizard-buttons-margin-x: map.get( $kendo-spacing, 7 ) !default;
 /// Vertical margin of the wizard buttons container.
 /// @group wizard
-$kendo-wizard-buttons-margin-y: map-get( $kendo-spacing, 6 ) !default;
+$kendo-wizard-buttons-margin-y: map.get( $kendo-spacing, 6 ) !default;
 
 /// Outline of the focused wizard step.
 /// @group wizard

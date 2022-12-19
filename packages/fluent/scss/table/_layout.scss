@@ -1,4 +1,5 @@
-@use "../core/_variables.scss" as *;
+@use "sass:map";
+@use "../core/" as *;
 @use "./_variables.scss" as *;
 
 @mixin kendo-table--layout() {
@@ -250,18 +251,18 @@
 
     // Sizes
     @each $size, $size-props in $kendo-table-sizes {
-        $_font-size: map-get( $size-props, font-size);
-        $_line-height: map-get( $size-props, line-height);
+        $_font-size: map.get( $size-props, font-size);
+        $_line-height: map.get( $size-props, line-height);
 
-        $_cell-padding-x: map-get( $size-props, cell-padding-x);
-        $_cell-padding-y: map-get( $size-props, cell-padding-y);
+        $_cell-padding-x: map.get( $size-props, cell-padding-x);
+        $_cell-padding-y: map.get( $size-props, cell-padding-y);
 
         $_group-row-padding-x: 0;
         $_group-row-padding-y: $_cell-padding-y;
 
-        $_group-label-padding-x: map-get( $size-props, group-label-padding-x );
-        $_group-label-padding-y: map-get( $size-props, group-label-padding-y );
-        $_group-label-font-size: map-get( $size-props, group-label-font-size );
+        $_group-label-padding-x: map.get( $size-props, group-label-padding-x );
+        $_group-label-padding-y: map.get( $size-props, group-label-padding-y );
+        $_group-label-font-size: map.get( $size-props, group-label-font-size );
 
         .k-table-#{$size} {
             --INTERNAL--kendo-table-font-size: var( --kendo-table-#{size}-font-size, #{$_font-size} );

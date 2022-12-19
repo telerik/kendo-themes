@@ -1,5 +1,6 @@
-@use "./_variables.scss" as *;
+@use "sass:map";
 @use "../core/" as *;
+@use "./_variables.scss" as *;
 
 @mixin kendo-input--layout() {
 
@@ -384,14 +385,14 @@
 
     // Sizing
     @each $size, $size-props in $kendo-input-sizes {
-        $_padding-x: map-get( $size-props, padding-x );
-        $_padding-y: map-get( $size-props, padding-y );
-        $_font-size: map-get( $size-props, font-size );
-        $_line-height: map-get( $size-props, line-height );
-        $_icon-size: map-get( $size-props, icon-size );
-        $_button-padding-x: map-get( $size-props, button-padding-x );
-        $_button-padding-y: map-get( $size-props, button-padding-y );
-        $_button-width: map-get( $size-props, button-width );
+        $_padding-x: map.get( $size-props, padding-x );
+        $_padding-y: map.get( $size-props, padding-y );
+        $_font-size: map.get( $size-props, font-size );
+        $_line-height: map.get( $size-props, line-height );
+        $_icon-size: map.get( $size-props, icon-size );
+        $_button-padding-x: map.get( $size-props, button-padding-x );
+        $_button-padding-y: map.get( $size-props, button-padding-y );
+        $_button-width: map.get( $size-props, button-width );
 
         .k-input-#{$size},
         .k-picker-#{$size} {

@@ -1,5 +1,5 @@
-@use "../core/color-system" as *;
-@use "../core/_variables" as *;
+@use "sass:map";
+@use "../core/" as *;
 
 /// Height of the progressbar.
 /// @group progressbar
@@ -72,7 +72,7 @@ $kendo-progressbar-value-gradient: null !default;
 
 /// Progress status offset of the progressbar.
 /// @group progressbar
-$kendo-progressbar-offset-y: map-get( $kendo-spacing, 2 ) !default;
+$kendo-progressbar-offset-y: map.get( $kendo-spacing, 2 ) !default;
 /// Vertical status offset of the progressbar.
 /// @group progressbar
 $kendo-progressbar-vertical-status-offset: calc( (#{$kendo-progressbar-font-size} * #{$kendo-progressbar-line-height} + #{$kendo-progressbar-offset-y}) * -1) !default;
@@ -115,4 +115,4 @@ $kendo-circular-progressbar-arc-stroke: get-theme-color-var( primary-100 ) !defa
 /// @group progressbar
 $kendo-circular-progressbar-scale-stroke: $kendo-progressbar-bg !default;
 
-$kendo-progressbar-item-border-width: map-get( $kendo-spacing, thin ) !default;
+$kendo-progressbar-item-border-width: map.get( $kendo-spacing, thin ) !default;

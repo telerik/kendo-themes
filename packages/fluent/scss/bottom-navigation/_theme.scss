@@ -1,4 +1,5 @@
-@use "../core/mixins" as *;
+@use "sass:map";
+@use "../core/" as *;
 @use "./_variables.scss" as *;
 
 @mixin kendo-bottom-navigation--theme() {
@@ -51,22 +52,22 @@
     @each $fill-mode, $theme-colors in $kendo-bottom-nav-theme-colors {
         @each $theme-color, $color-props in $theme-colors {
 
-            $_text-color: map-get( $color-props, text );
-            $_bg: map-get( $color-props, bg );
-            $_border-color: map-get( $color-props, border );
+            $_text-color: map.get( $color-props, text );
+            $_bg: map.get( $color-props, bg );
+            $_border-color: map.get( $color-props, border );
 
-            $_focus-text: map-get( $color-props, focus-text );
-            $_focus-bg: map-get( $color-props, focus-bg );
-            $_focus-border: map-get( $color-props, focus-border );
-            $_focus-outline: map-get( $color-props, focus-outline );
+            $_focus-text: map.get( $color-props, focus-text );
+            $_focus-bg: map.get( $color-props, focus-bg );
+            $_focus-border: map.get( $color-props, focus-border );
+            $_focus-outline: map.get( $color-props, focus-outline );
 
-            $_active-text: map-get( $color-props, active-text );
-            $_active-bg: map-get( $color-props, active-bg );
-            $_active-border: map-get( $color-props, active-border );
+            $_active-text: map.get( $color-props, active-text );
+            $_active-bg: map.get( $color-props, active-bg );
+            $_active-border: map.get( $color-props, active-border );
 
-            $_disabled-text: map-get( $color-props, disabled-text );
-            $_disabled-bg: map-get( $color-props, disabled-bg );
-            $_disabled-border: map-get( $color-props, disabled-border );
+            $_disabled-text: map.get( $color-props, disabled-text );
+            $_disabled-bg: map.get( $color-props, disabled-bg );
+            $_disabled-border: map.get( $color-props, disabled-border );
 
             .k-bottom-nav-#{$fill-mode}.k-bottom-nav-#{$theme-color} {
                 --kendo-bottom-nav-text: var( --kendo-bottom-nav-#{$fill-mode}-#{$theme-color}-text, #{$_text-color} );

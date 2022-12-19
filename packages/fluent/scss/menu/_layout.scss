@@ -1,5 +1,5 @@
-@use "../core/color-system" as *;
-@use '../core/variables' as *;
+@use "sass:map";
+@use "../core/" as *;
 @use './variables' as *;
 
 @mixin kendo-menu--layout() {
@@ -211,17 +211,17 @@
     @each $size, $size-pops in $kendo-menu-sizes {
 
         // Group sizes
-        $_group-font-size: map-get( $size-pops, group-font-size );
-        $_group-line-height: map-get( $size-pops, group-line-height );
+        $_group-font-size: map.get( $size-pops, group-font-size );
+        $_group-line-height: map.get( $size-pops, group-line-height );
 
         // Link sizes
-        $_link-padding-x: map-get( $size-pops, link-padding-x );
-        $_link-padding-y: map-get( $size-pops, link-padding-y );
-        $_link-padding-inline-end: map-get( $size-pops, link-padding-inline-end );
+        $_link-padding-x: map.get( $size-pops, link-padding-x );
+        $_link-padding-y: map.get( $size-pops, link-padding-y );
+        $_link-padding-inline-end: map.get( $size-pops, link-padding-inline-end );
 
         // Arrow sizes
-        $_arrow-margin-inline-start: map-get( $size-pops, arrow-margin-inline-start );
-        $_arrow-margin-inline-end: map-get( $size-pops, arrow-margin-inline-end );
+        $_arrow-margin-inline-start: map.get( $size-pops, arrow-margin-inline-start );
+        $_arrow-margin-inline-end: map.get( $size-pops, arrow-margin-inline-end );
 
         .k-menu-group-#{$size} {
             --INTERNAL--kendo-group-font-size: var( --kendo-menu-popup-font-size-#{$size}, #{$_group-font-size} );

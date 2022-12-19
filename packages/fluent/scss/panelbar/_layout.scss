@@ -1,6 +1,5 @@
+@use "../core/" as *;
 @use "./_variables.scss" as *;
-@use "../core/color-system" as *;
-@use "../core/variables" as *;
 
 @mixin kendo-panelbar--layout() {
 

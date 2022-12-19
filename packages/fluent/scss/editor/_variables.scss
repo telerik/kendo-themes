@@ -1,3 +1,4 @@
+@use "sass:map";
 @use "../core/" as *;
 @use "../input/_variables.scss" as *;
 
@@ -33,16 +34,16 @@ $kendo-editor-placeholder-opacity: var( --kendo-input-placeholder-opacity, #{$ke
 $kendo-editor-content-outline-color: var( --kendo-body-text, initial ) !default;
 /// The size of the editor resize handle
 /// @group editor
-$kendo-editor-resize-handle-size: map-get( $kendo-spacing, 2 ) !default;
+$kendo-editor-resize-handle-size: map.get( $kendo-spacing, 2 ) !default;
 /// The border width of the editor resize handle
 /// @group editor
 $kendo-editor-resize-handle-border-width: 1px !default;
 /// The horizontal margin of the editor export tool icon
 /// @group editor
-$kendo-editor-export-tool-icon-margin-x: map-get( $kendo-spacing, 1 ) !default;
+$kendo-editor-export-tool-icon-margin-x: map.get( $kendo-spacing, 1 ) !default;
 ///  The outline width of the editor selected node
 /// @group editor
-$kendo-editor-selectednode-outline-width: map-get( $kendo-spacing, thin ) !default;
+$kendo-editor-selectednode-outline-width: map.get( $kendo-spacing, thin ) !default;
 
 // Cell size
 $ct-cell-size: 20px;

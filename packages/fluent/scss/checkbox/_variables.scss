@@ -1,7 +1,7 @@
-@use "../core/color-system/" as *;
-@use "../core/_variables.scss" as *;
+@use "sass:map";
+@use "../core/" as *;
 @use "../list/_variables.scss" as *;
-@use "../core/functions/" as *;
+
 // Checkbox
 
 /// Border width of checkbox.
@@ -11,64 +11,64 @@ $kendo-checkbox-border-width: 1px !default;
 // Checkbox sizes
 $kendo-checkbox-sizes: (
     sm: (
-        size: map-get( $kendo-spacing, 4 ),
-        glyph-size: ( map-get( $kendo-spacing, 4 ) - map-get( $kendo-spacing, thin ) ),
-        ripple-size: map-get( $kendo-spacing, 4 ) * 3,
-        indeterminate-size: map-get( $kendo-spacing, sm )
+        size: map.get( $kendo-spacing, 4 ),
+        glyph-size: ( map.get( $kendo-spacing, 4 ) - map.get( $kendo-spacing, thin ) ),
+        ripple-size: map.get( $kendo-spacing, 4 ) * 3,
+        indeterminate-size: map.get( $kendo-spacing, sm )
     ),
     md: (
-        size: map-get( $kendo-spacing, 5 ),
-        glyph-size: ( map-get( $kendo-spacing, 6 ) - map-get( $kendo-spacing, thin ) ),
-        ripple-size: map-get( $kendo-spacing, 5 ) * 3,
-        indeterminate-size: ( map-get( $kendo-spacing, md ) - map-get( $kendo-spacing, thin ))
+        size: map.get( $kendo-spacing, 5 ),
+        glyph-size: ( map.get( $kendo-spacing, 6 ) - map.get( $kendo-spacing, thin ) ),
+        ripple-size: map.get( $kendo-spacing, 5 ) * 3,
+        indeterminate-size: ( map.get( $kendo-spacing, md ) - map.get( $kendo-spacing, thin ))
     ),
     lg: (
-        size: map-get( $kendo-spacing, 6 ),
-        glyph-size: ( map-get( $kendo-spacing, 6 ) - map-get( $kendo-spacing, thin ) ),
-        ripple-size: map-get( $kendo-spacing, 6 ) * 3,
-        indeterminate-size: map-get( $kendo-spacing, md )
+        size: map.get( $kendo-spacing, 6 ),
+        glyph-size: ( map.get( $kendo-spacing, 6 ) - map.get( $kendo-spacing, thin ) ),
+        ripple-size: map.get( $kendo-spacing, 6 ) * 3,
+        indeterminate-size: map.get( $kendo-spacing, md )
     )
 ) !default;
 
 // Checkbox indeterminte sizes
 $kendo-checkbox-indeterminate-sizes: (
     sm: (
-        size: map-get( $kendo-spacing, sm ),
-        position: ( map-get( $kendo-spacing, 1 ) - map-get( $kendo-spacing, hair )),
-        border-width: map-get( $kendo-spacing, 1 )
+        size: map.get( $kendo-spacing, sm ),
+        position: ( map.get( $kendo-spacing, 1 ) - map.get( $kendo-spacing, hair )),
+        border-width: map.get( $kendo-spacing, 1 )
     ),
     md: (
-        size: ( map-get( $kendo-spacing, md ) - map-get( $kendo-spacing, thin )),
-        position: map-get( $kendo-spacing, 1 ),
-        border-width: ( map-get( $kendo-spacing, 1 ) + map-get( $kendo-spacing, hair ))
+        size: ( map.get( $kendo-spacing, md ) - map.get( $kendo-spacing, thin )),
+        position: map.get( $kendo-spacing, 1 ),
+        border-width: ( map.get( $kendo-spacing, 1 ) + map.get( $kendo-spacing, hair ))
     ),
     lg: (
-        size: map-get( $kendo-spacing, md ),
-        position: ( map-get( $kendo-spacing, 1) + map-get( $kendo-spacing, hair )),
-        border-width: ( map-get( $kendo-spacing, 1) + map-get( $kendo-spacing, thin ))
+        size: map.get( $kendo-spacing, md ),
+        position: ( map.get( $kendo-spacing, 1) + map.get( $kendo-spacing, hair )),
+        border-width: ( map.get( $kendo-spacing, 1) + map.get( $kendo-spacing, thin ))
     )
 ) !default;
 
 /// Default width of the checbox.
 /// @group checkbox
-$kendo-checkbox-width: map-get( $kendo-spacing, 5 ) !default;
+$kendo-checkbox-width: map.get( $kendo-spacing, 5 ) !default;
 /// Default height of the checbox.
 /// @group checkbox
-$kendo-checkbox-height: map-get( $kendo-spacing, 5 ) !default;
+$kendo-checkbox-height: map.get( $kendo-spacing, 5 ) !default;
 
 /// Default width of indeterminate checkbox.
 /// @group checkbox
-$kendo-checkbox-indeterminate-width: ( map-get( $kendo-spacing, 3) - map-get( $kendo-spacing, thin) ) !default;
+$kendo-checkbox-indeterminate-width: ( map.get( $kendo-spacing, 3) - map.get( $kendo-spacing, thin) ) !default;
 /// Default height of indeterminate checkbox.
 /// @group checkbox
-$kendo-checkbox-indeterminate-height: ( map-get( $kendo-spacing, 3) - map-get( $kendo-spacing, thin) ) !default;
+$kendo-checkbox-indeterminate-height: ( map.get( $kendo-spacing, 3) - map.get( $kendo-spacing, thin) ) !default;
 
 /// Default top position of indeterminate checkbox.
 /// @group checkbox
-$kendo-checkbox-indeterminate-top: map-get( $kendo-spacing, 1 ) !default;
+$kendo-checkbox-indeterminate-top: map.get( $kendo-spacing, 1 ) !default;
 /// Default left position of indeterminate checkbox.
 /// @group checkbox
-$kendo-checkbox-indeterminate-left: map-get( $kendo-spacing, 1 ) !default;
+$kendo-checkbox-indeterminate-left: map.get( $kendo-spacing, 1 ) !default;
 
 /// Background color of checkbox.
 /// @group checkbox
@@ -208,14 +208,14 @@ $kendo-checkbox-hover-image: escape-svg( url("data:image/svg+xml,<svg xmlns='htt
 
 /// The horizontal margin of the checkbox inside a label.
 /// @group checkbox
-$kendo-checkbox-label-margin-x: map-get( $kendo-spacing, 2 ) !default;
+$kendo-checkbox-label-margin-x: map.get( $kendo-spacing, 2 ) !default;
 
 
 // Checkbox list
 
 /// Spacing between items of horizontal checkbox list.
 /// @group checkbox
-$kendo-checkbox-list-spacing: map-get( $kendo-spacing, 4 ) !default;
+$kendo-checkbox-list-spacing: map.get( $kendo-spacing, 4 ) !default;
 /// Horizontal padding of checkbox list items.
 /// @group checkbox
 $kendo-checkbox-list-item-padding-x: 0px !default;

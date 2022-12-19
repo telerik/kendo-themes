@@ -1,5 +1,5 @@
-@use "../core/color-system" as *;
-@use "../core/_variables.scss" as *;
+@use "sass:map";
+@use "../core/" as *;
 @use "../list/_variables.scss" as *;
 
 /// Width of the border around the time-selector.
@@ -27,10 +27,10 @@ $kendo-time-selector-border: var( --kendo-component-border, initial ) !default;
 
 /// Horizontal padding of the time-selector header.
 /// @group time-selector
-$kendo-time-selector-header-padding-x: map-get( $kendo-spacing, 3 ) !default;
+$kendo-time-selector-header-padding-x: map.get( $kendo-spacing, 3 ) !default;
 /// Vertical padding color of the time-selector header.
 /// @group time-selector
-$kendo-time-selector-header-padding-y: map-get( $kendo-spacing, 3 ) !default;
+$kendo-time-selector-header-padding-y: map.get( $kendo-spacing, 3 ) !default;
 /// Width of the border around the time-selector header.
 /// @group time-selector
 $kendo-time-selector-header-border-width: 0px !default;
@@ -47,7 +47,7 @@ $kendo-time-list-height: 240px !default;
 
 /// Spacing beneath the time selector titles.
 /// @group time-selector
-$kendo-time-list-title-spacing: map-get( $kendo-spacing, 3 ) !default;
+$kendo-time-list-title-spacing: map.get( $kendo-spacing, 3 ) !default;
 /// Font size of the time-selector titles.
 /// @group time-selector
 $kendo-time-list-title-font-size: var( --kendo-font-size-xs, inherit ) !default;
@@ -67,10 +67,10 @@ $kendo-time-list-title-focus-text: $kendo-time-selector-text !default;
 
 /// Horizontal padding of the time-selector list items.
 /// @group time-selector
-$kendo-time-list-item-padding-x: map-get( $kendo-spacing, 2 ) !default;
+$kendo-time-list-item-padding-x: map.get( $kendo-spacing, 2 ) !default;
 /// Vertical padding of the time-selector list items.
 /// @group time-selector
-$kendo-time-list-item-padding-y: map-get( $kendo-spacing, 1 ) !default;
+$kendo-time-list-item-padding-y: map.get( $kendo-spacing, 1 ) !default;
 
 /// Width of the border of the selected item in the time-selector.
 /// @group time-selector

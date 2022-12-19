@@ -1,6 +1,5 @@
 @use "sass:map";
-@use "../core/color-system" as *;
-@use "../core/variables" as *;
+@use "../core/" as *;
 
 /// Background color of the appbar.
 /// @group appbar
@@ -20,10 +19,10 @@ $kendo-appbar-margin-y: 0 !default;
 $kendo-appbar-margin-x: 0 !default;
 /// Vertical padding of the appbar.
 /// @group appbar
-$kendo-appbar-padding-y: map-get( $kendo-spacing, 2 ) !default;
+$kendo-appbar-padding-y: map.get( $kendo-spacing, 2 ) !default;
 /// Horizontal padding of the appbar.
 /// @group appbar
-$kendo-appbar-padding-x: map-get( $kendo-spacing, 2 ) !default;
+$kendo-appbar-padding-x: map.get( $kendo-spacing, 2 ) !default;
 /// Width of the border around the appbar.
 /// @group appbar
 $kendo-appbar-border-width: 0px !default;
@@ -43,7 +42,7 @@ $kendo-appbar-line-height: var( --kendo-line-height, normal ) !default;
 $kendo-appbar-font-family: var( --kendo-font-family, inherit ) !default;
 /// Content spacing of the appbar.
 /// @group appbar
-$kendo-appbar-spacing: map-get( $kendo-spacing, 2 ) !default;
+$kendo-appbar-spacing: map.get( $kendo-spacing, 2 ) !default;
 
 /// Theme variations for the appbar.
 $kendo-appbar-brand-colors: (

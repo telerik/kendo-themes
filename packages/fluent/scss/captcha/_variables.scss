@@ -1,10 +1,10 @@
+@use "sass:map";
 @use "sass:math";
-@use "../core/color-system" as *;
-@use "../core/_variables.scss" as *;
+@use "../core/" as *;
 
 /// Spacer of the captcha.
 /// @group captcha
-$kendo-captcha-spacer: map-get( $kendo-spacing, 2 ) !default;
+$kendo-captcha-spacer: map.get( $kendo-spacing, 2 ) !default;
 
 /// Default width of the captcha.
 /// @group captcha

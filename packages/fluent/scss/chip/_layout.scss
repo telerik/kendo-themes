@@ -1,5 +1,6 @@
+@use "sass:map";
+@use "../core/" as *;
 @use "./_variables.scss" as *;
-@use "../core/_variables.scss" as *;
 
 @mixin kendo-chip--layout() {
 
@@ -133,10 +134,10 @@
 
     // Sizes
     @each $size, $size-props in $kendo-chip-sizes {
-        $_padding-x: map-get( $size-props, padding-x );
-        $_padding-y: map-get( $size-props, padding-y );
-        $_font-size: map-get( $size-props, font-size );
-        $_line-height: map-get( $size-props, line-height );
+        $_padding-x: map.get( $size-props, padding-x );
+        $_padding-y: map.get( $size-props, padding-y );
+        $_font-size: map.get( $size-props, font-size );
+        $_line-height: map.get( $size-props, line-height );
 
         .k-chip-#{$size} {
             --INTERNAL-kendo-chip-padding-x: #{ $_padding-x };

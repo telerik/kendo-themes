@@ -1,5 +1,6 @@
+@use "sass:map";
+@use "../core/" as *;
 @use "./_variables.scss" as *;
-@use "../core/mixins" as *;
 
 @mixin kendo-card--theme() {
 
@@ -77,9 +78,9 @@
     // Card theme colors
     @each $theme-color, $color-props in $kendo-card-theme-colors {
 
-        $_text-color: map-get( $color-props, text );
-        $_bg: map-get( $color-props, bg );
-        $_border-color: map-get( $color-props, border );
+        $_text-color: map.get( $color-props, text );
+        $_bg: map.get( $color-props, bg );
+        $_border-color: map.get( $color-props, border );
 
         .k-card-#{$theme-color} {
             --kendo-card-text: var( --kendo-card-#{$theme-color}-text, #{$_text-color} );

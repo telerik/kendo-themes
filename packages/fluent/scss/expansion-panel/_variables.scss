@@ -1,9 +1,9 @@
-@use "../core/_variables" as *;
-@use "../core/color-system" as *;
+@use "sass:map";
+@use "../core/" as *;
 
 /// Vertical margin of the expander.
 /// @group expander
-$kendo-expander-margin-y: map-get( $kendo-spacing, 2 ) !default;
+$kendo-expander-margin-y: map.get( $kendo-spacing, 2 ) !default;
 /// Border width of the expander.
 /// @group expander
 $kendo-expander-border-width: 1px !default;
@@ -42,10 +42,10 @@ $kendo-expander-disabled-bg: var( --kendo-disabled-bg, initial ) !default;
 $kendo-expander-disabled-text: var( --kendo-disabled-text, initial ) !default;
 /// Offset of the focused expander.
 /// @group expander
-$kendo-expander-focus-offset: map-get( $kendo-spacing, hair ) !default;
+$kendo-expander-focus-offset: map.get( $kendo-spacing, hair ) !default;
 /// Outline width of the focused expander.
 /// @group expander
-$kendo-expander-focus-outline-width: map-get( $kendo-spacing, hair ) !default;
+$kendo-expander-focus-outline-width: map.get( $kendo-spacing, hair ) !default;
 /// Outline style of the focused expander.
 /// @group expander
 $kendo-expander-focus-outline-style: solid !default;
@@ -62,10 +62,10 @@ $kendo-expander-focus-shadow: inset 0px 0px 0px 2px get-theme-color-var( neutral
 
 /// Horizontal padding of the expander header.
 /// @group expander
-$kendo-expander-header-padding-x: map-get( $kendo-spacing, 4 ) !default;
+$kendo-expander-header-padding-x: map.get( $kendo-spacing, 4 ) !default;
 /// Vertical padding of the expander header.
 /// @group expander
-$kendo-expander-header-padding-y: map-get( $kendo-spacing, 3 ) !default;
+$kendo-expander-header-padding-y: map.get( $kendo-spacing, 3 ) !default;
 /// Text color of the expander header.
 /// @group expander
 $kendo-expander-header-text: get-theme-color-var( primary-100 ) !default;
@@ -86,14 +86,14 @@ $kendo-expander-header-sub-title-text: var( --kendo-subtle-text, initial ) !defa
 
 /// Horizontal margin of the expander indicator.
 /// @group expander
-$kendo-expander-indicator-margin-x: map-get( $kendo-spacing, 2 ) + map-get( $kendo-spacing, thin ) !default;
+$kendo-expander-indicator-margin-x: map.get( $kendo-spacing, 2 ) + map.get( $kendo-spacing, thin ) !default;
 /// Text color of the expander indicator.
 /// @group expander
 $kendo-expander-indicator-text: var( --kendo-expander-text, #{$kendo-expander-text} );
 
 /// Horizontal padding of the expander content.
 /// @group expander
-$kendo-expander-content-padding-x: map-get( $kendo-spacing, 4 ) !default;
+$kendo-expander-content-padding-x: map.get( $kendo-spacing, 4 ) !default;
 /// Vertical padding of the expander content.
 /// @group expander
-$kendo-expander-content-padding-y: map-get( $kendo-spacing, 4 ) !default;
+$kendo-expander-content-padding-y: map.get( $kendo-spacing, 4 ) !default;
