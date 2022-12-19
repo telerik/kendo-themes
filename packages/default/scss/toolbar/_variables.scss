@@ -14,7 +14,7 @@ $kendo-toolbar-padding-y-sm: k-map-get( $spacing, 1 ) !default;
 $kendo-toolbar-padding-y-md: k-map-get( $spacing, 2 ) !default;
 $kendo-toolbar-padding-y-lg: k-map-get( $spacing, 2 ) + k-map-get( $spacing, thin ) !default;
 
-/// The spacing betweem the toolbar tools.
+/// The spacing between the toolbar tools.
 /// @group toolbar
 $kendo-toolbar-spacing: null !default;
 $kendo-toolbar-spacing-sm: k-map-get( $spacing, 1 ) + k-map-get( $spacing, thin ) !default;
