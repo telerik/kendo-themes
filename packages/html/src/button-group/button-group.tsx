@@ -6,6 +6,7 @@ export interface ButtonGroupProps {
     children?: React.ReactElement<ButtonProps>[];
     className?: string;
     fillMode?: null | 'solid' | 'outline' | 'flat' | 'link' | 'clear';
+    disabled?: boolean;
 }
 
 export class ButtonGroup extends React.Component<ButtonGroupProps> {
@@ -19,8 +20,24 @@ export class ButtonGroup extends React.Component<ButtonGroupProps> {
             children,
             className,
             fillMode = ButtonGroup.defaultProps.fillMode,
+            disabled,
             ...htmlAttributes
         } = this.props;
+
+        function modifyChildren(child) {
+            const className = classNames(
+                child.props.className,
+                {
+                    'k-disabled': disabled
+                }
+            );
+
+            const props = {
+                className
+            };
+
+            return React.cloneElement(child, props);
+        }
 
         return (
             <div
@@ -29,10 +46,11 @@ export class ButtonGroup extends React.Component<ButtonGroupProps> {
                     className,
                     'k-button-group',
                     {
-                        [`k-button-group-${fillMode}`]: fillMode
+                        [`k-button-group-${fillMode}`]: fillMode,
+                        'k-disabled': disabled
                     }
                 )}>
-                {children}
+                { React.Children.map(children, child => modifyChildren(child)) }
             </div>
         );
     }
