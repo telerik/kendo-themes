@@ -11082,7 +11082,7 @@ The following table lists the available variables for customizing the Material t
 </td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing betweem the toolbar tools.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The spacing between the toolbar tools.</div></div>
     </td>
 </tr>
 <tr>

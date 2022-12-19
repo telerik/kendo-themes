@@ -26,6 +26,24 @@ The following table lists the available variables for customization.
 </thead>
 <tbody>
         <tr>
+    <td>$kendo-checkbox-border-radius</td>
+    <td></td>
+<td>
+
+`null`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border radius of radio button.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-checkbox-border-width</td>
     <td></td>
 <td>
@@ -44,119 +62,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-checkbox-width</td>
-    <td></td>
-<td>
-
-`map.get( $kendo-spacing, 5 )`
-
-</td>
-<td>
-
-
-
-</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Default width of the checbox.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-checkbox-height</td>
-    <td></td>
-<td>
-
-`map.get( $kendo-spacing, 5 )`
-
-</td>
-<td>
-
-
-
-</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Default height of the checbox.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-checkbox-indeterminate-width</td>
-    <td></td>
-<td>
-
-`( map.get( $kendo-spacing, 3) - map.get( $kendo-spacing, thin) )`
-
-</td>
-<td>
-
-
-
-</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Default width of indeterminate checkbox.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-checkbox-indeterminate-height</td>
-    <td></td>
-<td>
-
-`( map.get( $kendo-spacing, 3) - map.get( $kendo-spacing, thin) )`
-
-</td>
-<td>
-
-
-
-</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Default height of indeterminate checkbox.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-checkbox-indeterminate-top</td>
-    <td></td>
-<td>
-
-`map.get( $kendo-spacing, 1 )`
-
-</td>
-<td>
-
-
-
-</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Default top position of indeterminate checkbox.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-checkbox-indeterminate-left</td>
-    <td></td>
-<td>
-
-`map.get( $kendo-spacing, 1 )`
-
-</td>
-<td>
-
-
-
-</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Default left position of indeterminate checkbox.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-checkbox-bg</td>
     <td></td>
 <td>
 
-`var( --kendo-component-bg, initial )`
+`$kendo-component-bg`
 
 </td>
 <td>
@@ -174,7 +84,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`initial`
+`transparent`
 
 </td>
 <td>
@@ -206,29 +116,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-checkbox-focus-outline</td>
-    <td></td>
-<td>
-
-`get-theme-color-var( neutral-130 )`
-
-</td>
-<td>
-
-
-
-</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline of a focused checkbox.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-checkbox-hover-bg</td>
     <td></td>
 <td>
 
-`var( --kendo-checkbox-bg, initial )`
+`$kendo-checkbox-bg`
 
 </td>
 <td>
@@ -246,7 +138,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`var( --kendo-body-text, initial )`
+`get-theme-color( neutral, 130 )`
 
 </td>
 <td>
@@ -275,42 +167,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of hovered checkbox.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-checkbox-checked-hover-bg</td>
-    <td></td>
-<td>
-
-`get-theme-color-var( primary-120 )`
-
-</td>
-<td>
-
-
-
-</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background of hovered and checked checkbox.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-checkbox-checked-hover-border</td>
-    <td></td>
-<td>
-
-`get-theme-color-var( primary-120 )`
-
-</td>
-<td>
-
-
-
-</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border of hovered and checked checkbox.</div></div>
     </td>
 </tr>
 <tr>
@@ -350,24 +206,6 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-checkbox-hovered-text</td>
-    <td></td>
-<td>
-
-`get-theme-color-var( neutral-130 )`
-
-</td>
-<td>
-
-
-
-</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Color of checked checkbox.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-checkbox-checked-border</td>
     <td></td>
 <td>
@@ -383,6 +221,114 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of checked checkbox.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-checkbox-hover-checked-bg</td>
+    <td></td>
+<td>
+
+`get-theme-color-var( primary-110 )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background of hovered and checked checkbox.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-checkbox-hover-checked-text</td>
+    <td></td>
+<td>
+
+`$white`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Color of checked checkbox.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-checkbox-hover-checked-border</td>
+    <td></td>
+<td>
+
+`$kendo-checkbox-hover-checked-bg`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border of hovered and checked checkbox.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-checkbox-focus-border</td>
+    <td></td>
+<td>
+
+`null`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of focused checkbox.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-checkbox-focus-shadow</td>
+    <td></td>
+<td>
+
+`null`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Box shadow of focused checkbox.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-checkbox-focus-outline</td>
+    <td></td>
+<td>
+
+`1px solid get-theme-color-var( neutral-130 )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline of a focused checkbox.</div></div>
     </td>
 </tr>
 <tr>
@@ -408,7 +354,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`get-theme-color-var( primary-100 )`
+`get-theme-color( primary, 100 )`
 
 </td>
 <td>
@@ -440,11 +386,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-checkbox-indeterminate-hover-border</td>
+    <td>$kendo-checkbox-hover-indeterminate-bg</td>
     <td></td>
 <td>
 
-`get-theme-color-var( primary-120 )`
+`$kendo-checkbox-bg`
 
 </td>
 <td>
@@ -454,15 +400,15 @@ The following table lists the available variables for customization.
 </td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of indeterminate and hovered checkbox.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of hovered and indeterminate checkbox.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$kendo-checkbox-indeterminate-hover-bg</td>
+    <td>$kendo-checkbox-hover-indeterminate-text</td>
     <td></td>
 <td>
 
-`get-theme-color-var( primary-120 )`
+`get-theme-color( primary, 110 )`
 
 </td>
 <td>
@@ -472,15 +418,15 @@ The following table lists the available variables for customization.
 </td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of indeterminate and hovered checkbox.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of hovered and indeterminate checkbox.</div></div>
     </td>
 </tr>
 <tr>
-    <td>$kendo-checkbox-indeterminate-disabled-bg</td>
+    <td>$kendo-checkbox-hover-indeterminate-border</td>
     <td></td>
 <td>
 
-`get-theme-color-var( neutral-60 )`
+`get-theme-color-var( primary-110 )`
 
 </td>
 <td>
@@ -490,97 +436,7 @@ The following table lists the available variables for customization.
 </td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of indeterminate and disabled checkbox.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-checkbox-indeterminate-disabled-border</td>
-    <td></td>
-<td>
-
-`get-theme-color-var( neutral-60 )`
-
-</td>
-<td>
-
-
-
-</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of indeterminate and disabled checkbox.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-checkbox-focus-border</td>
-    <td></td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-
-
-</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of focused checkbox.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-checkbox-focus-shadow</td>
-    <td></td>
-<td>
-
-`0 0 0 2px rgba(0, 0, 0, .06)`
-
-</td>
-<td>
-
-
-
-</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Box shadow of focused checkbox.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-checkbox-focus-checked-border</td>
-    <td></td>
-<td>
-
-`null`
-
-</td>
-<td>
-
-
-
-</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of focused and checked checkbox.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-checkbox-focus-checked-shadow</td>
-    <td></td>
-<td>
-
-`0 0 0 2px rgba( get-theme-color-var( primary-100 ), .3 )`
-
-</td>
-<td>
-
-
-
-</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Box shadow of focused and checked checkbox.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of hovered and indeterminate checkbox.</div></div>
     </td>
 </tr>
 <tr>
@@ -588,7 +444,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`$white`
+`$kendo-checkbox-bg`
 
 </td>
 <td>
@@ -606,7 +462,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`null`
+`get-theme-color-var( neutral-60 )`
 
 </td>
 <td>
@@ -660,7 +516,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`null`
+`$white`
 
 </td>
 <td>
@@ -692,11 +548,65 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-checkbox-disabled-indeterminate-bg</td>
+    <td></td>
+<td>
+
+`$kendo-checkbox-bg`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of disabled and indeterminate checkbox.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-checkbox-disabled-indeterminate-text</td>
+    <td></td>
+<td>
+
+`get-theme-color( neutral, 60 )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of disabled and indeterminate checkbox.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-checkbox-disabled-indeterminate-border</td>
+    <td></td>
+<td>
+
+`get-theme-color-var( neutral-60 )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of disabled and indeterminate checkbox.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-checkbox-invalid-bg</td>
     <td></td>
 <td>
 
-`null`
+`$kendo-checkbox-bg`
 
 </td>
 <td>
@@ -818,6 +728,24 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-checkbox-hover-image</td>
+    <td></td>
+<td>
+
+`escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='none' stroke='#{$kendo-checkbox-hover-text}' stroke-linecap='square' stroke-linejoin='square' stroke-width='2' d='M3,8 l3,3 l7-7'/></svg>") )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Image of hovered checkbox indicator.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-checkbox-checked-image</td>
     <td></td>
 <td>
@@ -836,11 +764,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-checkbox-hover-image</td>
+    <td>$kendo-checkbox-indeterminate-image</td>
     <td></td>
 <td>
 
-`escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='none' stroke='#{$kendo-checkbox-hovered-text}' stroke-linecap='square' stroke-linejoin='square' stroke-width='2' d='M3,8 l3,3 l7-7'/></svg>") )`
+`escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><rect x='3' y='3' width='10' height='10' rx='2' fill='#{$kendo-checkbox-indeterminate-text}'/></svg>") )`
 
 </td>
 <td>
@@ -850,7 +778,79 @@ The following table lists the available variables for customization.
 </td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Image of hovered checkbox indicator.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Image of indeterminate checkbox indicator.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-checkbox-hover-checked-image</td>
+    <td></td>
+<td>
+
+`escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='none' stroke='#{$kendo-checkbox-hover-checked-text}' stroke-linecap='square' stroke-linejoin='square' stroke-width='2' d='M3,8 l3,3 l7-7'/></svg>") )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Image of hovered and checked checkbox indicator.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-checkbox-hover-indeterminate-image</td>
+    <td></td>
+<td>
+
+`escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><rect x='3' y='3' width='10' height='10' rx='2' fill='#{$kendo-checkbox-hover-indeterminate-text}'/></svg>") )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Image of hovered and indeterminate checkbox indicator.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-checkbox-disabled-checked-image</td>
+    <td></td>
+<td>
+
+`escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='none' stroke='#{$kendo-checkbox-disabled-checked-text}' stroke-linecap='square' stroke-linejoin='square' stroke-width='2' d='M3,8 l3,3 l7-7'/></svg>") )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Image of checked checkbox indicator.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-checkbox-disabled-indeterminate-image</td>
+    <td></td>
+<td>
+
+`escape-svg( url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><rect x='3' y='3' width='10' height='10' rx='2' fill='#{$kendo-checkbox-disabled-indeterminate-text}'/></svg>") )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Image of indeterminate checkbox indicator.</div></div>
     </td>
 </tr>
 <tr>
@@ -930,7 +930,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`$kendo-checkbox-checked-bg`
+`get-theme-color-var( primary-100 )`
 
 </td>
 <td>
@@ -959,24 +959,6 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Opacity of checkbox ripple.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-radio-checked-hover-border</td>
-    <td></td>
-<td>
-
-`get-theme-color-var( primary-110 )`
-
-</td>
-<td>
-
-
-
-</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border of hovered and checked radio.</div></div>
     </td>
 </tr>
 </tbody>
