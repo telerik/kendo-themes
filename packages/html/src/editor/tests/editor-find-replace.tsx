@@ -8,6 +8,7 @@ import { Editor } from '../editor';
 import { EditorContent } from '../editor-content';
 import { EditorToolbar } from '../editor-toolbar';
 import { Window } from '../../window';
+import { ButtonGroup } from '../../button-group';
 
 const root = ReactDOM.createRoot(
     document.getElementById('app') as HTMLElement
@@ -168,14 +169,12 @@ root.render(
             <section>
                 <Editor style={{ height: "150px" }}>
                     <EditorToolbar resizable>
-                        <span className="k-tool-group">
-                            <div className="k-button-group">
-                                <Button icon="bold"></Button>
-                                <Button icon="italic"></Button>
-                                <Button icon="underline"></Button>
-                                <Button icon="find" selected></Button>
-                            </div>
-                        </span>
+                        <ButtonGroup>
+                            <Button icon="bold"></Button>
+                            <Button icon="italic"></Button>
+                            <Button icon="underline"></Button>
+                            <Button icon="find" selected></Button>
+                        </ButtonGroup>
                     </EditorToolbar>
                     <EditorContent>
                         <div className="ProseMirror"><span className="k-text-selected">Word</span> and few more <span className="k-text-highlighted">word</span>s. And yet again. <span className="k-text-highlighted">Word</span>.</div>
