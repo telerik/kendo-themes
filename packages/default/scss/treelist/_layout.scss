@@ -33,14 +33,14 @@
             transform: translate(0, -50%);
         }
 
-        tr.k-footer td,
-        tr.k-footer-template td {
+        .k-table-row.k-footer .k-table-td,
+        .k-table-row.k-footer-template .k-table-td {
             border-width: $treelist-footer-row-border-width 0;
             border-style: solid;
             font-weight: bold;
         }
 
-        tr.k-footer + tr.k-footer td {
+        .k-table-row.k-footer + .k-table-row.k-footer .k-table-td {
             border-top-width: 0;
         }
     }
@@ -48,9 +48,9 @@
 
     // Sticky headers
     .k-treelist-scrollable {
-        > table,
-        .k-grid-header tr,
-        .k-grid-header th {
+        > .k-table,
+        .k-grid-header .k-table-row,
+        .k-grid-header .k-table-th {
             background-color: inherit;
         }
 
@@ -61,12 +61,12 @@
             left: 0;
         }
 
-        .k-grid-header th {
+        .k-grid-header .k-table-th {
             position: sticky;
             z-index: 1;
         }
 
-        .k-grid-header th.k-grid-header-sticky {
+        .k-grid-header .k-table-th.k-grid-header-sticky {
             z-index: 3;
         }
 
@@ -74,7 +74,7 @@
             padding-right: 0;
         }
 
-        tr.k-group-footer + tr.k-group-footer td {
+        .k-table-row.k-group-footer + .k-table-row.k-group-footer td {
             border-top-width: 0;
         }
 
