@@ -1,6 +1,5 @@
-@use "../core/_variables" as *;
-@use "../core/color-system" as *;
-@use "../core/mixins" as *;
+@use "sass:map";
+@use "../core/" as *;
 
 /// Width of the border around the stepper.
 /// @group stepper
@@ -27,30 +26,30 @@ $kendo-stepper-border: transparent !default;
 
 /// Horizontal margin the stepper label.
 /// @group stepper
-$kendo-stepper-label-margin-x: map-get( $kendo-spacing, 2 ) !default;
+$kendo-stepper-label-margin-x: map.get( $kendo-spacing, 2 ) !default;
 /// Horizontal padding the stepper label.
 /// @group stepper
-$kendo-stepper-label-padding-x: map-get( $kendo-spacing, 3 ) !default;
+$kendo-stepper-label-padding-x: map.get( $kendo-spacing, 3 ) !default;
 /// Vertical padding the stepper label.
 /// @group stepper
-$kendo-stepper-label-padding-y: ( map-get( $kendo-spacing, 1 ) + map-get( $kendo-spacing, thin ) ) !default;
+$kendo-stepper-label-padding-y: ( map.get( $kendo-spacing, 1 ) + map.get( $kendo-spacing, thin ) ) !default;
 
 /// Horizontal padding the stepper content.
 /// @group stepper
-$kendo-stepper-inline-content-padding-x: map-get( $kendo-spacing, 5 ) !default;
+$kendo-stepper-inline-content-padding-x: map.get( $kendo-spacing, 5 ) !default;
 /// Vertical padding the stepper content.
 /// @group stepper
-$kendo-stepper-inline-content-padding-y: map-get( $kendo-spacing, 3 ) !default;
+$kendo-stepper-inline-content-padding-y: map.get( $kendo-spacing, 3 ) !default;
 
 /// Width of the stepper indicator.
 /// @group stepper
-$kendo-stepper-indicator-width: ( map-get( $kendo-spacing, 7 ) + map-get( $kendo-spacing, thin ) ) !default;
+$kendo-stepper-indicator-width: ( map.get( $kendo-spacing, 7 ) + map.get( $kendo-spacing, thin ) ) !default;
 /// Height of the stepper indicator.
 /// @group stepper
 $kendo-stepper-indicator-height: $kendo-stepper-indicator-width !default;
 /// Border width of the stepper indicator.
 /// @group stepper
-$kendo-stepper-indicator-border-width: map-get( $kendo-spacing, hair ) !default;
+$kendo-stepper-indicator-border-width: map.get( $kendo-spacing, hair ) !default;
 /// Border radius of the stepper indicator.
 /// @group stepper
 $kendo-stepper-indicator-border-radius: 50% !default;
@@ -60,10 +59,10 @@ $kendo-stepper-indicator-border-radius: 50% !default;
 $kendo-stepper-indicator-focus-border-width: $kendo-stepper-indicator-border-width !default;
 /// The focus size of the stepper indicator.
 /// @group stepper
-$kendo-stepper-indicator-focus-size: map-get( $kendo-spacing, thin ) !default;
+$kendo-stepper-indicator-focus-size: map.get( $kendo-spacing, thin ) !default;
 /// The focus offset of the stepper indicator.
 /// @group stepper
-$kendo-stepper-indicator-focus-offset: ( map-get( $kendo-spacing, thin ) + map-get( $kendo-spacing, hair ) ) !default;
+$kendo-stepper-indicator-focus-offset: ( map.get( $kendo-spacing, thin ) + map.get( $kendo-spacing, hair ) ) !default;
 /// The focus calculated offset of the stepper indicator.
 /// @group stepper
 $kendo-stepper-indicator-focus-calc-offset: calc( #{$kendo-stepper-indicator-focus-border-width} + #{$kendo-stepper-indicator-focus-offset} ) !default;
@@ -189,7 +188,7 @@ $kendo-stepper-optional-label-font-style: italic !default;
 
 /// The size of the stepper progress bar.
 /// @group stepper
-$kendo-stepper-progressbar-size: map-get( $kendo-spacing, thin ) !default;
+$kendo-stepper-progressbar-size: map.get( $kendo-spacing, thin ) !default;
 
 /// The property name of the stepper transition.
 /// @group stepper

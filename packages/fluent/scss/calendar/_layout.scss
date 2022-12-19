@@ -1,5 +1,5 @@
-@use "../core/color-system" as *;
-@use "../core/mixins" as *;
+@use "sass:map";
+@use "../core/" as *;
 @use "./_variables.scss" as *;
 
 @mixin kendo-calendar--layout() {
@@ -458,12 +458,12 @@
 
     // Calendar sizes
     @each $size, $size-props in $kendo-calendar-sizes {
-        $_font-size: map-get( $size-props, font-size );
-        $_line-height: map-get( $size-props, line-height );
-        $_cell-size: map-get( $size-props, cell-size );
-        $_cell-padding-x: map-get( $size-props, cell-padding-x );
-        $_cell-padding-y: map-get( $size-props, cell-padding-y );
-        $_cell-font-size: map-get( $size-props, cell-font-size );
+        $_font-size: map.get( $size-props, font-size );
+        $_line-height: map.get( $size-props, line-height );
+        $_cell-size: map.get( $size-props, cell-size );
+        $_cell-padding-x: map.get( $size-props, cell-padding-x );
+        $_cell-padding-y: map.get( $size-props, cell-padding-y );
+        $_cell-font-size: map.get( $size-props, cell-font-size );
 
         $_month-cell-size: $_cell-size;
         $_year-cell-size: ( 2 * $_cell-size );

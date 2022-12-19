@@ -1,4 +1,4 @@
-@use "../core/color-system" as *;
+@use "../core/" as *;
 @use "./_variables.scss" as *;
 
 @mixin kendo-listbox--layout() {

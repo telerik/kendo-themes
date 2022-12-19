@@ -1,5 +1,5 @@
-@use "../core/color-system" as *;
-@use "../core/_variables.scss" as *;
+@use "sass:map";
+@use "../core/" as *;
 @use "../calendar/_variables.scss" as *;
 @use "../toolbar/_variables.scss" as *;
 
@@ -70,10 +70,10 @@ $kendo-scheduler-event-border-radius: var( --kendo-border-radius-md, 0 ) !defaul
 $kendo-scheduler-event-line-height: $kendo-scheduler-line-height !default;
 /// Horizontal padding of the scheduler event.
 /// @group scheduler
-$kendo-scheduler-event-padding-x: map-get( $kendo-spacing, 2 ) !default;
+$kendo-scheduler-event-padding-x: map.get( $kendo-spacing, 2 ) !default;
 /// Vertical padding of the scheduler event.
 /// @group scheduler
-$kendo-scheduler-event-padding-y: map-get( $kendo-spacing, thin ) !default;
+$kendo-scheduler-event-padding-y: map.get( $kendo-spacing, thin ) !default;
 /// Minumum height of the scheduler event.
 /// @group scheduler
 $kendo-scheduler-event-min-height: calc( #{$kendo-scheduler-line-height} + 2 * #{$kendo-scheduler-event-padding-y} ) !default;
@@ -132,10 +132,10 @@ $kendo-scheduler-event-ongoing-shadow: inset 0px 0px 0px 1px #ff0000 !default;
 
 /// Horizontal padding of the scheduler cell.
 /// @group scheduler
-$kendo-scheduler-cell-padding-x: map-get( $kendo-spacing, 2 ) !default;
+$kendo-scheduler-cell-padding-x: map.get( $kendo-spacing, 2 ) !default;
 /// Vertical padding of the scheduler cell.
 /// @group scheduler
-$kendo-scheduler-cell-padding-y: map-get( $kendo-spacing, 2 ) !default;
+$kendo-scheduler-cell-padding-y: map.get( $kendo-spacing, 2 ) !default;
 /// Height of the scheduler cell.
 /// @group scheduler
 $kendo-scheduler-cell-height: $kendo-line-height-em !default;
@@ -173,14 +173,14 @@ $kendo-scheduler-othermonth-text: null !default;
 
 /// Horizontal padding of the scheduler year view.
 /// @group scheduler
-$kendo-scheduler-yearview-padding-x: map-get( $kendo-spacing, 3 ) !default;
+$kendo-scheduler-yearview-padding-x: map.get( $kendo-spacing, 3 ) !default;
 /// Vertical padding of the scheduler year view.
 /// @group scheduler
 $kendo-scheduler-yearview-padding-y: $kendo-scheduler-yearview-padding-x !default;
 
 /// Spacing between the calendars in the scheduler year view.
 /// @group scheduler
-$kendo-scheduler-yearview-calendar-gap: map-get( $kendo-spacing, 3 ) !default;
+$kendo-scheduler-yearview-calendar-gap: map.get( $kendo-spacing, 3 ) !default;
 
 /// Days with events indicator size in the scheduler year view.
 /// @group scheduler
@@ -203,7 +203,7 @@ $kendo-scheduler-yearview-indicator-selected-bg: $white !default;
 
 /// Horizontal padding of the scheduler tooltip.
 /// @group scheduler
-$kendo-scheduler-tooltip-padding-x: map-get( $kendo-spacing, 2 ) !default;
+$kendo-scheduler-tooltip-padding-x: map.get( $kendo-spacing, 2 ) !default;
 /// Vertical padding of the scheduler tooltip.
 /// @group scheduler
 $kendo-scheduler-tooltip-padding-y: $kendo-scheduler-tooltip-padding-x !default;
@@ -225,7 +225,7 @@ $kendo-scheduler-tooltip-shadow: 0px 0px 10px rgba(0, 0, 0, .2 ) !default;
 
 /// Vertical spacing of the scheduler tooltip title.
 /// @group scheduler
-$kendo-scheduler-tooltip-title-margin-y: map-get( $kendo-spacing, 3 ) !default;
+$kendo-scheduler-tooltip-title-margin-y: map.get( $kendo-spacing, 3 ) !default;
 /// Font size of the month inside the scheduler tooltip.
 /// @group scheduler
 $kendo-scheduler-tooltip-month-font-size: var( --kendo-font-size-sm, inherit ) !default;
@@ -238,7 +238,7 @@ $kendo-scheduler-tooltip-day-font-size: calc( $kendo-scheduler-tooltip-month-fon
 $kendo-scheduler-tooltip-events-max-height: 250px !default;
 /// Spacing between the events inside the scheduler tooltip.
 /// @group scheduler
-$kendo-scheduler-tooltip-events-gap: map-get( $kendo-spacing, 2 ) !default;
+$kendo-scheduler-tooltip-events-gap: map.get( $kendo-spacing, 2 ) !default;
 
 /// Horizontal padding of the events inside the scheduler tooltip.
 /// @group scheduler
@@ -251,7 +251,7 @@ $kendo-scheduler-tooltip-event-padding-y: $kendo-scheduler-event-padding-y !defa
 $kendo-scheduler-tooltip-event-border-radius: $kendo-scheduler-event-border-radius !default;
 /// Spacing between the events items inside the scheduler tooltip.
 /// @group scheduler
-$kendo-scheduler-tooltip-event-gap:  map-get( $kendo-spacing, thin ) !default;
+$kendo-scheduler-tooltip-event-gap:  map.get( $kendo-spacing, thin ) !default;
 
 /// Color of the scheduler tooltip callout.
 /// @group scheduler

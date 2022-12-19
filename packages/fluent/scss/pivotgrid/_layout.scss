@@ -1,5 +1,6 @@
+@use "sass:map";
+@use "../core/" as *;
 @use "./_variables.scss" as *;
-@use "../core/_variables.scss" as *;
 
 @mixin kendo-pivotgrid--layout() {
 
@@ -286,7 +287,7 @@
         }
 
         .k-select-all .k-checkbox {
-            margin-inline-end: map-get( $kendo-spacing, 1 );
+            margin-inline-end: map.get( $kendo-spacing, 1 );
         }
 
         .k-fields-list-wrapper {
@@ -299,7 +300,7 @@
         }
 
         .k-settings-description {
-            margin-block-start: map-get( $kendo-spacing, 4 );
+            margin-block-start: map.get( $kendo-spacing, 4 );
             text-align: center;
         }
 
@@ -354,7 +355,7 @@
         align-items: center;
 
         .k-icon {
-            margin-inline-end: map-get( $kendo-spacing, 2 );
+            margin-inline-end: map.get( $kendo-spacing, 2 );
         }
         .k-dropdown-list {
             max-width: 100px;

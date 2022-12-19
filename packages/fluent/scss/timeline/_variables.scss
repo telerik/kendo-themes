@@ -1,19 +1,19 @@
+@use "sass:map";
 @use "sass:math";
-@use "../core/color-system" as *;
-@use "../core/_variables.scss" as *;
+@use "../core/" as *;
 @use "../card/_variables.scss" as *;
 
 // Timeline
 
 /// The horizontal spacing of the timeline.
 /// @group timeline
-$kendo-timeline-spacing-x: map-get( $kendo-spacing, 10 ) !default;
+$kendo-timeline-spacing-x: map.get( $kendo-spacing, 10 ) !default;
 /// The vertical spacing of the timeline.
 /// @group timeline
-$kendo-timeline-spacing-y: map-get( $kendo-spacing, 10 ) !default;
+$kendo-timeline-spacing-y: map.get( $kendo-spacing, 10 ) !default;
 /// The padding between the items in the timeline.
 /// @group timeline
-$kendo-timeline-items-padding: map-get( $kendo-spacing, 4 ) !default;
+$kendo-timeline-items-padding: map.get( $kendo-spacing, 4 ) !default;
 
 /// The font family of the timeline.
 /// @group timeline
@@ -27,30 +27,30 @@ $kendo-timeline-line-height: var( --kendo-line-height, normal ) !default;
 
 /// The horizontal mobile spacing of the timeline.
 /// @group timeline
-$kendo-timeline-mobile-spacing-x: map-get( $kendo-spacing, 4 ) !default;
+$kendo-timeline-mobile-spacing-x: map.get( $kendo-spacing, 4 ) !default;
 /// The vertical mobile spacing of the timeline.
 /// @group timeline
-$kendo-timeline-mobile-spacing-y: map-get( $kendo-spacing, 4 ) !default;
+$kendo-timeline-mobile-spacing-y: map.get( $kendo-spacing, 4 ) !default;
 
 /// The track arrow width of the timeline.
 /// @group timeline
-$kendo-timeline-track-arrow-width: ( map-get( $kendo-spacing, 7 ) + map-get( $kendo-spacing, thin ) ) !default;
+$kendo-timeline-track-arrow-width: ( map.get( $kendo-spacing, 7 ) + map.get( $kendo-spacing, thin ) ) !default;
 /// The track arrow height of the timeline.
 /// @group timeline
-$kendo-timeline-track-arrow-height: ( map-get( $kendo-spacing, 7 ) + map-get( $kendo-spacing, thin ) ) !default;
+$kendo-timeline-track-arrow-height: ( map.get( $kendo-spacing, 7 ) + map.get( $kendo-spacing, thin ) ) !default;
 
 /// The size of the track in the timeline.
 /// @group timeline
-$kendo-timeline-track-size: ( map-get( $kendo-spacing, 2 ) - map-get( $kendo-spacing, thin ) ) !default;
+$kendo-timeline-track-size: ( map.get( $kendo-spacing, 2 ) - map.get( $kendo-spacing, thin ) ) !default;
 /// The bottom padding of the wrapper of the track in the timeline.
 /// @group timeline
 $kendo-timeline-track-wrap-padding-bottom: math.div( $kendo-timeline-track-size, 2 ) !default;
 /// The border width of the track in the timeline.
 /// @group timeline
-$kendo-timeline-track-border-width: map-get( $kendo-spacing, hair ) !default;
+$kendo-timeline-track-border-width: map.get( $kendo-spacing, hair ) !default;
 /// The bottom margin of the track in the timeline.
 /// @group timeline
-$kendo-timeline-track-margin-bottom: map-get( $kendo-spacing, 4 ) !default;
+$kendo-timeline-track-margin-bottom: map.get( $kendo-spacing, 4 ) !default;
 /// The bottom of the track in the timeline.
 /// @group timeline
 $kendo-timeline-track-bottom-calc: calc( ( #{ $kendo-timeline-track-arrow-height } / 2 ) + #{ $kendo-timeline-track-wrap-padding-bottom } ) !default;
@@ -82,17 +82,17 @@ $kendo-timeline-track-arrow-disabled-border: var( --kendo-disabled-border, initi
 
 /// The offset of the track event in the timeline.
 /// @group timeline
-$kendo-timeline-track-event-offset: ( map-get( $kendo-spacing, 10 ) - map-get( $kendo-spacing, 2 ) ) !default;
+$kendo-timeline-track-event-offset: ( map.get( $kendo-spacing, 10 ) - map.get( $kendo-spacing, 2 ) ) !default;
 
 /// The horizontal padding of the flag in the timeline.
 /// @group timeline
-$kendo-timeline-flag-padding-x: map-get( $kendo-spacing, 2 ) !default;
+$kendo-timeline-flag-padding-x: map.get( $kendo-spacing, 2 ) !default;
 /// The vertical padding of the flag in the timeline.
 /// @group timeline
-$kendo-timeline-flag-padding-y: map-get( $kendo-spacing, 2 ) !default;
+$kendo-timeline-flag-padding-y: map.get( $kendo-spacing, 2 ) !default;
 /// The border radius of the flag in the timeline.
 /// @group timeline
-$kendo-timeline-flag-border-radius: map-get( $kendo-spacing, thin ) !default;
+$kendo-timeline-flag-border-radius: map.get( $kendo-spacing, thin ) !default;
 /// The line height of the flag in the timeline.
 /// @group timeline
 $kendo-timeline-flag-line-height: var( --kendo-line-height, normal ) !default;
@@ -101,7 +101,7 @@ $kendo-timeline-flag-line-height: var( --kendo-line-height, normal ) !default;
 $kendo-timeline-flag-box-shadow: var( --kendo-box-shadow-depth-1, none ) !default;
 /// The min widht of the flag in the timeline.
 /// @group timeline
-$kendo-timeline-flag-min-width: map-get( $kendo-spacing, 20 ) !default;
+$kendo-timeline-flag-min-width: map.get( $kendo-spacing, 20 ) !default;
 /// The max width of the flag in the timeline.
 /// @group timeline
 $kendo-timeline-flag-max-width: calc( #{ $kendo-timeline-flag-min-width } + 2 * #{ $kendo-timeline-spacing-x } ) !default;
@@ -110,7 +110,7 @@ $kendo-timeline-flag-max-width: calc( #{ $kendo-timeline-flag-min-width } + 2 * 
 $kendo-timeline-mobile-flag-max-width: calc( #{ $kendo-timeline-flag-min-width } + 2 * #{ $kendo-timeline-mobile-spacing-x } ) !default;
 /// The min width of the horizontal flag in the timeline.
 /// @group timeline
-$kendo-timeline-horizontal-flag-min-width: map-get( $kendo-spacing, 15 ) !default;
+$kendo-timeline-horizontal-flag-min-width: map.get( $kendo-spacing, 15 ) !default;
 /// The background of the flag in the timeline.
 /// @group timeline
 $kendo-timeline-flag-bg: get-theme-color-var( primary-100 ) !default;
@@ -119,13 +119,13 @@ $kendo-timeline-flag-bg: get-theme-color-var( primary-100 ) !default;
 $kendo-timeline-flag-text: var( --kendo-component-bg, initial ) !default;
 /// The width of the flag callout in the timeline.
 /// @group timeline
-$kendo-timeline-flag-callout-width: ( map-get( $kendo-spacing, 2 ) + map-get( $kendo-spacing, thin ) ) !default;
+$kendo-timeline-flag-callout-width: ( map.get( $kendo-spacing, 2 ) + map.get( $kendo-spacing, thin ) ) !default;
 /// The height of the flag callout in the timeline.
 /// @group timeline
-$kendo-timeline-flag-callout-height: ( map-get( $kendo-spacing, 2 ) + map-get( $kendo-spacing, thin ) ) !default;
+$kendo-timeline-flag-callout-height: ( map.get( $kendo-spacing, 2 ) + map.get( $kendo-spacing, thin ) ) !default;
 /// The offset bottom of the flag in the timeline.
 /// @group timeline
-$kendo-timeline-flag-offset-bottom: map-get( $kendo-spacing, 1 ) !default;
+$kendo-timeline-flag-offset-bottom: map.get( $kendo-spacing, 1 ) !default;
 /// The bottom margin of the flag in the timeline.
 /// @group timeline
 $kendo-timeline-flag-margin-bottom-calc: calc( #{ $kendo-timeline-track-size } + 2 * #{ $kendo-timeline-track-border-width } + #{ $kendo-timeline-flag-offset-bottom } + #{ $kendo-timeline-flag-callout-height } ) !default;
@@ -151,10 +151,10 @@ $kendo-timeline-card-scroll-thumb-hover: var( --kendo-hover-border, initial ) !d
 $kendo-timeline-date-body-text: var( --kendo-body-text, initial ) !default;
 /// The width of the date in the timeline.
 /// @group timeline
-$kendo-timeline-date-width: ( map-get( $kendo-spacing, 12 ) + map-get( $kendo-spacing, thin ) ) !default;
+$kendo-timeline-date-width: ( map.get( $kendo-spacing, 12 ) + map.get( $kendo-spacing, thin ) ) !default;
 /// The bottom margin of the date in the timeline.
 /// @group timeline
-$kendo-timeline-date-margin-bottom: map-get( $kendo-spacing, 2 ) !default;
+$kendo-timeline-date-margin-bottom: map.get( $kendo-spacing, 2 ) !default;
 
 /// The padding of the vertical timeline.
 /// @group timeline
@@ -174,10 +174,10 @@ $kendo-timeline-mobile-vertical-padding-with-dates-calc: calc( #{ $kendo-timelin
 
 /// The width of the circle in the timeline
 /// @group timeline
-$kendo-timeline-circle-width: map-get( $kendo-spacing, 4 ) !default;
+$kendo-timeline-circle-width: map.get( $kendo-spacing, 4 ) !default;
 /// The height of the circle in the timeline.
 /// @group timeline
-$kendo-timeline-circle-height: map-get( $kendo-spacing, 4 ) !default;
+$kendo-timeline-circle-height: map.get( $kendo-spacing, 4 ) !default;
 /// The background of the circle in the timeline.
 /// @group timeline
 $kendo-timeline-circle-bg: get-theme-color-var( primary-100 ) !default;

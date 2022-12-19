@@ -1,5 +1,5 @@
+@use "../core/" as *;
 @use "./_variables.scss" as *;
-@use "../core/mixins" as *;
 
 @mixin kendo-action-sheet--theme() {
 

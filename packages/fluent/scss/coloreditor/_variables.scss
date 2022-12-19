@@ -1,10 +1,10 @@
+@use "sass:map";
 @use "sass:math";
-@use "../core/color-system" as *;
-@use "../core/_variables.scss" as *;
+@use "../core/" as *;
 
 /// Spacer of the color editor.
 /// @group coloreditor
-$kendo-coloreditor-spacer: map-get( $kendo-spacing, 2 ) !default;
+$kendo-coloreditor-spacer: map.get( $kendo-spacing, 2 ) !default;
 
 /// Min width of the color editor.
 /// @group coloreditor
@@ -63,7 +63,7 @@ $kendo-coloreditor-color-preview-height: 14px !default;
 
 /// Spacing between the colors in the color editor preview.
 /// @group coloreditor
-$kendo-coloreditor-preview-spacing: map-get( $kendo-spacing, 1 );
+$kendo-coloreditor-preview-spacing: map.get( $kendo-spacing, 1 );
 
 /// Horizontal padding of the color editor views container.
 /// @group coloreditor
@@ -77,10 +77,10 @@ $kendo-coloreditor-views-spacing: $kendo-coloreditor-spacer !default;
 
 /// Horizontal padding of the color editor footer.
 /// @group coloreditor
-$kendo-coloreditor-footer-padding-y: map-get( $kendo-spacing, 2 ) !default;
+$kendo-coloreditor-footer-padding-y: map.get( $kendo-spacing, 2 ) !default;
 /// Vertical padding of the color editor footer.
 /// @group coloreditor
-$kendo-coloreditor-footer-padding-x: map-get( $kendo-spacing, 2 ) !default;
+$kendo-coloreditor-footer-padding-x: map.get( $kendo-spacing, 2 ) !default;
 
 /// The color of the focused colorgradient.
 /// @group coloreditor

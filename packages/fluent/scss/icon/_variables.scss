@@ -1,4 +1,5 @@
-@use "../core/_variables.scss" as *;
+@use "sass:map";
+@use "../core/" as *;
 
 /// Font size of the icons.
 /// @group icon
@@ -9,11 +10,11 @@ $kendo-icon-size-lg: calc( var( --kendo-icon-size, 1rem ) * 2 ) !default;
 
 /// Spacing around the icons.
 /// @group icon
-$kendo-icon-spacing: map-get( $kendo-spacing, 2 ) !default;
+$kendo-icon-spacing: map.get( $kendo-spacing, 2 ) !default;
 
 /// Padding of the action icons container.
 /// @group icon
-$kendo-icon-padding: map-get( $kendo-spacing, 1 ) !default;
+$kendo-icon-padding: map.get( $kendo-spacing, 1 ) !default;
 
 :root {
     --kendo-icon-size: #{$kendo-icon-size};

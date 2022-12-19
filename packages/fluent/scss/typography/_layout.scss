@@ -1,3 +1,4 @@
+@use "sass:map";
 @use "../core/" as *;
 @use "./_variables.scss" as *;
 
@@ -23,12 +24,12 @@
 
     // Headings
     @each $heading, $heading-props in $kendo-headings {
-        $_font-size: map-get( $heading-props, font-size );
-        $_font-family: map-get( $heading-props, font-family );
-        $_line-height: map-get( $heading-props, line-height );
-        $_font-weight: map-get( $heading-props, font-weight );
-        $_letter-spacing: map-get( $heading-props, letter-spacing );
-        $_margin: map-get( $heading-props, margin );
+        $_font-size: map.get( $heading-props, font-size );
+        $_font-family: map.get( $heading-props, font-family );
+        $_line-height: map.get( $heading-props, line-height );
+        $_font-weight: map.get( $heading-props, font-weight );
+        $_letter-spacing: map.get( $heading-props, letter-spacing );
+        $_margin: map.get( $heading-props, margin );
 
         .k-#{$heading} {
             @include typography(
@@ -90,12 +91,12 @@
 
     // Display
     @each $display, $display-props in $kendo-display {
-        $_font-size: map-get( $display-props, font-size );
-        $_font-family: map-get( $display-props, font-family );
-        $_line-height: map-get( $display-props, line-height );
-        $_font-weight: map-get( $display-props, font-weight );
-        $_letter-spacing: map-get( $display-props, letter-spacing );
-        $_margin: map-get( $display-props, margin );
+        $_font-size: map.get( $display-props, font-size );
+        $_font-family: map.get( $display-props, font-family );
+        $_line-height: map.get( $display-props, line-height );
+        $_font-weight: map.get( $display-props, font-weight );
+        $_letter-spacing: map.get( $display-props, letter-spacing );
+        $_margin: map.get( $display-props, margin );
 
         .k-display-#{$display} {
             @include typography(

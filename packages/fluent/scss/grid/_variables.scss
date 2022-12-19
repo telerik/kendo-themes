@@ -1,5 +1,5 @@
-@use "../core/color-system" as *;
-@use "../core/_variables.scss" as *;
+@use "sass:map";
+@use "../core/" as *;
 @use "../button/_variables.scss" as *;
 @use "../chip/_variables.scss" as *;
 @use "../table/_variables.scss" as *;
@@ -210,7 +210,7 @@ $kendo-grid-sort-index-height: var( --kendo-icon-size, 1rem ) !default;
 $kendo-grid-sort-index-spacing-y: calc( var( --kendo-icon-spacing, .5rem ) / 4 ) !default;
 /// Vertical offset of the grid sort index.
 /// @group grid
-$kendo-grid-sort-index-spacing-x: map-get( $kendo-spacing, thin ) !default;
+$kendo-grid-sort-index-spacing-x: map.get( $kendo-spacing, thin ) !default;
 /// Spacing of the grid sort icon.
 /// @group grid
 $kendo-grid-sort-icon-spacing: var( --kendo-icon-spacing-lg, .5rem ) !default;
@@ -229,14 +229,14 @@ $kendo-grid-sorted-bg: get-theme-color-var( neutral-10 ) !default;
 $kendo-grid-edit-cell-padding-x: $kendo-grid-cell-padding-x !default;
 /// Vertical padding of the grid edit cells.
 /// @group grid
-$kendo-grid-edit-cell-padding-y: map-get( $kendo-spacing, 1 ) + map-get( $kendo-spacing, hair ) !default;
+$kendo-grid-edit-cell-padding-y: map.get( $kendo-spacing, 1 ) + map.get( $kendo-spacing, hair ) !default;
 
 /// Horizontal padding of the grid command cells.
 /// @group grid
 $kendo-grid-command-cell-padding-y: calc( #{$kendo-table-cell-padding-y} - (#{$kendo-button-calc-size} - #{$kendo-line-height-em} ) / 2 ) !default;
 /// Vertical padding of the grid command cells.
 /// @group grid
-$kendo-grid-command-cell-button-spacing: map-get( $kendo-spacing, 2 ) !default;
+$kendo-grid-command-cell-button-spacing: map.get( $kendo-spacing, 2 ) !default;
 
 /// Horizontal padding of the grid group indicator.
 /// @group grid
@@ -340,17 +340,17 @@ $kendo-grid-sticky-selected-hover-bg: $kendo-grid-selected-hover-bg !default;
 
 /// Horizontal padding of the grid filter menu container.
 /// @group grid
-$kendo-filter-menu-container-padding-y: map-get( $kendo-spacing, 3 ) !default;
+$kendo-filter-menu-container-padding-y: map.get( $kendo-spacing, 3 ) !default;
 /// Vertical padding of the grid filter menu container.
 /// @group grid
-$kendo-filter-menu-container-padding-x: map-get( $kendo-spacing, 3 ) !default;
+$kendo-filter-menu-container-padding-x: map.get( $kendo-spacing, 3 ) !default;
 
 /// Default width of the grid column menu.
 /// @group grid
 $kendo-grid-column-menu-width: 230px !default;
 /// Spacing of the grid column menu.
 /// @group grid
-$kendo-grid-column-menu-spacing: map-get( $kendo-spacing, 2 ) !default;
+$kendo-grid-column-menu-spacing: map.get( $kendo-spacing, 2 ) !default;
 /// Focus shadow of the grid column menu.
 /// @group grid
 $kendo-grid-column-menu-shadow: var( --kendo-box-shadow-depth-1, none ) !default;
@@ -373,10 +373,10 @@ $kendo-grid-column-menu-multicheck-line-height: $kendo-list-line-height-md !defa
 
 /// Vertical padding of the grid column menu items wrap.
 /// @group grid
-$kendo-grid-column-menu-items-wrap-padding-y: map-get( $kendo-spacing, 2 ) !default;
+$kendo-grid-column-menu-items-wrap-padding-y: map.get( $kendo-spacing, 2 ) !default;
 /// Horizontal padding of the grid column menu items wrap.
 /// @group grid
-$kendo-grid-column-menu-items-wrap-padding-x: map-get( $kendo-spacing, 2 ) !default;
+$kendo-grid-column-menu-items-wrap-padding-x: map.get( $kendo-spacing, 2 ) !default;
 
 /// Horizontal padding of the grid column menu item.
 /// @group grid

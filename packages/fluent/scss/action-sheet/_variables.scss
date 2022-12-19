@@ -1,5 +1,5 @@
-@use "../core/color-system" as *;
-@use "../core/_variables.scss" as *;
+@use "sass:map";
+@use "../core/" as *;
 
 /// Horizontal padding of the action sheet.
 /// @group action-sheet
@@ -52,10 +52,10 @@ $kendo-actionsheet-shadow:  var( --kendo-box-shadow-depth-4, none ) !default;
 
 /// Horizontal padding of the action sheet header.
 /// @group action-sheet
-$kendo-actionsheet-header-padding-x: map-get( $kendo-spacing, 4 ) !default;
+$kendo-actionsheet-header-padding-x: map.get( $kendo-spacing, 4 ) !default;
 /// Vertical padding of the action sheet header.
 /// @group action-sheet
-$kendo-actionsheet-header-padding-y: map-get( $kendo-spacing, 2 ) !default;
+$kendo-actionsheet-header-padding-y: map.get( $kendo-spacing, 2 ) !default;
 /// Border width of the action sheet header.
 /// @group action-sheet
 $kendo-actionsheet-header-border-width: 1px !default;
@@ -70,7 +70,7 @@ $kendo-actionsheet-header-font-family: inherit !default;
 $kendo-actionsheet-header-line-height: inherit !default;
 /// Spacing between the action sheet header groups.
 /// @group action-sheet
-$kendo-actionsheet-header-gap: map-get( $kendo-spacing, 4 ) !default;
+$kendo-actionsheet-header-gap: map.get( $kendo-spacing, 4 ) !default;
 
 
 /// Background color of the action sheet header.
@@ -101,16 +101,16 @@ $kendo-actionsheet-subtitle-text: var( --kendo-subtle-text, inherit ) !default;
 $kendo-actionsheet-item-min-height: 40px !default;
 /// Horiozontal padding of the action sheet item.
 /// @group action-sheet
-$kendo-actionsheet-item-padding-x: map-get( $kendo-spacing, 4 ) !default;
+$kendo-actionsheet-item-padding-x: map.get( $kendo-spacing, 4 ) !default;
 /// Vertical padding of the action sheet item.
 /// @group action-sheet
-$kendo-actionsheet-item-padding-y: map-get( $kendo-spacing, 2 ) !default;
+$kendo-actionsheet-item-padding-y: map.get( $kendo-spacing, 2 ) !default;
 /// Border around the action sheet item.
 /// @group action-sheet
 $kendo-actionsheet-item-border-width: 1px !default;
 /// Spacing between the icon and the text in the action sheet item.
 /// @group action-sheet
-$kendo-actionsheet-item-spacing: map-get( $kendo-spacing, 2 ) !default;
+$kendo-actionsheet-item-spacing: map.get( $kendo-spacing, 2 ) !default;
 
 /// Size of the action sheet item icon.
 /// @group action-sheet
@@ -187,7 +187,7 @@ $kendo-actionsheet-item-disabled-border: var( --kendo-disabled-border, inherit )
 $kendo-adaptive-actionsheet-header-border-width: 1px !default;
 /// Vertical padding of the adaptive action sheet titlebar.
 /// @group action-sheet
-$kendo-adaptive-actionsheet-header-padding-y: map-get( $kendo-spacing, 4 ) !default;
+$kendo-adaptive-actionsheet-header-padding-y: map.get( $kendo-spacing, 4 ) !default;
 /// Horizontal padding of the adaptive action sheet titlebar.
 /// @group action-sheet
 $kendo-adaptive-actionsheet-header-padding-x: $kendo-adaptive-actionsheet-header-padding-y !default;
@@ -197,14 +197,14 @@ $kendo-adaptive-actionsheet-header-border: var( --kendo-component-border, initia
 
 /// Vertical padding of the adaptive action sheet content.
 /// @group action-sheet
-$kendo-adaptive-actionsheet-content-padding-y: map-get( $kendo-spacing, 2 ) !default;
+$kendo-adaptive-actionsheet-content-padding-y: map.get( $kendo-spacing, 2 ) !default;
 /// Horizontal padding of the adaptive action sheet content.
 /// @group action-sheet
-$kendo-adaptive-actionsheet-content-padding-x: map-get( $kendo-spacing, 4 ) !default;
+$kendo-adaptive-actionsheet-content-padding-x: map.get( $kendo-spacing, 4 ) !default;
 
 /// Vertical padding of the adaptive action sheet footer.
 /// @group action-sheet
-$kendo-adaptive-actionsheet-footer-padding-y: map-get( $kendo-spacing, 2 ) !default;
+$kendo-adaptive-actionsheet-footer-padding-y: map.get( $kendo-spacing, 2 ) !default;
 /// Horizontal padding of the adaptive action sheet footer.
 /// @group action-sheet
-$kendo-adaptive-actionsheet-footer-padding-x: map-get( $kendo-spacing, 4 ) !default;
+$kendo-adaptive-actionsheet-footer-padding-x: map.get( $kendo-spacing, 4 ) !default;

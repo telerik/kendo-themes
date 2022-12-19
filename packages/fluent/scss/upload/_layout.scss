@@ -1,6 +1,5 @@
+@use "../core/" as *;
 @use "./_variables.scss" as *;
-@use "../core/_variables.scss" as *;
-@use "../core/color-system" as *;
 
 @mixin kendo-upload--layout() {
 

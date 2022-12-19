@@ -1,5 +1,5 @@
-@use "../core/color-system" as *;
-@use "../core/_variables.scss" as *;
+@use "sass:map";
+@use "../core/" as *;
 
 /// Font family of the treeview component.
 /// @group treeview
@@ -16,18 +16,18 @@ $kendo-treeview-line-height-md: var( --kendo-line-height, normal ) !default;
 $kendo-treeview-line-height-lg: var( --kendo-line-height, normal ) !default;
 /// Indentation of child groups in treeview component.
 /// @group treeview
-$kendo-treeview-indent: map-get( $kendo-spacing, 4 ) !default;
+$kendo-treeview-indent: map.get( $kendo-spacing, 4 ) !default;
 
 /// Horizontal padding of treeview items.
 /// @group treeview
-$kendo-treeview-item-padding-x-sm: map-get( $kendo-spacing, 2 ) !default;
-$kendo-treeview-item-padding-x-md: map-get( $kendo-spacing, 2 ) !default;
-$kendo-treeview-item-padding-x-lg: map-get( $kendo-spacing, 2 ) !default;
+$kendo-treeview-item-padding-x-sm: map.get( $kendo-spacing, 2 ) !default;
+$kendo-treeview-item-padding-x-md: map.get( $kendo-spacing, 2 ) !default;
+$kendo-treeview-item-padding-x-lg: map.get( $kendo-spacing, 2 ) !default;
 /// Vertical padding of treeview items.
 /// @group treeview
-$kendo-treeview-item-padding-y-sm: map-get( $kendo-spacing, 2 ) - map-get( $kendo-spacing, thin ) !default;
-$kendo-treeview-item-padding-y-md: map-get( $kendo-spacing, 2 ) !default;
-$kendo-treeview-item-padding-y-lg: map-get( $kendo-spacing, 2 ) + map-get( $kendo-spacing, thin ) !default;
+$kendo-treeview-item-padding-y-sm: map.get( $kendo-spacing, 2 ) - map.get( $kendo-spacing, thin ) !default;
+$kendo-treeview-item-padding-y-md: map.get( $kendo-spacing, 2 ) !default;
+$kendo-treeview-item-padding-y-lg: map.get( $kendo-spacing, 2 ) + map.get( $kendo-spacing, thin ) !default;
 /// Border width of treeview items.
 /// @group treeview
 $kendo-treeview-item-border-width: 0 !default;
@@ -37,10 +37,10 @@ $kendo-treeview-item-border-radius: var( --kendo-border-radius-md, 0 ) !default;
 
 /// Horizontal padding of the treeview filter element.
 /// @group treeview
-$kendo-treeview-filter-padding-x: map-get( $kendo-spacing, 2 ) !default;
+$kendo-treeview-filter-padding-x: map.get( $kendo-spacing, 2 ) !default;
 /// Vertical padding of the treeview filter element.
 /// @group treeview
-$kendo-treeview-filter-padding-y: map-get( $kendo-spacing, 2 ) !default;
+$kendo-treeview-filter-padding-y: map.get( $kendo-spacing, 2 ) !default;
 
 
 /// The sizes of the treeview.

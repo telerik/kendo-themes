@@ -1,3 +1,4 @@
+@use "sass:map";
 @use "./_variables.scss" as *;
 
 @mixin kendo-input--theme() {
@@ -149,25 +150,25 @@
     @each $component, $fill-modes in $kendo-input-theme-colors {
         @each $fill-mode, $color-props in $fill-modes {
 
-            $_text-color: map-get( $color-props, text );
-            $_background-color: map-get( $color-props, bg );
-            $_border-color: map-get( $color-props, border );
+            $_text-color: map.get( $color-props, text );
+            $_background-color: map.get( $color-props, bg );
+            $_border-color: map.get( $color-props, border );
 
-            $_hover-text: map-get( $color-props, hover-text );
-            $_hover-bg: map-get( $color-props, hover-bg );
-            $_hover-border: map-get( $color-props, hover-border );
+            $_hover-text: map.get( $color-props, hover-text );
+            $_hover-bg: map.get( $color-props, hover-bg );
+            $_hover-border: map.get( $color-props, hover-border );
 
-            $_focus-text: map-get( $color-props, focus-text );
-            $_focus-bg: map-get( $color-props, focus-bg );
-            $_focus-border: map-get( $color-props, focus-border );
+            $_focus-text: map.get( $color-props, focus-text );
+            $_focus-bg: map.get( $color-props, focus-bg );
+            $_focus-border: map.get( $color-props, focus-border );
 
-            $_hover-focus-text: map-get( $color-props, hover-focus-text );
-            $_hover-focus-bg: map-get( $color-props, hover-focus-bg );
-            $_hover-focus-border: map-get( $color-props, hover-focus-border );
+            $_hover-focus-text: map.get( $color-props, hover-focus-text );
+            $_hover-focus-bg: map.get( $color-props, hover-focus-bg );
+            $_hover-focus-border: map.get( $color-props, hover-focus-border );
 
-            $_disabled-text: map-get( $color-props, disabled-text );
-            $_disabled-bg: map-get( $color-props, disabled-bg );
-            $_disabled-border: map-get( $color-props, disabled-border );
+            $_disabled-text: map.get( $color-props, disabled-text );
+            $_disabled-bg: map.get( $color-props, disabled-bg );
+            $_disabled-border: map.get( $color-props, disabled-border );
 
             .k-#{$component}-#{$fill-mode} {
                 --kendo-#{$component}-text: var( --kendo-#{$component}-#{$fill-mode}-text, #{$_text-color} );

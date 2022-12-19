@@ -1,6 +1,6 @@
+@use "sass:map";
 @use "sass:math";
-@use "../core/_variables.scss" as *;
-@use "../core/color-system" as *;
+@use "../core/" as *;
 
 /// Background color of the imageeditor.
 /// @group imageeditor
@@ -27,7 +27,7 @@ $kendo-imageeditor-padding-x: 0 !default;
 
 /// Border width of the imageeditor.
 /// @group imageeditor
-$kendo-imageeditor-border-width: map-get( $kendo-spacing, hair ) !default;
+$kendo-imageeditor-border-width: map.get( $kendo-spacing, hair ) !default;
 /// Font size of the imageeditor.
 /// @group imageeditor
 $kendo-imageeditor-font-size: var( --kendo-font-size, inherit ) !default;
@@ -62,10 +62,10 @@ $kendo-imageeditor-action-pane-text: inherit !default;
 $kendo-imageeditor-action-pane-border: inherit !default;
 /// Imageeditor action pane vertical padding.
 /// @group imageeditor
-$kendo-imageeditor-action-pane-padding-y: map-get( $kendo-spacing, 3 ) !default;
+$kendo-imageeditor-action-pane-padding-y: map.get( $kendo-spacing, 3 ) !default;
 /// Imageeditor action pane horizontal padding.
 /// @group imageeditor
-$kendo-imageeditor-action-pane-padding-x: map-get( $kendo-spacing, 3 ) !default;
+$kendo-imageeditor-action-pane-padding-x: map.get( $kendo-spacing, 3 ) !default;
 /// Imageeditor action pane width.
 /// @group imageeditor
 $kendo-imageeditor-action-pane-width: if( $kendo-imageeditor-content-border-width == 0, 240px, calc( 240px + #{$kendo-imageeditor-content-border-width}) );
@@ -84,23 +84,23 @@ $kendo-imageeditor-crop-border: $white !default;
 $kendo-imageeditor-crop-overlay-bg: rgba( $black, .3 ) !default;
 /// Crop border width of the imageeditor.
 /// @group imageeditor
-$kendo-imageeditor-crop-border-width: map-get( $kendo-spacing, hair ) !default;
+$kendo-imageeditor-crop-border-width: map.get( $kendo-spacing, hair ) !default;
 /// Crop border style of the imageeditor.
 /// @group imageeditor
 $kendo-imageeditor-crop-border-style: dashed !default;
 
 /// Imageeditor resize handle horizontal margin.
 /// @group imageeditor
-$kendo-imageeditor-resize-handle-margin-x: map-get( $kendo-spacing, hair ) !default;
+$kendo-imageeditor-resize-handle-margin-x: map.get( $kendo-spacing, hair ) !default;
 /// Imageeditor resize handle vertical margin.
 /// @group imageeditor
-$kendo-imageeditor-resize-handle-margin-y: map-get( $kendo-spacing, hair ) !default;
+$kendo-imageeditor-resize-handle-margin-y: map.get( $kendo-spacing, hair ) !default;
 /// Imageeditor resize handle border width.
 /// @group imageeditor
 $kendo-imageeditor-resize-handle-border-width: 0 2px 2px 0 !default;
 /// Imageeditor resize handle size.
 /// @group imageeditor
-$kendo-imageeditor-resize-handle-size: map-get( $kendo-spacing, 4 ) !default;
+$kendo-imageeditor-resize-handle-size: map.get( $kendo-spacing, 4 ) !default;
 /// Imageeditor resize handle top offset.
 /// @group imageeditor
 $kendo-imageeditor-resize-top-offset: math.div( $kendo-imageeditor-resize-handle-size, 2 ) !default;

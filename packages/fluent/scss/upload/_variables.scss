@@ -1,5 +1,5 @@
-@use "../core/color-system" as *;
-@use "../core/_variables.scss" as *;
+@use "sass:map";
+@use "../core/" as *;
 
 /// Width of the border around the upload.
 /// @group upload
@@ -29,10 +29,10 @@ $kendo-upload-border: var( --kendo-component-border, initial ) !default;
 
 /// Horizontal padding of the upload dropzone.
 /// @group upload
-$kendo-upload-dropzone-padding-x: map-get( $kendo-spacing, 2 ) !default;
+$kendo-upload-dropzone-padding-x: map.get( $kendo-spacing, 2 ) !default;
 /// Vertical padding of the upload dropzone.
 /// @group upload
-$kendo-upload-dropzone-padding-y: map-get( $kendo-spacing, 2 ) !default;
+$kendo-upload-dropzone-padding-y: map.get( $kendo-spacing, 2 ) !default;
 /// Background color of the upload dropzone.
 /// @group upload
 $kendo-upload-dropzone-bg: get-theme-color-var( neutral-10 ) !default; // header-bg
@@ -55,14 +55,14 @@ $kendo-upload-status-text-opacity: null !default;
 
 /// Horizontal padding of the upload items.
 /// @group upload
-$kendo-upload-item-padding-x: map-get( $kendo-spacing, 2 ) !default;
+$kendo-upload-item-padding-x: map.get( $kendo-spacing, 2 ) !default;
 /// Vertical padding of the upload items.
 /// @group upload
-$kendo-upload-item-padding-y: map-get( $kendo-spacing, 2 ) !default;
+$kendo-upload-item-padding-y: map.get( $kendo-spacing, 2 ) !default;
 
 /// Spacing between multiple items in the upload.
 /// @group upload
-$kendo-upload-multiple-items-spacing: map-get( $kendo-spacing, 4 ) !default;
+$kendo-upload-multiple-items-spacing: map.get( $kendo-spacing, 4 ) !default;
 
 /// Font size of the upload validation message.
 /// @group upload

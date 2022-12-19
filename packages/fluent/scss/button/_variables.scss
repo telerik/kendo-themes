@@ -1,23 +1,22 @@
 @use "sass:color";
 @use "sass:map";
 @use "../core/" as *;
-@use "../core/color-system" as *;
 
 /// Width of the border around the button.
 /// @group button
-$kendo-button-border-width: map-get( $kendo-spacing, hair ) !default;
+$kendo-button-border-width: map.get( $kendo-spacing, hair ) !default;
 
 /// Horizontal padding of the button.
 /// @group button
-$kendo-button-padding-x-sm: map-get( $kendo-spacing, 5 ) !default;
-$kendo-button-padding-x-md: map-get( $kendo-spacing, 5 ) !default;
-$kendo-button-padding-x-lg: map-get( $kendo-spacing, 5 ) !default;
+$kendo-button-padding-x-sm: map.get( $kendo-spacing, 5 ) !default;
+$kendo-button-padding-x-md: map.get( $kendo-spacing, 5 ) !default;
+$kendo-button-padding-x-lg: map.get( $kendo-spacing, 5 ) !default;
 
 /// Vertical padding of the button.
 /// @group button
-$kendo-button-padding-y-sm: map-get( $kendo-spacing, 1  ) !default;
-$kendo-button-padding-y-md: map-get( $kendo-spacing, 2 ) - map-get( $kendo-spacing, thin ) !default;
-$kendo-button-padding-y-lg: map-get( $kendo-spacing, 2 ) !default;
+$kendo-button-padding-y-sm: map.get( $kendo-spacing, 1  ) !default;
+$kendo-button-padding-y-md: map.get( $kendo-spacing, 2 ) - map.get( $kendo-spacing, thin ) !default;
+$kendo-button-padding-y-lg: map.get( $kendo-spacing, 2 ) !default;
 
 /// Font sizes of the button.
 /// @group button
@@ -76,31 +75,31 @@ $kendo-button-sizes: (
 
 /// Content spacing of the button.
 /// @group button
-$kendo-button-spacing: map-get( $kendo-spacing, 2 ) !default;
+$kendo-button-spacing: map.get( $kendo-spacing, 2 ) !default;
 
 /// Offset of the focused button.
 /// @group button
-$kendo-button-focus-offset: map-get( $kendo-spacing, thin ) !default;
+$kendo-button-focus-offset: map.get( $kendo-spacing, thin ) !default;
 /// Outline width of the focused button.
 /// @group button
-$kendo-button-focus-outline-width: map-get( $kendo-spacing, hair ) !default;
+$kendo-button-focus-outline-width: map.get( $kendo-spacing, hair ) !default;
 /// Outline style of the focused button.
 /// @group button
 $kendo-button-focus-outline-style: solid !default;
 
 /// Offset of the flat focused button.
 /// @group button
-$kendo-button-flat-focus-offset: map-get( $kendo-spacing, hair ) !default;
+$kendo-button-flat-focus-offset: map.get( $kendo-spacing, hair ) !default;
 /// Outline width of the flat focused button.
 /// @group button
-$kendo-button-flat-focus-outline-width: map-get( $kendo-spacing, thin ) !default;
+$kendo-button-flat-focus-outline-width: map.get( $kendo-spacing, thin ) !default;
 
 /// Offset of the link focused button.
 /// @group button
 $kendo-button-link-focus-offset: 0 !default;
 /// Outline width of the flat focused button.
 /// @group button
-$kendo-button-link-focus-outline-width: map-get( $kendo-spacing, hair ) !default;
+$kendo-button-link-focus-outline-width: map.get( $kendo-spacing, hair ) !default;
 
 // Theme variations for the button.
 

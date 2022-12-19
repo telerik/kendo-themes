@@ -1,5 +1,5 @@
-@use "../core/color-system" as *;
-@use "../core/_variables.scss" as *;
+@use "sass:map";
+@use "../core/" as *;
 
 /// Horizontal padding of the popup.
 /// @group popup
@@ -23,10 +23,10 @@ $kendo-popup-line-height: var( --kendo-line-height, normal) !default;
 
 /// Horizontal padding of the content inside the popup.
 /// @group popup
-$kendo-popup-content-padding-x: map-get( $kendo-spacing, 2 ) !default;
+$kendo-popup-content-padding-x: map.get( $kendo-spacing, 2 ) !default;
 /// Vertical padding of the content inside the popup.
 /// @group popup
-$kendo-popup-content-padding-y: map-get( $kendo-spacing, 2 ) !default;
+$kendo-popup-content-padding-y: map.get( $kendo-spacing, 2 ) !default;
 
 /// Background color of the popup.
 /// @group popup

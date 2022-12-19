@@ -1,8 +1,7 @@
+@use "sass:map";
 @use "sass:math";
+@use "../core/" as *;
 @use "./_variables.scss" as *;
-@use "../core/_variables.scss" as *;
-@use "../core/mixins/border-radius" as *;
-@use "../core/mixins/disabled" as *;
 
 @mixin kendo-radio--layout() {
 
@@ -239,11 +238,11 @@
 
     // Radio size
     @each $size, $size-props in $kendo-radio-sizes {
-        $_size: map-get( $size-props, size );
-        $_glyph-size: map-get( $size-props, glyph-size );
-        $_ripple-size: map-get( $size-props, ripple-size );
-        $_checked-border-width: map-get( $size-props, checked-border-width);
-        $_checked-position: map-get( $size-props, checked-position);
+        $_size: map.get( $size-props, size );
+        $_glyph-size: map.get( $size-props, glyph-size );
+        $_ripple-size: map.get( $size-props, ripple-size );
+        $_checked-border-width: map.get( $size-props, checked-border-width);
+        $_checked-position: map.get( $size-props, checked-position);
 
         .k-radio-#{$size} {
             --INTERNAL-kendo-radio-width: #{ $_size };

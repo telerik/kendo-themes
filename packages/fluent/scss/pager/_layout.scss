@@ -1,5 +1,5 @@
-@use "../core/mixins" as *;
-@use "../core/color-system" as *;
+@use "sass:map";
+@use "../core/" as *;
 @use "../button/_variables.scss" as *;
 @use "./_variables.scss" as *;
 
@@ -198,9 +198,9 @@
 
     // Pager sizes
     @each $size, $size-props in $kendo-pager-sizes {
-        $_padding-x: map-get($size-props, padding-x);
-        $_padding-y: map-get($size-props, padding-y);
-        $_item-group-spacing: map-get($size-props, item-group-spacing);
+        $_padding-x: map.get($size-props, padding-x);
+        $_padding-y: map.get($size-props, padding-y);
+        $_item-group-spacing: map.get($size-props, item-group-spacing);
 
         .k-pager-#{$size} {
             --INTERNAL--kendo-pager-padding-x: var( --kendo-pager-#{$size}-padding-x, #{$_padding-x} );

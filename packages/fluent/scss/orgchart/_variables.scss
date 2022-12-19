@@ -1,10 +1,10 @@
-@use "../core/color-system" as *;
-@use "../core/_variables.scss" as *;
+@use "sass:map";
+@use "../core/" as *;
 @use "../card/_variables.scss" as *;
 
 /// Spacing index of the orgchart.
 /// @group orgchart
-$kendo-orgchart-spacer: map-get( $kendo-spacing, 6) !default;
+$kendo-orgchart-spacer: map.get( $kendo-spacing, 6) !default;
 /// Vertical padding of the orgchart.
 /// @group orgchart
 $kendo-orgchart-padding-y: $kendo-orgchart-spacer !default;
@@ -80,7 +80,7 @@ $kendo-orgchart-node-group-title-line-height: var( --kendo-line-height-md, norma
 
 /// Vertical margin of the orgchart node group subtitle.
 /// @group orgchart
-$kendo-orgchart-node-group-subtitle-margin-y: $kendo-orgchart-spacer - map-get( $kendo-spacing, 1 ) !default;
+$kendo-orgchart-node-group-subtitle-margin-y: $kendo-orgchart-spacer - map.get( $kendo-spacing, 1 ) !default;
 /// Font size of the orgchart node group subtitle.
 /// @group orgchart
 $kendo-orgchart-node-group-subtitle-font-size: var( --kendo-font-size, inherit ) !default;
@@ -123,7 +123,7 @@ $kendo-orgchart-card-subtitle-line-height: var( --kendo-line-height-md, inherit 
 
 /// Vertical padding of the orgchart card body.
 /// @group orgchart
-$kendo-orgchart-card-body-padding-y: $kendo-orgchart-spacer - map-get( $kendo-spacing, 2 ) !default;
+$kendo-orgchart-card-body-padding-y: $kendo-orgchart-spacer - map.get( $kendo-spacing, 2 ) !default;
 /// Horizontal padding of the orgchart card body.
 /// @group orgchart
 $kendo-orgchart-card-body-padding-x: $kendo-orgchart-card-body-padding-y !default;
@@ -136,7 +136,7 @@ $kendo-orgchart-card-body-border-color: transparent !default;
 
 /// Horizontal margin of the orgchart card body title wrap.
 /// @group orgchart
-$kendo-orgchart-card-body-vbox-margin-x: $kendo-orgchart-spacer - map-get( $kendo-spacing, 2 ) !default;
+$kendo-orgchart-card-body-vbox-margin-x: $kendo-orgchart-spacer - map.get( $kendo-spacing, 2 ) !default;
 /// Min height of the orgchart card body title wrap.
 /// @group orgchart
 $kendo-orgchart-card-body-vbox-min-height: $kendo-card-avatar-size !default;

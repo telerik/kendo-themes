@@ -1,6 +1,7 @@
+@use "sass:map";
 @use "../core/" as *;
-@use "./_variables.scss" as *;
 @use "../button/_variables.scss" as *;
+@use "./_variables.scss" as *;
 
 @mixin kendo-toolbar--layout() {
 
@@ -105,9 +106,9 @@
 
     // Toolbar sizes
     @each $size, $size-props in $kendo-toolbar-sizes {
-        $_padding-x: map-get( $size-props, padding-x );
-        $_padding-y: map-get( $size-props, padding-y );
-        $_spacing: map-get( $size-props, spacing );
+        $_padding-x: map.get( $size-props, padding-x );
+        $_padding-y: map.get( $size-props, padding-y );
+        $_spacing: map.get( $size-props, spacing );
 
         .k-toolbar-#{$size} {
             --INTERNAL--kendo-toolbar-padding-x: var( --kendo-toolbar-#{$size}-padding-x, #{$_padding-x} );
@@ -167,7 +168,7 @@
         }
 
         .k-separator {
-            margin-block: map-get( $kendo-spacing, 1 );
+            margin-block: map.get( $kendo-spacing, 1 );
         }
 
         // Group
@@ -222,5 +223,3 @@
     }
 
 }
-
-

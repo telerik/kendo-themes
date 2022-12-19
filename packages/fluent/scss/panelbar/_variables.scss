@@ -1,5 +1,5 @@
-@use "../core/color-system" as *;
-@use "../core/variables" as *;
+@use "sass:map";
+@use "../core/" as *;
 @use "../list/variables" as *;
 
 /// Horizontal padding of the panelbar.
@@ -33,23 +33,23 @@ $kendo-panelbar-item-border-style: solid !default;
 
 /// Spacing around the icon of the panelbar items.
 /// @group panelbar
-$kendo-panelbar-icon-spacing: map-get( $kendo-spacing, 2 ) !default;
+$kendo-panelbar-icon-spacing: map.get( $kendo-spacing, 2 ) !default;
 
 /// Horizontal padding of the panelbar header.
 /// @group panelbar
 $kendo-panelbar-header-padding-x-start: calc( var( --kendo-panelbar-icon-spacing, #{$kendo-panelbar-icon-spacing} ) * 2 + var( --kendo-icon-size, 1rem ) ) !default;
-$kendo-panelbar-header-padding-x-end: map-get( $kendo-spacing, 2) !default;
+$kendo-panelbar-header-padding-x-end: map.get( $kendo-spacing, 2) !default;
 /// Vertical padding of the panelbar header.
 /// @group panelbar
-$kendo-panelbar-header-padding-y: map-get( $kendo-spacing, 3 ) !default;
+$kendo-panelbar-header-padding-y: map.get( $kendo-spacing, 3 ) !default;
 
 /// Horizontal padding of the panelbar items.
 /// @group panelbar
 $kendo-panelbar-item-padding-x-start: calc( var( --kendo-panelbar-icon-spacing, #{$kendo-panelbar-icon-spacing} ) * 2 + var( --kendo-icon-size, 1rem ) ) !default;
-$kendo-panelbar-item-padding-x-end: map-get( $kendo-spacing, 2) !default;
+$kendo-panelbar-item-padding-x-end: map.get( $kendo-spacing, 2) !default;
 /// Vertical padding of the panelbar items.
 /// @group panelbar
-$kendo-panelbar-item-padding-y: map-get( $kendo-spacing, 3 ) !default;
+$kendo-panelbar-item-padding-y: map.get( $kendo-spacing, 3 ) !default;
 
 /// Maximum nesting of the panelbar items.
 /// @group panelbar

@@ -1,17 +1,17 @@
-@use "../core/color-system" as *;
-@use "../core/_variables.scss" as *;
+@use "sass:map";
+@use "../core/" as *;
 @use "../button/_variables.scss" as *;
 
 /// Horizontal padding of the pager.
 /// @group pager
-$kendo-pager-padding-x: map-get( $kendo-spacing, 2 ) !default;
-$kendo-pager-padding-x-sm: map-get( $kendo-spacing, 1 ) + map-get( $kendo-spacing, thin ) !default;
-$kendo-pager-padding-x-md: map-get( $kendo-spacing, 2 ) !default;
-$kendo-pager-padding-x-lg: map-get( $kendo-spacing, 2 ) + map-get( $kendo-spacing, thin ) !default;
+$kendo-pager-padding-x: map.get( $kendo-spacing, 2 ) !default;
+$kendo-pager-padding-x-sm: map.get( $kendo-spacing, 1 ) + map.get( $kendo-spacing, thin ) !default;
+$kendo-pager-padding-x-md: map.get( $kendo-spacing, 2 ) !default;
+$kendo-pager-padding-x-lg: map.get( $kendo-spacing, 2 ) + map.get( $kendo-spacing, thin ) !default;
 
 /// Vertical padding of the pager.
 /// @group pager
-$kendo-pager-padding-y: map-get( $kendo-spacing, 2 ) !default;
+$kendo-pager-padding-y: map.get( $kendo-spacing, 2 ) !default;
 $kendo-pager-padding-y-sm: $kendo-pager-padding-x-sm !default;
 $kendo-pager-padding-y-md: $kendo-pager-padding-x-md !default;
 $kendo-pager-padding-y-lg: $kendo-pager-padding-x-lg !default;
@@ -62,9 +62,9 @@ $kendo-pager-item-spacing: null !default;
 
 /// Spacing between the pager item groups according to the pager size.
 /// @group pager
-$kendo-pager-item-group-spacing-sm: map-get( $kendo-spacing, 2 ) !default;
-$kendo-pager-item-group-spacing-md: map-get( $kendo-spacing, 2 ) !default;
-$kendo-pager-item-group-spacing-lg: map-get( $kendo-spacing, 2 ) !default;
+$kendo-pager-item-group-spacing-sm: map.get( $kendo-spacing, 2 ) !default;
+$kendo-pager-item-group-spacing-md: map.get( $kendo-spacing, 2 ) !default;
+$kendo-pager-item-group-spacing-lg: map.get( $kendo-spacing, 2 ) !default;
 
 /// Text color of the pager sizes label.
 /// @group pager

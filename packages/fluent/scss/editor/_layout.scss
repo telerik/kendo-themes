@@ -1,3 +1,4 @@
+@use "sass:map";
 @use "sass:math";
 @use "../core/" as *;
 @use "./_variables.scss" as *;
@@ -346,7 +347,7 @@
             flex: 1;
         }
         .k-search-wrap {
-            margin-inline-start: map-get( $kendo-spacing, 4 );
+            margin-inline-start: map.get( $kendo-spacing, 4 );
             width: 150px;
             display: flex;
             align-items: center;
@@ -363,7 +364,7 @@
 
         // Filebrowser toolbar
         .k-filebrowser-toolbar {
-            margin-block-start: map-get( $kendo-spacing, 4 );
+            margin-block-start: map.get( $kendo-spacing, 4 );
         }
 
         .k-upload {
@@ -390,7 +391,7 @@
             flex-flow: row wrap;
             height: 390px;
             max-height: 50vh;
-            margin-block-end: map-get( $kendo-spacing, 4 );
+            margin-block-end: map.get( $kendo-spacing, 4 );
             padding: $kendo-padding-y $kendo-padding-x;
             border-top-width: 0;
             overflow: auto;
@@ -482,7 +483,7 @@
 
             & + .k-color-picker,
             & + .k-dropdown-list {
-                margin-inline-start: map-get( $kendo-spacing, 2 );
+                margin-inline-start: map.get( $kendo-spacing, 2 );
             }
         }
 

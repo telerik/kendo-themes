@@ -1,6 +1,5 @@
 @use "sass:map";
-@use "../core/color-system" as *;
-@use "../core/_variables.scss" as *;
+@use "../core/" as *;
 
 /// Width of the border around the dialog.
 /// @group dialog
@@ -20,34 +19,34 @@ $kendo-dialog-titlebar-border: var( --kendo-component-border, initial )  !defaul
 $kendo-dialog-titlebar-border-width: 0 !default;
 /// Horizontal padding of the dialog title bar.
 /// @group dialog
-$kendo-dialog-titlebar-padding-x: map-get( $kendo-spacing, 6 ) !default;
+$kendo-dialog-titlebar-padding-x: map.get( $kendo-spacing, 6 ) !default;
 /// Vertical padding of the dialog title bar.
 /// @group dialog
-$kendo-dialog-titlebar-padding-y: map-get( $kendo-spacing, 4 ) !default;
+$kendo-dialog-titlebar-padding-y: map.get( $kendo-spacing, 4 ) !default;
 
 /// Horizontal padding of the content of the dialog.
 /// @group dialog
-$kendo-dialog-inner-padding-x: map-get( $kendo-spacing, 6 ) !default;
+$kendo-dialog-inner-padding-x: map.get( $kendo-spacing, 6 ) !default;
 /// Vertical padding of the content of the dialog.
 /// @group dialog
-$kendo-dialog-inner-padding-y: map-get( $kendo-spacing, 3 ) !default;
+$kendo-dialog-inner-padding-y: map.get( $kendo-spacing, 3 ) !default;
 
 /// Horizontal padding of the dialog action buttons.
 /// @group dialog
-$kendo-dialog-buttongroup-padding-x: map-get( $kendo-spacing, 6 ) !default; // $actions-padding-x
+$kendo-dialog-buttongroup-padding-x: map.get( $kendo-spacing, 6 ) !default; // $actions-padding-x
 /// Vertical padding of the dialog action buttons.
 /// @group dialog
-$kendo-dialog-buttongroup-padding-y: map-get( $kendo-spacing, 6 ) !default; // $actions-padding-y
+$kendo-dialog-buttongroup-padding-y: map.get( $kendo-spacing, 6 ) !default; // $actions-padding-y
 /// Width of the top border of the dialog action buttons.
 /// @group dialog
 $kendo-dialog-buttongroup-border-width: 0 !default;
 /// Spacing between the action buttons of the dialog.
 /// @group dialog
-$kendo-dialog-buttongroup-spacing: map-get( $kendo-spacing, 3 ) !default;
+$kendo-dialog-buttongroup-spacing: map.get( $kendo-spacing, 3 ) !default;
 
 /// Spacing between the buttons in the header of the dialog.
 /// @group dialog
-$kendo-dialog-button-spacing: map-get( $kendo-spacing, 2 ) !default; // $actions-padding-y
+$kendo-dialog-button-spacing: map.get( $kendo-spacing, 2 ) !default; // $actions-padding-y
 
 /// Box shadow around the dialog.
 /// @group dialog
@@ -96,4 +95,3 @@ $kendo-dialog-theme-colors: ();
         generate-theme-variation( light, neutral, $ui-states )
     );
 }
-

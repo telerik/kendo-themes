@@ -1,3 +1,4 @@
+@use "sass:map";
 @use "sass:math";
 @use "../core/" as *;
 @use "./_variables.scss" as *;
@@ -188,7 +189,7 @@
 
     // Sizes
     @each $size, $size-props in $kendo-form-sizes {
-        $_form-rows-spacing: map-get($size-props, form-rows-spacing);
+        $_form-rows-spacing: map.get($size-props, form-rows-spacing);
 
         .k-form-#{$size} {
             .k-form-field {
@@ -284,12 +285,12 @@
     // Action buttons
     .k-popup-edit-form > .k-actions,
     .k-edit-form-container .k-actions {
-        margin: map-get( $kendo-spacing, 4 ) (-$kendo-window-inner-padding-x) (-$kendo-window-inner-padding-y);
+        margin: map.get( $kendo-spacing, 4 ) (-$kendo-window-inner-padding-x) (-$kendo-window-inner-padding-y);
     }
 
 
     .k-edit-label {
-        margin-block-end: map-get( $kendo-spacing, 4 );
+        margin-block-end: map.get( $kendo-spacing, 4 );
         padding-block: calc( #{$kendo-input-padding-y-md} + #{$kendo-input-border-width} );
         width: 30%;
         line-height: var( --kendo-form-line-height, #{$kendo-form-line-height} );
@@ -298,7 +299,7 @@
         clear: both;
     }
     .k-edit-field {
-        margin-block-end: map-get( $kendo-spacing, 4 );
+        margin-block-end: map.get( $kendo-spacing, 4 );
         width: 65%;
         float: right;
         clear: right;
@@ -323,11 +324,11 @@
 
         .k-radio-label,
         .k-checkbox-label {
-            margin-inline-end: map-get( $kendo-spacing, 4 );
+            margin-inline-end: map.get( $kendo-spacing, 4 );
         }
 
         > .k-reset > li + li {
-            margin-block-start: math.div( map-get( $kendo-spacing, 4 ), 2 );
+            margin-block-start: math.div( map.get( $kendo-spacing, 4 ), 2 );
         }
 
         .k-reset .k-widget {

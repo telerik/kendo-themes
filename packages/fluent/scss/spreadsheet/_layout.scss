@@ -1,10 +1,11 @@
+@use "sass:map";
 @use "../core/" as *;
-@use "./_variables.scss" as *;
 @use "../menu/_variables.scss"as *;
 @use "../toolbar/_variables.scss"as *;
 @use "../forms/_variables.scss" as *;
 @use "../input/_variables.scss" as *;
 @use "../list/_variables.scss" as *;
+@use "./_variables.scss" as *;
 
 @mixin kendo-spreadsheet--layout() {
 
@@ -646,7 +647,7 @@
             }
 
             .k-actions {
-                margin-block-start: map-get( $kendo-spacing, 3 );
+                margin-block-start: map.get( $kendo-spacing, 3 );
             }
         }
 
@@ -717,12 +718,12 @@
     .k-spreadsheet-format-cells {
 
         .k-spreadsheet-preview {
-            margin-block-start: map-get( $kendo-spacing, 2 );
+            margin-block-start: map.get( $kendo-spacing, 2 );
             text-align: center;
         }
 
         .k-list-scroller {
-            margin-block-start: map-get( $kendo-spacing, 2 );
+            margin-block-start: map.get( $kendo-spacing, 2 );
             height: 210px;
             border-width: 1px;
             border-style: solid;
@@ -752,7 +753,7 @@
         .k-page-orientation {
             position: absolute;
             inset-inline-end: 0;
-            inset-block-start: map-get( $kendo-spacing, 2 );
+            inset-block-start: map.get( $kendo-spacing, 2 );
 
             .k-icon {
                 font-size: 6em;

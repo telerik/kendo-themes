@@ -1,13 +1,13 @@
-@use "../core/color-system" as *;
-@use "../core/_variables.scss" as *;
+@use "sass:map";
+@use "../core/" as *;
 @use "../icon/_variables.scss" as *;
 
 /// Horizontal padding of the dropzone.
 /// @group dropzone
-$kendo-dropzone-padding-x: map-get( $kendo-spacing, 2 ) !default;
+$kendo-dropzone-padding-x: map.get( $kendo-spacing, 2 ) !default;
 /// Vertical padding of the dropzone.
 /// @group dropzone
-$kendo-dropzone-padding-y: map-get( $kendo-spacing, 2 ) !default;
+$kendo-dropzone-padding-y: map.get( $kendo-spacing, 2 ) !default;
 /// Border width of the dropzone.
 /// @group dropzone
 $kendo-dropzone-border-width: 1px !default;
@@ -40,7 +40,7 @@ $kendo-dropzone-border: var( --kendo-component-border, initial ) !default;
 $kendo-dropzone-icon-size: calc( var( --kendo-icon-size, 1rem ) * 3 ) !default;
 /// Spacing below the icon.
 /// @group dropzone
-$kendo-dropzone-icon-spacing: map-get( $kendo-spacing, 6 ) !default;
+$kendo-dropzone-icon-spacing: map.get( $kendo-spacing, 6 ) !default;
 /// Text color of the icon.
 /// @group dropzone
 $kendo-dropzone-icon-text: get-theme-color-var( neutral-90 ) !default;
@@ -56,7 +56,7 @@ $kendo-dropzone-hint-font-size: inherit !default;
 $kendo-dropzone-hint-font-weight: var( --kendo-font-weight-bold, bold ) !default;
 /// Spacing below the hint.
 /// @group dropzone
-$kendo-dropzone-hint-spacing: map-get( $kendo-spacing, 2 ) !default;
+$kendo-dropzone-hint-spacing: map.get( $kendo-spacing, 2 ) !default;
 /// Text color of the hint.
 /// @group dropzone
 $kendo-dropzone-hint-text: $kendo-dropzone-text !default;

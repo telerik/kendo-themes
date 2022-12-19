@@ -1,6 +1,5 @@
 @use "sass:map";
-@use "../core/color-system" as *;
-@use "../core/variables" as *;
+@use "../core/" as *;
 
 /// Border width of the avatar.
 /// @group avatar
@@ -19,9 +18,9 @@ $kendo-avatar-line-height: var( --kendo-line-height, inherit ) !default;
 /// The sizes of the avatar.
 /// @group avatar
 $kendo-avatar-sizes: (
-    sm: map-get( $kendo-spacing, 4 ),
-    md: map-get( $kendo-spacing, 8 ),
-    lg: map-get( $kendo-spacing, 16 )
+    sm: map.get( $kendo-spacing, 4 ),
+    md: map.get( $kendo-spacing, 8 ),
+    lg: map.get( $kendo-spacing, 16 )
 ) !default;
 
 // Theme variations for the avatar.

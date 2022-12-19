@@ -1,4 +1,4 @@
-@use "../core/mixins" as *;
+@use "../core/" as *;
 @use "./_variables.scss" as *;
 
 @mixin kendo-pdf-viewer--theme() {

@@ -1,4 +1,5 @@
-@use "../core/color-system" as *;
+@use "sass:map";
+@use "../core/" as *;
 @use "./_variables.scss" as *;
 
 @mixin kendo-notification--theme() {
@@ -18,9 +19,9 @@
 
     @each $theme-color, $color-props in $kendo-notification-theme-colors {
         $_text: inherit;
-        $_bg: map-get( $color-props, bg );
-        $_border: map-get( $color-props, border );
-        $_icon: map-get( $color-props, text );
+        $_bg: map.get( $color-props, bg );
+        $_border: map.get( $color-props, border );
+        $_icon: map.get( $color-props, text );
 
         .k-notification-#{$theme-color} {
             --kendo-notification-text: var( --kendo-notification-#{$theme-color}-text, #{$_text} );

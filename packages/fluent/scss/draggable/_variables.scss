@@ -1,6 +1,5 @@
 @use "sass:math";
-@use "../core/color-system" as *;
-@use "../core/_variables.scss" as *;
+@use "../core/" as *;
 
 /// Borer radius of the drag clue.
 /// @group draggable

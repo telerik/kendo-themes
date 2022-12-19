@@ -1,3 +1,5 @@
+@use "sass:map";
+
 // Functions
 @forward "./functions";
 
@@ -24,7 +26,7 @@ $components: null !default;
 
 @mixin core-configure($config: null) {
     @if $config {
-        $_components: map-get( $config, "components" );
+        $_components: map.get( $config, "components" );
 
         @if ($_components) {
             module.$components: $_components;

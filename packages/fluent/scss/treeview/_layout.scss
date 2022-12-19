@@ -1,5 +1,5 @@
-@use "../core/color-system" as *;
-@use "../core/mixins" as *;
+@use "sass:map";
+@use "../core/" as *;
 @use "./_variables.scss" as *;
 
 @mixin kendo-treeview--layout() {
@@ -141,10 +141,10 @@
 
     // Treeview sizes
     @each $size, $size-props in $kendo-treeview-sizes {
-        $_font-size: map-get( $size-props, font-size );
-        $_line-height: map-get( $size-props, line-height );
-        $_item-padding-x: map-get( $size-props, item-padding-x );
-        $_item-padding-y: map-get( $size-props, item-padding-y );
+        $_font-size: map.get( $size-props, font-size );
+        $_line-height: map.get( $size-props, line-height );
+        $_item-padding-x: map.get( $size-props, item-padding-x );
+        $_item-padding-y: map.get( $size-props, item-padding-y );
 
         .k-treeview-#{$size} {
             --INTERNAL--kendo-treeview-font-size: var( --kendo-treeview-#{$size}-font-size, #{$_font-size} );
