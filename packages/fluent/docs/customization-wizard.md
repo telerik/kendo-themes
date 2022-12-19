@@ -48,7 +48,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 6 )`
+`map.get( $kendo-spacing, 6 )`
 
 </td>
 <td>
@@ -66,7 +66,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 6 )`
+`map.get( $kendo-spacing, 6 )`
 
 </td>
 <td>
@@ -138,7 +138,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 3 )`
+`map.get( $kendo-spacing, 3 )`
 
 </td>
 <td>
@@ -156,7 +156,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 3 )`
+`map.get( $kendo-spacing, 3 )`
 
 </td>
 <td>
@@ -246,7 +246,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 7 )`
+`map.get( $kendo-spacing, 7 )`
 
 </td>
 <td>
@@ -264,7 +264,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 6 )`
+`map.get( $kendo-spacing, 6 )`
 
 </td>
 <td>

@@ -30,7 +30,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`0 0 map-get( $kendo-spacing, 3 ) 0`
+`0 0 map.get( $kendo-spacing, 3 ) 0`
 
 </td>
 <td>
@@ -48,7 +48,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 3 )`
+`map.get( $kendo-spacing, 3 )`
 
 </td>
 <td>
@@ -66,7 +66,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 )`
+`map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>

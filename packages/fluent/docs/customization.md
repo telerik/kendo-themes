@@ -318,7 +318,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, thin )`
+`map.get( $kendo-spacing, thin )`
 
 </td>
 <td>
@@ -665,7 +665,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 3 )`
+`map.get( $kendo-spacing, 3 )`
 
 </td>
 <td>
@@ -683,7 +683,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 3 )`
+`map.get( $kendo-spacing, 3 )`
 
 </td>
 <td>
@@ -1064,7 +1064,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 4 )`
+`map.get( $kendo-spacing, 4 )`
 
 </td>
 <td>
@@ -1082,7 +1082,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 )`
+`map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -1172,7 +1172,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 4 )`
+`map.get( $kendo-spacing, 4 )`
 
 </td>
 <td>
@@ -1334,7 +1334,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 4 )`
+`map.get( $kendo-spacing, 4 )`
 
 </td>
 <td>
@@ -1352,7 +1352,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 )`
+`map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -1388,7 +1388,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 )`
+`map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -1784,7 +1784,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 4 )`
+`map.get( $kendo-spacing, 4 )`
 
 </td>
 <td>
@@ -1838,7 +1838,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 )`
+`map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -1856,7 +1856,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 4 )`
+`map.get( $kendo-spacing, 4 )`
 
 </td>
 <td>
@@ -1874,7 +1874,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 )`
+`map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -1892,7 +1892,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 4 )`
+`map.get( $kendo-spacing, 4 )`
 
 </td>
 <td>
@@ -2021,7 +2021,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 )`
+`map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -2039,7 +2039,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 )`
+`map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -2147,7 +2147,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 )`
+`map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -2259,9 +2259,9 @@ The following table lists the available variables for customizing the Fluent the
 <td>
 
 `(
-    sm: map-get( $kendo-spacing, 4 ),
-    md: map-get( $kendo-spacing, 8 ),
-    lg: map-get( $kendo-spacing, 16 )
+    sm: map.get( $kendo-spacing, 4 ),
+    md: map.get( $kendo-spacing, 8 ),
+    lg: map.get( $kendo-spacing, 16 )
 )`
 
 </td>
@@ -2355,7 +2355,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, hair )`
+`map.get( $kendo-spacing, hair )`
 
 </td>
 <td>
@@ -2391,7 +2391,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, thin )`
+`map.get( $kendo-spacing, thin )`
 
 </td>
 <td>
@@ -2409,7 +2409,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, thin )`
+`map.get( $kendo-spacing, thin )`
 
 </td>
 <td>
@@ -2542,7 +2542,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 6 )`
+`map.get( $kendo-spacing, 6 )`
 
 </td>
 <td>
@@ -2560,7 +2560,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, thin )`
+`map.get( $kendo-spacing, thin )`
 
 </td>
 <td>
@@ -2578,7 +2578,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, hair )`
+`map.get( $kendo-spacing, hair )`
 
 </td>
 <td>
@@ -2614,7 +2614,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 )`
+`map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -2689,7 +2689,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 1 ) + map-get( $kendo-spacing, thin )`
+`map.get( $kendo-spacing, 1 ) + map.get( $kendo-spacing, thin )`
 
 </td>
 <td>
@@ -2833,7 +2833,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 )`
+`map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -2851,7 +2851,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, thin )`
+`map.get( $kendo-spacing, thin )`
 
 </td>
 <td>
@@ -2941,7 +2941,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 1 )`
+`map.get( $kendo-spacing, 1 )`
 
 </td>
 <td>
@@ -3196,7 +3196,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 )`
+`map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -3214,7 +3214,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 1 ) + map-get( $kendo-spacing, thin )`
+`map.get( $kendo-spacing, 1 ) + map.get( $kendo-spacing, thin )`
 
 </td>
 <td>
@@ -3955,7 +3955,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 )`
+`map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -3973,7 +3973,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, hair )`
+`map.get( $kendo-spacing, hair )`
 
 </td>
 <td>
@@ -3991,7 +3991,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 5 )`
+`map.get( $kendo-spacing, 5 )`
 
 </td>
 <td>
@@ -4009,7 +4009,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 1  )`
+`map.get( $kendo-spacing, 1  )`
 
 </td>
 <td>
@@ -4136,7 +4136,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 )`
+`map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -4154,7 +4154,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, thin )`
+`map.get( $kendo-spacing, thin )`
 
 </td>
 <td>
@@ -4172,7 +4172,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, hair )`
+`map.get( $kendo-spacing, hair )`
 
 </td>
 <td>
@@ -4208,7 +4208,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, hair )`
+`map.get( $kendo-spacing, hair )`
 
 </td>
 <td>
@@ -4226,7 +4226,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, thin )`
+`map.get( $kendo-spacing, thin )`
 
 </td>
 <td>
@@ -4262,7 +4262,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, hair )`
+`map.get( $kendo-spacing, hair )`
 
 </td>
 <td>
@@ -4445,7 +4445,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 3 )`
+`map.get( $kendo-spacing, 3 )`
 
 </td>
 <td>
@@ -4463,7 +4463,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 3 ) map-get( $kendo-spacing, 1 )`
+`map.get( $kendo-spacing, 3 ) map.get( $kendo-spacing, 1 )`
 
 </td>
 <td>
@@ -4571,7 +4571,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 3 )`
+`map.get( $kendo-spacing, 3 )`
 
 </td>
 <td>
@@ -4589,7 +4589,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 3 )`
+`map.get( $kendo-spacing, 3 )`
 
 </td>
 <td>
@@ -4625,7 +4625,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 1 ) + map-get( $kendo-spacing, thin )`
+`map.get( $kendo-spacing, 1 ) + map.get( $kendo-spacing, thin )`
 
 </td>
 <td>
@@ -4823,7 +4823,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 3 )`
+`map.get( $kendo-spacing, 3 )`
 
 </td>
 <td>
@@ -4841,7 +4841,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 1 )`
+`map.get( $kendo-spacing, 1 )`
 
 </td>
 <td>
@@ -4949,7 +4949,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 3 )`
+`map.get( $kendo-spacing, 3 )`
 
 </td>
 <td>
@@ -4967,7 +4967,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 4 )`
+`map.get( $kendo-spacing, 4 )`
 
 </td>
 <td>
@@ -5489,7 +5489,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 3 )`
+`map.get( $kendo-spacing, 3 )`
 
 </td>
 <td>
@@ -5507,7 +5507,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 3 ) map-get( $kendo-spacing, 1 )`
+`map.get( $kendo-spacing, 3 ) map.get( $kendo-spacing, 1 )`
 
 </td>
 <td>
@@ -5525,7 +5525,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 3 )`
+`map.get( $kendo-spacing, 3 )`
 
 </td>
 <td>
@@ -5636,7 +5636,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 )`
+`map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -5891,7 +5891,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 3 )`
+`map.get( $kendo-spacing, 3 )`
 
 </td>
 <td>
@@ -5909,7 +5909,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 3 )`
+`map.get( $kendo-spacing, 3 )`
 
 </td>
 <td>
@@ -6017,7 +6017,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 4 )`
+`map.get( $kendo-spacing, 4 )`
 
 </td>
 <td>
@@ -6197,7 +6197,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 3 )`
+`map.get( $kendo-spacing, 3 )`
 
 </td>
 <td>
@@ -6215,7 +6215,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 3 )`
+`map.get( $kendo-spacing, 3 )`
 
 </td>
 <td>
@@ -6305,7 +6305,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 3 )`
+`map.get( $kendo-spacing, 3 )`
 
 </td>
 <td>
@@ -6323,7 +6323,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 3 )`
+`map.get( $kendo-spacing, 3 )`
 
 </td>
 <td>
@@ -6467,7 +6467,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 3 )`
+`map.get( $kendo-spacing, 3 )`
 
 </td>
 <td>
@@ -6485,7 +6485,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 3 )`
+`map.get( $kendo-spacing, 3 )`
 
 </td>
 <td>
@@ -6575,7 +6575,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 3 )`
+`map.get( $kendo-spacing, 3 )`
 
 </td>
 <td>
@@ -6593,7 +6593,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 3 )`
+`map.get( $kendo-spacing, 3 )`
 
 </td>
 <td>
@@ -6629,7 +6629,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 )`
+`map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -7754,7 +7754,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 4 )`
+`map.get( $kendo-spacing, 4 )`
 
 </td>
 <td>
@@ -7772,7 +7772,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 4 )`
+`map.get( $kendo-spacing, 4 )`
 
 </td>
 <td>
@@ -7934,7 +7934,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 )`
+`map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -7952,7 +7952,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 4 )`
+`map.get( $kendo-spacing, 4 )`
 
 </td>
 <td>
@@ -8114,7 +8114,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 3 )`
+`map.get( $kendo-spacing, 3 )`
 
 </td>
 <td>
@@ -8132,7 +8132,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 )`
+`map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -8150,7 +8150,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, thin )`
+`map.get( $kendo-spacing, thin )`
 
 </td>
 <td>
@@ -8186,7 +8186,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 )`
+`map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -8222,7 +8222,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 3 )`
+`map.get( $kendo-spacing, 3 )`
 
 </td>
 <td>
@@ -8402,7 +8402,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 3 )`
+`map.get( $kendo-spacing, 3 )`
 
 </td>
 <td>
@@ -8420,7 +8420,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 )`
+`map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -8438,7 +8438,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 )`
+`map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -8891,7 +8891,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 5 )`
+`map.get( $kendo-spacing, 5 )`
 
 </td>
 <td>
@@ -8909,7 +8909,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 5 )`
+`map.get( $kendo-spacing, 5 )`
 
 </td>
 <td>
@@ -8927,7 +8927,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`( map-get( $kendo-spacing, 3) - map-get( $kendo-spacing, thin) )`
+`( map.get( $kendo-spacing, 3) - map.get( $kendo-spacing, thin) )`
 
 </td>
 <td>
@@ -8945,7 +8945,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`( map-get( $kendo-spacing, 3) - map-get( $kendo-spacing, thin) )`
+`( map.get( $kendo-spacing, 3) - map.get( $kendo-spacing, thin) )`
 
 </td>
 <td>
@@ -8963,7 +8963,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 1 )`
+`map.get( $kendo-spacing, 1 )`
 
 </td>
 <td>
@@ -8981,7 +8981,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 1 )`
+`map.get( $kendo-spacing, 1 )`
 
 </td>
 <td>
@@ -9701,7 +9701,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 )`
+`map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -9719,7 +9719,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 4 )`
+`map.get( $kendo-spacing, 4 )`
 
 </td>
 <td>
@@ -9848,7 +9848,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 1 )`
+`map.get( $kendo-spacing, 1 )`
 
 </td>
 <td>
@@ -9866,7 +9866,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 1 )`
+`map.get( $kendo-spacing, 1 )`
 
 </td>
 <td>
@@ -9923,7 +9923,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 1 )`
+`map.get( $kendo-spacing, 1 )`
 
 </td>
 <td>
@@ -10103,7 +10103,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, thin )`
+`map.get( $kendo-spacing, thin )`
 
 </td>
 <td>
@@ -10121,7 +10121,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, hair)`
+`map.get( $kendo-spacing, hair)`
 
 </td>
 <td>
@@ -10157,7 +10157,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 )`
+`map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -10175,7 +10175,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`( map-get( $kendo-spacing, 1 ) - map-get( $kendo-spacing, thin ) )`
+`( map.get( $kendo-spacing, 1 ) - map.get( $kendo-spacing, thin ) )`
 
 </td>
 <td>
@@ -10285,9 +10285,9 @@ The following table lists the available variables for customizing the Fluent the
 <td>
 
 `(
-    sm: map-get( $kendo-spacing, 1 ),
-    md: map-get( $kendo-spacing, 1 ),
-    lg: map-get( $kendo-spacing, 1 )
+    sm: map.get( $kendo-spacing, 1 ),
+    md: map.get( $kendo-spacing, 1 ),
+    lg: map.get( $kendo-spacing, 1 )
 )`
 
 </td>
@@ -10327,7 +10327,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 4 )`
+`map.get( $kendo-spacing, 4 )`
 
 </td>
 <td>
@@ -11359,7 +11359,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 )`
+`map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -11683,7 +11683,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 1 )`
+`map.get( $kendo-spacing, 1 )`
 
 </td>
 <td>
@@ -11755,7 +11755,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 )`
+`map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -11773,7 +11773,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 )`
+`map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -11920,7 +11920,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, hair )`
+`map.get( $kendo-spacing, hair )`
 
 </td>
 <td>
@@ -11974,7 +11974,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 6 )`
+`map.get( $kendo-spacing, 6 )`
 
 </td>
 <td>
@@ -12247,7 +12247,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 6 )`
+`map.get( $kendo-spacing, 6 )`
 
 </td>
 <td>
@@ -12265,7 +12265,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 4 )`
+`map.get( $kendo-spacing, 4 )`
 
 </td>
 <td>
@@ -12283,7 +12283,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 6 )`
+`map.get( $kendo-spacing, 6 )`
 
 </td>
 <td>
@@ -12301,7 +12301,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 3 )`
+`map.get( $kendo-spacing, 3 )`
 
 </td>
 <td>
@@ -12319,7 +12319,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 6 )`
+`map.get( $kendo-spacing, 6 )`
 
 </td>
 <td>
@@ -12337,7 +12337,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 6 )`
+`map.get( $kendo-spacing, 6 )`
 
 </td>
 <td>
@@ -12373,7 +12373,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 3 )`
+`map.get( $kendo-spacing, 3 )`
 
 </td>
 <td>
@@ -12391,7 +12391,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 )`
+`map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -13117,7 +13117,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 4 )`
+`map.get( $kendo-spacing, 4 )`
 
 </td>
 <td>
@@ -13261,7 +13261,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, thin )`
+`map.get( $kendo-spacing, thin )`
 
 </td>
 <td>
@@ -13606,7 +13606,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 )`
+`map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -13624,7 +13624,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 )`
+`map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -13804,7 +13804,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 6 )`
+`map.get( $kendo-spacing, 6 )`
 
 </td>
 <td>
@@ -13894,7 +13894,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 )`
+`map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -14203,7 +14203,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 )`
+`map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -14239,7 +14239,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 1 )`
+`map.get( $kendo-spacing, 1 )`
 
 </td>
 <td>
@@ -14257,7 +14257,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, thin )`
+`map.get( $kendo-spacing, thin )`
 
 </td>
 <td>
@@ -14440,7 +14440,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 )`
+`map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -14656,7 +14656,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, hair )`
+`map.get( $kendo-spacing, hair )`
 
 </td>
 <td>
@@ -14674,7 +14674,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, hair )`
+`map.get( $kendo-spacing, hair )`
 
 </td>
 <td>
@@ -14764,7 +14764,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 4 )`
+`map.get( $kendo-spacing, 4 )`
 
 </td>
 <td>
@@ -14782,7 +14782,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 3 )`
+`map.get( $kendo-spacing, 3 )`
 
 </td>
 <td>
@@ -14890,7 +14890,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 ) + map-get( $kendo-spacing, thin )`
+`map.get( $kendo-spacing, 2 ) + map.get( $kendo-spacing, thin )`
 
 </td>
 <td>
@@ -14926,7 +14926,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 4 )`
+`map.get( $kendo-spacing, 4 )`
 
 </td>
 <td>
@@ -14944,7 +14944,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 4 )`
+`map.get( $kendo-spacing, 4 )`
 
 </td>
 <td>
@@ -15217,7 +15217,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 )`
+`map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -15235,7 +15235,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 )`
+`map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -15379,7 +15379,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 4 )`
+`map.get( $kendo-spacing, 4 )`
 
 </td>
 <td>
@@ -15397,7 +15397,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 4 )`
+`map.get( $kendo-spacing, 4 )`
 
 </td>
 <td>
@@ -15775,7 +15775,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 1 )`
+`map.get( $kendo-spacing, 1 )`
 
 </td>
 <td>
@@ -15940,7 +15940,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 4 )`
+`map.get( $kendo-spacing, 4 )`
 
 </td>
 <td>
@@ -16360,7 +16360,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 4 )`
+`map.get( $kendo-spacing, 4 )`
 
 </td>
 <td>
@@ -16486,7 +16486,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`math.div( map-get( $kendo-spacing, 1 ), 2 )`
+`math.div( map.get( $kendo-spacing, 1 ), 2 )`
 
 </td>
 <td>
@@ -16522,7 +16522,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 4 )`
+`map.get( $kendo-spacing, 4 )`
 
 </td>
 <td>
@@ -16540,7 +16540,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 1 )`
+`map.get( $kendo-spacing, 1 )`
 
 </td>
 <td>
@@ -16558,7 +16558,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 1 )`
+`map.get( $kendo-spacing, 1 )`
 
 </td>
 <td>
@@ -16666,7 +16666,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 )`
+`map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -16738,7 +16738,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 )`
+`map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -16756,7 +16756,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 )`
+`map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -16865,7 +16865,7 @@ The following table lists the available variables for customizing the Fluent the
 <td>
 
 `(
-    solid: map-get( $kendo-button-theme-colors, "solid")
+    solid: map.get( $kendo-button-theme-colors, "solid")
 )`
 
 </td>
@@ -16915,7 +16915,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 )`
+`map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -17569,7 +17569,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`0 0 map-get( $kendo-spacing, 3 )`
+`0 0 map.get( $kendo-spacing, 3 )`
 
 </td>
 <td>
@@ -17605,7 +17605,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`0 0 map-get( $kendo-spacing, thin )`
+`0 0 map.get( $kendo-spacing, thin )`
 
 </td>
 <td>
@@ -17713,7 +17713,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 )`
+`map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -17749,7 +17749,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 )`
+`map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -17803,7 +17803,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 1 )`
+`map.get( $kendo-spacing, 1 )`
 
 </td>
 <td>
@@ -17839,7 +17839,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 3 )`
+`map.get( $kendo-spacing, 3 )`
 
 </td>
 <td>
@@ -17893,7 +17893,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 3 ) 0 0`
+`map.get( $kendo-spacing, 3 ) 0 0`
 
 </td>
 <td>
@@ -17929,7 +17929,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 1 ) + map-get( $kendo-spacing, thin )`
+`map.get( $kendo-spacing, 1 ) + map.get( $kendo-spacing, thin )`
 
 </td>
 <td>
@@ -17947,7 +17947,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 )`
+`map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -18310,7 +18310,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, thin )`
+`map.get( $kendo-spacing, thin )`
 
 </td>
 <td>
@@ -18562,7 +18562,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 )`
+`map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -18580,7 +18580,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 1 )`
+`map.get( $kendo-spacing, 1 )`
 
 </td>
 <td>
@@ -20527,7 +20527,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, thin )`
+`map.get( $kendo-spacing, thin )`
 
 </td>
 <td>
@@ -20635,7 +20635,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 1 ) + map-get( $kendo-spacing, hair )`
+`map.get( $kendo-spacing, 1 ) + map.get( $kendo-spacing, hair )`
 
 </td>
 <td>
@@ -20671,7 +20671,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 )`
+`map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -21247,7 +21247,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 3 )`
+`map.get( $kendo-spacing, 3 )`
 
 </td>
 <td>
@@ -21265,7 +21265,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 3 )`
+`map.get( $kendo-spacing, 3 )`
 
 </td>
 <td>
@@ -21301,7 +21301,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 )`
+`map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -21427,7 +21427,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 )`
+`map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -21445,7 +21445,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 )`
+`map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -22078,7 +22078,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 )`
+`map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -22096,7 +22096,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 1 )`
+`map.get( $kendo-spacing, 1 )`
 
 </td>
 <td>
@@ -22261,7 +22261,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, hair )`
+`map.get( $kendo-spacing, hair )`
 
 </td>
 <td>
@@ -22459,7 +22459,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 3 )`
+`map.get( $kendo-spacing, 3 )`
 
 </td>
 <td>
@@ -22477,7 +22477,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 3 )`
+`map.get( $kendo-spacing, 3 )`
 
 </td>
 <td>
@@ -22585,7 +22585,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, hair )`
+`map.get( $kendo-spacing, hair )`
 
 </td>
 <td>
@@ -22621,7 +22621,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, hair )`
+`map.get( $kendo-spacing, hair )`
 
 </td>
 <td>
@@ -22639,7 +22639,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, hair )`
+`map.get( $kendo-spacing, hair )`
 
 </td>
 <td>
@@ -22675,7 +22675,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 4 )`
+`map.get( $kendo-spacing, 4 )`
 
 </td>
 <td>
@@ -22804,7 +22804,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 )`
+`map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -22822,7 +22822,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 1 )`
+`map.get( $kendo-spacing, 1 )`
 
 </td>
 <td>
@@ -24752,7 +24752,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 )`
+`map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -24770,7 +24770,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 ) - map-get( $kendo-spacing, thin )`
+`map.get( $kendo-spacing, 2 ) - map.get( $kendo-spacing, thin )`
 
 </td>
 <td>
@@ -24860,7 +24860,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 )`
+`map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -24878,7 +24878,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 ) - map-get( $kendo-spacing, thin )`
+`map.get( $kendo-spacing, 2 ) - map.get( $kendo-spacing, thin )`
 
 </td>
 <td>
@@ -24950,7 +24950,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 )`
+`map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -24968,7 +24968,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 ) - map-get( $kendo-spacing, thin )`
+`map.get( $kendo-spacing, 2 ) - map.get( $kendo-spacing, thin )`
 
 </td>
 <td>
@@ -24986,7 +24986,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, thin )`
+`map.get( $kendo-spacing, thin )`
 
 </td>
 <td>
@@ -25004,7 +25004,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, thin )`
+`map.get( $kendo-spacing, thin )`
 
 </td>
 <td>
@@ -25964,7 +25964,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 )`
+`map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -25982,7 +25982,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 )`
+`map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -26039,7 +26039,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 1 )`
+`map.get( $kendo-spacing, 1 )`
 
 </td>
 <td>
@@ -26057,7 +26057,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 1 )`
+`map.get( $kendo-spacing, 1 )`
 
 </td>
 <td>
@@ -26075,7 +26075,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, hair )`
+`map.get( $kendo-spacing, hair )`
 
 </td>
 <td>
@@ -26093,7 +26093,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 4 )`
+`map.get( $kendo-spacing, 4 )`
 
 </td>
 <td>
@@ -26111,7 +26111,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 )`
+`map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -26165,7 +26165,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 1 )`
+`map.get( $kendo-spacing, 1 )`
 
 </td>
 <td>
@@ -26183,7 +26183,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 1 )`
+`map.get( $kendo-spacing, 1 )`
 
 </td>
 <td>
@@ -26255,7 +26255,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 0 )`
+`map.get( $kendo-spacing, 0 )`
 
 </td>
 <td>
@@ -26546,7 +26546,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 1 )`
+`map.get( $kendo-spacing, 1 )`
 
 </td>
 <td>
@@ -26780,7 +26780,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 4 )`
+`map.get( $kendo-spacing, 4 )`
 
 </td>
 <td>
@@ -26798,7 +26798,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 4 )`
+`map.get( $kendo-spacing, 4 )`
 
 </td>
 <td>
@@ -26816,7 +26816,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 1 )`
+`map.get( $kendo-spacing, 1 )`
 
 </td>
 <td>
@@ -27017,7 +27017,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 4 )`
+`map.get( $kendo-spacing, 4 )`
 
 </td>
 <td>
@@ -27035,7 +27035,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 4 )`
+`map.get( $kendo-spacing, 4 )`
 
 </td>
 <td>
@@ -27053,7 +27053,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, thin )`
+`map.get( $kendo-spacing, thin )`
 
 </td>
 <td>
@@ -27107,7 +27107,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, hair )`
+`map.get( $kendo-spacing, hair )`
 
 </td>
 <td>
@@ -27179,7 +27179,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 4 )`
+`map.get( $kendo-spacing, 4 )`
 
 </td>
 <td>
@@ -27362,7 +27362,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, hair )`
+`map.get( $kendo-spacing, hair )`
 
 </td>
 <td>
@@ -27524,7 +27524,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 )`
+`map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -27542,7 +27542,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 )`
+`map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -27617,7 +27617,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 0 )`
+`map.get( $kendo-spacing, 0 )`
 
 </td>
 <td>
@@ -27689,7 +27689,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 )`
+`map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -27707,7 +27707,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 0 )`
+`map.get( $kendo-spacing, 0 )`
 
 </td>
 <td>
@@ -27743,7 +27743,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 1 )`
+`map.get( $kendo-spacing, 1 )`
 
 </td>
 <td>
@@ -27761,7 +27761,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, hair )`
+`map.get( $kendo-spacing, hair )`
 
 </td>
 <td>
@@ -27779,7 +27779,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`(-1 * map-get( $kendo-spacing, thin ))`
+`(-1 * map.get( $kendo-spacing, thin ))`
 
 </td>
 <td>
@@ -28211,7 +28211,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 )`
+`map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -28265,7 +28265,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 0 )`
+`map.get( $kendo-spacing, 0 )`
 
 </td>
 <td>
@@ -28319,7 +28319,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 0 )`
+`map.get( $kendo-spacing, 0 )`
 
 </td>
 <td>
@@ -28674,7 +28674,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`0 0 map-get( $kendo-spacing, 3 ) 0`
+`0 0 map.get( $kendo-spacing, 3 ) 0`
 
 </td>
 <td>
@@ -28692,7 +28692,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 3 )`
+`map.get( $kendo-spacing, 3 )`
 
 </td>
 <td>
@@ -28710,7 +28710,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 )`
+`map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -28929,7 +28929,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 3 )`
+`map.get( $kendo-spacing, 3 )`
 
 </td>
 <td>
@@ -28947,7 +28947,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 )`
+`map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -28965,7 +28965,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, hair )`
+`map.get( $kendo-spacing, hair )`
 
 </td>
 <td>
@@ -28983,7 +28983,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, thin )`
+`map.get( $kendo-spacing, thin )`
 
 </td>
 <td>
@@ -29127,7 +29127,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 )`
+`map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -29145,7 +29145,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 4 )`
+`map.get( $kendo-spacing, 4 )`
 
 </td>
 <td>
@@ -29202,7 +29202,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 6)`
+`map.get( $kendo-spacing, 6)`
 
 </td>
 <td>
@@ -29634,7 +29634,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`$kendo-orgchart-spacer - map-get( $kendo-spacing, 1 )`
+`$kendo-orgchart-spacer - map.get( $kendo-spacing, 1 )`
 
 </td>
 <td>
@@ -29868,7 +29868,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`$kendo-orgchart-spacer - map-get( $kendo-spacing, 2 )`
+`$kendo-orgchart-spacer - map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -29940,7 +29940,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`$kendo-orgchart-spacer - map-get( $kendo-spacing, 2 )`
+`$kendo-orgchart-spacer - map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -30126,7 +30126,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 )`
+`map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -30144,7 +30144,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 )`
+`map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -30396,7 +30396,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 )`
+`map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -30703,7 +30703,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 )`
+`map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -30739,7 +30739,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 3 )`
+`map.get( $kendo-spacing, 3 )`
 
 </td>
 <td>
@@ -30775,7 +30775,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 3 )`
+`map.get( $kendo-spacing, 3 )`
 
 </td>
 <td>
@@ -31984,7 +31984,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 8 ) - map-get( $kendo-spacing, thin )`
+`map.get( $kendo-spacing, 8 ) - map.get( $kendo-spacing, thin )`
 
 </td>
 <td>
@@ -32074,7 +32074,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 3 )`
+`map.get( $kendo-spacing, 3 )`
 
 </td>
 <td>
@@ -32110,7 +32110,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 )`
+`map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -32383,7 +32383,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 3 )`
+`map.get( $kendo-spacing, 3 )`
 
 </td>
 <td>
@@ -33121,7 +33121,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2)`
+`map.get( $kendo-spacing, 2)`
 
 </td>
 <td>
@@ -33283,7 +33283,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 1 )`
+`map.get( $kendo-spacing, 1 )`
 
 </td>
 <td>
@@ -33301,7 +33301,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 1 )`
+`map.get( $kendo-spacing, 1 )`
 
 </td>
 <td>
@@ -33355,7 +33355,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 )`
+`map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -34024,7 +34024,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 3 )`
+`map.get( $kendo-spacing, 3 )`
 
 </td>
 <td>
@@ -34042,7 +34042,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 5 )`
+`map.get( $kendo-spacing, 5 )`
 
 </td>
 <td>
@@ -34243,7 +34243,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 )`
+`map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -34261,7 +34261,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 )`
+`map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -34750,7 +34750,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 )`
+`map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -35041,7 +35041,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 5 )`
+`map.get( $kendo-spacing, 5 )`
 
 </td>
 <td>
@@ -35059,7 +35059,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 5 )`
+`map.get( $kendo-spacing, 5 )`
 
 </td>
 <td>
@@ -35077,7 +35077,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`( map-get( $kendo-spacing, 5 ) - map-get( $kendo-spacing, thin ) )`
+`( map.get( $kendo-spacing, 5 ) - map.get( $kendo-spacing, thin ) )`
 
 </td>
 <td>
@@ -35095,7 +35095,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`( map-get( $kendo-spacing, 5 ) * 3 )`
+`( map.get( $kendo-spacing, 5 ) * 3 )`
 
 </td>
 <td>
@@ -35113,7 +35113,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`( map-get( $kendo-spacing, 5 ) * 3 )`
+`( map.get( $kendo-spacing, 5 ) * 3 )`
 
 </td>
 <td>
@@ -35257,7 +35257,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`( map-get( $kendo-spacing, 1) + map-get( $kendo-spacing, hair) )`
+`( map.get( $kendo-spacing, 1) + map.get( $kendo-spacing, hair) )`
 
 </td>
 <td>
@@ -35689,7 +35689,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 )`
+`map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -35707,7 +35707,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 4 )`
+`map.get( $kendo-spacing, 4 )`
 
 </td>
 <td>
@@ -35761,7 +35761,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 )`
+`map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -35890,7 +35890,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 1 )`
+`map.get( $kendo-spacing, 1 )`
 
 </td>
 <td>
@@ -35908,7 +35908,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, thin )`
+`map.get( $kendo-spacing, thin )`
 
 </td>
 <td>
@@ -35926,7 +35926,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 )`
+`map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -35998,7 +35998,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, hair )`
+`map.get( $kendo-spacing, hair )`
 
 </td>
 <td>
@@ -36487,7 +36487,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 )`
+`map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -36505,7 +36505,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, thin )`
+`map.get( $kendo-spacing, thin )`
 
 </td>
 <td>
@@ -36829,7 +36829,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 )`
+`map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -36847,7 +36847,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 )`
+`map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -37047,7 +37047,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 3 )`
+`map.get( $kendo-spacing, 3 )`
 
 </td>
 <td>
@@ -37083,7 +37083,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 3 )`
+`map.get( $kendo-spacing, 3 )`
 
 </td>
 <td>
@@ -37209,7 +37209,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 )`
+`map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -37335,7 +37335,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 3 )`
+`map.get( $kendo-spacing, 3 )`
 
 </td>
 <td>
@@ -37407,7 +37407,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 )`
+`map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -37479,7 +37479,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, thin )`
+`map.get( $kendo-spacing, thin )`
 
 </td>
 <td>
@@ -38316,7 +38316,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 1 )`
+`map.get( $kendo-spacing, 1 )`
 
 </td>
 <td>
@@ -38512,7 +38512,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 1 )`
+`map.get( $kendo-spacing, 1 )`
 
 </td>
 <td>
@@ -38752,7 +38752,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 )`
+`map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -38842,7 +38842,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 1 )`
+`map.get( $kendo-spacing, 1 )`
 
 </td>
 <td>
@@ -38860,7 +38860,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, thin )`
+`map.get( $kendo-spacing, thin )`
 
 </td>
 <td>
@@ -39022,7 +39022,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, thin )`
+`map.get( $kendo-spacing, thin )`
 
 </td>
 <td>
@@ -39680,7 +39680,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, hair )`
+`map.get( $kendo-spacing, hair )`
 
 </td>
 <td>
@@ -39806,7 +39806,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 )`
+`map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -39824,7 +39824,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`( map-get( $kendo-spacing, 2 ) + map-get( $kendo-spacing, thin ) )`
+`( map.get( $kendo-spacing, 2 ) + map.get( $kendo-spacing, thin ) )`
 
 </td>
 <td>
@@ -39842,7 +39842,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 5 )`
+`map.get( $kendo-spacing, 5 )`
 
 </td>
 <td>
@@ -39860,7 +39860,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, thin )`
+`map.get( $kendo-spacing, thin )`
 
 </td>
 <td>
@@ -39878,7 +39878,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`( map-get( $kendo-spacing, 2 ) - map-get( $kendo-spacing, hair ) )`
+`( map.get( $kendo-spacing, 2 ) - map.get( $kendo-spacing, hair ) )`
 
 </td>
 <td>
@@ -40004,7 +40004,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, thin )`
+`map.get( $kendo-spacing, thin )`
 
 </td>
 <td>
@@ -40043,7 +40043,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, hair )`
+`map.get( $kendo-spacing, hair )`
 
 </td>
 <td>
@@ -40115,7 +40115,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 3 )`
+`map.get( $kendo-spacing, 3 )`
 
 </td>
 <td>
@@ -40151,7 +40151,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 1 )`
+`map.get( $kendo-spacing, 1 )`
 
 </td>
 <td>
@@ -40187,7 +40187,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`calc( map-get( $kendo-spacing, 2 ) * -1 )`
+`calc( map.get( $kendo-spacing, 2 ) * -1 )`
 
 </td>
 <td>
@@ -40205,7 +40205,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 )`
+`map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -40655,7 +40655,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, thin )`
+`map.get( $kendo-spacing, thin )`
 
 </td>
 <td>
@@ -40835,7 +40835,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`calc( map-get( $kendo-spacing, 1 ) + map-get( $kendo-spacing, thin ) )`
+`calc( map.get( $kendo-spacing, 1 ) + map.get( $kendo-spacing, thin ) )`
 
 </td>
 <td>
@@ -40853,7 +40853,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`calc( map-get( $kendo-spacing, 1 ) + map-get( $kendo-spacing, thin ) )`
+`calc( map.get( $kendo-spacing, 1 ) + map.get( $kendo-spacing, thin ) )`
 
 </td>
 <td>
@@ -40889,7 +40889,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, hair )`
+`map.get( $kendo-spacing, hair )`
 
 </td>
 <td>
@@ -40997,7 +40997,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, thin )`
+`map.get( $kendo-spacing, thin )`
 
 </td>
 <td>
@@ -41198,7 +41198,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 )`
+`map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -41216,7 +41216,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 3 )`
+`map.get( $kendo-spacing, 3 )`
 
 </td>
 <td>
@@ -41234,7 +41234,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`( map-get( $kendo-spacing, 1 ) + map-get( $kendo-spacing, thin ) )`
+`( map.get( $kendo-spacing, 1 ) + map.get( $kendo-spacing, thin ) )`
 
 </td>
 <td>
@@ -41252,7 +41252,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 5 )`
+`map.get( $kendo-spacing, 5 )`
 
 </td>
 <td>
@@ -41270,7 +41270,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 3 )`
+`map.get( $kendo-spacing, 3 )`
 
 </td>
 <td>
@@ -41288,7 +41288,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`( map-get( $kendo-spacing, 7 ) + map-get( $kendo-spacing, thin ) )`
+`( map.get( $kendo-spacing, 7 ) + map.get( $kendo-spacing, thin ) )`
 
 </td>
 <td>
@@ -41324,7 +41324,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, hair )`
+`map.get( $kendo-spacing, hair )`
 
 </td>
 <td>
@@ -41378,7 +41378,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, thin )`
+`map.get( $kendo-spacing, thin )`
 
 </td>
 <td>
@@ -41396,7 +41396,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`( map-get( $kendo-spacing, thin ) + map-get( $kendo-spacing, hair ) )`
+`( map.get( $kendo-spacing, thin ) + map.get( $kendo-spacing, hair ) )`
 
 </td>
 <td>
@@ -42080,7 +42080,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, thin )`
+`map.get( $kendo-spacing, thin )`
 
 </td>
 <td>
@@ -43134,7 +43134,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 3 )`
+`map.get( $kendo-spacing, 3 )`
 
 </td>
 <td>
@@ -43152,7 +43152,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 3 )`
+`map.get( $kendo-spacing, 3 )`
 
 </td>
 <td>
@@ -43192,8 +43192,8 @@ The following table lists the available variables for customizing the Fluent the
     sm: (
         font-size: var( --kendo-font-size, inherit ),
         line-height: var( --kendo-line-height, inherit ),
-        cell-padding-x: map-get( $kendo-spacing, 3 ),
-        cell-padding-y: map-get( $kendo-spacing, 3 ) - map-get( $kendo-spacing, thin ),
+        cell-padding-x: map.get( $kendo-spacing, 3 ),
+        cell-padding-y: map.get( $kendo-spacing, 3 ) - map.get( $kendo-spacing, thin ),
         group-label-padding-x: $kendo-list-item-group-label-padding-x-sm,
         group-label-padding-y: $kendo-list-item-group-label-padding-y-sm,
         group-label-font-size: $kendo-list-item-group-label-font-size-sm
@@ -43201,8 +43201,8 @@ The following table lists the available variables for customizing the Fluent the
     md: (
         font-size: var( --kendo-font-size, inherit ),
         line-height: var( --kendo-line-height, inherit ),
-        cell-padding-x: map-get( $kendo-spacing, 3 ),
-        cell-padding-y: map-get( $kendo-spacing, 3 ),
+        cell-padding-x: map.get( $kendo-spacing, 3 ),
+        cell-padding-y: map.get( $kendo-spacing, 3 ),
         group-label-padding-x: $kendo-list-item-group-label-padding-x-md,
         group-label-padding-y: $kendo-list-item-group-label-padding-y-md,
         group-label-font-size: $kendo-list-item-group-label-font-size-md
@@ -43210,8 +43210,8 @@ The following table lists the available variables for customizing the Fluent the
     lg: (
         font-size: var( --kendo-font-size, inherit ),
         line-height: var( --kendo-line-height, inherit ),
-        cell-padding-x: map-get( $kendo-spacing, 3 ),
-        cell-padding-y: map-get( $kendo-spacing, 3 ) + map-get( $kendo-spacing, thin ),
+        cell-padding-x: map.get( $kendo-spacing, 3 ),
+        cell-padding-y: map.get( $kendo-spacing, 3 ) + map.get( $kendo-spacing, thin ),
         group-label-padding-x: $kendo-list-item-group-label-padding-x-lg,
         group-label-padding-y: $kendo-list-item-group-label-padding-y-lg,
         group-label-font-size: $kendo-list-item-group-label-font-size-lg
@@ -44119,7 +44119,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 ) + map-get( $kendo-spacing, 1 )`
+`map.get( $kendo-spacing, 2 ) + map.get( $kendo-spacing, 1 )`
 
 </td>
 <td>
@@ -44173,7 +44173,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 )`
+`map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -44461,7 +44461,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, thin )`
+`map.get( $kendo-spacing, thin )`
 
 </td>
 <td>
@@ -44497,7 +44497,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 3 )`
+`map.get( $kendo-spacing, 3 )`
 
 </td>
 <td>
@@ -44515,7 +44515,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 1 ) + map-get( $kendo-spacing, thin )`
+`map.get( $kendo-spacing, 1 ) + map.get( $kendo-spacing, thin )`
 
 </td>
 <td>
@@ -44623,7 +44623,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 1 )`
+`map.get( $kendo-spacing, 1 )`
 
 </td>
 <td>
@@ -44641,7 +44641,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 1 )`
+`map.get( $kendo-spacing, 1 )`
 
 </td>
 <td>
@@ -44680,7 +44680,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 4 )`
+`map.get( $kendo-spacing, 4 )`
 
 </td>
 <td>
@@ -45454,7 +45454,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 6 )`
+`map.get( $kendo-spacing, 6 )`
 
 </td>
 <td>
@@ -45562,7 +45562,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 6 )`
+`map.get( $kendo-spacing, 6 )`
 
 </td>
 <td>
@@ -46090,7 +46090,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 3 )`
+`map.get( $kendo-spacing, 3 )`
 
 </td>
 <td>
@@ -46108,7 +46108,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 3 )`
+`map.get( $kendo-spacing, 3 )`
 
 </td>
 <td>
@@ -46198,7 +46198,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 3 )`
+`map.get( $kendo-spacing, 3 )`
 
 </td>
 <td>
@@ -46306,7 +46306,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 )`
+`map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -46324,7 +46324,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 1 )`
+`map.get( $kendo-spacing, 1 )`
 
 </td>
 <td>
@@ -46562,7 +46562,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 10 )`
+`map.get( $kendo-spacing, 10 )`
 
 </td>
 <td>
@@ -46580,7 +46580,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 10 )`
+`map.get( $kendo-spacing, 10 )`
 
 </td>
 <td>
@@ -46598,7 +46598,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 4 )`
+`map.get( $kendo-spacing, 4 )`
 
 </td>
 <td>
@@ -46670,7 +46670,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 4 )`
+`map.get( $kendo-spacing, 4 )`
 
 </td>
 <td>
@@ -46688,7 +46688,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 4 )`
+`map.get( $kendo-spacing, 4 )`
 
 </td>
 <td>
@@ -46706,7 +46706,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`( map-get( $kendo-spacing, 7 ) + map-get( $kendo-spacing, thin ) )`
+`( map.get( $kendo-spacing, 7 ) + map.get( $kendo-spacing, thin ) )`
 
 </td>
 <td>
@@ -46724,7 +46724,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`( map-get( $kendo-spacing, 7 ) + map-get( $kendo-spacing, thin ) )`
+`( map.get( $kendo-spacing, 7 ) + map.get( $kendo-spacing, thin ) )`
 
 </td>
 <td>
@@ -46742,7 +46742,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`( map-get( $kendo-spacing, 2 ) - map-get( $kendo-spacing, thin ) )`
+`( map.get( $kendo-spacing, 2 ) - map.get( $kendo-spacing, thin ) )`
 
 </td>
 <td>
@@ -46778,7 +46778,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, hair )`
+`map.get( $kendo-spacing, hair )`
 
 </td>
 <td>
@@ -46796,7 +46796,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 4 )`
+`map.get( $kendo-spacing, 4 )`
 
 </td>
 <td>
@@ -46976,7 +46976,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`( map-get( $kendo-spacing, 10 ) - map-get( $kendo-spacing, 2 ) )`
+`( map.get( $kendo-spacing, 10 ) - map.get( $kendo-spacing, 2 ) )`
 
 </td>
 <td>
@@ -46994,7 +46994,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 )`
+`map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -47012,7 +47012,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 )`
+`map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -47030,7 +47030,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, thin )`
+`map.get( $kendo-spacing, thin )`
 
 </td>
 <td>
@@ -47084,7 +47084,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 20 )`
+`map.get( $kendo-spacing, 20 )`
 
 </td>
 <td>
@@ -47138,7 +47138,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 15 )`
+`map.get( $kendo-spacing, 15 )`
 
 </td>
 <td>
@@ -47192,7 +47192,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`( map-get( $kendo-spacing, 2 ) + map-get( $kendo-spacing, thin ) )`
+`( map.get( $kendo-spacing, 2 ) + map.get( $kendo-spacing, thin ) )`
 
 </td>
 <td>
@@ -47210,7 +47210,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`( map-get( $kendo-spacing, 2 ) + map-get( $kendo-spacing, thin ) )`
+`( map.get( $kendo-spacing, 2 ) + map.get( $kendo-spacing, thin ) )`
 
 </td>
 <td>
@@ -47228,7 +47228,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 1 )`
+`map.get( $kendo-spacing, 1 )`
 
 </td>
 <td>
@@ -47372,7 +47372,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`( map-get( $kendo-spacing, 12 ) + map-get( $kendo-spacing, thin ) )`
+`( map.get( $kendo-spacing, 12 ) + map.get( $kendo-spacing, thin ) )`
 
 </td>
 <td>
@@ -47390,7 +47390,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 )`
+`map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -47498,7 +47498,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 4 )`
+`map.get( $kendo-spacing, 4 )`
 
 </td>
 <td>
@@ -47516,7 +47516,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 4 )`
+`map.get( $kendo-spacing, 4 )`
 
 </td>
 <td>
@@ -47645,7 +47645,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 1 )`
+`map.get( $kendo-spacing, 1 )`
 
 </td>
 <td>
@@ -47663,7 +47663,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 1 )`
+`map.get( $kendo-spacing, 1 )`
 
 </td>
 <td>
@@ -47681,7 +47681,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 )`
+`map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -47988,7 +47988,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 )`
+`map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -48006,7 +48006,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 )`
+`map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -48132,7 +48132,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 1 )`
+`map.get( $kendo-spacing, 1 )`
 
 </td>
 <td>
@@ -48150,7 +48150,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 )`
+`map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -48444,7 +48444,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 4 )`
+`map.get( $kendo-spacing, 4 )`
 
 </td>
 <td>
@@ -48462,7 +48462,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 )`
+`map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -48480,7 +48480,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 ) - map-get( $kendo-spacing, thin )`
+`map.get( $kendo-spacing, 2 ) - map.get( $kendo-spacing, thin )`
 
 </td>
 <td>
@@ -48534,7 +48534,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 )`
+`map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -48552,7 +48552,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 )`
+`map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -49351,7 +49351,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 )`
+`map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -49369,7 +49369,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 )`
+`map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -49495,7 +49495,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 )`
+`map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -49513,7 +49513,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 2 )`
+`map.get( $kendo-spacing, 2 )`
 
 </td>
 <td>
@@ -49531,7 +49531,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 4 )`
+`map.get( $kendo-spacing, 4 )`
 
 </td>
 <td>
@@ -49815,7 +49815,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 1 ) 0 0`
+`map.get( $kendo-spacing, 1 ) 0 0`
 
 </td>
 <td>
@@ -49905,7 +49905,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 6 )`
+`map.get( $kendo-spacing, 6 )`
 
 </td>
 <td>
@@ -49923,7 +49923,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 5 )`
+`map.get( $kendo-spacing, 5 )`
 
 </td>
 <td>
@@ -50085,7 +50085,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 6 )`
+`map.get( $kendo-spacing, 6 )`
 
 </td>
 <td>
@@ -50103,7 +50103,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 3 )`
+`map.get( $kendo-spacing, 3 )`
 
 </td>
 <td>
@@ -50121,7 +50121,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 6 )`
+`map.get( $kendo-spacing, 6 )`
 
 </td>
 <td>
@@ -50139,7 +50139,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 6 )`
+`map.get( $kendo-spacing, 6 )`
 
 </td>
 <td>
@@ -50175,7 +50175,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 3 )`
+`map.get( $kendo-spacing, 3 )`
 
 </td>
 <td>
@@ -50398,7 +50398,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 6 )`
+`map.get( $kendo-spacing, 6 )`
 
 </td>
 <td>
@@ -50416,7 +50416,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 6 )`
+`map.get( $kendo-spacing, 6 )`
 
 </td>
 <td>
@@ -50488,7 +50488,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 3 )`
+`map.get( $kendo-spacing, 3 )`
 
 </td>
 <td>
@@ -50506,7 +50506,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 3 )`
+`map.get( $kendo-spacing, 3 )`
 
 </td>
 <td>
@@ -50596,7 +50596,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 7 )`
+`map.get( $kendo-spacing, 7 )`
 
 </td>
 <td>
@@ -50614,7 +50614,7 @@ The following table lists the available variables for customizing the Fluent the
     <td></td>
 <td>
 
-`map-get( $kendo-spacing, 6 )`
+`map.get( $kendo-spacing, 6 )`
 
 </td>
 <td>
