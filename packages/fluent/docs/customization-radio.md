@@ -62,101 +62,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-radio-width</td>
-    <td></td>
-<td>
-
-`map.get( $kendo-spacing, 5 )`
-
-</td>
-<td>
-
-
-
-</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Default width of radio button.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-radio-height</td>
-    <td></td>
-<td>
-
-`map.get( $kendo-spacing, 5 )`
-
-</td>
-<td>
-
-
-
-</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Default height of radio button.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-radio-font-size</td>
-    <td></td>
-<td>
-
-`( map.get( $kendo-spacing, 5 ) - map.get( $kendo-spacing, thin ) )`
-
-</td>
-<td>
-
-
-
-</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Default font size of radio button.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-radio-ripple-width</td>
-    <td></td>
-<td>
-
-`( map.get( $kendo-spacing, 5 ) * 3 )`
-
-</td>
-<td>
-
-
-
-</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Default ripple width of radio button.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-radio-ripple-height</td>
-    <td></td>
-<td>
-
-`( map.get( $kendo-spacing, 5 ) * 3 )`
-
-</td>
-<td>
-
-
-
-</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Default ripple height of radio button.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-radio-bg</td>
     <td></td>
 <td>
 
-`$kendo-checkbox-bg`
+`$kendo-component-bg`
 
 </td>
 <td>
@@ -174,7 +84,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`$kendo-checkbox-text`
+`transparent`
 
 </td>
 <td>
@@ -192,7 +102,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`$kendo-checkbox-border`
+`get-theme-color-var( neutral-160 )`
 
 </td>
 <td>
@@ -210,7 +120,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`$kendo-checkbox-hover-bg`
+`$kendo-radio-bg`
 
 </td>
 <td>
@@ -228,7 +138,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`$kendo-checkbox-hover-text`
+`get-theme-color( neutral, 130 )`
 
 </td>
 <td>
@@ -260,83 +170,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-radio-hover-color</td>
-    <td></td>
-<td>
-
-`get-theme-color-var( neutral-130 )!default`
-
-</td>
-<td>
-
-
-
-</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of hovered radio button.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-radio-checked-border-width</td>
-    <td></td>
-<td>
-
-`( map.get( $kendo-spacing, 1) + map.get( $kendo-spacing, hair) )`
-
-</td>
-<td>
-
-
-
-</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border width of checked radio button.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-radio-checked-width</td>
-    <td></td>
-<td>
-
-`math.div( $kendo-radio-width, 2 )`
-
-</td>
-<td>
-
-
-
-</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Width of checked radio button.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-radio-checked-height</td>
-    <td></td>
-<td>
-
-`math.div( $kendo-radio-height, 2 )`
-
-</td>
-<td>
-
-
-
-</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Height of checked radio button.</div></div>
-    </td>
-</tr>
-<tr>
     <td>$kendo-radio-checked-bg</td>
     <td></td>
 <td>
 
-`var( --kendo-component-bg, initial )`
+`$kendo-radio-bg`
 
 </td>
 <td>
@@ -372,7 +210,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`$kendo-checkbox-checked-border`
+`get-theme-color-var( primary-100 )`
 
 </td>
 <td>
@@ -386,11 +224,65 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
+    <td>$kendo-radio-hover-checked-bg</td>
+    <td></td>
+<td>
+
+`$kendo-radio-bg`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Background color of checked and hovered radio button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-radio-hover-checked-text</td>
+    <td></td>
+<td>
+
+`get-theme-color-var( primary-110 )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Color of checked and hovered radio button.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-radio-hover-checked-border</td>
+    <td></td>
+<td>
+
+`get-theme-color-var( primary-110 )`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of checked and hovered radio button.</div></div>
+    </td>
+</tr>
+<tr>
     <td>$kendo-radio-focus-border</td>
     <td></td>
 <td>
 
-`$kendo-checkbox-focus-border`
+`null`
 
 </td>
 <td>
@@ -408,7 +300,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`$kendo-checkbox-focus-shadow`
+`null`
 
 </td>
 <td>
@@ -422,11 +314,11 @@ The following table lists the available variables for customization.
     </td>
 </tr>
 <tr>
-    <td>$kendo-radio-focus-checked-border</td>
+    <td>$kendo-radio-focus-outline</td>
     <td></td>
 <td>
 
-`get-theme-color-var( neutral-130 )`
+`1px solid get-theme-color-var( neutral-130 )`
 
 </td>
 <td>
@@ -436,25 +328,7 @@ The following table lists the available variables for customization.
 </td>
 </tr>
 <tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border color of focused and checked radio button.</div></div>
-    </td>
-</tr>
-<tr>
-    <td>$kendo-radio-focus-checked-shadow</td>
-    <td></td>
-<td>
-
-`$kendo-checkbox-focus-checked-shadow`
-
-</td>
-<td>
-
-
-
-</td>
-</tr>
-<tr>
-    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Box shadow of focused and checked radio button.</div></div>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">The outline of a focused radio button.</div></div>
     </td>
 </tr>
 <tr>
@@ -462,7 +336,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`$kendo-checkbox-disabled-bg`
+`$kendo-radio-bg`
 
 </td>
 <td>
@@ -480,7 +354,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`$kendo-checkbox-disabled-text`
+`get-theme-color-var( neutral-60 )`
 
 </td>
 <td>
@@ -516,7 +390,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`$kendo-radio-checked-bg`
+`$kendo-radio-disabled-bg`
 
 </td>
 <td>
@@ -534,7 +408,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`$kendo-checkbox-disabled-checked-text`
+`$kendo-radio-disabled-text`
 
 </td>
 <td>
@@ -552,7 +426,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`$kendo-checkbox-disabled-checked-border`
+`$kendo-radio-disabled-border`
 
 </td>
 <td>
@@ -570,7 +444,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`$kendo-checkbox-invalid-bg`
+`$kendo-radio-bg`
 
 </td>
 <td>
@@ -588,7 +462,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`$kendo-checkbox-invalid-text`
+`$kendo-invalid-text`
 
 </td>
 <td>
@@ -606,7 +480,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`$kendo-checkbox-invalid-border`
+`$kendo-invalid-border`
 
 </td>
 <td>
@@ -624,7 +498,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`image`
+`pseudo`
 
 </td>
 <td>
@@ -635,6 +509,24 @@ The following table lists the available variables for customization.
 </tr>
 <tr>
     <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Type of radio button indicator.</div></div>
+    </td>
+</tr>
+<tr>
+    <td>$kendo-radio-indicator-border-radius</td>
+    <td></td>
+<td>
+
+`50%`
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+    <td colspan="4" class="theme-variables-description-container"><div><b>Description</b><div class="theme-variables-description">Border radius radio button indicator.</div></div>
     </td>
 </tr>
 <tr>
@@ -804,7 +696,7 @@ The following table lists the available variables for customization.
     <td></td>
 <td>
 
-`$kendo-radio-checked-bg`
+`get-theme-color-var( primary-100 )`
 
 </td>
 <td>
