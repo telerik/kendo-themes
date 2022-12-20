@@ -10,27 +10,35 @@
 <body id="app" class="k-body">
     <div id="test-area" class="k-d-grid">
         <section>
-            <div id="treelist" class="k-treelist k-grid k-widget k-grid-no-scrollbar">
+            <div id="treelist" class="k-treelist k-grid k-grid-md k-grid-no-scrollbar">
                 <div class="k-grid-header" style="padding-right: 0px;">
                     <div class="k-grid-header-wrap">
-                        <table>
+                        <table class="k-table k-table-md k-grid-header-table">
                             <colgroup>
                                 <col style="width: 250px;">
                                 <col>
                             </colgroup>
-                            <thead>
-                                <tr>
-                                    <th class="k-header k-with-icon">
-                                        <a class="k-grid-header-menu k-grid-column-menu">
-                                            <span class="k-icon k-i-more-vertical"></span>
-                                        </a>
-                                        <a class="k-link">First Name</a>
+                            <thead class="k-table-thead">
+                                <tr class="k-table-row">
+                                    <th class="k-table-th k-header k-filterable">
+                                        <span class="k-cell-inner">
+                                            <span class="k-link">
+                                                <span class="k-column-title">First Name</span>
+                                            </span>
+                                            <a class="k-grid-header-menu k-grid-column-menu" href="#">
+                                                <span class="k-icon k-i-more-vertical"></span>
+                                            </a>
+                                        </span>
                                     </th>
-                                    <th class="k-header k-with-icon">
-                                        <a class="k-grid-header-menu k-grid-column-menu">
-                                            <span class="k-icon k-i-more-vertical"></span>
-                                        </a>
-                                        <a class="k-link">Last Name</a>
+                                    <th class="k-table-th k-header k-filterable">
+                                        <span class="k-cell-inner">
+                                            <span class="k-link">
+                                                <span class="k-column-title">Last Name</span>
+                                            </span>
+                                            <a class="k-grid-header-menu k-grid-column-menu" href="#">
+                                                <span class="k-icon k-i-more-vertical"></span>
+                                            </a>
+                                        </span>
                                     </th>
                                 </tr>
                             </thead>
@@ -38,17 +46,17 @@
                     </div>
                 </div>
                 <div class="k-grid-content k-auto-scrollable">
-                    <table>
+                    <table class="k-table k-table-md k-grid-table">
                         <colgroup>
                             <col style="width: 250px;">
                             <col>
                         </colgroup>
-                        <tbody>
-                            <tr>
-                                <td>
+                        <tbody class="k-table-tbody">
+                            <tr class="k-table-row">
+                                <td class="k-table-td">
                                     <span class="k-icon k-i-expand"></span>Daryl
                                 </td>
-                                <td>Sweeney</td>
+                                <td class="k-table-td">Sweeney</td>
                             </tr>
                         </tbody>
                     </table>
@@ -56,34 +64,46 @@
             </div>
         </section>
         <section>
-            <div id="treelist" class="k-treelist k-grid k-widget">
+            <div id="treelist" class="k-treelist k-grid k-grid-md">
                 <div class="k-grid-header">
                     <div class="k-grid-header-wrap">
-                        <table>
+                        <table class="k-table k-table-md k-grid-header-table">
                             <colgroup>
                                 <col style="width: 280px;">
                                 <col style="width: 160px;">
                                 <col>
                             </colgroup>
-                            <thead>
-                                <tr>
-                                    <th class="k-header k-with-icon k-filterable">
-                                        <a class="k-grid-filter">
-                                            <span class="k-icon k-i-filter"></span>
-                                        </a>
-                                        <a class="k-link">First Name</a>
+                            <thead class="k-table-thead">
+                                <tr class="k-table-row">
+                                    <th class="k-table-th k-header k-filterable">
+                                        <span class="k-cell-inner">
+                                            <span class="k-link">
+                                                <span class="k-column-title">First Name</span>
+                                            </span>
+                                            <a href="#" class="k-grid-filter-menu k-grid-header-menu">
+                                                <span class="k-icon k-i-filter"></span>
+                                            </a>
+                                        </span>
                                     </th>
-                                    <th class="k-header k-with-icon k-filterable">
-                                        <a class="k-grid-filter">
-                                            <span class="k-icon k-i-filter"></span>
-                                        </a>
-                                        <a class="k-link">Last Name</a>
+                                    <th class="k-table-th k-header k-filterable">
+                                        <span class="k-cell-inner">
+                                            <span class="k-link">
+                                                <span class="k-column-title">Last Name</span>
+                                            </span>
+                                            <a href="#" class="k-grid-filter-menu k-grid-header-menu">
+                                                <span class="k-icon k-i-filter"></span>
+                                            </a>
+                                        </span>
                                     </th>
-                                    <th class="k-header k-with-icon k-filterable">
-                                        <a class="k-grid-filter">
-                                            <span class="k-icon k-i-filter"></span>
-                                        </a>
-                                        <a class="k-link">Position</a>
+                                    <th class="k-table-th k-header k-filterable">
+                                        <span class="k-cell-inner">
+                                            <span class="k-link">
+                                                <span class="k-column-title">Position</span>
+                                            </span>
+                                            <a href="#" class="k-grid-filter-menu k-grid-header-menu">
+                                                <span class="k-icon k-i-filter"></span>
+                                            </a>
+                                        </span>
                                     </th>
                                 </tr>
                             </thead>
@@ -91,57 +111,57 @@
                     </div>
                 </div>
                 <div class="k-grid-content k-auto-scrollable">
-                    <table>
+                    <table class="k-table k-table-md k-grid-table">
                         <colgroup>
                             <col style="width: 280px;">
                             <col style="width: 160px;">
                             <col>
                         </colgroup>
-                        <tbody>
-                            <tr class="k-treelist-group">
-                                <td>
+                        <tbody class="k-table-tbody">
+                            <tr class="k-table-row k-treelist-group">
+                                <td class="k-table-td">
                                     <span class="k-icon k-i-collapse"></span>Daryl
                                 </td>
-                                <td>Sweeney</td>
-                                <td>CEO</td>
+                                <td class="k-table-td">Sweeney</td>
+                                <td class="k-table-td">CEO</td>
                             </tr>
-                            <tr class="k-alt k-treelist-group">
-                                <td>
+                            <tr class="k-table-row k-table-alt-row k-alt k-treelist-group">
+                                <td class="k-table-td">
                                     <span class="k-icon k-i-none"></span>
                                     <span class="k-icon k-i-collapse"></span>Guy
                                 </td>
-                                <td>Wooten</td>
-                                <td>Chief Technical Officer</td>
+                                <td class="k-table-td">Wooten</td>
+                                <td class="k-table-td">Chief Technical Officer</td>
                             </tr>
-                            <tr class="k-treelist-group">
-                                <td>
+                            <tr class="k-table-row k-treelist-group">
+                                <td class="k-table-td">
                                     <span class="k-icon k-i-none"></span>
                                     <span class="k-icon k-i-none"></span>
                                     <span class="k-icon k-i-collapse"></span>Buffy
                                 </td>
-                                <td>Weber</td>
-                                <td>VP, Engineering</td>
+                                <td class="k-table-td">Weber</td>
+                                <td class="k-table-td">VP, Engineering</td>
                             </tr>
-                            <tr class="k-alt k-treelist-group">
-                                <td>
+                            <tr class="k-table-row k-table-alt-row k-alt k-treelist-group">
+                                <td class="k-table-td">
                                     <span class="k-icon k-i-none"></span>
                                     <span class="k-icon k-i-none"></span>
                                     <span class="k-icon k-i-none"></span>
                                     <span class="k-icon k-i-collapse"></span>Hyacinth
                                 </td>
-                                <td>Hood</td>
-                                <td>Team Lead</td>
+                                <td class="k-table-td">Hood</td>
+                                <td class="k-table-td">Team Lead</td>
                             </tr>
-                            <tr>
-                                <td>
+                            <tr class="k-table-row">
+                                <td class="k-table-td">
                                     <span class="k-icon k-i-none"></span>
                                     <span class="k-icon k-i-none"></span>
                                     <span class="k-icon k-i-none"></span>
                                     <span class="k-icon k-i-none"></span>
                                     <span class="k-icon k-i-none"></span>Akeem
                                 </td>
-                                <td>Carr</td>
-                                <td>Junior Software Developer</td>
+                                <td class="k-table-td">Carr</td>
+                                <td class="k-table-td">Junior Software Developer</td>
                             </tr>
                         </tbody>
                     </table>

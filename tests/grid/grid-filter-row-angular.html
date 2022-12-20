@@ -10,31 +10,49 @@
 <body id="app" class="k-body">
     <div id="test-area" class="k-d-grid">
         <h3>Base</h3>
-        <div dir="ltr" class="k-widget k-grid">
+        <div dir="ltr" class="k-grid k-grid-md">
             <div class="k-grid-aria-root" role="grid">
                 <div class="k-grid-header">
                     <div class="k-grid-header-wrap">
-                        <table>
+                        <table class="k-table k-table-md k-grid-header-table">
                             <colgroup>
                                 <col style="width: 50px;">
                                 <col>
                                 <col>
                                 <col>
                             </colgroup>
-                            <thead>
-                                <tr role="row">
-                                    <th class="k-header" rowspan="1" colspan="1">
+                            <thead class="k-table-thead">
+                                <tr class="k-table-row">
+                                    <th class="k-table-th k-header" rowspan="1" colspan="1">
                                         <span class="k-checkbox-wrap">
                                             <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
                                         </span>
                                     </th>
-                                    <th class="k-header" rowspan="1" colspan="1">ID</th>
-                                    <th class="k-header" rowspan="1" colspan="1">Name</th>
-                                    <th class="k-header" rowspan="1" colspan="1">Command</th>
+                                    <th class="k-table-th k-header" rowspan="1" colspan="1">
+                                        <span class="k-cell-inner">
+                                            <span class="k-link">
+                                                <span class="k-column-title">ID</span>
+                                            </span>
+                                        </span>
+                                    </th>
+                                    <th class="k-table-th k-header" rowspan="1" colspan="1">
+                                        <span class="k-cell-inner">
+                                            <span class="k-link">
+                                                <span class="k-column-title">Name</span>
+                                            </span>
+                                        </span>
+                                    </th>
+                                    <th class="k-table-th k-header" rowspan="1" colspan="1">
+                                        <span class="k-cell-inner">
+                                            <span class="k-link">
+                                                <span class="k-column-title">Command</span>
+                                            </span>
+                                        </span>
+                                    </th>
                                 </tr>
-                                <tr role="row" class="k-filter-row">
-                                    <td></td>
-                                    <td>
+                                <tr role="row" class="k-table-row k-filter-row">
+                                    <td class="k-table-td"></td>
+                                    <td class="k-table-td">
                                         <div class="k-filtercell">
                                             <div class="k-filtercell-wrapper">
                                                 <span class="k-numerictextbox k-input k-input-md k-input-solid k-rounded-md">
@@ -62,7 +80,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td>
+                                    <td class="k-table-td">
                                         <div class="k-filtercell">
                                             <div class="k-filtercell-wrapper">
                                                 <span class="k-textbox k-input k-input-md k-input-solid k-rounded-md">
@@ -82,7 +100,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td class="k-table-td"></td>
                                 </tr>
                             </thead>
                         </table>
@@ -91,38 +109,38 @@
                 <div class="k-grid-container">
                     <div class="k-grid-content k-virtual-content">
                         <div class="k-grid-table-wrap">
-                            <table class="k-grid-table">
+                            <table class="k-table k-table-md k-grid-table">
                                 <colgroup>
                                     <col style="width: 50px;">
                                     <col>
                                     <col>
                                     <col>
                                 </colgroup>
-                                <tbody>
-                                    <tr role="row">
-                                        <td class="k-touch-action-auto" colspan="1">
+                                <tbody class="k-table-tbody">
+                                    <tr class="k-table-row">
+                                        <td class="k-table-td k-touch-action-auto" colspan="1">
                                             <span class="k-checkbox-wrap">
                                                 <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
                                             </span>
                                         </td>
-                                        <td class="k-touch-action-auto" colspan="1">1</td>
-                                        <td class="k-touch-action-auto" colspan="1">Product1</td>
-                                        <td class="k-touch-action-auto k-command-cell" colspan="1">
+                                        <td class="k-table-td k-touch-action-auto" colspan="1">1</td>
+                                        <td class="k-table-td k-touch-action-auto" colspan="1">Product1</td>
+                                        <td class="k-table-td k-touch-action-auto k-command-cell" colspan="1">
                                             <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
                                                 <span class="k-button-icon k-icon k-i-trash"></span>
                                                 <span class="k-button-text">Delete</span>
                                             </button>
                                         </td>
                                     </tr>
-                                    <tr class="k-alt" role="row">
-                                        <td class="k-touch-action-auto" colspan="1">
+                                    <tr class="k-table-row k-table-alt-row k-alt">
+                                        <td class="k-table-td k-touch-action-auto" colspan="1">
                                             <span class="k-checkbox-wrap">
                                                 <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
                                             </span>
                                         </td>
-                                        <td class="k-touch-action-auto" colspan="1">2</td>
-                                        <td class="k-touch-action-auto" colspan="1">Product2</td>
-                                        <td class="k-touch-action-auto k-command-cell" colspan="1">
+                                        <td class="k-table-td k-touch-action-auto" colspan="1">2</td>
+                                        <td class="k-table-td k-touch-action-auto" colspan="1">Product2</td>
+                                        <td class="k-table-td k-touch-action-auto k-command-cell" colspan="1">
                                             <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
                                                 <span class="k-button-icon k-icon k-i-trash"></span>
                                                 <span class="k-button-text">Delete</span>
@@ -140,7 +158,7 @@
             </div>
         </div>
         <h3>With Toolbar</h3>
-        <div dir="ltr" class="k-widget k-grid">
+        <div dir="ltr" class="k-grid k-grid-md">
             <div class="k-grid-toolbar k-toolbar k-toolbar-md">
                 <button class="k-toolbar-button  k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
                     <span class="k-button-icon k-icon k-i-add"></span>
@@ -150,30 +168,28 @@
             <div class="k-grid-aria-root" role="grid">
                 <div class="k-grid-header">
                     <div class="k-grid-header-wrap">
-                        <table>
+                        <table class="k-table k-table-md k-grid-header-table">
                             <colgroup>
                                 <col style="width: 50px;">
                                 <col>
                                 <col>
                                 <col>
                             </colgroup>
-                            <thead>
-                                <tr role="row">
-                                    <th class="k-header" rowspan="1" colspan="1">
+                            <thead class="k-table-thead">
+                                <tr class="k-table-row">
+                                    <th class="k-table-th k-header" rowspan="1" colspan="1">
                                         <span class="k-checkbox-wrap">
                                             <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
                                         </span>
                                     </th>
-                                    <th class="k-header" rowspan="1" colspan="1">
+                                    <th class="k-table-th k-header" rowspan="1" colspan="1">
                                         <span class="k-cell-inner">
                                             <span class="k-link">
                                                 <span class="k-column-title">ID</span>
-                                                <span></span>
                                             </span>
-                                            <span class="k-sort-status" role="status" style="position: absolute; left: -10000px;"></span>
                                         </span>
                                     </th>
-                                    <th class="k-header" rowspan="1" colspan="1">
+                                    <th class="k-table-th k-header" rowspan="1" colspan="1">
                                         <span class="k-cell-inner">
                                             <span class="k-link">
                                                 <span class="k-column-title">Name</span>
@@ -182,11 +198,17 @@
                                             <span class="k-sort-status" role="status" style="position: absolute; left: -10000px;"></span>
                                         </span>
                                     </th>
-                                    <th class="k-header" rowspan="1" colspan="1">Command</th>
+                                    <th class="k-table-th k-header" rowspan="1" colspan="1">
+                                        <span class="k-cell-inner">
+                                            <span class="k-link">
+                                                <span class="k-column-title">Command</span>
+                                            </span>
+                                        </span>
+                                    </th>
                                 </tr>
-                                <tr role="row" class="k-filter-row">
-                                    <td></td>
-                                    <td>
+                                <tr role="row" class="k-table-row k-filter-row">
+                                    <td class="k-table-td"></td>
+                                    <td class="k-table-td">
                                         <div class="k-filtercell">
                                             <div class="k-filtercell-wrapper">
                                                 <span class="k-numerictextbox k-input k-input-md k-input-solid k-rounded-md">
@@ -214,7 +236,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td>
+                                    <td class="k-table-td">
                                         <div class="k-filtercell">
                                             <div class="k-filtercell-wrapper">
                                                 <span class="k-textbox k-input k-input-md k-input-solid k-rounded-md">
@@ -234,7 +256,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td></td>
+                                    <td class="k-table-td"></td>
                                 </tr>
                             </thead>
                         </table>
@@ -243,38 +265,38 @@
                 <div class="k-grid-container">
                     <div class="k-grid-content k-virtual-content">
                         <div class="k-grid-table-wrap">
-                            <table class="k-grid-table">
+                            <table class="k-table k-table-md k-grid-table">
                                 <colgroup>
                                     <col style="width: 50px;">
                                     <col>
                                     <col>
                                     <col>
                                 </colgroup>
-                                <tbody>
-                                    <tr role="row">
-                                        <td class="k-touch-action-auto" colspan="1">
+                                <tbody class="k-table-tbody">
+                                    <tr class="k-table-row">
+                                        <td class="k-table-td k-touch-action-auto" colspan="1">
                                             <span class="k-checkbox-wrap">
                                                 <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
                                             </span>
                                         </td>
-                                        <td class="k-touch-action-auto" colspan="1">1</td>
-                                        <td class="k-touch-action-auto" colspan="1">Product1</td>
-                                        <td class="k-touch-action-auto k-command-cell" colspan="1">
+                                        <td class="k-table-td k-touch-action-auto" colspan="1">1</td>
+                                        <td class="k-table-td k-touch-action-auto" colspan="1">Product1</td>
+                                        <td class="k-table-td k-touch-action-auto k-command-cell" colspan="1">
                                             <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
                                                 <span class="k-button-icon k-icon k-i-trash"></span>
                                                 <span class="k-button-text">Delete</span>
                                             </button>
                                         </td>
                                     </tr>
-                                    <tr class="k-alt" role="row">
-                                        <td class="k-touch-action-auto" colspan="1">
+                                    <tr class="k-table-row k-table-alt-row k-alt">
+                                        <td class="k-table-td k-touch-action-auto" colspan="1">
                                             <span class="k-checkbox-wrap">
                                                 <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
                                             </span>
                                         </td>
-                                        <td class="k-touch-action-auto" colspan="1">2</td>
-                                        <td class="k-touch-action-auto" colspan="1">Product2</td>
-                                        <td class="k-touch-action-auto k-command-cell" colspan="1">
+                                        <td class="k-table-td k-touch-action-auto" colspan="1">2</td>
+                                        <td class="k-table-td k-touch-action-auto" colspan="1">Product2</td>
+                                        <td class="k-table-td k-touch-action-auto k-command-cell" colspan="1">
                                             <button class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md">
                                                 <span class="k-button-icon k-icon k-i-trash"></span>
                                                 <span class="k-button-text">Delete</span>
