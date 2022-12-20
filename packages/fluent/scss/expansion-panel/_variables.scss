@@ -28,7 +28,7 @@ $kendo-expander-bg: get-theme-color-var( neutral-10 ) !default;
 $kendo-expander-border: var( --kendo-component-border, initial ) !default;
 /// Box shadow of the expander.
 /// @group expander
-$kendo-expander-shadow: inset 0 0 0 2px get-theme-color-var( neutral-30 );
+$kendo-expander-shadow: inset 0 0 0 2px get-theme-color-var( neutral-30 ) !default;
 
 /// Background color of the expanded expander.
 /// @group expander
@@ -89,7 +89,7 @@ $kendo-expander-header-sub-title-text: var( --kendo-subtle-text, initial ) !defa
 $kendo-expander-indicator-margin-x: map.get( $kendo-spacing, 2 ) + map.get( $kendo-spacing, thin ) !default;
 /// Text color of the expander indicator.
 /// @group expander
-$kendo-expander-indicator-text: var( --kendo-expander-text, #{$kendo-expander-text} );
+$kendo-expander-indicator-text: var( --kendo-expander-text, #{$kendo-expander-text} ) !default;
 
 /// Horizontal padding of the expander content.
 /// @group expander

@@ -69,7 +69,7 @@ $kendo-timeline-track-border-color: get-theme-color-var( neutral-30 ) !default;
 
 /// The inset block end of the arrow in the timeline.
 /// @group timeline
-$kendo-timeline-arrow-inset-block-end: calc( #{ $kendo-timeline-track-size } + #{ $kendo-timeline-track-wrap-padding-bottom } + #{ $kendo-timeline-track-border-width } );
+$kendo-timeline-arrow-inset-block-end: calc( #{ $kendo-timeline-track-size } + #{ $kendo-timeline-track-wrap-padding-bottom } + #{ $kendo-timeline-track-border-width } ) !default;
 /// The disabled background of the arrow in the timeline.
 /// @group timeline
 $kendo-timeline-track-arrow-disabled-bg: var( --kendo-disabled-bg, initial ) !default;

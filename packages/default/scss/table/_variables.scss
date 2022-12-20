@@ -26,14 +26,14 @@ $kendo-table-cell-padding-x: null !default;
 /// @group table
 $kendo-table-cell-padding-y: null !default;
 
-$kendo-table-cell-padding-x-sm: k-map-get( $spacing, 2 );
-$kendo-table-cell-padding-y-sm: k-map-get( $spacing, 1 );
+$kendo-table-cell-padding-x-sm: k-map-get( $spacing, 2 ) !default;
+$kendo-table-cell-padding-y-sm: k-map-get( $spacing, 1 ) !default;
 
-$kendo-table-cell-padding-x-md: k-map-get( $spacing, 3 );
-$kendo-table-cell-padding-y-md: k-map-get( $spacing, 2 );
+$kendo-table-cell-padding-x-md: k-map-get( $spacing, 3 ) !default;
+$kendo-table-cell-padding-y-md: k-map-get( $spacing, 2 ) !default;
 
-$kendo-table-cell-padding-x-lg: k-map-get( $spacing, 2 );
-$kendo-table-cell-padding-y-lg: k-map-get( $spacing, 2 ) + k-map-get( $spacing, thin );
+$kendo-table-cell-padding-x-lg: k-map-get( $spacing, 2 ) !default;
+$kendo-table-cell-padding-y-lg: k-map-get( $spacing, 2 ) + k-map-get( $spacing, thin ) !default;
 
 /// The sizes of the table.
 /// @group table
@@ -119,7 +119,7 @@ $kendo-table-alt-row-border: null !default;
 
 /// Background color of hovered rows in table.
 /// @group table
-$kendo-table-hover-bg: darken($kendo-table-bg, 7%) !default;
+$kendo-table-hover-bg: k-color-darken($kendo-table-bg, 7%) !default;
 /// Text color of hovered rows in table.
 /// @group table
 $kendo-table-hover-text: null !default;

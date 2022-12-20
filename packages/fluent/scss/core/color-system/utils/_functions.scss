@@ -36,7 +36,7 @@
         ));
 
         // Add outline if provided in the map
-        @if(list.length($indices) > 3) {
+        @if ( list.length($indices) > 3 ) {
             $outline-prop: list.nth($indices, 4);
             $outline: if( type_of($outline-prop) == number, get-theme-color-var( #{$source-palette-name}-#{$outline-prop} ), $outline-prop );
 

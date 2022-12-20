@@ -46,7 +46,7 @@ $kendo-editor-export-tool-icon-margin-x: map.get( $kendo-spacing, 1 ) !default;
 $kendo-editor-selectednode-outline-width: map.get( $kendo-spacing, thin ) !default;
 
 // Cell size
-$ct-cell-size: 20px;
+$ct-cell-size: 20px !default;
 
 /// The selected text color of the editor
 /// @group editor

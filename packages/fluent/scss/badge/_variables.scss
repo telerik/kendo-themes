@@ -85,7 +85,7 @@ $kendo-badge-brand-colors: (
     info: info,
     secondary: neutral,
     tertiary: tertiary,
- );
+ ) !default;
 
 // Matrix with badge theme colors in the order: bg, color, border
 $_tc-badge-matrix: (
@@ -95,7 +95,7 @@ $_tc-badge-matrix: (
     outline: (
         normal: ($white, 100, 100)
     )
-);
+) !default;
 
 $_tc-badge-warning-matrix: (
     solid: (
@@ -104,7 +104,7 @@ $_tc-badge-warning-matrix: (
     outline: (
         normal: ($white, 100, 100)
     )
-);
+) !default;
 
 $_tc-badge-dark-matrix: (
     solid: (
@@ -113,7 +113,7 @@ $_tc-badge-dark-matrix: (
     outline: (
         normal: ($white, 160, 160)
     )
-);
+) !default;
 
 $_tc-badge-light-matrix: (
     solid: (
@@ -122,10 +122,10 @@ $_tc-badge-light-matrix: (
     outline: (
         normal: ($white, 50, 50)
     )
-);
+) !default;
 
 /// Theme colors map for the badge variations.
-$kendo-badge-theme-colors: ();
+$kendo-badge-theme-colors: () !default;
 
 @each $fill-mode, $ui-states in $_tc-badge-matrix {
     @each $brand-color, $palette in $kendo-badge-brand-colors {

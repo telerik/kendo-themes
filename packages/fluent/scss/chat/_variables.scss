@@ -6,13 +6,13 @@
 
 /// The box shadow transition of the chat.
 /// @group chat
-$kendo-chat-transition: var( --kendo-transition, inherit );
+$kendo-chat-transition: var( --kendo-transition, inherit ) !default;
 /// The hover text of links in the bubble of the chat.
 /// @group chat
-$kendo-chat-link-hover-text: var( --kendo-link-hover-text, inherit );
+$kendo-chat-link-hover-text: var( --kendo-link-hover-text, inherit ) !default;
 /// The text of links in the bubble of the chat.
 /// @group chat
-$kendo-chat-link-text: var( --kendo-link-text, inherit );
+$kendo-chat-link-text: var( --kendo-link-text, inherit ) !default;
 /// The horizontal padding of the chat.
 /// @group chat
 $kendo-chat-padding-x: map.get( $kendo-spacing, 4 ) !default;

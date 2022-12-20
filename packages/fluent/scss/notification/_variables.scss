@@ -58,23 +58,23 @@ $kendo-notification-brand-colors: (
     info: info,
     secondary: neutral,
     tertiary: tertiary,
-);
+) !default;
 
 // Matrix with notification theme colors in the order: bg, color, border
 $_tc-notification-matrix: (
     (normal: (20, 190, 20)),
-);
+) !default;
 
 $_tc-notification-dark-matrix: (
     (normal: (160, $white, 160)),
-);
+) !default;
 
 $_tc-notification-light-matrix: (
     (normal: (50, 160, 50)),
-);
+) !default;
 
 /// Theme colors map for the notification variations.
-$kendo-notification-theme-colors: ();
+$kendo-notification-theme-colors: () !default;
 
 @each $ui-states in $_tc-notification-matrix {
     @each $brand-color, $palette in $kendo-notification-brand-colors {

@@ -109,23 +109,23 @@ $kendo-window-sizes: (
 /// Theme variations for the window.
 $kendo-window-brand-colors: (
     primary: primary
- );
+ ) !default;
 
 // Matrix with window theme colors in the order: bg, color, border
 $_tc-window-matrix: (
     (normal: (100, $white, 100)),
-);
+) !default;
 
 $_tc-window-dark-matrix: (
     (normal: (160, $white, 160)),
-);
+) !default;
 
 $_tc-window-light-matrix: (
     (normal: (50, 160, 50)),
-);
+) !default;
 
 /// Theme colors map for the window variations.
-$kendo-window-theme-colors: ();
+$kendo-window-theme-colors: () !default;
 
 @each $ui-states in $_tc-window-matrix {
     @each $brand-color, $palette in $kendo-window-brand-colors {

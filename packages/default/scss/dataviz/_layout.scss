@@ -466,7 +466,7 @@
     );
 
     @each $name, $value in $exported {
-        $type: type-of($value);
+        $type: k-meta-type-of($value);
 
         .k-var--#{$name} {
             @if $type == "color" {

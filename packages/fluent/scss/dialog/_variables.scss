@@ -55,23 +55,23 @@ $kendo-dialog-shadow: var( --kendo-box-shadow-depth-4, none ) !default;
 /// Theme variations for the dialog.
 $kendo-dialog-brand-colors: (
     primary: primary
- );
+ ) !default;
 
 // Matrix with dialog theme colors in the order: bg, color, border
 $_tc-dialog-matrix: (
     (normal: (100, $white, 100)),
-);
+) !default;
 
 $_tc-dialog-dark-matrix: (
     (normal: (160, $white, 160)),
-);
+) !default;
 
 $_tc-dialog-light-matrix: (
     (normal: (50, 160, 50)),
-);
+) !default;
 
 /// Theme colors map for the dialog variations.
-$kendo-dialog-theme-colors: ();
+$kendo-dialog-theme-colors: () !default;
 
 @each $ui-states in $_tc-dialog-matrix {
     @each $brand-color, $palette in $kendo-dialog-brand-colors {

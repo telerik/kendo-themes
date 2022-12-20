@@ -58,8 +58,8 @@ $gantt-planned-dependency-margin-y: .55em !default;
 $gantt-planned-moment-width: 6px !default;
 $gantt-planned-moment-height: $gantt-planned-moment-width !default;
 $gantt-planned-moment-border-radius: calc( ( #{$gantt-planned-border-width * 2} + #{$gantt-planned-moment-width} ) / 2 ) !default;
-$gantt-planned-moment-left-margin-x: calc( #{$gantt-planned-border-width} / 2 - #{$gantt-planned-moment-border-radius} ) !default;
-$gantt-planned-milestone-moment-margin-x: calc( #{$gantt-planned-moment-width} / 2) !default;
+$gantt-planned-moment-left-margin-x: calc( #{k-math-div( $gantt-planned-border-width, 2 )} - #{$gantt-planned-moment-border-radius} ) !default;
+$gantt-planned-milestone-moment-margin-x: k-math-div( $gantt-planned-moment-width, 2 ) !default;
 
 $gantt-planned-duration-height: $gantt-planned-border-width !default;
 $gantt-planned-duration-hover-height: calc( #{$gantt-planned-border-width} + 1px ) !default;

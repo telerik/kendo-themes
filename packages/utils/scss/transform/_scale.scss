@@ -4,13 +4,13 @@ $kendo-utils-scale: k-map-get( $kendo-utils, "scale" ) !default;
 
 // sass-lint:disable function-name-format
 @function __scale( $val ) {
-    @return scale( unquote($val) );
+    @return scale( k-string-unquote($val) );
 }
 @function __scale-x( $val ) {
-    @return scaleX( unquote($val) );
+    @return scaleX( k-string-unquote($val) );
 }
 @function __scale-y( $val ) {
-    @return scaleY( unquote($val) );
+    @return scaleY( k-string-unquote($val) );
 }
 // sass-lint:enable function-name-format
 

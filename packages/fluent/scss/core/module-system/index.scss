@@ -7,7 +7,7 @@ $_deps: ();
 $_imported: ();
 
 @mixin register( $name: null, $dependencies: null ) {
-    @if (list.index( $components, $name) != null) {
+    @if ( list.index( $components, $name) != null ) {
         $_deps: map.set( $_deps, $name, $dependencies );
 
         @if $dependencies {

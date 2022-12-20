@@ -76,7 +76,7 @@ $kendo-button-sizes: (
 
 /// Theme colors map for the button.
 /// @group button
-$kendo-button-theme-colors: map-merge(
+$kendo-button-theme-colors: k-map-merge(
     $kendo-theme-colors,
     ( "base": #f5f5f5 )
 ) !default;

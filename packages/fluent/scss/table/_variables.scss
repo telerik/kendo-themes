@@ -19,23 +19,23 @@ $kendo-table-cell-padding-x: map.get( $kendo-spacing, 3 ) !default;
 /// @group table
 $kendo-table-cell-padding-y: map.get( $kendo-spacing, 3 ) !default;
 
-$kendo-table-cell-padding-x-sm: map.get( $kendo-spacing, 3 );
-$kendo-table-cell-padding-y-sm: map.get( $kendo-spacing, 1 ) + map.get( $kendo-spacing, thin );
+$kendo-table-cell-padding-x-sm: map.get( $kendo-spacing, 3 ) !default;
+$kendo-table-cell-padding-y-sm: map.get( $kendo-spacing, 1 ) + map.get( $kendo-spacing, thin ) !default;
 
-$kendo-table-cell-padding-x-md: $kendo-table-cell-padding-x;
-$kendo-table-cell-padding-y-md: $kendo-table-cell-padding-y;
+$kendo-table-cell-padding-x-md: $kendo-table-cell-padding-x !default;
+$kendo-table-cell-padding-y-md: $kendo-table-cell-padding-y !default;
 
-$kendo-table-cell-padding-x-lg: map.get( $kendo-spacing, 3 );
-$kendo-table-cell-padding-y-lg: map.get( $kendo-spacing, 3 ) + map.get( $kendo-spacing, thin );
+$kendo-table-cell-padding-x-lg: map.get( $kendo-spacing, 3 ) !default;
+$kendo-table-cell-padding-y-lg: map.get( $kendo-spacing, 3 ) + map.get( $kendo-spacing, thin ) !default;
 
-$kendo-table-cell-padding-x-sm: map.get( $kendo-spacing, 3 );
-$kendo-table-cell-padding-y-sm: map.get( $kendo-spacing, 1 ) + map.get( $kendo-spacing, thin );
+$kendo-table-cell-padding-x-sm: map.get( $kendo-spacing, 3 ) !default;
+$kendo-table-cell-padding-y-sm: map.get( $kendo-spacing, 1 ) + map.get( $kendo-spacing, thin ) !default;
 
-$kendo-table-cell-padding-x-md: $kendo-table-cell-padding-x;
-$kendo-table-cell-padding-y-md: $kendo-table-cell-padding-y;
+$kendo-table-cell-padding-x-md: $kendo-table-cell-padding-x !default;
+$kendo-table-cell-padding-y-md: $kendo-table-cell-padding-y !default;
 
-$kendo-table-cell-padding-x-lg: map.get( $kendo-spacing, 3 );
-$kendo-table-cell-padding-y-lg: map.get( $kendo-spacing, 3 ) + map.get( $kendo-spacing, thin );
+$kendo-table-cell-padding-x-lg: map.get( $kendo-spacing, 3 ) !default;
+$kendo-table-cell-padding-y-lg: map.get( $kendo-spacing, 3 ) + map.get( $kendo-spacing, thin ) !default;
 
 /// Font weight of the table header cells.
 /// @group table

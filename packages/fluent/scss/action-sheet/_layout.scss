@@ -292,7 +292,7 @@
         .k-actionsheet-content,
         .k-actionsheet-footer {
             margin-inline: auto;
-            width: unquote("min(100%, 360px)");
+            width: min(100%, 360px);
         }
 
         .k-list-container,
