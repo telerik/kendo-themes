@@ -22,8 +22,8 @@
     </style>
     <div id="test-area" class="k-d-grid k-grid-cols-1">
         <section>
-            <div class="k-widget k-grid k-grid-no-scrollbar">
-                <table>
+            <div class="k-grid k-grid-md k-grid-no-scrollbar">
+                <table class="k-table k-table-md k-grid-table">
                     <colgroup>
                         <col style="width: 50px;">
                         <col>
@@ -31,148 +31,148 @@
                         <col>
                         <col>
                     </colgroup>
-                    <thead class="k-grid-header">
-                        <tr>
-                            <th>
+                    <thead class="k-grid-thead k-grid-header">
+                        <tr class="k-table-row">
+                            <th class="k-table-th">
                                 <span class="k-checkbox-wrap">
                                     <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
                                 </span>
                                 <label class="k-checkbox-label"></label>
                             </th>
-                            <th class="k-header">Base</th>
-                            <th class="k-header k-sorted">Sorted</th>
-                            <th class="k-header">Focus</th>
-                            <th class="k-header">Selected</th>
+                            <th class="k-table-th k-header">Base</th>
+                            <th class="k-table-th k-header k-sorted">Sorted</th>
+                            <th class="k-table-th k-header">Focus</th>
+                            <th class="k-table-th k-header">Selected</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr>
-                            <td>
+                    <tbody class="k-table-tbody">
+                        <tr class="k-table-row">
+                            <td class="k-table-td">
                                 <span class="k-checkbox-wrap">
                                     <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
                                 </span>
                                 <label class="k-checkbox-label"></label>
                             </td>
-                            <td>Normal row</td>
-                            <td>Sorted</td>
-                            <td class="k-focus">Focus</td>
-                            <td class="k-selected">Selected</td>
+                            <td class="k-table-td">Normal row</td>
+                            <td class="k-table-td">Sorted</td>
+                            <td class="k-table-td k-focus">Focus</td>
+                            <td class="k-table-td k-selected">Selected</td>
                         </tr>
-                        <tr class="k-alt">
-                            <td>
+                        <tr class="k-table-row k-table-alt-row k-alt">
+                            <td class="k-table-td">
                                 <span class="k-checkbox-wrap">
                                     <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
                                 </span>
                                 <label class="k-checkbox-label"></label>
                             </td>
-                            <td>Alt row</td>
-                            <td>Sorted</td>
-                            <td class="k-focus">Alt + Focus</td>
-                            <td class="k-selected">Alt + Selected</td>
-                        </tr>
-                    </tbody>
-                    <tbody>
-                        <tr class="k-hover">
-                            <td>
-                                <span class="k-checkbox-wrap">
-                                    <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
-                                </span>
-                                <label class="k-checkbox-label"></label>
-                            </td>
-                            <td>Sorted</td>
-                            <td>Hovered row</td>
-                            <td class="k-focus">Hover + Focus</td>
-                            <td class="k-selected">Hover + Selected</td>
-                        </tr>
-                        <tr class="k-alt k-hover">
-                            <td>
-                                <span class="k-checkbox-wrap">
-                                    <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
-                                </span>
-                                <label class="k-checkbox-label"></label>
-                            </td>
-                            <td>Alt hovered row</td>
-                            <td>Sorted</td>
-                            <td class="k-focus">Alt + Hover + Focus</td>
-                            <td class="k-selected">Alt + Hover + Selected</td>
+                            <td class="k-table-td">Alt row</td>
+                            <td class="k-table-td">Sorted</td>
+                            <td class="k-table-td k-focus">Alt + Focus</td>
+                            <td class="k-table-td k-selected">Alt + Selected</td>
                         </tr>
                     </tbody>
-                    <tbody>
-                        <tr class="k-focus">
-                            <td>
+                    <tbody class="k-table-tbody">
+                        <tr class="k-table-row k-hover">
+                            <td class="k-table-td">
                                 <span class="k-checkbox-wrap">
                                     <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
                                 </span>
                                 <label class="k-checkbox-label"></label>
                             </td>
-                            <td>Focused row</td>
-                            <td>Sorted</td>
-                            <td>N/A</td>
-                            <td class="k-selected">Focus + Selected</td>
+                            <td class="k-table-td">Sorted</td>
+                            <td class="k-table-td">Hovered row</td>
+                            <td class="k-table-td k-focus">Hover + Focus</td>
+                            <td class="k-table-td k-selected">Hover + Selected</td>
+                        </tr>
+                        <tr class="k-table-row k-table-alt-row k-alt k-hover">
+                            <td class="k-table-td">
+                                <span class="k-checkbox-wrap">
+                                    <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                </span>
+                                <label class="k-checkbox-label"></label>
+                            </td>
+                            <td class="k-table-td">Alt hovered row</td>
+                            <td class="k-table-td">Sorted</td>
+                            <td class="k-table-td k-focus">Alt + Hover + Focus</td>
+                            <td class="k-table-td k-selected">Alt + Hover + Selected</td>
+                        </tr>
+                    </tbody>
+                    <tbody class="k-table-tbody">
+                        <tr class="k-table-row k-focus">
+                            <td class="k-table-td">
+                                <span class="k-checkbox-wrap">
+                                    <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
+                                </span>
+                                <label class="k-checkbox-label"></label>
+                            </td>
+                            <td class="k-table-td">Focused row</td>
+                            <td class="k-table-td">Sorted</td>
+                            <td class="k-table-td">N/A</td>
+                            <td class="k-table-td k-selected">Focus + Selected</td>
                         </tr>
                         <tr class="k-alt k-focus">
-                            <td>
+                            <td class="k-table-td">
                                 <span class="k-checkbox-wrap">
                                     <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
                                 </span>
                                 <label class="k-checkbox-label"></label>
                             </td>
-                            <td>Alt focused row</td>
-                            <td>Sorted</td>
-                            <td>N/A</td>
-                            <td class="k-selected">Alt + Focus + Selected</td>
+                            <td class="k-table-td">Alt focused row</td>
+                            <td class="k-table-td">Sorted</td>
+                            <td class="k-table-td">N/A</td>
+                            <td class="k-table-td k-selected">Alt + Focus + Selected</td>
                         </tr>
                     </tbody>
-                    <tbody>
-                        <tr class="k-selected">
-                            <td>
+                    <tbody class="k-table-tbody">
+                        <tr class="k-table-row k-selected">
+                            <td class="k-table-td">
                                 <span class="k-checkbox-wrap">
                                     <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md k-checked" checked="">
                                 </span>
                                 <label class="k-checkbox-label"></label>
                             </td>
-                            <td>Selected row</td>
-                            <td>Sorted</td>
-                            <td class="k-focus">Selected + Focus</td>
-                            <td>N/A</td>
+                            <td class="k-table-td">Selected row</td>
+                            <td class="k-table-td">Sorted</td>
+                            <td class="k-table-td k-focus">Selected + Focus</td>
+                            <td class="k-table-td">N/A</td>
                         </tr>
-                        <tr class="k-alt k-selected">
-                            <td>
+                        <tr class="k-table-row k-table-alt-row k-alt k-selected">
+                            <td class="k-table-td">
                                 <span class="k-checkbox-wrap">
                                     <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md k-checked" checked="">
                                 </span>
                                 <label class="k-checkbox-label"></label>
                             </td>
-                            <td>Alt selected row</td>
-                            <td>Sorted</td>
-                            <td class="k-focus">Alt + Selected + Focus</td>
-                            <td>N/A</td>
+                            <td class="k-table-td">Alt selected row</td>
+                            <td class="k-table-td">Sorted</td>
+                            <td class="k-table-td k-focus">Alt + Selected + Focus</td>
+                            <td class="k-table-td">N/A</td>
                         </tr>
                     </tbody>
-                    <tbody>
-                        <tr class="k-hover k-selected">
-                            <td>
+                    <tbody class="k-table-tbody">
+                        <tr class="k-table-row k-hover k-selected">
+                            <td class="k-table-td">
                                 <span class="k-checkbox-wrap">
                                     <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md k-checked" checked="">
                                 </span>
                                 <label class="k-checkbox-label"></label>
                             </td>
-                            <td>Hover + Selected row</td>
-                            <td>Sorted</td>
-                            <td class="k-focus">Hover + Selected + Focus</td>
-                            <td>N/A</td>
+                            <td class="k-table-td">Hover + Selected row</td>
+                            <td class="k-table-td">Sorted</td>
+                            <td class="k-table-td k-focus">Hover + Selected + Focus</td>
+                            <td class="k-table-td">N/A</td>
                         </tr>
-                        <tr class="k-alt k-hover k-selected">
-                            <td>
+                        <tr class="k-table-row k-table-alt-row k-alt k-hover k-selected">
+                            <td class="k-table-td">
                                 <span class="k-checkbox-wrap">
                                     <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md k-checked" checked="">
                                 </span>
                                 <label class="k-checkbox-label"></label>
                             </td>
-                            <td>Alt + Hover selected row</td>
-                            <td>Sorted</td>
-                            <td class="k-focus">Alt + Hover + Selected + Focus</td>
-                            <td>N/A</td>
+                            <td class="k-table-td">Alt + Hover selected row</td>
+                            <td class="k-table-td">Sorted</td>
+                            <td class="k-table-td k-focus">Alt + Hover + Selected + Focus</td>
+                            <td class="k-table-td">N/A</td>
                         </tr>
                     </tbody>
                 </table>

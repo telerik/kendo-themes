@@ -11,51 +11,63 @@
     <div id="test-area" class="k-d-grid k-grid-cols-2">
         <span class="col-2">jQuery grid</span>
         <section class="col-2">
-            <div class="k-widget k-grid k-grid-no-scrollbar">
+            <div class="k-grid k-grid-md k-grid-no-scrollbar">
                 <div class="k-grid-header">
                     <div class="k-grid-header-wrap">
-                        <table>
+                        <table class="k-table k-table-md k-grid-header-table">
                             <colgroup>
                                 <col style="width: 100px;">
                                 <col>
                             </colgroup>
-                            <thead>
-                                <tr>
-                                    <th class="k-header">100px</th>
-                                    <th class="k-header">no width</th>
+                            <thead class="k-table-thead">
+                                <tr class="k-table-row">
+                                    <th class="k-table-th k-header">
+                                        <span class="k-cell-inner">
+                                            <span class="k-link">
+                                                <span class="k-column-title">100px</span>
+                                            </span>
+                                        </span>
+                                    </th>
+                                    <th class="k-table-th k-header">
+                                        <span class="k-cell-inner">
+                                            <span class="k-link">
+                                                <span class="k-column-title">no width</span>
+                                            </span>
+                                        </span>
+                                    </th>
                                 </tr>
                             </thead>
                         </table>
                     </div>
                 </div>
                 <div class="k-grid-content">
-                    <table class="k-grid-table">
+                    <table class="k-table k-table-md k-grid-table">
                         <colgroup>
                             <col style="width: 100px;">
                             <col>
                         </colgroup>
-                        <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>Row</td>
+                        <tbody class="k-table-tbody">
+                            <tr class="k-table-row">
+                                <td class="k-table-td">1</td>
+                                <td class="k-table-td">Row</td>
                             </tr>
-                            <tr class="k-alt">
-                                <td>2</td>
-                                <td>Alt row</td>
+                            <tr class="k-table-row k-table-alt-row k-alt">
+                                <td class="k-table-td">2</td>
+                                <td class="k-table-td">Alt row</td>
                             </tr>
-                            <tr>
-                                <td>3</td>
-                                <td>This text continues to the end of the grid to test overflow behavior of row contents, as well as line height and vertical alignment.</td>
+                            <tr class="k-table-row">
+                                <td class="k-table-td">3</td>
+                                <td class="k-table-td">This text continues to the end of the grid to test overflow behavior of row contents, as well as line height and vertical alignment.</td>
                             </tr>
-                            <tr class="k-alt">
-                                <td>4</td>
-                                <td>
+                            <tr class="k-table-row k-table-alt-row k-alt">
+                                <td class="k-table-td">4</td>
+                                <td class="k-table-td">
                                     <span class="k-placeholder-line"></span>
                                 </td>
                             </tr>
-                            <tr>
-                                <td>5</td>
-                                <td>
+                            <tr class="k-table-row">
+                                <td class="k-table-td">5</td>
+                                <td class="k-table-td">
                                     <span class="k-placeholder-line"></span>
                                 </td>
                             </tr>
@@ -119,10 +131,10 @@
         </section>
         <span class="col-2">jQuery -- fixed height, hierarchy, filter menu, sort icon</span>
         <section class="col-2">
-            <div class="k-widget k-grid k-grid-no-scrollbar" style="height: 250px;">
+            <div class="k-grid k-grid-md k-grid-no-scrollbar" style="height: 250px;">
                 <div class="k-grid-header">
                     <div class="k-grid-header-wrap">
-                        <table>
+                        <table class="k-table k-table-md k-grid-header-table">
                             <colgroup>
                                 <col class="k-hierarchy-col">
                                 <col>
@@ -130,43 +142,61 @@
                                 <col>
                                 <col>
                             </colgroup>
-                            <thead>
-                                <tr>
-                                    <th class="k-header k-hierarchy-cell"></th>
-                                    <th class="k-header k-filterable">
-                                        <a class="k-grid-filter">
-                                            <span class="k-icon k-i-filter"></span>
-                                        </a>
-                                        <a class="k-link">Default<span></span>
-                                        </a>
+                            <thead class="k-table-thead">
+                                <tr class="k-table-row">
+                                    <th class="k-table-th k-header k-hierarchy-cell"></th>
+                                    <th class="k-table-th k-header k-filterable">
+                                        <span class="k-cell-inner">
+                                            <span class="k-link">
+                                                <span class="k-column-title">Default</span>
+                                            </span>
+                                            <a href="#" class="k-grid-filter-menu k-grid-header-menu">
+                                                <span class="k-icon k-i-filter"></span>
+                                            </a>
+                                        </span>
                                     </th>
-                                    <th class="k-header k-filterable k-hover">
-                                        <a class="k-grid-filter">
-                                            <span class="k-icon k-i-filter"></span>
-                                        </a>
-                                        <a class="k-link">Hover<span></span>
-                                        </a>
+                                    <th class="k-table-th k-header k-filterable k-hover">
+                                        <span class="k-cell-inner">
+                                            <span class="k-link">
+                                                <span class="k-column-title">Hover</span>
+                                            </span>
+                                            <a href="#" class="k-grid-filter-menu k-grid-header-menu">
+                                                <span class="k-icon k-i-filter"></span>
+                                            </a>
+                                        </span>
                                     </th>
-                                    <th class="k-header k-filterable k-focus">
-                                        <a class="k-grid-filter">
-                                            <span class="k-icon k-i-filter"></span>
-                                        </a>
-                                        <a class="k-link">Focus<span></span>
-                                        </a>
+                                    <th class="k-table-th k-header k-filterable k-focus">
+                                        <span class="k-cell-inner">
+                                            <span class="k-link">
+                                                <span class="k-column-title">Focus</span>
+                                            </span>
+                                            <a href="#" class="k-grid-filter-menu k-grid-header-menu">
+                                                <span class="k-icon k-i-filter"></span>
+                                            </a>
+                                        </span>
                                     </th>
-                                    <th class="k-header k-filterable k-active">
-                                        <a class="k-grid-filter">
-                                            <span class="k-icon k-i-filter"></span>
-                                        </a>
-                                        <a class="k-link">Active<span></span>
-                                        </a>
+                                    <th class="k-table-th k-header k-filterable k-active">
+                                        <span class="k-cell-inner">
+                                            <span class="k-link">
+                                                <span class="k-column-title">Active</span>
+                                            </span>
+                                            <a href="#" class="k-grid-filter-menu k-grid-header-menu k-active">
+                                                <span class="k-icon k-i-filter"></span>
+                                            </a>
+                                        </span>
                                     </th>
-                                    <th class="k-header k-filterable k-sorted">
-                                        <a class="k-grid-filter">
-                                            <span class="k-icon k-i-filter"></span>
-                                        </a>
-                                        <a class="k-link">Sorted<span class="k-icon k-i-sort-asc-sm"></span>
-                                        </a>
+                                    <th class="k-table-th k-header k-filterable k-sorted">
+                                        <span class="k-cell-inner">
+                                            <span class="k-link">
+                                                <span class="k-column-title">Sorted</span>
+                                                <span class="k-sort-icon">
+                                                    <span class="k-icon k-i-sort-asc-small"></span>
+                                                </span>
+                                            </span>
+                                            <a href="#" class="k-grid-filter-menu k-grid-header-menu">
+                                                <span class="k-icon k-i-filter"></span>
+                                            </a>
+                                        </span>
                                     </th>
                                 </tr>
                             </thead>
@@ -174,7 +204,7 @@
                     </div>
                 </div>
                 <div class="k-grid-content">
-                    <table class="k-grid-table">
+                    <table class="k-table k-table-md k-grid-table">
                         <colgroup>
                             <col class="k-hierarchy-col">
                             <col>
@@ -182,32 +212,32 @@
                             <col>
                             <col>
                         </colgroup>
-                        <tbody>
-                            <tr class="k-master-row k-expanded">
-                                <td class="k-hierarchy-cell">
+                        <tbody class="k-table-tbody">
+                            <tr class="k-table-row k-master-row k-expanded">
+                                <td class="k-table-td k-hierarchy-cell">
                                     <span class="k-icon k-i-collapse"></span>
                                 </td>
-                                <td>1</td>
-                                <td>Text</td>
-                                <td>Text</td>
-                                <td>Text</td>
-                                <td>Text</td>
+                                <td class="k-table-td">1</td>
+                                <td class="k-table-td">Text</td>
+                                <td class="k-table-td">Text</td>
+                                <td class="k-table-td">Text</td>
+                                <td class="k-table-td">Text</td>
                             </tr>
-                            <tr class="k-detail-row">
-                                <td class="k-hierarchy-cell"></td>
-                                <td class="k-detail-cell" colspan="5">
+                            <tr class="k-table-row k-detail-row">
+                                <td class="k-table-td k-hierarchy-cell"></td>
+                                <td class="k-table-td k-detail-cell" colspan="5">
                                     <div style="background: rgb(204, 204, 204); padding: 10px;">Nested content</div>
                                 </td>
                             </tr>
-                            <tr class="k-alt k-master-row">
-                                <td class="k-hierarchy-cell">
+                            <tr class="k-table-row k-table-alt-row k-alt k-master-row">
+                                <td class="k-table-td k-hierarchy-cell">
                                     <span class="k-icon k-i-expand"></span>
                                 </td>
-                                <td>2</td>
-                                <td>Text</td>
-                                <td>Text</td>
-                                <td>Text</td>
-                                <td>Text</td>
+                                <td class="k-table-td">2</td>
+                                <td class="k-table-td">Text</td>
+                                <td class="k-table-td">Text</td>
+                                <td class="k-table-td">Text</td>
+                                <td class="k-table-td">Text</td>
                             </tr>
                         </tbody>
                     </table>
@@ -216,46 +246,58 @@
         </section>
         <span>Drag column</span>
         <section class="col-2">
-            <div id="grid" data-role="grid" class="k-grid k-widget k-grid-display-block">
+            <div id="grid" data-role="grid" class="k-grid k-grid-md k-grid-display-block">
                 <div class="k-grid-header">
                     <div class="k-grid-header-wrap k-auto-scrollable">
-                        <table>
+                        <table class="k-table k-table-md k-grid-header-table">
                             <colgroup>
                                 <col class="k-drag-col">
                                 <col>
                                 <col>
                             </colgroup>
-                            <thead>
-                                <tr>
+                            <thead class="k-table-thead">
+                                <tr class="k-table-row">
                                     <th class="k-drag-cell k-header"></th>
-                                    <th class="k-header">Company Name</th>
-                                    <th class="k-header">Country</th>
+                                    <th class="k-table-th k-header">
+                                        <span class="k-cell-inner">
+                                            <span class="k-link">
+                                                <span class="k-column-title">Company Name</span>
+                                            </span>
+                                        </span>
+                                    </th>
+                                    <th class="k-table-th k-header">
+                                        <span class="k-cell-inner">
+                                            <span class="k-link">
+                                                <span class="k-column-title">Country</span>
+                                            </span>
+                                        </span>
+                                    </th>
                                 </tr>
                             </thead>
                         </table>
                     </div>
                 </div>
                 <div class="k-grid-content k-auto-scrollable">
-                    <table role="grid">
+                    <table class="k-table k-table-md k-grid-table" role="grid">
                         <colgroup>
                             <col class="k-drag-col">
                             <col>
                             <col>
                         </colgroup>
-                        <tbody>
-                            <tr class="k-master-row">
+                        <tbody class="k-table-tbody">
+                            <tr class="k-table-row k-master-row">
                                 <td class="k-drag-cell">
                                     <span class="k-icon k-i-reorder"></span>
                                 </td>
-                                <td>Alfreds Futterkiste</td>
-                                <td>Germany</td>
+                                <td class="k-table-td">Alfreds Futterkiste</td>
+                                <td class="k-table-td">Germany</td>
                             </tr>
-                            <tr class="k-alt k-master-row">
+                            <tr class="k-table-row k-table-alt-row k-alt k-master-row">
                                 <td class="k-drag-cell">
                                     <span class="k-icon k-i-reorder"></span>
                                 </td>
-                                <td>Ana Trujillo Emparedados y helados</td>
-                                <td>Mexico</td>
+                                <td class="k-table-td">Ana Trujillo Emparedados y helados</td>
+                                <td class="k-table-td">Mexico</td>
                             </tr>
                         </tbody>
                     </table>

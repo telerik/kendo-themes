@@ -21,45 +21,75 @@
     </style>
     <div id="test-area" class="k-d-grid">
         <span>Angular Grid with locked columns, Grouping and Multiline headers</span>
-        <div dir="rtl" class="k-widget k-grid k-grid-lockedcolumns grid-styling-overrides" style="height: 700px;">
+        <div dir="rtl" class="k-grid k-grid-md k-grid-lockedcolumns grid-styling-overrides" style="height: 700px;">
             <div class="k-grid-aria-root">
                 <div class="k-grid-header">
                     <div class="k-grid-header-locked" style="width: 582px;">
-                        <table style="width: 582px;">
+                        <table class="k-table k-table-md k-grid-header-table" style="width: 582px;">
                             <colgroup>
                                 <col class="k-group-col">
                                 <col style="width: 200px;">
                                 <col style="width: 350px;">
                             </colgroup>
-                            <thead>
-                                <tr style="height: 38px;">
-                                    <th class="k-group-cell k-header"></th>
-                                    <th class="k-header" rowspan="2" colspan="1">Product ID</th>
-                                    <th class="k-header" rowspan="2" colspan="1">Product Name</th>
+                            <thead class="k-table-thead">
+                                <tr class="k-table-row" style="height: 38px;">
+                                    <th class="k-table-th k-group-cell k-header"></th>
+                                    <th class="k-table-th k-header" rowspan="2" colspan="1">Product ID</th>
+                                    <th class="k-table-th k-header" rowspan="2" colspan="1">Product Name</th>
                                 </tr>
-                                <tr style="height: 38px;">
-                                    <th class="k-group-cell k-header"></th>
+                                <tr class="k-table-row" style="height: 38px;">
+                                    <th class="k-table-th k-group-cell k-header"></th>
                                 </tr>
                             </thead>
                         </table>
                     </div>
                     <div class="k-grid-header-wrap">
-                        <table>
+                        <table class="k-table k-table-md k-grid-header-table">
                             <colgroup>
                                 <col style="height: 120px;">
                                 <col style="height: 120px;">
                                 <col style="height: 120px;">
                                 <col style="height: 120px;">
                             </colgroup>
-                            <thead>
-                                <tr style="height: 38px;">
-                                    <th class="k-header" rowspan="1" colspan="3">Availability</th>
-                                    <th class="k-header" rowspan="2" colspan="1">Discontinued</th>
+                            <thead class="k-table-thead">
+                                <tr class="k-table-row" style="height: 38px;">
+                                    <th class="k-table-th k-header" rowspan="1" colspan="3">
+                                        <span class="k-cell-inner">
+                                            <span class="k-link">
+                                                <span class="k-column-title">Availability</span>
+                                            </span>
+                                        </span>
+                                    </th>
+                                    <th class="k-table-th k-header" rowspan="2" colspan="1">
+                                        <span class="k-cell-inner">
+                                            <span class="k-link">
+                                                <span class="k-column-title">Discontinued</span>
+                                            </span>
+                                        </span>
+                                    </th>
                                 </tr>
-                                <tr style="height: 38px;">
-                                    <th class="k-header" rowspan="1" colspan="1">Unit Price</th>
-                                    <th class="k-header" rowspan="1" colspan="1">Units On Order</th>
-                                    <th class="k-header" rowspan="1" colspan="1">Units In Stock</th>
+                                <tr class="k-table-row" style="height: 38px;">
+                                    <th class="k-table-th k-header" rowspan="1" colspan="1">
+                                        <span class="k-cell-inner">
+                                            <span class="k-link">
+                                                <span class="k-column-title">Unit Price</span>
+                                            </span>
+                                        </span>
+                                    </th>
+                                    <th class="k-table-th k-header" rowspan="1" colspan="1">
+                                        <span class="k-cell-inner">
+                                            <span class="k-link">
+                                                <span class="k-column-title">Units On Order</span>
+                                            </span>
+                                        </span>
+                                    </th>
+                                    <th class="k-table-th k-header" rowspan="1" colspan="1">
+                                        <span class="k-cell-inner">
+                                            <span class="k-link">
+                                                <span class="k-column-title">Units In Stock</span>
+                                            </span>
+                                        </span>
+                                    </th>
                                 </tr>
                             </thead>
                         </table>
@@ -68,66 +98,66 @@
                 <div class="k-grid-container">
                     <div class="k-grid-content-locked" style="width: 582px; height: 570px;">
                         <div class="k-grid-table-wrap">
-                            <table class="k-grid-table" style="width: 582px;">
+                            <table class="k-table k-table-md k-grid-table" style="width: 582px;">
                                 <colgroup>
                                     <col class="k-group-col">
                                     <col style="width: 200px;">
                                     <col style="width: 350px;">
                                 </colgroup>
-                                <tbody>
-                                    <tr class="k-grouping-row" style="height: 37px;">
-                                        <td colspan="3">
+                                <tbody class="k-table-tbody">
+                                    <tr class="k-table-row k-table-group-row k-grouping-row" style="height: 37px;">
+                                        <td class="k-table-td" colspan="3">
                                             <p class="k-reset">
                                                 <span class="k-icon k-i-collapse"></span>Discontinued: false
                                             </p>
                                         </td>
                                     </tr>
-                                    <tr style="height: 38px;">
-                                        <td class="k-group-cell"></td>
-                                        <td colspan="1"></td>
-                                        <td colspan="1">Chai</td>
+                                    <tr class="k-table-row" style="height: 38px;">
+                                        <td class="k-table-td k-table-group-td k-group-cell"></td>
+                                        <td class="k-table-td" colspan="1"></td>
+                                        <td class="k-table-td" colspan="1">Chai</td>
                                     </tr>
-                                    <tr class="k-alt" style="width: 37px;">
-                                        <td class="k-group-cell"></td>
-                                        <td colspan="1">2</td>
-                                        <td colspan="1">Chang</td>
+                                    <tr class="k-table-row k-table-alt-row k-alt" style="width: 37px;">
+                                        <td class="k-table-td k-table-group-td k-group-cell"></td>
+                                        <td class="k-table-td" colspan="1">2</td>
+                                        <td class="k-table-td" colspan="1">Chang</td>
                                     </tr>
-                                    <tr style="width: 37px;">
-                                        <td class="k-group-cell"></td>
-                                        <td colspan="1">3</td>
-                                        <td colspan="1">Aniseed Syrup</td>
+                                    <tr class="k-table-row" style="width: 37px;">
+                                        <td class="k-table-td k-table-group-td k-group-cell"></td>
+                                        <td class="k-table-td" colspan="1">3</td>
+                                        <td class="k-table-td" colspan="1">Aniseed Syrup</td>
                                     </tr>
-                                    <tr class="k-alt" style="width: 37px;">
-                                        <td class="k-group-cell"></td>
-                                        <td colspan="1">4</td>
-                                        <td colspan="1">Chef Anton's Cajun Seasoning</td>
+                                    <tr class="k-table-row k-table-alt-row k-alt" style="width: 37px;">
+                                        <td class="k-table-td k-table-group-td k-group-cell"></td>
+                                        <td class="k-table-td" colspan="1">4</td>
+                                        <td class="k-table-td" colspan="1">Chef Anton's Cajun Seasoning</td>
                                     </tr>
-                                    <tr style="width: 37px;">
-                                        <td class="k-group-cell"></td>
-                                        <td colspan="1">6</td>
-                                        <td colspan="1">Grandma's Boysenberry Spread</td>
+                                    <tr class="k-table-row" style="width: 37px;">
+                                        <td class="k-table-td k-table-group-td k-group-cell"></td>
+                                        <td class="k-table-td" colspan="1">6</td>
+                                        <td class="k-table-td" colspan="1">Grandma's Boysenberry Spread</td>
                                     </tr>
-                                    <tr class="k-group-footer" style="height: 39px;">
-                                        <td class="k-group-cell"></td>
-                                        <td></td>
-                                        <td></td>
+                                    <tr class="k-table-row k-group-footer" style="height: 39px;">
+                                        <td class="k-table-td k-table-group-td k-group-cell"></td>
+                                        <td class="k-table-td"></td>
+                                        <td class="k-table-td"></td>
                                     </tr>
-                                    <tr class="k-grouping-row" style="height: 37px;">
-                                        <td colspan="3">
+                                    <tr class="k-table-row k-table-group-row k-grouping-row" style="height: 37px;">
+                                        <td class="k-table-td" colspan="3">
                                             <p class="k-reset">
                                                 <span class="k-icon k-i-collapse"></span>Discontinued: true
                                             </p>
                                         </td>
                                     </tr>
-                                    <tr class="k-alt" style="height: 38px;">
-                                        <td class="k-group-cell"></td>
-                                        <td colspan="1">5</td>
-                                        <td colspan="1">Chef Anton's Gumbo Mix</td>
+                                    <tr class="k-table-row k-table-alt-row k-alt" style="height: 38px;">
+                                        <td class="k-table-td k-table-group-td k-group-cell"></td>
+                                        <td class="k-table-td" colspan="1">5</td>
+                                        <td class="k-table-td" colspan="1">Chef Anton's Gumbo Mix</td>
                                     </tr>
-                                    <tr class="k-group-footer" style="height: 39px;">
-                                        <td class="k-group-cell"></td>
-                                        <td></td>
-                                        <td></td>
+                                    <tr class="k-table-row k-group-footer" style="height: 39px;">
+                                        <td class="k-table-td k-table-group-td k-group-cell"></td>
+                                        <td class="k-table-td"></td>
+                                        <td class="k-table-td"></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -139,95 +169,95 @@
                     </div>
                     <div class="k-grid-content k-virtual-content">
                         <div class="k-grid-table-wrap">
-                            <table class="k-grid-table">
+                            <table class="k-table k-table-md k-grid-table">
                                 <colgroup>
                                     <col style="height: 120px;">
                                     <col style="height: 120px;">
                                     <col style="height: 120px;">
                                     <col style="height: 120px;">
                                 </colgroup>
-                                <tbody>
-                                    <tr class="k-grouping-row" style="height: 37px;">
-                                        <td colspan="4">
+                                <tbody class="k-table-tbody">
+                                    <tr class="k-table-row k-table-group-row k-grouping-row" style="height: 37px;">
+                                        <td class="k-table-td" colspan="4">
                                             <p class="k-reset"></p>
                                         </td>
                                     </tr>
-                                    <tr style="height: 38px;">
-                                        <td colspan="1">18</td>
-                                        <td colspan="1">0</td>
-                                        <td colspan="1">39</td>
-                                        <td colspan="1">
+                                    <tr class="k-table-row" style="height: 38px;">
+                                        <td class="k-table-td" colspan="1">18</td>
+                                        <td class="k-table-td" colspan="1">0</td>
+                                        <td class="k-table-td" colspan="1">39</td>
+                                        <td class="k-table-td" colspan="1">
                                             <span class="k-checkbox-wrap">
                                                 <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
                                             </span>
                                         </td>
                                     </tr>
-                                    <tr class="k-alt" style="width: 37px;">
-                                        <td colspan="1">19</td>
-                                        <td colspan="1">40</td>
-                                        <td colspan="1">17</td>
-                                        <td colspan="1">
+                                    <tr class="k-table-row k-table-alt-row k-alt" style="width: 37px;">
+                                        <td class="k-table-td" colspan="1">19</td>
+                                        <td class="k-table-td" colspan="1">40</td>
+                                        <td class="k-table-td" colspan="1">17</td>
+                                        <td class="k-table-td" colspan="1">
                                             <span class="k-checkbox-wrap">
                                                 <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
                                             </span>
                                         </td>
                                     </tr>
-                                    <tr style="width: 37px;">
-                                        <td colspan="1">10</td>
-                                        <td colspan="1">70</td>
-                                        <td colspan="1">13</td>
-                                        <td colspan="1">
+                                    <tr class="k-table-row" style="width: 37px;">
+                                        <td class="k-table-td" colspan="1">10</td>
+                                        <td class="k-table-td" colspan="1">70</td>
+                                        <td class="k-table-td" colspan="1">13</td>
+                                        <td class="k-table-td" colspan="1">
                                             <span class="k-checkbox-wrap">
                                                 <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
                                             </span>
                                         </td>
                                     </tr>
-                                    <tr class="k-alt" style="width: 37px;">
-                                        <td colspan="1">22</td>
-                                        <td colspan="1">0</td>
-                                        <td colspan="1">53</td>
-                                        <td colspan="1">
+                                    <tr class="k-table-row k-table-alt-row k-alt" style="width: 37px;">
+                                        <td class="k-table-td" colspan="1">22</td>
+                                        <td class="k-table-td" colspan="1">0</td>
+                                        <td class="k-table-td" colspan="1">53</td>
+                                        <td class="k-table-td" colspan="1">
                                             <span class="k-checkbox-wrap">
                                                 <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
                                             </span>
                                         </td>
                                     </tr>
-                                    <tr style="width: 37px;">
-                                        <td colspan="1">25</td>
-                                        <td colspan="1">0</td>
-                                        <td colspan="1">120</td>
-                                        <td colspan="1">
+                                    <tr class="k-table-row" style="width: 37px;">
+                                        <td class="k-table-td" colspan="1">25</td>
+                                        <td class="k-table-td" colspan="1">0</td>
+                                        <td class="k-table-td" colspan="1">120</td>
+                                        <td class="k-table-td" colspan="1">
                                             <span class="k-checkbox-wrap">
                                                 <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
                                             </span>
                                         </td>
                                     </tr>
-                                    <tr class="k-group-footer" style="height: 39px;">
-                                        <td>Sum: 94</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
+                                    <tr class="k-table-row k-group-footer" style="height: 39px;">
+                                        <td class="k-table-td">Sum: 94</td>
+                                        <td class="k-table-td"></td>
+                                        <td class="k-table-td"></td>
+                                        <td class="k-table-td"></td>
                                     </tr>
-                                    <tr class="k-grouping-row" style="height: 37px;">
-                                        <td colspan="4">
+                                    <tr class="k-table-row k-table-group-row k-grouping-row" style="height: 37px;">
+                                        <td class="k-table-td" colspan="4">
                                             <p class="k-reset"></p>
                                         </td>
                                     </tr>
-                                    <tr class="k-alt" style="height: 38px;">
-                                        <td colspan="1">21.35</td>
-                                        <td colspan="1">0</td>
-                                        <td colspan="1">0</td>
-                                        <td colspan="1">
+                                    <tr class="k-table-row k-table-alt-row k-alt" style="height: 38px;">
+                                        <td class="k-table-td" colspan="1">21.35</td>
+                                        <td class="k-table-td" colspan="1">0</td>
+                                        <td class="k-table-td" colspan="1">0</td>
+                                        <td class="k-table-td" colspan="1">
                                             <span class="k-checkbox-wrap">
                                                 <input type="checkbox" class="k-checkbox k-checkbox-md k-rounded-md">
                                             </span>
                                         </td>
                                     </tr>
-                                    <tr class="k-group-footer" style="height: 39px;">
-                                        <td>Sum: 24</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
+                                    <tr class="k-table-row k-group-footer" style="height: 39px;">
+                                        <td class="k-table-td">Sum: 24</td>
+                                        <td class="k-table-td"></td>
+                                        <td class="k-table-td"></td>
+                                        <td class="k-table-td"></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -240,35 +270,35 @@
                 </div>
                 <div class="k-grid-footer">
                     <div class="k-grid-footer-locked" style="width: 582px;">
-                        <table style="width: 582px;">
+                        <table class="k-table k-table-md k-grid-footer-table" style="width: 582px;">
                             <colgroup>
                                 <col class="k-group-col">
                                 <col style="width: 200px;">
                                 <col style="width: 350px;">
                             </colgroup>
-                            <tfoot>
-                                <tr class="k-footer-template">
-                                    <td class="k-group-cell"></td>
-                                    <td></td>
-                                    <td></td>
+                            <tfoot class="k-table-tfoot">
+                                <tr class="k-table-row k-footer-template">
+                                    <td class="k-table-td k-table-group-td k-group-cell"></td>
+                                    <td class="k-table-td"></td>
+                                    <td class="k-table-td"></td>
                                 </tr>
                             </tfoot>
                         </table>
                     </div>
                     <div class="k-grid-footer-wrap">
-                        <table>
+                        <table class="k-table k-table-md k-grid-footer-table">
                             <colgroup>
                                 <col style="height: 120px;">
                                 <col style="height: 120px;">
                                 <col style="height: 120px;">
                                 <col style="height: 120px;">
                             </colgroup>
-                            <tfoot>
-                                <tr class="k-footer-template">
-                                    <td>Total Unit Price: 115.35</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
+                            <tfoot class="k-table-tfoot">
+                                <tr class="k-table-row k-footer-template">
+                                    <td class="k-table-td">Total Unit Price: 115.35</td>
+                                    <td class="k-table-td"></td>
+                                    <td class="k-table-td"></td>
+                                    <td class="k-table-td"></td>
                                 </tr>
                             </tfoot>
                         </table>
