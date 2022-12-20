@@ -9,11 +9,11 @@
 </head>
 <body id="app" class="k-body">
     <div id="test-area" class="k-d-grid">
-        <div class="k-widget k-grid k-grid-no-scrollbar">
+        <div class="k-grid k-grid-md k-grid-no-scrollbar">
             <div class="k-grid-aria-root">
                 <div class="k-grid-header">
                     <div class="k-grid-header-wrap">
-                        <table>
+                        <table class="k-table k-table-md k-grid-header-table">
                             <colgroup>
                                 <col style="width: 68px;">
                                 <col>
@@ -21,13 +21,37 @@
                                 <col>
                                 <col>
                             </colgroup>
-                            <thead>
-                                <tr>
-                                    <th class="k-header"></th>
-                                    <th class="k-header">Autocomplete</th>
-                                    <th class="k-header">Combobox</th>
-                                    <th class="k-header">Dropdown</th>
-                                    <th class="k-header">Multiselect</th>
+                            <thead class="k-table-thead">
+                                <tr class="k-table-row">
+                                    <th class="k-table-th k-header"></th>
+                                    <th class="k-table-th k-header">
+                                        <span class="k-cell-inner">
+                                            <span class="k-link">
+                                                <span class="k-column-title">Autocomplete</span>
+                                            </span>
+                                        </span>
+                                    </th>
+                                    <th class="k-table-th k-header">
+                                        <span class="k-cell-inner">
+                                            <span class="k-link">
+                                                <span class="k-column-title">Combobox</span>
+                                            </span>
+                                        </span>
+                                    </th>
+                                    <th class="k-table-th k-header">
+                                        <span class="k-cell-inner">
+                                            <span class="k-link">
+                                                <span class="k-column-title">Dropdown</span>
+                                            </span>
+                                        </span>
+                                    </th>
+                                    <th class="k-table-th k-header">
+                                        <span class="k-cell-inner">
+                                            <span class="k-link">
+                                                <span class="k-column-title">Multiselect</span>
+                                            </span>
+                                        </span>
+                                    </th>
                                 </tr>
                             </thead>
                         </table>
@@ -36,7 +60,7 @@
                 <div class="k-grid-container">
                     <div class="k-grid-content">
                         <div>
-                            <table class="k-grid-table">
+                            <table class="k-table k-table-md k-grid-table">
                                 <colgroup>
                                     <col style="width: 68px;">
                                     <col>
@@ -44,15 +68,15 @@
                                     <col>
                                     <col>
                                 </colgroup>
-                                <tbody>
-                                    <tr class="k-grid-edit-row">
-                                        <td>LTR</td>
-                                        <td>
+                                <tbody class="k-table-tbody">
+                                    <tr class="k-table-row k-grid-edit-row">
+                                        <td class="k-table-td">LTR</td>
+                                        <td class="k-table-td">
                                             <span class="k-autocomplete k-input k-input-md k-input-solid k-rounded-md">
                                                 <input type="text" class="k-input-inner" placeholder="Autocomplete..." autocomplete="off" value="">
                                             </span>
                                         </td>
-                                        <td>
+                                        <td class="k-table-td">
                                             <span class="k-combobox k-input k-input-md k-input-solid k-rounded-md">
                                                 <input type="text" class="k-input-inner" placeholder="Combobox..." autocomplete="off" value="">
                                                 <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
@@ -60,7 +84,7 @@
                                                 </button>
                                             </span>
                                         </td>
-                                        <td>
+                                        <td class="k-table-td">
                                             <span class="k-dropdown k-picker k-picker-md k-picker-solid k-rounded-md">
                                                 <span class="k-input-inner">DropdownList...</span>
                                                 <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
@@ -68,7 +92,7 @@
                                                 </button>
                                             </span>
                                         </td>
-                                        <td>
+                                        <td class="k-table-td">
                                             <span class="k-multiselect k-input k-input-md k-input-solid k-rounded-md">
                                                 <div class="k-input-values">
                                                     <div class="k-chip-list k-chip-list-md"></div>
@@ -77,14 +101,14 @@
                                             </span>
                                         </td>
                                     </tr>
-                                    <tr class="k-alt k-grid-edit-row">
-                                        <td>RTL</td>
-                                        <td>
+                                    <tr class="k-table-row k-table-alt-row k-alt k-grid-edit-row">
+                                        <td class="k-table-td">RTL</td>
+                                        <td class="k-table-td">
                                             <span class="k-rtl k-autocomplete k-input k-input-md k-input-solid k-rounded-md">
                                                 <input type="text" class="k-input-inner" placeholder="Autocomplete..." autocomplete="off" value="">
                                             </span>
                                         </td>
-                                        <td>
+                                        <td class="k-table-td">
                                             <span class="k-rtl k-combobox k-input k-input-md k-input-solid k-rounded-md">
                                                 <input type="text" class="k-input-inner" placeholder="Combobox..." autocomplete="off" value="">
                                                 <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
@@ -92,7 +116,7 @@
                                                 </button>
                                             </span>
                                         </td>
-                                        <td>
+                                        <td class="k-table-td">
                                             <span class="k-rtl k-dropdown k-picker k-picker-md k-picker-solid k-rounded-md">
                                                 <span class="k-input-inner">DropdownList...</span>
                                                 <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
@@ -100,7 +124,7 @@
                                                 </button>
                                             </span>
                                         </td>
-                                        <td>
+                                        <td class="k-table-td">
                                             <span class="k-rtl k-multiselect k-input k-input-md k-input-solid k-rounded-md">
                                                 <div class="k-input-values">
                                                     <div class="k-chip-list k-chip-list-md"></div>
@@ -116,11 +140,11 @@
                 </div>
             </div>
         </div>
-        <div class="k-widget k-grid k-grid-no-scrollbar">
+        <div class="k-grid k-grid-md k-grid-no-scrollbar">
             <div class="k-grid-aria-root" style="overflow: visible;">
                 <div class="k-grid-header">
                     <div class="k-grid-header-wrap">
-                        <table>
+                        <table class="k-table k-table-md k-grid-header-table">
                             <colgroup>
                                 <col style="width: 68px;">
                                 <col>
@@ -128,13 +152,37 @@
                                 <col>
                                 <col>
                             </colgroup>
-                            <thead>
-                                <tr>
-                                    <th class="k-header"></th>
-                                    <th class="k-header">Datepicker</th>
-                                    <th class="k-header">Timepicker</th>
-                                    <th class="k-header">Datetime</th>
-                                    <th class="k-header">Dateinput</th>
+                            <thead class="k-table-thead">
+                                <tr class="k-table-row">
+                                    <th class="k-table-th k-header"></th>
+                                    <th class="k-table-th k-header">
+                                        <span class="k-cell-inner">
+                                            <span class="k-link">
+                                                <span class="k-column-title">Datepicker</span>
+                                            </span>
+                                        </span>
+                                    </th>
+                                    <th class="k-table-th k-header">
+                                        <span class="k-cell-inner">
+                                            <span class="k-link">
+                                                <span class="k-column-title">Timepicker</span>
+                                            </span>
+                                        </span>
+                                    </th>
+                                    <th class="k-table-th k-header">
+                                        <span class="k-cell-inner">
+                                            <span class="k-link">
+                                                <span class="k-column-title">Datetime</span>
+                                            </span>
+                                        </span>
+                                    </th>
+                                    <th class="k-table-th k-header">
+                                        <span class="k-cell-inner">
+                                            <span class="k-link">
+                                                <span class="k-column-title">Dateinput</span>
+                                            </span>
+                                        </span>
+                                    </th>
                                 </tr>
                             </thead>
                         </table>
@@ -143,7 +191,7 @@
                 <div class="k-grid-container" style="overflow: visible;">
                     <div class="k-grid-content" style="overflow: visible;">
                         <div>
-                            <table class="k-grid-table">
+                            <table class="k-table k-table-md k-grid-table">
                                 <colgroup>
                                     <col style="width: 68px;">
                                     <col>
@@ -151,10 +199,10 @@
                                     <col>
                                     <col>
                                 </colgroup>
-                                <tbody>
-                                    <tr class="k-grid-edit-row">
-                                        <td>LTR</td>
-                                        <td>
+                                <tbody class="k-table-tbody">
+                                    <tr class="k-table-row k-grid-edit-row">
+                                        <td class="k-table-td">LTR</td>
+                                        <td class="k-table-td">
                                             <span class="k-datepicker k-input k-input-md k-input-solid k-rounded-md">
                                                 <input type="text" class="k-input-inner" placeholder="DatePicker..." autocomplete="off" value="">
                                                 <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
@@ -162,7 +210,7 @@
                                                 </button>
                                             </span>
                                         </td>
-                                        <td>
+                                        <td class="k-table-td">
                                             <span class="k-timepicker k-input k-input-md k-input-solid k-rounded-md">
                                                 <input type="text" class="k-input-inner" placeholder="TimePicker..." autocomplete="off" value="">
                                                 <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
@@ -170,7 +218,7 @@
                                                 </button>
                                             </span>
                                         </td>
-                                        <td>
+                                        <td class="k-table-td">
                                             <span class="k-datetimepicker k-input k-input-md k-input-solid k-rounded-md">
                                                 <input type="text" class="k-input-inner" placeholder="DateTimePicker..." autocomplete="off" value="">
                                                 <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
@@ -178,7 +226,7 @@
                                                 </button>
                                             </span>
                                         </td>
-                                        <td>
+                                        <td class="k-table-td">
                                             <span class="k-dateinput k-input k-input-md k-input-solid k-rounded-md">
                                                 <input type="text" class="k-input-inner" placeholder="DateInput..." autocomplete="off" value="">
                                                 <span class="k-input-spinner k-spin-button">
@@ -192,9 +240,9 @@
                                             </span>
                                         </td>
                                     </tr>
-                                    <tr class="k-alt k-grid-edit-row">
-                                        <td>RTL</td>
-                                        <td>
+                                    <tr class="k-table-row k-table-alt-row k-alt k-grid-edit-row">
+                                        <td class="k-table-td">RTL</td>
+                                        <td class="k-table-td">
                                             <span class="k-rtl k-datepicker k-input k-input-md k-input-solid k-rounded-md">
                                                 <input type="text" class="k-input-inner" placeholder="DatePicker..." autocomplete="off" value="">
                                                 <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
@@ -202,7 +250,7 @@
                                                 </button>
                                             </span>
                                         </td>
-                                        <td>
+                                        <td class="k-table-td">
                                             <span class="k-rtl k-timepicker k-input k-input-md k-input-solid k-rounded-md">
                                                 <input type="text" class="k-input-inner" placeholder="TimePicker..." autocomplete="off" value="">
                                                 <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
@@ -210,7 +258,7 @@
                                                 </button>
                                             </span>
                                         </td>
-                                        <td>
+                                        <td class="k-table-td">
                                             <span class="k-rtl k-datetimepicker k-input k-input-md k-input-solid k-rounded-md">
                                                 <input type="text" class="k-input-inner" placeholder="DateTimePicker..." autocomplete="off" value="">
                                                 <button class="k-input-button k-button k-button-md k-button-solid k-button-solid-base k-icon-button">
@@ -218,7 +266,7 @@
                                                 </button>
                                             </span>
                                         </td>
-                                        <td>
+                                        <td class="k-table-td">
                                             <span class="k-rtl k-dateinput k-input k-input-md k-input-solid k-rounded-md">
                                                 <input type="text" class="k-input-inner" placeholder="DateInput..." autocomplete="off" value="">
                                                 <span class="k-input-spinner k-spin-button">
@@ -239,23 +287,35 @@
                 </div>
             </div>
         </div>
-        <div class="k-widget k-grid k-grid-no-scrollbar">
+        <div class="k-grid k-grid-md k-grid-no-scrollbar">
             <div class="k-grid-aria-root">
                 <div class="k-grid-header">
                     <div class="k-grid-header-wrap">
-                        <table>
+                        <table class="k-table k-table-md k-grid-header-table">
                             <colgroup>
                                 <col style="width: 68px;">
                                 <col>
                                 <col>
                                 <col>
                             </colgroup>
-                            <thead>
-                                <tr>
-                                    <th class="k-header"></th>
-                                    <th class="k-header">Numeric</th>
-                                    <th class="k-header">Switch</th>
-                                    <th class="k-header"></th>
+                            <thead class="k-table-thead">
+                                <tr class="k-table-row">
+                                    <th class="k-table-th k-header"></th>
+                                    <th class="k-table-th k-header">
+                                        <span class="k-cell-inner">
+                                            <span class="k-link">
+                                                <span class="k-column-title">Numeric</span>
+                                            </span>
+                                        </span>
+                                    </th>
+                                    <th class="k-table-th k-header">
+                                        <span class="k-cell-inner">
+                                            <span class="k-link">
+                                                <span class="k-column-title">Switch</span>
+                                            </span>
+                                        </span>
+                                    </th>
+                                    <th class="k-table-th k-header"></th>
                                 </tr>
                             </thead>
                         </table>
@@ -264,17 +324,17 @@
                 <div class="k-grid-container">
                     <div class="k-grid-content">
                         <div>
-                            <table class="k-grid-table">
+                            <table class="k-table k-table-md k-grid-table">
                                 <colgroup>
                                     <col style="width: 68px;">
                                     <col>
                                     <col>
                                     <col>
                                 </colgroup>
-                                <tbody>
-                                    <tr class="k-grid-edit-row">
-                                        <td>LTR</td>
-                                        <td>
+                                <tbody class="k-table-tbody">
+                                    <tr class="k-table-row k-grid-edit-row">
+                                        <td class="k-table-td">LTR</td>
+                                        <td class="k-table-td">
                                             <span class="k-numerictextbox k-input k-input-md k-input-solid k-rounded-md">
                                                 <input type="text" class="k-input-inner" placeholder="Numeric..." autocomplete="off" value="">
                                                 <span class="k-input-spinner k-spin-button">
@@ -287,7 +347,7 @@
                                                 </span>
                                             </span>
                                         </td>
-                                        <td>
+                                        <td class="k-table-td">
                                             <span class="k-switch k-switch-md k-switch-on">
                                                 <span class="k-switch-track k-rounded-full"></span>
                                                 <span class="k-switch-thumb-wrap">
@@ -295,11 +355,11 @@
                                                 </span>
                                             </span>
                                         </td>
-                                        <td></td>
+                                        <td class="k-table-td"></td>
                                     </tr>
-                                    <tr class="k-alt k-grid-edit-row">
-                                        <td>RTL</td>
-                                        <td>
+                                    <tr class="k-table-row k-table-alt-row k-alt k-grid-edit-row">
+                                        <td class="k-table-td">RTL</td>
+                                        <td class="k-table-td">
                                             <span class="k-rtl k-numerictextbox k-input k-input-md k-input-solid k-rounded-md">
                                                 <input type="text" class="k-input-inner" placeholder="Numeric..." autocomplete="off" value="">
                                                 <span class="k-input-spinner k-spin-button">
@@ -312,7 +372,7 @@
                                                 </span>
                                             </span>
                                         </td>
-                                        <td>
+                                        <td class="k-table-td">
                                             <span class="k-rtl k-switch k-switch-md k-switch-on">
                                                 <span class="k-switch-track k-rounded-full"></span>
                                                 <span class="k-switch-thumb-wrap">
@@ -320,7 +380,7 @@
                                                 </span>
                                             </span>
                                         </td>
-                                        <td></td>
+                                        <td class="k-table-td"></td>
                                     </tr>
                                 </tbody>
                             </table>

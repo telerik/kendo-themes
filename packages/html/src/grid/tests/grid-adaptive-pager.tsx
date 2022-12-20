@@ -16,7 +16,7 @@ root.render(
                     <div className="k-pane">
                         <div className="k-view k-widget">
                             <div className="k-stretched-view k-content">
-                                <div className="k-grid k-widget k-grid-display-block k-grid-mobile k-editable">
+                                <div className="k-grid k-grid-md k-grid-display-block k-grid-mobile k-editable">
                                     <Pager className="k-grid-pager" mobile="small" />
                                 </div>
                             </div>
@@ -31,7 +31,7 @@ root.render(
                     <div className="k-pane">
                         <div className="k-view k-widget">
                             <div className="k-stretched-view k-content">
-                                <div className="k-grid k-widget k-grid-display-block k-grid-mobile k-editable">
+                                <div className="k-grid k-grid-md k-grid-display-block k-grid-mobile k-editable">
                                     <Pager className="k-grid-pager" mobile="small" />
                                 </div>
                             </div>

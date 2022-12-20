@@ -19,6 +19,24 @@ $kendo-table-cell-padding-x: map.get( $kendo-spacing, 3 ) !default;
 /// @group table
 $kendo-table-cell-padding-y: map.get( $kendo-spacing, 3 ) !default;
 
+$kendo-table-cell-padding-x-sm: map.get( $kendo-spacing, 3 );
+$kendo-table-cell-padding-y-sm: map.get( $kendo-spacing, 1 ) + map.get( $kendo-spacing, thin );
+
+$kendo-table-cell-padding-x-md: $kendo-table-cell-padding-x;
+$kendo-table-cell-padding-y-md: $kendo-table-cell-padding-y;
+
+$kendo-table-cell-padding-x-lg: map.get( $kendo-spacing, 3 );
+$kendo-table-cell-padding-y-lg: map.get( $kendo-spacing, 3 ) + map.get( $kendo-spacing, thin );
+
+$kendo-table-cell-padding-x-sm: map.get( $kendo-spacing, 3 );
+$kendo-table-cell-padding-y-sm: map.get( $kendo-spacing, 1 ) + map.get( $kendo-spacing, thin );
+
+$kendo-table-cell-padding-x-md: $kendo-table-cell-padding-x;
+$kendo-table-cell-padding-y-md: $kendo-table-cell-padding-y;
+
+$kendo-table-cell-padding-x-lg: map.get( $kendo-spacing, 3 );
+$kendo-table-cell-padding-y-lg: map.get( $kendo-spacing, 3 ) + map.get( $kendo-spacing, thin );
+
 /// Font weight of the table header cells.
 /// @group table
 $kendo-table-header-font-weight: var( --kendo-font-weight-bold, normal ) !default;
@@ -29,8 +47,8 @@ $kendo-table-sizes: (
     sm: (
         font-size: var( --kendo-font-size, inherit ),
         line-height: var( --kendo-line-height, inherit ),
-        cell-padding-x: map.get( $kendo-spacing, 3 ),
-        cell-padding-y: map.get( $kendo-spacing, 3 ) - map.get( $kendo-spacing, thin ),
+        cell-padding-x: $kendo-table-cell-padding-x-sm,
+        cell-padding-y: $kendo-table-cell-padding-y-sm,
         group-label-padding-x: $kendo-list-item-group-label-padding-x-sm,
         group-label-padding-y: $kendo-list-item-group-label-padding-y-sm,
         group-label-font-size: $kendo-list-item-group-label-font-size-sm
@@ -38,8 +56,8 @@ $kendo-table-sizes: (
     md: (
         font-size: var( --kendo-font-size, inherit ),
         line-height: var( --kendo-line-height, inherit ),
-        cell-padding-x: map.get( $kendo-spacing, 3 ),
-        cell-padding-y: map.get( $kendo-spacing, 3 ),
+        cell-padding-x: $kendo-table-cell-padding-x-md,
+        cell-padding-y: $kendo-table-cell-padding-y-md,
         group-label-padding-x: $kendo-list-item-group-label-padding-x-md,
         group-label-padding-y: $kendo-list-item-group-label-padding-y-md,
         group-label-font-size: $kendo-list-item-group-label-font-size-md
@@ -47,8 +65,8 @@ $kendo-table-sizes: (
     lg: (
         font-size: var( --kendo-font-size, inherit ),
         line-height: var( --kendo-line-height, inherit ),
-        cell-padding-x: map.get( $kendo-spacing, 3 ),
-        cell-padding-y: map.get( $kendo-spacing, 3 ) + map.get( $kendo-spacing, thin ),
+        cell-padding-x: $kendo-table-cell-padding-x-lg,
+        cell-padding-y: $kendo-table-cell-padding-y-lg,
         group-label-padding-x: $kendo-list-item-group-label-padding-x-lg,
         group-label-padding-y: $kendo-list-item-group-label-padding-y-lg,
         group-label-font-size: $kendo-list-item-group-label-font-size-lg

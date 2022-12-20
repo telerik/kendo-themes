@@ -40,14 +40,14 @@ root.render(
                                             }
                                         />
                                     </Toolbar>
-                                    <div className="k-grid k-widget k-alt" style={{ height: "363px" }}>
-                                        <table>
+                                    <div className="k-grid k-grid-md k-alt" style={{ height: "363px" }}>
+                                        <table className="k-table k-table-md">
                                             <colgroup>
                                                 <col />
                                             </colgroup>
-                                            <tbody>
-                                                <tr>
-                                                    <td className="k-first"><Icon name="expand" /><span>All Geographies</span></td>
+                                            <tbody className="k-table-tbody">
+                                                <tr className="k-table-row">
+                                                    <td className="k-table-td k-first"><Icon name="expand" /><span>All Geographies</span></td>
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -76,10 +76,10 @@ root.render(
                                             }
                                         />
                                     </Toolbar>
-                                    <div className="k-grid k-widget">
+                                    <div className="k-grid k-grid-md">
                                         <div className="k-grid-header">
                                             <div className="k-grid-header-wrap" style={{ height: "110px" }}>
-                                                <table style={{ width: "199%" }}>
+                                                <table className="k-table k-table-md k-grid-header-table" style={{ width: "199%" }}>
                                                     <colgroup>
                                                         <col />
                                                         <col />
@@ -87,30 +87,106 @@ root.render(
                                                         <col />
                                                         <col />
                                                     </colgroup>
-                                                    <tbody>
-                                                        <tr>
-                                                            <th className="k-header" colSpan={4}><Icon name="collapse" /><span>All Periods</span></th>
-                                                            <th className="k-header k-alt" colSpan={1} rowSpan={2}><span>All Periods</span></th>
+                                                    <tbody className="k-table-tbody">
+                                                        <tr className="k-table-row">
+                                                            <th className="k-table-th k-header" colSpan={4}>
+                                                                <span className="k-cell-inner">
+                                                                    <span className="k-link">
+                                                                        <Icon name="collapse" />
+                                                                        <span className="k-column-title">All Periods</span>
+                                                                    </span>
+                                                                </span>
+                                                            </th>
+                                                            <th className="k-table-th k-header k-alt" colSpan={1} rowSpan={2}>
+                                                                <span className="k-cell-inner">
+                                                                    <span className="k-link">
+                                                                        <span className="k-column-title">All Periods</span>
+                                                                    </span>
+                                                                </span>
+                                                            </th>
                                                         </tr>
-                                                        <tr>
-                                                            <th className="k-header"><Icon name="expand" /><span>CY 2005</span></th>
-                                                            <th className="k-header"><Icon name="expand" /><span>CY 2006</span></th>
-                                                            <th className="k-header"><Icon name="expand" /><span>CY 2007</span></th>
-                                                            <th className="k-header"><Icon name="expand" /><span>CY 2008</span></th>
+                                                        <tr className="k-table-row">
+                                                            <th className="k-table-th k-header">
+                                                                <span className="k-cell-inner">
+                                                                    <span className="k-link">
+                                                                        <Icon name="expand" />
+                                                                        <span className="k-column-title">CY 2005</span>
+                                                                    </span>
+                                                                </span>
+                                                            </th>
+                                                            <th className="k-table-th k-header">
+                                                                <span className="k-cell-inner">
+                                                                    <span className="k-link">
+                                                                        <Icon name="expand" />
+                                                                        <span className="k-column-title">CY 2006</span>
+                                                                    </span>
+                                                                </span>
+                                                            </th>
+                                                            <th className="k-table-th k-header">
+                                                                <span className="k-cell-inner">
+                                                                    <span className="k-link">
+                                                                        <Icon name="expand" />
+                                                                        <span className="k-column-title">CY 2007</span>
+                                                                    </span>
+                                                                </span>
+                                                            </th>
+                                                            <th className="k-table-th k-header">
+                                                                <span className="k-cell-inner">
+                                                                    <span className="k-link">
+                                                                        <Icon name="expand" />
+                                                                        <span className="k-column-title">CY 2008</span>
+                                                                    </span>
+                                                                </span>
+                                                            </th>
                                                         </tr>
-                                                        <tr>
-                                                            <th className="k-header"><Icon name="expand" /><span>All Products</span></th>
-                                                            <th className="k-header"><Icon name="expand" /><span>All Products</span></th>
-                                                            <th className="k-header"><Icon name="expand" /><span>All Products</span></th>
-                                                            <th className="k-header"><Icon name="expand" /><span>All Products</span></th>
-                                                            <th className="k-header"><Icon name="expand" /><span>All Products</span></th>
+                                                        <tr className="k-table-row">
+                                                            <th className="k-table-th k-header">
+                                                                <span className="k-cell-inner">
+                                                                    <span className="k-link">
+                                                                        <Icon name="expand" />
+                                                                        <span className="k-column-title">All Products</span>
+                                                                    </span>
+                                                                </span>
+                                                            </th>
+                                                            <th className="k-table-th k-header">
+                                                                <span className="k-cell-inner">
+                                                                    <span className="k-link">
+                                                                        <Icon name="expand" />
+                                                                        <span className="k-column-title">All Products</span>
+                                                                    </span>
+                                                                </span>
+                                                            </th>
+                                                            <th className="k-table-th k-header">
+                                                                <span className="k-cell-inner">
+                                                                    <span className="k-link">
+                                                                        <Icon name="expand" />
+                                                                        <span className="k-column-title">All Products</span>
+                                                                    </span>
+                                                                </span>
+                                                            </th>
+                                                            <th className="k-table-th k-header">
+                                                                <span className="k-cell-inner">
+                                                                    <span className="k-link">
+                                                                        <Icon name="expand" />
+                                                                        <span className="k-column-title">All Products</span>
+                                                                    </span>
+                                                                </span>
+                                                            </th>
+                                                            <th className="k-table-th k-header">
+                                                                <span className="k-cell-inner">
+                                                                    <span className="k-link">
+                                                                        <Icon name="expand" />
+                                                                        <span className="k-column-title">All Products</span>
+                                                                    </span>
+                                                                </span>
+                                                            </th>
                                                         </tr>
                                                     </tbody>
                                                 </table>
                                             </div>
                                         </div>
                                         <div className="k-grid-content" style={{ height: "380px" }}>
-                                            <table style={{ width: "199%" }}>
+                                            <table className="k-table k-table-md k-grid-table" style={{ width: "199%" }}>
                                                 <colgroup>
                                                     <col />
                                                     <col />
@@ -118,13 +194,13 @@ root.render(
                                                     <col />
                                                     <col />
                                                 </colgroup>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>$201,635.92</td>
-                                                        <td>$603,610.94</td>
-                                                        <td>$805,067.19</td>
-                                                        <td>$400,951.86</td>
-                                                        <td className="k-alt">$2,011,265.92</td>
+                                                <tbody className="k-table-tbody">
+                                                    <tr className="k-table-row">
+                                                        <td className="k-table-td">$201,635.92</td>
+                                                        <td className="k-table-td">$603,610.94</td>
+                                                        <td className="k-table-td">$805,067.19</td>
+                                                        <td className="k-table-td">$400,951.86</td>
+                                                        <td className="k-table-td k-alt">$2,011,265.92</td>
                                                     </tr>
                                                 </tbody>
                                             </table>

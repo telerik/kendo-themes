@@ -98,10 +98,6 @@ $nav-item-margin: 0px !default;
 $nav-item-padding-x: $nav-link-padding-x !default;
 $nav-item-padding-y: $nav-link-padding-y !default;
 
-$table-cell-padding-x: $table-cell-padding-x !default;
-$table-cell-padding-y: $table-cell-padding-y !default;
-$header-cell-padding-x: $table-cell-padding-x !default;
-$header-cell-padding-y: $table-cell-padding-y !default;
 
 $zindex-popup: 1 !default;
 $zindex-window: 2 !default;
@@ -256,15 +252,15 @@ $app-border: if( k-is-light( $app-bg ), $gray-300, $gray-700 ) !default;
 
 // Component
 /// Background color of a component.
-/// Note: do not use this variable directly. Instead derive it as `$component-name-bg` e.g. `$grid-bg: $component-bg !default;`.
+/// Note: do not use this variable directly. Instead derive it as `$component-name-bg` e.g. `$kendo-grid-bg: $component-bg !default;`.
 /// @group component
 $component-bg: $body-bg !default;
 /// Text color of a component.
-/// Note: do not use this variable directly. Instead derive it as `$component-name-text` e.g. `$grid-text: component-text !default;`.
+/// Note: do not use this variable directly. Instead derive it as `$component-name-text` e.g. `$kendo-grid-text: component-text !default;`.
 /// @group component
 $component-text: $body-text !default;
 /// Border color of a component.
-/// Note: do not use this variable directly. Instead derive it as `$component-name-border` e.g. `$grid-border: component-border !default;`.
+/// Note: do not use this variable directly. Instead derive it as `$component-name-border` e.g. `$kendo-grid-border: component-border !default;`.
 /// @group component
 $component-border: if( k-is-light( $component-bg ), $gray-300, $gray-700 ) !default;
 

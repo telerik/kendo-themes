@@ -9,37 +9,61 @@
 </head>
 <body id="app" class="k-body">
     <div id="test-area" class="k-d-grid">
-        <div class="k-widget k-grid k-grid-lockedcolumns k-grid-no-scrollbar" style="height: 300px;">
+        <div class="k-grid k-grid-md k-grid-lockedcolumns k-grid-no-scrollbar" style="height: 300px;">
             <div class="k-grid-aria-root">
                 <div class="k-grid-header">
                     <div class="k-grid-header-locked" style="width: 300px;">
-                        <table>
+                        <table class="k-table k-table-md k-grid-header-table">
                             <colgroup>
                                 <col style="width: 300px;">
                             </colgroup>
-                            <thead>
-                                <tr>
-                                    <th class="k-header" rowspan="2" colspan="1">Name</th>
+                            <thead class="k-table-thead">
+                                <tr class="k-table-row">
+                                    <th class="k-table-th k-header" rowspan="2" colspan="1">Name</th>
                                 </tr>
-                                <tr></tr>
+                                <tr class="k-table-row"></tr>
                             </thead>
                         </table>
                     </div>
                     <div class="k-grid-header-wrap" style="width: 434px;">
-                        <table style="width: 900px;">
+                        <table class="k-table k-table-md k-grid-header-table" style="width: 900px;">
                             <colgroup>
                                 <col style="width: 300px;">
                                 <col style="width: 300px;">
                                 <col style="width: 300px;">
                             </colgroup>
-                            <thead>
-                                <tr>
-                                    <th class="k-header" rowspan="1" colspan="3">Availability</th>
+                            <thead class="k-table-thead">
+                                <tr class="k-table-row">
+                                    <th class="k-table-th k-header" rowspan="1" colspan="3">
+                                        <span class="k-cell-inner">
+                                            <span class="k-link">
+                                                <span class="k-column-title">Availability</span>
+                                            </span>
+                                        </span>
+                                    </th>
                                 </tr>
-                                <tr>
-                                    <th class="k-header" rowspan="1" colspan="1">Units In Stock</th>
-                                    <th class="k-header" rowspan="1" colspan="1">Unit Price</th>
-                                    <th class="k-header" rowspan="1" colspan="1">Discontinued</th>
+                                <tr class="k-table-row">
+                                    <th class="k-table-th k-header" rowspan="1" colspan="1">
+                                        <span class="k-cell-inner">
+                                            <span class="k-link">
+                                                <span class="k-column-title">Units In Stock</span>
+                                            </span>
+                                        </span>
+                                    </th>
+                                    <th class="k-table-th k-header" rowspan="1" colspan="1">
+                                        <span class="k-cell-inner">
+                                            <span class="k-link">
+                                                <span class="k-column-title">Unit Price</span>
+                                            </span>
+                                        </span>
+                                    </th>
+                                    <th class="k-table-th k-header" rowspan="1" colspan="1">
+                                        <span class="k-cell-inner">
+                                            <span class="k-link">
+                                                <span class="k-column-title">Discontinued</span>
+                                            </span>
+                                        </span>
+                                    </th>
                                 </tr>
                             </thead>
                         </table>
@@ -48,19 +72,19 @@
                 <div class="k-grid-container">
                     <div class="k-grid-content-locked" style="width: 300px; height: 272px;">
                         <div class="k-grid-table-wrap" style="position: relative;">
-                            <table class="k-grid-table">
+                            <table class="k-table k-table-md k-grid-table">
                                 <colgroup>
                                     <col style="width: 300px;">
                                 </colgroup>
-                                <tbody>
-                                    <tr style="height: 37px;">
-                                        <td colspan="1">Chai</td>
+                                <tbody class="k-table-tbody">
+                                    <tr class="k-table-row" style="height: 37px;">
+                                        <td class="k-table-td" colspan="1">Chai</td>
                                     </tr>
-                                    <tr class="k-alt" style="height: 37px;">
-                                        <td colspan="1">Chang</td>
+                                    <tr class="k-table-row k-table-alt-row k-alt" style="height: 37px;">
+                                        <td class="k-table-td" colspan="1">Chang</td>
                                     </tr>
-                                    <tr style="height: 37px;">
-                                        <td colspan="1">Aniseed Syrup</td>
+                                    <tr class="k-table-row" style="height: 37px;">
+                                        <td class="k-table-td" colspan="1">Aniseed Syrup</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -71,27 +95,27 @@
                     </div>
                     <div class="k-grid-content k-virtual-content" style="width: 447px;">
                         <div class="k-grid-table-wrap" style="position: relative;">
-                            <table class="k-grid-table" style="transform: translateY(0px); width: 900px;">
+                            <table class="k-table k-table-md k-grid-table" style="transform: translateY(0px); width: 900px;">
                                 <colgroup>
                                     <col style="width: 300px;">
                                     <col style="width: 300px;">
                                     <col style="width: 300px;">
                                 </colgroup>
-                                <tbody>
-                                    <tr style="height: 37px;">
-                                        <td colspan="1">39</td>
-                                        <td colspan="1">18</td>
-                                        <td colspan="1">false</td>
+                                <tbody class="k-table-tbody">
+                                    <tr class="k-table-row" style="height: 37px;">
+                                        <td class="k-table-td" colspan="1">39</td>
+                                        <td class="k-table-td" colspan="1">18</td>
+                                        <td class="k-table-td" colspan="1">false</td>
                                     </tr>
-                                    <tr class="k-alt" style="height: 37px;">
-                                        <td colspan="1">17</td>
-                                        <td colspan="1">19</td>
-                                        <td colspan="1">false</td>
+                                    <tr class="k-table-row k-table-alt-row k-alt" style="height: 37px;">
+                                        <td class="k-table-td" colspan="1">17</td>
+                                        <td class="k-table-td" colspan="1">19</td>
+                                        <td class="k-table-td" colspan="1">false</td>
                                     </tr>
-                                    <tr style="height: 37px;">
-                                        <td colspan="1">13</td>
-                                        <td colspan="1">10</td>
-                                        <td colspan="1">false</td>
+                                    <tr class="k-table-row" style="height: 37px;">
+                                        <td class="k-table-td" colspan="1">13</td>
+                                        <td class="k-table-td" colspan="1">10</td>
+                                        <td class="k-table-td" colspan="1">false</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -104,10 +128,10 @@
             </div>
         </div>
         <div class="k-rtl">
-            <div class="k-widget k-grid k-grid-no-scrollbar" style="height: 200px;">
+            <div class="k-grid k-grid-md k-grid-no-scrollbar" style="height: 200px;">
                 <div class="k-grid-header">
                     <div class="k-grid-header-wrap k-auto-scrollable">
-                        <table>
+                        <table class="k-table k-table-md k-grid-header-table">
                             <colgroup>
                                 <col style="width: 160px;">
                                 <col style="width: 160px;">
@@ -116,49 +140,85 @@
                                 <col style="width: 160px;">
                                 <col>
                             </colgroup>
-                            <thead>
-                                <tr>
-                                    <th scope="col" rowspan="3" class="k-header k-with-icon">
-                                        <a class="k-grid-header-menu k-grid-column-menu">
-                                            <span class="k-icon k-i-more-vertical"></span>
-                                        </a>
-                                        <a class="k-link" href="#">Company</a>
+                            <thead class="k-table-thead">
+                                <tr class="k-table-row">
+                                    <th scope="col" rowspan="3" class="k-table-th k-header k-filterable">
+                                        <span class="k-cell-inner">
+                                            <span class="k-link">
+                                                <span class="k-column-title">Company</span>
+                                            </span>
+                                            <a class="k-grid-header-menu k-grid-column-menu" href="#">
+                                                <span class="k-icon k-i-more-vertical"></span>
+                                            </a>
+                                        </span>
                                     </th>
-                                    <th scope="col" colspan="5" class="k-header">Contact Info</th>
-                                </tr>
-                                <tr>
-                                    <th scope="col" rowspan="2" class="k-header k-with-icon k-first">
-                                        <a class="k-grid-header-menu k-grid-column-menu">
-                                            <span class="k-icon k-i-more-vertical"></span>
-                                        </a>
-                                        <a class="k-link" href="#">First Name</a>
-                                    </th>
-                                    <th scope="col" rowspan="2" class="k-header k-with-icon">
-                                        <a class="k-grid-header-menu k-grid-column-menu">
-                                            <span class="k-icon k-i-more-vertical"></span>
-                                        </a>
-                                        <a class="k-link" href="#">Last Name</a>
-                                    </th>
-                                    <th scope="col" colspan="2" class="k-header">Location</th>
-                                    <th scope="col" rowspan="2" class="k-header k-with-icon">
-                                        <a class="k-grid-header-menu k-grid-column-menu">
-                                            <span class="k-icon k-i-more-vertical"></span>
-                                        </a>
-                                        <a class="k-link" href="#">Phone</a>
+                                    <th scope="col" colspan="5" class="k-table-th k-header">
+                                        <span class="k-cell-inner">
+                                            <span class="k-link">
+                                                <span class="k-column-title">Contact Info</span>
+                                            </span>
+                                        </span>
                                     </th>
                                 </tr>
-                                <tr>
-                                    <th scope="col" class="k-header k-with-icon k-first">
-                                        <a class="k-grid-header-menu k-grid-column-menu">
-                                            <span class="k-icon k-i-more-vertical"></span>
-                                        </a>
-                                        <a class="k-link" href="#">Country</a>
+                                <tr class="k-table-row">
+                                    <th scope="col" rowspan="2" class="k-table-th k-header k-filterable k-first">
+                                        <span class="k-cell-inner">
+                                            <span class="k-link">
+                                                <span class="k-column-title">First Name</span>
+                                            </span>
+                                            <a class="k-grid-header-menu k-grid-column-menu" href="#">
+                                                <span class="k-icon k-i-more-vertical"></span>
+                                            </a>
+                                        </span>
                                     </th>
-                                    <th scope="col" class="k-header k-with-icon">
-                                        <a class="k-grid-header-menu k-grid-column-menu">
-                                            <span class="k-icon k-i-more-vertical"></span>
-                                        </a>
-                                        <a class="k-link" href="#">City</a>
+                                    <th scope="col" rowspan="2" class="k-table-th k-header k-filterable">
+                                        <span class="k-cell-inner">
+                                            <span class="k-link">
+                                                <span class="k-column-title">Last Name</span>
+                                            </span>
+                                            <a class="k-grid-header-menu k-grid-column-menu" href="#">
+                                                <span class="k-icon k-i-more-vertical"></span>
+                                            </a>
+                                        </span>
+                                    </th>
+                                    <th scope="col" colspan="2" class="k-table-th k-header">
+                                        <span class="k-cell-inner">
+                                            <span class="k-link">
+                                                <span class="k-column-title">Location</span>
+                                            </span>
+                                        </span>
+                                    </th>
+                                    <th scope="col" rowspan="2" class="k-table-th k-header k-filterable">
+                                        <span class="k-cell-inner">
+                                            <span class="k-link">
+                                                <span class="k-column-title">Phone</span>
+                                            </span>
+                                            <a class="k-grid-header-menu k-grid-column-menu" href="#">
+                                                <span class="k-icon k-i-more-vertical"></span>
+                                            </a>
+                                        </span>
+                                    </th>
+                                </tr>
+                                <tr class="k-table-row">
+                                    <th scope="col" class="k-table-th k-header k-filterable k-first">
+                                        <span class="k-cell-inner">
+                                            <span class="k-link">
+                                                <span class="k-column-title">Country</span>
+                                            </span>
+                                            <a class="k-grid-header-menu k-grid-column-menu" href="#">
+                                                <span class="k-icon k-i-more-vertical"></span>
+                                            </a>
+                                        </span>
+                                    </th>
+                                    <th scope="col" class="k-table-th k-header k-filterable">
+                                        <span class="k-cell-inner">
+                                            <span class="k-link">
+                                                <span class="k-column-title">City</span>
+                                            </span>
+                                            <a class="k-grid-header-menu k-grid-column-menu" href="#">
+                                                <span class="k-icon k-i-more-vertical"></span>
+                                            </a>
+                                        </span>
                                     </th>
                                 </tr>
                             </thead>
@@ -169,7 +229,7 @@
                     </div>
                 </div>
                 <div class="k-grid-content k-auto-scrollable">
-                    <table style="height: auto;">
+                    <table class="k-table k-table-md k-grid-table" style="height: auto;">
                         <colgroup>
                             <col style="width: 160px;">
                             <col style="width: 160px;">
@@ -178,7 +238,7 @@
                             <col style="width: 160px;">
                             <col>
                         </colgroup>
-                        <tbody></tbody>
+                        <tbody class="k-table-tbody"></tbody>
                     </table>
                 </div>
             </div>

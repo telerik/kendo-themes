@@ -28,10 +28,10 @@ root.render(
                     <div className="k-spreadsheet-filter-menu k-popup k-group k-reset">
                         <div className="k-columnmenu-item-wrapper">
                             <div className="k-columnmenu-item">
-                                <Icon name="sort-asc-sm"></Icon>Sort range A to Z
+                                <Icon name="sort-asc-small"></Icon>Sort range A to Z
                             </div>
                             <div className="k-columnmenu-item">
-                                <Icon name="sort-desc-sm"></Icon>Sort range Z to A
+                                <Icon name="sort-desc-small"></Icon>Sort range Z to A
                             </div>
                         </div>
                         <div className="k-columnmenu-item-wrapper">

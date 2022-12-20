@@ -10,8 +10,8 @@
         max-width: none;
         border-width: var( --kendo-table-border-width, #{$kendo-table-border-width} );
         border-style: solid;
-        font-size: var( --INTERNAL--kendo-table-font-size, 1rem );
-        line-height: var( --INTERNAL--kendo-table-line-height, normal );
+        font-size: var( --INTERNAL--kendo-table-font-size, var( --kendo-font-size, inherit ) );
+        line-height: var( --INTERNAL--kendo-table-line-height, var( --kendo-line-height, inherit ) );
         text-align: start;
         border-collapse: collapse;
         border-spacing: 0;

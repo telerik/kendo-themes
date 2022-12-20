@@ -38,7 +38,7 @@
             overflow: hidden;
         }
 
-        table {
+        .k-table {
             margin: 0;
             width: 100%;
             max-width: none;
@@ -48,27 +48,35 @@
             border-spacing: 0;
             empty-cells: show;
             outline: 0;
+            box-sizing: content-box;
+            table-layout: fixed;
         }
-        thead,
-        tbody,
-        tfoot {
+
+        .k-table-thead,
+        .k-table-tbody,
+        .k-table-tfoot {
             text-align: start;
             border-color: inherit;
         }
-        tr {
+
+        .k-table-row {
             border-color: inherit;
         }
-        th,
-        td {
-            padding-inline: var( --kendo-grid-cell-padding-x, #{$kendo-grid-cell-padding-x} );
-            padding-block: var( --kendo-grid-cell-padding-y, #{$kendo-grid-cell-padding-y} );
+
+        .k-table-th,
+        .k-table-td {
+            border-width: 0;
+            padding-inline: var( --INTERNAL--kendo-grid-cell-padding-x, 0 );
+            padding-block: var( --INTERNAL--kendo-grid-cell-padding-y, 0 );
             border-style: solid;
             border-color: inherit;
             outline: 0;
             font-weight: inherit;
             text-align: inherit;
+            position: static;
             overflow: hidden;
             text-overflow: ellipsis;
+            box-sizing: content-box;
 
             &:first-child {
                 border-inline-start-width: 0;
@@ -81,21 +89,26 @@
             .k-placeholder-line {
                 width: var( --kendo-grid-cell-placeholder-width, #{$kendo-grid-cell-placeholder-width} );
             }
+
+            > .k-radio,
+            > .k-radio-wrap,
+            > .k-checkbox,
+            > .k-checkbox-wrap {
+                vertical-align: top;
+            }
         }
-        th {
-            padding-inline: var( --kendo-grid-header-padding-x, #{$kendo-grid-header-padding-x} );
-            padding-block: var( --kendo-grid-header-padding-y, #{$kendo-grid-header-padding-y} );
-            border-block-start-width: 0;
+
+        .k-table-th {
+            padding-inline: var( --INTERNAL--kendo-grid-header-padding-x, 0 );
+            padding-block: var( --INTERNAL--kendo-grid-header-padding-y, 0 );
             border-block-end-width: var( --kendo-grid-header-border-width-y, #{$kendo-grid-header-border-width-y} );
             border-inline-start-width: var( --kendo-grid-header-border-width-x, #{$kendo-grid-header-border-width-x} );
-            border-inline-end-width: 0;
             white-space: nowrap;
         }
-        td {
-            border-block-start-width: 0;
+
+        .k-table-td {
             border-block-end-width: var( --kendo-grid-cell-border-width-y, #{$kendo-grid-cell-border-width-y} );
             border-inline-start-width: var( --kendo-grid-cell-border-width-x, #{$kendo-grid-cell-border-width-x} );
-            border-inline-end-width: 0;
             vertical-align: middle;
         }
 
@@ -107,7 +120,6 @@
             text-decoration: none;
         }
 
-        table,
         .k-grid-header-wrap {
             box-sizing: content-box;
         }
@@ -125,32 +137,35 @@
             align-items: center;
             align-content: center;
         }
-        .k-grouping-row td {
+
+        .k-grouping-row .k-table-td {
             border-block-end-width: 0;
             overflow: visible;
         }
-        .k-grouping-row + tr td {
+
+        .k-grouping-row + .k-table-row .k-table-td {
             border-top-width: var( --kendo-grid-grouping-row-border-width-y, #{$kendo-grid-grouping-row-border-width-y} );
         }
+
         .k-grouping-row .k-group-cell,
-        .k-grouping-row + tr .k-group-cell {
+        .k-grouping-row + .k-table-row .k-group-cell {
             border-block-width: 0;
             border-inline-end-width: 1px;
             text-overflow: clip;
         }
 
         .k-grouping-row .k-icon {
-            margin-inline-start: calc( ( var( --kendo-icon-size, 1rem ) / 2 ) - #{$kendo-table-cell-padding-x} );
+            margin-inline-start: calc( ( var( --kendo-icon-size, 1rem ) / 2 ) - var( --INTERNAL--kendo-grid-cell-padding-x, 0 ) );
             margin-inline-end: calc( var( --kendo-icon-size, 1rem ) / 2 );
             text-decoration: none;
         }
 
-        .k-group-footer td {
+        .k-group-footer .k-table-td {
             border-style: solid;
             border-inline-width: var( --kendo-grid-group-footer-border-width-x, #{$kendo-grid-group-footer-border-width-x} );
             border-block-start-width: var( --kendo-grid-group-footer-border-width-y, #{$kendo-grid-group-footer-border-width-y} );
         }
-        .k-group-footer .k-group-cell + td {
+        .k-group-footer .k-group-cell + .k-table-td {
             border-inline-start-width: var( --kendo-grid-group-footer-border-width-x, #{$kendo-grid-group-footer-border-width-x} );
         }
 
@@ -162,7 +177,7 @@
 
             > .k-icon {
                 padding-inline: 0;
-                padding-block: $kendo-table-cell-padding-y;
+                padding-block: var( --INTERNAL--kendo-grid-cell-padding-y, 0 );
                 width: 100%;
                 height: 100%;
                 display: inline-block;
@@ -240,8 +255,8 @@
 
     // Grouping header
     .k-grouping-header {
-        padding-inline: var( --kendo-grid-grouping-header-padding-x, #{$kendo-grid-grouping-header-padding-x} );
-        padding-block: var( --kendo-grid-grouping-header-padding-y, #{$kendo-grid-grouping-header-padding-y} );
+        padding-inline: var( --INTERNAL--kendo-grid-grouping-header-padding-x, 0 );
+        padding-block: var( --INTERNAL--kendo-grid-grouping-header-padding-y, 0 );
         border-width: 0 0 1px;
         border-style: solid;
         border-color: inherit;
@@ -264,16 +279,16 @@
         display: flex;
         flex-flow: row wrap;
         align-items: center;
-        gap: var( --kendo-grid-grouping-header-padding-y, #{$kendo-grid-grouping-header-padding-y} );
+        gap: var( --INTERNAL--kendo-grid-grouping-header-padding-y, 0 );
 
         &::before {
-            margin-left: calc( var( --kendo-grid-grouping-header-padding-y, #{$kendo-grid-grouping-header-padding-y} ) * -1 );
+            margin-inline-start: calc( var( --INTERNAL--kendo-grid-grouping-header-padding-y, 0 ) * -1 );
         }
     }
 
     .k-grouping-dropclue {
         width: calc( var( --kendo-grid-group-dropclue-size, #{$kendo-grid-group-dropclue-size} ) * 2 );
-        height: var( --kendo-grid-group-dropclue-height, #{$kendo-grid-group-dropclue-height} );
+        height: var( --INTERNAL--kendo-grid-group-dropclue-height, 1rem );
         position: absolute;
         top: var( --kendo-grid-group-dropclue-top, #{$kendo-grid-group-dropclue-top} );
         box-sizing: content-box;
@@ -319,7 +334,7 @@
         position: relative;
         overflow: hidden;
 
-        tr:not(:only-child) th {
+        .k-table-row:not(:only-child) .k-table-th {
             border-inline-start-width: 1px;
         }
     }
@@ -336,10 +351,6 @@
         border-style: solid;
         border-color: inherit;
         flex: 0 0 auto;
-
-        table {
-            table-layout: fixed;
-        }
     }
 
     div.k-grid-header,
@@ -353,7 +364,7 @@
         border-bottom-width: var( --kendo-grid-header-border-width-y, #{$kendo-grid-header-border-width-y} );
         font-size: var( --kendo-grid-header-font-size, #{$kendo-grid-header-font-size} );
 
-        table {
+        .k-table  {
             margin-bottom: calc( var( --kendo-grid-header-border-width-y, #{$kendo-grid-header-border-width-y} ) * -1 );
         }
 
@@ -362,7 +373,7 @@
             touch-action: none;
         }
 
-        .k-header {
+        .k-table-th {
             position: relative;
             vertical-align: bottom;
             z-index: 1;
@@ -377,48 +388,44 @@
             }
         }
 
-        .k-header > .k-link {
-            margin-block: calc( var( --kendo-grid-header-padding-y, #{$kendo-grid-header-padding-y} ) * -1 );
-            margin-inline: calc( var( --kendo-grid-header-padding-x, #{$kendo-grid-header-padding-x} ) * -1 );
-            padding-block: var( --kendo-grid-header-padding-y, #{$kendo-grid-header-padding-y} );
-            padding-inline: var( --kendo-grid-header-padding-x, #{$kendo-grid-header-padding-x} );
+        .k-table-th > .k-link {
+            margin-block: calc( var( --INTERNAL--kendo-grid-header-padding-y, 0 ) * -1 );
+            margin-inline: calc( var( --INTERNAL--kendo-grid-header-padding-x, 0 ) * -1 );
+            padding-block: var( --INTERNAL--kendo-grid-header-padding-y, 0 );
+            padding-inline: var( --INTERNAL--kendo-grid-header-padding-x, 0 );
             line-height: inherit;
             display: block;
             overflow: hidden;
             text-overflow: ellipsis;
             outline: 0;
 
-            .k-icon {
+            > .k-icon {
                 margin-inline-start: var( --kendo-grid-sort-icon-spacing, #{$kendo-grid-sort-icon-spacing} );
             }
         }
 
-        .k-with-icon,
-        .k-filterable {
-            padding-inline-end: var( --kendo-grid-filterable-icon-spacing, #{$kendo-grid-filterable-icon-spacing} );
-        }
 
-        .k-header > .k-link:focus {
+        .k-table-th > .k-link:focus {
             text-decoration: none;
         }
 
         .k-grid-filter,
         .k-header-column-menu,
         .k-grid-header-menu {
-            padding-block: var( --kendo-grid-column-menu-button-padding-y, #{$kendo-grid-column-menu-button-padding-y} );
-            padding-inline: var( --kendo-grid-column-menu-button-padding-x, #{$kendo-grid-column-menu-button-padding-x} );
-            width: var( --kendo-grid-column-menu-button-width, #{$kendo-grid-column-menu-button-width} );
-            height: var( --kendo-grid-column-menu-button-height, #{$kendo-grid-column-menu-button-height} );
+            padding-block: var(--INTERNAL--kendo-button-padding-y, 0 );
+            padding-inline: var(--INTERNAL--kendo-button-padding-y, 0 );
+            width: var(--INTERNAL--kendo-button-calc-size, auto );
+            height: var(--INTERNAL--kendo-button-calc-size, auto );
             box-sizing: border-box;
             outline: 0;
-            line-height: var( --kendo-grid-column-menu-button-line-height, #{$kendo-grid-column-menu-button-line-height} );
+            line-height: var(--INTERNAL--kendo-button-line-height, normal );
             display: flex;
             align-items: center;
             align-content: center;
             justify-content: center;
             position: absolute;
             inset-inline-end: var( --kendo-grid-header-menu-spacing, #{$kendo-grid-header-menu-spacing} );
-            inset-block-end: calc( var( --kendo-grid-header-padding-y, #{$kendo-grid-header-padding-y} ) + #{ $kendo-line-height-em / 2 } - #{ $kendo-button-inner-calc-size / 2 } );
+            inset-block-end: calc( var( --INTERNAL--kendo-grid-header-padding-y, 0 ) + #{ $kendo-line-height-em / 2 } - #{ $kendo-button-inner-calc-size / 2 } );
             z-index: 1;
 
             &:hover {
@@ -426,7 +433,8 @@
             }
         }
 
-        .k-cell-inner > .k-link > .k-icon {
+        .k-cell-inner > .k-link > .k-icon,
+        .k-cell-inner > .k-link > .k-sort-icon {
             vertical-align: text-top;
             margin-inline-start: var( --kendo-grid-sort-icon-spacing, #{$kendo-grid-sort-icon-spacing} );
         }
@@ -452,16 +460,16 @@
     .k-grid-footer {
         border-block-start-width: var( --kendo-grid-border-width, #{$kendo-grid-border-width} );
 
-        td {
+        .k-table-td {
             height: var( --kendo-line-height-em, normal );
             border-block-end-width: 0;
         }
     }
 
-    .k-grid-footer td,
-    .k-grid-header th,
-    .k-group-footer td,
-    .k-grouping-row td {
+    .k-grid-footer .k-table-td,
+    .k-grid-header .k-table-th,
+    .k-group-footer .k-table-td,
+    .k-grouping-row .k-table-td {
         font-weight: var( --kendo-grid-header-font-weight, #{$kendo-grid-header-font-weight} );
     }
 
@@ -483,15 +491,15 @@
     .k-filter-row {
         line-height: $kendo-form-line-height;
 
-        td,
-        th {
-            padding-inline: var( --kendo-grid-filter-cell-padding-x, #{$kendo-grid-filter-cell-padding-x} );
-            padding-block: var( --kendo-grid-filter-cell-padding-y, #{$kendo-grid-filter-cell-padding-y} );
+        .k-table-td,
+        .k-table-th {
+            padding-inline: var( --INTERNAL--kendo-grid-filter-cell-padding-x, 0 );
+            padding-block: var( --INTERNAL--kendo-grid-filter-cell-padding-y, 0 );
             border-width: 0 0 var( --kendo-grid-cell-border-width-y, #{$kendo-grid-cell-border-width-y} ) var( --kendo-grid-cell-border-width-x, #{$kendo-grid-cell-border-width-x} );
             white-space: nowrap;
         }
 
-        td:first-child {
+        .k-table-td:first-child {
             border-left-width: 0;
         }
 
@@ -512,7 +520,7 @@
             display: flex;
             flex-flow: row nowrap;
             align-items: center;
-            gap: calc( var( --kendo-grid-cell-padding-y, #{$kendo-grid-cell-padding-y} ) / 2 );
+            gap: calc( var( --INTERNAL--kendo-grid-cell-padding-y, 0 ) / 2 );
             flex: 1 1 auto;
 
             > .k-button {
@@ -538,13 +546,11 @@
         border-color: inherit;
         outline: 0;
 
-        table {
-            table-layout: fixed;
-        }
-        tr:last-child > td {
+        .k-table-row:last-child > .k-table-td {
             border-bottom-width: 0;
         }
     }
+
     .k-grid-content {
         width: 100%;
         min-height: 0;
@@ -561,34 +567,21 @@
         position: relative;
     }
 
-
-    // Checkboxes
-    .k-grid th,
-    .k-grid td {
-        > .k-radio,
-        > .k-radio-wrap,
-        > .k-checkbox,
-        > .k-checkbox-wrap {
-            vertical-align: top;
-        }
-    }
-
-
     // Master row
     .k-master-row .k-group-cell {
         border-block-width: 0;
         border-inline-end-width: var( --kendo-grid-border-width, #{$kendo-grid-border-width} );
     }
 
-    .k-master-row.k-expanded td {
+    .k-master-row.k-expanded .k-table-td {
         border-block-end-width: 0;
     }
 
-    .k-master-row:has(.k-hierarchy-cell[aria-expanded="true"]) td {
+    .k-master-row:has(.k-hierarchy-cell[aria-expanded="true"]) .k-table-td {
         border-block-end-width: 0;
     }
 
-    .k-master-row:last-child td {
+    .k-master-row:last-child .k-table-td {
         border-block-end-width: var( --kendo-grid-border-width, #{$kendo-grid-border-width} );
     }
 
@@ -597,14 +590,14 @@
     // Edit row
     .k-grid .k-edit-cell,
     .k-grid .k-command-cell,
-    .k-grid .k-grid-edit-row td {
-        padding-inline: var( --kendo-grid-edit-cell-padding-x, #{$kendo-grid-edit-cell-padding-x} );
-        padding-block: var( --kendo-grid-edit-cell-padding-y, #{$kendo-grid-edit-cell-padding-y} );
+    .k-grid .k-grid-edit-row .k-table-td {
+        padding-inline: var( --INTERNAL--kendo-grid-edit-cell-padding-x, 0 );
+        padding-block: var( --INTERNAL--kendo-grid-edit-cell-padding-y, 0 );
         text-overflow: clip;
     }
 
     .k-grid .k-edit-cell,
-    .k-grid .k-grid-edit-row td {
+    .k-grid .k-grid-edit-row .k-table-td {
 
         > input:not([type="checkbox"]):not([type="radio"]),
         > select,
@@ -691,7 +684,7 @@
         height: 1px;
     }
 
-    .k-grid-add-row td {
+    .k-grid-add-row .k-table-td {
         border-bottom-style: solid;
         border-bottom-width: 1px;
     }
@@ -721,8 +714,8 @@
         border-inline-end-width: 1px;
         box-sizing: content-box;
 
-        td,
-        th {
+        .k-table-td,
+        .k-table-th {
             border-inline-start-width: 1px;
         }
 
@@ -731,11 +724,11 @@
         }
 
         .k-grouping-row .k-group-cell,
-        .k-grouping-row + tr .k-group-cell {
+        .k-grouping-row + .k-table-row .k-group-cell {
             border-inline-end-width: 0;
         }
 
-        tr:not(.k-group-footer) .k-group-cell {
+        .k-table-row:not(.k-group-footer) .k-group-cell {
             border-block-end-width: 0;
         }
     }
@@ -752,16 +745,16 @@
         }
     }
 
-    .k-grid-header-locked > table,
-    .k-grid-header-wrap > table {
+    .k-grid-header-locked > .k-grid-header-table,
+    .k-grid-header-wrap > .k-grid-header-table {
         margin-block-end: -1px;
     }
 
-    .k-grid-header .k-header.k-grid-header-sticky,
+    .k-grid-header .k-table-th.k-grid-header-sticky,
     .k-grid-header .k-filter-row .k-grid-header-sticky,
-    .k-grid-content-sticky,
-    .k-grid-row-sticky,
-    .k-grid-footer-sticky {
+    .k-grid .k-grid-content-sticky,
+    .k-grid .k-grid-row-sticky,
+    .k-grid .k-grid-footer-sticky {
         position: sticky;
         z-index: 2;
 
@@ -772,13 +765,13 @@
     }
 
     kendo-grid {
-        tr.k-grid-row-sticky {
+        .k-table-row.k-grid-row-sticky {
             border: 0;
             position: static;
             z-index: auto;
         }
 
-        .k-grid-row-sticky td {
+        .k-grid-row-sticky .k-table-td {
             border-block-start-width: var( --kendo-grid-border-width, #{$kendo-grid-border-width} );
             border-block-end-width: var( --kendo-grid-border-width, #{$kendo-grid-border-width} );
             position: sticky;
@@ -786,18 +779,18 @@
             bottom: inherit;
         }
 
-        .k-grid-row-sticky td {
+        .k-grid-row-sticky .k-table-td {
             z-index: 2;
         }
 
-        .k-grid-row-sticky td.k-grid-content-sticky,
-        .k-grid-row-sticky.k-alt td.k-grid-content-sticky {
+        .k-grid-row-sticky .k-table-td.k-grid-content-sticky,
+        .k-grid-row-sticky.k-alt .k-table-td.k-grid-content-sticky {
             z-index: 3;
         }
 
         // Locked and sticky
-        .k-grid-header-locked th.k-grid-header-sticky:last-child,
-        .k-grid-content-locked tr .k-grid-content-sticky:last-child {
+        .k-grid-header-locked .k-table-th.k-grid-header-sticky:last-child,
+        .k-grid-content-locked .k-table-row .k-grid-content-sticky:last-child {
             border-inline-end-width: 0;
         }
 
@@ -814,10 +807,10 @@
     .k-grid .k-grid-header-sticky,
     .k-grid .k-grid-content-sticky,
     .k-grid .k-grid-footer-sticky {
-        border-inline-width: var( --kendo-grid-sticky-cell-border-width, #{$kendo-grid-sticky-cell-border-width} );
+        border-inline-end-width: var( --kendo-grid-sticky-cell-border-width, #{$kendo-grid-sticky-cell-border-width} );
 
-        &:not([style*="display: none"]) + td,
-        &:not([style*="display: none"]) + th {
+        &:not([style*="display: none"]) + .k-table-td,
+        &:not([style*="display: none"]) + .k-table-th {
             border-inline-start-width: 0;
         }
     }
@@ -827,7 +820,7 @@
         border-block-end-width: var( --kendo-grid-border-width, #{$kendo-grid-border-width} );
     }
 
-    .k-grid-header-sticky.k-header.k-grid-no-left-border.k-first {
+    .k-grid-header-sticky.k-table-th.k-grid-no-left-border.k-first {
         border-inline-start-width: 0;
         border-inline-end-width: var( --kendo-grid-sticky-cell-border-width, #{$kendo-grid-sticky-cell-border-width} );
     }
@@ -870,15 +863,13 @@
         line-height: 4em;
     }
 
-    .k-header > .k-cell-inner {
-        margin-block: calc( var( --kendo-grid-header-padding-y, #{$kendo-grid-header-padding-y} ) * -1 );
-        margin-inline: calc( var( --kendo-grid-header-padding-x, #{$kendo-grid-header-padding-x} ) * -1 );
+    .k-table-th > .k-cell-inner {
+        margin-block: calc( var( --INTERNAL--kendo-grid-header-padding-y, 0 ) * -1 );
+        margin-inline: calc( var( --INTERNAL--kendo-grid-header-padding-x, 0 ) * -1 );
     }
 
     .k-filterable {
         > .k-cell-inner {
-            margin-inline-end: calc( var( --kendo-grid-filterable-icon-spacing, #{$kendo-grid-filterable-icon-spacing} ) * -1 );
-
             .k-link {
                 padding-inline-end: 0;
             }
@@ -893,8 +884,8 @@
         overflow: hidden;
 
         > .k-link {
-            padding-inline: var( --kendo-grid-header-padding-x, #{$kendo-grid-header-padding-x} );
-            padding-block: var( --kendo-grid-header-padding-y, #{$kendo-grid-header-padding-y} );
+            padding-inline: var( --INTERNAL--kendo-grid-header-padding-x, 0 );
+            padding-block: var( --INTERNAL--kendo-grid-header-padding-y, 0 );
             width: auto;
             display: flex;
             flex-flow: row nowrap;
@@ -939,6 +930,41 @@
         white-space: nowrap;
         flex-shrink: 1;
         overflow: hidden;
+    }
+
+    // Grid Sizes
+    @each $size, $size-props in $kendo-grid-sizes {
+        $_header-padding-x: map-get( $size-props, header-padding-x );
+        $_header-padding-y: map-get( $size-props, header-padding-y );
+        $_grouping-header-padding-x: map-get( $size-props, grouping-header-padding-x );
+        $_grouping-header-padding-y: map-get( $size-props, grouping-header-padding-y );
+        $_cell-padding-x: map-get( $size-props, cell-padding-x );
+        $_cell-padding-y: map-get( $size-props, cell-padding-y );
+        $_filter-cell-padding-x: map-get( $size-props, filter-cell-padding-x );
+        $_filter-cell-padding-y: map-get( $size-props, filter-cell-padding-y );
+        $_edit-cell-padding-x: map-get( $size-props, edit-cell-padding-x );
+        $_edit-cell-padding-y: map-get( $size-props, edit-cell-padding-y );
+        $_button-padding-y: map-get( $size-props, button-padding-y );
+        $_button-calc-size: map-get( $size-props, button-calc-size );
+        $_button-line-height: map-get( $size-props, button-line-height );
+        $_group-dropclue-height: map-get( $size-props, group-dropclue-height );
+
+        .k-grid-#{$size} {
+            --INTERNAL--kendo-grid-header-padding-x: var( --kendo-grid-header-padding-x-#{$size}, #{$_header-padding-x} );
+            --INTERNAL--kendo-grid-header-padding-y: var( --kendo-grid-header-padding-y-#{$size}, #{$_header-padding-y} );
+            --INTERNAL--kendo-grid-grouping-header-padding-x: var( --kendo-grid-grouping-header-padding-x-#{$size}, #{$_grouping-header-padding-x} );
+            --INTERNAL--kendo-grid-grouping-header-padding-y: var( --kendo-grid-grouping-header-padding-y-#{$size}, #{$_grouping-header-padding-y} );
+            --INTERNAL--kendo-grid-cell-padding-x: var( --kendo-grid-cell-padding-x-#{$size}, #{$_cell-padding-x} );
+            --INTERNAL--kendo-grid-cell-padding-y: var( --kendo-grid-cell-padding-y-#{$size}, #{$_cell-padding-y} );
+            --INTERNAL--kendo-grid-filter-cell-padding-x: var( --kendo-grid-filter-cell-padding-x-#{$size}, #{$_filter-cell-padding-x} );
+            --INTERNAL--kendo-grid-filter-cell-padding-y: var( --kendo-grid-filter-cell-padding-y-#{$size}, #{$_filter-cell-padding-y} );
+            --INTERNAL--kendo-grid-edit-cell-padding-x: var( --kendo-grid-edit-cell-padding-x-#{$size}, #{$_edit-cell-padding-x} );
+            --INTERNAL--kendo-grid-edit-cell-padding-y: var( --kendo-grid-edit-cell-padding-y-#{$size}, #{$_edit-cell-padding-y} );
+            --INTERNAL--kendo-button-padding-y: var( --kendo-button-padding-y-#{$size}, #{$_button-padding-y} );
+            --INTERNAL--kendo-button-calc-size: var( --kendo-button-calc-size-#{$size}, #{$_button-calc-size} );
+            --INTERNAL--kendo-button-line-height: var( --kendo-button-line-height-#{$size}, #{$_button-line-height} );
+            --INTERNAL--kendo-grid-group-dropclue-height: var( --kendo-group-dropclue-height-#{$size}, #{$_group-dropclue-height} );
+        }
     }
 
     // PDF export
@@ -1092,8 +1118,8 @@
         width: auto !important;
         table-layout: auto !important;
 
-        th.k-header,
-        td {
+        .k-table-th,
+        .k-table-td {
             white-space: nowrap !important;
         }
 

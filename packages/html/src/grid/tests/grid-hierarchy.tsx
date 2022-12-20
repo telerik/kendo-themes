@@ -11,19 +11,23 @@ root.render(
         <div id="test-area" className="k-d-grid k-grid-cols-1">
 
             <section>
-                <div className="k-widget k-grid k-grid-no-scrollbar" style={{ width: "600px", height: "400px" }}>
+                <div className="k-grid k-grid-md k-grid-no-scrollbar" style={{ width: "600px", height: "400px" }}>
                     <div className="k-grid-header">
                         <div className="k-grid-header-wrap">
-                            <table>
+                            <table className="k-table k-table-md k-grid-header-table">
                                 <colgroup>
                                     <col className="k-hierarchy-col" /><col />
                                 </colgroup>
-                                <thead>
-                                    <tr>
-                                        <th className="k-header k-hierarchy-cell">
+                                <thead className="k-table-thead">
+                                    <tr className="k-table-row">
+                                        <th className="k-table-th k-header k-hierarchy-cell">
                                         </th>
-                                        <th className="k-header">
-                                            <a className="k-link">Title<span></span></a>
+                                        <th className="k-table-th k-header">
+                                            <span className="k-cell-inner">
+                                                <span className="k-link">
+                                                    <span className="k-column-title">Title</span>
+                                                </span>
+                                            </span>
                                         </th>
                                     </tr>
                                 </thead>
@@ -31,41 +35,49 @@ root.render(
                         </div>
                     </div>
                     <div className="k-grid-content">
-                        <table className="k-grid-table">
+                        <table className="k-table k-table-md k-grid-table">
                             <colgroup>
                                 <col className="k-hierarchy-col" /><col />
                             </colgroup>
-                            <tbody>
-                                <tr className="k-master-row">
-                                    <td className="k-hierarchy-cell">
+                            <tbody className="k-table-tbody">
+                                <tr className="k-table-row k-master-row">
+                                    <td className="k-table-td k-hierarchy-cell">
                                         <Icon name="expand" />
                                     </td>
-                                    <td>1</td>
+                                    <td className="k-table-td">1</td>
                                 </tr>
-                                <tr className="k-alt k-master-row k-expanded">
-                                    <td className="k-hierarchy-cell">
+                                <tr className="k-table-row k-table-alt-row k-alt k-master-row k-expanded">
+                                    <td className="k-table-td k-hierarchy-cell">
                                         <Icon name="collapse" />
                                     </td>
-                                    <td>2</td>
+                                    <td className="k-table-td">2</td>
                                 </tr>
-                                <tr className="k-detail-row">
-                                    <td className="k-hierarchy-cell"></td>
-                                    <td className="k-detail-cell" colSpan={1}>
+                                <tr className="k-table-row k-detail-row">
+                                    <td className="k-table-td k-hierarchy-cell"></td>
+                                    <td className="k-table-td k-detail-cell" colSpan={1}>
                                         {/* hierarchy child content */}
-                                        <div className="k-widget k-grid k-grid-no-scrollbar" style={{ height: "200px" }}>
+                                        <div className="k-grid k-grid-md k-grid-no-scrollbar" style={{ height: "200px" }}>
                                             <div className="k-grid-header">
                                                 <div className="k-grid-header-wrap">
-                                                    <table>
+                                                    <table className="k-table k-table-md k-grid-header-table">
                                                         <colgroup>
                                                             <col /><col />
                                                         </colgroup>
-                                                        <thead>
-                                                            <tr>
-                                                                <th className="k-header">
-                                                                    <a className="k-link">Title<span></span></a>
+                                                        <thead className="k-table-thead">
+                                                            <tr className="k-table-row">
+                                                                <th className="k-table-th k-header">
+                                                                    <span className="k-cell-inner">
+                                                                        <span className="k-link">
+                                                                            <span className="k-column-title">Title</span>
+                                                                        </span>
+                                                                    </span>
                                                                 </th>
-                                                                <th className="k-header">
-                                                                    <a className="k-link">Title<span></span></a>
+                                                                <th className="k-table-th k-header">
+                                                                    <span className="k-cell-inner">
+                                                                        <span className="k-link">
+                                                                            <span className="k-column-title">Title</span>
+                                                                        </span>
+                                                                    </span>
                                                                 </th>
                                                             </tr>
                                                         </thead>
@@ -73,18 +85,18 @@ root.render(
                                                 </div>
                                             </div>
                                             <div className="k-grid-content">
-                                                <table className="k-grid-table">
+                                                <table className="k-table k-table-md k-grid-table">
                                                     <colgroup>
                                                         <col /><col />
                                                     </colgroup>
-                                                    <tbody>
-                                                        <tr className="k-master-row">
-                                                            <td>Text</td>
-                                                            <td>Text</td>
+                                                    <tbody className="k-table-tbody">
+                                                        <tr className="k-table-row k-master-row">
+                                                            <td className="k-table-td">Text</td>
+                                                            <td className="k-table-td">Text</td>
                                                         </tr>
-                                                        <tr className="k-alt k-master-row">
-                                                            <td>Text</td>
-                                                            <td>Text</td>
+                                                        <tr className="k-table-row k-table-alt-row k-alt k-master-row">
+                                                            <td className="k-table-td">Text</td>
+                                                            <td className="k-table-td">Text</td>
                                                         </tr>
                                                     </tbody>
                                                 </table>

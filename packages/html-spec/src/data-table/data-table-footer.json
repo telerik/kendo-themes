@@ -1,0 +1,59 @@
+
+{
+    "$schema": "../../schemas/component.schema.json",
+    "title": "Kendo Data Table Footer HTML Spec",
+    "component": "data-table-footer-table",
+    "selector": [
+        ".k-table"
+    ],
+    "options": [
+        {
+            "name": "size",
+            "values": [
+                {
+                    "name": "small",
+                    "selector": [
+                        ".k-table-sm"
+                    ]
+                },
+                {
+                    "name": "medium",
+                    "selector": [
+                        ".k-table-md"
+                    ]
+                },
+                {
+                    "name": "large",
+                    "selector": [
+                        ".k-table-lg"
+                    ]
+                }
+            ]
+        }
+    ],
+    "children": [
+        {
+            "name": "data-table-footer-table-tfoot",
+            "selector": [
+                ".k-table-tfoot"
+            ],
+            "children": [
+                {
+                    "name": "data-table-footer-table-row",
+                    "selector": [
+                        ".k-table-row"
+                    ],
+                    "children": [
+                        {
+                            "name": "data-table-footer-table-cell",
+                            "selector": [
+                                ".k-table-td"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
+

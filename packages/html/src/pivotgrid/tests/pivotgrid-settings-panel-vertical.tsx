@@ -382,7 +382,7 @@ root.render(
                     text="Date.Calendar"
                     actions={
                         <>
-                            <ChipAction type="sort-asc-sm"/>
+                            <ChipAction type="sort-asc-small"/>
                             <ChipAction type="filter"/>
                             <ChipAction type="more"/>
                             <ChipAction type="remove"/>

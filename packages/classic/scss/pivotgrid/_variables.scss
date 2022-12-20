@@ -11,8 +11,8 @@ $pivotgrid-icon-spacing: 8px !default;
 $pivotgrid-row-header-width: 300px !default;
 $pivotgrid-column-header-height: 75px !default;
 
-$pivotgrid-cell-padding-x: $table-cell-padding-x !default;
-$pivotgrid-cell-padding-y: $table-cell-padding-y !default;
+$pivotgrid-cell-padding-x: $kendo-table-cell-padding-x-md !default;
+$pivotgrid-cell-padding-y: $kendo-table-cell-padding-y-md !default;
 $pivotgrid-cell-border-width: 1px !default;
 
 $pivotgrid-bg: $component-bg !default;
@@ -96,9 +96,9 @@ $pivotgrid-treeview-padding-x: k-math-div( $pivotgrid-spacer, 2) !default;
 $pivotgrid-treeview-padding-y: 0px !default;
 
 // Legacy variables
-$pivotgrid-alt-bg: $grid-header-bg !default;
-$pivotgrid-alt-text: $grid-header-text !default;
-$pivotgrid-chrome-border: $grid-border !default;
+$pivotgrid-alt-bg: $kendo-grid-header-bg !default;
+$pivotgrid-alt-text: $kendo-grid-header-text !default;
+$pivotgrid-chrome-border: $kendo-grid-border !default;
 
 $pivotgrid-container-bg: $component-bg !default;
 $pivotgrid-row-headers-bg: k-try-shade( $component-bg, 2 ) !default;

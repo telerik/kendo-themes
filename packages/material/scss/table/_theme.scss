@@ -1,1 +1,27 @@
 @import "@progress/kendo-theme-default/scss/table/_theme.scss";
+
+@include exports( "table/theme/material" ) {
+
+    // Selected state
+    .k-table-tbody .k-table-row.k-selected,
+    .k-table-tbody .k-table-cell.k-selected {
+        color: $kendo-table-selected-text;
+        background-color: $kendo-table-selected-bg;
+    }
+
+    .k-table-tbody .k-table-row.k-selected > td {
+        color: inherit;
+        background-color: transparent;
+    }
+
+    .k-table .k-table-tbody {
+        td:focus,
+        td.k-focus,
+        th:focus,
+        th.k-focus {
+            color: inherit;
+            background-color: $kendo-table-hover-bg;
+        }
+    }
+
+}

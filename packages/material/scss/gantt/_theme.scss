@@ -7,14 +7,14 @@
     .k-gantt-timeline {
 
         tbody > tr:not(:only-child) > .k-header {
-            border-left-color: $grid-border;
+            border-left-color: $kendo-grid-border;
         }
         .k-rtl & {
 
             .k-grid-header {
 
                 tbody > tr:not(:only-child) > .k-header {
-                    border-right-color: $grid-border;
+                    border-right-color: $kendo-grid-border;
                 }
             }
         }

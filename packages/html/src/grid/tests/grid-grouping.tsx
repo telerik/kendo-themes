@@ -27,7 +27,7 @@ root.render(
             <span>angular no grouping</span>
             <span>jquery no grouping</span>
 
-            <div className="k-widget k-grid k-grid-no-scrollbar">
+            <div className="k-grid k-grid-md k-grid-no-scrollbar">
                 <Toolbar className="k-grid-toolbar">
                     <Button>Button</Button>
                     <ButtonGroup>
@@ -43,16 +43,40 @@ root.render(
                 <div className="k-grid-aria-root">
                     <div className="k-grid-header">
                         <div className="k-grid-header-wrap">
-                            <table>
+                            <table className="k-table k-table-md k-grid-header-table">
                                 <colgroup>
                                     <col /><col /><col /><col />
                                 </colgroup>
-                                <thead>
-                                    <tr>
-                                        <th className="k-header">Name</th>
-                                        <th className="k-header">Price</th>
-                                        <th className="k-header">Available</th>
-                                        <th className="k-header">Units</th>
+                                <thead className="k-table-thead">
+                                    <tr className="k-table-row">
+                                        <th className="k-table-th k-header">
+                                            <span className="k-cell-inner">
+                                                <span className="k-link">
+                                                    <span className="k-column-title">Name</span>
+                                                </span>
+                                            </span>
+                                        </th>
+                                        <th className="k-table-th k-header">
+                                            <span className="k-cell-inner">
+                                                <span className="k-link">
+                                                    <span className="k-column-title">Price</span>
+                                                </span>
+                                            </span>
+                                        </th>
+                                        <th className="k-table-th k-header">
+                                            <span className="k-cell-inner">
+                                                <span className="k-link">
+                                                    <span className="k-column-title">Available</span>
+                                                </span>
+                                            </span>
+                                        </th>
+                                        <th className="k-table-th k-header">
+                                            <span className="k-cell-inner">
+                                                <span className="k-link">
+                                                    <span className="k-column-title">Units</span>
+                                                </span>
+                                            </span>
+                                        </th>
                                     </tr>
                                 </thead>
                             </table>
@@ -61,16 +85,16 @@ root.render(
                     <div className="k-grid-container">
                         <div className="k-grid-content k-virtual-content">
                             <div>
-                                <table className="k-grid-table">
+                                <table className="k-table k-table-md k-grid-table">
                                     <colgroup>
                                         <col /><col /><col /><col />
                                     </colgroup>
-                                    <tbody>
-                                        <tr>
-                                            <td>Chai</td>
-                                            <td>30</td>
-                                            <td>false</td>
-                                            <td>15</td>
+                                    <tbody className="k-table-tbody">
+                                        <tr className="k-table-row">
+                                            <td className="k-table-td">Chai</td>
+                                            <td className="k-table-td">30</td>
+                                            <td className="k-table-td">false</td>
+                                            <td className="k-table-td">15</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -80,7 +104,7 @@ root.render(
                 </div>
             </div>
 
-            <div className="k-widget k-grid k-grid-no-scrollbar">
+            <div className="k-grid k-grid-md k-grid-no-scrollbar">
                 <Toolbar className="k-grid-toolbar">
                     <Button>Button</Button>
                     <span className="k-button-group">
@@ -95,32 +119,56 @@ root.render(
                 </div>
                 <div className="k-grid-header">
                     <div className="k-grid-header-wrap">
-                        <table>
+                        <table className="k-table k-table-md k-grid-header-table">
                             <colgroup>
                                 <col /><col /><col /><col />
                             </colgroup>
-                            <thead>
-                                <tr>
-                                    <th className="k-header"><a className="k-link">Name</a></th>
-                                    <th className="k-header"><a className="k-link">Price</a></th>
-                                    <th className="k-header"><a className="k-link">Available</a></th>
-                                    <th className="k-header"><a className="k-link">Units</a></th>
+                            <thead className="k-table-thead">
+                                <tr className="k-table-row">
+                                    <th className="k-table-th k-header">
+                                        <span className="k-cell-inner">
+                                            <span className="k-link">
+                                                <span className="k-column-title">Name</span>
+                                            </span>
+                                        </span>
+                                    </th>
+                                    <th className="k-table-th k-header">
+                                        <span className="k-cell-inner">
+                                            <span className="k-link">
+                                                <span className="k-column-title">Price</span>
+                                            </span>
+                                        </span>
+                                    </th>
+                                    <th className="k-table-th k-header">
+                                        <span className="k-cell-inner">
+                                            <span className="k-link">
+                                                <span className="k-column-title">Available</span>
+                                            </span>
+                                        </span>
+                                    </th>
+                                    <th className="k-table-th k-header">
+                                        <span className="k-cell-inner">
+                                            <span className="k-link">
+                                                <span className="k-column-title">Units</span>
+                                            </span>
+                                        </span>
+                                    </th>
                                 </tr>
                             </thead>
                         </table>
                     </div>
                 </div>
                 <div className="k-grid-content">
-                    <table>
+                    <table className="k-table k-table-md k-grid-table">
                         <colgroup>
                             <col /><col /><col /><col />
                         </colgroup>
-                        <tbody>
-                            <tr>
-                                <td>Chai</td>
-                                <td>30</td>
-                                <td>false</td>
-                                <td>15</td>
+                        <tbody className="k-table-tbody">
+                            <tr className="k-table-row">
+                                <td className="k-table-td">Chai</td>
+                                <td className="k-table-td">30</td>
+                                <td className="k-table-td">false</td>
+                                <td className="k-table-td">15</td>
                             </tr>
                         </tbody>
                     </table>
@@ -130,7 +178,7 @@ root.render(
             <span>angular with grouping</span>
             <span>jquery with grouping</span>
 
-            <div className="k-widget k-grid k-grid-no-scrollbar">
+            <div className="k-grid k-grid-md k-grid-no-scrollbar">
                 <Toolbar className="k-grid-toolbar">
                     <Button>Button</Button>
                     <ButtonGroup>
@@ -142,24 +190,48 @@ root.render(
                 <div className="k-grouping-header">
                     <div className="k-grouping-dropclue"></div>
                     <ChipList>
-                        <Chip icon="sort-asc-sm" actions={ <ChipAction type="remove"/> }>Price</Chip>
-                        <Chip icon="sort-desc-sm" actions={ <ChipAction type="remove"/> }>Name</Chip>
+                        <Chip icon="sort-asc-small" actions={ <ChipAction type="remove"/> }>Price</Chip>
+                        <Chip icon="sort-desc-small" actions={ <ChipAction type="remove"/> }>Name</Chip>
                     </ChipList>
                 </div>
                 <div className="k-grid-aria-root">
                     <div className="k-grid-header">
                         <div className="k-grid-header-wrap">
-                            <table>
+                            <table className="k-table k-table-md k-grid-header-table">
                                 <colgroup>
                                     <col className="k-group-col" /><col /><col /><col /><col />
                                 </colgroup>
-                                <thead>
-                                    <tr>
-                                        <th className="k-group-cell k-header"></th>
-                                        <th className="k-header">Name</th>
-                                        <th className="k-header">Price</th>
-                                        <th className="k-header">Discontinued</th>
-                                        <th className="k-header">Units</th>
+                                <thead className="k-table-thead">
+                                    <tr className="k-table-row">
+                                        <th className="k-table-th k-group-cell k-header"></th>
+                                        <th className="k-table-th k-header">
+                                            <span className="k-cell-inner">
+                                                <span className="k-link">
+                                                    <span className="k-column-title">Name</span>
+                                                </span>
+                                            </span>
+                                        </th>
+                                        <th className="k-table-th k-header">
+                                            <span className="k-cell-inner">
+                                                <span className="k-link">
+                                                    <span className="k-column-title">Price</span>
+                                                </span>
+                                            </span>
+                                        </th>
+                                        <th className="k-table-th k-header">
+                                            <span className="k-cell-inner">
+                                                <span className="k-link">
+                                                    <span className="k-column-title">Discontinued</span>
+                                                </span>
+                                            </span>
+                                        </th>
+                                        <th className="k-table-th k-header">
+                                            <span className="k-cell-inner">
+                                                <span className="k-link">
+                                                    <span className="k-column-title">Units</span>
+                                                </span>
+                                            </span>
+                                        </th>
                                     </tr>
                                 </thead>
                             </table>
@@ -168,33 +240,33 @@ root.render(
                     <div className="k-grid-container">
                         <div className="k-grid-content k-virtual-content">
                             <div>
-                                <table className="k-grid-table">
+                                <table className="k-table k-table-md k-grid-table">
                                     <colgroup>
                                         <col className="k-group-col" /><col /><col /><col /><col />
                                     </colgroup>
-                                    <tbody>
-                                        <tr className="k-grouping-row">
-                                            <td colSpan={5}>
+                                    <tbody className="k-table-tbody">
+                                        <tr className="k-table-row k-table-group-row k-grouping-row">
+                                            <td className="k-table-td" colSpan={5}>
                                                 <p className="k-reset">
                                                     <Icon name="expand" />
                                                     Price: 19
                                                 </p>
                                             </td>
                                         </tr>
-                                        <tr className="k-grouping-row">
-                                            <td colSpan={5}>
+                                        <tr className="k-table-row k-table-group-row k-grouping-row">
+                                            <td className="k-table-td" colSpan={5}>
                                                 <p className="k-reset">
                                                     <Icon name="collapse" />
                                                     Price: 30
                                                 </p>
                                             </td>
                                         </tr>
-                                        <tr>
-                                            <td className="k-group-cell"></td>
-                                            <td>Chai</td>
-                                            <td>30</td>
-                                            <td>false</td>
-                                            <td>15</td>
+                                        <tr className="k-table-row">
+                                            <td className="k-table-td k-table-group-td k-group-cell"></td>
+                                            <td className="k-table-td">Chai</td>
+                                            <td className="k-table-td">30</td>
+                                            <td className="k-table-td">false</td>
+                                            <td className="k-table-td">15</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -204,7 +276,7 @@ root.render(
                 </div>
             </div>
 
-            <div className="k-grid k-grid-no-scrollbar k-widget k-grid-display-block">
+            <div className="k-grid k-grid-md k-grid-no-scrollbar k-grid-display-block">
                 <Toolbar className="k-grid-toolbar">
                     <Button>Button</Button>
                     <ButtonGroup>
@@ -216,56 +288,80 @@ root.render(
                 <div className="k-grouping-header">
                     <div className="k-grouping-dropclue"></div>
                     <ChipList>
-                        <Chip icon="sort-asc-sm" actions={ <ChipAction type="remove"/> }>Price</Chip>
-                        <Chip icon="sort-desc-sm" actions={ <ChipAction type="remove"/> }>Name</Chip>
+                        <Chip icon="sort-asc-small" actions={ <ChipAction type="remove"/> }>Price</Chip>
+                        <Chip icon="sort-desc-small" actions={ <ChipAction type="remove"/> }>Name</Chip>
                     </ChipList>
                 </div>
                 <div className="k-grid-header">
                     <div className="k-grid-header-wrap">
-                        <table>
+                        <table className="k-table k-table-md k-grid-header-table">
                             <colgroup>
                                 <col className="k-group-col" /><col /><col /><col /><col />
                             </colgroup>
-                            <thead>
-                                <tr>
-                                    <th className="k-group-cell k-header" scope="col"></th>
-                                    <th className="k-header"><a className="k-link">Name</a></th>
-                                    <th className="k-header"><a className="k-link">Price</a></th>
-                                    <th className="k-header"><a className="k-link">Available</a></th>
-                                    <th className="k-header"><a className="k-link">Units</a></th>
+                            <thead className="k-table-thead">
+                                <tr className="k-table-row">
+                                    <th className="k-table-th k-group-cell k-header" scope="col"></th>
+                                    <th className="k-table-th k-header">
+                                        <span className="k-cell-inner">
+                                            <span className="k-link">
+                                                <span className="k-column-title">Name</span>
+                                            </span>
+                                        </span>
+                                    </th>
+                                    <th className="k-table-th k-header">
+                                        <span className="k-cell-inner">
+                                            <span className="k-link">
+                                                <span className="k-column-title">Price</span>
+                                            </span>
+                                        </span>
+                                    </th>
+                                    <th className="k-table-th k-header">
+                                        <span className="k-cell-inner">
+                                            <span className="k-link">
+                                                <span className="k-column-title">Available</span>
+                                            </span>
+                                        </span>
+                                    </th>
+                                    <th className="k-table-th k-header">
+                                        <span className="k-cell-inner">
+                                            <span className="k-link">
+                                                <span className="k-column-title">Units</span>
+                                            </span>
+                                        </span>
+                                    </th>
                                 </tr>
                             </thead>
                         </table>
                     </div>
                 </div>
                 <div className="k-grid-content">
-                    <table style={{ height: 'auto' }}>
+                    <table className="k-table k-table-md k-grid-table" style={{ height: 'auto' }}>
                         <colgroup>
                             <col className="k-group-col" /><col /><col /><col /><col />
                         </colgroup>
-                        <tbody>
-                            <tr className="k-grouping-row">
-                                <td colSpan={5}>
+                        <tbody className="k-table-tbody">
+                            <tr className="k-table-row k-table-group-row k-grouping-row">
+                                <td className="k-table-td" colSpan={5}>
                                     <p className="k-reset">
                                         <Icon name="expand" />
                                         Price: 19
                                     </p>
                                 </td>
                             </tr>
-                            <tr className="k-grouping-row">
-                                <td colSpan={5}>
+                            <tr className="k-table-row k-table-group-row k-grouping-row">
+                                <td className="k-table-td" colSpan={5}>
                                     <p className="k-reset">
                                         <Icon name="collapse" />
                                         Price: 30
                                     </p>
                                 </td>
                             </tr>
-                            <tr>
-                                <td className="k-group-cell">&nbsp;</td>
-                                <td>Chai</td>
-                                <td>30</td>
-                                <td>false</td>
-                                <td>15</td>
+                            <tr className="k-table-row">
+                                <td className="k-table-td k-table-group-td k-group-cell">&nbsp;</td>
+                                <td className="k-table-td">Chai</td>
+                                <td className="k-table-td">30</td>
+                                <td className="k-table-td">false</td>
+                                <td className="k-table-td">15</td>
                             </tr>
                         </tbody>
                     </table>

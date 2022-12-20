@@ -60,6 +60,7 @@ module.exports = {
     // ...require('./coloreditor'),
     // ...require('./colorpicker'),
     ...require('./combobox'),
+    ...require('./grid'),
     // ...require('./dateinput'),
     // ...require('./datepicker'),
     // ...require('./timepicker'),
@@ -77,6 +78,7 @@ module.exports = {
     // ...require('./switch'),
     ...require('./upload'),
     // ...require('./dropzone'),
+    ...require('./table'),
 
     // Command interfaces
     // ...require('./action-buttons'),

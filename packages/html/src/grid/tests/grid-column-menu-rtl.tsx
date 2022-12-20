@@ -38,10 +38,10 @@ root.render(
                     <div className="k-column-menu k-popup k-grid-columnmenu-popup">
                         <div className="k-columnmenu-item-wrapper">
                             <div className="k-columnmenu-item">
-                                <Icon name="sort-asc-sm" />Sort ascending
+                                <Icon name="sort-asc-small" />Sort ascending
                             </div>
                             <div className="k-columnmenu-item">
-                                <Icon name="sort-desc-sm" />Sort descending
+                                <Icon name="sort-desc-small" />Sort descending
                             </div>
                         </div>
                         <div className="k-columnmenu-item-wrapper">
@@ -73,10 +73,10 @@ root.render(
                     <div className="k-column-menu k-popup k-grid-columnmenu-popup">
                         <div className="k-columnmenu-item-wrapper">
                             <div className="k-columnmenu-item">
-                                <Icon name="sort-asc-sm" />Sort ascending
+                                <Icon name="sort-asc-small" />Sort ascending
                             </div>
                             <div className="k-columnmenu-item">
-                                <Icon name="sort-desc-sm" />Sort descending
+                                <Icon name="sort-desc-small" />Sort descending
                             </div>
                         </div>
                         <div className="k-columnmenu-item-wrapper">
@@ -146,10 +146,10 @@ root.render(
                     <div className="k-column-menu k-popup k-grid-columnmenu-popup">
                         <div className="k-columnmenu-item-wrapper">
                             <div className="k-columnmenu-item">
-                                <Icon name="sort-asc-sm" />Sort ascending
+                                <Icon name="sort-asc-small" />Sort ascending
                             </div>
                             <div className="k-columnmenu-item">
-                                <Icon name="sort-desc-sm" />Sort descending
+                                <Icon name="sort-desc-small" />Sort descending
                             </div>
                         </div>
                         <div className="k-columnmenu-item-wrapper">
@@ -229,10 +229,10 @@ root.render(
                     <div className="k-column-menu k-popup k-grid-columnmenu-popup">
                         <div className="k-columnmenu-item-wrapper">
                             <div className="k-columnmenu-item">
-                                <Icon name="sort-asc-sm" />Sort ascending
+                                <Icon name="sort-asc-small" />Sort ascending
                             </div>
                             <div className="k-columnmenu-item">
-                                <Icon name="sort-desc-sm" />Sort descending
+                                <Icon name="sort-desc-small" />Sort descending
                             </div>
                         </div>
                         <div className="k-columnmenu-item-wrapper">
@@ -286,10 +286,10 @@ root.render(
                     <div className="k-column-menu k-popup k-grid-columnmenu-popup">
                         <div className="k-columnmenu-item-wrapper">
                             <div className="k-columnmenu-item">
-                                <Icon name="sort-asc-sm" />Sort ascending
+                                <Icon name="sort-asc-small" />Sort ascending
                             </div>
                             <div className="k-columnmenu-item">
-                                <Icon name="sort-desc-sm" />Sort descending
+                                <Icon name="sort-desc-small" />Sort descending
                             </div>
                         </div>
                         <div className="k-columnmenu-item-wrapper">
@@ -348,10 +348,10 @@ root.render(
                     <div className="k-column-menu k-popup k-grid-columnmenu-popup">
                         <div className="k-columnmenu-item-wrapper">
                             <div className="k-columnmenu-item">
-                                <Icon name="sort-asc-sm" />Sort ascending
+                                <Icon name="sort-asc-small" />Sort ascending
                             </div>
                             <div className="k-columnmenu-item">
-                                <Icon name="sort-desc-sm" />Sort descending
+                                <Icon name="sort-desc-small" />Sort descending
                             </div>
                         </div>
                         <div className="k-columnmenu-item-wrapper">

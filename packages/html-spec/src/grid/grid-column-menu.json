@@ -1,0 +1,50 @@
+
+{
+    "$schema": "../../schemas/component.schema.json",
+    "title": "Kendo Grid Column Menu HTML Spec",
+    "component": "grid-column-menu",
+    "selector": [
+        ".k-grid-columnmenu-popup"
+    ],
+    "children": [
+        {
+            "name": "grid-column-menu-wrap",
+            "selector": [
+                ".k-columnmenu-item-wrapper"
+            ]
+        },
+        {
+            "name": "grid-column-menu-item",
+            "selector": [
+                ".k-columnmenu-item"
+            ],
+            "children": [
+                {
+                    "name": "grid-column-menu-icon",
+                    "$ref": "icon",
+                    "selector": [
+                        ".k-icon"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "grid-filter-menu-container",
+            "selector": [
+                ".k-filter-menu-container"
+            ]
+        },
+        {
+            "name": "grid-filter-menu-item",
+            "selector": [
+                ".k-multicheck-wrap .k-item"
+            ]
+        },
+        {
+            "name": "grid-filter-selected-items",
+            "selector": [
+                ".k-filter-selected-items"
+            ]
+        }
+    ]
+}
