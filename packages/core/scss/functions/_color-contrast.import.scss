@@ -339,7 +339,7 @@ $wcag-light: white !default;
     $g: k-color-green($color);
     $b: k-color-blue($color);
 
-    $yiq: (($r * 299) + ($g * 587) + ($b * 114)) / 1000;
+    $yiq: k-math-div( (($r * 299) + ($g * 587) + ($b * 114)), 1000 );
 
     @return $yiq;
 }

@@ -115,7 +115,7 @@
                 width: 100%;
                 left: 0;
                 pointer-events: none;
-                height: calc( 50% - #{$time-list-highlight-height / 2} );
+                height: calc( 50% - #{k-math-div( $time-list-highlight-height, 2 )} );
                 box-sizing: border-box;
                 border-width: 0;
                 border-style: solid;

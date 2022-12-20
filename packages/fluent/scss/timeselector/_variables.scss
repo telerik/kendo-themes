@@ -37,7 +37,7 @@ $kendo-time-selector-header-border-width: 0px !default;
 
 /// Visibility of the time-selector separator.
 /// @group time-selector
-$kendo-time-list-separator-display: none;
+$kendo-time-list-separator-display: none !default;
 /// Minimum width of the time-selector columns.
 /// @group time-selector
 $kendo-time-list-width: 4em !default;

@@ -68,11 +68,11 @@ $kendo-pager-item-group-spacing-lg: map.get( $kendo-spacing, 2 ) !default;
 
 /// Text color of the pager sizes label.
 /// @group pager
-$kendo-pager-sizes-label-text: get-theme-color-var( neutral-190 );
+$kendo-pager-sizes-label-text: get-theme-color-var( neutral-190 ) !default;
 
 /// Text color of the pager info label.
 /// @group pager
-$kendo-pager-info-label-text: get-theme-color-var( neutral-130 );
+$kendo-pager-info-label-text: get-theme-color-var( neutral-130 ) !default;
 
 /// Width of the pager inputs.
 /// @group pager

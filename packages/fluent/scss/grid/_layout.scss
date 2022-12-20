@@ -1,3 +1,5 @@
+@use "sass:map";
+@use "sass:math";
 @use "../core/" as *;
 @use "../button/_variables.scss" as *;
 @use "../chip/_variables.scss" as *;
@@ -429,7 +431,7 @@
             justify-content: center;
             position: absolute;
             inset-inline-end: var( --kendo-grid-header-menu-spacing, #{$kendo-grid-header-menu-spacing} );
-            inset-block-end: calc( var( --INTERNAL--kendo-grid-header-padding-y, 0 ) + #{ $kendo-line-height-em / 2 } - #{ $kendo-button-inner-calc-size / 2 } );
+            inset-block-end: calc( var( --INTERNAL--kendo-grid-header-padding-y, 0 ) + ( #{$kendo-line-height-em} / 2 ) - ( #{$kendo-button-inner-calc-size} / 2 ) );
             z-index: 1;
 
             &:hover {
@@ -938,20 +940,20 @@
 
     // Grid Sizes
     @each $size, $size-props in $kendo-grid-sizes {
-        $_header-padding-x: map-get( $size-props, header-padding-x );
-        $_header-padding-y: map-get( $size-props, header-padding-y );
-        $_grouping-header-padding-x: map-get( $size-props, grouping-header-padding-x );
-        $_grouping-header-padding-y: map-get( $size-props, grouping-header-padding-y );
-        $_cell-padding-x: map-get( $size-props, cell-padding-x );
-        $_cell-padding-y: map-get( $size-props, cell-padding-y );
-        $_filter-cell-padding-x: map-get( $size-props, filter-cell-padding-x );
-        $_filter-cell-padding-y: map-get( $size-props, filter-cell-padding-y );
-        $_edit-cell-padding-x: map-get( $size-props, edit-cell-padding-x );
-        $_edit-cell-padding-y: map-get( $size-props, edit-cell-padding-y );
-        $_button-padding-y: map-get( $size-props, button-padding-y );
-        $_button-calc-size: map-get( $size-props, button-calc-size );
-        $_button-line-height: map-get( $size-props, button-line-height );
-        $_group-dropclue-height: map-get( $size-props, group-dropclue-height );
+        $_header-padding-x: map.get( $size-props, header-padding-x );
+        $_header-padding-y: map.get( $size-props, header-padding-y );
+        $_grouping-header-padding-x: map.get( $size-props, grouping-header-padding-x );
+        $_grouping-header-padding-y: map.get( $size-props, grouping-header-padding-y );
+        $_cell-padding-x: map.get( $size-props, cell-padding-x );
+        $_cell-padding-y: map.get( $size-props, cell-padding-y );
+        $_filter-cell-padding-x: map.get( $size-props, filter-cell-padding-x );
+        $_filter-cell-padding-y: map.get( $size-props, filter-cell-padding-y );
+        $_edit-cell-padding-x: map.get( $size-props, edit-cell-padding-x );
+        $_edit-cell-padding-y: map.get( $size-props, edit-cell-padding-y );
+        $_button-padding-y: map.get( $size-props, button-padding-y );
+        $_button-calc-size: map.get( $size-props, button-calc-size );
+        $_button-line-height: map.get( $size-props, button-line-height );
+        $_group-dropclue-height: map.get( $size-props, group-dropclue-height );
 
         .k-grid-#{$size} {
             --INTERNAL--kendo-grid-header-padding-x: var( --kendo-grid-header-padding-x-#{$size}, #{$_header-padding-x} );

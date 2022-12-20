@@ -186,7 +186,7 @@ $kendo-pivotgrid-configurator-button-border-width: 1px !default;
 $kendo-pivotgrid-configurator-button-size: calc( #{$kendo-pivotgrid-line-height} * 1em + #{$kendo-pivotgrid-configurator-button-padding-y * 2} + #{$kendo-pivotgrid-configurator-button-border-width * 2} ) !default;
 /// Icon spacing of the PivotGrid configurator button.
 /// @group pivotgrid
-$kendo-pivotgrid-configurator-button-icon-spacing: map.get( $kendo-spacing, 2 );
+$kendo-pivotgrid-configurator-button-icon-spacing: map.get( $kendo-spacing, 2 ) !default;
 
 /// Horizontal padding of the PivotGrid calculated field.
 /// @group pivotgrid

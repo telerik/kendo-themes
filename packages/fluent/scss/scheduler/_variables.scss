@@ -267,4 +267,4 @@ $kendo-scheduler-more-btn-height: 13px !default;
 
 /// Color of the scheduler marquee.
 /// @group scheduler
-$kendo-scheduler-marquee-color: get-theme-color-var( primary-100 );
+$kendo-scheduler-marquee-color: get-theme-color-var( primary-100 ) !default;

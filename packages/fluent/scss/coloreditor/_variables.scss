@@ -63,7 +63,7 @@ $kendo-coloreditor-color-preview-height: 14px !default;
 
 /// Spacing between the colors in the color editor preview.
 /// @group coloreditor
-$kendo-coloreditor-preview-spacing: map.get( $kendo-spacing, 1 );
+$kendo-coloreditor-preview-spacing: map.get( $kendo-spacing, 1 ) !default;
 
 /// Horizontal padding of the color editor views container.
 /// @group coloreditor

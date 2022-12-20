@@ -153,7 +153,7 @@ $_tc-base-matrix: (
         active-hover: (transparent, 190, transparent),
         disabled: (initial, var( --kendo-disabled-text, inherit ), transparent)
     )
-);
+) !default;
 
 // Color matrix for primary, error, success, info, secondary, tertiary buttons
 $_tc-brand-matrix: (
@@ -202,7 +202,7 @@ $_tc-brand-matrix: (
         active-hover: (transparent, 110, transparent),
         disabled: (initial, var( --kendo-disabled-text, inherit ), transparent)
     )
-);
+) !default;
 
 // Color matrix for warning buttons
 $_tc-warning-matrix: (
@@ -251,7 +251,7 @@ $_tc-warning-matrix: (
         active-hover: (transparent, 110, transparent),
         disabled: (initial, var( --kendo-disabled-text, inherit ), transparent)
     )
-);
+) !default;
 
 // Color matrix for dark buttons
 $_tc-dark-matrix: (
@@ -300,7 +300,7 @@ $_tc-dark-matrix: (
         active-hover: (transparent, 170, transparent),
         disabled: (initial, var( --kendo-disabled-text, inherit ), transparent)
     )
-);
+) !default;
 
 // Color matrix for light buttons
 $_tc-light-matrix: (
@@ -349,10 +349,10 @@ $_tc-light-matrix: (
         active-hover: (transparent, 60, transparent),
         disabled: (initial, var( --kendo-disabled-text, inherit ), transparent)
     )
-);
+) !default;
 
 /// Theme colors map for the button.
-$kendo-button-theme-colors: ();
+$kendo-button-theme-colors: () !default;
 
 // Map for base theme color
 @each $fill-mode, $ui-states in $_tc-base-matrix {

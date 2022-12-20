@@ -80,7 +80,7 @@ $kendo-bottom-nav-brand-colors: (
     info: info,
     secondary: neutral,
     tertiary: tertiary,
- );
+ ) !default;
 
 // Matrix with bottom-nav theme colors in the order: bg, color, border
 $_tc-bottom-nav-matrix: (
@@ -96,7 +96,7 @@ $_tc-bottom-nav-matrix: (
         active: (inherit, 100, transparent),
         disabled: (initial, var( --kendo-disabled-text, inherit ), initial)
     )
-);
+) !default;
 
 $_tc-bottom-nav-warning-matrix: (
     solid: (
@@ -111,7 +111,7 @@ $_tc-bottom-nav-warning-matrix: (
         active: (inherit, 100, transparent),
         disabled: (initial, var( --kendo-disabled-text, inherit ), initial)
     )
-);
+) !default;
 
 $_tc-bottom-nav-dark-matrix: (
     solid: (
@@ -126,7 +126,7 @@ $_tc-bottom-nav-dark-matrix: (
         active: (inherit, 170, transparent),
         disabled: (inherit, var( --kendo-disabled-text, inherit ), initial)
     )
-);
+) !default;
 
 $_tc-bottom-nav-light-matrix: (
     solid: (
@@ -141,10 +141,10 @@ $_tc-bottom-nav-light-matrix: (
         active: (inherit, 130, transparent),
         disabled: (inherit, var( --kendo-disabled-text, inherit ), initial)
     )
-);
+) !default;
 
 /// Theme colors map for the bottom-nav variations.
-$kendo-bottom-nav-theme-colors: ();
+$kendo-bottom-nav-theme-colors: () !default;
 
 @each $fill-mode, $ui-states in $_tc-bottom-nav-matrix {
     @each $brand-color, $palette in $kendo-bottom-nav-brand-colors {

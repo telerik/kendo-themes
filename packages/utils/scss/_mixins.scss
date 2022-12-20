@@ -1,25 +1,25 @@
 @mixin generate-utils( $name, $props, $values, $function: "", $important: $kendo-important ) {
     @if $values {
-        $_props: if( type-of($props) == list, $props, ( $props ) );
-        $_fn: if( function-exists( $function ), get-function( $function ), null );
+        $_props: if( k-meta-type-of($props) == list, $props, ( $props ) );
+        $_fn: if( k-meta-function-exists( $function ), k-meta-get-function( $function ), null );
 
         @each $key, $val in $values {
             $_key: k-escape-class-name( $key );
-            $_val: if( type-of($values) == list, $key, $val );
+            $_val: if( k-meta-type-of($values) == list, $key, $val );
             $_name: k-escape-class-name( $name );
             $_selector: if( $_key == DEFAULT, #{$kendo-prefix}#{$_name}, #{$kendo-prefix}#{$_name}-#{$_key});
 
             @if $important != only {
                 .#{$_selector} {
                     @each $prop in $_props {
-                        #{$prop}: if( $_fn, call($_fn, $_val), $_val );
+                        #{$prop}: if( $_fn, k-meta-call($_fn, $_val), $_val );
                     }
                 }
             }
             @if $important {
                 .\!#{$_selector} {
                     @each $prop in $_props {
-                        #{$prop}:  if( $_fn, call($_fn, $_val), $_val ) !important; // sass-lint:disable-line no-important
+                        #{$prop}:  if( $_fn, k-meta-call($_fn, $_val), $_val ) !important; // sass-lint:disable-line no-important
                     }
                 }
             }

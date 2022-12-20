@@ -101,23 +101,23 @@ $kendo-loader-brand-colors: (
     success: success,
     warning: warning,
     info: info
- );
+ ) !default;
 
  // Matrix with loader theme colors in the order: bg, color, border
 $_tc-loader-matrix: (
     (normal: (100, null, null)),
-);
+) !default;
 
 $_tc-loader-dark-matrix: (
     (normal: (160, null, null)),
-);
+) !default;
 
 $_tc-loader-light-matrix: (
     (normal: (50, null, null)),
-);
+) !default;
 
 /// Theme colors map for the loader variations.
-$kendo-loader-theme-colors: ();
+$kendo-loader-theme-colors: () !default;
 
 @each $ui-states in $_tc-loader-matrix {
     @each $brand-color, $palette in $kendo-loader-brand-colors {

@@ -65,19 +65,19 @@ $kendo-tooltip-primary-text: $white !default;
 $kendo-tooltip-primary-border: initial !default;
 
 /// Theme variations for the tooltip.
-$kendo-tooltip-brand-colors: (error, warning, success, info );
+$kendo-tooltip-brand-colors: (error, warning, success, info ) !default;
 
 // Matrix with tooltip theme colors in the order: bg, color, border
 $_tc-tooltip-matrix: (
     (normal: (20, 160, 20)),
-);
+) !default;
 
 $_tc-tooltip-primary-matrix: (
     (normal: (100, $white, 100)),
-);
+) !default;
 
 /// Theme colors map for the tooltip variations.
-$kendo-tooltip-theme-colors: ();
+$kendo-tooltip-theme-colors: () !default;
 
 @each $ui-states in $_tc-tooltip-primary-matrix {
     $kendo-tooltip-theme-colors: map.deep-merge(

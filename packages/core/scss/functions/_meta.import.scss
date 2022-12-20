@@ -1,7 +1,31 @@
 // Adapted from https://css-tricks.com/snippets/sass/advanced-type-checking/
 
+@function k-meta-call( $function, $args... ) {
+    @return call( $function, $args... );
+}
+
+@function k-meta-function-exists( $name ) {
+    @return function-exists( $name );
+}
+
+@function k-meta-get-function( $name, $args... ) {
+    @return get-function( $name, $args... );
+}
+
+@function k-meta-inspect( $value ) {
+    @return inspect( $value );
+}
+
+@function k-meta-keywords( $args ) {
+    @return keywords( $args );
+}
+
 @function k-meta-type-of( $value ) {
     @return type-of( $value );
+}
+
+@function k-meta-variable-exists( $name ) {
+    @return variable-exists( $name );
 }
 
 @function k-meta-is-number( $value ) {

@@ -31,7 +31,7 @@ $kendo-avatar-brand-colors: (
     info: info,
     secondary: neutral,
     tertiary: tertiary,
- );
+ ) !default;
 
 // Matrix with avatar theme colors in the order: bg, color, border
 $_tc-avatar-matrix: (
@@ -41,7 +41,7 @@ $_tc-avatar-matrix: (
     outline: (
         normal: ($white, 100, 100)
     )
-);
+) !default;
 
 $_tc-avatar-warning-matrix: (
     solid: (
@@ -50,7 +50,7 @@ $_tc-avatar-warning-matrix: (
     outline: (
         normal: ($white, 100, 100)
     )
-);
+) !default;
 
 $_tc-avatar-dark-matrix: (
     solid: (
@@ -59,7 +59,7 @@ $_tc-avatar-dark-matrix: (
     outline: (
         normal: ($white, 160, 160)
     )
-);
+) !default;
 
 $_tc-avatar-light-matrix: (
     solid: (
@@ -68,10 +68,10 @@ $_tc-avatar-light-matrix: (
     outline: (
         normal: ($white, 50, 50)
     )
-);
+) !default;
 
 /// Theme colors map for the avatar variations.
-$kendo-avatar-theme-colors: ();
+$kendo-avatar-theme-colors: () !default;
 
 @each $fill-mode, $ui-states in $_tc-avatar-matrix {
     @each $brand-color, $palette in $kendo-avatar-brand-colors {

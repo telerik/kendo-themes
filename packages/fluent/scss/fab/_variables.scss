@@ -83,7 +83,7 @@ $kendo-fab-item-text-font-size: var( --kendo-font-size-sm, inherit ) !default;
 $kendo-fab-item-text-line-height: var( --kendo-line-height-sm, inherit ) !default;
 /// The bottom margin of the FAB item.
 /// @group floating-action-button
-$kendo-fab-item-text-offset-x: map.get( $kendo-spacing, 2 );
+$kendo-fab-item-text-offset-x: map.get( $kendo-spacing, 2 ) !default;
 
 /// Offset of the focused FAB item.
 /// @group floating-action-button
@@ -138,11 +138,11 @@ $kendo-fab-sizes: (
         padding-x: $kendo-fab-padding-x-lg,
         padding-y: $kendo-fab-padding-y-lg
     )
-);
+) !default;
 
 /// The bottom margin of the FAB item.
 /// @group floating-action-button
-$kendo-fab-item-offset-y: map.get( $kendo-spacing, 2 );
+$kendo-fab-item-offset-y: map.get( $kendo-spacing, 2 ) !default;
 /// The base text color of the FAB item.
 /// @group floating-action-button
 $kendo-fab-item-text: get-theme-color-var( neutral-160 ) !default;

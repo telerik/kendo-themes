@@ -68,7 +68,7 @@ $kendo-imageeditor-action-pane-padding-y: map.get( $kendo-spacing, 3 ) !default;
 $kendo-imageeditor-action-pane-padding-x: map.get( $kendo-spacing, 3 ) !default;
 /// Imageeditor action pane width.
 /// @group imageeditor
-$kendo-imageeditor-action-pane-width: if( $kendo-imageeditor-content-border-width == 0, 240px, calc( 240px + #{$kendo-imageeditor-content-border-width}) );
+$kendo-imageeditor-action-pane-width: if( $kendo-imageeditor-content-border-width == 0, 240px, calc( 240px + #{$kendo-imageeditor-content-border-width}) ) !default;
 
 /// Crop background color of the imageeditor.
 /// @group imageeditor
