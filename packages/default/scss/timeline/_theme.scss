@@ -31,14 +31,14 @@
                 }
 
                 &::-webkit-scrollbar-thumb:hover {
-                    background: $hovered-border;
+                    background: $kendo-hover-border;
                 }
             }
         }
 
         // TODO: remove
         .k-timeline-date {
-            color: $body-text;
+            color: $kendo-body-text;
         }
 
         .k-timeline-arrow.k-disabled {

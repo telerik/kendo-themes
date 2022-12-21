@@ -33,7 +33,7 @@
             .k-step-link:focus  {
                 // Labels only
                 .k-step-label:only-child {
-                    @include box-shadow( inset 0 0 0 $stepper-indicator-focus-size $component-border );
+                    @include box-shadow( inset 0 0 0 $stepper-indicator-focus-size $kendo-component-border );
                 }
             }
 
@@ -62,13 +62,13 @@
             );
         }
         .k-step-indicator::after {
-            @include box-shadow( inset 0 0 0 $stepper-indicator-focus-size $component-bg );
+            @include box-shadow( inset 0 0 0 $stepper-indicator-focus-size $kendo-component-bg );
         }
         .k-step-label:only-child {
             @include fill(
-                $component-text,
-                $component-bg,
-                $component-border
+                $kendo-component-text,
+                $kendo-component-bg,
+                $kendo-component-border
             );
         }
 

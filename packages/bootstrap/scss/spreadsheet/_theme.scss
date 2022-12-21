@@ -15,10 +15,10 @@
     .k-spreadsheet-row-header,
     .k-spreadsheet-column-header {
         @include fill(
-            $header-text,
-            $header-bg,
-            $header-border,
-            $header-gradient
+            $kendo-component-header-text,
+            $kendo-component-header-bg,
+            $kendo-component-header-border,
+            $kendo-component-header-gradient
         );
     }
 
@@ -35,56 +35,56 @@
 
     // Cell editor
     .k-spreadsheet-cell-editor {
-        color: $component-text;
-        background-color: $component-bg;
+        color: $kendo-component-text;
+        background-color: $kendo-component-bg;
     }
 
 
     // Cells
     .k-spreadsheet-merged-cell {
-        background-color: $component-bg;
+        background-color: $kendo-component-bg;
     }
 
 
     // Selection
     .k-spreadsheet .k-selection-full,
     .k-spreadsheet .k-selection-partial {
-        background-color: rgba( $selected-bg, .25 );
+        background-color: rgba( $kendo-selected-bg, .25 );
     }
     .k-spreadsheet-selection {
-        border-color: $selected-bg;
-        background-color: rgba( $selected-bg, .25 );
-        box-shadow: inset 0 0 0 1px $selected-bg;
+        border-color: $kendo-selected-bg;
+        background-color: rgba( $kendo-selected-bg, .25 );
+        box-shadow: inset 0 0 0 1px $kendo-selected-bg;
     }
 
     .k-spreadsheet .k-single-selection::after {
-        border-color: $component-bg;
-        background-color: $selected-bg;
+        border-color: $kendo-component-bg;
+        background-color: $kendo-selected-bg;
     }
     .k-spreadsheet-active-cell {
-        box-shadow: inset 0 0 0 1px $selected-bg;
-        background-color: $component-bg;
+        box-shadow: inset 0 0 0 1px $kendo-selected-bg;
+        background-color: $kendo-component-bg;
 
         &.k-right {
-            box-shadow: inset 0 0 0 1px $selected-bg, inset -1px 0 0 1px $selected-bg;
+            box-shadow: inset 0 0 0 1px $kendo-selected-bg, inset -1px 0 0 1px $kendo-selected-bg;
         }
 
         &.k-bottom {
-            box-shadow: inset 0 0 0 1px $selected-bg, inset 0 -1px 0 1px $selected-bg;
+            box-shadow: inset 0 0 0 1px $kendo-selected-bg, inset 0 -1px 0 1px $kendo-selected-bg;
         }
 
         &.k-bottom.k-right {
-            box-shadow: inset 0 0 0 1px $selected-bg, inset -1px -1px 0 1px $selected-bg;
+            box-shadow: inset 0 0 0 1px $kendo-selected-bg, inset -1px -1px 0 1px $kendo-selected-bg;
         }
     }
 
     .k-spreadsheet .k-auto-fill {
-        border-color: $selected-bg;
-        background-color: rgba( $selected-bg, .25 );
-        box-shadow: inset 0 0 0 1px $selected-bg;
+        border-color: $kendo-selected-bg;
+        background-color: rgba( $kendo-selected-bg, .25 );
+        box-shadow: inset 0 0 0 1px $kendo-selected-bg;
     }
     .k-spreadsheet .k-auto-fill-punch {
-        background-color: rgba( $component-bg, .5 );
+        background-color: rgba( $kendo-component-bg, .5 );
     }
 
 
@@ -92,17 +92,17 @@
     .k-spreadsheet .k-resize-handle,
     .k-spreadsheet .k-resize-hint-handle,
     .k-spreadsheet .k-resize-hint-marker {
-        background-color: $primary;
+        background-color: $kendo-color-primary;
     }
 
     // Comments
     .k-spreadsheet-has-comment::after {
-        border-color: $primary $primary transparent transparent;
+        border-color: $kendo-color-primary $kendo-color-primary transparent transparent;
     }
 
     // Validation
     .k-dirty {
-        border-color: $error transparent transparent $error;
+        border-color: $kendo-color-error transparent transparent $kendo-color-error;
     }
 
 }
@@ -114,7 +114,7 @@
 
     // Filter button
     .k-spreadsheet .k-filter-range {
-        border-color: $primary;
+        border-color: $kendo-color-primary;
     }
     .k-spreadsheet-filter {
         @include fill(
@@ -162,9 +162,9 @@
 
         .k-spreadsheet-value-treeview-wrapper {
             @include fill(
-                $component-text,
-                $component-bg,
-                $component-border
+                $kendo-component-text,
+                $kendo-component-bg,
+                $kendo-component-border
             );
         }
     }
@@ -187,7 +187,7 @@
 
             &:hover div,
             &.k-hover div {
-                color: $spreadsheet-insert-image-dialog-overlay-hovered-text;
+                color: $spreadsheet-insert-image-dialog-overlay-hover-text;
             }
         }
     }
@@ -249,11 +249,11 @@
     [dir="rtl"] .k-spreadsheet {
 
         .k-spreadsheet-has-comment::after {
-            border-color: $primary transparent transparent $primary;
+            border-color: $kendo-color-primary transparent transparent $kendo-color-primary;
         }
 
         .k-dirty {
-            border-color: $error $error transparent transparent;
+            border-color: $kendo-color-error $kendo-color-error transparent transparent;
         }
 
     }

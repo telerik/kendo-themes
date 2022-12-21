@@ -13,9 +13,9 @@ $actionsheet-font-size: $font-size !default;
 $actionsheet-font-family: $font-family !default;
 $actionsheet-line-height: k-math-div( 20, 14 ) !default;
 
-$actionsheet-bg: $component-bg !default;
-$actionsheet-text: $component-text !default;
-$actionsheet-border: $component-border !default;
+$actionsheet-bg: $kendo-component-bg !default;
+$actionsheet-text: $kendo-component-text !default;
+$actionsheet-border: $kendo-component-border !default;
 $actionsheet-shadow: $box-shadow-depth-4 !default;
 
 
@@ -36,7 +36,7 @@ $actionsheet-titlebar-shadow: null !default;
 
 $actionsheet-subtitle-font-size: $font-size-sm !default;
 $actionsheet-subtitle-line-height: $line-height-sm !default;
-$actionsheet-subtitle-text: $subtle-text !default;
+$actionsheet-subtitle-text: $kendo-subtle-text !default;
 
 
 // Actionsheet item
@@ -52,7 +52,7 @@ $actionsheet-item-title-font-weight: null !default;
 $actionsheet-item-title-text-transform: null !default;
 
 $actionsheet-item-description-font-size: .875em !default;
-$actionsheet-item-description-text: $subtle-text !default;
+$actionsheet-item-description-text: $kendo-subtle-text !default;
 
 $actionsheet-item-hover-bg: rgba( black, .04 ) !default;
 $actionsheet-item-hover-text: null !default;
@@ -82,7 +82,7 @@ $actionsheet-item-disabled-opacity: .42 !default;
 $adaptive-actionsheet-titlebar-border-width: 1px !default;
 $adaptive-actionsheet-titlebar-padding-y: k-map-get( $kendo-spacing, 4 ) !default;
 $adaptive-actionsheet-titlebar-padding-x: $adaptive-actionsheet-titlebar-padding-y !default;
-$adaptive-actionsheet-titlebar-border: $component-border !default;
+$adaptive-actionsheet-titlebar-border: $kendo-component-border !default;
 
 $adaptive-actionsheet-content-padding-y: k-map-get( $kendo-spacing, 2 ) !default;
 $adaptive-actionsheet-content-padding-x: k-map-get( $kendo-spacing, 4 ) !default;

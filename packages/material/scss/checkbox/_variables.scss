@@ -31,7 +31,7 @@ $kendo-checkbox-bg: null !default;
 $kendo-checkbox-text: null !default;
 /// Border color of checkbox.
 /// @group checkbox
-$kendo-checkbox-border: rgba( if( $dark-theme, $white, $black ), .54 ) !default;
+$kendo-checkbox-border: rgba( if( $dark-theme, $kendo-color-white, $kendo-color-black ), .54 ) !default;
 
 /// Background color of hovered checkbox.
 /// @group checkbox
@@ -45,7 +45,7 @@ $kendo-checkbox-hover-border: null !default;
 
 /// Background color of checked checkbox.
 /// @group checkbox
-$kendo-checkbox-checked-bg: $primary !default;
+$kendo-checkbox-checked-bg: $kendo-color-primary !default;
 /// Color of checked checkbox.
 /// @group checkbox
 $kendo-checkbox-checked-text: k-contrast-color( $kendo-checkbox-checked-bg ) !default;
@@ -84,7 +84,7 @@ $kendo-checkbox-disabled-bg: null !default;
 $kendo-checkbox-disabled-text: null !default;
 /// Border color of disabled checkbox.
 /// @group checkbox
-$kendo-checkbox-disabled-border: k-try-shade( $component-bg, 4 ) !default;
+$kendo-checkbox-disabled-border: k-try-shade( $kendo-component-bg, 4 ) !default;
 
 
 /// Background color of disabled and checked checkbox.
@@ -102,10 +102,10 @@ $kendo-checkbox-disabled-checked-border: $kendo-checkbox-disabled-checked-bg !de
 $kendo-checkbox-invalid-bg: null !default;
 /// Color of invalid checkbox.
 /// @group checkbox
-$kendo-checkbox-invalid-text: $invalid-text !default;
+$kendo-checkbox-invalid-text: $kendo-invalid-text !default;
 /// Border color of invalid checkbox.
 /// @group checkbox
-$kendo-checkbox-invalid-border: $invalid-border !default;
+$kendo-checkbox-invalid-border: $kendo-invalid-border !default;
 
 
 // Checkbox indicator
@@ -157,7 +157,7 @@ $kendo-checkbox-list-item-padding-y: $kendo-list-item-padding-y-md !default;
 
 /// Background color of checkbox ripple.
 /// @group checkbox
-$kendo-checkbox-ripple-bg: $primary !default;
+$kendo-checkbox-ripple-bg: $kendo-color-primary !default;
 /// Opacity of checkbox ripple.
 /// @group checkbox
 $kendo-checkbox-ripple-opacity: .2 !default;

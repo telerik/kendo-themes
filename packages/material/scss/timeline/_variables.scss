@@ -1,21 +1,21 @@
 // Timeline
 $timeline-spacing-x: 40px !default;
 $timeline-spacing-y: 40px !default;
-$timeline-items-padding: $padding-x !default;
+$timeline-items-padding: $kendo-padding-md-x !default;
 
 $timeline-font-family: $font-family !default;
 $timeline-font-size: $font-size !default;
 $timeline-line-height: $line-height !default;
 
-$timeline-mobile-spacing-x: $padding-x !default;
-$timeline-mobile-spacing-y: $padding-x !default;
+$timeline-mobile-spacing-x: $kendo-padding-md-x !default;
+$timeline-mobile-spacing-y: $kendo-padding-md-x !default;
 
 $timeline-track-arrow-width: 36px !default;
 $timeline-track-arrow-height: 36px !default;
 
-$timeline-track-arrow-disabled-text: k-true-mix($kendo-button-text, $body-bg, 65%) !default;
-$timeline-track-arrow-disabled-bg: k-true-mix(#000000, $body-bg, 8%) !default;
-$timeline-track-arrow-disabled-border: k-true-mix($kendo-button-border, $body-bg, 65%) !default;
+$timeline-track-arrow-disabled-text: k-true-mix($kendo-button-text, $kendo-body-bg, 65%) !default;
+$timeline-track-arrow-disabled-bg: k-true-mix(#000000, $kendo-body-bg, 8%) !default;
+$timeline-track-arrow-disabled-border: k-true-mix($kendo-button-border, $kendo-body-bg, 65%) !default;
 
 $timeline-track-size: 6px !default;
 $timeline-track-wrap-padding-bottom: k-math-div( $timeline-track-size, 2 ) !default;
@@ -38,7 +38,7 @@ $timeline-flag-min-width: 80px !default;
 $timeline-flag-max-width: calc(#{$timeline-flag-min-width} + 2 * #{$timeline-spacing-x}) !default;
 $timeline-mobile-flag-max-width: calc(#{$timeline-flag-min-width} + 2 * #{$timeline-mobile-spacing-x}) !default;
 $timeline-horizontal-flag-min-width: 60px !default;
-$timeline-flag-bg: $primary !default;
+$timeline-flag-bg: $kendo-color-primary !default;
 $timeline-flag-text: k-contrast-color( $timeline-flag-bg ) !default;
 
 $timeline-flag-callout-width: 10px !default;
@@ -57,9 +57,9 @@ $timeline-mobile-vertical-padding-with-dates-calc: calc(#{$timeline-mobile-verti
 
 $timeline-circle-width: 16px !default;
 $timeline-circle-height: 16px !default;
-$timeline-circle-bg: $primary !default;
+$timeline-circle-bg: $kendo-color-primary !default;
 
-$timeline-collapse-arrow-padding-x: $padding-x-sm !default;
+$timeline-collapse-arrow-padding-x: $kendo-padding-sm-x !default;
 
 $timeline-event-width: 400px !default;
 $timeline-event-height: 600px !default;

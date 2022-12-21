@@ -40,7 +40,7 @@ $kendo-mediaplayer-titlebar-padding-x: map.get( $kendo-spacing, 2 ) !default;
 $kendo-mediaplayer-titlebar-padding-y: map.get( $kendo-spacing, 2 ) !default;
 /// Mediaplayer titlebar background color.
 /// @group mediaplayer
-$kendo-mediaplayer-titlebar-bg: rgba( $black, .4 ) !default;
+$kendo-mediaplayer-titlebar-bg: rgba( $kendo-color-black, .4 ) !default;
 /// Mediaplayer titlebar text color.
 /// @group mediaplayer
 $kendo-mediaplayer-titlebar-text: $kendo-mediaplayer-bg !default;

@@ -10,7 +10,7 @@ $popup-line-height: $line-height !default;
 $popup-content-padding-x: k-map-get( $kendo-spacing, 2 ) !default;
 $popup-content-padding-y: k-map-get( $kendo-spacing, 2 ) !default;
 
-$popup-bg: $component-bg !default;
-$popup-text: $component-text !default;
-$popup-border: $component-border !default;
+$popup-bg: $kendo-component-bg !default;
+$popup-text: $kendo-component-text !default;
+$popup-border: $kendo-component-border !default;
 $popup-shadow: 0 2px 4px 0 rgba(0, 0, 0, .03), 0 4px 5px 0 rgba(0, 0, 0, .04) !default;

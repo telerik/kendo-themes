@@ -118,9 +118,9 @@ $kendo-button-brand-colors: (
 // Color matrix for the base button
 $_tc-base-matrix: (
     solid: (
-        normal: ($white, 160, 110),
+        normal: ($kendo-color-white, 160, 110),
         hover: (20, 190, 110),
-        focus: ($white, 160, 110, 130),
+        focus: ($kendo-color-white, 160, 110, 130),
         focus-hover: (20, 190, 110, 130),
         active: (30, 190, 110),
         active-hover: (20, 190, 110),
@@ -128,10 +128,10 @@ $_tc-base-matrix: (
     ),
     outline: (
         normal: (transparent, 160, currentColor),
-        hover: (190, $white, 190),
+        hover: (190, $kendo-color-white, 190),
         focus: (transparent, 160, currentColor, inherit),
-        focus-hover: (190, $white, 190, inherit),
-        active: (190, $white, 190),
+        focus-hover: (190, $kendo-color-white, 190, inherit),
+        active: (190, $kendo-color-white, 190),
         active-hover: (20, 190, 110),
         disabled: (initial, var( --kendo-disabled-text, inherit ), 90)
     ),
@@ -158,12 +158,12 @@ $_tc-base-matrix: (
 // Color matrix for primary, error, success, info, secondary, tertiary buttons
 $_tc-brand-matrix: (
     solid: (
-        normal: (100, $white, 100),
-        hover: (110, $white, 110),
-        focus: (100, $white, 100, inherit),
-        focus-hover: (110, $white, 110, inherit),
-        active: (120, $white, 120),
-        active-hover: (110, $white, 110),
+        normal: (100, $kendo-color-white, 100),
+        hover: (110, $kendo-color-white, 110),
+        focus: (100, $kendo-color-white, 100, inherit),
+        focus-hover: (110, $kendo-color-white, 110, inherit),
+        active: (120, $kendo-color-white, 120),
+        active-hover: (110, $kendo-color-white, 110),
         disabled: (var( --kendo-disabled-bg, inherit ), var( --kendo-disabled-text, inherit ), var( --kendo-disabled-border, inherit ))
     ),
     flat: (
@@ -177,11 +177,11 @@ $_tc-brand-matrix: (
     ),
     outline: (
         normal: (transparent, 100, currentColor),
-        hover: (100, $white, 100),
+        hover: (100, $kendo-color-white, 100),
         focus: (transparent, 100, 100, inherit),
-        focus-hover: (100, $white, 100, inherit),
-        active: (100, $white, 100),
-        active-hover: (100, $white, 100),
+        focus-hover: (100, $kendo-color-white, 100, inherit),
+        active: (100, $kendo-color-white, 100),
+        active-hover: (100, $kendo-color-white, 100),
         disabled: (initial, var( --kendo-disabled-text, inherit ), var( --kendo-disabled-text, inherit ))
     ),
     link: (
@@ -209,8 +209,8 @@ $_tc-warning-matrix: (
     solid: (
         normal: (100, get-theme-color-var( neutral-160 ), 100),
         hover: (110, get-theme-color-var( neutral-190 ), 110),
-        focus: (100, get-theme-color-var( neutral-160 ), 100, $white),
-        focus-hover: (110, get-theme-color-var( neutral-190 ), 110, $white),
+        focus: (100, get-theme-color-var( neutral-160 ), 100, $kendo-color-white),
+        focus-hover: (110, get-theme-color-var( neutral-190 ), 110, $kendo-color-white),
         active: (120, get-theme-color-var( neutral-190 ), 120),
         active-hover: (110, get-theme-color-var( neutral-190 ), 110),
         disabled: (var( --kendo-disabled-bg, inherit ), var( --kendo-disabled-text, inherit ), var( --kendo-disabled-border, inherit ))
@@ -226,11 +226,11 @@ $_tc-warning-matrix: (
     ),
     outline: (
         normal: (transparent, 100, currentColor),
-        hover: (100, $black, 100),
+        hover: (100, $kendo-color-black, 100),
         focus: (transparent, 100, 100, inherit),
-        focus-hover: (100, $black, 100, inherit),
-        active: (100, $black, 100),
-        active-hover: (100, $black, 100),
+        focus-hover: (100, $kendo-color-black, 100, inherit),
+        active: (100, $kendo-color-black, 100),
+        active-hover: (100, $kendo-color-black, 100),
         disabled: (initial, var( --kendo-disabled-text, inherit ), var( --kendo-disabled-text, inherit ))
     ),
     link: (
@@ -256,12 +256,12 @@ $_tc-warning-matrix: (
 // Color matrix for dark buttons
 $_tc-dark-matrix: (
     solid: (
-        normal: (160, $white, 160),
-        hover: (170, $white, 170),
-        focus: (160, $white, 160, $white),
-        focus-hover: (170, $white, 170, $white),
-        active: (180, $white, 180),
-        active-hover: (170, $white, 170),
+        normal: (160, $kendo-color-white, 160),
+        hover: (170, $kendo-color-white, 170),
+        focus: (160, $kendo-color-white, 160, $kendo-color-white),
+        focus-hover: (170, $kendo-color-white, 170, $kendo-color-white),
+        active: (180, $kendo-color-white, 180),
+        active-hover: (170, $kendo-color-white, 170),
         disabled: (var( --kendo-disabled-bg, inherit ), var( --kendo-disabled-text, inherit ), var( --kendo-disabled-border, inherit ))
     ),
     flat: (
@@ -275,11 +275,11 @@ $_tc-dark-matrix: (
     ),
     outline: (
         normal: (transparent, 160, currentColor),
-        hover: (160, $white, 160),
+        hover: (160, $kendo-color-white, 160),
         focus: (transparent, 160, 160, inherit),
-        focus-hover: (160, $white, 160, inherit),
-        active: (160, $white, 160),
-        active-hover: (160, $white, 160),
+        focus-hover: (160, $kendo-color-white, 160, inherit),
+        active: (160, $kendo-color-white, 160),
+        active-hover: (160, $kendo-color-white, 160),
         disabled: (initial, var( --kendo-disabled-text, inherit ), var( --kendo-disabled-text, inherit ))
     ),
     link: (
@@ -307,8 +307,8 @@ $_tc-light-matrix: (
     solid: (
         normal: (50, 160, 50),
         hover: (60, 190, 60),
-        focus: (50, 160, 50, $white),
-        focus-hover: (60, 190, 60, $white),
+        focus: (50, 160, 50, $kendo-color-white),
+        focus-hover: (60, 190, 60, $kendo-color-white),
         active: (70, 190, 70),
         active-hover: (60, 190, 60),
         disabled: (var( --kendo-disabled-bg, inherit ), var( --kendo-disabled-text, inherit ), var( --kendo-disabled-border, inherit ))
@@ -324,11 +324,11 @@ $_tc-light-matrix: (
     ),
     outline: (
         normal: (transparent, 50, currentColor),
-        hover: (50, $white, 50),
+        hover: (50, $kendo-color-white, 50),
         focus: (transparent, 50, 50, inherit),
-        focus-hover: (50, $white, 50, inherit),
-        active: (50, $white, 50),
-        active-hover: (50, $white, 50),
+        focus-hover: (50, $kendo-color-white, 50, inherit),
+        active: (50, $kendo-color-white, 50),
+        active-hover: (50, $kendo-color-white, 50),
         disabled: (initial, var( --kendo-disabled-text, inherit ), var( --kendo-disabled-text, inherit ))
     ),
     link: (

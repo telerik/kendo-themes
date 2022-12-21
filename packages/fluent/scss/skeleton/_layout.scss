@@ -25,6 +25,13 @@
         border-radius: var( --kendo-skeleton-circle-border-radius, #{$kendo-skeleton-circle-border-radius} );
     }
 
+
+    // Legacy alias
+    .k-placeholder-line {
+        @extend .k-skeleton !optional;
+        @extend .k-skeleton-text !optional;
+    }
+
     // Wave animation
     @keyframes k-skeleton-wave {
         0% {

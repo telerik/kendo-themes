@@ -41,13 +41,13 @@ $kendo-calendar-header-min-width: ($kendo-calendar-cell-size * 8) !default;
 
 /// Background color of the calendar header.
 /// @group calendar
-$kendo-calendar-header-bg: get-theme-color-var( neutral-10 ) !default; // $header-bg
+$kendo-calendar-header-bg: get-theme-color-var( neutral-10 ) !default; // $kendo-component-header-bg
 /// Text color of the calendar header.
 /// @group calendar
-$kendo-calendar-header-text: $kendo-calendar-text !default; // $header-text
+$kendo-calendar-header-text: $kendo-calendar-text !default; // $kendo-component-header-text
 /// Border color of the calendar header.
 /// @group calendar
-$kendo-calendar-header-border: $kendo-calendar-border !default; // $header-border
+$kendo-calendar-header-border: $kendo-calendar-border !default; // $kendo-component-header-border
 
 /// Spacing between the navigation buttons of the calendar.
 /// @group calendar
@@ -142,13 +142,13 @@ $kendo-calendar-weekend-text: inherit !default;
 
 /// Text color of the calendar today cell.
 /// @group calendar
-$kendo-calendar-today-text: $white !default; // use contrast function
+$kendo-calendar-today-text: $kendo-color-white !default; // use contrast function
 /// Background color of the calendar today cell.
 /// @group calendar
 $kendo-calendar-today-bg: get-theme-color-var( primary-100 ) !default;
 /// Text color of the calendar today cell when hovered.
 /// @group calendar
-$kendo-calendar-today-hover-text: $white !default;  // use contrast function
+$kendo-calendar-today-hover-text: $kendo-color-white !default;  // use contrast function
 /// Background color of the calendar today cell when hovered.
 /// @group calendar
 $kendo-calendar-today-hover-bg: get-theme-color-var( primary-120 ) !default;

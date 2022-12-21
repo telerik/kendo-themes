@@ -16,7 +16,7 @@
         cursor: default;
         position: relative;
         -webkit-touch-callout: none;
-        -webkit-tap-highlight-color: $rgba-transparent;
+        -webkit-tap-highlight-color: $kendo-color-rgba-transparent;
 
         .k-vertical-align-center {
             position: relative;
@@ -122,7 +122,7 @@
         flex: 1;
 
         > .k-i-formula-fx {
-            padding: 0 $padding-y;
+            padding: 0 $kendo-padding-md-y;
             box-sizing: content-box;
             border-width: 0 1px 0 0;
             border-style: solid;
@@ -551,7 +551,7 @@
 
 @include exports( "spreadsheet/filter/layout" ) {
 
-    $filter-menu-padding-left: calc( #{$icon-size} + #{2 * $padding-y} );
+    $filter-menu-padding-left: calc( #{$icon-size} + #{2 * $kendo-padding-md-y} );
 
     // Filter button
     .k-spreadsheet .k-filter-wrapper {
@@ -593,8 +593,8 @@
                 padding-left: $filter-menu-padding-left;
             }
             .k-icon {
-                margin-left: calc(-1 * ( #{$icon-size} + #{$padding-y} ) );
-                margin-right: $padding-y;
+                margin-left: calc(-1 * ( #{$icon-size} + #{$kendo-padding-md-y} ) );
+                margin-right: $kendo-padding-md-y;
             }
 
         }
@@ -607,7 +607,7 @@
             overflow-x: auto;
 
             .k-treeview {
-                padding: $padding-y;
+                padding: $kendo-padding-md-y;
                 overflow: visible;
             }
         }
@@ -632,7 +632,7 @@
             cursor: pointer;
 
             > .k-icon {
-                margin-right: $padding-y;
+                margin-right: $kendo-padding-md-y;
             }
         }
         .k-details-content,

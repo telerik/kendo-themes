@@ -26,7 +26,7 @@
         position: relative;
         overflow: hidden;
         -webkit-touch-callout: none;
-        -webkit-tap-highlight-color: $rgba-transparent;
+        -webkit-tap-highlight-color: $kendo-color-rgba-transparent;
 
         // Remove once we decide to not size empty containers
         &::before {

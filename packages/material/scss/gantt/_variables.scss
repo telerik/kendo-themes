@@ -4,9 +4,9 @@ $gantt-font-family: $font-family !default;
 $gantt-font-size: $font-size !default;
 $gantt-line-height: $line-height !default;
 
-$gantt-bg: $component-bg !default;
-$gantt-text: $component-text !default;
-$gantt-border: $component-border !default;
+$gantt-bg: $kendo-component-bg !default;
+$gantt-text: $kendo-component-text !default;
+$gantt-border: $kendo-component-border !default;
 
 $gantt-treelist-bg: null !default;
 $gantt-treelist-text: null !default;
@@ -18,7 +18,7 @@ $gantt-nonwork-border: null !default;
 
 $gantt-line-size: 2px !default;
 $gantt-line-fill: k-color-mix( $gantt-text, $gantt-bg ) !default;
-$gantt-line-selected-fill: $selected-bg !default;
+$gantt-line-selected-fill: $kendo-selected-bg !default;
 
 $gantt-dot-size: 8px !default;
 $gantt-dot-spacing: 4px !default;
@@ -27,27 +27,27 @@ $gantt-dot-border: null !default;
 $gantt-dot-hover-bg: $gantt-bg !default;
 $gantt-dot-hover-border: $gantt-text !default;
 
-$gantt-milestone-bg: $primary !default;
-$gantt-milestone-border: $primary !default;
-$gantt-milestone-selected-bg: $secondary !default;
-$gantt-milestone-selected-border: $secondary !default;
+$gantt-milestone-bg: $kendo-color-primary !default;
+$gantt-milestone-border: $kendo-color-primary !default;
+$gantt-milestone-selected-bg: $kendo-color-secondary !default;
+$gantt-milestone-selected-border: $kendo-color-secondary !default;
 
-$gantt-summary-bg: k-color-mix( $primary, $gantt-bg ) !default;
-$gantt-summary-progress-bg: $primary !default;
-$gantt-summary-selected-bg: k-color-mix( $secondary, $gantt-bg ) !default;
-$gantt-summary-progress-selected-bg: $secondary !default;
+$gantt-summary-bg: k-color-mix( $kendo-color-primary, $gantt-bg ) !default;
+$gantt-summary-progress-bg: $kendo-color-primary !default;
+$gantt-summary-selected-bg: k-color-mix( $kendo-color-secondary, $gantt-bg ) !default;
+$gantt-summary-progress-selected-bg: $kendo-color-secondary !default;
 
 $gantt-task-padding-x: k-map-get( $kendo-spacing, 2 ) !default;
 $gantt-task-padding-y: k-map-get( $kendo-spacing, 1 ) !default;
 $gantt-task-border-width: 0px !default;
-$gantt-task-bg: k-color-mix( $primary, $gantt-bg ) !default;
-$gantt-task-text: $primary-contrast !default;
+$gantt-task-bg: k-color-mix( $kendo-color-primary, $gantt-bg ) !default;
+$gantt-task-text: $kendo-color-primary-contrast !default;
 $gantt-task-border: null !default;
-$gantt-task-progress-bg: $primary !default;
-$gantt-task-selected-bg: k-color-mix( $secondary, $gantt-bg ) !default;
-$gantt-task-selected-text: $secondary-contrast !default;
+$gantt-task-progress-bg: $kendo-color-primary !default;
+$gantt-task-selected-bg: k-color-mix( $kendo-color-secondary, $gantt-bg ) !default;
+$gantt-task-selected-text: $kendo-color-secondary-contrast !default;
 $gantt-task-selected-border: null !default;
-$gantt-task-progress-selected-bg: $secondary !default;
+$gantt-task-progress-selected-bg: $kendo-color-secondary !default;
 
 $gantt-planned-margin-y: .35em !default;
 $gantt-planned-border-width: 2px !default;
@@ -74,13 +74,13 @@ $gantt-rtl-milestone-dot-start-margin-x: -.1em !default;
 
 $gantt-planned-offset-resize-handler-margin-x: 1.4em !default;
 
-$gantt-planned-bg: $primary !default;
+$gantt-planned-bg: $kendo-color-primary !default;
 $gantt-planned-border: $gantt-planned-bg !default;
 
-$gantt-delayed-bg: $error !default;
+$gantt-delayed-bg: $kendo-color-error !default;
 $gantt-delayed-bg-lighter: k-color-tint($gantt-delayed-bg, 5) !default;
 
-$gantt-advanced-bg: $success !default;
+$gantt-advanced-bg: $kendo-color-success !default;
 $gantt-advanced-bg-lighter: k-color-tint($gantt-advanced-bg, 5) !default;
 
 $gantt-action-on-offset-text: #000000 !default;
@@ -89,5 +89,5 @@ $gantt-offset-resize-handler-top: 50% !default;
 $gantt-validation-tooltip-width: 200px !default;
 $gantt-validation-tooltip-label-width: 50px !default;
 $gantt-validation-tooltip-border: #656565 !default;
-$gantt-validation-tooltip-valid-border: $success !default;
-$gantt-validation-tooltip-invalid-border: $error !default;
+$gantt-validation-tooltip-valid-border: $kendo-color-success !default;
+$gantt-validation-tooltip-invalid-border: $kendo-color-error !default;

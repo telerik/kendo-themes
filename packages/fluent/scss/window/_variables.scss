@@ -83,10 +83,10 @@ $kendo-window-border: get-theme-color-var( primary-100 ) !default;
 
 /// Background color of the window titlebar.
 /// @group window
-$kendo-window-titlebar-bg: var( --kendo-component-bg, initial ) !default; // $header-bg
+$kendo-window-titlebar-bg: var( --kendo-component-bg, initial ) !default; // $kendo-component-header-bg
 /// Text color of the window titlebar.
 /// @group window
-$kendo-window-titlebar-text: get-theme-color-var( primary-100 ) !default; // $header-text
+$kendo-window-titlebar-text: get-theme-color-var( primary-100 ) !default; // $kendo-component-header-text
 /// Border color of the window titlebar.
 /// @group window
 $kendo-window-titlebar-border: get-theme-color-var( primary-100 ) !default;
@@ -96,7 +96,7 @@ $kendo-window-titlebar-border: get-theme-color-var( primary-100 ) !default;
 $kendo-window-shadow: var( --kendo-box-shadow-depth-4, none ) !default;
 /// Box shadow around the window when hovered.
 /// @group window
-$kendo-window-focused-shadow: var( --kendo-box-shadow-depth-4, none ) !default;
+$kendo-window-focus-shadow: var( --kendo-box-shadow-depth-4, none ) !default;
 
 /// Map of the width of the different window sizes.
 /// @group window
@@ -113,11 +113,11 @@ $kendo-window-brand-colors: (
 
 // Matrix with window theme colors in the order: bg, color, border
 $_tc-window-matrix: (
-    (normal: (100, $white, 100)),
+    (normal: (100, $kendo-color-white, 100)),
 ) !default;
 
 $_tc-window-dark-matrix: (
-    (normal: (160, $white, 160)),
+    (normal: (160, $kendo-color-white, 160)),
 ) !default;
 
 $_tc-window-light-matrix: (

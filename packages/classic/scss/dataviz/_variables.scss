@@ -96,37 +96,37 @@ $chart-pane-title-font-weight: $font-weight-normal !default;
 
 /// The color of the Chart grid lines (major).
 /// @group charts
-$chart-major-lines: rgba( if( $dark-theme, $white, $black ), .08 ) !default;
+$chart-major-lines: rgba( if( $dark-theme, $kendo-color-white, $kendo-color-black ), .08 ) !default;
 
 /// The color of the Chart grid lines (minor).
 /// @group charts
-$chart-minor-lines: rgba( if( $dark-theme, $white, $black ), .04 ) !default;
+$chart-minor-lines: rgba( if( $dark-theme, $kendo-color-white, $kendo-color-black ), .04 ) !default;
 
-$chart-inactive: rgba( $body-text, .5 ) !default;
+$chart-inactive: rgba( $kendo-body-text, .5 ) !default;
 $chart-area-opacity: .6 !default;
 $chart-area-inactive-opacity: .1 !default;
 $chart-line-inactive-opacity: .1 !default;
 
 $chart-tooltip-transition: left 300ms cubic-bezier(0, .33, .19, 1), top 300ms cubic-bezier(0, .33, .19, 1) !default;
 
-$chart-bg: $component-bg !default;
-$chart-text: $component-text !default;
-$chart-border: $component-border !default;
+$chart-bg: $kendo-component-bg !default;
+$chart-text: $kendo-component-text !default;
+$chart-border: $kendo-component-border !default;
 
-$chart-crosshair-background: rgba( if( $dark-theme, $white, $black ), .5 ) !default;
+$chart-crosshair-background: rgba( if( $dark-theme, $kendo-color-white, $kendo-color-black ), .5 ) !default;
 $chart-crosshair-shared-tooltip-color: $chart-text !default;
 $chart-crosshair-shared-tooltip-background: k-try-shade( $chart-bg, 1 ) !default;
-$chart-crosshair-shared-tooltip-border: rgba( if( $dark-theme, $white, $black ), .08) !default;
+$chart-crosshair-shared-tooltip-border: rgba( if( $dark-theme, $kendo-color-white, $kendo-color-black ), .08) !default;
 
-$chart-notes-background: rgba( if( $dark-theme, $white, $black ), .5 ) !default;
-$chart-notes-border: rgba( if( $dark-theme, $white, $black ), .5 ) !default;
-$chart-notes-lines: rgba( if( $dark-theme, $white, $black ), .5 ) !default;
+$chart-notes-background: rgba( if( $dark-theme, $kendo-color-white, $kendo-color-black ), .5 ) !default;
+$chart-notes-border: rgba( if( $dark-theme, $kendo-color-white, $kendo-color-black ), .5 ) !default;
+$chart-notes-lines: rgba( if( $dark-theme, $kendo-color-white, $kendo-color-black ), .5 ) !default;
 
-$error-bars-background: rgba( if( $dark-theme, $white, $black ), .5 ) !default;
+$error-bars-background: rgba( if( $dark-theme, $kendo-color-white, $kendo-color-black ), .5 ) !default;
 
 $selection-handle-size: 22px !default;
-$selection-border-color: rgba( if( $dark-theme, $white, $black ), .08 ) !default;
-$selection-shadow: inset 0 1px 7px rgba( if( $dark-theme, $white, $black ), .15) !default;
+$selection-border-color: rgba( if( $dark-theme, $kendo-color-white, $kendo-color-black ), .08 ) !default;
+$selection-shadow: inset 0 1px 7px rgba( if( $dark-theme, $kendo-color-white, $kendo-color-black ), .15) !default;
 
 
 // TreeMap

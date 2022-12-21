@@ -39,7 +39,7 @@ $kendo-spreadsheet-sheets-remove-inline-end:  map.get( $kendo-spacing, 2 ) !defa
 
 /// Left padding of the spreadsheet sheets menu.
 /// @group spreadsheet
-$filter-menu-padding-left: calc( var( --kendo-icon-size, 1rem ) + 2 * var( --kendo-padding-y, #{$kendo-padding-y} ) ) !default;
+$filter-menu-padding-left: calc( var( --kendo-icon-size, 1rem ) + 2 * var( --kendo-padding-y, #{$kendo-padding-md-y} ) ) !default;
 
 /// Background color of the spreadsheet.
 /// @group spreadsheet
@@ -82,7 +82,7 @@ $kendo-spreadsheet-selected-border: get-theme-color-var( primary-100 ) !default;
 $kendo-spreadsheet-filter-button-text: get-theme-color-var( neutral-160 ) !default;
 /// Background color of the spreadsheet filter button.
 /// @group spreadsheet
-$kendo-spreadsheet-filter-button-bg: $white !default;
+$kendo-spreadsheet-filter-button-bg: $kendo-color-white !default;
 /// Border color of the spreadsheet filter button.
 /// @group spreadsheet
 $kendo-spreadsheet-filter-button-border: get-theme-color-var( neutral-110 ) !default;
@@ -147,7 +147,7 @@ $kendo-spreadsheet-insert-image-dialog-preview-overlay-shadow: inset 0 0 0 2000p
 $kendo-spreadsheet-insert-image-dialog-preview-overlay-border-radius: var( --kendo-border-radius-md, initial ) !default;
 /// Hover text color of the spreadsheet image dialog preview.
 /// @group spreadsheet
-$kendo-spreadsheet-insert-image-dialog-overlay-hovered-text: var( --kendo-component-bg, initial ) !default;
+$kendo-spreadsheet-insert-image-dialog-overlay-hover-text: var( --kendo-component-bg, initial ) !default;
 
 /// Width of the spreadsheet drawing handle.
 /// @group spreadsheet

@@ -11,8 +11,8 @@ $menu-text: $base-text !default;
 $menu-border: $base-border !default;
 $menu-gradient: $base-gradient !default;
 
-$menu-item-padding-x: $nav-item-padding-x !default;
-$menu-item-padding-y: $nav-item-padding-y !default;
+$menu-item-padding-x: k-map-get( $kendo-spacing, 2 ) !default;
+$menu-item-padding-y: k-map-get( $kendo-spacing, 1 ) !default;
 $menu-item-spacing: null !default;
 $menu-item-icon-spacing: $icon-spacing !default;
 
@@ -21,13 +21,13 @@ $menu-item-text: inherit !default;
 $menu-item-border: null !default;
 $menu-item-gradient: null !default;
 
-$menu-item-hover-bg: $hovered-bg !default;
-$menu-item-hover-text: $hovered-text !default;
-$menu-item-hover-border: $hovered-border !default;
-$menu-item-hover-gradient: $hovered-gradient !default;
+$menu-item-hover-bg: $kendo-hover-bg !default;
+$menu-item-hover-text: $kendo-hover-text !default;
+$menu-item-hover-border: $kendo-hover-border !default;
+$menu-item-hover-gradient: $kendo-hover-gradient !default;
 
 $menu-item-expanded-bg: null !default;
-$menu-item-expanded-text: $component-text !default;
+$menu-item-expanded-text: $kendo-component-text !default;
 $menu-item-expanded-border: null !default;
 $menu-item-expanded-gradient: null !default;
 
@@ -35,9 +35,9 @@ $menu-item-focus-shadow: inset 0 0 3px 1px rgba( $menu-text, .25 ) !default;
 
 $menu-separator-spacing: k-map-get( $kendo-spacing, 1 ) !default;
 
-$menu-scroll-button-bg: $component-bg !default;
+$menu-scroll-button-bg: $kendo-component-bg !default;
 $menu-scroll-button-text: $link-text !default;
-$menu-scroll-button-border: $component-border !default;
+$menu-scroll-button-border: $kendo-component-border !default;
 $menu-scroll-button-gradient: null !default;
 
 $menu-scroll-button-hover-bg: null !default;

@@ -1,0 +1,14 @@
+@include exports( "draggable/theme" ) {
+
+    // Theme
+    .k-drag-clue {
+        @include fill(
+            $drag-clue-text,
+            $drag-clue-bg,
+            $drag-clue-border,
+            $drag-clue-gradient
+        );
+        @include box-shadow( $drag-clue-shadow );
+    }
+
+}

@@ -78,10 +78,10 @@ $kendo-imageeditor-crop-bg: inherit !default;
 $kendo-imageeditor-crop-text: inherit !default;
 /// Crop border color of the imageeditor.
 /// @group imageeditor
-$kendo-imageeditor-crop-border: $white !default;
+$kendo-imageeditor-crop-border: $kendo-color-white !default;
 /// Crop overlay background color of the imageeditor.
 /// @group imageeditor
-$kendo-imageeditor-crop-overlay-bg: rgba( $black, .3 ) !default;
+$kendo-imageeditor-crop-overlay-bg: rgba( $kendo-color-black, .3 ) !default;
 /// Crop border width of the imageeditor.
 /// @group imageeditor
 $kendo-imageeditor-crop-border-width: 1px !default;

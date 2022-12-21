@@ -6,7 +6,7 @@
 
         // Root items
         > .k-menu-item {
-            transition: $transition;
+            transition: $kendo-transition;
         }
     }
 
@@ -18,11 +18,11 @@
         }
 
         &.horizontal .k-menu-scroll-button {
-            width: calc( #{$line-height-em} + #{$nav-item-padding-y});
+            width: calc( #{$line-height-em} + #{k-map-get( $kendo-spacing, 1 )});
         }
 
         &.vertical .k-menu-scroll-button {
-            height: calc( #{$line-height-em} + #{$nav-item-padding-y});
+            height: calc( #{$line-height-em} + #{k-map-get( $kendo-spacing, 1 )});
         }
     }
 }

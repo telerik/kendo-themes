@@ -102,13 +102,13 @@ $kendo-fab-active-shadow: null !default;
 
 /// The base text color of the FAB item.
 /// @group floating-action-button
-$kendo-fab-item-text: $component-text !default;
+$kendo-fab-item-text: $kendo-component-text !default;
 /// The base background color of the FAB item.
 /// @group floating-action-button
-$kendo-fab-item-bg: $component-bg !default;
+$kendo-fab-item-bg: $kendo-component-bg !default;
 /// The base border color of the FAB item.
 /// @group floating-action-button
-$kendo-fab-item-border: $component-border !default;
+$kendo-fab-item-border: $kendo-component-border !default;
 
 /// The base text color of the FAB item icon.
 /// @group floating-action-button

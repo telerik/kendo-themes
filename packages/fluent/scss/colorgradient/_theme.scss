@@ -28,7 +28,7 @@
     // Canvas
     .k-colorgradient-canvas {
         .k-hsv-gradient {
-            background: linear-gradient( to bottom, $gradient-transparent-to-black ), linear-gradient( to right, $gradient-white-to-transparent );
+            background: linear-gradient( to bottom, $kendo-gradient-transparent-to-black ), linear-gradient( to right, $kendo-gradient-white-to-transparent );
         }
 
         .k-hsv-rectangle {
@@ -96,11 +96,11 @@
 
     .k-colorgradient-slider.k-hue-slider {
         &.k-slider-horizontal .k-slider-track {
-            background: linear-gradient( to right, $gradient-rainbow );
+            background: linear-gradient( to right, $kendo-gradient-rainbow );
         }
 
         &.k-slider-vertical .k-slider-track {
-            background: linear-gradient( to top, $gradient-rainbow );
+            background: linear-gradient( to top, $kendo-gradient-rainbow );
         }
     }
 

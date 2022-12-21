@@ -198,7 +198,7 @@ $kendo-list-border: var( --kendo-component-border, inherit ) !default;
 
 /// Background color of list header.
 /// @group list
-$kendo-list-header-bg: $white !default;
+$kendo-list-header-bg: $kendo-color-white !default;
 /// Text color of list header.
 /// @group list
 $kendo-list-header-text: get-theme-color-var( primary-100 ) !default;
@@ -212,7 +212,7 @@ $kendo-list-header-shadow: $kendo-box-shadow-depth-3 !default;
 
 /// Background color of list items.
 /// @group list
-$kendo-list-item-bg: $white !default;
+$kendo-list-item-bg: $kendo-color-white !default;
 /// Text color of list items.
 /// @group list
 $kendo-list-item-text: get-theme-color-var( neutral-160 ) !default;
@@ -226,7 +226,7 @@ $kendo-list-item-hover-text: get-theme-color-var( neutral-190 ) !default;
 
 /// Background color of focused list items.
 /// @group list
-$kendo-list-item-focus-bg: $white !default;
+$kendo-list-item-focus-bg: $kendo-color-white !default;
 /// Text color of focused list items.
 /// @group list
 $kendo-list-item-focus-text: get-theme-color-var( neutral-160 ) !default;
@@ -250,14 +250,14 @@ $kendo-list-item-selected-hover-text: get-theme-color-var( neutral-190 ) !defaul
 
 /// Background color of disabled list items.
 /// @group list
-$kendo-list-item-disabled-bg: $white !default;
+$kendo-list-item-disabled-bg: $kendo-color-white !default;
 /// Text color of disabled list items.
 /// @group list
 $kendo-list-item-disabled-text: get-theme-color-var( neutral-90 ) !default;
 
 /// Background color of list group items.
 /// @group list
-$kendo-list-group-item-bg: $white !default;
+$kendo-list-group-item-bg: $kendo-color-white !default;
 /// Text color of list group items.
 /// @group list
 $kendo-list-group-item-text: get-theme-color-var( primary-100 ) !default;

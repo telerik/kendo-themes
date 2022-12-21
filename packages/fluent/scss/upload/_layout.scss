@@ -14,7 +14,7 @@
         position: relative;
         display: block;
         -webkit-touch-callout: none;
-        -webkit-tap-highlight-color: $rgba-transparent;
+        -webkit-tap-highlight-color: $kendo-color-rgba-transparent;
 
         *,
         *::before,
@@ -116,7 +116,7 @@
             }
 
             .k-filename {
-                margin-inline-start: var( --kendo-padding-x, #{$kendo-padding-x} );
+                margin-inline-start: var( --kendo-padding-x, #{$kendo-padding-md-x} );
                 flex: 1;
                 overflow: hidden;
                 text-overflow: ellipsis;
@@ -138,7 +138,7 @@
 
             ~ .k-clear-selected,
             ~ .k-upload-selected {
-                margin-block-start: - var( --kendo-padding-y, #{$kendo-padding-y} );
+                margin-block-start: - var( --kendo-padding-y, #{$kendo-padding-md-y} );
                 border-width: 0;
             }
 
@@ -195,7 +195,7 @@
 
         .k-multiple-files-wrapper,
         .k-file-single > .k-file-info {
-            margin-inline-start: var( --kendo-padding-x, #{$kendo-padding-x} );
+            margin-inline-start: var( --kendo-padding-x, #{$kendo-padding-md-x} );
             margin-inline-end: 0;
             min-height: var( --kendo-upload-group-icon-size, #{$kendo-upload-group-icon-size} );
             display: block;

@@ -6,7 +6,7 @@ $tilelayout-card-focus-shadow: $card-focus-shadow !default;
 $tilelayout-hint-border-width: 1px !default;
 $tilelayout-hint-border-radius: $kendo-border-radius-md !default;
 
-$tilelayout-bg: if( $dark-theme, $dark, $light) !default;
+$tilelayout-bg: if( $dark-theme, $kendo-color-dark, $kendo-color-light) !default;
 
 $tilelayout-hint-bg: rgba( white, .2 ) !default;
-$tilelayout-hint-border: $component-border !default;
+$tilelayout-hint-border: $kendo-component-border !default;

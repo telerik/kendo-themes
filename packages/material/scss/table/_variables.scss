@@ -61,13 +61,13 @@ $kendo-table-sizes: (
 
 /// Background color of tables.
 /// @group table
-$kendo-table-bg: $component-bg !default;
+$kendo-table-bg: $kendo-component-bg !default;
 /// Text color of tables.
 /// @group table
-$kendo-table-text: $component-text !default;
+$kendo-table-text: $kendo-component-text !default;
 /// Border color of tables.
 /// @group table
-$kendo-table-border: $component-border !default;
+$kendo-table-border: $kendo-component-border !default;
 
 
 /// Background color of table headers.
@@ -75,7 +75,7 @@ $kendo-table-border: $component-border !default;
 $kendo-table-header-bg: $kendo-table-bg !default;
 /// Text color of table headers.
 /// @group table
-$kendo-table-header-text: if($theme-type == dark, $light-secondary-text, $dark-secondary-text) !default;
+$kendo-table-header-text: if( $dark-theme, $light-secondary-text, $dark-secondary-text ) !default;
 /// Border color of table headers.
 /// @group table
 $kendo-table-header-border: $kendo-table-border !default;

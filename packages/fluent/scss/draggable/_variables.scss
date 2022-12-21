@@ -12,10 +12,10 @@ $kendo-drag-clue-border-width: 0px !default;
 $kendo-drag-clue-border-style: solid !default;
 /// Horizontal padding of the drag clue.
 /// @group draggable
-$kendo-drag-clue-padding-x: $kendo-padding-x-lg !default;
+$kendo-drag-clue-padding-x: $kendo-padding-lg-x !default;
 /// Vertical padding of the drag clue.
 /// @group draggable
-$kendo-drag-clue-padding-y: $kendo-padding-y-lg !default;
+$kendo-drag-clue-padding-y: $kendo-padding-lg-y !default;
 /// Font family of the drag clue.
 /// @group draggable
 $kendo-drag-clue-font-family: var( --kendo-font-family, inherit ) !default;

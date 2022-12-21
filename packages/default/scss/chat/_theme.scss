@@ -29,7 +29,7 @@
                 $chat-bubble-border
             );
             @include box-shadow( $chat-bubble-shadow );
-            transition: $transition;
+            transition: $kendo-transition;
             order: -1;
 
             a { color: $link-text; }

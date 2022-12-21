@@ -131,13 +131,13 @@ $kendo-button-active-shadow: null !default;
 
 /// The base background color of selected button.
 /// @group button
-$kendo-button-selected-bg: k-try-darken( $primary, 10% ) !default;
+$kendo-button-selected-bg: k-try-darken( $kendo-color-primary, 10% ) !default;
 /// The text color of selected buttons.
 /// @group button
 $kendo-button-selected-text: k-contrast-color( $kendo-button-selected-bg ) !default;
 /// The border color of selected buttons.
 /// @group button
-$kendo-button-selected-border: k-try-darken( $primary, 12.5% ) !default;
+$kendo-button-selected-border: k-try-darken( $kendo-color-primary, 12.5% ) !default;
 /// The background gradient of selected buttons.
 /// @group button
 $kendo-button-selected-gradient: $kendo-button-active-gradient !default;
@@ -224,4 +224,4 @@ $kendo-flat-button-selected-opacity: .2 !default;
 
 /// The color transition of the button.
 /// @group button
-$kendo-button-transition: $transition !default;
+$kendo-button-transition: $kendo-transition !default;

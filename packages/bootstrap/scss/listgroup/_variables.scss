@@ -5,9 +5,9 @@ $listgroup-border-radius: k-map-get( $kendo-spacing, 1 ) !default;
 $listgroup-font-size: $font-size !default;
 $listgroup-line-height: $line-height !default;
 
-$listgroup-bg: $component-bg !default;
-$listgroup-text: $component-text !default;
-$listgroup-border: $component-border !default;
+$listgroup-bg: $kendo-component-bg !default;
+$listgroup-text: $kendo-component-text !default;
+$listgroup-border: $kendo-component-border !default;
 
 $listgroup-item-padding-x: k-map-get( $kendo-spacing, 4 ) !default;
 $listgroup-item-padding-y: k-map-get( $kendo-spacing, 2 ) !default;

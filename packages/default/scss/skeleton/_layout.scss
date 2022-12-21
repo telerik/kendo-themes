@@ -21,6 +21,13 @@
         border-radius: $skeleton-circle-border-radius;
     }
 
+
+    // Legacy alias
+    .k-placeholder-line {
+        @extend .k-skeleton !optional;
+        @extend .k-skeleton-text !optional;
+    }
+
 }
 
 

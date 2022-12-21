@@ -61,27 +61,27 @@ $kendo-table-sizes: (
 
 /// Background color of tables.
 /// @group table
-$kendo-table-bg: $component-bg !default;
+$kendo-table-bg: $kendo-component-bg !default;
 /// Text color of tables.
 /// @group table
-$kendo-table-text: $component-text !default;
+$kendo-table-text: $kendo-component-text !default;
 /// Border color of tables.
 /// @group table
-$kendo-table-border: $component-border !default;
+$kendo-table-border: $kendo-component-border !default;
 
 
 /// Background color of table headers.
 /// @group table
-$kendo-table-header-bg: $header-bg !default;
+$kendo-table-header-bg: $kendo-component-header-bg !default;
 /// Text color of table headers.
 /// @group table
-$kendo-table-header-text: $header-text !default;
+$kendo-table-header-text: $kendo-component-header-text !default;
 /// Border color of table headers.
 /// @group table
-$kendo-table-header-border: $header-border !default;
+$kendo-table-header-border: $kendo-component-header-border !default;
 /// Gradient of table headers.
 /// @group table
-$kendo-table-header-gradient: $header-gradient !default;
+$kendo-table-header-gradient: $kendo-component-header-gradient !default;
 
 
 /// Background color of table footers.
@@ -144,7 +144,7 @@ $kendo-table-focus-shadow: $kendo-list-item-focus-shadow !default;
 
 /// Background color of selected rows in table.
 /// @group table
-$kendo-table-selected-bg: rgba($selected-bg, .25) !default;
+$kendo-table-selected-bg: rgba($kendo-selected-bg, .25) !default;
 /// Text color of selected rows in table.
 /// @group table
 $kendo-table-selected-text: null !default;

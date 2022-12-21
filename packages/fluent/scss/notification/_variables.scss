@@ -3,7 +3,7 @@
 
 /// Vertical padding of the notification container.
 /// @group notification
-$kendo-notification-container-padding-y: $kendo-padding-y-sm !default;
+$kendo-notification-container-padding-y: $kendo-padding-sm-y !default;
 
 /// Horizontal padding of the notification.
 /// @group notification
@@ -66,7 +66,7 @@ $_tc-notification-matrix: (
 ) !default;
 
 $_tc-notification-dark-matrix: (
-    (normal: (160, $white, 160)),
+    (normal: (160, $kendo-color-white, 160)),
 ) !default;
 
 $_tc-notification-light-matrix: (

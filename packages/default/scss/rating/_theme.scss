@@ -1,18 +1,18 @@
 @include exports("rating/theme") {
 
     .k-rating {
-        color: $component-text;
+        color: $kendo-component-text;
 
         &:focus,
         &.k-focus {
 
             .k-rating-item {
                 > .k-icon {
-                    text-shadow: $rating-icon-focused-shadow;
+                    text-shadow: $rating-icon-focus-shadow;
                 }
 
                 &.k-selected > .k-icon {
-                    text-shadow: $rating-icon-focused-selected-shadow;
+                    text-shadow: $rating-icon-focus-selected-shadow;
                 }
             }
         }
@@ -26,7 +26,7 @@
 
             &:focus,
             &.k-focus {
-                color: $rating-icon-focused-text;
+                color: $rating-icon-focus-text;
             }
         }
 

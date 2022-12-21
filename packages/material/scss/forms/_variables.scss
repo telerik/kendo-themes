@@ -1,5 +1,5 @@
 // Forms
-$kendo-form-spacer: $padding-x * 2 !default;
+$kendo-form-spacer: $kendo-padding-md-x * 2 !default;
 
 $kendo-form-font-size: $font-size !default;
 $kendo-form-line-height: $line-height !default;
@@ -14,7 +14,7 @@ $kendo-form-legend-margin: 0 0 1em !default;
 $kendo-form-legend-padding: 0px !default;
 $kendo-form-legend-border-width: 0 0 2px !default;
 $kendo-form-legend-border-style: solid !default;
-$kendo-form-legend-border-color: $component-border !default;
+$kendo-form-legend-border-color: $kendo-component-border !default;
 $kendo-form-legend-width: 100% !default;
 $kendo-form-legend-font-size: $font-size !default;
 $kendo-form-legend-text-transform: uppercase !default;

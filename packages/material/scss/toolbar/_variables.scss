@@ -40,10 +40,10 @@ $kendo-toolbar-line-height: k-math-div( 20, 14 ) !default;
 
 /// Background color of the toolbar.
 /// @group toolbar
-$kendo-toolbar-bg: $component-bg !default;
+$kendo-toolbar-bg: $kendo-component-bg !default;
 /// Text color of the toolbar.
 /// @group toolbar
-$kendo-toolbar-text: $component-text !default;
+$kendo-toolbar-text: $kendo-component-text !default;
 /// Color of the border around the toolbar.
 /// @group toolbar
 $kendo-toolbar-border: null !default;
@@ -56,7 +56,7 @@ $kendo-toolbar-shadow: $box-shadow-depth-2 !default;
 
 /// Color of the separator border of the toolbar.
 /// @group toolbar
-$kendo-toolbar-separator-border: $component-border !default;
+$kendo-toolbar-separator-border: $kendo-component-border !default;
 
 /// The width of the input in the toolbar.
 /// @group toolbar

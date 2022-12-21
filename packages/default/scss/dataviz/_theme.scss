@@ -63,10 +63,10 @@
     // Tooltip
     // TODO
     .k-chart-tooltip {
-        color: $white;
+        color: $kendo-color-white;
     }
     .k-chart-tooltip-inverse {
-        color: $black;
+        color: $kendo-color-black;
     }
 
     .k-chart-crosshair-tooltip,
@@ -109,7 +109,7 @@
     }
 
     .k-mask {
-        background-color: $component-bg;
+        background-color: $kendo-component-bg;
         opacity: .8;
     }
 }
@@ -120,31 +120,31 @@
     // Treemap
     .k-treemap {
         @include fill(
-            $component-text,
-            $component-bg,
-            $component-border
+            $kendo-component-text,
+            $kendo-component-bg,
+            $kendo-component-border
         );
 
         // Title
         .k-treemap-title {
             @include fill(
-                $header-text,
-                $header-bg,
-                $header-border,
-                $header-gradient
+                $kendo-component-header-text,
+                $kendo-component-header-bg,
+                $kendo-component-header-border,
+                $kendo-component-header-gradient
             );
         }
 
         // Leaf
         .k-leaf {
-            color: $component-bg;
+            color: $kendo-component-bg;
         }
         .k-leaf.k-inverse {
-            color: $component-text;
+            color: $kendo-component-text;
         }
         .k-leaf:hover,
         .k-leaf.k-hover {
-            box-shadow: inset 0 0 0 3px $component-border;
+            box-shadow: inset 0 0 0 3px $kendo-component-border;
         }
     }
 

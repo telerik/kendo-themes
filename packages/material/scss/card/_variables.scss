@@ -10,9 +10,9 @@ $card-line-height: k-math-div( 20, 14 ) !default;
 
 $card-deck-gap: k-map-get( $kendo-spacing, 4 ) !default;
 
-$card-bg: $component-bg !default;
-$card-text: $component-text !default;
-$card-border: $component-border !default;
+$card-bg: $kendo-component-bg !default;
+$card-text: $kendo-component-text !default;
+$card-border: $kendo-component-border !default;
 $card-shadow: $box-shadow-depth-2 !default;
 
 $card-focus-bg: null !default;
@@ -50,7 +50,7 @@ $card-subtitle-font-family: $font-family !default;
 $card-subtitle-line-height: k-math-div( 20, 14 ) !default;
 $card-subtitle-font-weight: 500 !default;
 $card-subtitle-letter-spacing: null !default;
-$card-subtitle-text: $subtle-text !default;
+$card-subtitle-text: $kendo-subtle-text !default;
 
 $card-img-max-width: 100px !default;
 $card-avatar-size: 45px !default;

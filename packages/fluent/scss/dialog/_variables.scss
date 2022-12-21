@@ -59,11 +59,11 @@ $kendo-dialog-brand-colors: (
 
 // Matrix with dialog theme colors in the order: bg, color, border
 $_tc-dialog-matrix: (
-    (normal: (100, $white, 100)),
+    (normal: (100, $kendo-color-white, 100)),
 ) !default;
 
 $_tc-dialog-dark-matrix: (
-    (normal: (160, $white, 160)),
+    (normal: (160, $kendo-color-white, 160)),
 ) !default;
 
 $_tc-dialog-light-matrix: (

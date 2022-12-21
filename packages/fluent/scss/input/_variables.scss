@@ -66,7 +66,7 @@ $kendo-input-solid-text: get-theme-color-var( neutral-160 ) !default;
 
 /// The background color of the solid input.
 /// @group input
-$kendo-input-solid-bg: $white !default;
+$kendo-input-solid-bg: $kendo-color-white !default;
 
 /// The border color of the solid input.
 /// @group input
@@ -126,7 +126,7 @@ $kendo-input-outline-text: get-theme-color-var( neutral-160 ) !default;
 
 /// The background color of the outline input.
 /// @group input
-$kendo-input-outline-bg: $white !default;
+$kendo-input-outline-bg: $kendo-color-white !default;
 
 /// The border color of the outline input.
 /// @group input
@@ -138,7 +138,7 @@ $kendo-input-outline-hover-text: get-theme-color-var( neutral-190 ) !default;
 
 /// The hover background color of the outline input.
 /// @group input
-$kendo-input-outline-hover-bg: $white !default;
+$kendo-input-outline-hover-bg: $kendo-color-white !default;
 
 /// The hover border color of the outline input.
 /// @group input
@@ -150,7 +150,7 @@ $kendo-input-outline-focus-text: get-theme-color-var( neutral-160 ) !default;
 
 /// The focus background color of the outline input.
 /// @group input
-$kendo-input-outline-focus-bg: $white !default;
+$kendo-input-outline-focus-bg: $kendo-color-white !default;
 
 /// The focus border color of the outline input.
 /// @group input
@@ -186,7 +186,7 @@ $kendo-input-flat-text: get-theme-color-var( neutral-160 ) !default;
 
 /// The background color of the flat input.
 /// @group input
-$kendo-input-flat-bg: $white !default;
+$kendo-input-flat-bg: $kendo-color-white !default;
 
 /// The border color of the flat input.
 /// @group input
@@ -198,7 +198,7 @@ $kendo-input-flat-hover-text: get-theme-color-var( neutral-190 ) !default;
 
 /// The hover background color of the flat input.
 /// @group input
-$kendo-input-flat-hover-bg: $white !default;
+$kendo-input-flat-hover-bg: $kendo-color-white !default;
 
 /// The hover border color of the flat input.
 /// @group input
@@ -210,7 +210,7 @@ $kendo-input-flat-focus-text: get-theme-color-var( neutral-160 ) !default;
 
 /// The focus background color of the flat input.
 /// @group input
-$kendo-input-flat-focus-bg: $white !default;
+$kendo-input-flat-focus-bg: $kendo-color-white !default;
 
 /// The focus border color of the flat input.
 /// @group input
@@ -246,7 +246,7 @@ $kendo-picker-solid-text: get-theme-color-var( neutral-160 ) !default;
 
 /// The background color of the solid picker.
 /// @group input
-$kendo-picker-solid-bg: $white !default;
+$kendo-picker-solid-bg: $kendo-color-white !default;
 
 /// The border color of the solid picker.
 /// @group input
@@ -258,7 +258,7 @@ $kendo-picker-solid-hover-text: get-theme-color-var( neutral-190 ) !default;
 
 /// The hover background color of the solid picker.
 /// @group input
-$kendo-picker-solid-hover-bg: $white !default;
+$kendo-picker-solid-hover-bg: $kendo-color-white !default;
 
 /// The hover border color of the solid picker.
 /// @group input
@@ -270,7 +270,7 @@ $kendo-picker-solid-focus-text: get-theme-color-var( neutral-160 ) !default;
 
 /// The focus background color of the solid picker.
 /// @group input
-$kendo-picker-solid-focus-bg: $white !default;
+$kendo-picker-solid-focus-bg: $kendo-color-white !default;
 
 /// The focus border color of the solid picker.
 /// @group input
@@ -314,7 +314,7 @@ $kendo-picker-outline-border: get-theme-color-var( neutral-160 ) !default;
 
 /// The hover text color of the outline picker.
 /// @group input
-$kendo-picker-outline-hover-text: $white !default;
+$kendo-picker-outline-hover-text: $kendo-color-white !default;
 
 /// The hover background color of the outline picker.
 /// @group input
@@ -330,7 +330,7 @@ $kendo-picker-outline-focus-text: get-theme-color-var( neutral-160 ) !default;
 
 /// The focus background color of the outline picker.
 /// @group input
-$kendo-picker-outline-focus-bg: $white!default;
+$kendo-picker-outline-focus-bg: $kendo-color-white!default;
 
 /// The focus border color of the outline picker.
 /// @group input
@@ -338,7 +338,7 @@ $kendo-picker-outline-focus-border: get-theme-color-var( primary-100 ) !default;
 
 /// The hover-focus text color of the outline picker.
 /// @group input
-$kendo-picker-outline-hover-focus-text: $white !default;
+$kendo-picker-outline-hover-focus-text: $kendo-color-white !default;
 
 /// The hover-focus background color of the outline picker.
 /// @group input
@@ -366,7 +366,7 @@ $kendo-picker-flat-text: get-theme-color-var( neutral-160 ) !default;
 
 /// The background color of the flat picker.
 /// @group input
-$kendo-picker-flat-bg: $white !default;
+$kendo-picker-flat-bg: $kendo-color-white !default;
 
 /// The border color of the flat picker.
 /// @group input
@@ -390,7 +390,7 @@ $kendo-picker-flat-focus-text: get-theme-color-var( neutral-160 ) !default;
 
 /// The focus background color of the flat picker.
 /// @group input
-$kendo-picker-flat-focus-bg: $white !default;
+$kendo-picker-flat-focus-bg: $kendo-color-white !default;
 
 /// The focus border color of the flat picker.
 /// @group input

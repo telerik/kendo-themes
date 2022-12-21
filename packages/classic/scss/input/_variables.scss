@@ -73,8 +73,8 @@ $kendo-input-sizes: (
     )
 ) !default;
 
-$kendo-input-bg: $component-bg !default;
-$kendo-input-text: $component-text !default;
+$kendo-input-bg: $kendo-component-bg !default;
+$kendo-input-text: $kendo-component-text !default;
 $kendo-input-border: $kendo-button-border !default;
 $kendo-input-shadow: null !default;
 
@@ -178,7 +178,7 @@ $kendo-picker-flat-hover-focus-bg: null !default;
 $kendo-picker-flat-hover-focus-text: null !default;
 $kendo-picker-flat-hover-focus-border: null !default;
 
-$kendo-input-placeholder-text: $subtle-text !default;
+$kendo-input-placeholder-text: $kendo-subtle-text !default;
 $kendo-input-placeholder-opacity: 1 !default;
 
 $kendo-input-selected-bg: null !default;
@@ -206,5 +206,5 @@ $kendo-input-separator-opacity: .5 !default;
 
 
 // Invalid
-$kendo-input-invalid-border: $invalid-border !default;
-$kendo-input-invalid-shadow: $invalid-shadow !default;
+$kendo-input-invalid-border: $kendo-invalid-border !default;
+$kendo-input-invalid-shadow: $kendo-invalid-shadow !default;

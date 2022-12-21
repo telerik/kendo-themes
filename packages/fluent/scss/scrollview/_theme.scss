@@ -42,7 +42,7 @@
         background-color: var( --kendo-scrollview-navigation-bg, #{$kendo-scrollview-navigation-bg} );
         text-shadow: var( --kendo-scrollview-navigation-arrow-shadow, #{$kendo-scrollview-navigation-arrow-shadow} );
         outline-width: 0;
-        -webkit-tap-highlight-color: $rgba-transparent;
+        -webkit-tap-highlight-color: $kendo-color-rgba-transparent;
 
         &:focus,
         &.k-focus {

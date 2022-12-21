@@ -1,11 +1,12 @@
+@use "sass:map";
 @use "../core/" as *;
 
 /// Margin between the listbox elements.
 /// @group listbox
-$kendo-listbox-spacing: $kendo-padding-x !default;
+$kendo-listbox-spacing: map.get( $kendo-spacing, 2 ) !default;
 /// Margin between the listbox buttons.
 /// @group listbox
-$kendo-listbox-button-spacing: $kendo-padding-x !default;
+$kendo-listbox-button-spacing: map.get( $kendo-spacing, 2 ) !default;
 /// Width of the listbox.
 /// @group listbox
 $kendo-listbox-width: 10em !default;

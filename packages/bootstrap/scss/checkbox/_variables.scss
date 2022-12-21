@@ -25,7 +25,7 @@ $kendo-checkbox-sizes: (
 
 /// Background color of checkbox.
 /// @group checkbox
-$kendo-checkbox-bg: $component-bg !default;
+$kendo-checkbox-bg: $kendo-component-bg !default;
 /// Color of checkbox.
 /// @group checkbox
 $kendo-checkbox-text: null !default;
@@ -45,7 +45,7 @@ $kendo-checkbox-hover-border: null !default;
 
 /// Background color of checked checkbox.
 /// @group checkbox
-$kendo-checkbox-checked-bg: $primary !default;
+$kendo-checkbox-checked-bg: $kendo-color-primary !default;
 /// Color of checked checkbox.
 /// @group checkbox
 $kendo-checkbox-checked-text: k-contrast-color( $kendo-checkbox-checked-bg ) !default;
@@ -65,10 +65,10 @@ $kendo-checkbox-indeterminate-border: $kendo-checkbox-checked-border !default;
 
 /// Border color of focused checkbox.
 /// @group checkbox
-$kendo-checkbox-focus-border: k-try-tint( $primary, 50% ) !default;
+$kendo-checkbox-focus-border: k-try-tint( $kendo-color-primary, 50% ) !default;
 /// Box shadow of focused checkbox.
 /// @group checkbox
-$kendo-checkbox-focus-shadow: 0 0 0 .25rem rgba( $primary, .25 ) !default;
+$kendo-checkbox-focus-shadow: 0 0 0 .25rem rgba( $kendo-color-primary, .25 ) !default;
 /// Border color of focused and checked checkbox.
 /// @group checkbox
 $kendo-checkbox-focus-checked-border: $kendo-checkbox-checked-border !default;
@@ -101,10 +101,10 @@ $kendo-checkbox-disabled-checked-border: null !default;
 $kendo-checkbox-invalid-bg: null !default;
 /// Color of invalid checkbox.
 /// @group checkbox
-$kendo-checkbox-invalid-text: $invalid-text !default;
+$kendo-checkbox-invalid-text: $kendo-invalid-text !default;
 /// Border color of invalid checkbox.
 /// @group checkbox
-$kendo-checkbox-invalid-border: $invalid-border !default;
+$kendo-checkbox-invalid-border: $kendo-invalid-border !default;
 
 
 // Checkbox indicator

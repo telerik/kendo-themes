@@ -25,9 +25,9 @@ $kendo-window-buttongroup-padding-x: $actions-padding-x !default;
 $kendo-window-buttongroup-padding-y: $actions-padding-y !default;
 $kendo-window-buttongroup-border-width: 0px !default;
 
-$kendo-window-bg: $component-bg !default;
-$kendo-window-text: $component-text !default;
-$kendo-window-border: $component-border !default;
+$kendo-window-bg: $kendo-component-bg !default;
+$kendo-window-text: $kendo-component-text !default;
+$kendo-window-border: $kendo-component-border !default;
 
 $kendo-window-titlebar-bg: null !default;
 $kendo-window-titlebar-text: null !default;
@@ -35,7 +35,7 @@ $kendo-window-titlebar-border: null !default;
 $kendo-window-titlebar-gradient: null !default;
 
 $kendo-window-shadow: $box-shadow-depth-4 !default;
-$kendo-window-focused-shadow: $box-shadow-depth-5 !default;
+$kendo-window-focus-shadow: $box-shadow-depth-5 !default;
 
 $kendo-window-sizes: (
     sm: 300px,

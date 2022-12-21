@@ -8,14 +8,14 @@ $dropzone-font-family: $font-family !default;
 $dropzone-font-size: $font-size !default;
 $dropzone-line-height: $line-height !default;
 
-$dropzone-bg: if( k-is-light( $component-bg ), $gray-100, $gray-900 ) !default;
-$dropzone-text: $component-text !default;
-$dropzone-border: $component-border !default;
+$dropzone-bg: if( k-is-light( $kendo-component-bg ), $gray-100, $gray-900 ) !default;
+$dropzone-text: $kendo-component-text !default;
+$dropzone-border: $kendo-component-border !default;
 
 $dropzone-icon-size: ( $icon-size * 3 ) !default;
 $dropzone-icon-spacing: k-map-get( $kendo-spacing, 6 ) !default;
 $dropzone-icon-text: k-try-tint( $dropzone-text, 8 ) !default;
-$dropzone-icon-hover-text: $primary !default;
+$dropzone-icon-hover-text: $kendo-color-primary !default;
 
 $dropzone-hint-font-size: null !default;
 $dropzone-hint-spacing: k-map-get( $kendo-spacing, 2 ) !default;
@@ -23,4 +23,4 @@ $dropzone-hint-text: null !default;
 
 $dropzone-note-font-size: $font-size-xs !default;
 $dropzone-note-spacing: null !default;
-$dropzone-note-text: $subtle-text !default;
+$dropzone-note-text: $kendo-subtle-text !default;

@@ -29,10 +29,10 @@
             &:hover,
             &.k-hover {
                 @include fill(
-                    $tabstrip-item-hovered-text,
-                    $tabstrip-item-hovered-bg,
-                    $tabstrip-item-hovered-border,
-                    $tabstrip-item-hovered-gradient
+                    $tabstrip-item-hover-text,
+                    $tabstrip-item-hover-bg,
+                    $tabstrip-item-hover-border,
+                    $tabstrip-item-hover-gradient
                 );
             }
 
@@ -49,7 +49,7 @@
 
             &:focus,
             &.k-focus {
-                @include box-shadow( $tabstrip-item-focused-shadow );
+                @include box-shadow( $tabstrip-item-focus-shadow );
             }
 
             &.k-tabstrip-dragging {
@@ -71,7 +71,7 @@
 
         &:focus,
         &.k-focus {
-            outline-color: $tabstrip-content-border-focused;
+            outline-color: $tabstrip-content-focus-border;
         }
     }
 

@@ -45,7 +45,7 @@
     }
 
     .k-var--chart-error-bars-background {
-        @include fill( $bg: var( --kendo-error-bars-background, #{$kendo-error-bars-background} ) );
+        @include fill( $bg: var( --kendo-error-bars-background, #{$kendo-color-error-bars-background} ) );
     }
 
     // Elements

@@ -9,16 +9,14 @@ $breadcrumb-font-family: $font-family !default;
 $breadcrumb-font-size: $font-size !default;
 $breadcrumb-line-height: $line-height !default;
 
-$breadcrumb-bg: $component-bg !default;
-$breadcrumb-text: $component-text !default;
-$breadcrumb-border: $component-border !default;
+$breadcrumb-bg: $kendo-component-bg !default;
+$breadcrumb-text: $kendo-component-text !default;
+$breadcrumb-border: $kendo-component-border !default;
 
 $breadcrumb-delimiter-icon-font-size: $icon-size * .75 !default;
-$breadcrumb-delimiter-icon-padding-x: k-math-div( $padding-x-lg, 2 ) !default;
-$breadcrumb-delimiter-icon-padding-y: 0px !default;
 
-$breadcrumb-link-padding-x: $padding-x !default;
-$breadcrumb-link-padding-y: $padding-y-lg !default;
+$breadcrumb-link-padding-x: k-map-get( $kendo-spacing, 2 ) !default;
+$breadcrumb-link-padding-y: k-map-get( $kendo-spacing, 1.5 ) !default;
 $breadcrumb-link-border-radius: $kendo-border-radius-md !default;
 
 $breadcrumb-icon-link-padding-x: $breadcrumb-link-padding-x !default;
@@ -33,26 +31,26 @@ $breadcrumb-link-bg: null !default;
 $breadcrumb-link-text: $link-text !default;
 $breadcrumb-link-border: null !default;
 
-$breadcrumb-link-hovered-bg: $base-bg !default;
-$breadcrumb-link-hovered-text: $link-hover-text !default;
-$breadcrumb-link-hovered-border: null !default;
+$breadcrumb-link-hover-bg: $base-bg !default;
+$breadcrumb-link-hover-text: $link-hover-text !default;
+$breadcrumb-link-hover-border: null !default;
 
-$breadcrumb-link-focused-bg: null !default;
-$breadcrumb-link-focused-text: $link-text !default;
-$breadcrumb-link-focused-border: null !default;
-$breadcrumb-link-focused-shadow: $focused-shadow !default;
+$breadcrumb-link-focus-bg: null !default;
+$breadcrumb-link-focus-text: $link-text !default;
+$breadcrumb-link-focus-border: null !default;
+$breadcrumb-link-focus-shadow: $kendo-focus-shadow !default;
 
 $breadcrumb-root-link-bg: null !default;
 $breadcrumb-root-link-text: null !default;
 $breadcrumb-root-link-border: null !default;
 
-$breadcrumb-root-link-hovered-bg: $base-bg !default;
-$breadcrumb-root-link-hovered-text: null !default;
-$breadcrumb-root-link-hovered-border: null !default;
+$breadcrumb-root-link-hover-bg: $base-bg !default;
+$breadcrumb-root-link-hover-text: null !default;
+$breadcrumb-root-link-hover-border: null !default;
 
-$breadcrumb-root-link-focused-bg: null !default;
-$breadcrumb-root-link-focused-text: null !default;
-$breadcrumb-root-link-focused-border: null !default;
-$breadcrumb-root-link-focused-shadow: $breadcrumb-link-focused-shadow !default;
+$breadcrumb-root-link-focus-bg: null !default;
+$breadcrumb-root-link-focus-text: null !default;
+$breadcrumb-root-link-focus-border: null !default;
+$breadcrumb-root-link-focus-shadow: $breadcrumb-link-focus-shadow !default;
 
-$breadcrumb-focused-shadow: 0 0 2px 1px rgba(0, 0, 0, .06) !default;
+$breadcrumb-focus-shadow: 0 0 2px 1px rgba(0, 0, 0, .06) !default;

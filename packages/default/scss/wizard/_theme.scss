@@ -3,7 +3,7 @@
     .k-wizard-step {
         &:focus,
         &.k-focus {
-            outline-color: $wizard-step-border-focused;
+            outline-color: $wizard-step-focus-border;
         }
     }
 
