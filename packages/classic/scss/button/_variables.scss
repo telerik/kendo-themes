@@ -10,10 +10,10 @@ $kendo-button-border-radius: null !default;
 
 /// Horizontal padding of the button.
 /// @group button
-$kendo-button-padding-x: k-map-get( $spacing, 2 ) !default;
+$kendo-button-padding-x: k-map-get( $kendo-spacing, 2 ) !default;
 /// Vertical padding of the button.
 /// @group button
-$kendo-button-padding-y: k-map-get( $spacing, 1 ) !default;
+$kendo-button-padding-y: k-map-get( $kendo-spacing, 1 ) !default;
 /// Font family of the button.
 /// @group button
 $kendo-button-font-family: $font-family !default;
@@ -24,18 +24,18 @@ $kendo-button-font-size: $font-size-md !default;
 /// @group button
 $kendo-button-line-height: $line-height-md !default;
 
-$kendo-button-padding-x-sm: k-map-get( $spacing, 2 ) !default;
-$kendo-button-padding-y-sm: k-map-get( $spacing, 1 ) - k-map-get( $spacing, thin ) !default;
+$kendo-button-padding-x-sm: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-button-padding-y-sm: k-map-get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
 $kendo-button-font-size-sm: $font-size-md !default;
 $kendo-button-line-height-sm: $line-height-md !default;
 
-$kendo-button-padding-x-md: k-map-get( $spacing, 2 ) !default;
-$kendo-button-padding-y-md: k-map-get( $spacing, 1 ) !default;
+$kendo-button-padding-x-md: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-button-padding-y-md: k-map-get( $kendo-spacing, 1 ) !default;
 $kendo-button-font-size-md: $font-size-md !default;
 $kendo-button-line-height-md: $line-height-md !default;
 
-$kendo-button-padding-x-lg: k-map-get( $spacing, 3 ) !default;
-$kendo-button-padding-y-lg: k-map-get( $spacing, 2 ) !default;
+$kendo-button-padding-x-lg: k-map-get( $kendo-spacing, 3 ) !default;
+$kendo-button-padding-y-lg: k-map-get( $kendo-spacing, 2 ) !default;
 $kendo-button-font-size-lg: $font-size-lg !default;
 $kendo-button-line-height-lg: $line-height-lg !default;
 

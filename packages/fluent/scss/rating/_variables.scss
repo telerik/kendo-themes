@@ -17,7 +17,7 @@ $kendo-rating-spacing: map.get( $kendo-spacing, 1 ) !default;
 
 /// Horizontal padding of the rating item.
 /// @group rating
-$kendo-rating-item-padding-x: map.get( $kendo-spacing, thin ) !default;
+$kendo-rating-item-padding-x: map.get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
 /// Vertical padding of the rating item.
 /// @group rating
 $kendo-rating-item-padding-y: map.get( $kendo-spacing, 2 ) !default;
@@ -32,7 +32,7 @@ $kendo-rating-item-hover-text: get-theme-color-var( primary-100 ) !default;
 $kendo-rating-item-focus-text: $kendo-rating-item-text !default;
 /// Outline width of the focused rating item.
 /// @group rating
-$kendo-rating-item-focus-outline-width: map.get( $kendo-spacing, hair ) !default;
+$kendo-rating-item-focus-outline-width: 1px !default;
 /// Outline style of the focused rating item.
 /// @group rating
 $kendo-rating-item-focus-outline-style: solid !default;

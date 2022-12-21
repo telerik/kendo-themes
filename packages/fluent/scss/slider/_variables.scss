@@ -30,7 +30,7 @@ $kendo-slider-text: inherit !default;
 $kendo-slider-track-size: map.get( $kendo-spacing, 1 ) !default;
 /// The border radius of the slider track.
 /// @group slider
-$kendo-slider-track-border-radius: map.get( $kendo-spacing, thin ) !default;
+$kendo-slider-track-border-radius: map.get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
 /// The background color of the slider track.
 /// @group slider
 $kendo-slider-track-bg: get-theme-color-var( neutral-60 ) !default;
@@ -59,7 +59,7 @@ $kendo-slider-selection-bg: get-theme-color-var( primary-100 ) !default;
 $kendo-slider-thumb-size: 16px !default;
 /// The default border width of the slider thumb.
 /// @group slider
-$kendo-slider-thumb-border-width: map.get( $kendo-spacing, thin ) !default;
+$kendo-slider-thumb-border-width: map.get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
 /// The border radius of the slider thumb.
 /// @group slider
 $kendo-slider-thumb-border-radius: 999em !default;

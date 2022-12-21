@@ -41,10 +41,10 @@ $kendo-chip-outline-disabled-border: get-theme-color-var( neutral-90 ) !default;
 
 /// Offset of the outline focused chip.
 /// @group chip
-$kendo-chip-focus-offset: map.get( $kendo-spacing, thin ) !default;
+$kendo-chip-focus-offset: map.get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
 /// Outline width of the outline focused button.
 /// @group chip
-$kendo-chip-focus-outline-width: map.get( $kendo-spacing, hair) !default;
+$kendo-chip-focus-outline-width: 1px !default;
 /// Outline style of the outline focused button.
 /// @group chip
 $kendo-chip-focus-outline-style: solid !default;
@@ -57,9 +57,9 @@ $kendo-chip-padding-x-lg: map.get( $kendo-spacing, 2 ) !default;
 
 /// Vertical padding of the chip.
 /// @group chip
-$kendo-chip-padding-y-sm: ( map.get( $kendo-spacing, 1 ) - map.get( $kendo-spacing, thin ) ) !default;
-$kendo-chip-padding-y-md: ( map.get( $kendo-spacing, 1 ) ) !default;
-$kendo-chip-padding-y-lg: ( map.get( $kendo-spacing, 1 ) + map.get( $kendo-spacing, thin ) ) !default;
+$kendo-chip-padding-y-sm: map.get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
+$kendo-chip-padding-y-md: map.get( $kendo-spacing, 1 ) !default;
+$kendo-chip-padding-y-lg: map.get( $kendo-spacing, 1.5 ) !default;
 
 /// Font sizes of the chip.
 /// @group chip

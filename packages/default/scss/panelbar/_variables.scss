@@ -9,11 +9,11 @@ $panelbar-border-style: solid !default;
 $panelbar-item-border-width: 1px !default;
 $panelbar-item-border-style: solid !default;
 
-$panelbar-header-padding-x: k-map-get( $spacing, 4 ) !default;
-$panelbar-header-padding-y: k-map-get( $spacing, 3 ) !default;
+$panelbar-header-padding-x: k-map-get( $kendo-spacing, 4 ) !default;
+$panelbar-header-padding-y: k-map-get( $kendo-spacing, 3 ) !default;
 
-$panelbar-item-padding-x: k-map-get( $spacing, 4 ) !default;
-$panelbar-item-padding-y: k-map-get( $spacing, 2 ) !default;
+$panelbar-item-padding-x: k-map-get( $kendo-spacing, 4 ) !default;
+$panelbar-item-padding-y: k-map-get( $kendo-spacing, 2 ) !default;
 
 $panelbar-item-level-count: 4 !default;
 

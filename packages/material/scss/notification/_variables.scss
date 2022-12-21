@@ -11,7 +11,7 @@ $kendo-notification-padding-y: 14px !default;
 $kendo-notification-border-width: 0px !default;
 /// Border radius of the notification.
 /// @group notification
-$kendo-notification-border-radius: k-map-get( $spacing, 1 ) !default;
+$kendo-notification-border-radius: k-map-get( $kendo-spacing, 1 ) !default;
 /// Box shadow of the notification.
 /// @group notification
 $kendo-notification-shadow: $popup-shadow !default;

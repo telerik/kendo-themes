@@ -24,15 +24,25 @@ $spacer: $spacer !default;
 $spacer-x: $spacer !default;
 $spacer-y: $spacer !default;
 
-$spacing: (
+$kendo-spacing: (
+    // sass-lint:disable-block leading-zero
     0: 0,
+    1px: 1px,
+    0.5: .125rem,
     1: .25rem,
+    1.5: .375rem,
     2: .5rem,
+    2.5: .625rem,
     3: .75rem,
+    3.5: .875rem,
     4: 1rem,
+    4.5: 1.125rem,
     5: 1.25rem,
+    5.5: 1.375rem,
     6: 1.5rem,
+    6.5: 1.625rem,
     7: 1.75rem,
+    7.5: 1.875rem,
     8: 2rem,
     9: 2.25rem,
     10: 2.5rem,
@@ -49,14 +59,7 @@ $spacing: (
     21: 5.25rem,
     22: 5.5rem,
     23: 5.75rem,
-    24: 6rem,
-    xs: .25rem,
-    sm: .5rem,
-    md: .75rem,
-    lg: 1rem,
-    xl: 1.5rem,
-    thin: .125rem,
-    hair: .0625rem
+    24: 6rem
 ) !default;
 
 $default-scrollbar-width: 17px !default;
@@ -65,8 +68,8 @@ $default-scrollbar-width: 17px !default;
 // Icons
 $icon-size: 16px !default;
 $icon-size-lg: 32px !default;
-$icon-spacing: k-map-get( $spacing, 2 ) !default;
-$icon-padding: k-map-get( $spacing, 1 ) !default;
+$icon-spacing: k-map-get( $kendo-spacing, 2 ) !default;
+$icon-padding: k-map-get( $kendo-spacing, 1 ) !default;
 
 /// The URL to the icon font that will be used by the theme
 /// The default value of `null` embeds the package font with a `data:` URL

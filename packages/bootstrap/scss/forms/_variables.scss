@@ -19,7 +19,7 @@ $kendo-form-legend-width: 100% !default;
 $kendo-form-legend-font-size: $font-size-sm !default;
 $kendo-form-legend-text-transform: uppercase !default;
 
-$kendo-form-label-margin-bottom: k-map-get( $spacing, 2 ) !default;
+$kendo-form-label-margin-bottom: k-map-get( $kendo-spacing, 2 ) !default;
 
 $kendo-form-button-margin-x: 8px !default;
 
@@ -27,7 +27,7 @@ $kendo-form-hint-font-size: $font-size-xs !default;
 $kendo-form-hint-font-style: normal !default;
 $kendo-form-hint-margin-top: 4px !default;
 
-$kendo-form-rows-spacing-sm: k-map-get( $spacing, 4 ) !default;
+$kendo-form-rows-spacing-sm: k-map-get( $kendo-spacing, 4 ) !default;
 $kendo-form-rows-spacing-md: $kendo-form-rows-spacing-sm !default;
 $kendo-form-rows-spacing-lg: $kendo-form-rows-spacing-sm !default;
 

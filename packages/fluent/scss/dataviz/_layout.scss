@@ -99,8 +99,8 @@
     .k-chart-tooltip td {
         width: auto;
         text-align: left;
-        padding-inline: var( --kendo-padding-x-sm, #{$kendo-padding-x-sm} ) ;
-        padding-block: var( --kendo-padding-y-sm, #{$kendo-padding-y-sm} ) ;
+        padding-inline: var( --kendo-padding-x-sm, #{$kendo-padding-x-sm} );
+        padding-block: var( --kendo-padding-y-sm, #{$kendo-padding-y-sm} );
         line-height: var( --kendo-chart-tooltip-line-height, #{$kendo-chart-tooltip-line-height} );
         vertical-align: middle;
     }
@@ -163,9 +163,9 @@
     }
 
     .k-left-handle div {
-        margin-block-start: calc( var( --kendo-selection-handle-size, #{$kendo-selection-handle-size} ) * -1  );
+        margin-block-start: calc( var( --kendo-selection-handle-size, #{$kendo-selection-handle-size} ) * -1 );
         margin-inline-start: calc( var( --kendo-selection-handle-size, #{$kendo-selection-handle-size} ) / -1.5 );
-        padding-block-start: calc( var( --kendo-selection-handle-size, #{$kendo-selection-handle-size} ) * 2 ) ;
+        padding-block-start: calc( var( --kendo-selection-handle-size, #{$kendo-selection-handle-size} ) * 2 );
         padding-inline-end: calc( ( var( --kendo-selection-handle-size, #{$kendo-selection-handle-size} ) / 1.5 ) * 2 );
     }
 

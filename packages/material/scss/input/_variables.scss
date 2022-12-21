@@ -14,10 +14,10 @@ $kendo-input-border-radius: null !default;
 
 /// Horizontal padding of input components.
 /// @group input
-$kendo-input-padding-x: k-map-get( $spacing, 4 ) !default;
+$kendo-input-padding-x: k-map-get( $kendo-spacing, 4 ) !default;
 /// Vertical padding of input components.
 /// @group input
-$kendo-input-padding-y: k-map-get( $spacing, 2 ) !default;
+$kendo-input-padding-y: k-map-get( $kendo-spacing, 2 ) !default;
 ///Font family of input components.
 /// @group input
 $kendo-input-font-family: $font-family !default;
@@ -28,18 +28,18 @@ $kendo-input-font-size: $font-size-lg !default;
 /// @group input
 $kendo-input-line-height: 1.25 !default;
 
-$kendo-input-padding-x-sm: k-map-get( $spacing, 4 ) !default;
-$kendo-input-padding-y-sm: k-map-get( $spacing, 2 ) - k-map-get( $spacing, thin ) !default;
+$kendo-input-padding-x-sm: k-map-get( $kendo-spacing, 4 ) !default;
+$kendo-input-padding-y-sm: k-map-get( $kendo-spacing, 1.5 ) !default;
 $kendo-input-font-size-sm: $font-size-lg !default;
 $kendo-input-line-height-sm: 1.25 !default;
 
-$kendo-input-padding-x-md: k-map-get( $spacing, 4 ) !default;
-$kendo-input-padding-y-md: k-map-get( $spacing, 2 ) !default;
+$kendo-input-padding-x-md: k-map-get( $kendo-spacing, 4 ) !default;
+$kendo-input-padding-y-md: k-map-get( $kendo-spacing, 2 ) !default;
 $kendo-input-font-size-md: $font-size-lg !default;
 $kendo-input-line-height-md: 1.25 !default;
 
-$kendo-input-padding-x-lg: k-map-get( $spacing, 4 ) !default;
-$kendo-input-padding-y-lg: k-map-get( $spacing, 2 ) !default;
+$kendo-input-padding-x-lg: k-map-get( $kendo-spacing, 4 ) !default;
+$kendo-input-padding-y-lg: k-map-get( $kendo-spacing, 2 ) !default;
 $kendo-input-font-size-lg: $font-size-lg !default;
 $kendo-input-line-height-lg: 1.5 !default;
 
@@ -50,8 +50,8 @@ $kendo-input-sizes: (
         font-size: $kendo-input-font-size-sm,
         line-height: $kendo-input-line-height-sm,
         icon-size: calc( #{$icon-size} + #{$kendo-input-padding-y-sm * 2} ),
-        button-padding-x: k-map-get( $spacing, 1 ),
-        button-padding-y: k-map-get( $spacing, 1 )
+        button-padding-x: k-map-get( $kendo-spacing, 1 ),
+        button-padding-y: k-map-get( $kendo-spacing, 1 )
     ),
     md: (
         padding-x: $kendo-input-padding-x-md,
@@ -59,8 +59,8 @@ $kendo-input-sizes: (
         font-size: $kendo-input-font-size-md,
         line-height: $kendo-input-line-height-md,
         icon-size: calc( #{$icon-size} + #{$kendo-input-padding-y-md * 2} ),
-        button-padding-x: k-map-get( $spacing, 1 ),
-        button-padding-y: k-map-get( $spacing, 1 )
+        button-padding-x: k-map-get( $kendo-spacing, 1 ),
+        button-padding-y: k-map-get( $kendo-spacing, 1 )
     ),
     lg: (
         padding-x: $kendo-input-padding-x-lg,
@@ -68,8 +68,8 @@ $kendo-input-sizes: (
         font-size: $kendo-input-font-size-lg,
         line-height: $kendo-input-line-height-lg,
         icon-size: calc( #{$icon-size} + #{$kendo-input-padding-y-lg * 2} ),
-        button-padding-x: k-map-get( $spacing, 1 ),
-        button-padding-y: k-map-get( $spacing, 1 )
+        button-padding-x: k-map-get( $kendo-spacing, 1 ),
+        button-padding-y: k-map-get( $kendo-spacing, 1 )
     )
 ) !default;
 
@@ -189,7 +189,7 @@ $kendo-input-clear-value-opacity: .5 !default;
 $kendo-input-clear-value-hover-text: null !default;
 $kendo-input-clear-value-hover-opacity: 1 !default;
 
-$kendo-input-values-margin-y: k-map-get( $spacing, thin ) !default;
+$kendo-input-values-margin-y: k-map-get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
 $kendo-input-values-margin-x: $kendo-input-values-margin-y !default;
 
 

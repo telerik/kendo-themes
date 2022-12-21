@@ -10,19 +10,19 @@ $kendo-radio-border-width: 2px !default;
 // Radio button sizes
 $kendo-radio-sizes: (
     sm: (
-        size: k-map-get( $spacing, 3 ),
-        glyph-size: ( k-map-get( $spacing, 3 ) - k-map-get( $spacing, thin ) ),
-        ripple-size: k-map-get( $spacing, 3 ) * 3
+        size: k-map-get( $kendo-spacing, 3 ),
+        glyph-size: k-map-get( $kendo-spacing, 2.5 ),
+        ripple-size: 300%
     ),
     md: (
-        size: k-map-get( $spacing, 4 ),
-        glyph-size: ( k-map-get( $spacing, 4 ) - k-map-get( $spacing, thin ) ),
-        ripple-size: k-map-get( $spacing, 4 ) * 3
+        size: k-map-get( $kendo-spacing, 4 ),
+        glyph-size: k-map-get( $kendo-spacing, 3.5 ),
+        ripple-size: 300%
     ),
     lg: (
-        size: k-map-get( $spacing, 5 ),
-        glyph-size: ( k-map-get( $spacing, 5 ) - k-map-get( $spacing, thin ) ),
-        ripple-size: k-map-get( $spacing, 5 ) * 3
+        size: k-map-get( $kendo-spacing, 5 ),
+        glyph-size: k-map-get( $kendo-spacing, 4.5 ),
+        ripple-size: 300%
     )
 ) !default;
 
@@ -125,14 +125,14 @@ $kendo-radio-disabled-checked-image: k-escape-svg( url("data:image/svg+xml,<svg 
 
 /// The horizontal margin of the radio button inside of a label.
 /// @group radio
-$kendo-radio-label-margin-x: k-map-get( $spacing, 1 ) !default;
+$kendo-radio-label-margin-x: k-map-get( $kendo-spacing, 1 ) !default;
 
 
 // Radio list
 
 /// Spacing between items of horizontal radio button list.
 /// @group radio
-$kendo-radio-list-spacing: k-map-get( $spacing, 4 ) !default;
+$kendo-radio-list-spacing: k-map-get( $kendo-spacing, 4 ) !default;
 /// Horizontal padding of radio button list items.
 /// @group radio
 $kendo-radio-list-item-padding-x: 0px !default;

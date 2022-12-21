@@ -86,7 +86,7 @@ $kendo-chat-bubble-padding-x: map.get( $kendo-spacing, 3 ) !default;
 $kendo-chat-bubble-padding-y: map.get( $kendo-spacing, 2 ) !default;
 /// The spacing of the bubble message.
 /// @group chat
-$kendo-chat-bubble-spacing: map.get( $kendo-spacing, thin ) !default;
+$kendo-chat-bubble-spacing: map.get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
 /// The line height of the bubble message.
 /// @group chat
 $kendo-chat-bubble-line-height: var( --kendo-line-height, normal ) !default;

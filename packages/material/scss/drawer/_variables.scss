@@ -16,7 +16,7 @@ $kendo-drawer-scrollbar-radius: 20px !default;
 $kendo-drawer-scrollbar-hovered-color: rgba( 156, 156, 156, 1 ) !default;
 
 $kendo-drawer-item-padding-x: $padding-x !default;
-$kendo-drawer-item-padding-y: k-map-get( $spacing, 3 ) !default;
+$kendo-drawer-item-padding-y: k-map-get( $kendo-spacing, 3 ) !default;
 $kendo-drawer-item-font-size: 16px !default;
 $kendo-drawer-item-line-height: $line-height-lg !default;
 

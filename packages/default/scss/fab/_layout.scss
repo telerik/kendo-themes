@@ -80,7 +80,7 @@
 
     .k-fab-item {
         list-style-type: none;
-        margin-bottom: k-map-get( $spacing, 2 );
+        margin-bottom: k-map-get( $kendo-spacing, 2 );
         outline: none;
         white-space: nowrap;
         display: flex;
@@ -92,14 +92,14 @@
             flex-direction: row;
 
             .k-fab-item-text {
-                margin-right: k-map-get( $spacing, 2 );
+                margin-right: k-map-get( $kendo-spacing, 2 );
             }
         }
         &.k-text-left {
             flex-direction: row-reverse;
 
             .k-fab-item-text {
-                margin-left: k-map-get( $spacing, 2 );
+                margin-left: k-map-get( $kendo-spacing, 2 );
             }
         }
     }

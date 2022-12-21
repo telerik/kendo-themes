@@ -65,7 +65,7 @@ $kendo-calendar-footer-padding-y: map.get( $kendo-spacing, 3 ) !default;
 $kendo-calendar-cell-font-size: var( --kendo-font-size-sm, inherit ) !default;
 /// Horizontal padding of the calendar cell.
 /// @group calendar
-$kendo-calendar-cell-padding-x: map.get( $kendo-spacing, 1 ) + map.get( $kendo-spacing, thin ) !default;
+$kendo-calendar-cell-padding-x: map.get( $kendo-spacing, 1.5 ) !default;
 /// Vertical padding of the calendar cell.
 /// @group calendar
 $kendo-calendar-cell-padding-y: $kendo-calendar-cell-padding-x !default;
@@ -266,8 +266,8 @@ $kendo-calendar-range-border: get-theme-color-var( neutral-130 ) !default;
 $kendo-calendar-sm-font-size: $kendo-font-size-sm !default;
 $kendo-calendar-sm-line-height: $kendo-line-height-sm !default;
 $kendo-calendar-sm-cell-size: 24px !default;
-$kendo-calendar-sm-cell-padding-x: map.get( $kendo-spacing, thin) !default;
-$kendo-calendar-sm-cell-padding-y: map.get( $kendo-spacing, thin) !default;
+$kendo-calendar-sm-cell-padding-x: map.get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
+$kendo-calendar-sm-cell-padding-y: map.get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
 $kendo-calendar-sm-cell-font-size: $kendo-font-size-sm !default;
 
 $kendo-calendar-md-font-size: $kendo-font-size-md !default;

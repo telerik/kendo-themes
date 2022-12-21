@@ -17,6 +17,7 @@ $use-picker-select-width: false !default;
 $kendo-spacing: (
     // sass-lint:disable-block leading-zero
     0: 0,
+    1px: 1px,
     0.5: .125rem,
     1: .25rem,
     1.5: .375rem,
@@ -48,14 +49,7 @@ $kendo-spacing: (
     21: 5.25rem,
     22: 5.5rem,
     23: 5.75rem,
-    24: 6rem,
-    xs: .25rem,
-    sm: .5rem,
-    md: .75rem,
-    lg: 1rem,
-    xl: 1.5rem,
-    thin: .125rem,
-    hair: .0625rem
+    24: 6rem
 ) !default;
 
 

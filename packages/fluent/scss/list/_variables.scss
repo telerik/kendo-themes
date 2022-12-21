@@ -21,9 +21,9 @@ $kendo-list-header-padding-x-lg: map.get( $kendo-spacing, 2 ) !default;
 
 /// Vertical padding of list header.
 /// @group list
-$kendo-list-header-padding-y-sm: map.get( $kendo-spacing, 2 ) - map.get( $kendo-spacing, thin ) !default;
+$kendo-list-header-padding-y-sm: map.get( $kendo-spacing, 1.5 ) !default;
 $kendo-list-header-padding-y-md: map.get( $kendo-spacing, 2 ) !default;
-$kendo-list-header-padding-y-lg: map.get( $kendo-spacing, 2 ) + map.get( $kendo-spacing, thin ) !default;
+$kendo-list-header-padding-y-lg: map.get( $kendo-spacing, 2.5 ) !default;
 
 /// Border width of list header.
 /// @group list
@@ -53,9 +53,9 @@ $kendo-list-item-padding-x-lg: map.get( $kendo-spacing, 2 ) !default;
 
 /// Vertical padding of list items.
 /// @group list
-$kendo-list-item-padding-y-sm: map.get( $kendo-spacing, 2 ) - map.get( $kendo-spacing, thin ) !default;
+$kendo-list-item-padding-y-sm: map.get( $kendo-spacing, 1.5 ) !default;
 $kendo-list-item-padding-y-md: map.get( $kendo-spacing, 2 ) !default;
-$kendo-list-item-padding-y-lg: map.get( $kendo-spacing, 2 ) + map.get( $kendo-spacing, thin ) !default;
+$kendo-list-item-padding-y-lg: map.get( $kendo-spacing, 2.5 ) !default;
 
 /// Font size of list items.
 /// @group list
@@ -83,21 +83,21 @@ $kendo-list-group-item-padding-x-lg: map.get( $kendo-spacing, 2 ) !default;
 
 /// Vertical padding of list group items.
 /// @group list
-$kendo-list-group-item-padding-y-sm: map.get( $kendo-spacing, 2 ) - map.get( $kendo-spacing, thin ) !default;
+$kendo-list-group-item-padding-y-sm: map.get( $kendo-spacing, 1.5 ) !default;
 $kendo-list-group-item-padding-y-md: map.get( $kendo-spacing, 2 ) !default;
-$kendo-list-group-item-padding-y-lg: map.get( $kendo-spacing, 2 ) + map.get( $kendo-spacing, thin ) !default;
+$kendo-list-group-item-padding-y-lg: map.get( $kendo-spacing, 2.5 ) !default;
 
 /// Horizontal padding of list item group label.
 /// @group list
-$kendo-list-item-group-label-padding-x-sm: map.get( $kendo-spacing, thin ) !default;
+$kendo-list-item-group-label-padding-x-sm: map.get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
 $kendo-list-item-group-label-padding-x-md: map.get( $kendo-spacing, 1 ) !default;
-$kendo-list-item-group-label-padding-x-lg: map.get( $kendo-spacing, 1 ) + map.get( $kendo-spacing, thin ) !default;
+$kendo-list-item-group-label-padding-x-lg: map.get( $kendo-spacing, 1.5 ) !default;
 
 /// Vertical padding of list item group label.
 /// @group list
-$kendo-list-item-group-label-padding-y-sm: map.get( $kendo-spacing, thin ) !default;
+$kendo-list-item-group-label-padding-y-sm: map.get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
 $kendo-list-item-group-label-padding-y-md: map.get( $kendo-spacing, 1 ) !default;
-$kendo-list-item-group-label-padding-y-lg: map.get( $kendo-spacing, 1 ) + map.get( $kendo-spacing, thin ) !default;
+$kendo-list-item-group-label-padding-y-lg: map.get( $kendo-spacing, 1.5 ) !default;
 
 /// Border width of list group items.
 /// @group list

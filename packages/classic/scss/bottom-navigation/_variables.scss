@@ -1,5 +1,5 @@
 // Bottom-navigation
-$bottom-nav-padding-x: k-map-get( $spacing, 1 ) !default;
+$bottom-nav-padding-x: k-map-get( $kendo-spacing, 1 ) !default;
 $bottom-nav-padding-y: $bottom-nav-padding-x !default;
 $bottom-nav-gap: $bottom-nav-padding-x !default;
 $bottom-nav-border-width: 1px 0px 0px 0px !default;
@@ -9,17 +9,17 @@ $bottom-nav-font-size: $font-size !default;
 $bottom-nav-line-height: normal !default;
 $bottom-nav-letter-spacing: .2px !default;
 
-$bottom-nav-item-padding-x: k-map-get( $spacing, 2 ) !default;
+$bottom-nav-item-padding-x: k-map-get( $kendo-spacing, 2 ) !default;
 $bottom-nav-item-padding-y: 0 !default;
 $bottom-nav-item-min-width: 72px !default;
 $bottom-nav-item-max-width: null !default;
 $bottom-nav-item-min-height: calc( #{$icon-size * 2.5} + #{$padding-x * 2} - #{$bottom-nav-padding-x * 2} ) !default;
 $bottom-nav-item-border-radius: $kendo-border-radius-md !default;
-$bottom-nav-item-gap: 0 k-map-get( $spacing, 1 ) !default;
+$bottom-nav-item-gap: 0 k-map-get( $kendo-spacing, 1 ) !default;
 
-$bottom-nav-item-icon-margin-y: k-map-get( $spacing, 2 ) !default;
+$bottom-nav-item-icon-margin-y: k-map-get( $kendo-spacing, 2 ) !default;
 $bottom-nav-item-icon-margin-x: $bottom-nav-item-icon-margin-y !default;
-$bottom-nav-item-icon-size: k-map-get( $spacing, 6 ) !default;
+$bottom-nav-item-icon-size: k-map-get( $kendo-spacing, 6 ) !default;
 $bottom-nav-item-disabled-opacity: .5 !default;
 
 $bottom-nav-shadow: 0px 0px 5px rgba( black, .12 ) !default;

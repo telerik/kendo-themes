@@ -7,19 +7,19 @@ $kendo-checkbox-border-width: 1px !default;
 // Checkbox sizes
 $kendo-checkbox-sizes: (
     sm: (
-        size: k-map-get( $spacing, 3 ),
-        glyph-size: ( k-map-get( $spacing, 3 ) - k-map-get( $spacing, thin ) ),
-        ripple-size: k-map-get( $spacing, 3 ) * 3
+        size: k-map-get( $kendo-spacing, 3 ),
+        glyph-size: k-map-get( $kendo-spacing, 2.5 ),
+        ripple-size: 300%
     ),
     md: (
-        size: k-map-get( $spacing, 4 ),
-        glyph-size: ( k-map-get( $spacing, 4 ) - k-map-get( $spacing, thin ) ),
-        ripple-size: k-map-get( $spacing, 4 ) * 3
+        size: k-map-get( $kendo-spacing, 4 ),
+        glyph-size: k-map-get( $kendo-spacing, 3.5 ),
+        ripple-size: 300%
     ),
     lg: (
-        size: k-map-get( $spacing, 5 ),
-        glyph-size: ( k-map-get( $spacing, 5 ) - k-map-get( $spacing, thin ) ),
-        ripple-size: k-map-get( $spacing, 5 ) * 3
+        size: k-map-get( $kendo-spacing, 5 ),
+        glyph-size: k-map-get( $kendo-spacing, 4.5 ),
+        ripple-size: 300%
     )
 ) !default;
 
@@ -135,14 +135,14 @@ $kendo-checkbox-indeterminate-image: k-escape-svg( url("data:image/svg+xml,<svg 
 
 /// The horizontal margin of the checkbox inside a label.
 /// @group checkbox
-$kendo-checkbox-label-margin-x: k-map-get( $spacing, 1 ) !default;
+$kendo-checkbox-label-margin-x: k-map-get( $kendo-spacing, 1 ) !default;
 
 
 // Checkbox list
 
 /// Spacing between items of horizontal checkbox list.
 /// @group checkbox
-$kendo-checkbox-list-spacing: k-map-get( $spacing, 4 ) !default;
+$kendo-checkbox-list-spacing: k-map-get( $kendo-spacing, 4 ) !default;
 /// Horizontal padding of checkbox list items.
 /// @group checkbox
 $kendo-checkbox-list-item-padding-x: 0px !default;

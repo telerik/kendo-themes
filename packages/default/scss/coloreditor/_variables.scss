@@ -1,5 +1,5 @@
 // Coloreditor/FlatColorPicker
-$coloreditor-spacer: k-map-get( $spacing, 3 ) !default;
+$coloreditor-spacer: k-map-get( $kendo-spacing, 3 ) !default;
 
 $coloreditor-min-width: 272px !default;
 $coloreditor-border-width: 1px !default;
@@ -18,7 +18,7 @@ $coloreditor-header-padding-y: $coloreditor-spacer !default;
 $coloreditor-header-padding-x: $coloreditor-header-padding-y !default;
 $coloreditor-header-actions-gap: k-math-div( $coloreditor-spacer, 1.5 ) !default;
 
-$coloreditor-preview-gap: k-map-get( $spacing, 1 ) !default;
+$coloreditor-preview-gap: k-map-get( $kendo-spacing, 1 ) !default;
 $coloreditor-color-preview-width: 32px !default;
 $coloreditor-color-preview-height: 12px !default;
 

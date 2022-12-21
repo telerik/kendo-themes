@@ -20,13 +20,13 @@ $actionsheet-shadow: 0 8px 10px -5px rgba(0, 0, 0, .2), 0 16px 24px 2px rgba(0, 
 
 
 // Actionsheet header
-$actionsheet-titlebar-padding-x: k-map-get( $spacing, 4 ) !default;
-$actionsheet-titlebar-padding-y: k-map-get( $spacing, 2 ) !default;
+$actionsheet-titlebar-padding-x: k-map-get( $kendo-spacing, 4 ) !default;
+$actionsheet-titlebar-padding-y: k-map-get( $kendo-spacing, 2 ) !default;
 $actionsheet-titlebar-border-width: null !default;
 $actionsheet-titlebar-font-size: null !default;
 $actionsheet-titlebar-font-family: null !default;
 $actionsheet-titlebar-line-height: null !default;
-$actionsheet-titlebar-gap: k-map-get( $spacing, 4 ) !default;
+$actionsheet-titlebar-gap: k-map-get( $kendo-spacing, 4 ) !default;
 
 $actionsheet-titlebar-bg: null !default;
 $actionsheet-titlebar-text: null !default;
@@ -41,8 +41,8 @@ $actionsheet-subtitle-text: $subtle-text !default;
 
 // Actionsheet item
 $actionsheet-item-min-height: 40px !default;
-$actionsheet-item-padding-x: k-map-get( $spacing, 4 ) !default;
-$actionsheet-item-padding-y: k-map-get( $spacing, 2 ) !default;
+$actionsheet-item-padding-x: k-map-get( $kendo-spacing, 4 ) !default;
+$actionsheet-item-padding-y: k-map-get( $kendo-spacing, 2 ) !default;
 $actionsheet-item-border-width: 1px !default;
 $actionsheet-item-spacing: 12px !default;
 
@@ -75,12 +75,12 @@ $actionsheet-item-disabled-shadow: null !default;
 
 // Adaptive Actionsheet
 $adaptive-actionsheet-titlebar-border-width: 1px !default;
-$adaptive-actionsheet-titlebar-padding-y: k-map-get( $spacing, 4 ) !default;
+$adaptive-actionsheet-titlebar-padding-y: k-map-get( $kendo-spacing, 4 ) !default;
 $adaptive-actionsheet-titlebar-padding-x: $adaptive-actionsheet-titlebar-padding-y !default;
 $adaptive-actionsheet-titlebar-border: $component-border !default;
 
-$adaptive-actionsheet-content-padding-y: k-map-get( $spacing, 2 ) !default;
-$adaptive-actionsheet-content-padding-x: k-map-get( $spacing, 4 ) !default;
+$adaptive-actionsheet-content-padding-y: k-map-get( $kendo-spacing, 2 ) !default;
+$adaptive-actionsheet-content-padding-x: k-map-get( $kendo-spacing, 4 ) !default;
 
-$adaptive-actionsheet-footer-padding-y: k-map-get( $spacing, 2 ) !default;
-$adaptive-actionsheet-footer-padding-x: k-map-get( $spacing, 4 ) !default;
+$adaptive-actionsheet-footer-padding-y: k-map-get( $kendo-spacing, 2 ) !default;
+$adaptive-actionsheet-footer-padding-x: k-map-get( $kendo-spacing, 4 ) !default;

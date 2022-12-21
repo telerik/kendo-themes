@@ -3,23 +3,23 @@
 /// The horizontal padding of the toolbar.
 /// @group toolbar
 $kendo-toolbar-padding-x: null !default;
-$kendo-toolbar-padding-x-sm: k-map-get( $spacing, 1 ) !default;
-$kendo-toolbar-padding-x-md: k-map-get( $spacing, 2 ) !default;
-$kendo-toolbar-padding-x-lg: k-map-get( $spacing, 2 ) + k-map-get( $spacing, thin ) !default;
+$kendo-toolbar-padding-x-sm: k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-toolbar-padding-x-md: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-toolbar-padding-x-lg: k-map-get( $kendo-spacing, 2.5 ) !default;
 
 /// The vertical padding of the toolbar.
 /// @group toolbar
 $kendo-toolbar-padding-y: null !default;
-$kendo-toolbar-padding-y-sm: k-map-get( $spacing, 1 ) !default;
-$kendo-toolbar-padding-y-md: k-map-get( $spacing, 2 ) !default;
-$kendo-toolbar-padding-y-lg: k-map-get( $spacing, 2 ) + k-map-get( $spacing, thin ) !default;
+$kendo-toolbar-padding-y-sm: k-map-get( $kendo-spacing, 1 ) !default;
+$kendo-toolbar-padding-y-md: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-toolbar-padding-y-lg: k-map-get( $kendo-spacing, 2.5 ) !default;
 
 /// The spacing between the toolbar tools.
 /// @group toolbar
 $kendo-toolbar-spacing: null !default;
-$kendo-toolbar-spacing-sm: k-map-get( $spacing, 1 ) + k-map-get( $spacing, thin ) !default;
-$kendo-toolbar-spacing-md: k-map-get( $spacing, 2 ) !default;
-$kendo-toolbar-spacing-lg: k-map-get( $spacing, 2 ) + k-map-get( $spacing, thin ) !default;
+$kendo-toolbar-spacing-sm: k-map-get( $kendo-spacing, 1.5 ) !default;
+$kendo-toolbar-spacing-md: k-map-get( $kendo-spacing, 2 ) !default;
+$kendo-toolbar-spacing-lg: k-map-get( $kendo-spacing, 2.5 ) !default;
 
 /// Width of the border around the toolbar.
 /// @group toolbar

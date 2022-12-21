@@ -19,13 +19,13 @@ $slider-draghandle-active-scale: 1 !default;
 $slider-draghandle-active-size: null !default;
 
 $slider-draghandle-bg: $primary !default;
-$slider-draghandle-text: k-contrast-legacy( $primary  ) !default;
-$slider-draghandle-border: $primary  !default;
+$slider-draghandle-text: k-contrast-legacy( $primary ) !default;
+$slider-draghandle-border: $primary !default;
 $slider-draghandle-gradient: null !default;
 
 $slider-draghandle-hovered-bg: k-try-shade( $primary , .5 ) !default;
 $slider-draghandle-hovered-text: null !default;
-$slider-draghandle-hovered-border: $primary  !default;
+$slider-draghandle-hovered-border: $primary !default;
 $slider-draghandle-hovered-gradient: null !default;
 
 $slider-draghandle-pressed-bg: k-try-shade( $primary , 1.5 ) !default;

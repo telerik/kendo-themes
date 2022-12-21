@@ -37,7 +37,7 @@ $kendo-pdf-viewer-canvas-border:  var( --kendo-component-border, inherit ) !defa
 
 /// Spacing of the PDF viewer page.
 /// @group pdf-viewer
-$kendo-pdf-viewer-page-spacing: map.get( $kendo-spacing, 8 ) - map.get( $kendo-spacing, thin ) !default;
+$kendo-pdf-viewer-page-spacing: map.get( $kendo-spacing, 7.5 ) !default;
 /// Background color of the PDF viewer page.
 /// @group pdf-viewer
 $kendo-pdf-viewer-page-bg: var( --kendo-component-bg, inherit ) !default;

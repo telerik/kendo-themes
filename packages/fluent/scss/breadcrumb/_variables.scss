@@ -44,7 +44,7 @@ $kendo-breadcrumb-focus-shadow: 0 0 0 1px get-theme-color-var( neutral-30 ) !def
 $kendo-breadcrumb-link-padding-x: map.get( $kendo-spacing, 2 ) !default;
 /// The vertical padding of the breadcrumb link
 /// @group breadcrumb
-$kendo-breadcrumb-link-padding-y: map.get( $kendo-spacing, 1 ) + map.get( $kendo-spacing, thin ) !default;
+$kendo-breadcrumb-link-padding-y: map.get( $kendo-spacing, 1.5 ) !default;
 /// The radius of the border around the breadcrumb link
 /// @group breadcrumb
 $kendo-breadcrumb-link-border-radius: 0px !default;

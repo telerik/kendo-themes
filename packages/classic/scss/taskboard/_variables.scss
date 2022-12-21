@@ -1,5 +1,5 @@
 // TaskBoard
-$taskboard-spacer: k-map-get( $spacing, 4 ) !default;
+$taskboard-spacer: k-map-get( $kendo-spacing, 4 ) !default;
 $taskboard-padding-y: null !default;
 $taskboard-padding-x: null !default;
 $taskboard-font-family: $font-family !default;

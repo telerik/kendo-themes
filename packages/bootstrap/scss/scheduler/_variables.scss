@@ -42,8 +42,8 @@ $scheduler-event-selected-shadow: inset 0 0 0 3px rgba( white, .5 ) !default;
 
 $scheduler-event-ongoing-shadow: inset 0px 0px 0px 1px #ff0000 !default;
 
-$scheduler-cell-padding-x: k-map-get( $spacing, 3 ) !default;
-$scheduler-cell-padding-y: k-map-get( $spacing, 3 ) !default;
+$scheduler-cell-padding-x: k-map-get( $kendo-spacing, 3 ) !default;
+$scheduler-cell-padding-y: k-map-get( $kendo-spacing, 3 ) !default;
 $scheduler-cell-height: $line-height-em !default;
 $scheduler-datecolumn-width: 12em !default;
 $scheduler-timecolumn-width: 11em !default;
@@ -59,10 +59,10 @@ $scheduler-weekend-text: null !default;
 $scheduler-othermonth-bg: k-try-shade( $scheduler-bg, .5 ) !default;
 $scheduler-othermonth-text: null !default;
 
-$scheduler-yearview-padding-x: k-map-get( $spacing, 4 ) !default;
+$scheduler-yearview-padding-x: k-map-get( $kendo-spacing, 4 ) !default;
 $scheduler-yearview-padding-y: $scheduler-yearview-padding-x !default;
 
-$scheduler-yearview-calendar-gap: k-map-get( $spacing, 4 ) !default;
+$scheduler-yearview-calendar-gap: k-map-get( $kendo-spacing, 4 ) !default;
 
 $scheduler-yearview-indicator-size: 3px !default;
 $scheduler-yearview-indicator-calc-offset-top: calc( #{$calendar-cell-size} - (#{$calendar-cell-padding-y} * 2)) !default;
@@ -71,7 +71,7 @@ $scheduler-yearview-indicator-border-radius: 50% !default;
 $scheduler-yearview-indicator-bg: $primary !default;
 $scheduler-yearview-indicator-selected-bg: $primary-contrast !default;
 
-$scheduler-tooltip-padding-x: k-map-get( $spacing, 3 ) !default;
+$scheduler-tooltip-padding-x: k-map-get( $kendo-spacing, 3 ) !default;
 $scheduler-tooltip-padding-y: $scheduler-tooltip-padding-x !default;
 $scheduler-tooltip-border-width: 0 !default;
 $scheduler-tooltip-bg: $primary-contrast !default;

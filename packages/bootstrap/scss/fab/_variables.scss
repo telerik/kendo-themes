@@ -38,18 +38,18 @@ $kendo-fab-icon-width: 24px !default;
 $kendo-fab-icon-height: $kendo-fab-icon-width !default;
 /// FAB icon spacing.
 /// @group floating-action-button
-$kendo-fab-icon-spacing: k-math-div( k-map-get( $spacing, 1 ), 2 ) !default;
+$kendo-fab-icon-spacing: k-map-get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
 
 /// FAB items horizontal padding.
 /// @group floating-action-button
 $kendo-fab-items-padding-x: 0px !default;
 /// FAB items vertical padding.
 /// @group floating-action-button
-$kendo-fab-items-padding-y: k-map-get( $spacing, 4 ) !default;
+$kendo-fab-items-padding-y: k-map-get( $kendo-spacing, 4 ) !default;
 
 /// FAB item text horizontal padding.
 /// @group floating-action-button
-$kendo-fab-item-text-padding-x: k-map-get( $spacing, 1 ) !default;
+$kendo-fab-item-text-padding-x: k-map-get( $kendo-spacing, 1 ) !default;
 /// FAB item text vertical padding.
 /// @group floating-action-button
 $kendo-fab-item-text-padding-y: $kendo-fab-item-text-padding-x !default;
@@ -68,7 +68,7 @@ $kendo-fab-item-text-line-height: 14px !default;
 
 /// FAB item icon horizontal padding.
 /// @group floating-action-button
-$kendo-fab-item-icon-padding-x: k-map-get( $spacing, 2 ) !default;
+$kendo-fab-item-icon-padding-x: k-map-get( $kendo-spacing, 2 ) !default;
 /// FAB item icon vertical padding.
 /// @group floating-action-button
 $kendo-fab-item-icon-padding-y: $kendo-fab-item-icon-padding-x !default;

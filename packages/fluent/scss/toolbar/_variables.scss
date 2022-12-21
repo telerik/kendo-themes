@@ -5,13 +5,13 @@
 /// @group toolbar
 $kendo-toolbar-padding-x-sm: map.get( $kendo-spacing, 1 ) !default;
 $kendo-toolbar-padding-x-md: map.get( $kendo-spacing, 2 ) !default;
-$kendo-toolbar-padding-x-lg: map.get( $kendo-spacing, 2 ) + map.get( $kendo-spacing, thin ) !default;
+$kendo-toolbar-padding-x-lg: map.get( $kendo-spacing, 2.5 ) !default;
 
 /// The vertical padding of the toolbar.
 /// @group toolbar
 $kendo-toolbar-padding-y-sm: map.get( $kendo-spacing, 1 ) !default;
 $kendo-toolbar-padding-y-md: map.get( $kendo-spacing, 2 ) !default;
-$kendo-toolbar-padding-y-lg: map.get( $kendo-spacing, 2 ) + map.get( $kendo-spacing, thin ) !default;
+$kendo-toolbar-padding-y-lg: map.get( $kendo-spacing, 2.5 ) !default;
 
 /// The spacing between the toolbar tools.
 /// @group toolbar

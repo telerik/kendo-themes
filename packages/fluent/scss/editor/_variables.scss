@@ -43,7 +43,7 @@ $kendo-editor-resize-handle-border-width: 1px !default;
 $kendo-editor-export-tool-icon-margin-x: map.get( $kendo-spacing, 1 ) !default;
 ///  The outline width of the editor selected node
 /// @group editor
-$kendo-editor-selectednode-outline-width: map.get( $kendo-spacing, thin ) !default;
+$kendo-editor-selectednode-outline-width: map.get( $kendo-spacing, 0.5 ) !default; // sass-lint:disable-line leading-zero
 
 // Cell size
 $ct-cell-size: 20px !default;

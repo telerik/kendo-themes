@@ -965,7 +965,7 @@
         .k-scheduler-datetime-picker {
             display: flex;
             flex-flow: row nowrap;
-            gap: k-map-get( $spacing, 2 );
+            gap: k-map-get( $kendo-spacing, 2 );
         }
 
     }

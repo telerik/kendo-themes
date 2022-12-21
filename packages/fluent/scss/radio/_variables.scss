@@ -17,19 +17,19 @@ $kendo-radio-border-width: 1px !default;
 $kendo-radio-sizes: (
     sm: (
         size: map.get( $kendo-spacing, 4 ),
-        glyph-size: ( map.get( $kendo-spacing, 4 ) - map.get( $kendo-spacing, thin ) ),
+        glyph-size: map.get( $kendo-spacing, 3.5 ),
         indicator-size: map.get( $kendo-spacing, 2 ),
         ripple-size: 300%
     ),
     md: (
         size: map.get( $kendo-spacing, 5 ),
-        glyph-size: ( map.get( $kendo-spacing, 5 ) - map.get( $kendo-spacing, thin ) ),
-        indicator-size: map.get( $kendo-spacing, 2 ) + map.get( $kendo-spacing, thin ),
+        glyph-size: map.get( $kendo-spacing, 4.5 ),
+        indicator-size: map.get( $kendo-spacing, 2.5 ),
         ripple-size: 300%
     ),
     lg: (
         size: map.get( $kendo-spacing, 6 ),
-        glyph-size: ( map.get( $kendo-spacing, 6 ) - map.get( $kendo-spacing, thin ) ),
+        glyph-size: map.get( $kendo-spacing, 5.5 ),
         indicator-size: map.get( $kendo-spacing, 3 ),
         ripple-size: 300%
     )
