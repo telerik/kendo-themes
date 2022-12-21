@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { Dialog } from '../../dialog';
-import { Button } from '../../button';
 import { Upload } from '../../upload';
 
 const root = ReactDOM.createRoot(
